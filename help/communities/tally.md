@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 9941ba90-3d40-4c90-bca8-5db49603cbfa
 translation-type: tm+mt
-source-git-commit: 9532c1fb8af37b29285007bc72e86d42d5eb9c4d
+source-git-commit: 01f14c203e45b85c9d7733d88437bd56e3c27c8e
 
 ---
 
@@ -27,7 +27,7 @@ Een aangepaste telcomponent kan worden gecreeerd door de abstracte tellingsklass
 
 [Classificatie](rating-basics.md) is een implementatie van een tally die een sterrenstelsel gebruikt om een reeks meningen van positief tot negatief uit te drukken.
 
-Vanaf AEM 6.1 is de [opiniepeilingscomponent](poll-basics.md) niet meer beschikbaar.
+Vanaf AEM 6.1 is de opiniepeilingscomponent niet meer beschikbaar.
 
 [Revisies](reviews-basics.md) is een SCF-component die een hybride van [opmerkingen](essentials-comments.md) en [beoordelingen](rating-basics.md)is.
 

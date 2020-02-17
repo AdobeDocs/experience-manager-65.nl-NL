@@ -1,0 +1,197 @@
+---
+title: Formulier-centric workflow installeren en configureren op OSGi
+seo-title: Formulier-centric workflow installeren en configureren op OSGi
+description: Installeer en configureer AEM Forms Interactive Communications om zakelijke correspondentie, documenten, instructies, kennisgevingen van voordelen, marketingmails, facturen en welkomstkits te maken.
+seo-description: Installeer en configureer AEM Forms Interactive Communications om zakelijke correspondentie, documenten, instructies, kennisgevingen van voordelen, marketingmails, facturen en welkomstkits te maken.
+uuid: 1ceae822-215a-4b83-a562-4609a09c3a54
+topic-tags: installing
+discoiquuid: de292a19-07db-4ed3-b13a-7a2f1cd9e0dd
+docset: aem65
+translation-type: tm+mt
+source-git-commit: 3226edb575de3d9f8bff53f5ca81e2957f37c544
+
+---
+
+
+# Formulier-centric workflow installeren en configureren op OSGi{#installing-and-configuring-forms-centric-workflow-on-osgi}
+
+## Inleiding {#introduction}
+
+Ondernemingen verzamelen en verwerken gegevens van meerdere formulieren, back-endsystemen en andere gegevensbronnen. De verwerking van gegevens omvat controle- en goedkeuringsprocedures, herhaalde taken en archivering van gegevens. Een formulier reviseren en converteren naar PDF-document. Wanneer manueel gedaan, kunnen de herhalende taken veel tijd en middelen vergen.
+
+U kunt [Forms-centric workflow gebruiken op OSGi](../../forms/using/aem-forms-workflow.md) om snel adaptieve workflows op basis van formulieren samen te stellen. Deze workflows kunnen u helpen bij het automatiseren van workflows voor revisie en goedkeuring, workflows voor bedrijfsprocessen en andere herhalende taken. Met deze workflows kunt u ook documenten verwerken (PDF-documenten maken, samenstellen, distribueren en archiveren, digitale handtekeningen toevoegen om de toegang tot documenten te beperken, streepjescodes voor formulieren te decoderen en meer) en de ondertekeningsworkflow voor Adobe-handtekeningen gebruiken voor formulieren en documenten.
+
+Nadat de werkstromen zijn ingesteld, kunnen deze handmatig worden geactiveerd om een gedefinieerd proces te voltooien of via programmacode worden uitgevoerd wanneer gebruikers een formulier of interactieve communicatie verzenden. De mogelijkheid is opgenomen in het invoegpakket voor AEM Forms.
+
+AEM Forms is een krachtig platform op bedrijfsniveau. Forms-centric workflow op OSGi is slechts een van de mogelijkheden van AEM Forms. Voor de volledige lijst van mogelijkheden, zie [Inleiding aan Vormen](../../forms/using/introduction-aem-forms.md)AEM.
+
+>[!NOTE]
+>
+>Met Forms-centric werkschema op OSGi, kunt u werkschema&#39;s voor diverse taken op de stapel snel bouwen en opstellen OSGi, zonder het moeten het volledige vermogen van het Beheer van het Proces op de stapel van JEE installeren. Zie een [vergelijking](../../forms/using/capabilities-osgi-jee-workflows.md) van de Forms-centric AEM Workflows op OSGi en Process Management op JEE om het verschil en de gelijkenissen in de mogelijkheden te leren.
+>
+>Na de vergelijking, als u verkiest om de capaciteit van het Beheer van het Proces op de stapel van JEE te installeren, zie [installeer of bevordert Vormen AEM op JEE](/help/forms/home.md) voor gedetailleerde informatie over het installeren van en het vormen van de stapel van JEE en de mogelijkheden van het Beheer van het Proces.
+
+## Implementatietopologie {#deployment-topology}
+
+AEM Forms add-on package is een toepassing die op AEM wordt geïmplementeerd. U hebt slechts minimaal één AEM-auteur of -verwerkingsinstantie (productieauteur) nodig om de op Forms gerichte workflow uit te voeren op OSGi-functionaliteit.  Een verwerkingsinstantie is een [verhard AEM Author](/help/forms/using/hardening-securing-aem-forms-environment.md) -instantie. Voer geen daadwerkelijke ontwerpbewerkingen uit, zoals het maken van workflows of adaptieve formulieren, op de auteur van de productie.
+
+De volgende topologie is indicatieve topologie om de Interactieve Mededelingen van de Vormen AEM, het Beheer van de Correspondentie in werking te stellen, Vormen AEM gegevens vangen, en vormen-Centric werkschema op mogelijkheden OSGi. Voor gedetailleerde informatie over de topologie, zie [Architectuur en plaatsingstopologieën voor Vormen](/help/forms/using/aem-forms-architecture-deployment.md)AEM.
+
+![aanbevolen topologie](assets/recommended-topology.png)
+
+AEM Forms-centric workflow op OSGi voert AEM Inbox- en AEM Workflow Model creation UI uit op de Author-instanties van AEM Forms.
+
+## Systeemvereisten {#system-requirements}
+
+>[!NOTE]
+>
+>Ga verder met de sectie [Volgende stappen](../../forms/using/installing-configuring-forms-centric-workflow-on-osgi.md#next-steps) van het document als u al AEM-formulieren op OSGi hebt geïnstalleerd, zoals wordt uitgelegd in het artikel over mogelijkheden [voor het](../../forms/using/installing-configuring-aem-forms-osgi.md) installeren en configureren van gegevensvastlegging.
+
+Voordat u begint met het installeren en configureren van Forms-centric Workflow op OSGi, moet u ervoor zorgen dat:
+
+* Hardware- en software-infrastructuur is aanwezig. Raadpleeg de [technische vereisten](/help/sites-deploying/technical-requirements.md)voor een gedetailleerde lijst met ondersteunde hardware en software.
+
+* Het installatiepad van de AEM-instantie bevat geen spaties.
+* Er wordt een AEM-instantie uitgevoerd. In AEM-terminologie is een &quot;instantie&quot; een kopie van AEM die wordt uitgevoerd op een server in de auteur- of publicatiemodus. U hebt ten minste één AEM-instantie (Auteur of Verwerking) nodig om een op Forms gerichte workflow op OSGi uit te voeren:
+
+   * **Auteur**: Een AEM-instantie die wordt gebruikt om inhoud te maken, te uploaden en te bewerken en om de website te beheren. Wanneer de inhoud gereed is om live te gaan, wordt deze gekopieerd naar de publicatie-instantie.
+   * **** Verwerking: Een verwerkingsinstantie is een [verhard AEM Author](/help/forms/using/hardening-securing-aem-forms-environment.md) -instantie. Nadat u de installatie hebt uitgevoerd, kunt u een instantie Auteur instellen en deze lastiger maken.
+
+   * **Publiceren**: Een AEM-instantie die de gepubliceerde inhoud via internet of een intern netwerk aan het publiek levert.
+
+* Er wordt voldaan aan de geheugenvereisten. AEM Forms add-on package vereist:
+
+   * 15 GB tijdelijke ruimte voor op Microsoft Windows gebaseerde installaties.
+   * 6 GB tijdelijke ruimte voor UNIX-installaties.
+
+* Extra eisen voor op UNIX gebaseerde systemen: Als u het op UNIX gebaseerde besturingssysteem gebruikt, installeert u de volgende pakketten via de installatiemedia van het desbetreffende besturingssysteem.
+
+<table>
+ <tbody>
+  <tr>
+   <td>uitzetten</td>
+   <td>libxcb</td>
+   <td>freetype</td>
+   <td>libXau</td>
+  </tr>
+  <tr>
+   <td>libSM</td>
+   <td>zlib</td>
+   <td>libICE</td>
+   <td>libuuid</td>
+  </tr>
+  <tr>
+   <td>glibc</td>
+   <td>libXext</td>
+   <td><p>nss-softokn-freebl</p> </td>
+   <td>fontconfig</td>
+  </tr>
+  <tr>
+   <td>libX11</td>
+   <td>libXrender</td>
+   <td>libXrandr</td>
+   <td>libXinerama</td>
+  </tr>
+ </tbody>
+</table>
+
+## AEM Forms add-on-pakket installeren {#install-aem-forms-add-on-package}
+
+AEM Forms add-on package is een toepassing die op AEM wordt geïmplementeerd. Het pakket bevat Forms-centric workflow voor OSGi en andere mogelijkheden. Voer de volgende stappen uit om het invoegpakket te installeren:
+
+1. Meld u als beheerder aan bij de [AEM-server](https://localhost:4502) en open [pakketshare](https://localhost:4502/crx/packageshare). U hebt een Adobe-id nodig om u aan te melden bij het delen van het pakket.
+1. Zoek in [AEM-pakketshare](https://localhost:4502/crx/packageshare/login.html)in **AEM 6.5 Forms add-on packages** of **latest service packages** op het pakket dat op uw besturingssysteem van toepassing is en klik op **Download**. Lees en accepteer de licentieovereenkomst en klik op **OK**. Het downloaden begint. Nadat u het bestand hebt gedownload, staat het woord **Gedownload** naast het pakket.
+
+   U kunt het versienummer ook gebruiken om een add-on pakket te zoeken. Raadpleeg het [artikel over de release](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) van AEM Forms voor het versienummer van het meest recente pakket.
+
+1. Klik op **Gedownload** nadat het downloaden is voltooid. U wordt omgeleid naar pakketbeheer. Zoek in pakketbeheer naar het gedownloade pakket en klik op **Installeren**.
+
+   Als u het pakket handmatig downloadt via de directe koppeling in het [artikel met de release](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) van AEM Forms, meldt u zich aan bij pakketbeheer, klikt u op Pakket **** uploaden, selecteert u het gedownloade pakket en klikt u op Uploaden. Nadat het pakket is geüpload, klikt u op de pakketnaam en klikt u op **Installeren.**
+
+1. Nadat het pakket is geïnstalleerd, wordt u gevraagd om de AEM-instantie opnieuw te starten. **Start de server niet onmiddellijk opnieuw.** Voordat u de AEM Forms-server stopt, wacht u tot de berichten ServiceEvent REGISTERED en ServiceEvent UNREGISTERED niet meer voorkomen in het bestand [AEM-Installation-Directory]/crx-quickstart/logs/error.log en het logbestand stabiel is.
+1. Herhaal stap 1-4 voor alle instanties Auteur en Publiceren.
+
+## Configuratie na installatie {#post-installation-configurations}
+
+AEM Forms heeft een aantal verplichte en optionele configuraties. De verplichte configuraties omvatten het vormen bibliotheken BouncyCastle en serialization agent. De optionele configuraties zijn het configureren van dispatcher en Adobe Target.
+
+### Verplichte configuraties na installatie {#mandatory-post-installation-configurations}
+
+#### RSA- en BouncyCastle-bibliotheken configureren {#configure-rsa-and-bouncycastle-libraries}
+
+Voer de volgende stappen op alle Auteur uit en publiceer instanties om de bibliotheken op te starten afvaardigen:
+
+1. Stop de onderliggende AEM-instantie.
+1. Open de [AEM-installatiemap]\crx-quickstart\conf\sling.properties.
+
+   Als u de [AEM-installatiemap]\crx-quickstart\bin\start.bat hebt gebruikt om AEM te starten, bewerkt u de sling.properties op de locatie [AEM_root]\crx-quickstart\.
+
+1. Voeg de volgende eigenschappen toe aan het bestand sling.properties:
+
+   ```
+   sling.bootdelegation.class.com.rsa.jsafe.provider.JsafeJCE=com.rsa.*
+   sling.bootdelegation.class.org.bouncycastle.jce.provider.BouncyCastleProvider=org.bouncycastle.*
+   ```
+
+1. Sla het bestand op, sluit het en start de AEM-instantie.
+1. Herhaal stap 1-4 voor alle instanties Auteur en Publiceren.
+
+#### Vorm de rangschikkingsagent {#configure-the-serialization-agent}
+
+Voer de volgende stappen uit op alle instanties Auteur en Publiceren om het pakket te whitelist:
+
+1. Open AEM Configuration Manager in een browservenster. De standaard-URL is https://[server]:[poort]/systeem/console/configMgr.
+1. Zoek en open Configuratie van de Firewall van de **Deserialization**.
+1. Voeg het pakket **sun.util.agenda** toe aan het veld **whitelist** . Klik op Opslaan.
+1. Herhaal stap 1-3 voor alle instanties Auteur en Publiceren.
+
+### Optionele configuraties na installatie {#optional-post-installation-configurations}
+
+#### Dispatcher configureren {#configure-dispatcher}
+
+Dispatcher is een programma voor het in cache plaatsen en taakverdeling voor AEM. AEM Dispatcher helpt ook de AEM-server tegen aanvallen te beschermen. U kunt de beveiliging van uw AEM-instantie verhogen door de Dispatcher te gebruiken in combinatie met een webserver op bedrijfsniveau. Als u [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html)gebruikt, voert u de volgende configuraties voor AEM Forms uit:
+
+1. Toegang voor AEM-formulieren configureren:
+
+   Open het bestand dispatcher.any voor bewerking. Navigeer naar de filtersectie en voeg het volgende filter toe aan de filtersectie:
+
+   `/0025 { /type "allow" /glob "* /bin/xfaforms/submitaction*" } # to enable AEM Forms submission`
+
+   Sla het bestand op en sluit het. Raadpleeg de documentatie bij [Verzender](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html)voor meer informatie over filters.
+
+1. Configureer de referentiefilterservice:
+
+   Meld u als beheerder aan bij het configuratiebeheer van Apache Felix. De standaard-URL van de configuratiemanager is https://[server]:[port_number]/system/console/configMgr. Selecteer in het menu **Configuraties** de optie **Filter** Apache-schuifverwijzing. Voer in het veld Hosts toestaan de hostnaam van de verzender in om het als referentie toe te staan en klik op **Opslaan**. De indeling van de vermelding is `https://[server]:[port]`.
+
+#### Cache configureren {#configure-cache}
+
+Caching is een mechanisme om gegevenstoegang te verkorten, latentie te verminderen, en input/output (I/O) snelheden te verbeteren. In de cache van adaptieve formulieren worden alleen HTML-inhoud en JSON-structuur van een adaptief formulier opgeslagen zonder dat vooraf ingevulde gegevens worden opgeslagen. Hierdoor wordt de tijd die nodig is om een adaptief formulier te genereren, verkort.
+
+* Als u de cache voor adaptieve formulieren gebruikt, gebruikt u de [AEM Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html) om clientbibliotheken (CSS en JavaScript) van een adaptief formulier in cache te plaatsen.
+* Zorg tijdens het ontwikkelen van aangepaste componenten dat de cache van adaptieve formulieren uitgeschakeld blijft op de server die voor ontwikkeling wordt gebruikt.
+
+Voer de volgende stappen uit om de cache voor adaptieve formulieren te configureren:
+
+1. Ga naar AEM webconsoleconfiguratiebeheer op `https://[server]:[port]/system/console/configMgr`.
+1. Klik op **Adaptive Form Configuration Service** om de configuratiewaarden ervan te bewerken. Geef in het dialoogvenster Configuratiewaarden bewerken het maximumaantal formulieren of documenten op dat een instantie van de AEM Forms-server in cache kan plaatsen in het veld **Aantal adaptieve formulieren** . De standaardwaarde is 100. Click **Save**.
+
+   >[!NOTE]
+   >
+   >Als u de cache wilt uitschakelen, stelt u de waarde in het veld Aantal adaptieve formulieren in op **0**. De cache wordt opnieuw ingesteld en alle formulieren en documenten worden uit de cache verwijderd wanneer u de cachemonfiguratie uitschakelt of wijzigt.
+
+#### Adobe-ondertekening configureren {#configure-adobe-sign}
+
+Met Adobe Sign kunnen workflows voor e-handtekeningen worden gebruikt voor adaptieve formulieren. E-handtekeningen verbeteren workflows om documenten te verwerken voor juridische documenten, verkoop, salarisadministratie, personeelsbeheer en nog veel meer gebieden.
+
+In een standaardworkflow met Adobe Sign and Forms-centric bij OSGi-scenario vult een gebruiker een adaptief formulier in om een **aanvraag voor een service** in te dienen. Bijvoorbeeld een creditcardaanvraag en een burgerservicepakket. Wanneer een gebruiker het aanvraagformulier invult, verzendt en ondertekent, wordt een workflow voor goedkeuring/afwijzing gestart. Het servicebureau evalueert de toepassing in AEM Inbox en gebruikt Adobe Sign om de toepassing elektronisch te ondertekenen. Als u vergelijkbare workflows voor elektronische handtekeningen wilt inschakelen, kunt u Adobe Sign met AEM Forms integreren.
+
+Als u Adobe Sign with AEM Forms wilt gebruiken, [integreert u Adobe Sign with AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md).
+
+## Volgende stappen {#next-steps}
+
+U hebt een omgeving geconfigureerd voor het gebruik van Forms-centric Workflow op OSGi-mogelijkheden. De volgende stappen voor het gebruik van de mogelijkheid zijn:
+
+* [Forms-centric workflow gebruiken op OSGi](../../forms/using/aem-forms-workflow.md)
+* [Referentie workflowstap](/help/sites-developing/workflows-step-ref.md)
+* [Nabewerking van brieven en interactieve communicatie](../../forms/using/submit-letter-topostprocess.md)
+

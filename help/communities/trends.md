@@ -1,0 +1,124 @@
+---
+title: Activiteitendensen
+seo-title: Activiteitendensen
+description: Een component Community Activity List aan een pagina toevoegen
+seo-description: Een component Community Activity List aan een pagina toevoegen
+uuid: 316aabf7-01a5-46da-be59-70c206eb6a3d
+contentOwner: msm-service
+products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
+topic-tags: authoring
+content-type: reference
+discoiquuid: 4a0debdd-acb9-4646-80bb-fec66fae4088
+docset: aem65
+translation-type: tm+mt
+source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+
+---
+
+
+# Activiteitendensen{#activity-trends}
+
+## Inleiding {#introduction}
+
+De `Community Activity List` component biedt de mogelijkheid om trending information betreffende posten en weergaven door leden toe te voegen, alsook publicaties en weergaven van inhoud.
+
+In het document wordt beschreven:
+
+* toevoegen van de `Community Activity List` component aan een [gemeenschapsplaats](/help/communities/overview.md#community-sites)
+
+* configuratie-instellingen voor de `Community Activity List` component
+
+### Vereiste {#requirement}
+
+Gegevens voor de `Community Activity List` website zijn alleen beschikbaar als Adobe Analytics een licentie heeft en is geconfigureerd voor de communitysite.
+
+Zie [Analytics Configuration for Communities Features](/help/communities/analytics.md).
+
+### Een communautaire activiteitenlijst toevoegen aan een pagina {#adding-a-community-activity-list-to-a-page}
+
+Als u een `Community Activity List` component aan een pagina wilt toevoegen in de ontwerpmodus, zoekt u de component
+
+* `Communities / Community Activity List`
+
+en sleep het naar de juiste plaats op een pagina.
+
+Ga voor de benodigde informatie naar [Community Components Basics](/help/communities/basics.md).
+
+Wanneer de component voor het eerst op een pagina van een communitysite wordt geplaatst, ziet deze er als volgt uit:
+
+![chlimage_1-54](assets/chlimage_1-54.png)
+
+### Lijst met communautaire activiteiten configureren {#configuring-community-activity-list}
+
+Selecteer de geplaatste `Community Activity List` component die u wilt openen en selecteer het `Configure` pictogram waarmee het dialoogvenster Bewerken wordt geopend.
+
+![chlimage_1-55](assets/chlimage_1-55.png)
+
+Geef onder het tabblad **Opmerkingen **op of en hoe opmerkingen voor geüploade bestanden worden weergegeven:
+
+![chlimage_1-56](assets/chlimage_1-56.png)
+
+* **Type**
+
+   Geef op of gegevens met betrekking tot leden van de gebruikersgemeenschap of door de gebruiker gegenereerde inhoud (UGC) moeten worden weergegeven.
+
+   Selecteren uit
+
+   * `Members`
+   * `Content`
+   Standaard is dit `Members`.
+
+* **Weergavetitel**
+
+   Een beschrijvende titel die boven de gegevens wordt weergegeven, zoals `Trending Content`.
+Standaard is geen titel.
+
+* **Aantal weergeven**
+
+   Het aantal aan te bieden items.
+De standaardwaarde is 10.
+
+* **Type activiteit**
+
+   Selecteer een van de volgende opties
+
+   * `Views`(paginabezoeken)
+   * `Posts`(maken van UGC)
+   * `Follows`
+   * `Likes`
+   Standaard zijn weergaven.
+
+* **Tijdsperiode**
+
+   Selecteer een van de volgende opties
+
+   * `Last 24 hours`
+   * `Last 7 days`
+   * `Last 30 days`
+   * `Last 90 days`
+   * `This year (since Jan 1st)`
+   * `Total`
+   Standaard is dit `Total`.
+
+* **Contextpad**
+
+   Verstrekt de capaciteit om de activiteit tot een ondergroep van de plaats, zoals een specifieke Blog uit te breiden.
+Standaard is dit de hele community-site.
+
+* **Samenvoeging aantal leden**
+
+   Wanneer deze optie is uitgeschakeld, worden alleen de bovenste posts geteld. Als de context bijvoorbeeld de hoofdpagina is (de standaardinstelling), `Activity Type`wordt bij een `Posts`van deze pagina nooit enige activiteit weergegeven, omdat de inhoud niet op de hoofdpagina kan worden geplaatst. Wanneer deze optie is ingeschakeld, worden de tellingen op alle afstammende pagina&#39;s opgenomen.
+Standaard is ingeschakeld.
+
+### Voorbeeldpagina met 4 componenten {#example-page-with-components}
+
+**Configuratie van bovenste bezoekers** : Type = Leden, Type activiteit = Weergaven
+
+**Configuratie van belangrijkste contribuanten** : Type = Leden, Type activiteit = Posten
+
+**Configuratie van de bovenste inhoud** : Type = Inhoud, Type activiteit = Weergaven
+
+**Trending Content** config: Type = Inhoud, Type activiteit = Post
+
+![chlimage_1-57](assets/chlimage_1-57.png)
+

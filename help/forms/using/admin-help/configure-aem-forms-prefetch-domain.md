@@ -1,0 +1,45 @@
+---
+title: AEM-formulieren configureren voor Prefetchdomain-informatie
+seo-title: AEM-formulieren configureren voor Prefetchdomain-informatie
+description: Configureer AEM-formulieren om domeininformatie vooraf in te stellen als u een langzamere responstijd hebt vanwege diepgeneste groepen of als u lid bent van veel groepen.
+seo-description: Configureer AEM-formulieren om domeininformatie vooraf in te stellen als u een langzamere responstijd hebt vanwege diepgeneste groepen of als u lid bent van veel groepen.
+uuid: 53c8995e-3f9d-42e8-9f75-cee7debe6ce1
+contentOwner: admin
+content-type: reference
+geptopics: SG_AEMFORMS/categories/configuring_user_management
+products: SG_EXPERIENCEMANAGER/6.5/FORMS
+discoiquuid: f9a3f897-90c6-4942-8a86-aae510298f2a
+translation-type: tm+mt
+source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+
+---
+
+
+# AEM-formulieren configureren voor Prefetchdomain-informatie {#configure-aem-forms-to-prefetchdomain-information}
+
+De gebruikers kunnen een langzamere reactietijd ervaren als zij tot vele groepen (bijvoorbeeld, 500 of meer) behoren of als de groepen diep worden genesteld (bijvoorbeeld, 30 niveaus). Als dit probleem optreedt, kunt u AEM-formulieren zo configureren dat de gegevens in bepaalde domeinen vooraf worden opgehaald.
+
+1. Klik in de beheerconsole op **[!UICONTROL Instellingen > Gebruikersbeheer > Configuratie > Configuratiebestanden]** importeren en exporteren.
+1. Als u de huidige configuratie-instelling naar een bestand wilt exporteren, klikt u op **[!UICONTROL Exporteren]** en slaat u het configuratiebestand op een andere locatie op.
+1. Voeg het volgende knooppunt toe (vet gemarkeerd):
+
+   ```as3
+    <node name="UM">
+    <map/>
+    <node name="PrincipalCache">
+        <map>
+            <entry key="principalCacheSize" value="1000"/>
+            <entry key="principalCacheBatchFetchSize" value="10"/>
+            <entry key="rebuildCacheAfterSync" value="true />
+            <entry key="enableFullPrefetch" value="false"/>
+            <entry key="principalCacheDomains" value="Domain_Name1/Domain_Name2/Domain_Name3"/>
+        <map>
+    </node>
+    <node name="APSAuditService">
+   ```
+
+   In dit voorbeeld worden meerdere domeinen geconfigureerd voor prefetch. De domeinnamen worden gescheiden door een &quot;/&quot;. Dit wordt getoond in het voorbeeld hierboven met *Domain_Name1*, *Domain_Name2*, en *Domain_Name3*.
+
+1. Als u het bijgewerkte bestand wilt importeren, klikt u in Gebruikersbeheer op **[!UICONTROL Configuratie > Configuratiebestanden]** importeren en exporteren.
+1. Klik op **[!UICONTROL Bladeren]** om het bestand te zoeken, klik op Importeren en klik vervolgens op **[!UICONTROL OK]**.
+

@@ -1,0 +1,136 @@
+---
+title: Regels voor gegevensbescherming en gegevensbescherming - Adobe Experience Manager gereed
+seo-title: Adobe Experience Manager Readiness for Data Protection and Data Privacy Regulations; zoals GDPR, CCPA, enz.
+description: 'Meer informatie over de ondersteuning van Adobe Experience Manager voor de verschillende Data Protection and Data Privacy Regulations; met inbegrip van de algemene gegevensbeschermingsverordening van de EU (GDPR), de California Consumer Privacy Act en de wijze waarop een nieuw AEM-project moet worden uitgevoerd. '
+seo-description: 'Meer informatie over de ondersteuning van Adobe Experience Manager voor de verschillende Data Protection and Data Privacy Regulations; met inbegrip van de algemene gegevensbeschermingsverordening van de EU (GDPR), de California Consumer Privacy Act en de wijze waarop een nieuw AEM-project moet worden uitgevoerd. '
+uuid: 9b0b8101-929c-4232-8c6e-1f9b8b2e0aa2
+contentOwner: aheimoz
+content-type: reference
+products: SG_EXPERIENCEMANAGER/6.5/MANAGING
+topic-tags: grdp
+discoiquuid: 0bcd7ac4-3071-466d-bd11-701f35ccf5bd
+docset: aem65
+translation-type: tm+mt
+source-git-commit: 9b16c8ae2ee28c60f35f9e0f990d79173463c33b
+
+---
+
+
+# Gereedheid van Adobe Experience Manager voor de regels voor gegevensbescherming en gegevensprivacy {#aem-readiness-for-data-protection-and-data-privacy-regulations}
+
+>[!WARNING]
+>
+>De inhoud van dit document is geen juridisch advies en is niet bedoeld als vervanging van juridisch advies.
+>
+>Raadpleeg de juridische afdeling van uw bedrijf voor advies over de regelgeving inzake gegevensbescherming en gegevensbescherming.
+
+>[!NOTE]
+>
+>Meer informatie over het antwoord van Adobe op privacy-problemen en wat dit voor u als Adobe-klant betekent, vindt u in het Privacy Center [van](https://www.adobe.com/privacy.html)Adobe.
+
+Adobe biedt documentatie en procedures (met API&#39;s, indien beschikbaar), waarmee de privacybeheerder van de klant of de AEM-beheerder gegevensbeschermings- en privacyverzoeken kan verwerken en waarmee onze klanten aan deze regels kunnen voldoen. De gedocumenteerde procedures zullen klanten toestaan om de regelgevende verzoeken manueel of door in APIs uit te voeren, waar beschikbaar, van een extern portaal of een dienst uit te voeren.
+
+>[!CAUTION]
+>
+>De hier beschreven gegevens zijn beperkt tot Adobe Experience Manager.
+>
+>Voor gegevens van een andere Adobe On-demand-service, samen met eventuele privacyverzoeken, moeten acties op die service worden ondernomen.
+>
+>Zie het Privacy Center [van](https://www.adobe.com/privacy.html)Adobe voor meer informatie.
+
+## Inleiding {#introduction}
+
+Exemplaren van de Manager van de Ervaring van Adobe, en de toepassingen die op hen lopen, zijn het eigendom van en werken door onze klanten.
+
+Bijgevolg vallen gegevensbeschermingsvoorschriften, zoals GDPR, CCPA en andere, grotendeels onder de verantwoordelijkheid van de klanten.
+
+In een zeer korte inleiding bevatten de verordeningen betreffende de privacy en bescherming van gegevens nieuwe regels die moeten worden gevolgd door de taken van:
+
+* Bedrijfsentiteiten (CCPA) en/of gegevensverwerkingsverantwoordelijken (GDPR)
+
+* Dienstverleners (CCPA) en/of gegevensverwerkers (GDPR)
+
+De belangrijkste bepalingen van deze verordeningen zijn:
+
+1. Uitgebreide definitie van persoonsgegevens zodat deze alle unieke id&#39;s omvat; zoals in direct en indirect identificeerbare gegevens.
+
+2. Versterkte toestemmingsvereisten.
+
+3. Meer aandacht voor verwijderingsrechten (gegevensgummetje).
+
+4. Uitschakelen van verkoop van gegevens.
+
+Voor Adobe Experience Manager:
+
+* De instanties en toepassingen die erop worden uitgevoerd, zijn eigendom van en worden beheerd door de klant.
+
+   * Dit betekent in feite dat de klant de regelgevende taken beheert, waaronder Business Entities en Service Provider, Data Controller en Data Processor.
+
+   * De Adobe Experience Platform Privacy Service maakt geen deel uit van de workflow voor AEM, zoals in het onderstaande diagram wordt geïllustreerd.
+
+* AEM omvat documentatie en procedures voor de privacybeheerder van de klant en/of de beheerder van AEM om de verzoeken van de privacyverordening uit te voeren; handmatig of via API&#39;s, indien beschikbaar.
+
+* Er is geen nieuwe service of interface toegevoegd.
+
+   * In plaats daarvan worden procedures en APIs gedocumenteerd voor gebruik door de klanten UIs/portals die verzoeken van de privacyverordening behandelen.
+
+* AEM zal geen uit-van-de-doos hulpmiddelen omvatten om het privacyverzoekwerkschema te steunen.
+
+   * Adobe verstrekt documentatie en procedures voor de de privacybeheerder van de klant en/of beheerder AEM, toelatend hen om verzoeken met betrekking tot de privacyverordeningen manueel uit te voeren.
+
+Adobe biedt procedures voor het verwerken van privacyverzoeken met betrekking tot Access, Delete en Opt-Out voor Adobe Experience Manager. In sommige gevallen zijn er API&#39;s beschikbaar die kunnen worden aangeroepen via een door de klant ontwikkeld portaal of scripts om te helpen met automatisering.
+
+In het volgende diagram ziet u hoe een workflow voor privacyverzoeken eruit kan zien (geïllustreerd met Adobe Experience Manager 6.5):
+
+![Gegevensbescherming en privacy](assets/data-protection-and-privacy-01.png)
+
+## Adobe Experience Manager en de gereedheid voor regelgeving {#aem-and-regulatory-readiness}
+
+Zie de volgende secties voor documentatie over regelgeving voor productgebieden van AEM.
+
+## AEM Foundation {#aem-foundation}
+
+Zie [Afhandeling van verzoeken om gegevensbescherming en privacy voor de AEM Foundation](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md).
+
+## AEM die in de inzameling van de Statistieken van het Samengevoegde Gebruik kiest {#aem-opting-into-aggregate-usage-statistics-collection}
+
+Zie [Samengevoegde verzameling](/help/sites-deploying/opt-in-aggregated-usage-statistics.md)van gebruiksstatistieken.
+
+## AEM-sites {#aem-sites}
+
+Zie [AEM-sites - Gereedheid voor gegevensbescherming en privacy.](/help/sites-administering/gdpr-compliance-sites.md)
+
+## AEM Commerce {#aem-commerce}
+
+Zie [AEM Commerce - Data Protection and Privacy Readiness](/help/sites-administering/gdpr-compliance-commerce.md).
+
+## AEM Mobile {#aem-mobile}
+
+Zie [AEM Mobile - Data Protection and Privacy Readiness](/help/mobile/aem-mobile-gdpr-compliance.md).
+
+## AEM-integratie met Adobe Target en Adobe Analytics {#aem-integration-with-adobe-target-adobe-analytics}
+
+Deze Adobe Experience Manager-integratie is uitgerust met services die klaar zijn voor gegevensbescherming en privacy (bijvoorbeeld GDPR of CCPA). Er worden geen persoonlijke gegevens van Adobe Target of Adobe Analytics opgeslagen in AEM met betrekking tot de integratie.
+Zie voor meer informatie:
+
+* [Adobe Target - Overzicht van privacy](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/privacy.html)
+
+* [Adobe Analytics Data Privacy Workflow](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/an-gdpr-workflow.html)
+
+## AEM-gemeenschappen {#aem-communities}
+
+De AEM-gemeenschappen verlenen de betrokkenen het recht op hun gegevensportabiliteit, het recht op toegang en het recht om door middel van [out-of-the-box API&#39;s](/help/communities/user-ugc-management-service.md)te worden vergeten. Deze APIs laat bulkschrapping en bulkuitvoer van gebruiker geproduceerde inhoud toe, en het onbruikbaar maken van gebruikersrekeningen die door hun erkende IDs worden geïdentificeerd. Nochtans, is de permanente schrapping van gebruikersrekening realiseerbaar door gebruikersknoop in CRXDE Lite te schrappen, die de behoefte van gemakkelijke Opt-out van het systeem richt.
+
+Bovendien biedt AEM Communities privacy door ontwerp dankzij zijn Bulk Moderation Console, die bevoorrechte leden toestaat om de bijdragen en details van de gebruikers te vinden en te schrappen. De beheerconsole van Leden laat het beperken tot het punt van het verbieden van een medewerker toe. Bovendien worden de betrokkenen gemachtigd de door hen geautoriseerde bijdragen te schrappen.
+
+## AEM Forms {#aem-forms}
+
+AEM Forms omvat componenten en workflows die gegevens vastleggen, verwerken en opslaan om bedrijfsprocessen te ordenen en digitale transacties te voltooien. De verschillende componenten gebruiken verschillende gegevensopslag en staan integratie met douanegegevensopslag eveneens toe. In de volgende documentatie worden de procedures en richtlijnen beschreven voor de toegang tot en de verwerking van gebruikersgegevens ter ondersteuning van gegevensbeveiliging en privacyworkflows (bijvoorbeeld GDPR of CCPA) voor een component.
+
+* [Forms Portal](/help/forms/using/forms-portal-handling-user-data.md)
+* [Correspondentenbeheer](/help/forms/using/correspondence-management-handling-user-data.md)
+* [Integratie met Adobe Sign](/help/forms/using/integration-adobe-sign-handling-user-data.md)
+* [Forms-centric workflows op OSGi](/help/forms/using/forms-workflow-osgi-handling-user-data.md)
+* [Forms JEE-workflows](/help/forms/using/forms-workflow-jee-handling-user-data.md) (alleen AEM Forms JEE)
+* [Documentbeveiliging](/help/forms/using/document-security-handling-user-data.md) (alleen AEM Forms JEE)
+* [Gebruikersbeheer](/help/forms/using/user-management-handling-user-data.md) (alleen AEM Forms JEE)

@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: c097b60f-bcdf-45de-babe-b4c2e2b746a1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+source-git-commit: d12313003cb94b27c1ce64442a1f3394af529a0d
 
 ---
 
@@ -174,19 +174,25 @@ Wanneer u een workflow uitvoert in de modus [transient](/help/sites-developing/w
 
 ## Workflowmodellen beschikbaar stellen in Touch UI {#classic2touchui}
 
-Als een workflowmodel aanwezig is in de klassieke gebruikersinterface maar ontbreekt in het pop-upmenu voor selectie in de tijdlijntrack van de aanraakinterface, volgt u de configuratie om het beschikbaar te maken. De volgende stappen illustreren het gebruik van de workflowmodellen van AEM Assets, genaamd **[!UICONTROL Verzoek om activering]** en **[!UICONTROL Verzoek om deactivering]**.
+Als een workflowmodel aanwezig is in de klassieke gebruikersinterface, maar ontbreekt in het pop-upmenu Selectie in de **[!UICONTROL tijdlijntrack]** van de aanraakinterface, volgt u de configuratie om het beschikbaar te maken. De volgende stappen illustreren het gebruik van het workflowmodel met de naam **[!UICONTROL Verzoek om activering]**.
 
-1. Bevestig dat het model niet beschikbaar is in een interface met aanraakbediening. Een element openen met `/assets.html/content/dam` pad. Selecteer het element. Open **[!UICONTROL tijdlijn]** in linkerraster. Klik op Workflow **** starten. U ziet dat **[!UICONTROL Verzoek om activering]** en **[!UICONTROL Verzoek om deactivering]** niet aanwezig zijn in de pop-uplijst.
-1. Klik op **[!UICONTROL Gereedschappen > Algemeen > Tags toevoegen]**. Selecteer **[!UICONTROL Workflow]**.
-1. Klik op **[!UICONTROL Maken > Tag]** maken. Stel **[!UICONTROL Titel]** in op `DAM` en **[!UICONTROL Naam]** op `dam`. Klik op **[!UICONTROL Verzenden]**.
+1. Bevestig dat het model niet beschikbaar is in een interface met aanraakbediening. Een element openen met `/assets.html/content/dam` pad. Selecteer een element. Open **[!UICONTROL tijdlijn]** in linkerraster. Klik op Workflow **** starten en bevestig dat het model **[!UICONTROL Verzoek om activering]** niet aanwezig is in de keuzelijst.
 
+1. Navigeer door **[!UICONTROL Gereedschappen > Algemeen > Tags]**. Selecteer **[!UICONTROL Workflow]**.
+
+1. Selecteer **[!UICONTROL Maken > Tag]** maken. Stel **[!UICONTROL Titel]** in op `DAM` en **[!UICONTROL Naam]** op `dam`. Selecteer **[!UICONTROL Verzenden]**.
    ![Tag maken in workflowmodel](assets/workflow_create_tag.png)
 
-1. Klik op **[!UICONTROL Gereedschappen > Workflow > Modellen]**. Selecteer **[!UICONTROL Verzoek om activering]** (of **[!UICONTROL Verzoek om deactivering]**). Click **[!UICONTROL Edit]**.
-1. Ga in de assistent naar het tabblad **[!UICONTROL Pagina]** . Open **[!UICONTROL Pagina-eigenschappen]**.
-1. Toevoegen `Workflow : DAM` aan veld **[!UICONTROL Tags/Trefwoorden]** . Click **[!UICONTROL OK]**. Click **[!UICONTROL Save]**.
+1. Ga naar **[!UICONTROL Gereedschappen > Workflow > Modellen]**. Selecteer **[!UICONTROL Verzoek om activering]** en selecteer vervolgens **[!UICONTROL Bewerken]**.
 
+1. Selecteer **[!UICONTROL Bewerken]**, open het menu **[!UICONTROL Pagina-informatie]** en selecteer vervolgens Eigenschappen **** openen en ga naar het tabblad **[!UICONTROL Standaard]** (als dit nog niet is geopend).
+
+1. Toevoegen `Workflow : DAM` aan veld **[!UICONTROL Tags]** . Bevestig de selectie met de controle (kruis).
+
+1. Bevestig de toevoeging van de tag met **[!UICONTROL Opslaan en sluiten]**.
    ![Pagina-eigenschappen van model bewerken](assets/workflow_model_edit_activation1.png)
+
+1. Voltooi het proces met **[!UICONTROL Sync]**. De workflow is nu beschikbaar in de interface voor aanraakbediening.
 
 ### Een workflow configureren voor ondersteuning van meerdere bronnen {#configuring-a-workflow-for-multi-resource-support}
 

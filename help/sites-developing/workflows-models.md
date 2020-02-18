@@ -185,7 +185,7 @@ Als een workflowmodel aanwezig is in de klassieke gebruikersinterface, maar ontb
 
 1. Ga naar **[!UICONTROL Gereedschappen > Workflow > Modellen]**. Selecteer **[!UICONTROL Verzoek om activering]** en selecteer vervolgens **[!UICONTROL Bewerken]**.
 
-1. Selecteer **[!UICONTROL Bewerken]**, open het menu **[!UICONTROL Pagina-informatie]** en selecteer vervolgens Eigenschappen **** openen en ga naar het tabblad **[!UICONTROL Standaard]** (als dit nog niet is geopend).
+1. Selecteer **[!UICONTROL Bewerken]**, open het menu **[!UICONTROL Pagina-informatie]** en selecteer vervolgens **[UICONTROL Open Properties]** en ga naar het tabblad **[!UICONTROL Basic]** (als dit nog niet is geopend).
 
 1. Toevoegen `Workflow : DAM` aan veld **[!UICONTROL Tags]** . Bevestig de selectie met de controle (kruis).
 

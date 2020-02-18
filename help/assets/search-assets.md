@@ -7,7 +7,7 @@ discoiquuid: 98717f6d-1911-49ac-928c-01a75292ff01
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 6d4f79c126a3c44666e2a42b2246c964813d24ab
+source-git-commit: dc38876e3905622a0ed6109c1718fcf464fe6374
 
 ---
 
@@ -459,7 +459,7 @@ U kunt slimme verzamelingen maken op basis van de zoekcriteria. Selecteer **[!UI
 | Bij het zoeken naar visueel vergelijkbare afbeeldingen wordt een irrelevante afbeelding weergegeven | Zichtbaar zoekgedrag. | AEM geeft zoveel mogelijk relevante activa weer. Eventuele minder relevante afbeeldingen worden aan de resultaten toegevoegd, maar met een lagere zoekpositie. De kwaliteit van de overeenkomsten en de relevantie van de gezochte elementen nemen af wanneer u de zoekresultaten omlaag schuift. |
 | Bij het selecteren en gebruiken van gezochte elementen worden niet alle gezochte elementen gebruikt | Met de optie Alles  selecteren selecteert u alleen de eerste 100 zoekresultaten in de kaartweergave en de eerste 200 zoekresultaten in de lijstweergave. |  |
 
->[!MORE ZOALS DIT]
+>[!MORELIKETHIS]
 >
 >* [Handleiding voor AEM-zoekimplementatie](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/search-tutorial-develop.html)
 >* [Geavanceerde configuratie van zoekresultaten met meerdere waarden en tags](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/search-feature-video-use.html)

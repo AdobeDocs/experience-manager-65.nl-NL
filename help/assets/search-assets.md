@@ -2,12 +2,9 @@
 title: Digitale middelen en afbeeldingen zoeken in AEM
 description: Leer hoe u de vereiste elementen in AEM kunt vinden met het deelvenster Filters en hoe u de elementen gebruikt die in de zoekopdracht worden weergegeven.
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-discoiquuid: 98717f6d-1911-49ac-928c-01a75292ff01
-docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: dc38876e3905622a0ed6109c1718fcf464fe6374
+source-git-commit: b0ae7552a6dc0476a682bdbe715aac4b42315ff6
 
 ---
 
@@ -64,9 +61,13 @@ U kunt trefwoordzoekopdrachten uitvoeren vanuit het veld UniverseelZoeken. De tr
 
 De resultaten worden gesorteerd op relevantie, te beginnen met de dichtstbijzijnde overeenkomsten. Voor meerdere trefwoorden zijn relevantere resultaten de elementen die beide termen in de metagegevens bevatten. Trefwoorden die in de metagegevens voorkomen, krijgen een hogere positie dan trefwoorden die in andere metagegevensvelden worden weergegeven. Met AEM kan een bepaalde zoekterm een hoger gewicht krijgen. Ook is het mogelijk om de positie [van een paar doelactiva voor specifieke zoektermen te](#searchrank) versterken.
 
-Om de relevante activa snel te vinden, verstrekt de rijke interface het filtreren, het sorteren, en selectiemechanismen. U kunt resultaten filteren op basis van meerdere criteria en het aantal gezochte elementen voor verschillende filters bekijken. U kunt de zoekopdracht ook opnieuw uitvoeren door de query in het veld Onderzoek te wijzigen. Wanneer u de zoektermen of filters wijzigt, blijven de andere filters van toepassing om de context van de zoekopdracht te behouden. Als de resultaten groter zijn dan 1000, geeft AEM niet alle gezochte elementen weer en wordt 1000+ weergegeven als het aantal gezochte elementen. Dit is om zoekprestaties te verbeteren. Wanneer u scrolt om meer elementen te zien, neemt het aantal stappen van 200 geleidelijk toe tot na 1000.
+Om de relevante activa snel te vinden, verstrekt de rijke interface het filtreren, het sorteren, en selectiemechanismen. U kunt resultaten filteren op basis van meerdere criteria en het aantal gezochte elementen voor verschillende filters bekijken. U kunt de zoekopdracht ook opnieuw uitvoeren door de query in het veld Onderzoek te wijzigen. Wanneer u de zoektermen of filters wijzigt, blijven de andere filters van toepassing om de context van de zoekopdracht te behouden.
 
-Het kan voorkomen dat de zoekresultaten een aantal onverwachte elementen bevatten. Zie [onverwachte resultaten](#unexpectedresults)voor meer informatie.
+Wanneer de resultaten veel elementen zijn, worden de eerste 100 weergegeven in de kaartweergave en 200 in de lijstweergave. Wanneer gebruikers schuiven, worden meer elementen geladen. Dit is om de prestaties te verbeteren.
+
+>[!VIDEO](https://www.youtube.com/watch?v=LcrGPDLDf4o)
+
+Het kan voorkomen dat de zoekresultaten een aantal onverwachte elementen bevatten. Zie [onverwachte resultaten](#troubleshoot-unexpected-search-results-and-issues)voor meer informatie.
 
 AEM kan vele dossierformaten zoeken en de onderzoeksfilters kunnen worden aangepast aan uw bedrijfsvereisten. Neem contact op met uw beheerder om te weten welke zoekopties beschikbaar worden gesteld voor uw DAM-opslagplaats en welke beperkingen uw account heeft.
 
@@ -243,7 +244,7 @@ U kunt de volgende aanvraagparameters in een URL doorgeven om de elementenkiezer
 | assettype (S) | afbeeldingen, documenten, multimedia, archieven | <ul><li>[https://localhost:4502/aem/assetpicker.html?assettype=images](https://localhost:4502/aem/assetpicker.html?assettype=images)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=documents](https://localhost:4502/aem/assetpicker.html?assettype=documents)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=multimedia](https://localhost:4502/aem/assetpicker.html?assettype=multimedia)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=archives](https://localhost:4502/aem/assetpicker.html?assettype=archives)</li></ul> | Gebruik deze optie om elementtypen te filteren op basis van de doorgegeven waarde. |
 | basis | &lt;folder_path> | [https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities](https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities) | Gebruik deze optie om de hoofdmap voor de elementenkiezer op te geven. In dit geval kunt u met de elementenkiezer alleen onderliggende elementen (direct/indirect) in de hoofdmap selecteren. |
 
-Ga naar `https://[AEM server]:[port]/aem/assetpicker`om de interface van de elementenkiezer te openen. Navigeer naar de gewenste map en selecteer een of meer elementen. U kunt ook naar het gewenste element zoeken in het vak Zoeken, naar wens een filter toepassen en het vervolgens selecteren.
+Ga naar `https://[aem_server]:[port]/aem/assetpicker`om de interface van de elementenkiezer te openen. Navigeer naar de gewenste map en selecteer een of meer elementen. U kunt ook naar het gewenste element zoeken in het vak Zoeken, naar wens een filter toepassen en het vervolgens selecteren.
 
 ![Bladeren en element selecteren in de elementkiezer](assets/assetpicker.png)
 
@@ -258,7 +259,7 @@ De zoekfunctie in AEM Assets heeft de volgende beperkingen:
 * Het is mogelijk dat AEM de zoekterm blijft weergeven nadat u eigenschappen van een element hebt geselecteerd in de zoekresultaten en vervolgens de zoekopdracht hebt geannuleerd. <!-- (CQ-4273540) -->
 * Wanneer u naar mappen of bestanden en mappen zoekt, kunnen de zoekresultaten op geen enkele parameter worden gesorteerd.
 * Als u op Enter drukt zonder iets te typen op de zoekbalk, retourneert AEM een lijst met alleen bestanden en niet mappen. Als u specifiek naar mappen zoekt zonder een trefwoord te gebruiken, geeft AEM geen resultaten.
-* Met het selectievakje Alles  selecteren kunt u alleen de eerste 100 gezochte elementen in de kaartweergave selecteren en de eerste 200 gezochte elementen in de lijstweergave.
+* Met het selectievakje Alles  selecteren kunt u alleen de eerste 100 gezochte elementen in de kaartweergave selecteren en de eerste 200 gezochte elementen in de lijstweergave. Als u schuift en meer elementen in de gebruikersinterface laadt, kunt u meer selecteren met de optie Alles  selecteren.
 
 Het visuele onderzoek of het gelijkenis onderzoek heeft de volgende beperkingen:
 
@@ -457,7 +458,7 @@ U kunt slimme verzamelingen maken op basis van de zoekcriteria. Selecteer **[!UI
 | Zoekfilter/-voorspelling is niet beschikbaar | <ul><li>Het zoekfilter is niet geconfigureerd.</li><li>Het is niet beschikbaar voor uw aanmelding.</li><li>(Minder waarschijnlijk) De onderzoeksopties worden niet aangepast op de plaatsing u gebruikt.</li></ul> | <ul><li>Neem contact op met de beheerder om te controleren of de zoekaanpassingen beschikbaar zijn of niet.</li><li>Neem contact op met de beheerder om te controleren of uw account de rechten/machtigingen heeft om de aanpassing te gebruiken.</li><li>Neem contact op met de beheerder en controleer de beschikbare aanpassingen voor de implementatie van AEM Assets die u gebruikt.</li></ul> |
 | Bij het zoeken naar visueel vergelijkbare afbeeldingen ontbreekt een verwachte afbeelding | <ul><li>Afbeelding is niet beschikbaar in AEM.</li><li>Afbeelding is niet geïndexeerd. Doorgaans wanneer het onlangs is geüpload.</li><li>Afbeelding heeft geen slimme tags.</li></ul> | <ul><li>Voeg de afbeelding toe aan AEM-elementen.</li><li>Neem contact op met de beheerder om de gegevensopslagruimte opnieuw te indexeren. Zorg er ook voor dat u de juiste index gebruikt.</li><li>Neem contact op met de beheerder om de relevante elementen een slimme tag te geven.</li></ul> |
 | Bij het zoeken naar visueel vergelijkbare afbeeldingen wordt een irrelevante afbeelding weergegeven | Zichtbaar zoekgedrag. | AEM geeft zoveel mogelijk relevante activa weer. Eventuele minder relevante afbeeldingen worden aan de resultaten toegevoegd, maar met een lagere zoekpositie. De kwaliteit van de overeenkomsten en de relevantie van de gezochte elementen nemen af wanneer u de zoekresultaten omlaag schuift. |
-| Bij het selecteren en gebruiken van gezochte elementen worden niet alle gezochte elementen gebruikt | Met de optie Alles  selecteren selecteert u alleen de eerste 100 zoekresultaten in de kaartweergave en de eerste 200 zoekresultaten in de lijstweergave. |  |
+| Wanneer u zoekresultaten selecteert en gebruikt, worden niet alle gezochte elementen gebruikt | Met de optie Alles  selecteren selecteert u alleen de eerste 100 zoekresultaten in de kaartweergave en de eerste 200 zoekresultaten in de lijstweergave. |  |
 
 >[!MORELIKETHIS]
 >

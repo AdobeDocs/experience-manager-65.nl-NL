@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bd0b8e1605f6d8f6cc04a4173731351df002a67d
+source-git-commit: 37d0225f69800225e82f253ad9dbab8b2b30ac5e
 
 ---
 
@@ -163,6 +163,8 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 
 * Een uitzondering wordt weergegeven in AEM tijdens het opvragen voor taakdetails van een element (CQ-4283569).
 
+* XSS-kwetsbaarheid in DAM (NPR-31654).
+
 #### Sites {#sites}
 
 * Als de overerving van LiveCopy is verbroken, worden op live kopieerpagina&#39;s links naar taalkopieën weergegeven in plaats van LiveCopy-koppelingen (NPR-30980).
@@ -175,6 +177,9 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 * De API ResponsiveGridExporter retourneert de interface com.day.cq.wcm.foundation.model.impl.export.AllowedComponentsExporter niet. Het pakket com.day.cq.wcm.foundation.model.impl wordt gedeclareerd als een privépakket (NPR-31398).
 * Wanneer een pagina die sommige ExperienceFragments bevat op niet redacteurswijze (of in Auteur zonder het `editor.html` voorvoegsel en `wcmmode=disabled`, of in Uitgever) wordt geopend., beëindigt het verzoek in code 500 van de de statusfout van HTTP (NPR-30743).
 * Gebruikers kunnen hun wachtwoord niet wijzigen en toegang krijgen tot hun profielpagina (NPR-31161).
+* Een JavaScript-bestand met gebruikersgegevens wordt gegenereerd aan de serverzijde (NPR-30822).
+* In de gebruikersinterface van AEM-authoring is phishing met behulp van externe inhoud mogelijk (NPR-29745).
+* Expressietaalinjectie-kwetsbaarheid in AEM 6.5-metagegevenseditor (NPR-31017).
 
 #### Zoeken en gebruikersinterface {#search-ui-interface}
 

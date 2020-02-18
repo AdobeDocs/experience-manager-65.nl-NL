@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: c097b60f-bcdf-45de-babe-b4c2e2b746a1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d12313003cb94b27c1ce64442a1f3394af529a0d
+source-git-commit: 9f260d3ccb98409790cd18b2540329fc36a07c05
 
 ---
 
@@ -48,8 +48,9 @@ Een nieuwe workflow maken met de editor:
 >Als u met programmacode modellen maakt (met behulp van een crx-pakket), kunt u ook een submap maken binnen:
 >
 >`/var/workflow/models`
-
+>
 >Bijvoorbeeld, `/var/workflow/models/prototypes`
+>
 >Deze map kan vervolgens worden gebruikt voor het [beheer van de toegang tot de modellen in die map](/help/sites-administering/workflows-managing.md#create-a-subfolder-in-var-workflow-models-and-apply-the-acl-to-that).
 
 ## Een workflow bewerken {#editing-a-workflow}
@@ -89,7 +90,8 @@ Wanneer u een [standaardmodel en/of verouderd model](/help/sites-developing/work
 * laten u toe om veranderingen aan te brengen
 
 >[!NOTE]
-Zie [Locations of Workflow Models](/help/sites-developing/workflows-best-practices.md#locations-workflow-models) voor meer informatie.
+>
+>Zie [Locations of Workflow Models](/help/sites-developing/workflows-best-practices.md#locations-workflow-models) voor meer informatie.
 
 ![wf-22](assets/wf-22.png)
 
@@ -102,7 +104,8 @@ Wanneer u een model bewerkt, worden de beschikbare stappen weergegeven in de ver
 ![wf-10](assets/wf-10.png)
 
 >[!NOTE]
-Voor informatie over de primaire stapcomponenten die met AEM worden geïnstalleerd, zie de Verwijzing [van de Stappen van het](/help/sites-developing/workflows-step-ref.md)Werkschema.
+>
+>Voor informatie over de primaire stapcomponenten die met AEM worden geïnstalleerd, zie de Verwijzing [van de Stappen van het](/help/sites-developing/workflows-step-ref.md)Werkschema.
 
 Stappen toevoegen aan uw workflowmodel:
 
@@ -144,7 +147,8 @@ U kunt het gedrag van een werkschemastap **vormen** en aanpassen gebruikend de d
 
    * Dubbelklik op de stap.
    >[!NOTE]
-   Voor informatie over de primaire stapcomponenten die met AEM worden geïnstalleerd, zie de Verwijzing [van de Stappen van het](/help/sites-developing/workflows-step-ref.md)Werkschema.
+   >
+   >Voor informatie over de primaire stapcomponenten die met AEM worden geïnstalleerd, zie de Verwijzing [van de Stappen van het](/help/sites-developing/workflows-step-ref.md)Werkschema.
 
 1. Configureer desgewenst de **stapeigenschappen** ; Welke eigenschappen beschikbaar zijn, is afhankelijk van het type stap. Er kunnen ook verschillende tabbladen beschikbaar zijn. Bijvoorbeeld, de standaard Stap **van de** Deelnemer, in een nieuw werkschema als `Step 1`:
 
@@ -170,7 +174,8 @@ U kunt een [tijdelijk](/help/sites-developing/workflows.md#transient-workflows) 
    Zie [Uw workflow](#sync-your-workflow-generate-a-runtime-model) synchroniseren voor meer informatie.
 
 >[!NOTE]
-Wanneer u een workflow uitvoert in de modus [transient](/help/sites-developing/workflows.md#transient-workflows) , slaat AEM geen workflowhistorie op. Daarom wordt in de [tijdlijn](/help/sites-authoring/basic-handling.md#timeline) geen informatie over die workflow weergegeven. [](/help/sites-authoring/basic-handling.md#timeline)
+>
+>Wanneer u een workflow uitvoert in de modus [transient](/help/sites-developing/workflows.md#transient-workflows) , slaat AEM geen workflowhistorie op. Daarom wordt in de [tijdlijn](/help/sites-authoring/basic-handling.md#timeline) geen informatie over die workflow weergegeven. [](/help/sites-authoring/basic-handling.md#timeline)
 
 ## Workflowmodellen beschikbaar stellen in Touch UI {#classic2touchui}
 
@@ -214,7 +219,8 @@ U kunt een workflowmodel configureren voor [Multi Resource Support](/help/sites-
 [Workflowfasen](/help/sites-developing/workflows.md#workflow-stages) helpen u de voortgang van een workflow bij het uitvoeren van taken te visualiseren.
 
 >[!CAUTION]
-Als werkstroomfasen zijn gedefinieerd in **Pagina-eigenschappen**, maar niet worden gebruikt voor werkstroomstappen, wordt op de voortgangsbalk geen voortgang weergegeven (ongeacht de huidige werkstroomstap).
+>
+>Als werkstroomfasen zijn gedefinieerd in **Pagina-eigenschappen**, maar niet worden gebruikt voor werkstroomstappen, wordt op de voortgangsbalk geen voortgang weergegeven (ongeacht de huidige werkstroomstap).
 
 De stadia die beschikbaar moeten zijn, worden gedefinieerd in de workflowmodellen; bestaande workflowmodellen kunnen worden bijgewerkt met werkgebieddefinities. U kunt een willekeurig aantal fasen voor het workflowmodel definiëren.
 
@@ -340,7 +346,8 @@ In het volgende voorbeeld wordt een variatie in de `Publish Example` workflow ge
    * Activeer **Bericht per e-mail**.
    * Selecteer `Administrator` ( `admin`) voor het veld **Gebruiker/Groep** .
    >[!NOTE]
-   De gegevens van [de mailservice en gebruikersaccount moeten geconfigureerd](/help/sites-administering/notification.md)zijn voor het verzenden van e-mails.
+   >
+   >De gegevens van [de mailservice en gebruikersaccount moeten geconfigureerd](/help/sites-administering/notification.md)zijn voor het verzenden van e-mails.
 
 1. Bevestig de updates met de tik.
 
@@ -393,7 +400,8 @@ Ga als volgt te werk om een OR-regel te definiëren:
    `/apps/myapp/workflow/scripts`
 
    >[!NOTE]
-   De scripts moeten een [functie hebben `check()`](#function-check) die een Booleaanse waarde retourneert.
+   >
+   >De scripts moeten een [functie hebben `check()`](#function-check) die een Booleaanse waarde retourneert.
 
 1. Bewerk de workflow en voeg de **OR-splitsing** toe aan het model.
 1. Bewerk de eigenschappen van **vertakking 1** van de **OR-splitsing**:
@@ -403,7 +411,8 @@ Ga als volgt te werk om een OR-regel te definiëren:
    * Als **Regel**, plaats de weg aan het manuscript. Bijvoorbeeld:
       `/apps/myapp/workflow/scripts/myscript1.ecma`
    >[!NOTE]
-   U kunt de vertakkingsvolgorde desgewenst wijzigen.
+   >
+   >U kunt de vertakkingsvolgorde desgewenst wijzigen.
 
 1. Bewerk de eigenschappen van **vertakking 2** van de **OR-splitsing**.
 
@@ -418,7 +427,8 @@ Ga als volgt te werk om een OR-regel te definiëren:
 #### Functie check() {#function-check}
 
 >[!NOTE]
-Zie [ECMAScript](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript)gebruiken.
+>
+>Zie [ECMAScript](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript)gebruiken.
 
 Het volgende voorbeeldscript retourneert `true` als het knooppunt zich onder een `JCR_PATH` locatie bevindt `/content/we-retail/us/en`:
 

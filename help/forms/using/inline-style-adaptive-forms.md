@@ -9,12 +9,12 @@ topic-tags: author
 discoiquuid: 21dec713-c76d-408b-baea-fc585377b429
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 33f73225fbb2c48353c1f34db3339c0bb79d4236
 
 ---
 
 
-# Inline styling van adaptieve formuliercomponenten{#inline-styling-of-adaptive-form-components}
+# Inline styling van adaptieve formuliercomponenten {#inline-styling-of-adaptive-form-components}
 
 U kunt de algemene weergave en stijl van een adaptief formulier definiëren door stijlen op te geven met de [themaeditor](../../forms/using/themes.md). Bovendien kunt u inline CSS-stijlen toepassen op afzonderlijke adaptieve formuliercomponenten en deze direct bekijken. Inline stijlen overschrijven de opmaak die in het thema is opgenomen.
 

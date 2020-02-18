@@ -8,7 +8,7 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 93f3696242c681a019c2252364fe7cee510cb933
+source-git-commit: 33f73225fbb2c48353c1f34db3339c0bb79d4236
 
 ---
 
@@ -312,11 +312,15 @@ Deze sectie bevat details en instructies over de Configuratie van de Wolk van de
 
 **Referenties:**
 
-1. [https://helpx.adobe.com/experience-manager/6-5/help/sites-administering/adobeanalytics.html](https://helpx.adobe.com/experience-manager/6-5/help/sites-administering/adobeanalytics.html)
-1. [https://helpx.adobe.com/experience-manager/6-5/help/sites-administering/adobeanalytics-connect.html](https://helpx.adobe.com/experience-manager/6-5/help/sites-administering/adobeanalytics-connect.html)
-1. [https://helpx.adobe.com/experience-manager/6-5/help/sites-authoring/pa-using.html](https://helpx.adobe.com/experience-manager/6-5/help/sites-authoring/pa-using.html)
-1. [https://helpx.adobe.com/experience-manager/6-5/forms/using/configure-analytics-forms-documents.html](https://helpx.adobe.com/experience-manager/6-5/forms/using/configure-analytics-forms-documents.html)
-1. [https://helpx.adobe.com/experience-manager/6-5/forms/using/view-understand-aem-forms-analytics-reports.html](https://helpx.adobe.com/experience-manager/6-5/forms/using/view-understand-aem-forms-analytics-reports.html)
+* [Integreren met Adobe Analytics](../../sites-administering/adobeanalytics.md)
+
+* [Verbinding maken met Adobe Analytics en frameworks maken](../../sites-administering/adobeanalytics-connect.md)
+
+* [Gegevens van paginaanalyse bekijken](../../sites-authoring/pa-using.md)
+
+* [Analyses en rapporten configureren](configure-analytics-forms-documents.md)
+
+* [Analyserapporten van AEM Forms weergeven en begrijpen](view-understand-aem-forms-analytics-reports.md)
 
 ### Configuratie van Adobe Analytics-cloudservice {#adobe-analytics-cloud-service-configuration}
 
@@ -432,7 +436,7 @@ De bewerkbare sjablonen in dit pakket zijn ook vooraf geconfigureerd met sjabloo
 
 De malplaatjes inbegrepen in dit pakket steunen ook het Systeem van de Stijl:
 
-[https://helpx.adobe.com/ca/experience-manager/6-5/help/sites-authoring/style-system.html](https://helpx.adobe.com/ca/experience-manager/6-5/help/sites-authoring/style-system.html)
+[Stijlsysteem](../../sites-authoring/style-system.md)
 
 #### Sjabloonlogo&#39;s {#template-logos}
 
@@ -446,7 +450,7 @@ Wanneer u de pagina- en formuliersjablonen bewerkt, kunt u de logo&#39;s van een
 
 Zie Pagina-inhoud bewerken voor meer informatie:
 
-[https://helpx.adobe.com/ca/experience-manager/6-5/help/sites-authoring/editing-content.html#main-pars_title_32](https://helpx.adobe.com/ca/experience-manager/6-5/help/sites-authoring/editing-content.html#main-pars_title_32)
+[Pagina-inhoud bewerken](../../sites-authoring/editing-content.md)
 
 ### Aanpassing sitepagina&#39;s {#sites-pages-customization}
 
@@ -458,7 +462,7 @@ Deze sitepagina&#39;s maken ook gebruik van het AEM-rasterpakket om de lay-out v
 
 Pagina&#39;s die in dit pakket zijn opgenomen, ondersteunen ook het stijlsysteem:
 
-[https://helpx.adobe.com/ca/experience-manager/6-5/help/sites-authoring/style-system.html](https://helpx.adobe.com/ca/experience-manager/6-5/help/sites-authoring/style-system.html)
+[Stijlsysteem](../../sites-authoring/style-system.md)
 
 U kunt ook naar het systeem [van de de aanpassingsstijl van](../../forms/using/forms-install-configure-gov-reference-site.md#customizetemplates) Malplaatjes voor documentatie over gesteunde stijlen verwijzen.
 
@@ -480,8 +484,8 @@ Deze formulieren kunnen worden aangepast aan bepaalde gebruiksgevallen. Houd er 
 
 U kunt adaptieve formulieren ook opmaken met de Stijleditor of de themaeditor:
 
-* [https://helpx.adobe.com/experience-manager/6-5/forms/using/inline-style-adaptive-forms.html](https://helpx.adobe.com/experience-manager/6-5/forms/using/inline-style-adaptive-forms.html)
-* [https://helpx.adobe.com/ca/experience-manager/6-5/forms/using/themes.html](https://helpx.adobe.com/ca/experience-manager/6-5/forms/using/themes.html)
+* [Inline styling van adaptieve formuliercomponenten](inline-style-adaptive-forms.md)
+* [Thema&#39;s maken en gebruiken](themes.md)
 
 ### Workflowaanpassing {#workflow-customization}
 

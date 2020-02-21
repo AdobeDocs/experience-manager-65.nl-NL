@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: ebe8136b-2a79-4035-b9d5-aa70a5bbd4af
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: 868936e0fd20d3867e31f0351d7b388149472fd2
 
 ---
 
@@ -100,7 +100,7 @@ Zowel het bestand map.pdf als het bestand direction.pdf moeten in een verzamelin
 
 >[!NOTE]
 >
->Een `AssemblerResult` object dat een verzamelingsobject bevat, wordt geretourneerd wanneer u de `invokeDDX` bewerking activeert. Deze bewerking wordt gebruikt wanneer u twee of meer invoer-PDF-documenten doorgeeft aan de Assembler-service. Als u echter slechts één invoer-PDF doorgeeft aan de Assembler-service en slechts één retourdocument verwacht, roept u de `invokeOneDocument` bewerking aan. Bij het aanroepen van deze bewerking wordt één document geretourneerd. Zie Gecodeerde PDF-documenten []samenstellen (/help/forms/develop/assembling-encrypted-pdf-documents-assembling-encrypted-pdf-documents-assembling.md#assembling-encrypted-pdf-documents) voor informatie over het gebruik van deze bewerking.
+>Een `AssemblerResult` object dat een verzamelingsobject bevat, wordt geretourneerd wanneer u de `invokeDDX` bewerking activeert. Deze bewerking wordt gebruikt wanneer u twee of meer invoer-PDF-documenten doorgeeft aan de Assembler-service. Als u echter slechts één invoer-PDF doorgeeft aan de Assembler-service en slechts één retourdocument verwacht, roept u de `invokeOneDocument` bewerking aan. Bij het aanroepen van deze bewerking wordt één document geretourneerd. Zie Gecodeerde PDF-documenten [](/help/forms/developing/assembling-encrypted-pdf-documents.md#assembling-encrypted-pdf-documents)samenstellen voor informatie over het gebruik van deze bewerking.
 
 **Uitvoeringsopties instellen**
 

@@ -10,7 +10,7 @@ topic-tags: manage
 discoiquuid: c30332b6-e012-442d-8e84-28832c116c7b
 noindex: true
 translation-type: tm+mt
-source-git-commit: 6fa293028332596bb93013119b4339c7721eb536
+source-git-commit: 3460909eb77cc078b728d1af4becd47cc4377b73
 
 ---
 
@@ -34,7 +34,7 @@ Met de app kunt u binaire bestanden met AEM Forms synchroniseren van het type Fo
 AEM-bureaubladtoepassing gebruikt WebDAV-protocol in Microsoft Windows en SMB1 in Mac OS X om verbinding te maken met een AEM Forms-server. Uit de doos, wordt de server van Vormen AEM niet toegelaten om binaire dossiers en andere activa met een cliënt te synchroniseren WebDAV of SMB. Voer de volgende stappen uit om AEM Forms voor AEM Desktop App in te schakelen:
 
 1. Meld u als beheerder aan bij AEM Forms.
-1. Klik in de auteurinstantie op ![adobeexperienceManager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager > Tools **![hammer](assets/hammer.png)> Deployment > Operations > Web Console**]**. De webconsole wordt in een nieuw venster geopend.
+1. Klik in de auteurinstantie op ![adobeexperienceManager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager > Tools]** ![hammer](assets/hammer.png) > Deployment > Operations > Web Console ****. De webconsole wordt in een nieuw venster geopend.
 1. Zoek en open de optie **[!UICONTROL FormsManager AddOn Configuration]** in het venster Webconsole.
 1. Schakel in het dialoogvenster FormsManager AddOn-configuratie het selectievakje Bronnen **[!UICONTROL asynchroon synchroniseren uit en klik op]** Opslaan ****.
 1. Start de AEM Forms-server opnieuw. Nadat u de computer opnieuw hebt opgestart, kan de AEM Forms-server inhoud accepteren en delen met de AEM-bureaubladtoepassing.

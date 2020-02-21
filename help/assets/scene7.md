@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: managing-assets
 discoiquuid: e7b95732-a571-48e8-afad-612059cdbde7
 translation-type: tm+mt
-source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
+source-git-commit: e9f5d8f63bc342723f2002f677c1673b4af6f891
 
 ---
 
@@ -70,7 +70,7 @@ Nadat ze in de **[!UICONTROL ontwerpmodus]** beschikbaar zijn gemaakt, kunt u de
 >
 >Als u aangepaste viewers maakt en ontwikkelt en de Inhoudszoeker gebruikt, moet u de parameter **[!UICONTROL allowfullscreen]** expliciet toevoegen.
 
-### Eindbericht voor Flash-viewers {#flash-viewers-end-of-life-notice}
+### Kennisgeving over de gebruiksduur van Flash-viewers {#flash-viewers-end-of-life-notice}
 
 Vanaf 31 januari 2017 wordt ondersteuning voor het Flash-viewerplatform door Adobe Dynamic Media Classic beëindigd.
 
@@ -265,11 +265,9 @@ Als u veelvoudige configuraties hebt, toont AEM door gebrek de [standaardconfigu
 >* Wanneer [Beveiligde voorvertoning is ingeschakeld](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), worden zowel gepubliceerde als niet-gepubliceerde elementen op Dynamic Media Classic wel weergegeven in de browser met dynamische media Klassieke inhoud.
 >* Als u geen **[!UICONTROL Dynamische Klassieke]** Media of het pictogram **[!UICONTROL S7]** als optie in inhoudbrowser ziet, moet u Dynamische Klassiek van Media [vormen om met AEM](/help/sites-administering/scene7.md)te werken.
 >* Voor video ondersteunt de Dynamic Media Classic-inhoudbrowser:
-   >
-   >  
-* Adaptieve videosets: container met alle video-uitvoeringen die nodig zijn voor naadloze weergave op meerdere schermen
->  * Eén MP4-video
->  * Single F4V-video
+   >   * Adaptieve videosets: container met alle video-uitvoeringen die nodig zijn voor naadloze weergave op meerdere schermen
+   >   * Eén MP4-video
+   >   * Single F4V-video
 
 
 ### Door inhoud bladeren in de gebruikersinterface die geoptimaliseerd is voor aanrakingen {#browsing-content-in-the-touch-optimized-ui}

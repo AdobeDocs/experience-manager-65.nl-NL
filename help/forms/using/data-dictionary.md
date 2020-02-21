@@ -9,7 +9,7 @@ topic-tags: correspondence-management
 discoiquuid: a1a0ad6b-023a-4822-9cce-0618657c3f9d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5831c173114a5a6f741e0721b55d85a583e52f78
+source-git-commit: 2b8d64082e3ba837c057ab5ee8c45ea0735ef6d0
 
 ---
 
@@ -423,8 +423,15 @@ Wanneer u dezelfde letter in verschillende talen naar uw klanten wilt verzenden,
 1. Tik op **OK** in de waarschuwing. Correspondence Management downloadt een zip-bestand met de naam DataDictionary-&lt;DDname>.zip naar de computer.
 1. Het Zip-bestand bevat een .properties-bestand. In dit bestand wordt het gedownloade gegevenswoordenboek gedefinieerd. De inhoud van het eigenschappenbestand is vergelijkbaar met het volgende:
 
-   # Woensdag 20 mei 16:06:23 BST 2015
-   DataDictionary.EmployeeDD.description=DataDictionary.EmployeeDD.displayName=EmployeeDataDictionaryDataDictionaryElement.name.description=DataDictionaryElement.name.displayName=nameDataDictionaryElement.person.description=DataDictionaryElement.person.displayName=person
+   ```
+   #Wed May 20 16:06:23 BST 2015
+   DataDictionary.EmployeeDD.description=
+   DataDictionary.EmployeeDD.displayName=EmployeeDataDictionary
+   DataDictionaryElement.name.description=
+   DataDictionaryElement.name.displayName=name
+   DataDictionaryElement.person.description=
+   DataDictionaryElement.person.displayName=person
+   ```
 
    In de structuur van het eigenschappenbestand wordt één regel gedefinieerd voor de beschrijving en de weergavenaam voor het gegevenswoordenboek en elk gegevenswoordenboekelement in het gegevenswoordenboek. Daarnaast definieert het eigenschappenbestand één regel voor een opsommingswaarde die is ingesteld voor elk gegevenswoordenboekelement. Net als bij een gegevenswoordenboek kan het corresponderende eigenschappenbestand meerdere definities van gegevenswoordenboekelementen bevatten. Bovendien kan het bestand de definities bevatten voor een of meer opsommingssets.
 

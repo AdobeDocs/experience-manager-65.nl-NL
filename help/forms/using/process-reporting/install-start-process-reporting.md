@@ -10,7 +10,7 @@ topic-tags: process-reporting
 discoiquuid: 7c1fcde0-b983-4b24-bc19-fcee1d4f096b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8f90dc4865126d52e04effc9197ef7145b1a167e
+source-git-commit: 8ae69f5bb67d51d759f143a076fef4f5f0375809
 
 ---
 
@@ -52,7 +52,7 @@ Voer de volgende stappen uit om het publicatieschema te wijzigen:
 >Als u de implementatie van AEM Forms uitvoert op een cluster, voert u de volgende stappen uit op elk knooppunt van de cluster.
 
 1. Stop de AEM Forms server-instantie.
-1. 
+1. &#x200B;
 
    * (Voor Windows) Open het `[JBoss root]/bin/run.conf.bat` bestand in een editor.
    * (Voor Linux, AIX en Solaris) `[JBoss root]/bin/run.conf.sh` dossier in een redacteur.

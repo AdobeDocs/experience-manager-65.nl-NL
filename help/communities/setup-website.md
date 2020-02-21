@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: d18c0ece-4c4f-499c-ac94-a9aaa7f883c4
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 4f4f2897000a0afe26a0dbcc4514e20befdb4114
 
 ---
 
@@ -38,9 +38,9 @@ De code in deze zelfstudie vertrouwt erop dat de naam van de hoofdmap gelijk is 
 >* Node names may contain spaces, but when used in an URI, the space must be encoded either as &#39;%20&#39; or &#39;+&#39;
 >* Node-namen kunnen afbreekstreepjes en onderstrepingstekens bevatten, maar deze moeten worden gecodeerd als er in een Java-bestand naar wordt verwezen als een pakketnaam. Zowel koppeltekens als onderstrepingstekens worden overgeslagen met een onderstrepingsteken gevolgd door de Unicode-waarde:
    >
-   >  
-* afbreekstreepje wordt &#39;_002d&#39;
->  * onderstrepingsteken wordt &#39;_005f&#39;
+   >   
+   * afbreekstreepje wordt &#39;_002d&#39;
+   >   * onderstrepingsteken wordt &#39;_005f&#39;
 
 
 ## De toepassingsmap (/apps) instellen {#setup-the-application-directory-apps}

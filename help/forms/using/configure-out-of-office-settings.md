@@ -4,7 +4,7 @@ seo-title: Vorm uit de montages van het Bureau
 description: RConfiguring uit de montages van het Bureau
 seo-description: Vorm uit de montages van het Bureau
 translation-type: tm+mt
-source-git-commit: 52e4564ecab61cedaf3aca3d10339f6bcee2f71e
+source-git-commit: 7ed5c2d0121029811d8ddeca3b1121912bc761f4
 
 ---
 
@@ -48,7 +48,7 @@ Voer de volgende stappen uit om de instelling Buiten-Office voor uw account in t
 
    Herhaal de stap om meer toewijzingen toe te voegen. <br>
 
-   [!NOTE]
+   >[!NOTE]
    >De volgorde van de toewijzingen is belangrijk. Wanneer een punt aan een gebruiker wordt toegewezen die uit bureau het plaatsen hebben toegelaten, wordt het punt geëvalueerd tegen de gespecificeerde toewijzingslijst in de orde worden de wijzers toegevoegd. Wanneer een item voldoet aan de criteria, wordt het toegewezen aan de ontvanger en wordt de volgende ontvanger niet gecontroleerd.
 
 1. Tik op **[!UICONTROL Opslaan]**. De instelling wordt van kracht op de opgegeven begindatum en -tijd. Als u zich aanmeldt terwijl u zich buiten het kantoor bevindt, wordt u pas overwogen op het kantoor wanneer u uw instellingen wijzigt.
@@ -56,9 +56,9 @@ Voer de volgende stappen uit om de instelling Buiten-Office voor uw account in t
 Nu, worden de punten die aan u tijdens uit de periode van het Bureau worden toegewezen automatisch toegewezen aan de gespecificeerde ontvanger.\
 ![Buiten kantoor](assets/out-of-office.png)
 
-[!NOTE]
+>[!NOTE]
 >(Alleen voor Forms-centric workflow-items) Schakel de optie **Toestaan dat een gebruiker zijn of haar taken kan delegeren in via de optie &#39;Buiten-Office&#39;-instellingen** van de stap Taak **** toewijzen in de workflow. Alleen items waarvoor de bovenstaande optie is ingeschakeld, worden gedelegeerd aan andere gebruikers.
-> 
+
 ## Beperkingen {#limitations}
 
 * Het toewijzen van items aan een groep wordt niet ondersteund.

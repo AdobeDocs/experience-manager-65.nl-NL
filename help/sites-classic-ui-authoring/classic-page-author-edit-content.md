@@ -1,6 +1,6 @@
 ---
-title: Pagina-inhoud bewerken
-seo-title: Pagina-inhoud bewerken
+title: Paginacontent bewerken
+seo-title: Paginacontent bewerken
 description: Inhoud wordt toegevoegd met componenten die naar de pagina kunnen worden gesleept. Deze kunnen vervolgens worden bewerkt, verplaatst of verwijderd.
 seo-description: Inhoud wordt toegevoegd met componenten die naar de pagina kunnen worden gesleept. Deze kunnen vervolgens worden bewerkt, verplaatst of verwijderd.
 uuid: e7b65ceb-263c-46f2-91e3-11dec3a016fa
@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: de321869-ebf9-41a1-8203-e12bdb088678
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+source-git-commit: 71b1301faf3ea3d881bcbf34eac101f3ed5c514c
 
 ---
 
 
-# Pagina-inhoud bewerken{#editing-page-content}
+# Paginacontent bewerken{#editing-page-content}
 
 Nadat u de pagina hebt gemaakt (nieuw of als onderdeel van een opstart of live kopie), kunt u de inhoud bewerken en de gewenste updates uitvoeren.
 
@@ -34,7 +34,7 @@ De assistent is een belangrijk hulpmiddel bij het ontwerpen van pagina&#39;s. He
 
 Er zijn verschillende tabbladen en pictogrammen beschikbaar, waaronder:
 
-* Componenten
+* Onderdelen
 * Pagina
 * Informatie
 * Versioning
@@ -152,16 +152,17 @@ Een alinea verwijderen:
 >[!NOTE]
 >
 >Als u de [gebruikerseigenschappen zo hebt ingesteld dat de algemene bewerkingswerkbalk](/help/sites-classic-ui-authoring/author-env-user-props.md) wordt weergegeven, kunt u ook bepaalde handelingen op de alinea&#39;s uitvoeren met de beschikbare knoppen **Kopiëren**, **Knippen**, **Plakken** en **Verwijderen** .
-
->Er zijn ook verschillende [sneltoetsen](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) beschikbaar.
 >
+>Er zijn ook verschillende [sneltoetsen](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) beschikbaar.
+
 ## Een component knippen/kopiëren/plakken {#cut-copy-paste-a-component}
 
 Net als wanneer u een component [](#deleting-a-component) verwijdert, kunt u het contextmenu gebruiken om een component te kopiëren, te knippen en/of te plakken
 
 >[!NOTE]
-Als u de [gebruikerseigenschappen zo hebt ingesteld dat de algemene bewerkingswerkbalk](/help/sites-classic-ui-authoring/author-env-user-props.md) wordt weergegeven, kunt u ook bepaalde handelingen op de alinea&#39;s uitvoeren met de beschikbare knoppen **Kopiëren**, **Knippen**, **Plakken** en **Verwijderen** .
-
+>
+>Als u de [gebruikerseigenschappen zo hebt ingesteld dat de algemene bewerkingswerkbalk](/help/sites-classic-ui-authoring/author-env-user-props.md) wordt weergegeven, kunt u ook bepaalde handelingen op de alinea&#39;s uitvoeren met de beschikbare knoppen **Kopiëren**, **Knippen**, **Plakken** en **Verwijderen** .
+>
 >Er zijn ook verschillende [sneltoetsen](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) beschikbaar.
 
 >[!NOTE]

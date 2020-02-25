@@ -36,16 +36,13 @@ Deze hulp een ontwikkelaar om:
 >
 >* Deze optie is alleen beschikbaar in de interface met aanraakbediening (wanneer u pagina&#39;s bewerkt).
 >* Is niet beschikbaar op mobiele apparaten of kleine vensters op het bureaublad (vanwege ruimtebeperkingen).
-   >
-   >    
-   * Dit gebeurt wanneer de breedte minder dan 1024 px is.
 >
-* Vereist de juiste machtigingen/rechten:
-
-   * De toegang tot de Wijze van de Ontwikkelaar wordt gegeven aan gebruikers die schrijftoegang op hebben `/apps`.
-
-
-
+>    * Dit gebeurt wanneer de breedte minder dan 1024 px is.
+>
+>* Vereist de juiste machtigingen/rechten:
+>
+>    * De toegang tot de Wijze van de Ontwikkelaar wordt gegeven aan gebruikers die schrijftoegang op hebben `/apps`.
+>
 
 >[!CAUTION]
 >

@@ -190,6 +190,7 @@ Voordat u de Java-servlet implementeert, moet u ervoor zorgen dat u een interact
           <scope>provided</scope>
        </dependency>
    ```
+
 1. Open het project van Java, creeer een .java dossier, bijvoorbeeld CCMBatchServlet.java. Voeg de volgende code toe aan het bestand:
 
    ```java

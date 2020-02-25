@@ -114,7 +114,7 @@ C-0-#000000 -> [GET /author/prox.html?CFC_cK=1102938422341 HTTP/1.1 ]
 
 * C betekent dat deze ingang uit de cliënt (het is een verzoek om een Web-pagina) komt
 * 0 is het verbindingsnummer (de verbindenteller begint bij 0)
-* # 00000 de verschuiving in de bytestream. Dit is de eerste vermelding, dus de verschuiving is 0.
+* &#x200B;# 00000 de verschuiving in de bytestream. Dit is de eerste vermelding, dus de verschuiving is 0.
 * [GET &lt;?>] is de inhoud van de aanvraag, in het voorbeeld een van de HTTP headers (url).
 
 Wanneer een verbinding sluit, wordt de volgende informatie geregistreerd:

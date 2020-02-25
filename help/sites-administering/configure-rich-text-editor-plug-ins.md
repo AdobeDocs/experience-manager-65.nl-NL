@@ -282,19 +282,18 @@ Geef vervolgens de locatie(s) op van de stijlpagina(&#39;s) waarnaar u wilt verw
 >
 >De rijke Redacteur van de Tekst gebruikt een containerDOM element met een identiteitskaart van `CQrte` die kan worden gebruikt om verschillende stijlen voor het bekijken en het uitgeven te verstrekken:
 >
->
-```>
+>```
 >#CQ td {
 > // defines the style for viewing
 > }
->```>
->```>
+>```
+>
+>```
 >#CQrte td {
 > // defines the style for editing
 > }
->```>
-
-
+>```
+>
 
 ### Geef de beschikbare stijlen op in de pop-uplijst {#stylesindropdown}
 

@@ -432,6 +432,7 @@ U kunt als volgt de `HelloWorld` Java-klasse maken in het testpakket:
      }
      }
    ```
+
 1. Klik op Alles **** opslaan om de wijzigingen op de server op te slaan.
 
 ### Een bundel maken {#building-a-bundle}

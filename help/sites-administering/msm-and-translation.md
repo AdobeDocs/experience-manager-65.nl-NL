@@ -60,10 +60,8 @@ Voor geavanceerdere gebruiksgevallen kan MSM ook voor alle taalmeesters worden g
 >Voor alle gebruiksgevallen is het raadzaam de volgende aanbevolen procedures te lezen:
 >
 >* [beste praktijken voor MSM](/help/sites-administering/msm-best-practices.md); met name:
-   >
-   >   
-   * [Site maken](/help/sites-administering/msm-best-practices.md#create-site)
-   >   * [MSM- en meertalige websites](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
+>
+>   * [Site maken](/help/sites-administering/msm-best-practices.md#create-site)
+>   * [MSM- en meertalige websites](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
 >
 >* [Aanbevolen procedures voor vertaling](/help/sites-administering/tc-bp.md)
-

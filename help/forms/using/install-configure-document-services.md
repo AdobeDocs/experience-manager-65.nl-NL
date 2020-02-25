@@ -415,6 +415,7 @@ AEM Forms add-on package is een toepassing die op AEM wordt geïmplementeerd. He
    ```
    sling.bootdelegation.xerces=org.apache.xerces.*
    ```
+
 1. Sla het bestand op en sluit het.
 
 ### De service voor lettertypebeheer configureren {#configuring-the-font-manager-service}

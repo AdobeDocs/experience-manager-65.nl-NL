@@ -358,27 +358,33 @@ In bepaalde omstandigheden wilt u mogelijk een aangepast logbestand met een ande
 
          Waarde: specificeren zoals vereist om de omwenteling van het dossier door grootte/datum te controleren; bijvoorbeeld: `'.'yyyy-MM-dd`
    >[!NOTE]
-   `org.apache.sling.commons.log.file.size` Hiermee bepaalt u de rotatie van het logbestand door een van de volgende instellingen in te stellen:
-   * een maximale bestandsgrootte
-   * een datum-/tijdschema
-   om aan te geven wanneer een nieuw bestand wordt gemaakt (en de naam van het bestaande bestand wordt gewijzigd volgens het naampatroon).
-   * Een formaatlimiet kan met een getal worden opgegeven. Als er geen grootteindicator is opgegeven, wordt deze gebruikt als het aantal bytes. U kunt ook een van de grootteindicatoren toevoegen - `KB`, `MB`of `GB` (hoofdlettergebruik wordt genegeerd).
-   * U kunt een tijd-/datumschema opgeven als een `java.util.SimpleDateFormat` patroon. Hiermee wordt de periode gedefinieerd waarna het bestand wordt geroteerd. ook het achtervoegsel dat aan het geroteerde dossier (voor identificatie) wordt toegevoegd.
-   De standaardwaarde is &#39;.&#39;jjjj-MM-dd (voor dagelijkse logrotatie).
-   Bijvoorbeeld, om middernacht van 20 Januari 2010 (of wanneer het eerste logboekbericht na dit voorkomt om precies te zijn), zal ../logs/error.log worden anders genoemd aan ../logs/error.log.2010-01-20. Logboekregistratie voor 21 januari wordt uitgevoerd naar (een nieuw en leeg) ../logs/error.log totdat de logbestanden bij de volgende wijziging van de dag worden doorgehaald.
-       | `&#39;.&#39;
-    yyyy-MM&quot;|Roteren aan het begin van elke maand|
- |—|—|     | `&#39;.&#39;yyyy-ww&quot;|Rotatie op de eerste dag van elke week (afhankelijk van de landinstelling). |
-       | `&#39;.&#39;yyyy-MM-dd&quot;|Dagelijks om middernacht. |
-       | `&#39;.&#39;yyyy-MM-dd-a&quot;|Roteren om middernacht en om middag van elke dag. |
-       | `&#39;.&#39;yyyy-MM-dd-HH&quot;|Roteren boven aan elk uur. |
-       | `&#39;.&#39;yyyy-MM-dd-HH-mm&quot;|Roteren aan het begin van elke minuut. 
- |    
- Opmerking      
-: Wanneer u een tijd/datum opgeeft:       1. 
- U moet letterlijke tekst met enkele aanhalingstekens (&#39; &#39;) &quot;escape&quot;-tekens gebruiken;   Dit     is om te voorkomen dat bepaalde tekens worden geïnterpreteerd als patroonletters.
-       1. Gebruik alleen tekens die zijn toegestaan voor een geldige bestandsnaam op een willekeurige plaats in de optie.
-   
+   >
+   >`org.apache.sling.commons.log.file.size` Hiermee bepaalt u de rotatie van het logbestand door een van de volgende instellingen in te stellen:
+   >
+   >* een maximale bestandsgrootte
+   >* een datum-/tijdschema
+   >
+   >om aan te geven wanneer een nieuw bestand wordt gemaakt (en de naam van het bestaande bestand wordt gewijzigd volgens het naampatroon).
+   >
+   >* Een formaatlimiet kan met een getal worden opgegeven. Als er geen grootteindicator is opgegeven, wordt deze gebruikt als het aantal bytes. U kunt ook een van de grootteindicatoren toevoegen - `KB`, `MB`of `GB` (hoofdlettergebruik wordt genegeerd).
+   >* U kunt een tijd-/datumschema opgeven als een `java.util.SimpleDateFormat` patroon. Hiermee wordt de periode gedefinieerd waarna het bestand wordt geroteerd. ook het achtervoegsel dat aan het geroteerde dossier (voor identificatie) wordt toegevoegd.
+   >
+   >De standaardwaarde is &#39;.&#39;jjjj-MM-dd (voor dagelijkse logrotatie).
+   >
+   >Bijvoorbeeld, om middernacht van 20 Januari 2010 (of wanneer het eerste logboekbericht na dit voorkomt om precies te zijn), zal ../logs/error.log worden anders genoemd aan ../logs/error.log.2010-01-20. Logboekregistratie voor 21 januari wordt uitgevoerd naar (een nieuw en leeg) ../logs/error.log totdat de logbestanden bij de volgende wijziging van de dag worden doorgehaald.
+   >
+   >| `&#39;.&#39;yyyy-MM&quot;|Roteren aan het begin van elke maand|
+   >|---|---|
+   >| `&#39;.&#39;yyyy-ww&quot;|Rotatie op de eerste dag van elke week (afhankelijk van de landinstelling). |
+   >| `&#39;.&#39;yyyy-MM-dd&quot;|Dagelijks om middernacht. |
+   >| `&#39;.&#39;yyyy-MM-dd-a&quot;|Roteren om middernacht en om middag van elke dag. |
+   >| `&#39;.&#39;yyyy-MM-dd-HH&quot;|Roteren boven aan elk uur. |
+   >| `&#39;.&#39;yyyy-MM-dd-HH-mm&quot;|Roteren aan het begin van elke minuut. |
+   >
+   >Opmerking: Wanneer u een tijd/datum opgeeft:
+   >1. U moet letterlijke tekst met enkele aanhalingstekens (&#39; &#39;) &quot;escape&quot;
+   >   -tekens gebruiken;   Dit     is om te voorkomen dat bepaalde tekens worden geïnterpreteerd als patroonletters.
+   >1. Gebruik alleen tekens die zijn toegestaan voor een geldige bestandsnaam op een willekeurige plaats in de optie.
 
 1. Lees het nieuwe logbestand met het gekozen gereedschap.
 

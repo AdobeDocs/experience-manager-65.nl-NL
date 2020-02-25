@@ -576,8 +576,7 @@ Om schrapping van de klassen te bereiken die van JSPs worden gecompileerd, opste
 >
 >Bijvoorbeeld als u omvat `/libs/foundation/global.jsp`, kunt u de volgende configuratie voor `maven-resources-plugin` in plaats van de configuratie gebruiken waarboven volledig overslaat `/libs`.
 >
->
-```
+>```
 > <resource>  
 >           <directory>src/main/content/jcr_root</directory>  
 >           <includes>  
@@ -586,6 +585,7 @@ Om schrapping van de klassen te bereiken die van JSPs worden gecompileerd, opste
 >       </includes>  
 >   </resource>  
 >```
+>
 
 ### Hoe kan ik-werken met SCM-systemen {#how-to-work-with-scm-systems}
 

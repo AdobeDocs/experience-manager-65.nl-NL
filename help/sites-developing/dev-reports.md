@@ -1318,11 +1318,11 @@ Om deze stappen te illustreren, bepaalt het volgende voorbeeld een rapport dat v
    >
    >Dit is hetzelfde als de definities:
    >
-   >
-   ```
+   >```
    >N:data [nt:unstructured]
    >   P:clientFilter [String] = "function(v) { return v; }"
    >```
+   >
    >Waar de functie gewoon de waarde retourneert die deze ontvangt.
 
 1. Bepaal uw rapportontwerp. Bijvoorbeeld `osgireport[cq:Page]` onder `/etc/designs/reports`.
@@ -1389,13 +1389,13 @@ Een geval van uw nieuw rapport kan nu worden gecreeerd:
    >
    >Aangezien dit voorbeeld geen groeperbare kolommen heeft, zijn de grafieken niet beschikbaar. Als u grafieken wilt zien, stelt u `groupable` in op `true`:
    >
-   >
-   ```
+   >```
    >N:osgireport [sling:Folder]
    > N:bundlecol [cq:Component]
    > N:definitions [nt:unstructured]
    > P:groupable [Boolean] = true
    >```
+   >
 
 ## Het vormen van de Diensten van het Kader van het Rapport {#configuring-the-report-framework-services}
 

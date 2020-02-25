@@ -86,7 +86,7 @@ Een verzoek om een webpagina kan er bijvoorbeeld als volgt uitzien:
 
 * C betekent dat deze ingang uit de cliënt (het is een verzoek om een Web-pagina) komt
 * 0 is het verbindingsnummer (de verbindenteller begint bij 0)
-* # 00000 de verschuiving in de bytestream. Dit is de eerste vermelding, dus de verschuiving is 0.
+* &#x200B;# 00000 de verschuiving in de bytestream. Dit is de eerste vermelding, dus de verschuiving is 0.
 * `[GET <?>]` Dit is de inhoud van de aanvraag, in het voorbeeld een van de HTTP-headers (url).
 
 Wanneer een verbinding sluit, wordt de volgende informatie geregistreerd:

@@ -35,22 +35,21 @@ U kunt de redacteur van de Vormen van het Schema van Meta-gegevens gebruiken om 
    AEM verstrekt de volgende malplaatjes uit de doos:
 
    * **standaard**: Het basisschema voor metagegevens voor elementen.
+
    De volgende onderliggende formulieren nemen de eigenschappen van het standaardformulier over:
-i. **afbeelding**: Schema-formulier voor elementen met het MIME-type &#39;image&#39;, bijvoorbeeld `image/jpeg`, `image/png`enzovoort.
-Het &quot;afbeeldingsformulier&quot; heeft de volgende onderliggende formuliersjablonen:
-a. **jpeg**: Schema voor activa met subtype `jpeg`.
-b. **tiff**: Schema voor de activa met subtype `tiff`.
+   i. **afbeelding**: Schema-formulier voor elementen met het MIME-type &#39;image&#39;, bijvoorbeeld `image/jpeg`, `image/png`enzovoort.
+   Het &quot;afbeeldingsformulier&quot; heeft de volgende onderliggende formuliersjablonen:
+   a. **jpeg**: Schema voor activa met subtype `jpeg`.
+   b. **tiff**: Schema voor de activa met subtype `tiff`.
 
    ii. **toepassing**: Schema-formulier voor elementen van het type MIME `application`, `application/pdf`bijvoorbeeld `application/zip`enzovoort.
-
-a. **pdf**: Schema voor activa met subtype `pdf`.
+   a. **pdf**: Schema voor activa met subtype `pdf`.
 
    iii. **video**: Schema-formulier voor elementen met het MIME-type `video`, zoals `video/avi`, `video/mp4`enzovoort.
 
    * **verzameling**: Schemaformulier voor verzamelingen.
    * **** contentfragment: Schemaformulier voor inhoudsfragmenten.
    * **formulieren**: Dit schema-formulier is gerelateerd aan [Adobe Experience Manager Forms](/help/forms/home.md).
-
 
 >[!NOTE]
 >

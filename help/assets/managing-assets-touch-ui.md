@@ -4,7 +4,7 @@ description: Leer de taken voor middelenbeheer, zoals het uploaden, downloaden, 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 6d4f79c126a3c44666e2a42b2246c964813d24ab
+source-git-commit: a67ff409107cbde04d10932d624340857b9f9f64
 
 ---
 
@@ -354,13 +354,11 @@ Zie ook Dynamische media-elementen [voorvertonen.](/help/assets/previewing-asset
 
    ![chlimage_1-218](assets/chlimage_1-13.png)
 
-1. Selecteer een of meer tags in het veld **[!UICONTROL Codes]** . Als u een aangepaste tag wilt toevoegen, typt u de naam van de tag in het vak en drukt u op Enter. De nieuwe tag wordt opgeslagen in AEM.
-
-   Op YouTube moeten labels publiceren en een koppeling naar YouTube hebben (als er een geschikte koppeling is gevonden).
+1. Selecteer een of meer tags in het veld **[!UICONTROL Codes]** . Als u een aangepaste tag wilt toevoegen, typt u de naam van de tag in het vak en drukt u op Enter. De nieuwe tag wordt opgeslagen in AEM. YouTube vereist labels om te publiceren. Bekijk [publicatievideo&#39;s op YouTube](video.md#publishing-videos-to-youtube).
 
    >[!NOTE]
    >
-   >Als u tags wilt maken, hebt u schrijfmachtigingen nodig voor `/content/cq:tags/default` de CRX-opslagruimte.
+   >Als u tags wilt maken, moet u schrijfmachtigingen uitvoeren in `/content/cq:tags/default` de CRX-opslagruimte.
 
 1. Tik/klik op het tabblad **[!UICONTROL Geavanceerd]** en tik/klik op de gewenste positie op de ster om een classificatie voor het element op te geven.
 
@@ -532,7 +530,7 @@ Schakel ook de knop forceren verwijderen uit met behulp van een overlay, zodat g
 
 ## Elementen downloaden {#downloading-assets}
 
-Zie Elementen [downloaden van AEM](/help/assets/download-assets-from-aem.md).
+See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 
 ## Elementen publiceren {#publishing-assets}
 
@@ -602,7 +600,7 @@ CUG&#39;s zijn een extra manier om de toegang tot uw elementen te beperken. U ku
 1. Publiceer de map en probeer deze vervolgens te openen vanuit de publicatie-instantie. Er wordt een aanmeldingsscherm weergegeven.
 1. Als u lid van de GECG bent, ga uw veiligheidsgeloofsbrieven in. De map wordt weergegeven nadat AEM u heeft geverifieerd.
 
-## Zoeken in middelen {#assetsearch}
+## Assets doorzoeken {#assetsearch}
 
 Het zoeken naar middelen is van cruciaal belang voor het gebruik van een systeem voor het beheer van digitale activa — of het nu gaat om verder gebruik door creatieve ondernemingen, voor een robuust beheer van activa door zakelijke gebruikers en marketeers, of voor beheer door DAM-beheerders.
 

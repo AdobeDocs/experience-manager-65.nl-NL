@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: 9f3129aff8a3e389231b0fe0973794e5d34480a0
 
 ---
 
@@ -335,7 +335,7 @@ Een HTML-formulier renderen met de API voor formulieren (webservice):
 
    * Een tekenreekswaarde die de naam van het formulierontwerp opgeeft, inclusief de bestandsnaamextensie. Als u verwijst naar een formulierontwerp dat deel uitmaakt van een Forms-toepassing, moet u controleren of u het volledige pad opgeeft, bijvoorbeeld `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Een `TransformTo` opsommingswaarde waarmee het HTML-voorkeurstype wordt opgegeven. Als u bijvoorbeeld een HTML-formulier wilt genereren dat compatibel is met dynamische HTML voor Internet Explorer 5.0 of hoger, geeft u op `TransformTo.MSDHTML`.
-   * Een `BLOB` object dat gegevens bevat die met het formulier moeten worden samengevoegd. Geef door als u geen gegevens wilt samenvoegen. `null` (Zie Formulieren [vooraf invullen met stroombare indelingen](/help/forms/develop/rendering-forms-rendering-forms prepopulating-forms-flowable-layouts-prepopulating.md#prepopulating-forms-with-flowable-layouts).)
+   * Een `BLOB` object dat gegevens bevat die met het formulier moeten worden samengevoegd. Geef door als u geen gegevens wilt samenvoegen. `null` (Zie Formulieren [vooraf invullen met stroombare indelingen](/help/forms/developing/prepopulating-forms-flowable-layouts.md#prepopulating-forms-with-flowable-layouts).)
    * Het `HTMLRenderSpec` object waarin de opties voor HTML-runtime worden opgeslagen.
    * Een tekenreekswaarde die de `HTTP_USER_AGENT` koptekstwaarde opgeeft; bijvoorbeeld `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. U kunt een lege tekenreeks doorgeven als u deze waarde niet wilt instellen.
    * Een `URLSpec` object dat URI-waarden opslaat die vereist zijn om een HTML-formulier te genereren. (Zie URI-waarden [](/help/forms/developing/rendering-interactive-pdf-forms.md)opgeven.)

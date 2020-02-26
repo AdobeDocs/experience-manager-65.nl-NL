@@ -10,7 +10,7 @@ topic-tags: introduction
 discoiquuid: 03886dd3-5873-4908-912b-fbbddb26c322
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 709d8fe467f5449eb1e844a49126535a4a4a6e7a
+source-git-commit: 70350add185b932ee604e190aabaf972ff994ba2
 
 ---
 
@@ -220,8 +220,8 @@ Meer over hoe te om pakketten en pakketaandeel te gebruiken, zie [hoe te met Pak
 
 Nadat u de pakketten hebt geïnstalleerd en de auteur hebt gestart en exemplaren hebt gepubliceerd, gaat u naar de volgende URL&#39;s in uw browser:
 
-* https://[server]:[poort]/wegov
-* https://[server]:[poort]/wefinantie
+* `https://[server]:[port]/wegov`
+* `https://[server]:[port]/wefinance`
 
 Als de installatie is gelukt, hebt u toegang tot de bestemmingspagina&#39;s en Web.Finance.
 
@@ -231,12 +231,12 @@ De toepassing van de huishypotheek en de plaatsen van de autoverzekeringstoepass
 
 U kunt als volgt de aangepaste entiteit importeren voor de toepassing voor automatische verzekering:
 
-1. Download het pakket **WebFinanceAutoInsurance_1_0.zip** oplossing van https://[server]:[port]/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/WeFinanceAutoInsurance_1_0.zip op uw AEM-auteurinstantie.
+1. Download het **pakket met oplossingen WebFinanceAutoInsurance_1_0.zip** via `https://[server]:[port]/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/WeFinanceAutoInsurance_1_0.zip` de AEM-auteur.
 1. Ga in de instantie van Microsoft Dynamics naar **Instellingen > Oplossingen** en klik op **Importeren**. Selecteer en importeer het pakket.
 
 U kunt als volgt de aangepaste entiteit importeren voor de toepassing voor automatische verzekering:
 
-1. Download het **AEMFormsFSIRefsite_1_0.zip** -pakket van https://[auteur]:[port]/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/AEMFormsFSIRefsite_1_0.zip. Selecteer en importeer het pakket.
+1. Download het **AEMFormsFSIRefsite_1_0.zip** -pakket van `https://[author]:[port]/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/AEMFormsFSIRefsite_1_0.zip`. Selecteer en importeer het pakket.
 
 1. Ga in de instantie van Microsoft Dynamics naar **Instellingen > Oplossingen** en klik op **Importeren**. Selecteer en importeer het pakket.
 
@@ -244,9 +244,9 @@ De gegevens van de klant en het verzekeringspolis importeren:
 
 1. Download de bestanden **We.Finance Customers.csv, We.Finance Auto Insurance Renewals.csv**, en **home hypotheek** op de volgende locaties op uw AEM-auteur:
 
-   * https://[server]:[port/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/We.Finance Klanten.csv
-   * https://[server]:[port/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/We.Finance] Vernieuwingen automatische verzekering.csv
-   * https://[server]:[poort]/content/aemforms-refsite-collaterals/we-finance/home-hypotheek/ms-dynamics/Sarah%20Rose%20Contact.csv
+   * `https://[server]:[port/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/We.Finance Customers.csv`
+   * `https://[server]:[port/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/We.Finance Auto Insurance Renewals.csv`
+   * `https://[server]:[port]/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/Sarah%20Rose%20Contact.csv`
 
 1. Ga als volgt te werk in de instantie Microsoft Dynamics:
 
@@ -273,7 +273,7 @@ Configureer de OAuth-cloudservice in AEM Forms om communicatie tussen AEM Forms 
 
 Doe het volgende op zowel auteur als publicatieinstanties:
 
-1. Ga naar AEM Web Configuration Console op https://[server]:[host]/system/console/configMgr.
+1. Ga naar AEM Web Configuration Console op `https://[server]:[host]/system/console/configMgr`.
 1. Zoek en tik op **[!UICONTROL Adobe Sign Configuration Service]** om deze te openen voor configuratie.
 1. Vorm de Uitdrukking **[!UICONTROL van de Planner van de Update van de]** Status als **0 0/2 * * * *?**.
 

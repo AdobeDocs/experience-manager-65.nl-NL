@@ -10,7 +10,7 @@ topic-tags: introduction
 discoiquuid: b4fdbf86-d8f3-4da5-9e4e-4d5492ae1632
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3eaace94bc0499aaebfcd389d4dc97b97c7d9160
+source-git-commit: 70350add185b932ee604e190aabaf972ff994ba2
 
 ---
 
@@ -788,13 +788,13 @@ Sarah Rose is van plan te investeren in een onderling fonds. Zij is een bestaand
 
 #### Hoe werkt het {#how-it-works-17}
 
-Het prospectus van het Blue Chip Growth Fund is een interactieve communicatie. Er worden teksten, afbeeldingen, grafieken en tabelcomponenten (documentfragmenten) gebruikt om de productsamenvatting, voorraadstijl, fondsprestaties, fondsdetails en andere gerelateerde informatie weer te geven. [ U kunt de interactieve communicatie in de bewerkingsmodus bekijken op https://]authorostHost[: writerPort]/editor.html/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html
+Het prospectus van het Blue Chip Growth Fund is een interactieve communicatie. Er worden teksten, afbeeldingen, grafieken en tabelcomponenten (documentfragmenten) gebruikt om de productsamenvatting, voorraadstijl, fondsprestaties, fondsdetails en andere gerelateerde informatie weer te geven. U kunt de interactieve communicatie bekijken in de bewerkingsmodus op `https://[authorHost]:[ authorPort]/editor.html/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html`
 
-Met grafieken en tabellen worden gegevens opgehaald uit een formuliergegevensmodel. Het model van vormgegevens verbindt met gevormde gegevensbronnen, een gegevensbestand in deze analyse, om informatie terug te winnen specifiek voor het fonds. U kunt het gegevensmodel van het formulier bekijken op https://[auteurHost]:[auteurPort]/aem/fdm/editor.html/content/dam/formsanddocuments-fdm/we-finance/wealth-management
+Met grafieken en tabellen worden gegevens opgehaald uit een formuliergegevensmodel. Het model van vormgegevens verbindt met gevormde gegevensbronnen, een gegevensbestand in deze analyse, om informatie terug te winnen specifiek voor het fonds. U kunt het formuliergegevensmodel bekijken op `https://[authorHost]:[authorPort]/aem/fdm/editor.html/content/dam/formsanddocuments-fdm/we-finance/wealth-management`
 
 #### Zie het zelf {#see-it-yourself-15}
 
-Ga naar We.Finance op https://[publishHost]:[publishPort]/wefinance, tik op Wealth Management, vouw fondsen uit op Asset Class en tik op We.Finance Blue Chip Growth Fund. Het prospectus &#39;We.Finance Blue Chip Growth Fund&#39; wordt geopend.
+Ga naar We.Finance portal op `https://[publishHost]:[publishPort]/wefinance`, tik op Wealth Management, breid Fondsen uit op Asset Class en tik op We.Finance Blue Chip Growth Fund. Het prospectus &#39;We.Finance Blue Chip Growth Fund&#39; wordt geopend.
 
 ### Sarah verkent het prospectus van het Blue Chip Growth Fund om te leren over het fonds {#sarah-explores-the-blue-chip-growth-fund-prospectus-to-learn-about-the-fund}
 
@@ -806,11 +806,11 @@ Sarah verkent de tabbladen Overzicht, Prijs en Prestaties, Portfoliomanagement, 
 
 De interactieve communicatie van het Blue Chip Growth Fund maakt gebruik van ouder- en onderliggende panelen om gerelateerde informatie in verschillende secties te scheiden. In het bovenliggende deelvenster worden alle onderliggende deelvensters in tabbladen ingedeeld.
 
-De indeling van de bovenliggende tab wordt ingesteld op Tabs bovenaan om alle onderliggende deelvensters om te zetten in tabbladen. [ U kunt de deelvensters van de interactieve communicatie bekijken in de bewerkingsmodus op https://]authorHost[: auteurPort]/editor.html/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html.
+De indeling van de bovenliggende tab wordt ingesteld op Tabs bovenaan om alle onderliggende deelvensters om te zetten in tabbladen. U kunt de deelvensters van de interactieve communicatie bekijken in de bewerkingsmodus op `https://[authorHost]:[ authorPort]/editor.html/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html`.
 
 #### Zie het zelf {#see-it-yourself-16}
 
-[ Ga naar de interactieve communicatie van het Blue Chip Growth Fund op https://]publishHost[: publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html?wcmmode=disabled. Verken alle tabbladen.
+Ga naar de interactieve communicatie van het Blue Chip Growth Fund op `https://[publishHost]:[ publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html?wcmmode=disabled`. Verken alle tabbladen.
 
 ### Sarah bekijkt en emailt de PDF-versie van de pagina Blue Chip Growth Fund {#sarah-views-and-emails-the-pdf-version-of-the-blue-chip-growth-fund-page}
 
@@ -820,15 +820,15 @@ Sarah gaat het weekend naar het platteland. Ze is van plan om het Blue Chip Grow
 
 #### Hoe werkt het {#how-it-works-19}
 
-Het prospectus van het Blue Chip Growth Fund is een interactieve communicatie. Het heeft een web- en PDF-kanaal. De interactieve communicatie wordt geïntegreerd met AEM Workflows om de PDF-versie via een e-mail te verzenden. [ U kunt het workflowmodel bekijken op https://]auteurshost[: auteurPort]/editor.html/conf/global/settings/workflow/models/wealthmanagement.html.
+Het prospectus van het Blue Chip Growth Fund is een interactieve communicatie. Het heeft een web- en PDF-kanaal. De interactieve communicatie wordt geïntegreerd met AEM Workflows om de PDF-versie via een e-mail te verzenden. U kunt het workflowmodel bekijken op `https://[authorHost]:[ authorPort]/editor.html/conf/global/settings/workflow/models/wealthmanagement.html`.
 
 ![vermogensbeheer](assets/wealth-management.png)
 
 #### Zie het zelf {#see-it-yourself-17}
 
-[ Als u de PDF-versie wilt downloaden, gaat u naar de interactieve communicatie van het Blue Chip Growth Fund https://]publishHost[: publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html tikt u op Download PDF.
+Als u de PDF-versie wilt downloaden, gaat u naar de interactieve communicatie van het Blue Chip Growth Fund `https://[publishHost]:[ publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html`en tikt u op Download PDF.
 
-[ Als u PDF per e-mail wilt verzenden, gaat u naar de interactieve communicatie van het Blue Chip Growth Fund https://]publishHost[: publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html tikt u op E-MAIL PDF. Geef **volledige naam** en **e-mailadres** op. Klik op E-mail **verzenden**.
+Als u PDF per e-mail wilt verzenden, gaat u naar de interactieve communicatie van het Blue Chip Growth Fund `https://[publishHost]:[ publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html`en tikt u op E-MAIL PDF. Geef **volledige naam** en **e-mailadres** op. Klik op E-mail **verzenden**.
 
 ## Doorloop voor automatische verzekeringstoepassing {#auto-insurance-application-walkthrough}
 
@@ -849,13 +849,13 @@ Conrad opent logboeken in instantie AEM, opent het Autodashboard van de Verzeker
 
 #### Hoe werkt het {#how-it-works-20}
 
-Communicatie over verlenging van verzekeringsbeleid is een interactieve communicatie. Conrad Simms gebruikt Agent UI om de mededeling van de vernieuwing van het verzekeringsbeleid naar Sarah te verzenden. De communicatie omvat Druk (PDF) en verbinding aan het kanaal van het Web van de interactieve mededeling. De interactieve communicatie gebruikt de AEM-workflow om de e-mail te verzenden. [ U kunt de workflow bekijken op https://]authorostHost[: writerPort]/editor.html/conf/global/settings/workflow/models/we-finance-auto-insurance-renewal.html
+Communicatie over verlenging van verzekeringsbeleid is een interactieve communicatie. Conrad Simms gebruikt Agent UI om de mededeling van de vernieuwing van het verzekeringsbeleid naar Sarah te verzenden. De communicatie omvat Druk (PDF) en verbinding aan het kanaal van het Web van de interactieve mededeling. De interactieve communicatie gebruikt de AEM-workflow om de e-mail te verzenden. U kunt de workflow bekijken op `https://[authorHost]:[ authorPort]/editor.html/conf/global/settings/workflow/models/we-finance-auto-insurance-renewal.html`
 
 ![automatische verzekering-workflow](assets/auto-insurance-workflow.png)
 
 #### Zie het zelf {#see-it-yourself-18}
 
-Meld u aan bij het **Auto Insurance-dashboard** van We.Financiën als Conrad Simms (csimms/password). De URL is https://[publishhost]:[publishport]/content/we-finance/global/en/login.html?resource=/content/we-finance/ccdashboard.html. Geef de **klant-id** op. De klant-id van Sarah Rose is 900001. Klik op **Beleid** vernieuwen. De interactieve mededeling opent omhoog in de Agent UI. Voer in de gebruikersinterface van de agent een geldig e-mailadres in om de e-mail te verzenden met het beleidsdocument als bijlage en klik op **Verzenden**. Er wordt een bericht, Verzending geïnitieerd, weergegeven op het scherm en in een paar seconden wordt een ander bericht, Verzenden geslaagd, weergegeven. Een e-mail met het onderwerp **Uw automatische verzekering Verlengt** en wordt verzonden op het gespecificeerde e-mailadres. Het beleid dat Sarah Rose wordt geboden is een premiumbeleid.
+Meld u aan bij het **Auto Insurance-dashboard** van We.Financiën als Conrad Simms (csimms/password). De URL is `https://[publishhost]:[publishport]/content/we-finance/global/en/login.html?resource=/content/we-finance/ccdashboard.html`. Geef de **klant-id** op. De klant-id van Sarah Rose is 900001. Klik op **Beleid** vernieuwen. De interactieve mededeling opent omhoog in de Agent UI. Voer in de gebruikersinterface van de agent een geldig e-mailadres in om de e-mail te verzenden met het beleidsdocument als bijlage en klik op **Verzenden**. Er wordt een bericht, Verzending geïnitieerd, weergegeven op het scherm en in een paar seconden wordt een ander bericht, Verzenden geslaagd, weergegeven. Een e-mail met het onderwerp **Uw automatische verzekering Verlengt** en wordt verzonden op het gespecificeerde e-mailadres. Het beleid dat Sarah Rose wordt geboden is een premiumbeleid.
 
 De autoverzekeringsanalyse bevat ook een andere klant, Alison Jones. De klant-id van Alison Jones is 900002. Wanneer u de interactieve mededeling naar Alison Jones verzendt, wordt een standaardbeleid verzonden. Het verschil tussen standaard- en premiebeleid is:
 
@@ -863,18 +863,18 @@ De autoverzekeringsanalyse bevat ook een andere klant, Alison Jones. De klant-id
 * Het standaardbeleid kost minder dan het premiebeleid.
 * Het premiumbeleid heeft een beloning tegen diefstal en het standaardbeleid heeft een beloning op een intelligente manier
 
-Beide beleidsvormen gebruiken dezelfde interactieve communicatie. De secties in het beleid worden veranderd of verborgen gebaseerd op de beleid-type voorwaarde. U kunt de interactieve communicatie voor verlenging van automatische verzekering rechtstreeks openen en bekijken via https://[authorostHost]: auteurPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoInsurance/auto-Insurance-refresh
+Beide beleidsvormen gebruiken dezelfde interactieve communicatie. De secties in het beleid worden veranderd of verborgen gebaseerd op de beleid-type voorwaarde. U kunt de interactieve communicatie voor automatische verlenging van verzekering rechtstreeks openen en bekijken vanaf `https://[authorHost]: authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal`
 
 **De Dynamica van Microsoft als gegevensbron gebruiken**
 
 De verwijzingsplaats verstrekt ook een interactieve mededeling die de Dynamica van Microsoft als gegevensbron voor het model van vormgegevens gebruikt. Voer de volgende stappen uit om de interactieve mededeling voor de autoverzekeringsanalyse te vormen:
 
-1. Meld u aan bij https://[auteur]:[port]/crx/de als beheerder.
+1. Meld u aan bij `https://[author]:[port]/crx/de as an administrator`.
 1. Open the `/apps/we-finance/components/ccrui/ccrui.jsp`file.
 1. Stel de waarde in `FormFieldRequestParameter`op `/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal-dynamics`
 1. Tik op Alles **** opslaan. De verwijzingsplaats wordt gevormd om interactieve mededeling te gebruiken die de Dynamica van MS als gegevensbron gebruikt.
 
-Meld u nu aan bij **We.Financiële automatische verzekeringsdashboard** als Conrad Simms (csimms/password). De URL is https://[publishhost]:[publishport]/content/we-finance/global/en/login.html?resource=/content/we-finance/ccdashboard.html. Geef de **klant-id** op. De klant-id van Sarah Rose is 900001. Klik op **Beleid** vernieuwen. De interactieve mededeling opent omhoog in de Agent UI. Voer in de gebruikersinterface van de agent een geldig e-mailadres in om de e-mail te verzenden met het beleidsdocument als bijlage en klik op **Verzenden**. Er wordt een bericht, Verzending geïnitieerd, weergegeven op het scherm en in een paar seconden wordt een ander bericht, Verzenden geslaagd, weergegeven. Een e-mail met het onderwerp **Uw automatische verlenging** van de Verzekering wordt verzonden op het gespecificeerde e-mailadres.
+Meld u nu aan bij **We.Financiële automatische verzekeringsdashboard** als Conrad Simms (csimms/password). De URL is `https://[publishhost]:[publishport]/content/we-finance/global/en/login.html?resource=/content/we-finance/ccdashboard.html`. Geef de **klant-id** op. De klant-id van Sarah Rose is 900001. Klik op **Beleid** vernieuwen. De interactieve mededeling opent omhoog in de Agent UI. Voer in de gebruikersinterface van de agent een geldig e-mailadres in om de e-mail te verzenden met het beleidsdocument als bijlage en klik op **Verzenden**. Er wordt een bericht, Verzending geïnitieerd, weergegeven op het scherm en in een paar seconden wordt een ander bericht, Verzenden geslaagd, weergegeven. Een e-mail met het onderwerp **Uw automatische verlenging** van de Verzekering wordt verzonden op het gespecificeerde e-mailadres.
 
 >[!NOTE]
 >
@@ -902,7 +902,7 @@ U moet een e-mail met een bijgevoegde PDF hebben ontvangen. Het PDF-bestand is e
 
 Met de knop **Nu** vernieuwen in de e-mail stuurt u Sarah naar de webversie van het beleid. U kunt de volgende URL bezoeken:
 
-https://[publishServer]:[publishPort]/content/document.html?schema=fdm&amp;documentId=/content/forms/af/we-finance/autoinsurance/auto-insurance-renewal/channels/web.html&amp;customerId=900001
+`https://[publishServer]:[publishPort]/content/document.html?schema=fdm&documentId=/content/forms/af/we-finance/autoinsurance/auto-insurance-renewal/channels/web.html&customerId=900001`
 
 U kunt de gedetailleerde samenvatting van de verlenging van je autoverzekering controleren en onder aan de pagina op Nu **vernieuwen** klikken.
 
@@ -920,6 +920,6 @@ Met de knop Nu vernieuwen wordt Sarah naar de betalingspagina geleid. De betalin
 
 Klik op Nu **vernieuwen** om naar de betalingspagina te gaan. Vul je creditcardgegevens in en klik op **Betalen**. U kunt de betalingspagina bereiken in de ontwerpinstantie op:
 
-https://[authorServer]:[signerPort]/content/document.html?documentId=/content/forms/af/we-finance/credit-card/ccbillpayment.html&amp;schema=fdm&amp;customerId=900001
+`https://[authorServer]:[authorPort]/content/document.html?documentId=/content/forms/af/we-finance/credit-card/ccbillpayment.html&schema=fdm&customerId=900001`
 
 Het dankwoord verschijnt nadat de knoop van de Betaling wordt geklikt.

@@ -4,7 +4,7 @@ description: Leer hoe u de vereiste elementen in AEM kunt vinden met het deelven
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b0ae7552a6dc0476a682bdbe715aac4b42315ff6
+source-git-commit: faea8ebd2afea9ade9900a8e8b1e6cf3169c349d
 
 ---
 
@@ -15,7 +15,7 @@ Adobe Experience Manager (AEM) Assets biedt robuuste methoden voor het detectere
 
 AEM steunt de volgende gebruiksgevallen en dit artikel beschrijft het gebruik, de concepten, de configuraties, de beperkingen, en het oplossen van problemen voor deze gebruiksgevallen.
 
-| Zoeken in middelen | Configuratie en beheer | Werken met zoekresultaten |
+| Assets doorzoeken | Configuratie en beheer | Werken met zoekresultaten |
 |---|---|---|
 | [Standaardzoekopdrachten](#searchbasics) | [Zoekindex](#searchindex) | [Resultaten sorteren](#sort) |
 | [Gebruiksinterface voor zoeken begrijpen](#searchui) | [Zoeken op visuele of gelijkenis](#configvisualsearch) | [Eigenschappen en metagegevens van een element controleren](#checkinfo) |
@@ -435,7 +435,7 @@ U kunt de gezochte elementen en hun vertoningen downloaden enkel aangezien u reg
 
 Het is mogelijk om bulkupdates uit te voeren naar de algemene metagegevensvelden van meerdere elementen. Selecteer een of meer elementen in de zoekresultaten. Klik op **[!UICONTROL Eigenschappen]** op de werkbalk en werk de metagegevens naar wens bij. Klik op **[!UICONTROL Opslaan en Sluiten]** als u klaar bent. De eerder bestaande metagegevens in de bijgewerkte velden worden overschreven.
 
-Voor de elementen die in één map of verzameling beschikbaar zijn, is het eenvoudiger om de metagegevens bulksgewijs [bij te](/help/assets/managing-multiple-assets.md)werken. Voor de elementen die beschikbaar zijn in verschillende mappen of voldoen aan een algemeen criterium, is het sneller om de metagegevens bulksgewijs bij te werken door te zoeken.
+Voor de middelen die in één enkele omslag of een inzameling beschikbaar zijn, is het gemakkelijker om de meta-gegevens in bulk [bij te](/help/assets/managing-multiple-assets.md) werken zonder de onderzoeksfunctionaliteit te gebruiken. Voor de elementen die beschikbaar zijn in verschillende mappen of voldoen aan een algemeen criterium, is het sneller om de metagegevens bulksgewijs bij te werken door te zoeken.
 
 ### Slimme verzamelingen {#collections-1}
 

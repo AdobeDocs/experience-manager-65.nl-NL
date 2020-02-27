@@ -1,14 +1,14 @@
 ---
-title: Mapmiddelen en verzamelingen controleren
+title: Map-assets en verzamelingen controleren
 description: Stel revisieworkflows in voor elementen in een map of verzameling en deel deze met revisoren of creatieve partners om feedback te zoeken.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 ---
 
 
-# Mapmiddelen en verzamelingen controleren {#review-folder-assets-and-collections}
+# Map-assets en verzamelingen controleren {#review-folder-assets-and-collections}
 
 Stel revisieworkflows in voor elementen in een map of verzameling en deel deze met revisoren of creatieve partners om feedback te zoeken.
 
@@ -102,7 +102,9 @@ Nadat de controleur de controle heeft voltooid (activa goedkeurt of verwerpt), o
 1. Navigeer naar de verzamelingsconsole en open de verzameling. De pictogrammen voor de goedkeuringsstatus van de elementen worden weergegeven in zowel de Kaart- als lijstweergave.
 
    ![collection_reviewStatusCard, weergave](assets/collection_reviewstatuscardview.png)
+
    *Afbeelding:Kaartweergave*
 
    ![collection_reviewstatus listview](assets/collection_reviewstatuslistview.png)
+
    *Afbeelding:Lijstweergave*

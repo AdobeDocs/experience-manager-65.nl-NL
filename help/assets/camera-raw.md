@@ -3,7 +3,7 @@ title: Camera Raw-ondersteuning
 description: Leer hoe u ondersteuning voor Camera Raw inschakelt in Adobe Experience Manager-middelen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0b8472dbfbfe326b4b5fe0d43b0f361318b37d16
+source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 ---
 
@@ -53,11 +53,9 @@ U kunt nu Camera Raw-bestanden importeren in AEM-elementen. Nadat u het Camera R
 
 ![chlimage_1-135](assets/chlimage_1-337.png)
 
-
 *Afbeelding: Opties in het zijpaneel.*
 
 ![chlimage_1-132](assets/chlimage_1-338.png)
-
 
 *Afbeelding: Gebruik deze optie om lichte bewerkingen uit te voeren op uw afbeeldingen.*
 

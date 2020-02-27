@@ -3,12 +3,12 @@ title: Trapsgewijze metagegevens
 description: In dit artikel wordt beschreven hoe u trapsgewijze metagegevens voor elementen definieert.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 ---
 
 
-# Trapsgewijze metagegevens {#cascading-metadata}
+# Trapsgewijze metadata {#cascading-metadata}
 
 Wanneer gebruikers de metagegevens van een element vastleggen, verschaffen ze informatie in de verschillende beschikbare velden. U kunt specifieke metagegevensvelden of veldwaarden weergeven die afhankelijk zijn van de opties die in de andere velden zijn geselecteerd. Een dergelijke voorwaardelijke weergave van metagegevens wordt trapsgewijze metagegevens genoemd. Met andere woorden, u kunt een afhankelijkheid maken tussen een bepaald metagegevensveld/een bepaalde waarde en een of meer velden en/of hun waarden.
 
@@ -104,7 +104,9 @@ Geef de copyrightinformatie, ongeacht het gekozen elementtype, weer als een verp
 1. Navigeer naar de map waarop u het metagegevensschema hebt toegepast en open de pagina met eigenschappen van een element. Afhankelijk van uw keuze in het veld Type element worden relevante trapsgewijze metagegevensvelden weergegeven.
 
    ![Trapsgewijze metagegevens voor video-elementen](assets/video_asset.png)
+
    *Afbeelding: Trapsgewijze metagegevens voor een video*
 
    ![Trapsgewijze metagegevens voor documentelementen](assets/doc_type_fields.png)
+
    *Afbeelding: Trapsgewijze metagegevens voor een document*

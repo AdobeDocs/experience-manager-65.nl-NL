@@ -3,7 +3,7 @@ title: Een URL naar gedeelde elementen genereren
 description: In dit artikel wordt beschreven hoe u elementen, mappen en verzamelingen in AEM Assets als een URL naar externe partijen kunt delen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 ---
 
@@ -16,7 +16,7 @@ Met Adobe Experience Manager (AEM) kunt u elementen, mappen en verzamelingen als
 >
 >U vereist geeft ACL toestemming op de omslag of de activa uit die u als verbinding wilt delen.
 
-## Elementen delen {#sharelink}
+## Assets delen {#sharelink}
 
 Gebruik het dialoogvenster Koppelen om de URL te genereren voor elementen die u met gebruikers wilt delen. Gebruikers met beheerdersrechten of met leesmachtigingen op de `/var/dam/share` locatie kunnen de koppelingen weergeven die met hen worden gedeeld.
 
@@ -31,7 +31,7 @@ Gebruik het dialoogvenster Koppelen om de URL te genereren voor elementen die u 
 
    ![Dialoogvenster met de koppeling Delen](assets/Link-sharing-dialog-box.png)
 
-   *Figuur:Dialoog met het Aandeel van de Verbinding*
+   *Afbeelding:Dialoogvenster met de koppeling Delen*
 
    Alternatief, ga te werk om stappen 3-7 van deze procedure uit te voeren om e-mailontvangers toe te voegen, de vervaltijd voor de verbinding te vormen, en het van de dialoog te verzenden.
 

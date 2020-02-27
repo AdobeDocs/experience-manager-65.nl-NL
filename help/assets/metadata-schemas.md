@@ -3,7 +3,7 @@ title: Metagegevensschema's
 description: Het metagegevensschema definieert de indeling van de pagina met eigenschappen en de eigenschappen van metagegevens die voor elementen worden weergegeven. Leer hoe u een aangepast metagegevensschema kunt maken, het schema voor metagegevens kunt bewerken en hoe u het schema voor metagegevens op elementen kunt toepassen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: 4efe021c2f3f6f38594182d27a76ff69b7466c92
 
 ---
 
@@ -33,20 +33,18 @@ U kunt de redacteur van de Vormen van het Schema van Meta-gegevens gebruiken om 
    ![chlimage_1-37](assets/chlimage_1-173.png)
 
    AEM verstrekt de volgende malplaatjes uit de doos:
-
    * **standaard**: Het basisschema voor metagegevens voor elementen.
 
-   De volgende onderliggende formulieren nemen de eigenschappen van het standaardformulier over:
-   i. **afbeelding**: Schema-formulier voor elementen met het MIME-type &#39;image&#39;, bijvoorbeeld `image/jpeg`, `image/png`enzovoort.
-   Het &quot;afbeeldingsformulier&quot; heeft de volgende onderliggende formuliersjablonen:
-   a. **jpeg**: Schema voor activa met subtype `jpeg`.
-   b. **tiff**: Schema voor de activa met subtype `tiff`.
+      De volgende onderliggende formulieren nemen de eigenschappen van het standaardformulier over:
 
-   ii. **toepassing**: Schema-formulier voor elementen van het type MIME `application`, `application/pdf`bijvoorbeeld `application/zip`enzovoort.
-   a. **pdf**: Schema voor activa met subtype `pdf`.
+      1. **afbeelding**: Schema-formulier voor elementen met het MIME-type &#39;image&#39;, bijvoorbeeld `image/jpeg`, `image/png`enzovoort.
 
-   iii. **video**: Schema-formulier voor elementen met het MIME-type `video`, zoals `video/avi`, `video/mp4`enzovoort.
-
+         Het &quot;afbeeldingsformulier&quot; heeft de volgende onderliggende formuliersjablonen:
+         * **jpeg**: Schema voor activa met subtype `jpeg`.
+         * **tiff**: Schema voor de activa met subtype `tiff`.
+      1. **toepassing**: Schema-formulier voor elementen van het type MIME `application`, `application/pdf`bijvoorbeeld `application/zip`enzovoort.
+         * **pdf**: Schema voor activa met subtype `pdf`.
+      1. **video**: Schema-formulier voor elementen met het MIME-type `video`, zoals `video/avi`, `video/mp4`enzovoort.
    * **verzameling**: Schemaformulier voor verzamelingen.
    * **** contentfragment: Schemaformulier voor inhoudsfragmenten.
    * **formulieren**: Dit schema-formulier is gerelateerd aan [Adobe Experience Manager Forms](/help/forms/home.md).

@@ -4,7 +4,7 @@ description: Leer de taken voor middelenbeheer, zoals het uploaden, downloaden, 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a67ff409107cbde04d10932d624340857b9f9f64
+source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 ---
 
@@ -689,7 +689,9 @@ U kunt ook afbeeldingen met hyperlinks toevoegen met de afbeeldingseditor. Zie [
 
 In de tijdlijn kunt u verschillende gebeurtenissen voor een geselecteerd item weergeven, zoals actieve workflows voor een element, opmerkingen/annotaties, activiteitenlogbestanden en versies.
 
-![Tijdlijnitems voor een element](assets/sort_timeline.gif)*Afbeelding sorteren: Tijdlijnitems voor een element sorteren*
+![Tijdlijnitems voor een element sorteren](assets/sort_timeline.gif)
+
+*Afbeelding: Tijdlijnitems voor een element sorteren*
 
 >[!NOTE]
 >

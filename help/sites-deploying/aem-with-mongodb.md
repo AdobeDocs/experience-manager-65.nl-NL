@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: cd3b979f-53d4-4274-b4eb-a9533329192a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 56006a1f49e4d357cd7ee44a4a1dd1af7189e70a
 
 ---
 
@@ -41,7 +41,7 @@ Als niet aan de criteria wordt voldaan, dan wordt een actieve TarMK/standby plaa
 
 ### Minimale MongoDB-implementatie voor AEM {#minimal-mongodb-deployment-for-aem}
 
-Hieronder vindt u een minimale implementatie voor AEM op MongoDB. Voor eenvoud, zijn de SSL beëindiging en de componenten van de Volmacht van HTTP algemeen gemaakt. Het bestaat uit één MongoBD-replicaset, met één primaire en twee secondejaren.
+Hieronder vindt u een minimale implementatie voor AEM op MongoDB. Voor eenvoud, zijn de SSL beëindiging en de componenten van de Volmacht van HTTP algemeen gemaakt. Het bestaat uit één MongoDB-replicaset, met één primaire en twee secondejaren.
 
 ![chlimage_1-4](assets/chlimage_1-4.png)
 

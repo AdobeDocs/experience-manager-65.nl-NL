@@ -11,7 +11,7 @@ topic-tags: deploying
 discoiquuid: 9559e837-a87e-4ee7-8ca6-13b42c74e6bf
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 29328ff7fde4ed0e7f9728af1be911133259dc6c
+source-git-commit: c5e6098b62ff7e3e787b5f0f3c3b32a35e3981c6
 
 ---
 
@@ -362,8 +362,10 @@ Bovendien kan informatie voor maximaal 10 cliënten (stand-by instanties) die me
 
 ## Onderhoud van Cold Standby Repository {#cold-standby-repository-maintenance}
 
+### Revisie opschonen {#revision-clean}
+
 >[!NOTE]
-Als u [Online revisie opschoning](/help/sites-deploying/revision-cleanup.md) uitvoert op de primaire instantie, is de hieronder weergegeven handmatige procedure niet nodig. Daarnaast wordt de `cleanup ()` bewerking op de stand-byinstantie automatisch uitgevoerd als u de Online revisie-opschoning gebruikt.
+Als u [Online revisie opschoning](/help/sites-deploying/revision-cleanup.md) uitvoert op de primaire instantie, is de hieronder weergegeven handmatige procedure niet nodig. Als u bovendien Online revisie-opruiming gebruikt, wordt de `cleanup ()` bewerking op de stand-byinstantie automatisch uitgevoerd.
 
 >[!NOTE]
 Offline revisie niet opschonen in stand-by. Het is niet nodig en het zal niet de segmentarchiefgrootte verminderen.

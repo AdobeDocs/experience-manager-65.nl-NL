@@ -3,12 +3,12 @@ title: Adobe Stock-elementen beheren in AEM Assets
 description: Adobe Stock Assets zoeken, ophalen, licentiëren en beheren vanuit AEM. Gebruik de in licentie gegeven activa als elk ander digitaal actief.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 70a88085a0fd6e949974aa7f1f92fdc3def3d98e
+source-git-commit: 62e82b6da2a5f961acf8cbc30ad29b3c25b1ecef
 
 ---
 
 
-# Adobe Stock Assets gebruiken in AEM Assets {#use-adobe-stock-assets-in-aem-assets}
+# Use Adobe Stock assets in AEM Assets {#use-adobe-stock-assets-in-aem-assets}
 
 Organisaties kunnen hun Adobe Stock Enterprise Plan integreren met AEM Assets om ervoor te zorgen dat gelicentieerde middelen breed beschikbaar zijn voor hun creatieve en marketingprojecten, met de krachtige mogelijkheden voor middelenbeheer van AEM.
 
@@ -16,7 +16,7 @@ De voorraadservice van Adobe biedt ontwerpers en bedrijven toegang tot miljoenen
 
 ## Vereisten {#prerequisites}
 
-Voor de integratie is een Adobe Stock- [ondernemingsplan](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html) en AEM 6.5 of hoger vereist. Voor AEM 6.5 de details van het de dienstpak, zie deze [versienota&#39;s](/help/release-notes/sp-release-notes.md).
+Voor de integratie is een Adobe Stock- [ondernemingsplan](https://stockenterprise.adobe.com/) en AEM 6.5 of hoger vereist. Voor AEM 6.5 de details van het de dienstpak, zie deze [versienota&#39;s](/help/release-notes/sp-release-notes.md).
 
 ## AEM en Adobe Stock integreren {#integrate-aem-and-adobe-stock}
 
@@ -52,7 +52,9 @@ Met deze mogelijkheid kunnen organisaties hun gebruikers toestaan te werken met 
 
 Zodra een Adobe Stock-middel in AEM in licentie is gegeven, kan het worden gebruikt en beheerd als een typisch middel. In AEM kunnen de gebruikers de elementen zoeken en voorvertonen; de elementen kopiëren en publiceren; delen van de activa op Brand Portal; toegang tot en gebruik de middelen via de AEM-bureaubladtoepassing; enzovoort.
 
-![Zoek naar de activa van de Beeld van Adobe en filterresultaten van uw AEM werkruimte](assets/adobe-stock-search-results-workspace.png)*Cijfer: Zoek naar Adobe Stock-middelen en filterresultaten van uw AEM-werkruimte*
+![Zoek naar Adobe Stock-middelen en filterresultaten van uw AEM-werkruimte](assets/adobe-stock-search-results-workspace.png)
+
+*Afbeelding: Zoek naar Adobe Stock-middelen en filterresultaten van uw AEM-werkruimte*
 
 **** A. Zoek middelen die vergelijkbaar zijn met de middelen waarvan de Adobe Stock ID is opgegeven. **** B. Zoeken in elementen die overeenkomen met de vorm- of oriëntatieoptie die u hebt geselecteerd. **************** C.**Zoek naar één van meer gesteunde activa types** D. Open of vouwt het venster Filters **E. Licentie toewijzen en het geselecteerde element opslaan in AEM** F. Sla het element in AEM op met watermerk **G. Verken elementen op de Adobe Stock-website die vergelijkbaar zijn met de geselecteerde asset** H. Bekijk de geselecteerde middelen op Adobe Stock-website **I. Aantal geselecteerde elementen uit de zoekresultaten** J. Schakelen tussen de kaartweergave en de lijstweergave
 
@@ -70,7 +72,9 @@ U kunt ook `Location: Adobe Stock` in de zoekbalk typen om Adobe Stock-elementen
 >
 >Elementen die worden doorzocht vanuit Adobe Stock worden alleen weergegeven in AEM. Adobe Stock Assets worden alleen opgehaald en opgeslagen in AEM-opslagruimte nadat een gebruiker een middel [](/help/assets/aem-assets-adobe-stock.md#saveassets) heeft opgeslagen of een [licentie heeft verleend voor een middel](/help/assets/aem-assets-adobe-stock.md#licenseassets). Elementen die al in AEM zijn opgeslagen, worden weergegeven en gemarkeerd voor eenvoudige referentie en toegang. Dergelijke elementen worden bovendien met extra metagegevens opgeslagen om de bron aan te geven als Adobe Stock.
 
-![Zoekfilters in AEM en gemarkeerde Adobe Stock-elementen in zoekresultaten](assets/aem-search-filters2.jpg)*Afbeelding: Zoekfilters in AEM en gemarkeerde Adobe Stock-elementen in zoekresultaten*
+![Zoekfilters in AEM en gemarkeerde Adobe Stock-elementen in zoekresultaten](assets/aem-search-filters2.jpg)
+
+*Afbeelding: Zoekfilters in AEM en gemarkeerde Adobe Stock-elementen in zoekresultaten*
 
 ### De vereiste elementen opslaan en weergeven {#saveassets}
 
@@ -86,7 +90,9 @@ De volgende keer dat u naar elementen zoekt, worden de opgeslagen elementen gema
 
 Gebruikers kunnen een licentie voor Adobe Stock-middelen aanschaffen via het quotum van hun Adobe Stock Enterprise-abonnement. Wanneer u een licentie voor een element aanschaft, wordt het zonder watermerk opgeslagen en is het beschikbaar voor zoeken en gebruiken in AEM-elementen.
 
-![Dialoogvenster voor het in licentie geven en opslaan van Adobe Stock-elementen in AEM Assets](assets/aem-stock_licenseandsave.jpg)*Afbeelding: Dialoogvenster voor het in licentie geven en opslaan van Adobe Stock-middelen in AEM Assets*
+![Dialoogvenster voor het in licentie geven en opslaan van Adobe Stock-middelen in AEM Assets](assets/aem-stock_licenseandsave.jpg)
+
+*Afbeelding: Dialoogvenster voor het in licentie geven en opslaan van Adobe Stock-middelen in AEM Assets*
 
 ### Metagegevens en elementen openen {#access-metadata-and-asset-properties}
 
@@ -94,7 +100,9 @@ Gebruikers kunnen de metagegevens openen en voorvertonen, inclusief de eigenscha
 
 Gebruikers kunnen de eigenschappen van zowel gelicentieerde als niet-gelicentieerde activa zien.
 
-![Metagegevens en licentieverwijzingen van opgeslagen elementen](assets/metadata_properties.jpg)*weergeven en openen Metagegevens en licentieverwijzingen van opgeslagen elementen weergeven en openen*
+![Metagegevens en licentieverwijzingen van opgeslagen elementen weergeven en openen](assets/metadata_properties.jpg)
+
+*Afbeelding: Metagegevens en licentieverwijzingen van opgeslagen elementen weergeven en openen*
 
 ## Bekende beperkingen {#known-limitations}
 

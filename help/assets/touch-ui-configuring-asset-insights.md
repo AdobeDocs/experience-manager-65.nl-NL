@@ -3,7 +3,7 @@ title: Elementinzichten configureren
 description: Elementinzichten in AEM-elementen configureren.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6d4f79c126a3c44666e2a42b2246c964813d24ab
+source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 ---
 
@@ -24,7 +24,6 @@ Met Adobe Experience Manager (AEM) worden gebruiksgegevens opgehaald van AEM-ele
 1. Selecteer een datacenter in de wizard en geef uw referenties op, inclusief de naam van uw organisatie, gebruikersnaam en gedeeld geheim.
 
    ![Adobe Analytics voor Assets Insights configureren in AEM](assets/insights_config2.png)
-
 
    *Afbeelding: Adobe Analytics voor Assets Insights configureren in AEM*
 

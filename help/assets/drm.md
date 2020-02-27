@@ -3,12 +3,12 @@ title: Digital Rights Management in Assets
 description: Leer hoe u de status van verlopen van middelen en informatie over gelicentieerde middelen in AEM beheert.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 ---
 
 
-# Digital Rights Management voor digitale middelen {#digital-rights-management-in-assets}
+# Digital Rights Management for digital assets {#digital-rights-management-in-assets}
 
 Digitale middelen zijn vaak gekoppeld aan een licentie, waarin de gebruiksvoorwaarden en -duur zijn vastgelegd. Omdat Adobe Experience Manager (AEM)-middelen volledig geïntegreerd zijn met het AEM-platform, kunt u op efficiënte wijze informatie over de vervaldatum van bedrijfsmiddelen en de status van bedrijfsmiddelen beheren. U kunt ook licentiegegevens aan elementen koppelen.
 
@@ -18,11 +18,15 @@ Vervaldatum van activa is een effectieve manier om vergunningsvereisten voor act
 
 U kunt de vervalstatus van een element bekijken in de middelenconsole in zowel de Kaart- als lijstweergave.
 
-![expired_flag_card](assets/expired_flag_card.png)<br> *Afbeelding: In de kaartweergave geeft een markering op de kaart aan dat het element is verlopen.*
+![expired_flag_card](assets/expired_flag_card.png)
+
+*Afbeelding: In de kaartweergave geeft een markering op de kaart aan dat het element is verlopen.*
 
 **Lijstweergave**
 
-![expired_flag_list](assets/expired_flag_list.png)*Figure: In de lijstweergave wordt in de kolom **[!UICONTROL Status]**de banner **[!UICONTROL Verlopen]**weergegeven.*
+![expired_flag_list](assets/expired_flag_list.png)
+
+*Afbeelding: In de lijstweergave wordt in de kolom[!UICONTROL Status]de banner[!UICONTROL Verlopen]weergegeven.*
 
  U kunt de vervalstatus van een element in de tijdlijn bekijken. Selecteer het element en kies Tijdlijn in het menu GlobalNav.
 

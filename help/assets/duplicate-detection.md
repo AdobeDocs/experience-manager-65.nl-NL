@@ -3,7 +3,7 @@ title: Detectie van dubbele elementen inschakelen
 description: Leer hoe u dubbele elementen in AEM kunt detecteren.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 07c1a4102539ba4678c55dee3a4882101e39864f
+source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 ---
 
@@ -17,7 +17,6 @@ Als u probeert middelen te uploaden die in de Middelen van de Manager van de Erv
 1. Selecteer de optie Dupliceren **** detecteren en klik op **[!UICONTROL Opslaan]**.
 
    ![Selecteer de optie Duplicaat detecteren in de servlet](assets/chlimage_1-377.png)
-
 
    *Afbeelding:Selecteer de optie Duplicaat detecteren in de servlet*
 

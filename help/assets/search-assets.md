@@ -4,7 +4,7 @@ description: Leer hoe u de vereiste elementen in AEM kunt vinden met het deelven
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: faea8ebd2afea9ade9900a8e8b1e6cf3169c349d
+source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 ---
 
@@ -49,7 +49,6 @@ Verken uzelf met de zoekinterface en de beschikbare acties.
 U kunt de gewenste elementen sneller vinden op de pagina met zoekresultaten met behulp van het dynamisch bijgewerkte aantal verwachte zoekresultaten in de zoekfacetten. Het verwachte aantal elementen wordt bijgewerkt, zelfs voordat het zoekfilter wordt toegepast. Door het verwachte aantal op het filter te zien, kunt u snel en efficiënt door de zoekresultaten navigeren. Zie Elementen [zoeken in AEM](search-assets.md)voor meer informatie.
 
 ![Zie het geschatte aantal elementen zonder de zoekresultaten te filteren in zoekfacetten.](assets/asset_search_results_in_facets_filters.png)
-
 
 *Afbeelding:Zie het geschatte aantal elementen zonder de zoekresultaten te filteren in zoekfacetten.*
 
@@ -100,7 +99,6 @@ Als u suggesties voor meerdere zoektrefwoorden wilt ontvangen, blijft u alle tre
 
 ![Typ meerdere trefwoorden om suggesties weer te geven die in alle trefwoorden passen](assets/search_suggestionsmanykeywords.gif)
 
-
 *Afbeelding: Typ meerdere trefwoorden om suggesties weer te geven die in alle trefwoorden passen*
 
 ### Rangschikking en boosting zoeken {#searchrank}
@@ -133,7 +131,6 @@ AEM biedt verschillende methoden, zoals filters die van toepassing zijn op de ge
 
 ![Zoekresultaten beperken tot een map door een mappad toe te voegen in het deelvenster Filters](assets/search_folder_select.gif)
 
-
 *Afbeelding:Zoekresultaten beperken tot een map door een mappad toe te voegen in het deelvenster Filters*
 
 ### Vergelijkbare afbeeldingen zoeken {#visualsearch}
@@ -141,7 +138,6 @@ AEM biedt verschillende methoden, zoals filters die van toepassing zijn op de ge
 Als u afbeeldingen wilt zoeken die visueel lijken op een door de gebruiker geselecteerde afbeelding, klikt u op Gelijksoortige **** zoeken in de kaartweergave van een afbeelding of op de werkbalk. AEM geeft de slimme getagde afbeeldingen uit de DAM-opslagplaats weer die lijken op een door de gebruiker geselecteerde afbeelding. Zie [hoe u zoeken](#configvisualsearch)op basis van gelijkenis kunt configureren.
 
 ![Vergelijkbare afbeeldingen zoeken met de optie in de kaartweergave](assets/search_find_similar.png)
-
 
 *Afbeelding:Vergelijkbare afbeeldingen zoeken met de optie in de kaartweergave*
 
@@ -248,7 +244,6 @@ Ga naar `https://[aem_server]:[port]/aem/assetpicker`om de interface van de elem
 
 ![Bladeren en element selecteren in de elementkiezer](assets/assetpicker.png)
 
-
 *Afbeelding:Bladeren en element selecteren in de elementkiezer*
 
 ## Beperkingen {#limitations}
@@ -290,7 +285,6 @@ Gebruik dubbele aanhalingstekens rond trefwoorden om te zoeken naar elementen di
 
 ![Gedrag zoeken met en zonder aanhalingstekens](assets/search_with_quotes.gif)
 
-
 *Afbeelding:Gedrag zoeken met en zonder aanhalingstekens*
 
 **Zoeken met jokerteken** sterretje: Als u de zoekopdracht wilt uitbreiden, gebruikt u een sterretje voor of na het zoekwoord om het gewenste aantal tekens te zoeken. Als u bijvoorbeeld zoekt naar tekst zonder sterretje, worden er geen elementen geretourneerd die een variatie van het woord bevatten (inclusief in de metagegevens). Een sterretje vervangt het gehele aantal tekens. Bijvoorbeeld,
@@ -301,7 +295,6 @@ Gebruik dubbele aanhalingstekens rond trefwoorden om te zoeken naar elementen di
 * `*run*` retourneert alle mogelijke combinaties.
 
 ![Het gebruik van jokertekens voor sterretjes in het zoeken naar elementen illustreren aan de hand van een voorbeeld](assets/search_with_asterisk_run.gif)
-
 
 *Afbeelding:Het gebruik van jokertekens voor sterretjes in het zoeken naar elementen illustreren aan de hand van een voorbeeld*
 
@@ -315,13 +308,11 @@ Gebruik dubbele aanhalingstekens rond trefwoorden om te zoeken naar elementen di
 
 ![Het gebruik van jokertekens in de zoekfunctie voor elementen illustreren aan de hand van een voorbeeld](assets/search_with_questionmark_run.gif)
 
-
 *Afbeelding:Het gebruik van jokertekens in de zoekfunctie voor elementen illustreren aan de hand van een voorbeeld*
 
 **Een trefwoord** uitsluiten: Gebruik een streepje om te zoeken naar elementen die geen trefwoord bevatten. De query retourneert bijvoorbeeld elementen die wel `running -shoe` , maar niet `running``shoe`. Op dezelfde manier retourneert `camp -night` query elementen die wel `camp` maar niet `night`bevatten. Merk op dat de `camp-night` vraag activa terugkeert die zowel `camp` als `night`bevatten.
 
 ![Gebruik van streepje om te zoeken naar elementen die geen uitgesloten trefwoord bevatten](assets/search_dash_exclude_keyword.gif)
-
 
 *Afbeelding:Gebruik van streepje om te zoeken naar elementen die geen uitgesloten trefwoord bevatten*
 
@@ -423,7 +414,6 @@ Als u alle metagegevens van een element wilt weergeven, selecteert u het element
 Als u de opmerkingen over een element of de versiegeschiedenis van een element wilt controleren, klikt u op het element om een voorvertoning op grote grootte te openen. Open de tijdlijn in de linkertrack en selecteer **[!UICONTROL Opmerkingen]** of **[!UICONTROL Versies]**. U kunt de tijdlijnactiviteit zoals commentaren of versies in chronologische orde ook sorteren.
 
 ![Tijdlijnitems voor een zoekmiddel sorteren](assets/sort_timeline_search_results.gif)
-
 
 *Afbeelding:Tijdlijnitems voor een zoekmiddel sorteren*
 

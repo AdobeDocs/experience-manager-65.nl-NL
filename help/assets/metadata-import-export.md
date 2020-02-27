@@ -3,7 +3,7 @@ title: Metagegevens van elementen in bulk importeren en exporteren
 description: Metagegevens van elementen in bulk importeren en exporteren
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 07c1a4102539ba4678c55dee3a4882101e39864f
+source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
 
 ---
 
@@ -59,6 +59,7 @@ Hier volgen enkele voorbeelden van het gebruik van metagegevens voor bulksgewijs
 1. Open het bericht in het Postvak IN voor de exporttaak. Selecteer de taak en klik op **[!UICONTROL Openen]** op de werkbalk. Tik op of klik op **[!UICONTROL CSV-download]** op de werkbalk om het CSV-bestand met de metagegevens te downloaden. Click **[!UICONTROL Close]**.
 
    ![Dialoogvenster voor het downloaden van het CSV-bestand met metagegevens die bulksgewijs zijn geëxporteerd](assets/csv_download.png)
+
    *Afbeelding: Dialoogvenster voor het downloaden van het CSV-bestand met metagegevens die bulksgewijs zijn geëxporteerd*
 
 >[!MORELIKETHIS]

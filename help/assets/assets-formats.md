@@ -3,7 +3,7 @@ title: Ondersteunde indelingen voor middelen
 description: Lijst met bestandsindelingen die worden ondersteund door AEM Assets en functies die worden ondersteund voor elke indeling.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8a014887f395c5ade0affcb3c199e090af263bdc
+source-git-commit: 8a701d98fed79648104c39816482ff94997ba2e6
 
 ---
 
@@ -87,13 +87,13 @@ Zie [Afbeeldingstransformatiebibliotheek](imaging-transcoding-library.md).
 
 ## Ondersteunde Camera Raw {#supported-camera-raw}
 
-Met de Adobe Camera Raw-bibliotheek kunnen AEM Assets Raw-afbeeldingen innemen. Zie Ondersteuning voor [Camera Raw](camera-raw.md).
+Met de Adobe Camera Raw-bibliotheek kunnen AEM Assets Raw-afbeeldingen innemen. Zie [Camera Raw-ondersteuning](camera-raw.md).
 
 ## Ondersteunde documentindelingen {#supported-document-formats}
 
 Documentindelingen die worden ondersteund voor functies voor middelenbeheer zijn als volgt:
 
-| Format | Opslag | Metagegevensbeheer<br> | Metagegevens<br> extraheren | Miniaturen<br> genereren | Interactieve<br> bewerking | Metagegevens<br> terugschrijven | Inzichten | Gekoppelde assets |
+| Format | Opslag | Metagegevensbeheer<br> | Metagegevens<br> extraheren | Miniaturen<br> genereren | Interactieve<br> bewerking | Metagegevens<br> terugschrijven | [Inzichten](touch-ui-asset-insights.md) | [Gekoppelde assets](use-assets-across-connected-assets-instances.md) |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ |  |
 | DOC | ✓ | ✓ | ✓ | ✓ |  |  |  | ✓ |

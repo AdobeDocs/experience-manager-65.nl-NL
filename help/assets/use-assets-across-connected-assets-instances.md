@@ -3,7 +3,7 @@ title: Verbonden middelen gebruiken om DAM-middelen te delen in de ontwerpworkfl
 description: Gebruik de middelen die beschikbaar zijn op een externe implementatie van Adobe Experience Manager Assets bij het maken van uw webpagina's op een andere implementatie van Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8a014887f395c5ade0affcb3c199e090af263bdc
+source-git-commit: bcc51ca9cc98af0141824e0f1ea6c3c0fd9fa888
 
 ---
 
@@ -35,7 +35,10 @@ Zorg voor het volgende voordat u deze functie gebruikt of configureert:
 
 ### Ondersteunde bestandsindelingen {#mimetypes}
 
-Auteurs kunnen naar afbeeldingen en de volgende typen documenten zoeken in de Inhoudszoeker en de gezochte elementen gebruiken in de Pagina-editor. Documenten kunnen aan de `Download` component worden toegevoegd en afbeeldingen kunnen aan de `Image` component worden toegevoegd. Auteurs kunnen ook de externe elementen toevoegen in elke aangepaste AEM-component die de standaard `Download` of `Image` componenten uitbreidt. Zie Ondersteunde indelingen voor [Connected Assets voor een lijst met ondersteunde indelingen](assets-formats.md#supported-document-formats).
+Auteurs kunnen naar afbeeldingen en de volgende typen documenten zoeken in de Inhoudszoeker en de gezochte elementen gebruiken in de Pagina-editor. Documenten kunnen aan de `Download` component worden toegevoegd en afbeeldingen kunnen aan de `Image` component worden toegevoegd. Auteurs kunnen ook de externe elementen toevoegen in elke aangepaste AEM-component die de standaard `Download` of `Image` componenten uitbreidt. De lijst met ondersteunde indelingen is:
+
+* **Afbeeldingsindelingen**: De afbeeldingsindelingen die door de [component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) Image worden ondersteund, worden ondersteund door Connected Assets. Dynamische mediacomponenten worden niet ondersteund.
+* **Documentindelingen**: Zie Ondersteunde documentindelingen [voor](assets-formats.md#supported-document-formats)Connected Assets.
 
 ### Betrokken gebruikers en groepen {#users-and-groups-involved}
 

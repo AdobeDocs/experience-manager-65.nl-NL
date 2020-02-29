@@ -4,7 +4,7 @@ seo-title: Gebruikershandleiding voor AEM 6.5-middelen
 description: Deze handleiding behandelt alle taken met AEM Assets, zoals het maken, beheren, leveren en optimaliseren van digitale elementen.
 seo-description: Omvat alle taken van AEM Assets, zoals het maken, beheren, leveren en optimaliseren van digitale middelen.
 translation-type: tm+mt
-source-git-commit: 37ec3d8ce779ba392e6a92c828efb5fad749abec
+source-git-commit: b90343874d5afd9858d8a6d82828eabdfa1d3ccd
 
 ---
 
@@ -24,7 +24,7 @@ Deze handleiding behandelt alle taken met AEM Assets, zoals het maken, beheren, 
 
 | Handboek | Beschrijving |
 |--- |---|
-| [Opmerkingen bij de release](/help/release-notes/home.md) | Verstrekt belangrijke informatie over de recentste versie van AEM, met inbegrip van wat nieuwe, gesteunde platforms is, verouderde en verwijderde eigenschappen, en bekende kwesties |
+| [Releaseopmerkingen](/help/release-notes/home.md) | Verstrekt belangrijke informatie over de recentste versie van AEM, met inbegrip van wat nieuwe, gesteunde platforms is, verouderde en verwijderde eigenschappen, en bekende kwesties |
 | [Gebruikershandleiding voor formulieren](/help/forms/home.md) | In deze handleiding wordt beschreven hoe u digitale formulieren kunt maken, beheren, publiceren en bijwerken. |
 | [Gebruikersgids voor gemeenschappen](/help/communities/home.md) | Maak online ervaringen zoals forums, gebruikersgroepen, leermiddelen en andere sociale functies. |
 | [Beheerdershandleiding](/help/sites-administering/home.md) | Begrijp hoe te om AEM te beheren |
@@ -39,11 +39,11 @@ Deze handleiding behandelt alle taken met AEM Assets, zoals het maken, beheren, 
 
 ## Belangrijke AEM-bronnen
 
-* [AEM-zelfstudies](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
+* [AEM-videozelfstudies](https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html#Assets)
+* [Gereedheid voor GDPR (AVG)](/help/managing/data-protection-and-privacy.md)
+* [Experience League](https://guided.adobe.com/?mv=other#recommended/solutions/experience-manager)
+* [AEM Assets Community Forum](https://experienceleaguecommunities.adobe.com/t5/Adobe-Experience-Manager-Assets/ct-p/experience-manager-assets-community)
 * [Gebruikershandleiding voor verzending](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)
 * [HTML-gebruikershandleiding](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
 * [Gebruikershandleiding voor kerncomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
-* [GDPR gereedheid](/help/managing/data-protection-and-privacy.md)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&mv=other#solutions/experience-manager)
-* [AEM Community Forum](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)

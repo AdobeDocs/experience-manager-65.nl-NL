@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: b7b17cf8-def5-4a77-a872-c1f286814881
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
 
 ---
 
@@ -191,7 +191,7 @@ In het volgende Java-codevoorbeeld worden twee PDF-brondocumenten met de naam *m
 
 ## Snel starten (SOAP-modus): Een PDF-document demonteren met de Java API {#quick-start-soap-mode-disassembling-a-pdf-document-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een PDF-document met de naam *AssemblerResultPDF.pdf* gedemonteerd. U ziet dat de naam van het DDX-document *shell_disassemble.xml* is. Elk gedemonteerd PDF-document heeft de naam *[ResultPDFNumber].pdf*. Het eerste gedemonteerde PDF-document krijgt de naam *ResultPDF1.pdf.* Voor informatie over het *shell_disassemble.xml* DX- document dat in dit codevoorbeeld wordt gebruikt, zie [Programmatically Disassembling PDF Documenten](/help/forms/developing/assembling-pdf-documents.md#programmatically-disassembling-pdf-documents).
+In het volgende Java-codevoorbeeld wordt een PDF-document met de naam *AssemblerResultPDF.pdf* gedemonteerd. U ziet dat de naam van het DDX-document *shell_disassemble.xml* is. Elk gedemonteerd PDF-document krijgt de naam `ResultPDF[Number].pdf`. Het eerste gedemonteerde PDF-document krijgt de naam *ResultPDF1.pdf.* Voor informatie over het *shell_disassemble.xml* DX- document dat in dit codevoorbeeld wordt gebruikt, zie [Programmatically Disassembling PDF Documenten](/help/forms/developing/assembling-pdf-documents.md#programmatically-disassembling-pdf-documents).
 
 ```as3
  /*

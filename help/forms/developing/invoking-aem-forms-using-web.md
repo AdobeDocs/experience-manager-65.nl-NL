@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: d5722281-bea9-4fc7-abdc-e678899e0a15
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
 
 ---
 
@@ -368,7 +368,7 @@ U kunt JAX-WS gebruiken om een WSDL-service van Forms om te zetten in Java-proxy
 1. Installeer JDK 1.6 of later.
 
    * Voeg de JDK bin-map toe aan het klassepad.
-   * Voeg de binmap JRE toe aan het klassepad. Dit vak bevindt zich in de map [*JDK_INSTALL_LOCATION*]/jre.
+   * Voeg de binmap JRE toe aan het klassepad. Dit vak bevindt zich in de `[JDK_INSTALL_LOCATION]/jre` map.
    * Stel de omgevingsvariabele in op de map waarin u de JDK hebt geïnstalleerd. `JAVA_HOME`
    JDK 1.6 omvat het havenprogramma dat in het build.xml- dossier wordt gebruikt. JDK 1.5 omvat dat programma niet.
 
@@ -558,7 +558,7 @@ U kunt Java-bibliotheekbestanden van de as genereren door de volgende stappen ui
    * xalan.jar
    * xbean.jar
    * xercesImpl.jar
-   Deze JAR-bestanden staan in de map *[install]*/Adobe/Adobe Experience Manager Forms/sdk/lib/third party.
+   Deze JAR-bestanden staan in de `[install directory]/Adobe/Adobe Experience Manager Forms/sdk/lib/thirdparty` map.
 
 **Zie ook**
 

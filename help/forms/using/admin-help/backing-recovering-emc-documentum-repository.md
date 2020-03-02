@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f146202f-25f1-46a0-9943-c483f5f09f9f
 translation-type: tm+mt
-source-git-commit: 8bc99ed3817398ae358d439a5c1fcc90bbd24327
+source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
 
 ---
 
@@ -189,22 +189,22 @@ In dit gedeelte wordt beschreven hoe u de EMC NetWorker-software op de Content S
 
 1. Stel het wachtwoord voor het configuratiebestand als volgt in:
 
-   * Open een opdrachtprompt en wijzig deze in *[NetWorker_root]*\Legato\nsr\bin.
+   * Open een opdrachtprompt en wijzig deze in `[NetWorker_root]\Legato\nsr\bin`.
    * Voer de volgende opdracht uit: `-nsrnmdsv.exe -f`*&lt;path_to_cfg_file> -P &lt;password>*
 
 1. Maak de uitvoerbare batchbestanden (.bat) die worden gebruikt om een back-up van de database te maken. (Zie de documentatie van NetWorker.) Stel de details in de batchbestanden in op basis van uw installatie.
 
    * Volledige back-up van database (nsrnmddbf.bat):
 
-      *[NetWorker_database_module_root]* `-s`*&lt;NetWorker_Server_Name>*gebruikersnaam`-U`*[-]*wachtwoord`-P`*[]*`-l full`*&lt;database_name>*
+      `NetWorker_database_module_root` `-s`*&lt;NetWorker_Server_Name>*`-U``[username]`wachtwoord`-P`*[]*`-l full`*&lt;database_name>*
 
    * Incrementele back-up van databases (nsrnmddbi.bat):
 
-      *[NetWorker_database_module_root]* `-s`*&lt;NetWorker_Server_Name>*gebruikersnaam`-U`*[-]*wachtwoord`-P`*[]*`-l 1 -R`*&lt;database_name>*
+      `[NetWorker_database_module_root]` `-s`*&lt;NetWorker_Server_Name>*`-U``[username]``-P``[password]``-l 1 -R`*&lt;database_name>*
 
    * Back-up van databaselogbestand (nsrnmddbl.bat):
 
-      *[NetWorker_database_module_root]* `-s`*&lt;NetWorker_Server_Name>*gebruikersnaam`-U`*[-]*wachtwoord`-P`*[]*`-l incr -R`*&lt;database_name>*
+      `[NetWorker_database_module_root]` `-s``<NetWorker_Server_Name>` `-U``[username]` `-P``[password]` `-l incr -R`*&lt;database_name>*
 
       Waar:
 
@@ -240,7 +240,7 @@ Voer de volgende taken uit nadat u een volledige back-up van uw AEM-formuliergeg
 >
 >De opdrachtscripts vereisen het volledige pad naar het bestand nsrnmd_win.cfg dat u hebt gemaakt bij het [voorbereiden van de EMC Document Content Server voor back-up en herstel](backing-recovering-emc-documentum-repository.md#preparing-the-emc-document-content-server-for-backup-and-recovery).
 
-1. Open een opdrachtprompt en wijzig deze in *[NetWorker_root]*\Legato\nsr\bin.
+1. Open een opdrachtprompt en wijzig deze in `[NetWorker_root]\Legato\nsr\bin`.
 1. Voer de volgende opdracht uit:
 
    ```as3
@@ -266,4 +266,3 @@ Voer de volgende taken uit voordat u de AEM-formuliergegevens herstelt. (Zie [De
    ```as3
     - nsrnmdrs.exe -B <docbase_name> -f <path_to_cfg_file> -C SA
    ```
-

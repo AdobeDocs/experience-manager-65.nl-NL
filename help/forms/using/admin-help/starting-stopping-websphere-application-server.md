@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: bcd16691-67ab-4694-9e6b-c9d3e0c7bf0b
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
 
 ---
 
@@ -21,7 +21,7 @@ Verscheidene procedures vereisen u om de instantie van WebSphere te tegenhouden 
 
 ## De status van WebSphere Application Server weergeven {#view-the-status-of-websphere-application-server}
 
-1. Ga vanaf een opdrachtprompt naar de map *[appserver root]*/bin.
+1. Van een bevelherinnering, ga naar de `[appserver root]/bin` folder.
 1. Ga het volgende bevel in, die *server_name* met de naam van uw Server van de Toepassing WebSphere vervangt:
 
    * (Windows) `serverStatus.bat`*server_name *
@@ -29,7 +29,7 @@ Verscheidene procedures vereisen u om de instantie van WebSphere te tegenhouden 
 
 ## WebSphere-toepassingsserver starten {#start-websphere-application-server}
 
-1. Ga vanaf een opdrachtprompt naar de map *[appserver root]*/bin.
+1. Van een bevelherinnering, ga naar de `[appserver root]/bin` folder.
 1. Ga het volgende bevel in, die *server_name* met de naam van uw Server van de Toepassing WebSphere vervangt:
 
    * (Windows) `startServer.bat`*server_name *
@@ -37,7 +37,7 @@ Verscheidene procedures vereisen u om de instantie van WebSphere te tegenhouden 
 
 ## WebSphere-toepassingsserver stoppen {#stop-websphere-application-server}
 
-1. Ga vanaf een opdrachtprompt naar de map *[appserver root]*/bin.
+1. Van een bevelherinnering, ga naar de `[appserver root]/bin` folder.
 1. Ga het volgende bevel in, die *server_name* met de naam van uw Server van de Toepassing WebSphere vervangt:
 
    * (Windows) `stopServer.bat`*server_name *

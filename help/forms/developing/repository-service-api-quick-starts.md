@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 2fd1a21a-0f90-49d8-9f62-383b268d540d
 translation-type: tm+mt
-source-git-commit: 413af4ef9bc3652e05da78d622183bcf20a8bee7
+source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
 
 ---
 
@@ -53,7 +53,7 @@ Het pad naar een bron in de AEM Forms-opslagplaats is:
 
 >[!NOTE]
 >
->U kunt in de AEM Forms Repository door een webbrowser bladeren. Als u in de opslagplaats wilt bladeren, voert u de volgende URL in in een webbrowser https://[servernaam]:[serverpoort]/opslagplaats. Met een webbrowser kunt u snelstartresultaten controleren. Als u bijvoorbeeld inhoud toevoegt aan de AEM Forms Repository, kunt u de inhoud zien in een webbrowser.
+>U kunt in de AEM Forms Repository door een webbrowser bladeren. Als u in de gegevensopslagruimte wilt bladeren, voert u de volgende URL in een webbrowser in `https://[server name]:[server port]/repository`. Met een webbrowser kunt u snelstartresultaten controleren. Als u bijvoorbeeld inhoud toevoegt aan de AEM Forms Repository, kunt u de inhoud zien in een webbrowser.
 
 >[!NOTE]
 >

@@ -4,7 +4,7 @@ description: Leer de taken voor middelenbeheer, zoals het uploaden, downloaden, 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 0f086ed9d1674149888d2921820eacce1aed9e24
+source-git-commit: 68692e7b82aecd81a21f3a970f3707f2ff39792a
 
 ---
 
@@ -627,7 +627,7 @@ In de kaartweergave wordt de optie **[!UICONTROL Selecteren]** als een snelle ac
 
 ![select_quick_action](assets/select_quick_action.png)
 
-Wanneer u in de gebruikersinterface van Elementen in een browser door een map of een verzameling bladert, kunt u alle elementen selecteren met de optie Alles  selecteren in de rechterbovenhoek.
+Wanneer u in de gebruikersinterface van Elementen in een browser door een map of een verzameling bladert, kunt u alle weergegeven of geladen elementen selecteren met de optie Alles  selecteren in de rechterbovenhoek. Als u niet hieronder scrolt, worden slechts 100 activa geladen in kaartmening en 200 worden geladen in lijstmening. Met de optie Alles selecteren selecteert u alleen deze vele elementen.
 
 Zie de bronnen [weergeven en selecteren voor meer informatie](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 

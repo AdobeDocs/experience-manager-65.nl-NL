@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
 
 ---
 
@@ -713,7 +713,7 @@ Als u aan dialoog of manuscriptdossiers van XML van plan bent te werken, zou u d
 Het dialoogvenster- en scriptbestand bevinden zich in het bestand appmondata.jar. Voordat u een van deze bestanden kunt wijzigen of nieuwe script- of dialoogbestanden kunt toevoegen, moet u het pakket van dit JAR-bestand opheffen. Stel dat u ondersteuning wilt toevoegen voor de toepassing EditPlus. U maakt twee XML-bestanden met de namen appmon.editplus.script.en_US.xml en appmon.editplus.script.adding.nl_NL.xml. Deze XML-scripts moeten op twee locaties aan het bestand adobe-appmondata.jar worden toegevoegd, zoals hieronder wordt aangegeven:
 
 * adobe-livecycle-native-jreliëf-x86_win32.ear > adobe-Native2PDFSvc.war\WEB-INF\lib > adobe-native.jar > Native2PDFSvc-native.jar\bin > adobe-appmondata.jar\com\adobe\appmon. Het bestand adobe-livecycle-native-jreliëf-x86_win32.ear bevindt zich in de exportmap op `[AEM forms install directory]\configurationManager`. (Als AEM Forms wordt geïmplementeerd op een andere J2EE-toepassingsserver, vervangt u het bestand adobe-livecycle-native-jreliëf-x86_win32.ear door het EAR-bestand dat overeenkomt met uw J2EE-toepassingsserver.)
-* adobe-generatepdf-dsc.jar > adobe-appmondata.jar\com\adobe\appmon (het bestand adobe-appmondata.jar bevindt zich in het bestand adobe-generatepdf-dsc.jar). Het bestand adobe-generatepdf-dsc.jar staat in de installatiemap *[\Implementatie van de installatiemap voor]* AEM-formulieren.
+* adobe-generatepdf-dsc.jar > adobe-appmondata.jar\com\adobe\appmon (het bestand adobe-appmondata.jar bevindt zich in het bestand adobe-generatepdf-dsc.jar). Het bestand adobe-generatepdf-dsc.jar bevindt zich in de `[AEM forms install directory]\deploy` map.
 
 Nadat u deze XML-bestanden aan het bestand adobe-appmondata.jar hebt toegevoegd, moet u de component GeneratePDF opnieuw gebruiken. Voer de volgende taken uit om XML-bestanden voor dialoog en script toe te voegen aan het bestand adobe-appmondata.jar:
 
@@ -741,7 +741,7 @@ Nadat u deze XML-bestanden aan het bestand adobe-appmondata.jar hebt toegevoegd,
 
 Als u bestanden wilt doorsturen naar een nieuwe oorspronkelijke toepassing, moet u een XML-scriptbestand voor die toepassing maken. Als u de manier wilt wijzigen waarop de service PDF genereren werkt met een native toepassing die al wordt ondersteund, moet u het script voor die toepassing wijzigen.
 
-Het script bevat instructies die door de vensterelementen van de native toepassing navigeren en die specifieke reacties op die elementen leveren. Het bestand dat deze informatie bevat, is appmon.*[appname]*.script.*[locale]*.xml. Een voorbeeld is appmon.notepad.script.en_US.xml.
+Het script bevat instructies die door de vensterelementen van de native toepassing navigeren en die specifieke reacties op die elementen leveren. Het bestand dat deze gegevens bevat, is `appmon.[appname]``.script.[locale].xml`. Een voorbeeld is appmon.notepad.script.en_US.xml.
 
 #### Stappen identificeren die het script moet uitvoeren {#identifying-steps-the-script-must-execute}
 
@@ -836,16 +836,16 @@ Als u een script maakt voor een native toepassing die voorheen niet werd onderst
 
 >[!NOTE]
 >
->In dit verband betekent de term &quot;aanvullend&quot; de inhoud van de appmon.[applicationname].adding.[locale].xml. Met een dergelijk bestand worden overschrijvingen en toevoegingen aan het XML-bestand van het dialoogvenster opgegeven.
+>In dit verband betekent de term &quot;aanvullend&quot; de inhoud van het `appmon.[applicationname].addition.[locale].xml` bestand. Met een dergelijk bestand worden overschrijvingen en toevoegingen aan het XML-bestand van het dialoogvenster opgegeven.
 
 U kunt ook het XML-bestand met aanvullende dialoogvensters wijzigen voor een native toepassing voor de volgende doeleinden:
 
 * Het XML-bestand van het dialoogvenster negeren voor een toepassing met een andere reactie
 * Een antwoord toevoegen aan een dialoogvenster dat niet wordt geactiveerd in het XML-bestand van het dialoogvenster voor die toepassing
 
-De bestandsnaam die een extra dialogXML-bestand aangeeft, wordt toegepast.*[appname]*.adding.*[locale]*.xml. Een voorbeeld is appmon.excel.extension.nl_NL.xml.
+De bestandsnaam die een extra dialogXML-bestand aangeeft, is `appmon.[appname].addition.[locale].xml`. Een voorbeeld is appmon.excel.extension.nl_NL.xml.
 
-Voor de naam van het XML-bestand van het extra dialoogvenster moet de juiste indeling worden gebruikt.*[applicationname]*.adding.*[locale]*.xml, waarbij de *toepassingsnaam* exact moet overeenkomen met de toepassingsnaam die wordt gebruikt in het XML-configuratiebestand en in het script.
+De naam van het XML-bestand van het extra dialoogvenster moet de indeling gebruiken `appmon.[applicationname].addition.[locale].xml`, waarbij de *toepassingsnaam* exact moet overeenkomen met de toepassingsnaam die in het XML-configuratiebestand en in het script wordt gebruikt.
 
 >[!NOTE]
 >
@@ -898,7 +898,7 @@ In dit voorbeeld zijn de standaardconfiguratiegegevens van de Generate PDF-servi
 
 #### Een omgevingsvariabele maken om de oorspronkelijke toepassing te vinden {#creating-an-environment-variable-to-locate-the-native-application}
 
-Maak een omgevingsvariabele die de locatie opgeeft van het uitvoerbare bestand van de native toepassing. De variabele moet de notatie *[applicationname]*_PATH gebruiken, waarbij de *toepassingsnaam* exact moet overeenkomen met de toepassingsnaam die in het XML-configuratiebestand en in het script wordt gebruikt, en waarbij het pad het pad naar het uitvoerbare bestand bevat met dubbele aanhalingstekens. Een voorbeeld van een dergelijke omgevingsvariabele is `Photoshop_PATH`.
+Maak een omgevingsvariabele die de locatie opgeeft van het uitvoerbare bestand van de native toepassing. De variabele moet de indeling gebruiken `[applicationname]_PATH`, waarbij de *toepassingsnaam* exact moet overeenkomen met de toepassingsnaam in het XML-configuratiebestand en in het script, en waarbij het pad het pad naar het uitvoerbare bestand bevat met dubbele aanhalingstekens. Een voorbeeld van een dergelijke omgevingsvariabele is `Photoshop_PATH`.
 
 Nadat u de nieuwe omgevingsvariabele hebt gemaakt, moet u de server opnieuw opstarten waarop de Genereren PDF-service is geïmplementeerd.
 
@@ -907,7 +907,7 @@ Nadat u de nieuwe omgevingsvariabele hebt gemaakt, moet u de server opnieuw opst
 1. Selecteer **Configuratiescherm > Systeem**.
 1. Klik in het dialoogvenster Systeemeigenschappen op het tabblad **Geavanceerd** en klik vervolgens op **Omgevingsvariabelen**.
 1. Klik onder Systeemvariabelen in het dialoogvenster Omgevingsvariabelen op **Nieuw**.
-1. Typ in het dialoogvenster Nieuwe systeemvariabele in het vak Naam **** variabele een naam met de indeling *[applicationname]*_PATH.
+1. Typ in het dialoogvenster Nieuwe systeemvariabele in het vak Naam **** variabele een naam die de indeling gebruikt `[applicationname]_PATH`.
 1. Typ in het vak **Waarde** variabele het volledige pad en de bestandsnaam van het uitvoerbare bestand van de toepassing en klik op **OK**. For example, type: `c:\windows\Notepad.exe`
 1. Klik in het dialoogvenster Omgevingsvariabelen op **OK**.
 

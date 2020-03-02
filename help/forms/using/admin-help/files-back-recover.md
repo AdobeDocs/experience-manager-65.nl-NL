@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
 
 ---
 
@@ -154,7 +154,7 @@ De map Content Storage Root bevat de opslagruimte Content Services (Afgekeurd) w
 
 De hoofdmap voor inhoudsopslag wordt gemaakt wanneer Content Services (Afgekeurd) is geïnstalleerd. De locatie van de hoofdmap voor inhoudsopslag wordt bepaald tijdens het installatieproces van AEM-formulieren.
 
-De standaardlocatie voor de hoofdmap van de inhoudsopslagruimte is *[aem-forms root]*/lccs_data.
+De standaardlocatie voor de hoofdmap van de inhoudsopslag is `[aem-forms root]/lccs_data`.
 
 Maak een back-up van de volgende mappen in de hoofdmap van de inhoudsopslagruimte:
 
@@ -176,7 +176,7 @@ Wanneer u Content Services (Afgekeurd) installeert in een geclusterde omgeving, 
 
 **** Basismap index: Een map die op elk knooppunt in de cluster is gemaakt en die altijd hetzelfde pad en dezelfde mapnaam heeft
 
-De standaardlocatie voor de hoofdmap voor inhoudsopslag is *[GDS-root]*/lccs_data, waarbij *[GDS-root]* de locatie is die wordt beschreven op de [GDS-locatie](files-back-recover.md#gds-location). Maak een back-up van de volgende mappen in de hoofdmap van de inhoudsopslagruimte:
+De standaardlocatie voor de hoofdmap van de inhoudsopslagruimte is `[GDS root]/lccs_data`, waar `[GDS root]` is de locatie die wordt beschreven in de [GDS-locatie](files-back-recover.md#gds-location). Maak een back-up van de volgende mappen in de hoofdmap van de inhoudsopslagruimte:
 
 /audit.contentstore
 
@@ -188,7 +188,7 @@ De standaardlocatie voor de hoofdmap voor inhoudsopslag is *[GDS-root]*/lccs_dat
 
 Als de /backup-lucene-indexes folder niet aanwezig is, file de /lucene-indexes folder, die ook in de folder van de Root van de Opslag van de Inhoud wordt gevestigd. Als de /backup-lucene-indexes folder aanwezig is, maak geen file de /lucene-indexes folder omdat het fouten kan veroorzaken.
 
-De standaardlocatie voor de hoofdmap van de index is *[em-formulieren root]*/lucene-indexen op elk knooppunt.
+De standaardlocatie voor de hoofdmap van de index staat `[aem-forms root]/lucene-indexes` op elk knooppunt.
 
 ## Door de klant geïnstalleerde lettertypen {#customer-installed-fonts}
 
@@ -196,6 +196,6 @@ Als u extra lettertypen hebt geïnstalleerd op uw AEM-formulieromgeving, moet u 
 
 >[!NOTE]
 >
->De Adobe-lettertypen die met AEM-formulieren zijn geïnstalleerd, bevinden zich standaard in de map [met hoofdmappen]/lettertypen voor em-formulieren.
+>De Adobe-lettertypen die met AEM-formulieren zijn geïnstalleerd, bevinden zich standaard in de `[aem-forms root]/fonts` map.
 
 Als u het besturingssysteem op de hostcomputer opnieuw initialiseert en u de lettertypen van het vorige besturingssysteem wilt gebruiken, moet ook een back-up worden gemaakt van de inhoud van de systeemmap met lettertypen. (Raadpleeg de documentatie bij het besturingssysteem voor specifieke instructies.)

@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 3d8bb2d3-b1f8-49e1-a529-b3e7a28da4bb
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
 
 ---
 
@@ -963,7 +963,7 @@ Het volledig gekwalificeerde gegevenstype van het complexe type AEM Forms wordt 
 De velden van de ActionScript-klasse komen overeen met de velden die tot het complexe type AEM Forms behoren. De zes velden in de ActionScript-klasse van de Klant komen overeen met de velden waartoe de Klant behoort `com.adobe.livecycle.sample.customer.Customer`.
 
 >[!NOTE]
-Een goede manier om de gebiedsnamen te bepalen die tot een complex type van Vormen behoren is WSDL van de dienst in Webbrowser te bekijken. Een WSDL specificeert de complexe types van de dienst en de overeenkomstige gegevensleden. De volgende WSDL wordt gebruikt voor de klantenservice: *https://[yourServer]:[yourPort]/soap/services/CustomerService?wsdl.*
+Een goede manier om de gebiedsnamen te bepalen die tot een complex type van Vormen behoren is WSDL van de dienst in Webbrowser te bekijken. Een WSDL specificeert de complexe types van de dienst en de overeenkomstige gegevensleden. De volgende WSDL wordt gebruikt voor de klantenservice: `https://[yourServer]:[yourPort]/soap/services/CustomerService?wsdl.`
 
 De klasse ActionScript van de Klant behoort tot een pakket genoemd klant. Het wordt aanbevolen alle ActionScript-klassen die zijn toegewezen aan complexe AEM Forms-gegevenstypen in een eigen pakket te plaatsen. Maak een map in de bronmap van het Flex-project en plaats het ActionScript-bestand in de map, zoals in de volgende afbeelding wordt getoond.
 

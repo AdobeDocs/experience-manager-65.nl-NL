@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 translation-type: tm+mt
-source-git-commit: fdcd9173b02347a7a9527b292635d63e8aa9ce19
+source-git-commit: 9f4a460c7f64d86e35e950e512ed5b6cda1cbf2a
 
 ---
 
@@ -21,7 +21,7 @@ source-git-commit: fdcd9173b02347a7a9527b292635d63e8aa9ce19
 | Versie | 6.5.3.0 |
 | Type | Service Pack-release |
 | Date | 12 december 2019 |
-| URL downloaden | [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.3.0), [Softwaredistributie](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aem.html#package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.3.zip) |
+| URL downloaden | [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.3.0) |
 
 ## Wat is inbegrepen in de Manager van de Ervaring van Adobe 6.5.3.0 {#what-s-included-in-aem}
 
@@ -434,10 +434,9 @@ Lijst met inhoudspakketten die zijn opgenomen in AEM 6.5.3.0
 ## Nuttige bronnen {#helpful-resources}
 
 * [Opmerkingen bij de release AEM 6.5](/help/release-notes/release-notes.md)
-* [AEM-productpagina](https://www.adobe.com/solutions/web-experience-management.html)
-* [Ondersteuning voor AEM-ontwikkelaars](https://docs.adobe.com/content/ddc/en.html)
+* [AEM-productpagina](https://www.adobe.com/marketing/experience-manager.html)
 * [AEM 6.5-documentatie](https://helpx.adobe.com/support/experience-manager/6-5.html)
-* Abonneren op [Adobe Priority-productupdates](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html)
+* Abonneren op [Adobe-productupdates met prioriteit](https://www.adobe.com/subscription/priority-product-update.html)
 
 ## Beperkte sites {#restricted-sites}
 

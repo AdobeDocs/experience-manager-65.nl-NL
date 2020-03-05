@@ -1,290 +1,290 @@
 ---
-title: Verzamelingen digitale middelen beheren
-description: Leer taken om verzamelingen met middelen te beheren, zoals verzamelingen maken, weergeven, verwijderen, bewerken en downloaden.
+title: Verzamelingen van digitale middelen beheren
+description: Leer taken om Inzamelingen van activa te beheren, zoals creeer, mening, schrap, geef, en download inzamelingen uit te geven.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 9af0ee0ff9d1089b6cf09c52f7f606cce6775d72
+source-git-commit: 27fdeaf50255379fd6e5bb45eaf593cec895cd04
 
 ---
 
 
 # Verzamelingen beheren {#managing-collections}
 
-Een verzameling is een set elementen in Adobe Experience Manager-middelen. Gebruik verzamelingen om elementen tussen gebruikers te delen. De set kan een statische verzameling of een dynamische verzameling zijn die is gebaseerd op zoekresultaten.
+Een inzameling is een reeks activa binnen de Activa van de Manager van de Ervaring van Adobe. De inzamelingen van het gebruik om activa tussen gebruikers te delen. De reeks kan statische inzameling of een dynamische inzameling zijn die op onderzoeksresultaten gebaseerd is.
 
-In tegenstelling tot mappen kan een verzameling elementen van verschillende locaties bevatten. U kunt verzamelingen delen met verschillende gebruikers waaraan verschillende niveaus van bevoegdheden zijn toegewezen, zoals weergeven, bewerken, enzovoort.
+In tegenstelling tot omslagen, kan een inzameling activa van verschillende plaatsen omvatten. U kunt inzamelingen met diverse gebruikers delen die verschillende niveaus van voorrechten, met inbegrip van het bekijken, het uitgeven, etc. worden toegewezen.
 
-U kunt meerdere verzamelingen delen met een gebruiker. Elke verzameling bevat verwijzingen naar elementen. De referentiële integriteit van activa wordt gehandhaafd over inzamelingen.
+U kunt veelvoudige inzamelingen met een gebruiker delen. Elke inzameling bevat verwijzingen naar activa. De referentiële integriteit van activa wordt gehandhaafd over inzamelingen.
 
-De inzamelingen zijn van de volgende types, die op de manier worden gebaseerd zij activa sorteren:
+De inzamelingen zijn van de volgende types, die op de manier worden gebaseerd zij activa collationeren:
 
-* Een verzameling die een statische referentielijst met elementen, mappen en andere verzamelingen bevat.
+* Een inzameling die een statische verwijzingslijst van activa, omslagen, en andere inzamelingen bevat.
 
-* Een slimme verzameling die dynamisch elementen bevat op basis van zoekcriteria.
+* Een slimme inzameling die dynamisch activa omvat die op een onderzoekscriteria worden gebaseerd.
 
-## Toegang tot de verzamelingsconsole {#navigating-the-collections-console}
+## Heb toegang tot de inzamelingsconsole {#navigating-the-collections-console}
 
-Tik of klik op het logo van Experience Manager om de **[!UICONTROL verzamelingen]** te openen. Ga op de navigatiepagina naar **[!UICONTROL Middelen]** > **[!UICONTROL Verzamelingen]**.
+Om de **[!UICONTROL Verzamelingen]** te openen, tik of klik het embleem van de Manager van de Ervaring. Van de navigatiepagina, ga naar **[!UICONTROL Activa]** > **[!UICONTROL Inzamelingen]**.
 
 ## Een verzameling maken {#creating-a-collection}
 
-U kunt een verzameling maken met [statische verwijzingen](#creating-a-collection-with-static-references) of op basis van een op [zoekcriteria gebaseerd filter](#creating-a-smart-collection). U kunt ook een verzameling maken van een lichtbak.
+U kunt een inzameling of met [statische verwijzingen](#creating-a-collection-with-static-references) tot stand brengen of gebaseerd op een op [onderzoekscriteria-gebaseerde filter](#creating-a-smart-collection). U kunt een inzameling van een lightbox ook tot stand brengen.
 
-### Een verzameling met statische verwijzingen maken {#creating-a-collection-with-static-references}
+### Creeer een inzameling met statische verwijzingen {#creating-a-collection-with-static-references}
 
-U kunt een verzameling maken met statische verwijzingen, bijvoorbeeld een verzameling met verwijzingen naar elementen, mappen, verzamelingen, centrifuges en afbeeldingssets.
+U kunt een inzameling met statische verwijzingen, bijvoorbeeld een inzameling met verwijzingen naar activa, omslagen, inzamelingen, spin reeksen, en beeldreeksen tot stand brengen.
 
-1. Navigeer naar de **[!UICONTROL Collections]** -console.
-1. Tik op de werkbalk of klik op **[!UICONTROL Maken]**.
-1. Voer op de pagina **[!UICONTROL Verzameling]** maken een titel en een optionele beschrijving in voor de verzameling.
-1. Voeg leden toe aan de verzameling en wijs de juiste machtigingen toe. U kunt ook **[!UICONTROL Openbare verzameling]** selecteren om alle gebruikers toegang tot de verzameling te geven.
-
-   >[!NOTE]
-   >
-   >Om de leden toe te laten om inzamelingen met andere gebruikers te delen, verstrek de `dam-users` groep lees toestemmingen bij de weg `home/users`. Geef gebruikers op de `/content/dam/collections` locatie toestemming om de verzamelingen in pop-uplijsten weer te geven. U kunt de gebruiker ook deel laten uitmaken van een `dam-users` groep.
-
-1. (Optioneel) Voeg een miniatuurafbeelding toe voor de verzameling.
-1. Tik/klik op **[!UICONTROL Maken]** en tik/klik op **[!UICONTROL OK]** om het dialoogvenster te sluiten. Een inzameling met de gespecificeerde titel en de eigenschappen wordt geopend in de console van Inzamelingen.
+1. Navigeer aan de console van **[!UICONTROL Inzamelingen]** .
+1. Tik op/klik op **[!UICONTROL Maken]** op de werkbalk.
+1. In de **[!UICONTROL Create pagina van de Inzameling]** , ga een titel en een facultatieve beschrijving voor de inzameling in.
+1. Voeg leden aan de inzameling toe en wijs aangewezen toestemmingen toe. Alternatief, selecteer de **[!UICONTROL Openbare Inzameling]** om alle gebruikers toe te staan om tot de inzameling toegang te hebben.
 
    >[!NOTE]
    >
-   >Met de middelen van Experience Manager kunt u controletaken voor een verzameling maken die lijken op de manier waarop u overzichtstaken voor een map met middelen maakt.
+   >Om de leden toe te laten om inzamelingen met andere gebruikers te delen, verstrek de `dam-users` groep gelezen toestemmingen bij de weg `home/users`. Geef toestemming aan de gebruikers bij `/content/dam/collections` plaats om de gebruikers toe te staan om de Inzamelingen in pop - op lijsten te bekijken. Alternatief, maak de gebruiker een deel van `dam-users` groep.
 
-   Navigeer naar de gebruikersinterface Elementen om elementen aan de verzameling toe te voegen. Zie Elementen [toevoegen aan een verzameling](#adding-assets-to-a-collection)voor meer informatie.
+1. (Facultatief) voeg een duimnagelbeeld voor de inzameling toe.
+1. Tik/klik op **[!UICONTROL Maken]** en tik vervolgens op/klik op **[!UICONTROL OK]** om het dialoogvenster te sluiten. Een inzameling met de gespecificeerde titel en de eigenschappen wordt geopend in de console van Inzamelingen.
 
-### Verzamelingen maken met dropzone {#create-collections-using-dropzone}
+   >[!NOTE]
+   >
+   >De Activa van de Manager van de ervaring laten u overzichtstaken voor een inzameling tot stand brengen gelijkend op de manier u overzichtstaken voor een activaomslag creeert.
 
-U kunt elementen van de interface Elementen naar een verzameling slepen. U kunt ook een kopie van een verzameling maken en de elementen daar slepen.
+   Om activa aan de inzameling toe te voegen, navigeer aan het gebruikersinterface van Activa. Voor details, zie activa [toevoegen aan een inzameling](#adding-assets-to-a-collection).
 
-1. Selecteer in de gebruikersinterface Elementen de elementen die u aan een verzameling wilt toevoegen.
-1. Sleep de elementen naar de zone **[!UICONTROL Drop in Collection]** . U kunt ook op het pictogram **[!UICONTROL Naar verzameling]** op de werkbalk tikken of erop klikken.
+### Creeer inzamelingen gebruikend dropzone {#create-collections-using-dropzone}
 
-   ![drop_in_collection](assets/drop_in_collection.png)
+U kunt activa van de Activa UI aan een inzameling slepen. U kunt een exemplaar van een inzameling ook tot stand brengen en de activa daar slepen.
 
-1. Tik of klik op het pictogram Verzameling **** maken op de werkbalk op de pagina Toevoegen aan verzameling **** .
+1. Van het gebruikersinterface van Activa, selecteer de activa u aan een inzameling wilt toevoegen.
+1. Sleep de activa aan de **[!UICONTROL Daling in de streek van de Inzameling]** . Alternatief, tik/klik het pictogram **[!UICONTROL aan van de Inzameling]** van de toolbar.
 
-   Als u de elementen aan een bestaande verzameling wilt toevoegen, selecteert u deze op de pagina en tikt u op **[!UICONTROL Toevoegen]**. Standaard is de laatst bijgewerkte verzameling geselecteerd.
+   ![drop_in_collectie](assets/drop_in_collection.png)
 
-1. Geef een naam voor de verzameling op in het dialoogvenster Nieuwe verzameling **** maken. Als u wilt dat de verzameling toegankelijk is voor alle gebruikers, selecteert u **[!UICONTROL Openbare verzameling]**.
+1. In **[!UICONTROL Add aan de pagina van de Inzameling]** , tik/klik het **[!UICONTROL Create pictogram van de Inzameling]** van de toolbar.
+
+   Als u de activa aan een bestaande inzameling wilt toevoegen, selecteer het van de pagina, en de tikken/de klik **[!UICONTROL voegt]** toe. Door gebrek, wordt de onlangs bijgewerkte inzameling geselecteerd.
+
+1. In de **[!UICONTROL Create Nieuwe dialoog van de Inzameling]** , specificeer een naam voor de inzameling. Als u de inzameling voor alle gebruikers toegankelijk wilt zijn, uitgezochte **[!UICONTROL Openbare Inzameling]**.
 1. Tik/klik op **[!UICONTROL Doorgaan]** om de verzameling te maken.
 
-### Een slimme verzameling maken {#creating-a-smart-collection}
+### Creeer een slimme inzameling {#creating-a-smart-collection}
 
-Een slimme verzameling gebruikt zoekcriteria om elementen dynamisch te vullen. U kunt een slimme verzameling alleen maken met behulp van bestanden en niet met behulp van mappen of bestanden en mappen.
+Een slimme Inzameling gebruikt een onderzoekscriteria om activa dynamisch te bevolken. U kunt een Slimme Inzameling tot stand brengen gebruikend slechts dossiers en niet omslagen of dossiers en omslagen.
 
-Voer de volgende stappen uit om een slimme verzameling te maken:
+Om een slimme inzameling tot stand te brengen, volg de stappen:
 
-1. Navigeer naar de gebruikersinterface Middelen en tik op het zoekpictogram of klik erop.
+1. Navigeer aan het gebruikersinterface van Activa en tik/klik het onderzoekspictogram.
 
-1. Typ het trefwoord in het vak Zoeken en druk op Enter. Open het deelvenster Filters en pas een zoekfilter toe.
+1. Ga onderzoekssleutelwoord in de doos van het Onderzoek in en druk binnengaan. Open het paneel van Filters en pas een onderzoeksfilter toe.
 
-1. Selecteer **[!UICONTROL Bestanden]** in de lijst **[!UICONTROL Bestanden en mappen]**.
+1. Van de lijst van **[!UICONTROL Dossiers &amp; van Omslagen]** , uitgezochte **[!UICONTROL Dossiers]**.
 
-   ![files_option](assets/files_option.png)
+   ![file_option](assets/files_option.png)
 
-1. Tik/klik op **[!UICONTROL Slimme verzameling]** opslaan.
+1. Tik/klik **[!UICONTROL sparen Slimme Inzameling]**.
 
-1. Geef een naam op voor de verzameling. Selecteer **[!UICONTROL Openbaar]** om de groep DAM-gebruikers met de Viewer-rol toe te voegen aan de slimme verzameling.
+1. Specificeer een naam voor de inzameling. Selecteer **[!UICONTROL Openbaar]** om de groep van Gebruikers DAM met de rol van de Kijker aan de slimme inzameling toe te voegen.
 
-   ![save_collection](assets/save_collection.png)
+   ![save_Collection](assets/save_collection.png)
 
    >[!NOTE]
    >
-   >Als u **[!UICONTROL Openbaar]** selecteert, wordt de slimme inzameling beschikbaar aan iedereen met de eigenaarrol nadat u het creeert. Als u de optie **[!UICONTROL Openbaar]** uitschakelt, wordt de DAM-gebruikersgroep niet meer gekoppeld aan de slimme verzameling.
+   >Als u **[!UICONTROL Openbaar]** selecteert, wordt de slimme inzameling beschikbaar aan iedereen met de eigenaarrol nadat u het creeert. Als u de **[!UICONTROL Openbare]** optie schrapt, wordt de de gebruikersgroep van DAM niet meer geassocieerd met de slimme inzameling.
 
-1. Tik/klik op **[!UICONTROL Opslaan]** om de slimme verzameling te maken en sluit het berichtvenster om het proces te voltooien.
+1. Tik/klik op **[!UICONTROL Opslaan]** om de slimme verzameling te maken en sluit vervolgens het berichtenvak om het proces te voltooien.
 
-   De nieuwe slimme verzameling wordt ook toegevoegd aan de lijst **[!UICONTROL Opgeslagen zoekopdrachten]** .
+   De nieuwe slimme inzameling wordt ook toegevoegd aan de **[!UICONTROL Bewaarde lijst van Onderzoek]** .
 
-   ![collection_list](assets/collection_listing.png)
+   ![verzameling_lijst](assets/collection_listing.png)
 
-   Het label van de knop **[!UICONTROL Slimme selectie]** maken verandert in Slimme selectie **[!UICONTROL bewerken]**. Als u de instellingen van de slimme verzameling wilt bewerken, selecteert u **[!UICONTROL Bestanden]** in de lijst **[!UICONTROL Bestanden en mappen]** . Tik vervolgens op de knop Slimme selectie **** bewerken of klik erop.
+   Het etiket van de **[!UICONTROL Create Slimme knoop van de Selectie]** verandert om Slimme Selectie **[!UICONTROL uit te]** geven. Om de montages van de slimme inzameling uit te geven, selecteer **[!UICONTROL Dossiers]** van de **[!UICONTROL Dossiers &amp; lijst van Omslagen]** . Dan, tik/klik de **[!UICONTROL Edit Slimme knoop van de Selectie]** .
 
    ![chlimage_1-7](assets/chlimage_1-112.png)
 
-## Elementen toevoegen aan een verzameling {#adding-assets-to-a-collection}
+## Voeg activa aan een inzameling toe {#adding-assets-to-a-collection}
 
-U kunt elementen toevoegen aan een verzameling die een lijst met bestanden of mappen waarnaar wordt verwezen, bevat. Slimme verzamelingen gebruiken een zoekquery om elementen te vullen. Daarom zijn statische verwijzingen naar elementen en mappen niet op hen van toepassing.
+U kunt activa aan een inzameling toevoegen die een lijst van referenced activa of omslagen bevat. De slimme inzamelingen gebruiken een onderzoeksvraag om activa te bevolken. Daarom zijn de statische verwijzingen naar activa en omslagen niet toepasselijk op hen.
 
-1. Selecteer het element in de gebruikersinterface Elementen en tik op het pictogram **[!UICONTROL Naar verzameling]** op de werkbalk.
+1. In het gebruikersinterface van Activa, selecteer de activa en tik/klik het pictogram van de Inzameling **** aan van de toolbar.
 
    ![chlimage_1-8](assets/chlimage_1-113.png)
 
-   U kunt het element ook naar het gebied **[!UICONTROL Inzameling]** neerzetten op de interface slepen. Voeg de elementen toe wanneer het label van het gebied verandert in **[!UICONTROL Daling in Toevoegen]**.
+   Alternatief, kunt u de activa aan de **[!UICONTROL Daling in het gebied van de Inzameling]** op de interface slepen. Voeg de activa toe wanneer het etiket van het gebied in **[!UICONTROL Daling verandert om toe te voegen]**.
 
-1. Selecteer op de pagina **[!UICONTROL Toevoegen aan verzameling]** de verzameling waaraan u het element wilt toevoegen.
+1. In **[!UICONTROL Add aan de pagina van de Inzameling]** , selecteer de inzameling waaraan u de activa wilt toevoegen.
 
-1. Tik/klik op **[!UICONTROL Toevoegen]** en sluit het bevestigingsbericht. Het element wordt toegevoegd aan de collectie.
+1. Tik/klik op **[!UICONTROL Toevoegen]** en sluit het bevestigingsbericht. De activa worden toegevoegd aan de inzameling.
 
-## Een slimme verzameling bewerken {#editing-a-smart-collection}
+## Geef een slimme inzameling uit {#editing-a-smart-collection}
 
-Slimme verzamelingen worden gemaakt door een zoekopdracht op te slaan, zodat u de inhoud kunt wijzigen door de zoekparameters van de [opgeslagen zoekopdracht](#editing-saved-searches)te wijzigen.
+De slimme inzamelingen worden gebouwd door een onderzoek te bewaren zodat kunt u hun inhoud veranderen door de onderzoeksparameters van het [bewaarde onderzoek](#saved-searches)te wijzigen.
 
-1. Tik in de gebruikersinterface Middelen op het zoekpictogram op de werkbalk of klik erop.
+1. In het gebruikersinterface van Activa, tik/klik het onderzoekspictogram van de toolbar.
 
    ![chlimage_1-9](assets/chlimage_1-110.png)
 
-1. Met de curseur in het vakje van het Onderzoek, duw op de sleutel van de Terugkeer.
+1. Met de curseur in de doos van het Onderzoek, druk de sleutel van de Terugkeer.
 1. Tik/klik op het pictogram GlobalNav om het deelvenster Filters weer te geven.
-1. Selecteer in de lijst **[!UICONTROL Opgeslagen zoekopdrachten]** de slimme verzameling die u wilt wijzigen. In het deelvenster Zoeken worden de filters weergegeven die zijn geconfigureerd voor de opgeslagen zoekopdracht.
+1. Van de **[!UICONTROL Bewaarde lijst van Onderzoek]** , selecteer de slimme inzameling u wilt wijzigen. Het paneel van het Onderzoek toont de filters die voor het bewaarde onderzoek worden gevormd.
 
    ![select_smart_collection](assets/select_smart_collection.png)
 
-1. Selecteer **[!UICONTROL Bestanden]** in de lijst **[!UICONTROL Bestanden en mappen]**.
-1. Wijzig desgewenst een of meer filters. Tik/klik op Slimme verzameling **** bewerken.
+1. Van de lijst van **[!UICONTROL Dossiers &amp; van Omslagen]** , uitgezochte **[!UICONTROL Dossiers]**.
+1. Wijzig zonodig één of meerdere filters. Het lusje/de klik **[!UICONTROL geeft Slimme Inzameling]** uit.
 
-   U kunt ook de naam van de slimme verzameling bewerken.
+   U kunt de naam van de slimme inzameling ook uitgeven.
 
-   ![edit_smart_collectiondialog](assets/edit_smart_collectiondialog.png)
+   ![bewerkings_smart_collectiondialogue](assets/edit_smart_collectiondialog.png)
 
-1. Tik/klik op **[!UICONTROL Opslaan]**. Het dialoogvenster Slimme verzameling **** bewerken wordt geopend.
-1. Tik/klik op **[!UICONTROL Overschrijven]** om de originele slimme verzameling te vervangen door de bewerkte verzameling. Of selecteer **[!UICONTROL Opslaan als]** om de bewerkte verzameling afzonderlijk op te slaan.
-1. Tik in het bevestigingsvenster op **[!UICONTROL Opslaan]** of klik op Opslaan om het proces te voltooien.
+1. Tik/klik op **[!UICONTROL Opslaan]**. De **[!UICONTROL Edit Slimme dialoog van de Inzameling]** verschijnt.
+1. Tik/klik op **[!UICONTROL Overschrijven]** om de oorspronkelijke slimme verzameling te vervangen door de bewerkte verzameling. Alternatief, selecteer **[!UICONTROL sparen als]** om de uitgegeven inzameling afzonderlijk te bewaren.
+1. Tik in het bevestigingsvenster op/klik op **[!UICONTROL Opslaan]** om het proces te voltooien.
 
-## Metagegevens van verzamelingen weergeven en bewerken {#viewing-and-editing-collection-metadata}
+## De mening en geeft inzamelingsmeta-gegevens uit {#viewing-and-editing-collection-metadata}
 
 De meta-gegevens van de inzameling omvat gegevens over de inzameling, met inbegrip van om het even welke markeringen die worden toegevoegd.
 
-1. Selecteer een verzameling in de verzamelingsconsole en tik op het pictogram **[!UICONTROL Eigenschappen]** op de werkbalk.
-1. Op de pagina Metagegevens **[!UICONTROL van de]** Inzameling, bekijk de inzamelingsmeta-gegevens van de **[!UICONTROL Basis]** en de **[!UICONTROL Geavanceerde]** lusjes.
-1. Wijzig desgewenst de metagegevens en tik/klik op **[!UICONTROL Opslaan en sluiten]** op de werkbalk om de wijzigingen op te slaan.
+1. Van de console van Inzamelingen, selecteer een inzameling en tik/klik het pictogram van **[!UICONTROL Eigenschappen]** van de toolbar.
+1. In de pagina van de Meta-gegevens **[!UICONTROL van de]** Inzameling, bekijk de inzamelingsmeta-gegevens van de **[!UICONTROL Basis]** en **[!UICONTROL Geavanceerde]** lusjes.
+1. Wijzig de meta-gegevens, zonodig, en tik/klik dan **[!UICONTROL sparen &amp; sluit]** van de toolbar om de veranderingen te bewaren.
 
-## Metagegevens van meerdere verzamelingen bulksgewijs bewerken {#editing-collection-metadata-in-bulk}
+## Geef meta-gegevens van veelvoudige inzamelingen in bulk uit {#editing-collection-metadata-in-bulk}
 
-U kunt de metagegevens van meerdere verzamelingen tegelijk bewerken. Deze functionaliteit helpt u snel gemeenschappelijke meta-gegevens in veelvoudige inzamelingen te herhalen.
+U kunt de meta-gegevens van veelvoudige inzamelingen gelijktijdig uitgeven. Deze functionaliteit helpt u snel gemeenschappelijke meta-gegevens in veelvoudige inzamelingen herhalen.
 
-1. Selecteer twee of meer verzamelingen waarvoor u metagegevens wilt bewerken in de console Verzamelingen.
-1. Tik op of klik op het pictogram **[!UICONTROL Eigenschappen]** op de werkbalk.
-1. Bewerk desgewenst de metagegevens op de pagina Metagegevens **** verzameling onder de tabbladen **[!UICONTROL Standaard]** en **[!UICONTROL Geavanceerd]** .
-1. Als u de eigenschappen van metagegevens voor een specifieke verzameling wilt weergeven, schakelt u de overige verzamelingen in de lijst met verzamelingen uit. De gebieden van de meta-gegevensredacteur zijn bevolkt met de meta-gegevens voor de bepaalde inzameling.
+1. In de console van Inzamelingen, selecteer twee of meer inzamelingen waarvoor u meta-gegevens wilt uitgeven.
+1. Tik op/klik op het pictogram **[!UICONTROL Eigenschappen]** op de werkbalk.
+1. In de pagina van de Meta-gegevens **[!UICONTROL van de]** Inzameling, geef de meta-gegevens onder de **[!UICONTROL Basis]** en **[!UICONTROL Geavanceerde]** lusjes, zonodig uit.
+1. Om de meta-gegevenseigenschappen voor een specifieke inzameling te bekijken, schrap de resterende inzamelingen in de inzamelingslijst. De gebieden van de meta-gegevensredacteur zijn bevolkt met de meta-gegevens voor de bepaalde inzameling.
 
    >[!NOTE]
    >
-   >* Op de pagina met eigenschappen van verzamelingen kunt u verzamelingen verwijderen uit de lijst met verzamelingen door ze te deselecteren. Alle verzamelingen zijn standaard geselecteerd in de lijst met verzamelingen. De metagegevens voor verzamelingen die u verwijdert, worden niet bijgewerkt.
-   >* Selecteer boven aan de lijst het selectievakje bij **[!UICONTROL Titel]** om te schakelen tussen het selecteren van de verzamelingen en het wissen van de lijst.
+   >* In de pagina van inzamelingseigenschappen, kunt u inzamelingen uit de lijst van inzamelingen verwijderen door hen te schrappen. De inzamelingslijst heeft alle inzamelingen die door gebrek worden geselecteerd. De meta-gegevens voor inzamelingen die u verwijdert wordt niet bijgewerkt.
+   >* Bij de bovenkant van de lijst, selecteer de controledoos dichtbij **[!UICONTROL Titel]** om tussen het selecteren van de inzamelingen van een knevel te voorzien en de lijst te ontruimen.
 
 
 1. Tik/klik op **[!UICONTROL Opslaan en sluiten]** op de werkbalk en sluit het bevestigingsvenster om het proces te voltooien.
-1. Als u de nieuwe metagegevens wilt toevoegen aan de bestaande metagegevens, selecteert u de modus **** Toevoegen. Als u deze optie niet selecteert, worden de bestaande metagegevens in de velden vervangen door de nieuwe metagegevens. Tik/klik op **[!UICONTROL Verzenden]**.
+1. Om de nieuwe meta-gegevens met de bestaande meta-gegevens toe te voegen, selecteer **[!UICONTROL voeg wijze]** toe. Als u deze optie niet selecteert, vervangt de nieuwe meta-gegevens de bestaande meta-gegevens op de gebieden. Tik/klik op **[!UICONTROL Indienen]**.
 
    >[!NOTE]
    >
-   >De metagegevens die u voor de geselecteerde verzamelingen toevoegt, overschrijven de vorige metagegevens voor deze verzamelingen. Met de modus  Toevoegen kunt u nieuwe waarden toevoegen aan de bestaande metagegevens in de velden die meerdere waarden kunnen bevatten. Velden met één waarde worden altijd overschreven. Alle tags die u toevoegt in het veld [!UICONTROL Codes] , worden toegevoegd aan de bestaande lijst met tags in de metagegevens.
+   >De meta-gegevens u voor de geselecteerde inzamelingen toevoegt beschrijft de vorige meta-gegevens voor deze inzamelingen. Gebruik de [!UICONTROL Add wijze] om nieuwe waarden aan de bestaande meta-gegevens op de gebieden toe te voegen die veelvoudige waarden kunnen bevatten. De gebieden van de enig-waarde worden altijd beschreven. Om het even welke markeringen u op het gebied van [!UICONTROL Markeringen] toevoegt, worden toegevoegd aan de bestaande lijst van markeringen in de meta-gegevens.
 
-Gebruik de Schema-editor om de pagina [!UICONTROL Eigenschappen] van metagegevens aan te passen, inclusief eigenschappen van metagegevens toevoegen, wijzigen of verwijderen.
+Om de pagina van meta-gegevens aan te passen [!UICONTROL Eigenschappen] , met inbegrip van het toevoegen van, het wijzigen van, het schrappen van meta-gegevenseigenschappen, gebruik de redacteur van het Schema.
 
 >[!TIP]
 >
->De bulkbewerkingsmethode werkt voor elementen die beschikbaar zijn in een verzameling. Voor de elementen die beschikbaar zijn in verschillende mappen of die voldoen aan een algemeen criterium, is het mogelijk om de metagegevens na het zoeken [in grote](/help/assets/search-assets.md#metadataupdates)hoeveelheden bij te werken.
+>De bulk het uitgeven methode werkt voor activa beschikbaar in een inzameling. Voor de activa die over omslagen beschikbaar zijn of een gemeenschappelijke criteria aanpassen, is het mogelijk om de meta-gegevens in [bulk bij te werken na het zoeken](/help/assets/search-assets.md#metadataupdates).
 
-## Verzamelingen zoeken {#searching-collections}
+## Zoekverzamelingen {#searching-collections}
 
-U kunt inzamelingen van de console van Inzamelingen zoeken. Wanneer u met trefwoorden in het vak Zoeken zoekt, zoekt AEM-middelen naar verzamelingsnamen, metagegevens en de tags die aan de verzamelingen zijn toegevoegd.
+U kunt inzamelingen van de console van Inzamelingen zoeken. Wanneer u met sleutelwoorden in het vakje van het Onderzoek zoekt, zoekt de Activa AEM naar inzamelingsnamen, meta-gegevens, en de markeringen die aan de inzamelingen worden toegevoegd.
 
-Als u zoekt naar verzamelingen op het hoogste niveau, worden alleen afzonderlijke verzamelingen geretourneerd in zoekresultaten. Elementen of mappen in de verzamelingen zijn uitgesloten. In alle andere gevallen (bijvoorbeeld in een afzonderlijke verzameling of in een mappenhiërarchie) worden alle relevante elementen, mappen en verzamelingen geretourneerd.
+Als u naar inzamelingen van het hoogste niveau zoekt, slechts zijn de individuele inzamelingen teruggekeerd in onderzoeksresultaten. De activa of de omslagen binnen de inzamelingen worden uitgesloten. In alle andere gevallen (bijvoorbeeld, binnen een individuele inzameling of in een omslaghiërarchie), zijn alle relevante activa, omslagen, en inzamelingen teruggekeerd.
 
 ## Zoeken in verzamelingen {#searching-within-collections}
 
-Tik of klik op een verzameling in de verzamelingsconsole om deze te openen.
+In de console van Inzamelingen, tik/klik een inzameling om het te openen.
 
-In een verzameling is het zoeken naar AEM-middelen beperkt tot elementen (en de bijbehorende tags en metagegevens) in de verzameling die u bekijkt. Wanneer u in een map zoekt, worden alle overeenkomende elementen en onderliggende mappen in de huidige map geretourneerd. Wanneer u in een verzameling zoekt, worden alleen overeenkomende elementen, mappen en andere verzamelingen geretourneerd die directe leden van de verzameling zijn.
+Binnen een inzameling, is het onderzoek van Activa AEM beperkt tot activa (en hun markeringen en meta-gegevens) binnen de inzameling die u bekijkt. Wanneer u binnen een omslag zoekt, zijn alle passende activa en kindomslagen binnen de huidige omslag teruggekeerd. Wanneer u binnen een inzameling zoekt, slechts zijn de passende activa, de omslagen, en andere inzamelingen die directe leden van de inzameling zijn teruggekeerd.
 
-## Verzamelingsinstellingen bewerken {#editing-collection-settings}
+## Verzamelinstellingen bewerken {#editing-collection-settings}
 
-U kunt verzamelingsinstellingen bewerken, zoals titel en beschrijving, of leden toevoegen aan een verzameling.
+U kunt inzamelingsmontages, zoals titel en beschrijving uitgeven, of leden toevoegen aan een inzameling.
 
-1. Selecteer een verzameling en tik op het pictogram **[!UICONTROL Instellingen]** op de werkbalk. U kunt ook de snelle actie **[!UICONTROL Instellingen]** van de miniatuur van de verzameling gebruiken.
-1. Wijzig de verzamelingsinstellingen op de pagina **[!UICONTROL Verzamelingsinstellingen]** . U kunt bijvoorbeeld de titel van de verzameling, beschrijvingen, leden en machtigingen wijzigen zoals beschreven in [Verzamelingen](#creating-a-collection)toevoegen.
+1. Selecteer een inzameling, en tik/klik het pictogram van **[!UICONTROL Montages]** in de toolbar. Alternatief, gebruik de snelle actie van **[!UICONTROL Montages]** van de inzamelingsduimnagel.
+1. Wijzig de inzamelingsmontages in de pagina van de Montages **[!UICONTROL van de]** Inzameling. Bijvoorbeeld, wijzig de inzamelingstitel, beschrijvingen, leden, en toestemmingen zoals die in het [Toevoegen van Inzamelingen](#creating-a-collection)worden besproken.
 
-1. Tik op of klik op **[!UICONTROL Opslaan]** om de wijzigingen op te slaan.
+1. Om de veranderingen te bewaren, tik/klik **[!UICONTROL sparen]**.
 
 ## Een verzameling verwijderen {#deleting-a-collection}
 
-1. Selecteer een of meer verzamelingen in de console Verzamelingen en tik op het pictogram Verwijderen op de werkbalk.
+1. Van de console van Inzamelingen, selecteer één of meerdere inzamelingen en tik/klik het schrappingspictogram in de toolbar.
 
    ![chlimage_1-11](assets/chlimage_1-177.png)
 
-1. Tik/klik in het dialoogvenster op **[!UICONTROL Verwijderen]** om de verwijderactie te bevestigen.
+1. Tik in het dialoogvenster op/klik op **[!UICONTROL Verwijderen]** om de verwijderactie te bevestigen.
 
    >[!NOTE]
    >
-   >U kunt slimme verzamelingen ook verwijderen door opgeslagen zoekopdrachten [te verwijderen](#deleting-saved-searches).
+   >U kunt slimme inzamelingen ook schrappen door bewaarde onderzoeken [te](#saved-searches)schrappen.
 
-## Een verzameling downloaden {#downloading-a-collection}
+## Download een inzameling {#downloading-a-collection}
 
-Wanneer u een verzameling downloadt, wordt de volledige hiërarchie van elementen in de verzameling gedownload, inclusief mappen en onderliggende verzamelingen.
+Wanneer u een inzameling downloadt, wordt de volledige hiërarchie van activa binnen de inzameling gedownload, met inbegrip van omslagen en kindinzamelingen.
 
-1. Selecteer een of meer verzamelingen die u wilt downloaden in de console Verzamelingen.
-1. Tik op of klik op het downloadpictogram op de werkbalk.
-1. Tik/klik op **[!UICONTROL Downloaden]** in het dialoogvenster **[!UICONTROL Downloaden]**. Selecteer **[!UICONTROL Uitvoeringen]** als u de uitvoeringen van de elementen in de verzameling wilt downloaden. Selecteer de optie **[!UICONTROL E-mail]** om een e-mailbericht naar de eigenaar van de verzameling te verzenden.
+1. Van de console van Inzamelingen, selecteer één of meerdere inzamelingen om te downloaden.
+1. Tik op/klik op het downloadpictogram op de werkbalk.
+1. In de **[!UICONTROL dialoog van de Download]** , tik/klik **[!UICONTROL Download]**. Als u de rendities van de activa binnen de inzameling wilt downloaden, uitgezochte **[!UICONTROL Rendities]**. Selecteer de optie **[!UICONTROL E-mail]** om een e-mailbericht naar de eigenaar van de inzameling te verzenden.
 
-   Wanneer u een verzameling selecteert die u wilt downloaden, wordt de volledige maphiërarchie onder de verzameling gedownload. Als u elke verzameling die u downloadt (inclusief elementen in onderliggende verzamelingen die onder de bovenliggende verzameling zijn genest), wilt opnemen in een afzonderlijke map, selecteert u **[!UICONTROL Een aparte map maken voor elk element]**.
+   Wanneer u een te downloaden inzameling selecteert, wordt de volledige omslaghiërarchie onder de inzameling gedownload. Om elke inzameling te omvatten u downloadt (met inbegrip van activa in kindinzamelingen die onder de ouderinzameling worden genesteld) in een individuele omslag, uitgezocht **[!UICONTROL creeer afzonderlijke omslag voor elke activa]**.
 
 ## Geneste verzamelingen maken {#creating-nested-collections}
 
-U kunt een verzameling toevoegen aan een andere verzameling en zo een geneste verzameling maken.
+U kunt een inzameling aan een andere inzameling toevoegen, daardoor creërend een genestelde inzameling.
 
-1. Selecteer in de verzamelingsconsole de gewenste verzameling of groep verzamelingen en tik of klik op **[!UICONTROL Naar verzameling]** op de werkbalk.
+1. Van de console van Inzamelingen, selecteer de gewenste inzameling of de groep inzamelingen, en tik of klik **[!UICONTROL aan Inzameling]** in de toolbar.
 
-1. Selecteer op de pagina **[!UICONTROL Toevoegen aan verzameling]** de verzameling waarin u de verzameling wilt toevoegen.
+1. Van **[!UICONTROL Add aan de pagina van de Inzameling]** , selecteer de inzameling waarin om de inzameling toe te voegen.
 
    >[!NOTE]
    >
-   >De laatst bijgewerkte verzameling is standaard geselecteerd in de pagina **[!UICONTROL Toevoegen aan verzameling]** .
+   >De onlangs bijgewerkte inzameling wordt geselecteerd door gebrek in **[!UICONTROL Add aan de pagina van de Inzameling]** .
 
 1. Tik/klik op **[!UICONTROL Toevoegen]**. Een bericht bevestigt dat de inzameling aan de doelinzameling in de **[!UICONTROL Uitgezochte pagina van de Bestemming]** wordt toegevoegd. Sluit het bericht om het proces te voltooien.
 
 >[!NOTE]
 >
->Slimme verzamelingen kunnen niet worden genest. Met andere woorden, slimme verzamelingen kunnen geen andere verzameling bevatten.
+>De slimme inzamelingen kunnen niet worden genesteld. Met andere woorden, kunnen de Slimme inzamelingen geen andere inzameling bevatten.
 
 ## Opgeslagen zoekopdrachten {#saved-searches}
 
-In de gebruikersinterface Elementen kunt u op basis van bepaalde regels, zoekcriteria of aangepaste zoekfacetten zoeken of filteren. Als u deze opslaat als **[!UICONTROL Opgeslagen zoekopdrachten]**, kunt u ze later openen via de lijst **[!UICONTROL Opgeslagen zoekopdrachten]** in het deelvenster Filter. Als u een opgeslagen zoekopdracht maakt, maakt u ook een slimme verzameling.
+In het gebruikersinterface van Activa, kunt u activa zoeken of filtreren die op bepaalde regels, onderzoekscriteria, of de facetten van het douaneonderzoek worden gebaseerd. Als u deze opslaat als **[!UICONTROL Opgeslagen zoekopdrachten]**, kunt u deze later openen vanuit de lijst **[!UICONTROL Opgeslagen zoekopdrachten]** in het deelvenster Filter. Het creëren van een bewaard onderzoek leidt ook tot een slimme inzameling.
 
-![saved_search_list](assets/saved_searches_list.png)
+![opgeslagen_zoekopdrachten_lijst](assets/saved_searches_list.png)
 
-Opgeslagen zoekopdrachten worden gemaakt wanneer u een slimme verzameling maakt. Slimme verzamelingen worden automatisch toegevoegd aan de lijst **[!UICONTROL Opgeslagen zoekopdrachten]** . De opgeslagen vraag van Zoekopdrachten voor de inzameling wordt bewaard in het `dam:query` bezit in CRXDE bij de relatieve plaats `/content/dam/collections/`.
+De bewaarde onderzoeken worden gecreeerd wanneer u een slimme inzameling creeert. De slimme inzamelingen worden automatisch toegevoegd aan de **[!UICONTROL Bewaarde lijst van Onderzoek]** . De opgeslagen vraag van Onderzoek voor de inzameling wordt opgeslagen in het `dam:query` bezit in CRXDE bij de relatieve plaats `/content/dam/collections/`.
 
 >[!NOTE]
 >
->U kunt slimme verzamelingen op dezelfde manier delen als statische verzamelingen.
+>U kunt slimme inzamelingen op de zelfde manier delen aangezien u statische inzamelingen deelt.
 
-Opgeslagen zoekopdrachten bewerken is hetzelfde als slimme verzamelingen bewerken. Zie Een slimme verzameling [](#editing-a-smart-collection)bewerken voor meer informatie.
+Het uitgeven van bewaarde onderzoeken is het zelfde als het uitgeven van slimme inzamelingen. Voor details, zie een slimme inzameling [](#editing-a-smart-collection)uitgeven.
 
-Voer de volgende stappen uit om opgeslagen zoekopdrachten te verwijderen:
+Om bewaarde onderzoeken te schrappen, volg deze stappen:
 
-1. Tik in de gebruikersinterface Middelen op het zoekpictogram op de werkbalk of klik erop.
+1. In het gebruikersinterface van Activa, tik/klik het onderzoekspictogram van de toolbar.
 
    ![chlimage_1-13](assets/chlimage_1-114.png)
 
-1. Met de curseur op het gebied van Onderzoek, duw op de Enter sleutel.
+1. Met de curseur op het gebied van het Onderzoek, druk de Enter sleutel.
 
-1. Klik of tik op het GlobalNav-pictogram om het deelvenster Filters weer te geven.
+1. Klik of tik op het pictogram GlobalNav om het deelvenster Filters weer te geven.
 
-1. Tik in de lijst **[!UICONTROL Opgeslagen zoekopdrachten]** op **[!UICONTROL Verwijderen]** of klik op Verwijderen naast de slimme verzameling die u wilt verwijderen.
+1. Van de **[!UICONTROL Opgeslagen lijst van Zoekopdrachten]** , tik/klik **[!UICONTROL Schrapping]** naast de slimme inzameling die u wilt schrappen.
 
    ![select_smart_collection-1](assets/select_smart_collection-1.png)
 
-1. Tik in het dialoogvenster of klik op **[!UICONTROL Verwijderen]** om de opgeslagen zoekopdracht te verwijderen.
+1. Tik in het dialoogvenster op/klik op **[!UICONTROL Verwijderen]** om de opgeslagen zoekopdracht te verwijderen.
 
-## Een workflow op een verzameling uitvoeren {#running-a-workflow-on-a-collection}
+## Voer een werkschema op een inzameling uit {#running-a-workflow-on-a-collection}
 
-U kunt een workflow voor de elementen in een verzameling uitvoeren. Als de verzameling geneste verzamelingen bevat, wordt de workflow ook uitgevoerd op de elementen in de geneste verzamelingen. Als de verzameling en de geneste verzameling echter dubbele elementen bevatten, wordt de workflow slechts eenmaal uitgevoerd voor dergelijke elementen.
+U kunt een werkschema voor de activa binnen een inzameling in werking stellen. Als de inzameling genestelde inzamelingen bevat, loopt het werkschema ook op de activa binnen de genestelde inzamelingen. Nochtans, als de inzameling en de genestelde inzameling dubbele activa bevatten, loopt het werkschema slechts eenmaal voor dergelijke activa.
 
-1. Selecteer in de console Verzamelingen een verzameling waarop u een workflow wilt uitvoeren.
-1. Tik/klik op het pictogram GlobalNav en kies **[!UICONTROL Tijdlijn]** in de lijst.
-1. Klik of tik vanaf de tijdlijn op het pictogram Caret onderaan en tik op Workflow **** starten.
+1. Van de console van Inzamelingen, selecteer een inzameling waarop u een werkschema wilt in werking stellen.
+1. Tik/klik het pictogram GlobalNav, en kies **[!UICONTROL Chronologie]** van de lijst.
+1. Van de chronologie, klik of tik het pictogram van het Gebied bij de bodem, en dan tik/klik de Werkschema **[!UICONTROL van het]** Begin.
 
    ![chlimage_1-14](assets/chlimage_1-137.png)
 
-1. Selecteer in de sectie **[!UICONTROL Workflow]** starten een workflowmodel in de lijst. Selecteer bijvoorbeeld het model **[!UICONTROL DAM Update Asset]** .
-1. Voer een titel in voor de workflow en tik op **[!UICONTROL Start]**/klik op Start.
-1. Tik/klik op **[!UICONTROL Doorgaan in het dialoogvenster]**. De workflow wordt uitgevoerd op alle elementen in de verzameling.
+1. In de sectie van het Werkschema **[!UICONTROL van het]** Begin, selecteer een werkschemamodel van de lijst. Bijvoorbeeld, selecteer het model van de Activa **[!UICONTROL van de Update van]** DAM.
+1. Voer een titel in voor de workflow en tik op/klik op **[!UICONTROL Start]**.
+1. Tik in het dialoogvenster op/klik op **[!UICONTROL Doorgaan]**. De werkschemalooppas op alle activa in de inzameling.
 
 >[!MORELIKETHIS]
 >
->* [E-mailmeldingen voor Experience Manager configureren](/help/sites-administering/notification.md#assetsconfig)
->* [Een revisietaak maken voor verzamelingen](bulk-approval.md)
+>* [E-mailberichten van Experience Manager configureren](/help/sites-administering/notification.md#assetsconfig)
+>* [Creeer een overzichtstaak voor Inzamelingen](bulk-approval.md)
 

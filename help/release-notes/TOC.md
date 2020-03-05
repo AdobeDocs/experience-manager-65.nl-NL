@@ -4,22 +4,23 @@ product: experience manager
 audience: end-user
 user-guide-title: AEM 6.5 Release Notes
 translation-type: tm+mt
-source-git-commit: b1bcf4ebbb027ace7042a905376f9a9f1906e7d2
+source-git-commit: 8ebe1a2c23ec5e3e16807072ac17ec13a6df9701
 
 ---
 
 
-# Opmerkingen bij de release AEM 6.5 {#release-notes}
+# AEM 6.5 Nota&#39;s van de versie {#release-notes}
 
-+ [Overzicht AEM 6.5](home.md)
-+ [Algemene opmerkingen bij de release](release-notes.md)
-+ Release-aantekeningen bij Service Pack {#service-pack}
-   + [Hotfixes en eigenschapspakketten inbegrepen in het recentste de dienstpak](sp-release-notes.md)
-   + [Hotfixes en eigenschapspakken inbegrepen in vorige de dienstpakken](previous-hotfixes-featurepacks.md)
-+ [Opmerkingen bij de release AEM-sites](sites.md)
-+ [Opmerkingen bij de release AEM Assets](assets.md)
-+ [Opmerkingen bij de release AEM-gemeenschappen](communities-release-notes.md)
-+ [Verouderde en verwijderde functies](deprecated-removed-features.md)
++ [AEM 6.5-overzicht](home.md)
++ [Algemene opmerkingen bij vrijgave](release-notes.md)
++ Opmerkingen bij de release van Service Pack {#service-pack}
+   + [Nieuwe functies - het nieuwste servicepakket](new-features-latest-service-pack.md)
+   + [Hotfixes en de eigenschappakken inbegrepen in het recentste de dienstpak](sp-release-notes.md)
+   + [Hotfixes en de eigenschappakken inbegrepen in vorige de dienstpakken](previous-hotfixes-featurepacks.md)
++ [Opmerkingen over release van AEM-sites](sites.md)
++ [Opmerkingen bij de release van AEM-bedrijfsmiddelen](assets.md)
++ [Opmerkingen bij de publicatie van AEM-Gemeenschappen](communities-release-notes.md)
++ [Afgekeurde en verwijderde functies](deprecated-removed-features.md)
 + [Bekende problemen](known-issues.md)
 + [AEM Foundation en Repository](wcm-platform.md)
-+ [Status van TouchUI-functie](touch-ui-features-status.md)
++ [Aanraakstatus UI-functie](touch-ui-features-status.md)

@@ -3,7 +3,7 @@ title: Gebruik Verbonden Activa om activa DAM in het auteurswerkschema van de Pl
 description: De activa van het gebruik beschikbaar op een verre plaatsing van de Activa van de Manager van de Ervaring van Adobe wanneer het creëren van uw Web-pagina's op een andere plaatsing van de Plaats van de Manager van de Ervaring.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c4e6e74e091fe64b0a936b3f1bf95db7b6185956
+source-git-commit: 04789dc662bc935277f392aefde4146f1a79f747
 
 ---
 
@@ -37,7 +37,7 @@ Alvorens u gebruikt of dit vermogen vormt, verzeker het volgende:
 
 De auteurs kunnen naar beelden en de volgende types van documenten in de Vinder van de Inhoud zoeken en de gezochte activa in de Redacteur van de Pagina gebruiken. De documenten kunnen aan de `Download` component worden toegevoegd en de beelden kunnen aan de `Image` component worden toegevoegd. De auteurs kunnen de verre activa in om het even welke douaneAEM component ook toevoegen die het gebrek `Download` of de `Image` componenten uitbreidt. De lijst van gesteunde formaten is:
 
-* **Afbeeldingsformaten**: De beeldformaten die door de component [van het](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) Beeld worden gesteund worden gesteund door Verbonden Activa. De dynamische Componenten van Media worden niet gesteund.
+* **Afbeeldingsformaten**: De beeldformaten die door de component [van het](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) Beeld worden gesteund worden gesteund door Verbonden Activa. De dynamische beelden van Media worden niet gesteund.
 * **Documentformaten**: Zie [Verbonden activa gesteunde documentformaten](assets-formats.md#supported-document-formats).
 
 ### Gebruikers en betrokken groepen {#users-and-groups-involved}

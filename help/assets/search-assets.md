@@ -1,458 +1,458 @@
 ---
-title: Digitale middelen en afbeeldingen zoeken in AEM
-description: Leer hoe u de vereiste elementen in AEM kunt vinden met het deelvenster Filters en hoe u de elementen gebruikt die in de zoekopdracht worden weergegeven.
+title: Zoek digitale activa en beelden in AEM
+description: Leer hoe te om de vereiste activa in AEM te vinden door het paneel van Filters te gebruiken, en hoe te om de activa te gebruiken die in onderzoek verschijnen.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
+source-git-commit: c491b77dac1bf25b9e348ed12d16ed7894e5493e
 
 ---
 
 
-# Middelen zoeken in AEM {#search-assets-in-aem}
+# Zoekmiddelen in AEM {#search-assets-in-aem}
 
-Adobe Experience Manager (AEM) Assets biedt robuuste methoden voor het detecteren van elementen die u helpen een hogere snelheid van de inhoud te bereiken. Uw teams verkorten tijd aan markt met naadloze, intelligente onderzoekservaring gebruikend out-of-the-box functionaliteit en douanemethodes. Het zoeken naar middelen is van cruciaal belang voor het gebruik van een systeem voor het beheer van digitale activa — of het nu gaat om verder gebruik door creatieve ondernemingen, voor een robuust beheer van activa door zakelijke gebruikers en marketeers, of voor beheer door DAM-beheerders. Eenvoudige, geavanceerde en aangepaste zoekopdrachten die u kunt uitvoeren via de gebruikersinterface van AEM Assets of andere apps en oppervlakken helpen deze gebruiksgevallen te verhelpen.
+De Activa van de Manager van de Ervaring van Adobe (AEM) verstrekt robuuste methodes van de activaontdekking die u helpen hogere inhoudssnelheid bereiken. Uw teams verminderen tijd aan markt met naadloze, intelligente onderzoekservaring gebruikend uit-van-de-doosfunctionaliteit en douanemethodes. Het zoeken naar middelen is van essentieel belang voor het gebruik van een digitaal systeem voor het beheer van activa — of het nu gaat om verder gebruik door creatieven, voor een robuust beheer van activa door zakelijke gebruikers en marketeers, of voor beheer door DAM-beheerders. Eenvoudige, geavanceerde en aangepaste zoekopdrachten die u via de gebruikersinterface van AEM Assets of andere toepassingen en oppervlakken kunt uitvoeren, helpen deze gebruiksgevallen te vervullen.
 
 AEM steunt de volgende gebruiksgevallen en dit artikel beschrijft het gebruik, de concepten, de configuraties, de beperkingen, en het oplossen van problemen voor deze gebruiksgevallen.
 
 | Assets doorzoeken | Configuratie en beheer | Werken met zoekresultaten |
 |---|---|---|
-| [Standaardzoekopdrachten](#searchbasics) | [Zoekindex](#searchindex) | [Resultaten sorteren](#sort) |
-| [Gebruiksinterface voor zoeken begrijpen](#searchui) | [Zoeken op visuele of gelijkenis](#configvisualsearch) | [Eigenschappen en metagegevens van een element controleren](#checkinfo) |
-| [Zoeken in suggesties](#searchsuggestions) | [Verplichte metagegevens](#mandatorymetadata) | [Downloaden](#download) |
-| [Zoekresultaten en gedrag begrijpen](#searchbehavior) | [Zoekfacetten wijzigen](#searchfacets) | [Bulkupdates van metagegevens](#metadataupdates) |
-| [Zoeken in rang en opvoeren](#searchrank) | [Tekst extraheren](#extracttextupload) | [Slimme verzamelingen](#collections) |
-| [Geavanceerd zoeken: filteren en zoekbereik](#scope) | [Aangepaste voorspelling](#custompredicates) | [Onverwachte resultaten begrijpen en problemen oplossen](#troubleshoot-unexpected-search-results-and-issues) |
-| [Zoeken in andere oplossingen en apps](#beyondomnisearch):<ul><li>[Adobe-elementkoppeling](#aal)</li><li>[Brand Portal](#brandportal)</li><li>[AEM-bureaubladtoepassing](#desktopapp)</li><li>[Adobe Stock-afbeeldingen](#adobestock)</li><li>[Dynamische media-elementen](#dynamicmedia)</li></ul> |  |  |
-| [Kiezer/kiezer voor element](#assetselector) |  |  |
+| [Basiszoekopdrachten](#searchbasics) | [Zoekindex](#searchindex) | [Sorteerresultaten](#sort) |
+| [Zoekinterface begrijpen](#searchui) | [Visuele of gelijkenis zoeken](#configvisualsearch) | [De eigenschappen en de meta-gegevens van de controle van activa](#checkinfo) |
+| [Zoeksuggesties](#searchsuggestions) | [Verplichte metagegevens](#mandatorymetadata) | [Downloaden](#download) |
+| [Begrijp onderzoeksresultaten en gedrag](#searchbehavior) | [Zoekfacetten wijzigen](#searchfacets) | [Bulksgewijze metagegevensupdates](#metadataupdates) |
+| [Zoekrang en opvoeren](#searchrank) | [Tekstextractie](#extracttextupload) | [Slimme verzamelingen](#collections) |
+| [Geavanceerd zoeken: filteren en toepassingsgebied van de zoekopdracht](#scope) | [Aangepaste voorspellingen](#custompredicates) | [Begrijp onverwachte resultaten en los problemen op](#troubleshoot-unexpected-search-results-and-issues) |
+| [Zoeken op andere oplossingen en toepassingen](#beyondomnisearch):<ul><li>[Adobe Asset Link](#aal)</li><li>[Merk Portal](#brandportal)</li><li>[AEM-desktop-app](#desktopapp)</li><li>[Adobe Stock-afbeeldingen](#adobestock)</li><li>[Dynamische media-elementen](#dynamicmedia)</li></ul> |  |  |
+| [Selector/kiezer van bedrijfsmiddelen](#assetselector) |  |  |
 | [Beperkingen](#limitations) en [tips](#tips) |  |  |
-| [Illustreerde voorbeelden](#samples) |  |  |
+| [Illustratieve voorbeelden](#samples) |  |  |
 
-Zoeken naar elementen met behulp van het veld Zoeken boven aan de AEM-webinterface. Ga naar **[!UICONTROL Middelen]** > **[!UICONTROL Dossiers]** in AEM, klik onderzoekspictogram in hoogste bar, ga onderzoekssleutelwoord in, en druk terugkeer. U kunt ook de trefwoordsneltoets / (slash) gebruiken om het veld Onderzoek te openen. Locatie:middelen zijn vooraf geselecteerd om de zoekopdrachten te beperken tot DAM-middelen. AEM biedt suggesties als u begint met het typen van een trefwoord voor zoeken.
+Zoek naar activa die het gebied van het Onderzoek bij de bovenkant van de AEM Webinterface gebruiken. Ga naar **[!UICONTROL Activa]** > **[!UICONTROL Dossiers]** in AEM, klik onderzoekspictogram in hoogste bar, ga onderzoekssleutelwoord in, en druk terugkeer. Alternatief, gebruik de sleutelwoordkortere weg/(voorwaartse schuine streep) om het gebied van het Onderzoek te openen. Locatie:de middelen zijn vooraf geselecteerd om de zoekopdrachten te beperken tot DAM-middelen. AEM verstrekt suggesties aangezien uw begin een onderzoekssleutelwoord typt.
 
-Gebruik het deelvenster **[!UICONTROL Filters]** om uw zoekopdracht te beperken door zoekresultaten te filteren op basis van de verschillende opties (voorspelling), zoals bestandstype, bestandsgrootte, datum van laatste wijziging, status van middelen, inzichtsgegevens en Adobe Stock-licenties. Uw beheerders kunnen het deelvenster Filters aanpassen en zoekvoorvertoningen toevoegen of verwijderen met behulp van zoekfacetten.
+Gebruik het paneel van **[!UICONTROL Filters]** om uw onderzoek te versmallen door onderzoeksresultaten te filtreren die op de diverse opties (predikaten) worden gebaseerd, zoals dossiertype, dossiergrootte, laatste gewijzigde datum, status van activa, inzichten gegevens, en het verlenen van vergunningen van de Voorraad van Adobe. Uw beheerders kunnen het paneel van Filters aanpassen en onderzoeksvoorspelling toevoegen of verwijderen gebruikend onderzoeksfacetten.
 
-De zoekfunctie van AEM ondersteunt het zoeken naar verzamelingen en het zoeken naar elementen in een verzameling. Zie [zoekverzamelingen](/help/assets/managing-collections-touch-ui.md).
+De het onderzoekscapaciteit van AEM steunt het zoeken naar inzamelingen en het zoeken naar activa binnen een inzameling. Zie [zoekverzamelingen](/help/assets/managing-collections-touch-ui.md).
 
-## Zoekinterface begrijpen {#searchui}
+## Begrijp onderzoeksinterface {#searchui}
 
-Verken uzelf met de zoekinterface en de beschikbare acties.
+Vertrouwd me met de onderzoeksinterface en de beschikbare acties.
 
-![Werken met delen van de interface voor zoekresultaten van middelen](assets/aem_search_results.png)
+![Het begrip van delen van de interface van de onderzoeksresultaten van Activa](assets/aem_search_results.png)
 
-*Afbeelding: Werken met delen van de interface voor zoekresultaten van middelen*
+*Afbeelding: Het begrip van delen van de interface van de onderzoeksresultaten van Activa*
 
-**** A. Sla de zoekopdracht op als een slimme verzameling. **** B. Filters (voorspellingen) om de zoekresultaten te verfijnen. **C.** Geef bestanden, mappen of beide weer in de zoekresultaten. **** D. Klik op Filters om de linkertrack te openen of te sluiten. **** E. Zoeklocatie is DAM. **** F. Het gebied van het onderzoek met user-provided onderzoekssleutelwoord. **** G. Schakel het selectievakje in om alle zoekresultaten te selecteren. **** H. Aantal weergegeven zoekresultaten van de totale zoekresultaten. ******I. Sluit zoekopdracht** J. Schakel tussen de kaartweergave en de lijstweergave.
+**A.** Sla de zoekopdracht op als een slimme verzameling. **B.** Filters (predicaten) om de zoekresultaten te verfijnen. **C.** Geef bestanden, mappen of beide weer in de zoekresultaten. **D.** Klik op Filters om het linkerspoor te openen of te sluiten. **E.** Zoeklocatie is DAM. **F.** Het gebied van het onderzoek met user-provided onderzoekssleutelwoord. **G.** Schakel het selectievakje in om alle zoekresultaten te selecteren. **H.** Aantal getoonde onderzoeksresultaten uit de totale onderzoeksresultaten. **Ik.** Sluit de zoekopdracht **J.** Schakelaar tussen kaartmening en lijstmening.
 
 ### Dynamische zoekfacetten {#dynamicfacets}
 
-U kunt de gewenste elementen sneller vinden op de pagina met zoekresultaten met behulp van het dynamisch bijgewerkte aantal verwachte zoekresultaten in de zoekfacetten. Het verwachte aantal elementen wordt bijgewerkt, zelfs voordat het zoekfilter wordt toegepast. Door het verwachte aantal op het filter te zien, kunt u snel en efficiënt door de zoekresultaten navigeren. Zie Elementen [zoeken in AEM](search-assets.md)voor meer informatie.
+U kunt de gewenste activa van de pagina van onderzoeksresultaten sneller ontdekken gebruikend het dynamisch bijgewerkte aantal verwachte onderzoeksresultaten in de onderzoeksfacetten. Het verwachte aantal activa wordt bijgewerkt zelfs alvorens de onderzoeksfilter toe te passen. Het zien van de verwachte telling tegen de filter helpt u door de onderzoeksresultaten snel en efficiënt navigeren. Voor meer informatie, zie de activa van het [Onderzoek in AEM](search-assets.md).
 
-![Zie het geschatte aantal elementen zonder de zoekresultaten te filteren in zoekfacetten.](assets/asset_search_results_in_facets_filters.png)
+![Zie het benaderende aantal activa zonder het filtreren onderzoeksresultaten in onderzoeksfacetten.](assets/asset_search_results_in_facets_filters.png)
 
-*Afbeelding:Zie het geschatte aantal elementen zonder de zoekresultaten te filteren in zoekfacetten.*
+*Afbeelding: Zie het benaderende aantal activa zonder het filtreren onderzoeksresultaten in onderzoeksfacetten.*
 
-## Zoekresultaten en gedrag begrijpen {#searchbehavior}
+## Begrijp onderzoeksresultaten en gedrag {#searchbehavior}
 
-### Standaardzoektermen en -resultaten {#searchbasics}
+### Basiszoektermen en resultaten {#searchbasics}
 
-U kunt trefwoordzoekopdrachten uitvoeren vanuit het veld UniverseelZoeken. De trefwoordzoekopdracht is niet hoofdlettergevoelig en bestaat uit een zoekopdracht in volledige tekst (in de veelgebruikte metagegevensvelden). Als er naar meer dan één trefwoord wordt gezocht, is de standaardoperator tussen de trefwoorden `AND` voor standaardzoekopdrachten en is dit `OR` wanneer elementen slimme tags hebben.
+U kunt sleutelwoordonderzoeken van het gebied in werking stellen OmniSearch. Het sleutelwoordonderzoek is niet hoofdlettergevoelig en is een full-text onderzoek (over de populaire meta-gegevensgebieden. Als meer dan één sleutelwoord wordt gezocht naar, is de standaardexploitant tussen de sleutelwoorden `AND` voor standaardonderzoek en het is `OR` wanneer de activa slim geëtiketteerd zijn.
 
-De resultaten worden gesorteerd op relevantie, te beginnen met de dichtstbijzijnde overeenkomsten. Voor meerdere trefwoorden zijn relevantere resultaten de elementen die beide termen in de metagegevens bevatten. Trefwoorden die in de metagegevens voorkomen, krijgen een hogere positie dan trefwoorden die in andere metagegevensvelden worden weergegeven. Met AEM kan een bepaalde zoekterm een hoger gewicht krijgen. Ook is het mogelijk om de positie [van een paar doelactiva voor specifieke zoektermen te](#searchrank) versterken.
+De resultaten worden gesorteerd door relevantie, beginnend met dichtste gelijken. Voor veelvoudige sleutelwoorden, zijn de relevantere resultaten de activa die beide termijnen in hun meta-gegevens bevatten. Binnen meta-gegevens, worden de sleutelwoorden die als slimme markeringen verschijnen hoger gerangschikt dan sleutelwoorden die op andere meta-gegevensgebieden verschijnen. AEM staat het geven van een bepaalde onderzoekstermijn toe hoger gewicht. Ook is het mogelijk om de rang [van een paar doelactiva voor specifieke onderzoekstermijnen te](#searchrank) verhogen.
 
-Om de relevante activa snel te vinden, verstrekt de rijke interface het filtreren, het sorteren, en selectiemechanismen. U kunt resultaten filteren op basis van meerdere criteria en het aantal gezochte elementen voor verschillende filters bekijken. U kunt de zoekopdracht ook opnieuw uitvoeren door de query in het veld Onderzoek te wijzigen. Wanneer u de zoektermen of filters wijzigt, blijven de andere filters van toepassing om de context van de zoekopdracht te behouden.
+Om de relevante activa snel te vinden, verstrekt de rijke interface het filtreren, het sorteren, en selectiemechanismen. U kunt resultaten filtreren die op veelvoudige criteria worden gebaseerd en aantal gezochte activa voor diverse filters zien. Alternatief, kunt u onderzoek opnieuw uitvoeren door de vraag op het gebied van het Onderzoek te veranderen. Wanneer u uw onderzoekstermijnen of filters verandert, blijven de andere filters van toepassing om de context van uw onderzoek te bewaren.
 
-Wanneer de resultaten veel elementen zijn, worden de eerste 100 weergegeven in de kaartweergave en 200 in de lijstweergave. Wanneer gebruikers schuiven, worden meer elementen geladen. Dit is om de prestaties te verbeteren.
+Wanneer de resultaten vele activa zijn, toont AEM eerste 100 in de kaartmening en 200 in de lijstmening. Aangezien de gebruikers scrollen, worden meer activa geladen. Dit is om de prestaties te verbeteren.
 
 >[!VIDEO](https://www.youtube.com/watch?v=LcrGPDLDf4o)
 
-Het kan voorkomen dat de zoekresultaten een aantal onverwachte elementen bevatten. Zie [onverwachte resultaten](#troubleshoot-unexpected-search-results-and-issues)voor meer informatie.
+Soms, kunt u sommige onverwachte activa in de onderzoeksresultaten zien. Voor meer info, zie [onverwachte resultaten](#troubleshoot-unexpected-search-results-and-issues).
 
-AEM kan vele dossierformaten zoeken en de onderzoeksfilters kunnen worden aangepast aan uw bedrijfsvereisten. Neem contact op met uw beheerder om te weten welke zoekopties beschikbaar worden gesteld voor uw DAM-opslagplaats en welke beperkingen uw account heeft.
+AEM kan vele dossierformaten zoeken en de onderzoeksfilters kunnen worden aangepast om uw bedrijfsvereisten aan te passen. Neem contact op met uw beheerder om te begrijpen welke zoekopties beschikbaar worden gesteld voor uw DAM-opslagplaats en welke beperkingen uw account heeft.
 
-### Resultaten met en zonder verbeterde slimme tags {#withsmarttags}
+### Resultaten met en zonder Verbeterde Slimme Markeringen {#withsmarttags}
 
-Standaard combineert AEM-zoekopdrachten de zoektermen met een AND-component. Kijk bijvoorbeeld eens naar het doorzoeken van trefwoordenvrouwen. In de zoekresultaten worden standaard alleen de elementen weergegeven met trefwoorden voor vrouwen en het gebruik van trefwoorden in de metagegevens. Hetzelfde gedrag blijft behouden wanneer speciale tekens (punten, onderstrepingstekens of streepjes) bij de trefwoorden worden gebruikt. De volgende zoekopdrachten retourneren dezelfde resultaten:
+Door gebrek, combineert het onderzoek AEM de onderzoekstermijnen met een EN clausule. Bijvoorbeeld, denk na zoekend naar sleutelwoordvrouw lopend. Slechts verschijnen de activa met zowel vrouw als lopende sleutelwoorden in de meta-gegevens in de onderzoeksresultaten door gebrek. Het zelfde gedrag wordt behouden wanneer de speciale karakters (periodes, onderstreept, of streepjes) met de sleutelwoorden worden gebruikt. De volgende onderzoeksvragen keren de zelfde resultaten terug:
 
 * `woman running`
 * `woman.running`
 * `woman-running`
 
-De query `woman -running` retourneert echter elementen zonder `running` de metagegevens.
-Als u slimme tags gebruikt, voegt u een extra `OR` component toe om een zoekterm te zoeken als de toegepaste slimme tags. Een element dat is gelabeld met slimme tags `woman` of dat slimme tags `running` gebruikt, wordt ook weergegeven in een dergelijke zoekopdracht. De zoekresultaten zijn dus een combinatie van:
+Nochtans, `woman -running` keert de vraag activa zonder `running` in hun meta-gegevens terug.
+Het gebruiken van slimme markeringen voegt een extra `OR` clausule toe om het even welke onderzoekstermijnen als toegepaste slimme markeringen te vinden. Een activa die met of `woman` of of het gebruiken van Slimme Markeringen wordt geëtiketteerd `running` verschijnen ook in zulk een onderzoeksvraag die. De zoekresultaten zijn dus een combinatie van:
 
-* Elementen met `woman` `running` en trefwoorden in de metagegevens (standaardgedrag).
+* De activa met `woman` en de `running` sleutelwoorden in de meta-gegevens (standaardgedrag).
 
-* Elementen die zijn gelabeld met een van de trefwoorden (gedrag Slimme tags).
+* Slimme activa die met één van beiden van de sleutelwoorden worden geëtiketteerd (het Slimme gedrag van Markeringen).
 
-### Suggesties zoeken terwijl u typt {#searchsuggestions}
+### Zoeksuggesties bij het typen {#searchsuggestions}
 
-Wanneer u trefwoorden begint te typen, stelt AEM de mogelijke zoektrefwoorden of -woordgroepen voor. De suggesties zijn gebaseerd op de metagegevens van de bestaande elementen. AEM indexeert alle meta-gegevensgebieden om met onderzoek te helpen. Voor zoeksuggesties gebruikt het systeem de waarden van de volgende paar metagegevensvelden. Als u zoeksuggesties wilt doen, kunt u de volgende velden vullen met de juiste trefwoorden:
+Wanneer u sleutelwoorden begint te typen, stelt AEM de mogelijke onderzoekssleutelwoorden of de uitdrukkingen voor. De suggesties zijn gebaseerd op de meta-gegevens van de bestaande activa. AEM indexeert alle meta-gegevensgebieden om met onderzoek te helpen. Om onderzoekssuggesties te verstrekken, gebruikt het systeem de waarden van de volgende weinig meta-gegevensgebieden. Om onderzoekssuggesties te verstrekken, overweeg bevolkend de volgende gebieden met aangewezen sleutelwoorden:
 
-* Elementlabels. (afbeeldingen naar `jcr:content/metadata/cq:tags`)
-* Titel van element. (afbeeldingen naar `jcr:content/metadata/dc:title`)
-* Beschrijving van element. (afbeeldingen naar `jcr:content/metadata/dc:description`)
-* Titel in de gegevensopslagruimte van het JCR. De waarde wordt mogelijk toegewezen aan de titel van het element. (afbeeldingen naar `jcr:content/jcr:title`)
-* Beschrijving in de gegevensopslagruimte van de JCR. De waarde wordt mogelijk toegewezen aan de beschrijving van het element. (afbeeldingen naar `jcr:content/jcr:description`)
+* Asset-tags. (kaarten naar `jcr:content/metadata/cq:tags`)
+* Benaming van activa. (kaarten naar `jcr:content/metadata/dc:title`)
+* Beschrijving van de activa. (kaarten naar `jcr:content/metadata/dc:description`)
+* Titel in de JCR-databank. De waarde kan aan de titel van Activa in kaart worden gebracht. (kaarten naar `jcr:content/jcr:title`)
+* Beschrijving in de JCR-databank. De waarde kan aan de beschrijving van Activa in kaart worden gebracht. (kaarten naar `jcr:content/jcr:description`)
 
-Als u suggesties voor meerdere zoektrefwoorden wilt ontvangen, blijft u alle trefwoorden typen zonder een suggestie voor één trefwoord te selecteren.
+Om suggesties voor meer dan één onderzoekssleutelwoorden te ontvangen, blijf alle sleutelwoorden typen zonder enige suggestie voor één enkel sleutelwoord te selecteren.
 
-![Typ meerdere trefwoorden om suggesties weer te geven die in alle trefwoorden passen](assets/search_suggestionsmanykeywords.gif)
+![Typ veelvoudige sleutelwoorden om suggesties te bekijken die hen allen passen](assets/search_suggestionsmanykeywords.gif)
 
-*Afbeelding: Typ meerdere trefwoorden om suggesties weer te geven die in alle trefwoorden passen*
+*Afbeelding: Typ veelvoudige sleutelwoorden om suggesties te bekijken die hen allen passen*
 
-### Rangschikking en boosting zoeken {#searchrank}
+### Rangschikking en boeking zoeken {#searchrank}
 
-De zoekresultaten die overeenkomen met alle zoektermen in metagegevensvelden worden eerst weergegeven, gevolgd door de zoekresultaten die overeenkomen met een van de zoektermen in de slimme tags. In het bovenstaande voorbeeld is de weergavevolgorde van zoekresultaten bij benadering:
+De onderzoeksresultaten die alle onderzoekstermijnen op meta-gegevensgebieden aanpassen worden eerst getoond, gevolgd door de onderzoeksresultaten die om het even welke onderzoekstermijnen in de slimme markeringen aanpassen. In het bovenstaande voorbeeld, is de benaderende orde van vertoning van onderzoeksresultaten:
 
-1. Komt overeen met `woman running` de waarden in de verschillende metagegevensvelden.
-1. Komt overeen met `woman running` in slimme tags.
-1. Komt overeen met `woman` of van `running` in slimme tags.
+1. De gelijken van `woman running` op de diverse meta-gegevensgebieden.
+1. Overeenkomsten van `woman running` in slimme tags.
+1. Matches van `woman` of van `running` in slimme tags.
 
-U kunt de relevantie van trefwoorden voor bepaalde elementen verbeteren om zoekopdrachten op basis van trefwoorden te stimuleren. Met andere woorden, de afbeeldingen waarvoor u specifieke trefwoorden promoot, worden boven aan de zoekresultaten weergegeven wanneer u op basis van deze trefwoorden zoekt.
+U kunt de relevantie van sleutelwoorden voor bepaalde activa verbeteren helpen onderzoeken opvoeren die op de sleutelwoorden worden gebaseerd. Met andere woorden, de beelden waarvoor u specifieke sleutelwoorden bevordert verschijnen bij de bovenkant van de onderzoeksresultaten wanneer u die op deze sleutelwoorden zoekt.
 
-1. Open vanuit de gebruikersinterface Elementen de pagina met eigenschappen voor het element. Klik op **[!UICONTROL Geavanceerd]** en klik of tik op **[!UICONTROL Toevoegen]** onder **[!UICONTROL Vergroten voor zoektrefwoorden]**.
-1. Geef in het vak **[!UICONTROL Zoeken bevorderen]** een trefwoord op waarvoor u de zoekactie naar de afbeelding wilt opvoeren en klik op **[!UICONTROL Toevoegen]**. U kunt meerdere trefwoorden op dezelfde manier opgeven.
-1. Klik/tik op **[!UICONTROL Opslaan en sluiten]**. Het element dat u voor dit trefwoord hebt gepromoot, wordt weergegeven in de beste zoekresultaten.
+1. Open vanuit de gebruikersinterface Assets de pagina met eigenschappen voor de asset. Klik op **[!UICONTROL Geavanceerd]** en klik op **[!UICONTROL Toevoegen]** onder **[!UICONTROL Hoogte voor zoektrefwoorden]**.
+1. In het **[!UICONTROL Onderzoek promote]** vakje, specificeer een sleutelwoord waarvoor u het onderzoek naar het beeld wilt opvoeren en dan klikken/de kraan **[!UICONTROL toevoegt]**. U kunt veelvoudige sleutelwoorden op de zelfde manier specificeren.
+1. Klik/tik op **[!UICONTROL Opslaan en sluiten]**. De activa die u voor dit sleutelwoord bevorderde verschijnen onder de hoogste onderzoeksresultaten.
 
-U kunt dit in uw voordeel gebruiken door de positie van bepaalde elementen in de zoekresultaten voor het doeltrefwoord te verhogen. Zie de onderstaande voorbeeldvideo. Zie [Zoeken in AEM](https://helpx.adobe.com/experience-manager/kt/assets/using/search-feature-video-use.html)voor meer informatie.
+U kunt dit aan uw voordeel gebruiken door de rang van sommige activa in de onderzoeksresultaten voor het gerichte sleutelwoord op te voeren. Zie de voorbeeldvideo hieronder. Voor gedetailleerde informatie, zie [onderzoek in AEM](https://helpx.adobe.com/experience-manager/kt/assets/using/search-feature-video-use.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
-*Begrijp hoe de onderzoeksresultaten worden gerangschikt en hoe de rang kan worden beïnvloed.*
+*Begrijp hoe de onderzoeksresultaten gerangschikt zijn en hoe de rang kan worden beïnvloed.*
 
 ## Geavanceerd zoeken {#scope}
 
-AEM biedt verschillende methoden, zoals filters die van toepassing zijn op de gezochte elementen, zodat u de gewenste elementen sneller kunt vinden. Hieronder worden enkele veelgebruikte methoden beschreven. Enkele [geïllustreerde voorbeelden](#samples) worden hieronder gedeeld.
+AEM verstrekt diverse methodes zoals filters die op de bezochte activa van toepassing zijn, om u te helpen van de gewenste activa de plaats bepalen sneller. Hieronder worden enkele algemeen gebruikte methoden beschreven. Enkele [geïllustreerde voorbeelden](#samples) worden hieronder gedeeld.
 
-**Bestanden of mappen** zoeken: Zie bestanden, mappen of beide in de zoekresultaten. In het deelvenster **[!UICONTROL Filters]** kunt u de juiste optie selecteren. Zie [zoekinterface](#searchui).
+**Zoeken naar bestanden of mappen**: In de onderzoeksresultaten, zie of dossiers, omslagen, of allebei. Van het paneel van **[!UICONTROL Filters]** , kunt u de aangewezen optie selecteren. Zie [onderzoeksinterface](#searchui).
 
-**Zoeken naar elementen in een map**: U kunt de zoekopdracht beperken tot een specifieke map. Voeg in het deelvenster **[!UICONTROL Filters]** het pad van een map toe. U kunt slechts één map tegelijk selecteren.
+**Zoeken naar elementen in een map**: U kunt het onderzoek tot een specifieke omslag beperken. In het paneel van **[!UICONTROL Filters]** , voeg weg van een omslag toe. U kunt slechts één omslag tegelijkertijd selecteren.
 
-![Zoekresultaten beperken tot een map door een mappad toe te voegen in het deelvenster Filters](assets/search_folder_select.gif)
+![De onderzoeksresultaten van de grens aan een omslag door een omslagweg in het paneel van Filters toe te voegen](assets/search_folder_select.gif)
 
-*Afbeelding:Zoekresultaten beperken tot een map door een mappad toe te voegen in het deelvenster Filters*
+*Afbeelding: De onderzoeksresultaten van de grens aan een omslag door een omslagweg in het paneel van Filters toe te voegen*
 
 ### Vergelijkbare afbeeldingen zoeken {#visualsearch}
 
-Als u afbeeldingen wilt zoeken die visueel lijken op een door de gebruiker geselecteerde afbeelding, klikt u op Gelijksoortige **** zoeken in de kaartweergave van een afbeelding of op de werkbalk. AEM geeft de slimme getagde afbeeldingen uit de DAM-opslagplaats weer die lijken op een door de gebruiker geselecteerde afbeelding. Zie [hoe u zoeken](#configvisualsearch)op basis van gelijkenis kunt configureren.
+To find images that are visually similar to a user-selected image, click **[!UICONTROL Find Similar]** option from the card view of an image or from the toolbar. AEM geeft de slimme getagde afbeeldingen uit de DAM-opslagplaats weer die lijken op een door de gebruiker geselecteerde afbeelding. Zie [Zoeken naar overeenkomsten configureren](#configvisualsearch).
 
-![Vergelijkbare afbeeldingen zoeken met de optie in de kaartweergave](assets/search_find_similar.png)
+![Vind gelijkaardige beelden gebruikend de optie in de kaartmening](assets/search_find_similar.png)
 
-*Afbeelding:Vergelijkbare afbeeldingen zoeken met de optie in de kaartweergave*
+*Afbeelding: Vind gelijkaardige beelden gebruikend de optie in de kaartmening*
 
 ### Adobe Stock-afbeeldingen {#adobestock}
 
-Vanuit de AEM-gebruikersinterface kunnen gebruikers zoeken in [Adobe Stock-middelen](/help/assets/aem-assets-adobe-stock.md) en een licentie voor de vereiste middelen aanschaffen. Toevoegen `Location: Adobe Stock` in de balk Zoeken. U kunt ook het deelvenster Filters gebruiken om alle middelen te zoeken waarvoor een licentie is verleend of om een bepaald middel te zoeken aan de hand van het bestandsnummer van Adobe Stock.
+Van binnen het gebruikersinterface AEM, kunnen de gebruikers de activa [van de Voorraad van](/help/assets/aem-assets-adobe-stock.md) Adobe zoeken en de vereiste activa in licentie geven. Voeg `Location: Adobe Stock` in de bar van het Onderzoek toe. U kunt het paneel van Filters ook gebruiken om alle gelicentieerde of niet vergunning gegeven activa te vinden of een specifieke activa te zoeken gebruikend het dossieraantal van de Voorraad van Adobe.
 
 ### Dynamische media-elementen {#dmassets}
 
-U kunt filteren voor dynamische media-afbeeldingen door **[!UICONTROL Dynamische media > Sets]** te selecteren in het deelvenster **[!UICONTROL Filters]** . Het filter en toont activa zoals beeldreeksen, carrousels, gemengde media reeksen, en spin reeksen.
+You can filter for Dynamic Media images by selecting **[!UICONTROL Dynamic Media > Sets]** from the **[!UICONTROL Filters]** panel. Het filtert op en toont assets zoals afbeeldingsets, carrousels, gemengde mediasets, en spinsets.
 
 ### Zoeken met specifieke waarden in metagegevensvelden {#gqlsearch}
 
-U kunt naar elementen zoeken op basis van exacte waarden van specifieke metagegevensvelden, zoals titel, beschrijving en auteur. Met de zoekfunctie voor volledige tekst GQL haalt u alleen die elementen op waarvan de metagegevenswaarde exact overeenkomt met uw zoekopdracht. De namen van de eigenschappen (bijvoorbeeld auteur, titel, enzovoort) en de waarden zijn hoofdlettergevoelig.
+U kunt naar activa zoeken die op nauwkeurige waarden van specifieke meta-gegevensgebieden, zoals, titel, beschrijving, en auteur worden gebaseerd. De eigenschap van het full-text onderzoek GQL haalt slechts die activa de waarvan meta-gegevenswaarde precies uw onderzoeksvraag aanpast. De namen van de eigenschappen (bijvoorbeeld auteur, titel, etc.) en de waarden zijn case-sensitive.
 
-| Metagegevensveld | Facetwaarde en gebruik |
+| Metagegevensveld | Facultatieve waarde en gebruik |
 |---|---|
 | Titel | titel:John |
 | Creator | maker:John |
-| Locatie | locatie:NA |
+| Locatie | locatie:nvt |
 | Beschrijving | beschrijving:&quot;Voorbeeldafbeelding&quot; |
-| Gereedschap Maker | creatortool:&quot;Adobe Photoshop CC 2015&quot; |
-| Copyrighteigenaar | copyrightowner:&quot;Adobe Systems&quot; |
-| Medewerker | contribuant:John |
-| Gebruiksvoorwaarden | usageterms:&quot;CopyRights Reserved&quot; |
-| Gemaakt | gemaakt:YYYY-MM-DDTHH |
-| Vervaldatum | verloopt:YYYY-MM-DDTHH |
-| Op tijd | ontime:YYYY-MM-DDTHH |
-| Uit-tijd | offtime:YYYY-MM-DDTHH |
-| Tijdsbereik (verloopt dateontime, offtime) | facetveld: lager gebonden..bovenaan |
-| Pad | /content/dam/&lt;naam map> |
-| PDF-titel | pdftitle:&quot;Adobe-document&quot; |
+| Gereedschap Creator | creatortool:&quot;Adobe Photoshop CC 2015&quot; |
+| Copyright Owner | copyrightowner:&quot;Adobe Systems&quot; |
+| Contributor | contribuant:John |
+| Gebruiksvoorwaarden | gebruikstermijnen:&quot;CopyRights Reserved&quot; |
+| Gemaakt | gemaakt:JJJJ-MM-DDTHH |
+| Vervaldatum | verloopt:JJJJ-MM-DDTHH |
+| Op tijd | Ontime:JJJJ-MM-DDTHH |
+| Off time | offtime:JJJJ-MM-DDTHH |
+| Bereik van tijd (verloopt dateontime, offtime) | gezichtsveld : naar beneden...bovengrens |
+| Pad | /content/dam/&lt;naam van map> |
+| PDF-titel | pdftitle: &quot;Adobe-document&quot; |
 | Subject | onderwerp: &quot;Opleiding&quot; |
 | Tags | tags:&quot;Locatie en reizen&quot; |
 | Type | type:&quot;image\png&quot; |
-| Breedte van afbeelding | breedte:ondergrens..bovenaan |
-| Hoogte van afbeelding | hoogte:ondergrens..bovenaan |
+| Breedte van de afbeelding | breedte:omlaag...bovengrens |
+| Hoogte van de afbeelding | hoogte:naar beneden..bovengrens |
 | Person | persoon:John |
 
-De eigenschappen pad, limiet, grootte en volgorde kunnen niet met een andere eigenschap worden ORed.
+De eigenschappen weg, de grens, de grootte, en de orde kunnen niet ORed met een ander bezit zijn.
 
 Het sleutelwoord voor een user-generated bezit is zijn gebiedsetiket in de bezitsredacteur in kleine letters, met verwijderde ruimten.
 
-Hier volgen enkele voorbeelden van zoekindelingen voor complexe query&#39;s:
+Hier zijn sommige voorbeelden van onderzoeksformaten voor complexe vragen:
 
-* Alle elementen weergeven met meerdere facetvelden (bijvoorbeeld: title=Jan Smit en creator tool = Adobe Photoshop): `tiltle:"John Doe" creatortool : Adobe*`
-* Om alle activa te tonen wanneer de facetwaarde niet één enkel woord maar één zin is (bijvoorbeeld: title=Scott Reynolds): `title:"Scott Reynolds"`
-* Elementen weergeven met meerdere waarden van één eigenschap (bijvoorbeeld: title=Scott Reynolds of Jan Smit): `title:"Scott Reynolds" OR "John Doe"`
-* Elementen weergeven met eigenschapswaarden die beginnen met een specifieke tekenreeks (bijvoorbeeld: de titel is Scott Reynolds): `title:Scott*`
-* Elementen weergeven met eigenschapswaarden die eindigen met een specifieke tekenreeks (bijvoorbeeld: de titel is Scott Reynolds): `title:*Reynolds`
-* Elementen weergeven met een eigenschapswaarde die een specifieke tekenreeks bevat (bijvoorbeeld: titel = Bazel-vergaderruimte): `title:*Meeting*`
-* Elementen weergeven die een bepaalde tekenreeks bevatten en een specifieke eigenschapswaarde hebben (bijvoorbeeld: zoek naar een Adobe-tekenreeks in elementen met de naam title=Jan Smit): `*Adobe* title:"John Doe"`
+* Om alle activa met veelvoudige facetten gebieden (bijvoorbeeld te tonen: title=John Doe en creator hulpmiddel = Adobe Photoshop): `tiltle:"John Doe" creatortool : Adobe*`
+* Om alle activa te tonen wanneer de facetwaarde geen één enkel woord maar een zin is (bijvoorbeeld: title=Scott Reynolds): `title:"Scott Reynolds"`
+* Om activa met veelvoudige waarden van één enkel bezit (bijvoorbeeld te tonen: title=Scott Reynolds of John Doe): `title:"Scott Reynolds" OR "John Doe"`
+* Om activa met bezitswaarden te tonen die met een specifiek koord beginnen (bijvoorbeeld: de titel is Scott Reynolds): `title:Scott*`
+* Om activa met bezitswaarden te tonen die met een specifiek koord beëindigen (bijvoorbeeld: de titel is Scott Reynolds): `title:*Reynolds`
+* Om activa met een bezitswaarde te tonen die een specifiek koord (bijvoorbeeld bevat: titel = de Zaal van de Vergadering van Bazel): `title:*Meeting*`
+* Om activa te tonen die een bepaald koord bevatten en een specifieke bezitswaarde hebben (bijvoorbeeld: onderzoek naar koordAdobe in activa die title=John Doe hebben): `*Adobe* title:"John Doe"`
 
-## Elementen zoeken vanuit andere AEM-aanbiedingen of -interfaces {#beyondomnisearch}
+## De activa van het onderzoek van ander dienstenaanbod AEM of interfaces {#beyondomnisearch}
 
-Met Adobe Experience Manager (AEM) wordt de DAM-opslagplaats verbonden met verschillende andere AEM-oplossingen, zodat u sneller toegang hebt tot digitale middelen en de creatieve workflows kunt stroomlijnen. Elke detectie van middelen begint met bladeren of zoeken. Het zoekgedrag blijft grotendeels hetzelfde op de verschillende oppervlakken en oplossingen. Sommige onderzoeksmethodes veranderen aangezien het doelpubliek, de gebruiksgevallen, en de gebruikersinterface over de oplossingen AEM variëren. De specifieke methoden worden gedocumenteerd voor de afzonderlijke oplossingen in de onderstaande koppelingen. De algemeen toepasselijke tips en gedragingen worden in dit artikel beschreven.
+De Manager van de Ervaring van Adobe (AEM) verbindt de bewaarplaats DAM met diverse andere oplossingen AEM om snellere toegang tot digitale activa te verlenen en de creatieve werkschema&#39;s te stroomlijnen. Om het even welke activaontdekking begint met doorbladeren of onderzoek. Het onderzoeksgedrag blijft grotendeels hetzelfde over de verschillende oppervlakken en oplossingen. Sommige onderzoeksmethodes veranderen aangezien het doelpubliek, de gebruiksgevallen, en het gebruikersinterface over de oplossingen AEM variëren. De specifieke methodes zijn gedocumenteerd voor de individuele oplossingen bij de hieronder verbindingen. De universeel toepasselijke uiteinden en het gedrag zijn gedocumenteerd in dit artikel.
 
-### Middelen zoeken vanuit het deelvenster Adobe Asset Link {#aal}
+### De activa van het onderzoek van het paneel van de Verbinding van de Activa van Adobe {#aal}
 
-Met Adobe Asset Link hebben creatieve professionals nu toegang tot inhoud die is opgeslagen in AEM Assets, zonder de ondersteunde Adobe Creative Cloud-toepassingen te verlaten. Creative Cloud kan naadloos door middelen bladeren, zoeken, uitchecken en inchecken via het deelvenster in de app in de Creative Cloud-apps: Photoshop, Illustrator en InDesign. Met Asset Link kunnen gebruikers ook visueel vergelijkbare resultaten zoeken. De visuele resultaten van de zoekweergave worden aangedreven door de computerleeralgoritmen van Adobe Sensei en helpen gebruikers bij het zoeken naar beelden die er esthetisch op lijken. Zie [Zoeken naar en bladeren door middelen](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) met Adobe Asset Link.
+Gebruikend de Verbinding van de Activa van Adobe, kunnen de creatieve beroeps tot inhoud nu toegang hebben die in activa AEM wordt opgeslagen, zonder de gesteunde Adobe Creative Cloud te verlaten apps. Creative kan probleemloos zoeken, zoeken, uitchecken en inchecken in bedrijfsmiddelen via het in-app-paneel in Creative Cloud-toepassingen: Photoshop, Illustrator, en InDesign. De Verbinding van activa staat ook gebruikers toe om visueel gelijkaardige resultaten te zoeken. De visuele resultaten van de onderzoeksvertoning worden aangedreven door de machine het leren van de machine van Adobe Sensei algoritmen en de hulpgebruikers vinden esthetisch gelijkaardige beelden. Zie [onderzoek en doorblader activa](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) gebruikend de Verbinding van de Activa van Adobe.
 
-### Middelen zoeken in de AEM-bureaubladtoepassing {#desktopapp}
+### Zoekmiddelen in AEM-desktop-app {#desktopapp}
 
-Creatieve professionals gebruiken de desktop-app om de AEM-middelen gemakkelijk doorzoekbaar en beschikbaar te maken op hun lokale bureaublad (Windows of Mac). Creative Cloud kan de gewenste middelen eenvoudig weergeven in Mac Finder of Windows Verkenner, geopend in bureaubladtoepassingen en lokaal gewijzigd - de wijzigingen worden weer opgeslagen in AEM met een nieuwe versie die in de opslagplaats is gemaakt. De toepassing ondersteunt basiszoekopdrachten met een of meer trefwoorden, * en ? jokertekens en operator AND. Zie middelen [](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) zoeken, zoeken en voorvertonen in de bureaubladtoepassing.
+Creatieve beroeps gebruiken Desktop app om de Activa van AEM gemakkelijk doorzoekbaar en beschikbaar op hun lokale Desktop (Win of MAC) te maken. De creatieve producten kunnen de gewenste activa in de Vinder van MAC of de Ontdekkingsreiziger van Vensters gemakkelijk openbaren, die in Desktoptoepassingen worden geopend, en plaatselijk worden veranderd - de veranderingen worden bewaard terug naar AEM met een nieuwe versie die in de bewaarplaats wordt gecreeerd. De toepassing steunt basisonderzoeken gebruikend één of meerdere sleutelwoorden, * en? jokertekens en AND operator. Zie [doorbladeren, zoeken, en voorproefactiva](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) in Desktop app.
 
-### Middelen zoeken in Brand Portal {#brandportal}
+### Zoekmiddelen in Brand Portal {#brandportal}
 
-De gebruikers van de lijn-van-zaken en de marketers gebruiken het Portaal van het Merk om de goedgekeurde digitale activa met hun uitgebreide interne teams, partners, en resellers efficiënt en veilig te delen. Zie [zoekmiddelen op Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html).
+De gebruikers van de lijn-van-zaken en de marketeers gebruiken het Portaal van het Merk om de goedgekeurde digitale activa met hun uitgebreide interne teams, partners, en resellers efficiënt en veilig te delen. Zie [onderzoeksactiva op het Portaal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html)van het Merk.
 
-### Adobe Stock-afbeeldingen zoeken {#adobestock-1}
+### Adobe Stockafbeeldingen zoeken {#adobestock-1}
 
-Vanuit de AEM-gebruikersinterface kunnen gebruikers zoeken in Adobe Stock-middelen en een licentie voor de vereiste middelen aanschaffen. Toevoegen `Location: Adobe Stock` in het veld Onderzoek. U kunt ook het deelvenster **[!UICONTROL Filters]** gebruiken om alle middelen met of zonder licentie te zoeken of om een bepaald middel te zoeken aan de hand van het Adobe Stock-bestandsnummer. Zie Adobe Stock-afbeeldingen [beheren in AEM](/help/assets/aem-assets-adobe-stock.md#usemanage).
+Van binnen het gebruikersinterface AEM, kunnen de gebruikers de activa van de Voorraad van Adobe zoeken en de vereiste activa in licentie geven. Voeg toe `Location: Adobe Stock` op het gebied van Onderzoek. U kunt het paneel van **[!UICONTROL Filters]** ook gebruiken om alle gelicentieerde of niet vergunning gegeven activa te vinden of een specifieke activa te zoeken gebruikend het dossieraantal van de Voorraad van Adobe. Zie Adobe Stock-afbeeldingen [beheren in AEM](/help/assets/aem-assets-adobe-stock.md#usemanage).
 
-### Dynamische media-elementen zoeken {#dynamicmedia}
+### Dynamische media zoeken {#dynamicmedia}
 
-U kunt filteren voor dynamische media-afbeeldingen door **[!UICONTROL Dynamische media]** > **[!UICONTROL Sets]** te selecteren in het deelvenster **[!UICONTROL Filters]** . Het filter en toont activa zoals beeldreeksen, carrousels, gemengde media reeksen, en spin reeksen. Tijdens het ontwerpen van webpagina&#39;s kunnen de auteurs naar sets zoeken in de Inhoudszoeker. Een filter voor sets is beschikbaar in een pop-upmenu.
+U kunt voor de Dynamische beelden van Media filtreren door **[!UICONTROL Dynamische Media]** te selecteren > **[!UICONTROL Reeksen]** van het paneel van **[!UICONTROL Filters]** . Het filtert op en toont assets zoals afbeeldingsets, carrousels, gemengde mediasets, en spinsets. Tijdens het ontwerpen van webpagina&#39;s kunnen auteurs naar sets zoeken in de Inhoudszoeker. Een filter voor sets is beschikbaar in een pop-upmenu.
 
-### Middelen zoeken in de Inhoudszoeker bij het ontwerpen van webpagina&#39;s {#contentfinder}
+### De activa van het onderzoek in de Vinder van de Inhoud wanneer het ontwerpen van Web-pagina&#39;s {#contentfinder}
 
-Auteurs kunnen de Inhoudszoeker gebruiken om in de DAM-opslagplaats te zoeken naar de relevante elementen en de elementen te gebruiken op de webpagina&#39;s die ze maken. Auteurs kunnen ook de functie Verbonden elementen gebruiken om te zoeken naar elementen die beschikbaar zijn op een externe AEM-implementatie. Auteurs kunnen deze elementen vervolgens op webpagina&#39;s gebruiken voor een lokale AEM-implementatie. Zie Externe elementen [gebruiken](/help/assets/use-assets-across-connected-assets-instances.md#use-remote-assets).
+De auteurs kunnen de Vinder van de Inhoud gebruiken om de bewaarplaats van DAM naar de relevante activa te zoeken en de activa in de Web-pagina&#39;s te gebruiken die zij hebben gecreeerd. De auteurs kunnen de Connected Assets-functionaliteit ook gebruiken om te zoeken naar middelen die beschikbaar zijn op een externe AEM-implementatie. De auteurs kunnen deze activa in Web-pagina&#39;s op een lokale plaatsing dan gebruiken AEM. Zie Externe [middelen](/help/assets/use-assets-across-connected-assets-instances.md#use-remote-assets)gebruiken.
 
-### Verzamelingen zoeken {#collections}
+### Zoekverzamelingen {#collections}
 
-De zoekfunctie van AEM ondersteunt het zoeken naar verzamelingen en het zoeken naar elementen in een verzameling. Zie [zoekverzamelingen](/help/assets/managing-collections-touch-ui.md).
+De het onderzoekscapaciteit van AEM steunt het zoeken naar inzamelingen en het zoeken naar activa binnen een inzameling. Zie [zoekverzamelingen](/help/assets/managing-collections-touch-ui.md).
 
-## Elementkiezer {#assetselector}
+## Selector van bedrijfsmiddelen {#assetselector}
 
-Met de functie Asset Selector kunt u de DAM-middelen op een speciale manier zoeken, filteren en doorbladeren. Asset Selector is beschikbaar op `https://[aem-server]:[port]/aem/assetpicker.html`. U kunt de metagegevens ophalen van elementen die u selecteert met de elementkiezer. U kunt de toepassing starten met ondersteunde aanvraagparameters, zoals het type element (afbeelding, video, tekst) en de selectiemodus (enkele of meerdere selecties). Deze parameters stellen de context van de elementenkiezer voor een bepaalde zoekinstantie in en blijven tijdens de selectie intact.
+De selecteur van activa laat u, de activa van DAM op een speciale manier zoeken filtreren en doorbladeren. De selecteur van activa is beschikbaar bij `https://[aem-server]:[port]/aem/assetpicker.html`. U kunt de meta-gegevens van activa halen die u gebruikend de activaselecteur selecteert. U kunt het met gesteunde verzoekparameters, zoals activatype (beeld, video, tekst) en selectiewijze (enige of veelvoudige selecties) lanceren. Deze parameters plaatsen de context van de activaselecteur voor een bepaalde onderzoeksinstantie en blijven intact door de selectie.
 
-De elementenkiezer gebruikt het HTML5 Window.postMessage-bericht om gegevens voor het geselecteerde element naar de ontvanger te verzenden. De assetkiezer is gebaseerd op de woordenlijst van de grondkiezer van Granite. De elementenkiezer werkt standaard in de modus Bladeren.
+De activaselecteur gebruikt het bericht HTML5 Window.postMessage om gegevens voor de geselecteerde activa naar de ontvanger te verzenden. De activaselecteur is gebaseerd op de de stichtingskiezerswoordenschat van Granite. Door gebrek, werkt de activaselecteur op Browse wijze.
 
-U kunt de volgende aanvraagparameters in een URL doorgeven om de elementenkiezer in een bepaalde context te starten:
+U kunt de volgende verzoekparameters in een URL overgaan om de activaselecteur in een bepaalde context te lanceren:
 
 | Naam | Waarden | Voorbeeld | Doel |
 |---|---|---|---|
-| bronachtervoegsel (B) | Mappad als resfix van de bron in de URL:[https://localhost:4502/aem/assetpicker.html/&lt;folder_path>](https://localhost:4502/aem/assetpicker.html) | Als u de elementenkiezer wilt starten terwijl een bepaalde map is geselecteerd, bijvoorbeeld met de `/content/dam/we-retail/en/activities` geselecteerde map, moet de URL de volgende vorm hebben: [https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images](https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images) | Als u wilt dat een bepaalde map wordt geselecteerd wanneer de elementenkiezer wordt gestart, geeft u deze door als een bronachtervoegsel. |
-| mode | enkelvoudig, meerdere | <ul><li>[https://localhost:4502/aem/assetpicker.html?mode=single](https://localhost:4502/aem/assetpicker.html?mode=single)</li><li>[https://localhost:4502/aem/assetpicker.html?mode=multiple](https://localhost:4502/aem/assetpicker.html?mode=multiple)</li></ul> | In meerdere modi kunt u meerdere elementen tegelijk selecteren met de elementkiezer. |
-| mimetype | Mimetype(s) (`/jcr:content/metadata/dc:format`) van een element (jokerteken wordt ook ondersteund) | <ul><li>[https://localhost:4502/aem/assetpicker.html?mimetype=image/png](https://localhost:4502/aem/assetpicker.html?mimetype=image/png)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*png](https://localhost:4502/aem/assetpicker.html?mimetype=*png)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*presentation](https://localhost:4502/aem/assetpicker.html?mimetype=*presentation)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&amp;mimetype=*png](https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&mimetype=*png)</li></ul> | Hiermee kunt u elementen filteren op basis van MIME-typen |
-| dialoogvenster | true, false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | Gebruik deze parameters om de elementenkiezer te openen als granietdialoogvenster. Deze optie is alleen van toepassing wanneer u de elementenkiezer start via Granite Path Field en deze configureert als pickerSrc URL. |
-| assettype (S) | afbeeldingen, documenten, multimedia, archieven | <ul><li>[https://localhost:4502/aem/assetpicker.html?assettype=images](https://localhost:4502/aem/assetpicker.html?assettype=images)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=documents](https://localhost:4502/aem/assetpicker.html?assettype=documents)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=multimedia](https://localhost:4502/aem/assetpicker.html?assettype=multimedia)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=archives](https://localhost:4502/aem/assetpicker.html?assettype=archives)</li></ul> | Gebruik deze optie om elementtypen te filteren op basis van de doorgegeven waarde. |
-| basis | &lt;folder_path> | [https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities](https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities) | Gebruik deze optie om de hoofdmap voor de elementenkiezer op te geven. In dit geval kunt u met de elementenkiezer alleen onderliggende elementen (direct/indirect) in de hoofdmap selecteren. |
+| bronsuffix (B) | De weg van de omslag als middelachtervoegsel in URL:[https://localhost:4502/aem/assetpicker.html/&lt;folder_path>](https://localhost:4502/aem/assetpicker.html) | Om de activaselecteur met een bepaalde geselecteerde omslag te lanceren, bijvoorbeeld met de `/content/dam/we-retail/en/activities` geselecteerde omslag, zou URL van de vorm moeten zijn: [https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images](https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images) | Als u vereist dat een bepaalde omslag wordt geselecteerd wanneer de activaselecteur wordt gelanceerd, ging het als middelachtervoegsel over. |
+| modus | enkelvoudig, meervoudig | <ul><li>[https://localhost:4502/aem/assetpicker.html?mode=single](https://localhost:4502/aem/assetpicker.html?mode=single)</li><li>[https://localhost:4502/aem/assetpicker.html?mode=multiple](https://localhost:4502/aem/assetpicker.html?mode=multiple)</li></ul> | Op veelvoudige wijze, kunt u verscheidene activa gelijktijdig selecteren gebruikend de activaselecteur. |
+| mimetype | nabootsing(en) (`/jcr:content/metadata/dc:format`van) een actief (ook ondersteunde vervanging) | <ul><li>[https://localhost:4502/aem/assetpicker.html?mimetype=image/png](https://localhost:4502/aem/assetpicker.html?mimetype=image/png)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*png](https://localhost:4502/aem/assetpicker.html?mimetype=*png)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*presentation](https://localhost:4502/aem/assetpicker.html?mimetype=*presentation)</li><li>[https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&amp;mimetype=*png](https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&mimetype=*png)</li></ul> | Gebruik het om activa te filtreren die op MIME type(n) worden gebaseerd |
+| dialoog | waar, vals | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | Gebruik deze parameters om de activaselecteur als Granite Dialoog te openen. Deze optie is slechts van toepassing wanneer u de activaselecteur door het Gebied van de Weg van de Graniet lanceert, en vormt het als plukkerSrc URL. |
+| assettype (S) | afbeeldingen, documenten, multimedia, archieven | <ul><li>[https://localhost:4502/aem/assetpicker.html?assettype=images](https://localhost:4502/aem/assetpicker.html?assettype=images)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=documents](https://localhost:4502/aem/assetpicker.html?assettype=documents)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=multimedia](https://localhost:4502/aem/assetpicker.html?assettype=multimedia)</li><li>[https://localhost:4502/aem/assetpicker.html?assettype=archives](https://localhost:4502/aem/assetpicker.html?assettype=archives)</li></ul> | Gebruik deze optie aan de types van filteractiva die op de overgegaane waarde worden gebaseerd. |
+| wortel | &lt;folder_path> | [https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities](https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities) | Gebruik deze optie om de wortelomslag voor de activaselecteur te specificeren. In dit geval, laat de activaselecteur u slechts kindactiva (direct/indirect) onder de wortelomslag selecteren. |
 
-Ga naar `https://[aem_server]:[port]/aem/assetpicker`om de interface van de elementenkiezer te openen. Navigeer naar de gewenste map en selecteer een of meer elementen. U kunt ook naar het gewenste element zoeken in het vak Zoeken, naar wens een filter toepassen en het vervolgens selecteren.
+Om tot de interface van de activaselecteur toegang te hebben, ga naar `https://[aem_server]:[port]/aem/assetpicker`. Navigeer aan de gewenste omslag, en selecteer één of meerdere activa. Alternatief, onderzoek naar de gewenste activa van de doos van het Onderzoek, pas filter toe zoals vereist, en selecteer het dan.
 
-![Bladeren en element selecteren in de elementkiezer](assets/assetpicker.png)
+![Doorblader en selecteer activa in de activaplukker](assets/assetpicker.png)
 
-*Afbeelding:Bladeren en element selecteren in de elementkiezer*
+*Afbeelding: Doorblader en selecteer activa in de activaplukker*
 
 ## Beperkingen {#limitations}
 
-De zoekfunctie in AEM Assets heeft de volgende beperkingen:
+De zoekfunctie in AEM-elementen heeft de volgende beperkingen:
 
-* Geef geen regelafstand op in de zoekopdracht als de zoekopdracht anders niet werkt.
-* Het is mogelijk dat AEM de zoekterm blijft weergeven nadat u eigenschappen van een element hebt geselecteerd in de zoekresultaten en vervolgens de zoekopdracht hebt geannuleerd. <!-- (CQ-4273540) -->
-* Wanneer u naar mappen of bestanden en mappen zoekt, kunnen de zoekresultaten op geen enkele parameter worden gesorteerd.
-* Als u op Enter drukt zonder iets te typen op de zoekbalk, retourneert AEM een lijst met alleen bestanden en niet mappen. Als u specifiek naar mappen zoekt zonder een trefwoord te gebruiken, geeft AEM geen resultaten.
-* Met het selectievakje Alles  selecteren kunt u alleen de eerste 100 gezochte elementen in de kaartweergave selecteren en de eerste 200 gezochte elementen in de lijstweergave. Als u schuift en meer elementen in de gebruikersinterface laadt, kunt u meer selecteren met de optie Alles  selecteren.
+* Ga geen belangrijke ruimte in de onderzoeksvraag in anders niet het onderzoek werkt.
+* AEM kan de onderzoekstermijn blijven tonen nadat u eigenschappen van een activa van gezochte resultaten selecteert en dan het onderzoek annuleert. <!-- (CQ-4273540) -->
+* Wanneer het zoeken naar omslagen of dossiers en omslagen, kunnen de onderzoeksresultaten niet op om het even welke parameter worden gesorteerd.
+* Als u op terugkeer drukt zonder om het even wat in de bar van het Onderzoek te typen, keert AEM een lijst van slechts dossiers en niet omslagen terug. Als u specifiek naar omslagen zoekt zonder een sleutelwoord te gebruiken, keert AEM geen resultaten terug.
+* Gebruikend de [!UICONTROL Uitgezochte Alle] controledoos, kunt u de eerste 100 gezochte activa in kaartmening en eerste 200 gezochte activa in lijstmening slechts selecteren. Als u scrolt en meer activa in het gebruikersinterface laadt, kunt u meer selecteren gebruikend de [!UICONTROL Uitgezochte Al] optie.
 
 Het visuele onderzoek of het gelijkenis onderzoek heeft de volgende beperkingen:
 
-* Visueel onderzoek werkt het best met grotere bewaarplaatsen. Hoewel er geen minimaal aantal afbeeldingen vereist is voor goede resultaten, is de kwaliteit van overeenkomsten met een paar afbeeldingen mogelijk minder goed dan de overeenkomsten met een grote opslagplaats.
-* U kunt het model niet wijzigen of AEM trainen om vergelijkbare afbeeldingen te zoeken. Als u bijvoorbeeld slimme tags toevoegt of verwijdert aan een paar elementen, verandert het model niet. De elementen worden wel uitgesloten van de visueel vergelijkbare zoekresultaten.
+* Het visuele onderzoek werkt het best met grotere bewaarplaatsen. Hoewel er geen minimumaantal afbeeldingen vereist is voor goede resultaten, is de kwaliteit van de overeenkomsten met een paar afbeeldingen mogelijk niet zo goed als de resultaten van een grote repository.
+* U kunt het model niet veranderen of AEM opleiden om gelijkaardige beelden te vinden. Bijvoorbeeld, verandert het toevoegen van of het verwijderen van slimme markeringen aan een paar activa niet het model. De activa worden uitgesloten van de visueel gelijkaardige onderzoeksresultaten.
 
-Zoekfuncties kunnen prestatiebeperkingen hebben in de volgende scenario&#39;s:
+De functionaliteit van het onderzoek kan prestatiesbeperkingen in de volgende scenario&#39;s hebben:
 
-* De kaartweergave heeft een snellere laadtijd dan de lijstweergave om de zoekresultaten weer te geven.
+* De mening van de kaart heeft een snellere ladingstijd in vergelijking met lijstmening om de onderzoeksresultaten te tonen.
 
 ## Zoektips {#tips}
 
-* Gebruik bij het controleren van de revisiestatus van de middelen de juiste optie om te bepalen welke middelen zijn goedgekeurd of welke activa nog moeten worden goedgekeurd.
-* Gebruik de Insights-voorspelling om te zoeken naar ondersteunde middelen op basis van de gebruiksstatistieken die zijn verkregen van verschillende Creative-apps. Gebruiksgegevens worden gegroepeerd onder Gebruiksscore, Impressies, Klikken en Mediakanalen waar de elementen categorieën weergeven.
-* Schakel het selectievakje Alles **** selecteren in om de gezochte elementen te selecteren. De eerste 100 elementen worden geselecteerd in de kaartweergave en de eerste 200 elementen in de lijstweergave. U kunt de selectie bijvoorbeeld activeren door de geselecteerde elementen te downloaden, de eigenschappen van metagegevens voor de geselecteerde elementen bulksgewijs bij te werken of de geselecteerde elementen aan een verzameling toe te voegen.
-* Zie [verplichte metagegevens](#mandatorymetadata)voor informatie over het zoeken naar elementen die de verplichte metagegevens niet bevatten.
-* Zoeken gebruikt alle metagegevensvelden. Een generieke zoekopdracht, zoals zoeken naar 12, retourneert doorgaans veel resultaten. Voor betere resultaten gebruikt u dubbele (geen enkele) aanhalingstekens of zorgt u ervoor dat het getal aangrenzend is aan een woord zonder speciaal teken (bijvoorbeeld *shoe12*).
-* Bij zoeken in volledige tekst worden onder andere operatoren zoals -, ^ ondersteund. Als u deze letters wilt doorzoeken als letterlijke tekenreeksen, plaatst u de zoekexpressie tussen dubbele aanhalingstekens. Gebruik bijvoorbeeld &quot;Notebook - Beauty&quot; in plaats van &quot;Notebook - Beauty&quot;.
-* Als de zoekresultaten te veel zijn, beperkt u het [zoekbereik](#scope) tot nul-in op de gewenste elementen. Het werkt het beste als u een idee hebt van hoe u beter kunt zoeken naar de gewenste elementen, bijvoorbeeld een specifiek bestandstype, een specifieke locatie, specifieke metagegevens, enzovoort.
+* Bij het toezicht op de status van het overzicht van activa, gebruik de aangewezen optie om te vinden welke activa worden goedgekeurd of activa die in afwachting van goedkeuring zijn.
+* Gebruik de Inzichten voorspellen om naar gesteunde activa te zoeken die op hun gebruiksstatistieken worden gebaseerd die van diverse Creatieve apps worden verkregen. De gegevens van het gebruik worden gegroepeerd onder de score van het Gebruik, Impressies, klikken, en de kanalen van Media waar de activa categorieën verschijnen.
+* Gebruik het **[!UICONTROL Uitgezochte Al]** controlevakje om de gezochte activa te selecteren. Het selecteert eerste 100 activa in kaartmening en eerste 200 activa in lijstmening. U kunt op de selectie werken, bijvoorbeeld, de geselecteerde activa downloaden, meta-gegevenseigenschappen in bulk voor de geselecteerde activa bijwerken, of de geselecteerde activa toevoegen aan een Inzameling.
+* Raadpleeg de [verplichte metagegevens](#mandatorymetadata)om te zoeken naar elementen die niet de verplichte metagegevens bevatten.
+* Het onderzoek gebruikt alle meta-gegevensgebieden. Een generisch onderzoek, zoals het zoeken naar 12, keert gewoonlijk vele resultaten terug. Voor betere resultaten, gebruik dubbele (niet enige) citaten of zorg ervoor dat het aantal aan een woord zonder een speciaal karakter (bijvoorbeeld *shoe12*) aangrenzend is.
+* Het volledige tekstonderzoek steunt exploitanten zoals -, ^, etc. Om deze brieven als koordliterals te zoeken, sluit de onderzoeksuitdrukking in dubbele citaten in. Bijvoorbeeld, gebruik &quot;Notitieboekje - Schoonheid&quot;in plaats van Notitieboekje - Schoonheid.
+* Als de onderzoeksresultaten te veel zijn, beperk het [werkingsgebied van onderzoek](#scope) tot nul-binnen op de gewenste activa. Het werkt het best wanneer u één of ander idee van hebt hoe te om de gewenste activa beter te zoeken, bijvoorbeeld, specifiek dossiertype, specifieke plaats, specifieke meta-gegevens, etc.
 
-* **Tags**: Met tags kunt u elementen categoriseren waarin u efficiënter kunt bladeren en zoeken. Tags helpen andere gebruikers en workflows de juiste taxonomie te geven. AEM biedt methoden om elementen automatisch te labelen met gebruik van de kunstmatig intelligente services van Adobe Sensei, waarmee u uw middelen steeds beter kunt labelen met gebruik en training. Wanneer u naar elementen zoekt, wordt met de slimme tags rekening gehouden als de functie op uw account is ingeschakeld. Het werkt naast de ingebouwde zoekfunctionaliteit van AEM. Zie [zoekgedrag](#searchbehavior). Als u de volgorde waarin de zoekresultaten worden weergegeven, wilt optimaliseren, kunt u de zoekpositie [van een aantal geselecteerde elementen](#searchrank) verhogen.
+* **Etikettering**: De markeringen helpen u activa categoriseren die kunnen efficiënter worden doorbladeren en worden gezocht. Het etiketteren helpt in het verspreiden van de aangewezen taxonomie aan andere gebruikers en werkschema&#39;s. AEM biedt methodes aan om activa automatisch te etiketteren gebruikend de kunstmatig intelligente diensten van Adobe Sensei die beter blijven worden in het etiketteren van uw activa met gebruik en opleiding. Wanneer u naar activa zoekt, worden de slimme markeringen binnen factored als de eigenschap op uw rekening wordt toegelaten. Het werkt samen met de ingebouwde zoekfunctionaliteit van AEM. Zie [zoekgedrag](#searchbehavior). Om de orde te optimaliseren waarin de onderzoeksresultaten worden getoond, kunt u de onderzoeksrangschikking [van een paar uitgezochte activa](#searchrank) opvoeren.
 
-* **Indexeren**: Alleen geïndexeerde metagegevens en elementen worden geretourneerd in de zoekresultaten. Voor betere dekking en betere prestaties, zorg behoorlijk indexeren en volg de beste praktijken. Zie [indexeren](#searchindex).
+* **Indexering**: Slechts zijn de geïndexeerde meta-gegevens en de activa teruggekeerd in de onderzoeksresultaten. Voor betere dekking en prestaties, verzeker juiste indexering en volg de beste praktijken. Zie [indexeren](#searchindex).
 
-## Enkele voorbeelden van zoekopdrachten {#samples}
+## Enkele voorbeelden ter illustratie van zoekopdracht {#samples}
 
-Gebruik dubbele aanhalingstekens rond trefwoorden om te zoeken naar elementen die de exacte woordgroep bevatten in de exacte volgorde die de gebruiker heeft opgegeven.
+De dubbele citaten van het gebruik rond sleutelwoorden om activa te vinden die de nauwkeurige uitdrukking in de nauwkeurige orde bevatten zoals die door de gebruiker wordt gespecificeerd.
 
-![Gedrag zoeken met en zonder aanhalingstekens](assets/search_with_quotes.gif)
+![Zoekgedrag met en zonder aanhalingstekens](assets/search_with_quotes.gif)
 
-*Afbeelding:Gedrag zoeken met en zonder aanhalingstekens*
+*Afbeelding: Zoekgedrag met en zonder aanhalingstekens*
 
-**Zoeken met jokerteken** sterretje: Als u de zoekopdracht wilt uitbreiden, gebruikt u een sterretje voor of na het zoekwoord om het gewenste aantal tekens te zoeken. Als u bijvoorbeeld zoekt naar tekst zonder sterretje, worden er geen elementen geretourneerd die een variatie van het woord bevatten (inclusief in de metagegevens). Een sterretje vervangt het gehele aantal tekens. Bijvoorbeeld,
+**Zoeken met sterretje**: Om de opsporing te verbreden, gebruik een asterisk vóór of na het onderzoekswoord om het even welk aantal karakters aan te passen. Bijvoorbeeld, keert het zoeken naar looppas zonder een asterisk geen activa terug die om het even welke variatie van het woord (met inbegrip van in de meta-gegevens) bevatten. Een asterisk vervangt om het even welk aantal karakters. Bijvoorbeeld:
 
-* `run` retourneert elementen met trefwoord exact uitvoeren
-* `run*` retourneert elementen met actieve, actieve, weglopende enzovoort.
-* `*run` retourneert outrun, reerun enzovoort.
-* `*run*` retourneert alle mogelijke combinaties.
+* `run` keert activa met precies looppassleutelwoord terug
+* `run*` keert activa met het lopen, looppas, wegloop, etc. terug.
+* `*run` terugkeert outrun, opnieuw, etc.
+* `*run*` geeft alle mogelijke combinaties terug.
 
-![Het gebruik van jokertekens voor sterretjes in het zoeken naar elementen illustreren aan de hand van een voorbeeld](assets/search_with_asterisk_run.gif)
+![Het illustreren van gebruik van asteriskvervanging in het onderzoek van Activa dat een voorbeeld gebruikt](assets/search_with_asterisk_run.gif)
 
-*Afbeelding:Het gebruik van jokertekens voor sterretjes in het zoeken naar elementen illustreren aan de hand van een voorbeeld*
+*Afbeelding: Het illustreren van gebruik van asteriskvervanging in het onderzoek van Activa dat een voorbeeld gebruikt*
 
-**Zoeken met jokerteken voor** vraagtekens: Als u de zoekopdracht wilt uitbreiden, gebruikt u een of meer &#39;?&#39; tekens die exact overeenkomen met het aantal tekens. In de volgende afbeelding, bijvoorbeeld:
+**Zoek met vraagteken vervanging**: Om het onderzoek te verbreden, gebruik één of meerdere &#39;?&#39;? tekens die overeenkomen met het exacte aantal tekens. Bijvoorbeeld, in de volgende illustratie,
 
-* `run???` query komt niet overeen met enig element.
+* `run???` de vraag past geen activa aan.
 
-* `run????` De query komt overeen met het woord `running` met vier tekens erna `run`.
+* `run????` de vraag past het woord `running` met vier karakters na aan `run`.
 
-* `??run` De query komt overeen met het woord `rerun` met twee tekens ervoor `run`.
+* `??run` de vraag past het woord `rerun` met twee karakters vóór aan `run`.
 
-![Het gebruik van jokertekens in de zoekfunctie voor elementen illustreren aan de hand van een voorbeeld](assets/search_with_questionmark_run.gif)
+![Het illustreren van gebruik van vraagteken vervanging in het onderzoek van Activa dat een voorbeeld gebruikt](assets/search_with_questionmark_run.gif)
 
-*Afbeelding:Het gebruik van jokertekens in de zoekfunctie voor elementen illustreren aan de hand van een voorbeeld*
+*Afbeelding: Het illustreren van gebruik van vraagteken vervanging in het onderzoek van Activa dat een voorbeeld gebruikt*
 
-**Een trefwoord** uitsluiten: Gebruik een streepje om te zoeken naar elementen die geen trefwoord bevatten. De query retourneert bijvoorbeeld elementen die wel `running -shoe` , maar niet `running``shoe`. Op dezelfde manier retourneert `camp -night` query elementen die wel `camp` maar niet `night`bevatten. Merk op dat de `camp-night` vraag activa terugkeert die zowel `camp` als `night`bevatten.
+**Sluit een sleutelwoord** uit: Het streepje van het gebruik aan onderzoek naar activa die geen sleutelwoord bevatten. Bijvoorbeeld, keert de `running -shoe` vraag activa terug die bevatten `running`, maar niet `shoe`. Op dezelfde manier keert de `camp -night` vraag activa terug die `camp` maar niet bevatten `night`. Merk op dat de `camp-night` vraag activa terugkeert die zowel `camp` als `night`. bevatten.
 
-![Gebruik van streepje om te zoeken naar elementen die geen uitgesloten trefwoord bevatten](assets/search_dash_exclude_keyword.gif)
+![Gebruik van streepje om naar activa te zoeken die geen uitgesloten sleutelwoord bevatten](assets/search_dash_exclude_keyword.gif)
 
-*Afbeelding:Gebruik van streepje om te zoeken naar elementen die geen uitgesloten trefwoord bevatten*
+*Afbeelding: Gebruik van streepje om naar activa te zoeken die geen uitgesloten sleutelwoord bevatten*
 
 ## Configuratie- en beheertaken met betrekking tot zoekfunctionaliteit {#configadmin}
 
-### Indexconfiguraties zoeken {#searchindex}
+### Zoekindexconfiguraties {#searchindex}
 
-Asset Discovery is afhankelijk van indexering van de DAM-inhoud, inclusief de metagegevens. Snellere en nauwkeurige detectie van bedrijfsmiddelen is afhankelijk van geoptimaliseerde indexering en geschikte configuraties. Zie [onderzoeksindex](/help/assets/performance-tuning-guidelines.md#search-indexes), [oak vragen en indexeren](/help/sites-deploying/queries-and-indexing.md), en [beste praktijken](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
+De ontdekking van activa baseert zich op indexering van inhoud DAM, met inbegrip van de meta-gegevens. Snellere en nauwkeurige bedrijfsmiddelendetectie is gebaseerd op geoptimaliseerde indexering en geschikte configuraties. Zie [onderzoeksindex](/help/assets/performance-tuning-guidelines.md#search-indexes), [eikenvragen en indexering](/help/sites-deploying/queries-and-indexing.md), en [beste praktijken](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 
-### Zoeken op visuele of gelijkenis {#configvisualsearch}
+### Visuele of gelijkenis zoeken {#configvisualsearch}
 
-Het visuele onderzoek gebruikt slim etiketteren en vereist AEM 6.5.2.0 of later. Voer de volgende stappen uit nadat u de functionaliteit voor slimme tags hebt geconfigureerd.
+Het visuele onderzoek gebruikt het slimme etiketteren en vereist AEM 6.5.2.0 of later. Na het vormen van slimme etiketteringsfunctionaliteit, volg deze stappen.
 
-1. Voeg in het `/oak:index/lucene` knooppunt AEM CRXDE de volgende eigenschappen en waarden toe en sla de wijzigingen op.
+1. In AEM CRXDE, in `/oak:index/lucene` knoop, voeg de volgende eigenschappen en de waarden toe en sla de veranderingen op.
 
-   * `costPerEntry` eigenschap van het type `Double` met de waarde `10`.
+   * `costPerEntry` eigenschap van type `Double` met de waarde `10`.
 
-   * `costPerExecution` eigenschap van het type `Double` met de waarde `2`.
+   * `costPerExecution` eigenschap van type `Double` met de waarde `2`.
 
-   * `refresh` eigenschap van het type `Boolean` met de waarde `true`.
+   * `refresh` eigenschap van type `Boolean` met de waarde `true`.
    Deze configuratie staat onderzoeken van de aangewezen index toe.
 
-1. Om de index van Lucene, in CRXDE, bij tot stand te brengen, creeer knoop genoemd `/oak:index/damAssetLucene/indexRules/dam:Asset/properties`van type `imageFeatures` `nt-unstructured`. In `imageFeatures` knooppunt
+1. Om de index van Lucene, in CRXDE, bij tot stand te brengen, creeer knoop genoemd `/oak:index/damAssetLucene/indexRules/dam:Asset/properties`van type `imageFeatures` `nt-unstructured`. In `imageFeatures` knoop,
 
-   * Voeg `name` eigenschap van type `String` met de waarde toe `jcr:content/metadata/imageFeatures/haystack0`.
+   * Voeg `name` bezit van type `String` met de waarde toe `jcr:content/metadata/imageFeatures/haystack0`.
 
-   * Voeg `nodeScopeIndex` eigenschap van type toe `Boolean` met de waarde van `true`.
+   * Voeg `nodeScopeIndex` bezit van type `Boolean` met de waarde van toe `true`.
 
-   * Voeg `propertyIndex` eigenschap van type toe `Boolean` met de waarde van `true`.
+   * Voeg `propertyIndex` bezit van type `Boolean` met de waarde van toe `true`.
 
-   * Voeg `useInSimilarity` eigenschap van type `Boolean` met de waarde toe `true`.
+   * Voeg `useInSimilarity` bezit van type `Boolean` met de waarde toe `true`.
    Sla de wijzigingen op.
 
-1. Toegang tot `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags` en voeg `similarityTags` eigenschap van type toe `Boolean` met de waarde van `true`.
-1. Pas slimme tags toe op de elementen in uw AEM-opslagplaats. Zie [hoe u slimme tags](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/smart-tags-technical-video-setup.html)kunt configureren.
+1. De toegang `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags` en voegt `similarityTags` bezit van type `Boolean` met de waarde van toe `true`.
+1. Pas Slimme Markeringen toe op de elementen in uw AEM-opslagplaats. Zie [hoe te om slimme markeringen](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/smart-tags-technical-video-setup.html)te vormen.
 1. In CRXDE, in `/oak-index/damAssetLucene` knoop, plaats het `reindex` bezit aan `true`. Sla de wijzigingen op.
-1. (Optioneel) Als u het zoekformulier hebt aangepast, kopieert u het `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` knooppunt naar `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Sla alle wijzigingen op.
+1. (Facultatief) als u hebt aangepast onderzoeksvorm dan kopieer de `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` knoop aan `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Sla alle wijzigingen op.
 
-Zie slimme tags in AEM [en](https://helpx.adobe.com/experience-manager/kt/assets/using/smart-tags-feature-video-understand.html) hoe u slimme tags [](/help/assets/managing-smart-tags.md)kunt beheren voor gerelateerde informatie.
+Voor verwante informatie, zie slimme markeringen in AEM [](https://helpx.adobe.com/experience-manager/kt/assets/using/smart-tags-feature-video-understand.html) begrijpen en [hoe te om slimme markeringen](/help/assets/managing-smart-tags.md)te beheren.
 
 ### Verplichte metagegevens {#mandatorymetadata}
 
-Zakelijke gebruikers, beheerders of DAM-bibliotheken kunnen bepaalde metagegevens definiëren als verplichte metagegevens die nodig zijn om de bedrijfsprocessen te laten werken. Om verschillende redenen ontbreken deze metagegevens mogelijk bij sommige elementen, zoals oudere elementen of elementen die in bulk zijn gemigreerd. Elementen met ontbrekende of ongeldige metagegevens worden gedetecteerd en gerapporteerd op basis van de eigenschap voor geïndexeerde metagegevens. Zie [verplichte metagegevens](/help/assets/metadata-schemas.md#define-mandatory-metadata)voor informatie over het configureren van de sjabloon.
+De bedrijfsgebruikers, de beheerders, of de bibliotheken van DAM kunnen sommige meta-gegevens als verplichte meta-gegevens bepalen die voor de bedrijfsprocessen aan het werk moeten zijn. Om diverse redenen, kunnen sommige activa deze meta-gegevens missen, zoals erfenisactiva of activa die in bulk worden gemigreerd. De activa met ontbrekende of ongeldige meta-gegevens worden ontdekt en worden gemeld gebaseerd op het geïndexeerde meta-gegevensbezit. Om het te vormen, zie [verplichte meta-gegevens](/help/assets/metadata-schemas.md#define-mandatory-metadata).
 
 ### Zoekfacetten wijzigen {#searchfacets}
 
-Om de snelheid van ontdekking te verbeteren, biedt de Middelen van AEM onderzoeksfacetten aan die u de onderzoeksresultaten kunt filtreren. Het deelvenster Filters bevat standaard enkele standaardfacetten. Beheerders kunnen het deelvenster Filters aanpassen om de standaardfacetten te wijzigen met behulp van de ingebouwde voorspelling. AEM verstrekt een goede inzameling van ingebouwde predikaten en een redacteur om de facetten aan te passen. Zie [zoekfacetten](/help/assets/search-facets.md).
+Om de snelheid van ontdekking te verbeteren, biedt de Activa van AEM onderzoeksfacetten aan gebruikend die u de onderzoeksresultaten kunt filtreren. Het paneel van Filters omvat een paar standaardfacetten door gebrek. De beheerders kunnen het paneel van Filters aanpassen om de standaardfacetten te wijzigen gebruikend de in-gebouwde predikaten. AEM verstrekt een goede inzameling van ingebouwde predikaten en een redacteur om de facetten aan te passen. Zie [zoekfacetten](/help/assets/search-facets.md).
 
-### Tekst extraheren tijdens het uploaden van elementen {#extracttextupload}
+### Tekst uittrekken bij het uploaden van elementen {#extracttextupload}
 
-U kunt AEM zodanig configureren dat de tekst uit de elementen wordt gehaald wanneer gebruikers elementen uploaden, zoals PSD- of PDF-bestanden. AEM indexeert de geëxtraheerde tekst en helpt gebruikers deze elementen te doorzoeken op basis van de geëxtraheerde tekst. Zie [Elementen](/help/assets/managing-assets-touch-ui.md#uploading-assets)uploaden.
+U kunt AEM vormen om de tekst uit de activa te halen wanneer de gebruikers activa, zoals Psd of Pdf- dossiers uploaden. AEM indexeert de gehaalde tekst en helpt gebruikers die activa zoeken op de gehaalde tekst worden gebaseerd. Zie [upload elementen](/help/assets/managing-assets-touch-ui.md#uploading-assets).
 
-### Aangepaste voorspelling van filterzoekresultaten {#custompredicates}
+### De predikaten van de douane aan de resultaten van het filteronderzoek {#custompredicates}
 
-Voorspellen worden gebruikt om facetten te maken. Beheerders kunnen de zoekfacetten in het deelvenster Filters aanpassen met behulp van vooraf geconfigureerde voorspellingen. Deze voorspelling kan worden aangepast met behulp van overlays. Zie Aangepaste voorspellen [maken](/help/assets/searchx.md).
+De voorspelling wordt gebruikt om facetten tot stand te brengen. De beheerders kunnen de onderzoeksfacetten in het paneel van Filters aanpassen gebruikend pre-gevormde predikaten. Deze voorspelling kan worden aangepast gebruikend bekledingen. Zie aangepaste voorspelling [maken](/help/assets/searchx.md).
 
-U kunt naar digitale elementen zoeken op basis van een of meer van de volgende eigenschappen. Filters die op sommige van deze eigenschappen van toepassing zijn, zijn standaard beschikbaar en sommige andere filters kunnen op maat worden gemaakt om op de andere eigenschappen toe te passen.
+U kunt naar digitale activa zoeken die op één of meer van de volgende eigenschappen worden gebaseerd. De filters die op sommige van deze eigenschappen van toepassing zijn zijn beschikbaar door gebrek en sommige andere filters kunnen worden douane-gecreeerd om op de andere eigenschappen van toepassing te zijn.
 
-| Zoekveld | Waarden van eigenschappen zoeken |
+| Zoekveld | De bezitswaarden van het onderzoek |
 |---|---|
-| MIME-typen | Afbeeldingen, Documenten, Multimedia, Archieven of Overige. |
-| Laatst gewijzigd | Uur, Dag, Week, Maand of Jaar. |
-| Bestandsgrootte | Klein, Normaal of Groot. |
-| Status publiceren | Gepubliceerd of Niet gepubliceerd. |
-| Goedgekeurde status | Goedgekeurd of geweigerd. |
-| Afdrukstand | Horizontaal, Verticaal of Vierkant. |
-| Stijl | Kleur, of Zwart-wit. |
-| Videohoogte | Opgegeven als minimum- en maximumwaarde. Waarde wordt alleen opgeslagen in de metagegevens van video-uitvoeringen. |
-| Videobreedte | Opgegeven als minimum- en maximumwaarde. Waarde wordt alleen opgeslagen in de metagegevens van video-uitvoeringen. |
-| Video-indeling | DVI, Flash, MPEG4, MPEG, OGG Theora, QuickTime, Windows Media. Waarde wordt opgeslagen in de metagegevens van de bronvideo en eventuele uitvoeringen. |
-| Videocodec | x264. Waarde wordt alleen opgeslagen in de metagegevens van video-uitvoeringen. |
-| Videobitsnelheid | Opgegeven als minimum- en maximumwaarde. Waarde wordt alleen opgeslagen in de metagegevens van video-uitvoeringen. |
-| Audiocodec | Libvorbis, Lame MP3, AAC-codering. Waarde wordt alleen opgeslagen in de metagegevens van video-uitvoeringen. |
-| Audiobitsnelheid | Opgegeven als minimum- en maximumwaarde. Waarde wordt alleen opgeslagen in de metagegevens van video-uitvoeringen. |
+| MIME-typen | Afbeeldingen, documenten, multimedia, archieven of andere documenten. |
+| Laatst gewijzigd | Uur, Dag, Week, Maand, of Jaar. |
+| Bestandsgrootte | Klein, middelgroot, of Groot. |
+| Status publiceren | Gepubliceerd of niet gepubliceerd. |
+| Goedgekeurde status | Goedgekeurd of verworpen. |
+| Afdrukstand | Horizontale, Verticale, of Vierkant. |
+| Stijl | Kleur, of Zwart &amp; Wit. |
+| Videohoogte | Als minimum en maximumwaarde gespecificeerd. De waarde wordt opgeslagen in de meta-gegevens van videovertolkingen slechts. |
+| Videobreedte | Als minimum en maximumwaarde gespecificeerd. De waarde wordt opgeslagen in de meta-gegevens van videovertolkingen slechts. |
+| Video-indeling | DVI, Flits, MPEG4, MPEG, OGG Theora, QuickTime, de Media van Vensters. De waarde wordt opgeslagen in de meta-gegevens van de bronvideo en om het even welke vertolkingen. |
+| Videocodec | x264. De waarde wordt opgeslagen in de meta-gegevens van videovertolkingen slechts. |
+| Videobitrate | Als minimum en maximumwaarde gespecificeerd. De waarde wordt opgeslagen in de meta-gegevens van videovertolkingen slechts. |
+| Audio-codec | Libvorbis, Lame MP3, AAC-codering. De waarde wordt opgeslagen in de meta-gegevens van videovertolkingen slechts. |
+| Audio-bitrate | Als minimum en maximumwaarde gespecificeerd. De waarde wordt opgeslagen in de meta-gegevens van videovertolkingen slechts. |
 
-## Werken met resultaten voor middelenzoekopdrachten {#aftersearch}
+## Werken met zoekresultaten voor bedrijfsmiddelen {#aftersearch}
 
-Wanneer bepaalde gezochte elementen aan uw criteria voldoen, kunt u de volgende taken uitvoeren met of de volgende acties uitvoeren op deze zoekresultaten:
+Zodra u sommige gezochte activa ziet die uw criteria aanpassen, kunt u de volgende typische taken met doen of de volgende acties op deze onderzoeksresultaten ondernemen:
 
-* Eigenschappen van metagegevens en andere informatie weergeven.
-* Download een of meer middelen.
-* Gebruik Desktophandelingen om deze middelen in de bureaubladtoepassing te openen.
-* Slimme verzamelingen maken.
+* De meta-gegevenseigenschappen van de mening en andere informatie.
+* Download één of meerdere activa.
+* Gebruik de Acties van de Desktop om deze activa in Desktop app te openen.
+* Maak slimme collecties.
 
 ### Gezochte resultaten sorteren {#sort}
 
-Door de zoekresultaten te sorteren, kunt u sneller de vereiste middelen vinden. Zoekresultaten sorteren werkt alleen in de lijstweergave en wanneer u **[!UICONTROL [Bestanden](#searchui)]**in het deelvenster**[!UICONTROL  Filters ]**selecteert. AEM Assets gebruikt server-zijsorteren om snel alle activa (hoe talrijk ook) binnen een omslag of resultaten van een onderzoeksvraag te sorteren. Sorteren op de server levert sneller en nauwkeuriger resultaten op dan sorteren op de client.
+Door de zoekresultaten te sorteren kunt u sneller de vereiste asset vinden. Sorting search results works in list view and only when you select **[!UICONTROL [Files](#searchui)]**from the**[!UICONTROL  Filters ]**panel. AEM Assets gebruikt sorteren op de server om snel alle assets (hoe talrijk ook) in een map of de resultaten van een zoekopdracht te sorteren. Sorteren op de server levert sneller en nauwkeuriger resultaten op dan sorteren op de client.
 
-In de lijstweergave kunt u de zoekresultaten op dezelfde manier sorteren als elementen in een willekeurige map. Sorteren werkt op deze kolommen: Naam, Titel, Status, Dimensies, Grootte, Classificatie, Gebruik (Gemaakt op), (Datum) Gewijzigd, (Datum) Gepubliceerd, Workflow en Uitgecheckt.
+In lijstmening, kunt u de onderzoeksresultaten sorteren enkel aangezien u activa in om het even welke omslag kunt sorteren. Het sorteren werkt aan deze kolommen — Naam, Titel, Status, Afmetingen, Grootte, Rating, Gebruik, (Datum) gecreeerd, (Datum) Gewijzigd, (Datum) Gepubliceerd, Werkschema, en Uitgecheckt.
 
-Zie [beperkingen](#limitations)voor beperkingen van de sorteerfunctionaliteit.
+Voor beperkingen van soortfunctionaliteit, zie [beperkingen](#limitations).
 
-### Gedetailleerde informatie over een element controleren {#checkinfo}
+### Gedetailleerde informatie over een actief controleren {#checkinfo}
 
-Op de pagina met zoekresultaten kunt u gedetailleerde informatie over een doorzocht element controleren.
+U kunt gedetailleerde informatie van een gezocht activa van de pagina van het onderzoeksresultaat controleren.
 
-Als u alle metagegevens van een element wilt weergeven, selecteert u het element en klikt u op de **[!UICONTROL eigenschappen]** op de werkbalk.
+Om alle meta-gegevens van activa te zien, selecteer de activa en klik **[!UICONTROL eigenschappen]** van de toolbar.
 
-Als u de opmerkingen over een element of de versiegeschiedenis van een element wilt controleren, klikt u op het element om een voorvertoning op grote grootte te openen. Open de tijdlijn in de linkertrack en selecteer **[!UICONTROL Opmerkingen]** of **[!UICONTROL Versies]**. U kunt de tijdlijnactiviteit zoals commentaren of versies in chronologische orde ook sorteren.
+Als u de opmerkingen over een asset of de versiegeschiedenis van een asset wilt controleren, klikt u op de asset om een voorvertoning op grote grootte te openen. Open timeline in the left rail and select **[!UICONTROL Comments]** or **[!UICONTROL Versions]**. U kunt de tijdlijnactiviteit zoals opmerkingen of versies ook in chronologische volgorde sorteren.
 
-![Tijdlijnitems voor een zoekmiddel sorteren](assets/sort_timeline_search_results.gif)
+![De chronologieingangen van de soort voor een onderzoeksactiva](assets/sort_timeline_search_results.gif)
 
-*Afbeelding:Tijdlijnitems voor een zoekmiddel sorteren*
+*Afbeelding: De chronologieingangen van de soort voor een onderzoeksactiva*
 
-### Gezochte middelen downloaden {#download}
+### Gezochte activa downloaden {#download}
 
-U kunt de gezochte elementen en hun vertoningen downloaden enkel aangezien u regelmatige activa van omslagen downloadt. Selecteer een of meer middelen in de zoekresultaten en klik op **[!UICONTROL Downloaden]** op de werkbalk.
+U kunt de bezochte activa en hun vertolkingen downloaden enkel aangezien u regelmatige activa van omslagen downloadt. Selecteer één of meerdere activa van de onderzoeksresultaten en klik **[!UICONTROL Download]** van de toolbar.
 
-### Eigenschappen van metagegevens voor bulkupdates {#metadataupdates}
+### Bulksgewijs bijwerken metagegevenseigenschappen {#metadataupdates}
 
-Het is mogelijk om bulkupdates uit te voeren naar de algemene metagegevensvelden van meerdere elementen. Selecteer een of meer elementen in de zoekresultaten. Klik op **[!UICONTROL Eigenschappen]** op de werkbalk en werk de metagegevens naar wens bij. Klik op **[!UICONTROL Opslaan en Sluiten]** als u klaar bent. De eerder bestaande metagegevens in de bijgewerkte velden worden overschreven.
+Het is mogelijk om bulkupdates aan de gemeenschappelijke meta-gegevensgebieden van veelvoudige activa te maken. Van de onderzoeksresultaten, selecteer één of meerdere activa. Klik **[!UICONTROL Eigenschappen]** van de toolbar en werk de meta-gegevens bij zoals vereist. Klik **[!UICONTROL sparen en sluit]** wanneer gedaan. De eerder bestaande meta-gegevens op de bijgewerkte gebieden is beschreven.
 
-Voor de middelen die in één enkele omslag of een inzameling beschikbaar zijn, is het gemakkelijker om de meta-gegevens in bulk [bij te](/help/assets/managing-multiple-assets.md) werken zonder de onderzoeksfunctionaliteit te gebruiken. Voor de elementen die beschikbaar zijn in verschillende mappen of voldoen aan een algemeen criterium, is het sneller om de metagegevens bulksgewijs bij te werken door te zoeken.
+Voor de activa die in één enkele omslag of een inzameling beschikbaar zijn, is het gemakkelijker om de meta-gegevens in bulk [bij te](/help/assets/managing-multiple-assets.md) werken zonder de onderzoeksfunctionaliteit te gebruiken. Voor de activa die over omslagen beschikbaar zijn of een gemeenschappelijke criteria aanpassen, is het sneller om de meta-gegevens in bulk bij te werken door te zoeken.
 
 ### Slimme verzamelingen {#collections-1}
 
-Een verzameling is een geordende set elementen die elementen van verschillende locaties kunnen bevatten, omdat verzamelingen alleen verwijzingen naar deze elementen bevatten. Verzamelingen zijn van de volgende twee typen:
+Een inzameling is een bevolen reeks activa die activa van verschillende plaatsen kunnen omvatten omdat de inzamelingen slechts verwijzingen naar deze activa bevatten. De inzamelingen zijn van de volgende twee types:
 
-* Een statische referentielijst met elementen, mappen en andere verzamelingen.
-* Een dynamische lijst (slimme verzameling) die elementen in de verzameling vult op basis van zoekcriteria.
+* Een statische verwijzingslijst van activa, omslagen, en andere inzamelingen.
+* Een dynamische lijst (slimme inzameling) die activa in de inzameling bevolkt die op een onderzoekscriteria wordt gebaseerd.
 
-U kunt slimme verzamelingen maken op basis van de zoekcriteria. Selecteer **[!UICONTROL Bestanden]** in het deelvenster **[!UICONTROL Filters]** en klik op Slimme verzameling **** opslaan. Zie Verzamelingen [beheren](/help/assets/managing-collections-touch-ui.md).
+U kunt slimme verzamelingen maken op basis van de zoekcriteria. Van het paneel van **[!UICONTROL Filters]** , uitgezochte **[!UICONTROL Dossiers]** en klik **[!UICONTROL sparen Slimme Inzameling]**. Zie [Verzamelingen beheren](/help/assets/managing-collections-touch-ui.md).
 
-## Onverwachte zoekresultaten en problemen oplossen {#troubleshoot-unexpected-search-results-and-issues}
+## Los onverwachte onderzoeksresultaten en kwesties problemen op {#troubleshoot-unexpected-search-results-and-issues}
 
 | Fout, problemen, symptomen | Mogelijke reden | Mogelijke oplossing of begrip van het probleem |
 |---|---|---|
-| Onjuiste resultaten bij het zoeken naar elementen met ontbrekende metagegevens |  Bij het zoeken naar elementen waarvoor de verplichte metagegevens ontbreken, kan AEM elementen weergeven die geldige metagegevens hebben. De resultaten zijn gebaseerd op de eigenschap voor geïndexeerde metagegevens. | Nadat de metagegevens zijn bijgewerkt, is opnieuw indexeren vereist om de juiste status van metagegevens voor elementen weer te geven. Zie [verplichte metagegevens](metadata-schemas.md#define-mandatory-metadata). |
-| Te veel zoekresultaten | Brede zoekparameter. | U kunt overwegen het [zoekbereik](#scope)te beperken. Het gebruik van slimme tags kan meer zoekresultaten opleveren dan u had verwacht. Zie [zoekgedrag met slimme tags](#withsmarttags). |
-| Onverwante of gedeeltelijk verwante zoekresultaten | Wijzigingen in zoekgedrag met slimme tags. | Begrijp [hoe zoekopdracht verandert na slimme tags](#withsmarttags). |
-| Geen suggesties voor automatisch aanvullen van elementen | Nieuw geüploade elementen zijn nog niet geïndexeerd. De metagegevens zijn niet direct beschikbaar als suggesties wanneer u een trefwoord in de zoekbalk typt. | AEM-elementen wachten tot een time-outperiode (standaard één uur) is verstreken voordat een achtergrondtaak wordt uitgevoerd om de metagegevens voor alle nieuw geüploade of bijgewerkte elementen te indexeren en voegen de metagegevens vervolgens toe aan de lijst met suggesties. |
-| Geen zoekresultaten | <ul><li>Er bestaan geen elementen die overeenkomen met uw query.</li><li>U hebt een witruimte toegevoegd vóór de zoekquery.</li><li>Een niet-ondersteund metagegevensveld bevat het trefwoord waarnaar u zoekt.</li><li>De tijd op tijd en off time wordt gevormd voor activa en het onderzoek werd gemaakt tijdens activa off-time.</li></ul> | <ul><li>Zoeken met een ander trefwoord. U kunt ook (slimme) tags gebruiken om de zoekresultaten te verbeteren.</li><li>Het is een [bekende beperking](#limitations).</li><li>Niet alle metagegevensvelden worden in aanmerking genomen voor zoekopdrachten. Zie [bereik](#scope).</li><li>U kunt naderhand zoeken of de tijdinstellingen voor de vereiste elementen in- en uitschakelen.</li></ul> |
-| Zoekfilter/-voorspelling is niet beschikbaar | <ul><li>Het zoekfilter is niet geconfigureerd.</li><li>Het is niet beschikbaar voor uw aanmelding.</li><li>(Minder waarschijnlijk) De onderzoeksopties worden niet aangepast op de plaatsing u gebruikt.</li></ul> | <ul><li>Neem contact op met de beheerder om te controleren of de zoekaanpassingen beschikbaar zijn of niet.</li><li>Neem contact op met de beheerder om te controleren of uw account de rechten/machtigingen heeft om de aanpassing te gebruiken.</li><li>Neem contact op met de beheerder en controleer de beschikbare aanpassingen voor de implementatie van AEM Assets die u gebruikt.</li></ul> |
-| Bij het zoeken naar visueel vergelijkbare afbeeldingen ontbreekt een verwachte afbeelding | <ul><li>Afbeelding is niet beschikbaar in AEM.</li><li>Afbeelding is niet geïndexeerd. Doorgaans wanneer het onlangs is geüpload.</li><li>Afbeelding heeft geen slimme tags.</li></ul> | <ul><li>Voeg de afbeelding toe aan AEM-elementen.</li><li>Neem contact op met de beheerder om de gegevensopslagruimte opnieuw te indexeren. Zorg er ook voor dat u de juiste index gebruikt.</li><li>Neem contact op met de beheerder om de relevante elementen een slimme tag te geven.</li></ul> |
-| Bij het zoeken naar visueel vergelijkbare afbeeldingen wordt een irrelevante afbeelding weergegeven | Zichtbaar zoekgedrag. | AEM geeft zoveel mogelijk relevante activa weer. Eventuele minder relevante afbeeldingen worden aan de resultaten toegevoegd, maar met een lagere zoekpositie. De kwaliteit van de overeenkomsten en de relevantie van de gezochte elementen nemen af wanneer u de zoekresultaten omlaag schuift. |
-| Wanneer u zoekresultaten selecteert en gebruikt, worden niet alle gezochte elementen gebruikt | Met de optie Alles  selecteren selecteert u alleen de eerste 100 zoekresultaten in de kaartweergave en de eerste 200 zoekresultaten in de lijstweergave. |  |
+| Onjuiste resultaten wanneer het zoeken naar activa met ontbrekende meta-gegevens | Wanneer het zoeken naar activa die de verplichte meta-gegevens missen, kan AEM sommige activa tonen die geldige meta-gegevens hebben. De resultaten zijn gebaseerd op geïndexeerd meta-gegevensbezit. | Nadat de meta-gegevens worden bijgewerkt, wordt het opnieuw dexeren vereist om op correcte staat van activa meta-gegevens te wijzen. Zie [verplichte metagegevens](metadata-schemas.md#define-mandatory-metadata). |
+| Te veel zoekresultaten | Brede zoekparameter. | Denk na beperkend het [werkingsgebied van onderzoek](#scope). Het gebruik van slimme markeringen kan u meer onderzoeksresultaten geven dan u verwachtte. Zie [onderzoeksgedrag met slimme markeringen](#withsmarttags). |
+| Onafhankelijke of gedeeltelijk gerelateerde zoekresultaten | Het gedrag van het onderzoek verandert met het slimme etiketteren. | Begrijp [hoe het onderzoek na slim etiketteren verandert](#withsmarttags). |
+| Geen automatisch voltooide suggesties voor activa | Nieuw geüploade activa zijn nog niet geïndexeerd. De meta-gegevens zijn niet onmiddellijk beschikbaar als suggesties wanneer u begint een onderzoekssleutelwoord in de bar van het Onderzoek te typen. | De Activa van AEM wacht tot het verstrijken van een onderbrekingsperiode (één uur door gebrek) alvorens een achtergrondbaan in werking te stellen om de meta-gegevens voor alle onlangs geupload of bijgewerkte activa te indexeren en voegt dan de meta-gegevens aan de lijst van suggesties toe. |
+| Geen zoekresultaten | <ul><li>Er zijn geen activa die uw vraag aanpassen.</li><li>U voegde whitespace vóór de onderzoeksvraag toe.</li><li>Een niet gestaafd meta-gegevensgebied bevat het sleutelwoord dat u zoekt naar.</li><li>De tijd en de uit tijd wordt gevormd voor activa en het onderzoek werd gemaakt tijdens de off-time van activa.</li></ul> | <ul><li>Zoeken met een ander trefwoord. Alternatief, gebruik (slim) etiketteren om onderzoeksresultaten te verbeteren.</li><li>Het is een [bekende beperking](#limitations).</li><li>Niet worden alle meta-gegevensgebieden overwogen voor onderzoeken. Zie [bereik](#scope).</li><li>Zoek later of wijzig op en uit tijden voor de vereiste activa.</li></ul> |
+| Zoekfilter/-voorspelling is niet beschikbaar | <ul><li>De onderzoeksfilter wordt of niet gevormd.</li><li>Het is niet beschikbaar voor uw login.</li><li>(Minder waarschijnlijk) de onderzoeksopties worden niet aangepast op de plaatsing u gebruikt.</li></ul> | <ul><li>De beheerder van het contact om te controleren of zijn de onderzoeksaanpassingen beschikbaar of niet.</li><li>Neem contact op met de beheerder om te controleren of uw account over de rechten/machtigingen beschikt om de aanpassing te gebruiken.</li><li>Neem contact op met de beheerder en controleer de beschikbare aanpassingen voor de implementatie van AEM-middelen die u gebruikt.</li></ul> |
+| Bij het zoeken naar visueel vergelijkbare afbeeldingen ontbreekt een verwacht beeld | <ul><li>Afbeelding is niet beschikbaar in AEM.</li><li>Het beeld wordt niet geïndexeerd. Typisch, wanneer het onlangs wordt geupload.</li><li>Het beeld is niet slim geëtiketteerd.</li></ul> | <ul><li>Voeg de afbeelding toe aan AEM-elementen.</li><li>Neem contact op met uw beheerder om de repository opnieuw te indexeren. Ook, zorg ervoor dat u de aangewezen index gebruikt.</li><li>Contacteer uw beheerder om de relevante activa te slim te etiketteren.</li></ul> |
+| Bij het zoeken naar visueel vergelijkbare afbeeldingen wordt een irrelevant beeld weergegeven | Visuele zoekgedrag. | AEM toont zoveel mogelijk potentieel relevante activa mogelijk. Minder relevante afbeeldingen, indien aanwezig, worden aan de resultaten toegevoegd, maar met een lagere zoekrangschikking. De kwaliteit van de gelijken en de relevantie van gezochte activa verminderen aangezien u onderaan de onderzoeksresultaten scrolt. |
+| Bij het selecteren van en het werken op onderzoeksresultaten, worden alle gezochte activa niet in werking gesteld op | De [!UICONTROL Uitgezochte Al] optie selecteert slechts eerste 100 onderzoeksresultaten in kaartmening en eerste 200 onderzoeksresultaten in lijstmening. |  |
 
 >[!MORELIKETHIS]
 >
 >* [Handleiding voor AEM-zoekimplementatie](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/search-tutorial-develop.html)
->* [Geavanceerde configuratie van zoekresultaten met meerdere waarden en tags](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/search-feature-video-use.html)
->* [Zoeken naar slimme vertaling configureren](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/translation/smart-translation-search-technical-video-setup.html)
+>* [Geavanceerde configuratie van de voorspelling van het multi-value en markeringsonderzoek](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/search-feature-video-use.html)
+>* [Slimme vertaalzoek configureren](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/translation/smart-translation-search-technical-video-setup.html)
 

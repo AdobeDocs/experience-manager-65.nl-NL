@@ -1,94 +1,97 @@
 ---
 title: Verwante activa
-description: Leer hoe u elementen koppelt die bepaalde algemene kenmerken delen. U kunt de eigenschap ook gebruiken om bron/afgeleide verhoudingen tussen activa tot stand te brengen.
+description: Leer hoe te om activa te relateren die bepaalde gemeenschappelijke attributen delen. U kunt de eigenschap ook gebruiken om bron/afgeleid verband tussen activa tot stand te brengen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: fb0688afbadd1b27f1a3b3326f18c15d1c7811aa
 
 ---
 
 
 # Verwante activa {#related-assets}
 
-Met de Adobe Experience Manager-middelen (AEM) kunt u elementen handmatig koppelen op basis van de behoeften van uw organisatie met behulp van de functie voor verwante elementen. U kunt bijvoorbeeld een licentiebestand koppelen aan een element of aan een afbeelding/video over een vergelijkbaar onderwerp. U kunt elementen die bepaalde algemene kenmerken delen, aan elkaar koppelen. U kunt de eigenschap ook gebruiken om bron/afgeleide verhoudingen tussen activa tot stand te brengen. Als u bijvoorbeeld een PDF-bestand hebt dat is gegenereerd vanuit een INDD-bestand, kunt u het PDF-bestand koppelen aan het INDD-bronbestand.
+De activa van de Manager van de Ervaring van Adobe (AEM) laten u activa manueel met elkaar in verband brengen die op de behoeften van uw organisatie worden gebaseerd gebruikend de verwante activa eigenschap. Bijvoorbeeld, kunt u een vergunningsdossier met activa of een beeld/een video op een gelijkaardig onderwerp betrekking hebben. U kunt activa met elkaar in verband brengen die bepaalde gemeenschappelijke attributen delen. U kunt de eigenschap ook gebruiken om bron/afgeleid verband tussen activa tot stand te brengen. Bijvoorbeeld, als u een Pdf- dossier hebt dat van een INDD dossier wordt geproduceerd, kunt u het Pdf- dossier met zijn bronINDD dossier in verband brengen.
 
-Met deze functie hebt u de flexibiliteit om een PDF- of JPG-bestand met lage resolutie te delen met leveranciers of agentschappen en het INDD-bestand met hoge resolutie alleen op verzoek beschikbaar te maken.
+Gebruikend deze eigenschap, hebt u de flexibiliteit om een laag resolutiePdf- dossier of een JPG- dossier met verkopers of agentschappen te delen en het hoge resolutieINDD- dossier ter beschikking te stellen slechts op verzoek.
 
-## Relatieve elementen {#relating-assets}
+>[!NOTE] De gebruikers met geven toestemmingen uit kunnen activa met elkaar in verband brengen en losmaken.
+>
 
-1. Open vanuit de AEM-interface de pagina [!UICONTROL Eigenschappen] voor een element dat u wilt koppelen.
+## Relevante activa {#relating-assets}
+
+1. Van de interface AEM, open de pagina van [!UICONTROL Eigenschappen] voor activa die u wilt betrekking hebben.
 
    ![chlimage_1-272](assets/chlimage_1-272.png)
 
-   U kunt ook het element selecteren in de lijstweergave.
+   Alternatief, selecteer de activa van de lijstmening.
 
    ![chlimage_1-273](assets/chlimage_1-273.png)
 
-   U kunt het element ook selecteren in een verzameling.
+   U kunt de activa van een inzameling ook selecteren.
 
    ![chlimage_1-274](assets/chlimage_1-274.png)
 
-1. Als u een ander element wilt koppelen aan het element dat u hebt geselecteerd, klikt of tikt u op het pictogram **[!UICONTROL Relate]** op de werkbalk.
+1. Om een andere activa met de activa te relateren selecteerde u, klik/tik het **[!UICONTROL Relate]** pictogram van de toolbar.
 
    ![chlimage_1-275](assets/chlimage_1-275.png)
 
 1. Voer een van de volgende handelingen uit:
 
-   * Als u het bronbestand voor het element wilt koppelen, selecteert u **[!UICONTROL Bron]** in de lijst.
-   * Als u een afgeleid bestand wilt koppelen, selecteert u **[!UICONTROL Afgeleid]** van de lijst.
-   * Als u een relatie in twee richtingen wilt maken tussen de elementen, selecteert u **[!UICONTROL Overige]** in de lijst.
+   * Om het brondossier voor de activa, uitgezochte **[!UICONTROL Bron]** van de lijst met elkaar in verband te brengen.
+   * Om een afgeleid dossier met elkaar in verband te brengen, selecteer **[!UICONTROL Voortgekomen]** uit de lijst.
+   * Om een bidirectionele verhouding tussen de activa tot stand te brengen, selecteer **[!UICONTROL anderen]** van de lijst.
    ![chlimage_1-276](assets/chlimage_1-276.png)
 
-1. Navigeer in het scherm **[!UICONTROL Element]** selecteren naar de locatie van het element dat u wilt koppelen en selecteer het.
+1. Van het **[!UICONTROL Uitgezochte scherm van Activa]** , navigeer aan de plaats van de activa u, het wilt met elkaar in verband brengen en selecteren.
 
    ![chlimage_1-277](assets/chlimage_1-277.png)
 
-1. Klik op het pictogram **[!UICONTROL Bevestigen]** of tik erop.
-1. Klik op **[!UICONTROL OK]** of tik erop om het dialoogvenster te sluiten. Afhankelijk van uw keuze voor relatie in stap 3 wordt het gerelateerde actief vermeld onder een geschikte categorie in de **[!UICONTROL verwante]** sectie. Als het element dat u hebt verwant bijvoorbeeld het bronbestand voor het huidige element is, wordt het weergegeven onder **[!UICONTROL Bron]**.
+1. Klik/tik het pictogram **[!UICONTROL bevestigen]** .
+1. Klik/tik op **[!UICONTROL OK]** om het dialoogvenster te sluiten. Afhankelijk van uw keuze van relatie in stap 3, wordt het gerelateerde actief vermeld onder een geschikte categorie in de **[!UICONTROL Verwante]** sectie. Bijvoorbeeld, als de activa u verwant het brondossier voor de huidige activa is, is het vermeld onder **[!UICONTROL Bron]**.
 
    ![chlimage_1-278](assets/chlimage_1-278.png)
 
-1. Als u de koppeling met een element wilt opheffen, klikt u op de werkbalk op **[!UICONTROL Verwant]** maken.
+1. Als u de koppeling tussen een element wilt opheffen, klikt u op/tikt u op **[!UICONTROL Onverwant maken]** op de werkbalk.
 
    ![chlimage_1-279](assets/chlimage_1-279.png)
 
-1. Selecteer de elementen die u niet wilt koppelen in het dialoogvenster Relaties **** verwijderen en klik op **[!UICONTROL Onafhankelijk]**.
+1. Selecteer de elementen die u wilt loskoppelen van het dialoogvenster **[!UICONTROL Relaties]** verwijderen en klik op **[!UICONTROL Onverwant]**.
 
    ![chlimage_1-280](assets/chlimage_1-280.png)
 
-1. Klik op **[!UICONTROL OK]** of Tik op OK om het dialoogvenster te sluiten. De activa waarvoor u betrekkingen schrapte worden geschrapt van de lijst van verwante activa onder de **[!UICONTROL Verwante]** sectie.
+1. Klik/Tik **[!UICONTROL O.K]** om de dialoog te sluiten. De activa waarvoor u relaties hebt verwijderd, worden verwijderd uit de lijst van gerelateerde activa in de **[!UICONTROL Verwante]** sectie.
 
-## Verwante elementen vertalen {#translating-related-assets}
+## Vertaalgerelateerde bedrijfsmiddelen {#translating-related-assets}
 
-Het maken van bron-/afgeleide relaties tussen elementen met de functie Verwante elementen is ook handig in vertaalworkflows. Wanneer u een vertaalworkflow uitvoert op een afgeleid element, haalt AEM Assets automatisch alle elementen op waarnaar het bronbestand verwijst en die het bevat voor vertaling. Op deze manier wordt het element waarnaar door het bronelement wordt verwezen, samen met de bron en afgeleide elementen omgezet. Neem bijvoorbeeld een scenario waarin uw Engelse taalkopie een afgeleid element en het bronbestand van dat element bevat, zoals wordt weergegeven.
+Het creëren van bron/afgeleid verband tussen activa die de Verwante eigenschap van Activa gebruiken is ook nuttig in vertaalwerkschema&#39;s. Wanneer u een vertaalwerkschema op een afgeleid activa in werking stelt, haalt de Activa AEM automatisch om het even welke activa die de brondossierverwijzingen en omvat het voor vertaling. Op deze manier wordt het actief waarnaar wordt verwezen door het bronactief vertaald samen met de bron en de afgeleide activa. Bijvoorbeeld, overweeg een scenario waar uw Engels taalexemplaar een afgeleid activa en zijn brondossier zoals getoond omvat.
 
 ![chlimage_1-281](assets/chlimage_1-281.png)
 
-Als het bronbestand is gerelateerd aan een ander element, haalt AEM Assets het element waarnaar wordt verwezen op en neemt het dit voor vertaling op.
+Als het brondossier met een andere activa verwant is, haalt de Activa AEM het referenced activa en omvat het voor vertaling.
 
 ![chlimage_1-282](assets/chlimage_1-282.png)
 
-1. Vertaal de elementen in de bronmap naar een doeltaal door de stappen in [Een nieuw vertaalproject](translation-projects.md#create-a-new-translation-project)maken uit te voeren. In dit geval vertaalt u uw middelen bijvoorbeeld naar het Frans.
-1. Open vanuit de pagina [!UICONTROL Projecten] de vertaalmap.
+1. Vertaal de activa in de bronomslag aan een doeltaal door de stappen in te volgen [creeer een nieuw vertaalproject](translation-projects.md#create-a-new-translation-project). In dit geval bijvoorbeeld, vertaal uw activa naar het Frans.
+1. Van de pagina van [!UICONTROL Projecten] , open de vertaalomslag.
 
    ![chlimage_1-283](assets/chlimage_1-283.png)
 
-1. Klik/Tik de projecttegel om de detailspagina te openen.
+1. Klik/Tik de projectegel om de detailspagina te openen.
 
    ![chlimage_1-284](assets/chlimage_1-284.png)
 
-1. Klik op of tik op de ovalen onder de Vertaaltaak-kaart om de status van de vertaling weer te geven.
+1. Klik/tik op de ellipsen onder de Vertaal-taakkaart om de vertaalstatus te bekijken.
 
    ![chlimage_1-285](assets/chlimage_1-285.png)
 
-1. Selecteer het element en klik/tik op **[!UICONTROL Tonen in elementen]** op de werkbalk om de vertaalstatus voor het element weer te geven.
+1. Selecteer de activa en klik/tik **[!UICONTROL openbaart in Activa]** van de toolbar om de vertaalstatus voor de activa te bekijken.
 
    ![chlimage_1-286](assets/chlimage_1-286.png)
 
-1. Klik op het bronelement of tik erop om te controleren of de aan de bron gerelateerde elementen zijn omgezet.
+1. Om te verifiëren of de activa met betrekking tot de bron zijn vertaald, klik/tik de bronactiva.
 
    ![chlimage_1-287](assets/chlimage_1-287.png)
 
-1. Selecteer het element dat betrekking heeft op de bron en klik op **[!UICONTROL Tonen in elementen]**. Het vertaalde gerelateerde element wordt weergegeven.
+1. Selecteer de activa die met de bron verwant zijn, en klik/tik **[!UICONTROL openbaart in Activa]** dan. Het vertaalde gerelateerde element wordt weergegeven.
 
    ![chlimage_1-288](assets/chlimage_1-288.png)

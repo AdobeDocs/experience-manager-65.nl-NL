@@ -1,8 +1,8 @@
 ---
-title: Elementen importeren en exporteren naar AEM-formulieren
-seo-title: Elementen importeren en exporteren naar AEM-formulieren
-description: U kunt adaptieve formulieren en sjablonen importeren en exporteren vanuit en in AEM-instanties. Zo kunt u formulieren migreren of verplaatsen naar andere systemen.
-seo-description: U kunt adaptieve formulieren en sjablonen importeren en exporteren vanuit en in AEM-instanties. Zo kunt u formulieren migreren of verplaatsen naar andere systemen.
+title: Het invoeren van en het uitvoeren van activa naar de Vormen van AEM
+seo-title: Het invoeren van en het uitvoeren van activa naar de Vormen van AEM
+description: U kunt adaptieve formulieren en sjablonen importeren en exporteren vanuit en naar AEM-instanties. Dit helpt bij het migreren van vormen of het verplaatsen ervan over systemen.
+seo-description: U kunt adaptieve formulieren en sjablonen importeren en exporteren vanuit en naar AEM-instanties. Dit helpt bij het migreren van vormen of het verplaatsen ervan over systemen.
 uuid: 937daedd-56f3-4e02-b695-b194b494d9bf
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,247 +10,247 @@ topic-tags: forms-manager
 discoiquuid: 69210727-dde3-495a-87b7-2e8173e6b664
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4dc4a518c212555b7833ac27de02087a403d3517
+source-git-commit: 5035c9630b5e861f4386e1b5ab4f4ae7a8d26149
 
 ---
 
 
-# Elementen importeren en exporteren naar AEM-formulieren{#importing-and-exporting-assets-to-aem-forms}
+# Het invoeren van en het uitvoeren van activa naar de Vormen van AEM{#importing-and-exporting-assets-to-aem-forms}
 
-U kunt formulieren en gerelateerde elementen, thema&#39;s, gegevenswoordenboeken, documentfragmenten en letters verplaatsen tussen verschillende instanties van AEM Forms. Een dergelijke verplaatsing is vereist wanneer u systemen migreert of formulieren verplaatst van een werkgebiedserver naar een productieserver. Voor die elementen waarvoor uploaden en importeren via de interface van AEM Forms wordt ondersteund, is het gebruik van de interface Formulieren de aanbevolen manier voor exporteren of importeren. Het wordt niet aanbevolen AEM Package Manager te gebruiken voor het exporteren of importeren van dergelijke elementen.
+U kunt vormen en verwante activa, thema&#39;s, gegevenswoordenboeken, documentfragmenten, en brieven tussen verschillende instanties van Vormen bewegen AEM. Een dergelijke beweging is vereist wanneer het migreren van systemen of het bewegen van vormen van een stadiumserver aan een productieserver. Voor die activa waarvoor upload en de invoer via de Vormen UI van AEM wordt gesteund, is het gebruiken van de Vormen UI de geadviseerde manier voor de uitvoer of de invoer. Het gebruik van AEM Package Manager voor het exporteren of importeren van dergelijke bedrijfsmiddelen wordt niet aanbevolen.
 
 >[!NOTE]
 >
->* In AEM 6.4-formulieren zijn de structuur en paden van de crx-gegevensopslagruimte gewijzigd. Als u elementen uit een vorige versie importeert naar AEM 6.4 Forms en het formulier afhankelijk is van de oudere structuur, moet u de afhankelijkheden handmatig exporteren. Zie [Repository Reform in AEM 6.4](/help/sites-deploying/repository-restructuring-in-aem65.md)voor meer informatie over wijzigingen in de structuur en de paden van de repository.
+>* In AEM 6.4 vormen, zijn de structuur en de wegen van crx-bewaarplaats veranderd. Als u activa van een vorige versie aan Vormen AEM 6.4 invoert en de vorm sommige gebiedsdelen op de oudere structuur heeft, moet u de gebiedsdelen manueel uitvoeren. Zie voor meer informatie over wijzigingen in de structuur en de paden van de opslagplaats de [Repository Restructuring in AEM](/help/sites-deploying/repository-restructuring.md).
 >
 
 
 
-## Forms &amp; Documents-middelen downloaden of uploaden {#download-or-upload-forms-amp-documents-assets}
+## Download of upload de Vormen &amp; de activa van Documenten {#download-or-upload-forms-amp-documents-assets}
 
-Met de gebruikersinterface van AEM Forms kunt u elementen uit een AEM-instantie exporteren door deze als een AEM CRX-pakket of binaire bestanden te downloaden. U kunt het gedownloade AEM CRX-pakket of het binaire bestand vervolgens importeren in een andere AEM-instantie.
+Het gebruikersinterface van de Vormen AEM staat u toe om activa van een instantie uit te voeren AEM door hen te downloaden als CRX-Pakket AEM of binaire dossiers. U kunt het gedownloade AEM CRX-pakket of het binaire dossier in een andere instantie dan invoeren AEM.
 
-Exporteren en importeren via de gebruikersinterface van AEM Forms wordt ondersteund voor alle elementen, met uitzondering van sjablonen voor adaptieve formulieren en beleid voor adaptieve formulierinhoud. Bij het exporteren van een adaptief formulier uit de gebruikersinterface van AEM Forms worden de gerelateerde aangepaste formuliersjabloon en het inhoudsbeleid daarom niet automatisch geëxporteerd als andere gerelateerde elementen.
+De uitvoer en de invoer via AEM vormt gebruikersinterface wordt gesteund voor alle activa behalve de Aanpassings malplaatjes van de Vorm en het Aanpassings de inhoudsbeleid van de Vorm. Daarom bij het uitvoeren van een adaptieve vorm van de Vormen UI van AEM, worden het verwante adaptieve vormmalplaatje en inhoudsbeleid niet automatisch uitgevoerd zoals andere verwante activa.
 
-Voor deze elementtypen moet u AEM Package Manager gebruiken om een CRX-pakket te maken op de AEM-bronserver en het pakket op de doelserver te installeren. Zie [Werken met pakketten](/help/sites-administering/package-manager.md)voor informatie over het maken en installeren van pakketten.
+Voor deze activatypes, moet u de Manager van het Pakket van AEM gebruiken om een CRX pakket op de bronAEM server tot stand te brengen en het pakket op de bestemmingsserver te installeren. Voor informatie over het creëren van en het installeren van pakketten, zie het [Werken met pakketten](/help/sites-administering/package-manager.md).
 
-### Formulieren en documenten downloaden {#download-forms-amp-documents-assets}
+### Vormen en documenten downloaden {#download-forms-amp-documents-assets}
 
-U kunt als volgt formulieren en documenten downloaden:
+Om Vormen &amp; de activa van Documenten te downloaden:
 
-1. Meld u aan bij de instantie AEM Forms.
-1. Tik op het pictogram ![adobeexperience Manager](assets/adobeexperiencemanager.png) > ![Navigatie compass](assets/compass.png) pictogram > Formulieren > Formulieren en documenten.
-1. Selecteer de formulierelementen en tik op het pictogram **Downloaden** .
-1. Kies in het (de) downloadmiddel(en) een van de volgende opties en tik op **Downloaden**.
+1. Login aan de instantie van Vormen AEM.
+1. Het pictogram van de Manager van de Ervaring van het lusje ![adobeexperience](assets/adobeexperiencemanager.png) > navigatie ![compass](assets/compass.png) pictogram> Vormen > Vormen &amp; Documenten.
+1. Selecteer de vormenactiva en tik het pictogram van de **Download** .
+1. Kies in de downloadmiddelen een van de volgende opties en tik op **Downloaden**.
 
-   * **** Downloaden als CRX-pakket: Gebruik de optie om alle geselecteerde elementen en gerelateerde afhankelijkheden te downloaden en te verplaatsen van een AEM Forms-instantie naar een andere. Alle elementen en mappen worden als crx-pakket gedownload. Alle formulierelementen, waaronder de formulieren die zijn geschreven in AEM (adaptieve formulieren, interactieve communicatie en adaptieve formulierfragmenten), formuliersets, formuliersjablonen, PDF-documenten en bronnen (XSD&#39;s, XFS, afbeeldingen) kunnen als pakket worden gedownload vanuit de gebruikersinterface van AEM Forms.
-Het voordeel van het downloaden van elementen als pakket is dat ook elementen worden gedownload die door het geselecteerde element zijn gebruikt om te downloaden. Als u bijvoorbeeld een adaptief formulier hebt waarin een formuliersjabloon, XSD en een afbeelding worden gebruikt. Wanneer u dit adaptieve formulier selecteert en het als pakket downloadt, bevat het gedownloade pakket ook de formuliersjabloon, XSD en de afbeelding. Alle metagegevenseigenschappen (inclusief aangepaste eigenschappen) die aan het element zijn gekoppeld, worden ook gedownload.
+   * **Download als CRX-pakket:** Gebruik de optie om alle geselecteerde bedrijfsmiddelen en bijbehorende afhankelijkheden te downloaden en te verplaatsen van een AEM-instantie Formulieren naar een andere. Het downloadt alle activa en omslagen als crx pakket. Om het even welke vormactiva met inbegrip van de vormen authored in AEM (adaptieve vormen, Interactieve Mededelingen, en adaptieve vormfragmenten), vormreeksen, vormmalplaatjes, Pdf- documenten, en middelen (XSDs, XFS, beelden) kunnen als pakket van Vormen UI worden gedownload AEM.
+Het voordeel van het downloaden van activa als pakket is dat het ook activa downloadt die door de activa zijn gebruikt die aan download worden geselecteerd. Bijvoorbeeld, als u een adaptieve vorm hebt die een vormmalplaatje, XSD, en een beeld gebruikt. Wanneer u dit adaptieve formulier selecteert en het als pakket downloadt, bevat het gedownloade pakket ook het formuliersjabloon XSD en de afbeelding. Alle meta-gegevenseigenschappen (met inbegrip van douaneeigenschappen) verbonden aan de activa worden ook gedownload.
 
-   * **** Elementen downloaden als binaire bestanden: Gebruik de optie om alleen formuliersjablonen (XDP), PDF-formulieren (PDF), document (PDF) en bronnen (afbeeldingen, schema&#39;s, opmaakmodellen) te downloaden. U kunt deze elementen bewerken met externe toepassingen. De formulierbestanden met binaire bestanden, zoals XSD&#39;s, XDP&#39;s, afbeeldingen, PDF&#39;s en XDP&#39;s, worden gedownload als ZIP-bestand.
-U kunt geen adaptieve formulieren, interactieve communicatie, adaptieve formulierfragmenten, thema&#39;s en formuliersets downloaden met de optie Elementen **downloaden als binaire bestanden** . Gebruik de optie **Downloaden als CRX-pakket** om deze middelen te downloaden.
+   * **Activa downloaden als binaire bestanden:** Gebruik de optie om slechts vormmalplaatjes (XDP), vormen PDF (PDF), document (PDF), en middelen (beelden, schema&#39;s, stylesheets) te downloaden. U kunt deze activa met externe toepassingen uitgeven. Het downloadt de vormenactiva die binaire getallen, zoals XSDs, XDPs, beelden, PDFs, en XDPs als .zip dossier hebben.
+U kunt geen adaptieve vormen, Interactieve Mededelingen, adaptieve vormfragmenten, thema&#39;s, en vormreeksen met de activa van de **Download downloaden als binaire dossieroptie** downloaden. Om deze activa te downloaden, zou u **Download als optie van het Pakket** van CRX moeten gebruiken.
    De geselecteerde elementen worden gedownload als een archief (.zip-bestand).
 
    >[!NOTE]
    >
-   >Zowel AEM-pakket als binaire bestanden worden gedownload als een archief (.zip-bestand). De sjablonen voor de elementen worden niet samen met de elementen gedownload. U moet de elementsjablonen afzonderlijk exporteren.
+   >Zowel het pakket van AEM als de binaire dossiers worden gedownload als archief (.zip- dossier). De malplaatjes voor de activa worden niet gedownload samen met de activa. U moet de activamalplaatjes afzonderlijk uitvoeren.
 
-### Elementen van formulieren en documenten uploaden {#upload-forms-amp-documents-assets}
+### Vormen en documenten uploaden {#upload-forms-amp-documents-assets}
 
-U kunt als volgt formulieren en documenten uploaden:
+Om Vormen &amp; de activa van Documenten te uploaden:
 
 >[!VIDEO](https://vimeo.com/)
 
-1. Meld u aan bij de instantie AEM Forms.
-1. Tik op het pictogram ![adobeexperience Manager](assets/adobeexperiencemanager.png) > ![Navigatie compass](assets/compass.png) pictogram > Formulieren > Formulieren en documenten.
-1. Tik op **Maken** >**Bestand uploaden**. Er wordt een dialoogvenster voor het uploaden of verpakken weergegeven.
-1. Blader in het dialoogvenster naar het te importeren pakket of archief en selecteer dit. U kunt ook PDF-document, XSD&#39;s, afbeeldingen, opmaakmodellen en XDP-formulieren selecteren. Tik op **Openen**. De map of de bestandsnaam die u selecteert, mag geen speciale tekens bevatten.
+1. Login aan de instantie van Vormen AEM.
+1. Het pictogram van de Manager van de Ervaring van het lusje ![adobeexperience](assets/adobeexperiencemanager.png) > van de navigatie ![kompas](assets/compass.png) pictogram> Vormen> Vormen &amp; Documenten.
+1. Tik **maken** >**Bestand uploaden**. Upload formulieren of het dialoogvenster Pakket.
+1. In de dialoogdoos, doorblader en selecteer het pakket of het archief aan de invoer. U kunt Pdf- document, XSDs, beelden, stylesheets, en vormen ook selecteren XDP. Tik **open**. De omslag of het dossier - de naam die uitgezocht u moet geen speciale karakters omvatten.
 
-   Controleer in het dialoogvenster de details van de elementen die worden geüpload en tik op **Uploaden**.
+   Voor de dialoogdoos, verifieer de details van activa die worden geupload, en de kraan **uploadt**.
 
-   Als u een bestaand formulierelement uploadt, wordt het element bijgewerkt.
+   In het geval, uploadt u een bestaande vormenactiva, wordt de activa bijgewerkt.
 
    >[!NOTE]
    >
-   >Het uploaden van een pakket vervangt de bestaande maphiërarchie niet. Als u bijvoorbeeld een adaptief formulier hebt met de naam &#39;Training&#39; op de locatie /content/dam/formsanddocuments op één server. U downloadt het adaptieve formulier en uploadt het formulier naar een andere server. De tweede server heeft ook een map met de naam &#39;Training&#39; op dezelfde locatie/content/dam/formsanddocuments. Het uploaden mislukt.
+   >Het uploaden van een pakket vervangt geen bestaande omslaghiërarchie. Bijvoorbeeld, als u een adaptieve vorm genoemd &quot;Opleiding&quot;bij plaats /content/dam/formsanddocuments op één server hebt. U downloadt het adaptieve formulier en uploadt het formulier op een andere server. De tweede server heeft ook een omslag met naam &quot;Opleiding&quot;bij de zelfde plaats /content/dam/formsanddocuments. Uploaden mislukt.
 
 ## Een thema downloaden of uploaden {#downloading-or-uploading-a-theme}
 
-Met AEM Forms kunt u thema&#39;s maken, downloaden of uploaden. Net als andere elementen, zoals formulieren, documenten en letters, wordt een thema gemaakt. U kunt een thema maken, dit downloaden en uploaden naar een aparte versie om het opnieuw te gebruiken. Zie [Thema&#39;s in AEM-formulieren](../../forms/using/themes.md)voor meer informatie over thema&#39;s.
+Met Vormen AEM, kunt u, thema&#39;s tot stand brengen downloaden of uploaden. Een thema wordt gecreeerd zoals andere activa zoals vormen, documenten, en brieven. U kunt een thema tot stand brengen, het downloaden, en het uploaden op een afzonderlijke instantie om het opnieuw te gebruiken. Voor meer informatie over thema&#39;s, zie [Thema&#39;s in Vormen](../../forms/using/themes.md)AEM.
 
 ### Een thema downloaden {#downloading-a-theme}
 
-U kunt thema&#39;s in AEM-formulieren exporteren die u kunt gebruiken in andere projecten of instanties. Met AEM kunt u thema downloaden als ZIP-bestand. U kunt dit bestand op dat moment uploaden.
+U kunt thema&#39;s in Vormen uitvoeren AEM die u in andere projecten of instanties kunt gebruiken. Met AEM kunt u thema downloaden als zip-bestand, dat u op de instantie kunt uploaden.
 
-Een thema downloaden:
+Om een thema te downloaden:
 
-1. Meld u aan bij de instantie AEM Forms.
-1. Tik op het pictogram ![adobeexperience](assets/adobeexperiencemanager.png) Manager > Navigatie ![kompas](assets/compass.png) pictogram > Formulieren > Thema&#39;s.
-1. Selecteer het thema en tik op **Downloaden**. Het thema wordt gedownload als een archief (.zip-bestand).
+1. Login aan de instantie van Vormen AEM.
+1. Het pictogram van de Manager van de Ervaring van de ![adobeexperience](assets/adobeexperiencemanager.png) > van de navigatie ![kompas](assets/compass.png) pictogram> Vormen> Thema&#39;s.
+1. Selecteer het thema en tik op **Download**. Het thema wordt gedownload als archief (.zip dossier).
 
 ### Een thema uploaden {#uploading-a-theme}
 
-U kunt gemaakte thema&#39;s gebruiken met voorinstellingen voor stijlen voor uw project. U kunt themapakketten die anderen maken, importeren door deze te uploaden naar uw project.
+U kunt gecreeerde thema&#39;s met het stileren gebruiken vooraf instelt op uw project. U kunt themapakketten invoeren die anderen door hen op uw project te uploaden creëren.
 
-Een thema uploaden:
+Om een thema te uploaden:
 
-1. Navigeer in Experience Manager naar **Formulieren > Thema**&#39;s.
-1. Klik op de pagina Thema&#39;s op **Maken > Bestand uploaden**.
-1. Blader in de vraag Bestand uploaden naar en selecteer een themapakket op uw computer en klik op **Uploaden**.
-Het geüploade thema is beschikbaar op de themapagina.
+1. In de Manager van de Ervaring, navigeer aan **Vormen > Thema**.
+1. In de pagina van Thema&#39;s, leidt de klik **tot > Dossier uploadt**.
+1. In het Dossier upload snel, doorblader en selecteer een themapakket op uw computer en de klik **uploadt**.
+Het geüploade thema is beschikbaar in de themapagina.
 
-1. Meld u aan bij de instantie AEM Forms.
-1. Tik op het pictogram ![adobeexperience](assets/adobeexperiencemanager.png) Manager > Navigatie ![kompas](assets/compass.png) pictogram > Formulieren > Thema&#39;s.
-1. Klik op **Maken** > **Bestand uploaden**. Blader in de vraag Bestand uploaden naar en selecteer een themapakket op uw computer en klik op **Uploaden**. Het thema wordt geüpload.
+1. Login aan de instantie van Vormen AEM.
+1. Het pictogram van de Manager van de Ervaring van de ![adobeexperience](assets/adobeexperiencemanager.png) > van de navigatie ![kompas](assets/compass.png) pictogram> Vormen> Thema&#39;s.
+1. Klik **creëren** > **Dossier uploaden**. In het Dossier upload snel, doorblader en selecteer een themapakket op uw computer en de klik **uploadt**. Het thema wordt geüpload.
 
-## Importeren en exporteren van activa in Correspondentenbeheer {#import-and-export-assets-in-correspondence-management}
+## In- en uitvoeractiva in correspondentiebeheer {#import-and-export-assets-in-correspondence-management}
 
-Als u elementen, zoals gegevenswoordenboeken, letters en documentfragmenten, wilt delen tussen twee verschillende implementaties van Correspondence Management, kunt u .cmp-bestanden maken en delen. Een .cmp-bestand kan een of meer gegevenswoordenboeken, letters, documentfragmenten en formulieren bevatten.
+Om activa, zoals gegevenswoordenboeken, brieven, en documentfragmenten, tussen twee verschillende implementaties van het Beheer van de Correspondentie te delen, kunt u .cmp- dossiers tot stand brengen en delen. Een .cmp- dossier kan één of meerdere gegevenswoordenboeken, brieven, documentfragmenten, en vormen omvatten.
 
-### Documentfragmenten, letters en/of gegevenswoordenboeken exporteren {#export-document-fragments-letters-and-or-data-dictionaries}
+### De Fragmenten van het Document van de uitvoer, Brieven, en/of de Woordenboeken van Gegevens {#export-document-fragments-letters-and-or-data-dictionaries}
 
-1. Tik op de pagina&#39;s met letters, documentfragmenten of gegevenswoordenboeken op de elementen die u naar één pakket wilt exporteren en tik vervolgens op Wachtrij voor downloaden. De elementen zijn in een voor export geschikte indeling geplaatst.
-1. Herhaal indien nodig de bovenstaande stap om letters, documentfragmenten en gegevenswoordenboeken toe te voegen.
+1. In de brieven, documentfragmenten, of de pagina&#39;s van het gegevenswoordenboek, tik en selecteer de activa u naar één enkel pakket wilt uitvoeren, en dan Rij voor Download tikken. De activa zijn in de rij voor de uitvoer.
+1. Zoals vereist, herhaal de bovengenoemde stap om brieven, documentfragmenten, en gegevenswoordenboeken toe te voegen.
 1. Tik op **Downloaden**.
-1. Correspondentiebeheer geeft het dialoogvenster Asset(s) downloaden weer met een lijst met elementen in de exportlijst.
+1. Correspondentiebeheer toont een dialoog over de downloadmiddelen met een lijst van activa in de exportlijst.
 
-   ![export](assets/export.png)
+   ![exporteren](assets/export.png)
 
-1. Tik op Oplossen om de afhankelijkheden weer te geven die worden geëxporteerd. Of ga naar de volgende stap. Zelfs als u niet op Oplossen tikt, worden de afhankelijkheden nog steeds geëxporteerd.
-1. Tik op **OK** om het .cmp-bestand te downloaden.
-1. Correspondentiebeheer downloadt een .cmp-bestand naar de computer.
+1. Om de gebiedsdelen te bekijken die worden uitgevoerd, lost het Lusje op. Of ga naar de volgende stap. Zelfs als u niet tikt lost op, worden de gebiedsdelen nog uitgevoerd.
+1. Om het .cmp- dossier te downloaden, **O.K**. te tikken.
+1. Het Beheer van de correspondentie downloadt een .cmp- dossier aan uw computer.
 
    Het .cmp- dossier omvat de uitgevoerde activa. U kunt het .cmp- dossier met anderen delen. Andere gebruikers kunnen het .cmp- dossier in een verschillende server invoeren om alle activa in de nieuwe server te krijgen.
 
-### Alle Correspondentenbeheermiddelen als een pakket exporteren {#export-all-the-correspondence-management-assets-as-a-package}
+### Alle activa van het Beheer van de Correspondentie als pakket uitvoeren {#export-all-the-correspondence-management-assets-as-a-package}
 
-Gebruik deze optie om alle Correspondence Management-elementen en gerelateerde afhankelijkheden als een pakket te downloaden van een instantie van AEM-formulieren.
+Gebruik deze optie om alle activa van het Beheer van de Correspondentie en verwante gebiedsdelen als pakket van een AEM vormeninstantie te downloaden.
 
-Als Correspondence Management bijvoorbeeld een brief heeft waarin een afbeelding en tekst worden gebruikt, bevat het gedownloade pakket ook de afbeelding en de tekst die betrekking hebben op de brief. Alle metagegevenseigenschappen (inclusief aangepaste eigenschappen) die aan het element zijn gekoppeld, worden ook gedownload. Nadat u het pakket (.cmp) hebt gedownload, kunt u het pakket [importeren naar een andere AEM Forms-instantie](../../forms/using/import-export-forms-templates.md#p-upload-forms-documents-assets-p).
+Bijvoorbeeld, als het Beheer van de Correspondentie een brief heeft die een beeld en een tekst gebruikt, bevat het gedownloade pakket ook het beeld en de tekst met betrekking tot de brief. Alle meta-gegevenseigenschappen (met inbegrip van douaneeigenschappen) verbonden aan de activa worden ook gedownload. Zodra u het pakket (.cmp) hebt gedownload, kunt u het pakket in een verschillende instantie [van Vormen](../../forms/using/import-export-forms-templates.md#p-upload-forms-documents-assets-p)invoeren AEM.
 
-Voer de volgende stappen uit om alle Correspondence Management-elementen en gerelateerde afhankelijkheden als een pakket te downloaden:
+Om alle activa van het Beheer van de Correspondentie en verwante gebiedsdelen als pakket te downloaden, voltooi de volgende stappen:
 
-1. Meld u als gebruiker van formulieren aan bij de AEM Forms-server.
-1. Tik op **Adobe Experience Manager** in de algemene navigatiebalk.
-1. Tik op de gereedschappen ( ![gereedschappen](assets/tools.png)) en tik vervolgens op **Formulieren**.
+1. Login aan de server van Vormen AEM als vormengebruiker.
+1. De Manager **van de Ervaring van** Adobe van het lusje in de Globale bar van de Navigatie.
+1. De hulpmiddelen van het tikje ( ![hulpmiddelen](assets/tools.png)) en toen de **Vormen** van de kraan.
 1. Tik op **Correspondentiebeheermiddelen** exporteren.
 
-   ![publish-cmp-assets-1](assets/publish-cmp-assets-1.png)
+   ![publiceren-cmp-activa-1](assets/publish-cmp-assets-1.png)
 
-   ( &quot;De pagina Alle correspondentiebeheermiddelen exporteren wordt weergegeven. Deze pagina bevat de informatie over de laatste keer dat het exportproces is gestart en een koppeling om het laatst geëxporteerde pakket te downloaden.
+   ( &quot;De Uitvoer Al pagina van de Activa van het Beheer van de Correspondentie verschijnt en toont de informatie over de laatste keer het proces van de Uitvoer werd geprobeerd en een verbinding om het laatste met succes uitgevoerde pakket te downloaden.
 
-   ![export-last-run-details](assets/export-last-run-details.png)
+   ![details over de laatste uitvoering van de export](assets/export-last-run-details.png)
 
 1. Tik op **Exporteren** en tik in het bevestigingsbericht op **OK**.
 
-   Nadat een batchproces is voltooid, worden de laatste uitvoergegevens en de koppeling om het pakket te downloaden bijgewerkt. Dit omvat informatie zoals de login van de Beheerder en als de partij met succes of ontbrak. De elementen worden geëxporteerd naar een pakket en de koppeling Geëxporteerd pakket downloaden wordt weergegeven.
+   Nadat een partijproces volledig is, worden de laatste looppasdetails en de verbinding om het pakket te downloaden bijgewerkt. Dit omvat informatie zoals login van de Beheerder en als de partijlooppas met succes of ontbrak. De activa worden uitgevoerd naar een pakket en de Download Uitgevoerde verbinding van het Pakket verschijnt.
 
    >[!NOTE]
    >
-   >Het proces Alle elementen exporteren kan niet worden geannuleerd nadat het is gestart. Zorg er tijdens het exporteren van alle bewerkingen voor dat u geen elementen maakt, verwijdert, wijzigt of publiceert, en start het proces Alle elementen publiceren.a
+   >Het proces van alle activa exporteren kan niet worden geannuleerd zodra het is gestart. Ook, terwijl de uitvoer al verrichting in proces is, creeer, schrap niet, wijzig of publiceer geen activa of stel in werking publiceren Al Activa proces.a in werking
 
-1. Tik op de koppeling Geëxporteerd pakket **** downloaden om het pakketbestand te downloaden.
+1. Tik op de link **Downloaden geëxporteerd pakket** om het pakketbestand te downloaden.
 
-   Als u de elementen in het pakket wilt toevoegen aan een andere instantie van Correspondence Management, [importeert u het pakket naar een instantie](../../forms/using/import-export-forms-templates.md#p-upload-forms-documents-assets-p)van AEM Forms.
+   Om de activa in het pakket aan een andere instantie van het Beheer van de Correspondentie toe te voegen, [voer het pakket in een instantie](../../forms/using/import-export-forms-templates.md#p-upload-forms-documents-assets-p)van Vormen AEM in.
 
-### Documentfragmenten, letters en/of gegevenswoordenboeken importeren in Correspondentenbeheer {#import-document-fragments-letters-and-or-data-dictionaries-into-correspondence-management}
+### Documentfragmenten, letters en/of gegevenswoordenboeken importeren in Correspondentiebeheer {#import-document-fragments-letters-and-or-data-dictionaries-into-correspondence-management}
 
-U kunt elementen importeren die naar een .cmp-bestand worden geëxporteerd. Een .cmp- dossier kan één of meerdere brieven, gegevenswoordenboeken, documentfragmenten, en afhankelijke activa hebben.
+U kunt activa invoeren die in een .cmp- dossier worden uitgevoerd. Een .cmp- dossier kan één of meerdere brieven, gegevenswoordenboeken, documentfragmenten, en afhankelijke activa hebben.
 
 >[!NOTE]
 >
->Meld u aan met een beheerdersaccount bij het importeren van oude Correspondentiebeheermiddelen voor migratie. Zie Correspondence Management-middelen migreren [naar AEM 6.1-formulieren](/help/forms/using/migration-utility.md)voor meer informatie over het migreren van oude Correspondentiebeheermiddelen.
+>Terwijl het invoeren van de oude activa van het Beheer van de Correspondentie voor migratie, login gebruikend een rekening Admin. Voor meer informatie over het Migreren van de oude activa van het Beheer van de Correspondentie, zie de activa van het Beheer van de Correspondentie [migreren aan AEM 6.1 vormen](/help/forms/using/migration-utility.md).
 
-1. Tik in het gegevenswoordenboek, de letters of de pagina met documentfragmenten op **Maken > Bestand uploaden** en selecteer het .cmp-bestand.
-1. In het dialoogvenster Elementen importeren wordt het dialoogvenster Correspondentiebeheer weergegeven met de lijst met geïmporteerde elementen. Tik op **Importeren**.
+1. Voor het gegevenswoordenboek, de brieven, of de pagina van documentfragmenten, **leiden de Tik tot > Dossier uploadt** en selecteert het .cmp dossier.
+1. Het Beheer van de correspondentie toont de dialoog van de Activa van de Invoer met de lijst van activa die worden ingevoerd. Tik op **importeren**.
 
-   Na het importeren van de elementen worden de volgende eigenschappen van de elementen bijgewerkt, terwijl de andere eigenschappen ongewijzigd blijven:
+   Na het invoeren van de activa, worden de volgende eigenschappen van de activa bijgewerkt terwijl de andere eigenschappen het zelfde blijven:
 
-   * Auteur: Hiermee geeft u de id weer van de gebruiker die het element naar de server heeft geïmporteerd
-   * Gewijzigd: De tijd waarop het element naar de server is geïmporteerd
+   * Auteur: Toont identiteitskaart van de gebruiker die de activa aan de server invoerde
+   * Gewijzigd: De tijd toen de activa in de server werden ingevoerd
    >[!NOTE]
    >
-   >Als u XDP&#39;s wilt uploaden (als onderdeel van het cmp-bestand of anderszins), moet u deel uitmaken van een gebruikersgroep voor formulieren. Neem contact op met de beheerder voor toegangsrechten.
+   >Voor u om XDPs (als deel van het cmp- dossier of anders) te kunnen uploaden, moet u een deel van vorm-macht-gebruikersgroep zijn. Voor toegangsrechten, contacteer de beheerder.
 
-## Een workflowtoepassing exporteren {#export-a-workflow-application}
+## Een werkstroomtoepassing exporteren {#export-a-workflow-application}
 
-U kunt AEM pakketbeheer gebruiken om workflowtoepassingen te exporteren. De procedure is als volgt:
+U kunt AEM pakketmanager gebruiken om werkschematoepassingen uit te voeren. De procedure is als volgt:
 
-1. Open AEM Forms package Manager. URL van pakketbeheer is https://&lt;server>:&lt;port>/crx/packmgr.
-1. Klik op Pakket **** maken. The **[!UICONTROL New Package]** dialog box appears.
-1. Geef een naam, versie en groep voor het pakket op. Click **[!UICONTROL OK]**.
-1. Klik op **[!UICONTROL Bewerken]** en open het tabblad **[!UICONTROL Filters]** . Klik op Filter **** toevoegen. Geef het pad van de workflowtoepassing op. Bijvoorbeeld /etc/fd/dashboard/startpoints/homemortgauge. Klik op **[!UICONTROL Regel]** toevoegen.
+1. Open AEM Formuliermanager. URL van pakketmanager is https://&lt;server>:&lt;port>/crx/packmgr.
+1. Klik op **[!UICONTROL Pakket]** maken. The **[!UICONTROL New Package]** dialog box appears.
+1. Specificeer naam, versie, en groep voor het pakket. Click **[!UICONTROL OK]**.
+1. Klik **[!UICONTROL uitgeven]** en openen de **[!UICONTROL Filters]** tabel. Klik **[!UICONTROL toevoegen Filter]**. Specificeer de weg van de werkschematoepassing. Bijvoorbeeld /etc/fd/dashboard/startpoints/homemortgage. Klik **[!UICONTROL toevoegen regel]**.
 
-1. Open het tabblad **[!UICONTROL Geavanceerd]** . Selecteer **[!UICONTROL Fusie]** of **[!UICONTROL Overschrijf]** op ACL Behandelend gebied. Click **[!UICONTROL Save]**.
-1. Klik op **[!UICONTROL Samenstellen]** om het pakket te maken.
+1. Open het tabblad **[!UICONTROL Geavanceerd]** . Selecteer **[!UICONTROL Fusie]** of **[!UICONTROL beschrijven]** op ACL het Behandelend gebied. Click **[!UICONTROL Save]**.
+1. Klik **[!UICONTROL Bouwstijl]** om het pakket tot stand te brengen.
 
-   Nadat het pakket is gemaakt, kunt u het pakket downloaden en naar de andere server importeren. De workflowtoepassing wordt weergegeven op de server waarop het pakket is geüpload.
+   Nadat het pakket is gemaakt, kunt u het pakket downloaden en importeren naar de andere server. De werkschematoepassing verschijnt op de server waar het pakket wordt geupload.
 
    >[!NOTE]
    >
-   >De workflowtoepassing werkt alleen naar behoren als u het bijbehorende adaptieve formulier- en workflowmodel exporteert met de werktoepassing.
+   >Om de werkstroomtoepassing goed te laten werken, exporteert u ook het bijbehorende adaptieve formulier- en werkstroommodel met de werkapplicatie.
 
-## Mappen en elementen ordenen {#folders-and-organizing-assets}
+## Omslagen en organisatieactiva {#folders-and-organizing-assets}
 
-In de gebruikersinterface van AEM Forms worden mappen gebruikt om elementen te rangschikken. Deze mappen worden gebruikt voor het rangschikken van elementen die zijn gemaakt in de gebruikersinterface van AEM Forms. U kunt de naam van submappen wijzigen, submappen maken en elementen en documenten in deze mappen opslaan. Door documenten en elementen in een map te ordenen, kunt u de bestanden groeperen voor eenvoudig beheer. U kunt een map selecteren en deze downloaden of verwijderen.
+Het gebruikersinterface van Vormen AEM gebruikt omslagen om activa te schikken. Deze omslagen worden gebruikt voor het schikken van activa die binnen AEM worden gecreeerd vormt gebruikersinterface. U kunt de naam, subfolders, en opslagactiva en documenten in deze omslagen anders creëren. Het organiseren van documenten en activa in een omslag staat u toe om de dossiers samen voor gemakkelijk beheer te groeperen. U kunt een omslag selecteren en verkiezen om het te downloaden of te schrappen.
 
 Voer de volgende stappen uit om een map te maken:
 
 ### Een map maken {#create-a-folder}
 
-1. Meld u aan bij de gebruikersinterface van AEM Forms op `https://<server>:<port>/aem/forms.html`.
-1. Navigeer naar de locatie waaronder u een map wilt maken.
-1. Tik op Maken > Map.
+1. Login aan het gebruikersinterface van Vormen AEM bij `https://<server>:<port>/aem/forms.html`.
+1. Navigeer aan de plaats waaronder u een omslag wilt tot stand brengen.
+1. Tik maken > Map.
 1. Voer de volgende gegevens in:
 
-   * **** Titel: Naam voor de map weergeven
-   * **** Naam: *(Verplicht)* De knooppuntnaam waaronder u de map in de opslagplaats wilt opslaan
+   * **Titel:** De naam van de vertoning voor de omslag
+   * **Naam:** *(Verplicht)* De knoopnaam waaronder u de map in de repository wilt opslaan
    >[!NOTE]
    >
-   >Standaard wordt de waarde van het naamveld automatisch ingevuld vanuit de titel. De naam mag alleen alfanumerieke tekens bevatten of speciale tekens voor het koppelteken (-) en het onderstrepingsteken (_). Eventuele andere speciale tekens die in de titel worden ingevoerd, worden automatisch vervangen door een afbreekstreepje en u wordt gevraagd de nieuwe naam te bevestigen. U kunt doorgaan met de voorgestelde naam of deze verder bewerken.
+   >Door gebrek, is de waarde van naamgebied automatisch bevolkt van de titel. De naam kan alfanumerieke karakters, of het koppelteken (-) en onderstreepteken (_) speciale karakters slechts bevatten. Andere speciale karakters die in de titel zijn ingegaan worden automatisch vervangen met een koppelteken en u wordt ertoe aangezet om de nieuwe naam te bevestigen. U kunt verkiezen om met voorgestelde naam verder te gaan of het uit te geven verder.
 
-1. Er wordt een nieuwe map met de door u gedefinieerde titel weergegeven op de huidige locatie in de lijst met elementen.
+1. Een nieuwe omslag met de titel u bepaalde wordt getoond bij de huidige plaats in de activalijst.
 
-   Als een map met de opgegeven naam bestaat, mislukt het verzenden met een fout. U kunt het foutbericht weergeven door de muisaanwijzer op het foutpictogram ![aam6forms_error_alert](assets/aem6forms_error_alert.png) naast het naamveld te plaatsen.
+   Als een omslag met de gespecificeerde naam bestaat, ontbreekt de voorlegging met een fout. U kunt de foutenmelding bekijken door over het fout ![aem6forms_error_alert](assets/aem6forms_error_alert.png) pictogram te hangen dat naast het naamgebied verschijnt.
 
-   Tik op de nieuwe map om naar de map te gaan en elementen of mappen in de map te maken. Bovendien kunt u een map selecteren en ervoor kiezen deze in de wachtrij te plaatsen voor downloaden, te verwijderen of de naam ervan te bewerken.
+   U kunt de pas gecreëerde omslag tikken om binnen de omslag te gaan en activa of omslagen te creëren binnen de omslag. Verder, kunt u een omslag selecteren en verkiezen om het voor download een rij te vormen, het te schrappen, of zijn naam uit te geven.
 
-   ![editdeletedownloadafolder](assets/editdeletedownloadafolder.png)
+   ![editdeletedownloadafster](assets/editdeletedownloadafolder.png)
 
 ### Kopieën maken van een of meer elementen of letters {#create-copies-of-one-or-more-assets-or-letters}
 
-Met bestaande elementen en letters kunt u snel elementen en letters maken met vergelijkbare eigenschappen, inhoud en overgeërfde elementen. U kunt gegevenswoordenboeken, documentfragmenten en letters kopiëren en plakken.
+U kunt bestaande activa en brieven gebruiken om activa en brieven met gelijkaardige eigenschappen, inhoud, en geërfte activa snel tot stand te brengen. U kunt gegevenswoordenboeken, documentfragmenten, en brieven kopiëren en kleven.
 
-Voer de volgende stappen uit om kopieën van elementen en letters te maken:
+Voltooi de volgende stappen om exemplaren van activa en brieven tot stand te brengen:
 
-1. Selecteer een of meer elementen/letters op de relevante pagina Elementen of Letters. In de gebruikersinterface wordt het pictogram Kopiëren weergegeven.
-1. Tik op Kopiëren. In de gebruikersinterface wordt het pictogram Plakken weergegeven. U kunt er ook voor kiezen om in een map te navigeren voordat u gaat plakken. Verschillende mappen kunnen elementen met dezelfde naam bevatten. Zie [Mappen en elementen](#folders-and-organizing-assets)ordenen voor meer informatie over mappen.
-1. Tik op Plakken. Het dialoogvenster Plakken wordt geopend. Het systeem genereert automatisch namen en titels voor de nieuwe kopieën van elementen/letters, maar u kunt de titels en namen van de elementen/letters bewerken.
+1. Selecteer in de desbetreffende pagina Activa of letters een of meer elementen/letters. UI toont het pictogram van het Exemplaar.
+1. Tik kopiëren. UI toont het pictogram van het Deeg. U kunt ook verkiezen om binnen een omslag te gaan/te navigeren alvorens u kleeft. De verschillende omslagen kunnen activa met de zelfde namen bevatten. Voor meer informatie over omslagen, zie [Omslagen en het organiseren van activa](#folders-and-organizing-assets).
+1. Tik op Plakken. Het dialoogvenster Plakken verschijnt. De systeemauto produceert namen en titels aan de nieuwe exemplaren van activa/brieven, maar u kunt de titels en de namen van de activa/de brieven uitgeven.
 
-   Als u de elementen/letters op dezelfde plaats kopieert en plakt, wordt het achtervoegsel &quot;-CopyXX&quot; toegevoegd aan de bestaande naam van het element/de letter. Als er geen titel voor het gekopieerde element/de gekopieerde letter bestond, blijft het automatisch gegenereerde titelveld leeg.
+   Als u de elementen/letters op dezelfde plaats kopieert en plakt, wordt een achtervoegsel &quot;-CopyXX&quot;toegevoegd aan de bestaande naam van de activa/de brief. Als geen titel voor de gekopieerde activa/de brief bestond, blijft het auto geproduceerde titelgebied leeg.
 
-1. Bewerk indien nodig de titel en de naam waarmee u de kopie van het element/de letter wilt opslaan.
-1. Tik op Plakken. Er worden nieuwe kopieën van de gekopieerde elementen gemaakt.
+1. Indien nodig, geef de Titel en de Naam uit waarmee u het exemplaar van de activa/de brief wilt bewaren.
+1. Tik op Plakken. Nieuwe exemplaren van de gekopieerde activa worden gecreeerd.
 
 ## Zoeken {#search-forms}
 
-Met de gebruikersinterface van AEM Forms kunt u zoeken in uw inhoud. Met de bovenste balk kunt u op Zoeken **[A]** tikken om uw inhoud te zoeken naar bronnen zoals elementen en documenten.
+De Vormen UI van AEM staat u toe om uw inhoud te zoeken. Gebruikend de hoogste bar, kunt u Onderzoek **[A]** tikken om uw inhoud naar middelen zoals activa en documenten te zoeken.
 
-Wanneer u naar elementen zoekt, wordt het zijpaneel weergegeven in AEM Forms. U kunt ook tikken op ![middelen-browser-inhoud-alleen](assets/assets-browser-content-only.png) > Filter **[B]** om het zijpaneel aan te roepen. Met de verschillende filters in het zijpaneel kunt u de zoekopdracht beperken. In het zijpaneel kunt u ook uw zoekopdrachten opslaan.
+Wanneer u naar activa zoekt, toont de Vormen AEM het zijpaneel. U kunt ![activa-browser-inhoud-slechts](assets/assets-browser-content-only.png) > de Filter **[B]** ook tikken om het zijpaneel aan te halen. Gebruikend de diverse filters in het zijpaneel, kunt u onderaan uw onderzoek versmallen. Het zijpaneel staat u ook toe om uw onderzoeken te bewaren.
 
 ![search_topbar](assets/search_topbar.png)
 
-******A. Zoeken** B.Filter
+**A.** Zoeken **B.** Filteren
 
 ![Zijpaneel - Filters](assets/search_sidepanel.png)
 
 Zijpaneel - Filters
 
-In het zijpaneel kunt u de volgende opties gebruiken om de zoekresultaten te beperken:
+Op het zijpaneel, kunt u het volgende gebruiken om onderaan uw onderzoeksresultaten te versmallen:
 
-* Zoekdirectory
+* Zoekmap
 * Tags
-* Zoekcriteria; bijvoorbeeld Gewijzigde datums, Publish Status, LiveCopy Status.
+* zoekcriteria; bijvoorbeeld, Gewijzigde Data, publiceer Status, Status LiveCopy.
 
-In het zijpaneel kunt u ook uw zoekinstellingen opslaan met de namen van uw keuze.
+Het zijpaneel staat u ook toe om uw onderzoeksmontages met namen van uw keus te bewaren.
 
-Zie [Zoeken](/help/sites-authoring/search.md)voor meer informatie en instructies over het gebruik van zoekopdrachten, filters, opgeslagen zoekopdrachten en het zijpaneel.
+Voor meer informatie en instructies bij het gebruiken van onderzoek, zien de filters, het bewaarde onderzoek, en het zijpaneel, [Onderzoek](/help/sites-authoring/search.md).

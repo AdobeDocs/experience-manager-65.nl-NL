@@ -4,14 +4,14 @@ description: Wat in Manager 6.5 Service Pack 4 van de Ervaring van Adobe nieuw i
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 1d867ee46ca9cd5945c7413d42fc002b90332c3c
+source-git-commit: 14df85f7a815fe567ea87375727ebe1e54733464
 
 ---
 
 
 # Wat in Manager 6.5 Service Pack 4 van de Ervaring van Adobe nieuw is {#aem-whats-new-service-pack-4}
 
-In 2020, voor de Manager van de Ervaring van Adobe (AEM) 6.5, worden de nieuwe eigenschappen en de verbeteringen geleverd in de driemaandelijkse Pakken van de Dienst. De klanten profiteren van deze nieuwe benadering aangezien zij de innovaties sneller kunnen goedkeuren.
+In 2020, levert de Manager van de Ervaring van Adobe (AEM) 6.5 eigenschappen en ononderbroken verbeteringen in de driemaandelijkse Pakken van de Dienst. De klanten profiteren van deze nieuwe benadering aangezien zij de innovaties sneller kunnen goedkeuren.
 
 Het recentste AEM Service Pack 4 (6.5.4.0) wordt vrijgegeven op 5 **maart 2020**. In dit artikel worden de functies belicht die het nieuwste Service Pack aanbiedt om uw AEM-reis verrijkend te maken.
 
@@ -19,15 +19,16 @@ Het recentste AEM Service Pack 4 (6.5.4.0) wordt vrijgegeven op 5 **maart 2020**
 
 ### Prestatieverbeteringen op verschillende gebieden {#performance-improvements}
 
-* Verminder de tijd voor het laden van en het initialiseren van ContextHub binnen een plaats (contexthub.kernel.js). Resultaat in snellere lading 1st pagina tijdens een plaatsbezoek.
+* Verminderde de tijd voor het laden van en het initialiseren van ContextHub binnen een plaats (contexthub.kernel.js). Het resulteert in het laden van een pagina sneller tijdens een plaatsbezoek.
 
-* In de Redacteur van de Pagina, verminder de tijd de pagina na het slepen van &amp; het laten vallen de Fragmenten van de Ervaring in het paginacanvas wordt verfrist.
+* Verminderde de tijd om een pagina na het slepen te verfrissen &amp; het laten vallen van de Fragmenten van de Ervaring in het canvas van een paginaredacteur te verfrissen.
 
-* In het Levende Overzicht van het Exemplaar, verkort tijd om ingangen te laden wanneer de plaats vele levende exemplaren (+200) heeft.
+* In het Levende Overzicht van het Exemplaar, verkortte de tijd om ingangen te laden wanneer een plaats meer dan 200 levende exemplaren heeft.
 
-* In de Redacteur van het Malplaatje, verbeter behandeling van incomplete/ongeldige URLs die de Redacteur van het Malplaatje zou kunnen teweegbrengen om te vertragen.
+* In de Redacteur van het Malplaatje, verbeterde de behandeling van onvolledige of ongeldige URLs die de Redacteur van het Malplaatje kan teweegbrengen om te vertragen.
 
-Verder, beginnend AEM 6.5 SP4, is het Systeem van de Stijl verbeterd, kunnen de stijlen nu ook binnen een componentendialoog worden geselecteerd.
+Bovendien omvat AEM 6.5 SP4 de verhogingen van het Systeem van de Stijl. U kunt stijlen binnen een componentendialoog nu ook selecteren.
+
 
 ## AEM Assets {#aem-assets}
 
@@ -125,7 +126,7 @@ Slimme beeldverwerking maakt gebruik van de unieke kijkkenmerken van elke gebrui
 
 ### Visuele zoekopdracht naar AEM-elementen {#visual-search}
 
-De gebruikers van activa kunnen visueel gelijkaardige beelden zoeken. AEM toont de slimme geëtiketteerde beelden van de bewaarplaats DAM die aan een gebruiker-geselecteerd beeld gelijkaardig zijn. Zie [Visueel onderzoek](../assets/search-assets.md).
+De gebruikers van activa kunnen visueel gelijkaardige beelden zoeken. AEM geeft de slimme getagde afbeeldingen uit de DAM-opslagplaats weer die lijken op een door de gebruiker geselecteerde afbeelding. Zie [Visueel onderzoek](../assets/search-assets.md).
 
 ### Aandeel en verzoek toegang tot de punten Inbox van een gebruiker {#share-request-access}
 

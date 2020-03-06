@@ -4,7 +4,7 @@ description: Leer de taken van het activabeheer zoals upload, download, geef uit
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 3aee0ce89638cb997e84e62bbde76e32e49174da
+source-git-commit: 76fe7f99273139243e8944448ccfb013408b38de
 
 ---
 
@@ -563,8 +563,6 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 1. Either select the **[!UICONTROL Publish]** quick action from the asset card, or select the asset and tap/click the **[!UICONTROL Quick Publish]** icon from the toolbar.
 1. Als de activaverwijzingen andere activa, zijn verwijzingen vermeld in de tovenaar zijn. Slechts worden de verwijzingen die of niet gepubliceerd of gewijzigd zijn aangezien zij het laatst werden gepubliceerd/unpublished getoond. Kies de verwijzingen u wilt publiceren.
 
-   ![chlimage_1-225](assets/chlimage_1-21.png)
-
    >[!NOTE]
    >
    >De lege omslagen, die deel van een omslag uitmaken die u hebt gepubliceerd, worden niet gepubliceerd.
@@ -781,7 +779,7 @@ De video annotaties worden slechts gesteund op browsers met HTML5-Compatibele vi
 
 1. Om opgeslagen annotaties voor activa te bekijken, navigeer aan de plaats van de activa en open de activapagina voor de activa.
 
-1. Tik/klik het pictogram GlobalNav, en kies **[!UICONTROL Chronologie]** van de lijst.
+1. Tik/klik op het pictogram GlobalNav en kies **[!UICONTROL tijdlijn]** in de lijst.
 
    ![chlimage_1-239](assets/chlimage_1-35.png)
 

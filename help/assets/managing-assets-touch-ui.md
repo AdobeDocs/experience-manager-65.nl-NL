@@ -4,7 +4,7 @@ description: Leer de taken van het activabeheer zoals upload, download, geef uit
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f191f90f7a417387930d2d4cf7b9482aabbd6156
+source-git-commit: 3aee0ce89638cb997e84e62bbde76e32e49174da
 
 ---
 
@@ -332,6 +332,24 @@ Aan voorproef volgt een activa, deze stappen.
 
    ![chlimage_1-216](assets/chlimage_1-11.png)
 
+**Voorbeeld van elementen met alleen toetsenbordtoetsen**
+
+Aan voorproef volgt een activa die toetsenbord gebruiken, deze stappen:
+
+1. Van het gebruikersinterface van Activa, navigeer aan de plaats van de activa u aan voorproef, gebruikend `Tab` en pijlsleutels wilt.
+
+1. Open de gewenste activa.
+
+   Op de voorproefwijze, zijn de gezoem en het terugstellen opties beschikbaar voor de [gesteunde types](/help/assets/assets-formats.md#supported-raster-image-formats) van Beeld (met het interactieve uitgeven).
+1. Om in de activa te zoemen:
+   1. De `Tab` sleutel van het gebruik om nadruk aan gezoem-binnen pictogram te bewegen.
+   1. De `Enter` sleutel van het gebruik om in het beeld te zoemen.
+   Om uit gebruikssleutel te zoemen om nadruk naar het gezoem-uit pictogram te bewegen en te drukken `Tab` `Enter`.
+
+1. Gebruik `Shift` + `Tab` sleutels om de nadruk terug op het beeld te bewegen.
+
+1. De pijlsleutels van het gebruik om zich rond het gezoemde beeld te bewegen.
+
 Zie ook [Voorproef Dynamische Middelen van Media.](/help/assets/previewing-assets.md)
 
 ## Eigenschappen en metagegevens bewerken {#editing-properties}
@@ -348,7 +366,7 @@ Zie ook [Voorproef Dynamische Middelen van Media.](/help/assets/previewing-asset
    >
    >De lay-out van de pagina van [!UICONTROL Eigenschappen] en de beschikbare meta-gegevenseigenschappen hangen van het onderliggende meta-gegevensschema af. Leren hoe te om de lay-out van de pagina van [!UICONTROL Eigenschappen] te wijzigen, zie de Schema&#39;s van [Meta-gegevens](/help/assets/metadata-schemas.md).
 
-1. Om een bepaalde datum/tijd voor de activering van het actief te plannen, gebruik de datumkiezer naast het gebied **[!UICONTROL op Tijd]** .
+1. To schedule a particular date/time for the activation of the asset, use the date picker beside the **[!UICONTROL On Time]** field.
 
    ![chlimage_1-217](assets/chlimage_1-12.png)
 
@@ -362,7 +380,7 @@ Zie ook [Voorproef Dynamische Middelen van Media.](/help/assets/previewing-asset
    >
    >Om markeringen te creëren, moet u schrijf toestemming bij `/content/cq:tags/default` in de bewaarplaats CRX.
 
-1. Om een classificatie aan de activa te verstrekken, tik/klik het **[!UICONTROL Geavanceerde]** lusje en dan te tikken/klik de ster bij de aangewezen positie om de gewenste classificatie toe te wijzen.
+1. To provide a rating to the asset, tap/click the **[!UICONTROL Advanced]** tab and then tap/click the star at the appropriate position to assign the desired rating.
 
    ![ratings](assets/ratings.png)
 
@@ -479,17 +497,17 @@ De andere eigenschappen en meta-gegevensinformatie worden behouden. Een gedeelte
 
    **Een nieuwe renditie uploaden**
 
-   Navigeer aan de pagina van activadetails voor de activa, en tik/klik het **[!UICONTROL Add pictogram van de Verenditie]** in de toolbar om een nieuwe vertolking voor de activa te uploaden.
+   Navigate to the asset details page for the asset, and tap/click the **[!UICONTROL Add Rendition]** icon in the toolbar to upload a new rendition for the asset.
 
    ![chlimage_1-221](assets/chlimage_1-16.png)
 
    >[!NOTE]
    >
-   >Als u een renditie selecteert in het deelvenster **[!UICONTROL Rendities]** , verandert de werkbalk de context en geeft deze alleen de acties weer die relevant zijn voor de renditie. De opties, zoals het Upload pictogram van de Vertoning worden niet getoond. Om deze opties in de toolbar te bekijken, navigeer aan de detailspagina voor de activa.
+   >If you select a rendition from the **[!UICONTROL Renditions]** panel, the toolbar changes context and displays only those actions that are relevant to the rendition. Opties zoals het pictogram Uitvoering uploaden worden niet weergegeven. Ga naar de pagina met details voor de asset om deze opties in de werkbalk weer te geven.
 
    U kunt de afmetingen voor de vertolking vormen u getoond in de detailspagina van een beeld of videoactiva wilt. Gebaseerd op de afmetingen u specificeert, toont de Activa AEM de vertolking met de nauwkeurige of dichtste afmetingen.
 
-   Om de afmetingen van de vertolking van een beeld op het niveau van het activadetail te vormen, bedek de `renditionpicker` knoop (`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`) en vorm de waarde van het breedtebezit. Vorm de bezitsgrootte (Lang) in KB **** in plaats van breedte om vertolking op de pagina van het activadetail aan te passen die op beeldgrootte wordt gebaseerd. Voor op grootte-gebaseerde aanpassing, wijst het bezit voorkeur aan origineel `preferOriginal` toe als de grootte van de aangepaste vertolking groter is dan origineel.
+   Als u weergaveafmetingen van een afbeelding op het niveau van de assetdetails wilt configureren, overlapt u het knooppunt `renditionpicker` (`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`) en configureert u de waarde van de breedte-eigenschap. Configure the property **[!UICONTROL size (Long) in KB]** in place of width to customize rendition on asset detail page based on image size. Voor aanpassing op basis van grootte wijst de eigenschap `preferOriginal` de voorkeur toe aan het origineel als de grootte van de overeenkomstige weergave groter is dan het origineel.
 
    Op dezelfde manier kunt u het de paginabeeld van de Annotatie aanpassen door te bekleden `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
 
@@ -542,7 +560,7 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 
 1. Navigeer aan de plaats van de activa/de omslag u wilt publiceren
 
-1. Of selecteer de **[!UICONTROL Publish]** snelle actie van de activakaart, of selecteer de activa en de kraan/klik het **[!UICONTROL Snelle Publish]** pictogram van de toolbar.
+1. Either select the **[!UICONTROL Publish]** quick action from the asset card, or select the asset and tap/click the **[!UICONTROL Quick Publish]** icon from the toolbar.
 1. Als de activaverwijzingen andere activa, zijn verwijzingen vermeld in de tovenaar zijn. Slechts worden de verwijzingen die of niet gepubliceerd of gewijzigd zijn aangezien zij het laatst werden gepubliceerd/unpublished getoond. Kies de verwijzingen u wilt publiceren.
 
    ![chlimage_1-225](assets/chlimage_1-21.png)
@@ -652,7 +670,7 @@ De het uitgeven hulpmiddelen in de interface van Activa AEM laten u kleine het u
 
    ![chlimage_1-226](assets/chlimage_1-22.png)
 
-1. Selecteer de gewenste optie in de lijst. Het gewassengebied verschijnt op het beeld dat op de optie wordt gebaseerd u kiest. Met de optie **Free Hand** kunt u de afbeelding zonder restricties voor de hoogte-breedteverhouding uitsnijden.
+1. Selecteer de gewenste optie in de lijst. Het bijsnijdgebied wordt op basis van de gekozen optie weergegeven in de afbeelding. Met de optie **Vrije hand** kunt u de afbeelding bijsnijden zonder beperkingen voor de hoogte-breedteverhouding.
 
    ![chlimage_1-227](/help/assets/assets/chlimage_1-23.png)
 
@@ -661,7 +679,7 @@ De het uitgeven hulpmiddelen in de interface van Activa AEM laten u kleine het u
 
    ![chlimage_1-228](assets/chlimage_1-24.png)
 
-1. Gebruik de pictogrammen **Undo** en **Redo** op het hoogste recht om aan het uncropped beeld terug te keren of het bebouwde beeld te behouden, respectievelijk.
+1. Gebruik de pictogrammen **Ongedaan maken** en **Opnieuw uitvoeren** rechtsboven om respectievelijk terug te keren naar de niet-bijgesneden afbeelding of de bijgesneden afbeelding te behouden.
 
    ![chlimage_1-229](assets/chlimage_1-25.png)
 
@@ -720,7 +738,7 @@ De video annotaties worden slechts gesteund op browsers met HTML5-Compatibele vi
    * Van de toolbar na het selecteren van de activa of het navigeren aan de activapagina
    ![chlimage_1-233](assets/chlimage_1-29.png)
 
-1. Voeg een commentaar in de doos van de **[!UICONTROL Commentaar]** bij de bodem van de chronologie toe. Alternatief, teken omhoog een gebied op het beeld en voeg een annotatie in de **[!UICONTROL Add dialoog van de Annotatie]** toe.
+1. Add a comment in the **[!UICONTROL Comment]** box at the bottom of the timeline. Alternatively, mark up an area on the image and add an annotation in the **[!UICONTROL Add Annotation]** dialog.
 
    ![chlimage_1-234](assets/chlimage_1-30.png)
 
@@ -751,7 +769,7 @@ De video annotaties worden slechts gesteund op browsers met HTML5-Compatibele vi
 
    ![Selecteer het pictogram van het gebruikersprofiel en toen Mijn Voorkeur om de Voorkeur van de Gebruiker te openen](assets/User-profile-preferences.png)
 
-   Specificeer de gewenste kleur in de doos van de Kleur **[!UICONTROL van de]** Annotatie en klik/tik **[!UICONTROL keurt]** dan goed.
+   Specify the desired color in the **[!UICONTROL Annotation Color]** box and then click/tap **[!UICONTROL Accept]**.
 
    ![Selecteer annotatiekleur in de Voorkeur van de Gebruiker om de kleur van de Persoon van de Gebruiker te plaatsen](assets/Annotation-color.png)
 
@@ -763,11 +781,11 @@ De video annotaties worden slechts gesteund op browsers met HTML5-Compatibele vi
 
 1. Om opgeslagen annotaties voor activa te bekijken, navigeer aan de plaats van de activa en open de activapagina voor de activa.
 
-1. Tik/klik op het pictogram GlobalNav en kies **[!UICONTROL tijdlijn]** in de lijst.
+1. Tik/klik het pictogram GlobalNav, en kies **[!UICONTROL Chronologie]** van de lijst.
 
    ![chlimage_1-239](assets/chlimage_1-35.png)
 
-1. Van de **[!UICONTROL Show Al]** lijst in de chronologie, uitgezochte **[!UICONTROL Commentaren]** om de resultaten te filtreren die op annotaties worden gebaseerd.
+1. From the **[!UICONTROL Show All]** list in the timeline, select **[!UICONTROL Comments]** to filter the results based on annotations.
 
    ![chlimage_1-240](assets/chlimage_1-36.png)
 
@@ -799,7 +817,7 @@ Om de annotaties en de overzichtsstatus te drukken, tik/klik het pictogram van d
 
    ![chlimage_1-243](assets/chlimage_1-39.png)
 
-1. Tik/klik op het pictogram **[!UICONTROL Afdrukken]** op de werkbalk.
+1. Tap/click the **[!UICONTROL Print]** icon from the toolbar.
 
    ![chlimage_1-244](assets/chlimage_1-40.png)
 
@@ -807,13 +825,13 @@ Om de annotaties en de overzichtsstatus te drukken, tik/klik het pictogram van d
 
    ![Selecteer de positie van annotatie/revisiestatus aan vertoning op PDF van de dialoog van de Druk](assets/Print-annotation-dialog.png)
 
-   U kunt andere montages afhankelijk van de positie kiezen waar u de annotaties/de status in gedrukte PDF wilt verschijnen. Als u de annotaties/status in een pagina wilt verschijnen die van de gedrukte activa gescheiden is, kies **[!UICONTROL Volgende Pagina]**.
+   U kunt andere instellingen kiezen, afhankelijk van de positie waar u de annotaties/status wilt weergeven in de afgedrukte PDF. If you want the annotations/status to appear in a page that is separate from the printed asset, choose **[!UICONTROL Next Page]**.
 
    >[!NOTE]
    >
    >De annotaties van de lengte kunnen niet behoorlijk in het Pdf- dossier teruggeven. Voor het optimale teruggeven, adviseert Adobe dat u annotaties tot 50 woorden beperkt.
 
-1. Tik/klik op **[!UICONTROL Afdrukken]**. Afhankelijk van de optie u in stap 2 kiest, toont geproduceerde PDF de annotaties/de status bij de gespecificeerde positie. Bijvoorbeeld, als u verkiest om zowel annotaties als de overzichtsstatus te drukken gebruikend het **Top-Linker** plaatsen, lijkt de geproduceerde output op het hier getoonde Pdf- dossier.
+1. Tik/klik op **[!UICONTROL Afdrukken]**. Afhankelijk van de optie die u kiest in stap 2, geeft de gegenereerde PDF de annotaties/status op de opgegeven positie weer. Als u bijvoorbeeld zowel annotaties als de revisiestatus wilt afdrukken met de instelling **Linksboven**, lijkt de gegenereerde uitvoer op het PDF-bestand dat hier wordt weergegeven.
 
    ![chlimage_1-246](assets/chlimage_1-42.png)
 
@@ -895,7 +913,7 @@ De versioning functionaliteit laat u het volgende doen:
 
    ![chlimage_1-251](assets/chlimage_1-47.png)
 
-1. Om de nieuwe versie te bekijken, open de **[!UICONTROL Show Alle]** lijst in de chronologie van de pagina van activadetails of de Activa UI, en kies **[!UICONTROL Versies]**. Alle versies die voor activa worden gecreeerd zijn vermeld onder de chronologie tabel. U kunt de lijst filtreren om Versies te tonen, door de dalingspijl te klikken en **[!UICONTROL Versies]** van de lijst te selecteren.
+1. To view the new version, open the **[!UICONTROL Show All]** list in the timeline from the asset details page or the Assets UI, and choose **[!UICONTROL Versions]**. Alle versies die voor een asset zijn gemaakt, worden weergegeven onder het tabblad Tijdlijn. You can filter the list to show Versions, by clicking the drop arrow and selecting **[!UICONTROL Versions]** from the list.
 
    ![versies_option](assets/versions_option.png)
 
@@ -911,7 +929,7 @@ De versioning functionaliteit laat u het volgende doen:
 
    ![save_version](assets/save_version.png)
 
-1. Om een voorproef voor de versie te produceren, tik/klik de Versie van de **[!UICONTROL Voorproef]**.
+1. To generate a preview for the version, tap/click **[!UICONTROL Preview Version]**.
 1. Om deze versie in de uitgezochte Activa UI te tonen, **[!UICONTROL keer aan deze Versie]** terug.
 1. Om tussen twee versies te vergelijken, ga naar activapagina van de activa en tik/klik de versie die met de huidige versie moet worden vergeleken.
 
@@ -936,7 +954,7 @@ De versioning functionaliteit laat u het volgende doen:
 
    ![chlimage_1-253](assets/chlimage_1-49.png)
 
-1. In de dialoog van het Werkschema **[!UICONTROL van het]** Begin, selecteer een werkschemamodel van de lijst.
+1. In the **[!UICONTROL Start Workflow]** dialog, select a workflow model from the list.
 
    ![chlimage_1-254](assets/chlimage_1-50.png)
 
@@ -944,7 +962,7 @@ De versioning functionaliteit laat u het volgende doen:
 
    ![chlimage_1-255](assets/chlimage_1-51.png)
 
-1. Tik op **[!UICONTROL Start]** en tik vervolgens op **[!UICONTROL Doorgaan]** in het dialoogvenster. Elke stap van werkschema wordt getoond in de chronologie als gebeurtenis.
+1. Tik op **[!UICONTROL Start]** en tik vervolgens op **[!UICONTROL Doorgaan]** in het dialoogvenster. Elke stap van de workflow wordt als een gebeurtenis in de tijdlijn weergegeven.
 
    ![chlimage_1-256](assets/chlimage_1-52.png)
 

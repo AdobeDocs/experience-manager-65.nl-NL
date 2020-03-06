@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d361087667853d30d5e3b475bdc9262dfc8d9f00
+source-git-commit: 14df85f7a815fe567ea87375727ebe1e54733464
 
 ---
 
@@ -22,7 +22,7 @@ source-git-commit: d361087667853d30d5e3b475bdc9262dfc8d9f00
 | Versie | 6.5.4.0 |
 | Type | Service Pack Release |
 | Date | 05 maart 2020 |
-| URL downloaden | [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.4.0) |
+| URL downloaden | [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/AEM-6.5.4.0), [softwaredistributie (Bèta)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.4.zip) |
 
 ## Wat inbegrepen in de Manager van de Ervaring van Adobe 6.5.4.0 is {#what-s-included-in-aem}
 
@@ -128,8 +128,6 @@ Voor volledige lijst van eigenschappen, zeer belangrijke hoogtepunten, zeer bela
 
 * Wanneer het bewegen van de inhoud binnen de zelfde omslag, is de optie van de paginabeweging gehandicapt (NPR-31840).
 
-* Wanneer URLs die met /_jcr_content/.html of /jcr eindigt:content/.html wordt betreden, de pieken van cpu en AEM ophouden antwoordend (NPR-31837).
-
 * Op de editable wijze van de malplaatjesstructuur, de toegestane componentenlijst in de vertoningen van de lay-outcontainer onjuiste resultaten. In de lay-outcontainer (NPR-31816) worden alleen onderdelen met een ontwerpdialoog weergegeven.
 
 * Wanneer een pagina read-only toestemmingen voor een gebruiker heeft, is de Open eigenschappen optie zichtbaar in sites.html maar niet in editor.html (NPR-31770).
@@ -179,8 +177,6 @@ Voor volledige lijst van eigenschappen, zeer belangrijke hoogtepunten, zeer bela
 ### WCM-sjablooneditor {#wcm-template-editor-6540}
 
 * Op de editable wijze van de malplaatjesstructuur, toont de toegestane componentenlijst in lay-outcontainer de geen component van de verbindingsknoop (CQ-4282099).
-
-* De pieken van cpu en de Manager van de Ervaring worden niet ontvankelijk wanneer URLs die met eindigt `/_jcr_content/.html` of `/jcr:content/.html` wordt betreden (CQ-4280770).
 
 ### WCM-paginaeditor {#wcm-page-editor-6540}
 

@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
 translation-type: tm+mt
-source-git-commit: 8ebe1a2c23ec5e3e16807072ac17ec13a6df9701
+source-git-commit: 033c32c581fddd5f632ad534f57c84b4d74a4104
 
 ---
 
@@ -22,7 +22,7 @@ U kunt berichten van diverse gebieden van AEM, met inbegrip van werkschema&#39;s
 * Taken:
 
    * deze kunnen ook op verschillende punten binnen de AEM UI worden gecreëerd, bijvoorbeeld in het kader van **projecten**;
-   * deze kunnen het product van een werkschema zijn **creeer Taak** of **creeer de stap van de Taak** van het Project.
+   * these can be the product of a workflow **Create Task** or **Create Project Task** step.
 
 * Workflows:
 
@@ -75,8 +75,8 @@ Om het AEM-bericht in het vak te openen:
 
 1. Klik/tik op de indicator in de toolbar.
 
-1. Selecteer **Alle** bekijken. De **AEM-Postvak** wordt geopend. Inbox toont punten van werkschema&#39;s, projecten en taken.
-1. De standaardmening is de Mening [van de](#inbox-list-view)Lijst, maar u kunt ook op de Mening [van de](#inbox-calendar-view)Kalender schakelen. Dit wordt gedaan met de meningsselecteur (toolbar, hoogste recht).
+1. Selecteer **Alles bekijken**. De **AEM Inbox** wordt geopend. In de inbox ziet u items uit workflows, projecten en taken.
+1. De standaardweergave is [Lijstweergave](#inbox-list-view), maar u kunt ook schakelen naar [Kalenderweergave](#inbox-calendar-view). Dit gebeurt met de weergavekiezer (werkbalk, rechtsboven).
 
    Voor beide meningen kunt u de Montages [van de](#inbox-view-settings)Mening ook bepalen; de beschikbare opties zijn afhankelijk van de huidige mening.
 
@@ -84,7 +84,7 @@ Om het AEM-bericht in het vak te openen:
 
 >[!NOTE]
 >
->Inbox werkt als console, zo gebruik de [Globale Navigatie](/help/sites-authoring/basic-handling.md#global-navigation) of [Onderzoek](/help/sites-authoring/search.md) om aan een andere plaats te navigeren wanneer u wordt gebeëindigd.
+>De inbox werkt als console, gebruik dus [Globale navigatie](/help/sites-authoring/basic-handling.md#global-navigation) of [Zoeken](/help/sites-authoring/search.md) om naar een andere locatie te gaan wanneer u klaar bent.
 
 ### Postvak IN - Lijstweergave {#inbox-list-view}
 
@@ -102,7 +102,7 @@ U kunt:
 
 * een specifieke weergave selecteren; **Tijdlijn**, **kolom**, **lijst**
 
-* de taken specificeren die volgens **Plan** moeten worden getoond; **Alles** in aanmerking genomen, **gepland**, **lopend**, **tijdig** opeisbaar, **achterstallig**
+* specify the tasks to display according to **Schedule**; **All**, **Planned**, **In Progress**, **Due Soon**, **Past Due**
 
 * boor neer voor meer gedetailleerde informatie over een punt
 * selecteer een datumwaaier om de mening te concentreren:
@@ -113,7 +113,7 @@ U kunt:
 
 Voor beide meningen (Lijst en Kalender) kunt u montages bepalen:
 
-* **Agendaweergave**
+* **Kalenderweergave**
 
    Voor de Mening **van de** Kalender kunt u vormen:
 
@@ -132,22 +132,24 @@ Voor beide meningen (Lijst en Kalender) kunt u montages bepalen:
 
 ### Postvak IN - Beheer {#inbox-admin-control}
 
-De gebruikers die deel van de **werkschema-beheerders** groep uitmaken kunnen de optie van de Controle Admin in de lijst bekijken. Met deze optie kunnen de beheerders:
+Met de optie Beheerbeheer kunnen beheerders:
 
-* Bepaal aanpassingen voor de tekst en het embleem beschikbaar in de kopbal.
+* Koptekst en logo aanpassen
 
-* Controleer de vertoning van navigatieopties beschikbaar in de kopbal en beperk de gebruikers om op werkschemaauteurswijze over te schakelen of aan Hulp of andere oplossingsverbindingen te navigeren.
+* Controle de vertoning van navigatiekoppelingen beschikbaar in kopbal
+
+De optie van de Controle Admin toont in de drop-down lijst van de meningsselecteur slechts als u een lid van de beheerders of werkschema-beheerders groep bent.
 
 ![beheerderscontrole](assets/admin-control.png)
 
 * **Aanpassing van merken**
 
-   * **Koptekst aanpassen:** Specificeer de tekst op dit gebied om de bestaande tekst te vervangen van de Manager van de Ervaring van **Adobe** die in de kopbal wordt getoond.
+   * **Koptekst aanpassen:** Specificeer de tekst aan vertoning in de kopbal.
 
-   * **Logo aanpassen:** Upload een beeld in het Digitale Beheer van Activa (DAM) en verwijs naar dat beeld gebruikend dit gebied om het embleem van de Manager van de Ervaring van Adobe te vervangen dat in de kopbal wordt getoond.
+   * **Logo aanpassen:** Upload een beeld in het Digitale Beheer van Activa (DAM) en verwijs naar dat beeld om het in de kopbal te tonen.
 
 * **Gebruikersnavigatie**
-   * **Navigatieopties verbergen:** Selecteer deze optie om navigatieopties te verbergen beschikbaar in de kopbal, zoals de optie om aan andere oplossingen, de verbinding van de Hulp, en de opties te navigeren die op het aftappen van het embleem of de tekst van de Manager van de Ervaring van Adobe tonen.
+   * **Navigatieopties verbergen:** Selecteer deze optie om navigatieopties te verbergen beschikbaar in de kopbal. De navigatieopties omvatten verbindingen aan andere oplossingen, de verbinding van de Hulp, en de auteursopties beschikbaar bij het aftappen van het embleem of de tekst van de Manager van de Ervaring van Adobe.
 * **Opslaan:** Tik/klik op deze optie om de instellingen op te slaan.
 
 ## Actie ondernemen voor een object {#taking-action-on-an-item}
@@ -196,7 +198,7 @@ De gebruikers die deel van de **werkschema-beheerders** groep uitmaken kunnen de
 Van inbox kunt u taken tot stand brengen:
 
 1. Selecteer **creëren**, dan **Taak**.
-1. Voltooi de noodzakelijke gebieden op de **Basis** en **Geavanceerde** lusjes; alleen de **titel** is verplicht, alle andere zijn facultatief:
+1. Complete the necessary fields in the **Basic** and **Advanced** tabs; only the **Title** is mandatory, all others are optional:
 
    * **Basis**:
 
@@ -229,8 +231,8 @@ Voor bepaalde taken kunt u een [Project](/help/sites-authoring/projects.md) tot 
    >
    >De werkpunten (van een werkschema) kunnen niet worden gebruikt om een project tot stand te brengen.
 
-1. Selecteer **creëren Project** van de toolbar om de tovenaar te openen.
-1. Selecteer het aangewezen malplaatje, dan **daarna**.
+1. Selecteer **Project maken** op de werkbalk om de wizard te openen.
+1. Select the appropriate template, then **Next**.
 1. Specificeer de vereiste eigenschappen:
 
    * **Basis**

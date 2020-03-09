@@ -10,7 +10,7 @@ topic-tags: hTML5_forms
 discoiquuid: f2e9dbe4-e210-41f3-8878-2fc4d166e63c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8ebe1a2c23ec5e3e16807072ac17ec13a6df9701
+source-git-commit: 147c50adb02b48be8e3aba760dbac309ab49badf
 
 ---
 
@@ -41,6 +41,6 @@ Het belangrijkste doel voor HTML5 vormen is aanrakingsapparaten. Daarom wordt ee
 
 #### Rich text Format {#rich-text-format}
 
-Om een lijst van het formatteren van opties aan een tekstgebied in de teruggegeven vorm toe te voegen HTML5, kunt u een gebiedsindeling voor het tekstgebied in de Ontwerper van Vormen bepalen. Tik op het tekstveld in de **[!UICONTROL ontwerpweergave]**. In het **[!UICONTROL lusje van het Gebied]** , uitgezochte **[!UICONTROL Rijke Tekst]** van de drop-down lijst van het Formaat **[!UICONTROL van het]** Gebied om de montages toe te passen. Het tekstgebied toont het formatteren opties wanneer teruggegeven in een vorm HTML5.
+Bepaal een rijk formaat van het tekstgebied voor het tekstgebied in de Ontwerper van Vormen om een lijst van het formatteren opties aan het gebied in de teruggegeven vorm toe te voegen HTML5. Om de montages toe te passen, tik het tekstgebied in de Mening **[!UICONTROL van het]** Ontwerp. In het **[!UICONTROL lusje van het Gebied]** , uitgezochte **[!UICONTROL Rijke Tekst]** van de drop-down lijst van het Formaat **[!UICONTROL van het]** Gebied. Het tekstgebied toont het formatteren opties wanneer teruggegeven in een vorm HTML5.
 
 [Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)

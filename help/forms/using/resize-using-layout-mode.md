@@ -10,7 +10,7 @@ topic-tags: author
 discoiquuid: 9e9aaf36-bb86-4954-83cc-fa6b3e80ae4b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8ebe1a2c23ec5e3e16807072ac17ec13a6df9701
+source-git-commit: 147c50adb02b48be8e3aba760dbac309ab49badf
 
 ---
 
@@ -81,11 +81,11 @@ U kunt stappen 1 en 2 herhalen en ![Uitgezochte Ouder](assets/float_to_new_line_
 
 Voer de volgende stappen uit om het aantal kolommen voor een paneel te bepalen:
 
-1. Op **[!UICONTROL geef]** wijze uit, tik het paneel, uitgezocht ![vorm](assets/configure_icon.png), en selecteer **[!UICONTROL Reagerend - alles op de pagina zonder navigatie]** optie.
+1. Op **[!UICONTROL geef]** wijze uit, tik het paneel, uitgezocht ![vorm](assets/configure_icon.png), en selecteer **[!UICONTROL Reagerend - alles op de pagina zonder navigatie]** optie van de drop-down lijst van de Lay-out **[!UICONTROL van het]** Comité.
 
 1. Tik op ![Opslaan](assets/save_icon.svg) om de eigenschappen op te slaan.
 
-1. Op de wijze van de **[!UICONTROL Lay-out]** , tik om het even welke componenten in het paneel dat u wilt resize, ![Uitgezochte Ouder](assets/select_parent_icon.svg)selecteren, en de eerste optie in de drop-down lijst selecteren, als het paneel de directe ouder van de component is.
+1. Op de wijze van de **[!UICONTROL Lay-out]** , tik om het even welke componenten in het paneel, selecteer de ![Uitgezochte Ouder](assets/select_parent_icon.svg), en selecteer het paneel.
 
 1. Tik op ![meerdere kolommen](assets/multi-column.svg) en selecteer het aantal kolommen in de vervolgkeuzelijst. Het aantal kolommen kan zich van 1 tot 12 uitstrekken. Het paneel wordt verdeeld in een multi-kolomlay-out.
 

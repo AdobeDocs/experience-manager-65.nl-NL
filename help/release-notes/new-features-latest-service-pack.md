@@ -112,7 +112,7 @@ Zie Formuliersjablonen [ontwerpen voor HTML5-formulieren](../forms/using/designi
 
 Naast de nieuwe functies bevat AEM 6.5 Service Pack 4 de volgende belangrijke kenmerken:
 
-* Alleen substructuren met selectieve inhoud kunnen nu worden gesynchroniseerd met de modus *Dynamische media - Scene7 in plaats van met alle substructuren* `content/dam`.
+* Alleen substructuren met selectieve inhoud kunnen nu worden gesynchroniseerd met de modus ***Dynamische media - Scene7 in plaats van met alle substructuren*** `content/dam`.
 
 * Integratie van formuliergegevensmodellen met SOAP-webservice ondersteunt nu keuzegroepen of kenmerken voor elementen.
 

@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 14df85f7a815fe567ea87375727ebe1e54733464
+source-git-commit: ff006375b9ac958c7a5f9adf122990bf23808834
 
 ---
 
@@ -32,7 +32,7 @@ Sommige zeer belangrijke eigenschappen en verhogingen die in AEM 6.5.4.0 worden 
 
 * AEM de Activa wordt nu gevormd met het Portaal van het Merk door de Console van Adobe I/O.
 
-* Een nieuwe [produceer geschikt om gedrukt te worden stap van de Output](../forms/using/aem-forms-workflow-step-reference.md) is nu beschikbaar voor werkschema&#39;s AEM.
+* Een nieuwe [produceer geschikt om gedrukt te worden stap van de Output](../forms/using/aem-forms-workflow-step-reference.md) is nu beschikbaar voor de werkschema&#39;s van Vormen AEM.
 
 * [Ondersteuning](../forms/using/resize-using-layout-mode.md) voor meerdere kolommen voor de lay-outmodus voor adaptieve formulieren en interactieve communicatie.
 
@@ -43,6 +43,50 @@ Sommige zeer belangrijke eigenschappen en verhogingen die in AEM 6.5.4.0 worden 
 * De ingebouwde opslagplaats (Apache Jackrabbit Oak) wordt bijgewerkt naar versie 1.10.8.
 
 Voor volledige lijst van eigenschappen, zeer belangrijke hoogtepunten, zeer belangrijke eigenschappen die in vorige AEM 6.5 de dienstpakken worden geïntroduceerd, zie [wat in de Manager van de Ervaring van Adobe 6.5 Service Pack 4](new-features-latest-service-pack.md)nieuw is.
+
+### Sites {#sites-fixes}
+
+* Wanneer een URL van een pagina van de Plaatsen AEM een dubbelpunt bevat (: ) of percentagesymbool (%), de onderliggende browser houdt op antwoordend en de cycli van cpu tonen een punt (NPR-32369, NPR-31918).
+
+* Wanneer een pagina van Plaatsen AEM voor het uitgeven wordt geopend en een component wordt gekopieerd, blijft de deegactie niet beschikbaar voor sommige placeholders (NPR-32317).
+
+* Wanneer de Manage tovenaar van de Publicatie wordt geopend, wordt een Fragment van de Ervaring verbonden aan een Component van de Kern niet getoond in de lijsten van gepubliceerde verwijzingen (NPR-32233).
+
+* Het levende exemplaaroverzicht in Aanraking UI duurt veel langer dan Klassieke UI om terug te geven (NPR-32149).
+
+* Wanneer de server-tijd en de machine-tijd in verschillende tijdzones zijn, publiceert de geplande tijd de servertijd van vertoningen in Aanraking UI, terwijl in Klassieke UI, de machinetijd wordt getoond (NPR-32077).
+
+* De Plaatsen van AEM openen geen pagina met een achtervoegsel in URL (NPR-32072).
+
+* Wanneer een gebruiker een Fragment van de Inhoud uitgeeft, wordt een geschrapte variatie van het Fragment van de Inhoud hersteld (NPR-32062).
+
+* De gebruikers worden toegestaan om een Fragment van de Inhoud te bewaren zonder om het even welke informatie op de vereiste gebieden (NPR-31988) te verstrekken.
+
+* kernel.js en ui.js worden niet vooraf in acht genomen of in het voorgeheugen ondergebracht. Het leidt tot extra tijd in het teruggeven van pagina&#39;s (NPR-31891).
+
+* Wanneer PageEventAuditListener wordt toegelaten, begaat de lengte van rij verhogingen. Het beïnvloedt de prestaties van vele verrichtingen zoals bulkpublicatie, navigatie, de beweging van bulkactiva (NPR-31890).
+
+* Wanneer de Fragmenten van de Ervaring worden gesleept, wordt de hoge reactietijd waargenomen (NPR-31878).
+
+* Wanneer u de component van de Belemmering hier optie in placeholder van een ontvankelijk net selecteert, wordt een GET verzoek verzonden en de verzoekresultaten in fout HTTP 403 (NPR-31845).
+
+* Wanneer het bewegen van de inhoud binnen de zelfde omslag, is de optie van de paginabeweging gehandicapt (NPR-31840).
+
+* Op de editable wijze van de malplaatjesstructuur, de toegestane componentenlijst in de vertoningen van de lay-outcontainer onjuiste resultaten. In de lay-outcontainer (NPR-31816) worden alleen onderdelen met een ontwerpdialoog weergegeven.
+
+* Wanneer een pagina read-only toestemmingen voor een gebruiker heeft, is de Open eigenschappen optie zichtbaar in sites.html maar niet in editor.html (NPR-31770).
+
+* Wanneer een gebruiker de Create knoop klikt, is de paginaoptie niet beschikbaar (NPR-31756).
+
+* Onbekwaam om campagne in de campagne van Adobe te synchroniseren die OOTB (uit de doos) bevat de component van de ontwerpimporteur (NPR-31728) bevat.
+
+* Wanneer u probeert een opsommingsteken te wijzigen in genummerde lijst, worden alleen de eerste twee items van de lijst gewijzigd (NPR-31636).
+
+* Wanneer een pagina niet-authored is en de kindknoop wordt geselecteerd, toont de selectiedialoog nog de aanvankelijke knoop. Wanneer de pagina authored is en de gebruiker doorbladert, richt de pagina aan de wortelknoop in plaats van de authored knoop (NPR-31618) opnieuw.
+
+* De de dialoogdoos van de meningsconfiguratie werkt niet behoorlijk voor de eigenschap van het Inbox aanpassingswerkschema (NPR-32503 en NPR-32492).
+
+* Een foutenmelding toont terwijl het bekijken van werkschemainformatie gebruikend Inbox (CQ-4282168).
 
 ### Assets {#assets-6540-enhancements}
 
@@ -100,57 +144,13 @@ Voor volledige lijst van eigenschappen, zeer belangrijke hoogtepunten, zeer bela
 
 * Synchroniseer alle inhoud checkbox wordt niet toegelaten door gebrek terwijl het proberen om DM wolk config op AEM (CQ-4288533) toe te voegen.
 
-### Sites {#sites-fixes}
-
-* Wanneer een URL van een pagina van de Plaatsen AEM een dubbelpunt bevat (: ) of percentagesymbool (%), de onderliggende browser houdt op antwoordend en de cycli van cpu tonen een punt (NPR-32369, NPR-31918).
-
-* Wanneer een pagina van Plaatsen AEM voor het uitgeven wordt geopend en een component wordt gekopieerd, blijft de deegactie niet beschikbaar voor sommige placeholders (NPR-32317).
-
-* Wanneer de Manage tovenaar van de Publicatie wordt geopend, wordt een Fragment van de Ervaring verbonden aan een Component van de Kern niet getoond in de lijsten van gepubliceerde verwijzingen (NPR-32233).
-
-* Het levende exemplaaroverzicht in Aanraking UI duurt veel langer dan Klassieke UI om terug te geven (NPR-32149).
-
-* Wanneer de server-tijd en de machine-tijd in verschillende tijdzones zijn, publiceert de geplande tijd de servertijd van vertoningen in Aanraking UI, terwijl in Klassieke UI, de machinetijd wordt getoond (NPR-32077).
-
-* De Plaatsen van AEM openen geen pagina met een achtervoegsel in URL (NPR-32072).
-
-* Wanneer een gebruiker een Fragment van de Inhoud uitgeeft, wordt een geschrapte variatie van het Fragment van de Inhoud hersteld (NPR-32062).
-
-* De gebruikers worden toegestaan om een Fragment van de Inhoud te bewaren zonder om het even welke informatie op de vereiste gebieden (NPR-31988) te verstrekken.
-
-* kernel.js en ui.js worden niet vooraf in acht genomen of in het voorgeheugen ondergebracht. Het leidt tot extra tijd in het teruggeven van pagina&#39;s (NPR-31891).
-
-* Wanneer PageEventAuditListener wordt toegelaten, begaat de lengte van rij verhogingen. Het beïnvloedt de prestaties van vele verrichtingen zoals bulkpublicatie, navigatie, de beweging van bulkactiva (NPR-31890).
-
-* Wanneer de Fragmenten van de Ervaring worden gesleept, wordt de hoge reactietijd waargenomen (NPR-31878).
-
-* Wanneer u de component van de Belemmering hier optie in placeholder van een ontvankelijk net selecteert, wordt een GET verzoek verzonden en de verzoekresultaten in fout HTTP 403 (NPR-31845).
-
-* Wanneer het bewegen van de inhoud binnen de zelfde omslag, is de optie van de paginabeweging gehandicapt (NPR-31840).
-
-* Op de editable wijze van de malplaatjesstructuur, de toegestane componentenlijst in de vertoningen van de lay-outcontainer onjuiste resultaten. In de lay-outcontainer (NPR-31816) worden alleen onderdelen met een ontwerpdialoog weergegeven.
-
-* Wanneer een pagina read-only toestemmingen voor een gebruiker heeft, is de Open eigenschappen optie zichtbaar in sites.html maar niet in editor.html (NPR-31770).
-
-* Wanneer een gebruiker de Create knoop klikt, is de paginaoptie niet beschikbaar (NPR-31756).
-
-* Onbekwaam om campagne in de campagne van Adobe te synchroniseren die OOTB (uit de doos) bevat de component van de ontwerpimporteur (NPR-31728) bevat.
-
-* Wanneer u probeert een opsommingsteken te wijzigen in genummerde lijst, worden alleen de eerste twee items van de lijst gewijzigd (NPR-31636).
-
-* Wanneer een pagina niet-authored is en de kindknoop wordt geselecteerd, toont de selectiedialoog nog de aanvankelijke knoop. Wanneer de pagina authored is en de gebruiker doorbladert, richt de pagina aan de wortelknoop in plaats van de authored knoop (NPR-31618) opnieuw.
-
-* De de dialoogdoos van de meningsconfiguratie werkt niet behoorlijk voor de eigenschap van het Inbox aanpassingswerkschema (NPR-32503 en NPR-32492).
-
-* Een foutenmelding toont terwijl het bekijken van werkschemainformatie gebruikend Inbox (CQ-4282168).
-
 ### Foundation-UI {#foundation-ui-6540}
 
 * De controleverschuivingen van de muis naar vorig filtergebied in plaats van het blijven in het bestaande filtergebied terwijl het zoeken van activa gebruikend het paneel van de Filter (NPR-32538).
 
-* [Of Platform Tagging] Search for tags door in de tagvelden te typen geeft tags buiten de hoofdgrenzen weer en respecteert niet de `rootPath` eigenschap van tagvelden (NPR-31895).
+* Platformtagging: Zoek naar markeringen door in de markeringsgebieden te typen toont markeringen buiten de wortelgrenzen en eerbiedigt niet het `rootPath` bezit van markeringsgebieden (NPR-31895).
 
-* [De browser van de Weg van het platform UI] breekt als de ongeldige weg op tekstgebied (NPR-31884) wordt toegevoegd.
+* Platform-UI: De browser van de weg breekt als de ongeldige weg op tekstgebied (NPR-31884) wordt toegevoegd.
 
 * Berichten worden verborgen achter een kleverig menu op pagina-selectie (NPR-31628).
 
@@ -240,9 +240,7 @@ Voor volledige lijst van eigenschappen, zeer belangrijke hoogtepunten, zeer bela
 
 * Documentbeveiliging: Een beschermd Pdf- dossier slaagt er niet in om off-line met de optie te openen DisableGlobalOfflineSynchronizationData die aan Waar (NPR-32078) wordt geplaatst.
 
-* Ontwerper: Als de het etiketteren optie wordt toegelaten, verdwijnt subform grens in de geproduceerde output PDF (NPR-32547).
-
-* Ontwerper: Als de het etiketteren optie wordt toegelaten, verdwijnt de subform grens in de geproduceerde output PDF (NPR-31983, NPR-31950).
+* Ontwerper: Als de etiketteringsoptie wordt toegelaten, verdwijnt de subform grens in de geproduceerde output PDF (NPR-32547, NPR-31983, NPR-31950).
 
 * Ontwerper: Als er samengevoegde cellen in een lijst zijn, ontbreekt de toegankelijkheidstest voor het outputPdf- dossier dat van een vorm wordt omgezet XDP gebruikend de outputdienst (CQ-4285372).
 

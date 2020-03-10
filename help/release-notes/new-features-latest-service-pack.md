@@ -4,14 +4,14 @@ description: Nieuw in Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 93521f102596a7f5cb247ddc430626d352338ce8
+source-git-commit: c9e8e1f2ebb72efc2f54c13c3ddae525ec55349f
 
 ---
 
 
 # Nieuw in Adobe Experience Manager 6.5 Service Pack 4 {#aem-whats-new-service-pack-4}
 
-In 2020 biedt Adobe Experience Manager (AEM) 6.5 functies en voortdurende verbeteringen in driemaandelijkse servicepacks. De klanten profiteren van deze nieuwe aanpak, aangezien zij de innovaties sneller kunnen toepassen.
+Adobe Experience Manager (AEM) 6.5 biedt functies en voortdurende verbeteringen via de driemaandelijkse servicepacks dit jaar. De nieuwe aanpak komt onze klanten ten goede wanneer ze de innovaties sneller kunnen toepassen.
 
 Het nieuwste AEM Service Pack 4 (6.5.4.0) wordt uitgebracht op 5 **maart 2020**. In dit artikel worden de functies gemarkeerd die het nieuwste Service Pack biedt om uw AEM-reis verrijkend te maken.
 
@@ -23,20 +23,17 @@ Het nieuwste AEM Service Pack 4 (6.5.4.0) wordt uitgebracht op 5 **maart 2020**.
 
 * Verlaagde tijd om een pagina te vernieuwen nadat u ervaringsfragmenten hebt gesleept en neergezet in het canvas van een pagina-editor.
 
-* In Live Copy-overzicht verkort u de tijd die nodig is om items te laden wanneer een site meer dan 200 live kopieën bevat.
+* De tijd voor het laden van items voor een sitepagina met meer dan 200 actieve kopieën in het overzicht van Actieve kopie verkort.
 
-* In de Redacteur van het Malplaatje, verbeterde de behandeling van onvolledige of ongeldige URLs die de Redacteur van het Malplaatje kan teweegbrengen om te vertragen.
+* Verbeterde verwerking van onvolledige of ongeldige URL&#39;s die ertoe kunnen leiden dat de Sjablooneditor langzamer wordt in de Sjablooneditor.
 
-Bovendien bevat AEM 6.5 SP4 de verbeteringen van het Stijlsysteem. U kunt nu ook stijlen selecteren in een deeldialoogvenster.
-
+Bovendien bevat AEM 6.5 Service Pack 4 verbeteringen voor stijlsystemen. U kunt nu ook stijlen selecteren in een deeldialoogvenster.
 
 ## AEM Assets {#aem-assets}
 
 ### Integratie met Brand Portal via Adobe I/O-console {#assets-integration-bp}
 
-AEM Assets wordt nu geconfigureerd met Brand Portal via Adobe I/O, dat een IMS token aanschaft voor goedkeuring van de Pantaarn van het Brand Portal. Eerder, werd het gevormd in Klassieke UI via Verouderde Gateway OAuth.
-
-Nieuwe integratie met de oude OAuth wordt niet ondersteund na 6 april 2020 en wordt overgeplaatst naar de Adobe I/O-console. Als u de integratie niet wijzigt, blijven de bestaande configuraties werken.
+U kunt AEM-middelen nu configureren met Brand Portal via Adobe I/O-console. De Adobe I/O-console verkrijgt een IMS-token voor toestemming van de Poorthuurder van het merk. Eerder, werd AEM Middelen gevormd met het Portaal van het Merk in Klassieke UI via de Verouderde Gateway OAuth. De configuraties die gebruikmaken van de Legacy OAuth Gateway worden ondersteund tot 6 april 2020. Als u de integratie niet wijzigt, blijven de bestaande configuraties werken.
 
 U kunt een nieuwe integratie maken of uw integratie-instellingen upgraden naar Adobe I/O-console.
 
@@ -56,7 +53,7 @@ U kunt een nieuwe integratie maken of uw integratie-instellingen upgraden naar A
 
 ### Afdrukbare uitvoer genereren in AEM Forms-workflows {#generate-printable-output}
 
-Als u een oplossing wilt om veelvoudige exemplaren van een bronmalplaatjedossier te drukken en het met een gegevensdossier met talrijke verslagen te integreren, is een nieuwe Generate Afdrukbare de werkschemastap van de Output beschikbaar in Vormen AEM. Als u bijvoorbeeld een bronformulier met een andere naam wilt afdrukken telkens wanneer het wordt afgedrukt, kunt u deze namen in het gegevensbestand opnemen en het formulier integreren met een standaardsjabloonbestand.
+Als u een oplossing wilt om veelvoudige exemplaren van een bronmalplaatjedossier te drukken of te bewaren en het met een gegevensdossier met talrijke verslagen te integreren, is een nieuwe Generate Afdrukbare de werkschemastap van de Output beschikbaar in Vormen AEM. Als u bijvoorbeeld een bronformulier met een andere naam wilt afdrukken telkens wanneer het wordt afgedrukt, kunt u deze namen in het gegevensbestand opnemen en het formulier integreren met een standaardsjabloonbestand.
 
 Profiteer van deze functie met **Gereedschappen** > **[!UICONTROL Workflow]** > **[!UICONTROL Modellen]** > **[!UICONTROL Maken]** en zoek vervolgens naar de stap Afdrukbare uitvoer **** genereren.
 
@@ -68,7 +65,7 @@ Voor meer informatie over deze eigenschap, zie [Forms-centric werkschema op OSGi
 
 U kunt nu het aantal kolommen voor een deelvenster definiëren in adaptieve formulieren en interactieve communicatie.
 
-U vindt de nieuwe optie door over te schakelen op de modus Lay-out, op het deelvenster te tikken dat u wilt omzetten in een indeling met meerdere kolommen, het bovenliggende venster te selecteren en op het pictogram met meerdere kolommen te tikken, zoals in de volgende afbeelding wordt weergegeven, om het aantal kolommen voor het deelvenster te definiëren.
+U vindt de nieuwe optie door over te schakelen op de modus Lay-out. Tik op het deelvenster dat u wilt omzetten in een indeling met meerdere kolommen, selecteer het bovenliggende venster en tik op het pictogram met meerdere kolommen om het aantal kolommen voor het deelvenster te definiëren.
 
 ![Lay-out met meerdere kolommen](assets/multi-column-layout.gif)
 
@@ -80,13 +77,13 @@ Voelt u ooit de behoefte om opties aan te passen beschikbaar in kopbal AEM? Het 
 
 **Koptekst aanpassen**
 
-Gebruikers die behoren tot de groep **workflowbeheerders** kunnen nu de koptekst die boven aan het scherm beschikbaar is, aanpassen met tekst van uw eigen keuze om de bestaande tekst in **[!UICONTROL Adobe Experience Manager]** te vervangen.
+Workflowbeheerders kunnen nu naar eigen keuze koptekst opgeven.
 
 U vindt de nieuwe optie Koptekst **[!UICONTROL aanpassen in koptekst]** onder Weergaveselectie (beschikbaar in de rechterbovenhoek van de werkbalk) > **[!UICONTROL Beheer]**.
 
 **Logo aanpassen**
 
-Net als bij het aanpassen van koptekst kunnen gebruikers die tot een groep **workflowbeheerders** behoren, het logo dat bovenaan beschikbaar is, nu aanpassen met het logo van uw eigen keuze.
+Net als bij het aanpassen van koptekst kunnen workflowbeheerders nu naar keuze het headerlogo opgeven.
 
 U vindt de nieuwe optie Logo **** aanpassen onder Weergaveselectie > **[!UICONTROL Beheer]**.
 
@@ -94,7 +91,7 @@ Zie [Uw Postvak IN](../sites-authoring/inbox.md)voor meer informatie over deze f
 
 ### Gebruikersnavigatiecontrole {#user-navigation-control}
 
-De gebruikers die tot **werkschema-beheerders** groep behoren hebben de optie om de gebruikers te maken werken aan AEM op een beperkte wijze die op hun rol wordt gebaseerd. De beheerders kunnen de weergave van navigatieopties in de koptekst bepalen en de gebruikers beperken tot de modus voor het schrijven van workflows of naar Help- of andere koppelingen naar oplossingen navigeren.
+Workflowbeheerders hebben nu de mogelijkheid om gebruikers in beperkte modus op basis van hun rol aan AEM te laten werken. De beheerders kunnen de weergave van navigatieopties in de koptekst bepalen om de gebruikers te beperken tot het schakelen naar de workflowontwerpmodus of naar andere oplossingskoppelingen.
 
 Bekijk de nieuwe navigatieopties **** Verbergen onder Weergaveselector > **[!UICONTROL Beheer]**.
 
@@ -102,9 +99,9 @@ Zie [Uw Postvak IN](../sites-authoring/inbox.md)voor meer informatie over deze f
 
 ### RTF-ondersteuning in HTML5-formulieren {#rich-text-support}
 
-In het tekstveld kan nu een lijst met opmaakopties worden weergegeven in het weergegeven HTML5-formulier. U moet een veldindeling voor het tekstveld definiëren in Forms Designer om de juiste instellingen op het veld toe te passen.
+In het tekstveld kan nu een lijst met opmaakopties worden weergegeven in het weergegeven HTML5-formulier. U moet een opmaak definiëren voor het tekstveld in Forms Designer om de juiste instellingen op het veld toe te passen.
 
-Tik op het tekstveld in de **[!UICONTROL ontwerpweergave]** in Forms Designer om deze functie te gebruiken. Selecteer op het tabblad **[!UICONTROL Veld]** de optie **[!UICONTROL RTF]** in de vervolgkeuzelijst **[!UICONTROL Veldindeling]** om de instellingen toe te passen. In het tekstveld worden nu opmaakopties weergegeven wanneer het wordt weergegeven in een HTML5-formulier.
+Tik op het tekstveld in de **[!UICONTROL ontwerpweergave]** in Forms Designer om deze functie te gebruiken. Selecteer op het tabblad **[!UICONTROL Veld]** de optie **[!UICONTROL RTF]** in de vervolgkeuzelijst **[!UICONTROL Veldindeling]** om de instellingen toe te passen.
 
 Zie Formuliersjablonen [ontwerpen voor HTML5-formulieren](../forms/using/designing-form-template.md)voor meer informatie.
 
@@ -112,7 +109,7 @@ Zie Formuliersjablonen [ontwerpen voor HTML5-formulieren](../forms/using/designi
 
 Naast de nieuwe functies bevat AEM 6.5 Service Pack 4 de volgende belangrijke kenmerken:
 
-* Alleen substructuren met selectieve inhoud kunnen nu worden gesynchroniseerd met de modus ***Dynamische media - Scene7 in plaats van met alle substructuren*** `content/dam`.
+* U kunt selectieve inhoudsubstructuren nu synchroniseren naar Scene7 in plaats van naar alle beschikbare substructuren `content/dam`.
 
 * Integratie van formuliergegevensmodellen met SOAP-webservice ondersteunt nu keuzegroepen of kenmerken voor elementen.
 
@@ -158,7 +155,7 @@ Tussen 12 december 2019 en 5 maart 2020 heeft Adobe de volgende functies uitgebr
 
 * AEM-sites: Projectarchetype 23The best way to start a new AEM project. Met Archetype 23 [verenigen wij het Archetype van het Project voor SPA en regelmatige plaatsen in één](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-23), verder verstrekkend een standaardthema om uw front-end ontwikkeling te starten.
 
-* AEM-sites: WKND Reference SiteAll [nieuw referentieproject](https://www.wknd.site/) verpakt met beste praktijken op hoe te om plaatsen met AEM te bouwen. Leer meer het lezen van het volledig bijgewerkte [WKND leerprogramma](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html) en greep de code van [GitHub](https://github.com/adobe/aem-guides-wknd/releases).
+* AEM-sites: WKND Reference SiteAll [nieuw referentieproject](https://www.wknd.site/) verpakt met beste praktijken op hoe te om plaatsen met AEM te bouwen. Leer meer door het volledig bijgewerkte [WKND leerprogramma](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html) te lezen en de code van [GitHub](https://github.com/adobe/aem-guides-wknd/releases)te pakken.
 
 * AEM-sites: Commerce CIF Core Components 0.7.0 en 0.9.0Integrating AEM Sites and Magento Commerce. We [breiden voortdurend speciale kerncomponenten uit en een projectarchetype dat zich richt op handel](https://github.com/adobe/aem-core-cif-components/releases).
 

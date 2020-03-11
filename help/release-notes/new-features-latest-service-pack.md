@@ -4,7 +4,7 @@ description: Nieuw in Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d0038181326037ab71f4df9b509d2f0827191c86
+source-git-commit: edbe99460bb880ae118f7e826592bc7ad11d54c5
 
 ---
 
@@ -19,15 +19,15 @@ Het nieuwste AEM Service Pack 4 (6.5.4.0) wordt uitgebracht op 5 **maart 2020**.
 
 ### Prestatieverbeteringen op verschillende gebieden {#performance-improvements}
 
-* Minder tijd voor het laden en initialiseren van ContextHub binnen een plaats (contexthub.kernel.js). Hierdoor wordt een pagina tijdens een bezoek aan de site sneller geladen.
+* Minder tijd voor het laden en initialiseren van ContextHub binnen een plaats (contexthub.kernel.js). Hierdoor worden pagina&#39;s tijdens een bezoek aan de site sneller geladen.
 
-* Verlaagde tijd om een pagina te vernieuwen nadat u ervaringsfragmenten hebt gesleept en neergezet in het canvas van een pagina-editor.
+* Minder tijd om een pagina te vernieuwen nadat u Experience Fragments naar de pagina-editor Sites hebt gesleept en neergezet.
 
 * De tijd voor het laden van items voor een sitepagina met meer dan 200 actieve kopieën in het overzicht van Actieve kopie verkort.
 
-* Verbeterde verwerking van onvolledige of ongeldige URL&#39;s die ertoe kunnen leiden dat de Sjablooneditor langzamer wordt in de Sjablooneditor.
+* Verbeterde verwerking van onvolledige of ongeldige URL&#39;s. Dergelijke URL&#39;s kunnen de Sjablooneditor vertragen.
 
-Bovendien bevat AEM 6.5 Service Pack 4 verbeteringen voor stijlsystemen. U kunt nu ook stijlen selecteren in een deeldialoogvenster.
+Daarnaast bevat AEM 6.5.4.0 verbeteringen voor stijlsystemen. U kunt nu stijlen selecteren in het dialoogvenster met componenten.
 
 ## AEM Assets {#aem-assets}
 
@@ -91,7 +91,7 @@ Zie [Uw Postvak IN](../sites-authoring/inbox.md)voor meer informatie over deze f
 
 ### Gebruikersnavigatiecontrole {#user-navigation-control}
 
-Workflowbeheerders hebben nu de mogelijkheid om gebruikers in beperkte modus op basis van hun rol aan AEM te laten werken. De beheerders kunnen de weergave van navigatieopties in de koptekst bepalen om de gebruikers te beperken tot het schakelen naar de workflowontwerpmodus of naar andere oplossingskoppelingen.
+Workflowbeheerders hebben nu de mogelijkheid om gebruikers in beperkte modus op basis van hun rol aan AEM te laten werken. De beheerders kunnen de weergave van navigatieopties in de koptekst beheren om te beperken dat gebruikers overschakelen op de workflowontwerpmodus of andere oplossingskoppelingen.
 
 Bekijk de nieuwe navigatieopties **** Verbergen onder Weergaveselector > **[!UICONTROL Beheer]**.
 

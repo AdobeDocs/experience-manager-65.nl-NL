@@ -1,8 +1,8 @@
 ---
 title: Uw inbox
 seo-title: Uw inbox
-description: Het beheren van uw taken met inbox
-seo-description: Het beheren van uw taken met inbox
+description: Taken beheren met de Postvak IN
+seo-description: Taken beheren met de Postvak IN
 uuid: ddd48019-ce69-4a47-be2b-5b66ae2fe3c8
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,37 +10,37 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
 translation-type: tm+mt
-source-git-commit: 033c32c581fddd5f632ad534f57c84b4d74a4104
+source-git-commit: f763359fb333ef6cc8a6748ccfa39ba9aee9ca48
 
 ---
 
 
 # Uw inbox{#your-inbox}
 
-U kunt berichten van diverse gebieden van AEM, met inbegrip van werkschema&#39;s en projecten ontvangen; bijvoorbeeld , over :
+U kunt meldingen ontvangen van verschillende gebieden van AEM, waaronder workflows en projecten. bijvoorbeeld over:
 
 * Taken:
 
-   * deze kunnen ook op verschillende punten binnen de AEM UI worden gecreëerd, bijvoorbeeld in het kader van **projecten**;
+   * deze kunnen ook worden gecreëerd op verschillende punten binnen de AEM-gebruikersinterface, bijvoorbeeld in het kader van **projecten**;
    * these can be the product of a workflow **Create Task** or **Create Project Task** step.
 
 * Workflows:
 
-   * de werkpunten die acties vertegenwoordigen die u op paginainhoud moet uitvoeren;
+   * tijdelijke items die acties vertegenwoordigen die u op pagina-inhoud moet uitvoeren;
 
-      * dit is het product van werkschema **Deelnemende** stappen
-   * mislukkingspunten, om beheerders toe te staan om de ontbroken stap opnieuw te proberen.
+      * Dit is het product van de workflow **Deelnemerstappen**
+   * items zijn mislukt, zodat beheerders de mislukte stap opnieuw kunnen proberen.
 
 
-U ontvangt deze berichten in uw eigen Postvak In waar u ze kunt bekijken en actie kunt ondernemen.
-
->[!NOTE]
->
->De uit-van-de-doos AEM komt pre-geladen met administratieve taken die aan de groep van de beheerdergebruiker worden toegewezen. Zie [uit-van-de-doos Administratieve Taken](#out-of-the-box-administrative-tasks) voor details.
+U ontvangt deze meldingen in uw eigen Postvak IN waar u ze kunt bekijken en actie kunt ondernemen.
 
 >[!NOTE]
 >
->Zie ook voor meer informatie over de objecttypes:
+>AEM uit-van-de-doos wordt voorgeladen met administratieve taken die aan de groep van de beheerdergebruiker worden toegewezen. Zie [uit-van-de-doos Administratieve Taken](#out-of-the-box-administrative-tasks) voor details.
+
+>[!NOTE]
+>
+>Zie ook voor meer informatie over de objecttypen:
 >
 >* [Projecten](/help/sites-authoring/touch-ui-managing-projects.md)
 >* [Projecten - werken met taken](/help/sites-authoring/task-content.md)
@@ -50,9 +50,9 @@ U ontvangt deze berichten in uw eigen Postvak In waar u ze kunt bekijken en acti
 
 
 
-## Postvak In in de Koptekst {#inbox-in-the-header}
+## Postvak IN van koptekst {#inbox-in-the-header}
 
-Van om het even welke consoles wordt het huidige aantal punten in uw inbox getoond in de kopbal. Het indicatielampje kan ook worden geopend om snel toegang te geven tot de pagina(&#39;s) waarvoor actie(s) nodig is of om toegang te krijgen tot het Postvak IN:
+Van om het even welke consoles wordt het huidige aantal punten in uw inbox getoond in de kopbal. De indicator kan ook worden geopend om snel toegang te krijgen tot de pagina(&#39;s) waarvoor een actie(s) vereist is of om toegang te krijgen tot het Postvak IN:
 
 ![wf-80](assets/wf-80.png)
 
@@ -60,25 +60,25 @@ Van om het even welke consoles wordt het huidige aantal punten in uw inbox getoo
 >
 >Bepaalde acties zullen ook in de [kaartmening van het aangewezen middel](/help/sites-authoring/basic-handling.md#card-view)worden getoond.
 
-## De uit-van-de-doos Administratieve Taken {#out-of-the-box-administrative-tasks}
+## Administratieve taken buiten de box {#out-of-the-box-administrative-tasks}
 
-De uit-van-de-doos AEM komt pre-geladen met vier taken die aan de groep van de beheerdergebruiker worden toegewezen.
+Uit-de-doos AEM komt vooraf geladen met vier taken die aan de groep van de beheerdergebruiker worden toegewezen.
 
-* [Analyse en gerichte taken configureren](/help/sites-administering/opt-in.md)
-* [De beveiligingscontrolelijst voor AEM toepassen](/help/sites-administering/security-checklist.md)
-* Laat de Geaggregeerde Inzameling van de Statistieken van het Gebruik toe
+* [Analyse en doelgericht configureren](/help/sites-administering/opt-in.md)
+* [De AEM-beveiligingscontrolelijst toepassen](/help/sites-administering/security-checklist.md)
+* Verzamelde verzameling van verbruiksstatistieken inschakelen
 * [HTTPS configureren](/help/sites-administering/ssl-by-default.md)
 
-## Het openen van Inbox {#opening-the-inbox}
+## De Postvak IN openen {#opening-the-inbox}
 
-Om het AEM-bericht in het vak te openen:
+Het AEM-meldingsvak openen:
 
-1. Klik/tik op de indicator in de toolbar.
+1. Klik/tik op de indicator in de werkbalk.
 
 1. Selecteer **Alles bekijken**. De **AEM Inbox** wordt geopend. In de inbox ziet u items uit workflows, projecten en taken.
 1. De standaardweergave is [Lijstweergave](#inbox-list-view), maar u kunt ook schakelen naar [Kalenderweergave](#inbox-calendar-view). Dit gebeurt met de weergavekiezer (werkbalk, rechtsboven).
 
-   Voor beide meningen kunt u de Montages [van de](#inbox-view-settings)Mening ook bepalen; de beschikbare opties zijn afhankelijk van de huidige mening.
+   Voor beide weergaven kunt u ook [Weergave-instellingen](#inbox-view-settings)definiëren. de beschikbare opties zijn afhankelijk van de huidige weergave.
 
    ![wf-79](assets/inbox-list-view.png)
 
@@ -88,124 +88,124 @@ Om het AEM-bericht in het vak te openen:
 
 ### Postvak IN - Lijstweergave {#inbox-list-view}
 
-Deze mening maakt een lijst van alle punten, samen met zeer belangrijke relevante informatie:
+In deze weergave worden alle items weergegeven, samen met belangrijke relevante informatie:
 
 ![wf-82](assets/wf-82.png)
 
-### Postvak IN - Agendaweergave {#inbox-calendar-view}
+### Postvak IN - Kalenderweergave {#inbox-calendar-view}
 
-In deze weergave worden objecten weergegeven op basis van hun positie in de agenda en de exacte weergave die je hebt geselecteerd:
+In deze weergave worden de items weergegeven op basis van hun positie in de kalender en de exacte weergave die u hebt geselecteerd:
 
 ![wf-93](assets/wf-93.png)
 
 U kunt:
 
-* een specifieke weergave selecteren; **Tijdlijn**, **kolom**, **lijst**
+* een specifieke weergave te selecteren; **Tijdlijn**, **Kolom**, **Lijst**
 
 * specify the tasks to display according to **Schedule**; **All**, **Planned**, **In Progress**, **Due Soon**, **Past Due**
 
 * boor neer voor meer gedetailleerde informatie over een punt
-* selecteer een datumwaaier om de mening te concentreren:
+* Selecteer een datumbereik waarop u de weergave wilt scherpstellen:
 
 ![wf-91](assets/wf-91.png)
 
 ### Postvak IN - Instellingen {#inbox-view-settings}
 
-Voor beide meningen (Lijst en Kalender) kunt u montages bepalen:
+Voor beide weergaven (Lijst en Kalender) kunt u instellingen definiëren:
 
 * **Kalenderweergave**
 
-   Voor de Mening **van de** Kalender kunt u vormen:
+   Voor de **kalenderweergave** kunt u het volgende configureren:
 
-   * **Groep door**
+   * **Groeperen op**
    * **Planning** of **Geen**
-   * **Kaartformaat**
+   * **Kaartgrootte**
    ![wf-92](assets/wf-92.png)
 
 * **Lijstweergave**
 
    Voor de Mening **van de** Lijst kunt u het soortmechanisme vormen:
 
-   * **Sorteerveld**
+   * **Veld sorteren**
    * **Sorteervolgorde**
    ![wf-83](assets/inbox-settings.png)
 
-### Postvak IN - Beheer {#inbox-admin-control}
+### Inbox - Admin Control {#inbox-admin-control}
 
-Met de optie Beheerbeheer kunnen beheerders:
+Met de optie Beheer beheren kunnen beheerders:
 
 * Koptekst en logo aanpassen
 
-* Controle de vertoning van navigatiekoppelingen beschikbaar in kopbal
+* De weergave van navigatiekoppelingen in koptekst bepalen
 
-De optie van de Controle Admin toont in de drop-down lijst van de meningsselecteur slechts als u een lid van de beheerders of werkschema-beheerders groep bent.
+De optie Beheer is alleen zichtbaar voor de leden van de groep met beheerders of workflowbeheerders.
 
-![beheerderscontrole](assets/admin-control.png)
+![beheer](assets/admin-control.png)
 
-* **Aanpassing van merken**
+* **Aanpassing branding**
 
-   * **Koptekst aanpassen:** Specificeer de tekst aan vertoning in de kopbal.
+   * **Koptekst aanpassen:** Geef de tekst op die in de koptekst moet worden weergegeven ter vervanging van de standaardtekst van **Adobe Experience Manager** .
 
-   * **Logo aanpassen:** Upload een beeld in het Digitale Beheer van Activa (DAM) en verwijs naar dat beeld om het in de kopbal te tonen.
+   * **Logo aanpassen:** Geef de afbeelding op die in de koptekst moet worden weergegeven als logo. Upload een afbeelding in Digital Asset Management (DAM) en verwijs naar die afbeelding in het veld.
 
 * **Gebruikersnavigatie**
-   * **Navigatieopties verbergen:** Selecteer deze optie om navigatieopties te verbergen beschikbaar in de kopbal. De navigatieopties omvatten verbindingen aan andere oplossingen, de verbinding van de Hulp, en de auteursopties beschikbaar bij het aftappen van het embleem of de tekst van de Manager van de Ervaring van Adobe.
-* **Opslaan:** Tik/klik op deze optie om de instellingen op te slaan.
+   * **Navigatieopties verbergen:** Selecteer deze optie om de beschikbare navigatieopties in de koptekst te verbergen. De navigatieopties omvatten koppelingen naar andere oplossingen, de koppeling van de Hulp, en de auteursopties beschikbaar op het Tikken van het embleem of de tekst van de Manager van de Ervaring van Adobe.
+* **Opslaan:** Tik op deze optie of klik op deze optie om de instellingen op te slaan.
 
-## Actie ondernemen voor een object {#taking-action-on-an-item}
+## Actie ondernemen op een item {#taking-action-on-an-item}
 
-1. Om een actie op een punt te nemen, selecteer de duimnagel voor het aangewezen punt. De pictogrammen voor de acties die op dat punt van toepassing zijn zullen in de toolbar worden getoond:
+1. Als u een actie wilt uitvoeren op een item, selecteert u de miniatuur voor het desbetreffende item. Pictogrammen voor de acties die op dat item van toepassing zijn, worden weergegeven op de werkbalk:
 
    ![wf-84](assets/wf-84.png)
 
-   De acties zijn geschikt voor het punt en omvatten:
+   De acties zijn geschikt voor het item en omvatten:
 
-   * **Volledige** actie; bijvoorbeeld, een taak of werkschemapunt.
-   * **Wijs**/**delegeer** een punt opnieuw toe.
-   * **Een object openen** ; afhankelijk van het type item kan deze actie:
+   * **Voltooiing** van de actie; bijvoorbeeld een taak- of workflowitem.
+   * **Wijs** een punt opnieuw toe/**delegeer** een punt.
+   * **Open** een item; afhankelijk van het type item kan deze handeling:
 
-      * de eigenschappen van het item weergeven
-      * open een aangewezen dashboard of tovenaar voor verdere actie
-      * open documentatie
-   * **Stap terug** naar een vorige stap.
-   * Bekijk de nuttige lading voor een werkschema.
-   * Creeer een project van het punt.
+      * itemeigenschappen weergeven
+      * een geschikt dashboard of een geschikte wizard voor verdere actie openen
+      * open gerelateerde documentatie
+   * **Ga terug** naar een vorige stap.
+   * Bekijk de lading voor een werkschema.
+   * Maak een project van het item.
    >[!NOTE]
    >
-   >Voor meer informatie, zie:
+   >Zie voor meer informatie:
    >
-   >* Werkstroomitems - [Deelnemen aan werkstromen](/help/sites-authoring/workflows-participating.md)
+   >* Workflowitems - [Deelnemen aan workflows](/help/sites-authoring/workflows-participating.md)
 
 
-1. Afhankelijk van het geselecteerde item wordt een actie gestart. bijvoorbeeld :
+1. Afhankelijk van het geselecteerde item wordt een actie gestart. bijvoorbeeld:
 
-   * er zal een dialoog op gang worden gebracht die aan de actie is aangepast .
-   * een actietovenaar zal worden begonnen.
+   * er wordt een dialoog geopend die op de actie is toegesneden .
+   * er wordt een wizard Handelingen gestart.
    * er wordt een documentatiepagina geopend .
-   Bijvoorbeeld, zal **toe:wijzen** een dialoog openen:
+   Met **Opnieuw toewijzen** wordt bijvoorbeeld een dialoogvenster geopend:
 
    ![wf-85](assets/wf-85.png)
 
-   Afhankelijk van of een dialoog, tovenaar, documentatiepagina is geopend u kunt:
+   Afhankelijk van of een dialoogvenster, wizard, documentatiepagina is geopend, kunt u:
 
-   * de passende maatregelen bevestigen; bijv. Opnieuw toewijzen.
-   * Annuleer de actie.
-   * Achterpijl; bijvoorbeeld, als een actietovenaar of documentatiepagina is geopend, kunt u aan Inbox terugkeren.
+   * Bevestig de passende actie; bv. Opnieuw toewijzen.
+   * Annuleer de handeling.
+   * Pijl-achter; Als bijvoorbeeld een wizard Handelingen of een documentatiepagina is geopend, kunt u terugkeren naar het Postvak IN.
 
 
 ## Een taak maken {#creating-a-task}
 
-Van inbox kunt u taken tot stand brengen:
+In het Postvak IN kunt u taken maken:
 
-1. Selecteer **creëren**, dan **Taak**.
+1. Selecteer **Maken**, dan **Taak**.
 1. Complete the necessary fields in the **Basic** and **Advanced** tabs; only the **Title** is mandatory, all others are optional:
 
-   * **Basis**:
+   * **Standaard**:
 
       * **Titel**
       * **Project**
       * **Geadresseerde**
-      * **Inhoud**; vergelijkbaar met Payload, is dit een verwijzing van de taak naar een locatie in de repository
+      * **Inhoud**; Net als bij Payload is dit een verwijzing van de taak naar een locatie in de repository
       * **Beschrijving**
       * **Taakprioriteit**
       * **Begindatum**
@@ -214,7 +214,7 @@ Van inbox kunt u taken tot stand brengen:
 
    * **Geavanceerd**
 
-      * **Naam**: dit zal worden gebruikt om de URL te vormen; indien blanco, wordt deze gebaseerd op de **titel**.
+      * **Naam**: dit wordt gebruikt om de URL te vormen; als het leeg is, wordt het gebaseerd op de **titel**.
    ![wf-87](assets/wf-87.png)
 
 1. Selecteer **Verzenden**.
@@ -223,17 +223,17 @@ Van inbox kunt u taken tot stand brengen:
 
 Voor bepaalde taken kunt u een [Project](/help/sites-authoring/projects.md) tot stand brengen dat op die taak wordt gebaseerd:
 
-1. Selecteer de aangewezen taak, door te tikken/op de duimnagel te klikken.
+1. Selecteer de gewenste taak door op de miniatuur te tikken of te klikken.
 
    >[!NOTE]
    >
-   >Slechts kunnen de gecreeerde taken gebruikend de **Create** optie van **Inbox** worden gebruikt om een project tot stand te brengen.
+   >Alleen taken die zijn gemaakt met de optie **Maken** van **Inbox** kunnen worden gebruikt om een project te maken.
    >
-   >De werkpunten (van een werkschema) kunnen niet worden gebruikt om een project tot stand te brengen.
+   >Workitems (van een workflow) kunnen niet worden gebruikt om een project te maken.
 
 1. Selecteer **Project maken** op de werkbalk om de wizard te openen.
 1. Select the appropriate template, then **Next**.
-1. Specificeer de vereiste eigenschappen:
+1. Geef de vereiste eigenschappen op:
 
    * **Basis**
 
@@ -247,13 +247,13 @@ Voor bepaalde taken kunt u een [Project](/help/sites-authoring/projects.md) tot 
       * **Naam**
    >[!NOTE]
    >
-   >Zie [het Creëren van een Project](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project) voor volledige informatie.
+   >Zie Een project [](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project) maken voor volledige informatie.
 
-1. Selecteer **creëren** om de actie te bevestigen.
+1. Selecteer **Maken** om de handeling te bevestigen.
 
-## Filtrerende Punten in AEM Inbox {#filtering-items-in-the-aem-inbox}
+## Items in het Postvak IN filteren {#filtering-items-in-the-aem-inbox}
 
-U kunt de vermelde punten filtreren:
+U kunt de vermelde items filteren:
 
 1. Open het **AEM-vak**.
 
@@ -261,7 +261,7 @@ U kunt de vermelde punten filtreren:
 
    ![wf-88](assets/wf-88.png)
 
-1. U kunt de punten filtreren die volgens een waaier van criteria worden vermeld, veel waarvan kan worden verfijnd; bijvoorbeeld :
+1. U kunt de vermelde items filteren op basis van een reeks criteria, waarvan er vele kunnen worden verfijnd; bijvoorbeeld:
 
    ![wf-89](assets/wf-89.png)
 

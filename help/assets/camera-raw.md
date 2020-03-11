@@ -3,7 +3,7 @@ title: Camera Raw-ondersteuning
 description: Leer hoe u ondersteuning voor Camera Raw inschakelt in Adobe Experience Manager-middelen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
+source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
 
 ---
 
@@ -19,7 +19,7 @@ U kunt Camera Raw-ondersteuning inschakelen voor het verwerken van Raw-bestandsi
 Voer de volgende stappen uit om Camera Raw-ondersteuning in Adobe Experience Manager-middelen in te schakelen:
 
 1. Download het [Camera Raw-pakket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) van het Delen van pakketten.
-1. Toegang `https://[aem_server]:[port]/workflow`. Open de workflow **[!UICONTROL DAM Update Asset]** .
+1. Ga naar `https://[aem_server]:[port]/workflow`. Open de workflow **[!UICONTROL DAM Update Asset]** .
 1. Open de stap Miniaturen **** verwerken.
 1. Geef de volgende configuratie op het tabblad **[!UICONTROL Miniaturen]** op:
 
@@ -51,13 +51,13 @@ Voer de volgende stappen uit om Camera Raw-ondersteuning in Adobe Experience Man
 
 U kunt nu Camera Raw-bestanden importeren in AEM-elementen. Nadat u het Camera RAW-pakket hebt geïnstalleerd en de vereiste workflow hebt geconfigureerd, wordt de optie **[!UICONTROL Afbeelding aanpassen]** weergegeven in de lijst met zijvensters.
 
-![chlimage_1-135](assets/chlimage_1-337.png)
+![chlimage_1-131](assets/chlimage_1-337.png)
 
-*Afbeelding: Opties in het zijpaneel.*
+*Afbeelding: Opties in het zijvenster*
 
 ![chlimage_1-132](assets/chlimage_1-338.png)
 
-*Afbeelding: Gebruik deze optie om lichte bewerkingen uit te voeren op uw afbeeldingen.*
+*Afbeelding: Met deze optie kunt u lichte bewerkingen uitvoeren op uw afbeeldingen*
 
 Nadat u de bewerkingen in een Camera Raw-afbeelding hebt opgeslagen, `AdjustedPreview.jpg` wordt een nieuwe uitvoering voor de afbeelding gegenereerd. Voor andere afbeeldingstypen, behalve Camera Raw, worden de wijzigingen in alle uitvoeringen doorgevoerd.
 

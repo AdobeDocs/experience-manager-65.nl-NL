@@ -9,7 +9,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: 672d5b1e-6b2f-4afe-ab04-c398e5ef45d5
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 7eb3529de1c99d09eaa78c7589320a85e729400b
 
 ---
 
@@ -157,7 +157,7 @@ In de volgende tabel worden de eigenschappen weergegeven:
    <td>Tekenreeks[] </td>
    <td>-</td>
    <td>sling:resourceType</td>
-   <td>Voor de volgende het slingeren middeltypes, keer niet de standaardUitvoer van CaaS.<br /><br /> Retourneer een klant json-export door de resource als te renderen; &lt;RESOURCE&gt;.&lt;SELECTOR_TO_INC&gt;.json </td>
+   <td>Voor de volgende het slingeren middeltypes, keer niet de standaardUitvoer van CaaS.<br /> Retourneer een klant json-export door de resource als te renderen;<br /> &lt;RESOURCE&gt;.&lt;SELECTOR_TO_INC&gt;.json </td>
   </tr>
  </tbody>
 </table>
@@ -226,7 +226,7 @@ Deze configuratie breidt het gebrek uit om groeperende kinderen onder een kindkn
 
 Zie hieronder de middelen om over extra onderwerpen in de Diensten van de Inhoud te leren:
 
-* [Modellen ontwikkelen](/help/mobile/models-in-repository.md)
+* [Modellen ontwikkelen](/help/mobile/administer-mobile-apps.md)
 * [Services voor het ontwerpen van inhoud](/help/mobile/develop-content-as-a-service.md)
 * [Inhoudsservices beheren](/help/mobile/developing-content-services.md)
 

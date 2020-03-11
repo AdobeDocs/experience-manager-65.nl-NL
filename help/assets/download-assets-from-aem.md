@@ -1,14 +1,14 @@
 ---
-title: Elementen downloaden van AEM
+title: Assets van AEM downloaden
 description: Leer hoe u elementen downloadt van AEM en de downloadfunctionaliteit in- of uitschakelt.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
 
 ---
 
 
-# Elementen downloaden van AEM {#download-assets-from-aem}
+# Assets van AEM downloaden {#download-assets-from-aem}
 
 U kunt elementen downloaden, zoals statische en dynamische uitvoeringen. U kunt ook e-mails met koppelingen naar elementen rechtstreeks vanuit AEM Assets verzenden. Gedownloade elementen worden gebundeld in een ZIP-bestand. Het gecomprimeerde ZIP-bestand heeft een maximale bestandsgrootte van 1 GB voor de exporttaak. U kunt maximaal 500 elementen per exporttaak gebruiken.
 
@@ -20,13 +20,15 @@ Als u elementen wilt downloaden, navigeert u naar een element, selecteert u het 
 
 De elementtypen Afbeeldingssets, Spin-sets, Gemengde mediasets en Carousel-sets kunnen niet worden gedownload.
 
-![Beschikbare opties voor het downloaden van elementen van AEM Assets](assets/asset_download_dialog.png)*Figuur: Beschikbare opties voor het downloaden van elementen van AEM-elementen*
+![Beschikbare opties voor het downloaden van elementen van AEM-elementen](assets/asset_download_dialog.png)
+
+*Afbeelding: Beschikbare opties voor het downloaden van elementen van AEM-elementen*
 
 Hieronder vindt u de opties Exporteren/downloaden. Dynamische uitvoeringen zijn uniek voor Dynamische media en u kunt uitvoeringen ter plekke genereren naast het element dat u hebt geselecteerd. Deze optie is alleen beschikbaar als u Dynamische media hebt ingeschakeld.
 
 | Opties voor exporteren of downloaden | Beschrijvingen |
 |---|---|
-| [!UICONTROL Activa] | Selecteer deze optie om het element in de oorspronkelijke vorm te downloaden zonder dat er uitvoeringen plaatsvinden. |
+| [!UICONTROL Assets] | Selecteer deze optie om het element in de oorspronkelijke vorm te downloaden zonder dat er uitvoeringen plaatsvinden. |
 | [!UICONTROL Uitvoeringen] | Een vertoning is de binaire representatie van een element. Elementen hebben een primaire representatie, namelijk die van het geüploade bestand. Zij kunnen om het even welk aantal vertegenwoordiging hebben. <br> Met deze optie kunt u de uitvoeringen selecteren die u wilt downloaden. Welke uitvoeringen beschikbaar zijn, is afhankelijk van het element dat u selecteert. |
 | [!UICONTROL Dynamische uitvoeringen] | Een dynamische vertoning genereert andere uitvoeringen ter plekke. Wanneer u deze optie selecteert, selecteert u ook de uitvoeringen die u dynamisch wilt maken door een optie te selecteren in de lijst [Voorinstellingen](image-presets.md) afbeelding. <br>Bovendien kunt u de grootte en de maateenheid, de indeling, de kleurruimte, de resolutie en alle wijzigingstoetsen voor afbeeldingen selecteren (bijvoorbeeld om de afbeelding om te keren) |
 | [!UICONTROL E-mail] | Er wordt een e-mailbericht verzonden naar de gebruiker. De standaard e-mailsjablonen zijn beschikbaar op de volgende locaties:<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`</li></ul> De malplaatjes die u tijdens plaatsing aanpast zouden op deze plaatsen moeten aanwezig zijn: <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`</li></ul>U kunt huurdersspecifieke douanesjablonen bij deze plaatsen opslaan:<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`</li></ul> |

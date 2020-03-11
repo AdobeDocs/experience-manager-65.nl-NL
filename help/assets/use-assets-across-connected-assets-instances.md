@@ -1,188 +1,188 @@
 ---
-title: Gebruik Verbonden Activa om activa DAM in het auteurswerkschema van de Plaatsen van de Manager van de Ervaring van Adobe te delen
-description: De activa van het gebruik beschikbaar op een verre plaatsing van de Activa van de Manager van de Ervaring van Adobe wanneer het creëren van uw Web-pagina's op een andere plaatsing van de Plaats van de Manager van de Ervaring.
+title: Met gekoppelde assets kunt u DAM-assets delen in de authoringworkflow van Adobe Experience Manager Sites
+description: Gebruik de assets die beschikbaar zijn op een externe implementatie van Adobe Experience Manager Assets bij het maken van uw webpagina's op een andere implementatie van een Experience Manager-site.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 04789dc662bc935277f392aefde4146f1a79f747
+source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
 
 ---
 
 
-# Gebruik Verbonden activa om activa DAM in de Plaatsen van AEM te delen {#use-connected-assets-to-share-dam-assets-in-aem-sites}
+# Gekoppelde assets gebruiken om DAM-assets te delen in AEM-sites {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
-In grote ondernemingen kan de infrastructuur die nodig is om websites te maken, worden verspreid. Soms kunnen de mogelijkheden van de websiteverwezenlijking en digitale activa die worden gebruikt om deze websites tot stand te brengen in verschillende plaatsingen verblijven. Een paar redenen kunnen geografisch verdeelde plaatsingen zijn die worden vereist om gelijktijdig te werken; overnames die leiden tot heterogene infrastructuren die de moedermaatschappij wil consolideren; groei die tot dergelijke schaal leidt dat de specifieke instantie voor activabeheer wordt vereist.
+In grote ondernemingen is de infrastructuur voor het maken van websites soms gedistribueerd. Soms zijn de functies en de digitale assets voor het maken van websites opgenomen in verschillende implementaties. Enkele redenen hiervoor zijn geografisch verspreide implementaties waardoor er in een 24-uurs economie achtereenvolgens op verschillende locaties aan een project kan worden gewerkt; overnames die leiden tot heterogene infrastructuren die de moedermaatschappij wil consolideren; groei die leidt tot een zodanige schaalvergroting dat een toegewijde instantie is vereist voor asset management.
 
-AEM Sites biedt mogelijkheden om webpagina&#39;s te maken en AEM Assets is het Digital Asset Management (DAM)-systeem dat de vereiste middelen voor websites levert. AEM ondersteunt nu het bovenstaande gebruiksscenario door AEM-sites en AEM-bedrijfsmiddelen te integreren.
+AEM Sites biedt functies voor het maken van webpagina&#39;s en AEM Assets is het DAM-systeem (Digital Asset Management) dat de vereiste assets voor websites levert. AEM biedt nu ondersteuning voor het bovenstaande gebruiksscenario door de integratie van AEM Sites en AEM Assets.
 
-## Overzicht van Verbonden activa {#overview-of-connected-assets}
+## Overzicht van gekoppelde assets {#overview-of-connected-assets}
 
-Wanneer het uitgeven van pagina&#39;s in de Redacteur van de Pagina, kunnen de auteurs foutloos zoeken, doorbladeren, en activa van een verschillende plaatsing van de Activa inbedden AEM. Een AEM-beheerder doen een eenmalige integratie van een lokale implementatie van AEM-sites met een andere (externe) implementatie van AEM-bedrijfsmiddelen.
+Bij het bewerken van pagina&#39;s in de Pagina-editor kunnen auteurs naadloos zoeken naar assets van een andere AEM Assets-implementatie, door deze assets bladeren en ze insluiten. Een AEM-beheerder kan een eenmalige integratie uitvoeren van een lokale implementatie van AEM Sites met een andere (externe) implementatie van AEM Assets.
 
-Voor de auteurs van Plaatsen, zijn de verre activa beschikbaar als read-only lokale activa. De functionaliteit steunt naadloos onderzoek en gebruik van een paar verre activa tegelijkertijd. Om vele verre activa beschikbaar te maken bij lokale plaatsing in één keer, denk na migrerend de activa in bulk. Zie de [migratiegids](/help/assets/assets-migration-guide.md)voor bedrijfsmiddelen.
+Voor Sites-auteurs zijn externe assets lokaal als alleen-lezen beschikbaar. Met deze functie kunt u naadloos zoeken naar telkens een klein aantal externe assets voor gebruik. Als u veel externe assets in één keer beschikbaar wilt maken voor lokale implementatie, kunt u overwegen om de assets in bulk te migreren. Zie de [Assets-migratiegids](/help/assets/assets-migration-guide.md).
 
 ### Vereisten en ondersteunde implementaties {#prerequisites}
 
-Alvorens u gebruikt of dit vermogen vormt, verzeker het volgende:
+Controleer de volgende punten voordat u deze functie gebruikt of configureert:
 
-* De gebruikers maken deel uit van aangewezen gebruikersgroepen op elke plaatsing.
-* Voor de plaatsingstypes van de Manager van de Ervaring van Adobe, wordt aan één van het gesteunde criterium voldaan. AEM 6.5 Activa werkt met AEM als cloudservice. Voor meer informatie, zie de [Verbonden functionaliteit van Activa in AEM als Dienst](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html)van de Wolk.
+* De gebruikers maken deel uit van aangewezen gebruikersgroepen voor elke implementatie.
+* Voor Adobe Experience Manager-implementatietypen moet aan een van de ondersteunde criteria zijn voldaan. AEM 6.5-middelen werken met AEM als cloudservice. Zie de functionaliteit [Verbonden middelen in AEM als Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html)voor meer informatie.
 
-   |  | AEM Sites as a Cloud Service | AEM 6.5-locaties op AMS | AEM 6.5 Locaties op locatie |
+   |  | AEM Sites as a Cloud Service | AEM 6.5 Sites on AMS | AEM 6.5 Sites on-premise |
    |---|---|---|---|
-   | **AEM Assets as a Cloud Service** | Gesteund | Gesteund | Gesteund |
-   | **AEM 6.5 Activa op AMS** | Gesteund | Gesteund | Gesteund |
-   | **AEM 6.5 Activa op locatie** | Niet ondersteund | Niet ondersteund | Niet ondersteund |
+   | **AEM Assets as a Cloud Service** | Ondersteund | Ondersteund | Ondersteund |
+   | **AEM 6.5 Assets on AMS** | Ondersteund | Ondersteund | Ondersteund |
+   | **AEM 6.5 Assets on-premise** | Niet ondersteund | Niet ondersteund | Niet ondersteund |
 
 ### Ondersteunde bestandsindelingen {#mimetypes}
 
-De auteurs kunnen naar beelden en de volgende types van documenten in de Vinder van de Inhoud zoeken en de gezochte activa in de Redacteur van de Pagina gebruiken. De documenten kunnen aan de `Download` component worden toegevoegd en de beelden kunnen aan de `Image` component worden toegevoegd. De auteurs kunnen de verre activa in om het even welke douaneAEM component ook toevoegen die het gebrek `Download` of de `Image` componenten uitbreidt. De lijst van gesteunde formaten is:
+Met de Content Finder kunnen auteurs zoeken naar afbeeldingen en de volgende typen documenten, waarna ze de gezochte assets gebruiken in de Pagina-editor. U kunt documenten toevoegen aan de `Download`-component en afbeeldingen aan de `Image`-component. Auteurs kunnen de externe assets toevoegen aan elke aangepaste AEM-component die een uitbreiding vormt op de standaardcomponenten `Download` of `Image`. De lijst met ondersteunde indelingen is:
 
-* **Afbeeldingsformaten**: De beeldformaten die door de component [van het](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) Beeld worden gesteund worden gesteund door Verbonden Activa. De dynamische beelden van Media worden niet gesteund.
-* **Documentformaten**: Zie [Verbonden activa gesteunde documentformaten](assets-formats.md#supported-document-formats).
+* **Afbeeldingsindelingen**: De afbeeldingsindelingen die door de [component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) Image worden ondersteund, worden ondersteund door Connected Assets. Dynamische media-afbeeldingen worden niet ondersteund.
+* **Documentindelingen**: Zie [Ondersteunde documentindelingen voor gekoppelde assets](assets-formats.md#supported-document-formats).
 
-### Gebruikers en betrokken groepen {#users-and-groups-involved}
+### Betrokken gebruikers en groepen {#users-and-groups-involved}
 
-De diverse rollen die betrokken zijn om het vermogen en hun overeenkomstige gebruikersgroepen te vormen en te gebruiken worden hieronder beschreven. Het lokale werkingsgebied wordt gebruikt voor het gebruiksgeval waar een Web-pagina door een auteur wordt gecreeerd. Het verre werkingsgebied wordt gebruikt voor de plaatsing DAM die de vereiste activa ontvangt. De auteur van Plaatsen haalt deze verre activa.
+Hieronder worden de diverse rollen beschreven voor de configuratie en toepassing van een kenmerk en de overeenkomstige gebruikersgroepen. De lokale scope wordt gebruikt voor het gebruiksscenario waarin een webpagina wordt gemaakt door een auteur. De externe scope wordt gebruikt voor de DAM-implementatie die als host fungeert voor de vereiste assets. De Sites-auteur haalt deze externe assets op.
 
-| Rol | Toepassingsgebied | Gebruikersgroep | Gebruikersnaam in doorloop | Voorschrift |
+| Rol | Scope | Gebruikersgroep | Gebruikersnaam in voorbeeldprocedure | Vereiste |
 |----------------------------------|--------|------------------------------------------------------------------------------|--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Beheerder van AEM-sites | Lokaal | AEM-beheerder | `admin` | De opstelling AEM, vormt integratie met de verre plaatsing van Activa. |
-| DAM-gebruiker | Lokaal | Author | `ksaner` | Gebruikt om de gehaald activa bij te bekijken en te dupliceren `/content/DAM/connectedassets/`. |
-| auteur van AEM Sites | Lokaal | Auteur (met gelezen toegang op verre DAM en auteurstoegang op lokale Plaatsen) | `ksaner` | De eindgebruiker is de auteurs van Plaatsen die deze integratie gebruiken om hun inhoudssnelheid te verbeteren. De auteurs zoeken en doorbladeren activa in verre DAM gebruikend de Vinder van de Inhoud en het gebruiken van de vereiste beelden in lokale Web-pagina&#39;s. De geloofsbrieven van de gebruiker van `ksaner` DAM worden gebruikt. |
-| AEM-middelenbeheerder | Afstandsbediening | AEM-beheerder | `admin` op externe AEM | Vorm het Middel delen van de dwars-Oorsprong (CORS). |
-| DAM-gebruiker | Afstandsbediening | Author | `ksaner` op externe AEM | De rol van de auteur op de verre plaatsing AEM. Zoek en doorblader activa in Verbonden Activa gebruikend de Vinder van de Inhoud. |
-| DAM-distributeur (technische gebruiker) | Afstandsbediening | verpakkers en plaatsauteurs | `ksaner` op externe AEM | Deze gebruiker huidig op de verre plaatsing wordt gebruikt door lokale server AEM (niet de de auteursrol van de Plaats) om de verre activa, namens de auteur van Plaatsen te halen. Deze rol is niet het zelfde als boven twee `ksaner` rollen en behoort tot een verschillende gebruikersgroep. |
+| AEM Sites-beheerder | Lokaal | AEM-beheerder | `admin` | Installeer AEM en configureer de integratie met de externe Assets-implementatie. |
+| DAM-gebruiker | Lokaal | Auteur | `ksaner` | Wordt gebruikt om de assets die bij `/content/DAM/connectedassets/` zijn opgehaald, weer te geven en te dupliceren. |
+| AEM Sites-auteur | Lokaal | Auteur (met leestoegang op de externe DAM en auteurstoegang op lokale sites) | `ksaner` | Eindgebruikers zijn Sites-auteurs die deze integratie gebruiken om de snelheid van de content te verbeteren. De auteurs zoeken met de Content Finder naar assets in de externe DAM en gebruiken de vereiste afbeeldingen op lokale webpagina&#39;s. De referenties van de `ksaner` DAM-gebruiker worden gebruikt. |
+| AEM Assets-beheerder | Extern | AEM-beheerder | `admin` op externe AEM | Configureer CORS (Cross-Origin Resource Sharing). |
+| DAM-gebruiker | Extern | Auteur | `ksaner` op externe AEM | Auteursrol bij de externe AEM-implementatie. Zoek en blader naar assets in gekoppelde assets met de Content Finder. |
+| DAM-distributeur (technische gebruiker) | Extern | Pakketontwikkelaars en siteauteurs | `ksaner` op externe AEM | Deze gebruiker die aanwezig is op de externe implementatie, wordt door de lokale AEM-server (en niet door de rol van de Sites-auteur) gebruikt om de externe assets op te halen namens de Sites-auteur. Deze rol is anders dan de twee bovenstaande `ksaner`-rollen en hoort bij een andere gebruikersgroep. |
 
-## Vorm een verbinding tussen Plaatsen en de plaatsingen van Activa {#configure-a-connection-between-sites-and-assets-deployments}
+## Een koppeling configureren tussen Sites- en Assets-implementaties {#configure-a-connection-between-sites-and-assets-deployments}
 
-Een beheerder AEM kan deze integratie tot stand brengen. Zodra gecreeerd, worden de toestemmingen die worden vereist om het te gebruiken gevestigd via gebruikersgroepen die op de plaatsing van Plaatsen en op de plaatsing DAM worden bepaald.
+Een AEM-beheerder kan deze integratie maken. Wanneer dat is gebeurd, worden de vereiste gebruiksmachtigingen ingesteld via gebruikersgroepen die zijn gedefinieerd in de Sites- en DAM-implementaties.
 
-Om Verbonden Activa en de lokale connectiviteit van Plaatsen te vormen, volg deze stappen.
+Voer de volgende stappen uit om gekoppelde assets te configureren met de lokale Sites-connectiviteit.
 
-1. Heb toegang tot een bestaande plaatsing van de Plaatsen AEM of creeer een plaatsing gebruikend het volgende bevel:
+1. Toegang krijgen tot een bestaande AEM Sites-implementatie of een implementatie maken met de volgende opdracht:
 
-   1. In de omslag van het JAR- dossier, voer het volgende bevel op een terminal uit om elke server tot stand te brengen AEM.
+   1. In de map van het JAR-bestand gebruikt u de volgende opdracht op een terminal om elke AEM-server te maken.
       `java -XX:MaxPermSize=768m -Xmx4096m -jar <quickstart jar filepath> -r samplecontent -p 4502 -nofork -gui -nointeractive &`
 
-   1. Na een paar minuten begint de AEM-server met succes. Beschouw deze implementatie van AEM-sites als de lokale machine voor het maken van webpagina&#39;s, bijvoorbeeld op `https://[local_sites]:4502`.
+   1. Na enkele minuten wordt de AEM-server gestart. Beschouw deze AEM Sites-implementatie als de lokale computer voor het ontwerpen van webpagina&#39;s, bijvoorbeeld op `https://[local_sites]:4502`.
 
-1. Ervoor zorgen dat de gebruikers en rollen met lokaal bereik aanwezig zijn op de implementatie van AEM-sites en op de implementatie van AEM-bedrijfsmiddelen op AMS. Creeer een technische gebruiker op de plaatsing van Activa en voeg aan de gebruikersgroep toe die in betrokken [gebruikers en groepen wordt vermeld](/help/assets/use-assets-across-connected-assets-instances.md#users-and-groups-involved).
+1. Zorg dat de AEM Sites-implementatie en de AEM Assets-implementatie op AMS beschikken over gebruikers en rollen met een lokale scope. Maak een technische gebruiker op de Assets-implementatie en voeg deze toe aan de gebruikersgroep die wordt vermeld in de [betrokken gebruikers en groepen](/help/assets/use-assets-across-connected-assets-instances.md#users-and-groups-involved).
 
-1. Heb toegang tot de lokale plaatsing van Plaatsen AEM bij `https://[local_sites]:4502`. Klik **[!UICONTROL Hulpmiddelen]** > **[!UICONTROL Activa]** > de Configuratie **[!UICONTROL van]** Verbonden Activa en verstrek de volgende waarden:
+1. Ga naar de lokale AEM Sites-implementatie op `https://[local_sites]:4502`. Klik op **[!UICONTROL Gereedschappen]** > **[!UICONTROL Middelen]** > Configuratie **** Verbonden elementen en voer de volgende waarden in:
 
-   1. De locatie van AEM-bedrijfsmiddelen is `https://[assets_servername_ams]:[port]`.
-   1. Geloofsbrieven van een distributeur DAM (technische gebruiker).
-   1. Op het gebied van het Punt **[!UICONTROL van de]** Onderstel, ga de lokale weg AEM in waar AEM de activa haalt. Bijvoorbeeld, `remoteassets` omslag.
+   1. De locatie van AEM Assets is `https://[assets_servername_ams]:[port]`.
+   1. Referenties van een DAM-distributeur (technische gebruiker).
+   1. In **[!UICONTROL Mount Point]** field, enter the local AEM path where AEM fetches the assets. Bijvoorbeeld de map `remoteassets`.
 
-   1. Pas de waarden van de **[!UICONTROL Originele Binaire Drempel van de overdrachtoptimalisering]** afhankelijk van uw netwerk aan. Een activavertolking met een grootte die groter is dan deze drempel, wordt asynchroon overgebracht.
-   1. Selecteer **[!UICONTROL Datastore die met Verbonden Activa]** wordt gedeeld, als u een datastore gebruikt om uw activa op te slaan en de Datastore is de gemeenschappelijke opslag tussen beide plaatsingen AEM. In dit geval is de drempelwaarde niet van belang, aangezien de eigenlijke binaire activa op de datastore verblijven en niet worden overgedragen.
-   ![Een typische configuratie voor Verbonden Activa](assets/connected-assets-typical-config.png)
+   1. Pas de waarden van de **[!UICONTROL Originele Binaire Drempel]** van de overdrachtoptimalisering afhankelijk van uw netwerk aan. De weergave van een asset die groter is dan deze drempelwaarde, wordt asynchroon overgedragen.
+   1. Select **[!UICONTROL Datastore Shared with Connected Assets]**, if you use a datastore to store your assets and the Datastore is the common storage between both AEM deployments. In dat geval is de drempelwaarde niet van belang, aangezien de binaire gegevens van de werkelijke asset in de datastore staan en niet worden overgedragen.
+   ![Een typische configuratie voor gekoppelde assets](assets/connected-assets-typical-config.png)
 
-   *Afbeelding: Een typische configuratie voor Verbonden Activa*
+   *Afbeelding: Een typische configuratie voor gekoppelde assets*
 
-1. Aangezien de activa reeds worden verwerkt en de rendities worden gehaald, maak de werkschemalanceerders onbruikbaar. Pas de lanceringsconfiguraties op de lokale (de Plaatsen van AEM) plaatsing aan om de `connectedassets` omslag uit te sluiten, waarin de verre activa worden gehaald.
+1. Als de assets al zijn verwerkt en de weergaven zijn opgehaald, schakelt u de startprogramma&#39;s voor de workflow uit. Pas de configuraties van het startprogramma op de lokale (AEM Sites) implementatie aan zodat de map `connectedassets` waarin de externe assets worden opgehaald, wordt uitgesloten.
 
-   1. Voor plaatsing van de Plaatsen AEM, klik **[!UICONTROL Hulpmiddelen]** > **[!UICONTROL Werkschema]** > **[!UICONTROL Lanceringen]**.
+   1. Klik op de implementatie van AEM-sites op **[!UICONTROL Gereedschappen]** > **[!UICONTROL Workflow]** > **[!UICONTROL Launchers]**.
 
-   1. Zoek naar Lanceringen met werkschema&#39;s als Activa **[!UICONTROL van de Update van]** DAM en de Terugkeer van de Meta-gegevens van **[!UICONTROL DAM]**.
+   1. Zoeken naar opstarters met workflows als **[!UICONTROL DAM Update Asset]** en **[!UICONTROL DAM Metadata Writeback]**.
 
-   1. Selecteer de werkschemalanceerinrichting en klik **[!UICONTROL Eigenschappen]** op de actiebar.
+   1. Select the workflow launcher and click **[!UICONTROL Properties]** on the action bar.
 
-   1. In de tovenaar van Eigenschappen, verander de gebieden van de **[!UICONTROL Weg]** als volgende afbeeldingen om hun regelmatige uitdrukkingen bij te werken om het ophangpunt **[!UICONTROL verbonden activa]** uit te sluiten.
+   1. In the Properties wizard, change the **[!UICONTROL Path]** fields as the following mappings to update their regular expressions to exclude the mount point **[!UICONTROL connectedassets]**.
    | Voor | Na |
    |---|---|
-   | /content/dam(/(?!/subassets).*/)rendities/oorspronkelijk | /content/dam(/(?!/subassets)(?!connectedassets).)*/)rendities/oorspronkelijk |
-   | /content/dam(/...*/)rendities/oorspronkelijk | /content/dam(/(?!connectedassets).*/)rendities/oorspronkelijk |
-   | /content/dam(/...*)/jcr:inhoud/metagegevens | /content/dam(/(?!connectedassets).*/)jcr:inhoud/metagegevens |
+   | /content/dam(/((?!/subassets).)*/)renditions/original | /content/dam(/((?!/subassets)(?!connectedassets).)*/)renditions/original |
+   | /content/dam(/.*/)renditions/original | /content/dam(/((?!connectedassets).)*/)renditions/original |
+   | /content/dam(/.*)/jcr:content/metadata | /content/dam(/((?!connectedassets).)*/)jcr:content/metadata |
 
    >[!NOTE]
    >
-   >Alle rendities die op de verre plaatsing beschikbaar zijn AEM worden gehaald, wanneer de auteurs activa halen. Als u meer rendities van een gehaalde activa wilt tot stand brengen, sla deze configuratiestap over. Het werkschema van de Activa van de Update van DAM wordt teweeggebracht en leidt tot meer rendities. Deze rendities zijn beschikbaar slechts op de lokale plaatsing van Plaatsen en niet op de verre plaatsing DAM.
+   >Alle weergaven die beschikbaar zijn op de externe AEM-implementatie worden opgehaald wanneer auteurs een asset ophalen. Als u meer weergaven van een opgehaalde asset tot stand wilt brengen, moet u deze configuratiestap overslaan. De DAM Update Asset-workflow wordt geactiveerd en er worden meer weergaven gemaakt. Deze weergaven zijn alleen beschikbaar op de lokale Sites-implementatie en niet op de externe DAM-implementatie.
 
-1. Voeg de instantie van de Plaatsen AEM als één van de **[!UICONTROL Toegestane Oorsprong]** op de verre configuratie CORS van de Activa van AEM toe.
+1. Add the AEM Sites instance as one of the **[!UICONTROL Allowed Origins]** on the remote AEM Assets&#39; CORS configuration.
 
-   1. Login die de beheerdergeloofsbrieven gebruikt. Zoeken naar crossorigine. De **[!UICONTROL Hulpmiddelen]** van de toegang > **[!UICONTROL Verrichtingen]** > de Console **[!UICONTROL van het]** Web.
+   1. Meld u aan met de beheerdersreferenties. Zoek naar Cross-Origin. Ga naar **[!UICONTROL Gereedschappen]** > **[!UICONTROL Bewerkingen]** > **[!UICONTROL Webconsole]**.
 
-   1. Om een configuratie CORS voor de instantie van Plaatsen te creëren AEM, klik ![aem_assets_add_icon](assets/aem_assets_add_icon.png) pictogram naast het het Delen van het Middel van het **[!UICONTROL Middel van de Graniet van]** Adobe het Van verschillende herkomst.
+   1. Als u een CORS-configuratie voor de instantie AEM Sites wilt maken, klikt u op het pictogram ![aem_assets_add_icon](assets/aem_assets_add_icon.png) naast **[!UICONTROL Adobe Granite Cross-Origin Resource Sharing Policy]**.
 
-   1. Op het gebied **[!UICONTROL Toegestane Oorsprong]**, voer URL van de lokale Plaatsen in, namelijk, `https://[local_sites]:[port]`. Sparen de configuratie.
+   1. In the field **[!UICONTROL Allowed Origins]**, input the URL of the local Sites, that is, `https://[local_sites]:[port]`. Sla de configuratie op.
 
-## Externe middelen gebruiken {#use-remote-assets}
+## Externe assets gebruiken {#use-remote-assets}
 
-De websiteauteurs gebruiken de Vinder van de Inhoud om met de instantie te verbinden DAM. De auteurs kunnen doorbladeren, zoeken naar, en de verre activa in een component slepen. Om aan verre DAM voor authentiek te verklaren, houd de geloofsbrieven van de gebruiker van DAM die door uw beheerder handig wordt verstrekt.
+Auteurs van de website gebruiken Content Finder om verbinding te maken met de DAM-instantie. Auteurs kunnen externe assets zoeken, doorbladeren en naar een component slepen. Om de externe DAM te verifiëren, moet u de referenties van de DAM-gebruiker die door uw beheerder zijn verstrekt, bij de hand houden.
 
-De auteurs kunnen de activa gebruiken beschikbaar op zowel, lokale DAM als de verre instanties DAM, in één enkele Web-pagina. Gebruik de Vinder van de Inhoud om tussen het zoeken van lokale DAM of het zoeken van verre DAM te schakelen.
+Auteurs kunnen de assets die zowel beschikbaar zijn op de lokale DAM-instantie als op de externe DAM-instantie, op één webpagina gebruiken. Gebruik de Content Finder om te schakelen tussen het doorzoeken van de lokale of de externe DAM.
 
-Slechts worden die markeringen van verre activa gehaald die nauwkeurig een corresponderende markering-met zelfde taxonomie hiërarchie-beschikbaar op de lokale instantie van Plaatsen hebben. Andere tags worden weggegooid. De auteurs kunnen naar verre activa zoeken gebruikend alle markeringen aanwezig op de verre plaatsing AEM, aangezien AEM een full-text onderzoek aanbiedt.
+Alleen die tags van externe assets worden opgehaald die exact overeenkomen (met dezelfde taxonomiehiërarchie) met de tags die beschikbaar zijn in de lokale Sites-instantie. Alle andere tags worden verwijderd. Auteurs kunnen naar externe assets zoeken met behulp van alle tags die zich op de externe AEM-implementatie bevinden, aangezien AEM een volledige-tekstzoekopdracht biedt.
 
-### Doorloop van het gebruik {#walk-through-of-usage}
+### Procedure voor gebruik {#walk-through-of-usage}
 
-Gebruik de bovengenoemde opstelling om de auteurservaring te proberen om te begrijpen hoe de functionaliteit werkt. Gebruik documenten of beelden van uw keus op de verre plaatsing DAM.
+Gebruik bovenstaande instellingen om de functionaliteit van een authoring-ervaring beter te begrijpen. Gebruik documenten of afbeeldingen van uw keuze op de externe DAM-implementatie.
 
-1. Navigeer aan de Activa UI op de verre plaatsing door tot **[!UICONTROL Activa]** > **[!UICONTROL Dossiers]** van werkruimte toegang te hebben AEM. Alternatief, toegang `https://[assets_servername_ams]:[port]/assets.html/content/dam` in browser. Upload de middelen van uw keus.
-1. Voor de instantie van Plaatsen, in de profielactivator in de hoger-juiste hoek, **[!UICONTROL Impersonate de klik zoals]**. Verstrek `ksaner` als gebruikersnaam, selecteer de verstrekte optie, en klik **[!UICONTROL O.K.]**.
-1. Open een website We.Retail op **[!UICONTROL Sites]** > **[!UICONTROL We.Retail]** > **[!UICONTROL ons]** > **[!UICONTROL en]**. Bewerk de pagina. Alternatief, toegang `https://[aem_server]:[port]/editor.html/content/we-retail/us/en/men.html` in browser om een pagina uit te geven.
+1. Navigate to the Assets UI on the remote deployment by accessing **[!UICONTROL Assets]** > **[!UICONTROL Files]** from AEM workspace. U kunt `https://[assets_servername_ams]:[port]/assets.html/content/dam` ook in een browser openen. Upload de assets van uw keuze.
+1. On the Sites instance, in the profile activator in the upper-right corner, click **[!UICONTROL Impersonate as]**. Provide `ksaner` as user name, select the option provided, and click **[!UICONTROL OK]**.
+1. Open een websitepagina Web.Retail op **[!UICONTROL Sites]** > **[!UICONTROL We.Retail]** > **[!UICONTROL us]** > **[!UICONTROL en]**. Bewerk de pagina. U kunt `https://[aem_server]:[port]/editor.html/content/we-retail/us/en/men.html` ook in een browser openen om een pagina te bewerken.
 
-   Klik het Zijpaneel van de **[!UICONTROL Knevel]** op upper-left hoek van de pagina.
+   Klik op Zijpaneel **[!UICONTROL in-/]** uitschakelen in de linkerbovenhoek van de pagina.
 
-1. Open het lusje van Activa en klik **[!UICONTROL login aan Verbonden Activa]**.
-1. Verstrek de geloofsbrieven — `ksaner` als gebruikersnaam en `password` als wachtwoord. Deze gebruiker heeft auteurstoestemmingen op beide plaatsingen AEM.
-1. Zoek naar de activa die u aan DAM toevoegde. De verre activa worden getoond in het linkerpaneel. Filter voor afbeeldingen of documenten en filter voor typen ondersteunde documenten. Sleep de beelden op een `Image` component en documenten op een `Download` component.
+1. Open het tabblad Middelen en klik op **[!UICONTROL Aanmelden bij Connected Assets]**.
+1. Geef de referenties op: `ksaner` als gebruikersnaam en `password` als wachtwoord. Deze gebruiker heeft auteursmachtigingen op beide AEM-implementaties.
+1. Zoek naar de asset die u aan DAM hebt toegevoegd. De externe assets worden weergegeven in het linkerdeelvenster. Filter op afbeeldingen of documenten en filter verder op de typen ondersteunde documenten. Sleep de afbeeldingen naar een `Image`-component en sleep documenten naar een `Download`-component.
 
-   De opgehaalde activa zijn read-only op de lokale plaatsing van Plaatsen AEM. U kunt de opties nog gebruiken die door uw componenten van Plaatsen AEM worden verstrekt om de gehaalde activa uit te geven. Het uitgeven door componenten is niet destructief.
+   De opgehaalde assets zijn als alleen-lezen beschikbaar op de lokale AEM Sites-implementatie. U kunt nog steeds de opties gebruiken die door uw AEM Sites-componenten worden geboden om de opgehaalde asset te bewerken. Het bewerken op basis van componenten is niet-destructief.
 
-   ![Opties om documenttypes en beelden te filtreren wanneer het zoeken van activa op verre DAM](assets/filetypes_filter_connected_assets.png)
+   ![Opties voor het filteren van documenttypen en afbeeldingen bij het zoeken naar assets op de externe DAM](assets/filetypes_filter_connected_assets.png)
 
-   *Afbeelding: Opties om documenttypes en beelden te filtreren wanneer het zoeken van activa op verre DAM*
+   *Afbeelding: Opties voor het filteren van documenttypen en afbeeldingen bij het zoeken naar assets op de externe DAM*
 
-1. Een websiteauteur wordt op de hoogte gebracht als een activa asynchroon wordt gehaald en als om het even welke haaltaak ontbreekt. Terwijl creatie of zelfs na creatie, kunnen de auteurs gedetailleerde informatie over haaltaken en fouten in het [async banen](/help/assets/asynchronous-jobs.md) gebruikersinterface zien.
+1. De auteur van een site krijgt een melding als een asset asynchroon wordt opgehaald en als het ophalen mislukt. Tijdens (of zelfs na) het ontwerpen kunnen auteurs gedetailleerde informatie zien over het ophalen van taken en fouten in de gebruikersinterface voor [asynchrone taken](/help/assets/asynchronous-jobs.md).
 
-   ![Bericht over het asynchrone halen van activa die op de achtergrond gebeurt.](assets/assets_async_transfer_fails.png)
+   ![Melding van het asynchroon op de achtergrond ophalen van assets.](assets/assets_async_transfer_fails.png)
 
-   *Afbeelding: Bericht over het asynchrone halen van activa die op de achtergrond gebeurt.*
+   *Afbeelding: Melding van het asynchroon op de achtergrond ophalen van assets*
 
-1. Wanneer het publiceren van een pagina, toont AEM een volledige lijst van activa die in de pagina worden gebruikt. Zorg ervoor dat de verre activa met succes op het tijdstip van het publiceren worden gehaald. Om het statuut van elke gehaald activa te controleren, zie [async banen](/help/assets/asynchronous-jobs.md) gebruikersinterface.
+1. Bij het publiceren van een pagina wordt in AEM een volledige lijst met assets weergegeven die op de pagina worden gebruikt. Zorg ervoor dat de externe assets op het moment van publicatie worden opgehaald. Als u de status van elke opgehaalde asset wilt controleren, raadpleegt u de gebruikersinterface voor [asynchrone taken](/help/assets/asynchronous-jobs.md).
 
    >[!NOTE]
    >
-   >Zelfs als één of meerdere verre activa niet worden gehaald, wordt de pagina gepubliceerd. De component die de verre activa gebruikt wordt gepubliceerd leeg. Het AEM- berichtgebied toont bericht voor fouten die in async baanpagina tonen.
+   >Zelfs als een of meer externe assets niet worden opgehaald, wordt de pagina gepubliceerd. De component die gebruikmaakt van de externe asset, wordt leeg (zonder content) gepubliceerd. In het AEM-berichtenvak wordt een melding weergegeven voor fouten die worden weergegeven op pagina&#39;s met asynchrone taken.
 
 >[!CAUTION]
 >
->Zodra gebruikt in een Web-pagina, zijn de gehaalde verre activa doorzoekbaar en bruikbaar door iedereen die toestemmingen heeft om tot de lokale omslag toegang te hebben waar de gehaalde activa (`connectedassets` in de bovengenoemde loop-door) worden opgeslagen. De middelen kunnen ook worden doorzocht en kunnen in de lokale repository worden weergegeven via [!UICONTROL Content Finder].
+>Zodra de opgehaalde externe assets op een webpagina worden toegepast, zijn ze doorzoekbaar en bruikbaar door iedereen met toegang tot de lokale map waarin de opgehaalde activa zijn opgeslagen (`connectedassets` in de bovenstaande procedure). The assets are also searchable and visible in the local repository via [!UICONTROL Content Finder].
 
-De gehaalde activa kunnen als andere lokale activa worden gebruikt, behalve dat de bijbehorende meta-gegevens niet kunnen worden uitgegeven.
+De opgehaalde assets kunnen net als elke andere lokale asset worden gebruikt, alleen kunnen de bijbehorende metadata niet worden bewerkt.
 
 ## Beperkingen {#limitations}
 
-**Toestemmingen en beheer van activa**
+**Machtigingen en assets beheren**
 
-* De lokale activa worden niet gesynchroniseerd met de originele activa op de verre plaatsing. Om het even welk geeft, schrappingen, of het intrekken van toestemmingen op de plaatsing uit DAM worden niet verspreid stroomafwaarts.
-* De lokale activa zijn read-only exemplaren. AEM-componenten worden niet-destructief bewerkt aan bedrijfsmiddelen. Geen andere bewerkingen zijn toegestaan.
-* De plaatselijk gehaalde activa zijn beschikbaar voor auteursdoeleinden slechts. De de updatewerkschema&#39;s van activa kunnen niet worden toegepast en de meta-gegevens kunnen niet worden uitgegeven.
-* Slechts worden de beelden en de vermelde documentformaten gesteund. De dynamische activa van Media, de Fragmenten van de Inhoud, en de Fragmenten van de Ervaring worden niet gesteund.
-* De schema&#39;s van meta-gegevens worden niet gehaald.
-* Alle Auteurs van Plaatsen hebben toestemmingen op de gehaalde exemplaren gelezen, zelfs als zij geen toegang tot de verre plaatsing DAM hebben.
-* Geen API steun om de integratie aan te passen.
-* De functionaliteit ondersteunt naadloos zoeken en gebruiken van externe bedrijfsmiddelen. Om vele verre activa beschikbaar te maken bij lokale plaatsing in één keer, denk na migrerend de activa. Zie de [migratiegids](assets-migration-guide.md)voor bedrijfsmiddelen.
-* Het is niet mogelijk om verre activa als paginaduimnagel op het gebruikersinterface van de Eigenschappen [!UICONTROL van de] Pagina te gebruiken. U kunt een duimnagel van een Web-pagina in de gebruikersinterface van de Eigenschappen [!UICONTROL van de] Pagina van de [!UICONTROL Duimnagel] plaatsen door Beeld [!UICONTROL te klikken te]selecteren.
+* Lokale assets worden niet gesynchroniseerd met de oorspronkelijke assets op de externe implementatie. Eventuele bewerkingen, verwijderingen of intrekkingen van machtigingen voor de DAM-implementatie worden niet verderop in de DAM-implementatie doorgegeven.
+* Lokale assets zijn alleen-lezen kopieën. AEM-componenten voeren niet-destructieve bewerkingen uit op assets. Andere soorten bewerkingen zijn niet toegestaan.
+* Lokaal opgehaalde assets zijn alleen beschikbaar voor authoring. Workflows voor het bijwerken van assets kunnen niet worden toegepast en metadata kunnen niet worden bewerkt.
+* Alleen afbeeldingen en de vermelde documentindelingen worden ondersteund. Dynamic Media-assets, contentfragmenten en ervaringsfragmenten worden niet ondersteund.
+* Metadataschema&#39;s worden niet opgehaald.
+* Alle Sites-auteurs hebben leesmachtigingen voor de opgehaalde kopieën, zelfs als ze geen toegang hebben tot de externe DAM-implementatie.
+* Geen API-ondersteuning om de integratie aan te passen.
+* De functionaliteit ondersteunt naadloos zoeken en gebruiken van externe assets. Als u veel externe assets in één keer beschikbaar wilt maken voor lokale implementatie, kunt u overwegen om de assets te migreren. Zie de [Assets-migratiegids](assets-migration-guide.md).
+* Het is niet mogelijk om een extern element te gebruiken als paginaminiatuur in de gebruikersinterface van [!UICONTROL Pagina-eigenschappen] . U kunt een miniatuur van een webpagina instellen in de gebruikersinterface [!UICONTROL Pagina-eigenschappen] vanuit de [!UICONTROL miniatuur] door op Afbeelding selecteren te klikken.
 
-**Opstelling en vergunning**
+**Installatie en licenties**
 
-* De implementatie van AEM-bedrijfsmiddelen op AMS wordt ondersteund.
-* AEM-sites kunnen tegelijk verbinding maken met één AEM-bedrijfsmiddelenopslagplaats.
-* Een licentie van AEM Assets die werkt als externe opslagplaats.
-* Één of meerdere vergunningen van de Plaatsen van AEM die als lokale auteursplaatsing werken.
+* AEM Assets-implementatie op AMS wordt ondersteund.
+* AEM Sites kan met één AEM Assets-repository tegelijkertijd worden verbonden.
+* Een licentie voor AEM Assets die fungeert als externe repository.
+* Een of meer licenties voor AEM Sites die fungeren als lokale implementatie voor authoring.
 
 **Gebruik**
 
-* Slechts zoekt de gesteunde functionaliteit naar verre activa en sleept de verre activa op lokale pagina aan auteursinhoud.
-* De werktijden van de trek uit na 5 seconden. De auteurs kunnen kwesties hebben die activa halen, zeggen als er netwerkkwesties zijn. De auteurs kunnen opnieuw proberen door de verre activa van de Vinder [!UICONTROL van de] Inhoud aan de Redacteur [!UICONTROL van de]Pagina te slepen.
-* Eenvoudig geeft uit die niet-destructief zijn en uitgeeft gesteund via de `Image` component AEM, kan op opgehaalde activa worden gedaan. Activa zijn alleen-lezen.
+* De enige functionaliteit die wordt ondersteund is het zoeken naar externe assets en deze slepen en neerzetten op de lokale pagina voor de authoring van content.
+* Voor ophaalbewerkingen geldt een time-out na 5 seconden. Auteurs kunnen problemen ervaren bij het ophalen van assets, bijvoorbeeld als er netwerkproblemen optreden. Auteurs kunnen opnieuw proberen door het externe element van de [!UICONTROL Content Finder] naar de [!UICONTROL Page Editor]te slepen.
+* Eenvoudige bewerkingen die niet-destructief zijn en bewerkingen die worden ondersteund via de `Image`-component van AEM, kunnen worden uitgevoerd op opgehaalde elementen. Assets zijn alleen-lezen.
 
 ## Problemen oplossen {#troubleshoot}
 
-Volg deze stappen om voor de gemeenschappelijke foutenscenario&#39;s problemen op te lossen:
+Voer de volgende stappen uit om problemen op te lossen voor algemene foutscenario&#39;s:
 
-* Als u niet naar verre activa van de Vinder van de Inhoud kunt zoeken, controleer opnieuw en zorg ervoor dat de vereiste rollen en de toestemmingen op zijn plaats zijn.
-* Een van de verre dam gehaald activa kan niet op een Web-pagina om de volgende redenen worden gepubliceerd: het bestaat niet op ver; het ontbreken van de juiste machtigingen om het op te halen; netwerkstoring. Zorg ervoor dat de activa niet wordt verwijderd uit verre DAM of de toestemmingen niet worden veranderd; ervoor te zorgen dat aan passende voorwaarden wordt voldaan; probeer toevoegend de activa aan de pagina opnieuw en publiceer opnieuw. Controleer de [lijst van asynchrone banen](/help/assets/asynchronous-jobs.md) fouten in activa het halen.
+* Als u niet naar externe assets kunt zoeken in Content Finder, controleert u opnieuw of de vereiste rollen en machtigingen aanwezig zijn.
+* Assets die worden opgehaald van een externe DAM, worden mogelijk niet op een webpagina gepubliceerd. Dit kan gebeuren in de volgende gevallen: de asset is niet aanwezig op de externe DAM; de juiste machtigingen voor het ophalen ontbreken; netwerkfout. Zorg ervoor dat de asset niet wordt verwijderd van de externe DAM of dat de machtigingen niet worden gewijzigd; zorg dat aan alle toepasselijke vereisten wordt voldaan; voeg de asset opnieuw toe aan de pagina en publiceer de pagina nogmaals. Controleer de [lijst met asynchrone taken](/help/assets/asynchronous-jobs.md) op fouten bij het ophalen van assets.

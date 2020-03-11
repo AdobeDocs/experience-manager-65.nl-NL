@@ -3,7 +3,7 @@ title: Map-assets en verzamelingen controleren
 description: Stel revisieworkflows in voor elementen in een map of verzameling en deel deze met revisoren of creatieve partners om feedback te zoeken.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
+source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
 
 ---
 
@@ -23,7 +23,7 @@ Nadat de controleur de controle heeft voltooid (activa goedkeurt of verwerpt), o
 ## Een revisietaak voor mappen maken {#creating-a-review-task-for-folders}
 
 1. Selecteer in de gebruikersinterface Middelen de map waarvoor u een revisietaak wilt maken.
-1. Tik op de werkbalk op Revisietaak **** maken om de pagina **[!UICONTROL Revisietaak]** te openen. Als de optie niet wordt weergegeven op de werkbalk, tikt u op **[!UICONTROL Meer]** of klikt u op de optie.
+1. Tik op de werkbalk op Revisietaak **** maken om de pagina **[!UICONTROL Revisietaak]** te openen. If you cannot see the option in the toolbar, tap/click **[!UICONTROL More]** and then select the option.
 
    ![chlimage_1-403](assets/chlimage_1-403.png)
 
@@ -47,12 +47,12 @@ Nadat de controleur de controle heeft voltooid (activa goedkeurt of verwerpt), o
 
    ![review_name](assets/review_name.png)
 
-1. Tik/klik op **[!UICONTROL Verzenden]** en tik/klik op **[!UICONTROL Gereed]** om het bevestigingsbericht te sluiten. Een bericht voor de nieuwe taak wordt verzonden naar de fiatteur.
+1. Tap/click **[!UICONTROL Submit]**, and then tap/click **[!UICONTROL Done]** to close the confirmation message. Er wordt een bericht voor de nieuwe taak naar de goedkeurder verzonden.
 1. Meld u aan bij AEM Assets als fiatteur en navigeer naar de interface Middelen. Tik op **[!UICONTROL Meldingen]** en selecteer de revisietaak in de lijst om elementen goed te keuren.
 
    ![Melding van activa](assets/aemAssetsNotification.png)
 
-1. Controleer op de pagina **[!UICONTROL Revisietaak]** de details van de revisietaak en tik op **[!UICONTROL Revisie]**.
+1. In the **[!UICONTROL Review Task]** page, examine the details of the review task, and then tap/click **[!UICONTROL Review]**.
 1. Selecteer op de pagina **[!UICONTROL Revisietaak]** de gewenste middelen en tik op **[!UICONTROL Goedkeuren/Afwijzen]** om deze goed te keuren of af te wijzen.
 
    ![review_task](assets/review_task.png)
@@ -91,9 +91,9 @@ Nadat de controleur de controle heeft voltooid (activa goedkeurt of verwerpt), o
 
    ![task_details-collection](assets/task_details-collection.png)
 
-1. Tik/klik op **[!UICONTROL Verzenden]** en tik/klik op **[!UICONTROL Gereed]** om het bevestigingsbericht te sluiten. Een bericht voor de nieuwe taak wordt verzonden naar de fiatteur.
+1. Tap/click **[!UICONTROL Submit]**, and then tap/click **[!UICONTROL Done]** to close the confirmation message. Er wordt een bericht voor de nieuwe taak naar de goedkeurder verzonden.
 1. Meld u aan bij AEM Assets als fiatteur en navigeer naar de middelenconsole. Tik op **[!UICONTROL Meldingen]** en selecteer de revisietaak in de lijst om elementen goed te keuren.
-1. Controleer op de pagina **[!UICONTROL Revisietaak]** de details van de revisietaak en tik op **[!UICONTROL Revisie]**.
+1. In the **[!UICONTROL Review Task]** page, examine the details of the review task, and then tap/click **[!UICONTROL Review]**.
 1. Alle elementen in de verzameling zijn zichtbaar op de overzichtspagina. Selecteer de elementen en tik op **[!UICONTROL Goedkeuren/Afwijzen]** om de elementen goed te keuren of af te wijzen.
 
    ![review_task_collection](assets/review_task_collection.png)
@@ -103,8 +103,8 @@ Nadat de controleur de controle heeft voltooid (activa goedkeurt of verwerpt), o
 
    ![collection_reviewStatusCard, weergave](assets/collection_reviewstatuscardview.png)
 
-   *Afbeelding:Kaartweergave*
+   *Afbeelding: Kaartweergave*
 
    ![collection_reviewstatus listview](assets/collection_reviewstatuslistview.png)
 
-   *Afbeelding:Lijstweergave*
+   *Afbeelding: Lijstweergave*

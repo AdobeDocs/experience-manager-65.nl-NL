@@ -1,8 +1,8 @@
 ---
 title: Formuliersjablonen ontwerpen voor HTML5-formulieren
 seo-title: Formuliersjablonen ontwerpen voor HTML5-formulieren
-description: De aanbiedingen die van de Vormen van AEM XFA vormmalplaatje aan het formaat van HTML5 teruggeven. De ontwerpers van de vorm kunnen vormmalplaatjes ontwerpen gebruikend Ontwerper en het HTML5 renditievermogen gebruiken.
-seo-description: De aanbiedingen die van de Vormen van AEM XFA vormmalplaatje aan het formaat van HTML5 teruggeven. De ontwerpers van de vorm kunnen vormmalplaatjes ontwerpen gebruikend Ontwerper en het HTML5 renditievermogen gebruiken.
+description: Met AEM Forms wordt XFA-formuliersjablonen weergegeven in de HTML5-indeling. Formulierontwerpers kunnen formuliersjablonen ontwerpen met Designer en de HTML5-renderingmogelijkheden gebruiken.
+seo-description: Met AEM Forms wordt XFA-formuliersjablonen weergegeven in de HTML5-indeling. Formulierontwerpers kunnen formuliersjablonen ontwerpen met Designer en de HTML5-renderingmogelijkheden gebruiken.
 uuid: 4f6b7231-4479-400a-adcd-c68064f06b4e
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,37 +10,37 @@ topic-tags: hTML5_forms
 discoiquuid: f2e9dbe4-e210-41f3-8878-2fc4d166e63c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 147c50adb02b48be8e3aba760dbac309ab49badf
+source-git-commit: f763359fb333ef6cc8a6748ccfa39ba9aee9ca48
 
 ---
 
 
 # Formuliersjablonen ontwerpen voor HTML5-formulieren{#designing-form-templates-for-html-forms}
 
-De HTML5 vormencomponent in AEM biedt het teruggeven van XFA vormmalplaatje aan formaat HTML5 aan. De ontwerpers van de vorm kunnen vormmalplaatjes ontwerpen gebruikend de Ontwerper [van](https://www.adobe.com/go/learn_aemforms_designer_63) Vormen en het HTML5 renditievermogen gebruiken. Deze vormmalplaatjes, samen met hun activa, kunnen in bewaarplaats AEM, dossiersysteem verblijven, of via http worden blootgesteld. Nochtans, als u van plan bent om uw vormen te beheren gebruikend de Manager van Vormen, zouden de malplaatjes en de activa in de bewaarplaats moeten verblijven AEM.
+De component HTML5-formulieren in AEM biedt de rendering van XFA-formuliersjablonen naar HTML5-indeling. Formulierontwerpers kunnen formuliersjablonen ontwerpen met [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63) en de HTML5-renderingmogelijkheden gebruiken. Deze formuliersjablonen kunnen samen met hun elementen in een AEM-opslagruimte, in een bestandssysteem of via http worden weergegeven. Als u uw formulieren echter wilt beheren met Forms Manager, moeten de sjablonen en middelen zich in de AEM-opslagplaats bevinden.
 
-Hoewel de vormen HTML5 het gedrag van de vormen PDF in grote mate aanpassen, zijn er sommige eigenschappen in beide formaten die niet op het andere formaat van toepassing zijn. Bijvoorbeeld, hoe de streepjescodes worden toegepast op een vorm PDF in de Lezer van Adobe varieert van een Mobiele vorm of hoe een vorm digitaal wordt ondertekend varieert ook tussen de formaten. Voor meer informatie over dergelijke variaties, zie de differentiatie van de [Eigenschap tussen HTML5 vormen en Vormen](../../forms/using/feature-differentiation-html5-forms-pdf-forms.md)PDF.
+Hoewel HTML5-formulieren grotendeels overeenkomen met de werking van PDF-formulieren, zijn er bepaalde functies in beide indelingen die niet van toepassing zijn op de andere indeling. De manier waarop streepjescodes in Adobe Reader op een PDF-formulier worden toegepast, verschilt bijvoorbeeld per mobiel formulier of de manier waarop een formulier digitaal wordt ondertekend, verschilt ook per indeling. Zie [Functieverschil tussen HTML5-formulieren en PDF-formulieren](../../forms/using/feature-differentiation-html5-forms-pdf-forms.md)voor meer informatie over dergelijke variaties.
 
-Voor gemeenschappelijke eigenschappen XFA, zie de volgende beste praktijken en de richtlijnen om een vorm te ontwerpen die in beide formaten werkt.
+Raadpleeg de volgende aanbevolen procedures en richtlijnen voor het ontwerpen van formulieren die in beide indelingen werken voor algemene XFA-functies.
 
-## Beste praktijken {#best-practices}
+## Aanbevolen procedures {#best-practices}
 
-De meeste stappen rond het ontwerpen van een vormmalplaatje, zoals schemabanden of het schrijven van vormlogica zijn het zelfde. Nochtans, wegens inherente verschillen tussen het teruggeven van en het scripting van motor van een dikke cliënt zoals de Lezer van Adobe en op browser-gebaseerde vormen, zijn er sommige aanbevelingen die in het [beste praktijkartikel](/help/forms/using/design-accessible-html5-forms.md) worden beschreven. Deze beste praktijken helpen u vormmalplaatjes ontwerpen om te werken zoals verwacht in beide formaten.
+De meeste stappen rondom het ontwerpen van een formuliersjabloon, zoals schemabindingen of het schrijven van formulierlogica, zijn hetzelfde. Vanwege inherente verschillen tussen rendering en scripting engine van een dikke client, zoals Adobe Reader, en browserformulieren, worden echter enkele aanbevelingen beschreven in het artikel met [aanbevolen procedures](/help/forms/using/design-accessible-html5-forms.md) . Met deze tips kunt u formuliersjablonen ontwerpen die in beide indelingen naar behoren werken.
 
-### Mogelijkheden in de Ontwerper van Vormen AEM voor de Vormen van HTML5 {#capabilities-in-aem-forms-designer-for-html-forms}
+### Mogelijkheden in AEM Forms Designer voor HTML5-formulieren {#capabilities-in-aem-forms-designer-for-html-forms}
 
-#### HTML bekijken {#preview-html}
+#### HTML voorvertonen {#preview-html}
 
-Het lusje van HTML van de Voorproef wordt toegevoegd op de wijze van het Ontwerp voor de Ontwerpers van de Vorm aan voorproefvormen in formaat HTML5 tijdens het ontwerpproces. Voor meer informatie over om dit vermogen in de Ontwerper van Vormen toe te laten en te vormen AEM, zie HTML [van de](../../forms/using/preview-xdp-forms-html.md)Voorproef.
+Het tabblad Voorbeeld-HTML wordt in de ontwerpmodus toegevoegd zodat formulierontwerpers tijdens het ontwerpproces formulieren in HTML5-indeling kunnen bekijken. Zie [Voorbeeld-HTML](../../forms/using/preview-xdp-forms-html.md)voor meer informatie over het inschakelen en configureren van deze functie in AEM Forms Designer.
 
-#### Scribble-handtekening {#scribble-signature}
+#### Krabbelhandtekening {#scribble-signature}
 
-Het belangrijkste doel voor HTML5 vormen is aanrakingsapparaten. Daarom wordt een nieuwe gekrabbelde handtekeningscontrole toegevoegd in de Ontwerper van Vormen AEM. U kunt klikken of slepen-en-dalings de controle van de krabbelhandtekening op uw vormmalplaatje en het vormen. Het wordt teruggegeven als gekrabbel gebied in de renditie van HTML5 en kan worden gebruikt om handtekening op aanrakingsapparaten in te schrijven. Op Desktopmachines, kan het als krabbelgebied worden gebruikt gebruikend muiscontrole. Voor meer informatie over hoe te om deze eigenschap te gebruiken, zie het Gebied van de Geschiktheid van [XFA](../../forms/using/scribble-signature.md).
+Het belangrijkste doel voor HTML5-formulieren is aanraakapparaten. Daarom wordt een nieuwe controle van de krabbelhandtekening toegevoegd in de Ontwerper van de Vormen AEM. U kunt op het besturingselement voor krabbelhandtekeningen klikken of het besturingselement voor krabbelhandtekeningen slepen en neerzetten op uw formuliersjabloon en het configureren. Het wordt weergegeven als een krabbelveld in HTML5-uitvoering en kan worden gebruikt om een handtekening te krabbelen op aanraakapparaten. Op desktopcomputers kan het als krabbelveld worden gebruikt met de muis. Zie [XFA-scriptveld](../../forms/using/scribble-signature.md)voor meer informatie over het gebruik van deze functie.
 
 ![4](assets/4.png)
 
-#### Rich text Format {#rich-text-format}
+#### RTF-indeling {#rich-text-format}
 
-Bepaal een rijk formaat van het tekstgebied voor het tekstgebied in de Ontwerper van Vormen om een lijst van het formatteren opties aan het gebied in de teruggegeven vorm toe te voegen HTML5. Om de montages toe te passen, tik het tekstgebied in de Mening **[!UICONTROL van het]** Ontwerp. In het **[!UICONTROL lusje van het Gebied]** , uitgezochte **[!UICONTROL Rijke Tekst]** van de drop-down lijst van het Formaat **[!UICONTROL van het]** Gebied. Het tekstgebied toont het formatteren opties wanneer teruggegeven in een vorm HTML5.
+U kunt een tekstveld omzetten in een RTF-veld. Er wordt een lijst met opmaakopties toegevoegd aan het tekstveld. Als u wilt converteren, opent u Formulierontwerper en tikt u op het tekstveld in de **[!UICONTROL ontwerpweergave]**. Selecteer op het tabblad **[!UICONTROL Veld]** de optie **[!UICONTROL RTF]** in de vervolgkeuzelijst **[!UICONTROL Veldindeling]** . Wanneer het XFA-formulier nu wordt weergegeven als een HTML5-formulier, wordt het veld weergegeven als een RTF-veld.
 
 [Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)

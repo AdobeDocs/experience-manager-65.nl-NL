@@ -1,8 +1,8 @@
 ---
-title: De wijze van de Lay-out van het gebruik resize componenten
-seo-title: De wijze van de Lay-out van het gebruik resize componenten
-description: 'Bepaal de positie van componenten gebruikend het ontvankelijke net beschikbaar op de wijze van de Lay-out '
-seo-description: 'Bepaal de positie van componenten gebruikend het ontvankelijke net beschikbaar op de wijze van de Lay-out '
+title: Gebruik de modus Lay-out om het formaat van componenten te wijzigen
+seo-title: Gebruik de modus Lay-out om het formaat van componenten te wijzigen
+description: 'De positie van componenten bepalen met behulp van het responsieve raster dat beschikbaar is in de modus Lay-out '
+seo-description: 'De positie van componenten bepalen met behulp van het responsieve raster dat beschikbaar is in de modus Lay-out '
 uuid: 6b077ebe-caea-4ae3-b17a-be2dca94eeb3
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,121 +10,121 @@ topic-tags: author
 discoiquuid: 9e9aaf36-bb86-4954-83cc-fa6b3e80ae4b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 147c50adb02b48be8e3aba760dbac309ab49badf
+source-git-commit: f763359fb333ef6cc8a6748ccfa39ba9aee9ca48
 
 ---
 
 
-# De wijze van de Lay-out van het gebruik resize componenten{#use-layout-mode-to-resize-components}
+# Gebruik de modus Lay-out om het formaat van componenten te wijzigen{#use-layout-mode-to-resize-components}
 
-De adaptieve vorm en de Interactieve het kanaalauteursinterface van het Communicatie Web laten u toe resize componenten gebruikend de wijze van de Lay-out. De belemmering-en-dalingsblauwe punten binnen kolommen om het begin en het eind te bepalen richt aan positiecomponenten. De blauwe punten tonen na het tikken van de component binnen het ontvankelijke net. Het ontvankelijke net bestaat uit 12 gelijke kolommen. De witte en blauwe kleur die in afwisselende kolommen in de schaduw stellen onderscheidt één kolom van andere.
+Met de adaptieve formulier- en interactieve interface voor het ontwerpen van webkanalen voor communicatie kunt u de grootte van componenten aanpassen in de modus Indeling. Sleep blauwe stippen in kolommen om de begin- en eindpunten voor de positiecomponenten te definiëren. De blauwe stippen worden weergegeven nadat u op de component in het responsieve raster hebt getikt. Het responsieve raster bestaat uit 12 gelijke kolommen. Met de witte en blauwe kleurschaduw in alternatieve kolommen wordt de ene kolom onderscheiden van de andere.
 
-U kunt de wijze van de Lay-out gebruiken resize componenten voor alle apparatentypes zoals Desktop, tablet, telefoon, en andere kleinere apparaten. De tablet leidt automatisch de lay-outconfiguratie uit de Desktopversie af en de kleinere apparaten leiden lay-outconfiguratie uit telefoon af. Nochtans, kunt u de automatisch afgeleide configuraties met voeten treden om een verschillende configuratie voor elk apparatentype te bepalen.
+U kunt de modus Lay-out gebruiken om het formaat van componenten te wijzigen voor alle apparaattypen, zoals bureaublad, tablet, telefoon en andere kleinere apparaten. De tablet leidt automatisch de lay-outconfiguratie van de Desktopversie af en de kleinere apparaten leiden lay-outconfiguratie van telefoon af. Nochtans, kunt u de automatisch afgeleide configuraties met voeten treden om een verschillende configuratie voor elk apparatentype te bepalen.
 
-Als u het kanaal van het Web gebruikend het kanaal van de [Druk als meester](../../forms/using/create-interactive-communication.md) voor een Interactieve Mededeling creeert, omvatten de componenten beschikbaar voor het resizing ook de subvormen en de gebieden die in het kanaal van het Web auto-geproduceerd zijn gebruikend het kanaal van de Druk. Het kanaal van het Web behoudt de lay-out voor de het kanaalelementen van de Druk op de wijze van de Lay-out.
+Als u het kanaal van het Web gebruikend het kanaal van de [Druk als meester](../../forms/using/create-interactive-communication.md) voor een Interactieve Mededeling creeert, omvatten de componenten beschikbaar voor resizing ook de subformulieren en de gebieden die in het kanaal van het Web gebruikend het kanaal van de Druk auto-geproduceerd zijn. Het kanaal van het Web behoudt de lay-out voor de het kanaalelementen van de Druk op de wijze van de Lay-out.
 
-## Access Layout, modus {#access-layout-mode}
+## Modus Toegang tot layout {#access-layout-mode}
 
-Selecteer **Lay-out** van de drop-down lijst die bij de bovenkant van de adaptieve vorm en de Interactieve Communicatie auteursinterface naast de optie van de **Voorproef** verschijnt. De vormvertoningen op de wijze van de Lay-out.
+Selecteer **Lay-out** van de drop-down lijst die bij de bovenkant van de adaptieve vorm en Interactieve Communicatie auteursinterface naast de optie van de **Voorproef** verschijnt. Het formulier wordt weergegeven in de modus Indeling.
 
-1. Login aan de AEM auteursinstantie en navigeer aan de Manager **van de Ervaring van** Adobe > **Vormen** > **Vormen &amp; Documenten**.
-1. [Creeer een nieuwe](../../forms/using/create-interactive-communication.md) of open een bestaande adaptieve vorm of een Interactieve Mededeling.
-1. Selecteer **Lay-out** van de drop-down lijst die bij de bovenkant naast de optie van de **Voorproef** verschijnt. De vormvertoningen op de wijze van de Lay-out.
+1. Meld u aan bij de AEM-auteur en navigeer naar **Adobe Experience Manager** > **Formulieren** > **Formulieren en documenten**.
+1. [Maak een nieuw](../../forms/using/create-interactive-communication.md) of open een bestaand adaptief formulier of een interactieve communicatie.
+1. Selecteer **Lay-out** in de drop-down lijst die bij de bovenkant naast de optie van de **Voorproef** verschijnt. Het formulier wordt weergegeven in de modus Indeling.
 
-   ![De wijze van de lay-out voor Interactieve Mededelingen](assets/layout_mode_ic_new.png)
+   ![Lay-outmodus voor interactieve communicatie](assets/layout_mode_ic_new.png)
 
-## Onderdelen herrangschikken {#resize-components}
+## Formaat van componenten wijzigen {#resize-components}
 
-1. Op de wijze van de Lay-out, tik de component resize. De blauwe punten tonen aan het begin en het eind van het ontvankelijke net.
-1. Sleep de blauwe punten om de positie van de component in het ontvankelijke net te bepalen.
+1. Tik in de modus Lay-out op de component om de grootte te wijzigen. De blauwe stippen worden weergegeven aan het begin en einde van het responsieve raster.
+1. Sleep de blauwe stippen om de positie van de component in het responsieve raster te definiëren.
 
-   ![Het Resizing die de wijze van de Lay-out gebruiken](assets/layout_mode_resize_new_updated.png)
+   ![Vergroten/verkleinen met de modus Lay-out](assets/layout_mode_resize_new_updated.png)
 
-   De toolbar die na het aftappen van componenten toont bestaat uit de volgende opties:
+   De werkbalk die wordt weergegeven nadat u op componenten hebt getikt, bestaat uit de volgende opties:
 
-   * **Ouder:** Selecteer de ouder van een component.
-   * **Vloer aan nieuwe lijn:** Verplaats de component naar de volgende lijn als er veelvoudige componenten binnen de zelfde lijn zijn.
-   U kunt alle het resizing veranderingen ongedaan maken en standaardlay-out toepassen op het paneel dat resized componenten bevat gebruikend de optie van de **[!UICONTROL Omkeer breekpuntlay-out]** ( ![keer Breekpunt](assets/reverttopreviouslypublishedversion.png)terug). Tik de ouder van de resized component om de optie te bekijken.
+   * **Bovenliggend element:** Selecteer het bovenliggende element van een component.
+   * **Zweven naar nieuwe regel:** Verplaats de component naar de volgende regel als er meerdere componenten binnen dezelfde regel zijn.
+   U kunt alle wijzigingen in de grootte ongedaan maken en de standaardlay-out toepassen op het deelvenster met gewijzigde componenten die zijn aangepast met de optie **[!UICONTROL Onderbrekingspunt]** herstellen (Onderbrekingspunt ![](assets/reverttopreviouslypublishedversion.png)herstellen). Tik op het bovenliggende element van de component waarvan de grootte is gewijzigd om de optie weer te geven.
 
    >[!NOTE]
    >
-   >U kunt niet resize lijstkolom, toolbar, toolbarknoop, en de componenten van het doelgebied gebruikend de wijze van de Lay-out. De wijze van de Stijl van het gebruik resize deze componenten.
+   >U kunt de grootte van tabelkolommen, werkbalkknop, en doelgebiedcomponenten niet wijzigen in de modus Indeling. Gebruik de modus Stijl om het formaat van deze componenten te wijzigen.
 
 ### Voorbeeld {#example}
 
-**Doel:** U wilt een lijstcomponent en een component van het Beeld opnemen en hen plaatsen parallel aan elkaar in een Interactieve Mededeling.
+**Doel:** U wilt een lijstcomponent en een component van het Beeld opnemen en hen parallel aan elkaar plaatsen in een Interactieve Mededeling.
 
-1. Neem de lijst en de beeldcomponenten op gebruikend geef wijze in het Webkanaal uit. De vertoning van de beeldcomponent na de lijstcomponent.
-1. De schakelaar aan de wijze van de Lay-out en tikt de component van de Lijst. De blauwe punten resize de componentenvertoning bij kolom 1 en 12.
-1. Sleep de blauwe stip in kolom 12 naar kolom 6 van het responsieve raster en laat deze vallen.
+1. Voeg de tabel- en afbeeldingscomponenten in met de modus Bewerken in het webkanaal. De component image wordt weergegeven na de tabelcomponent.
+1. Schakel over naar de modus Lay-out en tik op de component Tabel. De blauwe stippen om het formaat van de componentweergave te wijzigen in kolom 1 en 12.
+1. Sleep de blauwe stip in kolom 12 naar kolom 6 van het responsieve raster en zet deze neer.
 
-   ![Bepaal het eindpunt van de lijst](assets/layout_mode_end_point_table_new.png)
+   ![Het eindpunt van de tabel definiëren](assets/layout_mode_end_point_table_new.png)
 
-1. Op dezelfde manier selecteer de component van het Beeld en sleep-en-daling de blauwe punt bij kolom 1 aan kolom 7 van het ontvankelijke net. De lijst en de beeldcomponenten tonen parallel aan elkaar.
+1. Selecteer op dezelfde manier de component Image en sleep de blauwe stip in kolom 1 tot kolom 7 van het responsieve raster. De tabel- en afbeeldingscomponenten worden parallel met elkaar weergegeven.
 
-   ![De lijst en het beeld in parallel op de wijze van de Lay-out](assets/table_image_parallel_new.png)
+   ![Tabel en afbeelding parallel in de modus Lay-out](assets/table_image_parallel_new.png)
 
-   U kunt de component van het Beeld selecteren en de **Vloer aan nieuwe lijnoptie** klikken beschikbaar in de toolbar om de component van het Beeld naar de volgende lijn te verplaatsen.
+   U kunt de component Afbeelding selecteren en op de optie **Zweven tikken naar nieuwe regel** in de werkbalk om de component Afbeelding naar de volgende regel te verplaatsen.
 
-## Deelvensters aanpassen {#resize-panels-layout-mode}
+## Deelvensters vergroten/verkleinen {#resize-panels-layout-mode}
 
-Voer de volgende stappen uit als u het formaat van het volledige paneel in plaats van de afzonderlijke componenten wilt wijzigen:
+Voer de volgende stappen uit als u het formaat van het hele deelvenster wilt wijzigen in plaats van de afzonderlijke componenten:
 
-1. Tik om het even welke componenten in het paneel dat u wilt resize, selecteer ![Uitgezochte Ouder](assets/select_parent_icon.svg), en selecteer de eerste optie in de drop-down lijst, als het paneel de directe ouder van de component is.
+1. Tik op een van de componenten in het deelvenster waarvan u het formaat wilt wijzigen, selecteer Bovenliggend element ![](assets/select_parent_icon.svg)selecteren en selecteer de eerste optie in de vervolgkeuzelijst als het deelvenster het directe bovenliggende element van de component is.
 
-   De blauwe punten tonen aan het begin en het eind van het ontvankelijke net.
+   De blauwe stippen worden weergegeven aan het begin en einde van het responsieve raster.
 
-1. Sleep de blauwe punten om de positie van het deelvenster in het responsieve raster te definiëren.
-U kunt stappen 1 en 2 herhalen en ![Uitgezochte Ouder](assets/float_to_new_line_icon.svg) selecteren om het resized paneel naar de volgende lijn te verplaatsen.
+1. Sleep de blauwe stippen om de positie van het deelvenster in het responsieve raster te definiëren.
+U kunt de stappen 1 en 2 herhalen en Bovenliggend element ![](assets/float_to_new_line_icon.svg) selecteren selecteren selecteren om het gewijzigde deelvenster naar de volgende regel te verplaatsen.
 
 ## Meerdere kolommen voor een deelvenster definiëren
 
-Voer de volgende stappen uit om het aantal kolommen voor een paneel te bepalen:
+Voer de volgende stappen uit om het aantal kolommen voor een deelvenster te definiëren:
 
-1. Op **[!UICONTROL geef]** wijze uit, tik het paneel, uitgezocht ![vorm](assets/configure_icon.png), en selecteer **[!UICONTROL Reagerend - alles op de pagina zonder navigatie]** optie van de drop-down lijst van de Lay-out **[!UICONTROL van het]** Comité.
+1. Tik in de modus **[!UICONTROL Bewerken]** op het deelvenster, selecteer ![Configureren](assets/configure_icon.png)en selecteer **[!UICONTROL Responsief - alles op de pagina zonder navigatie]** in de vervolgkeuzelijst **[!UICONTROL Deelvensterindeling]** .
 
 1. Tik op ![Opslaan](assets/save_icon.svg) om de eigenschappen op te slaan.
 
-1. Op de wijze van de **[!UICONTROL Lay-out]** , tik om het even welke componenten in het paneel, selecteer de ![Uitgezochte Ouder](assets/select_parent_icon.svg), en selecteer het paneel.
+1. Tik in de modus **[!UICONTROL Lay-out]** op een van de componenten in het deelvenster, selecteer Bovenliggend element ![](assets/select_parent_icon.svg)selecteren en selecteer het deelvenster.
 
-1. Tik op ![meerdere kolommen](assets/multi-column.svg) en selecteer het aantal kolommen in de vervolgkeuzelijst. Het aantal kolommen kan zich van 1 tot 12 uitstrekken. Het paneel wordt verdeeld in een multi-kolomlay-out.
+1. Tik op ![meerdere kolommen](assets/multi-column.svg) en selecteer het aantal kolommen in de vervolgkeuzelijst. Het aantal kolommen kan variëren van 1 tot en met 12. Het deelvenster wordt verdeeld in een lay-out met meerdere kolommen.
 
 ![meerdere kolommen in de lay-outmodus](assets/multi-column-layout.png)
 
-## Laat het nieuwe ontvankelijke net voor oude ontvankelijke lay-outs toe {#enableresponsivegrid}
+## Het nieuwe responsieve raster inschakelen voor oude responsieve layouts {#enableresponsivegrid}
 
-Laat het nieuwe ontvankelijke net voor vormen toe die u gebruikend Vormen 6.4 van AEM creeert of lagere versie resize componenten.
+Schakel het nieuwe responsieve raster in voor formulieren die u maakt met AEM Forms 6.4 of lager om de grootte van componenten te wijzigen.
 
 >[!NOTE]
 >
->De omschakeling aan het nieuwe ontvankelijke net verwerpt de lay-outeigenschappen die reeds voor componenten worden bepaald die in de vorm worden gebruikt.
+>Als u overschakelt naar het nieuwe responsieve raster, worden de lay-outeigenschappen verwijderd die al zijn gedefinieerd voor componenten die in het formulier worden gebruikt.
 
-Voer de volgende stappen uit om het nieuwe ontvankelijke net toe te laten:
+Voer de volgende stappen uit om het nieuwe responsieve raster in te schakelen:
 
-1. Selecteer **Lay-out** van de drop-down lijst die bij de bovenkant naast de optie van de **Voorproef** verschijnt. Een bevestiging om de de wijzevertoningen van de Lay-out toe te laten.
-1. Tik **ja** om de wijze van de **Lay-out** voor de vorm toe te laten.
+1. Selecteer **Lay-out** in de drop-down lijst die bij de bovenkant naast de optie van de **Voorproef** verschijnt. Er wordt een bevestiging weergegeven om de modus Lay-out in te schakelen.
+1. Tik op **Ja** om de modus **Indeling** voor het formulier in te schakelen.
 
-### Een oud fragment insluiten in een adaptieve vorm met een nieuwe ontvankelijke lay-out {#embed-an-old-fragment-in-an-adaptive-form-with-new-responsive-layout}
+### Een oud fragment insluiten in een adaptief formulier met nieuwe responsieve indeling {#embed-an-old-fragment-in-an-adaptive-form-with-new-responsive-layout}
 
-De nieuwe ontvankelijke lay-out voor adaptieve vorm staat u toe om een adaptief vormfragment met de oude ontvankelijke lay-out aan de vorm toe te voegen. Nochtans, verwerpt de nieuwe lay-out de lay-outeigenschappen die reeds voor componenten worden bepaald die in het fragment worden gebruikt. U kunt op de wijze van de Lay-out overschakelen om de lay-outeigenschappen voor componenten te bepalen die in het fragment worden gebruikt.
+Met de nieuwe responsieve indeling voor het adaptieve formulier kunt u een adaptief formulierfragment met de oude responsieve indeling aan het formulier toevoegen. De nieuwe indeling verwijdert echter de lay-outeigenschappen die al zijn gedefinieerd voor componenten die in het fragment worden gebruikt. U kunt overschakelen naar de modus Lay-out om de eigenschappen voor de lay-out te definiëren van de componenten die in het fragment worden gebruikt.
 
-### Inbedden een fragment met nieuwe ontvankelijke lay-out in een oude adaptieve vorm {#embed-a-fragment-with-new-responsive-layout-in-an-old-adaptive-form}
+### Een fragment met een nieuwe responsieve indeling insluiten in een oud adaptief formulier {#embed-a-fragment-with-new-responsive-layout-in-an-old-adaptive-form}
 
-Als u een fragment met de nieuwe ontvankelijke lay-out in een adaptieve vorm met een oude ontvankelijke lay-out inbedt, zet het systeem u ertoe aan om de wijze van de Lay-out voor de vorm toe te laten en het fragment opnieuw in te bedden.
+Als u een fragment met de nieuwe responsieve indeling insluit in een adaptief formulier met een oude responsieve indeling, wordt u gevraagd de modus Indeling in te schakelen voor het formulier en het fragment opnieuw in te sluiten.
 
-Om de wijze van de Lay-out toe te laten, selecteer **Lay-out** van de drop-down lijst die bij de bovenkant naast de optie van de **Voorproef** verschijnt en tikt **ja** om te bevestigen. Selecteer **uitgeven** wijze om het fragment opnieuw in te bedden.
+Selecteer **Lay-out** in de vervolgkeuzelijst die boven aan de optie **Voorvertoning** wordt weergegeven en tik op **Ja** om de modus Lay-out in te schakelen. Selecteer de modus **Bewerken** om het fragment opnieuw in te sluiten.
 
-## Maak de wijze van de Lay-out voor vormen met oude ontvankelijke lay-out onbruikbaar {#disable-layout-mode-for-forms-with-old-responsive-layout}
+## Lay-outmodus uitschakelen voor formulieren met oude responsieve indeling {#disable-layout-mode-for-forms-with-old-responsive-layout}
 
-U kunt de wijze van de Lay-out voor vormen met oude ontvankelijke lay-out onbruikbaar maken door eigenschappen voor het malplaatje uit te geven dat in de vorm wordt gebruikt.
+U kunt de modus Indeling uitschakelen voor formulieren met een oude responsieve indeling door eigenschappen te bewerken voor de sjabloon die in het formulier wordt gebruikt.
 
-Voer de volgende stappen uit om de wijze van de Lay-out onbruikbaar te maken:
+Voer de volgende stappen uit om de modus Lay-out uit te schakelen:
 
-1. Selecteer **[!UICONTROL Hulpmiddelen]** > **[!UICONTROL Algemeen]** > **[!UICONTROL Malplaatjes]** en open het malplaatje in de vorm op **[!UICONTROL Edit]** wijze wordt gebruikt die.
-1. Selecteer de container van het Document in de linkerruit en tik **[!UICONTROL Beleid.]**
+1. Selecteer **[!UICONTROL Gereedschappen]** > **[!UICONTROL Algemeen]** > **[!UICONTROL Sjablonen]** en open de sjabloon in het formulier in de modus **[!UICONTROL Bewerken]** .
+1. Selecteer Documentcontainer in het linkerdeelvenster en tik op **[!UICONTROL Beleid.]**
 
-   ![Indeling uitschakelen, modus](assets/policy_disable_layout_mode.png)
+   ![Lay-outmodus uitschakelen](assets/policy_disable_layout_mode.png)
 
-1. Tik op het tabblad **[!UICONTROL Layout-instellingen]** en selecteer **[!UICONTROL Layout-modus]** uitschakelen.
-1. Tik op ![Wijzigingen](assets/save_icon.png) opslaan om de sjablooneigenschappen op te slaan.
+1. Tik op het tabblad **[!UICONTROL Lay-outinstellingen]** en selecteer Lay-outmodus **** uitschakelen.
+1. Tik op Wijzigingen ![](assets/save_icon.png) opslaan om de sjablooneigenschappen op te slaan.
 

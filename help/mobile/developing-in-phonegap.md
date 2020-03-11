@@ -9,7 +9,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: bc61e495-b53b-49c5-99e5-c2e35873e6bd
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 7eb3529de1c99d09eaa78c7589320a85e729400b
 
 ---
 
@@ -35,7 +35,7 @@ Met de volgende bronnen kunt u aan de slag met AEM Mobile via Adobe PhoneGap:
 * [AEM Mobile Content Services: Een overzicht](/help/mobile/develop-content-as-a-service.md)
 
    * Om de Diensten van de Inhoud en Modellen van Gegevens toe te laten, zie de Diensten van de Inhoud [beheren](/help/mobile/developing-content-services.md)
-   * Meer informatie over het Creëren van Modellen, zie het [Ontwikkelen Modellen](/help/mobile/models-in-repository.md)
+   * Meer informatie over het Creëren van Modellen, zie het [Ontwikkelen Modellen](/help/mobile/administer-mobile-apps.md)
    * Om over het Teruggeven en Levering te leren, zie het [Teruggeven en de Levering van de Diensten van de Inhoud](/help/mobile/rendering-and-delivery.md)
 
 >[!NOTE]

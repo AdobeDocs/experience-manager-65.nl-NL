@@ -4,7 +4,7 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.5 Authoring User Guide
 translation-type: tm+mt
-source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+source-git-commit: e82fc1d3de3cff96cadb6a25a6ba6169cf7f7cd0
 
 ---
 
@@ -14,26 +14,27 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
 + [Overzicht van gebruikershandleiding voor ontwerpen](home.md)
 + Essentiële taken, gereedschappen en concepten voor AEM Authoring {#essentials}
    + [Eerste stappen voor auteurs](first-steps.md)
+   + [Pagina&#39;s ontwerpen](page-authoring.md)
    + [Snelle gids voor het ontwerpen van pagina&#39;s](qg-page-authoring.md)
    + [Concept of Authoring](author.md)
-   + [Basisverwerking](basic-handling.md)
+   + [Basisbewerkingen](basic-handling.md)
    + [Zoeken](search.md)
    + [Uw accountomgeving configureren](user-properties.md)
-   + [Uw Postvak IN](inbox.md)
+   + [Uw inbox](inbox.md)
    + [Sneltoetsen voor consoles](keyboard-shortcuts.md)
    + [Gebruikersinterface selecteren](select-ui.md)
 + Authoring {#authoring}
    + [Ontwerpomgeving en -gereedschappen](author-environment-tools.md)
    + [Annotaties bij het bewerken van een pagina](annotations.md)
-   + [Pagina&#39;s maken en ordenen](managing-pages.md)
-   + [Pagina-inhoud bewerken](editing-content.md)
+   + [Pagina&#39;s maken en indelen](managing-pages.md)
+   + [Paginacontent bewerken](editing-content.md)
    + [De Rich Text Editor gebruiken om inhoud te ontwerpen](rich-text-editor.md)
    + [Pagina-eigenschappen bewerken](editing-page-properties.md)
    + [Pagina&#39;s publiceren](publishing-pages.md)
    + [Pagina&#39;s ontwerpen met inhoudsfragmenten](content-fragments.md)
-   + [Ervaar fragmenten](experience-fragments.md)
+   + [Ervaringsfragmenten](experience-fragments.md)
    + [Exporteren naar CSV](csv-export.md)
-   + [Componenten](default-components.md)
+   + [Onderdelen](default-components.md)
    + [Een pagina ontwerpen voor mobiele apparaten](mobile.md)
    + [AEM-probleem bij ontwerpen oplossen](troubleshooting.md)
    + [Sneltoetsen bij het bewerken van pagina&#39;s](page-authoring-keyboard-shortcuts.md)
@@ -43,8 +44,8 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [Paginasjablonen maken](templates.md)
    + [Stijlsysteem](style-system.md)
    + [Werken met paginaversies](working-with-page-versions.md)
-   + [Pagina grijs](page-diff.md)
-   + [Componentenconsole](default-components-console.md)
+   + [Page Diff-optie](page-diff.md)
+   + [Onderdelenconsole](default-components-console.md)
    + [Responsieve lay-out](responsive-layout.md)
    + [Inhoudsinzicht](content-insights.md)
    + [Toegankelijke inhoud maken (WCAG 2.0-compatibiliteit)](creating-accessible-content.md)
@@ -59,11 +60,11 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [Werken met taken](task-content.md)
    + [Creative Project- en PIM-integratie](managing-product-information.md)
    + [Werken met projectworkflows](projects-with-workflows.md)
-+ Starten {#launches}
-   + [Starten](launches.md)
-   + [Starten maken](launches-creating.md)
-   + [Starten bewerken](launches-editing.md)
-   + [Starten promoten](launches-promoting.md)
++ Lanceringen {#launches}
+   + [Lanceringen](launches.md)
+   + [Lanceringen maken](launches-creating.md)
+   + [Lanceringen bewerken](launches-editing.md)
+   + [Lanceringen promoten](launches-promoting.md)
 + Workflows {#workflows}
    + [Werken met workflows](workflows.md)
    + [Workflows toepassen op pagina&#39;s](workflows-applying.md)
@@ -77,13 +78,13 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
 + Personalisatie {#personalization}
    + [Personalisatie](personalization.md)
    + [Pagina&#39;s voorvertonen met ContextHub-gegevens](ch-previewing.md)
-   + [Doelinhoud ontwerpen met doelmodus](content-targeting-touch.md)
-   + [Werken met gerichte inhoud in meerdere sites](multisite-support-targeted-content.md)
-   + [Hoe multisite beheer voor gerichte inhoud is gestructureerd](technical-multisite-targeted.md)
-   + [Beheersactiviteiten](activitylib.md)
-   + [Soorten publiek beheren](managing-audiences.md)
+   + [Authoring van getargete content met targetingmodus](content-targeting-touch.md)
+   + [Werken met getargete content in meerdere sites](multisite-support-targeted-content.md)
+   + [Structurering van beheer voor meerdere sites voor getargete content](technical-multisite-targeted.md)
+   + [Activiteiten beheren](activitylib.md)
+   + [Audiences beheren](managing-audiences.md)
    + [Aanbiedingen maken en beheren](offerlib.md)
-   + [Segmentering begrijpen](segmentation-overview.md)
+   + [Inzicht in segmentering](segmentation-overview.md)
 + AEM en Adobe-campagne {aem-adobe-campagne}
    + [Werken met Adobe-campagne](adobe-campaign.md)
    + [Werken met Adobe Campagne Classic en Adobe Campagne Standard](campaign.md)

@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f763359fb333ef6cc8a6748ccfa39ba9aee9ca48
+source-git-commit: 7cc22c6558394c5e12ea2477bb07ff02dabc8dbc
 
 ---
 
@@ -244,7 +244,7 @@ Voor een volledige lijst van eigenschappen, zeer belangrijke hoogtepunten, zeer 
 
 * Designer: Als een tabel samengevoegde cellen bevat, mislukt de toegankelijkheidstest voor het PDF-uitvoerbestand dat is geconverteerd van een XDP-formulier met de uitvoerservice (CQ-4285372).
 
-* Foundation JEE: Server die wordt losgekoppeld van een cluster kan niet opnieuw worden verbonden vanwege cacheproblemen (NPR-32412).
+* Foundation JEE: Als een AEM Forms-server is losgekoppeld van een cluster, wordt door cacheproblemen voorkomen dat deze opnieuw verbinding maakt met de server (NPR-32412).
 
 ## 6.5.4.0 installeren {#install}
 

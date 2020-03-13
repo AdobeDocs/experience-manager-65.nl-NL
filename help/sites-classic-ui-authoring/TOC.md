@@ -4,7 +4,7 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.5 Classic UI Authoring User Guide
 translation-type: tm+mt
-source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+source-git-commit: c34993650bbd309b036085abfae4f7db547c7104
 
 ---
 
@@ -16,17 +16,17 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [Eerste stappen voor auteurs](classic-page-author-first-steps.md)
    + [Ontwerpen in de klassieke gebruikersinterface](classicui.md)
    + [Werken met de ontwerpomgeving](author-env.md)
-   + [Basisverwerking](author-env-basic-handling.md)
+   + [Basisbewerkingen](author-env-basic-handling.md)
    + [Uw accountomgeving configureren](author-env-user-props.md)
    + [Gebruikersinterface selecteren](author-env-select-ui.md)
    + [Zoeken](author-env-search.md)
-   + [Uw Postvak IN](author-env-inbox.md)
+   + [Uw inbox](author-env-inbox.md)
    + [Sneltoetsen voor consoles](author-env-keyboard-shortcuts.md)
 + Authoring {#authoring}
    + [Pagina&#39;s ontwerpen](classic-page-author.md)
    + [Authoring - het milieu en de instrumenten](classic-page-author-env-tools.md)
-   + [Pagina&#39;s maken en ordenen](classic-page-author-manage-pages.md)
-   + [Pagina-inhoud bewerken](classic-page-author-edit-content.md)
+   + [Pagina&#39;s maken en indelen](classic-page-author-manage-pages.md)
+   + [Paginacontent bewerken](classic-page-author-edit-content.md)
    + [RTF-editor](classic-page-author-rich-text-editor.md)
    + [Pagina&#39;s publiceren](classic-page-author-publish-pages.md)
    + [Pagina-eigenschappen bewerken](classic-page-author-edit-page-properties.md)
@@ -44,18 +44,18 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [Basisstructuur](classic-feature-scaffolding.md)
    + [Componenten configureren in ontwerpmodus](classic-page-author-design-mode.md)
    + [Functies voor zoeken en promoten aan uw pagina toevoegen](classic-feature-search-promote.md)
-   + [Componenten](classic-page-author-default-components.md)
+   + [Onderdelen](classic-page-author-default-components.md)
 + Workflows {#workflows}
    + [Deelnemen aan workflows](classic-workflows-participating.md)
    + [Werken met workflows](classic-workflows.md)
    + [Workflows toepassen op pagina&#39;s](classic-workflows-applying.md)
-+ Starten {#launches}
-   + [Starten](classic-launches.md)
-   + [Starten maken](classic-launches-creating.md)
-   + [Starten bewerken](classic-launches-editing.md)
-   + [Starten promoten](classic-launches-promoting.md)
++ Lanceringen {#launches}
+   + [Lanceringen](classic-launches.md)
+   + [Lanceringen maken](classic-launches-creating.md)
+   + [Lanceringen bewerken](classic-launches-editing.md)
+   + [Lanceringen promoten](classic-launches-promoting.md)
 + Personalisatie {#personalization}
-   + [Segmentering begrijpen](classic-personalization-campaigns-segmentation.md)
+   + [Inzicht in segmentering](classic-personalization-campaigns-segmentation.md)
    + [Campagnebeheer](classic-personalization-campaigns.md)
    + [Teasers en strategieën](classic-personalization-campaigns-teasers-strategy.md)
    + [Openingspagina&#39;s](classic-personalization-campaigns-landingpage.md)
@@ -74,11 +74,12 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [Werken met Adobe-campagne](classic-personalization-ac.md)
    + [Adobe-campagnecomponenten](classic-personalization-ac-components.md)
    + [Adobe-campagne als doel instellen](classic-personalization-ac-target.md)
+   + [Adobe Campagneformulieren maken in AEM](classic-personalization-ac-forms.md)
 + Elementen ontwerpen in klassieke gebruikersinterface {#assets}
    + [Werken met elementen](classicui-assets.md)
    + [Dynamische media-elementen leveren](dynamic-media-assets-delivering.md)
    + [Dynamische media-elementen toevoegen aan pagina&#39;s](dynamic-media-assets-adding-to-page.md)
    + [Het toevoegen van Eigenschappen Scene7 aan uw Pagina](manage-assets-classic-s7.md)
    + [Video](manage-assets-classic-s7-video.md)
-   + [Werken met dynamische media](dynamic-media-assets.md)
+   + [Werken met Dynamic Media](dynamic-media-assets.md)
    + [Naamconventies voor het testen van elementen](asset-naming-conventions.md)

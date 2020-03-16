@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 82ded190d4fee4e4ef9849dc34372774c529844f
+source-git-commit: cc72581f0de6f47cd1d7e207f228e64ba7c9e842
 
 ---
 
@@ -38,7 +38,7 @@ Enkele belangrijke functies en verbeteringen die zijn geïntroduceerd in AEM 6.5
 
 * Ondersteuning voor [RTF](../forms/using/designing-form-template.md) -bestanden in HTML5-formulieren.
 
-* Verbeteringen in de toegankelijkheid van elementen.
+* [Verbeterde](new-features-latest-service-pack.md#accessibility-enhancements) toegankelijkheid in de middelen van Experience Manager.
 
 * De ingebouwde opslagplaats (Apache Jackrabbit Oak) wordt bijgewerkt naar versie 1.10.8.
 

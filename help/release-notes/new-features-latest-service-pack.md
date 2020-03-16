@@ -4,7 +4,7 @@ description: Nieuw in Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: edbe99460bb880ae118f7e826592bc7ad11d54c5
+source-git-commit: ed756d785864131c2e031aec4331388bc057576b
 
 ---
 
@@ -39,15 +39,17 @@ U kunt een nieuwe integratie maken of uw integratie-instellingen upgraden naar A
 
 ### Verbeteringen voor toegankelijkheid {#accessibility-enhancements}
 
-* Selectievakjes met gemengde status hebben nu een kenmerk met aria-controle en een waarde &quot;gemengd&quot;, zodat de gemengde status van deze selectievakjes voor schermlezers beschikbaar is.
+De middelen van de Manager van de ervaring omvatten de volgende toegankelijkheidsverhogingen:
 
-* Besturingselementen op basis van toetsenborden worden nu ondersteund, met uitzondering van bewegingen op basis van paden, om te navigeren rond ingezoomde afbeeldingen.
+* Met de pijltoetsen op het toetsenbord kunt u gebieden binnen ingezoomde afbeeldingen verplaatsen en pannen. Zie alleen [voor](../assets/managing-assets-touch-ui.md#previewing-assets)voorvertoningen van toetsenbordtoetsen voor meer informatie.
 
-* Datumnotatiebeperkingen zijn opgegeven in veldlabels voor gebruikers met alleen het toetsenbord om handmatig datum in te voeren.
+* De selectievakjes voor gemengde status (waarin de selectievakjes voor het eerste niveau niet zijn geselecteerd en zijn doorgehaald) in het deelvenster Filters zijn leesbaar voor schermlezers, tenzij u alle geneste selectievakjes selecteert.
 
-* Het kenmerk Alt is toegevoegd aan decoratieve pictogrammen en het kenmerk role=img is verwijderd, zodat dergelijke pictogrammen en afbeeldingen niet beschikbaar worden gemaakt voor schermlezers.
+* Er zijn beperkingen in de datum- en tijdnotatie opgenomen in veldlabels van datumvelden, zodat gebruikers de datum in de juiste notatie kunnen invoeren met het toetsenbord.
 
-* Het Alt-kenmerk is toegevoegd aan sluitpictogrammen om aan te geven dat de gebruiker van een schermlezer met de Tab-toets omgaat.
+   Bijvoorbeeld, `On Time (MM-DD-YYYY HH:mm)`. Hier is MM maand in het formaat van twee cijfers, YYYY is jaar, DD is dag in het formaat van twee cijfers, HH is uur in 24-uurs militair formaat, en mm is minuut.
+
+* Het `X` symbool op de knop om de momenteel geselecteerde tags te verwijderen, wordt nu door schermlezers aangekondigd samen met het aantal geselecteerde tags.
 
 ## AEM Forms {#aem-forms}
 

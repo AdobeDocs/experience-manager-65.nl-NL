@@ -12,7 +12,7 @@ discoiquuid: c5dcc90a-05d2-4701-a625-2b655ad0b458
 docset: aem65
 pagetitle: Deploying eCommerce with hybris
 translation-type: tm+mt
-source-git-commit: d83cd0695f69d82e49b1761df2d8c64b0037e1f9
+source-git-commit: 9e39868768d2fc70f587b18d36042e742d5fae45
 
 ---
 
@@ -48,7 +48,7 @@ Dit is beschikbaar onder de Engelse (Amerikaanse) tak ( `/content/geometrixx-out
 
 ### Technische vereisten - hybrusserver {#technical-requirements-hybris-server}
 
-De hybris-uitbreiding van het eCommerce Integration Framework is bijgewerkt om Hybris 5 (standaard) te ondersteunen, terwijl achterwaartse compatibiliteit met [Hybris 4](/help/sites-developing/hybris.md#developing-for-hybris)behouden blijft.
+De hybris-uitbreiding van het eCommerce Integration Framework is bijgewerkt om Hybris 5 (standaard) te ondersteunen, terwijl achterwaartse compatibiliteit met Hybris 4 behouden blijft <!--[Hybris 4](/help/sites-developing/hybris.md#developing-for-hybris). -->
 
 >[!NOTE]
 >

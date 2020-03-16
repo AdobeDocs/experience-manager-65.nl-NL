@@ -1,13 +1,13 @@
 ---
 title: Opmerkingen bij de release AEM-sites
-description: Opmerkingen bij de release die specifiek zijn voor Adobe Experience Manager 6.4 Sites.
+description: Opmerkingen bij de release die specifiek zijn voor Adobe Experience Manager 6.5 Sites.
 uuid: 676ead61-3d97-4f23-b616-c647d590bc8f
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: f82e9bd4-f7b6-492d-8e02-593e74fa1058
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 57bad4e74b2dfd9e389643bfe58ef25564c5c545
+source-git-commit: e3f32b526d8a619b8bacfc85e7dce4a7bf5d23a7
 
 ---
 
@@ -66,7 +66,7 @@ Zie het volgende voor de verbeteringen van AEM Sites 6.5 in detail:
 * De [lijstweergave](/help/sites-authoring/basic-handling.md#list-view) heeft een nieuwe werkstroomkolom met de status wanneer de pagina zich momenteel in een werkstroom bevindt.
 * In de [pagina-eigenschappen](/help/sites-authoring/editing-page-properties.md)is het nu mogelijk om naar bestaande elementen te bladeren wanneer u een miniatuur toewijst aan de pagina (tabblad Miniatuur).
 
-##  Pagina-editor {#page-editor}
+## Pagina-editor {#page-editor}
 
 * In context bewerken en samenstellen van app-ervaringen van één pagina toestaan die zijn opgebouwd met React en Hoekige client-side componenten die gebruikmaken van de JS SDK (ook wel SPA-editor genoemd)
 * De modus Basisstructuur wordt alleen weergegeven als op de pagina een basispagina is geconfigureerd.
@@ -80,7 +80,7 @@ Zie het volgende voor de verbeteringen van AEM Sites 6.5 in detail:
 * In het rapport Downloaden van middelen worden nu inhoudsfragmenten dienovereenkomstig weergegeven
 * Voeg ondersteuning voor [inhoudsfragmenten toe aan de HTTP-API](/help/assets/assets-api-content-fragments.md) voor middelen via /api.json. Er zijn API&#39;s voor het maken, bijwerken, lezen en verwijderen van inhoudsfragmenten.
 
-## Ervaar fragmenten {#experience-fragments}
+## Ervaringsfragmenten {#experience-fragments}
 
 * De indexering van [Experience Fragments](/help/sites-authoring/experience-fragments.md)is verbeterd. De inhoud van deze fragmenten wordt gevonden op zoek naar pagina&#39;s waar ze worden gebruikt
 * Met de optie [Exporteren naar doel](/help/sites-administering/experience-fragments-target.md) kunt u het ervaringsfragment nu verzenden als JSON (standaard is HTML) of beide
@@ -99,7 +99,7 @@ Zie het volgende voor de verbeteringen van AEM Sites 6.5 in detail:
 * Als u een nieuwe pagina maakt in de bibliotheekstructuur, wordt standaard een zelfstandige pagina gemaakt
 * De eigenschappen van MSM van het gebruik in single-page apps die JS SDK (ook genoemd Redacteur van het KUUROORD) gebruiken
 
-## Starten {#launches}
+## Lanceringen {#launches}
 
 * Nieuwe revisie- en goedkeuringswerkstroom voor introducties en de mogelijkheid om alleen goedgekeurde startpagina&#39;s te promoten
 * Optie Toegevoegd in UI [om te verkiezen om het recht van de Lancering na de bevorderingsstap te schrappen](/help/sites-authoring/launches-promoting.md#promoting-launch-pages)

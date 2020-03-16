@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0d5436c6-1976-496c-b9a7-7dc6e830bb5d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f763359fb333ef6cc8a6748ccfa39ba9aee9ca48
+source-git-commit: e3f32b526d8a619b8bacfc85e7dce4a7bf5d23a7
 
 ---
 
@@ -60,7 +60,7 @@ De oplossing van het Beheer van de Correspondentie steunt twee soorten aan dynam
 
    [ ![Toolbar](assets/advancedediting.png)
 
-   * **Koppeling**: Hypertekstkoppeling invoegen in de tekst. Tik op **[!UICONTROL Koppeling]**, geef de koppeling op in het veld **[!UICONTROL URL]** , verwijder de standaardobjectnaam uit het veld **[!UICONTROL Alt-tekst]** en tik op ![Opslaan](assets/save_icon.svg).
+   * **Koppeling**: Voeg [hypertextkoppeling](#insert-hyperlink) in de tekst in.
    * **Herhalen**: Met Herhalen wordt het verzamelingselement in het gegevenswoordenboek afgedrukt met een scheidingsteken.
    * **Voorwaarde**: Tik om een voorwaarde in te voegen. Voeg op voorwaarde gebaseerde tekst in. Als de voorwaarde waar is, dan is de tekst zichtbaar in brief, anders niet.
    * **Beschrijving** toevoegen: Voeg een aantekening aan een stuk van tekst toe. Dit zijn metagegevens die zichtbaar zijn voor de auteur, maar geen deel van de gemaakte brief.
@@ -131,6 +131,18 @@ De oplossing van het Beheer van de Correspondentie steunt twee soorten aan dynam
 
 1. U kunt inline voorwaarden en herhalingen gebruiken om uw brief in hoge mate contextueel en goed gestructureerd te maken. Zie [Inline-voorwaarden en Herhaling in letters](/help/forms/using/cm-inline-condition.md)voor meer informatie over inline-voorwaarde en herhaling.
 1. Tik op **Opslaan**.
+
+#### Hyperlink invoegen in tekst {#insert-hyperlink}
+
+Voer de volgende stappen uit om een hyperlink in een tekstelement te maken:
+
+1. Selecteer de tekst of het gegevensmodelobject in de teksteditor.
+
+2. Tik op **[!UICONTROL Koppeling]**. Tik op het veld **[!UICONTROL Alt-tekst]** om de bestaande naam of tekst van het gegevensmodel te verwijderen.
+
+3. Geef de URL op en tik op ![Opslaan](assets/save_icon.svg).
+
+![Hyperlink maken in tekstelement](assets/text-create-hyperlink.png)
 
 #### Tekst zoeken en vervangen {#searching-and-replacing-text}
 

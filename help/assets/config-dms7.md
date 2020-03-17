@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9871cbf48a01298ab2b6fb1b79bb290714b84ab1
+source-git-commit: 64fe2634bae6289aa313dd1e5a135d1bdd654dbe
 
 ---
 
@@ -92,8 +92,9 @@ Zie [Installeren van functiepak 18912 voor bulkassemigratie](/help/assets/bulk-i
 
    * **[!UICONTROL Pad naar hoofdmap van bedrijf]**
 
-   * **[!UICONTROL Middelen]** publiceren - de optie **[!UICONTROL Onmiddellijk]** betekent dat wanneer elementen worden geüpload, het systeem de elementen opneemt en de URL/Embed onmiddellijk verschaft. Er is geen tussenkomst van de gebruiker nodig om elementen te publiceren. De optie **[!UICONTROL Bij activering]** betekent dat u het element eerst expliciet moet publiceren voordat een koppeling URL/Embed wordt opgegeven.
-
+   * **[!UICONTROL Middelen]** publiceren - U kunt uit de volgende drie opties kiezen:
+      * **[!UICONTROL Onmiddellijk]** betekent dit dat wanneer elementen worden geüpload, het systeem de elementen opgeeft en direct de URL/Embed levert. Er is geen tussenkomst van de gebruiker nodig om elementen te publiceren.
+      * **[!UICONTROL Bij activering]** betekent dit dat u het element eerst expliciet moet publiceren voordat er een URL/insluitkoppeling wordt opgegeven.
    * **[!UICONTROL Beveiligde voorvertoningsserver]** - hiermee kunt u het URL-pad naar de beveiligde voorvertoningsserver voor vertoningen opgeven. Dat wil zeggen dat AEM na het genereren van uitvoeringen veilig toegang heeft tot de externe dynamische media-uitvoeringen en deze voorvertoning kan bekijken (er worden geen binaire bestanden teruggestuurd naar de AEM-instantie).
 Tenzij u een speciale regeling hebt om de server van uw eigen bedrijf of een speciale server te gebruiken, adviseert Adobe Systems dat u dit het plaatsen zoals gespecificeerd verlaat.
 

@@ -4,7 +4,7 @@ description: Nieuw in Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: ed756d785864131c2e031aec4331388bc057576b
+source-git-commit: 1fde7fc5dd32b5a2a83fe6c01cfa2b24be32a899
 
 ---
 
@@ -31,11 +31,12 @@ Daarnaast bevat AEM 6.5.4.0 verbeteringen voor stijlsystemen. U kunt nu stijlen 
 
 ## AEM Assets {#aem-assets}
 
-### Integratie met Brand Portal via Adobe I/O-console {#assets-integration-bp}
+### AEM-middelen configureren met Brand Portal {#configure-assets-bp}
 
-U kunt AEM-middelen nu configureren met Brand Portal via Adobe I/O-console. De Adobe I/O-console verkrijgt een IMS-token voor toestemming van de Poorthuurder van het merk. Eerder, werd AEM Middelen gevormd met het Portaal van het Merk in Klassieke UI via de Verouderde Gateway OAuth. De configuraties die gebruikmaken van de Legacy OAuth Gateway worden ondersteund tot 6 april 2020. Als u de integratie niet wijzigt, blijven de bestaande configuraties werken.
+Het machtigingskanaal tussen AEM Assets en Brand Portal is gewijzigd. Eerder, werd het Portaal van het Merk gevormd in Klassieke UI via Verouderde Gateway OAuth, die de het symbolenuitwisseling van JWT gebruikt om een token van de Toegang te verkrijgen IMS voor vergunning. AEM Assets is nu geconfigureerd met Brand Portal via Adobe I/O, dat een IMS token aanschaft voor toestemming van uw Pantaarn voor merken.
 
-U kunt een nieuwe integratie maken of uw integratie-instellingen upgraden naar Adobe I/O-console.
+De stappen om AEM Middelen met het Portaal van het Merk te vormen zijn verschillend afhankelijk van uw versie AEM, en of u voor het eerst vormt, of de bestaande configuraties bevordert. Zie AEM-middelen [configureren met Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html) voor meer informatie.
+
 
 ### Verbeteringen voor toegankelijkheid {#accessibility-enhancements}
 

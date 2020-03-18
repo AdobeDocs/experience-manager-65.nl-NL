@@ -3,7 +3,7 @@ title: Ondersteunde indelingen voor middelen
 description: Lijst met bestandsindelingen die worden ondersteund door AEM Assets en functies die worden ondersteund voor elke indeling.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8a701d98fed79648104c39816482ff94997ba2e6
+source-git-commit: 08ea08fc2f8c36d509509f761a76a428d6df7e6a
 
 ---
 
@@ -55,7 +55,7 @@ Rasterindelingen voor afbeeldingen die worden ondersteund voor functies van dyna
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
 | PICT | ✓ |  |  |  |  |
 
- &amp;ast; De samengevoegde afbeelding wordt uit het PSD-bestand geëxtraheerd. Het is een afbeelding die door Adobe Photoshop wordt gegenereerd en die in het PSD-bestand wordt opgenomen. Afhankelijk van de instellingen kan de samengevoegde afbeelding wel of niet de werkelijke afbeelding zijn.
+&amp;ast; De samengevoegde afbeelding wordt uit het PSD-bestand geëxtraheerd. Het is een afbeelding die door Adobe Photoshop wordt gegenereerd en die in het PSD-bestand wordt opgenomen. Afhankelijk van de instellingen kan de samengevoegde afbeelding wel of niet de werkelijke afbeelding zijn.
 
 Naast bovenstaande informatie, moet u rekening houden met het volgende:
 
@@ -188,18 +188,17 @@ De ondersteunde archiefindelingen en de toepasbaarheid van de algemene DAM-workf
 
 ## Overige ondersteunde indelingen {#other-supported-formats}
 
-De toepasbaarheid van algemene DAM-workflows voor een aantal andere bestandsindelingen wordt in de onderstaande tabel beschreven.
+De toepasbaarheid van algemene DAM-workflows voor een aantal andere bestandsindelingen wordt in de onderstaande tabel beschreven. De gebruikelijke DAM-functionaliteit, behalve Dynamic Media Delivery, wordt voor alle bestanden ondersteund.
 
 | Indelingen | Opslag | Versioning | Workflow | Publiceren | Toegangsbeheer | Dynamische levering van media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| * | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | SVG | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | CSS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | VTT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XML | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | JavaScript (indien geconfigureerd met eigen leveringsdomein) |  |  |  |  |  | ✓ |
 
-**** &amp;ast; De andere indelingen worden in DAM ondersteund voor opslag-, versioning-, ACL-, workflow-, publicatie- en metagegevensbeheer.
+**&amp;ast;** De andere indelingen worden in DAM ondersteund voor opslag-, versioning-, ACL-, workflow-, publicatie- en metagegevensbeheer.
 
 ## Ondersteunde MIME-typen {#supported-mime-types}
 

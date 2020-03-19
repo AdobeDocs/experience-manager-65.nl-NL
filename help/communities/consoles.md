@@ -10,16 +10,16 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 5fa9ee8b-5893-4ae9-a986-bfdbb00f355f
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 ---
 
 
 # Communityconsoles {#communities-consoles}
 
-De AEM-consoles, die beschikbaar zijn in de auteursomgeving van het wereldwijde navigatievenster, bieden toegang tot beheertaken zoals
+De AEM-consoles, die beschikbaar zijn in de auteursomgeving van het wereldwijde navigatievenster, bieden toegang tot beheerstaken zoals:
 
-* [Een communitysite maken](sites-console.md)
+* [Een community-site maken](sites-console.md)
 * Groepen [toevoegen](groups.md) die op de site zijn genest
 * Sjablonen voor [communitysites beheren](sites.md)
 * Leden van [gemeenschappen beheren](members.md)
@@ -33,7 +33,7 @@ In de auteursomgeving, na het aanmelden met beheerdervoorrechten, zijn de `Commu
 
 >[!NOTE]
 >
->In de publicatieomgeving wordt op een [communitysite](sites-console.md) een `Administration`menu-item weergegeven wanneer het lid dat is aangemeld de juiste rechten heeft.
+>In de publicatieomgeving wordt op een [communitysite](sites-console.md) een `Administration` menu-item weergegeven wanneer het lid dat is aangemeld de juiste rechten heeft.
 
 ## Globaal navigatievenster {#global-navigation-panel}
 
@@ -60,7 +60,7 @@ Om tot de diverse consoles van Gemeenschappen, van globale navigatie toegang te 
 
 * [Leden, groepen](members.md)
 
-   De leden en de Groepen consoles zijn voor het beheren van communautaire leden en lidgroepen die in publiceren milieu van het auteursmilieu bestaan.
+   De leden en de Groepen consoles zijn voor het beheren van communautaire leden en lidgroepen die in publicatiemilieu van het auteursmilieu bestaan.
 
 * [Rapporten](reports.md)
 

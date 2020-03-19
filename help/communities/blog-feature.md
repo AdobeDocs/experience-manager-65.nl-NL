@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: cf8b3d72-30ba-40ca-ae48-b61abbb28802
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 272eedc1585dbdea315b49d010e4b1d78cedc360
 
 ---
 
 
-# Blogonderdeel{#blog-feature}
+# Blogonderdeel {#blog-feature}
 
 ## Inleiding {#introduction}
 
@@ -35,10 +35,10 @@ De blogfunctie biedt het volgende:
 * Namens samenstellen (een [geprivilegieerd lid](/help/communities/users.md#privileged-members-group) kan inhoud namens een ander lid van de Gemeenschap tot stand brengen)
 * [In de context en bulkmodernisering](/help/communities/moderate-ugc.md) van blogartikelen en commentaar
 
-In deze sectie van de documentatie wordt beschreven
+In dit gedeelte van de documentatie wordt het volgende beschreven:
 
-* toevoegen van de blogfunctie aan een AEM-site
-* configuratie-instellingen voor blogcomponenten
+* De blogfunctie toevoegen aan een AEM-site
+* Configuratie-instellingen voor blogcomponenten
 
 >[!NOTE]
 >
@@ -75,87 +75,168 @@ Selecteer de geplaatste `Blog` component die u wilt openen en selecteer het `Con
 
 Geef op het tabblad **Instellingen** de basisfuncties van de blog op:
 
-* **Miniatuur** van bijlage toestaan Als deze optie is ingeschakeld, wordt een miniatuur van de bijgevoegde afbeelding gemaakt.
+* **Miniatuur van bijlage toestaan**
 
-* **Maximale grootte miniatuur** koppelen Maximale grootte (in pixels) van de miniatuurafbeelding in de bijlage. De standaardwaarde is 800 x 800.
-* **Minimale afbeeldingsgrootte voor miniatuur** Minimale afbeeldingsgrootte (in bytes) voor het genereren van miniaturen voor inline-afbeeldingen. De standaardwaarde is 100000bytes (100kb).
-* **Maximale miniatuurgrootte** Maximale grootte (in pixels) van de miniatuurafbeelding voor inline-afbeelding. De standaardwaarde is 800 x 800.
-* **Geprivilegieerde leden** toestaanAls deze optie is ingeschakeld, mogen alleen geprivilegieerde leden inhoud maken.
-* **Toegestane geprivilegieerde leden** Voeg de geprivilegieerde leden toe die inhoud mogen maken.
-* **Door de gebruiker gegenereerde inhoud blokkeren in de bewerkingsmodus** Auteur (indien ingeschakeld), wordt door de gebruiker gegenereerde inhoud tijdens het bewerken in de auteurmodus geblokkeerd.
+   Als deze optie is ingeschakeld, wordt een miniatuur van de bijgevoegde afbeelding gemaakt.
 
-* **Dagboektitel** De blogtitel die op de pagina wordt weergegeven.
+* **Maximale grootte miniatuur bijvoegen**
+
+   Maximale grootte (in pixels) van de miniatuurafbeelding van de bijlage. De standaardwaarde is 800 x 800.
+
+* **Minimale afbeeldingsgrootte voor miniatuur**
+
+   Minimale afbeeldingsgrootte (in bytes) voor het genereren van miniaturen voor inline-afbeeldingen. De standaardwaarde is 100000bytes (100kb).
+
+* **Maximale miniatuurgrootte**
+
+   Maximale grootte (in pixels) van de miniatuurafbeelding voor inline-afbeelding. De standaardwaarde is 800 x 800.
+
+* **Geprivilegieerde leden toestaan**
+
+   Als deze optie is ingeschakeld, mogen alleen leden met Geprivilegieerde inhoud maken.
+
+* **Toegestane geprivilegieerde leden**
+
+   Voeg de geprivilegieerde leden toe die inhoud mogen maken.
+
+* **Door gebruiker gegenereerde inhoud blokkeren in de bewerkingsmodus van auteur**
+
+   Als deze optie is ingeschakeld, wordt door de gebruiker gegenereerde inhoud geblokkeerd tijdens het bewerken in de ontwerpmodus.
+
+* **Dagboektitel**
+
+   De blogtitel die op de pagina moet worden weergegeven.
 
 >[!NOTE]
 >
 >Met de functie Dagboek wordt automatisch een URL voor de blog gemaakt.
 >Er worden maximaal 50 tekens (met 5 tekens extra voor uniciteit) gebruikt uit de dagboektitel die u hier opgeeft om een URL voor de blog te maken.
 
-* **Journal Description**The blog description.
-* **Onderwerpen per pagina** bepalen het aantal blogberichten/opmerkingen dat per pagina wordt weergegeven. De standaardwaarde is 10.
+* **Dagboekbeschrijving**
 
-* **Gemoderniseerd** Als deze optie is ingeschakeld, moet het plaatsen van blogberichten en opmerkingen worden goedgekeurd voordat deze op een gepubliceerde site worden weergegeven. De standaardinstelling is uitgeschakeld.
+   De blogbeschrijving.
 
-* **Gesloten** Als deze optie is ingeschakeld, wordt de blog gesloten voor nieuwe blogberichten en opmerkingen. De optie Standaard is uitgeschakeld.
+* **Onderwerpen per pagina**
 
-* **Rich Text Editor** Als deze optie is ingeschakeld, kunnen blogberichten en opmerkingen worden ingevoerd met een markering. Standaard is ingeschakeld.
+   Hiermee definieert u het aantal blogberichten/opmerkingen dat per pagina wordt weergegeven. De standaardwaarde is 10.
 
-* **Labelen** toestaan Als deze optie is ingeschakeld, kunnen leden labellabels aan hun post toevoegen (zie tabblad **Tagveld** ). De optie Standaard is uitgeschakeld.
+* **Gematigd**
 
-* **Bestand uploaden** toestaan Als ingeschakeld, toestaan dat bestandsbijlagen worden toegevoegd aan een blogbericht of opmerking. De optie Standaard is uitgeschakeld.
+   Als deze optie is ingeschakeld, moet het plaatsen van blogberichten en opmerkingen worden goedgekeurd voordat deze op een gepubliceerde site worden weergegeven. De standaardinstelling is uitgeschakeld.
 
-* **Maximale bestandsgrootte** alleen relevant als deze `Allow File Uploads` is ingeschakeld. Met dit veld wordt de grootte (in bytes) van een geüpload bestand beperkt. De standaardwaarde is 104857600 (10 MB).
+* **Gesloten**
 
-* **Alleen toegestane bestandstypen** relevant als deze `Allow File Uploads` is ingeschakeld. Een door komma&#39;s gescheiden lijst met bestandsextensies met het &quot;punt&quot;-scheidingsteken. Bijvoorbeeld: .jpg, .jpeg, .png, .doc, .docx, .pdf. Als er bestandstypen zijn opgegeven, mogen de niet opgegeven bestandstypen niet worden geüpload. De standaardinstelling is niet zodanig opgegeven dat** **alle bestandstypen zijn toegestaan.
+   Als deze optie is ingeschakeld, wordt de blog afgesloten met nieuwe blogberichten en opmerkingen. De optie Standaard is uitgeschakeld.
 
-* **Maximale bestandsgrootte** van afbeelding alleen relevant koppelen als Uploaden van bestand toestaan is ingeschakeld. Het maximum aantal bytes dat een geüploade afbeeldingsbestand kan hebben. De standaardwaarde is 2097152****(2 MB).
+* **RTF-editor**
 
-* **Reacties** toestaan Als deze optie is ingeschakeld, kunt u reacties op opmerkingen die op het blogbericht zijn geplaatst toestaan. De optie Standaard is uitgeschakeld.
+   Als deze optie is ingeschakeld, kunnen blogberichten en opmerkingen worden ingevoerd met een markering. Standaard is ingeschakeld.
 
-* **Stemmen** toestaan Als deze optie is ingeschakeld, neemt u de functie Stemmen op in een blogbericht. De optie Standaard is uitgeschakeld.
+* **Tags toestaan**
 
-* **Gebruikers toestaan opmerkingen en onderwerpen** te verwijderen Als deze optie is ingeschakeld, kunnen leden de opmerkingen en blogberichten die ze hebben geplaatst verwijderen. Standaard is** ** uitgeschakeld.
+   Als deze optie is ingeschakeld, kunnen leden labellabels aan hun post toevoegen (zie tabblad **Tagveld** ). De optie Standaard is uitgeschakeld.
 
-* **Volgend** toestaan Als deze optie is ingeschakeld, neemt u de volgende functie op voor blogartikelen, waarmee leden op de [hoogte](/help/communities/notifications.md) kunnen worden gesteld van nieuwe berichten. De optie Standaard is uitgeschakeld.
+* **Uploaden van bestanden toestaan**
 
-* **E-mailabonnementen** toestaan Als deze optie is ingeschakeld, kunnen leden per e-mail op de hoogte worden gesteld van nieuwe berichten ([abonnement](/help/communities/subscriptions.md)). Moet `Allow Following` worden gecontroleerd en [e-mail wordt gevormd](/help/communities/email.md). De optie Standaard is uitgeschakeld.
+   Als deze optie is ingeschakeld, staat u toe dat bestandsbijlagen worden toegevoegd aan een blogbericht of opmerking. De optie Standaard is uitgeschakeld.
 
-* **Badges** weergeven Indien ingeschakeld, verdiende en toegewezen [badges](/help/communities/implementing-scoring.md) bij het blogbericht van een lid weergeven. De optie Standaard is uitgeschakeld.
+* **Max. bestandsgrootte**
+
+   Alleen relevant als `Allow File Uploads` is gecontroleerd. Met dit veld wordt de grootte (in bytes) van een geüpload bestand beperkt. De standaardwaarde is 104857600 (10 MB).
+
+* **Toegestane bestandstypen**
+
+   Alleen relevant als `Allow File Uploads` is gecontroleerd. Een door komma&#39;s gescheiden lijst met bestandsextensies met het &quot;punt&quot;-scheidingsteken. Bijvoorbeeld: .jpg, .jpeg, .png, .doc, .docx, .pdf. Als er bestandstypen zijn opgegeven, mogen de niet opgegeven bestandstypen niet worden geüpload. De standaardinstelling is niet opgegeven, zodat alle bestandstypen zijn toegestaan.
+
+* **Maximale bestandsgrootte afbeelding bijvoegen**
+
+   Alleen relevant als Uploaden van bestand toestaan is ingeschakeld. Het maximum aantal bytes dat een geüploade afbeeldingsbestand kan hebben. De standaardwaarde is 2097152 (2 MB).
+
+* **Reacties toestaan**
+
+   Als deze optie is ingeschakeld, kunt u reacties op opmerkingen op het blogbericht toestaan. De optie Standaard is uitgeschakeld.
+
+* **Stemmen toestaan**
+
+   Als deze optie is ingeschakeld, voegt u de functie Stemmen toe aan een blogbericht. De optie Standaard is uitgeschakeld.
+
+* **Gebruikers toestaan opmerkingen en onderwerpen te verwijderen**
+
+   Als deze optie is ingeschakeld, kunnen leden hun opmerkingen en blogberichten verwijderen. Standaard is** ** uitgeschakeld.
+
+* **Volgen toestaan**
+
+   Als deze optie is ingeschakeld, neemt u de volgende functie op voor blogartikelen, waarmee leden op de [hoogte](/help/communities/notifications.md) kunnen worden gesteld van nieuwe berichten. De optie Standaard is uitgeschakeld.
+
+* **E-mailabonnementen toestaan**
+
+   Als deze optie is ingeschakeld, kunnen leden via e-mail op de hoogte worden gesteld van nieuwe berichten ([abonnement](/help/communities/subscriptions.md)). Moet `Allow Following` worden gecontroleerd en [e-mail wordt gevormd](/help/communities/email.md). De optie Standaard is uitgeschakeld.
+
+* **Badges weergeven**
+
+   Indien ingeschakeld, verdiende en toegewezen [badges](/help/communities/implementing-scoring.md) bij het blogbericht van een lid weergeven. De optie Standaard is uitgeschakeld.
 
 * **Geen reacties ophalen op aanbiedingspagina**
-* **Aanbevolen inhoud** toestaan als deze optie is ingeschakeld, kan het idee worden geïdentificeerd als [aanbevolen inhoud](/help/communities/featured.md). De optie Standaard is uitgeschakeld.
 
-* **Mentie** inschakelen indien ingeschakeld, kunnen geregistreerde gebruikers uit de gebruikersgemeenschap andere geregistreerde leden identificeren (met voornaam, achternaam, gebruikersnaam) en ze labelen met de gebruikelijke syntaxis voor @user-name. De getagde gebruikers ontvangen meldingen over hun vermeldingen.
+* **Aanbevolen inhoud toestaan**
 
-* **Max. aantal meldingen** Beperk het maximum aantal in een artikel toegestane vermeldingen. De standaardwaarde is 10.
+   Als deze optie is ingeschakeld, kan het idee worden geïdentificeerd als [aanbevolen inhoud](/help/communities/featured.md). De optie Standaard is uitgeschakeld.
 
-* **UI-menatiepatroon** Geef de toegestane patroontekenreeks op om de geregistreerde gebruiker in een bericht te labelen (@vermeld). Bijvoorbeeld ~{{familyName}}{{givenName}}.
+* **Menu inschakelen**
+
+   Als deze optie is ingeschakeld, kunnen geregistreerde gebruikers in de gemeenschap andere geregistreerde leden identificeren (met voornaam, achternaam, gebruikersnaam) en ze tags toewijzen met behulp van de algemene syntaxis voor @user-name. De getagde gebruikers ontvangen meldingen over hun vermeldingen.
+
+* **Max. aantal meldingen**
+
+   Beperk het maximum aantal berichten dat in een bericht is toegestaan. De standaardwaarde is 10.
+
+* **Menatiepatroon gebruikersinterface**
+
+   Geef de toegestane patroontekenreeks op om de geregistreerde gebruiker in een bericht te labelen (@genoemd). Bijvoorbeeld ~{{familyName}}{{givenName}}.
 
 #### Tabblad Gebruikersmodernisering {#user-moderation-tab}
 
 Geef op onder het tabblad **Gebruikersmodernisering** de instellingen voor matiging op:
 
-* **Posten** weigeren Als deze optie is ingeschakeld, mogen gematigde leden posten weigeren en voorkomen dat de post op het openbare forum verschijnt. De optie Standaard is uitgeschakeld.
+* **Posten weigeren**
 
-* **Sluit/heropen Onderwerpen** Indien gecontroleerd, kunnen de vertrouwde op lidmoderatoren een onderwerp aan verdere uitgeeft en commentaren sluiten, en kunnen een onderwerp ook heropenen. De optie Standaard is uitgeschakeld.
+   Als deze optie wordt ingeschakeld, zullen de verantwoordelijken van de leden hun functie kunnen ontkennen en voorkomen dat de functie op het openbare forum verschijnt. De optie Standaard is uitgeschakeld.
 
-* **Vlagberichten** Als deze optie is ingeschakeld, kunnen leden onderwerpen of opmerkingen van anderen als ongeschikt markeren. Standaard is uitgeschakeld**.*
+* **Onderwerpen sluiten/opnieuw openen**
 
-* **Lijst** met redenen voor vlagAls deze optie is ingeschakeld, kunnen leden in een vervolgkeuzelijst kiezen waarom zij een onderwerp of opmerking als ongeschikt aanmerken. De optie Standaard is uitgeschakeld.
+   Indien gecontroleerd, kunnen de vertrouwde op lidmoderatoren een onderwerp aan verdere uitgeeft en commentaren sluiten, en kunnen een onderwerp ook heropenen. De optie Standaard is uitgeschakeld.
 
-* **Reden** voor aangepaste vlag Als dit selectievakje is ingeschakeld, kunnen leden hun eigen reden opgeven om een onderwerp of opmerking als ongeschikt te bestempelen. Standaard is uitgeschakeld**.*
+* **Vlagberichten**
 
-* **De Drempel** van de modernisering gaat het aantal tijden in een onderwerp of een commentaar moet door leden worden gemarkeerd alvorens de moderatoren op de hoogte worden gebracht. De standaardwaarde is 1 (één keer).
+   Als deze optie is ingeschakeld, kunnen leden onderwerpen of opmerkingen van anderen als ongeschikt markeren. Standaard is uitgeschakeld**.**
 
-* **Laginglimiet** Voer het aantal keren in dat een onderwerp of opmerking moet worden gemarkeerd voordat het wordt verborgen in de openbare weergave. Indien ingesteld op -1, wordt het gemarkeerde onderwerp of de opmerking nooit verborgen in de openbare weergave. Anders, moet dit aantal groter dan of gelijk aan de Drempel van de Moderatie zijn. De standaardwaarde is 5.
+* **Lijst met redenen voor vlag**
+
+   Als deze optie is ingeschakeld, kunnen leden in een vervolgkeuzelijst kiezen waarom een onderwerp of opmerking niet als ongepast wordt gemarkeerd. De optie Standaard is uitgeschakeld.
+
+* **Reden voor aangepaste vlag**
+
+   Als deze optie is ingeschakeld, kunnen leden hun eigen reden opgeven om een onderwerp of opmerking als ongeschikt te bestempelen. Standaard is uitgeschakeld**.**
+
+* **Moderniseringsdrempel**
+
+   Ga het aantal tijden in een onderwerp of een commentaar moet door leden worden gemarkeerd alvorens moderators worden meegedeeld. De standaardwaarde is 1 (één keer).
+
+* **Limiet voor markering**
+
+   Voer het aantal keren in dat een onderwerp of opmerking moet worden gemarkeerd voordat het wordt verborgen in de openbare weergave. Indien ingesteld op -1, wordt het gemarkeerde onderwerp of de opmerking nooit verborgen in de openbare weergave. Anders, moet dit aantal groter dan of gelijk aan de Drempel van de Moderatie zijn. De standaardwaarde is 5.
 
 #### Tabblad Tagveld {#tag-field-tab}
 
 Geef onder het tabblad **Tagveld** op welke tags kunnen worden toegepast als **Tags** toestaan is ingeschakeld op het tabblad **Instellingen** :
 
-* **Toegestane naamruimten** relevant als deze `Allow Tagging` is ingeschakeld op het tabblad **Instellingen **tab. De tags die kunnen worden toegepast, zijn beperkt tot de tags binnen de geselecteerde naamruimtecategorieën. De lijst met naamruimten bevat &#39;Standaardtags&#39; (de standaardnaamruimte) en &#39;Alle tags opnemen&#39;. De standaardwaarde is niet ingeschakeld, hetgeen betekent dat alle naamruimten zijn toegestaan.
+* **Toegestane naamruimten**
 
-* **Suggestielimiet** Voer het aantal tags in dat moet worden weergegeven als suggestie aan het lid dat naar het forum post. De waarde -1 betekent geen limieten. De standaardwaarde is 0.
+   Relevant als `Allow Tagging` wordt gecontroleerd onder het tabblad **Instellingen **tab. De tags die kunnen worden toegepast, zijn beperkt tot de tags binnen de geselecteerde naamruimtecategorieën. De lijst met naamruimten bevat &#39;Standaardtags&#39; (de standaardnaamruimte) en &#39;Alle tags opnemen&#39;. De standaardwaarde is niet ingeschakeld, hetgeen betekent dat alle naamruimten zijn toegestaan.
+
+* **Suggestiegrenswaarde**
+
+   Voer het aantal tags in dat moet worden weergegeven als suggestie aan het lid dat naar het forum post. De waarde -1 betekent geen limieten. De standaardwaarde is 0.
 
 ### Blogzijbalk configureren {#configuring-blog-sidebar}
 
@@ -165,7 +246,9 @@ Geef onder het tabblad **Dagboekzijbalkinstellingen** de datumnotatie voor archi
 
 ![blog-component-sidebar](assets/blog-component-sidebar.png)
 
-* **Datumnotatie** De notatie die wordt gebruikt voor het weergeven van archieven van blogberichten. Voor de notatie worden plaatsaanduidingen gebruikt die voldoen aan de Java-conventie.
+* **Datumnotatie**
+
+   De indeling die wordt gebruikt om weer te geven voor archieven van blogberichten. Voor de notatie worden plaatsaanduidingen gebruikt die voldoen aan de Java-conventie.
 
    * jjjj : volledig jaar, zoals &quot;2015&quot;
    * jj : kort jaar, zoals &#39;15&#39;
@@ -174,18 +257,23 @@ Geef onder het tabblad **Dagboekzijbalkinstellingen** de datumnotatie voor archi
    * MM: maandnummer, bijvoorbeeld 06
    De standaardwaarde is &quot;jjjj MMMMM&quot;, die bijvoorbeeld &quot;2015 juni&quot; zou weergeven
 
-* **Type** van mening de Titel en type van blogingangen in sidebar te tonen. De keuze is tussen
+* **Type weergave**
+
+   De titel en het type blogberichten die op de zijbalk moeten worden weergegeven. De keuze is tussen
 
    * Auteurs
    * Categorieën
    * Archieven
 
 * **Pad van achtergrondcomponent**
+
    *(Optioneel)* De locatie van de blogbron waaruit blogartikelen moeten worden vermeld. Als deze optie leeg wordt gelaten, wordt de component resourceType gebruikt die op dezelfde pagina wordt weergegeven. `social/journal/components/hbs/journal`
 
-   * for example, `/content/sites/engage/en/blog/jcr:content/content/primary/blog`
+   * Bijvoorbeeld: `/content/sites/engage/en/blog/jcr:content/content/primary/blog`
 
-* **Suggestielimiet** Het aantal blogartikelen dat moet worden weergegeven. De waarde -1 betekent geen limiet. De standaardwaarde is -1.
+* **Suggestiegrenswaarde**
+
+   Het aantal blogartikelen dat moet worden weergegeven. De waarde -1 betekent geen limiet. De standaardwaarde is -1.
 
 ## Ervaring met sitebezoekers {#site-visitor-experience}
 
@@ -199,7 +287,7 @@ Andere vaardigheden hangen af van het feit of de bezoeker van de site een modera
 
 ### Werken met artikelen {#working-with-articles}
 
-Wanneer u een nieuw blogartikel maakt, kunt u
+Wanneer u een nieuw blogartikel maakt, kunt u het volgende doen:
 
 1. Direct publiceren
 1. Een concept publiceren
@@ -217,14 +305,14 @@ Wanneer de aangemelde gebruiker moderator of beheerdersrechten heeft, kunnen zij
 
 Wanneer de aangemelde gebruiker een lid van de gemeenschap of een [geprivilegieerd lid](/help/communities/users.md#privileged-members-group) is (afhankelijk van de configuratie), kunnen deze selecteren `New Article` om een nieuw blogartikel te maken en te plaatsen.
 
-Specifiek kunnen zij
+Zij kunnen met name:
 
-* een nieuw blogartikel maken
-* een nieuw blogartikel plaatsen namens een ander lid
-* commentaar op een blogartikel plaatsen
-* hun eigen blogartikel of commentaar bewerken
-* hun eigen blogartikel of commentaar verwijderen
-* markeren, artikelen van blogs of opmerkingen van anderen
+* Een nieuw blogartikel maken
+* Plaats een nieuw blogartikel namens een ander lid
+* Opmerkingen op een blogartikel plaatsen
+* Uw eigen blogartikel of commentaar bewerken
+* Hun eigen blogartikel of commentaar verwijderen
+* Blogartikelen of opmerkingen van anderen markeren
 
 ![chlimage_1-233](assets/chlimage_1-233.png) ![chlimage_1-234](assets/chlimage_1-234.png)
 

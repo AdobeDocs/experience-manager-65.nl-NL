@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f2ac3d66-cc79-498f-83fb-dd96feb88de2
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 ---
 
@@ -23,8 +23,8 @@ Voor ontwikkelings- en demonstratiedoeleinden is het nodig één auteur en één
 
 Volg de standaard AEM [Aan de slag](../../help/sites-deploying/deploy.md#getting-started) instructies die in
 
-* auteursomgeving op [localhost:4502](http://localhost:4502/)
-* publicatieomgeving op [localhost:4503](http://localhost:4503/)
+* Authoromgeving op [localhost:4502](http://localhost:4502/)
+* Publicatie-omgeving op [localhost:4503](http://localhost:4503/)
 
 voor AEM-gemeenschappen,
 
@@ -51,7 +51,7 @@ Deze zelfstudie maakt een [community-site](overview.md#enablement-community)voor
 
 * [Laatste releases](deploy-communities.md#latest-releases)
 
-Ga naar Aan de slag met [AEM-gemeenschappen](overview.md#engagement-community)voor een zelfstudie waarmee een community-site voor [](getting-started.md)betrokkenheid wordt gemaakt.
+Ga naar Aan de slag met [AEM-gemeenschappen](overview.md#engagement-community)voor een zelfstudie waarmee een community-site [voor betrokkenheid wordt gemaakt](getting-started.md).
 
 ## Functies van Enablement configureren {#configure-enablement-features}
 
@@ -125,8 +125,8 @@ Een vierde gebruiker wordt gecreeerd in het auteursmilieu en toegewezen de rolle
 
 * **ID**: riley
 * **E-mail**: riley.taylor@mailinator.com
-* **Wachtwoord**:password
-* **Wachtwoord** bevestigen:password
+* **Wachtwoord**: password
+* **Wachtwoord** bevestigen: password
 * **Voornaam**: Riley
 * **Achternaam**: Taylor
 
@@ -136,8 +136,8 @@ Een vierde gebruiker wordt gecreeerd in het auteursmilieu en toegewezen de rolle
 
 * **ID**: sidney
 * **E-mail**: sidney.croft@mailinator.com
-* **Wachtwoord**:password
-* **Wachtwoord** bevestigen:password
+* **Wachtwoord**: password
+* **Wachtwoord** bevestigen: password
 * **Voornaam**: Sidney
 * **Achternaam**: Uitsnijden
 
@@ -147,8 +147,8 @@ Een vierde gebruiker wordt gecreeerd in het auteursmilieu en toegewezen de rolle
 
 * **ID**: quin
 * **E-mail**: quinn.harper@mailinator.com
-* **Wachtwoord**:password
-* **Wachtwoord** bevestigen:password
+* **Wachtwoord**: password
+* **Wachtwoord** bevestigen: password
 * **Voornaam**: Quinn
 * **Achternaam**: Harper
 
@@ -161,8 +161,8 @@ Een vierde gebruiker wordt gecreeerd in het auteursmilieu en toegewezen de rolle
 * **Omschrijving**: een steekproefgroep voor het toewijzen van enablement middelen
 * **Leden toevoegen aan groep** &#39;toevoegen&#39;:
 
-   *  riley
-   *  sidney
+   * riley
+   * sidney
 
 * Selecteer **[!UICONTROL Opslaan]**
 
@@ -193,12 +193,12 @@ Maak een gebruiker op de *auteur* die de rol van communautaire beheerder krijgt 
 * Navigeer vanuit de hoofdconsole naar **[!UICONTROL Gereedschappen, Bewerkingen > Beveiliging > Gebruikers]**
 * Selecteer in het menu **[!UICONTROL Bewerken]** de optie Gebruiker **[!UICONTROL toevoegen]**
 
-* In het `Create New User` dialoogvenster
+* In the `Create New User` dialog enter
 
    * **ID&amp;ast;**: sirius
    * **E-mailadres**: sirius.nilson@mailinator.com
-   * **Wachtwoord&amp;ast;**:password
-   * **Wachtwoord&amp;amp bevestigen;ten;**:password
+   * **Wachtwoord&amp;ast;**: password
+   * **Wachtwoord&amp;amp bevestigen;ten;**: password
    * **Voornaam**: Sirius
    * **Achternaam&amp;ast;**: Nilson
 

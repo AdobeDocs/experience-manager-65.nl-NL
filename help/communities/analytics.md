@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: e6fdaf56-402f-418d-96d8-e46bd3ad1e8c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
 
 ---
 
 
-# Analytische configuratie voor functies van Gemeenschappen{#analytics-configuration-for-communities-features}
+# Analytische configuratie voor functies van Gemeenschappen {#analytics-configuration-for-communities-features}
 
 ## Overzicht {#overview}
 
@@ -28,25 +28,25 @@ Bijvoorbeeld, wanneer een lid van een enablement communautaire plaats een videob
 
 Daarnaast is een analyse nodig voor:
 
-* in de publicatieomgeving:
+* In de publicatieomgeving:
 
-   * verslaglegging over de [tendensen in de gemeenschap](/help/communities/trends.md)
-   * sitebezoekers toestaan te sorteren op &#39;&#39;meest bekeken&#39;&#39;, &#39;&#39;meest actief&#39;&#39;, &#39;&#39;meest geliefd&#39;
-   * weergaveaantallen op UGC-lijsten
+   * Rapportage over [trends in de gemeenschap](/help/communities/trends.md)
+   * Toestaan dat sitebezoekers kunnen sorteren op &quot;meest bekeken&quot;, &quot;meest actief&quot;, &quot;meest geliefd&quot;
+   * Tellingen van UGC-lijsten weergeven
 
-* in de ontwerpomgeving:
+* In de ontwerpomgeving:
 
-   * weergave van gegevens over deelname in de [ledenbeheerconsole](/help/communities/members.md) (weergaven, posten, volgen, zoals)
-   * trendoverzicht, videolescore en videoapparaat voor het inschakelen van [resourcerapporten](/help/communities/reports.md)
+   * Weergave van gegevens over deelname in de [ledenbeheerconsole](/help/communities/members.md) (weergaven, posten, volgen, zoals)
+   * Trend summary, video hartslag en video device for enablement resource [reports](/help/communities/reports.md)
 
 Tot de ondersteunde Gemeenschappen behoren:
 
-* [middelen](/help/communities/resources.md)
-* [forum](/help/communities/forum.md)
+* [Middelen inschakelen](/help/communities/resources.md)
+* [Forum](/help/communities/forum.md)
 * [QnA](/help/communities/working-with-qna.md)
-* [blog](/help/communities/blog-feature.md)
-* [bestandsbibliotheek](/help/communities/file-library.md)
-* [kalender](/help/communities/calendar.md)
+* [Blog](/help/communities/blog-feature.md)
+* [Bestandsbibliotheek](/help/communities/file-library.md)
+* [Kalender](/help/communities/calendar.md)
 
 In deze sectie van de documentatie wordt beschreven hoe u een serie Analytics-rapporten kunt koppelen aan de functies van Communities. De basisstappen zijn:
 
@@ -64,12 +64,25 @@ In deze sectie van de documentatie wordt beschreven hoe u een serie Analytics-ra
 
 Voor het configureren van Analytics voor Community-functies moet u samenwerken met uw accountvertegenwoordiger om een Adobe Analytics-account en een [rapportsuite](#adobe-analytics-report-suite-for-video-reporting)in te stellen. Zodra dit is vastgesteld, moet de volgende informatie beschikbaar zijn:
 
-* Het bedrijf noemen dat met de rekening van de Analyse van Adobe verbonden is
-* Gebruikersnaam de aanmeldgebruikersnaam voor de gebruiker die is geautoriseerd om de account Analytics te beheren (hiervoor moeten toegangsrechten voor de webservice worden gebruikt)
+* **Bedrijfsnaam**
 
-* Wachtwoord het login wachtwoord voor de erkende gebruiker
-* Analysegegevens centreren de URL van het datacenter Analytics voor de account
-* Rapport Kies de naam van de te gebruiken analytische rapportsuite
+   Het bedrijf dat is gekoppeld aan de Adobe Analytics-account.
+
+* **Gebruikersnaam**
+
+   De login gebruikersnaam voor de gebruiker die wordt gemachtigd om de rekening van Analytics te beheren (zou de voorrechten van de Toegang van de Dienst van het Web moeten omvatten).
+
+* **Wachtwoord**
+
+   Het aanmeldingswachtwoord voor de geautoriseerde gebruiker.
+
+* **Analysecentrum**
+
+   De URL van het datacenter Analytics voor de account.
+
+* **Rapportsuite**
+
+   De naam van de te gebruiken analytische rapportsuite.
 
 ## Adobe Analytics Report Suite for Video Reporting {#adobe-analytics-report-suite-for-video-reporting}
 
@@ -81,7 +94,7 @@ Door u aan te melden bij [Adobe Marketing Cloud](https://marketing.adobe.com/res
 
    * **`evar1`** via **`evar11`** ingeschakeld
 
-   * kan bestaande eVars opnieuw gebruiken (hernoemen) of nieuwe sites maken die u kunt gebruiken voor communautaire functies
+   * Kan bestaande eVars opnieuw gebruiken (naam wijzigen) of nieuwe sites maken voor gebruik door communautaire functies
 
 * [7 Succesgebeurtenissen](https://marketing.adobe.com/resources/help/en_US/reference/success_event.html) (gebeurtenissen)
 
@@ -90,18 +103,18 @@ Door u aan te melden bij [Adobe Marketing Cloud](https://marketing.adobe.com/res
    * type **`Counter`**
 
       * not **`Counter (no subrelations)`**
-   * kan bestaande gebeurtenissen opnieuw gebruiken (naam wijzigen) of nieuwe gebeurtenissen maken die voor communautaire functies kunnen worden gebruikt
+   * Kan bestaande gebeurtenissen opnieuw gebruiken (naam wijzigen) of nieuwe gebeurtenissen maken die kunnen worden gebruikt voor communautaire functies
 
 
 * [Videobeheer](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/video_analytics_config.html)
 
    * Video Reporting-console
 
-      * enable `Video Core`
+      * Inschakelen `Video Core`
       * Selecteer Opslaan
    * Video Core-meetconsole
 
-      * select `Use Solution Variables`
+      * Selecteer `Use Solution Variables`
       * Selecteer Opslaan
 
 
@@ -121,7 +134,7 @@ Als het gebruiken van een **bestaande rapportreeks**, kan het noodzakelijk zijn 
 >
 **Voordat de communitysite wordt gepubliceerd,** is het belangrijk dat de bestaande toewijzing wordt hersteld door de AEM-variabelen te verplaatsen die automatisch zijn toegewezen aan analytische variabelen wanneer Analytics is ingeschakeld voor een communitysite.
 >
->Zie de sectie over het [aanpassen van de variabele Analytics Mapping](#modifying-analytics-variable-mapping)voor meer informatie over het herstellen van de bestaande toewijzing en het verplaatsen van AEM-variabelen naar andere analytische variabelen.
+>Zie de sectie over het [aanpassen van de variabele Toewijzing](#modifying-analytics-variable-mapping)Analytics voor het herstellen van de bestaande toewijzing en het verplaatsen van AEM-variabelen naar andere analytische variabelen.
 >
 >Als u dit niet doet, kan dit leiden tot onherstelbaar gegevensverlies.
 
@@ -131,9 +144,9 @@ Als er een licentie is voor Video Heartbeat Analytics, `Marketing Cloud Org Id` 
 
 Om Video toe te laten hartslagrapportering na het [vormen van de het rapportreeks van Analytics voor videorapportering](#adobe-analytics-report-suite-for-video-reporting):
 
-* een [Analytics-cloudservice maken](#aem-analytics-cloud-service-configuration)
+* Een [Analytics-cloudservice maken](#aem-analytics-cloud-service-configuration)
 * Analyse [voor een communitysite inschakelen](#enable-analytics-for-a-community-site)
-* associeer de `Marketing Cloud Org Id` met de communautaire plaats
+* Koppel de `Marketing Cloud Org Id` site aan de site van de community
 
 U `Marketing Cloud Org Id` kunt de site invoeren op het moment dat de site wordt gemaakt [of later door de eigenschappen van de site van de](/help/communities/sites-console.md#enablement) community te [wijzigen](/help/communities/sites-console.md#modifying-site-properties) . [](#aem-analytics-cloud-service-configuration)
 
@@ -145,33 +158,39 @@ Als deze optie niet is ingeschakeld, wordt de videohartslagcode nooit geïnstant
 
 ## Configuratie van AEM Analytics Cloud Service {#aem-analytics-cloud-service-configuration}
 
-U kunt als volgt een nieuwe integratie van analysemogelijkheden maken, die Adobe Analytics integreert met de AEM-communitysite en de standaardgebruikersinterface van de auteur gebruikt:
+Een nieuwe integratie voor Analytics maken, waarmee Adobe Analytics wordt geïntegreerd met de AEM-communitysite. Hierbij wordt de standaardgebruikersinterface van de auteur gebruikt:
 
-* van globale navigatie: **Hulpmiddelen, Plaatsing, de Diensten van de Wolk**
-* schuiven omlaag naar **Adobe Analytics**
-* Selecteer nu **configureren** of Configuraties **tonen**
+* Vanuit globale navigatie: **[UIControl Tools > Deployment > Cloud Services]**
+* Omlaag schuiven naar **[UIControl Adobe Analytics]**
+* Selecteer **[UIControl nu]** vormen of **[UIControl toont Configuraties]**
 
 ![chlimage_1-178](assets/chlimage_1-178.png)
 
 ### Configuratiedialoogvenster maken {#create-configuration-dialog}
 
-* Selecteer **[+]** pictogram naast **Beschikbare Configuraties** om een nieuwe configuratie tot stand te brengen
+* Selecteer `[+]` pictogram naast **[Beschikbare Configuraties]** UIControl om een nieuwe configuratie tot stand te brengen
 
 In het dialoogvenster Configuratie maken identificeren de waarden die moeten worden ingevoerd de configuratie.
 
 ![chlimage_1-179](assets/chlimage_1-179.png)
 
-* **Titel**(vereist) Een weergavetoewijzing voor de configuratie.
+* **Titel**
+
+   (Vereist) Een weergavetitel voor de configuratie.
 Voer bijvoorbeeld Community Analytics *inschakelen in*
 
-* **Naam**(optioneel) Indien niet opgegeven, wordt de naam standaard ingesteld op een geldige knooppuntnaam die is afgeleid van de titel.
-Ga bijvoorbeeld naar *gemeenschappen*
+* **Naam**
 
-* *Sjabloon* selecteren `Adobe Analytics Configuration`
+   (Optioneel) Indien niet opgegeven, wordt de naam standaard ingesteld op een geldige knooppuntnaam die is afgeleid van de titel.
+For example, enter *communities*
+
+* **Sjabloonmodel**
+
+   Selecteer `Adobe Analytics Configuration`
 
 * Selecteer **Maken**
 
-   * Hiermee wordt de configuratiepagina gestart en wordt het `Analytics Settings` dialoogvenster geopend
+   * Hiermee start u de configuratiepagina en opent u het `Analytics Settings` dialoogvenster
 
 ### Dialoogvenster Analyse-instellingen {#analytics-settings-dialog}
 
@@ -179,31 +198,45 @@ Het eerste ontwerp van een nieuwe analytische configuratie resulteert in de weer
 
 ![chlimage_1-180](assets/chlimage_1-180.png)
 
-* **Bedrijf** in het bedrijf dat is gekoppeld aan de Adobe Analytics-account
+* **Bedrijf**
 
-* **Gebruikersnaam** van de aanmeldgebruikersnaam voor de gebruiker die gemachtigd is om de account Analytics te beheren
+   Het bedrijf dat is gekoppeld aan de Adobe Analytics-account
 
-* **Wachtwoord** voor het aanmeldingswachtwoord voor de geautoriseerde gebruiker
+* **Gebruikersnaam**
 
-* **Datacenter** selecteert het datacenter Analytics dat als host fungeert voor de rapportsuite
+   De aanmeldingsgebruikersnaam voor de gebruiker die gemachtigd is om de account Analytics te beheren
 
-* **Label voor bijhouden niet als standaard toevoegen aan pagina** leave (uitgeschakeld)
+* **Wachtwoord**
 
-* **Toepassingsmetingsverlof** als standaard gebruiken (niet geselecteerd)
+   Het aanmeldingswachtwoord voor de geautoriseerde gebruiker
 
-* **Pagina-afbeeldingen niet elke avond (auteur)** als standaard importeren (uitgeschakeld)
+* **Datacenter**
+
+   Selecteer het datacenter Analytics dat als host fungeert voor de rapportsuite
+
+* **Trackingtag niet toevoegen aan pagina**
+
+   Als standaard behouden (uitgeschakeld)
+
+* **AppMeasurement gebruiken**
+
+   Als standaard behouden (uitgeschakeld)
+
+* **Pagina-afbeeldingen niet elke avond importeren (auteur)**
+
+   Als standaard behouden (uitgeschakeld)
 
 * **Pagina-afbeeldingen niet elke avond (publiceren)** als standaard importeren (uitgeschakeld)
 
 De instellingen opslaan:
 
-* Selecteer **Verbinding maken met Analytics**
+* Selecteer **Verbinding maken met Analyse**
 
-   * indien niet succesvol,
+   * Indien niet gelukt,
 
-      * verifieer de ingangen geen belangrijke ruimten bevatten
-      * een ander datacenter proberen
-      * contact opnemen met uw accountvertegenwoordiger
+      * Verifieer de ingangen geen belangrijke ruimten bevatten
+      * Probeer een ander datacenter
+      * Neem contact op met uw accountvertegenwoordiger
 
 * Selecteer **OK**
 
@@ -213,16 +246,22 @@ De instellingen opslaan:
 
 Nadat de basisverbinding met Adobe Analytics is geconfigureerd, moet u een framework voor de communitysite maken of bewerken. Het doel van het framework is om AEM-variabelen (Communities feature) toe te wijzen aan variabelen van Analytics (report suite).
 
-* Selecteer `[+]` pictogram naast **Beschikbare kaders** om een nieuw kader tot stand te brengen
+* Selecteer `[+]` pictogram naast **[Beschikbare kaders]** UIControl om een nieuw kader tot stand te brengen
 
 ![chlimage_1-182](assets/chlimage_1-182.png)
 
-* **Titel**(vereist) Een weergavetoewijzing voor het frameworkVoer bijvoorbeeld het communautaire raamwerk *voor activering in*
+* **Titel**
 
-* **Naam**(optioneel) Indien niet opgegeven, wordt de naam standaard ingesteld op een geldige knooppuntnaam die is afgeleid van de titel.
-Ga bijvoorbeeld naar *gemeenschappen*
+   (Vereist) Een weergavetitel voor het frameworkVoer bijvoorbeeld het communautaire *kader voor activering in*
 
-* *Sjabloon* selecteren `Adobe Analytics Framework`
+* **Naam**
+
+   (Optioneel) Indien niet opgegeven, wordt de naam standaard ingesteld op een geldige knooppuntnaam die is afgeleid van de titel.
+For example, enter *communities*
+
+* *Sjabloonmodel*
+
+   Selecteer `Adobe Analytics Framework`
 
 * Selecteer **Maken**
 
@@ -247,12 +286,15 @@ De Sidetrap is niet nodig en kan worden geminimaliseerd zodat het de toegang tot
 
 ![chlimage_1-184](assets/chlimage_1-184.png)
 
-1. Selecteer Item **toevoegen +.**
-Er worden twee vervolgkeuzelijsten weergegeven.
+1. Item **toevoegen + selecteren**
 
-1. Kies `Report suite.`De rapportsuites verbonden aan de rekening van het Bedrijf zijn beschikbaar voor selectie.
+   Er worden twee vervolgkeuzelijsten weergegeven.
 
-1. Selecteer **Ja ** in het dialoogvenster dat wordt geopend:
+1. Kies een `Report suite.`
+
+   De rapportsuites verbonden aan de rekening van het Bedrijf zijn beschikbaar voor selectie.
+
+1. Selecteer **Ja** in het dialoogvenster dat wordt geopend:
 
    ```
    Load default server settings?
@@ -260,6 +302,7 @@ Er worden twee vervolgkeuzelijsten weergegeven.
    ```
 
 1. Kies een `Run Mode`
+
 1. Publiceren **selecteren**
 
 ![chlimage_1-185](assets/chlimage_1-185.png)
@@ -282,7 +325,7 @@ U voegt als volgt de cloudservice Analytics toe terwijl u een nieuwe communitysi
 
 U kunt als volgt de cloudservice Analytics toevoegen aan een [bestaande communitysite](/help/communities/sites-console.md#modifying-site-properties):
 
-* Navigeer naar de **Communities, Sites** Console.
+* Navigeer naar de console **Communities > Sites** .
 * Selecteer het pictogram Site bewerken van de communitysite.
 * Selecteer de INSTELLINGEN.
 * In de sectie Analytics:
@@ -472,17 +515,17 @@ Hier volgt een voorbeeld van standaardtoewijzingen na het volgen van de [aan de 
 
 **Voorbeelden voor eVar-waarden:**
 
-* *a)[MIME-type](https://www.iana.org/assignments/media-types)*:video/mp4
-* *b )[titel](/help/communities/sites-console.md#step13asitetemplate)*van de communautaire site : Geometrixgemeenschappen
-* *c)[communautaire functienaam](/help/communities/functions.md)*:Forum
-* *d)[groepsnaam](/help/communities/creating-groups.md#creating-a-new-group)*: Hiking
-* *e) pad naar inhoud* van een community: /content/sites/community/nl/groups/hiking
-* *f)[Resourcetype](/help/communities/essentials.md)*UGC-component: sociaal/forum/componenten/hbs/onderwerp
-* *g) Titel* van UGC-component: Wikingonderwerpen
-* *h) login (authorizableId)*: aaron.mcdonald@mailinator.com
-* *i) SRP-pad naar UGC*: /content/usergenerated/asi/.../forum/jmtz-topic3or *path of component to follow*: /content/sites/community/nl/jcr:content/content/primary/forum
+* *[MIME-type](https://www.iana.org/assignments/media-types)*: video/mp4
+* *[titel](/help/communities/sites-console.md#step13asitetemplate)*van gemeenschapssite: Geometrixgemeenschappen
+* *[communautaire functienaam](/help/communities/functions.md)*: Forum
+* *[groepsnaam](/help/communities/creating-groups.md#creating-a-new-group)*van de gemeenschap: Hiking
+* *pad naar inhoud* van groep met gemeenschappen: `/content/sites/communities/en/groups/hiking`
+* *[Resourcetype](/help/communities/essentials.md)*UGC-component:`social/forum/components/hbs/topic`
+* *Titel* van UGC-component: Wikingonderwerpen
+* *login (authorizableId)*: `aaron.mcdonald@mailinator.com`
+* *SRP-pad naar UGC*: `/content/usergenerated/asi/.../forum/jmtz-topic3`of *pad van te volgen* component: `/content/sites/communities/en/jcr:content/content/primary/forum`
 
-* *j) pad naar inhoud* van de gemeenschapssite: /content/sites/community/nl
+* *pad naar community-site-inhoud*: `/content/sites/community/en`
 
 ### Variabele-toewijzing Analytics wijzigen {#modifying-analytics-variable-mapping}
 
@@ -593,7 +636,7 @@ Het forumonderwerp is momenteel het enige voorbeeld van deze aanpassing:
 * Navigeer naar [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Bijvoorbeeld [https://localhost:4503/crx/de](https://localhost:4503/crx/de).
 
 * Onder het jcr:content-knooppunt van de taalhoofdmap (navigeer bijvoorbeeld `/content/sites/engage/en/jcr:content),`naar de component die is geconfigureerd voor Analytics-rapportage.
-Bijvoorbeeld, **`analytics/reportConfigs/social_forum_components_hbs_topic`**
+Bijvoorbeeld: **`analytics/reportConfigs/social_forum_components_hbs_topic`**
 
 * Let op de gemaakte tijdsperiodes:
 
@@ -603,7 +646,7 @@ Bijvoorbeeld, **`analytics/reportConfigs/social_forum_components_hbs_topic`**
 
 * Let op het `total`knooppunt.
 
-   * Als u de eigenschap **`interval`**3 wijzigt, wordt het interval van de rapportimportmodule genegeerd.
+   * Het wijzigen van het **`interval`** bezit treedt het interval van de Importeur van het Rapport met voeten.
    * De waarde is in seconden en wordt ingesteld op 4 uur (14400 seconden).
 
 ![chlimage_1-192](assets/chlimage_1-192.png)
@@ -615,6 +658,6 @@ Adobe Analytics biedt API&#39;s waarmee u gebruikersgegevens kunt openen, export
 ## Bronnen {#resources}
 
 * Adobe Marketing Cloud: Help en referentie [Analytics](https://marketing.adobe.com/resources/help/en_US/reference/)
-* AEM: Integreren [met Adobe Analytics](/help/sites-administering/adobeanalytics.md)
+* AEM: [Integrating with Adobe Analytics](/help/sites-administering/adobeanalytics.md)
 * AEM: [Analyse met externe providers](/help/sites-administering/external-providers.md)
 

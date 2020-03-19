@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 216cfb3e-777e-4773-afba-749debdca000
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 5b8b1544645465d10e7c2018364b6a74f1ad9a8e
 
 ---
 
 
-# Opmerkingen gebruiken{#using-comments}
+# Opmerkingen gebruiken {#using-comments}
 
 ## Inleiding {#introduction}
 
@@ -24,8 +24,8 @@ De functie voor opmerkingen wordt gebruikt om bezoekers die zich hebben aangemel
 
 In het document wordt beschreven:
 
-* toevoegen `Comments`aan een pagina.
-* configuratie-instellingen voor de `Comments`component.
+* Toevoegen `Comments`aan een pagina.
+* De montages van de configuratie voor de `Comments`component.
 
 >[!NOTE]
 >
@@ -81,7 +81,7 @@ Geef op onder het tabblad **Opmerkingen** op hoe bezoekers opmerkingen invoeren.
 
 * **Toegestane bestandstypen**
 
-   Alleen relevant als Uploaden van bestand toestaan is ingeschakeld. Een door komma&#39;s gescheiden lijst met bestandsextensies met het puntscheidingsteken. Bijvoorbeeld: .jpg, .jpeg, .png, .doc, .docx, .pdf. Als er bestandstypen zijn opgegeven, zijn deze niet toegestaan. De standaardinstelling is niet zodanig opgegeven dat** **alle bestandstypen zijn toegestaan.
+   Alleen relevant als Uploaden van bestand toestaan is ingeschakeld. Een door komma&#39;s gescheiden lijst met bestandsextensies met het puntscheidingsteken. Bijvoorbeeld: .jpg, .jpeg, .png, .doc, .docx, .pdf. Als er bestandstypen zijn opgegeven, zijn deze niet toegestaan. De standaardinstelling is niet opgegeven, zodat alle bestandstypen zijn toegestaan.
 
 * **RTF-editor**
 
@@ -101,9 +101,11 @@ Geef op onder het tabblad **Opmerkingen** op hoe bezoekers opmerkingen invoeren.
 
 #### Tabblad Gebruikersmodernisering {#user-moderation-tab}
 
-Geef op onder het tabblad **Moderatie gebruiker ** op hoe de geposte opmerkingen worden beheerd. Voor meer informatie, zie het [Modereren van Gebruiker Gegenereerde Inhoud](/help/communities/moderate-ugc.md).
+Geef op onder het tabblad **Gebruikersmodernisering** op hoe de geposte opmerkingen worden beheerd. Voor meer informatie, zie het [Modereren van Gebruiker Gegenereerde Inhoud](/help/communities/moderate-ugc.md).
 
-* **Pre-Moderation** Als deze optie is ingeschakeld, moeten opmerkingen worden goedgekeurd voordat ze op een publicatiesite worden weergegeven. Standaard is uitgeschakeld.
+* **Pre-moderatie**
+
+   Als deze optie is ingeschakeld, moeten opmerkingen worden goedgekeurd voordat ze op een publicatiesite worden weergegeven. Standaard is uitgeschakeld.
 
 * **Opmerkingen verwijderen**
 
@@ -139,7 +141,7 @@ Geef op onder het tabblad **Moderatie gebruiker ** op hoe de geposte opmerkingen
 
 #### Tabblad Instellingen sorteren {#sort-settings-tab}
 
-Geef onder het tabblad **Instellingen sorteren **op hoe de geposte opmerkingen moeten worden gesorteerd wanneer ze worden weergegeven.
+Geef op onder het tabblad **Sorteerinstellingen** op hoe de geposte opmerkingen worden gesorteerd wanneer ze worden weergegeven.
 
 * **Veld sorteren**
 
@@ -155,19 +157,19 @@ Door het Type van Middel van de Commentaar te veranderen, produceert het comment
 
 Zodra de types van douanemiddelen gekend zijn, ga de Wijze [van het](/help/sites-authoring/default-components-designmode.md) Ontwerp in en klik de geplaatste `Comments` component tweemaal om een dialoog met een extra lusje te openen.
 
-Geef onder het tabblad **Brontypen **het aangepaste resourceType op voor nieuwe instanties van de `Comments or Voting`componenten:
+Onder het lusje van de Types **van Middel, specificeer douane resourceType voor nieuwe instanties van de** `Comments or Voting`componenten:
 
 ![chlimage_1-144](assets/chlimage_1-144.png)
 
 * **Type bron van opmerking**
 
-   Navigeer naar het resourceType van een uitgebreide `comment`component (enige commentaar) in /apps. Bijvoorbeeld, `/apps/social/commons/components/hbs/comments/comment`
+   Navigeer naar het resourceType van een uitgebreide `comment`component (enige commentaar) in /apps. Bijvoorbeeld: `/apps/social/commons/components/hbs/comments/comment`
 
    Deze bron identificeert het resourceType van UGC die wordt gecreeerd wanneer een bezoeker een commentaar plaatst.
 
 * **Type stembron**
 
-   Navigeer aan resourceType van een uitgebreide `voting`component in /apps. Bijvoorbeeld, `/apps/social/components/hbs/voting`
+   Navigeer aan resourceType van een uitgebreide `voting`component in /apps. Bijvoorbeeld: `/apps/social/components/hbs/voting`
 
    Dit middel identificeert het middeltype van UGC die wordt gecreeerd wanneer een bezoeker een stem plaatst.
 
@@ -185,10 +187,10 @@ Wanneer de ondertekende binnen gebruiker moderator of beheerdervoorrechten heeft
 
 Wanneer de bezoeker van de site zich heeft aangemeld, kunnen deze, afhankelijk van de configuratie
 
-* een nieuwe opmerking plaatsen
-* hun eigen opmerking bewerken
-* hun eigen opmerking verwijderen
-* opmerkingen van anderen markeren
+* Een nieuwe opmerking plaatsen
+* Een eigen opmerking bewerken
+* Een eigen opmerking verwijderen
+* Opmerkingen van anderen markeren
 
 #### Anoniem {#anonymous}
 

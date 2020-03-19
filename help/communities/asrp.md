@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 3e81b519-57ca-4ee1-94bd-7adac4605407
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
 
 ---
 
 
-# ASRP - Adobe Storage Resource Provider{#asrp-adobe-storage-resource-provider}
+# ASRP - Adobe Storage Resource Provider {#asrp-adobe-storage-resource-provider}
 
 ## Info over ASRP {#about-asrp}
 
@@ -45,26 +45,28 @@ De console [van de Configuratie van de](/help/communities/srp-config.md) Opslag 
 
 **Instantie van AEM-auteur:**
 
-* Selecteer** Adobe Storage Resource Provider (ASRP) in de globale navigatie (Tools, Communities, Storage Configuration).**
+* Navigeer vanuit de globale navigatie naar **[UIControl Tools > Communities > Storage Configuration]** en selecteer **[UIControl Adobe Storage Resource Provider (ASRP)]**.
 
 ![chlimage_1-30](assets/chlimage_1-30.png)
 
 De volgende informatie is afkomstig uit het inrichtingsproces:
 
-* **URL datacenter. **Pull-down om het productiecentrum te selecteren dat door uw accountvertegenwoordiger wordt geïdentificeerd.
-* **Standaardrapportsuite. **Voer de naam van de standaardrapportsuite in.
-* **Consumentencode**. Voer de sleutel voor de consument in.
-* **Geheim. **Voer het geheim in.
-* Selecteer **Verzenden.**
+* **URL** datacenter: Kies het productiecentrum dat door uw accountvertegenwoordiger is geïdentificeerd.
+* **Standaardrapportsuite**: Ga de naam van de standaardrapportreeks in.
+* **Consumentencode**: Voer de sleutel voor de consument in.
+* **Geheim**: Voer het geheim in.
+* Selecteer **Verzenden**.
 
 De publicatie-instanties voorbereiden:
 
-* [de cryptosleutel repliceren](#replicate-the-crypto-key)
-* [repliceer de configuratie](#publishing-the-configuration)
+* [De cryptotoets dupliceren](#replicate-the-crypto-key)
+* [De configuratie dupliceren](#publishing-the-configuration)
 
 Na het voorleggen van de configuratie, test de verbinding:
 
-* Selecteer **Config** testen. Voor elke auteur en publiceer instantie, test de verbinding aan het gegevenscentrum van de console van de Configuratie van de Opslag.
+* Selecteer **Config** testen.
+
+   Voor elke auteur en publiceer instantie, test de verbinding aan het gegevenscentrum van de console van de Configuratie van de Opslag.
 
 * Zorg ervoor dat de site-URL&#39;s voor profielgegevens vanuit het datacenter routeerbaar zijn door koppelingen [te extern](#externalize-links)maken.
 
@@ -92,20 +94,19 @@ De identieke configuratie beschikbaar stellen in de publicatieomgeving:
 
 Instantie van AEM-auteur:
 
-* Navigeren van hoofdmenu naar `Tools > Operations > Replication.`
-* Selecteer Boom **activeren.**
-* **Startpad:
-**blader aan /etc/socialconfig/srpc/
-* Schakel **Alleen gewijzigd uit.**
-* Selecteer **Activeren.**
+* Navigeer van hoofdmenu aan **[Hulpmiddelen UIControl > Verrichtingen > Replicatie]**.
+* Boomstructuur **activeren selecteren**
+* **Startpad**: bladeren naar `/etc/socialconfig/srpc/`
+* Selectie **alleen gewijzigd opheffen**
+* Selecteer **Activeren**
 
 ## Upgrade uitvoeren vanaf AEM 6.0 {#upgrading-from-aem}
 
 >[!CAUTION]
 >
->Als u ASRP op een gepubliceerde communautaire plaats toelaat, is om het even welke UGC die reeds in [](/help/communities/jsrp.md)JCR wordt opgeslagen niet meer zichtbaar, aangezien er geen synchronisatie van gegevens tussen opslag op-gebouw en wolkenopslag is.
+>Als u ASRP op een gepubliceerde communautaire plaats toelaat, is om het even welke UGC die reeds in [JCR](/help/communities/jsrp.md) wordt opgeslagen niet meer zichtbaar, aangezien er geen synchronisatie van gegevens tussen on-premise opslag en wolkenopslag is.
 
-**`AEM Communities Extension`**werd eerder in de sociale gemeenschappen van AEM 6.0 geïntroduceerd als cloudservice. Vanaf AEM 6.1 Communities, is geen wolkenconfiguratie noodzakelijk, eenvoudig uitgezocht ASRP van de console [van de](/help/communities/srp-config.md)opslagconfiguratie.
+**`AEM Communities Extension`** voorheen in de sociale gemeenschappen van AEM 6.0 geïntroduceerd als cloudservice. Vanaf AEM 6.1 Communities, is geen wolkenconfiguratie noodzakelijk, eenvoudig uitgezocht ASRP van de console [van de](/help/communities/srp-config.md)opslagconfiguratie.
 
 Vanwege de nieuwe opslagstructuur is het nodig de [upgradeinstructies](/help/communities/upgrade.md#adobe-cloud-storage) te volgen wanneer de overstap van sociale gemeenschappen naar Gemeenschappen wordt verbeterd.
 
@@ -142,6 +143,6 @@ Op alle auteurs en publiceer AEM-instanties, keert u terug naar de opslagconfigu
 
 In JCR, als [/etc/socialconfig](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/):
 
-* bevat geen [srpc](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) knoop, betekent het dat de opslagleverancier JSRP is.
+* Bevat geen [srpc](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) knoop, betekent het dat de opslagleverancier JSRP is.
 * Als de srpc knoop bestaat en knoop [standaardconfiguratie](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration)bevat, bepalen de eigenschappen van de standaardconfiguratie ASRP om de standaardleverancier te zijn.
 

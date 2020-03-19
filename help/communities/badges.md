@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 135b3077-5343-4888-858d-de5e9b1d4b04
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 272eedc1585dbdea315b49d010e4b1d78cedc360
 
 ---
 
 
-# Badges-console{#badges-console}
+# Badges-console {#badges-console}
 
 ## Info Badges {#about-badges}
 
@@ -26,15 +26,15 @@ De console van de Badges van de Gemeenschappen verstrekt de capaciteit om douane
 
 Badges die een lid van de gemeenschap verdient of toegewezen krijgt, worden samen met zijn naam en avatar op de volgende locaties weergegeven:
 
-* profielen
-* [forums](/help/communities/forum.md)
+* Profielen
+* [Forums](/help/communities/forum.md)
 * [QnA](/help/communities/working-with-qna.md)
-* [spelersborden](/help/communities/enabling-leaderboard.md)
-* [ideatie](/help/communities/ideation-feature.md)
+* [Leaderboards](/help/communities/enabling-leaderboard.md)
+* [Ideatie](/help/communities/ideation-feature.md)
 
 In de auteursomgeving, om de console van Badges te bereiken
 
-* van globale navigatie: **Gereedschappen, Gemeenschappen, Badges**
+* Navigeer vanuit de globale navigatie naar **[UIControl Tools > Communities > Badges]**
 
 Op deze console worden de badges weergegeven die momenteel beschikbaar zijn en waaruit nieuwe badges kunnen worden toegevoegd.
 
@@ -48,13 +48,21 @@ Als het publicatiemilieu een landbouwbedrijf van uitgevers is, is het noodzakeli
 
 ![chlimage_1-124](assets/chlimage_1-124.png)
 
-* **Upload afbeelding**(*vereist*) Een afbeelding met een badge met een aanbevolen grootte van 32 x 32 pixels bij 72 dpi in de JPEG- of PNG-indeling.
+* **Afbeelding uploaden**
 
-* **Naam**(*vereist*) De naam van het badge. Dit is de standaardnaam `Display Name` en de naam van het knooppunt in de repository. Als het knooppunt geen geldige naam voor een opslagplaats `Name` is, wordt het gewijzigd.
+   (*Vereist*) Een badge-afbeelding met een aanbevolen grootte van 32 x 32 pixels bij 72 dpi in de JPEG- of PNG-indeling.
 
-* **Weergavenaam**(*optioneel*) De naam die voor de badge in de gebruikersinterface moet worden weergegeven. De standaardinstelling is de ongewijzigde tekst die voor de `Name`code wordt ingevoerd.
+* **Naam**
 
-* **Beschrijving**(*optioneel*) Een beschrijving van de badge.
+   (*Vereist*) De badge name. Dit is de standaardnaam `Display Name` en de naam van het knooppunt in de repository. Als het knooppunt geen geldige naam voor een opslagplaats `Name` is, wordt het gewijzigd.
+
+* **Weergavenaam**
+
+   (*Optioneel*) De naam die voor de badge in de gebruikersinterface moet worden weergegeven. De standaardinstelling is de ongewijzigde tekst die voor de `Name`code wordt ingevoerd.
+
+* **Beschrijving**
+
+   (*Optioneel*) Een beschrijving van de badge.
 
 ## Additional Information {#additional-information}
 

@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: cc72581f0de6f47cd1d7e207f228e64ba7c9e842
+source-git-commit: cc3cb8732e2c0b4a7275ec302517791a5babdd42
 
 ---
 
@@ -41,6 +41,12 @@ Enkele belangrijke functies en verbeteringen die zijn geïntroduceerd in AEM 6.5
 * [Verbeterde](new-features-latest-service-pack.md#accessibility-enhancements) toegankelijkheid in de middelen van Experience Manager.
 
 * De ingebouwde opslagplaats (Apache Jackrabbit Oak) wordt bijgewerkt naar versie 1.10.8.
+
+* U kunt selectieve inhoudsubstructuren nu synchroniseren met *Dynamische Media - wijze* Scene7 in plaats van alle beschikbare bij `content/dam`.
+
+* Integratie van formuliergegevensmodellen met SOAP-webservice ondersteunt nu keuzegroepen of kenmerken voor elementen.
+
+* De invoer of de output van de ZEEP en complexe gegevensstructuren steunen nu Dynamische Vervanging van de Groep.
 
 Voor een volledige lijst van eigenschappen, zeer belangrijke hoogtepunten, zeer belangrijke eigenschappen die in vorige AEM 6.5 de dienstpakken worden geïntroduceerd, zie [Nieuw in de Manager van de Ervaring van Adobe 6.5 Service Pack 4](new-features-latest-service-pack.md).
 

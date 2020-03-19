@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 26715b94-e2ea-4da7-a0e2-3e5a367ac1cd
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 ---
 
@@ -27,8 +27,8 @@ Nu de nieuwe site van de community en de bijbehorende bronnen en leerpaden zijn 
 
 Begin door naar de weergegeven URL te bladeren wanneer u de site maakt, maar op de publicatieserver, bijvoorbeeld
 
-* auteur URL = [http://localhost:4502/content/sites/enable/en.html](http://localhost:4502/content/sites/enable/en.html)
-* publish URL = [http://localhost:4503/content/sites/enable/en.html](http://localhost:4503/content/sites/enable/en.html)
+* Auteur-URL = [http://localhost:4502/content/sites/enable/en.html](http://localhost:4502/content/sites/enable/en.html)
+* URL publiceren = [http://localhost:4503/content/sites/enable/en.html](http://localhost:4503/content/sites/enable/en.html)
 
 Als de [standaardstartpagina is ingesteld](enablement-create-site.md#changethedefaulthomepage), kunt u de site starten door naar [http://localhost:4503/](http://localhost:4503/) te bladeren.
 
@@ -36,7 +36,7 @@ Wanneer de bezoeker van de site voor het eerst op de gepubliceerde site aankomt,
 
 **http://localhost:4503/content/sites/enable/en.html**
 
-![chlimage_1-432](assets/chlimage_1-433.png)
+![chlimage_1-433](assets/chlimage_1-433.png)
 
 ## Anonieme sitebezoeker {#anonymous-site-visitor}
 
@@ -161,7 +161,7 @@ De homepage wordt geïdentificeerd door het eerste menupunt, Toewijzingen. Quinn
 
 ### Beheer {#administration}
 
-Wat er is, is activiteit door de twee studenten, `Riley Taylor` en het `Sidney Croft. By s`selecteren van de `Administration`verbinding om tot de Console van de Moderatie toegang te hebben, kan Quinn de [bulkmoderatieconsole](moderation.md) gebruiken om hun posten te matigen.
+Wat er is, is activiteit door de twee leerlingen, `Riley Taylor` en `Sidney Croft`. Door de `Administration` verbinding te selecteren om tot de Console van de Moderatie toegang te hebben, kan Quinn de [bulkmoderatieconsole](moderation.md) gebruiken om hun posten te matigen.
 
 Als u de pictogramschakelopties voor het zijpaneel selecteert, worden de filters geopend waarmee wordt gezocht in community-inhoud.
 
@@ -203,8 +203,8 @@ Met een kleine activiteit en interactie met de Middelen bij publiceren, is het b
 * Aanmelden met beheerdersrechten
 * Navigeer van het belangrijkste menu aan **[!UICONTROL Gemeenschappen > Middelen]**
 * Selecteer de `Enablement Tutorial` site
-* Selecteer het `Report`pictogram voor een samenvatting van alle Middelen
-* Selecteer een Middel en dan het `Report`pictogram voor een rapport over dat Middel
+* Selecteer het `Report` pictogram voor een overzicht van alle Middelen
+* Selecteer een Middel en dan het `Report` pictogram voor een rapport over dat Middel
 
 Het is waarschijnlijk te vroeg om gegevens van Adobe Analytics weer te geven. Het kan 1 tot 12 uur duren voordat deze gegevens worden weergegeven. Standaard SCORM-rapportage is echter al beschikbaar.
 
@@ -218,7 +218,7 @@ Het is waarschijnlijk te vroeg om gegevens van Adobe Analytics weer te geven. He
 
 * Kaart openen `Enablement Tutorial`
 * Kaart openen `Ski Lessons`
-* `select Report, User Report`
+* Selecteer `Report > User Report`
 
 ![chlimage_1-444](assets/chlimage_1-444.png)
 

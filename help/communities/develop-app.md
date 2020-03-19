@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 ---
 
@@ -30,9 +30,9 @@ De eerste stap bestaat uit het toevoegen van een eigenschap van het type resourc
 CRXDE Lite gebruiken:
 
 <!--Resolve steps below-->
-    * Naam: ` sling:resourceSuperType&#39;
-    * Type: &quot;String&quot;
-    * Value: &quot;foundation/components/page&quot;
+    Naam: ` sling:resourceSuperType&#39;
+    Type: &quot;String&quot;
+    Waarde: &quot;foundation/components/page&quot;
 
 1. Klik op groen **[!UICONTROL [+]Toevoegen]**
 1. Klik op Alles **[!UICONTROL opslaan]**
@@ -86,9 +86,9 @@ CRXDE Lite gebruiken:
 
    Aan opstelling voor creatie, bedekking `body.jsp` met een lokaal manuscript en omvat een paragraafsysteem (parsys) in het lichaam:
 
-   1. navigeren naar `/apps/an-scf-sandbox/components`
+   1. Ga naar `/apps/an-scf-sandbox/components`
    1. Selecteer het `playpage`knooppunt
-   1. klik met de rechtermuisknop en selecteer `Create > Create File...`
+   1. Klik met de rechtermuisknop en selecteer `Create > Create File...`
 
       * Naam: **body.jsp**
    1. Klik op Alles **[!UICONTROL opslaan]**
@@ -174,4 +174,4 @@ Wijzig de URL van de browser in de hoofdpagina: [http://localhost:4502/editor.ht
 
 Als de site eenmaal is gepubliceerd, wordt het bladeren naar de hoofdpagina op een publicatie-instantie omgeleid naar de Engelse pagina.
 
-De laatste stap vóór het spelen met de gemeenschappenSCF componenten moet een Omslag van de Bibliotheek van de Cliënt (clientlibs) toevoegen... . **[](add-clientlibs.md)**
+De laatste stap vóór het spelen met de gemeenschappenSCF componenten moet een Omslag van de Bibliotheek van de Cliënt (clientlibs) toevoegen.... [Clienlibs toevoegen](add-clientlibs.md)

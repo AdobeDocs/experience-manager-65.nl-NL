@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a777a3f1-b39f-4d90-b9b6-02d3e321a86f
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: e8d8bf89971d3d9d5ec150308dda247aa53c77bb
 
 ---
 
@@ -118,7 +118,7 @@ Wanneer u de handleiding gebruikt op een publicatie-instantie, kunt u de compone
 
 >[!NOTE]
 >
->Houd er rekening mee dat als SRP standaard is ingesteld op [JSRP](jsrp.md), UGC die is ingevoerd op de publicatieinstantie alleen zichtbaar is op publicatie en *not *niet zichtbaar zal zijn vanaf de [moderatieconsole](moderate-ugc.md) op de auteurinstantie.
+>Houd er rekening mee dat als SRP standaard op [JSRP](jsrp.md)blijft staan, UGC die op de publicatieinstantie is ingevoerd, alleen zichtbaar is op de publicatie-instantie en *niet* zichtbaar is vanaf de [moderatieconsole](moderate-ugc.md) op de auteurinstantie.
 
 ## Client-Side bibliotheken {#client-side-libraries}
 
@@ -152,7 +152,7 @@ De component comments als voorbeeld gebruiken voor de auteur of de publicatie-in
 
 1. Selecteer het `jcr:content` knooppunt van de component
 
-   Bijvoorbeeld, `/content/community-components/en/comments/jcr:content`
+   Bijvoorbeeld: `/content/community-components/en/comments/jcr:content`
 
 1. Een eigenschap toevoegen
 

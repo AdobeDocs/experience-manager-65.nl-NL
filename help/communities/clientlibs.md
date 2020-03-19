@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 68ce47c8-a03f-40d6-a7f3-2cc64aee0594
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 5b8b1544645465d10e7c2018364b6a74f1ad9a8e
 
 ---
 
 
-# Clientlibs voor Community-componenten{#clientlibs-for-communities-components}
+# Clientlibs voor Community-componenten {#clientlibs-for-communities-components}
 
 ## Inleiding {#introduction}
 
@@ -65,22 +65,22 @@ Gebruik [CRXDE|Lite](#using-crxde-lite) om een bestaande cliëntlibslist voor ee
 
 Om een clientlib voor een communautaire plaats toe te voegen gebruikend [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
 
-* surf naar [https://&lt;server>:&lt;port>/crx/de](https://localhost:4502/crx/de)
+* Ga naar [https://&lt;server>:&lt;port>/crx/de](https://localhost:4502/crx/de)
 * Zoek het `clientlibslist` knooppunt voor de pagina waaraan u de component wilt toevoegen
 
    * `/content/sites/sample/en/page/jcr:content/clientlibslist`
 
-* met geselecteerd `clientlibslist` knooppunt
+* Met geselecteerde `clientlibslist` node
 
-   * de eigenschap String[] zoeken `scg:requiredClientLibs`
-   * selecteren om toegang te krijgen `Value` tot het dialoogvenster String-array
+   * De eigenschap String[] zoeken `scg:requiredClientLibs`
+   * Selecteer de instantie `Value` voor toegang tot het dialoogvenster String-array
 
-      * indien nodig omlaag schuiven
+      * Indien nodig omlaag schuiven
       * Selecteer + om een nieuwe clientbibliotheek in te voeren
 
-         * herhalen om meer clientbibliotheken toe te voegen
-      * Selecteer** OK*
-   * Selecteer Alles **opslaan**
+         * Herhalen om meer clientbibliotheken toe te voegen
+      * Selecteer **OK**
+   * Alles **opslaan selecteren**
 
 
 

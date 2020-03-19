@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: e1b5c25d-cbdd-421c-b81a-feb6039610a3
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
 
 ---
 
@@ -50,10 +50,10 @@ In deze zelfstudie wordt ervan uitgegaan dat u één AEM-auteur en één AEM-pub
 
 Hier volgen enkele handige koppelingen voor ontwikkelaars die nog niet bekend zijn met het AEM-platform:
 
-* [Aan de slag](../../help/sites-deploying/deploy.md#getting-started) - voor het implementeren van AEM-instanties
+* [Aan de slag](../../help/sites-deploying/deploy.md#getting-started): voor het implementeren van AEM-instanties
 
-   * [De basisbeginselen](../../help/sites-developing/the-basics.md) - Voor ontwikkelaars van websites en functies
-   * [Eerste stappen voor auteurs](../../help/sites-authoring/first-steps.md) - Voor het ontwerpen van pagina-inhoud
+   * [De basisbeginselen](../../help/sites-developing/the-basics.md): voor ontwikkelaars van websites en functies
+   * [Eerste stappen voor auteurs](../../help/sites-authoring/first-steps.md): voor het ontwerpen van pagina-inhoud
 
 ## De ontwikkelomgeving van CRXDE Lite gebruiken {#using-crxde-lite-development-environment}
 
@@ -71,9 +71,9 @@ Nadat u zich hebt aangemeld met beheerdersrechten, kunt u op verschillende manie
 
 3. Blader rechtstreeks naar `CRXDE Lite`: `<server>:<port>/crx/de`
 
-   Bijvoorbeeld op een lokale auteur-instantie: ` [http://localhost:4502/crx/de](http://localhost:4502/crx/de)`
+   Bijvoorbeeld op een lokale auteur-instantie: [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 
-Om met CRXDE Lite te werken, moet u binnen met ontwikkelaar of beheerdervoorrechten ondertekenen. Voor de standaardinstantie localhost kunt u zich aanmelden met
+Als u met CRXDE Lite wilt werken, moet u zich aanmelden met ontwikkelaar- of beheerdersprikkels. Voor de standaardinstantie localhost kunt u zich aanmelden met
 
 * `username: admin`
 * `password: admin`

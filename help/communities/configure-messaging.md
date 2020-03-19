@@ -11,20 +11,20 @@ content-type: reference
 discoiquuid: 9d952604-f9ef-498f-937b-871817c80226
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: e8d8bf89971d3d9d5ec150308dda247aa53c77bb
 
 ---
 
 
-# Berichtenonderdeel{#messaging-feature}
+# Berichtenonderdeel {#messaging-feature}
 
-Naast de openbaar zichtbare interacties die in forums en commentaren voorkomen, laat de overseineneigenschap van** **AEM Gemeenschappen communautaire leden toe om met elkaar meer privé in wisselwerking te staan.
+Naast de openbaar zichtbare interacties die in forums en commentaren voorkomen, laat de overseineneigenschap van AEM Gemeenschappen communautaire leden toe om met elkaar meer privé te communiceren.
 
 Deze functie kan worden opgenomen wanneer een [communitysite](/help/communities/overview.md#communitiessites) wordt gemaakt.
 
 De overseineneigenschap verstrekt de capaciteit om:
 
-**A** - verzend een bericht naar één of meerdere communautaire leden **B** - verzend directe berichten in [bulk naar de groepen](/help/communities/messaging.md#group-messaging)**C** van de communautaire leden - verzend een bericht met gehechtheid **D** - door:sturen een bericht **E - **Antwoord aan een bericht **** F - schrap een bericht **G ** - herhaal een geschrapt bericht
+**A** - een bericht aan één of meerdere communautaire leden **B** - verzend directe berichten in [bulk aan de groepen](/help/communities/messaging.md#group-messaging)**C** van de communautaire leden - verzend een bericht met gehechtheid **D** - door:sturen een bericht ************ E - antwoord op een berichtF - schrap een berichtG - verzend een geschrapt bericht
 
 ![messaging-section](assets/messaging-section.png) ![restore-message](assets/restore-message.png)
 
@@ -43,9 +43,9 @@ Wanneer het overseinen voor een communautaire plaats wordt toegelaten, wordt het
 
 ### Berichtlijst configureren (berichtvenster) {#configure-message-list-message-box}
 
-Om de configuratie van de lijst van berichten voor **Inbox**, **Verzonden Punten**, en **Prullenbak **pagina&#39;s van de overseineneigenschap te wijzigen, open de plaats in [auteur geeft wijze](/help/communities/sites-console.md#authoring-site-content)uit.
+Om de configuratie van de lijst van berichten voor **Inbox**, **Verzonden Punten**, en de pagina&#39;s van het **Afval** van de overseineneigenschap te wijzigen, open de plaats in [auteur uitgeeft wijze](/help/communities/sites-console.md#authoring-site-content).
 
-1. In `Preview`wijze, selecteer de verbinding **Berichten **om de belangrijkste overseinenpagina te openen. Selecteer vervolgens **Inbox**, **Verzonden items **of **Prullenmand **om de component voor die berichtlijst te configureren.
+1. In `Preview`wijze, selecteer de verbinding van **Berichten** om de belangrijkste overseinenpagina te openen. Selecteer vervolgens **Inbox**, **Verzonden items** of **Prullenmand** om de component voor die berichtlijst te configureren.
 
 1. Selecteer in de `Edit` modus de component op de pagina.
 1. U opent het configuratiedialoogvenster door overerving te annuleren door het `link`pictogram te selecteren.
@@ -59,47 +59,73 @@ Nadat de overerving is geannuleerd, is het mogelijk om het configuratiepictogram
 
 ![basic-tab-messagelist](assets/basic-tab-messagelist.png)
 
-* **De selecteur** van de dienst (*Vereist*) plaatste dit aan de waarde van het bezit **`serviceSelector.name`** van de Dienst [van de Verrichtingen van het Overseinen van de Gemeenschappen van](/help/communities/messaging.md#messaging-operations-service)AEM Gemeenschappen.
+* **Servicekiezer**
 
-* **Pagina** samenstellen (*vereist*) De pagina die moet worden geopend wanneer een lid op de knop **`Reply`** klikt. De doelpagina moet het formulier voor **samenstellingsbericht** bevatten.
+   (*Vereist*) Plaats dit aan de waarde van het bezit **`serviceSelector.name`** van de Dienst [van de Verrichtingen van het Overseinen van](/help/communities/messaging.md#messaging-operations-service)Gemeenschappen AEM.
 
-* **Reageren/Weergeven als bron** Als deze optie is ingeschakeld, verwijzen de URL voor antwoorden en de URL voor weergave naar een bron, anders worden gegevens doorgegeven als queryparameters in de URL.
+* **Pagina samenstellen**
 
-* **Profielweergaveformulier** Het profielformulier dat moet worden gebruikt om het afzenderprofiel weer te geven.
+   (*Vereist*) De pagina die moet worden geopend wanneer een lid op de **`Reply`** knop klikt. De doelpagina moet het formulier voor **samenstellingsbericht** bevatten.
 
-* **Prullenmap** Indien ingeschakeld worden in deze component Berichtlijst alleen berichten weergegeven die zijn gemarkeerd als verwijderd (prullenbak).
+* **Reageren/weergeven als bron**
 
-* **Mappaden**(*vereist*) Verwijzen naar de waarden die zijn ingesteld voor **inbox.path.name** en **sentitems.path.name **in de [AEM Communities Messaging Operations Service](/help/communities/messaging.md#messaging-operations-service). Wanneer het vormen voor een `Inbox`, voeg één ingang toe gebruikend de waarde van **inbox.path.name**. Wanneer het vormen voor een `Outbox`, voeg één ingang toe gebruikend de waarde van **sentitems.path.name**. Voeg bij de configuratie voor `Trash`twee items met beide waarden toe.
+   Als deze optie is ingeschakeld, verwijzen de URL van de reactie en de URL van de weergave naar een bron, anders worden gegevens doorgegeven als queryparameters in de URL.
+
+* **Profielweergaveformulier**
+
+   Het profielformulier dat moet worden gebruikt om het afzenderprofiel weer te geven.
+
+* **Prullenmap**
+
+   Als deze optie is ingeschakeld, worden in deze component Berichtlijst alleen berichten weergegeven die zijn gemarkeerd als verwijderd (prullenbak).
+
+* **Mappaden**
+
+   (*Vereist*) Verwijzend naar de waarden die voor **inbox.path.name** en **sentitems.path.name** in de Dienst [van de Verrichtingen van het Overseinen van](/help/communities/messaging.md#messaging-operations-service)Gemeenschappen AEM worden geplaatst. Wanneer het vormen voor een `Inbox`, voeg één ingang toe gebruikend de waarde van **inbox.path.name**. Wanneer het vormen voor een `Outbox`, voeg één ingang toe gebruikend de waarde van **sentitems.path.name**. Voeg bij de configuratie voor `Trash`twee items met beide waarden toe.
 
 #### Tabblad Weergave {#display-tab}
 
 ![display-tab-message-list](assets/display-tab-message-list.png)
 
-* **Knop** Lezen markeren Als deze optie is ingeschakeld, wordt een `Read`knop weergegeven waarmee een bericht kan worden gemarkeerd als gelezen.
+* **Knop Markeren als lezen**
 
-* **Knop** Ongelezen markeren Als deze optie is ingeschakeld, wordt een `Mark Unread` knop weergegeven waarmee een bericht kan worden gemarkeerd als gelezen.
+   Als deze optie is ingeschakeld, wordt een `Read`knop weergegeven waarmee een bericht kan worden gemarkeerd als gelezen.
 
-* **Knop** verwijderen Als deze optie is ingeschakeld, wordt een `Delete`knop weergegeven waarmee een bericht kan worden gemarkeerd als gelezen. Hiermee wordt de verwijderfunctionaliteit gedupliceerd als deze ook **`Message Options`** is ingeschakeld.
+* **Knop Markeren als ongelezen**
 
-* **Berichtopties** Als deze optie is ingeschakeld, worden de knoppen **`Reply`**, ** **`Reply All`*** en **`Forward`**`Delete`weergegeven waarmee een bericht opnieuw kan worden verzonden of kan worden verwijderd. Hiermee wordt de verwijderfunctionaliteit gedupliceerd als deze ook **`Delete Button`** is ingeschakeld.
+   Als deze optie is ingeschakeld, wordt een `Mark Unread` knop weergegeven waarmee een bericht kan worden gemarkeerd als gelezen.
 
-* **Berichten per pagina** Het opgegeven aantal is het maximumaantal berichten dat per pagina in een pagineringsschema wordt weergegeven. Als geen aantal wordt gespecificeerd (verlaten leeg), dan worden alle berichten getoond en er is geen paginering.
+* **Knop Verwijderen**
 
-* **Tijdstempelpatronen** bieden tijdstempelpatronen voor een of meer talen. Standaard is dit voor en, de, fr, it, es, ja, zh_CN, ko_KR.
+   Als deze optie is ingeschakeld, wordt een `Delete`knop weergegeven waarmee een bericht kan worden gemarkeerd als gelezen. Hiermee wordt de verwijderfunctionaliteit gedupliceerd als deze ook **`Message Options`** is ingeschakeld.
 
-* **De Gebruiker** van de vertoning kiest of **`Sender`**of **`Recipients`**om te bepalen of om de afzender of Ontvangers te tonen.
+* **Berichtopties**
+
+   Als deze optie is ingeschakeld, worden er knoppen weergegeven **`Reply`**, **`Reply All`** en **`Forward`** **`Delete`** weergegeven waarmee een bericht kan worden verzonden of verwijderd. Hiermee wordt de verwijderfunctionaliteit gedupliceerd als deze ook **`Delete Button`** is ingeschakeld.
+
+* **Berichten per pagina**
+
+   Het opgegeven aantal is het maximumaantal berichten dat per pagina in een pagineringsschema wordt weergegeven. Als geen aantal wordt gespecificeerd (verlaten leeg), dan worden alle berichten getoond en er is geen paginering.
+
+* **Tijdstempelpatronen**
+
+   Geef tijdstempelpatronen op voor een of meer talen. Standaard is dit voor en, de, fr, it, es, ja, zh_CN, ko_KR.
+
+* **Gebruiker weergeven**
+
+   Kies **`Sender`** of **`Recipients`** om te bepalen of de afzender of de Ontvanger moet worden weergegeven.
 
 ### Samenstellingsbericht configureren {#configure-compose-message}
 
 Als u de configuratie van de pagina voor samenstellen van berichten wilt wijzigen, opent u de site in de bewerkingsmodus [van de](/help/communities/sites-console.md#authoring-site-content)auteur.
 
-* In `Preview`wijze, selecteer de verbinding **Berichten **om de belangrijkste overseinenpagina te openen. Selecteer vervolgens de knop Nieuw bericht om de `Compose Message` pagina te openen.
+* In `Preview` wijze, selecteer de verbinding van **Berichten** om de belangrijkste overseinenpagina te openen. Selecteer vervolgens de knop Nieuw bericht om de `Compose Message` pagina te openen.
 
 * Selecteer in de `Edit` modus de hoofdcomponent op de pagina die de berichttekst bevat.
-* Als u het configuratievenster wilt openen, annuleert u de overerving door het `link`pictogram te selecteren.
+* Als u het configuratievenster wilt openen, annuleert u de overerving door het `link` pictogram te selecteren.
 Nadat de overerving is geannuleerd, is het mogelijk om het configuratiepictogram te selecteren om het configuratiedialoogvenster te openen.
 
-* Zodra de configuratie volledig is, is het noodzakelijk om overerving te herstellen door het `broken link`pictogram te selecteren.
+* Nadat de configuratie is voltooid, moet de overerving worden hersteld door het `broken link` pictogram te selecteren.
 
 ![config-compose-bericht](assets/config-compose-message.png)
 
@@ -107,33 +133,59 @@ Nadat de overerving is geannuleerd, is het mogelijk om het configuratiepictogram
 
 ![basic-tab-compose](assets/basic-tab-compose.png)
 
-* **Omleiden URL** Voer de URL in van de pagina die wordt weergegeven nadat het bericht is verzonden. Bijvoorbeeld, `../messaging.html`.
+* **URL omleiden**
 
-* **Annuleer URL** Ga URL van de getoonde pagina in als de afzender het bericht annuleert. Bijvoorbeeld, `../messaging.html`.
+   Voer de URL in van de pagina die wordt weergegeven nadat het bericht is verzonden. Bijvoorbeeld, `../messaging.html`.
 
-* **Maximale lengte van onderwerp** van het Bericht Het maximum aantal karakters toegestaan op het Onderwerp gebied. Bijvoorbeeld 500. Standaard is geen limiet.
+* **URL annuleren**
 
-* **Maximale lengte van berichttekst** Het maximum aantal tekens dat is toegestaan in het veld Inhoud. Bijvoorbeeld 10000. Standaard is geen limiet.
+   Voer de URL van de weergegeven pagina in als de afzender het bericht annuleert. Bijvoorbeeld, `../messaging.html`.
 
-* **De selecteur** van de dienst (*Vereist*) plaatste dit aan de waarde van het bezit **`serviceSelector.name`** van de Dienst [van de Verrichtingen van het Overseinen van de Gemeenschappen van](/help/communities/messaging.md#messaging-operations-service)AEM Gemeenschappen.
+* **Maximale lengte van onderwerp van bericht**
+
+   Het maximum aantal tekens dat is toegestaan in het veld Onderwerp. Bijvoorbeeld 500. Standaard is geen limiet.
+
+* **Maximale lengte van berichttekst**
+
+   Het maximum aantal tekens dat is toegestaan in het veld Inhoud. Bijvoorbeeld 10000. Standaard is geen limiet.
+
+* **Servicekiezer**
+
+   (*Vereist*) Plaats dit aan de waarde van het bezit **`serviceSelector.name`** van de Dienst [van de Verrichtingen van het Overseinen van](/help/communities/messaging.md#messaging-operations-service)Gemeenschappen AEM.
 
 #### Tabblad Weergave {#display-tab-1}
 
 ![display-tab-compose](assets/display-tab-compose.png)
 
-* **Onderwerpveld** tonen Indien ingeschakeld, geeft u het `Subject` veld weer en schakelt u het toevoegen van een onderwerp aan het bericht in. Standaard is niet ingeschakeld.
+* **Onderwerpveld tonen**
 
-* **Onderwerplabel** Voer de tekst in die naast het `Subject` veld moet worden weergegeven. Standaard is dit `Subject`.
+   Als deze optie is ingeschakeld, geeft u het `Subject` veld weer en schakelt u het toevoegen van een onderwerp aan het bericht in. Standaard is niet ingeschakeld.
 
-* **Toon het Gebied van het Dossier** van de Band indien gecontroleerd, toon het `Attachment` gebied en laat toe toevoegend dossiergehechtheid aan het bericht toe. Standaard is niet ingeschakeld.
+* **Onderwerplabel**
 
-* **Bestandslabel** bijvoegen Geef de tekst op die naast het `Attachment` veld moet worden weergegeven. Standaard is dit **`Attach File`**.
+   Voer de tekst in die naast het `Subject` veld moet worden weergegeven. Standaard is dit `Subject`.
 
-* **Inhoudsveld** tonen Indien ingeschakeld, geeft u het `Content` veld weer en schakelt u het toevoegen van een berichttekst in. Standaard is niet ingeschakeld.
+* **Veld Bestand bijvoegen tonen**
 
-* **Inhoudslabel** Voer de tekst in die naast het `Content` veld moet worden weergegeven. Standaard is dit **`Body`**.
+   Als deze optie is ingeschakeld, geeft u het `Attachment` veld weer en schakelt u het toevoegen van bestandsbijlagen aan het bericht in. Standaard is niet ingeschakeld.
 
-* **Met de Rich Text Editor** Indien ingeschakeld, wordt het gebruik van een tekstvak voor aangepaste inhoud met een eigen RTF-editor aangegeven. Standaard is niet ingeschakeld.
+* **Bestandslabel bijvoegen**
 
-* **Tijdstempelpatronen** bieden tijdstempelpatronen voor een of meer talen. Standaard is dit voor en, de, fr, it, es, ja, zh_CN, ko_KR.
+   Voer de tekst in die naast het `Attachment` veld moet worden weergegeven. Standaard is dit **`Attach File`**.
+
+* **Inhoudsveld tonen**
+
+   Als deze optie is ingeschakeld, geeft u het `Content` veld weer en schakelt u het toevoegen van een berichttekst in. Standaard is niet ingeschakeld.
+
+* **Inhoudslabel**
+
+   Voer de tekst in die naast het `Content` veld moet worden weergegeven. Standaard is dit **`Body`**.
+
+* **Met RTF-editor**
+
+   Als deze optie is ingeschakeld, wordt het gebruik van een tekstvak met aangepaste inhoud met een eigen RTF-editor aangegeven. Standaard is niet ingeschakeld.
+
+* **Tijdstempelpatronen**
+
+   Geef tijdstempelpatronen op voor een of meer talen. Standaard is dit voor en, de, fr, it, es, ja, zh_CN, ko_KR.
 

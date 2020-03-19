@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 765a3d9b-4552-403e-872c-fdf684ac271d
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 ---
 
@@ -35,7 +35,7 @@ Installatie van:
 
 Instellen van:
 
-* **Community Managers** For enablement community, only members of the `Community Enablement Managers` user group may be assigned the role of `*Community Site* Enablement Manager`, which permissions may include content creation, toewijzingen, and member management in the publish environment.
+* **Community Managers** For enablement community, only members of the `Community Enablement Managers` user group may be assigned the role of `Community Site Enablement Manager`, which permissions may include content creation, toewijzingen, and member management in the publish environment.
 
 Optionele configuratie van:
 
@@ -51,7 +51,7 @@ Elke stap verbindt met documentatie die de noodzakelijke details verstrekt.
 
 **Op alle auteur-/publicatieinstanties:**
 
-1. **[Installeer JDBC-stuurprogramma voor MySQL](deploy-communities.md#jdbc-driver-for-mysql)**Use Web Console (bundels):*http://localhost:4502/system/console/bundles*Installeren *voordat*SCORM-pakket wordt geïnstalleerd
+1. **[Installeer het JDBC-stuurprogramma voor MySQL](deploy-communities.md#jdbc-driver-for-mysql)**Use Web Console (bundels):*http://localhost:4502/system/console/bundles*Installeren *voordat*SCORM-pakket wordt geïnstalleerd
 
 1. **[SCORM-pakket](deploy-communities.md#scorm-package)**installeren Pakketbeheer gebruiken:*http://localhost:4502/crx/packmgr/*
 
@@ -59,29 +59,29 @@ Elke stap verbindt met documentatie die de noodzakelijke details verstrekt.
 
 1. **[MySQL, MySQL Workbench installeren](mysql.md)**
 
-1. **[installeer MySQL-databases](mysql.md#database-setup)**SQL-scripts uitvoeren die zijn gedownload van de auteur instanceUse MySQL Workbench
+1. **[MySQL-databases installeren](mysql.md#database-setup)**SQL-scripts uitvoeren die zijn gedownload van de auteur instanceUse MySQL Workbench
 
 **Op dezelfde serverhostingauteurinstantie:**
 
-1. **[mpeg installeren](ffmpeg.md)**
+1. **[Mpeg installeren](ffmpeg.md)**
 
 **Op alle auteur-/publicatieinstanties:**
 
-1. **[configureren van JDBC-verbindingenpool](mysql.md#configure-jdbc-connections)**Webconsole gebruiken (configMgr):*http://localhost:4502/system/console/configMgr*
+1. **[Configureer de JDBC-verbindingspool](mysql.md#configure-jdbc-connections)**Webconsole (configMgr):*http://localhost:4502/system/console/configMgr*
 
-1. **[configureren van SCORM engine service](mysql.md#aem-communities-scormengine-service)**Web Console (configMgr):*http://localhost:4502/system/console/configMgr*
+1. **[Configureer de SCORM-motorservice](mysql.md#aem-communities-scormengine-service)**Webconsole gebruiken (configMgr):*http://localhost:4502/system/console/configMgr*
 
-1. **[vorm CSRF filters](mysql.md#adobe-granite-csrf-filter)**de Console van het Gebruik van het Web (configMgr):*http://localhost:4502/system/console/configMgr*
+1. **[Configureer CSRF-filters](mysql.md#adobe-granite-csrf-filter)**Webconsole gebruiken (configMgr):*http://localhost:4502/system/console/configMgr*
 
 **Instantie van auteur:**
 
-1. (*optioneel*) **[Configureer Analytics Service](analytics.md)**Use Tools, Deployment, Cloud Services Console:*http://localhost:4502/etc/cloudservices/sitecatalyst.html*
+1. (*Optioneel*) **[Configureer Hulpprogramma&#39;s, Implementatie en Cloud Services-console voor Analytics-service](analytics.md)**:*http://localhost:4502/etc/cloudservices/sitecatalyst.html*
 
 1. **[MPEG](ffmpeg.md#configure-ffmpeg-transcoding-service)**Use Workflow/Models-console configureren
 
-1. **[laat de Console van het](deploy-communities.md#tunnel-service-on-author)**Gebruik van het Gebruik van de Dienst van de Tunnel (configMgr) toe:*http://localhost:4502/system/console/configMgr*
+1. **[De Console van het](deploy-communities.md#tunnel-service-on-author)**Gebruik van het Gebruik van de Dienst van de Tunnel (configMgr) toelaten:*http://localhost:4502/system/console/configMgr*
 
-1. **[Communautaire beheerders](users.md#creating-community-members)**maken voor het gebruik van de klassieke UI-beveiligingsconsole voor de auteursomgeving:*http://localhost:4502/useradmin*maken gebruiker(s) met pad = /home/users/community
+1. **[Communautaire beheerders](users.md#creating-community-members)**maken voor de auteursomgeving: gebruik de klassieke UI-beveiligingsconsole:*http://localhost:4502/useradmin*maken gebruiker(s) met pad = /home/users/community
 
    * Voeg leden toe aan de volgende groepen:
 
@@ -90,4 +90,4 @@ Elke stap verbindt met documentatie die de noodzakelijke details verstrekt.
 
 ## Dispatcher {#dispatcher}
 
-Wanneer de implementatie de [AEM Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)bevat, moeten de functies voor activering `clientheader`en `filter`secties worden gewijzigd om ervoor te zorgen dat deze correct werken. Zie [Dispatcher configureren voor Gemeenschappen](dispatcher.md#enablement).
+Wanneer de implementatie de [AEM Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)bevat, moeten de functies voor activering `clientheader` en `filter` secties worden gewijzigd om ervoor te zorgen dat deze correct werken. Zie [Dispatcher configureren voor Gemeenschappen](dispatcher.md#enablement).

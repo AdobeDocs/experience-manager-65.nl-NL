@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 ---
 
@@ -69,7 +69,7 @@ Hiermee wordt een MongoDB-server gestart met de standaardpoort 27017.
 
 >[!NOTE]
 >
->Als MongoDB wordt gestart *na *AEM, **start **all **AEM **exemplaren zodat zij behoorlijk met MongoDB verbinden.
+>Als MongoDB wordt gestart *na* AEM, **start** u alle **AEM** -instanties opnieuw zodat deze op de juiste wijze verbinding maken met MongoDB.
 
 ### Optie voor demoproductie: MongoDB-replicaset instellen {#demo-production-option-setup-mongodb-replica-set}
 

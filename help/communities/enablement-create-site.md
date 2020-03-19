@@ -11,23 +11,23 @@ content-type: reference
 discoiquuid: b9333558-6af9-46b2-9f03-3722645c69a6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 ---
 
 
-# Auteur van een nieuwe communautaire site voor activering{#author-a-new-community-site-for-enablement}
+# Auteur van een nieuwe communautaire site voor activering {#author-a-new-community-site-for-enablement}
 
 ## Community-site maken {#create-community-site}
 
-[Bij het maken](/help/communities/sites-console.md) van een Community Site wordt een wizard gebruikt die u door de stappen begeleidt bij het maken van een communitysite. U kunt verder gaan naar de `Next`stap of `Back`naar de vorige stap voordat u de site in de laatste stap toewijst.
+[Bij het maken](/help/communities/sites-console.md) van een Community Site wordt een wizard gebruikt die u door de stappen begeleidt bij het maken van een communitysite. U kunt verder gaan naar de `Next` stap of `Back` naar de vorige stap voordat u de site in de laatste stap toewijst.
 
 Ga als volgt te werk om een nieuwe communitysite te maken:
 
 De [instantie van de auteur gebruiken](https://localhost:4502/)
 
-* aanmelden met beheerdersrechten
-* navigeren naar **Gemeenschappen,** **sites**
+* Aanmelden met beheerdersrechten
+* Ga naar **[UIControl Communities > Sites]**
 
 * Selecteer **Maken**
 
@@ -48,9 +48,9 @@ Voor de stap van het Malplaatje **van de** Plaats, ga een titel, een beschrijvin
 
 * **Naam** van communautaire site: `enable`
 
-   * de eerste URL wordt onder de naam van de communautaire site weergegeven
-   * voor een geldige URL voegt u een basistaalcode + &quot;.html&quot; toe
-      *bijvoorbeeld* https://localhost:4502/content/sites/ `enable/en.html`
+   * De eerste URL wordt onder de naam van de communautaire site weergegeven
+   * Voeg voor een geldige URL een basistaalcode + &quot;.html&quot; toe
+      *Bijvoorbeeld* https://localhost:4502/content/sites/ `enable/en.html`
 
 * **Sjabloon** verwijzingssite: naar beneden halen om te kiezen `Reference Structured Learning Site Template`
 
@@ -84,24 +84,24 @@ Een gemeenschapssite is persoonlijk wanneer anonieme sitebezoekers geen toegang 
 
 Controleer of de meeste selectievakjes zijn uitgeschakeld voor [Gebruikersbeheer](/help/communities/sites-console.md#user-management) :
 
-* mogen bezoekers van de site niet zelf registreren
-* Anonieme sitebezoekers mogen de site NIET bekijken
-* facultatief al dan niet overseinen onder communautaire leden toestaan
-* Meld u NIET aan bij Facebook
+* Websitebezoekers niet toestaan zich te registreren
+* Anonieme sitebezoekers mogen de site niet bekijken
+* Facultatief al dan niet overseinen onder communautaire leden toestaan
+* Aanmelden met Facebook NIET toestaan
 * Aanmelden met Twitter niet toestaan
 
 ![chlimage_1-3](assets/chlimage_1-3.png)
 
-#### TAGS {#tagging}
+#### TAGGING {#tagging}
 
 De tags die kunnen worden toegepast op community-inhoud, worden beheerd door AEM-naamruimten te selecteren die eerder zijn gedefinieerd via de [Tagingconsole](/help/sites-administering/tags.md#tagging-console) (zoals de naamruimte [van de](/help/communities/enablement-setup.md#create-tutorial-tags)zelfstudie).
 
 Als u bovendien Tagnaamruimten selecteert voor de communitysite, beperkt u de selectie die wordt weergegeven bij het definiëren van catalogi en machtigingsbronnen. Zie [Tags toewijzen Hulpbronnen](/help/communities/tag-resources.md) voor belangrijke informatie.
 
-Het zoeken naar naamruimten is eenvoudig met &#39;type-ahead&#39;-zoekopdracht. Bijvoorbeeld,
+Het zoeken naar naamruimten is eenvoudig met &#39;type-ahead&#39;-zoekopdracht. Bijvoorbeeld:
 
-* type &#39;tut&#39;
-* select `Tutorial`
+* Type `tut`
+* Selecteer `Tutorial`
 
 ![chlimage_1-4](assets/chlimage_1-4.png)
 
@@ -111,10 +111,10 @@ Het zoeken naar naamruimten is eenvoudig met &#39;type-ahead&#39;-zoekopdracht. 
 
 Als u een lid van de gemeenschap (of groep leden) de site wilt laten ervaren als gemeenschapsbeheerder, gebruikt u de typecontrole en selecteert u de naam van het lid of de groep in de keuzelijst.
 
-Bijvoorbeeld,
+Bijvoorbeeld:
 
-* type &quot;q&quot;
-* Selecteer [Quinn Harper](/help/communities/enablement-setup.md#publishcreateenablementmembers)
+* Type `q`
+* Quinn Harper [selecteren](/help/communities/enablement-setup.md#publishcreateenablementmembers)
 
 >[!NOTE]
 >
@@ -138,10 +138,10 @@ De selectie die in het schermafbeelding wordt gezien, `Communities`is het framew
 
 #### VERTALING {#translation}
 
-In de [vertalingsinstellingen](/help/communities/sites-console.md#translation) wordt aangegeven of UGC kan worden vertaald en in welke taal, indien van toepassing.
+In de [vertaalinstellingen](/help/communities/sites-console.md#translation) wordt aangegeven of UGC kan worden vertaald en in welke taal, indien van toepassing.
 
 * Controleren **machinevertaling toestaan**
-* de standaardinstellingen gebruiken
+* De standaardinstellingen gebruiken
 
 ![chlimage_1-7](assets/chlimage_1-7.png)
 
@@ -151,8 +151,8 @@ Voor een machtigingsgemeenschap is het noodzakelijk om één of meerdere Communa
 
 * **De (vereiste) Leden van Enablement Managers** van de `Community Enablement Managers` groep zijn beschikbaar om worden geselecteerd om deze communautaire plaats te beheren.
 
-   * type &quot;s&quot;
-   * select `Sirius Nilson`
+   * Type `s`
+   * Selecteer `Sirius Nilson`
 
 * **Org-id** voor marketingcloud (optioneel) De id voor een Adobe Analytics-account die nodig is wanneer [Video Heartbeat Analytics](/help/communities/analytics.md#video-heartbeat-analytics) wordt opgenomen in de rapportage over activering.
 
@@ -160,13 +160,13 @@ Voor een machtigingsgemeenschap is het noodzakelijk om één of meerdere Communa
 
 Selecteer **Volgende**.
 
-### Stap 4:Community-site maken {#step-create-community-site}
+### Stap 4: Community-site maken {#step-create-community-site}
 
 Selecteer **Maken.**
 
 ![chlimage_1-9](assets/chlimage_1-9.png)
 
-Wanneer het proces is voltooid, wordt de map voor de nieuwe site weergegeven in de console Communities - Sites.
+Wanneer het proces is voltooid, wordt de map voor de nieuwe site weergegeven in de console Communities > Sites.
 
 ![vereffening](assets/enablementsitecreated.png)
 
@@ -184,16 +184,26 @@ Als u het pictogram Ovalen selecteert (pictogram Meer handelingen), worden de op
 
 Van links naar rechts zijn ze:
 
-* **Open Site** en selecteer het potloodpictogram om de gemeenschapssite te openen in de modus Bewerken door auteur om paginacomponenten toe te voegen en/of te configureren
+* **Site openen**
 
-* **Site** bewerken: selecteer het eigenschappenpictogram om de site van de community te openen voor wijziging van eigenschappen, zoals de titel of om het thema te wijzigen
+   Selecteer het potloodpictogram om de gemeenschapssite te openen in de modus Bewerken door auteur om paginacomponenten toe te voegen en/of te configureren
 
-* **Site** publiceren selecteert u het wereldpictogram om de communitysite te publiceren (standaard naar localhost:4503)
+* **Site bewerken**
 
-* **Met Site** exporteren selecteert u het exportpictogram om een pakket van de communitysite te maken dat zowel in [pakketbeheer](/help/sites-administering/package-manager.md) wordt opgeslagen als wordt gedownload.
+   Selecteer het eigenschappenpictogram om de communitysite te openen voor wijziging van eigenschappen, zoals de titel of om het thema te wijzigen
+
+* **Site publiceren**
+
+   Selecteer het wereldpictogram om de communitysite te publiceren (standaard op localhost:4503)
+
+* **Site exporteren**
+
+   Selecteer het exportpictogram om een pakket van de communitysite te maken dat zowel in [pakketbeheer](/help/sites-administering/package-manager.md) is opgeslagen als is gedownload.
 UGC is niet opgenomen in het sitepakket.
 
-* **Site** verwijderen Als u de communitysite wilt verwijderen, selecteert u het pictogram Site verwijderen dat wordt weergegeven wanneer u de muisaanwijzer op de site in de Community Site-console plaatst. Met deze actie verwijdert u alle items die aan de site zijn gekoppeld, zoals UGC, gebruikersgroepen, elementen en databaserecords.
+* **Site verwijderen**
+
+   Als u de communitysite wilt verwijderen, selecteert u het pictogram Site verwijderen dat verschijnt wanneer u de muisaanwijzer op de site in de Community Site Console plaatst. Met deze actie verwijdert u alle items die aan de site zijn gekoppeld, zoals UGC, gebruikersgroepen, elementen en databaserecords.
 
 ![inschakelen](assets/enablesiteactions.png)
 
@@ -225,11 +235,11 @@ Met behulp van de Community Group-console kunnen leden afzonderlijk worden toege
 
 In dit voorbeeld `Community Ski Class` wordt de groep toegevoegd als lid van de groep `Community Enable Members` en als lid `Quinn Harper`.
 
-* navigeren naar **Community&#39;s, console Groepen**
-* Selecteer de *groep Community Enable Member* Group
+* Navigeer naar **Communities, console Groepen**
+* Groep leden *inschakelen* Gemeenschap selecteren
 * Geef &#39;ski&#39; op in het zoekvak Leden **toevoegen aan groep** .
-* Selecteer *Community Ski Class* (groep studenten)
-* &quot;quin&quot; invoeren in het zoekvak
+* Selecteer *Klasse* communautair skigebied (groep studenten)
+* &#39;quinn&#39; invoeren in het zoekvak
 * Selecteer *Quinn Harper* (resablement resource contact)
 
 * Selecteer **Opslaan**
@@ -258,14 +268,14 @@ Hiervoor moet u [CRX|DE](https://localhost:4503/crx/de) Lite gebruiken om de [br
 
 Aan de slag
 
-1. bij publiceren, toegang tot CRXDE en login met beheerdervoorrechten
+1. Bij publiceren, heb toegang tot CRXDE en login met beheerdervoorrechten
 
    * Blader bijvoorbeeld naar [https://localhost:4503/crx/de](https://localhost:4503/crx/de) en meld u aan met `admin/admin`
 
-1. in projectbrowser, breid uit `/etc/map`
+1. Vouw in de projectbrowser uit `/etc/map`
 1. Selecteer het `http` knooppunt
 
-   * Selecteer Knooppunt **maken**
+   * Knooppunt **maken selecteren**
 
       * **Naam** localhost.4503
 
@@ -273,27 +283,27 @@ Aan de slag
 
       * **Tekst** [schuintrekken:toewijzen](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
 
-1. met nieuw aangemaakt `localhost.4503` knooppunt geselecteerd
+1. Met nieuw aangemaakt `localhost.4503` knooppunt geselecteerd
 
-* add, eigenschap
+   * Eigenschap toevoegen
 
-   * **Naam** kiezen:overeenkomst
-   * **Tekenreeks**
-   * **Value** localhost.4503/$
+      * **Naam** kiezen:overeenkomst
+      * **Tekenreeks**
+      * **Value** localhost.4503/$
+   (moet eindigen met &#39;$&#39; teken)
 
-      (moet eindigen met &#39;$&#39; teken)
+   * Eigenschap toevoegen
 
-* add, eigenschap
+      * **Naam** kiezen:internalRedirect
+      * **Tekenreeks**
+      * **Value** /content/sites/enable/en.html
 
-   * **Naam** kiezen:internalRedirect
-   * **Tekenreeks**
-   * **Value** /content/sites/enable/en.html
 
-1. Selecteer Alles **opslaan**
-1. (optioneel) De browsergeschiedenis verwijderen
-1. surf naar https://localhost:4503/
+1. Alles **opslaan selecteren**
+1. (Optioneel) De browsergeschiedenis verwijderen
+1. Bladeren naar https://localhost:4503/
 
-* Ga naar https://localhost:4503/content/sites/enable/en.html
+   * Ga naar https://localhost:4503/content/sites/enable/en.html
 
 >[!NOTE]
 >
@@ -303,7 +313,7 @@ Aan de slag
 
 #### Problemen oplossen: Fout bij opslaan van kaart {#troubleshooting-error-saving-map}
 
-Als het niet lukt om wijzigingen op te slaan, moet u ervoor zorgen dat de naam van het knooppunt `localhost.4503`een &#39;punt&#39;-scheidingsteken heeft en niet `localhost:4503` een &#39;dubbele punt&#39;-scheidingsteken, omdat dit geen geldig naamruimtevoorvoegsel `localhost`is.
+Als het niet lukt om wijzigingen op te slaan, moet u ervoor zorgen dat de naam van het knooppunt `localhost.4503`met een &#39;punt&#39;-scheidingsteken is en niet `localhost:4503` met een &#39;dubbele punt&#39;-scheidingsteken, omdat dit geen geldig naamruimtevoorvoegsel `localhost` is.
 
 ![chlimage_1-16](assets/chlimage_1-16.png)
 
@@ -331,7 +341,7 @@ Als dat niet het geval is, kan de catalogusfunctie eenvoudig worden toegevoegd. 
 
 Als de sitestructuur al de catalogusfunctie bevat, kan de titel worden gewijzigd.
 
-Als u de structuur van de site wilt wijzigen, navigeert u naar de **Community, de Sites** -console, opent u de `enable` map en selecteert u het pictogram **Site bewerken **om toegang te krijgen tot de eigenschappen van `Enablement Tutorial`.
+Als u de structuur van de site wilt wijzigen, navigeert u naar de **Community, Sites** -console, opent u de `enable` map en selecteert u het pictogram Site **** bewerken om toegang te krijgen tot de eigenschappen van `Enablement Tutorial`.
 
 Selecteer het deelvenster STRUCTUUR om een catalogus toe te voegen of een bestaande catalogus te wijzigen:
 

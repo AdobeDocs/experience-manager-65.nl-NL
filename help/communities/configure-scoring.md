@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 628b6dcd-8b1c-4166-8fc2-843baa86ac1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d522c5ec6c72a9fd391d021f2fac37f88c686bd9
+source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 ---
 
 
-# Scores en Badges Essentials{#scoring-and-badges-essentials}
+# Scores en Badges Essentials {#scoring-and-badges-essentials}
 
 Met de functie voor scoren en badges van AEM-gemeenschappen kunnen leden van de gemeenschap worden geïdentificeerd en beloond.
 
@@ -26,9 +26,9 @@ De details van het instellen van de functie worden beschreven op
 
 Deze pagina bevat aanvullende technische gegevens:
 
-* hoe u een badge [als afbeelding of tekst kunt](#displaying-badges) weergeven
-* hoe te om uitgebreide [zuivert registreren aan te zetten](#debug-log-for-scoring-and-badging)
-* hoe te om tot UGC [met betrekking tot het scoring en het badging toegang te](#ugc-for-scoring-and-badging) hebben
+* Een badge [als afbeelding of tekst](#displaying-badges) weergeven
+* Hoe te om uitgebreide [zuivert registreren aan te zetten](#debug-log-for-scoring-and-badging)
+* Hoe te om tot UGC [met betrekking tot het scoring en het badging](#ugc-for-scoring-and-badging) toegang te hebben
 
 >[!CAUTION]
 >
@@ -80,18 +80,18 @@ Voor gedetailleerde instructies gaat u naar [Een aangepast logbestand](/help/sit
 
 U kunt als volgt snel een logbestand instellen:
 
-1. toegang krijgen tot de **webconsolelogondersteuning** van Adobe Experience Manager, bijvoorbeeld
+1. U kunt bijvoorbeeld toegang krijgen tot de webconsolelogondersteuning **van** Adobe Experience Manager
 
    * https://localhost:4502/system/console/slinglog
 
-1. Selecteer Nieuwe **registreermodule toevoegen**
+1. Selecteer **Nieuwe logboekregistratie toevoegen**
 
-   1. selecteren `DEBUG`voor **logniveau**
+   1. Selecteren `DEBUG` voor **logniveau**
 
-   1. Voer bijvoorbeeld een naam in voor het **logbestand**
+   1. Geef bijvoorbeeld een naam op voor het **logbestand**
 
       * logs/scoring-debug.log
-   1. Voer twee **Logger **(klasse)-items in (met `+` pictogram)
+   1. Twee **Logger** -items (klasse) invoeren (met `+` pictogram)
 
       * `com.adobe.cq.social.scoring`
       * `com.adobe.cq.social.badging`
@@ -101,19 +101,19 @@ U kunt als volgt snel een logbestand instellen:
 
 ![chlimage_1-193](assets/chlimage_1-193.png)
 
-Logboekvermeldingen weergeven
+Logboekvermeldingen weergeven:
 
-* vanuit de webconsole
+* Vanuit de webconsole
 
-   * onder het menu **Status **
-   * Selecteer **logbestanden**
-   * zoeken naar de naam van uw logbestand, zoals `scoring-debug`
+   * Onder het menu **Status**
+   * Logbestanden **selecteren**
+   * Zoek naar uw naam van het Logdossier, zoals `scoring-debug`
 
-* op de lokale schijf van de server
+* Op de lokale schijf van de server
 
-   * het logbestand bevindt zich op &lt;*server-install-dir*>/crx-quickstart/logs/&lt;*log-file-name*>.log
+   * Het logbestand bevindt zich op &lt;*server-install-dir*>/crx-quickstart/logs/&lt;*log-file-name*>.log
 
-   * for example, `.../crx-quickstart/logs/scoring-debug.log`
+   * Bijvoorbeeld: `.../crx-quickstart/logs/scoring-debug.log`
 
 ![chlimage_1-194](assets/chlimage_1-194.png)
 
@@ -123,9 +123,9 @@ Het is mogelijk om UGC met betrekking tot het scoring en het aanbrengen van merk
 
 In de beschrijvingen voor toegang tot scoring- en merkgegevens wordt JSRP gebruikt, omdat de UGC gemakkelijk toegankelijk is met [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
-**JSRP over auteur** : experimenteren in de auteursomgeving resulteert in UGC die alleen zichtbaar is vanuit de auteursomgeving.
+**JSRP bij auteur**: experimenteren in de auteursomgeving resulteert in UGC die alleen zichtbaar is vanuit de auteursomgeving.
 
-**JSRP bij publicatie** : Op dezelfde wijze, als het testen op het publicatiemilieu, zal het noodzakelijk zijn om tot CRXDE Lite met administratieve voorrechten op een te publiceren instantie toegang te hebben. Als de publicatie-instantie wordt uitgevoerd in de [productiemodus](/help/sites-administering/production-ready.md) (geen samplcontent runmode), is het nodig om CRXDE Lite [in te](/help/sites-administering/enabling-crxde-lite.md)schakelen.
+**JSRP bij publicatie**: Op dezelfde wijze, als het testen op het publicatiemilieu, zal het noodzakelijk zijn om tot CRXDE Lite met administratieve voorrechten op een te publiceren instantie toegang te hebben. Als de publicatie-instantie wordt uitgevoerd in de [productiemodus](/help/sites-administering/production-ready.md) (geen samplcontent runmode), is het nodig om CRXDE Lite [in te](/help/sites-administering/enabling-crxde-lite.md)schakelen.
 
 De basislocatie van UGC op JSRP is `/content/usergenerated/asi/jcr/`.
 
@@ -146,12 +146,12 @@ De schermafbeeldingen van gegevensopslagruimte zijn afkomstig van het instellen 
 
 1. Een AEM-site *met* een unieke id (een site die is gemaakt met een wizard):
 
-* de Aan de slag-zelfstudie (Inschakelen) gebruiken die tijdens de [Aan de slag-zelfstudie is gemaakt](/help/communities/getting-started.md)
-* zoeken naar het knooppunt van de forumpagina
+   * De Aan de slag-zelfstudie (Inschakelen) gebruiken die tijdens de [Aan de slag-zelfstudie is gemaakt](/help/communities/getting-started.md)
+   * Zoek het knooppunt voor forumpagina
 
-   * `/content/sites/engage/en/forum/jcr:content`
+      `/content/sites/engage/en/forum/jcr:content`
 
-* eigenschappen voor scoring en badging toevoegen
+   * Eigenschappen voor scoring en badges toevoegen
 
    ```
    scoringRules = [/etc/community/scoring/rules/comments-scoring,
@@ -163,25 +163,26 @@ De schermafbeeldingen van gegevensopslagruimte zijn afkomstig van het instellen 
    /etc/community/badging/rules/forums-scoring]
    ```
 
-* de plaats bepalen van de forumcomponentenknoop
+   * Zoek het knooppunt voor de forumcomponent
 
-   * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
+      `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
 ( `sling:resourceType = social/forum/components/hbs/forum`)
 
-* eigenschap toevoegen aan weergaveknoppen
+   * Eigenschap toevoegen aan weergaveknoppen
 
-   * `allowBadges = true`
+      `allowBadges = true`
 
-* een gebruiker ondertekent in, maakt een forumonderwerp en krijgt een bronze badge toegewezen
+   * Een gebruiker ondertekent in, maakt een forumonderwerp en krijgt een bronzen badge toegewezen
+
 
 1. Een AEM-site *zonder* unieke id:
 
-* met de [Community Components Guide](/help/communities/components-guide.md)
-* zoeken naar het knooppunt van de forumpagina
+   * De hulplijn [Community-componenten gebruiken](/help/communities/components-guide.md)
+   * Zoek het knooppunt voor forumpagina
 
-   * `/content/community-components/en/forum/jcr:content`
+      `/content/community-components/en/forum/jcr:content`
 
-* eigenschappen voor scoring en badging toevoegen
+   * Eigenschappen voor scoring en badges toevoegen
 
    ```
    scoringRules = [/etc/community/scoring/rules/comments-scoring,
@@ -193,24 +194,25 @@ De schermafbeeldingen van gegevensopslagruimte zijn afkomstig van het instellen 
    /etc/community/badging/rules/forums-scoring]
    ```
 
-* de plaats bepalen van de forumcomponentenknoop
+   * Zoek het knooppunt voor de forumcomponent
 
-   * `/content/community-components/en/forum/jcr:content/content/forum`
+      `/content/community-components/en/forum/jcr:content/content/forum`
 ( `sling:resourceType = social/forum/components/hbs/forum`)
 
-* eigenschap toevoegen aan weergaveknoppen
+   * Eigenschap toevoegen aan weergaveknoppen
 
-   * `allowBadges = true`
+      `allowBadges = true`
 
-* een gebruiker ondertekent in, maakt een forumonderwerp en krijgt een bronze badge toegewezen
+   * Een gebruiker ondertekent in, maakt een forumonderwerp en krijgt een bronzen badge toegewezen
 
-1. aan een gebruiker wordt een moderatorbadge toegewezen die cURL gebruikt:
 
-```shell
-curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:assignBadge" -F "badgeContentPath=/etc/community/badging/images/moderator/jcr:content/moderator.png" https://localhost:4503/home/users/community/w271OOup2Z4DjnOQrviv/profile.social.json
-```
+1. Aan een gebruiker wordt een moderatorbadge toegewezen via cURL:
 
-Aangezien een gebruiker twee bronzen badges heeft verdiend en een moderatorbadge heeft gekregen, is dit hoe de gebruiker met hun forumingang verschijnt:
+   ```shell
+   curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:assignBadge" -F "badgeContentPath=/etc/community/badging/images/moderator/jcr:content/moderator.png" https://localhost:4503/home/users/community/w271OOup2Z4DjnOQrviv/profile.social.json
+   ```
+
+   Aangezien een gebruiker twee bronzen badges heeft verdiend en een moderatorbadge heeft gekregen, is dit hoe de gebruiker met hun forumingang verschijnt.
 
 ![chlimage_1-195](assets/chlimage_1-195.png)
 
@@ -218,13 +220,13 @@ Aangezien een gebruiker twee bronzen badges heeft verdiend en een moderatorbadge
 >
 >In dit voorbeeld worden de volgende aanbevolen procedures niet gevolgd:
 >
->* de namen van scoringregels moeten globaal uniek zijn; ze mogen niet met dezelfde naam eindigen.
-   >  Een voorbeeld van wat *not *to doet:
+>* Namen van scoreregelregels moeten globaal uniek zijn. ze mogen niet met dezelfde naam eindigen.
+   >  Een voorbeeld van wat *niet* te doen:
    >  /etc/community/scoring/rules/site1/forums-scoring
    >  /etc/community/scoring/rules/site2/forums-scoring
    >
    >
-* unieke badge-afbeeldingen maken voor verschillende AEM-sites
+* Unieke badge-afbeeldingen maken voor verschillende AEM-sites
 >
 
 
@@ -237,7 +239,7 @@ Voor onderzoeksdoeleinden, gebruikend JSRP bijvoorbeeld, is de basisomslag die s
 
 * `/content/usergenerated/asi/jcr/scoring`
 
-De onderliggende node van `scoring`is de naam van de scoreregel. Daarom is het verstandig om regelnamen op een server globaal uniek te scoren.
+De onderliggende node van `scoring` is de naam van de scoreregel. Daarom is het verstandig om regelnamen op een server globaal uniek te scoren.
 
 Voor de site Geometrixx Engage bevinden de gebruiker en hun score zich in een pad dat is geconstrueerd met de naam van de scoreregel, de site-id van de community ( `engage-ba81p`), een unieke id en de id van de gebruiker:
 
@@ -257,17 +259,17 @@ Het gebruik van de [API&#39;s](#scoring-and-badging-apis) heeft de voorkeur.
 
 Voor onderzoeksdoeleinden, gebruikend JSRP bijvoorbeeld, is de basisomslag die informatie over toegewezen of toegekende badges bevat
 
-* /content/usergenerated/asi/jcr
+* `/content/usergenerated/asi/jcr`
 
 Wordt gevolgd door het pad naar het gebruikersprofiel en eindigt in een map met badges, zoals
 
-* /home/users/community/w271OOup2Z4DjnOQrviv/profile/badges
+* `/home/users/community/w271OOup2Z4DjnOQrviv/profile/badges`
 
-#### toegekend badge {#awarded-badge}
+#### Toegewezen badge {#awarded-badge}
 
 ![chlimage_1-197](assets/chlimage_1-197.png)
 
-#### toegewezen badge {#assigned-badge}
+#### Toegewezen badge {#assigned-badge}
 
 ![chlimage_1-198](assets/chlimage_1-198.png)
 

@@ -4,14 +4,14 @@ description: Nieuw in Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 1fde7fc5dd32b5a2a83fe6c01cfa2b24be32a899
+source-git-commit: f50369f269040bf7f1a30b018acbc1b441abdb15
 
 ---
 
 
 # Nieuw in Adobe Experience Manager 6.5 Service Pack 4 {#aem-whats-new-service-pack-4}
 
-Adobe Experience Manager (AEM) 6.5 biedt functies en voortdurende verbeteringen via de driemaandelijkse servicepacks dit jaar. De nieuwe aanpak komt onze klanten ten goede wanneer ze de innovaties sneller kunnen toepassen.
+Adobe Experience Manager (AEM) 6.5 biedt functies en voortdurende verbeteringen via driemaandelijkse servicepacks. De nieuwe aanpak komt onze klanten ten goede wanneer ze de innovaties sneller kunnen toepassen.
 
 Het nieuwste AEM Service Pack 4 (6.5.4.0) wordt uitgebracht op 5 **maart 2020**. In dit artikel worden de functies gemarkeerd die het nieuwste Service Pack biedt om uw AEM-reis verrijkend te maken.
 
@@ -19,11 +19,11 @@ Het nieuwste AEM Service Pack 4 (6.5.4.0) wordt uitgebracht op 5 **maart 2020**.
 
 ### Prestatieverbeteringen op verschillende gebieden {#performance-improvements}
 
-* Minder tijd voor het laden en initialiseren van ContextHub binnen een plaats (contexthub.kernel.js). Hierdoor worden pagina&#39;s tijdens een bezoek aan de site sneller geladen.
+* Verminderde tijd voor het laden van en het initialiseren van ContextHub binnen een plaats (`contexthub.kernel.js`). Hierdoor worden pagina&#39;s tijdens een bezoek aan de site sneller geladen.
 
-* Minder tijd om een pagina te vernieuwen nadat u Experience Fragments naar de pagina-editor Sites hebt gesleept en neergezet.
+* Verlaagde tijd om een pagina te vernieuwen nadat u Experience Fragments naar de Editor voor sitepagina hebt gesleept.
 
-* De tijd voor het laden van items voor een sitepagina met meer dan 200 actieve kopieën in het overzicht van Actieve kopie verkort.
+* De laadtijd voor items op een sitepagina met meer dan 200 actieve kopieën in **[!UICONTROL Live Copy-overzicht]** verkort.
 
 * Verbeterde verwerking van onvolledige of ongeldige URL&#39;s. Dergelijke URL&#39;s kunnen de Sjablooneditor vertragen.
 
@@ -56,120 +56,104 @@ De middelen van de Manager van de ervaring omvatten de volgende toegankelijkheid
 
 ### Afdrukbare uitvoer genereren in AEM Forms-workflows {#generate-printable-output}
 
-Als u een oplossing wilt om veelvoudige exemplaren van een bronmalplaatjedossier te drukken of te bewaren en het met een gegevensdossier met talrijke verslagen te integreren, is een nieuwe Generate Afdrukbare de werkschemastap van de Output beschikbaar in Vormen AEM. Als u bijvoorbeeld een bronformulier met een andere naam wilt afdrukken telkens wanneer het wordt afgedrukt, kunt u deze namen in het gegevensbestand opnemen en het formulier integreren met een standaardsjabloonbestand.
-
-Profiteer van deze functie met **Gereedschappen** > **[!UICONTROL Workflow]** > **[!UICONTROL Modellen]** > **[!UICONTROL Maken]** en zoek vervolgens naar de stap Afdrukbare uitvoer **** genereren.
+Met de nieuwe workflowstap Afdrukbare uitvoer genereren kunt u een bronsjabloonbestand integreren met een gegevensbestand. Dankzij deze integratie kunt u verschillende exemplaren van het sjabloonbestand afdrukken of opslaan. U kunt bijvoorbeeld een bronformulier met een andere naam afdrukken telkens wanneer het wordt afgedrukt. Sla de namen in het gegevensbestand op en integreer het gegevensbestand met een standaardsjabloonbestand. Voor meer informatie over deze eigenschap, zie [Forms-centric werkschema op OSGi - de Verwijzing](../forms/using/aem-forms-workflow-step-reference.md)van de Stap.
 
 ![Afdrukbare uitvoer genereren](assets/generate-print-output-demo.gif)
 
-Voor meer informatie over deze eigenschap, zie [Forms-centric werkschema op OSGi - de Verwijzing](../forms/using/aem-forms-workflow-step-reference.md)van de Stap.
+### Ondersteuning voor meerdere kolommen voor adaptieve formulieren en interactieve communicatie in de modus Indeling {#multi-column-adaptive-forms}
 
-### Ondersteuning voor meerdere kolommen voor adaptieve formulieren en interactieve communicatie in de modus Lay-out {#multi-column-adaptive-forms}
+U kunt nu het aantal kolommen voor een deelvenster definiëren in adaptieve formulieren en interactieve communicatie. Schakel over naar de lay-outmodus om de nieuwe optie voor meerdere kolommen te gebruiken. Zie De modus Lay-out [gebruiken om het formaat van componenten](../forms/using/resize-using-layout-mode.md)te wijzigen voor meer informatie.
 
-U kunt nu het aantal kolommen voor een deelvenster definiëren in adaptieve formulieren en interactieve communicatie.
-
-U vindt de nieuwe optie door over te schakelen op de modus Lay-out. Tik op het deelvenster dat u wilt omzetten in een indeling met meerdere kolommen, selecteer het bovenliggende venster en tik op het pictogram met meerdere kolommen om het aantal kolommen voor het deelvenster te definiëren.
 
 ![Lay-out met meerdere kolommen](assets/multi-column-layout.gif)
 
-Zie De modus Lay-out [gebruiken om het formaat van componenten](../forms/using/resize-using-layout-mode.md)te wijzigen voor meer informatie.
+
 
 ### AEM Inbox-aanpassingen {#aem-inbox}
 
-Voelt u ooit de behoefte om opties aan te passen beschikbaar in kopbal AEM? Het is nu mogelijk met onze nieuwe versie van Service Pack met de introductie van een optie van de Controle **** Admin.
+Met de nieuwe optie Beheer beheren kunnen beheerders:
 
-**Koptekst aanpassen**
+* Koptekst en logo aanpassen
 
-Workflowbeheerders kunnen nu naar eigen keuze koptekst opgeven.
+* De weergave van navigatiekoppelingen in de koptekst bepalen
 
-U vindt de nieuwe optie Koptekst **[!UICONTROL aanpassen in koptekst]** onder Weergaveselectie (beschikbaar in de rechterbovenhoek van de werkbalk) > **[!UICONTROL Beheer]**.
-
-**Logo aanpassen**
-
-Net als bij het aanpassen van koptekst kunnen workflowbeheerders nu naar keuze het headerlogo opgeven.
-
-U vindt de nieuwe optie Logo **** aanpassen onder Weergaveselectie > **[!UICONTROL Beheer]**.
-
-Zie [Uw Postvak IN](../sites-authoring/inbox.md)voor meer informatie over deze functie.
-
-### Gebruikersnavigatiecontrole {#user-navigation-control}
-
-Workflowbeheerders hebben nu de mogelijkheid om gebruikers in beperkte modus op basis van hun rol aan AEM te laten werken. De beheerders kunnen de weergave van navigatieopties in de koptekst beheren om te beperken dat gebruikers overschakelen op de workflowontwerpmodus of andere oplossingskoppelingen.
-
-Bekijk de nieuwe navigatieopties **** Verbergen onder Weergaveselector > **[!UICONTROL Beheer]**.
-
-Zie [Uw Postvak IN](../sites-authoring/inbox.md)voor meer informatie over deze functie.
+De optie Beheer is alleen zichtbaar voor de leden van de groep met beheerders of workflowbeheerders. Zie [Uw Postvak IN](../sites-authoring/inbox.md)voor meer informatie over deze functie.
 
 ### RTF-ondersteuning in HTML5-formulieren {#rich-text-support}
 
-In het tekstveld kan nu een lijst met opmaakopties worden weergegeven in het weergegeven HTML5-formulier. U moet een opmaak definiëren voor het tekstveld in Forms Designer om de juiste instellingen op het veld toe te passen.
+U kunt nu een tekstveld in een XFA-formulier omzetten in een RTF-veld wanneer het wordt weergegeven in een HTML5-formulier. Het resultaat is dat in het tekstveld een lijst met andere opmaakopties wordt weergegeven in een HTML5-formulier. Zie Formuliersjablonen [ontwerpen voor HTML5-formulieren](../forms/using/designing-form-template.md)voor meer informatie.
 
-Tik op het tekstveld in de **[!UICONTROL ontwerpweergave]** in Forms Designer om deze functie te gebruiken. Selecteer op het tabblad **[!UICONTROL Veld]** de optie **[!UICONTROL RTF]** in de vervolgkeuzelijst **[!UICONTROL Veldindeling]** om de instellingen toe te passen.
+### Verbeteringen voor toegankelijkheid {#forms-accessibility-enhancements-6540}
 
-Zie Formuliersjablonen [ontwerpen voor HTML5-formulieren](../forms/using/designing-form-template.md)voor meer informatie.
+Experience Manager Forms bevat de volgende toegankelijkheidsverbeteringen:
 
-## Belangrijke markeringen
+* Gebruikers kunnen de tabfocus verschuiven zonder problemen voor het Ultramarijn-Toegankelijke referentiethema van een adaptief formulier.
 
-Naast de nieuwe functies bevat AEM 6.5 Service Pack 4 de volgende belangrijke kenmerken:
+* Schermlezers kondigen selectievakjes, koppelingen, Datumkiezer en Datuminvoer correct aan in een adaptief formulier.
 
-* U kunt selectieve inhoudsubstructuren nu synchroniseren met *Dynamische Media - wijze* Scene7 in plaats van alle beschikbare bij `content/dam`.
-
-* Integratie van formuliergegevensmodellen met SOAP-webservice ondersteunt nu keuzegroepen of kenmerken voor elementen.
-
-* De invoer of de output van de ZEEP en complexe gegevensstructuren steunen nu Dynamische Vervanging van de Groep.
+* Elke pagina van een adaptief formulier bevat nu één titel en één hoofdlabel met een liggend streepje.
 
 ## Belangrijkste functies in vorige AEM 6.5-servicepacks
 
-### Smart Imaging voor dynamische media {#smart-imaging}
+### Smart Imaging voor dynamische media (6.5.3.0) {#smart-imaging}
 
-Slimme beeldverwerking maakt gebruik van de unieke weergavekenmerken van elke gebruiker, zodat deze automatisch de juiste afbeeldingen levert die zijn geoptimaliseerd voor zijn of haar ervaring, wat resulteert in betere prestaties en betrokkenheid. Slimme beeldverwerking werkt met bestaande voorinstellingen voor afbeeldingen en maakt gebruik van intelligentie tijdens de laatste milliseconde van levering om de bestandsgrootte van de afbeelding verder te beperken op basis van de snelheid van de browser of netwerkverbinding. Zie [Slimme afbeeldingen](../assets/imaging-faq.md).
+Slimme beeldverwerking gebruikt de unieke weergavekenmerken van elke gebruiker om automatisch de juiste afbeeldingen te leveren die zijn geoptimaliseerd voor zijn of haar ervaring, wat resulteert in betere prestaties en betrokkenheid. Slimme beeldverwerking werkt met bestaande voorinstellingen voor afbeeldingen en maakt gebruik van intelligentie tijdens de laatste milliseconde van levering om de bestandsgrootte van de afbeelding verder te beperken op basis van de snelheid van de browser of netwerkverbinding. Zie [Slimme afbeeldingen](../assets/imaging-faq.md).
 
-### Visuele zoekopdracht naar AEM-elementen {#visual-search}
+### Visuele zoekopdracht naar AEM-elementen (6.5.2.0) {#visual-search}
 
 Met middelen kunnen gebruikers visueel vergelijkbare afbeeldingen zoeken. AEM geeft de slimme getagde afbeeldingen uit de DAM-opslagplaats weer die lijken op een door de gebruiker geselecteerde afbeelding. Zie [Visueel onderzoek](../assets/search-assets.md).
 
-### Deel en verzoek toegang tot Inbox punten van een gebruiker {#share-request-access}
+### Delen en toegang aanvragen tot postvakken van een gebruiker (6.5.3.0) {#share-request-access}
 
-U kunt uw Inbox punten met een andere gebruiker delen. Zodra een andere gebruiker toegang heeft tot uw Inbox-items, kan de gebruiker een claim indienen en de juiste actie ondernemen voor gedeelde items. Op dezelfde manier kunt u andere gebruikers om toegang tot Inbox-items verzoeken. Zie [Delen en verzoek om toegang tot Inbox-items van een gebruiker](../forms/using/configure-shared-queues-osgi.md).
+U kunt uw Inbox punten met een andere gebruiker delen. Zodra een andere gebruiker toegang krijgt tot uw Inbox-items, kan de gebruiker een claim indienen en de juiste actie ondernemen voor gedeelde items. Op dezelfde manier kunt u andere gebruikers om toegang tot Inbox-items verzoeken. Zie [Delen en verzoek om toegang tot Inbox-items van een gebruiker](../forms/using/configure-shared-queues-osgi.md).
 
-### Vorm uit bureau het plaatsen voor uw Inbox punten {#configure-out-of-office}
+### Vorm het uit-van-bureau plaatsen voor uw Inbox punten (6.5.3.0) {#configure-out-of-office}
 
 Als u van plan bent om uit het bureau te zijn, kunt u specificeren wat aan punten gebeurt die aan u voor die periode worden toegewezen.
 U kunt een begindatum en -tijd en een einddatum en -tijd opgeven die van kracht moeten worden als uw instellingen buiten het kantoor zijn. U kunt een standaardpersoon instellen waarnaar al uw items worden verzonden. Zie [Vorm uit de montages](../forms/using/configure-out-of-office-settings.md)van het Bureau.
 
-### Meerdere interactieve communicatie genereren met de Batch-API {#generate-multiple-ic}
+### Meerdere interactieve communicatie genereren met de Batch-API (6.5.3.0) {#generate-multiple-ic}
 
 U kunt de batch-API gebruiken om meerdere interactieve communicatie van een sjabloon te maken. De sjabloon is een interactieve communicatie zonder gegevens. De batch-API combineert gegevens met een sjabloon voor interactieve communicatie. De API is nuttig bij de massaproductie van interactieve communicatie. Bijvoorbeeld telefoonrekeningen, creditcardoverzichten voor meerdere klanten. Zie Meerdere interactieve communicatie [genereren met de Batch-API](../forms/using/generate-multiple-interactive-communication-using-batch-api.md).
 
-### Standaardvalidatiefoutenberichten voor adaptieve formulieren {#standard-validation}
 
-Aangepaste formulieren kunnen nu worden geïntegreerd met aangepaste services om gegevensvalidaties uit te voeren. Als de invoerwaarden niet voldoen aan de validatiecriteria en het foutbericht dat de server retourneert, de standaardberichtindeling heeft, worden de foutberichten in het formulier op veldniveau weergegeven. Als de invoerwaarden niet voldoen aan de validatiecriteria en het foutbericht voor servervalidatie niet in de standaardberichtindeling is, bieden de adaptieve formulieren een mechanisme om de foutberichten voor validatie om te zetten in een standaardnotatie, zodat ze op veldniveau in het formulier worden weergegeven. Zie [Standaardfoutberichten voor validatie voor adaptieve formulieren](../forms/using/standard-validation-error-messages-adaptive-forms.md).
 
 ## Belangrijke releases sinds AEM 6.5 SP3
 
 Tussen 12 december 2019 en 5 maart 2020 heeft Adobe de volgende functies uitgebracht die buiten de kernlevering van AEM vallen:
 
-* AEM Cloud Manager 2020.1.0 en 2020.2.0Maandelijkse verbeteringen in Cloud Manager, de laatste twee versies waren gericht op het verbeteren van de pijpleidingsstatus en de capaciteit om logboeken voor de diverse stappen te downloaden. Lees hier de volledige opmerkingen over de release:
+* AEM Cloud Manager 2020.1.0 en 2020.2.0De release werkt de status van de pijplijn en de mogelijkheid om logbestanden te downloaden voor verschillende stappen bij. Meer informatie:
    * [Cloud Manager 2020.1.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-2020-1-0.html)
 
    * [Cloud Manager 2020.2.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-current.html)
 
-* Updates van AEM Cloud Manager CLIAutomate Cloud Manager-taken met behulp van het opdrachtregelprogramma. Wij breiden voortdurend CLI uit - sluit zich aan bij op [GitHub](https://github.com/adobe/aio-cli-plugin-cloudmanager/releases).
+* AEM Cloud Manager CLI-updates
 
-* AEM-sites: Projectarchetype 23The best way to start a new AEM project. Met Archetype 23 [verenigen wij het Archetype van het Project voor SPA en regelmatige plaatsen in één](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-23), verder verstrekkend een standaardthema om uw front-end ontwikkeling te starten.
+   Tot de release-updates behoren het automatiseren van taken van Cloud Manager met behulp van het opdrachtregelprogramma. Zie [GitHub](https://github.com/adobe/aio-cli-plugin-cloudmanager/releases).
 
-* AEM-sites: WKND Reference SiteAll [nieuw referentieproject](https://www.wknd.site/) verpakt met beste praktijken op hoe te om plaatsen met AEM te bouwen. Leer meer door het volledig bijgewerkte [WKND leerprogramma](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html) te lezen en de code van [GitHub](https://github.com/adobe/aem-guides-wknd/releases)te pakken.
+* AEM-sites: Projectarchetype 23
 
-* AEM-sites: Commerce CIF Core Components 0.7.0 en 0.9.0Integrating AEM Sites and Magento Commerce. We [breiden voortdurend speciale kerncomponenten uit en een projectarchetype dat zich richt op handel](https://github.com/adobe/aem-core-cif-components/releases).
+   De beste manier om een nieuw AEM-project te starten. Archetype 23 voegt het Archetype van het [Project voor SPA en regelmatige plaatsen in één](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-23) samen en verstrekt een standaardthema om uw front-end ontwikkeling te starten.
+
+* AEM-sites: WKND-referentiesite
+
+   [Het nieuwe verwijzingsproject](https://www.wknd.site/) verpakt met beste praktijken op hoe te om plaatsen met AEM te bouwen. Lees voor meer informatie de bijgewerkte [WKND-zelfstudie](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html). U kunt de recentste code van [GitHub](https://github.com/adobe/aem-guides-wknd/releases)nemen.
+
+* AEM-sites: Commerce CIF Core Components 0.7.0 en 0.9.0
+
+   AEM-sites integreren met Magento Commerce. Zie het [uitbreiden van de specifieke Componenten van de Kern en Archetype van het Project met nadruk op Handel](https://github.com/adobe/aem-core-cif-components/releases).
 
 * AEM-elementen: Desktop App 2.0.1.1
-   [Desktoptoegang tot de middelen](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html)
 
-* AEM-schermen: Feature Pack 202001Digital Signage rechtstreeks vanuit AEM. Bekijk de nieuwste verbeteringen met het nieuwste Feature Pack. Dit keer [maken we het synchroon afspelen op meerdere mediaspelers](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/release-notes/release-notes-fp-202001.html)mogelijk.
+   Zie [Toegang tot de middelen](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html)verkrijgen voor meer informatie.
+
+* AEM-schermen: Feature Pack 202001
+
+   Digitale handtekening rechtstreeks vanuit AEM. Installeer de verbeteringen met het nieuwste elementenpakket om het synchroon afspelen op meerdere mediaspelers [](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/release-notes/release-notes-fp-202001.html)mogelijk te maken.
 
 ## Nuttige bronnen
 
-* [Handleidingen voor AEM 6.5-gebruikers](../user-guide/capabilities.md)
+* [Handleidingen voor AEM 6.5-gebruikers](../user-guide/home.md)
 
 * [Algemene opmerkingen bij de release van Adobe Experience Manager 6.5](release-notes.md)
 

@@ -10,15 +10,15 @@ topic-tags: developing
 content-type: reference
 discoiquuid: b97abfc9-62e6-470c-bb86-086e662c8091
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 ---
 
 
 # Sandbox-inhoud ontwikkelen {#develop-sandbox-content}
 
-**[Clientlibs ⇐ toevoegen](add-clientlibs.md)**
+**[Clientlibs toevoegen](add-clientlibs.md)**
 
 Op dit punt is het mogelijk om communautaire eigenschappen in de zandbak naast het gebruiken van [wij-Detailhandel Gemeenschap](../../help/sites-developing/we-retail.md), de [Communautaire Gids](components-guide.md) van Componenten en [eigenschapessentiële](essentials.md) ter referentie te onderzoeken.
 
-**[Clientlibs ⇐ toevoegen](add-clientlibs.md)**
+

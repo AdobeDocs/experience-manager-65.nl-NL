@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 24b6d1d2-c118-4a25-959f-2783961c4ae3
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 5b8b1544645465d10e7c2018364b6a74f1ad9a8e
 
 ---
 
@@ -91,7 +91,7 @@ Skin maken kan worden bereikt door de framestijlen selectief te overschrijven of
 
 Een skin toewijzen aan een component:
 
-1. Identificeer de elementen die u wilt wijzigen (bijvoorbeeld: compositiegebied, werkbalkknoppen, berichtlettertype, enz.).
+1. Identificeer de elementen die u wilt wijzigen (bijvoorbeeld: composergebied, werkbalkknoppen, berichtlettertype, enz.).
 1. Identificeer de CSS klasse/de regels die deze elementen beïnvloeden.
 1. Maak een stijlbladbestand (.css).
 1. Neem het opmaakmodel op in een clientbibliotheekmap ([clientlibs](#clientlibs-for-scf)) voor uw site en zorg ervoor dat dit opneemt vanuit uw sjablonen en pagina&#39;s met [ui:includeClientLib](../../help/sites-developing/clientlibs.md).
@@ -102,9 +102,9 @@ De aangepaste stijlen overschrijven nu de standaardframestijlen en de component 
 
 >[!CAUTION]
 >
->Elke CSS-klassenaam die wordt voorafgegaan door** scf-js-&amp;ast;**heeft een specifiek gebruik in javascript-code. Deze klassen beïnvloeden de status van een component (bijvoorbeeld van verborgen naar zichtbaar schakelen) en mogen niet worden overschreven of verwijderd.
+>Elke CSS-klassenaam die vooraf is ingesteld met `scf-js` heeft een specifiek gebruik in javascript-code. Deze klassen beïnvloeden de status van een component (bijvoorbeeld van verborgen naar zichtbaar schakelen) en mogen niet worden overschreven of verwijderd.
 >
->Terwijl scf-js-&amp;ast; klassen zijn niet van invloed op stijlen, de klassennamen kunnen in stijlpagina&#39;s worden gebruikt met de waarschuwing dat er, aangezien ze de statussen van elementen bepalen, bijwerkingen kunnen optreden.
+>Hoewel de `scf-js` klassen geen invloed hebben op stijlen, kunnen de klassennamen in stijlpagina&#39;s worden gebruikt met de waarschuwing dat er, aangezien ze de statussen van elementen bepalen, bijwerkingen kunnen optreden.
 
 ## JavaScript uitbreiden {#extending-javascript}
 
@@ -145,7 +145,7 @@ Als u een JavaScript-implementatie voor componenten wilt uitbreiden, hebt u alle
 
 Scripttags vormen een inherent onderdeel van het clientframework. Zij zijn de lijm die de prijsverhoging bindt die op de serverkant met de modellen en de meningen op de cliëntkant wordt geproduceerd.
 
-Scripttags in SCF-scripts mogen niet worden verwijderd wanneer componenten worden overschreven of overschreven. SCF-scripttags die automatisch zijn gemaakt voor het injecteren van JSON in de HTML, worden aangeduid met het kenmerk `data-scf-json=`true.
+Scripttags in SCF-scripts mogen niet worden verwijderd wanneer componenten worden overschreven of overschreven. SCF-scripttags die automatisch zijn gemaakt voor het injecteren van JSON in de HTML, worden aangeduid met het kenmerk `data-scf-json=true`.
 
 ## Clientlibs voor SCF {#clientlibs-for-scf}
 
@@ -164,12 +164,12 @@ De volledige (niet-auteur) clientlibs bevatten afhankelijkheden en zijn handig v
 
 Deze versies zijn te vinden in:
 
-* /etc/clientlibs/social/hbs/&lt;componentnaam>
+* `/etc/clientlibs/social/hbs/&lt;component name&gt;`
 
 Bijvoorbeeld:
 
-* Clientmapknooppunt: /etc/clientlibs/social/hbs/forum
-* Eigenschap Categorieën: cq.social.hbs.forum
+* Clientmapknooppunt: `/etc/clientlibs/social/hbs/forum`
+* Eigenschap Categorieën: `cq.social.hbs.forum`
 
 De gids [van de Componenten van de](components-guide.md) Gemeenschap maakt een lijst van de volledige clientlibs die voor elke component SCF wordt vereist.
 
@@ -183,12 +183,12 @@ Deze clientlibs moeten nooit rechtstreeks worden opgenomen, maar zijn in plaats 
 
 Deze versies staan in de map SCF libs:
 
-* /libs/social/&lt;feature>/components/hbs/&lt;componentnaam>/clientlibs
+* `/libs/social/&lt;feature&gt;/components/hbs/&lt;component name&gt;/clientlibs`
 
 Bijvoorbeeld:
 
-* Clientmapknooppunt: /libs/social/forum/hbs/forum/clientlibs
-* Eigenschap Categorieën: cq.social.auteur.hbs.forum
+* Clientmapknooppunt: `/libs/social/forum/hbs/forum/clientlibs`
+* Eigenschap Categorieën: `cq.social.author.hbs.forum`
 
 Opmerking: hoewel auteur clientlibs geen andere bibliotheken inbedden , maken ze een lijst van hun afhankelijkheden . Wanneer de afhankelijkheden zijn ingesloten in andere bibliotheken, worden deze niet automatisch ingesloten en moeten ze ook worden ingesloten.
 

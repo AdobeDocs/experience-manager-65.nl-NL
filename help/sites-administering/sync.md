@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: c061b358-8c0d-40d3-8090-dc9800309ab3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+source-git-commit: 07ac9c0e0836fc7000062c27dbdeb70059997089
 
 ---
 
@@ -293,7 +293,7 @@ Als er aangepaste gegevens zijn die moeten worden gesynchroniseerd in meerdere p
 
 ![](assets/chlimage_1-26.png)
 
-* **Knooppunttypen**Dit is de lijst met knooppunttypen die worden gesynchroniseerd. Elk knooppunttype anders dan sling:Folder moet hier worden vermeld (sling:folder wordt afzonderlijk behandeld).
+* **De Types**Dit is de lijst van knooptypes die zullen synchroniseren. Elk knooppunttype anders dan sling:Folder moet hier worden vermeld (sling:folder wordt afzonderlijk behandeld).
 Standaardlijst met knooppunttypen die moeten worden gesynchroniseerd:
 
    * rep:gebruiker
@@ -328,7 +328,7 @@ Als het Verdelen identiteitskaart het zelfde voor veelvoudige publiceer instanti
 
 Om te controleren of alle waarden voor de Verschuivende id verschillen, publiceert u voor elke publicatie-instantie:
 
-1. surf naar [https://*host:poort*/systeem/console/status-slingsettings](https://localhost:4503/system/console/status-slingsettings)
+1. bladeren naar `http://<host>:<port>/system/console/status-slingsettings`
 1. Controleer de waarde van de **verkoopID**
 
 ![](assets/chlimage_1-27.png)
@@ -458,7 +458,7 @@ In de lijst is een URL opgenomen voor elke publicatie-instantie die de diagnosti
 
 ### Configuratie onjuist toegevoegd {#configuration-improperly-added}
 
-Wanneer de gebruikerssynchronisatie niet werkt, is het meest voorkomende probleem dat er extra configuraties zijn *toegevoegd*. In plaats daarvan, zou *existing *default configuratie *uitgegeven* moeten zijn.
+Wanneer de gebruikerssynchronisatie niet werkt, is het meest voorkomende probleem dat er extra configuraties zijn *toegevoegd*. In plaats daarvan, zou de *existing *default configuratie *uitgegeven* moeten zijn.
 
 Na zijn meningen van hoe uitgegeven, standaardconfiguraties in de Console van het Web zouden moeten verschijnen. Als er meerdere exemplaren worden weergegeven, moet de toegevoegde configuratie worden verwijderd.
 

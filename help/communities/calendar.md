@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 70fa0b9c-cb98-45c4-9c94-bef4a9f3741e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 5b8b1544645465d10e7c2018364b6a74f1ad9a8e
 
 ---
 
 
-# Kalenderfunctie{#calendar-feature}
+# Kalenderfunctie {#calendar-feature}
 
 ## Inleiding {#introduction}
 
@@ -24,8 +24,8 @@ De kalenderfunctie biedt ondersteuning voor het verschaffen van informatie over 
 
 In deze sectie van de documentatie wordt beschreven
 
-* het toevoegen van de kalendereigenschap aan een plaats AEM
-* configuratie-instellingen voor `Calendar`componenten
+* De kalenderfunctie toevoegen aan een AEM-site
+* Configuratie-instellingen voor `Calendar`componenten
 
 ## Een kalender toevoegen aan een pagina {#adding-a-calendar-to-a-page}
 
@@ -49,67 +49,119 @@ Selecteer de geplaatste `Calendar`component die u wilt openen en selecteer het `
 
 #### Het tabblad Instellingen {#settings-tab}
 
-Geef op onder het tabblad **Instellingen **of tags mogen worden toegepast op kalenderitems.
+Geef op het tabblad **Instellingen** op of labels mogen worden toegepast op kalenderitems.
 
-* **Gebeurtenissen per pagina** bepalen het aantal gebeurtenissen dat per pagina wordt weergegeven. De standaardwaarde is 10.
+* **Gebeurtenissen per pagina**
 
-* **Gemoderniseerd** Als deze optie is ingeschakeld, moet het posten van kalendergebeurtenissen en opmerkingen worden goedgekeurd voordat deze op een publicatiesite worden weergegeven. De optie Standaard is uitgeschakeld.
+   Hiermee definieert u het aantal gebeurtenissen dat per pagina wordt weergegeven. De standaardwaarde is 10.
 
-* **Gesloten** Als deze optie is ingeschakeld, wordt de kalender gesloten voor nieuwe gebeurtenisitems en opmerkingen. De optie Standaard is uitgeschakeld.
+* **Gematigd**
 
-* **De Rich Text Editor** Als deze optie is ingeschakeld, kunnen kalendergebeurtenissen en opmerkingen worden ingevoerd met markering. Standaard is ingeschakeld.
+   Als deze optie is ingeschakeld, moet het posten van kalendergebeurtenissen en opmerkingen worden goedgekeurd voordat deze op een publicatiesite worden weergegeven. De optie Standaard is uitgeschakeld.
 
-* **Labelen** toestaan Als deze optie is ingeschakeld, kunnen leden labels toevoegen aan de gebeurtenissen die ze posten (zie tabblad **Tagveld** ). Standaard is ingeschakeld.
+* **Gesloten**
 
-* **Bestand uploaden** toestaan Als ingeschakeld, toestaan dat bestandsbijlagen worden toegevoegd aan een agendagebeurtenis of -opmerking. Standaard is ingeschakeld.
+   Als deze optie is ingeschakeld, wordt de kalender gesloten voor nieuwe gebeurtenisitems en opmerkingen. De optie Standaard is uitgeschakeld.
 
-* **Na** inschakelen toestaan Als deze optie is ingeschakeld, kunnen leden gebeurtenissen volgen die naar de kalender zijn gepost. Standaard is ingeschakeld.
+* **RTF-editor**
 
-* **Maximale bestandsgrootte** alleen relevant als deze `Allow File Uploads` is ingeschakeld. Met dit veld wordt de grootte (in bytes) van een geüpload bestand beperkt. De standaardwaarde is 104857600 (10 MB).
+   Als deze optie is ingeschakeld, kunnen kalendergebeurtenissen en opmerkingen worden ingevoerd met een markering. Standaard is ingeschakeld.
 
-* **Alleen toegestane bestandstypen** relevant als deze `Allow File Uploads` is ingeschakeld. Een door komma&#39;s gescheiden lijst met bestandsextensies met het &quot;punt&quot;-scheidingsteken. Bijvoorbeeld: .jpg, .jpeg, .png, .doc, .docx, .pdf. Als er bestandstypen zijn opgegeven, mogen de niet opgegeven bestandstypen niet worden geüpload. De standaardinstelling is niet opgegeven, zodat alle bestandstypen zijn toegestaan.
+* **Tags toestaan**
 
-* **Maximale bestandsgrootte** van afbeelding alleen relevant koppelen als Uploaden van bestand toestaan is ingeschakeld. Het maximum aantal bytes dat een geüploade afbeeldingsbestand kan hebben. De standaardwaarde is 2097152****(2 MB).
+   Als deze optie is ingeschakeld, kunnen leden labels toevoegen aan de gebeurtenissen die ze posten (zie tabblad **Tagveld** ). Standaard is ingeschakeld.
 
-* **Afbeeldingstypen** met omslag toegestaan Een door komma&#39;s gescheiden lijst met extensies voor afbeeldingsbestanden met het &quot;punt&quot;-scheidingsteken. Standaard is dit `.jpg,.jpeg,.png,.gif,.bmp`.
+* **Uploaden van bestanden toestaan**
 
-* **Reacties met verbindingen** toestaanAls deze optie is ingeschakeld, kunt u reacties op opmerkingen die zijn geplaatst voor de agendagebeurtenis toestaan. Standaard is ingeschakeld.
+   Als deze optie is ingeschakeld, staat u toe dat bestandsbijlagen worden toegevoegd aan een agendagebeurtenis of -opmerking. Standaard is ingeschakeld.
 
-* **Gebruikers toestaan opmerkingen en gebeurtenissen** te verwijderen Als deze optie is ingeschakeld, kunnen leden de opmerkingen en kalendergebeurtenissen die ze hebben geplaatst, verwijderen. De standaardinstelling is** ** ingeschakeld.
+* **Volgen toestaan**
 
-* **Stemmen** toestaan Indien ingeschakeld, neemt u de functie Stemmen op met een agendagebeurtenis. Standaard is ingeschakeld.
+   Als deze optie is ingeschakeld, kunnen leden gebeurtenissen volgen die naar de kalender zijn gepost. Standaard is ingeschakeld.
 
-* **Breedkruimels** tonen op gebeurtenispagina Standaard is ingeschakeld.
+* **Max. bestandsgrootte**
 
-* **Filter** Datumbereik definieert het aantal dagen dat aan de huidige datum wordt toegevoegd om de waarde &#39;Aan&#39; van het paginafilter voor kalendergebeurtenislijsten te berekenen. Het standaardnummer is 30.
+   Alleen relevant als `Allow File Uploads` is gecontroleerd. Met dit veld wordt de grootte (in bytes) van een geüpload bestand beperkt. De standaardwaarde is 104857600 (10 MB).
 
-* **Aanbevolen inhoud** toestaan als deze optie is ingeschakeld, kan het idee worden geïdentificeerd als [aanbevolen inhoud](/help/communities/featured.md). De optie Standaard is uitgeschakeld.
+* **Toegestane bestandstypen**
 
-Geef onder het tabblad **Moderatie gebruiker ** op hoe de geposte onderwerpen en antwoorden (door de gebruiker gegenereerde inhoud) worden beheerd. Voor meer informatie, zie het [Modereren van Gebruiker Gegenereerde Inhoud](/help/communities/moderate-ugc.md).
+   Alleen relevant als `Allow File Uploads` is gecontroleerd. Een door komma&#39;s gescheiden lijst met bestandsextensies met het &quot;punt&quot;-scheidingsteken. Bijvoorbeeld: .jpg, .jpeg, .png, .doc, .docx, .pdf. Als er bestandstypen zijn opgegeven, mogen de niet opgegeven bestandstypen niet worden geüpload. De standaardinstelling is niet opgegeven, zodat alle bestandstypen zijn toegestaan.
+
+* **Maximale bestandsgrootte afbeelding bijvoegen**
+
+   Alleen relevant als Uploaden van bestand toestaan is ingeschakeld. Het maximum aantal bytes dat een geüploade afbeeldingsbestand kan hebben. De standaardwaarde is 2097152****(2 MB).
+
+* **Toegestane omslagafbeeldingstypen**
+
+   Een door komma&#39;s gescheiden lijst met extensies voor afbeeldingsbestanden met het &quot;punt&quot;-scheidingsteken. Standaard is dit `.jpg,.jpeg,.png,.gif,.bmp`.
+
+* **Reacties met verbindingen toestaan**
+
+   Als deze optie is ingeschakeld, kunt u reacties op opmerkingen die zijn geplaatst voor de agendagebeurtenis toestaan. Standaard is ingeschakeld.
+
+* **Gebruikers toestaan opmerkingen en gebeurtenissen te verwijderen**
+
+   Als deze optie is ingeschakeld, kunnen leden de opmerkingen en kalendergebeurtenissen die ze hebben gepost, verwijderen. De standaardinstelling is** ** ingeschakeld.
+
+* **Stemmen toestaan**
+
+   Indien ingeschakeld, neemt u de functie Stemmen op met een agendagebeurtenis. Standaard is ingeschakeld.
+
+* **Broodkruimels tonen**
+
+   Breedkruimels tonen op gebeurtenispagina. Standaard is ingeschakeld.
+
+* **Filter datumbereik**
+
+   Definieert het aantal dagen dat aan de huidige datum wordt toegevoegd om de waarde &quot;Aan&quot; van het filter voor de paginalijst van kalendergebeurtenissen te berekenen. Het standaardnummer is 30.
+
+* **Aanbevolen inhoud toestaan**
+
+   Als deze optie is ingeschakeld, kan het idee worden geïdentificeerd als [aanbevolen inhoud](/help/communities/featured.md). De optie Standaard is uitgeschakeld.
+
+Onder het lusje van de Moderatie **van de** Gebruiker, specificeer hoe de geposte onderwerpen en de antwoorden (gebruiker geproduceerde inhoud) worden beheerd. Voor meer informatie, zie het [Modereren van Gebruiker Gegenereerde Inhoud](/help/communities/moderate-ugc.md).
 
 #### Tabblad Gebruikersmodernisering {#user-moderation-tab}
 
-* **Posten** weigeren Als deze optie is ingeschakeld, mogen gematigde leden posten weigeren en voorkomen dat de post op het openbare forum verschijnt. Standaard is ingeschakeld.
+* **Posten weigeren**
 
-* **Gebeurtenissen** sluiten/opnieuw openen Als deze optie is ingeschakeld, kunnen moderatoren van vertrouwde leden een gebeurtenis sluiten voor verdere bewerkingen en opmerkingen, en kunnen ze ook een gebeurtenis opnieuw openen. Standaard is ingeschakeld.
+   Als deze optie wordt ingeschakeld, zullen de verantwoordelijken van de leden hun functie kunnen ontkennen en voorkomen dat de functie op het openbare forum verschijnt. Standaard is ingeschakeld.
 
-* **Vlagberichten** Als deze optie is ingeschakeld, kunnen leden gebeurtenissen of opmerkingen van anderen als ongeschikt markeren. Standaard is ingeschakeld**.*
+* **Gebeurtenissen sluiten/opnieuw openen**
 
-* **Lijst** met redenen voor vlagAls deze optie is ingeschakeld, kunnen leden in een vervolgkeuzelijst kiezen waarom een gebeurtenis of opmerking als ongeschikt wordt gemarkeerd. De optie Standaard is uitgeschakeld.
+   Als deze optie ingeschakeld is, kunnen vertrouwde moderatoren van leden een gebeurtenis sluiten voor verdere bewerkingen en opmerkingen, en kunnen ze ook een gebeurtenis opnieuw openen. Standaard is ingeschakeld.
 
-* **Reden** voor aangepaste vlag Als dit selectievakje is ingeschakeld, kunnen leden hun eigen reden opgeven om een gebeurtenis of opmerking als ongeschikt te bestempelen. Standaard is uitgeschakeld**.*
+* **Vlagberichten**
 
-* **De Drempel** van de modernisering gaat het aantal tijden in een gebeurtenis of een commentaar moet door leden worden gemarkeerd alvorens moderators worden op de hoogte gebracht. De standaardwaarde is 1 (één keer).
+   Als deze optie is ingeschakeld, kunnen leden gebeurtenissen of opmerkingen van anderen als ongeschikt markeren. Standaard is ingeschakeld**.**
 
-* **Markeringslimiet** Voer het aantal keren in dat een gebeurtenis of opmerking moet worden gemarkeerd voordat deze wordt verborgen in de openbare weergave. Indien ingesteld op -1, wordt het gemarkeerde onderwerp of de opmerking nooit verborgen in de openbare weergave. Anders, moet dit aantal groter dan of gelijk aan de Drempel van de Moderatie zijn. De standaardwaarde is 5.
+* **Lijst met redenen voor vlag**
+
+   Als deze optie is ingeschakeld, kunnen leden in een vervolgkeuzelijst kiezen waarom zij een gebeurtenis of opmerking als ongeschikt aanmerken. De optie Standaard is uitgeschakeld.
+
+* **Reden voor aangepaste vlag**
+
+   Als deze optie is ingeschakeld, kunnen leden hun eigen reden opgeven om een gebeurtenis of opmerking als ongeschikt aan te duiden. Standaard is uitgeschakeld**.**
+
+* **Moderniseringsdrempel**
+
+   Voer het aantal keren in dat een gebeurtenis of opmerking moet worden gemarkeerd door leden voordat moderatoren op de hoogte worden gesteld. De standaardwaarde is 1 (één keer).
+
+* **Limiet voor markering**
+
+   Voer het aantal keren in dat een gebeurtenis of opmerking moet worden gemarkeerd voordat deze wordt verborgen in de openbare weergave. Indien ingesteld op -1, wordt het gemarkeerde onderwerp of de opmerking nooit verborgen in de openbare weergave. Anders, moet dit aantal groter dan of gelijk aan de Drempel van de Moderatie zijn. De standaardwaarde is 5.
 
 #### Tabblad Tagveld {#tag-field-tab}
 
-Onder het tabblad **Tagveld** zijn de tags die kunnen worden toegepast, indien toegestaan onder het tabblad **Instellingen **beperkt afhankelijk van de gekozen naamruimten.
+Onder het tabblad **Tagveld** zijn de tags die kunnen worden toegepast, indien toegestaan op het tabblad **Instellingen** , beperkt op basis van de gekozen naamruimten.
 
-* **Toegestane naamruimten** relevant als deze `Allow Tagging` is ingeschakeld op het tabblad **Instellingen **tab. De tags die kunnen worden toegepast, zijn beperkt tot de tags binnen de geselecteerde naamruimtecategorieën. De lijst met naamruimten bevat &#39;Standaardtags&#39; (de standaardnaamruimte) en &#39;Alle tags opnemen&#39;. De standaardwaarde is niet ingeschakeld, hetgeen betekent dat alle naamruimten zijn toegestaan.
+* **Toegestane naamruimten**
 
-* **Suggestielimiet** Voer het aantal tags in dat moet worden weergegeven als suggestie aan het lid dat naar het forum post. De standaardwaarde is **-**1 (geen limieten).
+   Relevant als `Allow Tagging` wordt gecontroleerd onder het tabblad **Instellingen **tab. De tags die kunnen worden toegepast, zijn beperkt tot de tags binnen de geselecteerde naamruimtecategorieën. De lijst met naamruimten bevat &#39;Standaardtags&#39; (de standaardnaamruimte) en &#39;Alle tags opnemen&#39;. De standaardwaarde is niet ingeschakeld, hetgeen betekent dat alle naamruimten zijn toegestaan.
+
+* **Suggestiegrenswaarde**
+
+   Voer het aantal tags in dat moet worden weergegeven als suggestie aan het lid dat naar het forum post. De standaardwaarde is **-**1 (geen limieten).
 
 >[!NOTE]
 >
@@ -117,9 +169,11 @@ Onder het tabblad **Tagveld** zijn de tags die kunnen worden toegepast, indien t
 
 #### Tabblad Vertaling {#translation-tab}
 
-Als vertaling is ingeschakeld voor de communitysite op de tab **Translation **, kan de vertaling worden ingesteld om de gehele thread (gebeurtenis en opmerkingen) te vertalen in plaats van specifieke posts.
+Als op het tabblad **Vertaling** vertaling is ingeschakeld voor de site van de gebruikersgemeenschap, kan de vertaling zo worden ingesteld dat de volledige thread (gebeurtenis en opmerkingen) wordt vertaald in plaats van specifieke posts.
 
-* **Alles** indien ingeschakeld, worden de gebeurtenis en de opmerkingen vertaald naar de voorkeurstaal van de gebruiker. Standaard is ingeschakeld.
+* **Alles vertalen**
+
+   Als deze optie is ingeschakeld, worden de gebeurtenis en de opmerkingen vertaald naar de voorkeurstaal van de gebruiker. Standaard is ingeschakeld.
 
 ## Ervaring met sitebezoekers {#site-visitor-experience}
 
@@ -139,13 +193,13 @@ Wanneer de ondertekende in gebruiker moderator of beheerdervoorrechten heeft, ku
 
 Wanneer de ondertekende in gebruiker een lid van de gemeenschap of een [geprivilegieerd lid](/help/communities/users.md#privileged-members-group) (afhankelijk van configuratie) is, kunnen zij selecteren `New Event` om een nieuwe kalendergebeurtenis tot stand te brengen en te posten.
 
-Specifiek kunnen zij
+Zij kunnen met name:
 
-* een nieuwe agendagebeurtenis maken
-* een opmerking plaatsen voor een agendagebeurtenis
-* hun eigen agendagebeurtenis of commentaar bewerken
-* hun eigen agendagebeurtenis of commentaar verwijderen
-* andere kalendergebeurtenissen of opmerkingen markeren
+* Een nieuwe agendagebeurtenis maken
+* Opmerkingen verzenden naar een agendagebeurtenis
+* Een eigen agendagebeurtenis of commentaar bewerken
+* Verwijder hun eigen agendagebeurtenis of commentaar
+* Andere kalendergebeurtenissen of opmerkingen markeren
 
 ![chlimage_1-151](assets/chlimage_1-151.png) ![chlimage_1-152](assets/chlimage_1-152.png)
 

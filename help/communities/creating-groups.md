@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: d94708ee-ca6b-420c-9536-6889d752f9de
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: e8d8bf89971d3d9d5ec150308dda247aa53c77bb
 
 ---
 
 
-# Communautaire groepen{#community-groups}
+# Communautaire groepen {#community-groups}
 
 De eigenschap van communautaire groepen is de capaciteit voor een subcommunity dynamisch om binnen een communautaire plaats door erkende gebruikers (leden van de gemeenschap en auteurs) van de publicatie en auteursmilieu&#39;s worden gecreeerd.
 
@@ -32,33 +32,45 @@ Het vermogen om een nieuwe communautaire groep tot stand te brengen baseert zich
 
 De volgende voorbeelden maken gebruik van de communitysite die is gemaakt op basis van de `Reference Site Template` beschrijving in de zelfstudie [Aan de slag met AEM Communities](/help/communities/getting-started.md) .
 
-Dit is de pagina die bij publiceren laadt wanneer het **Groepen **menupunt wordt geselecteerd:
+Dit is de pagina die wordt geladen bij publiceren wanneer de menuoptie **Groepen** wordt geselecteerd:
 
 ![chlimage_1-85](assets/chlimage_1-85.png)
 
 Wanneer u het pictogram **Nieuwe groep** selecteert, wordt een dialoogvenster voor bewerken geopend.
 
-Onder het tabblad **Instellingen **geeft u de basiskenmerken van de groep op:
+Op het tabblad **Instellingen** geeft u de basisfuncties van de groep op:
 
 ![chlimage_1-86](assets/chlimage_1-86.png)
 
-* **Groepsnaam** De titel van de groep die op de communitysite moet worden weergegeven.
+* **Groepsnaam**
 
-* **Beschrijving** Een beschrijving van de groep die op de site van de community moet worden weergegeven.
+   De titel van de groep die op de communitysite moet worden weergegeven.
 
-* **Nodig** een lijst met leden uit om uit te nodigen om deel te nemen aan de groep. Bij het zoeken naar vooraf bepaalde typen worden suggesties van leden van de gemeenschap geleverd die u wilt uitnodigen.
+* **Beschrijving**
 
-* **Groepsnaam** URL De naam voor de groepspagina die deel van URL wordt.
+   Een beschrijving van de groep die op de communitysite moet worden weergegeven.
 
-* **Met Groep** openen selecteren `Open Group` geeft u aan dat een anonieme sitebezoeker de inhoud kan weergeven. De selectie wordt opgeheven `Member Only Group`.
+* **Uitnodigen**
 
-* **Alleen leden** selecteren `Member Only Group` geeft aan dat alleen leden van de groep de inhoud mogen bekijken en dat de selectie wordt opgeheven `Open Group`.
+   Een lijst met leden die moeten worden uitgenodigd om deel te nemen aan de groep. Bij het zoeken naar vooraf bepaalde typen worden suggesties van leden van de gemeenschap geleverd die u wilt uitnodigen.
 
-Onder **Template **lusje is de capaciteit om van de lijst van communautaire groepsmalplaatjes te selecteren die werden gespecificeerd toen de groepsfunctie in de structuur van de communautaire plaats of in een malplaatje van de communautaire plaats werd omvat.
+* **URL-naam groep**
+
+   De naam voor de groepspagina die deel van URL wordt.
+
+* **Groep openen**
+
+   Als u `Open Group` deze optie selecteert, wordt aangegeven dat een anonieme sitebezoeker de inhoud kan bekijken en wordt de selectie opgeheven `Member Only Group`.
+
+* **Groep alleen lid**
+
+   Als u deze optie selecteert, `Member Only Group` worden alleen leden van de groep weergegeven die de inhoud kunnen weergeven. De selectie wordt opgeheven `Open Group`.
+
+Onder het lusje van het **Malplaatje** is de capaciteit om van de lijst van communautaire groepsmalplaatjes te selecteren die werden gespecificeerd toen de groepsfunctie in de structuur van de communautaire plaats of in een malplaatje van de communautaire plaats werd omvat.
 
 ![chlimage_1-87](assets/chlimage_1-87.png)
 
-Onder het tabblad **Image **is de mogelijkheid om een afbeelding te uploaden die voor de groep wordt weergegeven op de pagina Groepen van de communautaire site. De afbeelding wordt op het standaardstijlblad vergroot tot 170 x 90 pixels.
+Onder het tabblad **Afbeelding** kunt u een afbeelding uploaden om deze voor de groep weer te geven op de pagina Groepen van de website van de gemeenschap. De afbeelding wordt op het standaardstijlblad vergroot tot 170 x 90 pixels.
 
 ![chlimage_1-88](assets/chlimage_1-88.png)
 

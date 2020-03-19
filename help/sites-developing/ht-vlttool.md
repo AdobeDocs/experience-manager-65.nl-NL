@@ -10,7 +10,7 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: a76425e9-fd3b-4c73-80f9-0ebabb8fd94f
 translation-type: tm+mt
-source-git-commit: a7c3848704ee2b4b984fafcd82e29a75ea8d3443
+source-git-commit: 2da3da1a36f074593e276ddd15ed8331239ab70f
 
 ---
 
@@ -39,7 +39,7 @@ Als u VLT wilt gaan gebruiken, moet u het volgende doen:
 
 Als u het gereedschap VLT wilt gebruiken, moet u het eerst installeren. Het is niet standaard geïnstalleerd omdat het een aanvullend gereedschap is. Daarnaast moet u de omgevingsvariabele van uw systeem instellen.
 
-1. Download het archiefbestand FileVault van de website van [Apache Jackrabbit.](https://jackrabbit.apache.org/jcr/downloads.html#vlt)
+1. Download het archiefbestand FileVault van de opslagplaats [Maven Artefact.](https://repo1.maven.org/maven2/org/apache/jackrabbit/vault/vault-cli/)
    >[!NOTE]
    >
    >De bron van het hulpmiddel VLT is [beschikbaar op GitHub.](https://github.com/apache/jackrabbit-filevault)
@@ -137,7 +137,7 @@ Nadat u de opslagplaats hebt uitgecheckt en gesynchroniseerd, moet u testen of a
 
 De synchronisatie testen:
 
-1. Navigeer naar `.../jcr_content/libs/foundation/components/text`.
+1. Ga naar `.../jcr_content/libs/foundation/components/text`.
 1. Bewerk iets in `text.jsp`.
 1. De gewijzigde bestanden bekijken door te typen `vlt st`
 1. De wijzigingen bekijken door te typen `vlt diff text.jsp`
@@ -295,7 +295,7 @@ Hieronder volgt een lijst met VLT-opties, die beschikbaar zijn voor alle opdrach
 
 |  |  |
 |--- |--- |
-| Option | Beschrijving |
+| Optie | Beschrijving |
 | `-Xjcrlog <arg>` | Uitgebreide JcrLog-opties |
 | `-Xdavex <arg>` | Uitgebreide opties voor JCR-verwijdering |
 | `--credentials <arg>` | De standaardreferenties die moeten worden gebruikt |
@@ -351,7 +351,7 @@ export -v|-t <arg>|-p <uri> <jcr-path> <local-path>
 | `-t (--type) <arg>` | Hiermee geeft u het exporttype op: platform of jar. |
 | `-p (--prune-missing)` | geeft aan of ontbrekende lokale bestanden moeten worden verwijderd |
 | `<uri>` | uri van het montagepunt |
-| `<jcrPath>` |  JCR-pad |
+| `<jcrPath>` | JCR-pad |
 | `<localPath>` | lokaal pad |
 
 #### Voorbeelden {#examples}
@@ -377,7 +377,7 @@ import -v|-s <uri> <local-path> <jcr-path>
 | `-v (--verbose)` | uitgebreide uitvoer |
 | `-s (-- sync)` | plaatst de lokale bestanden onder de vault-controle |
 | `<uri>` | uri van het montagepunt |
-| `<jcrPath>` |  JCR-pad |
+| `<jcrPath>` | JCR-pad |
 | `<localPath>` | lokaal pad |
 
 #### Voorbeelden {#examples-1}
@@ -485,7 +485,7 @@ update -v|-q|--force|-N <file1> [<file2> ...]
 |--- |--- |
 | `-v (--verbose)` | uitgebreide uitvoer |
 | `-q (--quiet)` | zo weinig mogelijk afdrukken |
-| `--force` | overschrijven van lokale bestanden forceren |
+| `--force` | forceert het overschrijven van lokale bestanden |
 | `-N (--non-recursive)` | werkt op één directory |
 | `<file> [<file> ...]` | bestand of map dat moet worden bijgewerkt |
 

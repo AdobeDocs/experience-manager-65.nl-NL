@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 8ae324ea-8b84-47a3-aabf-1fee2a3bd46d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
+source-git-commit: e8d8bf89971d3d9d5ec150308dda247aa53c77bb
 
 ---
 
@@ -25,7 +25,7 @@ Gebruik de auteur instantie om een communautaire plaats tot stand te brengen. In
 1. Meld u aan met beheerdersrechten.
 1. Van globale navigatie, ga naar **Navigatie, Gemeenschappen, Plaatsen.**
 
-De console van de Plaatsen van Gemeenschappen verstrekt een tovenaar om door de stappen te begeleiden om een communautaire plaats tot stand te brengen. U kunt verder gaan naar de `Next`stap of `Back`naar de vorige stap voordat u de site in de laatste stap toewijst.
+De console van de Plaatsen van Gemeenschappen verstrekt een tovenaar om door de stappen te begeleiden om een communautaire plaats tot stand te brengen. U kunt verder gaan naar de `Next` stap of `Back` naar de vorige stap voordat u de site in de laatste stap toewijst.
 
 Ga als volgt te werk om een nieuwe communitysite te maken:
 
@@ -47,10 +47,10 @@ Voer in de stap [Sjabloon](/help/communities/sites-console.md#step2013asitetempl
 
 * **Naam** van communautaire site: aangaan
 
-   * Controleer de naam nogmaals omdat deze na het maken van de site niet gemakkelijk kan worden gewijzigd
-   * de eerste URL wordt onder de naam van de communautaire site weergegeven
-   * voor een geldige URL voegt u een basistaalcode + &quot;.html&quot; toe
-   * *bijvoorbeeld* https://localhost:4502/content/sites/ `engage/en.html`
+   * Controleer de naam tweemaal omdat deze na het maken van de site niet gemakkelijk kan worden gewijzigd
+   * De eerste URL wordt onder de naam van de communautaire site weergegeven
+   * Voeg voor een geldige URL een basistaalcode + &quot;.html&quot; toe
+   * *Bijvoorbeeld* https://localhost:4502/content/sites/ `engage/en.html`
 
 * **Sjabloon**: naar beneden halen om te kiezen `Reference Site`
 
@@ -66,7 +66,7 @@ Selecteer de gewenste stijl die u op de sjabloon wilt toepassen. Als deze optie 
 
 #### COMMUNAUTAIRE SITOBRANDING {#community-site-branding}
 
-(optioneel) Upload een bannerafbeelding voor weergave op de sitepagina&#39;s. De banner is vastgezet aan de linkerrand van browser, tussen de communautaire plaatsheader en navigatiekoppelingen. De bannerhoogte wordt bijgesneden tot 120 pixels. Er wordt geen grootte van de banner aangepast aan de breedte van de browser en de hoogte van 120 pixels.
+(Optioneel) Upload een bannerafbeelding voor weergave op de sitepagina&#39;s. De banner is vastgezet aan de linkerrand van browser, tussen de communautaire plaatsheader en navigatiekoppelingen. De bannerhoogte wordt bijgesneden tot 120 pixels. Er wordt geen grootte van de banner aangepast aan de breedte van de browser en de hoogte van 120 pixels.
 
 ![chlimage_1-58](assets/chlimage_1-58.png) ![chlimage_1-59](assets/chlimage_1-59.png)
 
@@ -82,11 +82,11 @@ Ga naar de zelfstudie Aan de [slag met AEM Communities voor Inschakelen](/help/c
 
 Schakel alle selectievakjes voor [gebruikersbeheer in](/help/communities/sites-console.md#user-management)
 
-* sitebezoekers in staat stellen zich te registreren
-* sitebezoekers toestaan de site te bekijken zonder zich aan te melden
-* leden toestaan berichten van andere leden van de gemeenschap te verzenden en te ontvangen
-* aanmelden met Facebook toestaan in plaats van zich te registreren en een profiel te maken
-* aanmelden met Twitter toestaan in plaats van zich te registreren en een profiel te maken
+* Sitebezoekers toestaan zich te registreren
+* Site-bezoekers toestaan de site weer te geven zonder zich aan te melden
+* Leden toestaan berichten van andere leden van de gemeenschap te verzenden en te ontvangen
+* Aanmelden met Facebook toestaan in plaats van zich te registreren en een profiel te maken
+* Aanmelden met Twitter toestaan in plaats van zich te registreren en een profiel te maken
 
 >[!NOTE]
 >
@@ -94,14 +94,14 @@ Schakel alle selectievakjes voor [gebruikersbeheer in](/help/communities/sites-c
 
 ![site-instellingen van community](assets/site-settings.png)
 
-#### TAGS {#tagging}
+#### TAGGING {#tagging}
 
 De tags die kunnen worden toegepast op community-inhoud, worden beheerd door AEM-naamruimten te selecteren die eerder zijn gedefinieerd via de [Tagingconsole](/help/sites-administering/tags.md#tagging-console) (zoals de naamruimte [van de](/help/communities/setup.md#create-tutorial-tags)zelfstudie).
 
-Het zoeken naar naamruimten is eenvoudig met &#39;type-ahead&#39;-zoekopdracht. Bijvoorbeeld,
+Het zoeken naar naamruimten is eenvoudig met &#39;type-ahead&#39;-zoekopdracht. Bijvoorbeeld:
 
-* type &#39;tut&#39;
-* select `Tutorial`
+* Type `tut`
+* Selecteer `Tutorial`
 
 ![chlimage_1-60](assets/chlimage_1-60.png)
 
@@ -111,10 +111,10 @@ Het zoeken naar naamruimten is eenvoudig met &#39;type-ahead&#39;-zoekopdracht. 
 
 Als u een lid van de gemeenschap (of groep leden) de site wilt laten ervaren als gemeenschapsbeheerder, gebruikt u de typecontrole en selecteert u de naam van het lid of de groep in de keuzelijst.
 
-Bijvoorbeeld,
+Bijvoorbeeld:
 
-* type &quot;q&quot;
-* Selecteer [Quinn Harper](/help/communities/enablement-setup.md#publishcreateenablementmembers)
+* Type `q`
+* Quinn Harper [selecteren](/help/communities/enablement-setup.md#publishcreateenablementmembers)
 
 >[!NOTE]
 >
@@ -141,11 +141,11 @@ Zie [Analytics Configuration for Communities Features](/help/communities/analyti
 In de [vertaalinstellingen](/help/communities/sites-console.md#translation) wordt de basistaal voor de site opgegeven en wordt aangegeven of UGC kan worden vertaald en in welke taal, indien dat het geval is.
 
 * Controleren **machinevertaling toestaan**
-* standaardtalen geselecteerd laten voor vertaling door de standaardvertaalservice voor machines
-* de standaard vertaalprovider en config verlaten
-* er is geen behoefte aan een wereldwijde winkel omdat er geen taalkopieën zijn
-* volledige pagina **vertalen selecteren**
-* standaard persistentieoptie laten
+* Laat standaardtalen geselecteerd blijven voor vertaling door de standaardvertaalservice voor machines
+* Standaard vertaalprovider en config laten staan
+* Er is geen behoefte aan een globale opslag omdat er geen taalexemplaren zijn
+* Volledige pagina **vertalen selecteren**
+* De optie Standaardpersistentie behouden
 
 ![chlimage_1-63](assets/chlimage_1-63.png)
 
@@ -181,16 +181,26 @@ Als u het vierde ovalenpictogram selecteert (Meer handelingen), worden de opties
 
 Van links naar rechts zijn ze:
 
-* **Open Site** en selecteer het potloodpictogram om de gemeenschapssite te openen in de modus Bewerken door auteur om paginacomponenten toe te voegen en/of te configureren
+* **Site openen**
 
-* **Site** bewerken: selecteer het eigenschappenpictogram om de site van de community te openen voor wijziging van eigenschappen, zoals de titel of om het thema te wijzigen
+   Selecteer het potloodpictogram om de gemeenschapssite te openen in de modus Bewerken door auteur om paginacomponenten toe te voegen en/of te configureren
 
-* **Site** publiceren selecteert u het wereldpictogram om de communitysite te publiceren (bijvoorbeeld als uw publicatieserver op uw lokale computer wordt uitgevoerd en vervolgens standaard naar localhost:4503)
+* **Site bewerken**
 
-* **Met Site** exporteren selecteert u het exportpictogram om een pakket van de communitysite te maken dat zowel in [pakketbeheer](/help/sites-administering/package-manager.md) wordt opgeslagen als wordt gedownload.
+   Selecteer het eigenschappenpictogram om de communitysite te openen voor wijziging van eigenschappen, zoals de titel of om het thema te wijzigen
+
+* **Site publiceren**
+
+   Selecteer het wereldpictogram om de communitysite te publiceren (bijvoorbeeld als uw publicatieserver op uw lokale computer wordt uitgevoerd en vervolgens standaard naar localhost:4503)
+
+* **Site exporteren**
+
+   Selecteer het exportpictogram om een pakket van de communitysite te maken dat zowel in [pakketbeheer](/help/sites-administering/package-manager.md) is opgeslagen als is gedownload.
 UGC is niet opgenomen in het sitepakket.
 
-* **Site verwijderen**selecteer het verwijderpictogram om de communitysite te verwijderen uit de Community-versie > Sites-console. Met deze actie verwijdert u alle items die aan de site zijn gekoppeld, zoals UGC, gebruikersgroepen, elementen en databaserecords.
+* **Site verwijderen**
+
+   Selecteer het verwijderpictogram om de communitysite te verwijderen uit **[UIControl Communities > Sites console]**. Met deze actie verwijdert u alle items die aan de site zijn gekoppeld, zoals UGC, gebruikersgroepen, elementen en databaserecords.
 
 ![sitehandelingen](assets/siteactions.png)
 
@@ -200,16 +210,17 @@ UGC is niet opgenomen in het sitepakket.
 >
 >In de auteurinstantie, van het belangrijkste menu:
 >
->1. Ga naar Opties > Bewerkingen > menu Replicatie.
-1. Selecteer &quot;Agenten op auteur&quot;.
-1. Selecteer &quot;Standaardagent (publiceren)&quot;.
-1. Selecteer &quot;Bewerken&quot; naast &quot;Instellingen&quot;.
-1. In pop-up dialoog voor de Montages van de Agent, uitgezochte Vervoer tabel.
-1. Wijzig in URI het poortnummer 4503 in het gewenste poortnummer >
-   * bijvoorbeeld poort 6103 gebruiken:
-https://localhost:6103/bin/receive?sling:authRequestLogin=1
-1. Selecteer &quot;OK&quot;.
-1. (optioneel) Selecteer &quot;Wissen&quot; of &quot;Opnieuw proberen forceren&quot; om de replicatiewachtrij opnieuw in te stellen.
+>1. Navigeer naar het menu **[UIControl Tools > Operations > Replication]** .
+>1. Selecteer **[Medewerkers UIControl op auteur]**.
+>1. Selecteer **[UIControl Default Agent (publiceren)]**.
+>1. Naast de Montages **[]** UIControl, uitgezocht **[UIControl geeft uit]**.
+>1. In pop-up dialoog voor de Montages van de Agent, uitgezochte **[Vervoer]** UIControl tabel.
+>1. Wijzig in URI het poortnummer 4503 in het gewenste poortnummer >
+   >    * Als u bijvoorbeeld poort 6103 wilt gebruiken:
+      >      https://localhost:6103/bin/receive?sling:authRequestLogin=1
+>
+1. Selecteer **[UIControl OK]**.
+1. (Optioneel) Selecteer **[UIControl Clear]** of **[UIControl Force Opnieuw proberen]** om de replicatiewachtrij opnieuw in te stellen.
 
 
 
@@ -220,7 +231,7 @@ Nadat u ervoor hebt gezorgd dat de publicatieserver actief is, selecteert u het 
 
 ![chlimage_1-65](assets/chlimage_1-65.png)
 
-Wanneer de community-site met succes is gepubliceerd, wordt kort een bericht weergegeven:
+Wanneer de community-site is gepubliceerd, wordt kort een bericht weergegeven:
 
 ![chlimage_1-66](assets/chlimage_1-66.png)
 
@@ -255,7 +266,7 @@ Zodra een plaats is gevormd en geduwd om te publiceren, [vorm login afbeelding](
 
 Een `Login Page Mapping` item toevoegen als
 
-* /content/sites/engc/nl/sign:/content/sites/engc/nl
+* `/content/sites/engage/en/signin:/content/sites/engage/en`
 
 ## Optionele stappen {#optional-steps}
 
@@ -293,13 +304,14 @@ Aan de slag:
 
 
 1. Selecteer Alles **opslaan.**
-1. (optioneel) Verwijder de browsergeschiedenis.
+1. (Optioneel) Verwijder de browsergeschiedenis.
 1. Ga naar https://localhost:4503/.
 
    * Ga naar https://localhost:4503/content/sites/engage/en.html
 
 >[!NOTE]
-Als u deze optie wilt uitschakelen, plaatst u gewoon een voorvoegsel voor de `sling:match` eigenschapswaarde met een &#39; x&#39; - `xlocalhost.4503/$` - en **Alles** opslaan.
+>
+>Als u deze optie wilt uitschakelen, plaatst u gewoon een voorvoegsel voor de `sling:match` eigenschapswaarde met een &#39; x&#39; - `xlocalhost.4503/$` - en **Alles** opslaan.
 
 ![chlimage_1-69](assets/chlimage_1-69.png)
 
@@ -322,5 +334,6 @@ Daarnaast kunnen beheerders het pictogram [Site](/help/communities/sites-console
 Vergeet niet de site op te **slaan** en opnieuw te **publiceren** nadat u een wijziging hebt aangebracht.
 
 >[!NOTE]
-Als u niet bekend bent met AEM, bekijkt u de documentatie over [basisverwerking](/help/sites-authoring/basic-handling.md) en een [handleiding voor het ontwerpen van pagina](/help/sites-authoring/qg-page-authoring.md)&#39;s.
+>
+>Als u niet bekend bent met AEM, bekijkt u de documentatie over [basisverwerking](/help/sites-authoring/basic-handling.md) en een [handleiding voor het ontwerpen van pagina](/help/sites-authoring/qg-page-authoring.md)&#39;s.
 

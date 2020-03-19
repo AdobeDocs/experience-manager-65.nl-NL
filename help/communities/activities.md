@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 89f3630f-c01a-4dc0-9ff5-169785f22c01
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
 
 ---
 
 
-# Functie voor activiteitsstromen{#activity-streams-feature}
+# Functie voor activiteitsstromen {#activity-streams-feature}
 
 ## Inleiding {#introduction}
 
@@ -26,8 +26,8 @@ De mogelijkheid om te volgen voegt nog een weergave van activiteiten toe wanneer
 
 In het document wordt beschreven:
 
-* toevoegen van de component van de Streams van de Activiteit aan een plaats AEM
-* configuratie-instellingen voor de component Activiteitenstromen
+* De component Activiteitsstromen toevoegen aan een AEM-site
+* Configuratie-instellingen voor de component Activiteitenstromen
 
 ### Activiteitsstromen toevoegen aan een pagina {#adding-activity-streams-to-a-page}
 
@@ -53,15 +53,25 @@ Geef op onder het tabblad **Gebruikersactiviteiten** op welke activiteiten u wil
 
 ![chlimage_1-26](assets/chlimage_1-26.png)
 
-* **Max. aantal activiteiten** het aantal weer te geven activiteiten
+* **Max. aantal activiteiten**
 
-* **Het Pad** van het Middel van de stroom laat leeg aan gebrek aan de communautaire plaats of de communautaire groep. Het pad naar de streambron identificeert de bron van activiteiten. De standaardwaarde is leeg.
+   Aantal weer te geven activiteiten
 
-* **De Mening** van de Activiteiten van de Gebruiker van de vertoning indien gecontroleerd, zal de activiteitenpagina een lusje omvatten dat activiteiten filtert die op die binnen de gemeenschap door het huidige lid worden geproduceerd. Standaard is ingeschakeld.
+* **Stroombronpad**
 
-* **Geef de weergave** van alle activiteiten weer als deze is ingeschakeld, op de pagina Activiteiten een tabblad wordt weergegeven met alle activiteiten die binnen de gemeenschap zijn gegenereerd waartoe het huidige lid toegang heeft. Standaard is ingeschakeld.
+   Blanco laten om standaard in te stellen op de communitysite of -groep. Het pad naar de streambron identificeert de bron van activiteiten. De standaardwaarde is leeg.
 
-* **Weergeven na weergave** als deze optie is ingeschakeld, bevat de pagina Activiteiten een tabblad waarop de activiteiten worden gefilterd op basis van de activiteiten die het huidige lid volgt. Standaard is ingeschakeld.
+* **Weergave gebruikersactiviteiten weergeven**
+
+   Als deze optie is ingeschakeld, bevat de pagina met activiteiten een tabblad waarop de activiteiten worden gefilterd op basis van de activiteiten die door het huidige lid binnen de gemeenschap worden gegenereerd. Standaard is ingeschakeld.
+
+* **Alle activiteiten weergeven**
+
+   Als deze optie is ingeschakeld, bevat de pagina met activiteiten een tabblad dat alle activiteiten bevat die zijn gegenereerd binnen de gemeenschap waartoe het huidige lid toegang heeft. Standaard is ingeschakeld.
+
+* **Na weergave weergeven**
+
+   Als deze optie is ingeschakeld, bevat de pagina met activiteiten een tabblad waarop de activiteiten worden gefilterd op basis van de activiteiten die het huidige lid volgt. Standaard is ingeschakeld.
 
 ### Volgende weergave {#following-view}
 
@@ -69,11 +79,11 @@ Componenten moeten worden geconfigureerd om het volgende in te schakelen. Functi
 
 ![chlimage_1-27](assets/chlimage_1-27.png)
 
-Met de knop **Volg **Hier kunt u items opvolgen als activiteiten, [meldingen](/help/communities/notifications.md)of [abonnementen](/help/communities/subscriptions.md). Telkens wanneer de knop **Volg **gebruiken is geselecteerd, kunt u een selectie in- of uitschakelen. De `Email Subscriptions` selectie is alleen aanwezig als deze is geconfigureerd.
+Met de knop **Volg** kunt u items volgen als activiteiten, [meldingen](/help/communities/notifications.md)of [abonnementen](/help/communities/subscriptions.md). Telkens wanneer de knop **Volgen** is geselecteerd, kunt u een selectie in- of uitschakelen. De `Email Subscriptions` selectie is alleen aanwezig als deze is geconfigureerd.
 
 Als er een methode van het volgende is geselecteerd, verandert de tekst van de knop in **Volgende**. Voor het gemak is het mogelijk om alle methoden uit `Unfollow All` te schakelen.
 
-De knop **Volg **De wordt weergegeven
+De knop **Volg** wordt weergegeven
 
 * bij het bekijken van het profiel van een ander lid
 * op een hoofdpagina met functies, zoals forums, QnA en blogs

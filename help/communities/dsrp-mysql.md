@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: edc3043c-7ec4-4e4a-b008-95f1784f012e
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 ---
 
@@ -125,8 +125,8 @@ Het SQL-script is afkomstig uit de AEM-opslagplaats:
 
 Eén methode voor het downloaden van het schema is:
 
-* Het `jcr:content`knooppunt voor het sql-bestand selecteren
-* De waarde voor de `jcr:data`eigenschap is een weergavekoppeling
+* Het `jcr:content` knooppunt voor het sql-bestand selecteren
+* De waarde van de `jcr:data` eigenschap is een weergavekoppeling
 
 * Selecteer de weergavekoppeling om de gegevens in een lokaal bestand op te slaan
 
@@ -155,7 +155,7 @@ In de volgende afbeelding kan het `init_schema.sql` bestand worden uitgevoerd:
 
 #### Vernieuwen {#refresh}
 
-Zodra het manuscript wordt uitgevoerd, is het noodzakelijk om de `SCHEMAS`sectie van `Navigator` te verfrissen om het nieuwe gegevensbestand te zien. Gebruik het vernieuwingspictogram rechts van &#39;SCHEMAS&#39;:
+Zodra het manuscript wordt uitgevoerd, is het noodzakelijk om de `SCHEMAS` sectie van `Navigator` te verfrissen om het nieuwe gegevensbestand te zien. Gebruik het vernieuwingspictogram rechts van &#39;SCHEMAS&#39;:
 
 ![chlimage_1-110](assets/chlimage_1-110.png)
 

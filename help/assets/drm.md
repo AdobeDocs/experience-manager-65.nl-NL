@@ -3,7 +3,7 @@ title: Digital Rights Management in Assets
 description: Leer hoe u de status van verlopen van middelen en informatie over gelicentieerde middelen in AEM beheert.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
+source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
 
 ---
 
@@ -118,9 +118,12 @@ Op de middelenconsole van Adobe Experience Manager (AEM) Assets kunnen verschill
 
    ![chlimage_1-158](assets/chlimage_1-158.png)
 
-1. Stel op het tabblad Geavanceerd een vervaldatum in voor het element in het veld **[!UICONTROL Verlopen]** onder.
+1. Stel op het tabblad Geavanceerd een vervaldatum in voor het element in het veld **[!UICONTROL Verlopen]** .
 
-   ![chlimage_1-159](assets/chlimage_1-159.png)
+   ![de vervaldatum en tijd van het element instellen in het veld Verlopen](assets/asset-properties-advanced-tab.png)
+
+
+   *Afbeelding: Geavanceerd tabblad in eigenschappen van elementen om de vervaldatum van elementen in te stellen*
 
 1. Klik op **[!UICONTROL Opslaan]** en vervolgens op **[!UICONTROL Sluiten]** om de Asset-console weer te geven.
 1. De publicatiestatus voor het element geeft aan dat de status is verlopen onder aan de elementminiatuur in de kaartweergave. In de lijstweergave wordt de status van het element weergegeven als **[!UICONTROL Verlopen]**.

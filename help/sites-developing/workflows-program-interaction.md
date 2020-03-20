@@ -10,7 +10,7 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: cb621332-a149-4f8d-9425-fd815b033c38
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 7d2ba937710e5931356512b812a8b8fbe3a52072
 
 ---
 
@@ -37,30 +37,12 @@ De klasse biedt ook verschillende methoden voor het ingrijpen in workflowlevensc
 
 De volgende tabel bevat koppelingen naar de referentiedocumentatie van verschillende belangrijke Java-objecten die moeten worden gebruikt wanneer programmatisch wordt gewerkt met workflows. De volgende voorbeelden demonstreren hoe u de klassenobjecten in code verkrijgt en gebruikt.
 
-<table>
- <tbody>
-  <tr>
-   <th>Functies<a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/status/WorkflowStatus.html"></a></th>
-   <th>Objecten<br /> </th>
-  </tr>
-  <tr>
-   <td>Een workflow openen<br /> </td>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/WorkflowSession.html"><code>WorkflowSession</code></a><br /> </td>
-  </tr>
-  <tr>
-   <td>Een workflowinstantie uitvoeren en opvragen<br /> </td>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/Workflow.html"><code>Workflow</code></a><br /> <a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkItem.html"><code>WorkItem</code></a><br /> <a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowData.html"><code>WorkflowData</code></a><br /> </td>
-  </tr>
-  <tr>
-   <td>Een workflowmodel beheren<br /> </td>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/model/WorkflowModel.html"><code>WorkflowModel</code></a><br /> <a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/model/WorkflowNode.html"><code>WorkflowNode</code></a><br /> <a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/model/WorkflowTransition.html"><code>WorkflowTransition</code></a><br /> </td>
-  </tr>
-  <tr>
-   <td>Informatie voor een knooppunt in de workflow (of niet) </td>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/status/WorkflowStatus.html"><code>WorkflowStatus</code></a></td>
-  </tr>
- </tbody>
-</table>
+| Functies | Objecten |
+|---|---|
+| Een workflow openen | [`WorkflowSession`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/WorkflowSession.html) |
+| Een workflowinstantie uitvoeren en opvragen | [`Workflow`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/Workflow.html)</br>[`WorkItem`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkItem.html)</br>[`WorkflowData`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowData.html) |
+| Een workflowmodel beheren | [`WorkflowModel`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/model/WorkflowModel.html)</br>[`WorkflowNode`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/model/WorkflowNode.html)</br>[`WorkflowTransition`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/model/WorkflowTransition.html) |
+| Informatie voor een knooppunt in de workflow (of niet) | [`WorkflowStatus`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/status/WorkflowStatus.html) |
 
 ## Workflowobjecten verkrijgen in ECMA-scripts {#obtaining-workflow-objects-in-ecma-scripts}
 
@@ -115,7 +97,7 @@ De volgende HTTP-aanvraagmethoden zijn van toepassing op:
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td><p>Hiermee wordt een nieuwe werkstroominstantie gemaakt. <br /> De parameters zijn: - <code>model</code>: de ID (URI) van het respectieve werkschemamodel<br /> - <code>payloadType</code>: met het type van de lading (bijvoorbeeld <code>JCR_PATH</code> of URL).<br /> De payload wordt als parameter verzonden <code>payload</code>. Een <code>201</code> (<code>CREATED</code>) reactie wordt teruggestuurd met een plaatsheader die URL van het nieuwe middel van de werkschemainstantie bevat.</p> </td>
+   <td><p>Hiermee wordt een nieuwe werkstroominstantie gemaakt. De parameters zijn:<br /> - <code>model</code>: de ID (URI) van het respectieve werkschemamodel<br /> - <code>payloadType</code>: met het type van de lading (bijvoorbeeld <code>JCR_PATH</code> of URL).<br /> De payload wordt als parameter verzonden <code>payload</code>. Een <code>201</code> (<code>CREATED</code>) reactie wordt teruggestuurd met een plaatsheader die URL van het nieuwe middel van de werkschemainstantie bevat.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -130,7 +112,7 @@ De volgende HTTP-aanvraagmethoden zijn van toepassing op:
 |---|---|
 | `GET` | Hier worden de beschikbare workflowinstanties en hun statussen weergegeven ( `RUNNING`, `SUSPENDED`, `ABORTED` of `COMPLETED`) |
 
-#### Het leiden van een Instantie van het Werkschema door zijn identiteitskaart {#managing-a-workflow-instance-by-its-id}
+#### Een Werkstroominstantie beheren met de id {#managing-a-workflow-instance-by-its-id}
 
 De volgende HTTP-aanvraagmethoden zijn van toepassing op:
 
@@ -420,7 +402,7 @@ De resultaten `uri` kunnen als instantie `id` in andere opdrachten worden weerge
 
 ### Hoe te om de Titel van het Werkschema te veranderen {#how-to-change-the-workflow-title}
 
-Als u de **workflowtitel** wilt wijzigen die wordt weergegeven op het tabblad **Instanties** van de workflowconsole, verzendt u een `POST` opdracht:
+Om de Titel **van het** Werkschema te veranderen die op het lusje van **Instanties** van de werkschemaconsole wordt getoond, verzend een `POST` bevel:
 
 * to: `http://localhost:4502/etc/workflow/instances/{id}`
 
@@ -488,7 +470,7 @@ var wfsession = sling.getRequest().getResource().getResourceResolver().adaptTo(P
 
 ### Workflowmodellen maken, lezen of verwijderen {#creating-reading-or-deleting-workflow-models}
 
-De volgende voorbeelden laten zien hoe u workflowmodellen kunt openen:
+In de volgende voorbeelden ziet u hoe u workflowmodellen kunt openen:
 
 * De code voor Java en het manuscript ECMA gebruikt de `WorkflowSession.createNewModel` methode.
 * De curl-opdracht geeft rechtstreeks toegang tot het model via de URL.

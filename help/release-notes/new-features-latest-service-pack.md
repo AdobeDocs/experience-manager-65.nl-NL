@@ -4,7 +4,7 @@ description: Nieuw in Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f50369f269040bf7f1a30b018acbc1b441abdb15
+source-git-commit: da9d682a0392e5de8e012e254fb82bd15547a542
 
 ---
 
@@ -17,6 +17,8 @@ Het nieuwste AEM Service Pack 4 (6.5.4.0) wordt uitgebracht op 5 **maart 2020**.
 
 ## AEM Sites {#aem-sites}
 
+AEM 6.5.4.0 omvat de verbeteringen van het Systeem van de Stijl. U kunt nu stijlen selecteren in het dialoogvenster met componenten.
+
 ### Prestatieverbeteringen op verschillende gebieden {#performance-improvements}
 
 * Verminderde tijd voor het laden van en het initialiseren van ContextHub binnen een plaats (`contexthub.kernel.js`). Hierdoor worden pagina&#39;s tijdens een bezoek aan de site sneller geladen.
@@ -26,8 +28,6 @@ Het nieuwste AEM Service Pack 4 (6.5.4.0) wordt uitgebracht op 5 **maart 2020**.
 * De laadtijd voor items op een sitepagina met meer dan 200 actieve kopieën in **[!UICONTROL Live Copy-overzicht]** verkort.
 
 * Verbeterde verwerking van onvolledige of ongeldige URL&#39;s. Dergelijke URL&#39;s kunnen de Sjablooneditor vertragen.
-
-Daarnaast bevat AEM 6.5.4.0 verbeteringen voor stijlsystemen. U kunt nu stijlen selecteren in het dialoogvenster met componenten.
 
 ## AEM Assets {#aem-assets}
 
@@ -116,16 +116,19 @@ U kunt een begindatum en -tijd en een einddatum en -tijd opgeven die van kracht 
 
 U kunt de batch-API gebruiken om meerdere interactieve communicatie van een sjabloon te maken. De sjabloon is een interactieve communicatie zonder gegevens. De batch-API combineert gegevens met een sjabloon voor interactieve communicatie. De API is nuttig bij de massaproductie van interactieve communicatie. Bijvoorbeeld telefoonrekeningen, creditcardoverzichten voor meerdere klanten. Zie Meerdere interactieve communicatie [genereren met de Batch-API](../forms/using/generate-multiple-interactive-communication-using-batch-api.md).
 
-
-
 ## Belangrijke releases sinds AEM 6.5 SP3
 
 Tussen 12 december 2019 en 5 maart 2020 heeft Adobe de volgende functies uitgebracht die buiten de kernlevering van AEM vallen:
 
-* AEM Cloud Manager 2020.1.0 en 2020.2.0De release werkt de status van de pijplijn en de mogelijkheid om logbestanden te downloaden voor verschillende stappen bij. Meer informatie:
+* AEM Cloud Manager 2020.1.0 en 2020.2.0
+
+   De release-updates verbeteren de status van de pijpleiding en de mogelijkheid om logbestanden voor verschillende stappen te downloaden. Meer informatie:
+
    * [Cloud Manager 2020.1.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-2020-1-0.html)
 
+
    * [Cloud Manager 2020.2.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-current.html)
+
 
 * AEM Cloud Manager CLI-updates
 

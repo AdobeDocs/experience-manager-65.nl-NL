@@ -3,7 +3,7 @@ title: Samengestelde elementen beheren met verwijzingen en elementen van meerder
 description: Leer hoe u verwijzingen naar AEM-elementen maakt in InDesign, Illustrator en Photoshop. Met de functie Paginaviewer kunt u afzonderlijke subelementpagina's van bestanden met meerdere pagina's weergeven, zoals PDF-, INDD-, PPT-, PPTX- en AI-bestanden.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b13fe70c4b67b27e0f18bdb557c52e25d21e7f75
+source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
 
 ---
 
@@ -24,7 +24,9 @@ U kunt vanuit een Adobe Illustrator-bestand verwijzen naar bestaande AEM-element
 
 1. Plaats met de [AEM-bureaubladtoepassing](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)de opslagplaats voor AEM-middelen als een station op uw lokale computer. Navigeer in het gekoppelde station naar de locatie van het element waarnaar u wilt verwijzen.
 1. Sleep het element van het gekoppelde station naar het Illustrator-bestand.
+
 1. Sla het Illustrator-bestand op het gekoppelde station op of [upload het bestand naar](/help/assets/managing-assets-touch-ui.md#uploading-assets) de AEM-opslagplaats.
+
 1. Nadat de workflow is voltooid, gaat u naar de pagina met elementdetails voor het element. De verwijzingen naar bestaande activa AEM zijn vermeld onder **[!UICONTROL Afhankelijkheden]** in de **[!UICONTROL kolom van Verwijzingen]** .
 
    ![chlimage_1-84](assets/chlimage_1-258.png)
@@ -35,7 +37,9 @@ U kunt vanuit een Adobe Illustrator-bestand verwijzen naar bestaande AEM-element
 
 1. Klik op Eigenschappen **[!UICONTROL van]** weergave op de werkbalk. Op de pagina [!UICONTROL Eigenschappen] wordt de lijst met bestanden die naar het huidige element verwijzen, weergegeven onder de kolom **[!UICONTROL Verwijzingen]** op het tabblad **[!UICONTROL Standaard]** .
 
-   ![chlimage_1-86](assets/chlimage_1-260.png)
+   ![bekijk de verwijzingen van de Middelen van de Manager van de Ervaring in de kolom van Verwijzingen in activadetails](assets/asset-references.png)
+
+   *Afbeelding: Verwijzingen naar elementen in de gegevens van elementen*
 
 ## AEM-elementen toevoegen als verwijzingen in Adobe InDesign {#add-aem-assets-as-references-in-adobe-indesign}
 

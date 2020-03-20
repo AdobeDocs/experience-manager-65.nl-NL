@@ -3,7 +3,7 @@ title: Verwante activa
 description: Leer hoe u elementen koppelt die bepaalde algemene kenmerken delen. U kunt de eigenschap ook gebruiken om bron/afgeleide verhoudingen tussen activa tot stand te brengen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 4fc656948e4c5cb4a3e927c25d3afd29102b7ab4
+source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
 
 ---
 
@@ -14,14 +14,16 @@ Met de Adobe Experience Manager-middelen (AEM) kunt u elementen handmatig koppel
 
 Met deze functie hebt u de flexibiliteit om een PDF- of JPG-bestand met lage resolutie te delen met leveranciers of agentschappen en het INDD-bestand met hoge resolutie alleen op verzoek beschikbaar te maken.
 
->[!NOTE] Alleen gebruikers met bewerkingsmachtigingen kunnen elementen releren en de relatie tussen elementen verbreken.
+>[!NOTE] Alleen gebruikers met bewerkingsmachtigingen voor elementen kunnen de elementen releren en de relatie tussen de elementen verbreken.
 >
 
 ## Relatieve elementen {#relating-assets}
 
-1. Open vanuit de AEM-interface de pagina [!UICONTROL Eigenschappen] voor een element dat u wilt koppelen.
+1. Open vanuit de AEM-interface de pagina **[!UICONTROL Eigenschappen]** voor een element dat u wilt koppelen.
 
-   ![chlimage_1-272](assets/chlimage_1-272.png)
+   ![de eigenschappenpagina van een element openen om het element te koppelen](assets/asset-properties-relate-assets.png)
+
+   *Afbeelding: Pagina met eigenschappen van element om elementen te koppelen*
 
    U kunt ook het element selecteren in de lijstweergave.
 
@@ -67,11 +69,14 @@ Het maken van bron-/afgeleide relaties tussen elementen met de functie Verwante 
 
 ![chlimage_1-281](assets/chlimage_1-281.png)
 
-Als het bronbestand is gerelateerd aan een ander element, haalt AEM Assets het element waarnaar wordt verwezen op en neemt het dit voor vertaling op.
+Als het bronbestand verwant is aan een ander element, haalt Experience Manager Assets het element waarnaar wordt verwezen op en wordt het element opgenomen voor vertaling.
 
-![chlimage_1-282](assets/chlimage_1-282.png)
+![De pagina met eigenschappen van elementen bevat het bronbestand van het verwante element dat moet worden opgenomen voor vertaling](assets/asset-properties-source-asset.png)
+
+*Afbeelding: Bronactiva van de gerelateerde activa die voor vertaling moeten worden opgenomen*
 
 1. Vertaal de elementen in de bronmap naar een doeltaal door de stappen in [Een nieuw vertaalproject](translation-projects.md#create-a-new-translation-project)maken uit te voeren. In dit geval vertaalt u uw middelen bijvoorbeeld naar het Frans.
+
 1. Open vanuit de pagina [!UICONTROL Projecten] de vertaalmap.
 
    ![chlimage_1-283](assets/chlimage_1-283.png)

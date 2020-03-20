@@ -4,7 +4,7 @@ description: Leer hoe u de vereiste elementen in AEM kunt vinden met het deelven
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
+source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
 
 ---
 
@@ -30,9 +30,7 @@ AEM steunt de volgende gebruiksgevallen en dit artikel beschrijft het gebruik, d
 
 Zoeken naar elementen met behulp van het veld Zoeken boven aan de AEM-webinterface. Ga naar **[!UICONTROL Middelen]** > **[!UICONTROL Dossiers]** in AEM, klik onderzoekspictogram in hoogste bar, ga onderzoekssleutelwoord in, en druk terugkeer. U kunt ook de trefwoordsneltoets / (slash) gebruiken om het veld Onderzoek te openen. Locatie:middelen zijn vooraf geselecteerd om de zoekopdrachten te beperken tot DAM-middelen. AEM biedt suggesties als u begint met het typen van een trefwoord voor zoeken.
 
-Gebruik het deelvenster **[!UICONTROL Filters]** om uw zoekopdracht te beperken door zoekresultaten te filteren op basis van de verschillende opties (voorspelling), zoals bestandstype, bestandsgrootte, datum van laatste wijziging, status van middelen, inzichtsgegevens en Adobe Stock-licenties. Uw beheerders kunnen het deelvenster Filters aanpassen en zoekvoorvertoningen toevoegen of verwijderen met behulp van zoekfacetten.
-
-Het filter [!UICONTROL Bestandstype] in het deelvenster [!UICONTROL Filters] heeft selectievakjes met gemengde status. Dit betekent dat, tenzij u alle geneste voorspellen (of indelingen) selecteert, de selectievakjes op het eerste niveau niet worden geselecteerd en in plaats daarvan worden doorgehaald.
+Gebruik het deelvenster **[!UICONTROL Filters]** om uw zoekopdracht te beperken door zoekresultaten te filteren op basis van de verschillende opties (voorspelling), zoals bestandstype, bestandsgrootte, datum van laatste wijziging, status van middelen, inzichtsgegevens en Adobe Stock-licenties. Uw beheerders kunnen het deelvenster Filters aanpassen en zoekvoorvertoningen toevoegen of verwijderen met behulp van zoekfacetten. Het filter [!UICONTROL Bestandstype] in het deelvenster [!UICONTROL Filters] heeft selectievakjes met gemengde status. Daarom tenzij u alle genestelde predikaten (of formaten) selecteert worden de eerste-niveaucontroledozen niet geselecteerd en in plaats daarvan doorgedrukt.
 
 De zoekfunctie van AEM ondersteunt het zoeken naar verzamelingen en het zoeken naar elementen in een verzameling. Zie [zoekverzamelingen](/help/assets/managing-collections-touch-ui.md).
 

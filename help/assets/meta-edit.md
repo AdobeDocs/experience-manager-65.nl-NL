@@ -3,7 +3,7 @@ title: Metagegevens bewerken of toevoegen
 description: Meer informatie over metagegevens van elementen in AEM Assets en verschillende manieren waarop u metagegevens van elementen kunt bewerken.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: 91818198032de0580fe04d09fdd567dc470c021d
 
 ---
 
@@ -24,11 +24,15 @@ Metagegevens bewerken:
    * Selecteer in de elementminiatuur de snelle actie **[!UICONTROL Weergave-eigenschappen]** .
    * Klik/tik op het pictogram **[!UICONTROL Weergave-eigenschappen]** op de werkbalk vanaf de elementpagina.
       ![chlimage_1-168](assets/chlimage_1-168.png)
+      *Afbeelding: Pictogram Eigenschappen*
    Op de elementpagina worden alle metagegevens van het element weergegeven. Deze metagegevens zijn automatisch geëxtraheerd wanneer deze werden geüpload (opgenomen) naar AEM Assets.
 
-   ![chlimage_1-169](assets/chlimage_1-169.png)
+   ![Elementeigenschappen selecteren om metagegevens weer te geven](assets/asset-metadata.png)
 
-1. Breng desgewenst wijzigingen aan in de metagegevens op de verschillende tabbladen en klik, wanneer u klaar bent, op **[!UICONTROL Opslaan]** op de werkbalk om de wijzigingen op te slaan. Klik op **[!UICONTROL Sluiten]** /tik op Sluiten om terug te keren naar de webinterface Middelen.
+
+   *Afbeelding: Metagegevens bewerken of toevoegen op de pagina Eigenschappen van element*
+
+1. Make edits to the metadata under the various tabs, as required, and when completed, click/tap **[!UICONTROL Save]** from the toolbar to save your changes. Click/tap **[!UICONTROL Close]** to return to the Assets web interface.
 
    >[!NOTE]
    >

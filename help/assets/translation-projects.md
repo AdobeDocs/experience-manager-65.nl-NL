@@ -3,7 +3,7 @@ title: Vertaalprojecten maken
 description: Leer hoe u vertaalprojecten maakt in AEM.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
 
 Als u een taalkopie wilt maken, activeert u een van de volgende workflows voor het kopiëren van talen die beschikbaar zijn onder de References rail in de AEM-gebruikersinterface.
 
-* **Maken en vertalen**:In deze workflow worden elementen die moeten worden vertaald, gekopieerd naar de hoofdtaal van de taal waarnaar u wilt vertalen. Bovendien wordt, afhankelijk van de opties u kiest, een vertaalproject gecreeerd voor de activa in de console van Projecten. Afhankelijk van de instellingen kan het vertaalproject handmatig worden gestart of automatisch worden uitgevoerd zodra het vertaalproject is gemaakt.
+* **Maken en vertalen**: In deze workflow worden elementen die moeten worden vertaald, gekopieerd naar de hoofdtaal van de taal waarnaar u wilt vertalen. Bovendien wordt, afhankelijk van de opties u kiest, een vertaalproject gecreeerd voor de activa in de console van Projecten. Afhankelijk van de instellingen kan het vertaalproject handmatig worden gestart of automatisch worden uitgevoerd zodra het vertaalproject is gemaakt.
 
 * **Taalkopieën** bijwerken: Voer deze workflow uit om een extra groep elementen te vertalen en deze op te nemen in een taalkopie voor een bepaalde landinstelling. In dit geval worden de vertaalde elementen toegevoegd aan de doelmap die al eerder vertaalde elementen bevat.
 
@@ -34,7 +34,7 @@ Met de workflow Maken en vertalen kunt u voor het eerst voor een bepaalde taal e
 
 ### Alleen structuur maken {#create-structure-only}
 
-Met de optie Structuur alleen **** maken kunt u een doelmaphiërarchie in de hoofdmap van de doeltaal maken die overeenkomt met de hiërarchie van de bronmap in de hoofdmap van de brontaal. In dit geval worden bronelementen naar de doelmap gekopieerd. Er wordt echter geen vertaalproject gegenereerd.
+Met de optie **[!UICONTROL Alleen structuur maken]** kunt u een doelmaphiërarchie in de hoofdmap van de doeltaal maken die overeenkomt met de hiërarchie van de bronmap in de hoofdmap van de brontaal. In dit geval worden bronassets naar de doelmap gekopieerd. Er wordt echter geen vertaalproject gegenereerd.
 
 1. Selecteer in de interface Elementen de bronmap waarvoor u een structuur wilt maken in de hoofdmap van de doeltaal.
 1. Open het venster **[!UICONTROL Referenties]** en klik/tik op **[!UICONTROL Taalkopieën]** onder **[!UICONTROL Kopieën]**.
@@ -45,7 +45,7 @@ Met de optie Structuur alleen **** maken kunt u een doelmaphiërarchie in de hoo
 
    ![chlimage_1-58](assets/chlimage_1-58.png)
 
-1. Selecteer in de lijst **[!UICONTROL Doeltalen]** de taal waarvoor u een mapstructuur wilt maken.
+1. From the **[!UICONTROL Target Languages]** list, select the language for which you want to create a folder structure.
 
    ![chlimage_1-59](assets/chlimage_1-59.png)
 
@@ -74,7 +74,7 @@ Als u deze optie gebruikt, worden de te vertalen middelen gekopieerd aan de taal
 
    ![chlimage_1-64](assets/chlimage_1-64.png)
 
-1. Selecteer in de lijst **[!UICONTROL Doeltalen]** de taal of talen waarvoor u een mapstructuur wilt maken.
+1. From the **[!UICONTROL Target Languages]** list, select the language(s) for which you want to create a folder structure.
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
@@ -82,7 +82,7 @@ Als u deze optie gebruikt, worden de te vertalen middelen gekopieerd aan de taal
 
    ![chlimage_1-66](assets/chlimage_1-66.png)
 
-1. Voer in het veld **[!UICONTROL Projecttitel]** een titel in voor het project.
+1. In the **[!UICONTROL Project Title]** field, enter a title for the project.
 
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
@@ -114,7 +114,10 @@ Als u deze optie gebruikt, worden de te vertalen middelen gekopieerd aan de taal
 
 1. Navigeer naar de interface Middelen en open de pagina Eigenschappen voor elk van de vertaalde elementen om de vertaalde metagegevens weer te geven.
 
-   ![chlimage_1-74](assets/chlimage_1-74.png)
+   ![de vertaalde metagegevens weergeven op de pagina met eigenschappen van elementen](assets/translated-metadata-asset-properties.png)
+
+   *Afbeelding: Vertaalde metagegevens op de pagina met eigenschappen van elementen*
+
 
    >[!NOTE]
    >
@@ -125,13 +128,13 @@ Als u deze optie gebruikt, worden de te vertalen middelen gekopieerd aan de taal
 Als u deze optie gebruikt, wordt de vertaalworkflow uitgevoerd voor elementen die u na een vorige vertaalworkflow aan de bronmap toevoegt. Alleen de nieuw toegevoegde elementen worden gekopieerd naar de doelmap die eerder vertaalde elementen bevat. In dit geval wordt geen nieuw vertaalproject opgezet.
 
 1. Navigeer in de interface Elementen naar de bronmap die niet-vertaalde elementen bevat.
-1. Selecteer een element dat u wilt vertalen en open het **[!UICONTROL paneel]** Referentie. In de sectie **[!UICONTROL Taalkopieën]** wordt het aantal momenteel beschikbare vertaalkopieën weergegeven.
+1. Select an asset you want to translate, and open the **[!UICONTROL Reference pane]**. The **[!UICONTROL Language Copies]** section displays the number of translation copies that are currently available.
 1. Klik/tik **[!UICONTROL Taalkopieën]** onder **[!UICONTROL Exemplaren]**. Er wordt een lijst met beschikbare vertaalkopieën weergegeven.
 1. Klik onderaan op **[!UICONTROL Maken en vertalen]** .
 
    ![chlimage_1-75](assets/chlimage_1-75.png)
 
-1. Selecteer in de lijst **[!UICONTROL Doeltalen]** de taal of talen waarvoor u een mapstructuur wilt maken.
+1. From the **[!UICONTROL Target Languages]** list, select the language(s) for which you want to create a folder structure.
 
    ![chlimage_1-76](assets/chlimage_1-76.png)
 
@@ -147,7 +150,7 @@ Als u deze optie gebruikt, wordt de vertaalworkflow uitgevoerd voor elementen di
 
    ![chlimage_1-78](assets/chlimage_1-78.png)
 
-1. Klik/tik op **[!UICONTROL Maken]**. De te vertalen middelen worden toegevoegd aan de doelmap. De bijgewerkte map wordt weergegeven onder de sectie **[!UICONTROL Taalkopieën]** .
+1. Klik/tik op **[!UICONTROL Maken]**. De te vertalen assets worden toegevoegd aan de doelmap. The updated folder is listed under the **[!UICONTROL Language Copies]** section.
 
    ![chlimage_1-79](assets/chlimage_1-79.png)
 
@@ -198,8 +201,8 @@ Voer deze workflow uit om extra elementen te vertalen en deze op te nemen in een
 Als u deze optie gebruikt, wordt een vertaalproject gecreeerd voor de reeks activa waarvoor u een taalexemplaar wilt bijwerken.
 
 1. Selecteer in de interface Middelen de bronmap waarin u een element hebt toegevoegd.
-1. Open het venster **[!UICONTROL Referenties]** en klik/tik op **[!UICONTROL Taalkopieën]** onder **[!UICONTROL Kopieën]** om de lijst met taalkopieën weer te geven.
-1. Schakel het selectievakje voor **[!UICONTROL taalkopieën]** in en selecteer vervolgens de doelmap die overeenkomt met de juiste landinstelling.
+1. Open the **[!UICONTROL References]** pane, and click/tap **[!UICONTROL Language Copies]** under **[!UICONTROL Copies]** to display the list of language copies.
+1. Select the check box before **[!UICONTROL Language Copies]**, and then select the target folder corresponding to the appropriate locale.
 
    ![chlimage_1-84](assets/chlimage_1-84.png)
 
@@ -211,7 +214,7 @@ Als u deze optie gebruikt, wordt een vertaalproject gecreeerd voor de reeks acti
 
    ![chlimage_1-86](assets/chlimage_1-86.png)
 
-1. Voer in het veld **[!UICONTROL Projecttitel]** een titel in voor het project.
+1. In the **[!UICONTROL Project Title]** field, enter a title for the project.
 
    ![chlimage_1-87](assets/chlimage_1-87.png)
 
@@ -249,11 +252,11 @@ Als u deze optie gebruikt, wordt een vertaalproject gecreeerd voor de reeks acti
 Als u deze optie gebruikt, worden de elementen toegevoegd aan een bestaand vertaalproject en wordt de taalkopie bijgewerkt voor de landinstelling die u kiest.
 
 1. Selecteer in de interface Middelen de bronmap waaraan u een elementmap hebt toegevoegd.
-1. Open het venster **** Referenties en klik/tik op **[!UICONTROL Taalkopieën]** onder **[!UICONTROL Kopieën]** om de lijst met taalkopieën weer te geven.
+1. Open the **[!UICONTROL References pane]**, and click/tap **[!UICONTROL Language Copies]** under **[!UICONTROL Copies]** to display the list of language copies.
 
    ![chlimage_1-94](assets/chlimage_1-94.png)
 
-1. Schakel het selectievakje in voor **[!UICONTROL Taalkopieën]**, waarmee u alle taalkopieën kunt selecteren. Hef de selectie van andere kopieën op, met uitzondering van de taalkopie (kopieën) die overeenkomt met de landinstelling(en) waarnaar u wilt vertalen.
+1. Select the check box before **[!UICONTROL Language Copies]**, which selects all language copies. Hef de selectie van andere kopieën op, met uitzondering van de taalkopieën die overeenkomen met de landinstellingen waarnaar u wilt vertalen.
 
    ![chlimage_1-95](assets/chlimage_1-95.png)
 
@@ -276,7 +279,7 @@ Als u deze optie gebruikt, worden de elementen toegevoegd aan een bestaand verta
 
 Wanneer u een vertaalworkflow uitvoert om een taalkopie bij te werken met bewerkte versies van de originele elementen, blijft de bestaande taalkopie behouden totdat u de vertaalde elementen goedkeurt. AEM Assets slaat de nieuw vertaalde activa op een tijdelijke plaats op en werkt het bestaande taalexemplaar bij nadat u uitdrukkelijk de activa goedkeurt. Als u de middelen afwijst, blijft de taalkopie ongewijzigd.
 
-1. Klik of tik op de bronhoofdmap onder **[!UICONTROL Taalkopieën]** waarvoor u al een taalkopie hebt gemaakt en klik vervolgens op **[!UICONTROL Tonen in middelen]** om de map in AEM-middelen te openen.
+1. Click/tap the source root folder under **[!UICONTROL Language Copies]** for which you already created a language copy, and then click/tap **[!UICONTROL Reveal in Assets]** to open the folder in AEM Assets.
 
    ![chlimage_1-99](assets/chlimage_1-99.png)
 
@@ -288,7 +291,7 @@ Wanneer u een vertaalworkflow uitvoert om een taalkopie bij te werken met bewerk
    ![chlimage_1-101](assets/chlimage_1-101.png)
 
 1. Schakel het selectievakje naast **[!UICONTROL Titel]** in.
-1. Klik op de werkbalk of tik op **[!UICONTROL Vertaling]** accepteren en klik/tik op **[!UICONTROL Accepteren]** in het dialoogvenster om het vertaalde element in de doelmap te overschrijven met de vertaalde versie van het bewerkte element.
+1. From the toolbar, click/tap **[!UICONTROL Accept Translation]** and then click/tap **[!UICONTROL Accept]** in the dialog to overwrite the translated asset in the target folder with the translated version of the edited asset.
 
    ![chlimage_1-102](assets/chlimage_1-102.png)
 

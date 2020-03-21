@@ -4,7 +4,7 @@ description: Nieuw in Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: da9d682a0392e5de8e012e254fb82bd15547a542
+source-git-commit: 1d9d4d2e97ebd321f73b97deca2fb7298802bbd0
 
 ---
 
@@ -16,6 +16,8 @@ Adobe Experience Manager (AEM) 6.5 biedt functies en voortdurende verbeteringen 
 Het nieuwste AEM Service Pack 4 (6.5.4.0) wordt uitgebracht op 5 **maart 2020**. In dit artikel worden de functies gemarkeerd die het nieuwste Service Pack biedt om uw AEM-reis verrijkend te maken.
 
 ## AEM Sites {#aem-sites}
+
+### Stijlsysteemverbeteringen
 
 AEM 6.5.4.0 omvat de verbeteringen van het Systeem van de Stijl. U kunt nu stijlen selecteren in het dialoogvenster met componenten.
 
@@ -122,7 +124,7 @@ Tussen 12 december 2019 en 5 maart 2020 heeft Adobe de volgende functies uitgebr
 
 * AEM Cloud Manager 2020.1.0 en 2020.2.0
 
-   De release-updates verbeteren de status van de pijpleiding en de mogelijkheid om logbestanden voor verschillende stappen te downloaden. Meer informatie:
+   Verbeter de pijpleidingsstatus en de capaciteit om logboeken voor diverse stappen te downloaden. Zie:
 
    * [Cloud Manager 2020.1.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-2020-1-0.html)
 
@@ -132,7 +134,7 @@ Tussen 12 december 2019 en 5 maart 2020 heeft Adobe de volgende functies uitgebr
 
 * AEM Cloud Manager CLI-updates
 
-   Tot de release-updates behoren het automatiseren van taken van Cloud Manager met behulp van het opdrachtregelprogramma. Zie [GitHub](https://github.com/adobe/aio-cli-plugin-cloudmanager/releases).
+   Taken in Cloud Manager automatiseren met behulp van het opdrachtregelprogramma. Zie [GitHub](https://github.com/adobe/aio-cli-plugin-cloudmanager/releases).
 
 * AEM-sites: Projectarchetype 23
 
@@ -148,7 +150,7 @@ Tussen 12 december 2019 en 5 maart 2020 heeft Adobe de volgende functies uitgebr
 
 * AEM-elementen: Desktop App 2.0.1.1
 
-   Zie [Toegang tot de middelen](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html)verkrijgen voor meer informatie.
+   Zie [Toegang tot de middelen](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html)verkrijgen op het bureaublad.
 
 * AEM-schermen: Feature Pack 202001
 

@@ -5,7 +5,7 @@ keywords: dynamic media;newsletter;product updates;tips and tricks;events;custom
 contentOwner: Rick Brough
 solution: Dynamic Media
 translation-type: tm+mt
-source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
+source-git-commit: dc625b31b5f4d0db0941de2da0e869b3af177551
 
 ---
 
@@ -21,6 +21,23 @@ In deze one-stop shop nieuwsbrief, ontdek waardevolle kennis-bouwend middelen zo
 [Meld u aan](https://www.adobe.com/subscription/dynamic-media-newsletter.html) om de nieuwsbrief voor dynamische media maandelijks in uw postvak te ontvangen.
 
 ## Hebt u een probleem met de Dynamic Media Newsletter gemist?
+
+* **[Februari 2020, punt 2](http://amc-mkt-prod1-t.adobe-campaign.com/rest/head/mirrorPage/@5lYjerUalNCDQd6ABlMufSyP3GqbFDn747uBiom3-3_efxsaEjuw8LNhJxrs89ft1vcsQzjvxTGMo55w-4k0YyBVGiL6m5AWSe9I7H7wIXKT0Efz.html)**In deze kwestie:
+
+   * Bewerk nieuwe Skill Builder-webinars en transformeer deze in een Dynamic Media Classic-expert.
+   * Zie waar u Dynamic Media vindt op de Adobe-top 2020.
+   * Ontdek hoe u de bijsnijdmagie van Dynamic Media kunt gebruiken.
+   * Haal voordeel uit een vrije controle om u te helpen meer waarde van Dynamische Klassiek van Media krijgen.
+   * Meer informatie over de nieuwe gebruikersinterface voor Dynamic Media Classic.
+   * Ontmoet Georgia Myers, Manager of Customer Success voor Adobe Experience Cloud.
+
+* **[Januari 2020, Uitgave 1](http://amc-mkt-prod1-t.adobe-campaign.com/rest/head/mirrorPage/@NpvOA7LHuVbd-W1B5pENdSLNFZ4L4ZeEkA_bVd4reX31KUOs3uaPFEuEx2mWz-3oNkVBcY5fdimoW3RM-SzTt6QXI4l1Rd2mEwrYsWp7C1LnUMVp.html)**In deze kwestie:
+
+   * Vijf nieuwe Webinars van de Bouwer van de Vaardigheid om uw Dynamische Klassieke vaardigheden van Media te monteren.
+   * Een gratis controle om u te helpen meer waarde van de Dynamische Klassieke Media krijgen.
+   * Een vakantieboodschappenseizoen met een recordinstelling voor onze rijke mediaclanten.
+   * Uw handleiding voor het selecteren van een DAM (Digital Asset Manager) die aan uw behoeften voor vandaag voldoet en u voorbereidt op de nieuwe functies van de rijke media van morgen.
+   * Ontmoet Mark Dean, Digital Media Specialist.
 
 * **[November 2019, uitgave 11](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_11_2019_Nov.html)**In deze kwestie:
 
@@ -52,7 +69,7 @@ In deze one-stop shop nieuwsbrief, ontdek waardevolle kennis-bouwend middelen zo
 * **[Augustus 2019, uitgave 08](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_08_2019_Aug.html)**In deze kwestie:
 
    * Ontdek kostbare functies die alleen beschikbaar zijn wanneer u een upgrade uitvoert naar Dynamic Media.
-   * Meer informatie over een webinar-reeks die is ontworpen om u snel te laten werken met Adobe Experience Manager Assets en Dynamic Media.
+   * Meer informatie over een webinar-reeks die is ontworpen om u snel te laten werken met Adobe Experience Manager-middelen en Dynamic Media.
    * Begin uw reis die waarde van Dynamische Media op de Liga van de Ervaring krijgt.
    * Ontdek een gulle blik op een krachtige integratie die deze maand september komt en u laat analyseren hoe bezoekers met uw rijke media omgaan.
    * Maak kennis met PieterJan Pieper, technische ondersteuning voor dynamische media.

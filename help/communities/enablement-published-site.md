@@ -40,7 +40,7 @@ Wanneer de bezoeker van de site voor het eerst op de gepubliceerde site aankomt,
 
 ## Anonieme sitebezoeker {#anonymous-site-visitor}
 
-Een anonieme sitebezoeker wordt direct de aanmeldingspagina voor deze persoonlijke communitysite voor activering aangeboden. Er is geen optie voor zelfinschrijving of aanmelden bij Facebook of Twitter.
+Een anonieme sitebezoeker wordt direct de aanmeldingspagina voor deze persoonlijke communitysite voor activering getoond. Er is geen optie voor zelfinschrijving of aanmelden bij Facebook of Twitter.
 
 Deze homepage bevat vier menu-items: en `Assignments, Ski Catalog, What's New` `Discussions`, maar u kunt deze bereiken zonder u aan te melden.
 

@@ -4,22 +4,22 @@ description: Nieuw in Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 1d9d4d2e97ebd321f73b97deca2fb7298802bbd0
+source-git-commit: 5eff26237415160e80e622eacabf5c40dfad00af
 
 ---
 
 
 # Nieuw in Adobe Experience Manager 6.5 Service Pack 4 {#aem-whats-new-service-pack-4}
 
-Adobe Experience Manager (AEM) 6.5 biedt functies en voortdurende verbeteringen via driemaandelijkse servicepacks. De nieuwe aanpak komt onze klanten ten goede wanneer ze de innovaties sneller kunnen toepassen.
+Adobe Experience Manager (AEM) 6.5 biedt functies en voortdurende verbeteringen via driemaandelijkse servicepacks. De aanpak is gunstig voor u omdat de innovaties eenvoudiger te gebruiken zijn.
 
-Het nieuwste AEM Service Pack 4 (6.5.4.0) wordt uitgebracht op 5 **maart 2020**. In dit artikel worden de functies gemarkeerd die het nieuwste Service Pack biedt om uw AEM-reis verrijkend te maken.
+AEM Service Pack 4 (6.5.4.0) wordt vrijgegeven op 5 **maart 2020**. In dit artikel worden de belangrijkste functies van de 6.5 Service Packs beschreven die u helpen uw AEM-reis verrijker te maken.
 
 ## AEM Sites {#aem-sites}
 
 ### Stijlsysteemverbeteringen
 
-AEM 6.5.4.0 omvat de verbeteringen van het Systeem van de Stijl. U kunt nu stijlen selecteren in het dialoogvenster met componenten.
+U kunt nu stijlen selecteren in het dialoogvenster met het verbeterde stijlsysteem.
 
 ### Prestatieverbeteringen op verschillende gebieden {#performance-improvements}
 
@@ -58,7 +58,7 @@ De middelen van de Manager van de ervaring omvatten de volgende toegankelijkheid
 
 ### Afdrukbare uitvoer genereren in AEM Forms-workflows {#generate-printable-output}
 
-Met de nieuwe workflowstap Afdrukbare uitvoer genereren kunt u een bronsjabloonbestand integreren met een gegevensbestand. Dankzij deze integratie kunt u verschillende exemplaren van het sjabloonbestand afdrukken of opslaan. U kunt bijvoorbeeld een bronformulier met een andere naam afdrukken telkens wanneer het wordt afgedrukt. Sla de namen in het gegevensbestand op en integreer het gegevensbestand met een standaardsjabloonbestand. Voor meer informatie over deze eigenschap, zie [Forms-centric werkschema op OSGi - de Verwijzing](../forms/using/aem-forms-workflow-step-reference.md)van de Stap.
+Met de workflowstap Afdrukbare uitvoer genereren kunt u een bronsjabloonbestand integreren met een gegevensbestand. Dankzij deze integratie kunt u verschillende exemplaren van het sjabloonbestand afdrukken of opslaan. De stap genereert een PCL-, PostScript-, ZPL-, IPL-, TPCL- of DPL-uitvoer. Voor meer informatie over deze eigenschap, zie [Forms-centric werkschema op OSGi - de Verwijzing](../forms/using/aem-forms-workflow-step-reference.md)van de Stap.
 
 ![Afdrukbare uitvoer genereren](assets/generate-print-output-demo.gif)
 
@@ -66,10 +66,7 @@ Met de nieuwe workflowstap Afdrukbare uitvoer genereren kunt u een bronsjabloonb
 
 U kunt nu het aantal kolommen voor een deelvenster definiëren in adaptieve formulieren en interactieve communicatie. Schakel over naar de lay-outmodus om de nieuwe optie voor meerdere kolommen te gebruiken. Zie De modus Lay-out [gebruiken om het formaat van componenten](../forms/using/resize-using-layout-mode.md)te wijzigen voor meer informatie.
 
-
 ![Lay-out met meerdere kolommen](assets/multi-column-layout.gif)
-
-
 
 ### AEM Inbox-aanpassingen {#aem-inbox}
 
@@ -83,7 +80,7 @@ De optie Beheer is alleen zichtbaar voor de leden van de groep met beheerders of
 
 ### RTF-ondersteuning in HTML5-formulieren {#rich-text-support}
 
-U kunt nu een tekstveld in een XFA-formulier omzetten in een RTF-veld wanneer het wordt weergegeven in een HTML5-formulier. Het resultaat is dat in het tekstveld een lijst met andere opmaakopties wordt weergegeven in een HTML5-formulier. Zie Formuliersjablonen [ontwerpen voor HTML5-formulieren](../forms/using/designing-form-template.md)voor meer informatie.
+Zet een tekstveld in een XFA-formulier om in een RTF-formulier. Zie Formuliersjablonen [ontwerpen voor HTML5-formulieren](../forms/using/designing-form-template.md)voor meer informatie.
 
 ### Verbeteringen voor toegankelijkheid {#forms-accessibility-enhancements-6540}
 
@@ -105,16 +102,16 @@ Slimme beeldverwerking gebruikt de unieke weergavekenmerken van elke gebruiker o
 
 Met middelen kunnen gebruikers visueel vergelijkbare afbeeldingen zoeken. AEM geeft de slimme getagde afbeeldingen uit de DAM-opslagplaats weer die lijken op een door de gebruiker geselecteerde afbeelding. Zie [Visueel onderzoek](../assets/search-assets.md).
 
-### Delen en toegang aanvragen tot postvakken van een gebruiker (6.5.3.0) {#share-request-access}
+### Delen en toegang aanvragen tot InBox-items van een gebruiker van AEM Forms (6.5.3.0) {#share-request-access}
 
 U kunt uw Inbox punten met een andere gebruiker delen. Zodra een andere gebruiker toegang krijgt tot uw Inbox-items, kan de gebruiker een claim indienen en de juiste actie ondernemen voor gedeelde items. Op dezelfde manier kunt u andere gebruikers om toegang tot Inbox-items verzoeken. Zie [Delen en verzoek om toegang tot Inbox-items van een gebruiker](../forms/using/configure-shared-queues-osgi.md).
 
-### Vorm het uit-van-bureau plaatsen voor uw Inbox punten (6.5.3.0) {#configure-out-of-office}
+### De buiten-van-bureaumontages voor Inbox punten van een gebruiker van Vormen AEM (6.5.3.0) vormen {#configure-out-of-office}
 
 Als u van plan bent om uit het bureau te zijn, kunt u specificeren wat aan punten gebeurt die aan u voor die periode worden toegewezen.
 U kunt een begindatum en -tijd en een einddatum en -tijd opgeven die van kracht moeten worden als uw instellingen buiten het kantoor zijn. U kunt een standaardpersoon instellen waarnaar al uw items worden verzonden. Zie [Vorm uit de montages](../forms/using/configure-out-of-office-settings.md)van het Bureau.
 
-### Meerdere interactieve communicatie genereren met de Batch-API (6.5.3.0) {#generate-multiple-ic}
+### Meerdere interactieve communicatie genereren met de batch-API voor AEM-formulieren (6.5.3.0) {#generate-multiple-ic}
 
 U kunt de batch-API gebruiken om meerdere interactieve communicatie van een sjabloon te maken. De sjabloon is een interactieve communicatie zonder gegevens. De batch-API combineert gegevens met een sjabloon voor interactieve communicatie. De API is nuttig bij de massaproductie van interactieve communicatie. Bijvoorbeeld telefoonrekeningen, creditcardoverzichten voor meerdere klanten. Zie Meerdere interactieve communicatie [genereren met de Batch-API](../forms/using/generate-multiple-interactive-communication-using-batch-api.md).
 

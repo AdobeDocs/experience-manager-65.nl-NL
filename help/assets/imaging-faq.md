@@ -8,7 +8,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: 9807bd4366315ad470128911cb67a31e7e9fd288
+source-git-commit: d690bcc80052f356425cd85c498aa48b1caf44bc
 
 ---
 
@@ -44,7 +44,7 @@ Verbeteringen in de nieuwste versie van Smart Imaging:
 * Smart Imaging kan worden uitgeschakeld met de URL-parameter &quot;bfc&quot;.
 * onafhankelijk van TTL (Time to Live). Eerder was een minimale TTL van 12 uur verplicht voor Smart Imaging.
 * Eerder waren zowel de oorspronkelijke als de afgeleide afbeeldingen in het cachegeheugen opgeslagen. Het was een proces van twee stappen om de cache ongeldig te maken. In de nieuwste Smart Imaging worden alleen de derivaten in het cachegeheugen opgeslagen, zodat een procedure voor het invalideren van het cachegeheugen in één stap mogelijk is.
-* Klanten die in hun regels aangepaste kopteksten gebruiken (bijvoorbeeld &#39;&#39;Timing Allow Origin&#39;&#39;, &#39;&#39;X-Robot&#39;&#39; zoals wordt gesuggereerd in [Een aangepaste koptekstwaarde toevoegen aan reacties op afbeeldingen|Dynamische media Klassiek](https://helpx.adobe.com/in/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)) profiteren van de nieuwste functie voor Smart Imaging, omdat deze kopteksten, in tegenstelling tot de vorige versie van Smart Imaging, niet worden geblokkeerd.
+* Klanten die in hun regels aangepaste kopteksten gebruiken (bijvoorbeeld &#39;&#39;Timing Allow Origin&#39;&#39;, &#39;&#39;X-Robot&#39;&#39; zoals wordt gesuggereerd in [Een aangepaste koptekstwaarde toevoegen aan reacties op afbeeldingen|Dynamische media Klassiek](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)) profiteren van de nieuwste functie voor Smart Imaging, omdat deze kopteksten, in tegenstelling tot de vorige versie van Smart Imaging, niet worden geblokkeerd.
 
 ## Zijn er licentiekosten verbonden aan intelligente beeldverwerking? {#are-there-any-licensing-costs-associated-with-smart-imaging}
 

@@ -353,7 +353,7 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
 |---|---|---|
 | Integraties | Het scherm **[!UICONTROL AEM Cloud Services Opt-In]** is verouderd. Met de integratie van AEM en Doel bijgewerkt in AEM 6.5 ter ondersteuning van de standaard-API van het Doel, die verificatie via Adobe IMS en I/O gebruikt, en de groeiende rol van Adobe Launch voor het van instrumenten voorzien van AEM-pagina&#39;s voor analyses en personalisatie, is de Opt-In-wizard functioneel irrelevant geworden. | Systeemverbindingen, Adobe IMS-verificatie en Adobe I/O-integratie configureren via de respectievelijke AEM-cloudservices |
 
-## Bekende problemen {#known-issues}
+## Known issues {#known-issues}
 
 * Als de **Verbonden tovenaar van de middelenconfiguratie** een 404 foutenmelding na installatie terugkeert, installeer manueel de **cq-remotedam-cliënt-ui-content** en **cq-remotedam-cliënt-ui-componenten** pakketten gebruikend de Manager van het Pakket opnieuw.
 * De volgende fouten en waarschuwingsberichten kunnen tijdens de installatie van AEM 6.5.x.x worden weergegeven:

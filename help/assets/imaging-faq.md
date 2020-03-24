@@ -8,7 +8,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: d690bcc80052f356425cd85c498aa48b1caf44bc
+source-git-commit: 3c2974911b9e9b45d4c4641f9c3683677a88db2f
 
 ---
 
@@ -88,7 +88,7 @@ Als de afbeeldingsvoorinstellingen worden gebruikt om terug te keren `fmt !=JPEG
 
 ## Moet ik URL&#39;s, voorinstellingen voor afbeeldingen wijzigen of nieuwe code op mijn site implementeren voor Smart Imaging? {#will-i-have-to-change-any-urls-image-presets-or-deploy-any-new-code-on-my-site-for-smart-imaging}
 
-Slimme afbeeldingen werken naadloos met bestaande URL&#39;s voor afbeeldingen en voorinstellingen voor afbeeldingen. Bovendien hoeft u bij Slimme afbeeldingen geen code aan uw website toe te voegen om de browser van een gebruiker te detecteren. Dit alles wordt automatisch afgehandeld.
+Nee. Slimme afbeeldingen werken naadloos met bestaande URL&#39;s voor afbeeldingen en voorinstellingen voor afbeeldingen. Bovendien hoeft u bij Slimme afbeeldingen geen code aan uw website toe te voegen om de browser van een gebruiker te detecteren. Dit alles wordt automatisch afgehandeld.
 
 Zoals eerder vermeld, ondersteunt Smart Imaging alleen JPEG- en PNG-afbeeldingsindelingen. Voor andere indelingen moet u de `bfc=off` bepaling aan URL toevoegen zoals eerder beschreven.
 
@@ -115,11 +115,11 @@ Uw eerste aangepaste domein kost geen extra geld met een Dynamic Media-licentie.
 
 U moet het verzoek starten om intelligente beeldverwerking te gebruiken. deze wordt niet automatisch ingeschakeld.
 
-1. Een aanvraag voor technische ondersteuning starten (e-mail: s7support@adobe.com).
+1. Een aanvraag voor technische ondersteuning starten (e-mail: `s7support@adobe.com`).
 1. Geef de volgende informatie op in uw supportverzoek:
 
    1. Primaire contactpersoon, e-mail, telefoon.
-   1. Alle domeinen die voor slimme beeldverwerking (namelijk images.company.com of mycompany.scene7.com) moeten worden toegelaten.
+   1. Alle domeinen die moeten worden ingeschakeld voor slimme beeldverwerking (dat wil zeggen `images.company.com` of `mycompany.scene7.com`).
 
       Meld u aan bij uw bedrijfsaccount of accounts om uw domeinen te zoeken.
 

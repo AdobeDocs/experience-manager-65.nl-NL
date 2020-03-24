@@ -9,12 +9,12 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e5413fb3-9d50-4f4f-9db8-7e53cd5145d5
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70350add185b932ee604e190aabaf972ff994ba2
+source-git-commit: 1449ce9aba3014b13421b32db70c15ef09967375
 
 ---
 
 
-# Zelfstudie:Formuliergegevensmodel maken{#tutorial-create-form-data-model}
+# Zelfstudie: Formuliergegevensmodel maken{#tutorial-create-form-data-model}
 
 ![04-create-form-data-model-main](assets/04-create-form-data-model-main.png)
 
@@ -38,7 +38,7 @@ Het formuliergegevensmodel ziet er ongeveer als volgt uit:
 
 ![Formuliergegevensmodel](assets/form_data_model_callouts_new.png)
 
-**********A. Gevormde gegevensbronnen** B. Gegevensbronschema&#39;s **C.** Beschikbare diensten **D. Gegevensmodelobjecten** E. Gevormde services
+**A.** Gevormde gegevensbronnen **B.** Gegevensbronschema&#39;s **C.** Beschikbare diensten **D.** Gegevensmodelobjecten **E.** Gevormde services
 
 ## Vereisten {#prerequisites}
 
@@ -54,9 +54,61 @@ De volgende afbeelding illustreert voorbeeldgegevens voor de klantentabel:
 
 ![sample_data_cust](assets/sample_data_cust.png)
 
-De vraaglijst omvat de vraagdetails zoals vraagdatum, vraagtijd, vraagaantal, vraagduur, en vraaglasten. De klantenlijst is verbonden met de vraaglijst gebruikend het Mobiele gebied van het Aantal (mobilenum). Voor elk mobiel aantal dat in de klantenlijst wordt vermeld, zijn er veelvoudige verslagen in de vraaglijst. Bijvoorbeeld, kunt u de vraagdetails voor **1457892541** mobiel aantal terugwinnen door naar de vraaglijst te verwijzen.
+Gebruik de volgende verklaring DDL om de **klantenlijst** in gegevensbestand tot stand te brengen.
 
-De rekeningstabel bevat de gegevens van de rekening, zoals de datum van de rekening, de factuurperiode, de maandelijkse kosten en de kosten van de oproep. De klantenlijst is verbonden met de rekeningslijst gebruikend het gebied van het Plan van de Rekening. Er is een plan verbonden aan elke klant in de klantenlijst. De tabel met rekeningen bevat de prijsgegevens voor alle bestaande plannen. Bijvoorbeeld, kunt u de plandetails voor **Sarah** van de klantenlijst terugwinnen en die details gebruiken om prijsdetails van de rekeningslijst terug te winnen.
+```sql
+CREATE TABLE `customer` (
+   `mobilenum` int(11) NOT NULL,
+   `name` varchar(45) NOT NULL,
+   `address` varchar(45) NOT NULL,
+   `alternatemobilenumber` int(11) DEFAULT NULL,
+   `relationshipnumber` int(11) DEFAULT NULL,
+   `customerplan` varchar(45) DEFAULT NULL,
+   PRIMARY KEY (`mobilenum`),
+   UNIQUE KEY `mobilenum_UNIQUE` (`mobilenum`)
+ ) ENGINE=InnoDB DEFAULT CHARSET=utf8
+```
+
+Gebruik de volgende verklaring DDL om de **rekeningen** lijst in gegevensbestand tot stand te brengen.
+
+```sql
+CREATE TABLE `bills` (
+   `billplan` varchar(45) NOT NULL,
+   `latepayment` decimal(4,2) NOT NULL,
+   `monthlycharges` decimal(4,2) NOT NULL,
+   `billdate` date NOT NULL,
+   `billperiod` varchar(45) NOT NULL,
+   `prevbal` decimal(4,2) NOT NULL,
+   `callcharges` decimal(4,2) NOT NULL,
+   `confcallcharges` decimal(4,2) NOT NULL,
+   `smscharges` decimal(4,2) NOT NULL,
+   `internetcharges` decimal(4,2) NOT NULL,
+   `roamingnational` decimal(4,2) NOT NULL,
+   `roamingintnl` decimal(4,2) NOT NULL,
+   `vas` decimal(4,2) NOT NULL,
+   `discounts` decimal(4,2) NOT NULL,
+   `tax` decimal(4,2) NOT NULL,
+   PRIMARY KEY (`billplan`)
+ ) ENGINE=InnoDB DEFAULT CHARSET=utf8
+```
+
+Gebruik de volgende verklaring DDL om de **vraaglijst** in gegevensbestand tot stand te brengen.
+
+```sql
+CREATE TABLE `calls` (
+   `mobilenum` int(11) DEFAULT NULL,
+   `calldate` date DEFAULT NULL,
+   `calltime` varchar(45) DEFAULT NULL,
+   `callnumber` int(11) DEFAULT NULL,
+   `callduration` varchar(45) DEFAULT NULL,
+   `callcharges` decimal(4,2) DEFAULT NULL,
+   `calltype` varchar(45) DEFAULT NULL
+ ) ENGINE=InnoDB DEFAULT CHARSET=utf8
+```
+
+De **vraaglijst** omvat de vraagdetails zoals vraagdatum, vraagtijd, vraagaantal, vraagduur, en vraaglasten. De **klantenlijst** is verbonden met de vraaglijst gebruikend het Mobiele gebied van het Aantal (mobilenum). Voor elk mobiel aantal dat in de **klantenlijst** wordt vermeld, zijn er veelvoudige verslagen in de **vraaglijst** . Bijvoorbeeld, kunt u de vraagdetails voor **1457892541** mobiel aantal terugwinnen door naar de **vraaglijst** te verwijzen.
+
+De **rekeningstabel** bevat de gegevens van de factuur, zoals de datum van de rekening, de factuurperiode, de maandelijkse kosten en de kosten van de factuur. De **klantenlijst** is verbonden met de **rekeningen** lijst gebruikend het gebied van het Plan van de Rekening. Er is een plan verbonden aan elke klant in de **klantenlijst** . De **rekeningtabel** bevat de prijsgegevens voor alle bestaande plannen. Bijvoorbeeld, kunt u de plandetails voor **Sarah** van de **klantenlijst** terugwinnen en die details gebruiken om prijsdetails van de **rekeningslijst** terug te winnen.
 
 ## Stap 2: MySQL-database configureren als gegevensbron {#step-configure-mysql-database-as-data-source}
 
@@ -77,20 +129,20 @@ Ga als volgt te werk om uw MySQL-database te configureren:
    1. Zoek de configuratie **van Apache Sling Connection Pooled DataSource** . Tik om de configuratie te openen in de bewerkingsmodus.
    1. Geef in het dialoogvenster Configuratie de volgende gegevens op:
 
-      * **** Naam gegevensbron: U kunt elke gewenste naam opgeven. Geef bijvoorbeeld **MySQL** op.
+      * **Naam gegevensbron:** U kunt elke gewenste naam opgeven. Geef bijvoorbeeld **MySQL** op.
 
       * **Naam** van de de diensteigenschap DataSource: Specificeer naam van het de dienstbezit die de naam DataSource bevat. Het wordt gespecificeerd terwijl het registreren van de gegevensbroninstantie als dienst OSGi. Bijvoorbeeld, **datasource.name**.
 
       * **JDBC-stuurprogrammaklasse**: Geef de Java-klassenaam van het JDBC-stuurprogramma op. Geef voor MySQL-database **com.mysql.jdbc.Driver** op.
 
       * **URI** JDBC-verbinding: Geef de verbindings-URL van de database op. Voor MySQL-database die wordt uitgevoerd op poort 3306 en schema-teleca, is de URL: `jdbc:mysql://[server]:3306/teleca?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
-      * **** Gebruikersnaam: Gebruikersnaam van de database. Het is vereist om JDBC-stuurprogramma in staat te stellen een verbinding met de database tot stand te brengen.
-      * **** Wachtwoord: Wachtwoord van de database. Het is vereist om JDBC-stuurprogramma in staat te stellen een verbinding met de database tot stand te brengen.
-      * **** Testen op lenen: Schakel de optie **Testen op lening** in.
+      * **Gebruikersnaam:** Gebruikersnaam van de database. Het is vereist om JDBC-stuurprogramma in staat te stellen een verbinding met de database tot stand te brengen.
+      * **Wachtwoord:** Wachtwoord van de database. Het is vereist om JDBC-stuurprogramma in staat te stellen een verbinding met de database tot stand te brengen.
+      * **Testen op lenen:** Schakel de optie **Testen op lening** in.
 
-      * **** Testen op rendement: Schakel de optie **Testen op terugkeer** in.
+      * **Testen op rendement:** Schakel de optie **Testen op terugkeer** in.
 
-      * **** Validatiezoekopdracht: Geef een SQL SELECT-query op om verbindingen vanuit de pool te valideren. De query moet ten minste één rij retourneren. Bijvoorbeeld, **selecteer * van klant**.
+      * **Validatiezoekopdracht:** Geef een SQL SELECT-query op om verbindingen vanuit de pool te valideren. De query moet ten minste één rij retourneren. Bijvoorbeeld, **selecteer * van klant**.
 
       * **Transactieisolatie**: Stel de waarde in op **READ_COMTED**.
    Laat andere eigenschappen de [standaardwaarden](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) behouden en tik op **Opslaan**.
@@ -99,7 +151,7 @@ Ga als volgt te werk om uw MySQL-database te configureren:
 
    ![Apache-configuratie](assets/apache_configuration_new.png)
 
-## Stap 3:Formuliergegevensmodel maken {#step-create-form-data-model}
+## Stap 3: Formuliergegevensmodel maken {#step-create-form-data-model}
 
 AEM Forms biedt een intuïtieve gebruikersinterface voor het [maken van een](https://helpx.adobe.com/experience-manager/6-3/forms/using/data-integration.html#main-pars_header_1524967585)formuliergegevensmodel op basis van geconfigureerde gegevensbronnen. U kunt meerdere gegevensbronnen gebruiken in een formuliergegevensmodel. Voor het gebruiksgeval in deze zelfstudie, zult u MySQL als gegevensbron gebruiken.
 

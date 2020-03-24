@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 1e9dd0d7-209a-4989-b66b-bca0d04b437a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 47a284a55f8d8f00ecda7be0bdcb8125cf976e3b
+source-git-commit: 60d36fd98bd4329a2b707229755fd197e2236748
 
 ---
 
@@ -209,7 +209,10 @@ Hiermee geeft u de miniatuurafbeelding van de pagina weer. U kunt:
 
    Selecteer een [merk om een bereik voor het instellen van doelen](/help/sites-authoring/target-adobe-campaign.md)op te geven.
 
-### Permissions {#permissions}
+   >[!NOTE]
+   >Voor deze optie moet de gebruikersaccount deel uitmaken van de `Target Adminstrators`groep.
+
+### Machtigingen {#permissions}
 
 * **Machtigingen**
 
@@ -261,7 +264,7 @@ U kunt pagina-eigenschappen definiëren:
 
 * Vanuit de pagina-editor:
 
-   * Pagina- **informatie** gebruiken (en vervolgens Eigenschappen **** openen)
+   * **Pagina-informatie** gebruiken (en vervolgens **Eigenschappen openen**)
 
 ### Vanuit de siteconsole - Eén pagina {#from-the-sites-console-single-page}
 
@@ -289,7 +292,7 @@ Wanneer u een pagina bewerkt, kunt u met **Pagina-informatie** de pagina-eigensc
 
    ![screen_shot_2018-03-22at095740](assets/screen_shot_2018-03-22at095740.png)
 
-1. Selecteer Eigenschappen **** openen en er wordt een dialoogvenster geopend waarin u de eigenschappen kunt bewerken, gesorteerd op het juiste tabblad. De volgende knoppen zijn ook beschikbaar aan de rechterkant van de werkbalk:
+1. Select **Open Properties** and a dailog will open allowing you to edit the properties, sorted by the appropriate tab. De volgende knoppen zijn ook beschikbaar aan de rechterkant van de werkbalk:
 
    * **Annuleren**
    * **Opslaan en sluiten**
@@ -298,7 +301,7 @@ Wanneer u een pagina bewerkt, kunt u met **Pagina-informatie** de pagina-eigensc
 
 ### Van de Console van Plaatsen - Meerdere Pagina&#39;s {#from-the-sites-console-multiple-pages}
 
-Vanuit de **Sites** -console kunt u meerdere pagina&#39;s selecteren en vervolgens de pagina-eigenschappen **bekijken en/of bewerken met** Weergave-eigenschappen. Dit wordt het bulkbewerken van pagina-eigenschappen genoemd.
+Vanuit de **Sites**-console kunt u meerdere pagina&#39;s selecteren en vervolgens **Eigenschappen weergeven** gebruiken om de pagina-eigenschappen te bekijken en/of te bewerken. Dit wordt het bulkgewijs bewerken van pagina-eigenschappen genoemd.
 
 >[!NOTE]
 >
@@ -313,7 +316,7 @@ U kunt meerdere pagina&#39;s selecteren voor bulkbewerking op verschillende mani
 
 ![epp-01](assets/epp-01.png)
 
-Nadat u de pagina&#39;s hebt geselecteerd en op de optie **** Eigenschappen hebt geklikt of getikt, worden de bulkeigenschappen weergegeven:
+Nadat u de pagina&#39;s hebt geselecteerd en op de optie **Eigenschappen** hebt geklikt of getikt, worden de bulkeigenschappen weergegeven:
 
 ![epp-02](assets/epp-02.png)
 

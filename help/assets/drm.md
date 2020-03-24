@@ -109,7 +109,7 @@ Op de middelenconsole van Adobe Experience Manager (AEM) Assets kunnen verschill
 
    ![chlimage_1-156](assets/chlimage_1-156.png)
 
-1. Kies **[!UICONTROL Publiceren]** in het menu en sluit het bevestigingsvenster.
+1. Kies **[!UICONTROL Publiceren]** in het menu en sluit vervolgens het bevestigingsvenster.
 1. Sluit de selectiemodus. De publicatiestatus voor het element wordt onder aan de elementminiatuur weergegeven in de kaartweergave. In de lijstmening, toont de Gepubliceerde kolom de tijd toen de activa werd gepubliceerd.
 
    ![chlimage_1-157](assets/chlimage_1-157.png)

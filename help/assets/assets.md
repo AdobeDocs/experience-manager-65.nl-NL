@@ -3,7 +3,7 @@ title: AEM-elementen
 description: Meer informatie over het beheer van digitale middelen, de gebruiksgevallen ervan en de AEM Asset-aanbieding van Adobe
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: 01475dc8cf4f1e4cb0575c60523c27105ebd1150
 
 ---
 
@@ -72,7 +72,7 @@ Wanneer u met digitale middelen werkt in AEM, moet u de volgende terminologie be
 
 * **Uitvoeringen** Een uitvoering is de binaire representatie van een element. Elementen hebben altijd een primaire representatie, namelijk die van het geüploade bestand. Ze kunnen een willekeurig aantal aanvullende voorstellingen hebben die worden gemaakt, bijvoorbeeld door aangepaste workflowstappen of wanneer een element wordt geüpload. Uitvoeringen kunnen een andere grootte hebben, met een andere resolutie, met een toegevoegd watermerk of een ander gewijzigd kenmerk.
 
-* **Met Versieversie** maakt u een momentopname van digitale elementen op een bepaald tijdstip. U kunt middelen aan vorige versies herstellen. Zie Versioning in AEM Assets.
+* **Met Versieversie** maakt u een momentopname van digitale elementen op een bepaald tijdstip. U kunt middelen aan vorige versies herstellen. Zie [versioning in AEM Assets](managing-assets-touch-ui.md#asset-versioning).
 
 * **Submiddelen** zijn elementen die een element vormen, zoals lagen in een Adobe Photoshop-bestand of pagina&#39;s in een PDF-bestand. In AEM-middelen kunt u subelementen op dezelfde manier beheren als elementen.
 

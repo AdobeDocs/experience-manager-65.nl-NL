@@ -4,7 +4,7 @@ description: Nieuw in Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5eff26237415160e80e622eacabf5c40dfad00af
+source-git-commit: 7c937b425d909a1f3a9af0a1c3357c44220af0f2
 
 ---
 
@@ -85,8 +85,6 @@ Zet een tekstveld in een XFA-formulier om in een RTF-formulier. Zie Formuliersja
 ### Verbeteringen voor toegankelijkheid {#forms-accessibility-enhancements-6540}
 
 Experience Manager Forms bevat de volgende toegankelijkheidsverbeteringen:
-
-* Gebruikers kunnen de tabfocus verschuiven zonder problemen voor het Ultramarijn-Toegankelijke referentiethema van een adaptief formulier.
 
 * Schermlezers kondigen selectievakjes, koppelingen, Datumkiezer en Datuminvoer correct aan in een adaptief formulier.
 

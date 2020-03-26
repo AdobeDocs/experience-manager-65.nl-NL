@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 29a94f3ece1b96b24e1b77f4abe6f6f28924ae7b
+source-git-commit: 6cf69dc86ce70a43e77b00d6b3986fa40ae0a4ec
 
 ---
 
@@ -44,7 +44,7 @@ Adobe raadt deze configuraties aan en biedt volledige of beperkte ondersteuning 
    <th>Beschrijving</th>
   </tr>
   <tr>
-   <td>A:Ondersteund<br /> </td>
+   <td>A: Ondersteund<br /> </td>
    <td>Adobe biedt volledige ondersteuning en onderhoud voor deze configuratie. Deze configuratie wordt gedekt door het kwaliteitsborgingsproces van Adobe.</td>
   </tr>
   <tr>
@@ -96,17 +96,17 @@ Voor Adobe Experience Manager Forms is een Java Virtual Machine vereist die word
   </tr>
   <tr>
    <td>Oracle Java™ SE 8 (64-bits)</td>
-   <td>A:Ondersteund</td>
+   <td>A: Ondersteund</td>
    <td>Kleine releases en updates</td>
   </tr>
   <tr>
    <td>IBM® J9 Virtual Machine (build 2.8, JRE 1.8.0)</td>
-   <td>A:Ondersteund</td>
+   <td>A: Ondersteund</td>
    <td>Kleine releases en updates</td>
   </tr>
   <tr>
    <td>IBM® J9 Virtual Machine (build 2.9, JRE 1.8.0)<br /> </td>
-   <td>A:Ondersteund</td>
+   <td>A: Ondersteund</td>
    <td>Kleine releases en updates</td>
   </tr>
  </tbody>
@@ -122,8 +122,6 @@ Voor Adobe Experience Manager Forms is een Java Virtual Machine vereist die word
 
 ### Databases en CRX-persistentie {#databases-and-crx-persistence}
 
-#### Ondersteuning voor AEM-persistentie {#aem-persistence-support}
-
 <table>
  <tbody>
   <tr>
@@ -137,7 +135,7 @@ Voor Adobe Experience Manager Forms is een Java Virtual Machine vereist die word
    <td><p>Ondersteund</p> </td>
   </tr>
   <tr>
-   <td><p>MongoDB Enterprise 4.0</p> </td>
+   <td><p>MongoDB Enterprise 4.0 </p> </td>
    <td><p>Repository Microkernel</p> </td>
    <td><p>Ondersteund</p> </td>
   </tr>
@@ -154,7 +152,7 @@ Voor Adobe Experience Manager Forms is een Java Virtual Machine vereist die word
 
 <tr>
    <td>Oracle Database 19c </td>
-   <td>Repository Microkernel</td>
+   <td>Bewaarplaats</td>
    <td>Ondersteund</td>
   </tr>
   <tr>
@@ -165,6 +163,11 @@ Voor Adobe Experience Manager Forms is een Java Virtual Machine vereist die word
   <tr>
    <td>IBM DB2 11.1</td>
    <td>Repository Microkernel</td>
+   <td>R: Beperkte ondersteuning</td>
+  </tr>
+    <tr>
+   <td>MySQL 5.7.19 </td>
+   <td>-</td>
    <td>R: Beperkte ondersteuning</td>
   </tr>
  </tbody>
@@ -172,7 +175,6 @@ Voor Adobe Experience Manager Forms is een Java Virtual Machine vereist die word
 
 * IBM DB2 wordt niet ondersteund voor nieuwe installaties. Deze functie wordt alleen ondersteund voor bestaande klanten die upgraden naar AEM 6.5 Forms.
 * MongoDB is software van derden en is niet opgenomen in het AEM-licentiepakket. Zie de pagina [MongoDB-licentiebeleid](https://www.mongodb.org/about/licensing/) voor meer informatie.
-
 * Adobe raadt u aan een licentie voor de MongoDB Enterprise-versie aan te schaffen om optimaal gebruik te kunnen maken van uw AEM-implementatie.
 * De klantenservice van Adobe helpt in aanmerking komende problemen met betrekking tot het gebruik van MongoDB met AEM. Zie de pagina [](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager)MongoDB voor Adobe Experience Manager voor meer informatie.
 * &#39;Bestandssysteem&#39; omvat blokopslag die compatibel is met POSIX. Dit omvat netwerkopslagtechnologie. Houd er rekening mee dat de prestaties van het bestandssysteem kunnen variëren en van invloed zijn op de algehele prestaties. Het wordt aanbevolen AEM-test te laden in combinatie met het netwerk/externe bestandssysteem.
@@ -180,50 +182,8 @@ Voor Adobe Experience Manager Forms is een Java Virtual Machine vereist die word
 * Delen via MongoDB wordt niet ondersteund in AEM.
 * AEM Forms on JEE biedt geen ondersteuning voor MySQL voor RDBMK-persistentie.
 * De module Documentbeveiliging maakt geen gebruik van de gegevensopslagruimte. Dit houdt in dat als u alleen Documentbeveiliging gebruikt en geen gebruik wilt maken van HTML Workspace, HTML5-formulieren of adaptieve formulieren, u geen opslagplaats voor inhoud hoeft te installeren.
+* AEM Forms on JEE biedt geen ondersteuning voor het gebruik van MySQL voor het permanent opslaan van AEM Repository (CRX-Repository).
 
-#### DATABASE-ondersteuning {#database-support}
-
-<table>
- <tbody>
-  <tr>
-   <td><p><strong>Platform</strong></p> </td>
-   <td><p><strong> Beschrijving</strong></p> </td>
-   <td><p><strong>Ondersteuningsniveau</strong></p> </td>
-  </tr>
-  <tr>
-   <td>IBM DB2 11.1</td>
-   <td>Repository Microkernel</td>
-   <td>R: Beperkte ondersteuning</td>
-  </tr>
-  <tr>
-   <td><p>Oracle Database 12c Release 1</p> </td>
-   <td><p>Repository Microkernel</p> </td>
-   <td><p>Ondersteund</p> </td>
-  </tr>
-  <tr>
-   <td>Oracle Database 18c</td>
-   <td>Repository Microkernel</td>
-   <td>Ondersteund</td>
-  </tr>
-    <tr>
-   <td>Oracle Database 19c</td>
-   <td>Repository Microkernel</td>
-   <td>Ondersteund</td>
-  </tr>
-  <tr>
-   <td><p>MySQL 5.7.19<br /> </p> </td>
-   <td><p>Repository Microkernel</p> </td>
-   <td><p>Ondersteund</p> </td>
-  </tr>
-  <tr>
-   <td><p>Microsoft SQL Server 2016</p> </td>
-   <td><p>Repository Microkernel</p> </td>
-   <td><p>Ondersteund</p> </td>
-  </tr>
- </tbody>
-</table>
-
-* IBM DB2 wordt niet ondersteund voor nieuwe installaties. Deze functie wordt alleen ondersteund voor bestaande klanten die upgraden naar AEM 6.5 Forms.
 
 ### Databasestuurprogramma&#39;s {#database-drivers}
 
@@ -263,12 +223,12 @@ Voor Adobe Experience Manager Forms is een Java Virtual Machine vereist die word
   </tr>
   <tr>
    <td>IBM® WebSphere® Application Server 9.0 <sup>[1] [4]</sup><br /> </td>
-   <td>A:Ondersteund</td>
+   <td>A: Ondersteund</td>
    <td>Servicepack en kritieke updates</td>
   </tr>
   <tr>
    <td><p>JBoss® Enterprise Application Platform (EAP) 7.1.4 <sup>[2] [3] [7]</sup></p> </td>
-   <td><p>A:Ondersteund</p> </td>
+   <td><p>A: Ondersteund</p> </td>
    <td><p>Patches en cumulatieve patches voor de ondersteunde EAP-versie</p> </td>
   </tr>
  </tbody>
@@ -291,27 +251,27 @@ Voor Adobe Experience Manager Forms is een Java Virtual Machine vereist die word
   </tr>
   <tr>
    <td>Microsoft Windows Server 2016 (64-bits)</td>
-   <td>A:Ondersteund</td>
+   <td>A: Ondersteund</td>
    <td>Servicepacks en kritieke updates</td>
   </tr>
   <tr>
    <td><p>Red Hat Enterprise Linux 7 (Kernel 3.x) (64-bits)</p> </td>
-   <td><p>A:Ondersteund</p> </td>
+   <td><p>A: Ondersteund</p> </td>
    <td><p>Kleine releases, cumulatieve updates en kritieke updates</p> </td>
   </tr>
   <tr>
    <td><p>SUSE® Linux® Enterprise Server 12 (64-bits)</p> </td>
-   <td><p>A:Ondersteund</p> </td>
+   <td><p>A: Ondersteund</p> </td>
    <td><p>Servicepacks, cumulatieve patches en kritieke beveiligingsupdates</p> </td>
   </tr>
   <tr>
    <td>Oracle Linux® 7 Update 3 (64-bits)</td>
-   <td>A:Ondersteund</td>
+   <td>A: Ondersteund</td>
    <td>Servicepacks, cumulatieve patches en kritieke beveiligingsupdates</td>
   </tr>
   <tr>
    <td>CentOS 7 (64-bits)<sup> [6]</sup></td>
-   <td>A:Ondersteund</td>
+   <td>A: Ondersteund</td>
    <td>Servicepacks, cumulatieve patches en kritieke beveiligingsupdates</td>
   </tr>
  </tbody>
@@ -559,8 +519,7 @@ Zie voor aanvullende vereisten:
  </tbody>
 </table>
 
-* 
-Schijfruimte voor installatie: 1,7 GB alleen voor Workbench, 2,7 GB op één station voor een volledige installatie van Workbench, Designer en de samplingverzameling 400 MB voor tijdelijke installatiemappen - 200 MB in de map met gebruikerstempels en 200 MB in de tijdelijke map van Windows. Als al deze locaties zich op één station bevinden, moet er tijdens de installatie 1,5 GB aan ruimte beschikbaar zijn. De naar de tijdelijke mappen gekopieerde bestanden worden verwijderd wanneer de installatie is voltooid.
+* Schijfruimte voor installatie: 1,7 GB alleen voor Workbench, 2,7 GB op één schijf voor een volledige installatie van Workbench, Designer en de samplingverzameling 400 MB voor tijdelijke installatiemappen - 200 MB in de map met gebruikerstempels en 200 MB in de tijdelijke map van Windows. Als al deze locaties zich op één station bevinden, moet er tijdens de installatie 1,5 GB aan ruimte beschikbaar zijn. De naar de tijdelijke mappen gekopieerde bestanden worden verwijderd wanneer de installatie is voltooid.
 
 * Geheugen voor het uitvoeren van Workbench: 2 GB RAM
 * Hardwarevereisten: Intel® Pentium® 4 of AMD equivalent, 1 GHz processor
@@ -570,7 +529,7 @@ Schijfruimte voor installatie: 1,7 GB alleen voor Workbench, 2,7 GB op één sta
 
 ### Designer {#designer}
 
-**** Opmerking: Als u Designer in Windows wilt installeren, voert u het installatieprogramma uit met beheerdersrechten.
+**Opmerking:** Als u Designer in Windows wilt installeren, voert u het installatieprogramma uit met beheerdersrechten.
 
 * Microsoft® Windows® 2016 Server, Microsoft Windows 10
 
@@ -618,12 +577,12 @@ Schijfruimte voor installatie: 1,7 GB alleen voor Workbench, 2,7 GB op één sta
   </tr>
   <tr>
    <td><p>Microsoft Edge (Evergreen)</p> </td>
-   <td><p>A:Ondersteund</p> </td>
+   <td><p>A: Ondersteund</p> </td>
    <td><p>Servicepacks en -updates</p> </td>
   </tr>
   <tr>
    <td><p>Mozilla Firefox (Evergreen)</p> </td>
-   <td><p>A:Ondersteund</p> </td>
+   <td><p>A: Ondersteund</p> </td>
    <td>Alle updates</td>
   </tr>
   <tr>
@@ -633,7 +592,7 @@ Schijfruimte voor installatie: 1,7 GB alleen voor Workbench, 2,7 GB op één sta
   </tr>
   <tr>
    <td><p>Google Chrome (Evergreen)</p> </td>
-   <td><p>A:Ondersteund</p> </td>
+   <td><p>A: Ondersteund</p> </td>
    <td>Alle updates</td>
   </tr>
   <tr>
@@ -643,12 +602,12 @@ Schijfruimte voor installatie: 1,7 GB alleen voor Workbench, 2,7 GB op één sta
   </tr>
   <tr>
    <td>Apple Safari 11.x</td>
-   <td>A:Ondersteund</td>
+   <td>A: Ondersteund</td>
    <td>Alle updates</td>
   </tr>
   <tr>
    <td>Apple Safari 12.x<br /><br /> </td>
-   <td>A:Ondersteund</td>
+   <td>A: Ondersteund</td>
    <td>Alle updates</td>
   </tr>
  </tbody>
@@ -731,7 +690,7 @@ De app AEM Forms is beschikbaar op de volgende platforms:
 
 >[!NOTE]
 >
->Het bijwerken en verspreiden van Flash Player wordt door Adobe [stopgezet eind 2020](https://theblog.adobe.com/adobe-flash-update/).
+>Het bijwerken en verspreiden van Flash Player [wordt door Adobe eind 2020 stopgezet](https://theblog.adobe.com/adobe-flash-update/).
 
 ### Adobe Document Security Extension voor Microsoft Office {#adobe-rights-management-extension-for-microsoft-office}
 

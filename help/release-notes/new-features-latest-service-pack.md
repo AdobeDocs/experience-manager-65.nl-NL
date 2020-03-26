@@ -4,7 +4,7 @@ description: Nieuw in Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 7c937b425d909a1f3a9af0a1c3357c44220af0f2
+source-git-commit: 61d1531c020b5a25207b5e3f1c2b0c14e2974e02
 
 ---
 
@@ -60,7 +60,7 @@ De middelen van de Manager van de ervaring omvatten de volgende toegankelijkheid
 
 Met de workflowstap Afdrukbare uitvoer genereren kunt u een bronsjabloonbestand integreren met een gegevensbestand. Dankzij deze integratie kunt u verschillende exemplaren van het sjabloonbestand afdrukken of opslaan. De stap genereert een PCL-, PostScript-, ZPL-, IPL-, TPCL- of DPL-uitvoer. Voor meer informatie over deze eigenschap, zie [Forms-centric werkschema op OSGi - de Verwijzing](../forms/using/aem-forms-workflow-step-reference.md)van de Stap.
 
-![Afdrukbare uitvoer genereren](assets/generate-print-output-demo.gif)
+![Afdrukbare uitvoer genereren](assets/generate-print-output-step.gif)
 
 ### Ondersteuning voor meerdere kolommen voor adaptieve formulieren en interactieve communicatie in de modus Indeling {#multi-column-adaptive-forms}
 
@@ -124,7 +124,7 @@ Tussen 12 december 2019 en 5 maart 2020 heeft Adobe de volgende functies uitgebr
    * [Cloud Manager 2020.1.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-2020-1-0.html)
 
 
-   * [Cloud Manager 2020.2.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-current.html)
+   * [Cloud Manager 2020.2.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-2020-2-0.html)
 
 
 * AEM Cloud Manager CLI-updates

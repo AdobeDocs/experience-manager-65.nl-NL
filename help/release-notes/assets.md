@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release Adobe Experience Manager
 description: De nieuwe mogelijkheden en verbeteringen voor Adobe Experience Manager 6.5-middelen.
 translation-type: tm+mt
-source-git-commit: 23f838b681d4d9eda55e287519f330addf7928aa
+source-git-commit: 92619acaa2eb820eda304355f8eaf79ec4a400e1
 
 ---
 
@@ -31,7 +31,7 @@ Uw organisatie kan haar [!DNL Adobe Stock] ondernemingsplan binnen gebruiken [!D
 
 [!DNL Adobe Stock] biedt ontwerpers en bedrijven toegang tot miljoenen kwalitatief hoogstaande, gekrulde, royaltyvrije foto&#39;s, vectoren, illustraties, video&#39;s, sjablonen en 3D-middelen voor al hun creatieve projecten.
 
-Zie DNL Adobe Stock Assets [gebruiken in Experience Manager Assets](/help/assets/aem-assets-adobe-stock.md)voor meer informatie.
+Zie [!DNL Adobe Stock] [gebruiken in Experience Manager Assets](/help/assets/aem-assets-adobe-stock.md)voor meer informatie.
 
 ![Adobe Stock-afbeelding voorvertonen en een licentie aanvragen vanuit Experience Manager-middelen](assets/stock_image_preview_license_options.png)
 

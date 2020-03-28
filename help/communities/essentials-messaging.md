@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 98f70093-e786-4555-8aaa-d0df4c977dc0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a3ccb1ffe2b2e24c453afac8cf3efc098f393030
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
 
-# Grondbeginselen van berichten{#messaging-essentials}
+# Grondbeginselen van berichten {#messaging-essentials}
 
 Deze pagina documenteert de details van het werken met het gebruiken van de component van het Overseinen om een overseineneigenschap op een website te omvatten.
 
@@ -98,18 +98,21 @@ Zie ook Aanpassingen aan de [clientzijde](/help/communities/client-customize.md)
 
 >[!CAUTION]
 >
->De parameter van het Koord moet *not *contain een het slepen schuine streep &quot;/&quot;voor de volgende methodes MessageBuilder:
+>De parameter van het Koord moet *geen* sluitend schuine streep &quot;/&quot;voor de volgende methodes MessageBuilder bevatten:
 >
 >* `setInboxPath`()
 >* `setSentItemsPath`()
 >
->Bijvoorbeeld:
 >
->```
+Bijvoorbeeld:
+>
+>
+```>
 >valid: mb.setInboxPath( "/mail/inbox" );
 > not valid: mb.setInboxPath( "/mail/inbox/" );
->```
->
+>```>
+
+
 
 ### Community-site {#community-site}
 
@@ -123,22 +126,22 @@ Het volgende voorbeeld is van een gebeurtenishandler die luistert naar de `messa
 
 Om het server-zijsteekproefmanuscript te proberen, hebt u een ontwikkelomgeving en de capaciteit nodig om een bundel te bouwen OSGi:
 
-1. Meld u aan als beheerder ` [CRXDE|Lite](https://localhost:4502/crx/de).`
+1. Meld u aan als beheerder ` [CRXDE|Lite](https://localhost:4502/crx/de)`.
 1. Maak een `bundle node`in `/apps/engage/install` met willekeurige namen, zoals:
 
-   * Symbolische naam: com.connect.media.social.messaging.MessagingNotification
+   * Symbolische naam: `com.engage.media.social.messaging.MessagingNotification`
    * Naam: Melding van lesbestanden aan de slag
-   * Omschrijving: een voorbeeldservice voor het verzenden van een e-mailbericht naar gebruikers wanneer zij een bericht ontvangen
-   * Pakket: com.connect.media.social.messaging.notification
+   * Omschrijving: Een voorbeeldservice voor het verzenden van een e-mailbericht naar gebruikers wanneer zij een bericht ontvangen
+   * Pakket: `com.engage.media.social.messaging.notification`
 
-1. Navigeer naar /apps/engage/install/com.engage.media.social.messaging.MessagingNotification/src/main/java/com/engc/media/social/messaging/notification en vervolgens:
+1. Navigeer naar `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/src/main/java/com/engage/media/social/messaging/notification`, en dan:
 
-   1. Verwijder automatisch de klasse Activator.java.
-   1. Maak de klasse MessageEventHandler.java.
-   1. Kopieer en plak de onderstaande code in MessageEventHandler.java.
+   1. Verwijder de `Activator.java` klasse die automatisch is gemaakt.
+   1. Klasse maken `MessageEventHandler.java`.
+   1. Kopieer en plak de onderstaande code in `MessageEventHandler.java`.
 
-1. Klik op Alles **opslaan.**
-1. Ga naar /apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd en voeg alle instructies import toe zoals geschreven in de code MessageEventHandler.java.
+1. Klik op Alles **opslaan**.
+1. Navigeer naar `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd`en voeg alle instructies import toe, zoals in de `MessageEventHandler.java` code is geschreven.
 1. Maak de bundel.
 1. Zorg ervoor dat de `Day CQ Mail Service`OSGi-service is geconfigureerd.
 1. Meld u aan als demogebruiker en stuur een e-mail naar een andere gebruiker.

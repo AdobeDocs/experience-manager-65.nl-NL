@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: e0da09b3-725d-4ed1-9273-2532132f6918
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
 
-# De weergave wijzigen (GB){#alter-the-appearance-hbs}
+# De weergave wijzigen (GB) {#alter-the-appearance-hbs}
 
 Nu de componenten voor het systeem van de douanecommentaar in de toepassingsfolder (/apps) op zijn plaats zijn, met een resourceSuperType die naar het standaardcommentaarsysteem en het aangepaste Model/Beeld verwijzen geregistreerd, is het mogelijk om de implementatie te wijzigen.
 
@@ -30,7 +30,7 @@ Voor een eenvoudige demonstratie, een visuele functie, wordt de avatar verwijder
 
 Met [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
-* open [/apps/custom/components/comments/comment/**comment.hbs **](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
+* Openen [/apps/custom/components/comments/comment/**comment.hbs **](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
 
    * verwijder de tag met de avatar voor een commentaarbericht (~ regel 21):
 
@@ -40,7 +40,7 @@ Met [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
        -->
       ```
 
-* open [/apps/custom/components/comments/**comments.hbs **](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
+* Openen [/apps/custom/components/comments/**comments.hbs **](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
 
    * verwijder de tag die de avatar bevat voor de volgende commentaarvermelding (~ regel 44):
 
@@ -50,7 +50,7 @@ Met [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
        -->
       ```
 
-* Selecteer Alles **opslaan**
+* Alles **opslaan selecteren**
 
 ### Aangepaste app repliceren {#replicate-custom-app}
 
@@ -58,7 +58,7 @@ Nadat de toepassing is gewijzigd, moet de aangepaste component opnieuw worden ge
 
 Een manier om dit te doen is
 
-* in het hoofdmenu
+* Vanuit het hoofdmenu
 
    * Selecteer **Gereedschappen > Bewerkingen > Replicatie**
    * select `Activate Tree`

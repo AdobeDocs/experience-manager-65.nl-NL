@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 9045ce2e-a06d-4da5-9b83-56dd823007bb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
 
-# Leaderboard-functie{#leaderboard-feature}
+# Leaderboard-functie {#leaderboard-feature}
 
 ## Inleiding {#introduction}
 
@@ -26,8 +26,8 @@ Voordat de leaderboard-component op een pagina wordt geplaatst, moet u [Communit
 
 In deze sectie van de documentatie wordt beschreven
 
-* toevoegen van de `Leaderboard` component aan een [gemeenschapsplaats](/help/communities/overview.md#community-sites)
-* configuratie-instellingen voor de `Leaderboard` component
+* De `Leaderboard` component toevoegen aan een [communitysite](/help/communities/overview.md#community-sites)
+* Configuratie-instellingen voor de `Leaderboard` component
 
 ### Een Leaderboard toevoegen aan een pagina {#adding-a-leaderboard-to-a-page}
 
@@ -51,7 +51,7 @@ Selecteer de geplaatste `Leaderboard` component die u wilt openen en selecteer h
 
 #### Het tabblad Instellingen {#settings-tab}
 
-Geef onder het tabblad **Instellingen **op welke informatie met betrekking tot het lid wordt weergegeven:
+Geef onder het tabblad **Instellingen** op welke informatie over het lid wordt weergegeven:
 
 * **Weergavenaam**
 
@@ -87,13 +87,11 @@ Op het tabblad **Regels** vindt u de site van de gebruikersgemeenschap en de bij
 
 * **Badgingregel**
 
-   (Vereist) Specifieke regel die de badge aan vertoning produceert.
+   (Vereist) Specifieke regel die de badge produceert om te tonen.
 
 * **Weergavelimiet**
 
-   Aantal leden dat per pagina moet worden weergegeven.
-
-   De standaardwaarde is 10.
+   Aantal leden dat per pagina moet worden weergegeven. De standaardwaarde is 10.
 
 ### Voorbeeld: Lederboard van deelnemers {#example-participants-leaderboard}
 

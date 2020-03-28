@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 25b7ac08-6cdc-4dd5-a756-d6169b86f9ab
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
@@ -21,9 +21,9 @@ source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
 
 Wanneer leden met de eigenschappen van de Gemeenschappen in wisselwerking staan, worden de gebeurtenissen OSGi verzonden die asynchrone luisteraars, zoals berichten of gamificatie (het scoren en het merken) kunnen teweegbrengen.
 
-De [instantie SocialEvent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) van een component registreert de gebeurtenissen als `actions`die voor een `topic`. De SocialEvent bevat een methode om een aan de actie `verb`gekoppeld item te retourneren. Er is een *n-1* relatie tussen `actions`en `verbs`.
+De [instantie SocialEvent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) van een component registreert de gebeurtenissen als `actions` die voor een `topic`. De SocialEvent bevat een methode om een aan de actie `verb` gekoppeld item te retourneren. Er is een *n-1* relatie tussen `actions` en `verbs`.
 
-Voor de onderdelen van Communities die in de release worden geleverd, wordt in de volgende tabellen de `verbs`definitie beschreven voor elke `topic`beschikbare versie.
+Voor de onderdelen van Communities die in de release worden geleverd, wordt in de volgende tabellen de `verbs` definitie van elke `topic` beschikbare versie beschreven.
 
 ## Onderwerpen en werven {#topics-and-verbs}
 

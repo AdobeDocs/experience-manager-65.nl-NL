@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 83c4f18a-d7d6-4090-88c7-41a9075153b5
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
@@ -77,7 +77,7 @@ Deze richtingen plaatsen **Groep** aan `.hidden` aangezien slechts de oudercompo
 
 De verwijdering van het automatisch gemaakte JSP-bestand komt doordat in plaats daarvan het standaard-HBS-bestand wordt gebruikt.
 
-1. Navigeren naar het `/apps/custom/components/comments` knooppunt
+1. Navigate to the `/apps/custom/components/comments` node
 1. Klik met de rechtermuisknop op het knooppunt
 
    * Selecteer **[!UICONTROL Maken > Component...]**
@@ -167,7 +167,7 @@ Met [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
 ## Het SCF-model en de weergave registreren {#register-the-scf-model-view}
 
-Wanneer het uitbreiden (met voeten tredend) van een component SCF, is resourceType verschillend (het bedekken maakt gebruik van het relatieve onderzoeksmechanisme dat `/apps` alvorens zoekt `/libs` zodat resourceType het zelfde blijft). Daarom is het noodzakelijk om JavaScript (in de cliëntbibliotheek) te schrijven om het model SCF JS en mening voor custom resourceType te registreren.
+Wanneer het uitbreiden van (het met voeten treden) een component SCF, is resourceType verschillend (het bedekken maakt gebruik van het relatieve onderzoeksmechanisme dat `/apps` alvorens zoekt `/libs` zodat resourceType het zelfde blijft). Daarom is het noodzakelijk om JavaScript (in de cliëntbibliotheek) te schrijven om het model SCF JS en mening voor custom resourceType te registreren.
 
 Voer de volgende tekst in als de inhoud van `customcommentsystem.js`:
 

@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a07a4690-0e47-4a76-84cb-96abdc70b835
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
@@ -31,7 +31,7 @@ Stel dat de koptekst van de commentaarcomponent op de ene site van de AEM-instan
 
 Om deze oplossing uit te voeren, creeer een nieuwe component die (met voeten treedt) bestaande uitbreidt en het manuscript van Handlebars wijzigt. Het gebied van de site dat de nieuwe opmerkingen gebruikt, kan de uitgebreide versie gebruiken, terwijl de sites die de standaardweergave gebruiken, ongewijzigd blijven.
 
-De commentaarcomponent is eigenlijk één van twee componenten die uit het commentaarsysteem bestaan. Er zijn dus twee onderdelen die moeten worden uitgebreid: *opmerkingen* en *opmerkingen*. Het script dat moet worden bewerkt, bevindt zich in het `header.hbs` bestand *comment *component, terwijl de bovenliggende *commentaarcomponent* (het opmerkingensysteem) is wat een auteur daadwerkelijk aan de pagina toevoegt.
+De commentaarcomponent is eigenlijk één van twee componenten die uit het commentaarsysteem bestaan. Er zijn dus twee onderdelen die moeten worden uitgebreid: *opmerkingen* en *opmerkingen*. Het script dat moet worden bewerkt, bevindt zich in het *bestand van de component* Commentaar `header.hbs` , terwijl de bovenliggende ** commentaarcomponent (het opmerkingensysteem) de component is die een auteur daadwerkelijk aan de pagina toevoegt.
 
 Als u opmerkingen wilt uitbreiden, moet u:
 

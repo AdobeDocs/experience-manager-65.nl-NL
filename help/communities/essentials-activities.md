@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 8714b456-527a-457b-82c4-21bd445dfd9c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70e6f2d8366456e5091b7b775dc40914948921ab
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
 
-# Essentiële elementen activiteitsstroom{#activity-stream-essentials}
+# Essentiële elementen activiteitsstroom {#activity-stream-essentials}
 
 De activiteiten van een ondertekend lid van de gemeenschap, zoals het posten aan een forum of blog, worden verzameld in een stroom die op verschillende manieren door configuratie van de component van activiteitenstromen kan worden gefiltreerd en getoond.
 
@@ -32,7 +32,7 @@ Een lid kan een activiteitenstroom volgen, door of een ander individu of inhoud 
 
 Een *nieuwsfeed* is een samenvoeging van de activiteitsstromen die door een lid worden gevolgd in één stream.
 
-A * [social graph](/help/communities/essentials-socialgraph.md)* legt de volgende relaties van één lid aan een andere vast.
+In een *[sociale grafiek](/help/communities/essentials-socialgraph.md)*worden de volgende relaties tussen leden vastgelegd.
 
 ## Essentiële elementen voor client-kant {#essentials-for-client-side}
 

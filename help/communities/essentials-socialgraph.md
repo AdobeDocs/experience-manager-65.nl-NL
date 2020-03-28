@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: f8d85d72-0215-4680-a334-e37a530fba58
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
@@ -19,9 +19,9 @@ source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
 
 De mogelijkheid voor een lid van de Gemeenschap om [activiteiten](essentials-activities.md) te volgen en te volgen, wordt vastgesteld door middel van twee componenten:
 
-De `follow`component moet met een andere bron worden geassocieerd, en deze vereniging is reeds gevestigd voor bestaande leden van de Gemeenschappen en eigenschappen op een [communautaire plaats](overview.md#communitiessites).
+De `following` component moet met een andere bron worden geassocieerd, en deze vereniging is reeds gevestigd voor bestaande leden van de Gemeenschappen en eigenschappen op een [communautaire plaats](overview.md#communitiessites).
 
-De `following`component maakt een lijst van de leden die of het huidige lid volgen of door het huidige lid worden gevolgd. Deze sociale grafiek van de relaties tussen leden is opgenomen in het gebruikersprofiel dat voor een site van een community is ingesteld.
+De `following` component maakt een lijst van de leden die of het huidige lid volgen of door het huidige lid worden gevolgd. Deze sociale grafiek van de relaties tussen leden is opgenomen in het gebruikersprofiel dat voor een site van een community is ingesteld.
 
 ## Essentiële elementen voor client-kant {#essentials-for-client-side}
 
@@ -58,11 +58,11 @@ De `following`component maakt een lijst van de leden die of het huidige lid volg
    <td>
     <ul>
      <li>Naam: <strong><code>outgoing</code></strong></li>
-     <li>Type:Boolean</li>
+     <li>Type: Boolean</li>
      <li>Waarde:<br />
       <ul>
-       <li><i>true </i>- in de <code>following</code> component worden de leden weergegeven die het momenteel aangemelde lid zijn <code>follows</code></li>
-       <li><i>false </i>- de <code>following</code> component geeft een lijst weer van de leden die <code>follow </code>het momenteel aangemelde lid zijn</li>
+       <li><i>Waar </i>- De <code>following</code> component geeft een lijst weer van de leden die momenteel zijn aangemeld <code>follows</code></li>
+       <li><i>Onwaar </i>- De <code>following</code> component zal van de leden een lijst maken die momenteel <code>follow </code>het ondertekende lid vormen</li>
       </ul> </li>
     </ul> <p>De standaardwaarde is <i>true</i> als de eigenschap ontbreekt. Momenteel is het niet mogelijk om deze eigenschap in te stellen in het dialoogvenster Bewerken in de modus Schrijver. De eigenschap moet aan een instantie van het <code>following </code>knooppunt worden toegevoegd met <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>.</p> </td>
   </tr>
@@ -71,11 +71,11 @@ De `following`component maakt een lijst van de leden die of het huidige lid volg
 
 ### Volg {#follow}
 
-| **resourceType** | sociale/sociale grafiek/componenten/hbs/volgende |
+| **resourceType** | `social/socialgraph/components/hbs/following` |
 |---|---|
 | [**inclusief **](scf.md#add-or-include-a-communities-component) | Nee |
-| **templates** | /libs/social/socialgraph/components/hbs/following/following.hbs |
-| **css** | /libs/social/socialgraph/components/hbs/following/clientlibs/following.css |
+| **templates** | `/libs/social/socialgraph/components/hbs/following/following.hbs` |
+| **css** | `/libs/social/socialgraph/components/hbs/following/clientlibs/following.css` |
 
 * [Aanpassingen aan de clientzijde](client-customize.md)
 

@@ -7,7 +7,7 @@ uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 translation-type: tm+mt
-source-git-commit: 0598f1e61218c540b6441182a3080e5217761ed4
+source-git-commit: a7ef7682df1dc627565f1cc30047ed775d2dbd13
 
 ---
 
@@ -66,7 +66,7 @@ Voordat u begint met het installeren en configureren van AEM Forms-documentservi
 * Er wordt een AEM-instantie uitgevoerd. In AEM-terminologie is een &quot;instantie&quot; een kopie van AEM die wordt uitgevoerd op een server in de auteur- of publicatiemodus. Over het algemeen hebt u slechts één AEM-instantie (auteur of publicatie) nodig om AEM Forms-documentservices uit te voeren:
 
    * **Auteur**: Een AEM-instantie die wordt gebruikt om inhoud te maken, te uploaden en te bewerken en om de website te beheren. Wanneer de inhoud gereed is om live te gaan, wordt deze gekopieerd naar de publicatie-instantie.
-   * **Publiceren**: Een AEM-instantie die de gepubliceerde inhoud via internet of een intern netwerk aan het publiek beschikbaar stelt.
+   * **Publiceren**: Een AEM-instantie die de gepubliceerde inhoud via internet of een intern netwerk aan het publiek levert.
 
 * Er wordt voldaan aan de geheugenvereisten. AEM Forms add-on package vereist:
 
@@ -189,7 +189,7 @@ Als u het op UNIX gebaseerde besturingssysteem gebruikt, installeert u de volgen
 
 ### Adobe Acrobat en toepassingen van derden installeren {#install-adobe-acrobat-and-third-party-applications}
 
-Als u de service PDF Generator gebruikt om eigen bestandsindelingen zoals Microsoft Word, Microsoft Excel, Microsoft PowerPoint, OpenOffice, WordPerfect X7 en Adobe Acrobat te converteren naar PDF-documenten, moet u ervoor zorgen dat deze toepassingen zijn geïnstalleerd op de AEM Forms-server.
+Als u de PDF Generator-service gaat gebruiken om eigen bestandsindelingen zoals Microsoft Word, Microsoft Excel, Microsoft PowerPoint, OpenOffice, WordPerfect X7 en Adobe Acrobat te converteren naar PDF-documenten, moet u ervoor zorgen dat deze toepassingen zijn geïnstalleerd op de AEM Forms-server.
 
 >[!NOTE]
 >
@@ -258,7 +258,7 @@ Omgevingsvariabelen instellen voor 32-bits en 64-bits Java Development Kit, toep
 
 * Voer de volgende stappen uit om IBM SSL-socketprovider te configureren:
 
-1. Maak een kopie van het bestand java.security. De standaardlocatie van het bestand is [WebSphere_installation_directory]\Appserver\java_[version]\jre\lib\security.
+1. Maak een kopie van het bestand java.security. De standaardlocatie van het bestand is `[WebSphere_installation_directory]\Appserver\java_[version]\jre\lib\security`.
 1. Open het gekopieerde bestand java.security voor bewerking.
 1. Wijzig de standaard SSL-socketfabrieken om de JSSE2-fabrieken te gebruiken in plaats van de standaard IBM WebSphere-fabrieken:
 
@@ -318,7 +318,6 @@ Voor de gebruikersaccount die wordt gebruikt om de toepassingsserver te starten,
 U kunt een gebruiker zonder beheerder inschakelen om de service PDF Generator te gebruiken. Normaal gesproken kunnen alleen gebruikers met beheerdersrechten de service gebruiken:
 
 1. Maak een omgevingsvariabele, PDFG_NON_ADMIN_ENABLED.
-
 1. Stel de waarde van de omgevingsvariabele in op TRUE.
 1. Start de instantie AEM Forms opnieuw.
 
@@ -331,7 +330,7 @@ U kunt een gebruiker zonder beheerder inschakelen om de service PDF Generator te
 
    1. Microsoft raadt u aan een back-up van het register te maken voordat u het register wijzigt. Voor gedetailleerde stappen, zie [hoe te file en herstel de registratie in Vensters](https://support.microsoft.com/en-us/help/322756).
    1. Open de Register-editor voor Microsoft Windows. Als u de registereditor wilt openen, gaat u naar Start > Uitvoeren, typt u regedit en klikt u op OK.
-   1. Ga naar HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system\. Zorg ervoor dat de waarde van EnableLUA is ingesteld op 0 (nul).
+   1. Ga naar `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system\`. Zorg ervoor dat de waarde van EnableLUA is ingesteld op 0 (nul).
    1. Zorg ervoor dat de waarde van **EnableLUA** is ingesteld op 0 (nul). Als de waarde niet 0 is, wijzigt u de waarde in 0. Sluit de registereditor.
 
 1. Start de computer opnieuw op.
@@ -393,7 +392,7 @@ AEM Forms add-on package is een toepassing die op AEM wordt geïmplementeerd. He
 
    Als u het pakket handmatig downloadt via de directe koppeling in het [artikel met de release](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) van AEM Forms, meldt u zich aan bij pakketbeheer, klikt u op Pakket **** uploaden, selecteert u het gedownloade pakket en klikt u op Uploaden. Nadat het pakket is geüpload, klikt u op de pakketnaam en klikt u op **[!UICONTROL Installeren]**.
 
-1. Nadat het pakket is geïnstalleerd, wordt u gevraagd om de AEM-instantie opnieuw te starten. **Stop niet onmiddellijk de server.** Voordat u de AEM Forms-server stopt, wacht u tot de berichten ServiceEvent REGISTERED en ServiceEvent UNREGISTERED niet meer voorkomen in het bestand [AEM-Installation-Directory]/crx-quickstart/logs/error.log en het logbestand stabiel is.
+1. Nadat het pakket is geïnstalleerd, wordt u gevraagd om de AEM-instantie opnieuw te starten. **Stop niet onmiddellijk de server.** Voordat u de AEM Forms-server stopt, wacht u tot de berichten ServiceEvent REGISTERED en ServiceEvent UNREGISTERED niet meer voorkomen in het bestand `[AEM-Installation-Directory]/crx-quickstart/logs/error`.log en het logbestand stabiel is.
 
 ## Configuratie na installatie {#post-installation-configurations}
 
@@ -401,7 +400,7 @@ AEM Forms add-on package is een toepassing die op AEM wordt geïmplementeerd. He
 
 1. Stop de AEM-instantie. Navigeer naar de [AEM-installatiemap]\crx-quickstart\conf\ folder. Open het bestand sling.properties voor bewerking.
 
-   Als u de [AEM-installatiemap]\crx-quickstart\bin\start.bat gebruikt om een AEM-instantie te starten, bewerkt u de sling.properties op de locatie [AEM_root]\crx-quickstart\.
+   Als u een AEM-instantie start `[AEM installation directory]\crx-quickstart\bin\start.bat` , bewerkt u de eigenschappen sling.properties op `[AEM_root]\crx-quickstart\`.
 
 1. Voeg de volgende eigenschappen toe aan het bestand sling.properties:
 
@@ -415,7 +414,6 @@ AEM Forms add-on package is een toepassing die op AEM wordt geïmplementeerd. He
    ```
    sling.bootdelegation.xerces=org.apache.xerces.*
    ```
-
 1. Sla het bestand op en sluit het.
 
 ### De service voor lettertypebeheer configureren {#configuring-the-font-manager-service}
@@ -481,9 +479,9 @@ In Microsoft Windows gebruikt de service PDF Generator Adobe Acrobat om onderste
 1. Dubbelklik op een PDF-document op uw systeem. Wanneer Acrobat voor het eerst wordt gestart, worden de dialoogvensters Aanmelden, Welkomstscherm en EULA weergegeven. Deze dialoogvensters sluiten voor alle gebruikers die zijn geconfigureerd voor het gebruik van PDF Generator.
 1. Voer de PDF Generator-hulpprogrammabatchbestand uit om Acrobat voor de PDF Generator-service te configureren:
 
-   1. Open [AEM Package Manager](http://localhost:4502/crx/packmgr/index.jsp) en download het bestand adobe-aemfd-pdfg-common-pkg-[version].zip vanuit pakketbeheer.
+   1. Open [AEM Package Manager](http://localhost:4502/crx/packmgr/index.jsp) en download het `adobe-aemfd-pdfg-common-pkg-[version].zip` bestand van pakketbeheer.
    1. Pak het gedownloade .zip-bestand uit. Open de opdrachtprompt met beheerdersrechten.
-   1. Navigeer naar de map [extracted-zip-file]\jcr_root\etc\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]-win.zip\scripts. Voer het volgende batchbestand uit:
+   1. Navigate to the `[extracted-zip-file]\jcr_root\etc\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]-win.zip\scripts` directory. Voer het volgende batchbestand uit:
 
       `Acrobat_for_PDFG_Configuration.bat`
 
@@ -491,15 +489,15 @@ In Microsoft Windows gebruikt de service PDF Generator Adobe Acrobat om onderste
 
 1. Start System Readiness Tool (SRT) om de installatie van Acrobat te valideren. Het gereedschap controleert of de computer op de juiste wijze is geconfigureerd voor het uitvoeren van conversies van PDF Generator en genereert een rapport bij het opgegeven pad:
 
-   1. Opdrachtprompt openen. Navigeer naar de map [extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\etc\fd\ pdfg\tools\adobe-aemfd-pdfg-utilities-[version]-win.zip\srt. Voer het volgende bevel van de bevelherinnering in werking:
+   1. Opdrachtprompt openen. Navigate to the `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\etc\fd\ pdfg\tools\adobe-aemfd-pdfg-utilities-[version]-win.zip\srt` folder. Voer het volgende bevel van de bevelherinnering in werking:
 
       `cscript SystemReadinessTool.vbs [Path_of_reports_folder] en`
 
       >[!NOTE]
       >
-      >Als het hulpprogramma Systeemgereedheid meldt dat het bestand pdfgen.api niet beschikbaar is in de map acrobat plug-ins, kopieert u het bestand pdfgen.api uit het bestand [extracted-adobe-aemfd-pdfg-common-pkg]\plugins\x86_win32 directory to the [Acrobat_root]\Acrobat\plug_ins directory.
+      >Als het Hulpprogramma voor systeemgereedheid meldt dat het bestand pdfgen.api niet beschikbaar is in de map acrobat plug-ins, kopieert u het bestand pdfgen.api van de `[extracted-adobe-aemfd-pdfg-common-pkg]\plugins\x86_win32` map naar de `[Acrobat_root]\Acrobat\plug_ins` map.
 
-   1. Navigeer naar [Path_of_reports_folder]. Open het bestand SystemReadinessTool.html. Verifieer het rapport en los de bovengenoemde kwesties op.
+   1. Ga naar `[Path_of_reports_folder]`. Open het bestand SystemReadinessTool.html. Verifieer het rapport en los de bovengenoemde kwesties op.
 
 ### Primaire route voor conversie van HTML naar PDF configureren (alleen Windows) {#configure-primary-route-for-html-to-pdf-conversion-windows-only}
 
@@ -530,7 +528,7 @@ Voordat u de certificaten instelt, moet u controleren of u beschikt over:
 * Wachtwoord voor persoonlijke sleutel dat bij het certificaat wordt geleverd.
 
 * Alias persoonlijke sleutel. U kunt de Java-opdracht Keytool uitvoeren om de alias Persoonlijke sleutel weer te geven:
-keytool -list -v -keystore [keystore-file] -storetype pkcs12
+   `keytool -list -v -keystore [keystore-file] -storetype pkcs12`
 
 * Wachtwoord sleutelarchiefbestand. Als u het Adobe Reader Extensions-certificaat gebruikt, is het wachtwoord voor het sleutelarchiefbestand altijd hetzelfde als het wachtwoord voor de persoonlijke sleutel.
 
@@ -552,7 +550,7 @@ Voer de volgende stappen uit om de certificaten te configureren:
 
 ### AES-256 inschakelen {#enable-aes}
 
-Als u AES 256-versleuteling wilt gebruiken voor PDF-bestanden, moet u de JCE-bestanden (Unlimited Strength Jurdiction Policy) (Java Cryptography Extension) ophalen en installeren. Vervang de bestanden local_policy.jar en US_export_policy.jar in de map jre/lib/security. Als u bijvoorbeeld Sun JDK gebruikt, kopieert u de gedownloade bestanden naar de map [JAVA_HOME]/jre/lib/security.
+Als u AES 256-versleuteling wilt gebruiken voor PDF-bestanden, moet u de JCE-bestanden (Unlimited Strength Jurdiction Policy) (Java Cryptography Extension) ophalen en installeren. Vervang de bestanden local_policy.jar en US_export_policy.jar in de map jre/lib/security. Als u bijvoorbeeld Sun JDK gebruikt, kopieert u de gedownloade bestanden naar de `[JAVA_HOME]/jre/lib/security` map.
 
 De service Assembler is afhankelijk van de service Reader Extensions, de service Handtekening, de service Forms en de service Output. Voer de volgende stappen uit om te verifiëren dat de vereiste diensten in gebruik zijn:
 
@@ -590,7 +588,7 @@ De service Assembler is afhankelijk van de service Reader Extensions, de service
 
 * Op UNIX-besturingssystemen vindt u de volgende handelingen om ontbrekende bibliotheken te zoeken:
 
-1. Navigeer naar [crx-repository]/slaapck/svcnative/HtmlToPdfSvc/bin/.
+1. Ga naar `[crx-repository]/bedrock/svcnative/HtmlToPdfSvc/bin/`.
 
 1. Voer de volgende opdracht uit om alle bibliotheken weer te geven die PhantomJS nodig heeft voor conversie van HTML naar PDF.
 

@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 18f54a1c-52aa-414d-b494-1f19b5c10345
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
@@ -34,7 +34,7 @@ De commentaarcomponent vestigt een commentaarsysteem zodat elke afzonderlijke po
    <td>Ja - eigenschappen kunnen worden bewerkt in de <i></i>ontwerpmodus</td>
   </tr>
   <tr>
-   <td> <a href="client-customize.md#clientlibs-for-scf"><strong>Clientlibs</strong></a></td>
+   <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
    <td>cq.ckeditor<br /> cq.social.hbs.comments<br /> cq.social.hbs.stemden</td>
   </tr>
   <tr>
@@ -71,7 +71,7 @@ Andere functies zijn al het opmerkingensysteem. Dit zijn:
 
 De lijst met gemarkeerde redenen kan worden aangepast door een gemarkeerde redenlist.hbs aan uw app toe te voegen om te overschrijven wat zich in
 
-* /libs/social/commons/components/hbs/comments/comment/flagreasonlist.hbs
+* `/libs/social/commons/components/hbs/comments/comment/flagreasonlist.hbs`
 
 Dit geldt voor alle componenten die een opmerkingsysteem uitbreiden.
 

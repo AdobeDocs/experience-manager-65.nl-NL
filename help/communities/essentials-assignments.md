@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 6bac681e-59e1-4786-9c50-6679c936cfd1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70e6f2d8366456e5091b7b775dc40914948921ab
+source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
 
 ---
 
 
-# Essentiële toewijzingen{#assignments-essentials}
+# Essentiële toewijzingen {#assignments-essentials}
 
 Lees verder om over de essentiële informatie voor het werken met de taakeigenschap van [het toelaten van communautaire](/help/communities/overview.md#enablement-community) plaatsen te weten te komen.
 
@@ -48,7 +48,7 @@ De toewijzingsfunctie is de mogelijkheid om bronnen voor activering en leerpaden
   </tr>
   <tr>
    <td><strong> eigenschappen</strong></td>
-   <td>zie <a href="/help/communities/assignments.md">Toewijzingsfunctie</a></td>
+   <td>Zie, <a href="/help/communities/assignments.md">toewijzingsfunctie</a></td>
   </tr>
  </tbody>
 </table>

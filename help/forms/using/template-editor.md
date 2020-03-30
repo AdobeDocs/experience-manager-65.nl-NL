@@ -10,7 +10,7 @@ topic-tags: develop
 discoiquuid: b21a48ba-eccd-4bb5-9b92-3039026ddf2a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 94472fad34fe97740e4711d2cb35beb884db52ce
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -52,13 +52,13 @@ Wanneer u een sjabloon opent voor bewerking, kunt u de volgende componenten van 
    * **Zijpaneel** in-/uitschakelen: Hiermee kunt u de zijbalk weergeven of verbergen.
    * **Pagina-informatie**: Hier kunt u informatie opgeven, zoals de publicatie-/publicatietijd, miniaturen, bibliotheken aan de clientzijde, het paginabeleid en de clientbibliotheek van het paginaontwerp.
    * **Emulator**: Hiermee kunt u het uiterlijk van verschillende apparaten simuleren en aanpassen.
-   * **** Laagkiezer: Hiermee kunt u de laag wijzigen.
+   * **Laagkiezer:** Hiermee kunt u de laag wijzigen.
 U kunt de laag **Structuur** of **Eerste inhoud** kiezen. Met de structuurlaag kunt u de kop- en voettekst toevoegen en aanpassen. Met de eerste laag Inhoud kunt u de formulierinhoud aanpassen.
 
-   * **** Voorvertoning: Hiermee kunt u een voorvertoning weergeven van het uiterlijk van de sjabloon wanneer u de sjabloon publiceert. U kunt Laagkiezer en Voorvertoning gebruiken om de bewerkings- en voorvertoningsmodi in en uit te schakelen.
+   * **Voorvertoning:** Hiermee kunt u een voorvertoning weergeven van het uiterlijk van de sjabloon wanneer u de sjabloon publiceert. U kunt Laagkiezer en Voorvertoning gebruiken om de bewerkings- en voorvertoningsmodi in en uit te schakelen.
 
-* **** Zijbalk: Verstrekt de Inhoud, Eigenschappen, Activa, en de browsers van Componenten.
-* **** Component, werkbalk: Wanneer u een component selecteert, ziet u een werkbalk waarin u de component kunt aanpassen.
+* **Zijbalk:** Verstrekt de Inhoud, Eigenschappen, Activa, en de browsers van Componenten.
+* **Component, werkbalk:** Wanneer u een component selecteert, ziet u een werkbalk waarin u de component kunt aanpassen.
 * **Pagina**: Het gebied waar u inhoud toevoegt om de sjabloon te maken.
 
 Zie [Inleiding tot het ontwerpen van adaptieve formulieren](../../forms/using/introduction-forms-authoring.md) voor meer informatie over de Touch UI-editor.
@@ -80,7 +80,7 @@ Wanneer u de structuurlaag selecteert in de Sjablooneditor, ziet u de lay-outcon
 
 Lay-outcontainers in de structuurlaag
 
-******A. Lay-outcontainer voor koptekstcomponent** B. Lay-outcontainer voor voettekstcomponent
+**A.** Lay-outcontainer voor koptekstcomponent **B.** Lay-outcontainer voor voettekstcomponent
 
 Sleep de component Adaptief koptekst van formulier naar de lay-outcontainer boven de container voor adaptieve formulieren. Nadat u de component hebt toegevoegd, kunt u de eigenschappen ervan opgeven waarmee u een logo kunt toevoegen en de titel kunt opgeven.
 
@@ -135,7 +135,7 @@ Wijzig de laag van Structuur in Begininhoud en voeg inhoud toe aan het formulier
 * U kunt de deelvenstercomponent slepen en neerzetten vanuit de deelvensterbrowser in de zijbalk.
 * U kunt onderliggende deelvensters van de werkbalk toevoegen `guideRootPanel` vanuit de componentwerkbalk.
 
-Als u de tabbladen Algemene informatie en Professionele informatie wilt maken, voegt u twee deelvensters toe in het deelvenster Onderliggend item van het dialoogvenster `guideRootPanel`. Selecteer de deelvensters en tik op ![cmp](assets/cmppr.png) om de eigenschappen in het zijpaneel te openen. Wijzig de elementnamen als `general-info` en `professional-info`en de titels als Algemene informatie en Professionele informatie. Tik in de zijbalk op inhoud om de inhoudbrowser te openen. Selecteer op het tabblad Formulierobjecten de optie `guideRootPanel`. In de redacteur, wordt guideRootPanel geselecteerd. Tik op ![cmp](assets/cmppr.png) in de werkbalk van de component om de eigenschappen te openen. Selecteer **Tabs bovenaan** in het veld Lay-out deelvenster en tik op **Gereed**. De sjabloonstructuur met tabs wordt toegepast.
+Als u de tabbladen Algemene informatie en Professionele informatie wilt maken, voegt u twee deelvensters toe in het deelvenster Onderliggend item van het dialoogvenster `guideRootPanel`. Selecteer de deelvensters en tik op ![cmp](assets/cmppr.png) om de eigenschappen in het zijpaneel te openen. Wijzig de elementnamen als `general-info` en `professional-info`en de titels als Algemene informatie en Professionele informatie. Tik in de zijbalk op inhoud om de inhoudbrowser te openen. Selecteer op het tabblad Formulierobjecten `guideRootPanel`. In de redacteur, wordt guideRootPanel geselecteerd. Tik op ![cmp](assets/cmppr.png) in de werkbalk van de component om de eigenschappen te openen. Selecteer **Tabs bovenaan** in het veld Lay-out deelvenster en tik op **Gereed**. De sjabloonstructuur met tabs wordt toegepast.
 
 #### Inhoud toevoegen op tabbladen {#adding-content-in-tabs}
 
@@ -179,7 +179,7 @@ Voer de volgende stappen uit om sjablonen weer te geven en te verbergen:
 
    >[!NOTE]
    >
-   >De URL van de AEM-webconsole is https://[server]:[poort]/systeem/console/configMgr
+   >De URL van de AEM-webconsole is https://&#39;[server]:[port]&#39;/system/console/configMgr
 
 1. Zoek en open de **configuratie** -instellingen van FormsManager:
 

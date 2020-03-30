@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0d5436c6-1976-496c-b9a7-7dc6e830bb5d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e3f32b526d8a619b8bacfc85e7dce4a7bf5d23a7
+source-git-commit: e4d84b5c6f7d2bfcac942b0b685a8f1fd11274f0
 
 ---
 
@@ -107,9 +107,9 @@ De oplossing van het Beheer van de Correspondentie steunt twee soorten aan dynam
 
    ![textBackgroundColor toegepast](assets/textbackgroundcolorapplied.png)
 
-   U kunt rechtstreeks tikken op een basiskleur **[A]** in het palet Basiskleuren of op **Selecteren** tikken nadat u de schuifregelaar **[B]** hebt gebruikt om de juiste kleur te kiezen.
+   U kunt rechtstreeks op een basiskleur in het palet Standaardkleuren tikken of op `**[A]**` Selecteren **tikken nadat u de schuifregelaar hebt gebruikt** `**[B]**` om de juiste kleurtint te kiezen.
 
-   U kunt ook naar het tabblad Geavanceerd gaan om de juiste kleurtoon, helderheid en verzadiging **[C]** te selecteren en vervolgens op Select **[D]** tikken om de tekst te markeren.
+   Desgewenst kunt u ook naar het tabblad Geavanceerd gaan om de juiste kleurtoon, helderheid en verzadiging te selecteren `**[C]**` en vervolgens op Selecteren tikken `**[D]**` om de tekst te markeren.
 
    ![textBackgroundColor-1](assets/textbackgroundcolor-1.png)
 

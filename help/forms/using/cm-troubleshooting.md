@@ -9,12 +9,12 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 discoiquuid: cc473808-e71a-4834-bb30-91e6df783e60
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
-# Correspondentenbeheer:Problemen oplossen {#correspondence-management-troubleshooting}
+# Correspondentenbeheer: Problemen oplossen {#correspondence-management-troubleshooting}
 
 ## Fouten bij het opslaan van een letter {#errors-when-saving-a-letter}
 
@@ -46,7 +46,7 @@ Tijdens het voorvertonen van een letter geeft de fout &quot;Fout bij het laden v
 
 Stel de lettercache op de publicatieinstantie opnieuw in door de volgende stappen uit te voeren en probeer de letter vervolgens opnieuw weer te geven:
 
-1. Ga naar **`https://[server]:[port]/[contextPath]/system/console/configMgr`** en meld u aan als Admin.
+1. Ga naar **`https://'[server]:[port]'/[contextPath]/system/console/configMgr`** en meld u aan als Admin.
 1. Selecteer **Correspondence Management Configurations**.
 1. Schakel in **Correspondence Management Configurations** de optie **Lettercache inschakelen uit** en klik **op Opslaan.**
 1. Schakel **Lettercache** inschakelen in en klik op **Opslaan**.

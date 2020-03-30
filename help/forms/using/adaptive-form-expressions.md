@@ -9,7 +9,7 @@ topic-tags: develop
 discoiquuid: 2fd2276e-cfe3-47ad-94c1-9c7af56b7a17
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -22,7 +22,7 @@ JavaScript is de expressietaal van adaptieve formulieren. Alle expressies zijn g
 
 ## Aanbevolen werkwijzen voor het schrijven van expressies {#best-practices-for-writing-expressions}
 
-* Wanneer u expressies schrijft, kunt u de naam van een veld of deelvenster gebruiken om velden en deelvensters te openen. Gebruik de eigenschap value om toegang te krijgen tot de waarde van een veld. Bijvoorbeeld, `field1.value`
+* Wanneer u expressies schrijft, kunt u de naam van een veld of deelvenster gebruiken om velden en deelvensters te openen. Gebruik de eigenschap value om toegang te krijgen tot de waarde van een veld. Bijvoorbeeld: `field1.value`
 * Gebruik unieke namen voor velden en deelvensters in het formulier. Hiermee voorkomt u mogelijke conflicten met veldnamen die tijdens het schrijven van expressies worden gebruikt.
 * Gebruik tijdens het schrijven van expressies met meerdere regels een puntkomma om een instructie te beëindigen.
 
@@ -48,11 +48,11 @@ In adaptieve formulieren kunt u expressies schrijven om gedrag toe te voegen, zo
 * **[Toegang tot expressies](../../forms/using/adaptive-form-expressions.md#main-pars-header-4)**: om een veld in of uit te schakelen.
 * **[Expressies](../../forms/using/adaptive-form-expressions.md#p-calculate-expression-p)**berekenen: om de waarde van een veld automatisch te berekenen.
 * **[Klikexpressie](../../forms/using/adaptive-form-expressions.md#p-click-expression-p)**: om handelingen af te handelen bij klikgebeurtenis van een knop.
-* **[](../../forms/using/adaptive-form-expressions.md#p-initialization-script-p)Initialisatiescript **: een handeling uitvoeren bij initialisatie van een veld.
+* **[Initialisatiescript](../../forms/using/adaptive-form-expressions.md#p-initialization-script-p):**een handeling uitvoeren bij initialisatie van een veld.
 * **[Uitdrukking](../../forms/using/adaptive-form-expressions.md#p-options-expression-p)**opties: om een vervolgkeuzelijst dynamisch in te vullen.
 * **[Samenvattingsexpressie](#summary)**: om de titel van een accordeon dynamisch te berekenen.
 * **[Expressies](../../forms/using/adaptive-form-expressions.md#p-validate-expression-p)**valideren: om een veld te valideren.
-* **[](../../forms/using/adaptive-form-expressions.md#p-value-commit-script-p)Waarde script **vastleggen: om de componenten van een formulier te wijzigen nadat de waarde van een veld is gewijzigd.
+* **[Waarde script](../../forms/using/adaptive-form-expressions.md#p-value-commit-script-p)vastleggen:**om de componenten van een formulier te wijzigen nadat de waarde van een veld is gewijzigd.
 * **[Visibility expression](../../forms/using/adaptive-form-expressions.md#p-visibility-expression-p)**: om de zichtbaarheid van een veld en deelvenster te regelen.
 * **[Uitdrukking](../../forms/using/adaptive-form-expressions.md#p-step-completion-expression-p)**voor stapvoltooiing: om te voorkomen dat een gebruiker naar de volgende stap van een wizard gaat.
 
@@ -95,11 +95,11 @@ Het initialisatiescript wordt geactiveerd wanneer een adaptief formulier wordt g
 * Wanneer een adaptief formulier wordt weergegeven met een gegevensvoorvoegsel, wordt het script uitgevoerd nadat de voorvulbewerking is voltooid.
 * Wanneer de validatie van een adaptief formulier aan de serverzijde wordt geactiveerd, wordt het initialisatiescript uitgevoerd.
 
-**** Van toepassing op: velden en deelvenster
+**Van toepassing op:** velden en deelvenster
 
-**** Retourneringstype: De initialisatiescript-expressie retourneert geen waarde. Als een expressie een waarde retourneert, wordt de waarde genegeerd.
+**Retourneringstype:** De initialisatiescript-expressie retourneert geen waarde. Als een expressie een waarde retourneert, wordt de waarde genegeerd.
 
-**** Voorbeeld: In een scenario waarin gegevens vooraf worden ingevuld, is de initialisatiescript-expressie als u velden wilt vullen met de standaardwaarde `'Adaptive Forms'` als de waarde null is.
+**Voorbeeld:** In een scenario waarin gegevens vooraf worden ingevuld, is de initialisatiescript-expressie als u velden wilt vullen met de standaardwaarde `'Adaptive Forms'` als de waarde null is.
 `if(this.value==null) this.value='Adaptive Forms';`
 
 ### Opties {#options-expression}
@@ -122,11 +122,11 @@ De expressie Samenvatting berekent dynamisch de titel van een onderliggend deelv
 
 De expressie Samenvatting wordt doorgaans gebruikt voor het herhalen van onderliggende items van een accordeonlay-outdeelvenster, zodat elk onderliggend deelvenster een betekenisvolle titel krijgt.
 
-**** Van toepassing op: Deelvensters die directe onderliggende elementen zijn van een deelvenster waarvan de lay-out is geconfigureerd als Accordeon.
+**Van toepassing op:** Deelvensters die directe onderliggende elementen zijn van een deelvenster waarvan de lay-out is geconfigureerd als Accordeon.
 
-**** Retourneringstype: De expressie retourneert een tekenreeks die de titel van de accordeon wordt.
+**Retourneringstype:** De expressie retourneert een tekenreeks die de titel van de accordeon wordt.
 
-**** Voorbeeld: &quot;Rekeningnummer: &quot;+ textbox1.value
+**Voorbeeld:** &quot;Rekeningnummer: &quot;+ textbox1.value
 
 ### Expressie valideren {#validate-expression}
 
@@ -143,7 +143,7 @@ Als in het bovenstaande voorbeeld de niet-lege waarde niet overeenkomt met het p
 
 >[!NOTE]
 >
->Als u een validatie-expressie schrijft voor een niet-verplicht of verplicht veld, wordt de expressie geëvalueerd, ongeacht de zichtbaarheidsstatus van het veld. Als u de validatie voor de verborgen velden wilt stoppen, stelt u de eigenschap validationsDisabled in het script Initialization of Value Commit in op true. Bijvoorbeeld, `this.validationsDisabled=true`
+>Als u een validatie-expressie schrijft voor een niet-verplicht of verplicht veld, wordt de expressie geëvalueerd, ongeacht de zichtbaarheidsstatus van het veld. Als u de validatie voor de verborgen velden wilt stoppen, stelt u de eigenschap validationsDisabled in het script Initialization of Value Commit in op true. Bijvoorbeeld: `this.validationsDisabled=true`
 
 ### Waarde script vastleggen {#value-commit-script}
 
@@ -152,16 +152,16 @@ Het script voor vastleggen van waarde wordt geactiveerd wanneer:
 * Een gebruiker wijzigt de waarde van een veld in de gebruikersinterface.
 * De waarde van een veld verandert via de programmacode als gevolg van een wijziging in een ander veld.
 
-**** Van toepassing op: velden
+**Van toepassing op:** velden
 
-**** Retourneringstype: De waarde commit script expression retourneert geen waarde. Als een expressie een waarde retourneert, wordt de waarde genegeerd.
+**Retourneringstype:** De waarde commit script expression retourneert geen waarde. Als een expressie een waarde retourneert, wordt de waarde genegeerd.
 
-**** Voorbeeld: Als u het hoofdlettergebruik van in het veld ingevoerde alfabeten wilt omzetten in hoofdletters bij doorvoeren, voert u de volgende expressie voor waarde uit:
+**Voorbeeld:** Als u het hoofdlettergebruik van in het veld ingevoerde alfabeten wilt omzetten in hoofdletters bij doorvoeren, voert u de volgende expressie voor waarde uit:
 `this.value=this.value.toUpperCase()`
 
 >[!NOTE]
 >
->U kunt de uitvoering van het Script van het Vastleggen van de Waarde onbruikbaar maken wanneer de waarde van een gebied programmatically wordt veranderd. Ga hiertoe naar https://[server]:[port]/system/console/configMgr en wijzig de **Adaptive Forms Version for Compatibility** in **AEM Forms 6.1**. Vervolgens wordt het script voor vastleggen van waarde alleen uitgevoerd wanneer de gebruiker de waarde van het veld wijzigt in de gebruikersinterface.
+>U kunt de uitvoering van het Script van het Vastleggen van de Waarde onbruikbaar maken wanneer de waarde van een gebied programmatically wordt veranderd. Ga hiertoe naar https://&#39;[server]:[port]&#39;/system/console/configMgr en wijzig **Adaptive Forms Version for Compatibility** in **AEM Forms 6.1**. Vervolgens wordt het script voor vastleggen van waarde alleen uitgevoerd wanneer de gebruiker de waarde van het veld wijzigt in de gebruikersinterface.
 
 ### Zichtbaarheidsexpressie {#visibility-expression}
 
@@ -188,7 +188,7 @@ De expressie voor het voltooien van de stap wordt gebruikt om te voorkomen dat e
 
 Er zijn meerdere methoden om veldvalidatie toe te voegen aan een adaptief formulier. Als een validatiecontrole aan een veld wordt toegevoegd, geeft **True** aan dat de waarde die in het veld wordt ingevoerd, geldig is. **False** vertegenwoordigt dat de waarde ongeldig is. Als u in- en uitgaat van een veld, wordt het foutbericht niet gegenereerd.
 
-De methoden om validaties toe te voegen aan een veld zijn:
+U kunt als volgt validaties toevoegen aan een veld:
 
 ### Vereist {#required}
 
@@ -196,7 +196,7 @@ Als u een component verplicht wilt maken, kunt u in het dialoogvenster **Bewerke
 
 ### Validatiepatronen {#validation-patterns}
 
-Er zijn meerdere validatiepatronen beschikbaar voor een veld. Als u een validatiepatroon wilt selecteren, gaat u in het dialoogvenster **Bewerken** van de component naar het gedeelte **Patronen** en selecteert u **patronen**. U kunt uw eigen aangepaste validatiepatroon maken in een tekstvak **Patroon** . De validatiestatus wordt alleen **True** geretourneerd als de gevulde gegevens voldoen aan het validatiepatroon. Anders wordt **False** geretourneerd. Zie Ondersteuning van [afbeeldingscomponenten voor HTML5-formulieren](/help/forms/using/picture-clause-support.md)voor informatie over het schrijven van uw eigen aangepaste validatiepatroon.
+Er zijn meerdere validatiepatronen beschikbaar voor een veld. Als u een validatiepatroon wilt selecteren, gaat u in het dialoogvenster **Bewerken** van de component naar het gedeelte **Patronen** en selecteert u **patronen**. U kunt uw eigen aangepaste validatiepatroon maken in een tekstvak **Patroon** . De validatiestatus wordt alleen **True** geretourneerd als de gegevens die zijn ingevuld, voldoen aan het validatiepatroon. Anders wordt **False** geretourneerd. Zie Ondersteuning van [afbeeldingscomponenten voor HTML5-formulieren](/help/forms/using/picture-clause-support.md)voor informatie over het schrijven van uw eigen aangepaste validatiepatroon.
 
 ### Validatie-expressies {#validation-expressions}
 
@@ -278,7 +278,8 @@ Voer de volgende stappen uit om een aangepast patroon te maken voor een specifie
 1. Maak een map om uw aangepaste patronen te behouden. Maak onder de map /apps een knooppunt van het type sling:folder. Maak bijvoorbeeld een knooppunt met de naam `customPatterns`. Onder dit knooppunt maakt u een ander knooppunt van het type `nt:unstructed` en geeft u dit een naam `textboxpatterns`. Dit knooppunt bevat de verschillende aangepaste patronen die u wilt toevoegen.
 1. Open het tabblad Eigenschappen van het gemaakte knooppunt. Open bijvoorbeeld het tabblad Eigenschappen van `textboxpatterns`. Voeg de `guideComponentType` eigenschap toe aan dit knooppunt en stel de waarde ervan in op *fd/af/components/formatter/guideTextBox*.
 
-1. De waarde van deze eigenschap is afhankelijk van het veld waarvoor u de patronen wilt definiëren. Voor een numeriek veld is de waarde van de `guideComponentType` eigenschap *fd/af/components/formatter/guideNumericBox*. De waarde voor het veld Datepicker is *fd/af/components/formatter/guideDatepicker*. &quot;
+1. De waarde van deze eigenschap is afhankelijk van het veld waarvoor u de patronen wilt definiëren. Voor een numeriek veld is de waarde van de `guideComponentType` eigenschap *fd/af/components/formatter/guideNumericBox*. De waarde voor het veld Datepicker is *fd/af/components/formatter/guideDatepicker*.
+&quot;
 1. U kunt een aangepast patroon toevoegen door een eigenschap toe te wijzen aan het `textboxpatterns` knooppunt. Voeg een eigenschap met een naam toe (bijvoorbeeld `pattern1`) en stel de waarde ervan in op het patroon dat u wilt toevoegen. Bijvoorbeeld, voeg een bezit `pattern1` met waarde Fax=text {99-999-9999999} toe. Het patroon is beschikbaar voor alle tekstvakken die u in Adaptieve formulieren gebruikt.
 
    ![Aangepaste patronen maken voor velden in CrxDe](assets/creating-custom-patterns.png)

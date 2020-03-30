@@ -10,7 +10,7 @@ topic-tags: process-reporting
 discoiquuid: 7c1fcde0-b983-4b24-bc19-fcee1d4f096b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8ae69f5bb67d51d759f143a076fef4f5f0375809
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -108,7 +108,7 @@ U kunt de console van het Beleid gebruiken om de wortel (**gebrek**) te vormen: 
 
 #### De locaties van de Process Reporting repository configureren {#to-configure-the-process-reporting-repository-locations}
 
-1. Meld u aan bij de **beheerconsole** met beheerdersreferenties. De standaard-URL van de beheerconsole is `https://[server]:[port]/adminui`
+1. Meld u aan bij de **beheerconsole** met beheerdersreferenties. De standaard-URL van de beheerconsole is `https://'[server]:[port]'/adminui`
 1. Ga naar **Home** > **Services** > **Toepassingen en services** >**Servicebeheer** en open de **ProcessDataStorageProvider** -service.
 
    ![process-data-storage-service](assets/process-data-storage-service.png)
@@ -133,7 +133,7 @@ De dienst ReportConfiguration wordt gebruikt door Proces dat voor het vormen van
 
 #### Om de dienst te vormen ReportingConfiguration {#to-configure-the-reportingconfiguration-service}
 
-1. Meld u aan bij **Configuratiebeheer** met CRX-beheerdersreferenties. De standaard-URL van Configuration Manager is `https://[server]:[port]/lc/system/console/configMgr`
+1. Meld u aan bij **Configuratiebeheer** met CRX-beheerdersreferenties. De standaard-URL van Configuration Manager is `https://'[server]:[port]'/lc/system/console/configMgr`
 1. Open de **dienst ReportingConfiguration** .
 1. **Aantal records**
 
@@ -166,7 +166,7 @@ De service ProcessDataPublisher importeert procesgegevens uit de AEM Forms-datab
 
 1. Meld u aan bij de **beheerconsole** met beheerdersreferenties.
 
-   De standaard-URL is `https://[server]:port]/adminui/`.
+   De standaard-URL is `https://'server':port]/adminui/`.
 
 1. Ga naar **Home** > **Services** > **Toepassingen en services** >**Servicebeheer** en open de **ProcessDataPublisher** -service.
 
@@ -244,37 +244,37 @@ Als u zich aanmeldt bij Process Reporting, wordt het scherm **[!UICONTROL Home]*
 
 ![proces-reporting-home-screen](assets/process-reporting-home-screen.png)
 
-**** De mening van de boom van de Rapportering van het proces: De boomstructuurweergave aan de linkerkant van het Homescherm bevat de items voor de modules Procesrapportage.
+**De mening van de boom van de Rapportering van het proces:** De boomstructuurweergave aan de linkerkant van het Homescherm bevat de items voor de modules Procesrapportage.
 
 De boomstructuurweergave bestaat uit de volgende items op hoofdniveau:
 
-**** Rapporten: Dit item bevat de out-of-the-box rapporten die worden verzonden met Process Reporting.
+**Rapporten:** Dit item bevat de out-of-the-box rapporten die worden verzonden met Process Reporting.
 
 Zie [Vooraf gedefinieerde rapporten in Process Reporting](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md)voor meer informatie over de vooraf gedefinieerde rapporten.
 
-**** Adhoc-query&#39;s: Dit item bevat opties voor het uitvoeren van op filters gebaseerde zoekopdrachten naar processen en taken.
+**Adhoc-query&#39;s:** Dit item bevat opties voor het uitvoeren van op filters gebaseerde zoekopdrachten naar processen en taken.
 
 Voor details op ad-hoc vragen, zie [Ad-hoc Vragen in het Rapporteren](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md)van het Proces.
 
-**** Aangepast: Het knooppunt Aangepast geeft aangepaste rapporten weer die u maakt.
+**Aangepast:** Het knooppunt Aangepast geeft aangepaste rapporten weer die u maakt.
 
 Voor de procedure om douanerapporten tot stand te brengen en te tonen, zie de Rapporten van de [Douane in de Rapportering](/help/forms/using/process-reporting/process-reporting-custom-reports.md)van het Proces.
 
-**** Procesrapportage, titelbalk: De de titelbar van de Rapportering van het Proces bevat sommige generische opties die u wanneer het werken in het gebruikersinterface kunt gebruiken.
+**Procesrapportage, titelbalk:** De de titelbar van de Rapportering van het Proces bevat sommige generische opties die u wanneer het werken in het gebruikersinterface kunt gebruiken.
 
-**** Titel van procesrapportage: De titel Procesrapportage wordt in de linkerhoek van de titelbalk weergegeven.
+**Titel van procesrapportage:** De titel Procesrapportage wordt in de linkerhoek van de titelbalk weergegeven.
 
 Klik op de titel om terug te keren naar het scherm Home.
 
-**** Tijd laatste update: De procesgegevens worden op een geplande basis gepubliceerd vanuit de AEM Forms-database naar de Process Reporting-opslagplaats.
+**Tijd laatste update:** De procesgegevens worden op geplande basis gepubliceerd vanuit de AEM Forms-database naar de Process Reporting-opslagplaats.
 
 De laatste tijd van de Update toont de laatste datum en de tijd tot waarvan de gegevensupdates aan de bewaarplaats van de Rapportering van het Proces werden geduwd.
 
 Voor details op de gegevens het publiceren dienst en hoe te om deze dienst te plannen, zie het [procesgegevens van het Programma publiceren](/help/forms/using/process-reporting/install-start-process-reporting.md#p-schedule-process-data-publishing-p) in het artikel dat met het Melden van het Proces wordt begonnen.
 
-**** Gebruiker voor procesrapportage: De aangemelde gebruikersnaam wordt rechts van de laatste update weergegeven.
+**Gebruiker voor procesrapportage:** De aangemelde gebruikersnaam wordt rechts van de laatste update weergegeven.
 
-**** Verwerking van vervolgkeuzelijst titelbalk rapportage: De vervolgkeuzelijst in de rechterhoek van de titelbalk van Procesrapportage bevat de volgende opties:
+**Verwerking van vervolgkeuzelijst titelbalk rapportage:** De vervolgkeuzelijst in de rechterhoek van de titelbalk van Procesrapportage bevat de volgende opties:
 
 * **[!UICONTROL Synchroniseren]**: Synchroniseer de ingesloten Process Reporting-opslagplaats met de AEM Forms-database.
 * **[!UICONTROL Help]**: Raadpleeg de Help-documentatie bij Process Reporting.

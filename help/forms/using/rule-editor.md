@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a326e508a781b3afaba8b5e371aa862a30536740
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -85,9 +85,9 @@ De regeleditor biedt de volgende logische operatoren en gebeurtenissen waarmee u
 * **Bevat**
 * **Is leeg**
 * **Is niet leeg**
-* **** Heeft geselecteerd: Retourneert true wanneer de gebruiker een bepaalde optie voor een selectievakje, vervolgkeuzelijst of keuzerondje selecteert.
-* **** Is geïnitialiseerd (gebeurtenis): Retourneert true wanneer een formulierobject in de browser wordt weergegeven.
-* **** Is gewijzigd (gebeurtenis): Retourneert true wanneer de gebruiker de ingevoerde waarde of de geselecteerde optie voor een formulierobject wijzigt.
+* **Heeft geselecteerd:** Retourneert true wanneer de gebruiker een bepaalde optie voor een selectievakje, vervolgkeuzelijst of keuzerondje selecteert.
+* **Is geïnitialiseerd (gebeurtenis):** Retourneert true wanneer een formulierobject in de browser wordt weergegeven.
+* **Is gewijzigd (gebeurtenis):** Retourneert true wanneer de gebruiker de ingevoerde waarde of de geselecteerde optie voor een formulierobject wijzigt.
 
 ## Beschikbare regeltypen in regeleditor {#available-rule-types-in-rule-editor}
 
@@ -152,7 +152,7 @@ Als u een regel wilt definiëren die is gebaseerd op een formulierobject, select
 
 Met de regel Eigenschap instellen op basis van een objecteigenschap kunt u het aantal selectievakjes in een adaptief formulier toevoegen op basis van een andere objecteigenschap die in het adaptieve formulier is opgenomen.
 
-In de volgende afbeelding ziet u een voorbeeld van het dynamisch toevoegen van selectievakjes op basis van het aantal vervolgkeuzelijsten in het adaptieve formulier:
+De volgende afbeelding toont een voorbeeld van het dynamisch toevoegen van selectievakjes op basis van het aantal vervolgkeuzelijsten in het adaptieve formulier:
 
 ![Objecteigenschap](assets/object_property_set_property_new.png)
 
@@ -375,7 +375,7 @@ Gebruikers in de gebruikersgroep voor formulieren hebben toegang tot de code-edi
 
 AEM vormt sporen de wijze van de regelredacteur u het laatst gebruikte om een regel te schrijven. Wanneer u de regelredacteur de volgende keer lanceert, opent het op die wijze. Nochtans, kunt u een standaardwijze ook vormen om de regelredacteur op de gespecificeerde wijze te openen. Daartoe:
 
-1. Ga naar AEM-webconsole op https://[host]:[poort]/systeem/console/configMgr.
+1. Ga naar AEM-webconsole op `https://[host]:[port]/system/console/configMgr`.
 1. Klik om de **[!UICONTROL Adaptive Form Configuration Service]** te bewerken.
 1. Kies **[!UICONTROL Visuele Redacteur]** of de Redacteur **[!UICONTROL van de]** Code van de **[!UICONTROL StandaardWijze voor de drop-down Redacteur]** van de Regel
 
@@ -574,7 +574,7 @@ Voegt informatie over de functie toe, zoals zijn doel.
 
 >[!NOTE]
 >
->Opmerkingen vóór aangepaste functie worden gebruikt voor overzicht. De samenvatting kan tot veelvoudige lijnen uitbreiden tot een markering wordt ontmoet. Beperk de grootte tot één voor een beknopte beschrijving in de regelbouwer.
+>Opmerkingen vóór aangepaste functie worden gebruikt voor overzicht. Samenvatting kan tot veelvoudige lijnen worden uitgebreid tot een markering wordt ontmoet. Beperk de grootte tot één voor een beknopte beschrijving in de regelbouwer.
 
 **Een aangepaste functie toevoegen**
 
@@ -758,7 +758,7 @@ Alle scripts of expressies die u op het tabblad Scripts moet schrijven, zijn bes
 
 ### Formuliergegevensmodelservice aanroepen {#invoke}
 
-Beschouw een webservice `GetInterestRates` die het bedrag van de lening, de looptijd en de kredietscore van de aanvrager als input gebruikt, en retourneert een leningenplan inclusief het bedrag en de rentevoet van het EMI. U maakt een formuliergegevensmodel met de webservice als gegevensbron. U voegt gegevensmodelobjecten en een `get` service toe aan het formuliermodel. De service wordt weergegeven op het tabblad Services van het formuliergegevensmodel. Maak vervolgens een adaptief formulier dat velden van gegevensmodelobjecten bevat om gebruikersinvoer voor de hoeveelheid leningen, de looptijd en de creditscore vast te leggen. Voeg een knop toe die de webservice activeert om plandetails op te halen. De uitvoer wordt ingevuld in de desbetreffende velden.
+Beschouw een webservice `GetInterestRates` die het bedrag van de lening, de looptijd en de kredietscore van de aanvrager als input gebruikt, en retourneert een leningenplan met daarin het bedrag en de rentevoet van het EMI. U maakt een formuliergegevensmodel met de webservice als gegevensbron. U voegt gegevensmodelobjecten en een `get` service toe aan het formuliermodel. De service wordt weergegeven op het tabblad Services van het formuliergegevensmodel. Maak vervolgens een adaptief formulier dat velden van gegevensmodelobjecten bevat om gebruikersinvoer voor de hoeveelheid leningen, de looptijd en de creditscore vast te leggen. Voeg een knop toe die de webservice activeert om plandetails op te halen. De uitvoer wordt ingevuld in de desbetreffende velden.
 
 De volgende regel toont hoe u de Invoke de dienstactie zult vormen om het voorbeeldscenario te verwezenlijken.
 
@@ -796,7 +796,7 @@ In een inkooporderformulier hebt u de volgende tabel waarin gebruikers hun beste
 
 ![example-function-table](assets/example-function-table.png)
 
-******A. Rij1** B. Hoeveelheid **C.** Totale hoeveelheid
+**A.** Rij1 **B.** Hoeveelheid **C.** Totale hoeveelheid
 
 Nu, wilt u gespecificeerde hoeveelheden in de kolom van de Hoeveelheid van het Product voor alle producten toevoegen en de som in de Totale cel van de Hoeveelheid tonen. U kunt dit bereiken door een Set Value of rule te schrijven voor de cel Totaal aantal, zoals hieronder wordt weergegeven.
 

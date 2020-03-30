@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f04050f8-42de-4ef0-b6ed-145d59bbffce
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a326e508a781b3afaba8b5e371aa862a30536740
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -216,9 +216,9 @@ Selecteer de tekst en tik op Markeringskleur om\gedeelten van tekst in een bewer
 
 ![textbackgroundcolorapplied-1](assets/textbackgroundcolorapplied-1.png)
 
-U kunt rechtstreeks tikken op een basiskleur **[A]** in het palet Basiskleuren of op **Selecteren** tikken nadat u de schuifregelaar **[B]** hebt gebruikt om de juiste kleur te kiezen.
+U kunt rechtstreeks op een basiskleur in het palet Standaardkleuren tikken of op `**[A]**` Selecteren **tikken nadat u de schuifregelaar hebt gebruikt** `**[B]**` om de juiste kleurtint te kiezen.
 
-U kunt ook naar het tabblad Geavanceerd gaan om de juiste kleurtoon, helderheid en verzadiging **[C]** te selecteren en vervolgens op Select **[D]** tikken om de tekst te markeren.
+Desgewenst kunt u ook naar het tabblad Geavanceerd gaan om de juiste kleurtoon, helderheid en verzadiging te selecteren `**[C]**` en vervolgens op Selecteren tikken `**[D]**` om de tekst te markeren.
 
 ![textBackgroundColor-2](assets/textbackgroundcolor-2.png)
 

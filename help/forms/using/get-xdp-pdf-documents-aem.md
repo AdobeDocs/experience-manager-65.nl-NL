@@ -10,7 +10,7 @@ topic-tags: forms-manager
 discoiquuid: 28b9f1d6-6a52-458f-a8ed-a206502eda0d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 76908a565bf9e6916db39d7db23c04d2d40b3247
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -33,7 +33,7 @@ U kunt de ondersteunde elementtypen afzonderlijk of als ZIP-archief uploaden. U 
 
 ## Formulieren uploaden {#uploading-forms}
 
-1. Meld u aan bij de gebruikersinterface van AEM Forms door toegang te krijgen tot `https://[server]:[port]/aem/forms.html`.
+1. Meld u aan bij de gebruikersinterface van AEM Forms door toegang te krijgen tot `https://'[server]:[port]'/aem/forms.html`.
 1. Navigeer naar de map waarin u het formulier of de map met formulieren wilt uploaden.
 1. Tik op **Maken > Bestand uploaden** op de werkbalk Handelingen.
 
@@ -65,7 +65,7 @@ Met de AEM Forms-server kunt u JavaScript-code uitvoeren. Een kwaadaardige JavaS
 
 De beveiligde modus is standaard ingeschakeld. Indien nodig kunt u de beveiligde modus uitschakelen:
 
-1. Meld u als beheerder aan bij de AEM-webconsole. De URL is https://[server]:[poort]/systeem/console/configMgr
+1. Meld u als beheerder aan bij de AEM-webconsole. De URL is https://&#39;[server]:[port]&#39;/system/console/configMgr
 1. Open Configuraties van mobiele formulieren voor bewerking.
 1. Schakel de optie Beveiligde modus uit en klik op **Opslaan**. De beveiligde modus is uitgeschakeld.
 

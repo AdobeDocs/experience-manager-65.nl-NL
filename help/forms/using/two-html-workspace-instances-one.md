@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 1254a7c2-2c67-4661-803e-afd53e817916
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -18,12 +18,12 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 Met de standaardinstallatie en -instellingen van AEM Forms kan slechts één werkruimte van AEM Forms beschikbaar zijn op de server. Het is echter mogelijk dat u twee verschillende exemplaren van de werkruimte van AEM Forms op één AEM Forms-server moet hosten. De twee instanties zijn toegankelijk door verschillende URL&#39;s.
 
-AEM Forms beheerders passen de werkruimte aan om twee verschillende URL&#39;s te maken en twee werkruimten beschikbaar te maken op dezelfde server. In dit aanpassingsartikel gaan we ervan uit dat de twee werkruimten toegankelijk zijn bij `https://[server]:[port]/lc/ws` en `https://[server]:[port]:/lc/ws2`.
+AEM Forms beheerders passen de werkruimte aan om twee verschillende URL&#39;s te maken en twee werkruimten beschikbaar te maken op dezelfde server. In dit aanpassingsartikel gaan we ervan uit dat de twee werkruimten toegankelijk zijn bij `https://'[server]:[port]'/lc/ws` en `https://'[server]:[port]':/lc/ws2`.
 
 Voer de volgende stappen uit om de werkruimte van AEM-formulieren te configureren.
 
 1. Installeer het ontwikkelpakket van de werkruimte van Vormen AEM op uw server. Zie [Dev-pakket](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)voor instructies om het te maken.
-1. Meld u aan bij CRXDE Lite als beheerder door toegang te krijgen tot `https://[server]:[port]/lc/crx/de/index.jsp`.
+1. Meld u aan bij CRXDE Lite als beheerder door toegang te krijgen tot `https://'[server]:[port]'/lc/crx/de/index.jsp`.
 1. De knooprijen van het exemplaar bij /content en deeg bij /content. Naam knooppunt wijzigen in ws2. Klik op Alles **** opslaan. In eigenschappen van dit knooppunt wijzigt u de waarde van `sling:resourceType` in ws2. Klik op Alles **** opslaan.
 
 1. Kopieer de mappenvensters van /libs en plak deze op /apps. Wijzig de naam van de map in ws2. Klik op Alles **** opslaan.

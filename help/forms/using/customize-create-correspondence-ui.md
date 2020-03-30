@@ -10,7 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: 13a93111-c08c-4457-b69a-a6f6eb6da330
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9d90bc5f77f827925e3e1ecd12d56a94a2bbae30
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -51,7 +51,7 @@ De tak /apps (omslagstructuur):
 
 Gebruik de volgende stappen om de vereiste mapstructuur in de tak /apps te maken:
 
-1. Ga naar Beheerder `https://[server]:[port]/[ContextPath]/crx/de` en meld u aan.
+1. Ga naar Beheerder `https://'[server]:[port]'/[ContextPath]/crx/de` en meld u aan.
 1. Maak in de map Apps een map met de naam pad/structuur, vergelijkbaar met de map css (in de map ccrui). `css`
 
    Stappen voor het maken van de css-map:
@@ -62,11 +62,11 @@ Gebruik de volgende stappen om de vereiste mapstructuur in de tak /apps te maken
 
    1. Zorg ervoor dat het dialoogvenster Overlay-knooppunt de volgende waarden heeft:
 
-      **** Pad: /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css
+      **Pad:** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css
 
-      **** Locatie bedekking: /apps/
+      **Locatie bedekking:** /apps/
 
-      **** Identieke knooppunttypen:Ingeschakeld
+      **Identieke knooppunttypen:** Ingeschakeld
 
       ![Pad overlay-knooppunt](assets/0_1_5ioverlaynodedialog.png)
 
@@ -90,11 +90,11 @@ Gebruik de volgende stappen om de vereiste mapstructuur in de tak /apps te maken
    1. Klik met de rechtermuisknop op de map **imgs** in het volgende pad en selecteer **Overlay Node**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs`
    1. Zorg ervoor dat het dialoogvenster Overlay-knooppunt de volgende waarden heeft:
 
-      **** Pad: /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs
+      **Pad:** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs
 
-      **** Locatie bedekking: /apps/
+      **Locatie bedekking:** /apps/
 
-      **** Identieke knooppunttypen:Ingeschakeld
+      **Identieke knooppunttypen:** Ingeschakeld
 
    1. Click **OK**.
 
@@ -112,9 +112,9 @@ Upload uw aangepaste logobestand naar CRX. De standaard HTML-regels bepalen de r
 * Als de hoogte van de logoafbeelding groter is dan 50 px, wordt de afbeelding in de gebruikersinterface Correspondentie maken verkleind tot een maximale hoogte van 50 px, aangezien dit de hoogte van de koptekst is. Wanneer u de afbeelding verkleint, blijft de hoogte-breedteverhouding van de afbeelding behouden in de gebruikersinterface Correspondentie maken.
 * Als de afbeelding klein is, wordt de schaal van de gebruikersinterface Correspondentie maken niet vergroot. Zorg er dus voor dat u een logoafbeelding van minimaal 48 pixels hoog en voldoende breed gebruikt voor meer duidelijkheid.
 
-Gebruik de volgende stappen om het aangepaste logobestand naar CRX te uploaden:
+Ga als volgt te werk om het aangepaste logobestand naar CRX te uploaden:
 
-1. Ga naar `https://[server]:[port]/[contextpath]/crx/de`. Meld u indien nodig aan als beheerder.
+1. Ga naar `https://'[server]:[port]'/[contextpath]/crx/de`. Meld u indien nodig aan als beheerder.
 1. Klik in CRXDE met de rechtermuisknop op de map **imgs** in het volgende pad en selecteer **Maken > Bestand** maken:
 
    `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs/`
@@ -157,7 +157,7 @@ Voor de aangepaste logoafbeelding moet een extra stijlpagina worden geladen in d
 
 Gebruik de volgende stappen om de stijlpagina in te stellen voor het renderen van het logo:
 
-1. Ga naar `https://[server]:[port]/[contextpath]/crx/de`. Meld u indien nodig aan als beheerder.
+1. Ga naar `https://'[server]:[port]'/[contextpath]/crx/de`. Meld u indien nodig aan als beheerder.
 1. Maak een bestand met de naam customcss.css (u kunt geen andere bestandsnaam gebruiken) op de volgende locatie:
 
    `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css/`

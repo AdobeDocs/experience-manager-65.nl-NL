@@ -9,7 +9,7 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 translation-type: tm+mt
-source-git-commit: 3226edb575de3d9f8bff53f5ca81e2957f37c544
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -22,9 +22,9 @@ Het artikel beschrijft aanbevelingen en beste praktijken voor het beveiligen van
 
 In het artikel worden verhardingstechnieken beschreven die tijdens de levenscyclus van de installatie en configuratie in de volgende fasen moeten worden toegepast:
 
-* **** Voorinstallatie: Gebruik deze technieken voordat u AEM Forms op JEE installeert.
-* **** Installatie: Gebruik deze technieken tijdens het AEM Forms on JEE-installatieproces.
-* **** Na de installatie: Gebruik deze technieken na installatie en periodiek daarna.
+* **Voorinstallatie:** Gebruik deze technieken voordat u AEM Forms op JEE installeert.
+* **Installatie:** Gebruik deze technieken tijdens het AEM Forms on JEE-installatieproces.
+* **Na de installatie:** Gebruik deze technieken na installatie en periodiek daarna.
 
 AEM Forms on JEE is in hoge mate aanpasbaar en kan in veel verschillende omgevingen werken. Sommige aanbevelingen passen mogelijk niet in de behoeften van uw organisatie.
 
@@ -132,7 +132,7 @@ In deze sectie worden technieken beschreven die u tijdens het installatieproces 
    <td><p>Plaats AEM-formulieren op JEE op een toegewezen schijfpartitie. De segmentatie van de schijf is een proces dat specifieke gegevens op uw server op afzonderlijke fysieke schijven voor extra veiligheid houdt. Het schikken van gegevens op deze manier vermindert het risico van folderaanvallen. Maak een partitie die los staat van de systeempartitie waarop u de AEM-formulieren in de JEE-inhoudsmap kunt installeren. (In Windows bevat de systeempartitie de directory system32 of de opstartpartitie.)</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Componenten</p> </td> 
+   <td><p>Onderdelen</p> </td> 
    <td><p>Evalueer de bestaande diensten en maak of desinstalleer om het even welke onbruikbaar die niet worden vereist. Installeer geen overbodige onderdelen en services.</p> <p>De standaardinstallatie van een toepassingsserver zou de diensten kunnen omvatten die niet noodzakelijk voor uw gebruik zijn. U zou alle onnodige diensten voorafgaand aan plaatsing moeten onbruikbaar maken om punten van ingang voor een aanval te minimaliseren. Op JBoss kunt u bijvoorbeeld opmerkingen plaatsen over overbodige services in het beschrijvingsbestand META-INF/jboss-service.xml.</p> </td> 
   </tr> 
   <tr> 
@@ -258,16 +258,16 @@ Wanneer AEM Forms on JEE is geïnstalleerd, wordt één standaardgebruikersaccou
 1. Typ de volgende URL in een webbrowser:
 
    ```as3
-   https://[host name]:[port]/adminui
+   https://[host name]:'port'/adminui
    ```
 
    Het standaardpoortnummer is een van de volgende:
 
-   **** JBoss: 8080
+   **JBoss:** 8080
 
-   **** WebLogic-server: 7001
+   **WebLogic-server:** 7001
 
-   **** WebSphere: 9080.
+   **WebSphere:** 9080.
 
 1. Typ in het veld **Gebruikersnaam** `administrator` en typ in het veld **Wachtwoord** `password`.
 1. Klik op **Instellingen** > **Gebruikersbeheer** > **Gebruikers en groepen**.
@@ -278,7 +278,7 @@ Wanneer AEM Forms on JEE is geïnstalleerd, wordt één standaardgebruikersaccou
 
 Daarnaast wordt aangeraden het standaardwachtwoord voor CRX Administrator te wijzigen door de volgende stappen uit te voeren:
 
-1. Meld u aan `https://[server]:[port]/lc/libs/granite/security/content/useradmin.html` met de standaardgebruikersnaam/het standaardwachtwoord.
+1. Meld u aan `https://'[server]:[port]'/lc/libs/granite/security/content/useradmin.html` met de standaardgebruikersnaam/het standaardwachtwoord.
 1. Typ Beheerder in het zoekveld en klik op **Ga**.
 1. Selecteer **Beheerder** in het zoekresultaat en klik op het pictogram **Bewerken** rechtsonder in de gebruikersinterface.
 1. Geef het nieuwe wachtwoord op in het veld **Nieuw wachtwoord** en het oude wachtwoord in het veld **Uw wachtwoord** .
@@ -291,7 +291,7 @@ De generatie van de Definitie van de Taal van de Dienst van het Web (WSDL) zou s
 1. Typ de volgende URL in een webbrowser:
 
    ```as3
-   https://[host name]:[port]/adminui
+   https://[host name]:'port'/adminui
    ```
 
 1. Klik op **Instellingen > Core System Settings > Configurations**.
@@ -639,10 +639,10 @@ De volgende kenmerken komen voor in KVP:
 
 AEM-formulieren op JEE gebruiken de functie Filter referentie om CSRF-aanvallen te blokkeren. In deze sectie worden de volgende termen gebruikt om het filtermechanisme van de verwijzer te beschrijven:
 
-* **** Toegestane referentie: Een verwijzing is het adres van de bronpagina die een verzoek naar de server verzendt. Voor JSP-pagina&#39;s of -formulieren is de referentie meestal de vorige pagina in de browsergeschiedenis. Verwijzers voor afbeeldingen zijn meestal de pagina&#39;s waarop de afbeeldingen worden weergegeven. U kunt de Referrer identificeren die toegang tot uw servermiddelen door hen aan de Toegestane lijst van de Referant wordt verleend toe te voegen.
-* **** Uitzonderingen toegestane verwijzer: U wilt mogelijk het bereik van toegang voor een bepaalde referentie beperken in uw lijst Toegestane referentie. Als u deze beperking wilt toepassen, kunt u afzonderlijke paden van die referentie toevoegen aan de lijst Toegestane uitzonderingen Referrer. Verzoeken die afkomstig zijn van paden in de lijst Toegestane uitzonderingen voor referenties kunnen geen bron op de formulierserver aanroepen. U kunt de Uitzonderingen van de Verwijzer van de Toestemming voor een specifieke toepassing bepalen en ook een globale lijst van uitzonderingen gebruiken die op alle toepassingen van toepassing zijn.
-* **** Toegestane URI&#39;s: Dit is een lijst met bronnen die moeten worden gebruikt zonder de koptekst van de verwijzer te controleren. De middelen, bijvoorbeeld, hulppagina&#39;s, die niet in staatsveranderingen op de server resulteren, kunnen aan deze lijst worden toegevoegd. De bronnen in de lijst Toegestane URI&#39;s worden nooit geblokkeerd door het filter Referrer, ongeacht wie de Referrer is.
-* **** Null-referentie: Een serveraanvraag die niet is gekoppeld aan of niet afkomstig is van een bovenliggende webpagina, wordt beschouwd als een aanvraag van een Null-referentie. Wanneer u bijvoorbeeld een nieuw browservenster opent, typt u een adres en drukt u op Enter, is de referentie die naar de server is verzonden null. Een Desktoptoepassing (.NET of SWING) die een HTTP- verzoek aan een Webserver indienen, verzendt ook een Null Referrer naar de server.
+* **Toegestane referentie:** Een verwijzing is het adres van de bronpagina die een verzoek naar de server verzendt. Voor JSP-pagina&#39;s of -formulieren is de referentie meestal de vorige pagina in de browsergeschiedenis. Verwijzers voor afbeeldingen zijn meestal de pagina&#39;s waarop de afbeeldingen worden weergegeven. U kunt de Referrer identificeren die toegang tot uw servermiddelen door hen aan de Toegestane lijst van de Referant wordt verleend toe te voegen.
+* **Uitzonderingen toegestane verwijzer:** U wilt mogelijk het bereik van toegang voor een bepaalde referentie beperken in uw lijst Toegestane referentie. Als u deze beperking wilt toepassen, kunt u afzonderlijke paden van die referentie toevoegen aan de lijst Toegestane uitzonderingen Referrer. Verzoeken die afkomstig zijn van paden in de lijst Toegestane uitzonderingen voor referenties kunnen geen bron op de formulierserver aanroepen. U kunt de Uitzonderingen van de Verwijzer van de Toestemming voor een specifieke toepassing bepalen en ook een globale lijst van uitzonderingen gebruiken die op alle toepassingen van toepassing zijn.
+* **Toegestane URI&#39;s:** Dit is een lijst met bronnen die moeten worden gebruikt zonder de koptekst van de verwijzer te controleren. De middelen, bijvoorbeeld, hulppagina&#39;s, die niet in staatsveranderingen op de server resulteren, kunnen aan deze lijst worden toegevoegd. De bronnen in de lijst Toegestane URI&#39;s worden nooit geblokkeerd door het filter Referrer, ongeacht wie de Referrer is.
+* **Null-referentie:** Een serveraanvraag die niet is gekoppeld aan of niet afkomstig is van een bovenliggende webpagina, wordt beschouwd als een aanvraag van een Null-referentie. Wanneer u bijvoorbeeld een nieuw browservenster opent, typt u een adres en drukt u op Enter, is de referentie die naar de server is verzonden null. Een Desktoptoepassing (.NET of SWING) die een HTTP- verzoek aan een Webserver indienen, verzendt ook een Null Referrer naar de server.
 
 ### Filterverwijzing {#referer-filtering}
 

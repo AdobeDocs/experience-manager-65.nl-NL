@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: 515ceaf6-c132-4e1a-b3c6-5d2c1ccffa7c
 translation-type: tm+mt
-source-git-commit: db69c393fc44ca2fcb30f9fcb0c5ca456ba35ed5
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -18,7 +18,7 @@ source-git-commit: db69c393fc44ca2fcb30f9fcb0c5ca456ba35ed5
 
 AEM Forms biedt een REST-API voor zoekopdrachten die webontwikkelaars kunnen gebruiken om een set formulieren op te vragen en op te halen die aan de zoekcriteria voldoet. U kunt API&#39;s gebruiken om formulieren te zoeken op basis van verschillende filters. Het reactieobject bevat formulierkenmerken, eigenschappen en renderpunten van formulieren.
 
-Als u formulieren wilt zoeken met de REST API, stuurt u een GET-aanvraag naar de server `https://[server]:[port]/libs/fd/fm/content/manage.json` met de hieronder beschreven queryparameters.
+Als u formulieren wilt zoeken met de REST API, stuurt u een GET-aanvraag naar de server `https://'[server]:[port]'/libs/fd/fm/content/manage.json` met de hieronder beschreven queryparameters.
 
 ## Parameters query {#query-parameters}
 
@@ -30,9 +30,9 @@ Als u formulieren wilt zoeken met de REST API, stuurt u een GET-aanvraag naar de
   </tr>
   <tr>
    <td>func<br /> </td>
-   <td><p>Geeft de aan te roepen functie op. Als u formulieren wilt zoeken, stelt u de waarde van het <code>func </code>kenmerk in op <code>searchForms</code>.</p> <p>Bijvoorbeeld, <code class="code">
+   <td><p>Geeft de aan te roepen functie op. Als u formulieren wilt zoeken, stelt u de waarde van het <code>func </code>kenmerk in op <code>searchForms</code>.</p> <p>Bijvoorbeeld: <code class="code">
        URLParameterBuilder entityBuilder=new URLParameterBuilder ();
-       entityBuilder.add("func", "searchForms");</code></p> <p><strong></strong> Opmerking: <em>Deze parameter is verplicht.</em><br /> </p> </td>
+       entityBuilder.add("func", "searchForms");</code></p> <p><strong>Opmerking:</strong> <em>Deze parameter is verplicht.</em><br /> </p> </td>
   </tr>
   <tr>
    <td>appPath<br /> </td>
@@ -40,7 +40,7 @@ Als u formulieren wilt zoeken met de REST API, stuurt u een GET-aanvraag naar de
   </tr>
   <tr>
    <td>cutPoints<br /> </td>
-   <td><p>Geeft de eigenschappen aan die met de elementen moeten worden opgehaald. U kunt sterretje (*) gebruiken om alle eigenschappen tegelijk op te halen. Gebruik de verticale operator (|) om meerdere eigenschappen op te geven. </p> <p>Bijvoorbeeld, <code>cutPoints=propertyName1|propertyName2|propertyName3</code></p> <p><strong>Opmerking</strong>: </p>
+   <td><p>Geeft de eigenschappen aan die met de elementen moeten worden opgehaald. U kunt sterretje (*) gebruiken om alle eigenschappen tegelijk op te halen. Gebruik de verticale operator (|) om meerdere eigenschappen op te geven. </p> <p>Bijvoorbeeld: <code>cutPoints=propertyName1|propertyName2|propertyName3</code></p> <p><strong>Opmerking</strong>: </p>
     <ul>
      <li><em>Eigenschappen zoals id, path en name worden altijd opgehaald. </em></li>
      <li><em>Elk element heeft een andere set eigenschappen. Eigenschappen zoals formUrl, pdfUrl en guideUrl zijn niet afhankelijk van het kenmerk cutpoints. Deze eigenschappen zijn afhankelijk van het type element en worden dienovereenkomstig opgehaald. </em></li>
@@ -69,7 +69,7 @@ Als u formulieren wilt zoeken met de REST API, stuurt u een GET-aanvraag naar de
   </tr>
   <tr>
    <td>instructies</td>
-   <td><p>Hier geeft u de lijst met instructies op. De query's worden uitgevoerd in de lijst met instructies die in de JSON-indeling zijn opgegeven. </p> <p>Bijvoorbeeld,</p> <p><code class="code">JSONArray statementArray=new JSONArray();
+   <td><p>Hier geeft u de lijst met instructies op. De query's worden uitgevoerd in de lijst met instructies die in de JSON-indeling zijn opgegeven. </p> <p>Bijvoorbeeld:</p> <p><code class="code">JSONArray statementArray=new JSONArray();
        JSONObject statement=new JSONObject();
        statement.put("name", "title");
        statement.put("value", "SimpleSurveyAF");
@@ -91,12 +91,12 @@ Als u formulieren wilt zoeken met de REST API, stuurt u een GET-aanvraag naar de
        <li>ENDSWITH - A eindigt met B als B het einddeel van A is</li>
        <li>LIKE - Implementeert de operator LIKE</li>
        <li>AND - Meerdere instructies combineren</li>
-      </ul> <p><strong></strong> Opmerking: De operatoren <em>GT, LT, GTEQ en LTEQ zijn van toepassing op eigenschappen van lineair type, zoals LONG, DUBBEL en DATE.</em></p> </li>
+      </ul> <p><strong>Opmerking:</strong> De operatoren <em>GT, LT, GTEQ en LTEQ zijn van toepassing op eigenschappen van lineair type, zoals LONG, DUBBEL en DATE.</em></p> </li>
     </ul> </td>
   </tr>
   <tr>
    <td>bestellingen<br /> </td>
-   <td><p>Hiermee geeft u de volgordecriteria voor de zoekresultaten op. De criteria worden gedefinieerd in de JSON-indeling. U kunt zoekresultaten sorteren op meerdere velden. De resultaten worden gesorteerd in de volgorde waarin de velden in de query worden weergegeven.</p> <p>Bijvoorbeeld,</p> <p>Voeg de volgende parameter toe om queryresultaten op te halen die zijn geordend door eigenschap title in oplopende volgorde: </p> <p><code class="code">JSONArray orderingsArray=new JSONArray();
+   <td><p>Hiermee geeft u de volgordecriteria voor de zoekresultaten op. De criteria worden gedefinieerd in de JSON-indeling. U kunt zoekresultaten sorteren op meerdere velden. De resultaten worden gesorteerd in de volgorde waarin de velden in de query worden weergegeven.</p> <p>Bijvoorbeeld:</p> <p>Voeg de volgende parameter toe om queryresultaten op te halen die zijn geordend door eigenschap title in oplopende volgorde: </p> <p><code class="code">JSONArray orderingsArray=new JSONArray();
        JSONObject orderings=new JSONObject();
        orderings.put("name", "title");
        orderings.put("criteria", "ASC");

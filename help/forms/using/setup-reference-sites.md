@@ -10,7 +10,7 @@ topic-tags: introduction
 discoiquuid: 03886dd3-5873-4908-912b-fbbddb26c322
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70350add185b932ee604e190aabaf972ff994ba2
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -49,7 +49,7 @@ Voordat u de referentiesite instelt, moet u het volgende doen:
 
 * **Adobe Sign-ontwikkelaarsaccount en Adobe Sign API-toepassing** Adobe Sign Developer account is vereist voor het gebruik van mogelijkheden voor digitale ondertekening. Zie [Adobe-ondertekening](https://acrobat.adobe.com/us/en/why-adobe/developer-form.html).
 
-* Een lopende instantie van de Dynamica 365 van Microsoft om met Vormen te integreren AEM. Om de verwijzingsplaats in werking te stellen, voert u de steekproefgegevens in de instantie van de Dynamiek van Microsoft in om de interactieve mededeling vooraf in te vullen die in de verwijzingsplaats wordt gebruikt.
+* Een lopende instantie van de Dynamiek 365 van Microsoft om met Vormen te integreren AEM. Om de verwijzingsplaats in werking te stellen, voert u de steekproefgegevens in de instantie van de Dynamiek van Microsoft in om de interactieve mededeling vooraf in te vullen die in de verwijzingsplaats wordt gebruikt.
 * Een actieve instantie van AEM met het pakket Forms add-on. Zie AEM-formulieren [installeren en configureren voor meer informatie](../../forms/using/installing-configuring-aem-forms-osgi.md).
 
 Voer de volgende stappen in de geadviseerde opeenvolging uit aan opstelling en vorm de verwijzingsplaatsen.
@@ -88,12 +88,12 @@ Voer de volgende stappen in de geadviseerde opeenvolging uit aan opstelling en v
   </tr>
   <tr>
    <td><a href="#aemds">AEM DS-instellingen configureren</a></td>
-   <td>Author</td>
+   <td>Auteur</td>
    <td>Configureer AEM DS voor het verzenden van formulieren op publicatieexemplaar en verwerkingsworkflows op de auteurinstantie.</td>
   </tr>
   <tr>
    <td><a href="#refsite">Referentiesites implementeren</a></td>
-   <td>Author</td>
+   <td>Auteur</td>
    <td>Implementeer pakketten met referentiesites in de auteur-instantie van AEM Forms.</td>
   </tr>
   <tr>
@@ -119,7 +119,7 @@ Voer de volgende stappen in de geadviseerde opeenvolging uit aan opstelling en v
   <tr>
    <td><a href="#anonymous">Forms Common Configuration Service configureren voor anonieme gebruikers</a></td>
    <td>Publiceren</td>
-   <td>Met de configuratie kunnen anonieme gebruikers een record genereren voor verzending, ondertekening en het maken van een document.</td>
+   <td>Met de configuratie kunnen anonieme gebruikers een record genereren en verzenden, ondertekenen en documenten maken.</td>
   </tr>
   <tr>
    <td><a href="#fdm">Wijzig het Waggerbestand van de Rest Service voor het Model van de Gegevens van de Vorm</a></td>
@@ -188,7 +188,7 @@ Voer de volgende stappen uit om de postdienst op te vormen publiceer instantie:
 De e-mailsjablonen voor de website Web.Finance bevatten persoonlijke links in e-mails. Deze koppelingen hebben een tijdelijke aanduiding als `${placeholder}`. Deze plaatsaanduidingen worden vervangen door werkelijke waarden voordat ze e-mails verzenden. De standaard XSS-beveiligingsconfiguratie voor AEM staat accolades (**{}**) in de URL in HTML-inhoud niet toe. U kunt de standaardconfiguratie echter negeren door de volgende stappen uit te voeren bij een publicatie-instantie:
 
 1. Kopiëren `/libs/cq/xssprotection/config.xml` naar `/apps/cq/xssprotection/config.xml`.
-1. Openen `/apps/cq/xssprotection/config.xml`.
+1. Open `/apps/cq/xssprotection/config.xml`.
 1. Wijzig in de `common-regexps` sectie de `onsiteURL` vermelding als volgt en sla het bestand op.
 
    `<regexp name="onsiteURL" value="([\p{L}\p{N}\\\.\#@\$\{\}%\+&;\-_~,\?=/!\*\(\)]*|\#(\w)+)"/>`
@@ -220,8 +220,8 @@ Meer over hoe te om pakketten en pakketaandeel te gebruiken, zie [hoe te met Pak
 
 Nadat u de pakketten hebt geïnstalleerd en de auteur hebt gestart en exemplaren hebt gepubliceerd, gaat u naar de volgende URL&#39;s in uw browser:
 
-* `https://[server]:[port]/wegov`
-* `https://[server]:[port]/wefinance`
+* `https://'[server]:[port]'/wegov`
+* `https://'[server]:[port]'/wefinance`
 
 Als de installatie is gelukt, hebt u toegang tot de bestemmingspagina&#39;s en Web.Finance.
 
@@ -231,12 +231,12 @@ De toepassing van de huishypotheek en de plaatsen van de autoverzekeringstoepass
 
 U kunt als volgt de aangepaste entiteit importeren voor de toepassing voor automatische verzekering:
 
-1. Download het **pakket met oplossingen WebFinanceAutoInsurance_1_0.zip** via `https://[server]:[port]/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/WeFinanceAutoInsurance_1_0.zip` de AEM-auteur.
+1. Download het **pakket met oplossingen WebFinanceAutoInsurance_1_0.zip** via `https://'[server]:[port]'/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/WeFinanceAutoInsurance_1_0.zip` de AEM-auteur.
 1. Ga in de instantie van Microsoft Dynamics naar **Instellingen > Oplossingen** en klik op **Importeren**. Selecteer en importeer het pakket.
 
 U kunt als volgt de aangepaste entiteit importeren voor de toepassing voor automatische verzekering:
 
-1. Download het **AEMFormsFSIRefsite_1_0.zip** -pakket van `https://[author]:[port]/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/AEMFormsFSIRefsite_1_0.zip`. Selecteer en importeer het pakket.
+1. Download het **AEMFormsFSIRefsite_1_0.zip** -pakket van `https://[author]:'port'/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/AEMFormsFSIRefsite_1_0.zip`. Selecteer en importeer het pakket.
 
 1. Ga in de instantie van Microsoft Dynamics naar **Instellingen > Oplossingen** en klik op **Importeren**. Selecteer en importeer het pakket.
 
@@ -244,9 +244,9 @@ De gegevens van de klant en het verzekeringspolis importeren:
 
 1. Download de bestanden **We.Finance Customers.csv, We.Finance Auto Insurance Renewals.csv**, en **home hypotheek** op de volgende locaties op uw AEM-auteur:
 
-   * `https://[server]:[port/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/We.Finance Customers.csv`
-   * `https://[server]:[port/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/We.Finance Auto Insurance Renewals.csv`
-   * `https://[server]:[port]/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/Sarah%20Rose%20Contact.csv`
+   * `https://'server':[port/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/We.Finance Customers.csv`
+   * `https://'server':[port/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/We.Finance Auto Insurance Renewals.csv`
+   * `https://'[server]:[port]'/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/Sarah%20Rose%20Contact.csv`
 
 1. Ga als volgt te werk in de instantie Microsoft Dynamics:
 
@@ -273,7 +273,7 @@ Configureer de OAuth-cloudservice in AEM Forms om communicatie tussen AEM Forms 
 
 Doe het volgende op zowel auteur als publicatieinstanties:
 
-1. Ga naar AEM Web Configuration Console op `https://[server]:[host]/system/console/configMgr`.
+1. Ga naar AEM Web Configuration Console op `https://'[server]:[port]'system/console/configMgr`.
 1. Zoek en tik op **[!UICONTROL Adobe Sign Configuration Service]** om deze te openen voor configuratie.
 1. Vorm de Uitdrukking **[!UICONTROL van de Planner van de Update van de]** Status als **0 0/2 * * * *?**.
 
@@ -301,7 +301,7 @@ Doe het volgende op zowel auteur als publicatieinstanties:
 
 Ga als volgt te werk op de publicatie-instantie om toegang tot anonieme gebruikers toe te staan:
 
-1. Ga naar AEM Web Configuration Console op `https://[server]:[port]/system/console/configMgr`.
+1. Ga naar AEM Web Configuration Console op `https://'[server]:[port]'/system/console/configMgr`.
 1. Zoek en tik op **[!UICONTROL Forms Common Configuration Service]** om deze voor configuratie te openen.
 1. Configureer het veld **[!UICONTROL Toestaan]** voor **[!UICONTROL alle gebruikers]**.
 1. Tik op **[!UICONTROL Opslaan]**.
@@ -310,7 +310,7 @@ Ga als volgt te werk op de publicatie-instantie om toegang tot anonieme gebruike
 
 Doe het volgende op zowel auteur als publicatieinstanties:
 
-1. Ga naar CRXDE om `https://[server]:[port]/crx/de/index.jsp`.
+1. Ga naar CRXDE om `https://'[server]:[port]'/crx/de/index.jsp`.
 1. Navigeer naar **/conf/global/settings/cloudconfigs/fdm/roi-rest/jcr:content/swaggerFile** en open het gameterbestand.
 1. Werk de host- en poortinstellingen naar wens bij in uw omgeving.
 1. Sla de instellingen op.
@@ -346,7 +346,7 @@ Om een rapport te produceren, worden de zaadgegevens gebundeld met de verwijzing
 
    * Open de map Web.Finance en selecteer het formulier waarvoor u het rapport wilt weergeven.
    * Klik op Analyses inschakelen op de werkbalk Handelingen. Nadat u analyses voor het formulier hebt ingeschakeld, klikt u op Analyserapport. Er wordt een leeg rapport gegenereerd. Nadat een leeg rapport wordt geproduceerd, moet u zaadgegevens verstrekken die van refsite pakket worden verscheept om analytische rapport voor demodoel te produceren.
-   Referentiesites bieden analyses die gegevens bevatten over de aanvraag van een creditcard, de hypotheek op woningen en de gebruiksgevallen van kinderondersteuning.
+   Referentiesites bieden analyses die gegevens bevatten over de aanvraag van een creditcard, hypotheek op woningen en gebruik van kinderondersteuning.
 
 ### Doel configureren {#configure-target}
 
@@ -358,7 +358,7 @@ Ga als volgt te werk om Doel in AEM te configureren voor de integratie in de ref
    **Opmerking**: Als de instantie AEM op JBoss loopt, die als dienst van de installatie van de Sleutel is begonnen, voeg de `-Dabtesting.enabled=true` parameter in de volgende ingang in het `jboss\bin\standalone.conf.bat` dossier toe:
    `set "JAVA_OPTS=%JAVA_OPTS% -Dadobeidp.serverName=server1 -Dfile.encoding=utf8 -Djava.net.preferIPv4Stack=true -Dabtesting.enabled=true"`
 
-1. Toegang `https://<hostname>:<port>/libs/cq/core/content/tools/cloudservices.html`.
+1. Ga naar `https://<hostname>:<port>/libs/cq/core/content/tools/cloudservices.html`.
 
 1. Klik in de sectie **[!UICONTROL Adobe Target]** op **[!UICONTROL Configuraties]** tonen. U kunt de beschikbare Configuratie van het Doel van Web zien. Klik om de configuratie te openen. Klik in de configuratiepagina op **[!UICONTROL Bewerken]**. Het dialoogvenster Component **** bewerken voor de configuratie wordt geopend.
 

@@ -11,7 +11,7 @@ topic-tags: forms-workspace
 discoiquuid: dd3218c4-2bb2-40fc-9141-5823b0ea4224
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 21623c615ebe69226cfaf84baf4cfb1717b449f4
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -20,7 +20,7 @@ source-git-commit: 21623c615ebe69226cfaf84baf4cfb1717b449f4
 
 De algemene stappen voor het uitvoeren van aanpassingen zijn:
 
-1. Meld u aan bij CRXDE Lite door toegang te krijgen tot `https://[server]:[port]/lc/crx/de/index.jsp`.
+1. Meld u aan bij CRXDE Lite door toegang te krijgen tot `https://'[server]:[port]'/lc/crx/de/index.jsp`.
 1. Maak een map met de naam `ws`at `/apps`, als deze niet bestaat. Klik op Alles **[!UICONTROL opslaan]**.
 1. Blader naar `/apps/ws`en navigeer naar het tabblad **[!UICONTROL Toegangsbeheer]** .
 1. Klik in de lijst **[!UICONTROL Toegangsbeheer]** op **[!UICONTROL +]** om een nieuw item toe te voegen. Klik nogmaals **[!UICONTROL +]** .
@@ -97,6 +97,6 @@ De algemene stappen voor het uitvoeren van aanpassingen zijn:
 
 1. Klik op Alles **** opslaan, cache verwijderen en de werkruimte van AEM-formulieren vernieuwen.
 
-   Open de URL `https://[server]:[port]/lc/ws` en meld u aan met de gegevens van de beheerder/het wachtwoord. De browser wordt omgeleid naar `https://[server]:[port]/lc/apps/ws/index.html`.
+   Open de URL `https://'[server]:[port]'/lc/ws` en meld u aan met de gegevens van de beheerder/het wachtwoord. De browser wordt omgeleid naar `https://'[server]:[port]'/lc/apps/ws/index.html`.
 
 [Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)

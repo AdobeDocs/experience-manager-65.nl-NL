@@ -9,7 +9,7 @@ topic-tags: correspondence-management
 discoiquuid: 87742cb2-357b-421f-b79d-e355887ddec0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3eaace94bc0499aaebfcd389d4dc97b97c7d9160
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -134,9 +134,9 @@ Beheer op het tabblad Inhoud de inhoud, zoals documentfragmenten en inhoudsvaria
 
    ![letterbackgroundcolor](assets/letterbackgroundcolor.png)
 
-   U kunt rechtstreeks tikken op een basiskleur **[A]** in het palet Basiskleuren of op **Selecteren** tikken nadat u de schuifregelaar **[B]** hebt gebruikt om de juiste kleur te kiezen.
+   U kunt rechtstreeks op een basiskleur in het palet Standaardkleuren tikken of op `**[A]**` Selecteren **tikken nadat u de schuifregelaar hebt gebruikt** `**[B]**` om de juiste kleurtint te kiezen.
 
-   U kunt ook naar het tabblad Geavanceerd gaan om de juiste kleurtoon, helderheid en verzadiging **[C]** te selecteren en vervolgens op Select **[D]** tikken om de tekst te markeren.
+   Desgewenst kunt u ook naar het tabblad Geavanceerd gaan om de juiste kleurtoon, helderheid en verzadiging te selecteren `**[C]**` en vervolgens op Selecteren tikken `**[D]**` om de tekst te markeren.
 
    ![textbackgroundColor](assets/textbackgroundcolor.png)
 
@@ -216,7 +216,7 @@ Beheer op het tabblad Inhoud de inhoud, zoals documentfragmenten en inhoudsvaria
 
 ### Inhoud in voorvertoning beheren en de brief verzenden {#manage-content-in-preview-and-submit-the-letter}
 
-U kunt de lay-out en de inhoud aanpassen om ervoor te zorgen dat de brief de manier kijkt u het aan en het voorleggen aan de diverse postprocessen bent.
+U kunt de lay-out en de inhoud aanpassen om ervoor te zorgen dat de brief de manier kijkt u het aan en voorlegt aan de diverse postprocessen.
 
 1. Tik op Bewerkbare secties **** markeren om alle bewerkbare inhoud in de letter te markeren.
 
@@ -349,7 +349,7 @@ Zie [Stoppen met insteekmodules voor NPAPI-browsers en het effect](https://helpx
 
 Voer de volgende stappen uit om de modus Voorvertoning van de letter te wijzigen:
 
-1. Ga naar `https://[system]:[port]/system/console/configMgr` en meld u indien nodig aan als Admin.
+1. Ga naar `https://[system]:'port'/system/console/configMgr` en meld u indien nodig aan als Admin.
 1. Ga naar **[!UICONTROL Correspondence Management Configurations]** > **[!UICONTROL Type]** vertoning en selecteer **HTML-vertoning** (standaard) of **PDF-uitvoering**.
 1. Click **[!UICONTROL Save]**.
 

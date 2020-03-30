@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0ec881c9-8dcc-4847-9edf-24d9e6c4a7ea
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -22,13 +22,13 @@ De connector voor Microsoft SharePoint maakt communicatie mogelijk tussen AEM-fo
 1. Klik in de beheerconsole op Services > Connector voor Microsoft SharePoint.
 1. Geef de volgende instellingen op voor uw SharePoint-server:
 
-   **** Hostnaam SharePoint-server: Het poortnummer van de hostnaam van de webtoepassing op de SharePoint-server, in de indeling `[hostname]:[port]`.
+   **Hostnaam SharePoint-server:** Het poortnummer van de hostnaam van de webtoepassing op de SharePoint-server, in de indeling `[hostname]:'port'`.
 
-   **** Gebruikersnaam: De gebruikersaccount die wordt gebruikt om verbinding te maken met de SharePoint-server.
+   **Gebruikersnaam:** De gebruikersaccount die wordt gebruikt om verbinding te maken met de SharePoint-server.
 
-   **** Wachtwoord: Wachtwoord voor de gebruikersaccount waarmee verbinding wordt gemaakt met de SharePoint-server
+   **Wachtwoord:** Wachtwoord voor de gebruikersaccount waarmee verbinding wordt gemaakt met de SharePoint-server
 
-   **** Domeinnaam: Domein waar de SharePoint-server zich bevindt.
+   **Domeinnaam:** Domein waar de SharePoint-server zich bevindt.
 
 1. Klik op Opslaan.
 

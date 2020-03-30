@@ -10,7 +10,7 @@ topic-tags: Configuration
 discoiquuid: 9fa6f761-58ca-4cd0-8992-b9337dc1a279
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 76908a565bf9e6916db39d7db23c04d2d40b3247
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -31,7 +31,7 @@ Een cache is een mechanisme om de toegangstijd voor gegevens te verkorten, de la
 
 Voer de volgende stappen uit om de cache voor adaptieve formulieren te configureren:
 
-1. Ga naar AEM webconsoleconfiguratiebeheer op https://[server]:[poort]/systeem/console/configMgr.
+1. Ga naar AEM webconsoleconfiguratiebeheer op https://&#39;[server]:[port]&#39;/system/console/configMgr.
 1. Klik de **Aangepaste Vorm en de Interactieve Configuratie** van het Kanaal van de Communicatie van het Web om zijn configuratiewaarden uit te geven.
 1. Geef in het dialoogvenster Configuratiewaarden bewerken het maximumaantal formulieren of documenten op dat een instantie van de AEM Forms-server in cache kan plaatsen in het veld **Aantal adaptieve formulieren** . De standaardwaarde is 100.
 

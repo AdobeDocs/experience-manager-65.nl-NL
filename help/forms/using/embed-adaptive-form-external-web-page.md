@@ -9,7 +9,7 @@ topic-tags: author
 discoiquuid: d739c6da-3b41-4452-8728-d7cd1a3ae20b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 92a64c8a1ba38f592d18355b8233cb79a2575301
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -129,7 +129,7 @@ Laten we een voorbeeld bekijken van hoe u een Apache 2.4 reverse-proxyserver zon
    ProxyPassReverse /forms https://[AEM_Instance]/forms
    ```
 
-   Vervangen `[AEM_Instance`] door de publicatie-URL van de AEM-server in de regels.
+   Vervang `[AEM_Instance`] door de publicatie-URL van de AEM-server in de regels.
 
 Als u de AEM-server niet koppelt op een contextpad, gelden de proxyregels op de Apache-laag als volgt:
 
@@ -162,7 +162,7 @@ Houd bij het insluiten van een adaptief formulier in een webpagina rekening met 
 
 ## AEM Forms inschakelen om aangepaste formulieren naar een interdomeinsite te verzenden {#cross-site}
 
-1. Ga voor de AEM-auteur naar AEM Web Console Configuration Manager op `https://[server]:[port]/system/console/configMgr`.
+1. Ga voor de AEM-auteur naar AEM Web Console Configuration Manager op `https://'[server]:[port]'/system/console/configMgr`.
 1. Zoek en open de **configuratie van het filter** Apache Sling Referrer.
 1. Geef in het veld Toegestane gastheren het domein op waar de webpagina zich bevindt. Het laat de gastheer toe om POST- verzoeken aan de server van AEM te doen. U kunt ook de reguliere expressie gebruiken om een reeks externe toepassingsdomeinen op te geven.
 

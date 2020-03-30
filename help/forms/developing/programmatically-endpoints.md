@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 076889a7-9c9f-4b6f-a45b-67a9b3923c36
 translation-type: tm+mt
-source-git-commit: 8bc99ed3817398ae358d439a5c1fcc90bbd24327
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -39,7 +39,7 @@ De dienst van de Registratie van het Eindpunt verstrekt de capaciteit om eindpun
    U kunt deze taken verwezenlijken gebruikend de dienst van de Registratie van het Eindpunt:
 
 * EJB-eindpunten toevoegen. (Zie EJB-eindpunten [toevoegen](programmatically-endpoints.md#adding-ejb-endpoints).)
-* Eindpunten van SOAP toevoegen. (Zie [SOAP-eindpunten](programmatically-endpoints.md#adding-soap-endpoints)toevoegen.)
+* Voeg de eindpunten van de ZEEP toe. (Zie [SOAP-eindpunten](programmatically-endpoints.md#adding-soap-endpoints)toevoegen.)
 * Eindpunten van gecontroleerde mappen toevoegen (zie [Gecontroleerde eindpunten](programmatically-endpoints.md#adding-watched-folder-endpoints)van mappen toevoegen)
 * E-maileindpunten toevoegen. (Zie E-maileindpunten [toevoegen](programmatically-endpoints.md#adding-email-endpoints).)
 * Voeg eindpunten voor verwijderen toe. (Zie Eindpunten [verwijderen](programmatically-endpoints.md#adding-remoting-endpoints)toevoegen.)
@@ -139,13 +139,13 @@ Voeg een EJB eindpunt toe door Java API te gebruiken:
 
 1. Laat het eindpunt toe.
 
-   Schakel het eindpunt in door de methode Enable van het `EndpointRegistryClient` object aan te roepen en het `Endpoint` object door te geven dat door de `createEndpoint` methode is geretourneerd.
+   Schakel het eindpunt in door de methode enable van het `EndpointRegistryClient` object aan te roepen en het `Endpoint` object door te geven dat door de `createEndpoint` methode is geretourneerd.
 
 **Zie ook**
 
 [Overzicht van de stappen](programmatically-endpoints.md#summary-of-steps)
 
-[QuickStart:Een EJB-eindpunt toevoegen met de Java API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-an-ejb-endpoint-using-the-java-api)
+[QuickStart: Een EJB-eindpunt toevoegen met de Java API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-an-ejb-endpoint-using-the-java-api)
 
 [Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -319,14 +319,14 @@ De volgende lijst specificeert configuratiewaarden die wanneer programmatically 
 * **URL**: Hier geeft u de locatie van de gecontroleerde map op. In een gegroepeerd milieu, moet deze waarde aan een gedeelde netwerkomslag richten die van elke computer in de cluster toegankelijk is.
 * **asynchroon**: Identificeert het aanroepingstype als asynchroon of synchroon. De voorbijgaande en synchrone processen kunnen slechts synchroon worden aangehaald. De standaardwaarde is true. Asynchroon wordt aanbevolen.
 * **cronExpression**: Wordt gebruikt door kwarts om de opiniepeiling van de invoermap te plannen. Zie [https://quartz.sourceforge.net/javadoc/org/quartz/CronTrigger.html](https://quartz.sourceforge.net/javadoc/org/quartz/CronTrigger.html)voor meer informatie over het configureren van de expressie voor uitsnijden.
-* **purgeDuration**: Dit is een verplicht kenmerk.  Bestanden en mappen in de resultaatmap worden gewist wanneer ze ouder zijn dan deze waarde. Deze waarde wordt gemeten in dagen. Dit kenmerk is handig om ervoor te zorgen dat de resultaatmap niet vol wordt. De waarde -1 dagen geeft aan dat u de resultatenmap nooit wilt verwijderen. De standaardwaarde is -1.
+* **purgeDuration**: Dit is een verplicht kenmerk. Bestanden en mappen in de resultaatmap worden gewist wanneer ze ouder zijn dan deze waarde. Deze waarde wordt gemeten in dagen. Dit kenmerk is handig om ervoor te zorgen dat de resultaatmap niet vol wordt. De waarde -1 dagen geeft aan dat u de resultatenmap nooit wilt verwijderen. De standaardwaarde is -1.
 * **repeatInterval**: Het interval, in seconden, voor het scannen van de gecontroleerde map op invoer. Als vertraging niet is ingeschakeld, moet deze waarde langer zijn dan de tijd die nodig is om een gemiddelde taak te verwerken. anders kan het systeem overbelast raken . De standaardwaarde is 5.
 * **repeatCount**: Het aantal keren dat een gecontroleerde map de map of map scant. De waarde -1 geeft aan dat een scanbewerking voor onbepaalde tijd wordt uitgevoerd. De standaardwaarde is -1.
 * **throttleOn**: Hiermee beperkt u het aantal taken voor gecontroleerde mappen dat op een bepaald moment kan worden verwerkt. Het maximumaantal banen wordt bepaald door de batchSize waarde.
 * **userName**: De gebruikersnaam die wordt gebruikt wanneer een doelservice wordt aangeroepen vanuit de gecontroleerde map. Deze waarde is verplicht. De standaardwaarde is SuperAdmin.
 * **domainName**: Het domein van de gebruiker. Deze waarde is verplicht. De standaardwaarde is DefaultDom.
 * **batchSize**: Het aantal bestanden of mappen dat per scan moet worden opgehaald. Gebruik deze waarde om overbelasting op het systeem te voorkomen; te veel bestanden tegelijk scannen kan tot gevolg hebben dat de toepassing vastloopt. De standaardwaarde is 2.
-* **waitTime**: De tijd, in milliseconden, om te wachten alvorens een omslag of een dossier na verwezenlijking af te tasten. Als de wachttijd bijvoorbeeld 36.000.000 milliseconden (één uur) is en het bestand een minuut geleden is gemaakt, wordt dit bestand opgepakt nadat 59 minuten zijn verstreken. Dit kenmerk is handig om ervoor te zorgen dat een bestand of map volledig naar de invoermap wordt gekopieerd. Als u bijvoorbeeld een groot bestand hebt dat moet worden verwerkt en het downloaden van het bestand duurt tien minuten, stelt u de wachttijd in op 10&amp;ast;60 &amp;ast;1000 milliseconden. Met deze instelling voorkomt u dat de gecontroleerde map het bestand scant als het nog tien minuten niet heeft gewacht. De standaardwaarde is 0.
+* **waitTime**: De tijd, in milliseconden, om te wachten alvorens een omslag of een dossier na verwezenlijking af te tasten. Als de wachttijd bijvoorbeeld 36.000.000 milliseconden (één uur) is en het bestand een minuut geleden is gemaakt, wordt dit bestand opgepakt nadat 59 minuten zijn verstreken. Dit kenmerk is handig om ervoor te zorgen dat een bestand of map volledig naar de invoermap wordt gekopieerd. Als u bijvoorbeeld een groot bestand hebt dat moet worden verwerkt en het downloaden van het bestand duurt tien minuten, stelt u de wachttijd in op 10&amp;ast;60 &amp;ast;1000 milliseconden. Met deze instelling voorkomt u dat de gecontroleerde map het bestand scant als het nog geen tien minuten heeft gewacht. De standaardwaarde is 0.
 * **excludeFilePattern**: Het patroon dat in een gecontroleerde map wordt gebruikt om te bepalen welke bestanden en mappen moeten worden gescand en opgehaald. Bestanden of mappen met dit patroon worden niet gescand voor verwerking. Deze instelling is handig wanneer de invoer een map is die meerdere bestanden bevat. De inhoud van de map kan worden gekopieerd naar een map met een naam die wordt opgepakt door de gecontroleerde map. Met deze stap wordt voorkomen dat de gecontroleerde map een map opneemt die moet worden verwerkt voordat de map volledig is gekopieerd naar de invoermap. Als de waarde excludeFilePattern bijvoorbeeld is `data*`, worden niet alle bestanden en mappen opgehaald die overeenkomen met de waarde `data*` excludeFilePattern. Dit omvat bestanden en mappen met de naam `data1`, `data2`enzovoort. Bovendien kan het patroon met vervangingspatronen worden aangevuld om dossierpatronen te specificeren. De gecontroleerde omslag wijzigt de regelmatige uitdrukking om vervangingspatronen zoals `*.*` en `*.pdf`te steunen. Deze jokertekenpatronen worden niet ondersteund door reguliere expressies.
 * **includeFilePattern**: Het patroon dat in de gecontroleerde map wordt gebruikt om te bepalen welke mappen en bestanden worden gescand en opgehaald. Als deze waarde bijvoorbeeld is, `*`worden alle overeenkomende bestanden en mappen `input*` opgepakt. Dit omvat bestanden en mappen met de naam `input1`, `input2`enzovoort. De standaardwaarde is `*`. Deze waarde geeft alle bestanden en mappen aan. Bovendien kan het patroon met vervangingspatronen worden aangevuld om dossierpatronen te specificeren. De gecontroleerde omslag wijzigt de regelmatige uitdrukking om vervangingspatronen zoals `*.*` en `*.pdf`te steunen. Deze jokertekenpatronen worden niet ondersteund door reguliere expressies. Deze waarde is verplicht.
 * **resultFolderName**: De map waarin de opgeslagen resultaten worden opgeslagen. Deze locatie kan een absoluut of relatief mappad zijn. Als de resultaten niet in deze map worden weergegeven, controleert u de map met foutmeldingen. Alleen-lezen bestanden worden niet verwerkt en worden opgeslagen in de map met foutmeldingen. De standaardwaarde is `result/%Y/%M/%D/`. Dit is de resultatenmap in de controlemap.
@@ -378,13 +378,13 @@ Nadat u een Gecontroleerd eindpunt van de Omslag creeert, moet u het toelaten. W
 
 **Zie ook**
 
-[Een eindpunt van een gecontroleerde map toevoegen met de Java API](programmatically-endpoints.md#add-a-watched-folder-endpoint-using-the-java-api)
+[Het eindpunt van een gecontroleerde map toevoegen met de Java API](programmatically-endpoints.md#add-a-watched-folder-endpoint-using-the-java-api)
 
 [Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Een eindpunt van een gecontroleerde map toevoegen met de Java API {#add-a-watched-folder-endpoint-using-the-java-api}
+### Het eindpunt van een gecontroleerde map toevoegen met de Java API {#add-a-watched-folder-endpoint-using-the-java-api}
 
 Voeg een Gecontroleerd eindpunt van de Omslag toe door AEM Vormen Java API te gebruiken:
 
@@ -559,7 +559,7 @@ De volgende configuratiewaarden worden geplaatst wanneer programmatically het to
 * **userName**: De gebruikersnaam die wordt gebruikt wanneer een doelservice wordt aangeroepen via e-mail. De standaardwaarde is `SuperAdmin`.
 * **domainName**: Een verplichte configuratiewaarde. De standaardwaarde is `DefaultDom`.
 * **domainPattern**: Geeft de domeinpatronen aan van binnenkomende e-mailberichten die de provider accepteert. Als u bijvoorbeeld alleen e-mail van adobe.com `adobe.com` gebruikt, wordt e-mail van andere domeinen genegeerd.
-* **filePattern**: Hiermee worden de inkomende patronen voor bestandsbijlagen opgegeven die de provider accepteert. Hiertoe behoren bestanden met specifieke bestandsextensies (&amp;ast;.dat, &amp;ast;.xml), bestanden met specifieke namen (gegevens) en bestanden met samengestelde expressies in de naam en extensie (&amp;ast;..[dD][aA][Tt]). De standaardwaarde is `*`.
+* **filePattern**: Hiermee worden de inkomende patronen voor bestandsbijlagen opgegeven die de provider accepteert. Hiertoe behoren bestanden met specifieke bestandsextensies (&amp;ast;.dat, &amp;ast;.xml), bestanden met specifieke namen (gegevens) en bestanden met samengestelde expressies in de naam en extensie (&amp;ast;..[dD][aA]&#39;port&#39;). De standaardwaarde is `*`.
 * **receivingSuccessfulJob**: Een e-mailadres waarnaar berichten worden verzonden om aan te geven dat taken zijn gelukt. Standaard wordt altijd een bericht met een geslaagde taak naar de afzender verzonden. Als u typt, worden de e-mailresultaten verzonden naar de afzender. `sender` Er worden maximaal 100 ontvangers ondersteund. Geef extra ontvangers op met e-mailadressen, die elk worden gescheiden door een komma. Laat deze waarde leeg als u deze optie wilt uitschakelen. In sommige gevallen wilt u wellicht een proces activeren en geen e-mailmelding van het resultaat. De standaardwaarde is `sender`.
 * **receivingFailedJob**: Een e-mailadres waarnaar berichten worden verzonden om mislukte taken aan te geven. Standaard wordt een mislukte taakbericht altijd naar de afzender verzonden. Als u typt, worden de e-mailresultaten verzonden naar de afzender. `sender` Er worden maximaal 100 ontvangers ondersteund. Geef extra ontvangers op met e-mailadressen, die elk worden gescheiden door een komma. Laat deze waarde leeg als u deze optie wilt uitschakelen. De standaardwaarde is `sender`.
 * **inboxHost**: De hostnaam of het IP-adres in het Postvak IN van de e-mailprovider die moet worden gescand.
@@ -576,7 +576,7 @@ De volgende configuratiewaarden worden geplaatst wanneer programmatically het to
 * **charSet**: De tekenset die door het e-mailprovider wordt gebruikt. De standaardwaarde is `UTF-8`.
 * **smtpSSLEnabled**: Stel deze waarde in om de e-mailprovider te dwingen SSL te gebruiken bij het verzenden van berichten over resultaten of fouten. Zorg ervoor dat de SMTP-host SSL ondersteunt.
 * **failedJobFolder**: Specificeert een folder waarin om resultaten op te slaan wanneer de SMTP postserver niet operationeel is.
-* **asynchroon**: Wanneer deze optie is ingesteld op synchroon, worden alle invoerdocumenten verwerkt en wordt één reactie geretourneerd. Wanneer ingesteld op asynchroon, wordt een reactie verzonden voor elk invoerdocument dat wordt verwerkt. Bijvoorbeeld, wordt een E-maileindpunt gecreeerd voor het proces dat in dit onderwerp wordt geïntroduceerd, en een e-mailbericht wordt verzonden naar inbox van het eindpunt dat veelvoudige onbeveiligde PDF documenten bevat. Wanneer alle PDF-documenten met een wachtwoord zijn gecodeerd en als het eindpunt synchroon is geconfigureerd, wordt één e-mailbericht met reacties verzonden met alle beveiligde PDF-documenten bijgevoegd. Als het eindpunt asynchroon is geconfigureerd, wordt voor elk beveiligd PDF-document een afzonderlijk e-mailantwoordbericht verzonden. Elk e-mailbericht bevat één PDF-document als bijlage. De standaardwaarde is asynchroon.
+* **asynchroon**: Wanneer deze optie is ingesteld op synchroon, worden alle invoerdocumenten verwerkt en wordt één reactie geretourneerd. Wanneer ingesteld op asynchroon, wordt een reactie verzonden voor elk invoerdocument dat wordt verwerkt. Bijvoorbeeld, wordt een E-maileindpunt gecreeerd voor het proces dat in dit onderwerp wordt geïntroduceerd, en een e-mailbericht wordt verzonden naar inbox van het eindpunt dat veelvoudige onbeveiligde PDF documenten bevat. Wanneer alle PDF-documenten met een wachtwoord zijn versleuteld en als het eindpunt synchroon is geconfigureerd, wordt één e-mailbericht met reacties verzonden met alle beveiligde PDF-documenten als bijlage. Als het eindpunt asynchroon is geconfigureerd, wordt voor elk beveiligd PDF-document een afzonderlijk e-mailantwoordbericht verzonden. Elk e-mailbericht bevat één PDF-document als bijlage. De standaardwaarde is asynchroon.
 
 **Invoerparameterwaarden definiëren**
 
@@ -1067,7 +1067,7 @@ Wijzig een eindpunt door Java API te gebruiken:
 
 [Overzicht van de stappen](programmatically-endpoints.md#summary-of-steps)
 
-[QuickStart:Een eindpunt wijzigen met de Java API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-modifying-an-endpoint-using-the-java-api)
+[QuickStart: Een eindpunt wijzigen met de Java API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-modifying-an-endpoint-using-the-java-api)
 
 [Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

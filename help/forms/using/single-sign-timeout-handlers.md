@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 698990a2-dd3f-480f-9d15-d87563860297
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -23,7 +23,7 @@ De werkruimte van AEM-formulieren is SSO ingeschakeld. Als een gebruiker zich he
 
 De onderbreking van de zitting voor een gebruiker kan in de Console van het Beleid worden gevormd.
 
-Als u de time-out wilt instellen, meldt u zich aan bij `https://[server]:[port]/adminui`, navigeert u naar **Instellingen > Gebruikersbeheer > Configuratie > Geavanceerde systeemkenmerken** configureren en stelt u de gewenste instellingen in.
+Als u de time-out wilt instellen, meldt u zich aan `https://'[server]:[port]'/adminui`en gaat u naar **Instellingen > Gebruikersbeheer > Configuratie > Geavanceerde systeemkenmerken** configureren en geeft u de gewenste instellingen op.
 
 In de werkruimte van AEM-formulieren wordt de time-out verwerkt als:
 

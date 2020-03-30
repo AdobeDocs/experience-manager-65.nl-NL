@@ -8,7 +8,7 @@ contentOwner: anujkapo
 discoiquuid: ddb3778b-be06-4cde-bc6e-0994efa42b18
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3226edb575de3d9f8bff53f5ca81e2957f37c544
+source-git-commit: f323b490c37effc3cbb36c793b62fa788eca9545
 
 ---
 
@@ -35,7 +35,7 @@ Opstelling de verwijzingsplaats zoals die in [Opstelling wordt beschreven en vor
 
 * Adobe Analytics
 
-### Mogelijke gebruikers en groepen {#fictitious-users-and-groups}
+### Fictitious users and groups {#fictitious-users-and-groups}
 
 Het Wij.Gov-demopakket wordt geleverd met de volgende ingebouwde fictieve gebruikers:
 
@@ -80,7 +80,7 @@ De volgende groepen zijn eveneens opgenomen:
    *https://&lt;aemserver>:&lt;port>/content/forms/af/adobe-gov-forms/enrollment-application-for-health-benefits.html*
 
 1. **Adobe Web.Gov-site**: *https://&lt;aemserver>:&lt;port>/content/we-gov/home.html*
-1. **Adobe Inbox**: Pictogram [van] Bell van de bovenste menubalk in AEM-achterkant.
+1. **Adobe Inbox**: Pictogram [van](assets/bell.svg) Bell van de bovenste menubalk in AEM-achterkant.
 
    *https://&lt;aemserver>:&lt;port>/aem/start.html*
 
@@ -98,7 +98,7 @@ De volgende groepen zijn eveneens opgenomen:
 1. Aanmelden met:
 
    1. **Gebruiker**: aya.tan
-   1. **Wachtwoord**:password
+   1. **Wachtwoord**: password
 
 1. Wijzig de grootte van het browservenster of gebruik de emulator van de browser om een mobiele apparaatgrootte te repliceren.
 
@@ -172,7 +172,7 @@ Aya moet sommige documenten thuis herzien alvorens zij de toepassing van het de 
 
 ## Bureaubladdemo {#desktop-demo}
 
-**** Deze sectie: Terug thuis heeft Aya de informatie gevonden die ze nodig heeft en de toepassing hervat vanaf haar bureaublad. Navigeert altijd naar de online formulierportal om haar toepassing te hervatten. Met een eenvoudige aanpassing kunnen agentschappen ook automatisch een koppeling genereren en e-mailen om de toepassing te hervatten.
+**Deze sectie:** Terug thuis heeft Aya de informatie gevonden die ze nodig heeft en de toepassing hervat vanaf haar bureaublad. Navigeert altijd naar de online formulierportal om haar toepassing te hervatten. Met een eenvoudige aanpassing kunnen agentschappen ook automatisch een koppeling genereren en e-mailen om de toepassing te hervatten.
 
 ### Aya-gebruikersartikel (vervolg adaptief formulier) {#aya-user-story-continued-adaptive-form}
 
@@ -219,7 +219,7 @@ Aya moet sommige documenten thuis herzien alvorens zij de toepassing van het de 
 
 ![Government Agent George](/help/forms/using/assets/george_lang-1.png)
 
-**** Deze sectie: George is een zakenanalist bij het overheidsagentschap Aya vraagt om een dienst van. George heeft één dashboard waar hij alle toepassingen van het de dienstverzoek kan zien die aan hem voor overzicht zijn toegewezen.
+**Deze sectie:** George is een zakenanalist bij het overheidsagentschap Aya vraagt om een dienst van. George heeft één dashboard waar hij alle toepassingen van het de dienstverzoek kan zien die aan hem voor overzicht zijn toegewezen.
 
 ### George User Story (AEM-Postvak) {#george-user-story-aem-inbox}
 
@@ -230,8 +230,8 @@ Aya moet sommige documenten thuis herzien alvorens zij de toepassing van het de 
 
    1. Aanmelden met:
 
-      1. **** Gebruiker: george.lang
-      1. **** Wachtwoord:password
+      1. **Gebruiker:** george.lang
+      1. **Wachtwoord:** password
    1. Of imiteren:
 
       1. Typ &quot;**George**&quot; in het veld &quot;**Impersonate as**&quot;.
@@ -278,7 +278,7 @@ George keurt de aanvraag van Aya goed en dankzij een bestaande geautomatiseerde 
 
 ![Camila (CX lead)](/help/forms/using/assets/camila_santos-1.png)
 
-**** Deze sectie: Camila de CX Lead organiseert een welkome telefoongesprek met Aya om uit te leggen hoe gebruik kan worden gemaakt van de overheidsdiensten waarvoor ze is goedgekeurd.
+**Deze sectie:** Camila de CX Lead organiseert een welkome telefoongesprek met Aya om uit te leggen hoe gebruik kan worden gemaakt van de overheidsdiensten waarvoor ze is goedgekeurd.
 
 ### Camila User Story (AEM-inbox &amp; MS Dynamics) {#camila-user-story-aem-inbox-ms-dynamics}
 
@@ -290,7 +290,7 @@ George keurt de aanvraag van Aya goed en dankzij een bestaande geautomatiseerde 
    1. Aanmelden met:
 
       1. **Gebruiker**: camila.santos
-      1. **Wachtwoord**:password
+      1. **Wachtwoord**: password
    1. Of imiteren:
 
       1. Typ &quot;**Camila**&quot; in het veld &quot;**Impersonate as**&quot;.
@@ -324,7 +324,7 @@ George keurt de aanvraag van Aya goed en dankzij een bestaande geautomatiseerde 
 
 ## Welkom Kit-burger (Aya) {#welcome-kit-citizen-aya}
 
-**** Deze sectie: Aya ontvangt een e-mailbericht met een koppeling naar een interactieve communicatie waarin de voordelen van het bericht worden samengevat en waarin ook formuliervelden worden opgenomen die moeten worden ingevuld. Met PDF-uitkeringsinstructie bijgevoegd en koppeling naar interactieve communicatieletter in de e-mail (met hetzelfde thema/branding als de interactieve communicatie).
+**Deze sectie:** Aya ontvangt een e-mailbericht met een koppeling naar een interactieve communicatie waarin de voordelen van het bericht worden samengevat en waarin ook formuliervelden worden opgenomen die moeten worden ingevuld. Met PDF-uitkeringsinstructie bijgevoegd en koppeling naar interactieve communicatieletter in de e-mail (met hetzelfde thema/branding als de interactieve communicatie).
 
 ### Aya-gebruikersartikel (e-mailclient) {#aya-user-story-email-client}
 
@@ -349,7 +349,7 @@ George keurt de aanvraag van Aya goed en dankzij een bestaande geautomatiseerde 
 
 ## Herinnering burger (Aya) {#renewal-reminder-citizen-aya}
 
-**** Deze sectie: Camila plant ook een herinnering voor communicatie, een jaar later. (Workflowstap die automatiseert/uitvoert en e-mail verzendt).
+**Deze sectie:** Camila plant ook een herinnering voor communicatie, een jaar later. (Workflowstap die automatiseert/uitvoert en e-mail verzendt).
 
 ### Aya-gebruikersartikel (e-mailclient) {#aya-user-story-email-client-1}
 
@@ -364,7 +364,7 @@ George keurt de aanvraag van Aya goed en dankzij een bestaande geautomatiseerde 
 
 ## Analytics CX Lead (Camila) {#analytics-cx-lead-camila}
 
-**** Deze sectie: Camila navigeert naar een dashboard waar ze in de hele organisatie KPI&#39;s kan zien, zoals % van de burgers die beginnen met het invullen van een formulier voor een serviceaanvraag en afzien, de gemiddelde tijdsduur van indiening van een aanvraag tot een antwoord op een vraag over goedkeuring/weigering, en betrokkenheidsstatistieken voor de bonushandboeken die ze naar de burgers heeft gestuurd.
+**Deze sectie:** Camila navigeert naar een dashboard waar ze in de hele organisatie KPI&#39;s kan zien, zoals % van de burgers die beginnen met het invullen van een formulier voor een serviceaanvraag en afzien, de gemiddelde tijdsduur van indiening van een aanvraag tot een antwoord op een vraag over goedkeuring/weigering, en betrokkenheidsstatistieken voor de bonushandboeken die ze naar de burgers heeft gestuurd.
 
 ### Camila beoordeelt Sites-rapportage (We.Gov Adobe Analytics) {#camila-reviews-sites-reporting-we-gov-adobe-analytics}
 
@@ -393,7 +393,7 @@ George keurt de aanvraag van Aya goed en dankzij een bestaande geautomatiseerde 
 
 ### Camila controleert Forms Reporting (We.Gov Adobe Analytics) {#camila-reviews-forms-reporting-we-gov-adobe-analytics}
 
-1. Navigeren naar
+1. Ga naar
 
    *https://&lt;aemserver>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/adobe-gov-forms*
 

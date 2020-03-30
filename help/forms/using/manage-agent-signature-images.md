@@ -10,7 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: a81cdd53-f0fb-4ac5-b2ec-c19aeee7186e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 06335b9a85414b6b1141dd19c863dfaad0812503
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -33,7 +33,7 @@ U kunt ook de aangepaste standaardfunctie negeren om uw eigen logica te definië
 1. Zorg ervoor dat de afbeelding met de handtekening van de agent dezelfde naam heeft als de AEM-gebruikersnaam van de gebruiker. (Extensie is niet nodig voor de bestandsnaam van de afbeelding.)
 1. Maak in CRX een map met de naam `cmUserRoot` in de inhoudsmap.
 
-   1. Ga naar `https://[server]:[port]/crx/de`. Meld u indien nodig aan als beheerder.
+   1. Ga naar `https://'[server]:[port]'/crx/de`. Meld u indien nodig aan als beheerder.
 
    1. Klik met de rechtermuisknop op de **inhoudsmap** en selecteer **Maken** > Map **** maken.
 
@@ -47,7 +47,7 @@ U kunt ook de aangepaste standaardfunctie negeren om uw eigen logica te definië
 
 1. In de Ontdekkingsreiziger van de Inhoud, navigeer aan de omslag cmUserRoot en voeg het beeld van de agentenhandtekening in het toe.
 
-   1. Ga naar `https://[server]:[port]/crx/explorer/index.jsp`. Meld u indien nodig aan als beheerder.
+   1. Ga naar `https://'[server]:[port]'/crx/explorer/index.jsp`. Meld u indien nodig aan als beheerder.
    1. Klik op **Inhoudsverkenner**. De Content Explorer wordt in een nieuw venster geopend.
    1. Navigeer in Content Explorer naar de map cmUserRoot en selecteer deze. Klik met de rechtermuisknop op de map **cmUserRoot** en selecteer **Nieuw knooppunt**.
 
@@ -55,9 +55,9 @@ U kunt ook de aangepaste standaardfunctie negeren om uw eigen logica te definië
 
       Maak de volgende ingangen in de rij voor nieuwe knoop en klik dan het groene vinkje.
 
-      **** Naam: JohnDoe (of de naam van uw dossier van de agentenhandtekening)
+      **Naam:** JohnDoe (of de naam van uw dossier van de agentenhandtekening)
 
-      **** Type: nt:bestand
+      **Type:** nt:bestand
 
       Onder de `cmUserRoot` map wordt een nieuwe map gemaakt met de naam `JohnDoe` (of de naam die u in de vorige stap hebt opgegeven).
 

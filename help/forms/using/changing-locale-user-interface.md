@@ -1,8 +1,8 @@
 ---
 title: De landinstelling van de gebruikersinterface van de AEM Forms-werkruimte wijzigen
 seo-title: De landinstelling van de gebruikersinterface van de AEM Forms-werkruimte wijzigen
-description: Hoe te om de werkruimte van Vormen AEM te wijzigen om tekst, samengevouwen categorieën, rijen, en processen, en de datumplukker op de interface te lokaliseren.
-seo-description: Hoe te om de werkruimte van Vormen AEM te wijzigen om tekst, samengevouwen categorieën, rijen, en processen, en de datumplukker op de interface te lokaliseren.
+description: Hoe te om de werkruimte van Vormen AEM te wijzigen om tekst, samengevouwen categorieën, rijen, en processen, en de datumkiezer op de interface te lokaliseren.
+seo-description: Hoe te om de werkruimte van Vormen AEM te wijzigen om tekst, samengevouwen categorieën, rijen, en processen, en de datumkiezer op de interface te lokaliseren.
 uuid: c89ff150-a36e-45cc-99a6-8768dbe58eab
 contentOwner: robhagat
 content-type: reference
@@ -11,7 +11,7 @@ topic-tags: forms-workspace
 discoiquuid: 89f9d666-28e2-4201-8467-ae90693ca5d2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 21623c615ebe69226cfaf84baf4cfb1717b449f4
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -37,7 +37,7 @@ Voordat u de bovenstaande stappen uitvoert, moet u de stappen volgen die worden 
 Voer de volgende stappen uit om ondersteuning voor een taal *Nieuw* en de landinstellingscode van de browser *nu* toe te voegen.
 
 1. Meld u aan bij CRXDE Lite.
-De standaard-URL van CRXDE Lite is `https://[server]:[port]/lc/crx/de/index.jsp`.
+De standaard-URL van CRXDE Lite is `https://'[server]:[port]'/lc/crx/de/index.jsp`.
 1. Navigeer naar de locatie `apps/ws/locales` en maak een nieuwe map `nw.`
 1. Kopieer het bestand `translation.json`van de locatie `/apps/ws/locales/en-US` naar de locatie `/apps/ws/locales/nw` .
 1. Navigeer naar `/apps/ws/locales/nw` en open `translation.json` voor bewerking. Wijzig de landinstelling in het bestand translatie.json.
@@ -54,7 +54,7 @@ In de volgende stappen wordt aangenomen dat de nieuwe gelokaliseerde afbeeldings
 
 >[!NOTE]
 >
->U kunt als volgt de landinstellingscode van de browser voor de taal vinden. Openen `https://[server]:[port]/lc/libs/ws/Locale.html`.
+>U kunt als volgt de landinstellingscode van de browser voor de taal vinden. Open `https://'[server]:[port]'/lc/libs/ws/Locale.html`.
 
 ![samenvouwen_deelvensters_afbeelding](assets/collapsing_panels_image.png)
 

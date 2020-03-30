@@ -11,7 +11,7 @@ topic-tags: hTML5_forms
 discoiquuid: a644978e-5736-4771-918a-dfefe350a4a1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 19299fb5fc764d0e71c0ea3a5ec2286183dd6861
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -57,7 +57,7 @@ Als er een update in het formulier is of een van de elementen die in het formuli
 
 Wanneer een gebruiker het formulier verzendt, verzendt de browser de status van het formulier in JSON-indeling naar de [verzendserviceproxy](../../forms/using/service-proxy.md). dan produceert de voorleggingsde dienstvolmacht gegevens XML gebruikend JSON gegevens en legt dat gegevens XML voor om eindpunt voor te leggen.
 
-## Componenten {#components}
+## Onderdelen {#components}
 
 U hebt invoegpakket voor AEM-formulieren nodig om HTML5-formulieren in te schakelen. Zie AEM Forms [](../../forms/using/installing-configuring-aem-forms-osgi.md)installeren en configureren voor informatie over het installeren van het invoegpakket voor AEM Forms.
 
@@ -94,7 +94,7 @@ HTML5-formulieren gebruiken caching om de doorvoer en de reactietijd te optimali
    <td>Alleen tussenliggende artefacten opslaan die zijn gegenereerd voordat het formulier wordt gegenereerd, zoals een sjabloon met inline fragmenten en afbeeldingen</td>
   </tr>
   <tr>
-   <td> Agressief</td>
+   <td>Agressief</td>
    <td>Gerenderde HTML-inhoud<br /> in cache plaatsen plaatst alle artefacten in cache op conservatief niveau.<br /> <strong>Opmerking</strong>: Deze strategie levert de beste prestaties, maar verbruikt meer geheugen voor het opslaan van de artefacten in de cache.</td>
   </tr>
  </tbody>
@@ -110,7 +110,7 @@ HTML5-formulieren voeren in het geheugen caching uit met behulp van LRU-strategi
 
 De Dienst van de configuratie laat het stemmen van de configuratieparameters en geheim voorgeheugenmontages voor HTML5 vormen toe.
 
-Als u deze instellingen wilt bijwerken, gaat u naar de CQ Felix Admin Console (beschikbaar op https://&lt;[server]:[poort]/systeem/console/configMgr), zoekt en selecteert u Configuratie mobiele formulieren.
+Als u deze instellingen wilt bijwerken, gaat u naar de CQ Felix Admin Console (beschikbaar op https://&lt;&#39;[server]:[port]&#39;/system/console/configMgr), zoekt en selecteert u Configuratie mobiele formulieren.
 
 U kunt de geheim voorgeheugengrootte vormen of het geheime voorgeheugen onbruikbaar maken gebruikend de configuratieservice. U kunt foutopsporing ook inschakelen met de parameter Opties voor foutopsporing. Meer informatie over foutopsporing in formulieren vindt u in [Foutopsporing in HTML5-formulieren](/help/forms/using/debug.md).
 

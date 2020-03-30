@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 translation-type: tm+mt
-source-git-commit: 06335b9a85414b6b1141dd19c863dfaad0812503
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -302,12 +302,12 @@ De voorbeeldimplementatie is nu geconfigureerd, waarmee u concepten en verzendin
 
 Voer de volgende stappen uit op alle auteur- en publicatieinstanties om het bestand mysql-connector-java-5.1.39-bin.jar te installeren:
 
-1. Navigeer naar `https://[server]:[port]/system/console/depfinder` en zoek naar het pakket com.mysql.jdbc.
+1. Navigeer naar `https://'[server]:[port]'/system/console/depfinder` en zoek naar het pakket com.mysql.jdbc.
 1. Controleer in de kolom Geëxporteerd door of het pakket wordt geëxporteerd door een willekeurige bundel.
 
    Ga door als het pakket niet door enige bundel wordt uitgevoerd.
 
-1. Navigeer naar `https://[server]:[port]/system/console/bundles` en klik op **[!UICONTROL Installeren/Bijwerken]**.
+1. Navigeer naar `https://'[server]:[port]'/system/console/bundles` en klik op **[!UICONTROL Installeren/Bijwerken]**.
 1. Klik op Bestand **** kiezen en blader om het bestand mysql-connector-java-5.1.39-bin.jar te selecteren. Selecteer ook de selectievakjes **[!UICONTROL Bundel]** starten en Pakketten **** vernieuwen.
 1. Klik op **[!UICONTROL Installeren of Bijwerken]**. Start de server opnieuw als de bewerking is voltooid.
 1. (Alleen ** Windows) Schakel de systeemfirewall van uw besturingssysteem uit.
@@ -399,13 +399,13 @@ Voer de volgende stappen uit om [een clientbibliotheek](/help/sites-developing/c
 
 1. Voeg de volgende eigenschap toe aan de map die u in stap 2 hebt gemaakt en klik op Alles **** opslaan.
 
-   * **** Naam:categorieën
+   * **[!UICONTROL Naam:]** categorieën
 
-   * **** Type:String
+   * **[!UICONTROL Type:]** String
 
-   * **** Waarde: fp.validation
+   * **[!UICONTROL Waarde:]** fp.validation
 
-   * **** meerdere opties:Ingeschakeld
+   * **[!UICONTROL meerdere opties:]** Ingeschakeld
 
 1. Navigeer naar de eigenschap embed `/libs/fd/af/runtime/clientlibs/guideRuntime`en voeg deze `fp.validation` waarde toe.
 

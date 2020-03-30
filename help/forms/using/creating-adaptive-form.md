@@ -9,7 +9,7 @@ topic-tags: author
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f06b8cb2-6f98-465f-beec-1e91e3f45707
 translation-type: tm+mt
-source-git-commit: 24728d320d46edc5e18385868ba92cb4292c8c5f
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -20,7 +20,7 @@ source-git-commit: 24728d320d46edc5e18385868ba92cb4292c8c5f
 
 Ga als volgt te werk om een adaptief formulier te maken.
 
-1. Toegang tot AEM Forms Author-instantie op `https://[server]:[port]/<custom-context-if-any>.`
+1. Toegang tot AEM Forms Author-instantie op `https://'[server]:[port]'/<custom-context-if-any>.`
 
 1. Voer uw referenties in op de AEM-aanmeldingspagina.
 
@@ -34,10 +34,10 @@ Ga als volgt te werk om een adaptief formulier te maken.
 1. Er verschijnt een optie voor het selecteren van een sjabloon. Zie [Aangepaste formuliersjablonen](/help/forms/using/creating-adaptive-form.md#p-adaptive-form-templates-p)voor meer informatie over sjablonen. Tik op een sjabloon om deze te selecteren en tik op Volgende.
 1. Er wordt een optie voor &#39;Eigenschappen toevoegen&#39; weergegeven. Geef de waarden op voor de volgende eigenschapvelden. De velden Titel en Naam zijn verplicht:
 
-   * **** Titel: Hier geeft u de weergavenaam van het formulier op. Met de titel kunt u het formulier identificeren in de gebruikersinterface van AEM Forms.
-   * **** Naam: Hier geeft u de naam van het formulier op. Er wordt een knooppunt met de opgegeven naam gemaakt in de repository. Wanneer u een titel begint te typen, wordt automatisch een waarde voor het naamveld gegenereerd. U kunt de voorgestelde waarde wijzigen. Het naamveld mag alleen alfanumerieke tekens, afbreekstreepjes en onderstrepingstekens bevatten. Alle ongeldige invoer wordt vervangen door een afbreekstreepje.
-   * **** Omschrijving: Hier geeft u gedetailleerde informatie over het formulier op.
-   * **** Tags: Hiermee geeft u codes op om het adaptieve formulier op unieke wijze te identificeren. Tags helpen u bij het zoeken naar het formulier. Als u tags wilt maken, typt u nieuwe tagnamen in het vak **Codes** .
+   * **[!UICONTROL Titel:]** Hier geeft u de weergavenaam van het formulier op. Met de titel kunt u het formulier identificeren in de gebruikersinterface van AEM Forms.
+   * **[!UICONTROL Naam:]** Hier geeft u de naam van het formulier op. Er wordt een knooppunt met de opgegeven naam gemaakt in de repository. Wanneer u een titel begint te typen, wordt automatisch een waarde voor het naamveld gegenereerd. U kunt de voorgestelde waarde wijzigen. Het naamveld mag alleen alfanumerieke tekens, afbreekstreepjes en onderstrepingstekens bevatten. Alle ongeldige invoer wordt vervangen door een afbreekstreepje.
+   * **[!UICONTROL Omschrijving:]** Hier geeft u gedetailleerde informatie over het formulier op.
+   * **[!UICONTROL Tags:]** Hiermee geeft u codes op om het adaptieve formulier op unieke wijze te identificeren. Tags helpen u bij het zoeken naar het formulier. Als u tags wilt maken, typt u nieuwe tagnamen in het vak **Codes** .
 
 1. U kunt een adaptief formulier maken op basis van een van de volgende formuliermodellen:
 
@@ -97,7 +97,7 @@ Ga als volgt te werk om een XFA-formuliersjabloon te gebruiken als formuliermode
 1. Selecteer op het tabblad Formuliermodel in de vervolgkeuzelijst de optie **[!UICONTROL Formuliersjablonen]**. Alle formuliersjablonen die via de gebruikersinterface van AEM Forms naar de gegevensopslagruimte worden geüpload, worden weergegeven voor selectie. Selecteer een sjabloon in de lijst.
 
    ![XFA-formuliersjabloon koppelen aan een adaptief formulier](assets/form_model_xfa_associate.png)
-   **** Afbeelding: Een formuliersjabloon *selecteren*
+   **Afbeelding:** Een formuliersjabloon *selecteren*
 
    >[!NOTE]
    >
@@ -126,12 +126,12 @@ Ga als volgt te werk om het XML- of JSON-schema als formuliermodel voor een adap
    >Zorg ervoor dat de bestandsnaam van het JSON-schema eindigt met **.schema.json**. Bijvoorbeeld: mySchema.schema.json
 
    ![XML- of JSON-schema selecteren](assets/upload-schema.png)
-   **** Afbeelding: XML- of JSON-schema *selecteren*
+   **Afbeelding:** XML- of JSON-schema *selecteren*
 
 1. (Alleen voor het XML-schema) Nadat u een XML-schema hebt geselecteerd of geüpload, geeft u een hoofdelement op van het geselecteerde XSD-bestand dat u wilt toewijzen met het aangepaste formulier.
 
    ![XSD-hoofdelement selecteren](assets/xsd-root-element.png)
-   **** Afbeelding: XSD-hoofdelement *selecteren*
+   **Afbeelding:** XSD-hoofdelement *selecteren*
 
 >[!NOTE]
 >
@@ -177,8 +177,8 @@ De optie Automatisch opslaan is standaard niet ingeschakeld. U kunt de optie Aut
 1. Geef in het vak **[!UICONTROL Adaptieve formuliergebeurtenis]** 1 of TRUE op om het formulier automatisch op te slaan wanneer het formulier in de browser wordt geladen. U kunt ook een voorwaardelijke expressie opgeven voor een gebeurtenis die, wanneer deze wordt geactiveerd en waar wordt geretourneerd, de inhoud van het formulier opslaat.
 1. Geef de trigger op. Automatisch opslaan wordt geactiveerd op basis van uw configuratie. U kunt kiezen uit de volgende opties:
 
-   * **** Gebaseerd op tijd: Selecteer de optie om de inhoud op te slaan op basis van een specifiek tijdsinterval.
-   * **** Gebaseerd op gebeurtenis: Selecteer de optie om de inhoud op te slaan op basis van een gebeurtenis die wordt gestart.
+   * **[!UICONTROL Gebaseerd op tijd:]** Selecteer de optie om de inhoud op te slaan op basis van een specifiek tijdsinterval.
+   * **[!UICONTROL Gebaseerd op gebeurtenis:]** Selecteer de optie om de inhoud op te slaan op basis van een gebeurtenis die wordt gestart.
    Wanneer u een trigger selecteert, wordt het vak Strategieconfiguratie ingeschakeld. Met het vak Strategieconfiguratie kunt u:
 
    * Geef een tijdsinterval op als u **[!UICONTROL Op tijd gebaseerde]** trigger selecteert.
@@ -199,4 +199,4 @@ De optie Automatisch opslaan is standaard niet ingeschakeld. U kunt de optie Aut
    >
    >Als u de optie Automatisch opslaan wilt gebruiken voor anonieme gebruikers, moet u de Forms Common Configuration Service zodanig configureren dat alle gebruikers formulieren kunnen bekijken, verifiëren en ondertekenen.
    >
-   >Om de dienst te vormen, ga naar de configuratie van de Console van het Web AEM bij `https://[server]:[host]/system/console/configMgr` en geef de Gemeenschappelijke Dienst **[!UICONTROL van de Configuratie van]** Vormen uit om de optie **[!UICONTROL Alle Gebruikers]** op het **[!UICONTROL Allow]** gebied te kiezen, en sparen de configuratie.
+   >Om de dienst te vormen, ga naar de configuratie van de Console van het Web AEM bij `https://'[server]:[port]'system/console/configMgr` en geef de Gemeenschappelijke Dienst **[!UICONTROL van de Configuratie van]** Vormen uit om de optie **[!UICONTROL Alle Gebruikers]** op het **[!UICONTROL Allow]** gebied te kiezen, en sparen de configuratie.

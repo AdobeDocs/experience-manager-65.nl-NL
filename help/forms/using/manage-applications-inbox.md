@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -31,7 +31,7 @@ Samenvattend kunt u met Inbox een nieuwe toepassing maken en toegewezen taken be
 
 ## Toepassing maken {#create-application}
 
-1. Ga naar AEM Inbox op https://[server]:[port]/aem/inbox.
+1. Ga naar AEM Inbox op https://&#39;[server]:[port]&#39;/aem/inbox.
 1. Tik in de gebruikersinterface van het Postvak IN op **[!UICONTROL Maken > Toepassing]**. De pagina Select Application (Toepassing selecteren) wordt weergegeven.
 1. Selecteer een toepassing en klik op **[!UICONTROL Maken]**. Het adaptieve formulier dat aan de toepassing is gekoppeld, wordt geopend. Vul de gegevens in het aangepaste formulier in en tik op **[!UICONTROL Verzenden]**. De bijbehorende workflow wordt gestart en er wordt een taak gemaakt in het Postvak In van de ontvanger.
 

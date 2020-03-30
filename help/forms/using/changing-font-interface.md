@@ -11,7 +11,7 @@ topic-tags: forms-workspace
 discoiquuid: 9fcb80b4-cbc2-48a5-afd1-4f3bc50bc503
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -28,7 +28,7 @@ Voer de [algemene stappen voor de aanpassing](../../forms/using/generic-steps-ht
 
 Voer bijvoorbeeld de volgende stappen uit als u het font van het ankerpunt op de bovenste navigatiebalk wilt wijzigen in Courier New:
 
-1. Meld u aan bij CRXDE Lite door toegang te krijgen tot `https://[server]:[port]/lc/crx/de/index.jsp`.
+1. Meld u aan bij CRXDE Lite door toegang te krijgen tot `https://'[server]:[port]'/lc/crx/de/index.jsp`.
 1. Voer een van de volgende handelingen uit:
 
    1. Als u de lettertypefamilie wilt wijzigen in een bestaande stijl, voegt u het volgende toe in het bestand newStyle.css op /apps/ws/css.

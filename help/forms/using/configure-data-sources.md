@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 43780682ba27d9c7d578393df04267ed8be4f1de
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -32,7 +32,7 @@ De integratie van gegevens steunt OAuth2.0, Basisauthentificatie, en API Zeer be
 
 U kunt relationele databases configureren met AEM Web Console Configuration. Ga als volgt te werk:
 
-1. Ga naar AEM-webconsole op https://[server]:[host]/system/console/configMgr.
+1. Ga naar AEM-webconsole op https://server:host/system/console/configMgr.
 1. Zoek naar **[!UICONTROL Apache het Verdelen Verbinding Gepoolde configuratie DataSource]** . Tik om de configuratie te openen in de bewerkingsmodus.
 1. In de configuratiedialoog, specificeer de details voor het gegevensbestand u, zoals wilt vormen:
 
@@ -47,7 +47,7 @@ U kunt relationele databases configureren met AEM Web Console Configuration. Ga 
    >
    >    
    >    
-   >    1. Ga naar https://[server]:[poort]/systeem/console/crypto.
+   >    1. Ga naar https://&#39;[server]:[port]&#39;/system/console/crypto.
    >    1. Geef in het veld **[!UICONTROL Onbewerkte tekst]** het wachtwoord of de tekenreeks op die u wilt versleutelen en klik op **[!UICONTROL Beveiligen]**.
    >    
    >    
@@ -66,7 +66,7 @@ U kunt relationele databases configureren met AEM Web Console Configuration. Ga 
 
 U kunt het AEM-gebruikersprofiel configureren met de configuratie Gebruikersprofielverbinding in AEM-webconsole. Ga als volgt te werk:
 
-1. Ga naar AEM-webconsole op https://[server]:[host]/system/console/configMgr.
+1. Ga naar AEM-webconsole op https://&#39;[server]:[poort]&#39;system/console/configMgr.
 1. Zoek naar de Integraties van Gegevens van **[!UICONTROL Vormen AEM - de Configuratie]** van de Verbinding van het Profiel van de Gebruiker en tik om de configuratie op Edit wijze te openen.
 1. In het dialoogvenster Configuratie gebruikersprofiel-aansluiting kunt u eigenschappen van gebruikersprofielen toevoegen, verwijderen of bijwerken. De opgegeven eigenschappen zijn beschikbaar voor gebruik in het formuliergegevensmodel. Gebruik de volgende indeling om gebruikersprofieleigenschappen op te geven:
 

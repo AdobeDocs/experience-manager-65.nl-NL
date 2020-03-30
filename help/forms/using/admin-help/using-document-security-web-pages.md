@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 2878b145-e6c0-48d3-810c-3540de13c826
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -33,9 +33,9 @@ Als u zich wilt aanmelden als beheerder, moet u de beheerdersrol hebben die aan 
 
 Als u zich met een browser wilt aanmelden bij de webpagina&#39;s, hebt u de URL voor documentbeveiliging en een account nodig. De URL voor gebruikers is anders dan de URL voor beheerders. Beheerders kunnen zich ook aanmelden bij de gebruikerspagina&#39;s om beleid te maken.
 
-Als u toegang hebt tot meer dan één installatie van documentbeveiliging, hebt u de URL nodig voor de instantie van documentbeveiliging die u wilt openen. Zie de beheerder als u deze informatie niet hebt. De standaard-URL voor de gebruikerspagina&#39;s is https://*[host]*:*[port]*/edc. In sommige gevallen is het poortnummer niet vereist. Vraag de beheerder om meer informatie.
+Als u toegang hebt tot meer dan één installatie van documentbeveiliging, hebt u de URL nodig voor de instantie van documentbeveiliging die u wilt openen. Zie de beheerder als u deze informatie niet hebt. De standaard-URL voor de gebruikerspagina&#39;s is `https://[host]:[port]/edc`. In sommige gevallen is het poortnummer niet vereist. Vraag de beheerder om meer informatie.
 
-De standaard-URL voor beheerders is https://*[host]*:*[port]*/adminui.
+De standaard-URL voor beheerders is `https://[host]:[port]/adminui`.
 
 Voor beheerders wordt tijdens de installatie een standaard superbeheerdersaccount gemaakt. U kunt dit account gebruiken om u aan te melden wanneer documentbeveiliging voor het eerst wordt geïnstalleerd.
 
@@ -45,9 +45,9 @@ Voor beheerders wordt tijdens de installatie een standaard superbeheerdersaccoun
 
 1. Typ de URL in uw browser:
 
-   URL voor documentbeveiliging: `https://`*[hostpoort ]*`:`*[]*`/edc`
+   URL voor documentbeveiliging: `https://[host]:[port]/edc`
 
-   of beheerconsole-URL: `https://`*[hostpoort ]*`:`*[]*`/adminui`
+   of beheerconsole-URL: `https://[host]:[port]/adminui`
 
 1. Typ uw gebruikersnaam en wachtwoord in het aanmeldingsvenster en klik op OK.
 1. Klik in Beheerconsole op Services > Documentbeveiliging.

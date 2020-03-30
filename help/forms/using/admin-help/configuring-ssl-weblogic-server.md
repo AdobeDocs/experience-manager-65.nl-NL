@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 968c2574-ec9a-45ca-9c64-66f4caeec285
 translation-type: tm+mt
-source-git-commit: 06335b9a85414b6b1141dd19c863dfaad0812503
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -92,7 +92,7 @@ De opdracht Keytool bevindt zich gewoonlijk in de map JavaJre/bin en moet versch
      <li><p><code><i>[User name]</i></code> Dit is de identificatie van de gebruiker die eigenaar is van het sleutelarchief.</p></li>
      <li><p><code><i>[Group Name]</i></code> is de identificatie van de ondernemingsgroep waartoe de eigenaar van het sleutelarchief behoort.</p></li>
      <li><p><code><i>[Company Name]</i></code> is de naam van uw organisatie.</p></li>
-     <li><p><code><i>[City Name]</i></code> Dit is de stad waar uw organisatie zich bevindt.</p></li>
+     <li><p><code><i>[City Name]</i></code> is de stad waar uw organisatie zich bevindt.</p></li>
      <li><p><code><i>[State or province]</i></code> is de staat of provincie waar uw organisatie zich bevindt.</p></li>
      <li><p><code><i>[Country Code]</i></code> Dit is de tweelettercode voor het land waar uw organisatie zich bevindt.</p></li>
     </ul></td>
@@ -156,14 +156,14 @@ Zie het bestand keytool.html in de JDK-documentatie voor meer informatie over he
    C:\Program Files\Java\jrockit-jdk1.6.0_24-R28\bin\keytool" -import -v -noprompt -alias bedrock -file "ads-ca.cer" -keystore "ads-ca.jks" -storepass Password1 -keypass Password1
    ```
 
-Het sleutelarchiefbestand voor aangepast vertrouwen met de naam &quot;ads-ca.jks&quot; wordt gemaakt in de map [appserverdomain]/adobe/[server] .
+Het sleutelarchiefbestand voor aangepast vertrouwen met de naam &quot;ads-ca.jks&quot; wordt gemaakt in de map [appserverdomain]/adobe/&#39;server&#39;.
 
 Configureer WebLogic zodanig dat deze gebruikmaakt van het sleutelarchief Aangepaste identiteit en het sleutelarchief Aangepast vertrouwen dat u hebt gemaakt. Schakel ook de WebLogic Hostname Verification-functie uit omdat de DN-naam die is gebruikt om de sleutelarchiefbestanden te maken, niet de naam van de computer bevat die als host fungeert voor WebLogic Server.
 
 ## WebLogic configureren om SSL te gebruiken {#configure-weblogic-to-use-ssl}
 
 1. Start de WebLogic Server-beheerconsole door de `https://`*[hostnaam ]*te typen`:7001/console`in de URL-regel van een webbrowser.
-1. Selecteer in Environment (Domeinconfiguraties) **Servers >[server]> Configuratie > Algemeen**.
+1. Selecteer in Domeinconfiguraties onder Omgeving de optie **Servers > &#39;server&#39; > Configuratie > Algemeen**.
 1. Onder Algemeen, in Configuratie, zorg ervoor dat de Toegelaten **Haven van de** Luister en **SSL Toegelaten** Haven van de Luister worden geselecteerd. Als deze optie niet is ingeschakeld, voert u de volgende handelingen uit:
 
    1. Klik onder Wijzigen in midden op **Vergrendelen en bewerken** om selecties en waarden te wijzigen.
@@ -185,7 +185,7 @@ Configureer WebLogic zodanig dat deze gebruikmaakt van het sleutelarchief Aangep
 
 1. Geef onder Vertrouwd de volgende waarden op:
 
-   **Aangepaste sleutelarchiefbestandsnaam** vertrouwen: `*[appserverdomain]*/adobe/*[server]*/ads-ca.jks`, waarbij `*[appserverdomain]*` het werkelijke pad is
+   **Aangepaste sleutelarchiefbestandsnaam** vertrouwen: `*[appserverdomain]*/adobe/*'server'*/ads-ca.jks`, waarbij `*[appserverdomain]*` het werkelijke pad is
 
    **Type** aangepast sleutelarchief vertrouwen: JKS
 

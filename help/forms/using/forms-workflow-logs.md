@@ -10,7 +10,7 @@ topic-tags: publish
 discoiquuid: 14bb521a-42ea-4fe2-90fb-202e7ddf917a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8e724af4d69cb859537dd088119aaca652ea3931
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -80,7 +80,7 @@ Voer de volgende stappen uit om foutopsporingslogbestanden voor AEM Forms-workfl
 
 1. Ga naar AEM webconsoleconfiguratiebeheer op:
 
-   https://[server]:[poort]/systeem/console/configMgr
+   https://&#39;[server]:[port]&#39;/system/console/configMgr
 
 1. Selecteer **[!UICONTROL Verdelen]** > **[!UICONTROL Logondersteuning]**.
 1. Tik op Nieuwe **[!UICONTROL logboekregistratie toevoegen.]**

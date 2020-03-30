@@ -9,7 +9,7 @@ topic-tags: forms-workspace
 discoiquuid: f70f21e3-3bec-490d-889e-faf496fb738b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -26,7 +26,7 @@ Laten we Correspondentiebeheer bijvoorbeeld beschouwen als de voorbeeldkandidaat
 
 Begin door een malplaatje van het Beheer van de Correspondentie te creëren dat in de werkruimte van Vormen AEM wordt teruggegeven. Zie [Een lettertypesjabloon](../../forms/using/create-letter.md)maken voor meer informatie.
 
-Heb toegang tot het malplaatje van het Beheer van de Correspondentie bij zijn URL om te verifiëren of het malplaatje van het Beheer van de Correspondentie met succes kan worden teruggegeven. De URL heeft een patroon dat lijkt op `https://[server]:[port]/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`
+Heb toegang tot het malplaatje van het Beheer van de Correspondentie bij zijn URL om te verifiëren of het malplaatje van het Beheer van de Correspondentie met succes kan worden teruggegeven. De URL heeft een patroon dat lijkt op `https://'[server]:[port]'/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`
 
 Hier `encodedLetterId` staat de URL-gecodeerde letter-ID. Geef dezelfde letter-id op wanneer u het renderproces voor werkruimtetaak in Workbench definieert.
 
@@ -104,7 +104,7 @@ Gebruik de volgende stappen om een taak te maken om een letter te renderen en te
    Selecteer in het dialoogvenster Activiteiten definiëren de juiste activiteit, zoals getLetterInstanceInfo, en klik op **OK**.
 
 1. Implementeer de toepassing. Als u hierom wordt gevraagd, checkt u de middelen in en slaat u deze op.
-1. Meld u aan bij de werkruimte voor AEM-formulieren op https://[server]:[port]/lc/content/ws.
+1. Meld u aan bij de werkruimte voor AEM-formulieren op https://&#39;[server]:[port]&#39;/lc/content/ws.
 1. Open de taak die u hebt toegevoegd, CMRenderer. De letter Correspondence Management wordt weergegeven.
 
    ![werkruimte](assets/cminworkspace.png)

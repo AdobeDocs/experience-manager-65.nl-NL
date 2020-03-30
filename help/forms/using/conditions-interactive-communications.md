@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fe59d260-d392-4d6f-bb7e-2f2a1d701f51
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a326e508a781b3afaba8b5e371aa862a30536740
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -74,7 +74,7 @@ De elementen in de voorwaarden die worden gerenderd op basis van de toegepaste r
 
    ![createconditionscreenassetsaddedannoted](assets/createconditionscreenassetsaddedannotated.png)
 
-   **[Een]wijziging negeren.**Tik op dit pictogram om de wijzigingen in het element en de regel in de voorwaarde af te wijzen.   **[B]Wijziging accepteren.**Tik op dit pictogram om de wijzigingen te accepteren die u hebt aangebracht in het element en de regel in de voorwaarde.   **[Item dupliceren].**Tik op dit pictogram om een kopie van het element te maken, samen met de eventuele toegepaste regel in de voorwaarde. Vervolgens kunt u doorgaan met het bewerken van de regel en het element voor gedupliceerde elementen. Het dupliceren van een element is handig voor het maken van vergelijkbare regels voor het weergeven van alternatieve elementen op basis van een bepaalde context.   **[Voorvertoning weergeven].**Tik op dit pictogram om een voorvertoning van het element weer te geven op de pagina Voorwaarde maken\bewerken.   **[E]Opnieuw ordenen.**Tik op dit pictogram en houd dit ingedrukt om elementen te slepen en neer te zetten om ze binnen een voorwaarde opnieuw te ordenen.
+   **[Een]wijziging negeren.**Tik op dit pictogram om de wijzigingen in het element en de regel in de voorwaarde af te wijzen.   **[B]Wijziging accepteren.**Tik op dit pictogram om de wijzigingen te accepteren die u hebt aangebracht in het element en de regel in de voorwaarde.   **[Item dupliceren].**Tik op dit pictogram om een kopie van het element te maken, samen met de eventuele toegepaste regel in de voorwaarde. Vervolgens kunt u doorgaan met het bewerken van de regel en het element voor gedupliceerde elementen. Het dupliceren van een element is handig voor het maken van vergelijkbare regels voor het weergeven van alternatieve elementen op basis van een bepaalde context.   **[Voorvertoning weergeven].**Tik op dit pictogram om een voorvertoning van het element weer te geven op de pagina Voorwaarde maken\bewerken.   **&#39;server&#39; opnieuw ordenen.** Tik op dit pictogram en houd dit ingedrukt om elementen te slepen en neer te zetten om ze binnen een voorwaarde opnieuw te ordenen.
 
    U kunt de volgende opties selecteren om op te geven hoe de voorwaarde zich gedraagt bij uitvoering:
 

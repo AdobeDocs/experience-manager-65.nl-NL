@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: cc3cb8732e2c0b4a7275ec302517791a5babdd42
+source-git-commit: 34f5cfc692241da4b9f5330e5abc324998fadb23
 
 ---
 
@@ -138,7 +138,7 @@ Voor een volledige lijst van eigenschappen, zeer belangrijke hoogtepunten, zeer 
 
 * Met de knop Opslaan wordt de externe set niet geïmporteerd als de gebruiker geen wijzigingen heeft aangebracht in de Editor instellen in de Dynamic Media Client (CQ-4285690).
 
-* De miniatuur van 3D-elementen is niet informatief wanneer een ondersteund 3D-model wordt opgenomen in AEM (CQ-4283701).
+* Miniatuur van 3D-middelen is niet informatief wanneer een ondersteund 3D-model wordt opgenomen in AEM (CQ-4283701).
 
 * De onverwerkte status van de voorinstelling van de viewer voor SmartCrop wordt twee keer weergegeven op de bannertekst naast de naam van de voorinstelling (CQ-4283517).
 
@@ -193,6 +193,13 @@ Voor een volledige lijst van eigenschappen, zeer belangrijke hoogtepunten, zeer 
 * De configuratie van de doelcloud mislukt als de fout get-boxes is mislukt (CQ-4279880).
 
 ### Brand Portal {#assets-brand-portal}
+
+* Gebruikers van Brand Portal kunnen geen middelen uit de bijdragemap publiceren naar AEM Assets bij de upgrade naar Adobe I/O op AEM 6.5.4 (CQDOC-15655).
+
+   Dit probleem wordt opgelost in het volgende servicepack AEM 6.5.5.
+
+   Voor directe correctie op AEM 6.5.4 wordt aangeraden de hotfix [te](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/hotfix/cq-6.5.0-hotfix-33041) downloaden en op de auteurinstantie te installeren.
+
 
 * Vervolgkeuzemenu voor het metagegevensschema zijn niet zichtbaar in de elementeigenschappen (CQ-4283287).
 

@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c908d064-6596-473a-b218-22a2496c83f7
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -78,7 +78,7 @@ De WebLogic Server-beheerconsole is niet meer beschikbaar en de opdrachtprompt w
    * (Windows) `startWebLogic.cmd`
    * (Linux, UNIX) ./ `startWebLogic.sh`
 
-1. Toegang tot WebLogic Server-beheerconsole door `https://*[host name]:`[Port] te typen `/console` in de URL-regel van een webbrowser, waarbij *[Port]* de niet-beveiligde luisterpoort is. Deze poortwaarde is standaard 7001.
+1. Toegang tot de WebLogic Server-beheerconsole door `https://[host name]:[port]/console` in de URL-regel van een webbrowser te typen, waar de *[poort]* de niet-beveiligde luisterpoort is. Deze poortwaarde is standaard 7001.
 1. Typ in het aanmeldingsscherm uw gebruikersnaam en wachtwoord voor de beheerder en klik op Aanmelden.
 
 ## Notitiebeheer starten {#start-node-manager}
@@ -101,7 +101,7 @@ Nadat u WebLogic Server sluit, kunt u de bevelherinnering sluiten waarvan u de M
 >Deze taak kan alleen worden uitgevoerd nadat u een WebLogic-domein en een beheerde server hebt gemaakt.
 
 1. Zorg ervoor dat WebLogic Server en Node Manager lopen.
-1. Start WebLogic Server Administration Console door `https://`*[hostnaam]te typen:[poort ]*`/console`in de URL-regel van een webbrowser.
+1. Start WebLogic Server Administration Console door in de URL-regel van een webbrowser `https://host name]:[port]`een console te typen.
 1. Klik onder Domeinstructuur op Omgeving > Servers.
 1. Klik in het rechterdeelvenster op het tabblad Beheer.
 1. Selecteer de beheerde server die u wilt starten.

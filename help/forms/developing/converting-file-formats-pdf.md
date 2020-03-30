@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 translation-type: tm+mt
-source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -615,12 +615,12 @@ In deze tabel wordt het type informatie weergegeven dat wordt gebruikt bij het a
   </tr>
   <tr>
    <td><p>Instructies in het dialoogvenster Toepassingsspecifiek</p></td>
-   <td><p>Geeft aan hoe moet worden gereageerd op toepassingsspecifieke dialoogvensters. </p><p>Het bestand dat deze informatie bevat, is appmon.<i>[appname]</i>.dialog.<i>[locale]</i>.xml (bijvoorbeeld appmon.word.en_US.xml).</p></td>
+   <td><p>Geeft aan hoe moet worden gereageerd op toepassingsspecifieke dialoogvensters. </p><p>Het bestand dat deze informatie bevat, is appmon.<i>`[appname]'</i>.dialog.<i>`[locale]'</i>.xml (bijvoorbeeld appmon.word.en_US.xml).</p></td>
    <td><p>Wijzig dit bestand niet. </p><p>Zie <a href="converting-file-formats-pdf.md#creating_or_modifying_an_additional_dialog_xml_file_for_a_native_application">Een XML-bestand voor een native toepassing maken of wijzigen als u dialoogvensterinstructies voor een nieuwe native toepassing</a>wilt toevoegen.</p></td>
   </tr>
   <tr>
    <td><p>Aanvullende toepassingsspecifieke dialoogvensterinstructies </p></td>
-   <td><p>Hiermee geeft u overschrijvingen en toevoegingen aan de instructies in het specifieke dialoogvenster voor de toepassing op. De sectie bevat een voorbeeld van dergelijke informatie. </p><p>Het bestand dat deze informatie bevat, is appmon.<i>[toepassingsnaam]</i>.optellen.<i>[locale]</i>.xml. Een voorbeeld is appmon.adding.nl_NL.xml.</p></td>
+   <td><p>Hiermee geeft u overschrijvingen en toevoegingen aan de instructies in het specifieke dialoogvenster voor de toepassing op. De sectie bevat een voorbeeld van dergelijke informatie. </p><p>Het bestand dat deze informatie bevat, is appmon.<i>`[appname]'</i>.adding.<i>`[locale]'</i>.xml. Een voorbeeld is appmon.adding.nl_NL.xml.</p></td>
    <td><p>Bestanden van dit type kunnen worden gemaakt en gewijzigd met behulp van een XML-bewerkingstoepassing. (Zie Een XML-bestand met een extra dialoogvenster <a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">maken of wijzigen voor een native toepassing</a>.) </p><p><strong>Belangrijk</strong>: U moet extra toepassingsspecifieke dialoogvakinstructies voor elke inheemse toepassing creëren uw server zal steunen. </p></td>
   </tr>
  </tbody>
@@ -636,7 +636,7 @@ Dialoogbestanden in XML-bestanden reageren daarentegen gewoon op dialoogvensters
 
 Deze sectie en de volgende sectie gebruiken verschillende terminologie voor dialoogvakjes en de componenten die zij, afhankelijk van het perspectief bevatten dat wordt beschreven. De componenten van dialoogvensters zijn punten zoals knopen, gebieden, en combovakjes.
 
-Wanneer deze sectie en de volgende sectie dialoogvensters en hun componenten vanuit het perspectief van een gebruiker beschrijven, worden termen als *dialoogvenster*, *knop*, *veld* en *keuzelijst* met invoervak gebruikt.
+Wanneer deze sectie en de volgende sectie dialoogvensters en hun componenten vanuit het perspectief van een gebruiker beschrijven, worden termen zoals *dialoogdoos*, *knoop*, *gebied*, en *combodoos* gebruikt.
 
 Wanneer deze sectie en de volgende sectie dialoogvensters en hun componenten vanuit het perspectief van hun interne vertegenwoordiging beschrijven, wordt de term *vensterelement* gebruikt. De interne representatie van vensterelementen is een hiërarchie, waarbij elke instantie van een vensterelement wordt aangeduid met labels. De instantie van het vensterelement beschrijft ook zijn fysieke kenmerken en gedrag.
 
@@ -672,9 +672,9 @@ In een XML-bestand *van het* dialoogvenster wordt aangegeven hoe de service PDF 
 
 Wanneer het systeem of de native toepassing een dialoogvenster weergeeft dat niet wordt afgehandeld door het XML-scriptbestand dat momenteel wordt uitgevoerd, worden de XML-bestanden van het dialoogvenster Genereren in deze volgorde doorzocht, en wordt gestopt wanneer er een overeenkomst wordt gevonden:
 
-* appmon.*[appname]*.additional.*[locale]*.xml
-* appmon.*[appname].[locale]*.xml (wijzig dit bestand niet.)
-* appmon.global.*[locale]*.xml (wijzig dit bestand niet.)
+* appmon.`[appname]`.additional.`[locale]`.xml
+* appmon.`[appname]`.`[locale]`.xml (wijzig dit bestand niet.)
+* appmon.global.`[locale]`.xml (wijzig dit bestand niet.)
 
 Als bij de service PDF genereren een overeenkomst wordt gevonden voor het dialoogvenster, wordt dit verwijderd door het de toetsaanslag of andere actie te verzenden die voor het dialoogvenster is opgegeven. Als in de instructies voor het dialoogvenster een afbreekbericht wordt opgegeven, wordt de taak die momenteel wordt uitgevoerd door de service PDF genereren beëindigd en wordt een foutbericht gegenereerd. Zo&#39;n afbreekbericht zou in het `abortMessage` element in de grammatica van manuscriptXML worden gespecificeerd.
 
@@ -741,7 +741,7 @@ Nadat u deze XML-bestanden aan het bestand adobe-appmondata.jar hebt toegevoegd,
 
 Als u bestanden wilt doorsturen naar een nieuwe oorspronkelijke toepassing, moet u een XML-scriptbestand voor die toepassing maken. Als u de manier wilt wijzigen waarop de service PDF genereren werkt met een native toepassing die al wordt ondersteund, moet u het script voor die toepassing wijzigen.
 
-Het script bevat instructies die door de vensterelementen van de native toepassing navigeren en die specifieke reacties op die elementen leveren. Het bestand dat deze gegevens bevat, is `appmon.[appname]``.script.[locale].xml`. Een voorbeeld is appmon.notepad.script.en_US.xml.
+Het script bevat instructies die door de vensterelementen van de native toepassing navigeren en die specifieke reacties op die elementen leveren. Het bestand dat deze informatie bevat, is `appmon.`[toepassingsnaam]&quot; `.script.`[landinstelling]`.xml`. Een voorbeeld is appmon.notepad.script.en_US.xml.
 
 #### Stappen identificeren die het script moet uitvoeren {#identifying-steps-the-script-must-execute}
 
@@ -836,7 +836,7 @@ Als u een script maakt voor een native toepassing die voorheen niet werd onderst
 
 >[!NOTE]
 >
->In dit verband betekent de term &quot;aanvullend&quot; de inhoud van het `appmon.[applicationname].addition.[locale].xml` bestand. Met een dergelijk bestand worden overschrijvingen en toevoegingen aan het XML-bestand van het dialoogvenster opgegeven.
+>In dit verband betekent de term &quot;aanvullend&quot; de inhoud van het bestand `appmon.[applicationname].addition.[locale]`.xml. Met een dergelijk bestand worden overschrijvingen en toevoegingen aan het XML-bestand van het dialoogvenster opgegeven.
 
 U kunt ook het XML-bestand met aanvullende dialoogvensters wijzigen voor een native toepassing voor de volgende doeleinden:
 

@@ -9,7 +9,7 @@ topic-tags: author
 discoiquuid: 34e6d1bc-4eca-42dc-9ae5-9a2107fbefce
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 19299fb5fc764d0e71c0ea3a5ec2286183dd6861
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -28,8 +28,8 @@ Voer de volgende configuraties uit om Designer in staat te stellen een HTML-voor
 
 ### Apache Sling Authentication Service configureren {#configure-apache-sling-authentication-service}
 
-1. Ga naar `https://[server]:[port]/system/console/configMgr` AEM Forms die wordt uitgevoerd op OSGi of
-   `https://[server]:[port]/lc/system/console/configMgr` op AEM Forms die wordt uitgevoerd op JEE.
+1. Ga naar `https://'[server]:[port]'/system/console/configMgr` AEM Forms die wordt uitgevoerd op OSGi of
+   `https://'[server]:[port]'/lc/system/console/configMgr` op AEM Forms die wordt uitgevoerd op JEE.
 1. Zoek en klik op de configuratie van **Apache Sling Authentication Service** om deze te openen in de bewerkingsmodus.
 
 1. Afhankelijk van of u Vormen AEM op OSGi of JEE in werking stelt, voeg het volgende op het gebied van de Vereisten **van de** Authentificatie toe:
@@ -55,8 +55,8 @@ De [beveiligde modus](../../forms/using/get-xdp-pdf-documents-aem.md) is standaa
 
 1. Meld u als beheerder aan bij de AEM-webconsole.
 
-   * URL voor AEM-formulieren op OSGi is `https://[server]:[port]/system/console/configMgr`
-   * URL voor AEM Forms on JEE is `https://[server]:[port]/lc/system/console/configMgr`
+   * URL voor AEM-formulieren op OSGi is `https://'[server]:[port]'/system/console/configMgr`
+   * URL voor AEM Forms on JEE is `https://'[server]:[port]'/lc/system/console/configMgr`
 
 1. Open **[!UICONTROL Mobiele Forms Configurations]** voor bewerking.
 1. Schakel de optie **[!UICONTROL Beveiligde modus]** uit en klik op **[!UICONTROL Opslaan]**.
@@ -69,16 +69,16 @@ De [beveiligde modus](../../forms/using/get-xdp-pdf-documents-aem.md) is standaa
    * **Server-URL**: URL AEM Forms-server.
 
    * **HTTP-poortnummer**: AEM-serverpoort. De standaardwaarde is 4502.
-   * **** Context HTML-voorvertoning: Pad van het profiel voor het weergeven van XFA-formulieren. De volgende standaardprofielen worden gebruikt voor een voorbeeld van het formulier in Designer. U kunt echter ook het pad naar een aangepast profiel opgeven.
+   * **Context HTML-voorvertoning:** Pad van het profiel voor het weergeven van XFA-formulieren. De volgende standaardprofielen worden gebruikt voor een voorbeeld van het formulier in Designer. U kunt echter ook het pad naar een aangepast profiel opgeven.
 
       * `/content/xfaforms/profiles/default.html` (AEM-formulieren op OSGi)
 
       * `/lc/content/xfaforms/profiles/default.html` (AEM-formulieren in JEE)
-   * **** Context van Forms Manager: Contextpad waarop de interface van Forms Manager wordt geïmplementeerd. De standaardwaarden zijn:
+   * **Context van Forms Manager:** Contextpad waarop de interface van Forms Manager wordt geïmplementeerd. De standaardwaarden zijn:
 
       * `/aem/forms` (AEM-formulieren op OSGi)
       * `/lc/forms` (AEM-formulieren in JEE)
-   **** Opmerking: Zorg ervoor dat de AEM Forms-server actief is. The HTML preview connects to the CRX server to *generate* a preview.
+   **Opmerking:** Zorg ervoor dat de AEM Forms-server actief is. The HTML preview connects to the CRX server to *generate* a preview.
 
    ![Opties voor AEM Forms Designer ](assets/server_options.png)
 

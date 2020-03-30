@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c04c488b-73f3-49ba-9e89-f97497965757
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8f90dc4865126d52e04effc9197ef7145b1a167e
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -72,7 +72,7 @@ De omgekeerde replicatie kopieert transactiegegevens aan standaardoutbox van de 
 
 U kunt transactierapporten weergeven over auteur- of publicatieinstanties. Het transactierapport over de auteurinstantie verstrekt een bijeengevoegde som van alle transacties die op de gevormde auteur en publiceer instanties plaatsvinden. Het transactierapport over de publicatie-instantie bevat een telling van transacties die alleen op de onderliggende publicatie-instantie plaatsvinden. Voer de volgende stappen uit om het rapport te bekijken:
 
-1. Meld u aan bij de AEM Forms-server op `https://[hostname]:[port]`.
+1. Meld u aan bij de AEM Forms-server op `https://[hostname]:'port'`.
 1. Navigeer naar **Gereedschappen** > **Formulieren**>**Transactierapport** weergeven.
 
 ## Het rapport begrijpen {#understanding-the-report}

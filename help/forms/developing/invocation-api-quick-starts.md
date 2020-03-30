@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: dcf83c9f-b818-44a2-9079-80a4fc357c4f
 translation-type: tm+mt
-source-git-commit: 58fa0f05bae7ab5ba51491be3171b5c6ffbe870d
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -36,7 +36,7 @@ De volgende snelstarthandleidingen zijn beschikbaar voor het programmatically aa
    <td><p><a href="/help/forms/developing/invoking-human-centric-long-lived.md#quick_start_invoking_a_long_lived_process_using_the_web_service_api">Snel starten: Een langdurig proces aanroepen met de webservice-API</a></p></td>
   </tr>
   <tr>
-   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-java.md#invoking_a_short_lived_process_using_the_invocation_api"> Een kortstondig proces aanroepen met de API voor aanroepen</a></p></td>
+   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-java.md#invoking_a_short_lived_process_using_the_invocation_api">Een kortstondig proces aanroepen met de API voor aanroepen</a></p></td>
    <td><p>N.v.t.</p></td>
    <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_short_lived_process_using_the_invocation_api">Snel starten: Een kortstondig proces aanroepen met de API voor aanroepen</a></p></td>
    <td><p>N.v.t.</p></td>
@@ -175,7 +175,7 @@ In het volgende Java-codevoorbeeld wordt een kortstondig proces met de naam `MyA
          {
              //Set connection properties required to invoke AEM Forms
              Properties connectionProps = new Properties();
-             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+             connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
              connectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -334,7 +334,7 @@ Een onbeveiligd PDF-document dat is gebaseerd op een PDF-bestand met de naam *Lo
              MyApplicationEncryptDocument encryptDocClient = encClient.getEncryptDocument();
  
              //Set connection values required to invoke AEM Forms
-             String url = "[server]:[port]/soap/services/MyApplication/EncryptDocument?blob=base64";
+             String url = "'[server]:[port]'/soap/services/MyApplication/EncryptDocument?blob=base64";
              String username = "administrator";
              String password = "password";
              ((BindingProvider) encryptDocClient).getRequestContext().put(BindingProvider.ENDPOINT_ADDRESS_PROPERTY, url);
@@ -419,7 +419,7 @@ In het volgende Flex-codevoorbeeld wordt een kortstondig proces met de naam `MyA
       private var fileRef:FileReference = new FileReference();
       private var docRef:DocumentReference = new DocumentReference();
       private var parentResourcePath:String = "/";
-      private var serverPort:String = "[server]:[port]";
+      private var serverPort:String = "'[server]:[port]'";
       private var now1:Date;
       private  var cs:ChannelSet
  
@@ -455,7 +455,7 @@ In het volgende Flex-codevoorbeeld wordt een kortstondig proces met de naam `MyA
      private function authTokenReceived(event:ResultEvent):void
              {
              var token:String = event.result as String;
-             var request:URLRequest = DocumentReference.constructRequestForUpload("https://[server]:[port]", token);
+             var request:URLRequest = DocumentReference.constructRequestForUpload("https://'[server]:[port]'", token);
  
              try
              {
@@ -684,7 +684,7 @@ Een onbeveiligd PDF-document dat is gebaseerd op een PDF-bestand met de naam *Lo
          MyApplicationEncryptDocumentServiceLocator locate = new MyApplicationEncryptDocumentServiceLocator ();
  
          //specify the service target URL and object type
-         URL serviceURL = new URL("https://[server]:[port]/soap/services/MyApplication/EncryptDocument?blob=dime");
+         URL serviceURL = new URL("https://'[server]:[port]'/soap/services/MyApplication/EncryptDocument?blob=dime");
  
          //Use the binding stub with the locator
          EncryptDocumentSoapBindingStub encryptionClientStub = new EncryptDocumentSoapBindingStub(serviceURL,locate);
@@ -756,7 +756,7 @@ Een onbeveiligd PDF-document dat is gebaseerd op een PDF-bestand met de naam *Lo
 
 In het volgende Java-codevoorbeeld wordt een proces aangeroepen dat via HTTP een naam heeft gekregen `MyApplication/EncryptDocument` met behulp van gegevens. (Zie AEM-formulieren [aanroepen met behulp van BLOB-gegevens via HTTP](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http).)
 
-Een onbeveiligd PDF-document dat is gebaseerd op een PDF-bestand met de naam *Loan.pdf* , wordt via HTTP doorgegeven aan het AEM Forms-proces. Het PDF-bestand bevindt zich op de volgende URL: `https://[server]:[port]/FormsQS`. Het proces retourneert een PDF-document met wachtwoordcodering dat is opgeslagen als een PDF-bestand met de naam *EncryptedDocument.pdf*.
+Een onbeveiligd PDF-document dat is gebaseerd op een PDF-bestand met de naam *Loan.pdf* , wordt via HTTP doorgegeven aan het AEM Forms-proces. Het PDF-bestand bevindt zich op de volgende URL: `https://'[server]:[port]'/FormsQS`. Het proces retourneert een PDF-document met wachtwoordcodering dat is opgeslagen als een PDF-bestand met de naam *EncryptedDocument.pdf*.
 
 ```as3
  /**
@@ -783,7 +783,7 @@ Een onbeveiligd PDF-document dat is gebaseerd op een PDF-bestand met de naam *Lo
              MyApplicationEncryptDocument encryptDocClient = encClient.getEncryptDocument();
  
              //Set connection values required to invoke AEM Forms using BLOB over HTTP
-             String url = "https://[server]:[port]/soap/services/MyApplication/EncryptDocument?blob=http";
+             String url = "https://'[server]:[port]'/soap/services/MyApplication/EncryptDocument?blob=http";
              String username = "administrator";
              String password = "password";
              ((BindingProvider) encryptDocClient).getRequestContext().put(BindingProvider.ENDPOINT_ADDRESS_PROPERTY, url);
@@ -792,7 +792,7 @@ Een onbeveiligd PDF-document dat is gebaseerd op een PDF-bestand met de naam *Lo
  
              //Create a BLOB object and populate it by invoking the setRemoteURL method
              BLOB inDoc = new BLOB();
-             inDoc.setRemoteURL("https://[server]:[port]/FormsQS/Loan.pdf");
+             inDoc.setRemoteURL("https://'[server]:[port]'/FormsQS/Loan.pdf");
  
                 //invoke the short-lived process named MyApplication/EncryptDocument
              BLOB outDoc = encryptDocClient.invoke(inDoc);
@@ -862,7 +862,7 @@ Een onbeveiligd PDF-document dat is gebaseerd op een PDF-bestand met de naam *Lo
  
                 try
                 {
-                    String urlData = "https://[server]:[port]/FormsQS/Loan.pdf";
+                    String urlData = "https://'[server]:[port]'/FormsQS/Loan.pdf";
  
                     //Create a MyApplication_EncryptDocumentService object and set authentication values
                     MyApplication_EncryptDocumentService encryptClient = new MyApplication_EncryptDocumentService();
@@ -927,7 +927,7 @@ Een onbeveiligd PDF-document dat is gebaseerd op een PDF-bestand met de naam *Lo
  
 ```
 
-## Snel starten:Het aanhalen van de dienst die MTOM in een .NET project gebruikt {#quick-start-invoking-a-service-using-mtom-in-a-net-project}
+## Snel starten: Het aanhalen van de dienst die MTOM in een .NET project gebruikt {#quick-start-invoking-a-service-using-mtom-in-a-net-project}
 
 Het volgende C# codevoorbeeld haalt een proces aan dat van een project van Microsoft .NET wordt genoemd gebruikend MTOM. `MyApplication/EncryptDocument` (Zie AEM-formulieren [aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom).)
 
@@ -964,7 +964,7 @@ Een niet-beveiligd PDF-document dat is gebaseerd op een PDF-bestand met de naam 
  
                     //Create an EncryptDocumentClient object
                     MyApplication_EncryptDocumentClient encryptProcess = new MyApplication_EncryptDocumentClient();
-                    encryptProcess.Endpoint.Address = new System.ServiceModel.EndpointAddress("https://[server]:[port]/soap/services/MyApplication/EncryptDocument?blob=mtom");
+                    encryptProcess.Endpoint.Address = new System.ServiceModel.EndpointAddress("https://'[server]:[port]'/soap/services/MyApplication/EncryptDocument?blob=mtom");
                     BasicHttpBinding b = (BasicHttpBinding)encryptProcess.Endpoint.Binding;
                     b.MessageEncoding = WSMessageEncoding.Mtom;
  
@@ -1050,7 +1050,7 @@ Een onbeveiligd PDF-document dat is gebaseerd op een PDF-bestand met de naam *Lo
  
          //Specify connection values required to invoke the MyApplication/EncryptDocument process
          //using SwaRef
-         String url = "https://[server]:[port]/soap/services/MyApplication/EncryptDocument?blob=swaref";
+         String url = "https://'[server]:[port]'/soap/services/MyApplication/EncryptDocument?blob=swaref";
          String username = "administrator";
          String password = "password";
          String pdfFile = "C:\\Adobe\Loan.pdf";

@@ -9,7 +9,7 @@ topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6bd09bca68ea1fcec2dca7694dd3d39dc5153bfc
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -71,7 +71,7 @@ Als u bovendien een XML-schema of XDP-formuliersjabloon hebt geselecteerd als he
 1. Geef in het dialoogvenster Fragment maken de volgende informatie op:
 
    * **Naam**: Naam van het fragment. De standaardwaarde is de elementnaam van het deelvenster. Het is een verplicht veld.
-      ***Opmerking **:Zorg ervoor dat u een unieke naam voor het fragment opgeeft. Als er al een ander fragment met dezelfde naam bestaat, kan het fragment niet worden gemaakt.*
+      ***Opmerking **: Zorg ervoor dat u een unieke naam voor het fragment opgeeft. Als er al een ander fragment met dezelfde naam bestaat, kan het fragment niet worden gemaakt.*
 
    * **Titel**: Titel van het fragment. De standaardwaarde is de titel van het deelvenster.
 
@@ -84,7 +84,7 @@ Als u bovendien een XML-schema of XDP-formuliersjabloon hebt geselecteerd als he
    * **Formuliermodel**: Afhankelijk van het formuliermodel voor het aangepaste formulier wordt in dit veld het **XML-schema**, de **formuliersjabloon** of **Geen** weergegeven. Het is een niet-bewerkbaar veld.
 
    * **Hoofdmap** fragmentmodel: Wordt alleen weergegeven in op XSD gebaseerde adaptieve formulieren. Hiermee geeft u de basis voor het fragmentmodel op. U kunt kiezen **/** of het complexe XSD-type in de keuzelijst. U kunt het fragment alleen opnieuw gebruiken in een ander adaptief formulier als u het complexe type selecteert als hoofdknooppunt van het fragmentmodel.
-Als u kiest **/** als hoofdmap van het fragmentmodel, is de volledige XSD-structuur van het basismodel zichtbaar op het tabblad van het adaptieve formuliergegevensmodel. Voor de hoofdmap van een complex type fragmentmodel zijn alleen de onderliggende elementen van het geselecteerde complexe type zichtbaar op het tabblad van het adaptieve formuliergegevensmodel.
+Als u kiest **/** als hoofdmap van het fragmentmodel, is de volledige XSD-structuur van het basismodel zichtbaar op het tabblad van het adaptieve formuliergegevensmodel. Voor een complexe hoofdmap van een fragmentmodel zijn alleen de afstammingen van het geselecteerde complexe type zichtbaar op het tabblad van het adaptieve formuliergegevensmodel.
 
    * **XSD-verwijzing**: Wordt alleen weergegeven in op XSD gebaseerde adaptieve formulieren. De locatie van het XML-schema wordt weergegeven.
 
@@ -163,7 +163,7 @@ U kunt het fragmentelement en de bijbehorende bindingen wijzigen in het dialoogv
 
 U kunt verschillende bewerkingen uitvoeren op adaptieve formulierfragmenten met behulp van de interface van AEM Forms.
 
-1. Ga naar `https://[hostname]:[port]/aem/forms.html`.
+1. Ga naar `https://[hostname]:'port'/aem/forms.html`.
 
 1. Klik op **Selecteren** op de werkbalk van de gebruikersinterface van AEM-formulieren en selecteer een adaptief formulierfragment. Op de werkbalk worden de volgende bewerkingen weergegeven die u kunt uitvoeren op het geselecteerde adaptieve formulierfragment.
 
@@ -174,40 +174,40 @@ U kunt verschillende bewerkingen uitvoeren op adaptieve formulierfragmenten met 
    <td><p><strong>Beschrijving</strong></p> </td>
   </tr>
   <tr>
-   <td><p>Openen</p> </td>
-   <td><p><br /> Hiermee opent u het geselecteerde adaptieve formulierfragment in de bewerkingsmodus. <br /> </p> </td>
+   <td><p>Open</p> </td>
+   <td><p>Hiermee opent u het geselecteerde adaptieve formulierfragment in de bewerkingsmodus.<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Eigenschappen weergeven</p> </td>
-   <td><p>Hiermee opent u het deelvenster Eigenschappen. In het deelvenster Eigenschappen kunt u eigenschappen weergeven en bewerken, een voorvertoning genereren en een miniatuurafbeelding voor het geselecteerde fragment uploaden. <a href="../../forms/using/manage-form-metadata.md" target="_blank"> Zie Metagegevens </a><br />beheren voor meer informatie. <br /> </p> </td>
+   <td><p>Hiermee opent u het deelvenster Eigenschappen. In het deelvenster Eigenschappen kunt u eigenschappen weergeven en bewerken, een voorvertoning genereren en een miniatuurafbeelding voor het geselecteerde fragment uploaden. Zie Metagegevens <a href="../../forms/using/manage-form-metadata.md" target="_blank"></a>beheren voor meer informatie.<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Kopiëren</p> </td>
-   <td><p>Hiermee kopieert u het geselecteerde fragment. <br /> De knop Plakken wordt op de werkbalk weergegeven. <br /> </p> </td>
+   <td><p>Hiermee kopieert u het geselecteerde fragment. De knop Plakken wordt op de werkbalk weergegeven.<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Downloaden</p> </td>
-   <td><p><br /> Hiermee downloadt u het geselecteerde fragment. <br /> </p> </td>
+   <td><p>Hiermee downloadt u het geselecteerde fragment.<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Voorvertoning</p> </td>
-   <td><p>Hiermee kunt u opties instellen om een voorvertoning van het fragment weer te geven als HTML of als aangepaste voorvertoning door gegevens uit een XML-bestand samen te voegen met het fragment. <a href="/help/forms/using/previewing-forms.md" target="_blank"> Zie Een </a>voorbeeld van een formulier<br />bekijken voor meer informatie. <br /> </p> </td>
+   <td><p>Hiermee kunt u opties instellen om een voorvertoning van het fragment weer te geven als HTML of als aangepaste voorvertoning door gegevens uit een XML-bestand samen te voegen met het fragment. Zie Een <a href="/help/forms/using/previewing-forms.md" target="_blank">voorbeeld van een formulier</a>bekijken voor meer informatie.<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Revisie starten/Revisie beheren</p> </td>
-   <td><p>Hiermee kunt u een revisie van het geselecteerde fragment starten en beheren. <a href="../../forms/using/create-reviews-forms.md" target="_blank"> Zie Revisies </a>maken en beheren voor meer informatie<br />. <br /> </p> </td>
+   <td><p>Hiermee kunt u een revisie van het geselecteerde fragment starten en beheren. Zie Revisies <a href="../../forms/using/create-reviews-forms.md" target="_blank">maken en beheren voor meer informatie</a>.<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Woordenboek maken</p> </td>
-   <td><p>Hiermee genereert u een woordenboek voor het lokaliseren van het geselecteerde fragment. <a href="/help/forms/using/lazy-loading-adaptive-forms.md" target="_blank"> Zie Aangepaste formulieren </a>lokaliseren voor meer informatie<br />. <br /> </p> </td>
+   <td><p>Hiermee genereert u een woordenboek voor het lokaliseren van het geselecteerde fragment. Zie Aangepaste formulieren <a href="/help/forms/using/lazy-loading-adaptive-forms.md" target="_blank">lokaliseren voor meer informatie</a>.<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Publiceren/Publiceren ongedaan maken</p> </td>
-   <td><p><br /> Hiermee publiceert u het geselecteerde fragment of maakt u de publicatie ervan ongedaan. <br /> </p> </td>
+   <td><p>Hiermee publiceert u het geselecteerde fragment of maakt u de publicatie ervan ongedaan.<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Verwijderen</p> </td>
-   <td><p><br /> Hiermee verwijdert u het geselecteerde fragment. <br /> </p> </td>
+   <td><p>Hiermee verwijdert u het geselecteerde fragment.<br /> <br /> </p> </td>
   </tr>
  </tbody>
 </table>
@@ -231,7 +231,7 @@ Als u een adaptief formulier met adaptieve formulierfragmenten wilt lokaliseren,
 * U kunt een adaptief formulierfragment, dat via verwijzing wordt ingevoegd, niet bewerken vanuit een adaptief formulier. Als u het fragment wilt bewerken, bewerkt u het zelfstandige, adaptieve formulierfragment of sluit u het fragment in het adaptieve formulier in.
 * Wanneer u een adaptief formulier publiceert, moet u de stand-alone adaptieve formulierfragmenten publiceren die door verwijzing in het adaptieve formulier zijn ingevoegd.
 * Wanneer u een bijgewerkt adaptief formulierfragment opnieuw publiceert, worden de wijzigingen weerspiegeld in de gepubliceerde exemplaren van het adaptieve formulier waarin het fragment wordt gebruikt.
-*  Het adaptieve formulier met de component Verify ondersteunt geen anonieme gebruikers. Het wordt ook niet aanbevolen om de component Verify te gebruiken in een adaptief formulierfragment.
+* Het adaptieve formulier met de component Verify ondersteunt geen anonieme gebruikers. Het wordt ook niet aanbevolen om de component Verify te gebruiken in een adaptief formulierfragment.
 * (Alleen ****Mac) Om ervoor te zorgen dat de functionaliteit van formulierfragmenten perfect werkt in alle scenario&#39;s, voegt u de volgende vermelding toe aan het bestand /private/etc/hosts:
    `127.0.0.1 <Host machine>` **Hostcomputer**: De Apple Mac-computer waarop AEM Forms wordt geïmplementeerd.
 

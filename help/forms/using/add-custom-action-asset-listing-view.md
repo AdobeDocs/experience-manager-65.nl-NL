@@ -10,7 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: 6378ae30-a351-49f7-8e9a-f0bd4287b9d3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -42,7 +42,7 @@ In de onderstaande stappen voegt u de opdracht Vlakke PDF downloaden toe aan de 
 
 Voer de volgende stappen uit als u Correspondentiebeheer wilt aanpassen, zodat uw gebruikers een PDF met standaardletters kunnen downloaden:
 
-1. Ga naar Beheerder `https://[server]:[port]/[ContextPath]/crx/de` en meld u aan.
+1. Ga naar Beheerder `https://'[server]:[port]'/[ContextPath]/crx/de` en meld u aan.
 
 1. Maak in de map apps een map met de naam items met een pad/structuur die lijkt op de map met items in de selectiemap en voer daarbij de volgende stappen uit:
 
@@ -61,11 +61,11 @@ Voer de volgende stappen uit als u Correspondentiebeheer wilt aanpassen, zodat u
 
    1. Zorg ervoor dat het dialoogvenster Overlay-knooppunt de volgende waarden heeft:
 
-      **** Pad: /libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/selection/items
+      **Pad:** /libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/selection/items
 
-      **** Locatie: /apps/
+      **Locatie:** /apps/
 
-      **** Identieke knooppunttypen: Geselecteerd
+      **Identieke knooppunttypen:** Geselecteerd
 
       ![Overlay-knooppunt](assets/2_createnodedownloadflatpdf.png)
 
@@ -79,9 +79,9 @@ Voer de volgende stappen uit als u Correspondentiebeheer wilt aanpassen, zodat u
 
    1. Zorg ervoor dat het dialoogvenster Knooppunt maken de volgende waarden heeft en klik op **OK**:
 
-      **** Naam: downloadFlatPDF (of de naam die u aan deze eigenschap wilt geven)
+      **Naam:** downloadFlatPDF (of de naam die u aan deze eigenschap wilt geven)
 
-      **** Type:nt:ongestructureerd
+      **Type:** nt:ongestructureerd
 
    1. Klik op het nieuwe knooppunt dat u hebt gemaakt (hier downloadFlatPDF). CRX geeft de eigenschappen van het knooppunt weer.
 
@@ -145,11 +145,11 @@ Voer de volgende stappen uit als u Correspondentiebeheer wilt aanpassen, zodat u
 
    1. Zorg ervoor dat het dialoogvenster Overlay-knooppunt de volgende waarden heeft:
 
-      **** Pad: /libs/fd/cm/ma/gui/components/admin/clientlibs/admin/js
+      **Pad:** /libs/fd/cm/ma/gui/components/admin/clientlibs/admin/js
 
-      **** Locatie: /apps/
+      **Locatie:** /apps/
 
-      **** Identieke knooppunttypen: Geselecteerd
+      **Identieke knooppunttypen:** Geselecteerd
 
    1. Click **OK**. De mapstructuur wordt gemaakt in de map apps. Klik op Alles **opslaan**.
 
@@ -235,11 +235,11 @@ Voer de volgende stappen uit als u Correspondentiebeheer wilt aanpassen, zodat u
 
    1. Zorg ervoor dat het dialoogvenster Overlay-knooppunt de volgende waarden heeft:
 
-      **** Pad: /libs/fd/cm/ma/gui/content/commons/actionhandlers/items/
+      **Pad:** /libs/fd/cm/ma/gui/content/commons/actionhandlers/items/
 
-      **** Locatie: /apps/
+      **Locatie:** /apps/
 
-      **** Identieke knooppunttypen: Geselecteerd
+      **Identieke knooppunttypen:** Geselecteerd
 
    1. Click **OK**. De mapstructuur wordt gemaakt in de map apps.
 
@@ -251,9 +251,9 @@ Voer de volgende stappen uit als u Correspondentiebeheer wilt aanpassen, zodat u
 
    1. Zorg ervoor dat het dialoogvenster Knooppunt maken de volgende waarden heeft en klik op **OK**:
 
-      **** Naam: letterpdfdownloader (Of de naam die u aan deze eigenschap wilt geven) moet uniek zijn. Als u hier een andere naam gebruikt, geeft u hetzelfde op in de variabele ACTION_URL van het bestand formaction.js.)
+      **Naam:** letterpdfdownloader (Of de naam die u aan deze eigenschap wilt geven) moet uniek zijn. Als u hier een andere naam gebruikt, geeft u hetzelfde op in de variabele ACTION_URL van het bestand formaction.js.)
 
-      **** Type:nt:ongestructureerd
+      **Type:** nt:ongestructureerd
 
    1. Klik op het nieuwe knooppunt dat u hebt gemaakt (hier downloadFlatPDF). CRX geeft de eigenschappen van het knooppunt weer.
 
@@ -349,7 +349,7 @@ Voer de volgende stappen uit als u Correspondentiebeheer wilt aanpassen, zodat u
 
 Nadat u aangepaste functionaliteit hebt toegevoegd om de platte PDF van uw brieven te downloaden, kunt u de volgende stappen gebruiken om de vlakke versie PDF van de brief te downloaden u uitgezocht:
 
-1. Ga naar `https://[server]:[port]/[ContextPath]/projects.html` en meld u aan.
+1. Ga naar `https://'[server]:[port]'/[ContextPath]/projects.html` en meld u aan.
 
 1. Selecteer **Formulieren > Letters**. Correspondentiebeheer geeft een overzicht van de beschikbare letters in het systeem.
 1. Klik op **Selecteren** en klik vervolgens op een letter om deze te selecteren.

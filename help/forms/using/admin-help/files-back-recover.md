@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 translation-type: tm+mt
-source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -37,9 +37,9 @@ De locatie van de GDS wordt bepaald tijdens het installatieproces van AEM-formul
 
 Als u de locatie-instelling tijdens de installatie leeg laat, wordt de locatie standaard ingesteld op een map onder de installatie van de toepassingsserver. U moet een back-up maken van de volgende map voor uw toepassingsserver:
 
-* (JBoss) `[appserver root]/server/[server]/svcnative/DocumentStorage`
-* (WebLogic) `[appserverdomain]/[server]/adobe/AEMformsserver/DocumentStorage`
-* (WebSphere) `[appserver root]/installedApps/adobe/[server]/DocumentStorage`
+* (JBoss) `[appserver root]/server/'server'/svcnative/DocumentStorage`
+* (WebLogic) `[appserverdomain]/'server'/adobe/AEMformsserver/DocumentStorage`
+* (WebSphere) `[appserver root]/installedApps/adobe/'server'/DocumentStorage`
 
 Als u de GDS-locatie hebt gewijzigd in een andere locatie dan de standaardlocatie, kunt u deze als volgt bepalen:
 
@@ -54,7 +54,7 @@ De locatie van de GDS kan tijdens een herstelbewerking worden gewijzigd als de o
 
 U kunt AEM-formulieren documentopslag inschakelen in de AEM-formulierdatabase met behulp van de beheerconsole. Hoewel met deze optie alle permanente documenten in de database blijven staan, is voor AEM-formulieren de op het bestandssysteem gebaseerde GDS-map nog steeds vereist, omdat deze wordt gebruikt voor het opslaan van permanente en tijdelijke bestanden en bronnen met betrekking tot sessies en aanroepen van AEM-formulieren.
 
-Wanneer u de optie &quot;Documentopslag in de database inschakelen&quot; selecteert in de Core System Settings in de beheerconsole of door Configuratiebeheer te gebruiken, staan AEM-formulieren de back-upmodus voor momentopnamen en de schuifmodus niet toe. Daarom hoeft u geen back-upmodi te beheren met AEM-formulieren. Als u deze optie gebruikt, dient u slechts eenmaal een back-up van de GDS te maken nadat u de optie hebt ingeschakeld. Wanneer u AEM-formulieren herstelt van een back-up, hoeft u de naam van de back-upmap voor de GDS niet te wijzigen of GDS te herstellen.
+Wanneer u de optie &quot;Documentopslag in de database inschakelen&quot; selecteert in de Core System Settings in de beheerconsole of door Configuratiebeheer te gebruiken, staan AEM-formulieren de back-upmodus voor momentopnamen en de schuifmodus niet toe. Daarom hoeft u geen back-upmodi te beheren met AEM-formulieren. Als u deze optie gebruikt, dient u slechts eenmaal een back-up van de GDS te maken nadat u de optie hebt ingeschakeld. Wanneer u AEM-formulieren herstelt van een back-up, hoeft u de naam van de back-upmap voor de GDS niet te wijzigen of de GDS te herstellen.
 
 ## AEM-opslagplaats {#aem-repository}
 
@@ -113,11 +113,11 @@ Voor meer informatie over DB2 gegevensbestandsteun en terugwinning, zie het [Ont
 
 Gebruik back-ups van momentopnamen of configureer de Oracle-database in de archieflogmodus. (Zie [Oracle Backup: Een inleiding](https://www.databasedesign-resource.com/oracle-backup.md).) Ga voor meer informatie over het maken van back-ups en het herstellen van uw Oracle-database naar de volgende sites:
 
-[](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html) Oracle Backup and Recovery: Verklaart de concepten steun en terugwinning en de gemeenschappelijkste technieken voor het gebruiken van de Manager van de Terugwinning (RMAN) voor steun, terugwinning, en het melden in detail, evenals het verstrekken van meer informatie over hoe te om een steun en terugwinningsstrategie te plannen.
+[Oracle Backup and Recovery:](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html) Verklaart de concepten steun en terugwinning en de gemeenschappelijkste technieken voor het gebruiken van de Manager van de Terugwinning (RMAN) voor steun, terugwinning, en het melden in detail, evenals het verstrekken van meer informatie over hoe te om een steun en terugwinningsstrategie te plannen.
 
-[](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10642.pdf) Oracle Database Backup and Recovery User&#39;s Guide: Verstrekt diepgaande informatie over architectuur RMAN, steun en terugwinningsconcepten en mechanismen, geavanceerde terugwinningstechnieken zoals punt-in-tijd terugwinning en gegevensbestand flashback eigenschappen, en steun en terugwinningsprestaties het stemmen. Het omvat ook door de gebruiker beheerde back-up en herstel, waarbij gebruik wordt gemaakt van hostbesturingssysteemfaciliteiten in plaats van RMAN. Dit volume is essentieel voor back-up en herstel van geavanceerdere databaseimplementaties en voor geavanceerde herstelscenario&#39;s.
+[Oracle Database Backup and Recovery User&#39;s Guide:](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10642.pdf) Verstrekt diepgaande informatie over architectuur RMAN, steun en terugwinningsconcepten en mechanismen, geavanceerde terugwinningstechnieken zoals punt-in-tijd terugwinning en gegevensbestand flashback eigenschappen, en steun en terugwinningsprestaties het stemmen. Het omvat ook door de gebruiker beheerde back-up en herstel, waarbij gebruik wordt gemaakt van hostbesturingssysteemfaciliteiten in plaats van RMAN. Dit volume is essentieel voor back-up en herstel van geavanceerdere databaseimplementaties en voor geavanceerde herstelscenario&#39;s.
 
-[](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10643.pdf) Oracle Database Backup and Recovery Reference: Verstrekt volledige informatie over syntaxis en semantiek voor alle bevelen RMAN, en beschrijft de gegevensbestandmeningen die voor het melden van steun en terugwinningsactiviteiten beschikbaar zijn.
+[Oracle Database Backup and Recovery Reference:](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10643.pdf) Verstrekt volledige informatie over syntaxis en semantiek voor alle bevelen RMAN, en beschrijft de gegevensbestandmeningen die voor het melden van steun en terugwinningsactiviteiten beschikbaar zijn.
 
 ### SQL Server {#sql-server}
 
@@ -134,10 +134,10 @@ Zie [Back-](https://articles.techrepublic.com.com/5100-1035_61-1043671.md)upstra
 
 Gebruik MySQLAdmin of wijzig de INI dossiers in Vensters om uw gegevensbestand te vormen MySQL om op binaire logboekwijze te lopen. (Zie [MySQL binaire logboekregistratie](https://dev.mysql.com/doc/refman/5.1/en/binary-log.html).) Een hot backup-hulpprogramma voor MySQL is ook beschikbaar in de InnoBase-software. (Zie [Innobase Hot Backup](https://www.innodb.com/hot-backup/features.md).)
 
-**Opmerking**: *De standaard binaire registrerenwijze voor MySQL is &quot;Verklaring&quot;, die met lijsten onverenigbaar is die door de Diensten van de Inhoud (Vervangen) worden gebruikt. Het gebruiken van binair het registreren op deze standaardwijze veroorzaakt de Diensten van de Inhoud (Vervangen) om te ontbreken. Als uw systeem Inhoudsdiensten (Afgekeurd) omvat, gebruik &quot;Gemengd&quot;registrerenwijze.*Om het &quot;Gemengd&quot;registreren toe te laten, voeg het volgende argument aan het my.ini- dossier toe:
+**Opmerking**: *De standaard binaire registrerenwijze voor MySQL is &quot;Verklaring&quot;, die met lijsten onverenigbaar is die door de Diensten van de Inhoud (Vervangen) worden gebruikt. Het gebruiken van binair het registreren op deze standaardwijze veroorzaakt de Diensten van de Inhoud (Vervangen) om te ontbreken. Als uw systeem Inhoudsdiensten (Afgekeurd) omvat, gebruik &quot;Gemengd&quot;registrerenwijze. Om het &quot;Gemengd&quot;registreren toe te laten, voeg het volgende argument aan het my.ini- dossier toe:*
 `binlog_format=mixed log-bin=logname`
 
-U kunt het mysqldump-hulpprogramma gebruiken om de volledige databaseback-up te verkrijgen. Volledige back-ups zijn vereist, maar ze zijn niet altijd handig. Ze produceren grote back-upbestanden en het genereren van tijd neemt veel tijd in beslag. Als u een incrementele back-up wilt maken, moet u de server starten met de optie - `log-bin` zoals beschreven in de vorige sectie. Telkens als de server MySQL opnieuw begint, houdt het het schrijven aan het huidige binaire logboek op, leidt tot nieuwe en, vanaf dan, wordt nieuwe. U kunt een schakelaar manueel met het `FLUSH LOGS SQL` bevel dwingen. Na de eerste volledige back-up worden de volgende incrementele back-ups uitgevoerd met behulp van het mysqladmin-hulpprogramma met de `flush-logs` opdracht, waarmee het volgende logbestand wordt gemaakt.
+U kunt het mysqldump-hulpprogramma gebruiken om de volledige databaseback-up te verkrijgen. Volledige back-ups zijn vereist, maar ze zijn niet altijd handig. Ze produceren grote back-upbestanden en het genereren van tijd neemt veel tijd in beslag. Als u een incrementele back-up wilt maken, moet u de server starten met de optie - `log-bin` zoals beschreven in de vorige sectie. Telkens als de server MySQL opnieuw begint, houdt het het schrijven aan het huidige binaire logboek op, leidt tot nieuwe en, van toen, wordt nieuwe. U kunt een schakelaar manueel met het `FLUSH LOGS SQL` bevel dwingen. Na de eerste volledige back-up worden de volgende incrementele back-ups uitgevoerd met behulp van het mysqladmin-hulpprogramma met de `flush-logs` opdracht, waarmee het volgende logbestand wordt gemaakt.
 
 Zie Overzicht [van](https://dev.mysql.com/doc/refman/5.5/en/backup-strategy-summary.html)back-upstrategie.
 
@@ -172,9 +172,9 @@ Als de /backup-lucene-indexes folder niet aanwezig is, file de /lucene-indexes f
 
 Wanneer u Content Services (Afgekeurd) installeert in een geclusterde omgeving, wordt de hoofdmap van de inhoudsopslagruimte gesplitst in twee aparte mappen:
 
-**** Basismap voor inhoudsopslag: Gewoonlijk een gedeelde netwerkmap die lees-/schrijftoegankelijk is voor alle knooppunten in de cluster
+**Basismap voor inhoudsopslag:** Gewoonlijk een gedeelde netwerkmap die lees-/schrijftoegankelijk is voor alle knooppunten in de cluster
 
-**** Basismap index: Een map die op elk knooppunt in de cluster is gemaakt en die altijd hetzelfde pad en dezelfde mapnaam heeft
+**Basismap index:** Een map die op elk knooppunt in de cluster is gemaakt en die altijd hetzelfde pad en dezelfde mapnaam heeft
 
 De standaardlocatie voor de hoofdmap van de inhoudsopslagruimte is `[GDS root]/lccs_data`, waar `[GDS root]` is de locatie die wordt beschreven in de [GDS-locatie](files-back-recover.md#gds-location). Maak een back-up van de volgende mappen in de hoofdmap van de inhoudsopslagruimte:
 

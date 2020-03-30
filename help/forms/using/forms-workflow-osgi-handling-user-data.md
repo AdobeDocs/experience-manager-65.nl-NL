@@ -8,7 +8,7 @@ topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
 translation-type: tm+mt
-source-git-commit: 06335b9a85414b6b1141dd19c863dfaad0812503
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -80,7 +80,7 @@ U kunt de resultaten echter niet identificeren of dubbelzinnig weergeven wanneer
 
 Voer de volgende stappen uit om gebruikersgegevens te identificeren en te benaderen die voor een workflowinstantie zijn opgeslagen:
 
-1. Ga in de AEM-auteurinstantie naar `https://[server]:[port]/crx/de` en navigeer naar **[!UICONTROL Gereedschappen > Query]**.
+1. Ga in de AEM-auteurinstantie naar `https://'[server]:[port]'/crx/de` en navigeer naar **[!UICONTROL Gereedschappen > Query]**.
 
    Selecteer **[!UICONTROL SQL2]** in de keuzelijst **[!UICONTROL Type]** .
 
@@ -133,7 +133,7 @@ U moet een AEM-beheerder zijn om gebruikersgegevens uit workflowinstanties te ve
 
 1. Voer deze stap uit voor workflowinstanties in de status **RUNNING**, **SUSPENDED** of **STALE** :
 
-   1. Ga naar `https://[server]:[port]/aem/start.html` en login met beheerdergeloofsbrieven.
+   1. Ga naar `https://'[server]:[port]'/aem/start.html` en login met beheerdergeloofsbrieven.
    1. Navigeer naar **[!UICONTROL Gereedschappen > Workflow > Instanties]**.
    1. Selecteer relevante workflowinstanties voor de gebruiker en tik op **[!UICONTROL Beëindigen]** om actieve exemplaren te beëindigen.
    Zie Workflowinstanties [beheren voor meer informatie over het werken met workflowinstanties](/help/sites-administering/workflows-administering.md).

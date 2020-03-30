@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 5dae9ed9-77a3-44f5-a94d-ca5c355c8730
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -25,12 +25,12 @@ Nadat u de patch hebt geïnstalleerd, opent u de werkruimte van AEM Forms. Als u
 
 Voer tijdens het installeren van het pakket de volgende stappen uit als er een fout optreedt `javax.jcr.nodetype.ConstraintViolationException: OakConstraint0025: Authorizable property rep:authorizableId may not be removed`:
 
-1. Meld u aan bij CRX DE List. De standaard-URL is `https://[localhost]:[port]/lc/crx/de/index.jsp`
+1. Meld u aan bij CRX DE List. De standaard-URL is `https://[localhost]:'port'/lc/crx/de/index.jsp`
 1. Verwijder het volgende knooppunt:
 
    `/home/groups/P/PERM_WORKSPACE_USER`
 
-1. Ga naar Pakketbeheer. De standaard-URL is `https://[localhost]:[port]/lc/crx/packmgr/index.jsp.`
+1. Ga naar Pakketbeheer. De standaard-URL is `https://[localhost]:'port'/lc/crx/packmgr/index.jsp.`
 1. Zoek en installeer het `adobe-lc-workspace-pkg-[version].zip` pakket.
 1. Start de toepassingsserver opnieuw.
 

@@ -8,7 +8,7 @@ topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a88fc933-f1af-4798-b72f-10e7b0d2fd11
 translation-type: tm+mt
-source-git-commit: 3226edb575de3d9f8bff53f5ca81e2957f37c544
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -27,7 +27,7 @@ Gebruikersbeheer is een JEE-component van AEM Forms waarmee gebruikers van AEM F
 
 ## Gebruikersgegevens en gegevensopslag {#user-data-and-data-stores}
 
-Gebruikersbeheer slaat gebruikersgegevens op in een database, zoals Mijn SQL, Oracle, MS SQL Server en IBM DB2. Bovendien wordt de gebruiker die zich minstens één keer heeft aangemeld bij Forms-toepassingen op AEM-auteur op `https://[server]:[host]/lc`dat moment gemaakt in de AEM-opslagruimte. Daarom wordt het gebruikersbeheer opgeslagen in de volgende gegevensopslag:
+Gebruikersbeheer slaat gebruikersgegevens op in een database, zoals Mijn SQL, Oracle, MS SQL Server en IBM DB2. Bovendien wordt de gebruiker die zich minstens één keer heeft aangemeld bij Forms-toepassingen op AEM-auteur op `https://'[server]:[port]'lc`dat moment gemaakt in de AEM-opslagruimte. Daarom wordt het gebruikersbeheer opgeslagen in de volgende gegevensopslag:
 
 * Database
 * AEM-opslagplaats
@@ -86,7 +86,7 @@ Gebruikersbeheer slaat gebruikersgegevens op in de volgende databasetabellen:
 
 ### AEM-opslagplaats {#aem-repository}
 
-Gebruikersbeheergegevens voor gebruikers die minstens één keer toegang hebben gekregen tot de Forms-toepassingen onder `https://[server]:[host]/lc` worden ook opgeslagen in de AEM-opslagruimte.
+Gebruikersbeheergegevens voor gebruikers die minstens één keer toegang hebben gekregen tot de Forms-toepassingen onder `https://'[server]:[port]'lc` worden ook opgeslagen in de AEM-opslagruimte.
 
 ## Gebruikersgegevens openen en verwijderen {#access-and-delete-user-data}
 
@@ -178,14 +178,14 @@ Gebruikers van Forms JEE hebben hun gegevens in een AEM-opslagplaats als zij de 
 
 #### Gebruikersgegevens openen {#access-user-data}
 
-Meld u aan bij de AEM-beheerdersreferenties om de in de AEM-opslagplaats gemaakte gebruiker weer te geven. `https://[server]:[port]/lc/useradmin` Merk op dat `server` en `port` in URL die van de auteur AEM zijn. Hier kunt u naar gebruikers zoeken met hun gebruikersnaam. Dubbelklik op een gebruiker om informatie weer te geven, zoals eigenschappen, machtigingen en groepen voor de gebruiker. De `Path` eigenschap voor een gebruiker geeft het pad aan naar het gebruikersknooppunt dat in de AEM-opslagruimte is gemaakt.
+Meld u aan bij de AEM-beheerdersreferenties om de in de AEM-opslagplaats gemaakte gebruiker weer te geven. `https://'[server]:[port]'/lc/useradmin` Merk op dat `server` en `port` in URL die van de auteur AEM zijn. Hier kunt u naar gebruikers zoeken met hun gebruikersnaam. Dubbelklik op een gebruiker om informatie weer te geven, zoals eigenschappen, machtigingen en groepen voor de gebruiker. De `Path` eigenschap voor een gebruiker geeft het pad aan naar het gebruikersknooppunt dat in de AEM-opslagruimte is gemaakt.
 
 #### Gebruikersgegevens verwijderen {#delete-aem}
 
 Een gebruiker verwijderen:
 
-1. Ga naar `https://[server]:[port]/lc/useradmin` met AEM-beheerdersreferenties.
+1. Ga naar `https://'[server]:[port]'/lc/useradmin` met AEM-beheerdersreferenties.
 1. Zoek naar een gebruiker en klik de gebruikersbenaming tweemaal om gebruikerseigenschappen te openen. Kopieer de `Path` eigenschap.
-1. Ga naar AEM CRX DELite op `https://[server]:[port]/lc/crx/de/index.jsp` en navigeer of zoek het gebruikerspad.
+1. Ga naar AEM CRX DELite op `https://'[server]:[port]'/lc/crx/de/index.jsp` en navigeer of zoek het gebruikerspad.
 1. Verwijder het pad en klik op Alles **** opslaan om de gebruiker definitief uit de AEM-opslagplaats te verwijderen.
 

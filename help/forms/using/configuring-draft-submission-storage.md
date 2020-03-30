@@ -9,7 +9,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6ebb6420-68b6-4abc-b298-c252db038416
 translation-type: tm+mt
-source-git-commit: f9ed171c188a4dfb71f12ae9c98105a4c1895542
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -38,7 +38,7 @@ Naast de hierboven vermelde standaardaanpak is er ook een alternatieve implement
 
 ## Concepten en verzendservices van Forms Portal configureren {#configuring-forms-portal-drafts-and-submissions-services}
 
-Klik in de configuratie van de AEM-webconsole ( `https://[host]:[port]/system/console/configMgr`) om de modus **Formulierportaal conceptversie en verzendconfiguratie** te openen.
+Klik in de configuratie van de AEM-webconsole ( `https://[host]:'port'/system/console/configMgr`) om de modus **Formulierportaal conceptversie en verzendconfiguratie** te openen.
 
 Geef de waarden voor eigenschappen op op basis van uw vereisten, zoals hieronder wordt beschreven:
 
@@ -102,7 +102,7 @@ Gegevens worden rechtstreeks naar de geconfigureerde externe instantie geduwd
 
 Naast de hierboven gespecificeerde configuratie, verstrek informatie over de gevormde verre verwerkingsinstantie.
 
-Klik in de configuratie van de AEM-webconsole ( `https://[host]:[port]/system/console/configMgr`) om de **AEM DS Settings Service** in de bewerkingsmodus te openen. Geef in het dialoogvenster AEM DS Settings Service informatie op over de URL van de verwerkingsserver, de gebruikersnaam van de verwerkingsserver en het wachtwoord.
+Klik in de configuratie van de AEM-webconsole ( `https://[host]:'port'/system/console/configMgr`) om de **AEM DS Settings Service** in de bewerkingsmodus te openen. Geef in het dialoogvenster AEM DS Settings Service informatie op over de URL van de verwerkingsserver, de gebruikersnaam van de verwerkingsserver en het wachtwoord.
 
 >[!NOTE]
 >

@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: Configuration
 discoiquuid: 6b31397a-fb06-4043-9368-59fb4fce8afa
 translation-type: tm+mt
-source-git-commit: 5120bbdefea528ad6d07a9c99df565555b6a8444
+source-git-commit: f323b490c37effc3cbb36c793b62fa788eca9545
 
 ---
 
@@ -38,7 +38,7 @@ Alvorens u begint opstelling en Dynamica 365 te vormen, zorg ervoor dat u hebt:
 
 1. Ga in de auteurinstantie naar de volgende pagina:
 
-   https://[server]:[poort]/editor.html/content/we-finance/global/en/loan-landing-page.html
+   `https://[server]:[port]/editor.html/content/we-finance/global/en/loan-landing-page.html`
 
 1. Schuif omlaag naar de rekenmachine voor de beginmeter.
 1. Markeer het deelvenster van de rechterkolom (rekenmachine) en tik om het pop-upmenu weer te geven. Tik in het pop-upmenu op Configureren. Het dialoogvenster Container voor AEM-formulieren bewerken wordt geopend.
@@ -62,7 +62,7 @@ Alvorens u begint opstelling en Dynamica 365 te vormen, zorg ervoor dat u hebt:
 
    1. Download het pakket van:
 
-      `https://[server]:[port]/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/AEMFormsFSIRefsite_1_0.zip`
+      `https://'[server]:[port]'/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/AEMFormsFSIRefsite_1_0.zip`
 
    1. Importeer het oplossingspakket naar de Microsoft® Dynamics-instantie. Ga in de instantie Microsoft® Dynamics naar **Instellingen** > **Oplossingen** en tik op **Importeren**.
 
@@ -70,7 +70,7 @@ Alvorens u begint opstelling en Dynamica 365 te vormen, zorg ervoor dat u hebt:
 
    1. Download het pakket van:
 
-      `https://[server]:[port]/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/Sarah%20Rose%20Contact.csv`
+      `https://'[server]:[port]'/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/Sarah%20Rose%20Contact.csv`
 
    1. Importeer het pakket naar de instantie Microsoft® Dynamics. Ga in uw Microsoft® Dynamics-instantie naar **Verkoop** > **Contacten** en tik vervolgens op **Gegevens** importeren.
 

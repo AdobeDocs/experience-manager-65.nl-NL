@@ -11,7 +11,7 @@ topic-tags: platform
 discoiquuid: 16c7a97d-884a-447e-9aad-18a2db1bda1d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 490f64a49345e1980e35efebf9449fe1a639dc3d
+source-git-commit: f323b490c37effc3cbb36c793b62fa788eca9545
 
 ---
 
@@ -65,7 +65,7 @@ Adobe raadt deze configuraties aan en biedt volledige ondersteuning als onderdee
    <td>Beschrijving<br /> </td>
   </tr>
   <tr>
-   <td><strong>A:Ondersteund</strong></td>
+   <td><strong>A: Ondersteund</strong></td>
    <td>Adobe biedt volledige ondersteuning en onderhoud voor deze configuratie. Deze configuratie wordt gedekt door het kwaliteitsborgingsproces van Adobe.</td>
   </tr>
   <tr>
@@ -100,32 +100,32 @@ Adobe Experience Manager werkt met de volgende versies van de Java Virtual Machi
    <td>Ondersteuningsniveau<br /> </td>
   </tr>
   <tr>
-   <td>Oracle Java SE 12 JDK [1]</td>
+   <td>Oracle Java SE 12 JDK `\[1]`</td>
    <td>Z: Niet ondersteund </td>
   </tr>
   <tr>
    <td><strong>Oracle Java SE 11 JDK - 64-bits</strong></td>
-   <td>A:Ondersteund</td>
+   <td>A: Ondersteund</td>
   </tr>
   <tr>
-   <td>Oracle Java SE 10 JDK [1]</td>
+   <td>Oracle Java SE 10 JDK `\[1]`</td>
    <td>Z: Niet ondersteund </td>
   </tr>
   <tr>
-   <td>Oracle Java SE 9 JDK [1]</td>
+   <td>Oracle Java SE 9 JDK `\[1]`</td>
    <td>Z: Niet ondersteund</td>
   </tr>
   <tr>
    <td>Oracle Java SE 8 JDK - 64 bits</td>
-   <td>A: Ondersteund [3]<br /> </td>
+   <td>A: Ondersteund `\[3]`<br /> </td>
   </tr>
   <tr>
-   <td>IBM J9 VM - build 2.9, JRE 1.8.0 [2]</td>
-   <td>A:Ondersteund</td>
+   <td>IBM J9 VM - build 2.9, JRE 1.8.0 `\[2]`</td>
+   <td>A: Ondersteund</td>
   </tr>
   <tr>
-   <td>IBM J9 VM - build 2.8, JRE 1.8.0 [2]</td>
-   <td>A:Ondersteund</td>
+   <td>IBM J9 VM - build 2.8, JRE 1.8.0 `\[2]`</td>
+   <td>A: Ondersteund</td>
   </tr>
  </tbody>
 </table>
@@ -141,19 +141,19 @@ Er zijn verschillende opties om de opslagplaats van Adobe Experience Manager te 
 
 | **Platform** | **Beschrijving** | **Ondersteuningsniveau** |
 |---|---|---|
-| **Bestandssysteem met TAR-bestanden[1 ]** |  Bewaarplaats | A:Ondersteund |
-| **Bestandssysteem met Datastore[1 ]** | Binden | A:Ondersteund |
-| Binaire bestanden opslaan in TAR-bestanden op bestandssysteem [1] | Binden | Z: Niet ondersteund voor productie |
-| Amazon S3 | Binden | A:Ondersteund |
-| Microsoft Azure Blob-opslag | Binden | A:Ondersteund |
-| MongoDB Enterprise 4.0 |  Bewaarplaats | A: Ondersteund [2, 3] |
-| MongoDB Enterprise 3.6 |  Bewaarplaats | Z: Niet ondersteund |
-| MongoDB Enterprise 3.4 |  Bewaarplaats | Z: Niet ondersteund |
-| IBM DB2 10.5 | Database voor opslagplaats en formulieren | R: Beperkte ondersteuning [4] |
+| **Bestandssysteem met TAR-bestanden`\[1]`** | Bewaarplaats | A: Ondersteund |
+| **Bestandssysteem met Datastore`\[1]`** | Binden | A: Ondersteund |
+| Binaire bestanden opslaan in TAR-bestanden op bestandssysteem `\[1]` | Binden | Z: Niet ondersteund voor productie |
+| Amazon S3 | Binden | A: Ondersteund |
+| Microsoft Azure Blob-opslag | Binden | A: Ondersteund |
+| MongoDB Enterprise 4.0 | Bewaarplaats | A: Ondersteund [2, 3] |
+| MongoDB Enterprise 3.6 | Bewaarplaats | Z: Niet ondersteund |
+| MongoDB Enterprise 3.4 | Bewaarplaats | Z: Niet ondersteund |
+| IBM DB2 10.5 | Database voor opslagplaats en formulieren | R: Beperkte ondersteuning `\[4]` |
 | Oracle Database 12c (12.1.x) | Database voor opslagplaats en formulieren | R: Beperkte ondersteuning |
-| Microsoft SQL Server 2016 | Forms-database | A:Ondersteund |
-| **Apache Lucene (QuickStart ingebouwd)** | Zoekservice | A:Ondersteund |
-| Apache Solr | Zoekservice | A:Ondersteund |
+| Microsoft SQL Server 2016 | Forms-database | A: Ondersteund |
+| **Apache Lucene (QuickStart ingebouwd)** | Zoekservice | A: Ondersteund |
+| Apache Solr | Zoekservice | A: Ondersteund |
 
 1. &#39;Bestandssysteem&#39; omvat blokopslag die voldoet aan POSIX. Dit omvat netwerkopslagtechnologie. Houd er rekening mee dat de prestaties van het bestandssysteem kunnen variëren en van invloed zijn op de algehele prestaties. Het wordt aanbevolen AEM-test te laden in combinatie met het netwerk/externe bestandssysteem.
 1. Delen via MongoDB wordt niet ondersteund in AEM.
@@ -194,13 +194,13 @@ De minimaal vereiste versie van de servlet-API is Servlet 3.1
 
 | Platform | Ondersteuningsniveau |
 |---|---|
-| **QuickStart ingebouwde Servlet Engine (Jetty 9.4)** | A:Ondersteund |
+| **QuickStart ingebouwde Servlet Engine (Jetty 9.4)** | A: Ondersteund |
 | Oracle WebLogic Server 12.2 (12cR2) | Z: Niet ondersteund |
-| IBM WebSphere Application Server Continuous Delivery (LibertyProfile) met webprofiel 7.0 en IBM JRE 1.8 | R: Beperkte steun voor nieuwe contracten [2] |
-| IBM WebSphere Application Server 9.0 en IBM JRE 1.8 | R: Beperkte steun voor nieuwe contracten [1] [2] |
-| Apache Tomcat 8.5.x | R: Beperkte steun voor nieuwe contracten [2] |
+| IBM WebSphere Application Server Continuous Delivery (LibertyProfile) met webprofiel 7.0 en IBM JRE 1.8 | R: Beperkte steun voor nieuwe contracten `\[2]` |
+| IBM WebSphere Application Server 9.0 en IBM JRE 1.8 | R: Beperkte steun voor nieuwe contracten `\[1]``\[2]` |
+| Apache Tomcat 8.5.x | R: Beperkte steun voor nieuwe contracten `\[2]` |
 | JBoss EAP 7.2.x met JBoss Application Server | Z: Niet ondersteund |
-| JBoss EAP 7.1.4 met JBoss Application Server | R: Beperkte steun voor nieuwe contracten [1] [2] |
+| JBoss EAP 7.1.4 met JBoss Application Server | R: Beperkte steun voor nieuwe contracten `\[1]``\[2]` |
 | JBoss EAP 7.0.x met JBoss Application Server | Z: Niet ondersteund |
 
 1. Aanbevolen voor implementaties met AEM Forms.
@@ -212,11 +212,11 @@ Adobe Experience Manager werkt voor productieomgevingen met de volgende serverpl
 
 | **Platform** | **Ondersteuningsniveau** |
 |---|---|
-| **Linux, gebaseerd op Red Hat-distributie** | A: Ondersteund [1] [3] |
-| Linux, gebaseerd op Debian distribution incl. Ubuntu | A: Ondersteund [2] |
-| Linux, gebaseerd op SUSE-distributie | A:Ondersteund |
-| Microsoft Windows Server 2019 [4] | R: Beperkte steun voor nieuwe contracten |
-| Microsoft Windows Server 2016 [4] | R: Beperkte steun voor nieuwe contracten [5] |
+| **Linux, gebaseerd op Red Hat-distributie** | A: Ondersteund `\[1]``\[3]` |
+| Linux, gebaseerd op Debian distribution incl. Ubuntu | A: Ondersteund `\[2]` |
+| Linux, gebaseerd op SUSE-distributie | A: Ondersteund |
+| Microsoft Windows Server 2019 `\[4]` | R: Beperkte steun voor nieuwe contracten |
+| Microsoft Windows Server 2016 `\[4]` | R: Beperkte steun voor nieuwe contracten `\[5]` |
 | Microsoft Windows Server 2012 R2 | Z: Niet ondersteund |
 | Oracle Solaris 11 | Z: Niet ondersteund |
 | IBM AIX 7.2 | Z: Niet ondersteund |
@@ -245,8 +245,8 @@ De volgende webservers worden ondersteund voor gebruik met Dispatcher versie 4.3
 
 | Platform | Ondersteuningsniveau |
 |---|---|
-| **Apache httpd 2.4.x** [1,2] | A:Ondersteund |
-| Microsoft IIS 10 (Internet Information Server) | A:Ondersteund |
+| **Apache httpd 2.4.x** [1,2] | A: Ondersteund |
+| Microsoft IIS 10 (Internet Information Server) | A: Ondersteund |
 | Microsoft IIS 8.5 (Internet Information Server) | Z: Niet ondersteund |
 
 1. Webservers die op basis van Apache httpd-broncode zijn gemaakt, krijgen hetzelfde ondersteuningsniveau als de versie van httpd waarop deze is gebaseerd. Vraag in geval van twijfel Adobe om bevestiging van het supportniveau voor het desbetreffende serverproduct. In de volgende gevallen:
@@ -279,13 +279,13 @@ De AEM-gebruikersinterface is geoptimaliseerd voor grotere schermen (doorgaans l
   </tr>
   <tr>
    <td><strong>Google Chrome (Evergreen)</strong></td>
-   <td>A:Ondersteund</td>
-   <td>A:Ondersteund</td>
+   <td>A: Ondersteund</td>
+   <td>A: Ondersteund</td>
   </tr>
   <tr>
    <td>Microsoft Edge (Evergreen)</td>
-   <td>A:Ondersteund</td>
-   <td>A:Ondersteund</td>
+   <td>A: Ondersteund</td>
+   <td>A: Ondersteund</td>
   </tr>
   <tr>
    <td>Microsoft Internet Explorer 11</td>
@@ -294,18 +294,18 @@ De AEM-gebruikersinterface is geoptimaliseerd voor grotere schermen (doorgaans l
   </tr>
   <tr>
    <td>Mozilla Firefox (Evergreen)</td>
-   <td>A:Ondersteund</td>
-   <td>A:Ondersteund</td>
+   <td>A: Ondersteund</td>
+   <td>A: Ondersteund</td>
   </tr>
   <tr>
-   <td>Mozilla Firefox laatste ESR [1]</td>
-   <td>A:Ondersteund</td>
-   <td>A:Ondersteund</td>
+   <td>Mozilla Firefox last ESR '\[1]'</td>
+   <td>A: Ondersteund</td>
+   <td>A: Ondersteund</td>
   </tr>
   <tr>
    <td>Apple Safari op macOS (Evergreen)</td>
-   <td>A:Ondersteund</td>
-   <td>A:Ondersteund</td>
+   <td>A: Ondersteund</td>
+   <td>A: Ondersteund</td>
   </tr>
   <tr>
    <td>Apple Safari 11.x op macOS</td>
@@ -314,7 +314,7 @@ De AEM-gebruikersinterface is geoptimaliseerd voor grotere schermen (doorgaans l
   </tr>
   <tr>
    <td>Apple Safari op iOS 12.x</td>
-   <td>A: Ondersteund [2]</td>
+   <td>A: Ondersteund `\[2]`</td>
    <td>Z: Niet ondersteund</td>
   </tr>
   <tr>
@@ -400,13 +400,13 @@ Als u Dynamic Media gebruikt op Linux, moet aan de volgende voorwaarden worden v
 
 >[!NOTE]
 >
->**** SELinux uitschakelen: De service Image Serving werkt niet wanneer SELinux is ingeschakeld. Deze optie is standaard ingeschakeld. U verhelpt dit probleem door het bestand **/etc/selinux/config** te bewerken en de SELinux-waarde te wijzigen van:
+>**SELinux uitschakelen:** De service Image Serving werkt niet wanneer SELinux is ingeschakeld. Deze optie is standaard ingeschakeld. U verhelpt dit probleem door het bestand **/etc/selinux/config** te bewerken en de SELinux-waarde te wijzigen van:
 >
 >`SELINUX=enforcing` **naar**`SELINUX=disabled`
 
 >[!NOTE]
 >
->**** NUMA-architectuur: Systemen met processors met AMD64 en Intel EM64T worden doorgaans geconfigureerd als niet-uniforme geheugenarchitectuurplatforms (NUMA), wat betekent dat de kernel bij opstarttijd meerdere geheugenknooppunten samenstelt in plaats van één geheugenknooppunt te maken.
+>**NUMA-architectuur:** Systemen met processors met AMD64 en Intel EM64T worden doorgaans geconfigureerd als niet-uniforme geheugenarchitectuurplatforms (NUMA), wat betekent dat de kernel bij opstarttijd meerdere geheugenknooppunten samenstelt in plaats van één geheugenknooppunt te maken.
 >
 >De meervoudige knoopaannemer kan in geheugenuitputting op één of meerdere knopen resulteren alvorens andere knopen worden uitgeput. Wanneer de geheugenuitputting gebeurt kan de pit besluiten om processen (bijvoorbeeld, de Server van het Beeld of de Server van het Platform) te doden alhoewel er beschikbaar geheugen is.
 >
@@ -414,7 +414,7 @@ Als u Dynamic Media gebruikt op Linux, moet aan de volgende voorwaarden worden v
 
 >[!NOTE]
 >
->**** Serverhostnaam moet worden opgelost: Zorg ervoor dat de hostnaam van de server kan worden omgezet naar een IP-adres. Als dat niet mogelijk is, voeg volledig - gekwalificeerde gastheernaam en het IP adres aan **/etc/gastheren** toe:
+>**Serverhostnaam moet worden opgelost:** Zorg ervoor dat de hostnaam van de server kan worden omgezet naar een IP-adres. Als dat niet mogelijk is, voeg volledig - gekwalificeerde gastheernaam en het IP adres aan **/etc/gastheren** toe:
 >
 >`<ip address> <fully qualified hostname>`
 

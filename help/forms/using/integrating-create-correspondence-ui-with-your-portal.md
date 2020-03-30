@@ -10,7 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: 0d3bb98e-7139-4d8e-b110-6ebd11debda1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 76908a565bf9e6916db39d7db23c04d2d40b3247
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -30,7 +30,7 @@ U kunt de toepassing Correspondentie maken aanroepen vanuit een aangepast portaa
 * de URL naar de XML-gegevens die van de gewenste gegevensbron worden opgehaald (met de parameter cmDataUrl).
 
 Het aangepaste portaal bereidt bijvoorbeeld de URL voor als\
-`https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html?random=[timestamp]&cmLetterId=[letter identifier]&cmDataUrl=[data URL]`, wat de href zou kunnen zijn van een link op het portaal.
+`https://'[server]:[port]'/[contextPath]/aem/forms/createcorrespondence.html?random=[timestamp]&cmLetterId=[letter identifier]&cmDataUrl=[data URL]`, wat de href zou kunnen zijn van een link op het portaal.
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ Het aangepaste portaal bereidt bijvoorbeeld de URL voor als\
 
 ## Inline op gegevens gebaseerde aanroeping {#inline-data-based-invocation}
 
-Een andere (en veiligere) manier om de toepassing Create Correspondence aan te roepen zou kunnen zijn om de URL eenvoudig te raken op https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html, terwijl het verzenden van de parameters en de gegevens om de Create toepassing van de Correspondentie als POST- verzoek (het verbergen van hen voor de eindgebruiker) te roepen. Dit betekent ook dat u nu de XML-gegevens voor de toepassing Correspondentie maken inline kunt doorgeven (als onderdeel van hetzelfde verzoek, met de parameter cmData), wat niet mogelijk/ideaal was in de vorige aanpak.
+Een andere (en veiligere) manier om de toepassing Create Correspondence aan te roepen zou kunnen zijn om de URL eenvoudig te raken op https://&#39;[server]:[port]&#39;/[contextPath]/aem/forms/createcorrespondence.html, terwijl het verzenden van de parameters en de gegevens om de Create toepassing van de Correspondentie als POST- verzoek (het verbergen van hen voor de eindgebruiker) te roepen. Dit betekent ook dat u nu de XML-gegevens voor de toepassing Correspondentie maken inline kunt doorgeven (als onderdeel van hetzelfde verzoek, met de parameter cmData), wat niet mogelijk/ideaal was in de vorige aanpak.
 
 ### Parameters voor het opgeven van de letter {#parameters-for-specifying-letter}
 

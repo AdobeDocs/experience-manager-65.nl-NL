@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/get_started_with_administering_aem_forms_on_je
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: bd648c38-731b-420e-973d-a4728b69868e
 translation-type: tm+mt
-source-git-commit: d3719a9ce2fbb066f99445475af8e1f1e7476f4e
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -50,8 +50,8 @@ Zie Beveiligde back-upmodus [inschakelen en uitschakelen voor informatie over he
 Als u geen GDS-hoofdmap opgeeft, wordt de map standaard ingesteld op een toepassingsservermap:
 
 * `[JBOSS_HOME]/server/<server>/svcnative/DocumentStorage`
-* `[WEBSPHERE_HOME]/installedApps/adobe/[server]/DocumentStorage`
-* `[WEBLOGIC_HOME]/user_projects/<domain>/[server]/adobe/AEMformsserver/DocumentStorage`
+* `[WEBSPHERE_HOME]/installedApps/adobe/'server'/DocumentStorage`
+* `[WEBLOGIC_HOME]/user_projects/<domain>/'server'/adobe/AEMformsserver/DocumentStorage`
 
 ***Opmerking **: Het wijzigen van de waarde van de instelling van de GDS-hoofdmap moet met speciale zorg worden uitgevoerd. De GDS-map wordt gebruikt om zowel bestanden met een lange levensduur die in een proces worden gebruikt als essentiële productcomponenten van AEM-formulieren op te slaan. Het wijzigen van de locatie van de GDS-map is een belangrijke systeemwijziging. Als u de locatie van de GDS-directory niet correct configureert, worden AEM-formulieren onbruikbaar en moeten AEM-formulieren mogelijk volledig opnieuw worden geïnstalleerd. Als u een nieuwe locatie voor de GDS-map opgeeft, moet de toepassingsserver worden afgesloten en moeten de gegevens worden gemigreerd voordat de server opnieuw kan worden gestart. De systeembeheerder moet alle bestanden van de oude locatie naar de nieuwe locatie verplaatsen, maar de interne mapstructuur behouden.*
 
@@ -63,7 +63,7 @@ Zie AEM-formulieren [installeren (Single Server)](https://www.adobe.com/go/learn
 
 **Locatie van de map** Klantlettertypen Typ het pad naar een map met aanvullende lettertypen die u wilt gebruiken.
 
-***opmerking **:De lettertypen worden gekozen uit de cache van het Windows-systeemlettertype en het systeem moet opnieuw worden opgestart om de cache bij te werken. Nadat u de lettertypemap voor de klant hebt opgegeven, dient u het systeem waarop AEM-formulieren zijn geïnstalleerd opnieuw te starten.*
+***opmerking **: De lettertypen worden gekozen uit de cache van het Windows-systeemlettertype en het systeem moet opnieuw worden opgestart om de cache bij te werken. Nadat u de lettertypemap voor de klant hebt opgegeven, dient u het systeem waarop AEM-formulieren zijn geïnstalleerd opnieuw te starten.*
 
 **Locatie van de map** Systeemlettertypen Typ het pad naar de map met lettertypen die door het besturingssysteem is opgegeven. U kunt meerdere mappen toevoegen, gescheiden door een puntkomma **;**.
 
@@ -75,15 +75,15 @@ Deze instelling is standaard leeg.
 
 **Standaardgrootte inline van document (bytes)** Het maximum aantal bytes dat in het geheugen wordt bewaard wanneer het overgaan van documenten tussen diverse AEM vormcomponenten. Gebruik deze instelling voor het afstemmen van de prestaties. Documenten die kleiner zijn dan dit nummer, worden in het geheugen opgeslagen en in de database opgeslagen. Documenten die dit maximum overschrijden, worden opgeslagen op de vaste schijf.
 
- Deze instelling is verplicht. De standaardwaarde is 65536 bytes.
+Deze instelling is verplicht. De standaardwaarde is 65536 bytes.
 
 **Standaardtime-out voor het verwijderen van documenten (seconden)** De maximale hoeveelheid tijd in seconden waarin een document dat wordt doorgegeven tussen verschillende componenten van AEM-formulieren, als actief wordt beschouwd. Nadat deze tijd is verstreken, kunnen bestanden die worden gebruikt om dit document op te slaan, worden verwijderd. Gebruik deze instelling om het gebruik van schijfruimte te regelen.
 
- Deze instelling is verplicht. De standaardwaarde is 600 seconden.
+Deze instelling is verplicht. De standaardwaarde is 600 seconden.
 
 **Het interval van de veeggebaar van het document (seconden)** de hoeveelheid tijd, in seconden, tussen pogingen om dossiers te schrappen die niet meer nodig zijn en werden gebruikt om documentgegevens tussen de diensten over te gaan.
 
- Deze instelling is verplicht. De standaardwaarde is 30 seconden.
+Deze instelling is verplicht. De standaardwaarde is 30 seconden.
 
 **Schakel FIPS** in en selecteer deze optie om de FIPS-modus in te schakelen. Federal Information Processing Standard (FIPS) 140-2 is een door de overheid van de VS gedefinieerde cryptologienorm. Wanneer het lopen op FIPS wijze, beperken de vormen AEM gegevensbescherming tot FIPS 140-2 goedgekeurde algoritmen door de encryptiemodule van RSA BSAFE Crypto-C 2.1 te gebruiken.
 
@@ -101,10 +101,10 @@ Schakel deze optie in ontwikkelomgevingen in waarin ontwikkelaars de WSDL-genera
 
 **Statistiek** voor DSC-aanroeping inschakelen Als deze optie is geselecteerd, worden in AEM-formulieren aanroepingsstatistieken bijgehouden, zoals het aantal aanroepen, de hoeveelheid tijd die nodig is om aan te roepen en het aantal fouten in aanroepen. Deze informatie wordt opgeslagen in een boon JMX zodat u Java™ JConsole of derdesoftware kunt gebruiken om de statistieken te bekijken. Als u deze statistieken niet wilt zien, schakelt u deze optie uit om de prestaties van AEM-formulieren te verbeteren.
 
-**Schakel RDS** selecteren in als u deze optie inschakelt, wordt de RDS-servlet (Remote Development Services) in AEM-formulieren ingeschakeld. Wanneer deze optie wordt toegelaten, kunnen de cliënt-zijhulpmiddelen met de Diensten van Gegevens in wisselwerking staan om dingen te doen zoals opstellen of modellen ongedaan maken om bestemmingen en eindpunten tot stand te brengen, of te weten te komen welke modellen in eindpunten zijn opgesteld. Deze optie is standaard niet geselecteerd.
+**Schakel RDS** selecteren in deze optie in om de RDS-servlet (Remote Development Services) in AEM-formulieren in te schakelen. Wanneer deze optie wordt toegelaten, kunnen de cliënt-zijhulpmiddelen met de Diensten van Gegevens in wisselwerking staan om dingen te doen zoals opstellen of modellen ongedaan maken om bestemmingen en eindpunten tot stand te brengen, of te weten te komen welke modellen in eindpunten zijn opgesteld. Deze optie is standaard niet geselecteerd.
 
 **Niet-beveiligde RDS-aanvraag** toestaan Als deze optie is geselecteerd, hoeven RDS-aanvragen niet te worden gebruikt voor https. Door gebrek, wordt deze optie niet geselecteerd en alle mededelingen aan de Diensten van Gegevens moeten https verzoeken zijn.
 
-**** Uploaden van niet-beveiligde documenten vanuit Flex-toepassingen toestaan: Voor het uploaden van bestanden die worden gebruikt om documenten vanuit Adobe Flex®-toepassingen te uploaden naar AEM-formulieren, moeten gebruikers zijn geverifieerd en geautoriseerd voordat ze documenten kunnen uploaden. Aan de gebruiker moet de gebruikersrol Document Upload Application of een andere rol worden toegewezen die de machtiging Document uploaden bevat. Zo voorkomt u dat onbevoegde gebruikers documenten uploaden naar de AEM-formulierserver. Selecteer deze optie als u deze beveiligingsfunctie wilt uitschakelen in een ontwikkelomgeving of voor achterwaartse compatibiliteit met eerdere versies van AEM-formulieren. Deze optie is standaard niet geselecteerd. Zie &quot;AEM-formulieren aanroepen met AEM-formulieren verwijderen&quot; in Programmeren met AEM-formulieren voor meer informatie.
+**Uploaden van niet-beveiligde documenten vanuit Flex-toepassingen toestaan:** Voor het uploaden van bestanden die worden gebruikt om documenten vanuit Adobe Flex®-toepassingen te uploaden naar AEM-formulieren, moeten gebruikers zijn geverifieerd en geautoriseerd voordat ze documenten kunnen uploaden. Aan de gebruiker moet de gebruikersrol Document Upload Application of een andere rol worden toegewezen die de machtiging Document uploaden bevat. Zo voorkomt u dat onbevoegde gebruikers documenten uploaden naar de AEM-formulierserver. Selecteer deze optie als u deze beveiligingsfunctie wilt uitschakelen in een ontwikkelomgeving of voor achterwaartse compatibiliteit met eerdere versies van AEM-formulieren. Deze optie is standaard niet geselecteerd. Zie &quot;AEM-formulieren aanroepen met AEM-formulieren verwijderen&quot; in Programmeren met AEM-formulieren voor meer informatie.
 
-**** Uploaden van niet-beveiligde documenten vanuit Java SDK-toepassingen toestaan: Uploads via HTTP DocumentManager moeten worden beveiligd. Standaard is voor HTTP-uploads verificatie en verificatie vereist voordat gebruikers documenten kunnen uploaden. De gebruiker moet de rol van de Gebruiker van de Diensten of een andere rol worden toegewezen die de Dienst bevat roept toestemming. Zo voorkomt u dat onbevoegde gebruikers documenten uploaden naar de formulierserver. Selecteer deze optie als u deze beveiligingsfunctie wilt uitschakelen in een ontwikkelomgeving, voor achterwaartse compatibiliteit met eerdere versies van AEM-formulieren of op basis van uw firewallinstelling. Deze optie is standaard niet geselecteerd. Zie &quot;AEM-formulieren aanroepen met de Java API&quot; in Programmeren met AEM-formulieren voor meer informatie.
+**Uploaden van niet-beveiligde documenten vanuit Java SDK-toepassingen toestaan:** Uploads via HTTP DocumentManager moeten worden beveiligd. Standaard is voor HTTP-uploads verificatie en verificatie vereist voordat gebruikers documenten kunnen uploaden. De gebruiker moet de rol van de Gebruiker van de Diensten of een andere rol worden toegewezen die de Dienst bevat roept toestemming. Zo voorkomt u dat onbevoegde gebruikers documenten uploaden naar de formulierserver. Selecteer deze optie als u deze beveiligingsfunctie wilt uitschakelen in een ontwikkelomgeving, voor achterwaartse compatibiliteit met eerdere versies van AEM-formulieren of op basis van uw firewallinstelling. Deze optie is standaard niet geselecteerd. Zie &quot;AEM-formulieren aanroepen met de Java API&quot; in Programmeren met AEM-formulieren voor meer informatie.

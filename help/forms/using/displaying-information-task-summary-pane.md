@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 90d0f584-b598-4b21-85d7-31da5f13d404
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -30,7 +30,7 @@ In de werkruimte AEM Forms kunt u een webpagina van uw keuze weergeven in het de
 1. Configureer het veld Taakoverzicht-URL. U kunt een letterlijke waarde, een sjabloon, een variabele of een XPath-expressie opgeven.
 1. Hieronder ziet u een voorbeeld van het weergeven van de informatie op de pagina Taakoverzicht.
 
-   * Meld u aan bij de CRXDE Lite-omgeving bij `https://[server]:[port]/lc/crx/de`.
+   * Meld u aan bij de CRXDE Lite-omgeving bij `https://'[server]:[port]'/lc/crx/de`.
    * `Create a node`**SampleSummary **` under `/` with type `content:`. In the properties of this node, add `unstructuresling:` of type String and value ``. In the Access Control List of this node, add an entry for `resourceTypeSampleSummaryPERM_WORKSPACE_` allowing `USERjcr:read` privileges.`
    * `Create a folder`**SampleSummary **onder`/apps`. In de Lijst van het Toegangsbeheer van`/apps/SampleSummary`, voeg een ingang toe voor het`PERM_WORKSPACE_USER`toestaan van`jcr:readprivileges`.
    * `Create a file `html.esp` at `/apps/`. For example, add the following lines in `SampleSummaryhtml.esp`.`

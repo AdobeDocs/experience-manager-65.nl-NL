@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a33b8834-6e39-47eb-a53b-0982d32e80ad
 translation-type: tm+mt
-source-git-commit: 215ba1cb3e98954418b844849c812c9ba6cf572b
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -72,8 +72,8 @@ Toepassingsgegevens van AEM-formulieren bevinden zich in de GDS-map en de AEM-fo
 De locatie van de GDS-directory kan handmatig worden geconfigureerd tijdens het installatieproces van AEM-formulieren. Als de locatie-instelling tijdens de installatie leeg blijft, wordt standaard als volgt een map onder de installatie van de toepassingsserver gebruikt:
 
 * (JBoss) `[appserver root]/server/[type]/svcnative/DocumentStorage`
-* (WebLogic) `[appserverdomain]/[server]/adobe/DocumentServer/DocumentStorage`
-* (WebSphere) `[appserver root]/installedApps/adobe/[server]/DocumentStorage`
+* (WebLogic) `[appserverdomain]/'server'/adobe/DocumentServer/DocumentStorage`
+* (WebSphere) `[appserver root]/installedApps/adobe/'server'/DocumentStorage`
 
 ## De standaard GDS-locatie wijzigen {#change-the-default-gds-location}
 

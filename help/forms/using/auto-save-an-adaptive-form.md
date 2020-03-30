@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: d519ac4e-6d29-4a69-874e-792acabe87ff
 translation-type: tm+mt
-source-git-commit: 3eaace94bc0499aaebfcd389d4dc97b97c7d9160
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -31,8 +31,8 @@ Voor een adaptief formulier is de optie voor automatisch opslaan niet uitgeschak
 1. Geef in het vak **[!UICONTROL Adaptieve formuliergebeurtenis]** 1 of TRUE op om het formulier automatisch op te slaan wanneer het formulier in de browser wordt geladen. U kunt ook een voorwaardelijke expressie opgeven voor een gebeurtenis die, wanneer deze wordt geactiveerd en waar wordt geretourneerd, de inhoud van het formulier opslaat.
 1. Geef de trigger op. Automatisch opslaan wordt geactiveerd op basis van uw configuratie. U kunt kiezen uit de volgende opties:
 
-   * **** Gebaseerd op tijd: Selecteer de optie om de inhoud op te slaan op basis van een specifiek tijdsinterval.
-   * **** Gebaseerd op gebeurtenis: Selecteer de optie om de inhoud op te slaan op basis van een gebeurtenis die wordt gestart.
+   * **[!UICONTROL Gebaseerd op tijd:]** Selecteer de optie om de inhoud op te slaan op basis van een specifiek tijdsinterval.
+   * **[!UICONTROL Gebaseerd op gebeurtenis:]** Selecteer de optie om de inhoud op te slaan op basis van een gebeurtenis die wordt gestart.
    Wanneer u een trigger selecteert, wordt het vak Strategieconfiguratie ingeschakeld. Met het vak Strategieconfiguratie kunt u:
 
    * Geef een tijdsinterval op als u **[!UICONTROL Op tijd gebaseerde]** trigger selecteert.
@@ -53,7 +53,7 @@ Voor een adaptief formulier is de optie voor automatisch opslaan niet uitgeschak
    >
    >Als u de optie Automatisch opslaan wilt gebruiken voor anonieme gebruikers, moet u de Forms Common Configuration Service zodanig configureren dat alle gebruikers formulieren kunnen bekijken, verifiëren en ondertekenen.
    >
-   >Om de dienst te vormen, ga naar de configuratie van de Console van het Web AEM bij `https://[server]:[host]/system/console/configMgr` en geef de Gemeenschappelijke Dienst **[!UICONTROL van de Configuratie van]** Vormen uit om de optie **[!UICONTROL Alle Gebruikers]** op het **[!UICONTROL Allow]** gebied te kiezen, en sparen de configuratie.
+   >Om de dienst te vormen, ga naar de configuratie van de Console van het Web AEM bij `https://server:port/system/console/configMgr` en geef de Gemeenschappelijke Dienst **[!UICONTROL van de Configuratie van]** Vormen uit om de optie **[!UICONTROL Alle Gebruikers]** op het **[!UICONTROL Allow]** gebied te kiezen, en sparen de configuratie.
 
 ## Een aangepaste strategie implementeren om automatisch opslaan van aangepaste formulieren in te schakelen {#implement-a-custom-strategy-to-enable-autosave-for-adaptive-forms}
 

@@ -10,7 +10,7 @@ topic-tags: document_services
 discoiquuid: d431c4cb-e4be-41a5-8085-42393d4d468c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 94472fad34fe97740e4711d2cb35beb884db52ce
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -130,7 +130,7 @@ Bovendien kan de service elke streepjescode decoderen die ondersteunde symbolen 
 
 ## Eigenschappen van de service configureren {#configureproperties}
 
-Met de **AEMFD Barcoded Forms Service** in AEM Console kunt u eigenschappen voor deze service configureren. De standaard-URL van de AEM-console is `https://[host]:[port]/system/console/configMgr`.
+Met de **AEMFD Barcoded Forms Service** in AEM Console kunt u eigenschappen voor deze service configureren. De standaard-URL van de AEM-console is `https://[host]:'port'/system/console/configMgr`.
 
 ## De service gebruiken {#using}
 

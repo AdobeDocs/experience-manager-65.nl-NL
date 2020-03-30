@@ -10,7 +10,7 @@ topic-tags: integrations
 discoiquuid: 96a77980-4213-4779-a540-00905ea8f7e3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -164,7 +164,7 @@ Een Adobe Analytics-framework bestaat uit een reeks toewijzingen tussen Adobe An
 
    * **Overzicht van synchronisatie van analyserapporten**: Geef de expressie voor uitsnijden op voor het ophalen van rapporten uit Adobe Analytics. De standaardwaarde is 0 0 2? * * *.
 
-   * **** Time-out testrapport: Geef de tijdsduur in seconden op, waarna de server moet reageren op het analyserapport. De standaardtijd is 120 seconden.
+   * **Time-out testrapport:** Geef de tijdsduur in seconden op, waarna de server moet reageren op het analyserapport. De standaardtijd is 120 seconden.
    >[!NOTE]
    >
    >Het kan tot 10 seconden meer aan onderbrekingsrapport nemen haal verrichting toen het gespecificeerde aantal seconden.
@@ -175,14 +175,14 @@ Nu kunt u analyses inschakelen voor formulieren en een analyserapport genereren.
 
 ## Analyses inschakelen voor een formulier of document {#enabling-analytics-for-a-form-or-document}
 
-1. Meld u aan bij het AEM-portaal op `https://[hostname]:[port]`.
+1. Meld u aan bij het AEM-portaal op `https://[hostname]:'port'`.
 1. Klik op **Formulieren > Formulieren en documenten**, selecteer een formulier of document en klik op **Analyse** inschakelen. De analysemogelijkheden zijn ingeschakeld.
 
    ![Analyses inschakelen voor een formulier of document](assets/enable-analytics-1.png)
 
    Analyses inschakelen voor een formulier
 
-   ******A. Knop Analytics inschakelen** B. Geselecteerd formulier
+   **A.** Knop Analytics inschakelen **B.** Geselecteerd formulier
 
    Zie Analytische rapporten van AEM Forms [weergeven en begrijpen voor gedetailleerde informatie over het weergeven van rapporten over formulieranalyses](../../forms/using/view-understand-aem-forms-analytics-reports.md)
 

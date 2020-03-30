@@ -10,7 +10,7 @@ topic-tags: develop
 discoiquuid: 1f28b257-5419-4a21-a54a-b20bf35530ac
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -81,7 +81,7 @@ Nadat aan de voorwaarden is voldaan, voert u de volgende stappen uit om Adobe Si
 
    Tik op **[!UICONTROL Maken]** om de Adobe-ondertekeningsconfiguratie te maken.
 
-1. Open AEM-webconsole. De URL is `https://[server]:[port]/system/console/configMgr`
+1. Open AEM-webconsole. De URL is `https://'[server]:[port]'/system/console/configMgr`
 1. Open **Forms Common Configuration Service.**
 1. In het veld **Toestaan** **selecteert** u Alle gebruikers. Alle gebruikers, anoniem of aangemeld, kunnen een voorbeeld van bijlagen bekijken, formulieren verifiëren en ondertekenen en op **Opslaan klikken.** De instantie Auteur is geconfigureerd voor gebruik van Adobe Sign.
 1. Meld u aan bij de instantie [Publiceren](/help/sites-deploying/deploy.md) en open de volgende URL:
@@ -99,7 +99,7 @@ Een adaptief formulier dat geschikt is voor ondertekening door Adobe wordt allee
 1. Meld u met beheerdersreferenties aan de AEM Forms-server aan en navigeer naar **Gereedschappen** > **Bewerkingen** > **Webconsole**.
 
    U kunt ook de volgende URL openen in een browservenster:
-   `https://[localhost]:[port]/system/console/configMgr`
+   `https://[localhost]:'port'/system/console/configMgr`
 
 1. Zoek en open de optie **Adobe Sign Configuration Service** . Geef een [uitsnijdexpressie](https://en.wikipedia.org/wiki/Cron#CRON_expression) op in het veld **Uitdrukking planner voor** statusupdate en klik op **Opslaan**. Bijvoorbeeld, om de configuratieservice dagelijks om 00:00 uur in werking te stellen, specificeer `0 0 0 1/1 * ? *` op het gebied van de Uitdrukking van de Planner van de Update van de **Status** .
 

@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 discoiquuid: c8519eec-f841-4867-baa9-a9e03042755e
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -22,7 +22,7 @@ Als u een element verwijdert uit de instantie Auteur, wordt het element ook verw
 
 ## Een formulier verwijderen {#how-to-delete-a-form}
 
-1. Meld u aan bij de gebruikersinterface van AEM Forms via `https://[hostname]:[portport]/aem/forms.html.`
+1. Meld u aan bij de gebruikersinterface van AEM Forms via `https://[hostname]:'port'/aem/forms.html.`
 1. Navigeer naar en selecteer het formulier dat u wilt verwijderen. Klik op ![Aem6forms_delete2](assets/aem6forms_delete2.png) verwijderen op de werkbalk en bevestig de verwijderbewerking.
 
    >[!NOTE]

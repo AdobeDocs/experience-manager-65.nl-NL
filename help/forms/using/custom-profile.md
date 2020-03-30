@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 9cd22244-9aa6-4b5f-96cf-c9cb3d6f9c8a
 translation-type: tm+mt
-source-git-commit: 19299fb5fc764d0e71c0ea3a5ec2286183dd6861
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -56,7 +56,7 @@ Voer de volgende stappen uit om een aangepast profiel te maken:
 
 ### Profielknooppunt maken {#create-profile-node}
 
-1. Navigeer naar de interface CRX DE bij URL: `https://[server]:[port]/crx/de` en login aan de interface met beheerdergeloofsbrieven.
+1. Navigeer naar de interface CRX DE bij URL: `https://'[server]:[port]'/crx/de` en login aan de interface met beheerdergeloofsbrieven.
 
 1. Navigeer in het linkerdeelvenster naar de locatie */inhoud/XFAFORM/profielen*.
 
@@ -78,7 +78,7 @@ Nadat u een aangepast profiel hebt gemaakt, voegt u renderinformatie toe aan dit
 1. Plak het **knooppunt html.jsp** in de `/apps/hrform/demo` map die hierboven met dezelfde naam **html.jsp** is gemaakt en klik op **Opslaan**.
 1. Als u andere componenten van profielmanuscript hebt, volg stap 1-6 om de componenten in /apps/hrform/demo omslag te kopiëren.
 
-1. Open de URL om te controleren of het profiel is gemaakt `https://[server]:[port]/content/xfaforms/profiles/hrform.html`
+1. Open de URL om te controleren of het profiel is gemaakt `https://'[server]:[port]'/content/xfaforms/profiles/hrform.html`
 
 Als u uw formulieren wilt verifiëren, [importeert u uw formulieren](/help/forms/using/get-xdp-pdf-documents-aem.md) van uw lokale bestandssysteem naar AEM Forms en [bekijkt u een voorbeeld van het formulier](/help/forms/using/previewing-forms.md) op de auteur van de AEM-server.
 

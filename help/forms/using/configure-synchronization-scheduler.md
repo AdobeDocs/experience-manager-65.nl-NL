@@ -10,7 +10,7 @@ topic-tags: Configuration
 discoiquuid: 8c8b1998-eab4-4230-b24f-5e96883ba599
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27695ee7880cfa23d504d723297c9a06729a424b
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -23,7 +23,7 @@ Standaard wordt de synchronisatieplanner na elke 3 minuten uitgevoerd om alle el
 
 Voer de volgende stappen uit om het interval van de synchronisatieplanner te veranderen:
 
-1. Meld u aan bij AEM Configuration Manager. De URL van Configuration Manager is `https://[Server]:[Port]/lc/system/console/configMgr`
+1. Meld u aan bij AEM Configuration Manager. De URL van Configuration Manager is `https://'[server]:[port]'/lc/system/console/configMgr`
 
 1. Zoek en open de bundel **FormsManagerConfiguration** .
 
@@ -35,17 +35,17 @@ Voer de volgende stappen uit om het interval van de synchronisatieplanner te ver
 
 Met de optie Elementen **synchroniseren vanuit opslagplaats** kunt u de elementen handmatig synchroniseren. Voer de volgende stappen uit om de elementen handmatig te synchroniseren:
 
-1. Meld u aan bij AEM-formulieren. De standaard-URL is `https://[Server]:[Port]/lc/aem/forms/`.
+1. Meld u aan bij AEM-formulieren. De standaard-URL is `https://'[server]:[port]'/lc/aem/forms/`.
 
    ![Gebruikersinterface AEM-formulieren](assets/aem_forms_ui.png)
 
-   **** Afbeelding: Gebruikersinterface *voor AEM-formulieren*
+   **Afbeelding:** Gebruikersinterface *voor AEM-formulieren*
 
 1. Klik op het ![pictogram aem6forms_sync](assets/aem6forms_sync.png) op de werkbalk. Als u geen elementen hebt bij het laatste geconfigureerde pad, wordt het dialoogvenster weergegeven zoals hieronder. Klik op **Start** om de synchronisatie te starten.
 
    ![Synchronisatie, dialoogvenster](assets/migrate-and-syncronize.png)
 
-   **** Afbeelding: Dialoogvenster *Synchronisatie*
+   **Afbeelding:** Dialoogvenster *Synchronisatie*
 
 ## Synchronisatiefout voor probleemoplossing {#troubleshooting-synchronization-error}
 
@@ -57,4 +57,4 @@ U lost het conflict op door de naam van de toepassing te wijzigen en de elemente
 
 ![Conflicten in dialoogvenster voor synchronisatie van elementen](assets/sync-conflict.png)
 
-**** Afbeelding: *Conflicten in dialoogvenster voor middelensynchronisatie*
+**Afbeelding:** *Conflicten in dialoogvenster voor middelensynchronisatie*

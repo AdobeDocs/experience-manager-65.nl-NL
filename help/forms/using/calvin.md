@@ -10,7 +10,7 @@ topic-tags: develop
 discoiquuid: 1cb54c8a-9322-4b5a-b5a7-0eef342cee54
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3eaace94bc0499aaebfcd389d4dc97b97c7d9160
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -94,7 +94,7 @@ Voordat u dit artikel kunt gebruiken voor het maken van testcase, moet u het vol
 
 In het volgende voorbeeld wordt het maken van een testsuite voor het testen van meerdere adaptieve formulieren besproken. U moet een afzonderlijk testcase maken voor elk formulier dat u moet testen. Als u in stap 11 vergelijkbare stappen uitvoert en de JavaScript-code wijzigt, kunt u uw eigen testsuite maken om uw aangepaste formulieren te testen.
 
-1. Ga naar CRXDE Lite in uw Webbrowser: `https://[server]:[port]/crx/de`.
+1. Ga naar CRXDE Lite in uw Webbrowser: `https://'[server]:[port]'/crx/de`.
 1. Klik met de rechtermuisknop op de submap /etc/clientlibs en klik op **Maken** > **Knooppunt** maken. Voer een naam in (hier afTestRegistration), geef het type knooppunt op als cq:ClientLibraryFolder en klik op **OK.**
 
    De clientlibs-map bevat het registratieaspect van uw toepassing (JS en Init). U wordt aangeraden alle Hobbes-testreekobjecten te registreren die specifiek zijn voor een formulier in de clientlibs-map.

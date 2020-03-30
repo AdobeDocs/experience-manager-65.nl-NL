@@ -11,7 +11,7 @@ topic-tags: hTML5_forms
 discoiquuid: 973806f8-fb44-4d52-ad3f-bfbf335f60a1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 19299fb5fc764d0e71c0ea3a5ec2286183dd6861
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -24,7 +24,7 @@ U kunt het hulpprogramma Logger configureren om logboeken te maken voor HTML5-fo
 
 Voer de volgende stappen uit om logbestanden aan de serverzijde te configureren:
 
-1. Ga naar `https://[server]:[port]/system/console/configMgr`. Zoek en open de configuratieoptie *Apace Sling-logboeklogger* . Er wordt een dialoogvenster weergegeven:
+1. Ga naar `https://'[server]:[port]'/system/console/configMgr`. Zoek en open de configuratieoptie *Apace Sling-logboeklogger* . Er wordt een dialoogvenster weergegeven:
 
    ![ Het dialoogvenster voor het instellen van de optie Apace Sling-logboekregistratie](assets/logconfig.png)
 
@@ -160,7 +160,7 @@ Bijvoorbeeld:
   </tr>
   <tr>
    <td>2-a4-b5-c6<br type="_moz" /> </td>
-   <td>Doel: XFA-niveau server<br /> : INFO<br /> xfaView-niveau: DEBUG<br /> xfaPerf-niveau:TRACE</td>
+   <td>Doel: XFA-niveau server<br /> : INFO<br /> xfaView-niveau: DEBUG<br /> xfaPerf-niveau: TRACE</td>
   </tr>
  </tbody>
 </table>
@@ -176,7 +176,7 @@ Bijvoorbeeld:
 
 Als u de Manager van de Configuratie voor het toelaten van registreren gebruikt, worden de logboeken geproduceerd voor elk teruggeven verzoek tot het registreren opnieuw onbruikbaar wordt gemaakt.
 
-1. Meld u aan bij CQ Configuration Manager op `https://[server]:[port]/system/console/configMgr` en meld u aan met de beheerdersreferenties.
+1. Meld u aan bij CQ Configuration Manager op `https://'[server]:[port]'/system/console/configMgr` en meld u aan met de beheerdersreferenties.
 1. Zoek naar en klik op Configuraties van **mobiele formulieren**.
 1. Voer in het tekstvak Opties voor foutopsporing de logboekconfiguraties in zoals in de vorige sectie, bijvoorbeeld **2-a4-b5-c6**
 
@@ -186,13 +186,13 @@ Als u de Manager van de Configuratie voor het toelaten van registreren gebruikt,
 
 ## Logbestanden uploaden {#uploading-logs}
 
-Als de bestemming als 1 wordt geplaatst, worden alle berichten van het cliëntmanuscript logboek geleid aan de console. Als een beheerder deze logboeken samen met serverlogboeken vereist, plaats bestemmingsniveau aan 2. Op dit niveau worden alle logbestanden verzameld in een JS-object op de client en als het formulier wordt weergegeven met het standaardprofiel, wordt er links van de knop Bestaande velden **** markeren op de werkbalk een knop Logboeken **** verzenden weergegeven. Wanneer de gebruiker op de koppeling klikt, worden alle verzamelde logbestanden naar de server gepost en aangemeld bij het geconfigureerde foutenlogbestand op de server.
+Als de bestemming als 1 wordt geplaatst, worden alle berichten van het cliëntmanuscript logboek geleid aan de console. Als een beheerder deze logboeken samen met serverlogboeken vereist, plaats bestemmingsniveau aan 2. Op dit niveau worden alle logbestanden verzameld in een JS-object op de client. Als het formulier wordt weergegeven met het standaardprofiel, wordt er een knop Logboeken **** verzenden weergegeven links van de knop Bestaande velden **** markeren op de werkbalk. Wanneer de gebruiker op de koppeling klikt, worden alle verzamelde logbestanden naar de server gepost en aangemeld bij het geconfigureerde foutenlogbestand op de server.
 
 Standaard wordt alle informatie toegevoegd aan het bestand error.log in de map /crx-repository/logs/.
 
 De locatie en naam van het logbestand wijzigen:
 
-1. Meld u aan bij Configuratiebeheer als beheerder. De standaard-URL van Configuration Manager is `https://[Server]:[Port]/system/console/configMgr`.
+1. Meld u aan bij Configuratiebeheer als beheerder. De standaard-URL van Configuration Manager is `https://'[server]:[port]'/system/console/configMgr`.
 1. Klik op **Apache Sling Logging Logger Configuration**. Er wordt een dialoogvenster weergegeven.
 
    ![logconfig-1](assets/logconfig-1.png)

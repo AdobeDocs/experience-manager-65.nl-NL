@@ -10,7 +10,7 @@ topic-tags: introduction
 discoiquuid: b4fdbf86-d8f3-4da5-9e4e-4d5492ae1632
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70350add185b932ee604e190aabaf972ff994ba2
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -91,17 +91,17 @@ Als Sarah de creditcardtoepassing opent vanaf haar mobiele apparaat, wordt de re
 
 **Hoe werkt het**
 
-Met de knop **Nu** toepassen stuurt u Sarah naar de creditcardtoepassing. De toepassing is een adaptief formulier dat u kunt bekijken in de ontwerpinstanties op `https://[host]:[Port]/editor.html/content/forms/af/we-finance/cc-app.html`.
+Met de knop **Nu** toepassen stuurt u Sarah naar de creditcardtoepassing. De toepassing is een adaptief formulier dat u kunt bekijken in de ontwerpinstanties op `https://[host]:'port'/editor.html/content/forms/af/we-finance/cc-app.html`.
 
 Enkele belangrijke functies die u in het aangepaste formulier kunt bekijken, zijn:
 
 * Het is gebaseerd op een XSD-schema.
-* Het wordt gebouwd gebruikend Thema A van de Financiën van Wij voor het stileren en wij.Finance malplaatje voor lay-out. Bovendien wordt voor mobiele navigatie de indeling Indeling zonder deelvenstertitels in de indeling van de koptekst van het formulier gebruikt. Er wordt een progressieve mobiele lay-out weergegeven wanneer deze wordt geopend vanaf een mobiel apparaat. U kunt de sjabloon bekijken op `https://[host]:[Port]/libs/wcm/core/content/sites/templates.html/conf/we-finance` en het thema op `https://[host]:[Port]/editor.html/content/dam/formsanddocuments-themes/we-finance/we-finance-theme-a/jcr:content`.
-* Het bevat adaptieve formulierregels om services van het formuliergegevensmodel aan te roepen om gebruikersgegevens van aangemelde gebruikers vooraf in te vullen. Er wordt ook een beroep gedaan op services om vooraf informatie te verstrekken aan de hand van het socialezekerheidsnummer of het e-mailadres dat in het formulier is opgegeven. U kunt de modellen met formuliergegevens en de bijbehorende services bekijken op `https://[host]:[Port]/aem/forms.html/content/dam/formsanddocuments-fdm`.
+* Het wordt gebouwd gebruikend Thema A van de Financiën van Wij voor het stileren en wij.Finance malplaatje voor lay-out. Bovendien wordt voor mobiele navigatie de indeling Indeling zonder deelvenstertitels in de indeling van de koptekst van het formulier gebruikt. Er wordt een progressieve mobiele lay-out weergegeven wanneer deze wordt geopend vanaf een mobiel apparaat. U kunt de sjabloon bekijken op `https://[host]:'port'/libs/wcm/core/content/sites/templates.html/conf/we-finance` en het thema op `https://[host]:'port'/editor.html/content/dam/formsanddocuments-themes/we-finance/we-finance-theme-a/jcr:content`.
+* Het bevat adaptieve formulierregels om services van het formuliergegevensmodel aan te roepen om gebruikersgegevens van aangemelde gebruikers vooraf in te vullen. Er wordt ook een beroep gedaan op services om vooraf informatie te verstrekken aan de hand van het socialezekerheidsnummer of het e-mailadres dat in het formulier is opgegeven. U kunt de modellen met formuliergegevens en de bijbehorende services bekijken op `https://[host]:'port'/aem/forms.html/content/dam/formsanddocuments-fdm`.
 * Er worden verschillende adaptieve formuliercomponenten gebruikt om invoer vast te leggen en zich aan te passen aan de reacties van de gebruiker. Er worden ook componenten gebruikt, zoals E-mail, die HTML5-invoertypen ondersteunen.
 * De component Signature Step gebruikt om het ingevulde formulier weer te geven en maakt elektronische ondertekening op het formulier mogelijk.
 * Met de knop Mijn voortgang opslaan wordt een unieke id voor de gebruiker gegenereerd en wordt de gedeeltelijk ingevulde toepassing als concept opgeslagen in een knooppunt in de AEM-opslagruimte. Ook wordt er een dialoogvenster weergegeven waarin u toestemming wordt gevraagd om een e-mail te verzenden met een koppeling naar het knooppunt dat de concepttoepassing bevat. Met de knop E-mail verzenden in het bevestigingsvenster wordt een e-mail geactiveerd met een koppeling naar het knooppunt dat het concept bevat.
-* Het gebruikt de Invoke AEM Workflow submit actie om de werkschema van de creditcardgoedkeuring teweeg te brengen. U kunt de workflow die in dit formulier wordt gebruikt, bekijken op `https://[host]:[Port]/editor.html/conf/global/settings/workflow/models/we-finance-credit-card-workflow.html`
+* Het gebruikt de Invoke AEM Workflow submit actie om de werkschema van de creditcardgoedkeuring teweeg te brengen. U kunt de workflow die in dit formulier wordt gebruikt, bekijken op `https://[host]:'port'/editor.html/conf/global/settings/workflow/models/we-finance-credit-card-workflow.html`
 
 Het wordt aanbevolen het formulier te bekijken om inzicht te krijgen in het schema, de componenten, de regels, de modellen van formuliergegevens, de werkstroom van formulieren en de verzendactie die wordt gebruikt om het formulier samen te stellen.
 
@@ -275,7 +275,7 @@ Analytische rapporten genereren met zaadgegevens:
 
 **A/B-tests van de creditcardaanvraag**
 
-Naast het analyseren van de prestaties van de creditcardtoepassing en het constant verbeteren van het, hefboomwerkingen van de integratie van Vormen AEM met Doel om tests A/B te creëren. Hierdoor kunnen zij verschillende ervaringen opdoen met het aanvraagformulier voor een creditcard en kunnen zij de ervaring identificeren die leidt tot een betere conversiegraad in termen van het invullen en verzenden van formulieren.
+Naast het analyseren van de prestaties van de creditcardtoepassing en het constant verbeteren van het, hefboomwerkingen van de integratie van Vormen AEM met Doel om tests A/B te creëren. Hierdoor kunnen zij verschillende ervaringen opdoen met het aanvraagformulier voor een creditcard en kunnen zij de ervaring identificeren die leidt tot een betere conversiesnelheid in termen van het invullen en verzenden van het formulier.
 
 Als u Doel wilt configureren in AEM Forms Server, raadpleegt u Doel [instellen en integreren in AEM Forms](../../forms/using/ab-testing-adaptive-forms.md#set%20up%20and%20integrate%20target%20in%20aem%20forms).
 
@@ -374,20 +374,20 @@ De ingediende aanvraag gaat naar We.Finance voor goedkeuring.
 
 #### Hoe werkt het {#how-it-works-7}
 
-Met de knop **Nu** toepassen leidt Sarah naar de hypotheektoepassing thuis. De toepassing is een adaptief formulier dat u kunt bekijken in de ontwerpinstanties op `https://[host]:[Port]/editor.html/content/forms/af/we-finance/hm-app.html`.
+Met de knop **Nu** toepassen leidt Sarah naar de hypotheektoepassing thuis. De toepassing is een adaptief formulier dat u kunt bekijken in de ontwerpinstanties op `https://[host]:'port'/editor.html/content/forms/af/we-finance/hm-app.html`.
 
 Enkele belangrijke functies die u in het aangepaste formulier kunt bekijken, zijn:
 
 * Het is gebaseerd op een XSD-schema, `homeMortgageApplication.xsd`.
 * Het wordt gebouwd gebruikend Thema B van de Financiën van Wij voor het stileren en wij.Finance malplaatje voor lay-out. Bovendien wordt voor mobiele navigatie de indeling Indeling zonder deelvenstertitels in de indeling van de koptekst van het formulier gebruikt. Er wordt een progressieve mobiele lay-out weergegeven wanneer deze wordt geopend vanaf een mobiel apparaat. U kunt de sjabloon en het thema die in het adaptieve formulier worden gebruikt, op de volgende locaties bekijken in uw AEM-auteur-exemplaar:
 
-   * `https://[host]:[Port]/libs/wcm/core/content/sites/templates.html/conf/we-finance`
-   * `https://[host]:[Port]/editor.html/content/dam/formsanddocuments-themes/we-finance/we-finance-theme-b/jcr:content`
+   * `https://[host]:'port'/libs/wcm/core/content/sites/templates.html/conf/we-finance`
+   * `https://[host]:'port'/editor.html/content/dam/formsanddocuments-themes/we-finance/we-finance-theme-b/jcr:content`
 
-* Het eerste tabblad, Aan de slag, in de toepassing is een dynamische hypotheekcalculator die opties weergeeft op basis van de keuze van de gebruiker. De velden en waarden verschillen bijvoorbeeld voor de opties Aanschaffen en Verfijnen. Deze functionaliteit wordt bereikt gebruikend show-huidenregels. Wanneer u op Doorgaan klikt en het tabblad Abonnementen is geïnitialiseerd, wordt bovendien een webservice aangeroepen die is geconfigureerd in een formuliergegevensmodel om hypotheekplannen op te halen en weer te geven. U kunt de modellen van de Gegevens van de Vorm en de gevormde diensten bij herzien `https://[host]:[Port]/aem/forms.html/content/dam/formsanddocuments-fdm`.
+* Het eerste tabblad, Aan de slag, in de toepassing is een dynamische hypotheekcalculator die opties weergeeft op basis van de keuze van de gebruiker. De velden en waarden verschillen bijvoorbeeld voor de opties Aanschaffen en Verfijnen. Deze functionaliteit wordt bereikt gebruikend show-huidenregels. Wanneer u op Doorgaan klikt en het tabblad Abonnementen is geïnitialiseerd, wordt bovendien een webservice aangeroepen die is geconfigureerd in een formuliergegevensmodel om hypotheekplannen op te halen en weer te geven. U kunt de modellen van de Gegevens van de Vorm en de gevormde diensten bij herzien `https://[host]:'port'/aem/forms.html/content/dam/formsanddocuments-fdm`.
 * Er worden verschillende adaptieve formuliercomponenten gebruikt om invoer vast te leggen en zich aan te passen aan de reacties van de gebruiker. Er worden ook componenten gebruikt, zoals E-mail, die HTML5-invoertypen ondersteunen.
 * De component Signature Step gebruikt om het ingevulde formulier weer te geven en maakt elektronische ondertekening op het formulier mogelijk.
-* Het gebruikt de Invoke AEM- Werkschema voorleggen actie om de werkschema&#39;s van AEM van het Huis van Financiën van de Thuis van de Starthypotheek van Wij teweeg te brengen. U kunt de workflow die in dit formulier wordt gebruikt, bekijken op `https://[host]:[Port]/editor.html/conf/global/settings/workflow/models/we-finance-home-mortgage-workflow.html`
+* Het gebruikt de Invoke AEM- Werkschema voorleggen actie om de werkschema&#39;s van AEM van het Huis van Financiën van de Thuis van de Starthypotheek van Wij teweeg te brengen. U kunt de workflow die in dit formulier wordt gebruikt, bekijken op `https://[host]:'port'/editor.html/conf/global/settings/workflow/models/we-finance-home-mortgage-workflow.html`
 
 Het wordt aanbevolen het formulier te bekijken om inzicht te krijgen in het schema, de componenten, de regels, de modellen van formuliergegevens, de werkstroom van formulieren en de verzendactie die wordt gebruikt om het formulier samen te stellen.
 
@@ -403,7 +403,7 @@ Zie ook de volgende documentatie voor meer informatie over functies die worden g
 
 #### Zie het zelf {#see-it-yourself-6}
 
-Ga naar `https://[server]:[port]/content/we-finance/global/en/all-forms.html` en klik op de knop **Nu** toepassen op Home Mortgauge. Vul de gegevens in op het tabblad Aan de slag, probeer andere opties en verzend de toepassing.
+Ga naar `https://'[server]:[port]'/content/we-finance/global/en/all-forms.html` en klik op de knop **Nu** toepassen op Home Mortgauge. Vul de gegevens in op het tabblad Aan de slag, probeer andere opties en verzend de toepassing.
 
 Zorg ervoor dat u een geldige e-mailid opgeeft in de toepassing om een bevestigingse-mail te ontvangen in uw Postvak IN.
 
@@ -459,7 +459,7 @@ Als u uw e-mailadres hebt opgegeven bij het invullen van de hypotheektoepassing,
 
 U kunt de URL bekijken in een publicatie-instantie van AEM op de volgende URL:
 
-`https://[host]:[port]/content/forms/af/we-finance/mortgage-loan-welcome-kit.html`
+`https://[host]:'port'/content/forms/af/we-finance/mortgage-loan-welcome-kit.html`
 
 ### Sarah ontvangt een rekeningoverzicht {#sarah-receives-an-account-statement}
 
@@ -549,7 +549,7 @@ Voer de volgende stappen in de auteurinstantie uit om de verwezenlijking van A/B
    `https://&lt;hostname&gt;:&lt;port&gt;/content/dam/formsanddocuments/we-finance/hm-app/jcr:content?wcmmode=disabled`
 
    >[!NOTE]
-   >  Verwijder de cookie met de naam **mbox** van de browsercookie voordat u het formulier de volgende keer opent. U ziet willekeurig A en B van het formulier.
+   > Verwijder de cookie met de naam **mbox** van de browsercookie voordat u het formulier de volgende keer opent. U ziet willekeurig A en B van het formulier.
 
 1. Selecteer het formulier, klik op **Meer** en klik op **Testrapport** A/B. U vindt niet veel gegevens in het rapport omdat u net met het testen bent begonnen. Laten we nu enkele zaadgegevens leveren om te zien hoe een A/B-testrapport eruit ziet.
 1. Open CRXDE Lite en neem een file van het volgende dossier: /libs/fd/fmaddon/gui/components/admin/targetreport/clientlibs/targetreport/js/targetreport.js
@@ -618,17 +618,17 @@ De ingediende aanvraag gaat naar We.Finance voor goedkeuring.
 
 #### Hoe werkt het {#how-it-works-13}
 
-Met de knop **Nu** toepassen leidt Sarah naar de hypotheektoepassing thuis. De toepassing is een adaptief formulier dat u kunt bekijken in de ontwerpinstanties op `https://[host]:[Port]/editor.html/content/forms/af/we-finance/ms-dynamics/application-for-home-mortgage.html`.
+Met de knop **Nu** toepassen leidt Sarah naar de hypotheektoepassing thuis. De toepassing is een adaptief formulier dat u kunt bekijken in de ontwerpinstanties op `https://[host]:'port'/editor.html/content/forms/af/we-finance/ms-dynamics/application-for-home-mortgage.html`.
 
 Enkele belangrijke functies die u in het aangepaste formulier kunt bekijken, zijn:
 
 * Het is gebaseerd op een XSD-schema, `homeMortgageApplication.xsd`.
 * Het wordt gebouwd gebruikend Thema B van de Financiën van Wij voor het stileren en wij.Finance malplaatje voor lay-out. Bovendien wordt voor mobiele navigatie de indeling Indeling zonder deelvenstertitels in de indeling van de koptekst van het formulier gebruikt. Er wordt een progressieve mobiele lay-out weergegeven wanneer deze wordt geopend vanaf een mobiel apparaat. U kunt de sjabloon en het thema die in het adaptieve formulier worden gebruikt, op de volgende locaties bekijken in uw AEM-auteur-exemplaar:
 
-   * `https://[host]:[Port]/libs/wcm/core/content/sites/templates.html/conf/we-finance`
-   * `https://[host]:[Port]/editor.html/content/dam/formsanddocuments-themes/we-finance/we-finance-theme-b/jcr:content`
+   * `https://[host]:'port'/libs/wcm/core/content/sites/templates.html/conf/we-finance`
+   * `https://[host]:'port'/editor.html/content/dam/formsanddocuments-themes/we-finance/we-finance-theme-b/jcr:content`
 
-* Het eerste tabblad, Aan de slag, in de toepassing is een dynamische hypotheekcalculator die opties weergeeft op basis van de keuze van de gebruiker. De velden en waarden verschillen bijvoorbeeld voor de opties Aanschaffen en Verfijnen. Deze functionaliteit wordt bereikt gebruikend show-huidenregels. Wanneer u op Doorgaan klikt en het tabblad Abonnementen is geïnitialiseerd, wordt bovendien een webservice aangeroepen die is geconfigureerd in een formuliergegevensmodel om hypotheekplannen op te halen en weer te geven. U kunt de modellen van de Gegevens van de Vorm en de gevormde diensten bij herzien `https://[host]:[Port]/aem/forms.html/content/dam/formsanddocuments-fdm`.
+* Het eerste tabblad, Aan de slag, in de toepassing is een dynamische hypotheekcalculator die opties weergeeft op basis van de keuze van de gebruiker. De velden en waarden verschillen bijvoorbeeld voor de opties Aanschaffen en Verfijnen. Deze functionaliteit wordt bereikt gebruikend show-huidenregels. Wanneer u op Doorgaan klikt en het tabblad Abonnementen is geïnitialiseerd, wordt bovendien een webservice aangeroepen die is geconfigureerd in een formuliergegevensmodel om hypotheekplannen op te halen en weer te geven. U kunt de modellen van de Gegevens van de Vorm en de gevormde diensten bij herzien `https://[host]:'port'/aem/forms.html/content/dam/formsanddocuments-fdm`.
 * Er worden verschillende adaptieve formuliercomponenten gebruikt om invoer vast te leggen en zich aan te passen aan de reacties van de gebruiker. Er worden ook componenten gebruikt, zoals E-mail, die HTML5-invoertypen ondersteunen.
 * De component Signature Step gebruikt om het ingevulde formulier weer te geven en maakt elektronische ondertekening op het formulier mogelijk.
 
@@ -686,17 +686,17 @@ Als Sarah de aanvraag op een mobiel apparaat indiende, zou ze de volgende scherm
 
 #### Hoe werkt het {#how-it-works-15}
 
-Met de knop **Nu** toepassen op de nieuwsbrief stuurt u Sarah naar de toepassing voor thuisverzekering op Web.Finance. De toepassing is een adaptief formulier dat u kunt bekijken in het ontwerpexemplaar op `https://[host]:[Port]/editor.html/content/forms/af/we-finance/insurance/application-for-insurance.html`.
+Met de knop **Nu** toepassen op de nieuwsbrief stuurt u Sarah naar de toepassing voor thuisverzekering op Web.Finance. De toepassing is een adaptief formulier dat u kunt bekijken in het ontwerpexemplaar op `https://[host]:'port'/editor.html/content/forms/af/we-finance/insurance/application-for-insurance.html`.
 
 Enkele belangrijke functies die u in het aangepaste formulier kunt bekijken, zijn:
 
 * Het is gebaseerd op een XSD-schema, `insurance.xsd`.
-* Het is gemaakt met het thema Verzekering voor opmaak en gebruikt Layout zonder titels in de koptekst van het formulier voor mobiele navigatie. Er wordt een progressieve mobiele lay-out weergegeven wanneer deze wordt geopend vanaf een mobiel apparaat. U kunt de sjabloon bekijken op `https://[host]:[Port]/libs/wcm/core/content/sites/templates.html/conf/we-finance` en het thema op `https://[host]:[Port]/editor.html/content/dam/formsanddocuments-themes/we-finance/insurance/jcr:content`.
+* Het is gemaakt met het thema Verzekering voor opmaak en gebruikt Layout zonder titels in de koptekst van het formulier voor mobiele navigatie. Er wordt een progressieve mobiele lay-out weergegeven wanneer deze wordt geopend vanaf een mobiel apparaat. U kunt de sjabloon bekijken op `https://[host]:'port'/libs/wcm/core/content/sites/templates.html/conf/we-finance` en het thema op `https://[host]:'port'/editor.html/content/dam/formsanddocuments-themes/we-finance/insurance/jcr:content`.
 
-* Het bevat adaptieve formulierregels om services van het formuliergegevensmodel aan te roepen om gebruikersgegevens van aangemelde gebruikers vooraf in te vullen. Er wordt ook een beroep gedaan op services om vooraf informatie te verstrekken aan de hand van het socialezekerheidsnummer of het e-mailadres dat in het formulier is opgegeven. U kunt de modellen met formuliergegevens en de bijbehorende services bekijken op `https://[host]:[Port]/aem/forms.html/content/dam/formsanddocuments-fdm`.
+* Het bevat adaptieve formulierregels om services van het formuliergegevensmodel aan te roepen om gebruikersgegevens van aangemelde gebruikers vooraf in te vullen. Er wordt ook een beroep gedaan op services om vooraf informatie te verstrekken aan de hand van het socialezekerheidsnummer of het e-mailadres dat in het formulier is opgegeven. U kunt de modellen met formuliergegevens en de bijbehorende services bekijken op `https://[host]:'port'/aem/forms.html/content/dam/formsanddocuments-fdm`.
 * Er worden verschillende adaptieve formuliercomponenten gebruikt om invoer vast te leggen en zich aan te passen aan de reacties van de gebruiker. Er worden ook componenten gebruikt, zoals E-mail, die HTML5-invoertypen ondersteunen.
 * Met de knop Mijn voortgang opslaan wordt een unieke id voor de gebruiker gegenereerd en wordt de gedeeltelijk ingevulde toepassing als concept opgeslagen in een knooppunt in de AEM-opslagruimte. Ook wordt er een dialoogvenster weergegeven waarin u toestemming wordt gevraagd om een e-mail te verzenden met een koppeling naar het knooppunt dat de concepttoepassing bevat. Met de knop E-mail verzenden in het bevestigingsvenster wordt een e-mail geactiveerd met een koppeling naar het knooppunt dat het concept bevat.
-* Het gebruikt de Invoke AEM- Werkschema voorleggen actie om de goedkeuringswerkschema van de huisverzekering teweeg te brengen. U kunt de workflow die in dit formulier wordt gebruikt, bekijken op `https://[host]:[Port]/editor.html/conf/global/settings/workflow/models/we-finance-insurance-workflow.html`
+* Het gebruikt de Invoke AEM- Werkschema voorleggen actie om de goedkeuringswerkschema van de huisverzekering teweeg te brengen. U kunt de workflow die in dit formulier wordt gebruikt, bekijken op `https://[host]:'port'/editor.html/conf/global/settings/workflow/models/we-finance-insurance-workflow.html`
 
 Het wordt aanbevolen het formulier te bekijken om inzicht te krijgen in het schema, de componenten, de regels, de modellen van formuliergegevens, de werkstroom van formulieren en de verzendactie die wordt gebruikt om het formulier samen te stellen.
 
@@ -794,7 +794,7 @@ Met grafieken en tabellen worden gegevens opgehaald uit een formuliergegevensmod
 
 #### Zie het zelf {#see-it-yourself-15}
 
-Ga naar We.Finance portal op `https://[publishHost]:[publishPort]/wefinance`, tik op Wealth Management, breid Fondsen uit op Asset Class en tik op We.Finance Blue Chip Growth Fund. Het prospectus &#39;We.Finance Blue Chip Growth Fund&#39; wordt geopend.
+Ga naar We.Finance portal op `https://[publishHost]:[publishPort]/wefinance`, tik op Wealth Management, breid fondsen uit op Asset Class en tik op We.Finance Blue Chip Growth Fund. Het prospectus &#39;We.Finance Blue Chip Growth Fund&#39; wordt geopend.
 
 ### Sarah verkent het prospectus van het Blue Chip Growth Fund om te leren over het fonds {#sarah-explores-the-blue-chip-growth-fund-prospectus-to-learn-about-the-fund}
 
@@ -869,7 +869,7 @@ Beide beleidsvormen gebruiken dezelfde interactieve communicatie. De secties in 
 
 De verwijzingsplaats verstrekt ook een interactieve mededeling die de Dynamica van Microsoft als gegevensbron voor het model van vormgegevens gebruikt. Voer de volgende stappen uit om de interactieve mededeling voor de autoverzekeringsanalyse te vormen:
 
-1. Meld u aan bij `https://[author]:[port]/crx/de as an administrator`.
+1. Meld u aan bij `https://[author]:'port'/crx/de as an administrator`.
 1. Open the `/apps/we-finance/components/ccrui/ccrui.jsp`file.
 1. Stel de waarde in `FormFieldRequestParameter`op `/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal-dynamics`
 1. Tik op Alles **** opslaan. De verwijzingsplaats wordt gevormd om interactieve mededeling te gebruiken die de Dynamica van MS als gegevensbron gebruikt.

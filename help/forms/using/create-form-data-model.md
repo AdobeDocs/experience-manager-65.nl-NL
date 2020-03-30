@@ -9,12 +9,12 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 12e6c325-ace0-4a57-8ed4-6f7ceee23099
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70350add185b932ee604e190aabaf972ff994ba2
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
-# Zelfstudie:Formuliergegevensmodel maken {#tutorial-create-form-data-model}
+# Zelfstudie: Formuliergegevensmodel maken {#tutorial-create-form-data-model}
 
 ![04-create-form-data-model-main](assets/04-create-form-data-model-main.png)
 
@@ -37,7 +37,7 @@ Het formuliergegevensmodel ziet er ongeveer als volgt uit:
 
 ![form-data-model_l](assets/form-data-model_l.png)
 
-**********A. Gevormde gegevensbronnen** B. Gegevensbronschema&#39;s **C.** Beschikbare diensten **D. Gegevensmodelobjecten** E. Gevormde services
+**A.** Gevormde gegevensbronnen **B.** Gegevensbronschema&#39;s **C.** Beschikbare diensten **D.** Gegevensmodelobjecten **E.** Gevormde services
 
 ## Vereisten {#prerequisites}
 
@@ -67,22 +67,22 @@ Ga als volgt te werk om uw MySQL-database te configureren:
    1. Zoek de configuratie **van Apache Sling Connection Pooled DataSource** . Tik om de configuratie te openen in de bewerkingsmodus.
    1. Geef in het dialoogvenster Configuratie de volgende gegevens op:
 
-      * **** Naam gegevensbron: U kunt elke gewenste naam opgeven. Geef bijvoorbeeld **WeRetailMySQL** op.
+      * **Naam gegevensbron:** U kunt elke gewenste naam opgeven. Geef bijvoorbeeld **WeRetailMySQL** op.
       * **Naam** van de de diensteigenschap DataSource: Specificeer naam van het de dienstbezit die de naam DataSource bevat. Het wordt gespecificeerd terwijl het registreren van de gegevensbroninstantie als dienst OSGi. Bijvoorbeeld, **datasource.name**.
       * **JDBC-stuurprogrammaklasse**: Geef de Java-klassenaam van het JDBC-stuurprogramma op. Geef voor MySQL-database **com.mysql.jdbc.Driver** op.
-      * **URI** JDBC-verbinding: Geef de verbindings-URL van de database op. Voor MySQL-database die wordt uitgevoerd op poort 3306 en schema weretail, is de URL: `jdbc:mysql://[server]:3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
-      * **** Gebruikersnaam: Gebruikersnaam van de database. Het is vereist om JDBC-stuurprogramma in staat te stellen een verbinding met de database tot stand te brengen.
-      * **** Wachtwoord: Wachtwoord van de database. Het is vereist om JDBC-stuurprogramma in staat te stellen een verbinding met de database tot stand te brengen.
-      * **** Testen op lenen: Schakel de optie **Testen op lening** in.
-      * **** Testen op rendement: Schakel de optie **Testen op terugkeer** in.
-      * **** Validatiezoekopdracht: Geef een SQL SELECT-query op om verbindingen vanuit de pool te valideren. De query moet ten minste één rij retourneren. Bijvoorbeeld, **selecteer * van douanedetails**.
+      * **URI** JDBC-verbinding: Geef de verbindings-URL van de database op. Voor MySQL-database die wordt uitgevoerd op poort 3306 en schema weretail, is de URL: `jdbc:mysql://'server':3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
+      * **Gebruikersnaam:** Gebruikersnaam van de database. Het is vereist om JDBC-stuurprogramma in staat te stellen een verbinding met de database tot stand te brengen.
+      * **Wachtwoord:** Wachtwoord van de database. Het is vereist om JDBC-stuurprogramma in staat te stellen een verbinding met de database tot stand te brengen.
+      * **Testen op lenen:** Schakel de optie **Testen op lening** in.
+      * **Testen op rendement:** Schakel de optie **Testen op terugkeer** in.
+      * **Validatiezoekopdracht:** Geef een SQL SELECT-query op om verbindingen vanuit de pool te valideren. De query moet ten minste één rij retourneren. Bijvoorbeeld, **selecteer * van douanedetails**.
       * **Transactieisolatie**: Stel de waarde in op **READ_COMTED**.
       Laat andere eigenschappen de [standaardwaarden](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) behouden en tik op **Opslaan**.
    Er wordt een configuratie gemaakt die lijkt op de volgende configuratie.
 
    ![relationele database-data-source-configuration](assets/relational-database-data-source-configuration.png)
 
-## Stap 2:Formuliergegevensmodel maken {#create-fdm}
+## Stap 2: Formuliergegevensmodel maken {#create-fdm}
 
 AEM Forms biedt een intuïtieve gebruikersinterface voor het [maken van een](../../forms/using/data-integration.md#main-pars-header-1524967585)formuliergegevensmodel op basis van geconfigureerde gegevensbronnen. U kunt meerdere gegevensbronnen gebruiken in een formuliergegevensmodel. Voor ons gebruiksgeval, zullen wij de gevormde gegevensbron gebruiken MySQL.
 

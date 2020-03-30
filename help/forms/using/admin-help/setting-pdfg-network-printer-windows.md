@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7620e5e4-022e-49b2-8cfe-d5eec8ab99d7
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -60,7 +60,7 @@ Gebruikers die de rol van PDFG-beheerder of PDFG-gebruiker hebben, kunnen een PD
 
 1. (PDFG-beheerders) Klik in de beheerconsole op Services > PDF Generator > PDFG Network Printer.
 
-   (PDFG-gebruikers) Ga naar `http(s)://[host]:[port]/pdfgui` en klik op de koppeling onder Installatie van PDFG-netwerkprinter.
+   (PDFG-gebruikers) Ga naar `http(s)://[host]:'port'/pdfgui` en klik op de koppeling onder Installatie van PDFG-netwerkprinter.
 
 1. Klik op de koppeling onder de installatie van de PDFG-netwerkprinter. Geef bij de aanwijzing voor gegevens van gebruikersaccounts de gebruikersnaam en het wachtwoord op die u in stap 1 hebt gebruikt om u aan te melden. Er verschijnt een bericht met de mededeling dat de printer is geïnstalleerd.
 

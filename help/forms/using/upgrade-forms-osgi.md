@@ -10,7 +10,7 @@ topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
 translation-type: tm+mt
-source-git-commit: 0a7c243589b410a671674b85d27fad158fe96b2a
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -38,11 +38,11 @@ Ga als volgt te werk om een upgrade uit te voeren van AEM 6.3 Forms of AEM 6.4 F
 
       >[!NOTE]
       >
-      >Nadat de server is gestart, blijven er nog enkele AEM Forms-bundels in de installatiestatus staan. Het aantal bundels kan voor elke installatie variëren. U kunt de status van deze bundels veilig negeren. De bundels worden vermeld op https://[server]:[poort]/systeem/console/.
+      >Nadat de server is gestart, blijven er nog enkele AEM Forms-bundels in de installatiestatus staan. Het aantal bundels kan voor elke installatie variëren. U kunt de status van deze bundels veilig negeren. De bundels worden vermeld op https://&#39;[server]:[port]&#39;/system/console/.
 
-1. AEM Forms add-on-pakket installeren.  De stappen worden hieronder weergegeven:
+1. AEM Forms add-on-pakket installeren. De stappen worden hieronder weergegeven:
 
-   1. Meld u als beheerder aan bij de AEM-server en open het gedeelde pakket. De standaard-URL van het gedeelde pakket is `https://[server]:[port]/crx/packageshare`.
+   1. Meld u als beheerder aan bij de AEM-server en open het gedeelde pakket. De standaard-URL van het gedeelde pakket is `https://'[server]:[port]'/crx/packageshare`.
    1. Zoek in **AEM 6.5 Forms Add-on-pakketten** in het gedeelde pakket naar het pakket dat op uw besturingssysteem van toepassing is en klik op **Download**. Lees en accepteer de licentieovereenkomst en klik op **OK**. Het downloaden begint. Nadat u het bestand hebt gedownload, staat het woord **Gedownload** naast het pakket.
 
       U kunt ook de hyperlinks in de [AEM Forms-releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) gebruiken om een pakket handmatig te downloaden.
@@ -94,13 +94,13 @@ Ga als volgt te werk om een upgrade uit te voeren van AEM 6.3 Forms of AEM 6.4 F
 
 1. Controleer of de upgrade van de server is geslaagd, of alle gegevens zijn gemigreerd en of deze op de normale manier kunnen werken.
 
-   * **** Controleer de status van de bundels: Zorg ervoor dat alle bundels actief zijn.
-   * **** Verifieer replicatie en omgekeerde replicatie: Een aantal gemigreerde formulieren publiceren, invullen en verzenden. Controleer ook de verzonden gegevens.
-   * **** Toegang tot gebruikersinterfaces voor beheer en ontwikkelaar verifiëren: Meld u aan bij een AEM-instantie via een beheerdersaccount en controleer of u toegang hebt tot de volgende URL&#39;s:
+   * **Controleer de status van de bundels:** Zorg ervoor dat alle bundels actief zijn.
+   * **Verifieer replicatie en omgekeerde replicatie:** Een aantal gemigreerde formulieren publiceren, invullen en verzenden. Controleer ook de verzonden gegevens.
+   * **Toegang tot gebruikersinterfaces voor beheer en ontwikkelaar verifiëren:** Meld u aan bij een AEM-instantie via een beheerdersaccount en controleer of u toegang hebt tot de volgende URL&#39;s:
 
-      * `https://[server]:[port]/crx/packmgr`
-      * `https://[server]:[port]/crx/de`
-      * `https://[server]:[port]/aem/forms.html/content/dam/formsanddocuments`
+      * `https://'[server]:[port]'/crx/packmgr`
+      * `https://'[server]:[port]'/crx/de`
+      * `https://'[server]:[port]'/aem/forms.html/content/dam/formsanddocuments`
    >[!NOTE]
    In AEM 6.4 Forms is de structuur van crx-gegevensopslagruimte gewijzigd. Als u een upgrade uitvoert van 6.3-formulieren naar AEM 6.5-formulieren, gebruikt u de gewijzigde paden voor aanpassing die u opnieuw maakt. Zie [Forms Repository Reform in AEM voor een volledige lijst met gewijzigde paden](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md).
 

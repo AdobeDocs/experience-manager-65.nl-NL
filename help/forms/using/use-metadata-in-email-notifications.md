@@ -8,7 +8,7 @@ topic-tags: publish
 discoiquuid: d48b5137-c866-43cd-925b-7a6a8eac8c0b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -155,7 +155,7 @@ U kunt ook aangepaste metagegevens gebruiken in een e-mailmelding. Aangepaste me
 
 [ECMAScript](https://en.wikipedia.org/wiki/ECMAScript) is een scripttaal. Het wordt gebruikt voor client-side scripting en servertoepassingen. Voer de volgende stappen uit om ECMAScript te gebruiken om douanemetagegevens voor een e-mailmalplaatje toe te voegen:
 
-1. Meld u aan bij CRX DE met een beheeraccount. De URL is https://[server]:[poort]/crx/de/index.jsp
+1. Meld u aan bij CRX DE met een beheeraccount. De URL is https://&#39;[server]:[port]&#39;/crx/de/index.jsp
 
 1. Navigeer naar /apps/fd/dashboard/scripts/metadataScripts. Maak een bestand met de extensie .ecma. Bijvoorbeeld usermetadata.ecma
 
@@ -194,7 +194,7 @@ U kunt ook aangepaste metagegevens gebruiken in een e-mailmelding. Aangepaste me
 
 ### Een OSGi-bundel en Java-interface gebruiken om aangepaste metagegevens toe te voegen {#use-an-osgi-bundle-and-java-interface-to-add-custom-metadata}
 
-U kunt de interface WorkitemUserMetadataService Java gebruiken om aangepaste metagegevens voor e-mailsjablonen toe te voegen. U kunt een bundel OSGi tot stand brengen die de interface van Java WorkitemUserMetadataService gebruikt en het aan de server van Vormen van AEM opstelt. De metagegevens worden beschikbaar gesteld voor selectie in de stap Taak toewijzen.
+U kunt de interface WorkitemUserMetadataService Java gebruiken om aangepaste metagegevens voor e-mailsjablonen toe te voegen. U kunt een bundel OSGi tot stand brengen die de interface van Java WorkitemUserMetadataService gebruikt en het aan de server van Vormen AEM opstelt. De metagegevens worden beschikbaar gesteld voor selectie in de stap Taak toewijzen.
 
 Als u een OSGi-bundel met Java-interface wilt maken, voegt u [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) jar en [granite jar](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) -bestanden als externe afhankelijkheden toe aan het OSGi-bundelproject. U kunt om het even welke winde van Java gebruiken om een bundel te creëren OSGi. De volgende procedure verstrekt stappen om Eclipse te gebruiken om een bundel te creëren OSGi:
 

@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: e5989859-e58d-4049-9e0d-c4c848d597af
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -19,7 +19,7 @@ source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
 
 Java API Quick Start (SOAP) is beschikbaar voor de Endpoint Registry.
 
-[QuickStart:Een EJB-eindpunt toevoegen met de Java API](endpoint-registry-java-api-quick.md#quickstart-adding-an-ejb-endpoint-using-the-java-api)
+[QuickStart: Een EJB-eindpunt toevoegen met de Java API](endpoint-registry-java-api-quick.md#quickstart-adding-an-ejb-endpoint-using-the-java-api)
 
 [QuickStart: Een SOAP-eindpunt toevoegen met de Java API](endpoint-registry-java-api-quick.md#quickstart-adding-a-soap-endpoint-using-the-java-api)
 
@@ -31,7 +31,7 @@ Java API Quick Start (SOAP) is beschikbaar voor de Endpoint Registry.
 
 [QuickStart: Het toevoegen van een eindpunt TaskManager gebruikend Java API](endpoint-registry-java-api-quick.md#quickstart-adding-a-taskmanager-endpoint-using-the-java-api)
 
-[QuickStart:Een eindpunt wijzigen met de Java API](endpoint-registry-java-api-quick.md#quickstart-modifying-an-endpoint-using-the-java-api)
+[QuickStart: Een eindpunt wijzigen met de Java API](endpoint-registry-java-api-quick.md#quickstart-modifying-an-endpoint-using-the-java-api)
 
 [QuickStart: Een eindpunt verwijderen met de Java API](endpoint-registry-java-api-quick.md#quickstart-removing-an-endpoint-using-the-java-api)
 
@@ -43,7 +43,7 @@ De verrichtingen van de Vormen van AEM kunnen worden uitgevoerd gebruikend sterk
 
 **Opmerking**: U kunt niet met eindpunten werken door de Webdienst te gebruiken.
 
-## QuickStart:Een EJB-eindpunt toevoegen met de Java API {#quickstart-adding-an-ejb-endpoint-using-the-java-api}
+## QuickStart: Een EJB-eindpunt toevoegen met de Java API {#quickstart-adding-an-ejb-endpoint-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt een EJB-eindpunt toegevoegd aan de service *MyApplication/EncryptDocument*. (Zie EJB-eindpunten [toevoegen](/help/forms/developing/programmatically-endpoints.md#adding-ejb-endpoints).)
 
@@ -109,7 +109,7 @@ In het volgende Java-codevoorbeeld wordt een EJB-eindpunt toegevoegd aan de serv
          //Set connection properties    required to invoke AEM Forms
          Properties ConnectionProps = new Properties();
  
-         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -208,7 +208,7 @@ In het volgende Java-codevoorbeeld wordt een SOAP-eindpunt toegevoegd aan de ser
      try{
          //Set connection properties    required to invoke AEM Forms
          Properties ConnectionProps = new Properties();
-         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -311,7 +311,7 @@ In het volgende Java-codevoorbeeld wordt het eindpunt van een gecontroleerde map
      try{
          //Set connection properties    required to invoke AEM Forms
          Properties ConnectionProps = new Properties();
-         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -379,7 +379,7 @@ In het volgende Java-codevoorbeeld wordt het eindpunt van een gecontroleerde map
 
 ## QuickStart: Een e-maileindpunt toevoegen met de Java API {#quickstart-adding-an-email-endpoint-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een e-maileindpunt toegevoegd aan de service *MyApplication/* EncryptDocument.(Zie E-maileindpunten [toevoegen](/help/forms/developing/programmatically-endpoints.md#adding-email-endpoints).)
+In het volgende Java-codevoorbeeld wordt een e-maileindpunt toegevoegd aan de service *MyApplication/* EncryptDocument. (Zie E-maileindpunten [toevoegen](/help/forms/developing/programmatically-endpoints.md#adding-email-endpoints).)
 
 >[!NOTE]
 >
@@ -446,7 +446,7 @@ In het volgende Java-codevoorbeeld wordt een e-maileindpunt toegevoegd aan de se
      try{
          //Set connection properties    required to invoke AEM Forms
          Properties ConnectionProps = new Properties();
-         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -590,7 +590,7 @@ In het volgende Java-codevoorbeeld wordt een eindpunt Remoting toegevoegd aan de
          //Set connection properties    required to invoke AEM Forms
          Properties ConnectionProps = new Properties();
  
-         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -693,7 +693,7 @@ In het volgende Java-codevoorbeeld wordt een TaskManager-eindpunt toegevoegd aan
          //Set connection properties    required to invoke AEM Forms
          Properties ConnectionProps = new Properties();
  
-         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -734,7 +734,7 @@ In het volgende Java-codevoorbeeld wordt een TaskManager-eindpunt toegevoegd aan
  
 ```
 
-## QuickStart:Een eindpunt wijzigen met de Java API {#quickstart-modifying-an-endpoint-using-the-java-api}
+## QuickStart: Een eindpunt wijzigen met de Java API {#quickstart-modifying-an-endpoint-using-the-java-api}
 
 Het volgende de codevoorbeeld van Java wijzigt een Gecontroleerd eindpunt van de Omslag.Het eindpunt is voor het proces *MyApplication/EncryptDocument* . De gecontroleerde map wordt gewijzigd in `C:\NewWatchedFolder`. (Zie Eindpunten [wijzigen](/help/forms/developing/programmatically-endpoints.md#modifying-endpoints).)
 
@@ -804,7 +804,7 @@ Het volgende de codevoorbeeld van Java wijzigt een Gecontroleerd eindpunt van de
  
          //Set connection properties    required to invoke AEM Forms
          Properties ConnectionProps = new Properties();
-         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -884,7 +884,7 @@ Het volgende de codevoorbeeld van Java wijzigt een Gecontroleerd eindpunt van de
  
 ```
 
-## QuickStart:Een eindpunt verwijderen met de Java API {#quickstart-removing-an-endpoint-using-the-java-api}
+## QuickStart: Een eindpunt verwijderen met de Java API {#quickstart-removing-an-endpoint-using-the-java-api}
 
 De volgende code van Java verwijdert een eindpunt EJB uit de dienst genoemd *MyApplication/EncryptDocument*. (Zie Eindpunten [verwijderen](/help/forms/developing/programmatically-endpoints.md#removing-endpoints).)
 
@@ -956,7 +956,7 @@ De volgende code van Java verwijdert een eindpunt EJB uit de dienst genoemd *MyA
  
          //Set connection properties    required to invoke AEM Forms
          Properties ConnectionProps = new Properties();
-         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
@@ -1070,7 +1070,7 @@ De volgende code van Java wint informatie over een Gecontroleerd eindpunt van de
  
          //Set connection properties    required to invoke AEM Forms
          Properties ConnectionProps = new Properties();
-         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://[server]:[port]");
+         ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "https://'[server]:[port]'");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
          ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");

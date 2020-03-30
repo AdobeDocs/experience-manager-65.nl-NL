@@ -9,7 +9,7 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: d211d8b0-e75f-49c3-808d-5d0e26ad3a6b
 translation-type: tm+mt
-source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -35,7 +35,7 @@ Voltooi deze procedure gebruikend de Webpagina van Toepassingen en van de Dienst
 1. Meld u aan bij de beheerconsole door de volgende URL te typen in een webbrowser:
 
    ```as3
-            https://[host name]:[port]/adminui
+            https://[host name]:'port'/adminui
    ```
 
 1. Klik op **Services > Toepassingen en services > Voorkeuren**.
@@ -70,7 +70,7 @@ Sommige services van formulierservers staan niet-geverifieerde (anonieme) aanroe
 1. Meld u aan bij de beheerconsole door de volgende URL te typen in een webbrowser:
 
    ```as3
-            https://[host name]:[port]/adminui
+            https://[host name]:'port'/adminui
    ```
 
 1. Klik op **Services > Toepassingen en services > Servicebeheer**.
@@ -112,7 +112,7 @@ Eindgebruikers kunnen zich via Workbench, AEM Forms-webtoepassingen of aangepast
 1. Meld u aan bij de beheerconsole door de volgende URL te typen in een webbrowser:
 
    ```as3
-            https://[host name]:[port]/adminui
+            https://[host name]:'port'/adminui
    ```
 
 1. Klik op **Instellingen > Gebruikersbeheer > Configuratie > Configuratiebestanden** importeren en exporteren.

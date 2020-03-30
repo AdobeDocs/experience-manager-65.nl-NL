@@ -10,7 +10,7 @@ topic-tags: forms-app
 discoiquuid: 88555db2-712f-4ef9-bf47-76c7ba83d964
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4a0f3f64095b4726f295a0c1857a1e999353f5f5
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -150,7 +150,7 @@ U moet het Xcode-project archiveren om het installatieprogramma (een .ipa-bestan
 1. Selecteer **Opslaan voor Enterprise of Ad hoc-implementatie** als de distributiemethode en klik op **Volgende**.
 1. Selecteer de gewenste **Code Signing Identity** en klik op **Next**. Klik op **Toestaan** om de handtekening toe te passen.
 1. Geef een naam op voor de app en selecteer **Opslaan voor Enterprise Distribution**.
-1. Geef de **toepassings-URL** voor de app op. Geef bijvoorbeeld een URL op om de toepassing op een CRX-server te hosten. `https://[LC_host]:[port]/lc/content/distribution/mobileworkspace/APP_NAME.ipa`
+1. Geef de **toepassings-URL** voor de app op. Geef bijvoorbeeld een URL op om de toepassing op een CRX-server te hosten. `https://[LC_host]:'port'/lc/content/distribution/mobileworkspace/APP_NAME.ipa`
 1. Geef AEM-formulieren op in het veld **Titel** .
 1. Klik op **Opslaan** en sluit Xcode.
 

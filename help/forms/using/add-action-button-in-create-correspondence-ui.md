@@ -10,7 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: 046e3314-b436-47ed-98be-43d85f576789
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5a586758da84f467e075adcc33cdcede2fbf09c7
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -40,7 +40,7 @@ Het toevoegen van een knop met een actie (hier verzend brief voor overzicht) aan
 
 ### De knop toevoegen aan de gebruikersinterface Correspondentie maken {#add-the-button-to-the-create-correspondence-user-interface}
 
-1. Ga naar Beheerder `https://[server]:[port]/[ContextPath]/crx/de` en meld u aan.
+1. Ga naar Beheerder `https://'[server]:[port]'/[ContextPath]/crx/de` en meld u aan.
 1. Maak in de map Apps een map met de naam pad/structuur, vergelijkbaar `defaultApp` met de map defaultApp (in configuratiemap). Gebruik de volgende stappen om de map te maken:
 
    1. Klik met de rechtermuisknop op de map **defaultApp** in het volgende pad en selecteer **Overlay Node**:
@@ -51,11 +51,11 @@ Het toevoegen van een knop met een actie (hier verzend brief voor overzicht) aan
 
    1. Zorg ervoor dat het dialoogvenster Overlay-knooppunt de volgende waarden heeft:
 
-      **** Pad:/libs/fd/cm/config/defaultApp/
+      **Pad:** /libs/fd/cm/config/defaultApp/
 
-      **** Locatie bedekking: /apps/
+      **Locatie bedekking:** /apps/
 
-      **** Identieke knooppunttypen:Ingeschakeld
+      **Identieke knooppunttypen:** Ingeschakeld
 
       ![Overlay-knooppunt](assets/2_defaultappoverlaynode.png)
 
@@ -131,11 +131,11 @@ Het bestand ACMExtensionsMessages.properties bevat labels en knopinfo-berichten 
 
 1. Zorg ervoor dat het dialoogvenster Overlay-knooppunt de volgende waarden heeft:
 
-   **** Pad:/libs/fd/cm/config/defaultApp/locale
+   **Pad:** /libs/fd/cm/config/defaultApp/locale
 
-   **** Locatie bedekking: /apps/
+   **Locatie bedekking:** /apps/
 
-   **** Identieke knooppunttypen:Ingeschakeld
+   **Identieke knooppunttypen:** Ingeschakeld
 
 1. Click **OK**.
 1. Klik op Alles **opslaan**.
@@ -167,7 +167,7 @@ Nadat u elke wijziging aan de serverzijde hebt aangebracht, start u de bundel Ad
 >
 >Mogelijk moet u de cache van de browser wissen.
 
-1. Ga naar `https://[host]:[port]/system/console/bundles`. Meld u indien nodig aan als beheerder.
+1. Ga naar `https://[host]:'port'/system/console/bundles`. Meld u indien nodig aan als beheerder.
 
 1. Zoek de Adobe Asset Composer Building Block-bundel. Start de bundel opnieuw: Klik op Stoppen en vervolgens op Start.
 
@@ -189,7 +189,7 @@ De handeling/knop bij klikken op handeling/knop wordt uitgevoerd met logica voor
 * Nieuwe toegevoegde actie in-/uitschakelen: doet dit door de actionEnabled() functie te negeren.
 * Werkelijke afhandeling van actie wanneer de gebruiker op de knop klikt: gedaan door de implementatie van de handleAction() functie te negeren.
 
-1. Ga naar `https://[server]:[port]/[ContextPath]/crx/de`. Meld u indien nodig aan als beheerder.
+1. Ga naar `https://'[server]:[port]'/[ContextPath]/crx/de`. Meld u indien nodig aan als beheerder.
 
 1. Maak in de map Apps een map met de naam `js` in de tak /apps van CRX met een structuur die lijkt op de volgende map:
 
@@ -203,11 +203,11 @@ De handeling/knop bij klikken op handeling/knop wordt uitgevoerd met logica voor
 
    1. Zorg ervoor dat het dialoogvenster Overlay-knooppunt de volgende waarden heeft:
 
-      **** Pad: /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/js
+      **Pad:** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/js
 
-      **** Locatie bedekking: /apps/
+      **Locatie bedekking:** /apps/
 
-      **** Identieke knooppunttypen:Ingeschakeld
+      **Identieke knooppunttypen:** Ingeschakeld
 
    1. Click **OK**.
    1. Klik op Alles **opslaan**.
@@ -338,7 +338,7 @@ components.zip
 
 Het LCA-proces wordt uitgevoerd op de LiveCycle-server en vereist het serveradres en de aanmeldingsgegevens.
 
-1. Ga naar Beheerder `https://[server]:[port]/system/console/configMgr` en meld u aan.
+1. Ga naar Beheerder `https://'[server]:[port]'/system/console/configMgr` en meld u aan.
 1. Zoek Adobe LiveCycle Client SDK Configuration en klik op **Edit** (bewerkingspictogram). Het deelvenster Configuraties wordt geopend.
 
 1. Voer de volgende gegevens in en klik op **Opslaan**:
@@ -380,7 +380,7 @@ Het vereiste LiveCycle-proces dat het e-mailserviceproces mogelijk maakt.
 
 Vermeld in de AEM-server de LiveCycle-services die u wilt openen tot de AEM-server.
 
-1. Meld u aan als beheerder bij `https:/[host]/:[port]/system/console/configMgr`.
+1. Meld u aan als beheerder bij `https:/[host]:'port'/system/console/configMgr`.
 
 1. Zoek en klik op **Adobe LiveCycle Client SDK Configuration**. Het deelvenster Configuration van Adobe LiveCycle Client SDK wordt weergegeven.
 1. Klik in de lijst Servicenaam op + pictogram en voeg een serviceName **SendLetterForReview/SendLetterForReviewProcess** toe.
@@ -413,7 +413,7 @@ Zie [AEM-formulieren verbinden met Adobe LiveCycle](/help/forms/using/aem-livecy
 
 1. Geef de volgende parameters op in het configuratiebestand:
 
-   * **crx.serverUrl**=https:/[host]/:[port]/[context path]/[AEM URL]
+   * **crx.serverUrl**=https:/host:port/[contextpad]/[AEM URL]
    * **crx.username**= AEM-gebruikersnaam
    * **crx.password**= AEM-wachtwoord
    * **crx.appRoot**=/content/apps/cm

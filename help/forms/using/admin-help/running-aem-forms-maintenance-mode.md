@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 94047c12-ba3d-457a-954f-e035c7cc3ecd
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -28,7 +28,7 @@ U moet voorkomen dat processen worden aangeroepen terwijl de server zich in de o
 
 1. Voer in een webbrowser de volgende gegevens in:
 
-   `https://`*[hostname ]*`:`*[port]* `/dsc/servlet/DSCStartupServlet?maintenanceMode=pause&user=`*[administrator gebruikersnaam ]*`&password=`*[password]*
+   `https://[hostname]:[port]/dsc/servlet/DSCStartupServlet?maintenanceMode=pause&user=[administrator username]&password=[password]`
 
    Een bericht &quot;nu gepauzeerd&quot;wordt getoond in het browser venster.
 
@@ -40,7 +40,7 @@ U moet voorkomen dat processen worden aangeroepen terwijl de server zich in de o
 
 1. Voer in een webbrowser de volgende gegevens in:
 
-   `https://`*[hostnaam]:[poort ]*,`/dsc/servlet/DSCStartupServlet?maintenanceMode=isPaused&user=`*[beheerdersgebruikersnaam]* , `&password=`*[wachtwoord ]*
+   `https://[hostname]:[port]/dsc/servlet/DSCStartupServlet?maintenanceMode=isPaused&user=[administrator username]&password=[password]`
 
    De status wordt weergegeven in het browservenster. De status &quot;true&quot; geeft aan dat de server wordt uitgevoerd in de onderhoudsmodus en &quot;false&quot; geeft aan dat de server niet in de onderhoudsmodus staat.
 
@@ -48,7 +48,7 @@ U moet voorkomen dat processen worden aangeroepen terwijl de server zich in de o
 
 1. Voer in een webbrowser de volgende gegevens in:
 
-   `https://`*[hostnaam]:[poort ]*,`/dsc/servlet/DSCStartupServlet?maintenanceMode=resume&user=`*[beheerdersgebruikersnaam]* , `&password=`*[wachtwoord ]*
+   `https://[hostname]:[port]/dsc/servlet/DSCStartupServlet?maintenanceMode=resume&user=[administrator username]&password=[password]`
 
    Er wordt een bericht &quot;now running&quot; weergegeven in het browservenster.
 

@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/health_monitor
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b8f8bddc-0d38-4d5e-b33f-978f04bc16c6
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -69,7 +69,7 @@ Het verzamelen van de systeemstatistieken die de Health Monitor bevolken, heeft 
 
 ## Java-opties toevoegen aan WebLogic {#add-java-options-to-weblogic}
 
-1. Start de WebLogic-beheerconsole door https://[hostnaam]te typen:[poort]/console in de URL-regel van een webbrowser.
+1. Start de WebLogic-beheerconsole door https://[hostnaam]:&#39;port&#39;/console te typen op de URL-regel van een webbrowser.
 1. Typ de gebruikersnaam en het wachtwoord die u voor het WebLogic Server-domein hebt gemaakt en klik op Log Under Change Center, klik op Vergrendelen en bewerken.
 1. Klik onder Domeinstructuur op Omgeving > Servers en klik in het rechterdeelvenster op de naam van de beheerde server.
 1. Voor het volgende scherm, klik het lusje van de Configuratie > het Begin tabel van de Server.

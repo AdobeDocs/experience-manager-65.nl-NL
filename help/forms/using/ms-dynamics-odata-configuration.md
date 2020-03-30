@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 627507f5-1ffc-48f8-8cc9-5dbc5e409ae3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5831c173114a5a6f741e0721b55d85a583e52f78
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -55,7 +55,7 @@ Ga als volgt te werk om Reactie URL voor geregistreerde toepassing van de Dynami
 
 1. Ga naar Microsoft Azure Active Directory-account en voeg de volgende URL voor de configuratie van de cloudservice toe in de instellingen voor URL&#39;s **beantwoorden** voor uw geregistreerde toepassing:
 
-   `https://[server]:[port]/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
+   `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
    ![Azure-directory](assets/azure_directory_new.png)
 
@@ -97,7 +97,7 @@ Doe het volgende om een cliënt OAuth op de Actieve machine van de Diensten van 
 
    * `Client-ID` is een cliëntidentiteitskaart u het gebruiken van om het even welke generator kunt produceren GUID.
    * `redirect-uri` is URL aan de de wolkendienst van de Dynamiek van Microsoft OData op Vormen AEM. De standaardcloudservice die wordt geïnstalleerd met het pakket AEM Forms wordt geïmplementeerd op de volgende URL:
-      `https://[server]:[port]/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
+      `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
 1. Voer de volgende opdracht uit om toegang te verlenen op de AD FS-computer:
 
@@ -120,7 +120,7 @@ De configuratie van **MS Dynamics OData Cloud Service (OData Service)** wordt ge
 
    1. Voer de waarde in voor het veld **Serviceruimte** . Ga naar de instantie van de Dynamiek en navigeer aan de Middelen **van de** Ontwikkelaar om de waarde voor het gebied van de Wortel van de Dienst te bekijken. Bijvoorbeeld https://&lt;huurder-name>/api/data/v9.1/
 
-   1. Vervang de standaardwaarden in **Cliënt ID**(die ook als **Toepassings identiteitskaart** wordt bedoeld), Geheim **van de** Cliënt, **OAuth URL**, **Vernieuwt Symbolische URL********** , Symbolische URLToegangstoken, enResource gebieden met waarden van uw de dienstconfiguratie van de Dynamiek van Microsoft. Het is verplicht de URL van de dynamische instantie op te geven in het veld **Resource** om Microsoft Dynamics te configureren met een formuliergegevensmodel. Gebruik de URL van de hoofdmap van de service om de URL van de dynamische instantie af te leiden. Bijvoorbeeld [https://org.crm.dynamics.com](https://org.crm.dynamics.com/).
+   1. Vervang de standaardwaarden in **Cliënt ID**(die ook als **Toepassings identiteitskaart** wordt bedoeld), Geheim **van de** Cliënt, **OAuth URL**, **Vernieuwt Symbolische URL********** , Symbolische URLToegangstoken, en Resource gebieden met waarden van uw de dienstconfiguratie van de Dynamiek van Microsoft. Het is verplicht de URL van de dynamische instantie op te geven in het veld **Resource** om Microsoft Dynamics te configureren met een formuliergegevensmodel. Gebruik de URL van de hoofdmap van de service om de URL van de dynamische instantie af te leiden. Bijvoorbeeld [https://org.crm.dynamics.com](https://org.crm.dynamics.com/).
 
    1. Specificeer **openid** op het gebied van het Toepassingsgebied **van de** Vergunning voor vergunningsproces op de Dynamica van Microsoft.
    ![Verificatie-instellingen](assets/dynamics_authentication_settings_new.png)
@@ -140,7 +140,7 @@ Bij het openen van het model van vormgegevens voor het eerst, verbindt het met d
 
 Als u het formuliergegevensmodel wilt bekijken, gaat u naar **[!UICONTROL Formulieren > Gegevensintegratie]**. Selecteer FDM voor **Microsoft Dynamics** en klik op **Bewerken** om het model met formuliergegevens te openen in de bewerkingsmodus. U kunt het formuliergegevensmodel ook rechtstreeks openen via de volgende URL:
 
-`https://[server]:[port]/aem/fdm/editor.html/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`
+`https://'[server]:[port]'/aem/fdm/editor.html/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`
 
 ![default-fdm-1](assets/default-fdm-1.png)
 

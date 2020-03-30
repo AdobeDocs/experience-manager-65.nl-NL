@@ -10,7 +10,7 @@ topic-tags: process-reporting
 discoiquuid: 222daab8-4514-44a5-b5c9-c5510809c74e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -32,14 +32,14 @@ Alvorens om het even welk douanerapport toe te voegen, voer de volgende malplaat
 
 CRX QueryBuilder REST-interface stelt de functionaliteit van de Asset Share Query Builder beschikbaar via een Java API en een REST API. Leer hoe te om [CRX VraagBuilder REST interface](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html)te gebruiken, alvorens de volgende stappen uit te voeren:
 
-1. Bladeren naar de URL `https://[server]:[port]/lc/bin/querybuilder.json`
+1. Bladeren naar de URL `https://'[server]:[port]'/lc/bin/querybuilder.json`
 1. Maak een query op basis van de structuur en knoopeigenschappen van het opslagknooppunt Process Reporting.
 
    U kunt optionele parameters opgeven voor verschuiving, beperking, treffers en eigenschappen. U kunt de argumenten voor statische rapporten hard coderen en de parameters van UI voor dynamische rapporten halen.
 
    Om alle procesnamen te halen, is de vraag:
 
-   `https://[Server]:[Port]/lc/bin/querybuilder.json?exact=false&p.hits=selective&p.properties=pmProcessTitle&path=%2fcontent%2freporting%2fpm&property=pmNodeType&property.operation=equals&property.value=ProcessType&type=sling%3aFolder`
+   `https://'[server]:[port]'/lc/bin/querybuilder.json?exact=false&p.hits=selective&p.properties=pmProcessTitle&path=%2fcontent%2freporting%2fpm&property=pmNodeType&property.operation=equals&property.value=ProcessType&type=sling%3aFolder`
 
    >[!NOTE]
    >

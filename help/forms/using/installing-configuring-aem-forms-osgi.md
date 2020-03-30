@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dfc473eb-6091-4f5d-a5a0-789972c513a9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5831c173114a5a6f741e0721b55d85a583e52f78
+source-git-commit: f323b490c37effc3cbb36c793b62fa788eca9545
 
 ---
 
@@ -20,7 +20,7 @@ source-git-commit: 5831c173114a5a6f741e0721b55d85a583e52f78
 
 AEM Forms biedt een set formulieren voor het verkrijgen van gegevens van eindgebruikers: adaptieve formulieren, HTML5-formulieren en PDF-formulieren. Het programma bevat ook gereedschappen waarmee u alle beschikbare formulieren op een webpagina kunt weergeven, het gebruik van formulieren kunt analyseren en doelgebruikers kunt selecteren op basis van hun profiel. Deze mogelijkheden zijn opgenomen in het invoegpakket voor AEM Forms. Het invoegpakket wordt geïmplementeerd op een instantie Auteur of Publiceren van AEM.
 
-**** Aangepaste formulieren: Deze formulieren veranderen de weergave op basis van de schermgrootte van het apparaat, zijn aantrekkelijk en interactief van aard. Adaptieve formulieren kunnen ook worden geïntegreerd met Adobe Analytics, Adobe Sign en Adobe Target. Hierdoor kunt u op basis van demografie en andere functies persoonlijke formulieren en procesgeoriënteerde ervaringen aan gebruikers aanbieden. U kunt adaptieve formulieren ook integreren met Adobe Sign.
+**Aangepaste formulieren:** Deze formulieren veranderen de weergave op basis van de schermgrootte van het apparaat, zijn aantrekkelijk en interactief van aard. Adaptieve formulieren kunnen ook worden geïntegreerd met Adobe Analytics, Adobe Sign en Adobe Target. Hierdoor kunt u op basis van demografie en andere functies persoonlijke formulieren en procesgeoriënteerde ervaringen aan gebruikers aanbieden. U kunt adaptieve formulieren ook integreren met Adobe Sign.
 
 **PDF-formulieren** zijn geschikt voor pixelperfecte afdrukken en voor het vastleggen van digitale gegevens in een PDF-document. In de digitale avatar kunt u deze formulieren invullen met Adobe Acrobat of Acrobat Reader. U kunt deze formulieren hosten op uw website of met de portal Formulieren deze formulieren weergeven op een AEM-site. U kunt deze formulieren ook als bijlagen naar anderen verzenden. Deze formulieren zijn het meest geschikt voor desktopomgevingen.
 
@@ -44,14 +44,14 @@ Voordat u de mogelijkheid voor het vastleggen van gegevens van AEM Forms gaat in
 * Er wordt een AEM-instantie uitgevoerd. In AEM-terminologie is een &quot;instantie&quot; een kopie van AEM die wordt uitgevoerd op een server in de auteur- of publicatiemodus. U hebt ten minste twee [AEM-instanties nodig (één auteur en één publiceer)](/help/sites-deploying/deploy.md) om de mogelijkheden voor gegevensvastlegging in AEM Forms uit te voeren:
 
    * **Auteur**: Een AEM-instantie die wordt gebruikt om inhoud te maken, te uploaden en te bewerken en om de website te beheren. Wanneer de inhoud gereed is om live te gaan, wordt deze gekopieerd naar de publicatie-instantie.
-   * **Publiceren**: Een AEM-instantie die de gepubliceerde inhoud via internet of een intern netwerk aan het publiek beschikbaar stelt.
+   * **Publiceren**: Een AEM-instantie die de gepubliceerde inhoud via internet of een intern netwerk aan het publiek levert.
 
 * Er wordt voldaan aan de geheugenvereisten. AEM Forms add-on package vereist:
 
    * 15 GB tijdelijke ruimte voor op Microsoft Windows gebaseerde installaties.
    * 6 GB tijdelijke ruimte voor UNIX-installaties.
 
-* De replicatie en omgekeerde replicatie voor de auteur en publiceer instanties worden geplaatst. Zie [Replicatie](/help/sites-deploying/replication.md)voor meer informatie.
+* De replicatie en omgekeerde replicatie voor de auteur en publiceer instanties worden geplaatst. For details, see [Replication](/help/sites-deploying/replication.md).
 * Voor op UNIX gebaseerde systemen:
 
    * Installeer de volgende 32-bits pakketten van de installatiemedia:
@@ -130,9 +130,9 @@ AEM Forms heeft een aantal verplichte en optionele configuraties. De verplichte 
 Voer de volgende stappen op alle Auteur uit en publiceer instanties om de bibliotheken op te starten afvaardigen:
 
 1. Stop de onderliggende AEM-instantie.
-1. Open de [AEM-installatiemap]\crx-quickstart\conf\sling.properties.
+1. Open het `[AEM installation directory]\crx-quickstart\conf\sling.properties` bestand om het te bewerken.
 
-   Als u de [AEM-installatiemap]\crx-quickstart\bin\start.bat hebt gebruikt om AEM te starten, bewerkt u de sling.properties op de locatie [AEM_root]\crx-quickstart\.
+   Als u eerst AEM hebt gestart, bewerkt u de eigenschappen sling.property op `[AEM installation directory]\crx-quickstart\bin\start.bat` `[AEM_root]\crx-quickstart\`.
 
 1. Voeg de volgende eigenschappen toe aan het bestand sling.properties:
 
@@ -148,7 +148,7 @@ Voer de volgende stappen op alle Auteur uit en publiceer instanties om de biblio
 
 Voer de volgende stappen uit op alle instanties Auteur en Publiceren om het pakket te whitelist:
 
-1. Open AEM Configuration Manager in een browservenster. De standaard-URL is `https://[server]:[port]/system/console/configMgr`.
+1. Open AEM Configuration Manager in een browservenster. De standaard-URL is `https://'[server]:[port]'/system/console/configMgr`.
 1. Zoek naar **com.adobe.cq.deserfw.impl.DeserializationFirewallImpl.name** en open de configuratie.
 1. Voeg het pakket **sun.util.agenda** toe aan het veld **whitelist** . Click **Save**.
 1. Herhaal stap 1-3 voor alle instanties Auteur en Publiceren.
@@ -169,7 +169,7 @@ Dispatcher is een programma voor het in cache plaatsen en taakverdeling voor AEM
 
 1. Configureer de referentiefilterservice:
 
-   Meld u als beheerder aan bij het configuratiebeheer van Apache Felix. De standaard-URL van de configuratiemanager is https://[server]:[port_number]/system/console/configMgr. Selecteer in het menu **Configurations **de optie Filter **** Apache-schuifverwijzing. Voer in het veld Hosts toestaan de hostnaam van de verzender in om het als referentie toe te staan en klik op **Opslaan**. De indeling van de invoer is https://[server]:[poort].
+   Meld u als beheerder aan bij het configuratiebeheer van Apache Felix. De standaard-URL van het configuratiemanager is `https://[server]:[port_number]/system/console/configMgr`. Selecteer in het menu **Configuraties** de optie **Filter** Apache-schuifverwijzing. Voer in het veld Hosts toestaan de hostnaam van de verzender in om het als referentie toe te staan en klik op **Opslaan**. De indeling van de invoer is &quot;https://[server]:[port]&quot;.
 
 #### Cache configureren {#configure-cache}
 
@@ -180,7 +180,7 @@ Caching is een mechanisme om gegevenstoegang te verkorten, latentie te verminder
 
 Voer de volgende stappen uit om de cache voor adaptieve formulieren te configureren:
 
-1. Ga naar AEM webconsoleconfiguratiebeheer op https://[server]:[poort]/systeem/console/configMgr.
+1. Ga naar AEM webconsoleconfiguratiebeheer op https://&#39;[server]:[port]&#39;/system/console/configMgr.
 1. Klik de **Aangepaste Vorm en de Interactieve Configuratie** van het Kanaal van de Communicatie van het Web om zijn configuratiewaarden uit te geven. Geef in het dialoogvenster Configuratiewaarden bewerken het maximumaantal formulieren of documenten op dat een instantie van de AEM Forms-server in cache kan plaatsen in het veld **Aantal adaptieve formulieren** . De standaardwaarde is 100. Click **Save**.
 
    >[!NOTE]

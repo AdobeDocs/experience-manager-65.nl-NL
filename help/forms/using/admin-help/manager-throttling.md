@@ -10,14 +10,14 @@ geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9a8b4e3a-f416-4dc6-a90a-9018df5c844e
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
 
 # Tijdelijk beheer en vertraging{#work-manager-and-throttling}
 
-AEM-formulieren (en eerdere versies) gebruikten JMS-wachtrijen om bewerkingen asynchroon uit te voeren. In AEM-formulieren zijn JMS-wachtrijen vervangen door Work Manager. Dit document bevat achtergrondinformatie over Werkbeheer en instructies voor het configureren van opties voor het vertragen van werkbeheer.
+In AEM-formulieren (en eerdere versies) werden wachtrijen voor JMS gebruikt om bewerkingen asynchroon uit te voeren. In AEM-formulieren zijn JMS-wachtrijen vervangen door Work Manager. Dit document bevat achtergrondinformatie over Werkbeheer en instructies voor het configureren van opties voor het vertragen van werkbeheer.
 
 ## Over langlevende (asynchrone) bewerkingen {#about-long-lived-asynchronous-operations}
 
@@ -27,7 +27,7 @@ Langdurige bewerkingen kunnen systemen omvatten of zelfs verder reiken dan de or
 
 ## Info over Werkbeheer {#about-work-manager}
 
-AEM-formulieren (en eerdere versies) gebruikten JMS-wachtrijen om bewerkingen asynchroon uit te voeren. In AEM-formulieren wordt WorkManager gebruikt om asynchrone bewerkingen via beheerde threads te plannen en uit te voeren.
+AEM-formulieren (en eerdere versies) gebruikten JMS-wachtrijen om bewerkingen asynchroon uit te voeren. AEM de vormen gebruiken de Manager van het Werk om asynchrone verrichtingen via beheerde draden te plannen en uit te voeren.
 
 Asynchrone bewerkingen worden op deze manier afgehandeld:
 
@@ -71,7 +71,7 @@ U kunt het vertragen voor de Manager van het Werk vormen, zodat de het werkpunte
   </tr>
   <tr>
    <td><code>Dadobe.workmanager.allocate.max-batch-size</code></td>
-   <td><p>Hiermee geeft u de maximale batchgrootte voor workmanager op. De standaardbatch-grootte is 10.</p><p>Als de status van een proces in de werkmanager niet wordt bijgewerkt, zelfs nadat de taak is voltooid, stelt u de batchgrootte in op 1.</p></td>
+   <td><p>Hiermee geeft u de maximale batchgrootte voor workmanager op. De standaardgrootte van de batch is 10.</p><p>Als de status van een proces in de werkmanager niet wordt bijgewerkt, zelfs nadat de taak is voltooid, stelt u de batchgrootte in op 1.</p></td>
   </tr>
  </tbody>
 </table>
@@ -84,7 +84,7 @@ U kunt het vertragen voor de Manager van het Werk vormen, zodat de het werkpunte
 
 **Java-opties toevoegen aan WebLogic**
 
-1. Start de WebLogic-beheerconsole door de `https://`*[hostnaam ]*van de`:`*[poort]* in een webbrowser te typen `/console` .
+1. Start de WebLogic-beheerconsole `https://[host name]:[port]/console` in een webbrowser.
 1. Typ de gebruikersnaam en het wachtwoord die u voor het WebLogic Server-domein hebt gemaakt en klik op Log Under Change Center, klik op Vergrendelen en bewerken.
 1. Klik onder Domeinstructuur op Omgeving > Servers en klik in het rechterdeelvenster op de naam van de beheerde server.
 1. Voor het volgende scherm, klik het lusje van de Configuratie > het Begin tabel van de Server.

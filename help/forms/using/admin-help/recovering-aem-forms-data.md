@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 4e093114-219b-4018-9530-9002eb665448
 translation-type: tm+mt
-source-git-commit: 3e83611f6b30cee774b72194bee1d03e323a6a57
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -25,13 +25,13 @@ In deze sectie worden de stappen beschreven die zijn vereist om de AEM-formulier
 
 AEM-formulieren moeten op betrouwbare wijze worden hersteld van de volgende fouten:
 
-**** Schijfstoring: De meest recente back-upmedia zijn vereist om de database-inhoud te herstellen.
+**Schijfstoring:** De meest recente back-upmedia zijn vereist om de database-inhoud te herstellen.
 
-**** Gegevensbeschadiging: Bestandssystemen registreren geen eerdere transacties en systemen overschrijven mogelijk per ongeluk de vereiste procesgegevens.
+**Gegevensbeschadiging:** Bestandssystemen registreren geen eerdere transacties en systemen overschrijven mogelijk per ongeluk de vereiste procesgegevens.
 
-**** Gebruikersfout: De terugwinning is beperkt tot de gegevens die door het gegevensbestand ter beschikking worden gesteld. Als de gegevens zijn opgeslagen en beschikbaar zijn, wordt de herstelbewerking vereenvoudigd.
+**Gebruikersfout:** De terugwinning is beperkt tot de gegevens die door het gegevensbestand ter beschikking worden gesteld. Als de gegevens zijn opgeslagen en beschikbaar zijn, wordt de herstelbewerking vereenvoudigd.
 
-**** Stroomuitval, systeemuitval: Bestandssysteem-API&#39;s zijn vaak niet op een robuuste manier ontworpen of gebruikt die bescherming biedt tegen onverwachte systeemfouten. Als een stroomuitval of een systeemcrash optreedt, is de documentinhoud die in de database is opgeslagen waarschijnlijk up-to-date dan de inhoud die op een bestandssysteem is opgeslagen.
+**Stroomuitval, systeemuitval:** Bestandssysteem-API&#39;s zijn vaak niet op een robuuste manier ontworpen of gebruikt die bescherming biedt tegen onverwachte systeemfouten. Als een stroomuitval of een systeemcrash optreedt, is de documentinhoud die in de database is opgeslagen waarschijnlijk up-to-date dan de inhoud die op een bestandssysteem is opgeslagen.
 
 Als u het rollen reservewijze gebruikt, bent u nog in reservewijze na terugwinning. Als u de back-upmodus voor momentopnamen gebruikt, bevindt u zich na herstel niet in de back-upmodus.
 
@@ -53,7 +53,7 @@ Als één enkele knoop van een multinode cluster ontbrak en de resterende knopen
 1. Maak indien nodig het fysieke systeem opnieuw op basis van een systeemimage. Deze stap is bijvoorbeeld mogelijk niet nodig als de reden voor de terugwinning een onjuiste databaseserver is.
 1. Pas patches of updates toe op AEM-formulieren die zijn toegepast sinds de afbeelding is gemaakt. Deze informatie werd geregistreerd in de reserveprocedure. AEM-formulieren moeten op hetzelfde patchniveau worden geplaatst als toen een back-up van het systeem werd gemaakt.
 1. (WebSphere Application Server) Als u terugkeert naar een nieuwe instantie van WebSphere Application Server, voert u de opdracht restoreConfig.bat/sh uit.
-1. Herstel de AEM-formulierdatabase door eerst een terugzetbewerking uit te voeren met behulp van de back-upbestanden van de database en vervolgens de transactierlogboeken opnieuw uit te voeren op de herstelde database. (Zie [AEM-formulierdatabase](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).) Zie een van de volgende artikelen in de kennisbasis voor meer informatie:
+1. Herstel de AEM-formulierdatabase door eerst een terugzetbewerking uit te voeren met behulp van de back-upbestanden van de database en pas vervolgens de transactielogboeken opnieuw uit op de herstelde database. (Zie [AEM-formulierdatabase](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).) Zie een van de volgende artikelen in de kennisbasis voor meer informatie:
 
    * [Oracle Backup and Recovery voor AEM-formulieren](https://www.adobe.com/go/kb403624)
    * [MySQL Backup and Recovery voor AEM-formulieren](https://www.adobe.com/go/kb403625)
@@ -67,17 +67,17 @@ Als één enkele knoop van een multinode cluster ontbrak en de resterende knopen
    >
    >Als /restore folder reeds bestaat, file het en dan schrapt het alvorens u de /backup folder anders noemt die de recentste gegevens bevat.
 
-   * (JBoss) Naam wijzigen `[appserver root]/server/[server]/svcnative/DocumentStorage/backup` in:
+   * (JBoss) Naam wijzigen `[appserver root]/server/'server'/svcnative/DocumentStorage/backup` in:
 
-      `[appserver root]/server/[server]/svcnative/DocumentStorage/restore`.
+      `[appserver root]/server/'server'/svcnative/DocumentStorage/restore`.
 
-   * (WebLogic) Naam wijzigen `[appserverdomain]/[server]/adobe/AEMformsserver/DocumentStorage/backup` in:
+   * (WebLogic) Naam wijzigen `[appserverdomain]/'server'/adobe/AEMformsserver/DocumentStorage/backup` in:
 
-      `[appserverdomain]/[server]/adobe/AEMformsserver/DocumentStorage/restore`.
+      `[appserverdomain]/'server'/adobe/AEMformsserver/DocumentStorage/restore`.
 
-   * (WebSphere) Wijzig de naam `[appserver root]/installedApps/adobe/[server]/DocumentStorage/backup` in:
+   * (WebSphere) Wijzig de naam `[appserver root]/installedApps/adobe/'server'/DocumentStorage/backup` in:
 
-      `[appserver root]/installedApps/adobe/[server]/DocumentStorage/restore`.
+      `[appserver root]/installedApps/adobe/'server'/DocumentStorage/restore`.
 
 1. Herstel de basismap voor inhoudsopslag door eerst de inhoud van de basismap voor inhoudsopslag op de bestaande installatie van AEM-formulieren te verwijderen en vervolgens de inhoud te herstellen door de taken voor zelfstandige of geclusterde omgevingen uit te voeren:
 
@@ -85,9 +85,9 @@ Als één enkele knoop van een multinode cluster ontbrak en de resterende knopen
    >
    >De back-up van de hoofdmap voor inhoudsopslag moet worden hersteld naar de locatie van de hoofdmap voor inhoudsopslag, zoals deze is ingesteld tijdens de configuratie van Content Services (Afgekeurd).
 
-   **** Zelfstandig: Herstel tijdens het herstelproces alle mappen waarvan een back-up is gemaakt. Wanneer deze folders worden hersteld, als de /backup-lucene-indexen folder aanwezig is, noem het aan /lucene-indexen anders. Anders zou de map lucene-indexes al moeten bestaan en is geen actie vereist.
+   **Zelfstandig:** Herstel tijdens het herstelproces alle mappen waarvan een back-up is gemaakt. Wanneer deze folders worden hersteld, als de /backup-lucene-indexen folder aanwezig is, noem het aan /lucene-indexen anders. Anders zou de map lucene-indexes al moeten bestaan en is geen actie vereist.
 
-   **** Geclusterd: Herstel tijdens het herstelproces alle mappen waarvan een back-up is gemaakt. Als u de hoofdmap van de index wilt herstellen, voert u de volgende stappen uit op elk knooppunt van de cluster:
+   **Geclusterd:** Herstel tijdens het herstelproces alle mappen waarvan een back-up is gemaakt. Als u de hoofdmap van de index wilt herstellen, voert u de volgende stappen uit op elk knooppunt van de cluster:
 
    * Verwijder alle inhoud uit de hoofdmap van de index.
    * Als de /backup-lucene-indexes folder aanwezig is, kopieer de inhoud van de folder *van de Root van de Opslag van de* Inhoud/steun-lucene-indexen folder aan de folder van de Root van de Index en schrap de folder *van de Root van de Opslag van de* Inhoud/steun-lucene-indexen folder.

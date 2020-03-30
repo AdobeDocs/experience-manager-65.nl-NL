@@ -8,7 +8,7 @@ content-type: troubleshooting
 topic-tags: publish
 discoiquuid: e6c9f3bb-8f20-4889-86f4-d30578fb1c51
 translation-type: tm+mt
-source-git-commit: 06335b9a85414b6b1141dd19c863dfaad0812503
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -25,7 +25,7 @@ Wijs taak toe en de stappen van het Ondertekenen van [vormen-centric werkschema&
 
 ECMAScript is een scripttaal. Het wordt gebruikt voor client-side scripting en servertoepassingen. Voer de volgende stappen uit om een gebruiker of een groep dynamisch te selecteren met ECMAScript:
 
-1. Open CRXDE Lite. De URL is `https://[server]:[port]/crx/de/index.jsp`
+1. Open CRXDE Lite. De URL is `https://'[server]:[port]'/crx/de/index.jsp`
 1. Maak een bestand met de extensie .ecma op het volgende pad. Als het pad (de knooppuntstructuur) niet bestaat, maakt u het:
 
    * (Pad voor taakstap toewijzen) `/apps/fd/dashboard/scripts/participantChooser`

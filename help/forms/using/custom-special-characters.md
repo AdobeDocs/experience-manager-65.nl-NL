@@ -10,7 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: 9f26565c-a7ba-4e9e-bf77-a95eb8e351f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 08e53eec26e29c2403cdfc3239da3ea23da3f321
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -40,7 +40,7 @@ De beheerder kan ondersteuning voor meer/aangepaste speciale tekens toevoegen do
 
 Gebruik de volgende stappen om ondersteuning voor aangepaste speciale tekens toe te voegen:
 
-1. Ga naar Beheerder `https://[server]:[port]/[ContextPath]/crx/de` en meld u aan.
+1. Ga naar Beheerder `https://'[server]:[port]'/[ContextPath]/crx/de` en meld u aan.
 1. Maak in de map apps een map met de naam **[!UICONTROL specialcharacters]** met pad/structuur die lijkt op de map specialcharacters (in de map textEditorConfig onder libs):
 
    1. Klik met de rechtermuisknop op de map met **speciale tekens** in het volgende pad en selecteer **Overlayknooppunt**:
@@ -49,11 +49,11 @@ Gebruik de volgende stappen om ondersteuning voor aangepaste speciale tekens toe
 
    1. Zorg ervoor dat het dialoogvenster Overlay-knooppunt de volgende waarden heeft:
 
-      **** Pad: /libs/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters
+      **Pad:** /libs/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters
 
-      **** Locatie bedekking: /apps/
+      **Locatie bedekking:** /apps/
 
-      **** Identieke knooppunttypen:Ingeschakeld
+      **Identieke knooppunttypen:** Ingeschakeld
 
       >[!NOTE]
       >

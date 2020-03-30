@@ -11,7 +11,7 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: b79c147c-f846-4e48-bec0-8b658502bb6f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8e724af4d69cb859537dd088119aaca652ea3931
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -34,12 +34,12 @@ Bij zoeken in AEM kunt u zoeken naar AEM-elementen en zoeken naar tekst op versc
 * Als u alleen AEM Forms gebruikt op de JEE-server, is het indexeerpakket al geïnstalleerd.
 * Zorg ervoor dat alle bundels aan de slag zijn. Als alle bundels niet actief zijn, wacht u tot alle bundels actief zijn.
 
-   * Voor AEM Forms op OSGi, zijn de bundels vermeld bij https://[server]:[haven]/systeem/console/bundels.
-   * Voor AEM-formulieren op JEE worden de bundels weergegeven op https://[server]:[poort]/[contextpad]/systeem/console/bundels. Bijvoorbeeld https://localhost:8080/lc/system/console/bundles.
+   * Voor AEM-formulieren op OSGi worden de bundels weergegeven op https://&#39;[server]:[port]&#39;/system/console/bundles.
+   * Voor AEM-formulieren op JEE worden de bundels weergegeven op https://&#39;[server]:[port]&#39;/[context-path]/system/console/bundles. Bijvoorbeeld https://localhost:8080/lc/system/console/bundles.
 
 * Whitelist het pakket *sun.util.agenda* . Voer de volgende stappen uit om een whitelist van het pakket uit te voeren:
 
-   1. Open AEM-webconsole. De URL is https://[server]:[poort]/systeem/console/configMgr.
+   1. Open AEM-webconsole. De URL is https://&#39;[server]:[port]&#39;/system/console/configMgr.
    1. Zoek en open Configuratie van **Deserialization Firewall**.
 
    1. Voeg het pakket sun.util.agenda toe aan het veld Voorvoegsels van Whitelisted of Pakket en klik op **Opslaan**.
@@ -53,19 +53,19 @@ U kunt een van de volgende methoden gebruiken om de beveiligde verbinding tot st
 
 #### Adobe LiveCycle Client SDK-bundel configureren met AEM Forms op JEE-beheerdersreferenties {#configure-adobe-livecycle-client-sdk-bundle-with-aem-forms-on-jee-admin-credentials}
 
-1. Open AEM-webconsole. De URL is https://[server]:[poort]/systeem/console/configMgr.
+1. Open AEM-webconsole. De URL is https://&#39;[server]:[port]&#39;/system/console/configMgr.
 1. Zoek en open de **Adobe LiveCycle Client SDK-bundel**. Geef waarde op voor de volgende velden:
 
-   * **** Server-URL: Geef de HTTPS-URL van AEM Forms op de JEE-server op. Start de server opnieuw op met de parameter -Djavax.net.ssl.trustStore=&lt;path of AEM Forms on JEE keystore file> om communicatie via https mogelijk te maken.
+   * **Server-URL:** Geef de HTTPS-URL van AEM Forms op de JEE-server op. Start de server opnieuw op met de parameter -Djavax.net.ssl.trustStore=&lt;path of AEM Forms on JEE keystore file> om communicatie via https mogelijk te maken.
    * **Servicenaam**: Voeg RightsManagementService aan de lijst van de gespecificeerde diensten toe.
-   * **** Gebruikersnaam: Geef de gebruikersnaam op van de AEM Forms on JEE-account die moet worden gebruikt om aanroepen vanuit de AEM-server te starten. De opgegeven account moet beschikken over machtigingen om documentservices te starten op de AEM Forms on JEE-server.
+   * **Gebruikersnaam:** Geef de gebruikersnaam op van de AEM Forms on JEE-account die moet worden gebruikt om aanroepen vanuit de AEM-server te starten. De opgegeven account moet beschikken over machtigingen om documentservices te starten op de AEM Forms on JEE-server.
    * **Wachtwoord**: Geef het wachtwoord op van de AEM Forms on JEE-account die in het veld Gebruikersnaam wordt vermeld.
    Click **Save**. AEM is ingeschakeld om te zoeken in met documentbeveiliging beveiligde PDF-documenten.
 
 #### Adobe LiveCycle Client SDK-bundel configureren met wederzijdse verificatie {#configure-adobe-livecycle-client-sdk-bundle-using-mutual-authentication}
 
 1. Schakel wederzijdse verificatie in voor AEM Forms on JEE. Voor gedetailleerde informatie, zie [CAC en Wederzijdse Authentificatie](https://helpx.adobe.com/livecycle/kb/cac-mutual-authentication.html).
-1. Open AEM-webconsole. De URL is https://[server]:[poort]/systeem/console/configMgr.
+1. Open AEM-webconsole. De URL is https://&#39;[server]:[port]&#39;/system/console/configMgr.
 1. Zoek en open de **Adobe LiveCycle Client SDK** -bundel. Geef waarde op voor de volgende eigenschappen:
 
    * **Server-URL**: Geef de HTTPS-URL van AEM Forms op de JEE-server op. Als u communicatie via https wilt inschakelen, start u de AEM-server opnieuw met de parameter -Djavax.net.ssl.trustStore=&lt;path of AEM Forms on JEE keystore file>.

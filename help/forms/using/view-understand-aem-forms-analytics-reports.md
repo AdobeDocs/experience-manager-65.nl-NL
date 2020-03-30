@@ -10,7 +10,7 @@ topic-tags: integrations
 discoiquuid: 3690fa80-6332-4df8-afea-77b5490fe0d1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 33f73225fbb2c48353c1f34db3339c0bb79d4236
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -49,20 +49,20 @@ Wanneer een gebruiker met het formulier werkt, worden de interacties opgenomen e
 
 Voer de volgende stappen uit om analyserapporten weer te geven:
 
-1. Meld u aan bij de AEM-portal op `https://[hostname]:[port]`
+1. Meld u aan bij de AEM-portal op `https://[hostname]:'port'`
 1. Klik op **Formulieren > Formulieren en documenten**.
 1. Selecteer het formulier waarvoor u de analyserapporten wilt weergeven.
 1. Selecteer **Meer > Analyserapporten**.
 
 ![analyserapport](assets/analyticsreport.png)
 
-**** A. Analyserapport, opdracht
+**A.** Analyserapport, opdracht
 
 In AEM Forms worden analyserapporten voor het formulier en voor elk deelvenster in het formulier weergegeven, zoals hieronder wordt weergegeven.
 
 ![Samenvattend verslag van een adaptief formulier](assets/analyticsdashboard_callout.png)
 
-************ A. Conversies **B. Samenvatting op formulierniveau** C.**Overzicht op paneelniveau** D. Browsers van bezoekers - filter **E. Besturingssysteem van bezoekers - filter** F. Taal van bezoekers - filter
+**A.** Conversies **B.** Samenvatting op formulierniveau **C.** Overzicht op paneelniveau **D.** Browsers van bezoekers - filter **E.** Besturingssysteem van bezoekers - filter **F.** Taal van bezoekers - filter
 
 Standaard wordt het analyserapport voor de laatste zeven dagen weergegeven. U kunt rapporten weergeven voor de laatste 15 dagen, de laatste één maand enzovoort, of een datumbereik opgeven.
 

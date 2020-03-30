@@ -10,7 +10,7 @@ content-strategy: max-2018
 discoiquuid: 770e9174-b648-462a-abe9-05fefa967d86
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 33f73225fbb2c48353c1f34db3339c0bb79d4236
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -172,7 +172,7 @@ Lijst met meta-eigenschappen van een thema (bevindt zich op de pagina met eigens
      <li>Het door de gebruiker gedefinieerde opslagpad binnen '/etc' waar de clientlibs die overeenkomen met dit thema, worden opgeslagen.</li>
      <li>Standaardwaarde - '/etc/clientlibs/fd/themes' + relatief pad van themaelement.</li>
      <li>Als de locatie niet bestaat, wordt de maphiërarchie automatisch gegenereerd.</li>
-     <li>Wanneer deze waarde wordt gewijzigd, wordt de clientlib-knooppuntstructuur verplaatst naar de nieuwe ingevoerde locatie.<br /><em> <strong></strong>Opmerking: Als u de standaardclientlib-locatie wijzigt, wijst u in de CRXDE-opslagplaats <code>crx:replicate, rep:write, rep:glob:*, rep:itemNames:: js.txt, jcr:read </code>aan <code>forms-users</code> en <code>crx:replicate</code>aan <code>jcr:read </code><code>fd-service</code> de nieuwe locatie toe. Verbind ook andere ACL door toe te voegen <code>deny jcr:addChildNodes</code> voor <code>forms-user</code></em></li>
+     <li>Wanneer deze waarde wordt gewijzigd, wordt de clientlib-knooppuntstructuur verplaatst naar de nieuwe ingevoerde locatie.<br /> <em><strong>Opmerking:</strong> Als u de standaardclientlib-locatie wijzigt, wijst u in de CRXDE-opslagplaats <code>crx:replicate, rep:write, rep:glob:*, rep:itemNames:: js.txt, jcr:read </code>aan <code>forms-users</code> en <code>crx:replicate</code>aan <code>jcr:read </code><code>fd-service</code> de nieuwe locatie toe. Verbind ook andere ACL door toe te voegen <code>deny jcr:addChildNodes</code> voor <code>forms-user</code></em></li>
     </ul> </td>
   </tr>
   <tr>
@@ -202,9 +202,9 @@ De Thema-editor bestaat uit twee deelvensters:
 
 * **Zijbalk**- Wordt aan de linkerkant weergegeven. Het heeft de volgende punten:
 
-   * **** Kiezer: Hiermee geeft u de component weer die u voor opmaak hebt geselecteerd en de eigenschappen die u kunt opmaken. De kiezer vertegenwoordigt alle componenten van een type. Als u een tekstvakcomponent in een thema voor het stileren selecteert, erven alle tekstvakjes in uw formulier of interactieve mededeling de stijl. Met kiezers kunt u een algemene component of een specifieke component voor opmaak selecteren. Een veldcomponent is bijvoorbeeld een algemeen onderdeel en een tekstvak is een specifiek onderdeel.
+   * **Kiezer:** Hiermee geeft u de component weer die u voor opmaak hebt geselecteerd en de eigenschappen die u kunt opmaken. De kiezer vertegenwoordigt alle componenten van een type. Als u een tekstvakcomponent in een thema voor het stileren selecteert, erven alle tekstvakjes in uw formulier of interactieve mededeling de stijl. Met kiezers kunt u een algemene component of een specifieke component voor opmaak selecteren. Een veldcomponent is bijvoorbeeld een algemeen onderdeel en een tekstvak is een specifiek onderdeel.
 
-      ****Algemene stijlcomponent:
+      **Algemene stijlcomponent:**
 Een veld kan een numeriek veld zijn, zoals leeftijd, of een veld in een tekstvak, zoals een adres.
 Wanneer u een veld opmaakt, worden alle velden opgemaakt, zoals pagina, naam en adres.
 
@@ -215,15 +215,15 @@ Een specifieke component is van invloed op objecten van de specifieke categorie.
 
       Wanneer u alle veldcomponenten met een specifieke achtergrondkleur aanpast, nemen alle velden, zoals leeftijd, naam en adres, de achtergrondkleur over. Wanneer u een numeriek vak selecteert, zoals de leeftijd, en de breedte en breedte van alle numerieke vakken zoals de leeftijd verkleint, wordt het aantal personen in een familie verminderd. De breedte van tekstvakken wordt niet gewijzigd.
 
-   * **** Status: Hiermee kunt u stijlen van een object in een specifieke status aanpassen. U kunt bijvoorbeeld opgeven hoe een object eruitziet als het zich in de standaardtoestand, de standaardfocus, de uitgeschakelde toestand, de aanwijsstatus of de foutstatus bevindt.
-   * **** Eigenschapcategorieën: De stijleigenschappen worden in verschillende categorieën verdeeld. Bijvoorbeeld afmeting en positie, tekst, achtergrond, rand en effecten. Onder elke categorie geeft u opmaakgegevens op. Onder Achtergrond kunt u bijvoorbeeld Achtergrondkleur en Afbeelding en Verloop opgeven.
+   * **Status:** Hiermee kunt u stijlen van een object in een specifieke status aanpassen. U kunt bijvoorbeeld opgeven hoe een object eruitziet als het zich in de standaardtoestand, de standaardfocus, de uitgeschakelde toestand, de aanwijsstatus of de foutstatus bevindt.
+   * **Eigenschapcategorieën:** De stijleigenschappen worden in verschillende categorieën verdeeld. Bijvoorbeeld afmeting en positie, tekst, achtergrond, rand en effecten. Onder elke categorie geeft u opmaakgegevens op. Onder Achtergrond kunt u bijvoorbeeld Achtergrondkleur en Afbeelding en Verloop opgeven.
 
-   * **** Geavanceerd: Hiermee kunt u aangepaste CSS aan een object toevoegen, die de eigenschappen overschrijft die door visuele besturingselementen worden gedefinieerd als er sprake is van overlapping.
+   * **Geavanceerd:** Hiermee kunt u aangepaste CSS aan een object toevoegen, die de eigenschappen overschrijft die door visuele besturingselementen worden gedefinieerd als er sprake is van overlapping.
 
    * **CSS** weergeven: Hiermee kunt u CSS van de geselecteerde component weergeven
-   In de Sidebar is onder aan de zijbalk ook een pijl aanwezig. Als u op de pijl klikt, hebt u nog twee opties: Fout bij **simuleren** en **simuleren.** Deze opties worden samen met de hierboven beschreven opties [hieronder](../../forms/using/themes.md#using-rail)uitgebreid besproken.
+   In de zijbalk onder in het scherm staat bovendien een pijl. Als u op de pijl klikt, hebt u nog twee opties: Fout bij **simuleren** en **simuleren.** Deze opties worden samen met de hierboven beschreven opties [hieronder](../../forms/using/themes.md#using-rail)uitgebreid besproken.
 
-[ De redacteur van het ![thema met de spoorstaaf en Canvas benadrukte.](assets/themes.png)](assets/themes-1.png)**** **A. Zijbalk** B. Canvas
+[ De redacteur van het ![thema met de spoorstaaf en Canvas benadrukte.](assets/themes.png)](assets/themes-1.png) **A.** Zijbalk **B.** Canvas
 
 ### Stijlcomponenten {#styling-components}
 
@@ -246,7 +246,7 @@ Thema&#39;s in AEM Forms ondersteunen het opmaken van elementen in de lay-out va
 Voorbeelden van deelvensters buiten het vak zijn:
 
 * Tabs links
-* Tabs bovenaan
+* Bovenaan tabs
 * Accordeon
 * Responsief
 * Wizard
@@ -510,7 +510,7 @@ Voer de volgende stappen uit om een thema te vormen om de configuratie te gebrui
 
 U kunt de dienst van de themaconfiguratie gebruiken om meer doopvonten aan de themaredacteur toe te voegen. Voer de volgende stappen uit om lettertypen toe te voegen:
 
-1. Meld u aan bij de AEM-webconsole met beheerdersrechten. De URL voor de AEM-webconsole is `https://[server]:[port]/system/console/configMgr`.
+1. Meld u aan bij de AEM-webconsole met beheerdersrechten. De URL voor de AEM-webconsole is `https://'[server]:[port]'/system/console/configMgr`.
 1. Open **Adaptive Form Theme Configuration Service**.
 
    ![theme-config](assets/theme-config.png)
@@ -566,7 +566,7 @@ Een thema toepassen op een interactieve communicatie:
 
 1. Selecteer in de zijbalk onder** Standaard** uw thema in de vervolgkeuzelijst **Thema** en klik op **Gereed** ![selectievakje](assets/check-button.png)
 
-### Het thema van een formulier tijdens runtime wijzigen {#change-theme-of-a-form-at-runtime}
+### Het thema van een formulier wijzigen tijdens runtime {#change-theme-of-a-form-at-runtime}
 
 Met een thema kunt u verschillende onderdelen van een formulier opmaken. Met de `themeOverride` eigenschap kunt u het thema van een formulier dynamisch wijzigen. Een typische URL van een formulier is:
 
@@ -598,11 +598,11 @@ Nadat u het thema hebt aangepast, past u het toe op uw formulier of interactieve
 
 ## Gevolgen voor andere adaptieve gevallen van formuliergebruik {#impact-on-other-adaptive-form-use-cases}
 
-* **** Een formulier publiceren/publiceren ongedaan maken: Bij het publiceren van een formulier wordt het thema dat op is toegepast, ook gepubliceerd (als het nog niet is gepubliceerd)
-* **** Een formulier importeren/exporteren: Bij het importeren of exporteren van een formulier wordt het bijbehorende thema ook automatisch geïmporteerd of geëxporteerd.
-* **** Referenties van een formulier: De sectie Verwijzingen in formulierverwijzingen bevat een extra item voor het thema.
-* **** Tijdstip van laatste wijziging van een formulier: Wordt bijgewerkt wanneer het gekoppelde thema wordt gewijzigd.
-* **** A/B-tests: U kunt een ander thema toepassen op twee versies van het formulier in A/B-tests. De informatie over de twee thema&#39;s wordt afzonderlijk opgeslagen op de twee hulplijncontainers.
+* **Een formulier publiceren/publiceren ongedaan maken:** Bij het publiceren van een formulier wordt het thema dat op is toegepast, ook gepubliceerd (als het nog niet is gepubliceerd)
+* **Een formulier importeren/exporteren:** Bij het importeren of exporteren van een formulier wordt het bijbehorende thema ook automatisch geïmporteerd of geëxporteerd.
+* **Referenties van een formulier:** De sectie Verwijzingen in formulierverwijzingen bevat een extra item voor het thema.
+* **Tijdstip van laatste wijziging van een formulier:** Wordt bijgewerkt wanneer het gekoppelde thema wordt gewijzigd.
+* **A/B-tests:** U kunt een ander thema toepassen op twee versies van het formulier in A/B-tests. De informatie over de twee thema&#39;s wordt afzonderlijk opgeslagen op de twee hulplijncontainers.
 
 ## CSS-generatiereeks {#css-generation-sequence}
 
@@ -630,7 +630,7 @@ De gegenereerde CSS kunt u met de volgende opties zien:
    Wanneer u een thema bewerkt, kunt u door elementen (zoals afbeeldingen) bladeren en elementen uit andere thema&#39;s toevoegen. U bewerkt bijvoorbeeld de achtergrond van een pagina. Als u bijvoorbeeld **Pagina** ![bewerken-knop](assets/edit-button.png)> **Achtergrond** > **Toevoegen** > **Afbeelding** selecteert, wordt er een dialoogvenster weergegeven waarin u afbeeldingen in een ander thema kunt zoeken en toevoegen.
 
 * U kunt problemen met uw huidige thema oplossen als een element wordt toegevoegd uit een ander thema en het andere thema wordt verplaatst of verwijderd. U wordt aangeraden te voorkomen dat u bladeren en elementen uit andere thema&#39;s toevoegt.
-* **Het gebruiken van basis clientlib, themageditor, en gealigneerde het stileren**
+* **Basisclientlib, themageditor en inline styling gebruiken**
 
    * **Basis clientlib**:
 
@@ -641,7 +641,7 @@ De gegenereerde CSS kunt u met de volgende opties zien:
       1. Klik op **Geavanceerd** op de pagina Eigenschappen die wordt geopend.
       1. Blader op het tabblad Geavanceerd in het veld Clientlib-locatie naar de clientbibliotheek die u wilt gebruiken en selecteer deze.
       1. Click **Save**.
-      De stijl die u opgeeft in de clientbibliotheek, wordt geïmporteerd in het thema dat deze stijl gebruikt. U geeft bijvoorbeeld de opmaak op voor tekstvak, numeriek vak en voor de clientbibliotheek. Wanneer u de clientbibliotheek in het thema importeert, wordt de stijl voor het tekstvak, het numerieke vak en de switch geïmporteerd. Vervolgens kunt u andere componenten opmaken met de themaeditor.
+      De stijl die u opgeeft in de clientbibliotheek, wordt geïmporteerd in het thema dat deze stijl gebruikt. U geeft bijvoorbeeld de opmaak op voor tekstvak, numeriek vak en schakel over in de clientbibliotheek. Wanneer u de clientbibliotheek in het thema importeert, wordt de stijl voor het tekstvak, het numerieke vak en de switch geïmporteerd. Vervolgens kunt u andere componenten opmaken met de themaeditor.
 U kunt ook een thema maken, er kopieën van maken en vervolgens de opmaak wijzigen die in de gekopieerde thema&#39;s wordt geboden voor vergelijkbare gebruiksdoeleinden.
 Zie Specifieke weergave [ophalen met thema&#39;s](#specific-af-appearance)
 

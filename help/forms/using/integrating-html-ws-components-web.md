@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 6be87939-007e-42c7-8a41-e34ac2b8bed4
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -19,7 +19,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 U kunt [componenten](/help/forms/using/description-reusable-components.md) van de AEM-werkruimte gebruiken in uw eigen webtoepassing. De volgende voorbeeldimplementatie gebruikt componenten van een AEM Forms werkruimte dev-pakket dat op een CRX™-instantie is geïnstalleerd om een webtoepassing te maken. Pas de onderstaande oplossing aan uw specifieke behoeften aan. De voorbeeldimplementatie hergebruikt `UserInfo`, `FilterList`en `TaskList`componenten binnen een Webportaal.
 
-1. Meld u aan bij de CRXDE Lite-omgeving `https://[server]:[port]/lc/crx/de/`. Zorg ervoor dat u een AEM Forms-ontwikkelpakket hebt geïnstalleerd.
+1. Meld u aan bij de CRXDE Lite-omgeving `https://'[server]:[port]'/lc/crx/de/`. Zorg ervoor dat u een AEM Forms-ontwikkelpakket hebt geïnstalleerd.
 1. Maak een pad `/apps/sampleApplication/wscomponents`.
 1. CSS, afbeeldingen, js/libs, js/runtime en js/registry.js kopiëren
 
@@ -79,7 +79,7 @@ U kunt [componenten](/help/forms/using/description-reusable-components.md) van d
    });
    ```
 
-1. Wijzig portaal CSS om de lay-out, het plaatsen, en de stijl van de vereiste componenten op uw portaal te vormen. U wilt bijvoorbeeld de achtergrondkleur zwart houden voor dit portaal om de component userInfo goed te kunnen bekijken. U kunt dit doen door de achtergrondkleur `/apps/sampleApplication/wscomponents/css/style.css` als volgt te wijzigen:
+1. Wijzig portaal CSS om de lay-out, het plaatsen, en de stijl van de vereiste componenten op uw portaal te vormen. U wilt bijvoorbeeld de achtergrondkleur zwart houden voor dit portaal om de component userInfo goed te kunnen bekijken. U kunt dit doen door achtergrondkleur in te veranderen `/apps/sampleApplication/wscomponents/css/style.css` als volgt:
 
    ```as3
    body {

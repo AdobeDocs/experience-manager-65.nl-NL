@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7eebef08-83b9-4b56-90ec-35ab3b0c27e8
 noindex: true
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 ---
 
@@ -24,8 +24,8 @@ Voer de volgende stappen uit om AEM in staat te stellen te zoeken in met documen
 ## Voordat u begint {#before-you-start}
 
 * Documentbeveiliging voor AEM Forms installeren en configureren.
-* Voeg pakket sun.util.agenda aan whitelist van de Configuratie van de Firewall van de **Deserialization toe.** De configuratie wordt vermeld bij `https://[server]:[port]/system/console/configMgr`.
-* Zorg ervoor dat alle AEM-bundels actief zijn. De bundels worden vermeld bij `https://[server]:[port]/system/console/bundles`. Als alle bundels niet actief zijn, wacht u en controleert u de status van de bundels na een paar minuten.
+* Voeg pakket sun.util.agenda aan whitelist van de Configuratie van de Firewall van de **Deserialization toe.** De configuratie wordt vermeld bij `https://'[server]:[port]'/system/console/configMgr`.
+* Zorg ervoor dat alle AEM-bundels actief zijn. De bundels worden vermeld bij `https://'[server]:[port]'/system/console/bundles`. Als alle bundels niet actief zijn, wacht u en controleert u de status van de bundels na een paar minuten.
 
 ## Een veilige verbinding tot stand brengen in de AEM Forms workflow (AEM Forms on JEE) {#establish-a-secure-connection-within-aem-forms-workflow-aem-forms-on-jee}
 
@@ -39,9 +39,9 @@ Een veilige verbinding laat naadloze stroom van informatie tussen Vormen AEM op 
 1. Open AEM-configuratiebeheer en meld u aan als beheerder. De standaard-URL is https://&lt;serverName>:&lt;port>/lc/system/console/configMgr.
 1. Zoek en open de AEM Forms Client SDK-bundel. Geef waarde op voor de volgende eigenschappen:
 
-   * **** Server-URL: Geef de HTTP-URL van AEM Forms op de JEE-server op. Als u communicatie via https wilt inschakelen, start u de AEM Forms op de JEE-server opnieuw met de parameter -Djavax.net.ssl.trustStore=&lt;path of AEM Forms on JEE keystore file>.
+   * **Server-URL:** Geef de HTTP-URL van AEM Forms op de JEE-server op. Als u communicatie via https wilt inschakelen, start u de AEM Forms op de JEE-server opnieuw met de parameter -Djavax.net.ssl.trustStore=&lt;path of AEM Forms on JEE keystore file>.
    * **Servicenaam**: Voeg RightsManagementService aan de lijst van de gespecificeerde diensten toe.
-   * **** Gebruikersnaam: Geef de gebruikersnaam op van de AEM Forms on JEE-account die moet worden gebruikt om aanroepen vanuit AEM Forms te starten op de JEE-server. De opgegeven account moet gemachtigd zijn om documentservices aan te roepen op de AEM Forms op de JEE-server.
+   * **Gebruikersnaam:** Geef de gebruikersnaam op van de AEM Forms on JEE-account die moet worden gebruikt om aanroepen vanuit AEM Forms te starten op de JEE-server. De opgegeven account moet gemachtigd zijn om documentservices aan te roepen op de AEM Forms op de JEE-server.
    * **Wachtwoord**: Geef het wachtwoord op van de AEM Forms on JEE-account die in het veld Gebruikersnaam wordt vermeld.
    Click **Save**. AEM is ingeschakeld om te zoeken in met documentbeveiliging beveiligde PDF- en Microsoft Office-documenten.
 
@@ -51,7 +51,7 @@ Een veilige verbinding laat naadloze stroom van informatie tussen Vormen AEM op 
 1. Open AEM-configuratiebeheer en meld u aan als beheerder. De standaard-URL is https://&lt;serverName>:&lt;port>/lc/system/console/configMgr.
 1. Zoek en open de AEM Forms Client SDK-bundel. Geef waarde op voor de volgende eigenschappen:
 
-   * **** Server-URL: Geef de HTTPS-URL van AEM Forms op de JEE-server op. Als u communicatie via https wilt inschakelen, start u de AEM Forms op de JEE-server opnieuw met de parameter -Djavax.net.ssl.trustStore=&lt;path of AEM Forms on JEE keystore file>.
+   * **Server-URL:** Geef de HTTPS-URL van AEM Forms op de JEE-server op. Als u communicatie via https wilt inschakelen, start u de AEM Forms op de JEE-server opnieuw met de parameter -Djavax.net.ssl.trustStore=&lt;path of AEM Forms on JEE keystore file>.
    * **2-wegs SSL** inschakelen: Schakel de optie 2-wegs SSL inschakelen in.
    * **URL** sleutelarchiefbestand: Geef de URL van het sleutelarchiefbestand op.
    * **TrustStore-bestands-URL**: Geef de URL van het bestand truststore op.

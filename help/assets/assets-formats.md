@@ -1,14 +1,14 @@
 ---
 title: Ondersteunde indelingen voor middelen
-description: Lijst met bestandsindelingen die worden ondersteund door AEM Assets en functies die worden ondersteund voor elke indeling.
+description: Lijst met bestandsindelingen die worden ondersteund door AEM Assets en door Dynamic Media, en functies die worden ondersteund voor elke indeling.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d7d25c75c1023383e07c36252ece2e85425a95be
+source-git-commit: 84c6cc47d84656be587cc6a268b8ddc2e1e39635
 
 ---
 
 
-# Ondersteunde indelingen voor middelen {#assets-supported-formats}
+# Ondersteunde middelenindelingen {#assets-supported-formats}
 
 AEM Assets ondersteunt een groot aantal bestandsindelingen en elke functionaliteit biedt verschillende ondersteuning voor verschillende MIME-typen.
 
@@ -22,9 +22,7 @@ Gebruik de legenda om het steunniveau te begrijpen.
 | * | Ondersteund met add-onfuncties |
 | - | Niet van toepassing |
 
-## Ondersteunde rasterafbeeldingsindelingen {#supported-raster-image-formats}
-
-Rasterindelingen voor afbeeldingen die worden ondersteund voor functies voor middelenbeheer zijn als volgt:
+## Ondersteunde rasterafbeeldingsindelingen in AEM-elementen {#supported-raster-image-formats}
 
 | Format | Opslag | Metagegevensbeheer | Metagegevensextractie | Miniaturen genereren | Interactief bewerken | Metagegevens terugschrijven | Inzichten |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -44,7 +42,7 @@ Rasterindelingen voor afbeeldingen die worden ondersteund voor functies voor mid
 
 **¹** De samengevoegde afbeelding wordt uit het PSD-bestand geëxtraheerd. Het is een afbeelding die door Adobe Photoshop wordt gegenereerd en die in het PSD-bestand wordt opgenomen. Afhankelijk van de instellingen kan de samengevoegde afbeelding wel of niet de werkelijke afbeelding zijn.
 
-Rasterindelingen voor afbeeldingen die worden ondersteund voor functies van dynamische media zijn:
+## Ondersteunde rasterafbeeldingsindelingen in Dynamic Media (#supported-raster-image-formats-dynamic-media)
 
 | Format | Uploaden<br> (invoerindeling) | Afbeeldingsvoorinstelling<br> maken<br><br> (uitvoerindeling) | Voorvertoning<br> van dynamische<br> uitvoering | Dynamische<br> uitvoering<br> leveren | Dynamische<br><br> uitvoering downloaden |
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -69,6 +67,22 @@ Naast bovenstaande informatie, moet u rekening houden met het volgende:
 
 * Voor EPS-bestanden wordt terugschrijven van metagegevens ondersteund in PostScript Document Structuring Convention (PS-Adobe) versie 3.0 of hoger.
 
+## Niet-ondersteunde indelingen voor rasterafbeeldingen in Dynamic Media (#unsupported-image-formats-dynamic-media)
+
+In de volgende tabel worden de subtypen van rasterafbeeldingsindelingen beschreven die *niet* worden ondersteund in Dynamic Media. In de tabel staan ook suggesties voor methoden die u kunt gebruiken om dergelijke bestanden te detecteren.
+
+| Format | Wat wordt niet ondersteund? | Voorgestelde detectiemethode |
+|---|---|---|
+| JPEG | Bestanden waarin de eerste drie bytes onjuist zijn. | Als u een JPEF-bestand wilt identificeren, moeten de initiële drie bytes van dat bestand zijn `ff d8 ff`. Als het iets anders is, wordt het niet geclassificeerd als JPEG.<br>・ Er is geen software die u kan helpen met dit probleem.<br>・ Een klein programma C++/java dat de aanvankelijke drie bytes van een dossier leest zou deze types van dossiers moeten kunnen ontdekken.<br>・ Het kan beter zijn om de bron van dergelijke dossiers te volgen en het hulpmiddel te bekijken dat het dossier produceert. |
+| PNG | Bestanden met een IDAT-segmentgrootte groter dan 100 MB. | U kunt dit probleem detecteren met [libpng](http://www.libpng.org/pub/png/libpng.html) in C++. |
+| PSB |  | Gebruik exiftool als het bestandstype PSB is.<br>Voorbeeld in een ExifTool-logboek:<br>1. Bestandstype: `PSB` |
+| PSD | Bestanden met een andere kleurruimte dan CMYK, RGB, Grijswaarden of Bitmap worden niet ondersteund.<br>DuoTone-, Lab- en Geïndexeerde kleurruimten worden niet ondersteund. | Gebruik ExifTool als de kleurmodus Duotoon is.<br>Voorbeeld in een ExifTool-logboek:<br>1. Kleurmodus: `Duotone` |
+|  | Bestanden met abrupte eindes. | Adobe kan deze voorwaarde niet detecteren. Dergelijke bestanden kunnen ook niet worden geopend met Adobe PhotoShop. Adobe raadt u aan het programma te onderzoeken dat is gebruikt om een dergelijk bestand te maken en problemen bij de bron op te lossen. |
+|  | Bestanden met een bitdiepte groter dan 16. | Gebruik ExifTool als de bitdiepte groter is dan 16.<br>Voorbeeld in een ExifTool-logboek:<br>1. Bitdiepte: `32` |
+|  | Bestand met Lab-kleurruimte. | Gebruik exiftool als de kleurmodus Lab is.<br>Voorbeeld in een ExifTool-logboek:<br>1. Kleurmodus: `Lab` |
+| TIFF | Bestanden met zwevende-kommagegevens. Een TIFF-bestand met 32-bits diepte wordt dus niet ondersteund. | Gebruik ExifTool als het MIME-type is `image/tiff` en de waarde van SampleFormat `Float` is. Voorbeeld in een ExifTool-logboek:<br>1. MIME-type: `image/tiff`<br>Voorbeeldindeling: `Float #`<br>2. MIME-type: `image/tiff`<br>Voorbeeldindeling: `Float; Float; Float; Float` |
+|  | Bestanden met Lab-kleurruimte. | Gebruik ExifTool als de kleurmodus Lab is.<br>Voorbeeld in een ExifTool-logboek:<br>1. Kleurmodus: `Lab` |
+
 ## Ondersteunde PDF Rasterizer-bibliotheek {#supported-pdf-rasterizer-library}
 
 De Adobe PDF Rasterizer-bibliotheek genereert miniaturen en voorvertoningen van hoge kwaliteit voor grote en inhoudintensieve Adobe Illustrator- en PDF-bestanden. Adobe raadt u aan de PDF Rasterizer-bibliotheek te gebruiken voor het volgende:
@@ -91,7 +105,7 @@ Zie [Afbeeldingstransformatiebibliotheek](imaging-transcoding-library.md).
 
 Met de Adobe Camera Raw-bibliotheek kunnen AEM Assets Raw-afbeeldingen innemen. Zie [Camera Raw-ondersteuning](camera-raw.md).
 
-## Ondersteunde documentindelingen {#supported-document-formats}
+## Ondersteunde indelingen voor middelendocumenten {#supported-document-formats}
 
 Documentindelingen die worden ondersteund voor functies voor middelenbeheer zijn als volgt:
 
@@ -116,7 +130,7 @@ Documentindelingen die worden ondersteund voor functies voor middelenbeheer zijn
 | QXP | ✓ | ✓ |  |  |  |  |  |  |
 | EPUB | ✓ | ✓ |  | ✓ | ✓ |  |  |  |
 
-De volgende documentindelingen worden ondersteund voor dynamische mediafuncties:
+## Ondersteunde documentindelingen in dynamische media (##supported-document-formats-dynamic-media)
 
 | Format | Uploaden<br> (invoerindeling) | Afbeeldingsvoorinstelling<br> maken<br><br> (uitvoerindeling) | Voorvertoning<br> van dynamische<br> uitvoering | Dynamische<br> uitvoering<br> leveren | Dynamische<br><br> uitvoering downloaden |
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -155,7 +169,7 @@ Overweeg het volgende naast de bovenstaande functionaliteit:
 | WMV | ✓ | ✓ |  | * | * |
 | SWF | ✓ | ✓ |  |  |  |
 
-## Ondersteunde invoervideo-indelingen voor Dynamic Media Transcoding {#supported-input-video-formats-for-dynamic-media-transcoding}
+## Ondersteunde invoervideo-indelingen in Dynamic Media voor transcodering {#supported-input-video-formats-for-dynamic-media-transcoding}
 
 | Videobestandsextensie | Container | Aanbevolen videocodecs | Niet-ondersteunde video-codecs |
 |---|---|---|---|
@@ -246,7 +260,7 @@ Zie ook [het toelaten van MIME op type-gebaseerde Activa/Scene7 uploadt baanpara
 | OTF | application/x-font-otf |  |  |
 | PDF | application/pdf | `pdfprocess=Rasterize&resolution=150`<br>`&colorspace=Auto&pdfbrochure=false`<br>`&keywords=false&links=false` | [pdfOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/?f=r_pdf_options) |
 | PFB | application/x-font-type1 |  |  |
-| PGM | application/x-font-type1 |  |  |
+| PFM | application/x-font-type1 |  |  |
 | PICT | image/x-pict |  |  |
 | PNG | image/png |  |  |
 | PPT | application/vnd.ms-powerpoint |  |  |

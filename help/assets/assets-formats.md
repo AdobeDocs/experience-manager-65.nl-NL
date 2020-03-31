@@ -3,7 +3,7 @@ title: Ondersteunde indelingen voor middelen
 description: Lijst met bestandsindelingen die worden ondersteund door AEM Assets en door Dynamic Media, en functies die worden ondersteund voor elke indeling.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 84c6cc47d84656be587cc6a268b8ddc2e1e39635
+source-git-commit: 593c1e1954a1c8e0355ede9889caed05ff72f3f9
 
 ---
 
@@ -20,7 +20,7 @@ Gebruik de legenda om het steunniveau te begrijpen.
 |:---:|---|
 | ✓ | Ondersteund |
 | * | Ondersteund met add-onfuncties |
-| - | Niet van toepassing |
+| − | Niet van toepassing |
 
 ## Ondersteunde rasterafbeeldingsindelingen in AEM-elementen {#supported-raster-image-formats}
 
@@ -35,12 +35,12 @@ Gebruik de legenda om het steunniveau te begrijpen.
 | PGM | ✓ | ✓ |  |  |  |  | ✓ |
 | PBM | ✓ | ✓ |  |  |  |  | ✓ |
 | PPM | ✓ | ✓ |  |  |  |  | ✓ |
-| PSD **¹** | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
+| PSD ‡ | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ |  | ✓ |  |
 | PICT |  |  |  |  |  |  | ✓ |
 | PSB | ✓ | ✓ | ✓ | ✓ |  |  |  |
 
-**¹** De samengevoegde afbeelding wordt uit het PSD-bestand geëxtraheerd. Het is een afbeelding die door Adobe Photoshop wordt gegenereerd en die in het PSD-bestand wordt opgenomen. Afhankelijk van de instellingen kan de samengevoegde afbeelding wel of niet de werkelijke afbeelding zijn.
+‡ De samengevoegde afbeelding wordt uit het PSD-bestand geëxtraheerd. Het is een afbeelding die door Adobe Photoshop wordt gegenereerd en die in het PSD-bestand wordt opgenomen. Afhankelijk van de instellingen kan de samengevoegde afbeelding wel of niet de werkelijke afbeelding zijn.
 
 ## Ondersteunde rasterafbeeldingsindelingen in Dynamic Media (#supported-raster-image-formats-dynamic-media)
 
@@ -51,11 +51,11 @@ Gebruik de legenda om het steunniveau te begrijpen.
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ |
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ |
 | BMP | ✓ |  |  |  |  |
-| PSD **¹** | ✓ |  |  |  |  |
+| PSD **‡** | ✓ |  |  |  |  |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
 | PICT | ✓ |  |  |  |  |
 
-**¹** De samengevoegde afbeelding wordt uit het PSD-bestand geëxtraheerd. Het is een afbeelding die door Adobe Photoshop wordt gegenereerd en die in het PSD-bestand wordt opgenomen. Afhankelijk van de instellingen kan de samengevoegde afbeelding wel of niet de werkelijke afbeelding zijn.
+**‡** De samengevoegde afbeelding wordt uit het PSD-bestand geëxtraheerd. Het is een afbeelding die door Adobe Photoshop wordt gegenereerd en die in het PSD-bestand wordt opgenomen. Afhankelijk van de instellingen kan de samengevoegde afbeelding wel of niet de werkelijke afbeelding zijn.
 
 Naast bovenstaande informatie, moet u rekening houden met het volgende:
 
@@ -130,7 +130,7 @@ Documentindelingen die worden ondersteund voor functies voor middelenbeheer zijn
 | QXP | ✓ | ✓ |  |  |  |  |  |  |
 | EPUB | ✓ | ✓ |  | ✓ | ✓ |  |  |  |
 
-## Ondersteunde documentindelingen in dynamische media (##supported-document-formats-dynamic-media)
+## Ondersteunde documentindelingen in dynamische media (#supported-document-formats-dynamic-media)
 
 | Format | Uploaden<br> (invoerindeling) | Afbeeldingsvoorinstelling<br> maken<br><br> (uitvoerindeling) | Voorvertoning<br> van dynamische<br> uitvoering | Dynamische<br> uitvoering<br> leveren | Dynamische<br><br> uitvoering downloaden |
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -150,16 +150,16 @@ Overweeg het volgende naast de bovenstaande functionaliteit:
 
 |  | Opslag | Metagegevensbeheer | Metagegevensextractie | Miniaturen genereren | FFMPEG-transcodering |
 |:---|:---:|:---:|:---:|:---:|:---:|
-| AAC | ✓ | ✓ |  | - | * |
-| MIDI | ✓ | ✓ |  | - | * |
-| 3GP | ✓ | ✓ |  | - | * |
-| MP3 | ✓ | ✓ | ✓ | - | * |
-| MPG | ✓ | ✓ |  | - | * |
-| OGA | ✓ | ✓ |  | - | * |
-| OGG | ✓ | ✓ |  | - | * |
-| RA | ✓ | ✓ |  | - | * |
-| WAV | ✓ | ✓ |  | - | * |
-| WMA | ✓ | ✓ |  | - | * |
+| AAC | ✓ | ✓ |  | − | * |
+| MIDI | ✓ | ✓ |  | − | * |
+| 3GP | ✓ | ✓ |  | − | * |
+| MP3 | ✓ | ✓ | ✓ | − | * |
+| MPG | ✓ | ✓ |  | − | * |
+| OGA | ✓ | ✓ |  | − | * |
+| OGG | ✓ | ✓ |  | − | * |
+| RA | ✓ | ✓ |  | − | * |
+| WAV | ✓ | ✓ |  | − | * |
+| WMA | ✓ | ✓ |  | − | * |
 | DVI | ✓ | ✓ |  | * | * |
 | FLV | ✓ | ✓ |  | * | * |
 | M4V | ✓ | ✓ |  | * | * |
@@ -260,7 +260,7 @@ Zie ook [het toelaten van MIME op type-gebaseerde Activa/Scene7 uploadt baanpara
 | OTF | application/x-font-otf |  |  |
 | PDF | application/pdf | `pdfprocess=Rasterize&resolution=150`<br>`&colorspace=Auto&pdfbrochure=false`<br>`&keywords=false&links=false` | [pdfOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/?f=r_pdf_options) |
 | PFB | application/x-font-type1 |  |  |
-| PFM | application/x-font-type1 |  |  |
+| PGM | application/x-font-type1 |  |  |
 | PICT | image/x-pict |  |  |
 | PNG | image/png |  |  |
 | PPT | application/vnd.ms-powerpoint |  |  |

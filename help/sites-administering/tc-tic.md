@@ -10,7 +10,7 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: 200f51ab-f9bf-4989-91af-c3904fc673e5
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 98dd2d3e7445ceda6d96f0dd11b39d8361f1f402
 
 ---
 
@@ -23,13 +23,14 @@ Het vertaalintegratiekader integreert met vertaalservices van derden om de verta
 * Creeer een configuratie van het Kader van de Integratie van de Vertaling.
 * Koppel de cloudconfiguraties aan uw pagina&#39;s.
 
- Zie Inhoud [vertalen voor meertalige sites](/help/sites-administering/translation.md)voor een overzicht van de functies voor het vertalen van inhoud in AEM.
+Zie Inhoud [vertalen voor meertalige sites](/help/sites-administering/translation.md)voor een overzicht van de functies voor het vertalen van inhoud in AEM.
 
 ## Verbinding maken met een vertaalserviceprovider {#connecting-to-a-translation-service-provider}
 
 Maak een cloudconfiguratie die AEM met uw vertaalserviceprovider verbindt. AEM biedt standaard de mogelijkheid verbinding te maken met Microsoft Translator. Voor andere vertaalbureaus, download het schakelaarpakket van [het Aandeel](/help/sites-administering/package-manager.md#package-share)van het Pakket.
 De volgende vertaalverkopers verstrekken een implementatie van nieuwe API voor de Vertaalprojecten. Koppelingen voor meer informatie over de integratie en over het downloaden van Package Share:
 
+* [Translations.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html) (Adobe Exchange Premier-partner)
 * [De Technologieën](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/clay-tablet-translation-connector-for-aem.html) van de Tablet van de slag (niet op PackageShare, direct contactexploitant)
 * [Lionbridge](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/lionbridge-for-adobe-experience-manager.html)
 * [Wolken](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/cloudwords-for-adobe-translations-connector.html)
@@ -37,7 +38,6 @@ De volgende vertaalverkopers verstrekken een implementatie van nieuwe API voor d
 * [Lingotek](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/lingotek-for-adobe-experience-manager.html)
 * Microsoft (Microsoft Translator is vooraf geïnstalleerd in AEM)
 * [Smartling](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/smartling-connector-for-adobe-experience-manager.html)
-* [Translaties.com](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/globallink-connect-for-adobe-experience-manager.html)
 * [SDL WorldServer](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/sdlworldserver-connector.html)
 * [SDL TMS](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/sdl-tms-translation-connector-for-adobe-experience-manager.html)
 * [Systran](https://marketing.adobe.com/resources/content/resources/en/exchange/marketplace/apps/systran-for-adobe-experience-manager.html)
@@ -74,7 +74,7 @@ Wanneer verschillende gedeelten van uw website verschillende vertaalvereisten he
 
 Nadat u een vertaalintegratieframework hebt geconfigureerd, kunt u dit [koppelen aan de pagina&#39;s](/help/sites-administering/tc-prep.md) die het gebruiken.
 
-**** Opmerking: Zie Inhoud [vertalen voor meertalige sites](/help/sites-administering/translation.md)voor een overzicht van de functies voor het vertalen van inhoud in AEM.
+**Opmerking:** Zie Inhoud [vertalen voor meertalige sites](/help/sites-administering/translation.md)voor een overzicht van de functies voor het vertalen van inhoud in AEM.
 
 Eén configuratie van het framework bepaalt hoe pagina-inhoud, community-inhoud en elementen moeten worden omgezet.
 ![chlimage_1-386](assets/chlimage_1-386.png)
@@ -211,7 +211,7 @@ Verder, voor om het even welke gemeenschappen [SCF componenten](/help/communitie
 Koppel een pagina aan de vertaalprovider die u gebruikt om de pagina en afstammende pagina&#39;s te vertalen.
 
 1. Selecteer in de Sites-console de pagina die u wilt configureren en klik of tik op Weergave-eigenschappen.
-1. Klik op Bewerken of tik op Bewerken en klik op het tabblad Cloud Services.
+1. Klik op Bewerken of tik op Bewerken en klik of tik op het tabblad Cloud Services.
 1. Klik of tik Add Configuratie > Vertaalintegratie.
 1. Selecteer de vertaalprovider die u wilt gebruiken en klik op Gereed of tik op Gereed.
 

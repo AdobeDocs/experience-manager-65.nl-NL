@@ -1,5 +1,5 @@
 ---
-source-git-commit: 5120bbdefea528ad6d07a9c99df565555b6a8444
+source-git-commit: 352924b29ba145177482c1ceb0ce3b685c10d363
 translation-type: tm+mt
 
 ---
@@ -33,23 +33,23 @@ Uitzonderingen op deze regel zijn van toepassing op de opmerkingen bij de releas
 
 ### De bijdragen van de documentatie zijn niet voor het beantwoorden van technische vragen.
 
-Alle ideeën die u eventueel nodig hebt om de AEM-documentatie te verbeteren, zijn welkom als bijdragen. Opmerkingen, problemen en intrekkingsverzoeken zijn echter alleen bedoeld voor *bijdragen* . Ze zijn niet bedoeld om je vragen te beantwoorden over hoe je AEM kunt gebruiken of technische problemen kunt oplossen.
+Alle ideeën die u eventueel nodig hebt om de AEM-documentatie te verbeteren, zijn welkom als bijdragen. Opmerkingen, problemen en intrekkingsverzoeken zijn echter alleen bedoeld voor *bijdragen* . Ze zijn niet bedoeld om u te helpen uw vragen te beantwoorden over het gebruik van AEM, het implementeren van uw AEM-project of het oplossen van technische problemen.
 
 Vragen over het gebruik van AEM of technische fouten die u mogelijk hebt, moeten via het normale supportproces via het [Experience Manager Support Portal](https://daycare.day.com/home.html) worden gemeld of in de [Experience Manager-community](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html)worden besproken.
 
-***Bijdragen aan AEM-documentatie zijn geen vervanging voor Adobe-ondersteuning*** en dergelijke bijdragen die antwoorden op ondersteuningsvragen zoeken, worden afgewezen.
+***Bijdragen aan AEM-documentatie zijn geen vervanging voor Adobe-ondersteuning*** en bijdragen waarbij gezocht wordt naar antwoorden op ondersteuningsvragen, worden afgewezen.
 
 ### Bijdragen moeten duidelijk verwijzen naar betrokken documentatiepagina&#39;s.
 
-Als u een probleem maakt om verbeteringen in de documentatie voor te stellen, moet u koppelingen naar de betrokken pagina&#39;s opnemen. Als u een uitgave maakt met de koppeling Deze pagina **** bewerken op een documentatiepagina, wordt de uitgave automatisch gemaakt met een koppeling naar de pagina.
+Als u een probleemmelding maakt om verbeteringen in de documentatie voor te stellen, moet u koppelingen naar de betreffende pagina&#39;s opnemen. Als u een probleemmelding maakt met de koppeling **Deze pagina bewerken** op een documentatiepagina, wordt de probleemmelding automatisch gemaakt met een koppeling naar de pagina.
 
-Dit geldt niet voor pull-aanvragen omdat pull-aanvragen per definitie de betrokken pagina&#39;s bevatten.
+Dit is niet van toepassing op trekkingsverzoeken aangezien trekkingsverzoeken door hun aard verwijzen naar de betrokken pagina(&#39;s).
 
 ## Documentatierichtlijnen
 
 Wij vragen dat bij alle bijdragen aan onze documentatie bepaalde stijlrichtlijnen worden gevolgd.
 
-Door deze richtlijnen te volgen wordt de revisie van uw bijdrage gemakkelijker en daarom is integratie in onze documentatie sneller. Niet-naleving of onvolledige naleving van deze richtsnoeren betekent echter niet dat de bijdrage zal worden afgewezen.
+Door deze richtlijnen te volgen wordt de revisie van uw bijdrage gemakkelijker en daarom is integratie in onze documentatie sneller.
 
 ### Taal en stijl
 

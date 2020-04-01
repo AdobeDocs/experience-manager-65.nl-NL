@@ -3,14 +3,14 @@ title: Met gekoppelde assets kunt u DAM-assets delen in de authoringworkflow van
 description: Gebruik de assets die beschikbaar zijn op een externe implementatie van Adobe Experience Manager Assets bij het maken van uw webpagina's op een andere implementatie van een Experience Manager-site.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
+source-git-commit: 3c2c47b5d660fefd31470ce8d555c7bb949fa036
 
 ---
 
 
 # Gekoppelde assets gebruiken om DAM-assets te delen in AEM-sites {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
-In grote ondernemingen is de infrastructuur voor het maken van websites soms gedistribueerd. Soms zijn de functies en de digitale assets voor het maken van websites opgenomen in verschillende implementaties. Enkele redenen hiervoor zijn geografisch verspreide implementaties waardoor er in een 24-uurs economie achtereenvolgens op verschillende locaties aan een project kan worden gewerkt; overnames die leiden tot heterogene infrastructuren die de moedermaatschappij wil consolideren; groei die leidt tot een zodanige schaalvergroting dat een toegewijde instantie is vereist voor asset management.
+In grote ondernemingen is de infrastructuur voor het maken van websites soms gedistribueerd. Soms zijn de functies en de digitale assets voor het maken van websites opgenomen in verschillende implementaties. Enkele redenen kunnen geografisch worden verdeeld bestaande implementaties die vereist zijn om samen te werken of acquisities die leiden tot heterogene infrastructuren die het moederbedrijf samen wil gebruiken.
 
 AEM Sites biedt functies voor het maken van webpagina&#39;s en AEM Assets is het DAM-systeem (Digital Asset Management) dat de vereiste assets voor websites levert. AEM biedt nu ondersteuning voor het bovenstaande gebruiksscenario door de integratie van AEM Sites en AEM Assets.
 
@@ -37,7 +37,7 @@ Controleer de volgende punten voordat u deze functie gebruikt of configureert:
 
 Met de Content Finder kunnen auteurs zoeken naar afbeeldingen en de volgende typen documenten, waarna ze de gezochte assets gebruiken in de Pagina-editor. U kunt documenten toevoegen aan de `Download`-component en afbeeldingen aan de `Image`-component. Auteurs kunnen de externe assets toevoegen aan elke aangepaste AEM-component die een uitbreiding vormt op de standaardcomponenten `Download` of `Image`. De lijst met ondersteunde indelingen is:
 
-* **Afbeeldingsindelingen**: De afbeeldingsindelingen die door de [component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) Image worden ondersteund, worden ondersteund door Connected Assets. Dynamische media-afbeeldingen worden niet ondersteund.
+* **Afbeeldingsindelingen**: De afbeeldingsindelingen die door de [component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) Image worden ondersteund, worden ondersteund door Connected Assets. Dynamic Media-afbeeldingen worden niet ondersteund.
 * **Documentindelingen**: Zie [Ondersteunde documentindelingen voor gekoppelde assets](assets-formats.md#supported-document-formats).
 
 ### Betrokken gebruikers en groepen {#users-and-groups-involved}

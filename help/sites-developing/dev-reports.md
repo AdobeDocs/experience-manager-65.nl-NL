@@ -10,7 +10,7 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 50fafc64-d462-4386-93af-ce360588d294
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: ea6da2b75cce4052211fb8f0793f1f380eb85a20
 
 ---
 
@@ -635,7 +635,7 @@ N:definitions
 
    * `pathextension`
 
-      Hiermee lost u een waarde op door een pad vooraf in te stellen en de werkelijke waarde te nemen vanuit een eigenschap van het knooppunt op het opgeloste pad. Een waarde `de` kan bijvoorbeeld worden voorafgegaan door een pad, bijvoorbeeld `/libs/wcm/core/resources/languages`door de waarde van de eigenschap te nemen `language`, om de landcode `de` op te lossen in de taalbeschrijving `German`.
+      Hiermee lost u een waarde op door een pad vooraf in te stellen en de werkelijke waarde te nemen vanuit een eigenschap van het knooppunt op het opgeloste pad. Een waarde `de` kan bijvoorbeeld worden voorafgegaan door een pad, bijvoorbeeld `/libs/wcm/core/resources/languages`door de waarde van de eigenschap te nemen `language`, om de landcode `de` op te lossen naar de taalbeschrijving `German`.
 
 * `resolverConfig`
 
@@ -834,7 +834,7 @@ Momenteel zijn de beschikbare gegevenstypeformatters:
 
    * `duration`
 
-      De duur is de tijdspanne tussen twee bepaalde data. Bijvoorbeeld het begin en einde van een werkstroomactie die 1 uur heeft geduurd, vanaf 13/13/11 11:23u en eindigend één uur later om 13/11 12:23u.
+      De duur is de tijdspanne tussen twee bepaalde data. Bijvoorbeeld het begin en einde van een werkstroomactie die 1 uur heeft geduurd, te beginnen op 13/13/11 11:23u en eindigend één uur later op 13/11 12:23u.
 
       Het zet een numerieke waarde (die als milliseconden wordt geïnterpreteerd) in een duurkoord om; is bijvoorbeeld `30000` opgemaakt als * `30s`.*
 
@@ -1318,7 +1318,8 @@ Om deze stappen te illustreren, bepaalt het volgende voorbeeld een rapport dat v
    >
    >Dit is hetzelfde als de definities:
    >
-   >```
+   >
+   ```
    >N:data [nt:unstructured]
    >   P:clientFilter [String] = "function(v) { return v; }"
    >```
@@ -1381,7 +1382,7 @@ Een geval van uw nieuw rapport kan nu worden gecreeerd:
 1. Open de **console van Hulpmiddelen** .
 
 1. Selecteer **Rapporten** in de linkerruit.
-1. **Dan** Nieuw... op de werkbalk. Bepaal een **Titel** en een **Naam**, selecteer uw nieuw rapporttype (het Malplaatje **van het Rapport** OSGi) van de lijst van malplaatjes, dan klik **creëren**.
+1. Dan **Nieuw...** op de werkbalk. Bepaal een **Titel** en een **Naam**, selecteer uw nieuw rapporttype (het Malplaatje **van het Rapport** OSGi) van de lijst van malplaatjes, dan klik **creëren**.
 1. Uw nieuwe rapportexemplaar zal in de lijst verschijnen. Dubbelklik hierop om te openen.
 1. Sleep een component (voor dit voorbeeld, **Bundel** in de **OSGi groep van het Rapport** ) van sidekick om de eerste kolom tot stand te brengen en de rapportdefinitie [te](/help/sites-administering/reporting.md#the-basics-of-report-customization)beginnen.
 
@@ -1389,13 +1390,13 @@ Een geval van uw nieuw rapport kan nu worden gecreeerd:
    >
    >Aangezien dit voorbeeld geen groeperbare kolommen heeft, zijn de grafieken niet beschikbaar. Als u grafieken wilt zien, stelt u `groupable` in op `true`:
    >
-   >```
+   >
+   ```
    >N:osgireport [sling:Folder]
    > N:bundlecol [cq:Component]
    > N:definitions [nt:unstructured]
    > P:groupable [Boolean] = true
    >```
-   >
 
 ## Het vormen van de Diensten van het Kader van het Rapport {#configuring-the-report-framework-services}
 

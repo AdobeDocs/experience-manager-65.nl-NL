@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: c061b358-8c0d-40d3-8090-dc9800309ab3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 07ac9c0e0836fc7000062c27dbdeb70059997089
+source-git-commit: c9edac158bc6a00637f8be5aac70a2a249e11d59
 
 ---
 
@@ -167,7 +167,7 @@ Zodra een geautoriseerde gebruiker, een lid van de **`administrators`**gebruiker
    * lokaliseren `Apache Sling Distribution Transport Credentials - User Credentials based DistributionTransportSecretProvider`
    * Selecteer de bestaande configuratie die u wilt openen voor bewerken (potloodpictogram)Verifiëren `property name`: **`socialpubsync-publishUser`**
 
-   * de gebruikersnaam en het wachtwoord instellen voor de [geautoriseerde gebruiker](#createauthorizeduser) die is gemaakt bij publicatie in stap 2
+   * de gebruikersnaam en het wachtwoord instellen voor de [geautoriseerde gebruiker](#createauthuser) die is gemaakt bij publicatie in stap 2
 
       * for example, `usersync-admin`
 
@@ -450,7 +450,7 @@ Dit is wat wordt getoond wanneer de Synchronisatie van de Gebruiker niet is toeg
 
 Wanneer de diagnose van het auteursmilieu in werking wordt gesteld, zullen de pas/mislukkingsresultaten een sectie [INFO] omvatten die de lijst van gevormde te bevestigen publicatieinstanties toont.
 
-In de lijst is een URL opgenomen voor elke publicatie-instantie die de diagnostiek voor die instantie uitvoert. De url-parameter `syncUser` wordt toegevoegd aan de diagnostische URL en de waarde ervan wordt ingesteld op de *geautoriseerde synchronisatiegebruiker* die is gemaakt in [Stap 2](/help/sites-administering/sync.md#2createauthorizeduser).
+In de lijst is een URL opgenomen voor elke publicatie-instantie die de diagnostiek voor die instantie uitvoert. De url-parameter `syncUser` wordt toegevoegd aan de diagnostische URL en de waarde ervan wordt ingesteld op de *geautoriseerde synchronisatiegebruiker* die is gemaakt in [Stap 2](#createauthuser).
 
 **Opmerking**: voordat u de URL start, moet de *geautoriseerde synchronisatiegebruiker* al zijn aangemeld bij die publicatie-instantie.
 
@@ -458,7 +458,7 @@ In de lijst is een URL opgenomen voor elke publicatie-instantie die de diagnosti
 
 ### Configuratie onjuist toegevoegd {#configuration-improperly-added}
 
-Wanneer de gebruikerssynchronisatie niet werkt, is het meest voorkomende probleem dat er extra configuraties zijn *toegevoegd*. In plaats daarvan, zou de *existing *default configuratie *uitgegeven* moeten zijn.
+Wanneer de gebruikerssynchronisatie niet werkt, is het meest voorkomende probleem dat er extra configuraties zijn *toegevoegd*. In plaats daarvan, zou *existing *default configuratie *uitgegeven* moeten zijn.
 
 Na zijn meningen van hoe uitgegeven, standaardconfiguraties in de Console van het Web zouden moeten verschijnen. Als er meerdere exemplaren worden weergegeven, moet de toegevoegde configuratie worden verwijderd.
 
@@ -490,7 +490,7 @@ Als het volgende zichtbaar is in het logboek:
 
 `java.lang.IllegalStateException: This tree does not exist`
 
-Controleer vervolgens of de sectie [2. Gemachtigde gebruiker]maken (/content/docs/en/aem/6-1/administer/security/security/sync.md#2). geautoriseerde gebruiker maken) is correct uitgevoerd.
+Controleer vervolgens of de sectie [2. Gemachtigde gebruiker](#createauthuser) maken is op de juiste wijze gevolgd.
 
 Deze sectie beschrijft het creëren van een erkende gebruiker, die op alle publiceer instanties bestaat, en het identificeren van hen in de &quot;Secret Provider&quot;OSGi config op auteur. By default, the user is `admin`.
 

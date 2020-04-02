@@ -8,7 +8,7 @@ discoiquuid: 87dc79ad-0a71-43f6-af04-4d26c7472dc5
 mini-toc-levels: 1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 42c268396940144a217ff09f49fe3f6d6791a533
+source-git-commit: ac4c5ec920ed768002da1b4598590bfd9ca301f6
 
 ---
 
@@ -77,7 +77,7 @@ Het dialoogvenster Zoeken en vervangen wordt transparant wanneer op Zoeken wordt
 
 Wanneer het gebruiken van RTE, kunnen de auteurs inhoud in één van de volgende drie wijzen kleven:
 
-* **Browsermodus**:Plak tekst met gebruik van de standaardimplementatie van de browser. Het is geen aanbevolen methode omdat hierdoor ongewenste opmaakcodes kunnen ontstaan.
+* **Browsermodus**: Plak tekst met gebruik van de standaardimplementatie van de browser. Het is geen aanbevolen methode omdat hierdoor ongewenste opmaakcodes kunnen ontstaan.
 
 * **Modus** Onbewerkte tekst: Plak de inhoud van het klembord als onbewerkte tekst. Alle elementen van stijl en opmaak worden uit de gekopieerde inhoud verwijderd voordat deze in de AEM-component worden ingevoegd.
 
@@ -107,9 +107,9 @@ De configuratie staat voor de volgende drie soorten gebruiksgevallen toe:
 
 * Plak tekst met gebruik van de standaardimplementatie van de browser. Het is geen aanbevolen methode omdat hierdoor ongewenste opmaakcodes kunnen ontstaan. Gevormd met `browser` hieronder.
 
-*  Plak de inhoud van het klembord als onbewerkte tekst. Alle elementen van stijl en opmaak worden uit de gekopieerde inhoud verwijderd voordat deze in de AEM-component worden ingevoegd. Gevormd met `plaintext` hieronder.
+* Plak de inhoud van het klembord als onbewerkte tekst. Alle elementen van stijl en opmaak worden uit de gekopieerde inhoud verwijderd voordat deze in de AEM-component worden ingevoegd. Gevormd met `plaintext` hieronder.
 
-*  Plak de tekst, inclusief tabellen, met opmaak wanneer u kopieert vanuit MS Word. Het kopiëren en plakken van tekst uit een andere bron, zoals een webpagina of MS Excel, wordt niet ondersteund en behoudt alleen de gedeeltelijke opmaak. Gevormd met `wordhtml` hieronder.
+* Plak de tekst, inclusief tabellen, met opmaak wanneer u kopieert vanuit MS Word. Het kopiëren en plakken van tekst uit een andere bron, zoals een webpagina of MS Excel, wordt niet ondersteund en behoudt alleen de gedeeltelijke opmaak. Gevormd met `wordhtml` hieronder.
 
 1. Navigeer in uw component naar het `<rtePlugins-node>/edit` knooppunt. Maak de knooppunten als deze niet bestaan. Zie Een plug-in [activeren voor meer informatie](#activateplugin).
 1. In de `edit` knoop creeer een bezit gebruikend de volgende details:
@@ -268,7 +268,7 @@ Geef vervolgens de locatie(s) op van de stijlpagina(&#39;s) waarnaar u wilt verw
 1. Voeg de eigenschap toe `externalStyleSheets` aan het bovenliggende knooppunt van `<rtePlugins-node>`:
 
    * **Naam**`externalStyleSheets`
-   * **Type** `String[]` (meerdere tekenreeksen; klik op **Multi** in (CRXDE)
+   * **Type** `String[]` (meerdere tekenreeksen; klik op **Multi** in CRXDE)
    * **Waarde(s)** Het pad en de bestandsnaam van elk stijlblad dat u wilt opnemen. Gebruik repository paden.
    >[!NOTE]
    >
@@ -282,18 +282,19 @@ Geef vervolgens de locatie(s) op van de stijlpagina(&#39;s) waarnaar u wilt verw
 >
 >De rijke Redacteur van de Tekst gebruikt een containerDOM element met een identiteitskaart van `CQrte` die kan worden gebruikt om verschillende stijlen voor het bekijken en het uitgeven te verstrekken:
 >
->```
+>
+```
 >#CQ td {
 > // defines the style for viewing
 > }
 >```
 >
->```
+>
+```
 >#CQrte td {
 > // defines the style for editing
 > }
 >```
->
 
 ### Geef de beschikbare stijlen op in de pop-uplijst {#stylesindropdown}
 
@@ -581,7 +582,7 @@ Soms kunt u gegevenslijsten zonder visuele tekst in een kolomkopbal tot stand br
 Om toegankelijkheid in dergelijke scenario&#39;s te verbeteren, steunt RTE verborgen kopbalcellen. Bovendien worden er configuratie-instellingen gegeven voor verborgen koppen in tabellen. Met deze instellingen kunt u CSS-stijlen toepassen op verborgen koppen in de bewerkings- en voorvertoningsmodus. Om auteurs te helpen verborgen kopballen in Edit wijze identificeren, omvat de volgende parameters in uw code:
 
 * `hiddenHeaderEditingCSS`: Hiermee geeft u de naam op van de CSS-klasse die wordt toegepast op de cel met verborgen koptekst wanneer RTE wordt bewerkt.
-* `hiddenHeaderEditingStyle`: Hiermee geeft u een stijltekenreeks op die wordt toegepast op de cel met de verborgen koptekst wanneer RTE wordt bewerkt.
+* `hiddenHeaderEditingStyle`: Hiermee geeft u een stijltekenreeks op die wordt toegepast op de cel met verborgen koptekst wanneer RTE wordt bewerkt.
 
 Als u zowel de CSS-tekenreeks als de stijltekenreeks in code opgeeft, heeft de CSS-klasse voorrang op de stijltekenreeks en kan deze alle configuratiewijzigingen overschrijven die de stijltekenreeks aanbrengt.
 

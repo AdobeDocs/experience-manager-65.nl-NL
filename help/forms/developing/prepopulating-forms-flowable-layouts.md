@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 30a12fc6-07b8-4c7c-b9e2-caa2bec0ac48
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: ebb60e79aa7fb45e059e2d2451f6d549cd24b8b0
 
 ---
 
@@ -36,7 +36,7 @@ Er moet een XML-element aanwezig zijn voor elk formulierveld dat u vooraf wilt i
 
 Wanneer u een formulier invult dat al gegevens bevat, moet u opgeven welke gegevens al in de XML-gegevensbron worden weergegeven. Stel dat een formulier met tien velden gegevens bevat in vier velden. Ga er vervolgens van uit dat u de resterende zes velden vooraf wilt invullen. In dit geval moet u 10 XML-elementen opgeven in de XML-gegevensbron die wordt gebruikt om het formulier vooraf in te vullen. Als u slechts zes elementen opgeeft, zijn de oorspronkelijke vier velden leeg.
 
-U kunt bijvoorbeeld een formulier zoals het voorbeeldbevestigingsformulier vooraf invullen. (Zie &quot;Bevestigingsformulier&quot; in [Rendering Interactive PDF Forms](/help/forms/develop/rendering-forms-rendering-forms rendering-interactive-pdf-forms-rendering.md#rendering-interactive-pdf-forms).)
+U kunt bijvoorbeeld een formulier zoals het voorbeeldbevestigingsformulier vooraf invullen. (Zie &quot;Bevestigingsformulier&quot; in [Interactieve PDF-formulieren](/help/forms/developing/rendering-interactive-pdf-forms.md)weergeven.)
 
 Als u het voorbeeldbevestigingsformulier vooraf wilt invullen, moet u een XML-gegevensbron maken die drie XML-elementen bevat die overeenkomen met de drie velden in het formulier. Dit formulier bevat de volgende drie velden: `FirstName`, `LastName`, en `Amount`. De eerste stap bestaat uit het maken van een XML-gegevensbron die XML-elementen bevat die overeenkomen met de velden in het formulierontwerp. De volgende stap bestaat uit het toewijzen van gegevenswaarden aan de XML-elementen, zoals in de volgende XML-code wordt getoond.
 
@@ -209,7 +209,7 @@ Neem de benodigde bestanden op in uw ontwikkelingsproject. Als u een clienttoepa
 
 **Een XML-gegevensbron in het geheugen maken**
 
-Met `org.w3c.dom` klassen kunt u een XML-gegevensbron in het geheugen maken om een formulier vooraf in te vullen met een stroombare indeling. U moet gegevens in een XML-gegevensbron plaatsen die voldoet aan het formulier. Voor informatie over de verhouding tussen een formulier met een stroombare indeling en de XML-gegevensbron, raadpleegt u [Werken met gegevenssubgroepen](/help/forms/develop/rendering-forms-rendering-forms prepopulating-forms-flowable-layouts-prepopulating-forms-flowable-layouts-prepopulating.md#understanding-data-subgroups).
+Met `org.w3c.dom` klassen kunt u een XML-gegevensbron in het geheugen maken om een formulier vooraf in te vullen met een stroombare indeling. U moet gegevens in een XML-gegevensbron plaatsen die voldoet aan het formulier. Zie [Werken met gegevenssubgroepen](#understanding-data-subgroups)voor informatie over de relatie tussen een formulier met een stroombare indeling en de XML-gegevensbron.
 
 **De XML-gegevensbron converteren**
 

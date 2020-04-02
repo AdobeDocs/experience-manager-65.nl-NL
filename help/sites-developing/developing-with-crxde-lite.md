@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 4537c1fb-f99c-42e2-a222-b037794bdb52
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+source-git-commit: 78133b41e1c99f8f86f4c0d51961287735423fe2
 
 ---
 
@@ -71,7 +71,7 @@ CRXDE Lite biedt de volgende functionaliteit aan:
   </tr>
   <tr>
    <td>Venster Bewerken</td>
-   <td><p><strong>Tabblad Start</strong> : Hiermee kunt u zoeken in inhoud en/of documentatie en toegang krijgen tot bronnen voor ontwikkelaars (documentatie, ontwikkelaarsblog, kennisbasis) en ondersteuning (Adobe-startpagina en ondersteuningscentrum).<br /> </p> <p>Dubbelklik op een bestand in het deelvenster <strong>Verkenner</strong> om de inhoud weer te geven. zoals bijvoorbeeld een .jsp- of een .java-bestand. U kunt het dan wijzigen en de veranderingen bewaren.</p> <p>Nadat een bestand is bewerkt in het deelvenster <strong>Bewerken</strong> , zijn de volgende gereedschappen beschikbaar op de werkbalk:<br /> </p> - <strong>Tonen in boom: Het bestand </strong>wordt weergegeven in de boomstructuur van de opslagplaats.<br /> - <strong>Zoeken/vervangen ...</strong>: zoeken of vervangen.<br /> Als u dubbelklikt op de statusregel van het deelvenster <br /> Bewerken <strong>, wordt het dialoogvenster</strong> Ga naar regel <strong></strong> geopend, zodat u een specifiek regelnummer kunt invoeren waarnaar u wilt gaan.<br /> </td>
+   <td><p><strong>Tabblad Start</strong> : Hiermee kunt u zoeken in inhoud en/of documentatie en toegang krijgen tot bronnen voor ontwikkelaars (documentatie, ontwikkelaarsblog, kennisbasis) en ondersteuning (Adobe-startpagina en ondersteuningscentrum).<br /> </p> <p>Dubbelklik op een bestand in het deelvenster <strong>Verkenner</strong> om de inhoud weer te geven; zoals bijvoorbeeld een .jsp- of een .java-bestand. U kunt het dan wijzigen en de veranderingen bewaren.</p> <p>Nadat een bestand is bewerkt in het deelvenster <strong>Bewerken</strong> , zijn de volgende gereedschappen beschikbaar op de werkbalk:<br /> </p> - <strong>Tonen in boom: Het bestand </strong>wordt weergegeven in de boomstructuur van de opslagplaats.<br /> - <strong>Zoeken/vervangen ...</strong>: zoeken of vervangen.<br /> Als u dubbelklikt op de statusregel van het deelvenster <br /> Bewerken <strong>, wordt het dialoogvenster</strong> Ga naar regel <strong></strong> geopend, zodat u een specifiek regelnummer kunt invoeren waarnaar u wilt gaan.<br /> </td>
   </tr>
   <tr>
    <td>Eigenschappen, tabblad<br /> </td>
@@ -151,7 +151,7 @@ Met CRXDE Lite kunt u een werkend project in drie klikken tot stand brengen. De 
 Een project maken met CRXDE Lite:
 
 1. Open CRXDE Lite in uw browser.
-1. **Klik in het navigatievenster met de rechtermuisknop op een knooppunt, selecteer** Maken ...**en**maak vervolgens Project.. .
+1. Klik in het navigatievenster met de rechtermuisknop op een knooppunt, selecteer **Maken ...** en **maak vervolgens Project..**.
 Opmerking: u kunt om het even welke knoop in de boomnavigatie met de rechtermuisknop aanklikken, aangezien de nieuwe projectknopen, door ontwerp, hieronder worden gecreeerd `/apps,` en `/content` `/etc/packages`.
 
 1. Definiëren:
@@ -191,7 +191,7 @@ De structuur ziet er als volgt uit in CRXDE Lite met een project genoemd **mijnp
 Een map maken met CRXDE Lite:
 
 1. Open CRXDE Lite in uw browser.
-1. **Klik in het navigatievenster met de rechtermuisknop op de map waaronder u de nieuwe map wilt maken, selecteer** Maken ...**en** Map maken.. .
+1. Klik in het navigatievenster met de rechtermuisknop op de map waaronder u de nieuwe map wilt maken, selecteer **Maken ...** en **Map maken..**.
 
 1. Voer de **mapnaam** in en klik op **OK**.
 
@@ -202,7 +202,7 @@ Een map maken met CRXDE Lite:
 Een sjabloon maken met CRXDE Lite:
 
 1. Open CRXDE Lite in uw browser.
-1. **Klik in het navigatievenster met de rechtermuisknop op de map waarin u de sjabloon wilt maken, selecteer** Maken ...**en** vervolgens Sjabloon maken.. .
+1. Klik in het navigatievenster met de rechtermuisknop op de map waarin u de sjabloon wilt maken, selecteer **Maken ...** en **vervolgens Sjabloon maken..**.
 
 1. Voer het **label**, de **titel**, de **beschrijving**, het type **** bron en de **volgorde** van de sjabloon in. Click **Next**.
 
@@ -229,7 +229,7 @@ De hier beschreven functie is alleen beschikbaar als CQ5 is geïnstalleerd, dat 
 Een component maken met CRXDE Lite:
 
 1. Open CRXDE Lite in uw browser.
-1. **Klik in het navigatievenster met de rechtermuisknop op de map waarin u de component wilt maken, selecteer** Maken ...**en** vervolgens Component maken.. .
+1. Klik in het navigatievenster met de rechtermuisknop op de map waarin u de component wilt maken, selecteer **Maken ...** en **vervolgens Component maken..**.
 
 1. Ga het **Etiket**, de **Titel**, de **Beschrijving**, het Type **van** Hulpmiddel en de **Groep** van de component in. Click **Next**.
 
@@ -252,7 +252,7 @@ Het leidt tot:
 Een dialoogvenster maken met CRXDE Lite:
 
 1. Open CRXDE Lite in uw browser.
-1. **Klik in het navigatievenster met de rechtermuisknop op de component waar u het dialoogvenster wilt maken, selecteer** Maken ...**en** Dialoogvenster maken.. .
+1. Klik in het navigatievenster met de rechtermuisknop op de component waar u het dialoogvenster wilt maken, selecteer **Maken ...** en **Dialoogvenster maken..**.
 
 1. Voer het **label** en de **titel** in. Click **OK**.
 
@@ -271,7 +271,7 @@ U kunt een dialoogvenster ook bewerken met de Dialoogeditor. Als u dubbelklikt o
 Een knooppunt maken met CRXDE Lite:
 
 1. Open CRXDE Lite in uw browser.
-1. **Klik in het navigatievenster met de rechtermuisknop op het knooppunt waar u het nieuwe knooppunt wilt maken, selecteer** Maken ...**en** vervolgens Node maken.. .
+1. Klik in het navigatievenster met de rechtermuisknop op het knooppunt waar u het nieuwe knooppunt wilt maken, selecteer **Maken ...** en **vervolgens Node maken..**.
 1. Voer de **naam** en het **type** in. Click **OK**.
 1. Klik op Alles **** opslaan om de wijzigingen op de server op te slaan.
 
@@ -298,7 +298,7 @@ Een eigenschap maken met CRXDE Lite:
 Een nieuw script maken:
 
 1. Open CRXDE Lite in uw browser.
-1. **Klik in het navigatievenster met de rechtermuisknop op de component waar u het script wilt maken, selecteer** Maken ...**en** vervolgens Bestand maken.. .
+1. Klik in het navigatievenster met de rechtermuisknop op de component waar u het script wilt maken, selecteer **Maken ...** en **vervolgens Bestand maken..**.
 
 1. Voer de **bestandsnaam** en de extensie in. Click **OK**.
 
@@ -321,7 +321,7 @@ U kunt als volgt de testbundel maken met CRXDE Lite:
    * `/apps/myapp/src`
    * `/apps/myapp/install`
 
-1. `/apps/myapp/src`Klik met de rechtermuisknop op de map `Test` die de **bundel zal bevatten, selecteer** Maken ...**en** vervolgens Bundel maken.. .
+1. Klik met de rechtermuisknop op de map `/apps/myapp/src` die de `Test` bundel zal bevatten, selecteer **Maken ...** en **vervolgens Bundel maken..**.
 
 1. Stel de eigenschappen van de bundel als volgt in:
 
@@ -393,7 +393,7 @@ De volgende tabel bevat een lijst met alle eigenschappen van het .bnd-bestand, d
   </tr>
   <tr>
    <td>Bundle-SymbolicName:</td>
-   <td>com.mijnbedrijf.test.Testbundel</td>
+   <td>com.mycompany.test.TestBundle</td>
    <td>Hiermee wordt een unieke, niet-lokaliseerbare naam voor de bundel opgegeven</td>
   </tr>
   <tr>
@@ -403,7 +403,7 @@ De volgende tabel bevat een lijst met alle eigenschappen van het .bnd-bestand, d
   </tr>
   <tr>
    <td>Bundelactivering:</td>
-   <td>com.mijnbedrijf.test.Activer</td>
+   <td>com.mycompany.test.Activator</td>
    <td>Hiermee wordt de naam opgegeven van de optionele listenerklasse die moet worden gewaarschuwd voor bundle start- en stop-gebeurtenissen</td>
   </tr>
  </tbody>
@@ -416,7 +416,7 @@ Raadpleeg voor meer informatie over de bindindeling het [bindnut](https://bndtoo
 U kunt als volgt de `HelloWorld` Java-klasse maken in het testpakket:
 
 1. Open CRXDE Lite in uw browser.
-1. `Activator.java`Klik in het navigatievenster met de rechtermuisknop op het knooppunt met het `/apps/myapp/src/com.mycompany.test.TestBundle/src/main/java` bestand ( **), selecteer** Maken ...**en** maak vervolgens Bestand.. .
+1. Klik in het navigatievenster met de rechtermuisknop op het knooppunt met het `Activator.java` bestand ( `/apps/myapp/src/com.mycompany.test.TestBundle/src/main/java`), selecteer **Maken ...** en **maak vervolgens Bestand..**.
 
 1. Geef het bestand een naam `HelloWorld.java`. Click **OK**.
 
@@ -491,7 +491,7 @@ Een definitie van het knooppunttype exporteren:
 Een definitie van het knooppunttype importeren:
 
 1. Open CRXDE Lite in uw browser.
-1. **Selecteer** Gereedschappen **en** Importeer knooppunttype... .
+1. Selecteer **Gereedschappen** en **Importeer knooppunttype...**.
 
 1. Voer in het tekstvak de CND-notatie voor de definitie in.
 1. Schakel Update **** toestaan in als u een bestaande definitie bijwerkt.
@@ -502,7 +502,7 @@ Een definitie van het knooppunttype importeren:
 Met CRXDE Lite kunt u het dossier tonen `error.log` dat op het dossiersysteem bij `<crx-install-dir>/crx-quickstart/server/logs` en het filtreren met het aangewezen logboekniveau wordt gevestigd. Ga als volgt te werk:
 
 1. Open CRXDE Lite in uw browser.
-1. Selecteer op het tabblad **Console** onder aan het venster in het vervolgkeuzemenu rechts de optie **Serverlogbestanden**.
+1. Selecteer op het tabblad **Console** onder aan het venster in het keuzemenu rechts de optie **Serverlogbestanden**.
 
 1. Klik op het pictogram **Stoppen** om de berichten weer te geven.
 

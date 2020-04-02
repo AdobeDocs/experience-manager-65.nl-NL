@@ -3,7 +3,7 @@ title: Ondersteunde indelingen voor middelen
 description: Lijst met bestandsindelingen die worden ondersteund door AEM Assets en door Dynamic Media, en functies die worden ondersteund voor elke indeling.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 593c1e1954a1c8e0355ede9889caed05ff72f3f9
+source-git-commit: 15691a164913cf06bfbb77392ec563d8c364a1b8
 
 ---
 
@@ -67,21 +67,23 @@ Naast bovenstaande informatie, moet u rekening houden met het volgende:
 
 * Voor EPS-bestanden wordt terugschrijven van metagegevens ondersteund in PostScript Document Structuring Convention (PS-Adobe) versie 3.0 of hoger.
 
-## Niet-ondersteunde indelingen voor rasterafbeeldingen in Dynamic Media (#unsupported-image-formats-dynamic-media)
+<!-- Topic commented out for now as of March 31, 2020. The topic may still need adjustment so it can be published live, or it may be moved into a KB article instead. Just waiting on feedback in CQDOC-15657. - Rick
+## Unsupported raster image formats in Dynamic Media (#unsupported-image-formats-dynamic-media)
 
-In de volgende tabel worden de subtypen van rasterafbeeldingsindelingen beschreven die *niet* worden ondersteund in Dynamic Media. In de tabel staan ook suggesties voor methoden die u kunt gebruiken om dergelijke bestanden te detecteren.
+The following table describes the sub-types of raster image formats that are *not* supported in Dynamic Media. The table also describes suggested methods you can use to detect such files.
 
-| Format | Wat wordt niet ondersteund? | Voorgestelde detectiemethode |
+| Format | What is unsupported? | Suggested detection method |
 |---|---|---|
-| JPEG | Bestanden waarin de eerste drie bytes onjuist zijn. | Als u een JPEF-bestand wilt identificeren, moeten de initiële drie bytes van dat bestand zijn `ff d8 ff`. Als het iets anders is, wordt het niet geclassificeerd als JPEG.<br>・ Er is geen software die u kan helpen met dit probleem.<br>・ Een klein programma C++/java dat de aanvankelijke drie bytes van een dossier leest zou deze types van dossiers moeten kunnen ontdekken.<br>・ Het kan beter zijn om de bron van dergelijke dossiers te volgen en het hulpmiddel te bekijken dat het dossier produceert. |
-| PNG | Bestanden met een IDAT-segmentgrootte groter dan 100 MB. | U kunt dit probleem detecteren met [libpng](http://www.libpng.org/pub/png/libpng.html) in C++. |
-| PSB |  | Gebruik exiftool als het bestandstype PSB is.<br>Voorbeeld in een ExifTool-logboek:<br>1. Bestandstype: `PSB` |
-| PSD | Bestanden met een andere kleurruimte dan CMYK, RGB, Grijswaarden of Bitmap worden niet ondersteund.<br>DuoTone-, Lab- en Geïndexeerde kleurruimten worden niet ondersteund. | Gebruik ExifTool als de kleurmodus Duotoon is.<br>Voorbeeld in een ExifTool-logboek:<br>1. Kleurmodus: `Duotone` |
-|  | Bestanden met abrupte eindes. | Adobe kan deze voorwaarde niet detecteren. Dergelijke bestanden kunnen ook niet worden geopend met Adobe PhotoShop. Adobe raadt u aan het programma te onderzoeken dat is gebruikt om een dergelijk bestand te maken en problemen bij de bron op te lossen. |
-|  | Bestanden met een bitdiepte groter dan 16. | Gebruik ExifTool als de bitdiepte groter is dan 16.<br>Voorbeeld in een ExifTool-logboek:<br>1. Bitdiepte: `32` |
-|  | Bestand met Lab-kleurruimte. | Gebruik exiftool als de kleurmodus Lab is.<br>Voorbeeld in een ExifTool-logboek:<br>1. Kleurmodus: `Lab` |
-| TIFF | Bestanden met zwevende-kommagegevens. Een TIFF-bestand met 32-bits diepte wordt dus niet ondersteund. | Gebruik ExifTool als het MIME-type is `image/tiff` en de waarde van SampleFormat `Float` is. Voorbeeld in een ExifTool-logboek:<br>1. MIME-type: `image/tiff`<br>Voorbeeldindeling: `Float #`<br>2. MIME-type: `image/tiff`<br>Voorbeeldindeling: `Float; Float; Float; Float` |
-|  | Bestanden met Lab-kleurruimte. | Gebruik ExifTool als de kleurmodus Lab is.<br>Voorbeeld in een ExifTool-logboek:<br>1. Kleurmodus: `Lab` |
+| JPEG  | Files where the initial three bytes is incorrect. | To identify a JPEF file, its initial three bytes must be `ff d8 ff`. If they are anything else, then it is not classified as a JPEG.<br>&bull; There is no software tool that can help with this issue.<br>&bull; A small C++/java program which reads the initial three bytes of a file should be able to detect these types of files.<br>&bull; It may be better to track the source of such files and look at the tool generating the file. |
+| PNG |  Files that have an IDAT chunk size greater than 100 MB. | You can detect this issue using [libpng](http://www.libpng.org/pub/png/libpng.html) in C++. |
+| PSB |  | Use exiftool if the file type is PSB.<br>Example in an ExifTool log:<br>1. File type: `PSB` |
+| PSD | Files with a color space other than CMYK, RGB, Grayscale, or Bitmap are not supported.<br>DuoTone, Lab, and Indexed color spaces are not supported. | Use ExifTool if Color mode is Duotone.<br>Example in an ExifTool log:<br>1. Color mode: `Duotone` |
+|  | Files with abrupt endings. | Adobe is unable to detect this condition. Also, such files cannot be opened with Adobe PhotoShop. Adobe suggests you examine the tool that was used to create such a file and troubleshoot at the source. |
+|  | Files that have a bit depth greater than 16. | Use ExifTool if the bit depth is greater than 16.<br>Example in an ExifTool log:<br>1. Bit depth: `32` |
+|  | File that have Lab color space. | Use exiftool if the color mode is Lab.<br>Example in an ExifTool log:<br>1. Color mode: `Lab` |
+| TIFF | Files that have floating point data. That is, a TIFF file with 32-bit depth is not supported. | Use ExifTool if the MIME type is `image/tiff` and the SampleFormat has `Float` in its value. Example in an ExifTool log:<br>1. MIME type: `image/tiff`<br>Sample format: `Float #`<br>2. MIME type: `image/tiff`<br>Sample format: `Float; Float; Float; Float` |
+|  | Files that have Lab color space. | Use ExifTool if the color mode is Lab.<br>Example in an ExifTool log:<br>1. Color mode: `Lab` |
+-->
 
 ## Ondersteunde PDF Rasterizer-bibliotheek {#supported-pdf-rasterizer-library}
 
@@ -260,7 +262,7 @@ Zie ook [het toelaten van MIME op type-gebaseerde Activa/Scene7 uploadt baanpara
 | OTF | application/x-font-otf |  |  |
 | PDF | application/pdf | `pdfprocess=Rasterize&resolution=150`<br>`&colorspace=Auto&pdfbrochure=false`<br>`&keywords=false&links=false` | [pdfOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/?f=r_pdf_options) |
 | PFB | application/x-font-type1 |  |  |
-| PGM | application/x-font-type1 |  |  |
+| PFM | application/x-font-type1 |  |  |
 | PICT | image/x-pict |  |  |
 | PNG | image/png |  |  |
 | PPT | application/vnd.ms-powerpoint |  |  |

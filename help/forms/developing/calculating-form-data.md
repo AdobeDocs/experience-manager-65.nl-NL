@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: b4f57e42-60a6-407d-9764-15a11615827d
 translation-type: tm+mt
-source-git-commit: 4b9e2ceafc301db9337868b78bcae87c0f07e14b
+source-git-commit: 2e4b8ee13257758cba6b76012fed4958f7eabbd7
 
 ---
 
@@ -73,7 +73,7 @@ In deze sectie wordt een eenvoudig interactief formulier met een script dat is g
 
 ![cf_cf_caldata](assets/cf_cf_caldata.png)
 
-******A. Een veld met de naam NumericField1** B. Een veld met de naam NumericField2 **C.** Een veld met de naam NumericField3
+**A.** Een veld met de naam NumericField1 **B.** Een veld met de naam NumericField2 **C.** Een veld met de naam NumericField3
 
 De syntaxis van het script in dit formulierontwerp is als volgt:
 
@@ -110,7 +110,7 @@ Voordat u een API-bewerking voor Forms-service programmatisch kunt uitvoeren, mo
 
 **Een formulier ophalen dat een berekeningsscript bevat**
 
-Met de API voor Forms Service Client kunt u toepassingslogica maken die een formulier afhandelt dat een script bevat dat is geconfigureerd om op de server te worden uitgevoerd. Het proces is vergelijkbaar met het verwerken van een verzonden formulier. (Zie [Verstuurde formulieren]verwerken (/help/forms/develop/rendering-forms-rendering-forms handling-submitted-forms-handling-submitted.md#handling-submitted-forms).)
+Met de API voor Forms Service Client kunt u toepassingslogica maken die een formulier afhandelt dat een script bevat dat is geconfigureerd om op de server te worden uitgevoerd. Het proces is vergelijkbaar met het verwerken van een verzonden formulier. (Zie [Verstuurde formulieren](/help/forms/developing/handling-submitted-forms.md)verwerken.)
 
 Controleer of de verwerkingsstatus van het verzonden formulier `1` `(Calculate)`correct is. Dit betekent dat de service Forms een berekening uitvoert voor de formuliergegevens en dat de resultaten naar de gebruiker moeten worden teruggeschreven. In deze situatie, wordt een manuscript dat wordt gevormd om op de server in werking te stellen automatisch uitgevoerd.
 

@@ -7,7 +7,7 @@ uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: ba4e4908c0564af6e7f0759c5119a5c02f274dbd
 
 ---
 
@@ -414,6 +414,7 @@ AEM Forms add-on package is een toepassing die op AEM wordt geïmplementeerd. He
    ```
    sling.bootdelegation.xerces=org.apache.xerces.*
    ```
+
 1. Sla het bestand op en sluit het.
 
 ### De service voor lettertypebeheer configureren {#configuring-the-font-manager-service}
@@ -573,11 +574,11 @@ De service Assembler is afhankelijk van de service Reader Extensions, de service
   </tr> 
   <tr> 
    <td>Forms Service</td> 
-   <td>com.adobe.livecycle.adobe-lc-forms-slaapstand-connector<br /> </td> 
+   <td>com.adobe.livecycle.adobe-lc-forms-bedrock-connector<br /> </td> 
   </tr> 
   <tr> 
    <td>Uitvoerservice</td> 
-   <td>com.adobe.livecycle.adobe-lc-forms-slaapstand-connector</td> 
+   <td>com.adobe.livecycle.adobe-lc-forms-bedrock-connector</td> 
   </tr> 
  </tbody> 
 </table>

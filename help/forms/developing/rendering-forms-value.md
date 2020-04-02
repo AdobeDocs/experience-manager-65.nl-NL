@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: ddbb2b82-4c57-4845-a5be-2435902d312b
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 66bfd6870b4c09dc2ca1b66058e0b9e040a71507
 
 ---
 
@@ -32,7 +32,7 @@ De volgende beperkingen zijn van toepassing wanneer een formulierontwerp wordt d
 
 * Het formulierontwerp kan geen relatieve gekoppelde inhoud bevatten. Alle afbeeldingen en fragmenten moeten in het formulierontwerp worden ingesloten of absoluut worden vermeld.
 * Berekeningen aan de serverzijde kunnen niet worden uitgevoerd nadat het formulier is gegenereerd. Als het formulier wordt teruggestuurd naar de service Forms, worden de gegevens opgehaald en geretourneerd zonder berekeningen aan de serverzijde.
-* Omdat HTML gekoppelde afbeeldingen alleen tijdens runtime kan gebruiken, is het niet mogelijk om HTML met ingesloten afbeeldingen te genereren. De reden hiervoor is dat de service Forms ingesloten afbeeldingen met HTML ondersteunt door de afbeeldingen op te halen uit een formulierontwerp waarnaar wordt verwezen. Omdat een formulierontwerp dat op waarde wordt doorgegeven, geen locatie heeft waarnaar wordt verwezen, kunnen ingesloten afbeeldingen niet worden geëxtraheerd wanneer de HTML-pagina wordt weergegeven. Daarom moeten afbeeldingsverwijzingen absolute paden zijn die in HTML moeten worden gerenderd.
+* Omdat HTML gekoppelde afbeeldingen alleen tijdens runtime kan gebruiken, is het niet mogelijk om HTML met ingesloten afbeeldingen te genereren. De reden hiervoor is dat de service Forms ingesloten afbeeldingen met HTML ondersteunt door de afbeeldingen op te halen uit een formulierontwerp waarnaar wordt verwezen. Omdat een formulierontwerp dat via waarde wordt doorgegeven, geen locatie waarnaar wordt verwezen, kunnen ingesloten afbeeldingen niet worden geëxtraheerd wanneer de HTML-pagina wordt weergegeven. Daarom moeten afbeeldingsverwijzingen absolute paden zijn die in HTML moeten worden gerenderd.
 
 >[!NOTE]
 >
@@ -138,7 +138,7 @@ Een formulier op waarde weergeven met de API voor formulieren (Java):
 
 **Zie ook**
 
-[Formulieren genereren op waarde](/help/forms/develop/rendering-forms-rendering-forms rendering-forms-value-rendering-forms.md#rendering-forms-by-value)
+[Formulieren renderen op waarde](/help/forms/developing/rendering-forms.md)
 
 [Snel starten (SOAP-modus): Renderen op waarde met de Java API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-by-value-using-the-java-api)
 

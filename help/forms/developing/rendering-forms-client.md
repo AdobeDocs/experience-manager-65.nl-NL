@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 08d36e9f-cafc-478e-9781-8fc29ac6262e
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: ab401a8007f6ea85c0e52169091ce7a38b3dbe5c
 
 ---
 
@@ -22,7 +22,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 U kunt de levering van PDF-inhoud optimaliseren en de mogelijkheid van de Forms-service om netwerkbelasting te verwerken verbeteren door de renderfunctie op de client van Acrobat of Adobe Reader te gebruiken. Dit proces wordt een formulier op de client weergegeven. Als u een formulier op de client wilt genereren, moet het clientapparaat (meestal een webbrowser) Acrobat 7.0 of Adobe Reader 7.0 of hoger gebruiken.
 
-Wijzigingen in een formulier die het resultaat zijn van scriptuitvoering op de server, worden niet weerspiegeld in een formulier dat op de client wordt weergegeven, tenzij het basissubformulier het `restoreState` kenmerk bevat dat is ingesteld op `auto`. Zie [Formulierontwerper voor meer informatie over dit kenmerk.](https://www.adobe.com/go/learn_aemforms_designer_63)
+Wijzigingen in een formulier die het resultaat zijn van scriptuitvoering op de server, worden niet weerspiegeld in een formulier dat op de client wordt gegenereerd, tenzij het basissubformulier het `restoreState` kenmerk bevat dat is ingesteld op `auto`. Zie [Formulierontwerper voor meer informatie over dit kenmerk.](https://www.adobe.com/go/learn_aemforms_designer_63)
 
 >[!NOTE]
 >
@@ -156,7 +156,7 @@ Een formulier op de client renderen met de API voor formulieren (webservice):
    Roep de methode van het `FormsService` `renderPDFForm` object aan en geef de volgende waarden door:
 
    * Een tekenreekswaarde die de naam van het formulierontwerp opgeeft, inclusief de bestandsnaamextensie. Als u verwijst naar een formulierontwerp dat deel uitmaakt van een Forms-toepassing, moet u controleren of u het volledige pad opgeeft, bijvoorbeeld `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * Een `BLOB` object dat gegevens bevat die met het formulier moeten worden samengevoegd. Geef door als u geen gegevens wilt samenvoegen. `null` (Zie Formulieren [vooraf invullen met stroombare indelingen](/help/forms/develop/rendering-forms-rendering-forms prepopulating-forms-flowable-layouts-prepopulating.md#prepopulating-forms-with-flowable-layouts).)
+   * Een `BLOB` object dat gegevens bevat die met het formulier moeten worden samengevoegd. Geef door als u geen gegevens wilt samenvoegen. `null` (Zie Formulieren [vooraf invullen met stroombare indelingen](/help/forms/developing/prepopulating-forms-flowable-layouts.md).)
    * Een `PDFFormRenderSpec` object dat uitvoeringsopties opslaat die vereist zijn om een formulier op de client te genereren.
    * Een `URLSpec` object dat URI-waarden bevat die door de service Forms worden vereist.
    * Een `java.util.HashMap` object dat bestandsbijlagen opslaat. Dit is een optionele parameter en u kunt opgeven `null` of u geen bestanden aan het formulier wilt koppelen.

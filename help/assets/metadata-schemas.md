@@ -3,7 +3,7 @@ title: Metagegevensschema's
 description: Het metagegevensschema definieert de indeling van de pagina met eigenschappen en de eigenschappen van metagegevens die voor elementen worden weergegeven. Leer hoe u een aangepast metagegevensschema kunt maken, het schema voor metagegevens kunt bewerken en hoe u het schema voor metagegevens op elementen kunt toepassen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
+source-git-commit: 5cbaefd5a377db5aa9f8ba35371fe2a9cb638fa1
 
 ---
 
@@ -123,8 +123,6 @@ Als u de eigenschappen van een metagegevenscomponent in het formulier wilt bewer
 
 Hier volgen de geldige waarden voor deze eigenschap:
 
-Hier volgen de geldige waarden voor deze eigenschap:
-
 * `./jcr:content/metadata/dc:title`: Hiermee wordt de waarde in het metadataknooppunt van de asset opgeslagen als de eigenschap `dc:title`.
 
 * `./jcr:created`: Geeft de JCR-eigenschap weer op het knooppunt van het element. Als u deze eigenschappen configureert op weergave-eigenschappen, raden wij aan deze te markeren als Bewerken uitschakelen, omdat deze beveiligd zijn. Otherwise, the error [!UICONTROL Asset(s) failed to modify] results when you save the asset&#39;s properties.
@@ -132,11 +130,21 @@ Hier volgen de geldige waarden voor deze eigenschap:
 Om ervoor te zorgen dat de component correct in de vorm van het meta-gegevensschema wordt getoond, zou de bezitspad geen ruimten moeten omvatten.
 
 **Tijdelijke aanduiding**: Gebruik deze eigenschap om relevante plaatsaanduidingstekst met betrekking tot de eigenschap metadata op te geven.
+
 **Vereist**: Gebruik deze eigenschap om een eigenschap metadata als verplicht op de eigenschappenpagina te markeren.
-**Bewerken**uitschakelen: Gebruik deze eigenschap om een eigenschap metadata onbewerkbaar te maken op de eigenschappenpagina.
+
+**Bewerken** uitschakelen: Gebruik deze eigenschap om een eigenschap metadata onbewerkbaar te maken op de eigenschappenpagina.
+
 **Leeg veld alleen**-lezen tonen: Mark this property to display a metadata property on the properties page even if it has no value. Wanneer een eigenschap metadata geen waarde heeft, wordt deze standaard niet vermeld op de eigenschappenpagina.
-**Genummerde** lijst tonen: Gebruik deze eigenschap om een geordende lijst met keuzen **weer te geven**: Gebruik deze eigenschap om keuzen in een lijst **Beschrijving** op te geven: Gebruik deze eigenschap om een korte beschrijving toe te voegen voor de metagegevenscomponent.
+
+**Genummerde** lijst tonen: Gebruik deze eigenschap om een geordende keuzelijst weer te geven
+
+**Keuzen**: Gebruik deze eigenschap om keuzen in een lijst op te geven
+
+**Omschrijving** : Gebruik deze eigenschap om een korte beschrijving toe te voegen voor de metagegevenscomponent.
+
 **Klasse**: Objectklasse waaraan de eigenschap is gekoppeld.
+
 **Verwijderen**: Klik op dit pictogram om een component uit het schema te verwijderen.
 
 ![chlimage_1-41](assets/chlimage_1-177.png)

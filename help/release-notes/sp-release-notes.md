@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 34f5cfc692241da4b9f5330e5abc324998fadb23
+source-git-commit: a83def358e026b516add577f968dcc709357e458
 
 ---
 
@@ -132,13 +132,11 @@ Voor een volledige lijst van eigenschappen, zeer belangrijke hoogtepunten, zeer 
 
 * De elementendetailpagina van PDF-elementen bevat geen actieknoppen, behalve de knoppen voor Verzameling en Vertoning toevoegen in Experience Manager die wordt uitgevoerd in de uitvoeringsmodus Dynamische media Scene7 (CQ-4286705).
 
-* Middelen groter dan 2 GB kunnen nu worden geüpload in Dynamic Media-Scene7 (CQ-4286561).
-
 * De activa vergen te lang om door het partijuploadproces van Scene7 (CQ-4286445) te verwerken.
 
 * Met de knop Opslaan wordt de externe set niet geïmporteerd als de gebruiker geen wijzigingen heeft aangebracht in de Editor instellen in de Dynamic Media Client (CQ-4285690).
 
-* Miniatuur van 3D-middelen is niet informatief wanneer een ondersteund 3D-model wordt opgenomen in AEM (CQ-4283701).
+* De miniatuur van 3D-elementen is niet informatief wanneer een ondersteund 3D-model wordt opgenomen in AEM (CQ-4283701).
 
 * De onverwerkte status van de voorinstelling van de viewer voor SmartCrop wordt twee keer weergegeven op de bannertekst naast de naam van de voorinstelling (CQ-4283517).
 

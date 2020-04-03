@@ -12,7 +12,7 @@ discoiquuid: 7965b7ef-dec4-441a-a012-daf1d60df0fb
 pagetitle: Query Builder API
 tagskeywords: querybuilder
 translation-type: tm+mt
-source-git-commit: b3e1493811176271ead54bae55b1cd0cf759fe71
+source-git-commit: a491d4e9bd9ffc68c4ba7cac3149f48cf7576ee8
 
 ---
 
@@ -21,9 +21,9 @@ source-git-commit: b3e1493811176271ead54bae55b1cd0cf759fe71
 
 De functionaliteit van de [Asset Share Query Builder](/help/assets/assets-finder-editor.md) wordt weergegeven via een Java API en een REST API. In deze sectie worden deze API&#39;s beschreven.
 
-De server-zijvraagbouwer ( [`QueryBuilder`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html)) zal een vraagbeschrijving goedkeuren, creeert en in werking stelt een vraag XPath, naar keuze filter de resultaatreeks, en ook extractie facetten, indien gewenst.
+De server-kant vraagbouwer ( [`QueryBuilder`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html)) zal een vraagbeschrijving goedkeuren, creeert en in werking stelt een vraag van XPath, naar keuze filter de resultaatreeks, en ook extractfacetten, indien gewenst.
 
-De vraagbeschrijving is eenvoudig een reeks predikaten ([`Predicate`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/Predicate.html)). Voorbeelden zijn een voorspelling van volledige tekst, die overeenkomt met de `jcr:contains()` functie in XPath, en een voorspelling van afbeeldingsgrootte waarin wordt gezocht naar eigenschappen voor breedte en hoogte in de DAM-elementsubstructuur.
+De vraagbeschrijving is eenvoudig een reeks predikaten ([`Predicate`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/Predicate.html)). Voorbeelden zijn een voorspelling in volledige tekst, die overeenkomt met de functie in XPath. `jcr:contains()`
 
 Voor elk predikaat type, is er een beoordelaarcomponent ([`PredicateEvaluator`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)) die weet hoe te om dat specifieke predikaat voor XPath, het filtreren, en facetextractie te behandelen. Het is zeer gemakkelijk om douanebeoordelaars tot stand te brengen, die door componenten OSGi runtime gestopt zijn.
 
@@ -61,7 +61,7 @@ Voor de `QueryBuilder` JSON-server bevat elk voorbeeld een koppeling naar uw lok
 
 ### Alle resultaten retourneren {#returning-all-results}
 
-**De volgende query** retourneert tien resultaten **(of om precies te zijn een maximum van tien), maar informeert u over het** aantal treffers: die daadwerkelijk beschikbaar zijn:
+De volgende query **retourneert tien resultaten** (of om precies te zijn een maximum van tien), maar informeert u over het **aantal treffers:** die daadwerkelijk beschikbaar zijn:
 
 `http://localhost:4502/bin/querybuilder.json?path=/content&1_property=sling:resourceType&1_property.value=foundation/components/text&1_property.operation=like&orderby=path`
 
@@ -363,7 +363,7 @@ U kunt ook de [JavaDoc controleren op de `PredicateEvaluator` klassen](https://h
 
 Het voorvoegsel van de klassenaam (bijvoorbeeld &quot; `similar`&quot; in [`SimilarityPredicateEvaluator`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)) is de *belangrijkste eigenschap* van de klasse. Dit bezit is ook de naam van predikaat aan gebruik in de vraag (in kleine letters).
 
-Voor dergelijke belangrijkste eigenschappen, kunt u de vraag verkorten en &quot; `similar=/content/en`&quot;gebruiken in plaats van volledig - gekwalificeerde variant &quot; `similar.similar=/content/en`&quot;. Het volledig gekwalificeerde formulier moet worden gebruikt voor alle niet-hoofdeigenschappen van een klasse.
+Voor dergelijke belangrijkste eigenschappen, kunt u de vraag verkorten en &quot; `similar=/content/en`&quot;in plaats van de volledig - gekwalificeerde variant &quot; `similar.similar=/content/en`&quot; gebruiken. Het volledig gekwalificeerde formulier moet worden gebruikt voor alle niet-hoofdeigenschappen van een klasse.
 
 ## Voorbeeld API-gebruik van Query Builder {#example-query-builder-api-usage}
 

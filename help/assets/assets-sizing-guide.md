@@ -3,7 +3,7 @@ title: Hulplijn voor middelengrootte
 description: Aanbevolen werkwijzen om efficiënte meetgegevens te bepalen om de infrastructuur en de middelen te schatten die worden vereist om AEM Middelen op te stellen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 70a88085a0fd6e949974aa7f1f92fdc3def3d98e
+source-git-commit: 8c907a43b5755de59b2929cf381ea41a7b977e1b
 
 ---
 
@@ -93,7 +93,7 @@ Het is moeilijk om exacte cijfers voor de grootte van een NodeStore of DocumentS
 
 Omdat de binaire getallen in de datastore worden opgeslagen, neemt elk binair getal wat ruimte in. De meeste opslagruimten zijn kleiner dan 100 GB. Er kunnen echter grotere opslagruimten zijn met een maximale grootte van 1 TB. Bovendien hebt u voldoende vrije ruimte op het volume nodig om de gecomprimeerde opslagplaats naast de vooraf gecomprimeerde versie te herschrijven om offline compacte compressie uit te voeren. Een goede regel-van-duim is de grootte van de schijf aan 1.5 keer de grootte die voor de bewaarplaats wordt verwacht.
 
-Voor de opslagplaats, gebruik SSDs of schijven met een IOPS niveau groter dan 3Kilobyte. Om de kans te elimineren dat IOPS prestatiesknelpunten introduceert, controleert cpu IO wachttijden niveaus op vroege tekenen van kwesties.
+Voor de opslagplaats, gebruik SSDs of schijven met een IOPS niveau groter dan 3000. Om de kans te elimineren dat IOPS prestatiesknelpunten introduceert, controleert cpu IO wachttijden niveaus op vroege tekenen van kwesties.
 
 [Bestand ophalen](assets/aem_environment_sizingtool.xlsx)
 
@@ -111,7 +111,7 @@ Bovendien kunt u het bezit van de drempelgrootte van de `com.day.cq.dam.commons.
 
 ## Maximumaantal activa {#maximum-number-of-assets}
 
-De limiet voor het aantal bestanden dat in een datastore kan bestaan, kan 2,1 miljard zijn vanwege bestandssysteembeperkingen. Het is waarschijnlijk dat de gegevensopslagruimte problemen tegenkomt vanwege een groot aantal knooppunten lang voordat de datastore-limiet wordt bereikt.
+De limiet voor het aantal bestanden dat in een datastore kan bestaan, kan 2,1 miljard zijn vanwege bestandssysteembeperkingen. Het is waarschijnlijk dat de opslagplaats problemen door groot aantal knopen lang alvorens de datastore grens te bereiken ontmoet.
 
 Als de uitvoeringen onjuist zijn gegenereerd, gebruikt u de Camera Raw-bibliotheek. In dit geval mag de langste zijde van de afbeelding echter niet groter zijn dan 65000 pixels. Bovendien mag de afbeelding niet meer dan 512 MP (512 x 1024 x 1024 pixels) bevatten. De grootte van het actief is niet van belang.
 

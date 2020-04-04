@@ -4,16 +4,18 @@ description: Nieuw in Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5fc75e3dcb0ca107605c456d0f41be861dabc0eb
+source-git-commit: c25b04b043d6ec6289a561b630e3d0fad750629a
 
 ---
 
 
 # Nieuw in Adobe Experience Manager 6.5 Service Pack 4 {#aem-whats-new-service-pack-4}
 
-Adobe Experience Manager (AEM) 6.5 biedt functies en voortdurende verbeteringen via driemaandelijkse servicepacks. De aanpak is gunstig voor u omdat de innovaties eenvoudiger te gebruiken zijn.
+Met Adobe Experience Manager (6.5) hebt u toegang tot nieuwe functies en voortdurende verbeteringen via de driemaandelijkse Service Pack-releases. Op deze manier kunt u de innovaties eenvoudig overnemen.
 
-AEM Service Pack 4 (6.5.4.0) wordt vrijgegeven op 5 **maart 2020**. In dit artikel worden de belangrijkste functies van de 6.5 Service Packs beschreven die u helpen uw AEM-reis verrijker te maken.
+Experience Manager Service Pack 4 (6.5.4.0) wordt vrijgegeven op 5 maart 2020. Het is een belangrijke update die nieuwe eigenschappen, zeer belangrijke klant-gevraagde verhogingen, en prestaties, stabiliteit, veiligheidsverbeteringen omvat, die sinds de algemene beschikbaarheid van 6.5 versie in April 2019 wordt vrijgegeven. U kunt Experience Manager 6.5.4.0 installeren boven op Adobe Experience Manager 6.5.
+
+Dit artikel benadrukt de eigenschappen inbegrepen in het recentste 6.5 Service Pack, [belangrijkste eigenschappen inbegrepen in de vorige 6.5 Pakken](#key-features-previous-service-packs)van de Dienst, en sommige van de [belangrijkste versies sinds de Manager van de Ervaring 6.5.3.0](#key-features-sice-sp3).
 
 ## AEM Sites {#aem-sites}
 
@@ -94,7 +96,7 @@ Experience Manager Forms bevat de volgende toegankelijkheidsverbeteringen:
 
 * Elke pagina van een adaptief formulier bevat nu één titel en één hoofdlabel met een liggend streepje.
 
-## Belangrijkste functies in vorige AEM 6.5-servicepacks
+## Belangrijkste functies in vorige AEM 6.5-servicepacks {#key-features-previous-service-packs}
 
 ### Smart Imaging voor dynamische media (6.5.3.0) {#smart-imaging}
 
@@ -117,7 +119,7 @@ U kunt een begindatum en -tijd en een einddatum en -tijd opgeven die van kracht 
 
 U kunt de batch-API gebruiken om meerdere interactieve communicatie van een sjabloon te maken. De sjabloon is een interactieve communicatie zonder gegevens. De batch-API combineert gegevens met een sjabloon voor interactieve communicatie. De API is nuttig bij de massaproductie van interactieve communicatie. Bijvoorbeeld telefoonrekeningen, creditcardoverzichten voor meerdere klanten. Zie Meerdere interactieve communicatie [genereren met de Batch-API](../forms/using/generate-multiple-interactive-communication-using-batch-api.md).
 
-## Belangrijke releases sinds AEM 6.5 SP3
+## Belangrijke releases sinds AEM 6.5 SP3 {#key-features-sice-sp3}
 
 Tussen 12 december 2019 en 5 maart 2020 heeft Adobe de volgende functies uitgebracht die buiten de kernlevering van AEM vallen:
 

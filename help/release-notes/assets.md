@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release Adobe Experience Manager
 description: De nieuwe mogelijkheden en verbeteringen voor Adobe Experience Manager 6.5-middelen.
 translation-type: tm+mt
-source-git-commit: 92619acaa2eb820eda304355f8eaf79ec4a400e1
+source-git-commit: a6f95e04fd5b8ed28beaa12e9fd170ed495397b8
 
 ---
 
@@ -65,7 +65,7 @@ In grote ondernemingen kan de infrastructuur die nodig is om websites te maken, 
 
 [!DNL Dynamic Media] biedt verbeterde creatie en levering van geavanceerde media in [!DNL Experience Manager Assets] de aanjager van geavanceerde ervaringen die overweldigend en gepersonaliseerd zijn. Door één hoofdmiddel van hoge kwaliteit te uploaden en onze geavanceerde cloudrendering en viewers te gebruiken, kunt u elke combinatie van uitvoeringen ter plekke aanbieden ter ondersteuning van de mediastrategie van uw organisatie.
 
-Zie Opmerkingen bij de release [!DNL Dynamic Media] Dynamische media voor meer informatie over nieuwe [functies](https://marketing.adobe.com/resources/help/en_US/s7/release_notes/).
+Zie Opmerkingen bij de release [!DNL Dynamic Media] Dynamische media voor meer informatie over nieuwe [functies](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/release-notes/s7rn2017.html).
 
 ### 360 Video-ondersteuning {#video-support}
 
@@ -77,7 +77,7 @@ U kunt de miniaturen voor uw video-elementen nu aanpassen met frames uit de vide
 
 ### Verbeteringen voor toegankelijkheid {#accessibility-enhancements}
 
-[!DNL Dynamic Media] viewers bieden nu ondersteuning voor verbeterde toegankelijkheidsfuncties, zoals apparaatondersteuning, schermlezers en Alt-tekst. Zie Opmerkingen bij de release van [Dynamic Media-viewers voor meer informatie](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/index.html).
+[!DNL Dynamic Media] viewers bieden nu ondersteuning voor verbeterde toegankelijkheidsfuncties, zoals apparaatondersteuning, schermlezers en Alt-tekst. Zie Opmerkingen bij de release van [Dynamic Media-viewers voor meer informatie](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html).
 
 ## Verbeterde zoekervaring {#search-experience-enhancement}
 

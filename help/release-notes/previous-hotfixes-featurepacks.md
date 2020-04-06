@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0e95ac8850a693764b82a29960b472d156dac535
+source-git-commit: a6f95e04fd5b8ed28beaa12e9fd170ed495397b8
 
 ---
 
@@ -92,13 +92,13 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 
 * Bulkverplaatsing van activa mislukt en geeft een waarschuwingsbericht weer (NPR-30610).
 
-* De namen van activa worden veranderd in kleine letters wanneer het bewegen van activa van één omslag aan een andere in [!DNL Experience Manager] lopen op runmode [!DNL Dynamic Media] Scene 7 (NPR-31630).
+* De namen van activa worden veranderd in kleine letters wanneer het bewegen van activa van één omslag aan een andere in [!DNL Experience Manager] lopen in wijze [!DNL Dynamic Media]-Scene7 (NPR-31630).
 
 * Er is een fout opgetreden tijdens het bewerken van een externe imageset voor de afbeelding die zich in de map met dezelfde naam bevindt als de bedrijfsnaam van Scene 7 (NPR-31340).
 
 * [!DNL Dynamic Media] activa met referenties worden niet gepubliceerd (NPR-31180).
 
-* Het uploaden van [!DNL Experience Manager Dynamic Media] - Scene 7 runmode naar Scene 7 duurt te lang om te voltooien (NPR-31048).
+* Het uploaden van [!DNL Dynamic Media][!DNL Dynamic Media Classic] 7-Scene7 wijze aan duurt te lang om (NPR-31048) te voltooien.
 
 * Hotspot die aan een afbeeldingselement is toegevoegd, is niet zichtbaar via de Interactive Image Viewer op de pagina met elementdetails (NPR-30979).
 
@@ -106,11 +106,11 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 
 * Conflict doet zich voor bij het maken van Taalkopie van middelen en middelen wordt niet geüpload naar scène 7 (NPR-30932).
 
-* Dynamische vertoningen die zijn gedownload van [!DNL Experience Manager] uitvoering in de [!DNL Dynamic Media] hybride modus worden verbroken (het gaat om teksttypen met de inhoud &#39;kan afbeelding niet vinden&#39; in plaats van met het inhoudstype van de afbeelding) (NPR-30876).
+* Dynamische vertoningen die zijn gedownload van [!DNL Experience Manager] uitvoering in [!DNL Dynamic Media]-hybride modus worden verbroken (het gaat om teksttypen met de inhoud &#39;kan afbeelding niet vinden&#39; in plaats van het type afbeeldingsinhoud) (NPR-30876).
 
-* [!DNL Dynamic Media] De werkstroom van de Video van de codering ontbreekt om duimnagel voor de video te produceren die van Scène 7 aan [!DNL Dynamic Media] - de loopwijze van Scène 7 wordt gemigreerd (CQ-4282011).
+* [!DNL Dynamic Media] De werkstroom Video coderen genereert geen miniatuur voor de video die in Adobe Experience Manager is gemigreerd van [!DNL Dynamic Media Classic] naar de modus [!DNL Dynamic Media]-Scene7 (CQ-428/2011).
 
-* IpsApiException waargenomen terwijl het migreren van activa van één instantie aan een andere gebruikend verschillende Scene 7 bedrijfs IDs (CQ-4280548).
+* IpsApiException waargenomen terwijl het migreren van activa van één instantie aan een andere gebruikend verschillende het bedrijfs IDs Scene7 (CQ-4280548).
 
 * De miniatuur van 3D-middelen is niet informatief wanneer een ondersteund 3D-model wordt ingesloten in [!DNL Experience Manager] (CQ-4283701).
 
@@ -120,7 +120,7 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 
 * Video&#39;s kunnen niet worden afgespeeld met SmartCropVideoViewer in Internet Explorer 11 en Safari (CQ-4281422).
 
-* Het gebruik van de verplaatsingsknop om meerdere elementen van de ene map naar de andere te verplaatsen, mislukt in [!DNL Experience Manager] uitvoering in de runmode [!DNL Dynamic Media] - scène7 (CQ-4280384).
+* Het gebruik van verplaatsingsknoop om veelvoudige activa, van één omslag aan een andere te bewegen, ontbreekt in [!DNL Experience Manager] lopende op runmode [!DNL Dynamic Media]-Scene7 (CQ-4280384).
 
 * Vervormde video wordt weergegeven op de elementdetails wanneer het MIME-type niet MP4 is (CQ-4279704).
 
@@ -336,7 +336,7 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 * Het metagegevensschema van mappen detecteert het gegevenstype niet automatisch en maakt dus geen gerelateerde TypeHint in de vorm van het verzenden van formulieren. NPR-30599: Hotfix voor CQ-4275227
 * Opties voor het bewerken van elementen uitsnijden en roteren zijn uitgeschakeld in de DMS7-ontwerpinterface. NPR-30118: Hotfix voor CQ-4273221
 * De functie van de Verbinding van het aandeel werkt niet aan [!DNL Experience Manager] instantie met configuratie DMS7. NPR-30080, NPR-30492: Hotfix voor CQ-4273651
-* Het toevoegen van de component [!DNL Dynamic Media] Scene7 aan de pagina, en dan het publiceren van de pagina brengt niet de configuratie dmscene7 telkens teweeg. NPR-30641: Hotfix voor CQ-4275962
+* Het toevoegen van de [!DNL Dynamic Media]-component Scene7 aan de pagina, en dan het publiceren van de pagina brengt niet de configuratie dmscene7 telkens teweeg. NPR-30641: Hotfix voor CQ-4275962
 * Toegevoegd een IPSJobJournal in [!DNL Experience Manager] om slechts één baan van de Systemen van de Preventie van het Binnendringen (IPS) per verwerkingsprofiel tot stand te brengen. NPR-30490: Hotfix voor CQ-4273614
 * [!DNL Dynamic Media]: Er zijn standaardfilters toegevoegd om te voorkomen dat elementen worden gerepliceerd naar het [!DNL Experience Manager] publicatieknooppunt. NPR-30538: Hotfix voor CQ-4274678
 * Introduceerde een externe werkstroom van het Herproces voor multi-middelsteun om omslag als lading toe te staan. De werkstroom heeft twee stappen - verwerkt activa zonder handvatten via meta-gegevenskaart aan volgende stap opnieuw en uploadt alle activa zonder activa handvat aan S7 in één enkele IPS baan. Zie Cloudservices configureren voor meer informatie. [!DNL Dynamic Media] NPR-30489: Hotfix voor CQ-4272903
@@ -351,7 +351,7 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 * Als u de zoekopdracht sorteert op relevantie, worden [!DNL InDesign] documenten samen met [!DNL InDesign] sjablonen geretourneerd. Hotfix voor CQ-4273864
 * Als de gebruiker een e-mailadres in hoofdletters heeft, kunnen gebruikers niet inchecken voor de elementen die eerder zijn uitgecheckt. Hotfix voor CQ-4276575
 * De bewerking Verwijderen is alleen van toepassing op voorinstellingen die zijn geselecteerd. Als de lijst na de bewerking automatisch wordt vernieuwd op het scherm, worden andere voorinstellingen weergegeven die al zijn vernieuwd. Hotfix voor CQ-4261461
-* Het vormen van de Diensten van de [!DNL Dynamic Media] Wolk op wijze DMHybrid resulteert in veelvoudige lege rapportsuites die in worden gecreeerd, [!DNL Analytics][!DNL Experience Manager]en zonder rapportsuite identiteitskaart die in wordt opgeslagen, resulterend in rapportsuite duplicatie. Hotfix voor CQ-4249780
+* Als u [!DNL Dynamic Media] Cloud Services configureert in de [!DNL Dynamic Media]hybride modus, ontstaan meerdere lege rapportsuites die zijn gemaakt in [!DNL Analytics]en waarvoor geen id van de rapportsuite is opgeslagen [!DNL Experience Manager], wat resulteert in een duplicatie van de rapportsuite. Hotfix voor CQ-4249780
 * Rename verrichting in [!DNL Experience Manager] activa aan gedupliceerde naam kan niet synchroniseren aan Scene7. Hotfix voor CQ-4276763
 * Door de gebruiker gegenereerde inhoud wordt onjuist weergegeven in het deelvenster met zoekfilters. Hotfix voor CQ-4273875
 * De optie Vergelijkbare zoeken is niet beschikbaar voor TIFF-afbeeldingen. Hotfix voor CQ-4278238
@@ -494,7 +494,7 @@ De belangrijkste markeringen voor [!DNL Experience Manager] 6.5.2.0 vormen zijn:
 Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 
 * De opname van de status dynamic-UI in het bijhouden van gebeurtenissen als aangepaste kenmerken ingeschakeld.
-* Inclusief ondersteuning voor de levering van video-elementen van 360 graden in [!DNL Dynamic Media] scène 7.
+* Inclusief ondersteuning voor de levering van video-elementen van 360 graden in de modus [!DNL Dynamic Media]-Scene7.
 * De functie *Japanse omloop* van Word is ingeschakeld via de stijlplug-in van de Rich Text Editor. Voor meer informatie, zie Japanse woordomslag [vormen](/help/sites-administering/configure-rich-text-editor-plug-ins.md#jpwordwrap)
 
 ### Assets

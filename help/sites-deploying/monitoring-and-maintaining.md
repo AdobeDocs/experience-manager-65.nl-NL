@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3f53945579eaf5de1ed0b071aa9cce30dded89f1
+source-git-commit: a6f95e04fd5b8ed28beaa12e9fd170ed495397b8
 
 ---
 
@@ -31,7 +31,7 @@ Een belangrijke factor hierbij is dat u, om potentiële problemen te herkennen, 
 | [Logbestanden](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files) worden gecontroleerd. |  |  |
 | Systeembewaking wordt (voortdurend) op de achtergrond uitgevoerd. | Inclusief CPU-, geheugen-, schijf- en netwerkgebruik. Gebruik bijvoorbeeld iostat / vmstat / perfmon. | De geregistreerde gegevens worden visualiseerd en kunnen voor het volgen van prestatiesproblemen worden gebruikt. Onbewerkte gegevens zijn ook toegankelijk. |
 | [AEM-prestaties worden gecontroleerd](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance). | Met inbegrip van de Tellers [van het](/help/sites-deploying/monitoring-and-maintaining.md#request-counters) Verzoek om verkeersniveaus te controleren. | Indien een aanzienlijk of langdurig prestatieverlies wordt vastgesteld, moet een grondig onderzoek worden ingesteld. |
-| U controleert uw [replicatieagenten](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-your-replication-agents). &quot; |  |  |
+| U controleert uw [Replicators](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-your-replication-agents). &quot; |  |  |
 | Workflowinstanties regelmatig leegmaken. | Grootte opslagplaats en workflowprestaties. | Zie [Regular Purging of Workflow Instances](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances). |
 
 ## Back-ups {#backups}
@@ -194,12 +194,12 @@ Moderatiehandelingen worden hier geregistreerd.
    * `error.log`
 Foutberichten (van verschillende ernst) worden hier geregistreerd.
 
-   * [ `ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/c_image_server_log.html)Dit logboek wordt alleen gebruikt als Dynamische media is ingeschakeld. Het verstrekt statistieken en analytische informatie die voor het analyseren van gedrag van het interne proces ImageServer wordt gebruikt.
+   * [ `ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/c_image_server_log.html)Dit logboek wordt slechts gebruikt als [!DNL Dynamic Media] wordt toegelaten. Het verstrekt statistieken en analytische informatie die voor het analyseren van gedrag van het interne proces ImageServer wordt gebruikt.
 
    * `request.log`
 Elk toegangsverzoek wordt hier geregistreerd samen met de reactie.
 
-   * [ `s7access-<yyyy>-<mm>-<dd>.log`](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/c_Access_Log.html)Dit logboek wordt alleen gebruikt als Dynamische media is ingeschakeld. Het s7access logboek registreert elk verzoek aan Dynamische Media door `/is/image` en `/is/content`.
+   * [ `s7access-<yyyy>-<mm>-<dd>.log`](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/c_Access_Log.html)Dit logboek wordt slechts gebruikt als [!DNL Dynamic Media] wordt toegelaten. Het s7access logboek registreert elk verzoek aan [!DNL Dynamic Media] door `/is/image` en `/is/content`.
 
    * `stderr.log`
 Bevat foutberichten, opnieuw van verschillende niveaus van ernst, die tijdens het opstarten worden gegenereerd. Standaard is het logniveau ingesteld op `Warning` ( `WARN`)
@@ -216,7 +216,7 @@ Verstrekt een logboek van alle verbeteringsverrichtingen die van de `com.day.com
 Informatie over Revisie-journalistiek.
 
 >[!NOTE]
-De logboeken van ImageServer en s7access zijn niet inbegrepen in **Download volledig **pakket dat van het **systeem/console/status-Bundlelist **pagina wordt geproduceerd. Als u problemen met dynamische media hebt, voegt u voor ondersteuningsdoeleinden ook de registratie van ImageServer en s7access toe wanneer u contact opneemt met de Klantenondersteuning.
+De logboeken van ImageServer en s7access zijn niet inbegrepen in **Download volledig **pakket dat van het **systeem/console/status-Bundlelist **pagina wordt geproduceerd. Als u [!DNL Dynamic Media] problemen ondervindt, voegt u voor ondersteuningsdoeleinden ook de registratie van ImageServer en s7access toe wanneer u contact opneemt met de Klantenondersteuning.
 
 ### Het FOUTOPSPORINGSlogniveau activeren {#activating-the-debug-log-level}
 
@@ -255,7 +255,7 @@ In bepaalde omstandigheden wilt u mogelijk een aangepast logbestand met een ande
 
       Waar `<*identifier*>` wordt vervangen door vrije tekst die u (moet) invoeren om het exemplaar te identificeren (u kunt deze informatie niet weglaten).
 
-      Bijvoorbeeld, `org.apache.sling.commons.log.LogManager.factory.config-MINE`
+      Bijvoorbeeld: `org.apache.sling.commons.log.LogManager.factory.config-MINE`
 
    * Type: `sling:OsgiConfig`
    >[!NOTE]
@@ -265,7 +265,7 @@ In bepaalde omstandigheden wilt u mogelijk een aangepast logbestand met een ande
 
    * Naam: `org.apache.sling.commons.log.file`
 
-      Type:String
+      Type: String
 
       Waarde: het logbestand specificeren; bijvoorbeeld: `logs/myLogFile.log`
 
@@ -280,7 +280,7 @@ In bepaalde omstandigheden wilt u mogelijk een aangepast logbestand met een ande
       * `com.day`
    * Naam: `org.apache.sling.commons.log.level`
 
-      Type:String
+      Type: String
 
       Waarde: het vereiste logniveau specificeren ( `debug`, `info`, `warn` of `error`); bijvoorbeeld `debug`
 
@@ -328,7 +328,7 @@ In bepaalde omstandigheden wilt u mogelijk een aangepast logbestand met een ande
 
    * Naam: `org.apache.sling.commons.log.LogManager.factory.writer-<*identifier*>` (aangezien dit een schrijver is)
 
-      Net als bij Logger, `<*identifier*>` wordt vervangen door vrije tekst die u (moet) ingaan om de instantie te identificeren (u kunt deze informatie niet weglaten). Bijvoorbeeld, `org.apache.sling.commons.log.LogManager.factory.writer-MINE`
+      Net als bij Logger, `<*identifier*>` wordt vervangen door vrije tekst die u (moet) ingaan om de instantie te identificeren (u kunt deze informatie niet weglaten). Bijvoorbeeld: `org.apache.sling.commons.log.LogManager.factory.writer-MINE`
 
    * Type: `sling:OsgiConfig`
    >[!NOTE]
@@ -358,33 +358,27 @@ In bepaalde omstandigheden wilt u mogelijk een aangepast logbestand met een ande
 
          Waarde: specificeren zoals vereist om de omwenteling van het dossier door grootte/datum te controleren; bijvoorbeeld: `'.'yyyy-MM-dd`
    >[!NOTE]
-   >
-   >`org.apache.sling.commons.log.file.size` Hiermee bepaalt u de rotatie van het logbestand door een van de volgende instellingen in te stellen:
-   >
-   >* een maximale bestandsgrootte
-   >* een datum-/tijdschema
-   >
-   >om aan te geven wanneer een nieuw bestand wordt gemaakt (en de naam van het bestaande bestand wordt gewijzigd volgens het naampatroon).
-   >
-   >* Een formaatlimiet kan met een getal worden opgegeven. Als er geen grootteindicator is opgegeven, wordt deze gebruikt als het aantal bytes. U kunt ook een van de grootteindicatoren toevoegen - `KB`, `MB`of `GB` (hoofdlettergebruik wordt genegeerd).
-   >* U kunt een tijd-/datumschema opgeven als een `java.util.SimpleDateFormat` patroon. Hiermee wordt de periode gedefinieerd waarna het bestand wordt geroteerd. ook het achtervoegsel dat aan het geroteerde dossier (voor identificatie) wordt toegevoegd.
-   >
-   >De standaardwaarde is &#39;.&#39;jjjj-MM-dd (voor dagelijkse logrotatie).
-   >
-   >Bijvoorbeeld, om middernacht van 20 Januari 2010 (of wanneer het eerste logboekbericht na dit voorkomt om precies te zijn), zal ../logs/error.log worden anders genoemd aan ../logs/error.log.2010-01-20. Logboekregistratie voor 21 januari wordt uitgevoerd naar (een nieuw en leeg) ../logs/error.log totdat de logbestanden bij de volgende wijziging van de dag worden doorgehaald.
-   >
-   >| `&#39;.&#39;yyyy-MM&quot;|Roteren aan het begin van elke maand|
-   >|---|---|
-   >| `&#39;.&#39;yyyy-ww&quot;|Rotatie op de eerste dag van elke week (afhankelijk van de landinstelling). |
-   >| `&#39;.&#39;yyyy-MM-dd&quot;|Dagelijks om middernacht. |
-   >| `&#39;.&#39;yyyy-MM-dd-a&quot;|Roteren om middernacht en om middag van elke dag. |
-   >| `&#39;.&#39;yyyy-MM-dd-HH&quot;|Roteren boven aan elk uur. |
-   >| `&#39;.&#39;yyyy-MM-dd-HH-mm&quot;|Roteren aan het begin van elke minuut. |
-   >
-   >Opmerking: Wanneer u een tijd/datum opgeeft:
-   >1. U moet letterlijke tekst met enkele aanhalingstekens (&#39; &#39;) &quot;escape&quot;
-   >   -tekens gebruiken;   Dit     is om te voorkomen dat bepaalde tekens worden geïnterpreteerd als patroonletters.
-   >1. Gebruik alleen tekens die zijn toegestaan voor een geldige bestandsnaam op een willekeurige plaats in de optie.
+   `org.apache.sling.commons.log.file.size` Hiermee bepaalt u de rotatie van het logbestand door een van de volgende instellingen in te stellen:
+   * een maximale bestandsgrootte
+   * een datum-/tijdschema
+   om aan te geven wanneer een nieuw bestand wordt gemaakt (en de naam van het bestaande bestand wordt gewijzigd volgens het naampatroon).
+   * Een formaatlimiet kan met een getal worden opgegeven. Als er geen grootteindicator is opgegeven, wordt deze gebruikt als het aantal bytes. U kunt ook een van de grootteindicatoren toevoegen - `KB`, `MB`of `GB` (hoofdlettergebruik wordt genegeerd).
+   * U kunt een tijd-/datumschema opgeven als een `java.util.SimpleDateFormat` patroon. Hiermee wordt de periode gedefinieerd waarna het bestand wordt geroteerd. ook het achtervoegsel dat aan het geroteerde dossier (voor identificatie) wordt toegevoegd.
+   De standaardwaarde is &#39;.&#39;jjjj-MM-dd (voor dagelijkse logrotatie).
+   Bijvoorbeeld, om middernacht van 20 Januari 2010 (of wanneer het eerste logboekbericht na dit voorkomt om precies te zijn), zal ../logs/error.log worden anders genoemd aan ../logs/error.log.2010-01-20. Logboekregistratie voor 21 januari wordt uitgevoerd naar (een nieuw en leeg) ../logs/error.log totdat de logbestanden bij de volgende wijziging van de dag worden doorgehaald.
+       | `&#39;.&#39;yyyy-MM&quot;|Roteren aan het begin van elke maand|
+    |—|—|
+    | `&#39;.&#39;yyyy-ww&quot;|Rotatie op de eerste dag van elke week (afhankelijk van de landinstelling). |
+       | `&#39;.&#39;yyyy-MM-dd&quot;|Dagelijks om middernacht. |
+       | `&#39;.&#39;yyyy-MM-dd-a&quot;|Roteren om middernacht en om middag van elke dag. |
+       | `&#39;.&#39;yyyy-MM-dd-HH&quot;|Roteren boven aan elk uur. |
+       | `&#39;.&#39;yyyy-MM-dd-HH-mm&quot;|Roteren aan het begin van elke minuut. |
+ Opmerking     
+     : Wanneer u een tijd/datum opgeeft:
+       1. U moet letterlijke tekst met enkele aanhalingstekens (&#39; &#39;) &quot;escape&quot;-tekens gebruiken;
+   Dit     is om te voorkomen dat bepaalde tekens worden geïnterpreteerd als patroonletters.
+       1. Gebruik alleen tekens die zijn toegestaan voor een geldige bestandsnaam op een willekeurige plaats in de optie.
+   
 
 1. Lees het nieuwe logbestand met het gekozen gereedschap.
 
@@ -483,7 +477,7 @@ Hieronder worden gemeenschappelijke prestatieproblemen opgesomd die zich voordoe
 | Toepassing | Het CPU-gebruik van de server is hoog. | Cluster uw AEM-instanties. | Zoeken naar CPU- en geheugenhogs en deze elimineren (gebruik coderevisie, timinguitvoer, enz.). |
 |  | Hoge geheugenconsumptie. |  | Verbeter caching op alle niveaus. |
 |  | Lage responstijd. |  | Sjablonen en componenten optimaliseren (bijvoorbeeld structuur, logica). |
-|  Bewaarplaats |  |  |  |
+| Bewaarplaats |  |  |  |
 | Cache |  |  |  |
 
 Prestatieproblemen kunnen het gevolg zijn van een aantal oorzaken die niets te maken hebben met uw website, zoals tijdelijke vertragingen in de verbindingssnelheid, CPU-belasting en nog veel meer.
@@ -504,7 +498,7 @@ Al deze informatie moet worden verkregen, gesorteerd en geanalyseerd voordat u d
 
       * komt dit probleem alleen op specifieke tijdstippen voor ?
       * komt de kwestie slechts op specifieke pagina&#39;s voor?
-      * worden andere verzoeken beïnvloed?
+      * worden andere verzoeken ingewilligd ?
    * zoveel mogelijk informatie verzamelen om onder normale omstandigheden met uw kennis van het systeem te kunnen vergelijken:
 
 
@@ -534,17 +528,17 @@ Sommige hiervan zijn afhankelijk van uw besturingssysteem.
   <tr>
    <td>Draad-dumpen</td>
    <td>Bekijk JVM-threads. Identificeer contouren, sluizen en lange looptijden.</td>
-   <td><p><br /> Afhankelijk van het besturingssysteem: - Unix/Linux: <code>kill -QUIT &lt;<em>pid</em>&gt;</code><br /> - Windows (consolemodus): Ctrl-einde<br /> </p> <p>Er zijn ook analysehulpmiddelen beschikbaar, zoals <a href="https://java.net/projects/tda/">TDA</a>.<br /> </p> </td>
+   <td><p>Afhankelijk van het besturingssysteem:<br /> - Unix/Linux: <code>kill -QUIT &lt;<em>pid</em>&gt;</code><br /> - Windows (consolemodus): Ctrl-einde<br /> </p> <p>Er zijn ook analysehulpmiddelen beschikbaar, zoals <a href="https://java.net/projects/tda/">TDA</a>.<br /> </p> </td>
   </tr>
   <tr>
    <td>Heap Dumps</td>
    <td>Onvoldoende geheugen, wat langzame prestaties tot gevolg heeft.</td>
-   <td><p><br /> Voeg het volgende toe: <code>-XX:+HeapDumpOnOutOfMemoryError</code><br /> optie voor de Java-oproep aan AEM.</p> <p>Raadpleeg de <a href="https://java.sun.com/javase/6/webnotes/trouble/TSG-VM/html/clopts.html#gbzrr">handleiding voor probleemoplossing voor Java SE 6 met HotSpot VM</a>.</p> </td>
+   <td><p>Voeg het volgende toe:<br /> <code>-XX:+HeapDumpOnOutOfMemoryError</code><br /> optie voor de Java-oproep aan AEM.</p> <p>Raadpleeg de <a href="https://java.sun.com/javase/6/webnotes/trouble/TSG-VM/html/clopts.html#gbzrr">handleiding voor probleemoplossing voor Java SE 6 met HotSpot VM</a>.</p> </td>
   </tr>
   <tr>
    <td>Systeemaanroepen</td>
    <td>Problemen met timing vaststellen.</td>
-   <td><p>De vraag aan <code>System.currentTimeMillis()</code> of <code>com.day.util</code>.Timing wordt gebruikt om timestamps van uw code, of via <a href="#html-comments">HTML-commentaren</a>te produceren.</p> <p><strong></strong> Opmerking: Deze moeten zo worden geïmplementeerd dat ze indien nodig kunnen worden geactiveerd/gedeactiveerd; wanneer een systeem soepel functioneert , zal de overhead van het verzamelen van statistieken niet nodig zijn .</p> </td>
+   <td><p>De vraag aan <code>System.currentTimeMillis()</code> of <code>com.day.util</code>.Timing wordt gebruikt om timestamps van uw code, of via <a href="#html-comments">HTML-commentaren</a>te produceren.</p> <p><strong>Opmerking:</strong> Deze moeten zo worden geïmplementeerd dat ze indien nodig kunnen worden geactiveerd/gedeactiveerd; wanneer een systeem soepel functioneert , zal de overhead van het verzamelen van statistieken niet nodig zijn .</p> </td>
   </tr>
   <tr>
    <td>Apache Bench</td>
@@ -569,12 +563,12 @@ Sommige hiervan zijn afhankelijk van uw besturingssysteem.
   <tr>
    <td>JConsole</td>
    <td>Bekijk JVM-metriek en -threads.</td>
-   <td><p>Gebruik: jconsole</p> <p>Zie <a href="https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html">jconsole</a> en <a href="#monitoring-performance-using-jconsole">Monitoring Prestaties met behulp van JConsole</a>.</p> <p><strong></strong> Opmerking: Met JDK 1.6 is JConsole uitbreidbaar met plug-ins. bijvoorbeeld Top of TDA (Thread Dump Analyzer).</p> </td>
+   <td><p>Gebruik: jconsole</p> <p>Zie <a href="https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html">jconsole</a> en <a href="#monitoring-performance-using-jconsole">Monitoring Prestaties met behulp van JConsole</a>.</p> <p><strong>Opmerking:</strong> Met JDK 1.6 is JConsole uitbreidbaar met plug-ins. bijvoorbeeld Top of TDA (Thread Dump Analyzer).</p> </td>
   </tr>
   <tr>
    <td>Java VisualVM</td>
    <td>Bekijk JVM-metriek, threads, geheugen en profilering.</td>
-   <td><p>Gebruik: jvisualvm of visualvm<br /> </p> <p>Zie <a href="https://java.sun.com/javase/6/docs/technotes/tools/share/jvisualvm.html">jvisualvm</a>, <a href="https://visualvm.dev.java.net/">visualvm</a> en de Prestaties van de <a href="#monitoring-performance-using-j-visualvm">Controle gebruikend (J)VisualVM</a>.</p> <p><strong></strong> Opmerking: Met JDK 1.6, is VisualVM verlengbaar met stop-ins.</p> </td>
+   <td><p>Gebruik: jvisualvm of visualvm<br /> </p> <p>Zie <a href="https://java.sun.com/javase/6/docs/technotes/tools/share/jvisualvm.html">jvisualvm</a>, <a href="https://visualvm.dev.java.net/">visualvm</a> en de Prestaties van de <a href="#monitoring-performance-using-j-visualvm">Controle gebruikend (J)VisualVM</a>.</p> <p><strong>Opmerking:</strong> Met JDK 1.6, is VisualVM verlengbaar met stop-ins.</p> </td>
   </tr>
   <tr>
    <td>worstjes/resten, laatste</td>
@@ -949,7 +943,7 @@ Gebruik opnieuw het aantal maanden dat sinds installatie is verstreken om het ge
 
 #### Als u AEM-middelen gebruikt, hoeveel middelen houdt u momenteel aan in Middelen? {#if-you-use-aem-assets-how-many-assets-do-you-currently-maintain-in-assets}
 
-Als u wilt zien hoeveel DAM-elementen u momenteel beheert, gebruikt u een query voor de opslagplaats. via CRXDE - Hulpmiddelen - Vraag:
+Als u wilt zien hoeveel DAM-middelen u momenteel beheert, gebruikt u een query voor de opslagplaats. via CRXDE - Hulpmiddelen - Vraag:
 
 * **Type**`XPath`
 * **Pad**`/`

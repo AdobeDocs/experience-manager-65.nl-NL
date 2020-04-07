@@ -8,7 +8,7 @@ discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a83def358e026b516add577f968dcc709357e458
+source-git-commit: fbe85c70ef993e4728bd76a327e1a27365cf1021
 
 ---
 
@@ -336,6 +336,8 @@ Aangezien het een volledig installatieprogramma is, is de bestandsgrootte groter
 
 De UberJar voor AEM 6.5.4.0 is beschikbaar in de [openbare gegevensopslagplaats](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aem/uber-jar/6.5.4/)van Adobe.
 
+De bijgewerkte versie van UberJar voor 6.5.4.0 die het pakket **com.fasterxml.jackson.core.async** omvat is beschikbaar bij de [Bewaarplaats](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aem/uber-jar/6.5.4-1.0/)van het Openbaar Ministerie van Adobe.
+
 Om UberJar in een Geweven project te gebruiken, verwijs naar het artikel, [hoe te UberJar](/help/sites-developing/ht-projects-maven.md) gebruiken en de volgende gebiedsdeel in uw projectPOM omvatten:
 
 ```shell
@@ -391,6 +393,6 @@ Deze sites zijn alleen beschikbaar voor klanten. Neem contact op met uw accountm
 >
 >* [Opmerkingen bij de release AEM 6.5](/help/release-notes/release-notes.md)
 >* [AEM-productpagina](https://www.adobe.com/solutions/web-experience-management.html)
->* [AEM 6.5-documentatie](https://helpx.adobe.com/support/experience-manager/6-5.html)
+>* [AEM 6.5-documentatie](https://helpx.adobe.com/nl/support/experience-manager/6-5.html)
 >* Abonneren op [Adobe-productupdates met prioriteit](https://www.adobe.com/subscription/priority-product-update.html)
 

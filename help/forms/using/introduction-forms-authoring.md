@@ -10,7 +10,7 @@ topic-tags: introduction
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 709d8fe467f5449eb1e844a49126535a4a4a6e7a
+source-git-commit: fbe85c70ef993e4728bd76a327e1a27365cf1021
 
 ---
 
@@ -26,7 +26,7 @@ Met adaptieve formulieren kunt u aantrekkelijke, responsieve, dynamische en adap
 
 * **Met een XDP-formuliersjabloon** is een ideaal formuliermodel als u investeert in XFA-formulieren of XDP-formulieren. Dit biedt een directe manier om uw XFA-formulieren om te zetten in adaptieve formulieren. Bestaande XFA-regels blijven behouden in de bijbehorende adaptieve formulieren. De resulterende adaptieve formulieren ondersteunen XFA-constructies, zoals validaties, gebeurtenissen, eigenschappen en patronen.
 
-* **Het gebruiken van een Definitie van het Schema van XML (XSD) of een schema JSON van het Schema** XML en JSON- schema&#39;s vertegenwoordigen de structuur waarin het gegeven wordt geproduceerd of door het achterste deelsysteem in uw organisatie verbruikt. U kunt het schema koppelen aan een adaptief formulier en de elementen ervan gebruiken om dynamische inhoud toe te voegen aan het aangepaste formulier. De elementen van het schema zijn beschikbaar voor gebruik op het tabblad Gegevensmodelobjecten van de browser Inhoud wanneer u adaptieve formulieren maakt.
+* **Gebruikend een Definitie van het Schema van XML (XSD) of een schema JSON van het Schema** XML en JSON- schema&#39;s vertegenwoordigen de structuur waarin het gegeven wordt geproduceerd of door het achterste deelsysteem in uw organisatie verbruikt. U kunt het schema koppelen aan een adaptief formulier en de elementen ervan gebruiken om dynamische inhoud toe te voegen aan het aangepaste formulier. De elementen van het schema zijn beschikbaar voor gebruik op het tabblad Gegevensmodelobjecten van de browser Inhoud wanneer u adaptieve formulieren maakt.
 
 * **Geen of geen formuliermodel** gebruiken Aangepaste formulieren die met deze optie zijn gemaakt, gebruiken geen formuliermodel. De XML-gegevens die op basis van dergelijke formulieren worden gegenereerd, hebben een vlakke structuur met velden en bijbehorende waarden.
 
@@ -49,7 +49,7 @@ Wanneer u een nieuw formulier maakt of een bestaand adaptief formulier bewerkt, 
 
 ![UI voor het schrijven van adaptieve formulieren](assets/formeditor.png)
 
-******A. Zijbalk** B. Pagina, werkbalk **C.** Aangepaste formulierpagina
+**A.** Zijbalk **B.** Pagina, werkbalk **C.** Aangepaste formulierpagina
 
 ### Zijbalk {#sidebar}
 
@@ -62,7 +62,7 @@ Met de zijbalk kunt u
 
 ![Zijbalk](assets/sidebar-comps.png)
 
-******** A. Inhoudsbrowser **B. Eigenschappen browser** C.**Middelen browser** D. Browser voor componenten
+**A.** Inhoudsbrowser **B.** Eigenschappen browser **C.** Middelen browser **D.** Browser voor componenten
 
 <!--Click to enlarge
 
@@ -179,7 +179,7 @@ Hiermee kunt u formuliermodelelementen naar het aangepaste formulier slepen en n
   </tr>
   <tr>
    <td>Deelvenster</td>
-   <td><p>Hiermee voegt u een deelvenster of subdeelvenster toe.</p> <p>U kunt ook een deelvenstercomponent toevoegen vanaf de werkbalk van het bovenliggende deelvenster met de knop Deelvenster <span class="uicontrol"></code> toevoegen. U kunt ook een paneelspecifieke werkbalk toevoegen met de knop Werkbalk <span class="uicontrol">van deelvenster</code> toevoegen. U kunt de positie van de paneelwerkbalk configureren met behulp van het dialoogvenster Deelvenster bewerken.</code></code></p> </td>
+   <td><p>Hiermee voegt u een deelvenster of subdeelvenster toe.</p> <p>U kunt ook een deelvenstercomponent toevoegen vanaf de werkbalk van het bovenliggende deelvenster met de knop Deelvenster <span class="uicontrol"></code> toevoegen. Op dezelfde manier kunt u een paneelspecifieke toolbar toevoegen gebruikend de <span class="uicontrol">Add knoop van de Toolbar</code> van het Comité. U kunt de positie van de paneelwerkbalk configureren met behulp van het dialoogvenster Deelvenster bewerken.</code></code></p> </td>
   </tr>
   <tr>
    <td>Wachtwoordvak</td>
@@ -310,7 +310,7 @@ De pagina-werkbalk boven in het scherm bevat opties waarmee u een voorbeeld van 
 
 * **Emulatorliniaal**![](assets/ruler.png): Hiermee kunt u het uiterlijk van het formulier emuleren voor verschillende weergavegrootten, zoals tablets en telefoons.
 
-* **Bewerken**: Hiermee kunt u andere modi selecteren, zoals: **Bewerken, Stijl, Ontwikkelaar** en **Ontwerp**.
+* **Bewerken**: Hiermee kunt u andere modi selecteren, zoals: **Bewerken, Stijl, Ontwikkelaar en Ontwerp**.
 
    * **Bewerken**: Hiermee kunt u de eigenschappen van het formulier en de componenten ervan bewerken. U kunt bijvoorbeeld een component toevoegen, een afbeelding neerzetten en verplichte velden opgeven.
    * **Stijl**: Hiermee kunt u de vormgeving van componenten van het formulier opmaken. In de stijlmodus kunt u bijvoorbeeld een deelvenster selecteren en de achtergrondkleur ervan opgeven.
@@ -332,7 +332,7 @@ Wanneer u een component selecteert, ziet u een werkbalk waarin u de component ku
 
 A.**Configureren**: Wanneer u op **Configureren** tikt, zijn componenteigenschappen zichtbaar in de zijbalk. Als u deze eigenschappen configureert, kunt u de ervaring voor het vastleggen van gegevens aanpassen. U kunt de elementnaam van de component wijzigen en de labeltekst opgeven in het veld Titel van de component. Met elementnaam kunt u waarden vastleggen die gebruikers invoeren met de component. In de componenteigenschappen geeft u het gedrag van de component op en beheert u de gebruikersinvoer. Configureer eigenschappen in de zijbalk om gebruikersgegevens vast te leggen en te gebruiken voor verdere verwerking. Met eigenschappen voor adaptieve formuliercontainers kunt u clientbibliotheken, indelingen, thema&#39;s, Document of Record-instellingen, opslaginstellingen, verzendinstellingen en metagegevensinstellingen opgeven.
 
-B.**Kopiëren**: Met de optie Kopiëren kunt u een component kopiëren en op andere plaatsen in het formulier plakken. Wanneer u een component plakt, krijgt de geplakte component een nieuwe elementnaam maar behoudt deze de eigenschappen van de gekopieerde component.
+B.**Kopiëren**: Met de kopieeroptie kunt u een component kopiëren en op andere plaatsen in het formulier plakken. Wanneer u een component plakt, krijgt de geplakte component een nieuwe elementnaam maar behoudt deze de eigenschappen van de gekopieerde component.
 
 C.**Knippen**: Met de optie Knippen kunt u een component in het aangepaste formulier van de ene naar de andere plaats verplaatsen.
 
@@ -346,7 +346,7 @@ G. Regels **** bewerken: Hiermee opent u de regeleditor. Zie [Regeleditor](../..
 
 H. **Groep**: Hiermee kunt u meerdere componenten selecteren als u meerdere componenten tegelijk wilt knippen, kopiëren of plakken.
 
-I. **Bovenliggend element**: Hiermee kunt u het bovenliggende element van een component selecteren. Een tekstveld bevindt zich bijvoorbeeld binnen een subsectie, die zich in een sectie bevindt. De sectie bevindt zich in het hoofddeelvenster van de hulplijn en de adaptieve formuliercontainer is de bovenliggende laag van een hoofddeelvenster van de hulplijn. Voor een component, kunt u alle opties zien met hiërarchie gesorteerd onderaan-op.
+I. **Bovenliggend element**: Hiermee kunt u het bovenliggende element van een component selecteren. Een tekstveld bevindt zich bijvoorbeeld binnen een subsectie, die zich in een sectie bevindt. De sectie bevindt zich in het hoofddeelvenster van de hulplijn en de adaptieve formuliercontainer is het bovenliggende element van een hoofddeelvenster van de hulplijn. Voor een component, kunt u alle opties zien met hiërarchie gesorteerd onderaan-op.
 
 Als u bijvoorbeeld op **Bovenliggend element** tikt voor een tekstvak, ziet u:
 
@@ -378,9 +378,9 @@ De inhoudsstructuur bevat doorgaans de volgende primaire componenten:
    * *Handeling* verzenden: Hiermee bepaalt u hoe het formulier op de server wordt verwerkt wanneer de gebruiker het formulier verzendt.
    * *Stijlen*: Hiermee geeft u het pad op naar het CSS-bestand dat wordt gebruikt om de weergave van het formulier aan te passen.
 
-* **** rootPanel: Het hoofddeelvenster van een adaptief formulier. Het kan subdeelvensters onder de puntenknoop bevatten. Aan elk deelvenster, inclusief het hoofddeelvenster, kan een lay-out zijn gekoppeld. De indeling van het deelvenster bepaalt de indeling van het formulier. In de schermindeling Accordeon worden de items ervan bijvoorbeeld ingedeeld als Accordion-stappen.
+* **rootPanel:** Het hoofddeelvenster van een adaptief formulier. Het kan subdeelvensters onder de puntenknoop bevatten. Aan elk deelvenster, inclusief het hoofddeelvenster, kan een lay-out zijn gekoppeld. De indeling van het deelvenster bepaalt hoe het formulier wordt opgemaakt. In de schermindeling Accordeon worden de items ervan bijvoorbeeld ingedeeld als Accordion-stappen.
 
-* **** werkbalk: Een adaptieve formuliercontainer heeft een bijbehorende algemene werkbalk, die algemeen is voor het formulier. Deze werkbalk kan worden toegevoegd met de actie Werkbalk **** toevoegen op de bewerkbalk. Hiermee kunnen auteurs handelingen toevoegen, zoals Verzenden, Opslaan, Herstellen enzovoort.
+* **werkbalk:** Een adaptieve formuliercontainer heeft een bijbehorende algemene werkbalk, die algemeen is voor het formulier. Deze werkbalk kan worden toegevoegd met de actie Werkbalk **** toevoegen op de bewerkbalk. Hiermee kunnen auteurs handelingen toevoegen, zoals Verzenden, Opslaan, Herstellen enzovoort.
 
-* **** activa: Dit knooppunt bevat aanvullende informatie die wordt gebruikt voor het ontwerpen van formulieren. Bijvoorbeeld details van het formuliermodel, lokalisatiedetails, enzovoort).
+* **activa:** Dit knooppunt bevat aanvullende informatie die wordt gebruikt voor het ontwerpen van formulieren. Bijvoorbeeld details van het formuliermodel, lokalisatiedetails, enzovoort).
 

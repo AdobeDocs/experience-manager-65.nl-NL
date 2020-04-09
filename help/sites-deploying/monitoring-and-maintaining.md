@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e46f0d6b842ff1a295d411c770f36dd82001bcb2
+source-git-commit: 4244ebbe8ceb3bef8d47e1e32817edbd11db4d9a
 
 ---
 
@@ -151,8 +151,8 @@ Bovendien verstrekt de console nuttige informatie over de versies:
 
 In het volgende voorbeeld:
 
-* De versies **Shirts** worden gewist omdat hun versieleeftijd langer is dan 2 dagen.
-* De **Tonga Fashions!** versies worden gewist omdat het aantal versies groter is dan 5.
+* De **[!DNL Shirts]** versies worden gewist omdat hun versieleeftijd langer is dan 2 dagen.
+* De **[!DNL Tonga Fashions!]** versies worden gewist omdat het aantal versies groter is dan 5.
 
 ![global_version_screenshot](assets/global_version_screenshot.png)
 
@@ -535,17 +535,17 @@ Sommige hiervan zijn afhankelijk van uw besturingssysteem.
    <td><p>Voeg het volgende toe:<br /> <code>-XX:+HeapDumpOnOutOfMemoryError</code><br /> optie voor de Java-oproep aan AEM.</p> <p>Raadpleeg de <a href="https://java.sun.com/javase/6/webnotes/trouble/TSG-VM/html/clopts.html#gbzrr">handleiding voor probleemoplossing voor Java SE 6 met HotSpot VM</a>.</p> </td>
   </tr>
   <tr>
-   <td>Systeemaanroepen</td>
+   <td>System calls</td>
    <td>Problemen met timing vaststellen.</td>
-   <td><p>De vraag aan <code>System.currentTimeMillis()</code> of <code>com.day.util</code>.Timing wordt gebruikt om timestamps van uw code, of via <a href="#html-comments">HTML-commentaren</a>te produceren.</p> <p><strong>Opmerking:</strong> Deze moeten zo worden geïmplementeerd dat ze indien nodig kunnen worden geactiveerd/gedeactiveerd; wanneer een systeem soepel functioneert , zal de overhead van het verzamelen van statistieken niet nodig zijn .</p> </td>
+   <td><p>Calls to <code>System.currentTimeMillis()</code> or <code>com.day.util</code>.Timing are used to generate timestamps from your code, or via <a href="#html-comments">HTML-comments</a>.</p> <p><strong>Opmerking:</strong> Deze moeten zo worden geïmplementeerd dat ze indien nodig kunnen worden geactiveerd/gedeactiveerd; wanneer een systeem soepel functioneert , zal de overhead van het verzamelen van statistieken niet nodig zijn .</p> </td>
   </tr>
   <tr>
    <td>Apache Bench</td>
    <td>Identificeer geheugenlekken, selectief analyseer reactietijd.</td>
-   <td><p>basisgebruik is:</p> <p><code>ab -k -n &lt;<em>requests</em>&gt; -c &lt;<em>concurrency</em>&gt; &lt;<em>url</em>&gt;</code></p> <p>Zie <a href="#apache-bench">Apache Bench</a> en de pagina <a href="https://httpd.apache.org/docs/2.2/programs/ab.html"></a> Ab man voor meer informatie.</p> </td>
+   <td><p>basic usage is:</p> <p><code>ab -k -n &lt;<em>requests</em>&gt; -c &lt;<em>concurrency</em>&gt; &lt;<em>url</em>&gt;</code></p> <p>Zie <a href="#apache-bench">Apache Bench</a> en de pagina <a href="https://httpd.apache.org/docs/2.2/programs/ab.html"></a> Ab man voor meer informatie.</p> </td>
   </tr>
   <tr>
-   <td>Zoekanalyse</td>
+   <td>Search Analysis</td>
    <td> </td>
    <td>Zoekopdrachten offline uitvoeren, reactietijd van query identificeren, testen en resultaatset bevestigen.<br /> </td>
   </tr>
@@ -556,17 +556,17 @@ Sommige hiervan zijn afhankelijk van uw besturingssysteem.
   </tr>
   <tr>
    <td>JProfiler</td>
-   <td>Uitgebreide CPU- en geheugenprofilering.</td>
+   <td>In-depth CPU and memory profiling.</td>
    <td><a href="https://www.ej-technologies.com/">https://www.ej-technologies.com/</a></td>
   </tr>
   <tr>
    <td>JConsole</td>
-   <td>Bekijk JVM-metriek en -threads.</td>
+   <td>Observe JVM metrics and threads.</td>
    <td><p>Gebruik: jconsole</p> <p>Zie <a href="https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html">jconsole</a> en <a href="#monitoring-performance-using-jconsole">Monitoring Prestaties met behulp van JConsole</a>.</p> <p><strong>Opmerking:</strong> Met JDK 1.6 is JConsole uitbreidbaar met plug-ins. bijvoorbeeld Top of TDA (Thread Dump Analyzer).</p> </td>
   </tr>
   <tr>
    <td>Java VisualVM</td>
-   <td>Bekijk JVM-metriek, threads, geheugen en profilering.</td>
+   <td>Observe JVM metrics, threads, memory and profiling.</td>
    <td><p>Gebruik: jvisualvm of visualvm<br /> </p> <p>Zie <a href="https://java.sun.com/javase/6/docs/technotes/tools/share/jvisualvm.html">jvisualvm</a>, <a href="https://visualvm.dev.java.net/">visualvm</a> en de Prestaties van de <a href="#monitoring-performance-using-j-visualvm">Controle gebruikend (J)VisualVM</a>.</p> <p><strong>Opmerking:</strong> Met JDK 1.6, is VisualVM verlengbaar met stop-ins.</p> </td>
   </tr>
   <tr>
@@ -942,7 +942,7 @@ Gebruik opnieuw het aantal maanden dat sinds installatie is verstreken om het ge
 
 #### Als u AEM-middelen gebruikt, hoeveel middelen houdt u momenteel aan in Middelen? {#if-you-use-aem-assets-how-many-assets-do-you-currently-maintain-in-assets}
 
-Als u wilt zien hoeveel DAM-middelen u momenteel beheert, gebruikt u een query voor de opslagplaats. via CRXDE - Hulpmiddelen - Vraag:
+Als u wilt zien hoeveel DAM-elementen u momenteel beheert, gebruikt u een query voor de opslagplaats. via CRXDE - Hulpmiddelen - Vraag:
 
 * **Type**`XPath`
 * **Pad**`/`
@@ -1012,7 +1012,7 @@ Zie ook de volgende artikelen voor meer informatie:
 * [Draad-dumpen](https://helpx.adobe.com/experience-manager/kb/TakeThreadDump.html)
 * [Geheugenproblemen analyseren](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html)
 * [Analyseren met ingebouwde analyse](https://helpx.adobe.com/experience-manager/kb/AnalyzeUsingBuiltInProfiler.html)
-* [Langzame en geblokkeerde processen analyseren](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
+* [Analyze slow and blocked processes](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
 
 
 
@@ -1034,8 +1034,8 @@ Als er onvoldoende geheugen beschikbaar is voor uw systeem, is dit op verschille
 
 Controleer in deze gevallen:
 
-* de JVM-instellingen die worden gebruikt om AEM te [starten](/help/sites-deploying/deploy.md#getting-started)
-* De Knowledge Base:
+* The JVM settings used to [start AEM](/help/sites-deploying/deploy.md#getting-started)
+* The Knowledge Base:
 
    * [Geheugenproblemen analyseren](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html)
 
@@ -1049,7 +1049,7 @@ Als er onvoldoende schijfruimte beschikbaar is op uw systeem of als u merkt dat 
    * [Apache Sling Java Script Handler](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjavascripthandler)
    * [Configuratie van Apache Sling-logboekregistratie](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)
    * [HTML-bibliotheekbeheer CQ](/help/sites-deploying/osgi-configuration-settings.md#daycqhtmllibrarymanager)
-   * [CQ WCM-foutopsporingsfilter](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
+   * [CQ WCM Debug Filter](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
    * [Loggers](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level)[](/help/sites-deploying/configuring.md#loggersandwritersforindividualservices)
 
 * Of en hoe u [Versie het Zuiveren hebt gevormd](/help/sites-deploying/version-purging.md)
@@ -1060,18 +1060,18 @@ Als er onvoldoende schijfruimte beschikbaar is op uw systeem of als u merkt dat 
 
 ### Reguliere prestatievermindering {#regular-performance-degradation}
 
-Als u ziet dat de prestaties van uw instantie achteruitgaan nadat u opnieuw hebt opgestart (soms een week of meer later), kunt u het volgende controleren:
+If you see the performance of your instance deteriorating after each reboot (sometimes a week or more later), then the following can be checked:
 
 * [Onvoldoende geheugen](#outofmemory)
 * De Knowledge Base:
 
-   * [Niet-gesloten sessies](https://helpx.adobe.com/experience-manager/kb/AnalyzeUnclosedSessions.html)
+   * [Unclosed Sessions](https://helpx.adobe.com/experience-manager/kb/AnalyzeUnclosedSessions.html)
 
 ### JVM-tuning {#jvm-tuning}
 
-De JVM (Java Virtual Machine) is aanzienlijk verbeterd op het gebied van tuning (vooral sinds Java 7). Daarom is het vaak handig om een redelijke, vaste JVM-grootte op te geven en de standaardinstellingen te gebruiken.
+De JVM (Java Virtual Machine) is aanzienlijk verbeterd op het gebied van tuning (vooral sinds Java 7). Because of this, specifying a reasonable fixed JVM size and using the defaults will often be suitable.
 
-Als de standaardinstellingen niet geschikt zijn, is het belangrijk een methode vast te stellen om de GC-prestaties te controleren en te beoordelen voordat wordt geprobeerd de JVM af te stemmen. dit kan bestaan uit monitoringfactoren zoals heapgrootte , algoritme en andere aspecten .
+If the default settings are not suitable, then it is important to establish a method to monitor and assess GC performance before attempting to tune the JVM; this can involve monitoring factors including, heap size, algorithm and other aspects.
 
 Enkele algemene keuzen zijn:
 

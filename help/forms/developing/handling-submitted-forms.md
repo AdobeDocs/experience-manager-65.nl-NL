@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 3d838027-6bde-4a71-a428-4d5102f7d799
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
 
 ---
 
@@ -152,15 +152,15 @@ U haalt formuliergegevens op die naar de Forms-service zijn gepost en bepaalt de
 
 De service Forms retourneert de volgende waarden om aan te geven of de verwerking van de gegevens is voltooid:
 
-* **** 0 (Verzenden): De verzonden gegevens zijn klaar om te worden verwerkt.
-* **** 1 (berekenen): De Forms-service heeft de gegevens berekend en de resultaten moeten worden teruggestuurd naar de gebruiker.
-* **** 2 (Valideren): De door de Forms-service gevalideerde formuliergegevens en de resultaten moeten naar de gebruiker worden teruggestuurd.
-* **** 3 (Volgende): De huidige pagina is gewijzigd met resultaten die naar de clienttoepassing moeten worden geschreven.
+* **0 (Verzenden):** De verzonden gegevens zijn klaar om te worden verwerkt.
+* **1 (berekenen):** De Forms-service heeft de gegevens berekend en de resultaten moeten worden teruggegeven aan de gebruiker.
+* **2 (Valideren):** De door de Forms-service gevalideerde formuliergegevens en de resultaten moeten naar de gebruiker worden teruggestuurd.
+* **3 (Volgende):** De huidige pagina is gewijzigd met resultaten die naar de clienttoepassing moeten worden geschreven.
 * **4 (Vorige**): De huidige pagina is gewijzigd met resultaten die naar de clienttoepassing moeten worden geschreven.
 
 >[!NOTE]
 >
->Berekeningen en validaties moeten worden teruggegeven aan de gebruiker. (Zie Formuliergegevens [berekenen](/help/forms/develop/rendering-forms-rendering-forms calculate-form-data-calculate-form calculate-form-data-calculate-form.md#calculate-form-data)*.)*
+>Berekeningen en validaties moeten worden teruggegeven aan de gebruiker. (Zie Formuliergegevens [berekenen](/help/forms/developing/calculating-form-data.md#calculating-form-data).
 
 **Bepalen of de formulierverzending bestandsbijlagen bevat**
 

@@ -10,7 +10,7 @@ topic-tags: publish
 discoiquuid: 574de3d5-69ba-4e2f-a8ab-c59f357e4386
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 94472fad34fe97740e4711d2cb35beb884db52ce
+source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
 
 ---
 
@@ -35,7 +35,7 @@ Met de e-mailactie kan een auteur automatisch e-mail verzenden naar een of meer 
 
 >[!NOTE]
 >
->Als u de actie E-mail wilt gebruiken, moet u de AEM-mailservice configureren zoals wordt beschreven in [De mailservice]configureren (/help/sites-administering/notification.md#Configuring the mail service).
+>Als u de actie E-mail wilt gebruiken, moet u de AEM-mailservice configureren zoals wordt beschreven in [De mailservice](/help/sites-administering/notification.md#configuring-the-mail-service)configureren.
 
 ### E-mailactie inschakelen op een adaptief formulier {#enabling-email-action-on-an-adaptive-form}
 
@@ -65,7 +65,7 @@ Met de e-mailactie kan een auteur automatisch e-mail verzenden naar een of meer 
    >
    >Als u de actie **PDF-** e-mail kiest, moet u de optie Bijlagen opnemen selecteren.
 
-1. Klik op **OK** om de wijzigingen op te slaan.
+1. Click **OK** to save the changes.
 
 ### Aangepaste formulierveldnamen gebruiken om e-mailinhoud dynamisch te maken {#using-adaptive-form-field-names-to-dynamically-create-email-content}
 

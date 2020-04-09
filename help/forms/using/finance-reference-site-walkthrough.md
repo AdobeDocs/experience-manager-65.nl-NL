@@ -10,7 +10,7 @@ topic-tags: introduction
 discoiquuid: b4fdbf86-d8f3-4da5-9e4e-4d5492ae1632
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
 
 ---
 
@@ -298,9 +298,9 @@ Voer de volgende stappen uit om de creatie van A/B test voor Wij.Finance de toep
 1. Ga naar de interface Formulieren en documenten, selecteer het formulier, klik op **Meer** en selecteer **A/B-tests** starten.
 1. Open het formulier nu meerdere keren in de chroombrowser met de volgende URL:
 
-   `https://&lt;*hostname*&gt;:&lt;*port*&gt;/content/dam/formsanddocuments/we-finance/cc-app/jcr:content?wcmmode=disabled`
+   `https://[hostname]:[port]/content/dam/formsanddocuments/we-finance/cc-app/jcr:content?wcmmode=disabled`
 
-   >[!NOTE] Opmerking: Verwijder de cookie met de naam **mbox** van de browsercookie voordat u het formulier de volgende keer opent. U ziet willekeurig A en B van het formulier.
+   >[!NOTE] Verwijder de cookie met de naam **mbox** van de browsercookie voordat u het formulier de volgende keer opent. U ziet willekeurig A en B van het formulier.
 
 1. Selecteer het formulier, klik op **Meer** en klik op **Testrapport** A/B. U vindt niet veel gegevens in het rapport omdat u net met het testen bent begonnen. Laten we nu enkele zaadgegevens leveren om te zien hoe een A/B-testrapport eruit ziet.
 1. Open CRXDE Lite en neem een file van het volgende dossier: /libs/fd/fmaddon/gui/components/admin/targetreport/clientlibs/targetreport/js/targetreport.js
@@ -546,7 +546,7 @@ Voer de volgende stappen in de auteurinstantie uit om de verwezenlijking van A/B
 1. Wijzig het formulier naar wens om een andere ervaring op te doen dan met de standaardeigenschap A.
 1. Ga naar de interface Formulieren en documenten, selecteer het formulier, klik op **Meer** en selecteer **A/B-tests** starten.
 1. Open het formulier nu meerdere keren in de chroombrowser met de volgende URL:
-   `https://&lt;hostname&gt;:&lt;port&gt;/content/dam/formsanddocuments/we-finance/hm-app/jcr:content?wcmmode=disabled`
+   `https://[hostname]:[port]/content/dam/formsanddocuments/we-finance/hm-app/jcr:content?wcmmode=disabled`
 
    >[!NOTE]
    > Verwijder de cookie met de naam **mbox** van de browsercookie voordat u het formulier de volgende keer opent. U ziet willekeurig A en B van het formulier.

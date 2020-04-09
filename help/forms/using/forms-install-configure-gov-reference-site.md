@@ -8,7 +8,7 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 33f73225fbb2c48353c1f34db3339c0bb79d4236
+source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
 
 ---
 
@@ -35,23 +35,23 @@ Dit pakket bevat cloudconfiguratie die de volgende platformversies ondersteunt:
 
 **Overwegingen bij de installatie van pakketten:**
 
-* Het pakket wordt naar verwachting geïnstalleerd op een schone server, zonder andere demopakketten of oudere demopapakketversies
+* Het pakket wordt naar verwachting geïnstalleerd op een schone server, zonder andere demopakketten of oudere demopakketversies
 * Het pakket wordt naar verwachting geïnstalleerd op een OSGI-server, die wordt uitgevoerd in de modus Auteur
 
 ### Wat bevat dit pakket {#what-does-this-package-include}
 
-Het AEM Forms We.Gov-demopakket ( **we-gov-forms.pkg.all-&lt;version>.zip **) wordt geleverd als een pakket dat verschillende andere subpakketten en services bevat. Het pakket bevat de volgende modules:
+Het AEM Forms We.Gov-demopakket (**we-gov-forms.pkg.all-&lt;version>.zip**) wordt geleverd als een pakket dat verschillende andere subpakketten en services bevat. Het pakket bevat de volgende modules:
 
-* **we-gov-forms.pkg.all-&lt;version>.zip** -* Complete demo package*
+* **we-gov-forms.pkg.all-&lt;version>.zip** - *Volledige demopakket*
 
    * **we-gov-forms.ui.apps-&lt;version>.zip** *- Bevat alle componenten, clientbibliotheken, voorbeeldgebruikers, workflowmodellen, enz.*
 
-      * **we-gov-forms.core-&lt;version>.jar*** - Bevat alle OSGI-services, implementatie van aangepaste workflowstappen enz.*
+      * **we-gov-forms.core-&lt;version>.jar** - *Bevat alle OSGI-services, implementatie van aangepaste workflowstappen, enzovoort.*
 
       * **core.wcm.components.all-2.0.4.zip** - *Verzameling van WCM-componenten van het monster*
 
       * **grid-aem.ui.apps-1.0-SNAPSHOT.zip** - *AEM-pakket voor de lay-out Raster van sites voor het instellen van kolombesturingselementen in de sitepagina*
-   * **we-gov-forms.ui.content-&lt;version>.zip*** - Bevat alle inhoud, pagina&#39;s, afbeeldingen, *formulieren, interactieve communicatiemiddelen, enzovoort.
+   * **we-gov-forms.ui.content-&lt;version>.zip** - *Bevat alle inhoud, pagina&#39;s, afbeeldingen, formulieren, interactieve communicatiemiddelen, enzovoort.*
 
    * **wij-gov-forms.config.public-&lt;version>.zip** - *Bevat alle standaardconfiguratieknooppunten met inbegrip van placeholder wolkenconfiguraties helpen vormgegevensmodel, en de dienstbindingskwesties vermijden.*
 
@@ -142,14 +142,14 @@ Deze sectie bevat details en instructies over de configuratie na implementatie v
 1. Klik op &quot;Opslaan en sluiten&quot; in de menubalk.
 1. Herhaal stap 2-7 door naar &quot;**Analytics**&quot; te zoeken, de groep &quot;**Analytics Administrators**&quot; te selecteren en de groep &quot;**We.Gov Form Users**&quot; als lid toe te voegen.
 1. Herhaal stap 2-7 door naar &quot;**formuliergebruikers**&quot; te zoeken, de groep &quot;**gebruikers** in de formuliervoeding&quot; te selecteren en de groep &quot;**Gebruikers** in de formulierindeling We.Gov&quot; als lid toe te voegen.
-1. Herhaal stap 2-7 door te zoeken naar &quot;**formuliergebruikers**&quot;, de groep &quot;**formuliergebruikers**&quot; te selecteren en deze keer de groep &quot;* We.Gov-gebruikers**&quot; als lid toe te voegen.
+1. Herhaal stap 2-7 door te zoeken naar &quot;**formuliergebruikers**&quot;, de groep &quot;**formulieren-gebruikers**&quot; te selecteren en voeg nu de groep &quot;**Gebruikers** vanWe.Gov&quot; toe als lid.
 
 ### Configuratie van e-mailserver {#email-server-configuration}
 
 1. Documentatie voor installatie van revisie [e-mailmelding configureren](/help/sites-administering/notification.md)
 
 1. Ga naar *https://&lt;aemserver>:&lt;port>/system/console/configMgr*
-1. Zoek en klik op de service **Day CQ Mail Service **om deze te configureren.
+1. Zoek en klik op de **Day CQ Mail Service** om deze te configureren.
 
    ![CQ-mailservice op dag configureren](assets/day_cq_mail_service.jpg)
 
@@ -157,7 +157,7 @@ Deze sectie bevat details en instructies over de configuratie na implementatie v
 
    1. **hostnaam** SMTP-server: bijv. (smtp.gmail.com)
    1. **Serverpoort**: bijv. (465) voor gmail met SSL
-   1. **** SMTP-gebruiker: demo@ &lt;naam bedrijf>.com
+   1. **SMTP-gebruiker:** demo@ &lt;naam bedrijf>.com
    1. **Adres**&quot;Van&quot;: aemformsdemo@adobe.com
    ![SMTP configureren](assets/configure_smtp.jpg)
 
@@ -193,7 +193,7 @@ Deze sectie bevat details en instructies over de Configuratie van de Wolk van de
 #### Cloudconfiguratie {#cloud-configuration}
 
 1. **Controleer de voorwaarden. Zie[AEM SSL-configuratie](../../forms/using/forms-install-configure-gov-reference-site.md#aemsslconfig)voor de vereiste SSL-configuratie.**
-1. Navigeren naar:
+1. Ga naar:
 
    *https://&lt;aemserver>:&lt;port>/libs/adobesign/cloudservices/adobesign.html/conf/we-gov*
 
@@ -220,7 +220,7 @@ Deze sectie bevat details en instructies over de Configuratie van de Wolk van de
 
 #### MS Dynamics OData cloudservice {#ms-dynamics-odata-cloud-service}
 
-1. Navigeren naar:
+1. Ga naar:
 
    https://&lt;aemserver>:&lt;port>/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf/we-gov
 
@@ -234,8 +234,8 @@ Deze sectie bevat details en instructies over de Configuratie van de Wolk van de
 1. Navigeer naar het tabblad &#39;Verificatie-instellingen&#39;.
 1. Voer de volgende gegevens in:
 
-   1. **** Hoofdmap service: Bijv. https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/
-   1. **** Type verificatie: OAuth 2.0
+   1. **Hoofdmap service:** Bijv. https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/
+   1. **Type verificatie:** OAuth 2.0
    1. **Verificatie-instellingen** (zie de instellingen voor [de cloudconfiguratie van](../../forms/using/forms-install-configure-gov-reference-site.md#dynamicsconfig) MS Dynamics om deze informatie te verzamelen):
 
       1. Client-id - ook wel toepassings-id genoemd
@@ -273,17 +273,17 @@ De stappen die in deze sectie worden beschreven zijn inbegrepen om u van Cliënt
 1. Klik rechts onderaan op Aanpassingen en Developer Resources.
 1. Hier vindt u de hoofdmap van de service: bijv.
 
-* [https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/](https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/)*
+   *[https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/](https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/)*
 
 1. Hier vindt u meer informatie over de URL van het token Vernieuwen en Toegangstoken:
 
-* [https://docs.microsoft.com/en-us/rest/api/datacatalog/authenticate-a-client-app](https://docs.microsoft.com/en-us/rest/api/datacatalog/authenticate-a-client-app)*
+   *[https://docs.microsoft.com/en-us/rest/api/datacatalog/authenticate-a-client-app](https://docs.microsoft.com/en-us/rest/api/datacatalog/authenticate-a-client-app)*
 
 #### Het formuliergegevensmodel testen {#testing-the-form-data-model}
 
-Nadat de cloudconfiguratie is voltooid, wilt u mogelijk het formuliergegevensmodel testen.
+Nadat de cloudconfiguratie is voltooid, wilt u mogelijk het gegevensmodel van het formulier testen.
 
-1. Navigeren naar
+1. Ga naar
 
    *https://&lt;aemserver>:&lt;port>/aem/forms.html/content/dam/formsanddocuments-fdm/we-gov*
 
@@ -292,7 +292,7 @@ Nadat de cloudconfiguratie is voltooid, wilt u mogelijk het formuliergegevensmod
    ![Eigenschappen van Dynamics CRM FDM](assets/properties_dynamics_crm.jpg)
 
 1. Navigeer naar het tabblad Bron bijwerken.
-1. Zorg ervoor dat de &quot;Context-Aware Configuratie&quot;aan &quot;/conf/wij-gov&quot;wordt geplaatst en dat de gevormde gegevensbron &quot;ms-dynamics-odata-cloud-dienst&quot; is.
+1. Zorg ervoor dat de &quot;Context-Aware Configuratie&quot;aan &quot;/conf/wij-gov&quot;wordt geplaatst en dat de gevormde gegevensbron &quot;ms-dynamics-odata-cloud-dienst is&quot;.
 
    ![Gevormde gegevensbron](assets/configured_data_source.jpg)
 
@@ -367,7 +367,7 @@ Dit pakket wordt vooraf geconfigureerd voor verbinding met Adobe Analytics. De o
 
 #### Rapportage van Adobe Analytics-formulieren weergeven {#view-adobe-analytics-forms-reporting}
 
-1. Navigeren naar
+1. Ga naar
 
    *https://&lt;aemserver>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/adobe-gov-forms*
 
@@ -386,9 +386,9 @@ U kunt desgewenst rechtstreeks naar Adobe Analytics navigeren om de analysegegev
 1. Ga naar [https://my.omniture.com/login/](https://my.omniture.com/login/)
 1. Aanmelden met uw referenties:
 
-   1. **** Bedrijf: AEM Forms Demo
-   1. **** Gebruiker: &lt;beschikbaar op verzoek>
-   1. **** Wachtwoord: &lt;beschikbaar op verzoek>
+   1. **Bedrijf:** AEM Forms Demo
+   1. **Gebruiker:** &lt;beschikbaar op verzoek>
+   1. **Wachtwoord:** &lt;beschikbaar op verzoek>
 
 1. Selecteer de &quot;Wij.Gov Referentieplaats&quot;van de Reeksen van het Rapport.
 
@@ -407,7 +407,7 @@ Deze sectie bevat instructies voor het aanpassen van de demo.
 Dit demopakket bevat een configuratiebestand voor de service OSGI dat het gedrag van de WCM-filterservice op de doelserver van de auteur regelt. Deze configuratie maakt de server op een gehandicapte auteurswijze (gelijkwaardig aan ?wcmmode=disabled) werken om demonstratie toe te staan. Voer de volgende stappen uit om deze configuratie bij te werken en ontwerpen in te schakelen:
 
 1. Ga naar *https://&lt;aemserver>:&lt;port>/system/console/configMgr*
-1. Zoek en klik op de **Day CQ WCM-filter **Service om te configureren.
+1. Zoek en klik op de **Day CQ WCM Filter** Service om te configureren.
 
    ![Day CQ WCM-filter](assets/day_cq_wcm_filter.jpg)
 
@@ -424,7 +424,7 @@ Deze sjablonen bevatten de sjablonen AEM-site, Adaptief formulier en Interactiev
 
 *https://&lt;aemserver>:&lt;port>/crx/de/index.jsp#/apps/we-gov/components*
 
-#### Stijlsysteem {#customizetemplates}
+#### Style system {#customizetemplates}
 
 Deze site bevat ook clientbibliotheken, waarvan er een Bootstrap 4 importeert ( [https://getbootstrap.com/](https://getbootstrap.com/) ). Deze clientbibliotheek is beschikbaar op
 
@@ -450,7 +450,7 @@ Wanneer u de pagina- en formuliersjablonen bewerkt, kunt u de logo&#39;s van een
 
 Zie Pagina-inhoud bewerken voor meer informatie:
 
-[Pagina-inhoud bewerken](../../sites-authoring/editing-content.md)
+[Paginacontent bewerken](../../sites-authoring/editing-content.md)
 
 ### Aanpassing sitepagina&#39;s {#sites-pages-customization}
 
@@ -458,7 +458,7 @@ Alle sitepagina&#39;s zijn beschikbaar via: *https://&lt;aemserver>:&lt;port>/si
 
 Deze sitepagina&#39;s maken ook gebruik van het AEM-rasterpakket om de lay-out van een paar componenten te bepalen.
 
-#### Stijlsysteem {#style-system}
+#### Style system {#style-system}
 
 Pagina&#39;s die in dit pakket zijn opgenomen, ondersteunen ook het stijlsysteem:
 
@@ -489,7 +489,7 @@ U kunt adaptieve formulieren ook opmaken met de Stijleditor of de themaeditor:
 
 ### Workflowaanpassing {#workflow-customization}
 
-Het Aangepaste formulier voor inschrijving wordt voor verwerking naar een OSGI-workflow verzonden. Deze workflow is te vinden op* https://&lt;aemserver>:&lt;port>/conf/we-gov/settings/models/we-gov-process.html*.
+Het Aangepaste formulier voor inschrijving wordt voor verwerking naar een OSGI-workflow verzonden. Deze workflow is te vinden op *https://&lt;poort>/conf/we-gov/settings/models/we-gov-process.html*.
 
 Vanwege bepaalde beperkingen bevat deze workflow diverse scripts en aangepaste stappen voor het proces van de OSGI-workflow. Deze workflowstappen zijn gemaakt als algemene stappen en zijn niet gemaakt met configuratievensters. Op dit moment is de configuratie van de workflowstappen afhankelijk van procesargumenten.
 
@@ -505,7 +505,7 @@ Deze sectie bevat informatie over demo-functies en ontwerpbeslissingen die tijde
 * Met het adaptieve formulier voor inschrijving wordt het e-mailbericht voor ondertekening van Adobe verzonden naar de e-mail die is opgegeven in het e-mailveld van het formulier. Dat e-mailadres mag niet hetzelfde e-mailadres zijn als het e-mailadres dat wordt gebruikt om de configuratie van de Adobe-cloud voor ondertekening te configureren.
 * Door gebrek, omvat het demopakket verscheidene de dienstconfiguratie OSGI om het algemene gedrag van de doelserver te controleren die de demo ontvangt. Deze configuratie omvat een WCM de dienstconfiguratie van de Filter die door gebrek de server op een **gehandicapte auteurswijze** (gelijkwaardig aan ?wcmmode=disabled) laat werken. Zie [AEM-authoring](../../forms/using/forms-install-configure-gov-reference-site.md#enableauthoring) inschakelen om paginaontwerp toe te staan.
 
-### Bekende problemen {#known-issues}
+### Known issues {#known-issues}
 
 * (AGRS-120) De component van de Navigatie van de Plaats steunt momenteel geen genestelde kindpagina&#39;s die meer dan 2 niveaus diep zijn.
 * (AGRS-159) De huidige FDM van de Dynamiek van MS moet twee handelingen eerst uitvoeren, POST de Adaptieve gegevens van de Vorm van de Inschrijving aan Dynamiek, en haalt dan het gebruikersverslag op om identiteitskaart van het Contact terug te winnen. In zijn huidige staat, zal het halen van identiteitskaart van het Contact ontbreken als meer dan twee gebruikers met de zelfde naam in Dynamiek aanwezig zijn, die niet de Aangepaste Vorm van de Inschrijving zal toestaan om voor te leggen.

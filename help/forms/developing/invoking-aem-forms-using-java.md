@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 0e6e7850-6137-42c5-b8e2-d4e352fddae2
 translation-type: tm+mt
-source-git-commit: 3fe5f243c3e39029c1605a1a1977a48dba595d64
+source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
 
 ---
 
@@ -64,7 +64,9 @@ Als u een AEM Forms-service via programmacode wilt aanroepen met de Java API, ne
 * De AEM Forms-service die moet worden aangeroepen. Een cliënttoepassing kan één of meerdere diensten aanhalen.
 * De modus waarin u de service AEM Forms wilt activeren. U kunt de modus EJB of SOAP gebruiken. (Zie Verbindingseigenschappen [instellen](invoking-aem-forms-using-java.md#setting-connection-properties).)
 
->[!NOTE] (Alleen sleutel) Start de AEM Forms-server met de opdracht `standalone.bat -b <Server IP> -c lc_turnkey.xml` om een server-IP voor EJB op te geven
+>[!NOTE]
+>
+>(Alleen sleutel) Start de AEM Forms-server met de opdracht `standalone.bat -b <Server IP> -c lc_turnkey.xml` om een server-IP voor EJB op te geven
 
 * De J2EE-toepassingsserver waarop AEM Forms wordt geïmplementeerd.
 
@@ -97,7 +99,7 @@ In de volgende tabel staan de JAR-bestanden die vereist zijn om AEM Forms-servic
    <td><p>&lt;<i>installatiemap</i>&gt;/sdk//client-libs/&lt;toepassingsserver&gt;</p></td>
   </tr>
   <tr>
-   <td><p>adobe-applicationManager-client-sdk.jar</p></td>
+   <td><p>adobe-applicationmanager-client-sdk.jar</p></td>
    <td><p>Vereist om de dienst van de Manager van de Toepassing aan te halen.</p></td>
    <td><p>&lt;<i>installatiemap</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
@@ -147,7 +149,7 @@ In de volgende tabel staan de JAR-bestanden die vereist zijn om AEM Forms-servic
    <td><p>&lt;<i>installatiemap</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
-   <td><p>adobe-formdataIntegration-client.jar</p></td>
+   <td><p>adobe-formdataintegration-client.jar</p></td>
    <td><p>Vereist om de dienst van de Integratie van de Gegevens van de Vorm aan te halen.</p></td>
    <td><p>&lt;<i>installatiemap</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
@@ -189,7 +191,7 @@ In de volgende tabel staan de JAR-bestanden die vereist zijn om AEM Forms-servic
   <tr>
    <td>
     <ul>
-     <li><p>adobe-rights management-client.jar</p></li>
+     <li><p>adobe-rightsmanagement-client.jar</p></li>
      <li><p>namespace.jar</p></li>
      <li><p>jaxb-api.jar</p></li>
      <li><p>jaxb-impl.jar</p></li>
@@ -259,7 +261,7 @@ De volgende tabel bevat een lijst met JAR-bestanden die afhankelijk zijn van de 
    <td><p>&lt;<em>installatiemap</em>&gt;/sdk/client-libs/third-party</p> </td>
   </tr>
   <tr>
-   <td><p> jreliëf-client.jar</p> </td>
+   <td><p> jboss-client.jar</p> </td>
    <td><p>Als AEM Forms wordt geïmplementeerd op JBoss Application Server, neemt u dit JAR-bestand op.</p> <p>Vereiste klassen worden niet gevonden door de klasseleider als jreliëf-client.jar en de jars waarnaar wordt verwezen, zich niet op dezelfde locatie bevinden.</p> </td>
    <td><p>JBoss client lib directory</p> <p>Als u uw clienttoepassing op dezelfde J2EE-toepassingsserver implementeert, hoeft u dit bestand niet op te nemen.</p> </td>
   </tr>
@@ -308,7 +310,7 @@ In de volgende tabel worden de aanroepingsscenario&#39;s aangegeven en worden de
      <li><p>adobe-usermanager-client.jar</p> </li>
     </ul>
     <ul>
-     <li>jreliëf-client.jar</li>
+     <li>jboss-client.jar</li>
     </ul>
     <ul>
      <li>adobe-forms-client.jar<br /> </li>
@@ -325,7 +327,7 @@ In de volgende tabel worden de aanroepingsscenario&#39;s aangegeven en worden de
      <li><p>adobe-usermanager-client.jar</p> </li>
     </ul>
     <ul>
-     <li>jreliëf-client.jar<br /> </li>
+     <li>jboss-client.jar<br /> </li>
      <li>commons-httpclient-3.1.jar</li>
     </ul>
     <ul>
@@ -403,7 +405,7 @@ Als u een upgrade uitvoert van LiveCycle naar AEM Forms, wordt u aangeraden de J
 
 Ervan uitgaande dat u een upgrade uitvoert naar AEM Forms. Als u een Java-toepassing wilt gebruiken die de Rights Management-service aanroept, neemt u de versies van AEM Forms van de volgende JAR-bestanden op:
 
-* adobe-rights management-client.jar
+* adobe-rightsmanagement-client.jar
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 
@@ -985,7 +987,7 @@ U kunt de Repository-service activeren door een Java-clientbibliotheek te gebrui
    Kiezen naar de geretourneerde waarde `Resource`.
 
 1. Maak een `ResourceContent` object door de `RepositoryInfomodelFactoryBean` methode van het `newImage` object aan te roepen en de geretourneerde waarde naar te casten `ResourceContent`. Dit object vertegenwoordigt de inhoud die aan de gegevensopslagruimte wordt toegevoegd.
-1. Maak een `com.adobe.idp.Document` object door een `java.io.FileInputStream` object door te geven waarin het XDP-bestand wordt opgeslagen dat aan de opslagplaats moet worden toegevoegd. (Zie Een document [maken op basis van een InputStream-object](invoking-aem-forms-using-java.md#creating-a-document-based-on-an-inputstream-object).)
+1. Maak een `com.adobe.idp.Document` object door een `java.io.FileInputStream` object door te geven waarin het XDP-bestand wordt opgeslagen dat aan de gegevensopslagruimte moet worden toegevoegd. (Zie Een document [maken op basis van een InputStream-object](invoking-aem-forms-using-java.md#creating-a-document-based-on-an-inputstream-object).)
 1. Voeg de inhoud van het `com.adobe.idp.Document` object toe aan het `ResourceContent` object door de `ResourceContent` methode van het `setDataDocument` object aan te roepen. Geef het `com.adobe.idp.Document` object door.
 1. Stel het MIME-type van het XDP-bestand in dat u aan de opslagplaats wilt toevoegen door de methode van het `ResourceContent` object aan te roepen en door te geven `setMimeType` `application/vnd.adobe.xdp+xml`.
 1. Voeg de inhoud van het `ResourceContent` object toe aan het `Resource` object door de methode van het `Resource` object aan te roepen `setContent` en het `ResourceContent` object door te geven.

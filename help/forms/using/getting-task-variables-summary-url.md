@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 6dc31bec-b02d-47db-a4f4-be8c14c5619e
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
 
 ---
 
@@ -58,9 +58,9 @@ In deze voorbeeldorganisatie dient een medewerker een formulier voor een verlofa
    1. Creeer een proces **creeer PTO samenvatting** en gebruik dit als subproces vóór de **Assign verrichting van de Taak** in uw orkest.
    1. Definieer **employeeName**, **employeeID**, **ptoReason**, **totalDays** en **nodeName** als invoervariabelen in uw nieuwe proces. Deze variabelen worden doorgegeven als verzonden formuliergegevens.
 
-      Definieer ook een uitvoervariabele **ptoNodePath **die wordt gebruikt tijdens het instellen van de samenvatting-URL.
+      Definieer ook een uitvoervariabele **ptoNodePath** die wordt gebruikt tijdens het instellen van de samenvatting-URL.
 
-   1. In **creeer PTO summiere** proces, gebruik de **vastgestelde waardecomponent** om de inputdetails in een **nodeProperty ** (**nodeProps**) kaart te plaatsen.
+   1. In **creeer PTO summiere** proces, gebruik de **vastgestelde waardecomponent** om de inputdetails in een **nodeProperty**(**nodeProps**) kaart te plaatsen.
 
       De sleutels in deze kaart zouden het zelfde moeten zijn als de sleutels die in uw renderer van HTML in de vorige stap worden bepaald.
 

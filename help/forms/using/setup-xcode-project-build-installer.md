@@ -10,7 +10,7 @@ topic-tags: forms-app
 discoiquuid: 88555db2-712f-4ef9-bf47-76c7ba83d964
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
 
 ---
 
@@ -72,7 +72,7 @@ Voor gedetailleerde informatie over het ondertekenen van code en het toevoegen v
 1. Extraheer het archief in de `[User_Home]/Projects/[your-project]`map.
 1. Navigeer naar de map ` [User_Home]/Projects/ `[your-project]`/adobe-lc-mobileworkspace-src-[version]/ios` .
 1. Open het `AEM Forms.xcodeproj` project in Xcode.
-1. Klik op **AEM-formulieren** onder **DOELSTELLINGEN** en selecteer **AEM-formulieren**. Selecteer het tabblad **Build-instellingen **, zoek de sectie **Code Signing Entitlement** , en voer in de velden Foutopsporing en Geen een van de volgende handelingen uit:
+1. Klik op **AEM-formulieren** onder **DOELSTELLINGEN** en selecteer **AEM-formulieren**. Selecteer het tabblad **Build Settings** , zoek de sectie **Code Signing Entitlement** , en voer in de velden Debug and Release een van de volgende handelingen uit:
 
    * Laat de velden ongespecificeerd om een standaard mobiele werkruimte-app te maken
    * Geef de velden op die moeten worden beschreven in [Een app voor beveiligde AEM-formulieren voor iOS](/help/forms/using/building-secure-mobile-workspace-app.md) maken om een veilige app voor AEM-formulieren te maken.

@@ -10,7 +10,7 @@ topic-tags: publish
 discoiquuid: db38972c-be3f-49fd-8cc1-45b16ed244af
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
 
 ---
 
@@ -23,8 +23,7 @@ Een beheerder kan een netwerkmap, ook wel een gecontroleerde map genoemd, zo con
 
 U kunt een van de volgende methoden gebruiken om een gecontroleerde map te maken op het bestandssysteem:
 
-* Wanneer het vormen van de eigenschappen van een Gecontroleerde knoop van de Omslagconfiguratie, typ de volledige weg van de ouderfolder in het folderPath bezit en voeg de naam van de Gecontroleerde Te creëren Omslag toe, zoals aangetoond in het volgende voorbeeld: `C:/MyPDFs/MyWatchedFolder`\
-   De `MyWatchedFolder`map bestaat niet. AEM Forms probeert de map te maken op het opgegeven pad.
+* Wanneer het vormen van de eigenschappen van een Gecontroleerde knoop van de Omslagconfiguratie, typ de volledige weg van de ouderfolder in het folderPath bezit en voeg de naam van de Gecontroleerde Te creëren Omslag toe, zoals aangetoond in het volgende voorbeeld: `C:/MyPDFs/MyWatchedFolder`De `MyWatchedFolder`map bestaat niet. AEM Forms probeert de map te maken op het opgegeven pad.
 
 * Creeer een omslag op het dossiersysteem alvorens een Gecontroleerd eindpunt van de Omslag te vormen, en dan de volledige weg in het folderPath bezit te verstrekken. Zie [Gecontroleerde mapeigenschappen](../../forms/using/watched-folder-in-aem-forms.md#main-pars-header-1)voor meer informatie over de eigenschap folderPath.
 
@@ -90,8 +89,8 @@ U kunt de volgende eigenschappen configureren voor een gecontroleerde map.
 * **deleteExpiredStageFileOnlyWhenThrottled (Boolean, standaard true):** Hiermee wordt aangegeven of het verloopmechanisme alleen moet worden geactiveerd wanneer de controlemap wordt vertraagd. Het mechanisme is relevanter voor vertraagde controlemappen aangezien een klein aantal dossiers die zich in een onverwerkte staat (wegens intermitterende baan/werkschemafouten) rond blijven de mogelijkheid hebben om verwerking voor de volledige partij te onderdrukken wanneer het vertragen wordt toegelaten. Als deze eigenschap wordt ingesteld op true (de standaardwaarde), wordt het verloopmechanisme niet geactiveerd voor gecontroleerde mappen die niet worden vertraagd. Als de eigenschap false blijft, wordt het mechanisme altijd geactiveerd zolang de eigenschap stageFileExpirationDuration een positief getal is.
 
 * **pollInterval (lang)**: Het interval in seconden voor het scannen van de gecontroleerde map op invoer. Tenzij de Throttle-instelling is ingeschakeld, moet het pollinterval langer zijn dan de tijd die nodig is om een gemiddelde taak te verwerken. anders kan het systeem overbelast raken . De standaardwaarde is 5. Zie de beschrijving bij Batchgrootte voor meer informatie. De waarde van het pollinterval moet groter dan of gelijk aan 1 zijn.
-* **excludeFilePattern (String)**: Een door puntkomma&#39;s (;) gescheiden lijst met patronen die door een gecontroleerde map worden gebruikt om te bepalen welke bestanden en mappen moeten worden gescand en opgehaald. Bestanden of mappen met dit patroon worden niet gescand voor verwerking. Deze instelling is handig wanneer de invoer een map met meerdere bestanden is. De inhoud van de map kan worden gekopieerd naar een map met een naam die wordt opgehaald door de gecontroleerde map. Hierdoor wordt voorkomen dat de gecontroleerde map een map opneemt die moet worden verwerkt voordat de map volledig is gekopieerd naar de invoermap. De standaardwaarde is null.\
-   U kunt [bestandspatronen](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) gebruiken om uit te sluiten:
+* **excludeFilePattern (String)**: Een door puntkomma&#39;s (;) gescheiden lijst met patronen die door een gecontroleerde map worden gebruikt om te bepalen welke bestanden en mappen moeten worden gescand en opgehaald. Bestanden of mappen met dit patroon worden niet gescand voor verwerking. Deze instelling is handig wanneer de invoer een map met meerdere bestanden is. De inhoud van de map kan worden gekopieerd naar een map met een naam die wordt opgehaald door de gecontroleerde map. Hierdoor wordt voorkomen dat de gecontroleerde map een map opneemt die moet worden verwerkt voordat de map volledig is gekopieerd naar de invoermap. De standaardwaarde is null.
+U kunt [bestandspatronen](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) gebruiken om uit te sluiten:
 
    * Bestanden met specifieke bestandsnaamextensies; bijvoorbeeld *.dat, *.xml, .pdf, *.*
    * Bestanden met specifieke namen; data* sluit bijvoorbeeld bestanden en mappen met de naam data1, data2 enzovoort uit.
@@ -216,16 +215,13 @@ Een dienst is een douaneimplementatie van de `com.adobe.aemfd.watchfolder.servic
 
 #### Aangepaste implementatie van de ContentProcessor-interface {#custom-implementation-of-the-contentprocessor-interface}
 
-De aangepaste implementatie accepteert een verwerkingscontext (een object van het type com.adobe.aemfd.watchfolder.service.api.ProcessorContext), leest invoerdocumenten en configuratieparameters van de context, verwerkt de invoer en voegt de uitvoer terug toe aan de\
-context. De ProcessorContext heeft de volgende API&#39;s:
+De aangepaste implementatie accepteert een verwerkingscontext (een object van het type com.adobe.aemfd.watchfolder.service.api.ProcessorContext), leest invoerdocumenten en configuratieparameters van de context, verwerkt de invoer en voegt de uitvoer terug toe aan de context. De ProcessorContext heeft de volgende API&#39;s:
 
 * **getWatchFolderId**: Retourneert de id van de gecontroleerde map.
 * **getInputMap**: Retourneert een kaart van het type Map. De kaarttoetsen zijn de bestandsnaam van het invoerbestand en een documentobject dat de inhoud van het bestand bevat. Gebruik de API getinputMap om de invoerbestanden te lezen.
-* **getConfigParameters**: Retourneert een onveranderlijke kaart van het type Map. De kaart bevat\
-   de configuratieparameters van een gecontroleerde map.
+* **getConfigParameters**: Retourneert een onveranderlijke kaart van het type Map. De kaart bevat de configuratieparameters van een Gecontroleerde Omslag.
 
-* **setResult**: De ContentProcessor-implementatie\
-   gebruikt de API om het uitvoerdocument naar de resultaatmap te schrijven. U kunt een naam voor het uitvoerbestand opgeven voor de setResult-API. Afhankelijk van de opgegeven uitvoermap/bestandspatroon kan de API ervoor kiezen het opgegeven bestand te gebruiken of te negeren. Als een mappatroon is opgegeven, hebben de uitvoerbestanden de namen die in de workflows worden beschreven. Als een bestandspatroon is opgegeven, hebben de uitvoerbestanden de namen die in het bestandspatroon worden beschreven.
+* **setResult**: De implementatie van ContentProcessor gebruikt de API om het uitvoerdocument naar de resultaatmap te schrijven. U kunt een naam voor het uitvoerbestand opgeven voor de setResult-API. Afhankelijk van de opgegeven uitvoermap/bestandspatroon kan de API ervoor kiezen het opgegeven bestand te gebruiken of te negeren. Als een mappatroon is opgegeven, hebben de uitvoerbestanden de namen die in de workflows worden beschreven. Als een bestandspatroon is opgegeven, hebben de uitvoerbestanden de namen die in het bestandspatroon worden beschreven.
 
 De volgende code is bijvoorbeeld een aangepaste implementatie van de interface ContentProcessor met een aangepaste eigenschap foo=bar.
 
@@ -276,7 +272,7 @@ var inputMap = processorContext.getInputMap();
 var params = processorContext.getConfigParameters();
 var entry = inputMap.entrySet().iterator().next();
 var tempFile = new Packages.java.io.File(params.get("tempDir"), params.get("outPrefix") + entry.getKey());
-entry.getValue().copyToFile(tempFile);    
+entry.getValue().copyToFile(tempFile);
 processorContext.setResult(tempFile.getName(), new Packages.com.adobe.aemfd.docmanager.Document(tempFile, true));
 ```
 
@@ -298,8 +294,8 @@ Nu, kunt u gevormde douaneplaats gebruiken om de manuscripten te bewaren.
 Met workflows kunt u de activiteiten van Experience Manager automatiseren. Workflows bestaan uit een reeks stappen die in een specifieke volgorde worden uitgevoerd. Elke stap voert een specifieke activiteit uit zoals het activeren van een pagina of het verzenden van een e-mailbericht. Workflows kunnen communiceren met middelen in de opslagplaats, gebruikersaccounts en services van Experience Manager. Daarom kunnen workflows gecompliceerd coördineren.
 
 * Overweeg de volgende punten voordat u een workflow maakt:
-* De uitvoer van een stap moet beschikbaar zijn voor alle volgende stappen.\
-   De stappen moeten bestaande output kunnen bijwerken (of zelfs schrappen) die door de vorige stappen wordt geproduceerd.
+* De uitvoer van een stap moet beschikbaar zijn voor alle volgende stappen.
+De stappen moeten bestaande output kunnen bijwerken (of zelfs schrappen) die door de vorige stappen wordt geproduceerd.
 * De veranderbare variabelen worden gebruikt om de douanedynamische gegevens tussen de stappen te stromen.
 
 Voer de volgende stappen uit om bestanden te verwerken met behulp van workflows:
@@ -347,7 +343,7 @@ Overwegingen bij het gebruik van de setResult-API in workflows:
 >
 >Het aanroepen van de setResult-API met null-inhoud in andere scenario&#39;s zou resulteren in een fout.
 
-Het volgende voorbeeld wordt geïmplementeerd als een workflowstap. In het voorbeeld, gebruikt ECMAscript een veranderlijke stepCount om het aantal tijden te volgen een stap in de huidige werkschemainstantie wordt geroepen.\
+Het volgende voorbeeld wordt geïmplementeerd als een workflowstap. In het voorbeeld, gebruikt ECMAscript een veranderlijke stepCount om het aantal tijden te volgen een stap in de huidige werkschemainstantie wordt geroepen.
 De naam van de uitvoermap is een combinatie van het huidige stapnummer, de oorspronkelijke bestandsnaam en het voorvoegsel dat in de parameter outPrefix is opgegeven.
 
 ECMAScript krijgt een verwijzing van de dienst van de werkschemacontext en leidt tot een implementatie van de interface WorkflowContextProcessor. De WorkflowContextProcessor-implementatie accepteert invoerbestanden, kopieert het bestand naar een tijdelijke locatie en retourneert een document dat het gekopieerde bestand vertegenwoordigt. Gebaseerd op de waarde van de variabele purgePrevious Van Boole, schrapt de huidige stap de output die laatste tijd door de zelfde stap werd geproduceerd toen de stap in de huidige werkschemainstantie werd begonnen. Uiteindelijk wordt de methode wfSvc.execute aangeroepen om de WorkflowContextProcessor-implementatie uit te voeren. De inhoud van het uitvoerdocument wordt opgeslagen naar de resultaatmap op het fysieke pad dat wordt vermeld in het configuratieknooppunt Gecontroleerde map.
@@ -366,8 +362,8 @@ var impl = { processWorkflowContext: function (wfContext) {
     log.info("Inputs: " + inputMap); // Input map of type Map<String, Document>
     log.info("Params: " + paramMap); // Config params of type Map<String, Object>
     log.info("Old results: " + preResults);
-    log.info("Old variables: " + preVars);            
-    var currStepNumber = new Packages.java.lang.Long(new Packages.java.lang.Long(preVars.get("stepCount")).longValue() + 1);    
+    log.info("Old variables: " + preVars);
+    var currStepNumber = new Packages.java.lang.Long(new Packages.java.lang.Long(preVars.get("stepCount")).longValue() + 1);
     log.info("Current step number: " + currStepNumber);
     wfContext.setVariable("stepCount", currStepNumber);
     var entry = inputMap.entrySet().iterator().next();
@@ -378,7 +374,7 @@ var impl = { processWorkflowContext: function (wfContext) {
     wfContext.setResult(tempFile.getName(), outDoc);
     var prevStepOutName = paramMap.get("outPrefix") + "STEP-" + (currStepNumber - 1) + "-" + entry.getKey();
     if (preResults.containsKey(prevStepOutName) && paramMap.get("purgePrevious").booleanValue()) {
-        log.info("Purging previous step output " + prevStepOutName);        
+        log.info("Purging previous step output " + prevStepOutName);
         wfContext.setResult(prevStepOutName, null);
     }
 } }
@@ -631,8 +627,8 @@ De ECMAScript zou de createPDF-API van de PDF-Generator gebruiken om Microsoft W
 
 ### Een workflow maken {#create-a-workflow}
 
-1. Open de interface van de AEM-workflow in een browservenster.\
-   https://[servernaam]: &#39;poort&#39;/worklow
+1. Open de interface van de AEM-workflow in een browservenster.
+https://[servernaam]: &#39;poort&#39;/worklow
 
 1. Klik in de weergave Modellen op **Nieuw**. Geef in het dialoogvenster Nieuwe workflow de **titel** op en klik op **OK**.
 
@@ -642,7 +638,7 @@ De ECMAScript zou de createPDF-API van de PDF-Generator gebruiken om Microsoft W
 
 1. Verwijder de standaardworkflowstap. Sleep de processtap van de Sidetrap naar de workflow en zet deze neer.
 
-   ![create-a-workflow-pdf-(2)](assets/create-a-workflow-pdf-(2).png)
+   ![create-a-workflow-pdf2](assets/create-a-workflow-pdf2.png)
 
 1. Klik met de rechtermuisknop op de processtap en selecteer **Bewerken**. Het venster Step Properties wordt weergegeven.
 
@@ -660,8 +656,8 @@ De ECMAScript zou de createPDF-API van de PDF-Generator gebruiken om Microsoft W
 
 1. Voeg de volgende eigenschappen toe aan het knooppunt:
 
-   * folderPath (String): Het pad van de map die met een bepaald tijdsinterval moet worden gescand. De map moet zich op een gedeelde locatie bevinden en alle servers moeten volledige toegang tot de server hebben.\
-      inputProcessorType (String): Het type proces dat moet worden gestart. Geef in deze zelfstudie een workflow op.
+   * folderPath (String): Het pad van de map die met een bepaald tijdsinterval moet worden gescand. De map moet zich op een gedeelde locatie bevinden en alle servers moeten volledige toegang tot de server hebben.
+inputProcessorType (String): Het type proces dat moet worden gestart. Geef in deze zelfstudie een workflow op.
 
    * inputProcessorId (String): Het gedrag van de eigenschap inputProcessorId is gebaseerd op de waarde die is opgegeven voor de eigenschap inputProcessorType. In dit voorbeeld is de waarde van de eigenschap inputProcessorType workflow. Voor de eigenschap inputProcessorId geeft u dus het volgende pad van de PDFG-workflow op: /etc/workflow/models/pdfg/jcr:content/model
 

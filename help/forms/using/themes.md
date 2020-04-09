@@ -10,7 +10,7 @@ content-strategy: max-2018
 discoiquuid: 770e9174-b648-462a-abe9-05fefa967d86
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
 
 ---
 
@@ -564,7 +564,7 @@ Een thema toepassen op een interactieve communicatie:
 
    U kunt eigenschappen van het formulier bewerken in de zijbalk.
 
-1. Selecteer in de zijbalk onder** Standaard** uw thema in de vervolgkeuzelijst **Thema** en klik op **Gereed** ![selectievakje](assets/check-button.png)
+1. Selecteer in de zijbalk onder **Standaard** uw thema in de vervolgkeuzelijst **Thema** en klik op **Gereed** ![selectievakje](assets/check-button.png)
 
 ### Het thema van een formulier wijzigen tijdens runtime {#change-theme-of-a-form-at-runtime}
 

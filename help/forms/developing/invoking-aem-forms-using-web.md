@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: d5722281-bea9-4fc7-abdc-e678899e0a15
 translation-type: tm+mt
-source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
+source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
 
 ---
 
@@ -122,7 +122,7 @@ De volgende lijst maakt een lijst van de dienstWSDL definities (veronderstellend
    <td><p><code>http://localhost:8080/soap/services/ ReaderExtensionsService?wsdl</code></p></td>
   </tr>
   <tr>
-   <td><p> Bewaarplaats</p></td>
+   <td><p>Bewaarplaats</p></td>
    <td><p><code>http://localhost:8080/soap/services/ RepositoryService?wsdl</code></p></td>
   </tr>
   <tr>
@@ -207,13 +207,13 @@ De velden `MTOM` en `swaRef` worden alleen ondersteund in AEM-formulieren. U kun
 
 **BLOB-objecten leveren in serviceaanvragen**
 
-Als een AEM Forms-servicebewerking een `BLOB` type als invoerwaarde vereist, maakt u een instantie van het `BLOB` type in de toepassingslogica. (Veel webservices beginnen snel bij *Programmeren met AEM-formulieren* en laten zien hoe u met een BLOB-gegevenstype werkt.)
+Als een AEM Forms-servicebewerking een `BLOB` type als invoerwaarde vereist, maakt u een instantie van het `BLOB` type in uw toepassingslogica. (Veel webservices beginnen snel bij *Programmeren met AEM-formulieren* en laten zien hoe u met een BLOB-gegevenstype werkt.)
 
 Wijs als volgt waarden toe aan velden die tot de `BLOB` instantie behoren:
 
 * **Base64**: Als u gegevens wilt doorgeven als tekst die is gecodeerd in de Base64-indeling, stelt u de gegevens in het `BLOB.binaryData` veld in en stelt u het gegevenstype in de MIME-indeling (bijvoorbeeld `application/pdf`) in het `BLOB.contentType` veld in. (Zie [AEM-formulieren aanroepen met Base64-codering](#invoking-aem-forms-using-base64-encoding).)
 * **MTOM**: Als u binaire gegevens in een MTOM-bijlage wilt doorgeven, stelt u de gegevens in het `BLOB.MTOM` veld in. Deze instelling koppelt de gegevens aan de SOAP-aanvraag met behulp van het Java JAX-WS-framework of de native API van het SOAP-framework. (Zie AEM-formulieren [aanroepen met MTOM](#invoking-aem-forms-using-mtom).)
-* **SwaRef**: Om binaire gegevens in een WS-I SwaRef gehechtheid over te gaan, plaats de gegevens op het `BLOB.swaRef` gebied. Deze instelling koppelt de gegevens aan het SOAP-verzoek met behulp van het Java JAX-WS-framework. (Zie [AEM-formulieren aanroepen met SwaRef](#invoking-aem-forms-using-swaref).)
+* **SwaRef**: Als u binaire gegevens in een WS-I SwaRef-bijlage wilt doorgeven, stelt u de gegevens in het `BLOB.swaRef` veld in. Deze instelling koppelt de gegevens aan het SOAP-verzoek met behulp van het Java JAX-WS-framework. (Zie [AEM-formulieren aanroepen met SwaRef](#invoking-aem-forms-using-swaref).)
 * **MIME- of DIME-bijlage**: Als u gegevens wilt doorgeven in een MIME- of DIME-bijlage, voegt u de gegevens toe aan de SOAP-aanvraag met de native API van het SOAP-framework. Stel de id van de bijlage in het `BLOB.attachmentID` veld in. (Zie [AEM-formulieren aanroepen met Base64-codering](#invoking-aem-forms-using-base64-encoding).)
 * **Externe URL**: Als gegevens worden gehost op een webserver en toegankelijk zijn via een HTTP-URL, stelt u de HTTP-URL in het `BLOB.remoteURL` veld in. (Zie AEM-formulieren [aanroepen met behulp van BLOB-gegevens via HTTP](#invoking-aem-forms-using-blob-data-over-http).)
 
@@ -249,11 +249,11 @@ Hier is de correlatie tussen transmissietypen en het gebied waarvan u de gegeven
 
 >[!NOTE]
 >
->U wordt aangeraden een `BLOB` object niet groter dan 30 MB te laten vullen door de `setBinaryData` methode ervan aan te roepen. Anders bestaat de mogelijkheid dat er een `OutOfMemory` uitzondering optreedt.
+>U wordt aangeraden een `BLOB` object niet groter dan 30 MB te laten vullen door de `setBinaryData` methode aan te roepen. Anders bestaat de mogelijkheid dat er een `OutOfMemory` uitzondering optreedt.
 
 >[!NOTE]
 >
->Op JAX WS gebaseerde toepassingen die het MTOM transmissieprotocol gebruiken zijn beperkt tot 25MB van verzonden en ontvangen gegevens. Deze beperking is het gevolg van een bug in JAX-WS. Als de gecombineerde grootte van uw verzonden en ontvangen dossiers 25MB overschrijdt, gebruik het SwaRef transmissieprotocol in plaats van MTOM. Anders bestaat de mogelijkheid van een `OutOfMemory`* uitzondering.*
+>Op JAX WS gebaseerde toepassingen die het MTOM transmissieprotocol gebruiken zijn beperkt tot 25MB van verzonden en ontvangen gegevens. Deze beperking is het gevolg van een bug in JAX-WS. Als de gecombineerde grootte van uw verzonden en ontvangen dossiers 25MB overschrijdt, gebruik het SwaRef transmissieprotocol in plaats van MTOM. Anders bestaat de mogelijkheid van een `OutOfMemory` uitzondering.
 
 **MTOM-transmissie van bytearrays met base64-codering**
 
@@ -674,7 +674,7 @@ U kunt een dienst van Vormen AEM aanhalen gebruikend de volmachtsklassen van Jav
 
    >[!NOTE]
    >
-   >Vervangen `hiro-xp`door het IP-adres van de J2EE-toepassingsserver die als host fungeert voor AEM Forms.
+   >Vervangen `hiro-xp` *door het IP-adres van de J2EE-toepassingsserver die als host fungeert voor AEM Forms.*
 
 1. Plaats de Java-proxyklassen die met JAX-WS zijn gemaakt in een JAR-bestand.
 1. Neem het JAR-bestand voor de Java-proxy en de JAR-bestanden op in het volgende pad:
@@ -762,7 +762,7 @@ Nadat u een Verwijzing van de Dienst creeert, zijn de gegevenstypes verbonden aa
 
 1. Creeer een .NET project gebruikend Microsoft Visual Studio 2008.
 1. Selecteer in het menu **Project** de optie **Serviceverwijzing** toevoegen.
-1. Geef in het dialoogvenster **Adres** de WSDL op voor de service AEM-formulieren. Bijvoorbeeld,
+1. Geef in het dialoogvenster **Adres** de WSDL op voor de service AEM-formulieren. Bijvoorbeeld:
 
    ```as3
     http://localhost:8080/soap/services/MyApplication/EncryptDocument?WSDL&lc_version=9.0.1
@@ -786,7 +786,7 @@ Neem bijvoorbeeld het `MyApplication/EncryptDocument` proces waarbij een onbevei
 
    >[!NOTE]
    >
-   >Vervangen `hiro-xp`door het IP-adres van de J2EE-toepassingsserver die als host fungeert voor AEM Forms.
+   >Vervangen `hiro-xp` *door het IP-adres van de J2EE-toepassingsserver die als host fungeert voor AEM Forms.*
 
 1. Maak een `System.ServiceModel.BasicHttpBinding` object door de waarde van het `EncryptDocumentClient.Endpoint.Binding` gegevenslid op te halen. Kiezen naar de geretourneerde waarde `BasicHttpBinding`.
 1. Stel het `System.ServiceModel.BasicHttpBinding` gegevenslid van het object in op `MessageEncoding` `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
@@ -867,7 +867,7 @@ Voer de volgende stappen uit om het `MyApplication/EncryptDocument` proces aan t
 
    >[!NOTE]
    >
-   >Vervang `hiro-xp`* door het IP-adres van de J2EE-toepassingsserver die als host fungeert voor AEM Forms. *
+   >Vervangen `hiro-xp` *door het IP-adres van de J2EE-toepassingsserver die als host fungeert voor AEM Forms.*
 
 1. Plaats de Java-proxyklassen die met JAX-WS zijn gemaakt in een JAR-bestand.
 1. Neem het JAR-bestand voor de Java-proxy en de JAR-bestanden op in het volgende pad:
@@ -989,7 +989,7 @@ U kunt een AEM Forms-service aanroepen met Java-proxyklassen en BLOB-gegevens vi
 
    >[!NOTE]
    >
-   >Vervang `hiro-xp`* door het IP-adres van de J2EE-toepassingsserver die als host fungeert voor AEM Forms. *
+   >Vervangen `hiro-xp` *door het IP-adres van de J2EE-toepassingsserver die als host fungeert voor AEM Forms.*
 
 1. Plaats de Java-proxyklassen die met JAX-WS zijn gemaakt in een JAR-bestand.
 1. Neem het JAR-bestand voor de Java-proxy en de JAR-bestanden op in het volgende pad:
@@ -1037,13 +1037,13 @@ Wanneer dit proces wordt aangeroepen, worden de volgende handelingen uitgevoerd:
 1. Hiermee verkrijgt u het onbeveiligde PDF-document dat aan het proces wordt doorgegeven. Deze handeling is gebaseerd op de `SetValue` bewerking. De invoerparameter voor dit proces is een `document` procesvariabele met de naam `inDoc`.
 1. Hiermee versleutelt u het PDF-document met een wachtwoord. Deze handeling is gebaseerd op de `PasswordEncryptPDF` bewerking. Het met wachtwoord gecodeerde PDF-document wordt geretourneerd in een procesvariabele met de naam `outDoc`.
 
-Dit proces is niet gebaseerd op een bestaand AEM Forms-proces. Om samen met de codevoorbeelden te volgen, creeer een proces genoemd `MyApplication/EncryptDocument`**using Workbench. (Zie [Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63)gebruiken.)
+Dit proces is niet gebaseerd op een bestaand AEM Forms-proces. Om samen met de codevoorbeelden te volgen, creeer een proces genoemd `MyApplication/EncryptDocument` gebruikend Workbench. (Zie [Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63)gebruiken.)
 
 >[!NOTE]
 >
 >Het aanroepen van AEM Forms service-bewerkingen met DIME is afgekeurd. Het wordt aanbevolen MTOM te gebruiken. (Zie AEM-formulieren [aanroepen met MTOM](#invoking-aem-forms-using-mtom).)
 
-### Creërend een .NET project dat DIME gebruikt {#creating-a-net-project-that-uses-dime}
+### Het creëren van een .NET project dat DIME gebruikt {#creating-a-net-project-that-uses-dime}
 
 Om een .NET project tot stand te brengen dat de dienst van Vormen kan aanhalen gebruikend DIME, voer de volgende taken uit:
 

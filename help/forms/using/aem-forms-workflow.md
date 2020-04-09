@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
 
 ---
 
@@ -57,7 +57,7 @@ AEM biedt een intuïtieve gebruikersinterface voor het maken van een workflowmod
 
 ### Een model maken voor een goedkeurings- en revisiewerkstroom {#create-a-model-for-an-approval-and-review-workflow}
 
-Goedkeuring- en revisiewerkstroom is bedoeld voor de taken waarvoor menselijke tussenkomst vereist is om beslissingen te nemen. In het volgende voorbeeld wordt een workflowmodel gemaakt voor een hypotheekleningaanvraag die moet worden ingevuld door een bankagent voor het hoofdkantoor. Nadat de aanvraag is ingevuld, wordt deze ter goedkeuring verzonden. Later wordt de goedgekeurde toepassing met Adobe-handtekening verzonden naar de aanvrager voor elektronische handtekeningen.
+Goedkeuring- en revisiewerkstroom is bedoeld voor de taken waarvoor menselijke tussenkomst vereist is om beslissingen te nemen. In het volgende voorbeeld wordt een workflowmodel gemaakt voor een hypotheekleningaanvraag die moet worden ingevuld door een bankagent van het hoofdkantoor. Nadat de aanvraag is ingevuld, wordt deze ter goedkeuring verzonden. Later wordt de goedgekeurde toepassing met Adobe-handtekening verzonden naar de aanvrager voor elektronische handtekeningen.
 
 Het voorbeeld is beschikbaar als een hieronder bijgevoegd pakket. Importeer en installeer het voorbeeld met pakketbeheer. U kunt ook de volgende stappen uitvoeren om handmatig het workflowmodel voor de toepassing te maken:
 
@@ -107,7 +107,7 @@ In het voorbeeld wordt een workflowmodel gemaakt voor een hypotheektoepassing di
 
    ![OR Splitsen, voorbeeld](assets/orsplit_branch1_active_new.png)
 
-   **Het verpletteren van uitdrukking voor Tak 1**
+   **Verpletterende uitdrukking voor Tak 2**
 
    Wanneer een gebruiker op **Afwijzen** tikt in AEM Inbox, wordt vertakking 2 geactiveerd.
 
@@ -271,4 +271,4 @@ U kunt de stappen Taak toewijzen en E-mail verzenden van AEM Workflows gebruiken
 
 ### Workflowinstanties wissen {#purge-workflow-instances}
 
-Door het minimaliseren van het aantal workflowexemplaren worden de prestaties van de workflow-engine verbeterd, zodat u regelmatig voltooide of actieve workflowexemplaren uit de repository kunt verwijderen. Zie voor gedetailleerde informatie [Regular Purging of Workflow Instances](/help/sites-administering/workflows-administering.md#Regular purging of workflow instances).
+Door het minimaliseren van het aantal workflowexemplaren worden de prestaties van de workflow-engine verbeterd, zodat u regelmatig voltooide of actieve workflowexemplaren uit de repository kunt verwijderen. Voor gedetailleerde informatie zie, [Regular Purging of Workflow Instances](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances).

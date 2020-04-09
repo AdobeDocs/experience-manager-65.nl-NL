@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a6f95e04fd5b8ed28beaa12e9fd170ed495397b8
+source-git-commit: e46f0d6b842ff1a295d411c770f36dd82001bcb2
 
 ---
 
@@ -31,7 +31,7 @@ Een belangrijke factor hierbij is dat u, om potentiële problemen te herkennen, 
 | [Logbestanden](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files) worden gecontroleerd. |  |  |
 | Systeembewaking wordt (voortdurend) op de achtergrond uitgevoerd. | Inclusief CPU-, geheugen-, schijf- en netwerkgebruik. Gebruik bijvoorbeeld iostat / vmstat / perfmon. | De geregistreerde gegevens worden visualiseerd en kunnen voor het volgen van prestatiesproblemen worden gebruikt. Onbewerkte gegevens zijn ook toegankelijk. |
 | [AEM-prestaties worden gecontroleerd](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance). | Met inbegrip van de Tellers [van het](/help/sites-deploying/monitoring-and-maintaining.md#request-counters) Verzoek om verkeersniveaus te controleren. | Indien een aanzienlijk of langdurig prestatieverlies wordt vastgesteld, moet een grondig onderzoek worden ingesteld. |
-| U controleert uw [Replicators](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-your-replication-agents). &quot; |  |  |
+| U controleert uw [replicatieagenten](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-your-replication-agents). &quot; |  |  |
 | Workflowinstanties regelmatig leegmaken. | Grootte opslagplaats en workflowprestaties. | Zie [Regular Purging of Workflow Instances](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances). |
 
 ## Back-ups {#backups}
@@ -366,19 +366,18 @@ In bepaalde omstandigheden wilt u mogelijk een aangepast logbestand met een ande
    * U kunt een tijd-/datumschema opgeven als een `java.util.SimpleDateFormat` patroon. Hiermee wordt de periode gedefinieerd waarna het bestand wordt geroteerd. ook het achtervoegsel dat aan het geroteerde dossier (voor identificatie) wordt toegevoegd.
    De standaardwaarde is &#39;.&#39;jjjj-MM-dd (voor dagelijkse logrotatie).
    Bijvoorbeeld, om middernacht van 20 Januari 2010 (of wanneer het eerste logboekbericht na dit voorkomt om precies te zijn), zal ../logs/error.log worden anders genoemd aan ../logs/error.log.2010-01-20. Logboekregistratie voor 21 januari wordt uitgevoerd naar (een nieuw en leeg) ../logs/error.log totdat de logbestanden bij de volgende wijziging van de dag worden doorgehaald.
-       | `&#39;.&#39;yyyy-MM&quot;|Roteren aan het begin van elke maand|
-    |—|—|
-    | `&#39;.&#39;yyyy-ww&quot;|Rotatie op de eerste dag van elke week (afhankelijk van de landinstelling). |
-       | `&#39;.&#39;yyyy-MM-dd&quot;|Dagelijks om middernacht. |
-       | `&#39;.&#39;yyyy-MM-dd-a&quot;|Roteren om middernacht en om middag van elke dag. |
-       | `&#39;.&#39;yyyy-MM-dd-HH&quot;|Roteren boven aan elk uur. |
-       | `&#39;.&#39;yyyy-MM-dd-HH-mm&quot;|Roteren aan het begin van elke minuut. |
- Opmerking     
-     : Wanneer u een tijd/datum opgeeft:
-       1. U moet letterlijke tekst met enkele aanhalingstekens (&#39; &#39;) &quot;escape&quot;-tekens gebruiken;
-   Dit     is om te voorkomen dat bepaalde tekens worden geïnterpreteerd als patroonletters.
-       1. Gebruik alleen tekens die zijn toegestaan voor een geldige bestandsnaam op een willekeurige plaats in de optie.
-   
+   | `'.'yyyy-MM` | Rotatie aan het begin van elke maand |
+   |---|---|
+   | `'.'yyyy-ww` | Rotatie op de eerste dag van elke week (afhankelijk van de landinstelling). |
+   | `'.'yyyy-MM-dd` | Rotatie elke dag om middernacht. |
+   | `'.'yyyy-MM-dd-a` | Roteren om middernacht en middag van elke dag. |
+   | `'.'yyyy-MM-dd-HH` | Rotatie boven aan elk uur. |
+   | `'.'yyyy-MM-dd-HH-mm` | Rotatie aan het begin van elke minuut. |
+   Opmerking: Wanneer u een tijd/datum opgeeft:
+   1. U moet letterlijke tekst met enkele aanhalingstekens (&#39; &#39;) &quot;escape&quot;-tekens gebruiken;
+dit om te voorkomen dat bepaalde tekens worden geïnterpreteerd als patroonletters.
+   1. Gebruik alleen tekens die zijn toegestaan voor een geldige bestandsnaam op een willekeurige plaats in de optie.
+
 
 1. Lees het nieuwe logbestand met het gekozen gereedschap.
 

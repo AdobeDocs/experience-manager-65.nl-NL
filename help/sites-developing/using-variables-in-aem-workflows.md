@@ -10,7 +10,7 @@ content-type: reference
 discoiquuid: bbb9936e-ecd2-44b3-b4ae-dd62a3160641
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bc042696506bf1691c2eeffc6ab941be85fa274c
+source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
 
 ---
 
@@ -76,12 +76,12 @@ Wijzigingen in waarden van variabelen zijn alleen van invloed op de instantie va
 
 Afhankelijk van het gegevenstype van de variabele kunt u de volgende opties gebruiken om de waarde van een variabele in te stellen:
 
-* **** Letterlijk: Gebruik deze optie als u precies weet welke waarde u moet opgeven.
-* **** Uitdrukking: Gebruik de optie wanneer de te gebruiken waarde wordt berekend op basis van een expressie. De expressie wordt gemaakt in de beschikbare expressie-editor.
-* **** JSON-puntnotatie: Gebruik de optie om een waarde van een JSON of FDM typevariabele terug te winnen.
-* **** XPATH: Gebruik de optie om een waarde van een variabele van het type van XML terug te winnen.
-* **** Ten opzichte van lading: Gebruik de optie wanneer de waarde die u wilt opslaan in een variabele, beschikbaar is op een pad dat relatief is ten opzichte van de laadbewerking.
-* **** Absoluut pad: Gebruik de optie wanneer de waarde die u wilt opslaan in de variabele beschikbaar is in een absoluut pad.
+* **Letterlijk:** Gebruik deze optie als u precies weet welke waarde u moet opgeven.
+* **Uitdrukking:** Gebruik de optie wanneer de te gebruiken waarde wordt berekend op basis van een expressie. De expressie wordt gemaakt in de beschikbare expressie-editor.
+* **JSON-puntnotatie:** Gebruik de optie om een waarde van een JSON of FDM typevariabele terug te winnen.
+* **XPATH:** Gebruik de optie om een waarde van een variabele van het type van XML terug te winnen.
+* **Ten opzichte van lading:** Gebruik de optie wanneer de waarde die u wilt opslaan in een variabele, beschikbaar is op een pad dat relatief is ten opzichte van de laadbewerking.
+* **Absoluut pad:** Gebruik de optie wanneer de waarde die u wilt opslaan in de variabele beschikbaar is in een absoluut pad.
 
 U kunt ook specifieke elementen van een variabele van het type JSON of XML bijwerken met JSON-puntnotatie of XPATH-notatie.
 
@@ -93,7 +93,7 @@ Voer de volgende stappen uit om toewijzingen tussen variabelen toe te voegen:
 1. Sleep de stap Variabele **** instellen naar de werkstroomeditor en zet deze neer. Tik vervolgens op de stap en selecteer ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Configureren).
 1. Selecteer **[!UICONTROL Toewijzing]** > Toewijzing **[!UICONTROL toevoegen in het dialoogvenster Variabele instellen]**.
 1. Selecteer in de sectie **Variabele** toewijzen de variabele voor het opslaan van gegevens, selecteer de toewijzingsmodus en geef een waarde op die u in de variabele wilt opslaan. De toewijzingsmodi variëren op basis van het type variabele.
-1. Wijs meer variabelen toe om een betekenisvolle expressie te maken. Tik ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) om de wijzigingen op te slaan.
+1. Wijs meer variabelen toe om een betekenisvolle expressie te maken. Tap ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) to save the changes.
 
 ### Voorbeeld 1: Vraag een variabele van XML om waarde voor een koordvariabele te plaatsen {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
 
@@ -127,7 +127,7 @@ Met de expressie-editor kunt u:
 De editor is gebaseerd op de regel voor aangepaste formulieren. De volgende wijzigingen zijn aangebracht. Regeleditor in variabelen:
 
 * Biedt geen ondersteuning voor functies.
-* Verstrekt geen UI om samenvatting van regels te bekijken
+* Biedt geen interface voor het weergeven van een overzicht van regels
 * Heeft geen code-editor.
 * Hiermee wordt het in- en uitschakelen van de waarde van een object niet ondersteund.
 * Hiermee wordt het instellen van de eigenschap van een object niet ondersteund.
@@ -226,7 +226,7 @@ U kunt een API gebruiken om variabelen in te stellen en door te geven om workflo
 
 [workflowSession.startWorkflow](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/WorkflowSession.html#startWorkflow-com.adobe.granite.workflow.model.WorkflowModel-com.adobe.granite.workflow.exec.WorkflowData-java.util.Map-) gebruikt als argumenten model, wfData en metaData. Gebruik MetaDataMap om de waarde voor de variabele in te stellen.
 
-In deze API wordt de variabele **variableName** ingesteld op **value **using metaData.put(variableName, value);
+In deze API wordt de variabele **variableName** ingesteld op **value** met metaData.put(variableName, value);
 
 ```java
 import com.adobe.granite.workflow.model.WorkflowModel;

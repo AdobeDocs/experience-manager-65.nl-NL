@@ -1,29 +1,72 @@
 ---
-title: Workflows toepassen op elementen
-description: Leer hoe u workflows toepast op elementen, mappen en verzamelingen in AEM Assets.
+title: De activa van het proces om bedrijfsprocessen te verwezenlijken, controles te doen, naleving te bereiken, en basishygiëne te handhaven
+description: Middelenverwerking voor het converteren van indelingen, het maken van uitvoeringen, het beheren van elementen, het valideren van elementen en het uitvoeren van workflows.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: bf291206a8c0e435053fbdba493ad949619ee5b3
 
 ---
 
 
-# Workflows toepassen om elementen te verwerken {#applying-workflows-to-assets}
+# Digitale middelen verwerken {#process-assets}
 
-Workflows toepassen op digitale elementen is hetzelfde als voor websitepagina&#39;s. Zie workflows [starten voor een complete handleiding over het maken en gebruiken van workflows in AEM](/help/sites-authoring/workflows-participating.md).
+[!DNL Adobe Experience Manager Assets] kunt u op verschillende manieren werken aan uw digitale elementen, zodat u robuuste elementen kunt verwerken. U kunt de beschikbare verwerkingsmethodes gebruiken of de methodes uitbreiden om bedrijfsprocesvoltooiing van begin tot eind te verzekeren gebruikend, controles en naleving van, ontdekking en distributie van, en basishygiëne van uw digitale activa. U kunt dit alles doen terwijl u de vereiste schaal en aanpassing bereikt.
+
+## Workflows begrijpen {#understand-workflows}
+
+Voor middelenverwerking [!DNL Experience Manager] worden workflows gebruikt. Workflows helpen de bedrijfslogica of -activiteiten te automatiseren. De korrelige stappen om specifieke taken te verwezenlijken worden verstrekt door gebrek en de ontwikkelaars kunnen hun eigen douanestappen tot stand brengen. Deze stappen kunnen in een logische volgorde worden gecombineerd om workflows te maken. Een workflow kan bijvoorbeeld automatisch watermerken toepassen op geüploade afbeeldingen op basis van specifieke criteria, zoals metagegevens die zijn ingesloten in de afbeelding, de map waarnaar de afbeelding is geüpload, de resolutie van de afbeelding, enzovoort. Een ander voorbeeld is een workflow die op een dergelijke manier aan watermerkafbeeldingen wordt geconfigureerd en waarbij tegelijkertijd aan meerdere behoeften voor middelenbeheer wordt voldaan, zoals het toevoegen van metagegevens, het maken van uitvoeringen, het toevoegen van intelligente tags voor het detecteren van elementen, het publiceren naar een datastore, het instellen van machtigingen voor gebruikerstoegang, enzovoort.
+
+## Standaardworkflows beschikbaar in Experience Manager {#default-workflows}
+
+Standaard worden alle geüploade elementen verwerkt met de workflow [!UICONTROL DAM Update Asset] . De workflow wordt uitgevoerd voor elk geüpload element en voert basistaken voor middelenbeheer uit, zoals het genereren van uitvoeringen, het terugsturen van metagegevens, het uitnemen van pagina&#39;s, het uitnemen van media en het transcoderen.
+
+Zie [!UICONTROL Opties > Workflow > Modellen] in voor informatie over de verschillende workflowmodellen die standaard beschikbaar zijn [!DNL Experience Manager].
+
+![Een deel van de standaardworkflow](assets/aem-default-workflows.png)
+
+*Afbeelding: Enkele standaardwerkschema beschikbaar in[!DNL Experience Manager]*
+
+## Workflows toepassen om elementen te verwerken {#applying-workflows-to-assets}
+
+Workflows toepassen op digitale elementen is hetzelfde als voor websitepagina&#39;s. Zie workflows [starten voor een complete handleiding over het maken en gebruiken van workflows](/help/sites-authoring/workflows-participating.md).
 
 Gebruik workflows in digitale elementen om het element te activeren of watermerken te maken. Veel van de workflows voor elementen worden automatisch ingeschakeld. De workflow die automatisch een uitvoering maakt nadat een afbeelding is bewerkt, wordt bijvoorbeeld automatisch ingeschakeld.
 
-Zie workflowmodellen [maken als er geen workflow beschikbaar is in de klassieke gebruikersinterface en deze niet beschikbaar is in Touch-UI, zoals Verzoek om activeren en Verzoek om deactivering](/help/sites-developing/workflows-models.md#classic2touchui).
+>[!NOTE]
+>
+>Zie workflowmodellen [!UICONTROL maken als er geen workflow beschikbaar is in de klassieke gebruikersinterface die Touch ondersteunt, zoals] Verzoek om activering [!UICONTROL en]Verzoek om deactivering [](/help/sites-developing/workflows-models.md#classic2touchui).
 
-## Een workflow toepassen op een AEM-element {#applying-a-workflow-to-an-aem-asset}
+## Een workflow toepassen op een element {#apply-a-workflow-to-an-asset}
 
-Zie Een workflow op een element [](/help/assets/managing-assets-touch-ui.md#starting-a-workflow-on-an-asset)starten voor meer informatie over het toepassen van een workflow op een AEM-element.
+Voer de volgende stappen uit om een workflow toe te passen op een element:
+
+1. Navigeer naar de locatie van het element waarvoor u een workflow wilt starten en klik op het element om de elementpagina te openen. Selecteer **[!UICONTROL Tijdlijn]** in het menu om de tijdlijn weer te geven.
+
+   ![timeline-1](assets/timeline.png)
+
+1. Klik op **[!UICONTROL Handelingen]** onderaan om de lijst met acties te openen die beschikbaar zijn voor het element.
+
+   ![chlimage_1-252](assets/chlimage_1-45.png)
+
+1. Klik in de lijst op Workflow **** starten.
+
+   ![chlimage_1-253](assets/chlimage_1-49.png)
+
+1. In the **[!UICONTROL Start Workflow]** dialog, select a workflow model from the list.
+
+   ![chlimage_1-254](assets/chlimage_1-50.png)
+
+1. (Optioneel) Geef een titel op voor de workflow die kan worden gebruikt om naar de instantie van de workflow te verwijzen.
+
+   ![chlimage_1-255](assets/chlimage_1-51.png)
+
+1. Klik op **[!UICONTROL Start]** en vervolgens op **[!UICONTROL Doorgaan]**. Elke stap van de workflow wordt als een gebeurtenis in de tijdlijn weergegeven.
+
+   ![chlimage_1-256](assets/chlimage_1-52.png)
 
 ## Een workflow toepassen op meerdere elementen {#applying-a-workflow-to-multiple-assets}
 
-1. Navigeer in de middelenconsole naar de locatie van de elementen waarvoor u een workflow wilt starten en selecteer de elementen.
-1. Klik/tik op het logo van Experience Manager en kies **[!UICONTROL Tijdlijn]** in het menu om de tijdlijn weer te geven.
+1. Navigeer in de middelenconsole naar de locatie van de elementen waarvoor u een workflow wilt starten en selecteer de elementen. Selecteer **[!UICONTROL Tijdlijn]** in het menu om de tijdlijn weer te geven.
 
    ![screen_shot_2019-03-06at123325pm](assets/chlimage_1-136.png)
 
@@ -31,13 +74,12 @@ Zie Een workflow op een element [](/help/assets/managing-assets-touch-ui.md#star
 
    ![chlimage_1-30](assets/chlimage_1-137.png)
 
-1. Tik op **[!UICONTROL Start Workflow]**.
-1. Selecteer in het dialoogvenster Workflow **** starten een workflowmodel in de lijst.
+1. Klik op Workflow **** starten. In the **[!UICONTROL Start Workflow]** dialog, select a workflow model from the list.
 
    ![chlimage_1-31](assets/chlimage_1-138.png)
 
 1. (Optioneel) Geef een titel voor de workflow op, die kan worden gebruikt om naar de instantie van de workflow te verwijzen.
-1. Tik op **[!UICONTROL Start]** en tik vervolgens op **[!UICONTROL Bevestigen]** in het dialoogvenster. De workflow wordt uitgevoerd op alle elementen die u hebt geselecteerd.
+1. Click **[!UICONTROL Start]** and then click **[!UICONTROL Confirm]** in the dialog. De workflow wordt uitgevoerd op alle assets die u hebt geselecteerd.
 
 ## Een workflow toepassen op meerdere mappen {#applying-a-workflow-to-multiple-folders}
 
@@ -46,3 +88,20 @@ De procedure voor het toepassen van een workflow op meerdere mappen is vergelijk
 ## Een workflow toepassen op een verzameling {#applying-a-workflow-to-a-collection}
 
 Zie een workflow [toepassen op een verzameling](/help/assets/managing-collections-touch-ui.md#running-a-workflow-on-a-collection).
+
+## Een workflow automatisch starten om elementen voorwaardelijk te verwerken {#auto-execute-workflow-on-some-assets}
+
+Beheerders kunnen de workflow zodanig configureren dat elementen automatisch worden uitgevoerd en verwerkt op basis van vooraf gedefinieerde voorwaarden. De functionaliteit is bijvoorbeeld handig voor een reeks zakelijke gebruikers en marketers om een aangepaste workflow voor specifieke mappen te maken. Alle elementen van de foto&#39;s van een agentschap kunnen van een watermerk zijn voorzien of alle elementen die door een freelancer zijn geüpload, kunnen worden verwerkt om specifieke uitvoeringen te maken.
+
+Voor een workflowmodel kunnen gebruikers een workflowstartprogramma maken dat de toepassing start. Beheerders kunnen toegang verlenen tot marketers om de workflows te maken en de starcher te configureren. Gebruikers kunnen de standaard [!UICONTROL DAM Update Asset] -workflow wijzigen en zo de extra stappen toevoegen die nodig zijn om specifieke elementen te verwerken. De workflow wordt uitgevoerd op alle nieuw geüploade elementen. Gebruik daarom een van de volgende methoden om de uitvoering van de extra stappen op specifieke elementen te beperken:
+
+* Maak een kopie van de workflow [!UICONTROL DAM Update Asset] en wijzig deze om uit te voeren in een specifieke maphiërarchie. Deze aanpak is handig voor een aantal mappen.
+* De extra verwerkingsstappen kunnen worden toegevoegd met behulp van een [OR-splitsing](/help/sites-developing/workflows-step-ref.md#or-split) , afhankelijk van wat er nodig is voor zoveel mappen.
+
+>[!MORELIKETHIS]
+>
+>* [Toepassen en deelnemen aan workflows](/help/sites-authoring/workflows.md)
+>* [Workflowmodellen maken en workflowfunctionaliteit uitbreiden](/help/sites-developing/workflows.md)
+>* [Best practices voor workflows](/help/sites-developing/workflows-best-practices.md)
+>* [Communautair artikel over het wijzigen van elementen met behulp van workflow](https://helpx.adobe.com/experience-manager/using/modify_asset_workflow.html)
+

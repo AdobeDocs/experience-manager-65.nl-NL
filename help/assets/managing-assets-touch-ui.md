@@ -4,7 +4,7 @@ description: Leer de taken voor middelenbeheer, zoals het uploaden, downloaden, 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
+source-git-commit: be619b71dd0bb1addc10f4dbdbd2f00bc86dd003
 
 ---
 
@@ -94,7 +94,7 @@ Voordat u een element uploadt, moet u ervoor zorgen dat dit een [indeling](/help
    >
    >Als Asset Insights is ingeschakeld voor het bijhouden van indrukken/klikken met Adobe Analytics, maakt de opnieuw gegenereerde asset-id de gegevensopname voor het element op Analytics ongeldig.
 
-   Als het element dat u uploadt aanwezig is in AEM Assets, wordt in het dialoogvenster **[!UICONTROL Duplicaten gedetecteerd]** gewaarschuwd dat u probeert een dubbel element te uploaden. Het dialoogvenster wordt alleen weergegeven als de waarde van de `SHA 1` controlesom van het binaire element van het bestaande element overeenkomt met de waarde van de controlesom van het element dat u uploadt. In dit geval zijn de namen van elementen niet van belang.
+   Als het element dat u uploadt aanwezig is in AEM Assets, wordt in het dialoogvenster **[!UICONTROL Duplicaten gedetecteerd]** gewaarschuwd dat u probeert een gedupliceerd element te uploaden. Het dialoogvenster wordt alleen weergegeven als de waarde van de `SHA 1` controlesom van het binaire element van het bestaande element overeenkomt met de waarde van de controlesom van het element dat u uploadt. In dit geval zijn de namen van elementen niet van belang.
 
    >[!NOTE]
    >
@@ -138,7 +138,7 @@ Met Dynamic Media kunt u via de FTP-server items in batches uploaden. Als u grot
 
 >[!NOTE]
 >
->Om activa via FTP in Dynamische Media - wijze Scene7 te uploaden, installeer Pak 18912 van de Eigenschap op de auteur AEM instanties. Neem contact op met de [klantenservice](https://helpx.adobe.com/contact/enterprise-support.ec.html) van Adobe voor toegang tot FP-18912 en voltooi de installatie van uw FTP-account. Voor meer informatie, zie [het Installeren eigenschappak 18912 voor bulkactiva migratie](/help/assets/bulk-ingest-migrate.md).
+>Om activa via FTP in Dynamische Media - wijze Scene7 te uploaden, installeer Pak 18912 van de Eigenschap op de auteur AEM instanties. Neem contact op met de [klantenservice](https://helpx.adobe.com/nl/contact/enterprise-support.ec.html) van Adobe voor toegang tot FP-18912 en voltooi de installatie van uw FTP-account. Voor meer informatie, zie [het Installeren eigenschappak 18912 voor bulkactiva migratie](/help/assets/bulk-ingest-migrate.md).
 >
 >Als u FTP gebruikt voor het uploaden van elementen, worden de uploadinstellingen die in AEM zijn opgegeven genegeerd. In plaats daarvan worden de regels voor bestandsverwerking gebruikt, zoals gedefinieerd in Dynamic Media Classic.
 
@@ -161,7 +161,7 @@ Met Dynamic Media kunt u via de FTP-server items in batches uploaden. Als u grot
 1. Tik in de rechterbenedenhoek van de uploadpagina op **[!UICONTROL Uploaden]** verzenden.
 
    Tik op **[!UICONTROL Taken]**op de algemene navigatiebalk om de voortgang van het uploaden weer te geven. Op de pagina Taken wordt de voortgang van het uploaden weergegeven. U kunt in AEM blijven werken en aan de pagina van Banen in Dynamische Klassiek van Media op elk ogenblik terugkeren om een lopende baan te herzien.
-Tik naast de duur op **[!UICONTROL Annuleren]** om een actieve uploadtaak te annuleren.
+Als u een uploadtaak die wordt uitgevoerd wilt annuleren, tikt u op **[!UICONTROL Annuleren]** naast de duur.
 
 #### Opties voor uploaden {#upload-job-options}
 
@@ -850,7 +850,7 @@ Tik op het pictogram **[!UICONTROL Afdrukken]** en volg de instructies in de wiz
 
    Ga terug naar het gerenderde PDF-bestand en vernieuw het. De vernieuwde PDF weerspiegelt de wijzigingen die u hebt aangebracht.
 
-Als een element annotaties in vreemde talen bevat (met name niet-Latijnse talen), moet u eerst de service CQ-DAM-Handler-Gibson Font Manager op de AEM-server configureren om deze annotaties af te drukken. Geef bij het configureren van de service CQ-DAM-Handler-Gibson Font Manager het pad op waar de lettertypen voor de gewenste talen zich bevinden.
+Als een element annotaties in vreemde talen bevat (vooral niet-Latijnse talen), moet u eerst de service CQ-DAM-Handler-Gibson Font Manager op de AEM-server configureren om deze annotaties af te drukken. Geef bij het configureren van de service CQ-DAM-Handler-Gibson Font Manager het pad op waar de lettertypen voor de gewenste talen zich bevinden.
 
 1. Open de configuratiepagina CQ-DAM-Handler-Gibson Font Manager Service via de URL `https://[aem_server]:[port]/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl`.
 1. Voer een van de volgende handelingen uit om CQ-DAM-Handler-Gibson Font Manager Service te configureren:
@@ -942,30 +942,7 @@ Met de versiefunctionaliteit kunt u het volgende doen:
 
 ### Een workflow op een element starten {#starting-a-workflow-on-an-asset}
 
-1. Navigeer naar de locatie van het element waarvoor u een workflow wilt starten en tik op het element of klik erop om de elementpagina te openen.
-1. Tik op het pictogram GlobalNav en selecteer vervolgens **[!UICONTROL Tijdlijn]** in het menu om de tijdlijn weer te geven.
-
-   ![timeline-1](assets/timeline.png)
-
-1. Tik op het pictogram **[!UICONTROL Handelingen]** (pijl) onderaan om de lijst met beschikbare handelingen voor het element te openen.
-
-   ![chlimage_1-252](assets/chlimage_1-45.png)
-
-1. Tik op Workflow **** starten in de lijst.
-
-   ![chlimage_1-253](assets/chlimage_1-49.png)
-
-1. In the **[!UICONTROL Start Workflow]** dialog, select a workflow model from the list.
-
-   ![chlimage_1-254](assets/chlimage_1-50.png)
-
-1. (Optioneel) Geef een titel voor de workflow op, die kan worden gebruikt om naar de instantie van de workflow te verwijzen.
-
-   ![chlimage_1-255](assets/chlimage_1-51.png)
-
-1. Tik op **[!UICONTROL Start]** en tik vervolgens op **[!UICONTROL Doorgaan]** in het dialoogvenster om te bevestigen. Elke stap van de workflow wordt als een gebeurtenis in de tijdlijn weergegeven.
-
-   ![chlimage_1-256](assets/chlimage_1-52.png)
+Zie Workflow [starten voor een element](/help/assets/assets-workflow.md#apply-a-workflow-to-an-asset)als u een workflow wilt toepassen om een element te verwerken.
 
 ## Verzamelingen {#collections}
 

@@ -10,7 +10,7 @@ topic-tags: process-reporting
 discoiquuid: a6ff50df-273d-48f7-b0c6-0e69e900b97f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -76,5 +76,3 @@ De dienst gebruikt dan diensten OSGi om de relevante het melden gegevens te verk
 U kunt uw eigen douanerapporten tot stand brengen en deze rapporten tonen in het lusje van de Rapporten van de Douane van het Proces Meldend gebruikersinterface.
 
 Voor de stappen om een douanerapport tot stand te brengen, zie om een douanerapport in het artikel [van de Douane tot stand te brengen Rapporten in het Rapporteren](/help/forms/using/process-reporting/process-reporting-custom-reports.md)van het Proces.
-
-[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)

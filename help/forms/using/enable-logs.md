@@ -11,7 +11,7 @@ topic-tags: hTML5_forms
 discoiquuid: 973806f8-fb44-4d52-ad3f-bfbf335f60a1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -206,5 +206,3 @@ De locatie en naam van het logbestand wijzigen:
    >Als u logbestanden wilt maken in dezelfde map waarin andere logbestanden worden opgeslagen, geeft u ../logs/&lt;bestandsnaam> op in de eigenschap Logbestanden.
 
 1. Wijzig de **Logger** in **HTMLFormsPerfLogger** en klik op **Opslaan**.
-
-[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)

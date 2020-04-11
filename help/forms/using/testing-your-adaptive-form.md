@@ -8,7 +8,7 @@ contentOwner: khsingh
 discoiquuid: ecddb22e-c148-441f-9088-2e5b35c7021b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 709d8fe467f5449eb1e844a49126535a4a4a6e7a
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -51,7 +51,7 @@ De testreeksen hebben een inzameling van testgevallen. U kunt meerdere testreeks
    <td>
     <ul>
      <li>granite.testing.hobbes.tests<br /> </li>
-     <li>graniet.testing.calvin.tests</li>
+     <li>granite.testing.calvin.tests</li>
     </ul> </td>
   </tr>
   <tr>
@@ -106,7 +106,7 @@ Zorg ervoor dat elke eigenschap wordt toegevoegd aan een afzonderlijk vak, zoals
 
 Een testcase is een reeks handelingen om een specifieke functionaliteit te testen. U kunt bijvoorbeeld alle velden van een formulier vooraf invullen en enkele velden valideren om ervoor te zorgen dat de juiste waarden worden ingevoerd.
 
-Een handeling is een specifieke activiteit op een adaptief formulier, zoals het klikken op een knop. U kunt als volgt een testcase en -acties maken om de gebruikersinvoer voor elk adaptief formulierveld te valideren:
+Een handeling is een specifieke activiteit op een adaptief formulier, zoals het klikken op een knop. U kunt als volgt een testcase en acties maken om de gebruikersinvoer voor elk adaptief formulierveld te valideren:
 
 1. Navigeer in de lijst CRXDE naar de `/content/forms/af/create-first-adaptive-form` map. Klik met de rechtermuisknop op het knooppunt voor de map **[!UICONTROL create-first-adaptive-form]** en klik op **[!UICONTROL Maken]**> **[!UICONTROL Bestand]** maken. Typ in het veld Naam `prefill.xml` en klik op **[!UICONTROL OK]**. Voeg de volgende code toe aan het bestand:
 
@@ -127,7 +127,7 @@ Een handeling is een specifieke activiteit op een adaptief formulier, zoals het 
    </afData>
    ```
 
-1. Navigeer naar `/etc/clientlibs`. Klik met de rechtermuisknop op de `/etc/clientlibs` submap en klik op **[!UICONTROL Maken]**> **[!UICONTROL Knooppunt]** maken.
+1. Ga naar `/etc/clientlibs`. Klik met de rechtermuisknop op de `/etc/clientlibs` submap en klik op **[!UICONTROL Maken]**> **[!UICONTROL Knooppunt]** maken.
 
    Typ het **[!UICONTROL veldtype Naam]** `WeRetailFormTests`. Selecteer de tekst als `cq:ClientLibraryFolder` en klik op **[!UICONTROL OK]**.
 
@@ -157,7 +157,7 @@ Een handeling is een specifieke activiteit op een adaptief formulier, zoals het 
    <td>Ingeschakeld</td>
    <td>
     <ul>
-     <li>graniet.testing.calvin.tests</li>
+     <li>granite.testing.calvin.tests</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -210,8 +210,8 @@ Een handeling is een specifieke activiteit op een adaptief formulier, zoals het 
 
 Een testsuite kan meerdere testgevallen bevatten. U kunt alle testgevallen in een testsuite tegelijk of afzonderlijk uitvoeren. Wanneer u een test uitvoert, geven de pictogrammen de resultaten aan:
 
-* Een vinkje geeft aan dat een test is geslaagd: ![](https://helpx.adobe.com/content/dam/help/icons/Checkmark.png)
-* Een X-pictogram geeft aan dat een test is mislukt: ![](https://helpx.adobe.com/content/dam/help/icons/Cross.png)
+* Een vinkje geeft aan dat een test is geslaagd: ![](assets/save_icon.svg)
+* Een X-pictogram geeft aan dat een test is mislukt: ![](assets/close-icon.svg)
 
 1. Ga naar het pictogram AEM > **[!UICONTROL Gereedschappen]**> **[!UICONTROL Bewerkingen]**> **[!UICONTROL Testen]**
 1. Alle tests van de testsuite uitvoeren:

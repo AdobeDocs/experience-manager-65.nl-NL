@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: process-reporting
 discoiquuid: a1af9920-5d2a-462f-bdee-ccec4c047c5b
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -73,5 +73,3 @@ De dienst gebruikt dan diensten OSGi om de relevante het melden gegevens te verk
 U kunt uw eigen douanerapporten tot stand brengen en deze rapporten tonen in het lusje van de Rapporten van de Douane van het Proces Meldend gebruikersinterface.
 
 Voor de stappen om een douanerapport tot stand te brengen, zie om een douanerapport in het artikel [van de Douane tot stand te brengen Rapporten in het Rapporteren](/help/forms/using/process-reporting/process-reporting-custom-reports.md)van het Proces.
-
-[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)

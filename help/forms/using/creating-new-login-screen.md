@@ -10,7 +10,7 @@ topic-tags: forms-workspace
 discoiquuid: 35497785-263d-44b1-9ee4-85921997295b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -268,7 +268,7 @@ U kunt het aanmeldingsscherm wijzigen van alle modules van AEM Forms die het aan
 1. Voeg nieuwe afbeeldingen toe in `/apps/livecycle/core/content/login`. Afbeelding toevoegen:
 
    1. WebDAV-client installeren.
-   1. Navigeer naar de `/apps/livecycle/core/content/login` map met de webDAV-client.  Zie voor meer informatie: [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html).
+   1. Navigeer naar de `/apps/livecycle/core/content/login` map met de webDAV-client. Zie voor meer informatie: [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html).
 
    1. Voeg nieuwe afbeeldingen toe.
 
@@ -296,5 +296,3 @@ U kunt het aanmeldingsscherm wijzigen van alle modules van AEM Forms die het aan
    
    <div class="newLginContainerBkg">
    ```
-
-[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)

@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: a8d986ab-2a4c-488b-957e-4606f7391bd3
 translation-type: tm+mt
-source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -248,5 +248,3 @@ Wanneer de validatie van een veld resulteert in een waarschuwing, wordt een inli
 `Styling Fields with Validation Errors`
 
 Wanneer de validatie voor een veld mislukt, verandert de stijl van de widget. Deze stijlwijziging wordt uitgevoerd door een CSS- **klassewidgetError** toe te passen op de widgetcomponent. Als u de standaardopmaak wilt wijzigen, overschrijft u de **klasse widgetError** .
-
-[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)

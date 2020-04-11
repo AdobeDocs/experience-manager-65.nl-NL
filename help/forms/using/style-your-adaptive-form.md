@@ -1,6 +1,6 @@
 ---
-title: ' Stijl uw adaptieve formulier '
-seo-title: ' Stijl uw adaptieve formulier '
+title: 'Stijl uw adaptieve formulier '
+seo-title: 'Stijl uw adaptieve formulier '
 description: 'Leer hoe u een aangepast thema maakt, afzonderlijke componenten opmaakt en weblettertypen in een thema gebruikt '
 seo-description: 'Leer hoe u een aangepast thema maakt, afzonderlijke componenten opmaakt en weblettertypen in een thema gebruikt '
 page-status-flag: de-activated
@@ -8,12 +8,12 @@ uuid: ffb2cc22-baaf-4525-a2e3-29f39271c670
 topic-tags: introduction
 discoiquuid: 655303a4-99bb-4ba3-9d50-a178f5edcf85
 translation-type: tm+mt
-source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
 
-#  Stijl uw adaptieve formulier {#do-not-publish-style-your-adaptive-form}
+# Stijl uw adaptieve formulier {#do-not-publish-style-your-adaptive-form}
 
 Leer hoe u een aangepast thema maakt, afzonderlijke componenten opmaakt en weblettertypen in een thema gebruikt
 
@@ -30,7 +30,7 @@ Aan het einde van de zelfstudie leert u:
 * Een thema uit het vak toepassen op een adaptief formulier
 * Een thema maken voor een adaptief formulier met de themaeditor
 * Afzonderlijke componenten opmaken
-* Bonussectie:Weblettertypen gebruiken in een aangepast thema
+* Bonussectie: Weblettertypen gebruiken in een aangepast thema
 
 Het formulier ziet er ongeveer als volgt uit nadat u de zelfstudie hebt voltooid:
 
@@ -57,11 +57,11 @@ De adaptieve vormenredacteur verstrekt veelvoudige uit-van-de-doos thema&#39;s. 
 
 ![Aangepast formulier met het standaardthema](assets/default-adaptive-form.png)
 
-**** Afbeelding: Formulier *adaptief met het standaardthema*
+**Afbeelding:** Formulier *adaptief met het standaardthema*
 
 ![Aangepast formulier met het thema Beoordeling](assets/adaptive-form-with-survey-theme.png)
 
-**** Afbeelding: Aangepast formulier met het thema Beoordeling **
+**Afbeelding:** Aangepast formulier met het thema Beoordeling **
 
 ## Stap 2: Het aangepaste formulier bijwerken {#step-update-your-adaptive-form}
 
@@ -99,8 +99,8 @@ In deze zelfstudie maakt u een stijl van de kop- en voettekst, tekst en numeriek
 1. Meld u aan bij de AEM-auteur en ga naar **Adobe Experience Manager** > **Formulieren** > **Thema**. De standaard-URL is [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes).
 1. Tik op **[!UICONTROL Maken]** en selecteer **[!UICONTROL Thema]**. De pagina Thema maken met de velden die nodig zijn om een thema te maken, wordt weergegeven. De velden Titel en Naam zijn verplicht:
 
-   * **** Titel: Geef een titel van het thema op. Bijvoorbeeld **Globaal thema.** Met de titel kunt u het thema herkennen aan de lijst met thema&#39;s.
-   * **** Naam: Geef de naam van het thema op. Bijvoorbeeld **Global-Theme.** Er wordt een knooppunt met de opgegeven naam gemaakt in de repository. Wanneer u een titel begint te typen, wordt automatisch een waarde voor het naamveld gegenereerd. U kunt de voorgestelde waarde wijzigen. Het naamveld mag alleen alfanumerieke tekens, afbreekstreepjes en onderstrepingstekens bevatten. Alle ongeldige invoer wordt vervangen door een afbreekstreepje.
+   * **Titel:** Geef een titel van het thema op. Bijvoorbeeld **Globaal thema.** Met de titel kunt u het thema herkennen aan de lijst met thema&#39;s.
+   * **Naam:** Geef de naam van het thema op. Bijvoorbeeld **Global-Theme.** Er wordt een knooppunt met de opgegeven naam gemaakt in de repository. Wanneer u een titel begint te typen, wordt automatisch een waarde voor het naamveld gegenereerd. U kunt de voorgestelde waarde wijzigen. Het naamveld mag alleen alfanumerieke tekens, afbreekstreepjes en onderstrepingstekens bevatten. Alle ongeldige invoer wordt vervangen door een afbreekstreepje.
 
 1. Tik op **Maken**. Er wordt een thema gemaakt en er verschijnt een dialoogvenster waarin u het formulier kunt openen om het te bewerken. Tik op **Openen** om het nieuwe thema op een nieuw tabblad te openen. Het thema wordt geopend in de themaeditor. Voor de opmaak gebruikt de themaeditor een adaptief formulier dat niet meer in de verpakking is en wordt geleverd met AEM Forms.
 
@@ -110,17 +110,17 @@ In deze zelfstudie maakt u een stijl van de kop- en voettekst, tekst en numeriek
 
    ![aangepast thema](assets/custom-theme.png)
 
-   **** Afbeelding: Thema-editor met het adaptieve formulier voor het verzendadres-add-update-form **
+   **Afbeelding:** Thema-editor met het adaptieve formulier voor het verzendadres-add-update-form **
 
    ![thema maken](assets/create-a-theme.png)
 
-   **** Afbeelding: Het *adaptieve formulier met het standaardformulier*
+   **Afbeelding:** Het *adaptieve formulier met het standaardformulier*
 
 ### Stijlkop- en voettekst {#style-header-and-footer}
 
 Koptekst en voettekst geven een consistent en duidelijk beeld van een adaptief formulier. Over het algemeen bevat de koptekst het logo en de naam van de organisatie, bevat de voettekst copyrightinformatie en deze blijven in meerdere vormen van een organisatie identiek. De kop- en voettekst van het adaptieve formulier voor het verzendadres-add-update-formulier opmaken:
 
-1. Navigeer in het deelvenster Kiezers naar de optie **Koptekst** > **Tekst** . Het deelvenster Kiezers bevindt zich links van de themaeditor. Tik op Zijpaneel in-/ ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/6-2/toggle-side-panel.png) uitschakelen als het deelvenster niet zichtbaar is.
+1. Navigeer in het deelvenster Kiezers naar de optie **Koptekst** > **Tekst** . Het deelvenster Kiezers bevindt zich links van de themaeditor. Tik op Zijpaneel in-/ ![](assets/toggle-side-panel.png) uitschakelen als het deelvenster niet zichtbaar is.
 
 1. Stel de volgende eigenschappen in in de **tekstaccordeon** en tik op ![aaem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
@@ -156,7 +156,7 @@ Koptekst en voettekst geven een consistent en duidelijk beeld van een adaptief f
      <li>Boven: 1.5 rem</li> 
      <li>Onder: -35 px</li> 
      <li>Links: 1rem<strong><br /></strong></li> 
-    </ul> <p><strong></strong> Tip: Tik op het <img src="assets/link.png"> koppelingspictogram om voor elk veld een andere waarde in te stellen.<br /> </p> </td> 
+    </ul> <p><strong>Tip:</strong> Tik op het <img src="assets/link.png"> koppelingspictogram om voor elk veld een andere waarde in te stellen.<br /> </p> </td> 
   </tr> 
   <tr> 
    <td>Hoogte</td> 
@@ -432,7 +432,7 @@ Sommige stijlen zijn alleen van toepassing op een bepaalde component. Dergelijke
 
 ![styled-adaptive-form-1](assets/styled-adaptive-form-1.png)
 
-## Stap 5:Bonussectie: Weblettertypen gebruiken in een aangepast thema {#step-bonus-section-using-web-fonts-in-a-custom-theme}
+## Stap 5: Bonussectie: Weblettertypen gebruiken in een aangepast thema {#step-bonus-section-using-web-fonts-in-a-custom-theme}
 
 U kunt verschillende lettertypen gebruiken om een adaptief formulier te ontwerpen. Op alle apparaten waarop het adaptieve formulier wordt weergegeven, worden mogelijk niet de fonts gebruikt om het adaptieve formulier te ontwerpen. U kunt een service voor weblettertypen gebruiken om de vereiste lettertypen aan het doelapparaat te leveren.
 

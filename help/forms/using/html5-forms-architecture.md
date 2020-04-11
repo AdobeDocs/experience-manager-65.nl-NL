@@ -11,7 +11,7 @@ topic-tags: hTML5_forms
 discoiquuid: a644978e-5736-4771-918a-dfefe350a4a1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -185,4 +185,3 @@ Zoals hierboven beschreven, roept de profielrenderer JSP de Dienst van Vormen vi
 
 Met HTML5-formulieren kunnen ontwikkelaars Profiel en Profielrenderer maken om de weergave van de formulieren aan te passen. Met HTML-formulieren kunnen ontwikkelaars bijvoorbeeld formulieren integreren in een deelvenster of sectie &lt;div> van een bestaande HTML-portal.
 Zie Aangepast profiel [maken voor meer informatie over het maken van aangepaste profielen](/help/forms/using/custom-profile.md).
-[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)

@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 879ff6ca-e5f3-451d-acc2-f75142101ddd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3afe5bf8e49202608e4c9369b2ff3d26afa03dc4
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -140,7 +140,7 @@ Als u een lay-outfragment wilt maken voor het afdrukkanaal van de interactieve c
 
    ![Lay-outfragment](assets/layout_fragment_print_new.png)
 
-1. Selecteer **Rij 1** in de linkerruit en selecteer **Voorwerp** > **Binding** > **Herhaling Rij voor Elk Punt** van Gegevens.
+1. Selecteer **Rij 1** in de linkerruit en selecteer **Voorwerp** > **Binding** > **Rij voor Elk Punt** van Gegevens herhalen.
 
    ![Eigenschappen voor layoutfragment herhalen](assets/layout_fragment_print_repeat_new.png)
 
@@ -173,7 +173,7 @@ Als u een webkanaalsjabloon wilt maken, definieert u een map waarin u de gemaakt
 
 Voer de volgende stappen uit om een map voor de bewerkbare sjablonen te maken:
 
-1. Tik op **Gereedschappen** ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/icons/Tools.png) > **Configuratiebrowser**.
+1. Tik op **Gereedschappen** ![](assets/hammer-icon.svg) > **Configuratiebrowser**.
 1. Tik op **Maken** op de pagina Configuration Browser.
 1. Geef in het dialoogvenster **Configuratie** maken de titel **Create_First_IC_templates** op als de titel voor de map, controleer **Bewerkbare sjablonen** en tik op **Maken**.
 
@@ -248,7 +248,7 @@ Zodra u het malplaatje van het Web hebt gecreeerd, moet u het toelaten om het ma
 
 Voer de volgende stappen uit om het malplaatje van het Web toe te laten:
 
-1. Tik op **Gereedschappen** ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/icons/Tools.png) > **Sjablonen**.
+1. Tik op **Gereedschappen** ![](assets/hammer-icon.svg) > **Sjablonen**.
 1. Navigeer naar de sjabloon **Create_First_IC_Web_Template** , selecteer deze en tik op **Enable**.
 1. Tab **Schakel** opnieuw in om te bevestigen.
 

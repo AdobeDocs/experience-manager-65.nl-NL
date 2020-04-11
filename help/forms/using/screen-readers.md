@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 53c57180-7004-4534-9146-603f7770a6fe
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -37,11 +37,9 @@ Alle standaardtoetsaanslagen en -sneltoetsen werken voor HTML5-formulieren. Ga n
 
 HTML5-formulieren ondersteunen alle standaardtoetsaanslagen en -bewegingen van Voice over. Voor meer informatie bij vestiging en het gebruiken van VoiceOver, zie [https://www.apple.com/accessibility/voiceover/](https://www.apple.com/accessibility/voiceover/).
 
-## Bekende problemen {#known-issues}
+## Known issues {#known-issues}
 
 * **(Alleen interne Verkenner 9)** In HTML5-formulieren worden de pagina&#39;s op aanvraag geladen (dynamisch). Bij het laden van pagina&#39;s op aanvraag kunnen er problemen optreden met de werking van schermlezers. Wanneer de schermlezer de focus heeft op het laatste veld van de pagina en de gebruiker op de tab drukt in plaats van de focus in te stellen op het eerste veld van de volgende pagina, keert de schermlezer de focus terug naar het eerste veld van de eerste pagina van het formulier.
 * **(Alleen in interne Verkenner 9)** Het besturingselement Datumkiezer in HTML5-formulieren is niet volledig toegankelijk met het toetsenbord. Als u in het besturingselement Datumkiezer meerdere keren op de toets Omhoog/Omlaag drukt, wordt het besturingselement Datumkiezer gesloten en gaat de focus naar het volgende/laatste veld.
 
 * VoiceOver kan geen pijltoetsen detecteren op de datumwidget in iPad safari.
-
-**[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)**

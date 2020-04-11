@@ -9,7 +9,7 @@ topic-tags: introduction
 discoiquuid: e24dbd0e-4481-4f9d-9570-3a4046b3ef35
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 709d8fe467f5449eb1e844a49126535a4a4a6e7a
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -45,7 +45,7 @@ Als het adaptieve formulier wordt gepubliceerd als een AEM-pagina, bevat de hele
 
 ## Het adaptieve formulier insluiten in een AEM-sitepagina {#embed-the-adaptive-form-in-an-aem-sites-page}
 
-Met AEM Forms kunnen formulierontwikkelaars adaptieve formulieren naadloos insluiten in een pagina met AEM-sites. Het ingesloten adaptieve formulier is volledig functioneel en gebruikers kunnen het formulier invullen en verzenden zonder de pagina te verlaten. Hiermee kan de gebruiker in de context van andere elementen op de webpagina blijven en tegelijkertijd met het formulier communiceren.
+Met AEM Forms kunnen formulierontwikkelaars adaptieve formulieren naadloos insluiten in een AEM-sitepagina. Het ingesloten adaptieve formulier is volledig functioneel en gebruikers kunnen het formulier invullen en verzenden zonder de pagina te verlaten. Hiermee kan de gebruiker in de context van andere elementen op de webpagina blijven en tegelijkertijd met het formulier communiceren.
 
 AEM Forms biedt een component, AEM Forms Container, waarmee u een adaptief formulier kunt insluiten in een pagina met AEM-sites. De component is standaard niet zichtbaar in de container van AEM-sites. Voer de volgende stappen uit om de Containercomponent voor AEM-formulieren in te schakelen en het adaptieve formulier in te sluiten in een pagina met AEM-sites:
 
@@ -56,10 +56,10 @@ AEM Forms biedt een component, AEM Forms Container, waarmee u een adaptief formu
    De website We.Retail wordt geleverd bij AEM. Als u niet de website Web.Retail hebt geïnstalleerd, zie aan [Wij.Detailhandel de Implementatie](https://helpx.adobe.com/experience-manager/6-3/help/sites-developing/we-retail.html) van de Verwijzing installeert de plaats.
 
 1. Tik op de ![eigenschappen](assets/properties.png) van de pagina-informatie en selecteer de optie Sjabloon **** bewerken op de nieuwe webpagina Web.Retail. De sjabloon van de pagina wordt geopend op een nieuw tabblad van de browser.
-1. Tik in het vak van de **lay-outcontainer** en tik op ![feedbackbeheer](assets/feedmanagement.png). Vouw op het tabblad **Toegestane componenten** de accordeon **Algemeen** uit, selecteer de optie **AEM-formulier** en tik op ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/icons/AEM_6_3_Forms_save.PNG). De component AEM Forms Container is ingeschakeld voor de pagina.
+1. Tik in het vak van de **lay-outcontainer** en tik op ![feedbackbeheer](assets/feedmanagement.png). Vouw op het tabblad **Toegestane componenten** de accordeon **Algemeen** uit, selecteer de optie **AEM-formulier** en tik op ![](assets/save_icon.svg). De component AEM Forms Container is ingeschakeld voor de pagina.
 
 1. Open het browsertabblad met de pagina AEM-sites die is geopend in stap 1. Tik hier **op de componenten** Slepen en tik op **+.** Tik in het vak Nieuwe component **** invoegen op **AEM-formulier.** De **component AEM Forms Container** wordt aan de pagina toegevoegd.
-1. Tik op de containercomponent **AEM Forms** en tik op ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/6-2/cmppr.png). Er wordt een dialoogvenster weergegeven met eigenschappen van de container van AEM Forms. Blader in het veld **Middelenpad** naar het adaptieve formulier voor het verzendadres en de update. Tik ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/icons/AEM_6_3_Forms_save.PNG). Het adaptieve formulier is ingesloten op de pagina.
+1. Tik op de containercomponent **AEM Forms** en tik op ![](assets/configure-icon.svg). Er wordt een dialoogvenster weergegeven met eigenschappen van de container van AEM Forms. Blader in het veld **Middelenpad** naar het adaptieve formulier voor het verzendadres en de update. Tik op ![](assets/save_icon.svg). Het adaptieve formulier is ingesloten op de pagina.
 1. Publiceer zowel het aangepaste formulier als de sitepagina. Hierna volgt een aantal punten waarmee u rekening kunt houden:
 
    * Als u de pagina met AEM-sites voor het eerst publiceert en deze een ingesloten formulier bevat, publiceert u de pagina met sites en het ingesloten formulier.

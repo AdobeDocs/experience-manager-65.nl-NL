@@ -10,7 +10,7 @@ topic-tags: forms-workspace
 discoiquuid: 6a32d240-c6a6-4937-a31f-7a5ec3c60b1f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -160,4 +160,4 @@ Ja, omdat de vorige renderings- en verzendservices die aan het standaardactiepro
 Als u de bestaande services voor het renderen of verzenden van PDF-formulieren of aangepaste services (zoals custom1) hebt gewijzigd, wilt u nu dezelfde functionaliteit gebruiken voor HTML-uitvoering. U moet de nieuwe renderen herhalen of de dienst voorleggen (zoals custom2) en gelijkaardige aanpassingen op die toepassen. Pas nu het actieprofiel voor uw XDP aan begin gebruikend de diensten custom2, in plaats van custom1 voor terug of voorleggen.
 
 Wat moet de procesontwerper doen om ervoor te zorgen dat het formulier in HTML op een apparaat en in PDF op een bureaublad kan worden weergegeven?
-Wat moet de procesontwerper doen om ervoor te zorgen dat het formulier in HTML op een apparaat en in PDF op een bureaublad kan worden weergegeven?  [Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)
+Wat moet de procesontwerper doen om ervoor te zorgen dat het formulier in HTML op een apparaat en in PDF op een bureaublad kan worden weergegeven?

@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 3d93375e-ec37-4445-96ea-d315676787b4
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -123,5 +123,3 @@ Het rapport Workflow Volume geeft het aantal exemplaren van een AEM Forms-proces
    * **Vernieuwen**: Verfrist het rapport met de recentste gegevens die in de opslag liggen
    * **De legendarische kleur** wijzigen: De kleur van de legenda van het rapport selecteren en wijzigen
    * **Exporteren naar CSV**: De gegevens van het rapport exporteren en downloaden naar een bestand met komma&#39;s als scheidingsteken
-
-[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)

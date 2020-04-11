@@ -11,7 +11,7 @@ topic-tags: hTML5_forms
 discoiquuid: 17a86543-30d3-4e16-a373-67b46d551da9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -91,7 +91,8 @@ De widgetconfiguratie wordt aangeboden als een JSON-object (een verzameling sleu
 
 *{*
 
-*&quot;identifier1&quot;: &quot;customwidgetname&quot;,&quot;identifier2&quot;: &quot;customwidgetname2&quot;,.. }*
+*&quot;identifier1&quot;: &quot;customwidgetname&quot;,&quot;identifier2&quot;: &quot;customwidgetname2&quot;,..
+}*
 
 waarbij &quot;id&quot; een jQuery CSS-kiezer is die een bepaald veld, een set velden van een bepaald type of alle velden vertegenwoordigt. In het volgende voorbeeld wordt de waarde van de id in verschillende gevallen weergegeven:
 
@@ -100,5 +101,3 @@ waarbij &quot;id&quot; een jQuery CSS-kiezer is die een bepaald veld, een set ve
 | Specifiek veld met naam van veld | Id:&quot;div.fieldName&quot; | Alle velden met de naam &#39;veldnaam&#39; worden weergegeven met de widget. |
 | Alle velden van het type ‘type’ (waarbij het type NumericField, DateField enzovoort is).: | Id: &quot;div.type&quot; | Voor Tijdveld en DateTimeField is het type tekstveld omdat deze velden niet worden ondersteund. |
 | Alle velden | Id: &quot;div.field&quot; |  |
-
-[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)

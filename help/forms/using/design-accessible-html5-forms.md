@@ -10,7 +10,7 @@ topic-tags: hTML5_forms
 discoiquuid: 8711ad33-396b-4572-b2ee-71e9f45f4ebe
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 19299fb5fc764d0e71c0ea3a5ec2286183dd6861
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -31,5 +31,3 @@ AEM Forms Designer bevat een aantal opties voor spraaktekst die aan schermlezers
 ![toegankelijkheid](assets/accessibility.png)
 
 Als er meerdere opties beschikbaar zijn op een formulierbesturingselement, zoals knopinfo, schermlezertekst en bijschrift, gebruikt de schermlezer slechts een van deze eigenschappen. De standaardvolgorde is Aangepaste schermlezertekst, knopinfo, Bijschrift en Naam. You can override the default order using the Screen Reader **Precedence** option in the Accessibility palette.
-
-[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)

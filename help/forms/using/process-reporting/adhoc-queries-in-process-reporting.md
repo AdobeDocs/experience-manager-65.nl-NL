@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b0a544e2-2ce4-48e2-a721-82f481d36004
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8f90dc4865126d52e04effc9197ef7145b1a167e
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -96,7 +96,7 @@ Nadat u een query hebt gemaakt, gebruikt u de opties in de rechterbovenhoek van 
 
 * **Annuleren**: Annuleer de wijzigingen en ga terug naar het deelvenster **Mijn filters** .
 * **Uitvoeren**: Voer de huidige vraag uit om de resultaten te zien en/of te verifiëren. In dit geval hoeft u de query niet op te slaan voordat u de query uitvoert. U kunt de resultaten verifiëren, indien nodig wijzigingen aanbrengen en de query opslaan als u tevreden bent met de uitvoer.
-* **Opslaan**:Sla het filter op. Het filter kan vervolgens worden weergegeven en uitgevoerd vanuit het deelvenster **Mijn filters** .
+* **Opslaan**: Sla het filter op. Het filter kan vervolgens worden weergegeven en uitgevoerd vanuit het deelvenster **Mijn filters** .
 
 ### Opties in het deelvenster Mijn filters {#options-in-my-filters-panel}
 
@@ -180,7 +180,7 @@ U kunt de details van een specifiek proces/een specifieke taak van Vormen bekijk
 
    Het de vraagresultaat van **Proces/van de Details** van de Taak toont details van de taken/vormen in het proces/de taak.
 
-   Standaard wordt het resultaat gesorteerd op Taak-/Formulier-id. Als u het resultaat echter op een van de velden wilt sorteren, klikt u op de veldtitel. De kolom waarmee het resultaat wordt gesorteerd, wordt aangegeven met een donkerdere pijl naast de kolomkop.
+   Standaard wordt het resultaat gesorteerd op Taak-/Formulier-id. Als u het resultaat echter op een van de velden wilt sorteren, klikt u op de veldtitel. De kolom waarmee het resultaat wordt gesorteerd, wordt aangegeven met een donkere pijl naast de kolomkop.
 
    Aangezien het sorteren een knevelverrichting is, klik een gebiedsheader om het resultaat oplopend te sorteren en het opnieuw te klikken om aflopend te sorteren. De huidige sorteervolgorde (oplopend/aflopend) wordt aangegeven door de richting van de donkere pijl naast de kolomkop.
 
@@ -188,7 +188,7 @@ U kunt de details van een specifiek proces/een specifieke taak van Vormen bekijk
 
    ![process_details](assets/process_details.png)
 
-   **** Deelvenster Links: Geeft de volgende details van het geselecteerde proces weer:
+   **Deelvenster Links:** Geeft de volgende details van het geselecteerde proces weer:
 
    * Naam van het proces
    * Datum aanmaakdatum proces
@@ -196,7 +196,7 @@ U kunt de details van een specifiek proces/een specifieke taak van Vormen bekijk
    * Procesduur
    * Processtatus
    * Procesinitiator
-   **** Deelvenster rechtsboven: Geeft de volgende details weer van de taken waaruit het geselecteerde proces bestaat:
+   **Deelvenster rechtsboven:** Geeft de volgende details weer van de taken waaruit het geselecteerde proces bestaat:
 
    * Taak-id
    * Taaknaam
@@ -206,7 +206,7 @@ U kunt de details van een specifiek proces/een specifieke taak van Vormen bekijk
    * Einddatum taak
    * Taakduur
    * Taakstatus
-   **** Deelvenster Rechtsonder: Geeft de volgende details van de procesgeschiedenis van het geselecteerde proces weer:
+   **Deelvenster Rechtsonder:** Geeft de volgende details van de procesgeschiedenis van het geselecteerde proces weer:
 
    * Procesnaam
    * Procesinitiator
@@ -217,7 +217,7 @@ U kunt de details van een specifiek proces/een specifieke taak van Vormen bekijk
 
    ![task_details](assets/task_details.png)
 
-   **** Deelvenster Links: Geeft de volgende details van de geselecteerde taak weer:
+   **Deelvenster Links:** Geeft de volgende details van de geselecteerde taak weer:
 
    * Taaknaam
    * Id van proces waartoe deze taak behoort
@@ -227,13 +227,13 @@ U kunt de details van een specifiek proces/een specifieke taak van Vormen bekijk
    * Taakduur
    * Taakstatus
    * Geselecteerde taakroute
-   **** Deelvenster rechtsboven: Hier worden de volgende details weergegeven van de formulieren waaruit de geselecteerde taak bestaat:
+   **Deelvenster rechtsboven:** Hier worden de volgende details weergegeven van de formulieren waaruit de geselecteerde taak bestaat:
 
    * Foprm-id
    * Aanmaakdatum van formulier
    * Tijdstip van updatedatum van formulier
    * URL van formuliersjabloon
-   **** Deelvenster Rechtsonder: Geeft de volgende details van de procesgeschiedenis van de geselecteerde taak weer:
+   **Deelvenster Rechtsonder:** Geeft de volgende details van de procesgeschiedenis van de geselecteerde taak weer:
 
    * Type taaktoewijzing
    * Taakeigenaar
@@ -249,7 +249,7 @@ U kunt de details van een specifiek proces/een specifieke taak van Vormen bekijk
 
    ![back_to_search](assets/back_to_search.png)
 
-   Als de proces-/taakdetails echter zijn gevonden door een specifieke proces-/taak-id in te voeren, kunt u door op Terug naar zoeken in proces/taak te klikken terugkeren naar Zoeken **in** proces/taak zonder zoekresultaten weer te geven.
+   Als de proces-/taakdetails echter zijn gevonden door een specifieke proces-/taak-id in te voeren, kunt u door op Terug naar zoeken in proces/taak te klikken terug naar Zoeken **in** proces/taak zonder zoekresultaten weer te geven.
 
 #### Door de proces-/taak-id in te voeren in het deelvenster Proces/Taakdetails {#by-entering-the-process-task-id-in-the-process-task-details-panel-br}
 
@@ -266,5 +266,3 @@ U kunt de details van een specifiek proces/een specifieke taak van Vormen bekijk
    Voor een proces, toont het vraagresultaat de details van de taken in het proces.
 
    Voor een taak, toont het vraagresultaat de details de vormen in de taak.
-
-[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)

@@ -10,7 +10,7 @@ content-strategy: max-2018
 discoiquuid: 770e9174-b648-462a-abe9-05fefa967d86
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -296,7 +296,7 @@ Met de plusknop in de elementenbibliotheek kunt u de stijl permanent opslaan met
 
 Wanneer u een aangepaste naam voor een stijl opgeeft, is de stijl gekoppeld aan een thema en is deze niet meer beschikbaar voor andere thema&#39;s. Een opgeslagen stijl verwijderen:
 
-1. Klik op de CANVAS-werkbalk op **Thema-opties** ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/6-2/theme-options.png) > Stijlen **** beheren.
+1. Klik op de CANVAS-werkbalk op **Thema-opties** ![](assets/theme-options.png) > Stijlen **** beheren.
 1. Selecteer een opgeslagen stijl in het dialoogvenster Stijlen beheren en klik op **Verwijderen**.
 
    ![De opgeslagen stijl verwijderen](assets/manage-styles.png)

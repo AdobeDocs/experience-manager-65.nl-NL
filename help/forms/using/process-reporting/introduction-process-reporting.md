@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 4e83ed7b-3f48-4bf6-be4c-89f79949c1df
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -68,5 +68,3 @@ AEM Forms-servers voeren een groot aantal processen parallel uit. Deze processen
 Process Reporing biedt op toestemming gebaseerde toegang tot de gebruikersinterface.
 
 Dit betekent slechts hebben de gebruikers met het melden van toestemmingen toegang tot het Proces Meldend gebruikersinterface.
-
-[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)

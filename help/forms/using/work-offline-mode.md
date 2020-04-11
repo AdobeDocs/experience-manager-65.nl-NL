@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 9a3c6ab4-8bb9-40c7-8c56-59153b364887
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -18,7 +18,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 In de offlinemodus van de app AEM Forms kunt u naadloos werken, zelfs als de app offline gaat. U kunt een formulier openen, bijwerken en verzenden zonder netwerkconnectiviteit nodig te hebben.
 
-U begint met het werken aan de app AEM Forms door uw app te synchroniseren met de AEM Forms-server. Alle aan u toegewezen formulieren worden gedownload in uw app. Voor AEM Forms on JEE worden taken opgehaald op het tabblad Taken en worden hiermee gekoppelde formulieren en andere formulieren gestart op het tabblad Formulieren. Voor AEM-formulieren op OSGi worden alleen Forms geladen op het tabblad Formulieren.
+U begint met het werken aan de app AEM Forms door uw app te synchroniseren met de AEM Forms-server. Alle aan u toegewezen formulieren worden gedownload in uw app. Voor AEM Forms on JEE worden de taken opgehaald op het tabblad Taken en worden de bijbehorende formulieren en andere formulieren gestart op het tabblad Formulieren. Voor AEM-formulieren op OSGi worden alleen Forms geladen op het tabblad Formulieren.
 
 Zie De app [synchroniseren voor meer informatie over het synchroniseren van de app](/help/forms/using/sync-app.md).
 
@@ -48,5 +48,3 @@ U configureert als volgt de offline component op de server van de app AEM Forms:
    * **Paden** voor bronwaarneming: Specificeert wegen waar de off-line dienst voor middelveranderingen controleert. Als er wijzigingen optreden in de opgegeven paden, wordt de offlinecache van alle afhankelijke formulieren bijgewerkt. Bijvoorbeeld, `/etc/clientlibs/fd,/content/dam/images`.
 
 1. Geef op het tabblad **Handmatige broncache** de formulierafhankelijkheden op die de offlineservice niet kan identificeren. U kunt bronnen opgeven, zoals afbeeldingen die vanuit JavaScript zijn geladen. De app AEM Forms downloadt deze bronnen ook voor de offline modus.
-
-[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)

@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 5dae9ed9-77a3-44f5-a94d-ca5c355c8730
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -192,5 +192,3 @@ Scripts en stijlen kunnen in verschillende browsers worden opgespoord.
 1. Als HTML-formulieren in de werkruimte van AEM-formulieren worden weergegeven met behulp van proceseigenschappen in hun ontwerp, geeft u de knop Verzenden in het formulier weer.
 
    Wanneer u formulieren ontwerpt en proceseigenschappen gebruikt, wordt een knop Verzenden toegevoegd aan het formulier. Wanneer de knop Verzenden als PDF wordt weergegeven in de werkruimte van AEM-formulieren, is deze niet zichtbaar voor de eindgebruiker. Wanneer echter een HTML-formulier wordt weergegeven in de werkruimte van AEM Forms, is de knop Verzenden zichtbaar voor de eindgebruiker. Als u op deze knop Verzenden klikt in het formulier, wordt er geen actie gestart. Als u klikt op de knop Verzenden onder aan de werkruimte voor AEM-formulieren, buiten het formulier, wordt de taak voltooid.
-
-[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)

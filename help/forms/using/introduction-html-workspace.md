@@ -11,7 +11,7 @@ topic-tags: forms-workspace
 discoiquuid: 4c89d017-0d4b-4fa2-b648-342f3c755350
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -30,5 +30,3 @@ De werkruimte van AEM-formulieren is compatibel met meer apparaten en formulierf
 * U kunt de werkruimtecomponenten eenvoudig integreren met uw webtoepassingen. Aangezien de werkruimte van de Vormen AEM op componentengebaseerde software is, kan het gemakkelijk worden aangepast en worden opnieuw gebruikt.
 * Breid bedrijfsprocessen tot zowel online als off-line mobiele arbeiders met de AEM de werkruimte app van Vormen uit.
 * De rapporten van de mening om achterstand, werkrijen, en zeer belangrijke prestatiesindicatoren (KPIs) te controleren. U kunt API&#39;s gebruiken om gegevens te extraheren voor verdere analyse met behulp van rapportagetools van derden.
-
-[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)

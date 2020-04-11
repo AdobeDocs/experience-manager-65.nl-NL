@@ -9,7 +9,7 @@ topic-tags: author
 discoiquuid: 34e6d1bc-4eca-42dc-9ae5-9a2107fbefce
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -116,5 +116,3 @@ Als u een formulier test met een bron voor voorbeeldgegevens, weer u zeker dat d
 ## Formulieren voorvertonen in een gegevensopslagruimte {#html-preview-of-forms-in-forms-manager}
 
 In AEM Forms kunt u formulieren en documenten voorvertonen in een gegevensopslagruimte. Aan de hand van een voorbeeld kunt u precies zien hoe de formulieren eruitzien en zich gedragen zoals ze worden gebruikt door eindgebruikers.
-
-[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)

@@ -11,7 +11,7 @@ topic-tags: designer
 discoiquuid: ecd7f538-9c24-48e7-8450-596851e99cff
 docset: aem65
 translation-type: tm+mt
-source-git-commit: dfa983db4446cbb0cbdeb42297248aba55b3dffd
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -63,7 +63,7 @@ Nadat een veld Handtekeningenkrabbels aan het formulier is toegevoegd en het is 
 
 ![geolocatie](assets/geolocation.png)
 
-******** A. Penseel **B. Gummetje** C.**Geolocatie** D. Geolocatie-informatie
+**A.** Penseel **B.** Gummetje **C.** Geolocatie **D.** Geolocatie-informatie
 
 ### Geo-tagging {#geo-tagging}
 
@@ -101,5 +101,3 @@ De handtekeningen uit het formulier verwijderen:
 
 * (Mobiele apparaten) Druk lang op het handtekeningveld en tik op **Ja** in het bevestigingsvenster.
 * (Bureaublad) Houd de cursor boven het handtekeningveld, klik op het pictogram **Annuleren** en klik in het bevestigingsvenster op **Ja**.
-
-[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)

@@ -11,7 +11,7 @@ topic-tags: forms-workspace
 discoiquuid: 021c6606-8cd3-472c-a80b-b1bcace7e87f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 21623c615ebe69226cfaf84baf4cfb1717b449f4
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -263,7 +263,7 @@ Dit pakket kan worden gemaakt met de drie hieronder beschreven profielen.
 
       * sjablonen - Bevat alle sjablonen, dat wil zeggen HTML-bestanden van alle componenten in de werkruimte van AEM-formulieren.
    * main.js (gecombineerd, geminificeerd en aangevuld).
-   * register.js
+   * registry.js
 
 
 
@@ -308,7 +308,7 @@ Dit pakket kan worden gemaakt met de drie hieronder beschreven profielen.
 
       * sjablonen - Bevat alle sjablonen, dat wil zeggen HTML-bestanden van alle componenten in de werkruimte van AEM-formulieren.
    * main.js (gecombineerd).
-   * register.js
+   * registry.js
 
 
 
@@ -357,7 +357,7 @@ mvn clean -P Dev install on client pkg
       * Tot - Bevat alle hulpprogrammabestanden (JavaScript) die worden gebruikt in de werkruimte van AEM-formulieren.
       * weergaven - Bevat weergaven van alle componenten in de werkruimte van AEM-formulieren.
    * main.js
-   * register.js
+   * registry.js
    * router.js
 
 
@@ -380,5 +380,3 @@ mvn clean -P Dev install on client pkg
 * html.jsp
 * content.xml
 * _rep_policy.xml
-
-[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)

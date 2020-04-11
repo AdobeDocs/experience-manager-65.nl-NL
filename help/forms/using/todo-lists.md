@@ -11,7 +11,7 @@ topic-tags: forms-workspace
 discoiquuid: d8546227-d78d-4fe2-a092-222482bb69c9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 21623c615ebe69226cfaf84baf4cfb1717b449f4
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -100,7 +100,7 @@ Wanneer u een taak opent en claimt vanuit een groep of gedeelde lijst, wordt de 
    * Als u een taak wilt claimen vanuit een groep of gedeelde aan-do-lijst zonder deze te openen, klikt u op **Claim** door de aanwijzer boven de taak te plaatsen. Als de taak is geopend, is de knop Claim beschikbaar in de actiebalk onder het taakvenster. Bij het opeisen, beweegt een taak zich van de groep of gedeelde aan-doe lijst aan uw lijst.
    * Klik op **Claim en open** om een taak uit een groep of gedeelde aan-do-lijst op te eisen en te openen.
 
-## Werken met taken {#working-with-tasks}
+## Working with tasks {#working-with-tasks}
 
 Nadat u een taak hebt geopend, zijn de tabbladen die in het hoofdvenster worden weergegeven en de gereedschappen die beschikbaar zijn, afhankelijk van de taak. De tabbladen die u kunt zien, worden hieronder beschreven:
 
@@ -198,7 +198,7 @@ U kunt bijlagen lokaal toevoegen, bijwerken, verwijderen of opslaan.
 
 1. Geef in het dialoogvenster Opslaan als concept een unieke naam voor de taak op en tik op **OK**.
 
-   ![saveasdesignDialog_name](assets/saveasdraftdialog_name.png)
+   ![saveasconceptDialog_name](assets/saveasdraftdialog_name.png)
 
    Het concept wordt met de opgegeven naam opgeslagen. De taak blijft in de lijst Aan/Uit en alle wijzigingen die u in het formulier hebt aangebracht, worden opgeslagen in de map Concepten. In de lijst Aan kunt u bovendien naar het concept zoeken met de naam van het concept om het werken aan het concept te hervatten.
 
@@ -389,5 +389,3 @@ U kunt een standaardpersoon instellen waarnaar al uw taken worden verzonden. U k
    >De procesontwerper kan specificeren dat de taken van sommige processen altijd privé worden gehouden en niet aan andere gebruikers door:sturen. Deze instelling overschrijft alle instellingen die u maakt.
 
 1. Als u de voorkeuren hebt ingesteld, klikt u op **Opslaan**. Als uw instellingen aangeven dat u momenteel buiten het kantoor bent, worden de wijzigingen onmiddellijk van kracht. Anders worden ze van kracht op de opgegeven begindatum en -tijd. Als u zich aanmeldt terwijl u zich buiten het kantoor bevindt, wordt u pas overwogen op het kantoor wanneer u uw instellingen wijzigt.
-
-[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)

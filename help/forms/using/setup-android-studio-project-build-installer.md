@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: forms-app
 discoiquuid: fabc981e-0c9e-4157-b0a1-0c13717fb6cd
 translation-type: tm+mt
-source-git-commit: 4a0f3f64095b4726f295a0c1857a1e999353f5f5
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -82,9 +82,9 @@ In de volgende afbeelding wordt de mapstructuur van de `android`map in de `src`m
 1. Selecteer Project **[!UICONTROL importeren (Eclipse ADT, Gradle, enz.)]** in Android™ Studio.
 1. In de projectverkenner, selecteer de wortelfolder van het project dat u in het de tekstvakje van de Folder van de **Wortel** wilt bouwen:
 
-   **** Voor Mac-gebruikers: [User_Home]/projects/MobileWorkspace/src/android
+   **Voor Mac-gebruikers:** [User_Home]/projects/MobileWorkspace/src/android
 
-   **** Voor Windows®-gebruikers: %HOMEPATH%\Projects\MobileWorkspace\src\android
+   **Voor Windows®-gebruikers:** %HOMEPATH%\Projects\MobileWorkspace\src\android
 
 1. Nadat het project is geïmporteerd, wordt een pop-upvenster weergegeven met de optie voor het bijwerken van de insteekmodule Android™. Klik afhankelijk van uw vereiste op de juiste knop.
 
@@ -107,5 +107,3 @@ U kunt de toepassing op een Android™-apparaat installeren via [Android™ Debu
 **Voor MAC-gebruikers**: `adb install [User_Home]/Projects/[your-project]/adobe-lc-mobileworkspace-src-[version]/android/build/outputs/apk/android-debug.apk`
 
 **Voor Windows®-gebruikers**: `adb install %HOMEPATH%\Projects\[your-project]\adobe-lc-mobileworkspace-src-[version]\android\build\outputs\apk\android-debug.apk`
-
-**[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)**

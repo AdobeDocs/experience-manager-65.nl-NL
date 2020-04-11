@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 61b7246d-ed28-4470-a0a2-a4aaf1a061a4
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -76,7 +76,7 @@ JSON-objecten die worden gebruikt in de werkruimte van AEM-formulieren, worden h
    | beschrijving | F | Het bevat een beschrijving voor een startpunt. |
    | name | F | Deze bevat de naam van het startpunt. |
    | serializedImageTicket | F | Het bevat een afbeeldingsticket dat overeenkomt met het startpunt. Dit beeldkaartje wordt gebruikt in imageUrl gebied van startpoint, om beeld voor startpunt van de server te krijgen. |
-   | serviceName | F | Het bevat naam van de dienst voor startpunt. |
+   | serviceName | F | Het bevat naam van de dienst voor startpoint. |
    | startpointId | F | Het bevat id van startpunt. |
    | isFavorite | T | Geeft aan of het startpunt favoriet is of niet. True if startpoint is preferred else false. |
    | isDefaultImage | T | Geeft aan of er een afbeelding is opgegeven voor proces of niet. True if there is no image associated with process else false. |
@@ -222,7 +222,7 @@ JSON-objecten die worden gebruikt in de werkruimte van AEM-formulieren, worden h
   <tr>
    <td>serializedImageTicket<br /> </td>
    <td>F</td>
-   <td>Het bevat een afbeeldingsticket dat overeenkomt met een taak. <br /> Dit beeldkaartje wordt gebruikt in imageUrl gebied van taak, om beeld voor taak van de server te krijgen. <br /> </td>
+   <td>Het bevat een afbeeldingsticket dat overeenkomt met een taak. Dit beeldkaartje wordt gebruikt in imageUrl gebied van taak, om beeld voor taak van de server te krijgen.<br /> <br /> </td>
   </tr>
   <tr>
    <td>serviceName<br /> </td>
@@ -357,7 +357,7 @@ JSON-objecten die worden gebruikt in de werkruimte van AEM-formulieren, worden h
   <tr>
    <td>dataUrl<br /> </td>
    <td>T</td>
-   <td>Het is de URL voor de gegevens van de vorm van een taak.<br /> </td>
+   <td>Het is de URL voor de gegevens in de vorm van een taak.<br /> </td>
   </tr>
   <tr>
    <td>externalAppConfig<br /> </td>
@@ -605,7 +605,7 @@ JSON-objecten die worden gebruikt in de werkruimte van AEM-formulieren, worden h
   <tr>
    <td>assignType<br type="_moz" /> </td>
    <td>F</td>
-   <td>0 = Eerste Taak<br /> 1 = Voorwaarts (De Taak is door:sturen aan huidige eigenaar van taak.)<br /> 2 = teruggekeerd (Taak is teruggekeerd aan huidige eigenaar van taak door vorige eigenaar van taak.)<br /> 3 = Gevraagd (Taak is gevorderd door huidige eigenaar van taak.)<br /> 4 = Escalatie (Taak is toegewezen aan huidige eigenaar van taak na escalatie.)<br /> 5 = Toegewezen beheerder (Taak is toegewezen door beheerder aan huidige eigenaar van taak.)<br /> 6 = geraadpleegd (Taak is geraadpleegd aan de huidige eigenaar van de taak.)<br type="_moz" /> </td>
+   <td>0 = Oorspronkelijke Taak<br /> 1 = Voorwaarts (De Taak is door:sturen aan huidige eigenaar van taak.)<br /> 2 = teruggekeerd (Taak is teruggekeerd aan huidige eigenaar van taak door vorige eigenaar van taak.)<br /> 3 = Gevraagd (Taak is gevorderd door huidige eigenaar van taak.)<br /> 4 = Escalatie (Taak is toegewezen aan huidige eigenaar van taak na escalatie.)<br /> 5 = Toegewezen beheerder (Taak is toegewezen door beheerder aan huidige eigenaar van taak.)<br /> 6 = geraadpleegd (Taak is geraadpleegd aan de huidige eigenaar van de taak.)<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>assignUpdateTime<br type="_moz" /> </td>
@@ -851,5 +851,3 @@ JSON-objecten die worden gebruikt in de werkruimte van AEM-formulieren, worden h
   </tr>
  </tbody>
 </table>
-
-**[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)**

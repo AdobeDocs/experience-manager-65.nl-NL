@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 9cd22244-9aa6-4b5f-96cf-c9cb3d6f9c8a
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -81,5 +81,3 @@ Nadat u een aangepast profiel hebt gemaakt, voegt u renderinformatie toe aan dit
 1. Open de URL om te controleren of het profiel is gemaakt `https://'[server]:[port]'/content/xfaforms/profiles/hrform.html`
 
 Als u uw formulieren wilt verifiëren, [importeert u uw formulieren](/help/forms/using/get-xdp-pdf-documents-aem.md) van uw lokale bestandssysteem naar AEM Forms en [bekijkt u een voorbeeld van het formulier](/help/forms/using/previewing-forms.md) op de auteur van de AEM-server.
-
-[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)

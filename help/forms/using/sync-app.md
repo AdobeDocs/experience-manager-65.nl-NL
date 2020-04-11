@@ -11,7 +11,7 @@ topic-tags: forms-app
 discoiquuid: 393e4332-a2cc-42c8-a18f-3035addbcfaa
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -46,5 +46,3 @@ Tik op de knop Synchroniseren ![synchroniseren-app](assets/sync-app.png) in de r
 * In .js, verzendt de vraag aan de processOfflineSubmissionSavedTasks (...) functie, de bewaarde/voorgelegde taken naar de server. Ook worden eventuele fouten of conflicten in het synchronisatieproces afgehandeld. Als het verzenden van een taak mislukt, wordt de taak in de app gemarkeerd als mislukt. Bovendien blijft de taak in uw Postvak UIT.
 * De functie syncSubmissionTask() en syncSavedTask() voeren bewerkingen uit op individuele taken.
 * De aanroep van de functie processOfflineSubmissionSavedTasks() wordt geïnitieerd door de component met de takenlijst nadat een gebruiker heeft geselecteerd om offline status te synchroniseren met de server of een automatische synchronisatie met de achtergrondthread.
-
-[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)

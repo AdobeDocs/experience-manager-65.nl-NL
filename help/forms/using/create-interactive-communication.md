@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f4d98cb9-84d8-4735-91d2-b9ceec861e5e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d12d35bf8355d3069071523427a7794b88c09b13
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -49,7 +49,7 @@ Het volgende is de eerste vereisten voor het creëren van een Interactieve Meded
    * **[!UICONTROL Nabewerking]**: Selecteer de naam van de workflow die moet worden geactiveerd. Wanneer u een AEM-workflow selecteert, moet u het pad naar Bijlage, Lay-out, PDF-pad, Gegevenspad afdrukken en Webgegevenspad opgeven.
    * **[!UICONTROL Tags]**: Selecteer de tags die u wilt toepassen op Interactieve communicatie. U kunt ook een nieuwe/aangepaste tagnaam typen en op Enter drukken om deze te maken.
    * **[!UICONTROL Auteur]**:De auteursnaam wordt automatisch genomen van de het programma geopende gebruikersnaam.
-   * **** Publicatiedatum: Voer de datum in waarop u de interactieve communicatie wilt publiceren.
+   * **[!UICONTROL Publicatiedatum:]** Voer de datum in waarop u de interactieve communicatie wilt publiceren.
    * **[!UICONTROL Publicatiedatum]** ongedaan maken: Voer de datum in waarop u de publicatie van de interactieve communicatie ongedaan wilt maken.
 
 1. Tik op **[!UICONTROL Volgende]**. Het scherm waarop u afdruk- en webkanaalgegevens wilt opgeven, wordt weergegeven.
@@ -141,15 +141,15 @@ Een niet-gebonden variabele die in een documentfragment wordt gebruikt, wordt so
 
 ![Niet-gebonden variabele](assets/df_unbound_variable_new.png)
 
-Tik op het documentfragment, tik op ![configure_icon](assets/configure_icon.png) (Configure_icon) en tik vervolgens op **[!UICONTROL Eigenschappen]** in het zijpaneel van de Interactieve communicatie. In de sectie **[!UICONTROL Variabelen en gegevensmodelobjecten]** worden de variabelen vermeld, inclusief de verborgen variabelen en de gegevensmodelobjecten die in de documentfragmenten worden gebruikt. Gebruik het pictogram ![Bewerken](https://helpx.adobe.com/content/dam/help/images/en/edit.png) (Bewerken) naast elk gegevensmodelobject of elke variabele om de eigenschappen te bewerken.
+Tik op het documentfragment, tik op ![configure_icon](assets/configure_icon.png) (Configure_icon) en tik vervolgens op **[!UICONTROL Eigenschappen]** in het zijpaneel van de Interactieve communicatie. In de sectie **[!UICONTROL Variabelen en gegevensmodelobjecten]** worden de variabelen vermeld, inclusief de verborgen variabelen en de gegevensmodelobjecten die in de documentfragmenten worden gebruikt. Gebruik het pictogram ![Bewerken](assets/edit.svg) (Bewerken) naast elk gegevensmodelobject of elke variabele om de eigenschappen te bewerken.
 
 1. Tik op een variabele om de binding van variabelen in te stellen, selecteer ![configure_icon](assets/configure_icon.png) (Configure_icon) en stel vervolgens de bindingseigenschappen in in het deelvenster Eigenschappen in de zijbalk.
 
    * **Geen**: De agent zal de waarde voor de variabele invullen.
    * **Tekstfragment**: Als deze optie is geselecteerd, kunt u door een tekstdocumentfragment bladeren en dit selecteren waarvan de inhoud in het veld wordt weergegeven. Alleen tekstdocumentfragmenten kunnen worden gebonden aan variabelen die geen variabelen bevatten.
    * **Gegevensmodelobject**: Selecteer een eigenschap van het formuliergegevensmodel waarvan de waarde in het veld is ingevuld.
-   * **** Standaardwaarde: U kunt een standaardwaarde voor de variabele bepalen gebruikend dit gebied. De waarde wordt getoond wanneer u voorproef de Interactieve Communicatie of in de Agent UI.
-   * **** Weergavepatroon: U kunt ook een weergave-indeling voor een variabele definiëren. Selecteer een van de vooraf gedefinieerde opties in de vervolgkeuzelijst **Type** om een weergave-indeling toe te passen op een variabele. Selecteer **Aangepast** om een weergavepatroon te definiëren dat niet beschikbaar is in de lijst. Zie [Gegevenspatronen](../../forms/using/create-interactive-communication.md#datadisplaypatterns)voor meer informatie.
+   * **Standaardwaarde:** U kunt een standaardwaarde voor de variabele bepalen gebruikend dit gebied. De waarde wordt getoond wanneer u voorproef de Interactieve Communicatie of in de Agent UI.
+   * **Weergavepatroon:** U kunt ook een weergave-indeling voor een variabele definiëren. Selecteer een van de vooraf gedefinieerde opties in de vervolgkeuzelijst **Type** om een weergave-indeling toe te passen op een variabele. Selecteer **Aangepast** om een weergavepatroon te definiëren dat niet beschikbaar is in de lijst. Zie [Gegevenspatronen](../../forms/using/create-interactive-communication.md#datadisplaypatterns)voor meer informatie.
    Navigeer naar [Variabelen en gegevensmodelobjecten](../../forms/using/create-interactive-communication.md#hiddenvariables) om de binding van verborgen variabelen in het documentfragment in te stellen.
 
    U kunt ook gegevensbronelementen of tekstdocumentfragmenten slepen en neerzetten om de binding van variabelen in te stellen.  Als u een binding wilt maken met een van de gegevensbronelementen, selecteert u het tabblad **Gegevensbronnen** en sleept u het element naar de naam van de variabele. Het gegevensbronelement en de variabele moeten van het zelfde type zijn aan opstelling met succes bindt. Als u een gegevensbronelement naar een reeds gebonden variabele sleept, vervangt het nieuwe element vorige om een nieuwe band met de variabele tot stand te brengen. Selecteer op dezelfde manier het tabblad **Middelen** en sleep het tekstdocumentfragment naar de naam van een variabele om de binding tussen de elementen in te stellen. Het tekstdocumentfragment mag geen variabelen bevatten.
@@ -182,11 +182,11 @@ Tik op het documentfragment, tik op ![configure_icon](assets/configure_icon.png)
 
    ![webchannelmiddelen](assets/webchannelassets.png)
 
-   Tik op het documentfragment, tik op ![configure_icon](assets/configure_icon.png) (Configure_icon) en tik vervolgens op **[!UICONTROL Eigenschappen]** in het zijpaneel van de Interactieve communicatie. In de sectie **[!UICONTROL Variabelen en gegevensmodelobjecten]** worden de variabelen vermeld, inclusief de verborgen variabelen en de gegevensmodelobjecten die in de documentfragmenten worden gebruikt. Gebruik het pictogram ![Bewerken](https://helpx.adobe.com/content/dam/help/images/en/edit.png) (Bewerken) naast elk gegevensmodelobject of elke variabele om de eigenschappen te bewerken. Voor documentfragmenten die [automatisch in het kanaal van het Web gebruikend het kanaal van de Druk zijn gegenereerd](../../forms/using/create-interactive-communication.md#main-pars-header-1213963149) , gebruik bovendien het ![](assets/cancelinheritance.png) (Cancel Overerving) pictogram naast elk voorwerp van het gegevensmodel en de variabele om overerving [te](../../forms/using/create-interactive-communication.md#main-pars-header-103384010) annuleren en hen te kunnen uitgeven.
+   Tik op het documentfragment, tik op ![configure_icon](assets/configure_icon.png) (Configure_icon) en tik vervolgens op **[!UICONTROL Eigenschappen]** in het zijpaneel van de Interactieve communicatie. In de sectie **[!UICONTROL Variabelen en gegevensmodelobjecten]** worden de variabelen vermeld, inclusief de verborgen variabelen en de gegevensmodelobjecten die in de documentfragmenten worden gebruikt. Gebruik het pictogram ![Bewerken](assets/edit.svg) (Bewerken) naast elk gegevensmodelobject of elke variabele om de eigenschappen te bewerken. Voor documentfragmenten die [automatisch in het kanaal van het Web gebruikend het kanaal van de Druk zijn gegenereerd](../../forms/using/create-interactive-communication.md#main-pars-header-1213963149) , gebruik bovendien het ![](assets/cancelinheritance.png) (Cancel Overerving) pictogram naast elk voorwerp van het gegevensmodel en de variabele om overerving [te](../../forms/using/create-interactive-communication.md#main-pars-header-103384010) annuleren en hen te kunnen uitgeven.
 
 1. Tik op **[!UICONTROL Componenten]** om extra componenten aan het webkanaal toe te voegen terwijl het webkanaal is geselecteerd. De belemmering-en-dalingscomponenten in het Webkanaal van uw Interactieve Communicatie zoals vereist en ga te werk om hen te vormen.
 
-   | Componenten | Functionaliteit |
+   | Onderdelen | Functionaliteit |
    |---|---|
    | Diagram | Hiermee voegt u een grafiek toe die u in Interactieve communicatie kunt gebruiken voor de visuele weergave van tweedimensionale gegevens die zijn opgehaald uit een verzameling formuliergegevensmodellen. Voor meer informatie, zie het [Gebruiken van grafiekcomponent](../../forms/using/chart-component-interactive-communications.md). |
    | Documentfragment | Staat u toe om een herbruikbare component, een tekst, een lijst, of een voorwaarde, aan een Interactieve Communicatie toe te voegen. De herbruikbare component die u toevoegt aan een interactieve communicatie kan gebaseerd zijn op een formuliergegevensmodel of geen formuliergegevensmodel. |
@@ -240,7 +240,7 @@ In het kanaal van de Druk, kunt u de gehechtheid en bibliotheektoegang vormen om
    * **[!UICONTROL Bij te voegen]** bestanden: Tik op **[!UICONTROL Toevoegen]** en blader naar de bestanden die u wilt bijvoegen en geef de volgende instellingen op:
 
       * **[!UICONTROL Dit bestand standaard]** aan document koppelen: U kunt deze optie wijzigen als alleen de bijlage niet verplicht is.
-      * **** Verplicht: De agent zal niet de gehechtheid in de Agent UI kunnen verwijderen.
+      * **[!UICONTROL Verplicht:]** De agent zal niet de gehechtheid in de Agent UI kunnen verwijderen.
    ![bijlagen](assets/attachfiles.png)
 
 1. Tik **[!UICONTROL op Gereed]**.
@@ -260,7 +260,7 @@ In het kanaal van de Druk, kunt u de gehechtheid en bibliotheektoegang vormen om
    * **[!UICONTROL Bindingstype]**: Selecteer een van de volgende bindingstypen voor het veld.
 
       * Geen: De agent zal de waarde voor het bezit invullen.
-      * Tekstfragment: Als deze optie is geselecteerd, kunt u door een tekstdocumentfragment bladeren en dit selecteren waarvan de inhoud in het veld wordt weergegeven. U kunt ook het tekstdocumentfragment naar de veldnaam slepen en neerzetten om de binding tussen de fragmenten in te stellen. Het tekstdocumentfragment mag geen variabelen bevatten.
+      * Tekstfragment: Als deze optie is geselecteerd, kunt u door een tekstdocumentfragment bladeren en dit selecteren waarvan de inhoud in het veld wordt weergegeven. U kunt ook het tekstdocumentfragment naar de veldnaam slepen en neerzetten om de binding tussen de tekstfragmenten in te stellen. Het tekstdocumentfragment mag geen variabelen bevatten.
       * Gegevensmodelobject: Selecteer een eigenschap van het formuliergegevensmodel waarvan de waarde in het veld is ingevuld. U kunt ook het tabblad **Gegevensbronnen** selecteren en de eigenschap naar het veld slepen.
    * **[!UICONTROL Standaardwaarden]**: De standaardwaarde zorgt ervoor dat het veld niet leeg is wanneer er geen waarde wordt opgegeven door het opgegeven gegevensmodelobject of tekstfragment. Als het type gegevensbinding geen is, wordt de standaardwaarde in het veld vooraf ingevuld.
    * **[!UICONTROL Weergavepatroon]**: U kunt ook een weergave-indeling voor een veld definiëren. Selecteer een van de vooraf gedefinieerde opties in de vervolgkeuzelijst **Type** om een weergave-indeling toe te passen op een veld. Selecteer **Aangepast** om een weergavepatroon te definiëren dat niet beschikbaar is in de lijst. Zie Patronen [voor gegevensweergave voor meer informatie](../../forms/using/create-interactive-communication.md#datadisplaypatterns)
@@ -298,7 +298,7 @@ In de volgende tabel ziet u een voorbeeld van de waarden die worden weergegeven 
 
 Als er geen weergavepatroon is opgegeven voor een variabele of een formuliergegevensmodelelement, wordt standaard de [algemene documentfragmentconfiguratie](https://helpx.adobe.com//experience-manager/6-5/forms/using/interactive-communication-configuration-properties.html) gebruikt.
 
-Als u geen weergavepatroon toepast op een variabele van het gegevenstype Number, wordt het patroon in de afdrukvoorbeeld weergegeven volgens de algemene configuratie van het documentfragment. Als u veranderingen op de standaard globale configuratie van het documentfragment toepast, toont de UI van de Agent nog het patroon volgens de standaardseparators die voor de scène worden bepaald.
+Als u geen weergavepatroon toepast op een variabele van het gegevenstype Number, wordt in de afdrukvoorbeeld het patroon weergegeven op basis van de algemene configuratie van het documentfragment. Als u veranderingen op de standaard globale configuratie van het documentfragment toepast, toont de UI van de Agent nog het patroon volgens de standaardseparators die voor de scène worden bepaald.
 
 Als er voor velden geen weergavepatroon is opgegeven, wordt het patroon dat tijdens het maken van de afdruksjabloon (XDP) is gedefinieerd, op dezelfde manier op het veld toegepast. Als er geen patroon is tijdens het maken van de afdruksjabloon, worden de standaardpatronen op basis van XFA-specificaties toegepast op de velden.
 
@@ -376,7 +376,7 @@ Tik op het hoofdvenster in de websjabloon en tik op **+** om een **tabelcomponen
 
 ![Werkbalk Component](assets/component_toolbar_table_row_new.png)
 
-******** A. Rij **B toevoegen. Rij** C verwijderen.**Omhoog** D verplaatsen. Omlaag verplaatsen
+**A.** Rij **B toevoegen.** Rij **C verwijderen.** Omhoog **D verplaatsen.** Omlaag verplaatsen
 
 #### Tekst toevoegen of bewerken in tabelcellen {#addedittexttable}
 
@@ -393,7 +393,7 @@ Tik op het hoofdvenster in de websjabloon en tik op **+** om een **tabelcomponen
 
 #### Een hyperlink maken voor tekst in de tabelcel {#createhyperlinktable}
 
-1. Selecteer het standaardtekstvak in de tabelcel en tik op ![](https://helpx.adobe.com/content/dam/help/images/en/edit.png) (Bewerken).
+1. Selecteer het standaardtekstvak in de tabelcel en tik op ![](assets/edit.svg) (Bewerken).
 1. Selecteer de tekst in de tabelcel en tik op het pictogram Hyperlink.
 1. Geef de URL op in het veld **Pad** .
 1. Tik ![](assets/done_icon.png) om de eigenschappen van de hyperlink op te slaan.
@@ -548,7 +548,7 @@ Het dialoogvenster Overerving herstellen wordt weergegeven.
 
 ![revertovererving](assets/revertinheritance.png)
 
-Selecteer zo nodig De pagina **[!UICONTROL synchroniseren na het omkeren van de overerving]**. Selecteer deze optie om de volledige interactieve communicatie te synchroniseren. Als u deze optie niet selecteert, wordt alleen het desbetreffende doelgebied gesynchroniseerd bij het opnieuw instellen van de overerving.
+Selecteer zo nodig De pagina **[!UICONTROL synchroniseren na het omkeren van overerving]**. Selecteer deze optie om de volledige interactieve communicatie te synchroniseren. Als u deze optie niet selecteert, wordt alleen het desbetreffende doelgebied gesynchroniseerd bij het opnieuw instellen van de overerving.
 
 Tik op **[!UICONTROL Ja]**.
 
@@ -573,17 +573,17 @@ Als u automatisch gegenereerde inhoud in het webkanaal hebt met de optie Synchro
 
 Tik op de component om de volgende opties weer te geven:
 
-* **** Kopiëren: Kopieer een component en plak deze op andere plaatsen in de interactieve communicatie.
-* **** Knippen: Verplaats een component van één plaats naar een andere in de Interactieve Communicatie.
-* **** Component invoegen: Voeg een component in boven de geselecteerde component.
-* **** Plakken: Plak de component die u hebt geknipt of gekopieerd met de hierboven beschreven opties.
-* **** Groep: Selecteer meerdere componenten als u meerdere componenten tegelijk wilt knippen, kopiëren of plakken.
-* **** Bovenliggend element: Selecteer het bovenliggende element van een component.
-* **** SOM-expressie weergeven: De [SOM-expressie](../../forms/using/using-som-expressions-adaptive-forms.md) voor de component weergeven.
+* **Kopiëren:** Kopieer een component en plak deze op andere plaatsen in de interactieve communicatie.
+* **Knippen:** Verplaats een component van één plaats naar een andere in de Interactieve Communicatie.
+* **Component invoegen:** Voeg een component in boven de geselecteerde component.
+* **Plakken:** Plak de component die u hebt geknipt of gekopieerd met de hierboven beschreven opties.
+* **Groep:** Selecteer meerdere componenten als u meerdere componenten tegelijk wilt knippen, kopiëren of plakken.
+* **Bovenliggend element:** Selecteer het bovenliggende element van een component.
+* **SOM-expressie weergeven:** Bekijk de [SOM uitdrukking](../../forms/using/using-som-expressions-adaptive-forms.md) voor de component.
 
-* **** Objecten groeperen in deelvenster: Groepeer de componenten in een paneel om verrichtingen op die componenten gelijktijdig kunnen uitvoeren. Zie Objecten **[groeperen in deelvenster](../../forms/using/create-interactive-communication.md#main-pars-header-1815149576)**voor meer informatie.
+* **Objecten groeperen in deelvenster:** Groepeer de componenten in een paneel om verrichtingen op die componenten gelijktijdig kunnen uitvoeren. Zie Objecten **[groeperen in deelvenster](../../forms/using/create-interactive-communication.md#main-pars-header-1815149576)**voor meer informatie.
 
-* **** Overerving annuleren: [Annuleer de overerving](../../forms/using/create-interactive-communication.md#main-pars-header-103384010) van de componenten binnen het doelgebied om deze te bewerken.
+* **Overerving annuleren:** [Annuleer de overerving](../../forms/using/create-interactive-communication.md#main-pars-header-103384010) van de componenten binnen het doelgebied om deze te bewerken.
 
 ### Objecten groeperen in deelvenster {#groupobjectspanel}
 

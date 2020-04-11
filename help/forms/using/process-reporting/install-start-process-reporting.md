@@ -10,7 +10,7 @@ topic-tags: process-reporting
 discoiquuid: 7c1fcde0-b983-4b24-bc19-fcee1d4f096b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -279,5 +279,3 @@ Voor details op de gegevens het publiceren dienst en hoe te om deze dienst te pl
 * **[!UICONTROL Synchroniseren]**: Synchroniseer de ingesloten Process Reporting-opslagplaats met de AEM Forms-database.
 * **[!UICONTROL Help]**: Raadpleeg de Help-documentatie bij Process Reporting.
 * **[!UICONTROL Afmelden]**: Afmelden bij procesrapportage
-
-[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)

@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: ca3f6025-7e17-4173-8267-e24a338ea4a1
 translation-type: tm+mt
-source-git-commit: 21623c615ebe69226cfaf84baf4cfb1717b449f4
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -359,5 +359,3 @@ Voer de volgende stappen uit om het pop-upmenu Acties voor details aan te passen
 * Open het bestand /apps/ws/js/registry.js voor bewerking.
 * Zoek de volgende tekst: `text!/lc/libs/ws/js/runtime/templates/taskdetails.html`
 * Vervang de gelokaliseerde tekst door de volgende tekst: `text!/lc/apps/ws/js/runtime/templates/taskdetails.html`
-
-[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)

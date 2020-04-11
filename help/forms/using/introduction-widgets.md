@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 discoiquuid: 3c2a44a7-24e7-49ee-bf18-eab0e44efa42
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -123,7 +123,7 @@ Het weergaveframework roept enkele functies van de widget aan die in de aangepas
 <table>
  <tbody>
   <tr>
-   <th>Functie</th>
+   <th>-functie</th>
    <th>Beschrijving</th>
   </tr>
   <tr>
@@ -154,7 +154,7 @@ Alle aangepaste widgets moeten voldoen aan de bovenstaande specificaties. Als u 
 <table>
  <tbody>
   <tr>
-   <th>Option</th>
+   <th>Optie</th>
    <th>Beschrijving</th>
   </tr>
   <tr>
@@ -177,7 +177,7 @@ Alle aangepaste widgets moeten voldoen aan de bovenstaande specificaties. Als u 
 <table>
  <tbody>
   <tr>
-   <th>Option</th>
+   <th>Optie</th>
    <th>Beschrijving</th>
   </tr>
   <tr>
@@ -186,7 +186,7 @@ Alle aangepaste widgets moeten voldoen aan de bovenstaande specificaties. Als u 
   </tr>
   <tr>
    <td>items<br /> </td>
-   <td>Array met objecten die als opties moeten worden weergegeven. <br /> Elk object bevat twee eigenschappen -<br /> save: op te slaan waarde, weergave: waarde die moet worden weergegeven. <br /> </td>
+   <td>Array met objecten die als opties moeten worden weergegeven. Elk object bevat twee eigenschappen -<br /> save: op te slaan waarde, weergave: waarde die moet worden weergegeven.<br /> <br /> </td>
   </tr>
   <tr>
    <td><p>bewerkbaar</p> <p><strong>Opmerking</strong>: Alleen van toepassing op HTML5-formulieren.<br /> </p> </td>
@@ -208,11 +208,11 @@ Alle aangepaste widgets moeten voldoen aan de bovenstaande specificaties. Als u 
 <table>
  <tbody>
   <tr>
-   <th>Functie</th>
+   <th>-functie</th>
    <th>Beschrijving</th>
   </tr>
   <tr>
-   <td><p><em> addItem: function(itemValues)<br /> itemValues: object met de weergave- en opslagwaarde <br /> {sDisplayVal: &lt;displayValue&gt;, sSaveVal: &lt;waarde opslaan&gt;</em></p> </td>
+   <td><p>addItem:<em> function(itemValues)<br /> itemValues: object met de weergave- en opslagwaarde <br /> {sDisplayVal: &lt;displayValue&gt;, sSaveVal: &lt;waarde opslaan&gt;</em></p> </td>
    <td>Hiermee wordt een item aan de lijst toegevoegd.</td>
   </tr>
   <tr>
@@ -245,7 +245,7 @@ Alle aangepaste widgets moeten voldoen aan de bovenstaande specificaties. Als u 
    <th>Beschrijving</th>
   </tr>
   <tr>
-   <td>waarden</td>
+   <td>values</td>
    <td><p>Array van waarden (aan/uit/neutraal).</p> <p>Het is een array van waarden voor de verschillende toestanden van de checkButton. values[0] is the value when the state is ON, values[1] is the value when the state is OFF,<br /> values[2] is the value when the state is NEUTRAL. De lengte van de waardenarray is gelijk aan de waarde van de statusoptie.<br /> </p> </td>
   </tr>
   <tr>
@@ -261,11 +261,9 @@ Alle aangepaste widgets moeten voldoen aan de bovenstaande specificaties. Als u 
 
 ### DateTimeEdit: (DateField) {#datetimeedit-datefield}
 
-| Option | Beschrijving |
+| Optie | Beschrijving |
 |---|---|
 | dagen | Gelokaliseerde naam van dagen voor dat veld. |
 | maanden | Gelokaliseerde maandnamen voor dat veld. |
 | nul | De gelokaliseerde tekst voor het getal 0. |
 | clearText | De gelokaliseerde tekst voor wissen knop. |
-
-**[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)**

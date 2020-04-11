@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: fa6e0246-6bd2-4ffb-b54c-15eda605f213
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -61,22 +61,20 @@ Wanneer u in de werkruimte van AEM-formulieren navigeert met een toetsenbord, vo
 
 U kunt de verschillende voorkeuren voor de werkruimte van AEM-formulieren in de volgende categorieën instellen:
 
-**** Buiten kantoor: Stel voorkeuren in om te bepalen hoe taken aan andere personen worden toegewezen terwijl u zich buiten het kantoor bevindt. Zie [Voorkeuren](/help/forms/using/todo-lists.md#main-pars-heading-22)instellen voor gebruik buiten het kantoor.
+**Buiten kantoor:** Stel voorkeuren in om te bepalen hoe taken aan andere personen worden toegewezen terwijl u zich buiten het kantoor bevindt. Zie [Voorkeuren](/help/forms/using/todo-lists.md#main-pars-heading-22)instellen voor gebruik buiten het kantoor.
 
-**** Wachtrijen: Stel voorkeuren in voor het delen van uw lijst Aan/Uit met andere gebruikers of voor het aanvragen van toegang tot de lijst van een andere gebruiker. Zie [Werken met taken uit groep en gedeelde rijen](/help/forms/using/todo-lists.md#main-pars-heading-19).
+**Wachtrijen:** Stel voorkeuren in voor het delen van uw lijst Aan/Uit met andere gebruikers of voor het aanvragen van toegang tot de lijst van een andere gebruiker. Zie [Werken met taken uit groep en gedeelde rijen](/help/forms/using/todo-lists.md#main-pars-heading-19).
 
-**** UI-instellingen: Stel voorkeuren in voor de interactie met de werkruimte van AEM-formulieren. Zie Voorkeuren voor de [gebruikersinterface instellen](/help/forms/using/getting-started-livecycle-html-workspace.md#main-pars-heading-5).
+**UI-instellingen:** Stel voorkeuren in voor de interactie met de werkruimte van AEM-formulieren. Zie Voorkeuren voor de [gebruikersinterface instellen](/help/forms/using/getting-started-livecycle-html-workspace.md#main-pars-heading-5).
 
 ### Gebruikersinterfacevoorkeuren instellen {#set-user-interface-preferences}
 
 Stel de voorkeuren voor de gebruikersinterface in op het tabblad Voorkeuren > UI-instellingen. De volgende voorkeuren zijn beschikbaar.
 
-* **** Startlocatie: Hiermee geeft u de pagina op die wordt weergegeven wanneer u zich aanmeldt bij de werkruimte van AEM Forms. De vier beschikbare opties zijn Start Process, To Do, Tracking en Favorites.
-* **** Afmeldingsvraag: Hiermee geeft u aan of u wordt gevraagd te bevestigen dat u zich wilt afmelden nadat u op Afmelden hebt geklikt.
-* **** Datumnotatie: Hier geeft u de indeling op voor de datumweergave die wordt gebruikt in de werkruimte van AEM Forms.
+* **Startlocatie:** Hiermee geeft u de pagina op die wordt weergegeven wanneer u zich aanmeldt bij de werkruimte van AEM Forms. De vier beschikbare opties zijn Start Process, To Do, Tracking en Favorites.
+* **Afmeldingsvraag:** Hiermee geeft u aan of u wordt gevraagd te bevestigen dat u zich wilt afmelden nadat u op Afmelden hebt geklikt.
+* **Datumnotatie:** Hier geeft u de indeling op voor de datumweergave die wordt gebruikt in de werkruimte van AEM Forms.
 * **Tijdnotatie**: Hier geeft u de tijdweergaveformaat op die in de werkruimte van AEM Forms wordt gebruikt.
-* **** Taakgebeurtenissen via e-mail op de hoogte stellen: Hiermee geeft u aan of u e-mailmeldingen voor taakgebeurtenissen ontvangt, inclusief taaktoewijzingen, herinneringen en deadlines voor taken in de lijst Aan-taak en in de lijst Van-taak waarvan u deel uitmaakt.
-* **** Formulieren bijvoegen in e-mail: Hiermee geeft u aan of een kopie van het formulier bij e-mailmeldingsberichten moet worden gevoegd. Bijlagen worden alleen ondersteund voor PDF- en XDP-formulieren.
-* **** Concepten periodiek opslaan: Hiermee geeft u aan of uw formulierconcepten regelmatig automatisch worden opgeslagen. Als u uw concepten periodiek wilt opslaan, schakelt u deze optie in en stelt u de duur voor automatisch opslaan in op 1 tot 30 minuten. Wanneer automatisch opslaan is ingeschakeld en een gebruiker aan een concept werkt, wordt het concept periodiek opgeslagen na het opgegeven aantal minuten. Het concept wordt alleen automatisch opgeslagen wanneer het concept is gewijzigd sinds de laatste keer dat het is opgeslagen of automatisch is opgeslagen. Wanneer het concept wordt opgeslagen, verschijnt er een waarschuwingsbericht op het scherm.
-
-**[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)**
+* **Taakgebeurtenissen via e-mail op de hoogte stellen:** Hiermee geeft u aan of u e-mailmeldingen voor taakgebeurtenissen ontvangt, inclusief taaktoewijzingen, herinneringen en deadlines voor taken in de lijst Aan-taak en in de lijst Van-taak waarvan u deel uitmaakt.
+* **Formulieren bijvoegen in e-mail:** Hiermee geeft u aan of een kopie van het formulier bij e-mailmeldingsberichten wordt gevoegd. Bijlagen worden alleen ondersteund voor PDF- en XDP-formulieren.
+* **Concepten periodiek opslaan:** Hiermee geeft u aan of uw formulierconcepten regelmatig automatisch worden opgeslagen. Als u uw concepten periodiek wilt opslaan, schakelt u deze optie in en stelt u de duur voor automatisch opslaan in op 1 tot 30 minuten. Wanneer automatisch opslaan is ingeschakeld en een gebruiker aan een concept werkt, wordt het concept periodiek opgeslagen na het opgegeven aantal minuten. Het concept wordt alleen automatisch opgeslagen wanneer het concept is gewijzigd sinds de laatste keer dat het is opgeslagen of automatisch is opgeslagen. Wanneer het concept wordt opgeslagen, verschijnt er een waarschuwingsbericht op het scherm.

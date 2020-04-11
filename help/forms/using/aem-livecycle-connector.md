@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 7e404b45-1302-4dd1-b3c9-3f47fedb5f94
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -35,7 +35,7 @@ Hoewel de eigenschappen vanzelfsprekend zijn, zijn de belangrijkste als volgt:
     -Djavax.net.ssl.trustStore=<<em>path to LC keystore</em>>
    ```
 
-    optie.
+   optie.
 
 * **Gebruikersnaam**- Geeft de gebruikersnaam op van de account die wordt gebruikt om communicatie tot stand te brengen tussen AEM en LiveCycle. Het account is een LiveCycle-gebruikersaccount die gemachtigd is om Document Services te starten.
 * **Wachtwoord**- Geeft het wachtwoord op.
@@ -219,8 +219,8 @@ De volgende services zijn beschikbaar:
 * com.adobe.idp.um.api.AuthenticationManager
 * com.adobe.idp.um.api.DirectoryManager
 * com.adobe.idp.um.api.AuthorizationManager
-* com.adobe.idp.dsc.register.service.ServiceRegistry
-* com.adobe.idp.dsc.register.component.ComponentRegistry
+* com.adobe.idp.dsc.registry.service.ServiceRegistry
+* com.adobe.idp.dsc.registry.component.ComponentRegistry
 
 #### Geweven afhankelijkheden {#maven-dependencies}
 
@@ -260,9 +260,9 @@ De volgende services zijn beschikbaar:
 
 * com.adobe.idp.taskmanager.dsc.client.task.TaskManager
 * com.adobe.idp.taskmanager.dsc.client.TaskManagerQueryService
-* com.adobe.idp.taskmanager.dsc.client.queueManager.QueueManager
+* com.adobe.idp.taskmanager.dsc.client.queuemanager.QueueManager
 * com.adobe.idp.taskmanager.dsc.client.emailsettings.EmailSettingService
-* com.adobe.idp.taskmanager.dsc.client.Endpoint.TaskManagerEndpointClient
+* com.adobe.idp.taskmanager.dsc.client.endpoint.TaskManagerEndpointClient
 * com.adobe.idp.taskmanager.dsc.client.userlist.UserlistService
 
 #### Geweven afhankelijkheden {#maven-dependencies-2}
@@ -345,7 +345,7 @@ De volgende service is beschikbaar:
 
 De volgende service is beschikbaar:
 
-* com.adobe.livecycle.formdataIntegration.client.FormDataIntegrationClient
+* com.adobe.livecycle.formdataintegration.client.FormDataIntegrationClient
 
 #### Geweven afhankelijkheden {#maven-dependencies-7}
 
@@ -409,13 +409,13 @@ De volgende service is beschikbaar:
 
 De volgende services zijn beschikbaar:
 
-* com.adobe.livecycle.rightsManagement.client.DocumentManager
-* com.adobe.livecycle.rightsManagement.client.EventManager
-* com.adobe.livecycle.rights management.client.ExternalUserManager
-* com.adobe.livecycle.rights management.client.LicenseManager
-* com.adobe.livecycle.rightsManagement.client.WatermarkManager
-* com.adobe.livecycle.rightsManagement.client.PolicyManager
-* com.adobe.livecycle.rightsManagement.client.AbstractPolicyManager
+* com.adobe.livecycle.rightsmanagement.client.DocumentManager
+* com.adobe.livecycle.rightsmanagement.client.EventManager
+* com.adobe.livecycle.rightsmanagement.client.ExternalUserManager
+* com.adobe.livecycle.rightsmanagement.client.LicenseManager
+* com.adobe.livecycle.rightsmanagement.client.WatermarkManager
+* com.adobe.livecycle.rightsmanagement.client.PolicyManager
+* com.adobe.livecycle.rightsmanagement.client.AbstractPolicyManager
 
 #### Geweven afhankelijkheden {#maven-dependencies-11}
 
@@ -478,5 +478,3 @@ De volgende services zijn beschikbaar:
   <version>11.0.0</version>
 </dependency>
 ```
-
-[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)

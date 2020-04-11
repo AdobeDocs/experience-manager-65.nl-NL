@@ -4,7 +4,7 @@ description: Nieuw in Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -13,7 +13,7 @@ source-git-commit: 72a582b7ac19322b81fd1a92de8fce34e55b9db1
 
 Met Adobe Experience Manager (6.5) hebt u toegang tot nieuwe functies en voortdurende verbeteringen via de driemaandelijkse Service Pack-releases. Op deze manier kunt u de innovaties eenvoudig overnemen.
 
-Experience Manager Service Pack 4 (6.5.4.0) wordt vrijgegeven op 5 maart 2020. Het is een belangrijke update die nieuwe eigenschappen, zeer belangrijke klant-gevraagde verhogingen, en prestaties, stabiliteit, veiligheidsverbeteringen omvat, die sinds de algemene beschikbaarheid van 6.5 versie in April 2019 wordt vrijgegeven. U kunt Experience Manager 6.5.4.0 installeren boven op Adobe Experience Manager 6.5.
+Experience Manager Service Pack 4 (6.5.4.0) is een belangrijke update. Het omvat alle nieuwe eigenschappen, zeer belangrijke klant gevraagde verhogingen, prestaties, stabiliteit, en veiligheidsverbeteringen die sinds de versie van AEM 6.5 in April 2019 worden vrijgegeven. U kunt het de dienstpak op AEM 6.5 en recentere versies installeren.
 
 Dit artikel benadrukt de eigenschappen inbegrepen in het recentste 6.5 Service Pack, [belangrijkste eigenschappen inbegrepen in de vorige 6.5 Pakken](#key-features-previous-service-packs)van de Dienst, en sommige van de [belangrijkste versies sinds de Manager van de Ervaring 6.5.3.0](#key-features-sice-sp3).
 

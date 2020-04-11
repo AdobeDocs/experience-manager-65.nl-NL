@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: f6440a36-719a-4f89-b7db-1af918a3469a
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -152,7 +152,7 @@ Zorg ervoor dat u de volgende afbeeldingen hebt:
 
 1. Open het `Capture.xcodeproj` project in Xcode.
 
-1. Navigeer naar de `www/wsmobile/images`map.
+1. Navigate to the `www/wsmobile/images`folder.
 1. Als u het logo wilt wijzigen, vervangt u het standaardbestand door het aangepaste `LC-logo.png` `LC-logo.png` bestand.
 1. Als u de achtergrond wilt wijzigen, vervangt u het `Landing_bg.jpeg` standaardbestand door het aangepaste `Landing_bg.jpeg`bestand.
 1. Maak en voer de app AEM Forms uit op een iOS-apparaat of iOS-simulator.
@@ -161,7 +161,7 @@ Zorg ervoor dat u de volgende afbeeldingen hebt:
 
 1. Open het Android-project in Eclipse.
 
-1. Navigeer naar de `assets/www/wsmobile/images`map.
+1. Navigate to the `assets/www/wsmobile/images`folder.
 1. Als u het logo wilt wijzigen, vervangt u het standaardbestand door het aangepaste `LC-logo.png` `LC-logo.png` bestand.
 1. Als u de achtergrond wilt wijzigen, vervangt u het `Landing_bg.jpeg` standaardbestand door het aangepaste `Landing_bg.jpeg`bestand.
 1. De app AEM Forms ontwikkelen en uitvoeren op Android-apparaten.
@@ -170,7 +170,7 @@ Zorg ervoor dat u de volgende afbeeldingen hebt:
 
 1. Open het `MWSWindows.sln` project in Visual Studio.
 
-1. Navigeer naar de `MWSWindows\www\wsmobile\images`map.
+1. Navigate to the `MWSWindows\www\wsmobile\images`folder.
 1. Als u het logo wilt wijzigen, vervangt u het standaardbestand door het aangepaste `LC-logo.png` `LC-logo.png` bestand.
 1. Als u de achtergrond wilt wijzigen, vervangt u het `Landing_bg.jpeg` standaardbestand door het aangepaste `Landing_bg.jpeg`bestand.
 1. Maak en voer de app AEM Forms op Windows-apparaat uit.
@@ -202,7 +202,7 @@ Zorg ervoor dat u de volgende afbeelding hebt:
 
 1. Open het `Capture.xcodeproj` project in Xcode.
 
-1. Navigeer naar de `www/wsmobile/images`map.
+1. Navigate to the `www/wsmobile/images`folder.
 1. Als u het logo wilt wijzigen, vervangt u het standaardbestand door het aangepaste `aem_icon.png` `aem_icon.png` bestand.
 1. Maak en voer de app AEM Forms uit op een iOS-apparaat of iOS-simulator.
 
@@ -210,7 +210,7 @@ Zorg ervoor dat u de volgende afbeelding hebt:
 
 1. Open het Android-project in Eclipse.
 
-1. Navigeer naar de `assets/www/wsmobile/images`map.
+1. Navigate to the `assets/www/wsmobile/images`folder.
 1. Als u het logo wilt wijzigen, vervangt u het standaardbestand door het aangepaste `aem_icon.png` `aem_icon.png` bestand.
 1. De app AEM Forms ontwikkelen en uitvoeren op Android-apparaten.
 
@@ -218,8 +218,6 @@ Zorg ervoor dat u de volgende afbeelding hebt:
 
 1. Open het `MWSWindows.sln` project in Visual Studio.
 
-1. Navigeer naar de `MWSWindows\www\wsmobile\images`map.
+1. Navigate to the `MWSWindows\www\wsmobile\images`folder.
 1. Als u het logo wilt wijzigen, vervangt u het standaardbestand door het aangepaste `aem_icon.png` `aem_icon.png` bestand.
 1. Maak en voer de app AEM Forms op Windows-apparaat uit.
-
-[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)

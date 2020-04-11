@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 2228dcdd-5c9c-46b3-9888-489756c04887
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
 
 ---
 
@@ -43,7 +43,7 @@ U kunt instellen welke kolommen worden weergegeven in de zoekresultaten.
 
 Op de pagina Volgen kunt u een proces selecteren en de details ervan bekijken. U kunt de processen zoeken die op diverse parameters worden gebaseerd om de taakdetails te bekijken. U kunt het tabblad Status ook weergeven voor processen waarbij meerdere gebruikers taken gelijktijdig ontvangen, waarbij de gereedschappen voor het reviseren van documenten zijn ingeschakeld.
 
-**** Status: De status van taken in een proces wordt weergegeven in de kolom Geselecteerde actie wanneer u op een taak klikt. De status van het proces is echter niet beschikbaar.
+**Status:** De status van taken in een proces wordt weergegeven in de kolom Geselecteerde actie wanneer u op een taak klikt. De status van het proces is echter niet beschikbaar.
 
 1. Selecteer de procesinstantie in de lijst met zoekresultaten om details weer te geven van de taken die deel uitmaken van de procesinstantie.
 1. Voer een of meer van de volgende handelingen uit om meer informatie over een taak weer te geven:
@@ -51,5 +51,3 @@ Op de pagina Volgen kunt u een proces selecteren en de details ervan bekijken. U
    * Klik op het tabblad Bijlagen om notities en bijlagen voor een taak weer te geven.
    * Klik op het tabblad Toewijzing om de taaktoewijzingsdetails weer te geven.
    * Klik op de knop Formulier om het bijbehorende formulier weer te geven.
-
-[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)

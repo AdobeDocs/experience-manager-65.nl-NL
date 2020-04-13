@@ -4,7 +4,7 @@ description: Leer de taken voor middelenbeheer, zoals het uploaden, downloaden, 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d1331c8c023a1e414e0231d082667d67c4adf17a
+source-git-commit: 24c72d79fe1ebd140d7746759d73cbaffdd1ea2d
 
 ---
 
@@ -161,7 +161,7 @@ Met Dynamic Media kunt u via de FTP-server items in batches uploaden. Als u grot
 1. Tik in de rechterbenedenhoek van de uploadpagina op **[!UICONTROL Uploaden]** verzenden.
 
    Tik op **[!UICONTROL Taken]**op de algemene navigatiebalk om de voortgang van het uploaden weer te geven. Op de pagina Taken wordt de voortgang van het uploaden weergegeven. U kunt in AEM blijven werken en aan de pagina van Banen in Dynamische Klassiek van Media op elk ogenblik terugkeren om een lopende baan te herzien.
-Als u een uploadtaak die wordt uitgevoerd wilt annuleren, tikt u op **[!UICONTROL Annuleren]** naast de duur.
+Tik naast de duur op **[!UICONTROL Annuleren]** om een actieve uploadtaak te annuleren.
 
 #### Opties voor uploaden {#upload-job-options}
 
@@ -850,7 +850,7 @@ Tik op het pictogram **[!UICONTROL Afdrukken]** en volg de instructies in de wiz
 
    Ga terug naar het gerenderde PDF-bestand en vernieuw het. De vernieuwde PDF weerspiegelt de wijzigingen die u hebt aangebracht.
 
-Als een element annotaties in vreemde talen bevat (vooral niet-Latijnse talen), moet u eerst de service CQ-DAM-Handler-Gibson Font Manager op de AEM-server configureren om deze annotaties af te drukken. Geef bij het configureren van de service CQ-DAM-Handler-Gibson Font Manager het pad op waar de lettertypen voor de gewenste talen zich bevinden.
+Als een element annotaties in vreemde talen bevat (met name niet-Latijnse talen), moet u eerst de service CQ-DAM-Handler-Gibson Font Manager op de AEM-server configureren om deze annotaties af te drukken. Geef bij het configureren van de service CQ-DAM-Handler-Gibson Font Manager het pad op waar de lettertypen voor de gewenste talen zich bevinden.
 
 1. Open de configuratiepagina CQ-DAM-Handler-Gibson Font Manager Service via de URL `https://[aem_server]:[port]/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl`.
 1. Voer een van de volgende handelingen uit om CQ-DAM-Handler-Gibson Font Manager Service te configureren:
@@ -880,7 +880,7 @@ Hier ziet u hoe u AEM kunt configureren voor het afdrukken van annotaties in CJK
 
 ## Elementversies maken, beheren, voorvertonen en herstellen {#asset-versioning}
 
-Met Versioning maakt u een momentopname van digitale elementen op een bepaald tijdstip. Versioning helpt bij het terugzetten van elementen naar een vorige status op een later tijdstip. Als u bijvoorbeeld een wijziging in een element ongedaan wilt maken, herstelt u de onbewerkte versie van het element.
+Met Versioning maakt u een momentopname van digitale elementen op een bepaald tijdstip. Versioning helpt bij het terugzetten van elementen naar een vorige status op een later tijdstip. Als u bijvoorbeeld een wijziging in een element ongedaan wilt maken, herstelt u de onbewerkte versie van het element. In Experience Manager kunt u een versie maken, de huidige revisie bekijken, verschillen tussen twee versies van afbeeldingen naast elkaar weergeven en een element terugzetten naar de vorige versie.
 
 In de volgende gevallen kunt u versies maken in Experience Manager:
 
@@ -891,17 +891,11 @@ In de volgende gevallen kunt u versies maken in Experience Manager:
 
 U kunt automatische versioning ook inschakelen via een workflow. Wanneer u een versie voor een element maakt, worden de metagegevens en de uitvoeringen samen met de versie opgeslagen. Uitvoeringen zijn alternatieven voor dezelfde afbeeldingen, bijvoorbeeld een PNG-uitvoering van een geüpload JPEG-bestand.
 
-In Experience Manager kunt u:
-
-* Maak een versie van een element.
-* De huidige revisie voor een element weergeven.
-* Herstel het element naar een vorige versie.
-
 1. Navigeer naar de locatie van het element waarvoor u een versie wilt maken en klik erop om de voorvertoning te openen. Open het menu in de linkerbovenhoek van de pagina en selecteer **[!UICONTROL Tijdlijn]**.
 
    ![Selecteer de optie Tijdlijn in het navigatiemenu aan de linkerkant](assets/timeline.png)
 
-*Afbeelding: Open het menu in de linkerbovenhoek van de pagina en selecteer de optie[!UICONTROL Tijdlijn].*
+   *Afbeelding: Open het menu in de linkerbovenhoek van de pagina en selecteer de optie[!UICONTROL Tijdlijn].*
 
 1. Een versie van het element maken:
 
@@ -910,6 +904,8 @@ In Experience Manager kunt u:
    * Klik op **[!UICONTROL Maken]** om een versie te maken.
 
       ![chlimage_1-251](assets/create-new-version-from-timeline.png)
+
+      *Afbeelding: Maak een versie van een element op de linkerzijbalk van de[!UICONTROL tijdlijn].*
 
 1. Een versie van een element weergeven:
 
@@ -926,6 +922,8 @@ In Experience Manager kunt u:
    * Klik op **[!UICONTROL Vorige versie]**.
 
       ![select_version](assets/select_version.png)
+
+      *Afbeelding: Selecteer een versie en herstel deze. Het wordt de huidige versie die dan beschikbaar aan de gebruikers DAM is.*
 
 1. Voer de volgende stappen uit om twee versies van een afbeelding te vergelijken:
    * Klik op de versie die u met de huidige versie wilt vergelijken.

@@ -4,7 +4,7 @@ description: Leer de taken voor middelenbeheer, zoals het uploaden, downloaden, 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 82ed39dac05591b9bdc9fda101ed450c2096dc60
+source-git-commit: d1331c8c023a1e414e0231d082667d67c4adf17a
 
 ---
 
@@ -878,65 +878,61 @@ Hier ziet u hoe u AEM kunt configureren voor het afdrukken van annotaties in CJK
 1. Configureer het PDF-bestand met annotaties door de parameter font-family in te stellen op `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif`. Deze configuratie is standaard beschikbaar en werkt voor alle Europese en CJK-talen.
 1. Als de taal van uw keuze afwijkt van de talen die in stap 2 worden genoemd, voegt u een geschikt item (gescheiden door komma&#39;s) toe aan de standaardlettertypefamilie.
 
-## Elementen {#asset-versioning}
+## Elementversies maken, beheren, voorvertonen en herstellen {#asset-versioning}
 
 Met Versioning maakt u een momentopname van digitale elementen op een bepaald tijdstip. Versioning helpt bij het terugzetten van elementen naar een vorige status op een later tijdstip. Als u bijvoorbeeld een wijziging in een element ongedaan wilt maken, herstelt u de onbewerkte versie van het element.
 
-Hieronder vindt u scenario&#39;s waarin u versies maakt:
+In de volgende gevallen kunt u versies maken in Experience Manager:
 
-* U wijzigt een afbeelding in een andere toepassing en uploadt deze naar AEM Assets. Er wordt een versie van de afbeelding gemaakt, zodat de oorspronkelijke afbeelding niet wordt overschreven.
-* U bewerkt de metagegevens van een element.
-* Met de AEM-bureaubladtoepassing kunt u een bestaand middel uitchecken en uw wijzigingen opslaan. Elke keer dat het element wordt opgeslagen, wordt een nieuwe versie gemaakt.
+* Upload een element met dezelfde bestandsnaam die op dezelfde locatie bestaat. Dit kan een nieuw element of een gewijzigde versie van hetzelfde element zijn.
+* Bewerk een afbeelding in Experience Manager en sla de wijzigingen op.
+* Bewerk de metagegevens van een element.
+* Gebruik de AEM-bureaubladtoepassing om een bestaand middel uit te checken, te bewerken en uw wijzigingen [te](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#edit-assets-upload-updated-assets)uploaden.
 
 U kunt automatische versioning ook inschakelen via een workflow. Wanneer u een versie voor een element maakt, worden de metagegevens en de uitvoeringen samen met de versie opgeslagen. Uitvoeringen zijn alternatieven voor dezelfde afbeeldingen, bijvoorbeeld een PNG-uitvoering van een geüpload JPEG-bestand.
 
-Met de versiefunctionaliteit kunt u het volgende doen:
+In Experience Manager kunt u:
 
 * Maak een versie van een element.
 * De huidige revisie voor een element weergeven.
 * Herstel het element naar een vorige versie.
 
-1. Navigeer naar de locatie van het element waarvoor u een versie wilt maken en tik op het element of klik erop om de elementpagina te openen.
+1. Navigeer naar de locatie van het element waarvoor u een versie wilt maken en klik erop om de voorvertoning te openen. Open het menu in de linkerbovenhoek van de pagina en selecteer **[!UICONTROL Tijdlijn]**.
 
-1. Tik/klik op het pictogram GlobalNav en kies **[!UICONTROL Tijdlijn]** in het menu.
+   ![Selecteer de optie Tijdlijn in het navigatiemenu aan de linkerkant](assets/timeline.png)
 
-   ![tijdlijn](assets/timeline.png)
+*Afbeelding: Open het menu in de linkerbovenhoek van de pagina en selecteer de optie[!UICONTROL Tijdlijn].*
 
-1. Klik op de **[!UICONTROL Handelingen]** onderaan om de beschikbare handelingen weer te geven die u op het element kunt uitvoeren.
+1. Een versie van het element maken:
 
-1. Tik/klik op **[!UICONTROL Opslaan als versie]** om een versie voor het element te maken.
+   * Klik op de **[!UICONTROL Handelingen]** onderaan.
+   * Klik op **[!UICONTROL Opslaan als versie]** om een versie voor het element te maken. Voeg desgewenst een label en opmerking toe.
+   * Klik op **[!UICONTROL Maken]** om een versie te maken.
 
-   ![chlimage_1-250](assets/chlimage_1-46.png)
+      ![chlimage_1-251](assets/create-new-version-from-timeline.png)
 
-1. Voeg een label en opmerking toe en klik op **[!UICONTROL Maken]** om een versie te maken. Of tik op **Annuleren** of klik op Annuleren om de bewerking af te sluiten.
+1. Een versie van een element weergeven:
 
-   ![chlimage_1-251](assets/chlimage_1-47.png)
+   * Klik op Alles **** tonen in [!UICONTROL tijdlijn].
+   * Klik op **[!UICONTROL Versies]**. Alle versies die voor een element zijn gemaakt, worden weergegeven in de linkerzijbalk.
 
-1. To view the new version, open the **[!UICONTROL Show All]** list in the timeline from the asset details page or the Assets UI, and choose **[!UICONTROL Versions]**. Alle versies die voor een asset zijn gemaakt, worden weergegeven onder het tabblad Tijdlijn. You can filter the list to show Versions, by clicking the drop arrow and selecting **[!UICONTROL Versions]** from the list.
+      ![version_option](assets/versions_option.png)
 
-   ![version_option](assets/versions_option.png)
+   * Selecteer een specifieke versie van het element en klik op **[!UICONTROL Voorvertoningsversie]**.
 
-1. Selecteer een specifieke versie voor het element om er een voorvertoning van weer te geven of schakel de optie in voor weergave in de interface Middelen.
+1. Ga als volgt te werk om terug te keren naar een oudere versie van het element. Na het terugkeren wordt deze versie weergegeven in de [!DNL Assets] interface en is deze beschikbaar voor gebruik.
 
-   ![select_version](assets/select_version.png)
+   * Klik op een versie van het element. Voeg desgewenst een label en een opmerking toe.
+   * Klik op **[!UICONTROL Vorige versie]**.
 
-   >[!NOTE]
-   >
-   >U kunt het element ook selecteren in de [lijstweergave](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) of in de [kolomweergave](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+      ![select_version](assets/select_version.png)
 
-1. Voeg een label en een opmerking voor de versie toe om terug te keren naar de specifieke versie in de interface Middelen.
+1. Voer de volgende stappen uit om twee versies van een afbeelding te vergelijken:
+   * Klik op de versie die u met de huidige versie wilt vergelijken.
+   * Sleep de schuifregelaar naar links om deze versie over de huidige versie heen te plaatsen en te vergelijken.
+   ![Gebruik de schuifregelaar om de geselecteerde versies van een element te vergelijken met de huidige versie](assets/version-slider.gif)
 
-   ![save_version](assets/save_version.png)
-
-1. To generate a preview for the version, tap/click **[!UICONTROL Preview Version]**.
-1. Selecteer **[!UICONTROL Terugkeren naar deze versie]** om deze versie weer te geven in de interface Elementen.
-1. Als u twee versies wilt vergelijken, gaat u naar de elementpagina van het element en tikt u op de versie die u met de huidige versie wilt vergelijken.
-
-   ![select_version_to_compare](assets/select_version_tocompare.png)
-
-1. Selecteer in de tijdlijn de versie die u wilt vergelijken en sleep de schuifregelaar naar links om deze versie over de huidige versie heen te plaatsen en te vergelijken.
-
-   ![compare_versions](assets/compare_versions.png)
+   *Afbeelding: Gebruik de schuifregelaar om de geselecteerde versies van een element eenvoudig te vergelijken met de huidige versie.*
 
 ### Een workflow op een element starten {#starting-a-workflow-on-an-asset}
 

@@ -4,7 +4,7 @@ description: Leer de taken voor middelenbeheer, zoals het uploaden, downloaden, 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: be619b71dd0bb1addc10f4dbdbd2f00bc86dd003
+source-git-commit: 82ed39dac05591b9bdc9fda101ed450c2096dc60
 
 ---
 
@@ -94,7 +94,7 @@ Voordat u een element uploadt, moet u ervoor zorgen dat dit een [indeling](/help
    >
    >Als Asset Insights is ingeschakeld voor het bijhouden van indrukken/klikken met Adobe Analytics, maakt de opnieuw gegenereerde asset-id de gegevensopname voor het element op Analytics ongeldig.
 
-   Als het element dat u uploadt aanwezig is in AEM Assets, wordt in het dialoogvenster **[!UICONTROL Duplicaten gedetecteerd]** gewaarschuwd dat u probeert een gedupliceerd element te uploaden. Het dialoogvenster wordt alleen weergegeven als de waarde van de `SHA 1` controlesom van het binaire element van het bestaande element overeenkomt met de waarde van de controlesom van het element dat u uploadt. In dit geval zijn de namen van elementen niet van belang.
+   Als het element dat u uploadt aanwezig is in AEM Assets, wordt in het dialoogvenster **[!UICONTROL Duplicaten gedetecteerd]** gewaarschuwd dat u probeert een dubbel element te uploaden. Het dialoogvenster wordt alleen weergegeven als de waarde van de `SHA 1` controlesom van het binaire element van het bestaande element overeenkomt met de waarde van de controlesom van het element dat u uploadt. In dit geval zijn de namen van elementen niet van belang.
 
    >[!NOTE]
    >
@@ -902,9 +902,7 @@ Met de versiefunctionaliteit kunt u het volgende doen:
 
    ![tijdlijn](assets/timeline.png)
 
-1. Tik/klik op het pictogram **[!UICONTROL Handelingen]** (pijl) onderaan om de beschikbare handelingen weer te geven die u op het element kunt uitvoeren.
-
-   ![chlimage_1-249](assets/chlimage_1-45.png)
+1. Klik op de **[!UICONTROL Handelingen]** onderaan om de beschikbare handelingen weer te geven die u op het element kunt uitvoeren.
 
 1. Tik/klik op **[!UICONTROL Opslaan als versie]** om een versie voor het element te maken.
 

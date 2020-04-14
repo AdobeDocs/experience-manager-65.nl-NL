@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 90cd8ba5-4f47-4074-bc54-6a7bb8afe256
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
 
 ---
 
@@ -38,4 +38,4 @@ U moet het Xcode-project voor de app AEM Forms archiveren om het installatieprog
 1. Vouw in de lijst **[!UICONTROL Instellingen]** de optie **[!UICONTROL Code ondertekenen]** uit.
 1. Selecteer de gewenste handtekening voor Identiteit **[!UICONTROL ondertekening]** van code. Zorg ervoor dat dezelfde handtekening is geselecteerd voor **[!UICONTROL Foutopsporing]**, **[!UICONTROL Geen]** en **[!UICONTROL Elke iOS SDK]**.
 1. Selecteer onder **[!UICONTROL PROJECT]** de optie **[!UICONTROL AEM-formulieren]** en zorg ervoor dat de juiste handtekening is geselecteerd voor **[!UICONTROL Code Signing Identity]**, **[!UICONTROL Debug]**, **[!UICONTROL Release]** **** en Any iOS SDK.
-1. De app AEM Forms maken en distribueren. Zie [Het installatieprogramma voor de app](/help/forms/using/setup-xcode-project-build-installer.md#main-pars-text-12)AEM Forms maken voor gedetailleerde instructies voor het maken en distribueren van de app AEM Forms.
+1. De app AEM Forms maken en distribueren. Zie [Het installatieprogramma voor de app](setup-xcode-project-build-installer.md#build-the-installer-for-the-mobile-workspace-app)AEM Forms maken voor gedetailleerde instructies voor het maken en distribueren van de app AEM Forms.

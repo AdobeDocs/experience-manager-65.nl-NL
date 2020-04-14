@@ -4,7 +4,7 @@ description: Leer hoe u de vereiste elementen in AEM kunt vinden met het deelven
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 25acffc6a0101be4ea6811b92c40bc76f554f5f0
+source-git-commit: fc4d8f98047fe727c11aa7a932ecc46a1a60d076
 
 ---
 
@@ -147,7 +147,7 @@ Vanuit de AEM-gebruikersinterface kunnen gebruikers zoeken in [Adobe Stock-midde
 
 ### Dynamische media-elementen {#dmassets}
 
-You can filter for Dynamic Media images by selecting **[!UICONTROL Dynamic Media > Sets]** from the **[!UICONTROL Filters]** panel. Het filtert op en toont assets zoals afbeeldingsets, carrousels, gemengde mediasets, en spinsets.
+U kunt filteren voor dynamische media-afbeeldingen door **[!UICONTROL Dynamische media]** > **[!UICONTROL Sets]** te selecteren in het deelvenster **[!UICONTROL Filters]** . Het filtert op en toont assets zoals afbeeldingsets, carrousels, gemengde mediasets, en spinsets.
 
 ### Zoeken met specifieke waarden in metagegevensvelden {#gqlsearch}
 

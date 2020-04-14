@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0e949429-cd5f-4301-aa72-14803cdfab00
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
 
 ---
 
@@ -84,7 +84,7 @@ U kunt elke kolom van een tabel [Adaptief formulier oplopend of aflopend](../../
 
 #### De beschikbaarheid van adaptieve formuliersjablonen beperken tot specifieke paden {#restrict-the-availability-of-adaptive-forms-templates-to-specific-paths}
 
-Aangepaste formulieren hebben ondersteuning toegevoegd voor de eigenschap cq:allowedPaths. De eigenschap [beperkt de beschikbaarheid van adaptieve Forms-sjablonen tot specifieke paden](../../forms/using/creating-adaptive-form.md#main-pars-text).
+Aangepaste formulieren hebben ondersteuning toegevoegd voor de eigenschap cq:allowedPaths. De eigenschap [beperkt de beschikbaarheid van adaptieve Forms-sjablonen tot specifieke paden](creating-adaptive-form.md#adaptive-form-templates).
 
 #### Selectievakjes dynamisch toevoegen aan het adaptieve formulier {#add-check-boxes-to-the-adaptive-form-dynamically}
 

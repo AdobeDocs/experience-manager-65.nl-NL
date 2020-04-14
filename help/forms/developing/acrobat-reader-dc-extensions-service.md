@@ -9,7 +9,7 @@ content-type: reference
 topic-tags: develop
 discoiquuid: 31a9bfc6-462d-4535-888f-31026b8fa674
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 21efe30c6a69d04c737bc523aeaab504db8f605b
 
 ---
 
@@ -20,13 +20,15 @@ De volgende snelstarthandleidingen zijn beschikbaar voor de Acrobat Reader DC Ex
 
 [Snel starten (SOAP-modus):gebruiksrechten toepassen met de Java API](#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
 
-[Gebruiksrechten verwijderen uit PDF-documenten](/help/forms/developing/acrobat-reader-dc-extensions-service.md#main-pars-heading-1)
+[Gebruiksrechten verwijderen uit PDF-documenten](#quick-start-soap-mode-removing-usage-rights-from-a-pdf-document-using-the-java-api)
 
 [Snel starten (SOAP-modus): Crediteringsgegevens ophalen met de Java API](acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-retrieving-credential-information-using-the-java-api)
 
 De verrichtingen van de Vormen van AEM kunnen worden uitgevoerd gebruikend sterk-getypte API van Vormen AEM en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
 
-***Opmerking **: De snelle Beginnen die in Programmering met Vormen AEM wordt gevestigd zijn gebaseerd op het de serverwerkende systeem van Vormen. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. (Zie Verbindingseigenschappen[instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
+>[!NOTE]
+>
+>De snelle Beginnen die in Programmering met Vormen AEM wordt gevestigd zijn gebaseerd op het de serverwerkende systeem van Vormen. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Snel starten (SOAP-modus):gebruiksrechten toepassen met de Java API {#quick-start-soap-mode-applying-usage-rights-using-the-java-api}
 

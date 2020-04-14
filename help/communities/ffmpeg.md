@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 739ec991-552b-42cd-85cd-984d1c9fe8fd
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -42,11 +42,11 @@ MPEG moet worden geïnstalleerd op de server(s) die als host fungeert voor de AE
 
 ## MPEG Transcoding Service configureren {#configure-ffmpeg-transcoding-service}
 
-Wanneer MPEG wordt geïnstalleerd, worden standaard meerdere uitvoeringen geconfigureerd (transcoderingen) volgens de definitie van de DAM-werkstroom voor bijwerken.
+Wanneer FFmpeg wordt geïnstalleerd, worden standaard meerdere uitvoeringen geconfigureerd (transcoderingen) volgens de [!UICONTROL DAM Update Asset] workflow-definitie.
 
 Aangezien de transcoderingen CPU-intensief zijn, wordt aangeraden de lijst met doeluitvoeringen te wijzigen. In de meeste gevallen is transcodering niet nodig.
 
-U kunt als volgt de DAM Update Asset-workflow wijzigen en in dit voorbeeld de transcodering uitschakelen:
+U kunt als volgt de workflow [!UICONTROL DAM Update Asset] wijzigen en in dit voorbeeld de transcodering uitschakelen:
 
 * Aanmelden bij de instantie van de auteur met beheerdersrechten
 * Vanuit globale navigatie: **[!UICONTROL Gereedschappen > Workflow > Modellen]**

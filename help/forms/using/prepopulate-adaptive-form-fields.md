@@ -9,7 +9,7 @@ topic-tags: develop
 discoiquuid: 7139a0e6-0e37-477c-9e0b-aa356991d040
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8e724af4d69cb859537dd088119aaca652ea3931
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -27,10 +27,10 @@ Een adaptief formulier kan bestaan uit gebonden en niet-gebonden velden. Gebonde
 U kunt zowel gebonden als niet-gebonden velden van een adaptief formulier vooraf invullen. De vooraf ingevulde gegevens bevatten de secties afBoundData en afUnBoundData om zowel gebonden als niet-gebonden velden van een adaptief formulier vooraf in te vullen. De `afBoundData` sectie bevat de vooraf ingevulde gegevens voor gebonden velden en deelvensters. Deze gegevens moeten voldoen aan het bijbehorende formuliermodelschema:
 
 * Gebruik voor adaptieve formulieren met de [XFA-formuliersjabloon](../../forms/using/prepopulate-adaptive-form-fields.md)de vooraf ingevulde XML-code die compatibel is met het gegevensschema van de XFA-sjabloon.
-* Gebruik voor adaptieve formulieren met [XML-schema](../../forms/using/prepopulate-adaptive-form-fields.md#main-pars-header-3)de vooraf ingevulde XML-indeling die compatibel is met de XML-schemastructuur.
-* Gebruik voor adaptieve formulieren met [JSON-schema](../../forms/using/prepopulate-adaptive-form-fields.md#json-schema-based-adaptive-forms)de Prefill JSON-compatibel met het JSON-schema.
+* Gebruik voor adaptieve formulieren met [XML-schema](#xml-schema-af)de vooraf ingevulde XML-indeling die compatibel is met de XML-schemastructuur.
+* Gebruik voor adaptieve formulieren met [JSON-schema](#json-schema-based-adaptive-forms)de Prefill JSON-compatibel met het JSON-schema.
 * Gebruik voor adaptieve formulieren met FDM-schema de Prefill JSON die compatibel is met het FDM-schema.
-* Voor adaptieve formulieren zonder [formuliermodel](../../forms/using/prepopulate-adaptive-form-fields.md#p-adaptive-form-with-no-form-model-p)zijn er geen gebonden gegevens. Elk veld is een niet-gebonden veld en wordt voorgevuld met de niet-gebonden XML.
+* Voor adaptieve formulieren zonder [formuliermodel](#adaptive-form-with-no-form-model)zijn er geen gebonden gegevens. Elk veld is een niet-gebonden veld en wordt voorgevuld met de niet-gebonden XML.
 
 ### Voorbeeld van vooraf ingevulde XML-structuur {#sample-prefill-xml-structure}
 
@@ -91,7 +91,7 @@ Prefill-Submit-Data-ContentPackage.zip
 De structuur van vooraf ingevulde XML en verzonden XML voor adaptieve formulieren op basis van het XML-schema is als volgt:
 
 * **Vooraf ingevulde XML-structuur**: De vooraf ingevulde XML moet compatibel zijn met het bijbehorende XML-schema. Als u niet-gebonden velden vooraf wilt invullen, plaatst u de vooraf ingevulde XML-structuur in de tag /afData/afBoundData.
-* **Verzonden XML-structuur**: als er geen vooraf ingevulde XML wordt gebruikt, bevat de verzonden XML gegevens voor zowel gebonden als niet-gebonden velden in de `afData` omvattende tag. Als de vooraf ingevulde XML wordt gebruikt, heeft het voorgelegde XML-bestand dezelfde structuur als de vooraf ingevulde XML. Als de vooraf ingevulde XML begint met de `afData` hoofdtag, heeft de uitvoer-XML dezelfde indeling. Als de vooraf ingevulde XML geen `afData/afBoundData` omslag heeft en in plaats daarvan direct van de markering van de schemawortel zoals begint `employeeData`, begint voorgelegde XML ook met de `employeeData` markering.
+* **Verzonden XML-structuur**: als er geen vooraf ingevulde XML wordt gebruikt, bevat de verzonden XML gegevens voor zowel gebonden als niet-gebonden velden in de `afData` omvattende tag. Als de vooraf ingevulde XML wordt gebruikt, heeft het voorgelegde XML-bestand dezelfde structuur als de vooraf ingevulde XML. Als de vooraf ingevulde XML begint met de `afData` hoofdtag, heeft de uitvoer-XML dezelfde indeling. Als de vooraf ingevulde XML geen `afData/afBoundData` omslag heeft en in plaats daarvan direct van de markering van de schemawortel begint zoals `employeeData`, begint voorgelegde XML ook met de `employeeData` markering.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?> 
@@ -163,7 +163,7 @@ Voor adaptieve formulieren op basis van JSON-schema wordt de structuur van de pr
 }}}}}
 ```
 
-Voor velden die het JSON-schemamodel gebruiken, worden de gegevens voorgevuld in het afBoundData-object, zoals in het voorbeeld JSON hieronder wordt getoond. Deze kan worden gebruikt voor het vooraf invullen van een adaptief formulier met een of meer niet-gebonden tekstvelden. Hieronder ziet u een voorbeeld van gegevens met `afData/afBoundData` omloop:
+Voor velden die het JSON-schemamodel gebruiken, worden de gegevens vooraf ingevuld in het object afBoundData, zoals in het voorbeeld JSON hieronder wordt getoond. Deze kan worden gebruikt voor het vooraf invullen van een adaptief formulier met een of meer niet-gebonden tekstvelden. Hieronder ziet u een voorbeeld van gegevens met `afData/afBoundData` omloop:
 
 ```
 {

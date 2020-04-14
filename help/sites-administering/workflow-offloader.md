@@ -10,7 +10,7 @@ topic-tags: content
 content-type: reference
 discoiquuid: 91f0fd7d-4b49-4599-8f0e-fc367d51aeba
 translation-type: tm+mt
-source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -54,7 +54,7 @@ Gebruik Configuration Manager om de URL voor de instantie leader en de hostnamen
 
 ## Workflowdraagraketten configureren op de leaderinstantie {#configure-workflow-launchers-on-the-leader-instance}
 
-Configureer workflowstartprogramma&#39;s om de workflow voor het ontladen **van bedrijfsmiddelen bij** DAM Update op de leaderinstantie te gebruiken in plaats van de workflow voor **Dam Update Asset** .
+Configureer workflowstartprogramma&#39;s om de workflow voor het ontladen [!UICONTROL van bedrijfsmiddelen bij] DAM Update op de leaderinstantie te gebruiken in plaats van de workflow voor **Dam Update Asset** .
 
 1. Tik/klik op het AEM-logo en kies **Gereedschappen** > **Workflow** > **Launchers** om de **Workflow Launchers** -console te openen.
 
@@ -65,12 +65,12 @@ Configureer workflowstartprogramma&#39;s om de workflow voor het ontladen **van 
 
    ![chlimage_1-51](assets/chlimage_1-51a.png)
 
-1. Kies in de lijst **Workflow** de optie **DAM Asset Offloading** bijwerken en tik/klik op **Opslaan**.
+1. Kies in de lijst **Workflow** de optie [!UICONTROL DAM Asset Offloading] bijwerken en tik/klik op **Opslaan**.
 
    ![chlimage_1-52](assets/chlimage_1-52a.png)
 
 1. Tik/klik op het AEM-logo en kies **Gereedschappen** > **Workflow** > **Modellen** om de pagina **Workflowmodellen** te openen.
-1. Selecteer de workflow voor het ontladen **van** DAM-elementen bijwerken en tik op de werkbalk op **Bewerken** of klik op Bewerken om de details weer te geven.
+1. Selecteer de workflow voor het ontladen [!UICONTROL van] DAM-elementen bijwerken en tik op de werkbalk op **Bewerken** of klik op Bewerken om de details weer te geven.
 
    ![chlimage_1-53](assets/chlimage_1-53a.png)
 

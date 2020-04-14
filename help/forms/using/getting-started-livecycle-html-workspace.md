@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: fa6e0246-6bd2-4ffb-b54c-15eda605f213
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
 
 ---
 
@@ -61,11 +61,11 @@ Wanneer u in de werkruimte van AEM-formulieren navigeert met een toetsenbord, vo
 
 U kunt de verschillende voorkeuren voor de werkruimte van AEM-formulieren in de volgende categorieën instellen:
 
-**Buiten kantoor:** Stel voorkeuren in om te bepalen hoe taken aan andere personen worden toegewezen terwijl u zich buiten het kantoor bevindt. Zie [Voorkeuren](/help/forms/using/todo-lists.md#main-pars-heading-22)instellen voor gebruik buiten het kantoor.
+**Buiten kantoor:** Stel voorkeuren in om te bepalen hoe taken aan andere personen worden toegewezen terwijl u zich buiten het kantoor bevindt. Zie [Voorkeuren](todo-lists.md#setting-out-of-office-preferences)instellen voor gebruik buiten het kantoor.
 
-**Wachtrijen:** Stel voorkeuren in voor het delen van uw lijst Aan/Uit met andere gebruikers of voor het aanvragen van toegang tot de lijst van een andere gebruiker. Zie [Werken met taken uit groep en gedeelde rijen](/help/forms/using/todo-lists.md#main-pars-heading-19).
+**Wachtrijen:** Stel voorkeuren in voor het delen van uw lijst Aan/Uit met andere gebruikers of voor het aanvragen van toegang tot de lijst van een andere gebruiker. Zie [Werken met taken uit groep en gedeelde rijen](todo-lists.md#working-with-tasks-from-group-and-shared-queues).
 
-**UI-instellingen:** Stel voorkeuren in voor de interactie met de werkruimte van AEM-formulieren. Zie Voorkeuren voor de [gebruikersinterface instellen](/help/forms/using/getting-started-livecycle-html-workspace.md#main-pars-heading-5).
+**UI-instellingen:** Stel voorkeuren in voor de interactie met de werkruimte van AEM-formulieren. Zie Voorkeuren voor de [gebruikersinterface instellen](#set-user-interface-preferences).
 
 ### Gebruikersinterfacevoorkeuren instellen {#set-user-interface-preferences}
 

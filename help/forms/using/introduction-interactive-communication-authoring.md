@@ -10,7 +10,7 @@ topic-tags: interactive-communications
 discoiquuid: 5855d21b-340c-4139-aabe-c3a534cedb98
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a326e508a781b3afaba8b5e371aa862a30536740
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -31,13 +31,13 @@ Wanneer u een nieuwe [creeert of een bestaande Interactieve Communicatie](../../
 
 ![gebruikersinterface voor interactieve communicatie ontwerpen](assets/form-editor.png)
 
-******A. Zijbalk** B. Pagina, werkbalk **C.** Inhoudsgebied
+**A.** Zijbalk **B.** Pagina, werkbalk **C.** Inhoudsgebied
 
 ## Zijbalk {#sidebar}
 
 ![Zijbalk](assets/sidebar-comps-2.png)
 
-**************A. Kanaalbrowser** B. Inhoudsbrowser **C.** Eigenschappen browser **D. Middelenbrowser** E. Browser van componenten **F. Browser van Gegevensbronnen - het Model van Gegevens** G. Browser voor gegevensbronnen - stramieninhoud
+**A.** Kanaalbrowser **B.** Inhoudsbrowser **C.** Eigenschappen browser **D.** Middelenbrowser **E.** Browser van componenten **F.** Browser van Gegevensbronnen - het Model van Gegevens **G.** Browser voor gegevensbronnen - stramieninhoud
 
 <!-- Click to enlarge
 
@@ -113,9 +113,9 @@ H. **Groep**: Hiermee kunt u meerdere componenten selecteren als u meerdere comp
 
 I. **Bovenliggend element**: Hiermee kunt u het bovenliggende element van een component selecteren.
 
-**J. SOM-expressie** weergeven: Hiermee kunt u de [SOM-expressie](../../forms/using/using-som-expressions-adaptive-forms.md) voor de component weergeven.
+J. SOM-expressie **weergeven:** Hiermee kunt u de [SOM-expressie](../../forms/using/using-som-expressions-adaptive-forms.md) voor de component weergeven.
 
-**K: Objecten** groeperen in deelvenster: Hiermee kunt u de componenten in een deelvenster groeperen en tegelijkertijd bewerkingen op die componenten uitvoeren. Zie Objecten [groeperen in deelvenster](../../forms/using/create-interactive-communication.md#main-pars-header-1815149576)voor meer informatie.
+K: Objecten **groeperen in deelvenster:** Hiermee kunt u de componenten in een deelvenster groeperen en tegelijkertijd bewerkingen op die componenten uitvoeren. Zie Objecten [groeperen in deelvenster](create-interactive-communication.md#groupobjectspanel)voor meer informatie.
 
 L. Deelvenster **Onderliggend element** toevoegen (alleen voor deelvensters): Hiermee kunt u een onderliggend deelvenster aan het deelvenster toevoegen.
 
@@ -138,7 +138,7 @@ De werkbalk Pagina bovenaan biedt opties waarmee u een voorvertoning van de inte
 
       * Ontdek waar Interactieve communicatie uit bestaat.
       * Foutopsporing waar en wanneer gebeurt, wat weer helpt om problemen op te lossen.
-   * Doel:Hiermee kunt u aangepaste componenten, of componenten buiten het vak die niet in het zijpaneel staan, in- of uitschakelen.
+   * Doel: Hiermee kunt u aangepaste componenten, of componenten buiten het vak die niet in het zijpaneel staan, in- of uitschakelen.
 
 
 * Voorvertoning: Hiermee kunt u een voorvertoning weergeven van de Interactieve communicatie wanneer u deze publiceert.

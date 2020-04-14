@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 683809ac-089b-49bf-a72c-67d32439081f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5a586758da84f467e075adcc33cdcede2fbf09c7
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -53,7 +53,7 @@ Nadat u de indeling hebt geanalyseerd die nodig is om uw interactieve communicat
 
 >[!NOTE]
 >
->Voeg inhoud toe aan het kanaal van de Druk van de Interactieve Mededeling in plaats van inhoud toe te voegen aan de subformuliercomponent in het malplaatje XDP. Voeg inhoud aan de doelgebieden in het kanaal van de Druk toe gebruikend [documentfragmenten, grafieken, beelden](../../forms/using/create-interactive-communication.md#main-pars-header-741471925), en lay-outfragmenten.
+>Voeg inhoud toe aan het kanaal van de Druk van de Interactieve Mededeling in plaats van inhoud toe te voegen aan de subformuliercomponent in het malplaatje XDP. Voeg inhoud aan de doelgebieden in het kanaal van de Druk toe gebruikend [documentfragmenten, grafieken, beelden](create-interactive-communication.md#step2), en lay-outfragmenten.
 
 Voer de volgende stappen uit om subformulier in een XDP-sjabloon te gebruiken:
 
@@ -83,7 +83,7 @@ Voer de volgende stappen uit om subformulier in een XDP-sjabloon te gebruiken:
 
    1. Geef een naam voor het subformulier op in het veld **Naam** .
    1. Selecteer **Geen gegevensbinding** in de vervolgkeuzelijst **Gegevensbinding** .
-   Herhaal stap 2 tot en met 5 om meer subformulieren aan de XDP-sjabloon toe te voegen. Voeg alleen tijdens het ontwerpen van de interactieve communicatie [tekst, documentfragmenten, afbeeldingen en grafieken](../../forms/using/create-interactive-communication.md#main-pars-header-741471925) toe aan de doelgebieden.
+   Herhaal stap 2 tot en met 5 om meer subformulieren aan de XDP-sjabloon toe te voegen. Voeg alleen tijdens het ontwerpen van de interactieve communicatie [tekst, documentfragmenten, afbeeldingen en grafieken](create-interactive-communication.md#step2) toe aan de doelgebieden.
 
 1. Selecteer **Bestand** > **Opslaan als** om het bestand op te slaan op het lokale bestandssysteem:
 
@@ -111,11 +111,11 @@ Voer de volgende stappen uit om de component van het Gebied van het Beeld in een
 
 ### XDP-sjabloon maken voor layoutfragmenten {#xdplayoutfragments}
 
-Gebruik de component Tabel in Forms Designer om lay-outfragmenten te maken en gebruik deze om tabellen te maken tijdens het ontwerpen van het kanaal Afdrukken voor interactieve communicatie. Wanneer u lay-outfragmenten gebruikt om tabellen te maken, zorgt u ervoor dat de tabelinhoud de structuur behoudt wanneer het webkanaal automatisch wordt gegenereerd met het afdrukkanaal.
+Gebruik de component Tabel in Forms Designer om lay-outfragmenten te maken en gebruik deze om tabellen te maken tijdens het ontwerpen van het kanaal Afdrukken voor interactieve communicatie. Wanneer u lay-outfragmenten gebruikt om tabellen te maken, zorgt u ervoor dat de tabelinhoud de structuur behoudt wanneer het webkanaal automatisch wordt gegenereerd met behulp van het afdrukkanaal.
 
 >[!NOTE]
 >
->Voer tekst in de tabelcellen in of [maak alleen binding met de formuliergegevensmodelobjecten](../../forms/using/create-interactive-communication.md#main-pars-header-570999227) tijdens het ontwerpen van de interactieve communicatie.
+>Voer tekst in de tabelcellen in of [maak alleen binding met de formuliergegevensmodelobjecten](create-interactive-communication.md#step2) tijdens het ontwerpen van de interactieve communicatie.
 
 Voer de volgende stappen uit om de component Tabel in de XDP-sjabloon te gebruiken met Forms Designer:
 
@@ -134,7 +134,7 @@ Voer de volgende stappen uit om de component Tabel in de XDP-sjabloon te gebruik
 
 1. Selecteer de naam van de rij in het linkerdeelvenster en selecteer **Object** > **Binding** > Rij **herhalen voor elk gegevensitem**. Voer deze stap uit om ervoor te zorgen dat als een band tussen de lijstcellen van deze rij met de modelvoorwerpen van vormgegevens van inzamelingstype wordt gecreeerd, de lijstrij automatisch voor elk gegevenspunt wordt herhaald beschikbaar in het gegevensbestand.
 
-   Voer tekst in de tabelcellen in of [maak alleen binding met de formuliergegevensmodelobjecten](../../forms/using/create-interactive-communication.md#main-pars-header-570999227) tijdens het ontwerpen van de interactieve communicatie.
+   Voer tekst in de tabelcellen in of [maak alleen binding met de formuliergegevensmodelobjecten](create-interactive-communication.md#step2) tijdens het ontwerpen van de interactieve communicatie.
 
 1. Selecteer **Bestand** > **Opslaan als** om het bestand op te slaan op het lokale bestandssysteem:
 

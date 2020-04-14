@@ -10,7 +10,7 @@ topic-tags: forms-workspace
 discoiquuid: 866cd9cb-6661-4b0f-a3af-e39453e6e51b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 21efe30c6a69d04c737bc523aeaab504db8f605b
 
 ---
 
@@ -49,7 +49,7 @@ U kunt meerdere taken van hetzelfde type goedkeuren. Zodra u één taak voor goe
 
 Flex Workspace wordt niet ondersteund voor klanten van AEM Forms. Alle klanten die de Flex-werkruimte gebruiken, moeten naar de AEM Forms Workspace gaan.
 
-In de werkruimte van Vormen AEM, de gebrek geeft en legt de diensten, in het standaardactieprofiel, verbonden aan XDP vormen zijn veranderd en de nieuwe diensten zijn geïntroduceerd. Voor details, zie [Nieuw teruggeven en de dienst](/help/forms/using/new-render-submit-service.md)voorleggen. Als u bestaande processen die werken met XDP-formulieren wilt migreren en gebruik wilt maken van deze services, kunt u [deze stappen](/help/forms/using/new-render-submit-service.md#main-pars-faq)volgen.
+In de werkruimte van Vormen AEM, de gebrek geeft en legt de diensten, in het standaardactieprofiel, verbonden aan XDP vormen zijn veranderd en de nieuwe diensten zijn geïntroduceerd. Voor details, zie [Nieuw teruggeven en de dienst](/help/forms/using/new-render-submit-service.md)voorleggen. Als u bestaande processen die werken met XDP-formulieren wilt migreren en gebruik wilt maken van deze services, kunt u [deze stappen](new-render-submit-service.md)volgen.
 
 **Flex Workspace-aanpassingen toewijzen aan de AEM Forms-werkruimte**
 
@@ -120,11 +120,11 @@ De werkruimte van de Vormen van AEM steunt een grote verscheidenheid van aanpass
 * Functionaliteit met semantische aanpassingen
 * HTML-componenten opnieuw gebruiken in andere webtoepassingen
 
-In het [aanpassingsartikel](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-0) worden de typen van dergelijke aanpassingen uitgelegd.
+In het [aanpassingsartikel](introduction-customizing-html-workspace.md#types-of-customizations) worden de typen van dergelijke aanpassingen uitgelegd.
 
 ### Set up the developer environment {#set-up-the-developer-environment}
 
-Tot de te leveren items voor de AEM Forms-werkruimte behoren een CRX-pakket dat is geïmplementeerd op CRX, een SDK-archief met de volledige broncode, JavaScript-bibliotheken van derden en het samenstellen van scripts voor de AEM Forms-werkruimte. Gebruik deze opties om de ontwikkelomgeving in te stellen voor het uitvoeren van de hierboven vermelde aanpassingen. Zie De werkruimtecode [](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3)van AEM-formulieren maken voor meer informatie.
+Tot de te leveren items voor de AEM Forms-werkruimte behoren een CRX-pakket dat is geïmplementeerd op CRX, een SDK-archief met de volledige broncode, JavaScript-bibliotheken van derden en het samenstellen van scripts voor de AEM Forms-werkruimte. Gebruik deze opties om de ontwikkelomgeving in te stellen voor het uitvoeren van de hierboven vermelde aanpassingen. Zie De werkruimtecode [](introduction-customizing-html-workspace.md#building-html-workspace-code)van AEM-formulieren maken voor meer informatie.
 
 U kunt een groot deel van de interface en kernfunctionaliteit aanpassen, zoals lettertypen, kleurenschema, logo, aanmeldingsscherm, foutmeldingen, integratie met toepassingen van derden en hergebruik van componenten in toepassingen van derden. U kunt ook de inhoud verbeteren die op de pagina van het Overzicht van de Taak wordt getoond, beelden voor de acties van de taakroute tonen, en zelfs de laag-vlakke Modellen en Weergaven wijzigen van de Backbone die tot de de werkruimtetoepassing van Vormen AEM leiden.
 

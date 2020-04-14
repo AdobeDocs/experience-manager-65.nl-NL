@@ -9,7 +9,7 @@ content-type: reference
 topic-tags: correspondence-management
 discoiquuid: 010e3639-b1a9-40fb-8615-7d18c4784b73
 translation-type: tm+mt
-source-git-commit: 5120bbdefea528ad6d07a9c99df565555b6a8444
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -85,7 +85,7 @@ In dit artikel worden de sneltoetsen weergegeven die kunnen worden gebruikt met 
 
 Deze sectie bevat een lijst met verschillende toetsenborden en toegankelijkheidssneltoetsen die u kunt gebruiken in de teksteditor van Correspondence Management. U kunt deze sneltoetsen gebruiken als u:
 
-* Een [tekstelement](/help/forms/using/document-fragments.md#main-pars-header-0) maken of bewerken
+* Een [tekstelement](texts-interactive-communications.md) maken of bewerken
 * Een tekstmodule bewerken nadat u op het desbetreffende pictogram Bewerken ( ![bewerkingsmodule](assets/edittextmodule.png)) hebt getikt tijdens het [maken van een overeenkomst](/help/forms/using/create-correspondence.md).
 
 ### Tekst selecteren en de cursor verplaatsen {#text-selection-and-moving-the-cursor-around}

@@ -11,7 +11,7 @@ topic-tags: Configuration
 discoiquuid: 1717b1b4-1c2a-450e-8e79-4156a974d5fa
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 76908a565bf9e6916db39d7db23c04d2d40b3247
+source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
 
 ---
 
@@ -29,7 +29,7 @@ Nadat u het invoegpakket [voor](../../forms/using/installing-configuring-aem-for
    <td>Taken</td> 
   </tr>
   <tr>
-   <td>gebruiker van formulieren <sup><a href="#main-pars-text">[1]</a></sup></td> 
+   <td>gebruiker van formulieren <sup>[1]</sup></td> 
    <td>
     <ul> 
      <li>Aangepaste formulieren maken, voorvertonen, publiceren en verzenden</li> 
@@ -59,7 +59,7 @@ Nadat u het invoegpakket [voor](../../forms/using/installing-configuring-aem-for
     </ul> </td> 
   </tr>
   <tr>
-   <td>sjabloonauteurs <sup><a href="#main-pars-text">[2]</a></sup></td> 
+   <td>sjabloonauteurs <sup>[2]</sup></td> 
    <td>
     <ul> 
      <li>Aangepaste formulieren of interactieve communicatiesjablonen maken en hiervan een voorbeeld bekijken</li> 

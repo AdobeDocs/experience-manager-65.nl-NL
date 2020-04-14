@@ -7,7 +7,7 @@ uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 translation-type: tm+mt
-source-git-commit: ba4e4908c0564af6e7f0759c5119a5c02f274dbd
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -32,7 +32,7 @@ Hiermee kunt u interactieve toepassingen voor het vastleggen van gegevens maken 
 
 Hiermee kunt u documenten in verschillende indelingen maken, zoals PDF, laserprinterindelingen en labelprinterindelingen. Indelingen voor laserprinters zijn PostScript en Printer Control Language (PCL). Zie [Uitvoerservice](/help/forms/using/output-service.md)voor meer informatie.
 
-De service PDF Generator biedt API&#39;s waarmee native bestandsindelingen naar PDF kunnen worden geconverteerd. Ook wordt PDF geconverteerd naar andere bestandsindelingen en wordt de grootte van PDF-documenten geoptimaliseerd. Zie [PDF Generator Service](/help/forms/using/aem-document-services-programmatically.md#main-pars-header-27)voor meer informatie.
+De service PDF Generator biedt API&#39;s waarmee native bestandsindelingen naar PDF kunnen worden geconverteerd. Ook wordt PDF geconverteerd naar andere bestandsindelingen en wordt de grootte van PDF-documenten geoptimaliseerd. Zie [PDF Generator Service](aem-document-services-programmatically.md#pdfgeneratorservice)voor meer informatie.
 
 Hiermee kan uw organisatie interactieve PDF-documenten eenvoudig delen door de functionaliteit van Adobe Reader uit te breiden met extra gebruiksrechten. De service activeert functies die niet beschikbaar zijn wanneer een PDF-document wordt geopend met Adobe Reader, zoals het toevoegen van opmerkingen aan een document, het invullen van formulieren en het opslaan van het document. Zie [Reader Extension Service](/help/forms/using/overview-aem-document-services.md#p-reader-extension-service-p)voor meer informatie.
 

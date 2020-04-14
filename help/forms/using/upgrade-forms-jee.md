@@ -10,7 +10,7 @@ topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
 translation-type: tm+mt
-source-git-commit: 43fe9540a3a29ae86f48756c77001c0a4b8ea3e4
+source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
 
 ---
 
@@ -28,4 +28,4 @@ Voer de volgende procedure uit om bestaande Vormen AEM 6.3 op JEE of AEM 6.4 Vor
    * [Upgrade van AEM 6.3- of AEM 6.4-formulieren naar AEM 6.5-formulieren voor WebSphere](http://www.adobe.com/go/learn_aemforms_upgradeWebSphere_65)
    * [Upgrade van AEM 6.3- of AEM 6.4-formulieren naar AEM 6.5-formulieren voor JBoss Turnkey](http://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65)
 
-Er is geen directe upgrade beschikbaar van LiveCycle ES2, LiveCycle ES3, AEM 6.0 Forms, AEM 6.1 Forms en AEM 6.2 Forms naar AEM 6.5 Forms. U kunt een tussentijdse upgrade uitvoeren naar een of meer versies van LiveCycle of AEM Forms en vervolgens een upgrade uitvoeren vanaf AEM 6.5 Forms. Voor de lijst van tussenliggende versies en overeenkomstige verbeteringsinstructies, zie een [verbeteringspad](../../forms/using/upgrade.md#main-pars-header)kiezen.
+Er is geen directe upgrade beschikbaar van LiveCycle ES2, LiveCycle ES3, AEM 6.0 Forms, AEM 6.1 Forms en AEM 6.2 Forms naar AEM 6.5 Forms. U kunt een tussentijdse upgrade uitvoeren naar een of meer versies van LiveCycle of AEM Forms en vervolgens een upgrade uitvoeren vanaf AEM 6.5 Forms. Voor de lijst van tussenliggende versies en overeenkomstige verbeteringsinstructies, zie een [verbeteringspad](upgrade.md)kiezen.

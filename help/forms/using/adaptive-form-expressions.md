@@ -9,7 +9,7 @@ topic-tags: develop
 discoiquuid: 2fd2276e-cfe3-47ad-94c1-9c7af56b7a17
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -45,16 +45,16 @@ Herhalende deelvensters zijn instanties van een deelvenster die dynamisch worden
 
 In adaptieve formulieren kunt u expressies schrijven om gedrag toe te voegen, zoals velden en deelvensters voor dynamisch tonen/verbergen. U kunt ook expressies schrijven om berekende velden toe te voegen, velden alleen-lezen te maken, validatielogica toe te voegen en nog veel meer. Adaptieve formulieren ondersteunen de volgende expressies:
 
-* **[Toegang tot expressies](../../forms/using/adaptive-form-expressions.md#main-pars-header-4)**: om een veld in of uit te schakelen.
-* **[Expressies](../../forms/using/adaptive-form-expressions.md#p-calculate-expression-p)**berekenen: om de waarde van een veld automatisch te berekenen.
-* **[Klikexpressie](../../forms/using/adaptive-form-expressions.md#p-click-expression-p)**: om handelingen af te handelen bij klikgebeurtenis van een knop.
-* **[Initialisatiescript](../../forms/using/adaptive-form-expressions.md#p-initialization-script-p):**een handeling uitvoeren bij initialisatie van een veld.
-* **[Uitdrukking](../../forms/using/adaptive-form-expressions.md#p-options-expression-p)**opties: om een vervolgkeuzelijst dynamisch in te vullen.
+* **[Toegang tot expressies](#access-expression-enablement-expression)**: om een veld in of uit te schakelen.
+* **[Expressies](#calculate-expression)**berekenen: om de waarde van een veld automatisch te berekenen.
+* **[Klikexpressie](#click-expression)**: om handelingen af te handelen bij klikgebeurtenis van een knop.
+* **[Initialisatiescript](#initialization-script):**een handeling uitvoeren bij initialisatie van een veld.
+* **[Uitdrukking](#options-expression)**opties: om een vervolgkeuzelijst dynamisch in te vullen.
 * **[Samenvattingsexpressie](#summary)**: om de titel van een accordeon dynamisch te berekenen.
-* **[Expressies](../../forms/using/adaptive-form-expressions.md#p-validate-expression-p)**valideren: om een veld te valideren.
-* **[Waarde script](../../forms/using/adaptive-form-expressions.md#p-value-commit-script-p)vastleggen:**om de componenten van een formulier te wijzigen nadat de waarde van een veld is gewijzigd.
-* **[Visibility expression](../../forms/using/adaptive-form-expressions.md#p-visibility-expression-p)**: om de zichtbaarheid van een veld en deelvenster te regelen.
-* **[Uitdrukking](../../forms/using/adaptive-form-expressions.md#p-step-completion-expression-p)**voor stapvoltooiing: om te voorkomen dat een gebruiker naar de volgende stap van een wizard gaat.
+* **[Expressies](#validate-expression)**valideren: om een veld te valideren.
+* **[Waarde script](#value-commit-script)vastleggen:**om de componenten van een formulier te wijzigen nadat de waarde van een veld is gewijzigd.
+* **[Visibility expression](#visibility-expression)**: om de zichtbaarheid van een veld en deelvenster te regelen.
+* **[Uitdrukking](#step-completion-expression)**voor stapvoltooiing: om te voorkomen dat een gebruiker naar de volgende stap van een wizard gaat.
 
 ### Access Expression (Enablement Expression) {#access-expression-enablement-expression}
 
@@ -188,7 +188,7 @@ De expressie voor het voltooien van de stap wordt gebruikt om te voorkomen dat e
 
 Er zijn meerdere methoden om veldvalidatie toe te voegen aan een adaptief formulier. Als een validatiecontrole aan een veld wordt toegevoegd, geeft **True** aan dat de waarde die in het veld wordt ingevoerd, geldig is. **False** vertegenwoordigt dat de waarde ongeldig is. Als u in- en uitgaat van een veld, wordt het foutbericht niet gegenereerd.
 
-U kunt als volgt validaties toevoegen aan een veld:
+De methoden om validaties toe te voegen aan een veld zijn:
 
 ### Vereist {#required}
 
@@ -272,7 +272,7 @@ guideBridge.on("elementValueChanged", function (event, data)  {
 
 Zoals hierboven vermeld, kunnen met adaptieve formulieren ontwerpers patronen voor validatie- of weergaveindelingen leveren. U kunt niet alleen patronen uit het vak gebruiken, maar ook herbruikbare aangepaste patronen definiëren voor een adaptieve formuliercomponent. U kunt bijvoorbeeld een tekstveld of een numeriek veld definiëren. Als u deze patronen eenmaal hebt gedefinieerd, kunt u deze patronen in alle formulieren gebruiken voor het opgegeven type component. U kunt bijvoorbeeld een aangepast patroon maken voor een tekstveld en dit gebruiken in de tekstvelden in de aangepaste formulieren. U kunt het aangepaste patroon selecteren door de patroonsectie te openen in het dialoogvenster Bewerken van een component. Zie Ondersteuning van [afbeeldingscomponenten voor HTML5-formulieren](/help/forms/using/picture-clause-support.md)voor meer informatie over de definitie of indeling van patronen.
 
-Voer de volgende stappen uit om een aangepast patroon te maken voor een specifiek veldtype en dit opnieuw te gebruiken voor andere velden van hetzelfde type:
+Voer de volgende stappen uit om een aangepast patroon voor een specifiek veldtype te maken en dit opnieuw te gebruiken voor andere velden van hetzelfde type:
 
 1. Navigeer naar CRXDE Lite op uw auteursinstantie.
 1. Maak een map om uw aangepaste patronen te behouden. Maak onder de map /apps een knooppunt van het type sling:folder. Maak bijvoorbeeld een knooppunt met de naam `customPatterns`. Onder dit knooppunt maakt u een ander knooppunt van het type `nt:unstructed` en geeft u dit een naam `textboxpatterns`. Dit knooppunt bevat de verschillende aangepaste patronen die u wilt toevoegen.

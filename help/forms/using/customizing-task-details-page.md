@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 16e57cf6-aaa1-406d-a6ad-71ec60b15386
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -84,4 +84,4 @@ De pagina met taakdetails aanpassen:
 >
 >Als u de pagina met taakdetails wilt aanpassen met taken die zijn gemaakt op het tabblad **Start Process** van de werkruimte van AEM Forms, voegt u de nieuwe informatie toe aan `/apps/ws/js/runtime/templates/startprocess.html`.
 >
->Als u nieuwe stijlen wilt toevoegen voor de informatie die op de detailpagina is toegevoegd, wijzigt u het CSS-bestand met de sectie Wijzigingen *in de* gebruikersinterface in Aanpassing [werkruimte](/help/forms/using/changing-locale-user-interface.md#main-pars-header-3).
+>Als u nieuwe stijlen wilt toevoegen voor de informatie die op de detailpagina is toegevoegd, wijzigt u het CSS-bestand met de sectie Wijzigingen *in de* gebruikersinterface in Aanpassing [werkruimte](changing-locale-user-interface.md).

@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: configuring
 discoiquuid: a79839e2-be39-418b-a3bd-f5457e555172
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -32,7 +32,7 @@ Interactieve prestaties worden gemeten in termen van responstijd van de pagina. 
 
 **2. Middelenverwerking** Een probleem bij de verwerking van bedrijfsmiddelen is wanneer gebruikers elementen uploaden en het duurt enkele minuten voordat elementen gemakkelijk worden omgezet en opgenomen in AEM DAM.
 
-De prestaties van de verwerking van bedrijfsmiddelen worden gemeten in termen van de gemiddelde voltooiingstijd van het werkstroomproces. Dit is de tijd die nodig is om het workflowproces voor het bijwerken van bedrijfsmiddelen aan te roepen tot de voltooiing ervan. Dit kan worden bepaald vanuit de gebruikersinterface van de workflowrapporten. De standaardprestaties van het doel zijn afhankelijk van de grootte en het type van de verwerkte elementen en het aantal uitvoeringen. Voorbeelden van doelprestaties kunnen als volgt zijn:
+De prestaties van de verwerking van bedrijfsmiddelen worden gemeten in termen van de gemiddelde voltooiingstijd van het werkstroomproces. Dit is de tijd die nodig is om het workflowproces voor het bijwerken van bedrijfsmiddelen aan te roepen tot de voltooiing ervan, die kan worden bepaald vanuit de gebruikersinterface van workflowrapporten. De standaardprestaties van het doel zijn afhankelijk van de grootte en het type van de verwerkte elementen en het aantal uitvoeringen. Voorbeelden van doelprestaties kunnen als volgt zijn:
 
 * minder dan 10 seconden voor afbeeldingen die kleiner zijn dan 1280x1280 pixels, met gebruik van standaardexpressies
 * Minder dan één minuut voor afbeeldingen die kleiner zijn dan 100 MB met behulp van standaarduitvoeringen
@@ -60,7 +60,7 @@ De DAM-processen zijn zeer geschikt om in gelijke mate te worden uitgevoerd. Het
 
 Voor een uitgebreide verwerking van digitale elementen zijn geoptimaliseerde hardwarebronnen nodig. De belangrijkste factoren zijn de beeldgrootte en de maximale doorvoer van verwerkte afbeeldingen.
 
-Wijs minstens 16 GB heap toe en configureer de DAM Update Asset-workflow om het [Camera Raw-pakket](/help/assets/camera-raw.md) te gebruiken voor het opnemen van Raw-afbeeldingen.
+Wijs minstens 16 GB heap toe en configureer de workflow [!UICONTROL DAM Update Asset] om het pakket [](/help/assets/camera-raw.md) Camera Raw te gebruiken voor het opnemen van Raw-afbeeldingen.
 
 ## Het systeem begrijpen {#understanding-the-system}
 
@@ -102,7 +102,7 @@ Voor elk DAM-project moet u een systeem voor het testen van de prestaties instel
 
 De volgende prestatietwekken zijn tot dusver gebruikt in projecten:
 
-* Selectieve uitvoering genereren: U kunt alleen de uitvoeringen genereren die u nodig hebt door voorwaarden toe te voegen aan de workflow voor het verwerken van elementen, zodat alleen voor bepaalde elementen duurdere uitvoeringen worden gegenereerd.
+* Selectieve uitvoering genereren: genereren alleen de uitvoeringen die u nodig hebt door voorwaarden toe te voegen aan de workflow voor het verwerken van elementen, zodat alleen voor bepaalde elementen duurdere uitvoeringen worden gegenereerd.
 * Gedeelde gegevensopslag tussen instanties: wanneer het runnen van laag op schijfruimte kan dit de hoeveelheid schijfruimte beduidend verminderen nodig ten koste van hogere configuratieinspanningen en het verliezen van auto-schoonmaak van de datastore.
 
 ## Meer informatie {#further-reading}

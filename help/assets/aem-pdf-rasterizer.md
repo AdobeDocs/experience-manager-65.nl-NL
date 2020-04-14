@@ -3,7 +3,7 @@ title: PDF-rasterfunctie gebruiken om uitvoeringen te genereren
 description: In dit artikel wordt beschreven hoe u miniaturen en uitvoeringen van hoge kwaliteit kunt genereren met behulp van de Adobe PDF Rasterizer-bibliotheek.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -26,9 +26,7 @@ Miniaturen en voorvertoningen die worden gegenereerd met PDF Rasterizer, zijn be
    >
    >De PDF Rasterizer-bibliotheek is alleen beschikbaar voor Windows en Linux.
 
-1. Open de AEM Assets workflowconsole op `https://[server]:[port]/workflow`.
-
-   Open de pagina met de workflow voor DAM Update Asset.
+1. Open de AEM Assets workflowconsole op `https://[server]:[port]/workflow`. Open de pagina [!UICONTROL met de workflow voor DAM Update Asset] .
 
 1. Ga als volgt te werk om te voorkomen dat de standaardmethoden worden gebruikt voor het genereren van miniaturen en webvertoningen voor PDF- en AI-bestanden:
 

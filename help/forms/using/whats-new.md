@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0e949429-cd5f-4301-aa72-14803cdfab00
 docset: aem65
 translation-type: tm+mt
-source-git-commit: eb6ecc224c4fdd8c1af6f7800dc30de419f5ef68
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -32,7 +32,7 @@ Voor informatie over het vormen van en het gebruiken van transactierapporten, zi
 
 **Patronen voor gegevensweergave definiëren**
 
-Interactieve auteurs van communicatie kunnen nu [gegevenspatronen](../../forms/using/create-interactive-communication.md#main-pars-header-1162517146) definiëren voor velden, variabelen en formuliergegevensmodelelementen. Bijvoorbeeld datum-, valuta- of telefoonnotaties.
+Interactieve auteurs van communicatie kunnen nu [gegevenspatronen](create-interactive-communication.md#datadisplaypatterns) definiëren voor velden, variabelen en formuliergegevensmodelelementen. Bijvoorbeeld datum-, valuta- of telefoonnotaties.
 
 **Nieuwe typen grafieken gebruiken**
 
@@ -176,7 +176,7 @@ AEM Forms kan worden ingesteld met elke combinatie van ondersteunde besturingssy
     </ul> </td>
   </tr>
   <tr>
-   <td>Aansluitingen</td>
+   <td>Connectors</td>
    <td>
     <ul>
      <li>Connector voor Microsoft SharePoint 2013</li>

@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e21714ad-d445-4aff-b0db-d577061e0907
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -150,7 +150,7 @@ Configureer de volgende eigenschappen tijdens het maken van grafieken voor afdru
   </tr>
   <tr>
    <td>Knopinfo</td>
-   <td><p>Indeling waarin de knopinfo wordt weergegeven op de muis boven een gegevenspunt in het diagram in het webkanaal. De standaardwaarde is ${x} (${y}). Afhankelijk van het grafiektype, wanneer u de muis op een punt, bar, of plak in de grafiek richt, worden variabelen $ {x} en $ {y} dynamisch vervangen met de overeenkomstige waarden op x-as en y-as en getoond in tooltip.</p> <p>Laat het veld <span class="uicontrol">Knopinfo</code> leeg als u knopinfo wilt uitschakelen. Deze optie is niet van toepassing op lijngrafieken en vlakgrafieken. Zie bijvoorbeeld <a href="../../forms/using/chart-component-interactive-communications.md#main-pars-header-e1f6">voorbeeld 1: Uitvoer van diagram in afdruk en web</a>.</code></p> </td>
+   <td><p>Indeling waarin de knopinfo wordt weergegeven op de muis boven een gegevenspunt in het diagram in het webkanaal. De standaardwaarde is ${x} (${y}). Afhankelijk van het grafiektype, wanneer u de muis op een punt, bar, of plak in de grafiek richt, worden variabelen $ {x} en $ {y} dynamisch vervangen met de overeenkomstige waarden op x-as en y-as en getoond in tooltip.</p> <p>Laat het veld <span class="uicontrol">Knopinfo</code> leeg als u knopinfo wilt uitschakelen. Deze optie is niet van toepassing op lijngrafieken en vlakgrafieken. Zie bijvoorbeeld <a href="#chartoutputprintweb">voorbeeld 1: Uitvoer van diagram in afdruk en web</a>.</code></p> </td>
    <td>Web</td>
   </tr>
   <tr>
@@ -169,8 +169,8 @@ Configureer de volgende eigenschappen tijdens het maken van grafieken voor afdru
      <li><strong>Referentiepunt &gt; Gegevensmodelobject voor reeks: </strong>Beschikbaar voor veelvoudige grafieken van het reekskwadrant als u het ModelVoorwerp <span class="uicontrol">van</code> Gegevens van de drop-down lijst van het Type van Binding selecteert. Definieer de objecteigenschap van het formuliergegevensmodel om de reeks voor het referentiepunt te identificeren. </code></li>
      <li><strong>Referentiepunt &gt; Objectwaarde gegevensmodel voor reeks: </strong>Beschikbaar voor veelvoudige grafieken van het reekskwadrant als u het ModelVoorwerp <span class="uicontrol">van</code> Gegevens van de drop-down lijst van het Type van Binding selecteert. Gebruik de objecteigenschap van het formuliergegevensmodel voor reeksen en de waarde die in dit veld is gedefinieerd om de reeks voor het referentiepunt te identificeren.</code></li>
      <li><strong>Referentiepunt &gt; Gegevensmodelobject voor referentiepunt: </strong>Beschikbaar voor Kwadrant-grafieken als u <span class="uicontrol">Gegevensmodelobject</code> in de vervolgkeuzelijst Bindingstype selecteert. Definieer een objecteigenschap van het formuliergegevensmodel die vergelijkbaar is met de eigenschappen die op de X- en Y-as zijn getekend. Daarnaast definieert u voor meerdere reeksen een objecteigenschap van het gegevensmodel die een onderliggende entiteit is van de objecteigenschap van het gegevensmodel die voor de reeks is gedefinieerd.</code></li>
-     <li><strong>Referentiepunt &gt; Objectwaarde gegevensmodel voor referentiepunt: </strong>Beschikbaar voor Kwadrant-grafieken als u <span class="uicontrol">Gegevensmodelobject</code> in de vervolgkeuzelijst Bindingstype selecteert. Gebruik de objecteigenschap van het formuliergegevensmodel voor het referentiepunt en de waarde die in dit veld is gedefinieerd om het referentiepunt voor het diagram te identificeren.<br /><strong> </strong>Kwadrant Labels &gt; Linksboven: Beschikbaar voor Kwadrantgrafieken om de naam voor Linksboven kwadrant te specificeren.</code></li>
-     <li><strong></strong> Kwadrantlabels &gt; Rechtsboven: Beschikbaar voor Kwadrantgrafieken om de naam voor het Hoogste juiste kwadrant te specificeren.</li>
+     <li><strong>Referentiepunt &gt; Objectwaarde gegevensmodel voor referentiepunt: </strong>Beschikbaar voor Kwadrant-grafieken als u <span class="uicontrol">Gegevensmodelobject</code> in de vervolgkeuzelijst Bindingstype selecteert. Gebruik de objecteigenschap van het formuliergegevensmodel voor het referentiepunt en de waarde die in dit veld is gedefinieerd om het referentiepunt voor het diagram te identificeren.<br /> <strong>Kwadrant Labels &gt; Linksboven:</strong> Beschikbaar voor Kwadrantgrafieken om de naam voor Linksboven kwadrant te specificeren.</code></li>
+     <li><strong>Kwadrantlabels &gt; Rechtsboven:</strong> Beschikbaar voor Kwadrantgrafieken om de naam voor het Hoogste juiste kwadrant te specificeren.</li>
      <li><strong>Kwadrant Labels &gt; Bottom Right: </strong>Beschikbaar voor Kwadrantgrafieken om de naam voor het Bottom Right kwadrant te specificeren.</li>
      <li><strong>Kwadrant Labels &gt; Bottom Left: </strong>Beschikbaar voor Kwadrantgrafieken om de naam voor het Linkerkwadrant van de Onderkant te specificeren.</li>
     </ul> </td>
@@ -185,7 +185,7 @@ U kunt een grafiek vormen om statistische functies te gebruiken om waarden van d
 
 ![Functies in grafieken](assets/functions_charts_new.png)
 
-Terwijl de component van de Grafiek met sommige ingebouwde functies komt, kunt u [douanefuncties](../../forms/using/chart-component-interactive-communications.md#main-pars-header-473010287) schrijven en hen ter beschikking stellen voor gebruik in de grafiekconfiguratie in het Webkanaal.
+Terwijl de component van de Grafiek met sommige ingebouwde functies komt, kunt u [douanefuncties](#customfunctionsweb) schrijven en hen ter beschikking stellen voor gebruik in de grafiekconfiguratie in het Webkanaal.
 
 De volgende functies zijn standaard beschikbaar met de component Chart:
 
@@ -205,7 +205,7 @@ De volgende functies zijn standaard beschikbaar met de component Chart:
 
 **Modus** retourneert de waarde die de meeste keren voorkomt op de X- of Y-as voor een bepaalde waarde op de andere as.
 
-Zie [Voorbeeld 2 voor meer informatie: De toepassing van de functies van de Som en van de Frequentie in een lijngrafiek](../../forms/using/chart-component-interactive-communications.md#main-pars-header-ae38).
+Zie [Voorbeeld 2 voor meer informatie: De toepassing van de functies van de Som en van de Frequentie in een lijngrafiek](#applicationsumfrequency).
 
 ### Aangepaste functies in webkanaal {#customfunctionsweb}
 
@@ -301,12 +301,12 @@ De grafiek geeft een overzicht van het bedrag voor transacties die in een bepaal
 
 Hiervoor geeft u de volgende eigenschappen op:
 
-* **** Naam: Geef de naam voor het diagram op.
-* **** Type diagram: Selecteer **Kwadrant** in de vervolgkeuzelijst.
+* **Naam:** Geef de naam voor het diagram op.
+* **Type diagram:** Selecteer **Kwadrant** in de vervolgkeuzelijst.
 
 * Schakel het selectievakje **Meerdere reeksen** in.
 * **Gegevensmodelobject**: Geef de objecteigenschap van het gegevensmodel voor de reeks op. De objecteigenschap van het gegevensmodel voor de naam van de bank is een bovenliggend element van de eigenschappen van het gegevensmodel die zijn getekend in de X-as en Y-as.
-* **** Gegevensmodelobjecten: Selecteer de eigenschappen van het gegevensmodelobject om gegevensbindingen te maken voor de X-as (Transactiedatum) en de Y-as (Hoeveelheid transactie).
+* **Gegevensmodelobjecten:** Selecteer de eigenschappen van het gegevensmodelobject om gegevensbindingen te maken voor de X-as (Transactiedatum) en de Y-as (Hoeveelheid transactie).
 * Selecteer in de sectie **Referentiepunt** de optie **Statisch** als bindingstype.
 
 * Geef de waarden op voor de referentiepunten op de X-as en de Y-as.

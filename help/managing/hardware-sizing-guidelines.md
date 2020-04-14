@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 8893306f-4bc0-48eb-8448-36d0214caddf
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3f53945579eaf5de1ed0b071aa9cce30dded89f1
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -241,7 +241,7 @@ De variabelen in de vergelijking zijn als volgt:
   </tr>
   <tr>
    <td>templateComplexiteit</td>
-   <td>Gebruik een waarde tussen 1 en 10 om de complexiteit van uw sjablonen aan te geven. Hogere getallen duiden op complexere sjablonen, waarbij de waarde 1 wordt gebruikt voor sites met gemiddeld 10 componenten per pagina, de waarde 5 voor een gemiddelde paginaconcentratie van 40 componenten en 10 voor een gemiddelde van meer dan 100 componenten.</td>
+   <td>Gebruik een waarde tussen 1 en 10 om de complexiteit van uw sjablonen aan te geven. Hogere getallen duiden op complexere sjablonen, waarbij de waarde 1 wordt gebruikt voor sites met gemiddeld 10 componenten per pagina, de waarde 5 voor een gemiddelde paginaconcentratie van 40 componenten en 10 voor gemiddeld meer dan 100 componenten.</td>
   </tr>
   <tr>
    <td>activering</td>
@@ -273,7 +273,7 @@ Naast de berekening voor een standaardwebtoepassing moet u wellicht rekening hou
 
 Voor een uitgebreide verwerking van digitale elementen zijn geoptimaliseerde hardwarebronnen nodig. De belangrijkste factoren zijn de beeldgrootte en de maximale doorvoer van verwerkte afbeeldingen.
 
-Wijs minstens 16 GB heap toe en configureer de DAM Update Asset-workflow om het [Camera Raw-pakket](/help/assets/camera-raw.md) te gebruiken voor het opnemen van Raw-afbeeldingen.
+Wijs minstens 16 GB heap toe en configureer de workflow [!UICONTROL DAM Update Asset] om het pakket [](/help/assets/camera-raw.md) Camera Raw te gebruiken voor het opnemen van Raw-afbeeldingen.
 
 >[!NOTE]
 Een hogere doorvoer van afbeeldingen betekent dat de computerbronnen gelijke tred moeten kunnen houden met de I/O van het systeem en omgekeerd. Als workflows bijvoorbeeld worden gestart door het importeren van afbeeldingen, kan het uploaden van veel afbeeldingen via WebDAV een achterstand in workflows veroorzaken.

@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: dca5a2ac-1fc8-4251-b073-730fd6f49b1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bdb26ba817e0599f811d7f4e131ec6ab356a4785
+source-git-commit: 28354bd9785fa83939f9e3b051aac195d7706633
 
 ---
 
@@ -204,7 +204,7 @@ Controleer of u de volgende stappen hebt uitgevoerd:
 
 >[!CAUTION]
 >
->Maak slechts één geldige IMS-configuratie. Maak geen meerdere IMS-configuraties.
+>Maak slechts één geldige IMS-configuratie.
 >
 > Zorg ervoor dat de configuratie gezond is. Als de configuratie ongezond is, verwijdert u deze en maakt u een nieuwe, gezonde configuratie.
 

@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: configuring
 discoiquuid: 80118cd1-73e1-4675-bbdf-85d66d150abc
 translation-type: tm+mt
-source-git-commit: 3f53945579eaf5de1ed0b071aa9cce30dded89f1
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -161,7 +161,7 @@ Prestaties (of het ontbreken ervan) zijn een van de eerste dingen die uw gebruik
 
 Voor informatie over hoe te om prestaties controle uit te voeren, zie Prestaties [van de](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance)Controle.
 
-De problemen die prestatieskwesties veroorzaken zijn vaak moeilijk te volgen, zelfs wanneer hun gevolgen gemakkelijk zijn te zien.
+De problemen die prestatieproblemen veroorzaken, zijn vaak moeilijk op te sporen, zelfs als de effecten ervan gemakkelijk te zien zijn.
 
 Een basisuitgangspunt is een goede kennis van uw systeem wanneer het zoals normaal werkt. Tenzij u weet hoe uw omgeving eruit ziet en zich gedraagt wanneer deze goed functioneert, kan het moeilijk zijn het probleem op te sporen wanneer de prestaties achteruitgaan. Dit betekent dat u wat tijd moet besteden aan het onderzoeken van uw systeem wanneer het regelmatig loopt en ervoor moet zorgen dat het verzamelen van prestatiesinformatie een lopende taak is. Dit zal u een basis voor vergelijking verstrekken als de prestaties lijden.
 
@@ -221,7 +221,7 @@ Hier vindt u de bijgewerkte indexeringsgegevens:
 
 Beperk het aantal werkstroomprocessen die tegelijkertijd worden uitgevoerd om de prestaties te verbeteren. De workflowengine verwerkt standaard evenveel workflows als er processors beschikbaar zijn voor de Java VM. Wanneer workflowstappen grote hoeveelheden verwerkingsbronnen (RAM of CPU) vereisen, kan het uitvoeren van verschillende van deze workflows parallel hieraan hoge eisen stellen aan de beschikbare serverbronnen.
 
-Wanneer bijvoorbeeld afbeeldingen (of DAM-elementen in het algemeen) worden geüpload, worden de afbeeldingen door de workflows automatisch in DAM geïmporteerd. Afbeeldingen hebben vaak een hoge resolutie en kunnen eenvoudig honderden MB heap-bestanden voor verwerking verbruiken. Door deze afbeeldingen parallel af te handelen, wordt er veel belasting gelegd op het geheugensubsysteem en de afvalophaler.
+Wanneer bijvoorbeeld afbeeldingen (of DAM-elementen in het algemeen) worden geüpload, worden de afbeeldingen door de workflows automatisch in DAM geïmporteerd. Afbeeldingen hebben vaak een hoge resolutie en kunnen gemakkelijk honderden MB heap voor verwerking verbruiken. Door deze afbeeldingen parallel af te handelen, wordt er veel belasting gelegd op het geheugensubsysteem en de afvalophaler.
 
 De workflowengine gebruikt Apache Sling-taakwachtrijen voor het verwerken en plannen van de verwerking van werkitems. De volgende taakrijservices zijn standaard gemaakt in de Apache Sling Job Queue Configuration-service factory voor het verwerken van werkstroomtaken:
 
@@ -230,7 +230,7 @@ De workflowengine gebruikt Apache Sling-taakwachtrijen voor het verwerken en pla
 
 Vorm deze diensten om het maximumaantal gelijktijdig lopende werkschemaprocessen te beperken.
 
-**** Opmerking: Het vormen van deze baanrijen beïnvloedt alle werkschema&#39;s tenzij u een baanrij voor een specifiek werkschemamodel hebt gecreeerd (zie [Vorm de Rij voor een Specifiek hieronder Model](/help/sites-deploying/configuring-performance.md#configure-the-queue-for-a-specific-workflow) van het Werkschema).
+**Opmerking:** Het vormen van deze baanrijen beïnvloedt alle werkschema&#39;s tenzij u een baanrij voor een specifiek werkschemamodel hebt gecreeerd (zie [Vorm de Rij voor een Specifiek hieronder Model](/help/sites-deploying/configuring-performance.md#configure-the-queue-for-a-specific-workflow) van het Werkschema).
 
 **Configuratie in de opslagplaats**
 
@@ -253,15 +253,15 @@ Wanneer workflowmodellen worden uitgevoerd, creëren ze verschuivende taken voor
 * com/adobe/granite/workflow/job&amp;ast;
 * com/adobe/granite/workflow/external/job&amp;ast;
 
-Werkelijke baanonderwerpen die werkstroommodellen produceren omvatten model-specifiek achtervoegsel. Het workflowmodel van DAM Update Asset genereert bijvoorbeeld taken met het volgende onderwerp:
+Werkelijke baanonderwerpen die werkstroommodellen produceren omvatten model-specifiek achtervoegsel. Het workflowmodel [!UICONTROL DAM Update Asset] genereert bijvoorbeeld taken met het volgende onderwerp:
 
 com/adobe/granite/workflow/job/etc/workflow/models/dam/update_asset/jcr_content/model
 
 Daarom kunt u een baanrij voor het onderwerp tot stand brengen dat de baanonderwerpen van uw werkschemamodel aanpast. Het vormen van de op prestaties betrekking hebbende eigenschappen van de rij beïnvloedt slechts het werkstroommodel dat de banen produceert die het rijonderwerp aanpassen.
 
-Met de volgende procedure wordt een taakwachtrij voor een workflow gemaakt, waarbij de DAM Update Asset-workflow als voorbeeld wordt gebruikt.
+In de volgende procedure wordt een taakwachtrij voor een workflow gemaakt, waarbij de workflow [!UICONTROL DAM Update Asset] als voorbeeld wordt gebruikt.
 
-1. Voer het werkschemamodel uit waarvoor u de baanrij wilt tot stand brengen, zodat de onderwerpstatistieken worden geproduceerd. Voeg bijvoorbeeld een afbeelding toe aan Elementen om de DAM Update Asset-workflow uit te voeren.
+1. Voer het werkschemamodel uit waarvoor u de baanrij wilt tot stand brengen, zodat de onderwerpstatistieken worden geproduceerd. Voeg bijvoorbeeld een afbeelding toe aan Elementen om de workflow [!UICONTROL DAM-element] bijwerken uit te voeren.
 1. Open de Sling Job-console. ([http://localhost:4502/system/console/slingevent](http://localhost:4502/system/console/slingevent))
 1. Ontdek de werkschemagerelateerde onderwerpen in de console. Voor DAM Update Asset, zijn de volgende onderwerpen gevonden:
 
@@ -384,7 +384,7 @@ Kritieke onderdelen moeten worden getest - zowel onder gemiddelde als onder piek
 
 In beide gevallen kunt u het verwachte aantal transacties per seconde definiëren wanneer een vooraf gedefinieerd aantal gebruikers het systeem gebruikt.
 
-| Component | Testtype | #Users | Tx/sec (verwacht) | Tx/sec (getest) | Beschrijving |
+| Component | Testtype | #Gebruikers | Tx/sec (verwacht) | Tx/sec (getest) | Beschrijving |
 |---|---|---|---|---|---|
 | Homepage voor één gebruiker | Gemiddelde | 1 | 1 |  |  |
 |  | Piek | 1 | 3 |  |  |
@@ -395,7 +395,7 @@ In beide gevallen kunt u het verwachte aantal transacties per seconde definiëre
 
 Wanneer u de componenten in combinatie test, wordt het gedrag van de toepassingen beter weerspiegeld. Ook hier moeten de gemiddelde en piekomstandigheden worden getest.
 
-| Scenario | Component | #Users | Tx/sec (verwacht) | Tx/sec (getest) | Beschrijving |
+| Scenario | Component | #Gebruikers | Tx/sec (verwacht) | Tx/sec (getest) | Beschrijving |
 |---|---|---|---|---|---|
 | Gemengd gemiddelde | Homepage | 10 | 1 |  |  |
 |  | Zoeken | 10 | 1 |  |  |
@@ -412,7 +412,7 @@ Wanneer u de componenten in combinatie test, wordt het gedrag van de toepassinge
 
 In de eerste dagen nadat uw website beschikbaar is gemaakt, kunt u een hogere mate van belangstelling verwachten. Dit zal waarschijnlijk zelfs groter zijn dan de piekwaarden u voor hebt getest. Het wordt ten zeerste aanbevolen Going Live-scenario&#39;s te testen om ervoor te zorgen dat het systeem op deze situatie kan inspelen.
 
-| Scenario | Testtype | #Users | Tx/sec (verwacht) | Tx/sec (getest) | Beschrijving |
+| Scenario | Testtype | #Gebruikers | Tx/sec (verwacht) | Tx/sec (getest) | Beschrijving |
 |---|---|---|---|---|---|
 | Going Live peak | Homepage | 200 | 20 |  |  |
 |  | Zoeken | 100 | 10 |  |  |
@@ -429,7 +429,7 @@ Foutscenario&#39;s moeten ook worden getest om ervoor te zorgen dat het systeem 
 
 Bij het opstellen van deze tests moet er rekening mee worden gehouden dat niet alle scenario&#39;s regelmatig zullen plaatsvinden. Het is echter van belang dat de gevolgen voor het hele systeem worden beïnvloed.
 
-| Foutscenario | Fouttype | #Users | Tx/sec (verwacht) | Tx/sec (getest) | Beschrijving |
+| Foutscenario | Fouttype | #Gebruikers | Tx/sec (verwacht) | Tx/sec (getest) | Beschrijving |
 |---|---|---|---|---|---|
 | Overbelasting van component zoeken | Zoeken op jokerteken (sterretje) | 10 | 1 |  | Alleen &amp;ast;&amp;ast;&amp;ast; worden doorzocht. |
 |  | Woord stoppen | 20 | 2 |  | Zoeken naar een stopwoord. |
@@ -440,7 +440,7 @@ Bij het opstellen van deze tests moet er rekening mee worden gehouden dat niet a
 
 Bepaalde problemen zullen pas worden ondervonden nadat het systeem gedurende een ononderbroken periode functioneert; hetzij uren, hetzij zelfs dagen. Een duurtest wordt gebruikt om een constante gemiddelde belasting over een vereiste periode te testen. Elke verslechtering van de prestaties kan vervolgens worden geanalyseerd.
 
-| Scenario | Testtype | #Users | Tx/sec (verwacht) | Tx/sec (getest) | Beschrijving |
+| Scenario | Testtype | #Gebruikers | Tx/sec (verwacht) | Tx/sec (getest) | Beschrijving |
 |---|---|---|---|---|---|
 | Duurzaamheidstest (72 uur) | Homepage | 10 | 1 |  |  |
 |  | Zoeken | 10 | 1 |  |  |
@@ -632,7 +632,7 @@ Er zijn twee manieren waarop een browser het type bestand kan bepalen:
 1. Door de uitbreiding (bijvoorbeeld .html, .gif, .jpg, enz.)
 1. Door het MIME-type dat de server met het bestand verzendt.
 
-Voor de meeste bestanden wordt het MIME-type geïmpliceerd in de bestandsextensie. d.w.z.:
+Voor de meeste bestanden wordt het MIME-type geïmpliceerd in de bestandsextensie. i.e.:
 
 1. Door de uitbreiding (bijvoorbeeld .html, .gif, .jpg, enz.)
 1. Door het MIME-type dat de server met het bestand verzendt.
@@ -742,11 +742,11 @@ Deze grafiek illustreert dat zowel stijgende als volledige steunen een eenvoudig
 
 #### Back-upvertraging {#backup-delay}
 
-De parameter van de reservevertraging wordt verstrekt om de mate te beperken tot welke steunen productiewerklasten kunnen interfereren. De parameter geeft een wachttijd in milliseconden aan, die per bestand wordt doorgestuurd naar de back-upbewerking. Het algemene effect hangt gedeeltelijk af van de grootte van de betrokken bestanden. Het meten van back-upprestaties in MB/sec biedt een redelijke manier om de effecten van vertraging op de back-up te vergelijken.
+De parameter van de reservevertraging wordt verstrekt om de mate te beperken tot welke steunen productiewerklasten kunnen interfereren. De parameter geeft een wachttijd in milliseconden aan, die per bestand in de back-upbewerking wordt afgedrukt. Het algemene effect hangt gedeeltelijk af van de grootte van de betrokken bestanden. Het meten van back-upprestaties in MB/sec biedt een redelijke manier om de effecten van vertraging op de back-up te vergelijken.
 
 * Als u een back-up gelijktijdig uitvoert met een normale toepassingsbelasting, heeft dit een negatieve invloed op de doorvoer van de normale laadbewerking.
 * De impact kan gering zijn — slechts 5% — of zeer significant zijn — waardoor de productie met maar liefst 75% afneemt, en dit hangt waarschijnlijk meer af van de toepassing dan wat dan ook.
-* Back-up is geen zware belasting voor de CPU, en dus zouden CPU-intensieve productiewerklasten minder worden beïnvloed door back-up dan I/O-intensieve werklasten.
+* Back-up is geen zware belasting voor de CPU en dus zouden CPU-intensieve productiewerklasten minder worden beïnvloed door back-up dan I/O-intensieve werklasten.
 
 ![chlimage_1-83](assets/chlimage_1-83.png)
 

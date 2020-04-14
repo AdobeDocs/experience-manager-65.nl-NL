@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 06335b9a85414b6b1141dd19c863dfaad0812503
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -18,7 +18,7 @@ source-git-commit: 06335b9a85414b6b1141dd19c863dfaad0812503
 
 ![](do-not-localize/data-integeration.png)
 
-De formuliergegevensmodeleditor biedt een intuïtieve gebruikersinterface en hulpmiddelen voor het bewerken en configureren van een formuliergegevensmodel. Met behulp van de editor kunt u gegevensmodelobjecten, eigenschappen en services toevoegen en configureren vanuit gekoppelde gegevensbronnen in het formuliergegevensmodel. Daarnaast kunt u gegevensmodelobjecten en -eigenschappen maken zonder gegevensbronnen en deze later binden met de respectievelijke gegevensmodelobjecten en -eigenschappen. U kunt ook voorbeeldgegevens genereren en bewerken voor objecteigenschappen van gegevensmodellen die u kunt gebruiken om aangepaste formulieren en interactieve communicatie vooraf in te vullen tijdens het weergeven van een voorbeeld. U kunt gegevensmodelvoorwerpen en de diensten testen die in een model van vormgegevens worden gevormd om het behoorlijk met gegevensbronnen te verzekeren.
+De formuliergegevensmodeleditor biedt een intuïtieve gebruikersinterface en hulpmiddelen voor het bewerken en configureren van een formuliergegevensmodel. Met behulp van de editor kunt u gegevensmodelobjecten, eigenschappen en services toevoegen en configureren vanuit gekoppelde gegevensbronnen in het formuliergegevensmodel. Daarnaast kunt u gegevensmodelobjecten en -eigenschappen maken zonder gegevensbronnen en deze later binden met de respectievelijke gegevensmodelobjecten en -eigenschappen. U kunt ook voorbeeldgegevens genereren en bewerken voor objecteigenschappen van gegevensmodellen die u kunt gebruiken om aangepaste formulieren en interactieve communicatie vooraf in te vullen tijdens het weergeven van een voorbeeld. U kunt gegevensmodelvoorwerpen en de diensten testen die in een model van vormgegevens worden gevormd om ervoor te zorgen het behoorlijk met gegevensbronnen wordt geïntegreerd.
 
 Als u nieuw bent voor de gegevensintegratie van Forms en geen gegevensbron hebt gevormd of een model van vormgegevens gecreeerd, zie de volgende onderwerpen:
 
@@ -155,7 +155,7 @@ Om gegevens voor een voorwerp van het gegevensmodel te lezen en te schrijven, do
 
    Lees en schrijf de diensten die voor werknemersgegevensbron worden gevormd
 
-1. Tik ![name_6_3_edit](assets/aem_6_3_edit.png) voor het read de dienstargument om het argument aan een Attribuut van het Profiel van de Gebruiker, een Attribuut van het Verzoek, of Letterlijke waarde [te](../../forms/using/work-with-form-data-model.md#main-pars-header-2140694395) binden en de bindende waarde te specificeren.
+1. Tik ![name_6_3_edit](assets/aem_6_3_edit.png) voor het read de dienstargument om het argument aan een Attribuut van het Profiel van de Gebruiker, een Attribuut van het Verzoek, of Letterlijke waarde [te](#bindargument) binden en de bindende waarde te specificeren.
 1. Tik **[!UICONTROL op Gereed]** om het argument op te slaan, **[!UICONTROL Gereed]** om de eigenschappen op te slaan en **[!UICONTROL Opslaan]** om het formuliergegevensmodel op te slaan.
 
 ### Serviceargumenten voor lezen binden {#bindargument}
@@ -520,7 +520,7 @@ format: "int64"
 ]
 ```
 
-Er wordt een uitzondering weergegeven als de invoergegevens niet voldoen aan de validatiecriteria. Als het logboekniveau aan **Debug** wordt geplaatst, wordt een fout geregistreerd aan het **error.log** - dossier. Bijvoorbeeld,
+Er wordt een uitzondering weergegeven als de invoergegevens niet voldoen aan de validatiecriteria. Als het logboekniveau aan **Debug** wordt geplaatst, wordt een fout geregistreerd aan het **error.log** - dossier. Bijvoorbeeld:
 
 ```java
 21.01.2019 17:26:37.411 *ERROR* com.adobe.aem.dermis.core.validation.JsonSchemaValidator {"errorCode":"AEM-FDM-001-044","errorMessage":"Input validations failed during operation execution.","violations":{"/orderId":["numeric instance is greater than the required maximum (maximum: 10, found: 16)"]}}

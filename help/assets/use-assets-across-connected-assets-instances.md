@@ -3,7 +3,7 @@ title: Met gekoppelde assets kunt u DAM-assets delen in de authoringworkflow van
 description: Gebruik de assets die beschikbaar zijn op een externe implementatie van Adobe Experience Manager Assets bij het maken van uw webpagina's op een andere implementatie van een Experience Manager-site.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3c2c47b5d660fefd31470ce8d555c7bb949fa036
+source-git-commit: ccdafa89793e97f69294958d814cccf3554b496d
 
 ---
 
@@ -45,7 +45,7 @@ Met de Content Finder kunnen auteurs zoeken naar afbeeldingen en de volgende typ
 Hieronder worden de diverse rollen beschreven voor de configuratie en toepassing van een kenmerk en de overeenkomstige gebruikersgroepen. De lokale scope wordt gebruikt voor het gebruiksscenario waarin een webpagina wordt gemaakt door een auteur. De externe scope wordt gebruikt voor de DAM-implementatie die als host fungeert voor de vereiste assets. De Sites-auteur haalt deze externe assets op.
 
 | Rol | Scope | Gebruikersgroep | Gebruikersnaam in voorbeeldprocedure | Vereiste |
-|----------------------------------|--------|------------------------------------------------------------------------------|--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|---|---|---|---|---|
 | AEM Sites-beheerder | Lokaal | AEM-beheerder | `admin` | Installeer AEM en configureer de integratie met de externe Assets-implementatie. |
 | DAM-gebruiker | Lokaal | Auteur | `ksaner` | Wordt gebruikt om de assets die bij `/content/DAM/connectedassets/` zijn opgehaald, weer te geven en te dupliceren. |
 | AEM Sites-auteur | Lokaal | Auteur (met leestoegang op de externe DAM en auteurstoegang op lokale sites) | `ksaner` | Eindgebruikers zijn Sites-auteurs die deze integratie gebruiken om de snelheid van de content te verbeteren. De auteurs zoeken met de Content Finder naar assets in de externe DAM en gebruiken de vereiste afbeeldingen op lokale webpagina&#39;s. De referenties van de `ksaner` DAM-gebruiker worden gebruikt. |
@@ -73,11 +73,9 @@ Voer de volgende stappen uit om gekoppelde assets te configureren met de lokale 
    1. De locatie van AEM Assets is `https://[assets_servername_ams]:[port]`.
    1. Referenties van een DAM-distributeur (technische gebruiker).
    1. In **[!UICONTROL Mount Point]** field, enter the local AEM path where AEM fetches the assets. Bijvoorbeeld de map `remoteassets`.
-
    1. Pas de waarden van de **[!UICONTROL Originele Binaire Drempel]** van de overdrachtoptimalisering afhankelijk van uw netwerk aan. De weergave van een asset die groter is dan deze drempelwaarde, wordt asynchroon overgedragen.
    1. Select **[!UICONTROL Datastore Shared with Connected Assets]**, if you use a datastore to store your assets and the Datastore is the common storage between both AEM deployments. In dat geval is de drempelwaarde niet van belang, aangezien de binaire gegevens van de werkelijke asset in de datastore staan en niet worden overgedragen.
-   ![Een typische configuratie voor gekoppelde assets](assets/connected-assets-typical-config.png)
-
+      ![Een typische configuratie voor gekoppelde assets](assets/connected-assets-typical-config.png)
    *Afbeelding: Een typische configuratie voor gekoppelde assets*
 
 1. Als de assets al zijn verwerkt en de weergaven zijn opgehaald, schakelt u de startprogramma&#39;s voor de workflow uit. Pas de configuraties van het startprogramma op de lokale (AEM Sites) implementatie aan zodat de map `connectedassets` waarin de externe assets worden opgehaald, wordt uitgesloten.

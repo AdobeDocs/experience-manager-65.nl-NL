@@ -10,7 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: 9b06c394-8e26-429c-b78f-22afa271aeb3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -25,9 +25,9 @@ De agenten kunnen postverwerkingswerkschema&#39;s op brieven en interactieve med
 
 Om postprocessen met brieven of interactieve mededelingen te associëren, moet u eerst opstelling de postprocessen. Er kunnen twee typen workflows worden uitgevoerd op verzonden brieven:
 
-1. **** Workflow voor formulieren: Dit zijn de AEM-formulieren voor JEE-procesbeheerworkflows. Instructies voor het instellen van de [Forms Workflow](../../forms/using/submit-letter-topostprocess.md#main-pars-header-3).
+1. **Workflow voor formulieren:** Dit zijn de AEM-formulieren voor JEE-procesbeheerworkflows. Instructies voor het instellen van de [Forms Workflow](#formsworkflow).
 
-1. **** AEM-workflow: AEM-workflows kunnen ook worden gebruikt als postprocessen voor verzonden brieven. Instructies voor het instellen van de [AEM-workflow](../../forms/using/aem-forms-workflow.md).
+1. **AEM-workflow:** AEM-workflows kunnen ook worden gebruikt als postprocessen voor verzonden brieven. Instructies voor het instellen van de [AEM-workflow](../../forms/using/aem-forms-workflow.md).
 
 ## Forms Workflow {#formsworkflow}
 
@@ -57,11 +57,11 @@ Om postprocessen met brieven of interactieve mededelingen te associëren, moet u
 
    Ga naar de pagina Configuraties van de Webconsole van de Manager van de Ervaring van Adobe > **[!UICONTROL Correspondence Management Configurations]** en opstelling de volgende parameters:
 
-   1. **** inPDFDoc (parameter PDF-document): Een PDF-document als invoer. Deze invoer bevat de gerenderde letter als invoer. De vermelde parameternamen kunnen worden geconfigureerd. Zij kunnen van configuraties van het Beheer van de Correspondentie van configuratie worden gevormd.
-   1. **** inXMLDoc (parameter XML-gegevens): Een XML-document als invoer. Deze invoer bevat gegevens die door de gebruiker zijn ingevoerd in de vorm van XML.
-   1. **** inXDPDoc (XDP-documentparameter): Een XML-document als invoer. Deze invoer bevat onderliggende layout (XDP).
-   1. **** inAttachmentDocs (parameter Bijlagedocumenten): Een parameter voor lijstinvoer. Deze invoer bevat alle bijlagen als invoer.
-   1. **** redirectURL (Redirect URL Output): Een uitvoertype dat de URL aangeeft waarnaar moet worden omgeleid.
+   1. **inPDFDoc (parameter PDF-document):** Een PDF-document als invoer. Deze invoer bevat de gerenderde letter als invoer. De vermelde parameternamen kunnen worden geconfigureerd. Zij kunnen van configuraties van het Beheer van de Correspondentie van configuratie worden gevormd.
+   1. **inXMLDoc (parameter XML-gegevens):** Een XML-document als invoer. Deze invoer bevat gegevens die door de gebruiker zijn ingevoerd in de vorm van XML.
+   1. **inXDPDoc (XDP-documentparameter):** Een XML-document als invoer. Deze invoer bevat onderliggende layout (XDP).
+   1. **inAttachmentDocs (parameter Bijlagedocumenten):** Een parameter voor lijstinvoer. Deze invoer bevat alle bijlagen als invoer.
+   1. **redirectURL (Redirect URL Output):** Een uitvoertype dat de URL aangeeft waarnaar moet worden omgeleid.
    Uw formulierwerkstroom moet een PDF-documentparameter of een XML-gegevensparameter hebben als invoer met dezelfde naam als opgegeven in **[!UICONTROL Correspondentiebeheerconfiguraties]**. Dit is vereist om het proces weer te geven in het vervolgkeuzemenu Verwerking.
 
 ## Instellingen voor de instantie Publiceren {#settings-on-the-publish-instance}

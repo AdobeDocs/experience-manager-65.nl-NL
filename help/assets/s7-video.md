@@ -8,7 +8,7 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 translation-type: tm+mt
-source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -97,7 +97,7 @@ Als u de kijker en het coderen vooraf instelt voor video in AEM moet bijwerken o
 ## Uw hoofdvideo uploaden naar Scene7 vanuit Adobe DAM {#uploading-your-master-video}
 
 1. Navigeer naar de CQ DAM doelomslag waar u opstelling uw wolkenconfiguratie met Scene7 het coderen profielen hebt.
-1. Klik op **[!UICONTROL Uploaden]** om stramienvideo te uploaden. Het uploaden en coderen van video is voltooid nadat de DAM Update Asset-workflow is voltooid en **[!UICONTROL Publiceren naar Scene7]** een vinkje heeft.
+1. Klik op **[!UICONTROL Uploaden]** om stramienvideo te uploaden. Het uploaden en coderen van video is voltooid nadat de workflow [!UICONTROL DAM Update Asset] is voltooid en **[!UICONTROL Publiceren naar Scene7]** een vinkje heeft.
 
    >[!NOTE]
    >
@@ -147,7 +147,7 @@ De verschillende videocoderingen worden gecreeerd volgens de S7 coderende voorin
 
 1. Tik in AEM op **[!UICONTROL Tools > Configuration Console**.
 1. Navigeer in de **[!UICONTROL configuratieconsole]** naar **[!UICONTROL Extra > DAM > Videoprofielen]** in de navigatiestructuur.
-1. Maak een nieuw S7-videoprofiel. **[!UICONTROL In het dialoogvenster]** Nieuw... selecteert u Pagina **** maken en selecteert u vervolgens de sjabloon Scene7-videoprofiel. Geef de nieuwe pagina met videoprofielen een naam en klik op **[!UICONTROL Maken]**.
+1. Maak een nieuw S7-videoprofiel. In het dialoogvenster **[!UICONTROL Nieuw...]** selecteert u Pagina **** maken en selecteert u vervolgens de sjabloon Scene7-videoprofiel. Geef de nieuwe pagina met videoprofielen een naam en klik op **[!UICONTROL Maken]**.
 
    ![chlimage_1-366](assets/chlimage_1-366.png)
 

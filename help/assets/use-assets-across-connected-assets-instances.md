@@ -3,7 +3,7 @@ title: Met gekoppelde assets kunt u DAM-assets delen in de authoringworkflow van
 description: Gebruik de assets die beschikbaar zijn op een externe implementatie van Adobe Experience Manager Assets bij het maken van uw webpagina's op een andere implementatie van een Experience Manager-site.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ccdafa89793e97f69294958d814cccf3554b496d
+source-git-commit: 04fef21d6027dcfcb6a67a1121e0d1570926db41
 
 ---
 
@@ -95,7 +95,7 @@ Voer de volgende stappen uit om gekoppelde assets te configureren met de lokale 
 
    >[!NOTE]
    >
-   >Alle weergaven die beschikbaar zijn op de externe AEM-implementatie worden opgehaald wanneer auteurs een asset ophalen. Als u meer weergaven van een opgehaalde asset tot stand wilt brengen, moet u deze configuratiestap overslaan. De DAM Update Asset-workflow wordt geactiveerd en er worden meer weergaven gemaakt. Deze weergaven zijn alleen beschikbaar op de lokale Sites-implementatie en niet op de externe DAM-implementatie.
+   >Alle weergaven die beschikbaar zijn op de externe AEM-implementatie worden opgehaald wanneer auteurs een asset ophalen. Als u meer weergaven van een opgehaalde asset tot stand wilt brengen, moet u deze configuratiestap overslaan. The [!UICONTROL DAM Update Asset] workflow gets triggered and creates more renditions. These renditions are available only on the local [!DNL Sites] deployment and not on the remote DAM deployment.
 
 1. Add the AEM Sites instance as one of the **[!UICONTROL Allowed Origins]** on the remote AEM Assets&#39; CORS configuration.
 
@@ -111,7 +111,7 @@ Auteurs van de website gebruiken Content Finder om verbinding te maken met de DA
 
 Auteurs kunnen de assets die zowel beschikbaar zijn op de lokale DAM-instantie als op de externe DAM-instantie, op één webpagina gebruiken. Gebruik de Content Finder om te schakelen tussen het doorzoeken van de lokale of de externe DAM.
 
-Alleen die tags van externe assets worden opgehaald die exact overeenkomen (met dezelfde taxonomiehiërarchie) met de tags die beschikbaar zijn in de lokale Sites-instantie. Alle andere tags worden verwijderd. Auteurs kunnen naar externe assets zoeken met behulp van alle tags die zich op de externe AEM-implementatie bevinden, aangezien AEM een volledige-tekstzoekopdracht biedt.
+Alleen die tags met externe elementen worden opgehaald die een exacte corresponderende tag hebben, samen met dezelfde taxonomihiërarchie, die beschikbaar is in de lokale Sites-instantie. Alle andere tags worden verwijderd. Auteurs kunnen naar externe assets zoeken met behulp van alle tags die zich op de externe AEM-implementatie bevinden, aangezien AEM een volledige-tekstzoekopdracht biedt.
 
 ### Procedure voor gebruik {#walk-through-of-usage}
 

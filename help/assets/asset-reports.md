@@ -3,12 +3,12 @@ title: Rapporten over uw digitale middelen
 description: Lees rapporten over uw middelen in AEM Assets die u helpen gebruik, activiteit, en het delen van uw digitale activa te begrijpen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 70a88085a0fd6e949974aa7f1f92fdc3def3d98e
+source-git-commit: a839ec71e02ee5d92f054a686b7bb52142058ae9
 
 ---
 
 
-# Elementrapporten {#asset-reports}
+# Asset Reports {#asset-reports}
 
 Asset Reporting is een belangrijk hulpmiddel om het nut van de implementatie van Adobe Experience Manager (AEM)-middelen te beoordelen. Met AEM Assets kunt u verschillende rapporten genereren voor uw digitale middelen. De rapporten bevatten nuttige informatie over het gebruik van uw systeem, over de manier waarop gebruikers met elementen werken en over de elementen die worden gedownload en gedeeld.
 
@@ -38,16 +38,16 @@ AEM-beheerders kunnen deze rapporten eenvoudig genereren en aanpassen voor uw im
 
 1. Tik/klik op het AEM-logo en ga naar **[!UICONTROL Gereedschappen]** > **[!UICONTROL Middelen]** > **[!UICONTROL Rapporten]**.
 
-![Navigeren door middelenrapport](assets/AssetsReportNavigation.png)
+![Pagina Gereedschappen om te navigeren in middelenrapport](assets/AssetsReportNavigation.png)
 
 1. Tik op of klik op **[!UICONTROL Maken]** op de werkbalk op de pagina Elementrapporten.
 1. Kies op de pagina Rapport **** maken het rapport dat u wilt maken en tik op **[!UICONTROL Volgende]**.
 
-   ![choose_report](assets/choose_report.png)
+   ![Rapporttype selecteren](assets/choose_report.png)
 
    >[!NOTE]
    >
-   >Voordat u een rapport **[!UICONTROL Asset Downloaded]** kunt genereren, moet u controleren of de service Asset Download is ingeschakeld. Open vanuit de webconsole (`https://[aem_server]:[port]/system/console/configMgr`) de configuratie van de DAM-gebeurtenisrecorder **[!UICONTROL voor]** dagen van CQ en selecteer de optie **[!UICONTROL Gedownloade]** middelen (GEDOWNLOAD)in gebeurtenistypen als deze optie nog niet is geselecteerd.
+   >Before you can generate an **[!UICONTROL Asset Downloaded]** report, ensure that the Asset Download service is enabled. Open vanuit de webconsole (`https://[aem_server]:[port]/system/console/configMgr`) de configuratie van de DAM-gebeurtenisrecorder **[!UICONTROL voor]** dagen van CQ en selecteer de optie **[!UICONTROL Gedownloade]** middelen (GEDOWNLOAD)in gebeurtenistypen als deze optie nog niet is geselecteerd.
 
    >[!NOTE]
    >
@@ -55,7 +55,7 @@ AEM-beheerders kunnen deze rapporten eenvoudig genereren en aanpassen voor uw im
 
 1. Configureer rapportdetails zoals titel, beschrijving, miniatuur en mappad in de CRX-opslagplaats waar het rapport wordt opgeslagen. Standaard is het mappad */content/dam*. U kunt een ander pad opgeven.
 
-   ![report_configuration](assets/report_configuration.png)
+   ![Pagina om rapportdetails toe te voegen](assets/report_configuration.png)
 
    Kies het datumbereik voor uw rapport.
 
@@ -69,34 +69,34 @@ AEM-beheerders kunnen deze rapporten eenvoudig genereren en aanpassen voor uw im
 
    >[!NOTE]
    >
-   >Het rapport **[!UICONTROL Schijfgebruik]** bevat geen datumbereikvelden omdat het alleen het huidige gebruik van schijfruimte aangeeft.
+   >The **[!UICONTROL Disk Usage]** report does not include date range fields because it indicates current disk space usage only.
 
-   ![disk_usage_configuration](assets/disk_usage_configuration.png)
+   ![Detailpagina van rapport Schijfgebruik](assets/disk_usage_configuration.png)
 
    Wanneer u het rapport **[!UICONTROL Bestanden]** maakt, kunt u submappen opnemen of uitsluiten. U kunt echter geen elementuitvoeringen opnemen voor dit rapport.
 
-   ![files_report](assets/files_report.png)
+   ![Pagina met details van rapport Bestanden](assets/files_report.png)
 
-   In het rapport **[!UICONTROL Koppeling delen]** worden URL&#39;s weergegeven naar elementen die vanuit AEM-elementen worden gedeeld met externe gebruikers. Het bevat e-mailadressen van de gebruiker die de middelen heeft gedeeld, e-mailadressen van gebruikers met wie de middelen worden gedeeld, datum van delen en vervaldatum voor de koppeling. De kolommen kunnen niet worden aangepast.
+   The **[!UICONTROL Link Share]** report displays URLs to assets that are shared with external users from within AEM Assets. Het bevat e-mail-id&#39;s van de gebruiker die de assets heeft gedeeld, e-mail-id&#39;s van gebruikers met wie de assets worden gedeeld, de datum van delen en de vervaldatum voor de koppeling. De kolommen kunnen niet worden aangepast.
 
-   Het rapport **[!UICONTROL Koppeling delen]** bevat geen opties voor submappen en uitvoeringen omdat het alleen de gedeelde URL&#39;s publiceert die onder `/var/dam/share`.
+   The **[!UICONTROL Link Share]** report, does not include options for sub-folders and renditions because it merely publishes the shared URLs that appear under `/var/dam/share`.
 
-   ![link_share](assets/link_share.png)
+   ![De pagina van details van het rapport van het Aandeel van de Verbinding](assets/link_share.png)
 
 1. Tik/klik op **[!UICONTROL Volgende]** op de werkbalk.
 
 1. Op de **[!UICONTROL Configure pagina van Kolommen]** , worden sommige kolommen geselecteerd om in het rapport door gebrek te verschijnen. U kunt meer kolommen selecteren. Schakel een geselecteerde kolom uit om deze uit te sluiten in het rapport.
 
-   ![configure_columns](assets/configure_columns.png)
+   ![Rapportkolommen selecteren of deselecteren](assets/configure_columns.png)
 
    Als u een aangepaste kolomnaam of een aangepast eigenschapspad wilt weergeven, configureert u de eigenschappen voor het element binair onder het knooppunt jcr:content in CRX. U kunt dit ook toevoegen via de padkiezer voor eigenschappen.
 
-   ![custom_columns](assets/custom_columns.png)
+   ![Aangepaste kolommen maken voor rapport](assets/custom_columns.png)
 
 1. Tik/klik op **[!UICONTROL Maken]** op de werkbalk. Een bericht meldt dat de rapportgeneratie is in werking gesteld.
 1. In de pagina van de Rapporten van Activa, is de status van de rapportgeneratie gebaseerd op de huidige staat van de rapportbaan, bijvoorbeeld Succes, Mislukt, In de wachtrij geplaatst, of Gepland. Dezelfde status wordt weergegeven in het vak met meldingen. Tik op de rapportkoppeling of klik op de rapportpagina om de rapportpagina weer te geven. U kunt ook het rapport selecteren en op de werkbalk op **[!UICONTROL Weergave]** tikken.
 
-   ![report_page](assets/report_page.png)
+   ![Een gegenereerd rapport](assets/report_page.png)
 
    Tik op **[!UICONTROL Downloaden]** vanaf de werkbalk om het rapport in CSV-indeling te downloaden.
 
@@ -118,13 +118,13 @@ U kunt douanekolommen aan de volgende rapporten toevoegen om meer gegevens voor 
 1. Kies op de pagina Rapport **** maken het rapport dat u wilt maken en tik op **[!UICONTROL Volgende]**.
 1. Configureer rapportdetails zoals titel, beschrijving, miniatuur, mappad en datumbereik.
 
-1. Als u een aangepaste kolom wilt weergeven, geeft u de naam van de kolom op onder **[!UICONTROL Aangepaste kolommen]**.
+1. To display a custom column, specify the name of the column in under **[!UICONTROL Custom Columns]**.
 
-   ![custom_columns-1](assets/custom_columns-1.png)
+   ![Geef een naam op voor de aangepaste rapportkolom](assets/custom_columns-1.png)
 
 1. Voeg het bezitspad onder de `jcr:content` knoop in CRXDE toe gebruikend de plukker van de bezitspad. U kunt ook het pad typen in het veld Pad eigenschap.
 
-   ![property_picker](assets/property_picker.png)
+   ![Eigenschappenpad toewijzen vanuit paden in jcr:content](assets/property_picker.png)
 
    Tik/klik op **[!UICONTROL Toevoegen]** en herhaal stap 5 en 6 om meer aangepaste kolommen toe te voegen.
 

@@ -9,7 +9,7 @@ topic-tags: develop
 discoiquuid: 7139a0e6-0e37-477c-9e0b-aa356991d040
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
 
 ---
 
@@ -339,7 +339,7 @@ U kunt de douane vooraf ingevulde dienst voor de scenario&#39;s gebruiken, waar 
 De prefill dienst is de dienst OSGi en door bundel OSGi verpakt. U maakt de OSGi-bundel, uploadt en installeert deze naar AEM Forms-bundels. Voordat u begint met het maken van de bundel:
 
 * [De SDK van de AEM Forms Client downloaden](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
-* [Het tekstbouwsteenpakket downloaden](../../forms/using/prepopulate-adaptive-form-fields.md#main-pars-download-section-711716493)
+* Het tekstbouwsteenpakket downloaden
 
 * Plaats het gegevensbestand (vooraf ingevulde gegevens) in crx-bewaarplaats. U kunt het bestand op elke locatie in de map \contents van de crx-opslagplaats plaatsen.
 
@@ -353,7 +353,7 @@ Het bouwsteenpakket (voorbeeldenservicepakket) bevat een voorbeeldimplementatie 
 1. Stel in de code de waarde in van:
 
    * `nodePath:` De knooppuntvariabele die naar de crx-gegevensopslagplaats wijst bevat weg van het gegevens (prefill) dossier. Bijvoorbeeld /content/prefilldata.xml
-   * `label:` De labelparameter geeft de weergavenaam van de service op. Bijvoorbeeld, de StandaardVooraf ingevulde Dienst
+   * `label:` Met de parameter label wordt de weergavenaam van de service opgegeven. Bijvoorbeeld, de StandaardVooraf ingevulde Dienst
 
 1. Sla het `Prefill.java` bestand op en sluit het.
 1. Voeg het `AEM Forms Client SDK` pakket aan de bouwstijlweg van het bouwsteenproject toe.

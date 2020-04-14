@@ -12,7 +12,7 @@ discoiquuid: 59780112-6a9b-4de2-bf65-f026c8c74a31
 docset: aem65
 targetaudience: target-audience upgrader
 translation-type: tm+mt
-source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -150,7 +150,7 @@ De configuraties van ContextHub worden beïnvloed door een verbetering. De instr
 
 ### Workflowaanpassingen {#workflow-customizations}
 
-Het is gebruikelijk om wijzigingen uit de vakworkflows bij te werken om niet-benodigde functionaliteit toe te voegen of te verwijderen. Een algemene workflow die wordt aangepast, is de workflow voor DAM Update Asset. Van alle workflows die vereist zijn voor een aangepaste implementatie, moet een back-up worden gemaakt en worden opgeslagen in versiebeheer, aangezien deze tijdens een upgrade kunnen worden overschreven.
+Het is gebruikelijk om wijzigingen uit de vakworkflows bij te werken om niet-benodigde functionaliteit toe te voegen of te verwijderen. Een algemene workflow die wordt aangepast, is de workflow [!UICONTROL DAM Update Asset] . Van alle workflows die vereist zijn voor een aangepaste implementatie, moet een back-up worden gemaakt en worden opgeslagen in versiebeheer, aangezien deze tijdens een upgrade kunnen worden overschreven.
 
 ### Bewerkbare sjablonen {#editable-templates}
 
@@ -162,7 +162,7 @@ De structuur voor bewerkbare sjablonen is gewijzigd tussen AEM 6.2 en 6.3. Als u
 
 ### Wijzigingen in CUG-implementatie {#cug-implementation-changes}
 
-De implementatie van Gesloten Gebruikersgroepen is aanzienlijk gewijzigd om de beperkingen van prestaties en schaalbaarheid in eerdere versies van AEM aan te pakken. De vorige versie van CUG is afgekeurd in 6.3 en de nieuwe implementatie wordt alleen ondersteund in de aanraakinterface. Als u van 6.2 of eerder bevordert, dan kunnen de Instructies om aan de nieuwe implementatie van de CUG [hier](/help/sites-administering/closed-user-groups.md#upgradetoaem63)worden gevonden.
+De implementatie van Gesloten Gebruikersgroepen is aanzienlijk gewijzigd om de beperkingen van prestaties en schaalbaarheid in eerdere versies van AEM aan te pakken. De vorige versie van CUG is afgekeurd in 6.3 en de nieuwe implementatie wordt alleen ondersteund in de Touch UI. Als u van 6.2 of eerder bevordert, dan kunnen de Instructies om aan de nieuwe implementatie van de CUG [hier](/help/sites-administering/closed-user-groups.md#upgradetoaem63)worden gevonden.
 
 ## Testprocedure {#testing-procedure}
 

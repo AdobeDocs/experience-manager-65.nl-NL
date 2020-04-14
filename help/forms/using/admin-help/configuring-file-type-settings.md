@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
 discoiquuid: ab19b248-8931-4cf6-b6a5-fb7b067c4a49
 translation-type: tm+mt
-source-git-commit: 06335b9a85414b6b1141dd19c863dfaad0812503
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -39,11 +39,11 @@ Maak of bewerk een bestandstype-instelling om op te geven hoe de toepassing omga
 1. Typ in het vak Bestandsnaamextensies de bestandsextensies, gescheiden door komma&#39;s, voor de bestandstypen die voor deze toepassing zijn geaccepteerd. Neem de punt voor of geen ruimte op tussen de extensies. The default is `bmp,gif,jpeg,jpg,tif,tiff,png`.
 1. (Optioneel) Als u OCR (optische codeherkenning) wilt gebruiken voor tekst in afbeeldingen of afbeeldingen, selecteert u OCR gebruiken en stelt u de volgende opties in:
 
-**** Primaire OCR-taal: De taal die de OCR-engine moet gebruiken om de tekens te identificeren. De standaardwaarde is Engels (VS).
+**Primaire OCR-taal:** De taal die de OCR-engine moet gebruiken om de tekens te identificeren. De standaardwaarde is Engels (VS).
 
-**** PDF-uitvoerstijl: Selecteer Doorzoekbare afbeelding om een bitmapafbeelding te hebben van de pagina&#39;s op de voorgrond en de gescande tekst op een onzichtbare laag eronder. De weergave van de pagina verandert niet, maar de tekst wordt selecteerbaar en leesbaar. Selecteer Opgemaakte tekst en afbeeldingen om de originele pagina samen te stellen met herkende tekst, lettertypen, afbeeldingen en andere grafische elementen. De standaardinstelling is Doorzoekbare afbeelding (exact).
+**PDF-uitvoerstijl:** Selecteer Doorzoekbare afbeelding om een bitmapafbeelding te hebben van de pagina&#39;s op de voorgrond en de gescande tekst op een onzichtbare laag eronder. De weergave van de pagina verandert niet, maar de tekst wordt selecteerbaar en leesbaar. Selecteer Opgemaakte tekst en afbeeldingen om de originele pagina samen te stellen met herkende tekst, lettertypen, afbeeldingen en andere grafische elementen. De standaardinstelling is Doorzoekbare afbeelding (exact).
 
-**** Afbeeldingen downsamplen: Hiermee verkleint u het aantal pixels in kleuren-, grijswaarden- en monochrome afbeeldingen. De downsampling van gescande afbeeldingen wordt uitgevoerd nadat de OCR is voltooid. De standaardwaarde is Laagste (600 dpi). Deze optie is niet beschikbaar als u de PDF-uitvoerstijl instelt op Doorzoekbare afbeelding (exact).
+**Afbeeldingen downsamplen:** Hiermee verkleint u het aantal pixels in kleuren-, grijswaarden- en monochrome afbeeldingen. De downsampling van gescande afbeeldingen wordt uitgevoerd nadat de OCR is voltooid. De standaardwaarde is Laagste (600 dpi). Deze optie is niet beschikbaar als u de PDF-uitvoerstijl instelt op Doorzoekbare afbeelding (exact).
 
 1. Voer de vereiste informatie in deze secties in:
 
@@ -67,7 +67,7 @@ Maak of bewerk een bestandstype-instelling om op te geven hoe de toepassing omga
 
    [Microsoft Word-instellingen (alleen Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-word-settings-windows-only)
 
-   [Microsoft Visio-instellingen (alleen Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#main-pars-header-1354428557)
+   [Microsoft Visio-instellingen (alleen Windows)](#visio)
 
    [Microsoft Publisher-instellingen (alleen Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#microsoft-publisher-settings-windows-only)
 
@@ -111,27 +111,27 @@ U kunt een bestandstype-instelling verwijderen die niet meer wordt gebruikt.
 
 De volgende opties bepalen hoe afbeeldingsbestanden naar PDF worden geconverteerd. Zie [Bestandstype-instellingen](configuring-file-type-settings.md#create-or-edit-file-type-settings)maken of bewerken voor instructies over het openen van deze instellingen.
 
-**** Bestandsnaamextensies: Lijst met door komma&#39;s gescheiden bestandsextensies die kunnen worden omgezet.
+**Bestandsnaamextensies:** Lijst met door komma&#39;s gescheiden bestandsextensies die kunnen worden omgezet.
 
-**** Converter voor alternatieven uitproberen: PDF Generator kan Java™ of Acrobat gebruiken om afbeeldingsbestanden naar PDF te converteren. Als deze optie is geselecteerd en een conversie mislukt of de opgegeven time-outlimiet bereikt, probeert de PDF Generator de conversie met de alternatieve methode uit te voeren. Als de alternatieve methode mislukt of de opgegeven time-outlimiet bereikt, wordt een uitzondering naar het logbestand geschreven.
+**Converter voor alternatieven uitproberen:** PDF Generator kan Java™ of Acrobat gebruiken om afbeeldingsbestanden naar PDF te converteren. Als deze optie is geselecteerd en een conversie mislukt of de opgegeven time-outlimiet bereikt, probeert de PDF Generator de conversie met de alternatieve methode uit te voeren. Als de alternatieve methode mislukt of de opgegeven time-outlimiet bereikt, wordt een uitzondering naar het logbestand geschreven.
 
 ***Opmerking **: JPEG 2000-bestanden kunnen alleen worden geconverteerd met Acrobat.*
 
-**** OCR gebruiken: Hiermee geeft u aan of OCR (optische tekenherkenning) op de PDF moet worden toegepast. Met de OCR-software kunt u de tekst in de PDF zoeken, corrigeren en kopiëren.
+**OCR gebruiken:** Hiermee geeft u aan of OCR (optische tekenherkenning) op de PDF moet worden toegepast. Met de OCR-software kunt u de tekst in de PDF zoeken, corrigeren en kopiëren.
 
 ***opmerking **: De functie OCR PDF (doorzoekbare PDF) wordt alleen ondersteund in Microsoft Windows.*
 
-**** Primaire OCR-taal: Hiermee geeft u de taal op die de OCR-engine moet gebruiken om de tekens te identificeren.
+**Primaire OCR-taal:** Hiermee geeft u de taal op die de OCR-engine moet gebruiken om de tekens te identificeren.
 
-**** PDF-uitvoerstijl: Hiermee bepaalt u het type PDF dat wordt gemaakt. Bij alle indelingen worden OCR en font- en paginaherkenning toegepast op tekstafbeeldingen en worden deze naar normale tekst omgezet.
+**PDF-uitvoerstijl:** Hiermee bepaalt u het type PDF dat wordt gemaakt. Bij alle indelingen worden OCR en font- en paginaherkenning toegepast op tekstafbeeldingen en worden deze naar normale tekst omgezet.
 
-**** Doorzoekbare afbeelding: Hiermee zorgt u ervoor dat de tekst doorzoekbaar en selecteerbaar is. Met deze optie behoudt u de oorspronkelijke afbeelding, heft u de afbeelding desgewenst schuin en plaatst u er een onzichtbare tekstlaag overheen. Met de optie Afbeeldingen downsamplen bepaalt u of en in welke mate de afbeelding wordt gedownsampled.
+**Doorzoekbare afbeelding:** Hiermee zorgt u ervoor dat de tekst doorzoekbaar en selecteerbaar is. Met deze optie behoudt u de oorspronkelijke afbeelding, heft u de afbeelding desgewenst schuin en plaatst u er een onzichtbare tekstlaag overheen. Met de optie Afbeeldingen downsamplen bepaalt u of en in welke mate de afbeelding wordt gedownsampled.
 
-**** Doorzoekbare afbeelding (exact): Hiermee zorgt u ervoor dat de tekst doorzoekbaar en selecteerbaar is. Met deze optie behoudt u de oorspronkelijke afbeelding en plaatst u er een onzichtbare tekstlaag overheen. Aanbevolen voor gevallen waarin maximale getrouwheid aan de oorspronkelijke afbeelding vereist is.
+**Doorzoekbare afbeelding (exact):** Hiermee zorgt u ervoor dat de tekst doorzoekbaar en selecteerbaar is. Met deze optie behoudt u de oorspronkelijke afbeelding en plaatst u er een onzichtbare tekstlaag overheen. Aanbevolen voor gevallen waarin maximale getrouwheid aan de oorspronkelijke afbeelding vereist is.
 
-**** ClearScan: Hiermee wordt een nieuw Type 3-lettertype gesynchroniseerd dat het oorspronkelijke lettertype benadert en wordt de pagina-achtergrond behouden door een kopie met lage resolutie te gebruiken.
+**ClearScan:** Hiermee wordt een nieuw Type 3-lettertype gesynchroniseerd dat het oorspronkelijke lettertype benadert en wordt de pagina-achtergrond behouden door een kopie met lage resolutie te gebruiken.
 
-**** Afbeeldingen downsamplen: Hiermee verkleint u het aantal pixels in kleuren-, grijswaarden- en monochrome afbeeldingen nadat de OCR is voltooid. Kies de mate van downsampling die u wilt toepassen. Hogere opties zorgen voor minder downsampling, waardoor PDF&#39;s met een hogere resolutie ontstaan.
+**Afbeeldingen downsamplen:** Hiermee verkleint u het aantal pixels in kleuren-, grijswaarden- en monochrome afbeeldingen nadat de OCR is voltooid. Kies de mate van downsampling die u wilt toepassen. Hogere opties zorgen voor minder downsampling, waardoor PDF&#39;s met een hogere resolutie ontstaan.
 
 ## Adobe PDF-exportinstellingen (alleen Windows) {#adobe-pdf-export-settings-windows-only}
 
@@ -143,85 +143,85 @@ Zie [Bestandstype-instellingen](configuring-file-type-settings.md#create-or-edit
 
 De volgende opties bepalen hoe HTML-bestanden naar PDF worden geconverteerd. Zie [Bestandstype-instellingen](configuring-file-type-settings.md#create-or-edit-file-type-settings)maken of bewerken voor instructies over het openen van deze opties.
 
-**** Converter voor alternatieven uitproberen: PDF Generator kan Java™ of Acrobat gebruiken om HTML-bestanden naar PDF te converteren. Als deze optie is geselecteerd en een conversie mislukt of de opgegeven time-outlimiet bereikt, probeert de PDF Generator de conversie met de alternatieve methode uit te voeren. Als de alternatieve methode mislukt of de opgegeven time-outlimiet bereikt, wordt een uitzondering naar het logbestand geschreven.
+**Converter voor alternatieven uitproberen:** PDF Generator kan Java™ of Acrobat gebruiken om HTML-bestanden naar PDF te converteren. Als deze optie is geselecteerd en een conversie mislukt of de opgegeven time-outlimiet bereikt, probeert de PDF Generator de conversie met de alternatieve methode uit te voeren. Als de alternatieve methode mislukt of de opgegeven time-outlimiet bereikt, wordt een uitzondering naar het logbestand geschreven.
 
-**** Standaardcodering: Hiermee stelt u de invoercodering van de bestandstekst in via een menu met besturingssystemen en alfabeten. Hiermee wordt de selectie bij Standaardcodering alleen gebruikt als het HTML-bronbestand geen type codering opgeeft.
+**Standaardcodering:** Hiermee stelt u de invoercodering van de bestandstekst in via een menu met besturingssystemen en alfabeten. Hiermee wordt de selectie bij Standaardcodering alleen gebruikt als het HTML-bronbestand geen type codering opgeeft.
 
-**** Geselecteerde codering forceren: Hiermee wordt alle codering die in het HTML-bronbestand is opgegeven, genegeerd en wordt de selectie gebruikt die wordt weergegeven bij de optie Standaardcodering.
+**Geselecteerde codering forceren:** Hiermee wordt alle codering die in het HTML-bronbestand is opgegeven, genegeerd en wordt de selectie gebruikt die wordt weergegeven bij de optie Standaardcodering.
 
 ### Instellingen voor Spiegelen {#spidering-settings}
 
 *Met Spidering* worden webpagina&#39;s gescand op koppelingen naar andere webpagina&#39;s. Wanneer een koppeling naar een andere webpagina wordt aangetroffen, wordt de doelpagina opgehaald en opgenomen in het PDF-document dat wordt gegenereerd. Schakel deze opties in om het aantal niveaus in te stellen dat moet worden opgehaald en geconverteerd naar PDF:
 
-**** Alleen x-niveaus ophalen: Met deze optie worden pagina&#39;s tot een diepte van het opgegeven niveau geconverteerd van de URL van de basispagina. Met de waarde 1 wordt alleen de opgegeven URL geconverteerd.
+**Alleen x-niveaus ophalen:** Met deze optie worden pagina&#39;s tot een diepte van het opgegeven niveau geconverteerd van de URL van de basispagina. Met de waarde 1 wordt alleen de opgegeven URL geconverteerd.
 
-**** Volledige site ophalen: Hiermee converteert u de gehele site, te beginnen met de opgegeven URL.
+**Volledige site ophalen:** Hiermee converteert u de gehele site, te beginnen met de opgegeven URL.
 
-**** Op hetzelfde pad blijven: Koppelingen die verwijzen naar pagina&#39;s die zich niet op hetzelfde relatieve pad bevinden als de basis-URL, worden niet geconverteerd tijdens het spinnen.
+**Op hetzelfde pad blijven:** Koppelingen die verwijzen naar pagina&#39;s die zich niet op hetzelfde relatieve pad bevinden als de basis-URL, worden niet geconverteerd tijdens het spinnen.
 
-**** Op dezelfde server blijven: Koppelingen die verwijzen naar pagina&#39;s op verschillende servers worden niet geconverteerd tijdens het spinnen. Alleen koppelingen die naar dezelfde server als de opgegeven URL verwijzen, worden geconverteerd.
+**Op dezelfde server blijven:** Koppelingen die verwijzen naar pagina&#39;s op verschillende servers worden niet geconverteerd tijdens het spinnen. Alleen koppelingen die naar dezelfde server als de opgegeven URL verwijzen, worden geconverteerd.
 
 ### Instellingen voor paginaconversie {#page-conversion-settings}
 
 Schakel deze opties in om op te geven hoe de HTML-pagina&#39;s worden geconverteerd. Op basis van het paginaformaat worden de waarden voor breedte, hoogte en marge dienovereenkomstig aangepast.
 
-**** Paginaformaat: Kies Aangepast en geef de breedte en hoogte op of selecteer vooraf gedefinieerde afmetingen.
+**Paginaformaat:** Kies Aangepast en geef de breedte en hoogte op of selecteer vooraf gedefinieerde afmetingen.
 
-**** Richting: Selecteer Staand of Liggend voor het geconverteerde PDF-document.
+**Richting:** Selecteer Staand of Liggend voor het geconverteerde PDF-document.
 
-**** Marges: Hiermee geeft u de marges (Boven, Onder, Links en Rechts) in het gegenereerde PDF-document op.
+**Marges:** Hiermee geeft u de marges (Boven, Onder, Links en Rechts) in het gegenereerde PDF-document op.
 
-**** Bladwijzers toevoegen aan PDF: Voegt bladwijzers toe aan het PDF-document.
+**Bladwijzers toevoegen aan PDF:** Voegt bladwijzers toe aan het PDF-document.
 
-**** Gelabelde PDF inschakelen: Hiermee sluit u codes in het PDF-document in.
+**Gelabelde PDF inschakelen:** Hiermee sluit u codes in het PDF-document in.
 
-**** Weergave-instellingen bij openen instellen: Hiermee kunt u Documentopties, Vensteropties en gebruikersinterfaceopties configureren. Deze instellingen bepalen hoe de inhoud in eerste instantie wordt weergegeven.
+**Weergave-instellingen bij openen instellen:** Hiermee kunt u Documentopties, Vensteropties en gebruikersinterfaceopties configureren. Deze instellingen bepalen hoe de inhoud in eerste instantie wordt weergegeven.
 
 ### Documentopties {#document-options}
 
 Schakel deze opties in om op te geven hoe de inhoud moet worden weergegeven, hoe pagina&#39;s in het PDF-document moeten worden weergegeven en hoe u het vergrotingsniveau wilt instellen:
 
-**** Tonen: Selecteer de deelvensters die in Acrobat moeten worden geopend wanneer het PDF-document wordt geopend.
+**Tonen:** Selecteer de deelvensters die in Acrobat moeten worden geopend wanneer het PDF-document wordt geopend.
 
-**** Pagina-indeling: Selecteer het type pagina-indeling voor het PDF-document.
+**Pagina-indeling:** Selecteer het type pagina-indeling voor het PDF-document.
 
-**** Vergroting: Kies een vooraf ingestelde vergroting voor de openingsweergave van het PDF-document of selecteer een aangepaste waarde. Als u een standaardinstelling kiest, wordt de standaardzoomfactor van Acrobat gebruikt.
+**Vergroting:** Kies een vooraf ingestelde vergroting voor de openingsweergave van het PDF-document of selecteer een aangepaste waarde. Als u een standaardinstelling kiest, wordt de standaardzoomfactor van Acrobat gebruikt.
 
-**** Openen naar paginanummer: Geef het paginanummer op waarop de PDF wordt geopend.
+**Openen naar paginanummer:** Geef het paginanummer op waarop de PDF wordt geopend.
 
 ### Vensteropties {#window-options}
 
 Schakel deze opties in om op te geven hoe de grootte en weergave van het venster worden aangepast.
 
-**** Vensterformaat als van eerste pagina: Hiermee past u de grootte van het Acrobat-venster aan aan de grootte van de eerste pagina.
+**Vensterformaat als van eerste pagina:** Hiermee past u de grootte van het Acrobat-venster aan aan de grootte van de eerste pagina.
 
-**** Venster centreren op scherm: Hiermee opent u het venster in het midden van het scherm.
+**Venster centreren op scherm:** Hiermee opent u het venster in het midden van het scherm.
 
-**** Openen in Volledig scherm: Hiermee opent u het venster in de modus Volledig scherm.
+**Openen in Volledig scherm:** Hiermee opent u het venster in de modus Volledig scherm.
 
-**** Tonen: Hiermee geeft u de documenttitel of bestandsnaam weer in het venster.
+**Tonen:** Hiermee geeft u de documenttitel of bestandsnaam weer in het venster.
 
 ### Gebruikersinterfaceopties {#user-interface-options}
 
 Schakel deze opties in om de weergave van het venster op te geven:
 
-**** Menubalk verbergen: Hiermee verbergt u de menubalk in het PDF-document.
+**Menubalk verbergen:** Hiermee verbergt u de menubalk in het PDF-document.
 
-**** Werkbalken verbergen: Hiermee verbergt u de werkbalken in het PDF-document.
+**Werkbalken verbergen:** Hiermee verbergt u de werkbalken in het PDF-document.
 
-**** Vensterbalk verbergen: Hiermee verbergt u de vensterbesturingselementen in het PDF-document.
+**Vensterbalk verbergen:** Hiermee verbergt u de vensterbesturingselementen in het PDF-document.
 
 ## Flash-video&#39;s naar PDF-instellingen {#flash-videos-to-pdf-settings}
 
 PDF Generator ondersteunt de mogelijkheid om een video voor Adobe Flash (SWF- of FLV-bestand) te verzenden en een PDF-bestand te maken met daarin een video voor Adobe Flash ingesloten. Voor deze conversie hoeft Adobe Flash Player niet op de formulierserver te zijn geïnstalleerd. Zie [Bestandstype-instellingen](configuring-file-type-settings.md#create-or-edit-file-type-settings)maken of bewerken voor instructies over het openen van deze optie.
 
-**** Bestandsnaamextensies: Lijst met door komma&#39;s gescheiden bestandsextensies die kunnen worden omgezet.
+**Bestandsnaamextensies:** Lijst met door komma&#39;s gescheiden bestandsextensies die kunnen worden omgezet.
 
 ## XPS naar PDF-instellingen {#xps-to-pdf-settings}
 
 De Specificatie van het Papier van XML (XPS) wordt gebruikt in de Drukkerij van Vensters. Dit is een formaat van Microsoft en kan van om het even welke toepassing van Microsoft Office worden gecreeerd. Met AEM-formulieren kunt u XPS-bestanden converteren naar PDF.
 
-**** Bestandsnaamextensies: Een door komma&#39;s gescheiden lijst van alle filename van XPS uitbreidingen die kunnen worden omgezet. Er is momenteel één indeling: .xps.
+**Bestandsnaamextensies:** Een door komma&#39;s gescheiden lijst van alle filename van XPS uitbreidingen die kunnen worden omgezet. Er is momenteel één indeling: .xps.
 
 ## Instellingen voor PDF optimaliseren {#pdf-optimizer-settings}
 
@@ -233,18 +233,18 @@ PDF Generator ondersteunt de mogelijkheid om PDF-bestanden te verkleinen. Of u a
 
 Zie [Bestandstype-instellingen](configuring-file-type-settings.md#create-or-edit-file-type-settings)maken of bewerken voor instructies over het openen van deze instelling.
 
-**** PDF-doelversie: Hiermee geeft u de versie van Acrobat op waarmee de PDF compatibel is.
+**PDF-doelversie:** Hiermee geeft u de versie van Acrobat op waarmee de PDF compatibel is.
 
 ### Lettertypen {#fonts}
 
 1. Selecteer **Lettertypen.**
 1. Kies een van de volgende opties:
 
-   **** Insluiting van alle fonts ongedaan maken: Hiermee worden alle ingesloten lettertypen verwijderd.
+   **Insluiting van alle fonts ongedaan maken:** Hiermee worden alle ingesloten lettertypen verwijderd.
 
-   **** Geen font verwijderen: Insluiting van fonts wordt niet ongedaan gemaakt.
+   **Geen font verwijderen:** Insluiting van fonts wordt niet ongedaan gemaakt.
 
-   **** Enkele fonts insluiten ongedaan maken: Hiermee worden alleen de opgegeven lettertypen verwijderd. Ga als volgt te werk om de fonts op te geven die u wilt verwijderen uit de insluiting:
+   **Enkele fonts insluiten ongedaan maken:** Hiermee worden alleen de opgegeven lettertypen verwijderd. Ga als volgt te werk om de fonts op te geven die u wilt verwijderen uit de insluiting:
 
    * Selecteer indien nodig een andere map met lettertypen in de vervolgkeuzelijst **Lettertype-bron** . Dit vervolgkeuzemenu bevat de lettertypemappen die zijn opgegeven in **Home > Instellingen > Core System > Core Configurations**.
    * Selecteer een of meer lettertypen in de lijst **Beschikbare lettertypen** en klik op **Toevoegen**. Deze lettertypen worden toegevoegd aan de lijst **Lettertypen ongedaan maken** .
@@ -464,7 +464,7 @@ Deze opties bepalen hoe Microsoft PowerPoint-bestanden worden geconverteerd. Zie
 
 Deze opties bepalen hoe de dossiers van het Project van Microsoft worden omgezet. Zie [Bestandstype-instellingen](/help/forms/using/admin-help/configuring-file-type-settings.md#main-pars-heading-0)maken of bewerken voor instructies over het openen van deze opties.
 
-1. **** Bestandsnaamextensies: Hiermee geeft u de bestandsextensies op voor bestandstypen, gescheiden door komma&#39;s, die worden geaccepteerd voor deze toepassing. The default is `mpp`. Neem geen punt voor of spatie op tussen de extensies.
+1. **[!UICONTROL Bestandsnaamextensies:]** Hiermee geeft u de bestandsextensies op voor bestandstypen, gescheiden door komma&#39;s, die worden geaccepteerd voor deze toepassing. The default is `mpp`. Neem geen punt voor of spatie op tussen de extensies.
 
 1. **[!UICONTROL Documentgegevens]** converteren: Hiermee voegt u documentinformatie toe uit het dialoogvenster Eigenschappen van het bronbestand, zoals titel, onderwerp, auteur, trefwoorden, manager, bedrijf, categorie en opmerkingen. Deze optie is standaard geselecteerd.
 1. **[!UICONTROL Bronbestand bijvoegen bij Adobe PDF]**: Hiermee voegt u het bronbestand als bijlage toe aan het PDF-bestand.
@@ -511,7 +511,7 @@ Deze opties bepalen hoe Microsoft Word-bestanden worden geconverteerd. Zie [Best
 
 Als de naam van een Microsoft Word-stijl een komma (,) of een gelijkteken (=) bevat, plaatst u voor de speciale tekens het escape-teken (&quot;\_). Geef bijvoorbeeld een stijl met de naam &quot;Kop, 1&quot; op als Kop\, 1.
 
-**** Codering Acrobat PDFMaker: Hiermee geeft u het coderingstype op voor de invoerbestanden zonder tekst naar Acrobat PDFMaker. Als u bijvoorbeeld een bestand met UTF-8-codering gebruikt, bereikt u de beste resultaten met UTF-8.
+**Codering Acrobat PDFMaker:** Hiermee geeft u het coderingstype op voor de invoerbestanden zonder tekst naar Acrobat PDFMaker. Als u bijvoorbeeld een bestand met UTF-8-codering gebruikt, bereikt u de beste resultaten met UTF-8.
 
 ## Microsoft Visio-instellingen (alleen Windows) {#visio}
 

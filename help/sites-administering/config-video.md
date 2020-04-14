@@ -10,7 +10,7 @@ topic-tags: operations
 content-type: reference
 discoiquuid: a1efef3c-0e4b-4a17-bcad-e3cc17adbbf7
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -88,5 +88,5 @@ De videocomponent is afhankelijk van open-source product Forms van derden voor e
 
 >[!NOTE]
 >
->OOTB-workflowmodellen blijven niet behouden wanneer u uw AEM-instantie upgradet. Adobe raadt u aan OTB-workflowmodellen te kopiëren voordat u ze bewerkt. Kopieer bijvoorbeeld het model OOTB DAM Update Asset voordat u de stap MPEG Transcoding in het DAM Update Asset model bewerkt om namen van videoprofielen te kiezen die vóór de upgrade bestonden. Vervolgens kunt u het `/apps` knooppunt bedekken zodat AEM de aangepaste wijzigingen in het OTB-model kan ophalen.
+>OOTB-workflowmodellen blijven niet behouden wanneer u uw AEM-instantie upgradet. Adobe raadt u aan OTB-workflowmodellen te kopiëren voordat u ze bewerkt. Kopieer bijvoorbeeld het model OOTB [!UICONTROL DAM Update Asset] voordat u de stap FFmpeg Transcoding in het model [!UICONTROL DAM Update Asset] toepast om namen van videoprofielen te kiezen die vóór de upgrade bestonden. Vervolgens kunt u het `/apps` knooppunt bedekken zodat AEM de aangepaste wijzigingen in het OTB-model kan ophalen.
 

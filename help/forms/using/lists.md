@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0d5436c6-1976-496c-b9a7-7dc6e830bb5d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e4d84b5c6f7d2bfcac942b0b685a8f1fd11274f0
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -408,7 +408,7 @@ Zie [Voorbeeld met voorbeeldbestanden voor een gedetailleerd voorbeeld van het g
    * **Voettekst**: tekst die moet worden weergegeven voor de voettekst
    * **Type**: type van extra kolom. Veld of doelgebied. Type is ingeschakeld voor statische plaatsaanduidingstabellen. Het type kan op kolomniveau en niet op celniveau worden bepaald. Alle cellen in een uitgebreide kolom zouden van het zelfde type zijn. Voor een dynamische tabel zijn alle kolommen van het veldtype. Voor tabellen zonder plaatsaanduiding kunt u het type van extra kolommen niet definiëren. In dat geval is het type van de extra cellen in de uitgebreide kolom gelijk aan het type van de laatste kolom in die rij; en het type cel in een extra rij is hetzelfde als het type van de laatste cel in die kolom.
    * **Breedteverhouding:** verhouding van de tabelkolombreedten.
-   Zie [Voorbeeld met voorbeeldbestanden voor een gedetailleerd voorbeeld van het gebruik van statische en dynamische tabellen in lay-outfragmenten: statische en dynamische tabellen in een letter](#main-pars-header-28)gebruiken.
+   Zie [Voorbeeld met voorbeeldbestanden voor een gedetailleerd voorbeeld van het gebruik van statische en dynamische tabellen in lay-outfragmenten: statische en dynamische tabellen in een letter](#examplewithsamplefiles)gebruiken.
 
 1. Tik op **Opslaan**.
 

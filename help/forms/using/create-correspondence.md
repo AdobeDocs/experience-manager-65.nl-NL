@@ -9,7 +9,7 @@ topic-tags: correspondence-management
 discoiquuid: 87742cb2-357b-421f-b79d-e355887ddec0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -83,7 +83,7 @@ Beheer op het tabblad Inhoud de inhoud, zoals documentfragmenten en inhoudsvaria
 
    Op het tabblad Inhoud of Gegevens kunt u door te tikken op Geselecteerde modules markeren ( ![gemarkeerde modulesincontentcr](assets/highlightselectedmodulesincontentccr.png)) linksboven in de HTML-lettertypevoorvertoning, de functionaliteit uitschakelen of inschakelen om naar de inhoud/gegevensmodule te gaan wanneer de relevante tekst, alinea of gegevensveld is geselecteerd in de lettertypevoorvertoning.
 
-   Zie [Handelingen en informatie in de gebruikersinterface](../../forms/using/create-letter.md#main-pars-header-9)Correspondentie maken voor meer informatie over de acties die beschikbaar zijn voor verschillende modules in de gebruikersinterfaceCorrespondentie maken.
+   Zie [Handelingen en informatie in de gebruikersinterface](#actions-and-info-available-in-the-create-correspondence-content-tab)Correspondentie maken voor meer informatie over de acties die beschikbaar zijn voor verschillende modules in de gebruikersinterfaceCorrespondentie maken.
 
 1. Gebruik het veld Zoeken om inhoudsmodules te zoeken. Voer een volledige of gedeeltelijke naam of titel van de inhoudsmodule in om deze in de correspondentie te zoeken.
 1. Tik op het weergavepictogram ( ![weergave](assets/display.png)) vóór een lijst, tekst, voorwaarde of doelgebied om deze in de letter weer te geven of te verbergen.
@@ -230,7 +230,7 @@ U kunt de lay-out en de inhoud aanpassen om ervoor te zorgen dat de brief de man
 
    Door op Geselecteerde modules markeren in inhoud te tikken ( ![gemarkeerde modulesincontentcr](assets/highlightselectedmodulesincontentccr.png)markeren), kunt u functionaliteit uitschakelen of inschakelen om de inhoudsmodule op het tabblad Inhoud te markeren wanneer in de lettervoorvertoning op de desbetreffende tekst, alinea of gegevensveld wordt getikt.
 
-   Zie [Handelingen en informatie in de gebruikersinterface](../../forms/using/create-letter.md#main-pars-header-9)Correspondentie maken voor meer informatie over de acties die beschikbaar zijn voor verschillende modules in de gebruikersinterfaceCorrespondentie maken.
+   Zie [Handelingen en informatie in de gebruikersinterface](#actions-and-info-available-in-the-create-correspondence-content-tab)Correspondentie maken voor meer informatie over de acties die beschikbaar zijn voor verschillende modules in de gebruikersinterfaceCorrespondentie maken.
 
 1. Als u een pagina-einde aan de letter wilt toevoegen, tikt u op de plaats waar u een pagina-einde wilt invoegen en selecteert u Pagina-einde voor of Pagina-einde na ( ![pagina-einde vóór](assets/pagebreakbeforeafter.png)).
 
@@ -246,7 +246,7 @@ U kunt de lay-out en de inhoud aanpassen om ervoor te zorgen dat de brief de man
 
    ![saveascript](assets/saveasdraft.png)
 
-   Het dialoogvenster Letternaam concept wordt weergegeven met de id van het lettertype. U kunt deze id desgewenst bewerken. Noteer de letter-id en tik op **Gereed**. U kunt deze id later gebruiken om de [conceptbrief](../../forms/using/submit-letter-topostprocess.md#main-pars-header-1)opnieuw te laden.
+   Het dialoogvenster Letternaam concept wordt weergegeven met de id van het lettertype. U kunt deze id desgewenst bewerken. Noteer de letter-id en tik op **Gereed**. U kunt deze id later gebruiken om de [conceptbrief](submit-letter-topostprocess.md#reloaddraft)opnieuw te laden.
 
 1. Tik op Voorvertoning ( ![voorbeeld](assets/preview.png)) om een voorvertoning van de brief weer te geven als een samengevoegde PDF met de exacte indeling en pagina-einden zoals deze worden verzonden.
 

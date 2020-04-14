@@ -9,7 +9,7 @@ topic-tags: author
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f06b8cb2-6f98-465f-beec-1e91e3f45707
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -145,7 +145,7 @@ Daarnaast kunt u de sjablooneditor gebruiken om uw eigen sjablonen te maken. Zie
 
 >[!NOTE]
 >
->Als u een adaptief formulier opent dat is gemaakt met de geavanceerde sjabloon voor bewerken, wordt een foutbericht weergegeven. De geavanceerde sjabloon heeft een onderdeel Handtekeningstap en Adobe Sign is standaard ingeschakeld. Maak en selecteer een cloudconfiguratie [voor](/help/forms/using/adobe-sign-integration-adaptive-forms.md) Adobe Sign en [configureer een ondertekenaar](/help/forms/using/working-with-adobe-sign.md#main-pars-header-1374317451) om de fout op te lossen.
+>Als u een adaptief formulier opent dat is gemaakt met de geavanceerde sjabloon voor bewerken, wordt een foutbericht weergegeven. De geavanceerde sjabloon heeft een onderdeel Handtekeningstap en Adobe Sign is standaard ingeschakeld. Maak en selecteer een cloudconfiguratie [voor](/help/forms/using/adobe-sign-integration-adaptive-forms.md) Adobe Sign en [configureer een ondertekenaar](working-with-adobe-sign.md#addsignerstoanadaptiveform) om de fout op te lossen.
 
 ## Eigenschappen van een formuliermodel bewerken in een adaptief formulier {#edit-form-model}
 

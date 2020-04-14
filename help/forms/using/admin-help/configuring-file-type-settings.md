@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
 discoiquuid: ab19b248-8931-4cf6-b6a5-fb7b067c4a49
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
 
 ---
 
@@ -20,7 +20,7 @@ In PDF Generator, kunt u de toepassingsmontages voor gesteunde dossiertypes plaa
 
 Op de pagina Instellingen bestandstype kunt u de volgende taken uitvoeren:
 
-* [Een instelling voor bestandstypen maken of bewerken](/help/forms/using/admin-help/configuring-file-type-settings.md#main-pars-heading-0)
+* [Een instelling voor bestandstypen maken of bewerken](#create-or-edit-file-type-settings)
 * Geef op welke bestandstypen standaard moeten worden gebruikt (zie Configuratiebestanden [van PDF Generator](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)importeren en exporteren)
 * [De standaardinstellingen wijzigen](/help/forms/using/admin-help/configuring-file-type-settings.md#change-the-default-settings)
 * [PDF/A-ondersteuning inschakelen](/help/forms/using/admin-help/enable-pdf-a-support.md)
@@ -49,13 +49,13 @@ Maak of bewerk een bestandstype-instelling om op te geven hoe de toepassing omga
 
    [PDF Generator-configuratiebestanden importeren en exporteren](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
 
-   [Adobe PDF-exportinstellingen (alleen Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#main-pars-heading-2)
+   [Adobe PDF-exportinstellingen (alleen Windows)](#adobe-pdf-export-settings-windows-only)
 
-   [HTML-naar-PDF-instellingen](/help/forms/using/admin-help/configuring-file-type-settings.md#main-pars-heading-3)
+   [HTML-naar-PDF-instellingen](#html-to-pdf-settings)
 
-   [Flash-video&#39;s naar PDF-instellingen](/help/forms/using/admin-help/configuring-file-type-settings.md#main-pars-heading-9)
+   [Flash-video&#39;s naar PDF-instellingen](#flash-videos-to-pdf-settings)
 
-   [XPS naar PDF-instellingen](/help/forms/using/admin-help/configuring-file-type-settings.md#main-pars-heading-10)
+   [XPS naar PDF-instellingen](#xps-to-pdf-settings)
 
    [Instellingen voor PDF optimaliseren](/help/forms/using/admin-help/configuring-file-type-settings.md)
 
@@ -398,7 +398,7 @@ Selecteer een van de volgende compressieopties voor Flate in het keuzemenu:
 
 ## Microsoft Excel-instellingen (alleen Windows) {#microsoft-excel-settings-windows-only}
 
-Deze opties bepalen hoe de dossiers van Microsoft Excel worden omgezet. Zie [Bestandstype-instellingen](/help/forms/using/admin-help/configuring-file-type-settings.md#main-pars-heading-0)maken of bewerken voor instructies over het openen van deze opties.
+Deze opties bepalen hoe de dossiers van Microsoft Excel worden omgezet. Zie [Bestandstype-instellingen](#create-or-edit-file-type-settings)maken of bewerken voor instructies over het openen van deze opties.
 
 **Probeer OpenOffice als terugvalconverter**: Als deze optie is geselecteerd en een conversie met Microsoft Excel mislukt of de opgegeven time-outlimiet bereikt, probeert de PDF-Generator de conversie uit te voeren met OpenOffice. Als de conversie met OpenOffice mislukt of de opgegeven time-outlimiet bereikt, wordt een uitzondering naar het logbestand geschreven.
 
@@ -462,7 +462,7 @@ Deze opties bepalen hoe Microsoft PowerPoint-bestanden worden geconverteerd. Zie
 
 ## Microsoft Project-instellingen (alleen Windows) {#microsoft-project-settings-windows-only}
 
-Deze opties bepalen hoe de dossiers van het Project van Microsoft worden omgezet. Zie [Bestandstype-instellingen](/help/forms/using/admin-help/configuring-file-type-settings.md#main-pars-heading-0)maken of bewerken voor instructies over het openen van deze opties.
+Deze opties bepalen hoe de dossiers van het Project van Microsoft worden omgezet. Zie [Bestandstype-instellingen](#create-or-edit-file-type-settings)maken of bewerken voor instructies over het openen van deze opties.
 
 1. **[!UICONTROL Bestandsnaamextensies:]** Hiermee geeft u de bestandsextensies op voor bestandstypen, gescheiden door komma&#39;s, die worden geaccepteerd voor deze toepassing. The default is `mpp`. Neem geen punt voor of spatie op tussen de extensies.
 
@@ -473,7 +473,7 @@ Deze opties bepalen hoe de dossiers van het Project van Microsoft worden omgezet
 
 ## Microsoft Word-instellingen (alleen Windows) {#microsoft-word-settings-windows-only}
 
-Deze opties bepalen hoe Microsoft Word-bestanden worden geconverteerd. Zie [Bestandstype-instellingen](/help/forms/using/admin-help/configuring-file-type-settings.md#main-pars-heading-0)maken of bewerken voor instructies over het openen van deze opties.
+Deze opties bepalen hoe Microsoft Word-bestanden worden geconverteerd. Zie [Bestandstype-instellingen](#create-or-edit-file-type-settings)maken of bewerken voor instructies over het openen van deze opties.
 
 **[!UICONTROL Probeer OpenOffice als terugvalconverter]**: Als deze optie is geselecteerd en een conversie met Microsoft Word mislukt of de opgegeven time-outlimiet bereikt, probeert de PDF-Generator de conversie met OpenOffice uit te voeren. Als de conversie met OpenOffice mislukt of de opgegeven time-outlimiet bereikt, wordt een uitzondering naar het logbestand geschreven.
 
@@ -535,7 +535,7 @@ Als de naam van een Microsoft Word-stijl een komma (,) of een gelijkteken (=) be
 
 ## Microsoft Publisher-instellingen (alleen Windows) {#microsoft-publisher-settings-windows-only}
 
-Deze opties bepalen hoe Microsoft Publisher-bestanden worden geconverteerd. Zie [Bestandstype-instellingen](/help/forms/using/admin-help/configuring-file-type-settings.md#main-pars-heading-0)maken of bewerken voor instructies over het openen van deze opties.
+Deze opties bepalen hoe Microsoft Publisher-bestanden worden geconverteerd. Zie [Bestandstype-instellingen](#create-or-edit-file-type-settings)maken of bewerken voor instructies over het openen van deze opties.
 
 **[!UICONTROL Bestandsnaamextensies]**: Hiermee geeft u de bestandsextensies op voor bestandstypen, gescheiden door komma&#39;s, die worden geaccepteerd voor deze toepassing. The default is `pub`. Neem geen punt voor of spatie op tussen de extensies.
 

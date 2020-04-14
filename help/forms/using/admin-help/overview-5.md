@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9e25ea72-e7ba-400b-9cab-de256fe64888
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
 
 ---
 
@@ -26,5 +26,5 @@ Er zijn drie manieren om bestanden naar PDF Generator te verzenden voor verwerki
 
 * Beheerders hebben toegang tot de PDFG-pagina&#39;s in de beheerconsole. (Zie Bestanden [converteren met PDF Generator](/help/forms/using/admin-help/converting-files-using-pdf-generator.md).)
 * Gebruikers kunnen de PDFG-eindgebruikerpagina&#39;s openen door zich `http(s)://'[server]:[port]'/pdfgui.` vanaf daar aan te melden, toegang krijgen tot de PDFG-netwerkprinter, PDF maken, HTML naar PDF, PDF exporteren en PDF-pagina&#39;s optimaliseren.
-* U kunt eindpunten voor de diensten vormen. (Zie <!--Fix broken link to Managing Endpoints --> en [Genereer PDF-serviceaanbevelingen](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#generate-pdf-service-recommendations).) [](/help/forms/using/admin-help/overview-5.md#main-pars-header)
+* U kunt eindpunten voor de diensten vormen. Zie <!--Fix broken link to Managing Endpoints --> [Aanbevelingen](configuring-watched-folder-endpoints.md#generate-pdf-service-recommendations)voor PDF-service genereren.
 

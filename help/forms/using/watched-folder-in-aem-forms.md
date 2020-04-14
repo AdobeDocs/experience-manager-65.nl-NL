@@ -10,14 +10,14 @@ topic-tags: publish
 discoiquuid: db38972c-be3f-49fd-8cc1-45b16ed244af
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
 
 # Gecontroleerde map in AEM-formulieren{#watched-folder-in-aem-forms}
 
-Een beheerder kan een netwerkmap, ook wel een gecontroleerde map genoemd, zo configureren dat wanneer een gebruiker een bestand (zoals een PDF-bestand) in de Gecontroleerde map plaatst, een vooraf geconfigureerde workflow, service of scriptbewerking wordt gestart om het toegevoegde bestand te verwerken. Nadat de service de opgegeven bewerking heeft uitgevoerd, wordt het resulterende bestand opgeslagen in een opgegeven uitvoermap. Zie [Verschillende methoden voor het verwerken van bestanden](../../forms/using/watched-folder-in-aem-forms.md#main-pars-header-4)voor meer informatie over workflow, service en script.
+Een beheerder kan een netwerkmap, ook wel een gecontroleerde map genoemd, zo configureren dat wanneer een gebruiker een bestand (zoals een PDF-bestand) in de Gecontroleerde map plaatst, een vooraf geconfigureerde workflow, service of scriptbewerking wordt gestart om het toegevoegde bestand te verwerken. Nadat de service de opgegeven bewerking heeft uitgevoerd, wordt het resulterende bestand opgeslagen in een opgegeven uitvoermap. Zie [Verschillende methoden voor het verwerken van bestanden](#variousmethodsforprocessingfiles)voor meer informatie over workflow, service en script.
 
 ## Een gecontroleerde map maken {#create-a-watched-folder}
 
@@ -25,7 +25,7 @@ U kunt een van de volgende methoden gebruiken om een gecontroleerde map te maken
 
 * Wanneer het vormen van de eigenschappen van een Gecontroleerde knoop van de Omslagconfiguratie, typ de volledige weg van de ouderfolder in het folderPath bezit en voeg de naam van de Gecontroleerde Te creëren Omslag toe, zoals aangetoond in het volgende voorbeeld: `C:/MyPDFs/MyWatchedFolder`De `MyWatchedFolder`map bestaat niet. AEM Forms probeert de map te maken op het opgegeven pad.
 
-* Creeer een omslag op het dossiersysteem alvorens een Gecontroleerd eindpunt van de Omslag te vormen, en dan de volledige weg in het folderPath bezit te verstrekken. Zie [Gecontroleerde mapeigenschappen](../../forms/using/watched-folder-in-aem-forms.md#main-pars-header-1)voor meer informatie over de eigenschap folderPath.
+* Creeer een omslag op het dossiersysteem alvorens een Gecontroleerd eindpunt van de Omslag te vormen, en dan de volledige weg in het folderPath bezit te verstrekken. Zie [Gecontroleerde mapeigenschappen](#watchedfolderproperties)voor meer informatie over de eigenschap folderPath.
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ Om een Gecontroleerde Omslag te vormen, creeer een Gecontroleerde knoop van de C
    * `inputProcessorType`
    * `inputProcessorId`
    * `outputFilePattern`
-   Zie [Gecontroleerde mapeigenschappen](../../forms/using/watched-folder-in-aem-forms.md#main-pars-header-1)voor een volledige lijst met ondersteunde eigenschappen.
+   Zie [Gecontroleerde mapeigenschappen](#watchedfolderproperties)voor een volledige lijst met ondersteunde eigenschappen.
 
 1. Klik op Alles **opslaan**. Nadat het knooppunt is gemaakt en de eigenschappen zijn opgeslagen. De `input`, `result`, `failure`, `preserve`, en de `stage`omslagen worden gecreeerd bij de weg die in het `folderPath` bezit wordt gespecificeerd.
 
@@ -164,7 +164,7 @@ Zie [Bestandspatronen voor meer informatie over bestandspatronen](../../forms/us
 >De workflows zijn per ontwerp asynchroon. Zelfs als u de waarde op false instelt, worden de workflows gestart in de asynchrone modus.
 
 * **enabled (Boolean)**: Hiermee wordt het scannen naar een gecontroleerde map gedeactiveerd en geactiveerd. Stel deze optie in op true als u de gecontroleerde map wilt scannen. De standaardwaarde is true.
-* **payloadMapperFilter:** Wanneer een map is geconfigureerd als controlemap, wordt een mapstructuur gemaakt in de controlemap. De structuur bevat mappen voor het leveren van invoer, het ontvangen van uitvoer (resultaten), het opslaan van gegevens voor fouten, het bewaren van gegevens voor langlevende processen en het opslaan van gegevens voor verschillende stadia. De mapstructuur van een gecontroleerde map kan dienen als een lading Forms-centric workflows. Met een payload-mapper kunt u de structuur definiëren van een lading die een gecontroleerde map gebruikt voor invoer, uitvoer en verwerking. Als u bijvoorbeeld de standaardmapper gebruikt, wordt de inhoud van de gecontroleerde map toegewezen aan de [payload]-\invoer- en [payload]\uitvoermap. Er zijn twee uitvoeringen beschikbaar voor de payload mapper box. Als u geen [aangepaste implementatie](../../forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter)hebt, gebruikt u een van de implementaties buiten de box:
+* **payloadMapperFilter:** Wanneer een map is geconfigureerd als controlemap, wordt een mapstructuur gemaakt in de controlemap. De structuur bevat mappen voor het leveren van invoer, het ontvangen van uitvoer (resultaten), het opslaan van gegevens voor fouten, het bewaren van gegevens voor langlevende processen en het opslaan van gegevens voor verschillende stadia. De mapstructuur van een gecontroleerde map kan dienen als een lading Forms-centric workflows. Met een payload-mapper kunt u de structuur definiëren van een lading die een gecontroleerde map gebruikt voor invoer, uitvoer en verwerking. Als u bijvoorbeeld de standaardmapper gebruikt, wordt de inhoud van de gecontroleerde map toegewezen aan de [payload]-\input- en [payload]\output-map. Er zijn twee uitvoeringen beschikbaar voor de payload mapper box. Als u geen [aangepaste implementatie](../../forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter)hebt, gebruikt u een van de implementaties buiten de box:
 
    * **Standaardmapper:** Gebruik de standaard payload mapper om de invoer- en uitvoerinhoud van de gecontroleerde mappen in aparte invoer- en uitvoermappen in de payload te houden. Gebruik in het payload-pad van een workflow ook [payload]/input/- en [payload]/output-paden om inhoud op te halen en op te slaan.
 
@@ -662,5 +662,5 @@ inputProcessorType (String): Het type proces dat moet worden gestart. Geef in de
    * inputProcessorId (String): Het gedrag van de eigenschap inputProcessorId is gebaseerd op de waarde die is opgegeven voor de eigenschap inputProcessorType. In dit voorbeeld is de waarde van de eigenschap inputProcessorType workflow. Voor de eigenschap inputProcessorId geeft u dus het volgende pad van de PDFG-workflow op: /etc/workflow/models/pdfg/jcr:content/model
 
    * outputFilePattern (String): Patroon van het uitvoerbestand. U kunt een map of bestandspatroon opgeven. Als een mappatroon is opgegeven, hebben de uitvoerbestanden de namen die in de workflows worden beschreven. Als een bestandspatroon is opgegeven, hebben de uitvoerbestanden de namen die in het bestandspatroon worden beschreven.
-   Naast de hierboven vermelde verplichte eigenschappen, ondersteunen Gecontroleerde mappen ook een aantal optionele eigenschappen. Zie [Gecontroleerde mapeigenschappen](../../forms/using/watched-folder-in-aem-forms.md#main-pars-header-1)voor een volledige lijst en beschrijving van optionele eigenschappen.
+   Naast de hierboven vermelde verplichte eigenschappen, ondersteunen Gecontroleerde mappen ook een aantal optionele eigenschappen. Zie [Gecontroleerde mapeigenschappen](#watchedfolderproperties)voor een volledige lijst en beschrijving van optionele eigenschappen.
 

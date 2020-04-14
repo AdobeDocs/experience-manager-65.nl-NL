@@ -3,7 +3,7 @@ title: Afbeeldingstransformatiebibliotheek
 description: Leer hoe u de Imaging Transcoding Library van Adobe configureert en gebruikt, een oplossing voor beeldverwerking die kernfuncties voor het verwerken van afbeeldingen kan uitvoeren, zoals codering, transcodering, het resamplen van afbeeldingen en het vergroten of verkleinen van afbeeldingen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -25,8 +25,8 @@ Naast de ondersteuning van een groot aantal bestandsindelingen en profielen bied
 
 * **Schalen met grotere bestandsgrootte of resolutie**: Schalen wordt vooral bereikt door de gepatenteerde mogelijkheid om de afbeeldingstranscoderingsbibliotheek tijdens het decoderen van bestanden te vergroten of te verkleinen. Hierdoor wordt gegarandeerd dat het runtimegeheugengebruik altijd optimaal is en geen kwadratische functie voor het vergroten van de bestandsgrootte of het oplossen van megapixels is. De bibliotheek voor het transformeren van afbeeldingen kan grotere en hoge-resolutiebestanden (met hogere megapixels) verwerken. Gereedschappen van derden, zoals ImageMagick, kunnen grote bestanden en vastlopen niet verwerken tijdens het verwerken van dergelijke bestanden.
 * **Afbeeldingscompressie en -algoritmen** voor Photoshop-kwaliteit: Consistentie met de industriestandaard wat betreft de kwaliteit van de downsampling (vloeiend, scherp en automatisch bicubisch) en de compressiekwaliteit. De bibliotheek voor grafische transformatie beoordeelt verder de kwaliteitsfactor van de invoerafbeelding en gebruikt op intelligente wijze optimale tabellen en kwaliteitsinstellingen voor de uitvoerafbeelding. Hierdoor ontstaan bestanden van optimale grootte zonder dat dit ten koste gaat van de visuele kwaliteit.
-* **** Hoge doorvoer: De reactietijd is lager en de productie is constant hoger dan ImageMagick. Daarom zou de Bibliotheek van de Transcodering van Beelden de wachttijd voor gebruikers en de kosten van het ontvangen moeten verminderen.
-* **** Beter schalen bij gelijktijdig laden: De afbeeldingstransformatiebibliotheek functioneert optimaal onder gelijktijdige laadvoorwaarden. Deze server biedt een hoge doorvoer met optimale CPU-prestaties, een optimaal geheugengebruik en een lage responstijd, wat de hostingkosten helpt te verlagen.
+* **Hoge doorvoer:** De reactietijd is lager en de productie is constant hoger dan ImageMagick. Daarom zou de Bibliotheek van de Transcodering van Beelden de wachttijd voor gebruikers en de kosten van het ontvangen moeten verminderen.
+* **Beter schalen bij gelijktijdig laden:** De afbeeldingstransformatiebibliotheek functioneert optimaal onder gelijktijdige laadvoorwaarden. Deze server biedt een hoge doorvoer met optimale CPU-prestaties, een optimaal geheugengebruik en een lage responstijd, wat de hostingkosten helpt te verlagen.
 
 ## Ondersteunde platforms {#supported-platforms}
 
@@ -36,7 +36,7 @@ Imaging Transcoding Library is alleen beschikbaar voor RHEL 7- en CentOS 7-distr
 >
 >Mac OS en andere *nix-distributies (bijvoorbeeld Debian en Ubuntu) worden niet ondersteund.
 
-## Usage {#usage}
+## Gebruik {#usage}
 
 De opdrachtregelargumenten voor de bibliotheek voor het transformeren van afbeeldingen kunnen het volgende bevatten:
 
@@ -98,7 +98,7 @@ Als u de bibliotheek wilt configureren, maakt u een .conf-bestand om de biblioth
 
 1. Gebruik de `.`opdracht om ervoor te zorgen dat de waarde van het pad is ingesteld op `echo $LD_LIBRARY_PATH` . De uitvoer moet gewoon zijn `.`. Start de sessie opnieuw als de waarde niet is ingesteld op `.`.
 
-### Workflow voor DAM-update-middelen configureren {#configure-dam-asset-update-workflow}
+### Workflow voor [!UICONTROL DAM Update Asset] configureren {#configure-dam-asset-update-workflow}
 
 Werk de [!UICONTROL DAM-workflow voor het bijwerken van middelen] bij om de bibliotheek te gebruiken voor het verwerken van afbeeldingen.
 

@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 12e6c325-ace0-4a57-8ed4-6f7ceee23099
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -84,7 +84,7 @@ Ga als volgt te werk om uw MySQL-database te configureren:
 
 ## Stap 2: Formuliergegevensmodel maken {#create-fdm}
 
-AEM Forms biedt een intuïtieve gebruikersinterface voor het [maken van een](../../forms/using/data-integration.md#main-pars-header-1524967585)formuliergegevensmodel op basis van geconfigureerde gegevensbronnen. U kunt meerdere gegevensbronnen gebruiken in een formuliergegevensmodel. Voor ons gebruiksgeval, zullen wij de gevormde gegevensbron gebruiken MySQL.
+AEM Forms biedt een intuïtieve gebruikersinterface voor het [maken van een formuliergegevensmodel](data-integration.md) op basis van geconfigureerde gegevensbronnen. U kunt meerdere gegevensbronnen gebruiken in een formuliergegevensmodel. Voor ons gebruiksgeval, zullen wij de gevormde gegevensbron gebruiken MySQL.
 
 Ga als volgt te werk om het formuliergegevensmodel te maken:
 

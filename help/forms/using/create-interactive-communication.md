@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f4d98cb9-84d8-4735-91d2-b9ceec861e5e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -127,7 +127,7 @@ Voor meer informatie over de Interactieve Communicatie auteursinterface, zie [In
  </tbody>
 </table>
 
-U kunt de binding tussen een doelgebied en een documentfragment ook vervangen door het nieuwe fragment op het doelgebied neer te zetten met het tabblad **Middelen** . De blauwe kleurschaduw van het doelgebied tijdens het slepen van het fragment geeft aan dat het documentfragment naar het doelgebied kan worden neergezet.
+U kunt de binding tussen een doelgebied en een documentfragment ook vervangen door het nieuwe fragment op het doelgebied neer te zetten met het tabblad **[!UICONTROL Middelen]** . De blauwe kleurschaduw van het doelgebied tijdens het slepen van het fragment geeft aan dat het documentfragment naar het doelgebied kan worden neergezet.
 
 Zie [Documentfragmenten](/help/forms/using/document-fragments.md)voor meer informatie over documentfragmenten.
 
@@ -178,11 +178,11 @@ Tik op het documentfragment, tik op ![configure_icon](assets/configure_icon.png)
 
 1. Schakel over naar **[!UICONTROL webkanaal]**. Het webkanaal wordt weergegeven in de interactieve communicatieeditor. Wanneer u voor het eerst van het kanaal van de Druk aan het kanaal van het Web schakelt, vindt de automatische synchronisatie plaats. Zie Webkanaal [synchroniseren via het afdrukkanaal](../../forms/using/create-interactive-communication.md#synchronize)voor meer informatie.
 
-   Aangezien u in dit voorbeeld Afdrukken als stramien voor het web gebruikt, worden de plaatsaanduidingen, inhoud en gegevensbinding van het kanaal Afdrukken gesynchroniseerd met het webkanaal. U kunt de specifieke inhoud in het webkanaal echter wijzigen en aanpassen. [Annuleer overerving](../../forms/using/create-interactive-communication.md#main-pars-header-103384010) voor de doelgebieden en variabelen die met het afdrukkanaal zijn gegenereerd om de inhoud aan te passen.
+   Aangezien u in dit voorbeeld Afdrukken als stramien voor het web gebruikt, worden de plaatsaanduidingen, inhoud en gegevensbinding van het kanaal Afdrukken gesynchroniseerd met het webkanaal. U kunt de specifieke inhoud in het webkanaal echter wijzigen en aanpassen. [Annuleer overerving](#cancelinheritance) voor de doelgebieden en variabelen die met het afdrukkanaal zijn gegenereerd om de inhoud aan te passen.
 
    ![webchannelmiddelen](assets/webchannelassets.png)
 
-   Tik op het documentfragment, tik op ![configure_icon](assets/configure_icon.png) (Configure_icon) en tik vervolgens op **[!UICONTROL Eigenschappen]** in het zijpaneel van de Interactieve communicatie. In de sectie **[!UICONTROL Variabelen en gegevensmodelobjecten]** worden de variabelen vermeld, inclusief de verborgen variabelen en de gegevensmodelobjecten die in de documentfragmenten worden gebruikt. Gebruik het pictogram ![Bewerken](assets/edit.svg) (Bewerken) naast elk gegevensmodelobject of elke variabele om de eigenschappen te bewerken. Voor documentfragmenten die [automatisch in het kanaal van het Web gebruikend het kanaal van de Druk zijn gegenereerd](../../forms/using/create-interactive-communication.md#main-pars-header-1213963149) , gebruik bovendien het ![](assets/cancelinheritance.png) (Cancel Overerving) pictogram naast elk voorwerp van het gegevensmodel en de variabele om overerving [te](../../forms/using/create-interactive-communication.md#main-pars-header-103384010) annuleren en hen te kunnen uitgeven.
+   Tik op het documentfragment, tik op ![configure_icon](assets/configure_icon.png) (Configure_icon) en tik vervolgens op **[!UICONTROL Eigenschappen]** in het zijpaneel van de Interactieve communicatie. In de sectie **[!UICONTROL Variabelen en gegevensmodelobjecten]** worden de variabelen vermeld, inclusief de verborgen variabelen en de gegevensmodelobjecten die in de documentfragmenten worden gebruikt. Gebruik het pictogram ![Bewerken](assets/edit.svg) (Bewerken) naast elk gegevensmodelobject of elke variabele om de eigenschappen te bewerken. Voor documentfragmenten die [automatisch in het kanaal van het Web gebruikend het kanaal van de Druk zijn gegenereerd](#synchronize) , gebruik bovendien het ![](assets/cancelinheritance.png) (Cancel Overerving) pictogram naast elk voorwerp van het gegevensmodel en de variabele om overerving [te](#cancelinheritance) annuleren en hen te kunnen uitgeven.
 
 1. Tik op **[!UICONTROL Componenten]** om extra componenten aan het webkanaal toe te voegen terwijl het webkanaal is geselecteerd. De belemmering-en-dalingscomponenten in het Webkanaal van uw Interactieve Communicatie zoals vereist en ga te werk om hen te vormen.
 
@@ -581,9 +581,9 @@ Tik op de component om de volgende opties weer te geven:
 * **Bovenliggend element:** Selecteer het bovenliggende element van een component.
 * **SOM-expressie weergeven:** Bekijk de [SOM uitdrukking](../../forms/using/using-som-expressions-adaptive-forms.md) voor de component.
 
-* **Objecten groeperen in deelvenster:** Groepeer de componenten in een paneel om verrichtingen op die componenten gelijktijdig kunnen uitvoeren. Zie Objecten **[groeperen in deelvenster](../../forms/using/create-interactive-communication.md#main-pars-header-1815149576)**voor meer informatie.
+* **Objecten groeperen in deelvenster:** Groepeer de componenten in een paneel om verrichtingen op die componenten gelijktijdig kunnen uitvoeren. Zie Objecten [groeperen in deelvenster](#groupobjectspanel)voor meer informatie.
 
-* **Overerving annuleren:** [Annuleer de overerving](../../forms/using/create-interactive-communication.md#main-pars-header-103384010) van de componenten binnen het doelgebied om deze te bewerken.
+* **Overerving annuleren:** [Annuleer de overerving](#cancelinheritance) van de componenten binnen het doelgebied om deze te bewerken.
 
 ### Objecten groeperen in deelvenster {#groupobjectspanel}
 

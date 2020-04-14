@@ -10,12 +10,12 @@ discoiquuid: cc1111c4-6e24-4570-9ac7-97c25cf24ede
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 translation-type: tm+mt
-source-git-commit: 1d38c2bf5f4a00bfa5a12ddaefcab1898f81a6aa
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
 
-# Dynamische voorinstellingen voor mediaafbeeldingen beheren{#managing-image-presets}
+# Managing Dynamic Media image presets{#managing-image-presets}
 
 Met voorinstellingen voor afbeeldingen kunnen AEM-elementen dynamisch afbeeldingen van verschillende grootten, in verschillende indelingen of met andere afbeeldingseigenschappen leveren die dynamisch worden gegenereerd. Elke voorinstelling voor afbeeldingen vertegenwoordigt een vooraf gedefinieerde verzameling opdrachten voor het vergroten of verkleinen en opmaken van afbeeldingen. Wanneer u een voorinstelling voor afbeeldingen maakt, kiest u een grootte voor het leveren van de afbeelding. U kiest ook opmaakopdrachten, zodat de weergave van de afbeelding wordt geoptimaliseerd wanneer de afbeelding wordt geleverd voor weergave.
 
@@ -29,7 +29,7 @@ In deze sectie wordt beschreven hoe u voorinstellingen voor afbeeldingen maakt, 
 >
 >Slimme beeldverwerking werkt met bestaande voorinstellingen voor afbeeldingen en maakt gebruik van intelligentie tijdens de laatste milliseconde van levering om de bestandsgrootte van de afbeelding verder te beperken op basis van de snelheid van de browser of netwerkverbinding. Zie [Slimme afbeeldingen](/help/assets/imaging-faq.md) voor meer informatie.
 
-## Voorinstellingen voor dynamische media-afbeeldingen {#understanding-image-presets}
+## Understanding Dynamic Media image presets {#understanding-image-presets}
 
 Net als bij een macro is een voorinstelling voor afbeeldingen een vooraf gedefinieerde verzameling opdrachten voor het vergroten of verkleinen en opmaken van de grootte die onder een naam zijn opgeslagen. Als u wilt weten hoe Voorinstellingen afbeelding werken, kunt u instellen dat elke productafbeelding op uw website moet worden weergegeven in verschillende formaten, formaten en compressiesnelheden voor levering op het bureaublad en op mobiele apparatuur.
 
@@ -39,9 +39,9 @@ Afbeeldingen die bij dynamische levering kleiner worden gemaakt, kunnen scherper
 
 Beheerders kunnen voorinstellingen voor afbeeldingen maken. Als u een voorinstelling voor een afbeelding wilt maken, begint u helemaal opnieuw of u kunt een bestaande voorinstelling beginnen en opslaan onder een andere naam.
 
-## Dynamische voorinstellingen voor mediaafbeeldingen beheren {#managing-image-presets-1}
+## Managing Dynamic Media image presets {#managing-image-presets-1}
 
-U beheert uw voorinstellingen voor afbeeldingen in AEM door op het AEM-logo te tikken of te klikken om de algemene navigatieconsole te openen, vervolgens te tikken of te klikken op het pictogram Extra en naar **[!UICONTROL Middelen > Voorinstellingen]** afbeelding te navigeren.
+U beheert uw voorinstellingen voor afbeeldingen in AEM door te tikken op of te klikken op het AEM-logo voor toegang tot de algemene navigatieconsole. Vervolgens tikt u op het pictogram Extra of klikt u op het pictogram Extra en navigeert u naar **[!UICONTROL Middelen > Voorinstellingen]** afbeelding.
 
 ![6_5_tools-assets-imagepresets](assets/6_5_tools-assets-imagepresets.png)
 
@@ -57,7 +57,7 @@ U beheert uw voorinstellingen voor afbeeldingen in AEM door op het AEM-logo te t
 
 >[!NOTE]
 >
->Het systeem toont een verscheidenheid van vertoningen wanneer u **[!UICONTROL Vertoningen]** in de Mening van het Detail van activa selecteert. U kunt het aantal voorinstellingen voor afbeeldingen dat wordt weergegeven, verhogen of verlagen. Zie Het aantal [afbeeldingsvoorinstellingen dat wordt weergegeven](#increasingthenumberofimagepresetsthatdisplay)verhogen.
+>Het systeem toont een verscheidenheid van vertoningen wanneer u **[!UICONTROL Vertoningen]** in de Mening van het Detail van activa selecteert. U kunt het aantal voorinstellingen voor afbeeldingen dat wordt weergegeven, verhogen of verlagen. See [Increasing the number of image presets that display](#increasingthenumberofimagepresetsthatdisplay).
 
 ### Adobe Illustrator (AI)-, PostScript (EPS)- en PDF-bestandsindelingen {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
 
@@ -82,7 +82,7 @@ Met Dynamische media kunt u dynamische uitvoeringen voor AI-, EPS- of PDF-bestan
 
 >[!NOTE]
 >
->In de DAM Update Asset-workflow worden miniaturen voor EPS-bestanden gegenereerd door de stap **[!UICONTROL EPS-miniaturen]** .
+>In the [!UICONTROL DAM Update Asset] workflow, the **[!UICONTROL EPS thumbnails]** step generates thumbnails for EPS files.
 
 #### Eigenschappen van PDF/AI/EPS-metagegevens {#pdf-ai-eps-asset-metadata-properties}
 
@@ -93,7 +93,7 @@ Met Dynamische media kunt u dynamische uitvoeringen voor AI-, EPS- of PDF-bestan
 
 Via de `Rasterize PDF/AI Image Preview Rendition` workflow hebt u toegang tot opties voor `DAM Update Asset` procescomponenten.
 
-Tik linksboven op Adobe Experience Manager en navigeer naar **[!UICONTROL Extra > Workflow > Modellen]**. Selecteer op de pagina Workflowmodellen de optie **[!UICONTROL DAM Update Asset]** en tik vervolgens op de werkbalk op **[!UICONTROL Bewerken]**. Tik op de pagina met DAM-updategegevens op de `Rasterize PDF/AI Image Preview Rendition` procescomponent om het dialoogvenster Step Properties te openen.
+Tik linksboven op Adobe Experience Manager en navigeer naar **[!UICONTROL Extra > Workflow > Modellen]**. Selecteer op de pagina Workflowmodellen de optie **[!UICONTROL DAM Update Asset]** en tik vervolgens op de werkbalk op **[!UICONTROL Bewerken]**. Dubbeltik op de [!UICONTROL DAM-werkstroompagina Element] bijwerken op de `Rasterize PDF/AI Image Preview Rendition` procescomponent om het dialoogvenster Step Properties te openen.
 
 #### Opties van PDF/AI-voorvertoning van afbeelding omzetten in pixels {#rasterize-pdf-ai-image-preview-rendition-options}
 
@@ -149,7 +149,7 @@ Met de component Media Extraction Process in de `DAM Update Asset` workflow word
 
 ![De ExtendScript-paden in de argumenten van Media Extraction-proces](assets/6_5_mediaextractionprocess.png)
 
-De ExtendScript-paden in de argumenten van Media Extraction Process-component in de DAM Update Asset-workflow.
+De ExtendScript-paden in de argumenten van Media Extraction Process-component in de [!UICONTROL DAM Update Asset] -workflow.
 
 De volgende scripts worden gebruikt door Dynamic Media-integratie:
 
@@ -182,16 +182,16 @@ De volgende scripts worden gebruikt door Dynamic Media-integratie:
 
 U kunt de grootte van miniaturen configureren door deze instellingen te configureren in de workflow **[!UICONTROL DAM-element]** bijwerken. De workflow bevat twee stappen waarmee u de miniatuurgrootte van afbeeldingselementen kunt configureren. Hoewel het ene (**[!UICONTROL Dynamische Media Process Image Assets]**) wordt gebruikt voor dynamische afbeeldingselementen en het andere (**[!UICONTROL Process Thumbnails]**) voor het genereren van statische miniaturen of wanneer bij alle andere processen geen miniaturen worden gegenereerd, moeten *beide* dezelfde instellingen hebben.
 
-Met de stap Afbeeldingselementen **[!UICONTROL van dynamisch mediaproces worden miniaturen gegenereerd door de afbeeldingsserver. Deze configuratie is onafhankelijk van de configuratie die wordt toegepast op de stap Miniaturen]** **** verwerken. Het genereren van miniaturen via de stap Miniaturen **** verwerken is de langzaamste en meest geheugenintensieve manier om miniaturen te maken.
+With the **[!UICONTROL Dynamic Media Process Image Assets]** step, thumbnails are generated by the image server, and this configuration is independent of the configuration applied to the **[!UICONTROL Process Thumbnails]** step. Generating thumbnails through the **[!UICONTROL Process Thumbnails]** step is the slowest and most memory intensive way to create thumbnails.
 
 Miniatuurgrootte wordt gedefinieerd in de volgende indeling: **[!UICONTROL width:height:center]**, bijvoorbeeld *80:80:false*. De breedte en hoogte bepalen de grootte in pixels van de miniatuur; de middelste waarde is onwaar of true en als de waarde true is, wordt aangegeven dat de miniatuurafbeelding exact dezelfde grootte heeft als in de configuratie. Als het formaat van de afbeelding kleiner is, wordt de afbeelding gecentreerd in de miniatuur.
 
 >[!NOTE]
 >
->* De miniatuurgrootte voor EPS-bestanden wordt geconfigureerd in de stap **[!UICONTROL EPS-miniaturen]** , op het tabblad **[!UICONTROL Argumenten]** onder Miniaturen.
+>* Thumbnail size for EPS files are configured in the **[!UICONTROL EPS thumbnails]** step, in the **[!UICONTROL Arguments]** tab under Thumbnails.
    >
    >
-* De miniatuurgrootte voor video&#39;s wordt geconfigureerd in de stap **[!UICONTROL Miniaturen]** in Fmpeg, op het tabblad **[!UICONTROL Proces]** onder **[!UICONTROL Argumenten]**.
+* Thumbnail size for videos are configured in the **[!UICONTROL FFmpeg thumbnails]** step, in the **[!UICONTROL Process]** tab under **[!UICONTROL Arguments]**.
 >
 
 
@@ -199,11 +199,11 @@ Miniatuurgrootte wordt gedefinieerd in de volgende indeling: **[!UICONTROL width
 **De grootte** van afbeeldingsminiaturen configureren:
 
 1. Tik op **[!UICONTROL Extra > Workflow > Modellen > DAM Update Asset > Edit]**.
-1. Tik op de stap Afbeeldingselementen **[!UICONTROL van dynamisch mediaproces en tik op het tabblad]** Miniaturen **** of klik op deze knop. Wijzig desgewenst de grootte van de miniaturen en tik op **[!UICONTROL OK]**.
+1. Tik op de stap Afbeeldingselementen **[!UICONTROL van dynamisch mediaproces en tik op het tabblad]** Miniaturen **** of klik op deze knop. Change the thumbnail size, as needed, then tap **[!UICONTROL OK]**.
 
    ![6_5_dynamicmediaprocessimageassets-thumbnailstab](assets/6_5_dynamicmediaprocessimageassets-thumbnailstab.png)
 
-1. Tik op de stap Miniaturen **** verwerken en tik vervolgens op het tabblad **[!UICONTROL Miniaturen]** . Wijzig desgewenst de grootte van de miniaturen en tik op **[!UICONTROL OK]**.
+1. Tik op de stap Miniaturen **** verwerken en tik vervolgens op het tabblad **[!UICONTROL Miniaturen]** . Change the thumbnail size, as needed, then tap **[!UICONTROL OK]**.
 
    >[!NOTE]
    >
@@ -222,7 +222,7 @@ Afbeeldingsvoorinstellingen die u maakt, zijn beschikbaar als dynamische uitvoer
 
    ![rise_reduction ethenumberofimagepresetsthatdisplay](assets/increase_decreasethenumberofimagepresetsthatdisplay.png)
 
-1. Wijzig in de eigenschap **[!UICONTROL limit]** de **[!UICONTROL waarde]**(standaard ingesteld op 15) in het gewenste getal.
+1. In the **[!UICONTROL limit]** property, change the **[!UICONTROL Value]**, which is set to 15 by default, to the desired number.
 1. Navigeer naar de gegevensbron voor de afbeeldingsvoorinstelling op `/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist/datasource`
 
    ![chlimage_1-495](assets/chlimage_1-495.png)
@@ -250,22 +250,22 @@ Zie [De bestandsindeling](#indesign-indd-file-format)InDesign (INDD).
 
 **Een voorinstelling** voor dynamische media-afbeeldingen maken:
 
-1. Tik in AEM op het AEM-logo om toegang te krijgen tot de algemene navigatieconsole en tik vervolgens op **[!UICONTROL Gereedschappen > Middelen > Voorinstellingen]** afbeelding.
+1. In AEM, tap the AEM logo to access the global navigation console, then tap **[!UICONTROL Tools > Assets > Image Presets]**.
 1. Klik op **[!UICONTROL Maken]**. Het venster Voorinstelling afbeelding **[!UICONTROL bewerken wordt geopend]** .
 
    ![chlimage_1-496](assets/chlimage_1-496.png)
 
    >[!NOTE]
    >
-   >Als u deze voorinstelling wilt laten reageren, wist u de waarden in de velden **[!UICONTROL Breedte]** en **[!UICONTROL Hoogte]** en laat u deze leeg.
+   >To make this image preset responsive, erase the values in the **[!UICONTROL width]** and **[!UICONTROL height]** fields and leave them blank.
 
-1. Voer desgewenst waarden in op de tabbladen **[!UICONTROL Standaard]** en **[!UICONTROL Geavanceerd]** , inclusief een naam. De opties worden beschreven in Voorinstellingsopties voor [afbeelding](#image-preset-options). Voorinstellingen worden weergegeven in het linkervenster en kunnen samen met andere elementen ter plekke worden gebruikt.
+1. Enter values into the **[!UICONTROL Basic]** and **[!UICONTROL Advanced]** tabs as appropriate, including a name. De opties worden beschreven in [Opties voor afbeeldingsvoorinstellingen](#image-preset-options). Voorinstellingen worden weergegeven in het linkerdeelvenster en kunnen direct samen met andere assets worden gebruikt.
 
    ![6_5_imagepreset-edit](assets/6_5_imagepreset-edit.png)
 
 1. Klik op **[!UICONTROL opslaan**.
 
-## Een responsieve voorinstelling voor afbeeldingen maken {#creating-a-responsive-image-preset}
+## Creating a responsive image preset {#creating-a-responsive-image-preset}
 
 Als u een responsieve voorinstelling voor afbeeldingen wilt maken, voert u de stappen uit in Voorinstellingen [voor](#creating-image-presets)afbeeldingen maken. Wanneer u de hoogte en breedte invoert in het venster Voorinstelling **[!UICONTROL afbeelding]** bewerken, wist u de waarden en laat u deze leeg.
 
@@ -275,7 +275,7 @@ Als u deze leeg laat, weet AEM dat op deze voorinstelling kan worden gereageerd.
 
 >[!NOTE]
 >
->Als u de **[!UICONTROL URL]** - en **[!UICONTROL RESS]** -knoppen wilt zien wanneer u een voorinstelling voor afbeeldingen toepast op een element, moet het element worden gepubliceerd.
+>In order to see the **[!UICONTROL URL]** and **[!UICONTROL RESS]** buttons when applying an image preset to an asset, the asset must be published.
 >
 >![chlimage_1-79](assets/chlimage_1-498.png)
 >
@@ -287,7 +287,7 @@ Als u deze leeg laat, weet AEM dat op deze voorinstelling kan worden gereageerd.
 
 Wanneer u voorinstellingen voor afbeeldingen maakt of bewerkt, worden de opties in deze sectie beschreven. Daarnaast raadt Adobe aan om de volgende opties voor beste praktijken te kiezen:
 
-* **[!UICONTROL Format** (tabblad **[!UICONTROL Standaard]** ) - Selecteer **[!UICONTROL JPEG]** of een andere indeling die aan uw vereisten voldoet. Alle webbrowsers ondersteunen de JPEG-afbeeldingsindeling. het biedt een goede balans tussen kleine bestandsgrootten en afbeeldingskwaliteit. JPEG-afbeeldingen gebruiken echter een compressieschema met gegevensverlies dat ongewenste afbeeldingsartefacten kan veroorzaken als de compressie-instelling te laag is. Daarom raadt Adobe aan de compressiekwaliteit in te stellen op 75. Deze instelling biedt een goede balans tussen afbeeldingskwaliteit en kleine bestandsgrootte.
+* **[!UICONTROL Format** (tabblad **[!UICONTROL Standaard]** ) - Selecteer **[!UICONTROL JPEG]** of een andere indeling die aan uw vereisten voldoet. Alle webbrowsers ondersteunen de JPEG-afbeeldingsindeling. Deze biedt een goede balans tussen kleine bestandsgrootten en afbeeldingskwaliteit. JPEG-afbeeldingen gebruiken echter een compressieschema met dataverlies dat ongewenste afbeeldingsartefacten kan veroorzaken als de compressie-instelling te laag is. Daarom raadt Adobe aan de compressiekwaliteit in te stellen op 75. Deze instelling biedt een goede balans tussen afbeeldingskwaliteit en kleine bestandsgrootte.
 
 * **[!UICONTROL Eenvoudig verscherpen]** inschakelen - Selecteer **[!UICONTROL Eenvoudig verscherpen]** niet inschakelen (dit verscherpingsfilter biedt minder controle dan de instellingen voor Onscherp masker).
 
@@ -320,8 +320,8 @@ Wanneer u voorinstellingen voor afbeeldingen maakt of bewerkt, worden de opties 
       Als u <strong>GIF</strong> of <strong>GIF met alfa</strong> kiest, kunt u de volgende aanvullende opties voor de kwantiteit <strong>van</strong> GIF-kleuren kiezen:
     </div>
     <ul>
-     <li><strong>Type </strong>- Selecteer <strong>Adaptief</strong> (standaard), <strong>Web</strong>of <strong>Macintosh</strong>. Als u <strong>GIF met Alfa</strong>selecteert, is de Macintosh-optie niet beschikbaar.</li>
-     <li><strong>Dithering</strong> - Selecteer <strong>Onscherp</strong> of <strong>Uit</strong>.</li>
+     <li><strong>Type </strong>- Selecteer <strong>Adaptief</strong> (standaard), <strong>Web</strong>of <strong>Macintosh</strong>. If you select <strong>GIF with Alpha</strong>, the Macintosh option is not available.</li>
+     <li><strong>Dithering</strong> - Selecteer <strong>Diffuus</strong> of <strong>Uit</strong>.</li>
      <li><strong>Aantal kleuren </strong>- Voer een getal in tussen 2 en 256.</li>
      <li><strong>Kleurenlijst</strong> - voer een lijst in met door komma's gescheiden waarden. Voer voor wit, grijs en zwart bijvoorbeeld 000000,888888,ffffffff in.</li>
     </ul>
@@ -379,10 +379,10 @@ Wanneer u voorinstellingen voor afbeeldingen maakt of bewerkt, worden de opties 
     <ul>
      <li>Selecteer <strong>Geen</strong> om verscherpen uit te schakelen.</li>
      <li>Selecteer <strong>Verscherpen </strong>om een standaard verscherpingsfilter toe te passen op de afbeelding nadat alle schaling heeft plaatsgevonden. Verscherpen kan helpen de vervaging te compenseren die kan optreden wanneer u een afbeelding met een andere grootte weergeeft. </li>
-     <li>Selecteer<strong> Onscherp masker</strong> om een verscherpingsfiltereffect in te stellen op de uiteindelijke gedownsampelde afbeelding. U kunt de intensiteit van het effect, de straal van het effect (gemeten in pixels) en een drempel voor het contrast instellen die wordt genegeerd. Voor dit effect worden dezelfde opties gebruikt als voor het filter Onscherp masker van Photoshop.</li>
+     <li>Select<strong> Unsharp mask</strong> to fine-tune a sharpening filter effect on the final downsampled image. U kunt de intensiteit van het effect, de straal van het effect (gemeten in pixels) en een drempel voor het contrast instellen die wordt genegeerd. Voor dit effect worden dezelfde opties gebruikt als voor het filter Onscherp masker van Photoshop.</li>
     </ul> <p>In <strong>Onscherp masker</strong>hebt u de volgende opties:</p>
     <ul>
-     <li><strong>Hoeveelheid</strong> - Hiermee bepaalt u de hoeveelheid contrast die wordt toegepast op de randpixels. De standaardwaarde voor het reële getal is 1,0. Voor afbeeldingen met hoge resolutie kunt u de resolutie verhogen tot 5,0.Beschouw Hoeveelheid als een maat voor de filterintensiteit.</li>
+     <li><strong>Hoeveelheid</strong> - Hiermee bepaalt u de hoeveelheid contrast die wordt toegepast op de randpixels. De standaardwaarde voor het reële getal is 1,0. Voor afbeeldingen met hoge resolutie kunt u de resolutie verhogen tot 5,0. Beschouw Hoeveelheid als een maat voor de filterintensiteit.</li>
      <li><strong>Straal</strong> - Hiermee bepaalt u het aantal pixels rondom de randpixels dat invloed heeft op de verscherping. Voer voor afbeeldingen met een hoge resolutie een getal in tussen 1 en 2. Bij een lage waarde worden alleen de randpixels verscherpt. met een hoge waarde wordt een grotere reeks pixels verscherpt . De juiste waarde is afhankelijk van de grootte van de afbeelding.</li>
      <li><strong>Drempel</strong> - Hiermee bepaalt u het contrastbereik dat moet worden genegeerd wanneer het filter Onscherp masker wordt toegepast. Met andere woorden, met deze optie bepaalt u hoe verschillend de verscherpte pixels moeten zijn van het omringende gebied voordat ze als randpixels worden beschouwd en worden verscherpt. Experimenteer met gehele getallen tussen 2 en 20 om ruis te voorkomen. </li>
      <li><strong>Toepassen op</strong> - Hiermee wordt bepaald of de verscherping wordt toegepast op elke kleur of helderheid.</li>
@@ -475,14 +475,14 @@ Hieronder volgen enkele basisvoorbeelden van wat u kunt doen met wijzigingstoets
 
 ## Voorinstellingen voor afbeeldingen bewerken {#modifying-image-presets}
 
-1. Tik in AEM op het AEM-logo om toegang te krijgen tot de algemene navigatieconsole en tik vervolgens op **[!UICONTROL Gereedschappen > Middelen > Voorinstellingen]** afbeelding.
+1. In AEM, tap the AEM logo to access the global navigation console, then tap **[!UICONTROL Tools > Assets > Image Presets]**.
 
    ![6_5_imagepreset-editpreset](assets/6_5_imagepreset-editpreset.png)
 
 1. Selecteer een voorinstelling en klik op **[!UICONTROL Bewerken]**. Het venster Voorinstelling afbeelding **[!UICONTROL bewerken wordt geopend]** .
 1. Breng wijzigingen aan en klik op **[!UICONTROL Opslaan]** om de wijzigingen op te slaan of **[!UICONTROL Annuleren]** om de wijzigingen te annuleren.
 
-## Voorinstellingen voor dynamische media-afbeeldingen publiceren {#publishing-image-presets}
+## Publishing Dynamic Media image presets {#publishing-image-presets}
 
 Als u de modus Dynamische media - hybride gebruikt, moet u de voorinstellingen van de afbeelding handmatig publiceren.
 
@@ -496,7 +496,7 @@ Als u de modus Dynamische media - hybride gebruikt, moet u de voorinstellingen v
 
    ![chlimage_1-81](assets/chlimage_1-505.png)
 
-## Dynamische voorinstellingen voor Media-afbeeldingen verwijderen {#deleting-image-presets}
+## Deleting Dynamic Media image presets {#deleting-image-presets}
 
 1. Tik in AEM op het AEM-logo of klik hierop om de globale navigatieconsole te openen.
 1. Tik op het pictogram **[!UICONTROL Gereedschappen]** en navigeer naar **[!UICONTROL Middelen > Voorinstellingen]** afbeelding.

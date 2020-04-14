@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
 
 ---
 
@@ -306,7 +306,7 @@ Als u een regel wilt definiëren die is gebaseerd op een aangepaste functie, sel
 
 ![Aangepaste functies](assets/custom_functions_set_options_new.png)
 
-Om een douanefunctie tot stand te brengen, zie [douanefuncties in regelredacteur](../../forms/using/rule-editor.md#main-pars-header-296220653).
+Om een douanefunctie tot stand te brengen, zie [douanefuncties in regelredacteur](#custom-functions).
 
 Een regel definiëren op basis van een formuliergegevensmodel:
 
@@ -349,7 +349,7 @@ Op het tabblad Formulierobjecten wordt een hiërarchische weergave weergegeven v
 
 De formulierobjecten waarop een of meer geldige regels zijn toegepast, worden gemarkeerd met een groene stip. Als een van de regels die op een formulierobject zijn toegepast ongeldig is, wordt het formulierobject gemarkeerd met een gele stip.
 
-Het tabblad Functies bevat een set ingebouwde functies, zoals som van, min of meer, max van, gemiddelde van, aantal en validerende vorm. U kunt deze functies gebruiken om waarden in herhaalbare deelvensters en tabelrijen te berekenen en deze tijdens het schrijven van regels te gebruiken in instructies voor handelingen en voorwaarden. U kunt echter ook [aangepaste functies](../../forms/using/rule-editor.md#custom-functions) maken.
+Het tabblad Functies bevat een set ingebouwde functies, zoals som van, min of meer, max van, gemiddelde van, aantal en validerende vorm. U kunt deze functies gebruiken om waarden in herhaalbare deelvensters en tabelrijen te berekenen en deze tijdens het schrijven van regels te gebruiken in instructies voor handelingen en voorwaarden. U kunt echter ook [aangepaste functies](#custom-functions) maken.
 
 ![Het tabblad Functies](assets/functions.png)
 

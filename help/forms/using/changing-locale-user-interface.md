@@ -2,7 +2,7 @@
 title: De landinstelling van de gebruikersinterface van de AEM Forms-werkruimte wijzigen
 seo-title: De landinstelling van de gebruikersinterface van de AEM Forms-werkruimte wijzigen
 description: Hoe te om de werkruimte van Vormen AEM te wijzigen om tekst, samengevouwen categorieën, rijen, en processen, en de datumkiezer op de interface te lokaliseren.
-seo-description: Hoe te om de werkruimte van Vormen AEM te wijzigen om tekst, samengevouwen categorieën, rijen, en processen, en de datumkiezer op de interface te lokaliseren.
+seo-description: Hoe te om de werkruimte van Vormen AEM te wijzigen om tekst, samengevouwen categorieën, rijen, en processen, en de datumplukker op de interface te lokaliseren.
 uuid: c89ff150-a36e-45cc-99a6-8768dbe58eab
 contentOwner: robhagat
 content-type: reference
@@ -11,7 +11,7 @@ topic-tags: forms-workspace
 discoiquuid: 89f9d666-28e2-4201-8467-ae90693ca5d2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
 
 ---
 
@@ -48,7 +48,7 @@ De standaard-URL van CRXDE Lite is `https://'[server]:[port]'/lc/crx/de/index.js
 
 ## Samengevouwen categorieën, wachtrijen en processen lokaliseren {#localizing-collapsed-categories-queues-and-processes}
 
-In de werkruimte AEM Forms worden afbeeldingen gebruikt om kopteksten van categorieën, rijen en processen weer te geven. U hebt ontwikkelingspakket nodig om deze koppen te lokaliseren. Voor gedetailleerde informatie over het creëren van ontwikkelingspakket, zie de code van de de werkruimte van de Vormen van [AEM.](../../forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3)
+In de werkruimte AEM Forms worden afbeeldingen gebruikt om kopteksten van categorieën, rijen en processen weer te geven. U hebt ontwikkelingspakket nodig om deze koppen te lokaliseren. Voor gedetailleerde informatie over het creëren van ontwikkelingspakket, zie de code van de de werkruimte van de Vormen van [AEM.](introduction-customizing-html-workspace.md#building-html-workspace-code)
 
 In de volgende stappen wordt aangenomen dat de nieuwe gelokaliseerde afbeeldingsbestanden *Categories_nw.png*, *Queue_nw.png* en *Processes_nw.png* zijn. De aanbevolen breedte van de afbeeldingen is 19 px.
 
@@ -107,7 +107,7 @@ Voer de volgende stappen uit om de afbeeldingen te lokaliseren:
 
 ## Datumkiezer lokaliseren {#localizing-date-picker}
 
-U hebt ontwikkelingspakket nodig om de *datepicker* -API te lokaliseren. Voor gedetailleerde informatie over het creëren van ontwikkelingspakket, zie de code [van de de werkruimte van de Vormen van](../../forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3)AEM.
+U hebt ontwikkelingspakket nodig om de *datepicker* -API te lokaliseren. Voor gedetailleerde informatie over het creëren van ontwikkelingspakket, zie de code [van de de werkruimte van de Vormen van](introduction-customizing-html-workspace.md#building-html-workspace-code)AEM.
 
 1. Download en extraheer het [jQuery UI-pakket](https://jqueryui.com/download/all/), navigeer naar *&lt;extracted jquery UI package>*\jquery-ui-1.10.2.zip\jquery-ui-1.10.2\ui\i18n.
 1. Kopieer het bestand jquery.ui.datepicker-nw.js voor de landinstellingscode nu naar apps/ws/js/libs/jqueryui en breng specifieke wijzigingen voor de landinstelling aan in het bestand.

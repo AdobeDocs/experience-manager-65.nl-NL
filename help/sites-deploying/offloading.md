@@ -10,7 +10,7 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: 370151df-3b8e-41aa-b586-5c21ecb55ffe
 translation-type: tm+mt
-source-git-commit: 4ccaf401d561087f864c95e2be4c594cf34a7cb7
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -197,7 +197,7 @@ Taken zijn verspreide hoeveelheden die het bijbehorende onderwerp hebben dat is 
    * Ingeschakeld: Dit exemplaar verbruikt banen van dit onderwerp.
    * Uitgeschakeld: Dit exemplaar verbruikt geen banen van dit onderwerp.
    * Exclusief: Dit exemplaar verbruikt slechts banen van dit onderwerp.
-   **** Opmerking: Wanneer u Uitsluitend voor een onderwerp selecteert, worden alle andere onderwerpen automatisch geplaatst aan Gehandicapten.
+   **Opmerking:** Wanneer u Uitsluitend voor een onderwerp selecteert, worden alle andere onderwerpen automatisch geplaatst aan Gehandicapten.
 
 ### Geïnstalleerde taakgebruikers {#installed-job-consumers}
 
@@ -205,15 +205,15 @@ Verschillende JobConsumer-implementaties worden geïnstalleerd met Experience Ma
 
 | Taakonderwerp | Service PID | Beschrijving |
 |---|---|---|
-| / | org.apache.sling.event.impl.job.deprecated.EventAdminBridge | Geïnstalleerd met Apache Sling. Verwerkt banen die OSGi gebeurtenisadmin, voor achterwaartse verenigbaarheid produceert. |
+| / | org.apache.sling.event.impl.jobs.deprecated.EventAdminBridge | Geïnstalleerd met Apache Sling. Verwerkt banen die OSGi gebeurtenisadmin, voor achterwaartse verenigbaarheid produceert. |
 | com/day/cq/replication/job/&amp;ast; | com.day.cq.replication.impl.AgentManagerImpl | Een replicatieagent die taakladingen herhaalt. |
-| com/adobe/granite/workflow/offloading | com.adobe.granite.workflow.core.offloading.WorkflowOffloadingJobConsumer | Verwerkt taken die door de workflow van DAM Update Asset Offloader worden gegenereerd. |
+| com/adobe/granite/workflow/offloading | com.adobe.granite.workflow.core.offloading.WorkflowOffloadingJobConsumer | Verwerkt taken die door de workflow [!UICONTROL DAM Update Asset Offloader] worden gegenereerd. |
 
 ### Onderwerpen voor een instantie uitschakelen en inschakelen {#disabling-and-enabling-topics-for-an-instance}
 
 De service Apache Sling Job Consumer Manager biedt whitelist- en blacklist-eigenschappen voor onderwerpen. Vorm deze eigenschappen om de verwerking van specifieke onderwerpen op een instantie van de Manager van de Ervaring toe te laten of onbruikbaar te maken.
 
-**** Opmerking: Als de instantie tot een topologie behoort, kunt u het Offloaden Browser op om het even welke computer in de topologie ook gebruiken om onderwerpen toe te laten of onbruikbaar te maken.
+**Opmerking:** Als de instantie tot een topologie behoort, kunt u het Offloaden Browser op om het even welke computer in de topologie ook gebruiken om onderwerpen toe te laten of onbruikbaar te maken.
 
 De logica die de lijst van toegelaten onderwerpen creeert staat eerst alle onderwerpen toe die in whitelist zijn, en verwijdert dan onderwerpen die op de zwarte lijst zijn.Door gebrek, worden alle onderwerpen toegelaten (de whitelist waarde is `*`) en geen onderwerpen zijn gehandicapt (de zwarte lijst heeft geen waarde).
 
@@ -310,18 +310,18 @@ Voorbeeld: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 Verkrijg identiteitskaart van het Verdelen van een instantie van de Manager van de Ervaring gebruikend één van beide volgende methodes:
 
-* Open de Console van het Web en, in de het Verdelen Montages, vind de waarde van het Verschuivende bezit van identiteitskaart ([http://localhost:4502/system/console/status-slingsettings](http://localhost:4502/system/console/status-slingsettings)). Deze methode is nuttig als de instantie nog geen deel van de topologie uitmaakt.
+* Open de Console van het Web en, in de het Verdelen Montages, vind de waarde van het het Verdelen bezit van identiteitskaart ([http://localhost:4502/system/console/status-slingsettings](http://localhost:4502/system/console/status-slingsettings)). Deze methode is nuttig als de instantie nog geen deel van de topologie uitmaakt.
 * Gebruik browser van de Topologie als de instantie reeds deel van de topologie uitmaakt.
 
 ## De verwerking van DAM-activa verschuiven {#offloading-the-processing-of-dam-assets}
 
 Vorm de instanties van een topologie zodat de specifieke instanties de achtergrondverwerking van activa uitvoeren die in DAM worden toegevoegd of bijgewerkt.
 
-Standaard voert Experience Manager de DAM Update Asset-workflow uit wanneer een DAM-element wordt gewijzigd of een DAM-element wordt toegevoegd. Wijzig het standaardgedrag, zodat Experience Manager in plaats daarvan de workflow van de DAM Update Asset Offloader uitvoert. Deze workflow genereert een JobManager-taak met een onderwerp `com/adobe/granite/workflow/offloading`. Dan, vorm de topologie zodat de baan aan een specifieke worker wordt geoffload.
+Standaard voert Experience Manager de workflow [!UICONTROL DAM Update Asset] uit wanneer een DAM-element wordt gewijzigd of een element wordt toegevoegd aan DAM. Wijzig het standaardgedrag, zodat Experience Manager in plaats daarvan de workflow [!UICONTROL DAM Asset Offloader] bijwerken uitvoert. Deze workflow genereert een JobManager-taak met een onderwerp `com/adobe/granite/workflow/offloading`. Dan, vorm de topologie zodat de baan aan een specifieke worker wordt geoffload.
 
 >[!CAUTION]
 >
->Er mag geen tijdelijke workflow worden gebruikt bij het offloaden van de workflow. De DAM Update Asset-workflow mag bijvoorbeeld niet van voorbijgaande aard zijn wanneer deze wordt gebruikt voor het offloaden van middelen. Zie [Tijdelijke workflows](/help/assets/performance-tuning-guidelines.md#workflows)voor informatie over het instellen/ongedaan maken van de overgangsmarkering voor een workflow.
+>Er mag geen tijdelijke workflow worden gebruikt bij het offloaden van de workflow. De workflow [!UICONTROL DAM Update Asset] mag bijvoorbeeld niet van voorbijgaande aard zijn wanneer deze wordt gebruikt voor het offloaden van middelen. Zie [Tijdelijke workflows](/help/assets/performance-tuning-guidelines.md#workflows)voor informatie over het instellen/ongedaan maken van de overgangsmarkering voor een workflow.
 
 De volgende procedure veronderstelt de volgende kenmerken voor de het ontladen topologie:
 
@@ -334,14 +334,14 @@ De volgende procedure veronderstelt de volgende kenmerken voor de het ontladen t
 
    ![chlimage_1-116](assets/chlimage_1-116.png)
 
-1. Voor elke instantie waarmee gebruikers communiceren om DAM-elementen te uploaden of te wijzigen, configureert u workflowdraagraketten zodanig dat ze de workflow voor het offloaden van middelen van DAM-update gebruiken:
+1. Voor elke instantie waarmee gebruikers communiceren om DAM-elementen te uploaden of te wijzigen, configureert u workflowdraagraketten zo dat ze de workflow voor het offloaden van [!UICONTROL DAM-middelen] gebruiken:
 
    1. Open de Workflowconsole.
    1. Klik op het tabblad Launcher.
-   1. Zoek de twee configuraties van Launcher die de DAM Update Asset-workflow uitvoeren. Één type van de de gebeurtenisgebeurtenis van de lanceringsconfiguratie is Gemaakt Knoop, en het andere type is Gewijzigde Knoop.
-   1. Wijzig beide gebeurtenistypen, zodat ze de workflow voor het offloaden van middelen uit DAM-update uitvoeren. (Zie Workflows [starten wanneer knooppunten worden gewijzigd](/help/sites-administering/workflows-starting.md)voor informatie over startconfiguraties.)
+   1. Zoek de twee opstartconfiguraties die de workflow [!UICONTROL DAM Update Asset] uitvoeren. Één type van de de gebeurtenisgebeurtenis van de lanceringsconfiguratie is Gemaakt Knoop, en het andere type is Gewijzigde Knoop.
+   1. Wijzig beide gebeurtenistypen, zodat ze de workflow voor het offloaden van [!UICONTROL middelen door DAM-update] uitvoeren. (Zie Workflows [starten wanneer knooppunten worden gewijzigd](/help/sites-administering/workflows-starting.md)voor informatie over startconfiguraties.)
 
-1. Schakel in de gevallen waarin de achtergrondverwerking van DAM-elementen wordt uitgevoerd de werkstroomstartprogramma&#39;s uit die de DAM Update Asset-workflow uitvoeren.
+1. Schakel in de gevallen waarin de achtergrondverwerking van DAM-elementen wordt uitgevoerd de werkstroomstartprogramma&#39;s uit die de workflow [!UICONTROL DAM Update Asset] uitvoeren.
 
 ## Meer informatie {#further-reading}
 

@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: ca3f6025-7e17-4173-8267-e24a338ea4a1
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
 
 ---
 
@@ -135,7 +135,7 @@ Als u alleen afbeeldingen voor handelingen wilt weergeven, past u de afbeeldinge
 
 ### Taaklijsttaak, pop-upmenu {#task-list-task-action-nbsp-pop-up-menu}
 
-1. U hebt ontwikkelingspakket nodig om items van het pop-upmenu Taaktaak in de taaklijst van AEM Forms aan te passen. Voor gedetailleerde informatie over het creëren van ontwikkelingspakket, zie de code van de de werkruimte van de Vormen van [AEM.](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3)
+1. U hebt ontwikkelingspakket nodig om items van het pop-upmenu Taaktaak in de taaklijst van AEM Forms aan te passen. Voor gedetailleerde informatie over het creëren van ontwikkelingspakket, zie de code van de de werkruimte van de Vormen van [AEM.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
 
 1. Kopieer /libs/ws/js/runtime/templates/task.html om het volgende codefragment te `/apps/ws/js/runtime/templates/task.html`vervangen:
 

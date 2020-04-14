@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: dfaa4b3f-f65a-4fe3-87a7-f3bc71015e56
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
 
 ---
 
@@ -26,14 +26,14 @@ De dynamische integratie van Media Klassieke video breidt het bereik van geoptim
 
 ## Info over FFMPEG en Dynamic Media Classic {#about-ffmpeg-and-scene}
 
-Het standaardvideocoderingsproces is gebaseerd op het gebruik van de op FFMPEG gebaseerde integratie met videoprofielen. Daarom bevat de uit-van-de-doos DAM Update Asset-workflow de volgende twee op ffmpeg gebaseerde workflowstappen:
+Het standaardvideocoderingsproces is gebaseerd op het gebruik van de op FFMPEG gebaseerde integratie met videoprofielen. Daarom bevat de out-of-the-box [!UICONTROL DAM Update Asset] -workflow de volgende twee workflowstappen op basis van ffmpeg:
 
 * FMPEG-miniaturen
 * FFMPEG-codering
 
-Houd er rekening mee dat het inschakelen en configureren van de Dynamic Media Classic-integratie deze twee workflowstappen niet automatisch verwijdert of deactiveert uit de workflow voor het innemen van middelen in de DAM-update. Als u al gebruik maakt van de op FFMPEG gebaseerde videocodering in AEM, is het waarschijnlijk dat FFMPEG is geïnstalleerd in uw ontwerpomgeving. In dit geval wordt een nieuwe video die met Elementen wordt ingevoerd, twee keer gecodeerd: eenmaal van de FFMPEG-encoder en eenmaal van Dynamic Media Classic-integratie.
+Houd er rekening mee dat het inschakelen en configureren van de Dynamic Media Classic-integratie deze twee workflowstappen niet automatisch verwijdert of deactiveert uit de uit-van-de-box [!UICONTROL DAM Update-workflow voor het opnemen van bedrijfsmiddelen] . Als u al gebruik maakt van de op FFMPEG gebaseerde videocodering in AEM, is het waarschijnlijk dat FFMPEG is geïnstalleerd in uw ontwerpomgeving. In dit geval wordt een nieuwe video die met Elementen wordt ingevoerd, twee keer gecodeerd: eenmaal van de FFMPEG-encoder en eenmaal van Dynamic Media Classic-integratie.
 
-Als u de op FFMPEG gebaseerde videocodering in AEM hebt geconfigureerd en FFMPEG hebt geïnstalleerd, raadt Adobe u aan de twee FFMPEG-workflows te verwijderen uit uw DAM Update Asset-workflows.
+Als u de op FFMPEG gebaseerde videocodering in AEM hebt geconfigureerd en FFMPEG hebt geïnstalleerd, raadt Adobe u aan de twee FFMPEG-workflows te verwijderen uit uw [!UICONTROL DAM Update Asset] -workflows.
 
 ### Ondersteunde indelingen {#supported-formats}
 
@@ -92,7 +92,7 @@ Als u geen workflow of versie voor uw elementen nodig hebt, moet u uw elementen 
 
 Als u de voorinstellingen voor de viewer en codering voor video in AEM moet bijwerken omdat de voorinstellingen zijn bijgewerkt in Dynamic Media Classic, navigeert u naar de configuratie Dynamic Media Classic in de cloudconfiguratie en klikt u op **Viewer- en coderingsvoorinstellingen** bijwerken.
 
-![chlimage_1-135](assets/chlimage_1-131.png)
+![chlimage_1-131](assets/chlimage_1-131.png)
 
 ### De stramienvideo uploaden {#uploading-your-master-video}
 
@@ -149,7 +149,7 @@ De verschillende videocoderingen worden gemaakt op basis van de dynamische Media
 >Nieuwe videoprofielen en wijzigingen ervan moeten worden geactiveerd om te publiceren.
 
 1. Ga in AEM naar **[!UICONTROL Tools]** en selecteer **[!UICONTROL Configuration Console]**. Navigeer in de configuratieconsole naar **[!UICONTROL Gereedschappen]** > **[!UICONTROL Middelen]** > **[!UICONTROL Videoprofielen]** in de navigatiestructuur.
-1. Maak een nieuw, dynamisch mediaprofiel voor klassieke video. **[!UICONTROL In het dialoogvenster]** Nieuw... selecteert u Pagina **** maken en selecteert u vervolgens de sjabloon Dynamisch mediaprofiel voor klassieke video. Geef de nieuwe pagina met videoprofielen een naam en klik op **[!UICONTROL Maken]**.
+1. Maak een nieuw, dynamisch mediaprofiel voor klassieke video. In het dialoogvenster **[!UICONTROL Nieuw...]** selecteert u Pagina **** maken en selecteert u vervolgens de sjabloon Dynamisch mediaprofiel voor klassieke video. Geef de nieuwe pagina met videoprofielen een naam en klik op **[!UICONTROL Maken]**.
 
    ![chlimage_1-133](assets/chlimage_1-133.png)
 

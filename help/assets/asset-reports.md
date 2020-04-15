@@ -3,7 +3,7 @@ title: Rapporten over uw digitale middelen
 description: Lees rapporten over uw middelen in AEM Assets die u helpen gebruik, activiteit, en het delen van uw digitale activa te begrijpen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a839ec71e02ee5d92f054a686b7bb52142058ae9
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
@@ -36,12 +36,12 @@ AEM Assets produceert de volgende standaardrapporten voor u:
 
 AEM-beheerders kunnen deze rapporten eenvoudig genereren en aanpassen voor uw implementatie. Een beheerder kan deze stappen volgen om een rapport te produceren:
 
-1. Tik/klik op het AEM-logo en ga naar **[!UICONTROL Gereedschappen]** > **[!UICONTROL Middelen]** > **[!UICONTROL Rapporten]**.
+1. Klik in de interface Experience Manager op **[!UICONTROL Extra]** > **[!UICONTROL Middelen]** > **[!UICONTROL Rapporten]**.
 
 ![Pagina Gereedschappen om te navigeren in middelenrapport](assets/AssetsReportNavigation.png)
 
-1. Tik op of klik op **[!UICONTROL Maken]** op de werkbalk op de pagina Elementrapporten.
-1. Kies op de pagina Rapport **** maken het rapport dat u wilt maken en tik op **[!UICONTROL Volgende]**.
+1. Klik op de werkbalk op de pagina [!UICONTROL Elementrapporten] op **[!UICONTROL Maken]** .
+1. Kies op de pagina Rapport **** maken het rapport dat u wilt maken en klik op **[!UICONTROL Volgende]**.
 
    ![Rapporttype selecteren](assets/choose_report.png)
 
@@ -53,7 +53,7 @@ AEM-beheerders kunnen deze rapporten eenvoudig genereren en aanpassen voor uw im
    >
    >Standaard worden de Content Fragments en de shares van de koppeling opgenomen in het rapport Gedownloade middelen. Selecteer de aangewezen optie om een rapport van verbindingsaandelen tot stand te brengen of inhoudsfragmenten van het downloadrapport uit te sluiten.
 
-1. Configureer rapportdetails zoals titel, beschrijving, miniatuur en mappad in de CRX-opslagplaats waar het rapport wordt opgeslagen. Standaard is het mappad */content/dam*. U kunt een ander pad opgeven.
+1. Configureer rapportdetails zoals titel, beschrijving, miniatuur en mappad in de CRX-opslagplaats waar het rapport wordt opgeslagen. Standaard is het mappad `/content/dam`. U kunt een ander pad opgeven.
 
    ![Pagina om rapportdetails toe te voegen](assets/report_configuration.png)
 
@@ -83,7 +83,7 @@ AEM-beheerders kunnen deze rapporten eenvoudig genereren en aanpassen voor uw im
 
    ![De pagina van details van het rapport van het Aandeel van de Verbinding](assets/link_share.png)
 
-1. Tik/klik op **[!UICONTROL Volgende]** op de werkbalk.
+1. Klik op **[!UICONTROL Volgende]** op de werkbalk.
 
 1. Op de **[!UICONTROL Configure pagina van Kolommen]** , worden sommige kolommen geselecteerd om in het rapport door gebrek te verschijnen. U kunt meer kolommen selecteren. Schakel een geselecteerde kolom uit om deze uit te sluiten in het rapport.
 
@@ -91,14 +91,14 @@ AEM-beheerders kunnen deze rapporten eenvoudig genereren en aanpassen voor uw im
 
    Als u een aangepaste kolomnaam of een aangepast eigenschapspad wilt weergeven, configureert u de eigenschappen voor het element binair onder het knooppunt jcr:content in CRX. U kunt dit ook toevoegen via de padkiezer voor eigenschappen.
 
-   ![Aangepaste kolommen maken voor rapport](assets/custom_columns.png)
+   ![Rapportkolommen selecteren of deselecteren](assets/custom_columns.png)
 
-1. Tik/klik op **[!UICONTROL Maken]** op de werkbalk. Een bericht meldt dat de rapportgeneratie is in werking gesteld.
-1. In de pagina van de Rapporten van Activa, is de status van de rapportgeneratie gebaseerd op de huidige staat van de rapportbaan, bijvoorbeeld Succes, Mislukt, In de wachtrij geplaatst, of Gepland. Dezelfde status wordt weergegeven in het vak met meldingen. Tik op de rapportkoppeling of klik op de rapportpagina om de rapportpagina weer te geven. U kunt ook het rapport selecteren en op de werkbalk op **[!UICONTROL Weergave]** tikken.
+1. Klik op **[!UICONTROL Maken]** op de werkbalk. Een bericht meldt dat de rapportgeneratie is in werking gesteld.
+1. In de pagina van de Rapporten van Activa, is de status van de rapportgeneratie gebaseerd op de huidige staat van de rapportbaan, bijvoorbeeld Succes, Mislukt, In de wachtrij geplaatst, of Gepland. Dezelfde status wordt weergegeven in het vak met meldingen. Klik op de rapportkoppeling om de rapportpagina weer te geven. U kunt ook het rapport selecteren en op de werkbalk op **[!UICONTROL Weergeven]** klikken.
 
    ![Een gegenereerd rapport](assets/report_page.png)
 
-   Tik op **[!UICONTROL Downloaden]** vanaf de werkbalk om het rapport in CSV-indeling te downloaden.
+   Klik op **[!UICONTROL Downloaden]** vanaf de werkbalk om het rapport in CSV-indeling te downloaden.
 
 ## Aangepaste kolommen toevoegen {#add-custom-columns}
 
@@ -112,10 +112,10 @@ U kunt douanekolommen aan de volgende rapporten toevoegen om meer gegevens voor 
 * Poortpublicatie merk
 * Bestanden
 
-1. Tik/klik op het AEM-logo en ga naar **[!UICONTROL Gereedschappen]** > **[!UICONTROL Middelen]** > **[!UICONTROL Rapporten]**.
-1. Tik op of klik op **[!UICONTROL Maken]** op de werkbalk op de pagina Elementrapporten.
+1. Klik in de interface Experience Manager op **[!UICONTROL Extra]** > **[!UICONTROL Middelen]** > **[!UICONTROL Rapporten]**.
+1. Klik op de werkbalk op de pagina [!UICONTROL Elementrapporten] op **[!UICONTROL Maken]** .
 
-1. Kies op de pagina Rapport **** maken het rapport dat u wilt maken en tik op **[!UICONTROL Volgende]**.
+1. Kies op de pagina Rapport **** maken het rapport dat u wilt maken en klik op **[!UICONTROL Volgende]**.
 1. Configureer rapportdetails zoals titel, beschrijving, miniatuur, mappad en datumbereik.
 
 1. To display a custom column, specify the name of the column in under **[!UICONTROL Custom Columns]**.
@@ -126,9 +126,9 @@ U kunt douanekolommen aan de volgende rapporten toevoegen om meer gegevens voor 
 
    ![Eigenschappenpad toewijzen vanuit paden in jcr:content](assets/property_picker.png)
 
-   Tik/klik op **[!UICONTROL Toevoegen]** en herhaal stap 5 en 6 om meer aangepaste kolommen toe te voegen.
+   Als u meer aangepaste kolommen wilt toevoegen, klikt u op **[!UICONTROL Toevoegen]** en herhaalt u stap 5 en 6.
 
-1. Tik/klik op **[!UICONTROL Maken]** op de werkbalk. Een bericht meldt dat de rapportgeneratie is in werking gesteld.
+1. Klik op **[!UICONTROL Maken]** op de werkbalk. Een bericht meldt dat de rapportgeneratie is in werking gesteld.
 
 ## De zuiveringsservice configureren {#configure-purging-service}
 

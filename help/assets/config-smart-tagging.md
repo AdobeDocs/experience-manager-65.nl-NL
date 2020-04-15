@@ -3,7 +3,7 @@ title: Asset tagging configureren met behulp van de Smart Content Service
 description: Leer hoe u slimme tags en verbeterde slimme tags kunt configureren in AEM met behulp van de Smart Content Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
@@ -30,21 +30,21 @@ Voordat u de Smart Content Service kunt gebruiken, moet u het volgende doen om e
 
 Met een openbaar certificaat kunt u uw profiel verifiëren op Adobe I/O.
 
-1. Tik in de AEM-gebruikersinterface op het AEM-logo en ga naar **[!UICONTROL Gereedschappen > Cloud Services]**> **[!UICONTROL Oudere Cloud Services]**.
+1. Klik in de AEM-gebruikersinterface op het AEM-logo en ga naar **[!UICONTROL Gereedschappen > Cloud Services]**> **[!UICONTROL Oudere Cloud Services]**.
 
-1. Tik/klik op **[!UICONTROL Nu]** configureren onder Slimme tags voor **[!UICONTROL middelen op de pagina Cloud Services]**.
-1. Geef in het dialoogvenster Configuratie **** maken een titel en naam op voor de configuratie Slimme tags. Tik/klik op **[!UICONTROL Maken]**.
+1. Klik op de pagina Cloud Services op **[!UICONTROL Nu]** configureren onder Slimme tags voor **[!UICONTROL middelen]**.
+1. Geef in het dialoogvenster Configuratie **** maken een titel en naam op voor de configuratie Slimme tags. Klik op **[!UICONTROL Maken]**.
 1. Gebruik de volgende waarden in het dialoogvenster **[!UICONTROL AEM Smart Content Service]** :
 
    **[!UICONTROL Service-URL]**: `https://mc.adobe.io/marketingcloud/smartcontent`
 
    **[!UICONTROL Autorisatieserver]**: `https://ims-na1.adobelogin.com`
 
-   Laat de overige velden voorlopig leeg (later te verstrekken). Tik/klik op **[!UICONTROL OK]**.
+   Laat de overige velden voorlopig leeg (later te verstrekken). Click **[!UICONTROL OK]**.
 
    ![Dialoogvenster van de AEM Smart Content Service voor het aanbieden van de inhoudsservice-URL](assets/aem_scs.png)
 
-1. Tik/klik op Openbaar certificaat **[!UICONTROL downloaden voor OAuth Integration]** en download het openbare certificaatbestand `AEM-SmartTags.crt`.
+1. Klik op Openbaar certificaat **[!UICONTROL downloaden voor OAuth Integration]** en download het openbare certificaatbestand `AEM-SmartTags.crt`.
 
    ![Een voorstelling van de instellingen die voor de service voor slimme tags zijn gemaakt](assets/download_link.png)
 
@@ -72,17 +72,17 @@ Als u API&#39;s voor Smart Content Service wilt gebruiken, maakt u een integrati
 
 1. Ga naar [https://console.adobe.io](https://console.adobe.io/).
 1. Voor de pagina van **[!UICONTROL Integraties]** , selecteer de aangewezen rekening en verifieer dat de bijbehorende organisatierol systeembeheerder is.
-1. Tik op **[!UICONTROL Nieuwe integratie]**.
-1. Selecteer **[!UICONTROL Toegang tot een API]** op de **[!UICONTROL pagina Een nieuwe integratie]** maken. Tik op **[!UICONTROL Doorgaan]**.
-1. Selecteer onder **[!UICONTROL Experience Cloud]** de optie **[!UICONTROL Slimme inhoud]**. Tik op **[!UICONTROL Doorgaan]**.
+1. Klik op **[!UICONTROL Nieuwe integratie]**.
+1. Selecteer **[!UICONTROL Toegang tot een API]** op de **[!UICONTROL pagina Een nieuwe integratie]** maken. Klik op **[!UICONTROL Doorgaan]**.
+1. Selecteer onder **[!UICONTROL Experience Cloud]** de optie **[!UICONTROL Slimme inhoud]**. Klik op **[!UICONTROL Doorgaan]**.
 
    ![Selecteer bij het maken van een nieuwe integratie de optie Slimme inhoud onder Experience Cloud met de beschikbare opties](assets/smart_content.png)
 
-1. Selecteer **[!UICONTROL Nieuwe integratie]** op de volgende pagina. Tik/klik op **[!UICONTROL Doorgaan]**.
+1. Selecteer **[!UICONTROL Nieuwe integratie]** op de volgende pagina. Klik op **[!UICONTROL Doorgaan]**.
 1. Voor de pagina van de Details **[!UICONTROL van de]** Integratie, specificeer een naam voor de integratiesgateway en voeg een beschrijving toe.
 1. Upload in de certificaten **[!UICONTROL met]** openbare sleutels `AEM-SmartTags.crt` het bestand dat u hierboven hebt gedownload.
-1. Tik/klik op **[!UICONTROL Integratie]** maken.
-1. Tik op of klik op **[!UICONTROL Doorgaan naar integratiegegevens]** om de integratiegegevens weer te geven.
+1. Klik op **[!UICONTROL Integratie]** maken.
+1. Klik op **[!UICONTROL Doorgaan naar integratiegegevens]** om de integratiegegevens weer te geven.
 
    ![Op het tabblad Overzicht kunt u de informatie bekijken die voor integratie is opgegeven.](assets/integration_details.png)
 
@@ -90,7 +90,7 @@ Als u API&#39;s voor Smart Content Service wilt gebruiken, maakt u een integrati
 
 Als u de integratie wilt configureren, gebruikt u de waarden Technical Account ID, Organization ID, Client Secret, Authorization Server en API-sleutelvelden van de Adobe I/O-integratie. Door een cloud-configuratie met slimme tags te maken, kunnen API-aanvragen van de AEM-instantie worden geverifieerd.
 
-1. Tik in de AEM-gebruikersinterface op het AEM-logo of klik erop. Ga naar **[!UICONTROL Extra > Cloud Service > Legacy Cloud Services]** om de Cloud Services-console te openen.
+1. Navigeer in Experience Manager naar **[!UICONTROL Extra > Cloud Service > Legacy Cloud Services]** om de [!UICONTROL Cloud Services] -console te openen.
 1. Open de hierboven gemaakte configuratie onder Slimme **[!UICONTROL elementtags]**. Klik op de pagina met service-instellingen op **[!UICONTROL Bewerken]**.
 1. Gebruik in het dialoogvenster **[!UICONTROL AEM Smart Content Service]** de vooraf ingevulde waarden voor de velden **[!UICONTROL Service URL]** en **[!UICONTROL Authorization Server]** .
 1. Voor de velden **[!UICONTROL API Key]**, **[!UICONTROL Technical Account Id]**, **[!UICONTROL Organization Id]** en **[!UICONTROL Client Secret]** gebruikt u de hierboven gegenereerde waarden.
@@ -109,18 +109,20 @@ Nadat u de configuratie hebt voltooid, kunt u een JMX MBean gebruiken om de conf
 
 ## Slimme tags toepassen inschakelen in de workflow Element bijwerken (optioneel) {#enable-smart-tagging-in-the-update-asset-workflow-optional}
 
-1. Tik in de AEM-gebruikersinterface of klik op het AEM-logo en ga naar **[!UICONTROL Gereedschappen > Workflow > Modellen]**.
+1. Ga in Experience Manager naar **[!UICONTROL Extra > Workflow > Modellen]**.
 1. Selecteer op de pagina **[!UICONTROL Workflowmodellen]** het workflowmodel **[!UICONTROL DAM Update Asset]** .
-1. Tik/klik op **[!UICONTROL Bewerken]** op de werkbalk.
-1. Vouw het zijpaneel uit om de stappen weer te geven. Sleep de stap **[!UICONTROL Slim tagelement]** die beschikbaar is in de DAM-workflowsectie en plaats deze na de stap Miniaturen **** verwerken.
+1. Klik op **[!UICONTROL Bewerken]** op de werkbalk.
+1. Vouw het zijpaneel uit om de stappen weer te geven. Drag **[!UICONTROL Smart Tag Asset]** step that is available in the DAM Workflow section and place it after the **[!UICONTROL Process Thumbnails]** step.
 
-   ![De stap Slim tagelement toevoegen na de stap met de procesminiaturen in de DAM Update Asset-workflow](assets/chlimage_1-105.png)
+   ![Voeg de stap Slimme tag-elementen toe na de stap met de miniaturen van het proces in de workflow [!UICONTROL DAM-element] bijwerken](assets/chlimage_1-105.png)
 
-1. Open de stap in de bewerkingsmodus. Controleer of onder **[!UICONTROL Geavanceerde instellingen]** de optie **[!UICONTROL Handler Advance]** is geselecteerd.
+   *Afbeelding: Voeg de stap Slimme tag-elementen toe na de stap met de miniaturen van het proces in de workflow[!UICONTROL DAM-element]bijwerken*
+
+1. Open de stap in de bewerkingsmodus. Controleer of onder **[!UICONTROL Geavanceerde instellingen]** de optie **[!UICONTROL Handler bevorderen]** is geselecteerd.
 
    ![chlimage_1-3](assets/chlimage_1-106.png)
 
-1. Selecteer op het tabblad **[!UICONTROL Argumenten]** de optie Fouten **** negeren als u wilt dat de workflow wordt voltooid, zelfs als de stap Automatisch labelen mislukt.
+1. Selecteer op het tabblad **[!UICONTROL Argumenten]** de optie **[!UICONTROL Fouten negeren]** als u wilt dat de workflow wordt voltooid, zelfs als de stap Automatisch taggen mislukt.
 
    ![chlimage_1-4](assets/chlimage_1-107.png)
 
@@ -128,7 +130,7 @@ Nadat u de configuratie hebt voltooid, kunt u een JMX MBean gebruiken om de conf
 
    ![chlimage_1-5](assets/chlimage_1-108.png)
 
-1. Tik op **[!UICONTROL OK]** om de processtap te sluiten en sla de workflow op.
+1. Klik op **[!UICONTROL OK]** om de processtap te sluiten en sla de workflow op.
 
 >[!MORELIKETHIS]
 >

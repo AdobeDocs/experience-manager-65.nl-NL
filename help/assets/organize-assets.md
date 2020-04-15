@@ -3,7 +3,7 @@ title: Uw digitale middelen organiseren
 description: Organiseer uw digitale middelen, beelden, dossiers, omslagen, etc. gebruikend de Manager van de Ervaring.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
@@ -21,15 +21,15 @@ De eenvoudigste manier om elementen te ordenen, is deze in mappen op te slaan. D
 * In de meeste gevallen groeit de gegevensopslagruimte voor digitale middelen altijd. Daarom is het belangrijk om het gebruik van metagegevens, de mapstructuur en de naamgeving van bestanden vroegtijdig te formaliseren in de ontwerpcyclus van de inhoud.
 * Gebruik mappen alleen om een consistente opslagstructuur voor uw digitale elementen op te leggen. Deze consistentie helpt uw proces en uw activa beter te beheren. Met middelen die bijvoorbeeld in de volgende typen mappen worden geplaatst, kunt u de juiste [profielen gebruiken voor de verwerking](processing-profiles.md)van elementen:
 
-   * **Ontwikkelingsmappen** - bevat digitale elementen waaraan u momenteel werkt.
-   * **Clientmappen** - bevat digitale elementen op basis van clients of projectnamen.
-   * **Hoofdmappen** - bevat originele, brondigitale elementen.
-   * **Uitvoermappen** - bevat uitvoeringen en kopieën van de originele, brondigitale elementen.
-   * **Bestandsgroottemappen** - bevat digitale elementen op basis van kleine, middelgrote of grote bestanden.
-   * **Mappen** organiseren - bevat digitale elementen die klaar zijn om live op uw website te publiceren.
-   * **MIME-typemappen** - bevat digitale elementen die specifiek zijn voor MIME-typen zoals afbeeldingen, documenten en multimedia.
-   * **Mappen** archiveren - bevat gepensioneerde digitale elementen.
-   * **Datummappen** - bevat digitale elementen op basis van een aanmaakdatum of een datum die als laatste is gewijzigd.
+   * **Ontwikkelingsmappen**: bevat digitale elementen waaraan u momenteel werkt.
+   * **Clientmappen**: bevat digitale elementen die zijn gebaseerd op clients of projectnamen.
+   * **Hoofdmappen**: bevat originele, brondigitale elementen.
+   * **Uitvoermappen**: bevat vertoningen en kopieën van de originele, brondigitale elementen.
+   * **Bestandsgroottemappen**: bevat digitale elementen op basis van kleine, middelgrote of grote bestanden.
+   * **Mappen** stapelen: bevat digitale elementen die klaar zijn om live op uw website te publiceren.
+   * **MIME-tekstmappen**: bevat digitale elementen die specifiek zijn voor MIME-typen, zoals afbeeldingen, documenten en multimedia.
+   * **Mappen** archiveren: bevat gepensioneerde digitale elementen.
+   * **Op datum gebaseerde mappen**: bevat digitale elementen die zijn gebaseerd op een aanmaakdatum of een datum die als laatste is gewijzigd.
 
 * Maak een map met mappen die waarschijnlijk niet worden gewijzigd, zodat aanpassingen of automatisering gewoon kunnen doorgaan. De toegewezen verwerkingsprofielen werken bijvoorbeeld nog steeds.
 * Als een element al is gepubliceerd, gebruikt u AEM om het element naar een andere map te verplaatsen en vanaf de nieuwe locatie opnieuw te publiceren, is de oorspronkelijke locatie van het gepubliceerde element nog steeds beschikbaar, samen met het opnieuw gepubliceerde element. Het oorspronkelijke gepubliceerde middel gaat echter *verloren* aan AEM en kan niet ongepubliceerd worden. Daarom, als beste praktijken, eerst unpublish een middel en dan verplaats het naar een verschillende omslag.
@@ -66,6 +66,6 @@ Als u het gebruik van metagegevens, de naamgeving van bestanden en de mapstructu
 Voor meer informatie over verschillende profielen die u kunt maken en beheren om elementen te verwerken, raadpleegt u:
 
 * [Profielen voor het verwerken van metagegevens, afbeeldingen en video&#39;s](processing-profiles.md)
-* [Metagegevensprofielen](metadata-profiles.md)
+* [Metadataprofielen](metadata-profiles.md)
 * [Videoprofielen](video-profiles.md)
 * [Dynamische afbeeldingsprofielen voor media](image-profiles.md)

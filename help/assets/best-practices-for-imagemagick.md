@@ -3,7 +3,7 @@ title: ImageMagick installeren en configureren om met AEM-middelen te werken
 description: Leer over de software ImageMagick, hoe te om het te installeren, opstelling de het processtap van de bevellijn, en gebruik het om, duimnagels van beelden uit te geven samen te stellen en te produceren.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 70a88085a0fd6e949974aa7f1f92fdc3def3d98e
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
@@ -34,7 +34,7 @@ Er zijn meerdere versies van ImageMagic-installatiebestanden beschikbaar voor ve
 
 U kunt de processtap van de bevellijn voor uw bepaald gebruiksgeval plaatsen. Voer de volgende stappen uit om elke keer dat u een JPEG-afbeeldingsbestand toevoegt aan de AEM-server, een gespiegelde afbeelding en miniaturen (140x100, 48x48, 319x319 en 1280x1280) te genereren: `/content/dam`
 
-1. Ga op de AEM-server naar de workflowconsole ( `https://[*AEM server*]:[*Port*]/workflow`) en open het workflowmodel voor **[!UICONTROL DAM Update Asset]** .
+1. Ga op de AEM-server naar de workflowconsole (`https://[aem_server]:[port]/workflow`) en open het workflowmodel voor **[!UICONTROL DAM Update Asset]** .
 1. Open vanuit het workflowmodel **[!UICONTROL DAM Update Asset]** de stap **[!UICONTROL EPS-miniaturen (aangedreven door ImageMagick)]** .
 1. Voeg op het tabblad **** Argumenten `image/jpeg` toe aan de lijst **[!UICONTROL MIME-typen]** .
 
@@ -48,11 +48,11 @@ U kunt de processtap van de bevellijn voor uw bepaald gebruiksgeval plaatsen. Vo
 
    ![select_flags](assets/select_flags.png)
 
-1. Geef op het tabblad **[!UICONTROL Web Enabled Image]** de details voor de vertoning op met afmetingen van 1280x1280 pixels. Geef bovendien *afbeelding/jpeg* op in het vak **[!UICONTROL Mimetype]** .
+1. Geef op het tabblad **[!UICONTROL Web Enabled Image]** de details voor de vertoning op met afmetingen van 1280x1280 pixels. Geef bovendien `image/jpeg` in het vak **[!UICONTROL Mimetype]** op.
 
    ![web_enabled_image](assets/web_enabled_image.png)
 
-1. Tik/klik op **[!UICONTROL OK]** om de wijzigingen op te slaan.
+1. Click **[!UICONTROL OK]** to save the changes.
 
    >[!NOTE]
    >
@@ -65,7 +65,7 @@ U kunt de processtap van de bevellijn voor uw bepaald gebruiksgeval plaatsen. Vo
 
    ![skip_mime_types](assets/skip_mime_types.png)
 
-1. Voeg op het tabblad Afbeelding **[!UICONTROL voor]** web het MIME-type toe `image/jpeg` onder de lijst **[!UICONTROL Overslaan]**. Tik/klik op **[!UICONTROL OK]** om de wijzigingen op te slaan.
+1. Voeg op het tabblad Afbeelding **[!UICONTROL voor]** web het MIME-type toe `image/jpeg` onder de lijst **[!UICONTROL Overslaan]**. Click **[!UICONTROL OK]** to save the changes.
 
    ![web_enabled](assets/web_enabled.png)
 
@@ -81,4 +81,4 @@ Daarnaast zijn verschillende plug-ins voor beeldverwerking afhankelijk van de Im
 Als u ImageMagick of een betrokken bibliotheek gebruikt, raadt Adobe u aan de bekende kwetsbaarheden te beperken door ten minste een van de volgende taken (maar bij voorkeur beide) uit te voeren:
 
 1. Controleer of alle afbeeldingsbestanden beginnen met de verwachte [&quot;toverbytes&quot;](https://en.wikipedia.org/wiki/List_of_file_signatures) die overeenkomen met de afbeeldingsbestandstypen die u ondersteunt voordat u ze naar ImageMagick stuurt voor verwerking.
-1. Gebruik een beleidsdossier om de kwetsbare Codeurs onbruikbaar te maken ImageMagick. Het algemene beleid voor ImageMagick is te vinden op `/etc/ImageMagick`.
+1. Gebruik een beleidsdossier om de kwetsbare Codeurs uit te schakelen ImageMagick. Het algemene beleid voor ImageMagick is te vinden op `/etc/ImageMagick`.

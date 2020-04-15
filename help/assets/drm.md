@@ -3,7 +3,7 @@ title: Digital Rights Management in Assets
 description: Leer hoe u de status van verlopen van middelen en informatie over gelicentieerde middelen in AEM beheert.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
@@ -63,7 +63,7 @@ In het deelvenster Zoeken kunt u zoeken naar verlopen elementen, waaronder verlo
 
    ![chlimage_1-151](assets/chlimage_1-151.png)
 
-1. Click/tap the **[!UICONTROL Expiry Status]** option to expand it.
+1. Klik op de optie **[!UICONTROL Vervalstatus]** om deze uit te vouwen.
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
 
@@ -105,16 +105,16 @@ Op de middelenconsole van Adobe Experience Manager (AEM) Assets kunnen verschill
 
    ![chlimage_1-155](assets/chlimage_1-155.png)
 
-1. Tik op **[!UICONTROL Publiceren]** op de werkbalk. Als u **Publiceren** niet ziet op de werkbalk, tikt u op **[!UICONTROL Meer]** op de werkbalk en zoekt u de optie **[!UICONTROL Publiceren]** .
+1. Klik op **[!UICONTROL Publiceren]** op de werkbalk. Als u **Publiceren** niet ziet op de werkbalk, klikt u op **[!UICONTROL Meer]** op de werkbalk en zoekt u de optie **[!UICONTROL Publiceren]** .
 
    ![chlimage_1-156](assets/chlimage_1-156.png)
 
-1. Kies **[!UICONTROL Publiceren]** in het menu en sluit vervolgens het bevestigingsvenster.
+1. Kies **[!UICONTROL Publiceren]** in het menu en sluit het bevestigingsvenster.
 1. Sluit de selectiemodus. De publicatiestatus voor het element wordt onder aan de elementminiatuur weergegeven in de kaartweergave. In de lijstmening, toont de Gepubliceerde kolom de tijd toen de activa werd gepubliceerd.
 
    ![chlimage_1-157](assets/chlimage_1-157.png)
 
-1. Selecteer in de interface Elementen een element en tik op **[!UICONTROL Eigenschappen]** om de pagina met elementdetails weer te geven.
+1. Selecteer een element in de interface Elementen en klik op **[!UICONTROL Eigenschappen]** om de pagina met elementdetails weer te geven.
 
    ![chlimage_1-158](assets/chlimage_1-158.png)
 
@@ -136,16 +136,16 @@ Op de middelenconsole van Adobe Experience Manager (AEM) Assets kunnen verschill
 
    ![chlimage_1-161](assets/chlimage_1-161.png)
 
-1. Tik op **[!UICONTROL Zoeken]** om de zoekbalk weer te geven en te zoeken naar elementen op basis van hun status.
+1. Als u wilt zoeken naar elementen op basis van hun status, klikt u op **[!UICONTROL Zoeken]** om de balk Zoeken weer te geven.
 
    ![chlimage_1-162](assets/chlimage_1-162.png)
 
-1. Druk op Enter en tik vervolgens op **[!UICONTROL GlobalNav]** om het deelvenster Zoeken weer te geven.
-1. In the Search panel, tap/click **[!UICONTROL Publish Status]** and select **[!UICONTROL Published]** to search for published assets in AEM Assets.
+1. Druk op Enter en klik vervolgens op **[!UICONTROL GlobalNav]** om het deelvenster Zoeken weer te geven.
+1. In the Search panel, click **[!UICONTROL Publish Status]** and select **[!UICONTROL Published]** to search for published assets in AEM Assets.
 
    ![chlimage_1-163](assets/chlimage_1-163.png)
 
-1. Tap/click **[!UICONTROL Approval Status]** and click the appropriate option to search for approved or rejected assets.
+1. Click **[!UICONTROL Approval Status]** and click the appropriate option to search for approved or rejected assets.
 
    ![chlimage_1-164](assets/chlimage_1-164.png)
 
@@ -159,15 +159,15 @@ Op de middelenconsole van Adobe Experience Manager (AEM) Assets kunnen verschill
 
 ## Digital Rights Management in Assets {#digital-rights-management-in-assets-1}
 
-Met deze functie wordt de acceptatie van de licentieovereenkomst afgedwongen voordat u een licentie kunt downloaden van Adobe Experience Manager (AEM) Assets.
+Met deze functie wordt de acceptatie van de licentieovereenkomst afgedwongen voordat u een licentie kunt downloaden van Adobe Experience Manager Assets.
 
-Als u een beveiligd middel selecteert en op **[!UICONTROL Downloaden]** tikt, wordt u omgeleid naar een licentiepagina waar u de licentieovereenkomst accepteert. Als u de licentieovereenkomst niet accepteert, is de knop **[!UICONTROL Downloaden]** uitgeschakeld.
+Als u een beveiligd element selecteert en op **[!UICONTROL Downloaden]** klikt, wordt u omgeleid naar een licentiepagina waar u de licentieovereenkomst accepteert. Als u de licentieovereenkomst niet accepteert, is de knop **[!UICONTROL Downloaden]** uitgeschakeld.
 
 Als de selectie meerdere beveiligde elementen bevat, selecteert u één element tegelijk, accepteert u de licentieovereenkomst en gaat u verder met het downloaden van het element.
 
 Een actief wordt als beschermd beschouwd indien aan een van deze voorwaarden is voldaan:
 
-* De eigenschap voor metagegevens van elementen `xmpRights:WebStatement` verwijst naar het pad van de CQ-pagina die de licentieovereenkomst voor het element bevat.
+* De eigenschap voor metagegevens van het element `xmpRights:WebStatement` verwijst naar het pad van de pagina die de licentieovereenkomst voor het element bevat.
 * De waarde van de eigenschap voor metagegevens van het element `adobe_dam:restrictions` is een onbewerkte HTML die de licentieovereenkomst opgeeft.
 
 >[!NOTE]
@@ -180,7 +180,7 @@ Een actief wordt als beschermd beschouwd indien aan een van deze voorwaarden is 
 
 1. Selecteer in de kaartweergave de elementen die u wilt downloaden en klik op **[!UICONTROL Downloaden]**.
 1. In the **[!UICONTROL Copyright Management]** page, select the asset you want to download from the list.
-1. Kies **[!UICONTROL Akkoord]** in het venster Licentie. Naast het element waarvoor u de licentieovereenkomst accepteert, wordt een vinkje weergegeven. Tik/klik op de knop **[!UICONTROL Downloaden]** .
+1. Kies **[!UICONTROL Akkoord]** in het venster Licentie. Naast het element waarvoor u de licentieovereenkomst accepteert, wordt een vinkje weergegeven. Klik op de knop **[!UICONTROL Downloaden]** .
 
    >[!NOTE]
    >
@@ -188,4 +188,4 @@ Een actief wordt als beschermd beschouwd indien aan een van deze voorwaarden is 
 
    ![chlimage_1-167](assets/chlimage_1-167.png)
 
-1. Tik/klik in het dialoogvenster op **[!UICONTROL Downloaden]** om het element of de uitvoeringen te downloaden.
+1. Klik in het dialoogvenster op **[!UICONTROL Downloaden]** om het element of de uitvoeringen te downloaden.

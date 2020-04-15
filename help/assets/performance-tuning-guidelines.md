@@ -4,12 +4,12 @@ description: Suggesties en richtlijnen over AEM-configuratie, wijzigingen in har
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
 
-<!-- TBD: Formatting using backticks. Add UICONTROL tag. Redundant info as reviewed by engineering. -->
+<!-- TBD: Get reviewed by engineering. -->
 
 # Richtlijnen voor afstelling van middelenprestaties {#assets-performance-tuning-guide}
 
@@ -29,11 +29,11 @@ Hoewel AEM op een aantal platforms wordt ondersteund, heeft Adobe de grootste on
 
 ### Tijdelijke map {#temp-folder}
 
-Om de uploadtijden van middelen te verbeteren, gebruik krachtige opslag voor de tijdelijke folder van Java. In Linux en Windows kan een RAM-station of SSD worden gebruikt. In cloudomgevingen kan een vergelijkbaar type snelle opslag worden gebruikt. In Amazon EC2 kan bijvoorbeeld een [&#39;ephaleral drive&#39;](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) worden gebruikt voor de tijdelijke map.
+Om de uploadtijden van middelen te verbeteren, gebruik krachtige opslag voor de tijdelijke folder van Java. In Linux en Windows kan een RAM-station of SSD worden gebruikt. In cloudomgevingen kan een vergelijkbaar type snelle opslag worden gebruikt. In Amazon EC2 kan bijvoorbeeld een [tijdelijk station](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) worden gebruikt voor de tijdelijke map.
 
 Ervan uitgaande dat de server over voldoende geheugen beschikt, configureert u een RAM-station. Voer in Linux de volgende opdrachten uit om een 8 GB RAM-station te maken:
 
-```
+```shell
 mkfs -q /dev/ram1 800000
  mkdir -p /mnt/aem-tmp
  mount /dev/ram1 /mnt/aem-tmp
@@ -58,7 +58,7 @@ Adobe raadt u aan AEM Assets in Java 8 te implementeren voor optimale prestaties
 
 ### JVM-parameters {#jvm-parameters}
 
-U moet de volgende JVM-parameters instellen:
+Stel de volgende JVM-parameters in:
 
 * `-XX:+UseConcMarkSweepGC`
 * `-Doak.queryLimitInMemory`=500000
@@ -88,7 +88,7 @@ Het uitvoeren van S3 of de Gedeelde Datastore van het Dossier kan helpen om schi
 
 Met de volgende S3 Data Store-configuratie ( `org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.cfg`) kon Adobe 12,8 TB binaire grote objecten (BLOB&#39;s) uitpakken uit een bestaande bestandsgegevensopslag naar een S3-gegevensopslag op een klantsite:
 
-```
+```conf
 accessKey=<snip>
  secretKey=<snip>
  s3Bucket=<snip>
@@ -126,18 +126,17 @@ Primair, hangt uw strategie van de netwerkoptimalisering van de hoeveelheid besc
 
 Stel waar mogelijk de workflow [!UICONTROL DAM Update Asset] in op Transient. De instelling verlaagt aanzienlijk de overheadkosten die nodig zijn voor het verwerken van workflows, omdat workflows in dit geval niet door de normale tracking- en archiveringsprocessen hoeven te gaan.
 
->[!NOTE]
->
->Standaard is de workflow [!UICONTROL DAM Update Asset] ingesteld op Transient in AEM 6.3. In dit geval kunt u de volgende procedure overslaan.
-
 1. Navigeer naar `/miscadmin` in de AEM-instantie op `https://[aem_server]:[port]/miscadmin`.
+
 1. Breid **[!UICONTROL Hulpmiddelen]** uit > **[!UICONTROL Werkschema]** > **[!UICONTROL Modellen]** > **[!UICONTROL dam]**.
+
 1. Open **[!UICONTROL DAM Update Asset]**. Ga in het zwevende gereedschapvenster naar het tabblad **[!UICONTROL Pagina]** en klik vervolgens op **[!UICONTROL Pagina-eigenschappen]**.
+
 1. Select **[!UICONTROL Transient Workflow]** and click **[!UICONTROL OK]**.
 
    >[!NOTE]
    >
-   >Bepaalde functies ondersteunen geen tijdelijke workflows. Configureer geen tijdelijke workflows als deze functies vereist zijn voor de implementatie van AEM-middelen.
+   >Bepaalde functies ondersteunen geen tijdelijke workflows. Als deze functies vereist zijn voor uw [!DNL Assets] implementatie, configureert u geen tijdelijke workflows.
 
 Als er geen tijdelijke workflows kunnen worden gebruikt, voert u de workflow regelmatig uit om gearchiveerde [!UICONTROL DAM Update Asset] -workflows te verwijderen om ervoor te zorgen dat de systeemprestaties niet afnemen.
 
@@ -147,14 +146,16 @@ Om werkschemazuivering te vormen, voeg een nieuwe configuratie van de Woorden va
 
 Als het leegmaken te lang duurt, is het wel even. Daarom dient u ervoor te zorgen dat uw reinigingstaken zijn voltooid om situaties te voorkomen waarin het leegmaken van werkstromen mislukt vanwege het grote aantal werkstromen.
 
-Bijvoorbeeld, na het uitvoeren van talrijke niet-voorbijgaande werkschema&#39;s (die tot de knopen van de werkschemainstantie leidt), kunt u het Werkschema van [ACS AEM Commons Remover](https://adobe-consulting-services.github.io/acs-aem-commons/features/workflow-remover.html) op een ad hoc basis in werking stellen. Het verwijdert overbodige, voltooide workflowexemplaren direct in plaats van te wachten tot de Adobe Granite Workflow Purge-planner wordt uitgevoerd.
+Bijvoorbeeld, na het uitvoeren van talrijke niet-voorbijgaande werkschema&#39;s (die tot de knopen van de werkschemainstantie leidt), kunt u het Werkschema van [ACS AEM Commons Remover](https://adobe-consulting-services.github.io/acs-aem-commons/features/workflow-remover.html) op een ad hoc basis uitvoeren. Het verwijdert overbodige, voltooide workflowexemplaren direct in plaats van te wachten tot de Adobe Granite Workflow Purge-planner wordt uitgevoerd.
 
 ### Maximumaantal parallelle banen {#maximum-parallel-jobs}
 
 Standaard voert AEM een maximumaantal parallelle taken uit dat gelijk is aan het aantal processors op de server. Het probleem met deze instelling is dat tijdens perioden van zware belasting alle processors worden gebruikt door [!UICONTROL DAM Update Asset] -workflows, waardoor de reactiesnelheid van de gebruikersinterface wordt vertraagd en wordt voorkomen dat AEM andere processen uitvoert die de prestaties en stabiliteit van de server waarborgen. U kunt deze waarde als een goede praktijk instellen op de helft van de processors die beschikbaar zijn op de server door de volgende stappen uit te voeren:
 
-1. Ga naar `https://[aem_server]:[port]/system/console/slingevent`AEM-auteur.
+1. Ga naar `https://[aem_server]:[port]/system/console/slingevent`Experience Manager Author.
+
 1. Klik op **[!UICONTROL Bewerken]** in elke werkstroomwachtrij die relevant is voor uw implementatie, bijvoorbeeld **[!UICONTROL Granite Transient Workflow Queue]**.
+
 1. Werk de waarde van **[!UICONTROL Maximum Parallelle Banen]** bij en klik **[!UICONTROL sparen]**.
 
 Het instellen van een wachtrij op de helft van de beschikbare processors is een werkbare oplossing om mee te beginnen. Het kan echter zijn dat u dit aantal moet verhogen of verlagen om een maximale doorvoer te bereiken en dat aantal aan te passen aan de omgeving. Er zijn afzonderlijke rijen voor tijdelijke en niet-tijdelijke werkstromen evenals andere processen, zoals externe werkschema&#39;s. Als meerdere wachtrijen die zijn ingesteld op 50% van de processors tegelijkertijd actief zijn, kan het systeem snel overbelast raken. De rijen die zwaar worden gebruikt variëren zeer over gebruikersimplementaties. Daarom moet u ze mogelijk nauwkeurig configureren voor maximale efficiëntie zonder dat dit ten koste gaat van de stabiliteit van de server.
@@ -233,7 +234,7 @@ Als u elementen wilt repliceren naar een groot aantal publicatie-instanties, bij
 ### Kettingreplicatie configureren {#configure-chain-replication}
 
 1. Bepaal op welke publicatie-instantie u de replicaties wilt koppelen
-1. Op die publicatieinstantie voeg replicatieagenten toe die aan andere publicatieinstanties richten
+1. Op die publicatieinstantie voegt replicatieagenten toe die aan andere publicatieinstanties richten
 1. Schakel op elk van die replicatieagents &quot;Bij ontvangst&quot; in op het tabblad &quot;Triggers&quot;
 
 >[!NOTE]
@@ -256,11 +257,15 @@ Sommige optimalisaties kunnen worden uitgevoerd op de Oak-indexconfiguraties die
 1. Blader naar `/oak:index/damAssetLucene`. Voeg een `String[]` eigenschap `includedPaths` met waarde toe `/content/dam`.
 1. Opslaan.
 
-(Alleen AEM6.1 en 6.2) Werk de index ntBaseLucene bij om de prestaties van het verwijderen en verplaatsen van elementen te verbeteren:
+<!-- TBD: Review by engineering if required in 6.5 docs or not.
 
-1. Bladeren naar `/oak:index/ntBaseLucene/indexRules/nt:base/properties`
-1. Twee nt toevoegen:niet-gestructureerde knooppunten `slingResource` en `damResolvedPath` onder `/oak:index/ntBaseLucene/indexRules/nt:base/properties`
-1. Stel de eigenschappen hieronder op de knooppunten in (waarbij `ordered` en `propertyIndex` eigenschappen van het type zijn `Boolean`:
+(AEM6.1 and 6.2 only) Update the `ntBaseLucene` index to improve asset delete and move performance:
+
+1. Browse to `/oak:index/ntBaseLucene/indexRules/nt:base/properties`
+
+1. Add two nt:unstructured nodes `slingResource` and `damResolvedPath` under `/oak:index/ntBaseLucene/indexRules/nt:base/properties`
+
+1. Set the properties below on the nodes (where `ordered` and `propertyIndex` properties are of type `Boolean`:
 
    ```
    slingResource
@@ -275,25 +280,24 @@ Sommige optimalisaties kunnen worden uitgevoerd op de Oak-indexconfiguraties die
    type="String"
    ```
 
-1. Stel de eigenschap in voor het `/oak:index/ntBaseLucene` knooppunt `reindex=true`. Klik op Alles **[!UICONTROL opslaan]**.
-1. Controleer error.log om te zien wanneer het indexeren wordt voltooid:
-Indexering voltooid voor indexen: [/ak:index/ntBaseLucene]
-1. U kunt ook zien dat het indexeren door de /oak:index/ntBaseLucene knoop in CRXDe te verfrissen wordt voltooid aangezien het herindexbezit aan vals zou terugkeren
-1. Nadat het indexeren is voltooid, gaat u terug naar CRXDe en stelt u de eigenschap &quot;type&quot; in op uitgeschakeld voor deze twee indexen
+1. On the `/oak:index/ntBaseLucene` node, set the property `reindex=true`. Click **[!UICONTROL Save All]**.
+1. Monitor the error.log to see when indexing is completed:
+   Reindexing completed for indexes: [/oak:index/ntBaseLucene]
+1. You can also see that indexing is completed by refreshing the /oak:index/ntBaseLucene node in CRXDe as the reindex property would go back to false
+1. Once indexing is completed then go back to CRXDe and set the "type" property to disabled on these two indexes
 
-   * */oak:index/slingResource*
-   * */oak:index/damResolvedPath*
+    * */oak:index/slingResource*
+    * */oak:index/damResolvedPath*
 
-1. Klik op Alles opslaan
+1. Click "Save All"
+-->
 
 Lucene-tekstextractie uitschakelen:
 
-Als uw gebruikers niet de inhoud van activa hoeven te kunnen zoeken, bijvoorbeeld, die de tekst in Pdf- documenten doorzoeken, dan kunt u indexprestaties verbeteren door deze eigenschap onbruikbaar te maken.
+Als uw gebruikers geen full-text onderzoek van activa hoeven te doen, bijvoorbeeld, doorzoekend door tekst in Pdf- documenten, dan onbruikbaar maken. U verbetert indexprestaties door full-text indexering onbruikbaar te maken.
 
-1. Ga naar AEM package manager /crx/packmgr/index.jsp
-1. Upload en installeer het onderstaande pakket
-
-[Bestand ophalen](assets/disable_indexingbinarytextextraction-10.zip)
+1. Ga naar het AEM-pakketbeheer `/crx/packmgr/index.jsp`.
+1. Upload en installeer het pakket beschikbaar op [disable_indexingbinarytextraction-10.zip](assets/disable_indexingbinarytextextraction-10.zip).
 
 ### Totaal raden {#guess-total}
 

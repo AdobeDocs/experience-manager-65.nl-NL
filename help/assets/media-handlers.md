@@ -3,16 +3,16 @@ title: Elementen verwerken met behulp van mediafuncties en workflows
 description: Leer meer over de media handlers en hoe u workflows kunt gebruiken om taken uit te voeren op uw digitale middelen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: b600e5eaf7c61568f2559b3fb4915d433f5e13bf
 
 ---
 
 
-# Verwerk elementen met behulp van media-handlers en workflows {#processing-assets-using-media-handlers-and-workflows}
+# Elementen verwerken met behulp van mediafuncties en workflows {#processing-assets-using-media-handlers-and-workflows}
 
-Adobe Experience Manager (AEM) Assets wordt geleverd met een set standaardworkflows en mediahandlers voor het verwerken van middelen. In de workflow worden de algemene taken gedefinieerd die op de elementen moeten worden uitgevoerd en worden de specifieke taken vervolgens gedelegeerd aan de media-handlers, bijvoorbeeld het genereren van miniaturen of het ophalen van metagegevens.
+Adobe Experience Manager (AEM) Assets wordt geleverd met een set standaardworkflows en mediahandlers voor het verwerken van middelen. Een werkschema bepaalt de taken die op de activa moeten worden uitgevoerd, dan delegeert de specifieke taken aan de media managers, bijvoorbeeld duimnagelgeneratie of meta-gegevensextractie.
 
-Er kan een workflow worden gedefinieerd die automatisch wordt uitgevoerd wanneer een element van een bepaald type naar de server wordt geüpload. De verwerkingsstappen worden gedefinieerd in een reeks AEM Assets Media Handlers. AEM verstrekt sommige [ingebouwde managers,](#default-media-handlers) en de extra degenen kunnen of [douane worden ontwikkeld](#creating-a-new-media-handler) of worden bepaald door het proces aan een hulpmiddel [van de](#command-line-based-media-handler)bevellijn te delegeren.
+Een workflow kan zo worden geconfigureerd dat deze automatisch wordt uitgevoerd wanneer een element van een bepaald MIME-type wordt geüpload. De verwerkingsstappen worden gedefinieerd in termen van een reeks AEM Assets media-afhandelaars. AEM verstrekt sommige [ingebouwde managers,](#default-media-handlers) en de extra degenen kunnen of [douane worden ontwikkeld](#creating-a-new-media-handler) of worden bepaald door het proces aan een hulpmiddel [van de](#command-line-based-media-handler)bevellijn te delegeren.
 
 Mediahandlers zijn services binnen AEM Assets die specifieke handelingen uitvoeren op elementen. Wanneer bijvoorbeeld een MP3-audiobestand naar AEM wordt geüpload, wordt met een workflow een MP3-handler geactiveerd die de metagegevens extraheert en een miniatuur genereert. Meestal worden media-afhandelingen gebruikt in combinatie met workflows. De meeste gangbare MIME-typen worden ondersteund in AEM. U kunt specifieke taken uitvoeren op elementen door workflows uit te breiden/te maken, media-handlers uit te breiden/te maken of media-handlers uit te schakelen/in te schakelen.
 
@@ -20,7 +20,7 @@ Mediahandlers zijn services binnen AEM Assets die specifieke handelingen uitvoer
 >
 >Raadpleeg de pagina met door [Middelen ondersteunde indelingen](assets-formats.md) voor een beschrijving van alle indelingen die door AEM Assets worden ondersteund, en van de functies die voor elke indeling worden ondersteund.
 
-## Standaardmediafuncties {#default-media-handlers}
+## Standaardmediahandlers {#default-media-handlers}
 
 De volgende media-handlers zijn beschikbaar in AEM Assets en verwerken de meest gebruikte MIME-typen:
 
@@ -29,33 +29,33 @@ De volgende media-handlers zijn beschikbaar in AEM Assets en verwerken de meest 
 
 | Naam handler | Servicenaam (in de systeemconsole) | Ondersteunde MIME-typen |
 |---|---|---|
-| [!UICONTROL TextHandler] | com.day.cq.dam.core.impl.handler.TextHandler | text/plain |
-| [!UICONTROL PdfHandler] | com.day.cq.dam.handler.standard.pdf.PdfHandler | <ul><li>application/pdf</li><li>toepassing/illustrator</li></ul> |
-| [!UICONTROL JpegHandler] | com.day.cq.dam.core.impl.handler.JpegHandler | image/jpeg |
-| [!UICONTROL Mp3Handler] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg |
-| [!UICONTROL ZipHandler] | com.day.cq.dam.handler.standard.zip.ZipHandler | <ul><li>application/java-archive </li><li> application/zip</li></ul> |
-| [!UICONTROL PictHandler] | com.day.cq.dam.handler.standard.pict.PictHandler | image/pict |
-| [!UICONTROL StandardImageHandler] | com.day.cq.dam.core.impl.handler.StandardImageHandler | <ul><li>image/gif </li><li> image/png </li> <li>toepassing/photoshop </li> <li>image/jpeg </li><li> image/tiff </li> <li>image/x-ms-bmp </li><li> image/bmp</li></ul> |
-| [!UICONTROL MSOfficeHandler] | com.day.cq.dam.handler.standard.msoffice.MSOfficeHandler | application/msword |
-| [!UICONTROL MSPowerPointHandler] | com.day.cq.dam.handler.standard.msoffice.MSPowerPointHandler | application/vnd.ms-powerpoint |
-| [!UICONTROL OpenOfficeHandler] | com.day.cq.dam.handler.standard.ooxml.OpenOfficeHandler | <ul><li>application/vnd.openxmlformats-officedocument.wordprocessingml.document</li><li> application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</li><li> application/vnd.openxmlformats-officedocument.presentationml.presentation</li></ul> |
-| [!UICONTROL EPubHandler] | com.day.cq.dam.handler.standard.epub.EPubHandler | application/epub+zip |
-| [!UICONTROL GenericAssetHandler] | com.day.cq.dam.core.impl.handler.GenericAssetHandler | fallback als er geen andere handler is gevonden om gegevens uit een element te extraheren |
+| [!UICONTROL TextHandler] | `com.day.cq.dam.core.impl.handler.TextHandler` | text/plain |
+| [!UICONTROL PdfHandler] | `com.day.cq.dam.handler.standard.pdf.PdfHandler` | <ul><li>application/pdf</li><li>toepassing/illustrator</li></ul> |
+| [!UICONTROL JpegHandler] | `com.day.cq.dam.core.impl.handler.JpegHandler` | image/jpeg |
+| [!UICONTROL Mp3Handler] | `com.day.cq.dam.handler.standard.mp3.Mp3Handler` | audio/mpeg |
+| [!UICONTROL ZipHandler] | `com.day.cq.dam.handler.standard.zip.ZipHandler` | <ul><li>application/java-archive </li><li> application/zip</li></ul> |
+| [!UICONTROL PictHandler] | `com.day.cq.dam.handler.standard.pict.PictHandler` | image/pict |
+| [!UICONTROL StandardImageHandler] | `com.day.cq.dam.core.impl.handler.StandardImageHandler` | <ul><li>image/gif </li><li> image/png </li> <li>toepassing/photoshop </li> <li>image/jpeg </li><li> image/tiff </li> <li>image/x-ms-bmp </li><li> image/bmp</li></ul> |
+| [!UICONTROL MSOfficeHandler] | `com.day.cq.dam.handler.standard.msoffice.MSOfficeHandler` | application/msword |
+| [!UICONTROL MSPowerPointHandler] | `com.day.cq.dam.handler.standard.msoffice.MSPowerPointHandler` | application/vnd.ms-powerpoint |
+| [!UICONTROL OpenOfficeHandler] | `com.day.cq.dam.handler.standard.ooxml.OpenOfficeHandler` | <ul><li>application/vnd.openxmlformats-officedocument.wordprocessingml.document</li><li> application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</li><li> application/vnd.openxmlformats-officedocument.presentationml.presentation</li></ul> |
+| [!UICONTROL EPubHandler] | `com.day.cq.dam.handler.standard.epub.EPubHandler` | application/epub+zip |
+| [!UICONTROL GenericAssetHandler] | `com.day.cq.dam.core.impl.handler.GenericAssetHandler` | fallback als er geen andere handler is gevonden om gegevens uit een element te extraheren |
 
 Alle managers voeren de volgende taken uit:
 
 * alle beschikbare metagegevens uit het element extraheren.
-* een miniatuurafbeelding maken van het element.
+* een miniatuurafbeelding van een element maken.
 
-Het is mogelijk om de actieve media managers te bekijken:
+De actieve media-handlers weergeven:
 
 1. Navigeer in uw browser naar `http://localhost:4502/system/console/components`.
-1. Klik op de koppeling `com.day.cq.dam.core.impl.store.AssetStoreImpl`.
+1. Klik op `com.day.cq.dam.core.impl.store.AssetStoreImpl`.
 1. Er wordt een lijst weergegeven met alle actieve mediamanagers. Bijvoorbeeld:
 
 ![chlimage_1-437](assets/chlimage_1-437.png)
 
-## Mediahandlers gebruiken in Workflows om taken uit te voeren op middelen {#using-media-handlers-in-workflows-to-perform-tasks-on-assets}
+## Mediahandlers gebruiken in workflows om taken uit te voeren op elementen {#using-media-handlers-in-workflows-to-perform-tasks-on-assets}
 
 De managers van media zijn de diensten die gewoonlijk in combinatie met werkschema&#39;s worden gebruikt.
 
@@ -63,9 +63,9 @@ AEM beschikt over enkele standaardworkflows om elementen te verwerken. Open de w
 
 Bestaande workflows kunnen worden uitgebreid en nieuwe workflows kunnen worden gemaakt om elementen volgens specifieke vereisten te verwerken.
 
-In het volgende voorbeeld ziet u hoe u de workflow voor de synchronisatie **[!UICONTROL van]** AEM-elementen verbetert, zodat subelementen worden gegenereerd voor alle elementen behalve PDF-documenten.
+The following example shows how to enhance the **[!UICONTROL AEM Assets Synchronization]** workflow so that sub-assets are generated for all assets except PDF documents.
 
-### Media Handler uitschakelen of inschakelen {#disabling-enabling-a-media-handler}
+### Een mediafunctie in- of uitschakelen {#disabling-enabling-a-media-handler}
 
 De media-handlers kunnen worden uitgeschakeld of ingeschakeld via de Apache Felix Web Management Console. Wanneer de media-handler is uitgeschakeld, worden de taken niet uitgevoerd op de elementen.
 
@@ -94,14 +94,16 @@ Voer de volgende methodes uit:
 
 Hier volgt een voorbeeldsjabloon:
 
-`package my.own.stuff; /** * @scr.component inherit="true" * @scr.service */ public class MyMediaHandler extends com.day.cq.dam.core.AbstractAssetHandler { // implement the relevant parts } `
+```Java
+package my.own.stuff; /** * @scr.component inherit="true" * @scr.service */ public class MyMediaHandler extends com.day.cq.dam.core.AbstractAssetHandler { // implement the relevant parts }
+```
 
 De interface en de klassen omvatten:
 
 * `com.day.cq.dam.api.handler.AssetHandler` interface: Deze interface beschrijft de dienst die steun voor specifieke mime types toevoegt. Wanneer u een nieuw mime-type toevoegt, moet u deze interface implementeren. De interface bevat methoden voor het importeren en exporteren van de specifieke documenten, voor het maken van miniaturen en het uitnemen van metagegevens.
 * `com.day.cq.dam.core.AbstractAssetHandler` klasse: Deze klasse fungeert als basis voor alle andere implementaties van elementenhandlers en biedt veelgebruikte functionaliteit.
-* `com.day.cq.dam.core.AbstractSubAssetHandler` klasse:
-   *  Deze klasse fungeert als basis voor alle andere implementaties van elementenhandlers en biedt veelgebruikte functionaliteit plus veelgebruikte functionaliteit voor het extraheren van subelementen.
+* `com.day.cq.dam.core.AbstractSubAssetHandler`-klasse:
+   * Deze klasse fungeert als basis voor alle andere implementaties van asset-handlers en biedt veelgebruikte functionaliteit plus veelgebruikte functionaliteit voor het extraheren van submiddelen.
    * De beste manier om een implementatie te beginnen is van een verstrekte abstracte implementatie te erven die de meeste dingen behandelt en redelijk standaardgedrag verstrekt: de klasse com.day.cq.dam.core.AbstractAssetHandler.
    * Deze klasse verstrekt reeds een abstracte de dienstbeschrijver. Dus als u overerft van deze klasse en de gemaven-sling-plugin gebruikt, zorg ervoor dat u de overervingsvlag aan waar plaatst.
 
@@ -145,7 +147,7 @@ Nadat u de volgende procedure hebt uitgevoerd en een tekstbestand in AEM laadt, 
    1. Click **[!UICONTROL Finish]**.
 
 
-1. Stel de Java Compiler in op versie 1.5:
+1. Stel de Java-compiler in op versie 1.5:
 
    1. Klik met de rechtermuisknop op het `myBundle` project en selecteer Eigenschappen.
    1. Selecteer Java Compiler en stel de volgende eigenschappen in op 1.5:
@@ -153,10 +155,10 @@ Nadat u de volgende procedure hebt uitgevoerd en een tekstbestand in AEM laadt, 
       * Compatibiliteitsniveau compiler
       * Compatibiliteit van gegenereerde .class-bestanden
       * Broncompatibiliteit
-   1. Click **[!UICONTROL OK]**. Klik in het dialoogvenster op Ja.
+   1. Click **[!UICONTROL OK]**. Klik in het dialoogvenster op **[!UICONTROL Ja]**.
 
 
-1. Vervang de code in het bestand pom.xml door de volgende code:
+1. Vervang de code in het `pom.xml` bestand door de volgende code:
 
    ```xml
    <project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
@@ -426,12 +428,12 @@ Nadat u de volgende procedure hebt uitgevoerd en een tekstbestand in AEM laadt, 
 
 1. Compileer de klasse Java en maak de bundel:
 
-   1. Klik met de rechtermuisknop op het myBundle-project, selecteer **[!UICONTROL Uitvoeren als]** en **[!UICONTROL Geweven installeren]**.
+   1. Klik met de rechtermuisknop op het `myBundle` project, selecteer **[!UICONTROL Uitvoeren als]** en **[!UICONTROL Installeren]**.
    1. De bundel `myBundle-0.0.1-SNAPSHOT.jar` (die de gecompileerde klasse bevat) wordt onder gemaakt `myBundle/target`.
 
 1. Maak in CRX Explorer een nieuw knooppunt onder `/apps/myApp`. Naam = `install`, Type = `nt:folder`.
 1. Kopieer de bundel `myBundle-0.0.1-SNAPSHOT.jar` en sla deze onder `/apps/myApp/install` (bijvoorbeeld met WebDAV) op. De nieuwe teksthandler is nu actief in AEM.
-1. Open de Apache Felix Web Management Console in uw browser. Selecteer het tabblad Componenten en schakel de standaardteksthandler uit `com.day.cq.dam.core.impl.handler.TextHandler`.
+1. Open de [!UICONTROL Apache Felix Web Management Console]in uw browser. Selecteer het tabblad [!UICONTROL Componenten] en schakel de standaardteksthandler uit `com.day.cq.dam.core.impl.handler.TextHandler`.
 
 ## Media-handler op basis van opdrachtregel {#command-line-based-media-handler}
 
@@ -439,10 +441,10 @@ Met AEM kunt u alle opdrachtregelprogramma&#39;s binnen een workflow uitvoeren o
 
 De volgende conversies kunnen automatisch worden uitgevoerd en opgeslagen binnen AEM-elementen:
 
-* EPS- en AI-transformatie met [ImageMagick](https://www.imagemagick.org/script/index.php) en [Ghostscript](https://www.ghostscript.com/)
-* FLV-videotranscodering met [Mpeg](https://ffmpeg.org/)
-* MP3-codering met [LAME](http://lame.sourceforge.net/)
-* Audio verwerken met [SOX](http://sox.sourceforge.net/)
+* EPS- en AI-transformatie met [ImageMagick](https://www.imagemagick.org/script/index.php) en [Ghostscript](https://www.ghostscript.com/).
+* FLV-videotranscodering met [Mpeg](https://ffmpeg.org/).
+* MP3-codering met [LAME](http://lame.sourceforge.net/).
+* Audio verwerken met [SOX](http://sox.sourceforge.net/).
 
 >[!NOTE]
 >
@@ -480,7 +482,7 @@ Installeer ImageMagick eerst op de schijf die als host fungeert voor de AEM-serv
 
    Er wordt een gespiegelde afbeelding aan de map toegevoegd.
 
-Voeg vervolgens de processtap voor de opdrachtregel toe aan de workflow **[!UICONTROL DAM Update Asset]** :
+Then, add the command line process step to the **[!UICONTROL DAM Update Asset]** workflow:
 
 1. Ga naar de **[!UICONTROL Workflowconsole]** .
 1. Bewerk op het tabblad **[!UICONTROL Modellen]** het model **[!UICONTROL DAM Update Asset]** .
@@ -498,11 +500,11 @@ U kunt de gewijzigde workflow testen door middel van een element aan `/content/d
 1. Ga bijvoorbeeld naar de **[!UICONTROL CQ5 DAM]** -console `http://localhost:4502/libs/wcm/core/content/damadmin.html`.
 1. Open het element **[!UICONTROL myImage.tiff]** en controleer of de gespiegelde afbeelding en de drie miniaturen zijn gemaakt.
 
-#### De CommandLineProcess-stap configureren {#configuring-the-commandlineprocess-process-step}
+#### Vorm de het processtap van CommandLineProcess {#configuring-the-commandlineprocess-process-step}
 
-Deze sectie beschrijft hoe te om de Argumenten **van het** Proces van **CommandLineProcess** te plaatsen.
+Deze sectie beschrijft hoe u de [!UICONTROL procesargumenten] van [!UICONTROL CommandLineProcess] kunt instellen.
 
-De waarden van de **procesargumenten** moeten door een komma worden gescheiden en mogen niet beginnen met een spatie.
+Scheid de waarden van de [!UICONTROL procesargumenten] met komma&#39;s en start deze niet met een spatie.
 
 | Argument-formaat | Beschrijving |
 |---|---|
@@ -510,20 +512,25 @@ De waarden van de **procesargumenten** moeten door een komma worden gescheiden e
 | tn:&lt;width>:&lt;height> | Optioneel argument. Het proces leidt tot een duimnagel met de afmetingen die in het argument worden bepaald. <br>Er kunnen verschillende miniaturen worden gedefinieerd. |
 | cmd: &lt;command> | Definieert de opdracht die wordt uitgevoerd. De syntaxis hangt van het hulpmiddel van de bevellijn af. Er kan slechts één opdracht worden gedefinieerd. <br>De volgende variabelen kunnen worden gebruikt om de opdracht te maken:<br>`${filename}`: naam van het invoerbestand, bijvoorbeeld original.jpg <br> `${file}`: volledige padnaam van het invoerbestand, bijvoorbeeld /tmp/cqdam0816.tmp/original.jpg <br> `${directory}`: directory van het invoerbestand, bijvoorbeeld /tmp/cqdam0816.tmp <br>`${basename}`: naam van het invoerbestand zonder de extensie, bijvoorbeeld origineel <br>`${extension}`: extensie van het invoerbestand, bijvoorbeeld jpg |
 
-Bijvoorbeeld als ImageMagick is geïnstalleerd op de schijf die als host fungeert voor de AEM-server en als u een processtap maakt met **CommandLineProcess** als Implementation en de volgende waarden als **procesargumenten**:
+Bijvoorbeeld als ImageMagick is geïnstalleerd op de schijf die als host fungeert voor de AEM-server en als u een processtap maakt met [!UICONTROL CommandLineProcess] als Implementation en de volgende waarden als [!UICONTROL procesargumenten]:
 
 `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`
 
 Wanneer de workflow vervolgens wordt uitgevoerd, is de stap alleen van toepassing op elementen met een afbeelding/gif of mime:afbeelding/tiff als mime-type, wordt een gespiegelde afbeelding van het origineel gemaakt, omgezet in .jpg en worden drie miniaturen gemaakt met de afmetingen: 140x100, 48x48 en 10x250.
 
-Gebruik de volgende **procesargumenten** om de drie standaardminiaturen te maken met ImageMagick:
+Gebruik de volgende [!UICONTROL procesargumenten] om de drie standaardminiaturen te maken met ImageMagick:
 
 `mime:image/tiff,mime:image/png,mime:image/bmp,mime:image/gif,mime:image/jpeg,cmd:convert ${filename} -define jpeg:size=319x319 -thumbnail "319x319>" -background transparent -gravity center -extent 319x319 -write png:cq5dam.thumbnail.319.319.png -thumbnail "140x100>" -background transparent -gravity center -extent 140x100 -write cq5dam.thumbnail.140.100.png -thumbnail "48x48>" -background transparent -gravity center -extent 48x48 cq5dam.thumbnail.48.48.png`
 
-Gebruik de volgende **procesargumenten** om de voor het web ingeschakelde uitvoering te maken met ImageMagick:
+Gebruik de volgende [!UICONTROL procesargumenten] om de voor het web ingeschakelde uitvoering te maken met ImageMagick:
 
 `mime:image/tiff,mime:image/png,mime:image/bmp,mime:image/gif,mime:image/jpeg,cmd:convert ${filename} -define jpeg:size=1280x1280 -thumbnail "1280x1280>" cq5dam.web.1280.1280.jpeg`
 
 >[!NOTE]
 >
->De **stap CommandLineProcess** is alleen van toepassing op elementen (knooppunten van het type `dam:Asset`) of afstammingen van een element.
+>De [!UICONTROL stap CommandLineProcess] is alleen van toepassing op elementen (knooppunten van het type `dam:Asset`) of afstammingen van een element.
+
+>[!MORELIKETHIS]
+>
+>* [Proceselementen](assets-workflow.md)
+

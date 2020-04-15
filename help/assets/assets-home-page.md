@@ -3,7 +3,7 @@ title: AEM Assets Home Page Experience
 description: Pas de startpagina van AEM Assets aan voor een uitgebreide ervaring met welkomstschermen, waaronder een momentopname van recente activiteiten rond middelen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
@@ -41,7 +41,7 @@ Nadat u de elementenstartpagina hebt ingeschakeld, navigeert u vanuit de navigat
 
 ![ervaringskoppeling configureren in de gebruikersinterface voor middelen](assets/config-experience-link.png)
 
-Tik/klik op **[!UICONTROL Klik hier om uw ervaringskoppeling]** te configureren en uw gebruikersnaam, achtergrondafbeelding en profielafbeelding toe te voegen.
+Klik hier **[!UICONTROL Klik om uw ervaringskoppeling]** te configureren en uw gebruikersnaam, achtergrondafbeelding en profielafbeelding toe te voegen.
 
 De pagina Middelen Home bevat de volgende secties:
 

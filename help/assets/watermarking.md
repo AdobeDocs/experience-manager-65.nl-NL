@@ -3,7 +3,7 @@ title: Voeg een watermerk toe aan uw digitale elementen.
 description: Leer hoe u met de functie Watermerken een digitaal watermerk aan elementen kunt toevoegen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
@@ -19,7 +19,8 @@ Als u een watermerk op elementen wilt toepassen, voegt u de stap Watermerken toe
 
 1. Sleep vanuit het zijpaneel de stap Watermerk **** toevoegen naar de workflow [!UICONTROL DAM-element] bijwerken.
 
-   ![Sleep de stap Watermerk toevoegen en voeg deze toe aan de workflow voor DAM-update-elementen](assets/add_watermark_step_aem_assets.png)
+   ![Sleep de stap Watermerk  toevoegen en voeg deze toe aan de [!UICONTROL DAM-update-asset] workflow](assets/add_watermark_step_aem_assets.png)2
+   *Afbeelding: Sleep de stap Watermerktoevoegen en voeg deze toe aan de workflow voor[!UICONTROL DAM-updatebestanden].*
 
    >[!NOTE]
    >
@@ -29,6 +30,8 @@ Als u een watermerk op elementen wilt toepassen, voegt u de stap Watermerken toe
 1. Geef op het tabblad **[!UICONTROL Argumenten]** geldige waarden op in de verschillende velden, zoals tekst, lettertype, grootte, kleur, positie, oriëntatie, enzovoort. Tik op het pictogram Gereed om de wijzigingen te bevestigen.
 
    ![Geef de argumenten op in de stap Watermerk toevoegen in Elementen](assets/arguments_add_watermark_aem_assets.png)
+
+   *Afbeelding: Geef de argumenten op in de stap Watermerk toevoegen in Elementen*
 
 1. Sla de workflow **[!UICONTROL DAM Update Asset]** op met het watermerk.
 1. Upload een voorbeeldelement vanuit de gebruikersinterface Elementen. Het watermerk wordt weergegeven met de tekengrootte, de kleur enzovoort, op de positie die u in de bovenstaande stappen hebt geconfigureerd.

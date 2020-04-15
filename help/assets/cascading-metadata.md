@@ -3,7 +3,7 @@ title: Trapsgewijze metagegevens
 description: In dit artikel wordt beschreven hoe u trapsgewijze metagegevens voor elementen definieert.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
@@ -32,14 +32,14 @@ Overweeg een scenario waarin u trapsgewijze metagegevens wilt weergeven op basis
 
 Geef de copyrightinformatie, ongeacht het gekozen elementtype, weer als een verplicht veld.
 
-1. Tik/klik op het AEM-logo en ga naar **[!UICONTROL Gereedschappen]** > **[!UICONTROL Middelen]** > **[!UICONTROL Metagegevensschema&#39;s]**.
-1. Selecteer op de pagina **[!UICONTROL Schema-formulieren]** een schema en tik op **[!UICONTROL Bewerken]** of klik op Bewerken op de werkbalk om het schema te bewerken.
+1. Ga in de interface van Experience Manager naar **[!UICONTROL Extra]** > **[!UICONTROL Middelen]** > **[!UICONTROL Metagegevensschema&#39;s]**.
+1. In the **[!UICONTROL Schema Forms]** page, select a schema form and then click **[!UICONTROL Edit]** from the toolbar to edit the schema.
 
    ![select_form](assets/select_form.png)
 
 1. (Optioneel) Maak in de Schema-editor voor metagegevens een nieuw veld dat u wilt conditionaliseren. Geef een naam- en eigenschappenpad op het tabblad **[!UICONTROL Instellingen]** .
 
-   Als u een nieuw tabblad wilt maken, tikt u of klikt u `+` om een tabblad toe te voegen en voegt u vervolgens een metagegevensveld toe.
+   Als u een nieuw tabblad wilt maken, klikt u `+` om een tabblad toe te voegen en voegt u vervolgens een metagegevensveld toe.
 
    ![add_tab](assets/add_tab.png)
 
@@ -49,7 +49,7 @@ Geef de copyrightinformatie, ongeacht het gekozen elementtype, weer als een verp
 
 1. Sleutelwaardeparen zijn de opties die aan een gebruiker van een formulier worden verstrekt. U kunt de sleutel-waardeparen of manueel of van een JSON- dossier verstrekken.
 
-   * Als u de waarden handmatig wilt opgeven, selecteert u Handmatig **** toevoegen en tikt u op Keuze **** toevoegen en geeft u de optietekst en -waarde op. Geef bijvoorbeeld de elementtypen Video, PDF, Word en Afbeelding op.
+   * Als u de waarden handmatig wilt opgeven, selecteert u Handmatig **** toevoegen en klikt u op Keuze **** toevoegen en geeft u de optietekst en -waarde op. Geef bijvoorbeeld de elementtypen Video, PDF, Word en Afbeelding op.
 
    * Als u de waarden van een JSON-bestand dynamisch wilt ophalen, selecteert u **[!UICONTROL Toevoegen via JSON-pad]** en geeft u het pad van het JSON-bestand op. AEM haalt de sleutel-waarde paren in real time op wanneer het formulier aan de gebruiker wordt gepresenteerd.
    Beide opties sluiten elkaar uit. U kunt de opties niet importeren uit een JSON-bestand en handmatig bewerken.
@@ -75,7 +75,7 @@ Geef de copyrightinformatie, ongeacht het gekozen elementtype, weer als een verp
    ![select_dependentfield](assets/select_dependentfield.png)
 
 1. Kies onder **[!UICONTROL Vereiste]** de optie **[!UICONTROL Vereist op basis van de optie Nieuwe regel]** .
-1. Tik/klik op **[!UICONTROL Regel]** toevoegen en kies het veld **[!UICONTROL Elementtype]** om een afhankelijkheid te maken. Kies ook de veldwaarde waarop u de afhankelijkheid wilt maken. Kies in dit geval **[!UICONTROL Video]**. Tik/klik op **[!UICONTROL Gereed]** om de wijzigingen op te slaan.
+1. Klik op Regel **** toevoegen en kies het veld **[!UICONTROL Elementtype]** om een afhankelijkheid te maken. Kies ook de veldwaarde waarop u de afhankelijkheid wilt maken. In this case, choose **[!UICONTROL Video]**. Click **[!UICONTROL Done]** to save the changes.
 
    ![define_rule](assets/define_rule.png)
 
@@ -85,17 +85,17 @@ Geef de copyrightinformatie, ongeacht het gekozen elementtype, weer als een verp
 
 1. Kies onder **[!UICONTROL Zichtbaarheid]** de optie **[!UICONTROL Zichtbaar op basis van de nieuwe regeloptie]** .
 
-1. Tik/klik op **[!UICONTROL Regel]** toevoegen en kies het veld **[!UICONTROL Elementtype]** om een afhankelijkheid te maken. Kies ook de veldwaarde waarop u de afhankelijkheid wilt maken. Kies in dit geval **[!UICONTROL Video]**. Tik/klik op **[!UICONTROL Gereed]** om de wijzigingen op te slaan.
+1. Klik op Regel **** toevoegen en kies het veld **[!UICONTROL Elementtype]** om een afhankelijkheid te maken. Kies ook de veldwaarde waarop u de afhankelijkheid wilt maken. In this case, choose **[!UICONTROL Video]**. Click **[!UICONTROL Done]** to save the changes.
 
    ![define_visibilityrule](assets/define_visibilityrule.png)
 
    >[!NOTE]
    >
-   >Als u op een witruimte (of op een andere plaats dan de waarden) tikt of klikt, worden de waarden opnieuw ingesteld. Als dit gebeurt, selecteert u de waarden opnieuw.
+   >Als u op een witruimte klikt (of op een andere plaats dan de waarden), worden de waarden opnieuw ingesteld. Als dit gebeurt, selecteert u de waarden opnieuw.
 
    >[!NOTE]
    >
-   >U kunt **[!UICONTROL Vereiste]** - en **[!UICONTROL Zichtbaarheidsvoorwaarde]** onafhankelijk van elkaar toepassen.
+   >You can apply **[!UICONTROL Requirement]** condition and **[!UICONTROL Visibility]** condition independent of each other.
 
 1. Op dezelfde manier creeer een gebiedsdeel tussen de waarde Video op het gebied van het Type van Activa en andere gebieden, zoals Codec en Duur.
 1. Herhaal de stappen om documentelementen (PDF en Word) afhankelijk te maken in het veld [!UICONTROL Elementtype] en velden zoals Aantal  pagina&#39;s en [!UICONTROL Auteur].

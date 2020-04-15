@@ -3,7 +3,7 @@ title: Detectie van dubbele elementen inschakelen
 description: Leer hoe u dubbele elementen in AEM kunt detecteren.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 44daaa61f7328e79fd4e11a503b0eef3ff9ffb56
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
@@ -18,7 +18,7 @@ Als u probeert middelen te uploaden die in de Middelen van de Manager van de Erv
 
    ![Selecteer de optie Duplicaat detecteren in de servlet](assets/chlimage_1-377.png)
 
-   *Afbeelding:Selecteer de optie Duplicaat detecteren in de servlet*
+   *Afbeelding: Selecteer de optie Duplicaat detecteren in de servlet*
 
 De functie Dupliceren detecteren is nu ingeschakeld in AEM Assets. Wanneer een gebruiker een middel probeert te uploaden dat in AEM bestaat, controleert het systeem op conflict en wijst op het. De elementen worden geïdentificeerd met behulp van SHA-1-hash opgeslagen op `jcr:content/metadata/dam:sha1`, wat betekent dat dubbele elementen worden gedetecteerd, ongeacht de bestandsnamen.
 

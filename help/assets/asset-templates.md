@@ -3,7 +3,7 @@ title: Elementsjablonen
 description: Meer informatie over Asset-sjablonen in AEM Assets en over het gebruik van asset templates om marketingmateriaal te maken.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 70a88085a0fd6e949974aa7f1f92fdc3def3d98e
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
@@ -44,13 +44,13 @@ U kunt de uitvoer in deze indelingen ook downloaden naar uw lokale systeem.
 
 Overweeg een scenario waarin u digitaal afdrukbaar materiaal wilt maken, zoals brochures, vliegers en advertenties voor een komende campagne en wereldwijd wilt delen met verkooppunten. Het creëren van onderpand dat op een malplaatje wordt gebaseerd helpt een verenigde klantenervaring over kanalen leveren. Ontwerpers kunnen de campagnemalplaatjes (enig-pagina of multi-page) tot stand brengen gebruikend een creatieve oplossing, zoals InDesign en de malplaatjes uploaden aan Middelen AEM voor u. Voordat u een zekerheid maakt, moet u een of meer INDD-sjablonen uploaden naar en beschikbaar hebben in Experience Manager.
 
-1. Klik of tik op het AEM-logo en klik vervolgens op Middelen.
+1. Klik in de interface van Experience Manager op [!UICONTROL Middelen].
 
 1. Kies **[!UICONTROL Sjablonen]** in de opties.
 
    ![chlimage_1-101](assets/chlimage_1-306.png)
 
-1. Klik op **[!UICONTROL Maken]** of tik op Maken en kies in het menu de gewenste elementen. Kies bijvoorbeeld **[!UICONTROL Brochure]**.
+1. Klik op **[!UICONTROL Maken]** en kies in het menu het element dat u wilt maken. Kies bijvoorbeeld **[!UICONTROL Brochure]**.
 
    ![chlimage_1-102](assets/chlimage_1-307.png)
 
@@ -62,11 +62,11 @@ Overweeg een scenario waarin u digitaal afdrukbaar materiaal wilt maken, zoals b
 
    ![chlimage_1-104](assets/chlimage_1-309.png)
 
-1. (Optioneel) Tik op **[!UICONTROL Tags]** en selecteer een of meer tags voor de brochure. Tik op **[!UICONTROL Bevestigen]** om uw selectie te bevestigen.
+1. (Optioneel) Klik op **[!UICONTROL Codes]** en selecteer een of meer codes voor de brochure. Klik op **[!UICONTROL Bevestigen]** om uw selectie te bevestigen.
 
    ![chlimage_1-105](assets/chlimage_1-310.png)
 
-1. Klik op **[!UICONTROL Maken]**. Een dialoogvenster bevestigt dat er een nieuwe brochure wordt gemaakt. Klik op **[!UICONTROL Openen]** of tik erop om de brochure in de bewerkingsmodus te openen.
+1. Klik op **[!UICONTROL Maken]**. Een dialoogvenster bevestigt dat er een nieuwe brochure wordt gemaakt. Klik op **[!UICONTROL Openen]** om de brochure te openen in de bewerkingsmodus.
 
    <!--![chlimage_1-106](assets/.png) -->
 
@@ -81,9 +81,9 @@ U kunt direct nadat u het hebt gemaakt, een onderpand bewerken. U kunt de sjablo
 1. Voer een van de volgende handelingen uit om het onderpand te openen voor bewerking:
 
    * Open het onderpand (brochure in dit geval) dat u in stap 7 van [Create een onderpand](/help/assets/asset-templates.md#creating-a-collateral)hebt gemaakt.
-   * Navigeer op de pagina Sjablonen naar de map waarin u het onderpand hebt gemaakt en klik of tik op de handeling Snel bewerken op de miniatuur van het onderpand.
-   * Tik op de werkbalk op de elementpagina voor het onderpand op **[!UICONTROL Bewerken]** .
-   * Selecteer het element en tik op **[!UICONTROL Bewerken]** op de werkbalk.
+   * Navigeer op de pagina Sjablonen naar de map waarin u het onderpand hebt gemaakt en klik op de handeling Snel [!UICONTROL bewerken] op de miniatuur van een onderpand.
+   * Klik op de werkbalk op **[!UICONTROL Bewerken]** op de elementpagina voor het onderpand.
+   * Select the collateral and click **[!UICONTROL Edit]** from the toolbar.
    <!--![chlimage_1-108](assets/chlimage_1-313.png) -->
 
    De elementenzoeker en de teksteditor worden links op de pagina weergegeven. De teksteditor is standaard geopend.
@@ -102,17 +102,17 @@ U kunt direct nadat u het hebt gemaakt, een onderpand bewerken. U kunt de sjablo
    >
    >Zorg ervoor dat uw AEM-instantie is geïntegreerd met een InDesign-server, zodat AEM-middelen gegevens kunnen extraheren uit de InDesign-sjabloon en deze beschikbaar kunnen maken voor bewerking. Zie AEM-elementen [integreren met InDesign Server](/help/assets/indesign.md)voor meer informatie.
 
-1. Als u de tekst in een bewerkbaar veld wilt wijzigen, klikt of tikt u op het tekstveld in de lijst met bewerkbare velden en bewerkt u de tekst in het veld.
+1. Als u de tekst in een bewerkbaar veld wilt wijzigen, klikt u op het tekstveld in de lijst met bewerkbare velden en bewerkt u de tekst in het veld.
 
    ![chlimage_1-111](assets/chlimage_1-316.png)
 
    U kunt de teksteigenschappen, zoals lettertypestijl, -kleur en -grootte, bewerken met de beschikbare opties.
 
-1. Tik op **[!UICONTROL Voorvertoning]** om een voorvertoning van de tekstwijzigingen weer te geven.
+1. Klik op **[!UICONTROL Voorvertoning]** om een voorvertoning van de tekstwijzigingen weer te geven.
 
    ![chlimage_1-112](assets/chlimage_1-317.png)
 
-1. Tik op **[!UICONTROL Asset Finder]** om een afbeelding te wisselen.
+1. Als u een afbeelding wilt omwisselen, klikt u op de **[!UICONTROL Asset Finder]**.
 
    ![chlimage_1-113](assets/chlimage_1-318.png)
 
@@ -124,7 +124,7 @@ U kunt direct nadat u het hebt gemaakt, een onderpand bewerken. U kunt de sjablo
 
    ![chlimage_1-115](assets/chlimage_1-320.png)
 
-1. Tik op **[!UICONTROL Voorvertoning]** om een voorvertoning van de afbeelding weer te geven.
+1. Klik op **[!UICONTROL Voorvertoning]** om een voorvertoning van de afbeelding weer te geven.
 
    ![chlimage_1-116](assets/chlimage_1-321.png)
 
@@ -132,7 +132,7 @@ U kunt direct nadat u het hebt gemaakt, een onderpand bewerken. U kunt de sjablo
 
    ![chlimage_1-117](assets/chlimage_1-322.png)
 
-1. Tik op **[!UICONTROL Voorvertoning]** op de werkbalk om een voorvertoning van alle wijzigingen weer te geven. Klik/tik **[!UICONTROL Gereed]** om de bewerkingswijzigingen in het onderpand op te slaan.
+1. Klik op **[!UICONTROL Voorvertoning]** op de werkbalk om een voorvertoning van alle wijzigingen weer te geven. Klik op **[!UICONTROL Gereed]** om de bewerkingswijzigingen in het onderpand op te slaan.
 
    >[!NOTE]
    >
@@ -153,23 +153,25 @@ U kunt direct nadat u het hebt gemaakt, een onderpand bewerken. U kunt de sjablo
 
    ![chlimage_1-118](assets/chlimage_1-323.png)
 
-1. Klik/tik op de PDF-uitvoering in de lijst met uitvoeringen om het PDF-bestand te downloaden. Open het PDF-bestand om het onderpand te bekijken.
+1. Klik op de PDF-uitvoering in de lijst met uitvoeringen om het PDF-bestand te downloaden. Open het PDF-bestand om het onderpand te bekijken.
 
    ![chlimage_1-119](assets/chlimage_1-324.png)
 
 ## Zekerheden samenvoegen {#merge-collateral}
 
-1. Klik of tik op het AEM-logo en klik vervolgens op Middelen op de navigatiepagina.
+1. Klik in de interface Experience Manager op [!UICONTROL Middelen] op de navigatiepagina.
+
 1. Kies **[!UICONTROL Sjablonen]** in de opties.
-1. Klik op **[!UICONTROL Maken]** of tik op **[!UICONTROL Samenvoegen]** in het menu.
+
+1. Klik op **[!UICONTROL Maken]** en kies **[!UICONTROL Samenvoegen]** in het menu.
 
    ![chlimage_1-120](assets/chlimage_1-325.png)
 
-1. Tik op de pagina [!UICONTROL Sjabloon samenvoegen] op **[!UICONTROL Samenvoegen]**.
+1. Klik op de pagina [!UICONTROL Sjabloon samenvoegen] op **[!UICONTROL Samenvoegen]**.
 
    ![chlimage_1-121](assets/chlimage_1-326.png)
 
-1. Navigeer naar de locatie van de elementen die u wilt samenvoegen, klik of tik op de miniaturen van de elementen die u wilt samenvoegen om deze te selecteren.
+1. Navigeer naar de locatie van de elementen die u wilt samenvoegen en klik op de miniaturen van de elementen die u wilt samenvoegen om deze te selecteren.
 
    ![chlimage_1-122](assets/chlimage_1-327.png)
 
@@ -185,16 +187,16 @@ U kunt direct nadat u het hebt gemaakt, een onderpand bewerken. U kunt de sjablo
 
    ![chlimage_1-125](assets/chlimage_1-330.png)
 
-1. Klik/tik **[!UICONTROL daarna]** van de toolbar.
-1. Wijzig in het scherm **[!UICONTROL Voorbeeld en opnieuw rangschikken]** de sjablonen indien nodig en bekijk een voorvertoning van de selectie van de sjablonen die u wilt samenvoegen. Klik vervolgens op **[!UICONTROL Volgende]** of tik op de werkbalk.
+1. Klik op **[!UICONTROL Volgende]** op de werkbalk.
+1. Wijzig in het scherm **[!UICONTROL Voorbeeld en opnieuw rangschikken]** de sjablonen indien nodig en bekijk een voorvertoning van de selectie van de sjablonen die u wilt samenvoegen. Klik vervolgens op **[!UICONTROL Volgende]** op de werkbalk.
 
    ![chlimage_1-126](assets/chlimage_1-331.png)
 
-1. In het Configure scherm van het Malplaatje, specificeer een naam voor het onderpand. U kunt desgewenst tags opgeven die u geschikt acht. Als u de uitvoer in PDF-indeling wilt exporteren, selecteert u de optie **Acrobat (.PDF)** . Standaard wordt het onderpand geëxporteerd in de JPG- en InDesign-indeling. Klik op Miniatuur wijzigen of tik op Miniatuur **[!UICONTROL wijzigen om de weergaveminiatuur voor het uit meerdere pagina&#39;s bestaande element te wijzigen]**.
+1. In het [!UICONTROL Configure scherm van het Malplaatje] , specificeer een naam voor het onderpand. U kunt desgewenst tags opgeven die u geschikt acht. Selecteer **[!UICONTROL Acrobat (.PDF)]** als u de uitvoer in PDF-indeling wilt exporteren. Standaard wordt het onderpand geëxporteerd in de JPG- en InDesign-indeling. Als u de weergaveminiatuur voor het uit meerdere pagina&#39;s bestaande element wilt wijzigen, klikt u op **[!UICONTROL Miniatuur]** wijzigen.
 
    ![chlimage_1-127](assets/chlimage_1-332.png)
 
-1. Klik op **[!UICONTROL Opslaan]** of tik op Opslaan en klik vervolgens op **[!UICONTROL OK]** in het dialoogvenster om het dialoogvenster te sluiten. Het uit meerdere pagina&#39;s bestaande element wordt gemaakt in de map waarmee u bent begonnen.
+1. Klik op **[!UICONTROL Opslaan]** en vervolgens op **[!UICONTROL OK]** in het dialoogvenster om het dialoogvenster te sluiten. Het uit meerdere pagina&#39;s bestaande element wordt gemaakt in de map waarmee u bent begonnen.
 
    >[!NOTE]
    >

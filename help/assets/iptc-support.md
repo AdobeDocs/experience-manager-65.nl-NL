@@ -3,7 +3,7 @@ title: Ondersteuning voor IPTC-metagegevens
 description: Leer hoe Adobe Experience Manager (AEM) Middelen de IPTC-metagegevens, Creative Classificaties en trefwoorden ondersteunt die via Adobe Bridge en andere Creative Apps aan middelen zijn toegevoegd.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
@@ -19,19 +19,19 @@ In het standaardmetagegevensschema voor elementen zijn nu de IPTC Core- en IPTC-
 De pagina Eigenschappen voor elementen bevat nu aparte tabbladen waarmee de metagegevens voor IPTC Core- en IPTC-extensies in bewerkbare velden worden weergegeven.
 
 1. Selecteer een afbeelding in de gebruikersinterface Elementen.
-1. Tik op **[!UICONTROL Eigenschappen]** op de werkbalk.
-1. Tik op het tabblad **[!UICONTROL IPTC]** om de IPTC-metagegevens voor het element weer te geven.
+1. Klik op **[!UICONTROL Eigenschappen]** op de werkbalk.
+1. Klik op het tabblad **[!UICONTROL IPTC]** om de IPTC-metagegevens voor het element weer te geven.
 1. Bewerk desgewenst de IPTC-metagegevenseigenschappen.
 
    ![iptc_tab](assets/keywords-in-iptc-tab.png)
 
-1. Klik of tik op het tabblad **[!UICONTROL IPTC-extensie]** om de metagegevens voor IPTC-extensie voor het element weer te geven.
+1. Click the **[!UICONTROL IPTC Extension]** tab to view IPTC Extension metadata for the asset.
 1. Bewerk desgewenst de eigenschappen van de IPTC-metagegevens voor extensies.
-1. Tik/klik op **[!UICONTROL Opslaan en sluiten]** om de wijzigingen op te slaan.
+1. Klik op **[!UICONTROL Opslaan en sluiten]** om de wijzigingen op te slaan.
 
 ## Ondersteuning voor creatieve beoordelingen {#creative-rating-support}
 
-Naast het weergeven van individuele gebruikersbeoordelingen en het samenvoegen van beoordelingen, wordt op de pagina Eigenschappen nu de classificaties weergegeven die zijn toegewezen aan middelen via Adobe Bridge en andere Creative Apps
+Op de pagina Eigenschappen worden niet alleen afzonderlijke gebruikersbeoordelingen en statistische beoordelingen weergegeven, maar ook de beoordelingen die via Adobe Bridge en andere Creative Apps aan middelen zijn toegewezen
 
 Deze classificaties zijn beschikbaar in de sectie **[!UICONTROL Creative Rating]** op het tabblad **[!UICONTROL Geavanceerd]** .
 

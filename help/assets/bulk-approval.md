@@ -3,7 +3,7 @@ title: Map-assets en verzamelingen controleren
 description: Stel revisieworkflows in voor elementen in een map of verzameling en deel deze met revisoren of creatieve partners om feedback te zoeken.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
+source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ---
 
@@ -23,7 +23,7 @@ Nadat de controleur de controle heeft voltooid (activa goedkeurt of verwerpt), o
 ## Een revisietaak voor mappen maken {#creating-a-review-task-for-folders}
 
 1. Selecteer in de gebruikersinterface Middelen de map waarvoor u een revisietaak wilt maken.
-1. Tik op de werkbalk op Revisietaak **** maken om de pagina **[!UICONTROL Revisietaak]** te openen. If you cannot see the option in the toolbar, tap/click **[!UICONTROL More]** and then select the option.
+1. Klik op de werkbalk op Revisietaak **** maken om de pagina **[!UICONTROL Revisietaak]** te openen. If you cannot see the option in the toolbar, click **[!UICONTROL More]** and then select the option.
 
    ![chlimage_1-403](assets/chlimage_1-403.png)
 
@@ -47,17 +47,17 @@ Nadat de controleur de controle heeft voltooid (activa goedkeurt of verwerpt), o
 
    ![review_name](assets/review_name.png)
 
-1. Tap/click **[!UICONTROL Submit]**, and then tap/click **[!UICONTROL Done]** to close the confirmation message. Er wordt een bericht voor de nieuwe taak naar de goedkeurder verzonden.
-1. Meld u aan bij AEM Assets als fiatteur en navigeer naar de interface Middelen. Tik op **[!UICONTROL Meldingen]** en selecteer de revisietaak in de lijst om elementen goed te keuren.
+1. Klik op **[!UICONTROL Verzenden]** en vervolgens op **[!UICONTROL Gereed]** om het bevestigingsbericht te sluiten. Er wordt een bericht voor de nieuwe taak naar de goedkeurder verzonden.
+1. Meld u aan bij AEM Assets als fiatteur en navigeer naar de interface Middelen. Als u elementen wilt goedkeuren, klikt u op **[!UICONTROL Meldingen]** en selecteert u de revisietaak in de lijst.
 
    ![Melding van activa](assets/aemAssetsNotification.png)
 
-1. In the **[!UICONTROL Review Task]** page, examine the details of the review task, and then tap/click **[!UICONTROL Review]**.
-1. Selecteer op de pagina **[!UICONTROL Revisietaak]** de gewenste middelen en tik op **[!UICONTROL Goedkeuren/Afwijzen]** om deze goed te keuren of af te wijzen.
+1. In the **[!UICONTROL Review Task]** page, examine the details of the review task, and then click **[!UICONTROL Review]**.
+1. Selecteer elementen op de pagina **[!UICONTROL Revisietaak]** en klik op **[!UICONTROL Goedkeuren/Afwijzen]** om deze goed te keuren of af te wijzen.
 
    ![review_task](assets/review_task.png)
 
-1. Tik op **[!UICONTROL Voltooien]** op de werkbalk. Voer in het dialoogvenster een opmerking in en tik op **[!UICONTROL Voltooien]** of klik op Bevestigen.
+1. Klik op **[!UICONTROL Voltooien]** op de werkbalk. Voer in het dialoogvenster een opmerking in en klik op **[!UICONTROL Voltooien]** om te bevestigen.
 1. Navigeer naar de gebruikersinterface Elementen en open de map. De pictogrammen voor de goedkeuringsstatus van de elementen worden weergegeven in de kaartweergave en de lijstweergave.
 
    **Kaartweergave**
@@ -71,7 +71,7 @@ Nadat de controleur de controle heeft voltooid (activa goedkeurt of verwerpt), o
 ## Een revisietaak voor verzamelingen maken {#creating-a-review-task-for-collections}
 
 1. Selecteer op de pagina Verzamelingen de verzameling waarvoor u een revisietaak wilt maken.
-1. Tik op de werkbalk op Revisietaak **** maken om de pagina **[!UICONTROL Revisietaak]** te openen. Als de optie niet op de werkbalk wordt weergegeven, tikt u op **[!UICONTROL Meer]** en selecteert u de optie.
+1. Klik op de werkbalk op Revisietaak **** maken om de pagina **[!UICONTROL Revisietaak]** te openen. Als de optie niet wordt weergegeven op de werkbalk, klikt u op **[!UICONTROL Meer]** en selecteert u de optie.
 
    ![chlimage_1-405](assets/chlimage_1-405.png)
 
@@ -91,14 +91,14 @@ Nadat de controleur de controle heeft voltooid (activa goedkeurt of verwerpt), o
 
    ![task_details-collection](assets/task_details-collection.png)
 
-1. Tap/click **[!UICONTROL Submit]**, and then tap/click **[!UICONTROL Done]** to close the confirmation message. Er wordt een bericht voor de nieuwe taak naar de goedkeurder verzonden.
-1. Meld u aan bij AEM Assets als fiatteur en navigeer naar de middelenconsole. Tik op **[!UICONTROL Meldingen]** en selecteer de revisietaak in de lijst om elementen goed te keuren.
-1. In the **[!UICONTROL Review Task]** page, examine the details of the review task, and then tap/click **[!UICONTROL Review]**.
-1. Alle elementen in de verzameling zijn zichtbaar op de overzichtspagina. Selecteer de elementen en tik op **[!UICONTROL Goedkeuren/Afwijzen]** om de elementen goed te keuren of af te wijzen.
+1. Klik op **[!UICONTROL Verzenden]** en vervolgens op **[!UICONTROL Gereed]** om het bevestigingsbericht te sluiten. Er wordt een bericht voor de nieuwe taak naar de goedkeurder verzonden.
+1. Meld u aan bij AEM Assets als fiatteur en navigeer naar de middelenconsole. Als u elementen wilt goedkeuren, klikt u op **[!UICONTROL Meldingen]** en selecteert u de revisietaak in de lijst.
+1. In the **[!UICONTROL Review Task]** page, examine the details of the review task, and then click **[!UICONTROL Review]**.
+1. Alle elementen in de verzameling zijn zichtbaar op de overzichtspagina. Selecteer de elementen en klik op **[!UICONTROL Goedkeuren/Afwijzen]** om de elementen goed te keuren of af te wijzen.
 
    ![review_task_collection](assets/review_task_collection.png)
 
-1. Tik op **[!UICONTROL Voltooien]** op de werkbalk. Voer in het dialoogvenster een opmerking in en tik op **[!UICONTROL Voltooien]** of klik op Bevestigen.
+1. Klik op **[!UICONTROL Voltooien]** op de werkbalk. Voer in het dialoogvenster een opmerking in en klik op **[!UICONTROL Voltooien]** om te bevestigen.
 1. Navigeer naar de verzamelingsconsole en open de verzameling. De pictogrammen voor de goedkeuringsstatus van de elementen worden weergegeven in zowel de Kaart- als lijstweergave.
 
    ![collection_reviewStatusCard, weergave](assets/collection_reviewstatuscardview.png)

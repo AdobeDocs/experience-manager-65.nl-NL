@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: development-tools
 discoiquuid: ac9fe461-63e7-442b-bd1c-eb9576ef55aa
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -31,9 +31,11 @@ Er zijn echter situaties waarin een proces niet synchroon kan worden voltooid va
 
    Deze soorten processen zijn gekend als langlevende processen. Een proces van lange duur wordt asynchroon uitgevoerd, toestaand voor systemen om als middelen toelaten in wisselwerking te staan en het volgen van en het toezicht op de verrichting toe te staan. Wanneer een proces met een lange levensduur wordt aangeroepen, maakt AEM Forms een waarde voor de aanroepings-id als onderdeel van een record die de status van het proces met een lange levensduur bijhoudt. De record wordt opgeslagen in de AEM Forms-database. U kunt langlevende procesverslagen zuiveren wanneer zij niet meer worden vereist.
 
-   **Opmerking**: AEM Forms maakt geen record wanneer een kortstondig proces wordt aangeroepen.
+>[!NOTE]
+>
+>AEM Forms maakt geen record wanneer een kortstondig proces wordt aangeroepen.
 
-   Met de waarde voor de oproepings-id kunt u de status van het langlevende proces volgen. U kunt bijvoorbeeld de waarde voor de identificatie van de procesaanroep gebruiken om bewerkingen van Process Manager uit te voeren, zoals het beëindigen van een actieve procesinstantie.
+Met de waarde voor de oproepings-id kunt u de status van het langlevende proces volgen. U kunt bijvoorbeeld de waarde voor de identificatie van de procesaanroep gebruiken om bewerkingen van Process Manager uit te voeren, zoals het beëindigen van een actieve procesinstantie.
 
 **Voorbeeld van een kortlopend proces**
 

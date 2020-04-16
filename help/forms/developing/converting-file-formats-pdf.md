@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -25,17 +25,23 @@ De service PDF genereren gebruikt native toepassingen om de volgende bestandsind
 
 * Microsoft Office 2003 en 2007 voor de conversie van DOC, DOCX, RTF, TXT, XLS, XLSX, PPT, PPTX, VSD, MPP, MPPX, XPS en PUB (alleen Windows)
 
-   **Opmerking**: Acrobat® 9.2 of hoger is vereist om de Microsoft XPS-indeling naar PDF te converteren.*
+>[!NOTE]
+>
+>Acrobat® 9.2 of hoger is vereist voor het converteren van de Microsoft XPS-indeling naar PDF.
 
 * Autodesk AutoCAD 2005, 2006, 2007, 2008 en 2009 om DWF, DWG en DXW om te zetten (alleen in het Engels)
 * Corel WordPerfect 12 en X4 voor conversie van WPD, QPW, SHW (alleen in het Engels)
 * OpenOffice 2.0, 2.4, 3.0.1 en 3.1 voor het converteren van ODT, ODS, ODP, ODF, ODF, SXW, SXC, SXD, DOC, DOCX, RTF, TXT, XLS, XLSX, PPT, PPTX, VSD, MPP, MPPX en PUB
 
-   ***Opmerking **: De service PDF genereren biedt geen ondersteuning voor de 64-bits versies van OpenOffice.*
+>[!NOTE]
+>
+>De service PDF genereren biedt geen ondersteuning voor de 64-bits versies van OpenOffice.
 
 * Adobe Photoshop® CS2 voor het omzetten van PSD (alleen Windows)
 
-   ***Opmerking**: Photoshop CS3 en CS4 worden niet ondersteund omdat deze geen ondersteuning bieden voor Windows Server 2003 of Windows Server 2008. *
+>[!NOTE]
+>
+>Photoshop CS3 en CS4 worden niet ondersteund omdat deze geen ondersteuning bieden voor Windows Server 2003 of Windows Server 2008.
 
 * Adobe FrameMaker® 7.2 en 8 om FM (Vensters slechts) om te zetten
 * Adobe PageMaker® 7.0 om PMD, PM6, P65, en PM (Vensters slechts) om te zetten

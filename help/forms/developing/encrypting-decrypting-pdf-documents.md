@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 5e4bda3a-5648-4c0f-b2f8-bdbebb88f537
 translation-type: tm+mt
-source-git-commit: 413af4ef9bc3652e05da78d622183bcf20a8bee7
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -30,7 +30,9 @@ U kunt deze taken uitvoeren met behulp van de coderingsservice:
 * Ontgrendel het PDF-document zodat andere servicebewerkingen kunnen worden uitgevoerd. Nadat bijvoorbeeld een PDF-document met wachtwoordcodering is ontgrendeld, kunt u er een digitale handtekening op toepassen. (Zie Gecodeerde PDF-documenten [ontgrendelen](encrypting-decrypting-pdf-documents.md#unlocking-encrypted-pdf-documents).)
 * Bepaal het versleutelingstype van een beveiligd PDF-document. (Zie [Coderingstype](encrypting-decrypting-pdf-documents.md#determining-encryption-type)bepalen.)
 
-   ***Opmerking **: Voor meer informatie over de dienst van de Encryptie, zie de Verwijzing van de[Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.*
+>[!NOTE]
+>
+>Voor meer informatie over de dienst van de Encryptie, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
 
 ## PDF-documenten versleutelen met een wachtwoord {#encrypting-pdf-documents-with-a-password}
 
@@ -42,7 +44,7 @@ Wanneer u een PDF-document versleutelt met een wachtwoord, moet de gebruiker het
 
 >[!NOTE]
 >
-> Voor meer informatie over de dienst van de Encryptie, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Voor meer informatie over de dienst van de Encryptie, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
 
 ### Overzicht van de stappen {#summary-of-steps}
 
@@ -248,7 +250,7 @@ Een certificaat met een openbare sleutel bevat de openbare sleutel van een gebru
 
 >[!NOTE]
 >
-> Voor meer informatie over de dienst van de Encryptie, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Voor meer informatie over de dienst van de Encryptie, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
 
 ### Overzicht van de stappen {#summary_of_steps-1}
 
@@ -458,7 +460,7 @@ Op certificaten gebaseerde versleuteling kan uit een PDF-document worden verwijd
 
 >[!NOTE]
 >
-> Voor meer informatie over de dienst van de Encryptie, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Voor meer informatie over de dienst van de Encryptie, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
 
 ### Overzicht van de stappen {#summary_of_steps-2}
 
@@ -617,7 +619,7 @@ Op wachtwoorden gebaseerde versleuteling kan uit een PDF-document worden verwijd
 
 >[!NOTE]
 >
-> Voor meer informatie over de dienst van de Encryptie, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Voor meer informatie over de dienst van de Encryptie, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
 
 ### Overzicht van de stappen {#summary_of_steps-3}
 
@@ -762,7 +764,7 @@ Een PDF-document met een wachtwoord of versleuteling met een certificaat moet wo
 
 >[!NOTE]
 >
-> Voor meer informatie over de dienst van de Encryptie, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Voor meer informatie over de dienst van de Encryptie, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
 
 ### Overzicht van de stappen {#summary_of_steps-4}
 
@@ -936,7 +938,7 @@ Een PDF-document kan worden beveiligd door de volgende coderingstypen:
 
 >[!NOTE]
 >
-> Voor meer informatie over de dienst van de Encryptie, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Voor meer informatie over de dienst van de Encryptie, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
 
 ### Overzicht van de stappen {#summary_of_steps-5}
 

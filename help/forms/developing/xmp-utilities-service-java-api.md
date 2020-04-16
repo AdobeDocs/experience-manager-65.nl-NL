@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 1b229ddf-9350-40b6-8056-dcbe0c5afd5b
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -25,7 +25,9 @@ De volgende snelstarthandleidingen zijn beschikbaar voor de service XMP Utilitie
 
 De verrichtingen van de Vormen van AEM kunnen worden uitgevoerd gebruikend sterk-getypte API van Vormen AEM en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
 
-***Opmerking **: De snelle aanvang die in Programmering met vormen wordt gevestigd AEM is gebaseerd op de server van Vormen als u een ander werkend systeem, zoals UNIX gebruikt, vervangt vensters-specifieke wegen door wegen die door het toepasselijke werkende systeem worden gesteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. (Zie Verbindingseigenschappen[instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
+>[!NOTE]
+>
+>De snelle aanvang die in Programmering met vormen wordt gevestigd AEM is gebaseerd op de server van Vormen als u een ander werkend systeem, zoals UNIX gebruikt, vervangt vensters-specifieke wegen door wegen die door het toepasselijke werkende systeem worden gesteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Snel starten (SOAP-modus): XMP-metagegevens exporteren met de Java API {#quick-start-soap-mode-exporting-xmp-metadata-using-the-java-api}
 

@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 42de04bf-25e4-4478-a411-38671ed871ae
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -29,7 +29,7 @@ Met de service Handtekening kunt u de beveiliging en privacy beschermen van Adob
 
 Voor sommige bewerkingen van de handtekeningservice moet u de naam opgeven van het handtekeningveld waarop een bewerking wordt uitgevoerd. Als u bijvoorbeeld een PDF-document ondertekent, geeft u de naam op van het handtekeningveld dat u wilt ondertekenen. Stel dat de volledige naam van een handtekeningveld is `form1[0].Form1[0].SignatureField1[0]`. U kunt opgeven `SignatureField1[0]` in plaats van `form1[0].Form1[0].SignatureField1[0]`.
 
-Soms ondertekent de handtekeningservice door een conflict (of voert een andere bewerking uit waarvoor de naam van het handtekeningveld vereist is) het verkeerde veld. Dit conflict is het resultaat van de naam die op twee of meer plaatsen in hetzelfde PDF-document wordt `SignatureField1[0]` weergegeven. Neem bijvoorbeeld een PDF-document dat twee handtekeningvelden bevat met de naam `form1[0].Form1[0].SignatureField1[0]` en `form1[0].Form1[0].SubForm1[0].SignatureField1[0]` de naam die u opgeeft `SignatureField1[0]`. In dit geval ondertekent de ondertekeningsservice het eerste handtekeningveld dat wordt gevonden terwijl alle handtekeningvelden in het document worden doorlopen.
+Soms ondertekent de handtekeningservice door een conflict (of voert een andere bewerking uit waarvoor de naam van het handtekeningveld is vereist) het verkeerde veld. Dit conflict is het resultaat van de naam die op twee of meer plaatsen in hetzelfde PDF-document wordt `SignatureField1[0]` weergegeven. Neem bijvoorbeeld een PDF-document dat twee handtekeningvelden bevat met de naam `form1[0].Form1[0].SignatureField1[0]` en `form1[0].Form1[0].SubForm1[0].SignatureField1[0]` de naam die u opgeeft `SignatureField1[0]`. In dit geval ondertekent de ondertekeningsservice het eerste handtekeningveld dat wordt gevonden terwijl alle handtekeningvelden in het document worden doorlopen.
 
 Als er zich meerdere handtekeningvelden in een PDF-document bevinden, is het raadzaam de volledige namen van de handtekeningvelden op te geven. Dat wil zeggen, specificeer `form1[0].Form1[0].SignatureField1[0]`in plaats van `SignatureField1[0]`.
 
@@ -44,7 +44,9 @@ U kunt deze taken uitvoeren met de service Handtekening:
 * Valideer alle digitale handtekeningen in een PDF-document. (Zie Meerdere digitale handtekeningen [verifiëren](digitally-signing-certifying-documents.md#verifying-digital-signatures).)
 * Een digitale handtekening verwijderen uit een handtekeningveld. (Zie Digitale handtekeningen [verwijderen](digitally-signing-certifying-documents.md#removing-digital-signatures).)
 
-   ***Opmerking **: Voor meer informatie over de dienst van de Handtekening, zie de Verwijzing van de[Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.*
+>[!NOTE]
+>
+> Voor meer informatie over de dienst van de Handtekening, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
 
 ## Handtekeningvelden toevoegen {#adding-signature-fields}
 
@@ -382,7 +384,7 @@ Zie [Inclusief LiveCycle Java-bibliotheekbestanden](/help/forms/developing/invok
 
 Voordat u programmatically een verrichting van de dienst van de Handtekening kunt uitvoeren, moet u een cliënt van de dienst van de Handtekening tot stand brengen.
 
-**Hiermee wordt het PDF-document opgehaald dat het handtekeningveld bevat dat moet worden gewijzigd**
+**Het PDF-document ophalen dat het handtekeningveld bevat dat moet worden gewijzigd**
 
 Hiermee wordt een PDF-document opgehaald dat het handtekeningveld bevat dat u wilt wijzigen.
 
@@ -398,11 +400,11 @@ U kunt de volgende zaadwaardewoordenboekwaarden instellen:
 * **Filter**: Hiermee wordt het filter opgegeven dat wordt gebruikt met het handtekeningveld. U kunt bijvoorbeeld het filter Adobe.PPKLite gebruiken. (Zie [PDF-referentie](https://www.adobe.com/devnet/acrobat/pdfs/pdf_reference_1-7.pdf).)
 * **Vlagopties**: Hiermee geeft u de vlagwaarden op die aan dit handtekeningveld zijn gekoppeld. De waarde 1 houdt in dat een ondertekenaar alleen de opgegeven waarden voor het item moet gebruiken. De waarde 0 houdt in dat andere waarden zijn toegestaan. Hier zijn de posities van het Beetje:
 
-   * **** 1(Filter): De handtekening-handler die moet worden gebruikt om het handtekeningveld te ondertekenen
-   * **** 2 (SubFilter): Een array met namen die aangeven welke coderingen acceptabel zijn voor ondertekening
+   * **1(Filter):** De handtekening-handler die moet worden gebruikt om het handtekeningveld te ondertekenen
+   * **2 (SubFilter):** Een array met namen die aangeven welke coderingen acceptabel zijn voor ondertekening
    * **3 (V)**: Het minimaal vereiste versienummer van de handtekening-handler dat moet worden gebruikt om het handtekeningveld te ondertekenen
-   * **** 4 (Redenen): Een array met tekenreeksen die mogelijke redenen voor het ondertekenen van een document opgeven
-   * **** 5 (PDFLegalWarnings): Een array van tekenreeksen die mogelijke juridische attestaties opgeven
+   * **4 (Redenen):** Een array met tekenreeksen die mogelijke redenen voor het ondertekenen van een document opgeven
+   * **5 (PDFLegalWarnings):** Een array van tekenreeksen die mogelijke juridische attestaties opgeven
 
 * **Wettelijke verklaringen**: Wanneer een document wordt gecertificeerd, wordt het automatisch gescand op specifieke typen inhoud die de zichtbare inhoud van een document dubbelzinnig of misleidend kunnen maken. Een annotatie kan bijvoorbeeld tekst die belangrijk is voor het begrijpen van wat wordt gecertificeerd, onduidelijk maken. Het scanproces genereert waarschuwingen die de aanwezigheid van dit type inhoud aangeven. Het verstrekt ook een extra verklaring van de inhoud die waarschuwingen kan hebben veroorzaakt.
 * **Machtigingen**: Hiermee geeft u machtigingen op die voor een PDF-document kunnen worden gebruikt zonder dat de handtekening ongeldig wordt gemaakt.
@@ -441,7 +443,7 @@ Wijzig een handtekeningveld met de handtekening-API (Java):
    * Maak een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
    * Maak een `SignatureServiceClient` object door de constructor ervan te gebruiken en het `ServiceClientFactory` object door te geven.
 
-1. Hiermee wordt het PDF-document opgehaald dat het handtekeningveld bevat dat moet worden gewijzigd
+1. Het PDF-document ophalen dat het handtekeningveld bevat dat moet worden gewijzigd
 
    * Maak een `java.io.FileInputStream` object dat staat voor het PDF-document dat het handtekeningveld bevat dat u wilt wijzigen met de constructor ervan en geef een tekenreekswaarde door die de locatie van het PDF-document aangeeft.
    * Maak een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en het `java.io.FileInputStream` object door te geven.
@@ -498,7 +500,7 @@ Wijzig een handtekeningveld met de handtekening-API (webservice):
       * Wijs de constante waarde toe `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Wijs de constante waarde toe `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode`.
 
-1. Hiermee wordt het PDF-document opgehaald dat het handtekeningveld bevat dat moet worden gewijzigd
+1. Het PDF-document ophalen dat het handtekeningveld bevat dat moet worden gewijzigd
 
    * Maak een `BLOB` object met de constructor ervan. Het `BLOB` object wordt gebruikt om het PDF-document op te slaan dat het handtekeningveld bevat dat moet worden gewijzigd.
    * Maak een `System.IO.FileStream` object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het PDF-document en de modus waarin het bestand moet worden geopend, vertegenwoordigt.
@@ -640,7 +642,7 @@ U kunt ook opgeven of een intrekkingscontrole moet worden uitgevoerd die bepaalt
 
 * **NoCheck**: Intrekkingscontrole niet uitvoeren.
 * **BesteInspanning**: Probeer altijd te controleren op intrekking van alle certificaten in de keten. Als er problemen optreden bij de controle, wordt de intrekking als geldig beschouwd. Als er een fout optreedt, moet u ervan uitgaan dat het certificaat niet is ingetrokken.
-* **** CheckIfAvailable: Controleer of alle certificaten in de keten zijn ingetrokken als er informatie over intrekking beschikbaar is. Als er problemen optreden bij de controle, wordt aangenomen dat de intrekking ongeldig is. Als er een fout optreedt, gaat u ervan uit dat het certificaat is ingetrokken en ongeldig is. (Dit is de standaardwaarde.)
+* **CheckIfAvailable:** Controleer of alle certificaten in de keten zijn ingetrokken als er informatie over intrekking beschikbaar is. Als er problemen optreden bij de controle, wordt aangenomen dat de intrekking ongeldig is. Als er een fout optreedt, gaat u ervan uit dat het certificaat is ingetrokken en ongeldig is. (Dit is de standaardwaarde.)
 * **AltijdControleren**: Controleren op intrekking van alle certificaten in de keten. Als er geen intrekkingsinformatie aanwezig is in een certificaat, wordt aangenomen dat de intrekking ongeldig is.
 
 Als u de intrekkingscontrole op een certificaat wilt uitvoeren, kunt u een URL naar een server met een certificaatintrekkingslijst (CRL) opgeven met een `CRLOptionSpec` object. Als u echter een intrekkingscontrole wilt uitvoeren en u geen URL opgeeft naar een CRL-server, verkrijgt de ondertekeningsservice de URL van het certificaat.
@@ -811,7 +813,7 @@ Het resultaat is een digitaal ondertekend interactief PDF-formulier. Wanneer u e
 
 >[!NOTE]
 >
->Voordat u een interactief formulier digitaal kunt ondertekenen, moet u ervoor zorgen dat u het certificaat aan AEM Forms toevoegt. Een certificaat wordt toegevoegd gebruikend beleidsconsole of programmatically gebruikend de Manager API van het Vertrouwen. (Zie [Referenties importeren met de Betrouwbaarheidsbeheer-API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api).)
+>Voordat u een interactief formulier digitaal kunt ondertekenen, moet u ervoor zorgen dat u het certificaat aan AEM-formulieren toevoegt. Een certificaat wordt toegevoegd gebruikend beleidsconsole of programmatically gebruikend de Manager API van het Vertrouwen. (Zie [Referenties importeren met de Betrouwbaarheidsbeheer-API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api).)
 
 Als u de API voor Forms Service gebruikt, stelt u de optie `GenerateServerAppearance` bij uitvoering in op `true`. Deze optie bij uitvoering zorgt ervoor dat de weergave van het formulier dat op de server wordt gegenereerd, geldig blijft wanneer het wordt geopend in Acrobat of Adobe Reader. Het wordt aanbevolen deze uitvoeringsoptie in te stellen wanneer u een interactief formulier genereert ter ondertekening met de API voor formulieren.
 
@@ -1625,7 +1627,7 @@ Verifieer meerdere digitale handtekeningen met de API voor handtekeningenservice
 1. Alle handtekeningen doorlopen
 
    * Doorloop alle handtekeningen door de `PDFDocumentVerificationInfo` methode van het `getVerificationInfos` object aan te roepen. Deze methode retourneert een `java.util.List` object waarbij elk element een `PDFSignatureVerificationInfo` object is. Gebruik een `java.util.Iterator` object om de lijst met handtekeningen te doorlopen.
-   * Met behulp van het `PDFSignatureVerificationInfo` object kunt u taken uitvoeren zoals het bepalen van de status van de handtekening door de `PDFSignatureVerificationInfo` methode van het `getStatus` object aan te roepen. Deze methode retourneert een `SignatureStatus` object waarvan het statische gegevenslid u op de hoogte stelt van de status van de handtekening. Als de handtekening bijvoorbeeld onbekend is, wordt deze methode geretourneerd `SignatureStatus.DocumentSignatureUnknown`.
+   * Met behulp van het `PDFSignatureVerificationInfo` object kunt u taken uitvoeren, zoals het bepalen van de status van de handtekening door de `PDFSignatureVerificationInfo` methode van het `getStatus` object aan te roepen. Deze methode retourneert een `SignatureStatus` object waarvan het statische gegevenslid u op de hoogte stelt van de status van de handtekening. Als de handtekening bijvoorbeeld onbekend is, wordt deze methode geretourneerd `SignatureStatus.DocumentSignatureUnknown`.
 
 **Zie ook**
 
@@ -1706,7 +1708,7 @@ Digitale handtekeningen moeten uit een handtekeningveld worden verwijderd voorda
 
 >[!NOTE]
 >
-> Voor meer informatie over de dienst van de Handtekening, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Voor meer informatie over de dienst van de Handtekening, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
 
 ### Overzicht van de stappen {#summary_of_steps-8}
 

@@ -11,7 +11,7 @@ topic-tags: interactive-communications
 discoiquuid: acb61d37-cd22-422e-bbf3-a2979b13ad41
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a326e508a781b3afaba8b5e371aa862a30536740
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -22,7 +22,7 @@ Interactieve communicatie bevat eigenschappen die automatisch worden geconfigure
 
 Open de pagina Configuratie webconsole van **Adobe Experience Manager** met de volgende URL:
 
-`https://&lt;server&gt;:&lt;port&gt;/&lt;contextPath&gt;/system/console/configMgr`
+`https:/[server]:[port]/<contextPath>/system/console/configMgr`
 
 De configuratie-eigenschappen omvatten:
 
@@ -60,19 +60,19 @@ Tik op de **pagina Configuratie** van de webconsole van Adobe Experience Manager
    <td>Inspringing</td> 
    <td>De breedte van één inspringingseenheid die wordt toegepast op tekst in documentfragmenten van de lijst.</td> 
    <td>12.7mm</td> 
-   <td> Getal</td> 
+   <td>Getal</td> 
   </tr> 
   <tr> 
    <td>Roman Numbers Minimum Width</td> 
    <td>Minimumbreedte die moet worden toegepast op het opsommingsteken of nummerveld bij gebruik van Romeinse nummers in documentfragmenten van de lijst. </td> 
    <td>12.7mm</td> 
-   <td> Getal</td> 
+   <td>Getal</td> 
   </tr> 
   <tr> 
    <td>Minimumbreedte aantal</td> 
    <td>Minimumbreedte die op het opsommingsteken of nummerveld moet worden toegepast wanneer u genummerde lijsten gebruikt, met uitzondering van Romeinse nummers in documentfragmenten van de lijst.</td> 
    <td>8.0mm</td> 
-   <td> Getal</td> 
+   <td>Getal</td> 
   </tr> 
  </tbody> 
 </table>
@@ -116,8 +116,8 @@ Tik op de pagina Configuratie **van de webconsole van** **** Adobe Experience Ma
 
 | Eigenschap | Beschrijving | Standaard | Acceptabele waarden |
 |---|---|---|---|
-| Tijdelijke aanduiding tonen | Schakel het selectievakje in om de weergave van plaatsaanduidingen in te schakelen voor velden die zijn opgenomen in adaptieve formulieren en interactieve communicatie. |  Geselecteerd | Niet van toepassing |
-| Maximum aantal cacheitems | Stel het maximumaantal adaptieve formulieren en interactieve communicatie in dat kan worden opgehaald met behulp van het cachegeheugen. | 100 |  Getal |
+| Tijdelijke aanduiding tonen | Schakel het selectievakje in om de weergave van plaatsaanduidingen in te schakelen voor velden die zijn opgenomen in adaptieve formulieren en interactieve communicatie. | Geselecteerd | Niet van toepassing |
+| Maximum aantal cacheitems | Stel het maximumaantal adaptieve formulieren en interactieve communicatie in dat kan worden opgehaald met behulp van het cachegeheugen. | 100 | Getal |
 | Bestandsnaam uniek maken | Schakel het selectievakje in als u unieke namen wilt gebruiken voor bestanden die als bijlagen zijn opgenomen in Adaptieve formulieren en interactieve communicatie. | Niet geselecteerd | Niet van toepassing |
 
 ## Adaptieve vorm en interactieve communicatie webkanaalthemaconfiguratie {#adaptive-form-and-interactive-communication-web-channel-theme-configuration}

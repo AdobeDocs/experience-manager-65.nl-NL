@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 0e6e7850-6137-42c5-b8e2-d4e352fddae2
 translation-type: tm+mt
-source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -423,7 +423,7 @@ Ervan uitgaande dat u een upgrade uitvoert naar AEM Forms. Als u een Java-toepas
 
 U stelt verbindingseigenschappen in om AEM Forms aan te roepen wanneer u de Java API gebruikt. Geef bij het instellen van eigenschappen voor verbindingen op of services extern of lokaal moeten worden aangeroepen en geef ook de verbindingsmodus en verificatiewaarden op. De waarden van de authentificatie worden vereist als de dienstveiligheid wordt toegelaten. Nochtans, als de dienstveiligheid gehandicapt is, is het niet noodzakelijk om authentificatiewaarden te specificeren.
 
-De verbindingsmodus kan SOAP- of EJB-modus zijn. De wijze EJB gebruikt het protocol RMI/IIOP, en de prestaties van de wijze EJB zijn beter dan de prestaties van de wijze van de ZEEP. De wijze van de ZEEP wordt gebruikt om een J2EE afhankelijkheid van de toepassingsserver te elimineren of wanneer een firewall tussen Vormen AEM en de cliënttoepassing wordt gevestigd. De wijze van de ZEEP gebruikt het HTTPS protocol als onderliggend vervoer en kan over firewallgrenzen communiceren. Als noch een J2EE-toepassingsserverafhankelijkheid noch een firewall een probleem is, wordt aanbevolen de EJB-modus te gebruiken.
+De verbindingsmodus kan SOAP- of EJB-modus zijn. De wijze EJB gebruikt het protocol RMI/IIOP, en de prestaties van de wijze EJB zijn beter dan de prestaties van de wijze van de ZEEP. De wijze van de ZEEP wordt gebruikt om een J2EE afhankelijkheid van de toepassingsserver te elimineren of wanneer een firewall tussen Vormen AEM en de cliënttoepassing wordt gevestigd. De wijze van de ZEEP gebruikt het HTTPS protocol als onderliggend vervoer en kan over firewallgrenzen communiceren. Als noch een J2EE-toepassingsserverafhankelijkheid, noch een firewall een probleem is, wordt u aangeraden de EJB-modus te gebruiken.
 
 Als u een AEM Forms-service wilt aanroepen, stelt u de volgende verbindingseigenschappen in:
 
@@ -444,7 +444,9 @@ Als u een AEM Forms-service wilt aanroepen, stelt u de volgende verbindingseigen
    * Wanneer u deze verbindingseigenschap instelt op `WebLogic`, wordt de `java.naming.factory.initial` waarde ingesteld op `weblogic.jndi.WLInitialContextFactory`.
    * Als u deze eigenschap voor verbinding instelt op `JBoss`, wordt de `java.naming.factory.initial` waarde ingesteld op `org.jnp.interfaces.NamingContextFactory`.
    * U kunt de `java.naming.factory.initial` eigenschap instellen op een waarde die aan uw vereisten voldoet als u de standaardwaarden niet wilt gebruiken.
-   ***Opmerking**: In plaats van een tekenreeks te gebruiken om de `DSC_SERVER_TYPE` eigenschap connection in te stellen, kunt u een statisch lid van de `ServiceClientFactoryProperties` klasse gebruiken. De volgende waarden kunnen worden gebruikt: `ServiceClientFactoryProperties.DSC_WEBSPHERE_SERVER_TYPE`, `ServiceClientFactoryProperties.DSC_WEBLOGIC_SERVER_TYPE`, of `ServiceClientFactoryProperties.DSC_JBOSS_SERVER_TYPE`.
+   >[!NOTE]
+   >
+   >In plaats van een tekenreeks te gebruiken om de `DSC_SERVER_TYPE` eigenschap connection in te stellen, kunt u een statisch lid van de `ServiceClientFactoryProperties` klasse gebruiken. De volgende waarden kunnen worden gebruikt: `ServiceClientFactoryProperties.DSC_WEBSPHERE_SERVER_TYPE`, `ServiceClientFactoryProperties.DSC_WEBLOGIC_SERVER_TYPE`, of `ServiceClientFactoryProperties.DSC_JBOSS_SERVER_TYPE`.
 
 * **DSC_CREDENTIAL_USERNAME:** Hier geeft u de gebruikersnaam voor AEM-formulieren op. Voor een gebruiker om de dienst van Vormen AEM met succes aan te halen, hebben zij de rol van de Gebruiker van de Diensten nodig. Een gebruiker kan een andere rol ook hebben die de Dienst omvat roept toestemming. Anders, wordt een uitzondering geworpen wanneer zij proberen om de dienst aan te halen. Als de de dienstveiligheid gehandicapt is, is het niet noodzakelijk om dit verbindingsbezit te specificeren.
 * **DSC_CREDENTIAL_PASSWORD:** Specifies the corresponding password value. Als de de dienstveiligheid gehandicapt is, is het niet noodzakelijk om dit verbindingsbezit te specificeren.
@@ -987,7 +989,7 @@ U kunt de Repository-service activeren door een Java-clientbibliotheek te gebrui
    Kiezen naar de geretourneerde waarde `Resource`.
 
 1. Maak een `ResourceContent` object door de `RepositoryInfomodelFactoryBean` methode van het `newImage` object aan te roepen en de geretourneerde waarde naar te casten `ResourceContent`. Dit object vertegenwoordigt de inhoud die aan de gegevensopslagruimte wordt toegevoegd.
-1. Maak een `com.adobe.idp.Document` object door een `java.io.FileInputStream` object door te geven waarin het XDP-bestand wordt opgeslagen dat aan de gegevensopslagruimte moet worden toegevoegd. (Zie Een document [maken op basis van een InputStream-object](invoking-aem-forms-using-java.md#creating-a-document-based-on-an-inputstream-object).)
+1. Maak een `com.adobe.idp.Document` object door een `java.io.FileInputStream` object door te geven waarin het XDP-bestand wordt opgeslagen dat aan de opslagplaats moet worden toegevoegd. (Zie Een document [maken op basis van een InputStream-object](invoking-aem-forms-using-java.md#creating-a-document-based-on-an-inputstream-object).)
 1. Voeg de inhoud van het `com.adobe.idp.Document` object toe aan het `ResourceContent` object door de `ResourceContent` methode van het `setDataDocument` object aan te roepen. Geef het `com.adobe.idp.Document` object door.
 1. Stel het MIME-type van het XDP-bestand in dat u aan de opslagplaats wilt toevoegen door de methode van het `ResourceContent` object aan te roepen en door te geven `setMimeType` `application/vnd.adobe.xdp+xml`.
 1. Voeg de inhoud van het `ResourceContent` object toe aan het `Resource` object door de methode van het `Resource` object aan te roepen `setContent` en het `ResourceContent` object door te geven.

@@ -3,14 +3,14 @@ title: Met gekoppelde assets kunt u DAM-assets delen in de authoringworkflow van
 description: Gebruik de assets die beschikbaar zijn op een externe implementatie van Adobe Experience Manager Assets bij het maken van uw webpagina's op een andere implementatie van een Experience Manager-site.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 04fef21d6027dcfcb6a67a1121e0d1570926db41
+source-git-commit: 7628b5edd52a144aa4f92f8145493b9b927aeda0
 
 ---
 
 
 # Gekoppelde assets gebruiken om DAM-assets te delen in AEM-sites {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
-In grote ondernemingen is de infrastructuur voor het maken van websites soms gedistribueerd. Soms zijn de functies en de digitale assets voor het maken van websites opgenomen in verschillende implementaties. Enkele redenen kunnen geografisch worden verdeeld bestaande implementaties die vereist zijn om samen te werken of acquisities die leiden tot heterogene infrastructuren die het moederbedrijf samen wil gebruiken.
+In grote ondernemingen is de infrastructuur voor het maken van websites soms gedistribueerd. Soms zijn de functies en de digitale assets voor het maken van websites opgenomen in verschillende implementaties. Enkele redenen zijn bijvoorbeeld bestaande, geografisch gedistribueerde implementaties die vereist zijn voor samenwerking, of acquisities die leiden tot heterogene infrastructuren die het moederbedrijf alsnog samen wil gebruiken.
 
 AEM Sites biedt functies voor het maken van webpagina&#39;s en AEM Assets is het DAM-systeem (Digital Asset Management) dat de vereiste assets voor websites levert. AEM biedt nu ondersteuning voor het bovenstaande gebruiksscenario door de integratie van AEM Sites en AEM Assets.
 
@@ -89,9 +89,9 @@ Voer de volgende stappen uit om gekoppelde assets te configureren met de lokale 
    1. In the Properties wizard, change the **[!UICONTROL Path]** fields as the following mappings to update their regular expressions to exclude the mount point **[!UICONTROL connectedassets]**.
    | Voor | Na |
    |---|---|
-   | /content/dam(/((?!/subassets).)*/)renditions/original | /content/dam(/((?!/subassets)(?!connectedassets).)*/)renditions/original |
-   | /content/dam(/.*/)renditions/original | /content/dam(/((?!connectedassets).)*/)renditions/original |
-   | /content/dam(/.*)/jcr:content/metadata | /content/dam(/((?!connectedassets).)*/)jcr:content/metadata |
+   | `/content/dam(/((?!/subassets).)*/)renditions/original` | `/content/dam(/((?!/subassets)(?!connectedassets).)*/)renditions/original` |
+   | `/content/dam(/*/)renditions/original` | `/content/dam(/((?!connectedassets).)*/)renditions/original` |
+   | `/content/dam(/*)/jcr:content/metadata` | `/content/dam(/((?!connectedassets).)*/)jcr:content/metadata` |
 
    >[!NOTE]
    >

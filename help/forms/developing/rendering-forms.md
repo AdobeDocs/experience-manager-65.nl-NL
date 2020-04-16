@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: f8749793-e53f-4812-a093-8278f480e6a8
 translation-type: tm+mt
-source-git-commit: 687cdacc2868de16a4df968dddedd330ce3317bb
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -30,8 +30,9 @@ Afhankelijk van het type clienttoepassing kunt u het formulier naar een clientwe
 * De voorbeelden van de webservice (Java Base64) zijn een Java-servlet.
 * De voorbeelden van de Webdienst (MTOM) zijn een consoletoepassing (niet alle snelle begin hebben een voorbeeld MTOM).
 
-***Opmerking **: Voor informatie over het creëren van een Webtoepassing die Java servlets gebruikt om de dienst van Vormen aan te halen, zie het[Creëren van de Toepassingen van het Web die Vormen](/help/forms/developing/creating-web-applications-renders-forms.md)teruggeven.*
-
+>[!NOTE]
+>
+> Voor informatie over het creëren van een Webtoepassing die Java servlets gebruikt om de dienst van Vormen aan te halen, zie het [Creëren van de Toepassingen van het Web die Vormen](/help/forms/developing/creating-web-applications-renders-forms.md)teruggeven.
 
 U kunt op twee manieren een formulierontwerp (een XDP-bestand) of een PDF-document doorgeven aan de service Forms:
 

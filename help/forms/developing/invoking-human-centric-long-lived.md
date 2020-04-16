@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 18a320b4-dce6-4c50-8864-644b0b2d6644
 translation-type: tm+mt
-source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -445,7 +445,9 @@ Nadat u de webtoepassing hebt geïmplementeerd, kunt u deze testen met een webbr
 
    Voer waarden in de HTML-formuliervelden in en klik op de knop Toepassing verzenden. Als er problemen optreden, raadpleegt u het logbestand van de J2EE-toepassingsserver.
 
-   ***Opmerking **: Als u wilt bevestigen dat de Java-toepassing het proces heeft aangeroepen, start u Workspace en accepteert u de lening.*
+>[!NOTE]
+>
+>Als u wilt bevestigen dat de Java-toepassing het proces heeft aangeroepen, start u Workspace en accepteert u de lening.
 
 ## Creërend een Asp.net- Webtoepassing die een mens-centric langlevend proces aanhaalt {#creating-an-asp-net-web-application-that-invokes-a-human-centric-long-lived-process}
 
@@ -474,7 +476,7 @@ Om een toepassing tot stand te brengen ASP.NET die het proces kan aanhalen First
 
 Creeer een toepassing van het Web van Microsoft .NET C# ASP.NET. De volgende illustratie toont de inhoud van het project ASP.NET genoemd *InvokePreLoanProcess*.
 
-Bericht onder de Verwijzingen van de Dienst, zijn er twee punten. Het eerste item heeft de naam* JobManager*. Deze verwijzing laat de toepassing ASP.NET toe om de dienst van de Manager van de Baan aan te halen. Deze dienst keert informatie over het statuut van een lang-levend proces terug. Als het proces bijvoorbeeld op dat moment wordt uitgevoerd, retourneert deze service een numerieke waarde die aangeeft dat het proces op dat moment wordt uitgevoerd. De tweede verwijzing heeft de *naam PreLoanProcess*. Deze serviceverwijzing vertegenwoordigt de verwijzing naar het *process* FirstAppSolution/PreLoanProcess. Nadat u een Verwijzing van de Dienst creeert, zijn de gegevenstypes verbonden aan de dienst van Vormen AEM beschikbaar voor gebruik binnen uw .NET project.
+Bericht onder de Verwijzingen van de Dienst, zijn er twee punten. Het eerste item heeft de naam* JobManager*. Deze verwijzing laat de toepassing ASP.NET toe om de dienst van de Manager van de Baan aan te halen. Deze dienst keert informatie over het statuut van een lang-levend proces terug. Als het proces bijvoorbeeld op dat moment wordt uitgevoerd, retourneert deze service een numerieke waarde die aangeeft dat het proces momenteel wordt uitgevoerd. De tweede verwijzing heeft de *naam PreLoanProcess*. Deze serviceverwijzing vertegenwoordigt de verwijzing naar het *process* FirstAppSolution/PreLoanProcess. Nadat u een Verwijzing van de Dienst creeert, zijn de gegevenstypes verbonden aan de dienst van Vormen AEM beschikbaar voor gebruik binnen uw .NET project.
 
 **Maak een ASP.NET-project:**
 
@@ -808,7 +810,7 @@ Het volgende C# codevoorbeeld roept het `FirstAppSolution/PreLoanProcess`proces 
 
 >[!NOTE]
 >
->De waarden in de user-defined methode getJobDescription worden gevestigd beantwoorden aan waarden die door de dienst van de Manager van de Baan zijn teruggekeerd die.
+>De waarden in de door de gebruiker gedefinieerde getJobDescription-methode komen overeen met de waarden die door de service Taakbeheer worden geretourneerd.
 
 ### De toepassing ASP.NET uitvoeren {#run-the-asp-net-application}
 

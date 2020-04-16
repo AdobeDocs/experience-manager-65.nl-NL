@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: de527d50-991b-4ca3-a8ac-44d5cab988e9
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -64,7 +64,9 @@ U kunt deze taken uitvoeren met de service Uitvoer:
 * [Zoekregels maken](creating-document-output-streams.md#creating-search-rules)
 * [PDF-documenten afvlakken](creating-document-output-streams.md#flattening-pdf-documents)
 
-   ***Opmerking **:Voor meer informatie over de dienst van de Output, zie de Verwijzing van de[Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.*
+>[!NOTE]
+>
+>Voor meer informatie over de dienst van de Output, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
 
 ## PDF-documenten maken {#creating-pdf-documents}
 
@@ -175,7 +177,7 @@ Wanneer u een PDF-document genereert, geeft u de URI-waarden op die de uitvoerse
 
 ![cp_cp_formrepository](assets/cp_cp_formrepository.png)
 
-Als u toegang wilt krijgen tot het bestand Loan.xdp dat in de vorige afbeelding wordt weergegeven, geeft u `repository:///Applications/FormsApplication/1.0/FormsFolder/` de derde parameter op die wordt doorgegeven aan de `OutputClient` methode van het `generatePDFOutput` object. Geef de formuliernaam (*Loan.xdp*) op als de tweede parameter die wordt doorgegeven aan de `OutputClient` methode van het `generatePDFOutput` object.
+Als u toegang wilt tot het bestand Loan.xdp dat in de vorige afbeelding wordt weergegeven, geeft u `repository:///Applications/FormsApplication/1.0/FormsFolder/` de derde parameter op die wordt doorgegeven aan de `OutputClient` methode van het `generatePDFOutput` object. Geef de formuliernaam (*Loan.xdp*) op als de tweede parameter die wordt doorgegeven aan de `OutputClient` methode van het `generatePDFOutput` object.
 
 Als het XDP-bestand afbeeldingen (of andere bronnen zoals fragmenten) bevat, plaatst u de bronnen in dezelfde toepassingsmap als het XDP-bestand. In AEM Forms wordt de URI van de inhoudsmap gebruikt als het basispad voor het oplossen van verwijzingen naar afbeeldingen. Als het bestand Loan.xdp bijvoorbeeld een afbeelding bevat, moet u de afbeelding eerst in `Applications/FormsApplication/1.0/FormsFolder/`het bestand plaatsen.
 
@@ -185,7 +187,7 @@ Als het XDP-bestand afbeeldingen (of andere bronnen zoals fragmenten) bevat, pla
 
 >[!NOTE]
 >
->Zie [Snel starten (EJB-modus) voor een snel overzicht van het maken van een PDF-document door te verwijzen naar een XDP-bestand in een Forms-toepassing: Een PDF-document maken op basis van een XDP-bestand van een toepassing met behulp van de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api).
+>Zie [Snel starten (EJB-modus) voor een snel begin waarin een PDF-document wordt gemaakt door te verwijzen naar een XDP in een Forms-toepassing: Een PDF-document maken op basis van een XDP-bestand van een toepassing met behulp van de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api).
 
 **De resultaten van de bewerking ophalen**
 
@@ -844,7 +846,7 @@ Haal het XDP-bestand op uit de opslagplaats voor AEM-formulieren met behulp van 
 
 Het XDP-bestand wordt geretourneerd binnen een `com.adobe.idp.Document` instantie (of een `BLOB` instantie als u webservices gebruikt). U kunt de `com.adobe.idp.Document` instantie vervolgens aan de uitvoerservice doorgeven.
 
-**Het niet-interactieve PDF-formulier renderen**
+**Het niet-interactieve PDF-formulier weergeven**
 
 Als u een niet-interactief formulier wilt genereren, geeft u het exemplaar door dat is geretourneerd met de API voor de opslagplaats van AEM-formulieren. `com.adobe.idp.Document`
 
@@ -922,7 +924,7 @@ Deze workflow wordt in de volgende afbeelding getoond.
 
 ![cp_cp_outputassemblefragmenten](assets/cp_cp_outputassemblefragments.png)
 
-Voordat u PDF-documenten *maakt met behulp van fragmenten*, is het raadzaam bekend te raken met de Assembler-service om meerdere XDP-documenten samen te stellen. (Zie Meerdere XDP-fragmenten [samenstellen](/help/forms/developing/assembling-pdf-documents.md#assembling-multiple-xdp-fragments).)
+Voordat u PDF-documenten *maakt met behulp van fragmenten*, is het raadzaam bekend te raken met het gebruik van de Assembler-service om meerdere XDP-documenten samen te stellen. (Zie Meerdere XDP-fragmenten [samenstellen](/help/forms/developing/assembling-pdf-documents.md#assembling-multiple-xdp-fragments).)
 
 >[!NOTE]
 >
@@ -1333,7 +1335,7 @@ Met de Output-service kunt u XML-gegevens samenvoegen met een formulierontwerp e
 
 >[!NOTE]
 >
->Om aan te tonen hoe te om een drukstroom naar een netwerkprinter te verzenden, verzendt deze sectie een de drukstroom van PostScript naar een netwerkprinter door het SharedPrinter printerprotocol te gebruiken.
+>In deze sectie wordt een PostScript-afdrukstroom naar een netwerkprinter verzonden met behulp van het SharedPrinter-printerprotocol om te tonen hoe u een afdrukstream naar een netwerkprinter verzendt.
 
 >[!NOTE]
 >

@@ -9,7 +9,7 @@ topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -71,7 +71,9 @@ Als u bovendien een XML-schema of XDP-formuliersjabloon hebt geselecteerd als he
 1. Geef in het dialoogvenster Fragment maken de volgende informatie op:
 
    * **Naam**: Naam van het fragment. De standaardwaarde is de elementnaam van het deelvenster. Het is een verplicht veld.
-      ***Opmerking **: Zorg ervoor dat u een unieke naam voor het fragment opgeeft. Als er al een ander fragment met dezelfde naam bestaat, kan het fragment niet worden gemaakt.*
+      >[!NOTE]
+      >
+      >Zorg ervoor dat u een unieke naam voor het fragment opgeeft. Als er al een ander fragment met dezelfde naam bestaat, kan het fragment niet worden gemaakt.
 
    * **Titel**: Titel van het fragment. De standaardwaarde is de titel van het deelvenster.
 

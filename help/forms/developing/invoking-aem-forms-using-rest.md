@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: df7b60bb-4897-479e-a05e-1b1e9429ed87
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -49,7 +49,11 @@ De volgende gegevenstypen worden ondersteund wanneer AEM Forms-services met REST
    Als de dienst van Forms met de methode van HTTP POST wordt aangehaald, worden de argumenten overgegaan binnen het HTTP- verzoeklichaam. Als de handtekening van de AEM Forms-service een parameter voor tekenreeksinvoer bevat, kan de aanvraaghoofdtekst de tekstwaarde van de invoerparameter bevatten. Als de handtekening van de service meerdere tekenreeksparameters definieert, kan de aanvraag de HTTP- `application/x-www-form-urlencoded` notatie volgen met de namen van de parameters die als veldnamen van het formulier worden gebruikt.
 
    Als de dienst van Forms een koordparameter terugkeert, is het resultaat een tekstuele vertegenwoordiging van de outputparameter. Als de dienst veelvoudige koordparameters terugkeert, is het resultaat een document van XML die de outputparameters in het volgende formaat coderen:
-   ` <result> <output-paramater1>output-parameter-value-as-string</output-paramater1> . . . <output-paramaterN>output-parameter-value-as-string</output-paramaterN> </result>`**Opmerking **: De`output-paramater1`waarde vertegenwoordigt de naam van de uitvoerparameter.
+   ` <result> <output-paramater1>output-parameter-value-as-string</output-paramater1> . . . <output-paramaterN>output-parameter-value-as-string</output-paramaterN> </result>`
+
+   >[!NOTE]
+   >
+   >De `output-paramater1` waarde vertegenwoordigt de naam van de uitvoerparameter.
 
    Als een dienst van Vormen een `com.adobe.idp.Document` parameter vereist, kan de dienst slechts worden aangehaald gebruikend de POST van HTTP methode. Als de service één `com.adobe.idp.Document` parameter vereist, wordt de HTTP-aanvraaginstantie de inhoud van het invoerobject Document.
 
@@ -77,7 +81,7 @@ De volgende gegevenstypen worden ondersteund wanneer AEM Forms-services met REST
 * Een URL die wijst naar de inhoud van Document (als de lijst uit `com.adobe.idp.Document` objecten bestaat)
 
    Het volgende voorbeeld is een XML-bericht dat wordt geretourneerd door een service met één uitvoerparameter met de naam *list*. Dit is een lijst met gehele getallen.
-   ` <result>   <list>12345</list>   . . .   <list>67890</list>  </result>`Een parameter van de outputkaart wordt vertegenwoordigd in het resulterende bericht van XML als reeks elementen van XML met één element voor elke verslag in de kaart. Elk element krijgt dezelfde naam als de sleutel van het kaartverslag. De waarde van elk element is een tekstrepresentatie van de waarde van de kaartrecord (als de kaart bestaat uit records met een tekenreekswaarde) of een URL die naar de inhoud van het document wijst (als de kaart uit records met de `com.adobe.idp.Document` waarde bestaat). Hieronder ziet u een voorbeeld van een XML-bericht dat wordt geretourneerd door een service met één uitvoerparameter met de naam `map`. Deze parameterwaarde is een kaart die bestaat uit records die letters aan `com.adobe.idp.Document` objecten koppelen.
+   ` <result>   <list>12345</list>   . . .   <list>67890</list>  </result>`Een parameter van de outputkaart wordt vertegenwoordigd in het resulterende bericht van XML als reeks elementen van XML met één element voor elke verslag in de kaart. Elk element krijgt dezelfde naam als de sleutel van de kaartrecord. De waarde van elk element is een tekstrepresentatie van de waarde van de kaartrecord (als de kaart bestaat uit records met een tekenreekswaarde) of een URL die naar de inhoud van het document wijst (als de kaart uit records met de `com.adobe.idp.Document` waarde bestaat). Hieronder ziet u een voorbeeld van een XML-bericht dat wordt geretourneerd door een service met één uitvoerparameter met de naam `map`. Deze parameterwaarde is een kaart die bestaat uit records die letters aan `com.adobe.idp.Document` objecten koppelen.
    ` <result>   http://localhost:8080/DocumentManager/docm123/4567   . . .   <Z>http://localhost:8080/DocumentManager/docm987/6543</Z>  </result>  `
 
 ## Asynchrone aanroepen {#asynchronous-invocations}
@@ -178,7 +182,7 @@ De volgende voorbeelden van REST-oproepen worden gegeven:
 
 **Booleaanse waarden doorgeven aan een proces**
 
-In het volgende HTML-voorbeeld worden twee `Boolean` waarden doorgegeven aan een AEM Forms-proces met de naam `RestTest2`. De aanroepingsmethode heet `invoke` en de versie is 1.0.De methode HTML Post wordt gebruikt.
+In het volgende HTML-voorbeeld worden twee `Boolean` waarden doorgegeven aan een AEM Forms-proces met de naam `RestTest2`. De aanroepingsmethode heet `invoke` en de versie is 1.0. De methode HTML Post wordt gebruikt.
 
 ```as3
  <html>

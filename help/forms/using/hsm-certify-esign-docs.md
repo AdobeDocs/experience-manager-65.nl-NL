@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 536bcba4-b754-4799-b0d2-88960cc4c44a
 translation-type: tm+mt
-source-git-commit: 94472fad34fe97740e4711d2cb35beb884db52ce
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -104,7 +104,9 @@ De alias bevat alle parameters die een HSM of token vereist. Voer de onderstaand
    * **DLL-pad**: Geef het volledig gekwalificeerde pad van uw HSM- of toepassingsclientbibliotheek op de server op. Bijvoorbeeld C:\Program Files\LunaSA\cryptoki.dll. In een gegroepeerde omgeving moet dit pad identiek zijn voor alle servers in de cluster.
    * **HSM-punt**: Geef het wachtwoord op dat nodig is voor toegang tot de apparaattoets.
    * **HSM-sleuf-id**: Geef een sleuf-id op van het type geheel getal. De sleuf-id wordt per client ingesteld. Als u een tweede machine aan een verschillende verdeling (bijvoorbeeld, HSMPART2 op het zelfde apparaat HSM) registreert, dan wordt groef 1 geassocieerd met de verdeling HSMPART2 voor de cliënt.
-   **** Opmerking: Geef *tijdens het configureren van Etoken een numerieke waarde op voor het veld Id van HSM-sleuf. Er is een numerieke waarde vereist om de handtekeningbewerkingen te laten werken.*
+   >[!NOTE]
+   >
+   >Geef tijdens het configureren van Etoken een numerieke waarde op voor het veld Id van HSM-sleuf. Er is een numerieke waarde vereist om de handtekeningbewerkingen te laten werken.
 
    * **Certificaat SHA1**: Geef SHA1-waarde (miniafdruk) van het bestand met de openbare sleutel (.cer) op voor de referentie die u gebruikt. Zorg ervoor dat er geen spaties worden gebruikt in de SHA1-waarde. Als u een fysiek certificaat gebruikt, is dit niet verplicht.
    * **Type** HSM-apparaat: Selecteer de fabrikant van de HSM (Luna of andere) of het Symbolische apparaat.

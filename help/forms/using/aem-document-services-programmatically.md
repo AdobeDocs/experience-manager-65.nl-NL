@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 32118d3b-54d0-4283-b489-780bdcbfc8d2
 translation-type: tm+mt
-source-git-commit: 86257dd8a54a0f25ed4365990a678bb794f18744
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -1334,7 +1334,7 @@ public class Certify {
 
 ### Documenten beveiligen {#securing-documents}
 
-Met SecureDocument kunt u een PDF-document versleutelen, ondertekenen/certificeren en in een bepaalde volgorde uitbreiden, afzonderlijk of in een willekeurige combinatie. Om tot om het even welk van deze functionaliteit toegang te hebben, ga het overeenkomstige argument over. Indien null wordt aangenomen dat de specifieke verwerking niet vereist is.
+Met SecureDocument kunt u een PDF-document versleutelen, ondertekenen/certificeren en in een bepaalde volgorde uitbreiden, afzonderlijk of in een willekeurige combinatie. Om tot om het even welk van deze functionaliteit toegang te hebben, ga het overeenkomstige argument over. Indien null, wordt aangenomen dat de specifieke verwerking niet vereist is.
 
 **PDF-documenten versleutelen met een wachtwoord**
 
@@ -1357,7 +1357,9 @@ Een certificaat met een openbare sleutel bevat de openbare sleutel van een gebru
 
 Bovendien bevatten de certificaatintrekkingslijsten (CRL&#39;s) informatie over certificaten die vóór de vervaldatum zijn ingetrokken. CRL&#39;s worden periodiek gepubliceerd door certificeringsinstanties. De intrekkingsstatus van een certificaat kan ook via het online certificaatstatusprotocol (OCSP) via het netwerk worden opgehaald.
 
-*****Opmerking *:*Voordat u een PDF-document kunt versleutelen met een certificaat, moet u ervoor zorgen dat u het certificaat toevoegt aan de AEM Trust Store *.
+>[!NOTE]
+>
+>Voordat u een PDF-document kunt versleutelen met een certificaat, moet u ervoor zorgen dat u het certificaat toevoegt aan de AEM Trust Store.
 
 **Gebruiksrechten toepassen op PDF-documenten**
 
@@ -1375,9 +1377,13 @@ PDF-documenten worden ondertekend met behulp van openbare-sleuteltechnologie. Ee
 
 De openbare sleutel wordt opgeslagen in het certificaat van de gebruiker dat beschikbaar moet zijn aan ontvangers om de handtekening te valideren. Informatie over ingetrokken certificaten vindt u in de certificaatintrekkingslijsten (CRL&#39;s) en de online certificaatstatusprotocollen (OCSP&#39;s) die door de certificeringsinstanties (CA&#39;s) worden verspreid. De tijd van het ondertekenen kan van een vertrouwde op bron worden verkregen die als Tijdstempelinstantie wordt bekend.
 
-*****Opmerking *:*Voordat u een PDF-document digitaal kunt ondertekenen, moet u ervoor zorgen dat u de referentie toevoegt in AEM Keystore. De referentie is de persoonlijke sleutel die wordt gebruikt voor ondertekening *.
+>[!NOTE]
+>
+>Voordat u een PDF-document digitaal kunt ondertekenen, moet u ervoor zorgen dat u de referentie toevoegt in het AEM-sleutelarchief. De referentie is de persoonlijke sleutel die wordt gebruikt voor ondertekening.
 
-****** Opmerking: AEM Forms ondersteunt ook *[CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29)*-specificaties voor het digitaal ondertekenen van PDF-documenten.
+>[!NOTE]
+>
+>AEM Forms ondersteunt ook *[CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29)*-specificaties voor het digitaal ondertekenen van PDF-documenten.
 
 **PDF-documenten certificeren**
 
@@ -1399,7 +1405,9 @@ Op het moment van ondertekening wordt het document gescand op specifieke typen i
 
 Een annotatie kan bijvoorbeeld bepaalde tekst op een pagina verbergen die belangrijk is voor het begrijpen van wat wordt gecertificeerd. Over deze inhoud kan een toelichting (wettelijke verklaring) worden gegeven.
 
-***Opmerking **: Voordat u een PDF-document digitaal kunt ondertekenen, moet u ervoor zorgen dat u de referentie toevoegt in het AEM-sleutelarchief. De referentie is de persoonlijke sleutel die wordt gebruikt voor ondertekening *.
+>[!NOTE]
+>
+>Voordat u een PDF-document digitaal kunt ondertekenen, moet u ervoor zorgen dat u de referentie toevoegt in het AEM-sleutelarchief. De referentie is de persoonlijke sleutel die wordt gebruikt voor ondertekening.
 
 **Syntaxis**:
 
@@ -3617,19 +3625,19 @@ public class RemovePKIEncryption {
 
 De uitvoerservice biedt API&#39;s waarmee een XDP-bestand kan worden gerenderd in de indelingen .pdf, .pcl, .zpl en .ps. De service ondersteunt de volgende API&#39;s:
 
-* **[](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p)generatePDFOutput **: Hiermee wordt een PDF-document gegenereerd door een formulierontwerp samen te voegen met gegevens die als letterlijke waarden zijn opgeslagen op een netwerklocatie, lokaal bestandssysteem of HTTP-locatie.
+* **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p):**Hiermee wordt een PDF-document gegenereerd door een formulierontwerp samen te voegen met gegevens die als letterlijke waarden zijn opgeslagen op een netwerklocatie, lokaal bestandssysteem of HTTP-locatie.
 
-* **[](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p)generatePDFOutput **: Hiermee wordt een PDF-document gegenereerd door een formulierontwerp samen te voegen met gegevens die in een toepassing zijn opgeslagen.
-* **[](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutputbatch-p)generatePDFOutputBatch **:Hiermee voegt u een formulierontwerp samen met gegevens om een PDF-document te maken. Hiermee genereert u desgewenst een metagegevensbestand voor elke record of slaat u de uitvoer op in een PDF-bestand.
-* **[](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p)generatePrintedOutput **: Hiermee genereert u een PCL-, PostScript- of ZPL-uitvoer van een formulierontwerp en een gegevensbestand dat is opgeslagen op een netwerklocatie, lokaal bestandssysteem of HTTP-locatie als letterlijke waarden.
+* **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p):**Hiermee wordt een PDF-document gegenereerd door een formulierontwerp samen te voegen met gegevens die in een toepassing zijn opgeslagen.
+* **[generatePDFOutputBatch](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutputbatch-p):**Hiermee voegt u een formulierontwerp samen met gegevens om een PDF-document te maken. Hiermee genereert u desgewenst een metagegevensbestand voor elke record of slaat u de uitvoer op in een PDF-bestand.
+* **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p):**Hiermee genereert u een PCL-, PostScript- of ZPL-uitvoer van een formulierontwerp en een gegevensbestand dat is opgeslagen op een netwerklocatie, lokaal bestandssysteem of HTTP-locatie als letterlijke waarden.
 
-* **[](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p)generatePrintedOutput **: Hiermee genereert u een PCL-, PostScript- en ZPL-uitvoer van een formulierontwerp en gegevensbestand dat in een toepassing is opgeslagen.
+* **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p):**Hiermee genereert u een PCL-, PostScript- en ZPL-uitvoer van een formulierontwerp en gegevensbestand dat in een toepassing is opgeslagen.
 
 ### generatePDFOutput {#generatepdfoutput}
 
-Met de API generatePDFOutput wordt een PDF-document gegenereerd door een formulierontwerp met gegevens samen te voegen. Hiermee genereert u desgewenst een metagegevensbestand voor elke record of slaat u de uitvoer op in een PDF-bestand. Gebruik de API generatePDFOutput voor de formulierontwerpen of gegevens die op een netwerklocatie, lokaal bestandssysteem of HTTP-locatie zijn opgeslagen als letterlijke waarden. Als het formulierontwerp en de XML-gegevens in een toepassing worden opgeslagen, gebruikt u de API [generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p) .
+Met de API generatePDFOutput wordt een PDF-document gegenereerd door een formulierontwerp met gegevens samen te voegen. Hiermee genereert u desgewenst een metagegevensbestand voor elke record of slaat u de uitvoer op in een PDF-bestand. Gebruik de API generatePDFOutput voor de formulierontwerpen of gegevens die zijn opgeslagen op een netwerklocatie, lokaal bestandssysteem of HTTP-locatie als letterlijke waarden. Als het formulierontwerp en de XML-gegevens in een toepassing worden opgeslagen, gebruikt u de API [generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p) .
 
-**** Syntaxis: `Document generatePDFOutput(String uriOrFileName, Document data, PDFOutputOptions options);`
+**Syntaxis:** `Document generatePDFOutput(String uriOrFileName, Document data, PDFOutputOptions options);`
 
 #### Invoerparameters {#input-parameters}
 
@@ -3736,7 +3744,7 @@ try {
 
 Met de API generatePDFOutput wordt een PDF-document gegenereerd door een formulierontwerp met gegevens samen te voegen. U kunt desgewenst een metagegevensbestand genereren voor elke record of de uitvoer opslaan in een PDF-bestand. Gebruik de API generatePrintedOutput voor de formulierontwerpen of gegevens die in een toepassing zijn opgeslagen. Als het formulierontwerp en de XML-gegevens als letterlijke waarden zijn opgeslagen op een netwerklocatie, lokaal of op een HTTP-locatie, gebruikt u de [generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p) -API.
 
-**** Syntaxis: `Document generatePDFOutput(Document inputdocument, Document data, PDFOutputOptions options)`
+**Syntaxis:** `Document generatePDFOutput(Document inputdocument, Document data, PDFOutputOptions options)`
 
 #### Invoerparameter {#input-parameter}
 
@@ -3846,7 +3854,7 @@ Document doc=null;
 
 Hiermee voegt u een formulierontwerp samen met gegevens om een PDF-document te maken. Hiermee genereert u desgewenst een metagegevensbestand voor elke record of slaat u de uitvoer op in een PDF-bestand. Gebruik de API generatePDFOutputBatch voor formulierontwerpen of gegevens die als letterlijke waarden zijn opgeslagen op een netwerklocatie, een lokaal bestandssysteem of een HTTP-locatie.
 
-**** Syntaxis: `BatchResult generatePDFOutputBatch(Map templates, Map data, PDFOutputOptions options, BatchOptions batchOptions);`
+**Syntaxis:** `BatchResult generatePDFOutputBatch(Map templates, Map data, PDFOutputOptions options, BatchOptions batchOptions);`
 
 #### Invoerparameters {#input-parameters-1}
 
@@ -3963,7 +3971,7 @@ String outputFolder="C:/Output";
 
 Hiermee genereert u een PCL-, PostScript- en ZPL-uitvoer van een formulierontwerp en gegevensbestand. Het gegevensbestand wordt samengevoegd met het formulierontwerp en voor afdrukken opgemaakt. U kunt de uitvoer rechtstreeks naar een printer verzenden of als bestand opslaan. Gebruik de API generatePrintedOutput voor de formulierontwerpen of gegevens die in een toepassing zijn opgeslagen.
 
-**** Syntaxis: `Document generatePrintedOutput(String uriOrFileName, Document data, PrintedOutputOptions);`
+**Syntaxis:** `Document generatePrintedOutput(String uriOrFileName, Document data, PrintedOutputOptions);`
 
 #### Invoerparameters {#input-parameters-2}
 
@@ -4054,7 +4062,7 @@ Document doc=null;
 
 Hiermee genereert u een PCL-, PostScript- en ZPL-uitvoer op basis van een formulierontwerp en een gegevensbestand. Het gegevensbestand wordt samengevoegd met het formulierontwerp en voor afdrukken opgemaakt. De uitvoer kan rechtstreeks naar een printer worden verzonden of als bestand worden opgeslagen. Gebruik de API generatePrintedOutput voor de formulierontwerpen of gegevens die in een toepassing zijn opgeslagen.
 
-**** Syntaxis: `Document generatePrintedOutput(Document inputdocument, Document data, PrintedOutputOptions);`
+**Syntaxis:** `Document generatePrintedOutput(Document inputdocument, Document data, PrintedOutputOptions);`
 
 #### Invoerparameters {#input-parameters-3}
 
@@ -4276,14 +4284,14 @@ String outputFolder="C:/Output";
 
 De service Forms biedt API&#39;s voor het importeren en exporteren van gegevens van en naar een interactief PDF-formulier. Een interactief PDF-formulier is een PDF-document dat een of meer velden bevat die worden gebruikt voor het weergeven en verzamelen van informatie van gebruikers. De service ondersteunt de volgende API&#39;s:
 
-* **[](/help/forms/using/aem-document-services-programmatically.md#p-exportdata-p)exportData **: Hiermee exporteert u gegevens uit een PDF-formulier.
-* **[](/help/forms/using/aem-document-services-programmatically.md#p-importdata-p)importData **: Hiermee importeert u gegevens in een interactief PDF-formulier.
+* **[exportData](/help/forms/using/aem-document-services-programmatically.md#p-exportdata-p):**Hiermee exporteert u gegevens uit een PDF-formulier.
+* **[importData](/help/forms/using/aem-document-services-programmatically.md#p-importdata-p):**Hiermee importeert u gegevens in een interactief PDF-formulier.
 
 ### exportData {#exportdata}
 
 Hiermee exporteert u formuliergegevens uit een interactief PDF-formulier in XML- en XDP-indeling.
 
-**** Syntaxis: `Document exportData(Document xdpOrPdf, DataFormat dataFormat)`
+**Syntaxis:** `Document exportData(Document xdpOrPdf, DataFormat dataFormat)`
 
 #### Invoerparameters {#input-parameters-5}
 
@@ -4367,7 +4375,7 @@ try {
 
 Hiermee importeert u formuliergegevens in een interactief PDF-formulier.
 
-**** Syntaxis: `Document importData(Document PDF, Document data)`
+**Syntaxis:** `Document importData(Document PDF, Document data)`
 
 #### Invoerparameters {#input-parameters-6}
 
@@ -4509,7 +4517,7 @@ De service createPDF genereert de volgende uitzonderingen:
 * InvalidParameterException
 * FileFormatNotSupportedException
 
-**** Syntaxis: `Map createPDF(Document inputDoc, String inputFilename, String fileTypeSettings, String pdfSettings, String securitySettings, Document settingsDoc, Document xmpDoc) throws InvalidParameterException, ConversionException, FileFormatNotSupportedException;`
+**Syntaxis:** `Map createPDF(Document inputDoc, String inputFilename, String fileTypeSettings, String pdfSettings, String securitySettings, Document settingsDoc, Document xmpDoc) throws InvalidParameterException, ConversionException, FileFormatNotSupportedException;`
 
 #### Invoerparameters {#input-parameters-7}
 
@@ -4629,7 +4637,7 @@ File createPDF(File inputFile, String inputFilename, String fileTypeSettings, St
 
 #### exportPDF {#exportpdf}
 
- Hiermee wordt een PDF-document geconverteerd naar een ondersteund bestandstype. De methode accepteert een PDF als invoer en exporteert de inhoud van de PDF in de opgegeven bestandsindeling.
+Hiermee wordt een PDF-document geconverteerd naar een ondersteund bestandstype. De methode accepteert een PDF als invoer en exporteert de inhoud van de PDF in de opgegeven bestandsindeling.
 
 De service createPDF retourneert een Java.util.Map met resultaten. De kaarttoetsen zijn:
 
@@ -4814,7 +4822,7 @@ File optimizePDF(File inputFile, String fileTypeSettings, File settingsFile) thr
 
 #### htmlToPdf2 {#htmltopdf}
 
- Hiermee converteert u een HTML-pagina naar een PDF-document. De URL van de HTML-pagina wordt als invoer geaccepteerd.
+Hiermee converteert u een HTML-pagina naar een PDF-document. De URL van de HTML-pagina wordt als invoer geaccepteerd.
 
 De htmlToPdf2-service retourneert een HtmlToPdfResult-object. U kunt de geconverteerde PDF verkrijgen via result.getConvertedDocument().
 

@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: f8707752-2c83-461a-b83d-708754b0f3f6
 translation-type: tm+mt
-source-git-commit: 413af4ef9bc3652e05da78d622183bcf20a8bee7
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -26,7 +26,9 @@ U kunt deze taken uitvoeren met de service PDF converteren:
 * Converteer PDF-documenten naar PostScript.
 * PDF-documenten converteren naar afbeeldingsindelingen.
 
-   ***Opmerking **:Zie[Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63)voor meer informatie over de service PDF converteren.*
+>[!NOTE]
+>
+>Zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63)voor meer informatie over de service PDF converteren.
 
 ## PDF-documenten converteren naar PostScript {#converting-pdf-documents-to-postscript}
 

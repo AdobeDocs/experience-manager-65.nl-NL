@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 076889a7-9c9f-4b6f-a45b-67a9b3923c36
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -28,15 +28,17 @@ De dienst van de Registratie van het Eindpunt verstrekt de capaciteit om eindpun
 * (Verouderd voor AEM-formulieren) Verwijderen
 * Taakbeheer
 
-   ***Opmerking **: SOAP, EJB en (Verouderd voor AEM-formulieren op JEE) Eindpunten verwijderen worden automatisch gemaakt voor elke geactiveerde service. De eindpunten SOAP en EJB laten ZEEP en EJB voor alle de dienstverrichtingen toe.*
+>[!NOTE]
+>
+>SOAP, EJB en (Verouderd voor AEM-formulieren op JEE) Eindpunten verwijderen worden automatisch gemaakt voor elke geactiveerde service. De eindpunten SOAP en EJB laten ZEEP en EJB voor alle de dienstverrichtingen toe.
 
-   Een Remoting eindpunt laat Flex cliënten toe om verrichtingen op de dienst van Vormen aan te halen AEM waaraan het eindpunt wordt toegevoegd. Een Flex bestemming met de zelfde naam zoals het eindpunt wordt gecreeerd en Flex cliënten kunnen tot RemoteObjects leiden die aan deze bestemming richten om verrichtingen op de relevante dienst aan te halen.
+Een Remoting eindpunt laat Flex cliënten toe om verrichtingen op de dienst van Vormen aan te halen AEM waaraan het eindpunt wordt toegevoegd. Een Flex bestemming met de zelfde naam zoals het eindpunt wordt gecreeerd en Flex cliënten kunnen tot RemoteObjects leiden die aan deze bestemming richten om verrichtingen op de relevante dienst aan te halen.
 
-   De e-mail, de Manager van de Taak, en de Gecontroleerde eindpunten van de Omslag stellen slechts een specifieke verrichting van de dienst bloot. Het toevoegen van deze eindpunten vereist een tweede configuratiestap om een methode te selecteren om te roepen, configuratieparameters te plaatsen, en input en outputparameterafbeeldingen te specificeren.
+De e-mail, de Manager van de Taak, en de Gecontroleerde eindpunten van de Omslag stellen slechts een specifieke verrichting van de dienst bloot. Het toevoegen van deze eindpunten vereist een tweede configuratiestap om een methode te selecteren om te roepen, configuratieparameters te plaatsen, en input en outputparameterafbeeldingen te specificeren.
 
-   U kunt eindpunten TaskManager in groepen organiseren genoemd *categorieën*. Deze categorieën worden dan blootgesteld aan Werkruimte door TaskManager, met eind - de gebruikers zien de eindpunten TaskManager aangezien zij worden gecategoriseerd. In Workspace zien eindgebruikers deze categorieën in het navigatievenster. De eindpunten binnen elke categorie worden weergegeven als proceskaarten op de pagina Processen starten in Workspace.
+U kunt eindpunten TaskManager in groepen organiseren genoemd *categorieën*. Deze categorieën worden dan blootgesteld aan Werkruimte door TaskManager, met eind - de gebruikers zien de eindpunten TaskManager aangezien zij worden gecategoriseerd. In Workspace zien eindgebruikers deze categorieën in het navigatievenster. De eindpunten binnen elke categorie worden weergegeven als proceskaarten op de pagina Processen starten in Workspace.
 
-   U kunt deze taken verwezenlijken gebruikend de dienst van de Registratie van het Eindpunt:
+U kunt deze taken verwezenlijken gebruikend de dienst van de Registratie van het Eindpunt:
 
 * EJB-eindpunten toevoegen. (Zie EJB-eindpunten [toevoegen](programmatically-endpoints.md#adding-ejb-endpoints).)
 * Voeg de eindpunten van de ZEEP toe. (Zie [SOAP-eindpunten](programmatically-endpoints.md#adding-soap-endpoints)toevoegen.)
@@ -576,7 +578,7 @@ De volgende configuratiewaarden worden geplaatst wanneer programmatically het to
 * **charSet**: De tekenset die door het e-mailprovider wordt gebruikt. De standaardwaarde is `UTF-8`.
 * **smtpSSLEnabled**: Stel deze waarde in om de e-mailprovider te dwingen SSL te gebruiken bij het verzenden van berichten over resultaten of fouten. Zorg ervoor dat de SMTP-host SSL ondersteunt.
 * **failedJobFolder**: Specificeert een folder waarin om resultaten op te slaan wanneer de SMTP postserver niet operationeel is.
-* **asynchroon**: Wanneer deze optie is ingesteld op synchroon, worden alle invoerdocumenten verwerkt en wordt één reactie geretourneerd. Wanneer ingesteld op asynchroon, wordt een reactie verzonden voor elk invoerdocument dat wordt verwerkt. Bijvoorbeeld, wordt een E-maileindpunt gecreeerd voor het proces dat in dit onderwerp wordt geïntroduceerd, en een e-mailbericht wordt verzonden naar inbox van het eindpunt dat veelvoudige onbeveiligde PDF documenten bevat. Wanneer alle PDF-documenten met een wachtwoord zijn versleuteld en als het eindpunt synchroon is geconfigureerd, wordt één e-mailbericht met reacties verzonden met alle beveiligde PDF-documenten als bijlage. Als het eindpunt asynchroon is geconfigureerd, wordt voor elk beveiligd PDF-document een afzonderlijk e-mailantwoordbericht verzonden. Elk e-mailbericht bevat één PDF-document als bijlage. De standaardwaarde is asynchroon.
+* **asynchroon**: Wanneer deze optie is ingesteld op synchroon, worden alle invoerdocumenten verwerkt en wordt één reactie geretourneerd. Wanneer ingesteld op asynchroon, wordt een reactie verzonden voor elk invoerdocument dat wordt verwerkt. Bijvoorbeeld, wordt een E-maileindpunt gecreeerd voor het proces dat in dit onderwerp wordt geïntroduceerd, en een e-mailbericht wordt verzonden naar inbox van het eindpunt dat veelvoudige onbeveiligde PDF documenten bevat. Wanneer alle PDF-documenten met een wachtwoord zijn gecodeerd en als het eindpunt synchroon is geconfigureerd, wordt één e-mailbericht met reacties verzonden met alle beveiligde PDF-documenten als bijlage. Als het eindpunt asynchroon is geconfigureerd, wordt voor elk beveiligd PDF-document een afzonderlijk e-mailantwoordbericht verzonden. Elk e-mailbericht bevat één PDF-document als bijlage. De standaardwaarde is asynchroon.
 
 **Invoerparameterwaarden definiëren**
 

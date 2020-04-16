@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 12da2a9b-4009-496e-953f-c2ae0352f59f
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -29,7 +29,9 @@ Java API Quick Start (SOAP) is beschikbaar voor de service Application Manager.
 
 De verrichtingen van de Vormen van AEM kunnen worden uitgevoerd gebruikend de sterk getypte API van Vormen AEM en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
 
-* ***Opmerking **: Java API (SOAP) Quick Start in Programming with AEM forms is gebaseerd op de Formulieren als u een ander besturingssysteem gebruikt, zoals Unix, vervangt vensters-specifieke paden door paden die door het van toepassing zijnde besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. (Zie Verbindingseigenschappen[instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
+>[!NOTE]
+>
+>Java API (SOAP) Quick Start in Programming with AEM forms is gebaseerd op de Formulieren als u een ander besturingssysteem gebruikt, zoals Unix, vervangt vensters-specifieke paden door paden die door het van toepassing zijnde besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Snel starten (SOAP-modus): Toepassingen implementeren met de Java API {#quick-start-soap-mode-deploying-applications-using-the-java-api}
 

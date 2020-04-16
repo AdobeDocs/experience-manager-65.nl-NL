@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 9fe48243-24c6-4e08-9886-148cd99dec87
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -51,9 +51,11 @@ De volgende snelstarthandleidingen zijn beschikbaar voor de service Forms:
 
 Toepassingslogica die de service-API van Forms gebruikt, wordt geïmplementeerd als Java-servlets. De verrichtingen van de Vormen van AEM kunnen worden uitgevoerd gebruikend sterk-getypte API van Vormen AEM en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
 
-* **Opmerking**: Quick start in Programming with v is gebaseerd op de formulierserver die u gebruikt in een ander besturingssysteem, zoals Unix, vervangt Windows-specifieke paden door paden die worden ondersteund door het desbetreffende besturingssysteem. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. (Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+>[!NOTE]
+>
+>Quick start in Programming with v is gebaseerd op de formulierserver die u gebruikt in een ander besturingssysteem, zoals Unix, vervangt Windows-specifieke paden door paden die worden ondersteund door het desbetreffende besturingssysteem. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-   **Tip**: De website van de Ontwikkelaar van Adobe bevat het volgende artikel dat bespreekt hoe te om een toepassing tot stand te brengen ASP.NET die de dienst van Vormen aanhaalt en vormen teruggeeft. Zie [Formulier genereren ASP.NET-toepassingen](https://www.adobe.com/devnet/livecycle/articles/asp_net.html)maken.
+**Tip**: De website van de Ontwikkelaar van Adobe bevat het volgende artikel dat bespreekt hoe te om een toepassing tot stand te brengen ASP.NET die de dienst van Vormen aanhaalt en vormen teruggeeft. Zie [Formulier genereren ASP.NET-toepassingen](https://www.adobe.com/devnet/livecycle/articles/asp_net.html)maken.
 
 ## Snel starten (SOAP-modus): Een interactief PDF-formulier weergeven met de Java API {#quick-start-soap-mode-rendering-an-interactive-pdf-form-using-the-java-api}
 

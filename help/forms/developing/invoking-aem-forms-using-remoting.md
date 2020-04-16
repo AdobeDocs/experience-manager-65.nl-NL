@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 3d8bb2d3-b1f8-49e1-a529-b3e7a28da4bb
 translation-type: tm+mt
-source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
+source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 ---
 
@@ -127,10 +127,10 @@ docRef.text = "Text for my document";  // Optionally, you can override the ser
 
 * Als het document zich niet op de server bevindt, gebruikt u het verwijderbare uploadserver om een document te uploaden naar AEM Forms. Nieuw in AEM Forms is de mogelijkheid om beveiligde documenten te uploaden. Wanneer u een beveiligd document uploadt, moet u een gebruiker gebruiken die de rol Gebruiker *van de Toepassing van de Toepassing van het* Document uploadt. Zonder deze rol kan de gebruiker geen beveiligd document uploaden. U wordt aangeraden een beveiligd document met één aanmeldingsnaam te uploaden. (Zie Beveiligde documenten [doorgeven om processen aan te roepen met behulp van Verwijderen](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).)
 
-   **Opmerking**: Als AEM Forms is geconfigureerd om onbeveiligde documenten te uploaden, kunt u een gebruiker gebruiken die niet de gebruikersrol Document uploaden heeft om een document te uploaden. Een gebruiker kan ook beschikken over de machtiging Document uploaden. Als AEM Forms echter is geconfigureerd om alleen beveiligde documenten toe te staan, moet u ervoor zorgen dat de gebruiker beschikt over de gebruikersrol Document uploaden of de machtiging Document uploaden. (Zie [AEM-formulieren configureren voor het accepteren van beveiligde en onbeveiligde documenten](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents).)
+>[!NOTE]
+Als AEM Forms is geconfigureerd om onbeveiligde documenten te uploaden, kunt u een gebruiker gebruiken die niet de gebruikersrol Document uploaden heeft om een document te uploaden. Een gebruiker kan ook beschikken over de machtiging Document uploaden. Als AEM Forms echter is geconfigureerd om alleen beveiligde documenten toe te staan, moet u ervoor zorgen dat de gebruiker beschikt over de gebruikersrol Document uploaden of de machtiging Document uploaden. (Zie [AEM-formulieren configureren voor het accepteren van beveiligde en onbeveiligde documenten](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents).
 
-   U gebruikt standaard Flash-uploadmogelijkheden voor de opgegeven upload-URL: `https://SERVER:PORT/remoting/lcfileupload`. Vervolgens kunt u het `DocumentReference` object gebruiken wanneer een invoerparameter van het type `Document` wordt verwacht
-   ` private function startUpload():void  {  fileRef.addEventListener(Event.SELECT, selectHandler);  fileRef.addEventListener("uploadCompleteData", completeHandler);  try  {   var success:Boolean = fileRef.browse();  }    catch (error:Error)  {   trace("Unable to browse for files.");  }  }      private function selectHandler(event:Event):void {  var request:URLRequest = new  URLRequest("https://SERVER:PORT/remoting/lcfileupload")  try   {   fileRef.upload(request);   }    catch (error:Error)   {   trace("Unable to upload file.");   }  }    private function completeHandler(event:DataEvent):void  {   var params:Object = new Object();   var docRef:DocumentReference = new DocumentReference();   docRef.url = event.data as String;   docRef.referenceType = DocumentReference.REF_TYPE_URL;  }`In het dialoogvenster Snel starten verwijderen wordt het verwijderbare uploadserver gebruikt om een PDF-bestand door te geven aan het `MyApplication/EncryptDocument`proces. (Zie [Een kortstondig proces aanroepen door een onbeveiligd document door te geven met (Verouderd voor AEM-formulieren) AEM Forms Remoting](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting).)
+U gebruikt standaard Flash-uploadmogelijkheden voor de opgegeven upload-URL: `https://SERVER:PORT/remoting/lcfileupload`. Vervolgens kunt u het `DocumentReference` object gebruiken op de plaats waar een invoerparameter van het type `Document` wordt verwacht` private function startUpload():void  {  fileRef.addEventListener(Event.SELECT, selectHandler);  fileRef.addEventListener("uploadCompleteData", completeHandler);  try  {   var success:Boolean = fileRef.browse();  }    catch (error:Error)  {   trace("Unable to browse for files.");  }  }      private function selectHandler(event:Event):void {  var request:URLRequest = new  URLRequest("https://SERVER:PORT/remoting/lcfileupload")  try   {   fileRef.upload(request);   }    catch (error:Error)   {   trace("Unable to upload file.");   }  }    private function completeHandler(event:DataEvent):void  {   var params:Object = new Object();   var docRef:DocumentReference = new DocumentReference();   docRef.url = event.data as String;   docRef.referenceType = DocumentReference.REF_TYPE_URL;  }`. Met Snel starten verwijderen wordt het verwijderbare uploadservlet gebruikt om een PDF-bestand door te geven aan het `MyApplication/EncryptDocument`proces. (Zie [Een kortstondig proces aanroepen door een onbeveiligd document door te geven met (Verouderd voor AEM-formulieren) AEM Forms Remoting](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting).)
 
 ```java
  
@@ -197,9 +197,9 @@ In deze sectie wordt beschreven hoe u een AEM Forms-proces activeert en een docu
 
 U maakt een `mx:RemoteObject` instantie om een AEM Forms-proces aan te roepen dat in Workbench is gemaakt. Geef de volgende waarden op om een `mx:RemoteObject` instantie te maken:
 
-* **** id: De naam van de `mx:RemoteObject` instantie die het aan te roepen proces vertegenwoordigt.
-* **** bestemming: De naam van het AEM-formulierproces dat moet worden aangeroepen. Als u bijvoorbeeld het `MyApplication/EncryptDocument` proces wilt aanroepen, geeft u op `MyApplication/EncryptDocument`.
-* **** resultaat: De naam van de Flex methode die het resultaat behandelt.
+* **id:** De naam van de `mx:RemoteObject` instantie die het aan te roepen proces vertegenwoordigt.
+* **bestemming:** De naam van het AEM-formulierproces dat moet worden aangeroepen. Als u bijvoorbeeld het `MyApplication/EncryptDocument` proces wilt aanroepen, geeft u op `MyApplication/EncryptDocument`.
+* **resultaat:** De naam van de Flex methode die het resultaat behandelt.
 
 Geef binnen de `mx:RemoteObject` tag een `<mx:method>` tag op met de naam van de oproepmethode van het proces. De naam van een aanroepingsmethode van Forms is doorgaans `invoke`.
 
@@ -281,7 +281,7 @@ U kunt het `MyApplication/EncryptDocument` proces aanroepen door de volgende sta
 1. Maak een `mx:RemoteObject` instantie via ActionScript of MXML. Zie Een instantie mx:RemoteObject maken.
 1. Stel een `ChannelSet` instantie in voor communicatie met AEM Forms en koppel deze aan de `mx:RemoteObject` instantie. Zie Een kanaal naar AEM-formulieren maken.
 1. Roep de `login` methode van ChannelSet of de `setCredentials` methode van de dienst aan om de waarde en het wachtwoord van het gebruikersherkenningsteken te specificeren. (Zie Single Sign-On [gebruiken](invoking-aem-forms-using-remoting.md#using-single-sign-on).)
-1. Vul een `mx.rpc.livecycle.DocumentReference` exemplaar met een onbeveiligd PDF-document om het door te geven aan het `MyApplication/EncryptDocument` proces. (Zie Een document [doorgeven als een invoerparameter](invoking-aem-forms-using-remoting.md#passing-a-document-as-an-input-parameter).)
+1. Een `mx.rpc.livecycle.DocumentReference` exemplaar vullen met een onbeveiligd PDF-document dat aan het `MyApplication/EncryptDocument` proces wordt doorgegeven. (Zie Een document [doorgeven als een invoerparameter](invoking-aem-forms-using-remoting.md#passing-a-document-as-an-input-parameter).)
 1. Codeer het PDF-document door de `mx:RemoteObject` methode van het `invoke` exemplaar aan te roepen. Geef door `Object` welke de invoerparameter bevat (dit is het onbeveiligde PDF-document). Zie Invoerwaarden doorgeven.
 1. Haal het PDF-document met wachtwoordversleuteling op dat tijdens het proces wordt geretourneerd. Zie Retourwaarden afhandelen.
 
@@ -618,7 +618,7 @@ In het volgende codevoorbeeld wordt de gebruiker `MyApplication/EncryptDocument.
 
 ![iu_iu_securityemotelogin](assets/iu_iu_secureremotelogin.png)
 
-Als AEM Forms wordt gevormd om veilige documenten slechts toe te staan om worden geupload en de gebruiker niet de rol van de Gebruiker *van de Toepassing van de Toepassing van het* Upload van het Document heeft, dan wordt een uitzondering geworpen. Als de gebruiker deze rol wel heeft, wordt het bestand geüpload en wordt het proces aangeroepen.
+Als AEM Forms wordt gevormd om veilige documenten slechts toe te staan om worden geupload en de gebruiker niet de rol van de Gebruiker *van de Toepassing van de Toepassing van het* Upload van het Document heeft, dan wordt een uitzondering geworpen. Als de gebruiker deze rol heeft, wordt het bestand geüpload en wordt het proces aangeroepen.
 
 ```as3
  <?xml version="1.0" encoding="utf-8"?>

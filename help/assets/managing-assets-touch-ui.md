@@ -4,7 +4,7 @@ description: Leer de taken voor middelenbeheer, zoals het uploaden, downloaden, 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f737122575c9fd0af82a8b86d259db61753f2f97
+source-git-commit: dea9bf9387cf4b69e7054e03c5906ecf25cb0d59
 
 ---
 
@@ -161,7 +161,7 @@ Met Dynamic Media kunt u via de FTP-server items in batches uploaden. Als u grot
 1. Tik in de rechterbenedenhoek van de uploadpagina op **[!UICONTROL Uploaden]** verzenden.
 
    Tik op **[!UICONTROL Taken]**op de algemene navigatiebalk om de voortgang van het uploaden weer te geven. Op de pagina Taken wordt de voortgang van het uploaden weergegeven. U kunt in AEM blijven werken en aan de pagina van Banen in Dynamische Klassiek van Media op elk ogenblik terugkeren om een lopende baan te herzien.
-Als u een uploadtaak die wordt uitgevoerd wilt annuleren, tikt u op **[!UICONTROL Annuleren]** naast de duur.
+Tik naast de duur op **[!UICONTROL Annuleren]** om een actieve uploadtaak te annuleren.
 
 #### Opties voor uploaden {#upload-job-options}
 
@@ -306,7 +306,7 @@ Selecteer één ZIP-archief tegelijk, klik op Archiveren **** extraheren en sele
 
 Nadat de extractie is voltooid, brengt AEM u op de hoogte in het systeemvak. Terwijl AEM het ZIP extraheert, kunt u terugkeren naar uw werk zonder de extractie te onderbreken.
 
-![Kennisgeving van de ZIP-extractie](assets/Zip-extraction-notification.png)
+![Melding van uitpakken van ZIP-bestanden](assets/Zip-extraction-notification.png)
 
 Enkele beperkingen van de functie zijn:
 
@@ -326,11 +326,9 @@ Voer de volgende stappen uit om een voorvertoning van een element weer te geven.
 
    Tik/klik op een vergrootglas `+` (of tik/klik op het vergrootglas van het element) om in te zoomen op een element. Tik/klik om uit te zoomen. `-` Wanneer u inzoomt, kunt u elk gebied van de afbeelding nauwkeurig bekijken door te pannen. Met de zoompijl opnieuw instellen keert u terug naar de oorspronkelijke weergave.
 
-   ![uplodicon](assets/uploadicon.png)
-
    Tik op **[!UICONTROL Herstellen]** om de weergave te herstellen naar de oorspronkelijke grootte.
 
-   ![chlimage_1-216](assets/chlimage_1-11.png)
+   ![Het pictogram Opnieuw instellen om de gebruiker terug te brengen naar de oorspronkelijke weergave](assets/chlimage_1-11.png)
 
 **Elementen alleen met toetsenbordtoetsen voorvertonen**
 
@@ -353,11 +351,11 @@ Zie ook Dynamische media-elementen [voorvertonen.](/help/assets/previewing-asset
 
 ## Eigenschappen en metagegevens bewerken {#editing-properties}
 
-1. Navigeer naar de locatie van het element waarvan u de metagegevens wilt bewerken.
+1. Navigeer naar de locatie van het element om de metagegevens te bewerken.
 
 1. Selecteer het element en tik op **[!UICONTROL Eigenschappen]** /klik op de werkbalk om de eigenschappen van het element weer te geven. U kunt ook de snelle actie **[!UICONTROL Eigenschappen]** kiezen op de elementenkaart.
 
-   ![properties_quickaction](assets/properties_quickaction.png)
+   ![Eigenschappen, snelle actie voor de weergave van de elementenkaart](assets/properties_quickaction.png)
 
 1. Bewerk op de pagina [!UICONTROL Eigenschappen] de eigenschappen van de metagegevens onder verschillende tabbladen. Bewerk bijvoorbeeld onder het tabblad **[!UICONTROL Standaard]** de titel, beschrijving, enzovoort.
 
@@ -367,13 +365,13 @@ Zie ook Dynamische media-elementen [voorvertonen.](/help/assets/previewing-asset
 
 1. To schedule a particular date/time for the activation of the asset, use the date picker beside the **[!UICONTROL On Time]** field.
 
-   ![Gebruik de tijdkiezer of de toetsenbordtoetsen in het veld Op tijd om datum en tijd voor activering van het element toe te voegen](assets/schedule-activation.png)
+   ![Tijdkiezer op de datum of gebruik de toetsenbordtoetsen in het veld Op tijd om datum en tijd voor activering van het element toe te voegen](assets/schedule-activation.png)
 
    *Afbeelding: Elementactivering plannen*
 
 1. Als u het element na een bepaalde duur wilt deactiveren, kiest u de datum/tijd van deactivering in de datumkiezer naast het veld **[!UICONTROL Uit-tijd]** . De deactiveringsdatum moet later zijn dan de activeringsdatum voor een element. Na de [!UICONTROL Off Time]zijn een middel en zijn vertoningen niet beschikbaar of via de Webinterface van Middelen of door HTTP API.
 
-   ![gebruik de datumtijdkiezer of de toetsenbordtoetsen in het veld Uit-tijd om datum en tijd toe te voegen voor het deactiveren van elementen](assets/schedule-deactivation.png)
+   ![Datum en tijd kiezen of toetsenbordtoetsen in het veld Uit-tijd gebruiken om datum en tijd toe te voegen voor het deactiveren van elementen](assets/schedule-deactivation.png)
 
    *Afbeelding: Element deactiveren*
 
@@ -385,7 +383,7 @@ Zie ook Dynamische media-elementen [voorvertonen.](/help/assets/previewing-asset
 
 1. To provide a rating to the asset, tap/click the **[!UICONTROL Advanced]** tab and then tap/click the star at the appropriate position to assign the desired rating.
 
-   ![ratings](assets/ratings.png)
+   ![Geavanceerd tabblad in Eigenschappen van element om een waardering toe te wijzen](assets/ratings.png)
 
    De beoordelingsscore die u aan het element toewijst, wordt onder **[!UICONTROL Uw beoordelingen]** weergegeven. De gemiddelde ratingscore die het actief heeft ontvangen van gebruikers die het actief beoordeelden, wordt weergegeven onder **[!UICONTROL Classificatie]**. Daarnaast wordt de opsplitsing van de ratingscores die bijdragen tot de gemiddelde ratingscore weergegeven onder **[!UICONTROL Beoordelingsonderverdelingen]**. U kunt middelen zoeken op basis van gemiddelde score.
 
@@ -414,7 +412,7 @@ Enkele kenmerken die uniek zijn voor een bepaalde kopie van een element, worden 
 De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeeltelijke kopie gemaakt wanneer een element wordt gekopieerd.
 
 1. Selecteer een of meer elementen in de interface Elementen en tik op het pictogram **[!UICONTROL Kopiëren]** op de werkbalk. U kunt ook de snelle actie **[!UICONTROL Kopiëren]** selecteren in de elementenkaart.
-   ![copy_icon](assets/copy_icon.png)
+   ![Pictogram kopiëren in de werkbalk Elementen](assets/copy_icon.png)
 
    >[!NOTE]
    >
@@ -428,7 +426,7 @@ De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeelte
 
 1. Klik op het pictogram Middelen **[!UICONTROL plakken]** of tik erop op de werkbalk.
 
-   ![chlimage_1-219](assets/chlimage_1-14.png)Elementen worden dan gekopieerd aan deze plaats.
+   ![Het pictogram Plakken in de UI-](assets/chlimage_1-14.png)elementen voor de middelenwerkbalk wordt vervolgens naar deze locatie gekopieerd.
 
    >[!NOTE]
    >
@@ -439,7 +437,7 @@ De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeelte
 1. Navigeer naar de locatie van het element dat u wilt verplaatsen.
 
 1. Selecteer het element en tik/klik op het pictogram **[!UICONTROL Verplaatsen]** op de werkbalk.
-   ![move_icon](assets/move_icon.png)
+   ![Pictogram verplaatsen in de werkbalk voor de gebruikersinterface van elementen](assets/move_icon.png)
 
 1. Voer een van de volgende handelingen uit in de wizard Elementen verplaatsen:
 
@@ -555,7 +553,7 @@ Schakel ook de knop forceren verwijderen uit met behulp van een overlay, zodat g
 
 See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 
-## Elementen publiceren {#publishing-assets}
+## Publish assets {#publishing-assets}
 
 >[!NOTE]
 >
@@ -855,7 +853,7 @@ Als een element annotaties in vreemde talen bevat (vooral niet-Latijnse talen), 
 1. Open de configuratiepagina CQ-DAM-Handler-Gibson Font Manager Service via de URL `https://[aem_server]:[port]/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl`.
 1. Voer een van de volgende handelingen uit om CQ-DAM-Handler-Gibson Font Manager Service te configureren:
 
-   * Geef in de directory Systeemlettertypen het volledige pad naar de map met lettertypen op uw systeem op. Als u bijvoorbeeld een Mac-gebruiker bent, kunt u het pad opgeven als */Bibliotheek/Fonts* in de optie Systeemlettertypen. AEM haalt de lettertypen op uit deze map.
+   * Geef in de directory System Fonts (Systeemlettertypen) het volledige pad naar de map Fonts op uw systeem op. Als u bijvoorbeeld een Mac-gebruiker bent, kunt u het pad opgeven als */Bibliotheek/Fonts* in de optie Systeemlettertypen. AEM haalt de lettertypen op uit deze map.
    * Maak een map met de naam `fonts` in de ``crx-quickstart`` map. CQ-DAM-Handler-Gibson Font Manager Service haalt de lettertypen automatisch op de locatie op `crx-quickstart/fonts`. U kunt dit standaardpad overschrijven vanuit de directory Adobe Server Fonts.
 
    * Maak een nieuwe map voor lettertypen op uw systeem en sla de gewenste lettertypen op in de map. Geef vervolgens het volledige pad naar die map op in de directory met lettertypen voor klanten.
@@ -889,7 +887,7 @@ In de volgende gevallen kunt u versies maken in Experience Manager:
 * Bewerk de metagegevens van een element.
 * Gebruik de AEM-bureaubladtoepassing om een bestaand middel uit te checken, te bewerken en uw wijzigingen [te](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#edit-assets-upload-updated-assets)uploaden.
 
-U kunt automatische versioning ook inschakelen via een workflow. Wanneer u een versie voor een element maakt, worden de metagegevens en uitvoeringen samen met de versie opgeslagen. Uitvoeringen zijn alternatieven voor dezelfde afbeeldingen, bijvoorbeeld een PNG-uitvoering van een geüpload JPEG-bestand.
+U kunt automatische versioning ook inschakelen via een workflow. Wanneer u een versie voor een element maakt, worden de metagegevens en de uitvoeringen samen met de versie opgeslagen. Uitvoeringen zijn alternatieven voor dezelfde afbeeldingen, bijvoorbeeld een PNG-uitvoering van een geüpload JPEG-bestand.
 
 1. Navigeer naar de locatie van het element waarvoor u een versie wilt maken en klik erop om de voorvertoning te openen. Open het menu in de linkerbovenhoek van de pagina en selecteer **[!UICONTROL Tijdlijn]**.
 

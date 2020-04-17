@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: e8e2e01b-0117-48c3-86d8-609d29a147be
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 471b57a52efc849eb57201e6397221fa4f88c746
+source-git-commit: 4be5286858b255a30983b5987ac54c4e71dd4f2f
 
 ---
 
@@ -42,7 +42,7 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
    <td>Klanten wordt aangeraden over te schakelen op nieuwe mogelijkheden voor Creative Cloud-integratie, waaronder Adobe Asset Link of AEM-bureaubladtoepassing. Lees de beste praktijken <a href="/help/assets/aem-cc-integration-best-practices.md">voor</a> AEM- en Creative Cloud Integration voor meer informatie.</td>
   </tr>
   <tr>
-   <td>Activa</td>
+   <td>Assets</td>
    <td>
     <ol>
      <li>AssetDownloadServer is standaard uitgeschakeld voor de publicatie-instanties. Zie de <a href="/help/sites-administering/security-checklist.md">AEM-beveiligingscontrolelijst</a>voor meer informatie.</li>
@@ -97,7 +97,7 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
      <li>Als u een nieuwe installatie hebt uitgevoerd:
       <ul>
        <li>Gebruik de ondertekeningservaring op basis van Adobe-handtekeningen in een adaptieve vorm.</li>
-       <li>Gebruik een zelfstandige component voor scriptondertekening in een adaptieve vorm, interactieve communicatie en HTML5 Forms.</li>
+       <li>Gebruik de zelfstandige component voor scriptondertekening in een adaptief formulier, interactieve communicatie en HTML5 Forms.</li>
       </ul> </li>
      <li>Als u een upgrade hebt uitgevoerd van een vorige versie naar AEM 6.5 Forms:<br />
       <ul>
@@ -151,6 +151,11 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
    <td><p>Klassieke UI Dialog Editor in CRXDE-lijst</p> <p>Adobe is niet van plan om de Klassieke Redacteur van de Dialoog UI verder te verbeteren die als deel van de distributie (QuickStart) wordt verscheept</p> </td>
    <td> </td>
   </tr>
+  <tr>
+   <td>Formulieren</td>
+   <td><p>Integratie van AEM-formulieren met AEM Mobile&lt; is afgekeurd </p> </td>
+   <td>Geen vervanging </td>
+  </tr>
  </tbody>
 </table>
 
@@ -166,9 +171,10 @@ Deze sectie bevat een lijst met functies en mogelijkheden die zijn verwijderd ui
 | Formulieren | De ondersteuning voor de Adobe Central Migration Bridge-service is verwijderd omdat het Adobe Central-product niet meer wordt ondersteund. | Geen vervanging |
 | Formulieren | `com.adobe.fd.df.fdinternal.model.ConfigurationInstance` | Geen vervanging |
 | Formulieren | `com.adobe.fd.ccm.channels.print.fdinternal.api.service.PrintDataTransformer` | Geen vervanging |
+| Formulieren | Single-hop verbetering van S4 SP1 aan Vormen AEM 6.5 op JEE is niet beschikbaar | Zie de [beschikbare upgradepaden](../forms/using/upgrade.md) in de upgradedocumentatie van AEM Forms. |
 | Ontwikkelaars | Firebug Lite is verwijderd uit de standaarddistributie (QuickStart) | De ingebouwde browserconsoles voor ontwikkelaars gebruiken |
 | Ontwikkelaars | Verwijder `customJavaScriptPath` ondersteuning in HTML Client Library Manager. | Geen vervanging |
-| Activa | De functie voor het offloaden van middelen is verwijderd uit AEM 6.5 | Geen vervanging |
+| Assets | De functie voor het offloaden van middelen is verwijderd uit AEM 6.5 | Geen vervanging |
 | Cache | `system/console/slingjsp` is verwijderd, is niet meer beschikbaar in AEM 6.5. | Klassen en de cache wordt iets opgeslagen onder de bundel FileSystem ClassLoader van Apache Sling Commons. U kunt het bundelnummer controleren in de AEM-webconsole en de cachemap rechtstreeks uit het bestandssysteem (`crx-quickstart/launchpad/felix/bundle<ID>`) verwijderen. |
 
 ## Vooraankondiging voor volgende release {#pre-announcement-for-next-release}
@@ -177,4 +183,4 @@ Deze sectie wordt gebruikt om veranderingen in toekomstige versie vooraf aan te 
 
 | Gebied | Functie | Aankondiging |
 |--- |--- |--- |
-| Stichting | UI Framework | Adobe is van plan de Coral UI 2-componenten in 2019 te vervangen. Koraal UI 3 werd geïntroduceerd met AEM 6.2, en AEM 6.5 is volledig gebaseerd op Koraal 3. Adobe raadt klanten en partners die aangepaste UI&#39;s met Coral 2 hebben gemaakt aan om deze opnieuw te bemonsteren naar Coral 3. Adobe biedt een programma voor het omzetten van de dialoogvensters voor koraal 2 naar koraal 3 - [Meer](/help/sites-developing/dialog-conversion.md)informatie. |
+| Stichting | UI Framework | Adobe is van plan de Coral UI 2-componenten in 2019 te vervangen. Koraal UI 3 werd geïntroduceerd met AEM 6.2, en AEM 6.5 is volledig gebaseerd op Koraal 3. Adobe raadt klanten en partners die aangepaste UI&#39;s met Coral 2 hebben gemaakt aan om deze opnieuw te bemonsteren naar Coral 3. Adobe biedt een programma voor het converteren van de dialoogvensters Koraal 2 naar koraal 3 - [Meer](/help/sites-developing/dialog-conversion.md)informatie. |

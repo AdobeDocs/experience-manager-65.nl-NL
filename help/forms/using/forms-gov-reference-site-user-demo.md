@@ -8,7 +8,7 @@ contentOwner: anujkapo
 discoiquuid: ddb3778b-be06-4cde-bc6e-0994efa42b18
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f323b490c37effc3cbb36c793b62fa788eca9545
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -116,7 +116,9 @@ Aya beantwoordt een paar vragen om haar geschiktheid te bevestigen door een kort
 
 1. Maak een selectie in elk vervolgkeuzeveld.
 
-   1. Opmerking: Als de gebruiker meer dan $200.000/jaar verdient, komen ze niet in aanmerking.
+   >[!NOTE]
+   >
+   >Als de gebruiker meer dan $200.000/jaar verdient, komen ze niet in aanmerking.
 
 1. Klik op &quot;**Ben ik in aanmerking komend?**” button.
 1. Klik op de knop &quot;Nu **toepassen**&quot; om door te gaan.

@@ -10,7 +10,7 @@ topic-tags: customization
 discoiquuid: 7566203f-2f80-4ce7-bff9-073d67119f64
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 13cc8ba8fda8fa0e5fac6bb92d1d4fc4849492eb
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -31,7 +31,7 @@ Met Forms Portal kunt u aangepaste metagegevens in formulierlijsten gebruiken. W
 
 Voer de volgende stappen uit om een douanemalplaatje voor diverse Poortcomponenten van Forms tot stand te brengen.
 
-## Een aangepaste sjabloon maken {#creating-a-nbsp-custom-template}
+## Creating a custom template {#creating-a-nbsp-custom-template}
 
 1. Een sling maken:mapknooppunt onder /apps
 
@@ -45,8 +45,12 @@ Voer de volgende stappen uit om een douanemalplaatje voor diverse Poortcomponent
    * Koppelingscomponent: /libs/fd/fp/linkTemplate
    Voeg een titel toe die u wilt weergeven tijdens het selecteren van lay-outsjablonen.
 
-   *Opmerking: De titel kan verschillen van de knooppuntnaam van sling:Folder u creeerde.*
-   *In de volgende afbeelding ziet u de configuratie voor de component Search &amp; Lister.* Een ![tekenreeks maken:map](assets/1.png)
+   >[!NOTE]
+   >
+   >De titel kan verschillen van de knooppuntnaam van sling:Folder u creeerde.
+
+   In de volgende afbeelding ziet u de configuratie voor de component Search &amp; Lister.
+   ![Een tekenreeks maken:map](assets/1.png)
 
 1. Maak een bestandssjabloon.html in deze map om als aangepaste sjabloon te dienen.
 1. Schrijf de aangepaste sjabloon en gebruik aangepaste metagegevens zoals hieronder beschreven.
@@ -93,7 +97,7 @@ Verschillende Forms Portal-componenten bieden exclusieve sets OOTB-metagegevens 
 
 ### Onderdeel Zoeken en bibliotheken {#search-amp-lister-component}
 
-* **** Titel: Titel van het formulier
+* **Titel:** Titel van het formulier
 * **naam**: Naam van het formulier (meestal gelijk aan de titel)
 * **beschrijving**: Beschrijving van het formulier
 * **formUrl**: URL om het formulier te genereren als HTML
@@ -102,7 +106,9 @@ Verschillende Forms Portal-componenten bieden exclusieve sets OOTB-metagegevens 
 
 * **htmlStyle**&amp; **pdfStyle**: Weergavestijl voor respectievelijk HTML- en PDF-pictogrammen die worden gebruikt voor rendering. Geldige waarden zijn &quot;**__FP_display_none**&quot; of &quot;blank&quot;.
 
-   **** Opmerking: Vergeet niet de klasse __FP_display_none in uw aangepaste stijlblad te gebruiken
+>[!NOTE]
+>
+>Vergeet niet de klasse __FP_display_none in uw aangepaste stijlblad te gebruiken.
 
 * **downloadUrl**: URL om een middel te downloaden.
 
@@ -118,7 +124,7 @@ Voor de koptekst &#39;Titel&#39; in de rasterweergave is de waarde van de header
 
 ### Component Koppelen {#link-component}
 
-* **** Titel: Titel van het formulier
+* **Titel:** Titel van het formulier
 * **formUrl**: URL om het formulier te genereren als HTML
 * **doel**: Doelkenmerk van de koppeling. Geldige waarden zijn &quot;_blank&quot; en &quot;_self&quot;.
 * **linkText**: Bijschrift koppelen
@@ -149,15 +155,15 @@ Voor de koptekst &#39;Titel&#39; in de rasterweergave is de waarde van de header
 
 **A**. Containerelement
 
-**** B. &#39;path&#39;-metagegevens met een vaste hiërarchie om de voor elk formulier opgeslagen miniatuur te verkrijgen.
+**B.** &#39;path&#39;-metagegevens met een vaste hiërarchie om de voor elk formulier opgeslagen miniatuur te verkrijgen.
 
 **C.** Attribuut dat gegevens-herhaalbaar voor de malplaatjesectie voor elk vorm wordt gebruikt
 
-**** D. De tekenreeks Toepassen lokaliseren
+**D.** De tekenreeks Toepassen lokaliseren
 
-**** E. De configuratieeigenschap pdfLinkText gebruiken
+**E.** De configuratieeigenschap pdfLinkText gebruiken
 
-**** F. De metagegevens &quot;pdfUrl&quot; gebruiken
+**F.** De metagegevens &quot;pdfUrl&quot; gebruiken
 
 ## Tips, trucs en bekende problemen {#tips-tricks-and-known-issues}
 

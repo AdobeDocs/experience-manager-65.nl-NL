@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -78,7 +78,9 @@ Voer de volgende stappen uit, op alle auteur en publiceer instanties, om de stee
    Een andere naam voor de gegevenstabel opgeven:
 
    * In de Configuratie van de Console van het Web, vind en klik de Steekproef van de Dienst van Gegevens van het Portaal van Vormen Implementatie. U kunt de waarden van gegevensbron en naam van de gegevenslijst veranderen.
-   **Opmerking**: Als u de tabelnamen wijzigt, geeft u deze op in de configuratie Formulierportal.
+   >[!NOTE]
+   >
+   >Als u de tabelnamen wijzigt, geeft u deze op in de configuratie Formulierportal.
 
 1. Andere configuraties ongewijzigd laten en op **[!UICONTROL Opslaan]** klikken.
 

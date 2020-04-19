@@ -8,7 +8,7 @@ contentOwner: admin
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 discoiquuid: 20ca99e3-4843-4254-b3e9-0255cc752363
 translation-type: tm+mt
-source-git-commit: d3719a9ce2fbb066f99445475af8e1f1e7476f4e
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -21,7 +21,8 @@ Gebruiker- en groepsgegevens worden bijgehouden in een opslagsysteem van derden,
 
 Wanneer u gebruikers creeert, kunt u hen aan groepen toevoegen en rollen toewijzen aan hen.
 
-1. Klik in de beheerconsole op **[!UICONTROL Instellingen > Gebruikersbeheer > Gebruikers en groepen]** en klik op **[!UICONTROL Nieuwe gebruiker]**. .
+1. Klik in de beheerconsole op **[!UICONTROL Instellingen > Gebruikersbeheer > Gebruikers en groepen]** en klik op **[!UICONTROL Nieuwe gebruiker]**.
+.
 1. Geef onder **[!UICONTROL Algemene instellingen]** de vereiste informatie op en klik op **[!UICONTROL Volgende]**. Zie [Gebruikersinstellingen](adding-configuring-users.md#user-settings)voor meer informatie over de instellingen.
 1. (Optioneel) Als u de gebruiker aan een groep wilt toevoegen, klikt u op Groepen **** zoeken en voert u de volgende taken uit:
 
@@ -29,9 +30,9 @@ Wanneer u gebruikers creeert, kunt u hen aan groepen toevoegen en rollen toewijz
    * Selecteer het domein waarnaar u wilt zoeken, selecteer het aantal items dat u wilt weergeven en klik op **[!UICONTROL Zoeken]**.
    * (Optioneel) Als u groepdetails wilt weergeven, selecteert u de groepsnaam en klikt u op **[!UICONTROL OK]** om terug te keren naar de pagina met zoekresultaten.
    * Schakel het selectievakje voor de groep in en klik op **[!UICONTROL OK]**.
-   * Click **[!UICONTROL Next]**.
+   * Klik op **[!UICONTROL Next]**.
 
-1. (Optioneel) Als u rollen wilt toewijzen aan de gebruiker, klikt u op Rollen **** zoeken, schakelt u het selectievakje in voor de rollen die u wilt toewijzen en klikt u vervolgens op **[!UICONTROL OK]**.
+1. (Optioneel) Als u rollen wilt toewijzen aan de gebruiker, klikt u op Rollen **** zoeken, schakelt u het selectievakje in voor de rollen die u wilt toewijzen en klikt u op **[!UICONTROL OK]**.
 1. Click **[!UICONTROL Finish]**.
 
    >[!NOTE]
@@ -42,33 +43,33 @@ Wanneer u gebruikers creeert, kunt u hen aan groepen toevoegen en rollen toewijz
 
 Geef de volgende instellingen op wanneer u een gebruiker maakt of bewerkt.
 
-**** Canonieke naam: (Verplicht) Unieke identificatiecode voor de gebruiker. Elke gebruiker en groep in een domein moet een unieke canonieke naam hebben. Schakel het selectievakje Door systeem gegenereerd in als u wilt dat gebruikersbeheer een unieke waarde toewijst of schakel het selectievakje uit en geef een aangepaste waarde op voor Canonical Name.
+**Canonieke naam:** (Verplicht) Unieke identificatiecode voor de gebruiker. Elke gebruiker en groep in een domein moet een unieke canonieke naam hebben. Schakel het selectievakje Door systeem gegenereerd in als u wilt dat gebruikersbeheer een unieke waarde toewijst of schakel het selectievakje uit en geef een aangepaste waarde op voor Canonical Name.
 
 Gebruik bijvoorbeeld geen onderstrepingstekens (_) in canonieke namen `sample_user`. Wanneer u naar gebruikers zoekt op basis van hun canonieke naam, worden de gebruikers met onderstrepingstekens niet geretourneerd.
 
-**** Voornaam: (Verplicht) Gebruikersnaam
+**Voornaam:** (Verplicht) Gebruikersnaam
 
-**** Achternaam: (Verplicht) Familienaam van de gebruiker
+**Achternaam:** (Verplicht) Familienaam van de gebruiker
 
-**** Algemene naam: Volledige naam of weergavenaam voor de gebruiker. Bijvoorbeeld, als Voornaam = Gloria en Achternaam = Rios, dan Gemeenschappelijke Naam = Gloria Rios.
+**Algemene naam:** Volledige naam of weergavenaam voor de gebruiker. Bijvoorbeeld, als Voornaam = Gloria en Achternaam = Rios, dan Gemeenschappelijke Naam = Gloria Rios.
 
-**** E-mail: E-mailadres van gebruiker
+**E-mail:** E-mailadres van gebruiker
 
-**** Telefoon: Telefoonnummer van gebruiker
+**Telefoon:** Telefoonnummer van gebruiker
 
-**** Omschrijving: Optionele beschrijving. U kunt dit veld gebruiken in overeenstemming met de behoeften van uw organisatie.
+**Omschrijving:** Optionele beschrijving. U kunt dit veld gebruiken in overeenstemming met de behoeften van uw organisatie.
 
-**** Adres: E-mailadres van gebruiker
+**Adres:** E-mailadres van gebruiker
 
-**** Organisatie: Organisatie waartoe de gebruiker behoort
+**Organisatie:** Organisatie waartoe de gebruiker behoort
 
-**** E-mailaliassen: E-mailaliassen van de gebruiker. Scheid de e-mailaliassen met komma&#39;s.
+**E-mailaliassen:** E-mailaliassen van de gebruiker. Scheid de e-mailaliassen met komma&#39;s.
 
-**** Domein: Domein waartoe de gebruiker behoort
+**Domein:** Domein waartoe de gebruiker behoort
 
-**** Landinstelling: Landinstelling ISO van gebruiker
+**Landinstelling:** Landinstelling ISO van gebruiker
 
-**** Sleutel zakelijke agenda: Laat u toe om een bedrijfskalender aan een gebruiker in kaart te brengen, die op de waarde voor dit het plaatsen wordt gebaseerd. Zakelijke kalenders definiëren zakelijke en niet-zakelijke dagen. AEM-formulieren kunnen bedrijfscalenders gebruiken voor het berekenen van toekomstige datums en tijden voor gebeurtenissen zoals herinneringen, deadlines en escalaties. De manier waarop u zakelijke kalendersleutels toewijst aan gebruikers hangt af van of u een onderneming, lokaal, of hybride domein gebruikt. (Zie [Domeinen](/help/forms/using/admin-help/adding-domains.md#adding-domains)toevoegen.)
+**Sleutel zakelijke agenda:** Laat u toe om een bedrijfskalender aan een gebruiker in kaart te brengen, die op de waarde voor dit het plaatsen wordt gebaseerd. Zakelijke kalenders definiëren zakelijke en niet-zakelijke dagen. AEM-formulieren kunnen bedrijfscalenders gebruiken voor het berekenen van toekomstige datums en tijden voor gebeurtenissen zoals herinneringen, deadlines en escalaties. De manier waarop u zakelijke kalendersleutels toewijst aan gebruikers hangt af van of u een onderneming, lokaal, of hybride domein gebruikt. (Zie [Domeinen](/help/forms/using/admin-help/adding-domains.md#adding-domains)toevoegen.)
 
 Als u een lokaal of hybride domein gebruikt, wordt de informatie over gebruikers opgeslagen slechts in het gegevensbestand van het Beheer van de Gebruiker. Stel voor deze gebruikers de Business Calendar Key in op een tekenreeks. Wijs vervolgens de agenda-key van het bedrijf (de tekenreeks) toe aan een zakelijke kalender in de formulierworkflow.
 
@@ -78,7 +79,7 @@ Voor extra informatie over bedrijfscalendars, met inbegrip van hoe te om bedrijf
 
 Beperk de naam tot minder dan 53 tekens. Een kortere naam helpt problemen verhinderen tonend de bedrijfskalendersleutel in de pagina&#39;s van het Beheer van het Proces in beleidsconsole.
 
-**** Gebruikersnaam: (Verplicht) Gebruikersnaam die de gebruiker gebruikt om zich aan te melden. De gebruikersnaam is niet hoofdlettergevoelig en moet in het hele domein uniek zijn.
+**Gebruikersnaam:** (Verplicht) Gebruikersnaam die de gebruiker gebruikt om zich aan te melden. De gebruikersnaam is niet hoofdlettergevoelig en moet in het hele domein uniek zijn.
 
 In ondernemingsdomeinen, gebruik een niet-DN attribuut als gebruiker - identiteitskaart omdat DN van een gebruiker kan veranderen als zij naar een ander deel van de organisatie bewegen. Deze instelling is afhankelijk van de directoryserver. De waarde is `objectGUID` voor Actieve Folder 2003, `nsuniqueID` voor Sun™ Één, en `guid` voor eDirectory.
 
@@ -90,9 +91,9 @@ Wanneer u SQL Server als uw database gebruikt, kunt u geen gebruikers-id maken d
 
 Wanneer u MySQL gebruikt, kan de gebruikersnaam uitgebreide tekens bevatten. Wanneer echter een vergelijking wordt gemaakt tussen twee tekenreeksen, zoals abcde en âbcdè, worden deze als hetzelfde beschouwd. Als bij het synchroniseren bijvoorbeeld een nieuwe gebruiker aan de database is toegevoegd, wordt een vergelijking gemaakt om te controleren of een gebruiker met dezelfde gebruikersnaam in de database aanwezig is. Als de gebruiker *abcde* reeds in het gegevensbestand bestaat wanneer de nieuwe gebruiker *âbcdè* wordt toegevoegd, kan de vergelijking niet tussen de twee namen onderscheiden. Aangenomen wordt dat de gebruiker al in de database bestaat en de nieuwe gebruiker wordt genegeerd en niet toegevoegd.
 
-Maak geen gebruikersnamen die met een hekje (#) beginnen. Het uitvoeren van taakonderzoeken keert geen resultaten voor die gebruikersnamen terug. (Zie [Werken met taken](/help/forms/using/admin-help/tasks.md#working-with-tasks).)
+Maak geen gebruikersnamen die met een hekje (#) beginnen. Het uitvoeren van taakonderzoeken keert geen resultaten voor die gebruikersnamen terug. (See [Working with tasks](/help/forms/using/admin-help/tasks.md#working-with-tasks).)
 
-**** Wachtwoord en wachtwoord bevestigen: Wachtwoord dat de gebruiker gebruikt om zich aan te melden. Het moet minimaal acht tekens hebben. Een wachtwoord is niet vereist voor een gebruiker die deel uitmaakt van een hybride domein.
+**Wachtwoord en wachtwoord bevestigen:** Wachtwoord dat de gebruiker gebruikt om zich aan te melden. Het moet minimaal acht tekens hebben. Een wachtwoord is niet vereist voor een gebruiker die deel uitmaakt van een hybride domein.
 
 ## Details van een gebruiker weergeven {#view-details-about-a-user}
 
@@ -127,10 +128,12 @@ Maak geen gebruikersnamen die met een hekje (#) beginnen. Het uitvoeren van taak
 
    * Klik op Groep **** zoeken en voer de zoekinformatie in.
    * Als u de gebruiker aan een nieuwe groep wilt toevoegen, schakelt u het selectievakje voor de groep in, klikt u op **[!UICONTROL OK]** en vervolgens op **[!UICONTROL Opslaan]**.
-
-      ***Opmerking **: Lokale gebruikers kunnen niet worden toegevoegd aan directorygroepen. Directorygebruikers kunnen echter wel aan lokale groepen worden toegevoegd.*
+   >[!NOTE]
+   >
+   >Lokale gebruikers kunnen niet worden toegevoegd aan directorygroepen. Directorygebruikers kunnen echter wel aan lokale groepen worden toegevoegd.
 
    * Als u de gebruiker uit een groep wilt verwijderen, schakelt u het selectievakje voor de groep in, klikt u op **[!UICONTROL Verwijderen]** en vervolgens op **[!UICONTROL Opslaan]**.
+
 
 1. Als u de rollen van de gebruiker wilt bewerken, klikt u op het tabblad **[!UICONTROL Roltoewijzingen]** en voert u de volgende taken uit:
 
@@ -161,7 +164,7 @@ Als een gebruiker zonder de vereiste AEM-formulieren en CQ-machtigingen zich pro
 * Correspondentenbeheeroplossing
 * AEM-formulierwerkruimte
 
-   ***opmerking **:De Flex-werkruimte is verouderd voor de release van AEM-formulieren.*
+   ***opmerking **: De Flex-werkruimte is verouderd voor de release van AEM-formulieren.*
 
 * formulierbeheer
 * Procesrapportage

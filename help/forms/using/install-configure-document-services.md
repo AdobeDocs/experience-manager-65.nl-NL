@@ -7,42 +7,39 @@ uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: a6afa740fa7897ef2629ca7ba07d6a1e08113957
 
 ---
 
 
 # Documentservices installeren en configureren {#installing-and-configuring-document-services}
 
-## Inleiding {#introduction}
-
 AEM Forms biedt een set OSGi-services voor het uitvoeren van verschillende bewerkingen op documentniveau, zoals services voor het maken, samenstellen, distribueren en archiveren van PDF-documenten, het toevoegen van digitale handtekeningen om de toegang tot documenten te beperken en het decoderen van streepjescoderingsformulieren. Deze services zijn opgenomen in het invoegpakket voor AEM Forms. Deze services worden gezamenlijk documentservices genoemd. De lijst met beschikbare documentservices en hun belangrijkste mogelijkheden is als volgt:
 
-Hiermee kunt u PDF- en XDP-documenten combineren, opnieuw rangschikken en vergroten en informatie over PDF-documenten verkrijgen. Het helpt ook PDF-documenten te converteren en te valideren naar PDF/A-standaard, PDF-formulieren, XML-formulieren en PDF-formulieren te converteren naar PDF/A-1b, PDF/A-2b en PDFA/A-3b. Voor meer informatie, zie de Dienst van de [Assembler](/help/forms/using/assembler-service.md).
+* **Assembler-service:** Hiermee kunt u PDF- en XDP-documenten combineren, opnieuw rangschikken en vergroten en informatie over PDF-documenten verkrijgen. Het helpt ook PDF-documenten te converteren en te valideren naar PDF/A-standaard, PDF-formulieren, XML-formulieren en PDF-formulieren te converteren naar PDF/A-1b, PDF/A-2b en PDFA/A-3b. Voor meer informatie, zie de Dienst van de [Assembler](/help/forms/using/assembler-service.md).
 
-Hiermee kunt u PDF-documenten converteren naar PostScript- of afbeeldingsbestanden (JPEG, JPEG 2000, PNG en TIFF). Zie [ConvertPDF Service](/help/forms/using/using-convertpdf-service.md)voor meer informatie.
+* **ConvertPDF-service:** Hiermee kunt u PDF-documenten converteren naar PostScript- of afbeeldingsbestanden (JPEG, JPEG 2000, PNG en TIFF). Zie [ConvertPDF Service](/help/forms/using/using-convertpdf-service.md)voor meer informatie.
 
-Hiermee kunt u gegevens extraheren uit elektronische afbeeldingen van streepjescodes. De service accepteert TIFF- en PDF-bestanden die een of meer streepjescodes bevatten als invoer en extraheert de streepjescodegegevens. Zie [Barcoded Forms Service](/help/forms/using/using-barcoded-forms-service.md)voor meer informatie.
+* **Service Barcoded Forms:** Hiermee kunt u gegevens extraheren uit elektronische afbeeldingen van streepjescodes. De service accepteert TIFF- en PDF-bestanden die een of meer streepjescodes bevatten als invoer en extraheert de streepjescodegegevens. Zie [Barcoded Forms Service](/help/forms/using/using-barcoded-forms-service.md)voor meer informatie.
 
-Hiermee kunt u documenten versleutelen en ontsleutelen, de functionaliteit van Adobe Reader uitbreiden met extra gebruiksrechten en digitale handtekeningen toevoegen aan uw documenten. De dienst van de Verzekering van Doc bevat drie diensten: handtekening, versleuteling en reader-extensie. Zie [DocAssurance Service](/help/forms/using/overview-aem-document-services.md)voor meer informatie.
+* **DocAssurance-service:** Hiermee kunt u documenten versleutelen en ontsleutelen, de functionaliteit van Adobe Reader uitbreiden met extra gebruiksrechten en digitale handtekeningen toevoegen aan uw documenten. De dienst van de Verzekering van Doc bevat drie diensten: handtekening, versleuteling en reader-extensie. Zie [DocAssurance Service](/help/forms/using/overview-aem-document-services.md)voor meer informatie.
 
-Hiermee kunt u documenten versleutelen en ontsleutelen. Wanneer een document wordt versleuteld, wordt de inhoud ervan onleesbaar. Een geautoriseerde gebruiker kan het document decoderen om toegang tot de inhoud te krijgen. Zie [Coderingsservice](/help/forms/using/overview-aem-document-services.md#p-encryption-service-p)voor meer informatie.
+* **Coderingsservice:** Hiermee kunt u documenten versleutelen en ontsleutelen. Wanneer een document wordt versleuteld, wordt de inhoud ervan onleesbaar. Een geautoriseerde gebruiker kan het document decoderen om toegang tot de inhoud te krijgen. Zie [Coderingsservice](/help/forms/using/overview-aem-document-services.md#encryption-service)voor meer informatie.
 
-Hiermee kunt u interactieve toepassingen voor het vastleggen van gegevens maken die formulieren valideren, verwerken, transformeren en leveren die normaal gesproken in Forms Designer worden gemaakt. Met de service Forms kunt u elk formulierontwerp dat u ontwikkelt naar PDF-documenten renderen. Zie [Formulierservice](/help/forms/using/forms-service.md)voor meer informatie.
+* **Formulierservice:** Hiermee kunt u interactieve toepassingen voor het vastleggen van gegevens maken die formulieren valideren, verwerken, transformeren en leveren die normaal gesproken in Forms Designer worden gemaakt. Met de service Forms kunt u elk formulierontwerp dat u ontwikkelt naar PDF-documenten renderen. Zie [Formulierservice](/help/forms/using/forms-service.md)voor meer informatie.
 
-Hiermee kunt u documenten in verschillende indelingen maken, zoals PDF, laserprinterindelingen en labelprinterindelingen. Indelingen voor laserprinters zijn PostScript en Printer Control Language (PCL). Zie [Uitvoerservice](/help/forms/using/output-service.md)voor meer informatie.
+* **Uitvoerservice:** Hiermee kunt u documenten in verschillende indelingen maken, zoals PDF, laserprinterindelingen en labelprinterindelingen. Indelingen voor laserprinters zijn PostScript en Printer Control Language (PCL). Zie [Uitvoerservice](/help/forms/using/output-service.md)voor meer informatie.
 
-De service PDF Generator biedt API&#39;s waarmee native bestandsindelingen naar PDF kunnen worden geconverteerd. Ook wordt PDF geconverteerd naar andere bestandsindelingen en wordt de grootte van PDF-documenten geoptimaliseerd. Zie [PDF Generator Service](aem-document-services-programmatically.md#pdfgeneratorservice)voor meer informatie.
+* **Service van PDF Generator:** De service PDF Generator biedt API&#39;s waarmee native bestandsindelingen naar PDF kunnen worden geconverteerd. Ook wordt PDF geconverteerd naar andere bestandsindelingen en wordt de grootte van PDF-documenten geoptimaliseerd. Zie [PDF Generator Service](aem-document-services-programmatically.md#pdfgeneratorservice)voor meer informatie.
 
-Hiermee kan uw organisatie interactieve PDF-documenten eenvoudig delen door de functionaliteit van Adobe Reader uit te breiden met extra gebruiksrechten. De service activeert functies die niet beschikbaar zijn wanneer een PDF-document wordt geopend met Adobe Reader, zoals het toevoegen van opmerkingen aan een document, het invullen van formulieren en het opslaan van het document. Zie [Reader Extension Service](/help/forms/using/overview-aem-document-services.md#p-reader-extension-service-p)voor meer informatie.
+* **Reader Extension Service:** Hiermee kan uw organisatie interactieve PDF-documenten eenvoudig delen door de functionaliteit van Adobe Reader uit te breiden met extra gebruiksrechten. De service activeert functies die niet beschikbaar zijn wanneer een PDF-document wordt geopend met Adobe Reader, zoals het toevoegen van opmerkingen aan een document, het invullen van formulieren en het opslaan van het document. Zie [Reader Extension Service](/help/forms/using/overview-aem-document-services.md#reader-extension-service)voor meer informatie.
 
-Hiermee kunt u werken met digitale handtekeningen en documenten op de AEM-server. De service Handtekening wordt bijvoorbeeld doorgaans in de volgende situaties gebruikt:
+* **Handtekeningenservice:** Hiermee kunt u werken met digitale handtekeningen en documenten op de AEM-server. De service Handtekening wordt bijvoorbeeld doorgaans in de volgende situaties gebruikt:
 
-* De AEM-server certificeert een formulier voordat het naar een gebruiker wordt verzonden om te worden geopend met Acrobat of Adobe Reader.
-* De AEM-server valideert een handtekening die aan een formulier is toegevoegd met Acrobat of Adobe Reader.
-* De AEM-server ondertekent een formulier namens een openbare notaris.
-
-De handtekeningsdienst heeft toegang tot certificaten en geloofsbrieven die in de vertrouwde opslag worden opgeslagen. Zie [Handtekeningenservice](/help/forms/using/aem-document-services-programmatically.md)voor meer informatie.
+   * De AEM-server certificeert een formulier voordat het naar een gebruiker wordt verzonden om te worden geopend met Acrobat of Adobe Reader.
+   * De AEM-server valideert een handtekening die aan een formulier is toegevoegd met Acrobat of Adobe Reader.
+   * De AEM-server ondertekent een formulier namens een openbare notaris.
+   De handtekeningsdienst heeft toegang tot certificaten en geloofsbrieven die in de vertrouwde opslag worden opgeslagen. Zie [Handtekeningenservice](/help/forms/using/aem-document-services-programmatically.md)voor meer informatie.
 
 AEM Forms is een krachtig platform op bedrijfsniveau en de documentservices zijn slechts een van de mogelijkheden van AEM Forms. Voor de volledige lijst van mogelijkheden, zie [Inleiding aan Vormen](/help/forms/using/introduction-aem-forms.md)AEM.
 
@@ -50,7 +47,7 @@ AEM Forms is een krachtig platform op bedrijfsniveau en de documentservices zijn
 
 AEM Forms add-on package is een toepassing die op AEM wordt geïmplementeerd. Over het algemeen hebt u slechts één AEM-instantie (auteur of publicatie) nodig om AEM Forms-documentservices uit te voeren. De volgende topologie wordt geadviseerd om de het documentdiensten van Vormen AEM in werking te stellen. Voor gedetailleerde informatie over topologieën, zie [Architectuur en plaatsingstopologieën voor Vormen](/help/forms/using/aem-forms-architecture-deployment.md)AEM.
 
-![](do-not-localize/document-services.png)
+![Architectuur en plaatsingstopologieën voor Vormen AEM](do-not-localize/document-services.png)
 
 >[!NOTE]
 >
@@ -75,7 +72,7 @@ Voordat u begint met het installeren en configureren van AEM Forms-documentservi
 
 * Clientsoftware die vereist is voor conversie door PDF-generator op Microsoft Windows en Linux wordt geïnstalleerd:
 
-   * **Microsoft Windows**: Microsoft [Office](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p)of [Apache OpenOffice installeren](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p)
+   * **Microsoft Windows**: Microsoft [Office](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p)of [Apache OpenOffice installeren](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator)
    * **Linux**: Apache [OpenOffice installeren](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p)
 
 >[!NOTE]
@@ -85,6 +82,8 @@ Voordat u begint met het installeren en configureren van AEM Forms-documentservi
 >
 
 
+
+### Extra eisen voor het op UNIX gebaseerde besturingssysteem {#extrarequirements}
 
 Als u het op UNIX gebaseerde besturingssysteem gebruikt, installeert u de volgende pakketten via de installatiemedia van het desbetreffende besturingssysteem:
 
@@ -187,6 +186,10 @@ Als u het op UNIX gebaseerde besturingssysteem gebruikt, installeert u de volgen
    * ld-linux.so.2
    * libexpat.so.1
 
+## Vooraf geïnstalleerde configuraties {#preinstallationconfigurations}
+
+Configuraties die worden vermeld in de sectie voor configuraties vóór de installatie zijn alleen van toepassing op de service van de PDF Generator. Als u de service PDF Generator niet configureert, kunt u het gedeelte voor configuratie vóór de installatie overslaan.
+
 ### Adobe Acrobat en toepassingen van derden installeren {#install-adobe-acrobat-and-third-party-applications}
 
 Als u de PDF Generator-service gaat gebruiken om eigen bestandsindelingen zoals Microsoft Word, Microsoft Excel, Microsoft PowerPoint, OpenOffice, WordPerfect X7 en Adobe Acrobat te converteren naar PDF-documenten, moet u ervoor zorgen dat deze toepassingen zijn geïnstalleerd op de AEM Forms-server.
@@ -256,7 +259,7 @@ Omgevingsvariabelen instellen voor 32-bits en 64-bits Java Development Kit, toep
 
 ### (Alleen voor IBM WebSphere) IBM SSL-socketprovider configureren {#only-for-ibm-websphere-configure-ibm-ssl-socket-provider}
 
-* Voer de volgende stappen uit om IBM SSL-socketprovider te configureren:
+Voer de volgende stappen uit om IBM SSL-socketprovider te configureren:
 
 1. Maak een kopie van het bestand java.security. De standaardlocatie van het bestand is `[WebSphere_installation_directory]\Appserver\java_[version]\jre\lib\security`.
 1. Open het gekopieerde bestand java.security voor bewerking.
@@ -287,7 +290,7 @@ Omgevingsvariabelen instellen voor 32-bits en 64-bits Java Development Kit, toep
 
    `-Djava.security.properties= [path of newly created Java.security file].`
 
-### De service Inkt en handschrift installeren configureren {#configure-install-ink-and-handwriting-service}
+### (Alleen Windows) Configureer de service Inkt en handschrift installeren {#configure-install-ink-and-handwriting-service}
 
 Als u de Server van Microsoft Windows in werking stelt, vorm de Inkt en de dienst Handwriting. De service is vereist voor het openen van Microsoft PowerPoint-bestanden die inktmogelijkheden van Microsoft Office gebruiken:
 
@@ -295,7 +298,7 @@ Als u de Server van Microsoft Windows in werking stelt, vorm de Inkt en de diens
 1. Klik op Functies **** toevoegen in het menu **[!UICONTROL Functies]** . Selecteer de de controledoos van de Diensten **[!UICONTROL van de]** Inkt en van de Handtekening.
 1. **[!UICONTROL Selecteer de dialoogdoos van Eigenschappen]** met de **[!UICONTROL Inkt en de Diensten]** van het Handschrift geselecteerd. Klik op **[!UICONTROL Installeren]** en de service is geïnstalleerd.
 
-### De instellingen voor bestandsblokken configureren voor Microsoft Office {#configure-the-file-block-settings-for-microsoft-office}
+### (Alleen Windows) Configureer de instellingen voor bestandsblokken voor Microsoft Office {#configure-the-file-block-settings-for-microsoft-office}
 
 Wijzig de instellingen van het Microsoft Office-vertrouwenscentrum om de service PDF Generator in te schakelen voor het converteren van bestanden die zijn gemaakt met oudere versies van Microsoft Office.
 
@@ -305,7 +308,7 @@ Wijzig de instellingen van het Microsoft Office-vertrouwenscentrum om de service
 1. Klik in de instellingen **** Vertrouwenscentrum op Instellingen **[!UICONTROL voor]** bestandsblokkering.
 1. Schakel in de lijst **[!UICONTROL Bestandstype]** de optie **[!UICONTROL Openen]** uit voor het bestandstype dat de service PDF Generator moet kunnen converteren naar PDF-documenten.
 
-### Toeslagrechten verlenen voor het vervangen van een procesniveautoken {#grant-the-replace-a-process-level-token-privilege}
+### (Alleen Windows) Vervang het token voor een procesniveau {#grant-the-replace-a-process-level-token-privilege}
 
 Voor de gebruikersaccount die wordt gebruikt om de toepassingsserver te starten, is het token **-voorrecht op procesniveau** vervangen vereist. De lokale systeemaccount heeft standaard de token **-bevoegdheid** Vervangen op procesniveau. Voor de servers die met een gebruiker van de Lokale groep van Beheerders lopen, moet het voorrecht uitdrukkelijk worden verleend. Voer de volgende stappen uit om het voorrecht toe te kennen:
 
@@ -313,7 +316,7 @@ Voor de gebruikersaccount die wordt gebruikt om de toepassingsserver te starten,
 1. Navigeer naar **[!UICONTROL Lokaal computerbeleid]** > **[!UICONTROL Computerconfiguratie]** > **[!UICONTROL Windows-instellingen]** > **[!UICONTROL Beveiligingsinstellingen]** > **[!UICONTROL Lokaal beleid]** **** **** > Toewijzing van gebruikersrechtenen bewerk het token op procesniveau vervangen en neem de groep Beheerders op.
 1. Voeg de gebruiker toe aan de Replace een Symbolische ingang van het Niveau van het Proces.
 
-#### De service PDF Generator inschakelen voor niet-beheerders {#enable-the-pdf-generator-service-for-non-administrators}
+### (Alleen Windows) De service PDF-generator inschakelen voor niet-beheerders {#enable-the-pdf-generator-service-for-non-administrators}
 
 U kunt een gebruiker zonder beheerder inschakelen om de service PDF Generator te gebruiken. Normaal gesproken kunnen alleen gebruikers met beheerdersrechten de service gebruiken:
 
@@ -321,7 +324,7 @@ U kunt een gebruiker zonder beheerder inschakelen om de service PDF Generator te
 1. Stel de waarde van de omgevingsvariabele in op TRUE.
 1. Start de instantie AEM Forms opnieuw.
 
-### Gebruikersaccountbeheer uitschakelen (UAC) {#disable-user-account-control-uac}
+### (Alleen Windows) Gebruikersaccountbeheer uitschakelen (UAC) {#disable-user-account-control-uac}
 
 1. Ga naar **[!UICONTROL Start > Uitvoeren]** en voer **[!UICONTROL MSCONFIG]** in om het hulpprogramma Systeemconfiguratie te openen.
 1. Klik op het tabblad **[!UICONTROL Gereedschappen]** en schuif omlaag en selecteer **[!UICONTROL UAC-instellingen]** wijzigen. Klik op **[!UICONTROL Starten]** om de opdracht in een nieuw venster uit te voeren.
@@ -335,13 +338,13 @@ U kunt een gebruiker zonder beheerder inschakelen om de service PDF Generator te
 
 1. Start de computer opnieuw op.
 
-### Foutrapportservice uitschakelen {#disable-error-reporting-service}
+### (Alleen Windows) Fout bij rapporteren van service uitschakelen {#disable-error-reporting-service}
 
 Bij het converteren van een document naar PDF met de service PDF Generator op Windows Server meldt Windows Server af en toe dat het uitvoerbare bestand een probleem heeft aangetroffen en moet worden gesloten. Het heeft echter geen invloed op de PDF-conversie zoals deze op de achtergrond wordt voortgezet.
 
 Als u wilt voorkomen dat de fout wordt ontvangen, kunt u de rapportage van fouten in Windows uitschakelen. Raadpleeg [https://technet.microsoft.com/en-us/library/cc754364.aspx voor meer informatie over het uitschakelen van foutmeldingen](https://technet.microsoft.com/en-us/library/cc754364.aspx).
 
-### HTML naar PDF converteren {#configure-html-to-pdf-conversion}
+### (Alleen Windows) HTML naar PDF-conversie configureren {#configure-html-to-pdf-conversion}
 
 De service PDF genereren biedt WebKit, WebCapture en FhantomJS-routes of methoden voor het converteren van HTML-bestanden naar PDF-documenten. Als u in Windows conversie wilt inschakelen voor WebKit- en Acrobat WebCapture-routes, kopieert u het Unicode-font naar de map %windir%\fonts.
 
@@ -350,11 +353,11 @@ De service PDF genereren biedt WebKit, WebCapture en FhantomJS-routes of methode
 > Wanneer u nieuwe lettertypen in de map Fonts installeert, start u de instantie AEM Forms opnieuw.
 
 
-### Extra configuraties voor conversie van HTML naar PDF {#extra-configurations-for-html-to-pdf-conversion}
+### (Alleen op UNIX gebaseerde platforms) Extra configuraties voor conversie van HTML naar PDF {#extra-configurations-for-html-to-pdf-conversion}
 
 Op UNIX-platforms ondersteunt de service van de PDF Generator WebKit en PhantomJS-routes voor het converteren van HTML-bestanden naar PDF-documenten. Voer de volgende configuraties uit die van toepassing zijn op de door u gewenste conversieroute om HTML naar PDF-conversie in te schakelen:
 
-#### Ondersteuning voor Unicode-lettertypen inschakelen (alleen WebKit) {#enable-support-for-unicode-fonts-webkit-only}
+### (Alleen op UNIX gebaseerde platforms) Ondersteuning voor Unicode-lettertypen inschakelen (alleen WebKit) {#enable-support-for-unicode-fonts-webkit-only}
 
 Kopieer het Unicode-lettertype naar een van de volgende mappen, afhankelijk van uw systeem:
 
@@ -472,7 +475,7 @@ Er is een lokale gebruikersaccount vereist om de service PDF Generator uit te vo
  </tbody> 
 </table>
 
-### Acrobat configureren voor de service PDF Generator {#configure-acrobat-for-the-pdf-generator-service}
+### (Alleen Windows) Configureer Acrobat voor de service PDF Generator {#configure-acrobat-for-the-pdf-generator-service}
 
 In Microsoft Windows gebruikt de service PDF Generator Adobe Acrobat om ondersteunde bestandsindelingen te converteren naar een PDF-document. Voer de volgende stappen uit om Adobe Acrobat voor de service PDF Generator te configureren:
 
@@ -500,7 +503,7 @@ In Microsoft Windows gebruikt de service PDF Generator Adobe Acrobat om onderste
 
    1. Ga naar `[Path_of_reports_folder]`. Open het bestand SystemReadinessTool.html. Verifieer het rapport en los de bovengenoemde kwesties op.
 
-### Primaire route voor conversie van HTML naar PDF configureren (alleen Windows) {#configure-primary-route-for-html-to-pdf-conversion-windows-only}
+### (Alleen Windows) Primaire route configureren voor conversie van HTML naar PDF {#configure-primary-route-for-html-to-pdf-conversion-windows-only}
 
 De service PDF Generator biedt meerdere manieren om HTML-bestanden naar PDF-documenten te converteren: Webkit, Acrobat WebCapture (alleen Windows) en PhantomJS. Adobe raadt u aan de PhantomJS-route te gebruiken, omdat deze de mogelijkheid biedt om dynamische inhoud af te handelen en omdat deze route geen afhankelijkheden heeft met 32-bits bibliotheken, 32-bits JDK of geen extra lettertypen vereist. Ook, vereist de route PhantomJS sudo of worteltoegang niet om de omzetting in werking te stellen.
 
@@ -510,7 +513,7 @@ De primaire standaardroute voor conversie van HTML naar PDF is Webkit. U wijzigt
 
 1. Op het **[!UICONTROL Algemene lusje van de Configuratie]** , selecteer de aangewezen omzettingsroute van de **[!UICONTROL Primaire Route voor de omzettingen]** van HTML aan PDF drop-down.
 
-### Global Trust Store initialiseren{#intialize-global-trust-store}
+### Global Trust Store initialiseren {#intialize-global-trust-store}
 
 Met het Betrouwbaarheidsopslagbeheer kunt u certificaten die u op de server vertrouwt, importeren, bewerken en verwijderen voor validatie van digitale handtekeningen en certificaatverificatie. U kunt om het even welk aantal certificaten invoeren en uitvoeren. Nadat een certificaat is geïmporteerd, kunt u de vertrouwensinstellingen bewerken en het type vertrouwde opslag vertrouwen. Voer de volgende stappen uit om een vertrouwde opslag te initialiseren:
 

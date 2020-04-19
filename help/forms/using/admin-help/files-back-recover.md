@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -134,8 +134,9 @@ Zie [Back-](https://articles.techrepublic.com.com/5100-1035_61-1043671.md)upstra
 
 Gebruik MySQLAdmin of wijzig de INI dossiers in Vensters om uw gegevensbestand te vormen MySQL om op binaire logboekwijze te lopen. (Zie [MySQL binaire logboekregistratie](https://dev.mysql.com/doc/refman/5.1/en/binary-log.html).) Een hot backup-hulpprogramma voor MySQL is ook beschikbaar in de InnoBase-software. (Zie [Innobase Hot Backup](https://www.innodb.com/hot-backup/features.md).)
 
-**Opmerking**: *De standaard binaire registrerenwijze voor MySQL is &quot;Verklaring&quot;, die met lijsten onverenigbaar is die door de Diensten van de Inhoud (Vervangen) worden gebruikt. Het gebruiken van binair het registreren op deze standaardwijze veroorzaakt de Diensten van de Inhoud (Vervangen) om te ontbreken. Als uw systeem Inhoudsdiensten (Afgekeurd) omvat, gebruik &quot;Gemengd&quot;registrerenwijze. Om het &quot;Gemengd&quot;registreren toe te laten, voeg het volgende argument aan het my.ini- dossier toe:*
-`binlog_format=mixed log-bin=logname`
+>[!NOTE]
+>
+>De standaard binaire registrerenwijze voor MySQL is &quot;Verklaring&quot;, die met lijsten onverenigbaar is die door de Diensten van de Inhoud (Vervangen) worden gebruikt. Het gebruiken van binair het registreren op deze standaardwijze veroorzaakt de Diensten van de Inhoud (Vervangen) om te ontbreken. Als uw systeem Inhoudsdiensten (Afgekeurd) omvat, gebruik &quot;Gemengd&quot;registrerenwijze. Om &quot;Gemengd&quot;registreren toe te laten, voeg het volgende argument aan my.ini file:* toe`binlog_format=mixed log-bin=logname`
 
 U kunt het mysqldump-hulpprogramma gebruiken om de volledige databaseback-up te verkrijgen. Volledige back-ups zijn vereist, maar ze zijn niet altijd handig. Ze produceren grote back-upbestanden en het genereren van tijd neemt veel tijd in beslag. Als u een incrementele back-up wilt maken, moet u de server starten met de optie - `log-bin` zoals beschreven in de vorige sectie. Telkens als de server MySQL opnieuw begint, houdt het het schrijven aan het huidige binaire logboek op, leidt tot nieuwe en, van toen, wordt nieuwe. U kunt een schakelaar manueel met het `FLUSH LOGS SQL` bevel dwingen. Na de eerste volledige back-up worden de volgende incrementele back-ups uitgevoerd met behulp van het mysqladmin-hulpprogramma met de `flush-logs` opdracht, waarmee het volgende logbestand wordt gemaakt.
 

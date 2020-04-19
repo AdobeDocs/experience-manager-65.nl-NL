@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6e4b4dfa-3af5-4c21-a2a1-b90ef02d8514
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -65,8 +65,9 @@ U kunt zo veel zoeksjablonen maken als u wilt.
    * Selecteer een proces- of taakelement en klik op de pijl-rechts om dit naar de lijst Kolommen te rapporteren te verplaatsen.
    * Selecteer in de lijst Kolommen die u wilt rapporteren het proces- of taakelement en klik op de pijl-omhoog of pijl-omlaag om dit naar de gewenste plaats in de kolomvolgorde te verplaatsen. De kolomkoppen in de zoekresultaten worden weergegeven in de volgorde waarin ze hier worden vermeld.
    * (Optioneel) Als u de naam van het element voor de kolomkop wilt wijzigen, selecteert u het element in de lijst Te rapporteren kolommen en geeft u de nieuwe naam op.
-
-      **Opmerking**: *De indeling die in de zoeksjabloon is opgegeven, overschrijft de gebruikersvoorkeuren die voor kolomkoppen in Workspace zijn opgegeven.*
+   >[!NOTE]
+   >
+   >De indeling die in de zoeksjabloon is opgegeven, heeft voorrang op de gebruikersvoorkeuren die voor kolomkoppen in Workspace zijn opgegeven.
 
 1. (Optioneel) Als u de zoekresultaten wilt sorteren in elke kolom, klikt u op het tabblad Sorteren en voert u de volgende stappen uit:
 

@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/get_started_with_administering_aem_forms_on_je
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: bd648c38-731b-420e-973d-a4728b69868e
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -35,14 +35,18 @@ Zie Beveiligde back-upmodus [inschakelen en uitschakelen voor informatie over he
 
 **Locatie van tijdelijke map** Het directorypad waar AEM-formulieren tijdelijke productbestanden maken. Als de waarde van deze instelling leeg is, wordt de locatie standaard ingesteld op de Temp-map van het systeem. Zorg ervoor dat de tijdelijke map een beschrijfbare map is.
 
-***opmerking **: Zorg ervoor dat de tijdelijke map zich op het lokale bestandssysteem bevindt. AEM-formulieren ondersteunen geen tijdelijke map op een externe locatie.*
+>[!NOTE]
+>
+>Zorg ervoor dat de tijdelijke map zich op het lokale bestandssysteem bevindt. AEM-formulieren ondersteunen geen tijdelijke map op een externe locatie.
 
 **Globale hoofdmap** voor documentopslag De hoofdmap van de algemene documentopslag (GDS) wordt gebruikt voor de volgende doeleinden:
 
 * Langlevende documenten opslaan. Langlevende documenten hebben geen verlooptijd en blijven bestaan totdat ze worden verwijderd (bijvoorbeeld de PDF-bestanden die worden gebruikt in een werkstroomproces). De langlevende documenten zijn een kritiek deel van de algemene systeemstaat. Als sommige of al deze documenten verloren gaan of beschadigd raken, wordt de formulierserver mogelijk instabiel. Daarom is het belangrijk dat deze map wordt opgeslagen op een RAID-apparaat.
 * Tijdelijke documenten opslaan die nodig zijn tijdens de verwerking.
 
-   ***Opmerking **: U kunt de opslag van documenten ook inschakelen in de AEM-formulierdatabase. Systeemprestaties zijn echter beter wanneer u de GDS gebruikt.*
+>[!NOTE]
+>
+>U kunt de opslag van documenten ook inschakelen in de AEM-formulierdatabase. Systeemprestaties zijn echter beter wanneer u de GDS gebruikt.
 
 * Documenten overbrengen tussen knooppunten in een cluster. Als u AEM-formulieren uitvoert in een geclusterde omgeving, moet deze map toegankelijk zijn vanaf alle knooppunten in de cluster.
 * Inkomende parameters ontvangen van externe API-aanroepen.
@@ -53,9 +57,13 @@ Als u geen GDS-hoofdmap opgeeft, wordt de map standaard ingesteld op een toepass
 * `[WEBSPHERE_HOME]/installedApps/adobe/'server'/DocumentStorage`
 * `[WEBLOGIC_HOME]/user_projects/<domain>/'server'/adobe/AEMformsserver/DocumentStorage`
 
-***Opmerking **: Het wijzigen van de waarde van de instelling van de GDS-hoofdmap moet met speciale zorg worden uitgevoerd. De GDS-map wordt gebruikt om zowel bestanden met een lange levensduur die in een proces worden gebruikt als essentiële productcomponenten van AEM-formulieren op te slaan. Het wijzigen van de locatie van de GDS-map is een belangrijke systeemwijziging. Als u de locatie van de GDS-directory niet correct configureert, worden AEM-formulieren onbruikbaar en moeten AEM-formulieren mogelijk volledig opnieuw worden geïnstalleerd. Als u een nieuwe locatie voor de GDS-map opgeeft, moet de toepassingsserver worden afgesloten en moeten de gegevens worden gemigreerd voordat de server opnieuw kan worden gestart. De systeembeheerder moet alle bestanden van de oude locatie naar de nieuwe locatie verplaatsen, maar de interne mapstructuur behouden.*
+>[!NOTE]
+>
+>Het wijzigen van de waarde van de instelling van de GDS-hoofdmap moet met speciale zorg worden uitgevoerd. In de GDS-map worden zowel bestanden met een lange levensduur die in een proces worden gebruikt als essentiële productcomponenten van AEM-formulieren opgeslagen. Het wijzigen van de locatie van de GDS-map is een belangrijke systeemwijziging. Als u de locatie van de GDS-directory niet correct configureert, worden AEM-formulieren onbruikbaar en moeten AEM-formulieren mogelijk volledig opnieuw worden geïnstalleerd. Als u een nieuwe locatie voor de GDS-map opgeeft, moet de toepassingsserver worden afgesloten en moeten de gegevens worden gemigreerd voordat de server opnieuw kan worden gestart. De systeembeheerder moet alle bestanden van de oude locatie naar de nieuwe locatie verplaatsen, maar de interne mapstructuur behouden.
 
-***Opmerking **: Geef niet dezelfde map op voor de map temp en de map GDS.*
+>[!NOTE]
+>
+>Geef niet dezelfde map op voor de tijdelijke map en de GDS-map.
 
 Zie AEM-formulieren [installeren (Single Server)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63)voorbereiden voor meer informatie over de GDS-map.
 
@@ -91,7 +99,9 @@ De FIPS-modus ondersteunt geen versleutelingsalgoritmen die worden gebruikt in e
 
 In het algemeen geldt dat wanneer FIPS is ingeschakeld, de Assembler-service geen wachtwoordversleuteling toepast op documenten. Als dit wordt geprobeerd, wordt een FIPSModeException geworpen erop wijzend dat de &quot;encryptie van het Wachtwoord niet op FIPS wijze wordt toegelaten.&quot; Bovendien wordt het element Document Description XML (DDX) PDFsFromBookmarks niet ondersteund in de FIPS-modus wanneer het basisdocument met een wachtwoord is gecodeerd.
 
-***Opmerking **: AEM-formuliersoftware valideert geen code voor FIPS-compatibiliteit. Het verstrekt een FIPS verrichtingswijze zodat FIPS-Goedgekeurde algoritmen voor cryptografische diensten van de FIPS-Goedgekeurde bibliotheken (RSA) worden gebruikt.*
+>[!NOTE]
+>
+>AEM-formuliersoftware valideert geen code voor FIPS-compatibiliteit. Het verstrekt een FIPS verrichtingswijze zodat FIPS-Goedgekeurde algoritmen voor cryptografische diensten van de FIPS-Goedgekeurde bibliotheken (RSA) worden gebruikt.
 
 **Schakel WSDL** in en selecteer deze optie om WSDL-generatie (Web Service Definition Language) in te schakelen voor alle services die deel uitmaken van AEM-formulieren.
 

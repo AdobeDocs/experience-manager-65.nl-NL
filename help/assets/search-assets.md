@@ -4,7 +4,7 @@ description: Leer hoe u de vereiste elementen in AEM kunt vinden met het deelven
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: fc4d8f98047fe727c11aa7a932ecc46a1a60d076
+source-git-commit: b1453d70ee75768057403c5cc93f5c7bad8ed918
 
 ---
 
@@ -38,11 +38,11 @@ De zoekfunctie van AEM ondersteunt het zoeken naar verzamelingen en het zoeken n
 
 Verken uzelf met de zoekinterface en de beschikbare acties.
 
-![Werken met delen van de interface voor zoekresultaten van middelen](assets/aem_search_results.png)
+![De interface voor zoekresultaten van Experience Manager Assets begrijpen](assets/aem_search_results.png)
 
-*Afbeelding: Werken met delen van de interface voor zoekresultaten van middelen*
+*Afbeelding: De interface voor zoekresultaten van Experience Manager Assets begrijpen*
 
-**A.** Sla de zoekopdracht op als een slimme verzameling. **B.** Filters (predicaten) om de zoekresultaten te verfijnen. **C.** Geef bestanden, mappen of beide weer in de zoekresultaten. **D.** Klik op Filters om het linkerspoor te openen of te sluiten. **E.** Zoeklocatie is DAM. **F.** Het gebied van het onderzoek met user-provided onderzoekssleutelwoord. **G.** Schakel het selectievakje in om alle zoekresultaten te selecteren. **H.** Aantal weergegeven zoekresultaten van de totale zoekresultaten. **I.** Sluit zoekopdracht **J.** Schakel tussen de kaartweergave en de lijstweergave.
+**A.** Sla de zoekopdracht op als een slimme verzameling. **B.** Hiermee kunt u de zoekresultaten beperken door filters of voorspelling in te stellen. **C.** Bestanden, mappen of beide weergeven. **D.** Klik op Filters om het linkerspoor te openen of te sluiten. **E.** Zoeklocatie is DAM. **F.** Het gebied van het onderzoek met user-provided onderzoekssleutelwoord. **G.** Selecteer de geladen zoekresultaten. **H.** Aantal weergegeven zoekresultaten van de totale zoekresultaten. **I.** Sluit zoekopdracht **J.** Schakel tussen de kaartweergave en de lijstweergave.
 
 ### Dynamische zoekfacetten {#dynamicfacets}
 
@@ -254,7 +254,7 @@ De zoekfunctie in AEM Assets heeft de volgende beperkingen:
 * Het is mogelijk dat AEM de zoekterm blijft weergeven nadat u eigenschappen van een element hebt geselecteerd in de zoekresultaten en vervolgens de zoekopdracht hebt geannuleerd. <!-- (CQ-4273540) -->
 * Wanneer u naar mappen of bestanden en mappen zoekt, kunnen de zoekresultaten op geen enkele parameter worden gesorteerd.
 * Als u op Enter drukt zonder iets te typen op de zoekbalk, retourneert AEM een lijst met alleen bestanden en niet mappen. Als u specifiek naar mappen zoekt zonder een trefwoord te gebruiken, geeft AEM geen resultaten.
-* Met het selectievakje Alles  selecteren kunt u alleen de eerste 100 gezochte elementen in de kaartweergave selecteren en de eerste 200 gezochte elementen in de lijstweergave. Als u schuift en meer elementen in de gebruikersinterface laadt, kunt u meer selecteren met de optie Alles  selecteren.
+* Gebruik de optie Alles **** selecteren rechtsboven op de zoekpagina om de gezochte elementen te selecteren. De Manager van de ervaring toont aanvankelijk 100 activa in kaartmening en 200 activa in lijstmening. Er worden meer elementen geladen wanneer u door de zoekresultaten schuift. U kunt meer elementen selecteren dan de geladen elementen. Het aantal geselecteerde elementen wordt in de rechterbovenhoek van de pagina met zoekresultaten weergegeven. U kunt de selectie bijvoorbeeld activeren door de geselecteerde elementen te downloaden, de eigenschappen van metagegevens voor de geselecteerde elementen bulksgewijs bij te werken of de geselecteerde elementen aan een verzameling toe te voegen. Wanneer er meer elementen zijn geselecteerd dan worden weergegeven, wordt een actie toegepast op alle geselecteerde elementen of wordt in een dialoogvenster het aantal elementen weergegeven waarop de actie wordt toegepast. Als u een handeling wilt toepassen op de elementen die niet zijn geladen, moet u ervoor zorgen dat alle elementen expliciet zijn geselecteerd.
 
 Het visuele onderzoek of het gelijkenis onderzoek heeft de volgende beperkingen:
 
@@ -269,7 +269,7 @@ Zoekfuncties kunnen prestatiebeperkingen hebben in de volgende scenario&#39;s:
 
 * Gebruik bij het controleren van de revisiestatus van de middelen de juiste optie om te bepalen welke middelen zijn goedgekeurd of welke activa nog moeten worden goedgekeurd.
 * Gebruik de Insights-voorspelling om te zoeken naar ondersteunde middelen op basis van de gebruiksstatistieken die zijn verkregen van verschillende Creative-apps. Gebruiksgegevens worden gegroepeerd onder Gebruiksscore, Impressies, Klikken en Mediakanalen waar de elementen categorieën weergeven.
-* Schakel het selectievakje Alles **** selecteren in om de gezochte elementen te selecteren. De eerste 100 elementen worden geselecteerd in de kaartweergave en de eerste 200 elementen in de lijstweergave. U kunt de selectie bijvoorbeeld activeren door de geselecteerde elementen te downloaden, de eigenschappen van metagegevens voor de geselecteerde elementen bulksgewijs bij te werken of de geselecteerde elementen aan een verzameling toe te voegen.
+* Schakel het selectievakje Alles **** selecteren in om de gezochte elementen te selecteren. De Manager van de ervaring toont aanvankelijk 100 activa in kaartmening en 200 activa in lijstmening. Er worden meer elementen geladen wanneer u door de zoekresultaten schuift. U kunt meer elementen selecteren dan de geladen elementen. Het aantal geselecteerde elementen wordt in de rechterbovenhoek van de pagina met zoekresultaten weergegeven. U kunt de selectie bijvoorbeeld activeren door de geselecteerde elementen te downloaden, de eigenschappen van metagegevens voor de geselecteerde elementen bulksgewijs bij te werken of de geselecteerde elementen aan een verzameling toe te voegen. Wanneer er meer elementen zijn geselecteerd dan worden weergegeven, wordt een actie toegepast op alle geselecteerde elementen of wordt in een dialoogvenster het aantal elementen weergegeven waarop de actie wordt toegepast. Als u een handeling wilt toepassen op de elementen die niet zijn geladen, moet u ervoor zorgen dat alle elementen expliciet zijn geselecteerd.
 * Zie [verplichte metagegevens](#mandatorymetadata)voor informatie over het zoeken naar elementen die de verplichte metagegevens niet bevatten.
 * Zoeken gebruikt alle metagegevensvelden. Een generieke zoekopdracht, zoals zoeken naar 12, retourneert doorgaans veel resultaten. Voor betere resultaten gebruikt u dubbele (geen enkele) aanhalingstekens of zorgt u ervoor dat het getal aangrenzend is aan een woord zonder speciaal teken (bijvoorbeeld *shoe12*).
 * Bij zoeken in volledige tekst worden onder andere operatoren zoals -, ^ ondersteund. Als u deze letters wilt doorzoeken als letterlijke tekenreeksen, plaatst u de zoekexpressie tussen dubbele aanhalingstekens. Gebruik bijvoorbeeld &quot;Notebook - Beauty&quot; in plaats van &quot;Notebook - Beauty&quot;.
@@ -287,7 +287,7 @@ Gebruik dubbele aanhalingstekens rond trefwoorden om te zoeken naar elementen di
 
 *Afbeelding: Gedrag zoeken met en zonder aanhalingstekens*
 
-**Zoeken met jokerteken** sterretje: Als u de zoekopdracht wilt uitbreiden, gebruikt u een sterretje voor of na het zoekwoord om het gewenste aantal tekens te zoeken. Als u bijvoorbeeld zoekt naar tekst zonder sterretje, worden er geen elementen geretourneerd die een variatie van het woord bevatten (inclusief in de metagegevens). Een sterretje vervangt het gehele aantal tekens. Bijvoorbeeld:
+**Zoeken met jokerteken** sterretje: Als u de zoekopdracht wilt uitbreiden, gebruikt u een sterretje voor of na het zoekwoord om het gewenste aantal tekens te zoeken. Als u bijvoorbeeld zoekt naar tekst zonder sterretje, worden er geen elementen geretourneerd die een variatie van het woord bevatten (inclusief in de metagegevens). Een sterretje vervangt het gehele aantal tekens. Bijvoorbeeld,
 
 * `run` retourneert elementen met trefwoord exact uitvoeren
 * `run*` retourneert elementen met actieve, actieve, weglopende enzovoort.

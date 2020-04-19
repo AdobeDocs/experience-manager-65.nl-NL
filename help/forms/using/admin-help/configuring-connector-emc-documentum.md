@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e62370a7-9d9e-43a3-8014-8e53800c870d
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -59,13 +59,15 @@ Als u een onjuiste gebruikersnaam of een onjuist wachtwoord invoert, krijgt u de
 
 U kunt configureren welke repository service provider moet worden gebruikt met Documentum. De de dienstvraag van de bewaarplaats wordt gedelegeerd aan de leverancier u vormt. De volgende opties zijn beschikbaar:
 
-**** Huidige naam leverancier van serviceleverancier in opslagplaats: De naam van de huidige aanbieder van datadiensten
+**Huidige naam leverancier van serviceleverancier in opslagplaats:** De naam van de huidige aanbieder van datadiensten
 
-**** ECM Documentum Repository Provider: Maakt van de Documentum repository provider de provider voor de repository. Deze optie is vervangen
+**ECM Documentum Repository Provider:** Maakt van de Documentum repository provider de provider voor de repository. Deze optie is vervangen
 
-**** aanbieder opslagplaats: Maakt van de native opslagprovider de provider voor de opslagplaats
+**aanbieder opslagplaats:** Maakt van de native opslagprovider de provider voor de opslagplaats
 
-***Opmerking **: Als u een andere opslagplaats voor services wilt selecteren dan de vermelde, configureert u RepositoryService in Programma&#39;s en Services > Servicebeheer.<!-- Fix broken link (See Managing Services) -->*
+>[!NOTE]
+>
+>Als u een andere opslagplaats voor services wilt selecteren dan de vermelde, configureert u RepositoryService in Programma&#39;s en Services > Servicebeheer. <!-- Fix broken link (See Managing Services) -->.
 
 1. Klik in de beheerconsole op Services > Connector voor EMC Documentum > Configuration Settings.
 1. Selecteer in het gebied Providergegevens voor opslagplaats de alternatieve aanbieder van opslagplaats.

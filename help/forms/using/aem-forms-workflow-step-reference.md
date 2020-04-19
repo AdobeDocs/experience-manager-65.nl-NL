@@ -1,8 +1,8 @@
 ---
-title: Formulier-centric werkschema op OSGi - de Verwijzing van de Stap
-seo-title: Formulier-centric werkschema op OSGi - de Verwijzing van de Stap
-description: De vorm-centric werkschema op stappen OSGi staat u toe snel aanpassings vormen gebaseerde werkschema's bouwen.
-seo-description: De vorm-centric werkschema op stappen OSGi staat u toe snel aanpassings vormen gebaseerde werkschema's bouwen.
+title: Forms-centric workflow op OSGi - Step Reference
+seo-title: Forms-centric workflow op OSGi - Step Reference
+description: Met Forms-centric workflow voor OSGi-stappen kunt u snel adaptieve formulieren op basis van workflows maken.
+seo-description: Met Forms-centric workflow voor OSGi-stappen kunt u snel adaptieve formulieren op basis van workflows maken.
 uuid: 6f791c45-0e35-4c55-9106-5340caab94b7
 contentOwner: null
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,171 +10,174 @@ topic-tags: publish
 discoiquuid: f0a5588d-f210-4f04-bc35-b62834f90ab1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 86649ccfd494435038da06e72fbfed544a7aaf12
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
 
-# Formulier-centric werkschema op OSGi - de Verwijzing van de Stap{#forms-centric-workflow-on-osgi-step-reference}
+# Forms-centric workflow op OSGi - Step Reference{#forms-centric-workflow-on-osgi-step-reference}
 
-## De Stappen van het Werkschema van vormen {#forms-workflow-steps}
+## Stappen voor formulierwerkstroom {#forms-workflow-steps}
 
-De het werkschemastappen van vormen voeren AEM vorm-specifieke verrichtingen in een werkschema AEM uit. Deze stappen staan u toe snel bouwend adaptieve vormen gebaseerde vorm-centric werkschema op OSGi. Deze werkschema&#39;s kunnen voor het ontwikkelen van basisoverzicht en goedkeuring-werkschema&#39;s, interne en over de firewall bedrijfsprocessen worden gebruikt. U kunt de stappen van het Werkschema van Vormen ook gebruiken om de documentdiensten te beginnen, met de handtekeningswerkschema van het Teken van Adobe te integreren, en andere verrichtingen van Vormen uit te voeren AEM. U vereist [AEM toe:voegen-op](https://www.adobe.com/go/learn_aemforms_documentation_63) Vormen om deze stappen in een werkschema te gebruiken.
+Workflowstappen voor formulieren voeren specifieke bewerkingen voor AEM-formulieren uit in een AEM-workflow. Met deze stappen kunt u snel een op formulieren gebaseerde, op Forms gebaseerde workflow maken voor OSGi. Deze workflows kunnen worden gebruikt voor het ontwikkelen van basis revisie- en goedkeurings-workflows, interne en interne bedrijfsprocessen binnen de firewall. U kunt ook de stappen van de Workflow van Forms gebruiken om documentservices te starten, te integreren met de ondertekeningsworkflow van Adobe Sign en andere bewerkingen in AEM Forms uit te voeren. U hebt de invoegtoepassing [AEM Forms nodig](https://www.adobe.com/go/learn_aemforms_documentation_63) om deze stappen in een workflow te kunnen gebruiken.
 
 ## Taakstap toewijzen {#assign-task-step}
 
-De taakstap toewijzen leidt tot een taak en wijst het aan een gebruiker of een groep toe. Naast het toewijzen van de taak, specificeert de component ook het adaptieve formulier of niet-interactieve PDF voor de taak. Het adaptieve formulier is vereist om invoer van gebruikers te accepteren en niet-interactieve PDF of een alleen-lezen adaptief formulier wordt gebruikt om alleen werkstromen te bekijken.
+De taakstap toewijzen maakt een taak en wijst deze toe aan een gebruiker of groep. Naast het toewijzen van de taak geeft de component ook het adaptieve of niet-interactieve PDF-formulier voor de taak op. Het adaptieve formulier is vereist om invoer van gebruikers te accepteren en niet-interactieve PDF of een alleen-lezen adaptief formulier wordt gebruikt voor workflows die alleen voor revisie zijn.
 
 U kunt de component ook gebruiken om het gedrag van de taak te controleren. Bijvoorbeeld, creërend een automatisch document van verslag, toewijzend de taak aan een specifieke gebruiker of een groep, specificerend de weg van de voorgelegde gegevens, specificerend de weg van te vullen gegevens, en specificerend standaardacties. De stap Taak toewijzen heeft de volgende eigenschappen:
 
-* **Titel:** Titel van de taak. De titel wordt getoond in AEM Inbox.
-* **Beschrijving:** Uitleg van de verrichtingen die in de taak worden uitgevoerd. Deze informatie is nuttig voor andere procesontwikkelaars wanneer u in een gedeelde ontwikkelomgeving werkt.
+* **Titel:** Titel van de taak. De titel wordt weergegeven in AEM Inbox.
+* **Omschrijving:** Uitleg van de bewerkingen die in de taak worden uitgevoerd. Deze informatie is nuttig voor andere procesontwikkelaars wanneer u in een gedeelde ontwikkelomgeving werkt.
 
-* **Miniatuurpad:** Pad van de taakminiatuur. Als geen weg wordt gespecificeerd, voor een adaptieve vorm wordt de standaardduimnagel getoond en voor Document van Verslag, wordt een standaardpictogram getoond.
-* **Werkstroomstadium:** Een werkschema kan veelvoudige stadia hebben. Deze stadia worden getoond in AEM Inbox. U kunt deze stadia in de eigenschappen van het model bepalen (Sidetrap > Pagina > de Eigenschappen van de Pagina > de Fanden).
-* **Prioriteit:** De geselecteerde prioriteit wordt getoond in AEM Inbox. De beschikbare opties zijn Hoog, Middelgroot, en Laag. De standaardwaarde is Middelgroot.
-* **Vervaldatum:** Specificeer het aantal dagen of uren waarna de taak duidelijk achterhaald is. Als u **Uit** selecteert, dan is de taak nooit duidelijk achterhaald. U kunt een onderbrekingsmanager ook specificeren om specifieke taken uit te voeren nadat de taak achterhaald is.
+* **Pad miniatuur:** Pad van de taakminiatuur. Als er geen pad is opgegeven, wordt voor een aangepaste standaardminiatuur van het formulier weergegeven en voor Document of Record, een standaardpictogram weergegeven.
+* **Werkstroomwerkgebied:** Een werkstroom kan uit meerdere fasen bestaan. Deze fasen worden weergegeven in het Postvak IN van AEM. U kunt deze fasen definiëren in de eigenschappen van het model (Selecteren > Pagina > Pagina-eigenschappen > Staven).
+* **Prioriteit:** De geselecteerde prioriteit wordt weergegeven in het Postvak IN. De beschikbare opties zijn Hoog, Normaal en Laag. De standaardwaarde is Normaal.
+* **Vervaldatum:** Geef het aantal dagen of uren op waarna de taak achterstallig is. Als u **Uit** selecteert, is de taak nooit achterstallig. U kunt ook een time-outhandler opgeven om specifieke taken uit te voeren nadat de taak is uitgevoerd.
 
-* **Dagen:** Het aantal dagen vóór welke de taak moet worden voltooid. Het aantal dagen wordt geteld nadat de taak aan een gebruiker wordt toegewezen. Als een taak niet volledig is en het aantal dagen kruist specificeert op het gebied van Dagen, dan, indien geselecteerd, wordt een onderbrekingsmanager teweeggebracht na de vervaldatum.
-* **Uren:** Het aantal uren vóór welke de taak moet worden voltooid. Het aantal uren wordt geteld nadat de taak aan een gebruiker wordt toegewezen. Als een taak niet volledig is en het aantal uren kruist specificeert op het gebied van Uren, dan, indien geselecteerd, wordt een onderbrekingsmanager teweeggebracht na de verschuldigde uren.
-* **Vertraging na vervaldatum:** Selecteer deze optie om het de selectiegebied van de Manager van de Onderbreking toe te laten.
-* **Time-out-handler:** Selecteer het manuscript dat moet worden uitgevoerd wanneer de toewijst taakstap de vervaldatum kruist. De manuscripten die in CRX-bewaarplaats bij [apps]/fd/dashboard/scripts/timeoutHandler worden geplaatst zijn beschikbaar voor selectie. Het opgegeven pad bestaat niet in crx-repository. Een beheerder leidt tot de weg alvorens het te gebruiken.
-* **Benadruk de actie en de commentaar van de laatste taak in de Details van de Taak:** Selecteer deze optie om de laatste actie te tonen die werd genomen en commentaar ontvangen op de sectie van taakdetails van een taak.
-* **Type:** Kies het type document dat moet worden ingevuld wanneer de werkstroom wordt gestart. U kunt een adaptieve vorm, read-only adaptieve vorm, een niet interactief Pdf- document, een Interactieve Communicatie Agent UI, of het Interactieve Document van het Kanaal van het Communicatie Web kiezen.
-* **Aanpassingsformulier gebruiken:** Specificeer de methode om van de input aanpassingsvorm de plaats te bepalen. Deze optie is beschikbaar als u Aanpassingsformulier of Alleen-lezen adaptieve formulier selecteert in de vervolgkeuzelijst Type. U kunt de adaptieve vorm gebruiken die aan het werkschema wordt voorgelegd, beschikbaar bij een absolute weg, of beschikbaar bij een weg in een variabele wordt voorgelegd die. U kunt een variabele van typeKoord gebruiken om de weg te specificeren.\
-   U kunt veelvoudige adaptieve vormen met een werkschema associëren. Dientengevolge, kunt u een adaptieve vorm op runtime specificeren gebruikend de beschikbare inputmethodes.
+* **Dagen:** Het aantal dagen voordat de taak moet worden voltooid. Het aantal dagen wordt geteld nadat de taak aan een gebruiker is toegewezen. Als een taak niet volledig is en het aantal dagen overschrijdt specificeert op het gebied van Dagen, dan, als geselecteerd, wordt een onderbrekingsmanager teweeggebracht na de vervaldatum.
+* **Uren:** Het aantal uren voordat de taak moet worden voltooid. Het aantal uren wordt geteld nadat de taak aan een gebruiker wordt toegewezen. Als een taak niet volledig is en het aantal uren overschrijdt specificeert op het gebied van Uren, dan, als geselecteerd, wordt een onderbrekingsmanager teweeggebracht na de verschuldigde uren.
+* **Vertraging na vervaldatum:** Selecteer deze optie om het selectieveld Tijdlijnafhandeling in te schakelen.
+* **Time-outhandler:** Selecteer het script dat moet worden uitgevoerd wanneer de taakstap voor toewijzen de gewenste datum overschrijdt. Scripts die in de CRX-opslagplaats op [apps]/fd/dashboard/scripts/timeoutHandler zijn geplaatst, zijn beschikbaar voor selectie. Het opgegeven pad bestaat niet in de crx-gegevensopslagruimte. Een beheerder maakt het pad voordat het wordt gebruikt.
+* **Markeer de handeling en de opmerking van de laatste taak in Taakdetails:** Selecteer deze optie om de laatste actie weer te geven die is uitgevoerd en de opmerking die is ontvangen in de sectie met taakdetails van een taak.
+* **Type:** Kies het type document dat moet worden ingevuld wanneer de workflow wordt gestart. U kunt een adaptief formulier, alleen-lezen adaptief formulier, een niet-interactief PDF-document, de gebruikersinterface van de interactieve communicatieagent of het interactieve communicatie webkanaaldocument kiezen.
+* **Adaptief formulier gebruiken:** Geef de methode op om het invoeradaptieve formulier te zoeken. Deze optie is beschikbaar als u Adaptief formulier of Alleen-lezen adaptief formulier selecteert in de vervolgkeuzelijst Type. U kunt het adaptieve formulier gebruiken dat naar de workflow wordt verzonden, dat beschikbaar is op een absoluut pad of dat beschikbaar is op een pad in een variabele. U kunt een variabele van het type String gebruiken om het pad op te geven.\
+   U kunt meerdere aangepaste formulieren aan een workflow koppelen. Hierdoor kunt u een adaptief formulier op de runtime opgeven met de beschikbare invoermethoden.
 
-* **Interactieve communicatie gebruiken:** Specificeer de methode om van de input interactieve mededeling de plaats te bepalen. U kunt de interactieve mededeling gebruiken die aan het werkschema wordt voorgelegd, beschikbaar bij een absolute weg, of beschikbaar bij een weg in een variabele. U kunt een variabele van typeKoord gebruiken om de weg te specificeren. Deze optie is beschikbaar als u de Interactieve Communicatie Agent UI of het Interactieve Document van het Kanaal van het Communicatie Web van de drop-down lijst van het Type selecteert.\
-   **Opmerking:** U moet cm-agent-gebruikers en werkschema-gebruikers groepstaken hebben om tot Interactieve Communicatie Agent UI in AEM inbox toegang te hebben.
-
-* **Aanpassingsformulier of interactief communicatiepad**: Specificeer de weg van de adaptieve vorm of de Interactieve Mededeling. U kunt de adaptieve vorm of de interactieve mededeling gebruiken die aan het werkschema, beschikbaar bij een absolute weg wordt voorgelegd, of de adaptieve vorm terugwinnen van een weg die in een variabele van koordgegevenstype wordt opgeslagen.
-* **Selecteer invoer PDF gebruikend:** Specificeer de weg van een niet interactief Pdf- document. Het gebied is beschikbaar wanneer u een niet interactief Pdf- document op het gebied van het Type kiest. U kunt de input PDF selecteren gebruikend de weg die met betrekking tot de nuttige lading is, bewaard bij een absolute weg, of gebruikend een variabele van het gegevenstype van het Document. Bijvoorbeeld, [Payload_Directory]/Workflow/PDF/credit-card.pdf. De weg bestaat niet in crx-bewaarplaats. Een beheerder leidt tot de weg alvorens het te gebruiken. U hebt een Document van de toegelaten optie van het Verslag of op malplaatje gebaseerde aanpassingsvormen voor het gebruiken van de optie van de Weg van PDF nodig.
-* **Voor voltooide taak, geef de adaptieve vorm terug zoals**: Wanneer een taak duidelijk is voltooid, kunt u de adaptieve vorm teruggeven als een alleen-lezen adaptief formulier of een PDF-document. U hebt een Document van toegelaten optie van het Verslag of op malplaatje gebaseerde aanpassingsvormen nodig om de adaptieve vorm als Document van Verslag terug te geven.
-* **Voorgevuld:** De volgende gebieden die hieronder worden vermeld dienen als input aan de taak:
-
-   * **Selecteer een bestand met invoergegevens met:** Pad van invoergegevensbestand (.json,. xml, .doc, of model van vormgegevens). U kunt het dossier van inputgegevens terugwinnen gebruikend een weg die met betrekking tot de nuttige lading is of het dossier terugwinnen dat in een variabele van Document, XML, of gegevenstype JSON wordt opgeslagen. Bijvoorbeeld, bevat het dossier de gegevens die voor de vorm door een toepassing van AEM Inbox worden voorgelegd. Een voorbeeldweg is [Payload_Directory]/workflow/data.
-   * **Selecteer invoerbijlagen met:** De gehechtheid beschikbaar bij de plaats is in bijlage aan de vorm verbonden aan de taak. De weg is altijd met betrekking tot de nuttige lading. Een voorbeeldweg is [Payload_Directory]/gehechtheid/
-   * **Kies input-JSON:** Selecteer een inputJSON dossier gebruikend een weg die met betrekking tot lading is of in een variabele van Document, JSON, of het Model van de Gegevens van de Vorm gegevenstype wordt opgeslagen. Deze optie is beschikbaar als u de Interactieve Communicatie Agent UI of het Interactieve Document van het Kanaal van het Communicatie Web van de drop-down lijst van het Type selecteert.
-   * **Kies een aangepaste prefill-service:** Selecteer de prefill dienst om de gegevens terug te winnen en het Interactieve het kanaaldocument van het Communicatie Web of de Agent UI te prefill.
-
-   * **Gebruik de prefill dienst van de hierboven geselecteerde interactieve mededeling:** Gebruik deze optie om de prefill dienst van de Interactieve Mededeling te gebruiken die in de Van het Gebruik Interactieve Communicatie drop-down lijst wordt bepaald.
-   * **Attribuuttoewijzing aanvragen:** Gebruik de sectie van de Afbeelding van Attributen van het Verzoek om de [naam en de waarde van de verzoekattributen](../../forms/using/work-with-form-data-model.md#bindargument)te bepalen. Win de details van de gegevensbron terug die op de attributennaam en de waarde wordt gebaseerd die in het verzoek wordt gespecificeerd. U kunt een waarde van verzoekattributen bepalen gebruikend een letterlijke waarde of een variabele van het gegevenstype van het Koord.\
-      De prefill dienst en de opties van de verzoekattributenafbeelding zijn beschikbaar slechts als u de Interactieve Communicatie Agent UI of het Interactieve Document van het Kanaal van het Communicatie Web van het Type van de drop-down lijst selecteert.
-
-* **Voorgelegde informatie:** De volgende hieronder vermelde gebieden dienen als outputplaatsen aan de taak:
-
-   * **Sla het uitvoerbestand op met behulp van:** Sparen het gegevensdossier (.json,. xml, .doc, of model van vormgegevens). Het gegevensdossier bevat informatie die door de bijbehorende vorm wordt voorgelegd. U kunt het dossier van outputgegevens bewaren gebruikend een weg die met betrekking tot de nuttige lading is of het opslaan in een variabele van Document, XML, of JSON gegevenstype. Bijvoorbeeld, [Payload_Directory]/Workflow/data, waar het gegeven een dossier is.
-   * **Bevestigingen opslaan met:** Sparen de vormgehechtheid verstrekt in een taak. U kunt de gehechtheid bewaren gebruikend een weg die met betrekking tot de nuttige lading is of het opslaan in een variabele van serie van het gegevenstype van het Document.
-   * **Document opslaan met behulp van:** Weg om een Document van het dossier van het Verslag op te slaan. Bijvoorbeeld, [Payload_Directory]/DocumentofRecord/credit-card.pdf. U kunt het Document van Verslag bewaren gebruikend een weg die met betrekking tot de nuttige lading is of het opslaan in een variabele van het gegevenstype van het Document. Als u **ten opzichte van de optie Payload** selecteert, wordt het Document van Verslag niet geproduceerd als het weggebied leeg wordt verlaten. Deze optie is beschikbaar slechts als u Aanpassingsvorm van de drop-down lijst van het Type selecteert.
-
-   * **Sparen de gegevens van het Kanaal van het Web gebruikend:** Sparen het de gegevensdossier van het Kanaal van het Web gebruikend een weg die met betrekking tot de nuttige lading is of sla het in een variabele van Document, JSON, of het Model van de Gegevens van de Vorm gegevenstype op. Deze optie is beschikbaar slechts als u Interactieve Communicatie Agent UI van het Type drop-down lijst selecteert.
-   * **PDF-document opslaan met:** Sparen het Pdf- document gebruikend een weg die met betrekking tot de nuttige lading is of sla het in een variabele van het gegevenstype van het Document op. Deze optie is beschikbaar slechts als u Interactieve Communicatie Agent UI van het Type drop-down lijst selecteert.
-   * **Opmaaksjabloon opslaan met:** Sparen het lay-outmalplaatje gebruikend een weg die met betrekking tot de nuttige lading is of sla het in een variabele van het gegevenstype van het Document op. Het [lay-outmalplaatje](../../forms/using/layout-design-details.md) verwijst naar een XDP dossier dat u het gebruiken van de Ontwerper van Vormen creeert. Deze optie is beschikbaar slechts als u Interactieve Communicatie Agent UI van het Type drop-down lijst selecteert.
-
-* **Toegewezen > Opties toewijzen:** Specificeer de methode om de taak aan een gebruiker toe te wijzen. U kunt de taak aan een gebruiker of een groep dynamisch toewijzen gebruikend het manuscript van de Kiezer van de Deelnemer of de taak toewijzen aan een specifieke gebruiker AEM of een groep.
-* **Deelnemer:** De optie is beschikbaar wanneer de optie **dynamisch aan een gebruiker of een groep** op het Assign optiesgebied wordt geselecteerd. U kunt een ECMAScript of de dienst gebruiken om een gebruiker of een groep dynamisch te selecteren. Voor meer informatie, zie [dynamisch een werkschema toewijzen aan de gebruikers](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) en [Creërend een stap van de Deelnemer van de Manager van de Ervaring van douaneAdobe de Dynamische.](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
-
-* **Deelnemers:** Het gebied is beschikbaar wanneer de **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** optie in het gebied van de Kiezer **van de** Deelnemer wordt geselecteerd. Het gebied staat u toe om gebruikers of groepen voor de optie te selecteren RandomParticipantChooser.
-
-* **Geadresseerde:** Het gebied is beschikbaar wanneer **[!UICONTROL com.adobe.fd.workspace.step.service.VariableParticipantChooser]** op het gebied van de Kiezer **van de** Deelnemer wordt geselecteerd. Het gebied staat u toe om een variabele van het gegevenstype van het Koord te selecteren om de ontvanger te bepalen.
-
-* **Argumenten:** Het gebied is beschikbaar wanneer een manuscript buiten het manuscript RandomParticipantChoose in het gebied van de Chooser van de Deelnemer wordt geselecteerd. Het gebied staat u toe om een lijst van een komma gescheiden argumenten voor het manuscript te verstrekken dat in het gebied van de Chooser van de Deelnemer wordt geselecteerd.
-
-* **Gebruiker of groep:** De taak wordt toegewezen aan geselecteerde gebruiker of groep. De optie is beschikbaar wanneer **aan een specifieke gebruiker of groepsoptie** op het gebied van de **Toewijzing opties** wordt geselecteerd. Het gebied maakt een lijst van alle gebruikers en groepen van de werkschema-gebruikers groep.\
-   Het drop-down menu van de **Gebruiker of van de Groep** maakt een lijst van de gebruikers en de groepen die de het programma geopende gebruiker toegang tot heeft. De gebruikersbenamingsvertoning hangt van af als u toegangstoestemmingen op de **gebruikersknoop** in crx-bewaarplaats voor die bepaalde gebruiker hebt.
-
-* **Stuur de geadresseerde per e-mail op de hoogte:** Selecteer deze optie om e-mailberichten naar de toegewezen persoon te verzenden. Deze berichten worden verzonden wanneer een taak aan een gebruiker wordt toegewezen. Alvorens de optie te gebruiken, laat de berichten van de Console van het Web AEM toe. Voor geleidelijke instructies, zie e-mailberichten [vormen voor toewijst taakstap](../../forms/using/aem-forms-workflow.md)
-
-* **HTML-e-mailtemplate**: Selecteer een e-mailtemplate voor de e-mail met bericht. Om een malplaatje uit te geven, wijzig het dossier dat in /libs/fd/dashboard/templates/email/htmlEmailTemplate.txt in crx-bewaarplaats wordt gevestigd.
-* **Delegatie toestaan aan:** AEM Inbox verstrekt een optie aan de het programma geopende gebruiker om het toegewezen werkschema aan een andere gebruiker af te vaardigen. U wordt toegestaan om binnen de zelfde groep of aan de werkschemagebruiker van een andere groep te delegeren. Als de taak aan één enkele gebruiker wordt toegewezen en de **sta delegatie aan leden van de optie van de bestemmingsgroep** toe wordt geselecteerd, dan is het niet mogelijk om de taak aan een andere gebruiker of een groep te delegeren.
-* **Share Settings:** AEM Inbox verstrekt opties om enig of alle taken in inbox met een andere gebruikers te delen:
-   * Wanneer **Allow wordt de toegewezen persoon om uitdrukkelijk in inbox** optie te delen geselecteerd, kan de gebruiker op de taak klikken en het delen met een andere gebruiker AEM.
-   * Wanneer **Allow wordt de toegewezen persoon om via inbox het delen** optie te delen geselecteerd en een gebruiker deelt zijn Punten Inbox of andere gebruikers toestaat om tot zijn Inbox punten toegang te hebben, slechts worden de taken met bovengenoemde toegelaten optie gedeeld met andere gebruikers.
-
-* **Acties > Standaardacties:** Uit de doos, leg, sparen voor, en de acties van het Terugstellen zijn beschikbaar. Alle standaardacties worden toegelaten, door gebrek.
-* **Routevariabele:** Naam van de routevariabele. De routevariabele vangt douaneacties die een gebruiker in AEM Inbox selecteert.
-* **Routes:** Een taak kan zich aan verschillende routes vertakken. Wanneer geselecteerd in AEM Inbox, keert de route een waarde en de werkschematakken terug die op de geselecteerde route worden gebaseerd. U kunt of routes in een variabele van serie van het gegevenstype van het Koord opslaan of **Letterlijk** selecteren om routes manueel toe te voegen.
-
-* **Titel**: Specificeer de titel voor de route. Het wordt getoond in AEM Inbox.
-* **Koraalpictogram**: Specificeer de attributen van HTML van een koraalpictogram. De bibliotheek van Adobe CorelUI verstrekt een enorme reeks aanraking-eerste pictogrammen. U kunt een pictogram voor de route kiezen en gebruiken. Het wordt getoond samen met de titel in AEM Inbox. Als u de routes in een variabele opslaat, gebruiken de routes een standaard het koraalpictogram van &quot;Markeringen&quot;.
-* **Toestaan van de geadresseerde om commentaar** toe te voegen: Selecteer deze optie om commentaren voor de taak toe te laten. Een ontvanger kan de commentaren van binnen AEM Inbox op het tijdstip van taakindiening toevoegen.
-* **Commentaar opslaan in variabele:** Sparen de commentaar in een variabele van het gegevenstype van het Koord. Deze optie wordt alleen weergegeven als u het selectievakje Toegewezen persoon **toestaan selecteert om commentaar** toe te voegen.
-
-* **Toestaan van de ontvanger dat deze bijlage(s) aan de taak** toevoegt: Selecteer deze optie om gehechtheid voor de taak toe te laten. Een toegewezen persoon kan de bijlagen toevoegen van binnen AEM Inbox op het tijdstip van het indienen van de taak.
-* **Sparen de gehechtheid van de outputtaak gebruikend**: Specificeer de plaats van gehechtheidsomslag. U kunt de gehechtheid van de outputtaak bewaren gebruikend een weg met betrekking tot nuttige lading of in een variabele van serie van documentgegevenstype. Deze optie wordt alleen weergegeven als u de optie Toegewezen persoon **toestaan selecteert om bijlage(s) toe te voegen aan het selectievakje taak** en het **Aanpassingsformulier**, het adaptieve **alleen-lezen adaptieve formulier** of het **niet-interactieve PDF-document** selecteert in de vervolgkeuzelijst **Type** **** op het tabblad Document.
+* **Interactieve communicatie gebruiken:** Geef de methode op om de interactieve invoercommunicatie te zoeken. U kunt de interactieve communicatie gebruiken die aan het werkschema wordt voorgelegd, beschikbaar bij een absolute weg, of beschikbaar bij een weg in een variabele. U kunt een variabele van het type String gebruiken om het pad op te geven. Deze optie is beschikbaar als u Interactieve Communicatie Agent UI of het Interactieve Document van het Kanaal van het Communicatie Web van de drop-down lijst van het Type selecteert.
 
 >[!NOTE]
 >
->Gebruik het lusje van Gehechtheid in Agent UI tijdens runtime om de gehechtheid aan een Interactieve Mededeling te associëren. De bijbehorende gehechtheid toont als taakgehechtheid in sidekick na het openen van het het werkpunt in een Volledige staat.
+>U moet cm-agent-gebruikers en werkschema-gebruikers groepstoewijzingen hebben om tot Interactieve Communicatie Agent UI in AEM inbox toegang te hebben.
 
-* **De douanemeta-gegevens van het gebruik:** Selecteer deze optie om het gebied van de douanemeta-gegevens toe te laten. De meta-gegevens van de douane wordt gebruikt in e-mailmalplaatjes.
-* **Aangepaste metagegevens:** Selecteer een douanemeta-gegevens voor de e-mailmalplaatjes. De douanemeta-gegevens is beschikbaar in crx-bewaarplaats bij apps/fd/dashboard/scripts/metadataScripts. Het opgegeven pad bestaat niet in crx-repository. Een beheerder leidt tot de weg alvorens het te gebruiken. U kunt de dienst voor de douanemeta-gegevens ook gebruiken. U kunt de interface ook uitbreiden WorkitemUserMetadataService om douanemeta-gegevens te verstrekken.
-* **Toon Gegevens van Vorige Stappen**: Selecteer deze optie om de toewijzing van taken mogelijk te maken om vorige toewijzing, reeds ondernomen actie op de taak, commentaren die aan de taak worden toegevoegd, en document van verslag van de voltooide taak, indien beschikbaar, te bekijken.
-* **Gegevens weergeven uit volgende stappen:** Selecteer deze optie om de huidige ontvanger toe te laten om de actie te bekijken en commentaren die aan taak door verdere ontvangers worden toegevoegd te bekijken. Het staat ook de huidige aangewezen toe om een document van verslag van de voltooide taak te bekijken, indien beschikbaar.
-* **Zichtbaarheid van het gegevenstype:** Door gebrek, kan een ontvanger een Document van Verslag bekijken, kan de toegewezen personen, de genomen actie, en de commentaren die de vorige en verdere ontvangers hebben toegevoegd. Gebruik het zicht van gegevenstype optie om het type van gegevens te beperken zichtbaar aan de ontvangers.
+* **Adaptief formulier of interactief communicatiepad**: Geef het pad op van het adaptieve formulier of de interactieve communicatie. U kunt het aangepaste formulier of de interactieve communicatie gebruiken die naar de workflow wordt verzonden, beschikbaar via een absoluut pad, of het aangepaste formulier ophalen via een pad dat is opgeslagen in een variabele van het type tekenreeksgegevens.
+* **Selecteer invoer-PDF met:** Geef het pad op van een niet-interactief PDF-document. Het veld is beschikbaar wanneer u een niet-interactief PDF-document kiest in het veld Type. U kunt de invoer-PDF selecteren met het pad dat relatief is ten opzichte van de lading, opgeslagen op een absoluut pad of met een variabele van het gegevenstype Document. Bijvoorbeeld [Payload_Directory]/Workflow/PDF/credit-card.pdf. Het pad bestaat niet in crx-repository. Een beheerder maakt het pad voordat het wordt gebruikt. U hebt een optie Document of Record ingeschakeld of op een formuliersjabloon gebaseerde adaptieve formulieren nodig om de optie PDF-pad te kunnen gebruiken.
+* **Voor voltooide taak geeft u het adaptieve formulier weer als**: Als een taak is gemarkeerd als voltooid, kunt u het adaptieve formulier weergeven als een alleen-lezen adaptief formulier of als een PDF-document. U hebt een optie Document of Record ingeschakeld of op een formuliersjabloon gebaseerde adaptieve formulieren nodig om het adaptieve formulier weer te geven als Document of Record.
+* **Vooraf ingevuld:** De volgende velden die hieronder worden vermeld, dienen als invoer voor de taak:
+
+   * **Selecteer een invoergegevensbestand met:** Pad van invoergegevensbestand (.json,. xml-, .doc- of formuliergegevensmodel). U kunt het invoergegevensbestand terugwinnen gebruikend een weg die met betrekking tot de lading is of het dossier terugwinnen dat in een variabele van Document, XML, of gegevenstype JSON wordt opgeslagen. Het bestand bevat bijvoorbeeld de gegevens die via een AEM Inbox-toepassing voor het formulier zijn verzonden. Een voorbeeldpad is [Payload_Directory]/workflow/data.
+   * **Selecteer invoerbijlagen met:** Bijlagen die beschikbaar zijn op de locatie, worden gekoppeld aan het formulier dat aan de taak is gekoppeld. Het pad is altijd relatief ten opzichte van de lading. Een voorbeeldpad is [Payload_Directory]/attachments/
+   * **JSON-invoer kiezen:** Selecteer een invoer-JSON-bestand met een pad dat relatief is ten opzichte van de payload of dat is opgeslagen in een variabele van het gegevenstype Document, JSON of Formuliergegevensmodel. Deze optie is beschikbaar als u Interactieve Communicatie Agent UI of het Interactieve Document van het Kanaal van het Communicatie Web van de drop-down lijst van het Type selecteert.
+   * **Kies een aangepaste Prefill-service:** Selecteer de prefill dienst om de gegevens terug te winnen en het Interactieve Communicatie het kanaaldocument van het Web of de Agent UI vooraf in te vullen.
+
+   * **Gebruik de vooraf ingevulde service van de hierboven geselecteerde interactieve communicatie:** Gebruik deze optie om de prefill dienst van Interactieve Communicatie te gebruiken die in de Interactieve Communicatie van het Gebruik drop-down lijst wordt bepaald.
+   * **Toewijzing verzoekkenmerk:** Gebruik de sectie Toewijzing verzoekkenmerk om de [naam en waarde van het aanvraagkenmerk](../../forms/using/work-with-form-data-model.md#bindargument)te definiëren. Haal de details van de gegevensbron op die op de attributennaam en waarde wordt gebaseerd in het verzoek wordt gespecificeerd. U kunt een waarde van het verzoekattribuut bepalen gebruikend een letterlijke waarde of een variabele van het gegevenstype van het Koord.\
+      De prefill dienst en de opties van de verzoekkenmerkafbeelding zijn beschikbaar slechts als u het Interactieve Communicatie Agent UI of het Interactieve Document van het Kanaal van het Communicatie Web van de drop-down lijst van het Type selecteert.
+
+* **Verzonden informatie:** De volgende velden die hieronder worden vermeld, fungeren als uitvoerlocaties voor de taak:
+
+   * **Uitvoergegevensbestand opslaan met:** Sla het gegevensbestand op (.json,. xml-, .doc- of formuliergegevensmodel). Het gegevensbestand bevat informatie die via het bijbehorende formulier is verzonden. U kunt het uitvoergegevensbestand opslaan met een pad dat relatief is ten opzichte van de lading of dit opslaan in een variabele van het gegevenstype Document, XML of JSON. Bijvoorbeeld [Payload_Directory]/Workflow/data, waarbij gegevens een bestand zijn.
+   * **Bijlagen opslaan met:** Sla de formulierbijlagen in een taak op. U kunt de bijlagen opslaan met een pad dat relatief is ten opzichte van de lading of deze opslaan in een variabele van een array van documentgegevenstype.
+   * **Document van record opslaan met:** Pad om een document van een recordbestand op te slaan. Bijvoorbeeld [Payload_Directory]/DocumentofRecord/credit-card.pdf. U kunt het Document van Verslag bewaren gebruikend een weg die met betrekking tot de lading is of het opslaan in een variabele van het gegevenstype van het Document. Als u de optie **Ten opzichte van Payload** selecteert, wordt het document of record niet gegenereerd als het padveld leeg blijft. Deze optie is alleen beschikbaar als u Adaptief formulier selecteert in de vervolgkeuzelijst Type.
+
+   * **Webkanaalgegevens opslaan met:** Sla het webkanaalgegevensbestand op met een pad dat relatief is ten opzichte van de lading of sla het op in een variabele van het gegevenstype Document, JSON of Formuliergegevensmodel. Deze optie is beschikbaar slechts als u Interactieve Communicatie Agent UI van de drop-down lijst van het Type selecteert.
+   * **PDF-document opslaan met:** Sla het PDF-document op met een pad dat relatief is ten opzichte van de lading of sla het op in een variabele van het gegevenstype Document. Deze optie is beschikbaar slechts als u Interactieve Communicatie Agent UI van de drop-down lijst van het Type selecteert.
+   * **Lay-outsjabloon opslaan met:** Sla de lay-outsjabloon op met een pad dat relatief is ten opzichte van de laadbewerking of sla deze op in een variabele van het gegevenstype Document. De [lay-outsjabloon](../../forms/using/layout-design-details.md) verwijst naar een XDP-bestand dat u maakt met Forms Designer. Deze optie is beschikbaar slechts als u Interactieve Communicatie Agent UI van de drop-down lijst van het Type selecteert.
+
+* **Toewijzen > Opties toewijzen:** Geef de methode op waarmee de taak aan een gebruiker wordt toegewezen. U kunt de taak dynamisch toewijzen aan een gebruiker of groep met behulp van het script Deelnemerkiezer of u kunt de taak toewijzen aan een specifieke AEM-gebruiker of -groep.
+* **Deelnemerkiezer:** De optie is beschikbaar als de optie **Dynamisch naar een gebruiker of groep** is geselecteerd in het veld Opties toewijzen. U kunt een ECMAScript of de dienst gebruiken om een gebruiker of een groep dynamisch te selecteren. Zie [Dynamisch een workflow toewijzen aan de gebruikers](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) en een aangepaste stap Dynamische deelnemer in Adobe Experience Manager [maken voor meer informatie.](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
+
+* **Deelnemers:** Het veld is beschikbaar wanneer de optie **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** is geselecteerd in het veld **Deelnemerkiezer** . In het veld kunt u gebruikers of groepen selecteren voor de optie RandomParticipantChooser.
+
+* **Geadresseerde:** Het veld is beschikbaar wanneer **[!UICONTROL com.adobe.fd.workspace.step.service.VariableParticipantChooser]** is geselecteerd in het veld **Deelnemerkiezer** . In het veld kunt u een variabele van het gegevenstype String selecteren om de toewijzing te definiëren.
+
+* **Argumenten:** Het veld is beschikbaar wanneer een ander script dan het script RandomParticipantChoose is geselecteerd in het veld Deelnemerkiezer. In het veld kunt u een lijst met door komma&#39;s gescheiden argumenten opgeven voor het script dat is geselecteerd in het veld Deelnemerkiezer.
+
+* **Gebruiker of groep:** De taak wordt toegewezen aan de geselecteerde gebruiker of groep. De optie is beschikbaar wanneer de optie **** Aan een bepaalde gebruiker of groep is geselecteerd in het veld Opties **** toewijzen. In het veld worden alle gebruikers en groepen van de groep met workflowgebruikers weergegeven.\
+   In het vervolgkeuzemenu **Gebruiker of Groep** worden de gebruikers en groepen weergegeven waartoe de aangemelde gebruiker toegang heeft. De vertoning van de gebruikersbenaming hangt af van als u toegangstoestemmingen op de **gebruikersknoop** in crx-bewaarplaats voor die bepaalde gebruiker hebt.
+
+* **De geadresseerde per e-mail op de hoogte stellen:** Selecteer deze optie als u e-mailberichten wilt verzenden naar de ontvanger. Deze meldingen worden verzonden wanneer een taak aan een gebruiker wordt toegewezen. Schakel de meldingen van AEM Web Console in voordat u deze optie gebruikt. Voor geleidelijke instructies, zie [vorm e-mailberichten voor de toewijstaakstap](../../forms/using/aem-forms-workflow.md)
+
+* **HTML-e-mailsjabloon**: Selecteer een e-mailsjabloon voor het e-mailbericht. Als u een sjabloon wilt bewerken, wijzigt u het bestand op /libs/fd/dashboard/templates/email/htmlEmailTemplate.txt in de crx-repository.
+* **Delegatie toestaan aan:** AEM Inbox verstrekt een optie aan de het programma geopende gebruiker om het toegewezen werkschema aan een andere gebruiker te delegeren. U kunt delegeren binnen dezelfde groep of aan de werkschemagebruiker van een andere groep. Als de taak aan één enkele gebruiker wordt toegewezen en **toelaat delegatie aan leden van de optie van de bestemmingsgroep** wordt geselecteerd, dan is het niet mogelijk om de taak aan een andere gebruiker of groep te delegeren.
+* **Instellingen voor delen:** AEM Inbox biedt opties om één of alle taken in het Postvak IN met andere gebruikers te delen:
+   * Wanneer de optie Toegewezen **toestaan om expliciet te delen in Postvak** is geselecteerd, kan de gebruiker op de taak klikken en deze delen met een andere AEM-gebruiker.
+   * Wanneer **Toestaan dat een ontvanger kan delen via de optie voor het delen** van postvakken is geselecteerd en een gebruiker zijn Postvak-items deelt of andere gebruikers toegang geeft tot zijn Postvak-items, worden alleen taken waarvoor deze optie is ingeschakeld, gedeeld met andere gebruikers.
+
+* **Handelingen > Standaardhandelingen:** De acties Verzenden, Opslaan en Herstellen zijn beschikbaar in het vak. Standaard zijn alle standaardhandelingen ingeschakeld.
+* **Routevariabele:** Naam van de routevariabele. De routevariabele vangt douaneacties die een gebruiker in AEM Inbox selecteert.
+* **Routes:** Een taak kan zich aan verschillende routes vertakken. Wanneer geselecteerd in AEM Inbox, keert de route een waarde en de werkschematakken terug die op de geselecteerde route worden gebaseerd. U kunt of routes in een variabele van serie van het gegevenstype van het Koord opslaan of **Letterlijk** selecteren om routes manueel toe te voegen.
+
+* **Titel**: Specificeer de titel voor de route. Het wordt weergegeven in AEM Inbox.
+* **Koraalpictogram**: Geef het HTML-kenmerk van een koraalpictogram op. De Adobe CorelUI-bibliotheek bevat een groot aantal aanraakpictogrammen. U kunt een pictogram voor de route kiezen en gebruiken. Deze wordt samen met de titel weergegeven in AEM Inbox. Als u de routes in een variabele opslaat, gebruiken de routes een standaard &quot;Tags&quot;koraalpictogram.
+* **Toestaan dat de ontvanger commentaar** toevoegt: Selecteer deze optie als u opmerkingen voor de taak wilt inschakelen. Een toegewezen persoon kan de opmerkingen toevoegen vanuit AEM Inbox op het moment dat de taak wordt verzonden.
+* **Opmerking opslaan in variabele:** Sla de opmerking op in een variabele van het gegevenstype String. Deze optie wordt alleen weergegeven als u het selectievakje Toewijzing **toestaan om opmerkingen** toe te voegen inschakelt.
+
+* **Toestaan dat de ontvanger een of meer bijlagen aan de taak** toevoegt: Selecteer deze optie om bijlagen in te schakelen voor de taak. Een toegewezen persoon kan de bijlagen toevoegen vanuit AEM Inbox op het moment dat de taak wordt verzonden.
+* **Uitvoertaakbijlagen opslaan met**: Geef de locatie van de map met bijlagen op. U kunt uitvoertaakbijlagen opslaan met een pad dat is gebaseerd op de laadbewerking of met een variabele van een array van documentgegevenstype. Deze optie wordt alleen weergegeven als u de optie **Toestaan dat een of meer ontvangers bijlagen aan het taakselectievakje** mogen toevoegen selecteert en **Adaptief formulier**, adaptief formulier **(alleen-lezen), of** Niet-interactief PDF-document **selecteert in de vervolgkeuzelijst** Type **** **** op het tabblad Formulier/Document.
+
+>[!NOTE]
+>
+>Gebruik het lusje van Bijlagen in Agent UI tijdens runtime om de gehechtheid aan een Interactieve Mededeling te associëren. De bijbehorende bijlagen worden als taakbijlagen weergegeven in het hulpprogramma nadat het werkitem is geopend in de status Voltooid.
+
+* **Aangepaste metagegevens gebruiken:** Selecteer deze optie om het veld Aangepaste metagegevens in te schakelen. Aangepaste metagegevens worden gebruikt in e-mailsjablonen.
+* **Aangepaste metagegevens:** Selecteer aangepaste metagegevens voor de e-mailsjablonen. De aangepaste metagegevens zijn beschikbaar in de crx-gegevensopslagruimte op apps/fd/dashboard/scripts/metadataScripts. Het opgegeven pad bestaat niet in de crx-gegevensopslagruimte. Een beheerder maakt het pad voordat het wordt gebruikt. U kunt ook een service gebruiken voor de aangepaste metagegevens. U kunt de interface WorkitemUserMetadataService ook uitbreiden om douanemetagegevens te verstrekken.
+* **Gegevens uit vorige stappen** tonen: Schakel deze optie in als u wilt dat toewijzen vorige toewijzingen, reeds uitgevoerde handelingen, aan de taak toegevoegde opmerkingen en het document met de record van de voltooide taak, indien beschikbaar, kunnen weergeven.
+* **Gegevens uit volgende stappen tonen:** Selecteer deze optie om de huidige toegewezen persoon in staat te stellen de actie te bekijken die is ondernomen en de opmerkingen die aan de taak zijn toegevoegd door de volgende toegewezen personen. Ook kan de huidige toegewezen persoon een document bekijken waarin de voltooide taak is vastgelegd, indien beschikbaar.
+* **Zichtbaarheid van gegevenstype:** Standaard kan een toegewezen persoon een document met records, toewijzingen, ondernomen actie en opmerkingen bekijken die door eerdere en volgende toewijzingen zijn toegevoegd. Gebruik de zichtbaarheid van de optie Gegevenstype om het type gegevens te beperken dat zichtbaar is voor de ontvangers.
 
 ## E-mailstap verzenden {#send-email-step}
 
-Gebruik de e-mailstap om een e-mail te verzenden, bijvoorbeeld een e-mail met een document van verslag, verbinding van een adaptief formulier, verbinding van een interactieve mededeling, of met een document in bijlage PDF. Stuur e-mailstappen voor [HTML-e-mail](https://en.wikipedia.org/wiki/HTML_email). De e-mails van HTML zijn ontvankelijk en passen aan de e-mailcliënt en het schermgrootte van de ontvangers aan. U kunt een HTML- e-mailmalplaatje gebruiken om verschijning, kleur-regeling, en gedrag van het van e-mail te bepalen.
+Met de stap E-mail kunt u een e-mail verzenden, bijvoorbeeld een e-mail met een recorddocument, een koppeling van een adaptief formulier, een koppeling van een interactieve communicatie of met een bijgevoegd PDF-document. De stap E-mail verzenden ondersteunt [HTML-e-mail](https://en.wikipedia.org/wiki/HTML_email). HTML-e-mailberichten reageren en passen zich aan de e-mailclient en schermgrootte van de ontvangers aan. U kunt een HTML-e-mailsjabloon gebruiken om de weergave, het kleurenschema en het gedrag van het e-mailadres te definiëren.
 
-De e-mailstap maakt gebruik van de Day CQ Mail Service om e-mails te verzenden. Zorg ervoor dat de [e-mailservice](../../forms/using/aem-forms-workflow.md) is geconfigureerd voordat u de e-mailstap gebruikt. De e-mailstap heeft de volgende eigenschappen:
+In de e-mailstap wordt de Day CQ Mail Service gebruikt om e-mailberichten te verzenden. Controleer voordat u de e-mailstap gebruikt of de [e-mailservice](../../forms/using/aem-forms-workflow.md) is geconfigureerd. De e-mailstap heeft de volgende eigenschappen:
 
-**Titel:** De titel van de staphulp identificeert de stap in de werkschemaredacteur.
+**Titel:** De titel van de stap helpt de stap in de werkstroomeditor te identificeren.
 
-**Beschrijving:** De verklaring is nuttig voor andere procesontwikkelaars wanneer u in een gedeelde ontwikkelomgeving werkt.
+**Omschrijving:** Uitleg is nuttig voor andere procesontwikkelaars wanneer u in een gedeelde ontwikkelomgeving werkt.
 
-**E-mail Betreft:** Onderwerp kan van een werkschemameta-gegevens worden teruggewonnen, manueel worden gespecificeerd, of van de waarde worden teruggewonnen die in een variabele wordt opgeslagen. Selecteer uit de volgende opties:
+**E-mailonderwerp:** Onderwerp kan uit een werkschemameta-gegevens worden teruggewonnen, manueel worden gespecificeerd, of van de waarde worden teruggewonnen die in een variabele wordt opgeslagen. Selecteer een van de volgende opties:
 
-* **Letterlijk -** specificeer manueel een onderwerp.
-* **Win van de meta-gegevens** van het Werkschema terug - Win het onderwerp van een meta-gegevensbezit terug.
-* **Variabele** - Win het onderwerp van de waarde terug die in een variabele van het type van koordgegevens wordt opgeslagen.
+* **Letterlijk -** Geef een onderwerp handmatig op.
+* **Haal metagegevens** van de workflow op - Haal het onderwerp op van een eigenschap metadata.
+* **Variabele** - Haal het onderwerp op van de waarde die in een variabele van het type van koordgegevens wordt opgeslagen.
 
-**HTML-e-mailtemplate**: HTML-template voor de e-mail. U kunt variabelen in een e-mailmalplaatje specificeren. De E-mailStap haalt en toont alle variabelen inbegrepen in een malplaatje voor input uit.
+**HTML-e-mailsjabloon**: HTML-sjabloon voor e-mail. U kunt variabelen in een e-mailsjabloon opgeven. De E-mailstap extraheert en geeft alle variabelen weer die in een sjabloon zijn opgenomen voor invoer.
 
-**Metagegevens e-mailtemplate:** De waarde van de variabelen van het e-mailmalplaatje kan een user-specified waarde, de weg van activa op de auteur zijn of publiceert server, beeld, of een bezit van de werkschemameta-gegevens.
+**Metagegevens e-mailsjabloon:** De waarde van de sjabloonvariabelen voor e-mail kan een door de gebruiker opgegeven waarde zijn, het pad van een element op de auteur of de publicatieserver, afbeelding of eigenschap voor metagegevens van de workflow.
 
-* **Letterlijk:** Gebruik de optie wanneer u de nauwkeurige te specificeren waarde kent. Bijvoorbeeld, [example@example.com](mailto:example@example.com).
+* **Letterlijk:** Gebruik deze optie als u precies weet welke waarde u moet opgeven. Bijvoorbeeld [example@example.com](mailto:example@example.com).
 
-* **Werkstroommetagegevens:** Gebruik de optie wanneer de te gebruiken waarde in een bezit van de werkschemameta-gegevens wordt bewaard. Na het selecteren van de optie, ga de naam van het meta-gegevensbezit in het lege tekstvakje onder de optie van de Meta-gegevens van het Werkschema in. Bijvoorbeeld, emailAddress.
-* **URL van bedrijfsmiddel:** Gebruik de optie om een Webverbinding van een interactieve mededeling aan e-mail in te bedden. Na het selecteren van de optie, doorblader en kies de interactieve mededeling om in te bedden. De activa kunnen op de auteur verblijven of publiceren server.
-* **Afbeelding:** Gebruik de optie om een afbeelding in te sluiten op de e-mail. Na het selecteren van de optie, doorblader en kies het beeld. De afbeeldingsoptie is alleen beschikbaar voor de afbeeldingstags (&lt;img src=&quot;*&quot;/>) die beschikbaar zijn in de e-mailsjabloon.
+* **Metagegevens werkstroom:** Gebruik de optie wanneer de te gebruiken waarde in een werkschemabezit wordt opgeslagen. Nadat u de optie hebt geselecteerd, typt u de naam van de eigenschap metadata in het lege tekstvak onder de optie Metagegevens werkstroom. Bijvoorbeeld emailAddress.
+* **Element-URL:** Gebruik de optie om een webkoppeling van een interactieve communicatie in te sluiten in de e-mail. Nadat u de optie hebt geselecteerd, bladert u door de interactieve communicatie die u wilt insluiten en kiest u deze. Het element kan zich op de auteur of de publicatieserver bevinden.
+* **Afbeelding:** Gebruik de optie om een afbeelding in te sluiten in de e-mail. Blader en kies de afbeelding nadat u de optie hebt geselecteerd. De afbeeldingsoptie is alleen beschikbaar voor de afbeeldingstags (&lt;img src=&quot;*&quot;/>) die beschikbaar zijn in de e-mailsjabloon.
 
-**E-mailadres van verzender/ontvanger:** Selecteer de **Letterlijke** optie om een e-mailadres handmatig op te geven of selecteer de optie **Ophalen uit de optie Werkstroommetagegevens** om het e-mailadres op te halen uit een eigenschap metagegevens. U kunt een lijst van de series van het meta-gegevensbezit voor de optie ook specificeren **Win van de meta-gegevens** van het Werkschema terug. Selecteer de **Veranderlijke** optie om het e-mailadres van de waarde terug te winnen die in een variabele van het type van koordgegevens wordt opgeslagen.
+**E-mailadres van afzender/ontvanger:** Selecteer de optie **Letterlijk** om handmatig een e-mailadres op te geven of selecteer de optie **Ophalen uit metagegevens** van workflow om het e-mailadres op te halen uit een eigenschap metadata. U kunt ook een lijst met arrays met metagegevenseigenschappen opgeven voor de optie **Ophalen uit metagegevens** van workflow. Selecteer de optie **Variabele** om het e-mailadres op te halen uit de waarde die is opgeslagen in een variabele van het gegevenstype String.
 
-**Bijvoegsel bestand:** De bedrijfsmiddelen die op de opgegeven locatie beschikbaar zijn, zijn aan de e-mail gekoppeld. De weg van de activa kan met betrekking tot de nuttige lading of absolute weg zijn. Een voorbeeldweg is [Payload_Directory]/gehechtheid/.
+**Bestandsbijlage:** Het middel dat op de opgegeven locatie beschikbaar is, wordt als bijlage aan de e-mail toegevoegd. Het pad van het element kan relatief zijn ten opzichte van de payload of het absolute pad. Een voorbeeldpad is [Payload_Directory]/attachments/.
 
-Selecteer de **Veranderlijke** optie om de dossiergehechtheid terug te winnen die in een variabele van Document, XML, of gegevenstype JSON wordt opgeslagen.
+Selecteer de optie **Variabele** om de bestandsbijlage op te halen die is opgeslagen in een variabele van het gegevenstype Document, XML of JSON.
 
-**Bestandsnaam:** Naam van het dossier van de e-mailgehechtheid. De E-mailstap verandert de oorspronkelijke bestandsnaam van de bijlage in de opgegeven bestandsnaam. De naam kan manueel worden gespecificeerd of van een bezit van de werkschemameta-gegevens of een variabele worden teruggewonnen. Gebruik de **Letterlijke** optie wanneer u de nauwkeurige te specificeren waarde kent. Gebruik de **Veranderlijke** optie om het dossier terug te winnen - noem van de waarde die in een variabele van het type van koordgegevens wordt opgeslagen. Gebruik **terugwinnen van een optie van de Meta-gegevens** van het Werkschema wanneer de te gebruiken waarde in een bezit van de werkschemameta-gegevens wordt opgeslagen.
+**Bestandsnaam:** Naam van het bestand met e-mailbijlagen. Met de E-mailstap wijzigt u de oorspronkelijke bestandsnaam van de bijlage in de opgegeven bestandsnaam. De naam kan handmatig worden opgegeven of opgehaald uit een eigenschap voor metagegevens van een workflow of een variabele. Gebruik de optie **Letterlijk** als u precies weet welke waarde u moet opgeven. Gebruik de optie **Variabele** om de bestandsnaam op te halen uit de waarde die is opgeslagen in een variabele van het gegevenstype String. Gebruik de optie **Ophalen uit metagegevens** van workflow wanneer de te gebruiken waarde wordt opgeslagen in een eigenschap voor metagegevens van workflow.
 
-## Document genereren in stap Record {#generate-document-of-record-step}
+## Document met recordstap genereren {#generate-document-of-record-step}
 
-Wanneer een formulier wordt ingevuld of ingediend, kunt u het formulier in gedrukte of in documentformaat registreren. Dit wordt bedoeld als Document van Verslag (DoR). U kunt het Generate Document van verslagstap gebruiken om een read-only of interactieve versie PDF van een adaptieve vorm tot stand te brengen. De PDF-versie bevat informatie die is ingevuld in het formulier en de lay-out van het adaptieve formulier.
+Wanneer een formulier wordt ingevuld of verzonden, kunt u het formulier afdrukken of in documentindeling registreren. Dit wordt bedoeld als Document van Verslag (DoR). Met de stap Document van record genereren kunt u een alleen-lezen of interactieve PDF-versie maken van een adaptief formulier. De PDF-versie bevat informatie die in het formulier is ingevuld en de indeling van het adaptieve formulier.
 
-Het document van de stap van het Verslag heeft de volgende eigenschappen:
+De stap Document of Record heeft de volgende eigenschappen:
 
-**Aanpassingsformulier** gebruiken: Specificeer de methode om van de input aanpassingsvorm de plaats te bepalen. U kunt de adaptieve vorm gebruiken die aan het werkschema wordt voorgelegd, beschikbaar bij een absolute weg, of beschikbaar bij een weg in een variabele wordt voorgelegd die. U kunt een variabele van gegevenstype van het Koord gebruiken om de weg op de **Uitgezochte variabele te specificeren om gebied op te lossen** .\
-U kunt veelvoudige adaptieve vormen met een werkschema associëren. Dientengevolge, kunt u een adaptieve vorm op runtime specificeren gebruikend de beschikbare inputmethodes.
+**Adaptief formulier** gebruiken: Geef de methode op om het invoeradaptieve formulier te zoeken. U kunt het adaptieve formulier gebruiken dat naar de workflow wordt verzonden, dat beschikbaar is op een absoluut pad of dat beschikbaar is op een pad in een variabele. U kunt een variabele van het gegevenstype van het Koord gebruiken om de weg in de **Uitgezochte variabele te specificeren om gebied op te lossen** .\
+U kunt meerdere aangepaste formulieren aan een workflow koppelen. Hierdoor kunt u een adaptief formulier op de runtime opgeven met de beschikbare invoermethoden.
 
-**Aanpassingspad**: Geef het pad van het adaptieve formulier op. Het gebied is beschikbaar wanneer u **Beschikbaar bij een absolute wegoptie** van het gebied van de Vorm **van het** Gebruik de Aanpassings selecteert.
+**Adaptief formulierpad**: Geef het pad van het adaptieve formulier op. Het veld is beschikbaar als u de optie **Beschikbaar in een absoluut pad** selecteert in het veld Aangepast formulier **** gebruiken.
 
-**Selecteer Invoergegevens met behulp van:** Pad van de invoergegevens voor het adaptieve formulier. U kunt de gegevens bij een plaats met betrekking tot de nuttige lading houden, een absolute weg van de gegevens specificeren, of gegevens terugwinnen die in een variabele van Document, JSON, of het gegevenstype van XML worden opgeslagen. De invoergegevens worden samengevoegd met het adaptieve formulier om een recorddocument te maken.
+**Selecteer Invoergegevens met:** Pad van de invoergegevens voor het adaptieve formulier. U kunt de gegevens op een plaats met betrekking tot de lading houden, een absolute weg van de gegevens specificeren, of gegevens terugwinnen die in een variabele van document, JSON, of het gegevenstype van XML worden opgeslagen. De invoergegevens worden samengevoegd met het aangepaste formulier om een recorddocument te maken.
 
-**Selecteer de de gehechtheidsweg van de Input gebruikend:** Pad van de bijlagen. Deze bijlagen zijn opgenomen in het Document of Record. U kunt de gehechtheid houden bij een plaats met betrekking tot de nuttige lading, een absolute weg van de gehechtheid specificeren, of gehechtheid terugwinnen die in een variabele van serie van het gegevenstype van het Document wordt opgeslagen.
+**Selecteer Invoerpad voor bijlage met:** Pad van de bijlagen. Deze bijlagen worden opgenomen in het document of record. U kunt de bijlagen op een locatie relatief ten opzichte van de lading houden, een absoluut pad naar de bijlagen opgeven of bijlagen ophalen die zijn opgeslagen in een variabele van het gegevenstype Document.
 
-Als u de weg van een omslag specificeert, bijvoorbeeld, zijn de gehechtheid, alle dossiers direct beschikbaar in de omslag in bijlage aan Document van Verslag. Als om het even welke dossiers in de omslagen beschikbaar direct beschikbaar in de gespecificeerde gehechtheidsweg zijn, zijn de dossiers inbegrepen in Document van Verslag als gehechtheid. Als er om het even welke omslagen in direct beschikbare omslagen zijn, worden die overgeslagen.
+Als u bijvoorbeeld het pad van een map opgeeft, worden alle bestanden die rechtstreeks in de map beschikbaar zijn, gekoppeld aan het document met records. Als er bestanden beschikbaar zijn in de mappen die rechtstreeks beschikbaar zijn in het opgegeven pad naar de bijlage, worden de bestanden als bijlagen opgenomen in Document of Record. Als er mappen in direct beschikbare mappen staan, worden deze overgeslagen.
 
-**Opslaan van gegenereerd document met record met de volgende opties:** Specificeer de plaats om een document van verslagdossier te houden. U kunt verkiezen om de nuttige ladingsomslag te beschrijven, document van verslag te plaatsen bij een plaats binnen de ladingsfolder, of het document van verslag op te slaan in een variabele van het gegevenstype van het Document.
+**Gegenereerd document van record opslaan met onderstaande opties:** Geef de locatie op waar u een document van een recordbestand wilt bewaren. U kunt ervoor kiezen om de ladingsomslag te beschrijven, document van verslag bij een plaats binnen de ladingsfolder te plaatsen, of het document van verslag in een variabele van het gegevenstype van het Document op te slaan.
 
-**Lokaal**: Specificeer de taal van het document van verslag. Selecteer **Letterlijk** om de scène van een drop-down lijst te selecteren of **Variabele** te selecteren om de scène van de waarde terug te winnen die in een variabele van het type van koordgegevens wordt opgeslagen. U moet de scènecode bepalen terwijl het opslaan van de waarde voor de scène in een variabele. Bijvoorbeeld, specificeer **en_US** voor het Engels en **fr_FR** voor het Frans.
+**Landinstelling**: Geef de taal van het recorddocument op. Selecteer **Letterlijk** om de landinstelling in een vervolgkeuzelijst te selecteren of selecteer **Variabele** om de landinstelling op te halen uit de waarde die is opgeslagen in een variabele van het gegevenstype String. U moet de landinstellingscode definiëren terwijl u de waarde voor de landinstelling in een variabele opslaat. Geef bijvoorbeeld **en_US** op voor Engels en **fr_FR** voor Frans.
 
-## Formuliergegevensmodel-servicesstap aanhalen {#invoke-form-data-model-service-step}
+## De stap Service van het formuliergegevensmodel aanroepen {#invoke-form-data-model-service-step}
 
-U kunt de Integratie [van de Gegevens van de Vormen](../../forms/using/data-integration.md) AEM gebruiken om met ongelijksoortige gegevensbronnen te vormen en te verbinden. Deze gegevensbronnen kunnen een gegevensbestand, de Webdienst, de dienst van REST, de dienst van OData, en de oplossing van CRM zijn. De Integratie van de Gegevens van Vormen AEM staat u toe om een model van vormgegevens te creëren dat diverse diensten omvat om gegevensherwinning, toevoeging, bijwerkende verrichtingen op het gevormde gegevensbestand uit te voeren. U kunt de **Invoke stap** van de Dienst van het Model van Gegevens gebruiken om een model van vormgegevens (FDM) te selecteren en de diensten van FDM te gebruiken om, gegevens terug te winnen bij te werken of toe te voegen om gegevensbronnen te verdelen.
+U kunt [AEM Forms Data Integration](../../forms/using/data-integration.md) gebruiken om verschillende gegevensbronnen te configureren en er verbinding mee te maken. Deze gegevensbronnen kunnen een gegevensbestand, de Webdienst, de dienst van REST, de dienst van OData, en oplossing van CRM zijn. Met AEM Forms Data Integration kunt u een formuliergegevensmodel maken dat verschillende services omvat voor het ophalen, optellen en bijwerken van gegevens in de geconfigureerde database. Met de stap **Data Model Service** aanroepen kunt u een formuliergegevensmodel (FDM) selecteren en de services van de FDM gebruiken om gegevens op te halen, bij te werken of toe te voegen aan verschillende gegevensbronnen.
 
 Om input voor gebieden van de stap te verklaren, worden de volgende gegevensbestandlijst en het dossier JSON gebruikt als voorbeeld:
 
-**Voorbeeldtabel met klantgegevens**
+**Voorbeeld van tabel met klantgegevens**
 
 <table>
  <tbody> 
@@ -187,11 +190,11 @@ Om input voor gebieden van de stap te verklaren, worden de volgende gegevensbest
    <td>Sarah<br /> </td> 
   </tr> 
   <tr> 
-   <td>Achternaam</td> 
-   <td>Rose</td> 
+   <td>LastName</td> 
+   <td>Roze</td> 
   </tr> 
   <tr> 
-   <td>Klant-ID</td> 
+   <td>Klant-id</td> 
    <td>1</td> 
   </tr> 
   <tr> 
@@ -201,7 +204,7 @@ Om input voor gebieden van de stap te verklaren, worden de volgende gegevensbest
  </tbody> 
 </table>
 
-**Voorbeeld JSON-bestand**
+**Voorbeeld-JSON-bestand**
 
 ```
 { 
@@ -225,202 +228,202 @@ Om input voor gebieden van de stap te verklaren, worden de volgende gegevensbest
 }
 ```
 
-De aanhalen stap van de ModelDienst van de Gegevens van de Vorm heeft de hieronder vermelde gebieden om modelverrichtingen van vormgegevens te vergemakkelijken:
+Voor de stap Service van het formuliergegevensmodel aanroepen worden de onderstaande velden weergegeven, waarmee bewerkingen in het formuliergegevensmodel worden vergemakkelijkt:
 
 * **Titel:** Titel van de stap. Het helpt de stap in de werkschemaredacteur identificeren.
-* **Beschrijving:** Uitleg nuttig voor andere procesontwikkelaars wanneer u in een gedeelde ontwikkelomgeving werkt.
+* **Omschrijving:** Uitleg nuttig voor andere procesontwikkelaars wanneer u in een gedeelde ontwikkelomgeving werkt.
 
-* **Formuliergegevensmodelpad**: Doorblader en selecteer een model van vormgegevens huidig op de server.
+* **Pad** formuliergegevensmodel: Blader naar een formuliergegevensmodel op de server en selecteer dit.
 
-* **Service**: Lijst van de diensten die het geselecteerde model van vormgegevens verstrekt.
-* **De input voor de diensten > verstrekt inputgegevens gebruikend letterlijke, variabele, of werkschemameta-gegevens, en een JSON dossier**: Een dienst kan veelvoudige argumenten hebben. Selecteer de optie om de waarde van de de dienstargumenten uit een bezit van de werkschemameta-gegevens, een voorwerp JSON, een variabele te verkrijgen, of direct de waarde in het verstrekte tekstvakje in te gaan:
+* **Service**: Lijst met services die worden geleverd door het geselecteerde formuliergegevensmodel.
+* **Invoer voor services > Invoergegevens opgeven met letterlijke metagegevens, metagegevens over variabelen of workflows en een JSON-bestand**: Een service kan meerdere argumenten hebben. Selecteer de optie om de waarde van de de dienstargumenten van een werkschemabezit, een voorwerp JSON, een variabele te verkrijgen, of direct de waarde in het verstrekte tekstvakje in te gaan:
 
-   * **Letterlijk:** Gebruik de optie wanneer u de nauwkeurige te specificeren waarde kent. Bijvoorbeeld, srose@we.info.
-   * **Variabele:** Gebruik de optie om de waarde terug te winnen die in een variabele wordt opgeslagen.
-   * **Win van de Meta-gegevens van het Werkschema terug:** Gebruik de optie wanneer de te gebruiken waarde in een bezit van de werkschemameta-gegevens wordt bewaard. Bijvoorbeeld, emailAddress.
-   * **JSON Dot Notation:** Gebruik de optie wanneer de te gebruiken waarde in een JSON dossier is. Bijvoorbeeld, insurance.customerDetails.emailAddress. De optie van de Nota van de Dot van JSON is beschikbaar slechts als de de inputgebieden van de Kaart van inputJSON optie wordt geselecteerd.
-   * **De inputgebieden van de kaart van input JSON:** Specificeer weg van een JSON dossier om inputwaarde van sommige de dienstargumenten uit het JSON dossier te verkrijgen. De weg van het JSON dossier kan met betrekking tot de nuttige lading, een absolute weg zijn, of u kunt een inputJSON- document selecteren gebruikend een variabele van het Model van de Gegevens van JSON of van de Vorm.
+   * **Letterlijk:** Gebruik deze optie als u precies weet welke waarde u moet opgeven. Bijvoorbeeld srose@we.info.
+   * **Variabele:** Gebruik de optie om de waarde op te halen die in een variabele is opgeslagen.
+   * **Ophalen uit werkstroommetagegevens:** Gebruik de optie wanneer de te gebruiken waarde in een werkschemabezit wordt opgeslagen. Bijvoorbeeld emailAddress.
+   * **JSON-puntnotatie:** Gebruik deze optie als de te gebruiken waarde zich in een JSON-bestand bevindt. Bijvoorbeeld verzekering.customerDetails.emailAddress. De optie Puntnotatie JSON is alleen beschikbaar als de optie Invoervelden toewijzen van invoer-JSON is geselecteerd.
+   * **Invoervelden toewijzen uit invoer-JSON:** Geef het pad van een JSON-bestand op om de invoerwaarde van bepaalde serviceargumenten op te halen uit het JSON-bestand. Het pad van het JSON-bestand kan relatief zijn ten opzichte van de payload, een absoluut pad of u kunt een invoer-JSON-document selecteren met een variabele van het type JSON- of Formuliergegevensmodel.
 
-* **Input voor services > Voer inputgegevens in met behulp van een variabele of een JSON-bestand:** Selecteer de optie om waarden voor alle argumenten uit een JSON dossier te verkrijgen dat bij een absolute weg, bij een weg met betrekking tot nuttige lading, of in een variabele wordt opgeslagen.
-* **Selecteer InvoerJSON-document met**: Het JSON dossier dat waarden voor alle de dienstargumenten bevat. De weg van het JSON dossier kan **met betrekking tot de nuttige lading** of een **absolute weg zijn.** U kunt het inputJSON- document ook terugwinnen gebruikend een variabele van JSON of het Model van de Gegevens van de Vorm gegevenstype.
+* **Invoer voor services > Invoergegevens opgeven met behulp van een variabele of een JSON-bestand:** Selecteer de optie om waarden voor alle argumenten op te halen uit een JSON-bestand dat is opgeslagen op een absoluut pad, een pad dat relatief is ten opzichte van de payload of een variabele.
+* **Invoerdocument selecteren met**: Het JSON-bestand met waarden voor alle serviceargumenten. Het pad van het JSON-bestand kan **relatief zijn ten opzichte van de lading** of een **absoluut pad.** U kunt het invoer-JSON-document ook ophalen met behulp van een variabele van het gegevenstype JSON of Form Data Model.
 
-* **JSON Dot Notation:** Verlaat de gebiedsspatie om alle voorwerpen van het gespecificeerde JSON dossier als input voor de dienstargumenten te gebruiken. Om een specifiek voorwerp JSON van het gespecificeerde JSON dossier als input voor de dienstargumenten te lezen, specificeer puntaantekening voor het voorwerp JSON, bijvoorbeeld, als u een JSON gelijkend op die aan het begin van de sectie hebt wordt vermeld, specificeer insurance.customerDetails om alle details van een klant als input aan de dienst te verstrekken.
-* **Output van de dienst > Kaart en schrijft outputwaarden aan variabele of meta-gegevens:** Selecteer de optie om de outputwaarden als eigenschappen van de de meta-gegevensknoop van de werkschemainstantie in crx-bewaarplaats op te slaan. Specificeer de naam van het meta-gegevensbezit en selecteer de overeenkomstige attributen van de de dienstoutput die met meta-gegevensbezit moeten worden in kaart gebracht, bijvoorbeeld, de phone_number die door de outputdienst met het phone_aantalbezit van werkschemameta-gegevens is teruggekeerd in kaart brengen. Op dezelfde manier kunt u de output in een variabele van Lang gegevenstype opslaan.
-* **Output van de dienst > sparen output aan variabele of een JSON dossier:** Selecteer de optie om de outputwaarden in een JSON dossier bij een absolute weg, bij een weg met betrekking tot nuttige lading, of in een variabele op te slaan.
-* **U kunt het uitvoerJSON-document opslaan met de volgende opties:** Sparen het outputJSON dossier. De weg van het outputJSON dossier kan met betrekking tot de nuttige lading of een absolute weg zijn. U kunt het outputJSON dossier ook bewaren gebruikend een variabele van JSON of het Model van de Gegevens van de Vorm gegevenstype.
+* **JSON-puntnotatie:** Laat het veld leeg als u alle objecten van het opgegeven JSON-bestand als invoer voor serviceargumenten wilt gebruiken. Als u een specifiek JSON-object uit het opgegeven JSON-bestand wilt lezen als invoer voor serviceargumenten, geeft u puntnotatie voor het JSON-object op. Als u bijvoorbeeld een JSON-object hebt dat vergelijkbaar is met de JSON-object dat aan het begin van de sectie wordt vermeld, geeft u Insurance.customerDetails op om alle details van een klant als invoer voor de service op te geven.
+* **Uitvoer van service > Uitvoerwaarden toewijzen en schrijven naar variabele of metagegevens:** Selecteer de optie om de uitvoerwaarden op te slaan als eigenschappen van het metagegevensknooppunt voor workflowinstanties in de crx-repository. Specificeer de naam van het meta-gegevensbezit en selecteer het overeenkomstige attribuut van de de dienstoutput dat met meta-gegevensbezit moet worden in kaart gebracht, bijvoorbeeld, phone_number dat door de outputdienst met het phone_number bezit van werkschemameta-gegevens is teruggekeerd. Op dezelfde manier kunt u de uitvoer opslaan in een variabele van het gegevenstype Long.
+* **Uitvoer van service > Uitvoer opslaan naar variabele of een JSON-bestand:** Selecteer de optie om de uitvoerwaarden in een JSON-bestand op te slaan met een absoluut pad, een pad dat relatief is ten opzichte van de laadtijd of een variabele.
+* **JSON-uitvoerdocument opslaan met de onderstaande opties:** Sla het JSON-uitvoerbestand op. Het pad van het JSON-uitvoerbestand kan relatief zijn ten opzichte van de payload of een absoluut pad. U kunt het JSON-uitvoerbestand ook opslaan met een variabele van het gegevenstype JSON of Form Data Model.
 
-## Stap document ondertekenen {#sign-document-step}
+## stap Document ondertekenen {#sign-document-step}
 
-De stap van het Document van het Teken laat u toe om het Teken van Adobe te gebruiken om documenten te ondertekenen. De stap van het Document van het Teken heeft de volgende eigenschappen:
+Met de stap Document ondertekenen kunt u documenten ondertekenen met Adobe Sign. De stap Document ondertekenen heeft de volgende eigenschappen:
 
-* **Naam van overeenkomst:** Geef de titel van de overeenkomst op. De naam van de overeenkomst wordt onderdeel van het onderwerp en de tekst van het lichaam van de e-mail die naar de ondertekenaars wordt verzonden. U kunt of de naam in een variabele van het gegevenstype van het Koord opslaan of **Letterlijk** selecteren om de naam manueel toe te voegen.
+* **Naam overeenkomst:** Geef de titel van de overeenkomst op. De naam van de overeenkomst wordt onderdeel van het onderwerp en de hoofdtekst van de e-mail die naar de ondertekenaars wordt verzonden. U kunt de naam opslaan in een variabele van het gegevenstype String of **Letterlijk** selecteren om de naam handmatig toe te voegen.
 
-* **Lokaal:** Geef de taal op voor de opties voor e-mail en verificatie. U kunt of de scène in een variabele van het gegevenstype van het Koord opslaan of **Letterlijk** selecteren om de scène van de lijst van beschikbare opties te kiezen. U moet de scènecode bepalen terwijl het opslaan van de waarde voor de scène in een variabele. Bijvoorbeeld, specificeer **en_US** voor het Engels en **fr_FR** voor het Frans.
+* **Landinstelling:** Geef de taal op voor de opties voor e-mail en verificatie. U kunt de landinstelling opslaan in een variabele van het gegevenstype String of **Letterlijk** selecteren om de landinstelling te kiezen in de lijst met beschikbare opties. U moet de landinstellingscode definiëren terwijl u de waarde voor de landinstelling in een variabele opslaat. Geef bijvoorbeeld **en_US** op voor Engels en **fr_FR** voor Frans.
 
-* **Configuratie** van de Wolk van het Teken van Adobe: Kies een Configuratie van de Wolk van het Teken van Adobe. Als u het Teken van Adobe niet voor Vormen AEM hebt gevormd, zie het Teken van Adobe met Vormen [](../../forms/using/adobe-sign-integration-adaptive-forms.md)integreren AEM.
+* **Configuratie** van Adobe Sign Cloud: Kies een Adobe Sign Cloud-configuratie. Als u Adobe Sign for AEM Forms niet hebt geconfigureerd, raadpleegt u [Adobe Sign with AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md)integreren.
 
-* **Selecteer Document dat u wilt ondertekenen met:** U kunt een document van een plaats met betrekking tot de lading kiezen, nuttige lading gebruiken als document, een absolute weg van het document specificeren, of het document terugwinnen dat in een variabele van het gegevenstype van het Document wordt opgeslagen.
-* **Dagen tot uiterste termijn:** Een document is duidelijk verschuldigd (overgegaane termijn) nadat er geen activiteit op de taak voor het aantal dagen is specificeert op de **Dagen tot het gebied van de Termijn** . Het aantal dagen wordt geteld nadat het gedocumenteerde aan een gebruiker voor het ondertekenen wordt toegewezen.
-* **Frequentie per e-mail herinnering:** U kunt een herinneringse-mail met dagelijkse of wekelijkse tussenpozen verzenden. De week wordt geteld vanaf de dag de gedocumenteerde wordt toegewezen aan een gebruiker voor het ondertekenen.
-* **Handtekeningsproces:** U kunt verkiezen om een document in een opeenvolging of een parallelle orde te ondertekenen. In opeenvolgende orde, ontvangt één ondertekenaar het document tegelijkertijd voor het ondertekenen. Nadat de eerste ondertekenaar het ondertekenen van het document voltooit, dan wordt het document verzonden naar de tweede onderschrijver, etc. In parallelle volgorde kunnen meerdere signaalgevers tegelijkertijd een document ondertekenen.
-* **URL omleiden:** Specificeer een omleiding URL. Nadat het document is ondertekend, kunt u de toegewezen persoon omleiden naar een URL. Gewoonlijk, bevat dit URL een dank u bericht of verdere instructies.
-* **Werkstroomstadium:** Een werkschema kan veelvoudige stadia hebben. Deze stadia worden getoond in AEM Inbox. U kunt deze stadia in de eigenschappen van het model bepalen (Sidetrap > Pagina > de Eigenschappen van de Pagina > de Fanden).
-* **Selecteer ondertekenaars:** Specificeer de methode om signers voor het document te kiezen. U kunt het werkschema aan een gebruiker of een groep dynamisch toewijzen of manueel details van een onderschrijver toevoegen.
-* **Manuscript of de dienst om signers te selecteren:** De optie is beschikbaar slechts als de dynamisch optie op het Uitgezochte gebied van Ondertekenaars wordt geselecteerd. U kunt een ECMAScript of de dienst specificeren om signers en controleopties voor een document te kiezen.
-* **Gegevens van de ondertekenaar:** De optie is beschikbaar slechts als de manueel optie op het Uitgezochte gebied van Ondertekenaars wordt geselecteerd. Geef het e-mailadres op en kies een optioneel verificatiemechanisme. Alvorens een controlemechanisme te selecteren in twee stappen, zorg ervoor dat de overeenkomstige controleoptie voor de gevormde rekening van het Teken van Adobe wordt toegelaten. U kunt een variabele van gegevenstype van het Koord gebruiken om waarden voor de gebieden van het **[!UICONTROL E-mail]**, van de Code **[!UICONTROL van het]** Land, en van het Aantal **[!UICONTROL van de]** Telefoon te bepalen. De velden **[!UICONTROL Landcode]** en **[!UICONTROL Telefoonnummer]** worden alleen weergegeven als u **[!UICONTROL Telefoonverificatie]** selecteert in de vervolgkeuzelijst **[!UICONTROL 2 stappen verificatie]** .
-* **Statusvariabele:** Een van het Teken van Adobe toegelaten document slaat het ondertekenen van status van het document in een variabele van het gegevenstype van het Koord op. Specificeer de naam van de statusvariabele (adobeSignStatus). Een statusvariabele van een instantie is beschikbaar in CRXDE bij /etc/workflow/instanties/&lt;server>/&lt;date-time>/&lt;instance van werkschemamodel>/workItems/&lt;node>/metaData bevat status van een variabele.
-* **Opslaan van ondertekend document met de volgende opties:** Specificeer de plaats om ondertekende documenten te houden. U kunt verkiezen om het ladingsdossier te beschrijven, het ondertekende document te plaatsen bij een plaats binnen de ladingsfolder, of het ondertekende document op te slaan in een variabele van het type van Document.
+* **Selecteer het document dat u wilt ondertekenen:** U kunt een document kiezen op een locatie die relatief is ten opzichte van de lading, de lading als document gebruiken, een absoluut pad van het document opgeven of het document ophalen dat is opgeslagen in een variabele van het documentgegevenstype.
+* **Dagen tot deadline:** Een document wordt als vervallen gemarkeerd (verstreken deadline) nadat er geen activiteit aan de taak is gedurende het aantal dagen dat is opgegeven in het veld **Dagen tot deadline** . Het aantal dagen wordt geteld nadat het document is toegewezen aan een gebruiker voor ondertekening.
+* **E-mailfrequentie herinnering:** U kunt een herinnering per dag of wekelijks e-mail verzenden. De week wordt geteld vanaf de dag waarop de documentatie aan een gebruiker is toegewezen voor ondertekening.
+* **Handtekeningproces:** U kunt ervoor kiezen om een document in een opeenvolgende of parallelle volgorde te ondertekenen. Eén ondertekenaar ontvangt het document op volgorde voor ondertekening. Nadat de eerste ondertekenaar het ondertekenen van het document heeft voltooid, wordt het document verzonden naar de tweede ondertekenaar, enzovoort. Parallel hieraan kunnen meerdere ondertekenaars een document tegelijk ondertekenen.
+* **URL omleiden:** Geef een omleidings-URL op. Nadat het document is ondertekend, kunt u de ontvanger omleiden naar een URL. Gewoonlijk bevat deze URL een bedankbericht of verdere instructies.
+* **Werkstroomwerkgebied:** Een werkstroom kan uit meerdere fasen bestaan. Deze fasen worden weergegeven in het Postvak IN van AEM. U kunt deze fasen definiëren in de eigenschappen van het model (Selecteren > Pagina > Pagina-eigenschappen > Staven).
+* **Ondertekenaars selecteren:** Geef de methode op waarmee u ondertekenaars voor het document wilt kiezen. U kunt de workflow dynamisch toewijzen aan een gebruiker of groep of gegevens van een ondertekenaar handmatig toevoegen.
+* **Script of service om ondertekenaars te selecteren:** De optie is alleen beschikbaar als de optie Dynamisch is geselecteerd in het veld Ondertekenaars selecteren. U kunt een ECMAScript of een dienst specificeren om ondertekenaars en verificatieopties voor een document te kiezen.
+* **Details ondertekenaar:** De optie is alleen beschikbaar als de optie Handmatig is geselecteerd in het veld Ondertekenaars selecteren. Geef een e-mailadres op en kies een optioneel verificatiemechanisme. Voordat u een verificatiemechanisme met twee stappen selecteert, moet u controleren of de bijbehorende verificatieoptie is ingeschakeld voor het geconfigureerde Adobe-ondertekeningsaccount. U kunt een variabele van het gegevenstype String gebruiken om waarden te definiëren voor de velden **[!UICONTROL E-mail]**, **[!UICONTROL Landcode]** en **[!UICONTROL Telefoonnummer]** . De velden **[!UICONTROL Landcode]** en **[!UICONTROL Telefoonnummer]** worden alleen weergegeven als u **[!UICONTROL Telefoonverificatie]** selecteert in de vervolgkeuzelijst **[!UICONTROL 2-stappencontrole]** .
+* **Statusvariabele:** In een Adobe Sign-document wordt de ondertekeningsstatus van het document opgeslagen in een variabele van het gegevenstype String. Geef de naam van de statusvariabele op (adobeSignStatus). Een statusvariabele van een instantie is beschikbaar in CRXDE op /etc/workflow/instances/&lt;server>/&lt;date-time>/&lt;instance of workflow model>/workItems/&lt;node>/metaData bevat status van een variabele.
+* **Ondertekend document opslaan met onderstaande opties:** Geef de locatie op waar de ondertekende documenten moeten worden bewaard. U kunt ervoor kiezen het ladingsdossier te overschrijven, het ondertekende document bij een plaats binnen de ladingsfolder te plaatsen, of het ondertekende document op te slaan in een variabele van het type van Document.
 
-## De stappen van de Diensten van het Document {#document-services-steps}
+## Stappen voor Document Services {#document-services-steps}
 
-De diensten van het Document AEM zijn een reeks diensten voor het creëren van, het assembleren van, en het beveiligen van Pdf- Documenten. De Vormen van AEM verstrekt een afzonderlijke stap van het Werkschema AEM voor elke documentdienst.
+AEM Document Services is een reeks services voor het maken, samenstellen en beveiligen van PDF-documenten. AEM Forms biedt een aparte AEM-workflowstap voor elke documentservice.
 
-Gelijkaardig aan andere het werkschemastappen van Vormen AEM, zoals Assign Taak, verzend E-mail, en het Document van het Teken, kunt u variabelen in alle de dienstenstappen van het Document gebruiken AEM. Voor meer informatie bij het creëren van en het leiden van variabelen, zie [Variabelen in werkschema](../../forms/using/variable-in-aem-workflows.md)AEM.
+Net als bij andere workflowstappen voor AEM Forms, zoals Taak toewijzen, E-mail verzenden en Document ondertekenen, kunt u variabelen gebruiken in alle stappen voor AEM-documentservices. Zie [Variabelen in AEM-workflows](../../forms/using/variable-in-aem-workflows.md)voor meer informatie over het maken en beheren van variabelen.
 
-### Stempelstap Documenttijd toepassen {#apply-document-time-stamp-step}
+### Tijdstempel document toepassen {#apply-document-time-stamp-step}
 
-Voeg tijdzegel aan een document toe. U verstrekt documentdetails zoals de weg van het inputdocument, de naam van het inputdocument, plaats om uitgevoerde gegevens op te slaan. U kunt verkiezen om bestaand ladingsdossier te beschrijven, een verschillend dossier te kiezen - noem om gegevens in een verschillend dossier op te slaan onder nuttige ladingsomslag, een absolute weg aan de gegevens te verstrekken, of gegevens op te slaan in een variabele van het gegevenstype van het Document.
+Tijdstempel toevoegen aan een document. U geeft documentgegevens op, zoals het pad van het invoerdocument, de naam van het invoerdocument en de locatie waar de geëxporteerde gegevens moeten worden opgeslagen. U kunt desgewenst het bestaande ladingsbestand overschrijven, een andere bestandsnaam kiezen om gegevens op te slaan in een ander bestand onder de ladingmap, een absoluut pad naar de gegevens opgeven of gegevens opslaan in een variabele van het gegevenstype Document.
 
-### Omzetten in stap naar afbeelding {#convert-to-image-step}
+### Omzetten in afbeeldingsstap {#convert-to-image-step}
 
-Zet een Pdf- document in lijst van beelden om. De gesteunde beeldformaten zijn JPEG, JPEG2000, PNG, en TIF. De volgende informatie is op omzettingen in beelden van TIF van toepassing:
+Hiermee wordt een PDF-document geconverteerd naar een lijst met afbeeldingen. Ondersteunde afbeeldingsindelingen zijn JPEG, JPEG2000, PNG en TIFF. De volgende informatie is van toepassing op conversies naar TIFF-afbeeldingen:
 
 * Er wordt een TIFF-bestand met meerdere pagina&#39;s gegenereerd.
-* Sommige annotaties zijn niet inbegrepen in beelden van TIF. De annotaties die Acrobaat vereisen om hun verschijning te produceren zijn niet inbegrepen.
+* Niet alle annotaties zijn opgenomen in TIFF-afbeeldingen. Annotaties waarvoor Acrobat vereist is om de weergave te genereren, worden niet opgenomen.
 
 ### Converteren naar PDF/A-stap {#convert-to-pdf-a-step}
 
-Zet een Pdf- document in formaat PDF/A om gebruikend de verstrekte opties. De PDF/A-versie van Portable Document Format (PDF) is gespecialiseerd in archivering en langetermijnbewaring van documenten.
+Hiermee wordt een PDF-document naar PDF/A-indeling geconverteerd met de beschikbare opties. De PDF/A-versie van Portable Document Format (PDF) is gespecialiseerd in het archiveren en het op lange termijn bewaren van documenten.
 
-### Converteren naar PS-stap {#convert-to-ps-step}
+### Omzetten in PS-stap {#convert-to-ps-step}
 
-PDF-documenten converteren naar PostScript. Wanneer het omzetten in PostScript, kunt u de omzettingsverrichting gebruiken om het brondocument te specificeren en of om in niveau 2 of 3 van PostScript om te zetten. Het PDF-document dat u converteert naar een PostScript-bestand moet niet interactief zijn.
+Converteer PDF-documenten naar PostScript. Bij het converteren naar PostScript kunt u het brondocument met de conversiebewerking opgeven en of het document moet worden omgezet in PostScript-niveau 2 of 3. Het PDF-document dat u naar een PostScript-bestand converteert, moet niet-interactief zijn.
 
-### PDF maken vanuit opgegeven tekststap {#create-pdf-from-specified-type-step}
+### PDF maken van opgegeven tekststap {#create-pdf-from-specified-type-step}
 
-Produceer een Pdf- document van een inputdossier. Het inputdocument kan met betrekking tot de nuttige lading zijn, een absolute weg hebben, kan nuttige lading zelf zijn, of in een variabele van het gegevenstype van het Document worden opgeslagen.
+Genereer een PDF-document op basis van een invoerbestand. Het invoerdocument kan relatief zijn ten opzichte van de payload, een absoluut pad hebben, kan zelf worden geladen of worden opgeslagen in een variabele van het gegevenstype Document.
 
-### PDF maken vanuit URL/HTML/ZIP-stap {#create-pdf-from-url-html-zip-step}
+### PDF maken van stap URL/HTML/ZIP {#create-pdf-from-url-html-zip-step}
 
-Produceert een Pdf- document van geleverde URL, HTML, en het dossier van het PIT.
+Hiermee genereert u een PDF-document op basis van de opgegeven URL-, HTML- en ZIP-bestanden.
 
 ### Gegevensstap exporteren {#export-data-step}
 
-Voert gegevens van een PDF vormen of een XDP dossier uit. Het vereist u om de dossierweg van het Document van de Input en het Formaat van de Gegevens van de Uitvoer in te gaan. De opties voor het Formaat van de Gegevens van de Uitvoer zijn Auto, XDP en XmlData.
+Hiermee exporteert u gegevens uit een PDF-formulier of XDP-bestand. Hiervoor moet u het bestandspad van Invoerdocument en de indeling Gegevens exporteren invoeren. De opties voor de Indeling van de Gegevens van de Uitvoer zijn Auto, XDP en XmlData.
 
 ### PDF exporteren naar opgegeven tekststap {#export-pdf-to-specified-type-step}
 
-Zet een Pdf- document in een geselecteerd formaat om.
+Hiermee converteert u een PDF-document naar een geselecteerde indeling.
 
 ### Niet-interactieve PDF-stap genereren {#generatenoninteractive}
 
-Produceer een niet-Interactieve PDF. Het verstrekt diverse aanpassingsopties.
+Een niet-interactieve PDF genereren. Het biedt verschillende aanpassingsopties.
 
 >[!NOTE]
 >
->U kunt variabelen gebruiken om het malplaatjedossier voor inputdocumenten te specificeren. Sla de weg van het malplaatjedossier in een variabele van het gegevenstype van het Koord op.
+>Met variabelen kunt u het sjabloonbestand voor invoerdocumenten opgeven. Sla het pad van het sjabloonbestand op in een variabele van het gegevenstype String.
 
 ### Gegevensstap importeren {#import-data-step}
 
-Voegt vormgegevens in een vorm samen PDF. U kunt vormgegevens in een vorm invoeren PDF.
+Hiermee voegt u formuliergegevens samen tot een PDF-formulier. U kunt formuliergegevens importeren in een PDF-formulier.
 
-### De stap DDX aanhalen {#invokeddx}
+### DDX-stap aanroepen {#invokeddx}
 
-Voert het Ddx- dossier op de gespecificeerde kaart van inputdocumenten uit en keert de gemanipuleerde Pdf- documenten terug.
+Hiermee wordt het DDX-bestand uitgevoerd op de opgegeven kaart met invoerdocumenten en worden de gemanipuleerde PDF-documenten geretourneerd.
 
 >[!NOTE]
 >
->U kunt variabelen gebruiken om het Ddx- dossier voor inputdocumenten te specificeren. Sla het DDX-bestand op in een variabele van het gegevenstype Document of XML.
+>U kunt variabelen gebruiken om het DDX-bestand voor invoerdocumenten op te geven. Sla het DDX-bestand op in een variabele van het gegevenstype Document of XML.
 
 ### PDF-stap optimaliseren {#optimize-pdf-step}
 
-Optimaliseert Pdf- dossiers door hun grootte te verminderen. Het resultaat van deze omzetting is Pdf- dossiers die kleiner kunnen zijn dan hun originele versies. Deze verrichting zet ook Pdf- documenten in de versie PDF om die in de optimaliseringsparameters wordt gespecificeerd.
+Hiermee optimaliseert u PDF-bestanden door de grootte ervan te verkleinen. Het resultaat van deze conversie zijn PDF-bestanden die mogelijk kleiner zijn dan de oorspronkelijke versie. Met deze bewerking worden PDF-documenten ook geconverteerd naar de PDF-versie die is opgegeven in de optimalisatieparameters.
 
-De montages van de optimalisering specificeren hoe de dossiers worden geoptimaliseerd. Hier zijn voorbeeldmontages:
+Optimalisatie-instellingen bepalen hoe bestanden worden geoptimaliseerd. Hier volgen voorbeelden van instellingen:
 
 * Doelversie PDF
-* Objecten zoals JavaScript-acties en ingesloten paginaminiaturen verwijderen
-* Het verwerpen van gebruikersgegevens zoals commentaren en dossiergehechtheid
-* Ongeldige of ongebruikte instellingen verwijderen
-* Comprimeren van niet-gecomprimeerde gegevens of het gebruiken van efficiëntere compressiealgoritmen
-* Ingebouwde lettertypen verwijderen
+* Objecten zoals JavaScript-handelingen en ingesloten paginaminiaturen negeren
+* Gebruikersgegevens zoals opmerkingen en bestandsbijlagen negeren
+* Ongeldige of ongebruikte instellingen negeren
+* Niet-gecomprimeerde gegevens comprimeren of efficiëntere compressiealgoritmen gebruiken
+* Ingesloten lettertypen verwijderen
 * Transparantiewaarden instellen
 
 ### PDF-formulierstap renderen {#renderpdf}
 
-Geeft een vorm terug die in de Ontwerper van de Vorm (XDP) wordt gecreeerd aan een vorm PDF.
+Hiermee maakt u een formulier dat is gemaakt in Form Designer (XDP), naar een PDF-formulier.
 
 >[!NOTE]
 >
->U kunt variabelen gebruiken om het malplaatjedossier voor inputdocumenten te specificeren. Sla de weg van het malplaatjedossier in een variabele van het gegevenstype van het Koord op.
+>Met variabelen kunt u het sjabloonbestand voor invoerdocumenten opgeven. Sla het pad van het sjabloonbestand op in een variabele van het gegevenstype String.
 
-### Beveiligde documentstap {#secure-document-step}
+### Stap voor beveiligd document {#secure-document-step}
 
-Codeer, teken, en certificeer een document. De Vormen van AEM steunen zowel op wachtwoord gebaseerde als op certificaat gebaseerde basisencryptie. U kunt ook kiezen tussen verschillende algoritmen voor het ondertekenen van documenten. Bijvoorbeeld, SHA-256 en SH-512. U kunt de werkschemastap aan lezer ook gebruiken breidt Pdf- documenten uit. De werkschemastap verstrekt optie om streepjescode het decoderen, digitale handtekeningen, de invoer en de uitvoer van Pdf- gegevens, en andere opties toe te laten.
+Een document versleutelen, ondertekenen en certificeren. AEM Forms ondersteunt zowel op wachtwoorden gebaseerde versleuteling als versleuteling op basis van certificaten. U kunt ook kiezen uit verschillende algoritmen voor het ondertekenen van documenten. Bijvoorbeeld SHA-256 en SH-512. U kunt de workflowstap ook gebruiken om PDF-documenten door te lezen. De workflowstap biedt opties voor het decoderen van streepjescodes, digitale handtekeningen, het importeren en exporteren van PDF-gegevens en andere opties.
 
-### Verzenden naar printerstap {#send-to-printer-step}
+### Verzenden naar printer, stap {#send-to-printer-step}
 
-Een document rechtstreeks naar een printer sturen. Het steunt de volgende mechanismen van de druktoegang:
+Een document rechtstreeks naar een printer verzenden. De volgende toegangsmechanismen voor afdrukken worden ondersteund:
 
-* **Direct toegankelijke printer**: Een printer die op de zelfde computer geïnstalleerd is wordt genoemd een directe toegankelijke printer, en de computer wordt genoemd printergastheer. Dit type printer kan een lokale printer zijn die direct met de computer wordt verbonden.
-* **Indirect toegankelijke printer**: De printer die op een drukserver wordt geïnstalleerd wordt betreden van andere computers. De technologieën zoals het gemeenschappelijke systeem van de druk UNIX® (CUPS) en het protocol van de Printer Daemon van de Lijn (LPD) zijn beschikbaar om met een netwerkprinter te verbinden. Om tot een indirecte toegankelijke printer toegang te hebben, specificeer IP van de drukserver of gastheernaam. Gebruikend dit mechanisme, kunt u een document naar LPD URI verzenden wanneer het netwerk LPD het lopen heeft. Het mechanisme laat u het document aan om het even welke printer leiden die met het netwerk wordt verbonden dat LPD het lopen heeft.
+* **Direct toegankelijke printer**: Een printer die op dezelfde computer is geïnstalleerd, wordt een direct toegankelijke printer genoemd en de computer krijgt de naam van de printerhost. Dit type printer kan een lokale printer zijn die rechtstreeks op de computer is aangesloten.
+* **Indirecte toegankelijke printer**: De printer die op een afdrukserver is geïnstalleerd, is toegankelijk vanaf andere computers. Technologieën zoals het algemene UNIX®-afdruksysteem (CUPS) en het Line Printer Daemon-protocol (LPD) zijn beschikbaar voor verbinding met een netwerkprinter. Als u toegang wilt tot een indirecte toegankelijke printer, geeft u de IP of hostnaam van de afdrukserver op. Met behulp van dit mechanisme kunt u een document naar een LPD URI verzenden wanneer het netwerk een LPD loopt. Met het mechanisme kunt u het document doorsturen naar elke printer die is aangesloten op het netwerk waarop een LPD-scherm wordt uitgevoerd.
 
 ### Afgedrukte uitvoerstap genereren {#generatePrintedOutput}
 
-De stap genereert een PCL-, PostScript-, ZPL-, IPL-, TPCL- of DPL-uitvoer met een formulierontwerp en een gegevensbestand. Het gegevensdossier wordt samengevoegd met het vormontwerp en voor druk geformatteerd. De output die door deze stap wordt geproduceerd kan rechtstreeks naar een printer worden verzonden of als dossier worden opgeslagen. Men adviseert dat u deze stap gebruikt wanneer u vormontwerpen of gegevens van een toepassing wilt gebruiken. Als uw vormontwerpen of vormontwerpen op het netwerk, het lokale dossiersysteem, of de plaats van HTTP worden gevestigd, gebruik de verrichting generatePrintedOutput.
+De stap genereert een PCL-, PostScript-, ZPL-, IPL-, TPCL- of DPL-uitvoer op basis van een formulierontwerp en een gegevensbestand. Het gegevensbestand wordt samengevoegd met het formulierontwerp en voor afdrukken opgemaakt. De uitvoer die door deze stap wordt gegenereerd, kan rechtstreeks naar een printer worden verzonden of als bestand worden opgeslagen. U wordt aangeraden deze stap te gebruiken als u formulierontwerpen of gegevens uit een toepassing wilt gebruiken. Als uw formulierontwerpen of formulierontwerpen zich op het netwerk, het lokale bestandssysteem of de HTTP-locatie bevinden, gebruikt u de bewerking generatePrintedOutput.
 
-Bijvoorbeeld, vereist uw toepassing dat u een vormontwerp met een gegevensdossier samenvoegt. De gegevens bevatten honderden verslagen. Bovendien vereist het de output wordt verzonden naar een printer die ZPL steunt. Het vormontwerp en uw inputgegevens worden gevestigd in een toepassing. Gebruik de verrichting generatePrintedOutput om elk verslag met een vormontwerp samen te voegen en de output te verzenden naar een printer die ZPL steunt.
+Uw toepassing vereist bijvoorbeeld dat u een formulierontwerp samenvoegt met een gegevensbestand. De gegevens bevatten honderden records. Bovendien moet de uitvoer worden verzonden naar een printer die ZPL ondersteunt. Het formulierontwerp en uw invoergegevens bevinden zich in een toepassing. Met de bewerking generatePrintedOutput kunt u elke record samenvoegen met een formulierontwerp en de uitvoer verzenden naar een printer die ZPL ondersteunt.
 
-De Generate Gedrukte stap van de Output heeft de volgende eigenschappen:
+De stap Afgedrukte uitvoer genereren heeft de volgende eigenschappen:
 
 **Invoereigenschappen**
 
-* **[!UICONTROL Selecteer sjabloonbestand met]**: Specificeer de weg van het malplaatjedossier. U kunt het malplaatjedossier selecteren gebruikend de weg die met betrekking tot de nuttige lading is, die bij een absolute weg, of gebruikend een variabele van het gegevenstype van het Document wordt opgeslagen. Bijvoorbeeld, [Payload_Directory]/Workflow/data.xml. Als de weg niet in crx-bewaarplaats bestaat, kan een beheerder de weg tot stand brengen alvorens het te gebruiken. Bovendien kunt u nuttige lading als dossier van inputgegevens ook goedkeuren.
+* **[!UICONTROL Sjabloonbestand selecteren met]**: Geef het pad van het sjabloonbestand op. U kunt het sjabloonbestand selecteren met het pad dat relatief is ten opzichte van de lading, opgeslagen op een absoluut pad of met een variabele van het gegevenstype Document. Bijvoorbeeld [Payload_Directory]/Workflow/data.xml. Als het pad niet bestaat in de crx-gegevensopslagruimte, kan een beheerder het pad maken voordat het wordt gebruikt. Bovendien kunt u ook payload accepteren als het invoergegevensbestand.
 
-* **[!UICONTROL Selecteer gegevensdocument gebruikend]**: Specificeer de weg van een dossier van inputgegevens. U kunt het dossier van inputgegevens selecteren gebruikend de weg die met betrekking tot de nuttige lading is, die bij een absolute weg, of gebruikend een variabele van het gegevenstype van het Document wordt opgeslagen. Bijvoorbeeld, [Payload_Directory]/Workflow/data.xml. Als de weg niet in crx-bewaarplaats bestaat, kan een beheerder de weg tot stand brengen alvorens het te gebruiken.
+* **[!UICONTROL Gegevensdocument selecteren met]**: Geef het pad van een invoergegevensbestand op. U kunt het invoergegevensbestand selecteren met het pad dat relatief is ten opzichte van de lading, opgeslagen op een absoluut pad of met een variabele van het gegevenstype Document. Bijvoorbeeld [Payload_Directory]/Workflow/data.xml. Als het pad niet bestaat in de crx-gegevensopslagruimte, kan een beheerder het pad maken voordat het wordt gebruikt.
 
-* **[!UICONTROL Printerindeling]**: Een waarde van het Formaat van de Druk die de taal specificeert van de paginabeschrijving te gebruiken, wanneer een XDC dossier niet wordt verstrekt, om de outputstroom te produceren. Als u een letterlijke waarde verstrekt, selecteer één van deze waarden:
+* **[!UICONTROL Printerindeling]**: Een waarde in de indeling Afdrukken die aangeeft welke paginabeschrijvingstaal moet worden gebruikt om de uitvoerstroom te genereren wanneer geen XDC-bestand wordt geleverd. Als u een letterlijke waarde opgeeft, selecteert u een van de volgende waarden:
 
-   * **[!UICONTROL Aangepaste PCL]**: Gebruik de optie om een douaneXDC dossier voor PCL te specificeren.
-   * **[!UICONTROL Aangepaste PostScript]**: Gebruik de optie om een douaneXDC dossier voor PostScript te specificeren.
-   * **[!UICONTROL Aangepaste ZPL]**: Gebruik de optie om een douaneXDC- dossierdossier voor ZPL te specificeren.
-   * **[!UICONTROL Generieke kleur PCL (5c)]**: Gebruik een generische kleur PCL (5c).
-   * **[!UICONTROL Generiek PostScript Level3]**: Gebruik generisch Niveau 3 van PostScript.
-   * **[!UICONTROL ZPL 300 DPI]**: Gebruik ZPL 300 DPI. De zpl300.xdc wordt gebruikt.
-   * **[!UICONTROL ZPL 600 DPI]**: Gebruik ZPL 600 DPI. Het zpl600.xdc- dossier wordt gebruikt.
-   * **[!UICONTROL Aangepaste IPL]**: Gebruik de optie om een douaneXDC dossier voor IPL te specificeren.
-   * **[!UICONTROL IPL 300 DPI]**: Gebruik IPL 300 DPI. De ipl300.xdc wordt gebruikt.
-   * **[!UICONTROL IPL 400 DPI]**: Gebruik IPL 400 DPI. Het ipl400.xdc- dossier wordt gebruikt.
-   * **[!UICONTROL Aangepaste TPCL]**: Gebruik de optie om een douaneXDC dossier voor TPCL te specificeren.
-   * **[!UICONTROL TPCL 305 DPI]**: Gebruik TPCL 300 DPI. Het tpcl305.xdc- dossier wordt gebruikt.
-   * **[!UICONTROL PCL 600 DPI]**: Gebruik TPCL 600 DPI. Het tpcl600.xdc- dossier wordt gebruikt.
-   * **[!UICONTROL Aangepaste DPL]**: Gebruik de optie om een douaneXDC dossier DPL te specificeren.
-   * **[!UICONTROL DPL300DPI]**: Gebruik DPL 300 DPI. Het dpl300.xdc- dossier wordt gebruikt.
-   * **[!UICONTROL DPL406DPI]**: Gebruik DPL 400 DPI. De dpl406.xdc wordt gebruikt.
+   * **[!UICONTROL Aangepaste PCL]**: Gebruik de optie om een aangepast XDC-bestand voor PCL op te geven.
+   * **[!UICONTROL Aangepast PostScript]**: Gebruik de optie om een aangepast XDC-bestand voor PostScript op te geven.
+   * **[!UICONTROL Aangepaste ZPL]**: Gebruik de optie om een aangepast XDC-bestand op te geven voor ZPL.
+   * **[!UICONTROL Algemene kleur PCL (5c)]**: Gebruik een algemene kleur PCL (5c).
+   * **[!UICONTROL Generic PostScript Level3]**: Gebruik algemeen PostScript Level 3.
+   * **[!UICONTROL ZPL 300 DPI]**: Gebruik ZPL 300 DPI. Zpl300.xdc wordt gebruikt.
+   * **[!UICONTROL ZPL 600 DPI]**: Gebruik ZPL 600 DPI. Het bestand zpl600.xdc wordt gebruikt.
+   * **[!UICONTROL Aangepaste IPL]**: Gebruik de optie om een aangepast XDC-bestand voor IPL op te geven.
+   * **[!UICONTROL IPL 300 DPI]**: Gebruik IPL 300 DPI. Het bestand ipl300.xdc wordt gebruikt.
+   * **[!UICONTROL IPL 400 DPI]**: Gebruik IPL 400 DPI. Het bestand ipl400.xdc wordt gebruikt.
+   * **[!UICONTROL Aangepaste TPCL]**: Gebruik de optie om een aangepast XDC-bestand voor TPCL op te geven.
+   * **[!UICONTROL TPCL 305 DPI]**: Gebruik TPCL 300 DPI. Het bestand tpcl305.xdc wordt gebruikt.
+   * **[!UICONTROL PCL 600 DPI]**: Gebruik TPCL 600 DPI. Het bestand tpcl600.xdc wordt gebruikt.
+   * **[!UICONTROL Aangepaste DPL]**: Gebruik de optie om een aangepast XDC-bestand DPL op te geven.
+   * **[!UICONTROL DPL300DPI]**: Gebruik DPL 300 DPI. Het bestand dpl300.xdc wordt gebruikt.
+   * **[!UICONTROL DPL406DPI]**: Gebruik DPL 400 DPI. Het bestand dpl406.xdc wordt gebruikt.
    * **[!UICONTROL DPL600DPI]**: Gebruik DPL 600 DPI. De dpl600.xdc wordt gebruikt.
 
 **Uitvoereigenschappen**
 
-* **[!UICONTROL Uitvoerdocument opslaan met]**: Specificeer de plaats om het outputdossier op te slaan. U kunt het outputdossier bij een plaats bewaren die met betrekking tot de nuttige lading, in een variabele is, of een absolute plaats specificeren om het outputdossier te bewaren. Als de weg niet in crx-bewaarplaats bestaat, kan een beheerder de weg tot stand brengen alvorens het te gebruiken.
+* **[!UICONTROL Uitvoerdocument opslaan met]**: Geef de locatie op waar u het uitvoerbestand wilt opslaan. U kunt het uitvoerbestand opslaan op een locatie die relatief is ten opzichte van de lading, in een variabele of een absolute locatie opgeven om het uitvoerbestand op te slaan. Als het pad niet bestaat in de crx-gegevensopslagruimte, kan een beheerder het pad maken voordat het wordt gebruikt.
 
 **Geavanceerde eigenschappen**
 
-* **[!UICONTROL Selecteer de plaats van de Wortel van de Inhoud gebruikend]**: De wortel van de inhoud is een koordwaarde die URI, absolute verwijzing, of plaats in de bewaarplaats specificeert om relatieve activa terug te winnen die door het vormontwerp worden gebruikt. Bijvoorbeeld, als de verwijzingen van het vormontwerp relatief een beeld, zoals ../myImage.gif, moet myImage.gif in repository:// worden gevestigd. De standaardwaarde is repository://, wat aan het wortelniveau van de bewaarplaats richt.
+* **[!UICONTROL Hoofdlocatie van inhoud selecteren met]**: De inhoudsbasis is een tekenreekswaarde die de URI, absolute referentie of locatie in de gegevensopslagruimte opgeeft voor het ophalen van relatieve elementen die door het formulierontwerp worden gebruikt. Als het formulierontwerp bijvoorbeeld relatief verwijst naar een afbeelding, zoals ../myImage.gif, moet myImage.gif zich op repository:// bevinden. De standaardwaarde is repository://, die naar het hoofdniveau van de gegevensopslagruimte wijst.
 
-   Wanneer u activa van uw toepassing plukt, moet de weg van URI van de Wortel van de Inhoud de correcte structuur hebben. Bijvoorbeeld, als een vorm van een toepassing genoemd SampleApp wordt geplukt, en in SampleApp/1.0/forms/Test.xdp wordt geplaatst, moet de Inhoudwortel URI als repository://administrator@password/Applications/SampleApp/1.0/forms/, of bewaarplaats worden gespecificeerd:/Applications/SampleApp/1.0/forms/ (wanneer het gezag ongeldig is). Wanneer de Inhoudspoot URI op deze manier wordt gespecificeerd, zullen de wegen van alle referenced activa in de vorm tegen dit URI worden opgelost.
+   Wanneer u een element kiest uit uw toepassing, moet het pad van de URI van de inhoudsbasis de juiste structuur hebben. Als bijvoorbeeld een formulier wordt gekozen uit een toepassing met de naam SampleApp en wordt geplaatst op SampleApp/1.0/forms/Test.xdp, moet de URI van de inhoudswortel worden opgegeven als repository://administrator@password/Applications/SampleApp/1.0/forms/ of gegevensopslagruimte:/Applications/SampleApp/1.0/forms/ (als de bevoegdheid null is). Wanneer de URI voor de inhoudsbasis op deze manier wordt opgegeven, worden de paden van alle middelen waarnaar wordt verwezen in het formulier, omgezet met deze URI.
 
-* **[!UICONTROL Selecteer XCI-bestand met]**: De dossiers XCI worden gebruikt om doopvonten en andere eigenschappen te beschrijven die voor de elementen van het vormontwerp worden gebruikt. U kunt een XCI- dossier met betrekking tot de nuttige lading, bij een absolute weg houden, of het gebruiken van een variabele van het gegevenstype van het Document.
+* **[!UICONTROL Selecteer een XCI-bestand met]**: XCI-bestanden worden gebruikt om lettertypen en andere eigenschappen te beschrijven die voor formulierontwerpelementen worden gebruikt. U kunt een XCI-bestand relatief ten opzichte van de payload, op een absoluut pad houden of een variabele van het gegevenstype Document gebruiken.
 
-* **[!UICONTROL Lokaal]**: Specificeert de taal die voor het produceren van het Pdf- document wordt gebruikt. Als u een letterlijke waarde verstrekt, selecteer een taal van de lijst of selecteer één van deze waarden:
-   * **Om servergebrek**te gebruiken:
-(Gebrek) gebruik de Scène die op de Server van Vormen AEM wordt gevormd plaatst. Het plaatsen van de Scène wordt gevormd gebruikend de Console van het Beleid. (Zie [Ontwerper Hulp](http://www.adobe.com/go/learn_aemforms_designer_65).)
+* **[!UICONTROL Landinstelling]**: Hier geeft u de taal op die wordt gebruikt voor het genereren van het PDF-document. Als u een letterlijke waarde opgeeft, selecteert u een taal in de lijst of selecteert u een van de volgende waarden:
+   * **Als u de standaardinstelling**van de server wilt gebruiken:
+(Standaard) Gebruik de landinstelling die is geconfigureerd op de AEM Forms Server. De landinstelling wordt geconfigureerd met de beheerconsole. (Zie [Help bij](http://www.adobe.com/go/learn_aemforms_designer_65)Designer.)
 
-   * **Om douanewaarde**te gebruiken:
-Typ de code van de Scène in de letterlijke doos of selecteer een koordvariabele die de scènecode bevat. Voor een volledige lijst van gesteunde scènecodes, zie http://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html.
+   * **Aangepaste waarde**gebruiken:
+Typ de landinstellingscode in het letterlijke vak of selecteer een tekenreeksvariabele die de landinstellingscode bevat. Ga naar http://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html voor een volledige lijst met ondersteunde landinstellingscodes.
 
-* **[!UICONTROL Kopieën]**: Een geheelwaarde die het aantal te produceren exemplaren voor de output specificeert. De standaardwaarde is 1.
+* **[!UICONTROL Exemplaren]**: Een geheel getal dat aangeeft hoeveel exemplaren voor de uitvoer moeten worden gegenereerd. De standaardwaarde is 1.
 
-* **[!UICONTROL Duplex afdrukken]**:  Een waarde van de Paginering die of specificeert om tweezijdig of enig-zijdig druk te gebruiken. De printers die PostScript en PCL steunen gebruiken deze waarde.Als u een letterlijke waarde verstrekt, selecteer één van deze waarden:
-   * **[!UICONTROL Duplex Long Edge]**: Gebruik dubbelzijdig afdrukken en afdrukken met een langlopende paginering.
-   * **[!UICONTROL Duplex Short Edge]**: Gebruik dubbelzijdig afdrukken en afdrukken met korte paginering.
-   * **[!UICONTROL Simplex]**: Gebruik eenzijdig afdrukken.
+* **[!UICONTROL Duplexafdrukken]**:  Een pagineringswaarde die aangeeft of dubbelzijdig of enkelzijdig afdrukken moet worden gebruikt. Deze waarde wordt gebruikt voor printers die PostScript en PCL ondersteunen. Als u een letterlijke waarde opgeeft, selecteert u een van de volgende waarden:
+   * **[!UICONTROL Duplex lange rand]**: Dubbelzijdig afdrukken en afdrukken met paginering met lange randen.
+   * **[!UICONTROL Duplex, korte zijde]**: Dubbelzijdig afdrukken en afdrukken met korte paginering.
+   * **[!UICONTROL Simplex]**: Enkelzijdig afdrukken gebruiken.

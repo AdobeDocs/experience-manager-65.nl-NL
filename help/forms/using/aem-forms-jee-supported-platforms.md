@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -528,7 +528,9 @@ Zie voor aanvullende vereisten:
 
 ### Designer {#designer}
 
-**Opmerking:** Als u Designer in Windows wilt installeren, voert u het installatieprogramma uit met beheerdersrechten.
+>[!NOTE]
+>
+>Als u Designer in Windows wilt installeren, voert u het installatieprogramma uit met beheerdersrechten.
 
 * Microsoft® Windows® 2016 Server, Microsoft Windows 10
 

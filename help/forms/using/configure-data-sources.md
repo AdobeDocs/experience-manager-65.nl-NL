@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -84,7 +84,8 @@ U kunt het AEM-gebruikersprofiel configureren met de configuratie Gebruikersprof
 
 ## Map configureren voor configuraties van cloudservices {#cloud-folder}
 
-**Opmerking**: Configuratie voor map met cloudservices is vereist voor het configureren van cloudservices voor RESTful-, SOAP- en OData-services.
+>[!NOTE]
+Configuratie voor map met cloudservices is vereist voor het configureren van cloudservices voor RESTful-, SOAP- en OData-services.
 
 Alle configuraties van de cloudservice in AEM worden geconsolideerd in de `/conf` map in de AEM-opslagplaats. Standaard bevat de `conf` map de `global` map waarin u cloudserviceconfiguraties kunt maken. U moet deze echter handmatig inschakelen voor cloudconfiguraties. U kunt ook aanvullende mappen maken `conf` om configuraties voor cloudservices te maken en in te delen.
 

@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e047a95e-0acb-438a-8d27-f005c0adc508
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -116,7 +116,7 @@ U kunt taaktoewijzingsmeldingen verzenden naar een gebruiker of groep wanneer aa
 U kunt deadline-meldingen verzenden naar gebruikers en groepen wanneer de deadline voor het uitvoeren van een toegewezen taak is verstreken. Een deadline-melding is doorgaans informatief omdat de gebruiker niet langer kan reageren op de toegewezen taak.
 
 1. Klik in de beheerconsole op Services > Forms workflow > Server Settings > Task Notifications.
-1. Klik onder Type bericht op Deadline (voor gebruikers) of Group - Deadline (voor groepen).
+1. Onder het Type van Bericht, klik Deadline (voor gebruikers) of Groep - Deadline (voor groepen).
 1. Selecteer Deadline inschakelen of Groep - Deadline inschakelen.
 1. Typ in het vak Onderwerp de tekst voor de onderwerpregel van het e-mailbericht. Dit veld is vooraf gevuld met standaardtekst. Zie De inhoud van meldingen [aanpassen voor meer informatie over het aanpassen van dit veld](configuring-server-settings.md#customizing-the-content-of-notifications).
 1. Typ in het vak Berichtgevingssjabloon de tekst voor de hoofdtekst van het e-mailbericht. Dit veld is vooraf gevuld met standaardtekst. Zie De inhoud van meldingen [aanpassen voor meer informatie over het aanpassen van dit veld](configuring-server-settings.md#customizing-the-content-of-notifications).
@@ -195,15 +195,17 @@ Als uw oplossing in een gegroepeerd milieu wordt opgesteld, vervang `@@notificat
 
 `<`*PORT *`>`is het poortnummer van de HTTP-listener voor de toepassingsserver. De standaard HTTP-listenerpoort voor de ondersteunde toepassingsservers is als volgt:
 
-**** JBoss: 8080
+**JBoss:** 8080
 
-**** Oracle WebLogic Server: 7001
+**Oracle WebLogic Server:** 7001
 
-**** IBM WebSphere: 9080
+**IBM WebSphere:** 9080
 
 Om deze URLs correct te maken, vervang `<`*HAVEN *`>`met het havenaantal dat voor uw milieu aangewezen is.
 
-***Opmerking **: Als u een andere aangepaste webtoepassing dan Forms gebruikt om gebruikers toegang tot de taken te geven, moet u in plaats daarvan een URL-indeling gebruiken die geschikt is voor uw aangepaste toepassing.*
+>[!NOTE]
+>
+>Als u een andere aangepaste webtoepassing dan Forms gebruikt om gebruikers toegang tot de taken te geven, moet u in plaats daarvan een URL-indeling gebruiken die geschikt is voor uw aangepaste toepassing.
 
 ### Variabelekiezer {#variable-picker}
 
@@ -229,7 +231,9 @@ Daarnaast kunt u voor groepherinneringen, groepstaken en groepstermijnen ook het
 
 **group-name** De naam van de groep die het het werkpunt wordt toegewezen.
 
-**Opmerking**: *Als een variabele geen waarde heeft, wordt niets geretourneerd.*
+>[!NOTE]
+>
+>Wanneer een variabele geen waarde heeft, wordt niets geretourneerd.
 
 Voor gestalte takken, kunt u de volgende variabelen in de dozen van het Malplaatje van het Onderwerp en van het Bericht gebruiken:
 

@@ -8,7 +8,7 @@ topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 898268cb-4426-421f-8f63-d75bd85cb57f
 translation-type: tm+mt
-source-git-commit: 66a3db6cd50ae25849dc173e0714df7c140c1774
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -201,7 +201,9 @@ Ga als volgt te werk om documentbeveiligingsgegevens voor een hoofd-id uit datab
    1. Gebruikers met een persoonlijk beleid melden zich aan op de webpagina voor documentbeveiliging op https://[*server*]:[*poort*]/edc.
    1. Ga naar **[!UICONTROL Services > Documentbeveiliging > Mijn beleid]**.
    1. Open een beleid en verwijder de gebruiker uit het beleid.
-   **Opmerking**: Beheerders kunnen met behulp van beheerconsole zoeken naar gebruikersgegevens in, toegang krijgen tot en verwijderen uit persoonlijke beleidsregels van andere gebruikers in **[!UICONTROL Services > Documentbeveiliging > Mijn beleid]** .
+   >[!NOTE]
+   >
+   >Beheerders kunnen met behulp van beheerconsole zoeken naar gebruikersgegevens in, toegang krijgen tot en verwijderen uit persoonlijke beleidsregels van andere gebruikers in **[!UICONTROL Services > Documentbeveiliging > Mijn beleid]** .
 
 1. Verwijder de gegevens voor de hoofd-id uit de gebruikersbeheerdatabase. Voor gedetailleerde stappen, zie het Beheer van de Gebruiker van [Formulieren| Gebruikersgegevens](/help/forms/using/user-management-handling-user-data.md)verwerken.
 1. Start de AEM Forms-server.

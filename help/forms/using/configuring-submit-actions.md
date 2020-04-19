@@ -9,7 +9,7 @@ topic-tags: author
 discoiquuid: 9d8d7044-ffce-4ab4-9543-a2d2f9da31e3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6bd09bca68ea1fcec2dca7694dd3d39dc5153bfc
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -102,7 +102,8 @@ Alle formuliervelden moeten verschillende elementnamen hebben, zelfs als ze op v
 
 Met de handeling PDF **verzenden via e-mail** verzendt u een e-mail met een PDF met formuliergegevens naar een of meer ontvangers wanneer het formulier is verzonden.
 
-**** Opmerking: Deze verzendactie is beschikbaar voor op XFA gebaseerde adaptieve formulieren en op XSD gebaseerde aanpassingsformulieren die de sjabloon Document of Record hebben.
+>[!NOTE]
+Deze verzendactie is beschikbaar voor op XFA gebaseerde adaptieve formulieren en op XSD gebaseerde aanpassingsformulieren die de sjabloon Document of Record hebben.
 
 ## Een formulierwerkstroom aanroepen {#invoke-a-forms-workflow}
 

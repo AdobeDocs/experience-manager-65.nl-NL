@@ -4,7 +4,7 @@ description: Nieuw in Adobe Experience Manager 6.5 Service Pack 4
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -35,7 +35,7 @@ U kunt nu stijlen selecteren in het dialoogvenster met het verbeterde stijlsyste
 
 ## AEM Assets {#aem-assets}
 
-### AEM-middelen configureren met Brand Portal {#configure-assets-bp}
+### AEM Assets configureren met Brand Portal {#configure-assets-bp}
 
 Het machtigingskanaal tussen AEM Assets en Brand Portal is gewijzigd. Eerder, werd het Portaal van het Merk gevormd in Klassieke UI via Verouderde Gateway OAuth, die de het symbolenuitwisseling van JWT gebruikt om een token van de Toegang te verkrijgen IMS voor vergunning. AEM Assets is nu geconfigureerd met Brand Portal via Adobe I/O, dat een IMS token aanschaft voor toestemming van uw Pantaarn voor merken.
 
@@ -123,7 +123,7 @@ U kunt een begindatum en -tijd en een einddatum en -tijd opgeven die van kracht 
 
 U kunt de batch-API gebruiken om meerdere interactieve communicatie van een sjabloon te maken. De sjabloon is een interactieve communicatie zonder gegevens. De batch-API combineert gegevens met een sjabloon voor interactieve communicatie. De API is nuttig bij de massaproductie van interactieve communicatie. Bijvoorbeeld telefoonrekeningen, creditcardoverzichten voor meerdere klanten. Zie Meerdere interactieve communicatie [genereren met de Batch-API](../forms/using/generate-multiple-interactive-communication-using-batch-api.md).
 
-## Belangrijke releases sinds AEM 6.5 SP3 {#key-features-sice-sp3}
+## Belangrijke releases sinds AEM 6.5 SP3 {#key-features-since-sp3}
 
 Tussen 12 december 2019 en 5 maart 2020 heeft Adobe de volgende functies uitgebracht die buiten de kernlevering van AEM vallen:
 

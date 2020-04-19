@@ -10,7 +10,7 @@ topic-tags: introduction
 discoiquuid: 03886dd3-5873-4908-912b-fbbddb26c322
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -355,7 +355,10 @@ Op de referentiesite ziet u de integratie van AEM Forms met Adobe Target waarmee
 Ga als volgt te werk om Doel in AEM te configureren voor de integratie in de referentiesite:
 
 1. Start de auteur quickstart met het jvm-argument `-Dabtesting.enabled=true` om A/B-tests op de server in te schakelen.
-   **Opmerking**: Als de instantie AEM op JBoss loopt, die als dienst van de installatie van de Sleutel is begonnen, voeg de `-Dabtesting.enabled=true` parameter in de volgende ingang in het `jboss\bin\standalone.conf.bat` dossier toe:
+
+   >[!NOTE]
+   >
+   >Als de instantie AEM op JBoss loopt, die als dienst van de installatie van de Sleutel is begonnen, voeg de `-Dabtesting.enabled=true` parameter in de volgende ingang in het `jboss\bin\standalone.conf.bat` dossier toe:
    `set "JAVA_OPTS=%JAVA_OPTS% -Dadobeidp.serverName=server1 -Dfile.encoding=utf8 -Djava.net.preferIPv4Stack=true -Dabtesting.enabled=true"`
 
 1. Ga naar `https://<hostname>:<port>/libs/cq/core/content/tools/cloudservices.html`.

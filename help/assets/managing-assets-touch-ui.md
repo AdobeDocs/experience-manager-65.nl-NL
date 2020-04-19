@@ -4,7 +4,7 @@ description: Leer de taken voor middelenbeheer, zoals het uploaden, downloaden, 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b1453d70ee75768057403c5cc93f5c7bad8ed918
+source-git-commit: 68fb4c08b8093ff50e74dc9e29011325cdf7e7d7
 
 ---
 
@@ -94,7 +94,7 @@ Voordat u een element uploadt, moet u ervoor zorgen dat dit een [indeling](/help
    >
    >Als Asset Insights is ingeschakeld voor het bijhouden van indrukken/klikken met Adobe Analytics, maakt de opnieuw gegenereerde asset-id de gegevensopname voor het element op Analytics ongeldig.
 
-   Als het element dat u uploadt aanwezig is in AEM Assets, wordt in het dialoogvenster **[!UICONTROL Duplicaten gedetecteerd]** gewaarschuwd dat u probeert een gedupliceerd element te uploaden. Het dialoogvenster wordt alleen weergegeven als de waarde van de `SHA 1` controlesom van het binaire element van het bestaande element overeenkomt met de waarde van de controlesom van het element dat u uploadt. In dit geval zijn de namen van elementen niet van belang.
+   Als het element dat u uploadt aanwezig is in AEM Assets, wordt in het dialoogvenster **[!UICONTROL Duplicaten gedetecteerd]** gewaarschuwd dat u probeert een dubbel element te uploaden. Het dialoogvenster wordt alleen weergegeven als de waarde van de `SHA 1` controlesom van het binaire element van het bestaande element overeenkomt met de waarde van de controlesom van het element dat u uploadt. In dit geval zijn de namen van elementen niet van belang.
 
    >[!NOTE]
    >
@@ -347,7 +347,11 @@ Voer de volgende stappen uit om een voorvertoning van een element weer te geven 
 
 1. Gebruik de pijltoetsen om de ingezoomde afbeelding te verplaatsen.
 
-Zie ook Dynamische media-elementen [voorvertonen.](/help/assets/previewing-assets.md)
+>[!MORELIKETHIS]
+>
+>* [Dynamische media-elementen](/help/assets/previewing-assets.md)voorvertonen.
+>* [Subelementen](managing-linked-subassets.md#viewing-subassets)weergeven.
+
 
 ## Eigenschappen en metagegevens bewerken {#editing-properties}
 

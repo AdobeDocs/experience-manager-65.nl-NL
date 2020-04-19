@@ -4,7 +4,7 @@ description: Leer de taken voor middelenbeheer, zoals het uploaden, downloaden, 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: dea9bf9387cf4b69e7054e03c5906ecf25cb0d59
+source-git-commit: b1453d70ee75768057403c5cc93f5c7bad8ed918
 
 ---
 
@@ -161,7 +161,7 @@ Met Dynamic Media kunt u via de FTP-server items in batches uploaden. Als u grot
 1. Tik in de rechterbenedenhoek van de uploadpagina op **[!UICONTROL Uploaden]** verzenden.
 
    Tik op **[!UICONTROL Taken]**op de algemene navigatiebalk om de voortgang van het uploaden weer te geven. Op de pagina Taken wordt de voortgang van het uploaden weergegeven. U kunt in AEM blijven werken en aan de pagina van Banen in Dynamische Klassiek van Media op elk ogenblik terugkeren om een lopende baan te herzien.
-Tik naast de duur op **[!UICONTROL Annuleren]** om een actieve uploadtaak te annuleren.
+Als u een uploadtaak die wordt uitgevoerd wilt annuleren, tikt u op **[!UICONTROL Annuleren]** naast de duur.
 
 #### Opties voor uploaden {#upload-job-options}
 
@@ -646,7 +646,7 @@ In de kaartweergave wordt de optie **[!UICONTROL Selecteren]** als een snelle ac
 
 ![select_quick_action](assets/select_quick_action.png)
 
-Wanneer u in de gebruikersinterface van Elementen in een browser door een map of een verzameling bladert, kunt u alle weergegeven of geladen elementen selecteren met de optie Alles  selecteren in de rechterbovenhoek. Als u niet hieronder scrolt, worden slechts 100 activa geladen in kaartmening en 200 worden geladen in lijstmening. Met de optie Alles selecteren selecteert u alleen deze vele elementen.
+Wanneer u in de gebruikersinterface van Elementen in een browser door een map of een verzameling bladert, kunt u alle weergegeven of geladen elementen selecteren met de optie Alles  selecteren in de rechterbovenhoek. In eerste instantie worden slechts 100 elementen in de kaartweergave geladen en worden 200 in de lijstweergave geladen. Er worden meer elementen in de weergave geladen wanneer u door de pagina met zoekresultaten bladert. Met de optie Alles  selecteren selecteert u alleen de geladen elementen.
 
 Zie de bronnen [weergeven en selecteren voor meer informatie](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 

@@ -3,7 +3,7 @@ title: Adobe Stock-elementen beheren in AEM Assets
 description: Adobe Stock Assets zoeken, ophalen, licentiëren en beheren vanuit AEM. Gebruik de in licentie gegeven activa als elk ander digitaal actief.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 62e82b6da2a5f961acf8cbc30ad29b3c25b1ecef
+source-git-commit: 68fb4c08b8093ff50e74dc9e29011325cdf7e7d7
 
 ---
 
@@ -26,12 +26,12 @@ Als u communicatie tussen AEM en Adobe Stock wilt toestaan, maakt u een IMS-conf
 >
 >Alleen AEM-beheerders en beheerders van beheerconsole voor een organisatie kunnen de integratie uitvoeren omdat hiervoor beheerdersrechten vereist zijn.
 
-### Een IMS-configuratie maken {#create-an-ims-configuration}
+### Create an IMS configuration {#create-an-ims-configuration}
 
 1. Klik op het AEM-logo. Ga naar **[!UICONTROL Gereedschappen]** > **[!UICONTROL Beveiliging]** > **[!UICONTROL Adobe IMS Configurations]**. Klik op **[!UICONTROL Maken]** en selecteer **[!UICONTROL Cloudoplossing]** > **[!UICONTROL Adobe Stock]**.
 1. Hergebruik een bestaand certificaat of selecteer **[!UICONTROL Nieuw certificaat]** maken.
-1. Klik op **[!UICONTROL Certificaat]** maken. Download de openbare sleutel wanneer deze is gemaakt. Click **[!UICONTROL Next]**.
-1. Geef de juiste waarden op in de velden **[!UICONTROL Titel]**, **[!UICONTROL Autorisatieserver]**, **[!UICONTROL API-sleutel]**, **[!UICONTROL Clientgeheim]** en **[!UICONTROL Payload]**. Zie [JWT-verificatie snel starten](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md)voor meer informatie over het ophalen van deze waarden van Adobe I/O.
+1. Klik op **[!UICONTROL Certificaat]** maken. Download de openbare sleutel wanneer deze is gemaakt. Klik op **[!UICONTROL Next]**.
+1. Geef de juiste waarden op in de velden **[!UICONTROL Titel]**, **[!UICONTROL Autorisatieserver]**, **[!UICONTROL API-sleutel]**, **[!UICONTROL Clientgeheim]** en **[!UICONTROL Payload]**. Zie [Snel starten met JWT-verificatie](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md) voor meer informatie over het ophalen van deze waarden van Adobe I/O.
 1. Voeg de gedownloade openbare sleutel toe aan uw Adobe I/O-serviceaccount.
 
 ### Adobe Stock-configuratie maken in AEM {#create-adobe-stock-configuration-in-aem}
@@ -56,7 +56,7 @@ Zodra een Adobe Stock-middel in AEM in licentie is gegeven, kan het worden gebru
 
 *Afbeelding: Zoek naar Adobe Stock-middelen en filterresultaten van uw AEM-werkruimte*
 
-**** A. Zoek middelen die vergelijkbaar zijn met de middelen waarvan de Adobe Stock ID is opgegeven. **** B. Zoeken in elementen die overeenkomen met de vorm- of oriëntatieoptie die u hebt geselecteerd. **************** C.**Zoek naar één van meer gesteunde activa types** D. Open of vouwt het venster Filters **E. Licentie toewijzen en het geselecteerde element opslaan in AEM** F. Sla het element in AEM op met watermerk **G. Verken elementen op de Adobe Stock-website die vergelijkbaar zijn met de geselecteerde asset** H. Bekijk de geselecteerde middelen op Adobe Stock-website **I. Aantal geselecteerde elementen uit de zoekresultaten** J. Schakelen tussen de kaartweergave en de lijstweergave
+**A.** Zoek naar assets die vergelijkbaar zijn met de assets waarvan de Adobe Stock-id is opgegeven. **B.** Zoek naar assets die overeenkomen met de vorm of afdrukstand die u hebt geselecteerd. **C.** Zoek naar een of meer ondersteunde assettypen **D.** Open het deelvenster voor filters of vouw dit samen **E.** Verleen een licentie aan de geselecteerde asset in AEM en sla deze op **F.** Sla de asset op in AEM met een watermerk **G.** Verken assets op de Adobe Stock-website die vergelijkbaar zijn met de geselecteerde asset **H.** Bekijk de geselecteerde assets op de Adobe Stock-website **I.** Aantal geselecteerde assets in de zoekresultaten **J.** Schakel tussen kaart- en lijstweergave
 
 ### Elementen zoeken {#find-assets}
 
@@ -70,7 +70,7 @@ U kunt ook `Location: Adobe Stock` in de zoekbalk typen om Adobe Stock-elementen
 
 >[!NOTE]
 >
->Elementen die worden doorzocht vanuit Adobe Stock worden alleen weergegeven in AEM. Adobe Stock Assets worden alleen opgehaald en opgeslagen in AEM-opslagruimte nadat een gebruiker een middel [](/help/assets/aem-assets-adobe-stock.md#saveassets) heeft opgeslagen of een [licentie heeft verleend voor een middel](/help/assets/aem-assets-adobe-stock.md#licenseassets). Elementen die al in AEM zijn opgeslagen, worden weergegeven en gemarkeerd voor eenvoudige referentie en toegang. Dergelijke elementen worden bovendien met extra metagegevens opgeslagen om de bron aan te geven als Adobe Stock.
+>Assets waarnaar wordt gezocht vanuit Adobe Stock, worden alleen weergegeven in AEM. Adobe Stock-assets worden alleen opgehaald en opgeslagen in de AEM-opslagplaats nadat een gebruiker [een asset heeft opgeslagen](/help/assets/aem-assets-adobe-stock.md#saveassets) of [een licentie voor een asset heeft verleend](/help/assets/aem-assets-adobe-stock.md#licenseassets). Assets die al in AEM zijn opgeslagen, worden weergegeven en gemarkeerd voor eenvoudige referentie en toegang. Dergelijke assets worden bovendien met extra metadata opgeslagen om de bron aan te geven als Adobe Stock.
 
 ![Zoekfilters in AEM en gemarkeerde Adobe Stock-elementen in zoekresultaten](assets/aem-search-filters2.jpg)
 
@@ -118,10 +118,9 @@ Het is mogelijk dat een onjuist licentietype in AEM wordt weergegeven voor een e
 
 Wanneer een gebruiker een veld met een licentieverwijzing bijwerkt, wordt de informatie over de licentieverwijzing bijgewerkt in AEM, maar niet op de Adobe Stock-website. Als de gebruiker de referentievelden op de Adobe Stock-website bijwerkt, worden de updates ook niet gesynchroniseerd in AEM.
 
-## Gerelateerde bronnen {#related-resources}
+>[!MORELIKETHIS]
+>
+>* [Videozelfstudie over het gebruik van Adobe Stock Assets met AEM Assets](https://helpx.adobe.com/experience-manager/kt/assets/using/stock-assets-feature-video-use.html)
+>* [Help bij Adobe Stock Enterprise Plan](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
+>* [Veelgestelde vragen over Adobe Stock](https://helpx.adobe.com/stock/faq.html)
 
-[Videozelfstudie over het gebruik van Adobe Stock Assets met AEM Assets](https://helpx.adobe.com/experience-manager/kt/assets/using/stock-assets-feature-video-use.html)
-
-[Help bij Adobe Stock Enterprise Plan](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
-
-[Veelgestelde vragen over Adobe Stock](https://helpx.adobe.com/stock/faq.html)

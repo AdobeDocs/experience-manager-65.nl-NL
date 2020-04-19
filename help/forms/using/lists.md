@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0d5436c6-1976-496c-b9a7-7dc6e830bb5d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -170,7 +170,9 @@ Met de functie Zoeken en vervangen kunt u elke tekenreeks in een tekstelement zo
 
 **Heel woord:** Zoekopdracht retourneert alleen hele woorden.
 
-**Opmerking:** Als u speciale tekens invoert in het tekstvak Zoeken, is de optie Heel woord uitgeschakeld.
+>[!NOTE]
+>
+>Als u speciale tekens invoert in het tekstvak Zoeken, is de optie Heel woord uitgeschakeld.
 
 **Voorbeeld:** Zoeken met reguliere expressies. Met de volgende reguliere expressie wordt bijvoorbeeld gezocht naar e-mailadressen in een tekstmodule:
 

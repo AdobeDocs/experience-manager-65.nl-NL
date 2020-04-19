@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: be4994de-12f8-436e-926a-49a6783b006e
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -40,8 +40,8 @@ IBM FileNet P8 Content Engine biedt softwareservices voor het beheer van bedrijf
 
 1. Selecteer een van de volgende beveiligingsniveaus in de lijst Referentiebeschermingsregeling:
 
-   * **** Wissen: Verzendt gegevens in een niet-beveiligde modus via het netwerk
-   * **** Symmetrisch: Verzendt gecodeerde gegevens via het netwerk
+   * **Wissen:** Verzendt gegevens in een niet-beveiligde modus via het netwerk
+   * **Symmetrisch:** Verzendt gecodeerde gegevens via het netwerk
 
 1. Voer in het vak Locatie van versleutelingsbestand het pad naar het versleutelingsbestand in:
 
@@ -78,14 +78,15 @@ U kunt configureren welke serviceprovider voor gegevensopslag moet worden gebrui
 
 De volgende opties zijn beschikbaar:
 
-**** Huidige naam leverancier van opslagplaats: De naam van de huidige aanbieder van datadiensten
+**Huidige naam leverancier van opslagplaats:** De naam van de huidige aanbieder van datadiensten
 
-**** IBM FileNet Repository Provider: Maakt van de aanbieder van de FileNet-opslagplaats de provider voor de opslagplaats. Deze optie is vervangen.
+**IBM FileNet Repository Provider:** Maakt van de aanbieder van de FileNet-opslagplaats de provider voor de opslagplaats. Deze optie is vervangen.
 
-**** aanbieder opslagplaats: Maakt van de native opslagprovider de provider voor de opslagplaats
+**aanbieder opslagplaats:** Maakt van de native opslagprovider de provider voor de opslagplaats
 
-***Opmerking **: Als u een andere opslagplaats-serviceprovider wilt selecteren dan de vermelde, configureert u RepositoryService in Toepassingen en Services.<!-- Fix broken link(See Managing Services) -->*
+>[!NOTE]
+>
+>Als u een andere opslagplaats-serviceprovider wilt selecteren dan de vermelde, configureert u RepositoryService in Toepassingen en Services. <!-- Fix broken link(See Managing Services) -->
 
 1. Klik in de beheerconsole op Services > Connector voor IBM FileNet.
 1. Selecteer in het gebied Providergegevens voor opslagplaats de andere opslagplaats en klik op Opslaan.
-

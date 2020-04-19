@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: bdb9edc2-6a37-4d3f-97d5-0fc5664316be
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -20,7 +20,9 @@ HTML5-formulieren genereren formulieren in de HTML5-indeling. De resulterende ui
 
 Dit artikel beschrijft de stappen die worden vereist om compressie voor de Server 2.0 met 32 bits van het Web van Apache, met JBoss toe te laten.
 
-*Opmerking: De volgende instructies zijn niet van toepassing op andere servers dan Apache Web Server 2.0 32 bits.*
+>[!NOTE]
+>
+>De volgende instructies zijn niet van toepassing op andere servers dan Apache Web Server 2.0 32 bits.
 
 Vraag de Apache-webserversoftware aan die op uw besturingssysteem van toepassing is:
 

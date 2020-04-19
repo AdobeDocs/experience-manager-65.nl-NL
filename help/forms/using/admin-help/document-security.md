@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1820cb38-ba70-4cce-8895-290524bdd9bf
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -41,13 +41,13 @@ Als u een beleid gebruikt om een document te beschermen, hebt u controle over da
 
 Via documentbeveiliging kunt u met beleid beveiligde documenten controleren en gebeurtenissen bijhouden, zoals wanneer een geautoriseerde of niet-geautoriseerde gebruiker het document probeert te openen.
 
-**Componenten**
+**Onderdelen**
 
 Documentbeveiliging bestaat uit een server- en gebruikersinterface:
 
-**** Server: De centrale component waardoor de documentveiligheid transacties zoals gebruikersauthentificatie, beheer in real time van beleid, en toepassing van vertrouwelijkheid uitvoert. De server biedt ook een centrale opslagplaats voor beleidsregels, auditrecords en andere gerelateerde informatie.
+**Server:** De centrale component waardoor de documentveiligheid transacties zoals gebruikersauthentificatie, beheer in real time van beleid, en toepassing van vertrouwelijkheid uitvoert. De server biedt ook een centrale opslagplaats voor beleidsregels, auditrecords en andere gerelateerde informatie.
 
-**** Webpagina&#39;s: De interface waar u beleid creeert, uw beleid-beschermde documenten beheert, en gebeurtenissen controleert die met beleid-beschermde documenten worden geassocieerd. Beheerders kunnen ook globale opties configureren, zoals gebruikersverificatie, controle en berichten voor uitgenodigde gebruikers, en uitgenodigde gebruikersaccounts beheren.
+**Webpagina&#39;s:** De interface waar u beleid creeert, uw beleid-beschermde documenten beheert, en gebeurtenissen controleert die met beleid-beschermde documenten worden geassocieerd. Beheerders kunnen ook globale opties configureren, zoals gebruikersverificatie, controle en berichten voor uitgenodigde gebruikers, en uitgenodigde gebruikersaccounts beheren.
 
 ![rm_psworkflow](assets/rm_psworkflow.png)
 
@@ -79,7 +79,7 @@ Verschillende typen gebruikers werken met documentbeveiliging om verschillende t
    * Beleidssets beheren
    * Documenten beheren
    * Documentuitgevers beheren
-   *  Uitgenodigde en lokale gebruikers beheren
+   * Uitgenodigde en lokale gebruikers beheren
    * Gebeurtenissen weergeven
    * Delegeren
    * Externe gebruikers uitnodigen
@@ -87,7 +87,9 @@ Verschillende typen gebruikers werken met documentbeveiliging om verschillende t
 
    De gebruikers met deze rol kunnen de server van de documentveiligheid vormen, gebruikend de pagina van de Configuratie in de sectie van de documentveiligheid van beleidsconsole. Deze toestemming wordt geassocieerd met de rol, leidt Configuratie.
 
-   ***Opmerking **: De gebruikers met deze rol moeten de rol van de Gebruiker van de beleidsconsole ook hebben om aan beleidsconsole kunnen login en om het even welke op configuratie betrekking hebbende montages uitgeven.*
+   >[!NOTE]
+   >
+   >De gebruikers met deze rol moeten de rol van de Gebruiker van de beleidsconsole ook hebben om aan beleidsconsole kunnen login en om het even welke op configuratie betrekking hebbende montages uitgeven.
 
    **Beheerder voor beveiligingsbeleid voor documenten**
 
@@ -99,16 +101,20 @@ Verschillende typen gebruikers werken met documentbeveiliging om verschillende t
    * Documentuitgevers beheren
    * Gebeurtenissen weergeven
    * Delegeren
-   ***Opmerking **: De gebruikers met deze rol moeten de rol van de Gebruiker van de beleidsconsole ook hebben om aan beleidsconsole kunnen login en om het even welke op configuratie betrekking hebbende montages uitgeven.*
+   >[!NOTE]
+   >
+   >De gebruikers met deze rol moeten de rol van de Gebruiker van de beleidsconsole ook hebben om aan beleidsconsole kunnen login en om het even welke op configuratie betrekking hebbende montages uitgeven.
 
    **Documentbeveiliging uitgenodigde en lokale gebruikers beheren**
 
    Gebruikers met deze rol kunnen de taken uitvoeren die nodig zijn om alle uitgenodigde en lokale gebruikers op de relevante webpagina&#39;s voor documentbeveiliging te beheren. Deze machtigingen zijn gekoppeld aan de rol:
 
-   *  Uitgenodigde en lokale gebruikers beheren
+   * Uitgenodigde en lokale gebruikers beheren
    * Externe gebruikers uitnodigen
    * Webpagina&#39;s voor eindgebruikers openen
-   ***Opmerking **: De gebruikers met deze rol moeten de rol van de Gebruiker van de beleidsconsole ook hebben om aan beleidsconsole kunnen login en om het even welke op configuratie betrekking hebbende montages uitgeven.*
+   >[!NOTE]
+   >
+   >De gebruikers met deze rol moeten de rol van de Gebruiker van de beleidsconsole ook hebben om aan beleidsconsole kunnen login en om het even welke op configuratie betrekking hebbende montages uitgeven.
 
    **Gebruikers voor uitnodigen voor documentbeveiliging**
 

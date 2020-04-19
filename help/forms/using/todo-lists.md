@@ -11,7 +11,7 @@ topic-tags: forms-workspace
 discoiquuid: d8546227-d78d-4fe2-a092-222482bb69c9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -212,7 +212,12 @@ U kunt een taak op verschillende manieren voltooien:
 
 * De acties gebruiken die beschikbaar zijn op een van de tabbladen
 * De acties gebruiken die in het formulier zelf zijn gemaakt
-* Van uw aan-doe lijst, zonder taskNote te openen: Deze optie is beschikbaar als `isMustOpenToComplete` veld niet is geselecteerd in de `Assign Task` stap in Workbench tijdens het ontwerpen van een proces.
+* Van uw lijst Aan, zonder de taak te openen
+
+>[!NOTE]
+>
+>Deze optie is beschikbaar als `isMustOpenToComplete` veld niet is geselecteerd in de `Assign Task` stap in Workbench tijdens het ontwerpen van een proces.
+
 * Als u e-mailberichten ontvangt
 
 Wanneer u een taak voltooit, afhankelijk van de taak, kan een bevestigingsvenster verschijnen herbevestiging van uw actie. U ziet bijvoorbeeld een dialoogvenster waarin u wordt gevraagd de geldigheid van de gegevens die u hebt opgegeven te bevestigen.
@@ -270,7 +275,9 @@ Stel eerst de werkruimtevoorkeuren voor AEM-formulieren in voor het ontvangen va
 
 De e-mailberichten kunnen een koppeling bevatten waarmee de taak wordt geopend in de werkruimte van AEM Forms, een bijlage van het formulier dat voor de taak wordt gebruikt of acties voor het uitvoeren van de taak via e-mail. Als een formulier in het e-mailbericht is opgenomen, kunt u het formulier openen en de taak voltooien als de knoppen voor het voltooien van de taak in het formulier zijn ingebouwd. Als acties voor het voltooien van de taak in het e-mailbericht zijn opgenomen, kunt u de taak voltooien door op de acties in de e-mail te klikken of door op het e-mailbericht te reageren met de actie die u als eerste regel in de tekst van de e-mail hebt getypt.
 
-**Opmerking**: Zie de Beheerdershandleiding voor JEE-formulieren voor [](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/)AEM Forms om de werkruimte zodanig te configureren dat de juiste e-mailsjablonen worden gebruikt.
+>[!NOTE]
+>
+>Zie de Beheerdershandleiding voor JEE-formulieren voor [](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/)AEM Forms om de werkruimte zodanig te configureren dat de juiste e-mailsjablonen worden gebruikt.
 
 Wanneer u een taak via e-mail voltooit, wordt de taak verwijderd uit uw lijst Aan-doe in de werkruimte van Vormen AEM.
 

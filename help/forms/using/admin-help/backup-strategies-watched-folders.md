@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f775933-e989-4456-ad01-9bdf5dee3dad
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -110,19 +110,19 @@ In de volgende tabel wordt beschreven hoe vijf voorbeeldbestanden (file1, file2,
 
 In de volgende tekst wordt bestandmanipulatie voor elke keer beschreven:
 
-**** T1: De vier voorbeeldbestanden worden in de invoermap geplaatst.
+**T1:** De vier voorbeeldbestanden worden in de invoermap geplaatst.
 
-**** T2: Met de servicebewerking wordt file1 voor bewerking naar de werkgebiedmap verplaatst.
+**T2:** Met de servicebewerking wordt file1 voor bewerking naar de werkgebiedmap verplaatst.
 
-**** T3: Met de servicebewerking wordt file2 verplaatst naar de werkgebiedmap voor bewerking. De resultaten van file1 worden in de uitvoermap geplaatst en file1 wordt naar de opslagmap verplaatst.
+**T3:** Met de servicebewerking wordt file2 verplaatst naar de werkgebiedmap voor bewerking. De resultaten van file1 worden in de uitvoermap geplaatst en file1 wordt naar de opslagmap verplaatst.
 
-**** T4: Met de servicebewerking wordt file3 voor bewerking in de werkgebiedmap geplaatst. Het plaatst de resultaten van file2 in de outputomslag, en het plaatst file2 in sparen omslag.
+**T4:** Met de servicebewerking wordt file3 voor bewerking in de werkgebiedmap geplaatst. Het plaatst de resultaten van file2 in de outputomslag, en het plaatst file2 in sparen omslag.
 
-**** T5: Met de servicebewerking wordt file4 voor bewerking in de werkgebiedmap geplaatst. De manipulatie van file3 ontbreekt, en de de dienstverrichting plaatst het in de mislukkingsomslag.
+**T5:** Met de servicebewerking wordt file4 voor bewerking in de werkgebiedmap geplaatst. De manipulatie van file3 ontbreekt, en de de dienstverrichting plaatst het in de mislukkingsomslag.
 
-**** T6: Met de servicebewerking wordt file5 in de invoermap geplaatst. Het plaatst de resultaten van file4 in de outputomslag, plaatst file4 in het bewaren omslag.
+**T6:** Met de servicebewerking wordt file5 in de invoermap geplaatst. Het plaatst de resultaten van file4 in de outputomslag, plaatst file4 in het bewaren omslag.
 
-**** T7: Met de servicebewerking wordt file5 in de werkgebiedmap geplaatst om te worden bewerkt.
+**T7:** Met de servicebewerking wordt file5 in de werkgebiedmap geplaatst om te worden bewerkt.
 
 ## Back-up maken van gecontroleerde mappen {#backing-up-watched-folders}
 
@@ -136,15 +136,15 @@ Bijvoorbeeld, als een steun op tijd T1 wordt genomen en de server bij T7 ontbree
 
 Als er een recentere back-up is gemaakt, kunt u de bestanden herstellen. Bedenk bij het terugzetten van de bestanden in welke map met gecontroleerde maphiërarchie het huidige bestand zich bevindt:
 
-**** Werkgebied: Bestanden in deze map worden opnieuw verwerkt nadat de gecontroleerde map is hersteld.
+**Werkgebied:** Bestanden in deze map worden opnieuw verwerkt nadat de gecontroleerde map is hersteld.
 
-**** Invoer: Bestanden in deze map worden opnieuw verwerkt nadat de gecontroleerde map is hersteld.
+**Invoer:** Bestanden in deze map worden opnieuw verwerkt nadat de gecontroleerde map is hersteld.
 
-**** Resultaat: Bestanden in deze map worden niet verwerkt.
+**Resultaat:** Bestanden in deze map worden niet verwerkt.
 
-**** Uitvoer: Bestanden in deze map worden niet verwerkt.
+**Uitvoer:** Bestanden in deze map worden niet verwerkt.
 
-**** Behouden: Bestanden in deze map worden niet verwerkt.
+**Behouden:** Bestanden in deze map worden niet verwerkt.
 
 ## Strategieën om gegevensverlies te minimaliseren {#strategies-to-minimize-data-loss}
 
@@ -158,14 +158,16 @@ Met de volgende strategieën kunt u het gegevensverlies van de uitvoer- en invoe
 * Als de beschikbare controlemap ouder is dan de tijd die nodig is om de taak te verwerken, moet u het systeem toestaan een nieuwe controlemap te maken en de bestanden automatisch in de invoermap te plaatsen.
 * Als de meest recente beschikbare back-up niet recent genoeg is, is de back-uptijd korter dan de tijd die nodig is om de bestanden te verwerken en de gecontroleerde map wordt hersteld, is het bestand in een van de volgende verschillende stadia gemanipuleerd:
 
-   * **** Fase 1: In de invoermap
-   * **** Fase 2: Gekopieerd naar de werkgebiedmap, maar het proces wordt nog niet aangeroepen
-   * **** Fase 3: Gekopieerd naar de werkgebiedmap en het proces wordt aangeroepen
-   * **** Fase 4: Bezig met manipuleren
-   * **** Fase 5: Resultaten geretourneerd
+   * **Fase 1:** In de invoermap
+   * **Fase 2:** Gekopieerd naar de werkgebiedmap, maar het proces wordt nog niet aangeroepen
+   * **Fase 3:** Gekopieerd naar de werkgebiedmap en het proces wordt aangeroepen
+   * **Fase 4:** Bezig met manipuleren
+   * **Fase 5:** Resultaten geretourneerd
    Bestanden in werkgebied 1 worden gemanipuleerd. Als bestanden zich in werkgebied 2 of 3 bevinden, plaatst u ze in de invoermap zodat ze opnieuw kunnen worden gemanipuleerd.
 
-   **Opmerking**: Als een bestand meerdere keren wordt bewerkt, wordt gegevensverlies voorkomen, maar kunnen de resultaten worden gedupliceerd. *
+   >[!NOTE]
+   >
+   >Als een bestand meerdere keren wordt bewerkt, wordt gegevensverlies voorkomen, maar kunnen de resultaten worden gedupliceerd.
 
 ## Conclusie {#conclusion}
 

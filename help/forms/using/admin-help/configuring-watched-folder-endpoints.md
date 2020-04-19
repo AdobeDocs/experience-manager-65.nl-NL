@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 761e7909-43ba-4642-bcfc-8d76f139b9a3
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -201,7 +201,9 @@ Als de waarde op 17 juli 2009 bijvoorbeeld 8 uur is en u opgeeft `C:/Test/WF0/fa
 
 Als het pad niet absoluut maar relatief is, wordt de map in de controlemap gemaakt. De standaardwaarde is result/%Y/%M/%D/. Dit is de resultatenmap in de gecontroleerde map. Zie [Bestandspatronen](configuring-watched-folder-endpoints.md#about-file-patterns)voor meer informatie over bestandspatronen.
 
-***Opmerking **: Hoe kleiner de resulterende mappen, hoe beter Gecontroleerde mappen. Als het geschatte laden voor de gecontroleerde map bijvoorbeeld 1000 bestanden per uur is, probeert u een patroon als`result/%Y%M%D%H`zodat er elk uur een nieuwe submap wordt gemaakt. Als het laden kleiner is (bijvoorbeeld 1000 bestanden per dag), kunt u een patroon gebruiken zoals`result/%Y%M%D`.*
+>[!NOTE]
+>
+>Hoe kleiner de resulterende mappen, hoe beter Gecontroleerde mappen. Als het geschatte laden voor de gecontroleerde map bijvoorbeeld 1000 bestanden per uur is, probeert u een patroon als `result/%Y%M%D%H` zodat er elk uur een nieuwe submap wordt gemaakt. Als het laden kleiner is (bijvoorbeeld 1000 bestanden per dag), kunt u een patroon gebruiken zoals `result/%Y%M%D`.
 
 **Map behouden:** De locatie waar bestanden worden opgeslagen nadat bestanden zijn gescand en opgehaald. Het pad kan een absoluut, relatief of null-mappad zijn. U kunt bestandspatronen gebruiken, zoals beschreven in Resultaatmap. De standaardwaarde is preserve/%Y/%M/%D/.
 
@@ -231,7 +233,9 @@ De waarde -1 dagen geeft aan dat u de resultatenmap nooit wilt verwijderen. De s
 
 De gecontroleerde output van de Omslag kan één enkel document, een lijst van documenten, of een kaart van documenten zijn. Deze uitvoerdocumenten worden vervolgens opgeslagen in de resultaatmap met het patroon dat is opgegeven in de toewijzing Uitvoerparameter.
 
-**Opmerking**: Het *opgeven van namen die resulteren in unieke uitvoerbestandsnamen verbetert de prestaties. Neem bijvoorbeeld het geval waarin de service één uitvoerdocument retourneert en de functie Toewijzing uitvoerparameter aan`%F.%E`(de bestandsnaam en extensie van het invoerbestand) toewijst. Als gebruikers in dit geval elke minuut bestanden met dezelfde naam neerzetten en de resultaatmap is geconfigureerd`result/%Y/%M/%D`en de instelling Dubbele bestandsnaam overschrijven is uitgeschakeld, probeert de gecontroleerde map de dubbele bestandsnamen op te lossen. Het proces voor het oplossen van dubbele bestandsnamen kan van invloed zijn op de prestaties. In deze situatie, die de Toewijzing van de Parameter van de Output veranderen om uren, notulen, seconden, en milliseconden aan de naam toe`%F_%h_%m_%s_%l`te voegen, of ervoor zorgen dat de gelaten vallen dossiers unieke namen hebben kan prestaties verbeteren.*
+>[!NOTE]
+>
+>Het opgeven van namen die resulteren in unieke uitvoerbestandsnamen verbetert de prestaties. Neem bijvoorbeeld het geval waarin de service één uitvoerdocument retourneert en de functie Toewijzing uitvoerparameter aan `%F.%E` (de bestandsnaam en extensie van het invoerbestand) toewijst. Als gebruikers in dit geval elke minuut bestanden met dezelfde naam neerzetten en de resultaatmap is geconfigureerd `result/%Y/%M/%D`en de instelling Dubbele bestandsnaam overschrijven is uitgeschakeld, probeert de gecontroleerde map de dubbele bestandsnamen op te lossen. Het proces voor het oplossen van dubbele bestandsnamen kan van invloed zijn op de prestaties. In deze situatie, die de Toewijzing van de Parameter van de Output veranderen om uren, notulen, seconden, en milliseconden aan de naam toe `%F_%h_%m_%s_%l` te voegen, of ervoor zorgen dat de gelaten vallen dossiers unieke namen hebben kan prestaties verbeteren.
 
 ## Bestandspatronen {#about-file-patterns}
 

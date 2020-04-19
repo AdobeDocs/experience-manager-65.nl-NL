@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
 discoiquuid: ab19b248-8931-4cf6-b6a5-fb7b067c4a49
 translation-type: tm+mt
-source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -115,7 +115,9 @@ De volgende opties bepalen hoe afbeeldingsbestanden naar PDF worden geconverteer
 
 **Converter voor alternatieven uitproberen:** PDF Generator kan Java™ of Acrobat gebruiken om afbeeldingsbestanden naar PDF te converteren. Als deze optie is geselecteerd en een conversie mislukt of de opgegeven time-outlimiet bereikt, probeert de PDF Generator de conversie met de alternatieve methode uit te voeren. Als de alternatieve methode mislukt of de opgegeven time-outlimiet bereikt, wordt een uitzondering naar het logbestand geschreven.
 
-***Opmerking **: JPEG 2000-bestanden kunnen alleen worden geconverteerd met Acrobat.*
+>[!NOTE]
+>
+>JPEG 2000-bestanden kunnen alleen worden geconverteerd met Acrobat.
 
 **OCR gebruiken:** Hiermee geeft u aan of OCR (optische tekenherkenning) op de PDF moet worden toegepast. Met de OCR-software kunt u de tekst in de PDF zoeken, corrigeren en kopiëren.
 

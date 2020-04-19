@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 999ae2be-56ba-48c1-861b-8d4c991a0206
 translation-type: tm+mt
-source-git-commit: d3719a9ce2fbb066f99445475af8e1f1e7476f4e
+source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ---
 
@@ -42,7 +42,7 @@ U kunt de PDF Generator-webpagina&#39;s gebruiken om bestanden te converteren.
 
 ### Informatie over XMP-bestanden {#about-xmp-files}
 
-PDF-documenten die in PDF Generator worden gemaakt in Acrobat 5.0 of hoger, bevatten documentmetagegevens in XML-indeling. *Metagegevens* bevatten informatie over het document en de inhoud ervan, zoals de naam van de auteur, trefwoorden en copyrightinformatie die zoekfuncties kunnen gebruiken.
+PDF-documenten die door PDF Generator worden gemaakt in Acrobat 5.0 of hoger, bevatten documentmetagegevens in XML-indeling. *Metagegevens* bevatten informatie over het document en de inhoud ervan, zoals de naam van de auteur, trefwoorden en copyrightinformatie die zoekfuncties kunnen gebruiken.
 
 De metagegevens van het document bevatten (maar zijn niet beperkt tot) informatie die ook wordt weergegeven op het tabblad Beschrijving van het dialoogvenster Documenteigenschappen in Acrobat. Wijzigingen die worden aangebracht op het tabblad Beschrijving, worden weerspiegeld in de metagegevens van het document. Metagegevens van documenten kunnen worden uitgebreid en gewijzigd met producten van derden.
 
@@ -72,16 +72,19 @@ Als het ZIP-bestand meer dan één HTML-bestand op het laagste niveau van de map
 
    * Typ in het veld Bestand uploaden het pad en de bestandsnaam van het HTML-bestand of het ZIP-bestand of klik op Bladeren om het bestand te zoeken en te selecteren.
    * Typ in het vak URL opgeven de URL van de pagina of website die u wilt converteren.
-
-      ***Opmerking **: Het bestand dat u converteert, moet de bestandsnaamextensie .html, .htm of .zip hebben.*
+   >[!NOTE]
+   >
+   >Het bestand dat u converteert, moet de bestandsnaamextensie .html, .htm of .zip hebben.
 
 1. Geef de configuratie-instellingen op:
 
    * Als u aangepaste instellingen wilt gebruiken, selecteert u Aangepaste instellingen gebruiken, geeft u de instellingen voor de beveiliging en het bestandstype op en geeft u een time-outwaarde op. De standaardwaarde is 270 seconden.
-
-      **Opmerking**: Als u de Genereren PDF-service zodanig hebt geconfigureerd dat Acrobat WebCapture wordt gebruikt, hebben de instellingen voor bestandstypen die u op deze pagina selecteert, geen invloed op de geproduceerde PDF. Breng in plaats daarvan de gewenste wijzigingen aan in de versie van Acrobat die op de server is geïnstalleerd.
+   >[!NOTE]
+   >
+   >Als u de Genereren PDF-service zodanig hebt geconfigureerd dat Acrobat WebCapture wordt gebruikt, hebben de instellingen voor bestandstypen die u op deze pagina selecteert, geen invloed op de geproduceerde PDF. Breng in plaats daarvan de gewenste wijzigingen aan in de versie van Acrobat die op de server is geïnstalleerd.
 
    * Als u een bestaand instellingenbestand wilt gebruiken, selecteert u Bestand met instellingen uploaden en klikt u op Bladeren om naar de bestandslocatie te gaan.
+
 
 1. Als u een XMP-bestand wilt uploaden, klikt u op Bladeren en gaat u naar de bestandslocatie. Een XMP-bestand kan worden gebruikt om standaardmetagegevens op te nemen. (Zie [Informatie over XMP-bestanden](converting-files-using-pdf-generator.md#about-xmp-files).)
 1. Klik op Maken. Wanneer het bestand is gemaakt, wordt een koppeling naar het PDF-bestand weergegeven.

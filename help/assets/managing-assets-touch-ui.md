@@ -4,7 +4,7 @@ description: Leer de taken voor middelenbeheer, zoals het uploaden, downloaden, 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 68fb4c08b8093ff50e74dc9e29011325cdf7e7d7
+source-git-commit: 6d26a708ac2073eb7ceff62e65c6aaafdb727639
 
 ---
 
@@ -478,15 +478,15 @@ De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeelte
 
 1. Tik/klik op het element om de elementpagina te openen.
 
-   ![chlimage_1-220](assets/chlimage_1-15.png)
+   ![Pagina met middelendetails voor het beheren van uitvoeringen](assets/chlimage_1-15.png)
 
 1. Tik/klik op het pictogram GlobalNav en selecteer **[!UICONTROL Uitvoeringen]** in de lijst.
 
-   ![renditions_menu](assets/renditions_menu.png)
+   ![Linkerrails naar open menu en optie Vertoningen selecteren](assets/renditions_menu.png)
 
 1. Geef in het deelvenster **[!UICONTROL Uitvoeringen]** de lijst weer met uitvoeringen die voor het element zijn gegenereerd.
 
-   ![renditions_panel](assets/renditions_panel.png)
+   ![Deelvenster Uitvoeringen op de pagina Informatie-details](assets/renditions_panel.png)
 
    >[!NOTE]
    >
@@ -504,7 +504,7 @@ De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeelte
 
    Navigate to the asset details page for the asset, and tap/click the **[!UICONTROL Add Rendition]** icon in the toolbar to upload a new rendition for the asset.
 
-   ![chlimage_1-221](assets/chlimage_1-16.png)
+   ![Vertoningspictogram toevoegen om nieuwe vertoning te uploaden](assets/chlimage_1-16.png)
 
    >[!NOTE]
    >
@@ -516,7 +516,7 @@ De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeelte
 
    Op dezelfde manier kunt u de afbeelding van de pagina Annotatie aanpassen door deze te bedekken `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
 
-   ![chlimage_1-222](assets/chlimage_1-17.png)
+   ![Het knooppunt Overlay renditionpicker in CRXDE om de afbeelding van de annotatiepagina aan te passen](assets/chlimage_1-17.png)
 
    Als u vertoningsdimensies voor een video-element wilt configureren, navigeert u naar het `videopicker` knooppunt in de CRX-opslagruimte op de locatie `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`, bedekt u het knooppunt en bewerkt u de juiste eigenschap.
 
@@ -536,7 +536,7 @@ Schakel ook de knop forceren verwijderen uit met behulp van een overlay, zodat g
 
 1. Selecteer het element en tik/klik op het pictogram **[!UICONTROL Verwijderen]** op de werkbalk.
 
-   ![delete_icon](assets/delete_icon.png)
+   ![Pictogram Verwijderen](assets/delete_icon.png)
 
 1. Klik in het bevestigingsdialoogvenster op:
 
@@ -584,11 +584,11 @@ See [Download assets from AEM](/help/assets/download-assets-from-aem.md).
 
 1. Selecteer het element of de map waarvan u de publicatie wilt ongedaan maken, en tik op het pictogram Publicatie **** beheren of klik op de werkbalk.
 
-   ![manage_publication](assets/manage_publication.png)
+   ![Publicatiepictogram beheren](assets/manage_publication.png)
 
 1. Selecteer de actie **[!UICONTROL Unpublish]** in de lijst.
 
-   ![unpublish_action](assets/unpublish_action.png)
+   ![Handeling Unpublish](assets/unpublish_action.png)
 
 1. Als u de publicatie van het element later ongedaan wilt maken, selecteert u Later **** publiceren ongedaan maken en selecteert u een datum voor het ongedaan maken van de publicatie van het element.
 1. Plan een datum waarop het element niet beschikbaar is in de publicatieomgeving.
@@ -610,11 +610,11 @@ CUG&#39;s zijn een extra manier om de toegang tot uw elementen te beperken. U ku
 1. Selecteer een map in de interface Middelen en tik op het pictogram Eigenschappen op de werkbalk of klik erop om de pagina met eigenschappen weer te geven.
 1. Voeg op het tabblad **[!UICONTROL Machtigingen]** leden of groepen toe onder **[!UICONTROL Gesloten gebruikersgroep]**.
 
-   ![add_user](assets/add_user.png)
+   ![Gebruiker toevoegen aan gesloten gebruikersgroep](assets/add_user.png)
 
 1. Als u een aanmeldingsscherm wilt weergeven wanneer gebruikers de map openen, selecteert u de optie **[!UICONTROL Inschakelen]** . Selecteer vervolgens het pad naar een aanmeldingspagina in AEM en sla de wijzigingen op.
 
-   ![login_page](assets/login_page.png)
+   ![Aanmeldingspagina inschakelen en selecteren om weer te geven wanneer de gebruiker toegang krijgt tot de map](assets/login_page.png)
 
    >[!NOTE]
    >
@@ -642,13 +642,13 @@ Met de optie **[!UICONTROL Selecteren]** kunt u elementen weergeven, doorbladere
 
 In de lijstweergave en de kolomweergave wordt de optie **[!UICONTROL Selecteren]** weergegeven wanneer u de aanwijzer boven de elementminiatuur plaatst.
 
-![select_quick_in_listview](assets/select_quick_in_listview.png)
+![Elementen selecteren in de lijstweergave](assets/select_quick_in_listview.png)
 
-![select_quick_in_columnView](assets/select_quick_in_columnview.png)
+![Elementen selecteren in kolomweergave](assets/select_quick_in_columnview.png)
 
 In de kaartweergave wordt de optie **[!UICONTROL Selecteren]** als een snelle actie weergegeven.
 
-![select_quick_action](assets/select_quick_action.png)
+![Snelle actie selecteren in de weergave Kaart](assets/select_quick_action.png)
 
 Wanneer u in de gebruikersinterface van Elementen in een browser door een map of een verzameling bladert, kunt u alle weergegeven of geladen elementen selecteren met de optie Alles  selecteren in de rechterbovenhoek. In eerste instantie worden slechts 100 elementen in de kaartweergave geladen en worden 200 in de lijstweergave geladen. Er worden meer elementen in de weergave geladen wanneer u door de pagina met zoekresultaten bladert. Met de optie Alles  selecteren selecteert u alleen de geladen elementen.
 
@@ -667,36 +667,36 @@ Met de bewerkingsgereedschappen in de interface AEM Assets kunt u kleine bewerki
    * Selecteer het element en klik/tik op het pictogram **[!UICONTROL Bewerken]** op de werkbalk.
    * Tik op het pictogram **[!UICONTROL Bewerken]** of klik op het pictogram dat op een element in de kaartweergave wordt weergegeven.
    * Tik op of klik op het pictogram **[!UICONTROL Bewerken]** op de werkbalk op de elementpagina.
-   ![edit_icon](assets/edit_icon.png)
+   ![Pictogram Bewerken in werkbalk](assets/edit_icon.png)
 
 1. Tik of klik op het pictogram **Uitsnijden** om de afbeelding uit te snijden.
 
-   ![chlimage_1-226](assets/chlimage_1-22.png)
+   ![Uitsnijdpictogram](assets/chlimage_1-22.png)
 
 1. Selecteer de gewenste optie in de lijst. Het bijsnijdgebied wordt op basis van de gekozen optie weergegeven in de afbeelding. Met de optie **Vrije hand** kunt u de afbeelding bijsnijden zonder beperkingen voor de hoogte-breedteverhouding.
 
-   ![chlimage_1-227](/help/assets/assets/chlimage_1-23.png)
+   ![Opties voor uitsnijden](/help/assets/assets/chlimage_1-23.png)
 
 1. Selecteer het gebied dat u wilt bijsnijden en wijzig de grootte of de positie van het gebied in de afbeelding.
 1. Gebruik het pictogram **Voltooien** (rechterbovenhoek) om de afbeelding uit te snijden. Als u op het pictogram **Voltooien** klikt, wordt de rendering ook opnieuw gegenereerd.
 
-   ![chlimage_1-228](assets/chlimage_1-24.png)
+   ![Pictogram Voltooien](assets/chlimage_1-24.png)
 
 1. Gebruik de pictogrammen **Ongedaan maken** en **Opnieuw uitvoeren** rechtsboven om respectievelijk terug te keren naar de niet-bijgesneden afbeelding of de bijgesneden afbeelding te behouden.
 
-   ![chlimage_1-229](assets/chlimage_1-25.png)
+   ![Pictogrammen ongedaan maken en opnieuw uitvoeren](assets/chlimage_1-25.png)
 
 1. Tik/klik op het betreffende rotatiepictogram om de afbeelding rechtsom of linksom te roteren.
 
-   ![chlimage_1-230](assets/chlimage_1-26.png)
+   ![Pictogrammen rechtsom en linksom roteren](assets/chlimage_1-26.png)
 
 1. Tik/klik op het betreffende pictogram Omdraaien om de afbeelding horizontaal of verticaal om te draaien.
 
-   ![chlimage_1-231](assets/chlimage_1-27.png)
+   ![Pictogrammen om de afbeelding horizontaal of verticaal om te draaien](assets/chlimage_1-27.png)
 
 1. Tik/klik op het pictogram **Voltooien** om de wijzigingen op te slaan.
 
-   ![chlimage_1-232](assets/chlimage_1-28.png)
+   ![Pictogram Voltooien](assets/chlimage_1-28.png)
 
 >[!NOTE]
 >
@@ -739,11 +739,11 @@ Videoannotaties worden alleen ondersteund in browsers met HTML5-compatibele vide
 
    * [Snelle acties](/help/assets/managing-assets-touch-ui.md#quick-actions)
    * Vanuit de werkbalk nadat u het element hebt geselecteerd of naar de elementpagina bent genavigeerd
-   ![chlimage_1-233](assets/chlimage_1-29.png)
+   ![Annotatiepictogram](assets/chlimage_1-29.png)
 
 1. Add a comment in the **[!UICONTROL Comment]** box at the bottom of the timeline. Alternatively, mark up an area on the image and add an annotation in the **[!UICONTROL Add Annotation]** dialog.
 
-   ![chlimage_1-234](assets/chlimage_1-30.png)
+   ![Opmerking in het dialoogvenster Annotatie toevoegen](assets/chlimage_1-30.png)
 
 1. Als u een gebruiker op de hoogte wilt stellen van een aantekening, geeft u het e-mailadres van de gebruiker op en voegt u de opmerking toe. Als u Aaron MacDonald bijvoorbeeld wilt informeren over een annotatie, voert u @aa in. Tips voor alle overeenkomende gebruikers worden weergegeven in een lijst. Selecteer het e-mailadres van Aaron in de lijst om de opmerking aan haar toe te voegen. Op dezelfde manier kunt u meer gebruikers overal in de annotatie of ervoor of erna een tag toewijzen.
 
@@ -751,11 +751,11 @@ Videoannotaties worden alleen ondersteund in browsers met HTML5-compatibele vide
    >
    >Voor een niet-beheerdersgebruiker, verschijnen de suggesties slechts als de gebruiker Gelezen toestemmingen bij */huis* in Crx-de heeft.
 
-   ![chlimage_1-235](assets/chlimage_1-31.png)
+   ![Geef het e-mailadres van de gebruiker op en voeg opmerkingen toe om de gebruiker op de hoogte te stellen](assets/chlimage_1-31.png)
 
 1. Nadat u de annotatie hebt toegevoegd, klikt u op **[!UICONTROL Toevoegen]** om deze op te slaan. Een kennisgeving voor de aantekening wordt verzonden naar Aaron.
 
-   ![chlimage_1-236](assets/chlimage_1-32.png)
+   ![Knop Toevoegen om een aantekening op te slaan](assets/chlimage_1-32.png)
 
    >[!NOTE]
    >
@@ -786,15 +786,15 @@ Videoannotaties worden alleen ondersteund in browsers met HTML5-compatibele vide
 
 1. Tik/klik op het pictogram GlobalNav en kies **[!UICONTROL Tijdlijn]** in de lijst.
 
-   ![chlimage_1-239](assets/chlimage_1-35.png)
+   ![Opties beschikbaar op pictogram GlobalNav](assets/chlimage_1-35.png)
 
 1. From the **[!UICONTROL Show All]** list in the timeline, select **[!UICONTROL Comments]** to filter the results based on annotations.
 
-   ![chlimage_1-240](assets/chlimage_1-36.png)
+   ![Alle lijsten weergeven in tijdlijn](assets/chlimage_1-36.png)
 
    Tik op een opmerking of klik op een opmerking in het deelvenster **[!UICONTROL Tijdlijn]** om de bijbehorende annotatie in de afbeelding weer te geven.
 
-   ![chlimage_1-241](assets/chlimage_1-37.png)
+   ![Deelvenster Tijdlijn om annotatie in afbeelding weer te geven](assets/chlimage_1-37.png)
 
    Tik/klik op **[!UICONTROL Verwijderen]** om een bepaalde opmerking te verwijderen.
 
@@ -814,15 +814,15 @@ Tik op het pictogram **[!UICONTROL Afdrukken]** en volg de instructies in de wiz
 
 1. Als u specifieke annotaties wilt afdrukken, selecteert u de annotaties in de tijdlijn.
 
-   ![chlimage_1-242](assets/chlimage_1-38.png)
+   ![Een annotatie selecteren in de tijdlijn om deze af te drukken](assets/chlimage_1-38.png)
 
    Als u alleen de revisiestatus wilt afdrukken, selecteert u deze in de tijdlijn.
 
-   ![chlimage_1-243](assets/chlimage_1-39.png)
+   ![Als u alleen de revisiestatus van annotatie wilt afdrukken, selecteert u deze in de tijdlijn](assets/chlimage_1-39.png)
 
 1. Tap/click the **[!UICONTROL Print]** icon from the toolbar.
 
-   ![chlimage_1-244](assets/chlimage_1-40.png)
+   ![Afdrukpictogram in werkbalk](assets/chlimage_1-40.png)
 
 1. Kies in het dialoogvenster Afdrukken de positie waar u de annotaties/revisiestatus wilt weergeven in de PDF. Als u bijvoorbeeld wilt dat de annotaties/status rechtsboven op de pagina met de afgedrukte afbeelding worden afgedrukt, gebruikt u de instelling **Linksboven** . Deze optie is standaard geselecteerd.
 
@@ -836,11 +836,11 @@ Tik op het pictogram **[!UICONTROL Afdrukken]** en volg de instructies in de wiz
 
 1. Tik/klik op **[!UICONTROL Afdrukken]**. Afhankelijk van de optie die u kiest in stap 2, geeft de gegenereerde PDF de annotaties/status op de opgegeven positie weer. Als u bijvoorbeeld zowel annotaties als de revisiestatus wilt afdrukken met de instelling **Linksboven**, lijkt de gegenereerde uitvoer op het PDF-bestand dat hier wordt weergegeven.
 
-   ![chlimage_1-246](assets/chlimage_1-42.png)
+   ![Annotatie en revisiestatus in gegenereerde PDF](assets/chlimage_1-42.png)
 
 1. Download of druk de PDF af met de opties rechtsboven.
 
-   ![chlimage_1-247](assets/chlimage_1-43.png)
+   ![Downloadopties en afdrukopties voor PDF](assets/chlimage_1-43.png)
 
    >[!NOTE]
    >
@@ -848,16 +848,16 @@ Tik op het pictogram **[!UICONTROL Afdrukken]** en volg de instructies in de wiz
 
    Als u de weergave van het gerenderde PDF-bestand wilt wijzigen, bijvoorbeeld de lettertypekleur, -grootte en -stijl, de achtergrondkleur van de opmerkingen en status, opent u de PDF-configuratie **[!UICONTROL voor]** annotaties in Configuratiebeheer en wijzigt u de gewenste opties. Als u bijvoorbeeld de weergavekleur van de goedgekeurde status wilt wijzigen, wijzigt u de kleurcode in het desbetreffende veld. Zie [Annoteren](/help/assets/managing-assets-touch-ui.md#annotating)voor informatie over het wijzigen van de lettertypekleur van annotaties.
 
-   ![chlimage_1-248](assets/chlimage_1-44.png)
+   ![Configuratie om elementannotatie af te drukken op PDF-document](assets/chlimage_1-44.png)
 
    Ga terug naar het gerenderde PDF-bestand en vernieuw het. De vernieuwde PDF weerspiegelt de wijzigingen die u hebt aangebracht.
 
-Als een element annotaties in vreemde talen bevat (vooral niet-Latijnse talen), moet u eerst de service CQ-DAM-Handler-Gibson Font Manager op de AEM-server configureren om deze annotaties af te drukken. Geef bij het configureren van de service CQ-DAM-Handler-Gibson Font Manager het pad op waar de lettertypen voor de gewenste talen zich bevinden.
+Als een element annotaties in vreemde talen bevat (met name niet-Latijnse talen), moet u eerst de service CQ-DAM-Handler-Gibson Font Manager op de AEM-server configureren om deze annotaties af te drukken. Geef bij het configureren van de service CQ-DAM-Handler-Gibson Font Manager het pad op waar de lettertypen voor de gewenste talen zich bevinden.
 
 1. Open de configuratiepagina CQ-DAM-Handler-Gibson Font Manager Service via de URL `https://[aem_server]:[port]/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl`.
 1. Voer een van de volgende handelingen uit om CQ-DAM-Handler-Gibson Font Manager Service te configureren:
 
-   * Geef in de directory System Fonts (Systeemlettertypen) het volledige pad naar de map Fonts op uw systeem op. Als u bijvoorbeeld een Mac-gebruiker bent, kunt u het pad opgeven als */Bibliotheek/Fonts* in de optie Systeemlettertypen. AEM haalt de lettertypen op uit deze map.
+   * Geef in de directory Systeemlettertypen het volledige pad naar de map met lettertypen op uw systeem op. Als u bijvoorbeeld een Mac-gebruiker bent, kunt u het pad opgeven als */Bibliotheek/Fonts* in de optie Systeemlettertypen. AEM haalt de lettertypen op uit deze map.
    * Maak een map met de naam `fonts` in de ``crx-quickstart`` map. CQ-DAM-Handler-Gibson Font Manager Service haalt de lettertypen automatisch op de locatie op `crx-quickstart/fonts`. U kunt dit standaardpad overschrijven vanuit de directory Adobe Server Fonts.
 
    * Maak een nieuwe map voor lettertypen op uw systeem en sla de gewenste lettertypen op in de map. Geef vervolgens het volledige pad naar die map op in de directory met lettertypen voor klanten.
@@ -891,7 +891,7 @@ In de volgende gevallen kunt u versies maken in Experience Manager:
 * Bewerk de metagegevens van een element.
 * Gebruik de AEM-bureaubladtoepassing om een bestaand middel uit te checken, te bewerken en uw wijzigingen [te](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#edit-assets-upload-updated-assets)uploaden.
 
-U kunt automatische versioning ook inschakelen via een workflow. Wanneer u een versie voor een element maakt, worden de metagegevens en de uitvoeringen samen met de versie opgeslagen. Uitvoeringen zijn alternatieven voor dezelfde afbeeldingen, bijvoorbeeld een PNG-uitvoering van een geüpload JPEG-bestand.
+U kunt automatische versioning ook inschakelen via een workflow. Wanneer u een versie voor een element maakt, worden de metagegevens en uitvoeringen samen met de versie opgeslagen. Uitvoeringen zijn alternatieven voor dezelfde afbeeldingen, bijvoorbeeld een PNG-uitvoering van een geüpload JPEG-bestand.
 
 1. Navigeer naar de locatie van het element waarvoor u een versie wilt maken en klik erop om de voorvertoning te openen. Open het menu in de linkerbovenhoek van de pagina en selecteer **[!UICONTROL Tijdlijn]**.
 
@@ -905,7 +905,7 @@ U kunt automatische versioning ook inschakelen via een workflow. Wanneer u een v
    * Klik op **[!UICONTROL Opslaan als versie]** om een versie voor het element te maken. Voeg desgewenst een label en opmerking toe.
    * Klik op **[!UICONTROL Maken]** om een versie te maken.
 
-      ![chlimage_1-251](assets/create-new-version-from-timeline.png)
+      ![Elementversie maken van zijbalk](assets/create-new-version-from-timeline.png)
 
       *Afbeelding: Maak een versie van een element op de linkerzijbalk van de[!UICONTROL tijdlijn].*
 
@@ -914,7 +914,7 @@ U kunt automatische versioning ook inschakelen via een workflow. Wanneer u een v
    * Klik op Alles **** tonen in [!UICONTROL tijdlijn].
    * Klik op **[!UICONTROL Versies]**. Alle versies die voor een element zijn gemaakt, worden weergegeven in de linkerzijbalk.
 
-      ![version_option](assets/versions_option.png)
+      ![ Selecteer de optie Versies in de tijdlijn](assets/versions_option.png)
 
    * Selecteer een specifieke versie van het element en klik op **[!UICONTROL Voorvertoningsversie]**.
 
@@ -923,7 +923,7 @@ U kunt automatische versioning ook inschakelen via een workflow. Wanneer u een v
    * Klik op een versie van het element. Voeg desgewenst een label en een opmerking toe.
    * Klik op **[!UICONTROL Vorige versie]**.
 
-      ![select_version](assets/select_version.png)
+      ![Een versie selecteren om naar deze versie terug te keren](assets/select_version.png)
 
       *Afbeelding: Selecteer een versie en herstel deze. Het wordt de huidige versie die dan beschikbaar aan de gebruikers DAM is.*
 

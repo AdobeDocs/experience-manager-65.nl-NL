@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 070d4e105c94548dda1098bf47cab83e0847f24d
 
 ---
 
@@ -26,8 +26,7 @@ Het voorbeeld, dat in dit document wordt besproken, is een referentie-implementa
 >
 >* De voorbeelden en configuraties die in dit document worden uitgelegd, zijn in overeenstemming met MySQL 5.6.24 en u moet deze op de juiste wijze vervangen voor uw databasesysteem.
 >* Controleer of u de nieuwste versie van het invoegpakket voor AEM Forms hebt geïnstalleerd. Zie het artikel over de release van [AEM Forms voor de lijst met beschikbare pakketten](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) .
->
-
+> * Het voorbeeldpakket werkt alleen met verzendacties voor Adaptieve formulieren.
 
 
 ## Het voorbeeld instellen en configureren {#set-up-and-configure-the-sample}

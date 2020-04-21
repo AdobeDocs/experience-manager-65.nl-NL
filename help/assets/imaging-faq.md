@@ -8,7 +8,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: 3e37ee6da263bb12eb0efea85213987e8286bc60
+source-git-commit: 7daf89f7e69d3e2e938780ff98fd2df46723e708
 
 ---
 
@@ -25,10 +25,10 @@ De volgende voorbeelden van afbeeldingselementen geven de toegevoegde optimalisa
 
 | Afbeelding<br>(URL) | Miniatuur | Grootte<br> (JPEG) | Grootte (WebP)<br> (met slimme beeldverwerking) | % reductie |
 |---|---|---|---|---|
-| [Afbeelding 1](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_6?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![picture1](/help/assets/assets-dm/picture1.png) | 73,75 kB | 45,92 kB | 38% |
-| [Afbeelding 2](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_3?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![picture2](/help/assets/assets-dm/picture2.png) | 191 kB | 70,66 kB | 63% |
-| [Afbeelding 3](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_2?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![picture3](/help/assets/assets-dm/picture3.png) | 96,64 kB | 39,44 kB | 59% |
-| [Afbeelding 4](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_1?hei=500&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![picture4](/help/assets/assets-dm/picture4.png) | 315,80 kB | 178,19 kB | 44% |
+| [Afbeelding 1](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_6?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture1](/help/assets/assets-dm/picture1.png) | 73,75 kB | 45,92 kB | 38% |
+| [Afbeelding 2](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_3?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture2](/help/assets/assets-dm/picture2.png) | 191 kB | 70,66 kB | 63% |
+| [Afbeelding 3](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_2?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture3](/help/assets/assets-dm/picture3.png) | 96,64 kB | 39,44 kB | 59% |
+| [Afbeelding 4](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_1?hei=500&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture4](/help/assets/assets-dm/picture4.png) | 315,80 kB | 178,19 kB | 44% |
 |  |  |  |  | Gemiddelde = 51% |
 
 Net als het bovenstaande heeft Adobe ook een test uitgevoerd met 7009 URL&#39;s van live klantsites en kon het bestand gemiddeld 38% verder worden geoptimaliseerd voor JPEG en 31% verder worden geoptimaliseerd voor PNG met WebP-indeling, vanwege de mogelijkheid van Smart Imaging.
@@ -72,25 +72,24 @@ De volgende afbeeldingsindelingen worden ondersteund voor Smart Imaging:
 * JPEG
 * PNG
 
-Voor elke andere indeling die in een URL wordt vermeld, moet u Slim beeld expliciet uitschakelen.  Voeg een optie `bfc=off` aan de URL toe voor andere bestandsindelingen dan JPEG en PNG. U kunt dit bereiken door één van beide volgende methodes te gebruiken:
+<!-- For any other format mentioned in a URL, you should explicity turn off Smart Imaging.  Append modifier `bfc=off` to the URL for file formats other than JPEG and PNG. You can accomplish this by using either one of the following methods:
 
-* Gebruik een liniaal als de `fmt` modifier wordt vermeld in de URL.
-* Toevoegen in het veld URL-wijzigingstoetsen van de betreffende voorinstellingen.
+* Use a ruleset if the `fmt` modifier is mentioned in the URL. 
+* Append in URL modifiers field of the presets concerned.
 
-Adobe werkt aan een permanente oplossing waarvoor u geen toevoeging `bfc=off` voor `fmt !=JPEG` of `fmt !=PNG`. Dit onderwerp zal worden bijgewerkt nadat de moeilijke situatie wordt geleverd.
-
+Adobe is working on a permanent fix that does not require you to append `bfc=off` for `fmt !=JPEG` or `fmt !=PNG`. This topic will be updated after the fix is delivered. -->
 
 ## Hoe werkt Smart Imaging met onze bestaande voorinstellingen voor afbeeldingen die al in gebruik zijn? {#how-does-smart-imaging-work-with-our-existing-image-presets-that-are-already-in-use}
 
 Slimme afbeeldingen werken met uw bestaande &quot;voorinstellingen voor afbeeldingen&quot; en nemen alle afbeeldingsinstellingen in acht, met uitzondering van kwaliteit (qlt) en indeling (fmt) als de gewenste bestandsindeling JPEG of PNG is. Voor het omzetten van de bestandsindeling blijven de volledige visuele getrouwheid behouden, zoals wordt gedefinieerd door de instellingen van de voorinstelling voor de afbeelding, maar is het bestand kleiner. Als de oorspronkelijke afbeelding kleiner is dan het resultaat van Smart Imaging, wordt de oorspronkelijke afbeelding weergegeven.
 
-Als de afbeeldingsvoorinstellingen worden gebruikt om terug te keren `fmt !=JPEG` of `fmt !=PNG`, moet u bovendien toevoegen `bfc=off` in het veld Voorinstelling wijzigen om de gewenste bestandsindeling te retourneren.
+<!-- In addition, if your image presets are used to return `fmt !=JPEG` or `fmt !=PNG`, be sure append `bfc=off` in the preset modifier field to return the requested file format. -->
 
 ## Moet ik URL&#39;s, voorinstellingen voor afbeeldingen wijzigen of nieuwe code op mijn site implementeren voor Smart Imaging? {#will-i-have-to-change-any-urls-image-presets-or-deploy-any-new-code-on-my-site-for-smart-imaging}
 
 Nee. Slimme afbeeldingen werken naadloos met bestaande URL&#39;s voor afbeeldingen en voorinstellingen voor afbeeldingen. Bovendien hoeft u bij Slimme afbeeldingen geen code aan uw website toe te voegen om de browser van een gebruiker te detecteren. Dit alles wordt automatisch afgehandeld.
 
-Zoals eerder vermeld, ondersteunt Smart Imaging alleen JPEG- en PNG-afbeeldingsindelingen. Voor andere indelingen moet u de `bfc=off` bepaling aan URL toevoegen zoals eerder beschreven.
+<!-- As mentioned earlier, Smart Imaging supports only JPEG and PNG image formats. For other formats, you need to append the `bfc=off` modifier to the URL as described earlier. -->
 
 Zie ook [Ben ik verkiesbaar om Slimme Beelden te gebruiken?](#am-i-eligible-to-use-smart-imaging) om inzicht te krijgen in de vereisten voor slimme beeldverwerking.
 

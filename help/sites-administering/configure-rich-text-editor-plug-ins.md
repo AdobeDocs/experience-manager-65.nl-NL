@@ -1,14 +1,9 @@
 ---
 title: De invoegtoepassingen van de Rich Text Editor configureren
-description: Leer om de stop-ins van de Redacteur van de Tekst te vormen AEM Rich om individuele functionaliteit toe te laten.
-uuid: 012552b7-5e32-4d74-be07-b441c3d4b47b
+description: Leer hoe u de insteekmodules van de Adobe Experience Manager Rich Text Editor configureert om afzonderlijke functies in te schakelen.
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-discoiquuid: 87dc79ad-0a71-43f6-af04-4d26c7472dc5
-mini-toc-levels: 1
-docset: aem65
 translation-type: tm+mt
-source-git-commit: 72cdeff04e18c13e4b31543bafcbd5ffa65a78a7
+source-git-commit: 29b1520c59f555776f089b20614bf503492f7411
 
 ---
 
@@ -21,7 +16,7 @@ Voor details over de andere configuraties RTE, zie [Rich Text Editor](/help/site
 
 >[!NOTE]
 >
->Als u werkt met CRXDE Lite, wordt u aangeraden de wijzigingen regelmatig op te slaan met Alles opslaan.
+>Als u werkt met CRXDE Lite, wordt u aangeraden de wijzigingen regelmatig op te slaan met de optie Alles  opslaan.
 
 ## Een insteekmodule activeren en de eigenschap features configureren {#activateplugin}
 
@@ -270,7 +265,7 @@ Geef vervolgens de locatie(s) op van de stijlpagina(&#39;s) waarnaar u wilt verw
 1. Voeg de eigenschap toe `externalStyleSheets` aan het bovenliggende knooppunt van `<rtePlugins-node>`:
 
    * **Naam**`externalStyleSheets`
-   * **Type** `String[]` (meerdere tekenreeksen; klik op **Multi** in CRXDE)
+   * **Type** `String[]` (meerdere tekenreeksen; klik op **Multi** in (CRXDE)
    * **Waarde(s)** Het pad en de bestandsnaam van elk stijlblad dat u wilt opnemen. Gebruik repository paden.
    >[!NOTE]
    >
@@ -315,7 +310,7 @@ Geef vervolgens de locatie(s) op van de stijlpagina(&#39;s) waarnaar u wilt verw
 
    * **Naam**`cssName`
    * **Type**`String`
-   * **Waarde** De naam van de CSS-klasse (zonder een voorafgaande &#39;.&#39;; bijvoorbeeld, `cssClass` in plaats van `.cssClass`)
+   * **Waarde** De naam van de CSS-klasse (zonder een voorafgaande &#39;.&#39;; for example, `cssClass` instead of `.cssClass`)
 
 1. Voeg de eigenschap toe `text` aan hetzelfde knooppunt. Hiermee wordt de tekst gedefinieerd die wordt weergegeven in het selectievak:
 
@@ -350,7 +345,7 @@ Ga als volgt te werk om de stijl te maken die auteurs op Japanse tekst kunnen to
    * Naam: `text`*Type: `String`
    * Waarde: `Japanese word-wrap`
 
-1. Maak een stijlpagina en geef het pad op. Zie [de locatie van stijlpagina](#locationofstylesheet)opgeven. Voeg de volgende inhoud toe aan het stijlblad. Wijzig de achtergrondkleur naar wens.
+1. Maak een stijlpagina en geef het pad op. Zie [de locatie van stijlpagina](#locationofstylesheet)opgeven. Voeg de volgende inhoud aan de stijlpagina toe. Wijzig de achtergrondkleur naar wens.
 
    ```css
    .text span.jpn-word-wrap {
@@ -600,20 +595,18 @@ Als u zowel de CSS-tekenreeks als de stijltekenreeks in code opgeeft, heeft de C
 Wanneer de insteekmodule voor spellingcontrole is geactiveerd, gebruikt de RTE woordenboeken voor elke geschikte taal. Deze worden vervolgens geselecteerd volgens de taal van de website door ofwel de taaleigenschap van de substructuur te nemen of de taal uit de URL te halen; bijvoorbeeld. de `/en/` tak wordt gecontroleerd als Engels, de `/de/` tak als Duits.
 
 >[!NOTE]
-Het bericht &#39;&#39;Spellingcontrole mislukt.&#39;&#39; wordt gezien als een controle voor een taal wordt geprobeerd die niet geïnstalleerd is.
+Het bericht `Spell checking failed` wordt gezien als een controle voor een taal wordt geprobeerd die niet geïnstalleerd is. De standaardwoordenboeken bevinden zich in `/libs/cq/spellchecker/dictionaries`de map en de juiste leesmij-bestanden. Wijzig de bestanden niet.
 
-Een standaard AEM-installatie bevat de woordenboeken voor:
-
-* Amerikaans Engels (nl_nl)
-* Brits Engels (en_gb)
-
->[!NOTE]
-De standaardwoordenboeken bevinden zich in `/libs/cq/spellchecker/dictionaries`de map en de juiste leesmij-bestanden. Wijzig de bestanden niet.
-
-Voer de volgende stappen uit als u meer woordenboeken wilt toevoegen.
+Een standaard AEM-installatie bevat de woordenboeken voor Amerikaans Engels (`en_us`) en Brits Engels (`en_gb`). Voer de volgende stappen uit om meer woordenboeken toe te voegen.
 
 1. Ga naar de pagina [https://extensions.openoffice.org/](https://extensions.openoffice.org/).
-1. Selecteer de gewenste taal en download het ZIP-bestand met de spellingdefinities. Extraheer de inhoud van het archief op uw bestandssysteem.
+
+1. Ga op een van de volgende manieren te werk om een woordenboek te zoeken waarin u uw taal kunt kiezen:
+
+   * Zoek naar woordenboek van uw taalkeuze. Zoek op de woordenboekpagina de koppeling naar de oorspronkelijke bron of de oorspronkelijke webpagina van de auteur. Zoek de woordenboekbestanden voor v2.x op een dergelijke pagina.
+   * Zoek naar bestanden voor v2.x-woordenboeken op [https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries](https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries).
+
+1. Download het archief met de spellingdefinities. Extraheer de inhoud van het archief op uw bestandssysteem.
 
    >[!CAUTION]
    Alleen woordenboeken in de `MySpell` indeling voor OpenOffice.org v2.0.1 of eerder worden ondersteund. Aangezien de woordenboeken nu archiefbestanden zijn, wordt u aangeraden het archief na het downloaden te verifiëren.
@@ -622,9 +615,8 @@ Voer de volgende stappen uit als u meer woordenboeken wilt toevoegen.
 1. Laad de .aff- en .dic-bestanden in de opslagplaats op `/apps/cq/spellchecker/dictionaries`.
 
 >[!NOTE]
-De spellingcontrole van RTE is beschikbaar op bestelling. Deze wordt niet automatisch uitgevoerd wanneer u tekst gaat typen.
-Als u de spellingcontrole wilt uitvoeren, tikt u op of klikt u op de knop Spellingcontrole op de werkbalk. RTE controleert de spelling van woorden en benadrukt verkeerd-gespelde woorden.
-Als u een wijziging opneemt die door de spellingcontrole wordt voorgesteld, worden de tekststatus en onjuist gespelde woorden niet meer gemarkeerd. Als u de spellingcontrole wilt uitvoeren, tikt u nogmaals op de knop Spellingcontrole of klikt u nogmaals op de knop Spellingcontrole.
+De spellingcontrole van RTE is beschikbaar op bestelling. Deze wordt niet automatisch uitgevoerd wanneer u tekst gaat typen. Als u de spellingcontrole wilt uitvoeren, klikt u op [!UICONTROL Spellingcontrole] op de werkbalk. RTE controleert de spelling van woorden en benadrukt de verkeerd gespelde woorden.
+Als u een wijziging opneemt die door de spellingcontrole wordt voorgesteld, wordt de status van de tekst gewijzigd en worden onjuist gespelde woorden niet langer gemarkeerd. Als u de spellingcontrole wilt uitvoeren, tikt u nogmaals op de knop Spellingcontrole of klikt u nogmaals op de knop Spellingcontrole.
 
 ## De historiegrootte voor acties voor ongedaan maken en opnieuw uitvoeren configureren {#undohistory}
 
@@ -720,12 +712,12 @@ Om te vormen hoe de verbindingen in AEM van een ander programma worden toegevoeg
 
       * **Naam**`cssInternal`
       * **Type**`String`
-      * **Waarde** de naam van de CSS-klasse (zonder een voorafgaande &#39;.&#39;; bijvoorbeeld, `cssClass` in plaats van `.cssClass`)
+      * **Waarde** de naam van de CSS-klasse (zonder een voorafgaande &#39;.&#39;; for example, `cssClass` instead of `.cssClass`)
    * CSS-stijl voor externe koppelingen
 
       * **Naam**`cssExternal`
       * **Type**`String`
-      * **Waarde** de naam van de CSS-klasse (zonder een voorafgaande &#39;.&#39;; bijvoorbeeld, `cssClass` in plaats van `.cssClass`)
+      * **Waarde** de naam van de CSS-klasse (zonder een voorafgaande &#39;.&#39;; for example, `cssClass` instead of `.cssClass`)
    * Array van geldige **protocollen** (inclusief https://, https:// file://, mailto: onder andere)
 
       * **Naam**`protocols`

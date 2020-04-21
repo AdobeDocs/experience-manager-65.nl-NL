@@ -1,13 +1,9 @@
 ---
-title: 'Configureer de Rich Text Editor naar de auteur van inhoud in AEM '
-description: Leer om de Rich Text Editor van AEM aan auteursinhoud in AEM te vormen.
-uuid: 4f87745e-586a-4cba-887b-391e37520ffc
+title: Configureer de Rich Text Editor voor het schrijven van inhoud in Adobe Experience Manager.
+description: Leer hoe u de Adobe Experience Manager Rich Text Editor configureert voor het schrijven van inhoud in Adobe Experience Manager.
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-discoiquuid: 2cde81d3-5fc1-4a32-a307-7dc592f37162
-docset: aem65
 translation-type: tm+mt
-source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
+source-git-commit: 29b1520c59f555776f089b20614bf503492f7411
 
 ---
 
@@ -16,19 +12,17 @@ source-git-commit: e71b87b12d45bf12f29af917fddebeddedb18056
 
 De Rich Text Editor (RTE) biedt auteurs een groot aantal functies voor het bewerken van hun tekstinhoud. Pictogrammen, selectiekaders, werkbalk en menu&#39;s zijn beschikbaar voor een WYSIWYG-ervaring bij het bewerken van tekst.
 
-RTE kan worden gevormd om, de eigenschappen toe te laten onbruikbaar te maken en uit te breiden beschikbaar in de auteurscomponenten. Om te weten hoe te om eigenschappen RTE voor creatie te gebruiken, zie de Redacteur van de Tekst van het [Gebruik Rich voor creatie](/help/sites-authoring/rich-text-editor.md).
+Om te weten hoe te om eigenschappen RTE voor creatie te gebruiken, zie de Redacteur van de Tekst van het [Gebruik Rich voor creatie](/help/sites-authoring/rich-text-editor.md). RTE kan worden gevormd om, de eigenschappen toe te laten onbruikbaar te maken en uit te breiden beschikbaar in de auteurscomponenten. Het volgende werkschema illustreert een geadviseerde orde om de de configuratietaken van RTE in de Manager van de Ervaring te voltooien.
 
-Het volgende werkschema illustreert een geadviseerde orde om de de configuratietaken van RTE te voltooien.
-
-![Reeks stappen om te leren hoe te om rte te vormen](assets/rte_workflow_v1.png)
+![Reeks stappen leren hoe te om RTE te vormen](assets/rte_workflow_v1.png)
 
 *Afbeelding: Reeks stappen leren hoe te om RTE te vormen*
 
 ## Interface met aanraakbediening en klassieke gebruikersinterface {#understand-touch-enabled-ui-and-classic-ui}
 
-De interface met aanraakbediening is de standaardgebruikersinterface voor AEM. Adobe heeft Touch UI geïntroduceerd met een [responsief ontwerp](/help/sites-authoring/responsive-layout.md) voor de ontwerpomgeving. De aanraakinterface is ontworpen voor touch- en desktopapparaten. De interface verschilt aanzienlijk van de oorspronkelijke klassieke interface.
+De interface met aanraakbediening is de standaardgebruikersinterface voor Experience Manager. Adobe introduceerde een interface met aanraakfuncties met een [responsief ontwerp](/help/sites-authoring/responsive-layout.md) voor de ontwerpomgeving. De interface voor touch-apparaten is ontworpen voor touch- en desktopapparaten. De interface verschilt aanzienlijk van de oorspronkelijke klassieke UI.
 
-![De rijke toolbar van de Redacteur van de Tekst in Touch-Toegelaten UI](assets/chlimage_1-35.png)
+![De rijke toolbar van de Redacteur van de Tekst in Aanraaks gebruikersinterface](assets/chlimage_1-35.png)
 
 *Afbeelding: De rijke toolbar van de Redacteur van de Tekst in Touch-Toegelaten UI*
 
@@ -39,14 +33,14 @@ De interface met aanraakbediening is de standaardgebruikersinterface voor AEM. A
 >[!MORELIKETHIS]
 >
 >* [UI-aanbevelingen](/help/sites-deploying/ui-recommendations.md)
->* Informatie over het vervangen van de klassieke gebruikersinterface vindt u in [AEM 6.5 Release-notities](/help/release-notes/deprecated-removed-features.md)
+>* Informatie over het vervangen van de klassieke gebruikersinterface vindt u in de opmerkingen bij de release [Experience Manager 6.5](/help/release-notes/deprecated-removed-features.md)
 >* Zie [Aanraakinterface en Klassieke UI voor het verschil tussen de gebruikersinterface](https://aemcq5pedia.wordpress.com/2018/01/05/touch-enabled-ui-aem6-3/)
->* Zie [Concepten van AEM Touch-interface voor meer informatie over de interface met aanraakbediening](/help/sites-developing/touch-ui-concepts.md)
+>* Zie [Concepten van Experience Manager Touch UI voor meer informatie over de interface die geschikt is voor touch](/help/sites-developing/touch-ui-concepts.md)
 
 
 ## Verschillende bewerkingsmodi {#editingmodes}
 
-Auteurs kunnen tekstinhoud in AEM maken en bewerken met de verschillende modi van componenten. De toolbaropties voor het ontwerpen en het formatteren van inhoud en de gebruikerservaring van rte-toegelaten componenten op verschillende het uitgeven wijze variëren gebaseerd op configuraties RTE.
+Auteurs kunnen tekstinhoud maken en bewerken in Experience Manager met behulp van de verschillende modi van componenten. De toolbaropties voor het ontwerpen en het formatteren van inhoud en de gebruikerservaring van rte-toegelaten componenten op verschillende het uitgeven wijze variëren gebaseerd op configuraties RTE.
 
 | Bewerkmodus | Bewerkingsgebied | Aanbevolen functies om te worden ingeschakeld | Aanraakinterface | Klassieke interface |
 |--- |--- |--- |--- |--- |
@@ -71,7 +65,7 @@ In de klassieke gebruikersinterface kunt u met een trage dubbelklik op de compon
 
 ### Volledig scherm bewerken {#full-screen-editing}
 
-AEM-componenten kunnen worden geopend in de weergave Volledig scherm, waarin de pagina-inhoud wordt verborgen en het beschikbare scherm wordt ingenomen. U kunt overwegen om een gedetailleerde versie van de inlinebewerking op volledig scherm te bewerken, aangezien deze de meeste bewerkingsopties biedt. Het kan worden geopend door ![rte_fullscreen](assets/rte_fullscreen.png), van de compacte toolbar te klikken wanneer het gebruiken van de gealigneerde het uitgeven wijze.
+De componenten van de Manager van de ervaring kunnen in het volledige schermmening worden geopend die de paginainhoud verbergt en het beschikbare scherm bezet. U kunt overwegen om een gedetailleerde versie van de inlinebewerking op volledig scherm te bewerken, aangezien deze de meeste bewerkingsopties biedt. Het kan worden geopend door ![rte_fullscreen](assets/rte_fullscreen.png), van de compacte toolbar te klikken wanneer het gebruiken van de gealigneerde het uitgeven wijze.
 
 In de modus Volledig scherm van het dialoogvenster zijn, samen met een gedetailleerde RTE-werkbalk, ook de opties en componenten beschikbaar in een dialoogvenster. Het is alleen van toepassing voor een dialoog die naast andere componenten RTE bevat.
 
@@ -109,7 +103,6 @@ In de volgende tabel worden de huidige plug-ins weergegeven:
 * Plug-in-id&#39;s met een koppeling naar de API-documentatie. ID wordt gebruikt als de knooppuntnaam wanneer het [activeren van een stop-in](/help/sites-administering/configure-rich-text-editor-plug-ins.md#activateplugin).
 * Toegestane waarden voor de `features` eigenschap.
 * Een beschrijving van de functionaliteit die door de plug-in wordt geboden.
-
 
 | Plug-in-id | functies | Beschrijving |
 |--- |--- |--- |

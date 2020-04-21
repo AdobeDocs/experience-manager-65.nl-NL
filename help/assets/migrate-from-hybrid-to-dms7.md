@@ -7,7 +7,7 @@ topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 7aba1f3b492a07fe502f95535a94c8054a044eb5
+source-git-commit: f466193a259d9e8869d7f79eafda1be20869e4af
 
 ---
 
@@ -23,7 +23,7 @@ De extra belangrijkste verschillen tussen Dynamische media-Hybride en Dynamische
 * Het maken en opslaan van afbeeldingsuitvoeringen.
 * Configuratie en referenties van de cloud (provisioning).
 
-Er zijn twee opties beschikbaar wanneer u overschakelt van Dynamische media-hybride naar Dynamische media-Scene7. De eerste optie is eenvoudig voorziening een nieuw geval van Dynamische media-Scene7 op AEM. De tweede optie moet uw bestaande instantie van Dynamische media-Hybride aan Dynamische media-Scene7 migreren. Met deze optie geeft u een overzicht van het tabelformulier onder de stappen en overwegingen die u tijdens het verplaatsen wilt uitvoeren.
+Er zijn twee opties beschikbaar wanneer u van Dynamische media-Hybride naar Dynamische media-Scene7 beweegt. De eerste optie is eenvoudig voorziening een nieuw geval van Dynamische media-Scene7 op AEM. De tweede optie moet uw bestaande instantie van Dynamische media-Hybride aan Dynamische media-Scene7 migreren. Met deze optie geeft u een overzicht van het tabelformulier onder de stappen en overwegingen die u tijdens het verplaatsen wilt uitvoeren.
 
 >[!IMPORTANT]
 >

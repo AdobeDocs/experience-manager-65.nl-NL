@@ -4,7 +4,7 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: Gebruikershandleiding voor AEM 6.5-middelen
 translation-type: tm+mt
-source-git-commit: c400a3f1c1535a32e1e1209aa1760235a4841c5e
+source-git-commit: b539ab0d6e777be08abb288b6f736f4e511755f1
 
 ---
 
@@ -34,6 +34,7 @@ source-git-commit: c400a3f1c1535a32e1e1209aa1760235a4841c5e
    + [Het vormen Dynamische Media - wijze Scene7](config-dms7.md)
    + [Dynamische media configureren - hybride modus](config-dynamic.md)
    + [Het oplossen van problemen Dynamische Media - wijze Scene7](troubleshoot-dms7.md)
+   + [Migreren van dynamische media - hybride modus naar dynamische media - S7-modus](migrate-from-hybrid-to-dms7.md)
    + [Dynamic Media-assets beheren](managing-assets.md)
    + [Aanbevolen procedures voor een optimale kwaliteit van uw afbeeldingen](best-practices-for-optimizing-the-quality-of-your-images.md)
    + [Voorinstellingen voor Dynamic Media-viewer beheren](managing-viewer-presets.md)
@@ -121,8 +122,8 @@ source-git-commit: c400a3f1c1535a32e1e1209aa1760235a4841c5e
    + [Metadataschema van map](folder-metadata-schema.md)
    + [Slimme tags beheren](managing-smart-tags.md)
 + Brand Portal {#brandportal}
-   + [AEM-middelen configureren met Brand Portal](configure-aem-assets-with-brand-portal.md)
-   + [Middelen publiceren naar Brand Portal](brand-portal-publish-assets.md)
+   + [AEM Assets configureren met Brand Portal](configure-aem-assets-with-brand-portal.md)
+   + [Assets publiceren naar Brand Portal](brand-portal-publish-assets.md)
    + [Mappen publiceren naar Brand Portal](brand-portal-publish-folder.md)
    + [Verzamelingen publiceren naar Brand Portal](brand-portal-publish-collection.md)
 + Contentfragmenten {#fragments}

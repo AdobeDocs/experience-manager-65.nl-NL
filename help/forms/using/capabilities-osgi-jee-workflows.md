@@ -9,7 +9,7 @@ topic-tags: publish
 discoiquuid: 89bcc76d-122f-4a3f-b857-16e5376e1624
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4ecf5efc568cd21f11801a71d491c3d75ca367fe
+source-git-commit: 0a2d53aa3eab4eb4ec58fa9b28bef675715b1d09
 
 ---
 
@@ -18,7 +18,7 @@ source-git-commit: 4ecf5efc568cd21f11801a71d491c3d75ca367fe
 
 ## AEM Inbox en HTML-werkruimte {#aem-inbox-and-html-workspace}
 
-AEM Inbox wordt gebruikt om Forms-centric AEM Workflows op OSGi in werking te stellen en te controleren. Met HTML Workspace kunt u JEE-workflows voor AEM-formulieren uitvoeren en controleren. De volgende tabel bevat een lijst met belangrijke acties die beschikbaar zijn in AEM Inbox voor Forms-centric AEM Workflows op OSGi en in HTML Workspace voor JEE-workflows van AEM-formulieren.
+U kunt AEM Inbox gebruiken om Forms-centric AEM Workflows op OSGi uit te voeren en te controleren. In HTML Workspace kunt u echter JEE-workflows voor AEM-formulieren uitvoeren en controleren. In de volgende tabel vindt u informatie over diverse belangrijke acties die beschikbaar zijn in AEM Inbox voor Forms-centric AEM Workflows op OSGi en in de HTML-werkruimte voor JEE-workflows van AEM-formulieren.
 
 <table>
  <tbody>
@@ -97,7 +97,7 @@ AEM Inbox wordt gebruikt om Forms-centric AEM Workflows op OSGi in werking te st
 
 ## Form-centric AEM Workflows op OSGi- en AEM Forms JEE Workflows {#form-centric-aem-workflows-on-osgi-and-aem-forms-jee-workflows}
 
-Form-centric AEM Workflows op OSGi- en AEM Forms JEE Workflows (AEM Forms on JEE Process Management) hebben een andere set mogelijkheden. De volgende lijst maakt een lijst van belangrijke mogelijkheden en steun beschikbaar voor de mogelijkheden in vorm-centric AEM Workflows op OSGi en Vormen AEM op de Werkstromen van JEE:
+Form-centric AEM Workflows op OSGi- en AEM Forms JEE Workflows (AEM Forms on JEE Process Management) hebben een andere set mogelijkheden. De volgende tabel helpt u belangrijke mogelijkheden te begrijpen die beschikbaar zijn in Form-centric AEM Workflows op OSGi en AEM Forms op JEE Workflows:
 
 <table>
  <tbody>
@@ -153,18 +153,18 @@ Form-centric AEM Workflows op OSGi- en AEM Forms JEE Workflows (AEM Forms on JEE
   </tr>
   <tr>
    <td>E-handtekening (Adobe-handtekening)</td>
-   <td>Ondersteund <sup>[1]</sup></td>
-   <td>Ondersteund <sup>[5]</sup></td>
+   <td>Supported <sup>[1]</sup></td>
+   <td>Supported <sup>[5]</sup></td>
   </tr>
   <tr>
    <td>Taak- en formuliertoepassingen beheren</td>
-   <td>Ondersteund <sup>[2]</sup><br /> </td>
-   <td>Ondersteund <sup>[2]</sup></td>
+   <td>Supported <sup>[2]</sup><br /> </td>
+   <td>Supported <sup>[2]</sup></td>
   </tr>
   <tr>
    <td>Document Services</td>
-   <td>Ondersteund <sup>[3]</sup></td>
-   <td>Ondersteund <sup>[3]</sup></td>
+   <td>Supported <sup>[3]</sup></td>
+   <td>Supported <sup>[3]</sup></td>
   </tr>
   <tr>
    <td>Voltooide taak renderen als adaptief formulier of PDF-document</td>
@@ -258,7 +258,7 @@ Form-centric AEM Workflows op OSGi- en AEM Forms JEE Workflows (AEM Forms on JEE
   </tr>
   <tr>
    <td>Integratie met toepassingen van derden</td>
-   <td>Niet ondersteund <sup>[6]</sup></td>
+   <td>Not Supported <sup>[6]</sup></td>
    <td>Ondersteund</td>
   </tr>
   <tr>
@@ -283,7 +283,7 @@ Form-centric AEM Workflows op OSGi- en AEM Forms JEE Workflows (AEM Forms on JEE
   </tr>
   <tr>
    <td>Een e-mail verzenden aan het einde van de workflow</td>
-   <td>Ondersteund <sup>[7]</sup></td>
+   <td>Supported <sup>[7]</sup></td>
    <td>Ondersteund</td>
   </tr>
   <tr>
@@ -319,9 +319,9 @@ Form-centric AEM Workflows op OSGi- en AEM Forms JEE Workflows (AEM Forms on JEE
  </tbody>
 </table>
 
-1. U kunt Form-centric AEM Workflows op OSGi gebruiken om een reeds ingevuld adaptief formulier te ondertekenen. Form-centric AEM Workflows op OSGi ondersteunen formulierondertekening. De ondertekeningservaring [in formulieren](../../forms/using/working-with-adobe-sign.md#create-in-form-signing-experience) wordt niet ondersteund.
+1. U kunt Form-centric AEM Workflows op OSGi gebruiken om een gevuld adaptief formulier te ondertekenen. Form-centric AEM Workflows op OSGi ondersteunen formulierondertekening. De ondertekeningservaring [in formulieren](../../forms/using/working-with-adobe-sign.md#create-in-form-signing-experience) wordt niet ondersteund.
 
-1. U hebt toegang tot AEM Inbox nodig om AEM Forms OSGi AEM Workflows en HTML Workspace uit te voeren en te controleren om JEE-workflows voor AEM Forms uit te voeren en te controleren.
+1. U hebt toegang tot AEM Inbox nodig om Form-Centric-workflows op AEM Forms OSGi en HTML Workspace uit te voeren en te controleren om JEE-workflows voor AEM Forms uit te voeren en te controleren.
 1. Native AEM Forms Document Services zijn zowel beschikbaar voor Form-centric AEM Workflows op OSGi als voor AEM Forms op JEE Workflows. In de AEM-workflow worden native documentservices gebruikt voor Form-centric AEM Workflows op OSGi- en AEM Forms JEE (Process Management) Workflows.
 1. AEM Forms JEE Workflows kunnen alleen een adaptief formulier weergeven. Het ondersteunt het renderen van een adaptief formulier als PDF-document niet.
 1. AEM-formulieren JEE Workflows hebben geen aparte stap voor ondertekening door Adobe. U hebt een adaptief formulier met Adobe Sign-functionaliteit nodig voor JEE Workflows voor AEM-formulieren. Raadpleeg de documentatie bij [Adobe Sign voor meer informatie](../../forms/using/working-with-adobe-sign.md#add-and-configure-the-signature-step-component).

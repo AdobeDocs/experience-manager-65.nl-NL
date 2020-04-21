@@ -9,20 +9,20 @@ content-type: reference
 discoiquuid: 97a5f018-8255-4b87-9d21-4a0fdf740e4d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
+source-git-commit: 202e4d5d0e3fa285b9973e4709a02ca77ccb6e71
 
 ---
 
 
-# Dynamische media-elementen toevoegen aan pagina&#39;s{#adding-dynamic-media-assets-to-pages}
+# Adding Dynamic Media Assets to Pages{#adding-dynamic-media-assets-to-pages}
 
-Als u de functionaliteit Dynamische media wilt toevoegen aan elementen die u op uw websites gebruikt, kunt u de component **Dynamische media**, **Interactieve media**, **Panoramische media** of **Video 360 Media** rechtstreeks op de pagina toevoegen. U doet dit door de modus Lay-out in te voeren en de componenten Dynamische media in te schakelen. Vervolgens kunt u deze componenten aan de pagina toevoegen en elementen aan de component toevoegen. De dynamische componenten van Media zijn slim - zij weten of u een beeld of een video toevoegt en de beschikbare configuratieopties veranderen dienovereenkomstig.
+Als u de functionaliteit voor dynamische media wilt toevoegen aan assets die u op uw websites gebruikt, kunt u de component **Dynamische media**, **Interactieve media**, **Panoramische media** of **Video 360-media** rechtstreeks op de pagina toevoegen. U doet dit door naar de modus Lay-out te gaan en de componenten voor dynamische media in te schakelen. Vervolgens kunt u deze componenten aan de pagina toevoegen en assets aan de component toevoegen. De componenten voor dynamische media zijn slim: ze weten of u een afbeelding of een video toevoegt en de beschikbare configuratieopties veranderen dienovereenkomstig.
 
-U voegt dynamische media-elementen rechtstreeks aan de pagina toe als u AEM als uw WCM gebruikt. Als u een derde voor uw WCM gebruikt, of [verbinding](/help/assets/linking-urls-to-yourwebapplication.md) of [bedt](/help/assets/embed-code.md) uw activa in. Voor een responsieve website van derden raadpleegt u het [leveren van geoptimaliseerde afbeeldingen op een responsieve site](/help/assets/responsive-site.md).
+U voegt dynamische media-assets rechtstreeks aan de pagina toe als u AEM als uw WCM gebruikt. Als u een oplossing van derden gebruikt voor uw WCM, moet u uw assets [koppelen](/help/assets/linking-urls-to-yourwebapplication.md) of [insluiten](/help/assets/embed-code.md). Voor een responsieve website van derden raadpleegt u het [leveren van geoptimaliseerde afbeeldingen op een responsieve site](/help/assets/responsive-site.md).
 
 >[!NOTE]
 >
->U moet elementen publiceren voordat u deze aan pagina&#39;s in AEM toevoegt. Zie Dynamische media-elementen [publiceren](/help/assets/publishing-dynamicmedia-assets.md).
+>U moet elementen publiceren voordat u deze aan pagina&#39;s in AEM toevoegt. See [Publishing Dynamic Media Assets](/help/assets/publishing-dynamicmedia-assets.md).
 
 ## Een component Dynamische media aan een pagina toevoegen {#adding-a-dynamic-media-component-to-a-page}
 
@@ -59,7 +59,7 @@ Het toevoegen van een mediacomponent Dynamische media, Interactieve media, Panor
 
 U kunt dynamische mediacomponenten op twee manieren lokaliseren:
 
-* Open **[!UICONTROL Eigenschappen]** op een webpagina in Sites en selecteer het tabblad **[!UICONTROL Geavanceerd]** . Selecteer de gewenste taal voor lokalisatie.
+* Within a web page in Sites, open **[!UICONTROL Properties]** and select the **[!UICONTROL Advanced]** tab. Selecteer de gewenste taal voor lokalisatie.
 
    ![chlimage_1-172](assets/chlimage_1-538.png)
 
@@ -113,13 +113,13 @@ Met de component Dynamische media kunt u dynamische afbeeldingen toevoegen, zoal
 
 U kunt de viewervoorinstelling, afbeeldingsvoorinstelling of afbeeldingsindeling ook rechtstreeks in de component configureren. Als u een afbeelding responsief wilt maken, kunt u de onderbrekingspunten instellen of een responsieve voorinstelling voor de afbeelding toepassen.
 
-U kunt de volgende instellingen voor dynamische media bewerken door te tikken op het pictogram **[!UICONTROL Bewerken]** in de component en vervolgens op Instellingen **[!UICONTROL voor]** dynamische media.
+U *moet* de volgende instellingen voor dynamische media bewerken door op het pictogram **[!UICONTROL Bewerken]** in de component te tikken en vervolgens op **[!UICONTROL Dynamische media-instellingen]**.
 
 ![dm-settings-image-preset](assets/dm-settings-image-preset.png)
 
 >[!NOTE]
 >
->Standaard is de afbeeldingscomponent Dynamische media adaptief. Als u van het een vaste grootte wilt maken, plaats het in de component op het **[!UICONTROL Geavanceerde]** lusje met de **[!UICONTROL Breedte]** en de **[!UICONTROL Hoogte]**.
+>Standaard is de afbeeldingscomponent voor dynamische media adaptief. If you want to make it a fixed size, set it in the component in the **[!UICONTROL Advanced]** tab with the **[!UICONTROL Width]** and **[!UICONTROL Height]**.
 
 * **[!UICONTROL Voorinstelling]** viewer: selecteer een bestaande viewervoorinstelling in het keuzemenu. Als de viewervoorinstelling die u zoekt niet zichtbaar is, moet u deze mogelijk zichtbaar maken. Zie Viewer-voorinstellingen beheren. U kunt geen viewervoorinstelling selecteren als u een voorinstelling voor afbeeldingen gebruikt en andersom.
 
@@ -139,7 +139,7 @@ U kunt de volgende instellingen voor dynamische media bewerken door te tikken op
 
    Deze optie is niet beschikbaar als u afbeeldingssets, centrifuges of gemengde mediasets bekijkt.
 
-   U kunt de volgende Geavanceerde Montages uitgeven door **[!UICONTROL Edit]** in de component te tikken.
+   You can edit the following Advanced Settings by tapping **[!UICONTROL Edit]** in the component.
 
 * **[!UICONTROL Titel]**- Wijzig de titel van de afbeelding.
 
@@ -162,7 +162,7 @@ Met de component Dynamische media kunt u dynamische video toevoegen aan uw webpa
 
 ![chlimage_1-173](assets/chlimage_1-540.png)
 
-U kunt de volgende instellingen voor dynamische media bewerken door in de component op **[!UICONTROL Bewerken]** te klikken.
+U moet de volgende instellingen voor dynamische media bewerken door in de component op **[!UICONTROL Bewerken]** te klikken.
 
 >[!NOTE]
 >
@@ -176,7 +176,7 @@ U kunt de volgende instellingen voor dynamische media bewerken door in de compon
 
    * Een bijschriftbestand koppelen aan een video: [https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_video_viewer_url_caption.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_video_viewer_url_caption.html)
    * Een navigatiebestand koppelen aan een video: [https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_video_viewer_url_navigation.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_video_viewer_url_navigation.html)
-   U kunt de volgende geavanceerde instellingen bewerken door in de component op **[!UICONTROL Bewerken]** te klikken.
+   You can edit the following Advanced Settings by clicking **[!UICONTROL Edit]** in the component.
 
 * **[!UICONTROL Titel**—Wijzig de titel van de video.
 
@@ -192,17 +192,17 @@ Zie ook [Afbeeldingsprofielen](/help/assets/image-profiles.md).
 
 ![dm-settings-smart-crop](assets/dm-settings-smart-crop.png)
 
-U kunt de volgende instelling voor dynamische media bewerken door in de component op **[!UICONTROL Bewerken]** te klikken.
+U moet de volgende instelling voor dynamische media bewerken door in de component op **[!UICONTROL Bewerken]** te klikken.
 
 >[!NOTE]
 >
->Standaard is de afbeeldingscomponent Dynamische media adaptief. Als u van het een vaste grootte wilt maken, plaats het in de component op het **[!UICONTROL Geavanceerde]** lusje met de **[!UICONTROL Breedte]** en de **[!UICONTROL Hoogte]**.
+>Standaard is de afbeeldingscomponent voor dynamische media adaptief. If you want to make it a fixed size, set it in the component in the **[!UICONTROL Advanced]** tab with the **[!UICONTROL Width]** and **[!UICONTROL Height]**.
 
 * **[!UICONTROL Afbeeldingswijzigingstoetsen]**- U kunt afbeeldingseffecten toepassen door extra opdrachten voor afbeeldingen te leveren. Deze worden beschreven in Voorinstellingen afbeelding en de verwijzing Opdracht Beeldserver.
 
    Deze optie is niet beschikbaar als u afbeeldingssets, centrifuges of gemengde mediasets bekijkt.
 
-   U kunt de volgende geavanceerde instellingen bewerken door in de component op **[!UICONTROL Bewerken]** te klikken.
+   You can edit the following Advanced Settings by clicking **[!UICONTROL Edit]** in the component.
 
 * **[!UICONTROL Titel]**- Wijzig de titel van de afbeelding Slim uitsnijden.
 
@@ -238,7 +238,7 @@ Houd er rekening mee dat het toewijzen van een andere viewervoorinstelling aan e
 
 ![chlimage_1-174](assets/chlimage_1-541.png)
 
-U kunt de volgende **[!UICONTROL algemene]** instellingen bewerken door te tikken op **[!UICONTROL Bewerken]** in de component.
+You can edit the following **[!UICONTROL General]** settings by tapping **[!UICONTROL Edit]** in the component.
 
 * **[!UICONTROL Voorinstelling]** viewer: selecteer een bestaande viewervoorinstelling in het keuzemenu. Als de viewervoorinstelling die u zoekt niet zichtbaar is, moet u deze mogelijk zichtbaar maken. Voorinstellingen voor viewers moeten worden gepubliceerd voordat ze kunnen worden gebruikt. Zie Viewer-voorinstellingen beheren.
 
@@ -248,7 +248,7 @@ U kunt de volgende **[!UICONTROL algemene]** instellingen bewerken door te tikke
 
 * **[!UICONTROL Hoogte]**- Voer een waarde in pixels in als u wilt dat de afbeelding een vaste grootte heeft. Als u deze waarde leeg laat, wordt het element adaptief.
 
-   U kunt de volgende instellingen voor **[!UICONTROL Toevoegen aan winkelwagentje]** bewerken door in de component op **[!UICONTROL Bewerken]** te klikken.
+   You can edit the following **[!UICONTROL Add To Cart]** settings by clicking **[!UICONTROL Edit]** in the component.
 
 * **[!UICONTROL Productelement]** tonen - Deze waarde is standaard geselecteerd. Het productelement toont een afbeelding van het product zoals gedefinieerd in de module Handel. Schakel het vinkje uit om het productelement niet weer te geven.
 
@@ -263,7 +263,7 @@ Panoramische media-component is bedoeld voor die elementen die bolvormige panora
 * Een hoogte-breedteverhouding van 2:1.
 * Gelabeld met de trefwoorden `equirectangular` (`spherical` + `panorama`) of (`spherical` + `panoramic`). Zie [Tags](/help/sites-authoring/tags.md)gebruiken.
 
-Zowel zijn de aspectverhouding als de sleutelwoordcriteria op panoramische activa voor de pagina van elementdetails en de **[!UICONTROL Panoramische Media]** WCM component van toepassing.
+Both the aspect ratio and keyword criteria apply to panoramic assets for the asset details page and the **[!UICONTROL Panoramic Media]** WCM component.
 
 >[!NOTE]
 >
@@ -273,7 +273,7 @@ Zowel zijn de aspectverhouding als de sleutelwoordcriteria op panoramische activ
 >* Elke instantie gebruikt hetzelfde elementtype.
 >
 >
-Houd er rekening mee dat het niet wordt ondersteund om een andere viewervoorinstelling toe te wijzen aan elk **[!UICONTROL Panoramisch Media]** -onderdeel op die pagina.
+Be aware that assigning a different viewer preset to each **[!UICONTROL Panoramic Media]** component on that page is not supported.
 >
 >U kunt echter dezelfde viewervoorinstelling gebruiken voor alle Panoramische Media-componenten die elementen van hetzelfde type gebruiken, op de pagina.
 

@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: ea2b23af-49c3-409b-a041-43c42d846f21
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 58a06c1a16c62bffad2893fbec0b32d2ce7267a7
 
 ---
 
@@ -22,10 +22,10 @@ source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
 
 De functie voor bestandsbibliotheek biedt een plaats voor ingetekende sitebezoekers (leden van de community) voor het uploaden, beheren en downloaden van bestanden binnen de site van de gebruikersgemeenschap.
 
-In deze sectie van de documentatie wordt beschreven
+In dit gedeelte van de documentatie wordt het volgende beschreven:
 
-* toevoegen van de bestandsbibliotheekfunctie aan een AEM-site
-* configuratie-instellingen voor de `File Library` component
+* De functie Bestandsbibliotheek toevoegen aan een AEM-site.
+* De montages van de configuratie voor de `File Library` component.
 
 ### Een bestandsbibliotheek toevoegen aan een pagina {#adding-a-file-library-to-a-page}
 
@@ -37,7 +37,7 @@ en sleep het naar de juiste plaats op een pagina.
 
 Ga voor de benodigde informatie naar [Community Components Basics](/help/communities/basics.md).
 
-Wanneer de [vereiste client-side bibliotheken](/help/communities/essentials-file-library.md#essentials-for-client-side) worden opgenomen, ziet u zo de `File Library` component eruit:
+Wanneer de [vereiste client-side bibliotheken](/help/communities/essentials-file-library.md#essentials-for-client-side) worden opgenomen, wordt de `File Library` component als volgt weergegeven:
 
 ![chlimage_1-145](assets/chlimage_1-145.png)
 
@@ -49,61 +49,111 @@ Selecteer de geplaatste `File Library` component die u wilt openen en selecteer 
 
 #### Tabblad Opmerkingen {#comments-tab}
 
-Geef onder het tabblad **Opmerkingen **op of en hoe opmerkingen voor geüploade bestanden worden weergegeven:
+Geef op het tabblad **Opmerkingen** op of en hoe opmerkingen voor geüploade bestanden worden weergegeven:
 
-* **Opmerkingen over bestanden** toestaan Als deze optie is ingeschakeld, kunt u opmerkingen over geüploade bestanden toestaan. De optie Standaard is uitgeschakeld.
+* **Opmerkingen bij bestanden toestaan**
 
-* **Met Opmerkingen per pagina** beperkt u het aantal opmerkingen dat per pagina wordt weergegeven en het aantal reacties dat wordt weergegeven. De standaardwaarde is **10**.
+   Als deze optie is ingeschakeld, kunt u opmerkingen op geüploade bestanden toestaan. De optie Standaard is uitgeschakeld.
 
-* **Maximale bestandsgrootte** Deze waarde beperkt de grootte van het geüploade bestand. Standaardlimiet is 104857600 (10 MB).
+* **Opmerkingen per pagina**
 
-* **Maximale berichtlengte** Maximum aantal tekens dat in het tekstvak mag worden ingevoerd. De standaardwaarde is 4096 tekens.
+   Hiermee beperkt u het aantal opmerkingen dat per pagina wordt weergegeven en het aantal reacties dat wordt weergegeven. De standaardwaarde is **10**.
 
-* **Toegestane bestandstypen** Een door komma&#39;s gescheiden lijst met bestandsextensies met het &quot;punt&quot;-scheidingsteken. Bijvoorbeeld: .jpg, .jpeg, .png, .doc, .docx, .pdf. Als er bestandstypen worden opgegeven, zijn deze niet toegestaan. De standaardinstelling is niet zodanig opgegeven dat** **alle bestandstypen zijn toegestaan.
+* **Max. bestandsgrootte**
 
-* **De Rich Text Editor** Als deze optie is ingeschakeld, kunnen opmerkingen worden ingevoerd met een markering. De optie Standaard is uitgeschakeld.
+   Met deze waarde beperkt u de grootte van het geüploade bestand. Standaardlimiet is 104857600 (10 MB).
 
-* **Opmerkingen** verwijderen Als deze optie is ingeschakeld, mogen gebruikers hun eigen opmerkingen verwijderen. Standaard is ingeschakeld.
+* **Max. berichtlengte**
 
-* **Labelen** toestaan Als deze optie is ingeschakeld, wordt de mogelijkheid ingeschakeld om een tag aan het bestand toe te voegen. De optie Standaard is uitgeschakeld.
+   Maximumaantal tekens dat in het tekstvak kan worden ingevoerd. De standaardwaarde is 4096 tekens.
 
-* **Toegestane naamruimten** als Tags toestaan is ingeschakeld, worden de beschikbare tags beperkt tot de geselecteerde naamruimten. Als er geen optie is geselecteerd, zijn alle opties toegestaan. Standaard zijn alle naamruimten.
+* **Toegestane bestandstypen**
 
-* **Suggestielimiet** Als Tags toestaan is ingeschakeld, wordt met deze instelling het aantal voorgestelde tags dat wordt weergegeven, beperkt. Indien ingesteld op -1, is er geen limiet. De standaardwaarde is -1.
+   Een door komma&#39;s gescheiden lijst met bestandsextensies met het &quot;punt&quot;-scheidingsteken. Bijvoorbeeld: .jpg, .jpeg, .png, .doc, .docx, .pdf. Als er bestandstypen worden opgegeven, zijn deze niet toegestaan. De standaardinstelling is niet zo opgegeven dat alle bestandstypen zijn toegestaan.
 
-* **Stemmen** toestaan Als deze optie is ingeschakeld, wordt de mogelijkheid om voor een bestand te stemmen ingeschakeld. De optie Standaard is uitgeschakeld.
+* **RTF-editor**
 
-* **Volgend** toestaan Als deze optie is ingeschakeld, neemt u de volgende functie op voor blogartikelen, waarmee leden op de [hoogte](/help/communities/notifications.md) kunnen worden gesteld van nieuwe berichten. De optie Standaard is uitgeschakeld.
+   Als deze optie is ingeschakeld, kunnen opmerkingen worden ingevoerd met een markering. De optie Standaard is uitgeschakeld.
 
-* **Mentie** inschakelen indien ingeschakeld, kunnen geregistreerde gebruikers uit de gebruikersgemeenschap andere geregistreerde leden identificeren (met voornaam, achternaam, gebruikersnaam) en ze labelen met de gebruikelijke syntaxis voor @user-name. De getagde gebruikers ontvangen meldingen over hun vermeldingen.
+* **Opmerkingen verwijderen**
 
-* **Max. aantal meldingen** Beperk het maximum aantal in een artikel toegestane vermeldingen. De standaardwaarde is 10.
+   Als deze optie is ingeschakeld, mogen gebruikers hun eigen opmerkingen verwijderen. Standaard is ingeschakeld.
 
-* **UI-menatiepatroon** Geef de toegestane patroontekenreeks op om de geregistreerde gebruiker in een bericht te labelen (@vermeld). Bijvoorbeeld ~{{familyName}}{{givenName}}.
+* **Tags toestaan**
 
-* **Reacties** met verbindingen toestaan Als deze optie is ingeschakeld, toestaan dat reacties op gepost opmerkingen worden ontvangen. De optie Standaard is uitgeschakeld.
+   Als deze optie is ingeschakeld, wordt de mogelijkheid ingeschakeld om een tag aan het bestand toe te voegen. De optie Standaard is uitgeschakeld.
+
+* **Toegestane naamruimten**
+
+   Als Tags toestaan is ingeschakeld, worden de beschikbare tags beperkt tot de geselecteerde naamruimten. Als er geen optie is geselecteerd, zijn alle opties toegestaan. Standaard zijn alle naamruimten.
+
+* **Suggestiegrenswaarde**
+
+   Als u Tags toestaan inschakelt, beperkt deze instelling het aantal voorgestelde tags dat wordt weergegeven. Indien ingesteld op -1, is er geen limiet. De standaardwaarde is -1.
+
+* **Stemmen toestaan**
+
+   Als deze optie is ingeschakeld, wordt de mogelijkheid om voor een bestand te stemmen ingeschakeld. De optie Standaard is uitgeschakeld.
+
+* **Volgen toestaan**
+
+   Als deze optie is ingeschakeld, neemt u de volgende functie op voor blogartikelen, waarmee leden op de [hoogte](/help/communities/notifications.md) kunnen worden gesteld van nieuwe berichten. De optie Standaard is uitgeschakeld.
+
+* **Menu inschakelen**
+
+   Als deze optie is ingeschakeld, kunnen geregistreerde gebruikers in de gemeenschap andere geregistreerde leden identificeren (met voornaam, achternaam, gebruikersnaam) en ze tags toewijzen met behulp van de algemene syntaxis voor @user-name. De getagde gebruikers ontvangen meldingen over hun vermeldingen.
+
+* **Max. aantal meldingen**
+
+   Beperk het maximum aantal berichten dat in een bericht is toegestaan. De standaardwaarde is 10.
+
+* **Menatiepatroon gebruikersinterface**
+
+   Geef de toegestane patroontekenreeks op om de geregistreerde gebruiker in een bericht te labelen (@genoemd). Bijvoorbeeld ~{{familyName}}{{givenName}}.
+
+* **Reacties met verbindingen toestaan**
+
+   Als deze optie is ingeschakeld, kunt u reacties op geposte opmerkingen toestaan. De optie Standaard is uitgeschakeld.
 
 #### Tabblad Gebruikersmodernisering {#user-moderation-tab}
 
 Onder het tabblad **Gebruikersmodernisering** configureert u de moderatie van opmerkingen als opmerkingen zijn toegestaan:
 
-* **Pre-Moderation** Als deze optie is ingeschakeld, moeten opmerkingen worden goedgekeurd voordat ze op een publicatiesite worden weergegeven. De optie Standaard is uitgeschakeld.
+* **Pre-moderatie**
 
-* **Opmerkingen** verwijderen Als deze optie is ingeschakeld, kan de bezoeker die de opmerking heeft geplaatst deze verwijderen. Standaard is ingeschakeld.
+   Als deze optie is ingeschakeld, moeten opmerkingen worden goedgekeurd voordat ze op een publicatiesite worden weergegeven. De optie Standaard is uitgeschakeld.
 
-* **Ontken Commentaren** Indien gecontroleerd, sta vertrouwde op lidmoderatoren toe om commentaren te ontkennen. De optie Standaard is uitgeschakeld.
+* **Opmerkingen verwijderen**
 
-* **Sluit/open Commentaren** opnieuw als gecontroleerd, sta vertrouwde op lidmoderatoren toe om commentaren te sluiten en opnieuw te openen. De optie Standaard is uitgeschakeld.
+   Als deze optie is ingeschakeld, kan de bezoeker die de opmerking heeft geplaatst deze verwijderen. Standaard is ingeschakeld.
 
-* **Opmerkingen** markeren Als deze optie is ingeschakeld, kunnen bezoekers opmerkingen als ongepast markeren. De optie Standaard is uitgeschakeld.
+* **Opmerkingen weigeren**
 
-* **Lijst** met redenen voor vlag Geef bezoekers de mogelijkheid om in een vervolgkeuzelijst de reden te kiezen waarom een opmerking niet geschikt is als gemarkeerd. De optie Standaard is uitgeschakeld.
+   Als deze optie is ingeschakeld, staat u vertrouwde moderatoren toe opmerkingen te weigeren. De optie Standaard is uitgeschakeld.
 
-* **Reden** voor aangepaste markering Als dit selectievakje is ingeschakeld, kunnen bezoekers hun eigen reden opgeven om een opmerking te markeren als ongeschikt. De optie Standaard is uitgeschakeld.
+* **Opmerkingen sluiten/opnieuw openen**
 
-* **De Drempel** van de modernisering gaat het aantal tijden in een commentaar moet door bezoekers worden gemarkeerd alvorens de moderatoren op de hoogte worden gebracht. De standaardwaarde is één keer (**1**).
+   Als deze optie is ingeschakeld, moet u vertrouwde moderatoren van leden toestaan opmerkingen te sluiten en opnieuw te openen. De optie Standaard is uitgeschakeld.
 
-* **Markeringslimiet** Voer het aantal keren in dat een opmerking moet worden gemarkeerd voordat deze wordt verborgen in de openbare weergave. Dit getal moet groter zijn dan of gelijk zijn aan de **moderatiedrempel**. De standaardwaarde is 5.
+* **Opmerkingen markeren**
+
+   Als deze optie is ingeschakeld, kunnen bezoekers opmerkingen als ongeschikt markeren. De optie Standaard is uitgeschakeld.
+
+* **Lijst met redenen voor vlag**
+
+   Als deze optie is ingeschakeld, kunnen bezoekers in een vervolgkeuzelijst de reden kiezen waarom een opmerking als onjuist is gemarkeerd. De optie Standaard is uitgeschakeld.
+
+* **Reden voor aangepaste vlag**
+
+   Als deze optie is ingeschakeld, kunnen bezoekers hun eigen reden opgeven om een opmerking als ongeschikt te markeren. De optie Standaard is uitgeschakeld.
+
+* **Moderniseringsdrempel**
+
+   Voer het aantal keren in dat een opmerking moet worden gemarkeerd door bezoekers voordat moderatoren op de hoogte worden gesteld. De standaardwaarde is één keer (**1**).
+
+* **Limiet voor markering**
+
+   Voer het aantal keren in dat een opmerking moet worden gemarkeerd voordat deze wordt verborgen in de openbare weergave. Dit getal moet groter zijn dan of gelijk zijn aan de **moderatiedrempel**. De standaardwaarde is 5.
 
 ### Tabblad Instellingen sorteren {#sort-settings-tab}
 

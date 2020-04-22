@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 91833914-b811-4355-a97d-e1a9cb7441f1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 58a06c1a16c62bffad2893fbec0b32d2ce7267a7
 
 ---
 
@@ -26,11 +26,12 @@ Nadat een gemeenschapssite is gemaakt, kan inhoud aan de resulterende pagina&#39
 >
 >De consoles voor de verwezenlijking van [communautaire plaatsen](/help/communities/sites-console.md), de malplaatjes [van de](/help/communities/sites.md)communautaire plaats, [communautaire groepsmalplaatjes](/help/communities/tools-groups.md), en [communautaire functies](/help/communities/functions.md) zijn voor gebruik slechts in het auteursmilieu.
 
+
 ## Community-functieconsole {#community-functions-console}
 
-In de auteursomgeving, om de console van communautaire functies te bereiken
+In het auteursmilieu, om de console van communautaire functies te bereiken:
 
-* van globale navigatie: **Gereedschappen, Gemeenschappen, communautaire functies**
+* Vanuit globale navigatie: **[!UICONTROL Gereedschappen]** > **[!UICONTROL Gemeenschappen]** > **[!UICONTROL Communautaire functies]**.
 
 ![chlimage_1-106](assets/chlimage_1-106.png)
 
@@ -50,16 +51,20 @@ Wanneer een communautaire functie aan een malplaatje van de communautaire plaats
 
 ![chlimage_1-107](assets/chlimage_1-107.png)
 
-* **Titel**(*vereist*) De tekst die wordt weergegeven in het menu met functies voor de site
+* **Titel**
 
-* **URL**(*vereist*) De naam die wordt gebruikt om URI te genereren. De naam moet voldoen aan de [naamgevingsconventies](/help/sites-developing/naming-conventions.md) die door AEM en JCR worden opgelegd.
+   (*Vereist*) De tekst die wordt weergegeven in het menu met functies voor de site
+
+* **URL**
+
+   (*Vereist*) De naam die wordt gebruikt om URI te genereren. De naam moet voldoen aan de [naamgevingsconventies](/help/sites-developing/naming-conventions.md) die door AEM en JCR worden opgelegd.
 
 Als u bijvoorbeeld de site gebruikt die u hebt gemaakt op basis van de zelfstudie [Aan de slag](/help/communities/getting-started.md) , als
 
 * Titel = webpagina
 * URL = pagina
 
-De URL naar de pagina is https://localhost:4503/content/sites/engage/en/**page**.html
+De URL naar de pagina is vervolgens https://localhost:4503/content/sites/engage/en/page.html
 
 en de menukoppeling voor de pagina wordt weergegeven als:
 
@@ -76,11 +81,18 @@ Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend:
 ![chlimage_1-109](assets/chlimage_1-109.png)
 
 * [Instellingen voor Titel en URL](#title-and-url-settings)
-* **Weergave** Mijn activiteiten weergeven Als deze optie is geselecteerd, bevat de pagina Activiteiten een tabblad waarop de activiteiten worden gefilterd op basis van de activiteiten die door het huidige lid binnen de gemeenschap zijn gegenereerd. Standaard is geselecteerd.
 
-* **De weergave** Alle activiteiten weergeven Als deze optie is geselecteerd, bevat de pagina Activiteiten een tabblad dat alle activiteiten bevat die zijn gegenereerd binnen de gemeenschap waartoe het huidige lid toegang heeft. Standaard is geselecteerd.
+* **Weergave Mijn activiteiten tonen**
 
-* **Weergave**&quot;News Feed&quot; weergeven Als deze optie is geselecteerd, bevatten de pagina Activiteiten een tabblad waarop de activiteiten worden gefilterd op basis van de activiteiten die het huidige lid volgt. Standaard is geselecteerd.
+   Als deze optie is geselecteerd, bevat de pagina Activiteiten een tabblad waarop activiteiten worden gefilterd op basis van activiteiten die door het huidige lid binnen de gemeenschap worden gegenereerd. Standaard is geselecteerd.
+
+* **Weergave Alle activiteiten tonen**
+
+   Als deze optie is geselecteerd, bevat de pagina Activiteiten een tabblad dat alle binnen de gemeenschap gegenereerde activiteiten bevat waartoe het huidige lid toegang heeft. Standaard is geselecteerd.
+
+* **Weergave Nieuwe feed tonen**
+
+   Als deze optie is geselecteerd, bevatten de pagina Activiteiten een tabblad waarop activiteiten worden gefilterd op basis van activiteiten die het huidige lid volgt. Standaard is geselecteerd.
 
 ### Toewijzingsfunctie {#assignments-function}
 
@@ -99,13 +111,22 @@ Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend:
 ![chlimage_1-110](assets/chlimage_1-110.png)
 
 * [Instellingen voor Titel en URL](#title-and-url-settings)
-* **Geprivilegieerde leden** toestaan Als deze optie is geselecteerd, staat de blog alleen geprivilegieerde leden toe artikelen te maken door de selectie van een groep [](/help/communities/users.md#privileged-members-group)geprivilegieerde leden toe te staan. Als deze optie niet is geselecteerd, mogen alle leden van de community het bestand maken. Standaard is uitgeschakeld.
 
-* **Uploaden van bestanden toestaan** Als deze optie is geselecteerd, bevat de blog de mogelijkheid voor leden om bestanden te uploaden. Standaard is geselecteerd.
+* **Geprivilegieerde leden toestaan**
 
-* **Reacties** met verbindingen toestaan Als deze optie niet is geselecteerd, staat de blog reacties (opmerkingen) op een artikel toe, maar antwoorden op opmerkingen zijn niet toegestaan. Standaard is geselecteerd.
+   Als deze optie is geselecteerd, staat de blog alleen geprivilegieerde leden toe artikelen te maken door de selectie van een groep [](/help/communities/users.md#privileged-members-group)geprivilegieerde leden toe te staan. Als deze optie niet is geselecteerd, mogen alle leden van de community het bestand maken. Standaard is uitgeschakeld.
 
-* **Aanbevolen inhoud** toestaan Als deze optie is geselecteerd, wordt de blog aangeduid als [aanbevolen inhoud](/help/communities/featured.md). Standaard is geselecteerd.
+* **Uploaden van bestanden toestaan**
+
+   Als deze optie is geselecteerd, bevat de blog de mogelijkheid voor leden om bestanden te uploaden. Standaard is geselecteerd.
+
+* **Reacties met verbindingen toestaan**
+
+   Als deze optie niet is geselecteerd, staat de blog reacties (opmerkingen) op een artikel toe, maar zijn reacties op opmerkingen niet toegestaan. Standaard is geselecteerd.
+
+* **Aanbevolen inhoud toestaan**
+
+   Als deze optie is geselecteerd, wordt de blog aangeduid als [aanbevolen inhoud](/help/communities/featured.md). Standaard is geselecteerd.
 
 ### Kalenderfunctie {#calendar-function}
 
@@ -115,16 +136,27 @@ Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend:
 
 ![chlimage_1-111](assets/chlimage_1-111.png)
 
-* zie Instellingen [Titel en URL](#title-and-url-settings)
-* **Vastzetten** toestaan Als deze optie is geselecteerd, kunnen de reacties op onderwerpen worden vastgezet aan het begin van de lijst met opmerkingen. Standaard is geselecteerd.
+* [Instellingen voor Titel en URL](#title-and-url-settings)
 
-* **Geprivilegieerde leden** toestaan Als deze optie is geselecteerd, staat de blog alleen geprivilegieerde leden toe artikelen te maken door de selectie van een groep [](/help/communities/users.md#privileged-members-group)geprivilegieerde leden toe te staan. Als deze optie niet is geselecteerd, mogen alle leden van de community het bestand maken. Standaard is uitgeschakeld.
+* **Vastzetten toestaan**
 
-* **Uploaden van bestanden toestaan** Als deze optie is geselecteerd, bevat de blog de mogelijkheid voor leden om bestanden te uploaden. Standaard is geselecteerd.
+   Indien geselecteerd, laat het forum onderwerpantwoorden toe om aan het begin van de lijst van commentaren worden vastgezet. Standaard is geselecteerd.
 
-* **Reacties** met verbindingen toestaan Als deze optie niet is geselecteerd, staat de blog reacties (opmerkingen) op een artikel toe, maar antwoorden op opmerkingen zijn niet toegestaan. Standaard is geselecteerd.
+* **Geprivilegieerde leden toestaan**
 
-* **Aanbevolen inhoud** toestaan Als deze optie is geselecteerd, wordt de inhoud ervan aangeduid als [aanbevolen inhoud](/help/communities/featured.md). Standaard is geselecteerd.
+   Als deze optie is geselecteerd, staat de blog alleen geprivilegieerde leden toe artikelen te maken door de selectie van een groep [](/help/communities/users.md#privileged-members-group)geprivilegieerde leden toe te staan. Als deze optie niet is geselecteerd, mogen alle leden van de community het bestand maken. Standaard is uitgeschakeld.
+
+* **Uploaden van bestanden toestaan**
+
+   Als deze optie is geselecteerd, bevat de blog de mogelijkheid voor leden om bestanden te uploaden. Standaard is geselecteerd.
+
+* **Reacties met verbindingen toestaan**
+
+   Als deze optie niet is geselecteerd, staat de blog reacties (opmerkingen) op een artikel toe, maar zijn reacties op opmerkingen niet toegestaan. Standaard is geselecteerd.
+
+* **Aanbevolen inhoud toestaan**
+
+   Als deze optie is geselecteerd, wordt de inhoud ervan geïdentificeerd als [aanbevolen inhoud](/help/communities/featured.md). Standaard is geselecteerd.
 
 ### Catalogusfunctie {#catalog-function}
 
@@ -137,7 +169,10 @@ Wanneer de configuratie aan een sjabloon is toegevoegd, kunt u met de configurat
 ![Catalog, functie](assets/catalog-function.png)
 
 * [Instellingen voor Titel en URL](#title-and-url-settings)
-* **Selecteer Alle naamruimten**. De geselecteerde tagnaamruimten definiëren welke tags bezoekers kunnen selecteren voor het filteren van de lijst met activeringsbronnen die in de catalogus wordt vermeld.
+
+* **Alle naamruimten selecteren**
+
+   Met de geselecteerde tagnaamruimten wordt gedefinieerd welke tags bezoekers kunnen selecteren voor het filteren van de lijst met activeringsbronnen die in de catalogus wordt vermeld.
 Als deze optie is geselecteerd, zijn alle naamruimten voor tags die zijn toegestaan voor de communitysite beschikbaar.
 Als deze optie is uitgeschakeld, is het mogelijk een of meer naamruimten te selecteren die zijn toegestaan voor de site van de community.
 Standaard is geselecteerd.
@@ -167,15 +202,26 @@ Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend:
 ![chlimage_1-112](assets/chlimage_1-112.png)
 
 * [Instellingen voor Titel en URL](#title-and-url-settings)
-* **Vastzetten** toestaan Als deze optie is geselecteerd, kunnen de reacties op onderwerpen worden vastgezet aan het begin van de lijst met opmerkingen. Standaard is geselecteerd.
 
-* **Geprivilegieerde leden** toestaan Als deze optie is geselecteerd, staat het forum alleen geprivilegieerde leden toe om onderwerpen te posten door de selectie van een groep [](/help/communities/users.md#privileged-members-group)geprivilegieerde leden toe te staan. Als deze optie niet is geselecteerd, mogen alle leden van de gemeenschap posten. Standaard is uitgeschakeld.
+* **Vastzetten toestaan**
 
-* **Uploaden van bestanden toestaan** Als deze optie is geselecteerd, kunnen leden in het forum bestanden uploaden. Standaard is geselecteerd.
+   Indien geselecteerd, laat het forum onderwerpantwoorden toe om aan het begin van de lijst van commentaren worden vastgezet. Standaard is geselecteerd.
 
-* **Sta Verbonden Reacties** toe als niet geselecteerd, staat het forum commentaren op een onderwerp toe, maar de antwoorden op die commentaren worden niet toegestaan. Standaard is geselecteerd.
+* **Geprivilegieerde leden toestaan**
 
-* **Aanbevolen inhoud** toestaan [Als deze optie is geselecteerd, wordt de inhoud van de component geïdentificeerd als](/help/communities/featured.md)aanbevolen inhoud. Standaard is geselecteerd.
+   Indien geselecteerd, staat het forum slechts bevoorrechte leden toe om onderwerpen te posten door selectie van een [bevoorrechte ledengroep](/help/communities/users.md#privileged-members-group)toe te staan. Als deze optie niet is geselecteerd, mogen alle leden van de gemeenschap posten. Standaard is uitgeschakeld.
+
+* **Uploaden van bestanden toestaan**
+
+   Als deze optie is geselecteerd, kunnen leden bestanden uploaden. Standaard is geselecteerd.
+
+* **Reacties met verbindingen toestaan**
+
+   Als deze optie niet is geselecteerd, staat het forum commentaar op een onderwerp toe, maar zijn antwoorden op deze opmerkingen niet toegestaan. Standaard is geselecteerd.
+
+* **Aanbevolen inhoud toestaan**
+
+   Als deze optie is geselecteerd, wordt de inhoud van de component aangeduid als [aanbevolen inhoud](/help/communities/featured.md). Standaard is geselecteerd.
 
 ### Functie Groepen {#groups-function}
 
@@ -184,6 +230,7 @@ Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend:
 >De functie groups moet *not *zijn de *eerste noch de enige* functie in de structuur van een plaats of in een malplaatje van de communautaire plaats.
 >
 >Alle andere functies, zoals de [paginafunctie](#page-function), moeten worden opgenomen en als eerste worden vermeld.
+
 
 De groepsfunctie biedt leden van de gemeenschap de mogelijkheid om subgemeenschappen binnen de gemeenschapssite in de publicatieomgeving te maken.
 
@@ -198,11 +245,18 @@ Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend:
 ![chlimage_1-113](assets/chlimage_1-113.png)
 
 * [Instellingen voor Titel en URL](#title-and-url-settings)
-* **Selecteer de Malplaatjes** A van de Groep drop-down die selectie van één of meerdere toegelaten groepsmalplaatjes toestaat waarvan de toekomstige schepper van een nieuwe communautaire groep (in het publicatiemilieu) kan kiezen.
 
-* **Sta Geprivilegieerde Leden** toe als geselecteerd, staat het forum slechts bevoorrechte leden toe om onderwerpen te posten door selectie van een [bevoorrechte ledenveiligheidsgroep](/help/communities/users.md#privileged-members-group)toe te staan. Als deze optie niet is geselecteerd, mogen alle leden van de gemeenschap posten. Standaard is uitgeschakeld.
+* **Groepssjablonen selecteren**
 
-* **Publicatieontwerp**toestaan Als deze optie is geselecteerd, kunnen geautoriseerde leden van een community een groep maken in de publicatieomgeving. Als deze optie niet is geselecteerd, kunnen alleen nieuwe groepen (subgemeenschappen) worden gemaakt in de auteursomgeving van de console Groepen van sites van de Gemeenschappen.
+   Een drop-down die selectie van één of meerdere toegelaten groepsmalplaatjes toestaat waarvan de toekomstige schepper van een nieuwe communautaire groep (in het publicatiemilieu) kan kiezen.
+
+* **Geprivilegieerde leden toestaan**
+
+   Indien geselecteerd, staat het forum slechts bevoorrechte leden toe om onderwerpen te posten door selectie van een [bevoorrechte groep](/help/communities/users.md#privileged-members-group)van de ledenveiligheid toe te staan. Als deze optie niet is geselecteerd, mogen alle leden van de gemeenschap posten. Standaard is uitgeschakeld.
+
+* **Publiceren toestaan**
+
+   Als deze optie is geselecteerd, kunnen geautoriseerde leden van de gemeenschap een groep maken in de publicatieomgeving. Als deze optie niet is geselecteerd, kunnen alleen nieuwe groepen (subgemeenschappen) worden gemaakt in de auteursomgeving van de console Groepen van sites van de Gemeenschappen.
 Standaard is geselecteerd.
 
 ### Idealisatiefunctie {#ideation-function}
@@ -214,13 +268,22 @@ Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend met d
 ![chlimage_1-114](assets/chlimage_1-114.png)
 
 * [Instellingen voor Titel en URL](#title-and-url-settings)
-* **Sta Geprivilegieerde Leden** toe als geselecteerd, staat het forum slechts bevoorrechte leden toe om onderwerpen te posten door selectie van een [bevoorrechte ledenveiligheidsgroep](/help/communities/users.md#privileged-members-group)toe te staan. Als deze optie niet is geselecteerd, mogen alle leden van de gemeenschap posten. Standaard is uitgeschakeld.
 
-* **Uploaden van bestanden toestaan** Als deze optie is geselecteerd, kunnen leden bestanden uploaden. Standaard is geselecteerd.
+* **Geprivilegieerde leden toestaan**
 
-* **Sta Verbonden Reacties** toe als niet geselecteerd, staat het idee antwoorden (commentaren) op een onderwerp toe, maar de antwoorden op commentaren worden niet toegestaan. Standaard is geselecteerd.
+   Indien geselecteerd, staat het forum slechts bevoorrechte leden toe om onderwerpen te posten door selectie van een [bevoorrechte groep](/help/communities/users.md#privileged-members-group)van de ledenveiligheid toe te staan. Als deze optie niet is geselecteerd, mogen alle leden van de gemeenschap posten. Standaard is uitgeschakeld.
 
-* **Aanbevolen inhoud** toestaan Als deze optie is geselecteerd, wordt de inhoud ervan aangeduid als [aanbevolen inhoud](/help/communities/featured.md). Standaard is geselecteerd.
+* **Uploaden van bestanden toestaan**
+
+   Als deze optie is geselecteerd, kunnen leden bestanden uploaden. Standaard is geselecteerd.
+
+* **Reacties met verbindingen toestaan**
+
+   Als deze optie niet is geselecteerd, kunnen reacties (opmerkingen) op een onderwerp worden geplaatst, maar kunnen opmerkingen niet worden beantwoord. Standaard is geselecteerd.
+
+* **Aanbevolen inhoud toestaan**
+
+   Als deze optie is geselecteerd, wordt de inhoud ervan geïdentificeerd als [aanbevolen inhoud](/help/communities/featured.md). Standaard is geselecteerd.
 
 ### Leaderboard-functie {#leaderboard-function}
 
@@ -233,13 +296,20 @@ Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend met d
 ![chlimage_1-115](assets/chlimage_1-115.png)
 
 * [Instellingen voor Titel en URL](#title-and-url-settings)
-* **Badge**weergeven Als deze optie is geselecteerd, wordt een kolom voor badge-pictogrammen opgenomen in het leaderboard.
+
+* **Badge weergeven**
+
+   Als deze optie is geselecteerd, wordt een kolom voor badge-pictogrammen opgenomen in het leaderboard.
 Standaard is uitgeschakeld.
 
-* **Naam**badge weergeven Als deze optie is geselecteerd, wordt een kolom met de naam van de badge opgenomen in het leaderboard.
+* **Naam van badge weergeven**
+
+   Als deze optie is geselecteerd, wordt een kolom met de naam van de badge in het leaderboard opgenomen.
 Standaard is uitgeschakeld.
 
-* **Avatar**weergeven Als deze optie is geselecteerd, wordt de avatarafbeelding van het lid opgenomen in het leaderboard, naast de naamkoppeling naar het lidprofiel.
+* **Avatar weergeven**
+
+   Als deze optie is geselecteerd, wordt de avatarafbeelding van het lid opgenomen in het leaderboard, naast de naamkoppeling naar het profiel van het lid.
 Standaard is uitgeschakeld.
 
 ### Paginacode {#page-function}
@@ -257,15 +327,26 @@ Wanneer toegevoegd aan een malplaatje, staat de configuratie beperking aan bevoo
 ![chlimage_1-116](assets/chlimage_1-116.png)
 
 * [Instellingen voor Titel en URL](#title-and-url-settings)
-* **Vastzetten** toestaan Als deze optie is geselecteerd, kunnen de reacties op onderwerpen worden vastgezet aan het begin van de lijst met opmerkingen. Standaard is geselecteerd.
 
-* **Geprivilegieerde leden** toestaan Als deze optie is geselecteerd, staat het QnA-forum alleen geprivilegieerde leden toe om vragen te posten door de selectie van een [geprivilegieerde ledengroep](/help/communities/users.md#privileged-members-group)toe te staan. Als deze optie niet is geselecteerd, mogen alle leden van de gemeenschap posten. Standaard is uitgeschakeld.
+* **Vastzetten toestaan**
 
-* **Uploaden van bestanden toestaan** Als deze optie is geselecteerd, biedt het QnA-forum de mogelijkheid voor leden om bestanden te uploaden. Standaard is geselecteerd.
+   Indien geselecteerd, laat het forum onderwerpantwoorden toe om aan het begin van de lijst van commentaren worden vastgezet. Standaard is geselecteerd.
 
-* **Reacties** met verbindingen toestaan Als deze optie niet is geselecteerd, kan op het QnA-forum commentaar (antwoorden) worden geplaatst op een geposte vraag, maar antwoorden op antwoorden zijn niet toegestaan. Standaard is geselecteerd.
+* **Geprivilegieerde leden toestaan**
 
-* **Aanbevolen inhoud** toestaan Als deze optie is geselecteerd, wordt de inhoud ervan aangeduid als [aanbevolen inhoud](/help/communities/featured.md). Standaard is geselecteerd.
+   Indien geselecteerd, staat het forum QnA slechts bevoorrechte leden toe om vragen te posten door selectie van een [bevoorrechte ledengroep](/help/communities/users.md#privileged-members-group)toe te staan. Als deze optie niet is geselecteerd, mogen alle leden van de gemeenschap posten. Standaard is uitgeschakeld.
+
+* **Uploaden van bestanden toestaan**
+
+   Indien geselecteerd, omvat het forum QnA de capaciteit voor leden om dossiers te uploaden. Standaard is geselecteerd.
+
+* **Reacties met verbindingen toestaan**
+
+   Als deze optie niet is geselecteerd, kan op het QnA-forum commentaar (antwoorden) worden gegeven op een geposte vraag, maar antwoorden op antwoorden zijn niet toegestaan. Standaard is geselecteerd.
+
+* **Aanbevolen inhoud toestaan**
+
+   Als deze optie is geselecteerd, wordt de inhoud ervan geïdentificeerd als [aanbevolen inhoud](/help/communities/featured.md). Standaard is geselecteerd.
 
 ## Community-functie maken {#create-community-function}
 
@@ -279,11 +360,17 @@ De capaciteit om een communautaire functie tot stand te brengen wordt bereikt do
 
 In het deelvenster Community Function Name worden een naam, beschrijving en of de functie is ingeschakeld of uitgeschakeld geconfigureerd:
 
-* **Community Function Name**, de functienaam die wordt gebruikt voor weergave en opslag
+* **Community-functienaam**
 
-* **Community Function Description**: the function description for display
+   De functienaam die wordt gebruikt voor weergave en opslag.
 
-* **Uitgeschakeld/Ingeschakeld** een schakeloptie die bepaalt of de functie waarnaar wordt verwezen, is ingeschakeld
+* **Beschrijving van functie Gemeenschap**
+
+   De functiebeschrijving voor de weergave.
+
+* **Uitgeschakeld/Ingeschakeld**
+
+   Een schakeloptie die bepaalt of naar de functie kan worden verwezen.
 
 ### AEM-vervaging {#aem-blueprint}
 

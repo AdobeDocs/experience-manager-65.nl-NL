@@ -1,9 +1,9 @@
 ---
-title: Adobe Stock-elementen beheren in AEM Assets
-description: Adobe Stock Assets zoeken, ophalen, licentiëren en beheren vanuit AEM. Gebruik de in licentie gegeven activa als elk ander digitaal actief.
+title: Beheer [!DNL Adobe Stock] in [!DNL Adobe Experience Manager Assets].
+description: U kunt in Adobe Experience Manager zoeken, ophalen, licenties en [!DNL Adobe Stock] beheren. Gebruik de in licentie gegeven activa als elk ander digitaal actief.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 68fb4c08b8093ff50e74dc9e29011325cdf7e7d7
+source-git-commit: c9ac722cb8903d1d9946c7a6f797f102cb99bbf2
 
 ---
 

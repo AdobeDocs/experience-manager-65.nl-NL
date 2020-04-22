@@ -4,14 +4,14 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: Gebruikershandleiding voor AEM 6.5-middelen
 translation-type: tm+mt
-source-git-commit: b539ab0d6e777be08abb288b6f736f4e511755f1
+source-git-commit: c9ac722cb8903d1d9946c7a6f797f102cb99bbf2
 
 ---
 
 
 # Gebruikershandleiding voor AEM 6.5-middelen {#assets}
 
-+ [Gebruikershandleiding voor middelen](home.md)
++ [Gebruikershandleiding voor [!DNL Assets]](home.md)
 + [AEM 6.5 Opmerkingen bij de release van activa](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/assets.html)
 + [Informatie over DAM](assets.md)
 + [Aanbevolen procedures voor elementen](best-practices-for-assets.md)
@@ -19,7 +19,7 @@ source-git-commit: b539ab0d6e777be08abb288b6f736f4e511755f1
    + [Ervaring met de homepage van AEM Assets](assets-home-page.md)
    + [Middelen zoeken in AEM](search-assets.md)
    + [Meertalige activa](multilingual-assets.md)
-   + [Adobe Stock Assets gebruiken in AEM Assets](aem-assets-adobe-stock.md)
+   + [[!DNL Adobe Stock]-middelen gebruiken in AEM-middelen](aem-assets-adobe-stock.md)
    + [3D-elementen voorvertonen](previewing-3d-assets.md)
    + [Map-assets en verzamelingen controleren](bulk-approval.md)
    + [Activiteitsstroom in tijdlijn](activity-stream.md)
@@ -74,7 +74,7 @@ source-git-commit: b539ab0d6e777be08abb288b6f736f4e511755f1
    + [AEM-middelen aanpassen en uitbreiden](extending-assets.md)
    + [Elementen verwerken met behulp van mediafuncties en workflows](media-handlers.md)
    + [Zoekfunctionaliteit uitbreiden](searchx.md)
-   + [ImageMagick installeren en configureren om met AEM-middelen te werken](best-practices-for-imagemagick.md)
+   + [[!DNL ImageMagick] installeren en configureren om met AEM-middelen te werken](best-practices-for-imagemagick.md)
    + [Elementen integreren met activiteitsstroom](extending-activity-stream.md)
    + [Editor van element uitbreiden](asseteditorx.md)
    + [HTTP-API voor assets](mac-api-assets.md)

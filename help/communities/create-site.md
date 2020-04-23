@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 8ae324ea-8b84-47a3-aabf-1fee2a3bd46d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e8d8bf89971d3d9d5ec150308dda247aa53c77bb
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
@@ -98,7 +98,7 @@ Schakel alle selectievakjes voor [gebruikersbeheer in](/help/communities/sites-c
 
 De tags die kunnen worden toegepast op community-inhoud, worden beheerd door AEM-naamruimten te selecteren die eerder zijn gedefinieerd via de [Tagingconsole](/help/sites-administering/tags.md#tagging-console) (zoals de naamruimte [van de](/help/communities/setup.md#create-tutorial-tags)zelfstudie).
 
-Het zoeken naar naamruimten is eenvoudig met &#39;type-ahead&#39;-zoekopdracht. Bijvoorbeeld:
+Het zoeken naar naamruimten is eenvoudig met &#39;type-ahead&#39;-zoekopdracht. Bijvoorbeeld,
 
 * Type `tut`
 * Selecteer `Tutorial`
@@ -111,7 +111,7 @@ Het zoeken naar naamruimten is eenvoudig met &#39;type-ahead&#39;-zoekopdracht. 
 
 Als u een lid van de gemeenschap (of groep leden) de site wilt laten ervaren als gemeenschapsbeheerder, gebruikt u de typecontrole en selecteert u de naam van het lid of de groep in de keuzelijst.
 
-Bijvoorbeeld:
+Bijvoorbeeld,
 
 * Type `q`
 * Quinn Harper [selecteren](/help/communities/enablement-setup.md#publishcreateenablementmembers)
@@ -200,7 +200,7 @@ UGC is niet opgenomen in het sitepakket.
 
 * **Site verwijderen**
 
-   Selecteer het verwijderpictogram om de communitysite te verwijderen uit **[UIControl Communities > Sites console]**. Met deze actie verwijdert u alle items die aan de site zijn gekoppeld, zoals UGC, gebruikersgroepen, elementen en databaserecords.
+   Selecteer het verwijderpictogram om de communitysite te verwijderen uit **[!UICONTROL Communities > Sites-console]**. Met deze actie verwijdert u alle items die aan de site zijn gekoppeld, zoals UGC, gebruikersgroepen, elementen en databaserecords.
 
 ![sitehandelingen](assets/siteactions.png)
 
@@ -210,17 +210,17 @@ UGC is niet opgenomen in het sitepakket.
 >
 >In de auteurinstantie, van het belangrijkste menu:
 >
->1. Navigeer naar het menu **[UIControl Tools > Operations > Replication]** .
->1. Selecteer **[Medewerkers UIControl op auteur]**.
->1. Selecteer **[UIControl Default Agent (publiceren)]**.
->1. Naast de Montages **[]** UIControl, uitgezocht **[UIControl geeft uit]**.
->1. In pop-up dialoog voor de Montages van de Agent, uitgezochte **[Vervoer]** UIControl tabel.
+>1. Navigeer naar **[!UICONTROL Gereedschappen > Bewerkingen > menu Replicatie]** .
+>1. Selecteer **[!UICONTROL Agenten op auteur]**.
+>1. Selecteer **[!UICONTROL Standaardagent (publiceren)]**.
+>1. Selecteer naast **[!UICONTROL Instellingen]** de optie **[!UICONTROL Bewerken]**.
+>1. In pop-up dialoog voor de Montages van de Agent, uitgezochte **[!UICONTROL Vervoer]** tabel.
 >1. Wijzig in URI het poortnummer 4503 in het gewenste poortnummer >
    >    * Als u bijvoorbeeld poort 6103 wilt gebruiken:
       >      https://localhost:6103/bin/receive?sling:authRequestLogin=1
 >
-1. Selecteer **[UIControl OK]**.
-1. (Optioneel) Selecteer **[UIControl Clear]** of **[UIControl Force Opnieuw proberen]** om de replicatiewachtrij opnieuw in te stellen.
+1. Selecteer **[!UICONTROL OK]**.
+1. (Optioneel) Selecteer **[!UICONTROL Wissen]** of Opnieuw **[!UICONTROL forceren]** om de replicatiewachtrij opnieuw in te stellen.
 
 
 

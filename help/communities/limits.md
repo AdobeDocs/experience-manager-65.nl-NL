@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: d855aac2-f34d-402f-9dc3-c7ad494b45f2
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: e4456e80059479ca874681e20f8546f29ac92597
 
 ---
 
@@ -29,22 +29,22 @@ Gebruikend de console van Leden, kunnen de bijdragegrenzen proactief voor een li
 
 ## Configuratie van door gebruikers gegenereerde inhoudcontributielimieten voor AEM-gemeenschappen {#aem-communities-user-generated-content-contribution-limits-configuration}
 
-Deze OSGi-configuratie
+Deze configuratie OSGi:
 
-* Definieert de kenmerken van de bijdragelimieten (aantal posten binnen een tijdsperiode)
-* Identificeert wie het lid zal kunnen bericht wanneer de grens is bereikt
-* Identificeert domeinen die nooit hoeven te worden beperkt
+* Hiermee worden de kenmerken van de bijdragelimieten gedefinieerd (aantal posten binnen een tijdsperiode).
+* Identificeert wie het lid zal kunnen bericht wanneer de grens is bereikt.
+* Identificeert domeinen die nooit hoeven te worden beperkt.
 
 Om deze configuratie te bereiken OSGi:
 
-* Op de primaire uitgever
-* Aanmelden met beheerdersrechten
-* Toegang tot de [webconsole](../../help/sites-deploying/configuring-osgi.md)
+* Op de primaire uitgever:
+* Meld u aan met beheerdersrechten.
+* Open de [webconsole](../../help/sites-deploying/configuring-osgi.md).
 
    * Bijvoorbeeld: [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
-* Zoeken `AEM Communities User Generated Content Contribution Limits Configuration`
-* Het bewerkingspictogram selecteren
+* Zoeken `AEM Communities User Generated Content Contribution Limits Configuration`.
+* Selecteer het bewerkingspictogram.
 
 ![chlimage_1-127](assets/chlimage_1-127.png)
 
@@ -70,7 +70,7 @@ Om deze configuratie te bereiken OSGi:
 
    Een witte lijst met een of meer e-maildomeinen. Selecteer + pictogram om extra ingangen te maken.
 
-   De gebruikers met e-mailadressen in de witte vermelde domeinen worden niet beïnvloed wanneer de de bijdragegrenzen van UGC automatisch worden toegepast. Als domein bijvoorbeeld aan de lijst met domeinen `mycompany.com` wordt toegevoegd, `me@mycompany.com` wordt een lid met een e-mailadres nooit uit het posten beperkt.
+   De gebruikers met e-mailadressen in de witte vermelde domeinen worden niet beïnvloed wanneer de de bijdragegrenzen van UGC automatisch worden toegepast. Als domein bijvoorbeeld aan de lijst met domeinen `mycompany.com` wordt toegevoegd, `me@mycompany.com` wordt een lid met een e-mailadres nooit verplicht om te posten.
 
    Standaard is dit een lege witte lijst.
 

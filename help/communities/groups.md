@@ -12,12 +12,12 @@ discoiquuid: d381ea40-fe49-4d32-bfad-1379c7a02aba
 docset: aem65
 pagetitle: Community Groups Console
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
 
-# Console van groepen Gemeenschap{#community-groups-console}
+# Console van groepen Gemeenschap {#community-groups-console}
 
 De console van Groepen verleent toegang tot het creëren van communautaire groepen wanneer de [malplaatjestructuur](/help/communities/sites-console.md#step1) van een communautaire plaats de [groepsfunctie](/help/communities/functions.md#groups-function)omvat.
 
@@ -29,9 +29,9 @@ Van de drie meegeleverde groepssjablonen bevat alleen de `Reference Group` sjabl
 
 De verschillende facetten van de communautaire groepen zijn:
 
-* **Maken**: u kunt een nieuwe groep maken bij de auteur en optioneel bij publicatie
-* **Besturingselement**: groep kan open of geheim zijn
-* **Nesten**: een groep kan nul of meer groepen bevatten
+* **Maken**: U kunt een nieuwe groep maken op auteur en optioneel op een publicatie-instantie.
+* **Besturingselement**: groep kan open of geheim zijn.
+* **Nesten**: groep kan nul of meer groepen bevatten.
 
 <!-- This is a 404 on helpx. Please update or remove.
 >[!NOTE]
@@ -44,25 +44,26 @@ De verschillende facetten van de communautaire groepen zijn:
 >
 >De groepen van het lid zijn gebruikersgroepen die in publicatiemilieu worden geregistreerd en van het auteursmilieu worden betreden gebruikend de [tunneldienst](/help/communities/deploy-communities.md#tunnel-service-on-author)die.
 
+
 ## Groep maken {#group-creation}
 
 De console Groepen openen:
 
-* Meld u aan bij de auteur met beheerdersrechten
-* Vanuit globale navigatie: **Gemeenschappen, sites**
-* Bestaande community-sitemap selecteren om deze te openen
-* Selecteer een instantie van een communitysite in de map
+* Meld u aan bij de auteur met beheerdersrechten.
+* Vanuit globale navigatie: **[!UICONTROL Communities]** > **[!UICONTROL Sites]**.
+* Selecteer een bestaande map op de communitysite om deze te openen.
+* Selecteer een exemplaar van een communautaire plaats binnen de omslag.
 
-   * de structuur van de site van de gemeenschap moet een groepfunctie omvatten
-   * Deze schermafbeeldingen zijn afkomstig uit de zelfstudie Aan de slag nadat u groepen hebt [gemaakt voor publicatie](/help/communities/published-site.md)
+   * De structuur van de site van de community moet een groepfunctie bevatten.
+   * Deze schermafbeeldingen zijn afkomstig uit de zelfstudie Aan de slag nadat u groepen hebt [gemaakt tijdens het publiceren](/help/communities/published-site.md).
 
-Selecteer de map **** Groepen om deze te openen.
+* Selecteer de map **** Groepen om deze te openen.
 
-Als deze groep wordt geopend, worden alle bestaande groepen weergegeven, ongeacht of deze groepen bij de auteur of bij de publicatie zijn gemaakt.
+   Als deze groep wordt geopend, worden alle bestaande groepen weergegeven, ongeacht of deze groepen bij de auteur of bij de publicatie zijn gemaakt.
 
-Van deze console van Groepen, is het mogelijk om nieuwe groepen te ontwerpen.
+   Van deze console van Groepen, is het mogelijk om nieuwe groepen te ontwerpen.
 
-![chlimage_1-200](assets/chlimage_1-200.png)
+   ![chlimage_1-200](assets/chlimage_1-200.png)
 
 * Selecteer de knop Groep **** maken.
 
@@ -70,27 +71,40 @@ Van deze console van Groepen, is het mogelijk om nieuwe groepen te ontwerpen.
 
 ![Meertalige groepen van gemeenschappen](assets/multi-lingual-group.png)
 
-* **Titel**van communautaire groep: een weergavetoewijzing voor de groep.
+* **Titel van communautaire groep**
+
+   Een weergavetitel voor de groep.
 De titel wordt op de gepubliceerde site voor de groep weergegeven.
 
-* **Omschrijving** van communautaire groep: een beschrijving van de groep.
-* **Hoofdmap**van communautaire groep: het hoofdpad naar de groep.
+* **Omschrijving van de communautaire groep**
+
+   Een beschrijving van de groep.
+
+* **Hoofdmap van communautaire groep**
+
+   Het hoofdpad naar de groep.
 De standaardhoofdmap is de bovenliggende site, maar de hoofdmap kan naar elke locatie binnen de website worden verplaatst. Het wordt afgeraden dit te wijzigen.
 
-* ****Aanvullende beschikbare talen van** de Groep van de Gemeenschap: **gebruik de drop-down om de beschikbare communautaire groepstaal(s) te selecteren. In het menu worden alle talen weergegeven waarin de bovenliggende communitysite is gemaakt. Gebruikers kunnen in deze ene stap uit deze talen kiezen om groepen te maken in meerdere landinstellingen. De zelfde groep wordt gecreeerd in veelvoudige gespecificeerde talen in de console van Groepen van de respectieve communautaire plaatsen.
+* **Menu Extra beschikbare talen voor communautaire groepen**
 
-* **Naam** communautaire groep: de naam van de hoofdpagina van de groep die wordt weergegeven in de URL
+   Gebruik de vervolgkeuzelijst om de beschikbare taal of talen van groepen in de gebruikersgemeenschap te selecteren. In het menu worden alle talen weergegeven waarin de bovenliggende communitysite is gemaakt. Gebruikers kunnen in deze ene stap uit deze talen kiezen om groepen te maken in meerdere landinstellingen. De zelfde groep wordt gecreeerd in veelvoudige gespecificeerde talen in de console van Groepen van de respectieve communautaire plaatsen.
 
-   * Controleer de naam nogmaals omdat deze na het maken van de groep niet gemakkelijk kan worden gewijzigd
-   * de basis-URL wordt onder de `Community Group Name`
-   * voor een geldige URL voegt u &quot;.html&quot; toe
-      *bijvoorbeeld*: `https://localhost:4502/content/sites/mysight/en/mygroup.html`
+* **Naam van communautaire groep**
 
-* **Menu Sjabloon** communautaire groep: gebruik drop-down om een beschikbare malplaatje [van de](/help/communities/tools.md)communautaire groep te kiezen.
+   De naam van de basispagina van de groep die in URL verschijnt.
+
+   * Controleer de naam nogmaals omdat deze niet gemakkelijk kan worden gewijzigd nadat de groep is gemaakt.
+   * De basis-URL wordt onder de `Community Group Name`URL weergegeven.
+   * Voor een geldige URL voegt u &quot;.html&quot; toe
+      *bijvoorbeeld*, `https://localhost:4502/content/sites/mysight/en/mygroup.html`.
+
+* **Menu Sjabloon** communautaire groep
+
+   Gebruik drop-down om een beschikbare malplaatje [van de](/help/communities/tools.md)communautaire groep te kiezen.
 
 ### Stap 2: Ontwerp {#step-design}
 
-#### THEMA VAN DE COMMUNAUTAIRE GROEP {#community-group-theme}
+### THEMA VAN DE COMMUNAUTAIRE GROEP {#community-group-theme}
 
 Het framework gebruikt [Twitter Bootstrap](https://twitterbootstrap.org/) om de site een responsief, flexibel ontwerp te geven. Een van de vele vooraf geladen Bootstrap-thema&#39;s kan worden geselecteerd om de geselecteerde communitygroepsjabloon te stijlvol te maken, maar een Bootstrap-thema kan ook worden geüpload.
 
@@ -100,7 +114,7 @@ Het is mogelijk een thema te selecteren dat afwijkt van het thema van de bovenli
 
 Nadat de communitysite is gepubliceerd, kunt u de eigenschappen [](#modifyinggroupproperties) bewerken en een ander thema selecteren.
 
-#### COMMUNAUTAIRE BRANDBOEK {#community-group-branding}
+### COMMUNAUTAIRE BRANDBOEK {#community-group-branding}
 
 ![chlimage_1-201](assets/chlimage_1-201.png)
 
@@ -114,12 +128,12 @@ Houd rekening met het volgende wanneer u een afbeelding maakt of selecteert:
 * De afbeelding is vastgezet aan de linkerrand van het browservenster
 * De afbeelding wordt niet vergroot of verkleind, zodat de volgende afbeeldingsbreedte wordt gebruikt:
 
-   * kleiner dan de breedte van de browser, wordt de afbeelding horizontaal herhaald
-   * groter dan de breedte van de browser, lijkt de afbeelding te zijn bijgesneden
+   * Bij een lagere breedte dan de breedte van de browser wordt de afbeelding horizontaal herhaald.
+   * Als de breedte van de browser groter is, wordt de afbeelding bijgesneden.
 
 ### Stap 3: Instellingen {#step-settings}
 
-#### MODERING {#moderation}
+**MODERING**
 
 ![selecteer de rollen van het groepslid van de gemeenschap](assets/group-admin.png)
 
@@ -137,19 +151,25 @@ Het is echter mogelijk om onafhankelijke groepsbeheerders toe te wijzen. De behe
 
 Een gebruiker U1, daarom, kan een beheerder in een groep G1 en een regelmatige gebruiker in zijn genestelde groep G2 zijn.
 
-#### LIDMAATSCHAP {#membership}
+**LIDMAATSCHAP**
 
 Met de instelling voor lidmaatschap kunt u een van de drie manieren selecteren om een community-groep te beveiligen.
 
 ![chlimage_1-202](assets/chlimage_1-202.png)
 
-* **Facultatief Lidmaatschap** Indien geselecteerd, is de communautaire groep een openbare groep. Siteleden kunnen deelnemen aan de groep en posten zonder expliciet deel te nemen aan de groep. Standaard is geselecteerd.
+* **Optioneel lidmaatschap**
 
-* **Vereist lidmaatschap** Als geselecteerd, is de communautaire groep een open groep. Leden van een Community-site kunnen de inhoud van de groep bekijken, maar moeten zich bij de groep voegen om inhoud te posten. Leden kunnen deelnemen door de `Join` knop te selecteren in de publicatieomgeving. Standaard is niet geselecteerd.
+   Indien geselecteerd, is de communautaire groep een openbare groep. Siteleden kunnen deelnemen aan de groep en posten zonder expliciet deel te nemen aan de groep. Standaard is geselecteerd.
 
-* **Beperkt lidmaatschap** Als geselecteerd, is de communautaire groep een geheime groep. De leden van de Gemeenschap moeten uitdrukkelijk worden uitgenodigd. Uitgenodigde leden worden ingevoerd in het zoekvak. U kunt leden later toevoegen met de [leden en groepen die de auteursomgeving samenvoegen](/help/communities/members.md) . Standaard is niet geselecteerd.
+* **Vereist lidmaatschap**
 
-#### THUMBNAIL {#thumbnail}
+   Indien geselecteerd, is de communautaire groep een open groep. Leden van een Community-site kunnen de inhoud van de groep bekijken, maar moeten zich bij de groep voegen om inhoud te posten. Leden kunnen deelnemen door de `Join` knop te selecteren in de publicatieomgeving. Standaard is niet geselecteerd.
+
+* **Beperkt lidmaatschap**
+
+   Indien geselecteerd, is de communautaire groep een geheime groep. De leden van de Gemeenschap moeten uitdrukkelijk worden uitgenodigd. Uitgenodigde leden worden ingevoerd in het zoekvak. U kunt leden later toevoegen met de [leden en groepen die de auteursomgeving samenvoegen](/help/communities/members.md) . Standaard is niet geselecteerd.
+
+**THUMBNAIL**
 
 ![chlimage_1-203](assets/chlimage_1-203.png)
 
@@ -177,9 +197,10 @@ Wanneer het proces is voltooid, wordt de kaart voor de nieuwe subcommunity-site 
 >
 >De groep wordt gecreeerd in alle talen, zoals die in [Stap 1 worden gespecificeerd: Het Malplaatje](/help/communities/groups.md#step-community-group-template) van de Groep van de Gemeenschap in de Extra Beschikbare Talen van de Groep van de Gemeenschap, in de console van Communautaire Groepen van de respectieve communautaire plaatsen.
 
+
 ## Inhoud groep auteurs {#author-group-content}
 
-![chlimage_1-205](assets/chlimage_1-206.png)
+![chlimage_1-206](assets/chlimage_1-206.png)
 
 De pagina-inhoud van een groep kan met dezelfde gereedschappen worden gemaakt als elke andere AEM-pagina. Als u de groep wilt openen voor ontwerpen, selecteert u het pictogram Site openen dat wordt weergegeven wanneer u de muisaanwijzer op de groepskaart plaatst.
 
@@ -208,9 +229,9 @@ In plaats daarvan kan de [STRUCTUUR](#modify-structure) van de subgemeenschap wo
 
 ### Structuur wijzigen {#modify-structure}
 
-Met het deelvenster STRUCTUUR kunt u de structuur wijzigen die u aanvankelijk hebt gemaakt op basis van de sjabloon voor een groep met gemeenschappen die u hebt geselecteerd bij het maken van de subcommunity-site vanuit de auteur- of publicatieomgeving. Vanuit het deelvenster kunt u
+Met het deelvenster STRUCTUUR kunt u de structuur wijzigen die u aanvankelijk hebt gemaakt op basis van de sjabloon voor een groep met gemeenschappen die u hebt geselecteerd bij het maken van de subcommunity-site vanuit de auteur- of publicatieomgeving. Vanuit het deelvenster kunt u het volgende doen:
 
-* Aanvullende [gemeenschapsfuncties](/help/communities/functions.md) slepen en neerzetten in de sitestructuur
+* Sleep extra [gemeenschapsfuncties](/help/communities/functions.md) naar de sitestructuur.
 * Bij een instantie van een communautaire functie in de sitestructuur:
 
    * **`Gear icon`**
@@ -224,14 +245,19 @@ Wijzig de volgorde van de functies die wordt weergegeven op de navigatiebalk op 
 
 >[!CAUTION]
 >
->* Hoewel de titel van de weergave zonder bijwerkingen kan worden gewijzigd, wordt het niet aangeraden de URL-naam te bewerken van een communautaire functie die bij een communautaire site hoort.
-Als u bijvoorbeeld de naam van de URL wijzigt, wordt de bestaande UGC niet verplaatst, waardoor de UGC verloren gaat.
+>Hoewel de titel van de weergave kan worden gewijzigd zonder neveneffecten, wordt het niet aanbevolen de URL-naam te bewerken van een community-functie die bij een community-site hoort.
+>
+>Als u bijvoorbeeld de naam van de URL wijzigt, wordt de bestaande UGC niet verplaatst, waardoor de UGC verloren gaat.
+
 
 >[!CAUTION]
-De groepfunctie moet *niet *de *eerste of enige* functie in de sitestructuur zijn.
-Alle andere functies, zoals de [paginafunctie](/help/communities/functions.md#page-function), moeten worden opgenomen en als eerste worden vermeld.
+>
+>De groepfunctie moet *niet *de *eerste of enige* functie in de sitestructuur zijn.
+>
+>Alle andere functies, zoals de [paginafunctie](/help/communities/functions.md#page-function), moeten worden opgenomen en als eerste worden vermeld.
 
-#### Voorbeeld: Een kalenderfunctie toevoegen aan een subcommunautaire (Groep) structuur {#example-adding-a-calendar-function-to-a-sub-community-group-structure}
+
+**Voorbeeld: Een kalenderfunctie toevoegen aan een subcommunautaire (Groep) structuur**
 
 ![chlimage_1-209](assets/chlimage_1-209.png)
 
@@ -242,7 +268,7 @@ In het deelvenster ONTWERP kunt u het thema wijzigen:
 * [Communautair groepsthema](#community-group-theme)
 * [Community Group Branding](#community-group-branding)
 
-   * schuiven naar de onderkant van het deelvenster om de merkafbeelding te wijzigen
+   * Schuif naar de onderkant van het deelvenster om de afbeelding van het merk te wijzigen.
 
 ### Instellingen wijzigen {#modify-settings}
 
@@ -267,8 +293,11 @@ Zodra de groep met succes wordt gepubliceerd, zal een bericht verschijnen:
 ![chlimage_1-211](assets/chlimage_1-211.png)
 
 >[!CAUTION]
-De bovenliggende communitysite en bovenliggende groepen hadden al gepubliceerd moeten zijn.
-De site van de community en geneste groepen moeten van boven naar beneden worden gepubliceerd.
+>
+>De bovenliggende communitysite en bovenliggende groepen hadden al gepubliceerd moeten zijn.
+>
+>De site van de community en geneste groepen moeten van boven naar beneden worden gepubliceerd.
+
 
 ## De groep verwijderen {#delete-the-group}
 

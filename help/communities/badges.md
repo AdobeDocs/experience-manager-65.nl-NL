@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 135b3077-5343-4888-858d-de5e9b1d4b04
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 272eedc1585dbdea315b49d010e4b1d78cedc360
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
@@ -34,7 +34,7 @@ Badges die een lid van de gemeenschap verdient of toegewezen krijgt, worden same
 
 In de auteursomgeving, om de console van Badges te bereiken
 
-* Navigeer vanuit de globale navigatie naar **[UIControl Tools > Communities > Badges]**
+* Vanuit de globale navigatie navigeert u naar **[!UICONTROL Gereedschappen > Gemeenschappen > Badges]**
 
 Op deze console worden de badges weergegeven die momenteel beschikbaar zijn en waaruit nieuwe badges kunnen worden toegevoegd.
 

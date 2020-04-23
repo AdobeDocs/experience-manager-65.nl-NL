@@ -11,7 +11,7 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
@@ -84,7 +84,7 @@ source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 
 
-## Laatste releases {#latest-releases}
+## Latest Releases {#latest-releases}
 
 AEM 6.5 Community GA wordt geleverd met het communautaire pakket. Raadpleeg de opmerkingen bij de release van [AEM 6.5 voor informatie over updates van AEM 6.5](/help/release-notes/release-notes.md#experiencemanagercommunities)Communities [](/help/release-notes/release-notes.md#communities-release-notes.html).
 
@@ -245,7 +245,7 @@ Er zijn twee replicatieagenten in het auteursmilieu die de vervoerconfiguratie n
 
 * De console van de Replicatie van de toegang op auteur
 
-   * Navigeer vanuit de globale navigatie naar **[UIControl Tools > Implementatie > Replicatie > Agents op auteur]**
+   * Vanuit de globale navigatie navigeert u naar **[!UICONTROL Extra > Implementatie > Replicatie > Medewerkers op auteur]**
 
 * Volg de zelfde procedure voor beide agenten:
 

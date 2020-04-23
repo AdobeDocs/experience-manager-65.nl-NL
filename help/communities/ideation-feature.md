@@ -11,26 +11,26 @@ content-type: reference
 discoiquuid: a3f5a21d-2df6-4663-a1ea-3a067c46f860
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
 
-# Ideatiefunctie{#ideation-feature}
+# Ideatiefunctie {#ideation-feature}
 
 ## Inleiding {#introduction}
 
 De functie Ideatie biedt een gebied voor ingetekende sitebezoekers (leden van de community) in de publicatieomgeving voor:
 
-* ideeën ontwikkelen om met de gemeenschap te delen
-* ideeën bekijken en becommentariëren
-* een idee volgen
-* stemmen over een idee
+* Creëer ideeën om met de gemeenschap te delen.
+* Bekijk en becommentariëer ideeën.
+* Volg een idee.
+* Stem op een idee.
 
-In deze sectie van de documentatie wordt beschreven
+In dit gedeelte van de documentatie wordt het volgende beschreven:
 
-* toevoegen van de ideatiefunctie aan een AEM-site
-* configuratie-instellingen voor de component Idee
+* De ideatiefunctie toevoegen aan een AEM-site.
+* De montages van de configuratie voor de component van de Ideatie.
 
 ### Een idee toevoegen aan een pagina {#adding-a-ideation-to-a-page}
 
@@ -42,7 +42,7 @@ en sleep het naar de gewenste plaats op een pagina.
 
 Ga voor de benodigde informatie naar [Community Components Basics](/help/communities/basics.md).
 
-Wanneer de [vereiste client-side bibliotheken](/help/communities/ideation.md#essentials-for-client-side) worden opgenomen, ziet u zo de `Ideation`component eruit:
+Wanneer de [vereiste client-side bibliotheken](/help/communities/ideation.md#essentials-for-client-side) worden opgenomen, wordt de `Ideation` component als volgt weergegeven:
 
 ![chlimage_1-71](assets/chlimage_1-71.png)
 
@@ -54,7 +54,7 @@ Selecteer de geplaatste `Ideation` component die u wilt openen en selecteer het 
 
 #### Het tabblad Instellingen {#settings-tab}
 
-Geef onder het tabblad **Instellingen **instellingen instellingen instellingen op voor ideeën en opmerkingen:
+Geef op het tabblad **[!UICONTROL Instellingen]** instellingen op voor ideeën en opmerkingen:
 
 * **Miniatuur van bijlage toestaan**
 * **Maximale grootte miniatuur bijvoegen**
@@ -88,7 +88,7 @@ Geef onder het tabblad **Instellingen **instellingen instellingen instellingen o
 
 * **Tags toestaan**
 
-   Als deze optie is ingeschakeld, kunnen leden labellabels aan hun post toevoegen (zie tabblad **Tagveld** ). De optie Standaard is uitgeschakeld.
+   Als deze optie is ingeschakeld, kunnen leden labellabels aan hun post toevoegen (zie tabblad **[!UICONTROL Tagveld]** ). De optie Standaard is uitgeschakeld.
 
 * **Uploaden van bestanden toestaan**
 
@@ -100,11 +100,11 @@ Geef onder het tabblad **Instellingen **instellingen instellingen instellingen o
 
 * **Toegestane bestandstypen**
 
-   Alleen relevant als `Allow File Uploads` is gecontroleerd. Een door komma&#39;s gescheiden lijst met bestandsextensies met het &quot;punt&quot;-scheidingsteken. Bijvoorbeeld: .jpg, .jpeg, .png, .doc, .docx, .pdf. Als er bestandstypen zijn opgegeven, mogen de niet opgegeven bestandstypen niet worden geüpload. De standaardinstelling is niet zodanig opgegeven dat** **alle bestandstypen zijn toegestaan.
+   Alleen relevant als `Allow File Uploads` is gecontroleerd. Een door komma&#39;s gescheiden lijst met bestandsextensies met het &quot;punt&quot;-scheidingsteken. Bijvoorbeeld: .jpg, .jpeg, .png, .doc, .docx, .pdf. Als er bestandstypen zijn opgegeven, mogen de niet opgegeven bestandstypen niet worden geüpload. De standaardinstelling is niet opgegeven, zodat alle bestandstypen zijn toegestaan.
 
 * **Maximale bestandsgrootte afbeelding bijvoegen**
 
-   Alleen relevant als Uploaden van bestand toestaan is ingeschakeld. Het maximum aantal bytes dat een geüploade afbeeldingsbestand kan hebben. De standaardwaarde is 2097152****(2 MB).
+   Alleen relevant als Uploaden van bestand toestaan is ingeschakeld. Het maximum aantal bytes dat een geüploade afbeeldingsbestand kan hebben. De standaardwaarde is 2097152 (2 MB).
 
 * **Reacties toestaan**
 
@@ -132,7 +132,7 @@ Geef onder het tabblad **Instellingen **instellingen instellingen instellingen o
 
 * **Badges weergeven**
 
-   Als deze optie is ingeschakeld, worden verdiende en toegewezen [badges](/help/communities/implementing-scoring.md) met het idee van een lid weergegeven. De optie Standaard is uitgeschakeld.
+   Indien ingeschakeld, verdiende en toegewezen [badges](/help/communities/implementing-scoring.md) weergeven bij het idee van een lid. De optie Standaard is uitgeschakeld.
 
 * **Geen reacties ophalen op aanbiedingspagina**
 
@@ -146,7 +146,7 @@ Geef onder het tabblad **Instellingen **instellingen instellingen instellingen o
 
 #### Tabblad Gebruikersmodernisering {#user-moderation-tab}
 
-Geef op onder het tabblad **Moderatie gebruiker ** op hoe de geposte ideeën en opmerkingen (door de gebruiker gegenereerde inhoud) worden beheerd. Voor meer informatie, zie het [Modereren van Gebruiker Gegenereerde Inhoud](/help/communities/moderate-ugc.md).
+Geef op onder het tabblad **[!UICONTROL Gebruikersmodernisering]** op hoe de geposte ideeën en opmerkingen (door de gebruiker gegenereerde inhoud) worden beheerd. Voor meer informatie, zie het [Modereren van Gebruiker Gegenereerde Inhoud](/help/communities/moderate-ugc.md).
 
 * **Posten weigeren**
 
@@ -178,19 +178,19 @@ Geef op onder het tabblad **Moderatie gebruiker ** op hoe de geposte ideeën en 
 
 #### Tabblad Tagveld {#tag-field-tab}
 
-Onder het tabblad **Tagveld** zijn de tags die kunnen worden toegepast, indien toegestaan onder het tabblad **Instellingen **beperkt afhankelijk van de gekozen naamruimten.
+Onder het tabblad **[!UICONTROL Tagveld]** zijn de tags die kunnen worden toegepast, indien toegestaan op het tabblad **[!UICONTROL Instellingen]** , beperkt op basis van de gekozen naamruimten.
 
 * **Toegestane naamruimten**
 
-   Relevant als `Allow Tagging` is ingeschakeld onder het tabblad **Instellingen** . De tags die kunnen worden toegepast, zijn beperkt tot de tags binnen de geselecteerde naamruimtecategorieën. De lijst met naamruimten bevat &#39;Standaardtags&#39; (de standaardnaamruimte) en &#39;Alle tags opnemen&#39;. De standaardwaarde is niet ingeschakeld, hetgeen betekent dat alle naamruimten zijn toegestaan.
+   Relevant als `Allow Tagging` is ingeschakeld onder het tabblad **[!UICONTROL Instellingen]** . De tags die kunnen worden toegepast, zijn beperkt tot de tags binnen de geselecteerde naamruimtecategorieën. De lijst met naamruimten bevat &#39;Standaardtags&#39; (de standaardnaamruimte) en &#39;Alle tags opnemen&#39;. De standaardwaarde is niet ingeschakeld, hetgeen betekent dat alle naamruimten zijn toegestaan.
 
 * **Suggestiegrenswaarde**
 
-   Voer het aantal tags in dat moet worden weergegeven als suggestie aan het lid dat naar het forum post. De waarde **-**1 betekent geen limiet. De standaardwaarde is 0.
+   Voer het aantal tags in dat moet worden weergegeven als suggestie aan het lid dat naar het forum post. Een waarde van **-1** betekent geen limiet. De standaardwaarde is 0.
 
 #### Tabblad Instellingen sorteren {#sort-settings-tab}
 
-Geef onder het tabblad **Instellingen sorteren **op hoe de geposte opmerkingen moeten worden gesorteerd wanneer ze worden weergegeven.
+Geef op onder het tabblad **[!UICONTROL Sorteerinstellingen]** op hoe de geposte opmerkingen worden gesorteerd wanneer ze worden weergegeven.
 
 * **Sorteren op**
 

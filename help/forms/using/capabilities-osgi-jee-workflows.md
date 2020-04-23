@@ -9,7 +9,7 @@ topic-tags: publish
 discoiquuid: 89bcc76d-122f-4a3f-b857-16e5376e1624
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0a2d53aa3eab4eb4ec58fa9b28bef675715b1d09
+source-git-commit: 182043b43e9fdb2e7e6de982bceb87b43f36a3ba
 
 ---
 
@@ -79,12 +79,17 @@ U kunt AEM Inbox gebruiken om Forms-centric AEM Workflows op OSGi uit te voeren 
   </tr>
   <tr>
    <td>Queuws (gedeelde persoonlijke wachtrij, claimtaken vanuit wachtrij)</td>
-   <td>Niet ondersteund</td>
+   <td>Ondersteund</td>
    <td>Ondersteund</td>
   </tr>
   <tr>
    <td>Melding buiten kantoor</td>
-   <td>Niet ondersteund</td>
+   <td>Ondersteund</td>
+   <td>Ondersteund</td>
+  </tr>
+    <tr>
+   <td>UI-elementen aanpassen</td>
+   <td>Ondersteund</td>
    <td>Ondersteund</td>
   </tr>
   <tr>
@@ -303,6 +308,11 @@ Form-centric AEM Workflows op OSGi- en AEM Forms JEE Workflows (AEM Forms on JEE
   </tr>
   <tr>
    <td>Gateways, GEEN WACHT </td>
+   <td>Ondersteund</td>
+   <td>Ondersteund</td>
+  </tr>
+   <tr>
+   <td>Variabelen voor het opslaan van gegevens </td>
    <td>Ondersteund</td>
    <td>Ondersteund</td>
   </tr>

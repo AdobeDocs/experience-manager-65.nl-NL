@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: ee104f6f-123b-4a6e-9031-849fc1318cc5
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
@@ -29,11 +29,11 @@ Bezoek het moderatieoverzicht voor een beschrijving van [matigheidsacties](moder
 
 UI die aan de moderator op wordt voorgesteld publiceert instantie is bevat binnen de dialoog voor het posten van en het beheren van gebruiker geproduceerde inhoud (UGC). De elementen van de gebruikersinterface worden bepaald door de status van de bezoeker van de site - of ze nu ...
 
-1. Het lid dat de inhoud heeft gepost
-1. Een moderator van een vertrouwd lid
-1. Beheerder
-1. Aangemeld, maar geen beheerder, moderator of auteur van de inhoud
-1. Niet aangemeld
+1. Het lid dat de inhoud heeft gepost.
+1. Een vertrouwde lidmoderator.
+1. Een beheerder.
+1. Aangemeld, maar geen beheerder, moderator of auteur van de inhoud.
+1. Niet aangemeld.
 
 ## Voorbeeld {#example}
 
@@ -97,11 +97,11 @@ Bij auteur, login als admin en voeg Boyd Larsen (boyd.larsen@dodgit.com) als nie
 
 Meld u bij het publiceren aan als Boyd Larsen en open de thread door deze te selecteren `Forum`en vervolgens `Read more` voor de nummervogel.
 
-Kennisgeving
+Opmerking:
 
-* Boyd heeft niet deelgenomen aan het forum
-* Boyd kan niets verwijderen
-* Boyd is aangemeld en kan inhoud beantwoorden of markeren
+* Boyd heeft niet deelgenomen aan het forum.
+* Boyd kan niets verwijderen.
+* Boyd is aangemeld en kan inhoud beantwoorden of markeren.
 
 Laat Boyd Vlag selecteren om de inhoud te markeren die door Andrew is geplaatst.
 
@@ -113,10 +113,10 @@ Afmelden
 
 Login als Beheerder (admin) en toegang tot de draad door Forum te selecteren, en dan meer voor een post te lezen.
 
-Kennisgeving
+Opmerking:
 
-* Beheerders kunnen de functie Vlag maken, Verwijderen, Bewerken, Weigeren, Knippen, Sluiten, Vastzetten, Functie
-* Admin kan Beleid selecteren om tot de moderatieconsole toegang te hebben
+* Beheerders kunnen vlaggen, Verwijderen, Bewerken, Weigeren, Knippen, Sluiten, Vastzetten, Functie.
+* Admin kan Beleid selecteren om tot de moderatieconsole toegang te hebben.
 
 ![communityadmin-forum](assets/communityadmin-forum.png)
 
@@ -134,12 +134,12 @@ Afmelden.
 
 Log in als Aaron McDonald (aaron.mcdonal@mailinator.com), een moderator van de gemeenschap, en open de thread door Forum te selecteren, en lees dan meer voor de bulgvogelpost.
 
-Kennisgeving
+Opmerking:
 
-* Aaron kan zijn eigen bericht beantwoorden, verwijderen, bewerken of ontkennen
-* Aaron kan ook andere inhoud markeren/toestaan, beantwoorden, verwijderen, bewerken, weigeren
-* Aaron kan het forumonderwerp knippen om het naar een ander forum te verplaatsen waarvoor hij gematigd is
-* Aaron kan Beleid selecteren om tot de moderatieconsole toegang te hebben
+* Aaron kan zijn eigen post beantwoorden, verwijderen, bewerken of ontkennen.
+* Aaron kan ook andere inhoud markeren/toestaan, beantwoorden, verwijderen, bewerken of weigeren.
+* Aaron kan het forumonderwerp knippen om het naar een ander forum te verplaatsen waarvoor hij gematigd is.
+* Aaron kan Beleid selecteren om tot de moderatieconsole toegang te hebben.
 
 ![chlimage_1-2](assets/chlimage_1-2.png)
 
@@ -157,11 +157,11 @@ Afmelden.
 
 Meld u aan als Rebekah Larsen (rebekah.larsen@mailinator.com), een lid van de gemeenschap dat de thread heeft gestart, en open de thread door Forum te selecteren en lees vervolgens meer voor de bulgvogelpost.
 
-Kennisgeving
+Opmerking:
 
-* Rebekah kan haar eigen bericht verwijderen of bewerken
-* Rebekah kan ook reageren op andere inhoud of andere inhoud markeren
-* Rebekah heeft geen toegang tot de moderatieconsole
+* Rebekah kan haar eigen artikel verwijderen of bewerken.
+* Rebekah kan ook reageren op andere inhoud of andere inhoud markeren.
+* Rebekah heeft geen toegang tot de moderatieconsole.
 
 ![chlimage_1-3](assets/chlimage_1-3.png)
 

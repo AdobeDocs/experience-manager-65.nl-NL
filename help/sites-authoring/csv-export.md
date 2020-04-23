@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 7be506fb-f5c4-48dd-bec2-a3ea3ea19397
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+source-git-commit: 317093bce043ff2aaa5b5ceb8499f057fa9fa24b
 
 ---
 
@@ -28,7 +28,7 @@ source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
 >
 >De downloadfunctie en de standaardbestemming van uw browser worden gebruikt.
 
-Met de wizard **CSV-export** maken kunt u het volgende selecteren:
+Met de wizard **CSV-export maken** kunt u het volgende selecteren:
 
 * Te exporteren eigenschappen
    * Metagegevens
@@ -51,7 +51,7 @@ Met de wizard **CSV-export** maken kunt u het volgende selecteren:
 
 Het resulterende `export.csv` bestand kan worden geopend in Excel of een andere compatibele toepassing.
 
-![]() ![etc-01](assets/etc-01.png)
+![etc-01](assets/etc-01.png)
 
 De optie **CSV-rapport** maken is beschikbaar wanneer u in de **Sites** -console bladert (in de lijstweergave): Dit is een optie in het keuzemenu **Maken** :
 
@@ -59,7 +59,7 @@ De optie **CSV-rapport** maken is beschikbaar wanneer u in de **Sites** -console
 
 Een CSV-export maken:
 
-1. Open de **Sites** -console en navigeer indien nodig naar de gewenste locatie.
+1. Open de **Sites**-console en ga indien nodig naar de gewenste locatie.
 1. Selecteer op de werkbalk de optie **Maken** en vervolgens **CSV-rapport** om de wizard te openen:
 
    ![etc-03](assets/etc-03.png)

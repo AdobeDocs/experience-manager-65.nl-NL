@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 3e81b519-57ca-4ee1-94bd-7adac4605407
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
@@ -45,7 +45,7 @@ De console [van de Configuratie van de](/help/communities/srp-config.md) Opslag 
 
 **Instantie van AEM-auteur:**
 
-* Navigeer vanuit de globale navigatie naar **[UIControl Tools > Communities > Storage Configuration]** en selecteer **[UIControl Adobe Storage Resource Provider (ASRP)]**.
+* Navigeer vanuit de globale navigatie naar **[!UICONTROL Extra > Gemeenschappen > Opslagconfiguratie]** en selecteer **[!UICONTROL Adobe Storage Resource Provider (ASRP)]**.
 
 ![chlimage_1-30](assets/chlimage_1-30.png)
 
@@ -94,7 +94,7 @@ De identieke configuratie beschikbaar stellen in de publicatieomgeving:
 
 Instantie van AEM-auteur:
 
-* Navigeer van hoofdmenu aan **[Hulpmiddelen UIControl > Verrichtingen > Replicatie]**.
+* Navigeer van hoofdmenu aan **[!UICONTROL Hulpmiddelen > Verrichtingen > Replicatie]**.
 * Boomstructuur **activeren selecteren**
 * **Startpad**: bladeren naar `/etc/socialconfig/srpc/`
 * Selectie **alleen gewijzigd opheffen**

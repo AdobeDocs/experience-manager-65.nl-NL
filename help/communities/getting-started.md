@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 4a2ac67b-d2c9-4703-a1cb-d454786f9e6b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70e6f2d8366456e5091b7b775dc40914948921ab
+source-git-commit: 0270cee1970b5b092361c2f1ad4a117795465311
 
 ---
 
 
-# Aan de slag met AEM-gemeenschappen{#getting-started-with-aem-communities}
+# Aan de slag met AEM-gemeenschappen {#getting-started-with-aem-communities}
 
 AEM Communities staat bedrijven toe om speciale ervaringen van de merkgemeenschap te creëren van een bibliotheek met sitesjablonen. Forums, groepen, blogs, bestanden delen, kalenders, activiteitenfeeds en uitgebreide gebruikersprofielen kunnen in uw website worden geïntegreerd om interacties tussen professionals, klanten en bedrijven te bevorderen.
 

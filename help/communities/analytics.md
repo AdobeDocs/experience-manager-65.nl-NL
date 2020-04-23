@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: e6fdaf56-402f-418d-96d8-e46bd3ad1e8c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
@@ -160,15 +160,15 @@ Als deze optie niet is ingeschakeld, wordt de videohartslagcode nooit geïnstant
 
 Een nieuwe integratie voor Analytics maken, waarmee Adobe Analytics wordt geïntegreerd met de AEM-communitysite. Hierbij wordt de standaardgebruikersinterface van de auteur gebruikt:
 
-* Vanuit globale navigatie: **[UIControl Tools > Deployment > Cloud Services]**
-* Omlaag schuiven naar **[UIControl Adobe Analytics]**
-* Selecteer **[UIControl nu]** vormen of **[UIControl toont Configuraties]**
+* Vanuit globale navigatie: **[!UICONTROL Extra > Implementatie > Cloud Services]**
+* Omlaag schuiven naar **[!UICONTROL Adobe Analytics]**
+* Selecteer nu **[!UICONTROL configureren]** of Configuraties **[!UICONTROL tonen]**
 
 ![chlimage_1-178](assets/chlimage_1-178.png)
 
 ### Configuratiedialoogvenster maken {#create-configuration-dialog}
 
-* Selecteer `[+]` pictogram naast **[Beschikbare Configuraties]** UIControl om een nieuwe configuratie tot stand te brengen
+* Selecteer `[+]` pictogram naast **[!UICONTROL Beschikbare Configuraties]** om een nieuwe configuratie te creëren
 
 In het dialoogvenster Configuratie maken identificeren de waarden die moeten worden ingevoerd de configuratie.
 
@@ -246,7 +246,7 @@ De instellingen opslaan:
 
 Nadat de basisverbinding met Adobe Analytics is geconfigureerd, moet u een framework voor de communitysite maken of bewerken. Het doel van het framework is om AEM-variabelen (Communities feature) toe te wijzen aan variabelen van Analytics (report suite).
 
-* Selecteer `[+]` pictogram naast **[Beschikbare kaders]** UIControl om een nieuw kader tot stand te brengen
+* Selecteer `[+]` pictogram naast **[!UICONTROL Beschikbare kaders]** om een nieuw kader tot stand te brengen
 
 ![chlimage_1-182](assets/chlimage_1-182.png)
 
@@ -636,7 +636,7 @@ Het forumonderwerp is momenteel het enige voorbeeld van deze aanpassing:
 * Navigeer naar [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Bijvoorbeeld [https://localhost:4503/crx/de](https://localhost:4503/crx/de).
 
 * Onder het jcr:content-knooppunt van de taalhoofdmap (navigeer bijvoorbeeld `/content/sites/engage/en/jcr:content),`naar de component die is geconfigureerd voor Analytics-rapportage.
-Bijvoorbeeld: **`analytics/reportConfigs/social_forum_components_hbs_topic`**
+Bijvoorbeeld, **`analytics/reportConfigs/social_forum_components_hbs_topic`**
 
 * Let op de gemaakte tijdsperiodes:
 

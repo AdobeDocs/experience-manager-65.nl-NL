@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: f74d225e-0245-4d5a-bb93-0ee3f31557aa
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
@@ -19,8 +19,8 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 In deze sectie maakt u het volgende:
 
-* De **[sjabloon](#createthepagetemplate)**die wordt gebruikt om inhoudspagina&#39;s te maken in de voorbeeldwebsite
-* De **[component en het script](#create-the-template-s-rendering-component)**waarmee de websitepagina&#39;s worden weergegeven
+* De **[sjabloon](#createthepagetemplate)**die wordt gebruikt om inhoudspagina&#39;s in de voorbeeldwebsite te maken.
+* De **[component en het script](#create-the-template-s-rendering-component)**waarmee de websitepagina&#39;s worden weergegeven.
 
 ## De inhoudssjabloon maken {#create-the-content-template}
 
@@ -28,10 +28,10 @@ Een sjabloon definieert de standaardinhoud van een nieuwe pagina. Complexe websi
 
 In deze exercitie, zijn alle pagina&#39;s gebaseerd op één eenvoudig malplaatje.
 
-1. In het verkendervenster van CRXDE Lite
+1. In het verkendervenster van CRXDE Lite:
 
-   * select `/apps/an-scf-sandbox/templates`
-   * **[!UICONTROL Maken > Sjabloon maken]**
+   * Selecteer `/apps/an-scf-sandbox/templates`
+   * **[!UICONTROL Maken]** > Sjabloon **[!UICONTROL maken]**
 
 1. Typ de volgende waarden in het dialoogvenster Sjabloon maken en klik op **[!UICONTROL Volgende]**:
 
@@ -44,29 +44,29 @@ In deze exercitie, zijn alle pagina&#39;s gebaseerd op één eenvoudig malplaatj
 
    Het Type van Middel verschijnt op jcr:content knoop van `playpage`de bron als bezit `sling:resourceType`. Het identificeert de component (bron) die de inhoud teruggeeft wanneer daarom door browser wordt gevraagd.
 
-   In dit geval worden alle pagina&#39;s die met de `playpage`sjabloon zijn gemaakt, door de `an-scf-sandbox/components/playpage` component gerenderd. Volgens conventie is het pad naar de component relatief, zodat Sling eerst naar de bron in de `/apps` map en, indien deze niet wordt gevonden, in de `/libs` map kan zoeken.
+   In dit geval worden alle pagina&#39;s die met de `playpage` sjabloon zijn gemaakt, door de `an-scf-sandbox/components/playpage` component gerenderd. Volgens conventie is het pad naar de component relatief, zodat Sling eerst naar de bron in de `/apps` map en, indien deze niet wordt gevonden, in de `/libs` map kan zoeken.
 
    ![chlimage_1-75](assets/chlimage_1-75.png)
 
 1. Als u kopiëren/plakken gebruikt, moet u ervoor zorgen dat de waarde van het Type resource geen voorloopspaties of navolgende spaties bevat.
 
-   Click **[!UICONTROL Next]**.
+   Klik op **[!UICONTROL Next]**.
 
 1. &#39;Toegestane paden&#39; verwijst naar de paden van pagina&#39;s die deze sjabloon gebruiken, zodat de sjabloon wordt weergegeven in het dialoogvenster **[!UICONTROL Nieuwe pagina]** .
 
    Als u een pad wilt toevoegen, klikt u op de plusknop `+` en typt u `/content(/.&ast;)?` in het tekstvak dat wordt weergegeven. Als u kopiëren/plakken gebruikt, dient u ervoor te zorgen dat er geen voorloopspaties of volgspaties zijn.
 
-   Opmerking:De waarde van de toegestane padeigenschap is een *reguliere expressie.* Inhoudspagina&#39;s met een pad dat overeenkomt met de expressie, kunnen de sjabloon gebruiken. In dit geval komt de reguliere expressie overeen met het pad van de map **/content** en alle subpagina&#39;s ervan.
+   Opmerking: De waarde van de toegestane padeigenschap is een *reguliere expressie.* Inhoudspagina&#39;s met een pad dat overeenkomt met de expressie, kunnen de sjabloon gebruiken. In dit geval komt de reguliere expressie overeen met het pad van de map **/content** en alle subpagina&#39;s ervan.
 
-   Wanneer een auteur hieronder een pagina maakt `/content`, wordt de `playpage`sjabloon &#39;Een SCF-sandboxpaginasjabloon&#39; weergegeven in een lijst met beschikbare sjablonen die u kunt gebruiken.
+   Wanneer een auteur hieronder een pagina maakt `/content`, wordt de `playpage` sjabloon &#39;Een SCF-sandboxpaginasjabloon&#39; weergegeven in een lijst met beschikbare sjablonen die u kunt gebruiken.
 
-   Nadat de basispagina van de sjabloon is gemaakt, kan de toegang tot de sjabloon worden beperkt tot deze website door de eigenschap zodanig te wijzigen dat het hoofdpad wordt opgenomen in de reguliere expressie, d.w.z...
+   Nadat de basispagina van de sjabloon is gemaakt, kan de toegang tot de sjabloon worden beperkt tot deze website door de eigenschap zodanig te wijzigen dat het hoofdpad wordt opgenomen in de reguliere expressie, d.w.z.
 
    `/content/an-scf-sandbox(/.&ast;)?`
 
    ![chlimage_1-76](assets/chlimage_1-76.png)
 
-1. Click **[!UICONTROL Next]**.
+1. Klik op **[!UICONTROL Next]**.
 
    Klik op **[!UICONTROL Volgende]** in het deelvenster **[!UICONTROL Toegestane bovenliggende]** elementen.
 
@@ -74,7 +74,7 @@ In deze exercitie, zijn alle pagina&#39;s gebaseerd op één eenvoudig malplaatj
 
    Click **[!UICONTROL OK]**.
 
-1. Nadat u op OK hebt geklikt en de sjabloon hebt gemaakt, ziet u dat de hoeken van de waarden op het tabblad Eigenschappen van de nieuwe `playpage`sjabloon rode driehoeken bevatten. Deze rode driehoeken geven bewerkingen aan die niet zijn opgeslagen.
+1. Nadat u op OK hebt geklikt en de sjabloon hebt gemaakt, ziet u dat de hoeken van de waarden op het tabblad Eigenschappen van de nieuwe `playpage` sjabloon rode driehoeken bevatten. Deze rode driehoeken geven bewerkingen aan die niet zijn opgeslagen.
 
    Klik op Alles **** opslaan om de nieuwe sjabloon op te slaan in de repository.
 
@@ -100,7 +100,7 @@ Maak de *component* die de inhoud definieert en rendert alle pagina&#39;s die op
    * Groeperen:
    ![chlimage_1-78](assets/chlimage_1-78.png)
 
-1. Klik op **[!UICONTROL Volgende]** totdat het deelvenster **[!UICONTROL Toegestane onderliggende]** items van het dialoogvenster verschijnt
+1. Klik op **[!UICONTROL Volgende]** totdat het deelvenster **[!UICONTROL Toegestane onderliggende]** items van het dialoogvenster verschijnt:
 
    * Click **[!UICONTROL OK]**
    * Klik op Alles **[!UICONTROL opslaan]**

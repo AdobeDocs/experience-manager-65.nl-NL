@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 8b6c1697-d693-41f4-8337-f41658465107
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 0270cee1970b5b092361c2f1ad4a117795465311
 
 ---
 
@@ -27,11 +27,12 @@ De implementatie omvat een client-side en een server-side definitie. Ontwikkelaa
 
 De aangepaste SCF-helpers die bij AEM-gemeenschappen worden geleverd, worden gedefinieerd in de [clientbibliotheek](../../help/sites-developing/clientlibs.md):
 
-* /etc/clientlibs/social/commons/scf/helpers.js
+* `/etc/clientlibs/social/commons/scf/helpers.js`
 
 >[!NOTE]
 >
 >Zorg ervoor dat u het [nieuwste bronnenpakket](deploy-communities.md#latestfeaturepack)van de Gemeenschappen installeert.
+
 
 ## Afkorting {#abbreviate}
 
@@ -45,21 +46,21 @@ Als safeString is ingesteld op true, is de geretourneerde tekenreeks een SafeStr
 
 ### Parameters {#parameters}
 
-* **context**:String
+* **context**: String
 
-   (optioneel) Standaard is de lege tekenreeks
+   (Optioneel) Standaard is de lege tekenreeks
 
 * **maxLength**: Getal
 
-   (optioneel) Standaard is de lengte van de context.
+   (Optioneel) Standaard is de lengte van de context.
 
 * **maxWords**: Getal
 
-   (optioneel) De standaardwaarde is het aantal woorden in de bijgesneden tekenreeks.
+   (Optioneel) De standaardwaarde is het aantal woorden in de bijgesneden tekenreeks.
 
-* **safeString**:Boolean
+* **safeString**: Boolean
 
-   (optioneel) Retourneert een Handlebars.SafeString(), indien true. De standaardwaarde is false.
+   (Optioneel) Retourneert een handlerBar.SafeString() indien true. De standaardwaarde is false.
 
 ### Voorbeelden {#examples}
 
@@ -93,25 +94,25 @@ Een hulpmiddel om twee reeksen onder een div toe te voegen, één voor de volled
 
 ### Parameters {#parameters-1}
 
-* **context**:String
+* **context**: String
 
-   (optioneel) Standaard is de lege tekenreeks.
+   (Optioneel) Standaard is de lege tekenreeks.
 
 * **numChars**: Getal
 
-   (optioneel) Het aantal tekens dat moet worden weergegeven wanneer geen volledige tekst wordt weergegeven. De standaardwaarde is 100.
+   (Optioneel) Het aantal tekens dat moet worden weergegeven wanneer geen volledige tekst wordt weergegeven. De standaardwaarde is 100.
 
-* **moreText**:String
+* **moreText**: String
 
-   (optioneel) De tekst die moet worden weergegeven om aan te geven dat er meer tekst moet worden weergegeven. Standaard is &quot;meer&quot;.
+   (Optioneel) De tekst die moet worden weergegeven om aan te geven dat er meer tekst moet worden weergegeven. Standaard is &quot;meer&quot;.
 
-* **ellipsesText**:String
+* **ellipsesText**: String
 
-   (optioneel) De tekst die moet worden weergegeven om aan te geven dat er verborgen tekst is. Standaard is &quot;...&quot;.
+   (Optioneel) De tekst die moet worden weergegeven om aan te geven dat er verborgen tekst is. Standaard is &quot;...&quot;.
 
-* **safeString**:Boolean
+* **safeString**: Boolean
 
-   (optioneel) Booleaanse waarde die aangeeft of Handlebars.SafeString() al dan niet moet worden toegepast voordat het resultaat wordt geretourneerd. De standaardwaarde is false.
+   (Optioneel) Booleaanse waarde die aangeeft of Handlebars.SafeString() al dan niet moet worden toegepast voordat het resultaat wordt geretourneerd. De standaardwaarde is false.
 
 ### Voorbeeld {#example}
 
@@ -135,11 +136,11 @@ Een hulpmiddel om een geformatteerde datumreeks terug te keren.
 
 * **context**: Getal
 
-   (optioneel) Een millisecondenverschuiving vanaf 1 januari 1970 (tijdperk). De standaardwaarde is de huidige datum.
+   (Optioneel) Een millisecondenverschuiving vanaf 1 januari 1970 (tijdperk). De standaardwaarde is de huidige datum.
 
-* **indeling**:String
+* **indeling**: String
 
-   (optioneel) De datumnotatie die moet worden toegepast. De standaardwaarde is &quot;YYYY-MM-DDTHH:mm:ss.sssZ&quot; en het resultaat wordt weergegeven als &quot;2015-03-18T18:17:13-07:00&quot;
+   (Optioneel) De datumnotatie die moet worden toegepast. De standaardwaarde is &quot;YYYY-MM-DDTHH:mm:ss.sssZ&quot; en het resultaat wordt weergegeven als &quot;2015-03-18T18:17:13-07:00&quot;
 
 ### Voorbeelden {#examples-1}
 
@@ -161,13 +162,13 @@ Een hulpmiddel om inhoud terug te keren afhankelijk van een voorwaardelijk gelij
 
 ### Parameters {#parameters-3}
 
-* **lvalue**:String
+* **lvalue**: String
 
-   De linkerwaarde die moet worden vergeleken
+   De waarde aan de linkerkant die moet worden vergeleken.
 
-* **waarde**:String
+* **waarde**: String
 
-   De rechterwaarde die moet worden vergeleken
+   De rechterwaarde die moet worden vergeleken.
 
 ### Voorbeeld {#example-1}
 
@@ -185,13 +186,13 @@ Een blokhelper die de huidige waarde van wijze [](https://helpx.adobe.com/experi
 
 ### Parameters {#parameters-4}
 
-* **context**:String
+* **context**: String
 
-   (optioneel) De tekenreeks die moet worden vertaald. Vereist als er geen standaard is opgegeven.
+   (Optioneel) De tekenreeks die moet worden vertaald. Vereist als er geen standaard is opgegeven.
 
-* **modus**:String
+* **modus**: String
 
-   (optioneel) Een door komma&#39;s gescheiden lijst met [WCM-modi](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) die moeten worden getest, indien ingesteld.
+   (Optioneel) Een door komma&#39;s gescheiden lijst met [WCM-modi](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) die moeten worden getest, indien ingesteld.
 
 ### Voorbeeld {#example-2}
 
@@ -211,17 +212,17 @@ Zie ook [Internationaliserende Tekenreeksen in JavaScript-code](../../help/sites
 
 ### Parameters {#parameters-5}
 
-* **context**:String
+* **context**: String
 
-   (optioneel) De tekenreeks die moet worden vertaald. Vereist als er geen standaard is opgegeven.
+   (Optioneel) De tekenreeks die moet worden vertaald. Vereist als er geen standaard is opgegeven.
 
-* **standaard**:String
+* **standaard**: String
 
-   (optioneel) De standaardtekenreeks die moet worden omgezet. Vereist als er geen context is opgegeven.
+   (Optioneel) De standaardtekenreeks die moet worden getransleerd. Vereist als er geen context is opgegeven.
 
-* **opmerking**:String
+* **opmerking**: String
 
-   (optioneel) Een vertaaltip
+   (Optioneel) Een vertaaltip
 
 ### Voorbeeld {#example-3}
 
@@ -244,27 +245,27 @@ Deze hulp, die slechts op de server-kant aangewezen is, verstrekt functionalitei
 
 * **context**: Tekenreeks of object
 
-   (optioneel, tenzij een relatief pad wordt opgegeven)
+   (Optioneel, tenzij een relatief pad wordt opgegeven)
 
-   gebruiken `this`om de huidige context door te geven
+   Gebruik deze optie `this` om de huidige context door te geven.
 
-   gebruik `this.id` om het middel bij `id` voor het teruggeven van gevraagde resourceType te verkrijgen
+   Gebruik `this.id` om het middel bij te verkrijgen `id` voor het teruggeven van gevraagde resourceType.
 
-* **resourceType**:String
+* **resourceType**: String
 
-   (facultatief) middeltype zal aan middeltype van context in gebreke blijven
+   (Facultatief) middeltype zal aan middeltype van context in gebreke blijven.
 
-* **sjabloon**:String
+* **sjabloon**: String
 
-   pad naar componentscript
+   Pad naar componentscript.
 
-* **pad**:String
+* **pad**: String
 
-   (vereist) Het pad naar de bron. Als het pad relatief is, moet een context worden opgegeven, anders wordt de lege tekenreeks geretourneerd.
+   (Vereist) Het pad naar de bron. Als het pad relatief is, moet een context worden opgegeven, anders wordt de lege tekenreeks geretourneerd.
 
-* **authoringDisabled**:Boolean
+* **authoringDisabled**: Boolean
 
-   (optioneel) Standaard is false. Uitsluitend voor intern gebruik.
+   (Optioneel) Standaard is false. Uitsluitend voor intern gebruik.
 
 ### Voorbeeld {#example-4}
 
@@ -272,7 +273,7 @@ Deze hulp, die slechts op de server-kant aangewezen is, verstrekt functionalitei
 {{include this.id path="comments" resourceType="social/commons/components/hbs/comments"}}
 ```
 
-Dit omvat een nieuwe commentaarcomponent op `this.id` + /comments
+Dit omvat een nieuwe commentaarcomponent bij `this.id` + /comments.
 
 ## IncludeClientLib {#includeclientlib}
 
@@ -282,21 +283,21 @@ Deze hulp, aangewezen slechts op de server-kant, verstrekt functionaliteit gelij
 
 ### Parameters {#parameters-7}
 
-* **categorieën**:String
+* **categorieën**: String
 
-   (optioneel) Een lijst met door komma&#39;s gescheiden clientbibliotheekcategorieën. Dit omvat alle JavaScript- en CSS-bibliotheken voor de opgegeven categorieën. De themanaam wordt uit de aanvraag geëxtraheerd.
+   (Optioneel) Een lijst met door komma&#39;s gescheiden clientbibliotheekcategorieën. Dit omvat alle JavaScript- en CSS-bibliotheken voor de opgegeven categorieën. De themanaam wordt uit de aanvraag geëxtraheerd.
 
-* **thema**:String
+* **thema**: String
 
-   (optioneel) Een lijst met door komma&#39;s gescheiden clientbibliotheekcategorieën. Dit omvat alle themabibliotheken (zowel CSS als JS) voor de opgegeven categorieën. De themanaam wordt uit de aanvraag geëxtraheerd.
+   (Optioneel) Een lijst met door komma&#39;s gescheiden clientbibliotheekcategorieën. Dit omvat alle themabibliotheken (zowel CSS als JS) voor de opgegeven categorieën. De themanaam wordt uit de aanvraag geëxtraheerd.
 
-* **js**:String
+* **js**: String
 
-   (optioneel) Een lijst met door komma&#39;s gescheiden clientbibliotheekcategorieën. Dit omvat alle bibliotheken Javascript voor de bepaalde categorieën.
+   (Optioneel) Een lijst met door komma&#39;s gescheiden clientbibliotheekcategorieën. Dit omvat alle bibliotheken Javascript voor de bepaalde categorieën.
 
-* **css**:String
+* **css**: String
 
-   (optioneel) Een lijst met door komma&#39;s gescheiden clientbibliotheekcategorieën. Dit omvat alle CSS-bibliotheken voor de opgegeven categorieën.
+   (Optioneel) Een lijst met door komma&#39;s gescheiden clientbibliotheekcategorieën. Dit omvat alle CSS-bibliotheken voor de opgegeven categorieën.
 
 ### Voorbeelden {#examples-2}
 
@@ -383,7 +384,7 @@ OPMERKING: Dit is geen validator en moet niet worden gebruikt voor het schrijven
 
 * **context**: object
 
-   de te coderen HTML
+   De HTML die moet worden gecodeerd.
 
 ### Voorbeeld {#example-6}
 
@@ -401,7 +402,7 @@ OPMERKING: dit is geen validator en moet niet worden gebruikt voor het schrijven
 
 * **context**: Object
 
-   De te coderen HTML
+   De HTML die moet worden gecodeerd.
 
 ### Voorbeeld {#example-7}
 
@@ -419,7 +420,7 @@ OPMERKING: Dit is geen validator en mag niet worden gebruikt voor het schrijven 
 
 * **context**: Object
 
-   De te coderen HTML
+   De HTML die moet worden gecodeerd.
 
 ### Voorbeeld {#example-8}
 
@@ -437,7 +438,7 @@ OPMERKING: dit kan een lege tekenreeks retourneren
 
 * **context**: Object
 
-   De URL die moet worden ontsmet
+   De URL die moet worden ontsmet.
 
 ### Voorbeeld {#example-9}
 
@@ -449,7 +450,7 @@ OPMERKING: dit kan een lege tekenreeks retourneren
 
 Een kort overzicht van hulpfuncties in de documentatie [van](https://handlebarsjs.com/expressions.html)Handlebars.js:
 
-* Een hulpvraag van Handlebars is een eenvoudig herkenningsteken (*name *of helper), die door nul of meer ruimte-gescheiden parameters wordt gevolgd.
+* Een hulpvraag van Handlebars is een eenvoudig herkenningsteken (de *naam* van de helper), die door nul of meer ruimte-gescheiden parameters wordt gevolgd.
 * Parameters kunnen een eenvoudig String-, Number-, Boolean- of JSON-object zijn, plus een optionele reeks sleutelwaardeparen (hash-argumenten) als de laatste parameter(s).
 * De sleutels in knoeiboelargumenten moeten eenvoudige herkenningstekens zijn.
 * De waarden in hash-argumenten zijn Handlebars-expressies: eenvoudige id&#39;s, paden of tekenreeksen.
@@ -567,6 +568,7 @@ public class FooTextHelper implements TemplateHelper<String>{
 >
 >De component wordt re-teruggegeven op de cliënt-kant voor de aangemelde gebruiker, en als de cliënt-zijhelper niet wordt gevonden, verdwijnt de component.
 
+
 ### Aangepaste hulp aan clientzijde {#client-side-custom-helpers}
 
 De client-side helpers zijn Handlebars-scripts die zijn geregistreerd door het aanroepen `Handlebars.registerHelper()`.
@@ -590,9 +592,9 @@ function(Handlebars, SCF, $CQ) {
 De aangepaste client-side helpers moeten worden toegevoegd aan een aangepaste clientbibliotheek.
 Clilib moet:
 
-* Een afhankelijkheid opnemen van `cq.social.scf`
-* Laden nadat handgrepen zijn geladen
-* Wordt [opgenomen](clientlibs.md)
+* Neem een afhankelijkheid op van `cq.social.scf`.
+* Laden nadat handgrepen zijn geladen.
+* Moet worden [opgenomen](clientlibs.md).
 
 Opmerking: de SCF-helpers worden gedefinieerd in `/etc/clientlibs/social/commons/scf/helpers.js`.
 

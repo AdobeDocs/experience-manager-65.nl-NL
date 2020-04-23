@@ -11,7 +11,7 @@ topic-tags: best-practices
 discoiquuid: 2418777e-4eb2-4d82-aa9e-8d1b0bf740f3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bd0cb6abe024bc4ff77c9932c99b816c832377f5
+source-git-commit: 87a8c36130c70d1fe8839c092fffda2821333466
 
 ---
 
@@ -99,7 +99,7 @@ Gebruik deze aanbevolen procedures bij het maken van uw eigen nieuwsbrief.
 |---|---|
 | Alternatieve ** kenmerken toevoegen aan afbeeldingen | Het kenmerk *alt* is gedefinieerd als verplicht voor de afbeeldingscomponent. |
 | JPG- *indeling* gebruiken in plaats van *png* -indeling voor afbeeldingen | Afbeeldingen worden altijd als JPG weergegeven door de afbeeldingscomponent. |
-| Gebruik <img> elementen in plaats van achtergrondafbeeldingen in een tabel. | Er worden geen achtergrondafbeeldingsgegevens gebruikt in de sjablonen. |
+| Gebruik `<img>` elementen in plaats van achtergrondafbeeldingen in een tabel. | Er worden geen achtergrondafbeeldingsgegevens gebruikt in de sjablonen. |
 | Kenmerkstijl=&quot;weergaveblok&quot; toevoegen aan afbeeldingen. Staat toe om goed op Gmail te tonen. | Alle afbeeldingen bevatten standaard het kenmerk *style=&quot;display block&quot;* . |
 
 ### Tekst en koppelingen {#text-and-links}
@@ -135,7 +135,7 @@ Gebruik deze aanbevolen procedures bij het maken van uw eigen nieuwsbrief.
 
 AEM wordt geleverd met verschillende sjablonen en componenten uit de verpakking die u nodig hebt om campagnebulletins te maken. U kunt deze sjablonen en componenten gebruiken om uw aangepaste nieuwsbrieven te maken.
 
-### Templates {#templates}
+### Sjablonen {#templates}
 
 Er zijn drie enigszins verschillende sjabloontypen beschikbaar uit het vak om een solide basis aan te bieden en de verscheidenheid aan mogelijkheden voor inhoudsstroom uit te breiden. U kunt deze eenvoudig gebruiken om een aangepaste nieuwsbrief te maken.
 
@@ -143,7 +143,7 @@ Alles heeft een **koptekst**, een **voettekst** en een **hoofdtekst** . Onder de
 
 ![](assets/chlimage_1-69.png)
 
-### Componenten {#components}
+### Onderdelen {#components}
 
 Er zijn momenteel [zeven componenten beschikbaar voor gebruik binnen campagnemalplaatjes](/help/sites-authoring/adobe-campaign-components.md). Deze componenten zijn allemaal gebaseerd op de Adobe-opmaaktaal **HTL**.
 

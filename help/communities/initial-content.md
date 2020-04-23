@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: e8f28cd5-7950-4aab-bf62-3d4ed3d33cbd
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
@@ -19,11 +19,11 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 In deze sectie maakt u de volgende pagina&#39;s die allemaal de [paginasjabloon](initial-app.md#createthepagetemplate)gebruiken:
 
-* SCF Sandbox Site, die wordt omgeleid naar de Engelse versie van de hoofdpagina
+* SCF Sandbox Site, die wordt omgeleid naar de Engelse versie van de hoofdpagina.
 
-   * SCF Sandbox - De hoofdpagina voor de Engelse versie van de site
+   * SCF Sandbox - De hoofdpagina voor de Engelse versie van de site.
 
-      * SCF-afspelen - Onderliggend item van de hoofdpagina waarop moet worden afgespeeld
+      * SCF-afspelen - Onderliggend item van de hoofdpagina waarop moet worden afgespeeld.
 
 Hoewel deze zelfstudie niet in [taalkopieën](../../help/sites-administering/tc-prep.md)wordt geschreven, is deze zo ontworpen dat de hoofdpagina detectie van de voorkeurstaal voor de gebruiker via de HTML-koptekst kan implementeren en omleidt naar de juiste hoofdpagina voor de taal. De conventie is de landcode van twee letters te gebruiken voor de knooppuntnaam van de pagina, bijvoorbeeld &quot;en&quot; voor Engels, &quot;fr&quot; voor Frans, enzovoort.
 
@@ -45,7 +45,7 @@ Nu er een [paginamalplaatje](initial-app.md#createthepagetemplate)is, kunnen wij
 
    U kunt ook rechtstreeks toegang krijgen tot de klassieke UI voor websites door naar [/sitebeheerder te bladeren.](http://localhost:4502/siteadmin)
 
-1. Selecteer **[!UICONTROL Websites]** in het deelvenster Verkenner en selecteer vervolgens op de werkbalk **[!UICONTROL Nieuw > Nieuwe pagina]**.
+1. Selecteer **[!UICONTROL Websites]** in het deelvenster Verkenner en selecteer vervolgens **[!UICONTROL Nieuw]** > **[!UICONTROL Nieuwe pagina]** op de werkbalk.
 
    Voer in het dialoogvenster Pagina **** maken het volgende in:
 
@@ -55,14 +55,14 @@ Nu er een [paginamalplaatje](initial-app.md#createthepagetemplate)is, kunnen wij
    * Klik op **[!UICONTROL Maken]**
    ![chlimage_1-38](assets/chlimage_1-38.png)
 
-1. Selecteer in het verkenner-venster de pagina die u net hebt gemaakt `/Websites/SCF Sandbox Site`en klik op **[!UICONTROL Nieuw > Nieuwe pagina]**:
+1. Selecteer in het verkenner-venster de pagina die u net hebt gemaakt `/Websites/SCF Sandbox Site`en klik op **[!UICONTROL Nieuw]** > **[!UICONTROL Nieuwe pagina]**:
 
    * Titel: `SCF Sandbox`
    * Naam: `en`
    * Selecteer **een SCF-sandbox-afspeelsjabloon **
    * Klik op **Maken **
 
-1. Selecteer in het verkenner-venster de pagina die u net hebt gemaakt `/Websites/SCF Sandbox Site/SCF Sandbox`en klik op **[!UICONTROL Nieuw > Nieuwe pagina]**
+1. Selecteer in het verkenner-venster de pagina die u net hebt gemaakt `/Websites/SCF Sandbox Site/SCF Sandbox`en klik op **[!UICONTROL Nieuw]** > **[!UICONTROL Nieuwe pagina]**
 
    * Titel: `SCF Play`
    * Naam: `play`
@@ -105,4 +105,5 @@ De oplossing moet er als volgt uitzien:
 >[!NOTE]
 >
 >Het gebruik van cq:designPath is optioneel en staat los van het [gebruik van clientlibs](develop-app.md#includeclientlibsintemplate), die in wezen vereist zijn omdat de SCF-componenten [clientlibs](client-customize.md#clientlibs-for-scf) gebruiken om hun JS en CSS te beheren.
+
 

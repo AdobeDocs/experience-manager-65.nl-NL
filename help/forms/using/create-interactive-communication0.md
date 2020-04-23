@@ -9,12 +9,12 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ac5d8d4f-fc13-4e8d-819c-c5db07fa6870
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56f7db792b340ed6774c54170e9b5d2a52153cd5
+source-git-commit: e545fc5e2ea139bd8ebb7f84138ba68e03d71d19
 
 ---
 
 
-# Zelfstudie:Interactieve communicatie maken {#tutorial-create-interactive-communication}
+# Zelfstudie: Interactieve communicatie maken {#tutorial-create-interactive-communication}
 
 ![09-stijl-uw-adaptief-vorm-klein](assets/09-style-your-adaptive-form-small.png)
 
@@ -36,17 +36,17 @@ Dit leerprogramma begeleidt u door de stappen om interactieve mededelingen voor 
 
 Hier volgt een lijst met bronnen die al in deze zelfstudie zijn gemaakt en die nodig zijn tijdens het maken van de interactieve communicatie voor het kanaal Afdrukken:
 
-**** Afdruksjabloon: [create_first_ic_print_template](../../forms/using/create-templates-print-web.md)
+**Afdruksjabloon:** [create_first_ic_print_template](../../forms/using/create-templates-print-web.md)
 
-**** Formuliergegevensmodel: [FDM_Create_First_IC](../../forms/using/create-form-data-model0.md)
+**Formuliergegevensmodel:** [FDM_Create_First_IC](../../forms/using/create-form-data-model0.md)
 
-**** Documentfragmenten: [bill_details_first_ic, customer_details_first_ic, bill_summary_first_ic, summary_charges_first_ic](../../forms/using/create-document-fragments.md)
+**Documentfragmenten:** [bill_details_first_ic, customer_details_first_ic, bill_summary_first_ic, summary_charges_first_ic](../../forms/using/create-document-fragments.md)
 
-**** Lay-outfragmenten: [table_lf](../../forms/using/create-templates-print-web.md)
+**Lay-outfragmenten:** [table_lf](../../forms/using/create-templates-print-web.md)
 
-**** Afbeeldingen: PayNow en ValueAddedServices
+**Afbeeldingen:** PayNow en ValueAddedServices
 
-1. Meld u aan bij de AEM-auteur en navigeer naar **Adobe Experience Manager** > **Formulieren** > **Formulieren en documenten**.
+1. Meld u aan bij de AEM-auteur en navigeer naar **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulieren]** > **[!UICONTROL Formulieren en documenten]**.
 1. Tik op **Maken** en selecteer **Interactieve communicatie**. De **Create Interactive Communication** tovenaar wordt getoond.
 1. Geef **create_first_ic** op in het veld **Titel** en **Naam** . Selecteer **FDM_Create_First_IC** als het Model van de Gegevens van het Vorm en tik **daarna**.
 1. In de wizard **Kanalen** :
@@ -76,9 +76,9 @@ Hier volgt een lijst met bronnen die al in deze zelfstudie zijn gemaakt en die n
 
    1. Geef een naam op voor het diagram.
    1. Selecteer **Schijf** van de drop-down lijst van het Type **van** Grafiek.
-   1. Selecteer het **calltype** bezit van het **type van objecten van het vraaggegevensmodel** in de **x-as** sectie. Tik ![](assets/done_icon.png).
+   1. Selecteer het **calltype** bezit van het **type van objecten van het vraaggegevensmodel** in de **x-as** sectie. Tik op ![](assets/done_icon.png).
    1. Selecteer **Frequentie** in de vervolgkeuzelijst **Functie** .
-   1. Selecteer het **calltype** bezit van het **type van objecten van het vraaggegevensmodel** in de **y-as** sectie. Tik ![](assets/done_icon.png).
+   1. Selecteer het **calltype** bezit van het **type van objecten van het vraaggegevensmodel** in de **y-as** sectie. Tik op ![](assets/done_icon.png).
    1. Tik ![](assets/done_icon.png) om de diagrameigenschappen op te slaan.
 
 1. Ga naar het tabblad **Middelen** en pas het filter toe om alleen de layoutfragmenten in het linkerdeelvenster weer te geven. De belemmering-en-daling het **table_lf** lay-outfragment aan het **Gespecialiseerde het doelgebied van Vraag** .
@@ -100,15 +100,15 @@ Hier volgt een lijst met bronnen die al in deze zelfstudie zijn gemaakt en die n
 
 Hier volgt een lijst met bronnen die al in deze zelfstudie zijn gemaakt en die nodig zijn tijdens het maken van de interactieve communicatie voor het webkanaal:
 
-**** Websjabloon: [Create_First_IC_Web_Template](../../forms/using/create-templates-print-web.md)
+**Websjabloon:** [Create_First_IC_Web_Template](../../forms/using/create-templates-print-web.md)
 
-**** Formuliergegevensmodel: [FDM_Create_First_IC](../../forms/using/create-form-data-model0.md)
+**Formuliergegevensmodel:** [FDM_Create_First_IC](../../forms/using/create-form-data-model0.md)
 
-**** Documentfragmenten: [bill_details_first_ic, customer_details_first_ic, bill_summary_first_ic, summary_charges_first_ic](../../forms/using/create-document-fragments.md)
+**Documentfragmenten:** [bill_details_first_ic, customer_details_first_ic, bill_summary_first_ic, summary_charges_first_ic](../../forms/using/create-document-fragments.md)
 
-**** Afbeeldingen: PayNowWeb en ValueAddedServicesWeb
+**Afbeeldingen:** PayNowWeb en ValueAddedServicesWeb
 
-1. Meld u aan bij de AEM-auteur en navigeer naar **Adobe Experience Manager** > **Formulieren** > **Formulieren en documenten**.
+1. Meld u aan bij de AEM-auteur en navigeer naar **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulieren]** > **[!UICONTROL Formulieren en documenten]**.
 1. Tik op **Maken** en selecteer **Interactieve communicatie**. De **Create Interactive Communication** tovenaar wordt getoond.
 1. Geef **create_first_ic** op in het veld **Titel** en **Naam** . Selecteer **FDM_Create_First_IC** als het Model van de Gegevens van het Vorm en tik **daarna**.
 1. In de wizard **Kanalen** :
@@ -138,11 +138,11 @@ Hier volgt een lijst met bronnen die al in deze zelfstudie zijn gemaakt en die n
    1. Geef een naam op voor het diagram.
    1. Selecteer **Schijf** van de drop-down lijst van het Type **van** Grafiek.
 
-   1. Selecteer het **calltype** bezit van het **type van objecten van het vraaggegevensmodel** in de **x-as** sectie. Tik ![](assets/done_icon.png).
+   1. Selecteer het **calltype** bezit van het **type van objecten van het vraaggegevensmodel** in de **x-as** sectie. Tik op ![](assets/done_icon.png).
 
    1. Selecteer **Frequentie** in de vervolgkeuzelijst **Functie** .
 
-   1. Selecteer het **calltype** bezit van het **type van objecten van het vraaggegevensmodel** in de **y-as** sectie. Tik ![](assets/done_icon.png).
+   1. Selecteer het **calltype** bezit van het **type van objecten van het vraaggegevensmodel** in de **y-as** sectie. Tik op ![](assets/done_icon.png).
 
    1. Tik ![](assets/done_icon.png) om de diagrameigenschappen op te slaan.
 
@@ -198,7 +198,7 @@ U kunt ook een interactieve communicatie maken door automatische synchronisatie 
 
 Voer de volgende stappen uit om de inhoud van het Kanaal van het Web af te leiden gebruikend het kanaal van de Druk:
 
-1. Meld u aan bij de AEM-auteur en navigeer naar **Adobe Experience Manager** > **Formulieren** > **Formulieren en documenten**.
+1. Meld u aan bij de AEM-auteur en navigeer naar **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulieren]** > **[!UICONTROL Formulieren en documenten]**.
 1. Tik op **Maken** en selecteer **Interactieve communicatie**. De **Create Interactive Communication** tovenaar wordt getoond.
 1. Geef **create_first_ic** op in het veld **Titel** en **Naam** . Selecteer **FDM_Create_First_IC** als het Model van de Gegevens van het Vorm en tik **daarna**.
 1. In de wizard **Kanalen** :

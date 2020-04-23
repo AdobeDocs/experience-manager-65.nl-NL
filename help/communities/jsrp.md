@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: f5316a73-84e2-4a18-98c1-a384eeaa77cf
 translation-type: tm+mt
-source-git-commit: aa2c75e061e00ba74d54843a5f35bb7d82d12a92
+source-git-commit: e4456e80059479ca874681e20f8546f29ac92597
 
 ---
 
@@ -35,7 +35,7 @@ De console [van de Configuratie van de](srp-config.md) Opslag staat voor de sele
 
 In de auteursomgeving, om de console van de Configuratie van de Opslag te bereiken
 
-* Vanuit globale navigatie: **[!UICONTROL Extra > Gemeenschappen > Opslagconfiguratie]**
+* Vanuit globale navigatie: **[!UICONTROL Extra]** > **[!UICONTROL Gemeenschappen]** > **[!UICONTROL Opslagconfiguratie]**
 
 ![chlimage_1-234](assets/chlimage_1-234.png)
 
@@ -48,9 +48,8 @@ Terwijl JSRP de standaardconfiguratie is, om ervoor te zorgen dat de identieke c
 
 * Op auteur:
 
-   * Vanuit globale navigatie: **[!UICONTROL Extra > Implementatie > Replicatie]**
-   * Boomstructuur **[!UICONTROL activeren selecteren]**
-   * **[!UICONTROL Startpad]**:
+   * Vanuit globale navigatie: **[!UICONTROL Extra]** > **[!UICONTROL Implementatie]** > **[!UICONTROL Replicatie]**
+   * Selecteer **[!UICONTROL Boomstructuur]** activeren > **[!UICONTROL Startpad]**:
 
       * Bladeren naar `/conf/global/settings/community/srpc/`
    * Selecteer **[!UICONTROL Activeren]**
@@ -58,7 +57,7 @@ Terwijl JSRP de standaardconfiguratie is, om ervoor te zorgen dat de identieke c
 
 ## Gebruikersgegevens beheren {#managing-user-data}
 
-Voor informatie over *gebruikers*, *gebruikersprofielen* en *gebruikersgroepen*, die vaak worden ingevoerd in de publicatieomgeving, gaat u naar
+Voor informatie over *gebruikers*, *gebruikersprofielen* en *gebruikersgroepen*, die vaak in publicatieomgeving worden ingevoerd, gaat u naar:
 
 * [Gebruikerssynchronisatie](sync.md)
 * [Gebruikers en gebruikersgroepen beheren](users.md)
@@ -71,10 +70,10 @@ Zorg ervoor JSRP is gevormd om de standaardleverancier te zijn door de configura
 
 Ga bij alle auteurs naar de opslagconfiguratieconsole of controleer de AEM-opslagplaats op alle AEM-exemplaren en publiceer deze:
 
-* in JCR, als [/conf/global/settings/community](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community)
+* In JCR, als [/conf/global/settings/community](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community)
 
-   * Bevat geen [srpc](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc) knoop, betekent het de opslagleverancier JSRP is
-   * Als de srpc knoop bestaat en knoop [standaardconfiguratie](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc/defaultconfiguration)bevat, zouden de eigenschappen van de standaardconfiguratie JSRP moeten bepalen om de standaardleverancier te zijn
+   * Bevat geen [srpc](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc) knoop, betekent het de opslagleverancier JSRP is.
+   * Als de srpc knoop bestaat en knoop [standaardconfiguratie](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc/defaultconfiguration)bevat, zouden de eigenschappen van de standaardconfiguratie JSRP moeten bepalen om de standaardleverancier te zijn.
 
 ### UGC niet zichtbaar op instantie Auteur {#ugc-not-visible-on-author-instance}
 

@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 879ff6ca-e5f3-451d-acc2-f75142101ddd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: e545fc5e2ea139bd8ebb7f84138ba68e03d71d19
 
 ---
 
@@ -111,7 +111,7 @@ Voer de volgende stappen uit om een XDP malplaatje voor het kanaal van de Druk t
 
 Nadat u een XDP-sjabloon hebt gemaakt met de Forms Designer, moet u de sjabloon uploaden naar de AEM Forms-server, zodat de sjabloon beschikbaar is voor gebruik tijdens het maken van de interactieve communicatie.
 
-1. Selecteer **Formulieren** > **Formulieren en documenten**.
+1. Selecteer **[!UICONTROL Formulieren]** > **[!UICONTROL Formulieren en documenten]**.
 1. Tik op **Maken** > **Bestand uploaden**.
 
    Navigeer en selecteer het sjabloon **create_first_ic_print_template** (XDP) en tik op **Openen** om de XDP-sjabloon te importeren naar de AEM Forms-server.

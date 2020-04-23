@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: b9333558-6af9-46b2-9f03-3722645c69a6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
@@ -27,7 +27,7 @@ Ga als volgt te werk om een nieuwe communitysite te maken:
 De [instantie van de auteur gebruiken](https://localhost:4502/)
 
 * Aanmelden met beheerdersrechten
-* Ga naar **[UIControl Communities > Sites]**
+* Ga naar **[!UICONTROL Gemeenschappen > Sites]**
 
 * Selecteer **Maken**
 
@@ -98,7 +98,7 @@ De tags die kunnen worden toegepast op community-inhoud, worden beheerd door AEM
 
 Als u bovendien Tagnaamruimten selecteert voor de communitysite, beperkt u de selectie die wordt weergegeven bij het definiëren van catalogi en machtigingsbronnen. Zie [Tags toewijzen Hulpbronnen](/help/communities/tag-resources.md) voor belangrijke informatie.
 
-Het zoeken naar naamruimten is eenvoudig met &#39;type-ahead&#39;-zoekopdracht. Bijvoorbeeld:
+Het zoeken naar naamruimten is eenvoudig met &#39;type-ahead&#39;-zoekopdracht. Bijvoorbeeld,
 
 * Type `tut`
 * Selecteer `Tutorial`
@@ -111,7 +111,7 @@ Het zoeken naar naamruimten is eenvoudig met &#39;type-ahead&#39;-zoekopdracht. 
 
 Als u een lid van de gemeenschap (of groep leden) de site wilt laten ervaren als gemeenschapsbeheerder, gebruikt u de typecontrole en selecteert u de naam van het lid of de groep in de keuzelijst.
 
-Bijvoorbeeld:
+Bijvoorbeeld,
 
 * Type `q`
 * Quinn Harper [selecteren](/help/communities/enablement-setup.md#publishcreateenablementmembers)

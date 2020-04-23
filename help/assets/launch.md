@@ -1,5 +1,5 @@
 ---
-title: Dynamic Media Viewers integreren met Adobe Analytics en Adobe Launch
+title: Dynamic Media-viewers integreren met Adobe Analytics en Adobe Launch
 description: Met de extensie Dynamic Media Viewers voor Adobe Launch en de release van Dynamic Media Viewers 5.13 kunnen klanten van Dynamic Media, Adobe Analytics en Adobe Launch gebeurtenissen en gegevens gebruiken die specifiek zijn voor de Dynamic Media Viewers in hun Adobe Launch-configuratie.
 uuid: d218ee1c-cd2c-40c3-a3d4-b95719ae8e98
 contentOwner: Rick Brough
@@ -9,12 +9,12 @@ content-type: reference
 discoiquuid: f4051767-182e-4cfd-9dfc-8f516378e0b6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
+source-git-commit: e8f97f6164a5021609917b99feb0608bcea59553
 
 ---
 
 
-# Dynamic Media Viewers integreren met Adobe Analytics en Adobe Launch {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
+# Dynamic Media-viewers integreren met Adobe Analytics en Adobe Launch {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
 
 ## Wat is de integratie van Dynamic Media Viewers met Adobe Analytics en Adobe Launch? {#what-is-dynamic-media-viewers-integration-with-adobe-analytics-and-adobe-launch}
 
@@ -24,7 +24,7 @@ Dankzij deze integratie kunt u het gebruik van Dynamic Media Viewers op uw websi
 
 Zie [Adobe Extension](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/overview.html) in de gebruikershandleiding bij Starten van ervaringsplatform voor meer informatie over extensies.
 
-**** Wie moet deze documentatie lezen? Sitebeheerders, ontwikkelaars op het AEM-platform en beheerders in bewerkingen.
+**Doelgroep van deze documentatie:** Sitebeheerders, ontwikkelaars op het AEM-platform en beheerders in bewerkingen.
 
 ### Beperkingen van de integratie {#limitations-of-the-integration}
 
@@ -40,7 +40,7 @@ Het belangrijkste gebruiksscenario voor de integratie met Adobe Launch zijn klan
 
 Zie [Informatie over het bijhouden van dynamische mediasviewers in AEM-sites](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersinAEMSites).
 
-Een tweede gebruiksgeval dat de integratie steunt zijn die klanten die slechts de Middelen van AEM, of Dynamische Klassiek van Media gebruiken. In dergelijke gevallen ontvangt u de insluitcode voor uw viewer en voegt u deze toe aan de websitepagina. Vervolgens haalt u de URL voor de productie van de Adobe-bibliotheek bij Starten op en voegt u deze handmatig toe aan de webpaginacode.
+Een tweede gebruiksgeval dat de integratie steunt zijn die klanten die slechts de Middelen van AEM, of Dynamische Klassiek van Media gebruiken. In dergelijke gevallen ontvangt u de insluitcode voor uw viewer en voegt u deze toe aan de websitepagina. Vervolgens haalt u de URL voor de productie van de bibliotheek bij Adobe Launch op en voegt u deze handmatig toe aan de code van de webpagina.
 
 Zie [Informatie over het bijhouden van Dynamic Media-viewers met gebruik van ingesloten code](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersusingEmbedcode).
 
@@ -144,7 +144,7 @@ Zie Dynamische media-elementen [toevoegen aan pagina&#39;s met Adobe-sites](http
 
 Klanten die geen gebruik maken van AEM-sites of die geen gebruik maken van Dynamic Media-viewers voor webpagina&#39;s buiten AEM-sites, of beide, kunnen nog steeds de Adobe Launch-integratie gebruiken.
 
-U moet de configuratiestappen van de het [Vormen Analytics](#configuringadobeanalytics) van Adobe en het [Vormen de sectie van de Lancering](#configuringadobelaunch) van Adobe voltooien. Aan AEM gerelateerde configuratiestappen zijn echter niet nodig.
+U moet de configuratiestappen van de secties [Adobe Analytics configureren](#configuringadobeanalytics) en [Adobe Launch configureren](#configuringadobelaunch) voltooien. Aan AEM gerelateerde configuratiestappen zijn echter niet nodig.
 
 Na de juiste configuratie kunt u ondersteuning voor het starten van Adobe toevoegen aan een webpagina met een Dynamic Media-viewer.
 
@@ -185,11 +185,11 @@ Als u deze optie inschakelt *zonder* dat Adobe Media Analytics for Audio and Vid
 
 ### Informatie over gegevenselementen in de extensie Dynamische media-viewers {#about-data-elements-in-the-dynamic-media-viewers-extension}
 
-Het enige type gegevenselement dat de extensie Dynamische media Viewers biedt, is **[!UICONTROL Viewer Event]** in de vervolgkeuzelijst Type **** gegevenselement.
+The only Data Element type that the Dynamic Media Viewers extension provides is **[!UICONTROL Viewer Event]** from the **[!UICONTROL Data Element Type]** drop-down list.
 
 Als deze optie is geselecteerd, maakt de Data Element-editor een formulier met twee velden:
 
-* **[!UICONTROL Het gegevenstype]** van een DM-viewer-gebeurtenis - een vervolgkeuzelijst die alle viewergebeurtenissen identificeert die door de extensie Dynamic Media Viewers worden ondersteund en die argumenten bevatten, plus een speciaal **[!UICONTROL COMMON]** -item. Een **[!UICONTROL GEMEENSCHAPPELIJK]** punt vertegenwoordigt een lijst van gebeurtenisparameters die voor alle type gebeurtenissen gemeenschappelijk zijn die door de kijkers worden verzonden.
+* **[!UICONTROL Het gegevenstype]** van een DM-viewer-gebeurtenis - een vervolgkeuzelijst die alle viewergebeurtenissen identificeert die door de extensie Dynamic Media Viewers worden ondersteund en die argumenten bevatten, plus een speciaal **[!UICONTROL COMMON]** -item. A **[!UICONTROL COMMON]** item represents a list of event parameters that are common to all type of events sent by the viewers.
 * **[!UICONTROL Parameter]** bijhouden: een argument van de geselecteerde gebeurtenis van de Dynamic Media-viewer.
 
 ![image2019-7-22_12-5-46](assets/image2019-7-22_12-5-46.png)
@@ -198,9 +198,9 @@ Zie de naslaggids [voor](https://marketing.adobe.com/resources/help/en_US/s7/vie
 
 Laten we nu eens kijken naar de levenscyclus van het *gegevenselement* van Dynamic Media Viewers. De waarde van een dergelijk gegevenselement wordt gevuld nadat de bijbehorende dynamische mediaviewer-gebeurtenis op de pagina plaatsvindt. Als het gegevenselement bijvoorbeeld naar de gebeurtenis **[!UICONTROL LOAD]** en het argument &#39;asset&#39; verwijst, ontvangt de waarde van dat gegevenselement geldige gegevens nadat de viewer de gebeurtenis LOAD voor de eerste keer uitvoert. Als het gegevenselement naar de **[!UICONTROL ZOOM]** -gebeurtenis en het bijbehorende &quot;scale&quot;-argument verwijst, blijft de waarde van dat gegevenselement leeg totdat de gebruiker een **[!UICONTROL ZOOM]** -gebeurtenis voor het eerst verzendt.
 
-Op dezelfde manier worden de waarden van Data Elements automatisch bijgewerkt wanneer de viewer een overeenkomende gebeurtenis op de pagina verzendt. De waardupdate gebeurt zelfs als de bepaalde gebeurtenis niet in de configuratie van de Regel wordt gespecificeerd. Bijvoorbeeld, als het Element van Gegevens **[!UICONTROL ZoomScale]** voor &quot;schaal&quot;parameter van de ZOOM gebeurtenis wordt bepaald, maar de enige regel in de configuratie van de Regel wordt teweeggebracht door de **[!UICONTROL gebeurtenis van de Lading]** , wordt de waarde van **[!UICONTROL ZoomScale]** nog bijgewerkt telkens als een gebruiker gezoem binnen de kijker in werking stelt.
+Op dezelfde manier worden de waarden van data-elementen automatisch bijgewerkt wanneer de viewer een overeenkomstige gebeurtenis op de pagina verzendt. De waarde-update gebeurt zelfs als de specifieke gebeurtenis niet in de regelconfiguratie is opgegeven. For example, if Data Element **[!UICONTROL ZoomScale]** is defined for &quot;scale&quot; parameter of the ZOOM event, but the only rule present in the Rule configuration is triggered by the **[!UICONTROL LOAD]** event, the value of **[!UICONTROL ZoomScale]** is still updated every time a user runs zoom inside the viewer.
 
-Elke Dynamic Media-viewer heeft een unieke id op de webpagina. Het gegevenselement houdt de waarde zelf bij en de gebruiker die de waarde heeft ingevuld. Dit betekent dat als er meerdere viewers op dezelfde pagina zijn en er een **[!UICONTROL gegevenselement AssetName]** is dat naar de gebeurtenis **[!UICONTROL LOAD]** en het argument &#39;asset&#39; ervan verwijst, het gegevenselement **[!UICONTROL AssetName]** een verzameling elementnamen bijhoudt die worden gekoppeld aan elke viewer die op de pagina is geladen.
+Elke viewer voor dynamische media heeft een unieke id op de webpagina. Het data-element houdt de waarde zelf bij en de viewer die de waarde heeft ingevuld. This means that if there are several viewers on the same page, and there is an **[!UICONTROL AssetName]** Data Element that points to the **[!UICONTROL LOAD]** event and its &quot;asset&quot; argument, the **[!UICONTROL AssetName]** Data Element maintains a collection of asset names that are associated with each viewer loaded on the page.
 
 De exacte waarde die door het gegevenselement wordt geretourneerd, is afhankelijk van de context. Als het gegevenselement in een Regel wordt gevraagd die door een Dynamische de kijkergebeurtenis van Media werd teweeggebracht, dan is de waarde van het Element van Gegevens teruggekeerd voor de kijker die de Regel in werking stelde. En als het gegevenselement wordt aangevraagd in een regel die is geactiveerd door een gebeurtenis van een andere Adobe-extensie voor starten, is de waarde van het gegevenselement de waarde van de viewer die als laatste het gegevenselement heeft bijgewerkt.
 
@@ -227,7 +227,7 @@ De activiteit van de eindgebruiker resulteert in de volgende twee het volgen vra
 * De eerste vraag komt voor omdat de Regel **[!UICONTROL TrackPan]** wordt teweeggebracht wanneer de gebruiker in *viewer1* pant. Die vraag verzendt 50% als waarde van het Element van Gegevens **[!UICONTROL ZoomScale]** omdat het Element van Gegevens zal weten dat de Regel door *viewer1* wordt teweeggebracht en de overeenkomstige schaalwaarde haalt;
 * De tweede vraag komt voor omdat de Regel **[!UICONTROL TrackKey]** wordt teweeggebracht wanneer de gebruiker op een sleutel op het toetsenbord duwde. Die vraag verzendt 25% als waarde van het Element van Gegevens **[!UICONTROL ZoomScale]** omdat de Regel niet door de kijker werd teweeggebracht. Als dusdanig, keert het Element van Gegevens de meest bijgewerkte waarde terug.
 
-Het voorbeeld hierboven heeft ook invloed op de levensduur van de waarde voor het gegevenselement. De waarde van het gegevenselement dat door de Dynamic Media Viewer wordt beheerd, wordt opgeslagen in de Adobe Launch-bibliotheekcode, zelfs nadat de viewer zelf op de webpagina is verwijderd. Dit betekent dat als er een Regel is die door een niet-Dynamische uitbreiding van de Kijker van Media wordt teweeggebracht en verwijzingen zoals het Element van Gegevens, het Element van Gegevens de laatste bekende waarde terugkeert, zelfs als de kijker niet meer aanwezig op de Web-pagina is.
+Het voorbeeld hierboven heeft ook invloed op de levensduur van de waarde voor het gegevenselement. De waarde van het gegevenselement dat door de Dynamic Media Viewer wordt beheerd, wordt opgeslagen in de Adobe Launch-bibliotheekcode, zelfs nadat de viewer zelf op de webpagina is verwijderd. Dit betekent dat als er een Regel is die door een niet-Dynamische uitbreiding van de Kijker van Media wordt teweeggebracht en verwijzingen zoals het Element van Gegevens, het Element van Gegevens de laatste bekende waarde terugkeert, zelfs als de kijker niet meer op de Web-pagina aanwezig is.
 
 In elk geval worden de waarden van gegevenselementen die door Dynamic Media Viewers worden aangestuurd, niet opgeslagen op de lokale opslag of op de server. in plaats daarvan worden ze alleen in de Adobe Launch-bibliotheek op de client bewaard. Waarden van een dergelijk gegevenselement verdwijnen als de webpagina opnieuw wordt geladen.
 
@@ -239,7 +239,7 @@ In de redacteur van de Regel, voegt de uitbreiding nieuwe configuratieopties voo
 
 #### Informatie over de Events-editor {#about-the-events-editor}
 
-In de gebeurteniseditor voegt de extensie Dynamic Media Viewers een nieuw **[!UICONTROL gebeurtenistype]** met de naam **[!UICONTROL Viewer Event]** toe.
+In the Event editor, the Dynamic Media Viewers extension adds a new **[!UICONTROL Event Type]** called **[!UICONTROL Viewer Event]**.
 
 Als deze optie is geselecteerd, rendert de gebeurteniseditor de vervolgkeuzelijst **[!UICONTROL Dynamic Media Viewer-gebeurtenissen]** en worden hierin alle beschikbare gebeurtenissen weergegeven die door Dynamic Media-viewers worden ondersteund.
 
@@ -256,7 +256,7 @@ De eenvoudigste methode om dat te doen is het volgende twee-stap proces te volto
 
 ![image2019-7-10_20-41-52](assets/image2019-7-10_20-41-52.png)
 
-Het is echter mogelijk om een alternatieve aanpak te gebruiken en het maken van gegevenselementen te omzeilen. U kunt rechtstreeks naar een argument van een Dynamic Media Viewer-gebeurtenis verwijzen door de volledig gekwalificeerde naam van het gebeurtenisargument in te voeren in het veld **[!UICONTROL Waardeinvoer]** van de variabele Analytics-toewijzing, omringd door procenttekens (%). Bijvoorbeeld,
+Het is echter mogelijk om een alternatieve manier te gebruiken en het maken van data-elementen te omzeilen. You can directly reference an argument from a Dynamic Media Viewer event by entering the fully qualified name of the event argument in the **[!UICONTROL value]** input field of the Analytics variable assignment, surrounded by percent (%) signs. Bijvoorbeeld,
 
 `%event.detail.dm.LOAD.asset%`
 
@@ -264,7 +264,7 @@ Het is echter mogelijk om een alternatieve aanpak te gebruiken en het maken van 
 
 Er is een belangrijk verschil tussen het gebruik van Data Elements en de verwijzing naar directe-gebeurtenisargumenten. Voor het Element van Gegevens, maakt het niet uit welke gebeurtenis de Vastgestelde actie van Variabelen teweegbrengt, de gebeurtenis die de Regel teweegbrengt kan niet met Dynamische Kijker (als een muisklik op de Web-pagina van de uitbreiding van de Kern) niet van belang zijn. Maar wanneer het gebruiken van een directe argumentverwijzing is het belangrijk om ervoor te zorgen dat de gebeurtenis die de regel teweegbrengt aan het gebeurtenisargument beantwoordt dat het verwijst.
 
-Als bijvoorbeeld naar een verwijzing wordt verwezen, wordt de juiste elementnaam `%event.detail.dm.LOAD.asset%` geretourneerd als de regel wordt geactiveerd door de gebeurtenis **[!UICONTROL LOAD]** van de extensie Dynamic Media Viewer. Er wordt echter een lege waarde voor een andere gebeurtenis geretourneerd.
+For example, referencing `%event.detail.dm.LOAD.asset%` returns the correct asset name if the Rule is triggered by the **[!UICONTROL LOAD]** event of the Dynamic Media Viewer extension. Er wordt echter een lege waarde voor elke andere gebeurtenis geretourneerd.
 
 In de volgende tabel worden de gebeurtenissen van de Dynamic Media Viewer en de ondersteunde argumenten weergegeven:
 
@@ -437,7 +437,7 @@ Zie ook [Analytics Implementation Guide](https://docs.adobe.com/content/help/en/
 
 ### Een rapportsuite selecteren {#selecting-a-report-suite}
 
-1. Selecteer in de rechterbovenhoek van de pagina Adobe Analytics, rechts van het veld **[!UICONTROL Zoekrapporten]** , de juiste rapportsuite in de vervolgkeuzelijst. Als er meerdere rapportsuite beschikbaar is en u niet zeker weet welke suite moet worden gebruikt, neemt u contact op met de beheerder van Adobe Analytics. Deze beheerder kan u helpen bij het selecteren van de rapportsuite die moet worden gebruikt.
+1. Near the upper-right corner of the Adobe Analytics page, to the right of the **[!UICONTROL Search Reports]** field, select the correct report suite from the drop-down list. Als er meerdere rapportsuites beschikbaar zijn en u niet zeker weet welke suite u moet gebruiken, neemt u contact op met uw Adobe Analytics-beheerder. Deze beheerder kan u helpen bij het selecteren van de rapportsuite die moet worden gebruikt.
 
    In de onderstaande afbeelding heeft een gebruiker een rapportsuite met de naam *DynamicMediaViewersExtensionDoc* gemaakt en deze geselecteerd in de vervolgkeuzelijst. De naam van de rapportsuite is alleen ter illustratie; de naam van de rapportsuite die u uiteindelijk selecteert, verschilt.
 
@@ -464,7 +464,7 @@ Zie ook [Analytics Implementation Guide](https://docs.adobe.com/content/help/en/
    Als u een nieuwe variabele Aangepast verkeer wilt inschakelen, klikt u in Adobe Analytics op de werkbalk op **[!UICONTROL Beheer > Suites]** rapporteren.
 
 1. Selecteer op de pagina **[!UICONTROL Report Suite Manager]** het juiste rapport en klik vervolgens op de werkbalk op Instellingen **[!UICONTROL bewerken > Verkeer > Verkeersvariabelen]**.
-1. Daar, neem ongebruikte variabele op, geef het een beschrijvende naam ( de activa van de **[!UICONTROL Kijker (pro 30)]**) en verander combodoos in &quot;Toegelaten&quot;in de Toegelaten kolom.
+1. Daar, neem ongebruikte variabele op, geef het een beschrijvende naam (activa van de **[!UICONTROL Kijker (pro 30)]**) en verander combodoos in &quot;Toegelaten&quot;in de Toegelaten kolom.
 
    De volgende schermafbeelding is een voorbeeld van een variabele van het Verkeer van de Douane ( **[!UICONTROL prop30]**) voor het volgen van een activanaam die door de kijker wordt gebruikt:
 
@@ -480,7 +480,7 @@ Zie ook [Analytics Implementation Guide](https://docs.adobe.com/content/help/en/
 
    Het rapport voor de elementvariabele **[!UICONTROL Viewer (prop 30)]** is bijvoorbeeld beschikbaar in het menu Rapporten onder **[!UICONTROL Aangepast verkeer > Aangepast verkeer 21-30 > Viewer-element (prop 30)]**.
 
-   Als u dit rapport direct bezoekt nadat **[!UICONTROL Viewer Asset (prop 30)]** is gemaakt, worden er geen gegevens weergegeven. dat wordt op dit moment in de integratie verwacht .
+   Visiting this report right after **[!UICONTROL Viewer asset (prop 30)]** creation shows no data; that is expected at this point in the integration.
 
    ![image2019-6-26_23-12-49](assets/image2019-6-26_23-12-49.png)
 
@@ -508,7 +508,7 @@ Een eigenschap in Adobe Launch is een benoemde configuratie die al uw instelling
 Zie ook [Een eigenschap](https://docs.adobe.com/content/help/en/launch/using/implement/configure/create-a-property.html)maken.
 
 1. Klik in Adobe Launch op **[!UICONTROL New Property]**.
-1. Typ in het dialoogvenster Eigenschap **** maken in het veld **[!UICONTROL Naam]** een beschrijvende naam, zoals de titel van uw website. Bijvoorbeeld, `DynamicMediaViewersProp.`
+1. In the **[!UICONTROL Create Property]** dialog box, in the **[!UICONTROL Name]** field, type a descriptive name, such as the title of your website. Bijvoorbeeld, `DynamicMediaViewersProp.`
 1. Voer in het veld **[!UICONTROL Domeinen]** het domein van uw website in.
 1. Schakel in de vervolgkeuzelijst **[!UICONTROL Geavanceerde opties]** de optie **[!UICONTROL Configureren in voor de ontwikkeling van extensies (kan later niet worden gewijzigd)]** voor het geval dat de extensie die u wilt gebruiken, in dit geval nog niet wordt vrijgegeven voor *Dynamic Media Viewers*.
 
@@ -534,9 +534,9 @@ Zie [Experience Cloud ID Service Extension](https://docs.adobe.com/content/help/
 
 * (Vereist) *Adobe Analytics* -extensie
 
-Als u deze extensie wilt configureren, hebt u eerst de rapportsuite-id nodig die u vindt in Adobe Analytics, onder **[!UICONTROL Admin > Report Suite]**, onder de kolomkop **[!UICONTROL Report Suite ID]** .
+To configure this extension, you will first need the Report Suite ID found in Adobe Analytics, under **[!UICONTROL Admin > Report Suite]**, under the **[!UICONTROL Report Suite ID]** column header.
 
-(Alleen voor demonstratiedoeleinden wordt de rapportsuite-id van de **[!UICONTROL DynamicMediaViewersExtensionDoc]** Report Suite gebruikt in de volgende schermafbeeldingen. Deze id is gemaakt en gebruikt in [Een rapportsuite](#selecting-a-report-suite) eerder selecteren.)
+(For demonstration purposes only, the Report Suite ID of the **[!UICONTROL DynamicMediaViewersExtensionDoc]** Report Suite will be used in the following screenshots. Deze id is eerder gemaakt en gebruikt in [Een rapportsuite selecteren](#selecting-a-report-suite).)
 
 ![image2019-7-8_16-45-34](assets/image2019-7-8_16-45-34.png)
 
@@ -578,7 +578,7 @@ In de Lancering van Adobe, creeer de Elementen en de Regels van Gegevens die noo
 
 Zie [Hoe gegevens- en gebeurtenistracering werkt in de integratie](#how-data-and-event-tracking-works-in-the-integration) voor een overzicht van het bijhouden van de wijzigingen bij Adobe Launch.
 
-Zie [Voorbeeldconfiguratie](#sample-configuration) voor een voorbeeldconfiguratie in Adobe Launch die aantoont hoe u een elementnaam bij het laden van een viewer kunt bijhouden.
+Zie [Voorbeeldconfiguratie](#sample-configuration) voor een voorbeeldconfiguratie in Adobe Launch die laat zien hoe u een elementnaam bij het laden van een viewer kunt bijhouden.
 
 Zie De extensie [Dynamische media-viewers](#configuring-the-dynamic-media-viewers-extension) configureren voor uitgebreide informatie over de mogelijkheden van de extensie.
 
@@ -619,10 +619,10 @@ Bij het publiceren van een bibliotheek worden de volgende twee stappen uitgevoer
 
    >[!NOTE]
    >
-   >De volgende keer dat u wijzigingen aanbrengt in de configuratie van Adobe Launch, gaat u naar het tabblad **[!UICONTROL Publiceren]** onder de configuratie **[!UICONTROL Eigenschap]** en klikt u op de eerder gemaakte bibliotheek.
+   >The next time you make changes to your Adobe Launch configuration, go to the **[!UICONTROL Publishing]** tab under the **[!UICONTROL Property]** configuration, then click your previously created library.
    >
    >
-   >Klik in het publicatiescherm van de bibliotheek op **[!UICONTROL Alle gewijzigde bronnen]** toevoegen en klik vervolgens op **[!UICONTROL Opslaan en bouwen voor ontwikkeling]**.
+   >Klik in het publicatiescherm van de bibliotheek op Alle gewijzigde bronnen **** toevoegen en klik vervolgens op **[!UICONTROL Opslaan en bouwen voor ontwikkeling]**.
 
 #### Een bibliotheek omhoog verplaatsen via het omgevingsniveau {#moving-a-library-up-through-environment-levels}
 
@@ -683,7 +683,7 @@ De configuratie AEM bestaat uit de volgende twee belangrijke stappen:
 
    >[!NOTE]
    >
-   >Open ***nu de pagina Configuratie technische account van*** Adobe IMS **** . Sluit de pagina ***niet*** en ***klik niet*** op Volgende. U keert later in de stappen terug naar deze pagina.
+   >At this point, ***leave open*** the **[!UICONTROL Adobe IMS Technical Account Configuration]** page; ***do not*** close the page and ***do not*** click Next. U keert later in de stappen terug naar deze pagina.
 
    ![2019-07-25_12-52-24](assets/2019-07-25_12-52-24.png)
 
@@ -694,7 +694,7 @@ De configuratie AEM bestaat uit de volgende twee belangrijke stappen:
 
    ![2019-07-25_13-04-20](assets/2019-07-25_13-04-20.png)
 
-1. Schakel op de tweede **[!UICONTROL pagina Een nieuwe integratiepagina]** maken het keuzerondje **[!UICONTROL Experience Platform Launch API]** in (inschakelen). Klik in de rechterbenedenhoek van de pagina op **[!UICONTROL Doorgaan]**.
+1. Schakel op de tweede **[!UICONTROL pagina Een nieuwe integratiepagina]** maken het keuzerondje **[!UICONTROL Experience Platform Launch API]** in (inschakelen). In the lower-right corner of the page, click **[!UICONTROL Continue]**.
 
    ![2019-07-25_13-13-54](assets/2019-07-25_13-13-54.png)
 
@@ -706,7 +706,7 @@ De configuratie AEM bestaat uit de volgende twee belangrijke stappen:
 
    * Upload in het gebied **[!UICONTROL Certificaten]** met openbare sleutel het bestand met de openbare sleutel (*.crt) dat u eerder in deze stappen hebt gedownload.
 
-   * Selecteer **[!UICONTROL Admin onder de kop]** Selecteer een rol voor de functie Experience Platform Launch API ****.
+   * Under the **[!UICONTROL Select a role for Experience Platform Launch API]** heading, select **[!UICONTROL Admin]**.
 
    * Selecteer onder de kop **[!UICONTROL Selecteer een of meer productprofielen voor Experience Platform Launch API]** het productprofiel met de naam **[!UICONTROL Launch - &lt;uw_bedrijf_naam>]**.
    ![2019-07-25_13-49-18](assets/2019-07-25_13-49-18.png)
@@ -716,11 +716,11 @@ De configuratie AEM bestaat uit de volgende twee belangrijke stappen:
 
    ![2019-07-25_14-16-33](assets/2019-07-25_14-16-33.png)
 
-1. Er wordt een pagina met integratiedetails weergegeven, ****ongeveer als volgt:
+1. Er wordt een pagina met integratiedetails weergegeven, die lijkt op het volgende: ****
 
    >[!NOTE]
    >
-   >***Laat deze pagina*** met integratiegegevens open. U zult verschillende stukken van informatie van de lusjes van het **[!UICONTROL Overzicht]** en van **[!UICONTROL JWT]** in slechts een ogenblik nodig hebben.
+   >***Laat deze pagina met integratiedata open***. You will need various pieces of information from the **[!UICONTROL Overview]** and **[!UICONTROL JWT]** tabs in just a moment.
 
    ![2019-07-25_14-35-30](assets/2019-07-25_14-35-30.png)
 
@@ -728,7 +728,7 @@ De configuratie AEM bestaat uit de volgende twee belangrijke stappen:
 
 1. Ga terug naar de pagina Configuratie **[!UICONTROL van de technische account van]** Adobe IMS die u eerder hebt geopend. Klik in de rechterbovenhoek van de pagina op **[!UICONTROL Volgende]** om de pagina **[!UICONTROL Account]** te openen in het venster Configuratie **[!UICONTROL technische account van]** Adobe IMS.
 
-   (Als u de pagina per ongeluk eerder hebt gesloten, gaat u terug naar de auteur van AEM en klikt u op **[!UICONTROL Gereedschappen > Beveiliging > Adobe IMS Configurations]**. Klik op **[!UICONTROL Maken]**. Selecteer **[!UICONTROL Adobe Launch in de vervolgkeuzelijst]** Cloud Solution ****. Selecteer in de vervolgkeuzelijst **[!UICONTROL Certificaat]** de naam van het eerder gemaakte certificaat.)
+   (Als u de pagina per ongeluk eerder hebt gesloten, gaat u terug naar de auteur van AEM en klikt u op **[!UICONTROL Gereedschappen > Beveiliging > Adobe IMS Configurations]**. Klik op **[!UICONTROL Maken]**. Selecteer **[!UICONTROL Adobe Launch in de vervolgkeuzelijst]** Cloud Solution ****. In the **[!UICONTROL Certificate]** drop-down list, select the name of the previously created certificate.)
 
    ![2019-07-25_20-57-50](assets/2019-07-25_20-57-50.png)
 
@@ -744,7 +744,7 @@ De configuratie AEM bestaat uit de volgende twee belangrijke stappen:
 
    * **[!UICONTROL Titel]** - Voer een beschrijvende accounttitel in.
    * **[!UICONTROL De Server]** van de vergunning - terugkeer naar de de detailpagina van de Integratie die u vroeger opende. Klik op het tabblad **[!UICONTROL JWT]** . Kopieer de servernaam, zonder het pad, zoals hieronder gemarkeerd.
-   Ga terug naar de pagina **[!UICONTROL Account]** en plak de naam in het desbetreffende veld.
+   Return to the **[!UICONTROL Account]** page, then paste the name into the respective field.
 Bijvoorbeeld, `https://ims-na1.adobelogin.com/`(de naam van de voorbeeldserver is alleen ter illustratie)
 
    ![2019-07-25_15-01-53](assets/2019-07-25_15-01-53.png)
@@ -753,7 +753,7 @@ Bijvoorbeeld, `https://ims-na1.adobelogin.com/`(de naam van de voorbeeldserver i
 
 1. **[!UICONTROL API-sleutel]** - Ga terug naar de pagina met integratiegegevens. Klik op het tabblad **[!UICONTROL Overzicht]** en klik vervolgens rechts van het veld **[!UICONTROL API-sleutel (client-id)]** op **[!UICONTROL Kopiëren]**.
 
-   Ga terug naar de pagina **[!UICONTROL Account]** en plak de sleutel in het desbetreffende veld ****.
+   Return to the **[!UICONTROL Account]** page, then paste the key into the respective ****field.
 
    ![2019-07-25_14-35-333](assets/2019-07-25_14-35-333.png)
 
@@ -761,11 +761,11 @@ Bijvoorbeeld, `https://ims-na1.adobelogin.com/`(de naam van de voorbeeldserver i
 
 1. **[!UICONTROL Clientgeheim]**- Ga terug naar de pagina met integratiegegevens. Klik op het tabblad **[!UICONTROL Overzicht]** op Client **[!UICONTROL Secret]** ophalen. Rechts van het geheime **[!UICONTROL gebied van de]** Cliënt, klik **[!UICONTROL Exemplaar]**.
 
-   Ga terug naar de pagina **[!UICONTROL Account]** en plak de sleutel in het desbetreffende veld.
+   Return to the **[!UICONTROL Account]** page, then paste the key into the respective field.
 
 1. **[!UICONTROL Payload]** - Ga terug naar de pagina met integratiegegevens. Kopieer op het tabblad **[!UICONTROL JWT]** in het veld JWT Payload de gehele JSON-objectcode.
 
-   Ga terug naar de pagina **[!UICONTROL Account]** en plak de code in het desbetreffende veld.
+   Return to the **[!UICONTROL Account]** page, then paste the code into the respective field.
 
    ![2019-07-25_21-59-12](assets/2019-07-25_21-59-12.png)
 
@@ -775,7 +775,7 @@ Bijvoorbeeld, `https://ims-na1.adobelogin.com/`(de naam van de voorbeeldserver i
 
    ![2019-07-25_22-08-30](assets/2019-07-25_22-08-30.png)
 
-1. Klik in de rechterbovenhoek van de pagina **[!UICONTROL Account]** op **[!UICONTROL Maken]**.
+1. Near the upper-right corner of the **[!UICONTROL Account]** page, click **[!UICONTROL Create]**.
 
    Als AEM IMS is geconfigureerd, wordt er een nieuwe IMSAcount weergegeven onder **[!UICONTROL Adobe IMS Configurations]**.
 
@@ -793,7 +793,7 @@ Bijvoorbeeld, `https://ims-na1.adobelogin.com/`(de naam van de voorbeeldserver i
 
    ![2019-07-26_12-20-06](assets/2019-07-26_12-20-06.png)
 
-1. Klik in de linkerbovenhoek van de pagina op **[!UICONTROL Maken]**.
+1. Near the upper-left corner of the page, click **[!UICONTROL Create]**.
 1. Vul de volgende velden in op de pagina **[!UICONTROL Algemeen]** (1/3 pagina&#39;s) van het venster **[!UICONTROL Adobe-startconfiguratie]** maken:
 
    * **[!UICONTROL Titel]** - Voer een beschrijvende configuratitel in. Bijvoorbeeld, `We.Retail Launch cloud configuration`.
@@ -810,7 +810,7 @@ Bijvoorbeeld, `https://ims-na1.adobelogin.com/`(de naam van de voorbeeldserver i
 1. Klik in de linkerbovenhoek op **[!UICONTROL Volgende]**.
 1. Vul het volgende veld in op de pagina **[!UICONTROL Staging]** (2/3 pagina&#39;s) van het venster **[!UICONTROL Adobe Launch Configuration]** (Adobe Launch Configuration):
 
-   Controleer in het veld **[!UICONTROL Bibliotheek URI]** de locatie van de testversie van uw Adobe-startbibliotheek. Dit veld wordt automatisch door AEM ingevuld.
+   In the **[!UICONTROL Library URI]** field, check the location of the staging version of your Adobe Launch library. Dit veld wordt automatisch ingevuld door AEM.
 
    Alleen ter illustratie worden in deze stap Adobe Launch-bibliotheken gebruikt die zijn geïmplementeerd op Adobe CDN.
 
@@ -821,17 +821,15 @@ Bijvoorbeeld, `https://ims-na1.adobelogin.com/`(de naam van de voorbeeldserver i
    >
    >Bijvoorbeeld: `//assets.adobetm.com/launch-xxxx`.
 
-   De pagina **[!UICONTROL Staging]** moet er als volgt uitzien. De opties **[!UICONTROL Archiveren]** en Bibliotheek asynchroon **** laden zijn ***niet*** ingesteld:
+   Your **[!UICONTROL Staging]** page should look similar to the following. De opties **[!UICONTROL Archiveren]** en Bibliotheek asynchroon **** laden zijn ***niet*** ingesteld:
 
    ![image2019-7-15_15-21-8](assets/image2019-7-15_15-21-8.png)
 
 1. Klik in de rechterbovenhoek op **[!UICONTROL Volgende]**.
-1. Op de pagina **[!UICONTROL Productie]** (3/3 pagina&#39;s) van het venster van de Configuratie **[!UICONTROL van de Lancering van Adobe van de]** Making, indien nodig, bevestig auto-bevolkte productie URI gelijkend op hoe het op de vorige **[!UICONTROL Staging]** pagina werd gedaan.
+1. On the **[!UICONTROL Production]** page (3/3 pages) of the **[!UICONTROL Create Adobe Launch Configuration]** window, if needed, fix the auto-populated production URI similar to how it was done on the previous **[!UICONTROL Staging]** page.
 1. Klik in de rechterbovenhoek op **[!UICONTROL Maken]**.
 
    Uw nieuwe Adobe Launch Cloud Configuration wordt nu gemaakt en wordt naast uw website weergegeven, net als in het volgende voorbeeld:
-
-   ![]()
 
 1. Selecteer uw nieuwe Adobe Launch Cloud Configuration (een vinkje links van de configuratietotel wanneer deze is geselecteerd). Klik op **[!UICONTROL Publiceren]** op de werkbalk.
 

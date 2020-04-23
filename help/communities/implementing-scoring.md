@@ -12,12 +12,12 @@ discoiquuid: ea033bb9-cb92-4c93-855f-8c902999378c
 docset: aem65
 tagskeywords: scoring, badging, badges, gamification
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ---
 
 
-# Scores en badges van gemeenschappen{#communities-scoring-and-badges}
+# Scores en badges van gemeenschappen {#communities-scoring-and-badges}
 
 ## Overzicht {#overview}
 
@@ -25,10 +25,10 @@ Met de functie voor scoren en badges van AEM-gemeenschappen kunnen leden van de 
 
 De belangrijkste aspecten van scoring en badges zijn:
 
-* [badges](#assign-and-revoke-badges) toewijzen om de rol van lid van de gemeenschap te bepalen
+* [Wijs badges](#assign-and-revoke-badges) toe om de rol van een lid in de gemeenschap te identificeren.
 
-* [basistoekenning van toegangspasjes](#enable-scoring) aan de leden om hun deelname aan te moedigen ( hoeveelheid geschapen inhoud )
-* [geavanceerde toekenning van toegangspasjes](/help/communities/advanced.md) om leden te identificeren als deskundigen ( kwaliteit van de inhoud )
+* [Basistoekenning van toegangspasjes](#enable-scoring) aan de leden om hun deelname aan te moedigen (hoeveelheid geschapen inhoud).
+* [Geavanceerde toekenning van badges](/help/communities/advanced.md) om leden te identificeren als experts (kwaliteit van de inhoud die is gemaakt).
 
 **Let** op: het toewijzen van badges is [niet standaard](/help/communities/implementing-scoring.md#main-pars-text-237875536)ingeschakeld.
 
@@ -36,13 +36,14 @@ De belangrijkste aspecten van scoring en badges zijn:
 >
 >De implementatiestructuur die zichtbaar is in CRXDE Lite kan worden gewijzigd zodra de interface beschikbaar is.
 
+
 ## Badges {#badges}
 
 De badges worden onder de naam van een lid geplaatst om hun rol of hun status in de gemeenschap aan te geven. Badges kunnen als een afbeelding of als een naam worden weergegeven. Wanneer de naam als afbeelding wordt weergegeven, wordt deze opgenomen als alternatieve tekst voor toegankelijkheid.
 
 Standaard bevinden badges zich in de dataopslag op
 
-* /etc/community/badging/images
+* `/etc/community/badging/images`
 
 Als ze op een andere locatie zijn opgeslagen, moeten ze door iedereen toegankelijk worden gelezen.
 
@@ -60,13 +61,13 @@ Toegewezen (en geawade) badges worden opgeslagen in geselecteerde [SRP](/help/co
 
 De release bevat drie badges die zijn gebaseerd op rollen:
 
-* moderator
+* **moderator**
    `/etc/community/badging/images/moderator/jcr:content/moderator.png`
 
-* groepsbeheerder
+* **groepsbeheerder**
    `/etc/community/badging/images/group-manager/jcr:content/group-manager.png`
 
-* geprivilegieerd lid
+* **geprivilegieerd lid**
    `/etc/community/badging/images/privileged-member/jcr:content/privileged-member.png`
 
 ![chlimage_1-98](assets/chlimage_1-98.png)
@@ -77,18 +78,18 @@ Op basis van beloningen ontvangen de leden van de gemeenschap een toegangspasje 
 
 Om badges als beloning voor activiteit te kunnen weergeven, moeten er twee dingen gebeuren:
 
-* badging moet voor de eigenschapcomponent worden [toegelaten](#enableforcomponent)
-* regels voor scoring en badging moeten worden [toegepast](#applytopage) op de pagina (of voorouder) waarop de component is geplaatst
+* Badging moet voor de eigenschapcomponent worden [toegelaten](#enableforcomponent) .
+* De regels voor het noteren en markeren moeten worden [toegepast](#applytopage) op de pagina (of voorouder) waarop de component is geplaatst.
 
 De release bevat drie beloningsbadges:
 
-* goud
+* **goud**
    `/etc/community/badging/images/gold-badge/jcr:content/gold.png`
 
-* zilver
+* **zilver**
    `/etc/community/badging/images/silver-badge/jcr:content/silver.png`
 
-* brons
+* **brons**
    `/etc/community/badging/images/bronze-badge/jcr:content/bronze.png`
 
 ![chlimage_1-99](assets/chlimage_1-99.png)
@@ -98,6 +99,7 @@ De release bevat drie beloningsbadges:
 >Scoreregels kunnen worden geconfigureerd om negatieve punten toe te wijzen voor posten die als onjuist zijn gemarkeerd en beïnvloeden zo de score. Als een badge echter eenmaal is behaald, wordt deze niet automatisch verwijderd vanwege wijzigingen in de score- of scoringregel.
 >
 >Toegewezen badges kunnen op dezelfde wijze worden ingetrokken als toegewezen badges. Zie de sectie Badges [toewijzen en intrekken](#assign-and-revoke-badges) . De toekomstige verbeteringen zullen een UI omvatten om de badges van leden te beheren.
+
 
 ### Aangepaste badges {#custom-badges}
 
@@ -109,23 +111,23 @@ Wanneer deze vanaf de Badges-console zijn geïnstalleerd, worden aangepaste badg
 
 Scores is niet standaard ingeschakeld. De basisstappen voor het opzetten en mogelijk maken van scoring en toekenning van badges zijn:
 
-* vaststellen van regels voor het verdienen van punten ([scoreregels](#scoring-rules))
-* voor punten die volgens de scoreregels zijn geaccumuleerd, [badges](#badges) toewijzen ([badgingregels](#badging-rules))
+* Identificeer regels voor het verdienen van punten ([het scoren regels](#scoring-rules)).
+* Wijs voor punten die volgens de scoreregels zijn geaccumuleerd [badges](#badges) ([badgingregels](#badging-rules)) toe.
 
-* [de regels voor scoring en badges toepassen op een gemeenschapssite](#apply-rules-to-content)
-* [badge inschakelen voor gemeenschapsfuncties](#enable-badges-for-component)
+* [Pas de scoring- en badingregels toe op een communitysite](#apply-rules-to-content).
+* [Enable badging for community features](#enable-badges-for-component).
 
 Zie de sectie [Snelle test](#quick-test) om het scoren voor een gemeenschapssite in te schakelen met de standaardregels voor scoring en badging voor forums en opmerkingen.
 
 ### Regels toepassen op inhoud {#apply-rules-to-content}
 
-Als u scoring en badges wilt inschakelen, voegt u de eigenschappen `scoringRules` en `badgingRules`aan elk knooppunt in de inhoudsstructuur voor de site toe.
+Als u scoring en badges wilt inschakelen, voegt u de eigenschappen `scoringRules` en `badgingRules` aan elk knooppunt in de inhoudsstructuur voor de site toe.
 
 Als de site al is gepubliceerd nadat alle regels zijn toegepast en componenten zijn ingeschakeld, publiceert u de site opnieuw.
 
 De regels die op een badging-toegelaten component van toepassing zijn zijn die voor de huidige knoop of zijn voorvader.
 
-Als het knooppunt van het type `cq:Page` (aanbevolen) is, voegt u met behulp van CRXDE|Lite de eigenschappen toe aan het `jcr:content`knooppunt.
+Als het knooppunt van het type `cq:Page` (aanbevolen) is, voegt u met behulp van CRXDE|Lite de eigenschappen toe aan het `jcr:content` knooppunt.
 
 | **Eigenschap** | **Type** | **Beschrijving** |
 |---|---|---|
@@ -135,6 +137,7 @@ Als het knooppunt van het type `cq:Page` (aanbevolen) is, voegt u met behulp van
 >[!NOTE]
 >
 >Als een het scoren regel geen effect op het verlenen van badges lijkt te hebben, zorg ervoor de het scoren regel niet door het scoringRules bezit van de merkingsregel is geblokkeerd. Zie de sectie [Badgingregels](#badging-rules).
+
 
 ### Badges voor component inschakelen {#enable-badges-for-component}
 
@@ -150,6 +153,7 @@ Een booleaanse eigenschap, `allowBadges`schakelt de weergave van badges voor een
 >
 >Elke component kan worden bedekt om badges weer te geven met behulp van de GB-code in forums, QnA en opmerkingen als voorbeeld.
 
+
 ## Scoreregels {#scoring-rules}
 
 Scoreregels vormen de basis voor scoring met het oog op het toekennen van badges.
@@ -158,44 +162,45 @@ Heel eenvoudig, is elke het scoren regel een lijst van één of meerdere sub-reg
 
 Scoreregels worden overgeërfd, maar niet additief. Bijvoorbeeld:
 
-* als page2 het schrapen regel2 bevat en zijn voorouder page1 het schrapen regel1 bevat
-* een actie op een page2 component zowel rule1 als rule2 zal aanhalen
-* indien beide regels toepasselijke subregels bevatten voor hetzelfde `topic/verb` :
+* Als page2 het scoren regel2 bevat en zijn voorouder page1 het scoren regel1 bevat.
+* Een actie op een page2 component zal zowel rule1 als rule2 aanhalen.
+* Indien beide regels toepasselijke subregels bevatten voor hetzelfde `topic/verb`:
 
-   * alleen de subregel van regel2 heeft invloed op de score
-   * de scores van beide subregels worden niet bij elkaar opgeteld
+   * Alleen de subregel van regel2 heeft invloed op de score.
+   * De scores uit beide subregels worden niet bij elkaar opgeteld.
 
 Wanneer er meer dan één scoreregel is, worden de scores afzonderlijk gehandhaafd voor elke regel.
 
-Scoringsregels zijn knooppunten van het type `cq:Page` met eigenschappen op het `jcr:content`knooppunt dat de lijst met subregels opgeeft die deze definiëren.
+Scoringsregels zijn knooppunten van het type `cq:Page` met eigenschappen op het `jcr:content` knooppunt die de lijst met subregels opgeven die deze definiëren.
 
 Scores worden opgeslagen in SRP.
 
 >[!NOTE]
 >
->Aanbevolen praktijk: Geef elke scoreregel een unieke naam.
+>Beste praktijken: Geef elke scoreregel een unieke naam.
 >
 >Namen van scoreregelregels moeten globaal uniek zijn. ze mogen niet met dezelfde naam eindigen.
 >
->Een voorbeeld van wat *not *to doet:
+>Een voorbeeld van wat *niet* te doen:
 >/etc/community/scoring/rules/site1/forums-scoring
 >/etc/community/scoring/rules/site2/forums-scoring
+
 
 ### Subregels voor score {#scoring-sub-rules}
 
 De scoringsubregels bevatten de eigenschappen die de waarden voor deelname aan de gemeenschap in detail beschrijven.
 
-Elke scoring-subregel identificeert
+Elke scoring-subregel identificeert:
 
-* welke activiteiten worden bijgehouden
-* welke specifieke communautaire functie hierbij betrokken is
-* hoeveel punten zijn toegekend
+* Welke activiteiten worden getraceerd?
+* Welke specifieke communautaire functie is hierbij betrokken?
+* Hoeveel punten zijn er toegekend?
 
 Standaard worden punten toegewezen aan het lid dat de handeling uitvoert, tenzij in de subregel wordt aangegeven dat de eigenaar van de inhoud de punten ( `forOwner`) ontvangt.
 
 Elke subregel kan in een of meer scoreregels worden opgenomen.
 
-De naam van de subregel volgt doorgaans het patroon van het gebruik van een *subject, object *and *werkwoord.* Bijvoorbeeld:
+De naam van de subregel volgt doorgaans het patroon van het gebruik van een *onderwerp* , *object* en *werkwoord*. Bijvoorbeeld:
 
 * member-comment-create
 * lid-ondervraagden
@@ -279,14 +284,14 @@ In de release staan twee scoreregels voor de functie [](/help/communities/functi
 
 **Opmerkingen:**
 
-* zowel `rules`als `sub-rules` knooppunten zijn van het type cq:Page
+* Zowel `rules` als `sub-rules` knooppunten zijn van het type cq:Page.
 
-* `subRules`is een attribuut van typeString[] op de knoop van de regel `jcr:content`
+* `subRules` is een attribuut van typeString[] op de `jcr:content` knoop van de regel.
 
-* `sub-rules` kunnen worden gedeeld door verschillende scoreregels
-* `rules`moet zich bevinden op een opslagplaats met leesmachtigingen voor iedereen
+* `sub-rules` kunnen worden gedeeld door verschillende scoreregels.
+* `rules` moet zich bevinden op een locatie in de opslagplaats met leesmachtigingen voor iedereen.
 
-   * regelnamen moeten uniek zijn, ongeacht de locatie
+   * Regelnamen moeten uniek zijn, ongeacht de locatie.
 
 ### Aangepaste sorteerregels activeren {#activating-custom-scoring-rules}
 
@@ -296,32 +301,33 @@ Wijzigingen of toevoegingen aan de in de ontwerpomgeving aangebrachte scoreregel
 
 De regels van de badging verbinden het scoren regels aan badges door te specificeren:
 
-* welke scoreregel
-* de score die nodig is om een specifieke badge te ontvangen
+* Scoreregel.
+* De score is nodig om een specifieke badge te ontvangen.
 
-De regels van de Badging zijn knopen van type `cq:Page` met eigenschappen op zijn `jcr:content`knoop die scoreregels aan scores en badges correleren.
+De regels van de Badging zijn knopen van type `cq:Page` met eigenschappen op zijn `jcr:content` knoop die het correleren van scoreregels aan scores en badges.
 
-De regels voor badging bestaan uit een verplichte `thresholds`eigenschap die een geordende lijst is met scores die zijn toegewezen aan badges. De scores moeten in stijgende waarde worden bevolen. Bijvoorbeeld :
+De regels voor badging bestaan uit een verplichte `thresholds` eigenschap die een geordende lijst is met scores die zijn toegewezen aan badges. De scores moeten in stijgende waarde worden bevolen. Bijvoorbeeld:
 
 * `1|/etc/community/badging/images/bronze-badge/jcr:content/bronze.png`
 
-   * een bronzen badge is bestemd om 1 punt te verdienen
+   * Er is een bronzen badge om 1 punt te verdienen.
 
 * `60|/etc/community/badging/images/silver-badge/jcr:content/silver.png`
 
-   * een zilveren badge wordt toegekend wanneer 60 punten zijn opgebouwd
+   * Een zilveren badge wordt toegekend wanneer 60 punten zijn opgebouwd.
 
 * `80|/etc/community/badging/images/gold-badge/jcr:content/gold.png`
 
-   * een gouden badge wordt afgelegd wanneer 80 punten zijn verzameld
+   * Een gouden badge wordt afgelegd wanneer 80 punten zijn verzameld.
 
 De regels van de Badging zijn gepareerd met het scoring regels, die bepalen hoe de punten zich ophopen. Zie de sectie Regels [toepassen op inhoud](#apply-rules-to-content).
 
-Het `scoringRules`bezit op een merkingsregel beperkt eenvoudig welke het schatten regels met die bepaalde merkingsregel kunnen worden geparineerd.
+Het `scoringRules` bezit op een merkingsregel beperkt eenvoudig welke het schatten regels met die bepaalde merkingsregel kunnen worden geparineerd.
 
 >[!NOTE]
 >
 >Beste praktijken: maak badge-afbeeldingen die uniek zijn voor elke AEM-site.
+
 
 ![chlimage_1-101](assets/chlimage_1-101.png)
 
@@ -340,7 +346,7 @@ Het `scoringRules`bezit op een merkingsregel beperkt eenvoudig welke het schatte
      <li>number = score</li>
      <li>| = de verticale lijn (U+007C)</li>
      <li>path = full path to badge image resource</li>
-    </ul> De tekenreeksen moeten worden geordend, zodat de getallen in waarde toenemen en er geen witruimte tussen het getal en het pad wordt weergegeven.<br /><br /> Voorbeeld: <code>80|/etc/community/badging/images/gold-badge/jcr:content/gold.png</code></td>
+    </ul> De tekenreeksen moeten worden geordend, zodat de getallen in waarde toenemen en er geen witruimte tussen het getal en het pad wordt weergegeven.<br /> Voorbeeld:<br /> <code>80|/etc/community/badging/images/gold-badge/jcr:content/gold.png</code></td>
   </tr>
   <tr>
    <td>badgingType</td>
@@ -364,10 +370,10 @@ In de release zijn twee Badging Rules opgenomen die overeenkomen met de [forums 
 
 **Opmerkingen:**
 
-* `rules` knooppunten zijn van het type cq:Page
-* `rules`moet zich bevinden op een opslagplaats met leesmachtigingen voor iedereen
+* `rules` knooppunten zijn van het type cq:Page.
+* `rules` moet zich bevinden op een locatie in de opslagplaats met leesmachtigingen voor iedereen.
 
-   * regelnamen moeten uniek zijn, ongeacht de locatie
+   * Regelnamen moeten uniek zijn, ongeacht de locatie.
 
 ### Aangepaste Badgingregels activeren {#activating-custom-badging-rules}
 
@@ -379,7 +385,7 @@ Badges kunnen aan leden worden toegewezen met behulp van de [ledenconsole](/help
 
 De volgende cURL-opdrachten tonen wat nodig is voor een HTTP-aanvraag voor het toewijzen en intrekken van badges. De basisindeling is:
 
-cURL -i -X POST -H *header* -u *sign in * -F *operation * -F *badge * *member-profile-url*
+cURL -i -X POST -H *header* -u *sign* -F *operation* -F *badge* *member-profile-url*
 
 *header* = &quot;Accept:application/json&quot;aangepaste header om door te geven aan de server (vereist)
 
@@ -395,10 +401,10 @@ cURL -i -X POST -H *header* -u *sign in * -F *operation * -F *badge * *member-pr
 
 >[!NOTE]
 >
->The *member-profile-url*
+>The *member-profile-url*:
 >
->* kan naar een auteursinstantie verwijzen als de Dienst [van de](/help/communities/users.md#tunnel-service) Tunnel wordt toegelaten
->* Dit kan een duistere, willekeurige naam zijn - zie [Beveiligingscontrolelijst](/help/sites-administering/security-checklist.md#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path) met betrekking tot toegestane id
+>* Kan naar een auteurinstantie verwijzen als de Dienst [van de](/help/communities/users.md#tunnel-service) Tunnel wordt toegelaten.
+>* Kan een duistere, willekeurige naam zijn - zie [Beveiligingscontrolelijst](/help/sites-administering/security-checklist.md#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path) met betrekking tot machtigbare id.
 >
 
 
@@ -429,13 +435,14 @@ Het scoren en het merkteken de regels kunnen voor douanecomponenten worden gecre
 
 Wanneer leden communiceren met functies van gemeenschappen, worden gebeurtenissen verzonden die asynchrone listeners, zoals meldingen en scoring, kunnen activeren.
 
-De instantie SocialEvent van een component registreert de gebeurtenissen zoals `actions`die voor een `topic`. De SocialEvent bevat een methode om een aan de actie `verb`gekoppeld item te retourneren. Er is een *n-1* relatie tussen `actions`en `verbs`.
+De instantie SocialEvent van een component registreert de gebeurtenissen zoals `actions` die voor een `topic`. De SocialEvent bevat een methode om een aan de actie `verb` gekoppeld item te retourneren. Er is een *n-1* relatie tussen `actions` en `verbs`.
 
-Voor de geleverde communitycomponenten, beschrijven de volgende lijsten de `verbs`bepaalde voor elk `topic`beschikbaar voor gebruik in [het scoren subrules](#scoring-sub-rules).
+Voor de geleverde communitycomponenten, beschrijven de volgende lijsten `verbs` die voor elk `topic` beschikbaar voor gebruik in [het scoren subrules](#scoring-sub-rules)worden bepaald.
 
 >[!NOTE]
 >
 >Een nieuwe booleaanse eigenschap, `allowBadges`schakelt de weergave van badges voor een componentinstantie in of uit. Het zal configureerbaar in bijgewerkte [component zijn uitgeeft dialoogvensters](/help/communities/author-communities.md) door een checkbox geëtiketteerd de Badges **van de** Vertoning.
+
 
 **[Agenda Component](/help/communities/calendar.md)**SocialEvent`topic`= com/adobe/cq/social/agenda
 
@@ -528,9 +535,9 @@ Voor de geleverde communitycomponenten, beschrijven de volgende lijsten de `verb
 
 ### Aangepaste componentgebeurtenissen {#custom-component-events}
 
-Voor een douanecomponent, wordt een SocialEvent geconcretiseerd om de gebeurtenissen van de component te registreren zoals `actions`die voor een `topic`. voorkomen.
+Voor een aangepaste component wordt een SocialEvent geïnstantieerd om de gebeurtenissen van de component op te nemen zoals `actions` die voor een `topic`.
 
-Om het scoren te steunen, zou SocialEvent de methode moeten met voeten treden `getVerb()` zodat een aangewezen voor elk `verb`wordt teruggekeerd `action`. De `verb` geretourneerde waarde voor een handeling kan een veelgebruikte (zoals `POST`) of een speciale waarde voor de component (zoals `ADD RATING`) zijn. Er is een *n-1* relatie tussen `actions`en `verbs`.
+Om het scoren te steunen, zou SocialEvent de methode moeten met voeten treden `getVerb()` zodat een aangewezen voor elk `verb` wordt teruggekeerd `action`. De `verb` geretourneerde waarde voor een handeling kan een veelgebruikte (zoals `POST`) of een speciale waarde voor de component (zoals `ADD RATING`) zijn. Er is een *n-1* relatie tussen `actions` en `verbs`.
 
 ## Problemen oplossen {#troubleshooting}
 
@@ -544,7 +551,7 @@ Zie Badges [inschakelen voor component](#enable-badges-for-component).
 
 Als op de inhoud van de website scoring- en badingregels zijn toegepast en badges worden toegekend voor bepaalde acties, maar niet voor andere, controleert u of de regel voor badging de scoringregels waarop deze van toepassing is, niet heeft beperkt.
 
-Zie de `scoringRules`eigenschap van [Badging Rules](#badging-rules).
+Zie de `scoringRules` eigenschap van [Badging Rules](#badging-rules).
 
 ### Hoofdlettergevoelig (typ) {#case-sensitive-typo}
 
@@ -556,8 +563,8 @@ Als de functie niet naar behoren werkt, controleert u of de gegevens correct zij
 
 Het is mogelijk om snel scoring en badging te proberen met behulp van de site [Getting Started Tutorial](/help/communities/getting-started.md) (engineeren):
 
-* toegang tot CRXDE Lite op auteur
-* naar de basispagina bladeren:
+* Toegang tot CRXDE Lite op auteur.
+* Blader naar de basispagina:
 
    * /content/sites/engc/nl/jcr:content
 
@@ -565,36 +572,36 @@ Het is mogelijk om snel scoring en badging te proberen met behulp van de site [G
 
    * **Naam**: `badgingRules`
    * **Type**: `String`
-   * Selecteer **Multi**
+   * Meerdere **selecteren**
    * Selecteer **Toevoegen**
-   * enter `/etc/community/badging/rules/forums-badging`
-   * select **+**
-   * enter `/etc/community/badging/rules/comments-badging`
+   * Enter `/etc/community/badging/rules/forums-badging`
+   * Selecteer **+**
+   * Enter `/etc/community/badging/rules/comments-badging`
    * Selecteer **OK**
 
 * Voeg de eigenschap scoringRules toe:
 
    * **Naam**: `scoringRules`
    * **Type**: `String`
-   * Selecteer **Multi**
+   * Meerdere **selecteren**
    * Selecteer **Toevoegen**
-   * enter `/etc/community/scoring/rules/forums-scoring`
-   * select **+**
-   * enter `/etc/community/scoring/rules/comments-scoring`
+   * Enter `/etc/community/scoring/rules/forums-scoring`
+   * Selecteer **+**
+   * Enter `/etc/community/scoring/rules/comments-scoring`
    * Selecteer **OK**
 
-* Selecteer Alles **opslaan**
+* Selecteer **Alles** opslaan.
 
 ![chlimage_1-102](assets/chlimage_1-102.png)
 
 Zorg er daarna voor dat de forum- en commentaarcomponenten het weergeven van badges toestaan:
 
-* opnieuw gebruiken met CRXDE Lite
-* naar de forumcomponent bladeren
+* Opnieuw met gebruik van CRXDE Lite.
+* Bladeren naar de forumcomponent
 
    * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
 
-* add allowBadges boolean property, if necessary, and verify it
+* Voeg de Booleaanse eigenschap allowBadges toe, indien nodig, en zorg ervoor dat dit waar is.
 
    * **Naam**: `allowBadges`
    * **Type**: `Boolean`
@@ -606,14 +613,14 @@ Publiceer [](/help/communities/sites-console.md#publishing-the-site) vervolgens 
 
 Tot slot:
 
-* naar de component in de publicatie-instantie bladeren
-* aanmelden als lid van de gemeenschap ( bijvoorbeeld : weston.mccall@dodgit.com/password)
-* post een nieuw forum onderwerp
-* de pagina moet worden vernieuwd voordat de badge wordt weergegeven
+* Blader naar de component in de publicatie-instantie.
+* Aanmelden als lid van de gemeenschap (bijvoorbeeld: weston.mccall@dodgit.com/password).
+* Plaats een nieuw forumonderwerp.
+* De badge wordt alleen weergegeven als de pagina is vernieuwd.
 
-   * logout en login als verschillend gemeenschapslid (bijvoorbeeld: aaron.mcdonald@mailinator.com/password)
+   * Afmelden en aanmelden als een ander lid van de gemeenschap (bijvoorbeeld: aaron.mcdonald@mailinator.com/password).
 
-* Selecteer het forum
+* Selecteer het Forum.
 
 Dit zou het lid van de gemeenschap een bronzen badge moeten verdienen die met hun forumpost zichtbaar is omdat de eerste drempel van de forums-badging regel een score van 1 is.
 

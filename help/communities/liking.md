@@ -10,18 +10,18 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: dcde4e03-78ab-4779-96a1-05ac41f14701
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: e4456e80059479ca874681e20f8546f29ac92597
 
 ---
 
 
 # Koppeling gebruiken {#using-liking}
 
-De `Liking`component is een nuttig hulpmiddel dat gebruikers toestaat om een mening over een bepaald stuk van inhoud, zoals een commentaar binnen een forum te uiten. Bij de `Liking`component selecteren de leden het hartpictogram om een positief advies aan te geven.
+De `Liking` component is een nuttig hulpmiddel dat gebruikers toestaat om een mening over een bepaald stuk van inhoud, zoals een commentaar binnen een forum te uiten. Met de `Liking` component selecteren de leden het hartpictogram om een positief advies aan te geven.
 
 ## Koppeling toevoegen aan een pagina {#adding-liking-to-a-page}
 
-Als u een `Liking` component aan een pagina wilt toevoegen in de ontwerpmodus, gebruikt u de componentbrowser om te zoeken naar
+Als u een `Liking` component wilt toevoegen aan een pagina in de ontwerpmodus, gebruikt u de componentbrowser om te zoeken naar:
 
 * `Communities / Liking`
 
@@ -43,11 +43,17 @@ Geef op het tabblad **[!UICONTROL Teksten en labels]** de eigenschappen op die w
 
 ![chlimage_1-95](assets/chlimage_1-95.png)
 
-* **[!UICONTROL Positief antwoordlabel]**(*vereist*) De eigenschapsnaam voor een positieve reactie.
+* **[!UICONTROL Label voor positieve respons]**
 
-* **[!UICONTROL Negatief antwoordlabel]**(*vereist*) De eigenschapsnaam voor een negatieve reactie.
+   (*Vereist*) De eigenschapsnaam voor een positieve reactie.
 
-* **[!UICONTROL Tally Name]**(*Required*) De interne, identificeerbare bezitsnaam voor deze instantie van een stemcomponent.
+* **[!UICONTROL Negatief antwoordlabel]**
+
+   (*Vereist*) De eigenschapsnaam voor een negatieve reactie.
+
+* **[!UICONTROL Tallnaam]**
+
+   (*Vereist*) De interne, identificeerbare eigenschapsnaam voor dit geval van een stemcomponent.
 
 ## Ervaring met sitebezoekers {#site-visitor-experience}
 

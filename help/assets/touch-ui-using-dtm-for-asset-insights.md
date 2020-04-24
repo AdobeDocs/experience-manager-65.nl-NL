@@ -3,7 +3,7 @@ title: Asset Insights inschakelen via DTM
 description: Leer hoe u DTM (Adobe Dynamic Tag Management) gebruikt om Asset Insights in te schakelen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ---
 
@@ -41,7 +41,7 @@ Voer deze stappen uit om Asset Insights in te schakelen via DTM.
 
    ![chlimage_1-59](assets/chlimage_1-195.png)
 
-1. Tik/klik op het AEM-logo en ga naar **[!UICONTROL Gereedschappen > Middelen]**.
+1. Tap/click the AEM logo, and go to **[!UICONTROL Tools > Assets]**.
 1. Tik/klik op **[!UICONTROL Insights Page Tracker]**, kopieer de trackercode en plak deze vervolgens in het scriptdialoogvenster dat u in stap 6 hebt geopend. Sla de wijzigingen op.
 
    >[!NOTE]
@@ -52,7 +52,7 @@ Voer deze stappen uit om Asset Insights in te schakelen via DTM.
    > * In het geval van door AEM gehoste paginanummering, moet de bron verwijzen naar een publicatie-instantie met de hostnaam van de verzender-instantie.
 
 
-1. Toegang `https://dtm.adobe.com`. Klik op **[!UICONTROL Overzicht]** in de webeigenschap en klik op Gereedschap **** Toevoegen of open een bestaand hulpprogramma voor Adobe Analytics. Tijdens het creëren van het hulpmiddel, kunt u de Methode **[!UICONTROL van de]** Configuratie aan **[!UICONTROL Automatisch]** plaatsen.
+1. Ga naar `https://dtm.adobe.com`. Klik op **[!UICONTROL Overzicht]** in de webeigenschap en klik op Gereedschap **** Toevoegen of open een bestaand hulpprogramma voor Adobe Analytics. Tijdens het creëren van het hulpmiddel, kunt u de Methode **[!UICONTROL van de]** Configuratie aan **[!UICONTROL Automatisch]** plaatsen.
 
    ![Gereedschap Adobe Analytics toevoegen](assets/Add-Adobe-Analytics-Tool.png)
 
@@ -104,8 +104,8 @@ Voer deze stappen uit om Asset Insights in te schakelen via DTM.
    })();
    ```
 
-   * De regel voor het laden van pagina&#39;s in DTM bevat alleen de code pagetracker.js. Alle `assetAnalytics` velden worden beschouwd als overschrijvingen voor standaardwaarden. Deze zijn niet standaard vereist.
-   * De code roept `assetAnalytics.dispatcher.init`() aan nadat `_satellite.getToolsByType('sc')[0].getS`() is geïnitialiseerd en beschikbaar `assetAnalytics,dispatcher.init` is. Daarom kunt u overslaan toevoegend het in stap 11.
+   * De regel voor het laden van pagina&#39;s in DTM bevat alleen de `pagetracker.js` code. Alle `assetAnalytics` velden worden beschouwd als overschrijvingen voor standaardwaarden. Deze zijn niet standaard vereist.
+   * De codevraag `assetAnalytics.dispatcher.init()` na het ervoor zorgen dat `_satellite.getToolsByType('sc')[0].getS()` wordt geïnitialiseerd en beschikbaar `assetAnalytics,dispatcher.init` is. Daarom kunt u overslaan toevoegend het in stap 11.
    * Zoals aangegeven in opmerkingen in de code van Insights Page Tracker (**[!UICONTROL Tools > Assets > Insights Page Tracker]**), zijn de eerste drie argumenten (RSID, Tracking Server en Visitor Namespace) irrelevant wanneer Paginanummering geen `AppMeasurement` object maakt. Lege tekenreeksen worden doorgegeven om dit te markeren.\
       De resterende argumenten komen overeen met wat is geconfigureerd op de pagina Inzichten configureren (**[!UICONTROL Opties > Middelen > Inzichten configureren]**).
    * Het object AppMeasurement wordt opgehaald door te zoeken `satelliteLib` naar alle beschikbare SiteCatalyst-engines. Als er meerdere tags zijn geconfigureerd, wijzigt u de index van de arraykiezer op de juiste manier. Items in de array worden geordend volgens de SiteCatalyst-gereedschappen die beschikbaar zijn in de DTM-interface.

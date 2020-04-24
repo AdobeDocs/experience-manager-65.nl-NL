@@ -11,18 +11,18 @@ content-type: reference
 discoiquuid: 404582ab-bb4c-4775-9ae3-17356d376dca
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
 
 ---
 
 
-# Moderatieconsole{#moderation-console}
+# Moderatieconsole {#moderation-console}
 
 In AEM-gemeenschappen is het mogelijk om de inhoud [van de gemeenschap in grote hoeveelheden te](/help/communities/moderate-ugc.md) modereren vanuit zowel de auteur- als de publicatieomgeving door beheerders en moderatoren van de gemeenschap (vertrouwde leden van de gemeenschap die als moderatoren zijn toegewezen).
 
 Beheerders en moderatoren van de gemeenschap kunnen ook [in-context moderatie](/help/communities/in-context.md) in het publicatiemilieu uitvoeren.
 
-Een functie van alle [gemeenschapssites](/help/communities/sites-console.md) is een `Administration`menu-item dat beschikbaar is voor gebruikers die zich aanmelden met beheerdersrechten. De `Administration`verbinding verleent toegang tot de console van de Moderatie.
+Een functie van alle [gemeenschapssites](/help/communities/sites-console.md) is een `Administration` menu-item dat beschikbaar is voor gebruikers die zich aanmelden met beheerdersrechten. De `Administration` verbinding verleent toegang tot de console van de Moderatie.
 
 Van de console van de Moderatie, zullen de beheerders en de communautaire moderatoren toegang tot al gebruiker geproduceerde inhoud (UGC) hebben waarvoor zij toestemming hebben te matigen. Als u meerdere sites wilt gematigd, is het mogelijk om posten op alle sites weer te geven of door geselecteerde communitysites te filteren.
 
@@ -30,10 +30,10 @@ Ga voor meer informatie naar Gebruikers [beheren en Gebruikersgroepen](/help/com
 
 De console van de Moderatie steunt:
 
-* uitvoeren van gematigingstaken in bulk
-* zoeken in UGC
-* UGC-details weergeven
-* UGC-auteurdetails weergeven
+* Het uitvoeren van moderatietaken in bulk.
+* Zoeken in UGC.
+* UGC-details weergeven.
+* UGC-auteurdetails weergeven.
 
 Alleen wanneer u bent aangemeld als beheerder of als lid met ` [moderator permissions](/help/communities/in-context.md#identifyingtrustedmembers)`, kunnen moderatietaken worden uitgevoerd.
 
@@ -51,13 +51,14 @@ Door de verbinding van het Beleid te selecteren, verschijnt de console van de Mo
 
 In het auteursmilieu, om de console van de Moderatie te bereiken
 
-* van globale navigatie: **Navigatie, Gemeenschappen, Moderatie**
+* Selecteer **[!UICONTROL Gemeenschappen]** > **[!UICONTROL Moderatie]** in de globale navigatie.
 
-Alleen wanneer u bent aangemeld als beheerder of als lid met ` [moderator permissions](/help/communities/in-context.md#identifyingtrustedmembers)`, kunnen moderatietaken worden uitgevoerd. De enige inhoud van de gemeenschap die wordt weergegeven, is de inhoud die de ondertekenaar mag verkleinen.
+Slechts wanneer binnen ondertekend als beheerder, of als lid met [moderatortoestemmingen](/help/communities/in-context.md#identifyingtrustedmembers), moderatietaken kunnen worden uitgevoerd. De enige inhoud van de gemeenschap die wordt weergegeven, is de inhoud die de ondertekenaar mag verkleinen.
 
 >[!NOTE]
 >
 >UGC van het publicatiemilieu zal slechts op auteur zichtbaar zijn als gekozen SRP een gemeenschappelijke opslag uitvoert. De opslag is standaard bijvoorbeeld JSRP, wat geen algemene opslag is voor auteur en publiceren. Zie Opslag van [Community-inhoud](/help/communities/working-with-srp.md).
+
 
 ![moderationconsoletoewijzing](assets/moderationconsoleauthor.png)
 
@@ -65,9 +66,9 @@ Alleen wanneer u bent aangemeld als beheerder of als lid met ` [moderator permis
 
 Afgezien van de linkse navigatiespoor (die bij auteur, maar niet bij publicatie verschijnt), heeft de moderatie UI de volgende belangrijkste gebieden:
 
-* **[bovenste navigatiebalk](#top-navigation-bar)**
-* **[toolbar](#toolbar)**
-* **[inhoudsgebied](#content-area)**
+* **[Bovenste navigatiebalk](#top-navigation-bar)**
+* **[Werkbalk](#toolbar)**
+* **[Inhoudsgebied](#content-area)**
 
 ### Bovenste navigatiebalk {#top-navigation-bar}
 
@@ -91,19 +92,20 @@ De werkbalk, die zich onder de bovenste navigatiebalk bevindt, biedt de volgende
 
 Het inhoudsgebied bevat informatie voor gepost UGC:
 
-* de UGC heeft gepost
-* lidnaam
-* lid-avatar
-* plaats van de post
-* op het moment dat het werd geplaatst
-* aantal reacties op de post
-* [sentiment](/help/communities/moderate-ugc.md#sentiment) in verband met de post
-* indien goedgekeurd, wordt een vinkje weergegeven
-* als er een bijlage is, wordt een paperclip weergegeven
+* UGC geplaatst
+* Lidnaam
+* Member avatar
+* Locatie van het bericht.
+* Toen het werd gepost.
+* Aantal reacties op de post.
+* [Aan het bericht gerelateerde](/help/communities/moderate-ugc.md#sentiment) melding
+* Indien goedgekeurd, wordt een vinkje getoond.
+* Als er een bijlage is, wordt een paperclip weergegeven.
 
 >[!NOTE]
->
+> 
 >In het inhoudsgebied is een *oneindige schuifbewerking* beschikbaar, zodat u kunt blijven schuiven totdat u het einde van de inhoud hebt bereikt. De werkbalk blijft tijdens het schuiven op een vaste, zichtbare positie boven het inhoudsgebied staan.
+
 
 ### Rail filteren {#ootbfilters}
 
@@ -111,15 +113,16 @@ Het inhoudsgebied bevat informatie voor gepost UGC:
 
 Met het pictogram van het zijpaneel wordt de filterrail geopend. De filterrail, die links van het inhoudsgebied verschijnt, verstrekt verschillende filters, elk die een onmiddellijk effect op referenced UGC hebben die in het inhoudsgebied verschijnt.
 
-De filters binnen elke categorie zijn **** ORed samen, en de filters in verschillende categorieën zijn **** ANDed samen.
+De filters binnen elke categorie zijn **OF**&#39;d bij elkaar, en de filters in verschillende categorieën zijn **EN&#39;d bij elkaar**.
 
-Bijvoorbeeld, als u zowel **Vraag** als **Antwoord** controleert, zult u inhoud zien die of een **Vraag ***of* een **Antwoord** is.
+Als u bijvoorbeeld zowel **Vraag** als **Antwoord** controleert, wordt inhoud weergegeven die een **vraag** *of* een **antwoord** is.
 
-Nochtans als u **Vraag** en **In afwachting** controleert, zult u slechts inhoud zien die een **Vraag **is en **in afwachting** is.
+Als u echter **Vraag** en **In behandeling** controleert, ziet u alleen inhoud die een **vraag** is en **in behandeling** is.
 
 >[!NOTE]
 >
 >De moderatoren van de Gemeenschap kunnen referentie de vooraf bepaalde filters op moderatieconsole UI. Aangezien deze filters aan het eind van URL (als parameters van het vraagkoord) worden toegevoegd, kunnen de moderatoren aan de bookmarked filters later terugkomen en deze verbindingen ook delen.
+
 
 ![zoekpictogram](assets/searchicon.png)
 
@@ -149,6 +152,7 @@ De site beperkt de UGC waarnaar wordt verwezen, tot advertenties aan geselecteer
 >
 >Wanneer de bulkmoderatieconsole bij publiceren door een vertrouwd communautair lid wordt betreden, dan slechts worden de verwijzingen naar UGC die voor communautaire plaatsen worden gecreeerd het lid aan gematigd wordt toegelaten getoond, en met de filter van de Plaats kunnen worden gefiltreerd.
 
+
 #### Inhoudstype {#content-type}
 
 Het Type van inhoud beperkt referenced UGC getoond aan posten van het geselecteerde middeltype. Een of meer van de volgende typen kunnen worden geselecteerd. Alle typen worden weergegeven als er geen is geselecteerd.
@@ -173,22 +177,22 @@ Het Type van inhoud beperkt referenced UGC getoond aan posten van het geselectee
 
 Aanvullende bronnen toevoegen waarop moet worden gefilterd:
 
-* op een instantie van een auteur
-* aanmelden als beheerder
-* webconsole openen [](https://localhost:4502/system/console/configMgr)
-* lokaliseren `AEM Communities Moderation Dashboard Filters`
-* Selecteer de configuratie die u wilt openen in de bewerkingsmodus
-* ga ResourceType van een component in waarop om te filtreren
+* Meld u als beheerder aan bij de auteurinstantie.
+* Open [webconsole](https://localhost:4502/system/console/configMgr).
+* Zoeken `AEM Communities Moderation Dashboard Filters`.
+* Selecteer de configuratie die u wilt openen in de bewerkingsmodus.
+* Ga ResourceType van een component in waarop te filtreren:
 
    * Als u bijvoorbeeld wilt filteren op opgenomen stemcomponenten, voert u het volgende in:
+
       `Voting=social/tally/components/hbs/voting`
 
 ![chlimage_1-215](assets/chlimage_1-215.png)
 
-* Selecteer Opslaan
-* Vernieuw de Gemeenschappen - Moderniseringsconsole
+* Selecteer Opslaan.
+* Vernieuw de Gemeenschappen - de console van de Moderatie.
 
-Het resultaat is een nieuw selecteerbaar filter voor `Voting`onder de `Content Type` filtergroep.
+Het resultaat is een nieuw selecteerbaar filter voor `Voting` onder de `Content Type` filtergroep.
 
 Wanneer dat filter wordt geselecteerd zal de inhoud van het dashboard UGC tonen die om het even welke ingevoerde ResourceTypes aanpast.
 
@@ -200,19 +204,20 @@ De status beperkt de UGC waarnaar wordt verwezen, tot posten van de geselecteerd
 >
 >Als slechts de niet Beantwoorde status wordt geselecteerd, dan zal de moderator al inhoud (voor alle inhoudstypes) behalve de beantwoorde vragen zien. Dit komt omdat de eigenschap die verantwoordelijk is voor de beantwoorde vraag niet bestaat in het geval van niet-beantwoorde vragen en andere inhoud zoals het onderwerp van het forum, het blogartikel of opmerkingen.
 
+
 ![statussen](assets/statuses.png)
 
 #### Markering {#flagging}
 
 Als u een vlag voert, wordt de UGC waarnaar wordt verwezen, beperkt tot publicaties die zijn gemarkeerd of verborgen.
 
-Wanneer een stuk inhoud is gemarkeerd, blijft het gemarkeerd totdat u de markering van dat stuk inhoud ongedaan maakt door nogmaals de knop **Vlag **Vlag te selecteren. Er zijn geen markeringsniveaus, zoals belangrijk of opgevolgd.
+Wanneer een stuk inhoud is gemarkeerd, blijft het gemarkeerd totdat u de markering van dat stuk inhoud ongedaan maakt door nogmaals de knop **Vlag** te selecteren. Er zijn geen markeringsniveaus, zoals belangrijk of opgevolgd.
 
 ![chlimage_1-216](assets/chlimage_1-216.png)
 
 #### Leden {#members}
 
-Leden beperken de UGC waarnaar wordt verwezen, die aan UGC wordt weergegeven en die door de ingevoerde lidnaam wordt gepost.
+Leden beperken de UGC waarnaar wordt verwezen, die aan UGC wordt weergegeven en die door de ingevoerde lidnaam is gepost.
 
 ![chlimage_1-217](assets/chlimage_1-217.png)
 
@@ -222,7 +227,7 @@ Gepost in de Laatste grenzen UGC van verwijzingen aan posten die in het laatste 
 
 ![chlimage_1-218](assets/chlimage_1-218.png)
 
-#### Sentiment {#sentiment}
+#### Zin {#sentiment}
 
 [Sentiment](/help/communities/moderate-ugc.md#sentiment) beperkt de UGC waarnaar wordt verwezen tot posten met een sentiment-waarde die positief, negatief of neutraal is.
 
@@ -287,24 +292,24 @@ De pictogrammen voor deze handelingen worden alleen op de werkbalk weergegeven a
 
 ### Eén artikel moderniseren {#moderating-a-single-post}
 
-In de enkelvoudige selectiemodus is het mogelijk om
+In de enkelvoudige selectiemodus is het mogelijk:
 
-* gebruikersgegevens weergeven door de gebruikersnaam te selecteren
-* In context bekijken door de link naar het bericht te selecteren
+* Geef gebruikersgegevens weer door de gebruikersnaam te selecteren.
+* Klik op de link naar het bericht in de context om het bericht te bekijken.
 * [Reageren](#reply)
 * [Toestaan](#allow)
 * [Weigeren](#deny)
 * [Verwijderen](#delete)
 * [Sluiten](#close)
-* historie van [moderatie weergeven](#moderation-history)
+* Geschiedenis [van moderatie weergeven](#moderation-history)
 * [Details weergeven](#viewdetails)
 
-De tekst van de post op de kaartweergave boven de mageractiepictogrammen is de tekst van de post en hieronder staan de gegevens die aangeven
+De tekst van de post op de kaartweergave boven de mageractiepictogrammen is de tekst van de post en hieronder staan de gegevens die aangeven:
 
-* zo ja, voorafgegaan door het aantal antwoorden
-* if is gemarkeerd
-* indien goedgekeurd
-* wanneer de UGC is geplaatst
+* Indien de Commissie antwoord heeft, en zo ja, voorafgegaan door het aantal antwoorden.
+* Als het is gemarkeerd.
+* Indien goedgekeurd.
+* Toen de UGC werd geplaatst.
 
 ![singleElectmode](assets/singleselectmode.png)
 
@@ -324,7 +329,7 @@ Wanneer u met één bericht werkt, wordt het pictogram Toestaan weergegeven wann
 
 ![chlimage_1-222](assets/chlimage_1-222.png)
 
-De matigheidsactie **Weigeren **is slechts beschikbaar voor inhoud die wordt gematigd, en verschijnt niet op ongematigde inhoud behalve in multi-selectiemodus.
+De actie **Afwijzen** is slechts beschikbaar voor inhoud die wordt gematigd, en verschijnt niet op ongematigde inhoud behalve in multi-selectiemodus.
 
 Inhoud die niet wordt gematigd, wordt altijd goedgekeurd.
 
@@ -336,7 +341,7 @@ Inhoud die de status in behandeling verlaat, kan nooit terugkeren naar een statu
 
 ![chlimage_1-223](assets/chlimage_1-223.png)
 
-In de modus Enkel selecteren of Samenvoegen kunt u items selecteren en verwijderen. De verwijderactie leidt tot een bevestigingsvenster. Als deze items eenmaal zijn verwijderd, verdwijnen ze direct uit het inhoudsgebied. **Zodra UGC wordt geschrapt, wordt het permanent verwijderd uit de bewaarplaats en kan later niet worden teruggewonnen.**
+In de modus Enkel selecteren of Samenvoegen kunt u items selecteren en verwijderen. De verwijderactie leidt tot een bevestigingsvenster. Als deze items eenmaal zijn verwijderd, verdwijnen ze direct uit het inhoudsgebied. **Zodra UGC wordt geschrapt, wordt het permanent verwijderd uit de bewaarplaats en kan later niet worden teruggewonnen**.
 
 #### Sluiten {#close}
 

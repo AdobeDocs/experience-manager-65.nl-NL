@@ -10,22 +10,23 @@ topic-tags: developing
 content-type: reference
 discoiquuid: cd4f53ee-537b-4f10-a64f-474ba2c44576
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 48afa2146d0dcbab4beaa1044645c269b49fd7ff
 
 ---
 
 
 # Notities maken {#create-nodes}
 
-Bedek het opmerkingssysteem met een douaneversie door het minimale aantal dossiers noodzakelijk van /libs in /apps te kopiëren en hen te wijzigen in /apps.
+Bedek het opmerkingensysteem met een aangepaste versie door het minimale aantal bestanden dat nodig is van `/libs` naar te kopiëren `/apps` en te wijzigen in `/apps`.
 
 >[!CAUTION]
 >
 >De inhoud van de map /libs wordt nooit bewerkt, omdat een nieuwe installatie of upgrade de map /libs kan verwijderen of vervangen, terwijl de inhoud van de map /apps ongewijzigd blijft.
 
+
 Gebruikend [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) op een auteursinstantie, begin door een weg in de /apps omslag te creëren die aan de weg aan de overlappende componenten in de /libs omslag identiek is.
 
-Het pad dat wordt gedupliceerd, is
+Het pad dat wordt gedupliceerd is:
 
 * `/libs/social/commons/components/hbs/comments/comment`
 
@@ -37,7 +38,7 @@ Sommige knooppunten in het pad zijn mappen en andere componenten.
    * **[!UICONTROL Maken > Map...]**
       * Naam invoeren: `social`
 1. Knooppunt `social` selecteren
-   * **[!UICONTROL Maken > Map...]**
+   * **[!UICONTROL Maken]** > **[!UICONTROL Map...]**
       * Naam invoeren: `commons`
 1. Knooppunt `commons` selecteren
    * **[!UICONTROL Maken > Map...]**
@@ -46,7 +47,7 @@ Sommige knooppunten in het pad zijn mappen en andere componenten.
    * **[!UICONTROL Maken > Map..]**.
       * Naam invoeren: `hbs`
 1. Knooppunt `hbs` selecteren
-   * **[!UICONTROL Maken > Component maken...]**
+   * **[!UICONTROL Maken]** > Component **[!UICONTROL maken...]**
       * Label invoeren: `comments`
       * Titel invoeren: `Comments`
       * Beschrijving invoeren: `List of comments without showing avatars`
@@ -74,7 +75,7 @@ Sommige knooppunten in het pad zijn mappen en andere componenten.
 
 >[!NOTE]
 >
->Om de overervingsketen te behouden, wordt de `Super Type` (eigenschap `sling:resourceSuperType`) van de overlaycomponenten op dezelfde waarde ingesteld als de `Super Type` componenten die worden bedekt, in dit geval
+>Om de overervingsketen te behouden, wordt de `Super Type` (eigenschap `sling:resourceSuperType`) van de overlaycomponenten op dezelfde waarde ingesteld als de waarde `Super Type` van de componenten die worden bedekt, in dit geval:
 >
 >* `social/commons/components/comments`
 >* `social/commons/components/comments/comment`

@@ -3,7 +3,7 @@ title: Ontwikkeling van proxy's
 description: Een proxy is een AEM-instantie die proxyworkers gebruikt om taken te verwerken. Leer hoe u een AEM-proxy, ondersteunde bewerkingen, proxycomponenten en een aangepaste proxyworker kunt configureren.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ---
 
@@ -129,7 +129,7 @@ Hieronder ziet u een voorbeeld van API-gebruik:
 
 ### Een aangepaste proxyworker ontwikkelen {#developing-a-customized-proxy-worker}
 
-De [IDS-proxy-worker](indesign.md) is een voorbeeld van een AEM Assets-proxy-worker die al buiten het vak is opgegeven om de verwerking van InDesign-elementen uit te besteden.
+De [IDS-proxyworker](indesign.md) is een voorbeeld van een AEM Assets-proxy-worker die al buiten het vak is opgegeven om de verwerking van InDesign-elementen uit te besteden.
 
 U kunt ook uw eigen AEM Assets-proxy-worker ontwikkelen en configureren om een gespecialiseerde worker te maken die uw AEM Assets-verwerkingstaken verzendt en uitbesteedt.
 

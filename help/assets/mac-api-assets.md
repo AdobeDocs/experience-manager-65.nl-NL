@@ -1,14 +1,14 @@
 ---
-title: Elementen HTTP-API
+title: HTTP-API voor assets
 description: Leer over de implementatie, het gegevensmodel, en de eigenschappen van Activa HTTP API. Met de HTTP-API Middelen kunt u verschillende taken uitvoeren met betrekking tot elementen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ---
 
 
-# Elementen HTTP-API {#assets-http-api}
+# HTTP-API voor assets {#assets-http-api}
 
 ## Overzicht {#overview}
 
@@ -23,7 +23,7 @@ De API-reactie is een JSON-bestand voor sommige MIME-typen en een antwoordcode v
 
 Na de [!UICONTROL Off Time]zijn een middel en zijn vertoningen niet beschikbaar of via de Webinterface van Middelen of door HTTP API. De API retourneert een foutbericht van 404 als de [!UICONTROL Aan-tijd] in de toekomst is of de [!UICONTROL Uit-tijd] in het verleden is.
 
-## Inhoudsfragmenten {#content-fragments}
+## Contentfragmenten {#content-fragments}
 
 Een [inhoudsfragment](/help/assets/content-fragments.md) is een speciaal type element. Het kan worden gebruikt om tot gestructureerde gegevens, zoals teksten, aantallen, data toegang te hebben. Aangezien er verschillende verschillen zijn tussen `standard` elementen (zoals afbeeldingen of documenten), zijn enkele aanvullende regels van toepassing op de afhandeling van inhoudsfragmenten.
 
@@ -54,7 +54,7 @@ Mappen zijn vergelijkbaar met mappen in traditionele bestandssystemen. Het zijn 
 * `parent`: Koppeling maken naar de bovenliggende map
 * `thumbnail`: (Optioneel) koppeling naar een miniatuurafbeelding van een map
 
-### Activa {#assets}
+### Assets {#assets}
 
 In AEM bevat een element de volgende elementen:
 
@@ -120,7 +120,7 @@ Eigenschappen van ingesloten entiteiten zijn een subset van de volledige reeks e
 
 ## Een map maken {#create-a-folder}
 
-Hiermee maakt u een nieuwe `sling`: op `OrderedFolder` het opgegeven pad. Als * in plaats van een knoopnaam wordt gegeven zal servlet de parameternaam als knooppuntnaam gebruiken. Gegevens die worden geaccepteerd als aanvraaggegevens zijn een Sirene-weergave van de nieuwe map of een set naam-waardeparen, gecodeerd als `application/www-form-urlencoded` of `multipart`/ `form`- `data`, handig om een map te maken die rechtstreeks afkomstig is van een HTML-formulier. Bovendien kunnen eigenschappen van de map worden opgegeven als URL-queryparameters.
+Hiermee maakt u een nieuwe `sling`: op `OrderedFolder` het opgegeven pad. Als * in plaats van een knoopnaam wordt gegeven gebruikt servlet de parameternaam als knooppuntnaam. Gegevens die worden geaccepteerd als aanvraaggegevens zijn een Sirene-weergave van de nieuwe map of een set naam-waardeparen, gecodeerd als `application/www-form-urlencoded` of `multipart`/ `form`- `data`, handig om een map te maken die rechtstreeks afkomstig is van een HTML-formulier. Bovendien kunnen eigenschappen van de map worden opgegeven als URL-queryparameters.
 
 De bewerking zal mislukken met een `500` antwoordcode als het bovenliggende knooppunt van het opgegeven pad niet bestaat. Als de map al bestaat, wordt een `409` antwoordcode geretourneerd.
 

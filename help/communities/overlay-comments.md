@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 502c0916-6c54-440c-be8c-eae56001fa26
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70e6f2d8366456e5091b7b775dc40914948921ab
+source-git-commit: 48afa2146d0dcbab4beaa1044645c269b49fd7ff
 
 ---
 
@@ -36,7 +36,7 @@ Als u opmerkingen wilt bedekken, moet u:
 
 Stel dat u het bericht van e-mailberichten wilt aanpassen, kunt u dit doen door de sjablonen te [bedekken](/help/communities/client-customize.md#overlays) op **/libs/settings/community/templates/email/html**.
 
-Als u bijvoorbeeld de meldingen met betrekking tot vermeldingen wilt wijzigen (voor een specifieke component van een gemeenschap waarin ugc is gemaakt), voegt u een** if **voorwaarde toe voor de **vermelding van het werkwoord** in de sjablonen van de componenten waarvoor u ondersteuning voor **@mtations** hebt ingeschakeld.
+Als u bijvoorbeeld de meldingen met betrekking tot vermeldingen wilt wijzigen (voor een specifieke component van een community waarin ugc is gemaakt), voegt u een **if** -voorwaarde toe voor het **vermelden** van werkwoorden in de sjablonen van de componenten waarvoor u de ondersteuning voor **@gesproken** hebt ingeschakeld.
 
 ```java
 {{#equals this.verb "mention"}}\
@@ -44,4 +44,4 @@ Als u bijvoorbeeld de meldingen met betrekking tot vermeldingen wilt wijzigen (v
 {{/equals}}\
 ```
 
-Als u de sjabloon voor e-mailmeldingen voor @notify in blogopmerkingen wilt wijzigen, plaatst u de sjabloon voor het vak op: **/libs/settings/community/templates/email/html/social.journal.components.hbs.comment/nl**
+Als u de sjabloon voor e-mailmeldingen voor @notify in blogopmerkingen wilt wijzigen, plaatst u de sjabloon voor het vak op: `/libs/settings/community/templates/email/html/social.journal.components.hbs.comment/en`

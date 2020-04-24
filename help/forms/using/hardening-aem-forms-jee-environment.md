@@ -9,7 +9,7 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: dee9f9c9d3dfb916d1feaa0d258c883686e1a1dc
 
 ---
 
@@ -38,7 +38,7 @@ U moet AEM Forms niet installeren of configureren op JEE met behulp van een hoof
 
 **Installatie en configuratie in Windows**
 
-U moet de installatie in Windows als beheerder uitvoeren als u AEM Forms op JEE op JBoss installeert met de methode key turnkey of als u PDF Generator installeert. Wanneer u PDF Generator in Windows installeert met ondersteuning voor native toepassingen, moet u de installatie uitvoeren als dezelfde Windows-gebruiker die Microsoft Office heeft geïnstalleerd. Zie het **document AEM Forms installeren en implementeren op JEE** -documenten voor uw toepassingsserver voor meer informatie over installatiemacht.
+U moet de installatie in Windows als beheerder uitvoeren als u AEM Forms op JEE op JBoss installeert met de methode key turnkey of als u PDF Generator installeert. Wanneer u PDF Generator in Windows installeert met ondersteuning voor native toepassingen, moet u de installatie uitvoeren als dezelfde Windows-gebruiker die Microsoft Office heeft geïnstalleerd. Zie het document* AEM Forms installeren en implementeren op JEE* voor uw toepassingsserver voor meer informatie over installatiemacht.
 
 ### Netwerklaagbeveiliging {#network-layer-security}
 
@@ -184,7 +184,7 @@ Als u de toepassingsserver waarop AEM Forms on JEE is geïmplementeerd, wilt uit
    * Aanmelden lokaal weigeren
    * Aanmelden als service (moet al zijn ingesteld)
 
-1. Geef de nieuwe gebruikersaccount de machtigingen Lezen en uitvoeren, Lijstmapinhoud en Lezen voor de AEM-formulieren in het item met directory&#39;s voor JEE-webinhoud.
+1. Geef de nieuwe gebruikersaccount de machtiging Lezen en uitvoeren, Schrijven, Wijzigen, Omslaginhoud weergeven en Lezen om AEM-formulieren in te vullen in de JEE-installatiemap en de GDS-map (Global Document Storage). De locatie van de GDS-map wordt handmatig geconfigureerd tijdens het installatieproces van AEM Forms. Als de locatie-instelling tijdens de installatie leeg blijft, wordt de locatie standaard ingesteld op een map onder de installatie van de toepassingsserver bij [JBoss root]/server/[type]/svcnative/DocumentStorage.
 1. Start de toepassingsserver.
 
 **Het onbruikbaar maken van de reservereserlet van de Manager van de Configuratie**
@@ -258,7 +258,7 @@ Wanneer AEM Forms on JEE is geïnstalleerd, wordt één standaardgebruikersaccou
 1. Typ de volgende URL in een webbrowser:
 
    ```as3
-   https://[host name]:'port'/adminui
+   https://[host name]:[port]/adminui
    ```
 
    Het standaardpoortnummer is een van de volgende:
@@ -278,7 +278,7 @@ Wanneer AEM Forms on JEE is geïnstalleerd, wordt één standaardgebruikersaccou
 
 Daarnaast wordt aangeraden het standaardwachtwoord voor CRX Administrator te wijzigen door de volgende stappen uit te voeren:
 
-1. Meld u aan `https://'[server]:[port]'/lc/libs/granite/security/content/useradmin.html` met de standaardgebruikersnaam/het standaardwachtwoord.
+1. Meld u aan `https://[server]:[port]/lc/libs/granite/security/content/useradmin.html` met de standaardgebruikersnaam/het standaardwachtwoord.
 1. Typ Beheerder in het zoekveld en klik op **Ga**.
 1. Selecteer **Beheerder** in het zoekresultaat en klik op het pictogram **Bewerken** rechtsonder in de gebruikersinterface.
 1. Geef het nieuwe wachtwoord op in het veld **Nieuw wachtwoord** en het oude wachtwoord in het veld **Uw wachtwoord** .
@@ -291,7 +291,7 @@ De generatie van de Definitie van de Taal van de Dienst van het Web (WSDL) zou s
 1. Typ de volgende URL in een webbrowser:
 
    ```as3
-   https://[host name]:'port'/adminui
+   https://[host name]:[port]/adminui
    ```
 
 1. Klik op **Instellingen > Core System Settings > Configurations**.
@@ -676,7 +676,7 @@ Wanneer u de Diensten van het Document eerst installeert, wordt de Toegestane li
 
 **Toegestane verwijzingslijst beheren**
 
-U kunt de lijst Toegestane verwijzing beheren via de gebruikersbeheerinterface van de beheerconsole. De gebruikersbeheerinterface biedt u de functionaliteit om de lijst te maken, bewerken of verwijderen. Verwijs naar de *[Preventing CSRF aanvallen](/help/forms/using/admin-help/preventing-csrf-attacks.md)*sectie van de *beleidshulp*voor meer informatie over het werken met de Toegestane lijst van de Referant.
+U kunt de lijst Toegestane verwijzing beheren via de gebruikersbeheerinterface van de beheerconsole. De gebruikersbeheerinterface biedt u de functionaliteit om de lijst te maken, bewerken of verwijderen. Raadpleeg de sectie * [Preventing CSRF aanvallen](/help/forms/using/admin-help/preventing-csrf-attacks.md)* van de *beleidsHelp* voor meer informatie over het werken met de lijst Allowed Referrer.
 
 **Toegestane uitzondering Referrer en Toegestane URI-lijsten beheren**
 
@@ -691,7 +691,7 @@ AEM Forms on JEE biedt API&#39;s voor het beheer van de lijst Exception allow Re
 * updateAllowedRefererExceptions
 * deleteAllowedRefererExceptions
 
-Raadpleeg de Naslaggids voor ** AEM Forms on JEE API voor meer informatie over de API&#39;s.
+Raadpleeg de* AEM Forms on JEE API Reference* voor meer informatie over de API&#39;s.
 
 Gebruik de lijst ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** voor de Uitzonderingen van de Verwijzer op globaal niveau toe te staan, d.w.z. om uitzonderingen te bepalen die op alle toepassingen van toepassing zijn. Deze lijst bevat alleen URI&#39;s met een absoluut pad (bijvoorbeeld `/index.html`) of een relatief pad (bijvoorbeeld `/sample/`). U kunt ook een reguliere expressie toevoegen aan het einde van een relatieve URI, bijvoorbeeld `/sample/(.)*`.
 
@@ -711,7 +711,7 @@ Neem het argument `-Dlc.um.csrffilter.disabled=true` JAVA op in het opstartscrip
 
 **Filteren met referenties voor aangepaste WAR-bestanden**
 
-Mogelijk hebt u aangepaste WAR-bestanden gemaakt die u kunt gebruiken met AEM Forms op JEE om aan uw zakelijke vereisten te voldoen. Als u het filteren van verwijzingen wilt inschakelen voor uw aangepaste WAR-bestanden, neemt u ***adobe-usermanager-client.jar*** op in het klassepad voor de WAR en neemt u een filteritem op in het bestand *web.xml* met de volgende parameters:
+Mogelijk hebt u aangepaste WAR-bestanden gemaakt die u kunt gebruiken met AEM Forms op JEE om aan uw zakelijke vereisten te voldoen. Als u het filteren van verwijzingen wilt inschakelen voor uw aangepaste WAR-bestanden, neemt u ***adobe-usermanager-client.jar*** op in het klassepad voor de WAR en neemt u een filteritem op in het bestand* web.xml* met de volgende parameters:
 
 **CSRF_CHECK_GETS** controleert de controle van de Referateur op GET verzoeken. Wanneer deze parameter niet is gedefinieerd, wordt de standaardwaarde op false ingesteld. Neem deze parameter alleen op als u uw GET-aanvragen wilt filteren.
 
@@ -970,10 +970,11 @@ AEM Forms on JEE turnkey installation up a service account, by default, using th
 1. Geef in het venster Lokale beveiligingsinstellingen onder Toewijzing gebruikersrechten de volgende rechten op de gebruikersaccount waarop de formulierserver wordt uitgevoerd:
 
    * Ontken login door de EindDiensten
-   * Aanmelden lokaal weigeren
+   * Aanmelding lokaal weigeren
    * Aanmelden als service (moet al zijn ingesteld)
 
-1. Geef de nieuwe gebruikersaccount lees- en uitvoermachtigingen, de inhoud van de map List en de leesmachtigingen aan AEM Forms op JEE-webinhoudsmappen.
+1. Geef de nieuwe gebruikersaccount de machtiging Lezen en uitvoeren, Schrijven, Wijzigen, Omslaginhoud weergeven en Lezen om AEM-formulieren in te vullen in de JEE-installatiemap en de GDS-map (Global Document Storage). De locatie van de GDS-map wordt handmatig geconfigureerd tijdens het installatieproces van AEM Forms. Als de locatie-instelling tijdens de installatie leeg blijft, wordt de locatie standaard ingesteld op een map onder de installatie van de toepassingsserver bij [JBoss root]/server/[type]/svcnative/DocumentStorage.
+
 1. Start de service van de toepassingsserver.
 
 ### Beveiliging bestandssysteem {#file-system-security}
@@ -1038,4 +1039,3 @@ Stel de `directoryBrowsingEnabled` eigenschap in het bestand ibm-web-ext.xml in 
 1. Schakel zowel **Toepassingsbeveiliging** inschakelen als Java 2-beveiliging **** gebruiken uit.
 1. Klik op **OK** of **Toepassen**.
 1. Klik in het vak **Berichten** rechtstreeks op **Opslaan in de hoofdconfiguratie**.
-

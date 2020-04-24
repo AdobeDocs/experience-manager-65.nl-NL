@@ -3,7 +3,7 @@ title: Elementen verwerken met behulp van mediafuncties en workflows
 description: Leer meer over de media handlers en hoe u workflows kunt gebruiken om taken uit te voeren op uw digitale middelen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b600e5eaf7c61568f2559b3fb4915d433f5e13bf
+source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ---
 
@@ -496,7 +496,7 @@ Then, add the command line process step to the **[!UICONTROL DAM Update Asset]**
 
 U kunt de gewijzigde workflow testen door middel van een element aan `/content/dam`te voegen.
 
-1. Haal in het bestandssysteem een .tiff-afbeelding van uw keuze op. Wijzig de naam van het bestand in `myImage.tiff` en kopieer het naar `/content/dam`het bestand, bijvoorbeeld met WebDAV.
+1. Haal in het bestandssysteem een TIFF-afbeelding van uw keuze op. Wijzig de naam van het bestand in `myImage.tiff` en kopieer het naar `/content/dam`het bestand, bijvoorbeeld met WebDAV.
 1. Ga bijvoorbeeld naar de **[!UICONTROL CQ5 DAM]** -console `http://localhost:4502/libs/wcm/core/content/damadmin.html`.
 1. Open het element **[!UICONTROL myImage.tiff]** en controleer of de gespiegelde afbeelding en de drie miniaturen zijn gemaakt.
 
@@ -516,7 +516,7 @@ Bijvoorbeeld als ImageMagick is geïnstalleerd op de schijf die als host fungeer
 
 `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`
 
-Wanneer de workflow vervolgens wordt uitgevoerd, is de stap alleen van toepassing op elementen met een afbeelding/gif of mime:afbeelding/tiff als mime-type, wordt een gespiegelde afbeelding van het origineel gemaakt, omgezet in .jpg en worden drie miniaturen gemaakt met de afmetingen: 140x100, 48x48 en 10x250.
+Wanneer de werkstroom vervolgens wordt uitgevoerd, is de stap alleen van toepassing op elementen die `image/gif` of `mime:image/tiff` als `mime-types`, het maakt een gespiegelde afbeelding van het origineel, zet deze om in JPG en maakt drie miniaturen met de afmetingen: 140x100, 48x48 en 10x250.
 
 Gebruik de volgende [!UICONTROL procesargumenten] om de drie standaardminiaturen te maken met ImageMagick:
 

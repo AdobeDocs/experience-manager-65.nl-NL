@@ -3,7 +3,7 @@ title: Uw digitale middelen organiseren
 description: Organiseer uw digitale middelen, beelden, dossiers, omslagen, etc. gebruikend de Manager van de Ervaring.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ---
 
@@ -36,7 +36,7 @@ De eenvoudigste manier om elementen te ordenen, is deze in mappen op te slaan. D
 
 ## Elementen ordenen met tags {#use-tags-to-organize-assets}
 
-Met tags kunt u als metagegevens eenvoudig zoeken in elementen, verzamelingen maken met de zoekresultaten, de zoekpositie voor bepaalde elementen verhogen en de AI-algoritmen van Adobe Sensei gebruiken voor het detecteren van elementen.
+Met tags kunt u als metagegevens eenvoudig zoeken in middelen, verzamelingen maken met de zoekresultaten, de zoekpositie voor bepaalde elementen verhogen en AI-algoritmen van Adobe Sensei gebruiken voor het detecteren van elementen.
 
 Adobe Experience Manager Assets gebruikt een zelfstudie algoritme om zeer beschrijvende tags te maken waarmee u het juiste middel met een paar klikken kunt vinden. Slimme tags toepassen maakt gebruik van Adobe Sensei, ons raamwerk voor kunstmatige intelligentie en het leren van machines, dat u kunt opleiden om zowel standaard- als bedrijfsspecifieke tags te herkennen en toe te passen op afbeeldingen. Met slimme tags kunt u ook inhoud, afzonderlijke woorden of zinsdelen identificeren en automatisch beschrijvende tags toepassen op elementen
 

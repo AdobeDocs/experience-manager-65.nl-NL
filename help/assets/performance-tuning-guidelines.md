@@ -4,7 +4,7 @@ description: Suggesties en richtlijnen over AEM-configuratie, wijzigingen in har
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ---
 
@@ -234,7 +234,7 @@ Als u elementen wilt repliceren naar een groot aantal publicatie-instanties, bij
 ### Kettingreplicatie configureren {#configure-chain-replication}
 
 1. Bepaal op welke publicatie-instantie u de replicaties wilt koppelen
-1. Op die publicatieinstantie voegt replicatieagenten toe die aan andere publicatieinstanties richten
+1. Op die publicatieinstantie voeg replicatieagenten toe die aan andere publicatieinstanties richten
 1. Schakel op elk van die replicatieagents &quot;Bij ontvangst&quot; in op het tabblad &quot;Triggers&quot;
 
 >[!NOTE]
@@ -267,7 +267,7 @@ Sommige optimalisaties kunnen worden uitgevoerd op de Oak-indexconfiguraties die
 
 1. Set the properties below on the nodes (where `ordered` and `propertyIndex` properties are of type `Boolean`:
 
-   ```
+   ```conf
    slingResource
    name="sling:resource"
    ordered=false

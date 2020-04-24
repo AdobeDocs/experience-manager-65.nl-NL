@@ -3,7 +3,7 @@ title: Verbeterde slimme tags
 description: Verbeterde slimme tags
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 ## Overzicht van verbeterde slimme tags {#overview-of-enhanced-smart-tags}
 
-Organisaties die met digitale middelen te maken hebben, maken steeds vaker gebruik van door taxonomie gecontroleerde woordenschat in metagegevens van bedrijfsmiddelen. In wezen, omvat het een lijst van sleutelwoorden die de werknemers, de partners, en de klanten algemeen gebruiken om naar digitale activa van een bepaalde klasse te verwijzen en te zoeken. Door elementen te labelen met een woordenschat die door de taxonomie wordt bepaald, kunt u ze gemakkelijk herkennen en ophalen door zoekopdrachten op basis van tags.
+Organisaties die met digitale middelen te maken hebben, maken steeds vaker gebruik van een door taxonomie gecontroleerde woordenlijst in metagegevens van bedrijfsmiddelen. In wezen, omvat het een lijst van sleutelwoorden die de werknemers, de partners, en de klanten algemeen gebruiken om naar digitale activa van een bepaalde klasse te verwijzen en te zoeken. Door elementen te labelen met een woordenschat die door de taxonomie wordt bepaald, kunt u ze gemakkelijk herkennen en ophalen door zoekopdrachten op basis van tags.
 
 Vergeleken met natuurlijke taalwoordenboeken, helpt het etiketteren van digitale activa die op bedrijfstaxonomie worden gebaseerd hen op de zaken van een bedrijf te richten en zorgt ervoor dat de meest relevante activa in onderzoeken verschijnen.
 
@@ -44,7 +44,7 @@ Voordat u de Smart Content Service kunt gebruiken, moet u het volgende doen om e
 
 ## Onboarding {#onboarding}
 
-De Smart Content Service kan worden aangeschaft als een add-on voor Experience Manager. Nadat u de aankoop hebt gedaan, wordt een e-mail verzonden naar de beheerder van uw organisatie met een koppeling naar de Adobe-IO.
+De Smart Content Service kan worden aangeschaft als een add-on voor Experience Manager. Nadat u de aankoop hebt gedaan, wordt een e-mail verzonden naar de beheerder van uw organisatie met een koppeling naar de Adobe I/O.
 
 De beheerder kan de verbinding volgen om de Slimme Dienst van de Inhoud met de Manager van de Ervaring te integreren. Zie Slimme tags [configureren om de service te integreren met de middelen van Experience Manager](config-smart-tagging.md).
 

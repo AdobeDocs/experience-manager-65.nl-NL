@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 752235d2-21ac-46d2-82ed-5fec09c645e9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 22e853ecaf2696c7329a81bb9d375b1dbc74452c
 
 ---
 
@@ -22,9 +22,9 @@ source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
 
 Op een instantie van AEM-auteur, van globale navigatie:
 
-* Selecteer** Gemeenschappen, sites.**
-* Selecteer **Inlogmap** om deze te openen.
-* Selecteer de kaart voor de **Engelstalige website Aan de slag voor zelfstudie** .
+* Selecteer **[!UICONTROL Communities] > **[!UICONTROL Sites]**.
+* Selecteer **[!UICONTROL Inlogmap]** om deze te openen.
+* Selecteer de kaart voor de **[!UICONTROL Engelstalige website Aan de slag voor zelfstudie]** .
 
    * Selecteer de kaartafbeelding.
    * Selecteer *geen* pictogram.
@@ -43,43 +43,43 @@ Deze groep kan worden gemaakt omdat de sitestructuur voor de verbinding een groe
 
 Deze consoles zijn gelijkaardig aan de console van Plaatsen van Gemeenschappen.
 
-* Selecteer Groep **maken.**
+* Selecteer Groep **** maken.
+
 * **Template** voor communautaire groep:
 
-   * Titel van communautaire groep: Kunst.
-   * Omschrijving van de communautaire groep: Een bovenliggende groep voor verschillende kunstgroepen.
-   * Hoofdmap van communautaire groep: Standaard *laten.*
-   * Aanvullende beschikbare talen van de communautaire groep: gebruikt u het keuzemenu om de beschikbare taal of talen van groepen in de gemeenschap te selecteren. In het menu worden alle talen weergegeven waarin de bovenliggende communitysite is gemaakt. Gebruikers kunnen in deze ene stap uit deze talen kiezen om groepen te maken in meerdere landinstellingen. De zelfde groep wordt gecreeerd in veelvoudige gespecificeerde talen in de console van Groepen van de respectieve communautaire plaatsen.
-   * Naam communautaire groep: kunst.
-   * Sjabloon: vervolgkeuzelijst selecteren `Reference Group.`
-   * `Select Next.`
+   * **[!UICONTROL Titel]** van communautaire groep: Kunst.
+   * **[!UICONTROL Omschrijving]** van communautaire groep: Een bovenliggende groep voor verschillende kunstgroepen.
+   * **[!UICONTROL Hoofdmap]** van communautaire groep: Standaard *laten*.
+   * **[!UICONTROL Aanvullende beschikbare talen van de communautaire groep]**: gebruikt u het keuzemenu om de beschikbare taal of talen van groepen in de gemeenschap te selecteren. In het menu worden alle talen weergegeven waarin de bovenliggende communitysite is gemaakt. Gebruikers kunnen in deze ene stap uit deze talen kiezen om groepen te maken in meerdere landinstellingen. De zelfde groep wordt gecreeerd in veelvoudige gespecificeerde talen in de console van Groepen van de respectieve communautaire plaatsen.
+   * **[!UICONTROL Naam]** communautaire groep: kunst.
+   * **[!UICONTROL Sjabloon]**: keuzelijst selecteren `Reference Group.`
+   * Selecteer **[!UICONTROL Volgende]**.
 
 ![Geneste groepen van gemeenschappen](assets/parent-to-nestedgroup.png)
 
 Doorloop de andere deelvensters met deze instellingen:
 
-* **Ontwerp**
+* **[!UICONTROL Ontwerp]**
 
    * Het ontwerp wijzigen of het ontwerp van de standaard bovenliggende site toestaan.
-   * Selecteer **Volgende.**
+   * Selecteer **[!UICONTROL Volgende]**.
 
-* **Instellingen**
+* **[!UICONTROL Instellingen]**
 
-   * **Moderatie**
+   * **[!UICONTROL Moderatie]**
 
-      * leeg laten (overerven van bovenliggende site).
-   * **Lidmaatschap**
+      * Leeg laten (overerven van bovenliggende site).
+   * **[!UICONTROL Lidmaatschap]**
 
-      * default gebruiken `Optional Membership.`
-   * **Miniatuur**
+      * Standaard gebruiken `Optional Membership.`
 
-      * `*optional.*`
-   * `Select Next.`
-
-
+      * **[!UICONTROL Miniatuur]**
+         * `optional.*`
+      * **[!UICONTROL Selecteer Volgende]**.
 
 
-* Selecteer **Maken.**
+
+* Selecteer **[!UICONTROL Maken]**.
 
 ### Groepen nesten binnen tekengroep {#nesting-groups-within-arts-group}
 
@@ -89,7 +89,7 @@ De `groups` map bevat nu twee groepen (de pagina vernieuwen).
 
 #### Groep publiceren {#publish-group}
 
-Voordat u groepen maakt die in de `arts`groep zijn genest, houdt u de muisaanwijzer boven de `arts` kaart en selecteert u het publicatiepictogram om deze te publiceren.
+Voordat u groepen maakt die in de `arts` groep zijn genest, houdt u de muisaanwijzer boven de `arts` kaart en selecteert u het publicatiepictogram om deze te publiceren.
 
 ![chlimage_1-93](assets/chlimage_1-93.png)
 
@@ -99,36 +99,36 @@ Wacht op bevestiging dat de groep is gepubliceerd.
 
 De `arts` groep moet ook een `groups` map bevatten, maar een map die leeg is en waarin nieuwe groepen kunnen worden gemaakt. Navigeer naar de map met kunstgroepen en maak drie geneste groepen, elk met een andere lidmaatschapsinstelling:
 
-1. Zichtbaar
+1. **[!UICONTROL Zichtbaar]**
 
    * Titel: `Visual Arts`
    * Naam: `visual`
    * Sjabloonmodel: `Reference Group`
-   * Lidmaatschap: selecteert `Optional Membership`een openbare groep die voor alle leden open is
+   * Lidmaatschap: selecteer `Optional Membership`, een openbare groep, open aan alle leden.
 
-1. Controleur
+1. **[!UICONTROL Controleur]**
 
    * Titel: `Auditory Arts`
    * Naam: `auditory`
    * Sjabloonmodel: `Reference Group`
-   * Lidmaatschap: selecteer `Required Membership`een open groep, beschikbaar voor leden om zich bij te voegen
+   * Lidmaatschap: Selecteer `Required Membership`, een open groep, beschikbaar voor leden om zich bij te voegen.
 
-1. Historie
+1. **[!UICONTROL Historie]**
 
    * Titel: `Art History`
    * Naam: `history`
    * Sjabloonmodel: `Reference Group`
-   * Lidmaatschap: Selecteer `Restricted Membership`een geheime groep, die alleen zichtbaar is voor uitgenodigde leden als voorbeeld, nodig [demogebruiker](/help/communities/tutorials.md#demo-users) uit `emily.andrews@mailinator.com`
+   * Lidmaatschap: select `Restricted Membership`, een geheime groep, alleen zichtbaar voor uitgenodigde leden. U kunt bijvoorbeeld een [demogebruiker](/help/communities/tutorials.md#demo-users) uitnodigen `emily.andrews@mailinator.com`.
 
 Vernieuw de pagina om alle drie geneste groepen (subgemeenschappen) weer te geven.
 
 Om aan de genestelde groepen van de console van Plaatsen van Gemeenschappen te navigeren:
 
-* Selecteer een map voor deelname
-* Selecteer Aan de slag-zelfstudiekaart
-* map Groepen selecteren
-* illustratiekaart selecteren
-* map Groepen selecteren
+* Selecteer een **[!UICONTROL toegewijde map]**
+* Zelfstudiekaart **[!UICONTROL Aan de slag selecteren]**
+* Map **[!UICONTROL Groepen]** selecteren
+* Tekenkaart **[!UICONTROL selecteren]**
+* Map **[!UICONTROL Groepen]** selecteren
 
 ![chlimage_1-95](assets/chlimage_1-95.png)
 
@@ -138,31 +138,30 @@ Om aan de genestelde groepen van de console van Plaatsen van Gemeenschappen te n
 
 Na publicatie van de hoofdsite van de community:
 
-* elke groep afzonderlijk publiceren
+* Elke groep afzonderlijk publiceren:
 
-   * wachten op bevestiging dat de groep is gepubliceerd
+   * Wachtend op bevestiging dat de groep is gepubliceerd.
 
-* bovenliggende groep publiceren voordat groepen worden gepubliceerd die zijn genest binnen
+* Publiceer bovenliggende groep voordat u groepen publiceert die zijn genest in:
 
-   * alle groepen moeten van boven naar beneden worden gepubliceerd.
+   * Alle groepen moeten van boven naar beneden worden gepubliceerd.
 
 ![chlimage_1-97](assets/chlimage_1-97.png)
 
 ## Ervaring met publiceren {#experience-on-publish}
 
-Het is mogelijk om de verschillende groepen te ervaren wanneer u zich aanmeldt, bijvoorbeeld met de [demo-gebruikers](/help/communities/tutorials.md#demo-users) die worden gebruikt voor
+U kunt de verschillende groepen ervaren wanneer u zich aanmeldt, bijvoorbeeld met de [demo-gebruikers](/help/communities/tutorials.md#demo-users) die worden gebruikt voor:
 
 * Groepslid illustratie/geschiedenis: emily.andrews@mailinator.com/password
-
-   * de beperkte (geheime) groep, kunst/geschiedenis, zichtbaar is
-   * kan optionele (openbare) groepen zien
-   * kan zich bij beperkte (open) groepen aansluiten
+   * De beperkte (geheime) groep, kunst/geschiedenis, is zichtbaar:
+   * Kan optionele (openbare) groepen zien.
+   * Kan beperkte (open) groepen samenvoegen.
 
 * Groepsbeheer: aaron.mcdonald@mailinator.com/password
 
-   * kan optionele (openbare) groepen zien
-   * kan zich bij beperkte (open) groepen aansluiten
-   * kan geen beperkte (geheime) groepen zien
+   * Kan optionele (openbare) groepen zien.
+   * Kan beperkte (open) groepen samenvoegen.
+   * Kan beperkte (geheime) groepen niet zien.
 
 Toegang tot de [leden en de Groepen van Gemeenschappen consoles](/help/communities/members.md) op auteur om andere gebruikers aan diverse lidgroepen toe te voegen die aan de communautaire groepen beantwoorden.
 

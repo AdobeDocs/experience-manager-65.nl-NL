@@ -3,7 +3,7 @@ title: Asset tagging configureren met behulp van de Smart Content Service
 description: Leer hoe u slimme tags en verbeterde slimme tags kunt configureren in AEM met behulp van de Smart Content Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
 
 U kunt Adobe Experience Manager (AEM) met de Smart Content Service integreren met behulp van Adobe I/O. Gebruik deze configuratie om tot de Slimme Dienst van de Inhoud van binnen AEM toegang te hebben.
 
-Het artikel detailleert de volgende zeer belangrijke taken uit die worden vereist om de Slimme Dienst van de Inhoud te vormen. Aan de achterkant verifieert de AEM-server uw servicegegevens met de Adobe IO-gateway voordat uw verzoek naar de Smart Content Service wordt doorgestuurd.
+Het artikel detailleert de volgende zeer belangrijke taken uit die worden vereist om de Slimme Dienst van de Inhoud te vormen. Aan het achterste eind, verifieert de server AEM uw de dienstgeloofsbrieven van Adobe I/O gateway alvorens uw verzoek aan de Slimme Dienst van de Inhoud door:sturen.
 
 * Creeer een Slimme configuratie van de Dienst van de Inhoud in AEM om een openbare sleutel te produceren. Overheidscertificaat verkrijgen voor OAuth-integratie.
 * Maak een integratie in Adobe I/O en upload de gegenereerde openbare sleutel.

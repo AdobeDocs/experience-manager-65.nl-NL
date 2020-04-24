@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
 
 ---
 
@@ -29,22 +29,24 @@ Met behulp van de consoles van leden en groepen van Gemeenschappen kunnen leden 
 
 Voor het beheren van gebruikers en groepen die in de *auteursomgeving* zijn geregistreerd, is noodzakelijk om de de veiligheidsconsole van het platform te gebruiken:
 
-* Van globale navigatie selecteren `Tools, Security, Users`
-* Van globale navigatie selecteren `Tools, Security, Groups`
+* Selecteer **[!UICONTROL Gereedschappen]** > **[!UICONTROL Beveiliging]** > **[!UICONTROL Gebruikers]** in de globale navigatie.
+* Selecteer in globale navigatie **[!UICONTROL Gereedschappen]** > **[!UICONTROL Beveiliging]** > **[!UICONTROL Groepen]**.
 
 >[!NOTE]
 >
 >Als voorbeeldinhoud is geïmplementeerd en ingeschakeld, zijn er veel voorbeeldgebruikers in zowel de auteur- als de publicatieomgeving. Deze gebruikers zullen niet aanwezig zijn wanneer het lopen met [geen runtime](../../help/sites-administering/production-ready.md)van de Inhoud.
 
+
 ## Ledenconsole {#members-console}
 
 In het auteursmilieu, om de console van Leden te bereiken voor het beheren van leden die in het publicatiemilieu worden geregistreerd:
 
-* Vanuit globale navigatie: **[!UICONTROL Navigatie > Gemeenschappen > Leden]**
+* Selecteer in de globale navigatie **[!UICONTROL Navigatie]** > **[!UICONTROL Gemeenschappen]** > **[!UICONTROL Leden]**
 
 >[!CAUTION]
 >
 >Het zal niet mogelijk zijn om de console van Leden te gebruiken als de [tunneldienst](deploy-communities.md#tunnel-service-on-author) niet wordt toegelaten.
+
 
 ![chlimage_1-119](assets/chlimage_1-119.png)
 
@@ -58,7 +60,7 @@ Selecteer het zoekpictogram aan de linkerkant van de `Members` koptekst om het v
 
 ### Statistieken van de lidstaten {#member-statistics}
 
-De kolommen waarin `Views`, `Posts`en `Follows`en `Likes` worden weergegeven wanneer de gebruiker lid is van een of meer communitysites waarvoor Adobe Analytics is [ingeschakeld](sites-console.md#analytics).
+De kolommen waarin `Views`, `Posts`, `Follows` en `Likes` worden weergegeven wanneer de gebruiker lid is van een of meer communitysites waarvoor Adobe Analytics is [ingeschakeld](sites-console.md#analytics).
 
 ### CSV exporteren {#export-csv}
 
@@ -78,26 +80,38 @@ Selecteer deze optie `Create Member` om een gebruiker te maken in de publicatieo
 
 De meeste velden zijn optionele velden die leden later kunnen invullen in hun profiel.
 
-* **[!UICONTROL ID]**(*vereist*) De autoriseerbare id is de aanmeldings-id van het lid.
-Standaard wordt de id ingesteld op de waarde van het vereiste e-mailadres.
-   *Nadat de id is gemaakt, kan deze niet meer worden gewijzigd.*
+* **[!UICONTROL ID]**
 
-* **[!UICONTROL E-mailadres]**(*vereist*) Het e-mailadres van het lid.
+(*Vereist*) De autoriseerbare id is de aanmeldings-id van het lid.
+Standaard wordt de id ingesteld op de waarde van het vereiste e-mailadres.
+*Nadat de id is gemaakt, kan deze niet meer worden gewijzigd*.
+
+* **[!UICONTROL E-mailadres]**
+
+(*Vereist*) Het e-mailadres van het lid.
 Het lid kan zijn e-mailadres wijzigen bij het bijwerken van zijn profiel.Als de id standaard op het e-mailadres is ingesteld, verandert de id *niet* wanneer het e-mailadres wordt gewijzigd.
 
-* **[!UICONTROL Wachtwoord]**(*vereist*) Het aanmeldingswachtwoord.
+* **[!UICONTROL Wachtwoord]**
 
-* **[!UICONTROL Typ wachtwoord]** nogmaals (*vereist*) Voer het wachtwoord opnieuw in ter verificatie.
+   (*Vereist*) Het aanmeldingswachtwoord.
 
-* **[!UICONTROL Lid toevoegen aan sites]**(*optioneel*) Maak een keuze uit bestaande communitysites om het lid toe te voegen aan de ledengroep van de community.
+* **[!UICONTROL Wachtwoord opnieuw invoeren]**
 
-* **[!UICONTROL Lid toevoegen aan groepen]**(*optioneel*) Maak een keuze uit bestaande lidgroepen om het lid toe te voegen aan die groep.
+   (*Vereist*) Voer het wachtwoord opnieuw in ter verificatie.
+
+* **[!UICONTROL Lid toevoegen aan sites]**
+
+   (*Optioneel*) Maak een keuze uit bestaande communitysites en voeg het lid toe aan de ledengroep van de site van de community.
+
+* **[!UICONTROL Lid toevoegen aan groepen]**
+
+   (*Facultatief*) Uitgezocht van bestaande lidgroepen om het lid aan die groep toe te voegen.
 
 * Selecteer **[!UICONTROL Opslaan]**
 
 ### ALGEMEEN - Accountinstellingen {#general-account-settings}
 
-Onder de montages van de Rekening is het mogelijk voor een communautaire beheerder om
+Onder de montages van de Rekening is het mogelijk voor een communautaire beheerder:
 
 * **[!UICONTROL Status]**
    * Een lid met een abonnement kan zich niet aanmelden, zodat het geen pagina&#39;s kan weergeven of kan deelnemen aan activiteiten waarvoor aanmelden vereist is. Ze kunnen nog steeds anoniem een open communitysite bezoeken.
@@ -105,11 +119,15 @@ Onder de montages van de Rekening is het mogelijk voor een communautaire beheerd
    * Niet verbodenEen lid heeft volledige toegang tot de site van de community.
    Standaard is dit `Not Banned`.
 
-* **[!UICONTROL Bijdragelimieten]**Als deze optie is ingeschakeld, is de mogelijkheid voor leden om inhoud te plaatsen beperkt.
+* **[!UICONTROL Bijdragelimieten]**
+
+   Als deze optie is ingeschakeld, is de mogelijkheid voor leden om inhoud te posten beperkt.
 Het gebrek hangt van de configuratie van bijdragegrenzen af.
 Zie bijdragelimieten voor [leden](limits.md).
 
-* **[!UICONTROL Het Wachtwoord]** van de verandering een verbinding die wanneer het wijzigen van een bestaand lid aanwezig is. Verstrekt de capaciteit voor een communautaire beheerder om een wachtwoord voor een lid terug te stellen.
+* **[!UICONTROL Wachtwoord wijzigen]**
+
+   Een koppeling die aanwezig is wanneer een bestaand lid wordt gewijzigd. Verstrekt de capaciteit voor een communautaire beheerder om een wachtwoord voor een lid terug te stellen.
 
 ### ALGEMEEN - Foto {#general-photo}
 
@@ -135,7 +153,7 @@ Zie ook [Scores en Badges](implementing-scoring.md).
    * Typ tekst om een van de [beschikbare badges](badges.md)te selecteren. Wanneer een badge is geselecteerd, kiest u elke site of alle sites waarop de badge samen met de avatar van het lid moet worden weergegeven.
    * Er kunnen meerdere badges en sites worden gekozen.
 * **[!UICONTROL Badges verwijderen]**
-   * Selecteer het prullenbakpictogram naast een badje om het te verwijderen
+   * Selecteer het prullenbakpictogram naast een badge om het te verwijderen.
 
 ## Groepsconsole {#groups-console}
 
@@ -144,11 +162,12 @@ De console van Groepen, beschikbaar bij het auteursmilieu, staat voor de verweze
 * Groepse toewijzing van [actiemiddelen](resources.md)
 
 De console Groepen openen:
-* Vanuit globale navigatie: **[!UICONTROL Navigation > Communities > Groepen]**
+* Selecteer **[!UICONTROL Navigatie]** > **[!UICONTROL Gemeenschappen]** > **[!UICONTROL Groepen]** in globale navigatie.
 
 >[!CAUTION]
 >
 >Het zal niet mogelijk zijn om de console van Groepen te gebruiken als de [tunneldienst](deploy-communities.md#tunnel-service-on-author) niet wordt toegelaten.
+
 
 ### Nieuwe groep maken {#create-new-group}
 
@@ -158,16 +177,25 @@ Selecteer deze optie `Add Group` om een groep te maken in de publicatieomgeving.
 
 De vereiste gebieden voor het creëren van een nieuwe publish-side lidgroep zijn:
 
-* **[!UICONTROL ID]**(*vereist*) De unieke groep-id.
+* **[!UICONTROL ID]**
+
+   (*Vereist*) De unieke groep-id.
+
    *Nadat de id is gemaakt, kan deze niet meer worden gewijzigd.*
 
-* **[!UICONTROL Naam]**(*optioneel*) De weergavenaam voor de groep.
+* **[!UICONTROL Naam]**
+
+   (*Optioneel*) De weergavenaam van de groep.
 
    De standaardwaarde is ID.
 
-* **[!UICONTROL Beschrijving]**(*optioneel*) Een beschrijving van het doel en de machtigingen van de groep.
+* **[!UICONTROL Beschrijving]**
 
-* **[!UICONTROL Leden toevoegen aan groep]**(*optioneel*) Selecteer leden aan de publicatiezijde die u wilt opnemen als eerste leden van de groep.
+   (*Optioneel*) Een beschrijving van het doel en de machtigingen van de groep.
+
+* **[!UICONTROL Leden toevoegen aan groep]**
+
+   (*Optioneel*) Selecteer de leden van de publicatiezijde die u wilt opnemen als eerste leden van de groep.
 
 * Selecteer **[!UICONTROL Opslaan]**
 

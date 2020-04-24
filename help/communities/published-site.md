@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: dd0cbc05-a361-46bc-b9f1-d045f8f23890
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 31a3ccc1f9f0940515ed64b1b18a535102bf7231
 
 ---
 
@@ -22,8 +22,8 @@ source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
 
 Nu de nieuwe site voor gemeenschappen is gepubliceerd, bladert u naar de URL die wordt weergegeven bij het maken van de site, maar naar de publicatieserver, bijvoorbeeld
 
-* auteur URL = https://localhost:4502/content/sites/engage/en.html
-* publish URL = https://localhost:4503/content/sites/engage/en.html
+* A\uthor URL = https://localhost:4502/content/sites/engage/en.html
+* URL publiceren = https://localhost:4503/content/sites/engage/en.html
 
 Om verwarring over welk lid bij auteur en publicatie is aangemeld, te minimaliseren, wordt aangeraden voor elke instantie verschillende browsers te gebruiken.
 
@@ -69,7 +69,7 @@ Voer de volgende stappen uit om de inhoud van uw site te beschermen tegen toegan
    ![page-eigenschappen](assets/page-properties.png)
 
 1. Schakel **verificatievereiste** in.
-1. Voeg het pad van de aanmeldingspagina toe. Bijvoorbeeld **/content/...... ./GetStarted**.
+1. Voeg het pad van de aanmeldingspagina toe. Bijvoorbeeld **/content/......./GetStarted**.
 1. Publiceer de pagina.
 
 ## Vertrouwd lid van de Gemeenschap {#trusted-community-member}

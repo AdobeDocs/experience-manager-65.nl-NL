@@ -1,16 +1,16 @@
 ---
-title: Assets van AEM downloaden
-description: Leer hoe u elementen downloadt van AEM en de downloadfunctionaliteit in- of uitschakelt.
+title: Download digitale middelen van [!DNL Adobe Experience Manager].
+description: Leer hoe u middelen downloadt van [!DNL Adobe Experience Manager] en de downloadfunctionaliteit in- of uitschakelt.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ccdafa89793e97f69294958d814cccf3554b496d
+source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ---
 
 
-# Assets van AEM downloaden {#download-assets-from-aem}
+# Download assets from [!DNL Adobe Experience Manager] {#download-assets-from-aem}
 
-U kunt elementen downloaden, zoals statische en dynamische uitvoeringen. U kunt ook e-mails met koppelingen naar elementen rechtstreeks vanuit AEM Assets verzenden. Gedownloade elementen worden gebundeld in een ZIP-bestand. Het gecomprimeerde ZIP-bestand heeft een maximale bestandsgrootte van 1 GB voor de exporttaak. U kunt maximaal 500 elementen per exporttaak gebruiken.
+U kunt elementen downloaden, zoals statische en dynamische uitvoeringen. U kunt ook e-mails met koppelingen naar middelen rechtstreeks verzenden vanuit [!DNL Adobe Experience Manager Assets]. Gedownloade elementen worden gebundeld in een ZIP-bestand. Het gecomprimeerde ZIP-bestand heeft een maximale bestandsgrootte van 1 GB voor de exporttaak. U kunt maximaal 500 elementen per exporttaak gebruiken.
 
 >[!NOTE]
 >
@@ -20,9 +20,9 @@ Als u elementen wilt downloaden, navigeert u naar een element, selecteert u het 
 
 De elementtypen Afbeeldingssets, Spin-sets, Gemengde mediasets en Carousel-sets kunnen niet worden gedownload.
 
-![Beschikbare opties voor het downloaden van elementen van AEM-elementen](assets/asset_download_dialog.png)
+![Beschikbare opties voor het downloaden van middelen van Experience Manager-middelen](assets/asset_download_dialog.png)
 
-*Afbeelding: Beschikbare opties voor het downloaden van elementen van AEM-elementen*
+*Afbeelding: Beschikbare opties voor het downloaden van elementen van[!DNL Experience Manager Assets].*
 
 Hieronder vindt u de opties Exporteren/downloaden. Dynamische uitvoeringen zijn uniek voor Dynamische media en u kunt uitvoeringen ter plekke genereren naast het element dat u hebt geselecteerd. Deze optie is alleen beschikbaar als u Dynamische media hebt ingeschakeld.
 
@@ -40,7 +40,7 @@ Wanneer u een map selecteert om te downloaden, wordt de volledige elementenhiër
 
 ## Enable asset download servlet {#enable-asset-download-servlet}
 
-Met de standaardservlet in AEM kunnen geverifieerde gebruikers willekeurig grote, gelijktijdige downloadaanvragen afgeven voor het maken van ZIP-bestanden met elementen die zichtbaar zijn voor hen en die de server en het netwerk kunnen overbelasten. Om potentiële risico&#39;s van Dos te verlichten die door deze eigenschap worden veroorzaakt, wordt de component `AssetDownloadServlet` OSGi onbruikbaar gemaakt door gebrek voor publiceer instanties.
+Met de standaardservlet in [!DNL Experience Manager] kunnen geverifieerde gebruikers willekeurig grote, gelijktijdige downloadaanvragen afgeven voor het maken van ZIP-bestanden met elementen die zichtbaar zijn voor hen die de server en het netwerk kunnen overbelasten. Om potentiële risico&#39;s van Dos te verlichten die door deze eigenschap worden veroorzaakt, wordt de component `AssetDownloadServlet` OSGi onbruikbaar gemaakt door gebrek voor publiceer instanties.
 
 Om het downloaden van activa van uw DAM toe te staan, bijvoorbeeld wanneer het gebruiken van iets zoals de Commons van het Aandeel van Activa of andere portaalachtige implementatie, laat manueel servlet via een configuratie OSGi toe. Adobe raadt u aan de toegestane downloadgrootte zo laag mogelijk in te stellen zonder dat dit van invloed is op de vereisten voor het dagelijks downloaden. Een hoge waarde kan van invloed zijn op de prestaties.
 
@@ -53,14 +53,14 @@ Om het downloaden van activa van uw DAM toe te staan, bijvoorbeeld wanneer het g
 1. Maak in de configuratiemap een nieuw bestand van het type `nt:file` genaamd `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config`.
 1. Vul `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config` met de volgende code. Hiermee stelt u een maximale grootte (in bytes) in voor het downloaden als waarde van `asset.download.prezip.maxcontentsize`. In het onderstaande voorbeeld wordt de maximale grootte van de ZIP-download ingesteld op maximaal 100 kB.
 
-   ```
+   ```conf
    enabled=B"true"
    asset.download.prezip.maxcontentsize=I"102400"
    ```
 
 ## Asset Download-server uitschakelen {#disable-asset-download-servlet}
 
-De functie `Asset Download Servlet` kan worden uitgeschakeld op een AEM-publicatie-instantie door de configuratie van de verzender bij te werken om aanvragen voor het downloaden van middelen te blokkeren. servlet kan ook manueel via de console OSGi direct worden onbruikbaar gemaakt.
+De functie `Asset Download Servlet` kan worden uitgeschakeld in een [!DNL Experience Manager] publicatie-instantie door de configuratie van de verzender bij te werken om aanvragen voor het downloaden van middelen te blokkeren. servlet kan ook manueel via de console OSGi direct worden onbruikbaar gemaakt.
 
 1. Om activa te blokkeren downloadverzoeken via een verzenderconfiguratie geef de `dispatcher.any` configuratie uit en voeg een nieuwe regel aan de [filtersectie](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter)toe.
 
@@ -71,6 +71,6 @@ De functie `Asset Download Servlet` kan worden uitgeschakeld op een AEM-publicat
 >[!MORELIKETHIS]
 >
 >* [Met DRM beveiligde middelen downloaden](drm.md)
->* [Elementen downloaden met de AEM-bureaubladtoepassing op Windows- of Mac-bureaublad](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)
+>* [Elementen downloaden met de bureaublad-app Experience Manager op de Windows- of Mac-desktop](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)
 >* [Elementen downloaden met Adobe Assets Link vanuit de ondersteunde Adobe Creative Cloud-toepassingen](https://helpx.adobe.com/nl/enterprise/using/manage-assets-using-adobe-asset-link.html)
 

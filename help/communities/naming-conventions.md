@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 5271feb9-70c6-4c82-8ac7-34a63d80e3aa
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 22e853ecaf2696c7329a81bb9d375b1dbc74452c
 
 ---
 
@@ -23,7 +23,7 @@ Houd er bij het maken van een locatie voor een Java-klasse rekening mee dat de p
 
 Het gebruik van afbreekstreepjes in de namen van opslagplaats-items wordt aanbevolen bij het ontwikkelen van AEM-bestanden, maar afbreekstreepjes zijn niet toegestaan in de pakketnamen van Java.
 
-Het onderliggende CRX-platform moet een onderscheid kunnen maken tussen een werkelijk onderstrepingsteken &#39;_&#39; en een afbreekstreepje &#39;-&#39;. In JCR moet het afbreekstreepje daarom worden vervangen door de unicode-waarde (u002d) en worden genummerd door het onderstrepingsteken &#39;_&#39;.
+Het onderliggende CRX-platform moet een onderscheid kunnen maken tussen een werkelijk onderstrepingsteken `_ `en een afbreekstreepje `-`. In JCR moet het afbreekstreepje daarom worden vervangen door de unicode-waarde (u002d) en met een onderstrepingsteken worden genummerd `_`.
 
 Als het pad naar de opslagplaats bijvoorbeeld **/apps/my-example/component/info/Info.java** is, moet de pakketnaam `java package apps.my_002dexample.component.info;`
 

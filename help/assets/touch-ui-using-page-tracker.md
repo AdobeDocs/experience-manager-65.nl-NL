@@ -3,7 +3,7 @@ title: Paginanummering gebruiken en code insluiten in webpagina's
 description: Leer hoe u Page Tracker kunt opnemen en JavaScript-codes kunt insluiten in uw websitecode, zodat Adobe Analytics gebruiksgegevens rond elementen kan vastleggen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ---
 
@@ -16,7 +16,7 @@ Als u gebeurtenissen wilt vastleggen, zoals klikken en dergelijke, die specifiek
 
 De volgende voorbeeldcode toont hoe een webpagina die zowel de code van Paginanummer als de code van Insluiten bevat eruit ziet:
 
-```
+```html
 <!DOCTYPE html>
 <html>
     <head>

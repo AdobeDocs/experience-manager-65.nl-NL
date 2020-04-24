@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 9222bc93-c231-4ac8-aa28-30d784a4ca3b
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
 
 ---
 
@@ -25,12 +25,12 @@ Deze instructies beschrijven hoe te met de server te verbinden MySQL, het enable
 
 Voordat u MySQL voor de functie enablement van Communities configureert, moet u
 
-* Installeer [MySQL Server](https://dev.mysql.com/downloads/mysql/) Community Server versie 5.6
-   * Versie 5.7 wordt niet ondersteund voor SCORM
-   * Wellicht is dit dezelfde server als de auteur van de AEM-instantie
-* Installeer bij alle AEM-instanties het officiële [JDBC-stuurprogramma voor MySQL](deploy-communities.md#jdbc-driver-for-mysql)
-* MySQL- [werkbank installeren](https://dev.mysql.com/downloads/tools/workbench/)
-* Installeer het [SCORM-pakket bij alle AEM-instanties](enablement.md#scorm)
+* Installeer [MySQL Server](https://dev.mysql.com/downloads/mysql/) Community Server versie 5.6:
+   * Versie 5.7 wordt niet ondersteund voor SCORM.
+   * Kan dezelfde server zijn als de auteur van de AEM-instantie.
+* Installeer bij alle AEM-instanties het officiële [JDBC-stuurprogramma voor MySQL](deploy-communities.md#jdbc-driver-for-mysql).
+* Installeer [MySQL Workbench](https://dev.mysql.com/downloads/tools/workbench/).
+* Installeer het [SCORM-pakket](enablement.md#scorm)op alle AEM-instanties.
 
 ## MySQL installeren {#installing-mysql}
 
@@ -43,22 +43,19 @@ Aangezien SQL niet hoofdlettergevoelig is, is het voor hoofdlettergevoelige best
 Als u bijvoorbeeld alle tabelnamen met kleine letters wilt opgeven op een Linux-besturingssysteem:
 
 * Bestand bewerken `/etc/my.cnf`
-* Voeg de volgende regel toe aan de `[mysqld]` sectie:
-   `lower_case_table_names = 1`
+* Voeg de volgende regel toe aan de `[mysqld]` sectie: `lower_case_table_names = 1`
 
 ### UTF8-tekenset {#utf-character-set}
 
 Voor betere meertalige ondersteuning is het nodig de tekenset UTF8 te gebruiken.
 
 Wijzig MySQL om UTF8 in te stellen als tekenset:
-* mysql> SET NAMES &#39;utf8&#39;;
+* mysql > SET NAMES &#39;utf8&#39;;
 
 Wijzig de MySQL-database in de standaardwaarde voor UTF8:
 * Bestand bewerken `/etc/my.cnf`
-* Voeg de volgende regel toe aan de `[client]` sectie:
-   `default-character-set=utf8`
-* Voeg de volgende regel toe aan de `[mysqld]` sectie:
-   `character-set-server=utf8`
+* In de `[client]` sectie toevoegen: `default-character-set=utf8`
+* In de `[mysqld]` sectie toevoegen: `character-set-server=utf8`
 
 ## MySQL Workbench installeren {#installing-mysql-workbench}
 
@@ -82,12 +79,11 @@ Als de MySQL Workbench voor het eerst wordt gestart, tenzij deze al voor andere 
    * Gebruikersnaam: `root`
    * Wachtwoord: `no password by default`
    * Standaardschema: `leave blank`
-1. Selecteer `Test Connection` om de verbinding met de lopende dienst te verifiëren MySQL
+1. Selecteer `Test Connection` om de verbinding aan de lopende dienst te verifiëren MySQL.
 
 **Opmerkingen**:
-
-* De standaardpoort is `3306`
-* De `Connection Name` gekozen naam is ingegaan als `datasource` naam in configuratie [JDBC OSGi](#configure-jdbc-connections)
+* De standaardpoort is `3306`.
+* De `Connection Name` gekozen naam is ingegaan als `datasource` naam in [configuratie](#configure-jdbc-connections)JDBC OSGi.
 
 #### Verbinding gelukt {#successful-connection}
 
@@ -107,7 +103,7 @@ Bij het openen van de nieuwe verbinding Enablement, merk op dat er een testschem
 
 De SQL manuscripten worden verkregen gebruikend CRXDE Lite op de auteursinstantie. Het [SCORM-pakket](deploy-communities.md#scorm) moet zijn geïnstalleerd:
 
-1. Bladeren naar CRXDE Lite
+1. Bladeren naar CRXDE Lite:
    * Bijvoorbeeld: [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 1. De `/libs/social/config/scorm/` map uitvouwen
 1. Downloaden `database_scormengine.sql`
@@ -117,9 +113,9 @@ De SQL manuscripten worden verkregen gebruikend CRXDE Lite op de auteursinstanti
 
 Eén methode voor het downloaden van het schema is:
 
-* Het `jcr:content`knooppunt voor het sql-bestand selecteren
-* De waarde voor de `jcr:data`eigenschap is een weergavekoppeling
-* Selecteer de weergavekoppeling om de gegevens in een lokaal bestand op te slaan
+* Selecteer het `jcr:content`knooppunt voor het sql-bestand.
+* De waarde voor de `jcr:data`eigenschap is een weergavekoppeling.
+* Selecteer de weergavekoppeling om de gegevens in een lokaal bestand op te slaan.
 
 ### SCORM-database maken {#create-scorm-database}
 
@@ -134,7 +130,7 @@ Installeer het schema voordat u de gegevens installeert.
 
 >[!CAUTION]
 >
->Als de databasenaam is gewijzigd, moet u deze correct opgeven in
+>Als de databasenaam is gewijzigd, moet u deze correct opgeven in:
 >
 >* [JDBC-configuratie](#configure-jdbc-connections)
 >* [SCORM-configuratie](#configure-scorm)
@@ -164,13 +160,13 @@ De uitvoering van het `database_scormengine.sql` script voor het maken van de SC
 
 #### Vernieuwen {#refresh}
 
-Zodra de manuscripten worden uitgevoerd, is het noodzakelijk om de `SCHEMAS`sectie van het `Navigator` te verfrissen om het nieuwe gegevensbestand te zien. Gebruik het vernieuwingspictogram rechts van &#39;SCHEMAS&#39;:
+Zodra de manuscripten worden uitgevoerd, is het noodzakelijk om de `SCHEMAS` sectie van `Navigator` te verfrissen om het nieuwe gegevensbestand te zien. Gebruik het vernieuwingspictogram rechts van &#39;SCHEMAS&#39;:
 
 ![chlimage_1-334](assets/chlimage_1-334.png)
 
 #### Resultaat: scormenginedb {#result-scormenginedb}
 
-Na installatie en ververfrissing van SCHEMAS zal **`scormenginedb`**zichtbaar zijn.
+Na het installeren en vernieuwen van SCHEMAS, `scormenginedb` zal het zichtbaar zijn.
 
 ![chlimage_1-335](assets/chlimage_1-335.png)
 
@@ -193,11 +189,11 @@ Wanneer MySQL op een server verschillend van AEM loopt, moet server hostname in 
 
 * Voer de volgende waarden in:
    * **[!UICONTROL JDBC-stuurprogrammaklasse]**: `com.mysql.jdbc.Driver`
-   * **DBC-verbindingsURIJ **: Geef server op in plaats van localhost als MySQL-server niet hetzelfde is als &#39;deze&#39; AEM-server`jdbc:mysql://localhost:3306/aem63reporting`
-   * **[!UICONTROL Gebruikersnaam]**: Hoofdmap of voer de geconfigureerde gebruikersnaam voor de MySQL-server in als dit niet het geval is.
-   * **[!UICONTROL Wachtwoord]**: Wis dit gebied als geen wachtwoord dat voor MySQL wordt geplaatst, anders het gevormde wachtwoord voor de Gebruikersnaam MySQL ingaat
-   * **[!UICONTROL Naam]** gegevensbron: Naam die u hebt ingevoerd voor de [MySQL-verbinding](#new-connection-settings), bijvoorbeeld &#39;enablement&#39;
-* Selecteer **[!UICONTROL Opslaan]**
+   * **DBC-verbindingsURIJ **: Geef server op in plaats van localhost als MySQL-server niet hetzelfde is als &#39;deze&#39; AEM-server.`jdbc:mysql://localhost:3306/aem63reporting`
+   * **[!UICONTROL Gebruikersnaam]**: De wortel of gaat de gevormde Gebruikersnaam voor de server MySQL, als niet &quot;wortel&quot;in.
+   * **[!UICONTROL Wachtwoord]**: Wis dit gebied als geen wachtwoord dat voor MySQL wordt geplaatst, anders het gevormde wachtwoord voor de Gebruikersnaam MySQL ingaat.
+   * **[!UICONTROL Naam]** gegevensbron: Naam die u hebt ingevoerd voor de [MySQL-verbinding](#new-connection-settings), bijvoorbeeld &#39;enablement&#39;.
+* Selecteer **[!UICONTROL Opslaan]**.
 
 ## Muziek configureren {#configure-scorm}
 
@@ -225,21 +221,22 @@ Wanneer MySQL op een server verschillend van AEM loopt, moet server hostname in 
 * Wat de volgende parameter betreft:
    * **[!UICONTROL Wachtwoord]** voor scoregebruiker: NIET BEWERKEN
 
-      Uitsluitend voor intern gebruik. Het is voor een speciale de dienstgebruiker die door Gemeenschappen AEM wordt gebruikt om met de vormmotor te communiceren.
+      Uitsluitend voor intern gebruik: Het is voor een speciale de dienstgebruiker die door Gemeenschappen AEM wordt gebruikt om met de vormmotor te communiceren.
 * Selecteer **[!UICONTROL Opslaan]**
 
 ### Adobe Granite CSRF-filter {#adobe-granite-csrf-filter}
 
 Om ervoor te zorgen dat de cursussen in- en uitgeschakeld werken in alle browsers, moet Mozilla worden toegevoegd als een gebruikersagent die niet door het CSRF-filter wordt gecontroleerd.
 
-* Op elke publicatie-AEM-instantie
-* Aangemeld met beheerdersrechten
+* Meld u aan bij de publicatie-instantie van AEM met beheerdersrechten.
 * De [webconsole openen](../../help/sites-deploying/configuring-osgi.md)
    * Bijvoorbeeld: [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
-* Zoeken `Adobe Granite CSRF Filter`
-* Het bewerkingspictogram selecteren
-   ![chlimage_1-337](assets/chlimage_1-338.png)
-* Selecteer het `[+]` pictogram om een veilige gebruikersagent toe te voegen
-* Enter `Mozilla/*`
-* Selecteer **[!UICONTROL Opslaan]**
+* Zoeken `Adobe Granite CSRF Filter`.
+* Selecteer het bewerkingspictogram.
+
+   ![chlimage_1-338](assets/chlimage_1-338.png)
+
+* Selecteer het `[+]` pictogram om een veilige gebruikersagent toe te voegen.
+* Enter `Mozilla/*`.
+* Selecteer **[!UICONTROL Opslaan]**.
 

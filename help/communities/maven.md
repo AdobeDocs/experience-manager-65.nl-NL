@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a726c904-aadd-4678-be84-9e05808ab8be
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
 
 ---
 
@@ -21,7 +21,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 Dit gedeelte van de documentatie van de AEM Communities is een aanvulling op:
 
-* [AEM-projecten bouwen met Apache Maven](../../help/sites-developing/ht-projects-maven.md)
+* [AEM-projecten bouwen met Apache Maven](../../help/sites-developing/ht-projects-maven.md).
 
 Er zijn nu twee &#39;Number&#39;-artefacten die afzonderlijke artefacten vervangen:
 
@@ -44,18 +44,19 @@ Hier volgt een voorbeeld van een GAV voor de API-jar van AEM Communities:
 Zorg ervoor dat de opgegeven versie overeenstemt met de pakketversie van de Gemeenschappen die voor AEM Communities is geïnstalleerd. Om het geïnstalleerde versienummer te verifiëren:
 
 1. Aanmelden met beheerdersrechten.
-2. Blader naar [Pakketbeheer](../../help/sites-administering/package-manager.md). Bijvoorbeeld: [http://localhost:4502/crx/packmgr/](http://localhost:4502/crx/packmgr/)
+1. Blader naar [Pakketbeheer](../../help/sites-administering/package-manager.md). Bijvoorbeeld: [http://localhost:4502/crx/packmgr/](http://localhost:4502/crx/packmgr/)
 
-3. zoek het pakket *cq-social gemeenschappen-pkg-1.x.xxx*
-4. de versie ophalen uit de pakketnaam
-   * De eerste versie voor AEM 6.3 is versie 1.11.170
-   * de eigenschappakken zullen versies 1.12.xxx zijn
+1. Zoek het pakket *cq-social Communities-pkg-1.x.xxx*
+1. Extraheer de versie uit de pakketnaam:
+   * De eerste versie voor AEM 6.3 is versie 1.11.170.
+   * De pakken van de eigenschap zullen versies 1.12.xxx zijn.
 
 >[!NOTE]
 >
 >Aanbevolen wordt de meest recente versie van de Gemeenschappen bij te houden.
 >
 >Ga naar de sectie [Laatste releases](deploy-communities.md#latest-releases) om de meest recente versie te identificeren.
+
 
 ## Voorbeeld van Geweven afhankelijkheid {#maven-dependency-example}
 

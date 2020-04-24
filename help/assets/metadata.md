@@ -1,16 +1,16 @@
 ---
-title: Metagegevens voor digitale elementen beheren
-description: Leer meer over de typen metagegevens en hoe u met AEM Assets metagegevens voor elementen kunt beheren, zodat elementen gemakkelijker kunnen worden gecategoriseerd en ingedeeld.
+title: Metagegevens voor digitale middelen beheren in [!DNL Adobe Experience Manager].
+description: Meer informatie over de typen metagegevens en hoe u met [!DNL Adobe Experience Manager Assets] metagegevens voor elementen kunt beheren, zodat u elementen gemakkelijker kunt indelen en ordenen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 ---
 
 
 # Metagegevens voor digitale elementen beheren {#managing-metadata-for-digital-assets}
 
-Adobe Experience Manager (AEM)-middelen houden metagegevens bij voor elk element. Dit maakt het gemakkelijker om middelen in te delen en te organiseren en helpt mensen die een bepaald goed zoeken. Dankzij de mogelijkheid metagegevens te extraheren uit bestanden die naar AEM Assets zijn geüpload, kan het beheer van metagegevens worden geïntegreerd in de creatieve workflow. Met de mogelijkheid om willekeurige metagegevens bij uw elementen te houden en te beheren, kunt u elementen automatisch ordenen en verwerken op basis van de metagegevens van de elementen.
+[!DNL Adobe Experience Manager Assets] bewaart meta-gegevens voor elk middel. Dit maakt het gemakkelijker om middelen in te delen en te organiseren en helpt mensen die een bepaald goed zoeken. Dankzij de mogelijkheid metagegevens te extraheren uit bestanden waarnaar geüpload wordt, kan het beheer van metagegevens worden geïntegreerd in de creatieve workflow. [!DNL Experience Manager Assets] Dankzij de mogelijkheid om willekeurige metagegevens bij uw elementen te houden en te beheren, kunt u elementen automatisch ordenen en verwerken op basis van de metagegevens van de elementen. [!DNL Experience Manager Assets]
 
 * [XMP-metagegevens](xmp.md)
 * [Metagegevens bewerken of toevoegen](meta-edit.md)
@@ -27,7 +27,7 @@ Metagegevens zijn de verzameling van alle gegevens die beschikbaar zijn voor dez
 * de grootte van de afbeelding zoals deze is opgeslagen in de opslagplaats
 * de naam van de map waarin deze zich bevindt
 
-Dit zijn de basiseigenschappen van metagegevens die AEM kan beheren voor elementen, waardoor gebruikers alle elementen kunnen zien, bijvoorbeeld geordend op de laatste wijzigingsdatum. Dit is handig wanneer ze proberen te achterhalen welke elementen onlangs aan de opslagplaats zijn toegevoegd.
+Dit zijn de basiseigenschappen van metagegevens die voor elementen [!DNL Experience Manager] kunnen worden beheerd. Hiermee kunnen gebruikers bijvoorbeeld alle elementen zien die op de laatste wijzigingsdatum zijn geordend. Dit is handig wanneer ze proberen te achterhalen welke elementen onlangs aan de opslagplaats zijn toegevoegd.
 
 U kunt meer gegevens op hoog niveau toevoegen aan digitale elementen, bijvoorbeeld:
 
@@ -45,7 +45,7 @@ Wanneer metagegevens aan elementen worden toegevoegd, neemt de waarde van het el
 * eenvoudiger te beheren - u kunt gemakkelijker middelen vinden met dezelfde set eigenschappen en er wijzigingen op toepassen
 * complexer - hoe meer metagegevens u aan een element hebt toegevoegd, des te belangrijker het beheer van metagegevens wordt
 
-Daarom biedt AEM Assets u de juiste middelen om metagegevens voor uw digitale elementen te maken, beheren en uit te wisselen.
+Daarom [!DNL Assets] beschikt u over de juiste middelen om metagegevens voor uw digitale elementen te maken, te beheren en uit te wisselen.
 
 ## Metagegevens: basiskennis {#metadata-basics}
 
@@ -62,7 +62,7 @@ Er zijn twee basistypen metagegevens:
 
 #### Technische metagegevens {#technical-metadata}
 
-Technische metagegevens zijn handig voor softwaretoepassingen die werken met digitale elementen en mogen niet handmatig worden onderhouden. Technische metagegevens kunnen automatisch worden bepaald door AEM Assets en andere software en kunnen worden gewijzigd wanneer het element wordt gewijzigd. De beschikbare technische metagegevens van een element zijn grotendeels afhankelijk van het bestandstype van het element. Voorbeelden van technische metagegevens zijn:
+Technische metagegevens zijn handig voor softwaretoepassingen die werken met digitale elementen en mogen niet handmatig worden onderhouden. Technische metagegevens kunnen automatisch worden bepaald door [!DNL Experience Manager Assets] en andere software en kunnen worden gewijzigd wanneer het element wordt gewijzigd. De beschikbare technische metagegevens van een element zijn grotendeels afhankelijk van het bestandstype van het element. Voorbeelden van technische metagegevens zijn:
 
 * de grootte van een bestand
 * de afmetingen (hoogte en breedte) van een afbeelding
@@ -75,7 +75,7 @@ De beschrijvende meta-gegevens zijn meta-gegevens betrokken bij het toepassingsd
 
 Vanwege de hoge kosten van de handmatige inspanningen die nodig zijn om beschrijvende metagegevens te maken, zijn er normen opgesteld om de uitwisseling van metagegevens tussen softwaresystemen en organisaties te vergemakkelijken.
 
-AEM Assets steunt alle relevante normen voor meta-gegevensbeheer.
+[!DNL Experience Manager Assets] ondersteunt alle relevante normen voor metagegevensbeheer.
 
 Vanwege het belang van metagegevens en de grote handmatige betrokkenheid die nodig is om metagegevens te maken, zijn er normen opgesteld die het uitwisselen van gegevens vergemakkelijken.
 
@@ -83,14 +83,14 @@ Vanwege het belang van metagegevens en de grote handmatige betrokkenheid die nod
 
 Er zijn verschillende manieren waarop metagegevens in bestanden kunnen worden ingesloten. Een selectie coderingsstandaarden wordt ondersteund:
 
-* XMP: worden gebruikt door AEM Assets om de opgehaalde metagegevens in de gegevensopslagruimte op te slaan.
+* XMP: worden gebruikt door [!DNL Assets] de geëxtraheerde metagegevens op te slaan in de opslagplaats.
 * ID3: voor audio- en videobestanden.
 * EXIF: voor afbeeldingsbestanden.
 * Overige/Verouderd: vanuit Microsoft Word, PowerPoint, Excel enzovoort.
 
 #### XMP {#xmp}
 
-XMP betekent Extensible Metadata Platform en is de metagegevensstandaard die door AEM Assets wordt gebruikt voor al het metagegevensbeheer. XMP biedt niet alleen universele metagegevenscodering die in alle bestandsindelingen kan worden ingesloten, maar biedt ook een uitgebreid inhoudsmodel en wordt ondersteund door Adobe en andere bedrijven, zodat gebruikers van XMP in combinatie met AEM Assets een krachtig platform hebben waarop kan worden gebouwd.
+XMP betekent Extensible Metadata Platform en is de standaard voor metagegevens die wordt gebruikt [!DNL Experience Manager Assets] voor al het metagegevensbeheer. XMP biedt niet alleen universele metagegevenscodering die in alle bestandsindelingen kan worden ingesloten, maar biedt ook een rijk inhoudsmodel en wordt ondersteund door Adobe en andere bedrijven, zodat gebruikers van XMP in combinatie met een krachtig platform [!DNL Experience Manager Assets] kunnen bouwen.
 
 #### ID3 {#id}
 
@@ -110,11 +110,11 @@ EXIF betekent Exchangeable image file format en is de populairste metagegevensin
 
 Een belangrijke beperking van EXIF is dat deze niet wordt ondersteund door populaire indelingen voor afbeeldingsbestanden, zoals BMP, GIF of PNG.
 
-EXIF slaat metagegevens op als paren van een metagegevensnaam en een metagegevenswaarde. Deze naam-waarde-paren voor metagegevens worden ook wel tags genoemd, maar mogen niet worden verward met de codering in AEM.
+EXIF slaat metagegevens op als paren van een metagegevensnaam en een metagegevenswaarde. Deze naam-waarde-paren voor metagegevens worden ook wel tags genoemd, maar mogen niet worden verward met de tags in [!DNL Experience Manager].
 
 Aangezien EXIF automatisch door moderne digitale camera&#39;s wordt gecreeerd en door moderne grafieksoftware wordt gesteund, kan het als laagste gemeenschappelijke noemer voor meta-gegevensbeheer worden gezien.
 
-De meeste metagegevensvelden die door EXIF worden gedefinieerd, zijn van zeer technische aard en van beperkte toepassing voor het beheer van beschrijvende metagegevens. Daarom biedt AEM Assets toewijzing van EXIF-eigenschappen aan in [algemene metagegevensschema](metadata-schemas.md) en in [XMP](xmp-writeback.md), de krachtige metagegevensindeling die AEM Assets gebruikt voor metagegevensbeheer.
+De meeste metagegevensvelden die door EXIF worden gedefinieerd, zijn van zeer technische aard en van beperkte toepassing voor het beheer van beschrijvende metagegevens. Daarom [!DNL Assets] biedt u de toewijzing van EXIF-eigenschappen in [algemene metagegevensschema](metadata-schemas.md) en in [XMP](xmp-writeback.md), de krachtige metagegevensindeling die [!DNL Assets] gebruikt wordt voor metagegevensbeheer.
 
 #### Andere metagegevens {#other-metadata}
 
@@ -126,7 +126,7 @@ Metagegevensschema&#39;s zijn vooraf gedefinieerde sets definities van metagegev
 
 U kunt ook uw eigen schema&#39;s voor metagegevens ontwerpen als er geen bestaan die aan uw behoeften voldoen (zorg er echter voor dat u iets dat al bestaat, niet dupliceert). Binnen een organisatie, maakt het scheiden van schema&#39;s het gemakkelijker om meta-gegevens onder organisaties te delen.
 
-AEM voorziet u van een uit-van-de-doos lijst van de populairste meta-gegevensschema&#39;s, die u toestaan om uw meta-gegevensstrategie te springen en de meta-gegevenseigenschappen te kiezen die u van een reeds-bepaalde schema&#39;s nodig hebt.
+[!DNL Experience Manager] biedt u een lijst van de meest populaire metagegevensschema&#39;s, waarmee u uw strategie voor metagegevens kunt starten en de gewenste eigenschappen voor metagegevens kunt kiezen in een reeds gedefinieerd schema.
 
 De ondersteunde metagegevensschema&#39;s worden in de volgende sectie weergegeven.
 
@@ -149,8 +149,8 @@ De ondersteunde metagegevensschema&#39;s worden in de volgende sectie weergegeve
 
 * acdsee - metagegevens beheerd door het ACDSee-programma [www.acdsee.com/](https://www.acdsee.com/)
 * album - Adobe Photoshop Album
-* cq - gebruikt door AEM Assets
-* dam - gebruikt door AEM Assets
+* cq - gebruikt door [!DNL Experience Manager Assets]
+* dam - gebruikt door [!DNL Experience Manager Assets]
 * dex - Optima SC Description Explorer
 * crs - Adobe Photoshop Camera Raw
 * lr - Adobe Lightroom

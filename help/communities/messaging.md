@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 232a0ec1-8dfc-41ec-84cc-69f9db494ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
 
 ---
 
 
-# Berichten configureren{#configure-messaging}
+# Berichten configureren {#configure-messaging}
 
 ## Overzicht {#overview}
 
@@ -32,7 +32,7 @@ Voor extra informatie voor ontwikkelaars, zie de Hoofdzaak van het [Overseinen](
 
 De configuratie [AEM de Dienst](https://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) van de Verrichtingen van het Overseinen van Gemeenschappen identificeert het eindpunt dat overseinen verwante verzoeken behandelt, de omslagen de dienst voor het opslaan van berichten zou moeten gebruiken, en als de berichten dossiergehechtheid kunnen omvatten, welke dossiertypes worden toegestaan.
 
-Voor communautaire plaatsen die gebruikend de `Communities Sites console`, een geval van de dienst worden gecreeerd bestaat reeds, met inbox die aan `/mail/inbox`. wordt geplaatst.
+Voor communautaire plaatsen die gebruikend de `Communities Sites console`, een geval van de dienst worden gecreeerd bestaat reeds, met inbox die aan wordt geplaatst `/mail/inbox`.
 
 ### Community Messaging Operations Service {#community-messaging-operations-service}
 
@@ -44,47 +44,87 @@ Zoals hieronder getoond, bestaat een configuratie van de dienst voor plaatsen di
 
 Als u een nieuwe configuratie wilt toevoegen, selecteert u het plusteken &#39;**+**&#39; naast de naam van de service:
 
-* **Whitelist van de Gebieden van het bericht** specificeert de eigenschappen van de samenstellen de componentengebruikers van het Bericht kunnen uitgeven en voortzetten. Als nieuwe formulierelementen worden toegevoegd, moet de element-id desgewenst worden toegevoegd om te worden opgeslagen in SRP. Standaard zijn dit twee items: *onderwerp* en *inhoud*.
+* **Whitelist voor berichtvelden**
 
-* **Grootte van berichtvenster is beperkt** Het maximum aantal bytes in het berichtvenster van elke gebruiker. De standaardwaarde is *1073741824 *(1 GB).
+   Hiermee geeft u de eigenschappen op van de component Bericht samenstellen die gebruikers kunnen bewerken en behouden. Als nieuwe formulierelementen worden toegevoegd, moet de element-id desgewenst worden toegevoegd om te worden opgeslagen in SRP. Standaard zijn dit twee items: *onderwerp* en *inhoud*.
 
-* **Limiet** voor aantal berichten Het totale aantal berichten dat per gebruiker is toegestaan. De waarde -1 geeft aan dat een onbeperkt aantal berichten is toegestaan, afhankelijk van de groottelimiet van het berichtvenster. De standaardwaarde is *10000* (10 kB).
+* **Maximale grootte berichtvenster**
 
-* **De leveringsmislukking** van het berichtIndien gecontroleerd, bericht afzender als de berichtlevering aan sommige ontvangers ontbreekt. Standaard is *ingeschakeld*.
+   Het maximum aantal bytes in het berichtvenster van elke gebruiker. De standaardwaarde is *1073741824* (1 GB).
 
-* **Identiteitskaart** Naam van afzender van mislukte levering die in levering ontbroken bericht verschijnt. De standaardwaarde is *failureNotifier*.
+* **Limiet voor aantal berichten**
 
-* **Het weg van het berichtmalplaatje** van de mislukking Absolute weg aan de levering ontbrak de wortel van het berichtmalplaatje. De standaardwaarde is */etc/notification/messaging/default*.
+   Het totale aantal toegestane berichten per gebruiker. De waarde -1 geeft aan dat een onbeperkt aantal berichten is toegestaan, afhankelijk van de groottelimiet van het berichtvenster. De standaardwaarde is *10000* (10 kB).
 
-* **Geen pogingen opnieuw** Aantal keren om opnieuw te proberen bericht dat niet kan worden geleverd. De standaardwaarde is *3*.
+* **Leveringsfout melden**
 
-* **Wacht tussen opnieuw probeert** Aantal seconden om tussen pogingen te wachten om bericht op mislukking opnieuw te verzenden. De standaardwaarde is *100 *(seconden).
+   Als deze optie is ingeschakeld, stuurt u een melding naar de afzender als de berichtlevering bij sommige ontvangers mislukt. Standaard is *ingeschakeld*.
 
-* **De grootte** van de de updatepool van de telling Aantal gezamenlijke draden die voor tellerupdate worden gebruikt. De standaardwaarde is *10*.
+* **Leverancier-id mislukt**
 
-* **Inbox path**(*Required*) The path, relative to the user&#39;s node (/home/users/*username*), to use for the **`inbox`** folder. Het pad mag NIET eindigen met een slash &#39;/&#39; achter het pad. Standaard is dit */e-mail/inbox.*
+   Naam van afzender die in ontbroken bericht verschijnt levering. De standaardwaarde is *failureNotifier*.
 
-* **Pad** naar verzonden items (*vereist*) Het pad ten opzichte van het knooppunt van de gebruiker (/home/users/*gebruikersnaam*) dat moet worden gebruikt voor de **`send items`** map. Het pad mag NIET eindigen met een slash &#39;/&#39; achter het pad. Standaard is dit */e-mail/sentimenten* .
+* **Sjabloonpad voor mislukte berichten**
 
-* **Ondersteuningsbijlagen** Als deze optie is ingeschakeld, kunnen gebruikers bijlagen toevoegen aan hun berichten. Standaard is *ingeschakeld*.
+   Absolute weg aan de levering ontbrak de wortel van het berichtmalplaatje. De standaardwaarde is */etc/notification/messaging/default*.
 
-* **Schakel het groepsbericht** in als deze optie is geselecteerd, kunnen geregistreerde gebruikers bulkberichten naar een groep leden verzenden. Standaard is *uitgeschakeld*.
+* **Aantal pogingen**
 
-* **Maximum aantal. van totale ontvangers** Als het groepsoverseinen wordt toegelaten, specificeer het maximumaantal ontvangers waarnaar het groepsbericht in een tijd kan worden verzonden. De standaardwaarde is *100*.
+   Aantal keren dat het opnieuw verzenden van een bericht moet worden uitgevoerd. De standaardwaarde is *3*.
 
-* **De grootte** van de partijAantal berichten om samen voor te slaan verzendt wanneer het verzenden naar een grote groep ontvangers. De standaardwaarde is *100*.
+* **Wacht tussen opnieuw proberen**
 
-* **Totale grootte** van bijlage als supportAttachments wordt gecontroleerd, specificeert deze waarde de maximum toegestane totale grootte (in bytes) van alle gehechtheid. De standaardwaarde is *104857600* (100 MB).
+   Aantal seconden te wachten tussen pogingen om bericht op gebrek opnieuw te verzenden. De standaardwaarde is *100* (seconden).
 
-* **zwarte lijst** Een zwarte lijst met bestandsextensies, vooraf ingesteld op &#39;**.**&quot;, dat zal door het systeem worden verworpen. Als de extensie niet op de zwarte lijst staat, is deze toegestaan. Extensies kunnen worden toegevoegd of verwijderd met de pictogrammen &#39;**+**&#39; en &#39;**-**&#39;.
+* **Grootte van updatepool tellen**
+
+   Aantal gezamenlijke draden die voor tellerupdate worden gebruikt. De standaardwaarde is *10*.
+
+* **Pad in vak**
+
+   (*Vereist*) Het pad, relatief ten opzichte van het knooppunt van de gebruiker (/home/users/*gebruikersnaam*), dat moet worden gebruikt voor de **`inbox`** map. Het pad mag NIET eindigen met een slash &#39;/&#39; achter het pad. Standaard is dit */e-mail/inbox*.
+
+* **Pad naar verzonden items**
+
+   (*Vereist*) Het pad, relatief ten opzichte van het knooppunt van de gebruiker (/home/users/*gebruikersnaam*), dat moet worden gebruikt voor de **`send items`** map. Het pad mag NIET eindigen met een slash &#39;/&#39; achter het pad. Standaard is dit */e-mail/sentimenten* .
+
+* **Ondersteuningsbijlagen**
+
+   Als deze optie is ingeschakeld, kunnen gebruikers bijlagen toevoegen aan hun berichten. Standaard is *ingeschakeld*.
+
+* **Groepsberichten inschakelen**
+
+   Als deze optie is geselecteerd, kunnen geregistreerde gebruikers bulkberichten naar een groep leden verzenden. Standaard is *uitgeschakeld*.
+
+* **Maximum aantal. van de totale begunstigden**
+
+   Als het groepsoverseinen wordt toegelaten, specificeer het maximumaantal ontvangers waarnaar het groepsbericht tegelijkertijd kan worden verzonden. De standaardwaarde is *100*.
+
+* **Batchgrootte**
+
+   Aantal berichten aan partij samen voor verzenden wanneer het verzenden naar een grote groep ontvangers. De standaardwaarde is *100*.
+
+* **Totale grootte van bijlage**
+
+   Als supportAttachments wordt gecontroleerd, specificeert deze waarde de maximum toegestane totale grootte (in bytes) van alle gehechtheid. De standaardwaarde is *104857600* (100 MB).
+
+* **Zwarte lijst, type bijlage**
+
+   Een zwarte lijst met bestandsextensies, voorafgegaan door &#39;**.**&quot;, dat zal door het systeem worden verworpen. Als de extensie niet op de zwarte lijst staat, is deze toegestaan. Extensies kunnen worden toegevoegd of verwijderd met de pictogrammen &#39;**+**&#39; en &#39;**-**&#39;.
 
 * **Toegestane typen bijlagen**
+
    **(*Actie vereist*)** Een whitelist van bestandsextensies, het tegenovergestelde van de zwarte lijst. Als u alle bestandsextensies wilt toestaan, behalve extensies die op de zwarte lijst staan, gebruikt u het pictogram &#39;**-**&#39; om één leeg item te verwijderen.
 
-* **De selecteur** van de dienst (*Vereist*) een absolute weg (eindpunt) waardoor de dienst (een virtueel middel) wordt geroepen. De wortel van de gekozen weg moet één inbegrepen in de configuratie van de Wegen *van de* Uitvoering van OSGi config [ , zoals `Apache Sling Servlet/Script Resolver and Error Handler`](https://localhost:4502/system/console/configMgr/org.apache.sling.servlets.resolver.SlingServletResolver), `/bin/`, en `/apps/``/services/`zijn. Om deze configuratie voor het overseineneigenschap van een plaats te selecteren, wordt dit eindpunt verstrekt als **`Service selector`** waarde voor `Message List and Compose Message components` (zie de Eigenschap [van het](/help/communities/configure-messaging.md)Bericht).
-De standaardwaarde is */bin/messaging* .
+* **Servicekiezer**
 
-* **whitelist van veld** Gebruik whitelist van **berichtvelden**.
+   (*Vereist*) een absolute weg (eindpunt) waardoor de dienst (een virtueel middel) wordt geroepen. De wortel van de gekozen weg moet één inbegrepen in de configuratie van de Wegen *van de* Uitvoering van OSGi config [ , zoals `Apache Sling Servlet/Script Resolver and Error Handler`](https://localhost:4502/system/console/configMgr/org.apache.sling.servlets.resolver.SlingServletResolver), `/bin/`, en `/apps/``/services/`zijn. Om deze configuratie voor het overseineneigenschap van een plaats te selecteren, wordt dit eindpunt verstrekt als **`Service selector`** waarde voor `Message List and Compose Message components` (zie de Eigenschap [van het](/help/communities/configure-messaging.md)Bericht).
+
+   De standaardwaarde is */bin/messaging* .
+
+* **Witelist veld**
+
+   Whitelist van **berichtvelden gebruiken**.
 
 >[!CAUTION]
 >
@@ -92,12 +132,13 @@ De standaardwaarde is */bin/messaging* .
 >
 >Als u alle bestandsextensies wilt toestaan, met uitzondering van extensies die op de zwarte lijst staan, gebruikt u het pictogram &#39;**-**&#39; om (opnieuw) één leeg item te verwijderen voordat u op **Opslaan** klikt.
 
+
 ## Groepsberichten {#group-messaging}
 
-Om geregistreerde gebruikers toe te staan om directe berichten in bulk naar gebruikersgroepen te verzenden, zorg ervoor om **groepsoverseinen **in de volgende twee instanties van de configuratie van de Diensten **van de Verrichting van het** Overseinen toe te laten:
+Om geregistreerde gebruikers toe te staan om directe berichten in bulk naar gebruikersgroepen te verzenden, zorg ervoor om groepsoverseinen **in de volgende twee instanties van de configuratie van de Diensten** van de Verrichting van het **Overseinen toe te** laten:
 
-* com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl~social-console
-* com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl~social-messaging
+* `com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl~social-console`
+* `com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl~social-messaging`
 
 **Service voor berichtenverkeer: sociale console**
 

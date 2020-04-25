@@ -3,7 +3,7 @@ title: Ondersteunde indelingen voor middelen
 description: Lijst met bestandsindelingen die worden ondersteund door AEM Assets en door Dynamic Media, en functies die worden ondersteund voor elke indeling.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7dd295a8da986c019d2ae7ea6be237eeb860ab80
+source-git-commit: 6ac091d413690bd44b171ed11415c154aa8f437c
 
 ---
 
@@ -114,7 +114,7 @@ Documentindelingen die worden ondersteund voor functies voor middelenbeheer zijn
 <!--
 DO NOT PUBLISH THIS TABLE -- Removing it as it got malformed during GitHub migration.
 
-| Format | Storage | Metadata<br> management | Metadata<br> extraction | Thumbnail<br> generation | Interactive<br> editing | Metadata<br> writeback | [Insights](touch-ui-asset-insights.md) | [Connected Assets](use-assets-across-connected-assets-instances.md) |
+| Format | Storage | Metadata management | Metadata extraction | Thumbnail generation | Interactive editing | Metadata writeback | [Insights](touch-ui-asset-insights.md) | [Connected Assets](use-assets-across-connected-assets-instances.md) |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | &#10003; | &#10003; | | &#10003; | &#10003; | &#10003; | &#10003; | |
 | DOC | &#10003; | &#10003; | &#10003; | &#10003; | | | | &#10003; |
@@ -283,7 +283,7 @@ Een lijst van gesteunde types MIME is beschikbaar in CRXDE Lite bij `/conf/globa
 | OTF | application/x-font-otf |  |  |
 | PDF | application/pdf | `pdfprocess=Rasterize&resolution=150`<br>`&colorspace=Auto&pdfbrochure=false`<br>`&keywords=false&links=false` | [pdfOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/?f=r_pdf_options) |
 | PFB | application/x-font-type1 |  |  |
-| PGM | application/x-font-type1 |  |  |
+| PFM | application/x-font-type1 |  |  |
 | PICT | image/x-pict |  |  |
 | PNG | image/png |  |  |
 | PPT | application/vnd.ms-powerpoint |  |  |

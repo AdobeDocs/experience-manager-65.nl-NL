@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: e8e2e01b-0117-48c3-86d8-609d29a147be
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4be5286858b255a30983b5987ac54c4e71dd4f2f
+source-git-commit: 33fab976729baa09fdfd3725542f9e6bc7f37eeb
 
 ---
 
@@ -25,7 +25,7 @@ Dit proces biedt klanten minstens één releasecyclus om hun implementatie aan e
 
 ## Verouderde functies {#deprecated-features}
 
-Deze sectie bevat een lijst met functies en mogelijkheden die zijn gemarkeerd als verouderd in AEM 6.5. In het algemeen worden functies die in een toekomstige versie moeten worden verwijderd, eerst vervangen door een alternatief.
+Deze sectie bevat een lijst met functies en mogelijkheden die zijn gemarkeerd als verouderd in AEM 6.5. In het algemeen worden functies die in een toekomstige release verwijderd moeten worden, eerst vervangen, met een alternatief dat beschikbaar is.
 
 Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik maken van de functie/mogelijkheid en plannen te maken om hun implementatie te wijzigen en het geboden alternatief te gebruiken.
 
@@ -39,7 +39,7 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
   <tr>
    <td>Creative Cloud-integratie</td>
    <td><p><a href="/help/assets/aem-cc-folder-sharing-best-practices.md">Met AEM naar Creative Cloud voor het delen</a> van mappen is AEM 6.2 geïntroduceerd als een manier om creatieve gebruikers toegang te geven tot middelen van AEM, zodat ze deze kunnen openen in CC-toepassingen en nieuwe bestanden kunnen uploaden of wijzigingen in AEM kunnen opslaan. Een nieuwe functie die wordt vrijgegeven in de Creative Cloud-toepassing Adobe Asset Link, biedt een veel betere gebruikerservaring en krachtigere toegang tot middelen van AEM, rechtstreeks vanuit Photoshop, InDesign en Illustrator.</p> <p>Adobe is niet van plan verdere verbeteringen aan te brengen in de integratie van AEM voor het delen van Creative Cloud-mappen. Hoewel de functie in AEM is opgenomen, wordt klanten sterk aangeraden vervangende oplossingen te gebruiken.</p> </td>
-   <td>Klanten wordt aangeraden over te schakelen op nieuwe mogelijkheden voor Creative Cloud-integratie, waaronder Adobe Asset Link of AEM-bureaubladtoepassing. Lees de beste praktijken <a href="/help/assets/aem-cc-integration-best-practices.md">voor</a> AEM- en Creative Cloud Integration voor meer informatie.</td>
+   <td>Klanten wordt aangeraden over te schakelen op nieuwe mogelijkheden voor Creative Cloud-integratie, waaronder Adobe Asset Link of AEM-bureaubladtoepassing. Lees de beste praktijken <a href="/help/assets/aem-cc-integration-best-practices.md"></a> voor AEM- en Creative Cloud Integration voor meer informatie.</td>
   </tr>
   <tr>
    <td>Assets</td>
@@ -97,12 +97,12 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
      <li>Als u een nieuwe installatie hebt uitgevoerd:
       <ul>
        <li>Gebruik de ondertekeningservaring op basis van Adobe-handtekeningen in een adaptieve vorm.</li>
-       <li>Gebruik de zelfstandige component voor scriptondertekening in een adaptief formulier, interactieve communicatie en HTML5 Forms.</li>
+       <li>Gebruik de stand-alone component voor scriptondertekening in een adaptieve vorm, interactieve communicatie en HTML5 Forms.</li>
       </ul> </li>
      <li>Als u een upgrade hebt uitgevoerd van een vorige versie naar AEM 6.5 Forms:<br />
       <ul>
        <li>Ga door met het gebruik van de ondertekeningservaring op basis van Krabbelhandtekeningen in Handtekeningstap voor formulieren die de functie al gebruiken.<br /> </li>
-       <li>Gebruik een zelfstandige, op scripts gebaseerde ondertekeningsfunctie of de zelfstandige ondertekeningservaring in een stap Handtekening wanneer u een nieuw formulier maakt. </li>
+       <li>Wanneer u een formulier maakt, gebruikt u de stand-alone component voor scriptondertekening of de ondertekeningservaring op basis van Adobe-handtekeningen in een stap Handtekening. </li>
       </ul> </li>
     </ul> <p> </p> <p> </p> </td>
   </tr>
@@ -165,13 +165,14 @@ Deze sectie bevat een lijst met functies en mogelijkheden die zijn verwijderd ui
 
 | Gebied | Functie | Vervanging |
 |--- |--- |--- |
-| Activiteitenkaart voor analyse | De versie van de activiteitenkaart die in AEM is opgenomen. | Vanwege beveiligingswijzigingen in de API voor Adobe Analytics is het niet langer mogelijk de versie van Activity Map te gebruiken die in AEM is opgenomen. Gebruik de [ActivityMap-plug-in van Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html). |
+| Activiteitenkaart voor analyse | De versie van de activiteitenkaart die in AEM is opgenomen. | Vanwege beveiligingswijzigingen in de API voor Adobe Analytics is het niet langer mogelijk de versie van Activity Map te gebruiken die in AEM is opgenomen. Gebruik de plug-in [ActivityMap van Adobe Analytics](https://docs.adobe.complugin /content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html). |
 | Integraties | De integratie ExactTarget is verwijderd uit de standaarddistributie (QuickStart) en het is niet meer beschikbaar. | Geen vervanging |
 | Integraties | De integratie van de Salesforce-API is verwijderd uit de standaarddistributie (QuickStart) en is nu een extra pakket dat u kunt installeren vanuit PackageShare. | Functie is nog steeds beschikbaar. |
 | Formulieren | De ondersteuning voor de Adobe Central Migration Bridge-service is verwijderd omdat het Adobe Central-product niet meer wordt ondersteund. | Geen vervanging |
 | Formulieren | `com.adobe.fd.df.fdinternal.model.ConfigurationInstance` | Geen vervanging |
 | Formulieren | `com.adobe.fd.ccm.channels.print.fdinternal.api.service.PrintDataTransformer` | Geen vervanging |
 | Formulieren | Single-hop verbetering van S4 SP1 aan Vormen AEM 6.5 op JEE is niet beschikbaar | Zie de [beschikbare upgradepaden](../forms/using/upgrade.md) in de upgradedocumentatie van AEM Forms. |
+| Formulieren | Ondersteuning voor clustering via UPD is verwijderd uit AEM Forms on JEE | U kunt slechts op TCP-Gebaseerde groepering in Vormen AEM op JEE gebruiken. Als u een UDP multicast server van een vorige versie aan Vormen AEM 5.5 op JEE bevordert, voer handconfiguraties uit om op TCP gebaseerde gemfire zich het groeperen over te schakelen. Zie [Upgrade naar AEM 6.5-formulieren op JEE voor gedetailleerde instructies](../forms/using/upgrade-forms-jee.md) |
 | Ontwikkelaars | Firebug Lite is verwijderd uit de standaarddistributie (QuickStart) | De ingebouwde browserconsoles voor ontwikkelaars gebruiken |
 | Ontwikkelaars | Verwijder `customJavaScriptPath` ondersteuning in HTML Client Library Manager. | Geen vervanging |
 | Assets | De functie voor het offloaden van middelen is verwijderd uit AEM 6.5 | Geen vervanging |

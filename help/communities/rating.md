@@ -10,18 +10,18 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: a0e5491e-66bc-47b0-94a5-45a02bc558da
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 62f2a11491e427a13cecae75c225ed41a44783cd
 
 ---
 
 
 # Classificaties gebruiken {#using-ratings}
 
-De `Rating`component wordt op zichzelf of in combinatie met andere communautaire kenmerken gebruikt. Met deze component kunnen leden van de gemeenschap die zich hebben aangemeld hun mening kenbaar maken door inhoud te beoordelen.
+De `Rating` component wordt op zichzelf of in combinatie met andere communautaire kenmerken gebruikt. Met deze component kunnen leden van de gemeenschap die zich hebben aangemeld hun mening kenbaar maken door inhoud te beoordelen.
 
 ## Een waardering toevoegen aan een pagina {#adding-a-rating-to-a-page}
 
-Als u een `Rating`component aan een pagina wilt toevoegen in de ontwerpmodus, zoekt u de component `Communities / Rating` en sleept u deze naar een plaats op een pagina, zoals een positie ten opzichte van de functie die leden kunnen toekennen.
+Als u een `Rating` component aan een pagina wilt toevoegen in de modus Schrijven, zoekt u de component `Communities / Rating` en sleept u deze naar een plaats op een pagina, zoals een positie ten opzichte van de functie die leden kunnen waarderen.
 
 Ga voor de benodigde informatie naar [Community Components Basics](basics.md).
 

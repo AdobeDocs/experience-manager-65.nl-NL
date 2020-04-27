@@ -4,7 +4,7 @@ description: Suggesties en richtlijnen over AEM-configuratie, wijzigingen in har
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
+source-git-commit: 31234518537ca4a0b7ff36e8d52a3b7b1b8fe4f7
 
 ---
 
@@ -203,17 +203,13 @@ Stel bovendien het pad van de tijdelijke map van ImageMagick in het `configure.x
 
 >[!CAUTION]
 >
->Een fout-configuratie kan uw server onstabiel maken als ImageMagick alle beschikbare schijfruimte gebruikt.
->
->De beleidswijzigingen die vereist zijn om grote bestanden met ImageMagick te verwerken, kunnen van invloed zijn op de AEM-prestaties. Voor meer informatie, zie [installeren en ImageMagick](/help/assets/best-practices-for-imagemagick.md)vormen.
+>Een fout-configuratie kan uw server onstabiel maken als ImageMagick alle beschikbare schijfruimte gebruikt. De beleidswijzigingen die vereist zijn om grote bestanden met ImageMagick te verwerken, kunnen van invloed zijn op de AEM-prestaties. Voor meer informatie, zie [installeren en ImageMagick](/help/assets/best-practices-for-imagemagick.md)vormen.
 
 >[!NOTE]
 >
 >De `policy.xml` dossiers ImageMagick en `configure.xml` zijn beschikbaar bij `/usr/lib64/ImageMagick-&#42;/config/` in plaats van `/etc/ImageMagick/`.Zie [documentatie](https://www.imagemagick.org/script/resources.php) ImageMagick voor plaats van de configuratiedossiers.
 
->[!TIP]
->
->Als u Experience Manager gebruikt op Adobe Managed Services (AMS), kunt u contact opnemen met de Technische Ondersteuning van Adobe als u een groot aantal grote PSD- of PSB-bestanden wilt verwerken. Werk samen met de vertegenwoordiger van de klantendienst van Adobe om deze beste praktijken voor uw plaatsing van AMS uit te voeren en de best mogelijke hulpmiddelen en de modellen voor merkgebonden formaten van Adobe te kiezen.
+Als u Experience Manager gebruikt op Adobe Managed Services (AMS), kunt u contact opnemen met de klantenservice van Adobe als u van plan bent een groot aantal grote PSD- of PSB-bestanden te verwerken. Werk samen met de vertegenwoordiger van de klantendienst van Adobe om deze beste praktijken voor uw plaatsing van AMS uit te voeren en de best mogelijke hulpmiddelen en de modellen voor merkgebonden formaten van Adobe te kiezen. Experience Manager kan PSB-bestanden met zeer hoge resolutie die groter zijn dan 30000 x 23000 pixels, niet verwerken.
 
 ### XMP-schrijfback {#xmp-writeback}
 
@@ -340,7 +336,7 @@ Om latentie te minimaliseren en hoge productie door efficiënt gebruik van cpu e
 * Optimale JVM-parameters instellen
 * Een FileSystem DataStore of een S3 DataStore configureren
 * Tijdelijke workflows inschakelen
-* Stem de workflowwachtrijen voor graniet af om gelijktijdige taken te beperken
+* De workflowwachtrijen voor graniet afstemmen om gelijktijdige taken te beperken
 * Vorm ImageMagick om middelverbruik te beperken
 * Overbodige stappen verwijderen uit de [!UICONTROL DAM Update Asset] -workflow
 * Workflow en versiebeheer configureren

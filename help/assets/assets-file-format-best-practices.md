@@ -3,7 +3,7 @@ title: Aanbevolen procedures voor het verwerken van de verschillende ondersteund
 description: Aanbevolen procedures voor het verwerken van de verschillende ondersteunde bestandstypen met AEM Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 70a88085a0fd6e949974aa7f1f92fdc3def3d98e
+source-git-commit: 31234518537ca4a0b7ff36e8d52a3b7b1b8fe4f7
 
 ---
 
@@ -16,7 +16,7 @@ Zie [Elementen met ondersteunde indelingen](/help/assets/assets-formats.md)voor 
 
 >[!TIP]
 >
->Als u Experience Manager gebruikt op Adobe Managed Services (AMS), kunt u contact opnemen met de Technische Ondersteuning van Adobe als u een groot aantal grote PSD- of PSB-bestanden wilt verwerken. Werk samen met de vertegenwoordiger van de klantendienst van Adobe om deze beste praktijken voor uw plaatsing van AMS uit te voeren en de best mogelijke hulpmiddelen en de modellen voor merkgebonden formaten van Adobe te kiezen.
+>Als u Experience Manager gebruikt op Adobe Managed Services (AMS), kunt u contact opnemen met de Technische Ondersteuning van Adobe als u een groot aantal grote PSD- of PSB-bestanden wilt verwerken. Werk samen met de vertegenwoordiger van de klantendienst van Adobe om deze beste praktijken voor uw plaatsing van AMS uit te voeren en de best mogelijke hulpmiddelen en de modellen voor merkgebonden formaten van Adobe te kiezen. Experience Manager kan PSB-bestanden met zeer hoge resolutie die groter zijn dan 30000 x 23000 pixels, niet verwerken.
 
 ## Adobe Camera Raw-bibliotheek {#adobe-camera-raw-library}
 
@@ -40,7 +40,7 @@ Miniaturen en voorvertoningen die worden gegenereerd met PDF Rasterizer, zijn be
 
 Adobe raadt u aan Adobe InDesign Server te gebruiken om Adobe InDesign-specifieke uitvoeringen, zoals IDML en HTML, te extraheren. Zie AEM-elementen [toevoegen als verwijzingen in Adobe InDesign](/help/assets/managing-linked-subassets.md#refai)voor meer informatie.
 
-## Dynamische media {#dynamic-media}
+##  Dynamic Media {#dynamic-media}
 
 De dynamische Media produceert en levert veelvoudige variaties van rijke inhoud in real time door zijn globaal, scalable, en prestaties-geoptimaliseerd netwerk. Het dient voor interactieve kijkervaringen en stroomlijnt het beheerproces voor digitale campagnes. Zie Dynamische media [configureren voor meer informatie over het inschakelen van dynamische media](/help/assets/config-dynamic.md).
 

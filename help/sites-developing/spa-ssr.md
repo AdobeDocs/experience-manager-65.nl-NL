@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 844e5c96-2a18-4869-b4c8-2fb9efe0332a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2dad220d6593ed542816f8a97b0d4b44f0d57876
+source-git-commit: 9f0eebfa0c5d2449dcc2977c7085b11a48a10eb9
 
 ---
 
@@ -40,8 +40,8 @@ Wanneer u besluit SSR te implementeren, moet u eerst inschatten welke extra comp
 
 SSR verstrekt gewoonlijk één of andere waarde wanneer er duidelijk &quot;ja&quot;aan één van beiden van de volgende vragen is:
 
-* **** SEO: Is SSR eigenlijk nog vereist voor uw plaats om behoorlijk door de onderzoeksmotoren worden geïndexeerd die verkeer brengen? Vergeet niet dat de zoekmachine die als hoofdopzoekprogramma wordt gebruikt nu JS evalueert.
-* **** Paginasnelheid: Biedt SSR een meetbare snelheidsverbetering in levensechte omgevingen en vergroot de algehele gebruikerservaring?
+* **SEO:** Is SSR eigenlijk nog vereist voor uw plaats om behoorlijk door de onderzoeksmotoren worden geïndexeerd die verkeer brengen? Vergeet niet dat de zoekmachine die als hoofdopzoekprogramma wordt gebruikt nu JS evalueert.
+* **Paginasnelheid:** Biedt SSR een meetbare snelheidsverbetering in levensechte omgevingen en vergroot de algehele gebruikerservaring?
 
 Alleen wanneer ten minste een van deze twee vragen met een duidelijk &quot;ja&quot; voor uw project wordt beantwoord, raadt Adobe aan SSR te implementeren. In de volgende secties wordt beschreven hoe u dit kunt doen met Adobe I/O Runtime.
 
@@ -62,6 +62,33 @@ In de volgende secties wordt gedetailleerd beschreven hoe Adobe I/O Runtime kan 
 >[!NOTE]
 >
 >Adobe raadt een aparte Adobe I/O Runtime-instantie aan voor elke AEM-omgeving (auteur, publicatie, werkgebied, enz.).
+
+## Configuratie van externe renderer {#remote-renderer-configuration}
+
+AEM moet weten waar de op afstand gerenderde inhoud kan worden opgehaald. Ongeacht [welk model u verkiest om voor SSR uit te voeren,](#adobe-i-o-runtime) zult u aan AEM moeten specificeren hoe te om tot deze verre het teruggeven dienst toegang te hebben.
+
+Dit wordt gedaan via de **dienst** RemoteContentRenderer - van de Fabriek OSGi van de Configuratie. Zoek naar het koord &quot;RemoteContentRenderer&quot;in de console van de Configuratie van de Console van het Web bij `http://<host>:<port>/system/console/configMgr`.
+
+![Rendererconfiguratie](assets/rendererconfig.png)
+
+De volgende velden zijn beschikbaar voor de configuratie:
+
+* **Inhoudspatroon** - Reguliere expressie voor afstemming van een deel van de inhoud, indien nodig
+* **Het verre eindpunt URL** - URL van het eindpunt dat voor het produceren van de inhoud verantwoordelijk is
+   * Gebruik het beveiligde HTTPS-protocol als dit zich niet in het lokale netwerk bevindt.
+* **Extra verzoekkopballen** - de Extra kopballen die aan het verzoek moeten worden toegevoegd dat naar het verre eindpunt wordt verzonden
+   * Patroon: `key=value`
+* **Time-out** aanvragen - Time-out externe hostaanvraag in milliseconden
+
+>[!NOTE]
+>
+>Ongeacht of u ervoor kiest om de [AEM-gestuurde communicatiestroom](#aem-driven-communication-flow) of de door [Adobe I/O-runtime gestuurde flow te implementeren,](#adobe-i-o-runtime-driven-communication-flow) moet u een configuratie voor een externe inhoudrenderer definiëren.
+>
+>Deze configuratie moet ook worden bepaald als u verkiest om een server van Node.js te [gebruiken.](#using-node-js)
+
+>[!NOTE]
+>
+>Deze configuratie gebruikt de renderer voor [externe inhoud,](#remote-content-renderer) waarvoor aanvullende opties voor extensie en aanpassing beschikbaar zijn.
 
 ## AEM-gestuurde communicatiestroom {#aem-driven-communication-flow}
 
@@ -164,3 +191,53 @@ Voor AEM-instanties ter plaatse is het ook mogelijk SSR te implementeren met een
 >[!NOTE]
 >
 >Als SSR via Node.js moet worden geïmplementeerd, raadt Adobe een aparte instantie Node.js aan voor elke AEM-omgeving (auteur, publicatie, werkgebied, enz.).
+
+## Renderer voor externe inhoud {#remote-content-renderer}
+
+De [Verre Configuratie](#remote-content-renderer-configuration) van Renderer van de Inhoud die wordt vereist om SSR met uw KUUROORD in AEM te gebruiken staps in een meer algemene het teruggeven dienst die kan worden uitgebreid en worden aangepast om aan uw behoeften te voldoen.
+
+### RemoteContentRenderingService {#remotecontentrenderingservice}
+
+`RemoteContentRenderingService` is een OSGi-service voor het ophalen van inhoud die op een externe server wordt gerenderd, zoals van Adobe I/O. De inhoud die naar de externe server wordt verzonden, is gebaseerd op de doorgegeven parameter request.
+
+`RemoteContentRenderingService` kan door gebiedsinversie in of een douaneSling model of servlet worden geïnjecteerd wanneer de extra inhoudsmanipulatie wordt vereist.
+
+Deze service wordt intern gebruikt door de [RemoteContentRendererRequestHandlerServlet](#remotecontentrendererrequesthandlerservlet).
+
+### RemoteContentRendererRequestHandlerServlet {#remotecontentrendererrequesthandlerservlet}
+
+Het `RemoteContentRendererRequestHandlerServlet` kan worden gebruikt om de verzoekconfiguratie programmatically te plaatsen. `DefaultRemoteContentRendererRequestHandlerImpl`, staat de verstrekte implementatie van de standaardverzoekmanager, u toe om veelvoudige configuraties tot stand te brengen OSGi om een plaats in de inhoudsstructuur aan een ver eindpunt in kaart te brengen.
+
+Om een manager van het douaneverzoek toe te voegen, voer de `RemoteContentRendererRequestHandler` interface uit. Ben zeker om het `Constants.SERVICE_RANKING` componentenbezit aan een geheel te plaatsen hoger dan 100, dat de rangschikking van `DefaultRemoteContentRendererRequestHandlerImpl`is.
+
+```
+@Component(immediate = true,
+        service = RemoteContentRendererRequestHandler.class,
+        property={
+            Constants.SERVICE_RANKING +":Integer=1000"
+        })
+public class CustomRemoteContentRendererRequestHandlerImpl implements RemoteContentRendererRequestHandler {}
+```
+
+### Vorm de Configuratie OSGi van de Standaardmanager {#configure-default-handler}
+
+De configuratie van de standaardmanager moet worden gevormd zoals die in de sectie [Verre Configuratie](#remote-content-renderer-configuration)van Renderer van Inhoud wordt beschreven.
+
+### Renderergebruik van externe inhoud {#usage}
+
+Om een servlet te hebben halen en wat inhoud terug te keren die in de pagina kan worden ingespoten:
+
+1. Controleer of uw externe server toegankelijk is.
+1. Voeg een van de volgende fragmenten toe aan de HTML-sjabloon van een AEM-component.
+1. Naar keuze, creeer of wijzig de configuraties OSGi.
+1. Door de inhoud van uw site bladeren
+
+Gewoonlijk is de HTML-sjabloon van een paginacomponent de belangrijkste ontvanger van een dergelijke functie.
+
+```
+<sly data-sly-resource="${resource @ resourceType='cq/remote/content/renderer/request/handler'}" />
+```
+
+### Vereisten {#requirements}
+
+De servers maken gebruik van de Sling Model Exporter om de componentgegevens te serialiseren. Standaard worden zowel de `com.adobe.cq.export.json.ContainerExporter` `com.adobe.cq.export.json.ComponentExporter` als de Sling Model-adapters ondersteund. Indien nodig, kunt u klassen toevoegen die het verzoek zou moeten worden aangepast aan het gebruiken van `RemoteContentRendererServlet` en het uitvoeren van `RemoteContentRendererRequestHandler#getSlingModelAdapterClasses`. De extra klassen moeten het `ComponentExporter`uitbreiden.

@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 999ae2be-56ba-48c1-861b-8d4c991a0206
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 68cd1c13fff94ac485865e50bc955548cd285b14
 
 ---
 
@@ -61,11 +61,22 @@ Als het ZIP-bestand meer dan één HTML-bestand op het laagste niveau van de map
 
 >[!NOTE]
 >
->Voor de functie HTML naar PDF zijn bepaalde lettertypen in de systeemmap met lettertypen vereist. Op Linux-, Solaris- en AIX-systemen moet de systeemmap met lettertypen het Courier-lettertype bevatten. Op Windows-systemen moet de systeemmap voor lettertypen Times New Roman bevatten.
+>* Voor de functie HTML naar PDF zijn bepaalde lettertypen in de systeemmap met lettertypen vereist. Op Linux-, Solaris- en AIX-systemen moet de systeemmap met lettertypen het Courier-lettertype bevatten. Op Windows-systemen moet de systeemmap voor lettertypen Times New Roman bevatten.
+   >
+   > 
+* Dit zijn standaard Japanse lettertypen in AEM Forms in Linux. Ten minste >een van deze lettertypen moet beschikbaar zijn voor het converteren van Japanse lettertypen in het >systeem.
+   >
+   >   
+   * &quot;Sazanami Gothic&quot;
+   >   * &quot;Kozuka Gothic Pro-VI&quot;
+   >   * &quot;Kozuka Mincho Pro-VI&quot;
+   >   * &quot;Sazanami Gothic&quot;
+   >   * &quot;Kozuka Mincho Pr6N&quot;
+   >   * &quot;Sazanami Mincho&quot;
+   >   * &quot;Adobe Heiti Std&quot;
+   >   * &quot;Adobe Song Std&quot;
+>* Als u een bestand vanaf het lokale bestandssysteem wilt uploaden, gebruikt u de optie Bestand uploaden op de HTML-pagina naar de PDF-pagina.
 
->[!NOTE]
->
->Als u een bestand vanaf het lokale bestandssysteem wilt uploaden, gebruikt u de optie Bestand uploaden op de HTML-pagina naar de PDF-pagina.
 
 1. Klik in de beheerconsole op Services > PDF Generator > HTML to PDF.
 1. Geef het bestand op dat u wilt converteren door een van de volgende taken uit te voeren:

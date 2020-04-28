@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
+source-git-commit: 14a6e0c5f79ac7acb9f8bd06d3524473f1007485
 
 ---
 
@@ -28,7 +28,7 @@ Met AEM Workflows kunt u snel adaptieve workflows op basis van formulieren maken
 
 Met Forms-centric werkschema op OSGi, kunt u werkschema&#39;s voor diverse taken op de stapel snel bouwen en opstellen OSGi, zonder het moeten het volledige vermogen van het Beheer van het Proces op de stapel van JEE installeren. Voor de ontwikkeling en het beheer van workflows worden de bekende AEM Workflow- en AEM Inbox-mogelijkheden gebruikt. De werkstromen vormen de basis van het automatiseren van echte bedrijfsprocessen die veelvoudige softwaresystemen, netwerken, afdelingen, en zelfs organisaties omspannen.
 
-Zodra opstelling, kunnen deze werkschema&#39;s manueel worden teweeggebracht om een bepaald proces te voltooien of programmatically in werking te stellen wanneer de gebruikers een vorm of een brief van het [brievenbeheer](/help/forms/using/cm-overview.md) voorleggen. Met deze verbeterde AEM-workflowmogelijkheden biedt AEM Forms twee verschillende, maar toch vergelijkbare mogelijkheden. Als onderdeel van uw implementatiestrategie moet u bepalen welke strategie voor u werkt. Zie een [vergelijking](../../forms/using/capabilities-osgi-jee-workflows.md) van de Forms-centric AEM Workflows op OSGi en Process Management op JEE. Bovendien voor de plaatsingstopologie zien, [Architectuur en plaatsingstopologieën voor Vormen](/help/forms/using/aem-forms-architecture-deployment.md)AEM.
+Zodra opstelling, kunnen deze werkschema&#39;s manueel worden teweeggebracht om een bepaald proces te voltooien of programmatically in werking te stellen wanneer de gebruikers een vorm of een brief van het [brievenbeheer](/help/forms/using/cm-overview.md) voorleggen. Met deze verbeterde AEM-workflowmogelijkheden biedt AEM Forms twee verschillende, maar vergelijkbare mogelijkheden. Als onderdeel van uw implementatiestrategie moet u bepalen welke strategie voor u werkt. Zie een [vergelijking](../../forms/using/capabilities-osgi-jee-workflows.md) van de Forms-centric AEM Workflows op OSGi en Process Management op JEE. Bovendien voor de plaatsingstopologie zien, [Architectuur en plaatsingstopologieën voor Vormen](/help/forms/using/aem-forms-architecture-deployment.md)AEM.
 
 Forms-centric workflow op OSGi breidt [AEM Inbox](/help/sites-authoring/inbox.md) uit en biedt extra componenten (stappen) voor de AEM Workflow-editor om ondersteuning toe te voegen voor AEM Forms-centric workflows. De uitgebreide AEM Inbox heeft functies die vergelijkbaar zijn met de [AEM Forms Workspace](../../forms/using/introduction-html-workspace.md). Samen met het beheren van menselijke-centrische werkschema&#39;s (Goedkeuring, Overzicht, etc.), kunt u AEM werkschema&#39;s gebruiken om [documentservices](/help/sites-developing/workflows-step-ref.md)-gerelateerde bewerkingen (bijvoorbeeld, produceer PDF) en elektronisch het ondertekenen (het Teken van Adobe) documenten te automatiseren.
 
@@ -65,7 +65,7 @@ In het voorbeeld wordt een workflowmodel gemaakt voor een hypotheektoepassing di
 
 [Bestand ophalen](assets/example-mortgage-loan-application.zip)
 
-1. Open de console Workflowmodellen. De standaard-URL is https://&#39;[server]:[poort]&#39;/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models
+1. Open de console Workflowmodellen. De standaard-URL is `https://[server]:[port]/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models`
 1. Selecteer **Maken** en vervolgens **Model** maken. Het dialoogvenster Workflowmodel toevoegen wordt weergegeven.
 1. Voer de **titel** en de **naam** (optioneel) in. Bijvoorbeeld een hypotheekaanvraag. Tik **op Gereed**.
 1. Selecteer het nieuwe workflowmodel en tik op **Bewerken**. Nu kunt u workflowstappen toevoegen om bedrijfslogica te maken. Wanneer u voor het eerst een workflowmodel maakt, bevat dit het volgende:
@@ -75,7 +75,7 @@ In het voorbeeld wordt een workflowmodel gemaakt voor een hypotheektoepassing di
 
 1. E-mailmeldingen inschakelen. U kunt Forms-centric workflow op OSGi configureren om e-mailmeldingen naar de gebruikers of toegewezen gebruikers te verzenden. Voer de volgende configuraties uit om e-mailmeldingen in te schakelen:
 
-   1. Ga naar AEM configuratiemanager op https://&#39;[server]:[port]&#39;/system/console/configMgr.
+   1. Ga naar AEM configuratiemanager op `https://[server]:[port]/system/console/configMgr`.
    1. Open de configuratie van de **[!UICONTROL Day CQ Mail Service]** . Geef een waarde op voor de hostnaam **[!UICONTROL van de]** SMTP-server, **[!UICONTROL de poort van de]** SMTP-server en de adresvelden **[!UICONTROL &quot;Van&quot;]** . Click **[!UICONTROL Save]**.
    1. Open de configuratie van de Verbinding Externalzer van de Verbinding van **[!UICONTROL Dag CQ]** . Geef in het veld **[!UICONTROL Domeinen]** het werkelijke hostnaam/IP-adres en poortnummer op voor lokale instanties, auteurs en publicatieinstanties. Click **[!UICONTROL Save]**.
 
@@ -107,7 +107,7 @@ In het voorbeeld wordt een workflowmodel gemaakt voor een hypotheektoepassing di
 
    ![OR Splitsen, voorbeeld](assets/orsplit_branch1_active_new.png)
 
-   **Verpletterende uitdrukking voor Tak 2**
+   **Het verpletteren van uitdrukking voor Tak 1**
 
    Wanneer een gebruiker op **Afwijzen** tikt in AEM Inbox, wordt vertakking 2 geactiveerd.
 
@@ -265,10 +265,10 @@ U kunt een Forms-centric werkschema op OSGi op voorlegging van een interactieve 
 
 U kunt de stappen Taak toewijzen en E-mail verzenden van AEM Workflows gebruiken om een e-mail te verzenden. Voer de volgende stappen uit om e-mailservers en andere configuraties op te geven die vereist zijn om e-mail te verzenden:
 
-1. Ga naar AEM configuratiemanager op https://&#39;[server]:[port]&#39;/system/console/configMgr.
+1. Ga naar AEM configuratiemanager op `https://[server]:[port]/system/console/configMgr`.
 1. Open de configuratie van de **[!UICONTROL Day CQ Mail Service]** . Geef een waarde op voor de hostnaam **[!UICONTROL van de]** SMTP-server, **[!UICONTROL de poort van de]** SMTP-server en de adresvelden **[!UICONTROL &quot;Van&quot;]** . Click **[!UICONTROL Save]**.
 1. Open de configuratie van de Verbinding Externalzer van de Verbinding van **[!UICONTROL Dag CQ]** . Geef in het veld **[!UICONTROL Domeinen]** het werkelijke hostnaam/IP-adres en poortnummer op voor lokale instanties, auteurs en publicatieinstanties. Click **[!UICONTROL Save]**.
 
 ### Workflowinstanties wissen {#purge-workflow-instances}
 
-Door het minimaliseren van het aantal workflowexemplaren worden de prestaties van de workflow-engine verbeterd, zodat u regelmatig voltooide of actieve workflowexemplaren uit de repository kunt verwijderen. Voor gedetailleerde informatie zie, [Regular Purging of Workflow Instances](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances).
+Door het minimaliseren van het aantal workflowexemplaren worden de prestaties van de workflow-engine verbeterd, zodat u regelmatig voltooide of actieve workflowexemplaren uit de repository kunt verwijderen. Voor gedetailleerde informatie, zie [Regular Purging of Workflow Instances](/help/sites-administering/workflows-administering.md#regular) purging of workflow instances

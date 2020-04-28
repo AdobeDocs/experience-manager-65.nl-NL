@@ -3,7 +3,7 @@ title: XMP-terugverwijzing naar uitvoeringen
 description: Leer hoe de functie XMP-schrijfback de metagegevenswijzigingen voor een element doorgeeft aan alle of aan specifieke uitvoeringen van het element.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: 33ab9845f7800c80a6beb5db06f3fadf582122d0
 
 ---
 
@@ -44,7 +44,7 @@ Als u wilt dat de XMP-terugdraaifunctie metagegevenswijzigingen doorgeeft aan ge
 
 Voer de volgende stappen uit voor de functie Terugschrijven XMP om metagegevens door te geven aan de vertoningsminiaturen 140.100.png en 319.319.png.
 
-1. Tik/klik op het AEM-logo en navigeer naar **Gereedschappen** > **Workflow** > **Modellen**.
+1. Tap/click the AEM logo, and then navigate to **Tools** > **Workflow** > **Models**.
 1. Open vanaf de pagina Modellen het workflowmodel voor terugschrijven van **DAM-metagegevens** .
 1. Open de stap **XMP-terugschrijfproces** op de pagina met eigenschappen voor terugschrijven van metagegevens van **DAM** .
 1. Tik in het dialoogvenster Step Properties op of klik op het tabblad **Process** .
@@ -77,7 +77,7 @@ Door het filteren met whitelist van XMP-metagegevens wordt dit probleem opgelost
 
 >[!NOTE]
 >
->Filteren werkt alleen voor de eigenschappen die zijn afgeleid van XMP-bronnen in binaire elementen. Voor de eigenschappen die van niet-XMP bronnen, zoals formaten EXIF en IPTC worden afgeleid, werkt het filtreren niet. De aanmaakdatum van elementen wordt bijvoorbeeld opgeslagen in een eigenschap met de naam EXIF TIFF. `CreateDate` Deze waarde wordt in het metagegevensveld genaamd `exif:DateTimeOriginal`. Aangezien de bron een niet-XMP-bron is, werkt het filteren niet op deze eigenschap.
+>Filteren werkt alleen voor de eigenschappen die zijn afgeleid van XMP-bronnen in binaire elementen. Voor de eigenschappen die van niet-XMP bronnen, zoals formaten EXIF en IPTC worden afgeleid, werkt het filtreren niet. De aanmaakdatum van elementen wordt bijvoorbeeld opgeslagen in een eigenschap met de naam EXIF TIFF. `CreateDate` Deze waarde wordt opgeslagen in een metagegevensveld met de naam `exif:DateTimeOriginal`. Aangezien de bron een niet-XMP-bron is, werkt het filteren niet op deze eigenschap.
 
 1. Om de Manager van de Configuratie te openen, toegang `https://[aem_server]:[port]/system/console/configMgr`.
 1. Open de **configuratie van Adobe CQ DAM XmpFilter** .

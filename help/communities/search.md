@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 3acac082-efbe-4995-b374-851cb9aaf62d
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 6d425dcec4fab19243be9acb41c25b531a84ea74
 
 ---
 
@@ -19,11 +19,11 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 De zoekfunctie werkt met verschillende andere functies, zoals forums, om inhoud te kunnen zoeken.
 
-Wanneer het toevoegen van de capaciteit aan onderzoeksposten ingegaan door communautaire leden, die als gebruiker geproduceerde inhoud (UGC) worden bedoeld, zijn er twee componenten: [ `Search`](#search) en [ `Search Results`](#search-results).
+Wanneer het toevoegen van de capaciteit aan onderzoeksposten ingegaan door communautaire leden, die als gebruiker geproduceerde inhoud (UGC) worden bedoeld, zijn er twee componenten: [Zoekresultaten](#search) en [zoekresultaten](#search-results).
 
 De pagina die de `Search Results` component bevat, ondersteunt zowel het zoeken als het weergeven van resultaten.
 
-De pagina die de `Search`component bevat, biedt een plaats om een zoekopdracht te starten met resultaten die op de `Search Results` pagina worden weergegeven.
+De pagina die de `Search` component bevat, biedt een plaats om een zoekopdracht te starten met resultaten die op de `Search Results` pagina worden weergegeven.
 
 De zoekfunctie kan worden gebruikt met elke andere functie waarmee bezoekers en leden van de site inhoud kunnen bekijken.
 
@@ -83,9 +83,13 @@ Op het tabblad Instellingen **[!UICONTROL van]** zoekresultaat kunt u opgeven we
 
 ![chlimage_1-378](assets/chlimage_1-378.png)
 
-* **[!UICONTROL Zoekresultaten per pagina]** bepalen het aantal onderwerpen/posts dat per pagina wordt weergegeven. De standaardwaarde is 10.
+* **[!UICONTROL Zoekresultaten per pagina]**
 
-* **[!UICONTROL Zoekpaden]** Door zoekpaden toe te voegen met de knop Item toevoegen, wordt de zoekopdracht beperkt.
+   Bepaal het aantal onderwerpen/posten dat per pagina wordt getoond. De standaardwaarde is 10.
+
+* **[!UICONTROL Paden zoeken]**
+
+   Door zoekpaden toe te voegen met de knop Item toevoegen, is de zoekopdracht naar inhoud beperkt.
 
 ## Additional Information {#additional-information}
 

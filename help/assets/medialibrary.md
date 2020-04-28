@@ -3,7 +3,7 @@ title: Vergelijk AEM Assets en AEM Media Library-aanbod
 description: Vergelijk AEM Assets en het aanbod van AEM Media Library en ken de verschillen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 569c552686e6312ecae0d500147a8b65354c303d
+source-git-commit: 476a8acbca2f498472225fe1df220f63eafe61e5
 
 ---
 
@@ -55,7 +55,7 @@ De afbeeldingscomponent maakt deel uit van AEM WCM. De grafische bibliotheek die
 
 ### Hoe kan ik voorkomen dat mijn gebruikers AEM Assets gebruiken als ik geen licentie heb verleend voor AEM Assets? {#how-can-i-prevent-my-users-from-using-aem-assets-if-i-did-not-license-aem-assets}
 
-U kunt alle AEM Assets-specifieke workflows, componenten, taxonomieën, opties en de AEM Assets-beheerder verwijderen uit AEM. Zo voorkomt u dat uw gebruikers de functies van AEM-middelen die u niet hebt geautoriseerd, op vertrouwelijke wijze gebruiken.
+U kunt alle AEM Assets-specifieke workflows, componenten, taxonomieën, opties en de AEM Assets-beheerder verwijderen uit AEM. Zo voorkomt u dat uw gebruikers per ongeluk de functies van AEM Assets gebruiken waarvoor u geen licentie hebt verleend.
 
 ### Ik wil afbeeldingen aan een pagina toevoegen en deze afbeeldingen uitsnijden en vergroten of verkleinen. Heb ik AEM-middelen nodig? {#i-want-to-add-images-to-a-page-and-want-to-crop-and-resize-these-images-do-i-need-aem-assets}
 
@@ -63,7 +63,7 @@ In dit geval is het niet verplicht AEM-elementen te kopen, zelfs niet het gebrui
 
 ### Een gedetailleerde lijst met functies die beschikbaar zijn in AEM Assets versus Media Library {#listoffeatures}
 
-**AEM-middelen**
+**AEM Assets**
 
 * Verzamelingen en lichtbak
 * Geavanceerde eigenschappen en beheer van metagegevens
@@ -79,9 +79,9 @@ In dit geval is het niet verplicht AEM-elementen te kopen, zelfs niet het gebrui
 * Camera RAW-ondersteuning
 * Beheer en configuratie van zoekfactoren
 * Vooraf gebouwde DAM-workflows (bijvoorbeeld foto&#39;s)
-* Rapportage en analyse van bedrijfsmiddelen:Asset Insights
+* Rapportage en analyse van bedrijfsmiddelen: Asset Insights
 * 3D-beheer van bedrijfsmiddelen
-* Verbonden elementen
+* Gekoppelde assets
 * Brand Portal
 * Zelfbedieningstoegang
 * Bladeren, zoeken en downloaden

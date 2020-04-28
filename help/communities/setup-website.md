@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: d18c0ece-4c4f-499c-ac94-a9aaa7f883c4
 translation-type: tm+mt
-source-git-commit: 4f4f2897000a0afe26a0dbcc4514e20befdb4114
+source-git-commit: 6d425dcec4fab19243be9acb41c25b531a84ea74
 
 ---
 
@@ -20,13 +20,16 @@ source-git-commit: 4f4f2897000a0afe26a0dbcc4514e20befdb4114
 In de onderstaande instructies worden de mappen beschreven die op de volgende locaties moeten worden gemaakt om uw website in te stellen:
 
 * `/apps/an-scf-sandbox`
-Hier bevinden aangepaste toepassingen en sjablonen zich
+
+   Hier bevinden zich aangepaste toepassingen en sjablonen.
 
 * `/etc/designs/an-scf-sandbox`
-Hier bevinden zich downloadbare ontwerpelementen
+
+   Hier bevinden zich downloadbare ontwerpelementen.
 
 * `/content/an-scf-sandbox`
-Dit is waar de downloadbare webpagina&#39;s zich bevinden
+
+   Hier bevinden zich de downloadbare webpagina&#39;s.
 
 De code in deze zelfstudie vertrouwt erop dat de naam van de hoofdmap gelijk is voor de toepassing, het ontwerp en de inhoud. Als u een andere naam voor uw website kiest, vervangt u deze altijd `an-scf-sandbox` door de naam die u hebt gekozen.
 
@@ -34,12 +37,14 @@ De code in deze zelfstudie vertrouwt erop dat de naam van de hoofdmap gelijk is 
 >
 >Namen:
 >
->* De namen die in CRXDE worden gezien zijn knooppuntnamen die de weg aan adresseerbare inhoud vormen
->* Node names may contain spaces, but when used in an URI, the space must be encoded either as &#39;%20&#39; or &#39;+&#39;
+>* De namen die in CRXDE worden gezien zijn knooppuntnamen die de weg aan adresseerbare inhoud vormen.
+>* Node names may contain spaces, but when used in an URI, the space must be encoded either as &#39;%20&#39; or &#39;+&#39;.
 >* Node-namen kunnen afbreekstreepjes en onderstrepingstekens bevatten, maar deze moeten worden gecodeerd als er in een Java-bestand naar wordt verwezen als een pakketnaam. Zowel koppeltekens als onderstrepingstekens worden overgeslagen met een onderstrepingsteken gevolgd door de Unicode-waarde:
->
->   * afbreekstreepje wordt &#39;_002d&#39;
->   * onderstrepingsteken wordt &#39;_005f&#39;
+   >
+   >   
+   * afbreekstreepje wordt &#39;_002d&#39;
+   >   * onderstrepingsteken wordt &#39;_005f&#39;
+
 
 ## De toepassingsmap (/apps) instellen {#setup-the-application-directory-apps}
 
@@ -51,27 +56,27 @@ De map /apps is beveiligd en niet toegankelijk voor het publiek, net als de mapp
 
    Het gebruiken van **[!UICONTROL CRXDE Lite]**, in de verkenner ruit
 
-   1. Selecteer de `/apps` map
-   1. **[!UICONTROL Klik met de rechtermuisknop op]** Maken **[!UICONTROL ... of trek het]** Create... menu
-   1. **[!UICONTROL Map]** maken selecteren... .
-   1. Voer in het dialoogvenster Map **** maken `an-scf-sandbox`
-   1. Click **[!UICONTROL OK]**
+   1. Selecteer de `/apps` map.
+   1. Klik met de rechtermuisknop op **[!UICONTROL Maken]**... of trek het **[!UICONTROL Create...]** -menu.
+   1. Map **[!UICONTROL maken selecteren...]**.
+   1. Voer in het dialoogvenster Map **** maken `an-scf-sandbox`.
+   1. Click **[!UICONTROL OK]**.
 
 1. Submap voor **[!UICONTROL componenten]** maken.
 
-   1. Selecteer de `/apps/an-scf-sandbox` map
-   1. Klik op **[!UICONTROL Maken > Map maken]**
-   1. Voer in het dialoogvenster Map **** maken **[!UICONTROL componenten in]**
-   1. Click **[!UICONTROL OK]**
+   1. Selecteer de `/apps/an-scf-sandbox` map.
+   1. Klik op **[!UICONTROL Maken > Map]** maken.
+   1. Voer in het dialoogvenster Map **** maken **[!UICONTROL componenten]** in.
+   1. Click **[!UICONTROL OK]**.
 
-1. Submap voor **sjablonen **maken.
+1. Submap voor **[!UICONTROL sjablonen]** maken.
 
-   1. Selecteer de `/apps/an-scf-sandbox` map
-   1. Klik op **[!UICONTROL Maken > Map maken]**
-   1. Voer in het dialoogvenster Map **** maken **[!UICONTROL sjablonen in]**
-   1. Click **[!UICONTROL OK]**
-   1. Opnieuw selecteren `/apps/an-scf-sandbox`
-   1. Alles **[!UICONTROL opslaan selecteren]**
+   1. Selecteer de `/apps/an-scf-sandbox` map.
+   1. Klik op **[!UICONTROL Maken > Map]** maken.
+   1. Voer in het dialoogvenster Map **** maken **[!UICONTROL sjablonen]** in.
+   1. Click **[!UICONTROL OK]**.
+   1. Opnieuw selecteren `/apps/an-scf-sandbox`.
+   1. Selecteer **[!UICONTROL Alles]** opslaan.
    Net als bij elk bewerkingsproces, kunt u dit vaak opslaan. Als u problemen ondervindt met het invoeren van gegevens, kan dit zijn omdat er een time-out is opgetreden bij uw aanmelding of omdat u vorige bewerkingen moet opslaan.
 
 1. De structuur in het verkendervenster van CRXDE Lite zou nu iets als dit moeten kijken:
@@ -86,14 +91,14 @@ De map /etc/designs bevat de afbeeldingen, scripts en opmaakmodellen die samen m
 
    Opmerking: Als u CRXDE Lite gebruikt om een Knoop van type tot stand te brengen `cq:Page`, zouden het Toegangsbeheer en de Replicatie niet aan standaardmontages voor een pagina worden geplaatst.
 
-1. Selecteer in het verkendervenster de map **[!UICONTROL Ontwerpen]** en klik vervolgens op **[!UICONTROL Nieuw > Nieuwe pagina]**.
+1. Selecteer in het verkendervenster de map **[!UICONTROL Ontwerpen]** en klik vervolgens op **[!UICONTROL Nieuw]** > **[!UICONTROL Nieuwe pagina]**.
 
    Enter:
 
-   * Titel: Een **SCF-sandbox**
-   * Naam: **an-scf-sandbox**
-   * Selecteer **ontwerppaginasjabloon**
-   Klik op **[!UICONTROL Maken]**
+   * Titel: Een **[!UICONTROL SCF-sandbox]**
+   * Naam: **[!UICONTROL an-scf-sandbox]**
+   * Selecteer **[!UICONTROL ontwerppaginasjabloon]**
+   Klik op **[!UICONTROL Maken]**.
 
    ![chlimage_1-45](assets/chlimage_1-45.png)
 
@@ -109,4 +114,4 @@ De map /etc/designs bevat de afbeeldingen, scripts en opmaakmodellen die samen m
 
 De map /content in de opslagmap is waar de website-inhoud zich bevindt. De paden onder /content bestaan uit de paden van de URL voor browserverzoeken.
 
-*Nadat* de [paginasjabloon](initial-app.md#createthepagetemplate) is gemaakt als onderdeel van de oorspronkelijke toepassing, kan de eerste pagina-inhoud worden gemaakt op basis van de sjabloon... . [****](initial-app.md)
+*Nadat* de [paginasjabloon](initial-app.md#createthepagetemplate) is gemaakt als onderdeel van de oorspronkelijke toepassing, kan de eerste pagina-inhoud worden gemaakt op basis van de sjabloon.... [****](initial-app.md)

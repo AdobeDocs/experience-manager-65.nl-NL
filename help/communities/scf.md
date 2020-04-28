@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: d7b5b5e3-2d84-4a6b-bcc2-d490882ff3ed
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 6d425dcec4fab19243be9acb41c25b531a84ea74
 
 ---
 
@@ -21,12 +21,12 @@ Het sociale componentenkader (SCF) vereenvoudigt het proces om, componenten van 
 
 De voordelen van het kader:
 
-* **Functioneel**: Eenvoudig te integreren, zonder of weinig aanpassingen voor 80% van de gebruiksgevallen
-* **Schildbaar**: Consistent gebruik van HTML-kenmerken voor CSS-opmaak
-* **Uitbreidbaar**: De implementatie van de component is objectgeoriënteerd en licht op bedrijfslogica - gemakkelijk om stijgende bedrijfslogin op server toe te voegen
-* **Flexibel**: Eenvoudige JavaScript-sjablonen zonder logica die eenvoudig kunnen worden overschreven en aangepast
-* **Toegankelijk**: De HTTP-API biedt ondersteuning voor posten vanaf elke client, waaronder mobiele apps
-* **Draagbaar**: Integreren/insluiten in elke webpagina die is gebaseerd op elke technologie
+* **Functioneel**: Eenvoud van integratie buiten de handgreep met weinig of geen aanpassing voor 80% van de gebruikscategorieën.
+* **Schildbaar**: Consistent gebruik van HTML-kenmerken voor CSS-opmaak.
+* **Uitbreidbaar**: De implementatie van de component is object-oriented en licht op bedrijfslogica - gemakkelijk om stijgende bedrijfslogin op server toe te voegen.
+* **Flexibel**: Eenvoudige JavaScript-sjablonen zonder logica die eenvoudig kunnen worden overschreven en aangepast.
+* **Toegankelijk**: De HTTP-API ondersteunt het posten vanaf elke client, inclusief mobiele apps.
+* **Draagbaar**: Integreer/sluit in om het even welke webpagina in die op om het even welke technologie wordt gebouwd.
 
 Onderzoek op een auteur of publiceer instantie gebruikend de interactieve gids [van de Componenten van de](components-guide.md)Gemeenschap.
 
@@ -48,20 +48,20 @@ De API van de sociale component kan worden uitgebreid om gegevens te verstrekken
 
 Als u de componenten wilt aanpassen of uitbreiden, schrijft u alleen de overlays en extensies naar de map /apps waarmee u het upgradeproces naar toekomstige releases kunt vereenvoudigen.
 
-* Voor skin
-   * Alleen de [CSS moet worden bewerkt](client-customize.md#skinning-css)
-* Voor uiterlijk
-   * De JS-sjabloon en CSS wijzigen
-* Voor look, Voel en UX
-   * De JS-sjabloon, CSS en JavaScript [uitbreiden/overschrijven wijzigen](client-customize.md#extending-javascript)
-* Om de informatie te wijzigen beschikbaar aan het Malplaatje JS of aan het GET eindpunt
-   * De [sociale component uitbreiden](server-customize.md#socialcomponent-interface)
-* Aangepaste verwerking toevoegen tijdens bewerkingen
-   * Een [OperationExtension schrijven](server-customize.md#operationextension-class)
-* Een nieuwe aangepaste bewerking toevoegen
-   * Een nieuwe bewerking [Verschuiven na maken](server-customize.md#postoperation-class)
-   * Gebruik indien nodig bestaande [OperationServices](server-customize.md#operationservice-class)
-   * Voeg JavaScript-code toe om uw bewerking zo nodig vanaf de client aan te roepen
+* Voor skin:
+   * Alleen de [CSS hoeft te worden bewerkt](client-customize.md#skinning-css).
+* Voor uiterlijk:
+   * Wijzig de JS-sjabloon en de CSS.
+* Voor look, Voel en UX:
+   * Wijzig de JS-sjabloon, CSS en [breid JavaScript](client-customize.md#extending-javascript)uit of overschrijf JavaScript.
+* Om de informatie te wijzigen beschikbaar aan het Malplaatje JS of aan het GET eindpunt:
+   * Breid de [Sociale Component](server-customize.md#socialcomponent-interface)uit.
+* Aangepaste verwerking toevoegen tijdens bewerkingen:
+   * Schrijf een [OperationExtension](server-customize.md#operationextension-class).
+* Een nieuwe aangepaste bewerking toevoegen:
+   * Maak een nieuwe bewerking [Verzending](server-customize.md#postoperation-class)Sling Post.
+   * Gebruik indien nodig bestaande [OperationServices](server-customize.md#operationservice-class) .
+   * Voeg JavaScript-code toe om de bewerking zo nodig vanaf de client aan te roepen.
 
 ## Server-Side Framework {#server-side-framework}
 
@@ -75,7 +75,7 @@ De belangrijkste klassen worden beschreven op de [server-kant pagina van de Aanp
 
 Bezoek het Overzicht [van de Leverancier van het Middel van de](srp.md) Opslag om over het werken met UGC te leren.
 
-### HTTP-API {#http-api}
+### HTTP API {#http-api}
 
 De HTTP-API ondersteunt eenvoudige aanpassingen en keuzemogelijkheden van clientplatforms voor PhoneGap-apps, native apps en andere integraties en mashups. Bovendien staat HTTP API een communautaire plaats toe om als dienst zonder een cliënt te lopen, zodat de kadercomponenten in om het even welke webpage kunnen worden geïntegreerd die op om het even welke technologie wordt voortgebouwd.
 
@@ -83,11 +83,11 @@ De HTTP-API ondersteunt eenvoudige aanpassingen en keuzemogelijkheden van client
 
 Voor elke SocialComponent, verstrekt het kader een op HTTP-Gebaseerd API eindpunt. Het eindpunt wordt betreden door een GET verzoek naar het middel met &quot;.social.json&quot;selecteur + uitbreiding te verzenden. Gebruikend Sling, wordt het verzoek overhandigd aan `DefaultSocialGetServlet`.
 
-The `DefaultSocialGetServlet`
+**`DefaultSocialGetServlet`**
 
-1. Geeft de bron (resourceType) door aan de bron `SocialComponentFactoryManager`en ontvangt een SocialComponentFactory die een `SocialComponent`representatiebron kan selecteren.
+1. Geeft de bron (resourceType) door aan de bron `SocialComponentFactoryManager` en ontvangt een SocialComponentFactory die een `SocialComponent` representatiebron kan selecteren.
 
-1. Roept de fabriek aan en ontvangt een `SocialComponent`bestand dat de bron en het verzoek kan verwerken.
+1. Roept de fabriek aan en ontvangt een apparaat `SocialComponent` waarmee de bron en het verzoek kunnen worden afgehandeld.
 1. Roept het `SocialComponent`aan, dat het verzoek verwerkt en een vertegenwoordiging JSON van de resultaten terugkeert.
 1. Retourneert de JSON-reactie op de client.
 
@@ -111,11 +111,11 @@ Er is een Sling POST:verrichting voor elke verrichting SocialComponent. De bedri
 
 ### Storage Resource Provider (SRP) {#storage-resource-provider-srp}
 
-Ga voor meer informatie over de verwerking van UGC die is opgeslagen in de [community content store](working-with-srp.md)naar
+Ga voor meer informatie over de verwerking van UGC die is opgeslagen in de [community content store](working-with-srp.md)naar:
 
-* [Overzicht](srp.md) van Storage Resource Provider - Inleiding en overzicht van opslaggebruik
-* [SRP en de Hoofdzaak](srp-and-ugc.md) UGC - SRP API hulpprogrammamethodes en voorbeelden
-* [Toegang tot UGC met SRP](accessing-ugc-with-srp.md) - Coderingsrichtlijnen
+* [Overzicht](srp.md) van Storage Resource Provider - Inleiding en overzicht van het opslaggebruik.
+* [SRP en de Hoofdzaak](srp-and-ugc.md) UGC - SRP API hulpprogrammamethodes en voorbeelden.
+* [Toegang tot UGC met SRP](accessing-ugc-with-srp.md) - Coderingsrichtlijnen.
 
 ### Aanpassingen op de server {#server-side-customizations}
 
@@ -181,6 +181,7 @@ Met de [Community Components Guide](components-guide.md) kunnen meegeleverde ond
 >
 >Zie [Component Sideloading](sideloading.md)als u een component dynamisch aan een pagina wilt toevoegen in plaats van deze toe te voegen aan of op te nemen in een sjabloon.
 
+
 ### Handlebars Helpers {#handlebars-helpers}
 
 Zie [SCF Handlebars Helpers](handlebars-helpers.md) voor een lijst en een beschrijving van douanehelpers beschikbaar in SCF.
@@ -199,7 +200,7 @@ Hieronder vindt u aanbevolen conventies voor het definiëren en gebruiken van CS
 
 * Gebruik duidelijk benoemde CSS-klassenselectienamen en vermijd generieke namen zoals &#39;kop&#39;, &#39;afbeelding&#39;, enzovoort.
 * Definieer specifieke klassenselectorstijlen, zodat de CSS-opmaakmodellen goed werken met andere elementen en stijlen op de pagina. Bijvoorbeeld: `.social-forum .topic-list .li { color: blue; }`
-* CSS-klassen voor opmaak gescheiden houden van CSS-klassen voor UX aangestuurd door JavaScript
+* Houd CSS-klassen voor opmaak gescheiden van CSS-klassen voor UX die door JavaScript worden aangestuurd.
 
 ### Aanpassingen op de client {#client-side-customizations}
 

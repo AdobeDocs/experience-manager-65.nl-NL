@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 0d462ad1-5619-4bb6-9609-bc8987c40a0c
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 6d425dcec4fab19243be9acb41c25b531a84ea74
 
 ---
 
@@ -21,26 +21,27 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 Voor ontwikkelings- en demonstratiedoeleinden is het nodig één auteur en één publicatieexemplaar uit te voeren.
 
-Volg hiervoor de standaard AEM [Getting Started](../../help/sites-deploying/deploy.md#getting-started) instructies, die
+Hiervoor volgt u de basisinstructies voor AEM [Getting Started](../../help/sites-deploying/deploy.md#getting-started) , die resulteren in:
 
 * Authoromgeving op [localhost:4502](http://localhost:4502/)
 * Publicatie-omgeving op [localhost:4503](http://localhost:4503/)
 
 voor AEM-gemeenschappen,
 
-* De auteursomgeving is bedoeld voor
+* De auteursomgeving is voor:
 
-   * Ontwikkeling van sites, sjablonen en componenten
-   * Administratieve en configuratietaken
+   * Ontwikkeling van sites, sjablonen en componenten.
+   * Administratieve en configuratietaken.
 
-* De publicatieomgeving is bedoeld voor
+* De publicatieomgeving is bedoeld voor:
 
-   * De ervaring van de gemeenschap met het plaatsen en het modereren van inhoud
-   * Communautaire groepen, leden en ledengroepen oprichten
+   * De ervaring van de gemeenschap met het plaatsen en moderniseren van inhoud.
+   * Creëren van groepen van gemeenschappen, leden en leden.
 
 >[!NOTE]
 >
 >Als u niet bekend bent met AEM, bekijkt u de documentatie over [basisverwerking](../../help/sites-authoring/basic-handling.md) en een [handleiding voor het ontwerpen van pagina](../../help/sites-authoring/qg-page-authoring.md)&#39;s.
+
 
 ## Laatste versie van Gemeenschappen installeren {#install-latest-communities-release}
 
@@ -90,17 +91,17 @@ Maak een gebruiker op de *auteur* die de rol van communautaire beheerder krijgt 
 
    * Bijvoorbeeld gebruikersnaam &#39;admin&#39; / wachtwoord &#39;admin&#39;
 
-* Navigeer vanuit de hoofdconsole naar **[!UICONTROL Gereedschappen > Bewerkingen > Beveiliging > Gebruikers]**
+* Navigeer vanuit de hoofdconsole naar **[!UICONTROL Gereedschappen]** > **[!UICONTROL Bewerkingen]** > **[!UICONTROL Beveiliging]** > **[!UICONTROL Gebruikers]**.
 * Selecteer in het menu **Bewerken **de optie Gebruiker**[!UICONTROL toevoegen ]**
 
-* In het `Create New User` dialoogvenster
+* In the `Create New User` dialog enter:
 
-   * **[!UICONTROL ID&amp;ast;]**: sirius
+   * **[!UICONTROL ID]**: sirius
    * **[!UICONTROL E-mailadres]**: sirius.nilson@mailinator.com
-   * **[!UICONTROL Wachtwoord&amp;ast;]**:password
-   * **[!UICONTROL Wachtwoord&amp;amp bevestigen;ten;]**:password
+   * **[!UICONTROL Wachtwoord]**: password
+   * **[!UICONTROL Wachtwoord&amp;amp bevestigen;ten;]**: password
    * **[!UICONTROL Voornaam]**: Sirius
-   * **[!UICONTROL Achternaam&amp;ast;]**: Nilson
+   * **[!UICONTROL Achternaam]**: Nilson
 
 ### Sirius toewijzen aan de groep met communautaire beheerders {#assign-sirius-to-community-administrators-group}
 
@@ -111,7 +112,7 @@ Omlaag schuiven naar `Add User to Groups`:
    * Selecteer `Community Administrators`
    * Selecteer `Community Enablement Managers`
 
-* Selecteer **[!UICONTROL Opslaan]**
+* Selecteer **[!UICONTROL Opslaan]**.
 
 ![chlimage_1-301](assets/chlimage_1-301.png)
 
@@ -119,8 +120,8 @@ Omlaag schuiven naar `Add User to Groups`:
 
 Voordat de demonstratieversies van sociale aanmelding bij Facebook en Twitter kunnen worden gebruikt, is het noodzakelijk
 
-1. Een reparatiepakket of [nieuwste functiepakket](deploy-communities.md#latestfeaturepack) installeren (voor wijzigingen in de Facebook-API van maart 2017)
-1. [De OAuth-provider](social-login.md#adobe-granite-oauth-authentication-handler) inschakelen in de publicatieomgeving
+1. Installeer een reparatiepakket of een [nieuwste functiepakket](deploy-communities.md#latestfeaturepack) (voor wijzigingen in de Facebook-API van maart 2017).
+1. [Schakel de OAuth-provider](social-login.md#adobe-granite-oauth-authentication-handler) in de publicatieomgeving in.
 
 Voor productieservers is het nodig de cloudservices te maken die nodig zijn voor het aanbieden van sociale aanmeldingsgegevens.
 
@@ -141,10 +142,10 @@ Met de [tagconsole](../../help/sites-administering/tags.md#tagging-console) kunt
 
 ![chlimage_1-302](assets/chlimage_1-302.png)
 
-Volg daarna de instructies op
+Volg vervolgens de instructies op:
 
-1. [Tagmachtigingen instellen](../../help/sites-administering/tags.md#setting-tag-permissions)
-1. [De labels publiceren](../../help/sites-administering/tags.md#publishing-tags)
+1. [Stel de tagmachtigingen](../../help/sites-administering/tags.md#setting-tag-permissions)in.
+1. [Publiceer de labels](../../help/sites-administering/tags.md#publishing-tags).
 
 Voorbeeldpakket met tags gemaakt voor de zelfstudies om aan de slag te gaan met AEM Communities
 

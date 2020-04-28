@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: introduction
 discoiquuid: d748decb-a614-4c9e-a502-d6176b720f1a
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 844d42ed50da153077423190684aa85265bce12f
 
 ---
 
@@ -28,6 +28,10 @@ Een auteur kan de volgende functionele beperkingen tegenkomen wanneer hij de edi
 Wanneer u een pagina [](/help/sites-authoring/editing-content.md)bewerkt, zijn koppelingen niet actief.
 
 * [Schakel over naar de modus **Voorvertoning**](/help/sites-authoring/editing-content.md#preview-mode) om te navigeren met de koppelingen in de inhoud.
+
+### Structuurpagina&#39;s {#structure-pages}
+
+Pagina&#39;s kunnen geen naam krijgen `structure`. Pagina&#39;s waaraan een naam is gegeven, kunnen niet worden bewerkt in de pagina-editor. `structure`
 
 ## CSS-beperkingen {#css-limitations}
 

@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 300aa9f3-596f-42bc-8d46-e535f2bc4379
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 6d425dcec4fab19243be9acb41c25b531a84ea74
 
 ---
 
@@ -25,17 +25,17 @@ Voor Gemeenschappen zijn de twee dingen die over het algemeen worden doorzocht:
 
 * Inhoud geplaatst door leden van de gemeenschap
 
-   * Gebruikt de UGC-zoekAPI van AEM Communities
+   * Gebruikt de UGC-zoekAPI van AEM-gemeenschappen.
 
 * Gebruikers en gebruikersgroepen (gebruikersgegevens)
 
-   * Gebruikt de zoekmogelijkheden van het AEM-platform
+   * Gebruikt de zoekmogelijkheden van het AEM-platform.
 
 Deze sectie van de documentatie is van belang voor ontwikkelaars die douanecomponenten creëren die tot UGC leiden of leiden.
 
 ## Beveiligings- en schaduwknooppunten {#security-and-shadow-nodes}
 
-Voor een douanecomponent, is het noodzakelijk om de methodes te gebruiken [SocialResourceUtilities](socialutils.md#socialresourceutilities-package) . De hulpprogrammamethoden die tot UGC leiden en naar UGC zoeken zullen de vereiste [schaduwknopen](srp.md#about-shadow-nodes-in-jcr) vestigen en verzekeren het lid de correcte toestemmingen voor het verzoek heeft.
+Voor een douanecomponent, is het noodzakelijk om de methodes te gebruiken [SocialResourceUtilities](socialutils.md#socialresourceutilities-package) . De hulpprogrammamethoden die tot UGC leiden en naar UGC zoeken zullen de vereiste [schaduwknopen](srp.md#about-shadow-nodes-in-jcr) vestigen en zullen ervoor zorgen het lid de correcte toestemmingen voor het verzoek heeft.
 
 Wat niet door de nut SRP wordt beheerd zijn eigenschappen met betrekking tot matiging.
 
@@ -59,10 +59,10 @@ Voor [MSRP](msrp.md), wordt UGC opgeslagen in MongoDB die wordt gevormd om Solr 
 
 Wat MSRP en Solr betreft:
 
-* De ingesloten Solr voor het AEM-platform wordt niet gebruikt voor MSRP
-* Als het gebruiken van verre Solr voor het platform AEM, kan het met MSRP worden gedeeld, maar zij zouden verschillende inzamelingen moeten gebruiken
-* Solr kan worden gevormd voor standaardonderzoek of voor meertalig onderzoek (MLS)
-* Voor configuratiedetails, zie [Solr Configuratie](msrp.md#solr-configuration) voor MSRP
+* Ingesloten Solr voor het platform AEM wordt niet gebruikt voor MSRP.
+* Als het gebruiken van verre Solr voor het platform AEM, kan het met MSRP worden gedeeld, maar zij zouden verschillende inzamelingen moeten gebruiken.
+* Solr kan voor standaardonderzoek of voor meertalige onderzoek (MLS) worden gevormd.
+* Voor configuratiedetails, zie [Solr Configuratie](msrp.md#solr-configuration) voor MSRP.
 
 Voor aangepaste zoekfuncties moet de [UGC-zoekAPI](#ugc-search-api)worden gebruikt.
 
@@ -80,7 +80,7 @@ Voor aangepaste zoekfuncties moet de [UGC-zoekAPI](#ugc-search-api)worden gebrui
 
 #### Oak-indexering {#oak-indexing}
 
-Hoewel er niet automatisch eiken-indexen worden gemaakt voor het zoeken naar het AEM-platform, zijn deze met ingang van AEM 6.2 toegevoegd voor AEM-gemeenschappen om de prestaties te verbeteren en paginering te ondersteunen bij de presentatie van UGC-zoekresultaten.
+Hoewel er niet automatisch eiken-indexen worden gemaakt voor het zoeken naar het AEM-platform, zijn deze vanaf AEM 6.2 toegevoegd voor AEM-gemeenschappen om de prestaties te verbeteren en paginering te ondersteunen bij de presentatie van UGC-zoekresultaten.
 
 Als aangepaste eigenschappen in gebruik zijn en zoekacties traag zijn, moeten aanvullende indexen voor de aangepaste eigenschappen worden gemaakt om deze beter te laten presteren. Om draagbaarheid te handhaven, houd aan de [noemende vereisten](#naming-of-custom-properties) wanneer het creëren van douaneeigenschappen die doorzoekbaar zijn.
 
@@ -88,8 +88,8 @@ Als u bestaande indexen wilt wijzigen of aangepaste indexen wilt maken, raadplee
 
 De Manager [van de Index van de](https://adobe-consulting-services.github.io/acs-aem-commons/features/oak-index-manager.html) Eak is beschikbaar bij ACS AEM Commons. Het voorziet in:
 
-* Een weergave van bestaande indexen
-* De mogelijkheid om een nieuwe indexering te starten
+* Een weergave van bestaande indexen.
+* De mogelijkheid om opnieuw indexeren te starten.
 
 De bestaande eiken-indexen in [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)bekijken:
 
@@ -118,7 +118,7 @@ Hieronder vindt u een aantal van de doorzoekbare eigenschappen die worden gebrui
 | userIdentifier | *Tekenreeks* |
 | antwoorden | *Lang* |
 | jcr:titel | *Tekenreeks* |
-|  jcr:beschrijving | *Tekenreeks* |
+| jcr:beschrijving | *Tekenreeks* |
 | sling:resourceType | *Tekenreeks* |
 | allowThreadedReply | *Boolean* |
 | isDraft | *Boolean* |
@@ -135,12 +135,12 @@ Hieronder vindt u een aantal van de doorzoekbare eigenschappen die worden gebrui
 
 ### Naamgeving van aangepaste eigenschappen {#naming-of-custom-properties}
 
-Als u aangepaste eigenschappen toevoegt, zodat die eigenschappen zichtbaar zijn voor sorteren en zoeken die zijn gemaakt met de [UGC-zoekAPI](#ugc-search-api), is het *required *om een achtervoegsel toe te voegen aan de naam van de eigenschap.
+Als u aangepaste eigenschappen toevoegt, zodat deze eigenschappen zichtbaar zijn voor sorteren en zoeken die zijn gemaakt met de [UGC-zoekAPI](#ugc-search-api), moet *u een achtervoegsel aan de naam van de eigenschap* toevoegen.
 
 Het achtervoegsel is voor vraagtalen die een schema gebruiken:
 
-* Het identificeert de eigenschap als doorzoekbaar
-* Het identificeert het gegevenstype
+* Het identificeert de eigenschap als doorzoekbaar.
+* Het identificeert het gegevenstype.
 
 Solr is een voorbeeld van een vraagtaal die een schema gebruikt.
 
@@ -228,9 +228,9 @@ De waarde van de `q` parameter is de query. Zodra het coderen URL wordt gedecode
 
 ## Gerelateerde bronnen {#related-resources}
 
-* [Community Content Storage](working-with-srp.md) - Bespreekt de beschikbare SRP-keuzes voor een UGC-algemeen archief
-* [Overzicht](srp.md) van Storage Resource Provider - Inleiding en overzicht van opslaggebruik
-* [Toegang tot UGC met SRP](accessing-ugc-with-srp.md) - Coderingsrichtlijnen
-* [SocialUtils Refactoring](socialutils.md) - de methodes van het Nut voor SRP die SocialUtils vervangen
-* [Componenten](search.md) met zoekresultaten - UGC-zoekfunctie toevoegen aan een sjabloon
+* [Community Content Storage](working-with-srp.md) - Bespreekt de beschikbare SRP-keuzes voor een UGC-algemeen archief.
+* [Overzicht](srp.md) van Storage Resource Provider - Inleiding en overzicht van het opslaggebruik.
+* [Toegang tot UGC met SRP](accessing-ugc-with-srp.md) - Coderingsrichtlijnen.
+* [SocialUtils Refactoring](socialutils.md) - de methodes van het Nut voor SRP die SocialUtils vervangen.
+* [Componenten](search.md) met zoekresultaten - UGC-zoekfunctie toevoegen aan een sjabloon.
 

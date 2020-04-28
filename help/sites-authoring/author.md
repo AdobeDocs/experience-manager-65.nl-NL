@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 81ff6f6f-11b3-4f8e-80e6-b3e104158394
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
+source-git-commit: b9cc4df476ab95707284c4255f9cf35f257a1258
 
 ---
 
@@ -22,7 +22,7 @@ source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
 
 AEM biedt u twee omgevingen:
 
-* Author
+* Auteur
 * Publiceren
 
 Met deze interacties kunt u inhoud op uw website beschikbaar maken, zodat uw bezoekers deze kunnen lezen.
@@ -38,9 +38,7 @@ Op de auteursomgeving wordt de functionaliteit van AEM ter beschikking gesteld d
 
 >[!NOTE]
 >
->AEM zelf wordt gebruikt om de documentatie van AEM te ontwerpen.
->
->Samen met de Dispatcher wordt het ook gebruikt voor het publiceren.
+>AEM en de Dispatcher worden gebruikt om deze AEM-documentatie te publiceren.
 
 ### Auteursomgeving {#author-environment}
 
@@ -68,7 +66,7 @@ Daarnaast zijn er beheertaken die u helpen uw inhoud te beheren:
 
 >[!NOTE]
 >
->AEM wordt (voor het merendeel van de taken) ook [beheerd](/help/sites-administering/home.md) vanuit de auteursomgeving.
+>AEM wordt ook [beheerd](/help/sites-administering/home.md) (voor de meeste taken) vanuit de auteursomgeving.
 
 #### Publicatie-omgeving {#publish-environment}
 

@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a9cb5294-e5ab-445b-b7c2-ffeecda91c50
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 89156f94f2d0494d44d4f0b99abfba4fafbc66d3
 
 ---
 
@@ -42,6 +42,7 @@ De stappen om componenten dynamisch toe te voegen SCF zijn:
 >
 >Sideloading van [niet-bestaande middelen](scf.md#add-or-include-a-communities-component) wordt niet gesteund.
 
+
 ## Component dynamisch toevoegen aan DOM {#dynamically-add-component-to-dom}
 
 Of de component nu dynamisch wordt opgenomen of dynamisch wordt geladen, moet deze eerst aan de DOM worden toegevoegd.
@@ -50,9 +51,13 @@ Bij het toevoegen van de SCF-component is de meest gebruikte tag de DIV-tag, maa
 
 Welk label ook wordt gebruikt, het element moet minstens voldoen aan het normale patroon van het SCF-hoofdelement door deze twee kenmerken te bevatten:
 
-* **data-component-id** Het effectieve pad naar de toegevoegde component
+* **data-component-id**
 
-* **data-scf-component** The resourceType of the component
+   Het effectieve pad naar de toegevoegde component.
+
+* **data-scf-component**
+
+   The resourceType of the component.
 
 Hieronder ziet u een voorbeeld van een component voor toegevoegde opmerkingen:
 
@@ -73,7 +78,7 @@ De dynamische opneming gebruikt een laarzentrekkerverzoek dat in SCF onderzoek D
 
 Als u SCF-componenten na het laden van de pagina wilt initialiseren, voert u gewoon een JQuery-gebeurtenis als volgt uit:
 
-$(document).trigger(SCF.events.BOOTSTRAP_REQUEST);
+`$(document).trigger(SCF.events.BOOTSTRAP_REQUEST);`
 
 ### Dynamisch laden {#dynamic-loading}
 
@@ -81,6 +86,6 @@ Dynamisch laden biedt controle over het laden van SCF-componenten.
 
 In plaats van alle SCF-componenten die in het DOM worden gevonden, te bootstrappen, is het mogelijk om een specifieke SCF-component op te geven die moet worden geladen met deze JavaScript-methode:
 
-SCF.addComponent(document.getElementById(*someId*));
+`SCF.addComponent(document.getElementById(*someId*));`
 
-Waar *someId* de waarde van het **data-component-id** attribuut is.
+Waar `someId` is de waarde van het `data-component-id` kenmerk.

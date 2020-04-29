@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 0ce57ab1-e4c6-4c38-963d-556eef8757f2
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
 
 ---
 
@@ -19,15 +19,15 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 ## Inleiding {#introduction}
 
-De mogelijkheid voor een lid van de gemeenschap om zowel [activiteiten](activities.md) als follow-up te volgen, wordt door middel van twee componenten vastgesteld: `Follow`en `Following`.
+De mogelijkheid voor een lid van de gemeenschap om zowel [activiteiten](activities.md) als follow-up te volgen, wordt door middel van twee componenten vastgesteld: `Follow` en `Following`.
 
-De `Follow`component moet met een andere bron worden geassocieerd, en deze vereniging is reeds gevestigd voor communautaire leden en eigenschappen.
+De `Follow` component moet met een andere bron worden geassocieerd, en deze vereniging is reeds gevestigd voor communautaire leden en eigenschappen.
 
-De `Following`component maakt een lijst eenvoudig van de leden die of het huidige lid volgen of door het huidige lid worden gevolgd. Deze sociale grafiek van de relaties tussen leden is opgenomen in het gebruikersprofiel dat voor een [gemeenschapssite](overview.md#communitiessites)is ingesteld.
+De `Following` component maakt een lijst eenvoudig van de leden die of het huidige lid volgen of door het huidige lid worden gevolgd. Deze sociale grafiek van de relaties tussen leden is opgenomen in het gebruikersprofiel dat voor een [gemeenschapssite](overview.md#communitiessites)is ingesteld.
 
 ## Volgende toevoegen aan een pagina {#adding-following-to-a-page}
 
-Als u een `Following`component wilt toevoegen aan een pagina in de ontwerpmodus, zoekt u de component `Communities / Following` en sleept u deze naar de plaats op een pagina waar de sociale grafiek moet verschijnen.
+Als u een `Following` component wilt toevoegen aan een pagina in de ontwerpmodus, zoekt u de component `Communities / Following` en sleept u deze naar de plaats op een pagina waar de sociale grafiek moet verschijnen.
 
 Ga voor de benodigde informatie naar [Community Components Basics](basics.md).
 
@@ -37,7 +37,7 @@ Wanneer de [vereiste client-side bibliotheken](essentials-socialgraph.md#essenti
 
 ## Configureren na {#configuring-following}
 
-Momenteel, is het noodzakelijk om het bezit te plaatsen om te bepalen of de component de `follows`verhouding, of de `following`verhouding toont.
+Momenteel, is het noodzakelijk om het bezit te plaatsen om te bepalen of de component de `follows` verhouding, of de `following` verhouding toont.
 
 ## Additional Information {#additional-information}
 

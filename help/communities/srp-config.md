@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 71fac7e9-814a-48b5-b816-9bdcb2a05190
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
 
 ---
 
@@ -21,7 +21,7 @@ Opslagconfiguratie is het middel om de opslag te identificeren die voor communau
 
 Dit het plaatsen informeert de code van Gemeenschappen AEM over welke implementatie van de leverancier van het opslagmiddel (SRP) moet worden gebruikt wanneer de toegang tot van UGC en moet op de topologie wijzen die wordt gevestigd toen AEM werd opgesteld.
 
-Voor een bespreking van opslagopties en plaatsingstopologieën, bezoek
+Voor een bespreking van opslagopties en plaatsingstopologieën, bezoek:
 
 * [Community Content Store](working-with-srp.md)
 * [Aanbevolen topologieën](topologies.md)
@@ -30,20 +30,20 @@ Voor een bespreking van opslagopties en plaatsingstopologieën, bezoek
 
 ![chlimage_1-188](assets/chlimage_1-188.png)
 
-In de auteursomgeving, om de console van de opslagconfiguratie te bereiken
+In het auteursmilieu, om de console van de opslagconfiguratie te bereiken.
 
-* Vanuit globale navigatie: **[!UICONTROL Extra > Gemeenschappen > Opslagconfiguratie]**
+* Selecteer in de globale navigatie **[!UICONTROL Gereedschappen]** > **[!UICONTROL Gemeenschappen]** > **[!UICONTROL Opslagconfiguratie]**
 
 U selecteert als volgt een andere opslagoptie dan de standaard-JCR:
 
-* een optie selecteren
+* Selecteer een optie
 * Passend configureren
 
    * Zie details voor het [selecteren van MSRP](msrp.md#select-msrp)
    * Zie details voor het [selecteren van DSRP](dsrp.md#select-dsrp)
    * Zie details voor het [selecteren van ASRP](asrp.md#select-asrp)
 
-* Selecteer **[!UICONTROL Verzenden]**
+* Selecteer **[!UICONTROL Verzenden]**.
 
 ### Informatie over JCR-opslag {#about-jcr-storage}
 
@@ -55,5 +55,6 @@ Ga naar de [JCR Store](jsrp.md) voor meer informatie.
 
 >[!NOTE]
 >
->De afwezigheid van het knooppunt `srpc`onder `/etc/socialconfig` geeft de standaard [JCR-opslag](jsrp.md)aan.
+>De afwezigheid van het knooppunt `srpc` onder `/etc/socialconfig` geeft de standaard [JCR-opslag](jsrp.md)aan.
+
 

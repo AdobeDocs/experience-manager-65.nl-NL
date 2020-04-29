@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 06b8c0be-4362-4bd1-ad57-ea5503616b17
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b3e1493811176271ead54bae55b1cd0cf759fe71
+source-git-commit: 3d9bcc706a1fa7a15d0ce8729f7b85c4226b394f
 
 ---
 
@@ -39,7 +39,7 @@ Voor verdere details over SPAs in AEM, zie de volgende documenten:
 * [KUUROORD Blauwdruk](/help/sites-developing/spa-blueprint.md) voor de technische vereisten van een KUUROORD
 * [Begonnen het worden met SPAs in AEM](/help/sites-developing/spa-getting-started-react.md) voor een snelle tour van een eenvoudige SPA
 
-##  Ontwerp {#design}
+## Ontwerp {#design}
 
 De paginacomponent voor een SPA verstrekt niet de elementen van HTML van zijn kindcomponenten via het JSP of HTML- dossier. Deze verrichting wordt gedelegeerd aan het kader van het KUUROORD. De representatie van onderliggende componenten of modellen wordt opgehaald als een JSON-gegevensstructuur van het JCR. De componenten van het KUUROORD worden dan toegevoegd aan de pagina volgens die structuur. Dit gedrag onderscheidt de aanvankelijke lichaamcompositie van de paginacomponent van niet-SPA tegenhangers.
 
@@ -72,7 +72,7 @@ U kunt de stroom van de interactie tussen SPA en AEM begrijpen door van de Redac
 * De communicatie tussen de paginaredacteur en SPA wordt gemaakt gebruikend JSON in plaats van HTML.
 * De paginaredacteur verstrekt de recentste versie van het paginamodel aan het KUUROORD via iframe en overseinen API.
 * De manager van het paginamodel brengt de redacteur op de hoogte het klaar voor uitgave is en gaat het paginamodel als structuur JSON over.
-* De editor wijzigt de DOM-structuur van de pagina die wordt geschreven niet of opent deze zelfs niet, maar biedt het nieuwste paginamodel.
+* De editor wijzigt de DOM-structuur van de pagina die wordt gemaakt niet of opent deze zelfs niet, maar biedt het nieuwste paginamodel.
 
 ![screen_shot_2018-08-20at144324](assets/screen_shot_2018-08-20at144324.png)
 
@@ -172,6 +172,17 @@ Eerdere versies van deze frameworks werken mogelijk met de AEM SPA Editor SDK, m
 ### Aanvullende kaders {#additional-frameworks}
 
 De extra kaders van het KUUROORD kunnen worden uitgevoerd om met de Redacteur SDK van AEM te werken SPA. Gelieve te zien het document van de Blauwdruk [van het](/help/sites-developing/spa-blueprint.md) KUUROORD voor de vereisten die een kader moet vervullen om een kader-specifieke laag tot stand te brengen die uit modules, componenten, en de diensten wordt samengesteld om met de Redacteur van het KUUROORD AEM te werken.
+
+### Vereisten voor teksteditor {#text-editor-requirements}
+
+Als u op zijn plaats redacteur van een tekstcomponent wilt gebruiken die in KUUROORD wordt gecreeerd is er extra vereiste configuratie.
+
+1. Stel een willekeurig kenmerk in op het containerelement dat de tekst-HTML bevat. In het geval van de WKND de steekproefinhoud van het Dagboek, is het een `<div>` element en de selecteur die is gebruikt is `data-rte-editelement`.
+1. Stel de configuratie in `editElementQuery` op de overeenkomende AEM-tekstcomponent `cq:InplaceEditingConfig` die naar die kiezer wijst, bijvoorbeeld `data-rte-editelement`. Hierdoor weet de editor welk HTML-element de HTML-tekst omsluit.
+
+Voor een voorbeeld van hoe dit wordt gedaan, zie de de steekproefinhoud van het [Dagboek van WKND.](https://github.com/adobe/aem-sample-we-retail-journal/pull/16/files)
+
+Voor extra informatie over het `editElementQuery` bezit en de configuratie van de rijke tekstredacteur, zie de Rich Redacteur van de Tekst [vormen.](/help/sites-administering/rich-text-editor.md)
 
 ### Beperkingen {#limitations}
 

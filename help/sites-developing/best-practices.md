@@ -10,16 +10,16 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 99678c1a-81f3-4fb3-bf73-98f0691c3fb6
 translation-type: tm+mt
-source-git-commit: 5597fb39500ac1f85d03263bfa1e5239d35d2a2c
+source-git-commit: e562939f1c64d8345b4c2a28e4b882200d9e4c07
 
 ---
 
 
-# Aanbevolen werkwijzen{#best-practices}
+# Best Practices{#best-practices}
 
 ## Aanbevolen procedures voor ontwikkelaars - Aan de slag {#best-practices-for-developers-getting-started}
 
-Adobe Engineering- en Consulting-teams hebben een uitgebreide set met best practices ontwikkeld voor AEM-ontwikkelaars. De ontwikkelaar van Adobe hanteert deze beste praktijken aangezien zij kernAEM productupdates en klantencode voor klantenimplementatie ontwikkelen.
+Adobe Engineering- en Consulting-teams hebben een uitgebreide reeks aanbevolen procedures ontwikkeld voor AEM-ontwikkelaars. De ontwikkelaar van Adobe hanteert deze beste praktijken aangezien zij kernAEM productupdates en klantencode voor klantenimplementatie ontwikkelen.
 
 Voordat u uw AEM-ontwikkelingsproject start, moet u eerst de volgende aanbevolen procedures doornemen:
 
@@ -30,6 +30,7 @@ Voordat u uw AEM-ontwikkelingsproject start, moet u eerst de volgende aanbevolen
 * [Codepitten](/help/sites-developing/code-pitfalls.md)
 * [JCR-interactie](/help/sites-developing/jcr-integration.md)
 * [OSGi-bundels](/help/sites-developing/osgi-bundles.md)
+* [Aanbevolen werkwijzen voor Java API](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
 
 ### Aanvullende informatie over aanbevolen procedures {#additional-best-practices-information}
 
@@ -55,7 +56,7 @@ Voor het beheren en ontwerpen van uw website-inhoud gelden enkele aanbevolen pro
  <tbody>
   <tr>
    <td>Een deel van de theorie achter de standaard, aanraakinterface.</td>
-   <td><p><a href="/help/sites-developing/touch-ui-concepts.md">Interface voor aanraakbediening: Concepten</a></p> <p><a href="/help/sites-developing/touch-ui-structure.md">Interface voor aanraakbediening:Structuur</a></p> </td>
+   <td><p><a href="/help/sites-developing/touch-ui-concepts.md">Interface voor aanraakbediening: Concepten</a></p> <p><a href="/help/sites-developing/touch-ui-structure.md">Interface voor aanraakbediening: Structuur</a></p> </td>
    <td>Deze documenten bieden een overzicht van de concepten en structuur van de interface met aanraakbediening.</td>
   </tr>
   <tr>
@@ -99,5 +100,5 @@ HTML Template Language (HTL) is een nieuw HTML-sjabloonsysteem dat is geïntrodu
 >[!NOTE]
 >
 >De volgende meerdelige zelfstudie zou van belang kunnen zijn voor de beste praktijken om een nieuw AEM-project op te zetten, die de Componenten van de Kern, Bewerkbare Malplaatjes, de Bibliotheken van de Cliënt en de componentenontwikkeling detailleert:
->[Aan de slag met AEM-sites - WKND-zelfstudie](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
+>[Getting Started with AEM Sites - WKND Tutorial](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
 

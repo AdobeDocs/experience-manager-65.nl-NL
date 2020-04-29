@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 202d7dba-2b34-431d-b10f-87775632807f
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 89156f94f2d0494d44d4f0b99abfba4fafbc66d3
 
 ---
 
@@ -23,9 +23,10 @@ De console van de Malplaatjes van de Plaats is zeer gelijkaardig aan de console 
 >
 >De consoles voor de verwezenlijking van [communautaire plaatsen](sites-console.md), de malplaatjes [van de](sites.md)communautaire plaats, [communautaire groepsmalplaatjes](tools-groups.md) en [communautaire functies](functions.md) zijn voor gebruik slechts in het auteursmilieu.
 
+
 ## Sitesjabloonconsole {#site-templates-console}
 
-In het auteursmilieu, om de console van communautaire plaatsen te bereiken
+In het auteursmilieu, om de console van communautaire plaatsen te bereiken:
 
 * Vanuit globale navigatie: **[!UICONTROL Gereedschappen > Gemeenschappen > Sitesjablonen]**
 
@@ -45,11 +46,17 @@ Hiermee wordt het deelvenster Site-editor weergegeven met drie subdeelvensters:
 
 In het deelvenster Basisinformatie worden een naam, beschrijving en of de sjabloon is ingeschakeld of uitgeschakeld, geconfigureerd:
 
-* **[!UICONTROL Sjabloonnaam]** voor communautaire site De sjabloonnaam-id
+* **[!UICONTROL Sjabloonnaam communautaire site]**
 
-* **[!UICONTROL Beschrijving]** van sjabloon voor communautaire site
+   De naam-id van de sjabloon.
 
-* **[!UICONTROL Uitgeschakeld/Toegelaten]** een knevelschakelaar die of het malplaatje van verwijzingen voorziet controleert
+* **[!UICONTROL Beschrijving van sjabloon communautaire site]**
+
+   De sjabloonbeschrijving.
+
+* **[!UICONTROL Uitgeschakeld/Ingeschakeld]**
+
+   Een schakeloptie die bepaalt of naar de sjabloon kan worden verwezen.
 
 ### Miniatuur {#thumbnail}
 
@@ -75,6 +82,7 @@ De paginafunctie biedt een lege pagina. De groepsfunctie biedt de mogelijkheid o
 >
 >Alle andere functies, zoals de [paginafunctie](functions.md#page-function), moeten worden opgenomen en als eerste worden vermeld.
 
+
 ![chlimage_1-22](assets/chlimage_1-22.png)
 
 ### Groepsjablonen voor groepfuncties {#group-templates-for-groups-function}
@@ -84,6 +92,7 @@ Wanneer het omvatten van een groepsfunctie in het plaatssjabloon, vereist de con
 >[!CAUTION]
 >
 >De functie Groepen mag *niet* de *eerste of de enige* functie in de sitestructuur zijn.
+
 
 ![chlimage_1-23](assets/chlimage_1-23.png)
 

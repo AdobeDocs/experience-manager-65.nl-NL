@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: c012d639-c6e6-4f73-bbd8-78a4baa38c17
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: fa01c9fad82adb021220631a0536ab77ceb01e31
 
 ---
 
@@ -26,13 +26,12 @@ Hoofdzakelijk:
 * [Een tagnaamruimte](../../help/sites-administering/tags.md#creating-a-namespace) maken voor elke catalogus
 
    * [Tagmachtigingen instellen](../../help/sites-administering/tags.md#setting-tag-permissions)
+   * Alleen voor leden van de gemeenschap (gesloten community)
 
-      * Alleen voor leden van de gemeenschap (gesloten community)
+      * Leestoegang toestaan voor de lidgroep van de [gemeenschapssite](users.md#publish-group-roles)
+   * Voor elke bezoeker van de site, aangemeld of anoniem (open community)
 
-         * Leestoegang toestaan voor de lidgroep van de [gemeenschapssite](users.md#publish-group-roles)
-      * Voor elke bezoeker van de site, aangemeld of anoniem (open community)
-
-         * Leestoegang voor de `Everyone`groep toestaan
+      * Leestoegang voor de `Everyone` groep toestaan
    * [De labels publiceren](../../help/sites-administering/tags.md#publishing-tags)
 
 
@@ -41,8 +40,8 @@ Hoofdzakelijk:
 
    * [Catalogi configureren die in de structuur van de site bestaan](functions.md#catalog-function)
 
-      * Kan tags toevoegen aan de catalogusinstantie om de lijst met tags in de UI-filters te beheren
-      * Kan [voorfilters](catalog-developer-essentials.md#pre-filters)toevoegen om de opgenomen bronnen van een catalogus te beperken
+      * Kan tags toevoegen aan de catalogusinstantie om de lijst met tags in de UI-filters te beheren.
+      * Kan [voorfilters](catalog-developer-essentials.md#pre-filters)toevoegen om de opgenomen bronnen van een catalogus te beperken.
 
 * [De communitysite publiceren](sites-console.md#publishing-the-site)
 * [Tags toepassen op bronnen](resources.md#create-a-resource) voor activering zodat deze categoriaal kunnen worden gefilterd
@@ -82,9 +81,8 @@ De beheerder die de markeringen op enablement middelen toepast moet zich van de 
 
 Als er bijvoorbeeld een `ski-catalog` naamruimte wordt gemaakt en ingesteld in een catalogus met de naam `Ski Catalog`, heeft deze mogelijk twee onderliggende tags: `lesson-1` en `lesson-2`.
 
-Aldus, om het even welke enablement middelen die met één van worden geëtiketteerd:
+Aldus, om het even welke enablement middelen die met één van worden geëtiketteerd
 
-* skicatalogus:
 * ski-catalogus:les-1
 * ski-catalogus:les-2
 

@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0e949429-cd5f-4301-aa72-14803cdfab00
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
+source-git-commit: a417094c1d7b28ec54a6e84303d7a9747bb0c510
 
 ---
 
@@ -116,7 +116,7 @@ Logboekmogelijkheden van op formulieren gerichte workflowstappen zijn gestandaar
 
 ## Gegevensintegratie {#data-integration}
 
-U kunt nu:
+U kunt nu het volgende doen:
 
 * [Valideer invoergegevens](../../forms/using/work-with-form-data-model.md#automated-validation-of-input-data) op basis van een lijst met beperkingen. Hiermee zorgt u ervoor dat alleen geldige gegevens naar de gegevensbron worden verzonden.
 * [Overschrijf standaardeindpunt](../../forms/using/configure-data-sources.md#configure-soap-web-services) dat in een WSDL (de Taal van de Beschrijving van de Diensten van het Web) wordt bepaald dossier.
@@ -148,7 +148,8 @@ AEM Forms kan worden ingesteld met elke combinatie van ondersteunde besturingssy
    <td>Toepassingsservers<br /> </td>
    <td>
     <ul>
-     <li>Oracle Weblogic</li>
+    <li>WebSphere Liberty-profiel</li>
+    <li>Oracle WebLogic</li>
     </ul> </td>
   </tr>
   <tr>

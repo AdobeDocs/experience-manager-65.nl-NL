@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 63abeda4-6ea1-4b45-b188-f9c6b44ca0cd
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
 
 ---
 
@@ -33,9 +33,9 @@ Alle componenten SCF worden uitgevoerd gebruikend SRP API, toestaand code om zon
 
 Zie ook:
 
-* [SRP en de Hoofdzaak](srp-and-ugc.md) UGC - de gebruiksmethodes van SRP en voorbeelden
-* [Toegang tot UGC met SRP](accessing-ugc-with-srp.md) - Coderingsrichtlijnen
-* [SocialUtils Refactoring](socialutils.md) - het Afgekeurde nutsmethodes van de Toewijzing aan huidige SRP nutsmethodes
+* [SRP en de Hoofdzaak](srp-and-ugc.md) UGC - SRP nutsmethodes en voorbeelden.
+* [Toegang tot UGC met SRP](accessing-ugc-with-srp.md) - Coderingsrichtlijnen.
+* [SocialUtils Refactoring](socialutils.md) - Afgekeurde nutsmethodes van de Afbeelding aan huidige SRP hulpprogrammamethodes.
 
 ## Informatie over de opslagplaats {#about-the-repository}
 
@@ -64,6 +64,7 @@ Wanneer UGC aan gedeelde opslag wordt bewaard, is er één enkel geval van lidin
 >Zie Hoofdzaak [SRP en UGC](srp-and-ugc.md) voor steekproefcode en extra details.
 >
 >Zie [Toegang tot van UGC met SRP](accessing-ugc-with-srp.md) voor beste praktijken wanneer het coderen.
+
 
 ### ASRP {#asrp}
 
@@ -101,7 +102,7 @@ JSRP gebruikt de indexen van het Eak voor vragen.
 
 Schaduwknooppunten, die het pad naar UGC nabootsen, bestaan in de lokale opslagruimte voor twee doeleinden:
 
-1. [Toegangsbeheer (ACLs](#for-access-control-acls))
+1. [Toegangsbeheer (ACLs)](#for-access-control-acls)
 1. [Niet-bestaande bronnen (NER&#39;s)](#for-non-existing-resources-ners)
 
 Ongeacht de implementatie SRP, zal daadwerkelijke UGC *not zichtbaar op de zelfde plaats zoals de schaduwknoop zijn.
@@ -126,17 +127,18 @@ Schaduwknooppunten bieden een adresseerbare locatie in de opslagplaats.
 >
 >Aangezien het schaduwknooppunt meerdere toepassingen heeft, impliceert de aanwezigheid van een schaduwknooppunt *niet* dat de component een NER is.
 
+
 ### Opslaglocatie {#storage-location}
 
 Hieronder ziet u een voorbeeld van een schaduwknooppunt met de component [](http://localhost:4502/content/community-components/en/comments.html) Opmerkingen in de [Community Components Guide](components-guide.md):
 
 * De component bestaat in de lokale opslagplaats op:
 
-   /content/community-components/nl/comments/jcr:content/content/include/comments
+   `/content/community-components/en/comments/jcr:content/content/includable/comments`
 
 * Het corresponderende schaduwknooppunt bestaat in de lokale opslagruimte op:
 
-   /content/usergenerated/content/community-components/nl/comments/jcr:content/content/include/comments
+   `/content/usergenerated/content/community-components/en/comments/jcr:content/content/includable/comments`
 
 Er wordt geen UGC gevonden onder het schaduwknooppunt.
 

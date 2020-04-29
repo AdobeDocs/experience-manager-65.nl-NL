@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 33c85af4-4c56-487a-ba60-55211cb9f72c
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
 
 ---
 
@@ -21,13 +21,13 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 Vanaf het Communautair [KP1](deploy-communities.md#latestfeaturepack)kunnen de leden van de gemeenschap met de gemeenschap door e-mail interactie aangaan gebruikend een eigenschap die als abonnementen wordt bedoeld.
 
-Abonnementen zijn vergelijkbaar met [meldingen](notifications.md) omdat leden zich kunnen abonneren wanneer ze blogartikelen, forumonderwerpen of vragen in het kader van het kwaliteitscontrole-overzicht volgen.
+Abonnementen zijn vergelijkbaar met [meldingen](notifications.md) omdat leden zich kunnen abonneren wanneer ze blogartikelen, forumonderwerpen of vragen in het kader van het kwaliteitsbeheer volgen.
 
 Abonnementen worden onderscheiden van meldingen:
 
-* Leden mogen zich niet abonneren wanneer zij andere leden volgen
-* De enige actie die leden kunnen ondernemen, is het selecteren `Email Subscriptions` wanneer
-* Wanneer e-mailantwoord is geconfigureerd, kunnen leden inhoud effectief posten door eenvoudig te antwoorden op de ontvangen e-mail
+* Leden kunnen zich niet abonneren wanneer zij andere leden volgen.
+* De enige actie die leden kunnen ondernemen, is het selecteren `Email Subscriptions` wanneer ze volgen.
+* Wanneer e-mailantwoord is geconfigureerd, kunnen leden inhoud effectief posten door eenvoudig te antwoorden op de ontvangen e-mail.
 
 ### Vereisten {#requirements}
 
@@ -49,15 +49,11 @@ Met de knop **Volgen** kunt u items opvolgen als activiteiten, abonnementen en/o
 
 Als er een methode van het volgende is geselecteerd, verandert de tekst van de knop in **Volgende**. Voor het gemak is het mogelijk om alle methoden uit `Unfollow All` te schakelen.
 
-De knop **Volgen** bevat alleen de `Email Subscriptions` optie wanneer een forum, QnA of blog is geconfigureerd om e-mailabonnementen in te schakelen. Deze knop verschijnt
+De knop **Volgen** bevat alleen de `Email Subscriptions` optie wanneer een forum, QnA of blog is geconfigureerd om e-mailabonnementen in te schakelen. Deze knop wordt weergegeven:
 
-* Op de belangrijkste eigenschappagina voor toegelaten forum, QnA, of blog
+* Op de hoofdpagina met functies voor het ingeschakelde forum, stuurt QnA of blog een e-mail voor alle activiteiten onder die functie.
 
-   * Hiermee wordt een e-mail verzonden voor alle activiteiten in het kader van die functie
-
-* Voor een specifiek bericht, zoals een forumonderwerp, een QnA-vraag of een blogartikel
-
-   * Wordt een e-mail verzonden wanneer er activiteit is voor dat specifieke item
+* Voor een specifiek bericht, zoals een forumonderwerp, een QnA-vraag of een blogartikel Er wordt een e-mail verzonden wanneer er activiteit is voor dat specifieke bericht.
 
 ## Reageren per e-mail {#reply-by-email}
 

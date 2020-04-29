@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: dc7a085e-d6de-4bc8-bd7e-6b43f8d172d2
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 89156f94f2d0494d44d4f0b99abfba4fafbc66d3
 
 ---
 
@@ -23,34 +23,40 @@ Een malplaatje van de douaneplaats kan voor elke taalexemplaar van een communaut
 
 Daartoe:
 
-* Een aangepaste sjabloon maken
-* Het standaardsjabloonpad van de site bedekken
-* De aangepaste sjabloon toevoegen aan het overlaypad
-* Specificeer het douanemalplaatje door een `page-template` bezit aan de `configuration` knoop toe te voegen
+* Een aangepaste sjabloon maken.
+* Bedek het standaardsjabloonpad van de site.
+* Voeg de aangepaste sjabloon toe aan het overlaypad.
+* Specificeer het douanemalplaatje door een `page-template` bezit aan de `configuration` knoop toe te voegen.
 
 **Standaardsjabloon**:
 
-/**libs**/social/console/components/hbs/sitepage/**sitepage**.hbs
+`/libs/social/console/components/hbs/sitepage/sitepage.hbs`
 
 **Aangepaste sjabloon in overlaypad**:
 
-/**apps**/social/console/components/hbs/sitepage/**&lt;*template-name*>**.hbs
+`/apps/social/console/components/hbs/sitepage/template-name.hbs`
 
-**Eigenschap**: page-template **Type**: String **Value**: &lt;*template-name*> (geen extensie)
+**Eigenschap**: page-template
+
+**Type**: String
+
+**Waarde**: `template-name` (geen extensie)
 
 **Configuratieknooppunt**:
 
-/content/&lt;*community site path*>/&lt;*lang*>/configuration
+`/content/community site path/lang/configuration`
 
-Bijvoorbeeld: /content/sites/engc/nl/configuration
+Bijvoorbeeld: `/content/sites/engage/en/configuration`
 
 >[!NOTE]
 >
 >Alle knooppunten in het bovenliggende pad hoeven alleen van het type te zijn `Folder`.
 
+
 >[!CAUTION]
 >
->Als het douanemalplaatje de naam *sitepage.hbs wordt gegeven,* dan zullen alle communautaire plaatsen worden aangepast.
+>Als het douanemalplaatje de naam *sitepage.hbs* wordt gegeven, dan zullen alle communautaire plaatsen worden aangepast.
+
 
 ### Voorbeeld van aangepaste sitesjabloon {#custom-site-template-example}
 
@@ -58,11 +64,11 @@ Een voorbeeld hiervan `vertical-sitepage.hbs` is een sitesjabloon dat leidt tot 
 
 [Bestand](assets/vertical-sitepage.hbs)ophalen De aangepaste sitesjabloon in de overlaymap plaatsen:
 
-/**apps**/social/console/components/hbs/sitepage/**vertical-sitepage**.hbs
+`/apps/social/console/components/hbs/sitepage/vertical-sitepage.hbs`
 
 Identificeer het douanemalplaatje door een `page-template` bezit aan de configuratieknoop toe te voegen:
 
-/content/sites/sample/nl/configuration
+`/content/sites/sample/en/configuration`
 
 ![chlimage_1-80](assets/chlimage_1-80.png)
 
@@ -78,26 +84,28 @@ Dit is beschikbaar bij de console [van de Plaatsen van](sites-console.md#exporti
 
 Merk op dat UGC en douanecode niet inbegrepen in het pakket van de communautaire plaats is.
 
-Om UGC uit te voeren, gebruik het Hulpmiddel [van de Migratie van de Gemeenschappen](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)AEM UGC, een open bronmigratiehulpmiddel beschikbaar op GitHub.
+Om UGC uit te voeren, gebruik het Hulpmiddel [van de Migratie van](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)AEM-Gemeenschappen UGC, een open bronmigratiehulpmiddel beschikbaar op GitHub.
 
 ## Een Community-site verwijderen {#deleting-a-community-site}
 
-Vanaf AEM Communities 6.3 Service Pack 1 wordt het pictogram Site verwijderen weergegeven wanneer u de muisaanwijzer boven de community plaatst via Communities > Sites console. Als u tijdens de ontwikkeling een gemeenschapssite wilt verwijderen en een nieuwe site wilt starten, kunt u deze functionaliteit gebruiken. Als u een gemeenschapssite verwijdert, worden de volgende aan die site gekoppelde items verwijderd:
+Vanaf AEM Communities 6.3 Service Pack 1 wordt het pictogram Site verwijderen weergegeven wanneer u de muisaanwijzer boven de community plaatst vanuit **[!UICONTROL Communities]** > **[!UICONTROL Sites]** Console. Als u tijdens de ontwikkeling een gemeenschapssite wilt verwijderen en een nieuwe site wilt starten, kunt u deze functionaliteit gebruiken. Als u een gemeenschapssite verwijdert, worden de volgende aan die site gekoppelde items verwijderd:
 
 * [UGC](#user-generated-content)
 * [Gebruikersgroepen](#community-user-groups)
-* [Activa](#enablement-assets)
+* [Assets](#enablement-assets)
 * [Databaserecords](#database-records)
 
 ### Unieke site-id van community {#community-unique-site-id}
 
-U kunt als volgt de unieke site-id identificeren die is gekoppeld aan de community-site met behulp van CRXDE:
+U kunt als volgt de unieke site-id identificeren die aan de gemeenschapssite is gekoppeld met behulp van CRXDE:
 
-* Ga naar de taalhoofdmap van de site, zoals `/content/sites/*<site name>*/en/rep:policy`
+* Navigeer naar de taalhoofdmap van de site, bijvoorbeeld `/content/sites/*<site name>*/en/rep:policy`.
 
-* Zoek het `allow<#>` knooppunt met een `rep:principalName` notatie in deze notatie `rep:principalName = *community-enable-nrh9h-members*`
+* Zoek het `allow<#>` knooppunt met een `rep:principalName` notatie in deze notatie `rep:principalName = *community-enable-nrh9h-members*`.
 
-* De site-id is de derde component van `rep:principalName`bijvoorbeeld: `rep:principalName = community-enable-nrh9h-members`
+* De site-id is de derde component van `rep:principalName`
+
+   Als `rep:principalName = community-enable-nrh9h-members`
 
    * **sitenaam** = *inschakelen*
    * **site-id** = *nrh9h*
@@ -113,7 +121,7 @@ Dit bevat servlet om al UGC van om het even welk SRP te schrappen.
 
 Alle UGC kan worden verwijderd of voor een specifieke site, bijvoorbeeld:
 
-* path=/content/usergenerated/asi/mongo/content/sites/engc
+* `path=/content/usergenerated/asi/mongo/content/sites/engage`
 
 Hiermee verwijdert u alleen door de gebruiker gegenereerde inhoud (ingevoerd bij publicatie) en geen geschreven inhoud (ingevoerd bij auteur). Dit heeft dus geen invloed op [schaduwknooppunten](srp.md#shadownodes) .
 
@@ -130,10 +138,10 @@ Bijvoorbeeld, `community-engage-x0e11-members`.
 
 Vanaf de hoofdconsole:
 
-* Elementen **[!UICONTROL selecteren]**
-* Modus **[!UICONTROL Selecteren]** openen
-* Map selecteren met de [unieke site-id](#community-unique-site-id)
-* Selecteer **[!UICONTROL Verwijderen]** (moet mogelijk **[!UICONTROL Meer selecteren...]**)
+* Selecteer **[!UICONTROL Elementen]**.
+* Ga **[!UICONTROL Uitgezochte]** wijze in.
+* Selecteer een map met de [unieke site-id](#community-unique-site-id).
+* Selecteer **[!UICONTROL Verwijderen]** (moet mogelijk **[!UICONTROL Meer selecteren...]**).
 
 ### Databasegegevens {#database-records}
 

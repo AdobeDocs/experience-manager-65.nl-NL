@@ -3,7 +3,7 @@ title: Vergelijk AEM Assets en AEM Media Library-aanbod
 description: Vergelijk AEM Assets en het aanbod van AEM Media Library en ken de verschillen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 476a8acbca2f498472225fe1df220f63eafe61e5
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -70,36 +70,35 @@ In dit geval is het niet verplicht AEM-elementen te kopen, zelfs niet het gebrui
 * Adobe Asset Link (verbinding maken met Creative Cloud voor ondernemingen)
 * AEM-bureaubladtoepassing
 * Profielen verwerken
-* Integratie van InDesign-servers
-* Middelensjablonen en kader voor catalogusproducenten
-* Aan Adobe Photoshop, Illustrator en InDesign gekoppelde middelen
+* InDesign Server-integratie
+* Middelensjablonen en raamwerk voor catalogusproducenten
+* Integratie van Adobe Photoshop, Adobe Illustrator en Adobe InDesign
 * Meertalig beheer van bedrijfsmiddelen
 * PIM-integratie
 * Rechtenbeheer
 * Camera RAW-ondersteuning
 * Beheer en configuratie van zoekfactoren
 * Vooraf gebouwde DAM-workflows (bijvoorbeeld foto&#39;s)
-* Rapportage en analyse van bedrijfsmiddelen: Asset Insights
-* 3D-beheer van bedrijfsmiddelen
+* Asset Reporting and analytics called Insights
+* 3D-middelenbeheer
 * Gekoppelde assets
 * Brand Portal
 * Zelfbedieningstoegang
 * Bladeren, zoeken en downloaden
-* Verzamelingen en het delen van mappen
-* Admin Tools
-* Slimme tags
+* Verzamelingen en mappen delen
+* Hulpprogramma&#39;s en interface voor beheerders
+* Slimme tags toepassen
 * Visueel zoeken
-* Interface voor middelenbeheer
 
 **Mediabibliotheek**
 
 * Eigenschappen van standaardmetagegevens
 * Tagbeheer
 * Versiebeheer
-* Statische uitvoeringen
-* Projecten, Taken, het Authoring van het werkschema
-* Activiteitenstroom (tijdlijn)
+* Statische vertoningen
+* Projecten, taken, workflowauthoring
+* Activiteitsstroom (tijdlijn)
 * Query Builder (API)
-* Integratie van marketingcloud
-* UI-aanpassing en -uitbreiding
-* Opmerkingen en annotatie
+* Integratie van Marketing Cloud
+* UI-aanpassing en -extensie
+* Opmerkingen en aantekening

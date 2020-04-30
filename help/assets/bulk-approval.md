@@ -3,7 +3,7 @@ title: Map-assets en verzamelingen controleren
 description: Stel revisieworkflows in voor elementen in een map of verzameling en deel deze met revisoren of creatieve partners om feedback te zoeken.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -103,8 +103,8 @@ Nadat de controleur de controle heeft voltooid (activa goedkeurt of verwerpt), o
 
    ![collection_reviewStatusCard, weergave](assets/collection_reviewstatuscardview.png)
 
-   *Afbeelding: Kaartweergave*
+   *Afbeelding: Kaartweergave.*
 
    ![collection_reviewstatus listview](assets/collection_reviewstatuslistview.png)
 
-   *Afbeelding: Lijstweergave*
+   *Afbeelding: Lijstweergave.*

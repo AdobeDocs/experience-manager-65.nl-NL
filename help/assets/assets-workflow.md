@@ -3,7 +3,7 @@ title: De activa van het proces om bedrijfsprocessen te verwezenlijken, controle
 description: Middelenverwerking voor het converteren van indelingen, het maken van uitvoeringen, het beheren van elementen, het valideren van elementen en het uitvoeren van workflows.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 82ed39dac05591b9bdc9fda101ed450c2096dc60
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -24,7 +24,7 @@ Zie **[!UICONTROL Opties > Workflow > Modellen]** in voor informatie over de ver
 
 ![Een deel van de standaardworkflow](assets/aem-default-workflows.png)
 
-*Afbeelding: Enkele standaardwerkschema beschikbaar in[!DNL Experience Manager]*
+*Afbeelding: Enkele standaardworkflows beschikbaar in[!DNL Experience Manager].*
 
 ## Workflows toepassen om elementen te verwerken {#applying-workflows-to-assets}
 

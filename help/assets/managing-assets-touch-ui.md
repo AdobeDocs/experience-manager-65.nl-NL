@@ -4,7 +4,7 @@ description: Leer de taken voor middelenbeheer, zoals het uploaden, downloaden, 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: fd5fcb7eacd3727fa62f8de10685d089ceab54ba
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -375,13 +375,13 @@ Voer de volgende stappen uit om een voorvertoning van een element weer te geven 
 
    ![Tijdkiezer op de datum of gebruik de toetsenbordtoetsen in het veld Op tijd om datum en tijd voor activering van het element toe te voegen](assets/schedule-activation.png)
 
-   *Afbeelding: Elementactivering plannen*
+   *Afbeelding: Elementactivering plannen.*
 
 1. Als u het element na een bepaalde duur wilt deactiveren, kiest u de datum/tijd van deactivering in de datumkiezer naast het veld **[!UICONTROL Uit-tijd]** . De deactiveringsdatum moet later zijn dan de activeringsdatum voor een element. Na de [!UICONTROL Off Time]zijn een middel en zijn vertoningen niet beschikbaar of via de Webinterface van Middelen of door HTTP API.
 
    ![Datum en tijd kiezen of toetsenbordtoetsen in het veld Uit-tijd gebruiken om datum en tijd toe te voegen voor het deactiveren van elementen](assets/schedule-deactivation.png)
 
-   *Afbeelding: Element deactiveren*
+   *Afbeelding: Plan de deactivering van elementen.*
 
 1. Selecteer een of meer tags in het veld **[!UICONTROL Codes]** . Als u een aangepaste tag wilt toevoegen, typt u de naam van de tag in het vak en drukt u op Enter. De nieuwe tag wordt opgeslagen in AEM. YouTube vereist labels om te publiceren. Bekijk [publicatievideo&#39;s op YouTube](video.md#publishing-videos-to-youtube).
 
@@ -718,7 +718,7 @@ In de tijdlijn kunt u verschillende gebeurtenissen voor een geselecteerd item we
 
 ![Tijdlijnitems voor een element sorteren](assets/sort_timeline.gif)
 
-*Afbeelding: Tijdlijnitems voor een element sorteren*
+*Afbeelding: Sorteer de tijdlijnitems voor een element.*
 
 >[!NOTE]
 >

@@ -1,24 +1,24 @@
 ---
-title: Elementen bulksgewijs migreren naar Adobe Experience Manager
-description: Beschrijft hoe te om activa in AEM te brengen, meta-gegevens toe te passen, vertoningen te produceren, en hen te activeren om instanties te publiceren.
+title: Migreer middelen bulksgewijs naar [!DNL Adobe Experience Manager Assets].
+description: Beschrijft hoe u elementen kunt overbrengen naar [!DNL Adobe Experience Manager], metagegevens kunt toepassen, uitvoeringen kunt genereren en deze kunt activeren om instanties te publiceren.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
 
 # Hoe te om activa in bulk te migreren {#assets-migration-guide}
 
-Bij het migreren van elementen naar AEM moet u rekening houden met verschillende stappen. Het uitpakken van elementen en metagegevens uit hun huidige huis valt buiten het bereik van dit document, omdat dit document sterk verschilt tussen implementaties. In dit document wordt echter beschreven hoe u deze elementen in AEM kunt plaatsen, de metagegevens ervan kunt toepassen, uitvoeringen kunt genereren en hoe u ze kunt activeren om instanties te publiceren.
+Bij het migreren van elementen naar [!DNL Adobe Experience Manager]zijn er verschillende stappen die u moet overwegen. Het uitpakken van elementen en metagegevens uit hun huidige huis valt buiten het bereik van dit document, omdat dit document sterk verschilt tussen implementaties. In dit document wordt echter beschreven hoe u deze elementen in kunt brengen, de metagegevens ervan kunt toepassen, uitvoeringen kunt genereren en kunt u ze activeren om instanties te publiceren. [!DNL Experience Manager]
 
 ## Vereisten {#prerequisites}
 
-Voordat u daadwerkelijk een van de stappen in deze methodologie uitvoert, moet u de leidraad in tips voor het afstemmen van de prestaties van [middelen bekijken en implementeren](performance-tuning-guidelines.md). Veel van de stappen, zoals het vormen van maximum gezamenlijke banen, verbeteren zeer de stabiliteit en de prestaties van de server onder lading. Andere stappen, zoals het vormen van een Opslag van de Gegevens van het Dossier, zijn veel moeilijker uit te voeren nadat het systeem met activa is geladen.
+Voordat u daadwerkelijk een van de stappen in deze methodologie uitvoert, moet u de leidraad in tips voor het afstemmen van [middelenprestaties bekijken en implementeren](performance-tuning-guidelines.md). Veel van de stappen, zoals het vormen van maximum gezamenlijke banen, verbeteren zeer de stabiliteit en de prestaties van de server onder lading. Andere stappen, zoals het vormen van een Opslag van de Gegevens van het Dossier, zijn veel moeilijker uit te voeren nadat het systeem met activa is geladen.
 
 >[!NOTE]
 >
->De volgende gereedschappen voor middelenmigratie maken geen deel uit van AEM en worden niet ondersteund door Adobe:
+>De volgende gereedschappen voor middelenmigratie maken geen deel uit van [!DNL Experience Manager] en worden niet ondersteund door Adobe:
 >
 >* ACS AEM Tools Tag Maker
 >* CSV Asset Importer ACS AEM Tools
@@ -29,9 +29,9 @@ Voordat u daadwerkelijk een van de stappen in deze methodologie uitvoert, moet u
 >
 Deze software is opensource en valt onder de [Apache v2-licentie](https://adobe-consulting-services.github.io/pages/license.html). Om een vraag te stellen of een probleem te melden gaat u naar de respectieve [GitHub-problemen voor ACS AEM-tools](https://github.com/Adobe-Consulting-Services/acs-aem-commons/issues) en [ACS AEM Commons](https://github.com/Adobe-Consulting-Services/acs-aem-tools/issues).
 
-## Migreren naar AEM {#migrating-to-aem}
+## Migreren naar [!DNL Experience Manager]{#migrating-to-aem}
 
-Het migreren van activa aan AEM vereist verscheidene stappen en zou als gefaseerd proces moeten worden beschouwd. De fasen van de migratie zijn als volgt:
+Het migreren van activa aan [!DNL Experience Manager] vereist verscheidene stappen en zou als gefaseerd proces moeten worden beschouwd. De fasen van de migratie zijn als volgt:
 
 1. Workflows uitschakelen.
 1. Labels laden.
@@ -48,7 +48,7 @@ Voordat u de migratie start, moet u de draagraketten voor de workflow [!UICONTRO
 
 ### Labels laden {#loading-tags}
 
-Mogelijk hebt u al een tagtaxonomie die u op uw afbeeldingen toepast. Hoewel hulpmiddelen zoals CSV Asset Importer en de steun van de Manager van de Ervaring voor meta-gegevensprofielen het proces kunnen automatiseren om markeringen op activa toe te passen, moeten de markeringen in het systeem worden geladen. De eigenschap van de Maker [van de Markering van de Tags van](https://adobe-consulting-services.github.io/acs-aem-tools/features/tag-maker/index.html) ACS AEM Tools laat u markeringen bevolken door een spreadsheet van Microsoft Excel te gebruiken die in het systeem wordt geladen.
+Mogelijk hebt u al een tagtaxonomie die u op uw afbeeldingen toepast. Hoewel gereedschappen als CSV Asset Importer en [!DNL Experience Manager] ondersteuning voor metagegevensprofielen het toepassen van tags op elementen kunnen automatiseren, moeten de tags in het systeem worden geladen. De eigenschap van de Maker [van de Markering van de Tags van](https://adobe-consulting-services.github.io/acs-aem-tools/features/tag-maker/index.html) ACS AEM Tools laat u markeringen bevolken door een spreadsheet van Microsoft Excel te gebruiken die in het systeem wordt geladen.
 
 ### Middelen opnemen {#ingesting-assets}
 
@@ -58,7 +58,7 @@ Er zijn twee manieren om de elementen in het systeem te laden: een op push-gebas
 
 #### Verzenden via HTTP {#pushing-through-http}
 
-Het team van de Diensten van Adobe Beheerde gebruikt een hulpmiddel genoemd Glutton om gegevens in klantenmilieu&#39;s te laden. Glutton is een kleine Java-toepassing die alle elementen van de ene map in een andere map op een AEM-instantie laadt. In plaats van Glutton kunt u ook hulpprogramma&#39;s zoals Perl-scripts gebruiken om de elementen in de opslagplaats te posten.
+Het team van de Diensten van Adobe Beheerde gebruikt een hulpmiddel genoemd Glutton om gegevens in klantenmilieu&#39;s te laden. Glutton is een kleine Java-toepassing die alle elementen van de ene map in een andere map op een [!DNL Experience Manager] instantie laadt. In plaats van Glutton kunt u ook hulpprogramma&#39;s zoals Perl-scripts gebruiken om de elementen in de opslagplaats te posten.
 
 Er zijn twee grote nadelen aan het gebruiken van de benadering van het doorduwen van https:
 
@@ -75,12 +75,12 @@ Aangezien elementen niet via een netwerk hoeven te worden verzonden, verbeteren 
 
 ### Procesuitvoeringen {#processing-renditions}
 
-Nadat u de elementen in het systeem hebt geladen, moet u ze verwerken via de workflow [!UICONTROL DAM-element] bijwerken om metagegevens te extraheren en uitvoeringen te genereren. Voordat u deze stap uitvoert, moet u de workflow [!UICONTROL DAM Update Asset] dupliceren en aanpassen aan uw wensen. De uit-van-de-doos werkschema bevat vele stappen die niet noodzakelijk voor u, zoals de generatie van Scene7 PTIFF of de serverintegratie InDesign kunnen zijn.
+Nadat u de elementen in het systeem hebt geladen, moet u ze verwerken via de workflow [!UICONTROL DAM-element] bijwerken om metagegevens te extraheren en uitvoeringen te genereren. Voordat u deze stap uitvoert, moet u de workflow [!UICONTROL DAM Update Asset] dupliceren en aanpassen aan uw wensen. Het uit-van-de-doos werkschema bevat vele stappen die niet noodzakelijk voor u, zoals de generatie van Scene7 PTIFF of [!DNL InDesign Server] integratie kunnen zijn.
 
 Nadat u de werkstroom volgens uw behoeften hebt gevormd, hebt u twee opties om het uit te voeren:
 
 1. De eenvoudigste aanpak is [ACS Commons Bulk Workflow Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/bulk-workflow-manager.html). Met dit gereedschap kunt u een query uitvoeren en de resultaten van de query verwerken via een workflow. Er zijn ook opties voor het instellen van batchgrootten.
-1. U kunt [ACS Commons Fast Action Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) gebruiken in overleg met [Synthetische workflows](https://adobe-consulting-services.github.io/acs-aem-commons/features/synthetic-workflow.html). Hoewel deze benadering veel uitvoeriger is, kunt u de overhead van de AEM-workflowengine verwijderen en tegelijkertijd het gebruik van serverresources optimaliseren. Bovendien verhoogt de Fast Action Manager de prestaties nog meer door serverresources dynamisch te controleren en het plaatsen van de lading op het systeem te vertragen. U vindt voorbeeldscripts op de ACS Commons-functiepagina.
+1. U kunt [ACS Commons Fast Action Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) gebruiken in overleg met [Synthetische workflows](https://adobe-consulting-services.github.io/acs-aem-commons/features/synthetic-workflow.html). While this approach is much more involved, it lets you remove the overhead of the [!DNL Experience Manager] workflow engine while optimizing the use of server resources. Bovendien verhoogt de Fast Action Manager de prestaties nog meer door serverresources dynamisch te controleren en het plaatsen van de lading op het systeem te vertragen. U vindt voorbeeldscripts op de ACS Commons-functiepagina.
 
 ### Elementen activeren {#activating-assets}
 
@@ -88,7 +88,7 @@ Voor plaatsingen die een publicatielaag hebben, moet u de activa uit activeren a
 
 Om dit probleem te verhelpen, kunt u de [Snelle Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) van de Actie gebruiken om middelenreplicatie te beheren. Dit werkt zonder de het Verschuiven rijen te gebruiken, verminderend overheadkosten, terwijl het vertragen van de werkbelasting om de server te verhinderen worden overbelast. Een voorbeeld om FAM te gebruiken om replicatie te beheren wordt getoond op de de documentatiepagina van de eigenschap.
 
-Andere opties om assets naar de publicatiefarm te sturen, omvatten het gebruik van [vlt-rcp](https://jackrabbit.apache.org/filevault/rcp.html) of [oak-run](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run), die als hulpprogramma&#39;s als onderdeel van Jackrabbit worden verstrekt. Een andere optie is om een open-sourced hulpprogramma voor uw AEM-infrastructuur te gebruiken met de naam [Grabbit](https://github.com/TWCable/grabbit), die beweert snellere prestaties dan vlt te hebben.
+Andere opties om assets naar de publicatiefarm te sturen, omvatten het gebruik van [vlt-rcp](https://jackrabbit.apache.org/filevault/rcp.html) of [oak-run](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run), die als hulpprogramma&#39;s als onderdeel van Jackrabbit worden verstrekt. Another option is to use an open-sourced tool for your [!DNL Experience Manager] infrastructure called [Grabbit](https://github.com/TWCable/grabbit), which claims to have faster performance than vlt.
 
 Voor elk van deze benaderingen is het voorbehoud dat de elementen op de auteurinstantie niet aantonen dat ze zijn geactiveerd. Als u de markering van deze elementen met de juiste activeringsstatus wilt afhandelen, moet u ook een script uitvoeren om de elementen te markeren als geactiveerd.
 
@@ -112,22 +112,22 @@ Nadat de elementen zijn geactiveerd, kunt u de publicatieinstantie klonen om zov
 
 Nadat de migratie is voltooid, moeten de draagraketten voor de [!UICONTROL DAM Update Asset] -workflows opnieuw worden ingeschakeld ter ondersteuning van het genereren van vertoningen en het ophalen van metagegevens voor doorlopend dagelijks systeemgebruik.
 
-## Migreren naar AEM-implementaties {#migrating-between-aem-instances}
+## Migreren naar meerdere [!DNL Experience Manager] implementaties {#migrating-between-aem-instances}
 
-Hoewel het bijna niet zo gebruikelijk is, moet u soms grote hoeveelheden gegevens van één instantie AEM aan een andere migreren; Wanneer u bijvoorbeeld een AEM-upgrade uitvoert, upgrade dan uw hardware of migreer u naar een nieuw datacenter, bijvoorbeeld met een AMS-migratie.
+Hoewel het bijna niet zo gebruikelijk is, moet u soms grote hoeveelheden gegevens van één [!DNL Experience Manager] instantie aan een andere migreren; wanneer u bijvoorbeeld een [!DNL Experience Manager] upgrade uitvoert, uw hardware upgradet of naar een nieuw datacenter migreert, zoals met een AMS-migratie.
 
-In dit geval worden uw elementen al gevuld met metagegevens en worden er al uitvoeringen gegenereerd. U kunt zich eenvoudig concentreren op het verplaatsen van elementen van de ene naar de andere instantie. Wanneer het migreren tussen instanties AEM, voert u de volgende stappen uit:
+In dit geval worden uw elementen al gevuld met metagegevens en worden er al uitvoeringen gegenereerd. U kunt zich eenvoudig concentreren op het verplaatsen van elementen van de ene naar de andere instantie. Tijdens het migreren tussen [!DNL Experience Manager] instanties voert u de volgende stappen uit:
 
 1. Workflows uitschakelen: Omdat u uitvoeringen samen met onze elementen migreert, wilt u de werkstroomstarters voor de workflow [!UICONTROL DAM Update Asset] uitschakelen.
 
-1. Labels migreren: Omdat u al tags hebt geladen in de AEM-broninstantie, kunt u deze maken in een inhoudspakket en het pakket installeren op de doelinstantie.
+1. Labels migreren: Omdat de tags al in de [!DNL Experience Manager] broninstantie zijn geladen, kunt u ze in een inhoudspakket samenstellen en het pakket op de doelinstantie installeren.
 
-1. Elementen migreren: Er zijn twee gereedschappen die u kunt adviseren om elementen van de ene naar de andere AEM-instantie te verplaatsen:
+1. Elementen migreren: Er zijn twee gereedschappen die u kunt adviseren om elementen van de ene [!DNL Experience Manager] instantie naar de andere te verplaatsen:
 
    * **Met Vault Remote Copy** of vlt rcp kunt u vlt in een netwerk gebruiken. U kunt een bron- en doelmap opgeven en met vlt alle gegevens in de opslagplaats van de ene instantie downloaden en in de andere instantie laden. Vlt rcp is te vinden op [https://jackrabbit.apache.org/filevault/rcp.html](https://jackrabbit.apache.org/filevault/rcp.html)
-   * **Grabbit** is een opensource-hulpprogramma voor inhoudssynchronisatie dat door Time Warner Cable voor hun AEM-implementatie is ontwikkeld. Omdat het ononderbroken gegevensstromen, in vergelijking met vlt rcp gebruikt, heeft het een lagere latentie en beweert een snelheidsverbetering van twee tot tien keer sneller dan vlt rcp. Grabbit ondersteunt ook alleen synchronisatie van delta-inhoud, waardoor wijzigingen kunnen worden gesynchroniseerd nadat een initiële migratievoldoende is voltooid.
+   * **Grabbit** is een opensource-hulpprogramma voor inhoudssynchronisatie dat door Time Warner Cable voor hun [!DNL Experience Manager] implementatie is ontwikkeld. Omdat het ononderbroken gegevensstromen, in vergelijking met vlt rcp gebruikt, heeft het een lagere latentie en beweert een snelheidsverbetering van twee tot tien keer sneller dan vlt rcp. Grabbit ondersteunt ook alleen synchronisatie van delta-inhoud, waardoor wijzigingen kunnen worden gesynchroniseerd nadat een initiële migratievoldoende is voltooid.
 
-1. Elementen activeren: Volg de instructies voor het [activeren van elementen](#activating-assets) die zijn gedocumenteerd voor de eerste migratie naar AEM.
+1. Elementen activeren: Volg de instructies voor het [activeren van elementen](#activating-assets) die zijn gedocumenteerd voor de eerste migratie naar [!DNL Experience Manager].
 
 1. Kloonpublicatie: Net als bij een nieuwe migratie is het efficiënter om één publicatieexemplaar te laden en te klonen dan de inhoud op beide knooppunten te activeren. Zie Publiceren [klonen.](#cloning-publish)
 

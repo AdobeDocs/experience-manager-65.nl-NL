@@ -1,8 +1,8 @@
 ---
 title: Gebruikers en gebruikersgroepen beheren
 seo-title: Gebruikers en gebruikersgroepen beheren
-description: Gebruikers van AEM-gemeenschappen kunnen zichzelf registreren en hun profielen bewerken
-seo-description: Gebruikers van AEM-gemeenschappen kunnen zichzelf registreren en hun profielen bewerken
+description: Gebruikers van AEM-gemeenschappen kunnen zich zelf registreren en hun profielen bewerken
+seo-description: Gebruikers van AEM-gemeenschappen kunnen zich zelf registreren en hun profielen bewerken
 uuid: aeba424e-ea7e-4da5-b94f-ea8af4caa7d2
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,23 +10,26 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 774c2553-b629-456b-afa7-5713490f4a0a
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 2422ed41b18bc558f0cfc9e80f7eb6f4923aa07c
 
 ---
 
 
-# Gebruikers en gebruikersgroepen beheren {#managing-users-and-user-groups}
+# Managing Users and User Groups {#managing-users-and-user-groups}
 
 ## Overzicht {#overview}
 
-In AEM-gemeenschappen kunnen gebruikers zichzelf in de publicatieomgeving registreren en hun profielen bewerken. Op basis van de juiste machtigingen kunnen zij ook
+In AEM-gemeenschappen kunnen gebruikers zichzelf in de publicatieomgeving registreren en hun profielen bewerken. Op basis van de juiste machtigingen kunnen zij ook:
 
-* Subgemeenschappen maken op de site van de community (zie [groepen](creating-groups.md)van gemeenschappen)
+* Subgemeenschappen maken op de site van de community (zie [groepen](creating-groups.md)van gemeenschappen).
+
 * [Door de gebruiker gegenereerde inhoud (UGC) is matig](moderation.md) .
-* Zijn [enablement middel](resources.md) contacten
-* Wees [geprivilegieerd](#privileged-members-group) bij het maken van berichten voor blogs, kalenders, QnA en forums
 
-Gebruikers die in de publicatieomgeving zijn geregistreerd, worden doorgaans leden van de *community (leden)* genoemd om ze te onderscheiden van *users *in de auteursomgeving.
+* Ben [enablement middelcontacten](resources.md) .
+
+* U kunt [](#privileged-members-group) vermeldingen maken voor blogs, kalenders, QnA en forums.
+
+Gebruikers die in de publicatieomgeving zijn geregistreerd, worden doorgaans leden van de *community (leden)* genoemd om ze te onderscheiden van *gebruikers* in de auteursomgeving.
 
 De toestemmingen worden verleend door leden aan één van de [lid (gebruiker) groepen](#publish-group-roles) toe te wijzen dynamisch gecreeerd wanneer de communautaire plaats wordt [gecreeerd](sites-console.md) of [gewijzigd](sites-console.md#modifying-site-properties) van het auteursmilieu. Wanneer het werken van het auteursmilieu, zijn de leden zichtbaar van het publicatiemilieu door de [tunneldienst](#tunnel-service).
 
@@ -34,7 +37,7 @@ Door ontwerp, leden en lidgroepen die in het publicatiemilieu worden gecreeerd z
 
 Wanneer gebruikers op auteur en leden die publiceren uit dezelfde lijst met gebruikers komen, zoals die vanuit dezelfde LDAP-directory zijn gesynchroniseerd, worden ze niet beschouwd als dezelfde gebruiker met dezelfde machtigingen en groepslidmaatschap in zowel de auteur- als de publicatieomgeving. De rol(en) van leden en gebruikers moet(en) afzonderlijk worden vastgesteld bij publicatie en auteur, al naargelang het geval.
 
-Voor een [publicatielandbouwbedrijf](topologies.md), moeten de registratie en de wijzigingen die op één publicatiegeval worden aangebracht met andere publicatieinstanties worden gesynchroniseerd om hen toegang tot de zelfde gebruikersgegevens te hebben. [Zie ](sync.md)Gebruikerssynchronisatie[, die een sectie bevat waarin wordt beschreven ](sync.md#what-happens-when)wat er gebeurt als... .
+Voor een [publicatielandbouwbedrijf](topologies.md), moeten de registratie en de wijzigingen die op één publicatiegeval worden aangebracht met andere publicatieinstanties worden gesynchroniseerd om hen toegang tot de zelfde gebruikersgegevens te hebben. Zie [Gebruikerssynchronisatie](sync.md), die een sectie bevat waarin wordt beschreven [wat er gebeurt als...](sync.md#what-happens-when).
 
 ### Bijdragelimieten {#contribution-limits}
 
@@ -60,7 +63,7 @@ Wanneer het gebruiken van het auteursmilieu om plaatsen [te](sites-console.md)cr
 
 De tunneldienst verleent deze toegang gebruikend de replicatieagent op auteur.
 
-* Voor details, zie [configuratieinstructies](deploy-communities.md#tunnel-service-on-author) op de plaatsingspagina
+* Voor details, zie [configuratieinstructies](deploy-communities.md#tunnel-service-on-author) op de plaatsingspagina.
 
 De leden van de [Gemeenschappen en de Groepen consoles](members.md) zijn uitsluitend voor het beheren van gebruikers (leden) en gebruikersgroepen (lidgroepen) die slechts in het publicatiemilieu worden geregistreerd.
 
@@ -91,7 +94,7 @@ Volg de [beveiligingscontrolelijst](../../help/sites-administering/security-chec
 
 ### Lid worden {#becoming-a-member}
 
-Afhankelijk van de [instellingen](sites-console.md#user-management) van de communitysite kan een bezoeker van de site in de publicatieomgeving lid worden van de gemeenschap
+Afhankelijk van de [instellingen](sites-console.md#user-management) van de site kan een bezoeker van de site in de publicatieomgeving lid worden van de gemeenschap:
 
 * Wanneer de site van de community privé is (gesloten):
    * Op uitnodiging
@@ -104,6 +107,7 @@ Afhankelijk van de [instellingen](sites-console.md#user-management) van de commu
 >[!NOTE]
 >
 >Als een bezoeker van een site zich registreert als lid van één open communitysite, worden deze automatisch lid van andere open communitysites in dezelfde publicatieomgeving.
+
 
 ### Groeprollen publiceren {#publish-group-roles}
 
@@ -134,16 +138,17 @@ Nadat een bevoorrechte ledengroep wordt gecreeerd, en met de toegelaten [](sync.
 
 De communautaire functies die de specificatie van een of meer bevoorrechte ledengroepen mogelijk maken, zijn:
 
-* [Blogfunctie](functions.md#blog-function) - het maken van nieuwe artikelen beperken
-* [Kalenderfunctie](functions.md#calendar-function) - het maken van nieuwe gebeurtenissen beperken
-* [De functie](functions.md#forum-function) van het forum - om het creëren van nieuwe onderwerpen te beperken
-* [QnA functie](functions.md#qna-function) - het creëren van nieuwe vragen beperken
+* [Blogfunctie](functions.md#blog-function) - Het maken van nieuwe artikelen beperken.
+* [Kalenderfunctie](functions.md#calendar-function) - Het maken van nieuwe gebeurtenissen beperken.
+* [Functie](functions.md#forum-function) van het forum - om het creëren van nieuwe onderwerpen te beperken.
+* [QnA functie](functions.md#qna-function) - Het creëren van nieuwe vragen beperken.
 
 Wanneer een communautaire functie niet wordt beveiligd (geen bevoorrechte toegewezen lidgroep), dan kunnen alle leden van de communautaire plaats eigenschapinhoud (artikelen, gebeurtenissen, onderwerpen, vragen) tot stand brengen.
 
 >[!NOTE]
 >
 >Als u een gebruiker toevoegt aan een geprivilegieerde ledengroep voor een communitysite, worden er alleen privileges toegekend aan gebruikers die ook lid zijn van dezelfde communitysite.
+
 
 ## Communautaire leden creëren {#creating-community-members}
 
@@ -201,25 +206,26 @@ Om een gebruiker te creëren die de rol van kan worden toegewezen, gebruik de kl
 Op een instantie van de auteur:
 
 1. Aangemeld met beheerdersrechten, surf naar de klassieke UI-beveiligingsconsole.
-Bijvoorbeeld: [http://localhost:4502/useradmin](http://localhost:4502/useradmin)
+
+   Bijvoorbeeld: [http://localhost:4502/useradmin](http://localhost:4502/useradmin)
 
 2. Selecteer in het menu Bewerken de optie **[!UICONTROL Gebruiker]** maken.
 3. Vul het `Create User` dialoogvenster in.
-   * Pad moet `/home/users/community`
-4. Selecteer **[!UICONTROL Maken]**
+   * Pad moet `/home/users/community`zijn.
+4. Selecteer **[!UICONTROL Maken]**.
 
-![chlimage_1-130](assets/chlimage_1-130.png)
+   ![chlimage_1-130](assets/chlimage_1-130.png)
 
 * Zoek in het linkerdeelvenster naar de nieuwe gebruiker en selecteer deze in het rechterdeelvenster.
 
-![chlimage_1-135](assets/chlimage_1-131.png)
+   ![chlimage_1-131](assets/chlimage_1-131.png)
 
 In het linkervenster:
 
-1. Het zoekvak wissen en Gebruikers **[!UICONTROL verbergen selecteren]**
-2. Zoek en sleep `community-enablementmanagers` naar het tabblad **[!UICONTROL Groepen]** van de nieuwe gebruiker die in het rechterdeelvenster wordt weergegeven
+1. Wis het zoekvak en selecteer Gebruikers **** verbergen.
+2. Zoek en sleep `community-enablementmanagers` naar het tabblad **[!UICONTROL Groepen]** van de nieuwe gebruiker in het rechterdeelvenster.
 
-![chlimage_1-132](assets/chlimage_1-132.png)
+   ![chlimage_1-132](assets/chlimage_1-132.png)
 
 ### Rol van communautaire administrateurs {#community-administrators-role}
 
@@ -233,7 +239,7 @@ AEM ondersteunt het gebruik van LDAP voor verificatie van gebruikers en het make
 
 Hier volgt een aantal configuratiedetails die specifiek zijn voor leden van de gemeenschap en lidgroepen.
 
-1. LDAP configureren voor elke publicatie-instantie van AEM
+1. Configureer LDAP voor elke publicatie-instantie van AEM.
 2. [De LDAP-identiteitsprovider](../../help/sites-administering/ldap-config.md#configuring-the-ldap-identity-provider)
 
    * Geen speciale instructies
@@ -260,12 +266,16 @@ Wanneer het gebruiken van [publiceer landbouwbedrijf](topologies.md), zorg ervoo
 
 Als u gebruikersgroepen importeert, om ervoor te zorgen dat de gebruikersgroepen op elke publicatie-instantie hetzelfde pad hebben, importeert u naar één instantie en [maakt u vervolgens een pakket](../../help/sites-administering/package-manager.md#creating-a-new-package) voor export en installeert u dat pakket op alle andere publicatie-instanties.
 
-Hoewel het synchroniseren van gebruikersgroepen via gebruikerssynchronisatie in een toekomstige release wordt opgenomen, wordt momenteel alleen het *lidmaatschap *van een gebruikersgroep gesynchroniseerd wanneer gebruikerssynchronisatie wordt uitgevoerd.
+Hoewel het synchroniseren van gebruikersgroepen via gebruikerssynchronisatie in een toekomstige release wordt opgenomen, wordt momenteel alleen het *lidmaatschap* van een gebruikersgroep gesynchroniseerd wanneer gebruikerssynchronisatie wordt uitgevoerd.
 
 ## Informatie over communautaire groepen {#about-community-groups}
 
 Wanneer het bespreken van groepen, zijn er twee verschillende onderwerpen:
 
-* **[Communautaire groepen](overview.md#communitygroups)**Communautaire groepen zijn de subgemeenschappen die kunnen worden gecreëerd in de publicatieomgeving voor een communautaire site die de oprichting van communautaire groepen ondersteunt. Als u een community maakt, worden er meer pagina&#39;s toegevoegd aan de website en worden deze beheerd op een manier die vergelijkbaar is met de bovenliggende community-site. Ga voor meer informatie naar[Community Group Essentials](essentials-groups.md)for developers en[Community Group](creating-groups.md)for authors.
+* **[Communautaire groepen](overview.md#communitygroups)**
 
-* **[De groepen](../../help/sites-administering/security.md)**van de lidstaten zijn de groepen waaraan de leden kunnen behoren en door de console van Groepen worden geleid. Een groot deel van de discussie over deze pagina is gewijd aan de leden van de fracties. De automatisch voor een communautaire site opgerichte ledengroepen, die vooraf zijn vastgesteld,*`Community`*kunnen als een communautaire groep worden aangeduid; daarom moet de context van de discussie in overweging worden genomen.
+   Communautaire groepen zijn de subgemeenschappen die kunnen worden gecreëerd in de publicatieomgeving voor een communautaire site die de oprichting van groepen van gemeenschappen ondersteunt. Als u een community maakt, worden er meer pagina&#39;s toegevoegd aan de website en worden deze beheerd op een manier die vergelijkbaar is met de bovenliggende community-site. Ga voor meer informatie naar [Community Group Essentials](essentials-groups.md) for developers en [Community Group](creating-groups.md) for authors.
+
+* **[Leden](../../help/sites-administering/security.md)**
+
+   De groepen van de leden zijn de groepen waartot de leden kunnen behoren en door de console van Groepen worden geleid. Een groot deel van de discussie over deze pagina is gewijd aan de leden van de fracties. De automatisch voor een communautaire site opgerichte ledengroepen, die vooraf zijn vastgesteld, *`Community`* kunnen als een communautaire groep worden aangeduid; daarom moet de context van de discussie in overweging worden genomen.

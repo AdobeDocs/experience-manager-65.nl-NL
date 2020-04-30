@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 071cac6d-05c5-47ab-85bc-ead6693ca1f4
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 2bcd098ae901070d5e50cd89d06c854884b4e461
 
 ---
 
@@ -39,11 +39,17 @@ Geef op het tabblad **[!UICONTROL Teksten en labels]** de eigenschappen op die w
 
 ![chlimage_1-309](assets/chlimage_1-309.png)
 
-* **[!UICONTROL Positief antwoordlabel]**(*vereist*) De naam van de interne eigenschap voor een positieve reactie.
+* **[!UICONTROL Label voor positieve respons]**
 
-* **[!UICONTROL Negatief antwoordlabel]**(*vereist*) De interne eigenschapnaam voor een negatieve reactie.
+   (*Vereist*) De interne eigenschapnaam voor een positieve reactie.
 
-* **[!UICONTROL Tally Name]**(*Required*) De interne, identificeerbare bezitsnaam voor deze instantie van een stemcomponent.
+* **[!UICONTROL Negatief antwoordlabel]**
+
+   (*Vereist*) De interne eigenschapnaam voor een negatieve reactie.
+
+* **[!UICONTROL Tallnaam]**
+
+   (*Vereist*) De interne, identificeerbare eigenschapsnaam voor dit geval van een stemcomponent.
 
 ## Ervaring met sitebezoekers {#site-visitor-experience}
 

@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 4a0debdd-acb9-4646-80bb-fec66fae4088
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
 
 ---
 
 
-# Activiteitendensen{#activity-trends}
+# Activiteitendensen {#activity-trends}
 
 ## Inleiding {#introduction}
 
@@ -24,9 +24,9 @@ De `Community Activity List` component biedt de mogelijkheid om trending informa
 
 In het document wordt beschreven:
 
-* toevoegen van de `Community Activity List` component aan een [gemeenschapsplaats](/help/communities/overview.md#community-sites)
+* De `Community Activity List` component toevoegen aan een [communitysite](/help/communities/overview.md#community-sites).
 
-* configuratie-instellingen voor de `Community Activity List` component
+* De montages van de configuratie voor de `Community Activity List` component.
 
 ### Vereiste {#requirement}
 
@@ -44,7 +44,7 @@ en sleep het naar de juiste plaats op een pagina.
 
 Ga voor de benodigde informatie naar [Community Components Basics](/help/communities/basics.md).
 
-Wanneer de component voor het eerst op een pagina van een communitysite wordt geplaatst, ziet deze er als volgt uit:
+Wanneer de component voor het eerst op een pagina van een communitysite wordt geplaatst, ziet deze er zo uit:
 
 ![chlimage_1-54](assets/chlimage_1-54.png)
 
@@ -54,7 +54,7 @@ Selecteer de geplaatste `Community Activity List` component die u wilt openen en
 
 ![chlimage_1-55](assets/chlimage_1-55.png)
 
-Geef onder het tabblad **Opmerkingen **op of en hoe opmerkingen voor geüploade bestanden worden weergegeven:
+Geef op het tabblad **Opmerkingen** op of en hoe opmerkingen voor geüploade bestanden worden weergegeven:
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
@@ -62,7 +62,7 @@ Geef onder het tabblad **Opmerkingen **op of en hoe opmerkingen voor geüploade 
 
    Geef op of gegevens met betrekking tot leden van de gebruikersgemeenschap of door de gebruiker gegenereerde inhoud (UGC) moeten worden weergegeven.
 
-   Selecteren uit
+   Selecteer  vanuit:
 
    * `Members`
    * `Content`
@@ -80,7 +80,7 @@ De standaardwaarde is 10.
 
 * **Type activiteit**
 
-   Selecteer een van de volgende opties
+   Selecteer een van de volgende opties:
 
    * `Views`(paginabezoeken)
    * `Posts`(maken van UGC)
@@ -90,7 +90,7 @@ De standaardwaarde is 10.
 
 * **Tijdsperiode**
 
-   Selecteer een van de volgende opties
+   Selecteer een van de volgende opties:
 
    * `Last 24 hours`
    * `Last 7 days`
@@ -107,7 +107,7 @@ Standaard is dit de hele community-site.
 
 * **Samenvoeging aantal leden**
 
-   Wanneer deze optie is uitgeschakeld, worden alleen de bovenste posts geteld. Als de context bijvoorbeeld de hoofdpagina is (de standaardinstelling), `Activity Type`wordt bij een `Posts`van deze pagina nooit enige activiteit weergegeven, omdat de inhoud niet op de hoofdpagina kan worden geplaatst. Wanneer deze optie is ingeschakeld, worden de tellingen op alle afstammende pagina&#39;s opgenomen.
+   Wanneer deze optie is uitgeschakeld, worden alleen de bovenste posts geteld. Als de context bijvoorbeeld de hoofdpagina is (de standaardinstelling), `Activity Type` `Posts` wordt bij een van deze gebeurtenissen nooit enige activiteit weergegeven, omdat het niet mogelijk is inhoud naar de hoofdpagina te posten. Wanneer deze optie is ingeschakeld, worden de tellingen op alle afstammende pagina&#39;s opgenomen.
 Standaard is ingeschakeld.
 
 ### Voorbeeldpagina met 4 componenten {#example-page-with-components}

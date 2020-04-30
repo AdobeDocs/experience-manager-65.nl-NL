@@ -1,18 +1,18 @@
 ---
-title: Samengestelde elementen beheren met verwijzingen en elementen van meerdere pagina's in Adobe Experience Manager.
-description: Leer hoe u verwijzingen naar digitale elementen maakt in Adobe InDesign, Adobe Illustrator en Adobe Photoshop. Met de functie Paginaviewer kunt u afzonderlijke subelementpagina's van bestanden met meerdere pagina's weergeven, zoals PDF-, INDD-, PPT-, PPTX- en AI-bestanden.
+title: Samengestelde elementen beheren met verwijzingen en elementen van meerdere pagina's in [!DNL Adobe Experience Manager].
+description: Leer hoe u verwijzingen naar digitale middelen maakt vanuit [!DNL Adobe InDesign], [!DNL Adobe Illustrator] en [!DNL Adobe Photoshop]. Met de functie Paginaviewer kunt u afzonderlijke subelementpagina's van bestanden met meerdere pagina's weergeven, zoals PDF-, INDD-, PPT-, PPTX- en AI-bestanden.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 790efeaff6c8cf7e60104601e08955180dbb9600
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
 
 # Samengestelde en uit meerdere pagina&#39;s bestaande elementen beheren {#managing-compound-assets}
 
-[!DNL Adobe Experience Manager Assets] kan vaststellen of een geüpload bestand verwijzingen bevat naar elementen die al in de opslagplaats bestaan. Deze functie is alleen beschikbaar voor ondersteunde bestandsindelingen. Als het geüploade element verwijzingen naar de middelen van Experience Manager bevat, wordt een bidirectionele koppeling gemaakt tussen de geüploade en de bestanden waarnaar wordt verwezen.
+[!DNL Adobe Experience Manager Assets] kan vaststellen of een geüpload bestand verwijzingen bevat naar elementen die al in de opslagplaats bestaan. Deze functie is alleen beschikbaar voor ondersteunde bestandsindelingen. Als het geüploade element verwijzingen naar [!DNL Experience Manager] elementen bevat, wordt een bidirectionele koppeling gemaakt tussen de geüploade elementen en de elementen waarnaar wordt verwezen.
 
-Naast redundantie te elimineren, verbetert het verwijzen naar de middelen in Adobe Creative Cloud-toepassingen de samenwerking en verhoogt het de efficiëntie en productiviteit van gebruikers.
+Naast het elimineren van overtolligheid, het van verwijzingen voorzien van de activa in [!DNL Adobe Creative Cloud] toepassingen verbetert samenwerking en verhoogt de efficiency en de productiviteit van gebruikers.
 
 [!DNL Experience Manager Assets] ondersteunt bidirectionele referentie. U vindt de middelen waarnaar wordt verwezen op de elementdetailpagina van het geüploade bestand. Daarnaast kunt u de bestanden waarnaar wordt verwezen, weergeven op de pagina met elementdetails van het element waarnaar wordt verwezen.
 
@@ -25,7 +25,7 @@ U kunt vanuit een [!DNL Adobe Illustrator] bestand verwijzen naar bestaande digi
 1. Haal de digitale middelen op in het lokale bestandssysteem met behulp van de [Experience Manager-bureaubladtoepassing](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html). Navigeer naar de bestandssysteemlocatie van het element waarnaar u wilt verwijzen.
 1. Sleep het element van de lokale map naar het [!DNL Illustrator] bestand.
 
-1. Sla het [!DNL Illustrator] bestand op het gekoppelde station op of [upload het bestand naar](/help/assets/managing-assets-touch-ui.md#uploading-assets) de opslagplaats van Experience Manager.
+1. Sla het [!DNL Illustrator] bestand op het gekoppelde station op of [upload](/help/assets/managing-assets-touch-ui.md#uploading-assets) het bestand naar de [!DNL Experience Manager] opslagplaats.
 
 1. Nadat de workflow is voltooid, gaat u naar de pagina met elementdetails voor het element. De verwijzingen naar bestaande digitale activa zijn vermeld onder **[!UICONTROL Afhankelijkheden]** in de **[!UICONTROL kolom van Verwijzingen]** .
 
@@ -39,7 +39,7 @@ U kunt vanuit een [!DNL Adobe Illustrator] bestand verwijzen naar bestaande digi
 
    ![bekijk de verwijzingen van de Middelen van de Manager van de Ervaring in de kolom van Verwijzingen in activadetails](assets/asset-references.png)
 
-   *Afbeelding: Verwijzingen naar elementen in de gegevens van elementen*
+   *Afbeelding: Verwijzingen naar elementen in de elementen.*
 
 ## Digitale elementen toevoegen als verwijzingen in [!DNL Adobe InDesign]{#add-aem-assets-as-references-in-adobe-indesign}
 
@@ -86,7 +86,7 @@ Voor de ondersteunde elementen met indelingen die uit meerdere pagina&#39;s best
 
 Genereren van subelementen is standaard uitgeschakeld. Voer de volgende stappen uit om het genereren van subelementen in te schakelen:
 
-1. Meld u aan bij Experience Manager als beheerder. Ga naar **[!UICONTROL Extra > Workflow > Modellen]**.
+1. Meld u aan [!DNL Experience Manager] als beheerder. Ga naar **[!UICONTROL Extra > Workflow > Modellen]**.
 1. Selecteer de **[!UICONTROL DAM-workflow Element]** bijwerken en klik op **[!UICONTROL Bewerken]**.
 1. Klik op **[!UICONTROL Zijpaneel]** in-/uitschakelen en zoek de stap **[!UICONTROL Subelement]** maken. Voeg de stap toe aan de workflow. Klik op **[!UICONTROL Synchroniseren]**.
 

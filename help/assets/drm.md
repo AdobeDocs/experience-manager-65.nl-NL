@@ -3,7 +3,7 @@ title: Digital Rights Management in Assets
 description: Leer hoe u de status van verlopen van middelen en informatie over gelicentieerde middelen in AEM beheert.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -20,7 +20,7 @@ U kunt de vervalstatus van een element bekijken in de middelenconsole in zowel d
 
 ![expired_flag_card](assets/expired_flag_card.png)
 
-*Afbeelding: In de kaartweergave geeft een markering op de kaart aan dat het element is verlopen*
+*Afbeelding: In de kaartweergave geeft een markering op de kaart aan dat het element is verlopen.*
 
 **Lijstweergave**
 
@@ -123,7 +123,7 @@ Op de middelenconsole van Adobe Experience Manager (AEM) Assets kunnen verschill
    ![de vervaldatum en tijd van het element instellen in het veld Verlopen](assets/asset-properties-advanced-tab.png)
 
 
-   *Afbeelding: Geavanceerd tabblad in eigenschappen van elementen om de vervaldatum van elementen in te stellen*
+   *Afbeelding: Het tabblad[!UICONTROL Geavanceerd]in de pagina[!UICONTROL Eigenschappen]van element om de vervaldatum van elementen in te stellen.*
 
 1. Klik op **[!UICONTROL Opslaan]** en vervolgens op **[!UICONTROL Sluiten]** om de Asset-console weer te geven.
 1. De publicatiestatus voor het element geeft aan dat de status is verlopen onder aan de elementminiatuur in de kaartweergave. In de lijstweergave wordt de status van het element weergegeven als **[!UICONTROL Verlopen]**.

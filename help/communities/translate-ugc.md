@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: bfaf80c5-448b-47fb-9f22-57ee0eb169b2
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
 
 ---
 
@@ -21,13 +21,13 @@ Met de vertaalfunctie voor AEM Communities wordt het concept van het [vertalen v
 
 De vertaling van UGC stelt bezoekers en leden van de site in staat een wereldwijde gemeenschap te ervaren door taalbarrières te verwijderen.
 
-Als voorbeeld, veronderstel:
+Stel bijvoorbeeld:
 
-* Een Franse afgevaardigde plaatst een recept in het Frans op het communautair forum van een multinationale kookwebsite
-* Een ander Japans lid gebruikt de vertaalfunctie om het recept van het Frans naar het Japans te vertalen
-* Na het lezen van het recept in het Japans schrijft het Japanse lid een opmerking in het Japans
-* Het Franse lid gebruikt de vertaalfunctie om de Japanse opmerking in het Frans te vertalen
-* Wereldwijde communicatie!
+* Een Franse afgevaardigde plaatst een recept in het Frans op het communautair forum van een multinationale kookwebsite.
+* Een ander Japans lid gebruikt de vertaalfunctie om het recept van het Frans naar het Japans te vertalen.
+* Na het lezen van het recept in het Japans heeft het Japanse lid een opmerking geplaatst in het Japans.
+* Het Franse lid gebruikt de vertaalfunctie om de Japanse opmerking in het Frans te vertalen.
+* Wereldwijde communicatie.
 
 ## Overzicht {#overview}
 
@@ -49,6 +49,7 @@ Wanneer u een communitysite [](sites-console.md)maakt, wordt de standaardvertaal
 >
 >Voor een productiesysteem is een vertaaldienst met licentie vereist. Als er geen licentie is, moet de standaardvertaalservice worden [uitgeschakeld](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license-geometrixx-outdoors).
 
+
 ## Wereldwijde omzetting van UGC {#global-translation-of-ugc}
 
 Wanneer een website meerdere [taalkopieën](../../help/sites-administering/tc-prep.md)heeft, herkent de standaardvertaalservice niet dat UGC die op de ene site is ingevoerd, gerelateerd kan zijn aan UGC die op een andere site is ingevoerd, zoals wanneer de UGC in feite door dezelfde component wordt gegenereerd (de taalkopie van de pagina die de component bevat).
@@ -67,6 +68,7 @@ Bijvoorbeeld, als een forum op de basisplaats werd gevestigd, gemaakte taalexemp
 >
 >Er is geen migratiehulpmiddel om taalspecifieke inhoud in de globale gedeelde opslag te bewegen of samen te voegen.
 
+
 ### Configuratie vertaalintegratie {#translation-integration-configuration}
 
 Om een nieuwe Vertaalintegratie tot stand te brengen, die een schakelaar van de Vertaaldienst met de website op de auteursinstantie integreert:
@@ -79,11 +81,11 @@ Om een nieuwe Vertaalintegratie tot stand te brengen, die een schakelaar van de 
 * Cloudservices **[!UICONTROL selecteren]**
 * Omlaag schuiven naar **[!UICONTROL vertaalintegratie]**
 
-![chlimage_1-65](assets/chlimage_1-65.png)
+   ![chlimage_1-65](assets/chlimage_1-65.png)
 
 * Configuraties **[!UICONTROL tonen selecteren]**
 
-![chlimage_1-66](assets/chlimage_1-66.png)
+   ![chlimage_1-66](assets/chlimage_1-66.png)
 
 * Selecteer `[+]` pictogram naast **[!UICONTROL Beschikbare Configuraties]** om een nieuwe configuratie te creëren
 
@@ -91,11 +93,17 @@ Om een nieuwe Vertaalintegratie tot stand te brengen, die een schakelaar van de 
 
 ![chlimage_1-67](assets/chlimage_1-67.png)
 
-* **[!UICONTROL Bovenliggende configuratie]**(vereist) laat standaard meestal weg. Standaard is dit `/etc/cloudservices/translation`.
+* **[!UICONTROL Bovenliggende configuratie]**
 
-* **[!UICONTROL Titel]**(vereist) Voer een door u gekozen weergavetoetitel in. Geen standaardwaarde.
+   (Vereist) Verlaat gewoonlijk als gebrek. Standaard is dit `/etc/cloudservices/translation`.
 
-* **[!UICONTROL Naam]**(Optioneel) Voer een naam in voor de configuratie. De standaardwaarde is een knooppuntnaam die op de Titel wordt gebaseerd.
+* **[!UICONTROL Titel]**
+
+   (Vereist) Voer de gewenste weergavetoewijzing in. Geen standaardwaarde.
+
+* **[!UICONTROL Naam]**
+
+   (Optioneel) Voer een naam in voor de configuratie. De standaardwaarde is een knooppuntnaam die op de Titel wordt gebaseerd.
 
 * Selecteer **[!UICONTROL Maken]**
 
@@ -105,15 +113,17 @@ Om een nieuwe Vertaalintegratie tot stand te brengen, die een schakelaar van de 
 
 Voor gedetailleerde instructies gaat u naar [Een configuratie voor vertaalintegratie maken](../../help/sites-administering/tc-tic.md#creating-a-translation-integration-configuration)
 
-* **[!UICONTROL Tabblad Sites]** : kan als gebrek verlaten
+* **[!UICONTROL Tabblad Sites]** : kan als standaardinstellingen worden verlaten.
+
 * **[!UICONTROL Tabblad Gemeenschappen]** :
    * **[!UICONTROL Vertaalbureau]** Selecteer de vertaalprovider in de vervolgkeuzelijst. Standaard is dit `microsoft`de testservice.
 
    * **[!UICONTROL Inhoudscategorie]** Selecteer een categorie die de inhoud beschrijft die wordt vertaald. Standaard is `General.`
 
-   * **** Een landinstelling kiezen...(Optioneel) Als u een landinstelling selecteert voor het opslaan van UGC, worden posts van alle taalkopieën in één algemeen gesprek weergegeven. Kies bij conventie de landinstelling voor de [basistaal](sites-console.md#translation) voor de website. Als u `No Common Store` kiest, wordt algemene vertaling uitgeschakeld. Globale vertaling is standaard uitgeschakeld.
+   * **[!UICONTROL Een landinstelling kiezen...]**
+(Optioneel) Als u een landinstelling selecteert voor het opslaan van UGC, worden posts van alle taalkopieën in één algemeen gesprek weergegeven. Kies bij conventie de landinstelling voor de [basistaal](sites-console.md#translation) voor de website. Als u `No Common Store` kiest, wordt algemene vertaling uitgeschakeld. Globale vertaling is standaard uitgeschakeld.
 
-* **[!UICONTROL Tabblad Middelen]** : kan als gebrek verlaten
+* **[!UICONTROL Tabblad Middelen]** : kan als standaardinstellingen worden verlaten.
 * Selecteer **[!UICONTROL OK]**
 
 #### Activering {#activation}
@@ -132,11 +142,12 @@ De nieuwe vertaalintegratie-cloudservice moet worden geactiveerd voor de publica
 >
 >Wanneer de bezoeker van de site anoniem is of geen taalvoorkeur in hun profiel heeft gespecificeerd, is de aangewezen taal de basistaal van het paginasjabloon.
 
+
 ### Gebruikersvoorkeur {#user-preference}
 
 #### Gebruikersprofiel {#user-profile}
 
-Alle Communitysites bieden een gebruikersprofiel dat de ondertekenaars kunnen bewerken om zich te identificeren voor de community en hun voorkeuren in te stellen.
+Alle Communitysites bieden een gebruikersprofiel dat de ondertekenaars kunnen bewerken om zichzelf te identificeren voor de community en hun voorkeuren in te stellen.
 
 Een van deze instellingen is of gemeenschapsinhoud altijd in de taal van uw voorkeur moet worden weergegeven. De instelling is standaard niet ingesteld en wordt standaard ingesteld op de systeeminstelling. De gebruiker kan de instelling wijzigen in Aan of Uit en zo de systeeminstelling overschrijven.
 

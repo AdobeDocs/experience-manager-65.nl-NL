@@ -1,22 +1,22 @@
 ---
-title: Asset tagging configureren met behulp van de Smart Content Service
-description: Leer hoe u slimme tags en verbeterde slimme tags kunt configureren in AEM met behulp van de Smart Content Service.
+title: Vorm activa het etiketteren gebruikend de Slimme Dienst van de Inhoud.
+description: Leer hoe u slimme tags en verbeterde slimme tags configureert in Adobe Experience Manager met de Smart Content Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
 
 # Asset tagging configureren met behulp van de Smart Content Service {#configure-asset-tagging-using-the-smart-content-service}
 
-U kunt Adobe Experience Manager (AEM) met de Smart Content Service integreren met behulp van Adobe I/O. Gebruik deze configuratie om tot de Slimme Dienst van de Inhoud van binnen AEM toegang te hebben.
+Met Adobe I/O kunt u integreren [!DNL Adobe Experience Manager] met de Smart Content Service. Gebruik deze configuratie om tot de Slimme Dienst van de Inhoud van binnen toegang te hebben [!DNL Experience Manager].
 
-Het artikel detailleert de volgende zeer belangrijke taken uit die worden vereist om de Slimme Dienst van de Inhoud te vormen. Aan het achterste eind, verifieert de server AEM uw de dienstgeloofsbrieven van Adobe I/O gateway alvorens uw verzoek aan de Slimme Dienst van de Inhoud door:sturen.
+Het artikel detailleert de volgende zeer belangrijke taken uit die worden vereist om de Slimme Dienst van de Inhoud te vormen. Aan het achterste eind, verifieert de [!DNL Experience Manager] server uw de dienstgeloofsbrieven met de gateway van Adobe I/O alvorens uw verzoek aan de Slimme Dienst van de Inhoud door:sturen.
 
-* Creeer een Slimme configuratie van de Dienst van de Inhoud in AEM om een openbare sleutel te produceren. Overheidscertificaat verkrijgen voor OAuth-integratie.
+* Creeer een Slimme configuratie van de Dienst van de Inhoud binnen [!DNL Experience Manager] om een openbare sleutel te produceren. Overheidscertificaat verkrijgen voor OAuth-integratie.
 * Maak een integratie in Adobe I/O en upload de gegenereerde openbare sleutel.
-* Configureer uw AEM-instantie met behulp van de API-sleutel en andere referenties van Adobe I/O.
+* Configureer uw [!DNL Experience Manager] instantie met behulp van de API-sleutel en andere referenties van Adobe I/O.
 * Schakel eventueel automatische labeling in bij het uploaden van elementen.
 
 ## Vereisten {#prerequisites}
@@ -30,7 +30,7 @@ Voordat u de Smart Content Service kunt gebruiken, moet u het volgende doen om e
 
 Met een openbaar certificaat kunt u uw profiel verifiëren op Adobe I/O.
 
-1. Klik in de AEM-gebruikersinterface op het AEM-logo en ga naar **[!UICONTROL Gereedschappen > Cloud Services]**> **[!UICONTROL Oudere Cloud Services]**.
+1. Open in de [!DNL Experience Manager] gebruikersinterface **[!UICONTROL Gereedschappen > Cloud Services]**> **[!UICONTROL Oudere Cloud Services]**.
 
 1. Klik op de pagina Cloud Services op **[!UICONTROL Nu]** configureren onder Slimme tags voor **[!UICONTROL middelen]**.
 1. Geef in het dialoogvenster Configuratie **** maken een titel en naam op voor de configuratie Slimme tags. Klik op **[!UICONTROL Maken]**.
@@ -42,7 +42,7 @@ Met een openbaar certificaat kunt u uw profiel verifiëren op Adobe I/O.
 
    Laat de overige velden voorlopig leeg (later te verstrekken). Click **[!UICONTROL OK]**.
 
-   ![Dialoogvenster van de AEM Smart Content Service voor het aanbieden van de inhoudsservice-URL](assets/aem_scs.png)
+   ![Het dialoogvenster Experience Manager Smart Content Service om de contentservice URL te bieden](assets/aem_scs.png)
 
 1. Klik op Openbaar certificaat **[!UICONTROL downloaden voor OAuth Integration]** en download het openbare certificaatbestand `AEM-SmartTags.crt`.
 
@@ -52,7 +52,7 @@ Met een openbaar certificaat kunt u uw profiel verifiëren op Adobe I/O.
 
 Wanneer het certificaat verloopt, wordt het niet meer vertrouwd. Voer de volgende stappen uit om een nieuw certificaat toe te voegen. U kunt een verlopen certificaat niet vernieuwen.
 
-1. Meld u aan bij uw AEM-implementatie als beheerder. Klik op **[!UICONTROL Gereedschappen]** > **[!UICONTROL Beveiliging]** > **[!UICONTROL Gebruikers]**.
+1. Log in your [!DNL Experience Manager] deployment as an administrator. Klik op **[!UICONTROL Gereedschappen]** > **[!UICONTROL Beveiliging]** > **[!UICONTROL Gebruikers]**.
 
 1. Zoek en klik op **[!UICONTROL dam-update-service]** -gebruiker. Klik op het tabblad **[!UICONTROL Keystore]** .
 1. Verwijder het bestaande sleutelarchief voor **[!UICONTROL gelijkenissen]** met het verlopen certificaat. Klik op **[!UICONTROL Opslaan en sluiten]**.
@@ -88,9 +88,9 @@ Als u API&#39;s voor Smart Content Service wilt gebruiken, maakt u een integrati
 
 ## Smart Content Service configureren {#configure-smart-content-service}
 
-Als u de integratie wilt configureren, gebruikt u de waarden Technical Account ID, Organization ID, Client Secret, Authorization Server en API-sleutelvelden van de Adobe I/O-integratie. Door een cloud-configuratie met slimme tags te maken, kunnen API-aanvragen van de AEM-instantie worden geverifieerd.
+Als u de integratie wilt configureren, gebruikt u de waarden Technical Account ID, Organization ID, Client Secret, Authorization Server en API-sleutelvelden van de Adobe I/O-integratie. Door een cloud-configuratie met slimme tags te maken, kunnen API-aanvragen van de [!DNL Experience Manager] instantie worden geverifieerd.
 
-1. Navigeer in Experience Manager naar **[!UICONTROL Extra > Cloud Service > Legacy Cloud Services]** om de [!UICONTROL Cloud Services] -console te openen.
+1. Navigeer in [!DNL Experience Manager]Gereedschappen > **[!UICONTROL Cloudservice > Oudere cloudservices]** om de [!UICONTROL Cloud Services] -console te openen.
 1. Open de hierboven gemaakte configuratie onder Slimme **[!UICONTROL elementtags]**. Klik op de pagina met service-instellingen op **[!UICONTROL Bewerken]**.
 1. Gebruik in het dialoogvenster **[!UICONTROL AEM Smart Content Service]** de vooraf ingevulde waarden voor de velden **[!UICONTROL Service URL]** en **[!UICONTROL Authorization Server]** .
 1. Voor de velden **[!UICONTROL API Key]**, **[!UICONTROL Technical Account Id]**, **[!UICONTROL Organization Id]** en **[!UICONTROL Client Secret]** gebruikt u de hierboven gegenereerde waarden.
@@ -99,7 +99,7 @@ Als u de integratie wilt configureren, gebruikt u de waarden Technical Account I
 
 Nadat u de configuratie hebt voltooid, kunt u een JMX MBean gebruiken om de configuratie te bevestigen. Voer de volgende stappen uit om te valideren.
 
-1. Open uw AEM-server op `https://[server]:[port]`.
+1. Open uw [!DNL Experience Manager] server op `https://[aem_server]:[port]`.
 
 1. Ga naar **[!UICONTROL Hulpmiddelen > Verrichtingen > de Console]** van het Web om de console te openen OSGi. Klik op **[!UICONTROL Hoofd > JMX]**.
 1. Klik op **[!UICONTROL com.day.cq.dam.similaritysearch.internal.impl]**. Het opent **[!UICONTROL GelijksoortigheidOnderzoek Diverse Taken.]**
@@ -109,14 +109,14 @@ Nadat u de configuratie hebt voltooid, kunt u een JMX MBean gebruiken om de conf
 
 ## Slimme tags toepassen inschakelen in de workflow Element bijwerken (optioneel) {#enable-smart-tagging-in-the-update-asset-workflow-optional}
 
-1. Ga in Experience Manager naar **[!UICONTROL Extra > Workflow > Modellen]**.
+1. Ga in [!DNL Experience Manager]het menu **[!UICONTROL Extra > Workflow > Modellen]**.
 1. Selecteer op de pagina **[!UICONTROL Workflowmodellen]** het workflowmodel **[!UICONTROL DAM Update Asset]** .
 1. Klik op **[!UICONTROL Bewerken]** op de werkbalk.
 1. Vouw het zijpaneel uit om de stappen weer te geven. Drag **[!UICONTROL Smart Tag Asset]** step that is available in the DAM Workflow section and place it after the **[!UICONTROL Process Thumbnails]** step.
 
    ![Voeg de stap Slimme tag-elementen toe na de stap met de miniaturen van het proces in de workflow [!UICONTROL DAM-element] bijwerken](assets/chlimage_1-105.png)
 
-   *Afbeelding: Voeg de stap Slimme tag-elementen toe na de stap met de miniaturen van het proces in de workflow[!UICONTROL DAM-element]bijwerken*
+   *Afbeelding: Voeg de stap Slimme tag-elementen toe na de stap met de procesminiaturen in de workflow[!UICONTROL DAM-element]bijwerken.*
 
 1. Open de stap in de bewerkingsmodus. Controleer of onder **[!UICONTROL Geavanceerde instellingen]** de optie **[!UICONTROL Handler bevorderen]** is geselecteerd.
 

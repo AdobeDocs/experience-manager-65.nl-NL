@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: 6f13b21a-f4ef-4889-9b8e-4da3f846fa35
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70e6f2d8366456e5091b7b775dc40914948921ab
+source-git-commit: 2bcd098ae901070d5e50cd89d06c854884b4e461
 
 ---
 
 
-# SRP - Opslag van communautaire inhoud{#srp-community-content-storage}
+# SRP - Opslag van communautaire inhoud {#srp-community-content-storage}
 
 ## Inleiding {#introduction}
 
@@ -32,15 +32,19 @@ Voor details betreffende het gebruik van SRP voor UGC, zie het Overzicht [van de
 >
 >SRP is slechts op communautaire inhoud van toepassing. Het heeft geen invloed op de locatie waar de site-inhoud wordt opgeslagen ([knooppuntopslag](/help/sites-deploying/data-store-config.md)) en heeft geen invloed op de veilige verwerking van gebruikersregistratie, gebruikersprofielen en gebruikersgroepen tussen AEM-instanties (zie ook Gebruikersgegevens [](#managing-user-data)beheren).
 
+
 >[!CAUTION]
 >
 >Vanaf AEM 6.1 wordt [UGC nooit gerepliceerd](#ugc-never-replicated).
 >
 >Wanneer de plaatsing geen gemeenschappelijke opslag, zoals de standaardtopologie [JSRP](/help/communities/topologies.md#jsrp) omvat, zal UGC slechts op AEM zichtbaar zijn publiceert of auteursinstantie waarop het was ingegaan. Alleen als de topologie een publicatiecluster bevat, is de UGC zichtbaar op elke publicatieinstantie.
 
+
 ## Kenmerken van SRP-opties {#characteristics-of-srp-options}
 
-[ASRP - Adobe Storage Resource Provider](/help/communities/asrp.md)Met deze optie wordt de UGC extern voortgezet in een cloudservice die wordt gehost en beheerd door Adobe. Het vereist een aanvullende licentie en samenwerking met een accountvertegenwoordiger om de rekening voor die specifieke licentie te verstrekken. ASRP vereist:
+[ASRP - Adobe Storage Resource Provider](/help/communities/asrp.md)
+
+Met deze optie blijft de UGC extern aanwezig in een cloudservice die wordt gehost en beheerd door Adobe. Het vereist een aanvullende licentie en samenwerking met een accountvertegenwoordiger om de rekening voor die specifieke licentie te verstrekken. ASRP vereist:
 
 * Een gekoppelde cloudservice die door Adobe wordt geleverd en ondersteund voor het opslaan van community-inhoud.
 * Keuze van een datacenter in een specifieke geografie (VS, EMEA, APAC).
@@ -49,14 +53,17 @@ Voor details betreffende het gebruik van SRP voor UGC, zie het Overzicht [van de
 
 ASRP is geschikt:
 
-* voor TarMK, publicatiebedrijf.
-* wanneer er geen intentie is om te investeren in lokale opslag.
+* Voor TarMK publiceert landbouwbedrijf.
+* Als er geen intent is om in lokale opslag te investeren.
 
 >[!NOTE]
 >
 >Er geldt een limiet voor het uploaden van bijlagen naar posten (of opmerkingen) in ASRP. Dit is 50 MB.
 
-[MSRP - de Leverancier](/help/communities/msrp.md)van het Middel van de Opslag MongoDB met deze optie, wordt UGC voortgeduurd direct in een lokale instantie MongoDB.
+
+[MSRP - MongoDB Storage Resource Provider](/help/communities/msrp.md)
+
+Met deze optie wordt de UGC direct in een lokale MongoDB-instantie voortgezet.
 
 MSRP vereist:
 
@@ -70,7 +77,9 @@ ASRP is geschikt:
 * Voor een MongoMK- of RdbMK-cluster.
 * Wanneer er grote hoeveelheden community-inhoud worden verwacht.
 
-[DSRP - de Relationele Leverancier](/help/communities/dsrp.md)van het Middel van de Opslag van het Gegevensbestand met deze optie, wordt UGC voortgeduurd direct in een lokale MySQL gegevensbestandinstantie.
+[DSRP - Relational Database Storage Resource Provider](/help/communities/dsrp.md)
+
+Met deze optie, wordt UGC voortgeduurd direct in een lokale MySQL gegevensbestandinstantie.
 
 DSRP vereist:
 
@@ -84,7 +93,9 @@ DSRP is geschikt:
 * Voor een MongoMK- of RdbMK-cluster.
 * Wanneer er grote hoeveelheden community-inhoud worden verwacht.
 
-[JSRP - JCR Storage Resource Provider](/help/communities/jsrp.md)Met de standaardoptie is er geen algemeen archief. De UGC wordt alleen gecontinueerd in dezelfde JCR-opslagruimte als de AEM-instantie waarin deze is ingevoerd.
+[JSRP - JCR Storage Resource Provider](/help/communities/jsrp.md)
+
+Met de standaardoptie, is er geen gemeenschappelijke opslag. De UGC wordt alleen gecontinueerd in dezelfde JCR-opslagruimte als de AEM-instantie waarin deze is ingevoerd.
 
 JSRP:
 

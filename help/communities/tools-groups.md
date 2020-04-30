@@ -11,12 +11,12 @@ content-type: reference
 discoiquuid: e9bfbbce-93fc-455c-a2f7-4ee44e63c03f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
 
 ---
 
 
-# Groepssjablonen{#group-templates}
+# Groepssjablonen {#group-templates}
 
 De console van de Malplaatjes van de Groep is gelijkaardig aan de console van de Malplaatjes [van de](/help/communities/sites.md) Plaats. Beide zijn blauwdrukken voor een set vooraf bekabelde pagina&#39;s en functies die een gemeenschapssite vormen. Het verschil is dat een plaatsmalplaatje voor de belangrijkste gemeenschap is en een groepsmalplaatje voor een communautaire groep, een subgemeenschap die binnen de belangrijkste gemeenschap wordt genesteld.
 
@@ -30,6 +30,7 @@ Wanneer een actie wordt ondernomen om een nieuwe communautaire groep tot stand t
 >
 >De consoles voor de verwezenlijking van [communautaire plaatsen](/help/communities/sites-console.md), de malplaatjes [van de](/help/communities/sites.md)communautaire plaats, [communautaire groepsmalplaatjes](/help/communities/tools-groups.md) en [communautaire functies](/help/communities/functions.md) zijn voor gebruik slechts in het auteursmilieu.
 
+
 ## Groep sjablonen {#group-templates-console}
 
 Om de console van groepsmalplaatjes in het milieu van de Auteur te bereiken AEM:
@@ -42,7 +43,7 @@ Deze console toont de malplaatjes waarvan een [communautaire plaats](/help/commu
 
 ## Groepssjabloon maken {#create-group-template}
 
-Selecteer `Create`
+Selecteer `Create`.
 
 Hiermee wordt het deelvenster Site-editor weergegeven met drie subdeelvensters:
 
@@ -52,15 +53,17 @@ Hiermee wordt het deelvenster Site-editor weergegeven met drie subdeelvensters:
 
 In het deelvenster Basisinformatie worden een naam, beschrijving en of de sjabloon is ingeschakeld of uitgeschakeld, geconfigureerd:
 
-* **New Group Template Name** the template name id
+* **Nieuwe naam groepssjabloon**
+
+   De naam-id van de sjabloon.
 
 * **Beschrijving**
 
-   de sjabloonbeschrijving
+   De sjabloonbeschrijving.
 
 * **Uitgeschakeld/Ingeschakeld**
 
-   een schakeloptie die bepaalt of naar de sjabloon kan worden verwezen
+   Een schakeloptie die bepaalt of naar de sjabloon kan worden verwezen.
 
 #### Miniatuur {#thumbnail}
 
@@ -78,6 +81,7 @@ In het deelvenster Basisinformatie worden een naam, beschrijving en of de sjablo
 >
 >Het is nog steeds niet toegestaan een functie Groepen toe te voegen als de eerste of enige functie in een sjabloon.
 
+
 ![Sjablooneditor groeperen](assets/template-editor.png)
 
 Als u communityfuncties wilt toevoegen, sleept u van de rechterkant naar links in de volgorde waarin de koppelingen in het sitemenu moeten worden weergegeven. Stijlen worden toegepast op de sjabloon tijdens het maken van de site.
@@ -88,7 +92,7 @@ Ga verder met slepen en neerzetten van andere communityfuncties die gewenst zijn
 
 ![sleepfuncties](assets/dragfunctions.png)
 
-Zodra alle gewenste functies in het gebied van de malplaatjebouwer zijn gelaten vallen en gevormd, uitgezocht **sparen **in de hogere juiste hoek.
+Nadat alle gewenste functies in het sjabloonbuildergebied zijn neergezet en geconfigureerd, selecteert u **Opslaan** in de rechterbovenhoek.
 
 ## Groepssjabloon bewerken {#edit-group-template}
 

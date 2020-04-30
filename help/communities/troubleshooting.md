@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: cdb2d80a-2fbf-4ee6-b89b-b5d74e6d3bfc
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
 
 ---
 
@@ -31,9 +31,7 @@ Dit probleem wordt opgelost door Dispatcher 4.1.6 of hoger te gebruiken.
 
 Als een forum op CQ 5.4 en geposte onderwerpen werd gecreeerd, en toen de plaats aan AEM 5.6.1 of later werd bevorderd, kan het proberen om de bestaande posten te bekijken in een fout op de pagina resulteren:
 
-ongeoorloofd patroonteken &#39;a&#39;Kan verzoek niet verzenden naar /content/demoforums/forum-test.html op deze server
-
-En de logboeken bevatten het volgende:
+Ongeldig patroonteken &#39;a&#39;Cannot serve request to `/content/demoforums/forum-test.html` on this server and the logs contain the following:
 
 ```xml
 20.03.2014 22:49:35.805 ERROR [10.177.45.32 [1395380975744] GET /content/demoforums/forum-test.html HTTP/1.1] com.day.cq.wcm.tags.IncludeTag Error while executing script content.jsp
@@ -44,7 +42,7 @@ at org.apache.sling.scripting.core.impl.DefaultSlingScript.eval(DefaultSlingScri
 
 Het probleem is dat de indelingstekenreeks voor com.day.cq.commons.date.RelativeTimeFormat is gewijzigd tussen 5.4 en 5.5, zodat &quot;a&quot; voor &quot;ago&quot; niet langer wordt geaccepteerd.
 
-Daarom moet elke code die de RelativeTimeFormat()-API gebruikt, worden gewijzigd
+Daarom moet elke code die de RelativeTimeFormat()-API gebruikt, worden gewijzigd:
 
 * From: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r a", resourceBundle);`
 * Naar: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r", resourceBundle);`
@@ -59,9 +57,9 @@ Zie de [com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/expe
 
 Tijdens het opstarten (niet 1st - maar om het even welke daarna) kan de volgende waarschuwing in de logboeken worden gezien:
 
-* 11.04.2014 08:38:07.223 **WARN** []FelixStartLevelcom.github.jknack.handlebars.Handlebars Helper &#39;i18n&#39; is vervangen door &#39;com.adobe.cq.social.handlebars.I18nHelper@15bac645&#39;
+* `11.04.2014 08:38:07.223 WARN [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper 'i18n'` is vervangen door `com.adobe.cq.social.handlebars.I18nHelper@15bac645`
 
-Deze waarschuwing kan veilig worden genegeerd aangezien jknack.handlebars.Handlebars, die door [SCF](scf.md#handlebarsjavascripttemplatinglanguage)wordt gebruikt, met zijn eigen i18n helpernut komt. Bij het opstarten wordt deze vervangen door een AEM-specifieke [i18n-helper](handlebars-helpers.md#i-n). Deze waarschuwing wordt gegenereerd door de bibliotheek van derden om te bevestigen dat een bestaande helper is genegeerd.
+Deze waarschuwing kan veilig worden genegeerd aangezien `jknack.handlebars.Handlebars`, gebruikt door [SCF](scf.md#handlebarsjavascripttemplatinglanguage), met zijn eigen i18n helpernut komt. Bij het opstarten wordt deze vervangen door een AEM-specifieke [i18n-helper](handlebars-helpers.md#i-n). Deze waarschuwing wordt gegenereerd door de bibliotheek van derden om te bevestigen dat een bestaande helper is genegeerd.
 
 ### Waarschuwing bij logbestanden: OakResourceListener processOsgiEventQueue {#warning-in-logs-oakresourcelistener-processosgieventqueue}
 

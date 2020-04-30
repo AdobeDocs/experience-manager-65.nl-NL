@@ -1,24 +1,24 @@
 ---
-title: Ondersteuning voor IPTC-metagegevens
-description: Leer hoe Adobe Experience Manager (AEM) Middelen de IPTC-metagegevens, Creative Classificaties en trefwoorden ondersteunt die via Adobe Bridge en andere Creative Apps aan middelen zijn toegevoegd.
+title: Werk met IPTC-metagegevens in [!DNL Adobe Experience Manager Assets].
+description: Leer hoe [!DNL Adobe Experience Manager Assets] de IPTC-metagegevens, creatieve beoordelingen en trefwoorden ondersteunt die via Adobe Bridge en andere Creative Apps aan middelen zijn toegevoegd.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
 
-# Ondersteuning voor IPTC-metagegevens {#support-for-iptc-metadata}
+# Werken met IPTC-metagegevens {#support-for-iptc-metadata}
 
-Leer hoe Adobe Experience Manager (AEM) Middelen de IPTC-metagegevens, Creative Classificaties en trefwoorden ondersteunt die via Adobe Bridge en andere Creative Apps aan middelen zijn toegevoegd.
+Leer hoe u de IPTC-metagegevens, creatieve beoordelingen en trefwoorden die aan middelen zijn toegevoegd via [!DNL Adobe Experience Manager Assets] en andere [!DNL Adobe Bridge] [!DNL Adobe Creative Cloud] apps, kunt ondersteunen.
 
-Elementen van Adobe Experience Manager (AEM) ondersteunen de standaard voor IPTC-metagegevens die veel wordt gebruikt om elementen te beschrijven. Op deze manier verbetert AEM Assets de acceptatie van de afbeeldingen van het programma bij verschillende partijen, zoals fotografen, creatieve bureaus, bibliotheken, musea, enzovoort.
+[!DNL Adobe Experience Manager Assets] ondersteunt de IPTC-metagegevensstandaard die veel wordt gebruikt om elementen te beschrijven. Op deze manier [!DNL Assets] wordt de acceptatie van de afbeeldingen van de foto&#39;s tussen verschillende partijen verbeterd, zoals fotografen, creatieve bureaus, bibliotheken, musea, enzovoort.
 
 In het standaardmetagegevensschema voor elementen zijn nu de IPTC Core- en IPTC-metagegevensschema&#39;s voor extensies opgenomen om uitgebreide metagegevenseigenschappen te definiëren waarmee gebruikers nauwkeurige en betrouwbare gegevens kunnen toevoegen over personen, locaties en producten die in een afbeelding worden weergegeven. Het steunt ook data, namen, en herkenningstekens betreffende de verwezenlijking van het beeld, en een flexibele manier om rechteninformatie uit te drukken.
 
 De pagina Eigenschappen voor elementen bevat nu aparte tabbladen waarmee de metagegevens voor IPTC Core- en IPTC-extensies in bewerkbare velden worden weergegeven.
 
-1. Selecteer een afbeelding in de gebruikersinterface Elementen.
+1. Selecteer een afbeelding in de [!DNL Assets] gebruikersinterface.
 1. Klik op **[!UICONTROL Eigenschappen]** op de werkbalk.
 1. Klik op het tabblad **[!UICONTROL IPTC]** om de IPTC-metagegevens voor het element weer te geven.
 1. Bewerk desgewenst de IPTC-metagegevenseigenschappen.

@@ -1,16 +1,16 @@
 ---
 title: Verwante activa
-description: Leer hoe u elementen koppelt die bepaalde algemene kenmerken delen. U kunt de eigenschap ook gebruiken om bron/afgeleide verhoudingen tussen activa tot stand te brengen.
+description: Leer hoe u digitale elementen die gemeenschappelijke kenmerken delen, koppelt. Maak ook bronafhankelijke relaties tussen digitale elementen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
 
 # Verwante activa {#related-assets}
 
-Met de Adobe Experience Manager-middelen (AEM) kunt u elementen handmatig koppelen op basis van de behoeften van uw organisatie met behulp van de functie voor verwante elementen. U kunt bijvoorbeeld een licentiebestand koppelen aan een element of aan een afbeelding/video over een vergelijkbaar onderwerp. U kunt elementen die bepaalde algemene kenmerken delen, aan elkaar koppelen. U kunt de eigenschap ook gebruiken om bron/afgeleide verhoudingen tussen activa tot stand te brengen. Als u bijvoorbeeld een PDF-bestand hebt dat is gegenereerd vanuit een INDD-bestand, kunt u het PDF-bestand koppelen aan het INDD-bronbestand.
+[!DNL Adobe Experience Manager Assets] Hiermee kunt u elementen handmatig koppelen op basis van de behoeften van uw organisatie met behulp van de functie voor verwante elementen. U kunt bijvoorbeeld een licentiebestand koppelen aan een element of aan een afbeelding/video over een vergelijkbaar onderwerp. U kunt elementen die bepaalde algemene kenmerken delen, aan elkaar koppelen. U kunt de eigenschap ook gebruiken om bron/afgeleide verhoudingen tussen activa tot stand te brengen. Als u bijvoorbeeld een PDF-bestand hebt dat is gegenereerd vanuit een INDD-bestand, kunt u het PDF-bestand koppelen aan het INDD-bronbestand.
 
 Met deze functie hebt u de flexibiliteit om een PDF- of JPG-bestand met lage resolutie te delen met leveranciers of agentschappen en het INDD-bestand met hoge resolutie alleen op verzoek beschikbaar te maken.
 
@@ -19,11 +19,11 @@ Met deze functie hebt u de flexibiliteit om een PDF- of JPG-bestand met lage res
 
 ## Relatieve elementen {#relating-assets}
 
-1. Open vanuit de AEM-interface de pagina **[!UICONTROL Eigenschappen]** voor een element dat u wilt koppelen.
+1. Open vanuit de interface Experience Manager de pagina **[!UICONTROL Eigenschappen]** voor een element dat u wilt koppelen.
 
    ![de eigenschappenpagina van een element openen om het element te koppelen](assets/asset-properties-relate-assets.png)
 
-   *Afbeelding: Pagina met eigenschappen van element om elementen te koppelen*
+   *Afbeelding: Pagina[!DNL Assets]Eigenschappenom elementen te koppelen.*
 
    U kunt ook het element selecteren in de lijstweergave.
 
@@ -65,15 +65,15 @@ Met deze functie hebt u de flexibiliteit om een PDF- of JPG-bestand met lage res
 
 ## Verwante elementen vertalen {#translating-related-assets}
 
-Het maken van bron-/afgeleide relaties tussen elementen met de functie Verwante elementen is ook handig in vertaalworkflows. Wanneer u een vertaalworkflow uitvoert op een afgeleid element, haalt AEM Assets automatisch alle elementen op waarnaar het bronbestand verwijst en die het bevat voor vertaling. Op deze manier wordt het element waarnaar door het bronelement wordt verwezen, samen met de bron en afgeleide elementen omgezet. Neem bijvoorbeeld een scenario waarin uw Engelse taalkopie een afgeleid element en het bronbestand van dat element bevat, zoals wordt weergegeven.
+Het maken van bron-/afgeleide relaties tussen elementen met de functie Verwante elementen is ook handig in vertaalworkflows. Wanneer u een vertaalworkflow uitvoert op een afgeleid element, worden [!DNL Experience Manager Assets] automatisch alle elementen opgehaald waarnaar het bronbestand verwijst en dat dit element bevat voor vertaling. Op deze manier wordt het element waarnaar door het bronelement wordt verwezen, samen met de bron en afgeleide elementen omgezet. Neem bijvoorbeeld een scenario waarin uw Engelse taalkopie een afgeleid element en het bronbestand van dat element bevat, zoals wordt weergegeven.
 
 ![chlimage_1-281](assets/chlimage_1-281.png)
 
-Als het bronbestand verwant is aan een ander element, haalt Experience Manager Assets het element waarnaar wordt verwezen op en wordt het element opgenomen voor vertaling.
+Als het bronbestand verwant is aan een ander element, [!DNL Experience Manager Assets] wordt het element waarnaar wordt verwezen opgehaald en opgenomen voor vertaling.
 
 ![De pagina met eigenschappen van elementen bevat het bronbestand van het verwante element dat moet worden opgenomen voor vertaling](assets/asset-properties-source-asset.png)
 
-*Afbeelding: Bronactiva van de gerelateerde activa die voor vertaling moeten worden opgenomen*
+*Afbeelding: Bronactiva van de gerelateerde activa die voor vertaling moeten worden opgenomen.*
 
 1. Vertaal de elementen in de bronmap naar een doeltaal door de stappen in [Een nieuw vertaalproject](translation-projects.md#create-a-new-translation-project)maken uit te voeren. In dit geval vertaalt u uw middelen bijvoorbeeld naar het Frans.
 

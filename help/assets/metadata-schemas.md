@@ -3,7 +3,7 @@ title: Metagegevensschema's
 description: Het metagegevensschema definieert de indeling van de pagina met eigenschappen en de eigenschappen van metagegevens die voor elementen worden weergegeven. Leer hoe u een aangepast metagegevensschema kunt maken, het schema voor metagegevens kunt bewerken en hoe u het schema voor metagegevens op elementen kunt toepassen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f737122575c9fd0af82a8b86d259db61753f2f97
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -26,7 +26,7 @@ U kunt de redacteur van de Vormen van het Schema van Meta-gegevens gebruiken om 
 
    ![Het tabblad Standaard van de eigenschappen van elementen, waarin het elementtype niet kan worden gewijzigd](assets/asset-properties-basic-tab.png)
 
-   *Afbeelding: Het tabblad Standaard voor eigenschappen van elementen*
+   *Afbeelding: Het tabblad Standaard voor eigenschappen van elementen.*
 
    Als u het MIME-type voor een element wilt wijzigen, gebruikt u een aangepast schema voor metagegevens of wijzigt u een bestaand formulier. Zie [Metagegevensschemaformulieren](/help/assets/metadata-schemas.md#edit-metadata-schema-forms) bewerken voor meer informatie. Als u het metagegevensschema voor een bepaald MIME-type wijzigt, worden de pagina-indeling van de eigenschappen voor elementen met het huidige MIME-type en alle elementsubtypen gewijzigd. Als u bijvoorbeeld een JPEG-schema wijzigt onder, wordt de indeling van metagegevens (eigenschappen van elementen) `default/image` alleen gewijzigd voor elementen met het MIME-type `image/jpeg`. Als u echter het standaardschema bewerkt, worden de wijzigingen doorgevoerd in de indeling van de metagegevens voor alle typen elementen.
 
@@ -86,9 +86,9 @@ U kunt nieuwe tabbladen of formulieritems toevoegen aan het metagegevensschemafo
 
    ![Editor metagegevensschema om de pagina Eigenschappen van elementen aan te passen](assets/metadata-schema-editor.png)
 
-   *Afbeelding: Tabblad Standaard van editor voor metagegevensschema*
+   *Afbeelding: Het[!UICONTROL tabblad Standaard]van de[!UICONTROL Editor voor]metagegevensschema.*
 
-1. Als u een component wilt configureren, selecteert u deze en wijzigt u de eigenschappen ervan op het tabblad **Instellingen** .
+1. Als u een component wilt configureren, selecteert u deze en wijzigt u de eigenschappen ervan op het tabblad **[!UICONTROL Instellingen]** .
 
 ### Componenten op het tabblad Formulier samenstellen {#components-within-the-build-form-tab}
 
@@ -127,29 +127,21 @@ Hier volgen de geldige waarden voor deze eigenschap:
 
 Om ervoor te zorgen dat de component correct in de vorm van het meta-gegevensschema wordt getoond, zou de bezitspad geen ruimten moeten omvatten.
 
-**Tijdelijke aanduiding**: Gebruik deze eigenschap om relevante plaatsaanduidingstekst met betrekking tot de eigenschap metadata op te geven.
-
-**Vereist**: Gebruik deze eigenschap om een eigenschap metadata als verplicht op de eigenschappenpagina te markeren.
-
-**Bewerken** uitschakelen: Gebruik deze eigenschap om een eigenschap metadata onbewerkbaar te maken op de eigenschappenpagina.
-
-**Leeg veld alleen**-lezen tonen: Mark this property to display a metadata property on the properties page even if it has no value. Wanneer een eigenschap metadata geen waarde heeft, wordt deze standaard niet vermeld op de eigenschappenpagina.
-
-**Genummerde** lijst tonen: Gebruik deze eigenschap om een geordende keuzelijst weer te geven
-
-**Keuzen**: Gebruik deze eigenschap om keuzen in een lijst op te geven
-
-**Omschrijving** : Gebruik deze eigenschap om een korte beschrijving toe te voegen voor de metagegevenscomponent.
-
-**Klasse**: Objectklasse waaraan de eigenschap is gekoppeld.
-
-**Verwijderen**: Klik op dit pictogram om een component uit het schema te verwijderen.
+* **Tijdelijke aanduiding**: Gebruik deze eigenschap om relevante plaatsaanduidingstekst met betrekking tot de eigenschap metadata op te geven.
+* **Vereist**: Gebruik deze eigenschap om een eigenschap metadata als verplicht op de eigenschappenpagina te markeren.
+* **Bewerken** uitschakelen: Gebruik deze eigenschap om een eigenschap metadata onbewerkbaar te maken op de eigenschappenpagina.
+* **Leeg veld alleen**-lezen tonen: Mark this property to display a metadata property on the properties page even if it has no value. Wanneer een eigenschap metadata geen waarde heeft, wordt deze standaard niet vermeld op de eigenschappenpagina.
+* **Genummerde** lijst tonen: Gebruik deze eigenschap om een geordende keuzelijst weer te geven
+* **Keuzen**: Gebruik deze eigenschap om keuzen in een lijst op te geven
+* **Omschrijving** : Gebruik deze eigenschap om een korte beschrijving toe te voegen voor de metagegevenscomponent.
+* **Klasse**: Objectklasse waaraan de eigenschap is gekoppeld.
+* **Verwijderen**: Klik op dit pictogram om een component uit het schema te verwijderen.
 
 ![Pictogram Verwijderen op formulier voor metagegevensschema](assets/chlimage_1-177.png)
 
 >[!NOTE]
 >
->De component Verborgen veld bevat deze kenmerken niet. In plaats daarvan bevat de klasse eigenschappen, zoals Naam, Waarde, Veldlabel en Beschrijving. De waarden voor de component Verborgen veld worden als een POST-parameter verzonden wanneer het element wordt opgeslagen. Deze wordt niet opgeslagen als metagegevens voor het element.
+>De component [!UICONTROL Verborgen veld] bevat deze kenmerken niet. In plaats daarvan bevat de klasse eigenschappen, zoals Naam, Waarde, Veldlabel en Beschrijving. De waarden voor de component Verborgen veld worden als een POST-parameter verzonden wanneer het element wordt opgeslagen. Deze wordt niet opgeslagen als metagegevens voor het element.
 
 If you select the **[!UICONTROL Required]** option, you can search for assets missing mandatory metadata. Vouw in het deelvenster **[!UICONTROL Filters]** de voorspelling voor **[!UICONTROL metagegevensvalidatie]** uit en selecteer de optie **[!UICONTROL Ongeldig]** . In de zoekresultaten worden assets weergegeven waarvoor verplichte metadata ontbreken die u via het schemaformulier hebt geconfigureerd.
 
@@ -163,7 +155,7 @@ Als u een tabblad in de eigenschappenpagina wilt weergeven naast het tabblad waa
 
 ![Het tabblad dat is geselecteerd in de lijst Contextual Metadata wordt weergegeven op de pagina met eigenschappen van elementen](assets/contextual-metadata-asset-properties.png)
 
-*Afbeelding: Contextafhankelijke metagegevens in de pagina met eigenschappen van elementen*
+*Afbeelding: Contextuele metagegevens op de pagina met eigenschappen van elementen.*
 
 ### Eigenschappen in JSON-bestand opgeven {#specify-properties-in-json-file}
 
@@ -263,7 +255,7 @@ Als de map een submap heeft, nemen de elementen in de submap de metagegevens ove
 
    ![Tekstveld toegevoegd aan de formuliereditor voor metagegevensschema](assets/text-field-metadata-schema-editor.png)
 
-   *Afbeelding: Tekstveld toegevoegd aan formuliereditor voor metagegevensschema*
+   *Afbeelding: Tekstveld toegevoegd aan formuliereditor voor metagegevensschema.*
 
 1. Click **[!UICONTROL Save]**. Het gewijzigde formulier wordt weergegeven op de pagina **[!UICONTROL Metadata Schema Forms]** .
 1. Klik/tik op **[!UICONTROL Toepassen op map(pen)]** op de werkbalk om de aangepaste metagegevens toe te passen op een map.
@@ -295,7 +287,7 @@ U kunt verplichte velden definiëren op mapniveau. Deze worden afgedwongen voor 
 
    ![Voeg een verplicht veld toe aan het metagegevensformulier door Vereist te selecteren op het tabblad Regels in de Formuliereditor voor metagegevensschema](assets/mandatory-field-metadata-schema-editor.png)
 
-   *Afbeelding: Verplicht veld in formuliereditor voor metagegevens*
+   *Afbeelding: Verplicht veld in formuliereditor voor metagegevensschema.*
 
 1. Click **[!UICONTROL Save]**. Het gewijzigde formulier wordt weergegeven op de pagina **[!UICONTROL Metadata Schema Forms]** . Selecteer het formulier en klik of tik op **[!UICONTROL Toepassen op map(pen)]** op de werkbalk om de aangepaste metagegevens toe te passen op een map.
 

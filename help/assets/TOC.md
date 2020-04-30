@@ -4,7 +4,7 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: Gebruikershandleiding voor AEM 6.5-middelen
 translation-type: tm+mt
-source-git-commit: c9ac722cb8903d1d9946c7a6f797f102cb99bbf2
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -103,7 +103,7 @@ source-git-commit: c9ac722cb8903d1d9946c7a6f797f102cb99bbf2
    + [PDF-rasterizer gebruiken](aem-pdf-rasterizer.md)
    + [Uploadbeperkingen configureren](configuring-asset-upload-restrictions.md)
    + [Aanbevolen werkwijzen voor AEM- en Creative Cloud-integratie](aem-cc-integration-best-practices.md)
-   + [Integreren met InDesign-server](indesign.md)
+   + [Integreren met InDesign Server](indesign.md)
    + [Metadataprofielen](metadata-profiles.md)
    + [Digital Rights Management in middelen](drm.md)
    + [Demo-pakket gebruiken voor elementinzichten](touch-ui-using-demo-package-for-asset-insights.md)

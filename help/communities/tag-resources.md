@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: c012d639-c6e6-4f73-bbd8-78a4baa38c17
 translation-type: tm+mt
-source-git-commit: fa01c9fad82adb021220631a0536ab77ceb01e31
+source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
 
 ---
 
@@ -81,7 +81,7 @@ De beheerder die de markeringen op enablement middelen toepast moet zich van de 
 
 Als er bijvoorbeeld een `ski-catalog` naamruimte wordt gemaakt en ingesteld in een catalogus met de naam `Ski Catalog`, heeft deze mogelijk twee onderliggende tags: `lesson-1` en `lesson-2`.
 
-Aldus, om het even welke enablement middelen die met één van worden geëtiketteerd
+Aldus, om het even welke enablement middelen die met één van worden geëtiketteerd:
 
 * ski-catalogus:les-1
 * ski-catalogus:les-2

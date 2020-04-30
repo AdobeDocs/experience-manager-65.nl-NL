@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 5d5eebe4-46c9-4028-9354-c5f27944fcdc
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -34,13 +34,12 @@ Zie ook het [Vormen Dynamische Media - wijze](/help/assets/config-dms7.md)Scene7
 
 1. Navigeer in uw AEM-instantie naar **[!UICONTROL Gereedschappen > Beveiliging > Gebruikers]** en selecteer **[!UICONTROL Gebruiker]** maken. Deze servicegebruiker moet over *lees-/schrijfmachtigingen* beschikken om `/content/dam.`
 1. Voer in de velden **[!UICONTROL ID]** en **[!UICONTROL Wachtwoord]** een gebruikersnaam en wachtwoord in. bijvoorbeeld **FTP-gebruiker**. Deze naam wordt in de tijdlijn weergegeven als de gebruiker die het element heeft gemaakt. Wanneer een element wordt geüpload vanaf FTP, wordt een element beschouwd als gemaakt wanneer het naar de FTP-server wordt geüpload en naar AEM wordt geduwd.
-1. Neem contact op met [Adobe Enterprise Support for Experience Manager](https://helpx.adobe.com/contact/enterprise-support.ec.html) om toegang te vragen tot het functiepakket 18912 voor downloaden. U hebt mogelijk de volgende informatie nodig wanneer u contact opneemt met de ondersteuningsafdeling:
+1. Neem contact op met de klantenservice van [Adobe Enterprise voor Experience Manager](https://helpx.adobe.com/nl/contact/enterprise-support.ec.html) om toegang te vragen tot het functiepakket 18912 voor downloaden. U hebt mogelijk de volgende informatie nodig wanneer u contact opneemt met de ondersteuningsafdeling:
 
    * IP van de server adres voor uw instantie van de Auteur, met inbegrip van het havenaantal (door gebrek, is het havenaantal 4502.)
    * Gebruikersnaam en wachtwoord voor AEM-service uit de vorige stap.
 
-1. Adobe Enterprise Support for AEM biedt u de FTP-referenties en toegang tot functiepak 18912.
+1. De klantenservice van Adobe Enterprise voor AEM biedt u de FTP-referenties en toegang tot het functiepakket 18912.
 1. Wanneer u het functiepak 18912 ontvangt, installeer het.
 
    Zie [hoe te met Pakketten](/help/sites-administering/package-manager.md) voor meer informatie werken bij het gebruiken van het Aandeel van het Pakket en de pakketten in AEM.
-

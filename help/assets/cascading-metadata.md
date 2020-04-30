@@ -1,9 +1,9 @@
 ---
-title: Trapsgewijze metagegevens
+title: Trapsgewijze metagegevens in [!DNL Adobe Experience Manager Assets].
 description: In dit artikel wordt beschreven hoe u trapsgewijze metagegevens voor elementen definieert.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -23,7 +23,7 @@ Hier volgen enkele gebruiksgevallen waarvoor u trapsgewijze metagegevens kunt de
 * Opties wijzigen die voor een bepaald veld worden weergegeven op basis van de waarde die in een ander veld is opgegeven.
 * Stel de standaardwaarde voor metagegevens in een bepaald veld in op basis van de waarde die in een ander veld is opgegeven.
 
-## Metagegevens met trapsgewijze opmaak configureren in AEM {#configure-cascading-metadata-in-aem}
+## Metagegevens met trapsgewijze opmaak configureren in [!DNL Experience Manager]{#configure-cascading-metadata-in-aem}
 
 Overweeg een scenario waarin u trapsgewijze metagegevens wilt weergeven op basis van het geselecteerde type element. Enkele voorbeelden
 
@@ -32,7 +32,7 @@ Overweeg een scenario waarin u trapsgewijze metagegevens wilt weergeven op basis
 
 Geef de copyrightinformatie, ongeacht het gekozen elementtype, weer als een verplicht veld.
 
-1. Ga in de interface van Experience Manager naar **[!UICONTROL Extra]** > **[!UICONTROL Middelen]** > **[!UICONTROL Metagegevensschema&#39;s]**.
+1. Ga in de [!DNL Experience Manager] interface naar **[!UICONTROL Gereedschappen]** > **[!UICONTROL Elementen]** > **[!UICONTROL Metagegevensschema&#39;s]**.
 1. In the **[!UICONTROL Schema Forms]** page, select a schema form and then click **[!UICONTROL Edit]** from the toolbar to edit the schema.
 
    ![select_form](assets/select_form.png)
@@ -47,11 +47,11 @@ Geef de copyrightinformatie, ongeacht het gekozen elementtype, weer als een verp
 
    ![asset_type_field](assets/asset_type_field.png)
 
-1. Sleutelwaardeparen zijn de opties die aan een gebruiker van een formulier worden verstrekt. U kunt de sleutel-waardeparen of manueel of van een JSON- dossier verstrekken.
+1. Sleutelwaardeparen zijn de opties die aan een gebruiker van een formulier worden verstrekt. U kunt de sleutel-waardeparen of manueel of van een JSON dossier verstrekken.
 
    * Als u de waarden handmatig wilt opgeven, selecteert u Handmatig **** toevoegen en klikt u op Keuze **** toevoegen en geeft u de optietekst en -waarde op. Geef bijvoorbeeld de elementtypen Video, PDF, Word en Afbeelding op.
 
-   * Als u de waarden van een JSON-bestand dynamisch wilt ophalen, selecteert u **[!UICONTROL Toevoegen via JSON-pad]** en geeft u het pad van het JSON-bestand op. AEM haalt de sleutel-waarde paren in real time op wanneer het formulier aan de gebruiker wordt gepresenteerd.
+   * Als u de waarden van een JSON-bestand dynamisch wilt ophalen, selecteert u **[!UICONTROL Toevoegen via JSON-pad]** en geeft u het pad van het JSON-bestand op. [!DNL Experience Manager] Hiermee haalt u de sleutelwaardeparen op in real-time wanneer het formulier aan de gebruiker wordt gepresenteerd.
    Beide opties sluiten elkaar uit. U kunt de opties niet importeren uit een JSON-bestand en handmatig bewerken.
 
    ![add_choice](assets/add_choice.png)
@@ -105,8 +105,8 @@ Geef de copyrightinformatie, ongeacht het gekozen elementtype, weer als een verp
 
    ![Trapsgewijze metagegevens voor video-elementen](assets/video_asset.png)
 
-   *Afbeelding: Trapsgewijze metagegevens voor een video*
+   *Afbeelding: Trapsgewijze metagegevens voor een video.*
 
    ![Trapsgewijze metagegevens voor documentelementen](assets/doc_type_fields.png)
 
-   *Afbeelding: Trapsgewijze metagegevens voor een document*
+   *Afbeelding: Trapsgewijze metagegevens voor een document.*

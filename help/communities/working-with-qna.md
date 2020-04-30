@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 6e6ffe09-c50b-4238-8b8c-597c133d0a9e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 2bcd098ae901070d5e50cd89d06c854884b4e461
 
 ---
 
@@ -32,8 +32,8 @@ De functie van het QnA-forum (vragen en antwoorden) biedt leden van de gemeensch
 
 In de documentatie wordt beschreven:
 
-* het toevoegen van de QnA forumeigenschap aan een plaats AEM.
-* configuratie-instellingen voor de `QnA`component.
+* Het toevoegen van de QnA-forumfunctie aan een AEM-site.
+* De montages van de configuratie voor de `QnA`component.
 
 ## Een forum voor vragen en antwoorden toevoegen aan een pagina {#adding-a-q-a-forum-to-a-page}
 
@@ -117,18 +117,19 @@ Geef op het tabblad **Instellingen** instellingen op voor onderwerpen (vragen) e
 
 * **Maximale bestandsgrootte afbeelding bijvoegen**
 
-   Alleen relevant als Uploaden van bestand toestaan is ingeschakeld. Het maximum aantal bytes dat een geüploade afbeeldingsbestand kan hebben. De standaardwaarde is 2097152****(2 MB).
+   Alleen relevant als Uploaden van bestand toestaan is ingeschakeld. Het maximum aantal bytes dat een geüploade afbeeldingsbestand kan hebben. De standaardwaarde is 2097152 (2 MB).
 
 * **Reacties toestaan**
 
    Als deze optie is ingeschakeld, kunt u reacties op opmerkingen op de vraag toestaan. Standaard is uitgeschakeld.
+
 * **Stemmen toestaan**
 
    Als deze optie is ingeschakeld, voegt u de functie Stemmen toe aan een vraag. Standaard is uitgeschakeld.
 
 * **Gebruikers toestaan opmerkingen en onderwerpen te verwijderen**
 
-   Als deze optie is ingeschakeld, kunnen leden de opmerkingen en vragen die ze hebben geplaatst verwijderen. Standaard is** ** uitgeschakeld.
+   Als deze optie is ingeschakeld, kunnen leden de opmerkingen en vragen die ze hebben geplaatst verwijderen. Standaard is uitgeschakeld.
 
 * **Geprivilegieerde leden toestaan**
 
@@ -138,7 +139,9 @@ Geef op het tabblad **Instellingen** instellingen op voor onderwerpen (vragen) e
 
    Als deze optie is ingeschakeld, wordt door de gebruiker gegenereerde inhoud geblokkeerd tijdens het bewerken in de ontwerpmodus.
 
-* **Geselecteerd antwoord naar boven verplaatsen**Indien ingeschakeld, wordt het eerste weergegeven antwoord een geselecteerd antwoord. Standaard is uitgeschakeld.
+* **Geselecteerd antwoord bovenaan plaatsen**
+
+   Als deze optie ingeschakeld is, wordt een eerste weergegeven antwoord geselecteerd. Standaard is uitgeschakeld.
 * **Badges weergeven**
 
    Indien ingeschakeld, verdiende en toegewezen [badges](/help/communities/implementing-scoring.md) bij het blogbericht van een lid weergeven. Standaard is uitgeschakeld.
@@ -157,7 +160,7 @@ Geef op het tabblad **Instellingen** instellingen op voor onderwerpen (vragen) e
 
 * **Menatiepatroon gebruikersinterface**
 
-   Geef de patroontekenreeks op die de geregistreerde gebruiker in een bericht mag labelen (@genoemd). Bijvoorbeeld ~{{familyName}}{{givenName}}.
+   Geef de patroontekenreeks op die de geregistreerde gebruiker in een bericht mag labelen (@genoemd). Bijvoorbeeld, `~{{familyName}}{{givenName}}`.
 
 #### Tabblad Gebruikersmodernisering {#user-moderation-tab}
 
@@ -195,11 +198,15 @@ Geef op onder het tabblad **Gebruikersmodernisering** op hoe de geposte onderwer
 
 #### Tabblad Tagveld {#tag-field-tab}
 
-Onder het tabblad **Tagveld** zijn de tags die kunnen worden toegepast, indien toegestaan onder het tabblad **Instellingen **beperkt afhankelijk van de gekozen naamruimten.
+Onder het tabblad **Tagveld** zijn de tags die kunnen worden toegepast, indien toegestaan op het tabblad **Instellingen** , beperkt op basis van de gekozen naamruimten.
 
-* **Toegestane naamruimten** relevant als deze `Allow Tagging` is ingeschakeld op het tabblad **Instellingen **tab. De tags die kunnen worden toegepast, zijn beperkt tot de tags binnen de geselecteerde naamruimtecategorieën. De lijst met naamruimten bevat &quot;Standaardtags&quot; (de standaardnaamruimte) en &quot;Alle tags opnemen&quot;. De standaardwaarde is niet ingeschakeld, hetgeen betekent dat alle naamruimten zijn toegestaan.
+* **Toegestane naamruimten**
 
-* **Suggestielimiet** Voer het aantal tags in dat moet worden weergegeven als suggestie aan het lid dat naar het forum post. De waarde **-**1 betekent geen limieten. De standaardwaarde is 0.
+   Relevant als `Allow Tagging` is ingeschakeld onder het tabblad **Instellingen** . De tags die kunnen worden toegepast, zijn beperkt tot de tags binnen de geselecteerde naamruimtecategorieën. De lijst met naamruimten bevat &quot;Standaardtags&quot; (de standaardnaamruimte) en &quot;Alle tags opnemen&quot;. De standaardwaarde is niet ingeschakeld, hetgeen betekent dat alle naamruimten zijn toegestaan.
+
+* **Suggestiegrenswaarde**
+
+   Voer het aantal tags in dat moet worden weergegeven als suggestie aan het lid dat naar het forum post. De waarde **-**1 betekent geen limieten. De standaardwaarde is 0.
 
 #### Tabblad Instellingen sorteren {#sort-settings-tab}
 
@@ -221,11 +228,11 @@ Geef op onder het tabblad **Sorteerinstellingen** op hoe de geposte opmerkingen 
 
 ### Antwoorden identificeren {#identifying-answers}
 
-Eén antwoord kan met de `Select Answer` knop worden gemarkeerd als correct of nuttig. Als een vraag is gemarkeerd als Beantwoord, kan een ander antwoord pas worden geselecteerd als de eerste is uitgeschakeld met de `Unmark Chosen Answer`knop.
+Eén antwoord kan met de `Select Answer` knop worden gemarkeerd als correct of nuttig. Als een vraag is gemarkeerd als Beantwoord, kan een ander antwoord pas worden geselecteerd als de eerste is uitgeschakeld met de `Unmark Chosen Answer` knop.
 
 Als deze optie is geselecteerd als een handig antwoord, kunt u de selectie ongedaan maken met de `Unmark Chosen Answer` knop.
 
-Zodra een antwoord als levensvatbaar antwoord wordt geselecteerd, een aanwijzing dat de vraag naast het vraagonderwerp op de belangrijkste pagina QnA `Answered`wordt getoond.
+Zodra een antwoord als levensvatbaar antwoord wordt geselecteerd, een aanwijzing dat de vraag naast het vraagonderwerp op de belangrijkste pagina QnA is getoond. `Answered`
 
 #### Moderatoren en beheerders {#moderators-and-administrators}
 
@@ -237,10 +244,10 @@ Ze kunnen ook antwoorden identificeren.
 
 Afhankelijk van de configuratie kunnen bezoekers zich aanmelden bij de site:
 
-* post een nieuwe vraag.
-* bewerk of verwijder de vragen die ze hebben geschreven.
-* vlagvragen of antwoorden van andere leden.
-* antwoorden identificeren voor vragen die ze hebben geschreven.
+* Plaats een nieuwe vraag.
+* Bewerk of verwijder de vragen die ze hebben geschreven.
+* Vlagvragen of antwoorden van andere leden.
+* Antwoorden identificeren voor vragen die ze hebben geschreven.
 
 #### Anoniem {#anonymous}
 

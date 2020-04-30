@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a420b0b1-65f4-4103-a7c9-263657c7870f
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
 
 ---
 
@@ -21,7 +21,9 @@ Dit zijn voorbeelden die helpen bij het leren en werken met AEM 6.1 Community [s
 
 ## Aanpassing op de client {#client-side-customization}
 
-Zie ook cliënt-zijaanpassing [SCF](client-customize.md).
+Zie ook:
+
+* [SCF client-side aanpassing](client-customize.md)
 
 * [Community Components Guide](components-guide.md)
 
@@ -45,7 +47,7 @@ Voorbeeldcode is beschikbaar in de [Adobe Marketing Cloud GitHub](https://github
 
 * [AEM Communities Todo MVC](https://github.com/Adobe-Marketing-Cloud/aem-communities-todomvc-sample)
 
-   ToDo MVC demonstreert hoe u een SCF+SRP-component helemaal opnieuw kunt ontwikkelen
+   ToDo MVC demonstreert hoe u een SCF+SRP-component volledig kunt ontwikkelen.
 
 * [Aan de slag met AEM-gemeenschappen](getting-started.md)
 
@@ -59,11 +61,11 @@ Voorbeeldcode is beschikbaar in de [Adobe Marketing Cloud GitHub](https://github
 
 Het pakket met Geometrixx-voorbeelden bevat demo-gebruikers. Er is vaak een verschil in ervaring tussen het zijn van een bezoeker (niet het programma geopend) of een lid (het programma geopend) en, zolang de de steekproefpakketten van Geometrixx geïnstalleerd blijven, kunt u deze gebruikers gebruiken om een het programma geopende staat te simuleren wanneer het onderzoeken met de gids [van de Componenten van de](components-guide.md)Gemeenschap.
 
-Navigeer voor een volledig overzicht van de demogebruikers met de Rail naar **[!UICONTROL Gereedschappen > Bewerkingen > Beveiliging > Gebruikers]**. Of gebruik de Klassieke UI [veiligheidsconsole](http://localhost:4502/useradmin) voor het beheren van gebruikers en groepen.
+Navigeer voor een volledig overzicht van de demogebruikers met de Rail naar **[!UICONTROL Gereedschappen]** > **[!UICONTROL Bewerkingen]** > **[!UICONTROL Beveiliging > Gebruikers]**. Of gebruik de Klassieke UI [veiligheidsconsole](http://localhost:4502/useradmin) voor het beheren van gebruikers en groepen.
 
 Als een [communitysite is gemaakt](getting-started.md), is het mogelijk demogebruikers toe te wijzen aan de gebruikersgroepen [van de](users.md)community.
 
-***gebruikersnaam */*wachtwoord:***
+***gebruikersnaam */*wachtwoord***:
 
 * aaron.mcdonald@mailinator.com / password
 * emily.andrews@mailinator.com / password

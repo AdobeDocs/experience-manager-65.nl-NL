@@ -11,24 +11,28 @@ content-type: reference
 discoiquuid: 410149d6-15bd-41e5-bdba-1d8e6eab7b87
 pagetitle: Communities Tools
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
 
 ---
 
 
 # Community-gereedschappen {#communities-tools}
 
-Op auteur, om tot de console van de Hulpmiddelen van Gemeenschappen toegang te hebben:
+Meld u aan bij de auteur voor toegang tot de console met EG-gereedschappen:
 
-* Vanuit globale navigatie: **[!UICONTROL Gereedschappen > Gemeenschappen]**
+* Vanuit globale navigatie: **[!UICONTROL Gereedschappen]** > **[!UICONTROL Gemeenschappen]**.
 
-![chlimage_1-129](assets/chlimage_1-129.png)
+   ![chlimage_1-129](assets/chlimage_1-129.png)
 
-* [Sitesjablonen](sites.md) - Console voor het maken en beheren van sitesjablonen
-* [Groepssjablonen](tools-groups.md)- Console voor het maken en beheren van groepssjablonen
-* [Community-functies](functions.md)- Console voor het maken en beheren van gemeenschapsfuncties
-* [Opslagconfiguratie](srp-config.md) - Console voor configuratie en selectie van de [standaard SRP](working-with-srp.md)
+* [Sitesjablonen](sites.md) - Console voor het maken en beheren van sitesjablonen.
+
+* [Groepssjablonen](tools-groups.md) - Console voor het maken en beheren van groepssjablonen.
+
+* [Community Functions](functions.md) - Console for community function creation and management.
+
+* [Opslagconfiguratie](srp-config.md) - Console voor configuratie en selectie van de [standaard SRP](working-with-srp.md).
 
 * [De Gids](components-guide.md) van de component - opent een interactieve plaats die voor experimenteren met hoe de componenten SCF werken en hoe zij kunnen worden gevormd of worden aangepast.
+
 * [Badges](badges.md) - Console waaruit aangepaste badges kunnen worden toegevoegd voor gebruik in [scoring- en badingregels](implementing-scoring.md)
 

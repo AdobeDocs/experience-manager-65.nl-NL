@@ -4,7 +4,7 @@ description: Leer hoe u de vereiste middelen vindt in Adobe Experience Manager m
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
@@ -40,7 +40,7 @@ Verken uzelf met de zoekinterface en de beschikbare acties.
 
 ![De interface voor zoekresultaten van Experience Manager Assets begrijpen](assets/aem_search_results.png)
 
-*Afbeelding: De interface voor zoekresultaten van Experience Manager Assets begrijpen*
+*Afbeelding: Werken met de zoekresultateninterface van Experience Manager Assets.*
 
 **A.** Sla de zoekopdracht op als een slimme verzameling. **B.** Hiermee kunt u de zoekresultaten beperken door filters of voorspelling in te stellen. **C.** Bestanden, mappen of beide weergeven. **D.** Klik op Filters om het linkerspoor te openen of te sluiten. **E.** Zoeklocatie is DAM. **F.** Het gebied van het onderzoek met user-provided onderzoekssleutelwoord. **G.** Selecteer de geladen zoekresultaten. **H.** Aantal weergegeven zoekresultaten van de totale zoekresultaten. **I.** Sluit zoekopdracht **J.** Schakel tussen de kaartweergave en de lijstweergave.
 
@@ -50,7 +50,7 @@ U kunt de gewenste elementen sneller vinden op de pagina met zoekresultaten met 
 
 ![Zie het geschatte aantal elementen zonder de zoekresultaten te filteren in zoekfacetten.](assets/asset_search_results_in_facets_filters.png)
 
-*Afbeelding: Zie het geschatte aantal elementen zonder zoekresultaten te filteren in zoekfacetten*
+*Afbeelding: Zie het geschatte aantal elementen zonder de zoekresultaten te filteren in zoekfacetten.*
 
 ## Zoekresultaten en gedrag begrijpen {#searchbehavior}
 
@@ -99,7 +99,7 @@ Als u suggesties voor meerdere zoektrefwoorden wilt ontvangen, blijft u alle tre
 
 ![Typ meerdere trefwoorden om suggesties weer te geven die in alle trefwoorden passen](assets/search_suggestionsmanykeywords.gif)
 
-*Afbeelding: Typ meerdere trefwoorden om suggesties weer te geven die in alle trefwoorden passen*
+*Afbeelding: Typ meerdere trefwoorden om suggesties weer te geven die in alle trefwoorden passen.*
 
 ### Rangschikking en boosting zoeken {#searchrank}
 
@@ -131,7 +131,7 @@ Experience Manager biedt verschillende methoden, zoals filters die van toepassin
 
 ![Zoekresultaten beperken tot een map door een mappad toe te voegen in het deelvenster Filters](assets/search_folder_select.gif)
 
-*Afbeelding: Zoekresultaten beperken tot een map door een mappad toe te voegen in het deelvenster Filters*
+*Afbeelding: Beperk de zoekresultaten tot een map door een mappad toe te voegen in het deelvenster Filters.*
 
 ### Vergelijkbare afbeeldingen zoeken {#visualsearch}
 
@@ -139,7 +139,7 @@ To find images that are visually similar to a user-selected image, click **[!UIC
 
 ![Vergelijkbare afbeeldingen zoeken met de optie in de kaartweergave](assets/search_find_similar.png)
 
-*Afbeelding: Vergelijkbare afbeeldingen zoeken met de optie in de kaartweergave*
+*Afbeelding: U kunt vergelijkbare afbeeldingen zoeken met de optie in de kaartweergave.*
 
 ### Adobe Stock-afbeeldingen {#adobestock}
 
@@ -244,7 +244,7 @@ Ga naar `https://[aem_server]:[port]/aem/assetpicker`om toegang te krijgen tot d
 
 ![Bladeren en element selecteren in de elementkiezer](assets/assetpicker.png)
 
-*Afbeelding: Bladeren en element selecteren in de elementkiezer*
+*Afbeelding: Blader door elementen en selecteer deze in de elementkiezer.*
 
 ## Beperkingen {#limitations}
 
@@ -285,7 +285,7 @@ Gebruik dubbele aanhalingstekens rond trefwoorden om te zoeken naar elementen di
 
 ![Gedrag zoeken met en zonder aanhalingstekens](assets/search_with_quotes.gif)
 
-*Afbeelding: Gedrag zoeken met en zonder aanhalingstekens*
+*Afbeelding: Gedrag zoeken met en zonder aanhalingstekens.*
 
 **Zoeken met jokerteken** sterretje: Als u de zoekopdracht wilt uitbreiden, gebruikt u een sterretje voor of na het zoekwoord om het gewenste aantal tekens te zoeken. Als u bijvoorbeeld zoekt naar tekst zonder sterretje, worden er geen elementen geretourneerd die een variatie van het woord bevatten (inclusief in de metagegevens). Een sterretje vervangt het gehele aantal tekens. Bijvoorbeeld,
 
@@ -296,7 +296,7 @@ Gebruik dubbele aanhalingstekens rond trefwoorden om te zoeken naar elementen di
 
 ![Het gebruik van jokertekens voor sterretjes in het zoeken naar elementen illustreren aan de hand van een voorbeeld](assets/search_with_asterisk_run.gif)
 
-*Afbeelding: Het gebruik van jokertekens voor sterretjes in het zoeken naar elementen illustreren aan de hand van een voorbeeld*
+*Afbeelding: Het illustreren van het gebruik van asteriskvervanging in het onderzoek van Activa gebruikend een voorbeeld.*
 
 **Zoeken met jokerteken voor** vraagtekens: Als u de zoekopdracht wilt uitbreiden, gebruikt u een of meer &#39;?&#39; tekens die exact overeenkomen met het aantal tekens. In de volgende afbeelding, bijvoorbeeld:
 
@@ -308,13 +308,13 @@ Gebruik dubbele aanhalingstekens rond trefwoorden om te zoeken naar elementen di
 
 ![Het gebruik van jokertekens in de zoekfunctie voor elementen illustreren aan de hand van een voorbeeld](assets/search_with_questionmark_run.gif)
 
-*Afbeelding: Het gebruik van jokertekens in de zoekfunctie voor elementen illustreren aan de hand van een voorbeeld*
+*Afbeelding: Het illustreren van het gebruik van vraagtekenvervanging in de onderzoek van Activa gebruikend een voorbeeld.*
 
 **Een trefwoord** uitsluiten: Gebruik een streepje om te zoeken naar elementen die geen trefwoord bevatten. De query retourneert bijvoorbeeld elementen die wel `running -shoe` , maar niet `running``shoe`. Op dezelfde manier retourneert `camp -night` query elementen die wel `camp` maar niet `night`bevatten. Merk op dat de `camp-night` vraag activa terugkeert die zowel `camp` als `night`bevatten.
 
 ![Gebruik van streepje om te zoeken naar elementen die geen uitgesloten trefwoord bevatten](assets/search_dash_exclude_keyword.gif)
 
-*Afbeelding: Gebruik van streepje om te zoeken naar elementen die geen uitgesloten trefwoord bevatten*
+*Afbeelding: Gebruik van streepje om te zoeken naar elementen die geen uitgesloten trefwoord bevatten.*
 
 ## Configuratie- en beheertaken met betrekking tot zoekfunctionaliteit {#configadmin}
 
@@ -415,7 +415,7 @@ Als u de opmerkingen over een asset of de versiegeschiedenis van een asset wilt 
 
 ![Tijdlijnitems voor een zoekmiddel sorteren](assets/sort_timeline_search_results.gif)
 
-*Afbeelding: Tijdlijnitems voor een zoekmiddel sorteren*
+*Afbeelding: Sorteer de tijdlijnitems voor een zoekmiddel.*
 
 ### Gezochte middelen downloaden {#download}
 

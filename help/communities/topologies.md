@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 46f135de-a0bf-451d-bdcc-fb29188250aa
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
 
 ---
 
@@ -39,9 +39,11 @@ Het vereisen van een gemeenschappelijke opslagresultaten in de volgende geadvise
 >
 >Wanneer de plaatsing geen [gemeenschappelijke opslag](working-with-srp.md)omvat, zal UGC slechts op publiceren AEM of auteursinstantie zichtbaar zijn waarop het was ingegaan.
 
+
 >[!NOTE]
 >
 >Voor meer informatie over het platform AEM, zie [Aanbevolen Plaatsingen](../../help/sites-deploying/recommended-deploys.md) en [Inleiding aan het Platform](../../help/sites-deploying/data-store-config.md)AEM.
+
 
 ## Voor productie {#for-production}
 
@@ -49,9 +51,9 @@ Het is van essentieel belang een gemeenschappelijke opslag voor UGC tot stand te
 
 Twee voorbeelden:
 
-1) Als het verwachte volume van UGC hoog is en een lokale instantie MongoDB mogelijk is, dan zou de keus [MSRP](msrp.md)zijn.
+1. Als het verwachte volume van UGC hoog is en een lokale instantie MongoDB mogelijk is, dan zou de keus [MSRP](msrp.md)zijn.
 
-2) Voor optimale prestaties voor paginacontent, zou de keus van een [publicatiecentrum](../../help/sites-deploying/recommended-deploys.md#tarmk-farm) en [ASRP](asrp.md) optimale schrapping van UGC met vrij ongecompliceerde verrichtingen verstrekken.
+1. Voor optimale prestaties voor paginacontent, zou de keus van een [publicatiecentrum](../../help/sites-deploying/recommended-deploys.md#tarmk-farm) en [ASRP](asrp.md) optimale schrapping van UGC met vrij ongecompliceerde verrichtingen verstrekken.
 
 Voor beide, kan de plaatsing op om het even welke OAK microkernel worden gebaseerd.
 
@@ -61,7 +63,7 @@ Voor meer informatie over eiken microkorrels, bezoek [Aanbevolen Plaatsingen](..
 
 ### TarMK Publish Farm {#tarmk-publish-farm}
 
-Wanneer de topologie publiceer landbouwbedrijf is, zijn de relevante onderwerpen van belang
+Wanneer de topologie publiceer landbouwbedrijf is, zijn de relevante onderwerpen van belang:
 
 * [Gebruikerssynchronisatie](sync.md)
 * [Gebruikers en gebruikersgroepen beheren](users.md)
@@ -100,7 +102,7 @@ Als u [ASRP](asrp.md), [DSRP](dsrp.md) of [MSRP](msrp.md) kiest voor productie, 
 
 * UGC [Common Store](working-with-srp.md)
 
-   Beschrijft de opslag van communautaire inhoud afzonderlijk van plaatsinhoud
+   Beschrijft de opslag van communautaire inhoud afzonderlijk van plaatsinhoud.
 
 * [Node Stores and Data Stores](../../help/sites-deploying/data-store-config.md)
 

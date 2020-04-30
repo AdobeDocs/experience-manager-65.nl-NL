@@ -1,16 +1,16 @@
 ---
 title: Vertaalprojecten maken
-description: Leer hoe u vertaalprojecten maakt in AEM.
+description: Leer hoe u vertaalprojecten maakt in [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d15273e9308926ca4745fc1045e2da9fe8ed91d4
+source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 ---
 
 
 # Vertaalprojecten maken {#creating-translation-projects}
 
-Als u een taalkopie wilt maken, activeert u een van de volgende workflows voor het kopiëren van talen die beschikbaar zijn onder de References rail in de AEM-gebruikersinterface.
+Als u een taalkopie wilt maken, activeert u een van de volgende workflows voor het kopiëren van talen die beschikbaar zijn onder de References-rail in de [!DNL Experience Manager] gebruikersinterface.
 
 * **Maken en vertalen**: In deze workflow worden elementen die moeten worden vertaald, gekopieerd naar de hoofdtaal van de taal waarnaar u wilt vertalen. Bovendien wordt, afhankelijk van de opties u kiest, een vertaalproject gecreeerd voor de activa in de console van Projecten. Afhankelijk van de instellingen kan het vertaalproject handmatig worden gestart of automatisch worden uitgevoerd zodra het vertaalproject is gemaakt.
 
@@ -28,15 +28,15 @@ Als u een taalkopie wilt maken, activeert u een van de volgende workflows voor h
 
 Met de workflow Maken en vertalen kunt u voor het eerst voor een bepaalde taal een kopie van de taal genereren. De workflow bevat de volgende opties:
 
-* Alleen structuur maken
-* Een nieuw vertaalproject maken
-* Toevoegen aan bestaand vertaalproject
+* Alleen structuur maken.
+* Maak een nieuw vertaalproject.
+* Toevoegen aan bestaand vertaalproject.
 
 ### Alleen structuur maken {#create-structure-only}
 
 Met de optie **[!UICONTROL Alleen structuur maken]** kunt u een doelmaphiërarchie in de hoofdmap van de doeltaal maken die overeenkomt met de hiërarchie van de bronmap in de hoofdmap van de brontaal. In dit geval worden bronassets naar de doelmap gekopieerd. Er wordt echter geen vertaalproject gegenereerd.
 
-1. Selecteer in de interface Elementen de bronmap waarvoor u een structuur wilt maken in de hoofdmap van de doeltaal.
+1. Selecteer in de [!DNL Assets] interface de bronmap waarvoor u een structuur wilt maken in de hoofdmap van de doeltaal.
 1. Open het venster **[!UICONTROL Referenties]** en klik/tik op **[!UICONTROL Taalkopieën]** onder **[!UICONTROL Kopieën]**.
 
    ![chlimage_1-57](assets/chlimage_1-57.png)
@@ -116,7 +116,7 @@ Als u deze optie gebruikt, worden de te vertalen middelen gekopieerd aan de taal
 
    ![de vertaalde metagegevens weergeven op de pagina met eigenschappen van elementen](assets/translated-metadata-asset-properties.png)
 
-   *Afbeelding: Vertaalde metagegevens op de pagina met eigenschappen van elementen*
+   *Afbeelding: Vertaalde metagegevens op de pagina met eigenschappen van elementen.*
 
 
    >[!NOTE]
@@ -277,13 +277,13 @@ Als u deze optie gebruikt, worden de elementen toegevoegd aan een bestaand verta
 
 ## Tijdelijke taalkopieën maken {#creating-temporary-language-copies}
 
-Wanneer u een vertaalworkflow uitvoert om een taalkopie bij te werken met bewerkte versies van de originele elementen, blijft de bestaande taalkopie behouden totdat u de vertaalde elementen goedkeurt. AEM Assets slaat de nieuw vertaalde activa op een tijdelijke plaats op en werkt het bestaande taalexemplaar bij nadat u uitdrukkelijk de activa goedkeurt. Als u de middelen afwijst, blijft de taalkopie ongewijzigd.
+Wanneer u een vertaalworkflow uitvoert om een taalkopie bij te werken met bewerkte versies van de originele elementen, blijft de bestaande taalkopie behouden totdat u de vertaalde elementen goedkeurt. [!DNL Adobe Experience Manager Assets] Hiermee slaat u de nieuw vertaalde middelen op een tijdelijke locatie op en werkt u de bestaande taalkopie bij nadat u de middelen expliciet hebt goedgekeurd. Als u de middelen afwijst, blijft de taalkopie ongewijzigd.
 
-1. Click/tap the source root folder under **[!UICONTROL Language Copies]** for which you already created a language copy, and then click/tap **[!UICONTROL Reveal in Assets]** to open the folder in AEM Assets.
+1. Click/tap the source root folder under **[!UICONTROL Language Copies]** for which you already created a language copy, and then click/tap **[!UICONTROL Reveal in Assets]** to open the folder in [!DNL Experience Manager Assets].
 
    ![chlimage_1-99](assets/chlimage_1-99.png)
 
-1. Selecteer in de interface Middelen een element dat u al hebt vertaald en klik op het pictogram **[!UICONTROL Bewerken]** op de werkbalk om het element te openen in de bewerkingsmodus.
+1. Selecteer in de [!DNL Assets] interface een element dat u al hebt vertaald en klik op het pictogram **[!UICONTROL Bewerken]** op de werkbalk om het element te openen in de bewerkingsmodus.
 1. Bewerk het element en sla de wijzigingen op.
 1. Voer stap 2-14 van de procedure [Toevoegen aan bestaand vertaalproject](#add-to-existing-translation-project) uit om de taalkopie bij te werken.
 1. Klik/tik de ellips bij de bodem van de tegel van de **[!UICONTROL Vertaal]** van de Baan. Uit de lijst met elementen op de pagina **[!UICONTROL Vertaaltaak]** kunt u duidelijk de tijdelijke locatie weergeven waar de vertaalde versie van het element is opgeslagen.
@@ -303,6 +303,9 @@ Wanneer u een vertaalworkflow uitvoert om een taalkopie bij te werken met bewerk
 
    ![chlimage_1-103](assets/chlimage_1-103.png)
 
-1. Navigeer naar de middelenconsole en open de pagina Eigenschappen voor elk van de vertaalde elementen om de vertaalde metagegevens weer te geven.
+1. Als u de vertaalde metagegevens wilt weergeven, navigeert u naar de [!DNL Assets] console en opent u de pagina [!UICONTROL Eigenschappen] voor elk van de vertaalde elementen.
 
-Zie [5 Stappen voor het efficiënt vertalen van metagegevens](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/)voor tips over het efficiënt vertalen van metagegevens voor elementen.
+>[!MORELIKETHIS]
+>
+>* [Tips om metagegevens](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/)efficiënt te vertalen.
+

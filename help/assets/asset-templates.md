@@ -1,18 +1,16 @@
 ---
-title: Elementsjablonen
+title: Asset templates in [!DNL Adobe Experience Manager Assets].
 description: Meer informatie over Asset-sjablonen vindt u in [!DNL Adobe Experience Manager Assets] en hoe u Asset-sjablonen kunt gebruiken om marketingmateriaal te maken.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: c8c35eedcce4a743e414b3a8e5bb6ef4b25ff3ee
 
 ---
 
 
 # Elementsjablonen {#asset-templates}
 
-Elementsjablonen zijn een speciale klasse elementen die het snel opnieuw gebruiken van visueel rijke inhoud voor digitale media en gedrukte media mogelijk maken. Een activamalplaatje omvat twee delen, de vaste overseinensectie en de editable sectie.
-
-De sectie met vaste berichten kan eigen inhoud bevatten, zoals merklogo en copyrightinformatie die zijn uitgeschakeld voor bewerking. De bewerkbare sectie kan visuele en tekstuele inhoud bevatten in velden die kunnen worden bewerkt om berichten aan te passen.
+Elementsjablonen zijn een speciale klasse elementen die het snel opnieuw gebruiken van visueel rijke inhoud voor digitale media en gedrukte media mogelijk maken. Een activamalplaatje omvat twee delen, de vaste overseinensectie en de editable sectie. De sectie met vaste berichten kan eigen inhoud bevatten, zoals merklogo en copyrightinformatie die zijn uitgeschakeld voor bewerking. De bewerkbare sectie kan visuele en tekstuele inhoud bevatten in velden die kunnen worden bewerkt om berichten aan te passen.
 
 Dankzij de flexibiliteit om beperkte bewerkingen uit te voeren en de globale handtekening te beveiligen, zijn asset templates ideaal voor het maken van bouwstenen voor snelle aanpassing en distributie van inhoud als inhoudsartefacten voor verschillende functies. Inhoud die opnieuw wordt gebruikt, helpt de kosten voor het beheer van afdruk- en digitale kanalen te verlagen en biedt holistische en consistente ervaringen op deze kanalen.
 
@@ -20,25 +18,19 @@ Als markeerteken kunt u sjablonen opslaan en beheren binnen [!DNL Experience Man
 
 Hoewel assetjablonen meestal [!DNL Adobe InDesign] bestanden zijn, vormt de ervaring in [!DNL Adobe InDesign] deze sjablonen geen belemmering voor het creëren van stellaire artefacten. U hoeft de velden van uw [!DNL Adobe InDesign] sjabloon niet toe te wijzen aan productvelden die u anders nodig hebt bij het maken van catalogi. U kunt de sjablonen in de WYSIWYG-modus rechtstreeks in de webinterface bewerken. Nochtans, voor [!DNL Adobe InDesign] om uw het uitgeven veranderingen te verwerken, moet u eerst vormen [!DNL Experience Manager Assets] om met [!DNL Adobe InDesign Server]te integreren.
 
-De mogelijkheid om [!DNL Adobe InDesign] sjablonen vanuit de webinterface te bewerken, bevordert een betere samenwerking tussen Creative Suite- en Marketing-medewerkers en verkort tegelijk de tijd die nodig is voor lokale promotieinitiatieven.
+De mogelijkheid om [!DNL Adobe InDesign] sjablonen te bewerken vanuit de webinterface helpt een betere samenwerking tussen creatief en marketingpersoneel te bevorderen. De verhoogde snelheid van de inhoud vermindert de tijd-aan-markt voor marketing zekerheden.
 
-U kunt het volgende doen met middelensjablonen:
+U kunt het volgende bereiken met middelensjablonen:
 
-* Bewerkbare sjabloonvelden wijzigen vanuit de webinterface
-* De basisopmaak van tekst bepalen, zoals tekengrootte, stijl en tekst op tagniveau
-* Afbeeldingen in de sjabloon wijzigen met de inhoudkiezer
-* Sjabloonbewerkingen voorvertonen
-* Meerdere sjabloonbestanden samenvoegen om een vervorming van meerdere pagina&#39;s te maken
+* Bewerkbare sjabloonvelden wijzigen vanuit de webinterface.
+* Hiermee bepaalt u de basisopmaak van tekst, zoals tekengrootte, stijl en tekst op tagniveau.
+* Wijzig de afbeeldingen in de sjabloon met de inhoudkiezer.
+* Sjabloonbewerkingen voorvertonen.
+* Voeg meerdere sjabloonbestanden samen om een vervorming van meerdere pagina&#39;s te maken.
 
 Wanneer u een sjabloon kiest voor uw onderpand, [!DNL Experience Manager Assets] maakt u een kopie van de sjabloon die u kunt bewerken. De oorspronkelijke sjabloon blijft behouden, zodat uw globale handtekening intact blijft en opnieuw kan worden gebruikt om de consistentie van uw merk te handhaven.
 
-U kunt het bijgewerkte bestand in de bovenliggende map in de volgende indelingen exporteren:
-
-* INDD
-* PDF
-* JPG
-
-U kunt de uitvoer in deze indelingen ook downloaden naar uw lokale systeem.
+U kunt het bijgewerkte bestand in de bovenliggende map exporteren in de indelingen INDD, PDF of JPG. U kunt de uitvoer in deze indelingen ook downloaden naar uw lokale bestandssysteem.
 
 ## Een zekerheid maken {#creating-a-collateral}
 
@@ -70,13 +62,13 @@ Overweeg een scenario waarin u digitaal afdrukbaar materiaal wilt maken, zoals b
 
    <!--![chlimage_1-106](assets/.png) -->
 
-   U kunt ook het dialoogvenster sluiten en naar de map op de pagina Sjablonen gaan waarmee u bent begonnen om de brochure weer te geven die u hebt gemaakt. Het type van het onderpand verschijnt op zijn duimnagel in kaartmening. In dit geval wordt de brochure bijvoorbeeld weergegeven op de miniatuur.
+   U kunt ook het dialoogvenster sluiten en naar de map op de pagina Sjablonen gaan waarmee u bent begonnen om de brochure weer te geven die u hebt gemaakt. Het type van het onderpand verschijnt op zijn duimnagel in kaartmening. In dit geval wordt bijvoorbeeld het woord [!UICONTROL Brochure] weergegeven op de miniatuur.
 
    ![chlimage_1-107](assets/chlimage_1-312.png)
 
 ## Een zekerheid bewerken {#editing-a-collateral}
 
-U kunt direct nadat u het hebt gemaakt, een onderpand bewerken. U kunt de sjabloon ook openen vanaf de pagina Sjablonen of de elementpagina.
+U kunt direct nadat u het hebt gemaakt, een onderpand bewerken. U kunt de sjabloon ook openen vanaf de pagina [!UICONTROL Sjablonen] of de elementpagina.
 
 1. Voer een van de volgende handelingen uit om het onderpand te openen voor bewerking:
 
@@ -100,7 +92,7 @@ U kunt direct nadat u het hebt gemaakt, een onderpand bewerken. U kunt de sjablo
 
    >[!NOTE]
    >
-   >Zorg ervoor dat uw [!DNL Experience Manager] instantie is geïntegreerd met een bestand [!DNL InDesign Server] [!DNL Experience Manager Assets] waarmee u gegevens uit de InDesign-sjabloon kunt extraheren en ter beschikking kunt stellen voor bewerking. Zie [De middelen van Experience Manager integreren met InDesign Server](/help/assets/indesign.md)voor meer informatie.
+   >Zorg ervoor dat uw [!DNL Experience Manager] instantie is geïntegreerd met een sjabloon [!DNL InDesign Server] waarmee u gegevens uit de [!DNL Experience Manager Assets] [!DNL InDesign] sjabloon kunt extraheren en deze beschikbaar kunt maken voor bewerking. Zie [Experience Manager-elementen integreren met InDesign Server](/help/assets/indesign.md)voor meer informatie.
 
 1. Als u de tekst in een bewerkbaar veld wilt wijzigen, klikt u op het tekstveld in de lijst met bewerkbare velden en bewerkt u de tekst in het veld.
 
@@ -201,3 +193,7 @@ U kunt direct nadat u het hebt gemaakt, een onderpand bewerken. U kunt de sjablo
    >[!NOTE]
    >
    >U kunt een samengevoegd onderpand later niet bewerken of gebruiken om ander onderpand te maken.
+
+## Aanbevolen werkwijzen en beperkingen {#best-practices-limitations-tips}
+
+* De AEM InDesign-editor werkt op tagniveau en alle tekst onder één tag wordt als één entiteit beschouwd. Als u de tekstopmaak en stijlen tijdens het bewerken wilt behouden, moet u elke alinea (of tekst met een andere opmaak) afzonderlijk labelen.

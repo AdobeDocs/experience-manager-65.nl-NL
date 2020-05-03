@@ -3,7 +3,7 @@ title: Gebruik Connected Assets om DAM-middelen te delen in de ontwerpworkflow v
 description: Gebruik middelen die beschikbaar zijn op een externe implementatie van [!DNL Adobe Experience Manager Assets] wanneer u uw webpagina's maakt op een andere implementatie van Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
+source-git-commit: 2cdcea028814b40fb178e63f583939df27a46cad
 
 ---
 
@@ -46,12 +46,12 @@ Hieronder worden de diverse rollen beschreven voor de configuratie en toepassing
 
 | Rol | Scope | Gebruikersgroep | Gebruikersnaam in voorbeeldprocedure | Vereiste |
 |---|---|---|---|---|
-| [!DNL Sites] beheerder | Lokaal | Experience Manager-beheerder | `admin` | Stel Experience Manager in en configureer integratie met de externe [!DNL Assets] implementatie. |
-| DAM-gebruiker | Lokaal | Auteur | `ksaner` | Wordt gebruikt om de assets die bij `/content/DAM/connectedassets/` zijn opgehaald, weer te geven en te dupliceren. |
-| [!DNL Sites] author | Lokaal | Auteur (met leestoegang op de externe DAM en auteurstoegang op lokale [!DNL Sites]) | `ksaner` | End user are [!DNL Sites] authors who use this integration to improve their content velocity. De auteurs zoeken met de Content Finder naar assets in de externe DAM en gebruiken de vereiste afbeeldingen op lokale webpagina&#39;s. De referenties van de `ksaner` DAM-gebruiker worden gebruikt. |
-| [!DNL Assets] beheerder | Extern | Experience Manager-beheerder | `admin` op externe Experience Manager | Configureer CORS (Cross-Origin Resource Sharing). |
-| DAM-gebruiker | Extern | Auteur | `ksaner` op externe Experience Manager | Auteur-rol bij de implementatie van de externe Experience Manager. Zoek en blader naar assets in gekoppelde assets met de Content Finder. |
-| DAM-distributeur (technische gebruiker) | Extern | Pakketontwikkelaars en siteauteurs | `ksaner` op externe Experience Manager | This user present on the remote deployment is used by Experience Manager local server (not the Site author role) to fetch the remote assets, on behalf of [!DNL Sites] author. Deze rol is anders dan de twee bovenstaande `ksaner`-rollen en hoort bij een andere gebruikersgroep. |
+| [!DNL Sites] beheerder | Lokaal | Experience Manager `administrators` | `admin` | Stel Experience Manager in en configureer integratie met de externe [!DNL Assets] implementatie. |
+| DAM-gebruiker | Lokaal | `Authors` | `ksaner` | Wordt gebruikt om de assets die bij `/content/DAM/connectedassets/` zijn opgehaald, weer te geven en te dupliceren. |
+| [!DNL Sites] author | Lokaal | `Authors` (met lees toegang op verre DAM en auteurstoegang op lokaal [!DNL Sites]) | `ksaner` | End user are [!DNL Sites] authors who use this integration to improve their content velocity. De auteurs zoeken met de Content Finder naar assets in de externe DAM en gebruiken de vereiste afbeeldingen op lokale webpagina&#39;s. De referenties van de `ksaner` DAM-gebruiker worden gebruikt. |
+| [!DNL Assets] beheerder | Extern | Experience Manager `administrators` | `admin` op externe Experience Manager | Configureer CORS (Cross-Origin Resource Sharing). |
+| DAM-gebruiker | Extern | `Authors` | `ksaner` op externe Experience Manager | Auteur-rol bij de implementatie van de externe Experience Manager. Zoek en blader naar assets in gekoppelde assets met de Content Finder. |
+| DAM-distributeur (technische gebruiker) | Extern | `Authors` | `ksaner` op externe Experience Manager | This user present on the remote deployment is used by Experience Manager local server (not the Site author role) to fetch the remote assets, on behalf of [!DNL Sites] author. Deze rol is anders dan de twee bovenstaande `ksaner`-rollen en hoort bij een andere gebruikersgroep. |
 
 ## Configure a connection between [!DNL Sites] and [!DNL Assets] deployments {#configure-a-connection-between-sites-and-assets-deployments}
 

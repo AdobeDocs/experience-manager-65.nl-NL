@@ -3,7 +3,7 @@ title: Metagegevensprofielen om de metagegevensvereisten van elementen aan te pa
 description: Informatie over metagegevensprofielen voor elementen. Leer hoe u een metagegevensprofiel maakt en toepast op mapelementen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 95ac9d4c8b171c01b9adc056f5dc3a9d776c0465
 
 ---
 
@@ -54,7 +54,6 @@ Met een metagegevensprofiel kunt u standaardmetagegevens toepassen op elementen 
 
 1. Tik/klik op **[!UICONTROL Gereed]**. Het metagegevensprofiel wordt toegevoegd aan de lijst met profielen op de pagina **[!UICONTROL Metagegevensprofielen]** .<br>
 
-
    ![Metagegevensprofiel toegevoegd aan pagina Metagegevensprofielen](assets/MetadataProfiles-page.png)
 
 ## Een metagegevensprofiel kopiëren {#copying-a-metadata-profile}
@@ -86,7 +85,7 @@ Als u een ander metagegevensprofiel aan een map hebt toegewezen, overschrijft he
 
 Mappen waaraan een profiel is toegewezen, worden in de gebruikersinterface aangeduid met de naam van het profiel dat in de kaartnaam wordt weergegeven.
 
-![chlimage_1-205](assets/chlimage_1-489.png)
+![chlimage_1-206](assets/chlimage_1-489.png)
 
 U kunt metagegevensprofielen toepassen op specifieke mappen of op alle elementen.
 
@@ -128,13 +127,13 @@ Naast het toepassen van een profiel op een map, kunt u ook een profiel globaal t
 
 U kunt elementen opnieuw verwerken in een map die al een bestaand metagegevensprofiel heeft dat u later hebt gewijzigd. Zie Elementen [opnieuw verwerken in een map nadat u het verwerkingsprofiel](processing-profiles.md#reprocessing-assets)hebt bewerkt.
 
-**Voer een van de volgende handelingen uit als u een metagegevensprofiel globaal wilt toepassen**
+Ga als volgt te werk als u een metagegevensprofiel globaal wilt toepassen:
 
 * Navigeer naar `https://[aem_server]:[port]/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` en pas het juiste profiel toe en tik op **[!UICONTROL Opslaan]**.
 
    ![chlimage_1-209](assets/chlimage_1-492.png)
 
-* Navigeer naar CRXDE Lite naar het volgende knooppunt: `/content/dam/jcr:content`. Voeg de eigenschap toe `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>` en tik op **Alles** opslaan.
+* Navigeer in CRXDE Lite naar het volgende knooppunt: `/content/dam/jcr:content`. Voeg de eigenschap toe `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>` en klik op **[!UICONTROL Alles]** opslaan.
 
    ![chlimage_1-210](assets/chlimage_1-493.png)
 
@@ -157,6 +156,10 @@ U kunt een metadataprofiel uit een map verwijderen vanuit het menu **[!UICONTROL
 1. Tik op het AEM-logo en navigeer naar **[!UICONTROL Middelen]** en vervolgens naar de map waaruit u een metagegevensprofiel wilt verwijderen.
 1. Tik in de map op het vinkje om het te selecteren en tik vervolgens op **[!UICONTROL Eigenschappen]**.
 1. Selecteer het tabblad **[!UICONTROL Metagegevensprofielen]** en selecteer **[!UICONTROL Geen]** in de vervolgkeuzelijst en klik op **[!UICONTROL Opslaan]**. Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
+
+## Beperkingen en aanbevolen procedures {#limitations-best-practices-tips}
+
+* U kunt al bestaande metagegevensprofielen hebben sinds de upgrade naar [!DNL Experience Manager] 6.5. Als u na de upgrade een dergelijk profiel toepast in [!UICONTROL mapeigenschappen] op het tabblad [!UICONTROL Metagegevensprofielen] , worden de formuliervelden voor metagegevens niet weergegeven. Als u echter een nieuw metagegevensprofiel toepast, worden de formuliervelden weergegeven, maar niet beschikbaar zoals u had verwacht. Er gaat geen functionaliteit verloren, maar als u de (niet-beschikbare) formuliervelden wilt zien, bewerkt en slaat u de bestaande metagegevensprofielen op.
 
 >[!MORELIKETHIS]
 >

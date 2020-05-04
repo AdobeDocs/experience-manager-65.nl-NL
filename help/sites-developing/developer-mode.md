@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 589e3a83-7d1a-43fd-98b7-3b947122829d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 2b0ef111f2f393fac2da1eef76c2ec79a471ff3f
 
 ---
 
@@ -36,13 +36,9 @@ Deze hulp een ontwikkelaar om:
 >
 >* Deze optie is alleen beschikbaar in de interface met aanraakbediening (wanneer u pagina&#39;s bewerkt).
 >* Is niet beschikbaar op mobiele apparaten of kleine vensters op het bureaublad (vanwege ruimtebeperkingen).
->
->    * Dit gebeurt wanneer de breedte minder dan 1024 px is.
->
->* Vereist de juiste machtigingen/rechten:
->
->    * De toegang tot de Wijze van de Ontwikkelaar wordt gegeven aan gebruikers die schrijftoegang op hebben `/apps`.
->
+   >   * Dit gebeurt wanneer de breedte minder dan 1024 px is.
+>* Deze optie is alleen beschikbaar voor gebruikers die lid zijn van de `administrators` groep.
+
 
 >[!CAUTION]
 >
@@ -78,7 +74,7 @@ Het deelvenster bestaat uit twee tabbladen:
 
 * **[Fouten](/help/sites-developing/developer-mode.md#errors)**- Wanneer er problemen optreden, worden details voor elke component weergegeven.
 
-### Componenten {#components}
+### Onderdelen {#components}
 
 ![chlimage_1-12](assets/chlimage_1-12.png)
 

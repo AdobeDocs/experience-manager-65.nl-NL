@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 9584392a-d8a3-45a4-9cdf-fd211c8e6091
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2dad220d6593ed542816f8a97b0d4b44f0d57876
+source-git-commit: 590dc4464182d4baf8293e7bb0774ce92971c0af
 
 ---
 
@@ -31,7 +31,7 @@ Dit artikel stelt belangrijke vragen om te overwegen wanneer het in dienst nemen
 Het ontwikkelen van enige paginatoepassingen op AEM veronderstelt dat de front-end ontwikkelaar standaardbeste praktijken wanneer het creëren van een KUUROORD waarneemt. Als als front-end ontwikkelaar u deze algemene beste praktijken evenals weinig AEM-specifieke principes volgt, zal uw SPA functioneel met [AEM en zijn inhoud-creatie mogelijkheden](/help/sites-developing/spa-walkthrough.md#content-editing-experience-with-spa)zijn.
 
 * **[Draagbaarheid](/help/sites-developing/spa-architecture.md#portability)-**Zoals bij alle onderdelen moeten de onderdelen zo draagbaar mogelijk zijn. Het KUUROORD zou met draaglijk en herbruikbare componenten moeten worden gebouwd.
-* **[AEM Drives Site Structure](/help/sites-developing/spa-architecture.md#aem-drives-site-structure)**- De front-end ontwikkelaar maakt onderdelen en bezit hun interne structuur, maar vertrouwt op AEM om de inhoudsstructuur van de site te definiëren.
+* **[AEM Drives Site Structure](/help/sites-developing/spa-architecture.md#aem-drives-site-structure)**- De ontwikkelaar aan de voorzijde maakt onderdelen en bezit hun interne structuur, maar vertrouwt op AEM om de inhoudsstructuur van de site te definiëren.
 * **[Dynamische rendering](/help/sites-developing/spa-architecture.md#dynamic-rendering)**- Alle rendering moet dynamisch zijn.
 * **[Het dynamische Verpletteren](#dynamic-routing)**- het KUUUROORD is verantwoordelijk voor het verpletteren en AEM luistert aan het en haalt die op het wordt gebaseerd. Om het even welk verpletteren zou ook dynamisch moeten zijn.
 
@@ -63,9 +63,9 @@ Zoals met het teruggeven, zou al het verpletteren ook dynamisch moeten zijn. In 
 
 Om het even welke statische verpletterende werken tegen het [beginsel van portabiliteit](/help/sites-developing/spa-architecture.md#portability) en beperkt de auteur door niet compatibel te zijn met inhoud auteurseigenschappen van AEM. Bijvoorbeeld, met het statische verpletteren, als de inhoudsauteur een route zou willen veranderen of een pagina zou veranderen, zou hij of zij de front eindontwikkelaar moeten vragen om het te doen.
 
-## Maven Archetype voor SPA Starter Kit {#maven-archetype-for-spa-starter-kit}
+## AEM-projectarchetype {#aem-project-archetype}
 
-Adobe adviseert leveraging het [Maven Archetype voor Kit](https://github.com/adobe/aem-spa-project-archetype) van de Aanzet van het KUUROORD om u te helpen uw eigen project van het KUUROORD voor AEM beginnen.
+Om het even welk project AEM zou hefboomwerking het Archetype [van het Project van](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)AEM, dat de projecten van het KUUROORD gebruikend React of Hoekig steunt en hefboomwerkingen SDK van het KUUROORD.
 
 ## SPA-ontwerpmodellen {#spa-design-models}
 
@@ -81,7 +81,7 @@ Er kunnen zich echter gevallen voordoen waarin dit niet volledig noodzakelijk is
    <th><strong>Nadelen</strong></th>
   </tr>
   <tr>
-   <td>AEM wordt gebruikt als hoofdCMS zonder het kader van SDK van de Redacteur van het <a href="/help/sites-developing/spa-reference-materials.md">KUUROORD te gebruiken.</a></td>
+   <td>AEM wordt gebruikt als koploze CMS zonder het kader van SDK van de Redacteur van het <a href="/help/sites-developing/spa-reference-materials.md">KUUROORD te gebruiken.</a></td>
    <td>De front-end ontwikkelaar heeft volledige controle over de app.</td>
    <td><p>Inhoudsauteurs kunnen geen gebruikmaken van de AEM-ervaring voor het schrijven van inhoud.</p> <p>De code is noch draagbaar noch herbruikbaar als het statische verwijzingen of het verpletteren bevat.</p> <p>Hiermee wordt het gebruik van de sjablooneditor niet toegestaan, zodat de ontwikkelaar van de front-end via het JCR bewerkbare sjablonen moet bijhouden.</p> </td>
   </tr>

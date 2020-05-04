@@ -10,7 +10,7 @@ content-type: reference
 discoiquuid: 9cdd7648-d67e-414d-aedf-a5687da39326
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2dad220d6593ed542816f8a97b0d4b44f0d57876
+source-git-commit: 590dc4464182d4baf8293e7bb0774ce92971c0af
 
 ---
 
@@ -110,9 +110,9 @@ Bij het ontwikkelen van de app wordt [Webpack](https://webpack.js.org/) gebruikt
 
 Nadat het pakket is gemaakt, kan het worden geüpload naar een AEM-instantie.
 
-### Maven Archetype voor SPA Starter Kit {#maven-archetype-for-spa-starter-kit}
+### AEM-projectarchetype {#aem-project-archetype}
 
-Adobe adviseert leveraging het [Maven Archetype voor Kit](https://github.com/adobe/aem-spa-project-archetype) van de Aanzet van het KUUROORD om u te helpen uw eigen project van het KUUROORD voor AEM beginnen.
+Om het even welk project AEM zou hefboomwerking het Archetype [van het Project van](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)AEM, dat de projecten van het KUUROORD gebruikend React of Hoekig steunt en hefboomwerkingen SDK van het KUUROORD.
 
 ## Toepassingsstructuur {#application-structure}
 
@@ -280,9 +280,9 @@ Tot slot kan de afbeelding worden weergegeven in `image.component.html`.
 
 Componenten in een toepassing van één pagina moeten regelmatig informatie uitwisselen. Er zijn verschillende aanbevolen manieren om dit te doen, die als volgt worden opgesomd in toenemende mate van complexiteit.
 
-* **** Optie 1: Centraliseer de logica en uitzending aan de noodzakelijke componenten bijvoorbeeld door een util klasse als zuivere object-oriented oplossing te gebruiken.
-* **** Optie 2: De componentenstaten van het aandeel door een staatsbibliotheek zoals NgRx te gebruiken.
-* **** Optie 3: Gebruik de objecthiërarchie door de containercomponent aan te passen en uit te breiden.
+* **Optie 1:** Centraliseer de logica en uitzending aan de noodzakelijke componenten bijvoorbeeld door een util klasse als zuivere object-oriented oplossing te gebruiken.
+* **Optie 2:** De componentenstaten van het aandeel door een staatsbibliotheek zoals NgRx te gebruiken.
+* **Optie 3:** Gebruik de objecthiërarchie door de containercomponent aan te passen en uit te breiden.
 
 ## Volgende stappen {#next-steps}
 

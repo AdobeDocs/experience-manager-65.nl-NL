@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 6329301c-1a26-4a46-99ae-1b7cc15b08be
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2dad220d6593ed542816f8a97b0d4b44f0d57876
+source-git-commit: 14cc66dfef7bc7781907bdd6093732912c064579
 
 ---
 
@@ -86,6 +86,12 @@ De eigenschappen van het meta-middel die de inhoud van het KUUROORD beschrijven:
 * `cq:pagemodel_router`: Het inschakelen of uitschakelen ` [ModelRouter](/help/sites-developing/spa-routing.md)` van de `PageModelManager` bibliotheek
 
 * `cq:pagemodel_route_filters`: Door komma&#39;s gescheiden lijsten of reguliere expressies om routes te bieden die de gebruiker ` [ModelRouter](/help/sites-developing/spa-routing.md)` moet negeren.
+
+>[!CAUTION]
+>
+>Dit document gebruikt de app We.Retail Journal alleen voor demonstratiedoeleinden. Het mag niet worden gebruikt voor projectwerkzaamheden.
+>
+>Om het even welk AEM project zou hefboomwerking het Archetype [van het Project van](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)AEM moeten, dat de projecten van het KUUROORD gebruikend React of Angular steunt en hefboomwerkingen het KUUROORD SDK.Alle projecten van het KUUROORD op AEM zouden op het Geweven Archetype voor Kit van de Aanzet van het KUUROORD moeten worden gebaseerd.
 
 ## Overlaysynchronisatie van paginaeditor {#page-editor-overlay-synchronization}
 

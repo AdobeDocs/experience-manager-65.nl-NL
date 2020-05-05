@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 6b545a51-3677-4ea1-ac7e-2d01ba19283e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4b965d8f7814816126601f6366c1ba313e404538
+source-git-commit: 4456b5366387c27810c407d6ac9e6c17fc290269
 
 ---
 
@@ -20,8 +20,8 @@ source-git-commit: 4b965d8f7814816126601f6366c1ba313e404538
 
 Als u webgegevens van uw AEM-pagina&#39;s wilt bijhouden in Adobe Analytics, maakt u een configuratie voor Adobe Analytics Cloud Services en een Adobe Analytics-framework:
 
-* **** Configuratie Adobe Analytics: De informatie over uw Adobe Analytics-account. Met de configuratie Adobe Analytics kan AEM verbinding maken met Adobe Analytics. Maak een configuratie voor Adobe Analytics voor elk account dat u gebruikt.
-* **** Adobe Analytics Framework: Een set toewijzingen tussen de eigenschappen van de Adobe Analytics-rapportsuite en CQ-variabelen. Gebruik een framework om te configureren hoe uw websitegegevens uw Adobe Analytics-rapporten vullen. Frameworks zijn gekoppeld aan een configuratie voor Adobe Analytics. U kunt veelvoudige kaders voor elke configuratie tot stand brengen.
+* **Configuratie Adobe Analytics:** De informatie over uw Adobe Analytics-account. Met de configuratie Adobe Analytics kan AEM verbinding maken met Adobe Analytics. Maak een configuratie voor Adobe Analytics voor elk account dat u gebruikt.
+* **Adobe Analytics Framework:** Een set toewijzingen tussen de eigenschappen van de Adobe Analytics-rapportsuite en CQ-variabelen. Gebruik een framework om te configureren hoe uw websitegegevens uw Adobe Analytics-rapporten vullen. Frameworks zijn gekoppeld aan een configuratie voor Adobe Analytics. U kunt veelvoudige kaders voor elke configuratie tot stand brengen.
 
 Wanneer u een webpagina aan een framework koppelt, wordt de webpagina en de onderliggende pagina van die pagina bijgehouden. Paginaweergaven kunnen vervolgens worden opgehaald uit Adobe Analytics en worden weergegeven in de Sites-console.
 
@@ -50,7 +50,7 @@ Voordat u verdergaat, moet u ervoor zorgen dat u zich bij Adobe Analytics kunt a
 
 ### AEM configureren voor gebruik van uw Adobe Analytics-datacenters {#configuring-aem-to-use-your-adobe-analytics-data-centers}
 
-Adobe Analytics- [datacenters](https://developer.omniture.com/en_US/content_page/concepts-terminology/c-how-is-data-stored) verzamelen, verwerken en opslaan de gegevens die aan uw Adobe Analytics-rapportsuite zijn gekoppeld. U moet AEM configureren om het datacenter te gebruiken dat als host fungeert voor uw Adobe Analytics-rapportensuite. In de volgende tabel staan de beschikbare datacenters en de bijbehorende URL.
+Adobe Analytics- [datacenters](https://developer.omniture.com/en_US/content_page/concepts-terminology/c-how-is-data-stored) verzamelen, verwerken en opslaan de gegevens die aan uw Adobe Analytics-rapportsuite zijn gekoppeld. U moet AEM configureren om het datacenter te gebruiken dat als host fungeert voor uw Adobe Analytics-rapportsuite. In de volgende tabel staan de beschikbare datacenters en de bijbehorende URL.
 
 | Datacenter | URL |
 |---|---|
@@ -110,7 +110,7 @@ Voor identiteitskaart van de Reeks van het Rapport (RSID) die u gebruikt, kunt u
 >Bijvoorbeeld, wordt een kader gevormd om de *driemaandelijkse rapportreeks* te gebruiken en de auteur is de geselecteerde serverinstantie. Wanneer de pagina&#39;s samen met het kader worden gepubliceerd, worden de vraag nog gemaakt aan de Analytics van Adobe, nochtans bevatten deze vraag niet RSID. Slechts omvatten de vraag van de auteursinstantie RSID.
 
 1. Selecteer met **Navigatie** eerst **Gereedschappen**, **Cloud Services** en daarna **Oudere Cloud Services**.
-1. Blader naar **Adobe Analytics** en klik op **[+]** naast **Available Configurations**.
+1. Blader naar **Adobe Analytics** en selecteer **Configurations** tonen.
 1. Klik op de koppeling **[+]** naast de configuratie van Adobe Analytics.
 
 1. In het dialoogvenster **Kader** maken:

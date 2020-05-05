@@ -10,7 +10,7 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 6787511a-2ce0-421a-bcfb-90d5f32ad35e
 translation-type: tm+mt
-source-git-commit: a833a34bbeb938c72cdb851a46b2ffd97aee9f6d
+source-git-commit: 4456b5366387c27810c407d6ac9e6c17fc290269
 
 ---
 
@@ -21,14 +21,22 @@ Adobe Classifications exporteert classificatiegegevens op een geplande manier na
 
 Om dit te vormen:
 
-1. Navigeer via **Tools, Cloudservices** naar de sectie **Adobe Analytics** .
-1. Voeg een nieuwe configuratie toe. U ziet dat de configuratiesjabloon voor **Adobe Analytics Classifications** onder de configuratie van **Adobe Analytics Framework** wordt weergegeven. Geef desgewenst een **titel** en **naam** op:
+1. Selecteer met **Navigatie** eerst **Gereedschappen**, **Cloud Services** en daarna **Oudere Cloud Services**.
+1. Blader naar **Adobe Analytics** en selecteer **Configurations** tonen.
+1. Klik op de koppeling **[+]** naast de configuratie van Adobe Analytics.
 
-   ![aa-25](assets/aa-25.png)
+1. In het dialoogvenster **Kader** maken:
 
-1. Klik op **Maken** om de instellingen te configureren.
+   * Geef een **titel** op.
+   * U kunt optioneel de **naam** opgeven voor het knooppunt dat de frameworkgegevens in de opslagplaats opslaat.
+   * Classificaties **van Adobe Analytics selecteren**
+   Klik op **Maken**.
 
-   ![chlimage_1](assets/chlimage_1a.png)
+   ![Dialoogvenster Framework maken](assets/aa-25.png)
+
+1. Het dialoogvenster **Classificatieinstellingen** wordt geopend voor bewerking.
+
+   ![Dialoogvenster Classificatieinstellingen](assets/aa-classifications-settings.png)
 
    Tot de eigenschappen behoren:
 

@@ -3,7 +3,10 @@ title: Ondersteunde indelingen voor middelen
 description: Lijst met bestandsindelingen die worden ondersteund door AEM Assets en door Dynamic Media, en functies die worden ondersteund voor elke indeling.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2b30ab18aa22352d7ece4617d22391759592fd19
+source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+workflow-type: tm+mt
+source-wordcount: '1760'
+ht-degree: 2%
 
 ---
 
@@ -186,7 +189,7 @@ Overweeg het volgende naast de bovenstaande functionaliteit:
 
 ## Ondersteunde multimedia-indelingen {#supported-multimedia-formats}
 
-|  | Opslag | Metagegevensbeheer | Metagegevensextractie | Miniaturen genereren | FFMPEG-transcodering |
+|  | Opslag | Metagegevensbeheer | Metagegevensextractie | Miniaturen genereren | MPEG-transcodering |
 |:---|:---:|:---:|:---:|:---:|:---:|
 | AAC | ✓ | ✓ |  | − | * |
 | MIDI | ✓ | ✓ |  | − | * |
@@ -254,7 +257,7 @@ De toepasbaarheid van algemene DAM-workflows voor een aantal andere bestandsinde
 
 ## Ondersteunde MIME-typen {#supported-mime-types}
 
-Standaard detecteert AEM het bestandstype met de bestandsextensie. AEM kan het van de inhoud van de dossiers ontdekken. Selecteer voor de laatste optie de optie MIME [!UICONTROL detecteren uit inhoud] in [!UICONTROL Day CQ DAM Mime Type Service] in de AEM-webconsole.
+Standaard detecteert AEM het bestandstype met de bestandsextensie. AEM kan het van de inhoud van de dossiers ontdekken. Selecteer voor de laatste optie [!UICONTROL Detect MIME from content] in [!UICONTROL Day CQ DAM Mime Type Service] de AEM-webconsole.
 
 Een lijst van gesteunde types MIME is beschikbaar in CRXDE Lite bij `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
 

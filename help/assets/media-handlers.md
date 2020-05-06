@@ -3,7 +3,10 @@ title: Elementen verwerken met behulp van mediafuncties en workflows
 description: Leer meer over de media handlers en hoe u workflows kunt gebruiken om taken uit te voeren op uw digitale middelen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
+source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+workflow-type: tm+mt
+source-wordcount: '2133'
+ht-degree: 2%
 
 ---
 
@@ -59,11 +62,11 @@ De actieve media-handlers weergeven:
 
 De managers van media zijn de diensten die gewoonlijk in combinatie met werkschema&#39;s worden gebruikt.
 
-AEM beschikt over enkele standaardworkflows om elementen te verwerken. Open de workflowconsole en klik op het tabblad **[!UICONTROL Modellen]** om deze weer te geven: de workflowtitels die beginnen met AEM Assets zijn de assets-specifieke.
+AEM beschikt over enkele standaardworkflows om elementen te verwerken. Open de workflowconsole en klik op het **[!UICONTROL Models]** tabblad om deze weer te geven: de workflowtitels die beginnen met AEM Assets zijn de assets-specifieke.
 
 Bestaande workflows kunnen worden uitgebreid en nieuwe workflows kunnen worden gemaakt om elementen volgens specifieke vereisten te verwerken.
 
-The following example shows how to enhance the **[!UICONTROL AEM Assets Synchronization]** workflow so that sub-assets are generated for all assets except PDF documents.
+In het volgende voorbeeld ziet u hoe u de workflow **[!UICONTROL AEM Assets Synchronization]** kunt verbeteren, zodat er subassets worden gegenereerd voor alle assets behalve PDF-documenten.
 
 ### Een mediafunctie in- of uitschakelen {#disabling-enabling-a-media-handler}
 
@@ -72,9 +75,9 @@ De media-handlers kunnen worden uitgeschakeld of ingeschakeld via de Apache Feli
 Een media-handler in- en uitschakelen:
 
 1. Navigeer in uw browser naar `https://<host>:<port>/system/console/components`.
-1. Klik op **[!UICONTROL Uitschakelen]** naast de naam van de media-handler. Bijvoorbeeld: `com.day.cq.dam.handler.standard.mp3.Mp3Handler`.
+1. Klik **[!UICONTROL Disable]** naast de naam van de media manager. Bijvoorbeeld: `com.day.cq.dam.handler.standard.mp3.Mp3Handler`.
 1. De pagina vernieuwen: naast de mediafunctie wordt een pictogram weergegeven dat aangeeft dat het is uitgeschakeld.
-1. Klik naast de naam van de media-handler op **[!UICONTROL Inschakelen]** om de mediafunctie in te schakelen.
+1. Klik **[!UICONTROL Enable]** naast de naam van de mediafunctie om de mediafunctie in te schakelen.
 
 ### Nieuwe mediafunctie maken {#creating-a-new-media-handler}
 
@@ -135,16 +138,16 @@ Nadat u de volgende procedure hebt uitgevoerd en een tekstbestand in AEM laadt, 
 
 1. Maak in Eclipse een `myBundle` Maven-project:
 
-   1. Klik in de menubalk op **[!UICONTROL Bestand > Nieuw > Overige]**.
-   1. Vouw de map Maven uit in het dialoogvenster, selecteer Geweven project en klik op **[!UICONTROL Volgende]**.
-   1. Controleer Create een eenvoudig projectvakje en het vakje van de Plaatsen van de Werkruimte van het Gebruik standaard, dan klik **[!UICONTROL daarna]**.
+   1. Klik in de menubalk op **[!UICONTROL File > New > Other]**.
+   1. Vouw de map Maven uit in het dialoogvenster, selecteer Geweven project en klik op **[!UICONTROL Next]**.
+   1. Controleer Create een eenvoudig projectvakje en het vakje van de Plaatsen van de Werkruimte van het Gebruik standaard, dan klik **[!UICONTROL Next]**.
    1. Definieer het Maven-project:
 
       * Groep-id: com.day.cq5.myhandler
       * Artefact-id: myBundle
       * Naam: Mijn AEM-bundel
       * Omschrijving: Dit is mijn AEM-bundel
-   1. Click **[!UICONTROL Finish]**.
+   1. Klik op **[!UICONTROL Finish]**.
 
 
 1. Stel de Java-compiler in op versie 1.5:
@@ -155,7 +158,7 @@ Nadat u de volgende procedure hebt uitgevoerd en een tekstbestand in AEM laadt, 
       * Compatibiliteitsniveau compiler
       * Compatibiliteit van gegenereerde .class-bestanden
       * Broncompatibiliteit
-   1. Click **[!UICONTROL OK]**. Klik in het dialoogvenster op **[!UICONTROL Ja]**.
+   1. Klik op **[!UICONTROL OK]**. In the dialog window, click **[!UICONTROL Yes]**.
 
 
 1. Vervang de code in het `pom.xml` bestand door de volgende code:
@@ -428,12 +431,12 @@ Nadat u de volgende procedure hebt uitgevoerd en een tekstbestand in AEM laadt, 
 
 1. Compileer de klasse Java en maak de bundel:
 
-   1. Klik met de rechtermuisknop op het `myBundle` project, selecteer **[!UICONTROL Uitvoeren als]** en **[!UICONTROL Installeren]**.
+   1. Klik het `myBundle` project met de rechtermuisknop aan, selecteer **[!UICONTROL Run As]**, dan **[!UICONTROL Maven Install]**.
    1. De bundel `myBundle-0.0.1-SNAPSHOT.jar` (die de gecompileerde klasse bevat) wordt onder gemaakt `myBundle/target`.
 
 1. Maak in CRX Explorer een nieuw knooppunt onder `/apps/myApp`. Naam = `install`, Type = `nt:folder`.
 1. Kopieer de bundel `myBundle-0.0.1-SNAPSHOT.jar` en sla deze onder `/apps/myApp/install` (bijvoorbeeld met WebDAV) op. De nieuwe teksthandler is nu actief in AEM.
-1. Open de [!UICONTROL Apache Felix Web Management Console]in uw browser. Selecteer het tabblad [!UICONTROL Componenten] en schakel de standaardteksthandler uit `com.day.cq.dam.core.impl.handler.TextHandler`.
+1. Open de knop [!UICONTROL Apache Felix Web Management Console]. Selecteer het [!UICONTROL Components] tabblad en schakel de standaardteksthandler uit `com.day.cq.dam.core.impl.handler.TextHandler`.
 
 ## Media-handler op basis van opdrachtregel {#command-line-based-media-handler}
 
@@ -448,7 +451,7 @@ De volgende conversies kunnen automatisch worden uitgevoerd en opgeslagen binnen
 
 >[!NOTE]
 >
->Op niet-Windows-systemen retourneert het FFMpeg-gereedschap een fout tijdens het genereren van uitvoeringen voor een video-element met één aanhalingsteken (&#39;) in de bestandsnaam. Als de naam van het videobestand één aanhalingsteken bevat, verwijdert u het bestand voordat u het uploadt naar AEM.
+>Op niet-Windows-systemen retourneert het Mpeg-gereedschap een fout tijdens het genereren van uitvoeringen voor een video-element met één aanhalingsteken (&#39;) in de bestandsnaam. Als de naam van het videobestand één aanhalingsteken bevat, verwijdert u het bestand voordat u het uploadt naar AEM.
 
 Het `CommandLineProcess` proces voert de volgende bewerkingen uit in de volgorde waarin deze worden weergegeven:
 
@@ -482,11 +485,11 @@ Installeer ImageMagick eerst op de schijf die als host fungeert voor de AEM-serv
 
    Er wordt een gespiegelde afbeelding aan de map toegevoegd.
 
-Then, add the command line process step to the **[!UICONTROL DAM Update Asset]** workflow:
+Voeg vervolgens de processtap van de opdrachtregel toe aan de workflow **[!UICONTROL DAM Update Asset]**:
 
-1. Ga naar de **[!UICONTROL Workflowconsole]** .
-1. Bewerk op het tabblad **[!UICONTROL Modellen]** het model **[!UICONTROL DAM Update Asset]** .
-1. Wijzig de instellingen van de renderingstap **[!UICONTROL voor]** Web als volgt:
+1. Ga naar de **[!UICONTROL Workflow]** console.
+1. Bewerk op het **[!UICONTROL Models]** tabblad het **[!UICONTROL DAM Update Asset]** model.
+1. Wijzig de instellingen van de **[!UICONTROL Web enabled rendition]** stap als volgt:
 
    **Argumenten**:
 
@@ -497,14 +500,14 @@ Then, add the command line process step to the **[!UICONTROL DAM Update Asset]**
 U kunt de gewijzigde workflow testen door middel van een element aan `/content/dam`te voegen.
 
 1. Haal in het bestandssysteem een TIFF-afbeelding van uw keuze op. Wijzig de naam van het bestand in `myImage.tiff` en kopieer het naar `/content/dam`het bestand, bijvoorbeeld met WebDAV.
-1. Ga bijvoorbeeld naar de **[!UICONTROL CQ5 DAM]** -console `http://localhost:4502/libs/wcm/core/content/damadmin.html`.
+1. Ga bijvoorbeeld naar de **[!UICONTROL CQ5 DAM]** console `http://localhost:4502/libs/wcm/core/content/damadmin.html`.
 1. Open het element **[!UICONTROL myImage.tiff]** en controleer of de gespiegelde afbeelding en de drie miniaturen zijn gemaakt.
 
 #### Vorm de het processtap van CommandLineProcess {#configuring-the-commandlineprocess-process-step}
 
-Deze sectie beschrijft hoe u de [!UICONTROL procesargumenten] van [!UICONTROL CommandLineProcess] kunt instellen.
+This section describes how to set the [!UICONTROL Process Arguments] of the [!UICONTROL CommandLineProcess].
 
-Scheid de waarden van de [!UICONTROL procesargumenten] met komma&#39;s en start deze niet met een spatie.
+Scheid de waarden van de spatie [!UICONTROL Process Arguments] met komma&#39;s en start deze niet met spaties.
 
 | Argument-formaat | Beschrijving |
 |---|---|
@@ -512,23 +515,23 @@ Scheid de waarden van de [!UICONTROL procesargumenten] met komma&#39;s en start 
 | tn:&lt;width>:&lt;height> | Optioneel argument. Het proces leidt tot een duimnagel met de afmetingen die in het argument worden bepaald. <br>Er kunnen verschillende miniaturen worden gedefinieerd. |
 | cmd: &lt;command> | Definieert de opdracht die wordt uitgevoerd. De syntaxis hangt van het hulpmiddel van de bevellijn af. Er kan slechts één opdracht worden gedefinieerd. <br>De volgende variabelen kunnen worden gebruikt om de opdracht te maken:<br>`${filename}`: naam van het invoerbestand, bijvoorbeeld original.jpg <br> `${file}`: volledige padnaam van het invoerbestand, bijvoorbeeld /tmp/cqdam0816.tmp/original.jpg <br> `${directory}`: directory van het invoerbestand, bijvoorbeeld /tmp/cqdam0816.tmp <br>`${basename}`: naam van het invoerbestand zonder de extensie, bijvoorbeeld origineel <br>`${extension}`: extensie van het invoerbestand, bijvoorbeeld jpg |
 
-Bijvoorbeeld als ImageMagick is geïnstalleerd op de schijf die als host fungeert voor de AEM-server en als u een processtap maakt met [!UICONTROL CommandLineProcess] als Implementation en de volgende waarden als [!UICONTROL procesargumenten]:
+Bijvoorbeeld als ImageMagick is geïnstalleerd op de schijf die als host fungeert voor de AEM-server en als u een processtap maakt met [!UICONTROL CommandLineProcess] de methode Implementatie en de volgende waarden als [!UICONTROL Process Arguments]:
 
 `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`
 
 Wanneer de werkstroom vervolgens wordt uitgevoerd, is de stap alleen van toepassing op elementen die `image/gif` of `mime:image/tiff` als `mime-types`, het maakt een gespiegelde afbeelding van het origineel, zet deze om in JPG en maakt drie miniaturen met de afmetingen: 140x100, 48x48 en 10x250.
 
-Gebruik de volgende [!UICONTROL procesargumenten] om de drie standaardminiaturen te maken met ImageMagick:
+Gebruik het volgende [!UICONTROL Process Arguments] om de drie standaardduimnagels tot stand te brengen gebruikend ImageMagick:
 
 `mime:image/tiff,mime:image/png,mime:image/bmp,mime:image/gif,mime:image/jpeg,cmd:convert ${filename} -define jpeg:size=319x319 -thumbnail "319x319>" -background transparent -gravity center -extent 319x319 -write png:cq5dam.thumbnail.319.319.png -thumbnail "140x100>" -background transparent -gravity center -extent 140x100 -write cq5dam.thumbnail.140.100.png -thumbnail "48x48>" -background transparent -gravity center -extent 48x48 cq5dam.thumbnail.48.48.png`
 
-Gebruik de volgende [!UICONTROL procesargumenten] om de voor het web ingeschakelde uitvoering te maken met ImageMagick:
+Gebruik het volgende [!UICONTROL Process Arguments] om de Web-Toegelaten vertoning tot stand te brengen gebruikend ImageMagick:
 
 `mime:image/tiff,mime:image/png,mime:image/bmp,mime:image/gif,mime:image/jpeg,cmd:convert ${filename} -define jpeg:size=1280x1280 -thumbnail "1280x1280>" cq5dam.web.1280.1280.jpeg`
 
 >[!NOTE]
 >
->De [!UICONTROL stap CommandLineProcess] is alleen van toepassing op elementen (knooppunten van het type `dam:Asset`) of afstammingen van een element.
+>De [!UICONTROL CommandLineProcess] stap is alleen van toepassing op activa (knooppunten van het type `dam:Asset`) of afstammingen van een actief.
 
 >[!MORELIKETHIS]
 >

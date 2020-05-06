@@ -3,7 +3,10 @@ title: Metagegevens van uw digitale middelen beheren in [!DNL Adobe Experience M
 description: Meer informatie over de typen metagegevens en hoe u met [!DNL Adobe Experience Manager Assets] metagegevens voor elementen kunt beheren, zodat u elementen gemakkelijker kunt indelen en ordenen. [!DNL Experience Manager] maakt het mogelijk elementen automatisch te ordenen en te verwerken op basis van hun metagegevens.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c32e64d4921d7239d07f57ab9e12c744758faa0a
+source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+workflow-type: tm+mt
+source-wordcount: '1420'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +31,7 @@ Metagegevens zijn de verzameling van alle gegevens die beschikbaar zijn voor een
 * Naam van de map waarin deze zich bevindt.
 * Gerelateerde elementen of toegepaste tags.
 
-Het bovenstaande zijn de basiseigenschappen voor metagegevens die Experience Manager kan beheren voor elementen, zodat gebruikers alle elementen kunnen zien. Het is bijvoorbeeld handig elementen te bestellen op de laatste wijzigingsdatum wanneer u onlangs toegevoegde elementen probeert te vinden.
+Het bovenstaande zijn de basiseigenschappen van metagegevens die voor elementen [!DNL Experience Manager] kunnen worden beheerd, zodat gebruikers alle elementen kunnen zien. Het is bijvoorbeeld handig elementen te bestellen op de laatste wijzigingsdatum wanneer u onlangs toegevoegde elementen probeert te vinden.
 
 U kunt meer gegevens op hoog niveau toevoegen aan digitale elementen, bijvoorbeeld:
 
@@ -90,7 +93,7 @@ ID3-tags zijn ontworpen voor de MP3-bestandsindeling. Aanvullende informatie ove
 
 ### Exif {#exif}
 
-Exchangeable image file format (Exif) is de meest gebruikte metagegevensindeling voor digitale fotografie. Hiermee kunt u een vaste woordenlijst met metagegevenseigenschappen insluiten in vele bestandsindelingen, zoals JPEG, TIFF, RIFF en WAV. In Exif worden metagegevens opgeslagen als paren van een metagegevensnaam en een metagegevenswaarde. Deze naam-waarde-paren voor metagegevens worden ook wel tags genoemd, maar mogen niet worden verward met de tags in [!DNL Experience Manager].  Moderne digitale camera&#39;s maken Exif-metagegevens en de moderne grafische software ondersteunt deze. De EXIF-indeling is de kleinste gemene deler voor het beheer van metagegevens, met name voor afbeeldingen.
+Exchangeable image file format (Exif) is de meest gebruikte metagegevensindeling voor digitale fotografie. Hiermee kunt u een vaste woordenlijst met metagegevenseigenschappen insluiten in vele bestandsindelingen, zoals JPEG, TIFF, RIFF en WAV. In Exif worden metagegevens opgeslagen als paren van een metagegevensnaam en een metagegevenswaarde. Deze naam-waarde-paren voor metagegevens worden ook wel tags genoemd, maar mogen niet worden verward met de tags in [!DNL Experience Manager]. Moderne digitale camera&#39;s maken Exif-metagegevens en de moderne grafische software ondersteunt deze. De EXIF-indeling is de kleinste gemene deler voor het beheer van metagegevens, met name voor afbeeldingen.
 
 Een belangrijke beperking van Exif is dat een aantal populaire indelingen voor afbeeldingsbestanden, zoals BMP, GIF of PNG, dit niet ondersteunen.
 
@@ -98,7 +101,7 @@ Metagegevensvelden die door EXIF worden gedefinieerd, zijn doorgaans technisch v
 
 ### Overige metagegevens {#other-metadata}
 
-Andere meta-gegevens die van dossiers kunnen worden ingebed omvatten Microsoft Word, PowerPoint, Excel, etc.
+Andere metagegevens die kunnen worden ingesloten vanuit bestanden zijn onder andere [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel]enzovoort.
 
 ## Metagegevensschema {#metadata-schemata}
 

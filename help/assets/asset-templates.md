@@ -3,7 +3,10 @@ title: Asset templates in [!DNL Adobe Experience Manager Assets].
 description: Meer informatie over Asset-sjablonen vindt u in [!DNL Adobe Experience Manager Assets] en hoe u Asset-sjablonen kunt gebruiken om marketingmateriaal te maken.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c8c35eedcce4a743e414b3a8e5bb6ef4b25ff3ee
+source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+workflow-type: tm+mt
+source-wordcount: '1522'
+ht-degree: 0%
 
 ---
 
@@ -36,17 +39,17 @@ U kunt het bijgewerkte bestand in de bovenliggende map exporteren in de indeling
 
 Overweeg een scenario waarin u digitaal afdrukbaar materiaal wilt maken, zoals brochures, vliegers en advertenties voor een komende campagne en wereldwijd wilt delen met verkooppunten. Het creëren van onderpand dat op een malplaatje wordt gebaseerd helpt een verenigde klantenervaring over kanalen leveren. Ontwerpers kunnen de campagnemalplaatjes (enig-pagina of multi-page) tot stand brengen gebruikend een creatieve oplossing, zoals [!DNL InDesign] en de malplaatjes uploaden aan [!DNL Experience Manager Assets] voor u. Voordat u een zekerheid maakt, moet u een of meer INDD-sjablonen vooraf uploaden naar en beschikbaar hebben [!DNL Experience Manager] .
 
-1. Klik in de [!DNL Experience Manager] interface op [!UICONTROL Elementen].
+1. Klik in de [!DNL Experience Manager] interface [!UICONTROL Assets].
 
-1. Kies **[!UICONTROL Sjablonen]** in de opties.
+1. Kies uit de opties **[!UICONTROL Templates]**.
 
    ![chlimage_1-101](assets/chlimage_1-306.png)
 
-1. Klik op **[!UICONTROL Maken]** en kies in het menu het element dat u wilt maken. Kies bijvoorbeeld **[!UICONTROL Brochure]**.
+1. Klik **[!UICONTROL Create]** en kies in het menu het element dat u wilt maken. Kies bijvoorbeeld **[!UICONTROL Brochure]**.
 
    ![chlimage_1-102](assets/chlimage_1-307.png)
 
-1. Een of meer INDD-sjablonen vooraf uploaden naar en beschikbaar hebben [!DNL Experience Manager] . Kies een sjabloon voor de brochure en klik op **[!UICONTROL Volgende]**.
+1. Een of meer INDD-sjablonen vooraf uploaden naar en beschikbaar hebben [!DNL Experience Manager] . Kies een sjabloon voor de brochure en klik op **[!UICONTROL Next]**.
 
    ![chlimage_1-103](assets/chlimage_1-308.png)
 
@@ -54,27 +57,27 @@ Overweeg een scenario waarin u digitaal afdrukbaar materiaal wilt maken, zoals b
 
    ![chlimage_1-104](assets/chlimage_1-309.png)
 
-1. (Optioneel) Klik op **[!UICONTROL Codes]** en selecteer een of meer codes voor de brochure. Klik op **[!UICONTROL Bevestigen]** om uw selectie te bevestigen.
+1. (Optioneel) Klik op een of meer tags voor de brochure **[!UICONTROL Tags]** en selecteer deze. Klik **[!UICONTROL Confirm]** om uw selectie te bevestigen.
 
    ![chlimage_1-105](assets/chlimage_1-310.png)
 
-1. Klik op **[!UICONTROL Maken]**. Een dialoogvenster bevestigt dat er een nieuwe brochure wordt gemaakt. Klik op **[!UICONTROL Openen]** om de brochure te openen in de bewerkingsmodus.
+1. Klik op **[!UICONTROL Create]**. Een dialoogvenster bevestigt dat er een nieuwe brochure wordt gemaakt. Klik **[!UICONTROL Open]** om de brochure te openen in de bewerkingsmodus.
 
    <!--![chlimage_1-106](assets/.png) -->
 
-   U kunt ook het dialoogvenster sluiten en naar de map op de pagina Sjablonen gaan waarmee u bent begonnen om de brochure weer te geven die u hebt gemaakt. Het type van het onderpand verschijnt op zijn duimnagel in kaartmening. In dit geval wordt bijvoorbeeld het woord [!UICONTROL Brochure] weergegeven op de miniatuur.
+   U kunt ook het dialoogvenster sluiten en naar de map op de pagina Sjablonen gaan waarmee u bent begonnen om de brochure weer te geven die u hebt gemaakt. Het type van het onderpand verschijnt op zijn duimnagel in kaartmening. In dit geval wordt het woord bijvoorbeeld [!UICONTROL Brochure] weergegeven op de miniatuur.
 
    ![chlimage_1-107](assets/chlimage_1-312.png)
 
 ## Een zekerheid bewerken {#editing-a-collateral}
 
-U kunt direct nadat u het hebt gemaakt, een onderpand bewerken. U kunt de sjabloon ook openen vanaf de pagina [!UICONTROL Sjablonen] of de elementpagina.
+U kunt direct nadat u het hebt gemaakt, een onderpand bewerken. U kunt het bestand ook openen vanaf de [!UICONTROL Templates] pagina of de elementpagina.
 
 1. Voer een van de volgende handelingen uit om het onderpand te openen voor bewerking:
 
    * Open het onderpand (brochure in dit geval) dat u in stap 7 van [Create een onderpand](/help/assets/asset-templates.md#creating-a-collateral)hebt gemaakt.
-   * Navigeer op de pagina Sjablonen naar de map waarin u het onderpand hebt gemaakt en klik op de handeling Snel [!UICONTROL bewerken] op de miniatuur van een onderpand.
-   * Klik op de werkbalk op **[!UICONTROL Bewerken]** op de elementpagina voor het onderpand.
+   * Navigeer op de pagina Sjablonen naar de map waarin u het onderpand hebt gemaakt en klik op de [!UICONTROL Edit] snelle actie op de miniatuur van een onderpand.
+   * Klik op de werkbalk op de elementpagina voor het onderpand. **[!UICONTROL Edit]**
    * Select the collateral and click **[!UICONTROL Edit]** from the toolbar.
    <!--![chlimage_1-108](assets/chlimage_1-313.png) -->
 
@@ -100,11 +103,11 @@ U kunt direct nadat u het hebt gemaakt, een onderpand bewerken. U kunt de sjablo
 
    U kunt de teksteigenschappen, zoals lettertypestijl, -kleur en -grootte, bewerken met de beschikbare opties.
 
-1. Klik op **[!UICONTROL Voorvertoning]** om een voorvertoning van de tekstwijzigingen weer te geven.
+1. Klik **[!UICONTROL Preview]** om een voorvertoning van de tekstwijzigingen weer te geven.
 
    ![chlimage_1-112](assets/chlimage_1-317.png)
 
-1. Als u een afbeelding wilt omwisselen, klikt u op de **[!UICONTROL Asset Finder]**.
+1. Als u een afbeelding wilt omwisselen, klikt u op de knop **[!UICONTROL Asset Finder]**.
 
    ![chlimage_1-113](assets/chlimage_1-318.png)
 
@@ -116,7 +119,7 @@ U kunt direct nadat u het hebt gemaakt, een onderpand bewerken. U kunt de sjablo
 
    ![chlimage_1-115](assets/chlimage_1-320.png)
 
-1. Klik op **[!UICONTROL Voorvertoning]** om een voorvertoning van de afbeelding weer te geven.
+1. Klik **[!UICONTROL Preview]** om een voorvertoning van de afbeelding weer te geven.
 
    ![chlimage_1-116](assets/chlimage_1-321.png)
 
@@ -124,7 +127,7 @@ U kunt direct nadat u het hebt gemaakt, een onderpand bewerken. U kunt de sjablo
 
    ![chlimage_1-117](assets/chlimage_1-322.png)
 
-1. Klik op **[!UICONTROL Voorvertoning]** op de werkbalk om een voorvertoning van alle wijzigingen weer te geven. Klik op **[!UICONTROL Gereed]** om de bewerkingswijzigingen in het onderpand op te slaan.
+1. Klik op **[!UICONTROL Preview]** de werkbalk om een voorvertoning van alle wijzigingen weer te geven. Klik **[!UICONTROL Done]** om de bewerkingswijzigingen in het onderpand op te slaan.
 
    >[!NOTE]
    >
@@ -140,8 +143,8 @@ U kunt direct nadat u het hebt gemaakt, een onderpand bewerken. U kunt de sjablo
    >
    >Zie [!DNL InDesign] Aanbevolen werkwijzen voor het werken met InDesign-documenten in Experience Manager [voor meer informatie over het werken met](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html)documenten.
 
-1. Als u een PDF-uitvoering voor de brochure wilt genereren, selecteert u de optie Acrobat in het dialoogvenster en klikt u op **[!UICONTROL Doorgaan]**.
-1. Het onderpand wordt gecreeerd in de omslag u met begon. Als u de vertoningen wilt weergeven, opent u het onderpand en kiest u **[!UICONTROL Uitvoeringen]** in de lijst GlobalNav.
+1. Als u een PDF-uitvoering voor de brochure wilt genereren, selecteert u de optie Acrobat in het dialoogvenster en klikt u op **[!UICONTROL Continue]**.
+1. Het onderpand wordt gecreeerd in de omslag u met begon. Als u de vertoningen wilt weergeven, opent u het onderpand en kiest u een optie in de lijst GlobalNav. **[!UICONTROL Renditions]**
 
    ![chlimage_1-118](assets/chlimage_1-323.png)
 
@@ -151,15 +154,15 @@ U kunt direct nadat u het hebt gemaakt, een onderpand bewerken. U kunt de sjablo
 
 ## Zekerheden samenvoegen {#merge-collateral}
 
-1. Klik in de [!DNL Experience Manager] interface op [!UICONTROL Elementen] op de navigatiepagina.
+1. Klik in de [!DNL Experience Manager] interface [!UICONTROL Assets] op de navigatiepagina.
 
-1. Kies **[!UICONTROL Sjablonen]** in de opties.
+1. Kies uit de opties **[!UICONTROL Templates]**.
 
-1. Klik op **[!UICONTROL Maken]** en kies **[!UICONTROL Samenvoegen]** in het menu.
+1. Klik **[!UICONTROL Create]** en kies **[!UICONTROL Merge]** van het menu.
 
    ![chlimage_1-120](assets/chlimage_1-325.png)
 
-1. Klik op de pagina [!UICONTROL Sjabloon samenvoegen] op **[!UICONTROL Samenvoegen]**.
+1. From the [!UICONTROL Template Merge] page, click **[!UICONTROL Merge]**.
 
    ![chlimage_1-121](assets/chlimage_1-326.png)
 
@@ -179,16 +182,16 @@ U kunt direct nadat u het hebt gemaakt, een onderpand bewerken. U kunt de sjablo
 
    ![chlimage_1-125](assets/chlimage_1-330.png)
 
-1. Klik op **[!UICONTROL Volgende]** op de werkbalk.
-1. Wijzig in het scherm **[!UICONTROL Voorbeeld en opnieuw rangschikken]** de sjablonen indien nodig en bekijk een voorvertoning van de selectie van de sjablonen die u wilt samenvoegen. Klik vervolgens op **[!UICONTROL Volgende]** op de werkbalk.
+1. Klik op **[!UICONTROL Next]** de werkbalk.
+1. Wijzig de rangschikking van de sjablonen desgewenst in het **[!UICONTROL Preview & Reorder]** scherm en bekijk een voorvertoning van de selectie van de sjablonen die u wilt samenvoegen. Then, click **[!UICONTROL Next]** from the toolbar.
 
    ![chlimage_1-126](assets/chlimage_1-331.png)
 
-1. In het [!UICONTROL Configure scherm van het Malplaatje] , specificeer een naam voor het onderpand. U kunt desgewenst tags opgeven die u geschikt acht. Selecteer **[!UICONTROL Acrobat (.PDF)]** als u de uitvoer in PDF-indeling wilt exporteren. Standaard wordt het onderpand geëxporteerd in JPG- en [!DNL InDesign] opmaakindeling. Als u de weergaveminiatuur voor het uit meerdere pagina&#39;s bestaande element wilt wijzigen, klikt u op **[!UICONTROL Miniatuur]** wijzigen.
+1. In the [!UICONTROL Configure Template] screen, specify a name for the collateral. U kunt desgewenst tags opgeven die u geschikt acht. Als u de uitvoer in PDF-indeling wilt exporteren, selecteert u **[!UICONTROL Acrobat (.PDF)]**. Standaard wordt het onderpand geëxporteerd in JPG- en [!DNL InDesign] opmaakindeling. Klik op de knop om de weergaveminiatuur voor het uit meerdere pagina&#39;s bestaande element te wijzigen. **[!UICONTROL Change Thumbnail]**
 
    ![chlimage_1-127](assets/chlimage_1-332.png)
 
-1. Klik op **[!UICONTROL Opslaan]** en vervolgens op **[!UICONTROL OK]** in het dialoogvenster om het dialoogvenster te sluiten. Het uit meerdere pagina&#39;s bestaande element wordt gemaakt in de map waarmee u bent begonnen.
+1. Klik **[!UICONTROL Save]** **[!UICONTROL OK]** en klik vervolgens in het dialoogvenster om het dialoogvenster te sluiten. Het uit meerdere pagina&#39;s bestaande element wordt gemaakt in de map waarmee u bent begonnen.
 
    >[!NOTE]
    >
@@ -196,4 +199,4 @@ U kunt direct nadat u het hebt gemaakt, een onderpand bewerken. U kunt de sjablo
 
 ## Aanbevolen werkwijzen en beperkingen {#best-practices-limitations-tips}
 
-* De AEM InDesign-editor werkt op tagniveau en alle tekst onder één tag wordt als één entiteit beschouwd. Als u de tekstopmaak en stijlen tijdens het bewerken wilt behouden, moet u elke alinea (of tekst met een andere opmaak) afzonderlijk labelen.
+* De [!DNL InDesign] editor in [!DNL Experience Manager] werkt op tagniveau en alle tekst onder één tag wordt beschouwd als één entiteit. Als u de tekstopmaak en stijlen tijdens het bewerken wilt behouden, moet u elke alinea (of tekst met een andere opmaak) afzonderlijk labelen.

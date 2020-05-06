@@ -3,15 +3,15 @@ title: Aanbevolen werkwijzen voor de integratie met Adobe Creative Cloud en [!DN
 description: Aanbevolen procedures om [!DNL Adobe Experience Manager] te integreren met [!DNL Adobe Creative Cloud] om workflows voor middelenoverdracht te stroomlijnen en een hoge snelheid van de inhoud te bereiken.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1321aa3421455d78fd4562d6cb524aa232ee2ce1
+source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+workflow-type: tm+mt
+source-wordcount: '3266'
+ht-degree: 16%
 
 ---
 
 
 # [!DNL Adobe Experience Manager] en beste praktijken op het gebied van [!DNL Creative Cloud] integratie {#aem-and-creative-cloud-integration-best-practices}
-
-<!-- TBD: Reconcile with 6.4 article that's behind this article in terms of content streamlining and structuring.
--->
 
 [!DNL Adobe Experience Manager Assets] is een DAM-oplossing (Digital Asset Management) die kan worden geïntegreerd [!DNL Adobe Creative Cloud] om DAM-gebruikers te helpen samen te werken met creatieve teams en de samenwerking bij het maken van inhoud te stroomlijnen.
 
@@ -47,19 +47,19 @@ Dit artikel richt zich hoofdzakelijk op de eerste twee aspecten van de samenwerk
 
 | Hoofdletters gebruiken | [!DNL Adobe Asset Link] | [!DNL Experience Manager] bureaubladtoepassing | Opmerkingen/andere oplossingen |
 |---|---|---|---|
-| Detecteren - door DAM-mappen bladeren | Ja | [!DNL Experience Manager] Webinterface en bureaubladacties | Als u op het gedeelde netwerk bladert, schakelt u de miniaturen uit om te voorkomen dat binaire bestanden met elementen worden gedownload. |
-| Discover - toegang tot DAM-verzamelingen | Ja | [!DNL Experience Manager] Webinterface en bureaubladacties |  |
-| Discover - zoek naar middelen van DAM | Ja | [!DNL Experience Manager] Webinterface en bureaubladacties |  |
-| Gebruiken - element openen | Ja | Ja, voor elke app | [Openen vanuit webinterface](managing-assets-touch-ui.md#previewing-assets) of vanuit Finder |
+| Detecteren - door DAM-mappen bladeren | Ja | [!DNL Experience Manager] Webinterface- en desktopacties |  |
+| Discover - toegang tot DAM-verzamelingen | Ja | [!DNL Experience Manager] Webinterface- en desktopacties |  |
+| Discover - zoek naar middelen van DAM | Ja | [!DNL Experience Manager] Webinterface- en desktopacties |  |
+| Gebruiken - element openen | Ja | Ja | [Openen vanuit webinterface](managing-assets-touch-ui.md#previewing-assets) of vanuit Finder |
 | Gebruiken - element van DAM in een document plaatsen | Ja - insluiten | Ja - koppelen of insluiten | [!DNL Experience Manager] bureaubladtoepassing biedt toegang tot elementen als bestanden op het lokale bestandssysteem. Deze koppelingen in de native apps worden weergegeven door lokale paden. |
 | Bewerken - openen voor bewerking | Ja, uitchecken, actie | Ja - Handeling openen (in netwerkshare) | [Met Uitchecken in AAL](https://helpx.adobe.com/nl/enterprise/using/manage-assets-using-adobe-asset-link.html) wordt het middel standaard opgeslagen op de Creative Cloud Storage-account (gesynchroniseerd door de Creative Cloud-toepassing) van de gebruiker. |
 | Bewerken - werk wordt uitgevoerd buiten DAM | Ja, middelen beschikbaar in de Creative Cloud-opslagaccount van de gebruiker worden gesynchroniseerd met bureaublad. | Ja |  |
 | Bewerken - wijzigingen uploaden | Ja - [Inchecken](https://helpx.adobe.com/nl/enterprise/using/manage-assets-using-adobe-asset-link.html) met optionele opmerking | Ja |  |
 | Uploaden - één bestand | Ja - het actieve document wordt geüpload | Ja | [Uploaden via webinterface](managing-assets-touch-ui.md#uploading-assets) |
-| Uploaden - meerdere bestanden / hiërarchische mapstructuren | Nee | Ja | [Uploaden via webinterface](managing-assets-touch-ui.md#uploading-assets);<br>Aangepaste scripts of gereedschappen |
-| Diverse - gebruiker en aanmelding | Creative Cloud-gebruiker die zich heeft aangemeld bij Creative Cloud-bureaubladtoepassing wordt herkend (SSO) | [!DNL Experience Manager] gebruiker/aanmelding | Gebruikers van beide oplossingen tellen mee voor de [!DNL Experience Manager] gebruikersquota. |
-| Diverse - netwerk en toegang | Vereist toegang van de Desktop van de gebruiker aan [!DNL Experience Manager] plaatsing over netwerk | Vereist toegang van de Desktop van de gebruiker aan [!DNL Experience Manager] plaatsing over netwerk | Adobe Asset Link deelt de omgeving van de netwerkproxy niet. |
-| Misc - Grote aantallen activa migreren | Nee | Nee | [Migratiehandleiding](assets-migration-guide.md) |
+| Uploaden - meerdere bestanden / hiërarchische mapstructuren | Nee | Ja | [Uploaden via webinterface](managing-assets-touch-ui.md#uploading-assets) of via aangepaste scripts of tools. |
+| Diverse - gebruiker en aanmelding | Creative Cloud-gebruiker die zich heeft aangemeld bij Creative Cloud-bureaubladtoepassing wordt herkend (SSO) | [!DNL Experience Manager] gebruiker en gebruikersgegevens | Gebruikers van beide oplossingen tellen mee voor de [!DNL Experience Manager] gebruikersquota. |
+| Diverse - netwerk en toegang | Vereist toegang van de Desktop van de gebruiker aan [!DNL Experience Manager] plaatsing over netwerk | Vereist toegang van de Desktop van de gebruiker aan [!DNL Experience Manager] plaatsing over netwerk | [!DNL Adobe Asset Link] deelt geen milieu van de netwerkvolmacht. |
+| Misc - Grote aantallen activa migreren | Nee | Nee | [Richtlijnen voor migratie van middelen](assets-migration-guide.md) |
 
 Om het gebruik van middelen te steunen, zouden andere oplossingen moeten worden overwogen:
 

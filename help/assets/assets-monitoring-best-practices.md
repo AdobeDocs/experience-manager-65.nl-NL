@@ -3,7 +3,10 @@ title: Tips en trucs om de implementatie van [!DNL Adobe Experience Manager Asse
 description: Tips en trucs om de omgeving en de prestaties van uw implementatie van [!DNL Adobe Experience Manager] te controleren nadat deze is geïmplementeerd.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+workflow-type: tm+mt
+source-wordcount: '1682'
+ht-degree: 0%
 
 ---
 
@@ -146,7 +149,7 @@ Hier zijn een aantal uit-van-de-doos gezondheidscontroles die nuttig zijn om te 
 
 * Replicatiereeks
 
-   * MBean: `org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck `
+   * MBean: `org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
    * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
    * Instanties: Eén auteur, alle publicatieservers
    * Alarmdrempel: Wanneer de status niet OK is
@@ -184,7 +187,7 @@ Hier zijn een aantal uit-van-de-doos gezondheidscontroles die nuttig zijn om te 
    * Alarmdrempel: Wanneer de status niet OK is
    * Alarmdefinitie: De logbestanden bevatten fouten. Controleer de logboekattributen voor meer informatie over de oorzaak van de kwestie.
 
-## Gemeenschappelijke kwesties en resoluties {#common-issues-and-resolutions}
+## Gemeenschappelijke kwesties en resoluties  {#common-issues-and-resolutions}
 
 In het proces van controle, als u problemen ontmoet, zijn hier sommige het oplossen van problementaken die u kunt uitvoeren om gemeenschappelijke kwesties met [!DNL Experience Manager] plaatsingen op te lossen:
 

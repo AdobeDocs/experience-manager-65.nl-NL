@@ -3,7 +3,10 @@ title: Referentie metagegevensschema
 description: 'Leer meer over standaardconventies voor het beschrijven van metagegevens van elementen, zoals Dublin Core, IPTC en ander metagegevensschema. '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+workflow-type: tm+mt
+source-wordcount: '393'
+ht-degree: 2%
 
 ---
 
@@ -21,13 +24,13 @@ De eenvoudige Dublin Core Metadata Element Set (DCMES) bevat 15 metagegevenselem
 Naast het DCMES zijn er andere metagegevenselementen die door het Dublin Core-initiatief zijn gecreëerd. Zie het [Dublin Core-initiatief](https://dublincore.org/) voor meer informatie.
 
 | Eigenschap | Beschrijving |
-|---|---|
+| ----------- | ------------------------------------------------------------------------------------------------------------------------ |
 | contribuant | De persoon die of het bedrijf dat verantwoordelijk is voor het leveren van bijdragen aan de inhoud. |
 | dekking | De geografische locatie of tijdsperiode waarop het actief betrekking heeft. |
 | schepper | De persoon of het bedrijf die verantwoordelijk is voor het maken van de inhoud. |
 | date | Datum of periode die aan het element is gekoppeld. |
 | beschrijving | Meer informatie over het element. |
-| format | De bestandsindeling, het fysieke medium of de afmetingen van het element. AEM gebruikt dc:format om het mime-type van het element aan te geven. |
+| format | De bestandsindeling, het fysieke medium of de afmetingen van het element. AEM gebruikt `dc:format` om het MIME-type van het element aan te duiden. |
 | id | Een unieke verwijzing naar het element. |
 | language | De taal van het element (bijvoorbeeld en voor Engels). |
 | uitgever | De persoon of het bedrijf die verantwoordelijk is voor het ter beschikking stellen van het actief. |

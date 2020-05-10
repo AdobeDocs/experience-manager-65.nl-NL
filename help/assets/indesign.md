@@ -3,12 +3,15 @@ title: '[!DNL Adobe Experience Manager Assets] integreren met [!DNL Adobe InDesi
 description: Leer hoe u [!DNL Adobe Experience Manager Assets] kunt integreren met [!DNL Adobe InDesign Server].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+workflow-type: tm+mt
+source-wordcount: '1548'
+ht-degree: 1%
 
 ---
 
 
-# Integreren [!DNL Adobe Experience Manager Assets] met [!DNL Adobe InDesign Server]{#integrating-aem-assets-with-indesign-server}
+# Integreren [!DNL Adobe Experience Manager Assets] met [!DNL Adobe InDesign Server] {#integrating-aem-assets-with-indesign-server}
 
 [!DNL Adobe Experience Manager Assets] gebruik:
 
@@ -64,7 +67,7 @@ Om het [!DNL InDesign Server] voor gebruik met [!DNL Experience Manager Assets] 
 Dit is alleen nodig als de standaardwaarden niet geschikt zijn voor uw instantie.
 1. Configureer een [proxyworker voor de InDesign-server](#configuring-the-proxy-worker-for-indesign-server).
 
-### Installeer de [!DNL InDesign Server]{#installing-the-indesign-server}
+### Installeer de [!DNL InDesign Server] {#installing-the-indesign-server}
 
 De toepassing installeren en starten [!DNL InDesign Server] met [!DNL Experience Manager]:
 
@@ -85,7 +88,7 @@ De toepassing installeren en starten [!DNL InDesign Server] met [!DNL Experience
 
 ### De [!DNL Experience Manager Assets] workflow configureren {#configuring-the-aem-assets-workflow}
 
-[!DNL Experience Manager Assets] heeft een vooraf geconfigureerde workflow **[!UICONTROL DAM Update Asset]**, die verschillende processtappen bevat, met name voor [!DNL InDesign]:
+[!DNL Experience Manager Assets] beschikt over een vooraf geconfigureerde workflow **[!UICONTROL DAM Update Asset]** met specifieke verschillende processtappen voor [!DNL InDesign]:
 
 * [Media extraheren](#media-extraction)
 * [Pagina uitnemen](#page-extraction)
@@ -98,7 +101,7 @@ Na de installatie wordt het uploaden van [!DNL InDesign] bestanden naar [!DNL Ex
 
 Deze stap bepaalt de extractie van media uit het INDD-bestand.
 
-U kunt het tabblad **[!UICONTROL Argumenten]** van de stap **[!UICONTROL Media extraheren]** bewerken als u dit wilt aanpassen.
+U kunt het **[!UICONTROL Arguments]** tabblad van de **[!UICONTROL Media Extraction]** stap aanpassen.
 
 ![Argumenten voor het uitnemen van media en scriptpaden](assets/media_extraction_arguments_scripts.png)
 
@@ -116,13 +119,13 @@ Zie de documentatie voor ontwikkelaars van [InDesign voor informatie over InDesi
 
 Het `ThumbnailExport.jsx` script dat wordt uitgevoerd door de workflowstap Media Extraction, genereert een miniatuuruitvoering in de JPG-indeling. Deze vertoning wordt gebruikt door de werkstroomstap Miniaturen verwerken om de statische uitvoeringen te genereren die vereist zijn door [!DNL Experience Manager].
 
-U kunt de workflowstap Miniaturen verwerken zodanig configureren dat statische uitvoeringen van verschillende grootten worden gegenereerd. Zorg ervoor dat u niet de gebreken verwijdert, omdat zij door de [!DNL Experience Manager Assets] interface worden vereist. Tot slot verwijdert de workflowstap Voorvertoning afbeelding verwijderen de miniatuuruitvoering .jpg, omdat deze niet langer nodig is.
+U kunt de workflowstap Miniaturen verwerken zodanig configureren dat statische uitvoeringen van verschillende grootten worden gegenereerd. Zorg ervoor dat u niet de gebreken verwijdert, omdat zij door de [!DNL Experience Manager Assets] interface worden vereist. Tot slot verwijdert de werkstroomstap Voorvertoning van afbeelding verwijderen de uitvoering van de JPG-miniatuur, omdat deze niet langer nodig is.
 
 #### Pagina uitnemen {#page-extraction}
 
 Hiermee maakt u een [!DNL Experience Manager] pagina van de geëxtraheerde elementen. Een extractiemanager wordt gebruikt om gegevens uit een vertoning (momenteel HTML of IDML) te halen. Deze gegevens worden vervolgens gebruikt om een pagina te maken met de PageBuilder.
 
-U kunt het tabblad **[!UICONTROL Argumenten]** van de stap **[!UICONTROL Pagina extraheren]** bewerken als u dit wilt aanpassen.
+To customize, you can edit the **[!UICONTROL Arguments]** tab of the **[!UICONTROL Page Extraction]** step.
 
 ![chlimage_1-96](assets/chlimage_1-289.png)
 
@@ -140,17 +143,17 @@ In a standard [!DNL Experience Manager] installation the following is available:
 
 * **Paginaontwerp**: Het paginaontwerp dat moet worden gebruikt bij het genereren van de resulterende pagina.
 
-### De proxyworker configureren voor [!DNL InDesign Server]{#configuring-the-proxy-worker-for-indesign-server}
+### De proxyworker configureren voor [!DNL InDesign Server] {#configuring-the-proxy-worker-for-indesign-server}
 
 >[!NOTE]
 >
 >De worker bevindt zich op de proxyinstantie.
 
-1. Vouw in het linkerdeelvenster van de console Tools de Configuraties **[!UICONTROL van]** Cloud Services uit. Vouw vervolgens **[!UICONTROL Cloud Proxy Configuration]** uit.
+1. Vouw in het linkerdeelvenster van de gereedschapsconsole **[!UICONTROL Cloud Services Configurations]** uit. Vouw vervolgens uit **[!UICONTROL Cloud Proxy Configuration]**.
 
-1. Dubbelklik op de **[!UICONTROL IDS-worker]** om de configuratie te openen.
+1. Dubbelklik op het bestand **[!UICONTROL IDS worker]** dat u wilt openen voor configuratie.
 
-1. Klik op **[!UICONTROL Bewerken]** om het configuratiedialoogvenster te openen en de vereiste instellingen te definiëren:
+1. Klik **[!UICONTROL Edit]** om het configuratiedialoogvenster te openen en de vereiste instellingen te definiëren:
 
    ![proxy_disworkerconfig](assets/proxy_idsworkerconfig.png)
 
@@ -160,15 +163,15 @@ In a standard [!DNL Experience Manager] installation the following is available:
 
 ### vorm de Verbinding van CQ van de Dag uiterlijk {#configuring-day-cq-link-externalizer}
 
-Als [!DNL InDesign Server] en [!DNL Experience Manager] looppas op verschillende gastheren of één van beide toepassingen niet op standaardhavens lopen, vorm [!UICONTROL Dag CQ de Verbinding Externalzer] om de gastheernaam, de haven, en de inhoudspad voor [!DNL InDesign Server].
+Als [!DNL InDesign Server] en [!DNL Experience Manager] lopen op verschillende gastheren of één van beiden of beide toepassingen niet op standaardhavens lopen, vorm [!UICONTROL Day CQ Link Externalizer] om de gastheernaam, de haven, en de inhoudspad voor [!DNL InDesign Server]. te plaatsen.
 
 1. Open de webconsole op `https://[aem_server]:[port]/system/console/configMgr`.
-1. Locate the configuration **[!UICONTROL Day CQ Link Externalizer]**, and tap **[!UICONTROL Edit]** to open it.
+1. Zoek de configuratie **[!UICONTROL Day CQ Link Externalizer]****[!UICONTROL Edit]** en tik om deze te openen.
 1. Geef de hostnaam en het contextpad voor de toepassing op [!DNL Indesign Server] en klik op **Opslaan**.
 
    ![chlimage_1-97](assets/chlimage_1-290.png)
 
-### Parallelle verwerking van taken inschakelen voor [!DNL InDesign Server]{#enabling-parallel-job-processing-for-indesign-server-s}
+### Parallelle verwerking van taken inschakelen voor [!DNL InDesign Server] {#enabling-parallel-job-processing-for-indesign-server-s}
 
 U kunt nu parallelle taakverwerking inschakelen voor IDS. Bepaal het maximumaantal parallelle banen (`x`) een [!DNL InDesign Server] kan verwerken:
 
@@ -177,7 +180,7 @@ U kunt nu parallelle taakverwerking inschakelen voor IDS. Bepaal het maximumaant
 
 Om het aantal parallelle banen te vormen IDS:
 
-1. Open het tabblad **[!UICONTROL Configuraties]** van de Felix-console; bijvoorbeeld: `https://[aem_server]:[port]/system/console/configMgr`.
+1. Open het **[!UICONTROL Configurations]** tabblad van de Felix-console; bijvoorbeeld: `https://[aem_server]:[port]/system/console/configMgr`.
 
 1. Selecteer de IDS verwerkingsrij onder `Apache Sling Job Queue Configuration`.
 
@@ -211,7 +214,7 @@ Voer voor [!DNL InDesign Server] 10.0 of hoger de volgende stappen uit om onders
 
 1. Open Configuration Manager van uw [!DNL Experience Manager Assets] instantie `https://[aem_server]:[port]/system/console/configMgr`.
 1. Bewerk de configuratie `com.day.cq.dam.ids.impl.IDSJobProcessor.name`.
-1. Selecteer de optie **[!UICONTROL ids.cc.enable]** en klik **[!UICONTROL sparen]**.
+1. Selecteer de **[!UICONTROL ids.cc.enable]** optie en klik op **[!UICONTROL Save]**.
 
 >[!NOTE]
 >

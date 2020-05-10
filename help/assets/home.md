@@ -4,7 +4,10 @@ seo-title: Gebruikershandleiding voor AEM 6.5-middelen
 description: Deze handleiding behandelt alle taken met AEM Assets, zoals het maken, beheren, leveren en optimaliseren van digitale elementen.
 seo-description: Omvat alle taken van AEM Assets, zoals het maken, beheren, leveren en optimaliseren van digitale middelen.
 translation-type: tm+mt
-source-git-commit: e6c0ee967d1b01da18b538960520c206937599f6
+source-git-commit: db5996bd25c6c35854f8b7164558b41a477b4cd6
+workflow-type: tm+mt
+source-wordcount: '358'
+ht-degree: 9%
 
 ---
 
@@ -25,7 +28,7 @@ Deze handleiding behandelt alle taken met AEM Assets, zoals het maken, beheren, 
 | Handboek | Beschrijving |
 |--- |---|
 | [Release-opmerkingen](/help/release-notes/home.md) | Verstrekt belangrijke informatie over de recentste versie van AEM, met inbegrip van wat nieuwe, gesteunde platforms is, verouderde en verwijderde eigenschappen, en bekende kwesties |
-| [Gebruikershandleiding[voor formulieren](/help/forms/home.md) | In deze handleiding wordt beschreven hoe u digitale formulieren kunt maken, beheren, publiceren en bijwerken. |
+| [Gebruikershandleiding voor formulieren](/help/forms/home.md) | In deze handleiding wordt beschreven hoe u digitale formulieren kunt maken, beheren, publiceren en bijwerken. |
 | [Gebruikersgids voor gemeenschappen](/help/communities/home.md) | Maak online ervaringen zoals forums, gebruikersgroepen, leermiddelen en andere sociale functies. |
 | [Beheerdershandleiding](/help/sites-administering/home.md) | Begrijp hoe te om AEM te beheren |
 | [Ontwerphandleiding](/help/sites-authoring/home.md) | Deze gids verklaart de concepten creatie in AEM. |

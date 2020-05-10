@@ -3,9 +3,9 @@ title: 'Metagegevensschema''s om de indeling van de pagina met eigenschappen van
 description: Het metagegevensschema definieert de indeling van de pagina met eigenschappen en de eigenschappen van metagegevens die voor elementen worden weergegeven. Leer hoe u een aangepast metagegevensschema kunt maken, het schema voor metagegevens kunt bewerken en hoe u het schema voor metagegevens op elementen kunt toepassen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6151c1afe3006e8d4b93648fc9eb779c73df4181
+source-git-commit: 739f1c6fcc910ed134849c27a44a6feccd1684c9
 workflow-type: tm+mt
-source-wordcount: '2617'
+source-wordcount: '2604'
 ht-degree: 7%
 
 ---
@@ -17,7 +17,7 @@ Organisaties beschikken over een metagegevensmodel dat de detectie, het gebruik,
 
 In [!DNL Adobe Experience Manager Assets]de schema&#39;s staan specifieke velden waarin specifieke informatie moet worden ingevuld. Het bevat ook lay-outinformatie om meta-gegevensgebieden op een gebruikersvriendelijke manier te tonen. Metagegevenseigenschappen zijn onder andere titel, beschrijving, MIME-typen, tags en meer. U kunt de [!UICONTROL Metadata Schema Forms] redacteur gebruiken om de bestaande schema&#39;s te wijzigen of de schema&#39;s van douanemetagegevens toe te voegen.
 
-Ga als volgt te werk om de pagina met eigenschappen voor een element weer te geven:
+Ga als volgt te werk om de pagina met eigenschappen voor een element weer te geven en te bewerken:
 
 1. Klik of tik op het **[!UICONTROL View Properties]** pictogram van Snelle handelingen op de tegel voor elementen in de kaartweergave.
 
@@ -35,36 +35,22 @@ Ga als volgt te werk om de pagina met eigenschappen voor een element weer te gev
 
 Als u het MIME-type voor een element wilt wijzigen, gebruikt u een aangepast schema voor metagegevens of wijzigt u een bestaand formulier. Zie [Metagegevensschemaformulieren](/help/assets/metadata-schemas.md#edit-metadata-schema-forms) bewerken voor meer informatie. Als u het metagegevensschema voor een bepaald MIME-type wijzigt, worden de pagina-indeling van de eigenschappen voor elementen met het huidige MIME-type en alle elementsubtypen gewijzigd. Als u bijvoorbeeld een JPEG-schema wijzigt onder, wordt de indeling van metagegevens (eigenschappen van elementen) `default/image` alleen gewijzigd voor elementen met het MIME-type `image/jpeg`. Als u echter het standaardschema bewerkt, worden de wijzigingen doorgevoerd in de indeling van de metagegevens voor alle typen elementen.
 
-1. Als u een lijst met formulieren/sjablonen wilt weergeven, navigeert u in de [!DNL Experience Manager] interface naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**.
+## Metagegevensschema-formulieren {#default-metadata-schema-forms}
 
-## Metagegevensschemaschema-formulieren standaard beschikbaar {#available-metadata-schema-templates}
+Als u een lijst met formulieren/sjablonen wilt weergeven, navigeert u in de [!DNL Experience Manager] interface naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**.
 
-[!DNL Experience Manager] bevat de volgende sjablonen:
+[!DNL Experience Manager] Hier vindt u de volgende sjablonen voor het schema van metagegevens:
 
-### standaardwaarde {#default-template}
-
-Het [!UICONTROL default] is het basisschema voor metagegevens voor elementen. De volgende onderliggende formulieren nemen de eigenschappen van het standaardformulier over:
-
-**image** is het schema voor elementen met het MIME-type &quot;image&quot;. Bijvoorbeeld, `image/jpeg`, `image/png`enzovoort. Het &quot;afbeeldingsformulier&quot; heeft de volgende onderliggende formuliersjablonen:
-* **jpeg** is het schema voor elementen met subtype `jpeg`.
-
-* **tiff** is de schemavorm voor de activa met subtype `tiff`.
-
-**de toepassing** is de schemavorm voor activa met type MIME `application`. Bijvoorbeeld, `application/pdf`, `application/zip`enzovoort. **pdf** is het schema voor elementen met subtype `pdf`.
-
-**video** is het schema voor elementen met het MIME-type `video`, zoals `video/avi`, `video/mp4`enzovoort.
-
-### collection {#collection-template}
-
-Het [!UICONTROL collection] is het schemaformulier voor verzamelingen.
-
-### contentfragment {#contentfragment-template}
-
-Het [!UICONTROL contentfragment] is het schema voor Inhoudsfragmenten.
-
-### formulieren {#forms-template}
-
-Het [!UICONTROL forms] schemaformulier heeft betrekking op [Adobe Experience Manager Forms](/help/forms/home.md).
+| Sjablonen |  | Beschrijving |
+|---|---|---|
+| [!UICONTROL default] |  | Het basisschema voor metagegevens voor elementen. |
+|  | De volgende onderliggende formulieren nemen de eigenschappen van het [!UICONTROL default] formulier over: |  |
+|  | <ul><li> [!UICONTROL image]</li></ul> | Schema-formulier voor elementen met het MIME-type &quot;image&quot;, bijvoorbeeld afbeelding/jpeg, afbeelding/png, enzovoort. <br> Het [!UICONTROL image] formulier heeft de volgende onderliggende formuliersjablonen: <ul><li> [!UICONTROL jpeg]: Schema voor activa met subtype [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff]: Schema voor de activa met subtype [!UICONTROL tiff].</li></ul> |
+|  | <ul><li> [!UICONTROL application]</li></ul> | Schema-formulier voor elementen met het MIME-type &quot;application&quot;, bijvoorbeeld application/ pdf, application/ zip enzovoort. <br>[!UICONTROL pdf]: Schemaformulier voor activa met subtype pdf. |
+|  | <ul><li>[!UICONTROL video]</li></ul> | Schema-formulier voor elementen met het MIME-type &quot;video&quot;, zoals video/avi, video/mp4, enzovoort. |
+| [!UICONTROL collection] |  | Schemaformulier voor verzamelingen. |
+| [!UICONTROL contentfragment] |  | Schemaformulier voor inhoudsfragmenten. |
+| [!UICONTROL forms] |  | Dit schema-formulier is gerelateerd aan [Adobe Experience Manager Forms](/help/forms/home.md). |
 
 >[!NOTE]
 >

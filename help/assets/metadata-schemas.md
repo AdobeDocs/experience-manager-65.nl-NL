@@ -3,9 +3,9 @@ title: 'Metagegevensschema''s om de indeling van de pagina met eigenschappen van
 description: Het metagegevensschema definieert de indeling van de pagina met eigenschappen en de eigenschappen van metagegevens die voor elementen worden weergegeven. Leer hoe u een aangepast metagegevensschema kunt maken, het schema voor metagegevens kunt bewerken en hoe u het schema voor metagegevens op elementen kunt toepassen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+source-git-commit: 6151c1afe3006e8d4b93648fc9eb779c73df4181
 workflow-type: tm+mt
-source-wordcount: '2568'
+source-wordcount: '2617'
 ht-degree: 7%
 
 ---
@@ -17,7 +17,9 @@ Organisaties beschikken over een metagegevensmodel dat de detectie, het gebruik,
 
 In [!DNL Adobe Experience Manager Assets]de schema&#39;s staan specifieke velden waarin specifieke informatie moet worden ingevuld. Het bevat ook lay-outinformatie om meta-gegevensgebieden op een gebruikersvriendelijke manier te tonen. Metagegevenseigenschappen zijn onder andere titel, beschrijving, MIME-typen, tags en meer. U kunt de [!UICONTROL Metadata Schema Forms] redacteur gebruiken om de bestaande schema&#39;s te wijzigen of de schema&#39;s van douanemetagegevens toe te voegen.
 
-1. Als u de [!UICONTROL Properties] pagina voor een element wilt weergeven, klikt u op **[!UICONTROL View Properties]** Snelle handelingen in de kaartweergave op het element Elementen. U kunt ook het element in de interface selecteren en op de werkbalk klikken. **[!UICONTROL Properties]**
+Ga als volgt te werk om de pagina met eigenschappen voor een element weer te geven:
+
+1. Klik of tik op het **[!UICONTROL View Properties]** pictogram van Snelle handelingen op de tegel voor elementen in de kaartweergave.
 
    ![Snelle acties voor elementblok](assets/chlimage_1-170.png)
 
@@ -25,28 +27,44 @@ In [!DNL Adobe Experience Manager Assets]de schema&#39;s staan specifieke velden
 
    ![Het tabblad Standaard van de eigenschappen van elementen, waarin het elementtype niet kan worden gewijzigd](assets/asset-properties-basic-tab.png)
 
-   *Afbeelding: Het tabblad Standaard voor elementen[!UICONTROL Properties].*
+1. U kunt verschillende eigenschappen van metagegevens bewerken onder de beschikbare tabbladen. U kunt het element echter niet wijzigen [!UICONTROL Type] op het [!UICONTROL Basic] tabblad Eigenschappen.
 
-   Als u het MIME-type voor een element wilt wijzigen, gebruikt u een aangepast schema voor metagegevens of wijzigt u een bestaand formulier. Zie [Metagegevensschemaformulieren](/help/assets/metadata-schemas.md#edit-metadata-schema-forms) bewerken voor meer informatie. Als u het metagegevensschema voor een bepaald MIME-type wijzigt, worden de pagina-indeling van de eigenschappen voor elementen met het huidige MIME-type en alle elementsubtypen gewijzigd. Als u bijvoorbeeld een JPEG-schema wijzigt onder, wordt de indeling van metagegevens (eigenschappen van elementen) `default/image` alleen gewijzigd voor elementen met het MIME-type `image/jpeg`. Als u echter het standaardschema bewerkt, worden de wijzigingen doorgevoerd in de indeling van de metagegevens voor alle typen elementen.
+   ![Het tabblad Standaard van de eigenschappen van elementen, waarin het elementtype niet kan worden gewijzigd](assets/asset-properties-basic-tab.png)
+
+*Afbeelding: Het tabblad Standaard voor elementen[!UICONTROL Properties].*
+
+Als u het MIME-type voor een element wilt wijzigen, gebruikt u een aangepast schema voor metagegevens of wijzigt u een bestaand formulier. Zie [Metagegevensschemaformulieren](/help/assets/metadata-schemas.md#edit-metadata-schema-forms) bewerken voor meer informatie. Als u het metagegevensschema voor een bepaald MIME-type wijzigt, worden de pagina-indeling van de eigenschappen voor elementen met het huidige MIME-type en alle elementsubtypen gewijzigd. Als u bijvoorbeeld een JPEG-schema wijzigt onder, wordt de indeling van metagegevens (eigenschappen van elementen) `default/image` alleen gewijzigd voor elementen met het MIME-type `image/jpeg`. Als u echter het standaardschema bewerkt, worden de wijzigingen doorgevoerd in de indeling van de metagegevens voor alle typen elementen.
 
 1. Als u een lijst met formulieren/sjablonen wilt weergeven, navigeert u in de [!DNL Experience Manager] interface naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**.
 
-   [!DNL Experience Manager] bevat de volgende sjablonen uit het vak:
-   * **standaard**: Het basisschema voor metagegevens voor elementen.
+## Metagegevensschemaschema-formulieren standaard beschikbaar {#available-metadata-schema-templates}
 
-      De volgende onderliggende formulieren nemen de eigenschappen van het standaardformulier over:
+[!DNL Experience Manager] bevat de volgende sjablonen:
 
-      1. **afbeelding**: Schema-formulier voor elementen met het MIME-type &#39;image&#39;, bijvoorbeeld `image/jpeg`, `image/png`enzovoort.
+### standaardwaarde {#default-template}
 
-         Het &quot;afbeeldingsformulier&quot; heeft de volgende onderliggende formuliersjablonen:
-         * **jpeg**: Schema voor activa met subtype `jpeg`.
-         * **tiff**: Schema voor de activa met subtype `tiff`.
-      1. **toepassing**: Schema-formulier voor elementen van het type MIME `application`, `application/pdf`bijvoorbeeld `application/zip`enzovoort.
-         * **pdf**: Schema voor activa met subtype `pdf`.
-      1. **video**: Schema-formulier voor elementen met het MIME-type `video`, zoals `video/avi`, `video/mp4`enzovoort.
-   * **verzameling**: Schemaformulier voor verzamelingen.
-   * **contentfragment:** Schemaformulier voor inhoudsfragmenten.
-   * **formulieren**: Dit schema-formulier is gerelateerd aan [Adobe Experience Manager Forms](/help/forms/home.md).
+Het [!UICONTROL default] is het basisschema voor metagegevens voor elementen. De volgende onderliggende formulieren nemen de eigenschappen van het standaardformulier over:
+
+**image** is het schema voor elementen met het MIME-type &quot;image&quot;. Bijvoorbeeld, `image/jpeg`, `image/png`enzovoort. Het &quot;afbeeldingsformulier&quot; heeft de volgende onderliggende formuliersjablonen:
+* **jpeg** is het schema voor elementen met subtype `jpeg`.
+
+* **tiff** is de schemavorm voor de activa met subtype `tiff`.
+
+**de toepassing** is de schemavorm voor activa met type MIME `application`. Bijvoorbeeld, `application/pdf`, `application/zip`enzovoort. **pdf** is het schema voor elementen met subtype `pdf`.
+
+**video** is het schema voor elementen met het MIME-type `video`, zoals `video/avi`, `video/mp4`enzovoort.
+
+### collection {#collection-template}
+
+Het [!UICONTROL collection] is het schemaformulier voor verzamelingen.
+
+### contentfragment {#contentfragment-template}
+
+Het [!UICONTROL contentfragment] is het schema voor Inhoudsfragmenten.
+
+### formulieren {#forms-template}
+
+Het [!UICONTROL forms] schemaformulier heeft betrekking op [Adobe Experience Manager Forms](/help/forms/home.md).
 
 >[!NOTE]
 >

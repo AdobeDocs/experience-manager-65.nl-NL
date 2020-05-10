@@ -9,7 +9,10 @@ content-type: reference
 discoiquuid: b555bf0c-44cb-4fbf-abc4-15971663904d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
+source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+workflow-type: tm+mt
+source-wordcount: '1317'
+ht-degree: 2%
 
 ---
 
@@ -20,7 +23,7 @@ Een profiel is een recept voor welke opties u kunt toepassen op middelen die naa
 
 Deze regels kunnen het toevoegen van metagegevens, het slim uitsnijden van afbeeldingen of het instellen van videocoderingsprofielen omvatten. In AEM kunt u drie typen profielen maken, die in detail worden besproken op de volgende koppelingen:
 
-* [Metagegevensprofielen](/help/assets/metadata-profiles.md)
+* [Metadataprofielen](/help/assets/metadata-profiles.md)
 * [Afbeeldingsprofielen](/help/assets/image-profiles.md)
 * [Videoprofielen](/help/assets/video-profiles.md)
 
@@ -71,50 +74,50 @@ De migratiepublicatieagent moet zijn uitgeschakeld op de Dynamic Media-server, z
    * Als er een of meer submappen met elementen in de geselecteerde hoofdmap staan, wordt elk element in de mappenhiërarchie opnieuw verwerkt.
    * U kunt het beste deze workflow niet uitvoeren in een mappenhiërarchie met meer dan 1000 elementen.
 
-1. Klik in de linkerbovenhoek van de pagina in de vervolgkeuzelijst op **[!UICONTROL Tijdlijn]**.
+1. Klik in de linkerbovenhoek van de pagina in de vervolgkeuzelijst op **[!UICONTROL Timeline]**.
 1. Klik in de linkerbenedenhoek van de pagina, rechts van het veld Opmerking, op het pictogram van het karaat ( **^** ).
 
    ![Workflow 1 voor opnieuw verwerken van middelen](/help/assets/assets/reprocess-assets1.png)
 
-1. Klik op Workflow **** starten.
-1. Van de drop-down lijst van het Werkschema **[!UICONTROL van het]** Begin, kies **[!UICONTROL Scene7: Elementen]** opnieuw verwerken.
+1. Klik op **[!UICONTROL Start Workflow]**.
+1. From the **[!UICONTROL Start Workflow]** drop-down list, choose **[!UICONTROL Scene7: Reprocess Assets]**.
 1. (Optioneel) Voer in het tekstveld Titel **invoeren van workflow** een naam in voor de workflow. U kunt de naam gebruiken om naar de werkstroominstantie te verwijzen, indien nodig.
 
    ![Activa opnieuw verwerken 2](/help/assets/assets/reprocess-assets2.png)
 
-1. Klik op **[!UICONTROL Start]** en vervolgens op **[!UICONTROL Bevestigen]**.
+1. Klik **[!UICONTROL Start]** en klik vervolgens op **[!UICONTROL Confirm]**.
 
-   Als u de workflow wilt controleren of de voortgang wilt controleren, klikt u op de hoofdconsolepagina van AEM op **[!UICONTROL Gereedschappen > Workflow]**. Selecteer een workflow op de pagina Workflowinstanties. Klik in de menubalk op Historie **** openen. U kunt een geselecteerde workflow ook beëindigen, onderbreken of hernoemen op dezelfde pagina Workflowinstanties.
+   Klik op de hoofdconsolepagina van AEM om de workflow te controleren of de voortgang te controleren. **[!UICONTROL Tools > Workflow]** Klik op de pagina met de AEM-hoofdconsole. Selecteer een workflow op de pagina Workflowinstanties. Klik op de menubalk **[!UICONTROL Open History]**. U kunt een geselecteerde workflow ook beëindigen, opschorten of hernoemen vanuit dezelfde pagina Workflowinstanties.
 
 ### De batchgrootte van de workflow voor opnieuw verwerken aanpassen {#adjusting-load}
 
-(Optioneel) De standaardbatch-grootte in de opwerkingsworkflow is 50 elementen per taak. Deze optimale omvang van de partijen wordt bepaald door de gemiddelde omvang van de activa en de typen activa waarvoor het herproces wordt uitgevoerd. Een hogere waarde betekent dat u veel bestanden in één herverwerkingstaak hebt. De verwerkingsbanner blijft daarom langer op AEM-elementen staan. Als de gemiddelde bestandsgrootte echter klein-1 MB of kleiner is, raadt Adobe u aan de waarde te verhogen tot enkele honderden, maar nooit meer dan 1000. Als de gemiddelde bestandsgrootte groot is tot honderden megabytes, raadt Adobe u aan de batch tot 10 te verkleinen.
+(Optioneel) De standaardbatch-grootte in de opwerkingsworkflow is 50 elementen per taak. Deze optimale omvang van de partij wordt bepaald door de gemiddelde omvang van de activa en de MIME-typen van activa waarop het herproces wordt uitgevoerd. Een hogere waarde betekent dat u veel bestanden in één herverwerkingstaak hebt. De verwerkingsbanner blijft daarom langer op AEM-elementen staan. Als de gemiddelde bestandsgrootte echter klein-1 MB of kleiner is, raadt Adobe u aan de waarde te verhogen tot enkele honderden, maar nooit meer dan 1000. Als de gemiddelde bestandsgrootte groot is tot honderden megabytes, raadt Adobe u aan de batch tot 10 te verkleinen.
 
 **De batchgrootte van de workflow voor opnieuw verwerken optioneel aanpassen**
 
-1. Tik in Experience Manager op **[!UICONTROL Adobe Experience Manager]** om de algemene navigatieconsole te openen en tik vervolgens op het pictogram **[!UICONTROL Extra]** (hamer) > **[!UICONTROL Workflow > Modellen]**.
-1. Voor de pagina van de Modellen van het Werkschema, in de Mening van de Kaart of de Mening van de Lijst, uitgezochte **[!UICONTROL Scene7: Elementen]** opnieuw verwerken.
+1. Tik in Experience Manager op **[!UICONTROL Adobe Experience Manager]** om naar de globale navigatieconsole te gaan en tik vervolgens op het pictogram **[!UICONTROL Tools]** (hamer) > **[!UICONTROL Workflow > Models]**.
+1. Selecteer op de pagina Workflowmodellen in Kaartweergave of Lijstweergave de optie **[!UICONTROL Scene7: Reprocess Assets]**.
 
    ![De pagina van Modellen van het werkschema met Scene7: Workflow voor opnieuw verwerken van middelen die zijn geselecteerd in Kaartweergave](/help/assets/assets-dm/reprocess-assets7.png)
 
-1. Klik op **[!UICONTROL Bewerken]** op de werkbalk. Een nieuw browser lusje opent Scene7: Modelpagina voor middelenwerkstroom opnieuw verwerken.
-1. Op Scene7: Tik rechtsboven op de pagina Middelen opnieuw op de werkstroom en tik op **[!UICONTROL Bewerken]** om de werkstroom te &quot;ontgrendelen&quot;.
-1. In het werkschema, selecteer de Partij Scene7 uploadt component om de toolbar te openen, dan te tikken **[!UICONTROL vormt]** op de toolbar.
+1. Klik op de werkbalk **[!UICONTROL Edit]**. Een nieuw browser lusje opent Scene7: Modelpagina voor middelenwerkstroom opnieuw verwerken.
+1. Op Scene7: Tik in de rechterbovenhoek op de pagina voor de nieuwe middelenworkflow **[!UICONTROL Edit]** om de workflow te ontgrendelen.
+1. In het werkschema, selecteer de Partij Scene7 uploadt component om de toolbar te openen, dan tik op **[!UICONTROL Configure]** de toolbar.
 
    ![Scene7 Partij uploaden component](/help/assets/assets-dm/reprocess-assets8.png)
 
-1. Voor de **[!UICONTROL Partij uploadt aan Scene7-Stap de dialoogdoos van Eigenschappen]** , plaats het volgende:
-   * Voer in de tekstvelden **[!UICONTROL Titel]** en **[!UICONTROL Beschrijving]** desgewenst een nieuwe titel en beschrijving in voor de taak.
-   * Selecteer **[!UICONTROL Handler Geavanceerd]** als uw manager aan de volgende stap zal verdergaan.
-   * Voer in het veld **[!UICONTROL Time-out]** de time-out van het externe proces (seconden) in.
-   * Voer in het veld **[!UICONTROL Periode]** een opiniepeilingsinterval (seconden) in om te testen of het externe proces is voltooid.
-   * Voer in het veld **** Batch het maximumaantal elementen (50-1000) in dat u wilt verwerken in een uploadtaak voor de batchverwerking van een Dynamic Media-server.
-   * Selecteer **[!UICONTROL Geavanceerd op onderbreking]** als u wilt vooruitgaan wanneer de onderbreking wordt bereikt. Schakel deze optie uit als u wilt doorgaan naar het Postvak IN wanneer de time-out is bereikt.
+1. Stel in het **[!UICONTROL Batch Upload to Scene7—Step Properties]** dialoogvenster het volgende in:
+   * In the **[!UICONTROL Title]** and **[!UICONTROL Description]** text fields, enter a new title and description for the job, if desired.
+   * Selecteer **[!UICONTROL Handler Advance]** als uw manager aan de volgende stap zal verdergaan.
+   * Voer in het **[!UICONTROL Timeout]** veld de time-out van het externe proces (seconden) in.
+   * Voer in het **[!UICONTROL Period]** veld een pollinginterval (seconden) in om te testen of het externe proces is voltooid.
+   * In the **[!UICONTROL Batch field]**, enter the maximum number of assets (50-1000) to process in a Dynamic Media server batch processing upload job.
+   * Selecteer **[!UICONTROL Advance on timeout]** als u wilt vooruitgaan wanneer de onderbreking wordt bereikt. Schakel deze optie uit als u wilt doorgaan naar het Postvak IN wanneer de time-out is bereikt.
    ![Eigenschappen, dialoogvenster](/help/assets/assets-dm/reprocess-assets3.png)
 
-1. Tik in de rechterbovenhoek van het dialoogvenster **[!UICONTROL Batch uploaden naar Scene7 - stapeigenschappen]** op **[!UICONTROL Gereed]**.
+1. Tik in de rechterbovenhoek van het **[!UICONTROL Batch Upload to Scene7 – Step Properties]** dialoogvenster op **[!UICONTROL Done]**.
 
-1. In de hoger-juiste hoek van Scene7: Pagina met het workflowmodel voor middelen opnieuw verwerken. Tik op **[!UICONTROL Sync]**. Wanneer u **[!UICONTROL Gesynchroniseerd]** ziet, is het werkschemaruntime model met succes gesynchroniseerd en klaar om activa in een omslag opnieuw te verwerken.
+1. In de hoger-juiste hoek van Scene7: Pagina met het workflowmodel voor opnieuw verwerken van middelen tikken **[!UICONTROL Sync]**. Wanneer u ziet **[!UICONTROL Synced]**, wordt het model van de werkstroomruntime gesynchroniseerd en is het klaar om elementen in een map opnieuw te verwerken.
 
    ![Het workflowmodel synchroniseren](/help/assets/assets-dm/reprocess-assets1.png)
 

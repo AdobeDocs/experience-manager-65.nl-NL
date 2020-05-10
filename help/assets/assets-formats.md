@@ -1,34 +1,32 @@
 ---
-title: Ondersteunde indelingen voor middelen
-description: Lijst met bestandsindelingen die worden ondersteund door AEM Assets en door Dynamic Media, en functies die worden ondersteund voor elke indeling.
+title: Ondersteunde bestandsindelingen voor verwerking in [!DNL Adobe Experience Manager Assets].
+description: Bestandsindelingen en MIME-typen die worden ondersteund door [!DNL Assets] en [!DNL Dynamic Media] en de functies die worden ondersteund voor elke indeling.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
 workflow-type: tm+mt
-source-wordcount: '1760'
+source-wordcount: '1757'
 ht-degree: 2%
 
 ---
 
 
-# Ondersteunde middelenindelingen {#assets-supported-formats}
+# Ondersteunde indelingen in [!DNL Adobe Experience Manager Assets] {#assets-supported-formats}
 
-AEM Assets ondersteunt een groot aantal bestandsindelingen en elke functionaliteit biedt verschillende ondersteuning voor verschillende MIME-typen.
-
-Gebruik het Extensible Metadata Platform (XMP) van Adobe om AEM-middelen te integreren met andere DAM-oplossingen (Digital Asset Management) en bureaubladsoftware die voldoen aan de standaarden.
+[!DNL Experience Manager Assets] ondersteunt een groot aantal bestandsindelingen en elke functie biedt verschillende ondersteuning voor verschillende MIME-typen. Voor integratie [!DNL Assets] met andere DAM-oplossingen (Digital Asset Management) en desktopsoftware, gebruikt u Adobe [!DNL Extensible Metadata Platform] (XMP).
 
 Gebruik de legenda om het steunniveau te begrijpen.
 
 | Ondersteuningsniveau | Beschrijving |
-|:---:|---|
+| :-----------: | ------------------------------ |
 | ✓ | Ondersteund |
 | * | Ondersteund met add-onfuncties |
 | − | Niet van toepassing |
 
-## Ondersteunde rasterafbeeldingsindelingen in AEM-elementen {#supported-raster-image-formats}
+## Ondersteunde rasterafbeeldingsindelingen in [!DNL Assets] {#supported-raster-image-formats}
 
 | Format | Opslag | Metagegevensbeheer | Metagegevensextractie | Miniaturen genereren | Bewerken | Metagegevens terugschrijven | Inzichten |
-|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| ------------ | :------: | :-----------------: | :-----------------: | :------------------: | :------: | :----------------: | :------: |
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |
 | TIFF | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
@@ -45,7 +43,7 @@ Gebruik de legenda om het steunniveau te begrijpen.
 
 ‡ De samengevoegde afbeelding wordt uit het PSD-bestand geëxtraheerd. Het is een afbeelding die door Adobe Photoshop wordt gegenereerd en die in het PSD-bestand wordt opgenomen. Afhankelijk van de instellingen kan de samengevoegde afbeelding wel of niet de werkelijke afbeelding zijn.
 
-## Ondersteunde rasterafbeeldingsindelingen in dynamische media {#supported-raster-image-formats-dynamic-media}
+## Ondersteunde rasterafbeeldingsindelingen in [!DNL Dynamic Media] {#supported-raster-image-formats-dynamic-media}
 
 | Format | Uploaden<br> (invoerindeling) | Afbeeldingsvoorinstelling<br> maken<br><br> (uitvoerindeling) | Voorvertoning<br> van dynamische<br> uitvoering | Dynamische<br> uitvoering<br> leveren | Dynamische<br><br> uitvoering downloaden |
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -66,7 +64,7 @@ Naast bovenstaande informatie, moet u rekening houden met het volgende:
 
 * Metagegevensterugkoppeling werkt voor PSB-bestandsindeling wanneer deze wordt toegevoegd aan de `NComm` handler.
 
-* Zie [Adobe Illustrator (AI), Postscript (EPS) en PDF-bestandsindelingen voor informatie over het gebruik van dynamische media voor het weergeven en genereren van dynamische uitvoeringen voor EPS-bestanden.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* Zie de bestandsindelingen [!DNL Dynamic Media] [Adobe Illustrator (AI), Postscript (EPS) en PDF voor informatie over het weergeven en genereren van dynamische uitvoeringen voor EPS-bestanden.](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
 * Voor EPS-bestanden wordt terugschrijven van metagegevens ondersteund in PostScript Document Structuring Convention (PS-Adobe) versie 3.0 of hoger.
 
@@ -263,7 +261,7 @@ Een lijst van gesteunde types MIME is beschikbaar in CRXDE Lite bij `/conf/globa
 
 | Bestandsextensie | MIME-type/internet-mediatype | Standaardwaarde voor jobParam | Toegestane jobParam-waarde |
 |---|---|---|---|
-| Afbeelding | image/s7asset | `usmAmount=1.75&usmRadius=0.2`<br>`&usmThreshold=2&usmMonochrome=0&` | De standaardjobParam is van toepassing op alle mime-afbeeldingselementen.<ul><li>[knockoutBackgroundOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_knockout_background_options.html)</li><li>manualCropOptions</li><li>[autoColorCropOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/index.html?f=r_auto_color_crop_options)</li><li>[autoTransparentCropOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/?f=r_auto_transparent_crop_options)</li><li>[colorManagementOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_color_management_options.html)</li><li>[autoSetCreationOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_auto_set_creation_options.html)</li><li>[emailSetting](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/string_constants/index.html?f=r_email_settings)</li><li>[xmpKeywords](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/index.html?f=r_xmp_keywords)</li><li>[unsharpMaskOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_unsharp_mask_options.html)</li></ul> |
+| Afbeelding | image/s7asset | `usmAmount=1.75&usmRadius=0.2`<br>`&usmThreshold=2&usmMonochrome=0&` | De standaard jobParam is van toepassing op alle MIME-elementen van het afbeeldingstype.<ul><li>[knockoutBackgroundOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_knockout_background_options.html)</li><li>manualCropOptions</li><li>[autoColorCropOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/index.html?f=r_auto_color_crop_options)</li><li>[autoTransparentCropOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/?f=r_auto_transparent_crop_options)</li><li>[colorManagementOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_color_management_options.html)</li><li>[autoSetCreationOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_auto_set_creation_options.html)</li><li>[emailSetting](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/string_constants/index.html?f=r_email_settings)</li><li>[xmpKeywords](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/index.html?f=r_xmp_keywords)</li><li>[unsharpMaskOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_unsharp_mask_options.html)</li></ul> |
 | 3G2 | video/3gpp2 |  | [ExcludeMasterVideoFromAVS](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_exclude_master_video_from_avs.html) |
 | 3GP | video/3gpp |  | [ExcludeMasterVideoFromAVS](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/?f=r_exclude_master_video_from_avs) |
 | AAC | audio/x-aac |  |  |

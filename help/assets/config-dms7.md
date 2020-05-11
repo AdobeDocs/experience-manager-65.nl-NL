@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1eb8a0335d3e4697c3cfd5a1e7048dda06bbdaf8
+source-git-commit: 4f580a9e1a43ef59a4991df6bc4a96cfffe5173e
 workflow-type: tm+mt
-source-wordcount: '5421'
+source-wordcount: '5424'
 ht-degree: 6%
 
 ---
@@ -480,7 +480,7 @@ Wanneer de spinset wordt geüpload en gepubliceerd, activeert u de naam van het 
 
 ### (Facultatief) het stemmen van de prestaties van Dynamische Media - wijze Scene7 {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
-U kunt taakparameters instellen voor snellere verwerking wanneer u bestanden uploadt. Als u bijvoorbeeld PSD-bestanden uploadt, maar deze niet als sjablonen wilt verwerken, kunt u de uitname van lagen instellen op false (uitgeschakeld). De aangepaste taakparameter ziet er zo uit `process=none&createTemplate=false`.
+U kunt taakparameters instellen voor snellere verwerking wanneer u bestanden uploadt. Als u bijvoorbeeld PSD-bestanden uploadt, maar deze niet als sjablonen wilt verwerken, kunt u de uitname van lagen instellen op false (uitgeschakeld). In dat geval wordt de aangepaste taakparameter weergegeven zoals `process=none&createTemplate=false`.
 
 Adobe raadt u aan de volgende taakparameters voor aangepaste taken voor PSD-, PDF- en Postscript-bestanden te gebruiken:
 

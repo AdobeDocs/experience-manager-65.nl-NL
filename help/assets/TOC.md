@@ -4,7 +4,10 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: Gebruikershandleiding voor AEM 6.5-middelen
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 4f580a9e1a43ef59a4991df6bc4a96cfffe5173e
+workflow-type: tm+mt
+source-wordcount: '640'
+ht-degree: 38%
 
 ---
 
@@ -53,7 +56,7 @@ source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
    + [Panoramische afbeeldingen](panoramic-images.md)
    + [Mixed Media Sets](mixed-media-sets.md)
    + [Spin Sets](spin-sets.md)
-   + [Video](video.md)
+   + [Video in dynamische media](video.md)
    + [Carousel-banners](carousel-banners.md)
    + [Interactieve afbeeldingen](interactive-images.md)
    + [Interactieve video&#39;s](interactive-videos.md)

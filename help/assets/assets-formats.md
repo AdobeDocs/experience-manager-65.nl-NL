@@ -3,9 +3,9 @@ title: Ondersteunde bestandsindelingen voor verwerking in [!DNL Adobe Experience
 description: Bestandsindelingen en MIME-typen die worden ondersteund door [!DNL Assets] en [!DNL Dynamic Media] en de functies die worden ondersteund voor elke indeling.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 93731c44ae6b2d8617fedea87bce10495384fc52
+source-git-commit: 138c8d960ad8c1de20212b7aeebbda0a486832ee
 workflow-type: tm+mt
-source-wordcount: '1766'
+source-wordcount: '1780'
 ht-degree: 2%
 
 ---
@@ -73,6 +73,8 @@ Naast bovenstaande informatie, moet u rekening houden met het volgende:
 ## Niet-ondersteunde rasterafbeeldingsindelingen in Dynamic Media {#unsupported-image-formats-dynamic-media}
 
 In de volgende lijst worden de subtypen beschreven van bestandsindelingen voor rasterafbeeldingen die *niet* worden ondersteund in Dynamic Media.
+
+Zie ook Niet-ondersteunde bestandsindelingen [detecteren voor dynamische media](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html).
 
 * PNG-bestanden met een IDAT-segmentgrootte groter dan 100 MB.
 * PSB-bestanden.

@@ -10,7 +10,10 @@ topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: 4c7e33ea-f2d3-4d69-b676-aeb50c610d70
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 10072609bc371b5f2dce425e90e583f14f96e371
+workflow-type: tm+mt
+source-wordcount: '495'
+ht-degree: 3%
 
 ---
 
@@ -21,7 +24,7 @@ AEM Content Services zijn ontworpen om de beschrijving en levering van inhoud in
 
 Ze leveren inhoud aan kanalen die geen traditionele AEM-webpagina&#39;s zijn, met behulp van gestandaardiseerde methoden die door elke client kunnen worden gebruikt. Deze kanalen kunnen zijn:
 
-* Toepassingen voor één pagina
+* [Toepassingen voor één pagina](spa-walkthrough.md)
 * Systeemeigen mobiele toepassingen
 * andere kanalen en aanraakpunten buiten AEM
 
@@ -35,7 +38,7 @@ Met inhoudsfragmenten die gestructureerde inhoud gebruiken, kunt u de inhoudsdie
 
 Met de AEM JSON-exportfunctie kunt u de inhoud van een (y) AEM-pagina in JSON-indeling voor gegevensmodellen leveren. Dit kan dan door uw eigen toepassingen worden verbruikt.
 
-Binnen de AEM wordt de levering bereikt met het achtervoegsel
+Binnen AEM wordt de levering bereikt gebruikend de selecteur `model` en de `.json` uitbreiding.
 
 `.model.json`
 
@@ -45,7 +48,7 @@ Binnen de AEM wordt de levering bereikt met het achtervoegsel
    http://localhost:4502/content/we-retail/language-masters/en.model.json
    ```
 
-1. Hiermee wordt inhoud geleverd, zoals:
+1. Zal inhoud leveren zoals:
 
    ![chlimage_1-192](assets/chlimage_1-192.png)
 
@@ -63,7 +66,7 @@ De pagina kan één inhoudsfragment of meerdere componenten van verschillende ty
    http://localhost:4502/content/we-retail/language-masters/en/manchester-airport/jcr:content/root/responsivegrid/contentfragment.model.json
    ```
 
-* Hiermee wordt inhoud geleverd, zoals:
+* Zal inhoud leveren zoals:
 
    ![chlimage_1-193](assets/chlimage_1-193.png)
 
@@ -71,13 +74,17 @@ De pagina kan één inhoudsfragment of meerdere componenten van verschillende ty
    >
    >U kunt uw eigen componenten [](/help/sites-developing/json-exporter-components.md) aanpassen om tot deze gegevens toegang te hebben en te gebruiken.
 
+   >[!NOTE]
+   >
+   >Hoewel het geen standaardimplementatie is, [worden](json-exporter-components.md#multiple-selectors) meerdere kiezers ondersteund, `model` maar dit moet wel de eerste zijn.
+
 ### Aanvullende informatie {#further-information}
 
 Zie ook:
 
-* Elementen HTTP-API
+* HTTP-API voor assets
 
-   * [Elementen HTTP-API](/help/assets/mac-api-assets.md)
+   * [HTTP-API voor assets](/help/assets/mac-api-assets.md)
 
 * Modellen voor verkopen:
 
@@ -93,7 +100,7 @@ Zie voor meer informatie:
 
 * Het onderwerp [Inhoudsfragmenten in de gebruikershandleiding voor middelen](https://helpx.adobe.com/experience-manager/6-4/assets/user-guide.html?topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js)
 
-* [Modellen van inhoudsfragmenten](/help/assets/content-fragments-models.md)
+* [Modellen van contentfragmenten](/help/assets/content-fragments-models.md)
 * [Ontwerpen met inhoudsfragmenten](/help/sites-authoring/content-fragments.md)
 * [JSON-export inschakelen voor een component](/help/sites-developing/json-exporter-components.md)
 

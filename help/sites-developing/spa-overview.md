@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 06b8c0be-4362-4bd1-ad57-ea5503616b17
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3d9bcc706a1fa7a15d0ce8729f7b85c4226b394f
+source-git-commit: 10072609bc371b5f2dce425e90e583f14f96e371
+workflow-type: tm+mt
+source-wordcount: '1686'
+ht-degree: 0%
 
 ---
 
@@ -172,6 +175,10 @@ Eerdere versies van deze frameworks werken mogelijk met de AEM SPA Editor SDK, m
 ### Aanvullende kaders {#additional-frameworks}
 
 De extra kaders van het KUUROORD kunnen worden uitgevoerd om met de Redacteur SDK van AEM te werken SPA. Gelieve te zien het document van de Blauwdruk [van het](/help/sites-developing/spa-blueprint.md) KUUROORD voor de vereisten die een kader moet vervullen om een kader-specifieke laag tot stand te brengen die uit modules, componenten, en de diensten wordt samengesteld om met de Redacteur van het KUUROORD AEM te werken.
+
+### Meerdere kiezers gebruiken {#multiple-selectors}
+
+De extra douanekiezers kunnen als deel van een SPA worden bepaald en worden gebruikt die voor AEM SPA SDK wordt ontwikkeld. Voor deze ondersteuning is echter vereist dat de `model` kiezer de eerste kiezer is en dat de extensie `.json` voldoet aan de [eisen van de JSON Exporter.](json-exporter-components.md#multiple-selectors)
 
 ### Vereisten voor teksteditor {#text-editor-requirements}
 

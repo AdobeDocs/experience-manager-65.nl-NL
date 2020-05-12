@@ -10,7 +10,10 @@ content-type: reference
 discoiquuid: 04ac8203-320b-4671-aaad-6e1397b12b6f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2dad220d6593ed542816f8a97b0d4b44f0d57876
+source-git-commit: 10072609bc371b5f2dce425e90e583f14f96e371
+workflow-type: tm+mt
+source-wordcount: '2112'
+ht-degree: 0%
 
 ---
 
@@ -189,7 +192,7 @@ Bijvoorbeeld:
 
 #### Componenttoewijzing {#component-mapping}
 
-De onderliggende bibliotheek voor [componenttoewijzing](/help/sites-developing/spa-blueprint.md#componentmapping) en de bijbehorende `MapTo` functie kunnen worden ingekapseld en uitgebreid om de functionaliteit te bieden die betrekking heeft op de bewerkingsconfiguratie naast de huidige componentklasse.
+De onderliggende [`Component Mapping`](/help/sites-developing/spa-blueprint.md#componentmapping) bibliotheek en zijn `MapTo` functie kunnen worden ingekapseld en worden uitgebreid om de functionaliteiten met betrekking tot te verstrekken uitgeeft configuratie die naast de huidige componentenklasse wordt verstrekt.
 
 ```
 const EditConfig = {
@@ -211,7 +214,7 @@ class MyComponent extends Component {
 MapTo('component/resource/path')(MyComponent, EditConfig);
 ```
 
-In de bovengenoemde implementatie, wordt de projectcomponent uitgebreid met de leegheidsfunctionaliteit alvorens wordt geregistreerd in de opslag van de Afbeelding van de [Component](/help/sites-developing/spa-blueprint.md#componentmapping) . Dit wordt gedaan door de ` [ComponentMapping](/content.md#main-pars_header_906602219)` bibliotheek in te kapselen en uit te breiden om de steun van het `EditConfig` configuratievoorwerp te introduceren:
+In de bovengenoemde implementatie, wordt de projectcomponent uitgebreid met de leegheidsfunctionaliteit alvorens wordt geregistreerd in de opslag van de Afbeelding van de [Component](/help/sites-developing/spa-blueprint.md#componentmapping) . Dit wordt gedaan door de [`ComponentMapping`](/help/sites-developing/spa-blueprint.md#componentmapping) bibliotheek in te kapselen en uit te breiden om de steun van het `EditConfig` configuratievoorwerp te introduceren:
 
 ```
 /**
@@ -234,7 +237,7 @@ In de bovengenoemde implementatie, wordt de projectcomponent uitgebreid met de l
 ComponentMapping.map = function map (resourceTypes, clazz, editConfig) {};
 ```
 
-## Slinken met de paginaeditor {#contract-wtih-the-page-editor}
+## Slinken met de paginaeditor {#contract-with-the-page-editor}
 
 De projectcomponenten moeten minstens de volgende gegevensattributen produceren om de redacteur toe te staan om met hen in wisselwerking te staan.
 
@@ -253,7 +256,7 @@ Het volgende fragment illustreert de typische HTML-representatie van een pagina-
 * Het responsieve rasterelement bevat vooraf ingestelde klassenamen `aem-Grid--`
 * Het responsieve kolomelement bevat vooraf ingestelde klassenamen `aem-GridColumn--`
 * Een responsief raster dat ook de kolom van een bovenliggend raster is, wordt omlopen, zoals de twee vorige voorvoegsels, worden niet op hetzelfde element weergegeven
-* Elementen die overeenkomen met bewerkbare bronnen, hebben een `data-cq-data-path` eigenschap. Zie het [Contract met de sectie van de Redacteur](#contract-wtih-the-page-editor) van de Pagina van dit document.
+* Elementen die overeenkomen met bewerkbare bronnen hebben een `data-cq-data-path` eigenschap. Zie het [Contract met de sectie van de Redacteur](#contract-wtih-the-page-editor) van de Pagina van dit document.
 
 ```
 <div data-cq-data-path="/content/page">
@@ -287,5 +290,5 @@ Zie hoe een eenvoudig KUUROORD werkt en met een KUUROORD zelf experimenteert doo
 
 Voor meer informatie over SPAs in AEM, zie de volgende documenten:
 
-* [Het Authoring Overzicht](/help/sites-developing/spa-overview.md) van SPA&#39;s voor een overzicht van SPA&#39;s in AEM en het communicatiemodel
+* [Het Authoring Overzicht](/help/sites-developing/spa-overview.md) van SPA voor een overzicht van SPAs in AEM en het communicatie model
 * [Begonnen het worden met SPAs in AEM](/help/sites-developing/spa-getting-started-react.md) voor een gids aan een eenvoudige SPA en hoe het werkt

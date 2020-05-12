@@ -9,7 +9,10 @@ topic-tags: develop
 discoiquuid: 13f00bb2-561f-4d64-8829-292c663abeab
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 76908a565bf9e6916db39d7db23c04d2d40b3247
+source-git-commit: 6b4bc58efd72900c54cb245878239e345d72ae3e
+workflow-type: tm+mt
+source-wordcount: '367'
+ht-degree: 0%
 
 ---
 
@@ -44,5 +47,5 @@ In deelvensters hebt u toegang tot de functie via de werkbalk van het deelvenste
 
 SOM-expressies extraheren met de werkbalk van het deelvenster
 
-Sommige API&#39;s die in [GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.md) worden vermeld, gebruiken de SOM-expressie van een element. Als u bijvoorbeeld een bepaald veld in een adaptieve vorm de focus wilt geven, geeft u de overeenkomstige SOM-expressie door aan de `getFocus`API in `guideBridge`.
+Sommige API&#39;s die in [GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html) worden vermeld, gebruiken de SOM-expressie van een element. Als u bijvoorbeeld een bepaald veld in een adaptieve vorm de focus wilt geven, geeft u de overeenkomstige SOM-expressie door aan de `getFocus`API in `guideBridge`.
 

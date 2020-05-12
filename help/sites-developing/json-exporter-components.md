@@ -10,7 +10,10 @@ topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: 448ad337-d4bb-4603-a27b-77da93feadbd
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 10072609bc371b5f2dce425e90e583f14f96e371
+workflow-type: tm+mt
+source-wordcount: '562'
+ht-degree: 3%
 
 ---
 
@@ -56,6 +59,16 @@ Daarnaast wordt hiermee aangegeven dat de klasse Sling Model kan worden aangepas
 >
 >De `ExporterConstants` klassen en `ComponentExporter` klassen komen uit de `com.adobe.cq.export.json` bundel.
 
+### Meerdere kiezers gebruiken {#multiple-selectors}
+
+Hoewel het geen standaard gebruikscase is, is het mogelijk om veelvoudige selecteurs naast de `model` selecteur te vormen.
+
+```
+https://<server>:<port>/content/page.model.selector1.selector2.json
+```
+
+In dat geval moet de `model` kiezer echter de eerste kiezer zijn en moet de extensie `.json`.
+
 ## De interface van het verkoopmodel notities aanbrengen {#annotate-the-sling-model-interface}
 
 Om door het kader van de Exporteur van JSON in aanmerking te worden genomen, zou de modelinterface de `ComponentExporter` interface (of `ContainerExporter`, in het geval van een containercomponent) moeten uitvoeren.
@@ -83,7 +96,7 @@ Zie voor meer informatie:
 
 * Het onderwerp [Inhoudsfragmenten in de gebruikershandleiding voor middelen](https://helpx.adobe.com/experience-manager/6-4/assets/user-guide.html?topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js)
 
-* [Modellen van inhoudsfragmenten](/help/assets/content-fragments-models.md)
+* [Modellen van contentfragmenten](/help/assets/content-fragments-models.md)
 * [Ontwerpen met inhoudsfragmenten](/help/sites-authoring/content-fragments.md)
 * [JSON-exportfunctie voor services voor inhoud](/help/sites-developing/json-exporter.md)
 * [Kerncomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) en de component [Inhoudsfragment](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)

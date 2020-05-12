@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d948ea6e6f6983ba0ecfe05710ffa7dedb772075
+source-git-commit: d77296df73861c33720c16c14534c1b448d35d06
 workflow-type: tm+mt
-source-wordcount: '5430'
+source-wordcount: '5434'
 ht-degree: 6%
 
 ---
@@ -175,7 +175,7 @@ Het scherm van de Server van het Beeld vestigt standaardmontages voor het levere
 
 #### Algemene instellingen van toepassing configureren {#configuring-application-general-settings}
 
-Klik op Dynamische media Classic Global Navigation Bar om de pagina Algemene instellingen toepassing te openen **[!UICONTROL Setup > Application Setup > General Settings]**.
+Als u de pagina Algemene instellingen toepassing wilt openen, klikt u op de knop Dynamische mediaclassieke globale navigatiebalk **[!UICONTROL Setup > Application Setup > General Settings]**.
 
 **Servers - **Voor rekeninglevering, verstrekt de Dynamische Media automatisch de toegewezen servers voor uw bedrijf. Deze servers worden gebruikt om URL-tekenreeksen voor uw website en toepassingen samen te stellen. Deze URL-aanroepen gelden specifiek voor uw account. Wijzig geen van de servernamen, tenzij dit expliciet wordt opgedragen door AEM-ondersteuning.
 
@@ -502,11 +502,11 @@ Om Dynamische Media - wijze Scene7 vlot te houden, adviseert Adobe de volgende s
 * Werk de vooraf gedefinieerde graniet transient workflow (afbeeldingen en niet-video-elementen) in de wachtrij met arbeidersthreads bij.
 * Werk de maximale uploadverbindingen bij met de Dynamic Media Classic-server.
 
-#### De Granite Transient Workflow-wachtrij bijwerken {#updating-the-granite-transient-workflow-queue}
+#### De voorlopige wachtrij van Granite bijwerken {#updating-the-granite-transient-workflow-queue}
 
 De Granite Transit Workflow-wachtrij wordt gebruikt voor de **[!UICONTROL DAM Update Asset]** workflow. In Dynamische media, wordt het gebruikt voor beeldopname en verwerking.
 
-**De Granite Transient Workflow-wachtrij bijwerken**
+**De voorlopige wachtrij van Granite bijwerken**
 
 1. Ga naar [https://&lt;server>/system/console/configMgr](https://localhost:4502/system/console/configMgr) en zoek naar **Wachtrij: Granite Transient Workflow Queue**.
 
@@ -524,11 +524,11 @@ De Granite Transit Workflow-wachtrij wordt gebruikt voor de **[!UICONTROL DAM Up
 
 1. Tik op **[!UICONTROL Save]**.
 
-#### De Granite Workflow-wachtrij bijwerken {#updating-the-granite-workflow-queue}
+#### De Granite-workflowwachtrij bijwerken {#updating-the-granite-workflow-queue}
 
 De Granite Workflow-wachtrij wordt gebruikt voor niet-tijdelijke workflows. In Dynamische Media, gebruikte het om video met het **[!UICONTROL Dynamic Media Encode Video]** werkschema te verwerken.
 
-**De Granite Workflow-wachtrij bijwerken**
+**De Granite-werkstroomwachtrij bijwerken**
 
 1. Navigeer naar `https://<server>/system/console/configMgr` en zoek naar **Wachtrij: Granite Workflow Queue**.
 
@@ -546,11 +546,11 @@ De Granite Workflow-wachtrij wordt gebruikt voor niet-tijdelijke workflows. In D
 
 1. Tik op **[!UICONTROL Save]**.
 
-#### Het bijwerken van Scene7 uploadt verbinding {#updating-the-scene-upload-connection}
+#### De Dynamic Media Classic-uploadverbinding bijwerken {#updating-the-scene-upload-connection}
 
 Scene7 uploadt verbinding die plaatst synchroniseert activa AEM aan Dynamische Media Klassieke servers.
 
-**Om de Scene7 uploadverbinding bij te werken**
+**De Dynamic Media Classic-uploadverbinding bijwerken**
 
 1. Ga naar `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
 1. Wijzig het nummer in het **[!UICONTROL Number of connections]** veld en/of het **[!UICONTROL Active job timeout]** veld naar wens.

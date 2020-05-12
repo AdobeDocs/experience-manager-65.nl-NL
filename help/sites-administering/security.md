@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: e72da81b-4085-49b0-86c3-11ad48978a8a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bd667ae10b930f6e3b97fb22b4a99b0841fac171
+source-git-commit: 86d3f14ec9e99297ede0aa1c027884d7f73665bc
+workflow-type: tm+mt
+source-wordcount: '5487'
+ht-degree: 0%
 
 ---
 
@@ -43,7 +46,7 @@ Groepen blijven daarom over het algemeen stabiel, terwijl gebruikers vaker komen
 
 Met planning en een schone structuur kan het gebruik van groepen uw structuur weerspiegelen, waardoor u een duidelijk overzicht krijgt en een efficiënt mechanisme voor updates.
 
-### Ingebouwde gebruikers en groepen {#built-in-users-and-groups}
+### Built-in Users and Groups {#built-in-users-and-groups}
 
 AEM WCM installeert een aantal gebruikers en groepen. Deze kunnen worden gezien wanneer u eerst tot de Console van de Veiligheid na installatie toegang hebt.
 
@@ -63,7 +66,7 @@ In de volgende tabellen wordt elk item vermeld, samen met:
    <td>Aanbeveling</td>
   </tr>
   <tr>
-   <td><p> beheerder</p> <p>Standaardwachtwoord: beheerder</p> </td>
+   <td><p>beheerder</p> <p>Standaardwachtwoord: beheerder</p> </td>
    <td>Gebruiker</td>
    <td><p>Systeembeheeraccount met volledige toegangsrechten.</p> <p>Dit account wordt gebruikt voor de verbinding tussen AEM WCM en CRX.</p> <p>Als u dit account per ongeluk verwijdert, wordt het opnieuw gemaakt nadat de opslagplaats opnieuw is opgestart (in de standaardconfiguratie).</p> <p>De beheerdersaccount is een vereiste voor het AEM-platform. Dit betekent dat dit account niet kan worden verwijderd.</p> </td>
    <td><p>Adobe raadt u ten zeerste aan het wachtwoord voor deze gebruikersaccount te wijzigen.</p> <p>Bij voorkeur na installatie, maar achteraf.</p> <p>Opmerking: Dit account mag niet worden verward met de beheerdersaccount van de CQ Servlet Engine.</p> </td>
@@ -293,7 +296,7 @@ Hieronder volgen aanbevelingen voor het beheren van toegangsbeheerlijsten:
 
 Voordat u een van beide machtigingen wijzigt, moet u weten hoe deze werken en hoe ze elkaar beïnvloeden. Raadpleeg de CRX-documentatie om te illustreren hoe AEM WCM toegangsrechten [en voorbeelden](/help/sites-administering/user-group-ac-admin.md#how-access-rights-are-evaluated) evalueert bij het instellen van toegangsbeheerlijsten.
 
-### Permissions {#permissions}
+### Machtigingen {#permissions}
 
 Rechten geven gebruikers en groepen toegang tot AEM-functionaliteit op AEM-pagina&#39;s.
 
@@ -361,7 +364,7 @@ Hierdoor kunnen imitatoraccounts taken uitvoeren alsof ze de account gebruiken d
 >
 >De pagina&#39;s kunnen niet worden ontgrendeld door zich als de gebruiker voor te doen die de pagina heeft vergrendeld.
 
-### Aanbevolen werkwijzen {#best-practices}
+### Best Practices {#best-practices}
 
 Hieronder worden de aanbevolen procedures beschreven wanneer u werkt met machtigingen en bevoegdheden:
 
@@ -369,11 +372,11 @@ Hieronder worden de aanbevolen procedures beschreven wanneer u werkt met machtig
 |--- |--- |
 | *Groepen gebruiken* | Vermijd het toewijzen van toegangsrechten per gebruiker. Hiervoor zijn verschillende redenen:<ul><li>U hebt veel meer gebruikers dan groepen, zodat vereenvoudigen de groepen de structuur.</li><li>Groepen bieden een overzicht van alle accounts.</li> <li>Overerving is eenvoudiger bij groepen.</li><li>Gebruikers komen en gaan. Groepen zijn langdurig.</li></ul> |
 | *Positief* | Gebruik altijd Instructies toestaan om de rechten van de groep op te geven (waar mogelijk). Vermijd het gebruik van een Deny-instructie. Groepen worden op volgorde geëvalueerd en de volgorde kan per gebruiker anders worden gedefinieerd. Met andere woorden: U hebt wellicht weinig controle over de volgorde waarin de instructies worden geïmplementeerd en geëvalueerd. Als u alleen Instructies toestaan gebruikt, is de volgorde niet van belang. |
-| *Eenvoudig houden* | Het investeren van wat tijd en gedachte wanneer het vormen van een nieuwe installatie zal goed worden terugbetaald. Door een duidelijke structuur toe te passen, wordt het permanente onderhoud en de administratie vereenvoudigd, zodat uw huidige collega&#39;s en/of toekomstige opvolgers gemakkelijk kunnen begrijpen wat er wordt geïmplementeerd. |
+| *Eenvoudig houden* | Het investeren van wat tijd en gedachte wanneer het vormen van een nieuwe installatie zal goed worden terugbetaald. Door een duidelijke structuur toe te passen, wordt het permanente onderhoud en de administratie vereenvoudigd, zodat zowel uw huidige collega&#39;s als toekomstige opvolgers gemakkelijk kunnen begrijpen wat er wordt geïmplementeerd. |
 | *Testen* | Gebruik een testinstallatie om te oefenen en ervoor te zorgen dat u de relaties tussen de verschillende gebruikers en groepen begrijpt. |
 | *Standaardgebruikers/groepen* | Werk de standaardgebruikers en -groepen altijd direct na de installatie bij om beveiligingsproblemen te voorkomen. |
 
-## Gebruikers en groepen beheren {#managing-users-and-groups}
+## Managing Users and Groups {#managing-users-and-groups}
 
 De gebruikers omvatten mensen die het systeem gebruiken en buitenlandse systemen die verzoeken aan het systeem indienen.
 
@@ -418,7 +421,7 @@ De tabbladen bieden toegang tot verschillende configuraties:
 | Imitators | Laat een andere gebruiker zich de rekening voorstellen. Nuttig wanneer u een gebruiker nodig hebt om namens een andere gebruiker te handelen. Zie Gebruikers [imiteren](#impersonating-another-user). |
 | Voorkeuren | Hiermee stelt u [voorkeuren in voor de groep of gebruiker](#setting-user-and-group-preferences). Bijvoorbeeld taalvoorkeuren. |
 
-### Gebruikers en groepen filteren {#filtering-users-and-groups}
+### Filtering Users and Groups {#filtering-users-and-groups}
 
 U kunt de lijst filteren door een filterexpressie in te voeren, die alle gebruikers en groepen verbergt die niet overeenkomen met de expressie. U kunt gebruikers en groepen ook verbergen met de knoppen Gebruiker [verbergen en Groep](#hiding-users-and-groups) verbergen.
 
@@ -431,7 +434,7 @@ U kunt als volgt gebruikers of groepen filteren:
 
 1. Klik op de **x** wanneer u alle filters wilt verwijderen.
 
-### Gebruikers en groepen verbergen {#hiding-users-and-groups}
+### Hiding Users and Groups {#hiding-users-and-groups}
 
 Het verbergen van gebruikers of groepen is een andere manier om de lijst met alle gebruikers en groepen in een systeem te filteren. Er zijn twee schakelmechanismen. Als u op Gebruiker verbergen klikt, worden alle gebruikers verborgen en als u op Groepen verbergen klikt, worden alle groepen verborgen (u kunt niet tegelijkertijd zowel gebruikers als groepen verbergen). Zie Gebruikers en groepen [](#filtering-users-and-groups)filteren als u de lijst wilt filteren met een filterexpressie.
 
@@ -443,7 +446,7 @@ Gebruikers en groepen verbergen:
 
 1. Als u gebruikers of groepen opnieuw wilt weergeven, klikt u nogmaals op de bijbehorende knop.
 
-### Gebruikers en groepen maken {#creating-users-and-groups}
+### Creating Users and Groups {#creating-users-and-groups}
 
 Een nieuwe gebruiker of groep maken:
 
@@ -461,7 +464,7 @@ Een nieuwe gebruiker of groep maken:
 
 1. Klik op **Maken**. De gebruiker of groep die u hebt gemaakt, wordt weergegeven in de boomstructuurlijst.
 
-### Gebruikers en groepen verwijderen {#deleting-users-and-groups}
+### Deleting Users and Groups {#deleting-users-and-groups}
 
 Een gebruiker of groep verwijderen:
 
@@ -490,7 +493,7 @@ Gebruik de volgende procedure om het wachtwoord van een gebruiker te wijzigen.
 >[!NOTE]
 >
 >U kunt de beveiligingsconsole niet gebruiken om het beheerwachtwoord te wijzigen. Als u het wachtwoord voor de beheerdersaccount wilt wijzigen, gebruikt u de [gebruikersconsole](/help/sites-administering/granite-user-group-admin.md#changing-the-password-for-an-existing-user) die Granite Operations biedt.
-
+> Als u AEM Forms on JEE gebruikt, moet u onderstaande instructies niet gebruiken om het wachtwoord te wijzigen in plaats van AEM Forms on JEE admin Console (/adminui) te gebruiken om het wachtwoord te wijzigen.
 
 1. Dubbelklik in de **beveiligingsconsole** op de gebruikersnaam waarvoor u het wachtwoord wilt wijzigen.
 1. Klik op het tabblad **Eigenschappen** (als dit tabblad nog niet actief is).
@@ -734,7 +737,7 @@ De definitie en registratie van aangepaste rechten maakt officieel deel uit van 
 
 Het mechanisme van de voorrechtregistratie wordt weerspiegeld in UI onder de Configuratie **van de** Bewaarplaats.
 
-De registratie van nieuwe (aangepaste) rechten wordt zelf beschermd door een ingebouwd recht dat moet worden toegekend op het niveau van de opslagplaats (in JCR: Als u &#39;null&#39; doorgeeft als de parameter &#39;absPath&#39; in de ac mgt api, zie jsr 333 voor meer informatie). Door gebrek, hebben **admin** en alle leden van beheerders dat voorrecht verleend.
+De registratie van nieuwe (aangepaste) rechten wordt zelf beschermd door een ingebouwd voorrecht dat moet worden toegekend op het niveau van de opslagplaats (in JCR: Als u &#39;null&#39; doorgeeft als de parameter &#39;absPath&#39; in de ac mgt api, zie jsr 333 voor meer informatie). Door gebrek, hebben **admin** en alle leden van beheerders dat voorrecht verleend.
 
 >[!NOTE]
 >

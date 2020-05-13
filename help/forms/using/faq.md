@@ -11,7 +11,10 @@ topic-tags: hTML5_forms
 discoiquuid: 4b676e7e-191f-4a19-8b8f-fc3e30244b59
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 407b4d0b86c6bcbff11a085ea10bd3bf90115257
+workflow-type: tm+mt
+source-wordcount: '1970'
+ht-degree: 0%
 
 ---
 
@@ -165,6 +168,10 @@ Er zijn een aantal veelgestelde vragen (FAQ) over indeling, ondersteuning van sc
 
    Schermlezers ondersteunen geen datum-/tijdvelden. U kunt echter handmatig datum/tijd invoeren in het veld om de schermlezer de datum/tijd te laten lezen. Gebruik knopinfo of schermlezertekst om de gebruiker op te dragen handmatig datum/tijd voor het veld te selecteren.
 
+1. Biedt HTML5-formulieren ondersteuning voor weergavepatronen voor zwevende velden?
+
+   Antwoord: HTML5-formulieren ondersteunen geen weergavepatronen voor zwevende velden.
+
 ### Scripts {#scripting}
 
 1. Zijn er beperkingen in de JavaScript-implementatie voor HTML-formulieren?
@@ -208,4 +215,4 @@ Er zijn een aantal veelgestelde vragen (FAQ) over indeling, ondersteuning van sc
 
 1. Zijn er gereserveerde trefwoorden in HTML5-formulieren?
 
-   Antwoord: Alle API&#39;s voor HTML5-formulieren zijn gereserveerde trefwoorden. Gebruik voor aangepaste API&#39;s/functies een naam die niet gelijk is aan API&#39;s voor [HTML5-formulieren](/help/forms/using/scripting-support.md). Als u objectnamen gebruikt die met een onderstrepingsteken (_) beginnen, wordt het aangeraden naast gereserveerde trefwoorden ook een uniek voorvoegsel na het onderstrepingsteken toe te voegen. Door een voorvoegsel toe te voegen voorkomt u mogelijke conflicten met interne API&#39;s voor HTML5-formulieren. Bijvoorbeeld: `_fpField1`
+   Antwoord: Alle API&#39;s voor HTML5-formulieren zijn gereserveerde trefwoorden. Gebruik voor aangepaste API&#39;s/functies een naam die niet gelijk is aan API&#39;s voor [HTML5-formulieren](/help/forms/using/scripting-support.md). Als u objectnamen gebruikt die met een onderstrepingsteken (_) beginnen, wordt het aangeraden naast gereserveerde trefwoorden ook een uniek voorvoegsel na het onderstrepingsteken toe te voegen. Door een voorvoegsel toe te voegen voorkomt u mogelijke conflicten met interne API&#39;s voor HTML5-formulieren. Bijvoorbeeld, `_fpField1`

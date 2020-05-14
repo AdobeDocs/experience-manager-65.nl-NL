@@ -3,9 +3,9 @@ title: 'Metagegevensschema''s om de indeling van de pagina met eigenschappen van
 description: Het metagegevensschema definieert de indeling van de pagina met eigenschappen en de eigenschappen van metagegevens die voor elementen worden weergegeven. Leer hoe u een aangepast metagegevensschema kunt maken, het schema voor metagegevens kunt bewerken en hoe u het schema voor metagegevens op elementen kunt toepassen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 39066500057d364ccee57f01f045c11d634b2d0e
+source-git-commit: 2366abc3be015fa637621f235edb8e8d79e51372
 workflow-type: tm+mt
-source-wordcount: '2589'
+source-wordcount: '2591'
 ht-degree: 7%
 
 ---
@@ -25,7 +25,7 @@ Ga als volgt te werk om de pagina met eigenschappen voor een element weer te gev
 
    U kunt ook een element selecteren en vervolgens op het [!UICONTROL Properties] pictogram op de werkbalk klikken of tikken.
 
-1. U kunt verschillende eigenschappen van metagegevens bewerken onder de beschikbare tabbladen. U kunt het element echter niet wijzigen [!UICONTROL Type] op het [!UICONTROL Basic] tabblad Eigenschappen.
+1. U kunt de verschillende bewerkbare eigenschappen van metagegevens bewerken onder de beschikbare tabbladen. U kunt het element echter niet wijzigen [!UICONTROL Type] op het [!UICONTROL Basic] tabblad Eigenschappen.
 
    ![Het tabblad Standaard van de eigenschappen van elementen, waarin het elementtype niet kan worden gewijzigd](assets/asset-properties-basic-tab.png)
 

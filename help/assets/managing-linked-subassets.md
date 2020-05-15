@@ -3,7 +3,10 @@ title: Samengestelde elementen beheren met verwijzingen en elementen van meerder
 description: Leer hoe u verwijzingen naar digitale middelen maakt vanuit [!DNL Adobe InDesign], [!DNL Adobe Illustrator] en [!DNL Adobe Photoshop]. Met de functie Paginaviewer kunt u afzonderlijke subelementpagina's van bestanden met meerdere pagina's weergeven, zoals PDF-, INDD-, PPT-, PPTX- en AI-bestanden.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: d90a95195a97a1840e1defb49d2a09ffbd3c8650
+workflow-type: tm+mt
+source-wordcount: '1311'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +21,7 @@ Naast het elimineren van overtolligheid, het van verwijzingen voorzien van de ac
 
 Verwijzingen worden opgelost op basis van pad, document-id en instantie-id van de middelen waarnaar wordt verwezen.
 
-## Digitale elementen toevoegen als verwijzingen in [!DNL Adobe Illustrator]{#refai}
+## Digitale elementen toevoegen als verwijzingen in [!DNL Adobe Illustrator] {#refai}
 
 U kunt vanuit een [!DNL Adobe Illustrator] bestand verwijzen naar bestaande digitale elementen.
 
@@ -27,21 +30,21 @@ U kunt vanuit een [!DNL Adobe Illustrator] bestand verwijzen naar bestaande digi
 
 1. Sla het [!DNL Illustrator] bestand op het gekoppelde station op of [upload](/help/assets/managing-assets-touch-ui.md#uploading-assets) het bestand naar de [!DNL Experience Manager] opslagplaats.
 
-1. Nadat de workflow is voltooid, gaat u naar de pagina met elementdetails voor het element. De verwijzingen naar bestaande digitale activa zijn vermeld onder **[!UICONTROL Afhankelijkheden]** in de **[!UICONTROL kolom van Verwijzingen]** .
+1. Nadat de workflow is voltooid, gaat u naar de pagina met elementdetails voor het element. De verwijzingen naar bestaande digitale elementen staan onder **[!UICONTROL Dependencies]** de **[!UICONTROL References]** kolom.
 
    ![chlimage_1-84](assets/chlimage_1-258.png)
 
-1. De middelen waarnaar wordt verwezen die onder **[!UICONTROL Afhankelijkheden]** verschijnen kunnen ook door dossiers buiten huidige worden van verwijzingen voorzien. Als u een lijst met referentiebestanden voor een element wilt weergeven, klikt u op het element onder **[!UICONTROL Afhankelijkheden]**.
+1. De middelen waarnaar wordt verwezen die onder **[!UICONTROL Dependencies]** worden weergegeven, kunnen ook worden verwezen door andere bestanden dan de huidige. Als u een lijst wilt weergeven met bestanden die naar een element verwijzen, klikt u op het element onder **[!UICONTROL Dependencies]**.
 
    ![chlimage_1-85](assets/chlimage_1-259.png)
 
-1. Klik op Eigenschappen **[!UICONTROL van]** weergave op de werkbalk. Op de pagina [!UICONTROL Eigenschappen] wordt de lijst met bestanden die naar het huidige element verwijzen, weergegeven onder de kolom **[!UICONTROL Verwijzingen]** op het tabblad **[!UICONTROL Standaard]** .
+1. Klik op **[!UICONTROL View Properties]** de werkbalk. Op de [!UICONTROL Properties] pagina wordt de lijst met bestanden die naar het huidige element verwijzen, weergegeven onder de **[!UICONTROL References]** kolom op het **[!UICONTROL Basic]** tabblad.
 
    ![bekijk de verwijzingen van de Middelen van de Manager van de Ervaring in de kolom van Verwijzingen in activadetails](assets/asset-references.png)
 
    *Afbeelding: Verwijzingen naar elementen in de elementen.*
 
-## Digitale elementen toevoegen als verwijzingen in [!DNL Adobe InDesign]{#add-aem-assets-as-references-in-adobe-indesign}
+## Digitale elementen toevoegen als verwijzingen in [!DNL Adobe InDesign] {#add-aem-assets-as-references-in-adobe-indesign}
 
 Als u vanuit een [!DNL InDesign] bestand naar digitale elementen wilt verwijzen, sleept u elementen naar het [!DNL InDesign] bestand of exporteert u het [!DNL InDesign] bestand als een ZIP-archief.
 
@@ -63,9 +66,9 @@ Deze procedure is vergelijkbaar met het [toevoegen van digitale elementen als ve
 1. Start de `Unarchiver` workflow.
 1. Wanneer de werkstroom is voltooid, wordt er automatisch naar de verwijzingen in de map Koppelingen verwezen als subelementen. Als u een lijst met de desbetreffende elementen wilt weergeven, navigeert u naar de pagina met elementdetails van het [!DNL InDesign] element en sluit u de [Rail](/help/sites-authoring/basic-handling.md#rail-selector).
 
-## Digitale elementen toevoegen als verwijzingen in [!DNL Adobe Photoshop]{#refps}
+## Digitale elementen toevoegen als verwijzingen in [!DNL Adobe Photoshop] {#refps}
 
-1. Gebruik [!DNL Experience Manager] bureaubladtoepassing voor toegang [!DNL Experience Manager Assets]. Download en open de middelen op het lokale bestandssysteem. Gebruik de functie Gekoppelde  plaatsen in [!DNL Adobe Photoshop]. Zie Elementen [plaatsen in de bureaubladtoepassing](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#place-assets-in-native-documents).
+1. Gebruik [!DNL Experience Manager] bureaubladtoepassing voor toegang [!DNL Experience Manager Assets]. Download en open de middelen op het lokale bestandssysteem. Gebruik de [!UICONTROL Place Linked] functionaliteit in [!DNL Adobe Photoshop]. Zie Elementen [plaatsen in de bureaubladtoepassing](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#place-assets-in-native-documents).
 
    ![chlimage_1-87](assets/chlimage_1-261.png)
 
@@ -78,7 +81,7 @@ Deze procedure is vergelijkbaar met het [toevoegen van digitale elementen als ve
 
 >[!NOTE]
 >
->Er kan ook worden verwezen naar de elementen in samengestelde elementen op basis van hun document-id en instantie-id. Deze functionaliteit is alleen beschikbaar bij [!DNL Adobe Illustrator] en in [!DNL Adobe Photoshop] versies. Voor andere toepassingen wordt het verwijzen uitgevoerd op basis van het relatieve pad van gekoppelde elementen in het hoofdsamengestelde element, zoals dat in eerdere versies van [!DNL Experience Manager]dit programma is gebeurd.
+>Er kan ook worden verwezen naar de elementen in samengestelde elementen op basis van hun document-id en instantie-id. Deze functionaliteit is alleen beschikbaar bij [!DNL Adobe Illustrator] en in [!DNL Adobe Photoshop] versies. Voor andere toepassingen wordt het verwijzen uitgevoerd op basis van het relatieve pad van gekoppelde elementen in het samengestelde hoofdelement, zoals dat in eerdere versies van [!DNL Experience Manager]dit programma is gebeurd.
 
 ## Subelementen maken {#generate-subassets}
 
@@ -86,29 +89,29 @@ Voor de ondersteunde elementen met indelingen die uit meerdere pagina&#39;s best
 
 Genereren van subelementen is standaard uitgeschakeld. Voer de volgende stappen uit om het genereren van subelementen in te schakelen:
 
-1. Meld u aan [!DNL Experience Manager] als beheerder. Ga naar **[!UICONTROL Extra > Workflow > Modellen]**.
-1. Selecteer de **[!UICONTROL DAM-workflow Element]** bijwerken en klik op **[!UICONTROL Bewerken]**.
-1. Klik op **[!UICONTROL Zijpaneel]** in-/uitschakelen en zoek de stap **[!UICONTROL Subelement]** maken. Voeg de stap toe aan de workflow. Klik op **[!UICONTROL Synchroniseren]**.
+1. Meld u aan [!DNL Experience Manager] als beheerder. Ga naar **[!UICONTROL Tools > Workflow > Models]**.
+1. Select **[!UICONTROL DAM Update Asset]** workflow and click **[!UICONTROL Edit]**.
+1. Klik **[!UICONTROL Toggle Side Panel]** en zoek de **[!UICONTROL Create Sub Asset]** stap. Voeg de stap toe aan de workflow. Klik op **[!UICONTROL Sync]**.
 
 Voer een van de volgende handelingen uit om de subelementen te genereren:
 
-* Nieuwe elementen: De [!UICONTROL DAM-workflow Middelen] bijwerken wordt uitgevoerd op elk nieuw element waarnaar geüpload wordt [!DNL Experience Manager]. Subelementen worden automatisch gegenereerd voor nieuwe elementen die uit meerdere pagina&#39;s bestaan.
-* Bestaande elementen met meerdere pagina&#39;s: Voer handmatig de workflow [!UICONTROL DAM Update Assets] uit volgens een van de volgende stappen:
+* Nieuwe elementen: De [!UICONTROL DAM Update Assets] workflow wordt uitgevoerd op elk nieuw element waarnaar geüpload wordt [!DNL Experience Manager]. Subelementen worden automatisch gegenereerd voor nieuwe elementen die uit meerdere pagina&#39;s bestaan.
+* Bestaande elementen met meerdere pagina&#39;s: Voer handmatig de [!UICONTROL DAM Update Assets] workflow uit volgens een van de volgende stappen:
 
-   * Selecteer een element en klik op [!UICONTROL Tijdlijn] om het linkerdeelvenster te openen. U kunt ook de sneltoets gebruiken `alt + 3`. Klik op Workflow starten, selecteer [!UICONTROL DAM Update Asset], klik op [!UICONTROL Start]en klik op [!UICONTROL Doorgaan].
-   * Selecteer een element en klik op [!UICONTROL Maken > Workflow] op de werkbalk. Selecteer in het pop-updialoogvenster de [!UICONTROL DAM-workflow Element] bijwerken, klik op [!UICONTROL Start]en [!UICONTROL Ga verder].
+   * Selecteer een element en klik [!UICONTROL Timeline] om het linkerdeelvenster te openen. U kunt ook de sneltoets gebruiken `alt + 3`. Klik [!UICONTROL Start Workflow], selecteer [!UICONTROL DAM Update Asset], klik [!UICONTROL Start], en klik [!UICONTROL Proceed].
+   * Select an asset and click [!UICONTROL Create > Workflow] from the toolbar. Selecteer in het pop-updialoogvenster de [!UICONTROL DAM Update Asset] workflow, klik [!UICONTROL Start]en klik op [!UICONTROL Proceed].
 
-Met name voor Microsoft Word-documenten voert u de workflow **[!UICONTROL DAM Parse Word Documents]** uit. Er wordt een `cq:Page` component gegenereerd op basis van de inhoud van het Microsoft Word-document. De afbeeldingen die uit het document zijn geëxtraheerd, worden vanuit de `cq:Page` component gebruikt. Deze afbeeldingen worden geëxtraheerd, zelfs als het genereren van subelementen is uitgeschakeld.
+Met name voor Microsoft Word-documenten voert u de **[!UICONTROL DAM Parse Word Documents]** workflow uit. Er wordt een `cq:Page` component gegenereerd op basis van de inhoud van het Microsoft Word-document. De afbeeldingen die uit het document zijn geëxtraheerd, worden vanuit de `cq:Page` component gebruikt. Deze afbeeldingen worden geëxtraheerd, zelfs als het genereren van subelementen is uitgeschakeld.
 
 ## Subelementen weergeven {#viewing-subassets}
 
-De subelementen worden alleen weergegeven als de subelementen zijn gegenereerd en beschikbaar zijn voor het geselecteerde element met meerdere pagina&#39;s. Open het element met meerdere pagina&#39;s om de gegenereerde subelementen weer te geven. Klik in de linkerbovenhoek van de pagina op het pictogram ![Linkerspoor en klik op](assets/do-not-localize/aem_leftrail_contentonly.png) Submiddelen **** in de lijst. Wanneer u **[!UICONTROL Subassets]** in de lijst selecteert. U kunt ook de sneltoets gebruiken `alt + 5`.
+De subelementen worden alleen weergegeven als de subelementen zijn gegenereerd en beschikbaar zijn voor het geselecteerde element met meerdere pagina&#39;s. Open het element met meerdere pagina&#39;s om de gegenereerde subelementen weer te geven. Klik in de linkerbovenhoek van de pagina op het pictogram ![Linkerspoor en klik](assets/do-not-localize/aem_leftrail_contentonly.png) **[!UICONTROL Subassets]** in de lijst. Wanneer u een keuze maakt in de **[!UICONTROL Subassets]** lijst. U kunt ook de sneltoets gebruiken `alt + 5`.
 
 ![Subelementen weergeven voor elementen die uit meerdere pagina&#39;s bestaan](assets/view_subassets_simulation.gif)
 
 ## Pagina&#39;s van een bestand met meerdere pagina&#39;s weergeven {#view-pages-of-a-multi-page-file}
 
-U kunt een bestand met meerdere pagina&#39;s, zoals PDF, INDD, PPT, PPTX en AI, weergeven met de functie Paginaviewer van [!DNL Experience Manager Assets]. Open een element met meerdere pagina&#39;s en klik op Pagina&#39;s **** weergeven in de linkerbovenhoek van de pagina. In de Paginaviewer die wordt geopend, worden de pagina&#39;s van het element en de besturingselementen weergegeven waarmee u door elke pagina kunt bladeren en erop kunt inzoomen.
+U kunt een bestand met meerdere pagina&#39;s, zoals PDF, INDD, PPT, PPTX en AI, weergeven met de functie Paginaviewer van [!DNL Experience Manager Assets]. Open een element met meerdere pagina&#39;s en klik in de linkerbovenhoek van de pagina. **[!UICONTROL View Pages]** In de Paginaviewer die wordt geopend, worden de pagina&#39;s van het element en de besturingselementen weergegeven waarmee u door elke pagina kunt bladeren en erop kunt inzoomen.
 
 ![Pagina&#39;s van elementen met meerdere pagina&#39;s weergeven en bekijken](assets/view_multipage_asset_fmr.gif)
 
@@ -116,15 +119,19 @@ U kunt bijvoorbeeld pagina&#39;s uitnemen met [!DNL InDesign]behulp van [!DNL In
 
 De volgende opties zijn beschikbaar in de werkbalk, in de linkerrails en in de besturingselementen voor de Paginaviewer:
 
-* **[!UICONTROL Bureaubladhandelingen]** om een specifiek submiddel te openen of weer te geven met de [!DNL Experience Manager] bureaubladtoepassing. Zie hoe u bureaubladhandelingen [kunt](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2) configureren als u [!DNL Experience Manager] bureaubladtoepassing gebruikt.
+* **[!UICONTROL Desktop Actions]** om een specifiek submiddel te openen of weer te geven met de [!DNL Experience Manager] bureaubladtoepassing. Zie hoe u bureaubladhandelingen [kunt](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2) configureren als u [!DNL Experience Manager] bureaubladtoepassing gebruikt.
 
-* **[!UICONTROL Met de optie Eigenschappen]** wordt de pagina [!UICONTROL Eigenschappen] van het specifieke subelement geopend.
+* **[!UICONTROL Properties]** Hiermee opent u de [!UICONTROL Properties] pagina van het specifieke subelement.
 
-* **[!UICONTROL Met de optie Annoteren]** kunt u het specifieke subelement annoteren. De annotaties die u op afzonderlijke subelementen gebruikt, worden samen verzameld en weergegeven wanneer het bovenliggende element wordt geopend voor weergave.
+* **[!UICONTROL Annotate]** kunt u het specifieke subelement van een annotatie voorzien. De annotaties die u op afzonderlijke subelementen gebruikt, worden samen verzameld en weergegeven wanneer het bovenliggende element wordt geopend voor weergave.
 
-* **[!UICONTROL Met de optie Paginaoverzicht]** worden alle subelementen tegelijkertijd weergegeven.
+* **[!UICONTROL Page Overview]** worden alle subelementen tegelijkertijd weergegeven.
 
-* **[!UICONTROL De optie Tijdlijn]** van de linkerspoorstaaf nadat het ![linker spoorpictogram](assets/do-not-localize/aem_leftrail_contentonly.png) klikt toont de activiteitenstroom voor het dossier.
+* **[!UICONTROL Timeline]** Nadat u op het pictogram ![](assets/do-not-localize/aem_leftrail_contentonly.png) Linkerspoor hebt geklikt, wordt de activiteitsstroom voor het bestand weergegeven.
+
+## Beste werkwijzen en beperking {#best-practice-limitation-tips}
+
+* Bij elke implementatie van Experience Manager kan het genereren van submiddelen zeer bronintensief zijn. Als u subassets genereert wanneer complexe elementen worden geüpload, voegt u de stap toe in de DAM-workflow voor het bijwerken van middelen. Als u op verzoek subassets genereert, maakt u een aparte workflow om subassets te genereren. Met een speciale workflow kunt u de andere stappen in de workflow voor DAM-update-elementen overslaan en computerbronnen opslaan.
 
 >[!MORELIKETHIS]
 >

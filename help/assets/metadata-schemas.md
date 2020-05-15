@@ -3,9 +3,9 @@ title: 'Metagegevensschema''s om de indeling van de pagina met eigenschappen van
 description: Het metagegevensschema definieert de indeling van de pagina met eigenschappen en de eigenschappen van metagegevens die voor elementen worden weergegeven. Leer hoe u een aangepast metagegevensschema kunt maken, het schema voor metagegevens kunt bewerken en hoe u het schema voor metagegevens op elementen kunt toepassen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2366abc3be015fa637621f235edb8e8d79e51372
+source-git-commit: 69506287c1c8e45d99c3229d701604387bd57ca9
 workflow-type: tm+mt
-source-wordcount: '2591'
+source-wordcount: '2579'
 ht-degree: 7%
 
 ---
@@ -43,9 +43,9 @@ Als u een lijst met formulieren/sjablonen wilt weergeven, navigeert u in de [!DN
 |---|---|---|
 | [!UICONTROL default] |  | Het basisschema voor metagegevens voor elementen. |
 |  | De volgende onderliggende formulieren nemen de eigenschappen van het [!UICONTROL default] formulier over: |  |
-|  | <ul><li> [!UICONTROL image]</li></ul> | Schema-formulier voor elementen met het MIME-type &quot;image&quot;, bijvoorbeeld afbeelding/jpeg, afbeelding/png, enzovoort. <br> Het [!UICONTROL image] formulier heeft de volgende onderliggende formuliersjablonen: <ul><li> [!UICONTROL jpeg]: Schema voor activa met subtype [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff]: Schema voor de activa met subtype [!UICONTROL tiff].</li></ul> |
-|  | <ul><li> [!UICONTROL application]</li></ul> | Schema-formulier voor elementen met het MIME-type &quot;application&quot;, bijvoorbeeld application/ pdf, application/ zip enzovoort. <br>[!UICONTROL pdf]: Schemaformulier voor activa met subtype pdf. |
-|  | <ul><li>[!UICONTROL video]</li></ul> | Schema-formulier voor elementen met het MIME-type &quot;video&quot;, zoals video/avi, video/mp4, enzovoort. |
+|  | <ul><li> [!UICONTROL image]</li></ul> | Schema-formulier voor elementen met het MIME-type &#39;image&#39;, bijvoorbeeld `image/jpeg`, `image/png`enzovoort. <br> Het [!UICONTROL image] formulier heeft de volgende onderliggende formuliersjablonen: <ul><li> [!UICONTROL jpeg]: Schema voor activa met subtype [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff]: Schema voor de activa met subtype [!UICONTROL tiff].</li></ul> |
+|  | <ul><li> [!UICONTROL application]</li></ul> | Schema-formulier voor elementen met het MIME-type &#39;application&#39;, bijvoorbeeld `application/pdf`, `application/zip`enzovoort. <br>[!UICONTROL pdf]: Schemaformulier voor activa met subtype pdf. |
+|  | <ul><li>[!UICONTROL video]</li></ul> | Schema-formulier voor elementen met het MIME-type &quot;video&quot;, zoals `video/avi`, `video/mp4` enzovoort. |
 | [!UICONTROL collection] |  | Schemaformulier voor verzamelingen. |
 | [!UICONTROL contentfragment] |  | Schemaformulier voor inhoudsfragmenten. |
 | [!UICONTROL forms] |  | Dit schema-formulier is gerelateerd aan [Adobe Experience Manager Forms](/help/forms/home.md). |

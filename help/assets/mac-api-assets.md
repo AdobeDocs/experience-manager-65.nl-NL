@@ -3,7 +3,7 @@ title: Elementen van HTTP-API in [!DNL Adobe Experience Manager].
 description: Digitale middelen maken, lezen, bijwerken, verwijderen en beheren met HTTP API in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+source-git-commit: 34167cd9c03c9bc26aa24e6837dbd144af8bf9bd
 workflow-type: tm+mt
 source-wordcount: '1565'
 ht-degree: 0%
@@ -95,9 +95,9 @@ De HTTP-API voor middelen bevat de volgende functies:
 
 **Vereisten**
 
-* Ga naar `https://[aem_server]:[port]/system/console/configMgr`.
-* Navigeer naar **Adobe Granite CSRF-filter**.
-* Zorg ervoor dat de eigenschap **Filter Methoden** bevat: POST, PUT, DELETE.
+1. Ga naar `https://[aem_server]:[port]/system/console/configMgr`.
+1. Navigeer naar **Adobe Granite CSRF-filter**.
+1. Zorg ervoor dat de eigenschap **Filter Methoden** bevat: POST, PUT, DELETE.
 
 ## Een mappenlijst ophalen {#retrieve-a-folder-listing}
 

@@ -11,7 +11,10 @@ topic-tags: site-features
 discoiquuid: 9fb6d603-eb17-4192-bfa6-6c316f14ac7d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+source-git-commit: 52cb99353ae33c8097b6b5bd29f6c040df30b42d
+workflow-type: tm+mt
+source-wordcount: '584'
+ht-degree: 3%
 
 ---
 
@@ -42,9 +45,9 @@ Wanneer u de inhoudsstructuur voor een site en het metagegevensschema voor eleme
 
 In de auteursomgeving, kunnen de auteurs markeringen toepassen door tot de pagina eigenschappen toegang te hebben en één of meerdere markeringen in het gebied van **Markeringen/Trefwoorden** in te gaan.
 
-Als u [vooraf gedefinieerde labels](/help/sites-administering/tags.md)wilt toepassen, gebruikt u in het venster **Pagina-eigenschappen** het veld **Codes** en het venster **Codes** selecteren. Het tabblad **Standaardcodes** is de standaardnaamruimte, wat betekent dat er geen `namespace-string:` voorvoegsel is voor de taxonomie.
+To apply [pre-defined tags](/help/sites-administering/tags.md), in the **Page Properties** window use the **Tags** field and the **Select Tags** window. Het tabblad **Standaardtags** is de standaardnaamruimte, wat betekent dat er geen `namespace-string:` als voorvoegsel is voor de taxonomie.
 
-![chlimage_1-41](assets/chlimage_1-41.png)
+![Selecteer het venster Codes. gebruik X knoop om de momenteel geselecteerde markeringen te schrappen](assets/chlimage_1-41.png)
 
 ### Codes publiceren {#publishing-tags}
 

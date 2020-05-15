@@ -3,7 +3,10 @@ title: De activa van het proces om bedrijfsprocessen te verwezenlijken, controle
 description: Middelenverwerking voor het converteren van indelingen, het maken van uitvoeringen, het beheren van elementen, het valideren van elementen en het uitvoeren van workflows.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 94f7f2cde3c87ed4693b9e2004f80fc5f0cd9855
+workflow-type: tm+mt
+source-wordcount: '912'
+ht-degree: 3%
 
 ---
 
@@ -16,11 +19,11 @@ source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
 
 Voor middelenverwerking [!DNL Experience Manager] worden workflows gebruikt. Workflows helpen de bedrijfslogica of -activiteiten te automatiseren. De korrelige stappen om specifieke taken te verwezenlijken worden verstrekt door gebrek en de ontwikkelaars kunnen hun eigen douanestappen tot stand brengen. Deze stappen kunnen in een logische volgorde worden gecombineerd om workflows te maken. Een workflow kan bijvoorbeeld watermerken toepassen op geüploade afbeeldingen op basis van specifieke criteria, zoals de map waarnaar de afbeelding is geüpload, de resolutie van de afbeelding, enzovoort. Een ander voorbeeld is een workflow die is geconfigureerd voor watermerken en die tegelijkertijd metagegevens toevoegt, uitvoeringen maakt, intelligente tags toevoegt en publiceert naar een datastore.
 
-## Standaardworkflows beschikbaar in [!DNL Experience Manager]{#default-workflows}
+## Standaardworkflows beschikbaar in [!DNL Experience Manager] {#default-workflows}
 
-Standaard worden alle geüploade elementen verwerkt met de workflow [!UICONTROL DAM Update Asset] . De workflow wordt uitgevoerd voor elk geüpload element en voert basistaken voor middelenbeheer uit, zoals het genereren van uitvoeringen, het terugsturen van metagegevens, het uitnemen van pagina&#39;s, het uitnemen van media en het transcoderen.
+Standaard worden alle geüploade elementen verwerkt met behulp van een [!UICONTROL DAM Update Asset] workflow. De workflow wordt uitgevoerd voor elk geüpload element en voert basistaken voor middelenbeheer uit, zoals het genereren van uitvoeringen, het terugsturen van metagegevens, het uitnemen van pagina&#39;s, het uitnemen van media en het transcoderen.
 
-Zie **[!UICONTROL Opties > Workflow > Modellen]** in voor informatie over de verschillende workflowmodellen die standaard beschikbaar zijn [!DNL Experience Manager].
+Zie **[!UICONTROL Tools > Workflow > Models]** in [!DNL Experience Manager].
 
 ![Een deel van de standaardworkflow](assets/aem-default-workflows.png)
 
@@ -34,7 +37,7 @@ Gebruik workflows in digitale elementen om het element te activeren of watermerk
 
 >[!NOTE]
 >
->Zie workflowmodellen [!UICONTROL maken als er geen workflow beschikbaar is in de klassieke gebruikersinterface die Touch ondersteunt, zoals] Verzoek om activering [!UICONTROL en]Verzoek om deactivering [](/help/sites-developing/workflows-models.md#classic2touchui).
+>Als een workflow die beschikbaar is in de klassieke gebruikersinterface niet beschikbaar is in een gebruikersinterface met aanraakfuncties, zoals [!UICONTROL Request to Activate] en [!UICONTROL Request to Deactivate], raadpleegt u [workflowmodellen](/help/sites-developing/workflows-models.md#classic2touchui).
 
 ## Een workflow toepassen op een element {#apply-a-workflow-to-an-asset}
 
@@ -43,15 +46,15 @@ TBD: Add animated GIF for these steps instead of all these screenshots.
 -->
 Voer de volgende stappen uit om een workflow toe te passen op een element:
 
-1. Navigeer naar de locatie van het element waarvoor u een workflow wilt starten en klik op het element om de elementpagina te openen. Selecteer **[!UICONTROL Tijdlijn]** in het menu om de tijdlijn weer te geven.
+1. Navigeer naar de locatie van het element waarvoor u een workflow wilt starten en klik op het element om de elementpagina te openen. Selecteer een optie in het **[!UICONTROL Timeline]** menu om de tijdlijn weer te geven.
 
    ![timeline-1](assets/timeline.png)
 
-1. Klik op **[!UICONTROL Handelingen]** onderaan om de lijst met acties te openen die beschikbaar zijn voor het element.
+1. Klik **[!UICONTROL Actions]** bij de bodem om de lijst van acties te openen beschikbaar voor de activa.
 
-1. Klik in de lijst op Workflow **** starten.
+1. Klik in **[!UICONTROL Start Workflow]** de lijst.
 
-1. In the **[!UICONTROL Start Workflow]** dialog, select a workflow model from the list.
+1. Selecteer in het **[!UICONTROL Start Workflow]** dialoogvenster een workflowmodel in de lijst.
 
    ![chlimage_1-254](assets/chlimage_1-50.png)
 
@@ -59,26 +62,26 @@ Voer de volgende stappen uit om een workflow toe te passen op een element:
 
    ![chlimage_1-255](assets/chlimage_1-51.png)
 
-1. Klik op **[!UICONTROL Start]** en vervolgens op **[!UICONTROL Doorgaan]**. Elke stap van de workflow wordt als een gebeurtenis in de tijdlijn weergegeven.
+1. Click **[!UICONTROL Start]** and then click **[!UICONTROL Proceed]**. Elke stap van de workflow wordt als een gebeurtenis in de tijdlijn weergegeven.
 
    ![chlimage_1-256](assets/chlimage_1-52.png)
 
 ## Een workflow toepassen op meerdere elementen {#applying-a-workflow-to-multiple-assets}
 
-1. Navigeer in de middelenconsole naar de locatie van de elementen waarvoor u een workflow wilt starten en selecteer de elementen. Selecteer **[!UICONTROL Tijdlijn]** in het menu om de tijdlijn weer te geven.
+1. Navigeer in de middelenconsole naar de locatie van de elementen waarvoor u een workflow wilt starten en selecteer de elementen. Selecteer een optie in het **[!UICONTROL Timeline]** menu om de tijdlijn weer te geven.
 
    ![screen_shot_2019-03-06at123325pm](assets/chlimage_1-136.png)
 
-1. Klik op **[!UICONTROL Handelingen]** onderaan.
+1. Klik **[!UICONTROL Actions]** onderaan.
 
    ![chlimage_1-30](assets/chlimage_1-137.png)
 
-1. Klik op Workflow **** starten. In the **[!UICONTROL Start Workflow]** dialog, select a workflow model from the list.
+1. Klik op **[!UICONTROL Start Workflow]**. Selecteer in het **[!UICONTROL Start Workflow]** dialoogvenster een workflowmodel in de lijst.
 
    ![chlimage_1-31](assets/chlimage_1-138.png)
 
 1. (Optioneel) Geef een titel voor de workflow op, die kan worden gebruikt om naar de instantie van de workflow te verwijzen.
-1. Click **[!UICONTROL Start]** and then click **[!UICONTROL Confirm]** in the dialog. De workflow wordt uitgevoerd op alle assets die u hebt geselecteerd.
+1. Klik op **[!UICONTROL Start]** en klik vervolgens op **[!UICONTROL Confirm]** in het dialoogvenster. De workflow wordt uitgevoerd op alle assets die u hebt geselecteerd.
 
 ## Een workflow toepassen op meerdere mappen {#applying-a-workflow-to-multiple-folders}
 
@@ -92,10 +95,14 @@ Zie een workflow [toepassen op een verzameling](/help/assets/managing-collection
 
 Beheerders kunnen de workflow zodanig configureren dat elementen automatisch worden uitgevoerd en verwerkt op basis van vooraf gedefinieerde voorwaarden. De functionaliteit is bijvoorbeeld handig voor zakelijke gebruikers en marketers om een aangepaste workflow voor specifieke mappen te maken. Alle elementen van de foto&#39;s van een agentschap kunnen van een watermerk zijn voorzien of alle elementen die door een freelancer zijn geüpload, kunnen worden verwerkt om specifieke uitvoeringen te maken.
 
-Voor een workflowmodel kunnen gebruikers een workflowstartprogramma maken dat deze uitvoert. Een werkstroomopstarter bewaakt wijzigingen in de inhoudsopslagplaats en voert de werkstroom uit wanneer aan de vooraf gedefinieerde voorwaarden is voldaan. Beheerders kunnen toegang verlenen tot marketers om de workflows te maken en de starcher te configureren. Gebruikers kunnen de standaard [!UICONTROL DAM Update Asset] -workflow wijzigen en zo de extra stappen toevoegen die nodig zijn om specifieke elementen te verwerken. De workflow wordt uitgevoerd op alle nieuw geüploade elementen. Gebruik een van de volgende methoden om de uitvoering van de extra stappen voor specifieke elementen te beperken:
+Voor een workflowmodel kunnen gebruikers een workflowstartprogramma maken dat deze uitvoert. Een werkstroomopstarter bewaakt wijzigingen in de inhoudsopslagplaats en voert de werkstroom uit wanneer aan de vooraf gedefinieerde voorwaarden is voldaan. Beheerders kunnen toegang verlenen tot marketers om de workflows te maken en de starcher te configureren. Gebruikers kunnen de standaardworkflow wijzigen en zo de extra stappen toevoegen die nodig zijn om specifieke elementen te verwerken. [!UICONTROL DAM Update Asset] De workflow wordt uitgevoerd op alle nieuw geüploade elementen. Gebruik een van de volgende methoden om de uitvoering van de extra stappen voor specifieke elementen te beperken:
 
-* Maak een kopie van de workflow [!UICONTROL DAM Update Asset] en wijzig deze om uit te voeren in een specifieke maphiërarchie. Deze aanpak is handig voor een aantal mappen.
+* Maak een kopie van de [!UICONTROL DAM Update Asset] workflow en wijzig deze om uit te voeren in een specifieke maphiërarchie. Deze aanpak is handig voor een aantal mappen.
 * De extra verwerkingsstappen kunnen worden toegevoegd met behulp van een [OR-splitsing](/help/sites-developing/workflows-step-ref.md#or-split) , afhankelijk van wat er nodig is voor zoveel mappen.
+
+## Aanbevolen werkwijzen en beperkingen {#best-practices-limitations-tips}
+
+* Houd rekening met uw behoeften aan alle typen uitvoeringen wanneer u workflows ontwerpt. Als u in de toekomst geen uitvoering nodig hebt, verwijdert u de aanmaakstap uit de workflow. Uitvoeringen kunnen daarna niet bulksgewijs worden verwijderd. Ongewenste vertoningen kunnen veel opslagruimte innemen na langdurig gebruik van [!DNL Experience Manager]. Voor afzonderlijke elementen kunt u uitvoeringen handmatig uit de gebruikersinterface verwijderen. Voor meerdere elementen kunt u aanpassen [!DNL Experience Manager] om specifieke vertoningen te verwijderen of de elementen verwijderen en deze opnieuw uploaden.
 
 >[!MORELIKETHIS]
 >

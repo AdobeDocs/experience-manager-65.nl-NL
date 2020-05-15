@@ -11,7 +11,10 @@ topic-tags: extending-assets
 discoiquuid: 03502b41-b448-47ab-9729-e0a66a3389fa
 docset: aem65
 translation-type: tm+mt
-source-git-commit: eb36f8fe6b08e03eb25e96ed1c31957f7d5aff27
+source-git-commit: 18dc05876337629b7561320ff6f0945e3e785ea3
+workflow-type: tm+mt
+source-wordcount: '1859'
+ht-degree: 2%
 
 ---
 
@@ -38,7 +41,7 @@ Bijvoorbeeld, de Enige Toepassingen van de Pagina (SPA), op kader-gebaseerd of d
 
 Hoewel de Componenten van de Kern AEM een zeer uitvoerige, flexibele en klantgerichte API verstrekken die vereiste Gelezen verrichtingen voor dit doel kan dienen, en de waarvan output JSON kan worden aangepast, vereisen zij AEM WCM (het Beheer van de Inhoud van het Web) knowhow voor implementatie aangezien zij in (API) pagina&#39;s moeten worden ontvangen die op specifieke malplaatjes van AEM gebaseerd zijn. Niet elke organisatie van de SBZ heeft toegang tot dergelijke middelen.
 
-Dit is wanneer de REST API van Activa kan worden gebruikt. Ontwikkelaars hebben direct toegang tot elementen (bijvoorbeeld afbeeldingen en inhoudsfragmenten), zonder dat ze eerst in een pagina moeten worden ingesloten en hun inhoud in geserialiseerde JSON-indeling moeten leveren. (Het is niet mogelijk JSON-uitvoer van de REST API voor middelen aan te passen). Met de REST API voor middelen kunnen ontwikkelaars ook inhoud wijzigen door nieuwe elementen, inhoudsfragmenten en mappen te maken, bij te werken of te verwijderen.
+Dit is wanneer de REST API van Activa kan worden gebruikt. Ontwikkelaars hebben direct toegang tot elementen (bijvoorbeeld afbeeldingen en inhoudsfragmenten), zonder dat ze eerst in een pagina moeten worden ingesloten en hun inhoud in geserialiseerde JSON-indeling moeten leveren. (Het is niet mogelijk JSON-uitvoer van de REST API voor middelen aan te passen.) Met de REST API voor middelen kunnen ontwikkelaars ook inhoud wijzigen door nieuwe elementen, inhoudsfragmenten en mappen te maken, bij te werken of te verwijderen.
 
 De REST-API voor middelen:
 
@@ -94,8 +97,8 @@ Dit betekent dat latere (`write`) verzoeken niet kunnen worden gecombineerd tot 
   </tr>
   <tr>
    <td>Toegang</td>
-   <td><p>Kan rechtstreeks worden benaderd.</p> <p>Gebruikt het <code>/api/assets </code>eindpunt, in kaart gebracht aan <code>/content/dam</code> (in de bewaarplaats).</p> <p><code class="code">
-       /content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten</code><br /> Bijvoorbeeld om toegang te krijgen tot: verzoek:<br /> <code>/api/assets/we-retail/en/experiences/arctic-surfing-in-lofoten.model.json</code></p> </td>
+   <td><p>Kan rechtstreeks worden benaderd.</p> <p>Gebruikt het <code>/api/assets </code>eindpunt, in kaart gebracht aan <code>/content/dam</code> (in de bewaarplaats).</p> <p>Bijvoorbeeld om toegang te krijgen tot:<code class="code">
+       /content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten</code><br /> verzoek:<br /> <code>/api/assets/we-retail/en/experiences/arctic-surfing-in-lofoten.model.json</code></p> </td>
    <td><p>Er moet naar worden verwezen via een AEM-component op een AEM-pagina.</p> <p>Gebruikt de <code>.model</code> kiezer om de JSON-representatie te maken.</p> <p>Een voorbeeld-URL ziet er als volgt uit:<br /> <code>https://localhost:4502/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.model.json</code></p> </td>
   </tr>
   <tr>
@@ -154,7 +157,7 @@ De reactie zal het pagineren informatie als deel van de `properties` sectie van 
 >
 >Paginering wordt doorgaans toegepast op containerentiteiten (d.w.z. mappen of elementen met uitvoeringen), aangezien deze betrekking hebben op de onderliggende elementen van de aangezochte entiteit.
 
-#### Voorbeeld:Paginering {#example-paging}
+#### Voorbeeld: Paginering {#example-paging}
 
 `GET /api/assets.json?offset=2&limit=3`
 
@@ -184,7 +187,7 @@ De REST API van Middelen stelt toegang tot de eigenschappen van een omslag bloot
 >
 >Afhankelijk van het type element kan de lijst met onderliggende entiteiten al de volledige reeks eigenschappen bevatten die de desbetreffende onderliggende entiteit definieert. Alternatief, slechts kan een beperkte reeks eigenschappen voor een entiteit in deze lijst van kindentiteiten worden blootgesteld.
 
-### Activa {#assets}
+### Assets {#assets}
 
 Als een element wordt gevraagd, zal de reactie zijn meta-gegevens terugkeren; zoals titel, naam en andere informatie zoals gedefinieerd in het desbetreffende schema voor elementen.
 
@@ -192,7 +195,7 @@ De binaire gegevens van een element worden blootgesteld als verbinding SIREN van
 
 Elementen kunnen meerdere uitvoeringen hebben. Deze worden doorgaans weergegeven als onderliggende entiteiten, waarbij één uitzondering een miniatuuruitvoering is, die wordt weergegeven als een koppeling van het type `thumbnail` ( `rel="thumbnail"`).
 
-### Inhoudsfragmenten {#content-fragments}
+### Contentfragmenten {#content-fragments}
 
 Een [inhoudsfragment](/help/assets/content-fragments.md) is een speciaal type element. Ze kunnen worden gebruikt om onder andere toegang te krijgen tot gestructureerde gegevens, zoals teksten, getallen, datums.
 
@@ -268,7 +271,7 @@ Gebruik is via
 
 De hoofdtekst moet een JSON-representatie bevatten van wat voor het opgegeven inhoudsfragment moet worden bijgewerkt.
 
-Dit kan gewoon de titel of beschrijving zijn van een inhoudsfragment, of één element, of alle elementwaarden en/of metagegevens. Het is ook verplicht een geldige `cq:model` eigenschap voor updates te verschaffen.
+Dit kan gewoon de titel of beschrijving zijn van een inhoudsfragment, of één element, of alle elementwaarden en/of metagegevens. Het is ook verplicht om een geldige `cq:model` eigenschap voor updates te bieden.
 
 ### Verwijderen {#delete}
 
@@ -289,7 +292,7 @@ Er zijn enkele beperkingen:
 
 De volgende statuscodes kunnen in de relevante omstandigheden worden gezien:
 
-1. 202 (OK)
+* **202 (OK)**
 
    Geretourneerd wanneer:
 
@@ -297,19 +300,19 @@ De volgende statuscodes kunnen in de relevante omstandigheden worden gezien:
 
    * het bijwerken van een inhoudsfragment via `PUT`
 
-1. 201 (gemaakt)
+* **201 (gemaakt)**
 
    Geretourneerd wanneer:
 
    * een inhoudsfragment maken via `POST`
 
-1. 404 (Niet gevonden)
+* **404 (Niet gevonden)**
 
    Geretourneerd wanneer:
 
    * het gewenste inhoudsfragment bestaat niet
 
-1. 500 (Interne serverfout)
+* **500 (Interne serverfout)**
 
    >[!NOTE]
    >
@@ -362,11 +365,11 @@ De volgende statuscodes kunnen in de relevante omstandigheden worden gezien:
 Zie hier voor gedetailleerde API-referenties:
 
 * [Adobe Experience Manager Assets API - Inhoudsfragmenten](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
-* [Elementen HTTP-API](/help/assets/mac-api-assets.md)
+* [HTTP-API voor assets](/help/assets/mac-api-assets.md)
 
    * [Beschikbare functies](/help/assets/mac-api-assets.md#available-features)
 
-## Additional Resources {#additional-resources}
+## Aanvullende bronnen {#additional-resources}
 
 Zie voor meer informatie:
 

@@ -3,7 +3,10 @@ title: Download digitale middelen van [!DNL Adobe Experience Manager].
 description: Leer hoe u middelen downloadt van [!DNL Adobe Experience Manager] en de downloadfunctionaliteit in- of uitschakelt.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d292059a865d150f7de5664eca164c542f965fcb
+source-git-commit: 5cea9ed3be322cb8dedfbc6cb38abbdb72d0b7b7
+workflow-type: tm+mt
+source-wordcount: '755'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +19,7 @@ U kunt elementen downloaden, zoals statische en dynamische uitvoeringen. U kunt 
 >
 >Ontvangers van e-mailberichten moeten lid zijn van de `dam-users` groep om toegang te krijgen tot de koppeling voor het downloaden van postadressen in het e-mailbericht. Om de elementen te kunnen downloaden, moeten de leden machtigingen hebben om workflows te starten die het downloaden van elementen activeren.
 
-Als u elementen wilt downloaden, navigeert u naar een element, selecteert u het element en tikt u op **[!UICONTROL Downloaden]** op de werkbalk. Geef in het dialoogvenster dat verschijnt de gewenste downloadopties op.
+Als u elementen wilt downloaden, navigeert u naar een element, selecteert u het element en tikt u op **[!UICONTROL Download]** de werkbalk. Geef in het dialoogvenster dat verschijnt de gewenste downloadopties op.
 
 De elementtypen Afbeeldingssets, Spin-sets, Gemengde mediasets en Carousel-sets kunnen niet worden gedownload.
 
@@ -29,14 +32,14 @@ Hieronder vindt u de beschikbare opties voor exporteren of downloaden. Dynamisch
 | Opties voor exporteren of downloaden | Beschrijvingen |
 |---|---|
 | [!UICONTROL Assets] | Selecteer de optie om het element in de oorspronkelijke vorm zonder vertoningen te downloaden. |
-| [!UICONTROL Uitvoeringen] | Een vertoning is de binaire representatie van een element. Elementen hebben een primaire representatie, namelijk die van het geüploade bestand. Zij kunnen om het even welk aantal vertegenwoordiging hebben. <br> Met deze optie kunt u de uitvoeringen selecteren die u wilt downloaden. Welke uitvoeringen beschikbaar zijn, is afhankelijk van het element dat u selecteert. |
-| [!UICONTROL Dynamische uitvoeringen] | Een dynamische vertoning genereert andere uitvoeringen in real-time. Wanneer u deze optie selecteert, selecteert u ook de uitvoeringen die u dynamisch wilt maken door een optie te selecteren in de lijst [Voorinstellingen](image-presets.md) afbeelding. <br>Bovendien kunt u de grootte en de maateenheid, de indeling, de kleurruimte, de resolutie en alle wijzigingstoetsen voor afbeeldingen selecteren (bijvoorbeeld om de afbeelding om te keren) |
-| [!UICONTROL E-mail] | Er wordt een e-mailbericht verzonden naar de gebruiker. De standaard e-mailsjablonen zijn beschikbaar op de volgende locaties:<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> De malplaatjes die u tijdens plaatsing aanpast zouden op deze plaatsen moeten aanwezig zijn: <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul>U kunt huurdersspecifieke douanesjablonen bij deze plaatsen opslaan:<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> |
-| [!UICONTROL Afzonderlijke map maken voor elk element] | Selecteer de optie om de mappenhiërarchie te behouden bij het downloaden van elementen. Standaard wordt de maphiërarchie genegeerd en worden alle elementen in één map in uw lokale bestandssysteem gedownload. |
+| [!UICONTROL Renditions] | Een vertoning is de binaire representatie van een element. Elementen hebben een primaire representatie, namelijk die van het geüploade bestand. Zij kunnen om het even welk aantal vertegenwoordiging hebben. <br> Met deze optie kunt u de uitvoeringen selecteren die u wilt downloaden. Welke uitvoeringen beschikbaar zijn, is afhankelijk van het element dat u selecteert. |
+| [!UICONTROL Dynamic Renditions] | Een dynamische vertoning genereert andere uitvoeringen in real-time. Wanneer u deze optie selecteert, selecteert u ook de uitvoeringen die u dynamisch wilt maken door een optie te selecteren in de lijst [Voorinstellingen](image-presets.md) afbeelding. <br>Bovendien kunt u de grootte en de maateenheid, de indeling, de kleurruimte, de resolutie en alle wijzigingstoetsen voor afbeeldingen selecteren (bijvoorbeeld om de afbeelding om te keren) |
+| [!UICONTROL Email] | Er wordt een e-mailbericht verzonden naar de gebruiker. De standaard e-mailsjablonen zijn beschikbaar op de volgende locaties:<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> De malplaatjes die u tijdens plaatsing aanpast zouden op deze plaatsen moeten aanwezig zijn: <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul>U kunt huurdersspecifieke douanesjablonen bij deze plaatsen opslaan:<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> |
+| [!UICONTROL Create separate folder for each asset] | Selecteer de optie om de mappenhiërarchie te behouden bij het downloaden van elementen. Standaard wordt de maphiërarchie genegeerd en worden alle elementen in één map in uw lokale bestandssysteem gedownload. |
 
 De optie Uitvoeringen is beschikbaar als het element uitvoeringen heeft. De optie Subassets is beschikbaar als het oorspronkelijke element subassets heeft.
 
-Wanneer u een map selecteert om te downloaden, wordt de volledige elementenhiërarchie onder de map gedownload. Als u elk element dat u downloadt (inclusief elementen in onderliggende mappen die onder de bovenliggende map zijn genest), in een afzonderlijke map wilt opnemen, selecteert u **[!UICONTROL Een aparte map maken voor elk element]**.
+Wanneer u een map selecteert om te downloaden, wordt de volledige elementenhiërarchie onder de map gedownload. Selecteer **[!UICONTROL Create separate folder for each asset]**.
 
 ## Enable asset download servlet {#enable-asset-download-servlet}
 
@@ -58,11 +61,9 @@ Om het downloaden van activa van uw DAM toe te staan, bijvoorbeeld wanneer het g
 
 De functie `Asset Download Servlet` kan worden uitgeschakeld in een [!DNL Experience Manager] publicatie-instantie door de configuratie van de verzender bij te werken om aanvragen voor het downloaden van middelen te blokkeren. servlet kan ook manueel via de console OSGi direct worden onbruikbaar gemaakt.
 
-1. Om activa te blokkeren downloadt verzoeken via een verzenderconfiguratie, geef de `dispatcher.any` configuratie uit en voeg een regel aan de [filtersectie](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter)toe.
+1. Om activa te blokkeren downloadt verzoeken via een verzenderconfiguratie, geef de `dispatcher.any` configuratie uit en voeg een regel aan de [filtersectie](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter)toe. `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
-   `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
-
-1. Schakel de component OSGi op een instantie Publish uit door aan de Console OSGi bij `http://[aem_server]:[port]/system/console/components`. te navigeren. Zoek `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet` en klik op **[!UICONTROL Uitschakelen]**.
+1. Schakel de component OSGi op een instantie Publish uit door aan de Console OSGi bij `http://[aem_server]:[port]/system/console/components`. te navigeren. Zoek `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet` en klik op **[!UICONTROL Disable]**.
 
 >[!MORELIKETHIS]
 >

@@ -3,9 +3,9 @@ title: Gebruik PDF-rasterfunctie om uitvoeringen van PDF-bestanden te genereren.
 description: Genereer miniaturen en uitvoeringen van hoge kwaliteit met de Adobe PDF Rasterizer-bibliotheek in [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '673'
 ht-degree: 0%
 
 ---
@@ -63,6 +63,7 @@ Miniaturen en voorvertoningen die worden gegenereerd met PDF Rasterizer, zijn be
 
 
 1. Als u tussenliggende vertoningen wilt verwijderen, selecteert u **[!UICONTROL Delete Generated Rendition]**.
+
 1. Selecteer PDF Rasterizer om webuitvoeringen te laten genereren. **[!UICONTROL Generate Web Rendition]**
 
    ![generate_web_renditions1](assets/generate_web_renditions1.png)
@@ -72,8 +73,11 @@ Miniaturen en voorvertoningen die worden gegenereerd met PDF Rasterizer, zijn be
    ![web_enabled_image1](assets/web_enabled_image1.png)
 
 1. Sla de workflow op.
-1. Als u PDF-rasterfunctie wilt inschakelen voor het verwerken van PDF-pagina&#39;s met PDF-bibliotheken, opent u het **[!UICONTROL DAM Process Subasset]** model via de Workflowconsole.
+
+1. Als u PDF-rasterfunctie wilt inschakelen voor het verwerken van PDF-pagina&#39;s met PDF-bibliotheken, opent u het **[!UICONTROL DAM Process Subasset]** model via de [!UICONTROL Workflow] console.
+
 1. Sleep vanuit het zijpaneel de stap PDF Rasterizer Handler onder de **[!UICONTROL Create Web-Enabled Image Rendition]** stap.
+
 1. Configureer de volgende argumenten voor de **[!UICONTROL PDF Rasterizer Handler]** stap:
 
    * MIME-typen: `application/pdf` of `application/postscript`

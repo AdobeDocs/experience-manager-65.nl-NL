@@ -4,10 +4,10 @@ description: Leer taken om verzamelingen met middelen te beheren, zoals verzamel
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
 workflow-type: tm+mt
-source-wordcount: '2080'
-ht-degree: 11%
+source-wordcount: '2065'
+ht-degree: 12%
 
 ---
 
@@ -149,26 +149,26 @@ Slimme verzamelingen worden gemaakt door een zoekopdracht op te slaan, zodat u d
 
 De meta-gegevens van de inzameling omvat gegevens over de inzameling, met inbegrip van om het even welke markeringen die worden toegevoegd.
 
-1. Selecteer een verzameling in de console Verzamelingen en klik op het **[!UICONTROL Properties]** pictogram op de werkbalk.
+1. Selecteer in de [!UICONTROL Collections] console een verzameling en klik op **[!UICONTROL Properties]** de werkbalk.
 1. In the **[!UICONTROL Collection Metadata]** page, view the collection metadata from the **[!UICONTROL Basic]** and **[!UICONTROL Advanced]** tabs.
-1. Wijzig desgewenst de metagegevens en klik op **[!UICONTROL Save & Close]** de werkbalk om de wijzigingen op te slaan.
+1. Wijzig desgewenst de metagegevens. Klik op de werkbalk om de wijzigingen op te slaan. **[!UICONTROL Save & Close]**
 
 ## Metagegevens van meerdere verzamelingen bulksgewijs bewerken {#editing-collection-metadata-in-bulk}
 
 U kunt de metagegevens van meerdere verzamelingen tegelijk bewerken. Deze functionaliteit helpt u snel gemeenschappelijke meta-gegevens in veelvoudige inzamelingen te herhalen.
 
-1. Selecteer twee of meer verzamelingen waarvoor u metagegevens wilt bewerken in de console Verzamelingen.
+1. Selecteer twee of meer verzamelingen in de verzamelingsconsole.
 1. From the toolbar, click the **[!UICONTROL Properties]** icon.
 1. Bewerk desgewenst de metadata op de pagina **[!UICONTROL Collection Metadata]** onder de tabbladen **[!UICONTROL Basic]** en **[!UICONTROL Advanced]**.
 1. Als u de eigenschappen van metagegevens voor een specifieke verzameling wilt weergeven, schakelt u de overige verzamelingen in de lijst met verzamelingen uit. De gebieden van de meta-gegevensredacteur zijn bevolkt met de meta-gegevens voor de bepaalde inzameling.
 
    >[!NOTE]
    >
-   >* Op de pagina met eigenschappen van verzamelingen kunt u verzamelingen verwijderen uit de lijst met verzamelingen door ze te deselecteren. Alle verzamelingen zijn standaard geselecteerd in de lijst met verzamelingen. De metagegevens voor verzamelingen die u verwijdert, worden niet bijgewerkt.
+   >* In de [!UICONTROL Properties] pagina kunt u verzamelingen verwijderen uit de lijst met verzamelingen door ze te deselecteren. Alle verzamelingen zijn standaard geselecteerd in de lijst met verzamelingen. Experience Manager werkt de metagegevens van de verzamelingen die u verwijdert niet bij.
    >* Schakel boven aan de lijst het selectievakje in **[!UICONTROL Title]** om te schakelen tussen het selecteren van de verzamelingen en het wissen van de lijst.
 
 
-1. Klik **[!UICONTROL Save & Close]** van de toolbar, en sluit dan de bevestigingsdialoog om het proces te voltooien.
+1. Klik **[!UICONTROL Save & Close]** van de toolbar, en sluit dan de bevestigingsdialoog.
 1. Selecteer **[!UICONTROL Append mode]** om de nieuwe metadata toe te voegen aan de bestaande metadata. Als u deze optie niet selecteert, worden de bestaande metadata in de velden vervangen door de nieuwe metadata. Klik op **[!UICONTROL Submit]**.
 
    >[!NOTE]

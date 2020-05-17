@@ -3,12 +3,15 @@ title: Editor van element uitbreiden
 description: Leer hoe u de mogelijkheden van de Asset Editor uitbreidt met behulp van aangepaste componenten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 70a88085a0fd6e949974aa7f1f92fdc3def3d98e
+source-git-commit: 5cea9ed3be322cb8dedfbc6cb38abbdb72d0b7b7
+workflow-type: tm+mt
+source-wordcount: '701'
+ht-degree: 13%
 
 ---
 
 
-# Editor van element uitbreiden {#extending-asset-editor}
+# Extend Asset Editor {#extending-asset-editor}
 
 De Asset Editor is de pagina die wordt geopend wanneer op een element wordt geklikt dat via Asset Share wordt gevonden, zodat de gebruiker deze aspecten van het element kan bewerken, zoals metagegevens, miniaturen, titels en tags.
 
@@ -32,7 +35,7 @@ Vergeleken met het standaard clientlib laden (in core&#39;s `init.jsp`), moet ee
 
 * De sjabloon moet de `cq.dam.edit` clientlib bevatten (in plaats van `cq.wcm.edit`).
 
-* Clientlib moet ook in gehandicapte WCM wijze (bijvoorbeeld, geladen op **publiceren**) worden omvat om de predikaten, de acties, en de lenzen terug te geven.
+* De clientbibliotheek moet ook in de uitgeschakelde WCM-modus (bijvoorbeeld, geladen op **publiceren**) worden opgenomen om de predicaten, de acties, en de lenzen weer te geven.
 
 In de meeste gevallen moet het kopiëren van het bestaande monster `init.jsp` (`/apps/geometrixx/components/asseteditor/init.jsp`) aan deze behoeften voldoen.
 
@@ -40,7 +43,7 @@ In de meeste gevallen moet het kopiëren van het bestaande monster `init.jsp` (`
 
 Voor sommige componenten van AEM-elementen zijn JS-functies vereist die in `component.js`dit hoofdstuk zijn gedefinieerd. Kopieer dit bestand naar de map met componenten en koppel deze.
 
-```xml
+```javascript
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>
 ```
 
@@ -50,7 +53,7 @@ In het voorbeeld wordt deze javascript-bron geladen in `head.jsp`(`/apps/geometr
 
 Sommige componenten van AEM-elementen gebruiken de AEM-widget-bibliotheek. Om correct in de inhoudscontext te worden teruggegeven, moet een extra stijlblad worden geladen. Voor de component Handeling tag is nog een component vereist.
 
-```xml
+```css
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">
 ```
 
@@ -73,7 +76,7 @@ De voorbeeldhandgrepen in `head.jsp` (`/apps/geometrixx/components/asseteditor/h
 * Als een element wordt geladen, schakelen zij WCM wijze als parsys slechts op een gewone vormpagina uit.
 * Als een element is geladen, gebruiken deze de titel in plaats van de titel op de formulierpagina.
 
-```java
+```javascript
  List<Resource> resources = FormsHelper.getFormEditResources(slingRequest);
     if (resources != null) {
         if (resources.size() == 1) {
@@ -113,7 +116,7 @@ De voorbeeldhandgrepen in `head.jsp` (`/apps/geometrixx/components/asseteditor/h
 
 Gebruik in het HTML-onderdeel de voorafgaande titelset (element- of paginatitel):
 
-```xml
+```html
 <title><%= title %></title>
 ```
 
@@ -136,7 +139,7 @@ In dit voorbeeld wordt beschreven hoe u een component kunt maken die de metagege
 
 1. Toevoegen `samplemeta.jsp` met het volgende fragment:
 
-   ```xml
+   ```javascript
    <%--
    
      Sample metadata field component
@@ -192,11 +195,11 @@ In dit voorbeeld wordt beschreven hoe u een component kunt maken die de metagege
    </div>
    ```
 
-1. Als u de component beschikbaar wilt maken, moet u deze kunnen bewerken. Als u een component bewerkbaar wilt maken, voegt u in CRXDE Lite een knooppunt `cq:editConfig` van het primaire type toe `cq:EditConfig`. U kunt alinea&#39;s verwijderen door een eigenschap met meerdere waarden toe te voegen `cq:actions` met één waarde `DELETE`.
+1. Als u de component beschikbaar wilt maken, moet u deze kunnen bewerken. To make a component editable, in CRXDE Lite, add a node `cq:editConfig` of primary type `cq:EditConfig`. U kunt alinea&#39;s verwijderen door een eigenschap met meerdere waarden `cq:actions` met één waarde van `DELETE` toe te voegen.
 
 1. Navigeer naar de browser en schakel op de voorbeeldpagina (bijvoorbeeld `asseteditor.html`) over naar de ontwerpmodus en schakel de nieuwe component in voor het alineasysteem.
 
-1. In de modus **Bewerken** is de nieuwe component (bijvoorbeeld **Voorbeeldmetagegevens**) nu beschikbaar in het hulpwerkgebied (in de groep **Asset Editor** ). Voeg de component in. Als u de metagegevens wilt opslaan, moet u deze toevoegen aan het metagegevensformulier.
+1. In de modus **Bewerken** is de nieuwe component (bijvoorbeeld **Voorbeeldmetadata**) nu beschikbaar in de sidekick (in de groep **Asset-editor**). Voeg de component in. Als u de metadata wilt opslaan, moet u deze toevoegen aan het metadataformulier.
 
 ## Opties voor metagegevens wijzigen {#modifying-metadata-options}
 

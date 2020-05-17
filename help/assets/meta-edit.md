@@ -3,9 +3,9 @@ title: Metagegevens bewerken of toevoegen
 description: Meer informatie over metagegevens van middelen vindt u in [!DNL Adobe Experience Manager Assets] en op verschillende manieren waarop u metagegevens van elementen kunt bewerken.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '414'
 ht-degree: 1%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 1%
 
 Metagegevens zijn aanvullende informatie over het element die kan worden doorzocht. Deze wordt automatisch uitgepakt wanneer u een afbeelding uploadt. U kunt de bestaande metagegevens bewerken of nieuwe eigenschappen van metagegevens toevoegen aan bestaande velden (bijvoorbeeld wanneer een metagegevensveld leeg is).
 
-Omdat organisaties gecontroleerde en betrouwbare taalwoordenboeken voor metagegevens nodig hebben, is het [!DNL Experience Manager Assets] niet mogelijk ad-hocnieuwe eigenschappen voor metagegevens toe te voegen. Hoewel auteurs geen nieuwe metagegevensvelden voor elementen kunnen toevoegen, kunnen ontwikkelaars dat wel. Zie [Nieuwe eigenschap voor metagegevens maken voor elementen](meta-edit.md#editing-metadata-schema).
+Omdat organisaties gecontroleerde en betrouwbare meta-gegevenswoordenboeken nodig hebben, staat [!DNL Experience Manager Assets] niet voor op bestelling het toevoegen van nieuwe meta-gegevenseigenschappen toe. Hoewel auteurs geen nieuwe metagegevensvelden voor elementen kunnen toevoegen, kunnen ontwikkelaars dat wel. Zie eigenschap metadata [maken voor elementen](meta-edit.md#editing-metadata-schema).
 
 ## Metagegevens voor een element bewerken {#editing-metadata-for-an-asset}
 
-Metagegevens bewerken:
+Ga als volgt te werk als u metagegevens wilt bewerken:
 
 1. Voer een van de volgende handelingen uit:
 
@@ -32,13 +32,13 @@ Metagegevens bewerken:
 
    *Afbeelding: Bewerk of voeg metagegevens toe op de[!UICONTROL Properties]elementpagina.*
 
-1. Make edits to the metadata under the various tabs, as required, and when completed, click **[!UICONTROL Save]** from the toolbar to save your changes. Click **[!UICONTROL Close]** to return to the Assets web interface.
+1. Make edits to the metadata under the various tabs, as required, and when completed, click **[!UICONTROL Save]** from the toolbar to save your changes. Click **[!UICONTROL Close]** to return to the [!DNL Assets] web interface.
 
    >[!NOTE]
    >
    >Als een tekstveld leeg is, is er geen bestaande metagegevensset. U kunt een waarde in het veld invoeren en deze opslaan om die eigenschap voor metagegevens toe te voegen.
 
-Wijzigingen in de metagegevens van een element worden teruggeschreven naar het oorspronkelijke binaire bestand als onderdeel van de XMP-gegevens. Dit gebeurt via de workflow voor het terugschrijven van [!DNL Experience Manager] metagegevens. Wijzigingen die worden aangebracht in de bestaande eigenschappen (zoals `dc:title`), worden overschreven en nieuwe eigenschappen (inclusief aangepaste eigenschappen zoals `cq:tags`) worden samen met het schema toegevoegd.
+Wijzigingen in de metagegevens van een element worden teruggeschreven naar het oorspronkelijke binaire bestand als onderdeel van de XMP-gegevens. De workflow voor het terugschrijven van metagegevens voegt de metagegevens toe aan het oorspronkelijke binaire bestand. Wijzigingen die worden aangebracht in de bestaande eigenschappen (zoals `dc:title`) worden overschreven en nieuwe eigenschappen (zoals aangepaste eigenschappen `cq:tags`) worden toegevoegd aan het schema.
 
 XMP-schrijfback wordt ondersteund en ingeschakeld voor de platforms en bestandsindelingen die in de [technische vereisten worden beschreven.](/help/sites-deploying/technical-requirements.md)
 

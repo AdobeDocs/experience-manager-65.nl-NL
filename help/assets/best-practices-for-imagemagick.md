@@ -1,54 +1,57 @@
 ---
-title: ImageMagick installeren en configureren om met AEM-middelen te werken
+title: Installeer en configureer ImageMagick voor gebruik met [!DNL Adobe Experience Manager Assets].
 description: Leer over de software ImageMagick, hoe te om het te installeren, opstelling de het processtap van de bevellijn, en gebruik het om, duimnagels van beelden uit te geven samen te stellen en te produceren.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 31234518537ca4a0b7ff36e8d52a3b7b1b8fe4f7
+source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
+workflow-type: tm+mt
+source-wordcount: '663'
+ht-degree: 0%
 
 ---
 
 
-# ImageMagick installeren en configureren om met AEM-middelen te werken{#install-and-configure-imagemagick-to-work-with-aem-assets}
+# Installeer en vorm ImageMagick om met te werken [!DNL Experience Manager Assets] {#install-and-configure-imagemagick-to-work-with-aem-assets}
 
 ImageMagick is een softwareplug-in voor het maken, bewerken, samenstellen of omzetten van bitmapafbeeldingen. Afbeeldingen kunnen in verschillende indelingen (meer dan 200) worden gelezen en geschreven, waaronder PNG, JPEG, JPEG-2000, GIF, TIFF, DPX, EXR, WebP, Postscript, PDF en SVG. Met ImageMagick kunt u afbeeldingen vergroten, verkleinen, spiegelen, roteren, vervormen, schuintrekken en transformeren. U kunt ook afbeeldingskleuren aanpassen, verschillende speciale effecten toepassen of tekst, lijnen, veelhoeken, ellipsen en curven tekenen met ImageMagick.
 
-Gebruik de Adobe Experience Manager (AEM)-mediafunctie vanaf de opdrachtregel om afbeeldingen te verwerken via ImageMagick. Als u met ImageMagick met verschillende bestandsindelingen wilt werken, raadpleegt u de aanbevolen werkwijzen voor [bestandsindelingen](/help/assets/assets-file-format-best-practices.md)voor Middelen. Zie Ondersteunde [elementen voor informatie over alle ondersteunde bestandsindelingen](/help/assets/assets-formats.md).
+Gebruik de [!DNL Adobe Experience Manager] media manager van de bevellijn om beelden door ImageMagick te verwerken. Als u met ImageMagick met verschillende bestandsindelingen wilt werken, raadpleegt u de aanbevolen werkwijzen voor [bestandsindelingen](/help/assets/assets-file-format-best-practices.md)voor Middelen. Zie Ondersteunde [elementen voor informatie over alle ondersteunde bestandsindelingen](/help/assets/assets-formats.md).
 
-Als u grote bestanden wilt verwerken met ImageMagick, moet u rekening houden met hogere geheugenvereisten dan gebruikelijk, mogelijke wijzigingen die vereist zijn voor IM-beleid en de algemene invloed op de prestaties. De geheugenvereisten zijn afhankelijk van verschillende factoren zoals resolutie, bitdiepte, kleurprofiel en bestandsindeling. Als u zeer grote bestanden wilt verwerken met ImageMagick, moet u de AEM-server op de juiste wijze als benchmark instellen. Aan het eind zijn er enkele nuttige bronnen beschikbaar.
+Als u grote bestanden wilt verwerken met ImageMagick, moet u rekening houden met hogere geheugenvereisten dan gebruikelijk, mogelijke wijzigingen die vereist zijn voor IM-beleid en de algemene invloed op de prestaties. De geheugenvereisten zijn afhankelijk van verschillende factoren zoals resolutie, bitdiepte, kleurprofiel en bestandsindeling. Als u zeer grote bestanden wilt verwerken met ImageMagick, moet u de [!DNL Experience Manager] server op de juiste wijze als benchmark instellen. Aan het eind zijn er enkele nuttige bronnen beschikbaar.
 
 >[!NOTE]
 >
->Als u AEM gebruikt op Adobe Managed Services (AMS), kunt u contact opnemen met de klantenservice van Adobe als u een groot aantal PSD- of PSB-bestanden met hoge resolutie wilt verwerken. Experience Manager kan PSB-bestanden met zeer hoge resolutie die groter zijn dan 30000 x 23000 pixels, niet verwerken.
+>Als u [!DNL Experience Manager] op [!DNL Adobe Managed Services] (AMS) gebruikt, neemt u contact op met de klantenservice van Adobe als u veel PSD- of PSB-bestanden met hoge resolutie wilt verwerken. [!DNL Experience Manager] PSB-bestanden met een zeer hoge resolutie die groter zijn dan 30000 x 23000 pixels, worden mogelijk niet verwerkt.
 
 ## ImageMagick installeren {#installing-imagemagick}
 
 Er zijn meerdere versies van ImageMagic-installatiebestanden beschikbaar voor verschillende besturingssystemen. Gebruik de juiste versie voor uw besturingssysteem.
 
 1. Download de juiste [ImageMagick-installatiebestanden](https://www.imagemagick.org/script/download.php) voor uw besturingssysteem.
-1. Start het installatiebestand om ImageMagick te installeren op de schijf waarop de AEM-server zich bevindt.
+1. Start het installatiebestand om ImageMagick te installeren op de schijf waarop de [!DNL Experience Manager] server wordt gehost.
 
 1. Plaats de variabele van het wegmilieu aan de installatiemap ImageMagic.
 1. Om te controleren of de installatie succesvol was, voer het `identify -version` bevel uit.
 
 ## De processtap van de opdrachtregel instellen {#set-up-the-command-line-process-step}
 
-U kunt de processtap van de bevellijn voor uw bepaald gebruiksgeval plaatsen. Voer de volgende stappen uit om elke keer dat u een JPEG-afbeeldingsbestand toevoegt aan de AEM-server, een gespiegelde afbeelding en miniaturen (140x100, 48x48, 319x319 en 1280x1280) te genereren: `/content/dam`
+U kunt de processtap van de bevellijn voor uw bepaald gebruiksgeval plaatsen. Voer de volgende stappen uit om elke keer dat u een JPEG-afbeeldingsbestand toevoegt aan de `/content/dam` [!DNL Experience Manager] server, een gespiegelde afbeelding en miniaturen (140x100, 48x48, 319x319 en 1280x1280) te genereren:
 
-1. Ga op de AEM-server naar de workflowconsole (`https://[aem_server]:[port]/workflow`) en open het workflowmodel voor **[!UICONTROL DAM Update Asset]** .
-1. Open vanuit het workflowmodel **[!UICONTROL DAM Update Asset]** de stap **[!UICONTROL EPS-miniaturen (aangedreven door ImageMagick)]** .
-1. Voeg op het tabblad **** Argumenten `image/jpeg` toe aan de lijst **[!UICONTROL MIME-typen]** .
+1. Ga op de [!DNL Experience Manager] server naar de workflowconsole (`https://[aem_server]:[port]/workflow`) en open het **[!UICONTROL DAM Update Asset]** workflowmodel.
+1. Open de **[!UICONTROL DAM Update Asset]** stap in het **[!UICONTROL EPS thumbnails (powered by ImageMagick)]** workflowmodel.
+1. Voeg in de **[!UICONTROL Arguments tab]** lijst toe `image/jpeg` aan de **[!UICONTROL Mime Types]** lijst.
 
    ![mime_types_jpeg](assets/mime_types_jpeg.png)
 
-1. Voer in het vak **[!UICONTROL Opdrachten]** de volgende opdracht in:
+1. Voer in het **[!UICONTROL Commands]** vak de volgende opdracht in:
 
    `convert ./${filename} -flip ./${basename}.flipped.jpg`
 
-1. Selecteer de vlaggen Gegenereerde vertoning **** verwijderen en Webvertoning **[!UICONTROL genereren]** .
+1. Selecteer de **[!UICONTROL Delete Generated Rendition]** vlaggen en de **[!UICONTROL Generate Web Rendition]** vlaggen.
 
    ![select_flags](assets/select_flags.png)
 
-1. Geef op het tabblad **[!UICONTROL Web Enabled Image]** de details voor de vertoning op met afmetingen van 1280x1280 pixels. Geef bovendien `image/jpeg` in het vak **[!UICONTROL Mimetype]** op.
+1. Geef op het **[!UICONTROL Web Enabled Image]** tabblad de details voor de vertoning op met afmetingen van 1280 x 1280 pixels. Geef bovendien `image/jpeg` in het **[!UICONTROL Mimetype]** vak op.
 
    ![web_enabled_image](assets/web_enabled_image.png)
 
@@ -61,16 +64,17 @@ U kunt de processtap van de bevellijn voor uw bepaald gebruiksgeval plaatsen. Vo
    >
    >`"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ./${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png`
 
-1. Open de stap Miniaturen **** verwerken en voeg het MIME-type toe `image/jpeg` onder MIME-typen **** overslaan.
+1. Open de **[!UICONTROL Process Thumbnails]** stap en voeg het MIME-type `image/jpeg` onder toe **[!UICONTROL Skip Mime Types]**.
 
    ![skip_mime_types](assets/skip_mime_types.png)
 
-1. Voeg op het tabblad Afbeelding **[!UICONTROL voor]** web het MIME-type toe `image/jpeg` onder de lijst **[!UICONTROL Overslaan]**. Click **[!UICONTROL OK]** to save the changes.
+1. Voeg op het **[!UICONTROL Web Enabled Image]** tabblad het MIME-type toe `image/jpeg` onder de **[!UICONTROL Skip List]**. Click **[!UICONTROL OK]** to save the changes.
 
    ![web_enabled](assets/web_enabled.png)
 
 1. Sla de workflow op.
-1. Als u wilt controleren of ImageMagic afbeeldingen correct kan verwerken, uploadt u een JPG-afbeelding naar AEM-elementen. Controleer of er een gespiegelde afbeelding en de uitvoeringen voor zijn gegenereerd.
+
+1. Als u de juiste verwerking wilt controleren, uploadt u een JPG-afbeelding naar [!DNL Assets]. Nadat de verwerking is voltooid, controleert u of een gespiegelde afbeelding en de uitvoeringen zijn gegenereerd.
 
 ## Beveiligingskwetsbaarheden beperken {#mitigating-security-vulnerabilities}
 

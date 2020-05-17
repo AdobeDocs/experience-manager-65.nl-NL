@@ -3,7 +3,10 @@ title: Hulplijn voor middelengrootte
 description: Aanbevolen werkwijzen om efficiënte meetgegevens te bepalen om de infrastructuur en de middelen te schatten die worden vereist om AEM Middelen op te stellen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 8c907a43b5755de59b2929cf381ea41a7b977e1b
+source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
+workflow-type: tm+mt
+source-wordcount: '1648'
+ht-degree: 0%
 
 ---
 
@@ -28,21 +31,21 @@ Gezien deze factoren, vereist u een methodologie om een aanvaardbare nauwkeurige
 1. Vraag een representatieve steekproef van de activa aan om in AEM worden geupload. Als u bijvoorbeeld PSD-, JPG-, AI- en PDF-bestanden in het systeem wilt laden, hebt u meerdere voorbeeldafbeeldingen van elke bestandsindeling nodig. Bovendien moeten deze monsters representatief zijn voor de verschillende bestandsgrootten en complexiteiten van afbeeldingen.
 1. Definieer de uitvoeringen die moeten worden gebruikt.
 1. Maak de uitvoeringen in AEM met ImageMagick of de Creative Cloud-toepassingen van Adobe. Naast de vertoningen die de gebruikers specificeren, creeer uit-van-de-doos vertoningen. Voor gebruikers die Scene7 uitvoeren, kunt u binair IC gebruiken om de vertoningen te produceren PTIFF die in AEM moeten worden opgeslagen.
-1. Als u subassets wilt gebruiken, genereert u deze voor de juiste bestandstypen. Zie de online documentatie over het genereren van pagina&#39;s met subelementen op basis van InDesign-bestanden of PNG-/PDF-bestanden op basis van Illustrator-lagen.
+1. Als u subassets wilt gebruiken, genereert u deze voor de juiste bestandstypen.
 1. Vergelijk de grootte van de uitvoerafbeeldingen, uitvoeringen en subelementen met de oorspronkelijke afbeeldingen. Hiermee kunt u een verwachte groeifactor genereren wanneer het systeem wordt geladen. Als u bijvoorbeeld uitvoeringen en subelementen genereert met een gecombineerde grootte van 3 GB na het verwerken van 1 GB aan elementen, is de groeifactor van de uitvoering 3.
 1. Bepaal de maximumtijd gedurende welke elementversies in het systeem moeten worden onderhouden.
 1. Bepaal hoe vaak bestaande elementen in het systeem worden gewijzigd. Als AEM wordt gebruikt als een samenwerkingscentrum in creatieve werkschema&#39;s, is de hoeveelheid veranderingen hoog. Als alleen voltooide elementen naar het systeem worden geüpload, is dit aantal veel lager.
 1. Bepaal hoeveel elementen elke maand in het systeem worden geladen. Als u niet zeker weet, controleert u het aantal elementen dat momenteel beschikbaar is en verdeelt u het getal door de leeftijd van het oudste element om een geschatte waarde te berekenen.
 
-Door stap 1-9 uit te voeren kunt u het volgende bepalen:
+Door de bovenstaande stappen uit te voeren, kunt u het volgende bepalen:
 
-* Onbewerkte grootte van te laden elementen
-* Aantal te laden elementen
-* Vertoningsgroeifactor
-* Aantal per maand aangebrachte wijzigingen in activa
-* Aantal maanden om elementversies te onderhouden
-* Aantal per maand geladen nieuwe elementen
-* Jaar van groei waarin ruimte moet worden toegewezen
+* Onbewerkte grootte van te laden elementen.
+* Aantal te laden elementen.
+* Rendition growth factor.
+* Aantal per maand aangebrachte wijzigingen in activa.
+* Aantal maanden om elementversies te onderhouden.
+* Aantal nieuwe elementen dat elke maand wordt geladen.
+* Jaren van groei voor toewijzing van opslagruimte.
 
 U kunt deze aantallen in het Netwerk het Rangschikken spreadsheet specificeren om de totale ruimte te bepalen die voor uw datastore wordt vereist. Het is ook een handig hulpmiddel om het effect te bepalen van het onderhoud van elementversies of het wijzigen van elementen in AEM op schijfgroei.
 
@@ -52,7 +55,7 @@ De voorbeeldgegevens die in het gereedschap zijn ingevuld, tonen aan hoe belangr
 
 ### Gedeelde datastores {#shared-datastores}
 
-Voor grote datastores, kunt u gedeelde datastore of door een gedeelde dossierdatastore op een netwerk in bijlage aandrijving of door een S3 datastore uitvoeren. In dit geval hoeft in afzonderlijke gevallen geen kopie van de binaire bestanden te worden bewaard. Bovendien vergemakkelijkt een gedeelde datastore binair-geen replicatie en helpt de bandbreedte verminderen die wordt gebruikt om activa aan publicatiemilieu&#39;s te herhalen.
+Voor grote datastores, kunt u een gedeelde datastore of door een gedeelde dossierdatastore op een netwerk in bijlage aandrijving of door een datastore van Amazon S3 uitvoeren. In dit geval hoeft in afzonderlijke gevallen geen kopie van de binaire bestanden te worden bewaard. Bovendien vergemakkelijkt een gedeelde datastore binair-geen replicatie en helpt de bandbreedte verminderen die wordt gebruikt om activa aan publicatiemilieu&#39;s te herhalen.
 
 #### Gebruik hoofdletters {#use-cases}
 
@@ -72,7 +75,7 @@ Het implementeren van de AWS S3-service voor gedeelde datastores heeft de voorke
 
 Gedeelde datastores verhogen ook de ingewikkeldheid van verrichtingen, zoals huisvuilinzameling. Normaal, kan de huisvuilinzameling voor een standalone datastore met één enkele klik in werking worden gesteld. Nochtans, vereisen de gedeelde datastores de verrichtingen van de marktopening op elk lid dat datastore gebruikt, naast het runnen van de daadwerkelijke inzameling op één enkele knoop.
 
-Voor AWS-bewerkingen kan het implementeren van één centrale locatie (via S3) in plaats van een RAID-array van EBS-volumes te maken, de complexiteit en operationele risico&#39;s op het systeem aanzienlijk compenseren.
+Voor AWS-bewerkingen kan het implementeren van één centrale locatie (via Amazon S3) in plaats van een RAID-array van EBS-volumes, de complexiteit en operationele risico&#39;s op het systeem aanzienlijk compenseren.
 
 #### Prestatieproblemen {#performance-concerns}
 

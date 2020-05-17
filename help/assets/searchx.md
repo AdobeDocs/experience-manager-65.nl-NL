@@ -3,7 +3,10 @@ title: De zoekfunctionaliteit van Adobe Experience Manager-middelen uitbreiden
 description: Breid de zoekmogelijkheden van Adobe Experience Manager-middelen uit tot meer dan de standaardwaarden.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 2348df62f970d7e2ff41ad386f29c1550ea94e48
+workflow-type: tm+mt
+source-wordcount: '856'
+ht-degree: 15%
 
 ---
 
@@ -18,7 +21,7 @@ U kunt ook extra tabbladen toevoegen aan het deelvenster [!DNL Assets] Beheer.
 
 >[!CAUTION]
 >
->Vanaf [!DNL Experience Manager] 6.4 is de klassieke gebruikersinterface afgekeurd. Voor aankondiging, zie [Vervangen en verwijderde eigenschappen](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/deprecated-removed-features.html). Adobe raadt u aan een interface met aanraakbediening te gebruiken. Zie [Zoekfactoren](/help/assets/search-facets.md)voor informatie over aanpassingen.
+>Vanaf [!DNL Experience Manager] 6.4 is de klassieke gebruikersinterface afgekeurd. Voor aankondiging, zie [afgekeurde en verwijderde eigenschappen](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/deprecated-removed-features.html). Adobe raadt u aan een interface met aanraakbediening te gebruiken. Zie [zoekfacetten](/help/assets/search-facets.md)voor informatie over aanpassingen.
 
 ## Bedekking {#overlaying}
 
@@ -70,7 +73,7 @@ Een voorspelling van eigenschappen maken:
 
 1. Toevoegen `titlepredicate.jsp`.
 
-   ```xml
+   ```java
    <%--
    
      Sample title predicate component
@@ -163,7 +166,7 @@ Om een groep te bouwen predikaat:
 
 1. Voeg **titlePredicate.jsp** toe:
 
-   ```xml
+   ```java
    <%--
    
      Sample group predicate component

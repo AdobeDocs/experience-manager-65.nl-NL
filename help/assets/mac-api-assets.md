@@ -3,9 +3,9 @@ title: Elementen van HTTP-API in [!DNL Adobe Experience Manager].
 description: Digitale middelen maken, lezen, bijwerken, verwijderen en beheren met HTTP API in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 34167cd9c03c9bc26aa24e6837dbd144af8bf9bd
+source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
 workflow-type: tm+mt
-source-wordcount: '1565'
+source-wordcount: '1573'
 ht-degree: 0%
 
 ---
@@ -46,8 +46,8 @@ Mappen zijn vergelijkbaar met mappen in traditionele bestandssystemen. Het zijn 
 
 **Eigenschappen**:
 
-* `name`  — Naam van de map. Dit is hetzelfde als het laatste segment in het URL-pad zonder de extensie
-* `title` — Optionele titel van de map die kan worden weergegeven in plaats van de naam ervan
+* `name` is de naam van de map. Dit is het zelfde als het laatste segment in de weg URL zonder de uitbreiding.
+* `title` is een optionele titel van de map die in plaats van de naam kan worden weergegeven.
 
 >[!NOTE]
 >
@@ -55,39 +55,39 @@ Mappen zijn vergelijkbaar met mappen in traditionele bestandssystemen. Het zijn 
 
 **Er zijn drie koppelingen beschikbaar in Koppelingsmappen** :
 
-* `self`: Koppeling naar zichzelf
-* `parent`: Koppeling maken naar de bovenliggende map
-* `thumbnail`: (Optioneel) koppeling naar een miniatuurafbeelding van een map
+* `self`: Koppeling naar zichzelf.
+* `parent`: Koppeling naar de bovenliggende map.
+* `thumbnail`: (Optioneel) koppeling naar een miniatuurafbeelding van een map.
 
 ### Assets {#assets}
 
 In Experience Manager bevat een element de volgende elementen:
 
-* De eigenschappen en metagegevens van het element
-* Meerdere uitvoeringen, zoals de oorspronkelijke uitvoering (het oorspronkelijk geüploade element), een miniatuur en verschillende andere uitvoeringen. Extra uitvoeringen kunnen afbeeldingen van verschillende grootten, videocoderingen of uit PDF of InDesign geëxtraheerde pagina&#39;s zijn.
-* Optionele opmerkingen
+* De eigenschappen en metagegevens van het element.
+* Meerdere uitvoeringen, zoals de oorspronkelijke uitvoering (het oorspronkelijk geüploade element), een miniatuur en verschillende andere uitvoeringen. Extra uitvoeringen kunnen afbeeldingen van verschillende grootten, videocoderingen of uitgenomen pagina&#39;s uit PDF- of Adobe InDesign-bestanden zijn.
+* Optionele opmerkingen.
 
 Zie Ondersteuning van [inhoudsfragmenten in Experience Manager Assets HTTP API](/help/assets/assets-api-content-fragments.md#content-fragments)voor informatie over elementen in Content Fragments.
 
 In Experience Manager heeft een map de volgende componenten:
 
 * Entiteiten: De onderliggende elementen van activa zijn de uitvoeringen.
-* Eigenschappen
-* Koppelingen
+* Eigenschappen.
+* Koppelingen.
 
 De HTTP-API voor middelen bevat de volgende functies:
 
-* Een mappenlijst ophalen
-* Een map maken
-* Een element maken
-* Binair element bijwerken
-* Metagegevens van elementen bijwerken
-* Een elementuitvoering maken
-* Een elementuitvoering bijwerken
-* Een middelenopmerking maken
-* Een map of element kopiëren
-* Een map of element verplaatsen
-* Een map, element of uitvoering verwijderen
+* Haal een mappenlijst op.
+* Maak een map.
+* Maak een element.
+* Binair element bijwerken.
+* Metagegevens van elementen bijwerken.
+* Een elementuitvoering maken.
+* Een elementuitvoering bijwerken.
+* Maak een middelenopmerking.
+* Kopieer een map of element.
+* Een map of element verplaatsen.
+* Een map, element of uitvoering verwijderen.
 
 >[!NOTE]
 >
@@ -119,7 +119,7 @@ Hiermee maakt u een nieuwe `sling`: `OrderedFolder` op het opgegeven pad. Als ee
 
 Een API-aanroep mislukt met een `500` antwoordcode als het bovenliggende knooppunt van het opgegeven pad niet bestaat. Een aanroep retourneert een antwoordcode `409` als de map al bestaat.
 
-**Parameters**: `name` - Mapnaam
+**Parameters**: `name` is de mapnaam.
 
 **Verzoek**
 

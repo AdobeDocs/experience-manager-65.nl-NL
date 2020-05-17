@@ -3,7 +3,10 @@ title: Ontwikkeling van proxy's
 description: Een proxy is een AEM-instantie die proxyworkers gebruikt om taken te verwerken. Leer hoe u een AEM-proxy, ondersteunde bewerkingen, proxycomponenten en een aangepaste proxyworker kunt configureren.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
+source-git-commit: 5cea9ed3be322cb8dedfbc6cb38abbdb72d0b7b7
+workflow-type: tm+mt
+source-wordcount: '900'
+ht-degree: 0%
 
 ---
 
@@ -80,7 +83,7 @@ Een proxyworker is een processor die verantwoordelijk is voor het afhandelen van
 
 Hieronder ziet u een voorbeeld van API-gebruik:
 
-```xml
+```java
 @Reference
  JobService proxyJobService;
 
@@ -114,7 +117,7 @@ Zowel proxyconfiguraties als proxyarbeidersconfiguraties zijn beschikbaar via cl
 
 Hieronder ziet u een voorbeeld van API-gebruik:
 
-```xml
+```java
 @Reference(policy = ReferencePolicy.STATIC)
  ProxyConfig proxyConfig;
 

@@ -3,9 +3,9 @@ title: Een persoonlijke map maken en delen in AEM
 description: Leer hoe u een persoonlijke map maakt in de middelen van Adobe Experience Manager (AEM) en deze deelt met andere gebruikers en hoe u hun verschillende rechten toekent.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 979d5074fcf94ca999fd941c77038ab6305cc67d
+source-git-commit: 02bd337271f0039b354ada2899198f5654f9e8bf
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '499'
 ht-degree: 5%
 
 ---
@@ -17,7 +17,7 @@ U kunt een persoonlijke map maken in de gebruikersinterface van Adobe Experience
 
 >[!NOTE]
 >
-> De privé omslag heeft altijd minstens één lid met de rol van de Eigenaar.
+> De persoonlijke omslag heeft minstens één lid met de rol van de Eigenaar.
 
 
 1. Tik in de middelenconsole op de werkbalk of klik op **[!UICONTROL Create]** deze knop en kies een optie in het **[!UICONTROL Folder]** menu.
@@ -50,7 +50,7 @@ U kunt een persoonlijke map maken in de gebruikersinterface van Adobe Experience
 
    >[!NOTE]
    >
-   > De privé omslag heeft altijd minstens één lid met de rol van de Eigenaar. Daarom kan de beheerder niet alle eigenaarleden uit een privé omslag verwijderen. Als u echter bestaande eigenaars wilt verwijderen uit de persoonlijke map, moet de beheerder een andere gebruiker toevoegen als eigenaar.
+   > De persoonlijke omslag heeft minstens één lid met de rol van de Eigenaar. Daarom kan de beheerder niet alle eigenaarleden uit een privé omslag verwijderen. Nochtans, om bestaande eigenaars (en beheerder zelf) uit de privé omslag te verwijderen moet de beheerder een andere gebruiker als eigenaar toevoegen.
 
 1. Klik op **[!UICONTROL Save]**. Afhankelijk van de rol die u toewijst, wordt aan de gebruiker een reeks rechten toegewezen aan uw persoonlijke map wanneer de gebruiker zich aanmeldt bij AEM Assets.
 1. Klik **[!UICONTROL Ok]** om het bevestigingsbericht te sluiten.

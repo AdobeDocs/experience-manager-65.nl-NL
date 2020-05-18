@@ -3,9 +3,9 @@ title: Elementen van HTTP-API in [!DNL Adobe Experience Manager].
 description: Digitale middelen maken, lezen, bijwerken, verwijderen en beheren met HTTP API in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
+source-git-commit: 1f41de531d0e1784245c79ab2ace3586fc7dd469
 workflow-type: tm+mt
-source-wordcount: '1573'
+source-wordcount: '1565'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ In Experience Manager bevat een element de volgende elementen:
 
 Zie Ondersteuning van [inhoudsfragmenten in Experience Manager Assets HTTP API](/help/assets/assets-api-content-fragments.md#content-fragments)voor informatie over elementen in Content Fragments.
 
-In Experience Manager heeft een map de volgende componenten:
+In [!DNL Experience Manager] een map zijn de volgende componenten beschikbaar:
 
 * Entiteiten: De onderliggende elementen van activa zijn de uitvoeringen.
 * Eigenschappen.
@@ -95,9 +95,9 @@ De HTTP-API voor middelen bevat de volgende functies:
 
 **Vereisten**
 
-1. Ga naar `https://[aem_server]:[port]/system/console/configMgr`.
-1. Navigeer naar **Adobe Granite CSRF-filter**.
-1. Zorg ervoor dat de eigenschap **Filter Methoden** bevat: POST, PUT, DELETE.
+* Ga naar `https://[aem_server]:[port]/system/console/configMgr`.
+* Ga naar **[!UICONTROL Adobe Granite CSRF Filter]**.
+* Zorg ervoor dat de eigenschap het volgende **[!UICONTROL Filter Methods]** bevat: `POST`, `PUT`, `DELETE`.
 
 ## Een mappenlijst ophalen {#retrieve-a-folder-listing}
 
@@ -181,14 +181,14 @@ Werkt de metagegevenseigenschappen van het element bij. Als u een eigenschap in 
 
 Maak een nieuwe elementuitvoering voor een element. Als de naam van de parameter request niet wordt opgegeven, wordt de bestandsnaam gebruikt als naam voor de vertoning.
 
-**Parameters** De parameters zijn `name` voor de naam van de vertoning en `file` als bestandsverwijzing.
+**Parameters**: De parameters zijn `name` voor naam van de vertoning en `file` als dossierverwijzing.
 
 **Verzoek**
 
 * `POST /api/assets/myfolder/myasset.png/renditions/web-rendition -H"Content-Type: image/png" --data-binary "@myRendition.png"`
 * `POST /api/assets/myfolder/myasset.png/renditions/* -F"name=web-rendition" -F"file=@myRendition.png"`
 
-**Antwoordcodes**
+**Antwoordcodes**: De responscodes zijn:
 
 * 201 - GEMAAKT - als de vertoning is gemaakt.
 * 404 - NIET GEVONDEN - als Asset niet kon worden gevonden of betreden op de verstrekte URI.
@@ -201,7 +201,7 @@ Updates vervangen een elementuitvoering door de nieuwe binaire gegevens.
 
 **Verzoek**: `PUT /api/assets/myfolder/myasset.png/renditions/myRendition.png -H"Content-Type: image/png" --data-binary @myRendition.png`
 
-**Antwoordcodes** De responscodes zijn:
+**Antwoordcodes**: De responscodes zijn:
 
 * 200 - OK - als de vertoning correct is bijgewerkt.
 * 404 - NIET GEVONDEN - als Asset niet kon worden gevonden of betreden op de verstrekte URI.

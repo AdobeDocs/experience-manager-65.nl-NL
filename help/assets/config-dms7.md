@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f96a8fc51ffeef68b2e4c668bc1b2bae4e89133a
+source-git-commit: 06301db70f763eedebeca293dd288d22248cfbf6
 workflow-type: tm+mt
-source-wordcount: '5453'
+source-wordcount: '5448'
 ht-degree: 6%
 
 ---
@@ -25,7 +25,7 @@ Als u Adobe Experience Manager gebruikt die is ingesteld voor verschillende omge
 
 Het volgende architectuurdiagram beschrijft hoe Dynamische Media - wijze Scene7 werkt.
 
-Met de nieuwe architectuur is AEM verantwoordelijk voor hoofdmiddelen en synchronisaties met Dynamic Media voor het verwerken en publiceren van bedrijfsmiddelen:
+Met de nieuwe architectuur is AEM verantwoordelijk voor hoofdelementen en synchronisaties met Dynamic Media voor het verwerken en publiceren van bedrijfsmiddelen:
 
 1. Wanneer het hoofdelement naar AEM wordt geüpload, wordt het naar Dynamic Media gerepliceerd. Op dat moment worden met Dynamic Media alle processen voor het genereren van elementen, zoals videocodering en dynamische varianten van een afbeelding, verwerkt. <!-- (In Dynamic Media - Scene7 mode, be aware that you can only upload assets whose file sizes are 2 GB or less.) Jira ticket CQ-4286561 fixed this issue. DM-S7 NOW SUPPORTS THE UPLOAD OF ASSETS LARGER THAN 2 GB. -->
 1. Nadat de vertoningen worden geproduceerd, kan AEM veilig tot de verre Dynamische vertoningen van Media toegang hebben en voorproef (geen binaire getallen worden teruggestuurd naar de instantie AEM).
@@ -479,8 +479,6 @@ Wanneer de spinset wordt geüpload en gepubliceerd, activeert u de naam van het 
    Als u de voorinstelling activeert, weet u zeker dat de voorinstelling van de batch-set wordt toegepast wanneer u elementen uploadt naar Dynamic Media.
 
 ### (Facultatief) het stemmen van de prestaties van Dynamische Media - wijze Scene7 {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
-
-**Tips voor het afstemmen van de synchronisatie-prestaties/schaalbaarheid**
 
 Om Dynamische Media - wijze Scene7 vlot te houden, adviseert Adobe de volgende synchronisatieprestaties/scalability fintuning uiteinden:
 

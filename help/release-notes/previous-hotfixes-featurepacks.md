@@ -1,20 +1,18 @@
 ---
 title: Opmerkingen bij de release AEM 6.5 Vorige Service Pack
 description: Opmerkingen bij de release specifiek voor Adobe Experience Manager 6.5 Service Pack 3 en eerder.
-uuid: c7bc3705-3d92-4e22-ad84-dc6002f6fa6c
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5
-discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
-docset: aem65
 translation-type: tm+mt
-source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
+source-git-commit: af21ed3cb8b755402ab03a7b624fa1ea99f2035f
+workflow-type: tm+mt
+source-wordcount: '6273'
+ht-degree: 0%
 
 ---
 
 
 # Hotfixes en de Pakken van de Eigenschap inbegrepen in vorige Packs van de Dienst {#hotfixes-and-feature-packs-included-in-previous-service-packs}
 
-## Adobe Experience Manager 6.5.3.0
+## Adobe Experience Manager 6.5.3.0 {#aem-6530}
 
 [!DNL Adobe Experience Manager] 6.5.3.0 is een belangrijke release die prestatievermogen, stabiliteit, beveiliging en belangrijke correcties en verbeteringen voor klanten bevat die zijn vrijgegeven sinds de algemene beschikbaarheid van de 6.5-release in **april 2019**. Het kan bovenop [!DNL Adobe Experience Manager] 6.5 worden geïnstalleerd.
 
@@ -24,9 +22,9 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 
 * [!DNL Experience Manager Assets] ondersteunt nu ZIP-archieven die zijn gemaakt met het Deflate64-algoritme.
 
-* Er is een nieuwe kolom voor de gemaakte datum toegevoegd aan de DAM-lijstweergave en de zoekresultaten voor elementen in de lijstweergave. Deze kolom kan worden gesorteerd.
+* Een nieuwe kolom die de aanmaakdatum van elementen weergeeft, is beschikbaar wanneer u elementen weergeeft in DAM en in de zoekresultaten in de lijstweergave. Sorteer de kolom om elementen te rangschikken in chronologische of omgekeerde chronologische volgorde waarin ze zijn gemaakt.
 
-* Asset sorting based on Name column is enabled in de mening van de Lijst.
+* U kunt nu elementen sorteren op basis van de `Name` kolom in de lijstweergave.
 
 * [!DNL Dynamic Media] ondersteunt nu SmartCrop-video-elementen. Slim uitsnijden is een door computers aangedreven functie die een video bijsnijdt terwijl het frame wordt verplaatst om het brandpunt van de scène te volgen.
 
@@ -46,9 +44,9 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 
 * [!DNL Experience Manager Assets] ondersteunt nu ZIP-archieven die zijn gemaakt met het Deflate64-algoritme (NPR-27573).
 
-* Er is een nieuwe kolom voor de aanmaakdatum toegevoegd, die sorteerbaar is, in de DAM-lijstweergave en in de resultaten voor het zoeken naar middelen in de lijstweergave (NPR-31312).
+* Een nieuwe kolom die de aanmaakdatum van elementen weergeeft, is beschikbaar wanneer u elementen weergeeft in DAM en in de zoekresultaten in de lijstweergave. Sorteer de kolom om elementen te rangschikken in chronologische of omgekeerde chronologische volgorde waarin ze zijn gemaakt (NPR-31312).
 
-* Asset sorting based on Name column is allowed in List view (NPR-31299).
+* U kunt nu elementen sorteren op basis van de `Name` kolom in de lijstweergave (NPR-31299).
 
 * De GLB-, GLTF-, OBJ- en STL-elementbestanden ondersteunen voorvertoning van elementen op de pagina Asset Details in DAM (CQ-4282277).
 
@@ -61,6 +59,8 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 * De onderzoek/doorbladermening is geplaatst als standaardmening in de plukker van de Stichting als de vraagparameters in verzoek worden overgegaan (NPR-31601).
 
 **Oplossingen**
+
+* OAuth IMS-provider kan geen verbinding maken via een proxyserver wanneer Adobe Asset Link (NPR-30949) wordt gebruikt.
 
 * Metagegevens voor sommige PDF-documenten worden niet bijgewerkt en naar de PDF opgeslagen bij het wijzigen van de titel (NPR-31629).
 
@@ -82,19 +82,19 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 
 * Elementen met het plusteken (+) in de bestandsnaam kunnen niet worden verwijderd (NPR-31162).
 
-* Het keuzemenu Maken, dat in het bovenste menu zichtbaar is wanneer u een map selecteert, geeft &#39;Map&#39; niet weer als een optie voor maken (NPR-30877).
+* Een optie voor het maken van nieuwe elementen of mappen is beschikbaar als pop-upmenu in de gebruikersinterface Elementen. Als een map is geselecteerd, wordt Experience Manager niet weergegeven [!UICONTROL Folder] als een van de opties in het pop-upmenu (NPR-30877).
 
-* Mapselectie Maken > Handelitem FileUpload ontbreekt wanneer ACL voor Deny jcr:removeChildNodes en jcr:removeNode op pad wordt toegepast voor een gebruiker (NPR-30840).
+* Mapselectie Maken > Handelitem FileUpload ontbreekt wanneer ACL voor Weigeren `jcr:removeChildNodes` en `jcr:removeNode` op pad wordt toegepast voor een gebruiker (NPR-30840).
 
-* De DAM-workflows worden in de status &#39;stale&#39; gezet wanneer bepaalde MP4-middelen worden geüpload, waardoor alle resterende workflows in de status &#39;stale&#39; gaan (NPR-30662).
+* De DAM-workflows worden in de status &#39;stale&#39; wanneer bepaalde MP4-middelen worden geüpload, waardoor alle resterende workflows in de status &#39;stale&#39; gaan (NPR-30662).
 
-* Er is een fout ten gevolge van onvoldoende geheugen opgetreden wanneer grote PDF-bestanden (met meerdere gigabytes) naar DAM worden geüpload en de bijbehorende subbestanden worden verwerkt (NPR-30614).
+* Er is een fout in het geheugen opgetreden wanneer een groot PDF-bestand met meerdere gigabytes naar DAM wordt geüpload en de bijbehorende submiddelen worden verwerkt (NPR-30614).
 
 * Bulkverplaatsing van activa mislukt en geeft een waarschuwingsbericht weer (NPR-30610).
 
-* De namen van activa worden veranderd in kleine letters wanneer het bewegen van activa van één omslag aan een andere in [!DNL Experience Manager] lopen in wijze [!DNL Dynamic Media]-Scene7 (NPR-31630).
+* De namen van activa worden veranderd in kleine letters wanneer het bewegen van activa van één omslag aan een andere wanneer het werken [!DNL Dynamic Media]-wijze Scene7 (NPR-31630).
 
-* Er is een fout opgetreden tijdens het bewerken van een externe imageset voor de afbeelding die zich in de map met dezelfde naam bevindt als de bedrijfsnaam van Scene 7 (NPR-31340).
+* Er wordt een fout waargenomen tijdens het bewerken van een externe imageset, voor de afbeelding die zich bevindt in de map met de naam van het Scene7-bedrijf (NPR-31340).
 
 * [!DNL Dynamic Media] activa met referenties worden niet gepubliceerd (NPR-31180).
 
@@ -326,7 +326,7 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 * Mogelijke XSS-aanval (cross-site scripting) via een beperkt waarschuwingsvenster voor bestanden, aangezien de geïnjecteerde afbeelding zichtbaar is. NPR-30617: Hotfix voor CQ-4270133
 * MultiTenant: Bij huurders die mapeigenschappen opslaan, wordt zowel een melding met de succesmelding als een foutbericht weergegeven waarin de handeling wordt beschreven. &quot;Kan de eigenschappen niet bewerken. Onvoldoende rechten.&quot; dat leidt tot verwarring . NPR-30545: Hotfix voor CQ-4275333
 * In het dialoogvenster Asset Selector is het selecteren van elementen niet toegestaan. De bron kan daarom niet worden bijgewerkt met de desbetreffende functie voor bronvervanging. NPR-30502: Hotfix voor CQ-4275029
-* [!UICONTROL Workflow voor DAM-update van middelen] - In de status &#39;Stale&#39; bij het uploaden van grote MP4-bestanden. NPR-30480: Hotfix voor CQ-4271352
+* [!UICONTROL DAM Update Asset] workflow - In de status Gestreefd bij het uploaden van grote MP4-bestanden. NPR-30480: Hotfix voor CQ-4271352
 * De functie Revisietaak maken werkt niet omdat de payload null is en alle volgende aan een revisie gerelateerde handelingen mislukken. NPR-30468: Hotfix voor CQ-4274263
 * Verbindingsprobleem met Adobe Smart Tag via Datapower. NPR-30026: Hotfix voor CQ-4269457
 * In de kolomweergave van elementen wordt een fout gegenereerd wanneer wordt geprobeerd de filters te openen zonder rails. NPR-30501: Hotfix voor CQ-4273862
@@ -390,7 +390,7 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 
 * Sneltoetsen die voorkomen dat de gebruiker &#39;m,&#39; &#39;p,&#39; &#39;e&#39; gebruikt in specifieke gebruikersinterfaces. NPR-30355: Hotfix voor GRANITE-26346
 * Als u de zoekinterface sluit, wordt de linkertrack niet opnieuw ingesteld op Inhoud, zodat de gebruiker de filterrail niet de tweede keer kan openen. [!DNL Experience Manager Assets] NPR-30509: Hotfix voor CQ-4274716
-* Omgeving met meerdere gebruikers: De bovenste [!DNL Experience Manager Assets] navigatie van de gebruikersinterface is niet beschikbaar en er wordt een JavaScript-fout gegenereerd. NPR-30104: Hotfix voor GRANITE-26344
+* Omgeving met meerdere gebruikers: [!DNL Experience Manager Assets] De bovenste navigatie van de gebruikersinterface is niet beschikbaar en er wordt een JavaScript-fout gegenereerd. NPR-30104: Hotfix voor GRANITE-26344
 
 ### Vertaling {#translation-6520}
 
@@ -688,7 +688,7 @@ De belangrijkste hooglichten voor [!DNL Experience Manager Forms] 6.5.1.0 zijn:
 **Formulieren - Documentbeveiliging**
 
 * Digital Signature with Hardware Security Module (HSM) werkt niet op OSGi Linux op Java 11 en Java 8\. NPR-29838: Hotfix voor CQ-4270441
-* Digital Signature with Hardware Security Module (HSM) werkt niet op JEE Linux en op alle ondersteunde toepassingsservers, zoals JBoss en Websphere. NPR-29739: Hotfix voor CQ-4266721
+* Digital Signature with Hardware Security Module (HSM) werkt niet op JEE Linux en op alle ondersteunde toepassingsservers, zoals JBoss en Websphere. NPR-29839: Hotfix voor CQ-4266721
 * Als u de handtekeningen in een PDF verifieert met behulp van PDF Advanced Electronic Signatures (PAdES), wordt InvalidOperationException gegenereerd. NPR-29842: Hotfix voor CQ-4244837
 * Extra ondersteuning voor documentbeveiliging voor Office 2019\. Hotfix voor CQ-4254369, CQ-4259764
 

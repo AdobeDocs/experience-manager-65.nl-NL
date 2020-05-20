@@ -3,7 +3,7 @@ title: Download digitale middelen van [!DNL Adobe Experience Manager].
 description: Leer hoe u middelen downloadt van [!DNL Adobe Experience Manager] en de downloadfunctionaliteit in- of uitschakelt.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5cea9ed3be322cb8dedfbc6cb38abbdb72d0b7b7
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 0%
@@ -19,7 +19,7 @@ U kunt elementen downloaden, zoals statische en dynamische uitvoeringen. U kunt 
 >
 >Ontvangers van e-mailberichten moeten lid zijn van de `dam-users` groep om toegang te krijgen tot de koppeling voor het downloaden van postadressen in het e-mailbericht. Om de elementen te kunnen downloaden, moeten de leden machtigingen hebben om workflows te starten die het downloaden van elementen activeren.
 
-Als u elementen wilt downloaden, navigeert u naar een element, selecteert u het element en tikt u op **[!UICONTROL Download]** de werkbalk. Geef in het dialoogvenster dat verschijnt de gewenste downloadopties op.
+Als u elementen wilt downloaden, navigeert u naar een element, selecteert u het element en klikt u op **[!UICONTROL Download]** de werkbalk. Geef in het dialoogvenster dat verschijnt de gewenste downloadopties op.
 
 De elementtypen Afbeeldingssets, Spin-sets, Gemengde mediasets en Carousel-sets kunnen niet worden gedownload.
 

@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release AEM 6.5 Vorige Service Pack
 description: Opmerkingen bij de release specifiek voor Adobe Experience Manager 6.5 Service Pack 3 en eerder.
 translation-type: tm+mt
-source-git-commit: af21ed3cb8b755402ab03a7b624fa1ea99f2035f
+source-git-commit: 321710219053ab43fe5a223665bc20987e1afb31
 workflow-type: tm+mt
 source-wordcount: '6273'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Hotfixes en de Pakken van de Eigenschap inbegrepen in vorige Packs van de Dienst {#hotfixes-and-feature-packs-included-in-previous-service-packs}
 
-## Adobe Experience Manager 6.5.3.0 {#aem-6530}
+## Adobe Experience Manager 6.5.3.0 {#aem-6530-rn}
 
 [!DNL Adobe Experience Manager] 6.5.3.0 is een belangrijke release die prestatievermogen, stabiliteit, beveiliging en belangrijke correcties en verbeteringen voor klanten bevat die zijn vrijgegeven sinds de algemene beschikbaarheid van de 6.5-release in **april 2019**. Het kan bovenop [!DNL Adobe Experience Manager] 6.5 worden geïnstalleerd.
 

@@ -3,7 +3,10 @@ title: Elementen voorbereiden voor vertaling
 description: Maak hoofdmappen voor talen om elementen voor te bereiden voor vertaling ter ondersteuning van meertalige middelen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+workflow-type: tm+mt
+source-wordcount: '439'
+ht-degree: 0%
 
 ---
 
@@ -43,25 +46,25 @@ Als u de hoofdmap van de taal wilt maken, maakt u een map en gebruikt u een ISO-
 
 De hoofdpagina van de Italiaanse taalkopie van de voorbeeldhiërarchie heeft bijvoorbeeld de eigenschap Naam `it` . Het bezit van de Naam wordt gebruikt als naam van de activaknoop in de bewaarplaats, en bepaalt daarom de weg van de activa. (`https://[aem_server]:[port]/assets.html/content/dam/it/`).
 
-1. Klik/tik op **[!UICONTROL Maken]** in de middelenconsole en kies **[!UICONTROL Map]** in het menu.
+1. From the Assets console, click **[!UICONTROL Create]** and choose **[!UICONTROL Folder]** from the menu.
 
    ![Map maken](assets/Create-folder.png)
 
-1. Typ in het veld **[!UICONTROL Naam]** de landcode in de notatie `<language-code>`.
+1. Typ in het **[!UICONTROL Name]** veld de landcode in de notatie `<language-code>`.
 
    ![Taalcode toevoegen in map](assets/Add-language-code-in-folder.png)
 
-1. Klik of tik op **[!UICONTROL Maken]**. De taalwortel wordt gecreeerd in de console van Activa.
+1. Klik op **[!UICONTROL Create]**. De taalwortel wordt gecreeerd in de console van Activa.
 
 ## Taalwortels weergeven {#viewing-language-roots}
 
-De AEM-interface biedt een deelvenster **[!UICONTROL Referenties]** met een lijst met taalwortels die zijn gemaakt in AEM-elementen.
+De interface AEM verstrekt een **[!UICONTROL References]** paneel dat een lijst van taalwortels toont die binnen Elementen AEM zijn gecreeerd.
 
 1. Selecteer in de middelenconsole de hoofdtaal waarvoor u taalkopieën wilt maken.
-1. Klik of tik op het pictogram GlobalNav en kies **[!UICONTROL Referenties]** om het venster [!UICONTROL Referentie] te openen.
+1. Klik op het pictogram GlobalNav en kies **[!UICONTROL References]** om het [!UICONTROL Reference] deelvenster te openen.
 
    ![chlimage_1-122](assets/chlimage_1-122.png)
 
-1. Klik of tik op **[!UICONTROL Taalkopieën]** in het venster Referenties. In het deelvenster [!UICONTROL Taalkopieën] worden de taalkopieën van de elementen weergegeven.
+1. Klik in het venster Referenties op **[!UICONTROL Language Copies]**. In het [!UICONTROL Language Copies] deelvenster worden de taalkopieën van de elementen weergegeven.
 
    ![chlimage_1-123](assets/chlimage_1-123.png)

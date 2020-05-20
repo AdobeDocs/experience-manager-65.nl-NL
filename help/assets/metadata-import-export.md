@@ -3,9 +3,9 @@ title: Metagegevens van elementen bulksgewijs importeren en exporteren.
 description: Bulk importeren en exporteren van metagegevens van digitale elementen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 42532bfe73c44ad04b67afa973eef526f47588cf
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
 workflow-type: tm+mt
-source-wordcount: '744'
+source-wordcount: '743'
 ht-degree: 5%
 
 ---
@@ -36,7 +36,7 @@ De import van metagegevens is asynchroon en belemmert de systeemprestaties niet.
    | [!UICONTROL Launch Workflows] | Standaard false. Wanneer de standaardinstellingen voor Launcher zijn ingesteld op `true` en van kracht zijn voor de [!UICONTROL DAM Metadata WriteBack] workflow (die metagegevens naar de binaire XMP-gegevens schrijft). Als u opstartworkflows inschakelt, wordt het systeem trager. |
    | [!UICONTROL Asset Path Column Name] | Hiermee definieert u de kolomnaam voor het CSV-bestand met elementen. |
 
-1. Tap/click **[!UICONTROL Import]** from the toolbar. Nadat de metagegevens zijn geïmporteerd, wordt een melding in [!UICONTROL Notification] Postvak IN weergegeven.
+1. Klik op **[!UICONTROL Import]** de werkbalk. Nadat de metagegevens zijn geïmporteerd, wordt een melding in [!UICONTROL Notification] Postvak IN weergegeven.
 
 1. Navigeer naar de [!UICONTROL Properties] pagina van een element en controleer de waarden in de velden om te controleren of het element correct is geïmporteerd.
 

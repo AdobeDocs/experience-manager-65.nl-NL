@@ -4,10 +4,10 @@ description: Leer de taken voor middelenbeheer, zoals het uploaden, downloaden, 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 94f7f2cde3c87ed4693b9e2004f80fc5f0cd9855
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
 workflow-type: tm+mt
-source-wordcount: '9131'
-ht-degree: 4%
+source-wordcount: '9082'
+ht-degree: 3%
 
 ---
 
@@ -61,13 +61,13 @@ Voordat u een element uploadt, moet u ervoor zorgen dat dit een [indeling](/help
 1. Navigeer in de [!DNL Assets] gebruikersinterface naar de locatie waar u digitale elementen wilt toevoegen.
 1. Voer een van de volgende handelingen uit om de elementen te uploaden:
 
-   * Tik op het **[!UICONTROL Create]** pictogram op de werkbalk. Tik vervolgens op het menu **[!UICONTROL Files]**. U kunt de naam van het bestand desgewenst wijzigen in het dialoogvenster dat verschijnt.
+   * Klik op het **[!UICONTROL Create]** pictogram op de werkbalk. Then on the menu, click **[!UICONTROL Files]**. U kunt de naam van het bestand desgewenst wijzigen in het dialoogvenster dat verschijnt.
    * In een browser die HTML5 ondersteunt, sleept u de elementen rechtstreeks naar de [!DNL Assets] gebruikersinterface. Het dialoogvenster voor het wijzigen van de naam van het bestand wordt niet weergegeven.
    ![Optie maken om elementen te uploaden](assets/create-options.png)
 
    Als u meerdere bestanden wilt selecteren, drukt u op Ctrl of Command en selecteert u de elementen in het dialoogvenster Bestandenkiezer. Als u een iPad gebruikt, kunt u slechts één bestand tegelijk selecteren.
 
-   U kunt het uploaden van grote elementen (groter dan 500 MB) pauzeren en later vanaf dezelfde pagina hervatten. Tik op het **[!UICONTROL Pause]** pictogram naast de voortgangsbalk die wordt weergegeven wanneer het uploaden start.
+   U kunt het uploaden van grote elementen (groter dan 500 MB) pauzeren en later vanaf dezelfde pagina hervatten. Klik op het **[!UICONTROL Pause]** pictogram naast de voortgangsbalk die wordt weergegeven wanneer het uploaden start.
 
    ![Voortgangsbalk voor elementen uploaden](assets/chlimage_1-5.png)
 
@@ -109,7 +109,7 @@ Voordat u een element uploadt, moet u ervoor zorgen dat dit een [indeling](/help
 
    ![Dialoogvenster Middelen gedetecteerd dupliceren](assets/chlimage_1-8.png)
 
-   Tik/klik op het dubbele element om het gedupliceerde element in [!DNL Assets]**[!UICONTROL Keep]** te behouden. Tik/klik op het geüploade dubbele element om het geüploade element te verwijderen. **[!UICONTROL Delete]**
+   Als u het gedupliceerde element wilt behouden in [!DNL Assets], klikt u **[!UICONTROL Keep]**. Als u het geüploade dubbele element wilt verwijderen, klikt u op **[!UICONTROL Delete]**.
 
    [!DNL Experience Manager Assets] Hiermee voorkomt u dat elementen met de verboden tekens in de bestandsnaam worden geüpload. Als u een element probeert te uploaden met een bestandsnaam die een niet-toegestaan teken of meer bevat, wordt een waarschuwingsbericht weergegeven en wordt het uploaden gestopt totdat u deze tekens verwijdert of uploadt met een toegestane naam. [!DNL Assets]
 
@@ -154,9 +154,9 @@ Met Dynamic Media kunt u via de FTP-server items in batches uploaden. Als u grot
 **Elementen uploaden met FTP**
 
 1. Meld u met uw keuze voor een FTP-client aan bij de FTP-server met de FTP-gebruikersnaam en -wachtwoord die u van de e-mail met de provisioning hebt ontvangen. Upload in de FTP-client bestanden of mappen naar de FTP-server.
-1. [Meld u aan bij Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) met gebruikersgegevens die zijn ontvangen van de e-mail met provisioning. Tik op de algemene navigatiebalk **[!UICONTROL Upload]**.
+1. [Meld u aan bij Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) met gebruikersgegevens die zijn ontvangen van de e-mail met provisioning. Klik op de algemene navigatiebalk **[!UICONTROL Upload]**.
 
-1. Tik op de uploadpagina in de linkerbovenhoek op de **[!UICONTROL Via FTP]** tab.
+1. Klik op de pagina Uploaden in de linkerbovenhoek op het **[!UICONTROL Via FTP]** tabblad.
 1. Kies links op de pagina een FTP-map waaruit u bestanden wilt uploaden. aan de rechterkant van de pagina kiest u een doelmap.
 1. Klik in de rechterbenedenhoek van de pagina **[!UICONTROL Job Options]** en stel de gewenste opties in op basis van de elementen in de map die u hebt geselecteerd.
 
@@ -166,11 +166,11 @@ Met Dynamic Media kunt u via de FTP-server items in batches uploaden. Als u grot
    >
    >Wanneer u elementen uploadt via FTP, hebben de opties voor uploadtaken die u instelt in Dynamic Media Classic (S7) voorrang op de parameters voor elementverwerking die zijn ingesteld in [!DNL Experience Manager].
 
-1. Tik in de rechterbenedenhoek van het dialoogvenster Taakopties uploaden op **[!UICONTROL Save]**.
-1. In the lower-right corner of the Upload page, tap **[!UICONTROL Submit Upload]**.
+1. Klik in de rechterbenedenhoek van het dialoogvenster Taakopties uploaden op **[!UICONTROL Save]**.
+1. In the lower-right corner of the Upload page, click **[!UICONTROL Submit Upload]**.
 
-   Tik op de algemene navigatiebalk om de voortgang van het uploaden weer te geven **[!UICONTROL Jobs]**. Op de pagina Taken wordt de voortgang van het uploaden weergegeven. U kunt binnen blijven werken [!DNL Experience Manager] en aan de pagina van Banen in Dynamische Klassiek van Media op elk ogenblik terugkeren om een lopende baan te herzien.
-Tik **[!UICONTROL Cancel]** naast de duur om een actieve uploadtaak te annuleren.
+   Klik op de algemene navigatiebalk om de voortgang van het uploaden weer te geven. **[!UICONTROL Jobs]**. Op de pagina Taken wordt de voortgang van het uploaden weergegeven. U kunt binnen blijven werken [!DNL Experience Manager] en aan de pagina van Banen in Dynamische Klassiek van Media op elk ogenblik terugkeren om een lopende baan te herzien.
+Als u een uploadtaak die wordt uitgevoerd wilt annuleren, klikt u **[!UICONTROL Cancel]** naast de duur.
 
 #### Opties voor uploaden {#upload-job-options}
 
@@ -180,7 +180,7 @@ Tik **[!UICONTROL Cancel]** naast de duur om een actieve uploadtaak te annuleren
 | Publiceren na uploaden |  | Hiermee publiceert u automatisch de elementen die u uploadt. |
 | Overschrijven in een willekeurige map, dezelfde naam van basiselement, ongeacht de extensie |  | Selecteer deze optie als u wilt dat de bestanden die u uploadt, bestaande bestanden met dezelfde naam vervangen. De naam van deze optie kan verschillen, afhankelijk van de instellingen in **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]** > **[!UICONTROL Upload to Application]** > **[!UICONTROL Overwrite Images]**. |
 | ZIP- of Tar-bestanden bij uploaden decomprimeren |  |  |
-| Taakopties |  | Tik/klik **[!UICONTROL Job Options]** om het [!UICONTROL Upload Job Options] dialoogvenster te openen en kies opties die de volledige uploadtaak beïnvloeden. Deze opties zijn hetzelfde voor alle bestandstypen.<br>U kunt standaardopties kiezen voor het uploaden van bestanden die beginnen op de pagina Algemene instellingen van toepassing. Kies **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]**. Tik op de **[!UICONTROL Default Upload Options]** knop om het [!UICONTROL Upload Job Options] dialoogvenster te openen. |
+| Taakopties |  | Klik **[!UICONTROL Job Options]** om het [!UICONTROL Upload Job Options] dialoogvenster te openen en kies opties die de volledige uploadtaak beïnvloeden. Deze opties zijn hetzelfde voor alle bestandstypen.<br>U kunt standaardopties kiezen voor het uploaden van bestanden die beginnen op de pagina Algemene instellingen van toepassing. Kies **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]**. Klik op de **[!UICONTROL Default Upload Options]** knop om het [!UICONTROL Upload Job Options] dialoogvenster te openen. |
 |  | Wanneer | Selecteer Eenmalig of Herhalend. Als u een terugkerende taak wilt instellen, kiest u de optie Herhalen (Dagelijks, Wekelijks, Maandelijks of Aangepast) om op te geven wanneer de FTP-uploadtaak moet worden herhaald. Geef vervolgens de gewenste planningsopties op. |
 |  | Inclusief submappen | Upload alle submappen in de map die u wilt uploaden. De namen van de map en de submappen die u uploadt, worden automatisch ingevoerd [!DNL Experience Manager Assets]. |
 |  | Opties voor uitsnijden | Als u handmatig wilt uitsnijden aan weerszijden van een afbeelding, selecteert u het menu Uitsnijden en kiest u Handmatig. Voer vervolgens het aantal pixels in dat u aan elke zijde van de afbeelding wilt uitsnijden. Hoeveel van de afbeelding wordt uitgesneden, is afhankelijk van de ppi-instelling (pixels per inch) in het afbeeldingsbestand. Als de afbeelding bijvoorbeeld 150 ppi weergeeft en u 75 invoert in de tekstvakken Boven, Rechts, Onder en Links, wordt aan beide zijden een halve inch bijgesneden.<br> Als u pixels in witruimte automatisch wilt uitsnijden in een afbeelding, opent u het menu Uitsnijden, kiest u Handmatig en voert u pixelmetingen in in de velden Boven, Rechts, Onder en Links om van de zijkanten bij te snijden. U kunt ook Bijsnijden kiezen in het menu Uitsnijden en de volgende opties kiezen:<br> **Wegsnijden op basis van** <ul><li>**Kleur** - Kies de optie Kleur. Selecteer vervolgens het menu Hoek en kies de hoek van de afbeelding met de kleur die het beste overeenkomt met de kleur voor de witruimte die u wilt uitsnijden.</li><li>**Transparantie** - Kies de optie Transparantie.<br> **Tolerantie** - Sleep de schuifregelaar om een tolerantie tussen 0 en 1 op te geven. Geef voor bijsnijden op basis van kleur 0 op om alleen pixels bij te snijden als deze exact overeenkomen met de kleur die u in de hoek van de afbeelding hebt geselecteerd. De aantallen dichter aan 1 staan voor meer kleurenverschil toe.<br>Voor het bijsnijden op basis van transparantie geeft u 0 op om alleen pixels bij te snijden als deze transparant zijn. De aantallen dichter aan 1 staan voor meer transparantie toe.</li></ul><br>Deze opties voor uitsnijden zijn niet-destructief. |
@@ -329,13 +329,13 @@ Enkele beperkingen van de functie zijn:
 Voer de volgende stappen uit om een voorvertoning van een element weer te geven.
 
 1. Navigeer in de [!DNL Assets] gebruikersinterface naar de locatie van het element waarvan u een voorvertoning wilt weergeven.
-1. Tik op het gewenste element om het te openen.
+1. Klik op het gewenste element om het te openen.
 
 1. In de voorvertoningsmodus zijn zoomopties beschikbaar voor [ondersteunde afbeeldingstypen](/help/assets/assets-formats.md#supported-raster-image-formats) (met interactieve bewerking).
 
-   Tik/klik op een vergrootglas `+` (of tik/klik op het vergrootglas van het element) om in te zoomen op een element. Tik/klik om uit te zoomen. `-` Wanneer u inzoomt, kunt u elk gebied van de afbeelding nauwkeurig bekijken door te pannen. Met de zoompijl opnieuw instellen keert u terug naar de oorspronkelijke weergave.
+   Als u wilt inzoomen op een element, klikt u op het vergrootglas `+` (of klikt u op het element). Klik op `-`Uitzoomen. Wanneer u inzoomt, kunt u elk gebied van de afbeelding nauwkeurig bekijken door te pannen. Met de zoompijl opnieuw instellen keert u terug naar de oorspronkelijke weergave.
 
-   Tik **[!UICONTROL Reset]** om de weergave te herstellen naar de oorspronkelijke grootte.
+   Klik **[!UICONTROL Reset]** om de weergave weer in te stellen op de oorspronkelijke grootte.
 
    ![Het pictogram Opnieuw instellen om de gebruiker terug te brengen naar de oorspronkelijke weergave](assets/chlimage_1-11.png)
 
@@ -366,7 +366,7 @@ Voer de volgende stappen uit om een voorvertoning van een element weer te geven 
 
 1. Navigeer naar de locatie van het element om de metagegevens te bewerken.
 
-1. Selecteer het element en tik op of klik op de werkbalk om de eigenschappen van het element weer te geven. **[!UICONTROL Properties]** U kunt ook de **[!UICONTROL Properties]** snelle actie op de kaart kiezen.
+1. Selecteer het element en klik op **[!UICONTROL Properties]** de werkbalk om de eigenschappen van het element weer te geven. U kunt ook de **[!UICONTROL Properties]** snelle actie op de kaart kiezen.
 
    ![Eigenschappen, snelle actie voor de weergave van de elementenkaart](assets/properties_quickaction.png)
 
@@ -394,13 +394,13 @@ Voer de volgende stappen uit om een voorvertoning van een element weer te geven 
    >
    >Als u tags wilt maken, moet u schrijfmachtigingen uitvoeren in `/content/cq:tags/default` de CRX-opslagruimte.
 
-1. Als u een asset wilt beoordelen, tikt of klikt u op het tabblad **[!UICONTROL Advanced]** en vervolgens tikt of klikt u op de gewenste positie op de ster om een waardering voor de asset toe te wijzen.
+1. To provide a rating to the asset, click the **[!UICONTROL Advanced]** tab and then click the star at the appropriate position to assign the desired rating.
 
    ![Geavanceerd tabblad in Eigenschappen van element om een waardering toe te wijzen](assets/ratings.png)
 
    De beoordelingsscore die u aan het element toewijst, wordt onder **[!UICONTROL Your Ratings]** weergegeven. De gemiddelde ratingscore die het actief heeft ontvangen van gebruikers die het actief beoordeelden, wordt onder weergegeven **[!UICONTROL Rating]**. Daarnaast wordt onder **[!UICONTROL Rating Breakdown]** weergegeven hoe de ratingscores die bijdragen aan de gemiddelde ratingscore, zijn verdeeld. U kunt middelen zoeken op basis van gemiddelde score.
 
-1. Als u gebruiksstatistieken voor het element wilt weergeven, klikt of tikt u op het **[!UICONTROL Insights]** tabblad.
+1. Klik op het **[!UICONTROL Insights]** tabblad om gebruiksstatistieken voor het element weer te geven.
 
    De statistieken van het gebruik omvatten het volgende:
 
@@ -424,7 +424,7 @@ Enkele kenmerken die uniek zijn voor een bepaalde kopie van een element, worden 
 
 De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeeltelijke kopie gemaakt wanneer een element wordt gekopieerd.
 
-1. Selecteer een of meer elementen in de [!DNL Assets] interface en tik op het **[!UICONTROL Copy]** pictogram op de werkbalk. U kunt ook de **[!UICONTROL Copy]** snelle actie selecteren op de elementenkaart.
+1. Selecteer een of meer elementen in de [!DNL Assets] interface en klik op het **[!UICONTROL Copy]** pictogram op de werkbalk. U kunt ook de **[!UICONTROL Copy]** snelle actie selecteren op de elementenkaart.
    ![Pictogram kopiëren in de werkbalk Elementen](assets/copy_icon.png)
 
    >[!NOTE]
@@ -437,7 +437,7 @@ De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeelte
    >
    >Als u een element op dezelfde locatie kopieert, wordt automatisch een variatie in de naam gegenereerd. [!DNL Experience Manager] Als u bijvoorbeeld een element met de naam kopieert `Square`, wordt de titel voor de kopie [!DNL Experience Manager] automatisch als titel gegenereerd `Square1`.
 
-1. Klik/tik op het pictogram **[!UICONTROL Paste]** Middelen op de werkbalk.
+1. Click the **[!UICONTROL Paste]** asset icon from the toolbar.
 
    ![Pictogram plakken in de gebruikersinterface voor elementen](assets/chlimage_1-14.png)
    [!DNL Assets] worden vervolgens naar deze locatie gekopieerd.
@@ -450,14 +450,14 @@ De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeelte
 
 1. Navigeer naar de locatie van het element dat u wilt verplaatsen.
 
-1. Select the asset, and tap/click the **[!UICONTROL Move]** icon from the toolbar.
+1. Selecteer het element en klik op het **[!UICONTROL Move]** pictogram op de werkbalk.
    ![Pictogram verplaatsen in de werkbalk voor de gebruikersinterface van elementen](assets/move_icon.png)
 
 1. Voer in de [!UICONTROL Move Assets] wizard een van de volgende handelingen uit:
 
-   * Geef de naam voor het element op nadat het is verplaatst. Tik vervolgens op de knop of klik op **[!UICONTROL Next]** om door te gaan.
+   * Geef de naam voor het element op nadat het is verplaatst. Klik vervolgens **[!UICONTROL Next]** om door te gaan.
 
-   * Tik/klik **[!UICONTROL Cancel]** om het proces te stoppen.
+   * Klik **[!UICONTROL Cancel]** om het proces te stoppen.
    >[!NOTE]
    >
    >* U kunt dezelfde naam opgeven voor het element als er geen element met die naam is op de nieuwe locatie. U moet echter een andere naam gebruiken als u het element verplaatst naar een locatie waar zich een element met dezelfde naam bevindt. Als u dezelfde naam gebruikt, genereert het systeem automatisch een variatie in de naam. Als uw element bijvoorbeeld de naam Vierkant heeft, genereert het systeem de naam Vierkant1 voor de kopie.
@@ -466,31 +466,31 @@ De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeelte
 
 1. Voer in het **[!UICONTROL Select Destination]** dialoogvenster een van de volgende handelingen uit:
 
-   * Navigeer naar de nieuwe locatie voor de elementen en tik/klik vervolgens **[!UICONTROL Next]** om door te gaan.
+   * Navigeer naar de nieuwe locatie voor de elementen en klik vervolgens **[!UICONTROL Next]** om door te gaan.
 
-   * Tik/klik **[!UICONTROL Back]** om terug te keren naar het **[!UICONTROL Rename]** scherm.
+   * Klik **[!UICONTROL Back]** om terug te keren naar het **[!UICONTROL Rename]** scherm.
 
 1. Als de elementen die worden verplaatst, verwijzen naar pagina&#39;s, elementen of verzamelingen, wordt het **[!UICONTROL Adjust References]** tabblad naast het **[!UICONTROL Select Destination]** tabblad weergegeven.
 
    Voer een van de volgende handelingen uit op het **[!UICONTROL Adjust References]** scherm:
 
-   * Geef op welke referenties u wilt aanpassen op basis van de nieuwe details en tik/klik vervolgens om door te gaan **[!UICONTROL Move]** .
+   * Geef op welke verwijzingen op basis van de nieuwe details moeten worden aangepast en klik vervolgens om door te gaan **[!UICONTROL Move]** .
 
    * In de **[!UICONTROL Adjust]** kolom selecteert/deselecteert u verwijzingen naar de elementen.
-   * Tik/klik **[!UICONTROL Back]** om terug te keren naar het **[!UICONTROL Select Destination]** scherm.
+   * Klik **[!UICONTROL Back]** om terug te keren naar het **[!UICONTROL Select Destination]** scherm.
 
-   * Tik/klik **[!UICONTROL Cancel]** om de verplaatsingsbewerking te stoppen.
+   * Klik **[!UICONTROL Cancel]** om de verplaatsingsbewerking te stoppen.
    Als u verwijzingen niet bijwerkt, blijven ze naar het vorige pad van het element wijzen. Als u de referenties aanpast, worden deze bijgewerkt naar het nieuwe middelenpad.
 
 ## Uitvoeringen beheren {#managing-renditions}
 
 1. U kunt uitvoeringen voor een element toevoegen of verwijderen, behalve voor het origineel. Navigeer naar de locatie van het element waaraan u uitvoeringen wilt toevoegen of verwijderen.
 
-1. Tik/klik op het element om de elementpagina te openen.
+1. Klik op het element om de elementpagina te openen.
 
    ![Pagina met middelendetails voor het beheren van uitvoeringen](assets/chlimage_1-15.png)
 
-1. Tik/klik op het pictogram GlobalNav en selecteer een optie in de **[!UICONTROL Renditions]** lijst.
+1. Klik op het pictogram GlobalNav en selecteer een optie in de **[!UICONTROL Renditions]** lijst.
 
    ![Linkerrails naar open menu en optie Vertoningen selecteren](assets/renditions_menu.png)
 
@@ -506,13 +506,13 @@ De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeelte
 
    **Een vertoning verwijderen**
 
-   Selecteer een vertoning in het **[!UICONTROL Renditions]** deelvenster en tik op het pictogram of klik op het **[!UICONTROL Delete Rendition]** pictogram op de werkbalk. Uitvoeringen kunnen niet bulksgewijs worden verwijderd nadat de verwerking van het element is voltooid. Voor afzonderlijke elementen kunt u uitvoeringen handmatig uit de gebruikersinterface verwijderen. Voor meerdere elementen kunt u Experience Manager aanpassen om specifieke vertoningen te verwijderen of de elementen te verwijderen en de verwijderde elementen opnieuw te uploaden.
+   Selecteer een vertoning in het **[!UICONTROL Renditions]** deelvenster en klik op het **[!UICONTROL Delete Rendition]** pictogram op de werkbalk. Uitvoeringen kunnen niet bulksgewijs worden verwijderd nadat de verwerking van het element is voltooid. Voor afzonderlijke elementen kunt u uitvoeringen handmatig uit de gebruikersinterface verwijderen. Voor meerdere elementen kunt u Experience Manager aanpassen om specifieke vertoningen te verwijderen of de elementen te verwijderen en de verwijderde elementen opnieuw te uploaden.
 
    ![Optie om een vertoning te verwijderen](assets/delete_renditionicon.png)
 
    **Een nieuwe uitvoering uploaden**
 
-   Ga naar de pagina met assetdetails voor de asset en tik of klik op het pictogram **[!UICONTROL Add Rendition]** op de werkbalk om een nieuwe uitvoering voor de asset te uploaden.
+   Navigate to the asset details page for the asset, and click the **[!UICONTROL Add Rendition]** icon in the toolbar to upload a new rendition for the asset.
 
    ![Vertoningspictogram toevoegen om nieuwe vertoning te uploaden](assets/chlimage_1-16.png)
 
@@ -544,7 +544,7 @@ Schakel ook de knop forceren verwijderen uit met behulp van een overlay, zodat g
 
 1. Navigeer naar de locatie van de elementen die u wilt verwijderen.
 
-1. Select the asset, and tap/click the **[!UICONTROL Delete]** icon from the toolbar.
+1. Selecteer het element en klik op het **[!UICONTROL Delete]** pictogram op de werkbalk.
 
    ![Pictogram Verwijderen](assets/delete_icon.png)
 
@@ -575,14 +575,14 @@ Zie Elementen [downloaden van Experience Manager](/help/assets/download-assets-f
 
 1. Navigeer naar de locatie van de middelen/map die u wilt publiceren
 
-1. Selecteer de snelle actie **[!UICONTROL Publish]** op de kaart met assets of selecteer de asset en tik of klik op het pictogram **[!UICONTROL Quick Publish]** op de werkbalk.
+1. Either select the **[!UICONTROL Publish]** quick action from the asset card, or select the asset and click the **[!UICONTROL Quick Publish]** icon from the toolbar.
 1. Als het element verwijst naar andere elementen, worden de verwijzingen ervan weergegeven in de wizard. Alleen verwijzingen die niet-gepubliceerd of gewijzigd zijn sinds ze voor het laatst zijn gepubliceerd/niet gepubliceerd, worden weergegeven. Kies de referenties die u wilt publiceren.
 
    >[!NOTE]
    >
    >Lege mappen, die onderdeel zijn van een map die u hebt gepubliceerd, worden niet gepubliceerd.
 
-1. Tik/klik **[!UICONTROL Publish]** om de activering van de elementen te bevestigen.
+1. Klik **[!UICONTROL Publish]** om de activering voor de elementen te bevestigen.
 
 >[!CAUTION]
 >
@@ -592,7 +592,7 @@ Zie Elementen [downloaden van Experience Manager](/help/assets/download-assets-f
 
 1. Navigeer naar de locatie van de map met middelen die u uit de publicatieomgeving wilt verwijderen (publicatie ongedaan maken).
 
-1. Selecteer het element of de map waarvan u de publicatie wilt ongedaan maken, en tik op het **[!UICONTROL Manage Publication]** pictogram of klik op het pictogram op de werkbalk.
+1. Selecteer het element of de map waarvan u de publicatie wilt ongedaan maken en klik op het **[!UICONTROL Manage Publication]** pictogram op de werkbalk.
 
    ![Publicatiepictogram beheren](assets/manage_publication.png)
 
@@ -602,8 +602,8 @@ Zie Elementen [downloaden van Experience Manager](/help/assets/download-assets-f
 
 1. Als u de publicatie van het element later ongedaan wilt maken, selecteert u **[!UICONTROL Unpublish Later]** en selecteert u vervolgens een datum voor het ongedaan maken van de publicatie van het element.
 1. Plan een datum waarop het element niet beschikbaar is in de publicatieomgeving.
-1. Als het element verwijst naar andere elementen, kiest u de verwijzingen die u ongedaan wilt maken. Tik of klik op **[!UICONTROL Unpublish]**.
-1. Tik/klik in het bevestigingsvenster op:
+1. Als het element verwijst naar andere elementen, kiest u de verwijzingen die u ongedaan wilt maken. Klik op **[!UICONTROL Unpublish]**.
+1. Klik in het bevestigingsdialoogvenster op:
 
    * **[!UICONTROL Cancel]** om de handeling te stoppen
    * **[!UICONTROL Unpublish]** om te bevestigen dat de elementen op de opgegeven datum niet gepubliceerd zijn (niet meer beschikbaar in de publicatieomgeving).
@@ -617,7 +617,7 @@ Een gesloten gebruikersgroep (CUG) wordt gebruikt om toegang tot specifieke midd
 
 CUG&#39;s zijn een extra manier om de toegang tot uw elementen te beperken. U kunt ook een aanmeldingspagina voor de map configureren.
 
-1. Selecteer een map in de [!DNL Assets] interface en tik op het [!UICONTROL Properties] pictogram op de werkbalk of klik erop om de eigenschappenpagina weer te geven.
+1. Selecteer een map in de [!DNL Assets] interface en klik op het [!UICONTROL Properties] pictogram op de werkbalk om de pagina met eigenschappen weer te geven.
 1. Voeg op het **[!UICONTROL Permissions]** tabblad leden of groepen toe onder **[!UICONTROL Closed User Group]**.
 
    ![Gebruiker toevoegen aan gesloten gebruikersgroep](assets/add_user.png)
@@ -674,12 +674,12 @@ Met de bewerkingsgereedschappen in de [!DNL Assets] interface kunt u kleine bewe
 
 1. Voer een van de volgende handelingen uit om een element te openen in de bewerkingsmodus:
 
-   * Select the asset and then click/tap the **[!UICONTROL Edit]** icon in the toolbar.
-   * Tik/klik op het **[!UICONTROL Edit]** pictogram dat op een element in de kaartweergave wordt weergegeven.
-   * In the asset page, tap/click the **[!UICONTROL Edit]** icon in the toolbar.
+   * Selecteer het element en klik op het **[!UICONTROL Edit]** pictogram op de werkbalk.
+   * Klik op het **[!UICONTROL Edit]** pictogram dat op een element in de kaartweergave wordt weergegeven.
+   * Klik in de elementpagina op het **[!UICONTROL Edit]** pictogram op de werkbalk.
    ![Pictogram Bewerken in werkbalk](assets/edit_icon.png)
 
-1. Tik of klik op het pictogram **Uitsnijden** om de afbeelding uit te snijden.
+1. Als u de afbeelding wilt uitsnijden, klikt u op het pictogram **Uitsnijden** .
 
    ![Uitsnijdpictogram](assets/chlimage_1-22.png)
 
@@ -696,15 +696,15 @@ Met de bewerkingsgereedschappen in de [!DNL Assets] interface kunt u kleine bewe
 
    ![Pictogrammen ongedaan maken en opnieuw uitvoeren](assets/chlimage_1-25.png)
 
-1. Tik/klik op het betreffende rotatiepictogram om de afbeelding rechtsom of linksom te roteren.
+1. Klik op het juiste rotatiepictogram om de afbeelding rechtsom of linksom te roteren.
 
    ![Pictogrammen rechtsom en linksom roteren](assets/chlimage_1-26.png)
 
-1. Tik/klik op het betreffende pictogram Omdraaien om de afbeelding horizontaal of verticaal om te draaien.
+1. Klik op het juiste pictogram Omdraaien om de afbeelding horizontaal of verticaal om te draaien.
 
    ![Pictogrammen om de afbeelding horizontaal of verticaal om te draaien](assets/chlimage_1-27.png)
 
-1. Tik/klik op het pictogram **Voltooien** om de wijzigingen op te slaan.
+1. Klik op het pictogram **Voltooien** om de wijzigingen op te slaan.
 
    ![Pictogram Voltooien](assets/chlimage_1-28.png)
 
@@ -745,7 +745,7 @@ Videoannotaties worden alleen ondersteund in browsers met HTML5-compatibele vide
 >Voor inhoudsfragmenten worden [annotaties gemaakt in de fragmenteditor](/help/assets/content-fragments-variations.md#annotating-a-content-fragment).
 
 1. Navigeer naar de locatie van het element waaraan u annotaties wilt toevoegen.
-1. Tik/klik op het **[!UICONTROL Annotate]** pictogram op een van de volgende manieren:
+1. Klik op het **[!UICONTROL Annotate]** pictogram op een van de volgende manieren:
 
    * [Snelle acties](/help/assets/managing-assets-touch-ui.md#quick-actions)
    * Vanuit de werkbalk nadat u het element hebt geselecteerd of naar de elementpagina bent genavigeerd
@@ -771,18 +771,18 @@ Videoannotaties worden alleen ondersteund in browsers met HTML5-compatibele vide
    >
    >U kunt meerdere annotaties toevoegen voordat u ze opslaat.
 
-1. Tik/klik **[!UICONTROL Close]** om de annotatiemodus te verlaten.
+1. Klik **[!UICONTROL Close]** om de annotatiemodus te verlaten.
 1. Meld u aan bij Aaron MacDonald&#39;s referenties om de melding weer te geven en klik op het [!DNL Assets] **[!UICONTROL Notifications]** pictogram om de melding weer te geven.
 
    >[!NOTE]
    >
    >U kunt ook annotaties toevoegen aan video-elementen. Tijdens het annoteren van video&#39;s pauzeert de speler zodat u notities kunt aanbrengen in een frame. Zie Video-elementen [beheren voor meer informatie](/help/assets/managing-video-assets.md).
 
-1. Als u een andere kleur wilt kiezen, zodat u onderscheid kunt maken tussen gebruikers, klikt of tikt u op het pictogram Profiel en klikt/tikt u op **[!UICONTROL My Preferences]**.
+1. Als u een andere kleur wilt kiezen, zodat u onderscheid kunt maken tussen gebruikers, klikt u op het pictogram Profiel en klikt u **[!UICONTROL My Preferences]**.
 
    ![Selecteer het pictogram Gebruikersprofiel en kies Mijn voorkeuren om Gebruikersvoorkeuren te openen](assets/User-profile-preferences.png)
 
-   Geef de gewenste kleur op in het vak **[!UICONTROL Annotation Color]** en klik of tik op **[!UICONTROL Accept]**.
+   Specify the desired color in the **[!UICONTROL Annotation Color]** box and then click **[!UICONTROL Accept]**.
 
    ![Selecteer een notitiekleur in de gebruikersvoorkeuren om de persoonlijke kleur van de gebruiker in te stellen](assets/Annotation-color.png)
 
@@ -794,7 +794,7 @@ Videoannotaties worden alleen ondersteund in browsers met HTML5-compatibele vide
 
 1. Als u opgeslagen annotaties voor een element wilt weergeven, navigeert u naar de locatie van het element en opent u de elementpagina voor het element.
 
-1. Tik/klik op het pictogram GlobalNav en kies een optie in de **[!UICONTROL Timeline]** lijst.
+1. Klik op het pictogram GlobalNav en kies een optie in de **[!UICONTROL Timeline]** lijst.
 
    ![Opties beschikbaar op pictogram GlobalNav](assets/chlimage_1-35.png)
 
@@ -802,11 +802,11 @@ Videoannotaties worden alleen ondersteund in browsers met HTML5-compatibele vide
 
    ![Alle lijsten weergeven in tijdlijn](assets/chlimage_1-36.png)
 
-   Tik op een opmerking of klik op een opmerking in het **[!UICONTROL Timeline]** deelvenster om de bijbehorende annotatie in de afbeelding weer te geven.
+   Klik op een opmerking in het **[!UICONTROL Timeline]** deelvenster om de bijbehorende annotatie in de afbeelding weer te geven.
 
    ![Deelvenster Tijdlijn om annotatie in afbeelding weer te geven](assets/chlimage_1-37.png)
 
-   Tik/klik **[!UICONTROL Delete]** om een bepaalde opmerking te verwijderen.
+   Klik **[!UICONTROL Delete]** om een bepaalde opmerking te verwijderen.
 
 ### Annotaties afdrukken {#printing-annotations}
 
@@ -814,7 +814,7 @@ Als een element annotaties heeft of een revisiewerkstroom heeft ondergaan, kunt 
 
 U kunt ook alleen de annotaties of de revisiestatus afdrukken.
 
-Tik op het pictogram of klik op het pictogram en volg de instructies in de wizard om de annotaties en de revisiestatus af te drukken. **[!UICONTROL Print]** Het **[!UICONTROL Print]** pictogram wordt alleen op de werkbalk weergegeven als aan het element ten minste één aantekening of revisiestatus is toegewezen.
+Als u de annotaties en de revisiestatus wilt afdrukken, klikt u op het **[!UICONTROL Print]** pictogram en volgt u de instructies in de wizard. Het **[!UICONTROL Print]** pictogram wordt alleen op de werkbalk weergegeven als aan het element ten minste één aantekening of revisiestatus is toegewezen.
 
 1. Open vanuit de [!DNL Assets] interface de voorvertoningspagina voor een element.
 1. Voer een van de volgende handelingen uit:
@@ -830,7 +830,7 @@ Tik op het pictogram of klik op het pictogram en volg de instructies in de wizar
 
    ![Als u alleen de revisiestatus van annotatie wilt afdrukken, selecteert u deze in de tijdlijn](assets/chlimage_1-39.png)
 
-1. Tik of klik op het pictogram **[!UICONTROL Print]** op de werkbalk.
+1. Click the **[!UICONTROL Print]** icon from the toolbar.
 
    ![Afdrukpictogram in werkbalk](assets/chlimage_1-40.png)
 
@@ -844,7 +844,7 @@ Tik op het pictogram of klik op het pictogram en volg de instructies in de wizar
    >
    >Lengte annotaties worden mogelijk niet correct weergegeven in het PDF-bestand. Voor een optimale rendering raadt Adobe aan om annotaties te beperken tot 50 woorden.
 
-1. Tik of klik op **[!UICONTROL Print]**. Afhankelijk van de optie die u kiest in stap 2, geeft de gegenereerde PDF de annotaties/status op de opgegeven positie weer. Als u bijvoorbeeld zowel annotaties als de revisiestatus wilt afdrukken met de instelling **Linksboven**, lijkt de gegenereerde uitvoer op het PDF-bestand dat hier wordt weergegeven.
+1. Klik op **[!UICONTROL Print]**. Afhankelijk van de optie die u kiest in stap 2, geeft de gegenereerde PDF de annotaties/status op de opgegeven positie weer. Als u bijvoorbeeld zowel annotaties als de revisiestatus wilt afdrukken met de instelling **Linksboven**, lijkt de gegenereerde uitvoer op het PDF-bestand dat hier wordt weergegeven.
 
    ![Annotatie en revisiestatus in gegenereerde PDF](assets/chlimage_1-42.png)
 
@@ -867,7 +867,7 @@ Als een element annotaties in vreemde talen bevat (vooral niet-Latijnse talen), 
 1. Open de configuratiepagina CQ-DAM-Handler-Gibson Font Manager Service via de URL `https://[aem_server]:[port]/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl`.
 1. Voer een van de volgende handelingen uit om CQ-DAM-Handler-Gibson Font Manager Service te configureren:
 
-   * Geef in de directory System Fonts (Systeemlettertypen) het volledige pad naar de map Fonts op uw systeem op. Als u bijvoorbeeld een Mac-gebruiker bent, kunt u het pad opgeven als */Bibliotheek/Fonts* in de optie Systeemlettertypen. [!DNL Experience Manager] haalt de lettertypen op uit deze map.
+   * Geef in de directory Systeemlettertypen het volledige pad naar de map met lettertypen op uw systeem op. Als u bijvoorbeeld een Mac-gebruiker bent, kunt u het pad opgeven als */Bibliotheek/Fonts* in de optie Systeemlettertypen. [!DNL Experience Manager] haalt de lettertypen op uit deze map.
    * Maak een map met de naam `fonts` in de ``crx-quickstart`` map. CQ-DAM-Handler-Gibson Font Manager Service haalt de lettertypen automatisch op de locatie op `crx-quickstart/fonts`. U kunt dit standaardpad overschrijven vanuit de directory Adobe Server Fonts.
 
    * Maak een nieuwe map voor lettertypen op uw systeem en sla de gewenste lettertypen op in de map. Geef vervolgens het volledige pad naar die map op in de directory met lettertypen voor klanten.

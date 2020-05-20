@@ -3,10 +3,10 @@ title: Metagegevens van vele elementen en verzamelingen beheren in Adobe Enterpr
 description: Bewerk de metagegevens van veel elementen en verzamelingen tegelijk om wijzigingen in algemene metagegevens snel door te geven.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
 workflow-type: tm+mt
-source-wordcount: '482'
-ht-degree: 12%
+source-wordcount: '479'
+ht-degree: 11%
 
 ---
 
@@ -30,7 +30,7 @@ Gebruik de schema-editor om de pagina met eigenschappen van metagegevens aan te 
 
 1. Navigeer in de gebruikersinterface Elementen naar de locatie van de elementen die u wilt bewerken.
 1. Selecteer de elementen waarvan u de algemene eigenschappen wilt bewerken.
-1. Tik op of klik op het **[!UICONTROL Properties]** pictogram op de werkbalk om de eigenschappenpagina voor de geselecteerde elementen te openen.
+1. Klik in de werkbalk op het **[!UICONTROL Properties]** pictogram om de eigenschappenpagina voor de geselecteerde elementen te openen.
 
    >[!NOTE]
    >
@@ -45,9 +45,9 @@ Gebruik de schema-editor om de pagina met eigenschappen van metagegevens aan te 
    >* Schakel boven aan de lijst met elementen het selectievakje in **[!UICONTROL Title]** om te schakelen tussen het selecteren van de elementen en het wissen van de lijst.
 
 
-1. Als u een ander metagegevensschema voor de elementen wilt selecteren, tikt u op het **[!UICONTROL Settings]** pictogram of klikt u op het pictogram op de werkbalk en selecteert u het gewenste schema.
+1. Als u een ander metagegevensschema voor de elementen wilt selecteren, klikt u op het **[!UICONTROL Settings]** pictogram op de werkbalk en selecteert u het gewenste schema.
 1. Sla de wijzigingen op.
-1. Selecteer **[!UICONTROL Append mode]** om de nieuwe metadata toe te voegen aan de bestaande metadata in velden die meerdere waarden bevatten. Als u deze optie niet selecteert, worden de bestaande metadata in de velden vervangen door de nieuwe metadata. Tik of klik op **[!UICONTROL Submit]**.
+1. Selecteer **[!UICONTROL Append mode]** om de nieuwe metadata toe te voegen aan de bestaande metadata in velden die meerdere waarden bevatten. Als u deze optie niet selecteert, worden de bestaande metadata in de velden vervangen door de nieuwe metadata. Klik op **[!UICONTROL Submit]**.
 
    >[!CAUTION]
    >

@@ -3,9 +3,9 @@ title: 'Metagegevensschema''s om de indeling van de pagina met eigenschappen van
 description: Het metagegevensschema definieert de indeling van de pagina met eigenschappen en de eigenschappen van metagegevens die voor elementen worden weergegeven. Leer hoe u een aangepast metagegevensschema kunt maken, het schema voor metagegevens kunt bewerken en hoe u het schema voor metagegevens op elementen kunt toepassen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 265fc8fa6b4d835241b1213d95beaa17db5798ac
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
 workflow-type: tm+mt
-source-wordcount: '2526'
+source-wordcount: '2522'
 ht-degree: 4%
 
 ---
@@ -19,11 +19,11 @@ In [!DNL Adobe Experience Manager Assets]de schema&#39;s staan specifieke velden
 
 Ga als volgt te werk om de pagina met eigenschappen voor een element weer te geven en te bewerken:
 
-1. Klik of tik op het **[!UICONTROL View Properties]** pictogram van Snelle acties op de middelentegel in de kaartweergave.
+1. Klik op het **[!UICONTROL View Properties]** pictogram van Snelle handelingen op het element Elementen in de kaartweergave.
 
    ![Snelle acties voor elementblok](assets/chlimage_1-170.png)
 
-   U kunt ook een element selecteren en vervolgens op het [!UICONTROL Properties] pictogram op de werkbalk klikken of tikken.
+   U kunt ook een element selecteren en vervolgens op het [!UICONTROL Properties] pictogram op de werkbalk klikken.
 
 1. U kunt de verschillende bewerkbare eigenschappen van metagegevens bewerken onder de beschikbare tabbladen. U kunt het element echter niet wijzigen [!UICONTROL Type] op het [!UICONTROL Basic] tabblad Eigenschappen.
 

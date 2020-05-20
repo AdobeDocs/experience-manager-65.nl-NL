@@ -3,7 +3,7 @@ title: '[!DNL Adobe Experience Manager Assets] integreren met [!DNL Adobe InDesi
 description: Leer hoe u [!DNL Adobe Experience Manager Assets] kunt integreren met [!DNL Adobe InDesign Server].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5f3af7041029a1b4dd1cbb4c65bd488b62c7e10c
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
 workflow-type: tm+mt
 source-wordcount: '1548'
 ht-degree: 1%
@@ -166,7 +166,7 @@ In a standard [!DNL Experience Manager] installation the following is available:
 Als [!DNL InDesign Server] en [!DNL Experience Manager] lopen op verschillende gastheren of één van beiden of beide toepassingen niet op standaardhavens lopen, vorm [!UICONTROL Day CQ Link Externalizer] om de gastheernaam, de haven, en de inhoudspad voor [!DNL InDesign Server]. te plaatsen.
 
 1. Open de webconsole op `https://[aem_server]:[port]/system/console/configMgr`.
-1. Zoek de configuratie **[!UICONTROL Day CQ Link Externalizer]****[!UICONTROL Edit]** en tik om deze te openen.
+1. Zoek de configuratie **[!UICONTROL Day CQ Link Externalizer]** en klik **[!UICONTROL Edit]** om deze te openen.
 1. Geef de hostnaam en het contextpad voor de toepassing op [!DNL Indesign Server] en klik op **Opslaan**.
 
    ![chlimage_1-97](assets/chlimage_1-290.png)

@@ -3,7 +3,10 @@ title: Een URL naar gedeelde elementen genereren
 description: In dit artikel wordt beschreven hoe u elementen, mappen en verzamelingen in AEM Assets als een URL naar externe partijen kunt delen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+workflow-type: tm+mt
+source-wordcount: '1129'
+ht-degree: 4%
 
 ---
 
@@ -25,9 +28,9 @@ Gebruik het dialoogvenster Koppelen om de URL te genereren voor elementen die u 
 >Voordat u een koppeling met gebruikers deelt, moet u ervoor zorgen dat Day CQ Mail Service is geconfigureerd. Er treedt een fout op als u een koppeling probeert te delen zonder eerst de Day CQ Mail Service [te](/help/assets/link-sharing.md#configmailservice)configureren.
 
 1. Selecteer in de gebruikersinterface Elementen het element dat u wilt delen als een koppeling.
-1. Klik/tik op de werkbalk op Koppeling **** delen ![assets_share](assets/assets_share.png).
+1. Klik op de werkbalk op **[!UICONTROL Share Link]** assets_share ![](assets/assets_share.png).
 
-   Er wordt automatisch een elementkoppeling gemaakt in het veld Koppeling **** delen. Kopieer deze koppeling en deel deze met de gebruikers. De standaardvervaltijd voor de verbinding is één dag.
+   In het **[!UICONTROL Share Link]** veld wordt automatisch een elementkoppeling gemaakt. Kopieer deze koppeling en deel deze met de gebruikers. De standaardvervaltijd voor de verbinding is één dag.
 
    ![Dialoogvenster met de koppeling Delen](assets/Link-sharing-dialog-box.png)
 
@@ -47,11 +50,11 @@ Gebruik het dialoogvenster Koppelen om de URL te genereren voor elementen die u 
    >[!NOTE]
    Als een gedeeld element naar een andere locatie wordt verplaatst, werkt de koppeling niet meer. Maak de koppeling opnieuw en deel deze opnieuw met de gebruikers.
 
-1. Ga in de AEM-interface naar **[!UICONTROL Gereedschappen]** > **[!UICONTROL Bewerkingen]** > **[!UICONTROL Webconsole]**.
+1. Ga in de AEM-interface naar **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 
-1. Open de **[!UICONTROL Configuratie van de Verbinding van CQ van de Dag External]** en wijzig de volgende eigenschappen op het gebied van **[!UICONTROL Domeinen]** met de waarden die tegen `local`, `author`, en `publish`worden vermeld. Geef voor de eigenschappen `local` en `author` de URL op voor respectievelijk de lokale instantie en de auteur. Zowel `local` als `author` eigenschappen hebben dezelfde waarde als u één instantie van de Auteur van de Manager van de Ervaring in werking stelt. Geef `publish`bijvoorbeeld de URL op voor het publicatieexemplaar van Experience Manager.
+1. Open de **[!UICONTROL Day CQ Link Externalizer]** configuratie en wijzig de volgende eigenschappen op het **[!UICONTROL Domains]** gebied met de waarden die tegen `local`, `author`, en `publish`worden vermeld. Geef voor de eigenschappen `local` en `author` de URL op voor respectievelijk de lokale instantie en de auteur. Zowel `local` als `author` eigenschappen hebben dezelfde waarde als u één instantie van de Auteur van de Manager van de Ervaring in werking stelt. Geef `publish`bijvoorbeeld de URL op voor het publicatieexemplaar van Experience Manager.
 
-1. In the email address box of the **[!UICONTROL Link Sharing]** dialog, type the email ID of the user you want to share the link with. U kunt de koppeling ook delen met meerdere gebruikers.
+1. Typ in het vak E-mailadres van het dialoogvenster **[!UICONTROL Link Sharing]** de e-mail-id van de gebruiker met wie u de koppeling wilt delen. U kunt de koppeling ook delen met meerdere gebruikers.
 
    Als de gebruiker lid is van uw organisatie, selecteert u de e-mailid van de gebruiker in de voorgestelde e-mailadressen die worden weergegeven in de lijst onder het invoergebied. Voor een externe gebruiker typt u de volledige e-mailid en selecteert u deze in de lijst.
 
@@ -59,51 +62,51 @@ Gebruik het dialoogvenster Koppelen om de URL te genereren voor elementen die u 
 
    ![Koppelingen naar elementen rechtstreeks delen via het dialoogvenster Koppelen](assets/Asset-Sharing-LinkShareDialog.png)
 
-   *Afbeelding: Koppelingen naar elementen rechtstreeks delen via het dialoogvenster[!UICONTROL Delen]van koppeling.*
+   *Afbeelding: Koppelingen naar elementen rechtstreeks vanuit het[!UICONTROL Link Sharing]dialoogvenster delen.*
 
    >[!NOTE]
-   Als u een e-mailadres invoert van een gebruiker die geen lid is van uw organisatie, wordt het woord [!UICONTROL Externe Gebruiker] vooraf voorzien van de e-mailid van de gebruiker.
+   Als u een e-mailadres invoert van een gebruiker die geen lid is van uw organisatie, [!UICONTROL External User] worden de woorden vooraf voorzien van de e-mailid van de gebruiker.
 
-1. Voer in het veld **[!UICONTROL Onderwerp]** een onderwerp in voor het element dat u wilt delen.
+1. Voer in het **[!UICONTROL Subject]** veld een onderwerp in voor het element dat u wilt delen.
 
-1. Voer in het veld **[!UICONTROL Bericht]** een optioneel bericht in.
+1. Voer in het **[!UICONTROL Message]** veld een optioneel bericht in.
 
-1. Geef in het veld **[!UICONTROL Verlopen]** een vervaldatum en -tijd voor de koppeling op met de datumkiezer. De vervaldatum wordt standaard ingesteld voor een week vanaf de datum waarop u de koppeling deelt.
+1. Geef in het **[!UICONTROL Expiration]** veld met de datumkiezer een vervaldatum en -tijd voor de koppeling op. De vervaldatum wordt standaard ingesteld voor een week vanaf de datum waarop u de koppeling deelt.
 
    ![Vervaldatum van gedeelde koppeling instellen](assets/Set-shared-link-expiration.png)
 
-1. Als u gebruikers de oorspronkelijke afbeelding samen met de uitvoeringen wilt laten downloaden, selecteert u **[!UICONTROL Downloaden van origineel bestand]** toestaan.
+1. Selecteer **[!UICONTROL Allow download of original file]**.
 
    >[!NOTE]
    Standaard kunnen gebruikers alleen de uitvoeringen downloaden van het element dat u als koppeling deelt.
 
-1. Klik op **[!UICONTROL Delen]**. Een bericht bevestigt dat de koppeling via e-mail met de gebruikers wordt gedeeld.
-1. Als u het gedeelde element wilt weergeven, klikt of tikt u op de koppeling in het e-mailbericht dat naar de gebruiker is verzonden. Het gedeelde element wordt weergegeven op de pagina **[!UICONTROL Adobe Marketing Cloud]** .
+1. Klik op **[!UICONTROL Share]**. Een bericht bevestigt dat de koppeling via e-mail met de gebruikers wordt gedeeld.
+1. Klik op de koppeling in de e-mail die naar de gebruiker is verzonden om het gedeelde element weer te geven. Het gedeelde element wordt op de **[!UICONTROL Adobe Marketing Cloud]** pagina weergegeven.
 
    ![chlimage_1-260](assets/chlimage_1-545.png)
 
-   Als u wilt schakelen naar de lijstweergave, klikt of tikt u op de layoutoptie op de werkbalk.
+   Als u wilt schakelen naar de lijstweergave, klikt u op de layoutoptie op de werkbalk.
 
-1. Als u een voorvertoning van de asset wilt genereren, klikt of tikt u op de gedeelde asset. To close the preview and return to the **[!UICONTROL Marketing Cloud]** page, click/tap **[!UICONTROL Back]** in the toolbar. If you have shared a folder, click/tap **[!UICONTROL Parent Folder]** to return to the parent folder.
+1. Klik op het gedeelde element om een voorvertoning van het element te genereren. To close the preview and return to the **[!UICONTROL Marketing Cloud]** page, click **[!UICONTROL Back]** in the toolbar. If you have shared a folder, click **[!UICONTROL Parent Folder]** to return to the parent folder.
 
    ![chlimage_1-261](assets/chlimage_1-546.png)
 
    >[!NOTE]
    AEM ondersteunt het genereren van een voorvertoning van elementen van deze MIME-typen: JPG, PNG, GIF, BMP, INDD, PDF en PPT. U kunt alleen de elementen van de andere MIME-typen downloaden.
 
-1. Als u het gedeelde element wilt downloaden, tikt u op **[!UICONTROL Selecteren]** op de werkbalk, klikt of tikt u op het element en klikt of tikt u op **[!UICONTROL Downloaden]** op de werkbalk.
+1. Als u het gedeelde element wilt downloaden, klikt u **[!UICONTROL Select]** op de werkbalk, klikt u op het element en vervolgens klikt u **[!UICONTROL Download]** op de werkbalk.
 
    ![chlimage_1-262](assets/chlimage_1-547.png)
 
-1. Als u de elementen die u hebt gedeeld als koppelingen wilt weergeven, gaat u naar de interface Elementen en tikt u op het logo van Experience Manager. Kies **[!UICONTROL Navigatie]** in de lijst om het navigatievenster weer te geven.
-1. From the Navigation pane, choose **[!UICONTROL Shared Links]** to display a list of shared assets.
-1. Als u een element niet meer wilt delen, selecteert u het en tikt u op Delen **[!UICONTROL opheffen]** of klikt u op de werkbalk. Hierna volgt een bevestigingsbericht. De vermelding voor het element wordt uit de lijst verwijderd.
+1. Als u de elementen die u hebt gedeeld als koppelingen wilt weergeven, gaat u naar de interface Elementen en klikt u op het logo van Experience Manager. Kies een optie **[!UICONTROL Navigation]** in de lijst om het navigatievenster weer te geven.
+1. Kies in het navigatievenster **[!UICONTROL Shared Links]** als u een lijst met gedeelde assets wilt weergeven.
+1. Als u een element niet wilt delen, selecteert u het en klikt u op **[!UICONTROL Unshare]** de werkbalk. Hierna volgt een bevestigingsbericht. De vermelding voor het element wordt uit de lijst verwijderd.
 
 ## CQ-mailservice op dag configureren {#configmailservice}
 
-1. Navigeer op de startpagina van Experience Manager naar **[!UICONTROL Extra]** > **[!UICONTROL Bewerkingen]** > **[!UICONTROL Webconsole]**.
-1. Zoek vanuit de lijst met services de **[!UICONTROL Day CQ Mail Service]**.
-1. Tap **[!UICONTROL Edit]** beside the service, and configure the following parameters for **[!UICONTROL Day CQ Mail Service]** with the details mentioned against their names:
+1. Navigeer op de startpagina van Experience Manager naar **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
+1. Van de lijst van de diensten, bepaal de plaats **[!UICONTROL Day CQ Mail Service]**.
+1. Click **[!UICONTROL Edit]** beside the service, and configure the following parameters for **[!UICONTROL Day CQ Mail Service]** with the details mentioned against their names:
 
    * hostnaam SMTP-server: hostnaam e-mailserver
    * SMTP-serverpoort: e-mailserverpoort
@@ -111,15 +114,15 @@ Gebruik het dialoogvenster Koppelen om de URL te genereren voor elementen die u 
    * SMTP-wachtwoord: wachtwoord e-mailserver
    ![chlimage_1-263](assets/chlimage_1-548.png)
 
-1. Klik op **[!UICONTROL Opslaan]** of tik op Opslaan.
+1. Klik op **[!UICONTROL Save]**.
 
 ## Maximale gegevensgrootte configureren {#maxdatasize}
 
-Wanneer u elementen downloadt van de koppeling die wordt gedeeld met de functie voor het delen van koppelingen, comprimeert AEM de hiërarchie van elementen uit de gegevensopslagruimte en retourneert het element vervolgens in een ZIP-bestand. Bij gebrek aan beperkingen van de hoeveelheid gegevens die in een ZIP-bestand kan worden gecomprimeerd, worden enorme hoeveelheden gegevens gecomprimeerd, waardoor fouten in het geheugen in JVM worden veroorzaakt. Om het systeem van een potentiële ontkenning van de dienstaanval toe te schrijven aan deze situatie te beveiligen, vorm de maximumgrootte gebruikend de **[!UICONTROL Max (ongecomprimeerde)]** parameter van de Grootte van de Inhoud voor [!UICONTROL Dag CQ DAM Adhoc Servlet] van de Volmacht van het Aandeel van Activa in de Manager van de Configuratie. Als de niet-gecomprimeerde grootte van het element de geconfigureerde waarde overschrijdt, worden de verzoeken om het downloaden van het element afgewezen. De standaardwaarde is 100 MB.
+Wanneer u elementen downloadt van de koppeling die wordt gedeeld met de functie voor het delen van koppelingen, comprimeert AEM de hiërarchie van elementen uit de opslagplaats en retourneert het element vervolgens in een ZIP-bestand. Bij gebrek aan beperkingen van de hoeveelheid gegevens die in een ZIP-bestand kan worden gecomprimeerd, worden enorme hoeveelheden gegevens gecomprimeerd, waardoor fouten in het geheugen in JVM worden veroorzaakt. Om het systeem van een potentiële ontkenning van de dienstaanval toe te schrijven aan deze situatie te beveiligen, vorm de maximumgrootte gebruikend de **[!UICONTROL Max Content Size (uncompressed)]** parameter voor [!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet] in de Manager van de Configuratie. Als de niet-gecomprimeerde grootte van het element de geconfigureerde waarde overschrijdt, worden de verzoeken om het downloaden van het element afgewezen. De standaardwaarde is 100 MB.
 
-1. Klik of tik op het AEM-logo en ga vervolgens naar **[!UICONTROL Gereedschappen]** > **[!UICONTROL Bewerkingen]** > **[!UICONTROL Webconsole]**.
-1. Zoek in de webconsole de configuratie van de **[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]** .
-1. Open de configuratie van **[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]** in de bewerkingsmodus en wijzig de waarde van de parameter **[!UICONTROL Max Content Size (niet-gecomprimeerd)]**.
+1. Click the AEM logo and then go to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
+1. Van de Console van het Web, bepaal de plaats van de **[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]** configuratie.
+1. Open de **[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]** configuratie in geef wijze uit, en wijzig de waarde van de **[!UICONTROL Max Content Size (uncompressed)]** parameter.
 
    ![chlimage_1-264](assets/chlimage_1-549.png)
 

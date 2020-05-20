@@ -10,7 +10,10 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 2c263c0d-2521-49df-88ba-f304a25af8ab
 translation-type: tm+mt
-source-git-commit: 29328ff7fde4ed0e7f9728af1be911133259dc6c
+source-git-commit: 215f062f80e7abfe35698743ce971394d01d0ed6
+workflow-type: tm+mt
+source-wordcount: '844'
+ht-degree: 0%
 
 ---
 
@@ -51,6 +54,15 @@ U kunt zien hoe dit werkt in een geografisch gedistribueerde implementatie met M
 
 
 ## Het vormen van Encapsulated Token {#configuring-the-encapsulated-token}
+
+>[!NOTE]
+>Alle authentificatiemanagers die gebruikers synchroniseren en zich op symbolische authentificatie (zoals SAML &amp; OAuth) baseren zullen slechts met ingekapselde tokens werken als:
+>
+>* Vaste sessies zijn ingeschakeld, of
+   >
+   >
+* Gebruikers worden al in AEM gemaakt wanneer de synchronisatie start. Dit betekent dat ingekapselde tokens niet zullen worden gesteund in situaties waar de managers gebruikers tijdens het synchronisatieproces **creëren** .
+
 
 Er zijn een paar dingen u in overweging moet nemen wanneer het vormen van Encapsulated Token:
 

@@ -3,10 +3,10 @@ title: Een persoonlijke map maken en delen in AEM
 description: Leer hoe u een persoonlijke map maakt in de middelen van Adobe Experience Manager (AEM) en deze deelt met andere gebruikers en hoe u hun verschillende rechten toekent.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 02bd337271f0039b354ada2899198f5654f9e8bf
+source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 5%
+source-wordcount: '494'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ U kunt een persoonlijke map maken in de gebruikersinterface van Adobe Experience
 > De persoonlijke omslag heeft minstens één lid met de rol van de Eigenaar.
 
 
-1. Tik in de middelenconsole op de werkbalk of klik op **[!UICONTROL Create]** deze knop en kies een optie in het **[!UICONTROL Folder]** menu.
+1. Klik in de middelenconsole op **[!UICONTROL Create]** de werkbalk en kies een optie in het **[!UICONTROL Folder]** menu.
 
    ![Map met elementen maken](assets/Create-folder.png)
 
@@ -28,11 +28,11 @@ U kunt een persoonlijke map maken in de gebruikersinterface van Adobe Experience
 
    ![Schakel het selectievakje Privé in om de map privé te maken](assets/private-folder.png)
 
-1. Tik of klik op **[!UICONTROL Create]**. Er wordt een privémap gemaakt in de gebruikersinterface.
+1. Klik op **[!UICONTROL Create]**. Er wordt een privémap gemaakt in de gebruikersinterface.
 
    ![chlimage_1-413](assets/chlimage_1-413.png)
 
-1. Als u de map wilt delen met andere gebruikers en aan de gebruikers rechten wilt toewijzen, selecteert u de map en klikt of tikt u op het pictogram **[!UICONTROL Properties]** op de werkbalk.
+1. To share the folder with other users and the assign privileges to them, select the folder, and click the **[!UICONTROL Properties]** icon from the toolbar.
 
    ![chlimage_1-414](assets/chlimage_1-414.png)
 
@@ -58,11 +58,11 @@ U kunt een persoonlijke map maken in de gebruikersinterface van Adobe Experience
 
    ![chlimage_1-416](assets/chlimage_1-416.png)
 
-1. Tik/klik op het pictogram Melding om de lijst met meldingen te openen.
+1. Klik op het pictogram Melding om de lijst met meldingen te openen.
 
    ![Lijst van kennisgevingen](assets/Assets-Notification.png)
 
-1. Klik of tik op de vermelding voor de privémap die door de beheerder wordt gedeeld om de map te openen.
+1. Klik op de vermelding voor de privémap die door de beheerder wordt gedeeld om de map te openen.
 
 >[!NOTE]
 >

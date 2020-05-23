@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: f69db472-9f5c-4c0d-9292-2920ef69feeb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cef5251d6bd72a6fd352f18e31d3f9d787e4320e
+source-git-commit: 4c4a0b1a76f44dcf1084a4651194e60735bc5aea
 workflow-type: tm+mt
-source-wordcount: '1906'
+source-wordcount: '1915'
 ht-degree: 0%
 
 ---
@@ -259,6 +259,10 @@ Deze stap wordt herhaald zolang de volgende tag een `cq:movedTo` eigenschap heef
 * Als u de wijziging wilt publiceren wanneer een tag is verplaatst of samengevoegd, moeten het `cq:Tag` knooppunt en alle bijbehorende back-ups worden gerepliceerd: dit wordt automatisch gedaan wanneer de markering in de console van het markeringsbeleid wordt geactiveerd.
 
 * Later worden de &#39;oude&#39; verwijzingen automatisch verwijderd als de `cq:tags` eigenschap van de pagina wordt bijgewerkt. Dit wordt geactiveerd omdat het omzetten van een verplaatste tag via de API de doeltag retourneert, waardoor de doeltag-id wordt opgegeven.
+
+> [!NOTE]
+>
+> Het verplaatsen van tags verschilt van het migreren van tags.
 
 ## Tags migreren {#tags-migration}
 

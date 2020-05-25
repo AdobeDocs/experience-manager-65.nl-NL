@@ -10,7 +10,10 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 032aea1f-0105-4299-8d32-ba6bee78437f
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 1493b301ecf4c25f785495e11ead352de600ddb7
+workflow-type: tm+mt
+source-wordcount: '893'
+ht-degree: 0%
 
 ---
 
@@ -65,7 +68,7 @@ Tag tag = tagManager.resolve("my/tag"); // for existing tags
 Tag tag = tagManager.createTag("my/tag"); // for new tags
 ```
 
-Voor de op JCR-Gebaseerde implementatie, die kaarten `Tags` op JCR `Nodes`, kunt u het `adaptTo` mechanisme van Sling direct gebruiken als u het middel (b.v. `/etc/tags/default/my/tag`) hebt:
+Voor de op JCR-Gebaseerde implementatie, die kaarten `Tags` op JCR `Nodes`, kunt u het `adaptTo` mechanisme van Sling direct gebruiken als u het middel (b.v. `/content/cq:tags/default/my/tag`) hebt:
 
 ```java
 Tag tag = resource.adaptTo(Tag.class);
@@ -131,7 +134,7 @@ replicator.replicate(session, replicationActionType, tagPath);
 
 ## De opschoonfunctie voor tags {#the-tag-garbage-collector}
 
-De opschoonfunctie voor tags is een service op de achtergrond die verborgen en ongebruikte tags opruimt. Verborgen en ongebruikte tags zijn onderliggende tags `/etc/tags` die een `cq:movedTo` eigenschap hebben en niet worden gebruikt op een inhoudsknooppunt. Het aantal is nul. Door dit lazy schrappingsproces te gebruiken, moet de inhoudsknoop (d.w.z. het `cq:tags` bezit) niet als deel van de beweging of de fusieverrichting worden bijgewerkt. De verwijzingen in het `cq:tags` bezit worden automatisch bijgewerkt wanneer het `cq:tags` bezit wordt bijgewerkt, bijvoorbeeld door de dialoog van de pagina eigenschappen.
+De opschoonfunctie voor tags is een service op de achtergrond die verborgen en ongebruikte tags opruimt. Verborgen en ongebruikte tags zijn onderliggende tags `/content/cq:tags` die een `cq:movedTo` eigenschap hebben en niet worden gebruikt op een inhoudsknooppunt. Het aantal is nul. Door dit lazy schrappingsproces te gebruiken, moet de inhoudsknoop (d.w.z. het `cq:tags` bezit) niet als deel van de beweging of de fusieverrichting worden bijgewerkt. De verwijzingen in het `cq:tags` bezit worden automatisch bijgewerkt wanneer het `cq:tags` bezit wordt bijgewerkt, bijvoorbeeld door de dialoog van de pagina eigenschappen.
 
 De opschoonfunctie voor tags wordt standaard eenmaal per dag uitgevoerd. Dit kan worden gevormd bij:
 
@@ -187,7 +190,7 @@ Bij het labelen hangt de lokalisatie af van de context, aangezien de tag `titles
 
 In de volgende procedure wordt beschreven hoe u een nieuwe taal (Fins) kunt toevoegen aan het dialoogvenster **Tags bewerken** :
 
-1. Bewerk in **CRXDE** de eigenschap voor meerdere waarden `languages` van het knooppunt `/etc/tags`.
+1. Bewerk in **CRXDE** de eigenschap voor meerdere waarden `languages` van het knooppunt `/content/cq:tags`.
 
 1. Voeg toe `fi_fi` - die de Finse landinstelling vertegenwoordigt - en sla de wijzigingen op.
 

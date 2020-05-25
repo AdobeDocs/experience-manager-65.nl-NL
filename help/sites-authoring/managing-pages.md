@@ -1,6 +1,6 @@
 ---
-title: Pagina's maken en ordenen
-seo-title: Pagina's maken en ordenen
+title: Pagina's maken en indelen
+seo-title: Pagina's maken en indelen
 description: Pagina's maken en beheren met AEM
 seo-description: Pagina's maken en beheren met AEM
 uuid: d2989c42-b500-4256-b779-9667a380b885
@@ -11,12 +11,15 @@ content-type: reference
 discoiquuid: e637ba54-7ce1-414f-9558-1d758d05877a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+source-git-commit: 13e34a6df8a513a1654bc5277539b924c809ab8a
+workflow-type: tm+mt
+source-wordcount: '2349'
+ht-degree: 4%
 
 ---
 
 
-# Pagina&#39;s maken en ordenen{#creating-and-organizing-pages}
+# Pagina&#39;s maken en indelen{#creating-and-organizing-pages}
 
 In deze sectie wordt beschreven hoe u pagina&#39;s kunt maken en beheren met Adobe Experience Manager (AEM), zodat u vervolgens inhoud [op die pagina&#39;s kunt](/help/sites-authoring/editing-content.md) maken.
 
@@ -99,7 +102,7 @@ Bij het maken van een nieuwe pagina zijn er twee sleutelvelden:
 
 #### Beperkingen en aanbevolen procedures voor paginanamen {#page-name-restrictions-and-best-practices}
 
-De **paginatitel** en - **naam** kunnen afzonderlijk worden gemaakt, maar zijn gerelateerd aan:
+De **titel** en **naam** van de pagina kunnen afzonderlijk worden gemaakt, maar zijn aan elkaar gerelateerd:
 
 * Wanneer u een pagina maakt, is alleen het veld **Titel** vereist. Als er bij het maken van de pagina geen **naam** is opgegeven, genereert AEM een naam uit de eerste 64 tekens van de titel (met inachtneming van de onderstaande validatie). Alleen de eerste 64 tekens worden gebruikt ter ondersteuning van de beste praktijken voor namen van korte pagina&#39;s.
 
@@ -128,12 +131,12 @@ Als AEM wordt uitgevoerd op een implementatie [van](/help/sites-deploying/recomm
 
 #### Titel {#title}
 
-Als u bij het maken van een nieuwe pagina alleen een paginatitel **opgeeft, leidt AEM de** paginanaam **af van deze tekenreeks en** valideert AEM de naam volgens de conventies [](/help/sites-developing/naming-conventions.md) die door AEM en JCR worden opgelegd. Een veld **Titel** met ongeldige tekens wordt geaccepteerd, maar voor de afgeleide naam worden de ongeldige tekens vervangen. Bijvoorbeeld:
+Als u bij het maken van een nieuwe pagina alleen een **paginatitel** opgeeft, leidt AEM de **naam**[ van de pagina af van deze tekenreeks en valideert het de naam volgens de conventies die door AEM en JCR worden opgelegd. ](/help/sites-developing/naming-conventions.md) Een veld **Titel** met ongeldige tekens wordt geaccepteerd, maar voor de afgeleide naam worden de ongeldige tekens vervangen. Bijvoorbeeld:
 
 | Titel | Afgeleide naam |
 |---|---|
 | Schön | schoen.html |
-| SC%&amp;*ç+ | sc—c-.html |
+| SC%&amp;*ç+ | sc---c-.html |
 
 #### Naam {#name}
 
@@ -145,7 +148,7 @@ Wanneer u een **paginanaam** opgeeft bij het maken van een nieuwe pagina, zal AE
 Gebruik geen code van twee letters, zoals gedefinieerd door ISO-639-1, als paginanaam, tenzij dit een hoofdtaalcode is.
 See [Preparing Content for Translation](/help/sites-administering/tc-prep.md) for more information.
 
-### Templates {#templates}
+### Sjablonen {#templates}
 
 In AEM, specificeert een malplaatje een gespecialiseerd type van pagina. Een sjabloon wordt gebruikt als basis voor elke nieuwe pagina die wordt gemaakt.
 
@@ -162,7 +165,7 @@ AEM wordt geleverd met verschillende sjablonen die u kunt vinden. Welke sjablone
 >[!NOTE]
 Als dit op uw exemplaar is geconfigureerd, kunnen [sjabloonauteurs sjablonen maken met de Sjablooneditor](/help/sites-authoring/templates.md).
 
-### Componenten {#components}
+### Onderdelen {#components}
 
 Componenten zijn de elementen die door AEM worden geleverd, zodat u specifieke typen inhoud kunt toevoegen. AEM wordt geleverd met een reeks [kant-en-klare componenten](/help/sites-authoring/default-components-console.md) die uitgebreide functionaliteit bieden. Deze omvatten:
 
@@ -185,7 +188,7 @@ Tenzij alle pagina&#39;s vooraf voor u zijn gemaakt, moet u een pagina maken voo
 
 1. Open de Sites-console (bijvoorbeeld [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)).
 1. Navigeer naar de locatie waar u de nieuwe pagina wilt maken.
-1. Open de keuzelijst met **Maken** op de werkbalk en selecteer vervolgens **Pagina** in de lijst:
+1. Open de vervolgkeuzelijst met **Maken** op de werkbalk en selecteer vervolgens **Pagina** in de lijst:
 
    ![caop-03](assets/caop-03.png)
 
@@ -269,11 +272,15 @@ U kunt een pagina en alle bijbehorende subpagina&#39;s naar een nieuwe locatie k
    Als u in de selectiemodus werkt, wordt dit automatisch verlaten zodra de pagina wordt gekopieerd.
 
 1. Navigeer naar de locatie voor de nieuwe kopie van de pagina.
-1. Gebruik het pictogram van de pagina **Plakken** :
+1. Het pictogram **Plakken** is rechtstreeks naar rechts beschikbaar met een vervolgkeuzepijl:
 
-   ![screen_shot_2018-03-22at105510](assets/screen_shot_2018-03-22at105510.png)
+   ![Plakken](assets/paste-without-children.png)
 
-   Op deze locatie worden een kopie van de originele pagina en eventuele subpagina&#39;s gemaakt.
+   U kunt:
+   * Selecteer het paginapictogram **Plakken** zelf: Op deze locatie worden een kopie van de originele pagina en eventuele onderliggende pagina&#39;s gemaakt.
+   * Selecteer de vervolgkeuzepijl om de optie **Plakken zonder onderliggende items** weer te geven. Op deze locatie wordt een kopie van de originele pagina gemaakt. onderliggende pagina&#39;s worden niet gekopieerd.
+   >[!NOTE]
+   De optie **Plakken zonder kinderen** is beschikbaar in [AEM 6.5 Service Pack 5](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html).
 
    >[!NOTE]
    Als u de pagina kopieert naar een locatie waar al een pagina met dezelfde naam als het origineel bestaat, genereert het systeem automatisch een variatie in de naam door een nummer toe te voegen. Bijvoorbeeld als `winter` reeds bestaat `winter` zal worden `winter1`.
@@ -344,7 +351,7 @@ AEM biedt u de functionaliteit om interne koppelingen bij te werken die verwijze
 1. Als u **Verplaatsen** selecteert, wordt het proces voltooid en wordt de pagina waar nodig verplaatst of hernoemd.
 
 >[!NOTE]
-Als de pagina al is gepubliceerd, wordt de publicatie ervan automatisch ongedaan gemaakt wanneer u de pagina verplaatst. Deze wordt standaard opnieuw gepubliceerd wanneer de verplaatsing is voltooid, maar dit kan veranderen door het veld **Opnieuw** publiceren uit te schakelen in de stap **Aanpassen/Opnieuw** .
+Als de pagina al is gepubliceerd, wordt de publicatie ervan automatisch ongedaan gemaakt wanneer u de pagina verplaatst. By default, it will be republished when the move is complete, but this can changed by unchecking the **Republish** field in the **Adjust/Republish** step.
 
 >[!NOTE]
 Als er op geen enkele manier naar de pagina wordt verwezen, wordt de stap **Aanpassen/Opnieuw** publiceren overgeslagen.
@@ -357,7 +364,7 @@ Als er op geen enkele manier naar de pagina wordt verwezen, wordt de stap **Aanp
    ![screen_shot_2018-03-22at105622](assets/screen_shot_2018-03-22at105622.png)
 
    >[!NOTE]
-   Uit veiligheidsoverwegingen is **het pictogram op de pagina Verwijderen** niet beschikbaar als een snelle actie.
+   Uit veiligheidsoverwegingen is het pictogram op de pagina **Verwijderen** niet beschikbaar als een snelle actie.
 
 1. In een dialoogvenster wordt om bevestiging gevraagd, gebruik:
 
@@ -390,7 +397,7 @@ Mappen zijn ook onderworpen aan de conventies voor [paginanamen](#page-naming-co
 
 
 
-1. Open de **Sites** -console en navigeer naar de gewenste locatie.
+1. Open the **Sites** console and navigate to the required location.
 1. Selecteer **Maken** in de werkbalk om de lijst met opties te openen
 1. Selecteer **Map** om het dialoogvenster te openen. Hier kunt u de **naam** en de **titel** invoeren:
 

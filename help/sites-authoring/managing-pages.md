@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: e637ba54-7ce1-414f-9558-1d758d05877a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 13e34a6df8a513a1654bc5277539b924c809ab8a
+source-git-commit: 49874dc723c3659550d891e786ddc178b30834ec
 workflow-type: tm+mt
-source-wordcount: '2349'
+source-wordcount: '2350'
 ht-degree: 4%
 
 ---
@@ -280,7 +280,7 @@ U kunt een pagina en alle bijbehorende subpagina&#39;s naar een nieuwe locatie k
    * Selecteer het paginapictogram **Plakken** zelf: Op deze locatie worden een kopie van de originele pagina en eventuele onderliggende pagina&#39;s gemaakt.
    * Selecteer de vervolgkeuzepijl om de optie **Plakken zonder onderliggende items** weer te geven. Op deze locatie wordt een kopie van de originele pagina gemaakt. onderliggende pagina&#39;s worden niet gekopieerd.
    >[!NOTE]
-   De optie **Plakken zonder kinderen** is beschikbaar in [AEM 6.5 Service Pack 5](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html).
+   De optie **Plakken zonder kinderen** is beschikbaar bij [AEM 6.5 Service Pack 5](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html) vanaf.
 
    >[!NOTE]
    Als u de pagina kopieert naar een locatie waar al een pagina met dezelfde naam als het origineel bestaat, genereert het systeem automatisch een variatie in de naam door een nummer toe te voegen. Bijvoorbeeld als `winter` reeds bestaat `winter` zal worden `winter1`.

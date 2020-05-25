@@ -1,6 +1,6 @@
 ---
-title: Basisverwerking
-seo-title: Basisverwerking
+title: Basisbewerkingen
+seo-title: Basisbewerkingen
 description: Geniet van comfortabel navigeren door AEM en het basisgebruik ervan
 seo-description: Geniet van comfortabel navigeren door AEM en het basisgebruik ervan
 uuid: c78ef9da-e0bd-47be-a410-9cf2ae71749a
@@ -11,12 +11,15 @@ content-type: reference
 discoiquuid: 21181a6f-b434-40ed-8eb1-ebdfc98964dd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 69e9b7499c1babcf7a6da62b8728bba7f127b4f9
+source-git-commit: 206f4cdf76df2b0be97426993818935a19bb9e63
+workflow-type: tm+mt
+source-wordcount: '3010'
+ht-degree: 3%
 
 ---
 
 
-# Basisverwerking{#basic-handling}
+# Basisbewerkingen{#basic-handling}
 
 >[!NOTE]
 >
@@ -39,7 +42,7 @@ Aangezien de AEM UI aanraking-toegelaten is, kunt u aanraakgebaren op uw aanraak
 
 ### Eerste stappen {#first-steps}
 
-Direct nadat u zich hebt aangemeld, gaat u naar het [navigatievenster](#navigation-panel). Als u een van de opties selecteert, wordt de desbetreffende console geopend.
+Vlak nadat u zich hebt aangemeld, gaat u naar het [navigatievenster](#navigation-panel). Als u een van de opties selecteert, wordt de desbetreffende console geopend.
 
 ![bh-01](assets/bh-01.png)
 
@@ -71,7 +74,7 @@ U kunt het algemene navigatievenster sluiten door op **Sluiten** te klikken of e
 >
 >Bij de eerste aanmelding hebt u het **navigatievenster** weergegeven.
 
-Globale navigatie heeft twee deelvensters, weergegeven door pictogrammen aan de linkermarge van het scherm:
+Globale navigatie heeft twee deelvensters, die door pictogrammen bij de linkermarge van het scherm worden vertegenwoordigd:
 
 * **[Navigatie](/help/sites-authoring/basic-handling.md#navigation-panel)**- Vertegenwoordigd door een kompas
 * **[Gereedschappen](/help/sites-authoring/basic-handling.md#tools-panel)**- Vertegenwoordigd door een hamer
@@ -80,9 +83,15 @@ De opties in deze deelvensters worden hieronder beschreven.
 
 ### Deelvenster Navigatie {#navigation-panel}
 
-Het navigatievenster:
+Het navigatievenster biedt toegang tot de AEM-consoles:
 
 ![bh-01](assets/bh-01.png)
+
+De titel van het browsertabblad wordt aangepast aan uw locatie wanneer u door de consoles en inhoud navigeert.
+
+>[!NOTE]
+>
+>De tabtitel geeft de locatie weer vanaf [AEM 6.5 Service Pack 5](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html) .
 
 Vanuit Navigatie zijn de beschikbare consoles:
 
@@ -93,7 +102,7 @@ Vanuit Navigatie zijn de beschikbare consoles:
    <td><strong>Doel</strong></td>
   </tr>
   <tr>
-   <td>Activa<br /> </td>
+   <td>Assets<br /> </td>
    <td>Met deze consoles kunt u digitale elementen <a href="/help/assets/home.md">zoals afbeeldingen, video's, documenten en audiobestanden importeren en</a> beheren. Deze elementen kunnen vervolgens worden gebruikt door elke website die op dezelfde AEM-instantie wordt uitgevoerd. </td>
   </tr>
   <tr>
@@ -102,10 +111,10 @@ Vanuit Navigatie zijn de beschikbare consoles:
   </tr>
   <tr>
    <td>Handel</td>
-   <td>Op deze manier kunt u producten, productcatalogi en bestellingen beheren die betrekking hebben op uw <a href="/help/sites-administering/ecommerce.md">handelsites</a> .</td>
+   <td>Op deze manier kunt u producten, productcatalogi en bestellingen beheren voor uw <a href="/help/sites-administering/ecommerce.md">handelsites</a> .</td>
   </tr>
   <tr>
-   <td>Ervaar fragmenten</td>
+   <td>Ervaringsfragmenten</td>
    <td>Een <a href="/help/sites-authoring/experience-fragments.md">ervaringsfragment</a> is een zelfstandige ervaring die via verschillende kanalen opnieuw kan worden gebruikt en variaties kan hebben, waardoor het probleem van het herhaaldelijk kopiëren en plakken van ervaringen of delen van ervaringen wordt bespaard.</td>
   </tr>
   <tr>
@@ -133,7 +142,7 @@ Vanuit Navigatie zijn de beschikbare consoles:
 
 ### Deelvenster Gereedschappen {#tools-panel}
 
-In het deelvenster Gereedschappen bevat elke optie in het zijpaneel een reeks submenu&#39;s. De [gereedschapsconsoles](/help/sites-administering/tools-consoles.md) die hier beschikbaar zijn, bieden toegang tot een aantal gespecialiseerde gereedschappen en consoles die u helpen uw websites, digitale middelen en andere aspecten van uw opslagplaats voor inhoud te beheren.
+In het deelvenster Gereedschappen bevat elke optie in het zijpaneel een reeks submenu&#39;s. The [Tools consoles](/help/sites-administering/tools-consoles.md) available here provide access to a number of specialized tools and consoles that help you administer your websites, digital assets and other aspects of your content repository.
 
 ![bh-04](assets/bh-04.png)
 
@@ -217,6 +226,18 @@ De koptekst staat altijd boven aan het scherm. Hoewel de meeste opties in de kop
 
    ![bh-09](assets/bh-09.png)
 
+* Toetsenbordnavigatie
+
+   U kunt alleen met het toetsenbord door een website navigeren. Dit gebruikt de standaardbrowser functionaliteit van de sleutel van het **LUSJE** (of **OPT+TAB**) om u tussen elementen op de pagina te bewegen die *gericht* zijn.
+
+   In de **Sites** -console is er de extra optie voor **Overslaan naar hoofdinhoud**. Dit wordt zichtbaar aangezien u door de kopbalopties *lusje* , en uw navigatie versnelt door u toe te staan om de standaardelementen in de (product) toolbar over te slaan en u rechtstreeks aan de belangrijkste inhoud te nemen.
+
+   ![bh-30](assets/bh-30.png)
+
+   >[!NOTE]
+   >
+   >De optie **Overslaan naar hoofdinhoud** is beschikbaar vanaf [AEM 6.5 Service Pack 5](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html) .
+
 ## Toegang tot Help {#accessing-help}
 
 Er zijn verschillende beschikbare Help-bronnen:
@@ -270,7 +291,7 @@ De actie die beschikbaar is op de werkbalk, wijzigt in de richting van de acties
 
 Hoe u een bron [](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) selecteert, is afhankelijk van de weergave.
 
-Door de ruimtebeperkingen in sommige vensters, kan de toolbar snel langer worden dan de beschikbare ruimte. Als dit gebeurt, worden er extra opties weergegeven. Als u op de ellips klikt of erop tikt (de drie stippen of **...**), wordt een keuzelijst geopend met alle resterende handelingen. Nadat u bijvoorbeeld een pagina hebt geselecteerd in de **Sites** -console:
+Vanwege de ruimtebeperkingen in sommige vensters kan de werkbalk snel langer worden dan de beschikbare ruimte. Als dit gebeurt, worden er extra opties weergegeven. Als u op het beletselteken (de drie stippen of **...**) klikt of tikt, wordt een vervolgkeuzelijst geopend met alle resterende acties. Nadat u bijvoorbeeld een pagina hebt geselecteerd in de **Sites**-console:
 
 ![bh-12](assets/bh-12.png)
 
@@ -316,39 +337,39 @@ Het selecteren van een specifieke bron is afhankelijk van een combinatie van de 
    <td>Kolomweergave<br /> </td>
    <td>
     <ul>
-     <li><br /> Desktop:Klik op de miniatuur</li>
-     <li><br /> Mobiel apparaat:Tik op de miniatuur</li>
+     <li>Desktop:<br /> Klik op de miniatuur</li>
+     <li>Mobiel apparaat:<br /> Tik op de miniatuur</li>
     </ul> </td>
    <td>
     <ul>
-     <li><br /> Desktop:Klik op de miniatuur</li>
-     <li><br /> Mobiel apparaat:Tik op de miniatuur</li>
+     <li>Desktop:<br /> Klik op de miniatuur</li>
+     <li>Mobiel apparaat:<br /> Tik op de miniatuur</li>
     </ul> </td>
   </tr>
   <tr>
    <td>Kaartweergave<br /> </td>
    <td>
     <ul>
-     <li><br /> Desktop: Beweging, dan gebruik de controlemarkering snelle actie</li>
-     <li><br /> Mobiel apparaat: Tik en houd de kaart ingedrukt</li>
+     <li>Desktop:<br /> Beweging, dan gebruik de controlemarkering snelle actie</li>
+     <li>Mobiel apparaat:<br /> Tik en houd de kaart ingedrukt</li>
     </ul> </td>
    <td>
     <ul>
-     <li><br /> Desktop:Klik op de kaart</li>
-     <li><br /> Mobiel apparaat:Tik op de kaart</li>
+     <li>Desktop:<br /> Klik op de kaart</li>
+     <li>Mobiel apparaat:<br /> Tik op de kaart</li>
     </ul> </td>
   </tr>
   <tr>
    <td>Lijstweergave</td>
    <td>
     <ul>
-     <li><br /> Desktop:Klik op de miniatuur</li>
-     <li><br /> Mobiel apparaat:Tik op de miniatuur</li>
+     <li>Desktop:<br /> Klik op de miniatuur</li>
+     <li>Mobiel apparaat:<br /> Tik op de miniatuur</li>
     </ul> </td>
    <td>
     <ul>
-     <li><br /> Desktop:Klik op de miniatuur</li>
-     <li><br /> Mobiel apparaat:Tik op de miniatuur</li>
+     <li>Desktop:<br /> Klik op de miniatuur</li>
+     <li>Mobiel apparaat:<br /> Tik op de miniatuur</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -513,7 +534,7 @@ Als alleen inhoud wordt geselecteerd, wordt alleen het pictogram van de spoorsta
 
 Met de inhoudsstructuur kunt u snel door de sitehiërarchie in het zijpaneel navigeren en veel informatie over de pagina&#39;s in de huidige map bekijken.
 
-Met behulp van het zijpaneel van de inhoudsstructuur in combinatie met een lijstmening of kaartmening, kunnen de gebruikers gemakkelijk de hiërarchische structuur van het project zien en gemakkelijk over de inhoudsstructuur navigeren met de zijpaneel van de inhoudsboom, evenals meningsgedetailleerde paginainformatie in de lijstmening.
+Met behulp van het zijpaneel van de inhoudsstructuur in combinatie met een lijstmening of kaartmening, kunnen de gebruikers gemakkelijk de hiërarchische structuur van het project zien en gemakkelijk over de inhoudsstructuur met de kant-paneel van de inhoudsboom navigeren, evenals gedetailleerde paginainformatie in de lijstmening.
 
 ![bh-26](assets/bh-26.png)
 
@@ -536,7 +557,7 @@ In de tijdlijnkolom kunt u:
       * [Opmerkingen](#timelineaddingandviewingcomments)
       * Annotaties
       * Activiteiten
-      * [Starten](/help/sites-authoring/launches.md)
+      * [Lanceringen](/help/sites-authoring/launches.md)
       * [Versies](/help/sites-authoring/working-with-page-versions.md)
       * [Workflows](/help/sites-authoring/workflows-applying.md)
 
@@ -544,7 +565,7 @@ In de tijdlijnkolom kunt u:
       * en Alles tonen
 
 
-* [Opmerkingen](#timelineaddingandviewingcomments) over het geselecteerde item toevoegen/weergeven. Het vak **Opmerking** wordt onder aan de lijst met gebeurtenissen weergegeven. Als u een opmerking typt die wordt gevolgd door Return, wordt de opmerking geregistreerd. Deze wordt weergegeven wanneer **Opmerkingen** of Alles **** tonen is geselecteerd.
+* [Opmerkingen over het geselecteerde item toevoegen/weergeven. ](#timelineaddingandviewingcomments) Het vak **Opmerking** wordt onder aan de lijst met gebeurtenissen weergegeven. Als u een opmerking typt die wordt gevolgd door Return, wordt de opmerking geregistreerd. Deze wordt weergegeven wanneer **Opmerkingen** of **Alles weergeven** is geselecteerd.
 
 * Specifieke consoles hebben extra functionaliteit. In de Sites-console kunt u bijvoorbeeld:
 
@@ -559,7 +580,7 @@ Deze opties zijn toegankelijk via het chevron naast het veld **Opmerking** .
 
 **De verwijzingen** tonen om het even welke verbindingen aan het geselecteerde middel. In de **Sites** -consoleverwijzingen [](/help/sites-authoring/author-environment-tools.md#showingpagereferences) voor pagina&#39;s ziet u bijvoorbeeld:
 
-* [Starten](/help/sites-authoring/launches.md#launches-in-references-sites-console)
+* [Lanceringen](/help/sites-authoring/launches.md#launches-in-references-sites-console)
 * [Live kopieën](/help/sites-administering/msm-livecopy-overview.md#openingthelivecopyoverviewfromreferences)
 * [Taalkopieën](/help/sites-administering/tc-prep.md#seeing-the-status-of-language-roots)
 * Content references:
@@ -571,7 +592,7 @@ Deze opties zijn toegankelijk via het chevron naast het veld **Opmerking** .
 
 ### Filter {#filter}
 
-Hiermee wordt een deelvenster geopend dat lijkt op het [zoeken](/help/sites-authoring/search.md) met de juiste locatiefilters ingesteld, zodat u de inhoud die u wilt weergeven verder kunt filteren.
+Hiermee wordt een deelvenster geopend dat lijkt op het [zoeken](/help/sites-authoring/search.md) met de juiste locatiefilters die al zijn ingesteld, zodat u de inhoud die u wilt weergeven verder kunt filteren.
 
 ![bh-29](assets/bh-29.png)
 

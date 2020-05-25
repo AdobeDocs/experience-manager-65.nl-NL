@@ -4,7 +4,10 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: Handleiding voor auteur AEM 6.5
 translation-type: tm+mt
-source-git-commit: 187421434882cf61ad17aea9f75920a5d5a76ed1
+source-git-commit: af27ed32c21a338600201e05871c1b18548ecba6
+workflow-type: tm+mt
+source-wordcount: '273'
+ht-degree: 40%
 
 ---
 
@@ -48,7 +51,7 @@ source-git-commit: 187421434882cf61ad17aea9f75920a5d5a76ed1
    + [Onderdelenconsole](default-components-console.md)
    + [Responsieve lay-out](responsive-layout.md)
    + [Inhoudsinzicht](content-insights.md)
-   + [Toegankelijke inhoud maken (WCAG 2.0-compatibiliteit)](creating-accessible-content.md)
+   + [Toegankelijke content maken (WCAG 2.1-compatibiliteit)](creating-accessible-content.md)
    + [Basisstructuur](scaffolding.md)
    + [Componenten configureren in ontwerpmodus](default-components-designmode.md)
    + [Elementaire componenten](default-components-foundation.md)

@@ -10,7 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
 translation-type: tm+mt
-source-git-commit: f763359fb333ef6cc8a6748ccfa39ba9aee9ca48
+source-git-commit: 2d04b33258a3727a088461055649c28d57a271c5
+workflow-type: tm+mt
+source-wordcount: '1055'
+ht-degree: 8%
 
 ---
 
@@ -60,7 +63,7 @@ Van om het even welke consoles wordt het huidige aantal punten in uw inbox getoo
 >
 >Bepaalde acties zullen ook in de [kaartmening van het aangewezen middel](/help/sites-authoring/basic-handling.md#card-view)worden getoond.
 
-## Administratieve taken buiten de box {#out-of-the-box-administrative-tasks}
+## Administratieve taken buiten de box  {#out-of-the-box-administrative-tasks}
 
 Uit-de-doos AEM komt vooraf geladen met vier taken die aan de groep van de beheerdergebruiker worden toegewezen.
 
@@ -100,7 +103,7 @@ In deze weergave worden de items weergegeven op basis van hun positie in de kale
 
 U kunt:
 
-* een specifieke weergave te selecteren; **Tijdlijn**, **Kolom**, **Lijst**
+* een specifieke weergave te selecteren; **Tijdlijn**, **kolom**, **lijst**
 
 * specify the tasks to display according to **Schedule**; **All**, **Planned**, **In Progress**, **Due Soon**, **Past Due**
 
@@ -153,6 +156,11 @@ De optie Beheer is alleen zichtbaar voor de leden van de groep met beheerders of
 * **Opslaan:** Tik op deze optie of klik op deze optie om de instellingen op te slaan.
 
 ## Actie ondernemen op een item {#taking-action-on-an-item}
+
+>[!NOTE]
+>
+>Hoewel het mogelijk is meerdere items te selecteren, kunnen acties slechts op één item tegelijk worden uitgevoerd.
+
 
 1. Als u een actie wilt uitvoeren op een item, selecteert u de miniatuur voor het desbetreffende item. Pictogrammen voor de acties die op dat item van toepassing zijn, worden weergegeven op de werkbalk:
 

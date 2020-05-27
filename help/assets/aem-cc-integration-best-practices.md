@@ -3,9 +3,9 @@ title: Aanbevolen werkwijzen voor de integratie met Adobe Creative Cloud en [!DN
 description: Aanbevolen procedures om [!DNL Adobe Experience Manager] te integreren met [!DNL Adobe Creative Cloud] om workflows voor middelenoverdracht te stroomlijnen en een hoge snelheid van de inhoud te bereiken.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '3266'
+source-wordcount: '3260'
 ht-degree: 16%
 
 ---
@@ -35,7 +35,7 @@ Lees verder om te weten welke integraties u kunt kiezen tussen desktop en DAM op
 
 | Waardevoorstel voor de betreffende personen | Adobe-aanbieding | Betrokken oppervlakken |
 |---|---|---|
-| Creatieve gebruikers ontdekken elementen van [!DNL Experience Manager], openen en gebruiken ze, bewerken en uploaden wijzigingen in [!DNL Experience Manager]en uploaden nieuwe bestanden naar [!DNL Experience Manager], zonder [!DNL Creative Cloud] apps te verlaten. | [Adobe-elementkoppeling](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) | Photoshop, Illustrator en InDesign |
+| Creatieve gebruikers ontdekken elementen van [!DNL Experience Manager], openen en gebruiken ze, bewerken en uploaden wijzigingen in [!DNL Experience Manager]en uploaden nieuwe bestanden naar [!DNL Experience Manager], zonder [!DNL Creative Cloud] apps te verlaten. | [Adobe-elementkoppeling](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) | [!DNL Adobe Photoshop], [!DNL Adobe Illustrator]en [!DNL Adobe InDesign]. |
 | Zakelijke gebruikers vereenvoudigen het openen en gebruiken van middelen, het bewerken en uploaden van wijzigingen in [!DNL Experience Manager]en het uploaden van nieuwe bestanden naar [!DNL Experience Manager] vanuit de desktopomgeving. Ze gebruiken een algemene integratie om elk elementtype in de native bureaubladtoepassing te openen, inclusief niet-Adobe toepassingen. | [Experience Manager-bureaubladtoepassing](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) | [!DNL Experience Manager] bureaubladtoepassing op Win- en Mac-bureaublad |
 | Marketers en zakelijke gebruikers ontdekken, voorvertonen, licentiëren en opslaan, en beheren de [!DNL Adobe Stock] middelen van binnenuit [!DNL Experience Manager]. Gelicentieerde en opgeslagen elementen bieden geselecteerde [!DNL Adobe Stock] metagegevens voor beter beheer. | [Experience Manager en Adobe Stock-integratie](aem-assets-adobe-stock.md) | [!DNL Experience Manager] webinterface |
 
@@ -181,7 +181,7 @@ Zoals in dit document wordt besproken, wordt aanbevolen belangrijke updates van 
 
 Adobe Asset Link biedt een goede ondersteuning voor dit gebruiksgeval:
 
-* Wanneer gebruikers in Photoshop, InDesign of Illustrator van plan zijn een bestand te bewerken, voeren zij een uitcheckbewerking uit op het desbetreffende element
+* Wanneer gebruikers in [!DNL Photoshop], [!DNL InDesign]of [!DNL Illustrator] van plan zijn een bestand te bewerken, voeren ze een uitcheckbewerking uit op het opgegeven element
 * Het middel wordt op de achtergrond gedownload, in gebruikers geplaatst met een Creative Cloud-account dat door de Creative Cloud-bureaubladtoepassing op de schijf is gesynchroniseerd en de uitcheckvlag wordt [!DNL Experience Manager] op het middel ingeschakeld om bewerkingsconflicten te minimaliseren
 * Vanaf dat punt werkt de gebruiker in een bestand dat lokaal is opgeslagen op de gesynchroniseerde locatie. De gebruiker kan doorgaan met het werken en opslaan van noodzakelijke wijzigingen met elke vereiste frequentie
 * Aangezien het middel zich in de Creative Cloud-account bevindt, is het ook beschikbaar op andere apparaten die de gebruiker mogelijk heeft (kunnen bijvoorbeeld worden geopend of bewerkt in een speciale Creative Cloud mobile-app) en kan het voor samenwerkingsdoeleinden worden gedeeld met andere Creative Cloud-gebruikers.

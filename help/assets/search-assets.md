@@ -4,9 +4,9 @@ description: Leer hoe u de vereiste middelen vindt in [!DNL Adobe Experience Man
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '5828'
+source-wordcount: '5822'
 ht-degree: 4%
 
 ---
@@ -162,7 +162,7 @@ U kunt naar elementen zoeken op basis van exacte waarden van specifieke metagege
 | Creator | maker:John |
 | Locatie | locatie:NA |
 | Beschrijving | beschrijving:&quot;Voorbeeldafbeelding&quot; |
-| Gereedschap Maker | creatortool:&quot;Adobe Photoshop CC 2015&quot; |
+| Gereedschap Maker | creatortool:&quot;Adobe Photoshop CC 2020&quot; |
 | Copyrighteigenaar | copyrightowner:&quot;Adobe Systems&quot; |
 | Medewerker | contribuant:John |
 | Gebruiksvoorwaarden | usageterms:&quot;CopyRights Reserved&quot; |
@@ -200,7 +200,7 @@ Hier volgen enkele voorbeelden van zoekindelingen voor complexe query&#39;s:
 
 ### Middelen zoeken vanuit het deelvenster Adobe Asset Link {#aal}
 
-Met Adobe Asset Link hebben creatieve professionals nu toegang tot inhoud die is opgeslagen in [!DNL Experience Manager Assets], zonder de ondersteunde Adobe Creative Cloud-toepassingen te verlaten. Creative Cloud kan naadloos door middelen bladeren, zoeken, uitchecken en inchecken via het deelvenster in de app in de Creative Cloud-apps: Photoshop, Illustrator en InDesign. Met Asset Link kunnen gebruikers ook visueel vergelijkbare resultaten zoeken. De visuele resultaten van de zoekweergave worden aangedreven door de computerleeralgoritmen van Adobe Sensei en helpen gebruikers bij het zoeken naar beelden die er esthetisch op lijken. Zie [Zoeken naar en bladeren door middelen](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) met Adobe Asset Link.
+Met Adobe Asset Link hebben creatieve professionals nu toegang tot inhoud die is opgeslagen in [!DNL Experience Manager Assets], zonder de ondersteunde Adobe Creative Cloud-toepassingen te verlaten. Creatieven kunnen naadloos door middelen bladeren, zoeken, uitchecken en inchecken via het deelvenster in de app in het [!DNL Adobe Creative Cloud apps]volgende: [!DNL Adobe Photoshop], [!DNL Adobe Illustrator]en [!DNL Adobe InDesign]. Met Asset Link kunnen gebruikers ook visueel vergelijkbare resultaten zoeken. De visuele resultaten van de zoekweergave worden aangedreven door de computerleeralgoritmen van Adobe Sensei en helpen gebruikers bij het zoeken naar beelden die er esthetisch op lijken. Zie [Zoeken naar en bladeren door middelen](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) met Adobe Asset Link.
 
 ### Middelen zoeken in [!DNL Experience Manager] bureaubladtoepassing {#desktopapp}
 

@@ -3,9 +3,9 @@ title: De zoekfunctionaliteit van Adobe Experience Manager-middelen uitbreiden
 description: Breid de zoekmogelijkheden van Adobe Experience Manager-middelen uit tot meer dan de standaardwaarden.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2348df62f970d7e2ff41ad386f29c1550ea94e48
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '859'
 ht-degree: 15%
 
 ---
@@ -35,9 +35,9 @@ Om de pre-gevormde voorspelden te bedekken, kopieer de `facets` knoop van `/libs
 
 ## Tabs toevoegen {#adding-tabs}
 
-U kunt extra zoektabbladen toevoegen door deze te configureren in AEM Assets Admin. Extra tabbladen maken:
+U kunt extra zoektabbladen toevoegen door deze in de beheerinterface voor middelen te configureren. Extra tabbladen maken:
 
-1. Maak de mappenstructuur `/apps/wcm/core/content/damadmin/tabs,`als deze nog niet bestaat en kopieer het `tabs` knooppunt van `/libs/wcm/core/content/damadmin` en plak het.
+1. Maak de mapstructuur `/apps/wcm/core/content/damadmin/tabs,`als deze nog niet bestaat en kopieer het `tabs` knooppunt van `/libs/wcm/core/content/damadmin` en plak het.
 1. Maak en configureer het tweede tabblad naar wens.
 
    >[!NOTE]
@@ -48,7 +48,7 @@ U kunt extra zoektabbladen toevoegen door deze te configureren in AEM Assets Adm
 
 [!DNL Assets] wordt geleverd met een set vooraf gedefinieerde voorspelling die kan worden gebruikt om een pagina voor het delen van elementen aan te passen. Het aanpassen van een Aandeel van Activa op deze manier wordt behandeld in [creeer en vorm een pagina](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page)van het Aandeel van Activa.
 
-Naast het gebruiken van reeds bestaande predikaten, kunnen de ontwikkelaars AEM ook hun eigen predikaten tot stand brengen gebruikend de [Bouwer van de Vraag API](/help/sites-developing/querybuilder-api.md).
+Naast het gebruiken van reeds bestaande predikaten, kunnen de ontwikkelaars van de Manager van de Ervaring hun eigen predikaten ook creëren gebruikend de [Bouwer van de Vraag API](/help/sites-developing/querybuilder-api.md).
 
 Voor het maken van aangepaste predikaten is basiskennis van het [Widget-framework](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html)vereist.
 
@@ -296,6 +296,6 @@ De volgende voorspelling is beschikbaar als vooraf geconfigureerde ExtJS-widgets
 
 ## Zoekresultaten aanpassen {#customizing-search-results}
 
-De presentatie van zoekresultaten op een pagina voor het delen van bedrijfsmiddelen wordt bepaald door de geselecteerde lens. AEM Assets wordt geleverd met een set vooraf gedefinieerde lenzen die kunnen worden gebruikt om een pagina voor het delen van bedrijfsmiddelen aan te passen. Op deze manier wordt het op deze manier aanpassen van een Asset Share behandeld in het [maken en configureren van een pagina](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page)voor het delen van bedrijfsmiddelen.
+De presentatie van zoekresultaten op een pagina voor het delen van bedrijfsmiddelen wordt bepaald door de geselecteerde lens. De Elementen van de Manager van de ervaring komen met een reeks vooraf bepaalde lenzen die kunnen worden gebruikt om een pagina van het Aandeel van Activa aan te passen. Op deze manier wordt het op deze manier aanpassen van een Asset Share behandeld in het [maken en configureren van een pagina](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page)voor het delen van bedrijfsmiddelen.
 
-Naast het gebruik van reeds bestaande lenzen kunnen AEM-ontwikkelaars ook hun eigen lenzen maken.
+Naast het gebruik van bestaande lenzen kunnen ontwikkelaars van Experience Manager ook hun eigen lenzen maken.

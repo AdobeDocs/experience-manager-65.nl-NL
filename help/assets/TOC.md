@@ -2,17 +2,17 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: Gebruikershandleiding voor AEM 6.5-middelen
+user-guide-title: Gebruikershandleiding voor Experience Manager 6.5-middelen
 translation-type: tm+mt
-source-git-commit: 4f580a9e1a43ef59a4991df6bc4a96cfffe5173e
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '643'
 ht-degree: 38%
 
 ---
 
 
-# Gebruikershandleiding voor AEM 6.5-middelen {#assets}
+# Gebruikershandleiding voor Experience Manager 6.5-middelen {#assets}
 
 + [Gebruikershandleiding voor [!DNL Assets]](home.md)
 + [AEM 6.5 Opmerkingen bij de release van activa](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/assets.html)
@@ -153,7 +153,7 @@ ht-degree: 38%
    + [Asynchrone bewerkingen](asynchronous-jobs.md)
    + [Lichtbak](touch-ui-light-box.md)
    + [Elementinzichten](touch-ui-asset-insights.md)
-   + [Middels DTM inzicht in bedrijfsmiddelen inschakelen](touch-ui-using-dtm-for-asset-insights.md)
+   + [Elementinzichten inschakelen via Adobe Launch](touch-ui-using-dtm-for-asset-insights.md)
    + [Elementinzichten configureren](touch-ui-configuring-asset-insights.md)
    + [Elementen in- en uitchecken](check-out-and-submit-assets.md)
    + [Vertaalcloudservices toepassen op mappen](transition-cloud-services.md)

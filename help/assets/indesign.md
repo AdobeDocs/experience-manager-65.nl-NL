@@ -3,7 +3,7 @@ title: '[!DNL Adobe Experience Manager Assets] integreren met [!DNL Adobe InDesi
 description: Leer hoe u [!DNL Adobe Experience Manager Assets] kunt integreren met [!DNL Adobe InDesign Server].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
 source-wordcount: '1548'
 ht-degree: 1%
@@ -58,7 +58,7 @@ Dit opdrachtscript:
    * De geëxtraheerde tekst en bestanden worden opgeslagen in [!DNL Experience Manager Assets].
    * Alle uitvoeringen worden opgeslagen in [!DNL Experience Manager Assets], in het element zelf.
 
-## De [!DNL InDesign Server] toepassing integreren met AEM {#integrating-the-indesign-server-with-aem}
+## De [!DNL InDesign Server] functie integreren met Experience Manager {#integrating-the-indesign-server-with-aem}
 
 Om het [!DNL InDesign Server] voor gebruik met [!DNL Experience Manager Assets] en na het vormen van uw volmacht te integreren, moet u:
 
@@ -111,7 +111,7 @@ Argumenten voor het uitnemen van media en scriptpaden
 
 * **Scripts** uitbreiden: Hier kunt u verschillende scriptcombinaties opgeven. Als u wilt dat uw eigen scripts op de computer worden uitgevoerd [!DNL InDesign Server], slaat u de scripts op `/apps/settings/dam/indesign/scripts`.
 
-Zie de documentatie voor ontwikkelaars van [InDesign voor informatie over InDesign-scripts](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)
+Zie de documentatie voor ontwikkelaars van [!DNL Adobe InDesign] InDesign voor informatie over [scripts](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)
 
 >[!CAUTION]
 >
@@ -167,7 +167,7 @@ Als [!DNL InDesign Server] en [!DNL Experience Manager] lopen op verschillende g
 
 1. Open de webconsole op `https://[aem_server]:[port]/system/console/configMgr`.
 1. Zoek de configuratie **[!UICONTROL Day CQ Link Externalizer]** en klik **[!UICONTROL Edit]** om deze te openen.
-1. Geef de hostnaam en het contextpad voor de toepassing op [!DNL Indesign Server] en klik op **Opslaan**.
+1. Geef de hostnaam en het contextpad voor de toepassing op [!DNL Adobe InDesign Server] en klik op **Opslaan**.
 
    ![chlimage_1-97](assets/chlimage_1-290.png)
 
@@ -218,7 +218,7 @@ Voer voor [!DNL InDesign Server] 10.0 of hoger de volgende stappen uit om onders
 
 >[!NOTE]
 >
->Voor [!DNL InDesign Server] integratie met [!DNL Experience Manager Assets], gebruik een multi-core bewerker omdat de eigenschap van de Steun van de Zitting noodzakelijk voor de integratie niet op single-core systemen wordt gesteund.
+>Voor [!DNL InDesign Server] integratie met [!DNL Experience Manager Assets], gebruik een multi-core bewerker omdat de zittingssteuneigenschap noodzakelijk voor de integratie niet op single-core systemen wordt gesteund.
 
 ## Referenties [!DNL Experience Manager] configureren {#configure-aem-credentials}
 

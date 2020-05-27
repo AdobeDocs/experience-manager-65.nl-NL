@@ -4,7 +4,10 @@ description: Suggesties en richtlijnen voor de configuratie van [!DNL Experience
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '2669'
+ht-degree: 0%
 
 ---
 
@@ -124,13 +127,13 @@ Primair, hangt uw strategie van de netwerkoptimalisering van de hoeveelheid besc
 
 ### Tijdelijke workflows {#transient-workflows}
 
-Stel waar mogelijk de workflow [!UICONTROL DAM Update Asset] in op Transient. De instelling verlaagt aanzienlijk de overheadkosten die nodig zijn voor het verwerken van workflows, omdat workflows in dit geval niet door de normale tracking- en archiveringsprocessen hoeven te gaan.
+Stel waar mogelijk de [!UICONTROL DAM Update Asset] workflow in op Overgang. De instelling verlaagt aanzienlijk de overheadkosten die nodig zijn voor het verwerken van workflows, omdat workflows in dit geval niet door de normale tracking- en archiveringsprocessen hoeven te gaan.
 
 1. Navigeer naar `/miscadmin` in de [!DNLEinstantie van de Manager] van de Ervaring bij `https://[aem_server]:[port]/miscadmin`.
 
-1. Breid **[!UICONTROL Hulpmiddelen]** uit > **[!UICONTROL Werkschema]** > **[!UICONTROL Modellen]** > **[!UICONTROL dam]**.
+1. Vouw uit **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]** > **[!UICONTROL dam]**.
 
-1. Open **[!UICONTROL DAM Update Asset]**. Ga in het zwevende gereedschapvenster naar het tabblad **[!UICONTROL Pagina]** en klik vervolgens op **[!UICONTROL Pagina-eigenschappen]**.
+1. Open **[!UICONTROL DAM Update Asset]**. Ga in het zwevende deelvenster met gereedschappen naar de **[!UICONTROL Page]** tab en klik op **[!UICONTROL Page Properties]**.
 
 1. Select **[!UICONTROL Transient Workflow]** and click **[!UICONTROL OK]**.
 
@@ -138,7 +141,7 @@ Stel waar mogelijk de workflow [!UICONTROL DAM Update Asset] in op Transient. De
    >
    >Bepaalde functies ondersteunen geen tijdelijke workflows. Als deze functies vereist zijn voor uw [!DNL Assets] implementatie, configureert u geen tijdelijke workflows.
 
-Als er geen tijdelijke workflows kunnen worden gebruikt, voert u de workflow regelmatig uit om gearchiveerde [!UICONTROL DAM Update Asset] -workflows te verwijderen om ervoor te zorgen dat de systeemprestaties niet afnemen.
+Als er geen tijdelijke workflows kunnen worden gebruikt, voert u de workflow regelmatig uit om gearchiveerde [!UICONTROL DAM Update Asset] workflows te verwijderen om ervoor te zorgen dat de systeemprestaties niet afnemen.
 
 Doorgaans voert u de werkstromen wekelijks uit. Nochtans, in middel-intensieve scenario&#39;s, zoals tijdens brede activaopname, kunt u het vaker uitvoeren.
 
@@ -150,27 +153,27 @@ Bijvoorbeeld, na het uitvoeren van talrijke niet-voorbijgaande werkschema&#39;s 
 
 ### Maximumaantal parallelle banen {#maximum-parallel-jobs}
 
-In [!DNLEExperience Manager] wordt standaard een maximumaantal parallelle taken uitgevoerd dat gelijk is aan het aantal processors op de server. Het probleem met deze instelling is dat tijdens perioden van zware belasting alle processors worden gebruikt door [!UICONTROL DAM Update Asset] -workflows, waardoor de reactiesnelheid van de gebruikersinterface wordt vertraagd en wordt voorkomen dat [!DNLEExperience Manager] andere processen uitvoert die de prestaties en stabiliteit van de server garanderen. U kunt deze waarde als een goede praktijk instellen op de helft van de processors die beschikbaar zijn op de server door de volgende stappen uit te voeren:
+In [!DNLEExperience Manager] wordt standaard een maximumaantal parallelle taken uitgevoerd dat gelijk is aan het aantal processors op de server. Het probleem met deze instelling is dat tijdens perioden van zware belasting alle processors in beslag worden genomen door [!UICONTROL DAM Update Asset] workflows, waardoor de reactiesnelheid van de gebruikersinterface wordt vertraagd en wordt voorkomen dat [!DNLEervaringsbeheer] andere processen uitvoert die de prestaties en stabiliteit van de server garanderen. U kunt deze waarde als een goede praktijk instellen op de helft van de processors die beschikbaar zijn op de server door de volgende stappen uit te voeren:
 
 1. Op de Auteur van de Manager van de [!DNLEervaring] , toegang `https://[aem_server]:[port]/system/console/slingevent`.
 
-1. Klik op **[!UICONTROL Bewerken]** in elke werkstroomwachtrij die relevant is voor uw implementatie, bijvoorbeeld **[!UICONTROL Granite Transient Workflow Queue]**.
+1. Klik **[!UICONTROL Edit]** op elke werkschemarij die voor uw implementatie relevant is, bijvoorbeeld **[!UICONTROL Granite Transient Workflow Queue]**.
 
-1. Werk de waarde van **[!UICONTROL Maximum Parallelle Banen]** bij en klik **[!UICONTROL sparen]**.
+1. Werk de waarde van bij **[!UICONTROL Maximum Parallel Jobs]** en klik **[!UICONTROL Save]**.
 
 Het instellen van een wachtrij op de helft van de beschikbare processors is een werkbare oplossing om mee te beginnen. Het kan echter zijn dat u dit aantal moet verhogen of verlagen om een maximale doorvoer te bereiken en dat aantal aan te passen aan de omgeving. Er zijn afzonderlijke rijen voor tijdelijke en niet-tijdelijke werkstromen evenals andere processen, zoals externe werkschema&#39;s. Als meerdere wachtrijen die zijn ingesteld op 50% van de processors tegelijkertijd actief zijn, kan het systeem snel overbelast raken. De rijen die zwaar worden gebruikt variëren zeer over gebruikersimplementaties. Daarom moet u ze mogelijk nauwkeurig configureren voor maximale efficiëntie zonder dat dit ten koste gaat van de stabiliteit van de server.
 
 ### DAM Update Asset Configuration {#dam-update-asset-configuration}
 
-De workflow [!UICONTROL DAM Update Asset] bevat een volledige reeks stappen die zijn geconfigureerd voor taken, zoals het genereren van Scene7 PTIFF en de integratie van InDesign Server. Het is echter mogelijk dat de meeste gebruikers niet meerdere van deze stappen nodig hebben. Adobe raadt u aan een aangepaste kopie van het workflowmodel voor [!UICONTROL DAM Update Asset] te maken en overbodige stappen te verwijderen. In dit geval werkt u de draagraketten voor [!UICONTROL DAM Update Asset] bij om naar het nieuwe model te verwijzen.
+Het [!UICONTROL DAM Update Asset] werkschema bevat een volledige reeks stappen die voor taken, zoals de generatie van Scene7 PTIFF en [!DNL Adobe InDesign Server] integratie worden gevormd. Het is echter mogelijk dat de meeste gebruikers niet meerdere van deze stappen nodig hebben. Adobe raadt u aan een aangepaste kopie van het [!UICONTROL DAM Update Asset] workflowmodel te maken en overbodige stappen te verwijderen. Werk in dit geval de draagraketten bij zodat deze [!UICONTROL DAM Update Asset] naar het nieuwe model verwijzen.
 
-Als u de [!UICONTROL DAM Update Asset] -workflow intensief uitvoert, kan de bestandsdatatastore aanzienlijk groter worden. De resultaten van een door Adobe uitgevoerd experiment hebben aangetoond dat de grootte van de datastore met ongeveer 400 GB kan toenemen als binnen 8 uur ongeveer 5500 workflows worden uitgevoerd.
+Als u de [!UICONTROL DAM Update Asset] workflow intensief uitvoert, kan de bestandsdatatastore aanzienlijk groter worden. De resultaten van een door Adobe uitgevoerd experiment hebben aangetoond dat de grootte van de datastore met ongeveer 400 GB kan toenemen als binnen 8 uur ongeveer 5500 workflows worden uitgevoerd.
 
 Het is een tijdelijke verhoging, en datastore wordt hersteld aan zijn originele grootte nadat u de taak van de datastore huisvuilinzameling in werking stelt.
 
 Typisch, loopt de de inzamelingstaak van de datastore wekelijks samen met andere geplande onderhoudstaken.
 
-Als u een beperkte schijfruimte hebt en [!UICONTROL DAM de werkschema&#39;s van de Activa] van de Update intensief in werking stelt, denk na vaker het plannen van de huisvuilinzamelingstaak.
+Als u een beperkte schijfruimte hebt en [!UICONTROL DAM Update Asset] werkschema&#39;s intensief in werking stelt, overweeg het plannen van de huisvuilinzamelingstaak vaker.
 
 #### Genereren van uitvoering bij uitvoering {#runtime-rendition-generation}
 
@@ -182,7 +185,7 @@ Een alternatieve benadering is Scene7-technologie te gebruiken om beeldmanipulat
 
 #### ImageMagick {#imagemagick}
 
-Als u de workflow [!UICONTROL DAM Update Asset] aanpast om uitvoeringen te genereren met ImageMagick, raadt Adobe u aan het `policy.xml` bestand te wijzigen op `/etc/ImageMagick/`. Standaard gebruikt ImageMagick de volledige beschikbare schijfruimte op het volume van het besturingssysteem en het beschikbare geheugen. Breng de volgende configuratieveranderingen binnen de `policymap` sectie van `policy.xml` aan om deze middelen te beperken.
+Als u de [!UICONTROL DAM Update Asset] workflow aanpast om uitvoeringen te genereren met ImageMagick, raadt Adobe u aan het `policy.xml` bestand op `/etc/ImageMagick/`. Standaard gebruikt ImageMagick de volledige beschikbare schijfruimte op het volume van het besturingssysteem en het beschikbare geheugen. Breng de volgende configuratieveranderingen binnen de `policymap` sectie van `policy.xml` aan om deze middelen te beperken.
 
 ```xml
 <policymap>
@@ -217,7 +220,7 @@ Met XMP-schrijfback wordt het oorspronkelijke element bijgewerkt wanneer metageg
 
 * Het element zelf wordt gewijzigd
 * Er wordt een versie van het element gemaakt
-* [!UICONTROL DAM Update-element] wordt uitgevoerd op het element
+* [!UICONTROL DAM Update Asset] wordt uitgevoerd met het element
 
 De vermelde resultaten verbruiken aanzienlijke middelen. Daarom raadt Adobe aan om de functie voor het terugdraaien [van XMP uit te](https://helpx.adobe.com/experience-manager/kb/disable-xmp-writeback.html)schakelen als dit niet verplicht is.
 
@@ -225,12 +228,12 @@ Het invoeren van een grote hoeveelheid meta-gegevens kan in middel-intensieve kr
 
 ## Replicatie {#replication}
 
-Als u elementen wilt repliceren naar een groot aantal publicatie-instanties, bijvoorbeeld in een Sites-implementatie, raadt Adobe u aan kettingreplicatie te gebruiken. In dit geval dupliceert de auteurinstantie naar één enkel publicatiegeval dat beurtelings aan andere publicatieinstanties herhaalt, die de auteursinstantie vrijmaken.
+Als u elementen wilt repliceren naar een groot aantal publicatie-instanties, bijvoorbeeld in een Sites-implementatie, raadt Adobe u aan kettingreplicatie te gebruiken. In dit geval dupliceert de auteurinstantie naar één enkel publicatiegeval dat beurtelings aan andere publiceert instanties herhaalt, die de auteursinstantie vrijmaken.
 
 ### Kettingreplicatie configureren {#configure-chain-replication}
 
 1. Bepaal op welke publicatie-instantie u de replicaties wilt koppelen
-1. Op die publicatieinstantie voeg replicatieagenten toe die aan andere publicatieinstanties richten
+1. Op die publicatieinstantie voegt replicatieagenten toe die aan andere publicatieinstanties richten
 1. Schakel op elk van die replicatieagents &quot;Bij ontvangst&quot; in op het tabblad &quot;Triggers&quot;
 
 >[!NOTE]
@@ -254,7 +257,7 @@ Sommige optimalisaties kunnen worden uitgevoerd op de indexconfiguraties van de 
 
 Als uw gebruikers geen full-text onderzoek van activa hoeven te doen, bijvoorbeeld, doorzoekend door tekst in Pdf- documenten, dan onbruikbaar maken. U verbetert indexprestaties door full-text indexering onbruikbaar te maken. Voer de volgende stappen uit om het uitnemen van [!DNL Apache Lucene] tekst uit te schakelen:
 
-1. Ga in [!DNL Experience Manager] interface naar [!UICONTROL Package Manager].
+1. In [!DNL Experience Manager] interface, toegang [!UICONTROL Package Manager].
 1. Upload en installeer het pakket beschikbaar op [disable_indexingbinarytextraction-10.zip](assets/disable_indexingbinarytextextraction-10.zip).
 
 ### Totaal raden {#guess-total}
@@ -304,4 +307,4 @@ Om latentie te minimaliseren en hoge productie door efficiënt gebruik van cpu e
 * Vorm werkschema en versie het zuiveren.
 * Optimaliseer indexen met de recentste de dienstpakken en hotfixes. Raadpleeg de klantenservice van Adobe voor eventuele extra indexoptimalisaties die beschikbaar zijn.
 * Gebruik radenTotal om queryprestaties te optimaliseren.
-* Als u configureert [!DNL Experience Manager] om bestandstypen te detecteren vanuit de inhoud van de bestanden (door CQ DAM Mime Type Service **[!UICONTROL op]** dag in te schakelen in de **[!UICONTROL AEM-webconsole]**), uploadt u veel bestanden in bulk tijdens niet-piekuren omdat dit bronintensief is.
+* If you configure [!DNL Experience Manager] to detect file types from the content of the files (by enabling **[!UICONTROL Day CQ DAM Mime Type Service]** in the **[!UICONTROL AEM Web Console]**), upload many files in bulk during non-peak hours as it is resource-intensive.

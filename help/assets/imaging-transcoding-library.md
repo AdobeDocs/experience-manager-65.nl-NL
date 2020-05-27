@@ -3,9 +3,9 @@ title: Afbeeldingstransformatiebibliotheek
 description: Leer hoe u de Imaging Transcoding Library van Adobe configureert en gebruikt, een oplossing voor beeldverwerking die kernfuncties voor het verwerken van afbeeldingen kan uitvoeren, zoals codering, transcodering, het resamplen van afbeeldingen en het vergroten of verkleinen van afbeeldingen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '942'
 ht-degree: 0%
 
 ---
@@ -55,10 +55,10 @@ De opdrachtregelargumenten voor de bibliotheek voor het transformeren van afbeel
 
 U kunt de volgende opties voor de `-resize` parameter vormen:
 
-* `X`: `Works similar to AEM. For example -resize 319.`
-* `WxH`: `Aspect Ratio will not be maintained, For example -resize 319X319.`
-* `Wx`: `Fixes the width and calculates the height maintaining the aspect ratio. For example -resize 319x.`
-* `xH`: `Fixes the height and calculates the width maintaining the aspect ratio. For example -resize x319.`
+* `X`: Werkt vergelijkbaar met Experience Manager. Bijvoorbeeld -resize 319.
+* `WxH`: De hoogte-breedteverhouding wordt bijvoorbeeld niet behouden `-resize 319x319`.
+* `Wx`: Hiermee stelt u de breedte vast en berekent u de hoogte met behoud van de hoogte-breedteverhouding. Bijvoorbeeld `-resize 319x`.
+* `xH`: Hiermee stelt u de hoogte vast en berekent u de breedte met behoud van de hoogte-breedteverhouding. Bijvoorbeeld `-resize x319`.
 
 ```shell
  -AllowUpsampling (Resizes smaller images)
@@ -74,7 +74,7 @@ Om ITL verwerking te vormen, creeer een configuratiedossier en werk het werksche
 
 Als u de bibliotheek wilt configureren, maakt u een .conf-bestand om de bibliotheken aan te geven met de volgende stappen. U hebt beheerder- of basismachtigingen nodig.
 
-1. Download het [pakket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) Imaging Transcoding Library en installeer het met de Package Manager. Het pakket is compatibel met AEM 6.5.
+1. Download het [pakket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) Imaging Transcoding Library en installeer het met de Package Manager. Het pakket is compatibel met Experience Manager 6.5.
 
 1. Meld u aan bij de webconsole en klik op een bundel-id voor `com.day.cq.dam.cq-dam-switchengine`**[!UICONTROL OSGi > Bundles]**. U kunt ook de `https://[aem_server:[port]/system/console/bundles/` URL openen om de bundelconsole te openen. Zoek `com.day.cq.dam.cq-dam-switchengine` bundel en id.
 
@@ -92,7 +92,7 @@ Als u de bibliotheek wilt configureren, maakt u een .conf-bestand om de biblioth
 
 1. Voer `ldconfig` bevel uit om de noodzakelijke verbindingen en het geheime voorgeheugen tot stand te brengen.
 
-1. Bewerk het `.bash_profile` bestand in de account die wordt gebruikt om AEM te starten. Voeg toe `LD_LIBRARY_PATH` door het volgende toe te voegen.
+1. Bewerk het `.bash_profile` bestand in het account dat wordt gebruikt om Experience Manager te starten. Voeg toe `LD_LIBRARY_PATH` door het volgende toe te voegen.
 
    ```shell
    LD_LIBRARY_PATH=.
@@ -136,8 +136,9 @@ Als u bijvoorbeeld miniaturen wilt maken voor een TIFF-afbeelding met behulp van
 
 1. Synchroniseer het bijgewerkte [!UICONTROL DAM Update Asset] workflowmodel. Sla de workflow op.
 
-Controleer de configuratie, upload een TIFF-afbeelding en controleer het bestand error.log. Je zult berichten met `INFO` aanhalingstekens van `SwitchEngineHandlingProcess execute: executing command line`. In de logboeken worden de gegenereerde uitvoeringen vermeld. Nadat de workflow is voltooid, kunt u de nieuwe uitvoeringen weergeven in AEM.
+Controleer de configuratie, upload een TIFF-afbeelding en controleer het bestand error.log. Je zult berichten met `INFO` aanhalingstekens van `SwitchEngineHandlingProcess execute: executing command line`. In de logboeken worden de gegenereerde uitvoeringen vermeld. Nadat de workflow is voltooid, kunt u de nieuwe uitvoeringen weergeven in Experience Manager.
 
 >[!MORELIKETHIS]
 >
 >* [Ondersteund artikel voor MIME-typen](assets-formats.md#supported-image-transcoding-library)
+

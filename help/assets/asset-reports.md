@@ -1,11 +1,11 @@
 ---
 title: Rapporten over uw digitale middelen
-description: Lees rapporten over uw middelen in AEM Assets die u helpen gebruik, activiteit, en het delen van uw digitale activa te begrijpen.
+description: Lees rapporten over uw middelen in de Middelen van de Manager van de Ervaring van Adobe die u helpen gebruik, activiteit, en het delen van uw digitale activa begrijpen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f66be5de3bbd0051cd677430d5187ace9337b98d
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '925'
 ht-degree: 12%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 12%
 
 # Asset Reports {#asset-reports}
 
-Asset Reporting is een belangrijk hulpmiddel om het nut van de implementatie van Adobe Experience Manager (AEM)-middelen te beoordelen. Met AEM Assets kunt u verschillende rapporten genereren voor uw digitale middelen. De rapporten bevatten nuttige informatie over het gebruik van uw systeem, over de manier waarop gebruikers met elementen werken en over de elementen die worden gedownload en gedeeld.
+Asset Reporting is een belangrijk hulpmiddel om het nut van de implementatie van Adobe Experience Manager-middelen te beoordelen. Met Middelen kunt u verschillende rapporten genereren voor uw digitale middelen. De rapporten bevatten nuttige informatie over het gebruik van uw systeem, over de manier waarop gebruikers met elementen werken en over de elementen die worden gedownload en gedeeld.
 
-Gebruik de informatie in de rapporten om zeer belangrijke succesmetriek af te leiden om de goedkeuring van activa AEM binnen uw onderneming en door klanten te meten.
+Gebruik de informatie in de rapporten om zeer belangrijke succesmetriek af te leiden om de goedkeuring van Activa binnen uw onderneming en door klanten te meten.
 
-Het rapportagekader voor AEM Assets gebruikt Sling-taken om rapportageaanvragen op geordende wijze asynchroon te verwerken. Het is schaalbaar voor grote opslagruimten. De asynchrone rapportverwerking verhoogt de efficiency en de snelheid waarmee de rapporten worden geproduceerd.
+Het framework voor middelenrapportage gebruikt slingerende taken om rapportageaanvragen op geordende wijze asynchroon te verwerken. Het is schaalbaar voor grote opslagruimten. De asynchrone rapportverwerking verhoogt de efficiency en de snelheid waarmee de rapporten worden geproduceerd.
 
 De interface van het rapportbeheer is intuïtief en omvat fijnkorrelige opties en controles om tot gearchiveerde rapporten toegang te hebben en de loopstatussen van het meningsrapport (succes, ontbroken, en een rij gevormd) in werking te stellen.
 
@@ -25,7 +25,7 @@ Wanneer een rapport wordt gegenereerd, ontvangt u een melding via e-mail (option
 
 ## Rapporten genereren {#generate-reports}
 
-AEM Assets produceert de volgende standaardrapporten voor u:
+De Elementen van de Manager van de ervaring produceert de volgende standaardrapporten voor u:
 
 * Uploaden
 * Downloaden
@@ -37,7 +37,7 @@ AEM Assets produceert de volgende standaardrapporten voor u:
 * Bestanden
 * Delen van koppeling
 
-AEM-beheerders kunnen deze rapporten eenvoudig genereren en aanpassen voor uw implementatie. Een beheerder kan deze stappen volgen om een rapport te produceren:
+De beheerders van de Manager van de ervaring kunnen deze rapporten voor uw implementatie gemakkelijk produceren en aanpassen. Een beheerder kan deze stappen volgen om een rapport te produceren:
 
 1. Klik in de interface van Experience Manager op **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Reports]**.
    ![](assets/AssetsReportNavigation.png)
@@ -79,7 +79,7 @@ AEM-beheerders kunnen deze rapporten eenvoudig genereren en aanpassen voor uw im
 
    ![](assets/files_report.png)
 
-   In het rapport **[!UICONTROL Link Share]** worden URL&#39;s weergegeven voor assets die vanuit AEM Assets worden gedeeld met externe gebruikers. Het bevat e-mail-id&#39;s van de gebruiker die de assets heeft gedeeld, e-mail-id&#39;s van gebruikers met wie de assets worden gedeeld, de datum van delen en de vervaldatum voor de koppeling. De kolommen kunnen niet worden aangepast.
+   In het rapport **[!UICONTROL Link Share]** worden URL&#39;s weergegeven voor assets die vanuit Assets worden gedeeld met externe gebruikers. Het bevat e-mail-id&#39;s van de gebruiker die de assets heeft gedeeld, e-mail-id&#39;s van gebruikers met wie de assets worden gedeeld, de datum van delen en de vervaldatum voor de koppeling. De kolommen kunnen niet worden aangepast.
 
    The **[!UICONTROL Link Share]** report, does not include options for sub-folders and renditions because it merely publishes the shared URLs that appear under `/var/dam/share`.
 

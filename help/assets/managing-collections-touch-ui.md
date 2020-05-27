@@ -4,9 +4,9 @@ description: Leer taken om verzamelingen met middelen te beheren, zoals verzamel
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '2065'
+source-wordcount: '2064'
 ht-degree: 12%
 
 ---
@@ -183,7 +183,7 @@ Gebruik de Schema-editor om de [!UICONTROL Properties] pagina met metagegevens a
 
 ## Verzamelingen zoeken {#searching-collections}
 
-U kunt inzamelingen van de console van Inzamelingen zoeken. Wanneer u met trefwoorden in het vak Zoeken zoekt, zoekt AEM-middelen naar verzamelingsnamen, metagegevens en de tags die aan de verzamelingen zijn toegevoegd.
+U kunt inzamelingen van de console van Inzamelingen zoeken. Wanneer u in het vak Zoeken met trefwoorden zoekt, zoekt Middelen naar namen van verzamelingen, metagegevens en de tags die aan de verzamelingen zijn toegevoegd.
 
 Als u zoekt naar verzamelingen op het hoogste niveau, worden alleen afzonderlijke verzamelingen geretourneerd in zoekresultaten. Elementen of mappen in de verzamelingen zijn uitgesloten. In alle andere gevallen (bijvoorbeeld in een afzonderlijke verzameling of in een mappenhiërarchie) worden alle relevante elementen, mappen en verzamelingen geretourneerd.
 
@@ -191,7 +191,7 @@ Als u zoekt naar verzamelingen op het hoogste niveau, worden alleen afzonderlijk
 
 Klik in de console Verzamelingen op een verzameling om deze te openen.
 
-In een verzameling is het zoeken naar AEM-middelen beperkt tot elementen (en de bijbehorende tags en metagegevens) in de verzameling die u bekijkt. Wanneer u in een map zoekt, worden alle overeenkomende elementen en onderliggende mappen in de huidige map geretourneerd. Wanneer u in een verzameling zoekt, worden alleen overeenkomende elementen, mappen en andere verzamelingen geretourneerd die directe leden van de verzameling zijn.
+In een verzameling is het zoeken in Experience Manager beperkt tot elementen (en de bijbehorende tags en metagegevens) in de verzameling die u bekijkt. Wanneer u in een map zoekt, worden alle overeenkomende elementen en onderliggende mappen in de huidige map geretourneerd. Wanneer u in een verzameling zoekt, worden alleen overeenkomende elementen, mappen en andere verzamelingen geretourneerd die directe leden van de verzameling zijn.
 
 ## Verzamelingsinstellingen bewerken {#editing-collection-settings}
 

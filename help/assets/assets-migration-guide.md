@@ -3,7 +3,10 @@ title: Migreer middelen bulksgewijs naar [!DNL Adobe Experience Manager Assets].
 description: Beschrijft hoe u elementen kunt overbrengen naar [!DNL Adobe Experience Manager], metagegevens kunt toepassen, uitvoeringen kunt genereren en deze kunt activeren om instanties te publiceren.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '1791'
+ht-degree: 8%
 
 ---
 
@@ -29,7 +32,7 @@ Voordat u daadwerkelijk een van de stappen in deze methodologie uitvoert, moet u
 >
 Deze software is opensource en valt onder de [Apache v2-licentie](https://adobe-consulting-services.github.io/pages/license.html). Om een vraag te stellen of een probleem te melden gaat u naar de respectieve [GitHub-problemen voor ACS AEM-tools](https://github.com/Adobe-Consulting-Services/acs-aem-commons/issues) en [ACS AEM Commons](https://github.com/Adobe-Consulting-Services/acs-aem-tools/issues).
 
-## Migreren naar [!DNL Experience Manager]{#migrating-to-aem}
+## Migreren naar [!DNL Experience Manager] {#migrating-to-aem}
 
 Het migreren van activa aan [!DNL Experience Manager] vereist verscheidene stappen en zou als gefaseerd proces moeten worden beschouwd. De fasen van de migratie zijn als volgt:
 
@@ -44,7 +47,7 @@ Het migreren van activa aan [!DNL Experience Manager] vereist verscheidene stapp
 
 ### Workflows uitschakelen {#disabling-workflows}
 
-Voordat u de migratie start, moet u de draagraketten voor de workflow [!UICONTROL DAM Update Asset] uitschakelen. U kunt het beste alle elementen in het systeem opnemen en de workflows vervolgens in batches uitvoeren. Als u al woont terwijl de migratie plaatsvindt, kunt u deze activiteiten plannen om op off-hours te lopen.
+Voordat u de migratie start, moet u de draagraketten voor de [!UICONTROL DAM Update Asset] workflow uitschakelen. U kunt het beste alle elementen in het systeem opnemen en de workflows vervolgens in batches uitvoeren. Als u al woont terwijl de migratie plaatsvindt, kunt u deze activiteiten plannen om op off-hours te lopen.
 
 ### Labels laden {#loading-tags}
 
@@ -69,13 +72,13 @@ De andere manier om elementen in te nemen is het ophalen van elementen van het l
 
 #### Ophalen uit het lokale bestandssysteem {#pulling-from-the-local-filesystem}
 
-De CSV Asset Importer [van](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) ACS AEM Tools haalt elementen van het bestandssysteem en de metagegevens van elementen van een CSV-bestand voor het importeren van elementen. De API van de Manager van Elementen AEM wordt gebruikt om de activa in het systeem in te voeren en de gevormde meta-gegevenseigenschappen toe te passen. In het ideale geval worden elementen op de server gemonteerd via een netwerkbestandsinstallatie of via een externe schijf.
+De CSV Asset Importer [van](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) ACS AEM Tools haalt elementen van het bestandssysteem en de metagegevens van elementen van een CSV-bestand voor het importeren van elementen. De API van de Manager van de Activa van de Ervaring wordt gebruikt om de activa in het systeem in te voeren en de gevormde meta-gegevenseigenschappen toe te passen. In het ideale geval worden elementen op de server gemonteerd via een netwerkbestandsinstallatie of via een externe schijf.
 
 Aangezien elementen niet via een netwerk hoeven te worden verzonden, verbeteren de algehele prestaties aanzienlijk en wordt deze methode over het algemeen beschouwd als de meest efficiënte manier om elementen in de opslagplaats te laden. Bovendien kunt u, omdat het gereedschap metagegevens ondersteunt, alle elementen en metagegevens in één stap importeren in plaats van ook een tweede stap te maken om de metagegevens toe te passen met een apart gereedschap.
 
 ### Procesuitvoeringen {#processing-renditions}
 
-Nadat u de elementen in het systeem hebt geladen, moet u ze verwerken via de workflow [!UICONTROL DAM-element] bijwerken om metagegevens te extraheren en uitvoeringen te genereren. Voordat u deze stap uitvoert, moet u de workflow [!UICONTROL DAM Update Asset] dupliceren en aanpassen aan uw wensen. Het uit-van-de-doos werkschema bevat vele stappen die niet noodzakelijk voor u, zoals de generatie van Scene7 PTIFF of [!DNL InDesign Server] integratie kunnen zijn.
+Nadat u de elementen in het systeem hebt geladen, moet u ze verwerken via de [!UICONTROL DAM Update Asset] workflow om metagegevens te extraheren en uitvoeringen te genereren. Voordat u deze stap uitvoert, moet u de [!UICONTROL DAM Update Asset] workflow dupliceren en aanpassen aan uw wensen. Het uit-van-de-doos werkschema bevat vele stappen die niet noodzakelijk voor u, zoals de generatie van Scene7 PTIFF of [!DNL InDesign Server] integratie kunnen zijn.
 
 Nadat u de werkstroom volgens uw behoeften hebt gevormd, hebt u twee opties om het uit te voeren:
 
@@ -110,7 +113,7 @@ Nadat de elementen zijn geactiveerd, kunt u de publicatieinstantie klonen om zov
 
 ### Workflows inschakelen {#enabling-workflows}
 
-Nadat de migratie is voltooid, moeten de draagraketten voor de [!UICONTROL DAM Update Asset] -workflows opnieuw worden ingeschakeld ter ondersteuning van het genereren van vertoningen en het ophalen van metagegevens voor doorlopend dagelijks systeemgebruik.
+Nadat de migratie is voltooid, moeten de draagraketten voor de [!UICONTROL DAM Update Asset] workflows opnieuw worden ingeschakeld om het genereren van vertoningen en het ophalen van metagegevens te ondersteunen voor doorlopend systeemgebruik van dag tot dag.
 
 ## Migreren naar meerdere [!DNL Experience Manager] implementaties {#migrating-between-aem-instances}
 
@@ -118,7 +121,7 @@ Hoewel het bijna niet zo gebruikelijk is, moet u soms grote hoeveelheden gegeven
 
 In dit geval worden uw elementen al gevuld met metagegevens en worden er al uitvoeringen gegenereerd. U kunt zich eenvoudig concentreren op het verplaatsen van elementen van de ene naar de andere instantie. Tijdens het migreren tussen [!DNL Experience Manager] instanties voert u de volgende stappen uit:
 
-1. Workflows uitschakelen: Omdat u uitvoeringen samen met onze elementen migreert, wilt u de werkstroomstarters voor de workflow [!UICONTROL DAM Update Asset] uitschakelen.
+1. Workflows uitschakelen: Omdat u uitvoeringen samen met onze elementen migreert, wilt u de draagraketten voor de workflow uitschakelen. [!UICONTROL DAM Update Asset]
 
 1. Labels migreren: Omdat de tags al in de [!DNL Experience Manager] broninstantie zijn geladen, kunt u ze in een inhoudspakket samenstellen en het pakket op de doelinstantie installeren.
 
@@ -131,4 +134,4 @@ In dit geval worden uw elementen al gevuld met metagegevens en worden er al uitv
 
 1. Kloonpublicatie: Net als bij een nieuwe migratie is het efficiënter om één publicatieexemplaar te laden en te klonen dan de inhoud op beide knooppunten te activeren. Zie Publiceren [klonen.](#cloning-publish)
 
-1. Workflows inschakelen: Nadat u de migratie hebt voltooid, schakelt u de draagraketten voor de [!UICONTROL DAM Update Asset] -workflow opnieuw in om het genereren van vertoningen en het ophalen van metagegevens te ondersteunen voor doorlopend systeemgebruik van dag tot dag.
+1. Workflows inschakelen: Nadat u de migratie hebt voltooid, schakelt u de draagraketten voor de [!UICONTROL DAM Update Asset] workflow opnieuw in om het genereren van vertoningen en het ophalen van metagegevens te ondersteunen voor doorlopend systeemgebruik van dag tot dag.

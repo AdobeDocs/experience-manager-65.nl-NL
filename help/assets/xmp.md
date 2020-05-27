@@ -1,30 +1,33 @@
 ---
-title: Ondersteuning voor XMP-metagegevens in AEM-elementen
-description: Meer informatie over de XMP-metagegevensstandaard (Extensible Metadata Platform) die door AEM Assets wordt gebruikt voor metagegevensbeheer. XMP biedt een standaardindeling voor het maken, verwerken en uitwisselen van metagegevens voor een groot aantal toepassingen.
+title: Ondersteuning voor XMP-metagegevens in Adobe Experience Manager-middelen.
+description: Meer informatie over de XMP-metagegevensstandaard (Extensible Metadata Platform) die wordt gebruikt door Experience Manager Assets voor metagegevensbeheer. XMP biedt een standaardindeling voor het maken, verwerken en uitwisselen van metagegevens voor een groot aantal toepassingen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '817'
+ht-degree: 18%
 
 ---
 
 
-# XMP-metagegevens {#xmp-metadata}
+# XMP-metadata {#xmp-metadata}
 
-XMP (Extensible Metadata Platform) is de metagegevensstandaard die wordt gebruikt door AEM Assets voor al het metagegevensbeheer. XMP biedt een standaardindeling voor het maken, verwerken en uitwisselen van metagegevens voor een groot aantal toepassingen.
+XMP (Extensible Metadata Platform) is de metagegevensstandaard die wordt gebruikt door Adobe Experience Manager-middelen voor al het metagegevensbeheer. XMP biedt een standaardindeling voor het maken, verwerken en uitwisselen van metagegevens voor een groot aantal toepassingen.
 
-XMP biedt niet alleen universele metagegevenscodering die in alle bestandsindelingen kan worden ingesloten, maar biedt ook een rijk [inhoudsmodel](xmp.md#xmp-core-concepts) en wordt [ondersteund door Adobe](xmp.md#advantages-of-xmp) en andere bedrijven, zodat gebruikers van XMP in combinatie met AEM Assets een krachtig platform hebben waarop kan worden gebouwd.
+XMP biedt niet alleen universele metagegevenscodering die in alle bestandsindelingen kan worden ingesloten, maar biedt ook een rijk [inhoudsmodel](xmp.md#xmp-core-concepts) en wordt [ondersteund door Adobe](xmp.md#advantages-of-xmp) en andere bedrijven, zodat gebruikers van XMP in combinatie met Middelen een krachtig platform hebben waarop kan worden voortgebouwd.
 
 De [XMP-specificatie](https://www.adobe.com/devnet/xmp.html) is verkrijgbaar bij Adobe.
 
 ## Wat is XMP? {#what-is-xmp}
 
-AEM Assets biedt native ondersteuning voor het XMP - het Extensible Metadata Platform onder leiding van Adobe. XMP is een standaard voor het verwerken en opslaan van gestandaardiseerde en merkgebonden metagegevens in digitale elementen. XMP is ontworpen als de algemene standaard die meerdere toepassingen in staat stelt effectief met metagegevens te werken.
+Middelen bieden native ondersteuning voor het XMP - het Extensible Metadata Platform onder leiding van Adobe. XMP is een standaard voor het verwerken en opslaan van gestandaardiseerde en merkgebonden metagegevens in digitale elementen. XMP is ontworpen als de algemene standaard die meerdere toepassingen in staat stelt effectief met metagegevens te werken.
 
-Productieprofessionals gebruiken bijvoorbeeld de ingebouwde XMP-ondersteuning in Adobe-toepassingen om informatie door te geven in meerdere bestandsindelingen. De AEM Assets-opslagplaats extraheert de XMP-metagegevens en gebruikt deze om de levenscyclus van de inhoud te beheren en biedt de mogelijkheid om automatiseringsworkflows te maken.
+Productieprofessionals gebruiken bijvoorbeeld de ingebouwde XMP-ondersteuning in Adobe-toepassingen om informatie door te geven in meerdere bestandsindelingen. De gegevensopslagplaats van activa haalt de meta-gegevens XMP uit en gebruikt het om de inhoudslevenscyclus te beheren en biedt de capaciteit om automatiseringswerkschema&#39;s tot stand te brengen.
 
 XMP is gestandaardiseerd hoe metagegevens worden gedefinieerd, gemaakt en verwerkt door een gegevensmodel, een opslagmodel en schema&#39;s op te geven. Al deze concepten worden behandeld in deze sectie.
 
-Alle oudere metagegevens van EXIF, ID3 of Microsoft Office worden automatisch vertaald naar XMP, dat kan worden uitgebreid voor ondersteuning van klantspecifiek metagegevensschema, zoals productcatalogi.
+Alle oudere metagegevens van EXIF, ID3 of Microsoft Office worden automatisch vertaald naar XMP, dat kan worden uitgebreid ter ondersteuning van klantspecifiek metagegevensschema, zoals productcatalogi.
 
 Metagegevens in XMP bestaan uit een set eigenschappen. Deze eigenschappen worden altijd geassocieerd met een bepaalde entiteit die als middel wordt bedoeld; dat wil zeggen dat de eigenschappen &quot;over&quot; de bron zijn. In het geval van XMP is de bron altijd het element.
 
@@ -34,9 +37,9 @@ Adobe heeft de XMP-standaard voor het eerst geïntroduceerd als onderdeel van he
 
 ### XMP-ecosysteem {#xmp-ecosystem}
 
-XMP definieert een [metagegevensmodel](https://en.wikipedia.org/wiki/Metadata) dat kan worden gebruikt met elke gedefinieerde set metagegevensitems. XMP definieert ook bepaalde [schema&#39;s](https://en.wikipedia.org/wiki/XML_schema) voor basiseigenschappen die nuttig zijn voor het opnemen van de geschiedenis van een bron tijdens het doorlopen van meerdere verwerkingsstappen, van het fotograferen, [scannen](https://en.wikipedia.org/wiki/Image_scanner)of ontwerpen als tekst, via fotomewerkingsstappen (zoals [uitsnijden](https://en.wikipedia.org/wiki/Cropping_%28image%29) of kleuraanpassing) tot het samenvoegen in een uiteindelijke afbeelding. Met XMP kan elk softwareprogramma of apparaat onderweg zijn eigen informatie toevoegen aan een digitale bron, die vervolgens in het uiteindelijke digitale bestand kan worden bewaard.
+XMP definieert een [metadatamodel](https://nl.wikipedia.org/wiki/Metadata) dat kan worden gebruikt met elke gedefinieerde set metadataitems. XMP definieert ook bepaalde [schema&#39;s](https://nl.wikipedia.org/wiki/XML_schema) voor basiseigenschappen die nuttig zijn voor het opnemen van de geschiedenis van een resource tijdens het doorlopen van meerdere verwerkingsstappen, van het fotograferen, [scannen](https://en.wikipedia.org/wiki/Image_scanner) of ontwerpen als tekst, het doorlopen van fotobewerkingsstappen (zoals [bijsnijden](https://en.wikipedia.org/wiki/Cropping_%28image%29) of kleuraanpassing) tot het samenvoegen in een uiteindelijke afbeelding. Met XMP kan elk softwareprogramma of apparaat in de loop van de tijd zijn eigen informatie toevoegen aan een digitale resource, die vervolgens in het uiteindelijke digitale bestand kan worden bewaard.
 
-XMP wordt het meest algemeen geserialiseerd en opgeslagen gebruikend een ondergroep van het Kader [van de Beschrijving van het](https://en.wikipedia.org/wiki/World_Wide_Web_Consortium) Middel [W3C](https://en.wikipedia.org/wiki/Resource_Description_Framework) (RDF), dat beurtelings in [XML](https://en.wikipedia.org/wiki/XML)wordt uitgedrukt.
+XMP wordt doorgaans geserialiseerd en opgeslagen met behulp van een subset van het [W3C](https://nl.wikipedia.org/wiki/World_Wide_Web_Consortium) [Resource Description Framework](https://nl.wikipedia.org/wiki/Resource_Description_Framework) (RDF), dat op zijn beurt wordt uitgedrukt in [XML](https://nl.wikipedia.org/wiki/XML).
 
 ## Voordelen van XMP {#advantages-of-xmp}
 

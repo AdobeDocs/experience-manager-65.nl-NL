@@ -3,9 +3,9 @@ title: Editor van element uitbreiden
 description: Leer hoe u de mogelijkheden van de Asset Editor uitbreidt met behulp van aangepaste componenten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5cea9ed3be322cb8dedfbc6cb38abbdb72d0b7b7
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '695'
 ht-degree: 13%
 
 ---
@@ -17,7 +17,7 @@ De Asset Editor is de pagina die wordt geopend wanneer op een element wordt gekl
 
 De configuratie van de redacteur die de vooraf bepaalde het uitgeven componenten gebruikt wordt behandeld in het [Creëren van en het Vormen van een Pagina](assets-finder-editor.md#creating-and-configuring-an-asset-editor-page)van de Redacteur van Activa.
 
-Ontwikkelaars van Adobe Experience Manager (AEM) kunnen niet alleen bestaande editorcomponenten gebruiken, maar ook hun eigen componenten maken.
+Naast het gebruik van reeds bestaande editorcomponenten, kunnen de ontwikkelaars van de Manager van de Ervaring van Adobe ook hun eigen componenten tot stand brengen.
 
 ## Een sjabloon voor de Asset Editor maken {#creating-an-asset-editor-template}
 
@@ -29,9 +29,9 @@ De volgende voorbeeldpagina&#39;s worden opgenomen in Geometrixx:
 
 ### Clientlib configureren {#configuring-clientlib}
 
-Componenten van AEM-elementen gebruiken een extensie van de WCM-bewerkingsclient. De clientlibs worden meestal in geladen `init.jsp`.
+Elementen gebruiken een extensie van de WCM-bewerkingsclient. De clientlibs worden meestal in geladen `init.jsp`.
 
-Vergeleken met het standaard clientlib laden (in core&#39;s `init.jsp`), moet een AEM middelenmalplaatje het volgende hebben:
+Vergeleken met het standaard clientlib laden (in kern `init.jsp`), moet een malplaatje van Activa het volgende hebben:
 
 * De sjabloon moet de `cq.dam.edit` clientlib bevatten (in plaats van `cq.wcm.edit`).
 
@@ -41,7 +41,7 @@ In de meeste gevallen moet het kopiëren van het bestaande monster `init.jsp` (`
 
 ### JS-handelingen configureren {#configuring-js-actions}
 
-Voor sommige componenten van AEM-elementen zijn JS-functies vereist die in `component.js`dit hoofdstuk zijn gedefinieerd. Kopieer dit bestand naar de map met componenten en koppel deze.
+Voor sommige elementen worden JS-functies gedefinieerd in `component.js`. Kopieer dit bestand naar de map met componenten en koppel deze.
 
 ```javascript
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>
@@ -51,7 +51,7 @@ In het voorbeeld wordt deze javascript-bron geladen in `head.jsp`(`/apps/geometr
 
 ### Aanvullende stijlbladen {#additional-style-sheets}
 
-Sommige componenten van AEM-elementen gebruiken de AEM-widget-bibliotheek. Om correct in de inhoudscontext te worden teruggegeven, moet een extra stijlblad worden geladen. Voor de component Handeling tag is nog een component vereist.
+Sommige middelencomponenten gebruiken de widgetbibliotheek. Om correct in de inhoudscontext te worden teruggegeven, moet een extra stijlblad worden geladen. Voor de component Handeling tag is nog een component vereist.
 
 ```css
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">

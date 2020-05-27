@@ -10,7 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 5c0fec99-7b1e-45d6-a115-e498d288e9e1
 translation-type: tm+mt
-source-git-commit: e3683f6254295e606e9d85e88979feaaea76c42e
+source-git-commit: f951c195c581f770dcc87fdf4a89d40ee6dd9ec0
+workflow-type: tm+mt
+source-wordcount: '1322'
+ht-degree: 0%
 
 ---
 
@@ -140,13 +143,13 @@ Inhoud die is gemaakt van de AEM-ontwerpinstantie wordt eerst naar de publicatie
 >[!NOTE]
 >
 >Als u niet replicatie URL wilt gebruiken maar in plaats daarvan publiek-onder ogen ziet URL gebruiken, kunt u **Openbare URL** in de volgende configuratie plaatsen die in OSGi (**Hulpmiddelen** > de Console **van het** Web > Configuratie **OSGi > de Integratie van de Campagne AEM - Configuratie**) plaatst:
-**** Openbare URL: com.day.cq.mcm.campagne.impl.IntegrationConfigImpl#aem.mcm.campagne.publicUrl
+**Openbare URL:** com.day.cq.mcm.campagne.impl.IntegrationConfigImpl#aem.mcm.campagne.publicUrl
 
 Deze stap is ook nodig om bepaalde configuraties van ontwerpinstanties te repliceren in de publicatieinstantie.
 
 Om replicatie tussen AEM instanties te vormen:
 
-1. Selecteer in de ontwerpinstantie **AEM-logo**> **Tools **icon > **Deployment** > **Replication** > **Agents op auteur** en klik vervolgens op **Default Agent**.
+1. Selecteer in de ontwerpinstantie **AEM-logo**> **Extra** > **Implementatie** > **Replicatie** > **Agents op auteur****** en klik vervolgens op Default Agent.
 
    ![chlimage_1-126](assets/chlimage_1-126a.png)
 
@@ -176,7 +179,7 @@ Voordat u AEM en Adobe Campaign samen kunt gebruiken, moet u het verband tussen 
 
 1. Selecteer **Verbinding maken met Adobe-campagne** en klik op **OK**.
 
-   ![chlimage_1-129](assets/chlimage_1-129a.png)
+   ![chlimage_1-127](assets/chlimage_1-129a.png)
 
    >[!NOTE]
    Nadat u uw e-mail hebt [gemaakt en deze](/help/sites-authoring/campaign.md)hebt gepubliceerd, moet u de configuratie opnieuw publiceren naar uw publicatie-exemplaar.
@@ -198,5 +201,5 @@ Zie [De externalizer](/help/sites-developing/externalizer.md) configureren voor 
 
 Als de component verwijst naar `localhost:4503` een andere server die niet kan worden bereikt met Adobe Campaign, worden de afbeeldingen niet weergegeven op de Adobe Campaign-console.
 
-![chlimage_1-135](assets/chlimage_1-131a.png)
+![chlimage_1-131](assets/chlimage_1-131a.png)
 

@@ -3,9 +3,9 @@ title: Metagegevensprofielen om de metagegevensvereisten van elementen aan te pa
 description: Informatie over metagegevensprofielen voor elementen. Leer hoe u een metagegevensprofiel maakt en toepast op mapelementen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '1307'
+source-wordcount: '1310'
 ht-degree: 16%
 
 ---
@@ -33,7 +33,7 @@ Met een metagegevensprofiel kunt u standaardmetagegevens toepassen op elementen 
    * **[!UICONTROL Map to Property]**: De waarde van deze eigenschap geeft het relatieve pad/de naam naar het knooppunt met middelen waar het wordt opgeslagen in de opslagplaats. De waarde moet altijd beginnen met `./` omdat dit aangeeft dat het pad zich onder het knooppunt van het element bevindt.
    ![chlimage_1-199](assets/chlimage_1-482.png)
 
-   The value you specify for **[!UICONTROL Map to property]** is stored as a property under the asset&#39;s metadata node. Als u bijvoorbeeld `/jcr:content/metadata/dc:desc` als naam van **[!UICONTROL Map to property]**, slaat AEM Middelen de waarde `dc:desc` bij de de meta-gegevensknoop van het middel op.
+   The value you specify for **[!UICONTROL Map to property]** is stored as a property under the asset&#39;s metadata node. Als u bijvoorbeeld `/jcr:content/metadata/dc:desc` als naam van **[!UICONTROL Map to property]**, slaat Middelen de waarde `dc:desc` bij de de meta-gegevensknoop van het middel op.
 
    * **[!UICONTROL Default Value]**: Gebruik deze eigenschap om een standaardwaarde voor de metagegevenscomponent toe te voegen. Als u bijvoorbeeld &quot;Mijn beschrijving&quot; opgeeft, wordt deze waarde toegewezen aan de eigenschap `dc:desc` in het metagegevensknooppunt van het element.
    ![chlimage_1-200](assets/chlimage_1-483.png)
@@ -106,7 +106,7 @@ U kunt elementen in een map opnieuw verwerken die al een bestaand videoprofiel h
 
 Voer de stappen uit om het metagegevensprofiel toe te passen:
 
-1. Click the AEM logo and navigate to **[!UICONTROL Tools > Assets > Metadata Profiles]**.
+1. Klik op het logo van Experience Manager en navigeer naar **[!UICONTROL Tools > Assets > Metadata Profiles]**.
 1. Selecteer het metagegevensprofiel dat u wilt toepassen op een of meerdere mappen.
 
    ![chlimage_1-207](assets/chlimage_1-490.png)
@@ -126,7 +126,7 @@ Voer de stappen uit om het metagegevensprofiel toe te passen:
 
 ### Een metagegevensprofiel algemeen toepassen {#applying-a-metadata-profile-globally}
 
-Naast het toepassen van een profiel op een map, kunt u ook een profiel globaal toepassen, zodat het geselecteerde profiel wordt toegepast op inhoud die in AEM-elementen in een map is geüpload.
+Naast het toepassen van een profiel op een map, kunt u er ook een globaal toepassen, zodat het geselecteerde profiel wordt toegepast op inhoud die wordt geüpload naar de middelen van Experience Manager in elke map.
 
 U kunt elementen opnieuw verwerken in een map die al een bestaand metagegevensprofiel heeft dat u later hebt gewijzigd. Zie Elementen [opnieuw verwerken in een map nadat u het verwerkingsprofiel](processing-profiles.md#reprocessing-assets)hebt bewerkt.
 
@@ -148,7 +148,7 @@ You can remove a metadata profile from a folder from within the **[!UICONTROL To
 
 ### Metaprofielen uit mappen verwijderen via de gebruikersinterface Profielen {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
-1. Click the AEM logo and navigate to **[!UICONTROL Tools > Assets > Metadata Profiles]**.
+1. Klik op het logo van Experience Manager en navigeer naar **[!UICONTROL Tools > Assets > Metadata Profiles]**.
 1. Selecteer het metagegevensprofiel dat u uit een of meerdere mappen wilt verwijderen.
 1. Click **[!UICONTROL Remove Metadata Profile from Folder(s)]** and select the folder or multiple folders you want use to remove a profile from and click **[!UICONTROL Done]**.
 
@@ -156,7 +156,7 @@ You can remove a metadata profile from a folder from within the **[!UICONTROL To
 
 ### Metagegevensprofielen uit mappen verwijderen via eigenschappen {#removing-metadata-profiles-from-folders-via-properties}
 
-1. Klik op het AEM-logo en navigeer **[!UICONTROL Assets]** naar de map waarvan u een metagegevensprofiel wilt verwijderen.
+1. Klik op het logo van Experience Manager en navigeer **[!UICONTROL Assets]** naar de map waaruit u een metagegevensprofiel wilt verwijderen.
 1. Klik in de map op het vinkje om het te selecteren en klik vervolgens **[!UICONTROL Properties]**.
 1. Selecteer het tabblad **[!UICONTROL Metadata Profiles]**, selecteer **[!UICONTROL None]** in het vervolgkeuzemenu en klik op **[!UICONTROL Save]**. Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
 

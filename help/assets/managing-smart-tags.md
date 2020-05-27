@@ -3,7 +3,10 @@ title: Slimme tags en zoekopdrachten beheren
 description: Onnauwkeurige slimme tags bijwerken of verwijderen om de relevantie van tags te verbeteren
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c7d0bcbf39adfc7dfd01742651589efb72959603
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '439'
+ht-degree: 0%
 
 ---
 
@@ -22,15 +25,15 @@ U kunt ook een hogere rangorde aan een tag toewijzen om de relevantie ervan voor
 
 1. Zoek in het vak Onderzoek naar elementen op basis van een tag.
 1. Controleer de zoekresultaten om een afbeelding te identificeren die u niet relevant vindt voor uw zoekopdracht.
-1. Selecteer de afbeelding en klik op **[!UICONTROL Codes]** beheren op de werkbalk.
-1. Controleer de tags op de pagina **[!UICONTROL Codes]** beheren. Als u niet wilt dat de afbeelding wordt doorzocht op basis van een specifiek label, selecteert u het label en klikt u op **[!UICONTROL Verwijderen]** op de werkbalk. U kunt ook op het `X` symbool naast het label klikken.
-1. Als u een hogere rang aan een tag wilt toewijzen, selecteert u de tag en klikt u op **[!UICONTROL Promote]** op de werkbalk. Het label dat u wilt promoten, wordt verplaatst naar de sectie **[!UICONTROL Codes]** .
+1. Select the image, and click **[!UICONTROL Manage Tags]** from the toolbar.
+1. Controleer de tags op de **[!UICONTROL Manage Tags]** pagina. Als u niet wilt dat de afbeelding wordt doorzocht op basis van een specifiek label, selecteert u het label en klikt u vervolgens op **[!UICONTROL Delete]** de werkbalk. U kunt ook op het `X` symbool naast het label klikken.
+1. Als u een hogere rangorde aan een tag wilt toewijzen, selecteert u de tag en klikt u op **[!UICONTROL Promote]** de werkbalk. De tag die u promoot, wordt verplaatst naar de **[!UICONTROL Tags]** sectie.
 1. Click **[!UICONTROL Save]**, and then click **[!UICONTROL OK]** to close the Success dialog.
 1. Navigeer naar de pagina met eigenschappen voor de afbeelding. Let erop dat de tag die u hebt bevorderd een grote relevantie krijgt en daarom hoger wordt weergegeven in de zoekresultaten.
 
-## AEM-zoekresultaten begrijpen met slimme tags {#understandsearch}
+## De zoekresultaten van Experience Manager begrijpen met slimme tags {#understandsearch}
 
-Standaard combineert AEM-zoekopdrachten de zoektermen met een `AND` component. Het gebruik van slimme tags verandert dit standaardgedrag niet. Als u slimme tags gebruikt, voegt u een extra `OR` component toe om te zoeken naar zoektermen in de lijst, worden slimme tags toegepast. For example, consider searching for `woman running`. Elementen met alleen `woman` of alleen `running` trefwoorden in de metagegevens worden niet standaard in de zoekresultaten weergegeven. Een element dat is gelabeld met slimme tags `woman` `running` of met slimme tags, wordt echter weergegeven in een dergelijke zoekopdracht. De zoekresultaten zijn dus een combinatie van:
+Standaard combineert de zoekfunctie van Experience Manager de zoektermen met een `AND` component. Het gebruik van slimme tags verandert dit standaardgedrag niet. Als u slimme tags gebruikt, voegt u een extra `OR` component toe om te zoeken naar zoektermen in de lijst, worden slimme tags toegepast. For example, consider searching for `woman running`. Elementen met alleen `woman` of alleen `running` trefwoorden in de metagegevens worden niet standaard in de zoekresultaten weergegeven. Een element dat is gelabeld met slimme tags `woman` `running` of met slimme tags, wordt echter weergegeven in een dergelijke zoekopdracht. De zoekresultaten zijn dus een combinatie van:
 
 * elementen met `woman` en `running` trefwoorden in de metagegevens.
 

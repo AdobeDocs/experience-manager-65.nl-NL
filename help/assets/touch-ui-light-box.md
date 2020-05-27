@@ -1,11 +1,11 @@
 ---
-title: Lichtbak als galerie met persoonlijke afbeeldingen in AEM-elementen
-description: Meer informatie over Lichtbak als persoonlijke galerie voor afbeeldingen in AEM Assets.
+title: Lichtbak als persoonlijke afbeeldingsgalerie in Adobe Experience Manager-middelen.
+description: Leer meer over Lichtbak als persoonlijke afbeeldingengalerie in Adobe Experience Manager-middelen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '249'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 Lichtbak is een speciaal type verzameling dat eenvoudig toegang biedt tot elementen. U kunt snel toegang krijgen tot Lichtbak om elementen toe te voegen of te verwijderen. Het fungeert als een persoonlijke galerie voor afbeeldingen.
 
-Als u een gebruiker van de Middelen van de Manager van de Ervaring van Adobe (AEM) bent, wordt Lichtbak automatisch gecreeerd wanneer u eerste login aan de toepassing. Dit is exclusief voor uw aanmelding. Andere gebruikers hebben geen toegang tot uw lichtbak.
+Als u Adobe Experience Manager Assets gebruikt, wordt er automatisch een lichtbak gemaakt wanneer u zich voor het eerst aanmeldt bij de toepassing. Dit is exclusief voor uw aanmelding. Andere gebruikers hebben geen toegang tot uw lichtbak.
 
 ## Elementen toevoegen aan lichtbak {#adding-assets-to-lightbox}
 

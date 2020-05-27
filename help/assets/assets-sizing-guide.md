@@ -1,11 +1,11 @@
 ---
 title: Hulplijn voor middelengrootte
-description: Aanbevolen werkwijzen om efficiënte meetgegevens te bepalen om de infrastructuur en de middelen te schatten die worden vereist om AEM Middelen op te stellen.
+description: Tips en trucs om efficiënte metriek te bepalen om de infrastructuur en de middelen te schatten die worden vereist om de Middelen van de Manager van de Ervaring van Adobe op te stellen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '1648'
+source-wordcount: '1659'
 ht-degree: 0%
 
 ---
@@ -13,28 +13,28 @@ ht-degree: 0%
 
 # Hulplijn voor middelengrootte {#assets-sizing-guide}
 
-Wanneer u de omgeving instelt op een implementatie van Adobe Experience Manager (AEM), is het belangrijk dat er voldoende bronnen beschikbaar zijn in termen van schijf, CPU, geheugen, IO en netwerkdoorvoer. Als u veel van deze bronnen wilt vergroten, moet u weten hoeveel elementen in het systeem worden geladen. Als er geen betere maateenheid beschikbaar is, kunt u de grootte van de bestaande bibliotheek delen door de leeftijd van de bibliotheek om de snelheid te vinden waarmee elementen worden gemaakt.
+Wanneer u de omgeving instelt op een implementatie van Adobe Experience Manager, is het belangrijk ervoor te zorgen dat er voldoende bronnen beschikbaar zijn in termen van schijf, CPU, geheugen, IO en netwerkdoorvoer. Als u veel van deze bronnen wilt vergroten, moet u weten hoeveel elementen in het systeem worden geladen. Als er geen betere maateenheid beschikbaar is, kunt u de grootte van de bestaande bibliotheek delen door de leeftijd van de bibliotheek om de snelheid te vinden waarmee elementen worden gemaakt.
 
 ## Schijf {#disk}
 
 ### DataStore {#datastore}
 
-Een algemene fout die wordt gemaakt bij het instellen van de grootte van de vereiste schijfruimte voor een middelenimplementatie, is het baseren van de berekeningen op de grootte van de Raw-afbeeldingen die in het systeem worden opgenomen. Standaard maakt AEM naast de oorspronkelijke afbeelding drie uitvoeringen voor het renderen van de AEM UI-elementen. In vorige implementaties, zijn deze vertoningen waargenomen tweemaal de grootte van de activa veronderstellen die worden opgenomen.
+Een algemene fout die wordt gemaakt bij het instellen van de grootte van de vereiste schijfruimte voor een middelenimplementatie, is het baseren van de berekeningen op de grootte van de Raw-afbeeldingen die in het systeem worden opgenomen. De Experience Manager maakt standaard naast de oorspronkelijke afbeelding drie uitvoeringen voor gebruik bij het renderen van de interface-elementen van Experience Manager. In vorige implementaties, zijn deze vertoningen waargenomen tweemaal de grootte van de activa veronderstellen die worden opgenomen.
 
-De meeste gebruikers definiëren aangepaste uitvoeringen naast de uitvoeringen buiten de box. Naast de vertoningen, laat de Middelen van AEM u subactiva uit gemeenschappelijke dossiertypes, zoals InDesign en Illustrator halen.
+De meeste gebruikers definiëren aangepaste uitvoeringen naast de uitvoeringen buiten de box. Naast de vertoningen, laat de Activa u subactiva uit gemeenschappelijke dossiertypes, zoals [!DNL Adobe InDesign] en [!DNL Adobe Illustrator]extraheren.
 
-Tot slot slaat de versiemogelijkheden van AEM duplicaten van de activa in de versiegeschiedenis op. U kunt de versies vormen om vaak worden gezuiverd. Veel gebruikers kiezen er echter voor om de versies in het systeem lange tijd te behouden, wat extra opslagruimte verbruikt.
+Tot slot slaat het versievermogen van de Manager van de Ervaring duplicaten van de activa in de versiegeschiedenis op. U kunt de versies vormen om vaak worden gezuiverd. Veel gebruikers kiezen er echter voor om de versies in het systeem lange tijd te behouden, wat extra opslagruimte verbruikt.
 
 Gezien deze factoren, vereist u een methodologie om een aanvaardbare nauwkeurige opslagruimte te berekenen om gebruikersactiva op te slaan.
 
 1. Bepaal de grootte en het aantal elementen dat in het systeem wordt geladen.
-1. Vraag een representatieve steekproef van de activa aan om in AEM worden geupload. Als u bijvoorbeeld PSD-, JPG-, AI- en PDF-bestanden in het systeem wilt laden, hebt u meerdere voorbeeldafbeeldingen van elke bestandsindeling nodig. Bovendien moeten deze monsters representatief zijn voor de verschillende bestandsgrootten en complexiteiten van afbeeldingen.
+1. Neem een representatieve steekproef van de middelen die u wilt uploaden naar Experience Manager. Als u bijvoorbeeld PSD-, JPG-, AI- en PDF-bestanden in het systeem wilt laden, hebt u meerdere voorbeeldafbeeldingen van elke bestandsindeling nodig. Bovendien moeten deze monsters representatief zijn voor de verschillende bestandsgrootten en complexiteiten van afbeeldingen.
 1. Definieer de uitvoeringen die moeten worden gebruikt.
-1. Maak de uitvoeringen in AEM met ImageMagick of de Creative Cloud-toepassingen van Adobe. Naast de vertoningen die de gebruikers specificeren, creeer uit-van-de-doos vertoningen. Voor gebruikers die Scene7 uitvoeren, kunt u binair IC gebruiken om de vertoningen te produceren PTIFF die in AEM moeten worden opgeslagen.
+1. Maak de uitvoeringen in Experience Manager met ImageMagick of de Creative Cloud-toepassingen van Adobe. Naast de vertoningen die de gebruikers specificeren, creeer uit-van-de-doos vertoningen. Voor gebruikers die Scene7 uitvoeren, kunt u binair IC gebruiken om de vertoningen te produceren PTIFF die in de Manager van de Ervaring moeten worden opgeslagen.
 1. Als u subassets wilt gebruiken, genereert u deze voor de juiste bestandstypen.
 1. Vergelijk de grootte van de uitvoerafbeeldingen, uitvoeringen en subelementen met de oorspronkelijke afbeeldingen. Hiermee kunt u een verwachte groeifactor genereren wanneer het systeem wordt geladen. Als u bijvoorbeeld uitvoeringen en subelementen genereert met een gecombineerde grootte van 3 GB na het verwerken van 1 GB aan elementen, is de groeifactor van de uitvoering 3.
 1. Bepaal de maximumtijd gedurende welke elementversies in het systeem moeten worden onderhouden.
-1. Bepaal hoe vaak bestaande elementen in het systeem worden gewijzigd. Als AEM wordt gebruikt als een samenwerkingscentrum in creatieve werkschema&#39;s, is de hoeveelheid veranderingen hoog. Als alleen voltooide elementen naar het systeem worden geüpload, is dit aantal veel lager.
+1. Bepaal hoe vaak bestaande elementen in het systeem worden gewijzigd. Als de Manager van de Ervaring als samenwerkingscentrum in creatieve werkschema&#39;s wordt gebruikt, is de hoeveelheid veranderingen hoog. Als alleen voltooide elementen naar het systeem worden geüpload, is dit aantal veel lager.
 1. Bepaal hoeveel elementen elke maand in het systeem worden geladen. Als u niet zeker weet, controleert u het aantal elementen dat momenteel beschikbaar is en verdeelt u het getal door de leeftijd van het oudste element om een geschatte waarde te berekenen.
 
 Door de bovenstaande stappen uit te voeren, kunt u het volgende bepalen:
@@ -47,7 +47,7 @@ Door de bovenstaande stappen uit te voeren, kunt u het volgende bepalen:
 * Aantal nieuwe elementen dat elke maand wordt geladen.
 * Jaren van groei voor toewijzing van opslagruimte.
 
-U kunt deze aantallen in het Netwerk het Rangschikken spreadsheet specificeren om de totale ruimte te bepalen die voor uw datastore wordt vereist. Het is ook een handig hulpmiddel om het effect te bepalen van het onderhoud van elementversies of het wijzigen van elementen in AEM op schijfgroei.
+U kunt deze aantallen in het Netwerk het Rangschikken spreadsheet specificeren om de totale ruimte te bepalen die voor uw datastore wordt vereist. Het is ook een handig hulpmiddel om het effect te bepalen van het onderhoud van elementversies of het wijzigen van elementen in Experience Manager op schijfgroei.
 
 De voorbeeldgegevens die in het gereedschap zijn ingevuld, tonen aan hoe belangrijk het is om de vermelde stappen uit te voeren. Als u de datastore alleen op basis van de te laden Raw-afbeeldingen (1 TB) wijzigt, hebt u de grootte van de opslagplaats mogelijk met een factor 15 onderschat.
 
@@ -102,13 +102,13 @@ Voor de opslagplaats, gebruik SSDs of schijven met een IOPS niveau groter dan 30
 
 ## Netwerk {#network}
 
-AEM Assets heeft een aantal gebruiksgevallen die netwerkprestaties belangrijker maken dan op veel van onze AEM projecten. Een klant kan een snelle server hebben, maar als de netwerkverbinding niet groot genoeg is om de lading van de gebruikers te steunen die activa van het systeem uploaden en downloaden, dan zal het nog langzaam lijken. Er is een goede methodologie om het knooppunt in de netwerkverbinding van een gebruiker aan AEM bij de overwegingen van Activa [AEM voor gebruikerservaring, instantie het rangschikken, werkschemaevaluatie, en netwerktopologie](/help/assets/assets-network-considerations.md)te bepalen.
+De activa hebben een aantal gebruiksgevallen die netwerkprestaties belangrijker dan op veel van onze projecten van de Manager van de Ervaring maken. Een klant kan een snelle server hebben, maar als de netwerkverbinding niet groot genoeg is om de lading van de gebruikers te steunen die activa van het systeem uploaden en downloaden, dan zal het nog langzaam lijken. Er is een goede methodologie om het knooppunt in de netwerkverbinding van een gebruiker aan de Manager van de Ervaring bij de overwegingen van [Activa voor gebruikerservaring, instantie het rangschikken, werkschemaevaluatie, en netwerktopologie](/help/assets/assets-network-considerations.md)te bepalen.
 
 ## Beperkingen {#limitations}
 
 Wanneer het rangschikken van een implementatie, is het belangrijk om systeembeperkingen in mening te houden. Als de voorgestelde implementatie deze beperkingen overschrijdt, maakt u gebruik van creatieve strategieën, zoals het verdelen van de elementen over meerdere implementaties van Elementen.
 
-Bestandsgrootte is niet de enige factor die bijdraagt aan problemen met onvoldoende geheugen (OOM). Het hangt ook van afmetingen van het beeld af. U kunt OOM-problemen voorkomen door een hogere heapgrootte op te geven wanneer u AEM start.
+Bestandsgrootte is niet de enige factor die bijdraagt aan problemen met onvoldoende geheugen (OOM). Het hangt ook van afmetingen van het beeld af. U kunt OOM-problemen voorkomen door een hogere heapgrootte te bieden wanneer u Experience Manager start.
 
 Bovendien kunt u het bezit van de drempelgrootte van de `com.day.cq.dam.commons.handler.StandardImageHandler` component in de Manager van de Configuratie uitgeven om tussentijds tijdelijk dossier groter dan nul te gebruiken.
 
@@ -118,8 +118,8 @@ De limiet voor het aantal bestanden dat in een datastore kan bestaan, kan 2,1 mi
 
 Als de uitvoeringen onjuist zijn gegenereerd, gebruikt u de Camera Raw-bibliotheek. In dit geval mag de langste zijde van de afbeelding echter niet groter zijn dan 65000 pixels. Bovendien mag de afbeelding niet meer dan 512 MP (512 x 1024 x 1024 pixels) bevatten. De grootte van het actief is niet van belang.
 
-Het is moeilijk nauwkeurig de grootte te schatten van het TIF dossier gesteund uit-van-de-doos met een specifieke heap voor AEM omdat extra factoren, zoals pixelgrootte verwerking beïnvloeden. Het is mogelijk dat AEM een dossier van grootte van 255 MB uit-van-de-doos kan verwerken, maar niet een dossiergrootte van 18 MB kan verwerken omdat het laatstgenoemde uit een ongewoon hoger aantal pixel dan eerstgenoemde omvat.
+Het is moeilijk om de grootte van het TIFF-bestand dat buiten de box met een specifieke heap voor Experience Manager wordt ondersteund nauwkeurig in te schatten, omdat extra factoren, zoals de pixelgrootte, van invloed zijn op de verwerking. Het is mogelijk dat de Manager van de Ervaring een dossier van grootte van 255 MB uit-van-de-doos kan verwerken, maar niet een dossiergrootte van 18 MB kan verwerken omdat het laatstgenoemde uit een ongewoon hoger aantal pixel dan eerstgenoemde omvat.
 
 ## Omvang van elementen {#size-of-assets}
 
-Standaard kunt u met AEM elementen van maximaal 2 GB uploaden. Zie [Configuratie voor het uploaden van zeer grote assets](managing-video-assets.md#configuration-to-upload-assets-that-are-larger-than-gb)voor het uploaden van zeer grote assets in AEM.
+Standaard kunt u met Experience Manager elementen van maximaal 2 GB uploaden. Zie [Configuratie voor het uploaden van zeer grote elementen](managing-video-assets.md#configuration-to-upload-assets-that-are-larger-than-gb)in Experience Manager.

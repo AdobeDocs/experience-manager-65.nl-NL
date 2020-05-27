@@ -3,9 +3,9 @@ title: Videoassets beheren
 description: Leer hoe u video-elementen kunt uploaden, voorvertonen, annoteren en publiceren.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '716'
+source-wordcount: '718'
 ht-degree: 10%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 10%
 
 # Videoassets beheren {#manage-video-assets}
 
-Leer hoe u de video-elementen beheert en bewerkt in Adobe Experience Manager (AEM) Assets. Raadpleeg ook de documentatie bij [](/help/assets/video.md)dynamische media als u een licentie hebt voor het gebruik van Dynamic Media.
+Leer hoe u de video-elementen beheert en bewerkt in Adobe Experience Manager Assets. Raadpleeg ook de documentatie bij [](/help/assets/video.md)dynamische media als u een licentie hebt voor het gebruik van Dynamic Media.
 
 ## Video-elementen uploaden en voorvertonen {#upload-and-preview-video-assets}
 
-Adobe Experience Manager Assets genereert voorvertoningen voor video-elementen met de extensie MP4. Als de indeling van het element niet MP4 is, installeert u het MPEG-pakket om een voorvertoning te genereren. MPEG maakt video-uitvoeringen van het type OGG en MP4. U kunt een voorvertoning van deze vertoningen weergeven in de gebruikersinterface van AEM Assets.
+Adobe Experience Manager Assets genereert voorvertoningen voor video-elementen met de extensie MP4. Als de indeling van het element niet MP4 is, installeert u het MPEG-pakket om een voorvertoning te genereren. MPEG maakt video-uitvoeringen van het type OGG en MP4. U kunt deze vertoningen voorvertonen in de gebruikersinterface Elementen.
 
 1. Navigeer in de map Digital Assets of in de submappen naar de locatie waar u digitale elementen wilt toevoegen.
 1. Als u het element wilt uploaden, klikt u op **[!UICONTROL Create]** de werkbalk en kiest u **[!UICONTROL Files]**. U kunt het ook rechtstreeks in het gebied met elementen neerzetten. Zie Elementen [](managing-assets-touch-ui.md#uploading-assets) uploaden voor meer informatie over het uploaden.
@@ -44,11 +44,11 @@ Wijzig naast de configuratie Experience Manager de volgende configuraties voor h
 
 >[!NOTE]
 >
->Voor de Klassieke AEM-gebruikersinterface geldt geen beperking voor de bestandsgrootte van 2 GB. Bovendien wordt de end-to-end workflow voor grote video niet volledig ondersteund.
+>De GKlassieke gebruikersinterface van Experience Manager heeft geen beperking voor de bestandsgrootte van 2 GB. Bovendien wordt de end-to-end workflow voor grote video niet volledig ondersteund.
 
 Voer de volgende stappen in de `/apps` map uit om een hogere maximale bestandsgrootte te configureren.
 
-1. Klik in AEM op **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
+1. Klik in Experience Manager op **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
 1. Navigeer in CRXDE Lite naar `/libs/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`. Tik op het `>>` pictogram om het directoryvenster weer te geven.
 1. From the toolbar, click the **[!UICONTROL Overlay Node]**. U kunt ook **[!UICONTROL Overlay Node]** selecteren in het contextmenu.
 1. In the **[!UICONTROL Overlay Node]** dialog, click **[!UICONTROL OK]**.
@@ -59,11 +59,11 @@ Voer de volgende stappen in de `/apps` map uit om een hogere maximale bestandsgr
 1. Voer op het **[!UICONTROL Properties]** tabblad de juiste waarde in bytes in om de maximale grootte tot de gewenste grootte te verhogen. Voer bijvoorbeeld een `{sizeLimit : "32212254720"}` waarde in als u de maximale grootte tot 30 GB wilt verhogen.
 
 1. From the toolbar, touch **[!UICONTROL Save All]**.
-1. Klik in AEM op **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
+1. Klik in Experience Manager op **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 1. Zoek en klik op de pagina Bundles van de webconsole van Adobe Experience Manager onder de kolom Naam van de tabel **[!UICONTROL Adobe Granite Workflow External Process Job Handler]**.
 1. Stel de seconden voor de velden **[!UICONTROL Default Timeout]** en **[!UICONTROL Max Timeout]** in op `18000` (vijf uur) op de pagina Handler van externe procestaken van Adobe Granite Workflow.
 1. Klik op **[!UICONTROL Save]**.
-1. Klik in AEM op **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
+1. Klik in Experience Manager op **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
 1. Selecteer op de pagina Workflowmodellen de optie **[!UICONTROL Dynamic Media Encode Video]** en klik op **[!UICONTROL Edit]**.
 1. Dubbelklik op de werkstroompagina op de **[!UICONTROL Dynamic Media Video Service Process]** component.
 1. Vouw in het dialoogvenster [!UICONTROL Step Properties] onder het tabblad **[!UICONTROL Common]** **Geavanceerde instellingen** uit.

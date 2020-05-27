@@ -3,7 +3,7 @@ title: Ondersteunde bestandsindelingen voor verwerking in [!DNL Adobe Experience
 description: Bestandsindelingen en MIME-typen die worden ondersteund door [!DNL Assets] en [!DNL Dynamic Media] en de functies die worden ondersteund voor elke indeling.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 138c8d960ad8c1de20212b7aeebbda0a486832ee
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
 source-wordcount: '1780'
 ht-degree: 2%
@@ -103,7 +103,7 @@ The following table describes the sub-types of raster image formats that are *no
 
 ## Ondersteunde PDF Rasterizer-bibliotheek {#supported-pdf-rasterizer-library}
 
-De Adobe PDF Rasterizer-bibliotheek genereert miniaturen en voorvertoningen van hoge kwaliteit voor grote en inhoudintensieve Adobe Illustrator- en PDF-bestanden. Adobe raadt u aan de PDF Rasterizer-bibliotheek te gebruiken voor het volgende:
+De Adobe PDF Rasterizer-bibliotheek genereert miniaturen en voorvertoningen van hoge kwaliteit voor grote bestanden met veel inhoud [!DNL Adobe Illustrator] en PDF-bestanden. Adobe raadt u aan de PDF Rasterizer-bibliotheek te gebruiken voor het volgende:
 
 * Inhoudsintensieve AI/PDF-bestanden die bronintensief zijn voor verwerking.
 * AI/PDF-bestanden waarvoor standaard geen miniaturen worden gegenereerd.
@@ -121,7 +121,7 @@ Zie [Afbeeldingstransformatiebibliotheek](imaging-transcoding-library.md).
 
 ## Ondersteunde Camera Raw {#supported-camera-raw}
 
-Met de Adobe Camera Raw-bibliotheek kunnen AEM Assets Raw-afbeeldingen innemen. Zie [Camera Raw-ondersteuning](camera-raw.md).
+Met de Adobe Camera Raw-bibliotheek kunnen elementen Raw-afbeeldingen innemen. Zie [Camera Raw-ondersteuning](camera-raw.md).
 
 ## Ondersteunde indelingen voor middelendocumenten {#supported-document-formats}
 
@@ -234,7 +234,7 @@ De toepasbaarheid van algemene DAM-workflows voor een aantal andere bestandsinde
 
 ## Ondersteunde MIME-typen {#supported-mime-types}
 
-Standaard detecteert AEM het bestandstype met de bestandsextensie. AEM kan het van de inhoud van de dossiers ontdekken. Selecteer voor de laatste optie [!UICONTROL Detect MIME from content] in [!UICONTROL Day CQ DAM Mime Type Service] de AEM-webconsole.
+Standaard detecteert Experience Manager het bestandstype met de bestandsextensie. Experience Manager kan dit detecteren op basis van de inhoud van de bestanden. Voor laatstgenoemde, uitgezochte optie in [!UICONTROL Detect MIME from content] [!UICONTROL Day CQ DAM Mime Type Service] de Console van het Web van de Manager van de Ervaring.
 
 Een lijst van gesteunde types MIME is beschikbaar in CRXDE Lite bij `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
 

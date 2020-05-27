@@ -3,9 +3,9 @@ title: Vertaalprojecten maken
 description: Leer hoe u vertaalprojecten maakt in [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '1766'
+source-wordcount: '1765'
 ht-degree: 10%
 
 ---
@@ -25,7 +25,7 @@ Als u een taalkopie wilt maken, activeert u een van de volgende workflows voor h
 
 >[!NOTE]
 >
->Als u een vertaalworkflow start voor complexe elementen, zoals PDF- en InDesign-bestanden, worden de subelementen of vertoningen (indien aanwezig) van die elementen niet voor vertaling verzonden.
+>Als u een vertaalworkflow start voor complexe elementen, zoals PDF- en [!DNL Adobe InDesign] bestandsbestanden, worden de eventuele submiddelen of uitvoeringen ervan niet verzonden voor vertaling.
 
 ## Workflow maken en vertalen {#create-and-translate-workflow}
 
@@ -151,7 +151,7 @@ Als u deze optie gebruikt, wordt de vertaalworkflow uitgevoerd voor elementen di
 
 1. Selecteer in de **[!UICONTROL Existing translation project]** lijst een project waaraan u het element voor vertaling wilt toevoegen.
 
-   ![chlimage_1-70](assets/chlimage_1-78.png)
+   ![chlimage_1-78](assets/chlimage_1-78.png)
 
 1. Klik op **[!UICONTROL Create]**. De te vertalen assets worden toegevoegd aan de doelmap. De bijgewerkte map wordt weergegeven onder de sectie **[!UICONTROL Language Copies]**.
 
@@ -176,7 +176,7 @@ Als u deze optie gebruikt, wordt de vertaalworkflow uitgevoerd voor elementen di
    >
    >Als het element dat u toevoegt aan de vertaaltaak subelementen bevat, selecteert u de subelementen en verwijdert u deze zodat de vertaling zonder scheuren kan worden uitgevoerd.
 
-1. Als u de vertaling voor de elementen wilt starten, klikt u op de pijl op de **[!UICONTROL Translation Job]** tegel en selecteert u deze in de **[!UICONTROL Start]** lijst.
+1. Als u de vertaling voor de elementen wilt starten, klikt u op de pijl op de **[!UICONTROL Translation Job]** tegel en selecteert u een element in de **[!UICONTROL Start]** lijst.
 
    ![chlimage_1-81](assets/chlimage_1-81.png)
 

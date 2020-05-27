@@ -3,9 +3,9 @@ title: Elementen van HTTP-API in [!DNL Adobe Experience Manager].
 description: Digitale middelen maken, lezen, bijwerken, verwijderen en beheren met HTTP API in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1f41de531d0e1784245c79ab2ace3586fc7dd469
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '1565'
+source-wordcount: '1563'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ Mappen zijn vergelijkbaar met mappen in traditionele bestandssystemen. Het zijn 
 In Experience Manager bevat een element de volgende elementen:
 
 * De eigenschappen en metagegevens van het element.
-* Meerdere uitvoeringen, zoals de oorspronkelijke uitvoering (het oorspronkelijk geüploade element), een miniatuur en verschillende andere uitvoeringen. Extra uitvoeringen kunnen afbeeldingen van verschillende grootten, videocoderingen of uitgenomen pagina&#39;s uit PDF- of Adobe InDesign-bestanden zijn.
+* Meerdere uitvoeringen, zoals de oorspronkelijke uitvoering (het oorspronkelijk geüploade element), een miniatuur en verschillende andere uitvoeringen. Extra uitvoeringen kunnen afbeeldingen van verschillende grootten, videocoderingen of uit PDF- of [!DNL Adobe InDesign] bestandsbestanden geëxtraheerde pagina&#39;s zijn.
 * Optionele opmerkingen.
 
 Zie Ondersteuning van [inhoudsfragmenten in Experience Manager Assets HTTP API](/help/assets/assets-api-content-fragments.md#content-fragments)voor informatie over elementen in Content Fragments.

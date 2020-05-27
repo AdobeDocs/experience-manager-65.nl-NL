@@ -1,11 +1,11 @@
 ---
-title: Een persoonlijke map maken en delen in AEM
-description: Leer hoe u een persoonlijke map maakt in de middelen van Adobe Experience Manager (AEM) en deze deelt met andere gebruikers en hoe u hun verschillende rechten toekent.
+title: Een persoonlijke map maken en delen in Adobe Experience Manager.
+description: Leer hoe u een persoonlijke map maakt in de Adobe Experience Manager-middelen en deze deelt met andere gebruikers en hoe u hun verschillende rechten toekent.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '492'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Persoonlijke map delen {#private-folder-sharing}
 
-U kunt een persoonlijke map maken in de gebruikersinterface van Adobe Experience Manager (AEM) Assets die exclusief voor u beschikbaar is. U kunt deze persoonlijke map delen met andere gebruikers en deze gebruikers verschillende rechten geven. Op basis van het machtigingsniveau dat u toewijst, kunnen gebruikers verschillende taken op de map uitvoeren, bijvoorbeeld de middelen in de map weergeven of de elementen bewerken.
+In de gebruikersinterface van Adobe Experience Manager kunt u een persoonlijke map maken die uitsluitend voor u beschikbaar is. U kunt deze persoonlijke map delen met andere gebruikers en deze gebruikers verschillende rechten geven. Op basis van het machtigingsniveau dat u toewijst, kunnen gebruikers verschillende taken op de map uitvoeren, bijvoorbeeld de middelen in de map weergeven of de elementen bewerken.
 
 >[!NOTE]
 >
@@ -46,15 +46,15 @@ U kunt een persoonlijke map maken in de gebruikersinterface van Adobe Experience
 
    >[!NOTE]
    >
-   >U kunt verschillende rollen, zoals Editor, Eigenaar of Viewer, toewijzen aan de gebruiker met wie u de map deelt. Als u een rol van de Eigenaar aan de gebruiker toewijst, heeft de gebruiker de voorrechten van Redacteurs op de omslag. Bovendien kan de gebruiker de map met anderen delen. Als u een rol van de Editor toewijst, kan de gebruiker de elementen in uw persoonlijke map bewerken. Als u een Viewer-rol toewijst, kan de gebruiker alleen de elementen in uw persoonlijke map bekijken.
+   >U kunt verschillende rollen, zoals Editor, Eigenaar of Viewer, toewijzen aan de gebruiker met wie u de map deelt. Als u een rol van de Eigenaar aan de gebruiker toewijst, heeft de gebruiker de voorrechten van Redacteurs op de omslag. Bovendien kan de gebruiker de map met anderen delen. Als u een rol van de Editor toewijst, kan de gebruiker de elementen in uw persoonlijke map bewerken. Als u een viewerrol toewijst, kan de gebruiker alleen de elementen in uw persoonlijke map bekijken.
 
    >[!NOTE]
    >
    > De persoonlijke omslag heeft minstens één lid met de rol van de Eigenaar. Daarom kan de beheerder niet alle eigenaarleden uit een privé omslag verwijderen. Nochtans, om bestaande eigenaars (en beheerder zelf) uit de privé omslag te verwijderen moet de beheerder een andere gebruiker als eigenaar toevoegen.
 
-1. Klik op **[!UICONTROL Save]**. Afhankelijk van de rol die u toewijst, wordt aan de gebruiker een reeks rechten toegewezen aan uw persoonlijke map wanneer de gebruiker zich aanmeldt bij AEM Assets.
+1. Klik op **[!UICONTROL Save]**. Afhankelijk van de rol die u toewijst, wordt aan de gebruiker een reeks rechten toegewezen aan uw persoonlijke map wanneer de gebruiker zich aanmeldt bij Middelen.
 1. Klik **[!UICONTROL Ok]** om het bevestigingsbericht te sluiten.
-1. De gebruiker met wie u de map deelt, ontvangt een melding voor delen. Meld u aan bij AEM Assets met de gegevens van de gebruiker om het bericht te bekijken.
+1. De gebruiker met wie u de map deelt, ontvangt een melding voor delen. Meld u aan bij Middelen met de referenties van de gebruiker om het bericht weer te geven.
 
    ![chlimage_1-416](assets/chlimage_1-416.png)
 

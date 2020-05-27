@@ -1,11 +1,11 @@
 ---
 title: MIME-type van activa detecteren met Apache Tika
-description: Schakel Apache Tika in om AEM Assets te helpen het MIME-type van elementen van de inhoudsstroom te detecteren tijdens het uploaden in plaats van de bestandsextensie.
+description: Schakel Apache Tika in om Experience Manager Assets te helpen het MIME-type van elementen van de inhoudsstroom te detecteren tijdens het uploaden in plaats van de bestandsextensie.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '161'
+source-wordcount: '160'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # MIME-type van activa detecteren met Apache Tika {#detecting-mime-type-of-assets-using-apache-tika}
 
-Normaliter wordt in Adobe Experience Manager (AEM) het MIME-type van middelen gedetecteerd dat u uploadt vanuit de bestandsextensie.
+Normaliter wordt in Adobe Experience Manager Assets het MIME-type gedetecteerd van middelen die u uploadt vanuit de bestandsextensie.
 
-Als u Apache Tika gebruikt om activa te uploaden, ontdekt AEM Middelen hun MIME type van de inhoudsstroom tijdens het uploaden verrichting in plaats van de dossieruitbreiding.
+Als u Apache Tika gebruikt om activa te uploaden, ontdekt de Activa hun MIME type van de inhoudsstroom tijdens het uploaden verrichting in plaats van de dossieruitbreiding.
 
 Deze functie is standaard uitgeschakeld. Om de eigenschap toe te laten, vorm de **[!UICONTROL Day CQ DAM Mime Type]** dienst van [!UICONTROL Configuration Manager].
 

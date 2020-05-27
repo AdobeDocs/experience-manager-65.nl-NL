@@ -3,7 +3,10 @@ title: '[!DNL Adobe Camera Raw]-ondersteuning.'
 description: Leer hoe u ondersteuning voor [!DNL Adobe Camera Raw] inschakelt in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 90f9c0b60d4b0878f56eefea838154bb7627066d
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '332'
+ht-degree: 0%
 
 ---
 
@@ -19,23 +22,23 @@ U kunt de [!DNL Adobe Camera Raw] ondersteuning inschakelen voor het verwerken v
 Ga als volgt te werk om [!DNL Camera Raw] ondersteuning in [!DNL Experience Manager Assets]te schakelen:
 
 1. Download het [Camera Raw-pakket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) van het Delen van pakketten.
-1. Ga naar `https://[aem_server]:[port]/workflow`. Open de workflow **[!UICONTROL DAM Update Asset]** .
-1. Open de stap Miniaturen **** verwerken.
-1. Geef de volgende configuratie op het tabblad **[!UICONTROL Miniaturen]** op:
+1. Ga naar `https://[aem_server]:[port]/workflow`. Open de **[!UICONTROL DAM Update Asset]** workflow.
+1. Open de **[!UICONTROL Process Thumbnails]** stap.
+1. Geef de volgende configuratie op het **[!UICONTROL Thumbnails]** tabblad op:
 
-   * **[!UICONTROL Miniaturen]**: `140:100:false, 48:48:false, 319:319:false`
-   * **[!UICONTROL MIME-typen]** overslaan: `skip:image/dng, skip:image/x-raw-(.*)`
+   * **[!UICONTROL Thumbnails]**: `140:100:false, 48:48:false, 319:319:false`
+   * **[!UICONTROL Skip Mime Types]**: `skip:image/dng, skip:image/x-raw-(.*)`
    ![chlimage_1-128](assets/chlimage_1-334.png)
 
-1. Geef op het tabblad **[!UICONTROL Web Enabled Image]** (Afbeelding **[!UICONTROL voor web ingeschakeld) in het veld]** Skip List `audio/mpeg, video/(.*), image/dng, image/x-raw-(.*)`(Lijstoverslaan).
+1. Geef op het **[!UICONTROL Web Enabled Image]** tabblad in het **[!UICONTROL Skip List]** veld op `audio/mpeg, video/(.*), image/dng, image/x-raw-(.*)`.
 
    ![chlimage_1-129](assets/chlimage_1-335.png)
 
-1. Voeg vanuit het zijpaneel de stap **[!UICONTROL Camera Raw/DNG Handler]** toe onder de stap **[!UICONTROL Miniatuurverwezenlijking]** .
-1. Voeg in de stap **[!UICONTROL Camera Raw/DNG Handler]** de volgende configuratie toe op het tabblad **[!UICONTROL Argumenten]** :
+1. Voeg vanuit het zijpaneel de **[!UICONTROL Camera Raw/DNG Handler]** stap onder de **[!UICONTROL Thumbnail creation]** stap toe.
+1. Voeg in de **[!UICONTROL Camera Raw/DNG Handler]** stap de volgende configuratie toe op het **[!UICONTROL Arguments]** tabblad:
 
-   * **[!UICONTROL MIME-typen]**: `image/dng` en `image/x-raw-(.*)`
-   * **[!UICONTROL Opdracht]**:
+   * **[!UICONTROL Mime Types]**: `image/dng` en `image/x-raw-(.*)`
+   * **[!UICONTROL Command]**:
 
       * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.web.1280.1280.jpeg 1280 1280`
       * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.thumbnail.319.319.jpeg 319 319`
@@ -43,15 +46,15 @@ Ga als volgt te werk om [!DNL Camera Raw] ondersteuning in [!DNL Experience Mana
       * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.thumbnail.48.48.jpeg 48 48`
    ![chlimage_1-130](assets/chlimage_1-336.png)
 
-1. Click **[!UICONTROL Save]**.
+1. Klik op **[!UICONTROL Save]**.
 
 >[!NOTE]
 >
->Zorg ervoor dat de bovenstaande configuratie hetzelfde is als het **[!UICONTROL voorbeeld-DAM-updateelement met de configuratie van de stappen]** voor Camera RAW en DNG-afhandeling.
+>Zorg ervoor dat de bovenstaande configuratie hetzelfde is als de **[!UICONTROL Sample DAM Update Asset With Camera RAW and DNG Handling Step]** configuratie.
 
-U kunt nu Camera Raw-bestanden importeren in AEM-elementen. Nadat u het Camera RAW-pakket hebt geïnstalleerd en de vereiste workflow hebt geconfigureerd, wordt de optie **[!UICONTROL Afbeelding aanpassen]** weergegeven in de lijst met zijvensters.
+U kunt nu Camera Raw-bestanden importeren in Elementen. Nadat u het Camera RAW-pakket hebt geïnstalleerd en de vereiste workflow hebt geconfigureerd, wordt de **[!UICONTROL Image Adjust]** optie weergegeven in de lijst met zijvensters.
 
-![chlimage_1-135](assets/chlimage_1-337.png)
+![chlimage_1-131](assets/chlimage_1-337.png)
 
 *Afbeelding: Opties in het zijpaneel.*
 

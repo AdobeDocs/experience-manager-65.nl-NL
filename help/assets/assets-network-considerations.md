@@ -1,25 +1,28 @@
 ---
 title: Overwegingen en vereisten van het middelennetwerk
-description: Bespreekt netwerkoverwegingen wanneer het ontwerpen van een plaatsing van Middelen AEM.
+description: Bespreekt netwerkoverwegingen wanneer het ontwerpen van een plaatsing van de Middelen van de Manager van de Ervaring van Adobe.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 70a88085a0fd6e949974aa7f1f92fdc3def3d98e
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '1026'
+ht-degree: 0%
 
 ---
 
 
 # Elementennetwerkoverwegingen {#assets-network-considerations}
 
-Kennis van uw netwerk is net zo belangrijk als inzicht in Adobe Experience Manager (AEM)-middelen. Het netwerk kan uploaden, downloaden, en gebruikerservaring beïnvloeden. Het Diagrammen van uw hulp van de netwerktopologie identificeert onderdrukkingspunten en sub-geoptimaliseerde gebieden in het netwerk die u moet bevestigen om netwerkprestaties en gebruikerservaring te verbeteren.
+Kennis van uw netwerk is net zo belangrijk als het begrijpen van Adobe Experience Manager-middelen. Het netwerk kan uploaden, downloaden, en gebruikerservaring beïnvloeden. Het Diagrammen van uw hulp van de netwerktopologie identificeert onderdrukkingspunten en sub-geoptimaliseerde gebieden in het netwerk die u moet bevestigen om netwerkprestaties en gebruikerservaring te verbeteren.
 
 Zorg ervoor dat u het volgende in uw netwerkdiagram omvat:
 
 * Connectiviteit van het cliëntapparaat (bijvoorbeeld computer, mobiel, en tablet) aan het netwerk
 * Topologie van het collectieve netwerk
-* Uploaden naar internet vanuit het bedrijfsnetwerk en de AEM-omgeving
-* Topologie van de AEM-omgeving
-* Gelijktijdige consumenten van de AEM-netwerkinterface definiëren
-* Gedefinieerde workflows van de AEM-instantie
+* Uploaden naar internet vanuit het bedrijfsnetwerk en de omgeving van Experience Manager
+* Topologie van de omgeving van Experience Manager
+* Gelijktijdige consumenten van de interface van het Netwerk van de Manager van de Ervaring bepalen
+* Gedefinieerde workflows van de Experience Manager-instantie
 
 ## Connectiviteit van het cliëntapparaat aan het collectieve netwerk {#connectivity-from-the-client-device-to-the-corporate-network}
 
@@ -39,17 +42,17 @@ De computer die aan het recht wordt getoond heeft een beperkt stroomopwaarts aan
 
 ## Topologie van het collectieve netwerk {#topology-of-the-corporate-network}
 
-![chlimage_1-354](assets/chlimage_1-354.png)
+![chlimage_1-356](assets/chlimage_1-354.png)
 
 Het diagram toont hogere opstraalverbindingssnelheden binnen het collectieve netwerk dan wat over het algemeen wordt gebruikt. Deze buizen zijn gedeelde bronnen. Als de gedeelde schakelaar wordt verwacht om 50 cliënten te behandelen, kan het potentieel een onderdrukking-punt zijn. In het aanvankelijke diagram, delen slechts twee computers de bijzondere verbinding.
 
-## Uploaden naar internet vanuit het bedrijfsnetwerk en de AEM-omgeving {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
+## Uploaden naar internet vanuit de omgeving van het bedrijfsnetwerk en Experience Manager {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
 
 ![chlimage_1-355](assets/chlimage_1-355.png)
 
 Het is belangrijk om onbekende factoren op Internet en de verbinding te overwegen VPC omdat de bandbreedte over Internet wegens pieklading of grootschalig leveranciersstroomonderbrekingen kan worden verminderd. Over het algemeen is internetconnectiviteit betrouwbaar. Soms kan dit echter wel leiden tot een verschuiving.
 
-Bij de opstraalverbinding van een collectief netwerk aan Internet, kunnen er andere diensten zijn gebruikend de bandbreedte. Het is belangrijk om te begrijpen hoeveel van de bandbreedte voor activa AEM kan worden gewijd of worden geprioriteerd. Als een 1 Gbps-koppeling bijvoorbeeld al bij 80% gebruik is, kunt u maximaal 20% van de bandbreedte voor AEM-elementen toewijzen.
+Bij de opstraalverbinding van een collectief netwerk aan Internet, kunnen er andere diensten zijn gebruikend de bandbreedte. Het is belangrijk om te begrijpen hoeveel van de bandbreedte voor Activa kan worden gewijd of worden geprioriteerd. Als een 1 Gbps-koppeling bijvoorbeeld al bij 80% gebruik is, kunt u maximaal 20% van de bandbreedte voor Experience Manager-middelen toewijzen.
 
 De firewalls en de volmachten van de onderneming kunnen bandbreedte op vele verschillende manieren ook vormen. Dit type van apparaat kan bandbreedte voorrang geven gebruikend kwaliteit van de dienst, bandbreedtebeperkingen per gebruiker, of bitsnelheidsbeperkingen per gastheer. Dit zijn belangrijke keuzepunten die moeten worden onderzocht, omdat deze de gebruikerservaring van bedrijfsmiddelen aanzienlijk kunnen beïnvloeden.
 
@@ -59,21 +62,21 @@ Dit is het kleinste clientgeoriënteerde onderdrukkingspunt. Nochtans, kunt u vo
 
 Van de steekproefdiagrammen, kunt u concluderen dat zes apparaten een conceptueel kanaal 10Mbps delen. Afhankelijk van de omvang van de hefboomwerking van de activa, kan dit ontoereikend zijn om aan gebruikersverwachtingen te voldoen.
 
-## Topologie van de AEM-omgeving {#topology-of-the-aem-environment}
+## Topologie van de omgeving van Experience Manager {#topology-of-the-aem-environment}
 
 ![chlimage_1-356](assets/chlimage_1-356.png)
 
-Het ontwerpen van de topologie van het milieu AEM vereist gedetailleerde kennis van de systeemconfiguratie en hoe het netwerk binnen het gebruikersmilieu wordt aangesloten.
+Het ontwerpen van de topologie van het milieu van de Manager van de Ervaring vereist gedetailleerde kennis van de systeemconfiguratie en hoe het netwerk binnen het gebruikersmilieu wordt aangesloten.
 
 Het steekproefscenario omvat publiceer landbouwbedrijf met vijf servers, een S3 binaire opslag, en Dynamische gevormde Media.
 
-De verzender deelt het 100Mbps verbinding met twee entiteiten, de buitenwereld en de instantie AEM. Voor gelijktijdige upload- en downloadbewerkingen moet u dit getal door twee delen. De externe opslag in de bijlage gebruikt een aparte verbinding.
+De dispatcher deelt het 100Mbps verbinding met twee entiteiten, de buitenwereld en de instantie van de Manager van de Ervaring is. Voor gelijktijdige upload- en downloadbewerkingen moet u dit getal door twee delen. De externe opslag in de bijlage gebruikt een aparte verbinding.
 
-De instantie AEM deelt het is verbinding 1Gbps met de veelvoudige diensten. Vanuit een perspectief van de netwerktopologie, is het gelijkwaardig aan het delen van één enkel kanaal met de verschillende diensten.
+De instantie van de Manager van de Ervaring deelt het is verbinding 1Gbps met de veelvoudige diensten. Vanuit een perspectief van de netwerktopologie, is het gelijkwaardig aan het delen van één enkel kanaal met de verschillende diensten.
 
-Wanneer u het netwerk van het clientapparaat naar de AEM-instantie bekijkt, lijkt het kleinste onderdrukkingspunt de firewallthrottle van 10 Mbit te zijn. U kunt deze waarden gebruiken in de calculator voor grootte van de [elementen in de gids](assets-sizing-guide.md) voor grootte van de elementen om de gebruikerservaring te bepalen.
+Als u het netwerk van het clientapparaat naar de Experience Manager-instantie bekijkt, lijkt het kleinste onderdrukkingspunt de firewallthrottle van 10 Mbit te zijn. U kunt deze waarden gebruiken in de calculator voor grootte van de [elementen in de gids](assets-sizing-guide.md) voor grootte van de elementen om de gebruikerservaring te bepalen.
 
-## Gedefinieerde workflows van de AEM-instantie {#defined-workflows-of-the-aem-instance}
+## Gedefinieerde workflows van de Experience Manager-instantie {#defined-workflows-of-the-aem-instance}
 
 Wanneer het overwegen van netwerkprestaties, kan het belangrijk zijn om de werkschema&#39;s en het publiceren te overwegen die in het systeem zullen voorkomen. Bovendien verbruiken S3 of andere netwerk in bijlage opslag die u gebruikt en I/O verzoeken netwerkbandbreedte. Daarom zelfs in een volledig geoptimaliseerd netwerk, kunnen de prestaties door schijf I/O worden beperkt.
 

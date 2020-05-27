@@ -3,14 +3,17 @@ title: Aanbevolen procedures voor het vertalen van middelen
 description: Aanbevolen procedures voor efficiënt beheer van middelen om verschillende vertaalde versies te synchroniseren en vertaalworkflows te stroomlijnen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a39ee0f435dc43d2c2830b2947e91ffdcf11c7f6
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '482'
+ht-degree: 1%
 
 ---
 
 
 # Aanbevolen procedures voor het vertalen van middelen {#best-practices-for-translating-assets-efficiently}
 
-Adobe Experience Manager-middelen (AEM) ondersteunen meertalige workflows om binaire gegevens, metagegevens en tags voor digitale elementen naar meerdere landinstellingen te vertalen en de vertaalde elementen te beheren. Zie [Meertalige elementen](multilingual-assets.md)voor meer informatie.
+Adobe Experience Manager-middelen ondersteunen meertalige workflows om binaire gegevens, metagegevens en tags voor digitale middelen naar meerdere landinstellingen te vertalen en de vertaalde middelen te beheren. Zie [Meertalige elementen](multilingual-assets.md)voor meer informatie.
 
 Voor efficiënt beheer van middelen om ervoor te zorgen dat verschillende vertaalde versies gesynchroniseerd blijven, creeer [taalexemplaren](preparing-assets-for-translation.md) van activa alvorens vertaalwerkschema&#39;s in werking te stellen.
 
@@ -31,15 +34,15 @@ U kunt ook enkele configuratiewijzigingen aanbrengen in een aantal workflows en 
 
 1. Schakel de [DAM MetaData Write-back](/help/sites-administering/workflow-offloader.md#disable-offloading) workflow uit.
 
-   Zoals de naam suggereert, worden de metagegevens in de terugschrijfworkflow voor [!UICONTROL DAM-metagegevens] opnieuw naar het binaire bestand geschreven. Omdat de metagegevens na de vertaling veranderen, wordt bij het terugschrijven naar het binaire bestand een andere binaire waarde voor een taalkopie gegenereerd.
+   Zoals de naam al aangeeft, worden de metagegevens in de [!UICONTROL DAM Metadata Writeback] workflow opnieuw genoteerd naar het binaire bestand. Omdat de metagegevens na de vertaling veranderen, wordt bij het terugschrijven naar het binaire bestand een andere binaire waarde voor een taalkopie gegenereerd.
 
    >[!NOTE]
    >
-   >Als u de terugschrijfworkflow voor [!UICONTROL DAM MetaData Writeback] uitschakelt, wordt het terugschrijven van XMP-metagegevens naar binaire bestanden voor middelen uitgeschakeld. Daarom worden toekomstige wijzigingen in metagegevens niet meer opgeslagen in de elementen. Evalueer de gevolgen voordat u deze workflow uitschakelt.
+   >Als u de [!UICONTROL DAM MetaData Writeback] workflow uitschakelt, wordt het wegschrijven van XMP-metagegevens naar binaire bestanden met elementen uitgeschakeld. Daarom worden toekomstige wijzigingen in metagegevens niet meer opgeslagen in de elementen. Evalueer de gevolgen voordat u deze workflow uitschakelt.
 
-1. Schakel de workflow [!UICONTROL Laatste gewijzigde datum] instellen in.
+1. Schakel de [!UICONTROL Set last modified date] workflow in.
 
-   De [!UICONTROL DAM-workflow MetaData Writeback] configureert de laatste gewijzigde datum voor een element. Omdat u deze workflow in stap 2 uitschakelt, kunnen AEM-elementen de laatste gewijzigde datum van de elementen niet meer up-to-date houden. Schakel daarom de workflow Laatste gewijzigde datum ** instellen in om ervoor te zorgen dat de laatste gewijzigde datums van de elementen up-to-date zijn. Elementen met verouderde datums die als laatste zijn gewijzigd, kunnen fouten veroorzaken.
+   De [!UICONTROL DAM MetaData Writeback] workflow configureert de laatste gewijzigde datum voor een element. Omdat u deze workflow in stap 2 uitschakelt, kunnen elementen de laatste gewijzigde datum van de elementen niet meer up-to-date houden. Schakel daarom de workflow Laatste gewijzigde datum ** instellen in om ervoor te zorgen dat de laatste gewijzigde datums van de elementen up-to-date zijn. Elementen met verouderde datums die als laatste zijn gewijzigd, kunnen fouten veroorzaken.
 
-1. [Configureer het vertaalintegratieframework](/help/sites-administering/tc-tic.md) om te stoppen met het vertalen van binaire elementen. Schakel de optie **[!UICONTROL Vertaalactiva]** onder het tabblad Elementen uit om de vertaling van binaire elementen te stoppen.
+1. [Configureer het vertaalintegratieframework](/help/sites-administering/tc-tic.md) om te stoppen met het vertalen van binaire elementen. Hef de selectie van de **[!UICONTROL Translate Assets]** optie onder het tabblad Middelen op om de vertaling van binaire elementen te stoppen.
 1. Metagegevens/tags van elementen vertalen met behulp van [meertalige middelenworkflows](multilingual-assets.md).

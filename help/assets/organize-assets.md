@@ -3,7 +3,10 @@ title: Uw digitale middelen organiseren
 description: Organiseer uw digitale middelen, beelden, dossiers, omslagen, etc. gebruikend de Manager van de Ervaring.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '811'
+ht-degree: 0%
 
 ---
 
@@ -12,7 +15,7 @@ source-git-commit: abc4821ec3720969bf1c2fb068744c07477aca46
 
 Alle digitale elementen, metagegevens en inhoud van Microsoft Office- en PDF-documenten worden uitgepakt en doorzoekbaar gemaakt. Bij zoeken is geavanceerd filteren op elementen mogelijk en worden de juiste machtigingen volledig gerespecteerd. Metagegevens worden uitgebreid besproken in metagegevens in Digital Asset Management.
 
-AEM-elementen bieden ondersteuning voor verschillende manieren om inhoud te ordenen. U kunt de mappen hiërarchisch ordenen met behulp van mappen, maar u kunt ze ook ordenen op een niet-geordende ad-hocmanier, bijvoorbeeld met tags. Gebruikers kunnen labels bewerken in de DAM Asset Editor, waar submiddelen, uitvoeringen en metagegevens worden weergegeven.
+De Elementen van de Manager van de ervaring steunen veelvoudige manieren om inhoud te organiseren. U kunt de mappen hiërarchisch ordenen met behulp van mappen, maar u kunt ze ook ordenen op een niet-geordende ad-hocmanier, bijvoorbeeld met tags. Gebruikers kunnen labels bewerken in de DAM Asset Editor, waar submiddelen, uitvoeringen en metagegevens worden weergegeven.
 
 ## Elementen in mappen ordenen {#organize-using-folders}
 
@@ -32,7 +35,7 @@ De eenvoudigste manier om elementen te ordenen, is deze in mappen op te slaan. D
    * **Op datum gebaseerde mappen**: bevat digitale elementen die zijn gebaseerd op een aanmaakdatum of een datum die als laatste is gewijzigd.
 
 * Maak een map met mappen die waarschijnlijk niet worden gewijzigd, zodat aanpassingen of automatisering gewoon kunnen doorgaan. De toegewezen verwerkingsprofielen werken bijvoorbeeld nog steeds.
-* Als een element al is gepubliceerd, gebruikt u AEM om het element naar een andere map te verplaatsen en vanaf de nieuwe locatie opnieuw te publiceren, is de oorspronkelijke locatie van het gepubliceerde element nog steeds beschikbaar, samen met het opnieuw gepubliceerde element. Het oorspronkelijke gepubliceerde middel gaat echter *verloren* aan AEM en kan niet ongepubliceerd worden. Daarom, als beste praktijken, eerst unpublish een middel en dan verplaats het naar een verschillende omslag.
+* Als een middel reeds wordt gepubliceerd, dan gebruikt u de Manager van de Ervaring om het middel naar een andere omslag te verplaatsen, en van zijn nieuwe plaats opnieuw te publiceren, is de originele gepubliceerde activaplaats nog beschikbaar, samen met het onlangs opnieuw gepubliceerde middel. Het oorspronkelijke gepubliceerde element gaat echter *verloren* in Experience Manager en kan niet ongepubliceerd worden. Daarom, als beste praktijken, eerst unpublish een middel en dan verplaats het naar een verschillende omslag.
 
 ## Elementen ordenen met tags {#use-tags-to-organize-assets}
 
@@ -42,7 +45,7 @@ Adobe Experience Manager Assets gebruikt een zelfstudie algoritme om zeer beschr
 
 Raadpleeg de volgende artikelen voor meer informatie:
 
-* [Tags in AEM](/help/sites-authoring/tags.md)
+* [Tags in Experience Manager](/help/sites-authoring/tags.md)
 * [Metagegevens van elementen bewerken](meta-edit.md)
 * [Verbeterde slimme tags in elementen](enhanced-smart-tags.md)
 

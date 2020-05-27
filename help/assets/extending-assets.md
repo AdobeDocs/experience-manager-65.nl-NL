@@ -1,18 +1,21 @@
 ---
-title: AEM-middelen aanpassen en uitbreiden
+title: Adobe Experience Manager-middelen aanpassen en uitbreiden
 description: Leer manieren waarop u Asset Share en Asset Editor kunt aanpassen en uitbreiden, waarmee gebruikers een specifiek op maat gemaakte interface en een set functies krijgen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0ff23556444fcb161b0adf744bb72fdc50322d92
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+workflow-type: tm+mt
+source-wordcount: '263'
+ht-degree: 0%
 
 ---
 
 
 # Elementen aanpassen en uitbreiden {#customizing-and-extending-assets}
 
-De Asset Editor is het belangrijkste toegangspunt waarmee gebruikers van een Adobe Enterprise Manager-website (AEM) de digitale middelen in uw opslagplaats kunnen zoeken, weergeven en bewerken.
+De Asset Editor is het belangrijkste toegangspunt waarmee gebruikers van een Adobe Enterprise Manager-website de digitale middelen in uw opslagplaats kunnen zoeken, weergeven en bewerken.
 
-Als ontwikkelaar van AEM, kunt u de Redacteur van Activa op een aantal manieren aanpassen en uitbreiden, die gebruikers van een specifiek op maat gemaakte interface en een reeks functionaliteit voorstellen.
+Als ontwikkelaar van de Manager van de Ervaring, kunt u de Redacteur van Activa op een aantal manieren aanpassen en uitbreiden, die gebruikers van een specifiek op maat gemaakte interface en een reeks functionaliteit voorstellen.
 
 De volgende aspecten van de functionaliteit kunnen worden aangepast of verbeterd:
 
@@ -33,6 +36,6 @@ De volgende aspecten van de vormgeving van de Asset Editor kunnen worden aangepa
 
 ## Uitvoeringen aanpassen {#customizing-renditions}
 
-In de terminologie van AEM-activa is een uitvoering de vorm waarin een actief wordt gepresenteerd. In het algemeen kan een bepaald actief meerdere uitvoeringen hebben. Zo kan de oorspronkelijke grootte van een kleurenafbeelding bijvoorbeeld één uitvoering hebben, een andere bij een verkleind formaat en een andere afbeelding die wordt verkleind en omgezet in grijswaarden.
+In de terminologie van de Elementen van de Manager van de Ervaring is een vertoning de vorm waarin een activa wordt voorgesteld. In het algemeen kan een bepaald actief meerdere uitvoeringen hebben. Zo kan een kleurenafbeelding met volledige kleuren bijvoorbeeld een uitvoering in de oorspronkelijke grootte hebben, een andere bij een verkleind formaat en een andere afbeelding die wordt verkleind en omgezet in grijswaarden.
 
 De uitvoeringen waarin een bepaald element beschikbaar is, kunnen worden aangepast en nieuwe uitvoeringen worden gemaakt.

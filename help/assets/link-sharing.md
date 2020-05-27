@@ -1,11 +1,11 @@
 ---
 title: Een URL naar gedeelde elementen genereren
-description: In dit artikel wordt beschreven hoe u elementen, mappen en verzamelingen in AEM Assets als een URL naar externe partijen kunt delen.
+description: In dit artikel wordt beschreven hoe u elementen, mappen en verzamelingen in de middelen van Experience Manager kunt delen als een URL naar externe partijen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
 workflow-type: tm+mt
-source-wordcount: '1129'
+source-wordcount: '1136'
 ht-degree: 4%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 4%
 
 # Middelen delen via een koppeling {#asset-link-sharing}
 
-Met Adobe Experience Manager (AEM) kunt u elementen, mappen en verzamelingen als een URL delen met leden van uw organisatie en externe entiteiten, waaronder partners en leveranciers. Het delen van elementen via een koppeling is een handige manier om bronnen beschikbaar te maken voor externe partijen zonder dat deze zich eerst hoeven aan te melden bij AEM Assets.
+Met de Adobe Experience Manager-middelen kunt u elementen, mappen en verzamelingen als een URL delen met leden van uw organisatie en externe entiteiten, waaronder partners en leveranciers. Het delen van elementen via een koppeling is een handige manier om bronnen beschikbaar te maken voor externe partijen zonder dat deze zich eerst hoeven aan te melden bij Middelen.
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ Gebruik het dialoogvenster Koppelen om de URL te genereren voor elementen die u 
 
    >[!NOTE]
    >
-   >Als u koppelingen van uw AEM-auteur naar externe entiteiten wilt delen, dient u ervoor te zorgen dat alleen de volgende URL&#39;s (die worden gebruikt voor het delen van koppelingen) beschikbaar worden gemaakt voor `GET` aanvragen. Andere URL&#39;s blokkeren om de beveiliging van AEM-auteur te garanderen.
+   >Als u koppelingen van uw Author-instantie van Experience Manager wilt delen met externe entiteiten, moet u ervoor zorgen dat u alleen de volgende URL&#39;s (die worden gebruikt voor het delen van koppelingen) beschikbaar maakt voor `GET` aanvragen. Andere URL&#39;s blokkeren om de beveiliging van Experience Manager-auteur te garanderen.
    >
    >* http://&lt;aem_server>:&lt;port>/linkshare.html
    * http://&lt;aem_server>:&lt;port>/linksharepreview.html
@@ -50,7 +50,7 @@ Gebruik het dialoogvenster Koppelen om de URL te genereren voor elementen die u 
    >[!NOTE]
    Als een gedeeld element naar een andere locatie wordt verplaatst, werkt de koppeling niet meer. Maak de koppeling opnieuw en deel deze opnieuw met de gebruikers.
 
-1. Ga in de AEM-interface naar **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
+1. Ga in Experience Manager-interface naar **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 
 1. Open de **[!UICONTROL Day CQ Link Externalizer]** configuratie en wijzig de volgende eigenschappen op het **[!UICONTROL Domains]** gebied met de waarden die tegen `local`, `author`, en `publish`worden vermeld. Geef voor de eigenschappen `local` en `author` de URL op voor respectievelijk de lokale instantie en de auteur. Zowel `local` als `author` eigenschappen hebben dezelfde waarde als u één instantie van de Auteur van de Manager van de Ervaring in werking stelt. Geef `publish`bijvoorbeeld de URL op voor het publicatieexemplaar van Experience Manager.
 
@@ -92,7 +92,7 @@ Gebruik het dialoogvenster Koppelen om de URL te genereren voor elementen die u 
    ![chlimage_1-261](assets/chlimage_1-546.png)
 
    >[!NOTE]
-   AEM ondersteunt het genereren van een voorvertoning van elementen van deze MIME-typen: JPG, PNG, GIF, BMP, INDD, PDF en PPT. U kunt alleen de elementen van de andere MIME-typen downloaden.
+   De Manager van de ervaring steunt het produceren van de voorproef van activa van deze types MIME: JPG, PNG, GIF, BMP, INDD, PDF en PPT. U kunt alleen de elementen van de andere MIME-typen downloaden.
 
 1. Als u het gedeelde element wilt downloaden, klikt u **[!UICONTROL Select]** op de werkbalk, klikt u op het element en vervolgens klikt u **[!UICONTROL Download]** op de werkbalk.
 
@@ -118,9 +118,9 @@ Gebruik het dialoogvenster Koppelen om de URL te genereren voor elementen die u 
 
 ## Maximale gegevensgrootte configureren {#maxdatasize}
 
-Wanneer u elementen downloadt van de koppeling die wordt gedeeld met de functie voor het delen van koppelingen, comprimeert AEM de hiërarchie van elementen uit de opslagplaats en retourneert het element vervolgens in een ZIP-bestand. Bij gebrek aan beperkingen van de hoeveelheid gegevens die in een ZIP-bestand kan worden gecomprimeerd, worden enorme hoeveelheden gegevens gecomprimeerd, waardoor fouten in het geheugen in JVM worden veroorzaakt. Om het systeem van een potentiële ontkenning van de dienstaanval toe te schrijven aan deze situatie te beveiligen, vorm de maximumgrootte gebruikend de **[!UICONTROL Max Content Size (uncompressed)]** parameter voor [!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet] in de Manager van de Configuratie. Als de niet-gecomprimeerde grootte van het element de geconfigureerde waarde overschrijdt, worden de verzoeken om het downloaden van het element afgewezen. De standaardwaarde is 100 MB.
+Wanneer u elementen downloadt van de koppeling die wordt gedeeld met de functie voor het delen van koppelingen, comprimeert Experience Manager de hiërarchie van elementen uit de opslagplaats en wordt het element vervolgens geretourneerd in een ZIP-bestand. Bij gebrek aan beperkingen van de hoeveelheid gegevens die in een ZIP-bestand kan worden gecomprimeerd, worden enorme hoeveelheden gegevens gecomprimeerd, waardoor fouten in het geheugen in JVM worden veroorzaakt. Om het systeem van een potentiële ontkenning van de dienstaanval toe te schrijven aan deze situatie te beveiligen, vorm de maximumgrootte gebruikend de **[!UICONTROL Max Content Size (uncompressed)]** parameter voor [!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet] in de Manager van de Configuratie. Als de niet-gecomprimeerde grootte van het element de geconfigureerde waarde overschrijdt, worden de verzoeken om het downloaden van het element afgewezen. De standaardwaarde is 100 MB.
 
-1. Click the AEM logo and then go to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
+1. Click the Experience Manager logo and then go to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 1. Van de Console van het Web, bepaal de plaats van de **[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]** configuratie.
 1. Open de **[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]** configuratie in geef wijze uit, en wijzig de waarde van de **[!UICONTROL Max Content Size (uncompressed)]** parameter.
 
@@ -131,6 +131,6 @@ Wanneer u elementen downloadt van de koppeling die wordt gedeeld met de functie 
 ## Beste werkwijzen en probleemoplossing {#bestpractices}
 
 * Elementmappen of verzamelingen die een witruimte in hun naam bevatten, worden mogelijk niet gedeeld.
-* Als gebruikers de gedeelde elementen niet kunnen downloaden, vraagt u de AEM-beheerder na welke [downloadlimieten](#maxdatasize) gelden.
-* Als u geen e-mail met koppelingen naar gedeelde elementen kunt verzenden of als de andere gebruikers uw e-mail niet kunnen ontvangen, raadpleegt u uw AEM-beheerder als de [e-mailservice](#configmailservice) is geconfigureerd of niet.
+* Als gebruikers de gedeelde elementen niet kunnen downloaden, vraagt u de beheerder van de Experience Manager om de [downloadlimieten](#maxdatasize) .
+* Als u geen e-mail met koppelingen naar gedeelde elementen kunt verzenden of als de andere gebruikers uw e-mail niet kunnen ontvangen, raadpleegt u de beheerder van de Experience Manager als de [e-mailservice](#configmailservice) is geconfigureerd of niet.
 * Als u geen elementen kunt delen via de functie voor het delen van koppelingen, controleert u of u de juiste machtigingen hebt. Zie [Elementen](#sharelink)delen.

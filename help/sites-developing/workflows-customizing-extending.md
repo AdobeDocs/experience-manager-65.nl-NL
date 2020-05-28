@@ -10,7 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f23408c3-6b37-4047-9cce-0cab97bb6c5c
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 48d18de8c982ab3b92cad4df030cb1e4a1a8dfc4
+workflow-type: tm+mt
+source-wordcount: '3587'
+ht-degree: 1%
 
 ---
 
@@ -315,7 +318,7 @@ De workflow `MetaDataMap` is beschikbaar voor Java- en ECMA-scriptprocesimplemen
 
 ### Voorbeeld: De argumenten van de processtapcomponent ophalen {#example-retrieving-the-arguments-of-the-process-step-component}
 
-Het dialoogvenster Bewerken van de component **Processtap** bevat de eigenschap **Arguments** . De waarde van de eigenschap **Arguments** wordt opgeslagen in de metagegevens van de workflow en is gekoppeld aan de `PROCESS_ARGS` toets.
+Het dialoogvenster Bewerken van de component **Processtap** bevat de eigenschap **Arguments** . De waarde van de eigenschap **Arguments** wordt opgeslagen in de metagegevens van de workflow en is gekoppeld aan de `PROCESS_ARGS` sleutel.
 
 In het volgende diagram is de waarde van de eigenschap **Arguments** `argument1, argument2`:
 
@@ -802,7 +805,7 @@ Een gemakkelijke manier om uw eigen douanestap te beginnen te creëren is een be
    >
    >Deze stap is niet van toepassing op de klassieke UI Model redacteur.
 
-1. Plaats vervolgens de gekopieerde stap in de map /apps; zoals:
+1. Plaats de gekopieerde stap vervolgens in de map /apps; zoals:
 
    `/apps/cq/workflow/components/model/myCustomStep`
 
@@ -1027,7 +1030,7 @@ Het `_cq_dialog/.content.xml` voorbeeld dat in dit voorbeeld wordt gebruikt:
 >
 >Dialoogvensters van de klassieke UI-modeleditor werken nog steeds met de standaardinterface-editor met aanraakbediening.
 >
->Alhoewel AEM een hulpmiddel van de [dialoogomzetting](/help/sites-developing/dialog-conversion.md) heeft als u uw klassieke dialoog UI geleidelijke dialogen aan standaarddialogen UI wilt bevorderen. Na de conversie zijn er nog enkele handmatige verbeteringen die in bepaalde gevallen in de dialoog kunnen worden aangebracht.
+>Alhoewel AEM een hulpmiddel van de [dialoogomzetting](/help/sites-developing/dialog-conversion.md) heeft als u uw klassieke de geleidelijke dialogen van UI aan standaarddialogen wilt bevorderen UI. Na de conversie zijn er nog enkele handmatige verbeteringen die in bepaalde gevallen in de dialoog kunnen worden aangebracht.
 >
 >* Als een bijgewerkt dialoogvenster leeg is, kunt u dialoogvensters bekijken `/libs` die vergelijkbare functionaliteit hebben als voorbeelden van hoe u een oplossing kunt bieden. Bijvoorbeeld:
    >

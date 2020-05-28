@@ -10,7 +10,10 @@ topic-tags: author
 discoiquuid: 0f335ea0-504f-4cc0-b97b-c3fc715bcc2e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5a76200a573d95026e2347d2049a089d975b5619
+source-git-commit: 68ea2335a8466c3c23b766efb1a04b6a38d7f670
+workflow-type: tm+mt
+source-wordcount: '542'
+ht-degree: 0%
 
 ---
 
@@ -38,11 +41,11 @@ We gebruiken een voorbeeld waarbij u een reeks moet maken voor het invullen, ver
    * **E-handtekening**: Het bevat de **component Sign** die kan worden gebruikt in een op XFA gebaseerde adaptieve vorm. het biedt de volgende ondertekeningsservices:
 
       * Adobe Document Cloud eSign-services
-      * (Verouderd) Krabbelhandtekening
+      * Krabbelhandtekening
    * **Bevestiging**: Het bevat de component **Samenvatting** die een bericht weergeeft ter bevestiging van het verzenden van het formulier nadat een gebruiker het formulier heeft ondertekend en de stap Bevestigen (Samenvatting) in de reeks heeft bereikt. Auteurs kunnen de tekst van de component Summary configureren, een bedankbericht weergeven, een koppeling naar de gegenereerde PDF weergeven, enzovoort.
 
 
-1. Selecteer de layout van het hoofddeelvenster als **[!UICONTROL wizard]**.
+1. Selecteer de layout van het hoofddeelvenster als **[!UICONTROL Wizard]**.
 1. Voer de overige stappen uit om de formuliersjabloon te maken. Zie Een aangepaste formuliersjabloon [](../../forms/using/custom-adaptive-forms-templates.md)maken voor meer informatie.
 
 Nadat u de formuliervolgorde in de formuliersjabloon hebt gedefinieerd, kunt u er formulieren mee maken die de basisstructuur hebben gedefinieerd als de ingestelde reeks. U kunt het formulier echter altijd aan uw wensen aanpassen.

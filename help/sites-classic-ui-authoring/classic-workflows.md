@@ -10,14 +10,17 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: b11f0e4c-4dec-4b66-9f54-a0aa13ac77b9
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 48d18de8c982ab3b92cad4df030cb1e4a1a8dfc4
+workflow-type: tm+mt
+source-wordcount: '269'
+ht-degree: 5%
 
 ---
 
 
 # Werken met workflows{#working-with-workflows}
 
-Met AEM Workflows kunt u een reeks stappen automatiseren die op een pagina of element worden uitgevoerd. Wanneer u bijvoorbeeld publiceert, moet een editor de inhoud controleren voordat een sitebeheerder de pagina activeert. Een werkstroom die dit voorbeeld automatiseert brengt elke deelnemer op de hoogte wanneer het tijd is om hun vereist werk uit te voeren:
+Met AEM Workflows kunt u een reeks stappen automatiseren die op een pagina of element worden uitgevoerd. Wanneer u bijvoorbeeld publiceert, moet een editor de inhoud controleren voordat een sitebeheerder de pagina activeert. Een werkschema dat dit voorbeeld automatiseert brengt elke deelnemer op de hoogte wanneer het tijd is om hun vereist werk uit te voeren:
 
 1. De auteur past de workflow toe op de pagina.
 1. De redacteur ontvangt een het werkpunt dat erop wijst dat zij worden vereist om de paginainhoud te herzien. Als ze klaar zijn, geven ze aan dat hun werkitem voltooid is.

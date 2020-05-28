@@ -1,8 +1,8 @@
 ---
 title: AEM Core Concepts
 seo-title: De basisbeginselen
-description: Een overzicht van de kernconcepten van hoe AEM wordt gestructureerd en hoe zich bovenop het te ontwikkelen met inbegrip van het begrijpen van JCR, Sling, OSGi, de verzender, werkschema's, en MSM
-seo-description: Een overzicht van de kernconcepten van hoe AEM wordt gestructureerd en hoe zich bovenop het te ontwikkelen met inbegrip van het begrijpen van JCR, Sling, OSGi, de verzender, werkschema's, en MSM
+description: Een overzicht van de kernconcepten van hoe AEM wordt gestructureerd en hoe zich bovenop het te ontwikkelen met inbegrip van het begrijpen van JCR, Sling, OSGi, de verzender, de werkschema's, en MSM
+seo-description: Een overzicht van de kernconcepten van hoe AEM wordt gestructureerd en hoe zich bovenop het te ontwikkelen met inbegrip van het begrijpen van JCR, Sling, OSGi, de verzender, de werkschema's, en MSM
 uuid: e49f29db-a5d6-48a0-af32-f8785156746e
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,7 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 6e913190-be92-4862-a8b9-517f8bde0044
 translation-type: tm+mt
-source-git-commit: 2d0e0325d1fce2587e4766bf2f60fc5d4accf45b
+source-git-commit: fc09ba6cb923d9ea25ec14af093d7f86a4835d85
+workflow-type: tm+mt
+source-wordcount: '3365'
+ht-degree: 0%
 
 ---
 
@@ -43,7 +46,7 @@ De JCR-standaard (Java Content Repository), [JSR 283](https://docs.adobe.com/con
 
 Specificatie lead wordt gehouden door Adobe Research (Zwitserland) AG.
 
-Het pakket [JCR API 2.0](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html) , javax.jcr. &amp;ast; wordt gebruikt voor directe toegang tot en manipulatie van inhoud in de repository.
+Het pakket [JCR API 2.0](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html) , javax.jcr.&amp;ast; wordt gebruikt voor directe toegang tot en manipulatie van inhoud in de repository.
 
 ## Experience Server (CRX) en Jackrabbit {#experience-server-crx-and-jackrabbit}
 
@@ -76,7 +79,7 @@ Het volgende diagram verklaart alle verborgen, maar krachtige, verzoekparameters
 Sling is *inhoudcentrisch*. Dit betekent dat de verwerking wordt geconcentreerd op de inhoud aangezien elk (HTTP) verzoek op inhoud in de vorm van een middel JCR (een gegevensopslagplaats knoop) in kaart wordt gebracht:
 
 * het eerste doel is de bron (JCR-knooppunt) die de inhoud in zijn bezit heeft
-* ten tweede, wordt de vertegenwoordiging, of het manuscript, gevestigd van de middeleigenschappen in combinatie met bepaalde delen van het verzoek (b.v. selecteurs en/of de uitbreiding)
+* ten tweede bevindt de representatie, of het script, zich in combinatie met bepaalde delen van het verzoek (bijvoorbeeld kiezers en/of de extensie) uit de eigenschappen resource.
 
 ### RESTful Sling {#restful-sling}
 
@@ -135,8 +138,8 @@ Met Sling, specificeert u welk manuscript een bepaalde entiteit teruggeeft (door
 
 Het verzoek wordt uitgesplitst en de nodige informatie wordt ingewonnen. De repository wordt gezocht naar de gevraagde resource (content node):
 
-* first Sling controleert of een knooppunt bestaat op de locatie die in de aanvraag is opgegeven;bijv. `../content/corporate/jobs/developer.html`
-* als er geen knooppunt wordt gevonden, wordt de extensie verwijderd en wordt de zoekopdracht herhaald;bijv. `../content/corporate/jobs/developer`
+* first Sling controleert of een knooppunt bestaat op de locatie die in de aanvraag is opgegeven; bijv. `../content/corporate/jobs/developer.html`
+* als er geen knooppunt wordt gevonden, wordt de extensie verwijderd en wordt de zoekopdracht herhaald; bijv. `../content/corporate/jobs/developer`
 * Als er geen knooppunt wordt gevonden, retourneert Sling de http-code 404 (Not Found).
 
 Met Sling kunnen andere zaken dan JCR-knooppunten ook bronnen zijn, maar dit is een geavanceerde functie.
@@ -212,7 +215,8 @@ Met behulp van het bovenstaande voorbeeld, als het `sling:resourceType` dan `hr/
 
 Als er meerdere scripts van toepassing zijn voor een bepaalde aanvraag, wordt het script met de beste overeenkomst geselecteerd. Hoe specifieker een match is, hoe beter dat is; met andere woorden, de meer selecteur past beter aan, ongeacht om het even welke verzoekuitbreiding of methodenamen.
 
-Neem bijvoorbeeld een verzoek om toegang te krijgen tot de bron`/content/corporate/jobs/developer.print.a4.html`van het type`sling:resourceType="hr/jobs"`
+Neem bijvoorbeeld een verzoek om toegang te krijgen tot de bron`/content/corporate/jobs/developer.print.a4.html`van het type
+`sling:resourceType="hr/jobs"`
 
 Ervan uitgaande dat de volgende lijst met scripts op de juiste locatie staat:
 
@@ -256,7 +260,14 @@ Bijvoorbeeld:
 
 
 
-De typehiërarchie van /x is [ c, b, a, &lt;default>] terwijl voor /y de hiërarchie [ c, a, is,
+De typehiërarchie van:
+
+* `/x`
+   * is `[ c, b, a, <default>]`
+* while for `/y`
+   * de hiërarchie `[ c, a, <default>]`
+
+Dit komt omdat `/y` het `sling:resourceSuperType` eigendom heeft, `/x` niet en daarom wordt het supertype ervan ontleend aan zijn middeltype.
 
 #### Sling-scripts kunnen niet rechtstreeks worden aangeroepen {#sling-scripts-cannot-be-called-directly}
 

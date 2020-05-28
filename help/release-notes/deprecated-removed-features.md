@@ -7,7 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: e8e2e01b-0117-48c3-86d8-609d29a147be
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 33fab976729baa09fdfd3725542f9e6bc7f37eeb
+source-git-commit: 49209cb64c829fde396e87ca4b2e326ecf1dd941
+workflow-type: tm+mt
+source-wordcount: '1634'
+ht-degree: 0%
 
 ---
 
@@ -90,23 +93,6 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
    <td>Adobe is van plan een alternatieve implementatie van het gebruiksgeval in toekomstige versies te bieden.</td>
   </tr>
   <tr>
-   <td>Componenten (AEM-formulieren)</td>
-   <td><p>Met de stap Handtekening kunnen gebruikers een adaptief formulier verifiëren en ondertekenen. In eerdere versies kon in de handtekeningstap zowel de Adobe-componenten Ondertekenen als Scripthandtekening worden gebruikt als handtekeningvelden. In AEM 6.5-formulieren is de ondertekeningservaring op basis van een scripthandtekening afgekeurd.</p> </td>
-   <td>
-    <ul>
-     <li>Als u een nieuwe installatie hebt uitgevoerd:
-      <ul>
-       <li>Gebruik de ondertekeningservaring op basis van Adobe-handtekeningen in een adaptieve vorm.</li>
-       <li>Gebruik de stand-alone component voor scriptondertekening in een adaptieve vorm, interactieve communicatie en HTML5 Forms.</li>
-      </ul> </li>
-     <li>Als u een upgrade hebt uitgevoerd van een vorige versie naar AEM 6.5 Forms:<br />
-      <ul>
-       <li>Ga door met het gebruik van de ondertekeningservaring op basis van Krabbelhandtekeningen in Handtekeningstap voor formulieren die de functie al gebruiken.<br /> </li>
-       <li>Wanneer u een formulier maakt, gebruikt u de stand-alone component voor scriptondertekening of de ondertekeningservaring op basis van Adobe-handtekeningen in een stap Handtekening. </li>
-      </ul> </li>
-    </ul> <p> </p> <p> </p> </td>
-  </tr>
-  <tr>
    <td>Stichting</td>
    <td><p>Framework Granite Offloading</p> <p>Adobe is niet van plan het offloading-framework, dat in 5.6.1 is geïntroduceerd, verder te verbeteren om de verwerking van bedrijfsmiddelen extern te maken. </p> </td>
    <td>Adobe werkt aan een 'cloud-native offloading'-framework van de volgende generatie.</td>
@@ -166,8 +152,8 @@ Deze sectie bevat een lijst met functies en mogelijkheden die zijn verwijderd ui
 | Gebied | Functie | Vervanging |
 |--- |--- |--- |
 | Activiteitenkaart voor analyse | De versie van de activiteitenkaart die in AEM is opgenomen. | Vanwege beveiligingswijzigingen in de API voor Adobe Analytics is het niet langer mogelijk de versie van Activity Map te gebruiken die in AEM is opgenomen. Gebruik de plug-in [ActivityMap van Adobe Analytics](https://docs.adobe.complugin /content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html). |
-| Integraties | De integratie ExactTarget is verwijderd uit de standaarddistributie (QuickStart) en het is niet meer beschikbaar. | Geen vervanging |
-| Integraties | De integratie van de Salesforce-API is verwijderd uit de standaarddistributie (QuickStart) en is nu een extra pakket dat u kunt installeren vanuit PackageShare. | Functie is nog steeds beschikbaar. |
+| Integrations | De integratie ExactTarget is verwijderd uit de standaarddistributie (QuickStart) en het is niet meer beschikbaar. | Geen vervanging |
+| Integrations | De integratie van de Salesforce-API is verwijderd uit de standaarddistributie (QuickStart) en is nu een extra pakket dat u kunt installeren vanuit PackageShare. | Functie is nog steeds beschikbaar. |
 | Formulieren | De ondersteuning voor de Adobe Central Migration Bridge-service is verwijderd omdat het Adobe Central-product niet meer wordt ondersteund. | Geen vervanging |
 | Formulieren | `com.adobe.fd.df.fdinternal.model.ConfigurationInstance` | Geen vervanging |
 | Formulieren | `com.adobe.fd.ccm.channels.print.fdinternal.api.service.PrintDataTransformer` | Geen vervanging |

@@ -1,6 +1,6 @@
 ---
-title: Elektronische handtekeningen toepassen op een formulier met (Vervangen) scripthandtekeningen
-seo-title: Elektronische handtekeningen toepassen op een formulier met (Vervangen) scripthandtekeningen
+title: Elektronische handtekeningen toepassen op een formulier met scripthandtekeningen
+seo-title: Elektronische handtekeningen toepassen op een formulier met scripthandtekeningen
 description: Formulieren ondertekenen met behulp van krabbelen
 seo-description: Formulieren ondertekenen met behulp van krabbelen
 uuid: ffeba886-9b24-4ed1-95c0-e19356ff2f23
@@ -9,14 +9,17 @@ topic-tags: author
 discoiquuid: 76d178d1-8e40-41b3-80d4-66b2f8d04211
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 92a64c8a1ba38f592d18355b8233cb79a2575301
+source-git-commit: 68ea2335a8466c3c23b766efb1a04b6a38d7f670
+workflow-type: tm+mt
+source-wordcount: '509'
+ht-degree: 0%
 
 ---
 
 
-# Elektronische handtekeningen toepassen op een formulier met (Vervangen) scripthandtekeningen{#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}
+# Elektronische handtekeningen toepassen op een formulier met scripthandtekeningen{#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}
 
-Met de component (Vervangen) **Krabbelhandtekening** en de component **Handtekeningstap** kunt u een handtekening (krabbelen) tekenen op een adaptief formulier. In het onderdeel Handtekeningstap wordt een PDF-versie van het adaptieve formulier weergegeven. U hebt een optie Document of Record ingeschakeld of op een formuliersjabloon gebaseerde adaptieve formulieren nodig om de component Handtekeningstap te kunnen gebruiken.
+Met de component **Krabbelhandtekening** en de component **Handtekeningstap** kunt u een handtekening (krabbelen) tekenen op een adaptief formulier. In het onderdeel Handtekeningstap wordt een PDF-versie van het adaptieve formulier weergegeven. U hebt een optie Document of Record ingeschakeld of op een formuliersjabloon gebaseerde adaptieve formulieren nodig om de component Handtekeningstap te kunnen gebruiken.
 
 Beide componenten bieden een venster, zoals hieronder wordt weergegeven, om een formulier te ondertekenen. U kunt ook op het geolocatiepictogram ![aem_6_3_geolocation](assets/aem_6_3_geolocation.png) klikken om geolocatie aan de handtekening toe te voegen.
 
@@ -43,9 +46,9 @@ Beide componenten bieden een venster, zoals hieronder wordt weergegeven, om een 
 
    * **Elementnaam**: Geef de naam van de component op.
 
-   * **** Titel: Geef een unieke titel van de component op.
-   * **** Sjabloonbericht: Geef het bericht op dat moet worden weergegeven wanneer de PDF van de handtekening wordt geladen. Het duurt enige tijd om PDF-handtekening voor te bereiden en te laden.
-   * **** Ondertekeningsservice: Selecteer de optie **Krabbelhandtekening** .
+   * **Titel:** Geef een unieke titel van de component op.
+   * **Sjabloonbericht:** Geef het bericht op dat moet worden weergegeven wanneer de PDF van de handtekening wordt geladen. Het duurt enige tijd om PDF-handtekening voor te bereiden en te laden.
+   * **Ondertekeningsservice:** Selecteer de optie **Krabbelhandtekening** .
 
    * **CSS-klasse**: Geef eventueel de CSS-klasse van de clientbibliotheek op. Het wordt aanbevolen [thema](../../forms/using/themes.md) &#39;s en [inline stijlen](../../forms/using/inline-style-adaptive-forms.md) te gebruiken in plaats van CSS-klasse.
    Tik op het pictogram Done ![name_6_3_forms_save](assets/aem_6_3_forms_save.png) om de wijzigingen op te slaan. De handtekening is geconfigureerd.
@@ -58,7 +61,7 @@ Beide componenten bieden een venster, zoals hieronder wordt weergegeven, om een 
 
    ![Handtekeningscherm voor EchoSign-pagina](assets/esignscribblesign.jpg)
 
-1. Klik op **[!UICONTROL Ondertekenen]**. Het dialoogvenster Scriptteken wordt weergegeven. Onderteken het formulier en klik op het pictogram Done ![name_6_3_forms_save](assets/aem_6_3_forms_save.png) om de handtekening op te slaan.
+1. Klik op **[!UICONTROL Sign]**. Het dialoogvenster Scriptteken wordt weergegeven. Onderteken het formulier en klik op het pictogram Done ![name_6_3_forms_save](assets/aem_6_3_forms_save.png) om de handtekening op te slaan.
 
    ![Dialoogvenster Krabbelen](assets/scribblewidget.jpg)
 

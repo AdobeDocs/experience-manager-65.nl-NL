@@ -9,7 +9,10 @@ topic-tags: publish
 discoiquuid: 89bcc76d-122f-4a3f-b857-16e5376e1624
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 182043b43e9fdb2e7e6de982bceb87b43f36a3ba
+source-git-commit: 48d18de8c982ab3b92cad4df030cb1e4a1a8dfc4
+workflow-type: tm+mt
+source-wordcount: '869'
+ht-degree: 18%
 
 ---
 
@@ -331,7 +334,7 @@ Form-centric AEM Workflows op OSGi- en AEM Forms JEE Workflows (AEM Forms on JEE
 
 1. U kunt Form-centric AEM Workflows op OSGi gebruiken om een gevuld adaptief formulier te ondertekenen. Form-centric AEM Workflows op OSGi ondersteunen formulierondertekening. De ondertekeningservaring [in formulieren](../../forms/using/working-with-adobe-sign.md#create-in-form-signing-experience) wordt niet ondersteund.
 
-1. U hebt toegang tot AEM Inbox nodig om Form-Centric-workflows op AEM Forms OSGi en HTML Workspace uit te voeren en te controleren om JEE-workflows voor AEM Forms uit te voeren en te controleren.
+1. U hebt toegang tot AEM Inbox nodig om Form-Centric workflows op AEM Forms OSGi en HTML Workspace uit te voeren en te controleren om JEE-workflows voor AEM Forms uit te voeren en te controleren.
 1. Native AEM Forms Document Services zijn zowel beschikbaar voor Form-centric AEM Workflows op OSGi als voor AEM Forms op JEE Workflows. In de AEM-workflow worden native documentservices gebruikt voor Form-centric AEM Workflows op OSGi- en AEM Forms JEE (Process Management) Workflows.
 1. AEM Forms JEE Workflows kunnen alleen een adaptief formulier weergeven. Het ondersteunt het renderen van een adaptief formulier als PDF-document niet.
 1. AEM-formulieren JEE Workflows hebben geen aparte stap voor ondertekening door Adobe. U hebt een adaptief formulier met Adobe Sign-functionaliteit nodig voor JEE Workflows voor AEM-formulieren. Raadpleeg de documentatie bij [Adobe Sign voor meer informatie](../../forms/using/working-with-adobe-sign.md#add-and-configure-the-signature-step-component).

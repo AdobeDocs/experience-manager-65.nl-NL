@@ -10,7 +10,10 @@ topic-tags: publish
 discoiquuid: db38972c-be3f-49fd-8cc1-45b16ed244af
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 48d18de8c982ab3b92cad4df030cb1e4a1a8dfc4
+workflow-type: tm+mt
+source-wordcount: '7153'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,8 @@ Een beheerder kan een netwerkmap, ook wel een gecontroleerde map genoemd, zo con
 
 U kunt een van de volgende methoden gebruiken om een gecontroleerde map te maken op het bestandssysteem:
 
-* Wanneer het vormen van de eigenschappen van een Gecontroleerde knoop van de Omslagconfiguratie, typ de volledige weg van de ouderfolder in het folderPath bezit en voeg de naam van de Gecontroleerde Te creëren Omslag toe, zoals aangetoond in het volgende voorbeeld: `C:/MyPDFs/MyWatchedFolder`De `MyWatchedFolder`map bestaat niet. AEM Forms probeert de map te maken op het opgegeven pad.
+* Wanneer het vormen van de eigenschappen van een Gecontroleerde knoop van de Omslagconfiguratie, typ de volledige weg van de ouderfolder in het folderPath bezit en voeg de naam van de Gecontroleerde Te creëren Omslag toe, zoals aangetoond in het volgende voorbeeld: `C:/MyPDFs/MyWatchedFolder`
+De `MyWatchedFolder`map bestaat niet. AEM Forms probeert de map te maken op het opgegeven pad.
 
 * Creeer een omslag op het dossiersysteem alvorens een Gecontroleerd eindpunt van de Omslag te vormen, en dan de volledige weg in het folderPath bezit te verstrekken. Zie [Gecontroleerde mapeigenschappen](#watchedfolderproperties)voor meer informatie over de eigenschap folderPath.
 
@@ -87,7 +91,7 @@ U kunt de volgende eigenschappen configureren voor een gecontroleerde map.
 
 >[!NOTE]
 >
->Zelfs wanneer een input duidelijk als getimed uit gebruikend dit mechanisme wordt gemerkt, kan het nog op de achtergrond verwerken maar enkel meer tijd nemen dan verwacht. Als de invoerinhoud is verbruikt voordat het time-outmechanisme is ingedrukt, kan de verwerking zelfs later worden voltooid en wordt de uitvoer in de resultatenmap gedumpt. Als de inhoud niet vóór de onderbreking werd verbruikt, is het zeer waarschijnlijk dat de verwerking later uit zal fout bij het proberen om de inhoud te verbruiken, en deze fout zal ook in de mislukkingsomslag voor de zelfde input worden geregistreerd. Anderzijds, als de verwerking voor de input nooit geactiveerd wegens een periodiek baan/werkschemamisbrand (dat is het scenario het verloopmechanisme richt om te richten), dan natuurlijk zullen geen van beide situaties voorkomen. Voor alle items in de map met foutmeldingen die zijn gemarkeerd als mislukkingen vanwege een time-out (zoek naar berichten in het formulier &quot;Bestand wordt niet verwerkt na een aanzienlijke hoeveelheid tijd, gemarkeerd als fout!&quot; in het foutenlogboek), is het aan te raden om de resultaatomslag (en ook de mislukkingsomslag zelf voor een andere ingang voor de zelfde input) af te tasten om te controleren of om het even welke eerder beschreven gebeurtenissen daadwerkelijk voorkwamen.
+>Zelfs wanneer een input duidelijk als getimed uit gebruikend dit mechanisme wordt gemerkt, kan het nog op de achtergrond verwerken maar enkel meer tijd nemen dan verwacht. Als de invoerinhoud is verbruikt voordat het time-outmechanisme is ingedrukt, kan de verwerking zelfs later worden voltooid en wordt de uitvoer in de resultatenmap gedumpt. Als de inhoud niet vóór de onderbreking werd verbruikt, is het zeer waarschijnlijk dat de verwerking later uit zal fout bij het proberen om de inhoud te verbruiken, en deze fout zal ook in de mislukkingsomslag voor de zelfde input worden geregistreerd. Anderzijds, als de verwerking voor de input nooit als gevolg van een periodiek baan/werkschemamisbrand (dat is het scenario het verloopmechanisme richt om te richten) wordt geactiveerd, dan natuurlijk zullen geen van beide situaties voorkomen. Voor alle items in de map met foutmeldingen die zijn gemarkeerd als mislukkingen vanwege een time-out (zoek naar berichten in het formulier &quot;Bestand wordt niet verwerkt na een aanzienlijke hoeveelheid tijd, gemarkeerd als fout!&quot; in het foutenlogboek), is het aan te raden om de resultaatomslag (en ook de mislukkingsomslag zelf voor een andere ingang voor de zelfde input) af te tasten om te controleren of om het even welke eerder beschreven gebeurtenissen daadwerkelijk voorkwamen.
 
 * **deleteExpiredStageFileOnlyWhenThrottled (Boolean, standaard true):** Hiermee wordt aangegeven of het verloopmechanisme alleen moet worden geactiveerd wanneer de controlemap wordt vertraagd. Het mechanisme is relevanter voor vertraagde controlemappen aangezien een klein aantal dossiers die zich in een onverwerkte staat (wegens intermitterende baan/werkschemafouten) rond blijven de mogelijkheid hebben om verwerking voor de volledige partij te onderdrukken wanneer het vertragen wordt toegelaten. Als deze eigenschap wordt ingesteld op true (de standaardwaarde), wordt het verloopmechanisme niet geactiveerd voor gecontroleerde mappen die niet worden vertraagd. Als de eigenschap false blijft, wordt het mechanisme altijd geactiveerd zolang de eigenschap stageFileExpirationDuration een positief getal is.
 
@@ -167,7 +171,7 @@ Zie [Bestandspatronen voor meer informatie over bestandspatronen](../../forms/us
 >De workflows zijn per ontwerp asynchroon. Zelfs als u de waarde op false instelt, worden de workflows gestart in de asynchrone modus.
 
 * **enabled (Boolean)**: Hiermee wordt het scannen naar een gecontroleerde map gedeactiveerd en geactiveerd. Stel deze optie in op true als u de gecontroleerde map wilt scannen. De standaardwaarde is true.
-* **payloadMapperFilter:** Wanneer een map is geconfigureerd als controlemap, wordt een mapstructuur gemaakt in de controlemap. De structuur bevat mappen voor het leveren van invoer, het ontvangen van uitvoer (resultaten), het opslaan van gegevens voor fouten, het bewaren van gegevens voor langlevende processen en het opslaan van gegevens voor verschillende stadia. De mapstructuur van een gecontroleerde map kan dienen als een lading Forms-centric workflows. Met een payload-mapper kunt u de structuur definiëren van een lading die een gecontroleerde map gebruikt voor invoer, uitvoer en verwerking. Als u bijvoorbeeld de standaardmapper gebruikt, wordt de inhoud van de gecontroleerde map toegewezen aan de [payload]-\invoer- en [payload]\uitvoermap. Er zijn twee uitvoeringen beschikbaar voor de payload mapper box. Als u geen [aangepaste implementatie](../../forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter)hebt, gebruikt u een van de implementaties buiten de box:
+* **payloadMapperFilter:** Wanneer een map is geconfigureerd als controlemap, wordt een mapstructuur gemaakt in de controlemap. De structuur bevat mappen voor het leveren van invoer, het ontvangen van uitvoer (resultaten), het opslaan van gegevens voor fouten, het bewaren van gegevens voor langlevende processen en het opslaan van gegevens voor verschillende stadia. De mapstructuur van een gecontroleerde map kan dienen als een lading Forms-centric workflows. Met een payload-mapper kunt u de structuur definiëren van een lading die een gecontroleerde map gebruikt voor invoer, uitvoer en verwerking. Als u bijvoorbeeld de standaardmapper gebruikt, wordt de inhoud van de gecontroleerde map toegewezen aan de [payload]-\input- en [payload]\output-map. Er zijn twee uitvoeringen beschikbaar voor de payload mapper box. Als u geen [aangepaste implementatie](../../forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter)hebt, gebruikt u een van de implementaties buiten de box:
 
    * **Standaardmapper:** Gebruik de standaard payload mapper om de invoer- en uitvoerinhoud van de gecontroleerde mappen in aparte invoer- en uitvoermappen in de payload te houden. Gebruik in het payload-pad van een workflow ook [payload]/input/- en [payload]/output-paden om inhoud op te halen en op te slaan.
 
@@ -214,7 +218,7 @@ U kunt veranderbare variabelen voor werkschemagebaseerde dossierverwerkingsmetho
 
 U kunt een workflow, service of script starten om de documenten in een controlemap te verwerken.
 
-### Een service gebruiken om bestanden van een gecontroleerde map te verwerken {#using-a-service-to-process-files-of-a-watched-folder-nbsp}
+### Een service gebruiken om bestanden van een gecontroleerde map te verwerken   {#using-a-service-to-process-files-of-a-watched-folder-nbsp}
 
 Een dienst is een douaneimplementatie van de `com.adobe.aemfd.watchfolder.service.api.ContentProcessor` interface. Het wordt geregistreerd met OSGi samen met een paar douaneeigenschappen. De aangepaste eigenschappen van de implementatie maken deze uniek en helpen u bij het identificeren van de implementatie.
 
@@ -633,7 +637,7 @@ De ECMAScript zou de createPDF-API van de PDF-Generator gebruiken om Microsoft W
 ### Een workflow maken {#create-a-workflow}
 
 1. Open de interface van de AEM-workflow in een browservenster.
-https://[servernaam]: &#39;poort&#39;/worklow
+https://[servernaam]: &#39;poort&#39;/workflow
 
 1. Klik in de weergave Modellen op **Nieuw**. Geef in het dialoogvenster Nieuwe workflow de **titel** op en klik op **OK**.
 

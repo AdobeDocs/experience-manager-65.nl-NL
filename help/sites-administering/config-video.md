@@ -10,7 +10,10 @@ topic-tags: operations
 content-type: reference
 discoiquuid: a1efef3c-0e4b-4a17-bcad-e3cc17adbbf7
 translation-type: tm+mt
-source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
+source-git-commit: 44dbabeeea4e4e8d17cc69a2d8ea791c98be2bd2
+workflow-type: tm+mt
+source-wordcount: '420'
+ht-degree: 0%
 
 ---
 
@@ -23,11 +26,11 @@ Voor juiste transcodering moet uw beheerder Mpeg [installeren en AEM](#install-f
 
 ## Videoprofielen configureren {#configure-video-profiles}
 
-U kunt videoprofielen definiëren die voor HTML5-elementen moeten worden gebruikt. De hier gekozen methoden worden op volgorde gebruikt. U opent de [ontwerpmodus](/help/sites-authoring/default-components-designmode.md) (alleen de klassieke gebruikersinterface) en selecteert het tabblad **[!UICONTROL Profielen]** :
+U kunt videoprofielen definiëren die voor HTML5-elementen moeten worden gebruikt. De hier gekozen methoden worden op volgorde gebruikt. U opent de [ontwerpmodus](/help/sites-authoring/default-components-designmode.md) (alleen de klassieke gebruikersinterface) en selecteert het **[!UICONTROL Profiles]** tabblad:
 
 ![chlimage_1-317](assets/chlimage_1-317.png)
 
-U kunt ook het ontwerp configureren van de videocomponenten en -parameters voor [!UICONTROL afspelen], [!UICONTROL Flash]en [!UICONTROL Geavanceerd].
+U kunt het ontwerp van de videocomponenten en de parameters voor [!UICONTROL Playback], [!UICONTROL Flash]en [!UICONTROL Advanced]. ook vormen.
 
 ## Mpeg installeren en AEM configureren {#install-ffmpeg}
 
@@ -63,8 +66,12 @@ De videocomponent is afhankelijk van open-source product Forms van derden voor e
 
 **AEM** configureren:
 
-1. Open [!UICONTROL CRXDE Lite] in uw Webbrowser. ([http://localhost:4502/crx/de](http://localhost:4502/crx/de))
-1. Selecteer het `/libs/settings/dam/video/format_aac/jcr:content` knooppunt en controleer of de eigenschappen van het knooppunt als volgt zijn:
+>[!NOTE]
+>
+>Deze stappen zijn alleen nodig als de codecs verder moeten worden aangepast.
+
+1. Openen [!UICONTROL CRXDE Lite] in uw webbrowser. ([http://localhost:4502/crx/de](http://localhost:4502/crx/de))
+2. Selecteer het `/libs/settings/dam/video/format_aac/jcr:content` knooppunt en controleer of de eigenschappen van het knooppunt als volgt zijn:
 
    * audioCodec:
 
@@ -78,15 +85,15 @@ De videocomponent is afhankelijk van open-source product Forms van derden voor e
        -flags +loop -me_method umh -g 250 -qcomp 0.6 -qmin 10 -qmax 51 -qdiff 4 -bf 16 -b_strategy 1 -i_qfactor 0.71 -cmp chroma -subq 8 -me_range 16 -coder 1 -sc_threshold 40 -b-pyramid normal -wpredp 2 -mixed-refs 1 -8x8dct 1 -fast-pskip 1 -keyint_min 25 -refs 4 -trellis 1 -direct-pred 3 -partitions i8x8,i4x4,p8x8,b8x8
       ```
 
-1. Als u de configuratie wilt aanpassen, maakt u een overlay in het `/apps/settings/` knooppunt en verplaatst u dezelfde structuur onder het `/conf/global/settings/` knooppunt. Kan niet worden bewerkt in `/libs` knooppunt. Als u bijvoorbeeld een pad wilt bedekken, maakt u het `/libs/settings/dam/video/fullhd-bp`op `/conf/global/settings/dam/video/fullhd-bp`.
+3. Als u de configuratie wilt aanpassen, maakt u een overlay in het `/apps/settings/` knooppunt en verplaatst u dezelfde structuur onder het `/conf/global/settings/` knooppunt. Kan niet worden bewerkt in `/libs` knooppunt. Als u bijvoorbeeld een pad wilt bedekken, maakt u het `/libs/settings/dam/video/fullhd-bp`op `/conf/global/settings/dam/video/fullhd-bp`.
 
    >[!NOTE]
    >
    >Bedek en bewerk het gehele profielknooppunt en niet alleen de eigenschap die moet worden gewijzigd. Dergelijke middelen worden niet opgelost via SlingResourceMerger.
 
-1. Als u een van de eigenschappen hebt gewijzigd, klikt u op **[!UICONTROL Alles]** opslaan.
+4. Als u een van de eigenschappen hebt gewijzigd, klikt u op **[!UICONTROL Save All]**.
 
 >[!NOTE]
 >
->OOTB-workflowmodellen blijven niet behouden wanneer u uw AEM-instantie upgradet. Adobe raadt u aan OTB-workflowmodellen te kopiëren voordat u ze bewerkt. Kopieer bijvoorbeeld het model OOTB [!UICONTROL DAM Update Asset] voordat u de stap FFmpeg Transcoding in het model [!UICONTROL DAM Update Asset] toepast om namen van videoprofielen te kiezen die vóór de upgrade bestonden. Vervolgens kunt u het `/apps` knooppunt bedekken zodat AEM de aangepaste wijzigingen in het OTB-model kan ophalen.
+>OOTB-workflowmodellen blijven niet behouden wanneer u uw AEM-instantie upgradet. Adobe raadt u aan OTB-workflowmodellen te kopiëren voordat u ze bewerkt. Kopieer bijvoorbeeld het OTB- [!UICONTROL DAM Update Asset] model voordat u de stap MPEG Transcoding in het [!UICONTROL DAM Update Asset] model bewerkt, om namen voor videoprofielen te kiezen die vóór de upgrade bestonden. Vervolgens kunt u het `/apps` knooppunt bedekken zodat AEM de aangepaste wijzigingen in het OTB-model kan ophalen.
 

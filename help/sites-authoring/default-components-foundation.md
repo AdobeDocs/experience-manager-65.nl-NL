@@ -13,7 +13,10 @@ docset: aem65
 legacypath: /content/docs/en/aem/6-2/author/page-authoring/default-components/editmode
 pagetitle: Foundation Components
 translation-type: tm+mt
-source-git-commit: bec587e3722c4c2e5aebd2579a2a7acbf807587a
+source-git-commit: 071f4a292343f0ad52ca3700c95bf60f03c307cc
+workflow-type: tm+mt
+source-wordcount: '7287'
+ht-degree: 3%
 
 ---
 
@@ -173,7 +176,7 @@ Deze zijn beschikbaar in twee tabbladen:
 
    Hier geeft u op hoe pagina&#39;s in uw carrousel moeten worden opgenomen:
 
-   * **Lijst maken met gebruik van**Er zijn verschillende manieren om een paginalijst samen te stellen: Onderliggende pagina&#39;s, Vaste lijst, Zoeken of Geavanceerd zoeken (allemaal hieronder beschreven).
+   * **Lijst maken met gebruik van**Er zijn verschillende manieren om een paginalijst samen te stellen: Onderliggende pagina&#39;s, Vaste lijst, Zoeken of Geavanceerd zoeken (alle hieronder beschreven mogelijkheden).
 Welke methode u ook kiest, op de pagina&#39;s die u in de lijst opneemt, is er al een afbeelding gekoppeld aan de pagina. Dit is de afbeelding die in de carrousel wordt weergegeven. Als er geen afbeelding is voor een bepaalde pagina onder de Pagina-eigenschappen van die pagina, moet u een afbeelding aan de pagina koppelen voordat u begint, omdat de carrousel anders een lege (of meestal lege) pagina weergeeft. Zie Pagina-eigenschappen [bewerken](/help/sites-authoring/editing-page-properties.md).
 Afhankelijk van het item dat u kiest, wordt een nieuw deelvenster weergegeven:
 
@@ -185,7 +188,7 @@ Afhankelijk van het item dat u kiest, wordt een nieuw deelvenster weergegeven:
          * **Pagina&#39;s** Selecteer een lijst met pagina&#39;s. Gebruik deze optie `+` om meer items toe te voegen en de knoppen Omhoog en Omlaag om de volgorde aan te passen.
       * **Zoekopties**
 
-         * **Start in** Voer een beginpad in, handmatig of met de kiezer.
+         * **Begin in** ga een beginweg, of manueel of gebruikend de selecteur in.
 
          * **Zoekopdracht** U kunt een zoekquery voor onbewerkte tekst invoeren.
       * **Opties voor Geavanceerd zoeken**
@@ -218,7 +221,7 @@ Met de component Diagram kunt u een balk, lijn of cirkeldiagram toevoegen. AEM m
 
 * **Geavanceerd**
 
-   * **Het Type** van grafiek selecteert uit de Grafiek van het Schijf, de Grafiek van de Lijn, en de Grafiek van de Bar.
+   * **Selecteer het Type** van grafiek uit de Grafiek van het Schijf, de Grafiek van de Lijn, en de Grafiek van de Bar.
 
    * **Alternatieve tekst** Alternatieve tekst die wordt weergegeven in plaats van het diagram.
 
@@ -370,7 +373,7 @@ In de modus Volledig scherm zijn verschillende aanvullende opties beschikbaar. b
 
 >[!NOTE]
 De voortgang van het uploaden kan niet worden gecontroleerd met Internet Explorer.
-Gebruikers van Internet Explorer moeten de afbeelding uploaden en op **OK** klikken. Vervolgens opent u de afbeelding opnieuw om het geüploade bestand in de voorvertoning weer te geven en wijzigingen uit te voeren (bijsnijden).
+Gebruikers van Internet Explorer moeten de afbeelding uploaden en op **OK** klikken. Vervolgens opent u de afbeelding opnieuw om het geüploade bestand in de voorvertoning te zien en wijzigingen uit te voeren (bijsnijden).
 
 >Zie de sectie [Certified Platforms](/help/release-notes/release-notes.md#certifiedplatforms) voor meer informatie over HTML5-functies die door AEM worden gebruikt.
 
@@ -716,7 +719,7 @@ De component van de Veerling van de **Lijst** is gebaseerd op de redacteur [van 
 De **component van de Lijst** wordt preconfigured om u te laten een lijst construeren, vullen en formatteren. Met behulp van het dialoogvenster kunt u uw tabel configureren en de inhoud maken door:
 
 * helemaal opnieuw
-* het kopiëren van en het kleven van een spreadsheet of een lijst van een externe redacteur (zoals Excel, OpenOffice, Blocnote, enz.).
+* het kopiëren en het kleven van een spreadsheet of een lijst van een externe redacteur (zoals Excel, OpenOffice, Blocnote, enz.).
 
 Met de inline editor kunt u basiswijzigingen in de inhoud aanbrengen:
 
@@ -1160,7 +1163,7 @@ Een selectie actietypen zijn inbegrepen in een standaardAEM installatie:
 
          * **Pad**
 
-            Het pad (relatief) naar waar de nieuwe account wordt gemaakt en opgeslagen.
+            Het pad (relatief) naar waar het nieuwe account wordt gemaakt en opgeslagen.
 
          * **Gegevens weergeven...**
 
@@ -1342,7 +1345,7 @@ Met deze component kunt u een verborgen veld maken. Deze kunnen voor verschillen
 ![dc_form_hiddenfield](assets/dc_form_hiddenfield.png)
 
 >[!NOTE]
-U kunt het formulier ook aanpassen om specifieke formuliercomponenten weer te geven of te verbergen op basis van de waarde van andere velden in het formulier. Het is handig de zichtbaarheid van een formulierveld te wijzigen als het veld alleen onder specifieke omstandigheden nodig is.
+U kunt het formulier ook aanpassen om specifieke formuliercomponenten weer te geven of te verbergen op basis van de waarde van andere velden in het formulier. Het is handig de zichtbaarheid van een formulierveld te wijzigen als het veld alleen onder bepaalde omstandigheden nodig is.
 Zie [Formuliercomponenten](/help/sites-developing/developing-forms.md#showing-and-hiding-form-components)tonen en verbergen.
 
 ### Afbeeldingsknop {#image-button}

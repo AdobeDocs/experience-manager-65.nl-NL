@@ -8,18 +8,21 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 99d7025f-d022-4213-83c0-815a4712c573
 translation-type: tm+mt
-source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
+source-git-commit: b8fe3267a808f1a64b78620156826e0b6e3a5676
+workflow-type: tm+mt
+source-wordcount: '421'
+ht-degree: 3%
 
 ---
 
 
-# Dynamische media-elementen publiceren {#publishing-dynamic-media-assets}
+# Publishing Dynamic Media Assets {#publishing-dynamic-media-assets}
 
-U publiceert uw dynamische media-elementen door de elementen te selecteren en op **[!UICONTROL Publiceren]** te tikken. Nadat uw dynamische media-elementen zijn gepubliceerd, kunt u ze via URL of via insluiten op een webpagina opnemen.
+U publiceert uw dynamische media-elementen door de elementen te selecteren die u al hebt geüpload en te tikken **[!UICONTROL Publish]** of **[!UICONTROL Quick Publish]**. Nadat uw dynamische media-elementen zijn gepubliceerd, zijn deze beschikbaar voor opname in een webpagina via een URL of door de code in te sluiten op de pagina.
 
 U kunt ook direct elementen publiceren die u uploadt—zonder tussenkomst van de gebruiker. Zie het [Vormen Dynamische Media - wijze](config-dms7.md)Scene7.
 
-In de **[!UICONTROL Kaartweergave]** wordt direct onder de naam van een element een pictogram van een kleine bol weergegeven om aan te geven dat het is gepubliceerd. In de **[!UICONTROL Lijstweergave]** geeft een kolom **[!UICONTROL Gepubliceerd]** aan welke elementen worden gepubliceerd of welke niet.
+In het **[!UICONTROL Card View]** gedeelte ziet u een klein globpictogram direct onder de naam van een element en links van de datum en tijd om aan te geven dat het is gepubliceerd. In de **[!UICONTROL List View]** geeft een kolom **[!UICONTROL Published]** aan welke assets zijn gepubliceerd en welke niet.
 
 >[!NOTE]
 >
@@ -27,9 +30,9 @@ In de **[!UICONTROL Kaartweergave]** wordt direct onder de naam van een element 
 
 Als u video-elementen direct na het coderen wilt publiceren, moet u ervoor zorgen dat de codering volledig is uitgevoerd. Wanneer video&#39;s nog steeds worden gecodeerd, wordt u via het systeem op de hoogte gebracht van een actieve workflow voor videoverwerking. Wanneer videocodering is voltooid, moet u een voorvertoning van de video-uitvoeringen kunnen bekijken. Op dat moment kunt u de video&#39;s veilig publiceren zonder publicatiefouten te maken.
 
-Zie ook URLs [verbinden aan uw Toepassing](linking-urls-to-yourwebapplication.md)van het Web.
+See also [Linking URLs to your Web Application](linking-urls-to-yourwebapplication.md).
 
-Zie ook De video-viewer [insluiten op een webpagina.](embed-code.md)
+See also [Embedding the Dynamic Media Video or Image viewer on a web page](embed-code.md)
 
 >[!NOTE]
 >

@@ -8,23 +8,26 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: a323bf5a-b5b2-4b15-bcf8-48d0fe819512
 translation-type: tm+mt
-source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
+source-git-commit: 7c6655342256922473ec51dc1a58b2d08034b65b
+workflow-type: tm+mt
+source-wordcount: '118'
+ht-degree: 13%
 
 ---
 
 
-# Dynamische media-elementen beheren {#managing-assets}
+# About managing Dynamic Media assets {#managing-assets}
 
 Het beheren van dynamische media elementen-beelden, video, en interactieve activa-nadat zij worden geupload-impliceert vele taken met inbegrip van het voorvertonen, het downloaden, of het publiceren van hen.
 
-Wanneer u een voorvertoning weergeeft, kunt u ook voorinstellingen voor afbeeldingen (alleen voor afbeeldingen) of viewers (voor video en afbeeldingen) toepassen. U kunt niet beide toepassen op een element. Zie [Voorinstellingen](viewer-presets.md) voor viewers toepassen en [Voorinstellingen](image-presets.md)voor afbeeldingen toepassen.
+Wanneer u een voorvertoning weergeeft, kunt u ook voorinstellingen voor afbeeldingen (alleen voor afbeeldingen) of viewers (voor video en afbeeldingen) toepassen. U kunt niet beide toepassen op een element. Zie [Voorinstellingen](/help/assets/viewer-presets.md) voor viewers toepassen en [Voorinstellingen](/help/assets/image-sets.md)voor afbeeldingen toepassen.
 
-Algemene informatie over het beheer van middelen vindt u in Elementen [beheren met de Touch-interface](managing-assets-touch-ui.md).
+Algemene informatie over het beheer van middelen vindt u in Elementen [beheren met de Touch-interface](/help/assets/managing-assets-touch-ui.md).
 
 De volgende onderwerpen beschrijven wat u moet doen om Dynamische activa van Media te beheren:
 
-* [Aanbevolen procedures voor het optimaliseren van de kwaliteit van uw afbeeldingen](best-practices-for-optimizing-the-quality-of-your-images.md)
-* [Dynamische media-elementen voorvertonen](previewing-assets.md)
-* [Dynamische media-elementen publiceren](publishing-dynamicmedia-assets.md)
-* [Werken met kiezers](working-with-selectors.md)
+* [Aanbevolen procedures voor een optimale kwaliteit van uw afbeeldingen](/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md)
+* [Dynamic Media-assets vooraf bekijken](/help/assets/previewing-assets.md)
+* [Dynamische media-elementen publiceren](/help/assets/publishing-dynamicmedia-assets.md)
+* [Werken met kiezers](/help/assets/working-with-selectors.md)
 

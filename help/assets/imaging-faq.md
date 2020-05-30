@@ -8,7 +8,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: 7daf89f7e69d3e2e938780ff98fd2df46723e708
+source-git-commit: 8fa26e1d763950f370ba0adbc048efba612e8afc
+workflow-type: tm+mt
+source-wordcount: '1669'
+ht-degree: 0%
 
 ---
 
@@ -93,7 +96,7 @@ Nee. Slimme afbeeldingen werken naadloos met bestaande URL&#39;s voor afbeelding
 
 Zie ook [Ben ik verkiesbaar om Slimme Beelden te gebruiken?](#am-i-eligible-to-use-smart-imaging) om inzicht te krijgen in de vereisten voor slimme beeldverwerking.
 
-## Werkt Smart Mmaging met HTTPS? Hoe zit het met HTTP/2? {#does-smart-imaging-working-with-https-how-about-http}
+## Werkt Smart Imaging met HTTPS? Hoe zit het met HTTP/2? {#does-smart-imaging-working-with-https-how-about-http}
 
 Slimme afbeeldingen werken met afbeeldingen die via HTTP of HTTPS worden geleverd. Bovendien werkt het ook via HTTP/2.
 
@@ -106,7 +109,7 @@ Als u Smart Imaging wilt gebruiken, moet de Dynamic Media Classic of Dynamic Med
 
 Meld u aan bij uw bedrijfsaccount of accounts om uw domeinen te zoeken.
 
-Tik op **[!UICONTROL Instellingen > Toepassingsinstellingen > Algemene instellingen]**. Zoek het veld **[!UICONTROL Gepubliceerde servernaam]**. Als u momenteel een generisch domein gebruikt, kunt u verzoeken zich over naar uw eigen douanedomein als deel van deze overgang te bewegen wanneer u een technisch steunkaartje voorlegt.
+Tik op **[!UICONTROL Setup > Application Setup > General Settings]**. Zoek het veld met het label **[!UICONTROL Published Server Name]**. Als u momenteel een generisch domein gebruikt, kunt u verzoeken zich over naar uw eigen douanedomein als deel van deze overgang te bewegen wanneer u een technisch steunkaartje voorlegt.
 
 Uw eerste aangepaste domein kost geen extra geld met een Dynamic Media-licentie.
 
@@ -124,7 +127,7 @@ U moet het verzoek starten om intelligente beeldverwerking te gebruiken. deze wo
 
       Klik op **[!UICONTROL Setup > Application Setup > General Settings]**.
 
-      Zoek het veld **[!UICONTROL Gepubliceerde servernaam]**.
+      Zoek het veld met het label **[!UICONTROL Published Server Name]**.
    1. Controleer of u de CDN gebruikt via Adobe en niet met een directe relatie.
    1. Verifieer u een specifiek domein zoals `images.company.com` of `mycompany.scene7.com`, en niet een generisch domein, zoals, `s7d1.scene7.com`, `s7d2.scene7.com``s7d13.scene7.com`gebruikt.
 
@@ -132,7 +135,7 @@ U moet het verzoek starten om intelligente beeldverwerking te gebruiken. deze wo
 
       Klik op **[!UICONTROL Setup > Application Setup > General Settings]**.
 
-      Zoek het veld **[!UICONTROL Gepubliceerde servernaam]**. Als u momenteel een generisch Dynamisch Dynamisch Klassiek domein van Media gebruikt, kunt u verzoeken zich over naar uw eigen douanedomein als deel van deze overgang te bewegen.
+      Zoek het veld met het label **[!UICONTROL Published Server Name]**. Als u momenteel een generisch Dynamisch Dynamisch Klassiek domein van Media gebruikt, kunt u verzoeken zich over naar uw eigen douanedomein als deel van deze overgang te bewegen.
    1. Geef aan of u dit ook nodig hebt om via HTTP/2 te werken.
 
 1. De technische Steun zal u aan de Slimme Lijst van de Wacht van het Beeld toevoegen die op de orde wordt gebaseerd waarin de verzoeken werden voorgelegd.
@@ -141,8 +144,8 @@ U moet het verzoek starten om intelligente beeldverwerking te gebruiken. deze wo
 1. U wordt op de hoogte gesteld na voltooiing door ondersteuning.
 1. Adobe raadt u aan om de prestaties van Smart Imaging te verbeteren door de tijd voor live (TTL) in te stellen op 24 uur of langer. De TTL bepaalt hoe lang de activa door CDN in het voorgeheugen worden opgeslagen. Deze instelling wijzigen:
 
-   1. Als u Dynamic Media Classic gebruikt, klikt u op **[!UICONTROL Instellingen > Toepassingsinstellingen > Publicatie-instellingen > Afbeeldingsserver]**. Stel de **[!UICONTROL standaardtijd voor clientcache in op Live]** -waarde op 24 of hoger.
-   1. Als u Dynamic Media gebruikt, volgt u [deze instructies](config-dynamic.md). Stel de waarde voor **[!UICONTROL Verlopen]** 24 uur of langer in.
+   1. Als u Dynamic Media Classic gebruikt, klikt u op **[!UICONTROL Setup > Application Setup > Publish Setup > Image Server]**. Stel de **[!UICONTROL Default Client Cache Time To Live]** waarde in op 24 of langer.
+   1. Als u Dynamic Media gebruikt, volgt u [deze instructies](config-dynamic.md). Stel de **[!UICONTROL Expiration]** waarde 24 uur of langer in.
 
 ## Wanneer kan ik verwachten dat mijn account is ingeschakeld met Smart Imaging? {#when-can-i-expect-my-account-to-be-enabled-with-smart-imaging}
 
@@ -160,12 +163,12 @@ Tijdens de eerste overgang raken de niet-in de cache opgeslagen afbeeldingen de 
 ## Hoe kan ik controleren of slimme beeldverwerking werkt zoals verwacht?  {#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
 
 1. Wanneer uw account is geconfigureerd met slimme beeldverwerking, laadt u een URL voor de afbeelding Dynamic Media Classic (Scene7)/Dynamic Media in de browser.
-1. Open het deelvenster Chrome-ontwikkelaar door in de browser op **[!UICONTROL Weergave > Ontwikkelaar > Gereedschappen]** voor ontwikkelaars te klikken. Of kies een ander browserontwikkelaarsgereedschap van uw keuze.
+1. Open het deelvenster Chrome-ontwikkelaar door in **[!UICONTROL View > Developer > Developer Tools]** de browser te klikken. Of kies een ander browserontwikkelaarsgereedschap van uw keuze.
 
 1. Zorg ervoor dat de cache is uitgeschakeld wanneer de ontwikkelprogramma&#39;s zijn geopend.
 
-   * In Windows: navigeer naar de instellingen in het venster voor het gereedschap Ontwikkelaar en schakel vervolgens het selectievakje Cache **[!UICONTROL uitschakelen (terwijl de apparaten geopend zijn)]** in.
-   * On Mac – in the developer pane, under the **[!UICONTROL Network]** tab, select **[!UICONTROL disable cache]** .
+   * In Windows navigeert u naar de instellingen in het deelvenster voor ontwikkelaars en schakelt u het **[!UICONTROL Disable cache (while devtools is open)]** selectievakje in.
+   * Op MAC - in de ontwikkelaarruit, onder het **[!UICONTROL Network]** lusje, uitgezochte **[!UICONTROL disable cache]** .
 
 1. Waarnemen dat het inhoudstype wordt omgezet in de juiste indeling. In de volgende schermafbeelding ziet u een PNG-afbeelding die dynamisch wordt omgezet in WebP op Chrome.
 1. Herhaal deze test voor verschillende browsers en gebruikersomstandigheden.

@@ -9,7 +9,10 @@ content-type: reference
 discoiquuid: ccc4eb23-934c-4e67-860b-a6faa2bcaafc
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 45de0f9d9570d64cacf7009d64072858012869a0
+source-git-commit: 7c6655342256922473ec51dc1a58b2d08034b65b
+workflow-type: tm+mt
+source-wordcount: '2015'
+ht-degree: 19%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: 45de0f9d9570d64cacf7009d64072858012869a0
 
 Afbeeldingssets bieden gebruikers een geïntegreerde weergave, waarbij gebruikers verschillende weergaven van een item kunnen zien door op een miniatuurafbeelding te klikken. Met Afbeeldingssets kunt u alternatieve weergaven van een item presenteren en de viewer beschikt over zoomgereedschappen waarmee u afbeeldingen op de juiste wijze kunt bekijken.
 
-Afbeeldingsets worden aangegeven door een banner met het woord `IMAGESET`. In addition, if the Image Set is published, then the publish date, indicated by the **[!UICONTROL World]** icon is on the banner along with the last modification date, indicated by the **[!UICONTROL Pencil]** icon displays.
+Afbeeldingsets worden aangegeven door een banner met het woord `IMAGESET`. Als de afbeeldingset wordt gepubliceerd, wordt bovendien de publicatiedatum, die door het pictogram **[!UICONTROL World]** wordt aangegeven, samen met de laatste wijzigingsdatum op de banner weergegeven. Dit wordt aangegeven door het pictogram **[!UICONTROL Pencil]**.
 
 ![chlimage_1-133](assets/chlimage_1-339.png)
 
@@ -46,9 +49,9 @@ Zo kunt u snel aan de slag:
 
    In de Reeksen van het Beeld, klikken de gebruikers duimnagelbeelden in de Vastgestelde Kijker van het Beeld.
 
-   Tik of klik op **[!UICONTROL Maken > Afbeeldingssets]** om een Afbeeldingsset in elementen te maken. Voeg vervolgens afbeeldingen toe en klik op **[!UICONTROL Opslaan]**.
+   Tik of klik op een Afbeeldingsset in elementen om deze te maken. **[!UICONTROL Create > Image Sets]** Voeg vervolgens afbeeldingen toe en klik op **[!UICONTROL Save]**.
 
-   You can also create image sets automatically through [batch set presets](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
+   You can also create image sets automatically through [batch set presets](/help/assets/config-dms7.md).
    >[!IMPORTANT]
    >
    >De reeksen van de partij worden gecreeerd door IPS (het Systeem van de Productie van het Beeld) als deel van activa opnemen en zijn beschikbaar slechts op Dynamische Media - wijze Scene7.
@@ -61,22 +64,22 @@ Zo kunt u snel aan de slag:
 
    Beheerders kunnen voorinstellingen voor de afbeeldingsset Viewer maken of wijzigen. To see your image set with a viewer preset, select the image set, and in the left-rail drop-down menu, select **[!UICONTROL Viewers]**.
 
-   Zie **[!UICONTROL Gereedschappen > Middelen > Voorinstellingen]** viewer om voorinstellingen voor viewers te maken of te bewerken.
+   Zie **[!UICONTROL Tools > Assets > Viewer Presets]** viewervoorinstellingen maken of bewerken.
 
 1. (Optioneel) [Afbeeldingssets](/help/assets/image-sets.md#viewing-image-sets) weergeven die zijn gemaakt met voorinstellingen voor batchsets.
 1. [Voorvertoning van afbeeldingssets.](/help/assets/previewing-assets.md)
 
-   Selecteer de Afbeeldingsset en u kunt er een voorvertoning van weergeven. Klik op de miniatuurpictogrammen om de Afbeeldingsset in de geselecteerde viewer te bekijken. U kunt verschillende viewers kiezen in het menu **[!UICONTROL Viewers]** , beschikbaar in het keuzemenu voor de linkertrack.
+   Selecteer de Afbeeldingsset en u kunt er een voorvertoning van weergeven. Klik op de miniatuurpictogrammen om de Afbeeldingsset in de geselecteerde viewer te bekijken. U kunt verschillende kijkers van het **[!UICONTROL Viewers]** menu kiezen, beschikbaar van het linkerspoordrop-down menu.
 
 1. [Afbeeldingssets publiceren.](/help/assets/publishing-dynamicmedia-assets.md)
 
-   Als u een Afbeeldingsset publiceert, wordt de URL- en insluitreeks geactiveerd. Bovendien moet u een aangepaste viewer-voorinstelling [die u hebt gemaakt,](/help/assets/managing-viewer-presets.md) publiceren. Voorinstellingen voor viewers buiten de box zijn al gepubliceerd.
+   Als u een Afbeeldingsset publiceert, wordt de URL geactiveerd en wordt de code ingesloten. Bovendien moet u een aangepaste viewer-voorinstelling [die u hebt gemaakt,](/help/assets/managing-viewer-presets.md) publiceren. Voorinstellingen voor viewers buiten de box zijn al gepubliceerd.
 
 1. [Koppel URL&#39;s aan uw webtoepassing](/help/assets/linking-urls-to-yourwebapplication.md) of [sluit de video- of afbeeldingsviewer](/help/assets/embed-code.md)in.
 
    AEM Assets leidt tot URL vraag naar de Reeksen van het Beeld en activeert hen nadat u de beeldreeksen publiceert. U kunt deze URL&#39;s kopiëren wanneer u elementen voorvertoont. U kunt ze ook insluiten op uw website.
 
-   Select the Image Set, then in the left rail drop-down menu, select **[!UICONTROL Viewers]**.
+   Selecteer de Afbeeldingset en selecteer vervolgens in de vervolgkeuzelijst voor het linkerspoor **[!UICONTROL Viewers]**.
 
    Zie [Een afbeeldingset koppelen aan een webpagina](/help/assets/linking-urls-to-yourwebapplication.md) en [De video- of afbeeldingsviewer insluiten](/help/assets/embed-code.md).
 
@@ -125,24 +128,24 @@ Wanneer u elementen aan de set toevoegt, worden deze automatisch in alfanumeriek
 
 **Een afbeeldingsset maken**
 
-1. In AEM, tap the AEM logo to access the global navigation console, then tap **[!UICONTROL Navigation > Assets]**. Navigate to where you want to create an image set, then tap **[!UICONTROL Create > Image Set]** to open the Image Set Editor page.
+1. Tik in AEM op het AEM-logo om toegang te krijgen tot de globale navigatieconsole en tik vervolgens op **[!UICONTROL Navigation > Assets]**. Ga naar de plaats waar u een afbeeldingset wilt maken en tik vervolgens op **[!UICONTROL Create > Image Set]** om de pagina Editor van afbeeldingset te openen.
 
    U kunt de set ook maken vanuit een map die uw assets bevat.
 
    ![6_5_imagesets-createpulldown](assets/6_5_imagesets-createpulldown.png)
 
-1. Voer op de pagina Editor afbeeldingsset in het veld **[!UICONTROL Titel]** een naam in voor de afbeeldingsset. De naam wordt weergegeven in de banner in de Afbeeldingsset. Voer eventueel een beschrijving in.
+1. Voer in het **[!UICONTROL Title]** veld op de pagina Editor afbeeldingsset een naam in voor de afbeeldingsset. De naam wordt weergegeven in de banner in de Afbeeldingsset. Voer eventueel een beschrijving in.
 
    ![6_5_imageset-creatingnewset](assets/6_5_imageset-creatingnewset.png)
 
 1. Voer een van de volgende handelingen uit:
 
-   * Tik in de linkerbovenhoek van de pagina Editor afbeeldingsset op Element **[!UICONTROL toevoegen]**.
+   * Tik in de linkerbovenhoek van de pagina Editor afbeeldingsset op **[!UICONTROL Add Asset]**.
 
-   * Tik in het midden van de pagina Editor afbeeldingsset op **[!UICONTROL Tikken om de Asset Selector]** te openen.
+   * Tik in het midden van de pagina Editor afbeeldingsset op **[!UICONTROL Tap to open Asset Selector]**.
    Tik om elementen te selecteren die u in de afbeeldingsset wilt opnemen. Geselecteerde assets hebben een vinkje. When you are finished, near the upper-right corner of the page, tap **[!UICONTROL Select]**.
 
-   With the Asset Selector, you can search for assets by typing in a keyword and tapping or clicking **[!UICONTROL Return]**. U kunt ook filters toepassen om de zoekresultaten te verfijnen. U kunt filteren op pad, verzameling, bestandstype en tag. Select the filter and then tap the **[!UICONTROL Filter]** icon on the toolbar. Wijzig de weergave door op het pictogram Weergave te tikken en **[!UICONTROL Kolomweergave]**, **[!UICONTROL Kaartweergave]** of **[!UICONTROL Lijstweergave]** te selecteren.
+   Met de assetkiezer kunt u naar assets zoeken door een trefwoord te typen en op **[!UICONTROL Return]** te tikken of klikken. U kunt ook filters toepassen om de zoekresultaten te verfijnen. U kunt filteren op pad, verzameling, bestandstype en tag. Selecteer het filter en tik op het pictogram **[!UICONTROL Filter]** op de werkbalk. Wijzig de weergave door te tikken op het pictogram Weergave en **[!UICONTROL Column View]**, **[!UICONTROL Card View]** of **[!UICONTROL List View]** te selecteren.
 
    See [Working with Selectors.](/help/assets/working-with-selectors.md)
 
@@ -154,18 +157,18 @@ Wanneer u elementen aan de set toevoegt, worden deze automatisch in alfanumeriek
 
    ![6_5_imageset-reorderassets](assets/6_5_imageset-reorderassets.png)
 
-   Als u een miniatuur of staal wilt wijzigen, klikt u op het pictogram **+** **miniatuur** naast de afbeelding en gaat u naar de gewenste miniatuur of staal. When done selecting all the images click **[!UICONTROL Save]**.
+   Als u een miniatuur of staal wilt wijzigen, klikt u op het pictogram **+** **miniatuur** naast de afbeelding en gaat u naar de gewenste miniatuur of staal. Klik wanneer u alle afbeeldingen hebt geselecteerd op **[!UICONTROL Save]**.
 
 1. (Optioneel) Voer een van de volgende handelingen uit:
 
-   * Als u een afbeelding wilt verwijderen, selecteert u de afbeelding en tikt u op Element **** verwijderen.
+   * Als u een afbeelding wilt verwijderen, selecteert u de afbeelding en tikt u op **[!UICONTROL Delete Asset]**.
 
    * To apply a preset, near the upper-right corner of the page, tap **[!UICONTROL Preset]**, then select a preset to apply to all the assets at once.
    >[!NOTE]
    >
-   >Wanneer u de afbeeldingset maakt, kunt u de miniatuur van de afbeeldingset wijzigen of AEM toestaan de miniatuur automatisch te selecteren op basis van de assets in de afbeeldingset. To select a thumbnail, tap **[!UICONTROL Change thumbnail]** above the Title field on the Image Set Editor page, then select any image (you can navigate to other folders to find images as well). If you have selected a thumbnail and then decide that you want AEM to generate one from the image set, select **[!UICONTROL Switch to]** **[!UICONTROL Automatic thumbnail]**.
+   >Wanneer u de afbeeldingset maakt, kunt u de miniatuur van de afbeeldingset wijzigen of AEM toestaan de miniatuur automatisch te selecteren op basis van de assets in de afbeeldingset. Als u een miniatuur wilt selecteren, tikt u op **[!UICONTROL Change thumbnail]** boven het veld Titel op de pagina Editor van afbeeldingset en selecteert u een willekeurige afbeelding (u kunt ook naar andere mappen gaan om afbeeldingen te zoeken). Als u een miniatuur hebt geselecteerd en vervolgens besluit dat AEM een miniatuur moet genereren op basis van de afbeeldingset, selecteert u **[!UICONTROL Switch to]** **[!UICONTROL Automatic thumbnail]**.
 
-1. Click **[!UICONTROL Save]**. De nieuwe afbeeldingsset wordt weergegeven in de map waarin u deze hebt gemaakt.
+1. Klik op **[!UICONTROL Save]**. De nieuwe afbeeldingsset wordt weergegeven in de map waarin u deze hebt gemaakt.
 
 ## Afbeeldingssets weergeven {#viewing-image-sets}
 
@@ -185,9 +188,9 @@ Set die is gemaakt met voorinstellingen voor batchsets, wordt echter *niet* weer
 
    ![6_5_imageset-set-pushDownmenu](assets/6_5_imageset-setspulldownmenu.png)
 
-* From search, you can select **[!UICONTROL Filter**, then expand **[!UICONTROL Dynamic Media** and select **[!UICONTROL Sets]**.
+* U kunt **[!UICONTROL Filter]** selecteren en vervolgens **[!UICONTROL Dynamische media]** uitvouwen en **[!UICONTROL Sets]** selecteren.
 
-   De zoekopdracht retourneert overeenkomende sets die handmatig in de gebruikersinterface zijn gemaakt of die automatisch zijn gemaakt met voorinstellingen voor batchsets. Voor geautomatiseerde reeksen, wordt de onderzoeksvraag geleid gebruikend &quot;Begint met&quot;onderzoekscriteria die van het onderzoek AEM verschillend zijn die op het gebruiken van &quot;bevat&quot;onderzoekscriteria gebaseerd is. Het instellen van het filter op **[!UICONTROL Sets]** is de enige manier om geautomatiseerde sets te doorzoeken.
+   De zoekopdracht retourneert overeenkomende sets die handmatig in de gebruikersinterface zijn gemaakt of die automatisch zijn gemaakt met voorinstellingen voor batchsets. Voor geautomatiseerde reeksen, wordt de onderzoeksvraag geleid gebruikend &quot;Begint met&quot;onderzoekscriteria die van het onderzoek AEM verschillend zijn die op het gebruiken van &quot;bevat&quot;onderzoekscriteria gebaseerd is. Als u het filter instelt op alleen **[!UICONTROL Sets]** een manier om geautomatiseerde sets te doorzoeken.
 
    ![chlimage_1-134](assets/chlimage_1-134.png)
 
@@ -209,27 +212,27 @@ U kunt diverse bewerkingstaken uitvoeren op Afbeeldingssets, zoals:
 
 1. Voer een van de volgende handelingen uit:
 
-   * Houd de cursor boven een afbeeldingsset en tik op **[!UICONTROL Bewerken]** (potloodpictogram).
-   * Houd de muisaanwijzer boven een afbeeldingsset, tik op **[!UICONTROL Selecteren]** (vinkpictogram) en tik vervolgens op **[!UICONTROL Bewerken]** op de werkbalk.
-   * Tik op een afbeeldingsset en tik vervolgens op **[!UICONTROL Bewerken]** (potloodpictogram) op de werkbalk.
+   * Houd de muisaanwijzer boven een afbeeldingsset en tik vervolgens op **[!UICONTROL Edit]** (potloodpictogram).
+   * Houd de muisaanwijzer boven een afbeeldingsset, tik op **[!UICONTROL Select]** (vinkpictogram) en tik vervolgens op **[!UICONTROL Edit]** de werkbalk.
+   * Tik op een afbeeldingsset en tik vervolgens op **[!UICONTROL Edit]** (potloodpictogram) op de werkbalk.
 
 1. Voer een van de volgende handelingen uit om de afbeeldingen in de Afbeeldingsset te bewerken:
 
    * Als u elementen opnieuw wilt rangschikken, sleept u een afbeelding naar een nieuwe locatie (selecteer het pictogram voor opnieuw ordenen om items te verplaatsen).
    * Als u items in oplopende of aflopende volgorde wilt sorteren, klikt u op de kolomkop.
-   * Als u een element wilt toevoegen of een bestaand element wilt bijwerken, klikt u op Element **[!UICONTROL toevoegen]**. Navigeer naar een element, selecteer het en tik op **[!UICONTROL Selecteren]** in de rechterbovenhoek van de pagina.
+   * Als u een element wilt toevoegen of een bestaand element wilt bijwerken, klikt u op het element **[!UICONTROL Add Asset]**. Navigeer naar een element, selecteer het en tik vervolgens **[!UICONTROL Select]** in de rechterbovenhoek van de pagina.
       >[!NOTE]
       >
       >Als u de afbeelding verwijdert die AEM voor de miniatuur gebruikt door deze te vervangen door een andere afbeelding, wordt het oorspronkelijke element nog steeds weergegeven.
-   * Als u een element wilt verwijderen, selecteert u het en tikt u erop of klikt u op Element **** verwijderen.
+   * Als u een element wilt verwijderen, selecteert u het en tikt u erop of klikt u op **[!UICONTROL Delete Asset]**.
    * To apply a preset, near the upper-right corner of the page, tap **[!UICONTROL Preset]**, then select a viewer preset.
-   * Als u een miniatuur wilt toevoegen of wijzigen, selecteert u het miniatuurpictogram rechts van het element. Navigeer naar de nieuwe miniatuur of het nieuwe stalenelement, selecteer het en tik op **[!UICONTROL Selecteren]**.
-   * Als u een hele afbeeldingsset wilt verwijderen, navigeert u naar de afbeeldingsset, selecteert u deze en tikt u op **[!UICONTROL Verwijderen]**.
+   * Als u een miniatuur wilt toevoegen of wijzigen, selecteert u het miniatuurpictogram rechts van het element. Navigeer naar de nieuwe miniatuur of het nieuwe staalelement, selecteer dit en tik op **[!UICONTROL Select]**.
+   * Als u een volledige afbeeldingsset wilt verwijderen, navigeert u naar de Afbeeldingsset, selecteert u deze en tikt u op **[!UICONTROL Delete]**.
    >[!NOTE]
    >
-   >You can edit the images in an Image Set by navigating to the set, tap **[!UICONTROL Set Members]** in the left rail, and then tap the Pencil icon on an individual asset to open the editing window.
+   >U kunt de afbeeldingen in een Afbeeldingset bewerken door naar de set te gaan, in het linkerspoor op **[!UICONTROL Set Members]** te tikken en vervolgens op het pictogram Potlood op een afzonderlijke asset te tikken om het bewerkingsvenster te openen.
 
-1. Tik op **[!UICONTROL Opslaan]** als u klaar bent met bewerken.
+1. Tik **[!UICONTROL Save]** wanneer u klaar bent met bewerken.
 
 ## Voorvertoning van afbeeldingssets {#previewing-image-sets}
 

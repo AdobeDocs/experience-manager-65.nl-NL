@@ -4,18 +4,23 @@ description: Leer hoe u een voorvertoning van 3D-elementen kunt weergeven
 contentOwner: Rick Brough
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
+source-git-commit: 85a93dfa3bcacfb0820029642c03b2d35552121f
+workflow-type: tm+mt
+source-wordcount: '567'
+ht-degree: 4%
 
 ---
 
 
-# 3D-elementen voorvertonen{#previewing-3d-assets}
+# Voorvertoning van 3D-elementen weergeven in AEM{#previewing-3d-assets-aem}
 
-Experience Manager ondersteunt het uploaden, leveren en interactief voorvertonen van 3D-elementen als onderdeel van het ontwerpproces.
+Adobe Experience Manager ondersteunt het uploaden, leveren en interactief voorvertonen van 3D-middelen als onderdeel van het ontwerpproces.
 
 De interactieve 3D-viewer is beschikbaar op de pagina met elementdetails in AEM. De viewer bevat onder andere een verzameling interactieve besturingselementen voor camera waarmee u het 3D-element kunt draaien, zoomen en pannen.
 
-## Ondersteunde indelingen voor 3D-voorvertoning{#supported-3d-previewing-assets}
+Zie ook [Werken met 3D-elementen in dynamische media](/help/assets/assets-3d.md).
+
+## Ondersteunde indelingen voor 3D-voorvertoning in AEM {#supported-3d-previewing-assets}
 
 Interactieve 3D-voorvertoning ondersteunt de volgende bestandsindelingen:
 
@@ -37,21 +42,21 @@ Interactieve 3D-voorvertoning ondersteunt de volgende bestandsindelingen:
     material_0_baseColor.
     jpegmaterial_0_normal.jpeg
 
-## Prestatieaspecten wanneer u een voorvertoning van 3D-elementen weergeeft{#performance-3d-previewing-assets}
+## Prestatieaspecten wanneer u een voorvertoning weergeeft van 3D-elementen in AEM{#performance-3d-previewing-assets}
 
 De tijd die nodig is om een 3D-element te openen op de pagina met de elementdetails, is afhankelijk van verschillende factoren, zoals bandbreedte, de complexiteit van de afbeelding en de vertraging van de server.
 
 Bovendien zijn de mogelijkheden van de clientcomputer, zoals een werkstation, laptop of mobiel aanraakapparaat, ook belangrijk om te overwegen wanneer u de camera interactief manipuleert. Een redelijk krachtig systeem met goede grafische mogelijkheden kan de interactieve 3D-kijkervaring vloeiender en gunstiger maken.
 
-**Een voorvertoning weergeven van 3D-elementen**
+**Een voorvertoning weergeven van 3D-elementen in AEM**
 
 1. Zorg ervoor dat u 3D-elementen hebt geüpload naar AEM.
-Zie [Ondersteunde indelingen voor voorvertoningen](#supported-3d-previewing-assets) in 3D en voor [het uploaden van elementen](/help/assets/managing-assets-touch-ui.md#uploading-assets).
-1. Tik in AEM op de **[!UICONTROL navigatiepagina]** op **[!UICONTROL Middelen > Bestanden]**.
+See [Supported formats for 3D preview](#supported-3d-previewing-assets) and [Uploading assets](/help/assets/managing-assets-touch-ui.md#uploading-assets).
+1. Tik op de **[!UICONTROL Navigation]** pagina vanaf AEM op **[!UICONTROL Assets > Files]**.
 
    ![Navigatiepagina](/help/assets/assets-dm/navigation-assets.png)
 
-1. Tik in de rechterbovenhoek van de pagina vanuit de vervolgkeuzelijst Weergave op **[!UICONTROL Kaartweergave]** en navigeer naar een 3D-element waarvan u een voorvertoning wilt weergeven.
+1. Tik in de rechterbovenhoek van de pagina in de vervolgkeuzelijst Weergave op **[!UICONTROL Card View]** en ga naar een 3D-asset waarvan u een voorvertoning wilt weergeven.
 
    ![3D-kaart selecteren](/help/assets/assets-dm/3d-card-select.png)
    _Tik in de Kaartweergave op de kaart van het 3D-element waarvan u een voorvertoning wilt weergeven._
@@ -76,4 +81,4 @@ Zie [Ondersteunde indelingen voor voorvertoningen](#supported-3d-previewing-asse
    * **Herstellen**- Tik in de rechterbenedenhoek van de pagina op het pictogram Herstellen om het doelpunt van de weergave te herstellen naar het midden van het 3D-element. Met Herstellen wordt de camera ook dichter bij of verder weg geplaatst om het middel volledig en bij een redelijke weergavegrootte weer te geven.
    * **Modus** Volledig scherm - Tik op het pictogram Volledig scherm rechtsonder op de pagina om de modus Volledig scherm te activeren.
 
-1. Tik op **[!UICONTROL Sluiten]** in de rechterbovenhoek van de pagina als u klaar bent.
+1. When you are finished, near the upper-right corner of the page, tap **[!UICONTROL Close]**.

@@ -1,6 +1,6 @@
 ---
 title: Dynamic Media-afbeeldingsprofielen
-description: Maak afbeeldingsprofielen met instellingen voor onscherp masker en kies voor slim uitsnijden of voor slim staal of beide om het profiel toe te passen op een map met afbeeldingselementen.
+description: Maak afbeeldingsprofielen met instellingen voor onscherp masker en kies voor slim uitsnijden of slim staal of beide om het profiel toe te passen op een map met afbeeldingselementen.
 uuid: 9049fab9-d2be-4118-8684-ce58f3c8c16a
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -8,9 +8,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 translation-type: tm+mt
-source-git-commit: 3cc0df3cdcb44250e26a31ac3ce1ad86064938d6
+source-git-commit: e78b3701e57b1954f03591c38b72e3dd33e8ef46
 workflow-type: tm+mt
-source-wordcount: '2586'
+source-wordcount: '2589'
 ht-degree: 11%
 
 ---
@@ -26,11 +26,11 @@ Wanneer u afbeeldingen uploadt, kunt u de afbeelding tijdens het uploaden automa
 
 ## Opties voor uitsnijden {#crop-options}
 
-U kunt kiezen uit twee opties voor het uitsnijden van afbeeldingen en een optie voor het automatiseren van het maken van kleur- en afbeeldingsstalen.
+<!-- CQDOC-16069 -->Smart Crop coordinates are aspect ratio dependent. That is, for the various smart crop settings in an image profile, if the aspect ratio is the same for the added dimensions that are in the image profile, then the same aspect ratio is sent to Dynamic media. Because of this, Adobe recommends that you use the same crop area. Doing so will ensure that there is no impact to different dimensions used in the image profile.
 
->[!IMPORTANT]
->
->Houd er rekening mee dat voor elke SmartCrop-generatie die u maakt extra verwerkingstijd nodig is. Als u bijvoorbeeld meer dan vijf slimme-uitsnijdverhoudingen toevoegt, kan dit leiden tot een langzame opname van elementen. Het kan ook een verhoogde belasting van systemen veroorzaken. Omdat u Slim uitsnijden kunt toepassen op mapniveau, raadt Adobe u aan het effect *alleen* in mappen te gebruiken als dat nodig is.
+Houd er rekening mee dat voor elke SmartCrop-generatie die u maakt extra verwerkingstijd nodig is. Als u bijvoorbeeld meer dan vijf slimme-uitsnijdverhoudingen toevoegt, kan dit leiden tot een langzame opname van elementen. Het kan ook een verhoogde belasting van systemen veroorzaken. Omdat u Slim uitsnijden kunt toepassen op mapniveau, raadt Adobe u aan het effect *alleen* in mappen te gebruiken als dat nodig is.
+
+U hebt twee opties voor het uitsnijden van afbeeldingen waaruit u kunt kiezen. U kunt ook het maken van kleuren- en afbeeldingsstalen automatiseren.
 
 <table>
  <tbody>
@@ -49,7 +49,7 @@ U kunt kiezen uit twee opties voor het uitsnijden van afbeeldingen en een optie 
      <li>Beginpunt voor uitsnijden: Links is X en Boven is Y</li>
      <li>Horizontale berekening: horizontale pixelafmetingen van de oorspronkelijke afbeelding min links en vervolgens min rechts.</li>
      <li>Verticale berekening: verticale pixelhoogte min Boven en vervolgens min Onder.</li>
-    </ul> <p>Stel dat u een afbeelding van 4000 x 3000 pixels hebt. U gebruikt waarden: Top=250; Bottom=500; Left=300; Right=700.</p> <p>Van linksboven (300.250) uitsnijden met de vulruimte (4000-300-700, 3000-250-500 of 3000,2250).</p> </td>
+    </ul> <p>Stel dat u een afbeelding van 4000 x 3000 pixels hebt. U gebruikt waarden: Top=250, Bottom=500, Left=300, Right=700.</p> <p>Van linksboven (300.250) uitsnijden met de vulruimte (4000-300-700, 3000-250-500 of 3000,2250).</p> </td>
   </tr>
   <tr>
    <td>Slim uitsnijden</td>
@@ -72,7 +72,7 @@ U gebruikt **[!UICONTROL Unsharp mask]** om een verscherpingsfiltereffect op de 
 
 >[!NOTE]
 >
->Onscherp masker wordt alleen toegepast op verkleinde uitvoeringen in de PTIFF-indeling (piramide tiff) die meer dan 50% zijn gedownsampled. Dit betekent dat de grootst mogelijke uitvoeringen binnen de bovenliggende container niet worden beïnvloed door een onscherp masker, terwijl kleinere uitvoeringen zoals miniaturen worden gewijzigd (en het onscherpe masker weergeven).
+>Onscherp masker wordt alleen toegepast op verkleinde uitvoeringen in de PTIFF-indeling (piramide tiff) die meer dan 50% zijn gedownsampled. Dit betekent dat de grootst mogelijke uitvoeringen binnen de titel niet worden beïnvloed door een onscherp masker, terwijl kleinere uitvoeringen zoals miniaturen worden gewijzigd (en het onscherpe masker tonen).
 
 In **[!UICONTROL Unsharp Mask]** hebt u de volgende filteropties:
 
@@ -288,6 +288,6 @@ U kunt een afbeeldingsprofiel uit een map verwijderen vanuit het menu **[!UICONT
 1. Tik op het AEM-logo en navigeer **[!UICONTROL Assets]** naar de map waarvan u een afbeeldingsprofiel wilt verwijderen.
 1. Tik in de map op het vinkje om het te selecteren en tik vervolgens op **[!UICONTROL Properties]**.
 1. Selecteer het **[!UICONTROL Image Profiles]** tabblad.
-1. Selecteer in het vervolgkeuzemenu **[!UICONTROL Profile Name]** de optie **[!UICONTROL None]** en tik vervolgens op **[!UICONTROL Save & Close]**.
+1. From the **[!UICONTROL Profile Name]** drop-down list, select **[!UICONTROL None]**, then tap **[!UICONTROL Save & Close]**.
 
    Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.

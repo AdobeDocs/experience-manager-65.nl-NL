@@ -4,9 +4,9 @@ description: Leer hoe u een voorvertoning van 3D-elementen kunt weergeven
 contentOwner: Rick Brough
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 85a93dfa3bcacfb0820029642c03b2d35552121f
+source-git-commit: 1cabc87dc58a4dbcac64a2797a3b1e0cca995d63
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '558'
 ht-degree: 4%
 
 ---
@@ -18,7 +18,7 @@ Adobe Experience Manager ondersteunt het uploaden, leveren en interactief voorve
 
 De interactieve 3D-viewer is beschikbaar op de pagina met elementdetails in AEM. De viewer bevat onder andere een verzameling interactieve besturingselementen voor camera waarmee u het 3D-element kunt draaien, zoomen en pannen.
 
-Zie ook [Werken met 3D-elementen in dynamische media](/help/assets/assets-3d.md).
+<!-- See also [Working with 3D assets in Dynamic Media](/help/assets/assets-3d.md). -->
 
 ## Ondersteunde indelingen voor 3D-voorvertoning in AEM {#supported-3d-previewing-assets}
 

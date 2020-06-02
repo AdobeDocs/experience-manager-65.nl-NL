@@ -6,7 +6,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
 translation-type: tm+mt
-source-git-commit: 6a29cf13c89b71f851c67f85b01e8e648c0896b9
+source-git-commit: 5a97dd9a34d42bfbf3e2185763e4040e1190f297
+workflow-type: tm+mt
+source-wordcount: '2197'
+ht-degree: 1%
 
 ---
 
@@ -78,13 +81,13 @@ Interactieve communicatie maken op basis van records die zijn opgeslagen in een 
 
 1. Maak een [gecontroleerde map](https://docs.adobe.com/content/help/en/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html) en configureer deze voor gebruik van de Batch-API:
    1. Meld u aan bij de auteur van AEM Forms.
-   1. Ga naar **[!UICONTROL Gereedschappen]** > **[!UICONTROL Formulieren]** > Gecontroleerde map **** configureren. Tik op **[!UICONTROL Nieuw]**.
-   1. Geef de **[!UICONTROL naam]** en het fysieke **[!UICONTROL pad]** van de map op. Bijvoorbeeld, `c:\batchprocessing`.
-   1. Selecteer de optie **[!UICONTROL Service]** in het veld **[!UICONTROL Bestand verwerken met]** .
-   1. Selecteer de **[!UICONTROL service com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** in het veld **[!UICONTROL Servicenaam]** .
-   1. Geef een **[!UICONTROL uitvoerbestandspatroon]** op. Met het [patroon](https://helpx.adobe.com/experience-manager/6-5/forms/using/admin-help/configuring-watched-folder-endpoints.html#about_file_patterns) %F/ wordt bijvoorbeeld aangegeven dat invoerbestanden in de gecontroleerde map kunnen worden gevonden in een submap van de invoermap \ van de gecontroleerde map.
+   1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Forms]** > **[!UICONTROL Configure Watched Folder]**. Tik op **[!UICONTROL New]**.
+   1. Geef de **[!UICONTROL Name]** en fysieke kenmerken **[!UICONTROL Path]** van de map op. Bijvoorbeeld, `c:\batchprocessing`.
+   1. Selecteer de **[!UICONTROL Service]** optie in het **[!UICONTROL Process File Using]** veld.
+   1. Selecteer de **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** service in het **[!UICONTROL Service Name]** veld.
+   1. Geef een **[!UICONTROL Output File Pattern]** waarde op. Met het [patroon](https://helpx.adobe.com/experience-manager/6-5/forms/using/admin-help/configuring-watched-folder-endpoints.html#about_file_patterns) %F/ wordt bijvoorbeeld aangegeven dat invoerbestanden in de gecontroleerde map kunnen worden gevonden in een submap van de invoermap \ van de gecontroleerde map.
 1. Geavanceerde parameters configureren:
-   1. Open het tabblad **[!UICONTROL Geavanceerd]** en voeg de volgende aangepaste eigenschappen toe:
+   1. Open het **[!UICONTROL Advanced]** tabblad en voeg de volgende aangepaste eigenschappen toe:
 
       | Eigenschap | Type | Beschrijving |
       |--- |--- |--- |
@@ -94,7 +97,7 @@ Interactieve communicatie maken op basis van records die zijn opgeslagen in een 
       | batchType | Tekenreeks | Stel waarde in op AFDRUKKEN, WEB of WEB_AND_PRINT. De standaardwaarde is WEB_AND_PRINT. |
       | locale | Tekenreeks | Geef de landinstelling van interactieve uitvoercommunicatie op. De out-of-the-box service maakt geen gebruik van de landinstelling, maar u kunt wel een aangepaste service maken om gelokaliseerde interactieve communicatie te genereren. De standaardwaarde is nl_NL |
 
-   1. Tik op **[!UICONTROL De gecontroleerde map maken]** .
+   1. Tik op **[!UICONTROL Create]** de gecontroleerde map.
 1. Gebruik de gecontroleerde map om interactieve communicatie te genereren:
    1. Open de gecontroleerde map. Navigeer naar de invoermap.
    1. Maak een map in de invoermap en plaats het JSON-bestand in de nieuwe map.
@@ -140,13 +143,13 @@ U combineert gegevens (verslagen) die in een externe gegevensbron met een intera
 
 1. Maak een [gecontroleerde map](https://docs.adobe.com/content/help/en/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html) en configureer deze voor gebruik van de Batch API-service:
    1. Meld u aan bij de auteur van AEM Forms.
-   1. Ga naar **[!UICONTROL Gereedschappen]** > **[!UICONTROL Formulieren]** > Gecontroleerde map **** configureren. Tik op **[!UICONTROL Nieuw]**.
-   1. Geef de **[!UICONTROL naam]** en het fysieke **[!UICONTROL pad]** van de map op. Bijvoorbeeld, `c:\batchprocessing`.
-   1. Selecteer de optie **[!UICONTROL Service]** in het veld **[!UICONTROL Bestand verwerken met]** .
-   1. Selecteer de **[!UICONTROL service com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** in het veld **[!UICONTROL Servicenaam]** .
-   1. Geef een **[!UICONTROL uitvoerbestandspatroon]** op. Met het [patroon](https://helpx.adobe.com/experience-manager/6-5/forms/using/admin-help/configuring-watched-folder-endpoints.html#about_file_patterns) %F/ wordt bijvoorbeeld aangegeven dat invoerbestanden in de gecontroleerde map kunnen worden gevonden in een submap van de invoermap \ van de gecontroleerde map.
+   1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Forms]** > **[!UICONTROL Configure Watched Folder]**. Tik op **[!UICONTROL New]**.
+   1. Geef de **[!UICONTROL Name]** en fysieke kenmerken **[!UICONTROL Path]** van de map op. Bijvoorbeeld, `c:\batchprocessing`.
+   1. Selecteer de **[!UICONTROL Service]** optie in het **[!UICONTROL Process File Using]** veld.
+   1. Selecteer de **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** service in het **[!UICONTROL Service Name]** veld.
+   1. Geef een **[!UICONTROL Output File Pattern]** waarde op. Met het [patroon](https://helpx.adobe.com/experience-manager/6-5/forms/using/admin-help/configuring-watched-folder-endpoints.html#about_file_patterns) %F/ wordt bijvoorbeeld aangegeven dat invoerbestanden in de gecontroleerde map kunnen worden gevonden in een submap van de invoermap \ van de gecontroleerde map.
 1. Geavanceerde parameters configureren:
-   1. Open het tabblad **[!UICONTROL Geavanceerd]** en voeg de volgende aangepaste eigenschappen toe:
+   1. Open het **[!UICONTROL Advanced]** tabblad en voeg de volgende aangepaste eigenschappen toe:
 
       | Eigenschap | Type | Beschrijving |
       |--- |--- |--- |
@@ -156,7 +159,7 @@ U combineert gegevens (verslagen) die in een externe gegevensbron met een intera
       | batchType | Tekenreeks | Stel waarde in op AFDRUKKEN, WEB of WEB_AND_PRINT. De standaardwaarde is WEB_AND_PRINT. |
       | locale | Tekenreeks | Geef de landinstelling van interactieve uitvoercommunicatie op. De out-of-the-box service maakt geen gebruik van de landinstelling, maar u kunt wel een aangepaste service maken om gelokaliseerde interactieve communicatie te genereren. De standaardwaarde is nl_NL. |
 
-   1. Tik op **[!UICONTROL De gecontroleerde map maken]** .
+   1. Tik op **[!UICONTROL Create]** de gecontroleerde map.
 1. Gebruik de gecontroleerde map om interactieve communicatie te genereren:
    1. Open de gecontroleerde map. Navigeer naar de invoermap.
    1. Maak een map in de invoermap. Plaats het JSON-bestand dat in Stap 2 is gemaakt in de nieuwe map.
@@ -174,20 +177,13 @@ Voordat u de Java-servlet implementeert, moet u ervoor zorgen dat u een interact
 
 1. Meld u aan bij uw AEM-instantie en maak een interactieve communicatie. Als u de interactieve communicatie wilt gebruiken die in de voorbeeldcode hieronder wordt vermeld, [klikt u hier](assets/SimpleMediumIC.zip).
 1. [Ontwikkel en implementeer een AEM-project met Apache Maven](https://helpx.adobe.com/experience-manager/using/maven_arch13.html) op uw AEM-instantie.
-1. Voeg [AEM Forms Client SDK versie 6.0.12](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) of hoger en nieuwste [AEM Uber Jar](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/service-pack/sp-release-notes.html#uber-jar) toe in de lijst met afhankelijkheden van het POm-bestand van uw AEM-project. Bijvoorbeeld:
+1. Voeg [AEM Forms Client SDK versie 6.0.12](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) of hoger toe aan de lijst met afhankelijkheden van het POM-bestand van uw AEM-project. Bijvoorbeeld,
 
    ```XML
        <dependency>
            <groupId>com.adobe.aemfd</groupId>
            <artifactId>aemfd-client-sdk</artifactId>
            <version>6.0.122</version>
-       </dependency>
-       <dependency>
-          <groupId>com.adobe.aem</groupId>
-          <artifactId>uber-jar</artifactId>
-          <version>6.5.0</version>
-          <classifier>apis</classifier>
-          <scope>provided</scope>
        </dependency>
    ```
 
@@ -201,18 +197,9 @@ Voordat u de Java-servlet implementeert, moet u ervoor zorgen dat u een interact
            import java.io.FileOutputStream;
            import java.io.IOException;
            import java.io.InputStream;
-           import java.io.OutputStream;
            import java.io.PrintWriter;
            import java.util.List;
-           import java.util.logging.FileHandler;
-           import java.util.logging.Logger;
-           import java.util.logging.SimpleFormatter;
-   
            import javax.servlet.Servlet;
-           import javax.servlet.ServletContext;
-   
-           import com.adobe.aemfd.watchfolder.service.api.ContentProcessor;
-   
            import org.apache.commons.io.IOUtils;
            import org.apache.sling.api.SlingHttpServletRequest;
            import org.apache.sling.api.SlingHttpServletResponse;
@@ -222,8 +209,7 @@ Voordat u de Java-servlet implementeert, moet u ervoor zorgen dat u een interact
            import org.osgi.service.component.annotations.Component;
            import org.osgi.service.component.annotations.Reference;
    
-           import com.adobe.aemfd.docmanager.Document;
-           import com.adobe.aemfd.docmanager.passivation.DocumentPassivationHandler;
+           import com.adobe.fd.ccm.multichannel.batch.api.builder.BatchConfigBuilder;
            import com.adobe.fd.ccm.multichannel.batch.api.factory.BatchComponentBuilderFactory;
            import com.adobe.fd.ccm.multichannel.batch.api.model.BatchConfig;
            import com.adobe.fd.ccm.multichannel.batch.api.model.BatchInput;
@@ -233,21 +219,8 @@ Voordat u de Java-servlet implementeert, moet u ervoor zorgen dat u een interact
            import com.adobe.fd.ccm.multichannel.batch.api.model.RenditionResult;
            import com.adobe.fd.ccm.multichannel.batch.api.service.BatchGeneratorService;
            import com.adobe.fd.ccm.multichannel.batch.util.BatchConstants;
-           import com.adobe.icc.render.obj.Content;
-   
-           import javax.annotation.PostConstruct;
-           import javax.inject.Inject;
-           import javax.inject.Named;
-   
-           import org.apache.sling.api.resource.Resource;
-           import org.apache.sling.models.annotations.Default;
-           import org.apache.sling.models.annotations.Model;
-           import org.apache.sling.settings.SlingSettingsService;
-           import org.apache.sling.api.resource.ResourceUtil;
-   
-   
-           import org.slf4j.*;
            import java.util.Date;
+   
    
            @Component(service=Servlet.class,
            property={
@@ -361,11 +334,13 @@ Voordat u de Java-servlet implementeert, moet u ervoor zorgen dat u een interact
 
 Wanneer u batchType plaatst om het Kanaal van het Web terug te geven, produceert API een JSON dossier voor elk gegevensverslag. Met de volgende syntaxis kunt u het JSON-bestand samenvoegen met het overeenkomende webkanaal om een interactieve communicatie te genereren:
 
-**Syntaxis**`http://host:port/<template-path>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=<guide-merged-json-path>`
+**Syntaxis**
+`http://host:port/<template-path>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=<guide-merged-json-path>`
 
 **Voorbeeld** Als uw JSON-bestand zich op `C:\batch\mergedJsonPath.json` en u de onderstaande interactieve communicatiesjabloon gebruikt: `http://host:port/content/dam/formsanddocuments/testsample/mediumic/jcr:content?channel=web`
 
-Dan toont volgende URL op de publicatieknoop het Kanaal van het Web van de interactieve mededeling`http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=file:///C:/batch/mergedJsonData.json`
+Dan toont volgende URL op de publicatieknoop het Kanaal van het Web van de interactieve mededeling
+`http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=file:///C:/batch/mergedJsonData.json`
 
 U slaat de gegevens niet alleen op het bestandssysteem op, maar u slaat JSON-bestanden ook op in CRX-opslagruimte, bestandssysteem, webserver of u hebt toegang tot gegevens via de OSGI-prefill-service. De syntaxis om gegevens samen te voegen die diverse protocollen gebruiken is:
 

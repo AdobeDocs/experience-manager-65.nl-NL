@@ -11,7 +11,7 @@ topic-tags: platform
 discoiquuid: 16c7a97d-884a-447e-9aad-18a2db1bda1d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f16c25468418b6f228132e9d06017d32466cf43a
+source-git-commit: a299e26668b1f1f08cca8d4a8085da185522ec96
 workflow-type: tm+mt
 source-wordcount: '3118'
 ht-degree: 0%
@@ -100,7 +100,7 @@ Adobe Experience Manager werkt met de volgende versies van de Java Virtual Machi
  <tbody>
   <tr>
    <td>Platform</td>
-   <td>Ondersteuningsniveau<br /> </td>
+   <td>Ondersteuningsniveau</td>
   </tr>
   <tr>
    <td>Oracle Java SE 12 JDK [1]</td>
@@ -144,15 +144,15 @@ Er zijn verschillende opties om de opslagplaats van Adobe Experience Manager te 
 
 | **Platform** | **Beschrijving** | **Ondersteuningsniveau** |
 |---|---|---|
-| **Bestandssysteem met TAR-bestanden[1 ]** | Bewaarplaats | A: Ondersteund |
-| **Bestandssysteem met Datastore[1 ]** | Binden | A: Ondersteund |
-| Binaire bestanden opslaan in TAR-bestanden op bestandssysteem [1] | Binden | Z: Niet ondersteund voor productie |
+| **Bestandssysteem met TAR-bestanden** `[1]` | Bewaarplaats | A: Ondersteund |
+| **Bestandssysteem met Datastore** `[1]` | Binden | A: Ondersteund |
+| Binaire bestanden opslaan in TAR-bestanden op bestandssysteem `[1]` | Binden | Z: Niet ondersteund voor productie |
 | Amazon S3 | Binden | A: Ondersteund |
 | Microsoft Azure Blob-opslag | Binden | A: Ondersteund |
-| MongoDB Enterprise 4.0 | Bewaarplaats | A: Ondersteund [2, 3] |
+| MongoDB Enterprise 4.0 | Bewaarplaats | A: Ondersteund `[2, 3]` |
 | MongoDB Enterprise 3.6 | Bewaarplaats | Z: Niet ondersteund |
 | MongoDB Enterprise 3.4 | Bewaarplaats | Z: Niet ondersteund |
-| IBM DB2 10.5 | Database voor opslagplaats en formulieren | R: Beperkte ondersteuning [4] |
+| IBM DB2 10.5 | Database voor opslagplaats en formulieren | R: Beperkte ondersteuning `[4]` |
 | Oracle Database 12c (12.1.x) | Database voor opslagplaats en formulieren | R: Beperkte ondersteuning |
 | Microsoft SQL Server 2016 | Forms-database | A: Ondersteund |
 | **Apache Lucene (QuickStart ingebouwd)** | Zoekservice | A: Ondersteund |
@@ -199,11 +199,11 @@ De minimaal vereiste versie van de servlet-API is Servlet 3.1
 |---|---|
 | **QuickStart ingebouwde Servlet Engine (Jetty 9.4)** | A: Ondersteund |
 | Oracle WebLogic Server 12.2 (12cR2) | Z: Niet ondersteund |
-| IBM WebSphere Application Server Continuous Delivery (LibertyProfile) met webprofiel 7.0 en IBM JRE 1.8 | R: Beperkte steun voor nieuwe contracten [2] |
-| IBM WebSphere Application Server 9.0 en IBM JRE 1.8 | R: Beperkte steun voor nieuwe contracten [1] [2] |
-| Apache Tomcat 8.5.x | R: Beperkte steun voor nieuwe contracten [2] |
+| IBM WebSphere Application Server Continuous Delivery (LibertyProfile) met webprofiel 7.0 en IBM JRE 1.8 | R: Beperkte steun voor nieuwe contracten `[2]` |
+| IBM WebSphere Application Server 9.0 en IBM JRE 1.8 | R: Beperkte steun voor nieuwe contracten `[1]` `[2]` |
+| Apache Tomcat 8.5.x | R: Beperkte steun voor nieuwe contracten `[2]` |
 | JBoss EAP 7.2.x met JBoss Application Server | Z: Niet ondersteund |
-| JBoss EAP 7.1.4 met JBoss Application Server | R: Beperkte steun voor nieuwe contracten [1] [2] |
+| JBoss EAP 7.1.4 met JBoss Application Server | R: Beperkte steun voor nieuwe contracten `[1]` `[2]` |
 | JBoss EAP 7.0.x met JBoss Application Server | Z: Niet ondersteund |
 
 1. Aanbevolen voor implementaties met AEM Forms.
@@ -215,11 +215,11 @@ Adobe Experience Manager werkt voor productieomgevingen met de volgende serverpl
 
 | **Platform** | **Ondersteuningsniveau** |
 |---|---|
-| **Linux, gebaseerd op Red Hat-distributie** | A: Ondersteund [1] [3] |
-| Linux, gebaseerd op Debian distribution incl. Ubuntu | A: Ondersteund [2] |
+| **Linux, gebaseerd op Red Hat-distributie** | A: Ondersteund `[1]` `[3]` |
+| Linux, gebaseerd op Debian distribution incl. Ubuntu | A: Ondersteund `[2]` |
 | Linux, gebaseerd op SUSE-distributie | A: Ondersteund |
-| Microsoft Windows Server 2019 [4] | R: Beperkte steun voor nieuwe contracten |
-| Microsoft Windows Server 2016 [4] | R: Beperkte steun voor nieuwe contracten [5] |
+| Microsoft Windows Server 2019 `[4]` | R: Beperkte steun voor nieuwe contracten |
+| Microsoft Windows Server 2016 `[4]` | R: Beperkte steun voor nieuwe contracten `[5]` |
 | Microsoft Windows Server 2012 R2 | Z: Niet ondersteund |
 | Oracle Solaris 11 | Z: Niet ondersteund |
 | IBM AIX 7.2 | Z: Niet ondersteund |
@@ -248,7 +248,7 @@ De volgende webservers worden ondersteund voor gebruik met Dispatcher versie 4.3
 
 | Platform | Ondersteuningsniveau |
 |---|---|
-| **Apache httpd 2.4.x** [1,2] | A: Ondersteund |
+| **Apache httpd 2.4.x** `[1,2]` | A: Ondersteund |
 | Microsoft IIS 10 (Internet Information Server) | A: Ondersteund |
 | Microsoft IIS 8.5 (Internet Information Server) | Z: Niet ondersteund |
 

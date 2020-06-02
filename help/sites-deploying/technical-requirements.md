@@ -11,7 +11,10 @@ topic-tags: platform
 discoiquuid: 16c7a97d-884a-447e-9aad-18a2db1bda1d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f323b490c37effc3cbb36c793b62fa788eca9545
+source-git-commit: f16c25468418b6f228132e9d06017d32466cf43a
+workflow-type: tm+mt
+source-wordcount: '3118'
+ht-degree: 0%
 
 ---
 
@@ -100,7 +103,7 @@ Adobe Experience Manager werkt met de volgende versies van de Java Virtual Machi
    <td>Ondersteuningsniveau<br /> </td>
   </tr>
   <tr>
-   <td>Oracle Java SE 12 JDK `\[1]`</td>
+   <td>Oracle Java SE 12 JDK [1]</td>
    <td>Z: Niet ondersteund </td>
   </tr>
   <tr>
@@ -108,23 +111,23 @@ Adobe Experience Manager werkt met de volgende versies van de Java Virtual Machi
    <td>A: Ondersteund</td>
   </tr>
   <tr>
-   <td>Oracle Java SE 10 JDK `\[1]`</td>
+   <td>Oracle Java SE 10 JDK [1]</td>
    <td>Z: Niet ondersteund </td>
   </tr>
   <tr>
-   <td>Oracle Java SE 9 JDK `\[1]`</td>
+   <td>Oracle Java SE 9 JDK [1]</td>
    <td>Z: Niet ondersteund</td>
   </tr>
   <tr>
    <td>Oracle Java SE 8 JDK - 64 bits</td>
-   <td>A: Ondersteund `\[3]`<br /> </td>
+   <td>A: Ondersteund [3]</td>
   </tr>
   <tr>
-   <td>IBM J9 VM - build 2.9, JRE 1.8.0 `\[2]`</td>
+   <td>IBM J9 VM - build 2.9, JRE 1.8.0 [2]</td>
    <td>A: Ondersteund</td>
   </tr>
   <tr>
-   <td>IBM J9 VM - build 2.8, JRE 1.8.0 `\[2]`</td>
+   <td>IBM J9 VM - build 2.8, JRE 1.8.0 [2]</td>
    <td>A: Ondersteund</td>
   </tr>
  </tbody>
@@ -141,15 +144,15 @@ Er zijn verschillende opties om de opslagplaats van Adobe Experience Manager te 
 
 | **Platform** | **Beschrijving** | **Ondersteuningsniveau** |
 |---|---|---|
-| **Bestandssysteem met TAR-bestanden`\[1]`** | Bewaarplaats | A: Ondersteund |
-| **Bestandssysteem met Datastore`\[1]`** | Binden | A: Ondersteund |
-| Binaire bestanden opslaan in TAR-bestanden op bestandssysteem `\[1]` | Binden | Z: Niet ondersteund voor productie |
+| **Bestandssysteem met TAR-bestanden[1 ]** | Bewaarplaats | A: Ondersteund |
+| **Bestandssysteem met Datastore[1 ]** | Binden | A: Ondersteund |
+| Binaire bestanden opslaan in TAR-bestanden op bestandssysteem [1] | Binden | Z: Niet ondersteund voor productie |
 | Amazon S3 | Binden | A: Ondersteund |
 | Microsoft Azure Blob-opslag | Binden | A: Ondersteund |
 | MongoDB Enterprise 4.0 | Bewaarplaats | A: Ondersteund [2, 3] |
 | MongoDB Enterprise 3.6 | Bewaarplaats | Z: Niet ondersteund |
 | MongoDB Enterprise 3.4 | Bewaarplaats | Z: Niet ondersteund |
-| IBM DB2 10.5 | Database voor opslagplaats en formulieren | R: Beperkte ondersteuning `\[4]` |
+| IBM DB2 10.5 | Database voor opslagplaats en formulieren | R: Beperkte ondersteuning [4] |
 | Oracle Database 12c (12.1.x) | Database voor opslagplaats en formulieren | R: Beperkte ondersteuning |
 | Microsoft SQL Server 2016 | Forms-database | A: Ondersteund |
 | **Apache Lucene (QuickStart ingebouwd)** | Zoekservice | A: Ondersteund |
@@ -196,11 +199,11 @@ De minimaal vereiste versie van de servlet-API is Servlet 3.1
 |---|---|
 | **QuickStart ingebouwde Servlet Engine (Jetty 9.4)** | A: Ondersteund |
 | Oracle WebLogic Server 12.2 (12cR2) | Z: Niet ondersteund |
-| IBM WebSphere Application Server Continuous Delivery (LibertyProfile) met webprofiel 7.0 en IBM JRE 1.8 | R: Beperkte steun voor nieuwe contracten `\[2]` |
-| IBM WebSphere Application Server 9.0 en IBM JRE 1.8 | R: Beperkte steun voor nieuwe contracten `\[1]``\[2]` |
-| Apache Tomcat 8.5.x | R: Beperkte steun voor nieuwe contracten `\[2]` |
+| IBM WebSphere Application Server Continuous Delivery (LibertyProfile) met webprofiel 7.0 en IBM JRE 1.8 | R: Beperkte steun voor nieuwe contracten [2] |
+| IBM WebSphere Application Server 9.0 en IBM JRE 1.8 | R: Beperkte steun voor nieuwe contracten [1] [2] |
+| Apache Tomcat 8.5.x | R: Beperkte steun voor nieuwe contracten [2] |
 | JBoss EAP 7.2.x met JBoss Application Server | Z: Niet ondersteund |
-| JBoss EAP 7.1.4 met JBoss Application Server | R: Beperkte steun voor nieuwe contracten `\[1]``\[2]` |
+| JBoss EAP 7.1.4 met JBoss Application Server | R: Beperkte steun voor nieuwe contracten [1] [2] |
 | JBoss EAP 7.0.x met JBoss Application Server | Z: Niet ondersteund |
 
 1. Aanbevolen voor implementaties met AEM Forms.
@@ -212,11 +215,11 @@ Adobe Experience Manager werkt voor productieomgevingen met de volgende serverpl
 
 | **Platform** | **Ondersteuningsniveau** |
 |---|---|
-| **Linux, gebaseerd op Red Hat-distributie** | A: Ondersteund `\[1]``\[3]` |
-| Linux, gebaseerd op Debian distribution incl. Ubuntu | A: Ondersteund `\[2]` |
+| **Linux, gebaseerd op Red Hat-distributie** | A: Ondersteund [1] [3] |
+| Linux, gebaseerd op Debian distribution incl. Ubuntu | A: Ondersteund [2] |
 | Linux, gebaseerd op SUSE-distributie | A: Ondersteund |
-| Microsoft Windows Server 2019 `\[4]` | R: Beperkte steun voor nieuwe contracten |
-| Microsoft Windows Server 2016 `\[4]` | R: Beperkte steun voor nieuwe contracten `\[5]` |
+| Microsoft Windows Server 2019 [4] | R: Beperkte steun voor nieuwe contracten |
+| Microsoft Windows Server 2016 [4] | R: Beperkte steun voor nieuwe contracten [5] |
 | Microsoft Windows Server 2012 R2 | Z: Niet ondersteund |
 | Oracle Solaris 11 | Z: Niet ondersteund |
 | IBM AIX 7.2 | Z: Niet ondersteund |
@@ -298,7 +301,7 @@ De AEM-gebruikersinterface is geoptimaliseerd voor grotere schermen (doorgaans l
    <td>A: Ondersteund</td>
   </tr>
   <tr>
-   <td>Mozilla Firefox last ESR '\[1]'</td>
+   <td>Mozilla Firefox laatste ESR [1]</td>
    <td>A: Ondersteund</td>
    <td>A: Ondersteund</td>
   </tr>
@@ -314,7 +317,7 @@ De AEM-gebruikersinterface is geoptimaliseerd voor grotere schermen (doorgaans l
   </tr>
   <tr>
    <td>Apple Safari op iOS 12.x</td>
-   <td>A: Ondersteund `\[2]`</td>
+   <td>A: Ondersteund [2]</td>
    <td>Z: Niet ondersteund</td>
   </tr>
   <tr>
@@ -402,7 +405,7 @@ Als u Dynamic Media gebruikt op Linux, moet aan de volgende voorwaarden worden v
 >
 >**SELinux uitschakelen:** De service Image Serving werkt niet wanneer SELinux is ingeschakeld. Deze optie is standaard ingeschakeld. U verhelpt dit probleem door het bestand **/etc/selinux/config** te bewerken en de SELinux-waarde te wijzigen van:
 >
->`SELINUX=enforcing` **naar**`SELINUX=disabled`
+>`SELINUX=enforcing` **tot** `SELINUX=disabled`
 
 >[!NOTE]
 >

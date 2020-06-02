@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: dca5a2ac-1fc8-4251-b073-730fd6f49b1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cdcea49a25807e125ea15e7132ac9f188d3525bc
+source-git-commit: 9a27aabef07d5b5104c08c414138fbb22e284a68
 workflow-type: tm+mt
 source-wordcount: '1972'
 ht-degree: 14%
@@ -24,7 +24,7 @@ Adobe Experience Manager-middelen (AEM) worden geconfigureerd met Brand Portal v
 
 >[!NOTE]
 >
->Het configureren van AEM-middelen met Brand Portal via Adobe I/O wordt ondersteund op AEM 6.5.4.0 en hoger.
+>Het configureren van AEM-middelen met Brand Portal via Adobe Developer Console wordt ondersteund op AEM 6.5.4.0 en hoger.
 >
 >Eerder, werd het Portaal van het Merk gevormd in Klassieke UI via Verouderde Gateway OAuth, die de het symbolenuitwisseling van JWT gebruikt om een token van de Toegang te verkrijgen IMS voor vergunning.
 >
@@ -35,13 +35,13 @@ Adobe Experience Manager-middelen (AEM) worden geconfigureerd met Brand Portal v
 >
 >***Alleen voor bestaande klanten***
 >
->Het wordt geadviseerd om bestaande oudere configuratie van de Gateway te blijven gebruiken OAuth. Als er problemen optreden met de oudere OAuth Gateway-configuratie, verwijdert u de bestaande configuratie en maakt u een nieuwe configuratie via Adobe I/O.
+>Het wordt geadviseerd om bestaande oudere configuratie van de Gateway te blijven gebruiken OAuth. Als er problemen optreden met de oudere OAuth Gateway-configuratie, verwijdert u de bestaande configuratie en maakt u een nieuwe configuratie via Adobe Developer Console.
 
 
 
 In deze Help worden de volgende twee gebruiksgevallen beschreven:
-* [Nieuwe configuratie](#configure-new-integration-65): Als u een nieuwe gebruiker van het Merk Portal bent en uw AEM Assets auteurinstantie met het Portaal van het Merk wilt vormen, kunt u nieuwe configuratie op de I/O van Adobe tot stand brengen.
-* [Configuratie](#upgrade-integration-65)upgrade: Als u een bestaande gebruiker bent van het Merk Portal met uw AEM Assets auteursinstantie die met het Portaal van het Merk op erfenisOAuth Gateway wordt gevormd, wordt het geadviseerd om de bestaande configuraties te schrappen en nieuwe configuratie op Adobe I/O tot stand te brengen.
+* [Nieuwe configuratie](#configure-new-integration-65): Als u een nieuwe gebruiker van het Merk Portal bent en uw AEM Assets auteurinstantie met het Portaal van het Merk wilt vormen, kunt u nieuwe configuratie op de Console van de Ontwikkelaar van Adobe tot stand brengen.
+* [Configuratie](#upgrade-integration-65)upgrade: Als u een bestaande gebruiker bent van het Merk Portal met uw AEM Assets auteursinstantie die met het Portaal van het Merk op erfenisOAuth Gateway wordt gevormd, wordt het geadviseerd om de bestaande configuraties te schrappen en nieuwe configuratie op de Console van de Ontwikkelaar van Adobe tot stand te brengen.
 
 De verstrekte informatie is gebaseerd op de veronderstelling dat iedereen die deze Hulp leest met de volgende technologieën vertrouwd is:
 
@@ -174,7 +174,7 @@ Voer de volgende stappen uit om de geloofsbrieven van de de dienstrekening en la
 
 1. Klik op **[!UICONTROL Create new project]**. Er wordt een leeg project gemaakt voor uw organisatie.
 
-   Klik **[!UICONTROL Edit project]** om de pagina bij te werken **[!UICONTROL Project Title]** , **[!UICONTROL Description]** en klik **[!UICONTROL Save]**.
+   Klik **[!UICONTROL Edit project]** om het **[!UICONTROL Project Title]** en **[!UICONTROL Description]** bij te werken, en klik **[!UICONTROL Save]**.
 
    ![Project maken](assets/service-account1.png)
 

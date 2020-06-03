@@ -3,7 +3,7 @@ title: Gebruik Connected Assets om DAM-middelen te delen in de ontwerpworkflow v
 description: Gebruik de middelen die beschikbaar zijn op een externe implementatie van [!DNL Adobe Experience Manager Assets] wanneer u uw webpagina's maakt op een andere implementatie van [!DNL Adobe Experience Manager Sites].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 3e43e46b37ea5a9449da4a98d94fdc22f6c4ee8c
 workflow-type: tm+mt
 source-wordcount: '2018'
 ht-degree: 48%
@@ -78,7 +78,8 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
    1. In **[!UICONTROL Mount Point]** field, enter the local [!DNL Experience Manager] path where [!DNL Experience Manager] fetches the assets. Bijvoorbeeld de map `remoteassets`.
    1. Pas de waarden van **[!UICONTROL Original Binary transfer optimization Threshold]** aan, afhankelijk van uw netwerk. De weergave van een asset die groter is dan deze drempelwaarde, wordt asynchroon overgedragen.
    1. Select **[!UICONTROL Datastore Shared with Connected Assets]**, if you use a datastore to store your assets and the Datastore is the common storage between both deployments. In dat geval is de drempelwaarde niet van belang, aangezien de binaire gegevens van de werkelijke asset in de datastore staan en niet worden overgedragen.
-      ![Een typische configuratie voor gekoppelde assets](assets/connected-assets-typical-config.png)
+   ![Een typische configuratie voor gekoppelde assets](assets/connected-assets-typical-config.png)
+
    *Afbeelding: Een typische configuratie voor gekoppelde assets.*
 
 1. Als de assets al zijn verwerkt en de weergaven zijn opgehaald, schakelt u de startprogramma&#39;s voor de workflow uit. Adjust the launcher configurations on the local ([!DNL Sites]) deployment to exclude the `connectedassets` folder, in which the remote assets are fetched.

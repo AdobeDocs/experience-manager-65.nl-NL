@@ -3,9 +3,9 @@ title: Rapporten over uw digitale middelen
 description: Lees rapporten over uw middelen in de Middelen van de Manager van de Ervaring van Adobe die u helpen gebruik, activiteit, en het delen van uw digitale activa begrijpen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 3e43e46b37ea5a9449da4a98d94fdc22f6c4ee8c
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '923'
 ht-degree: 12%
 
 ---
@@ -37,10 +37,11 @@ De Elementen van de Manager van de ervaring produceert de volgende standaardrapp
 * Bestanden
 * Delen van koppeling
 
-De beheerders van de Manager van de ervaring kunnen deze rapporten voor uw implementatie gemakkelijk produceren en aanpassen. Een beheerder kan deze stappen volgen om een rapport te produceren:
+[!DNL Adobe Experience Manager] beheerders kunnen deze rapporten gemakkelijk produceren en aanpassen voor uw implementatie. Een beheerder kan deze stappen volgen om een rapport te produceren:
 
 1. Klik in de interface van Experience Manager op **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Reports]**.
-   ![](assets/AssetsReportNavigation.png)
+
+![](assets/AssetsReportNavigation.png)
 
 1. Klik op de [!UICONTROL Asset Reports] pagina op **[!UICONTROL Create]** de werkbalk.
 1. Kies op de **[!UICONTROL Create Report]** pagina het rapport dat u wilt maken en klik op **[!UICONTROL Next]**.

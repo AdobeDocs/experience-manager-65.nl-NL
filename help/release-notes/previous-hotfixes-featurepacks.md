@@ -1,10 +1,15 @@
 ---
 title: Opmerkingen bij de release AEM 6.5 Vorige Service Pack
 description: Opmerkingen bij de release specifiek voor Adobe Experience Manager 6.5 Service Pack 3 en eerder.
+uuid: c7bc3705-3d92-4e22-ad84-dc6002f6fa6c
+contentOwner: User
+products: SG_EXPERIENCEMANAGER/6.5
+discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
+docset: aem65
 translation-type: tm+mt
-source-git-commit: 321710219053ab43fe5a223665bc20987e1afb31
+source-git-commit: c80cb65b42d8e132ba83c25f1decdcf0a0a6fc51
 workflow-type: tm+mt
-source-wordcount: '6273'
+source-wordcount: '8090'
 ht-degree: 0%
 
 ---
@@ -12,7 +17,241 @@ ht-degree: 0%
 
 # Hotfixes en de Pakken van de Eigenschap inbegrepen in vorige Packs van de Dienst {#hotfixes-and-feature-packs-included-in-previous-service-packs}
 
-## Adobe Experience Manager 6.5.3.0 {#aem-6530-rn}
+## Adobe Experience Manager 6.5.4.0 {#experience-manager-6540}
+
+Adobe Experience Manager 6.5.4.0 is een belangrijke update met nieuwe functies, belangrijke verbeteringen en prestaties die door de klant zijn aangevraagd, stabiliteit en verbeteringen op het gebied van beveiliging, die zijn uitgebracht sinds de algemene beschikbaarheid van de release van 6.5 in **april 2019**. Het bestand kan boven op Adobe Experience Manager (AEM) 6.5 worden geïnstalleerd.
+
+Enkele belangrijke functies en verbeteringen die zijn geïntroduceerd in AEM 6.5.4.0 zijn:
+
+* AEM Assets wordt nu geconfigureerd met Brand Portal via Adobe I/O Console.
+
+* Er is nu een nieuwe stap Afdrukbare uitvoer [](../forms/using/aem-forms-workflow-step-reference.md) genereren beschikbaar voor AEM Forms-workflows.
+
+* [Ondersteuning](../forms/using/resize-using-layout-mode.md) voor meerdere kolommen in de lay-outmodus voor adaptieve formulieren en interactieve communicatie.
+
+* Ondersteuning voor [RTF](../forms/using/designing-form-template.md) -bestanden in HTML5-formulieren.
+
+* [Verbeterde](new-features-latest-service-pack.md#accessibility-enhancements) toegankelijkheid in de middelen van Experience Manager.
+
+* De ingebouwde opslagplaats (Apache Jackrabbit Oak) wordt bijgewerkt naar versie 1.10.8.
+
+* U kunt selectieve inhoudsubstructuren nu synchroniseren met *Dynamische Media - wijze* Scene7 in plaats van alle beschikbare bij `content/dam`.
+
+* Integratie van formuliergegevensmodellen met SOAP-webservice ondersteunt nu keuzegroepen of kenmerken voor elementen.
+
+* De invoer of de output van de ZEEP en complexe gegevensstructuren steunen nu Dynamische Vervanging van de Groep.
+
+Voor een volledige lijst van eigenschappen, zeer belangrijke hoogtepunten, zeer belangrijke eigenschappen die in vorige AEM 6.5 de dienstpakken worden geïntroduceerd, zie [Nieuw in de Manager van de Ervaring van Adobe 6.5 Service Pack 4](new-features-latest-service-pack.md).
+
+### Sites {#sites-fixes}
+
+* Wanneer een URL van pagina&#39;s van AEM-sites een dubbele punt bevat ( : ) of percentagesymbool (%), de onderliggende browser stopt met reageren en CPU-cycli geven een punt aan (NPR-32369, NPR-31918).
+
+* Wanneer een pagina met AEM-sites wordt geopend voor bewerking en een component wordt gekopieerd, blijft de plakhandeling niet beschikbaar voor sommige plaatsaanduidingen (NPR-32317).
+
+* Wanneer de wizard Publicatie beheren wordt geopend, wordt een ervaringsfragment dat is gekoppeld aan een kerncomponent niet weergegeven in de lijsten met gepubliceerde referenties (NPR-32233).
+
+* Het overzicht van live kopieën in Touch UI duurt veel langer dan de klassieke interface die wordt weergegeven (NPR-32149).
+
+* Wanneer de server-tijd en machine-tijd in verschillende tijdzones zijn, toont de geplande publicatietijd servertijd in Touch UI, terwijl in Klassieke UI, machinetijd wordt getoond (NPR-32077).
+
+* AEM-sites kunnen geen pagina openen met een achtervoegsel in de URL (NPR-32072).
+
+* Wanneer een gebruiker een inhoudsfragment bewerkt, wordt een verwijderde variant van het inhoudsfragment hersteld (NPR-32062).
+
+* Gebruikers mogen een inhoudsfragment opslaan zonder informatie op te geven in de vereiste velden (NPR-31988).
+
+* kernel.js en ui.js worden niet vooraf in acht genomen of in cache geplaatst. Het leidt tot extra tijd bij het teruggeven van pagina&#39;s (NPR-31891).
+
+* Wanneer PageEventAuditListener wordt toegelaten, breidt de lengte van toe verbindt rij. Het beïnvloedt de prestaties van vele verrichtingen zoals bulkpublicaties, navigatie, bulkactivabeweging (NPR-31890).
+
+* Wanneer de Fragmenten van de Ervaring worden gesleept, wordt de hoge reactietijd waargenomen (NPR-31878).
+
+* Wanneer u de component van de Belemmering hier optie in ontvankelijke placeholder van het net selecteert, wordt een GET verzoek verzonden en het verzoek resulteert in HTTP 403 fout (NPR-31845).
+
+* Wanneer u de inhoud binnen dezelfde map verplaatst, is de optie Pagina verplaatsen uitgeschakeld (NPR-31840).
+
+* In de bewerkbare sjabloonstructuurmodus worden in de lijst met toegestane componenten in de lay-outcontainer onjuiste resultaten weergegeven. Alleen componenten met een dialoogvenster voor ontwerpen worden weergegeven in de lay-outcontainer (NPR-31816).
+
+* Wanneer een pagina alleen-lezen toestemmingen voor een gebruiker heeft, is de Open eigenschappen optie zichtbaar in sites.html maar niet in editor.html (NPR-31770).
+
+* Wanneer een gebruiker op de knop Maken klikt, is de pagina-optie niet beschikbaar (NPR-31756).
+
+* Kan de campagne in de Adobe-campagne niet synchroniseren met de ontwerpimportcomponent OOTB (Out of the box) (NPR-31728).
+
+* Wanneer u een lijst met opsommingstekens probeert te wijzigen in een genummerde lijst, worden alleen de eerste twee items van de lijst gewijzigd (NPR-31636).
+
+* Wanneer een pagina niet-geschreven is en het onderliggende knooppunt is geselecteerd, wordt in het dialoogvenster Selecteren nog steeds het eerste knooppunt weergegeven. Wanneer de pagina is geschreven en de gebruiker doorbladert, richt de pagina zich aan de wortelknoop in plaats van de authored knoop (NPR-31618).
+
+* Het dialoogvenster Weergaveconfiguratie werkt niet correct voor de workflowfunctie voor het aanpassen van postvakken (NPR-32503 en NPR-32492).
+
+* Er wordt een foutbericht weergegeven tijdens het weergeven van workflowinformatie met Inbox (CQ-4282168).
+
+### Assets {#assets-6540-enhancements}
+
+* De knop waarmee de workflow voor het verzamelen van elementen wordt geactiveerd, is uitgeschakeld (NPR-32471).
+
+* Een omslag zonder naam wordt gecreeerd in SPS (het Publiceren Scene7 Systeem) terwijl het bewegen van activa van één omslag aan een andere in de Manager van de Ervaring met Dynamische Configuratie Scene7 van Media (NPR-32440).
+
+* De handeling voor het verplaatsen van alle elementen (met de opdracht Alles selecteren en vervolgens verplaatsen) naar een map met gepubliceerde elementen mislukt bij fout (NPR-32366).
+
+* Het genereren van uitvoeringen voor elementen met ${extension} mislukt (NPR-32294).
+
+* URL&#39;s met versiegeschiedenis worden weergegeven onder Veld Verwijzing naar op de eigenschappenpagina voor elementen (NPR-31889).
+
+* ZIP-bestand dat is gedownload van DAM, kan niet worden geopend met WinZip (NPR-32293).
+
+* Oorspronkelijke machtigingen van een map worden bijgewerkt wanneer Mapinstellingen worden geopend om de maptitel of miniatuurafbeelding te wijzigen en vervolgens worden opgeslagen (NPR-32292).
+
+* Het kalenderpictogram voor activering dat is gepland, wordt niet weergegeven in de kolom Status (in de klassieke gebruikersinterface van de DAM-lijst met activa) voor elementen waarvan de activering voor een latere datum en tijd is gepland (NPR-32291).
+
+* Het maken van fragmenten met behulp van fragmentsjablonen geeft een fout op bij het zoeken naar verzamelingen tijdens het maken van fragmenten (NPR-32290).
+
+* Meerdere zoekquery&#39;s worden geactiveerd wanneer meerdere tags zijn geselecteerd met het zoekfilter (NPR-32143).
+
+* De interface van Experience Manager Assets geeft afgekapte bestandsnamen weer wanneer elementen met meer dan 50 tekens in de bestandsnaam zijn geüpload (NPR-32054).
+
+* Alle selectievakjes in het deelvenster Filter worden gewist wanneer het eerste en het tweede selectievakje worden gewist, terwijl niveau twee selectievakjes in de boomstructuur van het selectievakje in Adobe Stock zijn ingeschakeld (NPR-31919).
+
+* Bestanden en mapzoekopdrachten met Omnissearch-facetten geven uitzondering (NPR-31872).
+
+* Veldmarkering voor verplichte veldselectie in de metagegevenseditor wordt niet verwijderd, zelfs niet nadat het vereiste veld is geselecteerd, wanneer de afhankelijkheidsregels zijn ingesteld in het corresponderende metagegevensschema (NPR-31834).
+
+* Volledige namen van bladniveautags (uit de taghiërarchie) worden niet weergegeven op de pagina Eigenschappen van element (NPR-31820).
+
+* Het gebruik van de opdracht back van de pagina Eigenschappen van element op de Safari-browser geeft een fout (NPR-31753).
+
+* De resultatenpagina Touch UI-zoekopdracht (uitgevoerd via Omnissearch) wordt automatisch naar boven geschoven en verliest de schuifpositie van de gebruiker (NPR-31307).
+
+* De elementendetailpagina van PDF-elementen bevat geen actieknoppen, behalve de knoppen voor Verzameling en Vertoning toevoegen in Experience Manager die wordt uitgevoerd in de uitvoeringsmodus Dynamische media Scene7 (CQ-4286705).
+
+* De activa vergen te lang om door het partijuploadproces van Scene7 (CQ-4286445) te verwerken.
+
+* Met de knop Opslaan wordt de externe set niet geïmporteerd als de gebruiker geen wijzigingen heeft aangebracht in de Editor instellen in de Dynamic Media Client (CQ-4285690).
+
+* Miniatuur van 3D-middelen is niet informatief wanneer een ondersteund 3D-model wordt opgenomen in AEM (CQ-4283701).
+
+* De onverwerkte status van de voorinstelling van de viewer voor SmartCrop wordt twee keer weergegeven op de bannertekst naast de naam van de voorinstelling (CQ-4283517).
+
+* Onjuiste containerhoogte van een geüpload 3D-model, voorvertoond in 3D-viewer, wordt weergegeven op de detailpagina van het element (CQ-4283309).
+
+* De Carousel Editor wordt niet geopend in IE 11 in de modus Dynamische media hybride van Experience Manager (CQ-4255590).
+
+* De toetsenbordfocus blijft vastzitten in de vervolgkeuzelijst E-mail in het dialoogvenster Downloaden, in Chrome- en Safari-browsers (NPR-32067).
+
+* Het selectievakje Alle inhoud synchroniseren is niet standaard ingeschakeld wanneer wordt geprobeerd om een DM-cloud te configureren op AEM (CQ-4288533).
+
+### Foundation-UI {#foundation-ui-6540}
+
+* Bij het zoeken van elementen met het deelvenster Filter wordt de muiscontrole verplaatst naar het vorige filterveld in plaats van in het bestaande filterveld te blijven (NPR-32538).
+
+* Tags voor platforms: Als u tags zoekt door in de tagvelden te typen, worden tags buiten de hoofdgrenzen weergegeven en wordt de `rootPath` eigenschap van tagvelden niet gerespecteerd (NPR-31895).
+
+* Gebruikersinterface platform: Browseronderbrekingen van het pad als een ongeldig pad wordt toegevoegd in het tekstveld (NPR-31884).
+
+* Melding wordt verborgen achter een plakmenu op paginaselectie (NPR-31628).
+
+### Platform {#platform-sling-6540}
+
+* (HTL) Onderstrepingstekens vervangen dubbele punten in de padsectie van URL (NPR-32231).
+
+### Projecten {#projects-6540}
+
+* De knop Maken is niet zichtbaar voor de gebruiker, zelfs niet als de gebruiker toestemming heeft om een project te maken in de submap (NPR-31832).
+
+### Projectomzetting {#projects-translation-6540}
+
+* Wanneer de optie Snijruimten bijsnijden is geactiveerd in `Apache Sling JSP Script Handler` (NPR-32154), wordt de interface van het vertaalproject verbroken.
+
+* Fout in UI en Null-puntuitzondering in foutenlogboeken wordt waargenomen wanneer om het even welke te vertalen markering aan een vertaalproject (NPR-31896) wordt toegevoegd.
+
+### Integrations {#integrations-6540}
+
+* Het genereren van een URL-bibliotheek met opstarthandleidingen is alleen gebaseerd op `path` en `library_name` waarden van de opstartAPI en is niet gebaseerd op `library_path` waarde (NPR-31550).
+
+* Er wordt een foutbericht weergegeven tijdens het verwerken van aan LiveFyre gerelateerde items (FYR-12420).
+
+* ReportSuitesServlet is kwetsbaar voor SSRF (NPR-32156).
+
+### WCM-sjablooneditor {#wcm-template-editor-6540}
+
+* In de bewerkbare sjabloonstructuurmodus wordt de lijst met toegestane componenten in de lay-outcontainer niet weergegeven met de koppelingsknopcomponent (CQ-4282099).
+
+### WCM Pagina-editor {#wcm-page-editor-6540}
+
+* Er is een fout opgetreden bij het selecteren van een overlay en het selecteren van responsieve rastersleepcomponenten hier (CQ-4283342).
+
+### Campagne gericht {#campaign-targeting-6540}
+
+* De configuratie van de doelcloud mislukt als de fout get-boxes is mislukt (CQ-4279880).
+
+### Brand Portal {#assets-brand-portal-6540}
+
+* Gebruikers van Brand Portal kunnen geen middelen uit de bijdragemap publiceren naar AEM Assets bij de upgrade naar Adobe I/O op AEM 6.5.4 (CQDOC-15655).
+
+   Dit probleem wordt opgelost in het volgende servicepack AEM 6.5.5.
+
+   Voor directe correctie op AEM 6.5.4 wordt aangeraden de hotfix [te](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/hotfix/cq-6.5.0-hotfix-33041) downloaden en op de auteurinstantie te installeren.
+
+* Vervolgkeuzemenu voor het metagegevensschema zijn niet zichtbaar in de elementeigenschappen (CQ-4283287).
+
+* In het subschema Metagegevens worden geen tabbladen weergegeven die zijn gebaseerd op mimetype in eigenschappen van elementen (CQ-4283288).
+
+* Als u het schema voor metagegevens niet publiceert, wordt een foutbericht weergegeven, maar wordt het schema op de achtergrond verwijderd.
+
+* Voorvertoningsafbeelding wordt niet weergegeven voor een gepubliceerd element (CQ-4285886).
+
+* De gebruiker kan activa publiceren of unpublish die enig citaat in de naam bevatten (CQ-4272686).
+
+* De voorwaarden worden niet weergegeven tijdens het downloaden van meerdere middelen (CQ-4281224).
+
+* Kleine beveiligingskwetsbaarheden verholpen.
+
+### Gemeenschappen {#communities-6540}
+
+* Het formulier Lid maken wordt weergegeven als een lege pagina (NPR-31997).
+
+* De gebruiker kan het Analytics-rapport over de auteurinstantie (NPR-30913) niet bekijken.
+
+### eikenindexering en vragen {#oak-indexing-6540}
+
+* MS Word- en MS Excel-documenten met JPEG-afbeeldingen kunnen niet worden geparseerd en er is een fout opgetreden bij het parseren van een klasse die niet is gevonden (NPR-31952).
+
+### Formulieren {#forms-6540}
+
+>[!NOTE]
+>
+>AEM Service Pack bevat geen oplossingen voor AEM-formulieren. Ze worden geleverd met behulp van een apart Forms add-on pakket. Daarnaast wordt een cumulatief installatieprogramma uitgebracht dat oplossingen voor AEM Forms in JEE bevat. Zie [Invoegtoepassing](#install-aem-forms-add-on-package) van AEM-formulieren installeren en AEM-formulieren [installeren in JEE](#install-aem-forms-jee-installer)voor meer informatie.
+
+* Correspondentenbeheer: Letters geven extra tekens weer na verzending naar workflows voor postprocessen (NPR-32626).
+
+* Correspondentenbeheer: Bij letters wordt een tijdelijke aanduiding voor een vervolgkeuzelijst weergegeven als een tekstonderdeel na verzending naar workflows na verwerking (NPR-32539).
+
+* Correspondentenbeheer: De standaardwaarden die in de lettertypesjabloon worden gedefinieerd, worden niet weergegeven in de voorvertoningsmodus (NPR-32511).
+
+* Mobiele formulieren: De knop Verzenden wordt weergegeven als vergroot tijdens het renderen van een XDP-formulier in een HTML-versie (NPR-32514).
+
+* Documentservices: Problemen met URL-toegang voor Letters en enkele andere pagina&#39;s na toepassing van Service Pack 2 (NPR-32508, NPR-32509).
+
+* Documentservices: Als het aantal transacties op een server een specifieke limiet overschrijdt, mislukt de conversie van HTML naar PDF en worden de instellingen voor het bestandstype verwijderd van de AEM Forms-server (NPR-32204).
+
+* Adaptieve formulieren: Browser het hulpmiddel van de toegankelijkheid meldt mislukkingen in adaptieve vormen overeenkomstig de richtlijnen van niveau AA van WCAG2 (NPR-32312, NPR-32309, CQ-4285439).
+
+* Adaptieve formulieren: Het hulpmiddel van de de browser van Chrome rapporteert een beste praktijkmislukking (NPR-32310).
+
+* Adaptieve formulieren: Problemen met de omzetting tijdens het configureren van een adaptief formulier dat is ingesloten op een pagina met AEM-sites (NPR-32168).
+
+* Workbench: Er wordt een foutbericht weergegeven wanneer de bewerking PDF-eigenschappen ophalen voor de PDF Utilities-service (NPR-32150) wordt gebruikt.
+
+* Documentbeveiliging: Een beveiligd PDF-bestand kan niet offline worden geopend met de optie DisableGlobalOfflineSynchronizationData ingesteld op True (NPR-32078).
+
+* Designer: Als de coderingsoptie is ingeschakeld, verdwijnt de subformulierrand in de gegenereerde PDF-uitvoer (NPR-32547, NPR-31983, NPR-31950).
+
+* Designer: Als een tabel samengevoegde cellen bevat, mislukt de toegankelijkheidstest voor het PDF-uitvoerbestand dat is geconverteerd van een XDP-formulier met de uitvoerservice (CQ-4285372).
+
+* Foundation JEE: Als een AEM Forms-server is losgekoppeld van een cluster, wordt door cacheproblemen voorkomen dat deze opnieuw verbinding maakt met de server (NPR-32412).
+
+## Adobe Experience Manager 6.5.3.0 {#experience-manager-6530}
 
 [!DNL Adobe Experience Manager] 6.5.3.0 is een belangrijke release die prestatievermogen, stabiliteit, beveiliging en belangrijke correcties en verbeteringen voor klanten bevat die zijn vrijgegeven sinds de algemene beschikbaarheid van de 6.5-release in **april 2019**. Het kan bovenop [!DNL Adobe Experience Manager] 6.5 worden geïnstalleerd.
 
@@ -22,9 +261,9 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 
 * [!DNL Experience Manager Assets] ondersteunt nu ZIP-archieven die zijn gemaakt met het Deflate64-algoritme.
 
-* Een nieuwe kolom die de aanmaakdatum van elementen weergeeft, is beschikbaar wanneer u elementen weergeeft in DAM en in de zoekresultaten in de lijstweergave. Sorteer de kolom om elementen te rangschikken in chronologische of omgekeerde chronologische volgorde waarin ze zijn gemaakt.
+* Er is een nieuwe kolom voor de gemaakte datum toegevoegd aan de DAM-lijstweergave en de zoekresultaten voor elementen in de lijstweergave. Deze kolom kan worden gesorteerd.
 
-* U kunt nu elementen sorteren op basis van de `Name` kolom in de lijstweergave.
+* Asset sorting based on Name column is enabled in de mening van de Lijst.
 
 * [!DNL Dynamic Media] ondersteunt nu SmartCrop-video-elementen. Slim uitsnijden is een door computers aangedreven functie die een video bijsnijdt terwijl het frame wordt verplaatst om het brandpunt van de scène te volgen.
 
@@ -44,9 +283,9 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 
 * [!DNL Experience Manager Assets] ondersteunt nu ZIP-archieven die zijn gemaakt met het Deflate64-algoritme (NPR-27573).
 
-* Een nieuwe kolom die de aanmaakdatum van elementen weergeeft, is beschikbaar wanneer u elementen weergeeft in DAM en in de zoekresultaten in de lijstweergave. Sorteer de kolom om elementen te rangschikken in chronologische of omgekeerde chronologische volgorde waarin ze zijn gemaakt (NPR-31312).
+* Er is een nieuwe kolom voor de aanmaakdatum toegevoegd, die sorteerbaar is, in de DAM-lijstweergave en in de resultaten voor het zoeken naar middelen in de lijstweergave (NPR-31312).
 
-* U kunt nu elementen sorteren op basis van de `Name` kolom in de lijstweergave (NPR-31299).
+* Asset sorting based on Name column is allowed in List view (NPR-31299).
 
 * De GLB-, GLTF-, OBJ- en STL-elementbestanden ondersteunen voorvertoning van elementen op de pagina Asset Details in DAM (CQ-4282277).
 
@@ -59,8 +298,6 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 * De onderzoek/doorbladermening is geplaatst als standaardmening in de plukker van de Stichting als de vraagparameters in verzoek worden overgegaan (NPR-31601).
 
 **Oplossingen**
-
-* OAuth IMS-provider kan geen verbinding maken via een proxyserver wanneer Adobe Asset Link (NPR-30949) wordt gebruikt.
 
 * Metagegevens voor sommige PDF-documenten worden niet bijgewerkt en naar de PDF opgeslagen bij het wijzigen van de titel (NPR-31629).
 
@@ -82,19 +319,19 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 
 * Elementen met het plusteken (+) in de bestandsnaam kunnen niet worden verwijderd (NPR-31162).
 
-* Een optie voor het maken van nieuwe elementen of mappen is beschikbaar als pop-upmenu in de gebruikersinterface Elementen. Als een map is geselecteerd, wordt Experience Manager niet weergegeven [!UICONTROL Folder] als een van de opties in het pop-upmenu (NPR-30877).
+* Het keuzemenu Maken, dat in het bovenste menu zichtbaar is wanneer u een map selecteert, geeft &#39;Map&#39; niet weer als een optie voor maken (NPR-30877).
 
-* Mapselectie Maken > Handelitem FileUpload ontbreekt wanneer ACL voor Weigeren `jcr:removeChildNodes` en `jcr:removeNode` op pad wordt toegepast voor een gebruiker (NPR-30840).
+* Mapselectie Maken > Handelitem FileUpload ontbreekt wanneer ACL voor Deny jcr:removeChildNodes en jcr:removeNode op pad wordt toegepast voor een gebruiker (NPR-30840).
 
-* De DAM-workflows worden in de status &#39;stale&#39; wanneer bepaalde MP4-middelen worden geüpload, waardoor alle resterende workflows in de status &#39;stale&#39; gaan (NPR-30662).
+* De DAM-workflows worden in de status &#39;stale&#39; gezet wanneer bepaalde MP4-middelen worden geüpload, waardoor alle resterende workflows in de status &#39;stale&#39; gaan (NPR-30662).
 
-* Er is een fout in het geheugen opgetreden wanneer een groot PDF-bestand met meerdere gigabytes naar DAM wordt geüpload en de bijbehorende submiddelen worden verwerkt (NPR-30614).
+* Er is een fout ten gevolge van onvoldoende geheugen opgetreden wanneer grote PDF-bestanden (met meerdere gigabytes) naar DAM worden geüpload en de bijbehorende subbestanden worden verwerkt (NPR-30614).
 
 * Bulkverplaatsing van activa mislukt en geeft een waarschuwingsbericht weer (NPR-30610).
 
-* De namen van activa worden veranderd in kleine letters wanneer het bewegen van activa van één omslag aan een andere wanneer het werken [!DNL Dynamic Media]-wijze Scene7 (NPR-31630).
+* De namen van activa worden veranderd in kleine letters wanneer het bewegen van activa van één omslag aan een andere in [!DNL Experience Manager] lopen in wijze [!DNL Dynamic Media]-Scene7 (NPR-31630).
 
-* Er wordt een fout waargenomen tijdens het bewerken van een externe imageset, voor de afbeelding die zich bevindt in de map met de naam van het Scene7-bedrijf (NPR-31340).
+* Er is een fout opgetreden tijdens het bewerken van een externe imageset voor de afbeelding die zich in de map met dezelfde naam bevindt als de bedrijfsnaam van Scene 7 (NPR-31340).
 
 * [!DNL Dynamic Media] activa met referenties worden niet gepubliceerd (NPR-31180).
 
@@ -203,7 +440,7 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 
 * Schakelen tussen kalenderweergaven werkt niet (NPR-31271).
 
-### Brand Portal {#assets-brand-portal}
+### Brand Portal {#assets-brand-portal-6530}
 
 **Verbeteringen voor producten**
 
@@ -217,7 +454,7 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 * Het is niet toegestaan om een Contribute-map te maken in een map met bijdragen (geneste map) om complexiteit te voorkomen (CQ-4278391).
 * Het systeem genereert een uitzondering bij het uploaden van de [!DNL Brand Portal] gebruikerslijst (.csv-bestand) die is geïmporteerd uit [!DNL Experience Manager] Admin Console. Alleen de velden E-mail, Voornaam en Achternaam in het CSV-bestand zijn verplicht (CQ-4278390).
 
-### Gemeenschappen {#communities}
+### Gemeenschappen {#communities-6530}
 
 **Oplossingen**
 
@@ -286,7 +523,7 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 
 * [!DNL Experience Manager] Formulierondersteuning voor Oracle 18c (NPR-29155).
 
-## Adobe Experience Manager 6.5.2.0
+## Adobe Experience Manager 6.5.2.0 {#experience-manager-6520}
 
 [!DNL Adobe Experience Manager] 6.5.2.0 is een belangrijke release die prestatievermogen, stabiliteit, beveiliging en belangrijke correcties en verbeteringen voor klanten bevat die zijn geïntroduceerd sinds de algemene beschikbaarheid van [!DNL Adobe Experience Manager] 6.5 in **april 2019**. Het kan bovenop [!DNL Experience Manager] 6.5 worden geïnstalleerd.
 
@@ -487,7 +724,7 @@ De belangrijkste markeringen voor [!DNL Experience Manager] 6.5.2.0 vormen zijn:
 
 * Instelling Automatisch toegevoegd aan `RenderAtClient` de API voor `PDFFormRenderOptions` [!DNL Experience Manager Forms] OSGi. NPR-30759: Hotfix voor CQ-4278193
 
-## Adobe Experience Manager 6.5.1.0 {#release-6510}
+## Adobe Experience Manager 6.5.1.0 {#experience-manager-6510}
 
 [!DNL Adobe Experience Manager] 6.5.1.0 is een belangrijke release die prestatievermogen, stabiliteit, beveiliging en belangrijke correcties en verbeteringen voor klanten bevat die zijn geïntroduceerd sinds de algemene beschikbaarheid van [!DNL Adobe Experience Manager] 6.5 in *april 2019.* Het kan bovenop [!DNL Experience Manager] 6.5 worden geïnstalleerd.
 

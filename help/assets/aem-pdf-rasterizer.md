@@ -3,7 +3,7 @@ title: Gebruik PDF-rasterfunctie om uitvoeringen van PDF-bestanden te genereren.
 description: Genereer miniaturen en uitvoeringen van hoge kwaliteit met de Adobe PDF Rasterizer-bibliotheek in [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b2628d37c3ad158913c28ecd890aee9fd0106de4
+source-git-commit: 21f30cf67b73d26afc3f0413ca997a0b6e46e3d3
 workflow-type: tm+mt
 source-wordcount: '698'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Wanneer u grote, inhoudintensieve PDF- of AI-bestanden uploadt naar [!DNL Adobe 
 
 Miniaturen en voorvertoningen die worden gegenereerd met PDF Rasterizer, zijn beter in kwaliteit dan uitvoer in de buitenverpakking en bieden daarom een consistente kijkervaring op verschillende apparaten. De Adobe PDF Rasterizer-bibliotheek ondersteunt geen kleurruimteconversies. De uitvoer wordt altijd naar RGB uitgevoerd, ongeacht de kleurruimte van het bronbestand.
 
-1. Installeer het PDF-rasterpakket op uw [!DNL Experience Manager] implementatie via [Pakketdelen](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg) of [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg)
+1. Installeer het PDF-rasterpakket op uw [!DNL Experience Manager] implementatie via [Pakketdeling](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg) of [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg).
 
    >[!NOTE]
    >

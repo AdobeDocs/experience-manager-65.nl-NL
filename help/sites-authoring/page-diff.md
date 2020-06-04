@@ -1,6 +1,6 @@
 ---
-title: Pagina grijs
-seo-title: Pagina grijs
+title: Page Diff-optie
+seo-title: Page Diff-optie
 description: Met de functie Pagina's diff kunt u twee pagina's naast elkaar vergelijken met de gemarkeerde verschillen.
 seo-description: Met de functie Pagina's diff kunt u twee pagina's naast elkaar vergelijken met de gemarkeerde verschillen.
 uuid: 5af8b466-5922-4fe6-9eae-7bad99be23e0
@@ -11,12 +11,15 @@ topic-tags: site-features
 discoiquuid: 8386a16a-9d47-46d5-bc60-5f290c59e60e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+source-git-commit: eb9a4792f4d64f98805919f00bb62193a6a7dafc
+workflow-type: tm+mt
+source-wordcount: '664'
+ht-degree: 1%
 
 ---
 
 
-# Pagina grijs{#page-diff}
+# Page Diff-optie{#page-diff}
 
 ## Inleiding {#introduction}
 
@@ -24,9 +27,7 @@ Het maken van inhoud is een herhalend proces. Om efficiënt te kunnen ontwerpen 
 
 Met de functie Pagina&#39;s diff kunt u twee pagina&#39;s naast elkaar vergelijken met de gemarkeerde verschillen.
 
->[!CAUTION]
->
->De gebruiker moet over de machtiging **Wijzigen/Maken/Verwijderen** op het knooppunt beschikken `/content/versionhistory` om de functie te kunnen gebruiken.
+>[!TIP]
 >
 >Zie [Developing and Page Diff](/help/sites-developing/pagediff.md#operation-details) voor meer technische details over deze functie.
 

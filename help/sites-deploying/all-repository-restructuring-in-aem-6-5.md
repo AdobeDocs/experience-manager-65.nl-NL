@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 80bd707f-c02d-4616-9b45-90f6c726abea
 translation-type: tm+mt
-source-git-commit: d20ddba254c965e1b0c0fc84a482b7e89d4df5cb
+source-git-commit: 6396660b642fd78ac7f311fa416efe0e0d52a9e3
+workflow-type: tm+mt
+source-wordcount: '2721'
+ht-degree: 1%
 
 ---
 
@@ -21,6 +24,7 @@ Zoals beschreven op de pagina &quot;parent [Repository Herstructurering&quot; in
 
 **Met 6,5-upgrade**
 
+* [ContextHub-configuraties](#contexthub-6.5)
 * [Workflowinstanties](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-instances)
 * [Workflowmodellen](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-models)
 * [Workflowstartprogramma&#39;s](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-launchers)
@@ -40,7 +44,7 @@ Zoals beschreven op de pagina &quot;parent [Repository Herstructurering&quot; in
 * [AEM-projecten dashboard Gadget-configuraties](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#aem-projects-dashboard-gadget-configurations)
 * [E-mailsjabloon voor replicatiemelding](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#replication-notification-e-mail-template)
 * [Tags](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#tags)
-* [Cloudservices voor vertaling](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-cloud-services)
+* [Cloud Services voor vertalingen](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-cloud-services)
 * [Talen voor vertaling](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-languages)
 * [Vertaalregels](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-rules)
 * [Widget-clientbibliotheek voor vertaling](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-widget-client-library)
@@ -49,6 +53,21 @@ Zoals beschreven op de pagina &quot;parent [Repository Herstructurering&quot; in
 * [E-mailsjablonen voor workflowmeldingen](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-notification-email-templates)
 
 ## Met 6,5-upgrade {#with-upgrade}
+
+### ContextHub-configuraties {#contexthub-6.5}
+
+Vanaf AEM 6.4, is er geen standaardconfiguratie ContextHub. Daarom op het wortelniveau van de plaats `cq:contextHubPathproperty` zou a moeten worden geplaatst om op te wijzen welke configuratie zou moeten worden gebruikt.
+
+1. Navigeer naar de hoofdmap van de site.
+1. Open de pagina-eigenschappen van de basispagina en selecteer het tabblad Aanpassing.
+1. Op het gebied van de Weg Contexthub ga uw eigen ContextHub configuratiepad in.
+
+Bovendien op de configuratie ContextHub, `sling:resourceType` moet het worden bijgewerkt om relatief en niet absoluut te zijn.
+
+1. Open de eigenschappen van de ContextHub configuratieknooppunt in CRX DE Lite, bijvoorbeeld `/apps/settings/cloudsettings/legacy/contexthub`
+1. Wijzigen `sling:resourceType` van `/libs/granite/contexthub/cloudsettings/components/baseconfiguration` in `granite/contexthub/cloudsettings/components/baseconfiguration`
+
+D.w.z. de `sling:resourceType` configuratie ContextHub moet relatief eerder dan absoluut zijn.
 
 ### Workflowmodellen {#workflow-models}
 
@@ -241,7 +260,7 @@ Zoals beschreven op de pagina &quot;parent [Repository Herstructurering&quot; in
      <li>Verwijzingen naar de vorige locatie bijwerken in het <span class="code"><code>
         cq
        </code>dialoogvenster:
-      <code>
+       <code>
         designPath
        </code></span> eigenschap.</li>
      <li>Werk pagina's bij die naar de vorige locatie verwijzen om de nieuwe categorie Clientbibliotheek te kunnen gebruiken (hiervoor moet de code voor de implementatie van de pagina worden bijgewerkt).</li>
@@ -567,7 +586,7 @@ Zoals beschreven op de pagina &quot;parent [Repository Herstructurering&quot; in
  </tbody>
 </table>
 
-### Cloudservices voor vertaling {#translation-cloud-services}
+### Cloud Services voor vertalingen {#translation-cloud-services}
 
 <table>
  <tbody>

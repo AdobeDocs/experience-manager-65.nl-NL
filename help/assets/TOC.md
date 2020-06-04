@@ -4,10 +4,10 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: Gebruikershandleiding voor Experience Manager 6.5-middelen
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 29f2679ffd388893e876d79a4fe50e9761e14f31
 workflow-type: tm+mt
-source-wordcount: '643'
-ht-degree: 38%
+source-wordcount: '646'
+ht-degree: 37%
 
 ---
 
@@ -52,6 +52,7 @@ ht-degree: 38%
    + [HTTP2-levering van content](http2.md)
    + [Dynamic Media-assets leveren](delivering-dynamic-media-assets.md)
    + [Hotlinkbeveiliging in Dynamic Media activeren](hotlink-protection.md)
+   + [Dimensionele 3D-afbeeldingen](assets-3d.md)
    + [Image Sets](image-sets.md)
    + [Panoramische afbeeldingen](panoramic-images.md)
    + [Mixed Media Sets](mixed-media-sets.md)

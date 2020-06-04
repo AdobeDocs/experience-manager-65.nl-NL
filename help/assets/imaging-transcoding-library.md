@@ -3,9 +3,9 @@ title: Afbeeldingstransformatiebibliotheek
 description: Leer hoe u de Imaging Transcoding Library van Adobe configureert en gebruikt, een oplossing voor beeldverwerking die kernfuncties voor het verwerken van afbeeldingen kan uitvoeren, zoals codering, transcodering, het resamplen van afbeeldingen en het vergroten of verkleinen van afbeeldingen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: b2628d37c3ad158913c28ecd890aee9fd0106de4
 workflow-type: tm+mt
-source-wordcount: '942'
+source-wordcount: '971'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ Om ITL verwerking te vormen, creeer een configuratiedossier en werk het werksche
 
 Als u de bibliotheek wilt configureren, maakt u een .conf-bestand om de bibliotheken aan te geven met de volgende stappen. U hebt beheerder- of basismachtigingen nodig.
 
-1. Download het [pakket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) Imaging Transcoding Library en installeer het met de Package Manager. Het pakket is compatibel met Experience Manager 6.5.
+1. Download het pakket [Imaging Transcoding Library van Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) of van [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) en installeer het met de Package Manager. Het pakket is compatibel met Experience Manager 6.5.
 
 1. Meld u aan bij de webconsole en klik op een bundel-id voor `com.day.cq.dam.cq-dam-switchengine`**[!UICONTROL OSGi > Bundles]**. U kunt ook de `https://[aem_server:[port]/system/console/bundles/` URL openen om de bundelconsole te openen. Zoek `com.day.cq.dam.cq-dam-switchengine` bundel en id.
 

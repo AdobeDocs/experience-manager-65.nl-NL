@@ -3,9 +3,9 @@ title: Gebruik PDF-rasterfunctie om uitvoeringen van PDF-bestanden te genereren.
 description: Genereer miniaturen en uitvoeringen van hoge kwaliteit met de Adobe PDF Rasterizer-bibliotheek in [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
+source-git-commit: b2628d37c3ad158913c28ecd890aee9fd0106de4
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '698'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Wanneer u grote, inhoudintensieve PDF- of AI-bestanden uploadt naar [!DNL Adobe 
 
 Miniaturen en voorvertoningen die worden gegenereerd met PDF Rasterizer, zijn beter in kwaliteit dan uitvoer in de buitenverpakking en bieden daarom een consistente kijkervaring op verschillende apparaten. De Adobe PDF Rasterizer-bibliotheek ondersteunt geen kleurruimteconversies. De uitvoer wordt altijd naar RGB uitgevoerd, ongeacht de kleurruimte van het bronbestand.
 
-1. Installeer het PDF Rasterizer-pakket op uw [!DNL Experience Manager] implementatie via [Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg).
+1. Installeer het PDF-rasterpakket op uw [!DNL Experience Manager] implementatie via [Pakketdelen](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg) of [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg)
 
    >[!NOTE]
    >
@@ -31,7 +31,7 @@ Miniaturen en voorvertoningen die worden gegenereerd met PDF Rasterizer, zijn be
 
 1. Voer de volgende stappen uit om te voorkomen dat de standaardmethoden worden gebruikt voor het genereren van miniaturen en webvertoningen voor PDF- en AI-bestanden:
 
-   * Open de **[!UICONTROL Process Thumbnails]** stap en voeg `application/pdf` of voeg desgewenst `application/postscript` toe in het **[!UICONTROL Skip Mime Types]** veld onder het **[!UICONTROL Thumbnails]** tabblad.
+   * Open de **[!UICONTROL Process Thumbnails]** stap en voeg `application/pdf` of voeg desgewenst in het `application/postscript` veld onder het **[!UICONTROL Skip Mime Types]** **[!UICONTROL Thumbnails]** tabblad toe.
    ![skip_mime_types-2](assets/skip_mime_types-2.png)
 
    * Voeg op het **[!UICONTROL Web Enabled Image]** tabblad naar wens toe `application/pdf` of `application/postscript` onder **[!UICONTROL Skip List]** .

@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 2f0e626aa16a62203755e29800a5935b350ffe79
+source-git-commit: d17500ea7b95c90069d9c51fac5d4f3706ee4c71
 workflow-type: tm+mt
-source-wordcount: '2097'
+source-wordcount: '2071'
 ht-degree: 1%
 
 ---
@@ -20,11 +20,11 @@ ht-degree: 1%
 
 Met dynamische media kunt u 3D-elementen uploaden, beheren, weergeven en leveren als indrukwekkende ervaringen.
 
-* U kunt met één klik (op de werkbalk) 3D-afbeeldingen publiceren om de URL te genereren. **[!UICONTROL Quick Publish]**
-* Geoptimaliseerde ondersteuning voor het weergeven van 3D-middelen met de voorinstelling voor interactieve maatviewer van hoge kwaliteit, aangedreven door Adobe Dimension. De voorinstelling voor de viewer bevat onder andere een verzameling interactieve besturingselementen voor camera waarmee u kunt draaien, zoomen en pannen.
+* Klik met één klik op het publiceren (met gebruik **[!UICONTROL Quick Publish]** van de werkbalk) van 3D-elementen om een URL te genereren.
+* Geoptimaliseerde ondersteuning voor het weergeven van 3D-middelen met de voorinstelling voor interactieve maatviewer van hoge kwaliteit, aangedreven door Adobe Dimension.
 * Met de 3D Media WCM-component kunt u eenvoudig 3D-elementen toevoegen aan uw AEM-sitepagina&#39;s.
 
-Er is geen installatie of configuratie van welke aard dan ook om 3D-elementen in Dynamic Media te gebruiken.
+Er is geen aanvullende configuratie vereist voor het gebruik van 3D-elementen in dynamische media.
 
 ![schoen in 3d](/help/assets/assets-dm/3d-dimensional-viewer-quickpublish-url-embed2.png)
 
@@ -36,10 +36,10 @@ Dynamische media ondersteunt de volgende 3D-bestandsindelingen:
 
 | 3D-bestandsextensie | Bestandsindeling | MIME-type | Opmerkingen |
 |---|---|---|---|
-| GLB | Binaire GL-transmissie | model/gltf-binair | De structuren worden met het element opgenomen in plaats van ernaar te verwijzen als externe afbeeldingen. |
+| GLB | Binaire GL-transmissie | model/gltf-binair | Hiermee neemt u de materialen en structuren op als één enkel element. |
 | OBJ | WaveFront 3D-objectbestand | application/x-tgif |  |
 | STL | Stereolithografie | application/vnd.ms-pki.stl |  |
-| USDZ | Universal Scene Description Zip-archief | model/vnd.usdz+zip | *Alleen ondersteuning voor inname; er is geen weergave of interactie beschikbaar.* USDZ is de eigen 3D-indeling van Apple die alleen door Safari of iOS kan worden weergegeven. |
+| USDZ | Universal Scene Description Zip-archief | model/vnd.usdz+zip | *Alleen ondersteuning voor inname; er is geen weergave of interactie beschikbaar.* USDZ is een eigen 3D-indeling die door Safari- en iOS-apparaten kan worden weergegeven. |
 
 ## Snel starten: 3D-elementen in dynamische media {#quick-start-three-d}
 

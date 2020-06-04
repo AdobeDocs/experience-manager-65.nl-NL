@@ -3,9 +3,9 @@ title: 'Metagegevensschema''s om de indeling van de pagina met eigenschappen van
 description: Het metagegevensschema definieert de indeling van de pagina met eigenschappen en de eigenschappen van metagegevens die voor elementen worden weergegeven. Leer hoe u een aangepast metagegevensschema kunt maken, het schema voor metagegevens kunt bewerken en hoe u het schema voor metagegevens op elementen kunt toepassen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 8490b81242ee284208d0f7fd90797f411e2b99b2
 workflow-type: tm+mt
-source-wordcount: '2522'
+source-wordcount: '2570'
 ht-degree: 4%
 
 ---
@@ -119,7 +119,7 @@ Hier volgen de geldige waarden voor deze eigenschap:
 
 * `./jcr:content/metadata/dc:title`: Hiermee wordt de waarde in het metadataknooppunt van de asset opgeslagen als de eigenschap `dc:title`.
 
-* `./jcr:created`: Geeft de JCR-eigenschap weer op het knooppunt van het element. Als u deze eigenschappen configureert, kunt u deze het beste markeren als Uitschakelen, Bewerken. De eigenschappen zijn beveiligd. Anders [!UICONTROL Asset(s) failed to modify] resulteert de fout wanneer u de eigenschappen van het element opslaat.
+* `./jcr:created`: Geeft de JCR-eigenschap weer op het knooppunt van het element. Als u deze eigenschappen configureert, raadt Adobe u aan deze als Uitschakelen te markeren en geen datumveld te binden aan `./jcr:created`. Het is een beschermde eigenschap. Wanneer DAM-gebruikers middelen proberen bij te werken, treedt de fout op [!UICONTROL Asset(s) failed to modify]. Als u besluit een datumveld toe te wijzen aan deze JCR-eigenschap, gebruikt u het standaardschema. Kopieer het door Adobe geleverde standaardmetagegevensschema en wijzig dit schema, aangezien het datumveld in het standaardschema is toegewezen aan `./jcr:created`.
 
 Om ervoor te zorgen dat de component correct in de vorm van het meta-gegevensschema wordt getoond, zou de bezitspad geen ruimten moeten omvatten.
 

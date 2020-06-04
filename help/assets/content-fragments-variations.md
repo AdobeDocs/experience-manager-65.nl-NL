@@ -1,6 +1,6 @@
 ---
-title: Variaties - Fragmentinhoud ontwerpen
-seo-title: Variaties - Fragmentinhoud ontwerpen
+title: Variaties - Authoring van content voor fragmenten
+seo-title: Variaties - Authoring van content voor fragmenten
 description: Met behulp van variaties kunt u inhoud voor het fragment ontwerpen en vervolgens variaties van die inhoud maken op basis van het doel (indien nodig).
 seo-description: Met behulp van variaties kunt u inhoud voor het fragment ontwerpen en vervolgens variaties van die inhoud maken op basis van het doel (indien nodig).
 uuid: 0844f271-79bc-4f76-8031-d388b81d6feb
@@ -11,12 +11,15 @@ content-type: reference
 discoiquuid: 324df1da-78fa-460f-a744-3504259f1d4a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9d5fa8b85f6724097e34edd66745e0daf95d66cc
+source-git-commit: b2628d37c3ad158913c28ecd890aee9fd0106de4
+workflow-type: tm+mt
+source-wordcount: '1827'
+ht-degree: 14%
 
 ---
 
 
-# Variaties - Fragmentinhoud ontwerpen{#variations-authoring-fragment-content}
+# Variaties - Authoring van content voor fragmenten{#variations-authoring-fragment-content}
 
 [Variaties](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) zijn een belangrijk kenmerk van inhoudsfragmenten, omdat u hiermee kopieën van de basisinhoud kunt maken en bewerken voor gebruik op specifieke kanalen en/of scenario&#39;s.
 
@@ -134,7 +137,7 @@ Met platte tekst kunt u snel inhoud invoeren zonder opmaak- of markeringsgegeven
 
 >[!CAUTION]
 >
->Als u **Onbewerkte tekst** selecteert, gaan opmaak, markeringen en/of elementen verloren die u hebt ingevoegd in **RTF** of **Markering**.
+>Als u **Tekst zonder opmaak** selecteert, gaan opmaak, markdown en/of assets die u hebt ingevoegd in **Tekst met opmaak** of **Markdown** verloren.
 
 ### Markering {#markdown}
 
@@ -158,11 +161,11 @@ U kunt de volledige-schermredacteur voor verdere [acties](#actions)ook openen.
 
 >[!CAUTION]
 >
->Als u tussen **RTF** en **Markering** schakelt, kunt u onverwachte gevolgen met de Aanhalingstekens van het Blok en de Blokken van de Code ervaren, aangezien deze twee formaten verschillen in hoe zij worden behandeld kunnen hebben.
+>Als u tussen **Tekst met opmaak** en **Markdown** schakelt, kunt u onverwachte effecten met Blokcitaten en Codeblokken ervaren, aangezien deze twee opmaakindelingen verschillen in hoe zij worden behandeld.
 
 ### Belangrijkste statistieken weergeven {#viewing-key-statistics}
 
-Wanneer de volledige het schermredacteur open is, zal de actie de Statistieken **van de** Tekst een waaier van informatie over de tekst tonen. Bijvoorbeeld:
+Wanneer de volledige-schermeditor open is, zal de actie **Tekststatistieken** allerlei informatie over de tekst tonen. Bijvoorbeeld:
 
 ![cfx-6420-22](assets/cfx-6420-22.png)
 
@@ -190,12 +193,12 @@ Samenvattende tekst is ontworpen om gebruikers te helpen de lengte van hun tekst
 >
 >Engels is beschikbaar buiten de box.
 >
->Andere talen zijn beschikbaar als Pakketten van het Model van de Taal van het Aandeel van het Pakket:
+>Andere talen zijn beschikbaar als Pakketten van het Model van de Taal van het Aandeel van het Pakket of de Distributie van de Software:
 >
->* [Frans (fr)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-fr)
->* [Duits (de)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-de)
->* [Italiaans (it)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-it)
->* [Spaans (es)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-es)
+>* [Frans (fr) van Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-fr) of [Frans (fr) van Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
+>* [Duits (de) van het Aandeel](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-de) van het Pakket of [Duits (de) van de Distributie van de Software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
+>* [Italiaans (it) van Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-it) of [Italiaans (it) van Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
+>* [Spaans (es) van Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-es) of [Spaans (es) van Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
 >
 
 
@@ -266,7 +269,7 @@ Ze worden zonder opmaak toegevoegd aan de alineasequentie van het fragment. U ku
 >Er zijn verschillende methoden om [afbeeldingen](/help/assets/content-fragments.md#fragments-with-visual-assets) toe te voegen aan het fragment en/of de pagina.
 
 1. Plaats de cursor op de positie waar u de afbeelding wilt toevoegen.
-1. Gebruik het pictogram Element **** invoegen om het zoekdialoogvenster te openen.
+1. Gebruik het pictogram **Asset invoegen** om het zoekdialoogvenster te openen.
 
    ![cf-insert-asset-icon](assets/cf-insertasset-icon.png)
 
@@ -276,14 +279,14 @@ Ze worden zonder opmaak toegevoegd aan de alineasequentie van het fragment. U ku
    * zoeken naar de middelen in DAM
    Selecteer het gewenste element door op de miniatuur te klikken.
 
-1. Gebruik **Selecteren** om het element op de huidige locatie toe te voegen aan het alineasysteem van het inhoudsfragment.
+1. Gebruik **Selecteren** om de asset op de huidige locatie toe te voegen aan het alineasysteem van het contentfragment.
 
    >[!CAUTION]
    >
-   >Als u na het toevoegen van een element de indeling wijzigt in:
+   >Als u na het toevoegen van een asset de indeling wijzigt in:
    >
-   >* **Onbewerkte tekst**: het element wordt volledig uit het fragment verwijderd.
-   >* **Markering**: het element is niet zichtbaar, maar blijft aanwezig wanneer u terugkeert naar **RTF**.
+   >* **Tekst zonder opmaak**: wordt de asset volledig uit het fragment verwijderd.
+   >* **Markdown**: is de asset niet zichtbaar, maar blijft deze aanwezig wanneer u terugkeert naar **Tekst met opmaak**.
 
 
 ## Variaties beheren {#managing-variations}
@@ -297,8 +300,8 @@ Een nieuwe variatie maken:
 1. Open het fragment en controleer of het zijpaneel zichtbaar is.
 1. Selecteer **Variaties** in de pictogrambalk in het zijpaneel.
 1. Selecteer Variatie **maken**.
-1. Er wordt een dialoogvenster geopend waarin u de **titel** en de **beschrijving** voor de nieuwe wijziging kunt opgeven.
-1. Selecteer **Toevoegen**. De **fragmentstramien** wordt gekopieerd naar de nieuwe variant, die nu is geopend voor [bewerking](#editing-a-variation).
+1. Er wordt een dialoogvenster geopend waarin u de **titel** en de **beschrijving** voor de nieuwe variatie kunt opgeven.
+1. Selecteer **Toevoegen**. De **fragmentmaster** wordt gekopieerd naar de nieuwe variatie, die nu kan worden [bewerkt](#editing-a-variation).
 
    >[!NOTE]
    >
@@ -317,7 +320,7 @@ U kunt wijzigingen aanbrengen in de inhoud van de variatie nadat:
 
 Een bestaande variatie een andere naam geven:
 
-1. Open het fragment en selecteer **Variaties** in het zijpaneel.
+1. Open your fragment and select **Variations** from the side panel.
 1. Selecteer de gewenste variatie.
 1. Selecteer **Naam wijzigen** in het keuzemenu **Handelingen** .
 
@@ -333,7 +336,7 @@ Een bestaande variatie een andere naam geven:
 
 Een bestaande wijziging verwijderen:
 
-1. Open het fragment en selecteer **Variaties** in het zijpaneel.
+1. Open your fragment and select **Variations** from the side panel.
 1. Selecteer de gewenste variatie.
 1. Selecteer **Verwijderen** in het keuzemenu **Handelingen** .
 
@@ -351,13 +354,13 @@ Wanneer u een variatie bewerkt, hebt u toegang tot de handeling voor het synchro
 
 >[!CAUTION]
 >
->De synchronisatie is alleen beschikbaar om wijzigingen *van **Stramien**naar variatie* te kopiëren.
+>De synchronisatie is alleen beschikbaar om wijzigingen *van **Master**naar de variatie* te kopiëren.
 >
 >Alleen het huidige element van de variatie wordt gesynchroniseerd.
 >
->Synchronisatie werkt alleen op het gegevenstype **Meerdere regels** .
+>Synchronisatie werkt alleen op het datatype **Tekst met meerdere regels**.
 >
->Het overbrengen van wijzigingen *van een variatie naar **stramien ***is niet beschikbaar als optie.
+>Het overbrengen van wijzigingen *van een variatie naar **master ***is niet beschikbaar als optie.
 
 1. Open het inhoudsfragment in de fragmenteditor. Zorg ervoor dat het **stramien** is bewerkt.
 1. Selecteer een specifieke variant en kies vervolgens de gewenste synchronisatiehandeling uit:

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 21181a6f-b434-40ed-8eb1-ebdfc98964dd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 206f4cdf76df2b0be97426993818935a19bb9e63
+source-git-commit: b68dd6c48d03e233265a2c93e61c0aeb768fa408
 workflow-type: tm+mt
-source-wordcount: '3010'
+source-wordcount: '2979'
 ht-degree: 3%
 
 ---
@@ -88,10 +88,6 @@ Het navigatievenster biedt toegang tot de AEM-consoles:
 ![bh-01](assets/bh-01.png)
 
 De titel van het browsertabblad wordt aangepast aan uw locatie wanneer u door de consoles en inhoud navigeert.
-
->[!NOTE]
->
->De tabtitel geeft de locatie weer vanaf [AEM 6.5 Service Pack 5](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html) .
 
 Vanuit Navigatie zijn de beschikbare consoles:
 
@@ -233,10 +229,6 @@ De koptekst staat altijd boven aan het scherm. Hoewel de meeste opties in de kop
    In de **Sites** -console is er de extra optie voor **Overslaan naar hoofdinhoud**. Dit wordt zichtbaar aangezien u door de kopbalopties *lusje* , en uw navigatie versnelt door u toe te staan om de standaardelementen in de (product) toolbar over te slaan en u rechtstreeks aan de belangrijkste inhoud te nemen.
 
    ![bh-30](assets/bh-30.png)
-
-   >[!NOTE]
-   >
-   >De optie **Overslaan naar hoofdinhoud** is beschikbaar vanaf [AEM 6.5 Service Pack 5](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html) .
 
 ## Toegang tot Help {#accessing-help}
 

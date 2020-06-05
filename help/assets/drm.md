@@ -3,9 +3,9 @@ title: Digital Rights Management in [!DNL Adobe Experience Manager Assets].
 description: Leer hoe u in [!DNL Experience Manager] de status en informatie voor gelicentieerde middelen beheert.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 20f337ea2e4f369eb6eb760d312199fa39556513
+source-git-commit: ee54a3fa395e2c1ab4a5895a0bb8fc251d24a35a
 workflow-type: tm+mt
-source-wordcount: '1361'
+source-wordcount: '1353'
 ht-degree: 6%
 
 ---
@@ -96,9 +96,7 @@ To enable the [!DNL Assets] console to display the referencing compound assets a
    >
    >Alleen de maker van het element (de persoon die een bepaald middel uploadt naar [!DNL Assets]) ontvangt een e-mail wanneer het element vervalt. Zie [hoe u e-mailmeldingen](/help/sites-administering/notification.md) configureert voor meer informatie over het configureren van e-mailmeldingen op algemeen [!DNL Experience Manager] niveau.
 
-1. Geef in het **[!UICONTROL Prior notification in seconds]** veld de tijd in seconden op voordat een element vervalt wanneer u een melding over de vervaldatum wilt ontvangen. Als u een beheerder of de maker van het element bent, ontvangt u een bericht vóór het verlopen van het element om u te laten weten dat het element op het punt staat na de opgegeven tijd te verlopen.
-
-   Nadat het element is verlopen, ontvangt u een ander bericht waarin de vervaldatum wordt bevestigd. Bovendien worden de verlopen activa gedeactiveerd.
+1. Geef in het **[!UICONTROL Prior notification in seconds]** veld de tijd in seconden op voordat een element vervalt wanneer u een melding over de vervaldatum wilt ontvangen. De makers van bedrijfsmiddelen ontvangen een bericht vóór het verstrijken van het element om aan te geven dat het element op het punt staat na de opgegeven tijd te verlopen. Nadat het element is verlopen, ontvangt u een ander bericht waarin de vervaldatum wordt bevestigd. Bovendien worden de verlopen activa gedeactiveerd.
 
 1. Klik op **[!UICONTROL Save]**.
 

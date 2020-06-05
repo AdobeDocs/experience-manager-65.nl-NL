@@ -4,9 +4,9 @@ description: Opmerkingen bij de release specifiek voor Adobe Experience Manager 
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d51577195e969ff8af31be49159ff575e3654cc9
+source-git-commit: 46f28926af6cbf3999a4c81cb1f1297b09c07f9f
 workflow-type: tm+mt
-source-wordcount: '4364'
+source-wordcount: '4374'
 ht-degree: 0%
 
 ---
@@ -423,7 +423,7 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
 
 * Als de naam van een map in de hiërarchie wordt gewijzigd [!DNL Experience Manager Assets] en de geneste map met een element wordt gepubliceerd naar [!DNL Brand Portal], wordt de titel van de map pas bijgewerkt [!DNL Brand Portal] als de hoofdmap opnieuw wordt gepubliceerd.
 
-* De update van [!DNL chrome] versie 83 veroorzaakt een kwestie in de bouw van pakketten. Gebruik andere beschikbare browsers, zoals [!DNL Internet Explorer] en [!DNL Firefox], of andere AEM-standaardopties voor het installeren van pakketten om het probleem op te lossen.
+* Tijdens de installatie van AEM 6.5.5.0, veroorzaakt de update van [!DNL Chrome] versie 83 een probleem in bouwpakketten. Gebruik andere beschikbare browsers, zoals [!DNL Internet Explorer] en [!DNL Firefox], of andere AEM-standaardopties voor het installeren van pakketten om het probleem op te lossen. Het probleem wordt opgelost na de installatie van AEM 6.5.5.0.
 
 * Kan geen e-mail naar de externe SMTP-server verzenden met de standaard e-mailafzender van AEM, omdat communicatie met TLS v1.2 alleen is toegestaan. Verwijder de bundel `javax.mail:mail:1.5.0-b01` uit `system/console` en vernieuw de bundels om het probleem op te lossen.
 

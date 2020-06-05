@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 628b6dcd-8b1c-4166-8fc2-843baa86ac1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
+source-git-commit: bc49aaad1f55b8c70228d3c800f1e5abf8a2519c
+workflow-type: tm+mt
+source-wordcount: '963'
+ht-degree: 0%
 
 ---
 
@@ -113,7 +116,7 @@ Logboekvermeldingen weergeven:
 
    * Het logbestand bevindt zich op &lt;*server-install-dir*>/crx-quickstart/logs/&lt;*log-file-name*>.log
 
-   * Bijvoorbeeld: `.../crx-quickstart/logs/scoring-debug.log`
+   * Bijvoorbeeld, `.../crx-quickstart/logs/scoring-debug.log`
 
 ![chlimage_1-194](assets/chlimage_1-194.png)
 
@@ -185,13 +188,13 @@ De schermafbeeldingen van gegevensopslagruimte zijn afkomstig van het instellen 
    * Eigenschappen voor scoring en badges toevoegen
 
    ```
-   scoringRules = [/etc/community/scoring/rules/comments-scoring,
+   scoringRules = [/libs/settings/community/scoring/rules/comments-scoring,
    /etc/community/scoring/rules/forums-scoring]
    ```
 
    ```
-   badgingRules =[/etc/community/badging/rules/comments-scoring,
-   /etc/community/badging/rules/forums-scoring]
+   badgingRules =[/libs/settings/community/badging/rules/comments-badging,
+   /libs/settings/community/badging/rules/forums-badging]
    ```
 
    * Zoek het knooppunt voor de forumcomponent

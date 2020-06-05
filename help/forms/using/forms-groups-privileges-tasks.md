@@ -11,7 +11,10 @@ topic-tags: Configuration
 discoiquuid: 1717b1b4-1c2a-450e-8e79-4156a974d5fa
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
+source-git-commit: dbb99875cc6f3c8810670ffe923756f7c13d4ace
+workflow-type: tm+mt
+source-wordcount: '279'
+ht-degree: 0%
 
 ---
 
@@ -66,14 +69,6 @@ Nadat u het invoegpakket [voor](../../forms/using/installing-configuring-aem-for
     </ul> </td> 
   </tr>
   <tr>
-   <td>sjabloongebruiker</td> 
-   <td>
-    <ul> 
-     <li>Aangepaste formulieren of interactieve communicatiesjablonen maken en hiervan een voorbeeld bekijken</li> 
-     <li>Scripts maken voor adaptieve formulieren of interactieve communicatiesjablonen met de code-editor</li> 
-    </ul> </td> 
-  </tr>
-  <tr>
    <td><p>fdm-auteurs</p> </td> 
    <td>
     <ul> 
@@ -99,7 +94,7 @@ Nadat u het invoegpakket [voor](../../forms/using/installing-configuring-aem-for
    <td>workflowgebruikers</td> 
    <td>
     <ul> 
-     <li>AEM inbox-toepassingen<br /> gebruiken <strong>Opmerking: </strong>U moet cm-agent-gebruikers en werkschema-gebruikers groepstaken hebben om tot Interactieve Communicatie Agent UI in AEM in inbox toegang te hebben.</li> 
+     <li>AEM inbox-toepassingen<br /> gebruiken <strong>Opmerking: </strong>U moet cm-agent-gebruikers en werkschema-gebruikers groepstoewijzingen hebben om tot Interactieve Communicatie Agent UI in AEM inbox toegang te hebben.</li> 
      <li>Workflowinstanties beheren</li> 
     </ul> </td> 
   </tr>

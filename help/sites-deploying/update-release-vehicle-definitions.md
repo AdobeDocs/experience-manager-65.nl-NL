@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 32695db5-d62d-4959-8a24-3d56b4a19904
 translation-type: tm+mt
-source-git-commit: b827c8acb1db158060d209c819fc72ffbfeca65f
+source-git-commit: 6a5a8e64c6eaab816d07d8206601849c974d1e26
+workflow-type: tm+mt
+source-wordcount: '769'
+ht-degree: 2%
 
 ---
 
@@ -143,7 +146,7 @@ Dit document bevat informatie over de verschillende typen Adobe Experience Manag
  </tbody>
 </table>
 
-## Cumulatief reparatiepakket {#cumulative-fix-pack-aem}
+## Cumulatief reparatiepakket  {#cumulative-fix-pack-aem}
 
 <table>
  <tbody>
@@ -186,93 +189,6 @@ Dit document bevat informatie over de verschillende typen Adobe Experience Manag
   <tr>
    <td><strong>Testniveau</strong></td>
    <td>QA gevalideerd op integratieniveau en regressietests</td>
-  </tr>
- </tbody>
-</table>
-
-## Eak Cumulative Fix Pack {#oak-cumulative-fix-pack}
-
-<table>
- <tbody>
-  <tr>
-   <td><strong>Definitie</strong></td>
-   <td>
-    <ul>
-     <li>Vergelijkbaar met een standaard-GVB, maar bevat alleen correcties voor eiken</li>
-     <li>COFP is onafhankelijk (geen gebiedsdelen). Klanten hoeven zich geen zorgen te maken over het vinden/oplossen van afhankelijkheden. [1]</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td><strong>Naamgeving</strong></td>
-   <td>&lt;version&gt; wissen</td>
-  </tr>
-  <tr>
-   <td><strong>Inclusies</strong></td>
-   <td>COFP is cumulatief fixpack dat moeilijke situaties van alle componenten Oak voor een specifieke versie 1.x bevat. Als de klant bijvoorbeeld COHF 1.x.3 toepast, dan COHF 1.x.3. = COHF 1.x.1 + COHF 1.x.2.</td>
-  </tr>
-  <tr>
-   <td><strong>Documentatie</strong></td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><strong>Cadence</strong></td>
-   <td><p>Indien nodig</p> </td>
-  </tr>
-  <tr>
-   <td><strong>Beschikbaarheid en installatie</strong></td>
-   <td>
-    <ul>
-     <li>Het COFP-installatieproces is vereenvoudigd om de gebruikerservaring te verbeteren. (Klanten kunnen slechts één pakket installeren voor alle componenten).</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td><strong>Testniveau</strong></td>
-   <td><p>QA gevalideerd</p> </td>
-  </tr>
- </tbody>
-</table>
-
-## Hot Fix {#hot-fix}
-
-<table>
- <tbody>
-  <tr>
-   <td><strong>Definitie</strong></td>
-   <td><p>Pakket met een of meer bestanden die zijn gemaakt om een productfout op te lossen die essentiële services aanzienlijk verslechteert of het bedrijfsgebruik aanzienlijk beïnvloedt. </p> </td>
-  </tr>
-  <tr>
-   <td><strong>Naamgeving</strong></td>
-   <td>cq-&lt;Release-versie&gt;-hotfix-&lt;hotfix-id&gt;-&lt;hotfix-versie&gt;</td>
-  </tr>
-  <tr>
-   <td><strong>Inclusies</strong></td>
-   <td>Bevat oplossingen voor een specifiek probleem</td>
-  </tr>
-  <tr>
-   <td><strong>Documentatie</strong></td>
-   <td>Opmerkingen bij de release van de openbare hotfixes zijn alleen beschikbaar op basis van een verzoek van de klant via het AEM Support Portal.</td>
-  </tr>
-  <tr>
-   <td><strong>Cadence</strong></td>
-   <td>Indien nodig</td>
-  </tr>
-  <tr>
-   <td><strong>Beschikbaarheid en installatie</strong></td>
-   <td>
-    <ul>
-     <li>Geleverd als pakket</li>
-     <li>Beschikbaar voor delen van pakket</li>
-     <li>Afhankelijk van het nieuwste servicepakket dat wordt uitgebracht</li>
-     <li>De meeste hotfixes zijn zelfstandig, tenzij opgegeven. Kan in willekeurige volgorde worden geïnstalleerd. Kan worden gecontroleerd door het lusje van de Details van het Aandeel van het Pakket van het element van Afhankelijkheden.</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td><strong>Testniveau</strong></td>
-   <td>
-    <ul>
-     <li>Gevalideerd door de klantenservice</li>
-     <li>Voor hotfixes voor AEM geldt niet hetzelfde kwaliteitsniveau als voor servicepacks of productreleases. Daarom moeten zij eerst op een het opvoeren milieu als deel van de processen van de kwaliteitsplaatsing worden bevestigd.</li>
-    </ul> </td>
   </tr>
  </tbody>
 </table>

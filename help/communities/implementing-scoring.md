@@ -12,7 +12,10 @@ discoiquuid: ea033bb9-cb92-4c93-855f-8c902999378c
 docset: aem65
 tagskeywords: scoring, badging, badges, gamification
 translation-type: tm+mt
-source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
+source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
+workflow-type: tm+mt
+source-wordcount: '2896'
+ht-degree: 1%
 
 ---
 
@@ -43,7 +46,7 @@ De badges worden onder de naam van een lid geplaatst om hun rol of hun status in
 
 Standaard bevinden badges zich in de dataopslag op
 
-* `/etc/community/badging/images`
+* `/libs/settings/community/badging/images`
 
 Als ze op een andere locatie zijn opgeslagen, moeten ze door iedereen toegankelijk worden gelezen.
 
@@ -62,13 +65,13 @@ Toegewezen (en geawade) badges worden opgeslagen in geselecteerde [SRP](/help/co
 De release bevat drie badges die zijn gebaseerd op rollen:
 
 * **moderator**
-   `/etc/community/badging/images/moderator/jcr:content/moderator.png`
+   `/libs/settings/community/badging/images/moderator/jcr:content/moderator.png`
 
 * **groepsbeheerder**
-   `/etc/community/badging/images/group-manager/jcr:content/group-manager.png`
+   `/libs/settings/community/badging/images/group-manager/jcr:content/group-manager.png`
 
 * **geprivilegieerd lid**
-   `/etc/community/badging/images/privileged-member/jcr:content/privileged-member.png`
+   `/libs/settings/community/badging/images/privileged-member/jcr:content/privileged-member.png`
 
 ![chlimage_1-98](assets/chlimage_1-98.png)
 
@@ -84,13 +87,13 @@ Om badges als beloning voor activiteit te kunnen weergeven, moeten er twee dinge
 De release bevat drie beloningsbadges:
 
 * **goud**
-   `/etc/community/badging/images/gold-badge/jcr:content/gold.png`
+   `/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png`
 
 * **zilver**
-   `/etc/community/badging/images/silver-badge/jcr:content/silver.png`
+   `/libs/settings/community/badging/images/silver-badge/jcr:content/silver.png`
 
 * **brons**
-   `/etc/community/badging/images/bronze-badge/jcr:content/bronze.png`
+   `/libs/settings/community/badging/images/bronze-badge/jcr:content/bronze.png`
 
 ![chlimage_1-99](assets/chlimage_1-99.png)
 
@@ -182,8 +185,8 @@ Scores worden opgeslagen in SRP.
 >Namen van scoreregelregels moeten globaal uniek zijn. ze mogen niet met dezelfde naam eindigen.
 >
 >Een voorbeeld van wat *niet* te doen:
->/etc/community/scoring/rules/site1/forums-scoring
->/etc/community/scoring/rules/site2/forums-scoring
+>/libs/settings/community/scoring/rules/site1/forums-scoring
+>/libs/settings/community/scoring/rules/site2/forums-scoring
 
 
 ### Subregels voor score {#scoring-sub-rules}
@@ -274,13 +277,13 @@ Subregels zijn knooppunten van type `cq:Page` met eigenschappen op zijn `jcr:con
 
 In de release staan twee scoreregels voor de functie [](/help/communities/functions.md#forum-function) Forum (één voor het Forum en één voor de componenten Comments van de functie Forum):
 
-1. /etc/community/scoring/rules/comments-scoring
+1. /libs/settings/community/scoring/rules/comments-scoring
 
-   * subRules[] =/etc/community/scoring/rules/sub-rules/member-comment-create/etc/community/scoring/rules/sub-rules/member-receive-voc/etc/community/scoring/rules/sub-rules/member-giving-voit/etc/community/scoring/rules/sub-rules/member-is-moderated
+   * subRules[] =/libs/settings/community/scoring/rules/sub-rules/member-comment-create/libs/settings/community/scoring/rules/sub-rules/member-receive-say/libs/settings/community/scoring/rules/sub-rules/sub-rules/member-giving-say/libs/settings/community/scoring/rules/sub-rules/member-is moderated
 
-1. /etc/community/scoring/rules/forums-scoring
+1. /libs/settings/community/scoring/rules/forums-scoring
 
-   * subRules[] =/etc/community/scoring/rules/sub-rules/member-forum-create/etc/community/scoring/rules/sub-rules/member-receive-strijder/etc/community/scoring/rules/sub-rules/member-giving-voice/etc/community/scoring/rules/sub-rules/member-is-moderated
+   * subRules[] =/libs/settings/community/scoring/rules/sub-rules/member-forum-create/libs/settings/community/scoring/rules/sub-rules/member-receive-say/libs/settings/community/scoring/rules/sub-rules/sub-rules/member-giving-Kies/libs/settings/community/scoring/rules/sub-rules/member-is moderated
 
 **Opmerkingen:**
 
@@ -308,15 +311,15 @@ De regels van de Badging zijn knopen van type `cq:Page` met eigenschappen op zij
 
 De regels voor badging bestaan uit een verplichte `thresholds` eigenschap die een geordende lijst is met scores die zijn toegewezen aan badges. De scores moeten in stijgende waarde worden bevolen. Bijvoorbeeld:
 
-* `1|/etc/community/badging/images/bronze-badge/jcr:content/bronze.png`
+* `1|/libs/settings/community/badging/images/bronze-badge/jcr:content/bronze.png`
 
    * Er is een bronzen badge om 1 punt te verdienen.
 
-* `60|/etc/community/badging/images/silver-badge/jcr:content/silver.png`
+* `60|/libs/settings/community/badging/images/silver-badge/jcr:content/silver.png`
 
    * Een zilveren badge wordt toegekend wanneer 60 punten zijn opgebouwd.
 
-* `80|/etc/community/badging/images/gold-badge/jcr:content/gold.png`
+* `80|/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png`
 
    * Een gouden badge wordt afgelegd wanneer 80 punten zijn verzameld.
 
@@ -346,7 +349,7 @@ Het `scoringRules` bezit op een merkingsregel beperkt eenvoudig welke het schatt
      <li>number = score</li>
      <li>| = de verticale lijn (U+007C)</li>
      <li>path = full path to badge image resource</li>
-    </ul> De tekenreeksen moeten worden geordend, zodat de getallen in waarde toenemen en er geen witruimte tussen het getal en het pad wordt weergegeven.<br /> Voorbeeld:<br /> <code>80|/etc/community/badging/images/gold-badge/jcr:content/gold.png</code></td>
+    </ul> De tekenreeksen moeten worden geordend, zodat de getallen in waarde toenemen en er geen witruimte tussen het getal en het pad wordt weergegeven.<br /> Voorbeeld:<br /> <code>80|/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png</code></td>
   </tr>
   <tr>
    <td>badgingType</td>
@@ -365,8 +368,9 @@ Het `scoringRules` bezit op een merkingsregel beperkt eenvoudig welke het schatt
 
 In de release zijn twee Badging Rules opgenomen die overeenkomen met de [forums en de regels voor het noteren van opmerkingen](#includedscoringrules).
 
-* /etc/community/badging/rules/comments-badging
-* /etc/community/badging/rules/forums-badging
+* /libs/settings/community/badging/rules/comments-badging
+
+* /libs/settings/community/badging/rules/forums-badging
 
 **Opmerkingen:**
 
@@ -395,7 +399,7 @@ cURL -i -X POST -H *header* -u *sign* -F *operation* -F *badge* *member-profile-
 
 *badge* = &quot;badgeContentPath=*badge-image-file*&quot;
 
-*badge-image-file* = de locatie van het afbeeldingsbestand met de badge in de opslagruimte, bijvoorbeeld: /etc/community/badging/images/moderator/jcr:content/moderator.png
+*badge-image-file* = de locatie van het afbeeldingsbestand met de badge in de opslagruimte, bijvoorbeeld: /libs/settings/community/badging/images/moderator/jcr:content/moderator.png
 
 *member-profile-url* = het eindpunt voor het profiel van het lid op uitgeverij bijvoorbeeld: https://&lt;server>:&lt;port>/home/users/community/riley/profile.social.json
 
@@ -414,13 +418,13 @@ cURL -i -X POST -H *header* -u *sign* -F *operation* -F *badge* *member-profile-
 #### Een moderatorbadge toewijzen {#assign-a-moderator-badge}
 
 ```shell
-curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:assignBadge" -F "badgeContentPath=/etc/community/badging/images/moderator/jcr:content/moderator.png" /home/users/community/updcs9DndLEI74DB9zsB/profile.social.json
+curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:assignBadge" -F "badgeContentPath=/libs/settings/community/badging/images/moderator/jcr:content/moderator.png" /home/users/community/updcs9DndLEI74DB9zsB/profile.social.json
 ```
 
 #### Toegewezen zilverbadge intrekken {#revoke-an-assigned-silver-badge}
 
 ```shell
-curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:deleteBadge" -F "badgeContentPath=/etc/community/badging/images/silver/jcr:content/silver.png" /home/users/community/updcs9DndLEI74DB9zsB/profile.social.json
+curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:deleteBadge" -F "badgeContentPath=/libs/settings/community/badging/images/silver/jcr:content/silver.png" /home/users/community/updcs9DndLEI74DB9zsB/profile.social.json
 ```
 
 >[!NOTE]
@@ -574,9 +578,9 @@ Het is mogelijk om snel scoring en badging te proberen met behulp van de site [G
    * **Type**: `String`
    * Meerdere **selecteren**
    * Selecteer **Toevoegen**
-   * Enter `/etc/community/badging/rules/forums-badging`
+   * Enter `/libs/settings/community/badging/rules/forums-badging`
    * Selecteer **+**
-   * Enter `/etc/community/badging/rules/comments-badging`
+   * Enter `/libs/settings/community/badging/rules/comments-badging`
    * Selecteer **OK**
 
 * Voeg de eigenschap scoringRules toe:
@@ -585,9 +589,9 @@ Het is mogelijk om snel scoring en badging te proberen met behulp van de site [G
    * **Type**: `String`
    * Meerdere **selecteren**
    * Selecteer **Toevoegen**
-   * Enter `/etc/community/scoring/rules/forums-scoring`
+   * Enter `/libs/settings/community/scoring/rules/forums-scoring`
    * Selecteer **+**
-   * Enter `/etc/community/scoring/rules/comments-scoring`
+   * Enter `/libs/settings/community/scoring/rules/comments-scoring`
    * Selecteer **OK**
 
 * Selecteer **Alles** opslaan.

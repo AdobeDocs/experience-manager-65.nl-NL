@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 135b3077-5343-4888-858d-de5e9b1d4b04
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
+source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
+workflow-type: tm+mt
+source-wordcount: '318'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +37,7 @@ Badges die een lid van de gemeenschap verdient of toegewezen krijgt, worden same
 
 In de auteursomgeving, om de console van Badges te bereiken
 
-* Vanuit de globale navigatie navigeert u naar **[!UICONTROL Gereedschappen > Gemeenschappen > Badges]**
+* Navigeer van globale navigatie naar **[!UICONTROL Tools > Communities > Badges]**
 
 Op deze console worden de badges weergegeven die momenteel beschikbaar zijn en waaruit nieuwe badges kunnen worden toegevoegd.
 
@@ -42,7 +45,7 @@ Op deze console worden de badges weergegeven die momenteel beschikbaar zijn en w
 
 ## Badge maken {#create-badge}
 
-Een badge wordt gemaakt door het uploaden van een voldoende kleine afbeelding (72 dpi met een hoogte tussen 26 en 32 pixels) en het opgeven van een naam. De badge-afbeelding wordt opgeslagen in de opslagplaats in `/etc/community/badging/images` en wordt automatisch gerepliceerd naar de publicatieomgeving.
+Een badge wordt gemaakt door het uploaden van een voldoende kleine afbeelding (72 dpi met een hoogte tussen 26 en 32 pixels) en het opgeven van een naam. De badge-afbeelding wordt opgeslagen in de opslagplaats in `/libs/settings/community/badging/images` en wordt automatisch gerepliceerd naar de publicatieomgeving.
 
 Als het publicatiemilieu een landbouwbedrijf van uitgevers is, is het noodzakelijk om [gebruikerssynchronisatie](/help/communities/sync.md)te vormen.
 

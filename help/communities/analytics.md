@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: e6fdaf56-402f-418d-96d8-e46bd3ad1e8c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
+source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
+workflow-type: tm+mt
+source-wordcount: '2751'
+ht-degree: 2%
 
 ---
 
@@ -160,15 +163,15 @@ Als deze optie niet is ingeschakeld, wordt de videohartslagcode nooit geïnstant
 
 Een nieuwe integratie voor Analytics maken, waarmee Adobe Analytics wordt geïntegreerd met de AEM-communitysite. Hierbij wordt de standaardgebruikersinterface van de auteur gebruikt:
 
-* Vanuit globale navigatie: **[!UICONTROL Extra > Implementatie > Cloud Services]**
+* Vanuit globale navigatie: **[!UICONTROL Tools > Deployment > Cloud Services]**
 * Omlaag schuiven naar **[!UICONTROL Adobe Analytics]**
-* Selecteer nu **[!UICONTROL configureren]** of Configuraties **[!UICONTROL tonen]**
+* Selecteer **[!UICONTROL Configure Now]** of **[!UICONTROL Show Configurations]**
 
 ![chlimage_1-178](assets/chlimage_1-178.png)
 
 ### Configuratiedialoogvenster maken {#create-configuration-dialog}
 
-* Selecteer `[+]` pictogram naast **[!UICONTROL Beschikbare Configuraties]** om een nieuwe configuratie te creëren
+* Selecteer `[+]` pictogram naast **[!UICONTROL  Available Configurations]** om een nieuwe configuratie tot stand te brengen
 
 In het dialoogvenster Configuratie maken identificeren de waarden die moeten worden ingevoerd de configuratie.
 
@@ -240,13 +243,13 @@ De instellingen opslaan:
 
 * Selecteer **OK**
 
-![chlimage_1-181](assets/chlimage_1-181.png)
+![chlimage_1-101](assets/chlimage_1-181.png)
 
 ### Framework maken {#create-framework}
 
 Nadat de basisverbinding met Adobe Analytics is geconfigureerd, moet u een framework voor de communitysite maken of bewerken. Het doel van het framework is om AEM-variabelen (Communities feature) toe te wijzen aan variabelen van Analytics (report suite).
 
-* Selecteer `[+]` pictogram naast **[!UICONTROL Beschikbare kaders]** om een nieuw kader tot stand te brengen
+* Selecteer `[+]` pictogram naast **[!UICONTROL  Available Frameworks]** het maken van een nieuw framework
 
 ![chlimage_1-182](assets/chlimage_1-182.png)
 
@@ -278,7 +281,7 @@ Het doel van het framework is om AEM-variabelen toe te wijzen aan analytische va
 Selecteer de rapportsuite die is ingesteld voor videoverslag.
 
 Zie de vorige sectie als er nog geen rapportsuite is gemaakt of niet juist is ingesteld:
-Rapportsuite van[Adobe Analytics voor videomelding](#adobe-analytics-report-suite-for-video-reporting)
+[Adobe Analytics Report Suite for Video Reporting](#adobe-analytics-report-suite-for-video-reporting)
 
 De Sidetrap is niet nodig en kan worden geminimaliseerd zodat het de toegang tot de montages van de Suites van het Rapport niet belemmert.
 
@@ -519,13 +522,14 @@ Hier volgt een voorbeeld van standaardtoewijzingen na het volgen van de [aan de 
 * *[titel](/help/communities/sites-console.md#step13asitetemplate)*van gemeenschapssite: Geometrixgemeenschappen
 * *[communautaire functienaam](/help/communities/functions.md)*: Forum
 * *[groepsnaam](/help/communities/creating-groups.md#creating-a-new-group)*van de gemeenschap: Hiking
-* *pad naar inhoud* van groep met gemeenschappen: `/content/sites/communities/en/groups/hiking`
+* *pad naar inhoud* van groep met gemeenschappen: `/content/sites/<site name>/en/groups/hiking`
 * *[Resourcetype](/help/communities/essentials.md)*UGC-component:`social/forum/components/hbs/topic`
 * *Titel* van UGC-component: Wikingonderwerpen
 * *login (authorizableId)*: `aaron.mcdonald@mailinator.com`
-* *SRP-pad naar UGC*: `/content/usergenerated/asi/.../forum/jmtz-topic3`of *pad van te volgen* component: `/content/sites/communities/en/jcr:content/content/primary/forum`
+* *SRP-pad naar UGC*: `/content/usergenerated/asi/.../forum/jmtz-topic3`
+of *pad van te volgen* component: `/content/sites/<site name>/en/jcr:content/content/primary/forum`
 
-* *pad naar community-site-inhoud*: `/content/sites/community/en`
+* *pad naar community-site-inhoud*: `/content/sites/<site name>/en`
 
 ### Variabele-toewijzing Analytics wijzigen {#modifying-analytics-variable-mapping}
 
@@ -657,7 +661,7 @@ Adobe Analytics biedt API&#39;s waarmee u gebruikersgegevens kunt openen, export
 
 ## Bronnen {#resources}
 
-* Adobe Marketing Cloud: Help en referentie [Analytics](https://marketing.adobe.com/resources/help/en_US/reference/)
+* Adobe Marketing Cloud: [Help en naslaggids voor analysemogelijkheden](https://marketing.adobe.com/resources/help/en_US/reference/)
 * AEM: [Integrating with Adobe Analytics](/help/sites-administering/adobeanalytics.md)
 * AEM: [Analyse met externe providers](/help/sites-administering/external-providers.md)
 

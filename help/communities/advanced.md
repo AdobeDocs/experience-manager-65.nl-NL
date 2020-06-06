@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: eb3d5c37-8097-46de-8c4f-804ea723f1c5
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
+source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
+workflow-type: tm+mt
+source-wordcount: '1060'
+ht-degree: 1%
 
 ---
 
@@ -105,7 +108,7 @@ Zie [Score-subregels](/help/communities/implementing-scoring.md#scoring-sub-rule
 
 Het geavanceerde het scoren pakket installeert een configuratiemap die een stopwoordendossier bevat:
 
-* `/etc/community/scoring/configuration/stopwords`
+* `/libs/settings/community/scoring/configuration/stopwords`
 
 Het geavanceerde het scoren algoritme gebruikt de lijst van woorden in het chronwoordendossier om gemeenschappelijke Engelse woorden te identificeren die tijdens inhoudsverwerking worden genegeerd.
 
@@ -131,7 +134,7 @@ In plaats van punten te koppelen aan een badge-afbeelding, is het alleen nodig o
   <tr>
    <td>badgingPath</td>
    <td>Tekenreeks[]</td>
-   <td><em>(Vereist)</em> Een tekenreeks met meerdere waarden voor badge-afbeeldingen tot het aantal badgingLevels. De wegen van het badge beeld moeten worden bevolen zodat eerste aan de hoogste deskundige wordt toegekend. Als er minder badges zijn dan aangegeven door badgingLevels, vult het laatste badge in de array de rest van de array in. Voorbeeld:<br /> <code>/etc/community/badging/images/expert-badge/jcr:content/expert.png</code></td>
+   <td><em>(Vereist)</em> Een tekenreeks met meerdere waarden voor badge-afbeeldingen tot het aantal badgingLevels. De wegen van het badge beeld moeten worden bevolen zodat eerste aan de hoogste deskundige wordt toegekend. Als er minder badges zijn dan aangegeven door badgingLevels, vult het laatste badge in de array de rest van de array in. Voorbeeld:<br /> <code>/libs/settings/community/badging/images/expert-badge/jcr:content/expert.png</code></td>
   </tr>
   <tr>
    <td>badgingLevels</td>
@@ -146,7 +149,7 @@ In plaats van punten te koppelen aan een badge-afbeelding, is het alleen nodig o
   <tr>
    <td>scoringRules</td>
    <td>Tekenreeks[]</td>
-   <td><em>(Optioneel)</em> Een tekenreeks met meerdere waarden waarmee de badgingregel wordt beperkt tot het scoren van gebeurtenissen die worden aangeduid met de vermelde scoreregel(s).<br /> Voorbeeld:<br /> Standaard is <code>/etc/community/scoring/rules/adv-comments-scoring</code><br /> geen beperking.</td>
+   <td><em>(Optioneel)</em> Een tekenreeks met meerdere waarden waarmee de badgingregel wordt beperkt tot het scoren van gebeurtenissen die worden aangeduid met de vermelde scoreregel(s).<br /> Voorbeeld:<br /> <code>/libs/settings/community/scoring/rules/adv-comments-scoring</code><br /> Standaard is geen beperking.</td>
   </tr>
  </tbody>
 </table>
@@ -159,7 +162,7 @@ In deze bètaversie is één beloning-gebaseerd deskundige badge opgenomen:
 
 * `expert`
 
-   `/etc/community/badging/images/expert-badge/jcr:content/expert.png`
+   `/libs/settings/community/badging/images/expert-badge/jcr:content/expert.png`
 
 ![chlimage_1-142](assets/chlimage_1-142.png)
 
@@ -178,19 +181,19 @@ Zie de basisinformatie voor:
 
 In de bètaversie zijn twee geavanceerde scoreregels opgenomen voor de [forumfunctie](/help/communities/functions.md#forum-function) (één voor het forum en commentaarcomponenten van de forumfunctie):
 
-1. `/etc/community/scoring/rules/adv-comments-scoring`
+1. `/libs/settings/community/scoring/rules/adv-comments-scoring`
 
    * `subRules[] =
-/etc/community/scoring/rules/sub-rules/adv-comments-rule
-/etc/community/scoring/rules/sub-rules/adv-voting-rule-owner
-/etc/community/scoring/rules/sub-rules/adv-voting-rule`
+/libs/settings/community/scoring/rules/sub-rules/adv-comments-rule
+/libs/settings/community/scoring/rules/sub-rules/adv-voting-rule-owner
+/libs/settings/community/scoring/rules/sub-rules/adv-voting-rule`
 
-1. `/etc/community/scoring/rules/adv-forums-scoring`
+1. `/libs/settings/community/scoring/rules/adv-forums-scoring`
 
    * `subRules[] =
-/etc/community/scoring/rules/sub-rules/adv-forums-rule
-/etc/community/scoring/rules/sub-rules/adv-comments-rule
-/etc/community/scoring/rules/sub-rules/adv-voting-rule-owner`
+/libs/settings/community/scoring/rules/sub-rules/adv-forums-rule
+/libs/settings/community/scoring/rules/sub-rules/adv-comments-rule
+/libs/settings/community/scoring/rules/sub-rules/adv-voting-rule-owner`
 
 **Opmerkingen:**
 
@@ -208,8 +211,8 @@ In de bètaversie zijn twee geavanceerde scoreregels opgenomen voor de [forumfun
 
 In de release zijn twee geavanceerde regels voor het aanbrengen van een badge opgenomen die overeenkomen met de [geavanceerde forums en regels](#included-scoring-rules-and-sub-rules)voor het noteren van opmerkingen.
 
-* `/etc/community/badging/rules/adv-comments-badging`
-* `/etc/community/badging/rules/adv-forums-badging`
+* `/libs/settings/community/badging/rules/adv-comments-badging`
+* `/libs/settings/community/badging/rules/adv-forums-badging`
 
 **Opmerkingen:**
 

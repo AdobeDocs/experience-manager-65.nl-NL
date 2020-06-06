@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 628b6dcd-8b1c-4166-8fc2-843baa86ac1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bc49aaad1f55b8c70228d3c800f1e5abf8a2519c
+source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
 workflow-type: tm+mt
-source-wordcount: '963'
+source-wordcount: '965'
 ht-degree: 0%
 
 ---
@@ -157,13 +157,13 @@ De schermafbeeldingen van gegevensopslagruimte zijn afkomstig van het instellen 
    * Eigenschappen voor scoring en badges toevoegen
 
    ```
-   scoringRules = [/etc/community/scoring/rules/comments-scoring,
-   /etc/community/scoring/rules/forums-scoring]
+   scoringRules = [/libs/settings/community/scoring/rules/comments-scoring,
+   /libs/settings/community/scoring/rules/forums-scoring]
    ```
 
    ```
-   badgingRules =[/etc/community/badging/rules/comments-scoring,
-   /etc/community/badging/rules/forums-scoring]
+   badgingRules =[/libs/settings/community/badging/rules/comments-scoring,
+   /libs/settings/community/badging/rules/forums-scoring]
    ```
 
    * Zoek het knooppunt voor de forumcomponent
@@ -189,7 +189,7 @@ De schermafbeeldingen van gegevensopslagruimte zijn afkomstig van het instellen 
 
    ```
    scoringRules = [/libs/settings/community/scoring/rules/comments-scoring,
-   /etc/community/scoring/rules/forums-scoring]
+   /libs/settings/community/scoring/rules/forums-scoring]
    ```
 
    ```
@@ -212,7 +212,7 @@ De schermafbeeldingen van gegevensopslagruimte zijn afkomstig van het instellen 
 1. Aan een gebruiker wordt een moderatorbadge toegewezen via cURL:
 
    ```shell
-   curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:assignBadge" -F "badgeContentPath=/etc/community/badging/images/moderator/jcr:content/moderator.png" https://localhost:4503/home/users/community/w271OOup2Z4DjnOQrviv/profile.social.json
+   curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:assignBadge" -F "badgeContentPath=/libs/settings/community/badging/images/moderator/jcr:content/moderator.png" https://localhost:4503/home/users/community/w271OOup2Z4DjnOQrviv/profile.social.json
    ```
 
    Aangezien een gebruiker twee bronzen badges heeft verdiend en een moderatorbadge heeft gekregen, is dit hoe de gebruiker met hun forumingang verschijnt.
@@ -225,8 +225,8 @@ De schermafbeeldingen van gegevensopslagruimte zijn afkomstig van het instellen 
 >
 >* Namen van scoreregelregels moeten globaal uniek zijn. ze mogen niet met dezelfde naam eindigen.
    >  Een voorbeeld van wat *niet* te doen:
-   >  /etc/community/scoring/rules/site1/forums-scoring
-   >  /etc/community/scoring/rules/site2/forums-scoring
+   >  /libs/settings/community/scoring/rules/site1/forums-scoring
+   >  /libs/settings/community/scoring/rules/site2/forums-scoring
    >
    >
 * Unieke badge-afbeeldingen maken voor verschillende AEM-sites

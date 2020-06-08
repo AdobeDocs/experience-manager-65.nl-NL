@@ -243,7 +243,7 @@ De instellingen opslaan:
 
 * Selecteer **OK**
 
-![chlimage_1-101](assets/chlimage_1-181.png)
+![chlimage_1-181](assets/chlimage_1-181.png)
 
 ### Framework maken {#create-framework}
 
@@ -376,7 +376,7 @@ Als nieuwe douanecomponenten worden gecreeerd die voor Analytics van instrumente
 
 ### Componentconfiguratie {#component-configuration}
 
-![chlimage_1-186](assets/chlimage_1-186.png)
+![chlimage_1-185](assets/chlimage_1-186.png)
 
 >[!NOTE]
 >

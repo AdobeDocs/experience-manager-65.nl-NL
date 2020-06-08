@@ -10,7 +10,10 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 6ed09b5d-5089-43d2-b9d5-e7db57be5c02
 translation-type: tm+mt
-source-git-commit: a44d655871308dac34671f0af2c4a0017eba5793
+source-git-commit: d559a15e3c1c65c39e38935691835146f54a356e
+workflow-type: tm+mt
+source-wordcount: '846'
+ht-degree: 0%
 
 ---
 
@@ -30,9 +33,9 @@ Deze manager slaat het gecodeerde SAML antwoordbericht in gebruiker-knoop ( `use
 
 >[!NOTE]
 >
->Zie [een demonstratie van de integratie](https://helpx.adobe.com/cq/kb/saml-demo.html)van AEM en SAML.
+>Zie [een demonstratie van de integratie](https://helpx.adobe.com/experience-manager/kb/simple-saml-demo.html)van AEM en SAML.
 >
->Als u het einde van het communityartikel wilt lezen, klikt u op: SAML [integreren met Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/aem63_saml.html).
+>Als u het einde van het communityartikel wilt lezen, klikt u op: [SAML integreren met Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/aem63_saml.html).
 
 ## De SAML 2.0-verificatiehandler configureren {#configuring-the-saml-authentication-handler}
 
@@ -73,7 +76,7 @@ De [webconsole](/help/sites-deploying/configuring-osgi.md) biedt toegang tot de 
 >Deze locatie wordt alleen gebruikt als de `request-path` cookie niet is ingesteld. Als u om het even welke pagina onder de gevormde weg zonder geldig login-teken verzoekt, wordt het gevraagde weg opgeslagen in een koekje
 >en de browser wordt opnieuw omgeleid naar deze locatie nadat de verificatie is voltooid.
 
-**Kenmerk** gebruiker-ID De naam van het kenmerk dat de gebruikers-id bevat die wordt gebruikt voor het verifiëren en maken van de gebruiker in de CRX-opslagruimte.
+**Kenmerk** gebruiker-ID De naam van het kenmerk dat de gebruikers-id bevat die wordt gebruikt om de gebruiker te verifiëren en te maken in de CRX-opslagruimte.
 
 >[!NOTE]
 >
@@ -96,11 +99,11 @@ De [webconsole](/help/sites-deploying/configuring-osgi.md) biedt toegang tot de 
 SAML-beweringen worden ondertekend en kunnen optioneel worden versleuteld. Dit werkt alleen als u ten minste het openbare certificaat van de IdP in de opslagplaats verstrekt. Hiervoor moet u:
 
 1. Ga naar *http:/serveraddress:serverport/libs/granite/security/content/truststore.html*
-1. Druk op de koppeling **[!UICONTROL Create TrustStore]**
-1. Voer het wachtwoord voor de TrustStore in en druk op **[!UICONTROL Opslaan]**.
-1. Klik op Betrouwbaarheidsopslag **[!UICONTROL beheren]**.
+1. Druk op **[!UICONTROL Create TrustStore link]**
+1. Voer het wachtwoord voor de TrustStore in en druk op **[!UICONTROL Save]**.
+1. Klik op **[!UICONTROL Manage TrustStore]**.
 1. Upload het IdP-certificaat.
-1. Noteer het certificaat Alias. De alias is **[!UICONTROL admin#1436172864930]** in het onderstaande voorbeeld.
+1. Noteer het certificaat Alias. De alias staat **[!UICONTROL admin#1436172864930]** in het onderstaande voorbeeld.
 
    ![chlimage_1-372](assets/chlimage_1-372.png)
 
@@ -132,7 +135,7 @@ U kunt opstelling een Logger om het even welke kwesties zuiveren die uit het mis
 1. Zoek naar en klik op de vermelding **Apache Sling Logging Logger Configuration**
 1. Maak een logger met de volgende configuratie:
 
-   * **** Logniveau: Foutopsporing
-   * **** Logbestand: logs/saml.log
-   * **** Logger: com.adobe.granite.auth.saml
+   * **Logniveau:** Foutopsporing
+   * **Logbestand:** logs/saml.log
+   * **Logger:** com.adobe.granite.auth.saml
 

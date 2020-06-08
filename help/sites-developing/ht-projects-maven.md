@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 3ebc1d22-a7a2-4375-9aa5-a18a7ceb446a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9d42526ff4c7b7d8a31690ebfb8b45d0e951ebac
+source-git-commit: 1669412afb670a9f55f02476e828de55b4f7a55a
+workflow-type: tm+mt
+source-wordcount: '2424'
+ht-degree: 0%
 
 ---
 
@@ -60,9 +63,9 @@ AEM 6.5 komt voor in twee aroma&#39;s van Uber Jar:
 1. Uber Jar - Omvat slechts de openbare interfaces die niet voor afschrijving worden gemerkt. Dit is het **aanbevolen** UberJar-bestand dat u kunt gebruiken omdat het de codebase in de toekomst helpt te controleren of deze afhankelijk is van afgekeurde API&#39;s.
 1. Uber Jar met Verouderde APIs - omvat alle openbare interfaces, met inbegrip van die duidelijk voor verval in een toekomstige versie van AEM.
 
-### Hoe gebruik ik de UberJars? {#how-to-i-use-the-uberjars}
+### Hoe gebruik ik de UberJars? {#how-do-i-use-the-uberjars}
 
-Als u Apache Maven gebruikt als een constructiesysteem (dat geldt voor de meeste AEM Java-projecten), moet u een of twee elementen toevoegen aan het bestand *pom.xml* . Het eerste is een *gebiedsdeelelement* dat de daadwerkelijke gebiedsafhankelijkheid aan uw project toevoegt:
+Als u Apache Maven gebruikt als een constructiesysteem (dat geldt voor de meeste AEM Java-projecten), moet u een of twee elementen toevoegen aan het bestand *pom.xml* . Het eerste is een *gebiedsdeelelement* die de daadwerkelijke gebiedsafhankelijkheid aan uw project toevoegt:
 
 **Uber Jar-afhankelijkheid *(zonder verouderde API&#39;s)***
 
@@ -576,7 +579,8 @@ Om schrapping van de klassen te bereiken die van JSPs worden gecompileerd, opste
 >
 >Bijvoorbeeld als u omvat `/libs/foundation/global.jsp`, kunt u de volgende configuratie voor `maven-resources-plugin` in plaats van de configuratie gebruiken waarboven volledig overslaat `/libs`.
 >
->```
+>
+```
 > <resource>  
 >           <directory>src/main/content/jcr_root</directory>  
 >           <includes>  
@@ -585,7 +589,6 @@ Om schrapping van de klassen te bereiken die van JSPs worden gecompileerd, opste
 >       </includes>  
 >   </resource>  
 >```
->
 
 ### Hoe kan ik-werken met SCM-systemen {#how-to-work-with-scm-systems}
 

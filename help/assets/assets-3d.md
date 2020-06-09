@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: d17500ea7b95c90069d9c51fac5d4f3706ee4c71
+source-git-commit: 572b856fbdd1ef916f8f897ba86ddefafee324fc
 workflow-type: tm+mt
-source-wordcount: '2071'
-ht-degree: 1%
+source-wordcount: '2216'
+ht-degree: 2%
 
 ---
 
@@ -43,7 +43,7 @@ Dynamische media ondersteunt de volgende 3D-bestandsindelingen:
 
 ## Snel starten: 3D-elementen in dynamische media {#quick-start-three-d}
 
-De volgende stapsgewijze beschrijving van de workflow is ontworpen om u te helpen snel aan de slag te gaan met 3D-elementen in de modus Dynamische media - Scene7.
+De volgende geleidelijke werkschemabeschrijving wordt ontworpen om u te helpen snel met 3D activa op Dynamische Media - wijze Scene7 in werking stellen.
 
 >[!NOTE]
 >
@@ -247,22 +247,19 @@ Zie De component 3D-media [toevoegen aan een webpagina](#adding-the-three-d-medi
 >
 >In de **[!UICONTROL Edit]** modus AEM-sites geeft de 3D-mediacomponent het 3D-element weer, maar interactie met het element is niet mogelijk. Als u het element interactief wilt maken, kunt u de **[!UICONTROL Preview]** functie gebruiken om de webpagina in de pagina-editor weer te geven met volledige toegang tot de functionaliteit van de 3D Media-component.
 
-## Publishing Dynamic Media 3D assets {#publishing-three-d-assets}
+## Statische dynamische media 3D-elementen publiceren {#publishing-three-d-assets}
 
 Dynamische media accepteert verschillende 3D-bestandsindelingen die worden ondersteund als *statische inhoud* in Dynamische media. Statische inhoud houdt in dat u 3D-elementen kunt uploaden en publiceren, maar dat er geen ondersteuning is voor *dynamische* beeldbewerking of het vernieuwen van afbeeldingen die aan het 3D-element zijn gekoppeld. De reden hiervoor is dat Dynamic Media Imaging Server 3D-indelingen niet herkent. Nadat u een 3D-element hebt gepubliceerd in dynamische media, hebt u dus een directe URL die u kunt kopiëren. De URL voor het 3D-element volgt de gebruikelijke URL-structuur voor dynamische media. In tegenstelling tot traditionele afbeeldingselementen in Dynamic Media kunt u echter geen parameters in de URL van het element bewerken.
 
+Zie ook Een URL [verkrijgen voor een statisch element](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-a-static-asset).
+
 In het **[!UICONTROL Card View]** deelvenster verschijnt een pictogram van een kleine globe direct onder de naam van een element en links van de datum en tijd om aan te geven dat het is gepubliceerd. In de **[!UICONTROL List View]** geeft een kolom **[!UICONTROL Published]** aan welke assets zijn gepubliceerd en welke niet.
+
+Als u AEM als uw WCM gebruikt, gebruik deze het publiceren methode om de Dynamische Media 3D activa direct op uw Web-pagina toe te voegen.
 
 Zie ook Dynamische media-elementen [publiceren](publishing-dynamicmedia-assets.md).
 
 Zie ook Pagina&#39;s [publiceren](/help/sites-authoring/publishing-pages.md).
-
->[!MORELIKETHIS]
->
->Als u een systeem voor webcontentbeheer van derden gebruikt, kunt u 3D-elementen koppelen of insluiten in uw webpagina&#39;s.
->
->See [Linking URLs to your web application](linking-urls-to-yourwebapplication.md).
-
 
 **Dynamische media 3D-elementen publiceren**
 
@@ -276,10 +273,22 @@ Zie ook Pagina&#39;s [publiceren](/help/sites-authoring/publishing-pages.md).
 
    ![3d-asset-renditions](/help/assets/assets-dm/3d-asset-renditions.png)
 
-1. Tik op **[!UICONTROL original]**. Wanneer een 3D-element wordt gepubliceerd (of geactiveerd), wordt de knop URL linksonder op de pagina weergegeven als aan alle volgende 3D-elementvoorwaarden is voldaan:
+1. Tik op **[!UICONTROL original]**. Wanneer een 3D-element wordt gepubliceerd (of geactiveerd), wordt de **[!UICONTROL URL]** knop linksonder op de pagina weergegeven als aan alle volgende 3D-elementvoorwaarden is voldaan:
    * Het 3D-element heeft een ondersteunde indeling (GLB, OBJ, STL en USDZ).
    * Het 3D element werd opgenomen in het Dynamische Systeem van de Productie van het Beeld van Media (IPS).
    * Het 3D-element wordt gepubliceerd.
    ![3d-asset-url](/help/assets/assets-dm/3d-asset-url.png)
 
-1. Tik **[!UICONTROL URL]** om de productie-URL van het 3D-element weer te geven.
+1. Tik **[!UICONTROL URL]** om de directe productie-URL van het 3D-element weer te geven, die u kunt kopiëren en gebruiken op webpagina&#39;s.
+
+### Alternatieve methoden voor het publiceren van Dynamic Media 3D-elementen met behulp van de Dimensional-viewer {#alternate-publish-methods}
+
+Gebruik de volgende twee methoden voor het publiceren van Dynamic Media 3D-elementen als u AEM *niet* als uw WCM gebruikt.
+
+* **[!UICONTROL URL]** - Gebruik deze optie **[!UICONTROL URL]** als u een systeem voor webcontentbeheer van derden gebruikt en u dynamische media 3D-elementen wilt koppelen aan uw webpagina&#39;s met de DIMM-viewer.
+
+   See [Linking URLs to your web application](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset).
+
+* **[!UICONTROL Embed]** - Gebruik deze optie **[!UICONTROL Embed]** als u een dynamisch Media 3D-element wilt weergeven dat is ingesloten op een webpagina met de DIMM-viewer. U kopieert de insluitcode naar het klembord, zodat u deze op uw webpagina&#39;s kunt plakken. Het bewerken van de code is niet toegestaan in het dialoogvenster **[!UICONTROL Embed]**.
+
+   Zie [De dynamische mediavideo, de afbeeldingsviewer of de dimensionale viewer insluiten op een webpagina](/help/assets/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page).

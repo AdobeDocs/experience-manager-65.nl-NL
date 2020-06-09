@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 1099cc44-de6d-499e-8b52-f2f5811ae086
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+source-git-commit: 3954178cc660368a2b374bbb4d05d93d7309d4eb
+workflow-type: tm+mt
+source-wordcount: '3210'
+ht-degree: 0%
 
 ---
 
@@ -50,7 +53,7 @@ In dit document wordt ervan uitgegaan dat u vertrouwd bent met het maken en bewe
 >De volgende zelfstudie kan ook van belang zijn voor het instellen van een bewerkbare paginasjabloon in een nieuw project:
 >[Aan de slag met AEM-sites Deel 2 - Een basispagina en sjabloon maken](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part2.html)
 
-## Een nieuwe sjabloon maken {#creating-a-new-template}
+## Creating a New Template {#creating-a-new-template}
 
 Het creëren van editable malplaatjes wordt hoofdzakelijk gedaan met de [malplaatjeconsole en malplaatjeredacteur](/help/sites-authoring/templates.md) door een malplaatjeauteur. In deze paragraaf wordt een overzicht gegeven van dit proces en wordt een beschrijving gegeven van wat er op technisch niveau gebeurt.
 
@@ -232,7 +235,7 @@ De `template-authors` groep is de groep die wordt gebruikt om toegang tot malpla
 >
 >De `template-authors` groep is *alleen* voor gebruikers die nieuwe sjablonen moeten kunnen maken.
 >
->Het bewerken van sjablonen is bijzonder krachtig en als deze niet op de juiste wijze worden uitgevoerd, kunnen bestaande sjablonen worden verbroken. Daarom moet deze rol worden toegespitst en alleen gekwalificeerde gebruikers omvatten.
+>Het bewerken van sjablonen is bijzonder krachtig en als dit niet het geval is, kunnen bestaande sjablonen worden verbroken. Daarom moet deze rol worden toegespitst en alleen gekwalificeerde gebruikers omvatten.
 
 In de volgende tabel worden de benodigde machtigingen voor sjabloonbewerking weergegeven.
 
@@ -241,7 +244,7 @@ In de volgende tabel worden de benodigde machtigingen voor sjabloonbewerking wee
   <tr>
    <th>Pad</th>
    <th>Rol/groep</th>
-   <th>Permissions<br /> </th>
+   <th>Machtigingen<br /> </th>
    <th>Beschrijving</th>
   </tr>
   <tr>
@@ -301,7 +304,7 @@ De malplaatjes zouden niet meer in moeten worden opgeslagen, `/conf/global`nocht
   <tr>
    <th>Pad</th>
    <th>Rol/groep</th>
-   <th>Permissions<br /> </th>
+   <th>Machtigingen<br /> </th>
    <th>Beschrijving</th>
   </tr>
   <tr>
@@ -377,7 +380,7 @@ De sjabloontypen voor de out-of-the-box worden opgeslagen onder:
 
 >[!CAUTION]
 >
->U mag niets in het `/libs` pad wijzigen. De reden hiervoor is dat de inhoud van `/libs` de volgende keer dat u een upgrade uitvoert van uw exemplaar, wordt overschreven (en dat deze kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
+>U mag niets in het `/libs` pad wijzigen. De reden hiervoor is dat de inhoud van `/libs` de volgende keer dat u een upgrade uitvoert van de instantie, wordt overschreven (en dat deze kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
 
 Uw sitespecifieke sjabloontypen moeten worden opgeslagen op de vergelijkbare locatie:
 
@@ -480,7 +483,7 @@ De belangrijkste elementen zijn:
    * ` [policies](#policies)`
    * `thumbnail.png`
 
-### jcr:inhoud {#jcr-content}
+### jcr:content {#jcr-content}
 
 Dit knooppunt bevat eigenschappen voor de sjabloon:
 
@@ -567,8 +570,8 @@ Het beleid van de pagina staat u toe om het [inhoudsbeleid](#content-policies) v
 
       * Definieer de eigenschap:
 
-         * Naam:status
-         * Type:String
+         * Naam: status
+         * Type: String
          * Waarde: `enabled`
 
 1. **Toegestane sjablonen**
@@ -613,7 +616,7 @@ Bij het weergeven van een pagina:
 
    * Het `cq:template` bezit van zijn `jcr:content` knoop zal worden van verwijzingen voorzien om tot het malplaatje toegang te hebben dat aan die pagina beantwoordt.
 
-* **Componenten**:
+* **Onderdelen**:
 
    * De paginacomponent voegt de `structure/jcr:content` boomstructuur van het malplaatje met de `jcr:content` boom van de pagina samen.
 

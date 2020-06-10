@@ -5,7 +5,10 @@ keywords: dynamic media;newsletter;product updates;tips and tricks;events;custom
 contentOwner: Rick Brough
 solution: Dynamic Media
 translation-type: tm+mt
-source-git-commit: d43f845a1ba9ed9e9eb5bfcff735eaa42da53566
+source-git-commit: 9e8ff9bf5c9ddd4675e887fc734bf3b616526b36
+workflow-type: tm+mt
+source-wordcount: '1283'
+ht-degree: 0%
 
 ---
 
@@ -21,6 +24,21 @@ In deze one-stop shop nieuwsbrief, ontdek waardevolle kennis-bouwend middelen zo
 [Meld u aan](https://www.adobe.com/subscription/dynamic-media-newsletter.html) om de nieuwsbrief voor dynamische media maandelijks in uw postvak te ontvangen.
 
 ## Hebt u een probleem met de Dynamic Media Newsletter gemist?
+
+* **[Mei 2020, uitgave 4](https://expleague.azureedge.net/assets/aem/Experience-Insider-vol.31.html)**
+
+   In dit verband:
+
+   * Wat bedrijfscontinuïteit in onzekere tijden betekent.
+   * Belangrijke resultaten van de eerste all-digital Adobe-top.
+   * Brainstormsessies van Experience Manager moeten worden gecontroleerd.
+   * Klantspotlight van top: Onder Armor.
+   * Mis nooit een webinar van Experience Insider.
+   * Spotlicht in de publieke sector: De dringende behoefte aan digitale inschrijving.
+   * Kijk wat er nieuw is in de Innovatie van Experience Manager.
+   * Creëer uw vaardigheden in Experience Manager *live* met de Adobe-professionals.
+   * Maak verbinding met de Adobe Experience Manager-gemeenschap.
+   * Snel uw Adobe-expertise bijhouden met Adobe Experience League.
 
 * **[April 2020, uitgave 3](http://amc-mkt-prod1-t.adobe-campaign.com/rest/head/mirrorPage/@DRPFipWV_3bgH_oxl1monOhd4auNDxFVTBWB-uKB6lM_BixlVqja2E5Ml7DbtOy6pARL78LPxljqgxEEAr7RBsRp8WOyn-Zw6hQ8MNoFn9i9WMXm.html)**
 

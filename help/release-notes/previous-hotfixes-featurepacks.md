@@ -1,15 +1,11 @@
 ---
-title: Opmerkingen bij de release AEM 6.5 Vorige Service Pack
+title: Opmerkingen bij de release Adobe Experience Manager 6.5 Vorige Service Pack
 description: Opmerkingen bij de release specifiek voor Adobe Experience Manager 6.5 Service Pack 3 en eerder.
-uuid: c7bc3705-3d92-4e22-ad84-dc6002f6fa6c
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5
-discoiquuid: 25542769-84d1-459c-b33f-eabd8a535462
-docset: aem65
+contentOwner: AK
 translation-type: tm+mt
-source-git-commit: c80cb65b42d8e132ba83c25f1decdcf0a0a6fc51
+source-git-commit: b2b8178f96d1e0a551a58ba649443aa03f0608ac
 workflow-type: tm+mt
-source-wordcount: '8090'
+source-wordcount: '8084'
 ht-degree: 0%
 
 ---
@@ -19,13 +15,13 @@ ht-degree: 0%
 
 ## Adobe Experience Manager 6.5.4.0 {#experience-manager-6540}
 
-Adobe Experience Manager 6.5.4.0 is een belangrijke update met nieuwe functies, belangrijke verbeteringen en prestaties die door de klant zijn aangevraagd, stabiliteit en verbeteringen op het gebied van beveiliging, die zijn uitgebracht sinds de algemene beschikbaarheid van de release van 6.5 in **april 2019**. Het bestand kan boven op Adobe Experience Manager (AEM) 6.5 worden geïnstalleerd.
+Adobe Experience Manager 6.5.4.0 is een belangrijke update met nieuwe functies, belangrijke verbeteringen en prestaties die door de klant zijn aangevraagd, stabiliteit en verbeteringen op het gebied van beveiliging, die zijn uitgebracht sinds de algemene beschikbaarheid van de release van 6.5 in **april 2019**. Deze kan boven op Adobe Experience Manager 6.5 worden geïnstalleerd.
 
-Enkele belangrijke functies en verbeteringen die zijn geïntroduceerd in AEM 6.5.4.0 zijn:
+Enkele belangrijke functies en verbeteringen in Adobe Experience Manager 6.5.4.0 zijn:
 
-* AEM Assets wordt nu geconfigureerd met Brand Portal via Adobe I/O Console.
+* Adobe Experience Manager-middelen zijn nu geconfigureerd met Brand Portal via Adobe I/O Console.
 
-* Er is nu een nieuwe stap Afdrukbare uitvoer [](../forms/using/aem-forms-workflow-step-reference.md) genereren beschikbaar voor AEM Forms-workflows.
+* Er is nu een nieuwe stap Afdrukbare uitvoer [](../forms/using/aem-forms-workflow-step-reference.md) genereren beschikbaar voor Adobe Experience Manager Forms-workflows.
 
 * [Ondersteuning](../forms/using/resize-using-layout-mode.md) voor meerdere kolommen in de lay-outmodus voor adaptieve formulieren en interactieve communicatie.
 
@@ -41,13 +37,13 @@ Enkele belangrijke functies en verbeteringen die zijn geïntroduceerd in AEM 6.5
 
 * De invoer of de output van de ZEEP en complexe gegevensstructuren steunen nu Dynamische Vervanging van de Groep.
 
-Voor een volledige lijst van eigenschappen, zeer belangrijke hoogtepunten, zeer belangrijke eigenschappen die in vorige AEM 6.5 de dienstpakken worden geïntroduceerd, zie [Nieuw in de Manager van de Ervaring van Adobe 6.5 Service Pack 4](new-features-latest-service-pack.md).
+Voor een volledige lijst van eigenschappen en belangrijkste hoogtepunten die in de recentste de dienstpakken worden geïntroduceerd, zie [Nieuw in de dienstpakken](new-features-latest-service-pack.md)van de Manager van de Ervaring van Adobe 6.5.
 
 ### Sites {#sites-fixes}
 
-* Wanneer een URL van pagina&#39;s van AEM-sites een dubbele punt bevat ( : ) of percentagesymbool (%), de onderliggende browser stopt met reageren en CPU-cycli geven een punt aan (NPR-32369, NPR-31918).
+* Wanneer een URL van een pagina met Adobe Experience Manager-sites een dubbele punt (`:`) of percentagesymbool (`%`) bevat, reageert de browser niet meer en geven CPU-gebruiksspecificaties niet meer door (NPR-32369, NPR-31918).
 
-* Wanneer een pagina met AEM-sites wordt geopend voor bewerking en een component wordt gekopieerd, blijft de plakhandeling niet beschikbaar voor sommige plaatsaanduidingen (NPR-32317).
+* Wanneer een pagina van de Plaatsen van het Manager van de Ervaring voor het uitgeven en een component wordt geopend, blijft de deegactie voor sommige placeholders (NPR-32317) niet beschikbaar.
 
 * Wanneer de wizard Publicatie beheren wordt geopend, wordt een ervaringsfragment dat is gekoppeld aan een kerncomponent niet weergegeven in de lijsten met gepubliceerde referenties (NPR-32233).
 
@@ -55,7 +51,7 @@ Voor een volledige lijst van eigenschappen, zeer belangrijke hoogtepunten, zeer 
 
 * Wanneer de server-tijd en machine-tijd in verschillende tijdzones zijn, toont de geplande publicatietijd servertijd in Touch UI, terwijl in Klassieke UI, machinetijd wordt getoond (NPR-32077).
 
-* AEM-sites kunnen geen pagina openen met een achtervoegsel in de URL (NPR-32072).
+* Experience Manager Sites kan geen pagina openen met een achtervoegsel in de URL (NPR-32072).
 
 * Wanneer een gebruiker een inhoudsfragment bewerkt, wordt een verwijderde variant van het inhoudsfragment hersteld (NPR-32062).
 
@@ -129,7 +125,7 @@ Voor een volledige lijst van eigenschappen, zeer belangrijke hoogtepunten, zeer 
 
 * Met de knop Opslaan wordt de externe set niet geïmporteerd als de gebruiker geen wijzigingen heeft aangebracht in de Editor instellen in de Dynamic Media Client (CQ-4285690).
 
-* Miniatuur van 3D-middelen is niet informatief wanneer een ondersteund 3D-model wordt opgenomen in AEM (CQ-4283701).
+* Miniatuur van 3D-middelen is niet informatief wanneer een ondersteund 3D-model wordt opgenomen in Experience Manager (CQ-4283701).
 
 * De onverwerkte status van de voorinstelling van de viewer voor SmartCrop wordt twee keer weergegeven op de bannertekst naast de naam van de voorinstelling (CQ-4283517).
 
@@ -139,7 +135,7 @@ Voor een volledige lijst van eigenschappen, zeer belangrijke hoogtepunten, zeer 
 
 * De toetsenbordfocus blijft vastzitten in de vervolgkeuzelijst E-mail in het dialoogvenster Downloaden, in Chrome- en Safari-browsers (NPR-32067).
 
-* Het selectievakje Alle inhoud synchroniseren is niet standaard ingeschakeld wanneer wordt geprobeerd om een DM-cloud te configureren op AEM (CQ-4288533).
+* Het selectievakje Alle inhoud synchroniseren is standaard niet ingeschakeld wanneer wordt geprobeerd om DM-cloud config toe te voegen via Experience Manager (CQ-4288533).
 
 ### Foundation-UI {#foundation-ui-6540}
 
@@ -187,13 +183,9 @@ Voor een volledige lijst van eigenschappen, zeer belangrijke hoogtepunten, zeer 
 
 ### Brand Portal {#assets-brand-portal-6540}
 
-* Gebruikers van Brand Portal kunnen geen middelen uit de bijdragemap publiceren naar AEM Assets bij de upgrade naar Adobe I/O op AEM 6.5.4 (CQDOC-15655).
+* Gebruikers van het Brand Portal kunnen geen middelen uit de bijdragemap publiceren naar [!DNL Assets] bij de upgrade naar Adobe I/O op Experience Manager 6.5.4 (CQDOC-15655). Voor een directe oplossing voor Experience Manager 6.5.4 wordt aangeraden de hotfix [te](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/hotfix/cq-6.5.0-hotfix-33041) downloaden en op de auteurinstantie te installeren.
 
-   Dit probleem wordt opgelost in het volgende servicepack AEM 6.5.5.
-
-   Voor directe correctie op AEM 6.5.4 wordt aangeraden de hotfix [te](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/hotfix/cq-6.5.0-hotfix-33041) downloaden en op de auteurinstantie te installeren.
-
-* Vervolgkeuzemenu voor het metagegevensschema zijn niet zichtbaar in de elementeigenschappen (CQ-4283287).
+* Pop-upwaarden van het metagegevensschema zijn niet zichtbaar in de elementeigenschappen (CQ-4283287).
 
 * In het subschema Metagegevens worden geen tabbladen weergegeven die zijn gebaseerd op mimetype in eigenschappen van elementen (CQ-4283288).
 
@@ -221,7 +213,7 @@ Voor een volledige lijst van eigenschappen, zeer belangrijke hoogtepunten, zeer 
 
 >[!NOTE]
 >
->AEM Service Pack bevat geen oplossingen voor AEM-formulieren. Ze worden geleverd met behulp van een apart Forms add-on pakket. Daarnaast wordt een cumulatief installatieprogramma uitgebracht dat oplossingen voor AEM Forms in JEE bevat. Zie [Invoegtoepassing](#install-aem-forms-add-on-package) van AEM-formulieren installeren en AEM-formulieren [installeren in JEE](#install-aem-forms-jee-installer)voor meer informatie.
+>Experience Manager Service Pack bevat geen oplossingen voor Experience Manager Forms. Ze worden geleverd met behulp van een apart Forms add-on pakket. Daarnaast wordt een cumulatief installatieprogramma uitgebracht dat oplossingen voor Adobe Experience Manager Forms op JEE bevat. Zie Invoegtoepassing [van Experience Manager Forms](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) installeren en Formulieren Experience Manager [installeren op JEE](/help/release-notes/sp-release-notes.md#install-aem-forms-jee-installer)voor meer informatie.
 
 * Correspondentenbeheer: Letters geven extra tekens weer na verzending naar workflows voor postprocessen (NPR-32626).
 
@@ -233,13 +225,13 @@ Voor een volledige lijst van eigenschappen, zeer belangrijke hoogtepunten, zeer 
 
 * Documentservices: Problemen met URL-toegang voor Letters en enkele andere pagina&#39;s na toepassing van Service Pack 2 (NPR-32508, NPR-32509).
 
-* Documentservices: Als het aantal transacties op een server een specifieke limiet overschrijdt, mislukt de conversie van HTML naar PDF en worden de instellingen voor het bestandstype verwijderd van de AEM Forms-server (NPR-32204).
+* Documentservices: Als het aantal transacties op een server een specifieke limiet overschrijdt, mislukt de conversie van HTML naar PDF en worden de instellingen voor het bestandstype van de [!DNL Forms] server verwijderd (NPR-32204).
 
 * Adaptieve formulieren: Browser het hulpmiddel van de toegankelijkheid meldt mislukkingen in adaptieve vormen overeenkomstig de richtlijnen van niveau AA van WCAG2 (NPR-32312, NPR-32309, CQ-4285439).
 
 * Adaptieve formulieren: Het hulpmiddel van de de browser van Chrome rapporteert een beste praktijkmislukking (NPR-32310).
 
-* Adaptieve formulieren: Problemen met de omzetting tijdens het configureren van een adaptief formulier dat is ingesloten op een pagina met AEM-sites (NPR-32168).
+* Adaptieve formulieren: Problemen met de omzetting tijdens het configureren van een adaptief formulier dat is ingesloten op de pagina Experience Manager Sites (NPR-32168).
 
 * Workbench: Er wordt een foutbericht weergegeven wanneer de bewerking PDF-eigenschappen ophalen voor de PDF Utilities-service (NPR-32150) wordt gebruikt.
 
@@ -249,7 +241,7 @@ Voor een volledige lijst van eigenschappen, zeer belangrijke hoogtepunten, zeer 
 
 * Designer: Als een tabel samengevoegde cellen bevat, mislukt de toegankelijkheidstest voor het PDF-uitvoerbestand dat is geconverteerd van een XDP-formulier met de uitvoerservice (CQ-4285372).
 
-* Foundation JEE: Als een AEM Forms-server is losgekoppeld van een cluster, wordt door cacheproblemen voorkomen dat deze opnieuw verbinding maakt met de server (NPR-32412).
+* Foundation JEE: Als een Experience Manager Forms-server is losgekoppeld van een cluster, kunnen cacheproblemen voorkomen dat deze opnieuw verbinding maakt met de server (NPR-32412).
 
 ## Adobe Experience Manager 6.5.3.0 {#experience-manager-6530}
 
@@ -283,27 +275,30 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 
 * [!DNL Experience Manager Assets] ondersteunt nu ZIP-archieven die zijn gemaakt met het Deflate64-algoritme (NPR-27573).
 
-* Er is een nieuwe kolom voor de aanmaakdatum toegevoegd, die sorteerbaar is, in de DAM-lijstweergave en in de resultaten voor het zoeken naar middelen in de lijstweergave (NPR-31312).
+* De nieuwe kolom voor gemaakte datum, die sorteerbaar is, wordt toegevoegd in de DAM-lijstweergave en in de resultaten voor het zoeken naar middelen in de lijstweergave (NPR-31312).
 
-* Asset sorting based on Name column is allowed in List view (NPR-31299).
+* In de lijstmening, kunnen de gebruikers de lijst van activa sorteren gebruikend [!UICONTROL Name] kolom (NPR-31299).
 
-* De GLB-, GLTF-, OBJ- en STL-elementbestanden ondersteunen voorvertoning van elementen op de pagina Asset Details in DAM (CQ-4282277).
+* De GLB-, GLTF-, OBJ- en STL-bestanden kunnen worden voorvertoond op [!UICONTROL Asset Details] pagina&#39;s in DAM (CQ-4282277).
 
-* ReplicationOnModifyListener-gebeurtenis wordt geactiveerd voor segmentknooppunten tijdens het uploaden naar een segment in [!DNL Dynamic Media] (CQ-4281279).
+* `ReplicationOnModifyListener` De gebeurtenis wordt geactiveerd voor segmentknooppunten tijdens het uploaden naar een segment in [!DNL Dynamic Media] (CQ-4281279).
 
 * [!DNL Dynamic Media] ondersteunt nu SmartCrop-video-elementen. Slim uitsnijden is een door computers aangedreven functie die een video bijsnijdt terwijl het frame wordt verplaatst om het brandpunt van de scène te volgen (CQ-4278995).
 
 * [!DNL Dynamic Media] ondersteunt Smart Imaging (CQ-4222249).
 
-* De onderzoek/doorbladermening is geplaatst als standaardmening in de plukker van de Stichting als de vraagparameters in verzoek worden overgegaan (NPR-31601).
+* De onderzoek of doorbladert mening wordt geplaatst als standaardmening in de plukker van de Stichting als de vraagparameters in verzoek worden overgegaan (NPR-31601).
 
 **Oplossingen**
 
-* Metagegevens voor sommige PDF-documenten worden niet bijgewerkt en naar de PDF opgeslagen bij het wijzigen van de titel (NPR-31629).
+* Metagegevens voor sommige PDF-documenten worden niet bijgewerkt en in de PDF opgeslagen wanneer de titel wordt gewijzigd (NPR-31629).
 
-* Delen van activa werkt niet voor activa met het plusteken (+) in hun naam (NPR-31547).
+* Het delen van elementen werkt niet voor elementen met een plusteken (`+`) in de bestandsnaam (NPR-31547).
 
 * Bewerkingen in het standaardzoekformulier Middelen Admin * Search Rail werken niet zoals verwacht (NPR-31502).
+
+<!-- Review: Check if this seemingly stray asterisk is needed there or not.
+-->
 
 * Suggesties worden niet weergegeven wanneer u OmnZoeken op middelen gebruikt om middelen te zoeken (NPR-31496).
 
@@ -311,17 +306,17 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 
 * Er worden dubbele IPTC-tags toegevoegd aan metagegevens van elementen (NPR-31328).
 
-* Het aantal zoekresultaten in de rechterbovenhoek wordt niet correct bijgewerkt wanneer het zoeken wordt gestart vanuit de filterrail (NPR-31316).
+* Het aantal zoekresultaten wordt niet op de juiste wijze bijgewerkt wanneer een zoekopdracht wordt gestart vanaf de filterrail (NPR-31316).
 
-* Alle selectievakjes worden gewist wanneer de selectie van de selectievakjes van het tweede niveau in het filter Bestandstype ongedaan wordt gemaakt en de tekst in de zoekbalk is niet synchroon met de geselecteerde/niet-geselecteerde eigenschappen (NPR-31287).
+* Alle selectievakjes worden gewist wanneer de selectie van de selectievakjes van het tweede niveau in het filter Bestandstype wordt opgeheven en de tekst in de zoekbalk is niet synchroon met de geselecteerde of gedeselecteerde eigenschappen (NPR-31287).
 
 * Niet alle leden (gebruikers/groepen) kunnen worden verwijderd uit de sectie Leden van een map. wanneer wordt geprobeerd om alle gebruikers te verwijderen, wordt de aangemelde gebruiker toegevoegd aan de lijst (NPR-31171).
 
-* Elementen met het plusteken (+) in de bestandsnaam kunnen niet worden verwijderd (NPR-31162).
+* Elementen met een plusteken (`+`) in de bestandsnaam kunnen niet worden verwijderd (NPR-31162).
 
 * Het keuzemenu Maken, dat in het bovenste menu zichtbaar is wanneer u een map selecteert, geeft &#39;Map&#39; niet weer als een optie voor maken (NPR-30877).
 
-* Mapselectie Maken > Handelitem FileUpload ontbreekt wanneer ACL voor Deny jcr:removeChildNodes en jcr:removeNode op pad wordt toegepast voor een gebruiker (NPR-30840).
+* Mapselectie Maken > Handelitem FileUpload ontbreekt wanneer ACL voor Weigeren `jcr:removeChildNodes` en `jcr:removeNode` op pad wordt toegepast voor een gebruiker (NPR-30840).
 
 * De DAM-workflows worden in de status &#39;stale&#39; gezet wanneer bepaalde MP4-middelen worden geüpload, waardoor alle resterende workflows in de status &#39;stale&#39; gaan (NPR-30662).
 
@@ -331,7 +326,7 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 
 * De namen van activa worden veranderd in kleine letters wanneer het bewegen van activa van één omslag aan een andere in [!DNL Experience Manager] lopen in wijze [!DNL Dynamic Media]-Scene7 (NPR-31630).
 
-* Er is een fout opgetreden tijdens het bewerken van een externe imageset voor de afbeelding die zich in de map met dezelfde naam bevindt als de bedrijfsnaam van Scene 7 (NPR-31340).
+* Er wordt een fout waargenomen tijdens het bewerken van een externe imageset, voor de afbeelding die zich bevindt in de map met de naam van het Scene7-bedrijf (NPR-31340).
 
 * [!DNL Dynamic Media] activa met referenties worden niet gepubliceerd (NPR-31180).
 
@@ -339,9 +334,9 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 
 * Hotspot die aan een afbeeldingselement is toegevoegd, is niet zichtbaar via de Interactive Image Viewer op de pagina met elementdetails (NPR-30979).
 
-* Er worden enorme slingerbanen gecreëerd en de verwerkingsbanner wordt weer opgebouwd wanneer acties op activa in [!DNL Experience manager Assets] worden doorgegeven aan Scene 7 (NPR-30947).
+* Er worden enorme slingerbanen gecreëerd en de verwerkingsbanner wordt opnieuw weergegeven wanneer acties die op activa in [!DNL Experience manager Assets] worden uitgevoerd, worden doorgegeven aan Scene7 (NPR-30947).
 
-* Conflict doet zich voor bij het maken van Taalkopie van middelen en middelen wordt niet geüpload naar scène 7 (NPR-30932).
+* Conflict doet zich voor bij het maken van Taalkopie van middelen en middelen wordt niet geüpload naar Scene7 (NPR-30932).
 
 * Dynamische vertoningen die zijn gedownload van [!DNL Experience Manager] uitvoering in [!DNL Dynamic Media]-hybride modus worden verbroken (het gaat om teksttypen met de inhoud &#39;kan afbeelding niet vinden&#39; in plaats van het type afbeeldingsinhoud) (NPR-30876).
 
@@ -363,11 +358,11 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 
 * Video&#39;s die onlangs in mappen met videoprofiel zijn opgenomen, worden nog steeds verwerkt nadat het coderingspercentage is voltooid tot 100% (CQ-4279389).
 
-* Als u elementen uit een map verplaatst, ontstaan er veel slingertaken (API-aanroepen voor scène 7) dan ideaal is vereist (CQ-4278664).
+* Het bewegen van activa van een omslag leidt tot grote aantallen sling banen (vraag Scene7 API) dan ideaal vereist (CQ-4278664).
 
-* Namen van de imageset worden in scène 7 gewijzigd in kleine letters wanneer imageset (of mediaset) wordt gemaakt en benoemd met de juiste naamgevingsconventie in DAM (CQ-4281112).
+* De namen van de imageset worden veranderd in kleine letters in Scene7, wanneer imageset (of mediaset) wordt gecreeerd en met aangewezen noemende overeenkomst in DAM (CQ-4281112) genoemd.
 
-* Scene 7 de reeksen van de Migrator publiceren verkeerd staat (CQ-4263492).
+* Scene7 de reeksen van de Migrator publiceren verkeerd staat (CQ-4263492).
 
 * De resultatenpagina Touch UI-zoekopdracht (uitgevoerd via Omnissearch) wordt automatisch naar boven geschoven en verliest de schuifpositie van de gebruiker in Content Fragments (CQ-4282898).
 
@@ -381,7 +376,7 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 
 * Workflows voor uitvoering ontbreken (CQ-4271928).
 
-* DAM Event Purge verwijdert de meest recente (maxSavedActivity) gebeurtenisgegevens en bevat de gegevens die eerder zijn gemaakt (NPR-31336).
+* DAM Event Purge verwijdert de meest recente (`maxSavedActivities`) gebeurtenisgegevens en slaat de eerder gemaakte gegevens op (NPR-31336).
 
 * De resultatenpagina Touch UI-zoekopdracht (uitgevoerd via Omnissearch) wordt automatisch naar boven geschoven en verliest de schuifpositie van de gebruiker (NPR-31307).
 
@@ -393,22 +388,27 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 
 * Als de overerving van LiveCopy is verbroken, worden op live kopieerpagina&#39;s links naar taalkopieën weergegeven in plaats van LiveCopy-koppelingen (NPR-30980).
 * Voor een nieuwe blauwdruk, als het aantal verslagen meer dan 40 is, slechts worden de eerste 40 verslagen getoond. Blauwdruk geeft lege regels weer voor de rest van de records (NPR-31182).
-* Wanneer een gebruiker Japanse of Koreaanse karakters in het beschrijvingsbezit van een menu toevoegt, toont het menu vervormde karakters voor Japanse en Koreaanse taaltekst. (NPR-31331).
+* Wanneer een gebruiker Japanse of Koreaanse karakters in het beschrijvingsbezit van een menu toevoegt, toont het menu vervormde karakters voor Japans en Koreaans taaltekst (NPR-31331).
 * De Rich Text Editor (RTE) staat niet toe om een ingesloten tabel in te voegen als lijstitem (NPR-30879).
 * Buiten het vak, de basislijn van de Rich Text Editor (RTE). past inline font-size toe op elementen, onverwacht (NPR-31284).
 * Wanneer een gebruiker de linkerspoorgebieden concentreert en een toetsenbordkortere weg gebruikt om inhoud te kleven, kleeft het de inhoud van het paginageditor klembord in plaats van de inhoud die van de linkerspoorgebieden wordt gekopieerd (NPR-31172).
 * Wanneer een gebruiker een veld Bestand uploaden toevoegt aan een veld met meerdere velden, wordt het afbeeldingspad opgeslagen in het componentknooppunt in plaats van het knooppunt met meerdere velden (NPR-30882).
-* De API ResponsiveGridExporter retourneert de interface com.day.cq.wcm.foundation.model.impl.export.AllowedComponentsExporter niet. Het pakket com.day.cq.wcm.foundation.model.impl wordt gedeclareerd als een privépakket (NPR-31398).
-* Wanneer een pagina die sommige ExperienceFragments bevat op niet redacteurswijze (of in Auteur zonder het `editor.html` voorvoegsel en `wcmmode=disabled`, of in Uitgever) wordt geopend., beëindigt het verzoek in code 500 van de de statusfout van HTTP (NPR-30743).
+* De `ResponsiveGridExporter` API retourneert geen `com.day.cq.wcm.foundation.model.impl.export.AllowedComponentsExporter` interface. Het `com.day.cq.wcm.foundation.model.impl` pakket wordt gedeclareerd als een particulier pakket (NPR-31398).
+
+<!-- Review: NPR-31398 has fixVersion as 6530. However, it is mentioned twice in 6530 and 6520 as fixed. 
+Remove one mention of this fix.
+-->
+
+* Wanneer een pagina met bepaalde fragmenten van de Ervaring in niet redacteurswijze (of in Auteur zonder het `editor.html` voorvoegsel en `wcmmode=disabled`, of in Uitgever) wordt geopend., beëindigt het verzoek in de code van de de statusfout van HTTP `500` (NPR-30743).
 * Gebruikers kunnen hun wachtwoord niet wijzigen en toegang krijgen tot hun profielpagina (NPR-31161).
 
 ### Zoeken en gebruikersinterface {#search-ui-interface}
 
-* Wanneer u op een pagina met zoekresultaten overschakelt van de weergave Kaart naar de weergave Lijst, is er een vertraging voordat de pagina kan worden geschoven (NPR-31286).
+* Wanneer u op een pagina met zoekresultaten overschakelt van de kaartweergave naar de lijstweergave, is er een vertraging voordat de pagina kan worden geschoven (NPR-31286).
 
-* Het selectievakje Alles selecteren is verborgen in de lijstweergave op de [!DNL Sites] gebruikersinterface (NPR-31614).
+* Het [!UICONTROL Select All] selectievakje is verborgen in de lijstweergave in de [!DNL Sites] gebruikersinterface (NPR-31614).
 
-* Het aantal selecties op een pagina met zoekresultaten is onjuist (NPR-31120).
+* Het [!UICONTROL Select All] aantal op een pagina met zoekresultaten is onjuist (NPR-31120).
 
 * In de metagegevenseditor worden tags weergegeven die niet bestaan (NPR-31119).
 
@@ -475,7 +475,7 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 
 >[!NOTE]
 >
->[!DNL Experience Manager] Service Pack bevat geen oplossingen voor [!DNL Experience Manager Forms]. Ze worden geleverd met behulp van een apart Forms add-on pakket. Daarnaast wordt een cumulatief installatieprogramma uitgebracht dat oplossingen voor [!DNL Experience Manager Forms] JEE bevat. Zie Invoegtoepassing [van Experience Manager Forms](#install-aem-forms-add-on-package) installeren en Formulieren Experience Manager [installeren op JEE](#install-aem-forms-jee-installer)voor meer informatie.
+>[!DNL Experience Manager] Service Pack bevat geen oplossingen voor [!DNL Experience Manager Forms]. Ze worden geleverd met behulp van een apart Forms add-on pakket. Daarnaast wordt een cumulatief installatieprogramma uitgebracht dat oplossingen voor [!DNL Experience Manager Forms] JEE bevat. Zie Invoegtoepassing [van Experience Manager Forms](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) installeren en Formulieren Experience Manager [installeren op JEE](/help/release-notes/sp-release-notes.md#install-aem-forms-jee-installer)voor meer informatie.
 
 #### Formulierinvoegpakket {#forms-add-on-package-6530}
 
@@ -603,15 +603,15 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 
 ### Sites {#sites-6520}
 
-* Als de overerving van LiveCopy is verbroken, worden op live kopieerpagina&#39;s links voor taalkopieën weergegeven in plaats van LiveCopy-koppelingen. (NPR-30980)
-* Voor een nieuwe blauwdruk worden alleen de eerste 40 records weergegeven als het aantal records groter is dan 40. Met Vervagen worden lege regels weergegeven voor de rest van de records. (NPR-31182)
-* Plug-in Rich Text Editor (RTE) van de tekstcomponent geeft vervormde tekens voor Japanse en Koreaanse tekst weer. (NPR-31331)
-* De Rich Text Editor (RTE) staat niet toe om een ingesloten tabel in te voegen als lijstitem. (NPR-30879)
-* Buiten het vak wordt onverwachts de inline tekengrootte toegepast op elementen met de basisstructuur Rich Text Editor (RTE). (NPR-31284)
-* Wanneer een gebruiker de linkerspoorgebieden concentreert en toetsenbordkortere weg gebruikt om inhoud te kleven, kleeft het inhoud van pagina redacteurs klembord in plaats van de inhoud die van linkerspoorgebieden wordt gekopieerd. (NPR-31172)
-* Wanneer een gebruiker een veld Bestand uploaden toevoegt aan een veld met meerdere velden, wordt het afbeeldingspad opgeslagen in het componentknooppunt in plaats van het knooppunt met meerdere velden. (NPR-30882)
-* De API ResponsiveGridExporter retourneert de interface com.day.cq.wcm.foundation.model.impl.export.AllowedComponentsExporter niet. Het pakket com.day.cq.wcm.foundation.model.impl wordt gedeclareerd als een privépakket. (NPR-31398)
-* Wanneer een pagina die sommige ExperienceFragments bevat op niet redacteurswijze (of in Auteur zonder de `editor.html` prefix en `wcmmode=disabled`, of in Uitgever) wordt geopend, beëindigt het verzoek in code 500 van de de statusfout van HTTP. (NPR-30743)
+* Als de overerving van LiveCopy is verbroken, worden op live kopieerpagina&#39;s links naar taalkopieën weergegeven in plaats van LiveCopy-koppelingen (NPR-30980).
+* Voor een nieuwe blauwdruk worden alleen de eerste 40 records weergegeven als het aantal records groter is dan 40. Met Blueprint worden lege regels weergegeven voor de rest van de records (NPR-31182).
+* Plug-in Rich Text Editor (RTE) van de tekstcomponent geeft vervormde tekens voor Japanse en Koreaanse tekst weer (NPR-31331).
+* De Rich Text Editor (RTE) staat niet toe om een ingesloten tabel in te voegen als lijstitem (NPR-30879).
+* De RTE (Rich Text Editor) is een onverwacht gealigneerde tekengrootte van buiten het vak en past deze onverwacht toe op elementen (NPR-31284).
+* Wanneer een gebruiker de linkerspoorgebieden concentreert en toetsenbordkortere weg gebruikt om inhoud te kleven, kleeft het inhoud van pagina redacteurs klembord in plaats van de inhoud die van linkerspoorgebieden wordt gekopieerd (NPR-31172).
+* Wanneer een gebruiker een veld Bestand uploaden toevoegt aan een veld met meerdere velden, wordt het afbeeldingspad opgeslagen in het componentknooppunt in plaats van het knooppunt met meerdere velden (NPR-30882).
+* De `ResponsiveGridExporter` API retourneert geen `com.day.cq.wcm.foundation.model.impl.export.AllowedComponentsExporter` interface. Het `com.day.cq.wcm.foundation.model.impl` pakket wordt gedeclareerd als privé-pakket (NPR-31398).
+* Wanneer een pagina met bepaalde fragmenten van de Ervaring in niet redacteurswijze (of in Auteur zonder het `editor.html` voorvoegsel en `wcmmode=disabled`, of in Uitgever) wordt geopend, beëindigt het verzoek in code 500 van de de statusfout van HTTP (NPR-30743).
 
 ### WCM - Pagina-editor {#wcm-page-editor-6520}
 
@@ -659,7 +659,7 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 
 >[!NOTE]
 >
->[!DNL Experience Manager] Service Pack bevat geen oplossingen voor [!DNL Experience Manager Forms]. Ze worden geleverd met een apart [!DNL Forms] invoegpakket. Daarnaast wordt een cumulatief installatieprogramma uitgebracht dat oplossingen voor [!DNL Experience Manager Forms] JEE bevat. Zie Invoegtoepassing [van Experience Manager Forms](#install-aem-forms-add-on-package) installeren en JEE-installatieprogramma [van Experience Manager](#forms-jee-installer)installeren voor meer informatie.
+>[!DNL Experience Manager] Service Pack bevat geen oplossingen voor [!DNL Experience Manager Forms]. Ze worden geleverd met een apart [!DNL Forms] invoegpakket. Daarnaast wordt een cumulatief installatieprogramma uitgebracht dat oplossingen voor [!DNL Experience Manager Forms] JEE bevat. Zie Invoegtoepassing [van Experience Manager Forms](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) installeren en JEE-installatieprogramma [van Experience Manager](#forms-jee-installer)installeren voor meer informatie.
 
 De belangrijkste markeringen voor [!DNL Experience Manager] 6.5.2.0 vormen zijn:
 
@@ -746,7 +746,7 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 * Ondersteuning voor beheer van meerdere sites ingeschakeld voor [!DNL Experience Manager Assets]. Hotfix voor CQ-4271453, CQ-4268621, CQ-4257491
 * [!DNL Experience Manager] een extra item voor de huidige versie van het element in de tijdlijngeschiedenis weer te geven, waarbij de laatste incheckopmerking van [!DNL Adobe Asset Link]wordt weergegeven. Hotfix voor CQ-4262864
 * In de tijdlijn van het inhoudsfragment wordt een foutbericht weergegeven wanneer eigenschappen ontbreken. Hotfix voor CQ-4272560
-* Een probleem met de videospeler van Scene 7 wanneer uitgevouwen aan volledig scherm. Hotfix voor CQ-4266700
+* Een kwestie met Scene7 videospeler wanneer uitgebreid aan het volledige scherm. Hotfix voor CQ-4266700
 * ZoomVerticalViewer: Panknoppen mogen niet worden weergegeven als één afbeeldingselement wordt gebruikt. Hotfix voor CQ-4264795
 * Wanneer u een onderliggende node in de live kopie verwijdert, moet de liveRelationship worden losgekoppeld. Hotfix voor CQ-4270395
 * Het meta-gegevensschema bevat slechts punten van de globale configuratie en mist degenen van de actieve huurder. De URL-waarde van het formPath wordt weer ingesteld op de standaardwaarde, zelfs als deze wordt gewijzigd. NPR-29945: Hotfix voor CQ-4262898

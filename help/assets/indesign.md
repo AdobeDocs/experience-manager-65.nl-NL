@@ -3,9 +3,9 @@ title: '[!DNL Adobe Experience Manager Assets] integreren met [!DNL Adobe InDesi
 description: Leer hoe u [!DNL Adobe Experience Manager Assets] kunt integreren met [!DNL Adobe InDesign Server].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
 workflow-type: tm+mt
-source-wordcount: '1548'
+source-wordcount: '1547'
 ht-degree: 1%
 
 ---
@@ -195,18 +195,19 @@ Om het aantal parallelle banen te vormen IDS:
 
    Als er meerdere computers actief zijn [!DNL InDesign Server], voegt u SOAP-eindpunten (aantal processors per computer -1) toe voor elke computer.
 
-   >[!NOTE]
-   >
-   >U kunt kiezen of u Blacklist wilt inschakelen voor IDS-workers wanneer u werkt met een groep workers.
-   >
-   >
-   >Om dit te doen, laat **[!UICONTROL enable.retry.name]** checkbox, onder de `com.day.cq.dam.ids.impl.IDSJobProcessor.name` configuratie toe, die IDS baanterugwinning toelaat.
-   >
-   >
-   >Ook, onder de `com.day.cq.dam.ids.impl.IDSPoolImpl.name` configuratie, plaats een positieve waarde voor `max.errors.to.blacklist` parameter die aantal baanterugwinnen alvorens IDS van de lijst van baanmanagers bepaalt.
-   >
-   >
-   >Door gebrek, na de configureerbare tijd (retry.interval.to.whitelist.name) in notulen wordt de worker IDS opnieuw bevestigd. Als de worker online wordt gevonden, wordt deze verwijderd van de zwarte lijst.
+<!-- 
+TBD: Make updates to configurations for allow and block list after product updates are done.
+-->
+
+>[!NOTE]
+>
+>Wanneer u werkt met een pool met workers, kunt u een geblokkeerde lijst met IDS-workers inschakelen.
+>
+>Om dit te doen, laat **[!UICONTROL enable.retry.name]** checkbox, onder de `com.day.cq.dam.ids.impl.IDSJobProcessor.name` configuratie toe, die IDS baanterugwinning toelaat.
+>
+>Ook, onder de `com.day.cq.dam.ids.impl.IDSPoolImpl.name` configuratie, plaats een positieve waarde voor `max.errors.to.blacklist` parameter die aantal baanterugwinnen alvorens IDS van de lijst van baanmanagers bepaalt.
+>
+>De IDS-worker wordt standaard opnieuw gevalideerd nadat de configureerbare (`retry.interval.to.whitelist.name`) tijd in minuten is verstreken. Als de worker online wordt gevonden, wordt deze verwijderd uit de geblokkeerde lijst.
 
 ## Ondersteuning inschakelen voor [!DNL InDesign Server] 10.0 of hoger {#enabling-support-for-indesign-server-or-later}
 

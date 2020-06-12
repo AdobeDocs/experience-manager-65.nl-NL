@@ -3,7 +3,7 @@ title: Elementen voorbereiden voor vertaling
 description: Maak hoofdmappen voor talen om elementen voor te bereiden voor vertaling ter ondersteuning van meertalige middelen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 0%
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 Meertalige elementen zijn elementen met binaire getallen, metagegevens en tags in meerdere talen. Over het algemeen bestaan binaire bestanden, metagegevens en tags voor elementen in één taal, die vervolgens naar andere talen worden vertaald voor gebruik in meertalige projecten.
 
-In Adobe Experience Manager-middelen worden meertalige middelen opgenomen in mappen, waarin elke map de middelen in een andere taal bevat.
+In Adobe Experience Manager Assets worden meertalige middelen opgenomen in mappen, waarbij elke map de middelen in een andere taal bevat.
 
 Elke taalmap wordt een taalkopie genoemd. De hoofdmap van een taalkopie, de hoofdtaal genoemd, identificeert de taal van de inhoud in de taalkopie. Bijvoorbeeld: */content/dam/it* is de Italiaanse taalbasis voor de Italiaanse taalkopie. De exemplaren van de taal moeten een [correct-gevormde taalwortel](preparing-assets-for-translation.md#creating-a-language-root) gebruiken zodat de correcte taal wordt gericht wanneer de vertalingen van bronactiva worden uitgevoerd.
 
-De taalkopie waarvoor u oorspronkelijk elementen toevoegt, is de hoofdtaal. De taalmaster is de bron die in andere talen wordt vertaald. Een voorbeeld van een maphiërarchie bevat verschillende taalwortels:
+De taalkopie waarvoor u oorspronkelijk elementen toevoegt, is de primaire taal. De primaire taal is de bron die in andere talen wordt vertaald. Een voorbeeld van een maphiërarchie bevat verschillende taalwortels:
 
 ```
  /content
@@ -35,9 +35,9 @@ De taalkopie waarvoor u oorspronkelijk elementen toevoegt, is de hoofdtaal. De t
 
 Voer de volgende stappen uit om uw middelen voor vertaling voor te bereiden:
 
-1. Maak de hoofdmap van de taal van het stramien. De hoofdmap voor de Engelse taal in de voorbeeldmaphiërarchie is bijvoorbeeld `/content/dam/en`. Zorg ervoor dat de hoofdmap van de taal correct is geconfigureerd volgens de informatie in [Een hoofdmap](preparing-assets-for-translation.md#creating-a-language-root)maken.
+1. Maak de hoofdtaalhoofdmap van uw primaire taal. De hoofdmap voor de Engelse taal in de voorbeeldmaphiërarchie is bijvoorbeeld `/content/dam/en`. Zorg ervoor dat de hoofdmap van de taal correct is geconfigureerd volgens de informatie in [Een hoofdmap](preparing-assets-for-translation.md#creating-a-language-root)maken.
 
-1. Voeg elementen toe aan uw taalstramien.
+1. Voeg middelen toe aan uw primaire taal.
 1. Creeer de taalwortel van elke doeltaal waarvoor u een taalexemplaar vereist.
 
 ## Een hoofdmap voor talen maken {#creating-a-language-root}
@@ -60,7 +60,7 @@ De hoofdpagina van de Italiaanse taalkopie van de voorbeeldhiërarchie heeft bij
 
 De interface van de Manager van de ervaring verstrekt een **[!UICONTROL References]** paneel dat een lijst van taalwortels toont die binnen Elementen zijn gecreeerd.
 
-1. Selecteer in de middelenconsole de hoofdtaal waarvoor u taalkopieën wilt maken.
+1. Selecteer in de middelenconsole de primaire taal waarvoor u taalkopieën wilt maken.
 1. Klik op het pictogram GlobalNav en kies **[!UICONTROL References]** om het [!UICONTROL Reference] deelvenster te openen.
 
    ![chlimage_1-122](assets/chlimage_1-122.png)

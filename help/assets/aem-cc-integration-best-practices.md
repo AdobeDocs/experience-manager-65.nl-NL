@@ -1,11 +1,11 @@
 ---
 title: Aanbevolen werkwijzen voor de integratie met Adobe Creative Cloud en [!DNL Adobe Experience Manager].
-description: Aanbevolen procedures om [!DNL Adobe Experience Manager] te integreren met [!DNL Adobe Creative Cloud] om workflows voor middelenoverdracht te stroomlijnen en een hoge snelheid van de inhoud te bereiken.
+description: Aanbevolen procedures voor de integratie van [!DNL Adobe Experience Manager] met [!DNL Adobe Creative Cloud] om workflows voor de overdracht van middelen te stroomlijnen en een hoge snelheid van de inhoud te bereiken.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
 workflow-type: tm+mt
-source-wordcount: '3260'
+source-wordcount: '3262'
 ht-degree: 16%
 
 ---
@@ -121,7 +121,7 @@ Om een efficiënte werkstroom tussen creatieve en marketing/lijn-van-zaken (LOB)
 
 Door middelen in DAM op te slaan, zijn ze gemakkelijk toegankelijk en te vinden. Het zorgt ervoor dat de activa door talrijke gebruikers over de organisatie of het ecosysteem kunnen worden gebruikt, dat partners, klanten, etc. omvat.
 
-De meeste organisaties kiezen ervoor alleen middelen op te slaan die relevant zijn voor de downstream marketing-/LOB-processen (publiceren naar kanalen zoals het webkanaal via [!DNL Experience Manager Sites] of andere kanalen die worden aangeboden door Adobe Experience Cloud - Marketing Cloud, Advertising Cloud en gemeten door Analytics Cloud, leveren aan gebruikers/partners, enzovoort). Bovendien slaan organisaties activa op die aan een overzicht/goedkeuringsprocedure in DAM kunnen worden onderworpen. Op deze manier slaat DAM vooral activa op die een hoge kans hebben om te worden gebruikt, en vermijdt het opslaan van niet-actieve activa.
+De meeste organisaties kiezen ervoor om activa slechts op te slaan die voor de stroomafwaartse marketing/LOB processen relevant zijn (het publiceren aan kanalen zoals Webkanaal via [!DNL Experience Manager Sites] of andere kanalen die door Adobe Experience Cloud - Marketing Cloud, Advertising Cloud worden gediend, en door Analytics Cloud worden gemeten, die aan gebruikers/partners, etc. verstrekken). Bovendien slaan organisaties activa op die aan een overzicht/goedkeuringsprocedure in DAM kunnen worden onderworpen. Op deze manier slaat DAM vooral activa op die een hoge kans hebben om te worden gebruikt, en vermijdt het opslaan van niet-actieve activa.
 
 De opslag van activa is ook onderworpen aan technische overwegingen en middelgebruik. DAM verleent de extra diensten rond opgeslagen activa, met inbegrip van het halen van meta-gegevens, het versioning, het produceren van voorproeven/het transcoderen, het beheren van verwijzingen, en het toevoegen van toegangsbeheerinformatie. Deze diensten verbruiken extra tijd en infrastructuurmiddelen.
 
@@ -160,7 +160,7 @@ Hieronder volgen voorbeelden van updates die doorgaans niet relevant zijn:
 
 #### Creatieve gebruikers met directe toegang tot DAM {#creative-users-with-direct-access-to-dam}
 
-Doorgaans hebben interne creatieve teams of agentschappen/creatieve professionals die aan het interne netwerk zijn toegewezen, toegang tot het DAM-exemplaar, inclusief [!DNL Experience Manager] aanmelding. [!DNL Experience Manager] en de netwerkinfrastructuur kan opstelling zijn om directe toegang tot externe partijen - gewoonlijk vertrouwde organisaties zoals agentschappen die voor een cliënt werken - te verlenen om toegang tot [!DNL Experience Manager] over netwerk, bijvoorbeeld via VPN of IP whitelisting te hebben.
+Doorgaans hebben interne creatieve teams of agentschappen/creatieve professionals die aan het interne netwerk zijn toegewezen, toegang tot het DAM-exemplaar, inclusief [!DNL Experience Manager] aanmelding. [!DNL Experience Manager] en de netwerkinfrastructuur kan opstelling zijn om directe toegang tot externe partijen - gewoonlijk vertrouwde organisaties zoals agentschappen toe te staan die voor een cliënt werken - toegang tot [!DNL Experience Manager] over netwerk, bijvoorbeeld via VPN of IP toegestane lijst te hebben.
 
 In dergelijke gevallen helpt de Adobe Asset Link- of [!DNL Experience Manager] bureaubladtoepassing u eenvoudig toegang te krijgen tot definitieve/goedgekeurde middelen en kunt u creatieve middelen opslaan naar DAM.
 
@@ -173,7 +173,7 @@ Gebruik de volgende strategieën om toegang te verlenen tot definitieve/goedgeke
 * Gebruik de bureaubladtoepassing als Asset Link niet werkt.
 * Het Portaal [van het Merk van de Manager van de](https://helpx.adobe.com/nl/experience-manager/brand-portal/user-guide.html) Ervaring gebruiken om activa veilig aan externe partners te verdelen
 * Gebruik een aangepaste implementatie van een distributie- en sourcingportal op basis van [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
-* Het Toegangsbeheer van het gebruik opstelling in [!DNL Experience Manager] en noodzakelijke netwerkinfrastructuur (bijvoorbeeld, VPN en IP fluitend) om externe partijen toegang tot een specifiek gebied van inhoud in uw DAM te geven. Ze kunnen de [!DNL Experience Manager] webinterface gebruiken om elementen op te halen en nieuwe inhoud te uploaden naar uw DAM.
+* De opstelling van het Toegangsbeheer van het gebruik in [!DNL Experience Manager] en noodzakelijke netwerkinfrastructuur (bijvoorbeeld, VPN en IP toegestaan lijst) om externe partijen toegang tot een specifiek gebied van inhoud in uw DAM te geven. Ze kunnen de [!DNL Experience Manager] webinterface gebruiken om elementen op te halen en nieuwe inhoud te uploaden naar uw DAM.
 
 #### Werk bezig met middelen van [!DNL Experience Manager] {#work-in-progress-on-assets-from-aem}
 
@@ -213,7 +213,7 @@ Als u Delen van netwerkbestanden gebruikt om digitale elementen te beheren, kan 
 
 Vermijd het gebruik van de [!DNL Experience Manager] bureaubladtoepassing voor het rechtstreeks beheren van elementen in het netwerkaandeel van [!DNL Assets]. Vermijd bijvoorbeeld het gebruik van de [!DNL Experience Manager] bureaubladtoepassing voor het verplaatsen/kopiëren van meerdere bestanden. Gebruik in plaats daarvan de [!DNL Assets] interface om mappen van Finder/Explorer naar het gedeelde netwerk te slepen of gebruik de functie [!DNL Assets] Map uploaden.
 
-#### Migratie van middelen {#asset-migration}
+#### Asset migration {#asset-migration}
 
 Raadpleeg de [migratiehandleiding](/help/assets/assets-migration-guide.md)voor informatie over het plannen en uitvoeren van migratie van middelen van een bestaand systeem naar een nieuw systeem of het migreren van grote hoeveelheden middelen die op servers zijn opgeslagen. [!DNL Experience Manager] bureaubladtoepassingen en [!DNL Experience Manager] voor [!DNL Creative Cloud] integratie bieden geen ondersteuning voor dergelijke migraties. Vanwege de grote hoeveelheden in te nemen elementen en de extra vereisten met betrekking tot het in kaart brengen van metagegevens, transformatie en opname, moeten migraties met verschillende gereedschappen en benaderingen worden afgehandeld.
 

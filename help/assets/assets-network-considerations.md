@@ -1,11 +1,11 @@
 ---
 title: Overwegingen en vereisten van het middelennetwerk
-description: Bespreekt netwerkoverwegingen wanneer het ontwerpen van een plaatsing van de Middelen van de Manager van de Ervaring van Adobe.
+description: Bespreekt netwerkoverwegingen wanneer het ontwerpen van een plaatsing van de Middelen van de Adobe Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
 workflow-type: tm+mt
-source-wordcount: '1026'
+source-wordcount: '1029'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Elementennetwerkoverwegingen {#assets-network-considerations}
 
-Kennis van uw netwerk is net zo belangrijk als het begrijpen van Adobe Experience Manager-middelen. Het netwerk kan uploaden, downloaden, en gebruikerservaring beïnvloeden. Het Diagrammen van uw hulp van de netwerktopologie identificeert onderdrukkingspunten en sub-geoptimaliseerde gebieden in het netwerk die u moet bevestigen om netwerkprestaties en gebruikerservaring te verbeteren.
+Kennis van uw netwerk is net zo belangrijk als het begrijpen van Adobe Experience Manager Assets. Het netwerk kan uploaden, downloaden, en gebruikerservaring beïnvloeden. Het Diagrammen van uw hulp van de netwerktopologie identificeert onderdrukkingspunten en sub-geoptimaliseerde gebieden in het netwerk die u moet bevestigen om netwerkprestaties en gebruikerservaring te verbeteren.
 
 Zorg ervoor dat u het volgende in uw netwerkdiagram omvat:
 
@@ -42,13 +42,13 @@ De computer die aan het recht wordt getoond heeft een beperkt stroomopwaarts aan
 
 ## Topologie van het collectieve netwerk {#topology-of-the-corporate-network}
 
-![chlimage_1-356](assets/chlimage_1-354.png)
+![chlimage_1-354](assets/chlimage_1-354.png)
 
 Het diagram toont hogere opstraalverbindingssnelheden binnen het collectieve netwerk dan wat over het algemeen wordt gebruikt. Deze buizen zijn gedeelde bronnen. Als de gedeelde schakelaar wordt verwacht om 50 cliënten te behandelen, kan het potentieel een onderdrukking-punt zijn. In het aanvankelijke diagram, delen slechts twee computers de bijzondere verbinding.
 
 ## Uploaden naar internet vanuit de omgeving van het bedrijfsnetwerk en Experience Manager {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
 
-![chlimage_1-355](assets/chlimage_1-355.png)
+![chlimage_1-353](assets/chlimage_1-355.png)
 
 Het is belangrijk om onbekende factoren op Internet en de verbinding te overwegen VPC omdat de bandbreedte over Internet wegens pieklading of grootschalig leveranciersstroomonderbrekingen kan worden verminderd. Over het algemeen is internetconnectiviteit betrouwbaar. Soms kan dit echter wel leiden tot een verschuiving.
 
@@ -58,7 +58,7 @@ De firewalls en de volmachten van de onderneming kunnen bandbreedte op vele vers
 
 In dit voorbeeld heeft de onderneming een opstraalverbinding van 10 Gbps. Het moet groot genoeg zijn voor meerdere clients. Bovendien legt de firewall een grens van het gastheertarief van 10 Mbps op. Deze beperking kan verkeer aan één enkele gastheer aan 10 Mbps potentieel vertragen, alhoewel de opstraalverbinding aan Internet bij 10 Gbps is.
 
-Dit is het kleinste clientgeoriënteerde onderdrukkingspunt. Nochtans, kunt u voor een verandering evalueren of flits met de groep van netwerkverrichtingen die met deze firewall wordt belast.
+Dit is het kleinste clientgeoriënteerde onderdrukkingspunt. Nochtans, kunt u voor een verandering evalueren of een toegelaten lijst vormen met de groep van netwerkverrichtingen die voor deze firewall wordt belast.
 
 Van de steekproefdiagrammen, kunt u concluderen dat zes apparaten een conceptueel kanaal 10Mbps delen. Afhankelijk van de omvang van de hefboomwerking van de activa, kan dit ontoereikend zijn om aan gebruikersverwachtingen te voldoen.
 
@@ -68,7 +68,7 @@ Van de steekproefdiagrammen, kunt u concluderen dat zes apparaten een conceptuee
 
 Het ontwerpen van de topologie van het milieu van de Manager van de Ervaring vereist gedetailleerde kennis van de systeemconfiguratie en hoe het netwerk binnen het gebruikersmilieu wordt aangesloten.
 
-Het steekproefscenario omvat publiceer landbouwbedrijf met vijf servers, een S3 binaire opslag, en Dynamische gevormde Media.
+Het steekproefscenario omvat publiceer landbouwbedrijf met vijf servers, een S3 binaire opslag, en gevormde Dynamic Media.
 
 De dispatcher deelt het 100Mbps verbinding met twee entiteiten, de buitenwereld en de instantie van de Manager van de Ervaring is. Voor gelijktijdige upload- en downloadbewerkingen moet u dit getal door twee delen. De externe opslag in de bijlage gebruikt een aparte verbinding.
 

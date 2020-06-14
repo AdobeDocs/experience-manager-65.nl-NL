@@ -4,7 +4,7 @@ description: Nieuw in Adobe Experience Manager 6.5 Service Pack 5
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b2b8178f96d1e0a551a58ba649443aa03f0608ac
+source-git-commit: d7276f332bece4f736d92e5723d79ffc2d27e900
 workflow-type: tm+mt
 source-wordcount: '1839'
 ht-degree: 0%
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # Nieuw in Adobe Experience Manager 6.5 Service Pack 5 {#aem-whats-new-service-pack-5}
 
-De de dienstpakken van de Manager 6.5 van de Ervaring van Adobe verstrekken nieuwe eigenschappen, klant-gevraagde verhogingen, en prestaties, stabiliteit, en veiligheidsverbeteringen met kwartaalintervallen. De beschikbaarheid op kwartaalbasis maakt het gemakkelijk om tot nieuwe eigenschappen en innovaties toegang te hebben en te nemen.
+Adobe Experience Manager 6.5 de dienstpakken verstrekken nieuwe eigenschappen, klant-gevraagde verhogingen, en prestaties, stabiliteit, en veiligheidsverbeteringen op kwartaalintervallen. De beschikbaarheid op kwartaalbasis maakt het gemakkelijk om tot nieuwe eigenschappen en innovaties toegang te hebben en te nemen.
 
 Dit artikel benadrukt de eigenschappen inbegrepen in het recentste 6.5 Service Pack, [belangrijkste eigenschappen inbegrepen in de vorige 6.5 Pakken](#key-features-previous-service-packs)van de Dienst, en sommige van de [belangrijkste versies sinds de Versie van de Manager van de Ervaring 6.5.4.0](#key-releases-since-last-sp) .
 
-## Sites van Adobe Experience Manager {#aem-sites}
+## Sites Adobe Experience Managers {#aem-sites}
 
 ### Toegankelijkheidsverbeteringen {#accessibility-sites}
 
@@ -56,9 +56,9 @@ Dit artikel benadrukt de eigenschappen inbegrepen in het recentste 6.5 Service P
 
 * Veel elementen, besturingselementen en invoerformuliervelden van de gebruikersinterface zijn toegankelijk via het toetsenbord.
 
-* De kleur- en contrastverhouding van bepaalde elementen van de gebruikersinterface worden bijgewerkt, zodat gebruikers met een beperkt gezichtsvermogen of gebruikers zonder kleurperceptie deze elementen van de gebruikersinterface kunnen onderscheiden. De kleur van sterrenbeoordelingspictogrammen (zoals in de [!UICONTROL Rating] sectie van het [!UICONTROL Advanced] tabblad in het element [!UICONTROL Properties] of in de kaartweergave) wordt bijvoorbeeld gewijzigd voor het juiste contrast.
+* De kleur en het contrast van bepaalde elementen van de gebruikersinterface worden bijgewerkt, zodat gebruikers met een beperkt gezichtsvermogen of gebruikers zonder kleurperceptie deze elementen van de gebruikersinterface kunnen onderscheiden. De kleur van sterrenbeoordelingspictogrammen (zoals in de [!UICONTROL Rating] sectie van het [!UICONTROL Advanced] tabblad in het element [!UICONTROL Properties] of in de kaartweergave) wordt bijvoorbeeld gewijzigd voor het juiste contrast.
 
-   ![Classificatiepictogrammen met verbeterde contrastverhouding](assets/star-rating-icons.png)
+   ![Classificatiepictogrammen met verbeterd contrast](assets/star-rating-icons.png)
 
 ### Uitgebreide uitzonderingsverwerking {#exception-handling}
 
@@ -76,7 +76,7 @@ Met ondersteuning voor 3D-afbeeldingen in [!DNL Dynamic Media] kunnen klanten 3D
 
 ## Adobe Experience Manager Forms {#aem-forms}
 
-### De kolommen in het Postvak In van Adobe Experience Manager aanpassen {#customize-aem-inbox-columns}
+### De kolommen in de Adobe Experience Manager Inbox aanpassen {#customize-aem-inbox-columns}
 
 U kunt een [!DNL Experience Manager] Postvak IN aanpassen om de standaardtitel van een kolom te wijzigen, de positie van een kolom opnieuw te ordenen en extra kolommen weer te geven op basis van de gegevens van een workflow. Leden van `administrators` of `workflow-administrators` groep kunnen de kolommen aanpassen.
 
@@ -90,7 +90,7 @@ U kunt de Agent UI gebruiken om één of meerdere concepten voor elke Interactie
 
 ### [!DNL Oracle WebLogic] toepassingsserverondersteuning {#weblogic-support}
 
-Adobe Experience Manager Forms heeft extra ondersteuning toegevoegd voor [!DNL Oracle WebLogic 12] Adobe Experience Manager Forms on JEE. U kunt een upgrade uitvoeren van een vorige versie of een nieuwe Experience Manager 6.5 Forms instellen op JEE-server op [!DNL Oracle WebLogic] 12.2.1.4 en hoger. Later komt dit overeen met de kleine versiewijzigingen, waarbij x in 12.2.1.x wordt vervangen door een versienummer.
+De Vormen van de Adobe Experience Manager heeft steun voor [!DNL Oracle WebLogic 12] de Vormen van de Adobe Experience Manager op JEE toegevoegd. U kunt een upgrade uitvoeren van een vorige versie of een nieuwe Experience Manager 6.5 Forms instellen op JEE-server op [!DNL Oracle WebLogic] 12.2.1.4 en hoger. Later komt dit overeen met de kleine versiewijzigingen, waarbij x in 12.2.1.x wordt vervangen door een versienummer.
 
 ### Toegankelijkheidsverbeteringen {#accessibility-improvements}
 
@@ -146,9 +146,10 @@ De stappen om [!DNL Experience Manager Assets] met [!DNL Brand Portal] te vormen
 
 * De selectievakjes voor gemengde status (waarin de selectievakjes voor het eerste niveau niet zijn geselecteerd en zijn doorgehaald) in het deelvenster Filters zijn leesbaar voor schermlezers, tenzij u alle geneste selectievakjes selecteert.
 
-* Er zijn beperkingen in de datum- en tijdnotatie opgenomen in veldlabels van datumvelden, zodat gebruikers de datum in de juiste notatie kunnen invoeren met het toetsenbord. Bijvoorbeeld, `On Time (MM-DD-YYYY HH:mm)`. Hier is MM maand in het formaat van twee cijfers, YYYY is jaar, DD is dag in het formaat van twee cijfers, HH is uur in 24-uurs militair formaat, en mm is minuut.
+* Er zijn beperkingen in de datum- en tijdnotatie opgenomen in veldlabels van datumvelden, zodat gebruikers de datum in de juiste notatie kunnen invoeren met het toetsenbord.
+Bijvoorbeeld, `On Time (MM-DD-YYYY HH:mm)`. Hier is MM maand in het formaat van twee cijfers, YYYY is jaar, DD is dag in het formaat van twee cijfers, HH is uur in 24-uurs militair formaat, en mm is minuut.
 
-* Schermlezers kondigen het `X` symbool aan om de geselecteerde tags en het aantal geselecteerde tags te verwijderen.
+* Schermlezers kondigen nu het `X` symbool aan om de geselecteerde tags samen met het aantal geselecteerde tags te verwijderen.
 
 #### Visueel zoeken naar [!DNL Adobe Experience Manager Assets] (6.5.2.0) {#visual-search}
 
@@ -156,11 +157,11 @@ De stappen om [!DNL Experience Manager Assets] met [!DNL Brand Portal] te vormen
 
 ###  Dynamic Media {#dynamic-media-previous-service-packs}
 
-#### Smart Imaging voor dynamische media {#smart-imaging}
+#### Smart Imaging voor Dynamic Media {#smart-imaging}
 
 Slimme beeldverwerking gebruikt de unieke weergavekenmerken van elke gebruiker om automatisch de juiste afbeeldingen te leveren die zijn geoptimaliseerd voor zijn of haar ervaring, wat resulteert in betere prestaties en betrokkenheid. Slimme beeldverwerking werkt met bestaande voorinstellingen voor afbeeldingen en maakt gebruik van intelligentie tijdens de laatste milliseconde van levering om de bestandsgrootte van de afbeelding verder te beperken op basis van de snelheid van de browser of netwerkverbinding. Zie [Slimme afbeeldingen](../assets/imaging-faq.md).
 
-#### Slim uitsnijden in videoprofielen voor dynamische media (6.5.3.0) {#smart-crop-video}
+#### Slim uitsnijden in videoprofielen voor Dynamic Media (6.5.3.0) {#smart-crop-video}
 
 Slim uitsnijden voor video; een optionele functie in videoprofielen. Dit is een programma dat de kracht van kunstmatige intelligentie in Adobe Sensei gebruikt om automatisch het brandpunt te detecteren en uit te snijden in adaptieve video of progressieve video die u hebt geüpload, ongeacht de grootte. Zie [Informatie over slim uitsnijden in videoprofielen](../assets/video-profiles.md).
 
@@ -204,16 +205,16 @@ Experience Manager Forms bevat de volgende toegankelijkheidsverbeteringen:
 
 U kunt uw Inbox punten met een andere gebruiker delen. Zodra een andere gebruiker toegang krijgt tot uw Inbox-items, kan de gebruiker een claim indienen en de juiste actie ondernemen voor gedeelde items. Op dezelfde manier kunt u andere gebruikers om toegang tot Inbox-items verzoeken. Zie [Delen en verzoek om toegang tot Inbox-items van een gebruiker](../forms/using/configure-shared-queues-osgi.md).
 
-#### De buiten-van-bureaumontages voor Inbox punten van een gebruiker van Vormen AEM (6.5.3.0) vormen {#configure-out-of-office}
+#### Vorm de uit-van-bureaumontages voor Inbox punten van een gebruiker van AEM Forms (6.5.3.0) {#configure-out-of-office}
 
 Als u van plan bent om uit het bureau te zijn, kunt u specificeren wat aan punten gebeurt die aan u voor die periode worden toegewezen.
 U kunt een begindatum en -tijd en een einddatum en -tijd opgeven die van kracht moeten worden als uw instellingen buiten het kantoor zijn. U kunt een standaardpersoon instellen waarnaar al uw items worden verzonden. Zie [Vorm uit de montages](../forms/using/configure-out-of-office-settings.md)van het Bureau.
 
-#### Meerdere interactieve communicatie genereren met de batch-API voor AEM-formulieren (6.5.3.0) {#generate-multiple-ic}
+#### Meerdere interactieve communicatie genereren met de Batch-API voor AEM Forms (6.5.3.0) {#generate-multiple-ic}
 
 U kunt de batch-API gebruiken om meerdere interactieve communicatie van een sjabloon te maken. De sjabloon is een interactieve communicatie zonder gegevens. De batch-API combineert gegevens met een sjabloon voor interactieve communicatie. De API is nuttig bij de massaproductie van interactieve communicatie. Bijvoorbeeld telefoonrekeningen, creditcardoverzichten voor meerdere klanten. Zie Meerdere interactieve communicatie [genereren met de Batch-API](../forms/using/generate-multiple-interactive-communication-using-batch-api.md).
 
-## Belangrijke releases sinds Adobe Experience Manager 6.5 SP4 {#key-releases-since-last-sp}
+## Zeer belangrijke versies sinds Adobe Experience Manager 6.5 SP4 {#key-releases-since-last-sp}
 
 Tussen 5 maart 2005, 2020 en 4 juni 2020 heeft Adobe het volgende uitgebracht, in aanvulling op de servicepacks en cumulatieve fixepakketten:
 
@@ -227,7 +228,7 @@ Tussen 5 maart 2005, 2020 en 4 juni 2020 heeft Adobe het volgende uitgebracht, i
 
 >[!MORELIKETHIS]
 >
->* [Adobe Experience Manager 6.5-documentatie](../user-guide/home.md)
+>* [Adobe Experience Manager 6.5 - documentatie](../user-guide/home.md)
 >* [Algemene opmerkingen bij de release van Adobe Experience Manager 6.5](release-notes.md)
->* [Opmerkingen bij de release van het servicepack voor Adobe Experience Manager 6.5](sp-release-notes.md)
+>* [Opmerkingen bij de release van Service Pack voor Adobe Experience Manager 6.5](sp-release-notes.md)
 

@@ -4,9 +4,9 @@ description: Suggesties en richtlijnen voor de configuratie van [!DNL Experience
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: da2e435f33e8527793e009700c30e60868d196be
 workflow-type: tm+mt
-source-wordcount: '2669'
+source-wordcount: '2722'
 ht-degree: 0%
 
 ---
@@ -212,7 +212,7 @@ Stel bovendien het pad van de tijdelijke map van ImageMagick in het `configure.x
 >
 >De `policy.xml` dossiers ImageMagick en `configure.xml` zijn beschikbaar bij `/usr/lib64/ImageMagick-&#42;/config/` in plaats van `/etc/ImageMagick/`.Zie [documentatie](https://www.imagemagick.org/script/resources.php) ImageMagick voor plaats van de configuratiedossiers.
 
-Als u Adobe Managed Services (AMS) gebruikt, vraagt u de klantenservice van Adobe als u een groot aantal grote PSD- of PSB-bestanden wilt verwerken. [!DNL Experience Manager] Werk samen met de vertegenwoordiger van de klantendienst van Adobe om deze beste praktijken voor uw plaatsing van AMS uit te voeren en de best mogelijke hulpmiddelen en de modellen voor merkgebonden formaten van Adobe te kiezen. [!DNL Experience Manager] PSB-bestanden met een zeer hoge resolutie die groter zijn dan 30000 x 23000 pixels, worden mogelijk niet verwerkt.
+Als u [!DNL Experience Manager] op Adobe Managed Services (AMS) gebruikt, neemt u contact op met de klantenservice van Adobe als u van plan bent een groot aantal grote PSD- of PSB-bestanden te verwerken. Werk samen met de vertegenwoordiger van de klantendienst van Adobe om deze beste praktijken voor uw plaatsing van AMS uit te voeren en de best mogelijke hulpmiddelen en de modellen voor merkgebonden formaten van Adobe te kiezen. [!DNL Experience Manager] PSB-bestanden met een zeer hoge resolutie die groter zijn dan 30000 x 23000 pixels, worden mogelijk niet verwerkt.
 
 ### XMP-schrijfback {#xmp-writeback}
 
@@ -233,7 +233,7 @@ Als u elementen wilt repliceren naar een groot aantal publicatie-instanties, bij
 ### Kettingreplicatie configureren {#configure-chain-replication}
 
 1. Bepaal op welke publicatie-instantie u de replicaties wilt koppelen
-1. Op die publicatieinstantie voegt replicatieagenten toe die aan andere publicatieinstanties richten
+1. Op die publicatieinstantie voeg replicatieagenten toe die aan andere publicatieinstanties richten
 1. Schakel op elk van die replicatieagents &quot;Bij ontvangst&quot; in op het tabblad &quot;Triggers&quot;
 
 >[!NOTE]
@@ -300,6 +300,7 @@ Om latentie te minimaliseren en hoge productie door efficiënt gebruik van cpu e
 * Implementeer in Java 8.
 * Stel optimale JVM-parameters in.
 * Configureer een FileSystem DataStore of een S3-gegevensopslag.
+* Genereren van subelementen uitschakelen. Als deze optie is ingeschakeld, maakt de workflow van AEM een afzonderlijk element voor elke pagina in een element van meerdere pagina&#39;s. Elk van deze pagina&#39;s is een individueel middel dat extra schijfruimte verbruikt, versioning, en extra werkschemaverwerking vereist. Als u geen afzonderlijke pagina&#39;s nodig hebt, schakelt u het genereren van subelementen en het uitnemen van pagina&#39;s uit.
 * Schakel tijdelijke workflows in.
 * Stem de wachtrijen voor de Granite-workflow af om gelijktijdige taken te beperken.
 * Vorm [!DNL ImageMagick] om middelverbruik te beperken.

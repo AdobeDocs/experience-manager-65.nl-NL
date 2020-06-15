@@ -3,9 +3,9 @@ title: Metagegevens van elementen bulksgewijs importeren en exporteren.
 description: Bulk importeren en exporteren van metagegevens van digitale elementen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 23d19d9656d61874cd00a9a2473092be0c53b8f8
+source-git-commit: 9d6f9b8f8d49ae3322a6f5f677292afbd48beeda
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '766'
 ht-degree: 5%
 
 ---
@@ -80,6 +80,7 @@ Hier volgen enkele voorbeelden van het gebruik van metagegevens voor bulksgewijs
 * Het CSV-bestand voor het importeren van metagegevens van elementen heeft een zeer specifieke indeling. Als u moeite en tijd wilt besparen en onbedoelde fouten wilt voorkomen, kunt u de CSV-bestanden beginnen te maken met de indeling van een geëxporteerd CSV-bestand.
 * Wanneer u metagegevens importeert met een CSV-bestand, is de vereiste datumnotatie `YYYY-MM-DDThh:mm:ss.fff-00:00`. Als een andere notatie wordt gebruikt, worden de datumwaarden niet ingesteld. De datumnotaties van het geëxporteerde CSV-bestand met metagegevens hebben de indeling `YYYY-MM-DDThh:mm:ss-00:00`. Als u het wilt invoeren, zet het in het aanvaardbare formaat door de nanosecondewaarde toe te voegen die door wordt aangegeven `fff`.
 * Registreer de naamruimten eerst om metagegevens in aangepaste naamruimten te importeren.
+* De eigenschappenkiezer geeft eigenschappen weer die in schema-editors en zoekformulieren worden gebruikt. Eigenschapkiezer kiest geen eigenschappen voor metagegevens uit een element.
 
 >[!MORELIKETHIS]
 >

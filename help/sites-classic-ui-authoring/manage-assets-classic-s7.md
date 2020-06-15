@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: dc0191d0-f181-4e1e-b3f4-73427aa22073
 docset: aem65
 translation-type: tm+mt
-source-git-commit: dc1985c25c797f7b994f30195d0586f867f9b3ee
+source-git-commit: df89d5cfd5060d493babb89e92a9a98e851b8879
+workflow-type: tm+mt
+source-wordcount: '3221'
+ht-degree: 0%
 
 ---
 
@@ -85,13 +88,13 @@ Om aan Scene7 direct van een digitaal middel te publiceren:
 
    ![screen_shot_2012-02-22at34828pm](assets/screen_shot_2012-02-22at34828pm.png)
 
-1. **De koppeling verandert in** Publiceren... en vervolgens **Gepubliceerd**. Ga naar Scene7 en bevestig dat de activa beschikbaar is.
+1. De koppeling verandert in **Publiceren...** en vervolgens **Gepubliceerd**. Ga naar Scene7 en bevestig dat de activa beschikbaar is.
 
    >[!NOTE]
    >
    >Als het element niet correct naar Scene7 publiceert, verandert de verbinding in het **Publiceren Mislukt**. Als de activa reeds aan Scene7 is gepubliceerd, leest de verbinding **opnieuw publiceren aan Scene7**. Met opnieuw publiceren kunt u wijzigingen aanbrengen in een element in AEM en deze opnieuw publiceren.
 
-### Elementen publiceren van buiten de CQ-doelmap {#publishing-assets-from-outside-the-cq-target-folder}
+### Elementen publiceren van buiten de map CQ Target {#publishing-assets-from-outside-the-cq-target-folder}
 
 Adobe adviseert dat u activa aan Scene7 slechts van activa binnen de scene7 doelomslag publiceert. Nochtans, als u activa van een omslag buiten de doelomslag moet uploaden, kunt u dat nog doen door hen aan een **ad hoc** omslag op Scene7 te uploaden.
 
@@ -107,7 +110,7 @@ Elementen publiceren die zich buiten de CQ-doelmap bevinden:
 
 1. Klik in het hulpgedeelte op het pictogram **Pagina** en klik op **Pagina-eigenschappen**.
 
-1. Klik de Diensten **van de** Wolk, klik **Add de diensten** en selecteer **Scene7**.
+1. Klik **Cloud Servicen** en klik de **Add diensten** en selecteer **Scene7**.
 1. Selecteer de gewenste configuratie in de vervolgkeuzelijst **Adobe Scene7** en klik op **OK**.
 
    ![chlimage_1-49](assets/chlimage_1-49.png)
@@ -147,7 +150,7 @@ Nadat ze in de ontwerpmodus beschikbaar zijn gemaakt, kunt u de componenten net 
 >
 >Als u de kijkers van douane S7 en het gebruiken van de Vinder van de Inhoud creeert en ontwikkelt, moet u de parameter **allowfullscreen** uitdrukkelijk toevoegen.
 
-### Eindbericht voor Flash-viewers {#flash-viewers-end-of-life-notice}
+### Kennisgeving over de gebruiksduur van Flash-viewers {#flash-viewers-end-of-life-notice}
 
 Met ingang van 31 januari 2017 zal Adobe Scene7 officieel ondersteuning voor het einde van de levensduur van het Flash-viewerplatform bieden.
 
@@ -173,11 +176,11 @@ Om een component Scene7/een kijker aan een pagina in klassieke UI toe te voegen:
 
 ### Interactieve weergaven toevoegen aan een responsieve website {#adding-interactive-viewing-experiences-to-a-responsive-website}
 
-Het responsieve ontwerp voor uw middelen betekent dat uw middelen worden aangepast afhankelijk van waar ze worden weergegeven. Bij een responsief ontwerp kunnen dezelfde middelen effectief op meerdere apparaten worden weergegeven.
+Het responsieve ontwerp voor uw middelen betekent dat uw middelen worden aangepast afhankelijk van waar ze worden weergegeven. Bij een responsief ontwerp kunnen dezelfde elementen effectief op meerdere apparaten worden weergegeven.
 
 Een interactieve kijkervaring toevoegen aan een responsieve site in de klassieke gebruikersinterface:
 
-1. Meld u aan bij AEM en controleer of u Adobe Scene7 Cloud Services [hebt](/help/sites-administering/scene7.md#configuring-scene-integration) geconfigureerd en of Scene7-componenten beschikbaar zijn.
+1. Login aan AEM, en zorg ervoor dat u de Cloud Servicen [van Adobe Scene7 hebt](/help/sites-administering/scene7.md#configuring-scene-integration) gevormd en dat de componenten Scene7 beschikbaar zijn.
 
    >[!NOTE]
    >
@@ -315,7 +318,7 @@ Zie [Video](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md) 
 
 ### Bekende beperkingen voor de video-component {#known-limitations-for-the-video-component}
 
-Adobe DAM en WCM tonen of een hoofdvideo wordt geüpload. Deze proxy-elementen worden niet weergegeven:
+Adobe DAM en WCM laten zien of een primaire bronvideo is geüpload. Deze proxy-elementen worden niet weergegeven:
 
 * Scene7 gecodeerde uitvoeringen
 * Scene7 adaptieve videoreeksen
@@ -390,7 +393,7 @@ Standaard zoekt AEM naar de geselecteerde map en naar alle submappen.
 
 ![chlimage_1-67](assets/chlimage_1-67.png)
 
-**De configuratie** als u meer dan één configuratie Scene7 die in de Diensten van de Wolk wordt bepaald, kunt u het hier selecteren. Hierdoor wordt de map gewijzigd op basis van de gekozen configuratie.
+**De configuratie** als u meer dan één configuratie Scene7 die in Cloud Servicen wordt bepaald hebt, kunt u het hier selecteren. Hierdoor wordt de map gewijzigd op basis van de gekozen configuratie.
 
 ![chlimage_1-68](assets/chlimage_1-68.png)
 

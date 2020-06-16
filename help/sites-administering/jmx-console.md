@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 873ce073-0055-4e1b-b3c6-ae7967700894
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a268b7046430cc17c8b59b9306cf3533d73bb4a2
+source-git-commit: f64eb57a69f2124523bd6eaed3e2f58a54c1ea8e
+workflow-type: tm+mt
+source-wordcount: '4989'
+ht-degree: 0%
 
 ---
 
@@ -63,7 +66,7 @@ Bewerkingen voor het beheren van actieve, voltooide, geschaalde en mislukte work
    * Verwerkte banen
    * In de wachtrij geplaatste taken
 
-**returnWorkflowJobTopicInfo** Maakt een lijst van verwerkingsinformatie voor werkschemabaken, georganiseerd door onderwerp.
+**returnWorkflowJobTopicInfo** Maakt een lijst van verwerkingsinformatie voor werkstroombanen, die door onderwerp wordt georganiseerd.
 
 * Argumenten: none
 * Geretourneerde waarde: Tabelgegevens met de volgende kolommen:
@@ -135,7 +138,7 @@ Bewerkingen voor het beheren van actieve, voltooide, geschaalde en mislukte work
    * Model: (Optioneel) De id van het model waarop de bewerking wordt toegepast. Geef geen model op om de bewerking toe te passen op de workflowinstanties van alle workflowmodellen. De id is het pad naar het modelknooppunt, bijvoorbeeld:
 
       `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
-   * Aantal dagen sinds het begin van de workflow:De leeftijd van de werkstroominstanties die moeten worden gewist, in dagen.
+   * Aantal dagen sinds het begin van de workflow: De leeftijd van de werkstroominstanties die moeten worden gewist, in dagen.
    * Droge run: (Optioneel) Geef een waarde op om de resultaten van de bewerking weer `true` te geven zonder de bewerking daadwerkelijk uit te voeren. De standaardwaarde van `false` zorgt dat de bewerking wordt uitgevoerd.
 
 * Geretourneerde waarde: Tabelgegevens over de actieve werkstroominstanties die worden gewist, inclusief de volgende kolommen:
@@ -288,7 +291,7 @@ Informatie over de CRX-opslagplaats
    <td>Geeft aan of u de overgenomen eigenschap of onderliggende knooppuntdefinitie van een knooppunttype kunt overschrijven. true geeft aan dat overschrijvingen worden ondersteund en false geeft aan dat er geen overschrijvingen plaatsvinden.</td>
   </tr>
   <tr>
-   <td>option.observatie.supported</td>
+   <td>option.observation.supported</td>
    <td>true geeft aan dat asynchrone waarneming van wijzigingen in de repository wordt ondersteund. De steun van asynchrone observatie laat toepassingen toe om berichten over elke verandering te ontvangen en te antwoorden aangezien zij voorkomen.</td>
   </tr>
   <tr>
@@ -328,7 +331,7 @@ Informatie over de CRX-opslagplaats
    <td>De versie van de JCR-specificatie die de repository implementeert.</td>
   </tr>
   <tr>
-   <td>option.journaled.Observed.supported</td>
+   <td>option.journaled.observation.supported</td>
    <td>true geeft aan dat toepassingen waarnemingen door journalisten van de gegevensopslagruimte kunnen uitvoeren. met journalistieke waarnemingen kan een reeks wijzigingsmeldingen voor een bepaalde periode worden verkregen . </td>
   </tr>
   <tr>
@@ -360,7 +363,7 @@ Informatie over de CRX-opslagplaats
    <td>De id van de opslagcluster.</td>
   </tr>
   <tr>
-   <td>query.stored.query.supported</td>
+   <td>query.stored.queries.supported</td>
    <td>true geeft aan dat de opslagplaats opgeslagen query's ondersteunt.</td>
   </tr>
   <tr>
@@ -429,7 +432,7 @@ Informatie over de CRX-opslagplaats
    <td>true geeft aan dat de gegevensopslagruimte knooppunten op hetzelfde niveau (knooppunten met hetzelfde bovenliggende knooppunt) met dezelfde naam ondersteunt.</td>
   </tr>
   <tr>
-   <td>node.type.management.residu.definitions.supported</td>
+   <td>node.type.management.residual.definitions.supported</td>
    <td>true geeft aan dat de opslagplaats naameigenschappen met residudefinities ondersteunt. Als dit wordt ondersteund, kan het kenmerk name van een itemdefinitie een sterretje ("*") zijn.</td>
   </tr>
   <tr>
@@ -445,7 +448,7 @@ Informatie over de CRX-opslagplaats
    <td>true geeft aan dat option.xml.export.support true is en query.languages niet-lengte nul is.</td>
   </tr>
   <tr>
-   <td>option.unfield.content.supported</td>
+   <td>option.unfiled.content.supported</td>
    <td>true geeft aan dat de gegevensopslagruimte niet-gearchiveerde inhoud ondersteunt. knooppunten zonder veld maken geen deel uit van de hiërarchie van de opslagplaats.</td>
   </tr>
   <tr>
@@ -453,7 +456,7 @@ Informatie over de CRX-opslagplaats
    <td>De naam van de JCR-specificatie die de gegevensopslagruimte implementeert.</td>
   </tr>
   <tr>
-   <td>option.version.supported</td>
+   <td>option.versioning.supported</td>
    <td>true geeft aan dat de opslagplaats volledige versioning ondersteunt.</td>
   </tr>
   <tr>
@@ -473,12 +476,12 @@ Informatie over de CRX-opslagplaats
    <td>true geeft aan dat de gegevensopslagruimte activiteiten ondersteunt. Activiteiten zijn een set wijzigingen die worden uitgevoerd in een werkruimte en worden samengevoegd in een andere werkruimte.</td>
   </tr>
   <tr>
-   <td>node.type.management.multivalu.properties.supported</td>
-   <td>true geeft aan dat de repository knoopeigenschappen ondersteunt die nul of meer waarden kunnen hebben.</td>
+   <td>node.type.management.multivalued.properties.supported</td>
+   <td>true geeft aan dat de gegevensopslagruimte knooppunteigenschappen ondersteunt die nul of meer waarden kunnen hebben.</td>
   </tr>
   <tr>
-   <td>option.retentie.supported</td>
-   <td>true geeft aan dat de opslagplaats het gebruik van externe toepassingen voor retentiebeheer ondersteunt om retentiebeleid toe te passen op inhoud en ondersteuning biedt voor bewaring en vrijgave.</td>
+   <td>option.retention.supported</td>
+   <td>true geeft aan dat de opslagplaats het gebruik van externe toepassingen voor retentiebeheer ondersteunt om retentiebeleid toe te passen op inhoud en ondersteuning biedt voor 'hold and release'.</td>
   </tr>
   <tr>
    <td>option.lifecycle.supported</td>
@@ -595,12 +598,12 @@ Alleen-lezen.
 
 * Geretourneerde waarde: none
 
-**nowClusterMaster** Hiermee wordt dit opslagruimteknooppunt ingesteld als het hoofdknooppunt van de cluster. Als deze opdracht nog niet het hoofdniveau heeft, wordt de listener van de huidige hoofdinstantie gestopt en wordt een hoofdlistener op het huidige knooppunt gestart. Dit knooppunt wordt vervolgens ingesteld als het hoofdknooppunt en wordt opnieuw gestart, waardoor alle slave-knooppunten verbinding maken met deze instantie.
+**nowClusterMaster** Hiermee wordt dit opslagruimteknooppunt ingesteld als het hoofdknooppunt van de cluster. Als deze opdracht nog niet het hoofdniveau heeft, wordt de listener van de huidige hoofdinstantie gestopt en wordt een hoofdlistener op het huidige knooppunt gestart. Dit knooppunt wordt vervolgens ingesteld als het hoofdknooppunt en wordt opnieuw opgestart, waardoor alle andere knooppunten in de cluster (dat wil zeggen knooppunten die door de master worden beheerd) verbinding maken met deze instantie.
 
 * Argumenten: none
 * Geretourneerde waarde: none
 
-**joinCluster** voegt deze opslagruimte als slave-knooppunt toe aan een cluster. Voor verificatiedoeleinden moet u een gebruikersnaam en wachtwoord opgeven. De verbinding gebruikt basisauthentificatie. De beveiligingsreferenties zijn base-64 gecodeerd voordat ze naar de server worden verzonden.
+**joinCluster** voegt deze opslagruimte toe aan een cluster als een knooppunt dat door de clustermaster wordt beheerd. Voor verificatiedoeleinden moet u een gebruikersnaam en wachtwoord opgeven. De verbinding gebruikt basisauthentificatie. De beveiligingsreferenties zijn base-64 gecodeerd voordat ze naar de server worden verzonden.
 
 * Argumenten:
 
@@ -687,10 +690,10 @@ Statistische informatie over query&#39;s in de gegevensopslagruimte.
 
 Controleer de diensten voor elke replicatieagent. Wanneer u een replicatieagent creeert, verschijnt de dienst automatisch in de console JMX.
 
-* **** Domein: com.adobe.granite.replication
-* **** Type: agent
-* **** Naam: geen waarde
-* **** Eigenschappen: {id=&quot;*Name*&quot;}, waarbij *Name* de waarde van de eigenschap Naam van de agent is.
+* **Domein:** com.adobe.granite.replication
+* **Type:** agent
+* **Naam:** geen waarde
+* **Eigenschappen:** {id=&quot;*Name*&quot;}, waarbij *Name* de waarde van de eigenschap Naam van de agent is.
 
 ### Attributen {#attributes-3}
 

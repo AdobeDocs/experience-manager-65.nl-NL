@@ -10,7 +10,10 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 5773ec1a-f15b-462d-8f9f-54ee1d7ead44
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: f64eb57a69f2124523bd6eaed3e2f58a54c1ea8e
+workflow-type: tm+mt
+source-wordcount: '576'
+ht-degree: 2%
 
 ---
 
@@ -40,7 +43,7 @@ Om de dienst te vormen, kunt u de Console [van het](/help/sites-deploying/config
 
 Gebruik JavaScript op de client om Adobe Granite Opt-Out Service aan te roepen om te controleren of u een cookie kunt gebruiken. Gebruik het JavaScript-object Granite.OptOutUtil om een van de volgende taken uit te voeren:
 
-* Vraag een lijst met cookies aan die aangeven dat de gebruiker geen toestemming geeft cookies te gebruiken voor traceringsdoeleinden.
+* Vraag een lijst met cookienamen aan die aangeven dat de gebruiker geen toestemming geeft cookies te gebruiken voor traceringsdoeleinden.
 * Verkrijg een lijst van koekjes die kunnen worden gebruikt.
 * Bepaal of de webbrowser een cookie bevat die aangeeft dat de gebruiker geen toestemming geeft voor het gebruik van cookies voor tracering.
 * Bepaal of een specifieke cookie kan worden gebruikt.
@@ -104,7 +107,7 @@ Een booleaanse waarde van `true` als een cookie wordt gevonden die geen toestemm
 
 ### maySetCookie(cookieName), functie {#maysetcookie-cookiename-function}
 
-Hiermee wordt bepaald of een specifieke cookie in de browser van de gebruiker kan worden gebruikt. Deze functie is gelijk aan het gebruik van de `isOptedOut` functie in combinatie met het bepalen of het gegeven cookie is opgenomen in de lijst die de `getWhitelsitCookieNames` functie retourneert.
+Hiermee wordt bepaald of een specifieke cookie in de browser van de gebruiker kan worden gebruikt. Deze functie is gelijk aan het gebruik van de `isOptedOut` functie in combinatie met het bepalen of het gegeven cookie is opgenomen in de lijst die de `getWhitelistCookieNames` functie retourneert.
 
 **Parameters**
 

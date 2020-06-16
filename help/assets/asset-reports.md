@@ -1,45 +1,54 @@
 ---
-title: Rapporten over uw digitale middelen
-description: Lees rapporten over uw middelen in de Middelen van de Manager van de Ervaring van Adobe die u helpen gebruik, activiteit, en het delen van uw digitale activa begrijpen.
+title: Rapporten over het gebruik en het delen van uw digitale middelen.
+description: Meldt over uw middelen in [!DNL Adobe Experience Manager Assets] die u helpen gebruik, activiteit, en het delen van uw digitale activa te begrijpen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2faf210d4177d6b2e29795b5668f8199816097eb
+source-git-commit: bc08b0039f8be92a7638245b1770c2ad21503f63
 workflow-type: tm+mt
-source-wordcount: '983'
-ht-degree: 11%
+source-wordcount: '959'
+ht-degree: 7%
 
 ---
 
 
 # Asset Reports {#asset-reports}
 
-Asset Reporting is een belangrijk hulpmiddel om het nut van de implementatie van Adobe Experience Manager-middelen te beoordelen. Met Middelen kunt u verschillende rapporten genereren voor uw digitale middelen. De rapporten bevatten nuttige informatie over het gebruik van uw systeem, over de manier waarop gebruikers met elementen werken en over de elementen die worden gedownload en gedeeld.
+Met Asset Reporting kunt u het nut van uw [!DNL Adobe Experience Manager Assets] implementatie beoordelen. Met [!DNL Assets]kunt u verschillende rapporten genereren voor uw digitale middelen. De rapporten bevatten nuttige informatie over het gebruik van uw systeem, over de manier waarop gebruikers met elementen werken en over de elementen die worden gedownload en gedeeld.
 
-Gebruik de informatie in de rapporten om zeer belangrijke succesmetriek af te leiden om de goedkeuring van Activa binnen uw onderneming en door klanten te meten.
+Gebruik de informatie in de rapporten om zeer belangrijke succesmetriek af te leiden om de goedkeuring van [!DNL Assets] binnen uw onderneming en door klanten te meten.
 
-Het framework voor middelenrapportage gebruikt slingerende taken om rapportageaanvragen op geordende wijze asynchroon te verwerken. Het is schaalbaar voor grote opslagruimten. De asynchrone rapportverwerking verhoogt de efficiency en de snelheid waarmee de rapporten worden geproduceerd.
+In het [!DNL Assets] rapportagekader worden [!DNL Sling] taken gebruikt om rapportageaanvragen op geordende wijze asynchroon te verwerken. Het is schaalbaar voor grote opslagruimten. De asynchrone rapportverwerking verhoogt de efficiency en de snelheid waarmee de rapporten worden geproduceerd.
 
 De interface van het rapportbeheer is intuïtief en omvat fijnkorrelige opties en controles om tot gearchiveerde rapporten toegang te hebben en de loopstatussen van het meningsrapport (succes, ontbroken, en een rij gevormd) in werking te stellen.
 
 Wanneer een rapport wordt gegenereerd, ontvangt u een melding via e-mail (optioneel) en een postbusmelding. U kunt een rapport weergeven, downloaden of verwijderen van de pagina met rapportlijsten waarop alle eerder gegenereerde rapporten worden weergegeven.
 
+## Vereiste {#prerequisite-for-reporting}
+
+Als u rapporten wilt genereren, moet u ervoor zorgen dat:
+
+* Service inschakelen [!UICONTROL Day CQ DAM Event Recorder] via **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
+* Selecteer de activiteiten of gebeurtenissen waarop u wilt rapporteren. Als u bijvoorbeeld een rapport wilt genereren over gedownloade elementen, selecteert u [!UICONTROL Asset downloaded (DOWNLOADED)].
+
+![Elementrapportage inschakelen in webconsole](assets/reports-config-day-cq-dam-event-recorder.png)
+
 ## Rapporten genereren {#generate-reports}
 
-De Elementen van de Manager van de ervaring produceert de volgende standaardrapporten voor u:
+[!DNL Experience Manager Assets] Hiermee genereert u de volgende standaardrapporten:
 
 * Uploaden
 * Downloaden
 * Verlopen
 * Wijziging
-* Publiceren
-* Poortpublicatie merk
+* Publicatie
+* [!DNL Brand Portal] publish
 * Schijfgebruik
 * Bestanden
 * Delen van koppeling
 
 [!DNL Adobe Experience Manager] beheerders kunnen deze rapporten gemakkelijk produceren en aanpassen voor uw implementatie. Een beheerder kan deze stappen volgen om een rapport te produceren:
 
-1. Klik in de interface van Experience Manager op **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Reports]**.
+1. Klik in de [!DNL Experience Manager] interface op **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Reports]**.
 
 ![Pagina Gereedschappen om te navigeren in middelenrapport](assets/AssetsReportNavigation.png)
 
@@ -47,10 +56,6 @@ De Elementen van de Manager van de ervaring produceert de volgende standaardrapp
 1. Kies op de **[!UICONTROL Create Report]** pagina het rapport dat u wilt maken en klik op **[!UICONTROL Next]**.
 
    ![Rapporttype selecteren](assets/choose_report.png)
-
-   >[!NOTE]
-   >
-   >Voordat u een rapport **[!UICONTROL Asset Downloaded]** kunt genereren, moet u controleren of de service voor het downloaden van assets is ingeschakeld. Open vanuit de webconsole (`https://[aem_server]:[port]/system/console/configMgr`) de configuratie **[!UICONTROL Day CQ DAM Event Recorder]** en selecteer de optie **[!UICONTROL Asset Downloaded (DOWNLOADED)]** in Gebeurtenistypen als deze nog niet is geselecteerd.
 
    >[!NOTE]
    >
@@ -80,7 +85,7 @@ De Elementen van de Manager van de ervaring produceert de volgende standaardrapp
 
    ![Pagina met details van rapport Bestanden](assets/files_report.png)
 
-   In het rapport **[!UICONTROL Link Share]** worden URL&#39;s weergegeven voor assets die vanuit Assets worden gedeeld met externe gebruikers. Het bevat e-mail-id&#39;s van de gebruiker die de assets heeft gedeeld, e-mail-id&#39;s van gebruikers met wie de assets worden gedeeld, de datum van delen en de vervaldatum voor de koppeling. De kolommen kunnen niet worden aangepast.
+   The **[!UICONTROL Link Share]** report displays URLs to assets that are shared with external users from within [!DNL Assets]. Het bevat e-mail-id&#39;s van de gebruiker die de assets heeft gedeeld, e-mail-id&#39;s van gebruikers met wie de assets worden gedeeld, de datum van delen en de vervaldatum voor de koppeling. De kolommen kunnen niet worden aangepast.
 
    The **[!UICONTROL Link Share]** report, does not include options for sub-folders and renditions because it merely publishes the shared URLs that appear under `/var/dam/share`.
 
@@ -92,12 +97,12 @@ De Elementen van de Manager van de ervaring produceert de volgende standaardrapp
 
    ![Rapportkolommen selecteren of deselecteren](assets/configure_columns.png)
 
-   Als u een aangepaste kolomnaam of een aangepast eigenschapspad wilt weergeven, configureert u de eigenschappen voor het element binair onder het knooppunt jcr:content in CRX. U kunt dit ook toevoegen via de padkiezer voor eigenschappen.
+   Om een de naam of bezitspad van de douanekolom te tonen, vorm de eigenschappen voor de activa binair onder de `jcr:content` knoop in CRX. U kunt dit ook toevoegen via de padkiezer voor eigenschappen.
 
    ![Rapportkolommen selecteren of deselecteren](assets/custom_columns.png)
 
 1. Klik op **[!UICONTROL Create]** de werkbalk. Een bericht meldt dat de rapportgeneratie is in werking gesteld.
-1. In de pagina van de Rapporten van Activa, is de status van de rapportgeneratie gebaseerd op de huidige staat van de rapportbaan, bijvoorbeeld Succes, Mislukt, In de wachtrij geplaatst, of Gepland. Dezelfde status wordt weergegeven in het vak met meldingen. Klik op de rapportkoppeling om de rapportpagina weer te geven. Alternatively, select the report, and click **[!UICONTROL View]** from the toolbar.
+1. Voor de [!UICONTROL Asset Reports] pagina, is de status van de rapportgeneratie gebaseerd op de huidige staat van de rapportbaan, bijvoorbeeld [!UICONTROL Success], [!UICONTROL Failed], [!UICONTROL Queued], of [!UICONTROL Scheduled]. Dezelfde status wordt weergegeven in het vak met meldingen. Klik op de rapportkoppeling om de rapportpagina weer te geven. Alternatively, select the report, and click **[!UICONTROL View]** from the toolbar.
 
    ![Een gegenereerd rapport](assets/report_page.png)
 
@@ -111,13 +116,13 @@ U kunt douanekolommen aan de volgende rapporten toevoegen om meer gegevens voor 
 * Downloaden
 * Verlopen
 * Wijziging
-* Publiceren
-* Poortpublicatie merk
+* Publicatie
+* [!DNL Brand Portal] publish
 * Bestanden
 
 Ga als volgt te werk om aangepaste kolommen aan deze rapporten toe te voegen:
 
-1. Klik in de interface Experience Manager op **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Reports]**.
+1. Klik in het [!DNL Manager interface]venster op **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Reports]**.
 1. Klik op de [!UICONTROL Asset Reports] pagina op **[!UICONTROL Create]** de werkbalk.
 
 1. Kies op de **[!UICONTROL Create Report]** pagina het rapport dat u wilt maken en klik op **[!UICONTROL Next]**.

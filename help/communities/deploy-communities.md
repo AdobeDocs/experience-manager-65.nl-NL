@@ -1,8 +1,8 @@
 ---
 title: Gemeenschappen inzetten
 seo-title: Gemeenschappen inzetten
-description: AEM-gemeenschappen implementeren
-seo-description: AEM-gemeenschappen implementeren
+description: Hoe te om AEM Communities op te stellen
+seo-description: Hoe te om AEM Communities op te stellen
 uuid: 18d9b424-004d-43b2-968a-318e27a93759
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,7 +11,10 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
+source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+workflow-type: tm+mt
+source-wordcount: '1884'
+ht-degree: 0%
 
 ---
 
@@ -20,13 +23,13 @@ source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 ## Vereisten {#prerequisites}
 
-* [AEM 6.5-platform](/help/sites-deploying/deploy.md)
+* [AEM 6.5-Platform](/help/sites-deploying/deploy.md)
 
-* AEM Communities-licentie
+* AEM Communities
 
 * Optionele licenties voor:
 
-   * [Functies van Adobe Analytics voor Community](/help/communities/analytics.md)
+   * [Functies van Adobe Analytics for Communities](/help/communities/analytics.md)
    * [MongoDB voor MSRP](/help/communities/msrp.md)
    * [Adobe Cloud voor ASRP](/help/communities/asrp.md)
 
@@ -92,11 +95,11 @@ AEM 6.5 Community GA wordt geleverd met het communautaire pakket. Raadpleeg de o
 
 Vanaf AEM 6.4 worden updates aan Gemeenschappen geleverd als onderdeel van AEM Cumulative Fix Packs en Service Packs.
 
-Voor de nieuwste updates van AEM 6.5 raadpleegt u [Adobe Experience Manager 6.4 Cumulative Fix Packs en Service Packs](https://helpx.adobe.com/experience-manager/aem-releases-updates.html).
+Voor de recentste updates van AEM 6.5, zie [Adobe Experience Manager 6.4 Cumulatieve Pakken van de Moeilijke situatie en de Pakken](https://helpx.adobe.com/experience-manager/aem-releases-updates.html)van de Dienst.
 
 ### Versiehistorie {#version-history}
 
-Net als in AEM 6.4 en hoger maken AEM Communities-functies en hotfixes deel uit van AEM Communities-cumulatieve fixepakketten en servicepacks. Er zijn dus geen aparte kenmerkpakketten.
+Net als in AEM 6.4 en verder, maken de eigenschappen en hotfixes van AEM Communities deel uit van AEM Communities cumulatieve moeilijke fixpakken en de dienstpakken. Er zijn dus geen aparte kenmerkpakketten.
 
 ### JDBC-stuurprogramma voor MySQL {#jdbc-driver-for-mysql}
 
@@ -140,7 +143,7 @@ Meer informatie over het installeren van bundels vindt u op de pagina [Webconsol
 
 Shareable Content Object Reference Model (SCORM) is een verzameling standaarden en specificaties voor e-learning. SCORM definieert ook hoe inhoud kan worden verpakt in een overdraagbaar ZIP-bestand.
 
-De SCORM-engine van AEM Communities is vereist voor de functie [enablement](/help/communities/overview.md#enablement-community) . Scorepakketten ondersteund op AEM 6.5-gemeenschappen:
+De AEM Communities SCORM-engine is vereist voor de functie [enablement](/help/communities/overview.md#enablement-community) . Scorepakketten ondersteund op AEM 6.5-gemeenschappen:
 
 * [cq-social-scorm-package, versie 2.3.7](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/social/scorm/cq-social-scorm-pkg) die de [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) -engine bevat.
 
@@ -195,7 +198,7 @@ Voor meer informatie, bezoek [hoe te met Pakketten](/help/sites-administering/pa
 
 ## Aanbevolen implementaties {#recommended-deployments}
 
-In Gemeenschappen AEM, wordt een gemeenschappelijke opslag gebruikt om gebruiker geproduceerde inhoud (UGC) op te slaan en vaak bedoeld als leverancier van het [opslagmiddel (SRP)](/help/communities/working-with-srp.md). De geadviseerde plaatsingscentra bij het kiezen van een optie SRP voor de gemeenschappelijke opslag.
+In AEM Communities, wordt een gemeenschappelijke opslag gebruikt om gebruiker geproduceerde inhoud (UGC) op te slaan en vaak bedoeld als leverancier van [opslagmiddel (SRP)](/help/communities/working-with-srp.md). De geadviseerde plaatsingscentra bij het kiezen van een optie SRP voor de gemeenschappelijke opslag.
 
 De gemeenschappelijke opslag steunt matiging van, en analyses op, UGC in het publicatiemilieu terwijl het elimineren van de behoefte aan [replicatie](/help/communities/sync.md) van UGC.
 
@@ -245,7 +248,7 @@ Er zijn twee replicatieagenten in het auteursmilieu die de vervoerconfiguratie n
 
 * De console van de Replicatie van de toegang op auteur
 
-   * Vanuit de globale navigatie navigeert u naar **[!UICONTROL Extra > Implementatie > Replicatie > Medewerkers op auteur]**
+   * Navigeer van globale navigatie naar **[!UICONTROL Tools > Deployment > Replication > Agents on author]**
 
 * Volg de zelfde procedure voor beide agenten:
 
@@ -294,7 +297,7 @@ Om de tunneldienst toe te laten:
 
 ### De cryptosleutel dupliceren {#replicate-the-crypto-key}
 
-Er zijn twee functies van AEM-gemeenschappen die vereisen dat alle AEM-serverinstanties dezelfde coderingssleutels gebruiken. Dit zijn [Analytics](/help/communities/analytics.md) en [ASRP](/help/communities/asrp.md).
+Er zijn twee eigenschappen van AEM Communities die alle AEM serverinstanties vereisen om de zelfde encryptiesleutels te gebruiken. Dit zijn [Analytics](/help/communities/analytics.md) en [ASRP](/help/communities/asrp.md).
 
 Vanaf AEM 6.3 wordt het sleutelmateriaal opgeslagen in het bestandssysteem en niet meer in de gegevensopslagruimte.
 
@@ -309,7 +312,7 @@ Om het belangrijkste materiaal van auteur aan alle andere instanties te kopiëre
    * Navigeer bijvoorbeeld in de gegevensmap
 
       * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
-   * De foto- en hoofdbestanden kopiëren
+   * Kopieer de hoofd- en primaire knoopdossiers
 
 
 
@@ -388,11 +391,11 @@ Wees vooral voorzichtig met het gebruik van de juiste servernaam, niet `localhos
 
 ### Dispatcher {#dispatcher}
 
-Als u een Dispatcher gebruikt, raadpleegt u:
+Zie bij gebruik van een Dispatcher:
 
 * AEM&#39;s [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) -documentatie
 * [Dispatcher installeren](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html)
-* [Dispatcher configureren voor Gemeenschappen](/help/communities/dispatcher.md)
+* [Dispatcher for Communities configureren](/help/communities/dispatcher.md)
 * [Bekende problemen](/help/communities/troubleshooting.md#dispatcher-refetch-fails)
 
 ## Verwante documentatie van Gemeenschappen {#related-communities-documentation}

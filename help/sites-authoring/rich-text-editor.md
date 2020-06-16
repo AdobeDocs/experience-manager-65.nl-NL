@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: 813fda6a-e877-452b-82c3-e758720e7dd0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d3dbf4cf522441561d6ac6eeeff0e63e7bbb5e38
+source-git-commit: df992fc0204519509c4662a7d4315939af2fc92c
+workflow-type: tm+mt
+source-wordcount: '276'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +27,7 @@ De Rich Text Editor (RTE) is een basisbouwsteen voor het invoegen van tekstuele 
 
 ## Plaatselijk bewerken {#in-place-editing}
 
-Als u een op tekst gebaseerde component met één tik of klik selecteert, wordt de werkbalk [van de](/help/sites-authoring/editing-content.md#editmovecopypastedeletetouchoptimizedui) component net als elke component weergegeven.
+Als u een op tekst gebaseerde component met één tik of klik selecteert, wordt de werkbalk [van de](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) component net als elke component weergegeven.
 
 ![screen_shot_2018-03-21at163054](assets/screen_shot_2018-03-21at163054.png)
 
@@ -44,7 +47,7 @@ Deze werkbalk bevat de volgende opties:
 
 ## Volledig scherm bewerken {#full-screen-editing}
 
-Als u voor op tekst gebaseerde componenten op de modus Volledig scherm tikt op de [werkbalk](#componenttoolbar) ![](do-not-localize/screen_shot_2018-03-21at163236.png) , wordt de teksteditor met tekstopmaak geopend en wordt de rest van de pagina-inhoud verborgen.
+Als u voor op tekst gebaseerde componenten op de modus Volledig scherm tikt op de werkbalk, wordt de teksteditor met tekstopmaak geopend en wordt de rest van de pagina-inhoud verborgen. ![](do-not-localize/screen_shot_2018-03-21at163236.png)
 
 In de modus Volledig scherm worden alle geconfigureerde opties weergegeven die u kunt gebruiken voor ontwerpen. De beschikbaarheid is opties [afhankelijk van de configuratie](/help/sites-administering/rich-text-editor.md).
 

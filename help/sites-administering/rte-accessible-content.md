@@ -1,63 +1,50 @@
 ---
-title: Het vormen RTE voor het Produceren van Toegankelijke Plaatsen
-description: Leer hoe u de AEM Rich Text Editor configureert om toegankelijke sites te maken.
-uuid: 87539fee-3ecc-49f4-af3d-8dde72399c28
+title: Configureer Rich Text Editor om toegankelijke webpagina's en sites te maken.
+description: Configureer Rich Text Editor om toegankelijke webpagina's en sites te maken.
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-discoiquuid: ff0f006d-461c-4cc4-b6eb-d665f3f3b498
 translation-type: tm+mt
-source-git-commit: 07c1a4102539ba4678c55dee3a4882101e39864f
+source-git-commit: df992fc0204519509c4662a7d4315939af2fc92c
+workflow-type: tm+mt
+source-wordcount: '933'
+ht-degree: 0%
 
 ---
 
 
-# Het vormen RTE voor het Produceren van Toegankelijke Plaatsen {#configuring-rte-for-producing-accessible-sites}
+# RTE configureren om toegankelijke webpagina&#39;s en sites te maken {#configure-rte-for-accessibility}
 
-AEM ondersteunt beide:
+Adobe Experience Manager ondersteunt de meeste standaardtoegankelijkheidsfuncties die voldoen aan verschillende toegankelijkheidsstandaarden. Bovendien kunnen ontwikkelaars functies aanpassen of uitbreiden om toegankelijke inhoud te maken met Experience Manager-componenten die gebruikmaken van de Rich Text Editor (RTE).
 
-* standaardtoegankelijkheidsfuncties, waaronder alternatieve tekst voor afbeeldingen
-* en extra eigenschappen die kunnen worden betreden wanneer het creëren van inhoud met componenten die de rijke tekstredacteur (RTE) gebruiken
+Wanneer het ontwerpen van Web-pagina&#39;s en het toevoegen van inhoud aan de pagina&#39;s, kunnen de inhoudsontwikkelaars en de auteurs eigenschappen van RTE gebruiken om op toegankelijkheid betrekking hebbende informatie te verstrekken. Voeg bijvoorbeeld structuurinformatie toe via koppen en alinea-elementen.
 
-Inhoudsauteurs kunnen functies van de RTE gebruiken om toegankelijkheidsinformatie te verstrekken terwijl ze inhoud aan een pagina toevoegen. Dit kan het toevoegen van structurele informatie door rubrieken en paragraafelementen omvatten.
+Om deze eigenschappen te vormen en aan te passen, [vorm de stop-ins](#configure-the-plugin-features) van RTE voor de component. Met de `paraformat` plug-in kunt u bijvoorbeeld extra semantische elementen op blokniveau toevoegen, zoals het uitbreiden van het aantal kopniveaus dat boven de basis wordt ondersteund `H1`, `H2`en dat standaard wordt `H3` opgegeven.
 
-U kunt deze eigenschappen [vormen en aanpassen door insteekmodules](#configuring-the-plugin-features) RTE voor de component te vormen. Met de `paraformat` plug-in kunt u bijvoorbeeld extra semantische elementen op blokniveau toevoegen, zoals het uitbreiden van het aantal kopniveaus dat boven de basis wordt ondersteund `H1`, `H2` en die standaard worden `H3` geleverd.
+RTE is beschikbaar in een verscheidenheid van componenten voor aanraking-toegelaten gebruikersinterface en het Klassieke gebruikersinterface. Nochtans, is de primaire component om RTE te gebruiken de component van de **Tekst** die voor beide interfaces beschikbaar is. De volgende afbeeldingen tonen de RTE met een bereik van ingeschakelde plug-ins, waaronder `paraformat`:
 
-De RTE is beschikbaar in een verscheidenheid van componenten van zowel aanraking-toegelaten als klassieke UI. De primaire component voor het gebruik van de RTE is echter de **component Text** .
+![Tekstcomponent (RTE) in de modus Volledig scherm in de gebruikersinterface met aanraakbediening.](assets/chlimage_1-206.png)
 
-De **component Text** in AEM is beschikbaar voor zowel de aanraakinterface als de klassieke UI. In de volgende afbeeldingen ziet u de teksteditor met veel insteekmodules, waaronder `paraformat`:
+*Afbeelding: De component Text in de gebruikersinterface met aanraakbediening.*
 
-* De **component Text** in de interface met aanraakbediening:
+![Dialoogvenster voor bewerken (RTE) van de tekstcomponent in de klassieke UI.](assets/chlimage_1-207.png)
 
-   ![Tekstcomponent (RTE) in de modus Volledig scherm in de gebruikersinterface met aanraakbediening.](assets/chlimage_1-206.png)
+*Afbeelding: De component Text in de klassieke gebruikersinterface.*
 
-* De **component Text** in de klassieke UI:
+Voor de verschillen tussen de eigenschappen van RTE beschikbaar in de diverse interfaces, zie [Insteekmodules en hun eigenschappen](/help/sites-administering/rich-text-editor.md#aboutplugins).
 
-   ![Dialoogvenster voor bewerken (RTE) van de tekstcomponent in de klassieke UI.](assets/chlimage_1-207.png)
+## De insteekmodules configureren {#configure-the-plugin-features}
 
->[!NOTE]
->
->Er zijn verschillen tussen de eigenschappen van RTE beschikbaar in klassieke UI en aanraking-toegelaten UI. Zie voor meer informatie
->
->* [Insteekmodules en hun functies](/help/sites-administering/rich-text-editor.md#aboutplugins)
->* [Insteekmodules en hun functies - Interface met aanraakbediening](/help/sites-administering/rich-text-editor.md#aboutplugins)
->
+Voor de volledige instructies om RTE te vormen, zie de Rich pagina van de Redacteur [van de Tekst](/help/sites-administering/rich-text-editor.md) vormen. Hieronder vallen alle kwesties, inclusief de belangrijkste stappen:
 
+* [Plugins en de functies](/help/sites-administering/rich-text-editor.md#aboutplugins).
+* [Configuratielocaties](/help/sites-administering/rich-text-editor.md#understand-the-configuration-paths-and-locations).
+* [Activeer een plug-in en configureer de eigenschap](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)features.
+* [Andere functies van RTE](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)vormen.
 
-
-## De insteekmodules configureren {#configuring-the-plugin-features}
-
-De volledige instructies bij het vormen van RTE zijn beschikbaar op het [Vormen van de Rich pagina van de Redacteur](/help/sites-administering/rich-text-editor.md) van de Tekst. Hieronder vallen alle kwesties, inclusief de belangrijkste stappen:
-
-* [Insteekmodules en hun functies](/help/sites-administering/rich-text-editor.md#aboutplugins)
-* [Configuratielocaties](/help/sites-administering/rich-text-editor.md#understand-the-configuration-paths-and-locations)
-* [Activeer een Insteekmodule en vorm het eigenschappenBezit](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
-* [Het vormen van Andere Functionaliteit van RTE](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
-
-Door een plug-in te configureren in de juiste `rtePlugins` subvertakking in CRXDE Lite (zie de volgende afbeelding), kunt u alle of specifieke functies voor die plug-in activeren.
+Door een plug-in te configureren in de juiste `rtePlugins` subvertakking in CRXDE Lite, kunt u alle of specifieke functies voor die plug-in activeren.
 
 ![CRXDE Lite die een voorbeeld rtePlugin toont.](assets/chlimage_1-208.png)
 
-### Voorbeeld - Alinea-indelingen opgeven die beschikbaar zijn in het veld RTE-selectie {#example-specifying-paragraph-formats-available-in-rte-selection-field}
+### Voorbeeld - geef alineaopmaak op die beschikbaar is in het veld RTE-selectie {#example-specifying-paragraph-formats-available-in-rte-selection-field}
 
 Nieuwe semantische blokformaten kunnen voor selectie beschikbaar worden gesteld door:
 
@@ -71,7 +58,7 @@ Nieuwe semantische blokformaten kunnen voor selectie beschikbaar worden gesteld 
 
 Met structuurelementen beschikbaar in RTE via de opties voor alineaopmaak biedt AEM een goede basis voor de ontwikkeling van toegankelijke inhoud. Inhoudsauteurs kunnen de RTE niet gebruiken om de tekengrootte of kleuren of andere verwante kenmerken op te maken, waardoor inlineopmaak niet mogelijk is. In plaats daarvan moeten ze de juiste structuurelementen selecteren, zoals koppen, en algemene stijlen gebruiken die u hebt gekozen bij de optie Stijlen. Zo zorgt u voor meer opmaak, betere opties voor gebruikers die met hun eigen stijlpagina&#39;s en correct gestructureerde inhoud bladeren.
 
-## De functie Bron bewerken gebruiken {#use-of-the-source-edit-feature}
+## De functie voor bronbewerking gebruiken {#use-of-the-source-edit-feature}
 
 In sommige gevallen zullen inhoudsauteurs het nodig vinden om de HTML-broncode die met de RTE is gemaakt, te onderzoeken en aan te passen. Bijvoorbeeld, kan een stuk van inhoud die binnen RTE wordt gecreeerd extra prijsverhoging vereisen om naleving WCAG 2.0 te verzekeren. Dit kan met de [bron worden gedaan uitgeven](/help/sites-administering/rich-text-editor.md#aboutplugins) optie van RTE. U kunt de [ functie opgeven op de `sourceedit` insteekmodule `misctools`](/help/sites-administering/rich-text-editor.md#aboutplugins).
 
@@ -79,7 +66,7 @@ In sommige gevallen zullen inhoudsauteurs het nodig vinden om de HTML-broncode d
 >
 >Gebruik de `sourceedit` functie zorgvuldig. Door fouten en/of niet-ondersteunde functies te typen kunnen er meer problemen ontstaan.
 
-## Ondersteuning toevoegen voor extra HTML-elementen en -kenmerken {#adding-support-for-additional-html-elements-and-attributes}
+## Ondersteuning toevoegen voor meer HTML-elementen en -kenmerken {#add-support-for-more-html-elements-and-attributes}
 
 Om de toegankelijkheidskenmerken van AEM verder uit te breiden, is het mogelijk om de bestaande componenten die op RTE (zoals de componenten van de **Tekst** en van de **Lijst** ) worden gebaseerd met extra elementen en attributen uit te breiden.
 
@@ -89,13 +76,30 @@ De volgende procedure laat zien hoe u de **component Tabel** kunt uitbreiden met
 
 Voeg in de constructor van het `TablePropertiesDialog`bestand een extra tekstinvoerveld toe dat wordt gebruikt voor het bewerken van het bijschrift. Merk op dat `itemId` moet worden geplaatst aan `caption` (d.w.z. de naam van het attribuut DOM) om zijn inhoud automatisch te behandelen.
 
-In **Lijst** moet u de attributen aan/uit het element van DOM uitdrukkelijk plaatsen of verwijderen. De waarde wordt doorgegeven door het dialoogvenster in het `config` object. Merk op dat de attributen DOM zouden moeten worden geplaatst/worden verwijderd gebruikend de overeenkomstige `CQ.form.rte.Common` methodes ( `com` is een kortere weg voor `CQ.form.rte.Common`) om gemeenschappelijke valkuilen met browser implementaties te vermijden.
+In **Lijst**, plaats uitdrukkelijk of verwijder de attributen aan/van het element DOM. De waarde wordt doorgegeven door het dialoogvenster in het `config` object. Merk op dat de attributen DOM zouden moeten worden geplaatst/worden verwijderd gebruikend de overeenkomstige `CQ.form.rte.Common` methodes ( `com` is een kortere weg voor `CQ.form.rte.Common`) om gemeenschappelijke valkuilen met browser implementaties te vermijden.
 
 >[!NOTE]
 >
 >Deze procedure is alleen geschikt voor de klassieke gebruikersinterface.
 
-### Instructies Stap voor stap {#step-by-step-instructions}
+### Voorbeeld: toegankelijke HTML maken bij gebruik van nadruk in tekst {#create-accessible-html-for-text}
+
+RTE kan `strong` en `em` markeringen in plaats van `b` en `i`gebruiken. Voeg de volgende knoop als sibling aan de `uiSettings` `rtePlugins` en knopen in de dialoog toe.
+
+```HTML
+<htmlRules jcr:primaryType="nt:unstructured">
+    <docType jcr:primaryType="nt:unstructured">
+        <typeConfig jcr:primaryType="nt:unstructured"
+                useSemanticMarkup="{Boolean}true">
+            <semanticMarkupMap
+                    b="strong"
+                    i="em"/>
+        </typeConfig>
+    </docType>
+</htmlRules>
+```
+
+### Stapsgewijze instructies {#step-by-step-instructions}
 
 1. Start CRXDE Lite. Bijvoorbeeld: [http://localhost:4502/crx/de/](http://localhost:4502/crx/de/)
 1. Kopiëren:
@@ -149,9 +153,9 @@ In **Lijst** moet u de attributen aan/uit het element van DOM uitdrukkelijk plaa
    ```
    /**
     * Adds Caption Element
-    */
-   var captionElement; 
-   if (dom.firstChild && dom.firstChild.tagName.toLowerCase() == "caption") 
+   */
+   var captionElement;
+   if (dom.firstChild && dom.firstChild.tagName.toLowerCase() == "caption")
    {
       captionElement = dom.firstChild;
    }
@@ -160,7 +164,7 @@ In **Lijst** moet u de attributen aan/uit het element van DOM uitdrukkelijk plaa
        var captionTextNode = document.createTextNode(config.caption)
        if (captionElement)
        {
-          dom.replaceNode(captionElement.firstChild,captionTextNode); 
+          dom.replaceNode(captionElement.firstChild,captionTextNode);
        } else
        {
            captionElement = document.createElement("caption");
@@ -173,7 +177,7 @@ In **Lijst** moet u de attributen aan/uit het element van DOM uitdrukkelijk plaa
               dom.appendChild(captionElement);
            }
        }
-   } else if (captionElement) 
+   } else if (captionElement)
    {
      dom.removeChild(captionElement);
    }

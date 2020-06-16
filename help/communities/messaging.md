@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 232a0ec1-8dfc-41ec-84cc-69f9db494ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
+source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+workflow-type: tm+mt
+source-wordcount: '826'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
 
 ## Overzicht {#overview}
 
-De berichtenfunctie voor AEM Communities biedt de mogelijkheid voor ingetekende sitebezoekers (leden) om berichten naar elkaar te verzenden die toegankelijk zijn wanneer ze zich op de site hebben aangemeld.
+De overseineneigenschap voor AEM Communities biedt de capaciteit voor ondertekende plaatsbezoekers (leden) om berichten naar elkaar te verzenden die wanneer ondertekend op de plaats toegankelijk zijn.
 
 Het overseinen wordt toegelaten voor een communautaire plaats door een doos tijdens de verwezenlijking [van de](/help/communities/sites-console.md)communautaire plaats te controleren.
 
@@ -30,7 +33,7 @@ Voor extra informatie voor ontwikkelaars, zie de Hoofdzaak van het [Overseinen](
 
 ## Service voor berichtenverkeer {#messaging-operations-service}
 
-De configuratie [AEM de Dienst](https://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) van de Verrichtingen van het Overseinen van Gemeenschappen identificeert het eindpunt dat overseinen verwante verzoeken behandelt, de omslagen de dienst voor het opslaan van berichten zou moeten gebruiken, en als de berichten dossiergehechtheid kunnen omvatten, welke dossiertypes worden toegestaan.
+De configuratie [AEM Communities de Dienst](https://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) van de Verrichtingen van het Overseinen identificeert het eindpunt dat overseinen verwante verzoeken behandelt, de omslagen de dienst voor het opslaan van berichten zou moeten gebruiken, en als de berichten dossiergehechtheid kunnen omvatten, welke dossiertypes worden toegestaan.
 
 Voor communautaire plaatsen die gebruikend de `Communities Sites console`, een geval van de dienst worden gecreeerd bestaat reeds, met inbox die aan wordt geplaatst `/mail/inbox`.
 
@@ -44,7 +47,7 @@ Zoals hieronder getoond, bestaat een configuratie van de dienst voor plaatsen di
 
 Als u een nieuwe configuratie wilt toevoegen, selecteert u het plusteken &#39;**+**&#39; naast de naam van de service:
 
-* **Whitelist voor berichtvelden**
+* **Berichtvelden toegestaan**
 
    Hiermee geeft u de eigenschappen op van de component Bericht samenstellen die gebruikers kunnen bewerken en behouden. Als nieuwe formulierelementen worden toegevoegd, moet de element-id desgewenst worden toegevoegd om te worden opgeslagen in SRP. Standaard zijn dit twee items: *onderwerp* en *inhoud*.
 
@@ -108,13 +111,13 @@ Als u een nieuwe configuratie wilt toevoegen, selecteert u het plusteken &#39;**
 
    Als supportAttachments wordt gecontroleerd, specificeert deze waarde de maximum toegestane totale grootte (in bytes) van alle gehechtheid. De standaardwaarde is *104857600* (100 MB).
 
-* **Zwarte lijst, type bijlage**
+* **Bloklijst Type bijlage**
 
-   Een zwarte lijst met bestandsextensies, voorafgegaan door &#39;**.**&quot;, dat zal door het systeem worden verworpen. Als de extensie niet op de zwarte lijst staat, is deze toegestaan. Extensies kunnen worden toegevoegd of verwijderd met de pictogrammen &#39;**+**&#39; en &#39;**-**&#39;.
+   Een blocklist met bestandsextensies, vooraf ingesteld op &#39;**.**&quot;, dat zal door het systeem worden verworpen. Als de extensie niet wordt geblokkeerd, is deze toegestaan. Extensies kunnen worden toegevoegd of verwijderd met de pictogrammen &#39;**+**&#39; en &#39;**-**&#39;.
 
 * **Toegestane typen bijlagen**
 
-   **(*Actie vereist*)** Een whitelist van bestandsextensies, het tegenovergestelde van de zwarte lijst. Als u alle bestandsextensies wilt toestaan, behalve extensies die op de zwarte lijst staan, gebruikt u het pictogram &#39;**-**&#39; om één leeg item te verwijderen.
+   **(*Handeling vereist*)** Een toegestane lijst met bestandsextensies, het tegenovergestelde van de keuzelijst met bestandsnamen. Als u alle bestandsextensies wilt toestaan, met uitzondering van extensies die geblokkeerd zijn, gebruikt u het pictogram &#39;**-**&#39; om één leeg item te verwijderen.
 
 * **Servicekiezer**
 
@@ -122,15 +125,15 @@ Als u een nieuwe configuratie wilt toevoegen, selecteert u het plusteken &#39;**
 
    De standaardwaarde is */bin/messaging* .
 
-* **Witelist veld**
+* **Veld toestaan**
 
-   Whitelist van **berichtvelden gebruiken**.
+   Gebruik **berichtenlijst**.
 
 >[!CAUTION]
 >
 >Telkens wanneer een `Messaging Operations Service` configuratie voor uitgeven wordt geopend, als `allowedAttachmentTypes.name` was verwijderd, wordt een lege ingang opnieuw toegevoegd om het bezit configureerbaar te maken. Bij één leeg item worden bestandsbijlagen uitgeschakeld.
 >
->Als u alle bestandsextensies wilt toestaan, met uitzondering van extensies die op de zwarte lijst staan, gebruikt u het pictogram &#39;**-**&#39; om (opnieuw) één leeg item te verwijderen voordat u op **Opslaan** klikt.
+>Als u alle bestandsextensies wilt toestaan, met uitzondering van extensies die geblokkeerd zijn, gebruikt u het pictogram &#39;**-**&#39; om (opnieuw) één leeg item te verwijderen voordat u op **Opslaan** klikt.
 
 
 ## Groepsberichten {#group-messaging}

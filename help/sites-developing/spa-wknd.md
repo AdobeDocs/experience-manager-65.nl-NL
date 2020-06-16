@@ -10,7 +10,10 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 2dbe18c1-8d79-4685-911b-3c6fe87d7e2c
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: b67693829e1fa16e29b8fb6293e4212ac866130d
+workflow-type: tm+mt
+source-wordcount: '173'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,10 @@ Ga in de ontwikkeling van het KUUROORD met dit multi-part leerprogramma binnen d
 
 ## Zelfstudies {#tutorials}
 
-Voor een voorbeeld van begin tot eind van de bouw van uw eigen enig-paginatoepassing die met AEM die met projectopstelling door toepassing het verpletteren begint editable is, zie het [Krijgen Begonnen met de Redacteur AEM SPA - het Leerprogramma](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html)van Gebeurtenissen WKND. Er zijn versies van de zelfstudie voor de frameworks React en Angular.
+Voor een voorbeeld van begin tot eind van de bouw van uw eigen enig-paginatoepassing die met AEM die met projectopstelling door toepassing het verpletteren begint editable is, zie de WKND KUUROPleidingen:
+
+* [Begonnen het worden met de Redacteur van het KUUROORD AEM en Hoekig](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)
+* [Begonnen het worden met de Redacteur van het KUUROORD AEM en Reageren](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
 
 Alvorens u met uw eigen project van het KUUROORD voor AEM nochtans begint, ben zeker om het [Ontwikkelen van SPAs voor AEM](/help/sites-developing/spa-architecture.md) document ook te herzien.
 

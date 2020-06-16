@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: d855aac2-f34d-402f-9dc3-c7ad494b45f2
 translation-type: tm+mt
-source-git-commit: e4456e80059479ca874681e20f8546f29ac92597
+source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+workflow-type: tm+mt
+source-wordcount: '436'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +30,7 @@ De bijdragelimieten kunnen individueel van de console [van de](members.md) Leden
 
 Gebruikend de console van Leden, kunnen de bijdragegrenzen proactief voor een lid door een communautaire manager op elk ogenblik worden verwijderd, of reactief worden verwijderd wanneer een lid een bericht naar een communautaire manager verzendt die zulk een verzoek doet.
 
-## Configuratie van door gebruikers gegenereerde inhoudcontributielimieten voor AEM-gemeenschappen {#aem-communities-user-generated-content-contribution-limits-configuration}
+## Configuratie van door de gebruiker gegenereerde inhoutheffingslimieten voor AEM Communities {#aem-communities-user-generated-content-contribution-limits-configuration}
 
 Deze configuratie OSGi:
 
@@ -48,33 +51,33 @@ Om deze configuratie te bereiken OSGi:
 
 ![chlimage_1-127](assets/chlimage_1-127.png)
 
-* **[!UICONTROL UGC-bijdragelimieten automatisch toepassen]**
+* **[!UICONTROL Automatically Apply UGC Contribution Limits]**
 
-   Als deze optie ingeschakeld is, worden automatisch bijdragelimieten ingesteld voor gebruikers die zich als leden van de gemeenschap registreren. Dit wordt weerspiegeld in het profiel van het lid van de gemeenschap en kan van de [lidconsole](members.md)worden toegelaten/worden onbruikbaar gemaakt. Nieuwe leden met een e-mailadres uit een domein op de witte lijst hebben nooit een beperking.
+   Als deze optie ingeschakeld is, worden automatisch bijdragelimieten ingesteld voor gebruikers die zich als leden van de gemeenschap registreren. Dit wordt weerspiegeld in het profiel van het lid van de gemeenschap en kan van de [lidconsole](members.md)worden toegelaten/worden onbruikbaar gemaakt. Nieuwe leden met een e-mailadres uit een toegestane lijst met domeinen worden nooit beperkt.
 
    De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL UGC-limiet]**
+* **[!UICONTROL UGC Limit]**
 
    Maximumaantal bijdragen.
 
    De standaardwaarde is 10 berichten.
 
-* **[!UICONTROL Frequentie UGC-limiet]**
+* **[!UICONTROL UGC Limit Frequency]**
 
    De tijdsperiode die de UGC-limiet beperkt.
 
    De standaardwaarde is 60 minuten.
 
-* **[!UICONTROL Domeinen]**
+* **[!UICONTROL Domains]**
 
-   Een witte lijst met een of meer e-maildomeinen. Selecteer + pictogram om extra ingangen te maken.
+   Een allowlist van een of meer e-maildomeinen. Selecteer + pictogram om extra ingangen te maken.
 
-   De gebruikers met e-mailadressen in de witte vermelde domeinen worden niet beïnvloed wanneer de de bijdragegrenzen van UGC automatisch worden toegepast. Als domein bijvoorbeeld aan de lijst met domeinen `mycompany.com` wordt toegevoegd, `me@mycompany.com` wordt een lid met een e-mailadres nooit verplicht om te posten.
+   Gebruikers met e-mailadressen in de lijst met toegestane domeinen worden niet beïnvloed wanneer de UGC-bijdragelimieten automatisch worden toegepast. Als domein bijvoorbeeld aan de lijst met domeinen `mycompany.com` wordt toegevoegd, `me@mycompany.com` wordt een lid met een e-mailadres nooit verplicht om te posten.
 
-   Standaard is dit een lege witte lijst.
+   De standaardwaarde is een lege allowlist.
 
-* **[!UICONTROL Ontvangers van berichten]**
+* **[!UICONTROL Messaging Recipients]**
 
    Lijst van een of meer toegestane id&#39;s van leden die de bijdragelimieten voor leden kunnen wijzigen. Selecteer + pictogram om extra ingangen te maken.
 

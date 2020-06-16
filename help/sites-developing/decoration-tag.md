@@ -1,27 +1,16 @@
 ---
 title: Decoratietag
-seo-title: Decoratietag
 description: Wanneer een component in een webpagina wordt gerenderd, kan een HTML-element worden gegenereerd, waarbij de gerenderde component in zichzelf wordt verpakt. Voor ontwikkelaars, biedt AEM duidelijke en eenvoudige logica die de decoratietags controleert die inbegrepen componenten verpakken.
-seo-description: Wanneer een component in een webpagina wordt gerenderd, kan een HTML-element worden gegenereerd, waarbij de gerenderde component in zichzelf wordt verpakt. Voor ontwikkelaars, biedt AEM duidelijke en eenvoudige logica die de decoratietags controleert die inbegrepen componenten verpakken.
-uuid: db796a22-b053-48dd-a50c-354dead7e8ec
-contentOwner: user
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: components
-content-type: reference
-discoiquuid: 8cb9fd6e-5e1f-43cd-8121-b490dee8c2be
 translation-type: tm+mt
-source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+source-git-commit: be1c0e21216b1014a36f88d13557f6e1d7a87c0a
+workflow-type: tm+mt
+source-wordcount: '878'
+ht-degree: 0%
 
 ---
 
 
 # Decoratietag{#decoration-tag}
-
->[!NOTE]
->
->Het gedrag en de opties van de versiemarkering die in dit artikel worden beschreven zijn gebaseerd op [AEM 6.3 GFP1](https://helpx.adobe.com/experience-manager/release-notes--aem-6-3-cumulative-fix-pack.html).
->
->Het gedrag van de decoratietag in punt 6.3 vóór GVB1 is vergelijkbaar met dat van AEM 6.2.
 
 Wanneer een component in een webpagina wordt gerenderd, kan een HTML-element worden gegenereerd, waarbij de gerenderde component in zichzelf wordt verpakt. Dit heeft hoofdzakelijk twee doelen:
 
@@ -48,12 +37,12 @@ Hier zijn sommige algemene aanbevelingen van wanneer om het omslagelement te omv
 
 De volgende eigenschappen en knopen kunnen op de componenten worden toegepast om het gedrag van hun versieringsmarkering te controleren:
 
-* **`cq:noDecoration {boolean}`**: Deze eigenschap kan aan een component worden toegevoegd en een werkelijke waarde dwingt AEM geen omvattende elementen over de component te genereren.
+* **`cq:noDecoration {boolean}`:**Deze eigenschap kan aan een component worden toegevoegd en een werkelijke waarde dwingt AEM geen omvattende elementen over de component te genereren.
 
-* **`cq:htmlTag`**node: Dit knooppunt kan onder een component worden toegevoegd en kan de volgende eigenschappen hebben:
+* **`cq:htmlTag`node:**Dit knooppunt kan onder een component worden toegevoegd en kan de volgende eigenschappen hebben:
 
-   * **`cq:tagName {String}`**: Dit kan worden gebruikt om een aangepaste HTML-tag op te geven die moet worden gebruikt voor het verpakken van de componenten in plaats van het standaard DIV-element.
-   * **`class {String}`**: Dit kan worden gebruikt om CSS klassennamen te specificeren die aan de omslag moeten worden toegevoegd.
+   * **`cq:tagName {String}`:**Dit kan worden gebruikt om een aangepaste HTML-tag op te geven die moet worden gebruikt voor het verpakken van de componenten in plaats van het standaard DIV-element.
+   * **`class {String}`:**Dit kan worden gebruikt om CSS klassennamen te specificeren die aan de omslag moeten worden toegevoegd.
    * Andere eigenschapnamen worden toegevoegd als HTML-kenmerken met dezelfde tekenreekswaarde als opgegeven.
 
 ## Scriptbesturingselementen {#script-controls}

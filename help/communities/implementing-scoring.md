@@ -1,8 +1,8 @@
 ---
 title: Scores en badges van gemeenschappen
 seo-title: Scores en badges van gemeenschappen
-description: Met AEM Communities scoring en badges kunt u leden van gemeenschappen identificeren en belonen
-seo-description: Met AEM Communities scoring en badges kunt u leden van gemeenschappen identificeren en belonen
+description: Met scoring en badges in AEM Communities kunt u leden van de gebruikersgemeenschap identificeren en belonen
+seo-description: Met scoring en badges in AEM Communities kunt u leden van de gebruikersgemeenschap identificeren en belonen
 uuid: d73683df-a413-4b3c-869c-67568bfdfcf6
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -12,9 +12,9 @@ discoiquuid: ea033bb9-cb92-4c93-855f-8c902999378c
 docset: aem65
 tagskeywords: scoring, badging, badges, gamification
 translation-type: tm+mt
-source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
+source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
 workflow-type: tm+mt
-source-wordcount: '2896'
+source-wordcount: '2897'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 ## Overzicht {#overview}
 
-Met de functie voor scoren en badges van AEM-gemeenschappen kunnen leden van de gemeenschap worden geïdentificeerd en beloond.
+De functie AEM Communities scoren en badges biedt de mogelijkheid om leden van de gemeenschap te identificeren en te belonen.
 
 De belangrijkste aspecten van scoring en badges zijn:
 
@@ -349,7 +349,7 @@ Het `scoringRules` bezit op een merkingsregel beperkt eenvoudig welke het schatt
      <li>number = score</li>
      <li>| = de verticale lijn (U+007C)</li>
      <li>path = full path to badge image resource</li>
-    </ul> De tekenreeksen moeten worden geordend, zodat de getallen in waarde toenemen en er geen witruimte tussen het getal en het pad wordt weergegeven.<br /> Voorbeeld:<br /> <code>80|/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png</code></td>
+    </ul> De tekenreeksen moeten worden geordend, zodat de getallen in waarde toenemen en er geen lege ruimte tussen het getal en het pad wordt weergegeven.<br /> Voorbeeld:<br /> <code>80|/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png</code></td>
   </tr>
   <tr>
    <td>badgingType</td>
@@ -455,7 +455,7 @@ Voor de geleverde communitycomponenten, beschrijven de volgende lijsten `verbs` 
 | POST | lid maakt een agendagebeurtenis |
 | TOEVOEGEN | opmerkingen van leden over een agendagebeurtenis |
 | BIJWERKEN | agendagebeurtenis of commentaar van lid wordt bewerkt |
-| VERWIJDEREN | agendagebeurtenis of commentaar van lid wordt verwijderd |
+| DELETE | agendagebeurtenis of commentaar van lid wordt verwijderd |
 
 **[Opmerkingen Component](/help/communities/comments.md)**SocialEvent`topic`= com/adobe/cq/social/comment
 
@@ -464,7 +464,7 @@ Voor de geleverde communitycomponenten, beschrijven de volgende lijsten `verbs` 
 | POST | lid maakt een opmerking |
 | TOEVOEGEN | reactie van lid op opmerking |
 | BIJWERKEN | commentaar van lid is bewerkt |
-| VERWIJDEREN | commentaar van lid is verwijderd |
+| DELETE | commentaar van lid is verwijderd |
 
 **[File Library Component](/help/communities/file-library.md)**SocialEvent`topic`= com/adobe/cq/social/fileLibrary
 
@@ -473,7 +473,7 @@ Voor de geleverde communitycomponenten, beschrijven de volgende lijsten `verbs` 
 | POST | lid maakt een map |
 | ATTACH | lid uploadt een bestand |
 | BIJWERKEN | lid werkt een map of bestand bij |
-| VERWIJDEREN | lid verwijdert een map of bestand |
+| DELETE | lid verwijdert een map of bestand |
 
 **[Forum Component](/help/communities/forum.md)**SocialEvent`topic`= com/adobe/cq/social/forum
 
@@ -482,7 +482,7 @@ Voor de geleverde communitycomponenten, beschrijven de volgende lijsten `verbs` 
 | POST | lid maakt forum-onderwerp |
 | TOEVOEGEN | reacties van leden op forum onderwerp |
 | BIJWERKEN | onderwerp of antwoord van lid wordt bewerkt |
-| VERWIJDEREN | forumonderwerp of antwoord van lid wordt verwijderd |
+| DELETE | forumonderwerp of antwoord van lid wordt verwijderd |
 
 **[Journal Component](/help/communities/blog-feature.md)**SocialEvent`topic`= com/adobe/cq/social/journaal
 
@@ -491,7 +491,7 @@ Voor de geleverde communitycomponenten, beschrijven de volgende lijsten `verbs` 
 | POST | lid maakt een blogartikel |
 | TOEVOEGEN | commentaar van leden op blogartikel |
 | BIJWERKEN | blogartikel of commentaar van lid wordt bewerkt |
-| VERWIJDEREN | blogartikel of commentaar van lid is verwijderd |
+| DELETE | blogartikel of commentaar van lid is verwijderd |
 
 **[QnA Component](/help/communities/working-with-qna.md)**SocialEvent`topic`= com/adobe/cq/social/qna
 
@@ -502,7 +502,7 @@ Voor de geleverde communitycomponenten, beschrijven de volgende lijsten `verbs` 
 | BIJWERKEN | Vraag of antwoord van lid wordt bewerkt |
 | SELECT | het antwoord van lid is geselecteerd |
 | SELECTEREN OPHEFFEN | het antwoord van het lid is gedeselecteerd |
-| VERWIJDEREN | Vraag of antwoord van lid wordt verwijderd |
+| DELETE | Vraag of antwoord van lid wordt verwijderd |
 
 **[Reviews Component](/help/communities/reviews.md)**SocialEvent`topic`= com/adobe/cq/social/review
 
@@ -510,7 +510,7 @@ Voor de geleverde communitycomponenten, beschrijven de volgende lijsten `verbs` 
 |---|---|
 | POST | lid maakt beoordeling |
 | BIJWERKEN | beoordeling door lid wordt bewerkt |
-| VERWIJDEREN | beoordeling door lid is verwijderd |
+| DELETE | beoordeling door lid is verwijderd |
 
 **[Beoordelingscomponent](/help/communities/rating.md)**SocialEvent`topic`= com/adobe/cq/social/tally/rating
 

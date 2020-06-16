@@ -3,7 +3,7 @@ title: XMP-terugverwijzing naar uitvoeringen
 description: Leer hoe de functie XMP-schrijfback de metagegevenswijzigingen voor een element doorgeeft aan alle of aan specifieke uitvoeringen van het element.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
+source-git-commit: 711cd438cc8962d310bb2bfbb14f079161aacce0
 workflow-type: tm+mt
 source-wordcount: '726'
 ht-degree: 3%
@@ -43,7 +43,7 @@ Als u wilt dat de XMP-terugdraaifunctie metagegevenswijzigingen doorgeeft aan ge
 
 Voer de volgende stappen uit voor de functie Terugschrijven XMP om metagegevens door te geven aan de vertoningsminiaturen 140.100.png en 319.319.png.
 
-1. Navigeer in de interface Experience Manager naar **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
+1. Navigeer in de Experience Manager-interface naar **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
 1. Open het **[!UICONTROL DAM Metadata Writeback]** workflowmodel op de pagina Modellen.
 1. Op de pagina met eigenschappen voor **[!UICONTROL DAM Metadata Writeback]** opent u de stap **[!UICONTROL XMP Writeback Process]**.
 1. In the [!UICONTROL Step Properties] dialog box, click the **[!UICONTROL Process]** tab.
@@ -76,7 +76,7 @@ Door het filteren van XMP-metagegevens via de toegestane lijst verhelpt u dit pr
 
 >[!NOTE]
 >
->Filteren werkt alleen voor de eigenschappen die zijn afgeleid van XMP-bronnen in binaire elementen. Voor de eigenschappen die van niet-XMP bronnen, zoals formaten EXIF en IPTC worden afgeleid, werkt het filtreren niet. De aanmaakdatum van elementen wordt bijvoorbeeld opgeslagen in een eigenschap met de naam EXIF TIFF. `CreateDate` In Experience Manager wordt deze waarde opgeslagen in een metagegevensveld met de naam `exif:DateTimeOriginal`. Aangezien de bron een niet-XMP-bron is, werkt het filteren niet op deze eigenschap.
+>Filteren werkt alleen voor de eigenschappen die zijn afgeleid van XMP-bronnen in binaire elementen. Voor de eigenschappen die van niet-XMP bronnen, zoals formaten EXIF en IPTC worden afgeleid, werkt het filtreren niet. De aanmaakdatum van elementen wordt bijvoorbeeld opgeslagen in een eigenschap met de naam EXIF TIFF. `CreateDate` Experience Manager slaat deze waarde op in een metagegevensveld met de naam `exif:DateTimeOriginal`. Aangezien de bron een niet-XMP-bron is, werkt het filteren niet op deze eigenschap.
 
 <!-- TBD: The instructions don't seem to match the UI. I see com.day.cq.dam.commons.metadata.XmpFilterBlackWhite.description
 in Config Manager. And the settings are,
@@ -90,14 +90,14 @@ TBD: Make updates to configurations for allow and block list after product updat
 
 1. Om de Manager van de Configuratie te openen, toegang `https://[aem_server]:[port]/system/console/configMgr`.
 1. Open de **[!UICONTROL Adobe CQ DAM XmpFilter]** configuratie.
-1. Als u filtering wilt toepassen via een toegestane lijst, selecteert u de eigenschappen die u wilt importeren in het **[!UICONTROL Apply Whitelist to XMP Properties]****[!UICONTROL Whitelisted XML Names for XMP filtering]** vak en geeft u deze op.
+1. Als u filtering wilt toepassen via een toegestane lijst, selecteert u de eigenschappen die u wilt importeren in het **[!UICONTROL Apply Allowlist to XMP Properties]****[!UICONTROL Allowed XML Names for XMP filtering]** vak en geeft u deze op.
 
    ![chlimage_1-136](assets/chlimage_1-347.png)
 
-1. Als u geblokkeerde XMP-eigenschappen wilt uitfilteren nadat u filtering hebt toegepast via de lijst met toegestane waarden, geeft u de eigenschappen in het **[!UICONTROL Blacklisted XML Names for XMP filtering]** vak op.
+1. Als u geblokkeerde XMP-eigenschappen wilt uitfilteren nadat u filtering hebt toegepast via de lijst met toegestane waarden, geeft u de eigenschappen in het **[!UICONTROL Blocked XML Names for XMP filtering]** vak op.
 
    >[!NOTE]
    >
-   >The **[!UICONTROL Apply Blacklist to XMP Properties]** option is selected by default. Met andere woorden, het filtreren gebruikend een geblokkeerde lijst wordt toegelaten door gebrek. Als u dergelijke filters wilt uitschakelen, schakelt u de **[!UICONTROL Apply Blacklist to XMP Properties]** optie uit.
+   >The **[!UICONTROL Apply Blocklist to XMP Properties]** option is selected by default. Met andere woorden, het filtreren gebruikend een geblokkeerde lijst wordt toegelaten door gebrek. Als u dergelijke filters wilt uitschakelen, schakelt u de **[!UICONTROL Apply Blocklist to XMP Properties]** optie uit.
 
 1. Sla de wijzigingen op.

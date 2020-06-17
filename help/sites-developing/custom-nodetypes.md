@@ -10,7 +10,10 @@ topic-tags: platform
 content-type: reference
 discoiquuid: aae186eb-e059-4a9d-b02d-86a86c86589d
 translation-type: tm+mt
-source-git-commit: d83cd0695f69d82e49b1761df2d8c64b0037e1f9
+source-git-commit: 07eb53f19cf7c7c2799c95ba9df54f4673d72fdc
+workflow-type: tm+mt
+source-wordcount: '1918'
+ht-degree: 7%
 
 ---
 
@@ -318,7 +321,7 @@ Definieert de configuratie voor de &quot;editbar&quot;.
 
 Vormt één dalingsdoel van een component. De naam van dit knooppunt wordt gebruikt als een id voor slepen en neerzetten.
 
-* `@prop accept` - Lijst van MIME-typen die door deze neerzetbestemming worden geaccepteerd;bijv. `["image/*"]`
+* `@prop accept` - Lijst van MIME-typen die door deze neerzetbestemming worden geaccepteerd; bijv. `["image/*"]`
 * `@prop groups` - Lijst met slepen- en neerzetgroepen die een bron accepteren.
 * `@prop propertyName` - Naam van de eigenschap die wordt gebruikt om de verwijzing op te slaan.
 
@@ -550,7 +553,7 @@ MailerService nodetypes. De mailer gebruikt knopen die deze mixin als wortelknop
 
 **Beschrijving**
 
-Definieert een LiveRelationship-mix. Een hoofdknooppunt en een slave-knooppunt kunnen via een LiveRelationship vrijwel aan elkaar worden gekoppeld.
+Definieert een LiveRelationship-mix. Een primair bronknooppunt (Besturingselement) en een live copy-knooppunt (gecontroleerd) kunnen via een LiveRelationship praktisch worden gekoppeld.
 
 **Definitie**
 
@@ -563,9 +566,9 @@ Definieert een LiveRelationship-mix. Een hoofdknooppunt en een slave-knooppunt k
 
 **Beschrijving**
 
-Definieert een LiveSync-mix. Als een knooppunt betrokken is bij een LiveRelationship met een hoofdknooppunt als slave, wordt het gemarkeerd als LiveSync.
+Definieert een LiveSync-mix. Als een knooppunt betrokken is bij een LiveRelationship met een primair bronknooppunt (Besturend) en een live-knooppunt (gecontroleerd), wordt dit gemarkeerd als een LiveSync.
 
-* `@prop cq:master` - Het pad van het hoofdknooppunt van de LiveRelationship.
+* `@prop cq:master` - Pad van de primaire bron (besturing) van de LiveRelationship.
 * `@prop cq:isDeep` - Definieert of de relatie beschikbaar is voor kinderen.
 * `@prop cq:syncTrigger` - Definieert wanneer de synchronisatie wordt geactiveerd.
 * `@node * LiveSyncAction` - Acties die synchroon moeten worden uitgevoerd
@@ -580,7 +583,7 @@ Definieert een LiveSync-mix. Als een knooppunt betrokken is bij een LiveRelation
 
 **Beschrijving**
 
-Definieert een LiveSyncCanceled-mix. Annuleer het gedrag LiveSync van een slave-knooppunt dat mogelijk betrokken is bij een LiveRelationship vanwege een van de bovenliggende knooppunten.
+Definieert een LiveSyncCanceled-mix. Annuleer het gedrag LiveSync van een live copy (gecontroleerd) knooppunt dat mogelijk betrokken is bij een LiveRelationship vanwege een van de bovenliggende knooppunten.
 
 * `@prop cq:isCancelledForChildren` - Hiermee wordt gedefinieerd of een LiveSync wordt geannuleerd. ook voor kinderen.
 

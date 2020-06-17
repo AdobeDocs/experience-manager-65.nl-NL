@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 96dc0c1a-b21d-480a-addf-c3d0348bd3ad
 translation-type: tm+mt
-source-git-commit: b3e1493811176271ead54bae55b1cd0cf759fe71
+source-git-commit: 07eb53f19cf7c7c2799c95ba9df54f4673d72fdc
+workflow-type: tm+mt
+source-wordcount: '2331'
+ht-degree: 0%
 
 ---
 
@@ -38,7 +41,7 @@ Voor het gebruik van de integratielaag wordt een aantal AEM-componenten buiten d
 * een winkelwagentje
 * uitchecken
 
-Voor het zoeken wordt een integratiehaak verstrekt die u toestaat om het onderzoek AEM, het onderzoek van het eCommerce systeem, een derdesonderzoek (zoals Onderzoek&amp;Promote) of een combinatie daarvan te gebruiken.
+Voor onderzoek wordt een integratiehaak verstrekt die u toestaat om het onderzoek AEM, het onderzoek van het eCommerce systeem, een derdenonderzoek (zoals Search&amp;Promote) of een combinatie daarvan te gebruiken.
 
 ## Selectie van eCommerce-engine {#ecommerce-engine-selection}
 
@@ -109,8 +112,7 @@ Voor de ontwikkeling van Hybris 4 is het volgende vereist:
 
    `-P hybris4`
 
-   
-De vooraf geconfigureerde distributie van Hybris 4 wordt gedownload en in de bundel ingesloten:
+   De vooraf geconfigureerde distributie van Hybris 4 wordt gedownload en in de bundel ingesloten:
 
    ```
    cq-commerce-hybris-server
@@ -286,7 +288,7 @@ public interface Product extends Adaptable {
 }
 ```
 
-#### com.adobe.cq.commerce.api.VariantFilter {#com-adobe-cq-commerce-api-variantfilter}
+#### com.adobe.cq.commerce.api.VariantFilter  {#com-adobe-cq-commerce-api-variantfilter}
 
 ```java
 /**
@@ -402,7 +404,7 @@ public class AxisFilter implements VariantFilter {
 
 #### Architectuur van het winkelwagentje {#architecture-of-the-shopping-cart}
 
-**Componenten**
+**Onderdelen**
 
 * Het winkelwagentje is eigendom van de `CommerceSession:`
 
@@ -556,9 +558,9 @@ Er wordt integratie tussen AEM en verschillende systemen voor e-handel geboden. 
 
    AEM wordt verondersteld om het *enige* Web front-end te zijn en daarom voert *alle* authentificatie uit.
 
-* slave-accounts
+* Rekeningen in hybriden
 
-   AEM maakt een slave-account in hybris voor elke winkelier. De gebruikersnaam van het slave-account is gelijk aan de AEM-gebruikersnaam. Een cryptografisch-willekeurig wachtwoord wordt auto-geproduceerd en (gecodeerd) opgeslagen in AEM.
+   AEM maakt een bijbehorende (ondergeschikte) account in hybris voor elke winkel. De gebruikersnaam van dit account is gelijk aan de AEM-gebruikersnaam. Een cryptografisch-willekeurig wachtwoord wordt auto-geproduceerd en (gecodeerd) opgeslagen in AEM.
 
 #### Bestaande gebruikers {#pre-existing-users}
 

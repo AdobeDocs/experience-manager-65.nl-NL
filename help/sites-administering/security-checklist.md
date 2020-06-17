@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: de7d7209-c194-4d19-853b-468ebf3fa4b2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+source-git-commit: 474fc122f557f32d34fddd9d35a113431f6ce491
+workflow-type: tm+mt
+source-wordcount: '2841'
+ht-degree: 0%
 
 ---
 
@@ -105,7 +108,7 @@ Adobe raadt u aan aangepaste pagina&#39;s voor fouthandlers te definiëren, met 
 >
 >Zie [hoe ik douanemanuscripten of foutenhandlers](https://helpx.adobe.com/experience-manager/kb/CustomErrorHandling.html) kennisbasisartikel voor meer details kan tot stand brengen.
 
-### Volledige lijst voor beveiligingscontrole voor verzending {#complete-dispatcher-security-checklist}
+### Dispatcher-beveiligingscontrolelijst voltooien {#complete-dispatcher-security-checklist}
 
 AEM Dispatcher is een essentieel onderdeel van uw infrastructuur. Adobe raadt u ten zeerste aan de [beveiligingscontrolelijst](https://helpx.adobe.com/experience-manager/dispatcher/using/security-checklist.html)van de verzender in te vullen.
 
@@ -169,9 +172,9 @@ De dienst van de verwijzingsfilter is de dienst OSGi die u toestaat om te vormen
 
 * welke http-methoden moeten worden gefilterd
 * Geeft aan of een lege verwijzingskoptekst is toegestaan
-* en een witte lijst met servers die naast de serverhost zijn toegestaan.
+* en een lijst met servers die naast de serverhost zijn toegestaan.
 
-Standaard staan alle variaties van localhost en de huidige hostnamen waarnaar de server is gebonden in de witte lijst.
+   Standaard staan alle variaties van localhost en de huidige hostnamen waar de server aan gebonden is, in de lijst.
 
 Om de dienst van het verwijzingsfilter te vormen:
 
@@ -315,7 +318,7 @@ Om misbruik van DoS te helpen voorkomen, kunt u:
 >
 >Deze beperking moet alleen worden uitgevoerd op AEM-omgevingen die geen Forms gebruiken.
 
-Aangezien AEM geen uit de doosindexen voor de `FormChooserServlet`verstrekt, zal het gebruiken van vormselecteurs in vragen een dure bewaarplaats traversal teweegbrengen, gewoonlijk die de instantie AEM aan een halt malen. Formulierkiezers kunnen worden gedetecteerd door de aanwezigheid van het **&amp;ast;.form.** &amp;ast; tekenreeks in query&#39;s.
+Aangezien AEM geen uit de doosindexen voor de `FormChooserServlet`verstrekt, zal het gebruiken van vormselecteurs in vragen een dure bewaarplaats traversal teweegbrengen, gewoonlijk die de instantie AEM aan een halt malen. Formulierkiezers kunnen worden gedetecteerd door de aanwezigheid van het **&amp;ast;.form.&amp;ast;** tekenreeks in query&#39;s.
 
 Volg onderstaande stappen om dit te beperken:
 
@@ -330,7 +333,7 @@ Volg onderstaande stappen om dit te beperken:
 
 Met de standaard Asset Download Server in AEM kunnen geverifieerde gebruikers willekeurig grote, gelijktijdige downloadaanvragen afgeven voor het maken van ZIP-bestanden met middelen die zichtbaar zijn voor hen en die de server en/of het netwerk kunnen overbelasten.
 
-Om potentiële risico&#39;s van Dos te verlichten die door deze eigenschap worden veroorzaakt, is de component `AssetDownloadServlet` OSGi gehandicapt door gebrek voor te publiceren instanties op recentste versies AEM.
+Om potentiële risico&#39;s van Dos te verlichten die door deze eigenschap worden veroorzaakt, is de component `AssetDownloadServlet` OSGi gehandicapt door gebrek voor publiceer instanties op recentste versies AEM.
 
 Als de installatie vereist dat de Asset Download Server is ingeschakeld, raadpleegt u [dit artikel](/help/assets/download-assets-from-aem.md) voor meer informatie.
 

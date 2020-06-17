@@ -10,7 +10,10 @@ topic-tags: Security
 content-type: reference
 discoiquuid: f3781d9a-421a-446e-8b49-40744b9ef58e
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 3cbbad3ce9d93a353f48fc3206df989a8bf1991a
+workflow-type: tm+mt
+source-wordcount: '969'
+ht-degree: 0%
 
 ---
 
@@ -23,11 +26,11 @@ Het AEM-team van Adobe heeft nauw samengewerkt met het open-source-project [NotS
 
 De agent die bij dit pakket is inbegrepen, is de gewijzigde distributie van Adobe van NotSoSerial.
 
-NotSoSerial is een oplossing op Java-niveau voor een probleem op Java-niveau en is niet specifiek voor AEM. Er wordt een Preflight-controle toegevoegd aan een poging om een object te deserialiseren. Deze controle zal een klassennaam tegen een firewall-stijl whitelist en/of zwarte lijst testen. Vanwege het beperkte aantal klassen in de standaard zwarte lijst is het onwaarschijnlijk dat dit van invloed is op uw systemen of code.
+NotSoSerial is een oplossing op Java-niveau voor een probleem op Java-niveau en is niet specifiek voor AEM. Er wordt een Preflight-controle toegevoegd aan een poging om een object te deserialiseren. Met deze controle wordt een klassenaam getest op basis van een lijst met toegestane en/of bloklijsten in de firewallstijl. Vanwege het beperkte aantal klassen in de standaardbloklijst is het onwaarschijnlijk dat dit van invloed is op uw systemen of code.
 
-Door gebrek, zal de agent een zwarte lijstcontrole tegen huidige bekende kwetsbare klassen uitvoeren. Deze zwarte lijst is bedoeld om u te beschermen tegen de huidige lijst van explosies die dit type kwetsbaarheid gebruiken.
+Door gebrek, zal de agent een bloklijstcontrole tegen huidige bekende kwetsbare klassen uitvoeren. Deze bloklijst is bedoeld om u tegen de huidige lijst van exploitaties te beschermen die dit type van kwetsbaarheid gebruiken.
 
-De zwarte lijst en whitelist kunnen worden gevormd door de instructies in het [Vormen van de sectie van de Agent](/help/sites-administering/mitigating-serialization-issues.md#configuring-the-agent) van dit artikel te volgen.
+De bloklijst en staan lijst toe kan worden gevormd door de instructies in het [Vormen van de sectie van de Agent](/help/sites-administering/mitigating-serialization-issues.md#configuring-the-agent) van dit artikel te volgen.
 
 De agent is bedoeld om de recentste bekende kwetsbare klassen te helpen verlichten. Als uw project niet-vertrouwde gegevens deserializing, kan het nog kwetsbaar aan ontkenning van de dienstaanvallen, uit geheugenaanvallen, en onbekende toekomstige deserialization exploiteert.
 
@@ -66,7 +69,7 @@ De agent NotSoSerial is niet inbegrepen in de standaarddistributie van AEM voor 
 
 ## De agent configureren {#configuring-the-agent}
 
-De standaardconfiguratie is geschikt voor de meeste installaties. Dit omvat een zwarte lijst van bekende klassen die kwetsbaar zijn voor uitvoering op afstand en een whitelist van pakketten waarbij de deserialisatie van vertrouwde gegevens relatief veilig zou moeten zijn.
+De standaardconfiguratie is geschikt voor de meeste installaties. Dit omvat een bloklijst met bekende klassen voor externe uitvoering en een lijst met toegestane pakketten waarbij de deserialisatie van vertrouwde gegevens relatief veilig moet zijn.
 
 De firewallconfiguratie is dynamisch, en kan op elk ogenblik worden veranderd door:
 
@@ -80,15 +83,15 @@ De firewallconfiguratie is dynamisch, en kan op elk ogenblik worden veranderd do
    >* `https://server:port/system/console/configMgr/com.adobe.cq.deserfw.impl.DeserializationFirewallImpl`
 
 
-Deze configuratie bevat whitelist, zwarte lijst, en deserialization registreren.
+Deze configuratie bevat het toestaan lijst, de bloklijst, en deserialization registreren.
 
-**Whitelisting**
+**Aanbieding toestaan**
 
-In de whitelisting-sectie zijn dit klassen of voorvoegsels van pakketten die deserialisatie zijn toegestaan. Houd er rekening mee dat als u deserialiseert voor klassen van uw eigen klasse, u klassen of pakketten aan deze whitelist moet toevoegen.
+In de sectie voor het toestaan van lijsten zijn dit klassen of voorvoegsels van pakketten die kunnen worden gedeserialiseerd. Houd er rekening mee dat als u deserialiseert voor klassen van uw eigen klasse, u klassen of pakketten moet toevoegen aan deze lijst met toegestane klassen.
 
-**Blackvermelding**
+**Aanbieding blokkeren**
 
-In het gedeelte met zwarte lijsten staan klassen die nooit mogen worden gedeserialiseerd. De aanvankelijke reeks van deze klassen is beperkt tot klassen die aan verre uitvoeringsaanvallen kwetsbaar zijn gevonden. De zwarte lijst wordt toegepast vóór alle vermeldingen met een whitelist.
+In de sectie met bloklijsten staan klassen die nooit voor deserialisatie zijn toegestaan. De aanvankelijke reeks van deze klassen is beperkt tot klassen die aan verre uitvoeringsaanvallen kwetsbaar zijn gevonden. De bloklijst wordt toegepast voordat er vermelde items zijn toegestaan.
 
 **Diagnostische registratie**
 
@@ -110,7 +113,7 @@ Voor meer informatie over het oplossen van problemenkwesties met de agent, zie d
 
 >[!NOTE]
 >
->Als u `org.apache.commons.collections.functors` aan de whitelist toevoegt, zal de gezondheidscontrole altijd ontbreken.
+>Als u `org.apache.commons.collections.functors` aan de lijst Allow toevoegt, zal de gezondheidscontrole altijd ontbreken.
 
 ## Fouten afhandelen met laden van dynamische agent {#handling-errors-with-dynamic-agent-loading}
 
@@ -139,4 +142,3 @@ Volg onderstaande instructies om de agent handmatig te laden:
 ## Andere overwegingen {#other-considerations}
 
 Als u een IBM JVM gebruikt, raadpleegt u de documentatie over ondersteuning voor de Java Attach-API op [deze locatie](https://www.ibm.com/support/knowledgecenter/SSSTCZ_2.0.0/com.ibm.rt.doc.20/user/attachapi.html).
-

@@ -4,9 +4,9 @@ description: De nota's van de versie specifiek voor Adobe Experience Manager 6.5
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d7276f332bece4f736d92e5723d79ffc2d27e900
+source-git-commit: 1eca1fcce90dfde8b512414249eb8cc05323c5cc
 workflow-type: tm+mt
-source-wordcount: '4394'
+source-wordcount: '4396'
 ht-degree: 0%
 
 ---
@@ -31,11 +31,11 @@ Enkele belangrijke functies en verbeteringen die zijn geïntroduceerd in Adobe E
 
 * Pas de kolomnamen aan die in Adobe Experience Manager Inbox tonen.
 
-* Verbeterde toegankelijkheid in diverse gebieden in het Beheer van de Inhoud van het Web van de Manager van de Ervaring (WCM) zoals de Redacteur van de Pagina, de Componenten van de Kern, RTE, en Admin gebruikersinterface.
+* Verbeterde toegankelijkheid op diverse gebieden in het Beheer van de Inhoud van het Web van Experience Manager (WCM) zoals de Redacteur van de Pagina, de Componenten van de Kern, RTE, en Admin gebruikersinterface.
 
 * Sla een concept op [!DNL Interactive Communication] als concept.
 
-* Ondersteuning voor [!DNL Oracle WebLogic 12] Experience Manager Forms on JEE.
+* Ondersteuning voor [!DNL Oracle WebLogic 12] Experience Manager Forms op JEE.
 
 * Verbeterde uitzonderingsbehandeling in [!DNL Adobe Experience Manager Assets] gebruikersinterfacestroom.
 
@@ -47,23 +47,23 @@ Enkele belangrijke functies en verbeteringen die zijn geïntroduceerd in Adobe E
 
 * De ingebouwde opslagplaats (Apache Jackrabbit Oak) wordt bijgewerkt naar versie 1.22.3.
 
-Voor volledige lijst van eigenschappen, zeer belangrijke hoogtepunten, zeer belangrijke eigenschappen die in de Manager van de Ervaring 6.5 de dienstpak 5 worden geïntroduceerd, zie [wat in Adobe Experience Manager 6.5 Service Pack 5](new-features-latest-service-pack.md) nieuw is.
+Voor volledige lijst van eigenschappen, zeer belangrijke hoogtepunten, zeer belangrijke eigenschappen die in Experience Manager 6.5 de dienstpak 5 worden geïntroduceerd, zie [wat in Adobe Experience Manager 6.5 Service Pack 5](new-features-latest-service-pack.md) nieuw is.
 
 Hier volgt een lijst met oplossingen uit de release van [!DNL Experience Manager] 6.5.5.0.
 
 ### [!DNL Sites] {#sites-6550}
 
-* De Plaatsen van de Manager van de ervaring verstrekt een optie om een pagina van zijn alias te publiceren of unpublish. De optie werkt niet (NPR-33415).
+* Experience Manager Sites biedt een optie om een pagina te publiceren of de publicatie ervan ongedaan te maken. De optie werkt niet (NPR-33415).
 * Wanneer een lay-outcontainer wordt verwijderd uit een sjabloon met meerdere sjablonen, wordt de sjabloon niet correct weergegeven (NPR-33347).
-* Wanneer een pagina van de Plaatsen van de Manager van de Ervaring deel van een grote inhoudset met veelvoudige levende-exemplaren uitmaakt, kan de voorproef van de de geschiedenisvoorproef van de paginaversie niet laden (NPR-33311).
-* Wanneer u het bevel van de Beweging gebruikt om een pagina van de Plaatsen van de Manager van de Ervaring anders te noemen, wordt de paginatitel niet bijgewerkt (NPR-33264).
+* Wanneer een Experience Manager-sitepagina deel uitmaakt van een grote inhoudenset met meerdere live-kopieën, kan de voorvertoning van de paginaversiegeschiedenis niet worden geladen (NPR-33311).
+* Wanneer u de opdracht Verplaatsen gebruikt om de naam van een Experience Manager-sitepagina te wijzigen, wordt de paginatitel niet bijgewerkt (NPR-33264).
 * Wanneer u pagina&#39;s door de kolommening beweegt, verdwijnen de kolommen (NPR-33216).
 * Wanneer de naam van een lokale component in een taalkopie identiek is aan de naam van een component in het concept en het onderdeel wordt opgerold uit blauwdruk, `_msm_moved` wordt de term niet toegevoegd aan de naam van de lokale component (NPR-33208).
-* De server voor omleiding van pagina voegt .html toe aan de URL van een Experience Manager-site waar ResourceType niet is `cq:Page` (NPR-33176).
+* De service Page Redirect voegt .html toe aan een URL voor Experience Manager-sites waar ResourceType niet is `cq:Page` (NPR-33176).
 * Wanneer u een substructuur plakt, is er geen optie om te bepalen of corresponderende subpagina&#39;s moeten worden geplakt (NPR-33149).
 * Het aantal resultaten in levend gebruik van een component is beperkt tot nummer 49 (NPR-33058).
 * Wanneer u een inhoudsfragment baseert op een schema en het een verplicht tekstgebied of een weggebied bevat, kan het inhoudsfragment niet opslaan (NPR-33007).
-* Wanneer u een douanecomponent creeert gebruikend de standaardcomponent van het Fragment van de Ervaring en het in de Pagina&#39;s van de Plaatsen van de Manager van de Ervaring gebruikt, toont de Manager van de Ervaring geen verwijzingen (gebruik) voor de douanecomponent (NPR-32852).
+* Wanneer u een aangepaste component maakt met de standaardcomponent Experience Fragment en deze gebruikt op Experience Manager-sitepagina&#39;s, geeft Experience Manager geen referenties (gebruik) weer voor de aangepaste component (NPR-32852).
 * Wanneer u de naam van een map wijzigt met een groot aantal verwijzingen, worden veel verwijzingen naar de map niet bijgewerkt (NPR-32765).
 * Wanneer u de optie voor bronbewerking inschakelt, wordt deze beschikbaar voor inlineopties voor volledig scherm, maar blijft deze beschikbaar voor opties voor het bewerken van het dialoogvenster en het volledige scherm van de RTF-editor (NPR-32763).
 * Als u een veld met meerdere velden hebt en een vereist veld (zoals een vervolgkeuzelijst of een padveld) in de pagina-eigenschappen van een blauwdruk bevat, worden de pagina-eigenschappen van de live kopie niet opgeslagen (NPR-32751) wanneer een pagina die een dergelijk veld bevat, wordt opgerold.
@@ -72,16 +72,16 @@ Hier volgt een lijst met oplossingen uit de release van [!DNL Experience Manager
 * Auteurmachtigingen voor het lezen, wijzigen, maken en verwijderen van live kopieën worden ingetrokken. Elke auteur moest lees- en wijzigingstoestemmingen uitdrukkelijk verstrekken om pagina&#39;s binnen een Blauwdruk (NPR-32550) te bewegen.
 * Inhoudsauteurs kunnen de functie Starten niet maken voor een pagina die is geïntegreerd met Adobe Analytics (NPR-32548).
 * Wanneer een gebruiker de overerving met synchronisatie hervat, synchroniseert de live kopie van de bovenliggende pagina niet met de blauwdruk en geeft deze een onjuiste status weer (NPR-32500).
-* De pagina van de redacteur van de Plaatsen van de Manager van de ervaring neemt meer dan 15 seconden aan lading (NPR-32413).
+* Het laden van de Experience Manager Sites Editor-pagina duurt meer dan 15 seconden (NPR-32413).
 * In bepaalde velden wordt de optie Overerving annuleren niet weergegeven (NPR-32362).
 * Wanneer u een pad selecteert voor een ervaringsfragmentcomponent en het selectievakje Dialoogvenster Selectie openen inschakelt, wordt niet naar het geselecteerde pad genavigeerd in de padbrowser (NPR-32308).
-* Wanneer u van Manager 6.2 van de Ervaring aan Manager 6.5 van de Ervaring bevordert, correct toont de component Parsys van statische malplaatjes niet. De hoogte van de component Parsys wordt geplaatst aan 0 en de componenten binnen het zijn niet zichtbaar (NPR-33663).
+* Wanneer u van Experience Manager 6.2 aan Experience Manager 6.5 bevordert, correct toont de component Parsys van statische malplaatjes. De hoogte van de component Parsys wordt geplaatst aan 0 en de componenten binnen het zijn niet zichtbaar (NPR-33663).
 * Wanneer een gebruiker een Layout Container op dezelfde pagina kopieert en plakt, worden componenten in een Layout Container niet weergegeven (NPR-33648).
 * Met de Dispatcher Health Check wordt een `Invalid cookie header` waarschuwingsbericht weergegeven in de logbestanden (NPR-33629).
 
 ### [!DNL Assets] {#assets-6550}
 
-**Verbeterde toegankelijkheid in Experience Manager-elementen**
+**Toegankelijkheidsverbeteringen in Experience Manager-elementen**
 
 * Het is nu mogelijk om de toetsenbordfocus op de [!UICONTROL Comments] lijst te plaatsen en op [!UICONTROL Create] versieopmerkingen te klikken [!UICONTROL Create new version] in het [!UICONTROL Timeline] middelenpaneel (NPR-33424).
 
@@ -125,7 +125,7 @@ Hier volgt een lijst met oplossingen uit de release van [!DNL Experience Manager
 
 * Het doel van verschillende keuzelijstelementen (zoals het veld Pad en de optie om het dialoogvenster Selectie te openen op het tabblad Standaard van Eigenschappen van element) worden nu correct aangekondigd door schermlezers (NPR-33235).
 
-* De informatie dat de rijen in de lijst van de lijstmening selecteerbaar zijn wordt nu meegedeeld aan de gebruikers van de schermlezer wanneer toetsenbordnadruk op hen is. Deze informatie wordt bekendgemaakt wanneer de muis op de rijen wordt gehouden (NPR-33234).
+* De informatie dat de rijen in de lijst van de lijstmening selecteerbaar zijn wordt nu meegedeeld aan de gebruikers van de schermlezer wanneer toetsenbordnadruk op hen is. Wanneer een aanwijzer op de rijen wordt geplaatst, geven de schermlezers de informatie aan (NPR-33234).
 
 * Opties (voor [!UICONTROL x]) het verwijderen van alle geselecteerde codes onder het [!UICONTROL Tags] veld op het [!UICONTROL Basic] tabblad [!UICONTROL Properties] zijn nu toegankelijk voor schermlezers (NPR-33206).
 
@@ -177,7 +177,7 @@ Hier volgt een lijst met oplossingen uit de release van [!DNL Experience Manager
 
 * Om verwarring te voorkomen voor niet-zichtbare gebruikers die een schermlezer gebruiken, worden decoratieve pictogrammen en afbeeldingen nu genegeerd door schermlezers (CQ-4272944).
 
-**Problemen die zijn verholpen met middelen van Experience Manager**
+**In Experience Manager Assets opgeloste problemen**
 
 [!DNL Adobe Experience Manager] 6.5.5.0 Middelen bieden oplossingen voor de volgende problemen:
 
@@ -213,11 +213,11 @@ Hier volgt een lijst met oplossingen uit de release van [!DNL Experience Manager
 
 * Uitzondering wordt waargenomen in logboeken bij het openen van uitvoeringen per spoor voor een PDF onder een map met profiel voor slimme uitsnijdingen (CQ-4294201).
 
-* Voorinstellingen voor afbeeldingen publiceren niet, als deze standaard [!UICONTROL Dynamic Media sync mode] is uitgeschakeld in Experience Manager met Dynamic Media Scene7 runmode (CQ-4294200).
+* Voorinstellingen voor afbeeldingen publiceren niet als deze standaard [!UICONTROL Dynamic Media sync mode] is uitgeschakeld in Experience Manager met de runmode van Dynamic Media Scene7 (CQ-4294200).
 
 * De verwerking van bedrijfsmiddelen tijdens bulkupload blijft vastzitten en de werkstroominstantie toont vastgelopen instanties van update DAM-middelen (CQ-4293916).
 
-* Het creëren van een configuratie van Dynamic Media op de Manager van de Ervaring werkt, maar op het gebruikersinterface gebeurt niets bij het selecteren van sparen (CQ-4292442).
+* Het creëren van een configuratie van Dynamic Media op Experience Manager werkt, maar op het gebruikersinterface gebeurt niets bij het selecteren van sparen (CQ-4292442).
 
 * Voorvertoning van F4V-video-elementen werkt niet in progressief afspelen op Safari/Mac (CQ-4289844).
 
@@ -231,21 +231,21 @@ Hier volgt een lijst met oplossingen uit de release van [!DNL Experience Manager
 
    * Het uploaden van grote binaire bestanden naar Dynamic Media Image Processing-servers duurt te lang.
 
-   * De tijd van de duimgeneratie op de Manager van de Ervaring stijgt wegens de architectuur van Dynamic Media Scene7.
+   * De tijd van de duimnagelgeneratie op Experience Manager stijgt wegens de architectuur van Dynamic Media Scene7.
 
 * De migratieproblemen van Dynamic Media Scene7 ontbreken voor klanten met groot aantal activa (CQ-4279206).
 
 * De lay-out van de video 360-viewer wordt verbroken wanneer deze `setVideo` wordt gebruikt en de video wordt bij gebruik afgebroken `video= modifier` (CQ-4263201).
 
-* Er wordt een foutbericht weergegeven tijdens de installatie van het pakket Experience Manager SDL (NPR-33175).
+* Er wordt een foutbericht weergegeven tijdens de installatie van het Experience Manager SDL-pakket (NPR-33175).
 
 ### Platform {#platform-6550}
 
 * Het [!DNL Sling] filter wordt niet aangeroepen als het `sling:match` kaartitem wordt gemaakt onder `/etc/maps` (NPR-33362).
-* Experience Manager crasht als gevolg van een segmentatiefout met [!DNL Apache Lucene] (NPR-32988).
-* [!DNL Jackson] core package missing from Experience Manager uberjar file (NPR-32848).
+* Experience Manager loopt vast als gevolg van een fout in de segmentatie [!DNL Apache Lucene] (NPR-32988).
+* [!DNL Jackson] kernpakket ontbreekt in het Experience Manager uberjar-bestand (NPR-32848).
 * CRXDE Lite laadt geen inhoud voor gebruikers zonder lees toestemming op het `jcr:primaryType` bezit voor een knoop (NPR-32611).
-* [!DNL Granite] de planner van de onderhoudstaak herinitialiseert te vaak tijdens de plaatsingen van de Manager van de Ervaring (CQ-4294627).
+* [!DNL Granite] onderhoudstaakplanner wordt te vaak opnieuw geïnitialiseerd tijdens Experience Manager-implementaties (CQ-4294627).
 * Wanneer een SQL-query lang wordt uitgevoerd, bijvoorbeeld 7 uur, stopt Experience Manager met reageren (NPR-33044).
 
 ### User Interface {#ui-6550}
@@ -261,13 +261,13 @@ Hier volgt een lijst met oplossingen uit de release van [!DNL Experience Manager
 * Integratie met Adobe Target werkt niet op [!DNL Windows Internet Explorer] 11 (NPR-33111).
 * Wanneer het vormen van Adobe Target, verschijnen de [!UICONTROL Company] en [!UICONTROL Report Suite] gebieden niet bij het selecteren van een rapporteringsbron (NPR-32502).
 * Metagegevens zoals Bronproduct worden niet geëxporteerd naar Adobe Target (NPR-32159) wanneer u exporteert [!DNL Experience Fragments] met Adobe I/O.
-* Erkende IMS-gebruikers in de beheergroep van de lokale Experience Manager kunnen geen IMS-configuraties maken of wijzigen (NPR-33045).
+* Erkende IMS-gebruikers in de lokale Experience Manager-beheergroep kunnen geen IMS-configuraties maken of wijzigen (NPR-33045).
 * Op de pagina met Adobe Launch-configuraties worden niet alle records weergegeven (NPR-33011).
 * Gebruikers in een groep van inhoudsauteurs kunnen vanwege een JavaScript-fout de eigenschappen van een Adobe Target-component niet bewerken (NPR-32996).
 
 ### Omzettingsprojecten {#translation-6550}
 
-* Vertaalde tags worden niet geïmporteerd in Experience Manager via vertaalservices van derden (NPR-33154).
+* Vertaalde labels worden niet vanuit vertaalservices van derden naar Experience Manager geïmporteerd (NPR-33154).
 * Op de pagina voor vertaalconfiguratie wordt een onjuiste vertaalprovider weergegeven dan de provider die wordt gebruikt voor de vertaling (NPR-32971).
 * Als u een ervaringsfragmentmap toevoegt aan een bestaand vertaalproject, wordt een nieuw project gemaakt (NPR-32843).
 * Er is een `NullPointerException` fout opgetreden in de logboeken met een vertaaltaak (NPR-32628).
@@ -388,13 +388,13 @@ Zie de [technische vereisten](/help/sites-deploying/technical-requirements.md)vo
 >
 >Sla dit over als u geen AEM Forms gebruikt op JEE. Oplossingen in Adobe Experience Manager Forms op JEE worden geleverd via een afzonderlijk installatieprogramma.
 
-Voor informatie over het installeren van het cumulatieve installatieprogramma voor de Vormen van de Manager van de Ervaring op JEE en post-plaatsing configuratie, zie de [versienota&#39;s voor flard 0014](https://helpx.adobe.com/aem-forms/quick-fixes/6-5/jee-patch-0014.html).
+Voor informatie over het installeren van het cumulatieve installatieprogramma voor Experience Manager Forms op JEE en configuratie na implementatie, zie de [releaseopmerkingen voor patch 0014](https://helpx.adobe.com/aem-forms/quick-fixes/6-5/jee-patch-0014.html).
 
 ### UberJar {#uber-jar}
 
-UberJar for Experience Manager 6.5.5.0 is beschikbaar in de [Adobe Public Maven-opslagruimte](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aem/uber-jar/6.5.5/).
+De UberJar voor Experience Manager 6.5.5.0 is beschikbaar in de [Adobe Public Maven-opslagruimte](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aem/uber-jar/6.5.5/).
 
-Om UberJar in een Geweven project te gebruiken, zie [hoe te UberJar](/help/sites-developing/ht-projects-maven.md) gebruiken en de volgende gebiedsdeel in uw projectPOM omvatten:
+Om UberJar in een Geweven project te gebruiken, zie [hoe te om UberJar](/help/sites-developing/ht-projects-maven.md) te gebruiken en de volgende gebiedsdeel in uw projectPOM te omvatten:
 
 ```shell
 <dependency>

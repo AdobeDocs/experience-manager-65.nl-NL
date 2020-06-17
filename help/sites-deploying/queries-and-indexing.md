@@ -11,7 +11,10 @@ topic-tags: deploying
 discoiquuid: 492741d5-8d2b-4a81-8f21-e621ef3ee685
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/queries-and-indexing
 translation-type: tm+mt
-source-git-commit: 1f7a45adc73b407c402a51b061632e72d97ca306
+source-git-commit: b01f6d3726fd6aa06ffedaf10dfde9526479a2a3
+workflow-type: tm+mt
+source-wordcount: '2880'
+ht-degree: 0%
 
 ---
 
@@ -82,8 +85,8 @@ De index van het Bezit is over het algemeen nuttig voor vragen die bezitsbeperki
 1. Geef het knooppunt **PropertyIndex** een naam en stel het knooppunttype in op **eak:QueryIndexDefinition**
 1. Stel de volgende eigenschappen in voor het nieuwe knooppunt:
 
-   * **** type:  `property` (van het type String)
-   * **** propertyNames :  `jcr:uuid` (van het type Name)
+   * **type:**  `property` (van het type String)
+   * **propertyNames :**  `jcr:uuid` (van het type Name)
    In dit voorbeeld wordt de `jcr:uuid` eigenschap geïndexeerd, waarvan de taak is om de universeel unieke id (UUID) weer te geven van het knooppunt waaraan deze is gekoppeld.
 
 1. Sla de wijzigingen op.
@@ -119,8 +122,8 @@ U kunt een volledig-tekstindex van Lucene vormen, door de hieronder procedure te
 1. Geef het knooppunt **LuceneIndex** een naam en stel het knooppunttype in op **eak:QueryIndexDefinition**
 1. Voeg de volgende eigenschappen toe aan het knooppunt:
 
-   * **** type:  `lucene` (van het type String)
-   * **** async:  `async` (van het type String)
+   * **type:**  `lucene` (van het type String)
+   * **async:**  `async` (van het type String)
 
 1. Sla de wijzigingen op.
 
@@ -129,7 +132,7 @@ De index van Lucene heeft de volgende configuratieopties:
 * De eigenschap **type** die het type index opgeeft, moet worden ingesteld op **luceen**
 * De eigenschap **async** die moet worden ingesteld op **async**. Hiermee wordt het indexupdateproces naar een achtergrondthread verzonden.
 * De eigenschap **includePropertyTypes** definieert welke subset van eigenschapstypen in de index wordt opgenomen.
-* De eigenschap **excludePropertyNames** definieert een zwarte lijst met namen van eigenschappen - eigenschappen die van de index moeten worden uitgesloten.
+* De eigenschap **excludePropertyNames** definieert een lijst met namen van eigenschappen - eigenschappen die moeten worden uitgesloten van de index.
 * De **rendex** -markering die, wanneer ingesteld op **true**, zorgt voor een nieuwe index van de volledige inhoud.
 
 ### De index van de eigenschap Lucene {#the-lucene-property-index}
@@ -146,8 +149,8 @@ select * from [nt:base] where [alias] = '/admin'
 
 Om een Index van het Bezit van Lucene voor de bovengenoemde vraag te bepalen, kunt u de volgende definitie toevoegen door een nieuwe knoop onder **eikel te creëren:index:**
 
-* **** Naam: `LucenePropertyIndex`
-* **** Type: `oak:QueryIndexDefinition`
+* **Naam:** `LucenePropertyIndex`
+* **Type:** `oak:QueryIndexDefinition`
 
 Voeg de volgende eigenschappen toe wanneer het knooppunt is gemaakt:
 
@@ -169,7 +172,7 @@ Voeg de volgende eigenschappen toe wanneer het knooppunt is gemaakt:
    false (of type Boolean)
    ```
 
-* **** includePropertyNames: `["alias"] (of type String)`
+* **includePropertyNames:** `["alias"] (of type String)`
 
 >[!NOTE]
 >
@@ -205,22 +208,22 @@ Als u een analysator in de doos wilt gebruiken, kunt u deze configureren volgens
 
 1. Voeg een eigenschap toe aan het standaardknooppunt met de volgende eigenschappen:
 
-   * **** Naam: `class`
-   * **** Type: `String`
-   * **** Waarde: `org.apache.lucene.analysis.standard.StandardAnalyzer`
+   * **Naam:** `class`
+   * **Type:** `String`
+   * **Waarde:** `org.apache.lucene.analysis.standard.StandardAnalyzer`
    De waarde is de naam van de klasse Analyzer die u wilt gebruiken.
 
    U kunt de analysator ook plaatsen om met een specifieke lucene versie te gebruiken door het facultatieve `luceneMatchVersion` koordbezit te gebruiken. Een geldige synthax voor gebruik met Lucene 4.7 zou zijn:
 
-   * **** Naam: `luceneMatchVersion`
-   * **** Type: `String`
-   * **** Waarde: `LUCENE_47`
+   * **Naam:** `luceneMatchVersion`
+   * **Type:** `String`
+   * **Waarde:** `LUCENE_47`
    Als `luceneMatchVersion` deze optie niet is opgegeven, zal Oak de versie van Lucene gebruiken die bij het product is meegeleverd.
 
 1. Als u een stopwoordenbestand wilt toevoegen aan de configuraties van de analysator, kunt u een nieuw knooppunt onder het `default` knooppunt maken met de volgende eigenschappen:
 
-   * **** Naam: `stopwords`
-   * **** Type: `nt:file`
+   * **Naam:** `stopwords`
+   * **Type:** `nt:file`
 
 #### Analysatoren maken via compositie {#creating-analyzers-via-composition}
 
@@ -228,37 +231,37 @@ Analysatoren kunnen ook worden samengesteld op basis van `Tokenizers`, `TokenFil
 
 Bekijk deze knooppuntstructuur als voorbeeld:
 
-* **** Naam: `analyzers`
+* **Naam:** `analyzers`
 
-   * **** Naam: `default`
+   * **Naam:** `default`
 
-      * **** Naam: `charFilters`
-      * **** Type: `nt:unstructured`
+      * **Naam:** `charFilters`
+      * **Type:** `nt:unstructured`
 
-         * **** Naam: `HTMLStrip`
-         * **** Naam: `Mapping`
-      * **** Naam: `tokenizer`
+         * **Naam:** `HTMLStrip`
+         * **Naam:** `Mapping`
+      * **Naam:** `tokenizer`
 
-         * **** Naam eigenschap: `name`
+         * **Naam eigenschap:** `name`
 
-            * **** Type: `String`
-            * **** Waarde: `Standard`
-      * **** Naam: `filters`
-      * **** Type: `nt:unstructured`
+            * **Type:** `String`
+            * **Waarde:** `Standard`
+      * **Naam:** `filters`
+      * **Type:** `nt:unstructured`
 
-         * **** Naam: `LowerCase`
-         * **** Naam: `Stop`
+         * **Naam:** `LowerCase`
+         * **Naam:** `Stop`
 
-            * **** Naam eigenschap: `words`
+            * **Naam eigenschap:** `words`
 
-               * **** Type: `String`
-               * **** Waarde: `stop1.txt, stop2.txt`
-            * **** Naam: `stop1.txt`
+               * **Type:** `String`
+               * **Waarde:** `stop1.txt, stop2.txt`
+            * **Naam:** `stop1.txt`
 
-               * **** Type: `nt:file`
-            * **** Naam: `stop2.txt`
+               * **Type:** `nt:file`
+            * **Naam:** `stop2.txt`
 
-               * **** Type: `nt:file`
+               * **Type:** `nt:file`
 
 
 
@@ -298,7 +301,7 @@ U kunt de ingesloten Solr-server configureren door:
 1. Zoek naar &quot;**Oak Solr serverleverancier**&quot;.
 1. Druk op de bewerkknop en stel in het volgende venster het servertype in op **Ingesloten Solr** in de vervolgkeuzelijst.
 
-1. Vervolgens bewerkt u &quot;**Ingesloten serverconfiguratie** van Eak Solr&quot; en maakt u een configuratie. Ga naar de [Apache Solr-website](https://lucene.apache.org/solr/documentation.html)voor meer informatie over de configuratieopties.
+1. Vervolgens bewerkt u &quot;**Ingesloten serverconfiguratie** van eikenhout oplossen&quot; en maakt u een configuratie. Ga naar de [Apache Solr-website](https://lucene.apache.org/solr/documentation.html)voor meer informatie over de configuratieopties.
 
    >[!NOTE]
    >
@@ -307,9 +310,9 @@ U kunt de ingesloten Solr-server configureren door:
 1. Open CRXDE en meld u aan als Admin.
 1. Voeg een knooppunt met de naam **solrlndex** van het type **eak:QueryIndexDefinition** toe onder **eikel:index** met de volgende eigenschappen:
 
-   * **** type: `solr`(van het type String)
-   * **** async: `async`(van het type String)
-   * **** redex: `true`(van het type Boolean)
+   * **type:** `solr`(van het type String)
+   * **async:** `async`(van het type String)
+   * **redex:** `true`(van het type Boolean)
 
 1. Sla de wijzigingen op.
 
@@ -363,14 +366,14 @@ AEM kan ook worden gevormd om met een verre serverinstantie van Solr te werken:
 
    * HTTP-URL kiezen: `http://localhost:8983/solr/`
 
-1. Kies **Verre Solr** in de drop-down lijst onder de **Leverancier van de Server van de Oplosser** van de Eak.
+1. Kies **Verre Solr** in de drop-down lijst onder de **Leverancier van de Server van de Solr** van de Eak.
 
 1. Ga naar CRXDE en meld u aan als Admin.
 1. Maak een nieuw knooppunt met de naam **solrIndex** onder **eikel:index** en stel de volgende eigenschappen in:
 
-   * **** type: solr (van het type String)
-   * **** async: async (van het type String)
-   * **** redex: true (van het type Boolean)
+   * **type:** solr (van het type String)
+   * **async:** async (van het type String)
+   * **redex:** true (van het type Boolean)
 
 1. Sla de wijzigingen op.
 

@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: ed3a858c-7a43-4515-a2ff-43ca465c7d7d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0849cfdd0e4f9a614c455214e6520ead07ae6da0
+source-git-commit: 474fc122f557f32d34fddd9d35a113431f6ce491
+workflow-type: tm+mt
+source-wordcount: '3805'
+ht-degree: 0%
 
 ---
 
@@ -106,7 +109,7 @@ U moet JSON niet uitschakelen.
 
 Bepaalde instellingen kunnen van invloed zijn op de prestaties. Deze instellingen moeten waar mogelijk worden uitgeschakeld, met name voor een productie-instantie.
 
-* De **bron-VM** en **doel-VM** definiëren de JDK-versie als de JVM-versie van de runtime
+* VM **voor** bron en **Target VM**, definieert de JDK-versie als de JVM voor uitvoering
 
 * voor productiegevallen:
 
@@ -187,7 +190,7 @@ De dienst van de verwijzingsfilter is de dienst OSGi die u toestaat om te vormen
 
 * welke http-methoden moeten worden gefilterd
 * Geeft aan of een lege verwijzingskoptekst is toegestaan
-* en een witte lijst met servers die naast de serverhost zijn toegestaan.
+* en een lijst met servers die naast de serverhost zijn toegestaan.
 
 Zie Controlelijst voor [beveiliging - Problemen met de smederij](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) voor aanvragen voor meerdere sites voor meer informatie.
 
@@ -312,7 +315,7 @@ Wanneer u [gesloten gebruikersgroepen](/help/sites-administering/cug.md) gebruik
 
 **Uur CQ-hoofdtoewijzing** configureren:
 
-* **Doelpad** om te bepalen waar een aanvraag naar &quot; `/`&quot; wordt omgeleid.
+* **Target Path** to define where a request to &quot; `/`&quot; will be redirected to.
 
 Er zijn twee UI&#39;s beschikbaar in AEM:
 
@@ -321,13 +324,13 @@ Er zijn twee UI&#39;s beschikbaar in AEM:
 
 Met AEM-hoofdtoewijzing kunt u de interface configureren die u als standaard voor uw instantie wilt gebruiken:
 
-* Als u de interface met aanraakbediening wilt instellen als de standaardinterface, moet het **doelpad** verwijzen naar:
+* Als u de interface met aanraakbediening wilt instellen als de standaardinterface, moet het **Target-pad** verwijzen naar:
 
    ```
       /projects.html
    ```
 
-* Om klassieke UI als gebrek UI te hebben zou het Weg **van het** Doel moeten richten aan:
+* Om klassieke UI als gebrek UI te hebben zou de Weg **van** Target aan wijzen:
 
    ```
       /welcome.html

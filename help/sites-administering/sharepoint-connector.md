@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 907316d1-3d23-4c46-bccb-bad6fe1bd1bb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+source-git-commit: 5d74f3510ff20e062f1e78f61d98e9c2e7a0414f
+workflow-type: tm+mt
+source-wordcount: '1599'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +29,7 @@ De SharePoint-connector ondersteunt de volgende basisfuncties:
 * SharePoint-beveiligingsinstellingen voor benaderde inhoud bevestigen door native SharePoint-verificatie en -verificatie toe te passen
 * Inhoudsintegratie met Inhoudszoeker
 * AEM-componenten gebruiken, zoals External Resource, om SharePoint-afbeeldingen en video&#39;s weer te geven
-* SharePoint synchroniseren met AEM-elementen
+* SharePoint synchroniseren met AEM Assets
 
 Alle functies worden uitgevoerd gebruikend de inheemse Webdiensten van SharePoint als interface aan de inhoud en de diensten van SharePoint.
 
@@ -65,7 +68,7 @@ De schakelaar vereist het volgende:
 
 De SharePoint-connector is beschikbaar voor downloaden vanuit [pakketshare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-17673).
 
-### Ondersteunde platforms {#supported-platforms}
+### Ondersteunde Platforms {#supported-platforms}
 
 De schakelaar steunt het volgende:
 
@@ -88,7 +91,7 @@ De schakelaar steunt het volgende:
 
 AEM-pakket delen wordt gebruikt om productfuncties, voorbeelden en hotfixes te distribueren. Raadpleeg de documentatie bij [Pakketdeling voor meer informatie](/help/sites-administering/package-manager.md#package-share).
 
-Als u Pakketdeling wilt openen op de welkomstpagina van AEM, tikt u op **Gereedschappen** of klikt u op **Pakket delen**. U hebt een geldige Adobe-id nodig die het e-mailadres van uw bedrijf bevat. Nadat u zich hebt aangemeld bij uw account, kunt u bovendien een aanvraag indienen voor toegang tot het delen van pakketten.
+Als u Pakketdeling wilt openen op de welkomstpagina van AEM, tikt u op **Gereedschappen** of klikt u op **Pakket delen**. U hebt een geldige Adobe ID nodig die uw bedrijfs-e-mailadres bevat. Nadat u zich hebt aangemeld bij uw account, kunt u bovendien een aanvraag indienen voor toegang tot het delen van pakketten.
 
 #### Integreren met AEM {#integrating-with-aem}
 
@@ -126,16 +129,16 @@ Parameters &#39;Werkruimten&#39; en &#39;Standaardnaam werkruimte&#39;:
 Standaard stelt de connector één JCR-werkruimte beschikbaar. De SharePoint-server die door deze werkruimte beschikbaar wordt gemaakt, wordt ingesteld via de configuratieparameter &#39;SharePoint Server URL&#39;.
 
 De schakelaar kan ook voor veelvoudige werkruimten worden gevormd. In dit geval wordt elke werkruimte gekoppeld aan de URL van de respectievelijke SharePoint-server die via de werkruimte beschikbaar wordt gemaakt. Als u een werkruimte wilt toevoegen, voegt u een werkruimtedefinitie toe aan de parameter Werkruimten. Een werkruimtedefinitie heeft de volgende indeling:
-`<name>`= `<url>` waar`<name>``<url>` de naam van de JCR-werkruimte is en de URL van de SharePoint-server voor die werkruimte.
+`<name>`= `<url>` waarbij`<name>``<url>` de naam van de JCR-werkruimte is en de URL van de SharePoint-server voor die werkruimte.
 
-Voer in AEM nog één stap uit, afgezien van de bovenstaande configuratiestappen. Whitelist the &#39;**com.day.cq.dam.cq-dam-jcr-connectors**&#39; bundle.
+Voer in AEM nog één stap uit, afgezien van de bovenstaande configuratiestappen. Maak een lijst met de bundel &#39;**com.day.cq.dam.cq-dam-jcr-connectors**&#39;.
 
-Voer de volgende stappen uit om bundels voor whitelist in AEM uit te voeren:
+Voer de volgende stappen uit om lijstbundels in AEM toe te staan:
 
 1. Navigeer naar de OSGi Management Console: http://localhost:4502/system/console/configMgr.
 1. Zoek naar de service &quot;Apache Sling Login Admin Whitelist&quot;.
-1. Selecteer Witte lijst omzeilen.
-1. Voeg &#39;**com.day.cq.dam.cq-dam-jcr-connectors**&#39; toe in de standaardwhitelist-bundels
+1. Selecteer **Witte lijst** omzeilen.
+1. Toevoegen `com.day.cq.dam.cq-dam-jcr-connectors` in standaardbundels whitelist
 1. Klik op Opslaan.
 
 ![chlimage_1-82](assets/chlimage_1-82a.png)
@@ -213,7 +216,7 @@ Ga naar: [http://localhost:4502/system/console/bundles](http://localhost:4502/sy
 1. Ga naar [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles).
 1. Klik op OSGI > Configuratie.
 1. Zoek naar de Schakelaar van JCR van de **Dag voor Microsoft SharePoint**.
-1. Click `Edit the configuration values`.
+1. Klik op `Edit the configuration values`.
 1. Stel de waarde van SharePoint Connection Factory in op `com.day.crx.spi.sharepoint.security.WindowsAuthenticationConnectionFactory`.
 1. Click **Save**.
 

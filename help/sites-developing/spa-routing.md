@@ -10,7 +10,10 @@ topic-tags: spa
 content-type: reference
 discoiquuid: d9f1e24e-51a9-4f28-b2cd-2e97aed63a24
 translation-type: tm+mt
-source-git-commit: 2dad220d6593ed542816f8a97b0d4b44f0d57876
+source-git-commit: 4ea1bad1fb76142be7f6d564ecf30ed85a6da694
+workflow-type: tm+mt
+source-wordcount: '515'
+ht-degree: 0%
 
 ---
 
@@ -61,7 +64,7 @@ Dit gedrag wordt standaard automatisch ingeschakeld. Om het onbruikbaar te maken
 <meta property="cq:pagemodel_router" content="disable"\>
 ```
 
-Merk op dat elke route van het KUUROORD aan een toegankelijk middel in AEM (b.v., &quot; `/content/mysite/mypage"`) zou moeten beantwoorden aangezien de `PageModelManager` automatisch zal proberen om het overeenkomstige paginamodel te laden zodra de route wordt geselecteerd. Alhoewel, indien nodig, kan het KUUROORD een &quot;zwarte lijst&quot;van routes ook bepalen die door `PageModelManager`: zouden moeten worden genegeerd:
+Merk op dat elke route van het KUUROORD aan een toegankelijk middel in AEM (b.v., &quot; `/content/mysite/mypage"`) zou moeten beantwoorden aangezien de `PageModelManager` automatisch zal proberen om het overeenkomstige paginamodel te laden zodra de route wordt geselecteerd. Alhoewel, indien nodig, kan het KUUROORD een &quot;bloklijst&quot;van routes ook bepalen die door `PageModelManager`: zouden moeten worden genegeerd:
 
 ```
 <meta property="cq:pagemodel_route_filters" content="route/not/found,^(.*)(?:exclude/path)(.*)"/>

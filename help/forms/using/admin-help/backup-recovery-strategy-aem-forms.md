@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f192a8a3-1116-4d32-9b57-b53d532c0dbf
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+workflow-type: tm+mt
+source-wordcount: '1520'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +28,7 @@ Nadat u hebt vastgesteld hoe AEM-formulieren worden gebruikt, bepaalt u welke be
 >
 >Net als bij elk ander aspect van uw AEM-formulierimplementatie, moet uw back-up- en herstelstrategie worden ontwikkeld en getest in een ontwikkelings- of testomgeving voordat deze in de productie wordt gebruikt, om ervoor te zorgen dat de volledige oplossing werkt zoals u had verwacht zonder gegevensverlies.
 
-Adobe Experience Manager (AEM) is een integraal onderdeel van AEM-formulieren. Daarom moet u zowel een back-up van AEM maken als de back-up van AEM-formulieren synchroniseren met Correspondence Management Solution en -services, zoals formulierbeheer, die zijn gebaseerd op gegevens die zijn opgeslagen in het AEM-onderdeel van AEM-formulieren.Om gegevensverlies te voorkomen, moet een back-up worden gemaakt van de specifieke gegevens van de AEM-formulieren, zodat GDS en AEM (gegevensopslagruimte) correleren met databasereferenties.De directory&#39;s, database, GDS, GDS, GDS, GDS, GDS, GDS, GDS, AEM, AEM, AEM, en AEM en AEM, en de hoofdmappen en de opslagmap en de inhoud op een computer met dezelfde DNS-naam als het origineel.
+Adobe Experience Manager (AEM) maakt integrerend deel uit van AEM-formulieren. Daarom moet u zowel een back-up van AEM maken als de back-up van AEM-formulieren synchroniseren met Correspondence Management Solution en -services, zoals formulierbeheer, die zijn gebaseerd op gegevens die zijn opgeslagen in het AEM-onderdeel van AEM-formulieren.Om gegevensverlies te voorkomen, moet een back-up worden gemaakt van de specifieke gegevens van de AEM-formulieren, zodat GDS en AEM (gegevensopslagruimte) correleren met databasereferenties.De directory&#39;s, database, GDS, GDS, GDS, GDS, GDS, GDS, GDS, AEM, AEM, AEM, en AEM en AEM, en de hoofdmappen en de opslagmap en de inhoud op een computer met dezelfde DNS-naam als het origineel.
 
 ## Typen back-ups {#types-of-backups}
 
@@ -85,7 +88,7 @@ Ga als volgt te werk voordat u de formulierserver opnieuw start na een herstelbe
    1. Klik op **beheeropties**.
    1. Klik op **Start** om elementen uit de opslagplaats te synchroniseren.
 
-1. In een gegroepeerde omgeving, zou de hoofdknoop (met betrekking tot AEM) omhoog vóór de slave knopen moeten zijn.
+1. In een gegroepeerde omgeving, zou de primaire knoop (met betrekking tot AEM) omhoog vóór de secundaire knopen moeten zijn.
 1. Zorg ervoor dat geen processen van of interne of externe bronnen zoals het Web, de ZEEP, of EJB procesinitiators in werking worden gesteld tot de normale verrichting van het systeem wordt bevestigd.
 
 Als de belangrijkste AEM-formulierdatabase wordt verplaatst of gewijzigd, raadpleegt u de installatiegidsen die relevant zijn voor uw toepassingsserver voor informatie over het bijwerken van de databaseverbindingsgegevens voor de AEM-formuliergegevensbronnen IDP_DS en EDC_DS.

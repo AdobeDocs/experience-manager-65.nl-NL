@@ -10,7 +10,10 @@ topic-tags: correspondence-management
 discoiquuid: 046e3314-b436-47ed-98be-43d85f576789
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+workflow-type: tm+mt
+source-wordcount: '1910'
+ht-degree: 0%
 
 ---
 
@@ -376,7 +379,7 @@ Het vereiste LiveCycle-proces dat het e-mailserviceproces mogelijk maakt.
 
 1. Klik op **Importeren**.
 
-#### ServiceName toevoegen aan de lijst van de Dienst WhiteListed {#adding-servicename-to-the-whitelisted-service-list}
+#### ServiceName toevoegen aan de lijst van de Dienst van de Toegestane lijst {#adding-servicename-to-the-allowlist-service-list}
 
 Vermeld in de AEM-server de LiveCycle-services die u wilt openen tot de AEM-server.
 
@@ -405,7 +408,7 @@ In dit scenario configureert u de e-mailservice in de LiveCycle-server, zodat Co
 
 Als u de API voor correspondentiebeheer wilt gebruiken, downloadt u de DSCSample.jar (die in dit document is gekoppeld als onderdeel van components.zip) en uploadt u deze naar de LiveCycle-server. Nadat het bestand DSCSample.jar naar de LiveCycle-server is geüpload, gebruikt de AEM-server het bestand DSCSample.jar om toegang te krijgen tot de renderLetter-API.
 
-Zie [AEM-formulieren verbinden met Adobe LiveCycle](/help/forms/using/aem-livecycle-connector.md)voor meer informatie.
+Zie AEM Forms [verbinden met Adobe LiveCycle](/help/forms/using/aem-livecycle-connector.md)voor meer informatie.
 
 1. Werk de URL van de AEM-server in cmsa.properties bij in DSCSample.jar, die zich op de volgende locatie bevindt:
 

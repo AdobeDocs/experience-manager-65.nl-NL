@@ -11,7 +11,10 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: b79c147c-f846-4e48-bec0-8b658502bb6f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+workflow-type: tm+mt
+source-wordcount: '722'
+ht-degree: 0%
 
 ---
 
@@ -25,26 +28,26 @@ Bij zoeken in AEM kunt u zoeken naar AEM-elementen en zoeken naar tekst op versc
 
 ## Vereisten {#prerequisites}
 
-* Als u AEM Forms op OSGi gebruikt:
+* Als u AEM Forms gebruikt op OSGi:
 
-   * Installeer het pakket [](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) AEM Forms Document Security Indexer op de AEM Forms-server.
+   * Installeer het pakket [](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) AEM Forms Document Security Index op de AEM Forms-server.
 
-   * Zorg ervoor dat een AEM-formulier op de JEE-server actief is en dat documentbeveiliging is geïnstalleerd op de bijbehorende AEM-formulieren op de JEE-server. Het AEM-formulier op de JEE-server is vereist om het beveiligde document te indexeren.
+   * Zorg ervoor dat er een AEM Forms op de JEE-server actief is en dat documentbeveiliging is geïnstalleerd op de corresponderende AEM Forms op de JEE-server. Het AEM-formulier op de JEE-server is vereist om het beveiligde document te indexeren.
 
-* Als u alleen AEM Forms gebruikt op de JEE-server, is het indexeerpakket al geïnstalleerd.
+* Als u alleen AEM Forms op de JEE-server gebruikt, is het indexeerpakket al geïnstalleerd.
 * Zorg ervoor dat alle bundels aan de slag zijn. Als alle bundels niet actief zijn, wacht u tot alle bundels actief zijn.
 
-   * Voor AEM-formulieren op OSGi worden de bundels weergegeven op https://&#39;[server]:[port]&#39;/system/console/bundles.
-   * Voor AEM-formulieren op JEE worden de bundels weergegeven op https://&#39;[server]:[port]&#39;/[context-path]/system/console/bundles. Bijvoorbeeld https://localhost:8080/lc/system/console/bundles.
+   * Voor AEM Forms op OSGi, zijn de bundels vermeld bij https://&#39;[server]:[haven]&#39;/systeem/console/bundels.
+   * Voor AEM Forms op JEE, zijn de bundels vermeld bij https://&#39;[server]:[haven]&#39;/[context-weg]/systeem/console/bundels. Bijvoorbeeld https://localhost:8080/lc/system/console/bundles.
 
-* Whitelist het pakket *sun.util.agenda* . Voer de volgende stappen uit om een whitelist van het pakket uit te voeren:
+* Voeg het pakket *sun.util.agenda* toe aan de allowlist. Voer de volgende stappen uit om het pakket aan de toegestane lijst toe te voegen:
 
    1. Open AEM-webconsole. De URL is https://&#39;[server]:[port]&#39;/system/console/configMgr.
    1. Zoek en open Configuratie van **Deserialization Firewall**.
 
-   1. Voeg het pakket sun.util.agenda toe aan het veld Voorvoegsels van Whitelisted of Pakket en klik op **Opslaan**.
+   1. Voeg het pakket sun.util.agenda toe aan het veld Toegestane klassen of voorvoegsels van pakket en klik op **Opslaan**.
 
-### Een veilige verbinding tot stand brengen tussen AEM Forms JEE- en OSGi-stapels {#establish-a-secure-connection-between-aem-forms-jee-and-osgi-stacks}
+### Vestig een veilige verbinding tussen AEM Forms JEE en OSGi stapels {#establish-a-secure-connection-between-aem-forms-jee-and-osgi-stacks}
 
 U kunt een van de volgende methoden gebruiken om de beveiligde verbinding tot stand te brengen:
 
@@ -56,19 +59,19 @@ U kunt een van de volgende methoden gebruiken om de beveiligde verbinding tot st
 1. Open AEM-webconsole. De URL is https://&#39;[server]:[port]&#39;/system/console/configMgr.
 1. Zoek en open de **Adobe LiveCycle Client SDK-bundel**. Geef waarde op voor de volgende velden:
 
-   * **Server-URL:** Geef de HTTPS-URL van AEM Forms op de JEE-server op. Start de server opnieuw op met de parameter -Djavax.net.ssl.trustStore=&lt;path of AEM Forms on JEE keystore file> om communicatie via https mogelijk te maken.
+   * **Server-URL:** Geef HTTPS-URL van AEM Forms op de JEE-server op. Start de server opnieuw op met de parameter -Djavax.net.ssl.trustStore=&lt;path of AEM Forms on JEE keystore file> om communicatie via https mogelijk te maken.
    * **Servicenaam**: Voeg RightsManagementService aan de lijst van de gespecificeerde diensten toe.
-   * **Gebruikersnaam:** Geef de gebruikersnaam op van de AEM Forms on JEE-account die moet worden gebruikt om aanroepen vanuit de AEM-server te starten. De opgegeven account moet beschikken over machtigingen om documentservices te starten op de AEM Forms on JEE-server.
-   * **Wachtwoord**: Geef het wachtwoord op van de AEM Forms on JEE-account die in het veld Gebruikersnaam wordt vermeld.
+   * **Gebruikersnaam:** Geef de gebruikersnaam op van de AEM Forms op de JEE-account die moeten worden gebruikt om aanroepen vanuit de AEM-server te starten. De opgegeven account moet beschikken over machtigingen om documentservices te starten op de AEM Forms op de JEE-server.
+   * **Wachtwoord**: Geef het wachtwoord op van de AEM Forms op de JEE-account die in het veld Gebruikersnaam worden vermeld.
    Click **Save**. AEM is ingeschakeld om te zoeken in met documentbeveiliging beveiligde PDF-documenten.
 
 #### Adobe LiveCycle Client SDK-bundel configureren met wederzijdse verificatie {#configure-adobe-livecycle-client-sdk-bundle-using-mutual-authentication}
 
-1. Schakel wederzijdse verificatie in voor AEM Forms on JEE. Voor gedetailleerde informatie, zie [CAC en Wederzijdse Authentificatie](https://helpx.adobe.com/livecycle/kb/cac-mutual-authentication.html).
+1. Schakel wederzijdse authenticatie in voor AEM Forms op JEE. Voor gedetailleerde informatie, zie [CAC en Wederzijdse Authentificatie](https://helpx.adobe.com/livecycle/kb/cac-mutual-authentication.html).
 1. Open AEM-webconsole. De URL is https://&#39;[server]:[port]&#39;/system/console/configMgr.
 1. Zoek en open de **Adobe LiveCycle Client SDK** -bundel. Geef waarde op voor de volgende eigenschappen:
 
-   * **Server-URL**: Geef de HTTPS-URL van AEM Forms op de JEE-server op. Als u communicatie via https wilt inschakelen, start u de AEM-server opnieuw met de parameter -Djavax.net.ssl.trustStore=&lt;path of AEM Forms on JEE keystore file>.
+   * **Server-URL**: Geef HTTPS-URL van AEM Forms op de JEE-server op. Start de AEM-server opnieuw met de parameter -Djavax.net.ssl.trustStore=&lt;path of AEM Forms on JEE keystore file> om communicatie via https mogelijk te maken.
    * **2-wegs SSL** inschakelen: Schakel de optie 2-wegs SSL inschakelen in.
    * **URL** sleutelarchiefbestand: Geef de URL van het sleutelarchiefbestand op.
    * **TrustStore-bestands-URL**: Geef de URL van het bestand truststore op.

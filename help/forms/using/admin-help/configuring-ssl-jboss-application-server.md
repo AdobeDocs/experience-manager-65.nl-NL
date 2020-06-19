@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c187daa4-41b7-47dc-9669-d7120850cafd
 translation-type: tm+mt
-source-git-commit: e4d84b5c6f7d2bfcac942b0b685a8f1fd11274f0
+source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+workflow-type: tm+mt
+source-wordcount: '923'
+ht-degree: 0%
 
 ---
 
@@ -28,9 +31,9 @@ In deze procedure:
 
 ## SSL-referenties maken {#create-an-ssl-credential}
 
-1. In een bevelherinnering, navigeer aan *[JAVA HOME]*/bin en typ het volgende bevel om de referentie en keystore tot stand te brengen:
+1. In een bevelherinnering, navigeer aan *[JAVA HOME]*/bin en typ het volgende bevel om de referentie en het sleutelarchief tot stand te brengen:
 
-   `keytool -genkey -dname "CN=`*Hostnaam *`, OU=`*Groepsnaam* `, O=`*bedrijfsnaam *`,L=`*Stadsnaam* `, S=`*Statuscode *`, C=``-alias "AEMForms Cert"``-keyalg RSA -keypass`** `-keystore`**Land&quot;key_passwordkeystorename`.keystore`
+   `keytool -genkey -dname "CN=`*Hostnaam *`, OU=`*Groepsnaam* `, O=`*bedrijfsnaam *`,L=`*Stadsnaam* `, S=`*Statuscode *`, C=``-alias "AEMForms Cert"``-keyalg RSA -keypass`** `-keystore`*Land&quot;key_passwordkeystorename *`.keystore`
 
    >[!NOTE]
    >
@@ -44,7 +47,7 @@ In deze procedure:
 
 1. Kopieer het bestand *keystorename*.keystore naar de `[appserver root]/server/[type]/conf` map door een van de volgende opdrachten te typen:
 
-   * (Windows, enkele server) `copy``keystorename.keystore[appserver root]\standalone\configuration`
+   * (Windows Eén server) `copy` `keystorename.keystore[appserver root]\standalone\configuration`
    * (Windows Server Cluster) kopiëren `keystorename.keystore[appserver root]\domain\configuration`
    * (Linux Single Server) `cp keystorename.keystore [appserver root]/standalone/configuration`
    * (Linux-servercluster) `cp <em>keystorename</em>.keystore<em>[appserver root]</em>/domain/configuration`
@@ -75,7 +78,7 @@ In deze procedure:
 
 1. Importeer het certificaat door de volgende opdracht te typen:
 
-   `keytool -import -alias “AEMForms Cert” -file`*AEMForms_cert *`.cer -keystore`*JAVA_HOME*`\jre\lib\security\cacerts`
+   `keytool -import -alias “AEMForms Cert” -file`*AEMForms_cert *`.cer -keystore`*JAVA_HOME* `\jre\lib\security\cacerts`
 
 1. Typ `changeit` het wachtwoord. Dit wachtwoord is het standaardwachtwoord voor een Java-installatie en kan door de systeembeheerder zijn gewijzigd.
 1. Typ wanneer u hierom wordt gevraagd: `Trust this certificate? [no]`:, typt u `yes`. De bevestiging &quot;Certificaat is toegevoegd aan sleutelarchief&quot; wordt weergegeven.
@@ -123,7 +126,7 @@ In deze procedure:
    </security-realm>
    ```
 
-   Zoek in het hoofdknooppunt van de servercluster in de [hoofdmap]\domain\configuration\domain_&lt;dbname>.xml de sectie &lt;server> aanwezig na de volgende code:
+   Zoek in het primaire knooppunt van de servercluster in de [hoofdmap]\domain\configuration\domain_&lt;dbname>.xml de sectie &lt;server> aanwezig na de volgende code:
 
    `<http-listener name="default" socket-binding="http" redirect-socket="https" max-post-size="104857600"/>`
 
@@ -139,7 +142,7 @@ In deze procedure:
    * Voor sleutelinstallaties:
 
       * Van het Controlebord van Vensters, klik Administratieve Hulpmiddelen, en klik dan de Diensten.
-      * Selecteer JBoss voor Adobe Experience Manager-formulieren.
+      * Selecteer JBoss voor Adobe Experience Manager formulieren.
       * Selecteer Actie > Stoppen.
       * Wacht tot de status van de service wordt weergegeven als gestopt.
       * Selecteer Actie > Begin.
@@ -166,7 +169,7 @@ In deze procedure:
 
 1. In een bevelherinnering, navigeer aan *[JAVA HOME]*/bin en typ het volgende bevel om keystore en sleutel tot stand te brengen:
 
-   `keytool -genkey -dname "CN=`*Hostnaam *`, OU=`*Groepsnaam* `, O=`*bedrijfsnaam *Stadsnaam`, L=`** Staat `, S=`**`, C=`**`-alias "AEMForms Cert"` `-keyalg RSA -keypass`** `-keystore`**Landcode&quot; -key_passwordkeystorename`.keystore`
+   `keytool -genkey -dname "CN=`*Hostnaam *`, OU=`*Groepsnaam* `, O=`*bedrijfsnaam *Stadsnaam`, L=`** Staat `, S=`**`, C=`**`-alias "AEMForms Cert"` `-keyalg RSA -keypass`** `-keystore`*Landcode&quot; -key_passwordkeystorename *`.keystore`
 
    >[!NOTE]
    >
@@ -192,7 +195,7 @@ In deze procedure:
 
 1. In een bevelherinnering, navigeer aan *`[JAVA HOME]`*/bak en typ het volgende bevel om de referentie in keystore in te voeren:
 
-   `keytool -import -trustcacerts -file`*CACCertificateName *`.crt -keystore`*sleutelstorename*`.keystore`
+   `keytool -import -trustcacerts -file`*CACCertificateName *`.crt -keystore`*sleutelstorename* `.keystore`
 
    >[!NOTE]
    >

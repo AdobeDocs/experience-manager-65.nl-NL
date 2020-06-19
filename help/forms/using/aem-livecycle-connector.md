@@ -1,6 +1,6 @@
 ---
-title: AEM-formulieren verbinden met Adobe LiveCycle
-seo-title: AEM-formulieren verbinden met Adobe LiveCycle
+title: AEM Forms verbinden met Adobe LiveCycle
+seo-title: AEM Forms verbinden met Adobe LiveCycle
 description: Met de AEM LiveCycle-aansluiting kunt u LiveCycle ES4 Document Services starten vanuit AEM-apps en -workflows.
 seo-description: Met de AEM LiveCycle-aansluiting kunt u LiveCycle ES4 Document Services starten vanuit AEM-apps en -workflows.
 uuid: 7dc9d5ec-7b19-4d93-936d-81ceb45dfffa
@@ -9,18 +9,21 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 7e404b45-1302-4dd1-b3c9-3f47fedb5f94
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+workflow-type: tm+mt
+source-wordcount: '1029'
+ht-degree: 0%
 
 ---
 
 
-# AEM-formulieren verbinden met Adobe LiveCycle {#connecting-aem-forms-with-adobe-livecycle}
+# AEM Forms verbinden met Adobe LiveCycle {#connecting-aem-forms-with-adobe-livecycle}
 
-De Adobe Experience Manager (AEM) LiveCycle-aansluiting maakt het naadloos oproepen van Adobe LiveCycle ES4 Document Services mogelijk vanuit AEM-webapps en -workflows. LiveCycle biedt een SDK voor rijke clients, waarmee clienttoepassingen LiveCycle-services kunnen starten met Java API&#39;s. AEM LiveCycle Connector vereenvoudigt het gebruik van deze API&#39;s in de OSGi-omgeving.
+Met de Adobe Experience Manager (AEM) LiveCycle-aansluiting kunt u Adobe LiveCycle ES4 Document Services naadloos aanroepen vanuit AEM-webapps en -workflows. LiveCycle biedt een SDK voor rijke clients, waarmee clienttoepassingen LiveCycle-services kunnen starten met Java API&#39;s. AEM LiveCycle Connector vereenvoudigt het gebruik van deze API&#39;s in de OSGi-omgeving.
 
 ## AEM-server verbinden met Adobe LiveCycle {#connecting-aem-server-to-adobe-livecycle}
 
-AEM LiveCycle Connector maakt deel uit van het [AEM Forms add-on pakket](/help/forms/using/installing-configuring-aem-forms-osgi.md). Nadat u het invoegpakket voor AEM-formulieren hebt geïnstalleerd, voert u de volgende stappen uit om details van de LiveCycle-server toe te voegen aan de AEM-webconsole.
+AEM LiveCycle Connector maakt deel uit van het [AEM Forms-invoegpakket](/help/forms/using/installing-configuring-aem-forms-osgi.md). Nadat u het invoegpakket AEM Forms hebt geïnstalleerd, voert u de volgende stappen uit om gegevens van de LiveCycle-server toe te voegen aan de AEM-webconsole.
 
 1. Zoek in AEM Web Console Configuration Manager de configuratiecomponent van Adobe LiveCycle Client SDK.
 1. Klik op de component om de URL van de configuratieserver, de gebruikersnaam en het wachtwoord te bewerken.
@@ -153,7 +156,7 @@ ServiceClientFactory scf = scfProvider.getDefaultServiceClientFactory();
 
 Bijna elke documentservice in LiveCycle vereist verificatie. U kunt om het even welke volgende opties gebruiken om deze diensten te beginnen zonder expliciete geloofsbrieven in de code te verstrekken:
 
-### Whitelist-configuratie {#whitelist-configuration}
+### Configuratie toestaan {#allowlist-configuration}
 
 De configuratie van LiveCycle Client SDK bevat een instelling voor servicenamen. Deze configuratie is een lijst van de diensten waarvoor de aanroepingslogica uit de doos beheerderreferentie gebruikt. Als u bijvoorbeeld DirectoryManager-services (onderdeel van de gebruikersbeheer-API) aan deze lijst toevoegt, kan elke clientcode de service rechtstreeks gebruiken en wordt de geconfigureerde gegevens automatisch doorgegeven als onderdeel van de aanvraag die naar de LiveCycle-server wordt verzonden
 

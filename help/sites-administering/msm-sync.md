@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 6bcf0fcc-481a-4283-b30d-80b517701280
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4e5e6ef022dc9f083859e13ab9c86b622fc3d46e
+source-git-commit: 37c9cb6db35cb941a117a03aadf7a9815809c85e
+workflow-type: tm+mt
+source-wordcount: '2684'
+ht-degree: 0%
 
 ---
 
@@ -110,7 +113,7 @@ De volgende lijst maakt een lijst van de rollout configuraties die met AEM worde
    <td>contentUpdate<br /> contentCopy<br /> contentDelete<br /> referencesUpdate orderChildren<br /><br /> dpsMetadataFilter</td>
   </tr>
   <tr>
-   <td>Verouderde (5.6.0) configuratie van de Uitvoer van de Catalogus</td>
+   <td>Configuratie van verouderde (5.6.0) catalogus-uitrol</td>
    <td>Afgekeurd. Gebruik Catalogusgenerator in plaats van MSM voor catalogusrollouts.</td>
    <td>Bij rollout</td>
    <td>editProperties</td>
@@ -323,12 +326,6 @@ Als u bijvoorbeeld wilt dat de **paginatitel** wordt opgenomen in de wijzigingen
 
 `jcr:(?!(title)$).*`
 
->[!CAUTION]
->
->Voorafgaand aan 5.5 SP2 werden de uitgesloten paginaeigenschappen gevormd in de systeemconsole onder de Manager **van de Uitvoer van** Dag CQ WCM. Met 5.5 SP2 en recentere versies worden de uitgesloten pagina eigenschappen montages binnen dat paneel genegeerd. De uitsluiting van het bezit bij rollout wordt gevormd zoals hierboven beschreven, in de Actie **van de Update van de Inhoud van** CQ MSM.
->
->Daarom als u dit het plaatsen in een pre-5.5 installatie van SP2 manueel hebt aangepast en aan 5.5 SP2 of recentere versie bevordert, moet *u deze montages van het oude configuratievenster aan nieuwe manueel overbrengen*.
-
 ### Synchronisatie configureren voor het bijwerken van verwijzingen {#configuring-synchronization-for-updating-references}
 
 U kunt verscheidene diensten vormen OSGi die overeenkomstige synchronisatieacties met betrekking tot het bijwerken van verwijzingen steunen.
@@ -360,10 +357,10 @@ MSM laat u toe om reeksen rollout configuraties te specificeren die algemeen wor
 
 De volgende lijst van plaatsen waar u de rollout configuraties kunt specificeren om te gebruiken beschrijft hoe MSM bepaalt welke rollout configuraties aan gebruik voor een levende kopie:
 
-* **[](/help/sites-administering/msm-sync.md#setting-the-rollout-configurations-for-a-live-copy-page)Eigenschappen **van pagina voor live kopiëren: Wanneer een levende exemplaarpagina wordt gevormd om één of meerdere rollout configuraties te gebruiken, gebruikt MSM die rollout configuraties.
-* **[](/help/sites-administering/msm-sync.md#setting-the-rollout-configuration-for-a-blueprint-page)Eigenschappen **van vervagingspagina: Wanneer een levend exemplaar op een blauwdruk gebaseerd is, en de levende exemplaarpagina niet met een rollout configuratie wordt gevormd, wordt de rollout configuratie die met de de bronpagina van de blauwdruk wordt geassocieerd gebruikt.
-* **** Eigenschappen van bovenliggende pagina voor live kopiëren: Wanneer noch de levende exemplaarpagina noch de de bronpagina van de blauwdruk met een rollout configuratie worden gevormd, wordt de rollout configuratie die op de levende de ouderpagina van de exemplaarpagina van toepassing is gebruikt.
-* **[](/help/sites-administering/msm-sync.md#setting-the-system-default-rollout-configuration)Systeemstandaard **: Wanneer de rollout configuratie van de levende ouderpagina van het exemplaar niet kan worden bepaald, wordt de systeem standaardrollout configuratie gebruikt.
+* **[Eigenschappen](/help/sites-administering/msm-sync.md#setting-the-rollout-configurations-for-a-live-copy-page)van pagina voor live kopiëren:**Wanneer een levende exemplaarpagina wordt gevormd om één of meerdere rollout configuraties te gebruiken, gebruikt MSM die rollout configuraties.
+* **[Eigenschappen](/help/sites-administering/msm-sync.md#setting-the-rollout-configuration-for-a-blueprint-page)van vervagingspagina:**Wanneer een levend exemplaar op een blauwdruk gebaseerd is, en de levende exemplaarpagina niet met een rollout configuratie wordt gevormd, wordt de rollout configuratie die met de de bronpagina van de blauwdruk wordt geassocieerd gebruikt.
+* **Eigenschappen van bovenliggende pagina voor live kopiëren:** Wanneer noch de levende exemplaarpagina noch de de bronpagina van de blauwdruk met een rollout configuratie worden gevormd, wordt de rollout configuratie die op de levende de ouderpagina van de exemplaarpagina van toepassing is gebruikt.
+* **[Systeemstandaard](/help/sites-administering/msm-sync.md#setting-the-system-default-rollout-configuration):**Wanneer de rollout configuratie van de levende ouderpagina van het exemplaar niet kan worden bepaald, wordt de systeem standaardrollout configuratie gebruikt.
 
 Bijvoorbeeld, gebruikt een blauwdruk de Site van de Verwijzing Wij.Retail als broninhoud. Op basis van de blauwdruk wordt een site gemaakt. Elk punt in de volgende lijst beschrijft een verschillend scenario betreffende het gebruik van rollout configuraties:
 

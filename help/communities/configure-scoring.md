@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 628b6dcd-8b1c-4166-8fc2-843baa86ac1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
+source-git-commit: 4170c7fe48a740e0574a32c7823841dc311fd565
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Scores en Badges Essentials {#scoring-and-badges-essentials}
 
-Met de functie voor scoren en badges van AEM-gemeenschappen kunnen leden van de gemeenschap worden geïdentificeerd en beloond.
+De functie AEM Communities scoren en badges biedt de mogelijkheid om leden van de gemeenschap te identificeren en te belonen.
 
 De details van het instellen van de functie worden beschreven op
 
@@ -83,7 +83,7 @@ Voor gedetailleerde instructies gaat u naar [Een aangepast logbestand](/help/sit
 
 U kunt als volgt snel een logbestand instellen:
 
-1. U kunt bijvoorbeeld toegang krijgen tot de webconsolelogondersteuning **van** Adobe Experience Manager
+1. Toegang tot de Steun **van het Logboek van de Console van het Web van de** Adobe Experience Manager, bijvoorbeeld
 
    * https://localhost:4502/system/console/slinglog
 
@@ -102,7 +102,7 @@ U kunt als volgt snel een logbestand instellen:
 
 
 
-![chlimage_1-193](assets/chlimage_1-193.png)
+![chlimage_1-248](assets/chlimage_1-248.png)
 
 Logboekvermeldingen weergeven:
 
@@ -118,7 +118,7 @@ Logboekvermeldingen weergeven:
 
    * Bijvoorbeeld, `.../crx-quickstart/logs/scoring-debug.log`
 
-![chlimage_1-194](assets/chlimage_1-194.png)
+![chlimage_1-249](assets/chlimage_1-249.png)
 
 ## UGC voor scores en Badging {#ugc-for-scoring-and-badging}
 
@@ -217,7 +217,7 @@ De schermafbeeldingen van gegevensopslagruimte zijn afkomstig van het instellen 
 
    Aangezien een gebruiker twee bronzen badges heeft verdiend en een moderatorbadge heeft gekregen, is dit hoe de gebruiker met hun forumingang verschijnt.
 
-![chlimage_1-195](assets/chlimage_1-195.png)
+![chlimage_1-250](assets/chlimage_1-250.png)
 
 >[!NOTE]
 >
@@ -254,7 +254,7 @@ Voor de Community Components-hulplijnsite bevinden de gebruiker en hun score zic
 
 De score wordt opgeslagen in de eigenschap `scoreValue_tl` die direct alleen een waarde kan bevatten of onrechtstreeks naar een atomicCounter kan verwijzen.
 
-![chlimage_1-196](assets/chlimage_1-196.png)
+![chlimage_1-251](assets/chlimage_1-251.png)
 
 ### Access Badging UGC {#access-badging-ugc}
 
@@ -270,11 +270,11 @@ Wordt gevolgd door het pad naar het gebruikersprofiel en eindigt in een map met 
 
 #### Toegewezen badge {#awarded-badge}
 
-![chlimage_1-197](assets/chlimage_1-197.png)
+![chlimage_1-252](assets/chlimage_1-252.png)
 
 #### Toegewezen badge {#assigned-badge}
 
-![chlimage_1-198](assets/chlimage_1-198.png)
+![chlimage_1-253](assets/chlimage_1-253.png)
 
 ## Additional Information {#additional-information}
 

@@ -1,6 +1,6 @@
 ---
 title: Elementen voorvertonen
-description: Leer hoe u een voorvertoning van elementen kunt weergeven in Dynamic Media
+description: Leer hoe u een voorvertoning van elementen in Dynamic Media kunt weergeven
 uuid: 09e97245-373b-4d50-8ba3-5d1034a29988
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: bb8c355c-4475-45ec-9096-0975f0ce2c27
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9e6aba1f511754080305c0a97ce9bc85511f29a7
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '1339'
 ht-degree: 3%
@@ -37,7 +37,7 @@ Zie Voorinstellingen [van viewers](/help/assets/managing-viewer-presets.md)beher
 **Elementen voorvertonen met de software-interface**
 
 1. Tik vanaf **[!UICONTROL Adobe Experience Manager]** op de pagina **[!UICONTROL Navigatie]** op **[!UICONTROL Assets]** en vervolgens op **[!UICONTROL Files]** om assets te openen.
-1. Near the upper-right corner of the page, from the **[!UICONTROL View]** drop-down list, tap **[!UICONTROL List View]**.
+1. Near the upper-right corner of the page, from the **[!UICONTROL View]** drop-down list, tap **[!UICONTROL List View.]**
 1. (Optioneel) Gebruik de **[!UICONTROL Type]** kolom om de elementen te sorteren op het type waarvan u een voorvertoning wilt weergeven.
 1. Klik onder de **[!UICONTROL Title]** kolom op de titelnaam (niet op de miniatuurafbeelding) van het element waarvan u een voorvertoning wilt weergeven.
 1. Voer afhankelijk van het type element waarop u hebt geklikt een van de volgende handelingen uit:

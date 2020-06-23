@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: managing-assets
 discoiquuid: e7b95732-a571-48e8-afad-612059cdbde7
 translation-type: tm+mt
-source-git-commit: df89d5cfd5060d493babb89e92a9a98e851b8879
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '2742'
 ht-degree: 0%
@@ -87,7 +87,7 @@ Het toevoegen van een Dynamic Media Klassieke (Scene7) component aan een pagina 
 
 1. Open in AEM de pagina waaraan u de component Dynamic Media Classic (Scene7) wilt toevoegen.
 
-1. Als er geen Dynamic Media Klassieke componenten beschikbaar zijn, klikt u op de **[!UICONTROL Design]** modus, tikt u op een component met een blauwe rand, tikt u op het **[!UICONTROL Parent]** pictogram en vervolgens op het **[!UICONTROL Configuration]** pictogram. Selecteer **[!UICONTROL Parsys (Design)]** in de lijst alle Dynamic Media Klassieke componenten om deze beschikbaar te maken en klik op **[!UICONTROL OK]**.
+1. Als er geen Dynamic Media Klassieke componenten beschikbaar zijn, klikt u op de **[!UICONTROL Design]** modus, tikt u op een component met een blauwe rand, tikt u op het **[!UICONTROL Parent]** pictogram en vervolgens op het **[!UICONTROL Configuration]** pictogram. Selecteer **[!UICONTROL Parsys (Design)]** in de lijst alle Dynamic Media Klassieke componenten om deze beschikbaar te maken en klik op **[!UICONTROL OK.]**
 
    ![chlimage_1-224](assets/chlimage_1-224.png)
 
@@ -210,7 +210,7 @@ Tik **[!UICONTROL Edit]** om de component te configureren. U kunt [montages vorm
 
 #### Tekst dynamisch wijzigen {#changing-text-dynamically}
 
-Als u de tekst dynamisch wilt wijzigen, voert u nieuwe tekst in de velden in en klikt u op **[!UICONTROL OK]**. In dit voorbeeld **[!UICONTROL Price]** is de verzendkosten nu $50 en de verzendkosten 99 cent.
+Als u de tekst dynamisch wilt wijzigen, voert u nieuwe tekst in de velden in en klikt u op **[!UICONTROL OK.]** In dit voorbeeld **[!UICONTROL Price]** is de huidige waarde $50 en is de verzendkosten 99 cent.
 
 ![chlimage_1-234](assets/chlimage_1-234.png)
 
@@ -220,7 +220,7 @@ De tekst in de afbeelding verandert. U kunt de tekst terugzetten naar de oorspro
 
 #### Tekst wijzigen om de waarde van de context van een client weer te geven {#changing-text-to-reflect-the-value-of-a-client-context-value}
 
-Als u een veld aan een clientcontextwaarde wilt koppelen, tikt u **[!UICONTROL Select]** om het contextmenu van de client te openen, selecteert u de clientcontext en tikt u op **[!UICONTROL OK]**. In dit voorbeeld verandert de naam op basis van de koppeling van de naam met de opgemaakte naam in het profiel.
+Als u een veld aan een clientcontextwaarde wilt koppelen, tikt u **[!UICONTROL Select]** om het clientcontextmenu te openen, selecteert u de clientcontext en tikt u op **[!UICONTROL OK.]** In dit voorbeeld verandert de naam op basis van de koppeling van de naam aan de opgemaakte naam in het profiel.
 
 ![chlimage_1-236](assets/chlimage_1-236.png)
 
@@ -230,12 +230,12 @@ De tekst geeft de naam weer van de gebruiker die momenteel is aangemeld. U kunt 
 
 #### Een koppeling maken van de klassieke afbeeldingssjabloon Dynamic Media {#making-the-scene-image-template-a-link}
 
-1. Tik op de pagina met de Klassieke **[!UICONTROL Image Template]** component Dynamic Media **[!UICONTROL Edit]**.
+1. Tik op de pagina met de klassieke **[!UICONTROL Image Template]** component Dynamic Media **[!UICONTROL Edit.]**
 1. Voer in het **[!UICONTROL URL]** veld de URL in waarnaar gebruikers gaan wanneer op de afbeelding wordt getikt. Selecteer in het **[!UICONTROL Open in]** veld of u het doel wilt openen (een nieuw venster of hetzelfde venster).
 
    ![chlimage_1-238](assets/chlimage_1-238.png)
 
-1. Tik op **[!UICONTROL OK]**.
+1. Tik op **[!UICONTROL OK.]**
 
 ### Video-component {#video-component}
 
@@ -341,7 +341,7 @@ Standaard zoekt AEM naar de geselecteerde map en naar alle submappen.
 
 
 
-**[!UICONTROL Publish Status]** - U kunt filteren op elementen die zijn gebaseerd op de publicatiestatus: **[!UICONTROL Unpublished]** of **[!UICONTROL Published]**. Als u niets selecteert **[!UICONTROL Publish Status]**, zoekt AEM standaard alle publicatiestatussen.
+**[!UICONTROL Publish Status]** - U kunt filteren op elementen die zijn gebaseerd op de publicatiestatus: **[!UICONTROL Unpublished]** of **[!UICONTROL Published.]** Als u niets selecteert **[!UICONTROL Publish Status]**, zoekt AEM standaard alle publicatiestatussen.
 
 ![chlimage_1-247](assets/chlimage_1-247.png)
 

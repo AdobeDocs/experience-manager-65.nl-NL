@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: dfaa4b3f-f65a-4fe3-87a7-f3bc71015e56
 translation-type: tm+mt
-source-git-commit: df89d5cfd5060d493babb89e92a9a98e851b8879
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '1692'
 ht-degree: 0%
@@ -74,7 +74,7 @@ Als u geen workflow of versie voor uw elementen nodig hebt, moet u uw elementen 
 
 **Universele voorinstellingen** configureren:
 
-1. Navigeer in **[!UICONTROL Cloud Services]** naar de **[!UICONTROL Dynamic Media Classic]** configuratie en klik op **[!UICONTROL Edit]**.
+1. Navigeer in **[!UICONTROL Cloud Services]** de configuratie naar de **[!UICONTROL Dynamic Media Classic]** configuratie en klik op **[!UICONTROL Edit.]**
 1. Selecteer het **[!UICONTROL Video]** tabblad.
 
    >[!NOTE]
@@ -151,8 +151,8 @@ De verschillende videocoderingen worden gemaakt op basis van de Dynamic Media Cl
 >
 >Nieuwe videoprofielen en wijzigingen ervan moeten worden geactiveerd om te publiceren.
 
-1. Ga in AEM naar **[!UICONTROL Tools]** en selecteer **[!UICONTROL Configuration Console]**. Navigeer in de configuratieconsole naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]** in de navigatiestructuur.
-1. Maak een nieuw Klassiek videoprofiel voor Dynamic Media. Selecteer in het **[!UICONTROL New...]** menu de sjabloon Klassiek videoprofiel van Dynamic Media **[!UICONTROL Create Page]** en selecteer deze. Geef de nieuwe pagina met videoprofielen een naam en klik op **[!UICONTROL Create]**.
+1. Ga in AEM naar **[!UICONTROL Tools]**, selecteer vervolgens **[!UICONTROL Configuration Console.]** in de configuratieconsole naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]** in de navigatiestructuur.
+1. Maak een nieuw Klassiek videoprofiel voor Dynamic Media. Selecteer in het **[!UICONTROL New...]** menu de sjabloon Klassiek videoprofiel van Dynamic Media **[!UICONTROL Create Page]** en selecteer deze. Geef de nieuwe pagina met videoprofielen een naam en klik op **[!UICONTROL Create.]**
 
    ![chlimage_1-133](assets/chlimage_1-133.png)
 

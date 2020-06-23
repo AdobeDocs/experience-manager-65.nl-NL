@@ -8,7 +8,7 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 translation-type: tm+mt
-source-git-commit: df89d5cfd5060d493babb89e92a9a98e851b8879
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '1576'
 ht-degree: 0%
@@ -72,7 +72,7 @@ Als u geen werkschema of een versie voor uw activa nodig hebt, zou u uw activa a
 
 Universele voorinstellingen configureren:
 
-1. Navigeer in **[!UICONTROL Cloud Services]** naar de **[!UICONTROL Scene7]** configuratie en klik op **[!UICONTROL Edit]**.
+1. Navigeer in **[!UICONTROL Cloud Services]** de configuratie naar de **[!UICONTROL Scene7]** configuratie en klik op **[!UICONTROL Edit.]**
 1. Selecteer het **[!UICONTROL Video]** tabblad.
 
    ![chlimage_1-363](assets/chlimage_1-363.png)
@@ -93,7 +93,7 @@ Universele voorinstellingen configureren:
 
 ## Voorinstellingen voor viewers en codering bijwerken {#updating-viewer-and-encoding-presets}
 
-Als u de kijker en het coderen vooraf instelt voor video in AEM moet bijwerken omdat vooraf instelt in Scene7 zijn bijgewerkt, navigeer aan de configuratie Scene7 in de wolkenconfiguratie en klik **[!UICONTROL Update the viewer and encoding presets]**.
+Als u de kijker en het coderen vooraf instelt voor video in AEM moet bijwerken omdat vooraf instelt in Scene7 zijn bijgewerkt, navigeer aan de configuratie Scene7 in de wolkenconfiguratie en klik **[!UICONTROL Update the viewer and encoding presets.]**
 
 ![chlimage_1-364](assets/chlimage_1-364.png)
 
@@ -150,7 +150,7 @@ De verschillende videocoderingen worden gecreeerd volgens de S7 coderende voorin
 
 1. Tik in AEM op **[!UICONTROL Tools > Configuration Console**.
 1. Navigeer in de **[!UICONTROL Configuration Console]** navigatiestructuur naar **[!UICONTROL Tools > DAM > Video Profiles]** de navigatiestructuur.
-1. Maak een nieuw S7-videoprofiel. In het **[!UICONTROL New...]** menu, selecteer **[!UICONTROL Create Page]** en selecteer dan het malplaatje van het Profiel Scene7 Video. Geef de nieuwe pagina met videoprofielen een naam en klik op **[!UICONTROL Create]**.
+1. Maak een nieuw S7-videoprofiel. In het **[!UICONTROL New...]** menu, selecteer **[!UICONTROL Create Page]** en selecteer dan het malplaatje van het Profiel Scene7 Video. Geef de nieuwe pagina met videoprofielen een naam en klik op **[!UICONTROL Create.]**
 
    ![chlimage_1-366](assets/chlimage_1-366.png)
 

@@ -4,7 +4,7 @@ description: Leer hoe u een voorvertoning van 3D-elementen kunt weergeven
 contentOwner: Rick Brough
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1cabc87dc58a4dbcac64a2797a3b1e0cca995d63
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '558'
 ht-degree: 4%
@@ -14,7 +14,7 @@ ht-degree: 4%
 
 # Voorvertoning van 3D-elementen weergeven in AEM{#previewing-3d-assets-aem}
 
-Adobe Experience Manager ondersteunt het uploaden, leveren en interactief voorvertonen van 3D-middelen als onderdeel van het ontwerpproces.
+Adobe Experience Manager ondersteunt het uploaden, leveren en interactief voorvertonen van 3D-elementen als onderdeel van het ontwerpproces.
 
 De interactieve 3D-viewer is beschikbaar op de pagina met elementdetails in AEM. De viewer bevat onder andere een verzameling interactieve besturingselementen voor camera waarmee u het 3D-element kunt draaien, zoomen en pannen.
 
@@ -52,7 +52,7 @@ Bovendien zijn de mogelijkheden van de clientcomputer, zoals een werkstation, la
 
 1. Zorg ervoor dat u 3D-elementen hebt geüpload naar AEM.
 See [Supported formats for 3D preview](#supported-3d-previewing-assets) and [Uploading assets](/help/assets/managing-assets-touch-ui.md#uploading-assets).
-1. Tik op de **[!UICONTROL Navigation]** pagina vanaf AEM op **[!UICONTROL Assets > Files]**.
+1. Tik vanuit AEM op de **[!UICONTROL Navigation]** pagina op **[!UICONTROL Assets > Files.]**
 
    ![Navigatiepagina](/help/assets/assets-dm/navigation-assets.png)
 
@@ -81,4 +81,4 @@ See [Supported formats for 3D preview](#supported-3d-previewing-assets) and [Upl
    * **Herstellen**- Tik in de rechterbenedenhoek van de pagina op het pictogram Herstellen om het doelpunt van de weergave te herstellen naar het midden van het 3D-element. Met Herstellen wordt de camera ook dichter bij of verder weg geplaatst om het middel volledig en bij een redelijke weergavegrootte weer te geven.
    * **Modus** Volledig scherm - Tik op het pictogram Volledig scherm rechtsonder op de pagina om de modus Volledig scherm te activeren.
 
-1. When you are finished, near the upper-right corner of the page, tap **[!UICONTROL Close]**.
+1. When you are finished, near the upper-right corner of the page, tap **[!UICONTROL Close.]**

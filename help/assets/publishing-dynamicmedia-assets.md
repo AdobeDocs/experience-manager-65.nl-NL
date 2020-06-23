@@ -1,5 +1,5 @@
 ---
-title: Dynamische media-elementen publiceren
+title: Dynamic Media-elementen publiceren
 description: Dynamische media-elementen publiceren
 uuid: b1bee905-86cf-4284-8d4e-067e11557899
 contentOwner: Rick Brough
@@ -8,7 +8,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 99d7025f-d022-4213-83c0-815a4712c573
 translation-type: tm+mt
-source-git-commit: b8fe3267a808f1a64b78620156826e0b6e3a5676
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 3%
@@ -18,9 +18,9 @@ ht-degree: 3%
 
 # Publishing Dynamic Media Assets {#publishing-dynamic-media-assets}
 
-U publiceert uw dynamische media-elementen door de elementen te selecteren die u al hebt geüpload en te tikken **[!UICONTROL Publish]** of **[!UICONTROL Quick Publish]**. Nadat uw dynamische media-elementen zijn gepubliceerd, zijn deze beschikbaar voor opname in een webpagina via een URL of door de code in te sluiten op de pagina.
+U publiceert de elementen van uw Dynamic Media door de elementen te selecteren die u al hebt geüpload en tikt **[!UICONTROL Publish]** of **[!UICONTROL Quick Publish.]** Nadat uw Dynamic Media-elementen zijn gepubliceerd, kunt u ze via een URL in een webpagina opnemen of door de code op de pagina in te sluiten.
 
-U kunt ook direct elementen publiceren die u uploadt—zonder tussenkomst van de gebruiker. Zie het [Vormen Dynamische Media - wijze](config-dms7.md)Scene7.
+U kunt ook direct elementen publiceren die u uploadt—zonder tussenkomst van de gebruiker. Zie het [Vormen Dynamic Media - wijze](config-dms7.md)Scene7.
 
 In het **[!UICONTROL Card View]** gedeelte ziet u een klein globpictogram direct onder de naam van een element en links van de datum en tijd om aan te geven dat het is gepubliceerd. In de **[!UICONTROL List View]** geeft een kolom **[!UICONTROL Published]** aan welke assets zijn gepubliceerd en welke niet.
 
@@ -44,8 +44,8 @@ See also [Embedding the Dynamic Media Video or Image viewer on a web page](embed
 
 Zie Elementen [publiceren voor gedetailleerde informatie over het publiceren van een set of element.](managing-assets-touch-ui.md)
 
-## HTTP/2-levering van Dynamic Media-elementen {#http-delivery-of-dynamic-media-assets}
+## HTTP/2 levering van Dynamic Media assets {#http-delivery-of-dynamic-media-assets}
 
-AEM ondersteunt nu de levering van alle Dynamic Media-inhoud (afbeeldingen en video) via HTTP/2. Dit wil zeggen dat er een gepubliceerde URL of insluitcode voor de afbeelding of video beschikbaar is om te worden geïntegreerd met elke toepassing die een gehoste element accepteert. Dat gepubliceerde element wordt vervolgens geleverd via het HTTP/2-protocol. Deze methode van levering verbetert de manier browsers en servers communiceren, die voor betere reactie en ladingstijden van al uw Dynamische activa van Media toestaan.
+AEM ondersteunt nu de levering van alle Dynamic Media-inhoud (afbeeldingen en video) via HTTP/2. Dit wil zeggen dat er een gepubliceerde URL of insluitcode voor de afbeelding of video beschikbaar is om te worden geïntegreerd met elke toepassing die een gehoste element accepteert. Dat gepubliceerde element wordt vervolgens geleverd via het HTTP/2-protocol. Deze methode van levering verbetert de manier browsers en servers communiceren, die voor betere reactie en ladingstijden van al uw Dynamic Media activa toestaan.
 
 Zie [HTTP/2 levering van inhoud vaak gestelde vragen](/help/sites-administering/scene7-http2faq.md) om meer te leren.

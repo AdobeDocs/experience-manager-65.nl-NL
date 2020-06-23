@@ -10,7 +10,7 @@ discoiquuid: 7d8e7273-29f3-4a45-ae94-aad660d2c71d
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config-dynamic
 translation-type: tm+mt
-source-git-commit: df89d5cfd5060d493babb89e92a9a98e851b8879
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '7793'
 ht-degree: 1%
@@ -143,7 +143,7 @@ U kunt ervoor kiezen om Dynamic Media alleen te implementeren voor beeldbewerkin
 
 >[!NOTE]
 >
->Als u dynamische media inschakelt via de uitvoeringsmodus, vervangt u de functionaliteit in AEM 6.1 en AEM 6.0, waar u dynamische media hebt ingeschakeld door de `dynamicMediaEnabled` markering in te stellen op **[!UICONTROL true]**. Deze markering heeft geen functionaliteit in AEM 6.2 en later. Bovendien hoeft u de snelstartprocedure niet opnieuw te starten om dynamische media in te schakelen.
+>Als u dynamische media inschakelt via de uitvoeringsmodus, wordt de functionaliteit in AEM 6.1 en AEM 6.0 vervangen. U hebt dynamische media ingeschakeld door de `dynamicMediaEnabled` markering in te stellen op **[!UICONTROL true.]** Deze markering heeft geen functionaliteit in AEM 6.2 en hoger. Bovendien hoeft u de snelstartprocedure niet opnieuw te starten om dynamische media in te schakelen.
 
 Door Dynamic Media in te schakelen, zijn de dynamische mediafuncties beschikbaar in de gebruikersinterface en ontvangt elk geüploade afbeeldingselement een *cqdam.piramid.tiff* -uitvoering die wordt gebruikt voor snelle levering van dynamische afbeeldingsuitvoeringen. Deze PTIFF&#39;s hebben belangrijke voordelen, zoals (1) de mogelijkheid om slechts één primaire bronafbeelding te beheren en onbeperkte uitvoeringen ter plekke te genereren zonder extra opslagruimte en (2) de mogelijkheid om interactieve visualisatie te gebruiken, zoals zoomen, pannen, centrifugeren, enzovoort.
 
@@ -178,7 +178,7 @@ Om dynamische media toe te laten, moet u de dynamische media runmode of van de b
    >* ImageServer-&lt;PortId>-&lt;jjyy>&lt;dd>.log - Het ImageServer-logboek bevat statistieken en analysegegevens die worden gebruikt voor het analyseren van het gedrag van het interne ImageServer-proces.
    Voorbeeld van de naam van een logbestand voor een afbeeldingsserver: `ImageServer-57346-2020-07-25.log`
    * s7access-&lt;yyyy>&lt;dd>.log - Het s7access logboek registreert elk verzoek aan Dynamic Media door `/is/image` en `/is/content`.
-   Deze logboeken worden alleen gebruikt wanneer Dynamic Media is ingeschakeld. Ze zijn niet opgenomen in het volledige **pakket** downloaden dat op de `system/console/status-Bundlelist` pagina wordt gegenereerd. Als u een probleem hebt met de Dynamic Media, kunt u beide logbestanden bij het aanroepen van Customer Support voegen.
+   Deze logboeken worden alleen gebruikt wanneer Dynamic Media is ingeschakeld. Ze zijn niet opgenomen in het volledige **pakket** downloaden dat op de `system/console/status-Bundlelist` pagina wordt gegenereerd. Als u een probleem hebt met de Dynamic Media, kunt u beide logboeken bij het bellen naar Customer Support voegen.
 
 ### Als u AEM op een andere haven of contextweg installeerde... {#if-you-installed-aem-to-a-different-port-or-context-path}
 
@@ -260,12 +260,12 @@ U moet replicatieverificatie instellen bij de auteur om afbeeldingen te replicer
 **Verificatie instellen**
 
 1. Neem contact op met de klantenservice voor uw KeyStore-bestand en wachtwoord als u dit nog niet hebt. Dit maakt deel uit van provisioning en de sleutels worden aan uw account gekoppeld.
-1. Tik in AEM op het AEM-logo om toegang te krijgen tot de globale navigatieconsole en tik vervolgens op **[!UICONTROL Tools > Security > Users]**.
+1. Tik in AEM op het AEM-logo om toegang te krijgen tot de globale navigatieconsole en tik vervolgens op **[!UICONTROL Tools > Security > Users.]**
 1. Navigeer op de pagina Gebruikersbeheer naar de **[!UICONTROL dynamic-media-replication]** gebruiker en tik vervolgens om deze te openen.
 
    ![dm-replicatie](assets/dm-replication.png)
 
-1. Tik op het **[!UICONTROL Keystore]** tabblad van de pagina Gebruikersinstellingen bewerken voor dynamische media-replicatie en klik vervolgens op **[!UICONTROL Create KeyStore]**.
+1. Tik in de pagina Gebruikersinstellingen bewerken voor dynamische media-replicatie op het **[!UICONTROL Keystore]** tabblad en klik vervolgens op **[!UICONTROL Create KeyStore.]**
 
    ![dm-replication-keystore](assets/dm-replication-keystore.png)
 
@@ -279,7 +279,7 @@ U moet replicatieverificatie instellen bij de auteur om afbeeldingen te replicer
 1. Vouw op de **[!UICONTROL Edit User Settings For dynamic-media-replication]** pagina de optie Persoonlijke sleutel **toevoegen uit het bestandsgebied** KeyStore uit en voeg het volgende toe (zie de volgende afbeeldingen):
 
    * Voer in het **[!UICONTROL New Alias]** veld de naam in van een alias die u later in de replicatieconfiguratie wilt gebruiken. bijvoorbeeld `replication`.
-   * Tik op **[!UICONTROL KeyStore File]**. Navigeer naar het KeyStore-bestand dat u van Adobe ontvangt, selecteer het en tik op **[!UICONTROL Open]**.
+   * Tik **[!UICONTROL KeyStore File.]** navigeer naar het KeyStore-bestand dat u van Adobe ontvangt, selecteer het en tik vervolgens op **[!UICONTROL Open.]**
    * Voer in het **[!UICONTROL KeyStore File Password]** veld het wachtwoord voor het KeyStore-bestand in. Dit is **niet** het KeyStore-wachtwoord dat u in Stap 5 hebt gemaakt, maar het wachtwoord voor KeyStore-bestanden dat Adobe opgeeft in het welkomstbericht dat u tijdens de provisioning ontvangt. Neem contact op met de klantenservice van Adobe als u geen wachtwoord voor een KeyStore-bestand hebt ontvangen.
    * Voer in het **[!UICONTROL Private Key Password]** veld het wachtwoord voor de persoonlijke sleutel in (dit is mogelijk hetzelfde wachtwoord voor de persoonlijke sleutel als in de vorige stap). Adobe geeft het wachtwoord voor de persoonlijke sleutel op in het welkomstbericht dat u tijdens de levering hebt ontvangen. Neem contact op met de klantenservice van Adobe als u geen wachtwoord voor een persoonlijke sleutel hebt ontvangen.
    * Voer in het **[!UICONTROL Private Key Alias]** veld de alias van de persoonlijke sleutel in. Bijvoorbeeld, `*companyname*-alias`. Adobe geeft de alias voor de persoonlijke sleutel op in het welkomstbericht dat u tijdens de levering hebt ontvangen. Neem contact op met de klantenservice van Adobe als u geen alias voor een persoonlijke sleutel hebt ontvangen.
@@ -291,27 +291,27 @@ U moet replicatieverificatie instellen bij de auteur om afbeeldingen te replicer
 
 ### De Replication Agent configureren {#configuring-the-replication-agent}
 
-1. Tik in AEM op het AEM-logo om toegang te krijgen tot de globale navigatieconsole en tik vervolgens op **[!UICONTROL Tools > Deployment > Replication > Agents on author]**.
-1. Tik op de pagina Agents op de auteurspagina **[!UICONTROL Dynamic Media Hybrid Image Replication (s7delivery)]**.
-1. Tik op **[!UICONTROL Edit]**.
+1. Tik in AEM op het AEM-logo om toegang te krijgen tot de globale navigatieconsole en tik vervolgens op **[!UICONTROL Tools > Deployment > Replication > Agents on author.]**
+1. Tik op de pagina Agents op de auteurspagina op **[!UICONTROL Dynamic Media Hybrid Image Replication (s7delivery).]**
+1. Tik op **[!UICONTROL Edit.]**
 1. Tik op het **[!UICONTROL Settings]** tabblad en voer vervolgens het volgende in:
 
    * **[!UICONTROL Enabled]** - Schakel dit selectievakje in om de replicatieagent in te schakelen.
    * **[!UICONTROL Region]** - Instellen op het juiste gebied: Noord-Amerika, Europa of Azië
    * **[!UICONTROL Tenant ID]** - Deze waarde is de naam van uw bedrijf/huurder die aan de Dienst van de Replicatie publiceert. Deze waarde is de Tenant ID die Adobe opgeeft in het welkomstbericht dat u tijdens de provisioning hebt ontvangen. Neem contact op met de klantenservice van Adobe als u dit niet hebt ontvangen.
    * **[!UICONTROL Key Store Alias]** - Deze waarde is gelijk aan de waarde** New Alias** die is ingesteld bij het genereren van de sleutel in [Setting Up Authentication](#setting-up-authentication). bijvoorbeeld `replication`. (Zie stap 7 in [Setting Up Authentication](#setting-up-authentication).)
-   * **[!UICONTROL Key Store Password]** - Dit is het KeyStore-wachtwoord dat u hebt gemaakt toen u hierop tikte **[!UICONTROL Create KeyStore]**. Adobe heeft dit wachtwoord niet opgegeven. Zie stap 5 van [Setting up Authentication](#setting-up-authentication).
+   * **[!UICONTROL Key Store Password]** - Dit is het KeyStore-wachtwoord dat is gemaakt toen u op **[!UICONTROL Create KeyStore.]** Adobe tikte. Het wachtwoord is hiervoor niet beschikbaar. Zie stap 5 van [Setting up Authentication](#setting-up-authentication).
    In de volgende afbeelding ziet u de replicatieagent met voorbeeldgegevens:
 
    ![chlimage_1-509](assets/chlimage_1-509.png)
 
-1. Tik op **[!UICONTROL OK]**.
+1. Tik op **[!UICONTROL OK.]**
 
 ### De Replication Agent for Dynamic Media valideren {#validating-the-replication-agent-for-dynamic-media}
 
 Ga als volgt te werk om de replicatieagent voor dynamische media te valideren:
 
-Tik op **[!UICONTROL Test Connection]**. Voorbeeld-uitvoer is als volgt:
+De uitvoer van het **[!UICONTROL Test Connection.]** Tikvoorbeeld ziet er als volgt uit:
 
 ```shell
 11.03.2016 10:57:55 - Transferring content for ReplicationAction{type=TEST, path[0]='/content/dam', time=1457722675402, userId='admin', revision='null'}
@@ -446,7 +446,7 @@ Voorbeeld van replicatielogboek:
 
 **Oplossing:**
 
-1. Klik in AEM op **[!UICONTROL Tools > General > CRXDE Lite]**.
+1. Klik in AEM op **[!UICONTROL Tools > General > CRXDE Lite.]**
 
    `localhost:4502/crx/de/index.jsp`
 
@@ -457,7 +457,7 @@ Voorbeeld van replicatielogboek:
 
    `enableOauth=true`
 
-1. Near the upper-left corner of the page, tap **[!UICONTROL Save All]**.
+1. Near the upper-left corner of the page, tap **[!UICONTROL Save All.]**
 
 ### Uw configuratie testen {#testing-your-configuration}
 
@@ -472,8 +472,8 @@ Zorg ervoor dat u het volgende al hebt gedaan voordat u met deze test begint:
 
 1. Upload een afbeeldingselement. (Tik in Elementen **[!UICONTROL Create > Files]** en selecteer het bestand.)
 1. Wacht tot de workflow is voltooid.
-1. Publiceer het afbeeldingselement. (Selecteer het element en tik **[!UICONTROL Quick Publish]**.)
-1. Navigeer naar de uitvoeringen voor die afbeelding door de afbeelding te openen en te tikken **[!UICONTROL Renditions]**.
+1. Publiceer het afbeeldingselement. (Selecteer het element en tik **[!UICONTROL Quick Publish.]**)
+1. Navigeer naar de uitvoeringen voor die afbeelding door de afbeelding te openen en te tikken **[!UICONTROL Renditions.]**
 
    ![chlimage_1-510](assets/chlimage_1-510.png)
 
@@ -490,12 +490,12 @@ De service Dynamic Media Cloud biedt ondersteuning voor cloudservices, zoals hyb
 Als onderdeel van de configuratie moet u een registratie-id, een URL voor de videoservice, een URL voor de afbeeldingsservice, een URL voor de replicatieservice en een verificatieverificatie invoeren. U zou al deze informatie als deel van het proces van de rekeninglevering moeten ontvangen. Als u deze gegevens niet hebt ontvangen, neemt u contact op met de beheerder van de Adobe Experience Manager of de technische ondersteuning van Adobe voor meer informatie.
 
 >[!NOTE]
-Voordat u Dynamic Media Cloud-services instelt, moet u eerst uw publicatie-instantie hebben ingesteld. U moet ook replicatie-instellingen hebben voordat u de services van de Dynamic Media Cloud configureert.
+Voordat u Dynamic Media Cloud-services instelt, moet u eerst uw publicatie-instantie hebben ingesteld. U moet ook replicatie-instellingen hebben voordat u de services van Dynamic Media Cloud configureert.
 
 Dynamische mediawolkenservices configureren:
 
-1. In AEM, tap the AEM logo to access the global navigation console and tap **[!UICONTROL Tools > Cloud Services > Dynamic Media Configuration (Pre-6.3)]**.
-1. Op de Browser van de Configuratie van Dynamic Media pagina, in de linkerruit, selecteer **[!UICONTROL global]**, dan tik **[!UICONTROL Create]**.
+1. In AEM, tap the AEM logo to access the global navigation console and tap **[!UICONTROL Tools > Cloud Services > Dynamic Media Configuration (Pre-6.3).]**
+1. Op de Browser van de Configuratie van Dynamic Media pagina, in de linkerruit selecteert, **[!UICONTROL global]** dan tikt **[!UICONTROL Create.]**
 1. Typ een titel in het veld Titel van het **[!UICONTROL Create Dynamic Media Configuration]** dialoogvenster.
 1. Als u Dynamic Media voor video configureert,
 
@@ -620,7 +620,7 @@ U moet uw eigen standaardinstellingen voor de catalogus publiceren als onderdeel
    `https://<*server*>:<*port*>/crx/de/index.jsp#/conf/global/settings/dam/dm/imageserver/`
 
 1. Tik op het tabblad **[!UICONTROL Replication]**. 
-1. Tik op **[!UICONTROL Replicate]**.
+1. Tik op **[!UICONTROL Replicate.]**
 
 ## Viewer-voorinstellingen repliceren {#replicating-viewer-presets}
 
@@ -696,16 +696,16 @@ Filters zijn van toepassing op MIME-typen en kunnen geen padspecifieke notatie h
 
 Als u Dynamic Media voor video-slechts gebruikt, volg deze stappen aan de filters van opstellingsactiva voor replicatie:
 
-1. In AEM, tap the AEM logo to access the global navigation console and tap **[!UICONTROL Tools > Deployment > Replication > Agents on author]**.
-1. Tik op de pagina Agents op de auteurspagina **[!UICONTROL Default Agent (publish)]**.
-1. Tik op **[!UICONTROL Edit]**.
+1. In AEM, tap the AEM logo to access the global navigation console and tap **[!UICONTROL Tools > Deployment > Replication > Agents on author.]**
+1. Tik op de pagina Agents op de auteurspagina op **[!UICONTROL Default Agent (publish).]**
+1. Tik op **[!UICONTROL Edit.]**
 1. Schakel in het **[!UICONTROL Agent Settings]** dialoogvenster op het **[!UICONTROL Settings]** tabblad in **[!UICONTROL Enabled]** om de agent in te schakelen.
-1. Tik op **[!UICONTROL OK]**.
-1. Tik in AEM op **[!UICONTROL Tools > General > CRXDE Lite]**.
+1. Tik op **[!UICONTROL OK.]**
+1. Tik in AEM op **[!UICONTROL Tools > General > CRXDE Lite.]**
 1. Navigeer in de linkermappenstructuur naar `/etc/replication/agents.author/dynamic_media_replication/jcr:content/damRenditionFilters`
-1. Zoek **[!UICONTROL filter-video]**, klik er met de rechtermuisknop op en selecteer **[!UICONTROL Copy]**.
+1. Zoek **[!UICONTROL filter-video]**, klik er met de rechtermuisknop op en selecteer **[!UICONTROL Copy.]**
 1. Navigeer in de linkermappenstructuur naar `/etc/replication/agents.author/publish`
-1. Zoek **[!UICONTROL jcr:content]**, klik er met de rechtermuisknop op en selecteer **[!UICONTROL Paste]**.
+1. Zoek **[!UICONTROL jcr:content]**, klik er met de rechtermuisknop op en selecteer **[!UICONTROL Paste.]**
 
 Hiermee wordt de AEM-publicatie-instantie zo ingesteld dat zowel de videoposterafbeelding als de videometagegevens worden geleverd die zijn vereist voor het afspelen, terwijl de video zelf wordt geleverd door de cloudservice van Dynamic Media. Het filter sluit ook de originele video en statische miniatuuruitvoeringen uit van replicatie, die niet nodig zijn voor de publicatie-instantie.
 
@@ -713,20 +713,20 @@ Hiermee wordt de AEM-publicatie-instantie zo ingesteld dat zowel de videopostera
 
 Als u Dynamic Media voor beeldvorming in niet productielokaties gebruikt, volg deze stappen aan opstellings activafilters voor replicatie:
 
-1. In AEM, tap the AEM logo to access the global navigation console and tap **[!UICONTROL Tools > Deployment > Replication > Agents on author]**.
-1. Tik op de pagina Agents op de auteurspagina **[!UICONTROL Default Agent (publish)]**.
-1. Tik op **[!UICONTROL Edit]**.
+1. In AEM, tap the AEM logo to access the global navigation console and tap **[!UICONTROL Tools > Deployment > Replication > Agents on author.]**
+1. Tik op de pagina Agents op de auteurspagina op **[!UICONTROL Default Agent (publish).]**
+1. Tik op **[!UICONTROL Edit.]**
 1. Schakel in het **[!UICONTROL Agent Settings]** dialoogvenster op het **[!UICONTROL Settings]** tabblad in **[!UICONTROL Enabled]** om de agent in te schakelen.
-1. Tik op **[!UICONTROL OK]**.
-1. Tik in AEM op **[!UICONTROL Tools > General > CRXDE Lite]**.
+1. Tik op **[!UICONTROL OK.]**
+1. Tik in AEM op **[!UICONTROL Tools > General > CRXDE Lite.]**
 1. Navigeer in de linkermappenstructuur naar `/etc/replication/agents.author/dynamic_media_replication/jcr:content/damRenditionFilters`
 
    ![image-2018-01-16-10-22-40-410](assets/image-2018-01-16-10-22-40-410.png)
 
-1. Zoek **[!UICONTROL filter-images]**, klik er met de rechtermuisknop op en selecteer **[!UICONTROL Copy]**.
+1. Zoek **[!UICONTROL filter-images]**, klik er met de rechtermuisknop op en selecteer **[!UICONTROL Copy.]**
 1. Navigeer in de linkermappenstructuur naar `/etc/replication/agents.author/publish`
-1. Zoek **[!UICONTROL jcr:content]**, klik er met de rechtermuisknop op en selecteer **[!UICONTROL Create > Create Node]**. Voer de naam `damRenditionFilters` van het type in `nt:unstructured`.
-1. Zoek `damRenditionFilters`, klik er met de rechtermuisknop op en selecteer **[!UICONTROL Paste]**.
+1. Zoek **[!UICONTROL jcr:content]**, klik er met de rechtermuisknop op en selecteer **[!UICONTROL Create > Create Node.]** Voer de naam `damRenditionFilters` van het type in `nt:unstructured`.
+1. Zoek `damRenditionFilters`, klik er met de rechtermuisknop op en selecteer **[!UICONTROL Paste.]**
 
 Hiermee wordt de AEM-publicatie-instantie zo ingesteld dat de afbeeldingen worden geleverd aan uw niet-productieomgeving. Het filter sluit ook de oorspronkelijke afbeelding en statische uitvoeringen uit van replicatie, die niet nodig zijn voor de publicatie-instantie.
 
@@ -740,14 +740,14 @@ Als u meer dan één filter op een server gebruikt - bijvoorbeeld, één filter 
 
 Elementfilters optioneel aanpassen voor replicatie:
 
-1. In AEM, tap the AEM logo to access the global navigation console and tap **[!UICONTROL Tools > General > CRXDE Lite]**.
+1. In AEM, tap the AEM logo to access the global navigation console and tap **[!UICONTROL Tools > General > CRXDE Lite.]**
 1. Navigeer in de linkermapstructuur naar `/etc/replication/agents.author/dynamic_media_replication/jcr:content/damRenditionFilters` om de filters te bekijken.
 
    ![chlimage_1-511](assets/chlimage_1-511.png)
 
 1. Als u het Mime-type voor het filter wilt definiëren, gaat u als volgt naar het Mime-type:
 
-   Zoek in de linkerspoorstaaf de tekst uit `content > dam > <locate_your_asset> >  jcr:content > metadata` en ga vervolgens naar de tabel **[!UICONTROL dc:format]**.
+   Vouw in het linkerspoor de tabel uit `content > dam > <locate_your_asset> >  jcr:content > metadata` en ga vervolgens naar de tabel **[!UICONTROL dc:format.]**
 
    De volgende afbeelding is een voorbeeld van het pad van een element naar dc:format.
 
@@ -805,7 +805,7 @@ Dynamic Media werken uit-van-de-doos [nadat het wordt toegelaten](#enabling-dyna
 
 Om de montages van de Server van het Beeld van Dynamic Media te vormen:
 
-1. Tik in de linkerbovenhoek van AEM **[!UICONTROL Adobe Experience Manager]** op de algemene navigatieconsole en tik vervolgens op **[!UICONTROL Tools > Operations > Web Console]**.
+1. Tik in de linkerbovenhoek van AEM **[!UICONTROL Adobe Experience Manager]** op de algemene navigatieconsole en tik vervolgens op **[!UICONTROL Tools > Operations > Web Console.]**
 1. Tik op de pagina Configuratie webconsole van Adobe Experience Manager op **[!UICONTROL OSGi > Configuration]** om alle bundels weer te geven die momenteel in AEM worden uitgevoerd.
 
    De servers van de Levering van Dynamic Media worden gevonden onder de volgende namen in de lijst:
@@ -859,7 +859,7 @@ Om de montages van de Server van het Beeld van Dynamic Media te vormen:
  </tbody>
 </table>
 
-1. Tik op **[!UICONTROL Save]**.
+1. Tik op **[!UICONTROL Save.]**
 1. Tik in de lijst met bundels rechts van Adobe CQ Scene7 PlatformServer op het **[!UICONTROL Edit]** pictogram.
 1. Stel in het dialoogvenster Adobe CQ Scene7 PlatformServer de volgende standaardopties in:
 
@@ -885,7 +885,7 @@ De locatie van de standaardmanifestconfiguratie wordt overgenomen van de **[!UIC
 
 U kunt de waarden van de eigenschappen wijzigen, zoals wordt beschreven in de onderstaande tabel, door nieuwe waarden in te voeren.
 
-Tik in de linkerbovenhoek van de pagina op wanneer u klaar bent met het aanbrengen van wijzigingen in het standaardmanifest **[!UICONTROL Save All]**.
+Tik op **[!UICONTROL Save All.]**
 
 Zorg ervoor dat u op het **[!UICONTROL Access Control]** tabblad tikt (rechts van het tabblad Eigenschappen) en stel vervolgens de toegangsbeheerbevoegdheden in op `jcr:read` voor iedereen en gebruikers die dynamische media repliceren.
 
@@ -908,12 +908,12 @@ Instellingen voor de manifestatie en de standaardwaarden ervan:
   <tr>
    <td>defaultPix</td>
    <td>300,300</td>
-   <td><p>Standaardweergavegrootte. De server beperkt antwoordafbeeldingen tot maximaal deze breedte en hoogte als in de aanvraag niet expliciet de weergavegrootte wordt opgegeven met wid=, hei= of scl=.</p> <p>Opgegeven als twee gehele getallen, 0 of groter, gescheiden door een komma. Breedte en hoogte in pixels. Een van beide of beide waarden kunnen op 0 worden ingesteld om ze onbeperkt te houden. Is niet van toepassing op geneste/ingesloten aanvragen.</p> <p>Zie ook <a href="https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/image_catalog/r_defaultpix.html">DefaultPix</a> in de Image Serving API.</p> <p>Gewoonlijk gebruikt u echter een viewervoorinstelling of voorinstelling voor afbeeldingen om het element te leveren. De standaardvoorinstelling is alleen van toepassing op elementen die geen viewervoorinstelling of voorinstelling voor afbeeldingen gebruiken.</p> </td>
+   <td><p>Standaardweergavegrootte. De server beperkt antwoordafbeeldingen tot maximaal deze breedte en hoogte als in de aanvraag niet expliciet de weergavegrootte wordt opgegeven met wid=, hei= of scl=.</p> <p>Opgegeven als twee gehele getallen, 0 of groter, gescheiden door een komma. Breedte en hoogte in pixels. Een van beide of beide waarden kan op 0 worden ingesteld om ze onbeperkt te houden. Is niet van toepassing op geneste/ingesloten aanvragen.</p> <p>Zie ook <a href="https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/image_catalog/r_defaultpix.html">DefaultPix</a> in de Image Serving API.</p> <p>Gewoonlijk gebruikt u echter een viewervoorinstelling of voorinstelling voor afbeeldingen om het element te leveren. De standaardvoorinstelling is alleen van toepassing op elementen die geen viewervoorinstelling of voorinstelling voor afbeeldingen gebruiken.</p> </td>
   </tr>
   <tr>
    <td>standaard miniatuur</td>
    <td>100,100</td>
-   <td><p>Standaardminiatuurgrootte. Wordt gebruikt in plaats van kenmerk::DefaultPix voor aanvragen van miniaturen (req=tmb).</p> <p>De server beperkt antwoordafbeeldingen tot maximaal deze breedte en hoogte als een miniatuuraanvraag (req=tmb) de grootte niet expliciet opgeeft met gebruik van wid=, hei= of scl=.</p> <p>Opgegeven als twee gehele getallen, 0 of groter, gescheiden door een komma. Breedte en hoogte in pixels. Een van beide of beide waarden kunnen op 0 worden ingesteld om ze onbeperkt te houden. </p> <p>Is niet van toepassing op geneste/ingesloten aanvragen.</p> <p>Zie ook <a href="https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/image_catalog/r_defaultthumbpix.html">DefaultThumbPix</a> in de Image Serving API. </p> </td>
+   <td><p>Standaardminiatuurgrootte. Wordt gebruikt in plaats van kenmerk::DefaultPix voor aanvragen van miniaturen (req=tmb).</p> <p>De server beperkt antwoordafbeeldingen tot maximaal deze breedte en hoogte als een miniatuuraanvraag (req=tmb) de grootte niet expliciet opgeeft met gebruik van wid=, hei= of scl=.</p> <p>Opgegeven als twee gehele getallen, 0 of groter, gescheiden door een komma. Breedte en hoogte in pixels. Een van beide of beide waarden kan op 0 worden ingesteld om ze onbeperkt te houden. </p> <p>Is niet van toepassing op geneste/ingesloten aanvragen.</p> <p>Zie ook <a href="https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/image_catalog/r_defaultthumbpix.html">DefaultThumbPix</a> in de Image Serving API. </p> </td>
   </tr>
   <tr>
    <td>vervaldatum</td>
@@ -993,7 +993,7 @@ Nadat u het functiepakket hebt geïnstalleerd, moet u de juiste standaardkleurpr
 
    De eigenschappen voor kleurcorrectie worden beschreven in de tabel **Eigenschappen** voor kleurcorrectie. Waarden die u kunt toewijzen aan eigenschappen voor kleurcorrectie, vindt u in de tabel **Kleurprofiel** .
 
-   Voeg bijvoorbeeld in toe **[!UICONTROL Name]**, selecteer `iccprofilecmyk`en voeg toe **[!UICONTROL Type]** als een `String``WebCoated` **[!UICONTROL Value]**. Tik vervolgens op **[!UICONTROL Add]** en sla uw waarden **[!UICONTROL Save All]** op.
+   Voeg bijvoorbeeld in toe **[!UICONTROL Name]**, selecteer `iccprofilecmyk`en voeg toe **[!UICONTROL Type]** als `String`Tik op `WebCoated` en sla uw waarden **[!UICONTROL Value.]** **[!UICONTROL Add]** **[!UICONTROL Save All]** op.
 
    ![chlimage_1-515](assets/chlimage_1-515.png)
 
@@ -1241,9 +1241,9 @@ De volgende kleurprofielen zijn geïnstalleerd:
  </tbody>
 </table>
 
-1. Tik op **[!UICONTROL Save All]**.
+1. Tik op **[!UICONTROL Save All.]**
 
-U kunt bijvoorbeeld **[!UICONTROL iccprofilergb]** instellen op `sRGB` en **[!UICONTROL iccprofilecmyk]** op **[!UICONTROL WebCoated]**.
+U kunt bijvoorbeeld **[!UICONTROL iccprofilergb]** instellen op `sRGB` en **[!UICONTROL iccprofilecmyk]** op **[!UICONTROL WebCoated.]**
 
 Dit doet het volgende:
 

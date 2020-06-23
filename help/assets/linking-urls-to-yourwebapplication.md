@@ -8,7 +8,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
 translation-type: tm+mt
-source-git-commit: 572b856fbdd1ef916f8f897ba86ddefafee324fc
+source-git-commit: e916f70549197ac9f95443e972401a78735b0560
 workflow-type: tm+mt
 source-wordcount: '1213'
 ht-degree: 9%
@@ -18,7 +18,7 @@ ht-degree: 9%
 
 # URL&#39;s koppelen aan uw webapplicatie {#linking-urls-to-your-web-application}
 
-Via URL-aanroepen hebben uw websites en toepassingen toegang tot Dynamic Media-services. Nadat u een element hebt gepubliceerd, activeert Dynamic Media een URL-tekenreeks die verwijst naar het element. U kunt deze URL&#39;s voor testdoeleinden in een webbrowser plakken.
+Uw websites en toepassingen hebben via URL-oproepen toegang tot de services van Dynamic Media. Nadat u een element hebt gepubliceerd, activeert Dynamic Media een URL-tekenreeks die verwijst naar het element. U kunt deze URL&#39;s voor testdoeleinden in een webbrowser plakken.
 
 U maakt alleen een koppeling naar URL&#39;s als u AEM *niet* als uw WCM gebruikt. Linking-versus insluiten-wordt gebruikt wanneer u een videospeler als pop-up of modaal venster wilt leveren. Als u AEM als uw WCM gebruikt, voegt [u de elementen rechtstreeks op uw pagina toe.](adding-dynamic-media-assets-to-pages.md)
 
@@ -66,29 +66,29 @@ Er zijn verschillende manieren waarop u een URL-tekenreeks kunt verkrijgen. In d
 
 1. Voer op basis van het element dat u hebt geselecteerd een van de volgende handelingen uit:
 
-   * Tik in de vervolgkeuzelijst op een afbeelding als u deze hebt geselecteerd **[!UICONTROL Renditions]**.
+   * Als u een afbeelding hebt geselecteerd, tikt u in de vervolgkeuzelijst op **[!UICONTROL Renditions.]**
 
       Tik onder de **[!UICONTROL Dynamic]** kop op de naam van een voorinstelling om de vertoning ervan in het rechterframe weer te geven. Mogelijk moet u door de lijst met uitvoeringen bladeren om de dynamische kop te zien.
 
-      Tik aan de onderkant van de linkerspoorstaaf **[!UICONTROL URL]**.
+      Tik onder aan de linkerspoorstaaf op **[!UICONTROL URL.]**
 
       ![chlimage_1-270](assets/chlimage_1-270.png)
 
-   * Tik op een centrifugeset, een afbeeldingsset, een carrouselset of een video in de vervolgkeuzelijst **[!UICONTROL Viewers]**.
+   * Als u in het keuzemenu een centrifugeset, een afbeeldingenset, een carrouselset of een video hebt geselecteerd, tikt u op **[!UICONTROL Viewers.]**
 
       Tik in de linkertrack op de naam van een viewervoorinstelling. Er wordt een voorvertoning van de set of video geopend op een aparte pagina.
 
-      Tik in de linkerspoorstaaf onderaan **[!UICONTROL URL]**.
+      Tik in de linkerspoorstaaf onderaan **[!UICONTROL URL.]**
 
       ![chlimage_1-271](assets/chlimage_1-271.png)
 
 1. Selecteer en kopieer de tekst naar uw webbrowser om een voorvertoning van het element weer te geven of om deze toe te voegen aan uw pagina met webinhoud.
 
-   Tik op het URL-venster **[!UICONTROL X]** of tik **[!UICONTROL Close]**.
+   Tik op het URL-venster **[!UICONTROL X]** of tik op **[!UICONTROL Close.]**
 
 ## Een URL verkrijgen voor een statisch element {#obtaining-a-url-for-a-static-asset}
 
-Dynamische media ondersteunt de levering van statische elementen. Dit zijn aanvullende elementen die verder gaan dan alleen afbeeldingen en video. Tot de ondersteunde indelingen voor statische elementen voor levering behoren:
+Dynamic Media ondersteunen de levering van statische elementen. Dit zijn aanvullende elementen die verder gaan dan alleen afbeeldingen en video. Tot de ondersteunde indelingen voor statische elementen voor levering behoren:
 
 * 3D-bestanden
 * Geanimeerde GIF
@@ -122,8 +122,8 @@ Dynamische media ondersteunt de levering van statische elementen. Dit zijn aanvu
 
 ## Een video-URL ophalen voor een gepubliceerde video-uitvoering {#obtaining-a-video-url-for-a-published-video-rendition}
 
-1. Navigeer in AEM naar **[!UICONTROL Tools > Deployment > Cloud > Cloud Services]**.
-1. Schuif op de pagina **[!UICONTROL Cloud Services]** omlaag naar de kop **[!UICONTROL Dynamic Media Cloud Services]** en tik op **[!UICONTROL Show Configurations]**.
+1. Navigeer in AEM naar **[!UICONTROL Tools > Deployment > Cloud > Cloud Services.]**
+1. Schuif op de pagina **[!UICONTROL Cloud Services]** omlaag naar de kop **[!UICONTROL Dynamic Media Cloud Services]** en tik op **[!UICONTROL Show Configurations.]**
 1. Tik onder **[!UICONTROL Available Configurations]** op de naam van de gewenste configuratie.
 
 1. Kopieer op de **[!UICONTROL Dynamic Media Cloud Settings]** pagina onder **[!UICONTROL Video Service URL]** het volledige URL-pad naar beneden. U hebt het gekopieerde URL-pad later nodig in de stappen.
@@ -138,7 +138,7 @@ Dynamische media ondersteunt de levering van statische elementen. Dit zijn aanvu
 
    Als de registratie-id bijvoorbeeld `87654321|MyCompany`is, is de naam van de klant `MyCompany`.
 
-1. Tik in de linkerbovenhoek van de pagina op **[!UICONTROL Cloud Services**, tik vervolgens op het logo van Experience Manager en navigeer naar **[!UICONTROL General > CRXDE Lite]**.
+1. Tik in de linkerbovenhoek van de pagina op **[!UICONTROL-Cloud Servicen**, tik vervolgens op het Experience Manager-logo en navigeer naar **[!UICONTROL General > CRXDE Lite.]**
 1. Kopieer het volledige pad voor video-uitvoering vanuit de JCR (Java Content Repository).
 
    Het weergavepad van de video kan er bijvoorbeeld ongeveer als volgt uitzien:
@@ -159,8 +159,8 @@ Dynamische media ondersteunt de levering van statische elementen. Dit zijn aanvu
 
 ## Een video-URL ophalen voor adaptieve streaming (HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
-1. Navigeer in AEM naar **[!UICONTROL Tools > Deployment > Cloud > Cloud Services]**.
-1. Schuif op de pagina **[!UICONTROL Cloud Services]** omlaag naar de kop **[!UICONTROL Dynamic Media Cloud Services]** en tik op **[!UICONTROL Show Configurations]**.
+1. Navigeer in AEM naar **[!UICONTROL Tools > Deployment > Cloud > Cloud Services.]**
+1. Schuif op de pagina **[!UICONTROL Cloud Services]** omlaag naar de kop **[!UICONTROL Dynamic Media Cloud Services]** en tik op **[!UICONTROL Show Configurations.]**
 1. Tik onder **[!UICONTROL Available Configurations]** op de naam van de gewenste configuratie.
 1. Ga als volgt te werk op de **[!UICONTROL Dynamic Media Cloud Services Settings]** pagina:
 
@@ -181,7 +181,7 @@ Dynamische media ondersteunt de levering van statische elementen. Dit zijn aanvu
    | HTTP <br> Als u HTTP gebruikt (niet-veilige video levering), zorg ervoor u https in de waarde van de VideoDienst URL verandert u vroeger kopieerde. | `public/` |
    | HTTPS | `public-ssl/` |
 
-1. Kopieer het volledige pad naar video-elementen in AEM, zoals dit wordt verwerkt door Dynamic Media. U hebt dit gekopieerde pad naar video-elementen later in deze stappen nodig.
+1. Kopieer het volledige pad naar video-elementen in AEM, zoals verwerkt door Dynamic Media. U hebt dit gekopieerde pad naar video-elementen later in deze stappen nodig.
 
    Bijvoorbeeld:
 
@@ -199,8 +199,8 @@ Dynamische media ondersteunt de levering van statische elementen. Dit zijn aanvu
 
    `https://gateway-na.assetsadobe.com/DMGateway/public-ssl/demoCo/content/dam/marketing/MyVideo.mp4.m3u8`
 
-## Het gebruiken van HTTP/2 om uw Dynamische activa van Media te leveren {#using-http-to-deliver-your-dynamic-media-assets}
+## HTTP/2 gebruiken om uw Dynamic Media-elementen te leveren {#using-http-to-deliver-your-dynamic-media-assets}
 
-HTTP/2 is het nieuwe, bijgewerkte webprotocol dat de manier verbetert waarop browsers en servers communiceren. Het zorgt voor een snellere overdracht van informatie en vermindert de hoeveelheid verwerkingskracht die nodig is. De levering van dynamische media-elementen kan nu plaatsvinden via HTTP/2, wat betere responstijd en laadtijden biedt.
+HTTP/2 is het nieuwe, bijgewerkte webprotocol dat de manier verbetert waarop browsers en servers communiceren. Het zorgt voor een snellere overdracht van informatie en vermindert de hoeveelheid verwerkingskracht die nodig is. De levering van Dynamic Media-elementen kan nu plaatsvinden via HTTP/2, waardoor de respons- en laadtijden beter zijn.
 
-Zie [HTTP2 Levering van Inhoud](http2.md) voor volledige details over begonnen worden het gebruiken van HTTP/2 met uw Dynamische rekening van Media.
+Zie [HTTP2 Levering van Inhoud](http2.md) voor volledige details over begonnen worden het gebruiken van HTTP/2 met uw rekening van Dynamic Media.

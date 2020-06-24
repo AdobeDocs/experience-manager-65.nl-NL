@@ -1,6 +1,6 @@
 ---
 title: Regels gebruiken om URL's te transformeren
-description: U kunt regelsets implementeren in dynamische media om URL's te transformeren. Regelsets zijn instructiesets die in een scripttaal (zoals JavaScript) zijn geschreven en die XML-gegevens evalueren en bepaalde handelingen uitvoeren als die gegevens aan bepaalde voorwaarden voldoen.
+description: U kunt regelreeksen in Dynamic Media opstellen om URLs om te zetten. Regelsets zijn instructiesets die in een scripttaal (zoals JavaScript) zijn geschreven en die XML-gegevens evalueren en bepaalde handelingen uitvoeren als die gegevens aan bepaalde voorwaarden voldoen.
 uuid: 9fed0c83-67b7-4483-a9b4-322e6a483449
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -8,14 +8,17 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: abcff903-204b-4ab6-87d8-6f0ce63d7b41
 translation-type: tm+mt
-source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
+source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
+workflow-type: tm+mt
+source-wordcount: '757'
+ht-degree: 3%
 
 ---
 
 
 # Regelsets gebruiken om URL&#39;s te transformeren {#using-rulesets-to-transform-urls}
 
-U kunt regelsets implementeren in dynamische media om URL&#39;s te transformeren. Regelsets zijn instructiesets die in een scripttaal (zoals JavaScript) zijn geschreven en die XML-gegevens evalueren en bepaalde handelingen uitvoeren als die gegevens aan bepaalde voorwaarden voldoen. Elke regel bestaat uit ten minste één voorwaarde en ten minste één actie. Een regel evalueert de gegevens van XML tegen de voorwaarden, en als een voorwaarde wordt voldaan, dan neemt het de aangewezen actie. Voorbeelden van regelsets zijn:
+U kunt regelreeksen in Dynamic Media opstellen om URLs om te zetten. Regelsets zijn instructiesets die in een scripttaal (zoals JavaScript) zijn geschreven en die XML-gegevens evalueren en bepaalde handelingen uitvoeren als die gegevens aan bepaalde voorwaarden voldoen. Elke regel bestaat uit ten minste één voorwaarde en ten minste één actie. Een regel evalueert de gegevens van XML tegen de voorwaarden, en als een voorwaarde wordt voldaan, dan neemt het de aangewezen actie. Voorbeelden van regelsets zijn:
 
 * Een MIME-achtervoegsel toevoegen. Voor veel services en websites zijn afbeeldingsachtervoegsels vereist, zoals het toevoegen `.jpg` aan een URL.
 * Een mappad naar de URL maken voor SEO-doeleinden (Search Engine Optimization, optimalisatie van zoekprogramma&#39;s).
@@ -33,14 +36,14 @@ U kunt regelsets implementeren in dynamische media om URL&#39;s te transformeren
 
    Zie Speciale tekens [verwijderen uit URL&#39;s](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/remove-special-characters-urls.html).
 
-In de context van Dynamic Media kunnen websites die een op XML gebaseerd systeem gebruiken voor het beheer van elementgegevens, XML-bestanden uploaden naar Dynamic Media. U kunt een van deze bestanden aanwijzen als het bestand met de regelset voor voorbewerking voor het bedienen van de dynamische media-elementen. Dit dossier herstructureert het standaard URL protocolformaat om aan de bedrijfslogica van systemen te voldoen die met Dynamische Media worden geïntegreerd. U geeft een XML-bestand op dat moet dienen als pad naar het definitiebestand voor de regel.
+In de context van Dynamic Media kunnen websites die een op XML gebaseerd systeem gebruiken om elementinformatie te beheren XML-bestanden uploaden naar Dynamic Media. U kunt een van deze bestanden aanwijzen als het bestand met de regelset voor voorbewerking voor het bedienen van Dynamic Media-elementen. Dit dossier herstructureert het standaard URL protocolformaat om aan de bedrijfslogica van systemen te voldoen die met Dynamic Media worden geïntegreerd. U geeft een XML-bestand op dat moet dienen als pad naar het definitiebestand voor de regel.
 
 >[!CAUTION]
 >
->Wees voorzichtig bij het gebruik van linialen; kunnen voorkomen dat inhoud van dynamische media op uw website wordt weergegeven.
+>Wees voorzichtig bij het gebruik van linialen; ze kunnen voorkomen dat inhoud van Dynamic Media op uw website wordt weergegeven.
 
 Er zijn voorbeeldregels beschikbaar die u kunnen helpen uw eigen regels te maken.
-Zie [Referentie](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/c_rule_set_reference.html)regelset.
+Zie [Referentie](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference.html)regelset.
 
 Net als bij het maken van alle regelsets moet u ervoor zorgen dat uw XML-bestand geldig is voordat u het uploadt met een XML-validatieprogramma zoals xmlvalid.
 Zie ook de regelreeksen van het [Oplossen van problemen](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/scene7-ruleset-troubleshooting.html).
@@ -56,7 +59,7 @@ Zie ook &#39;element&#39; [gebruiken in plaats van &#39;is&#39;-afbeelding in ee
 
 **XML-regelsets implementeren:**
 
-1. Meld u aan bij uw Dynamic Media Classic-account:
+1. Meld u aan bij uw Klassieke account voor Dynamic Media:
 
    [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
@@ -64,22 +67,22 @@ Zie ook &#39;element&#39; [gebruiken in plaats van &#39;is&#39;-afbeelding in ee
 
 1. Upload het bestand met de regelset als volgt:
 
-   * Klik op **[!UICONTROL Uploaden]** op de algemene navigatiebalk.
-   * Klik in de linkerbovenhoek van de pagina **[!UICONTROL Uploaden]** op **[!UICONTROL Bladeren]**.
-   * Blader in het dialoogvenster **[!UICONTROL Openen]** naar het bestand met de regelset (XML).
-   * Selecteer het bestand en klik op **[!UICONTROL Openen]**.
-   * Selecteer rechts van de pagina **[!UICONTROL Uploaden]** een doelmap voor het bestand met regelsets.
-   * Controleer of onder aan de pagina de optie **[!UICONTROL Publiceren na uploaden]** is ingeschakeld.
-   * Klik in de rechterbenedenhoek van de pagina op **[!UICONTROL Uploaden]** verzenden.
-   * Klik op **[!UICONTROL Taken]** op de algemene navigatiebalk om de status van de uploadtaak te controleren. Wanneer de kolom **[!UICONTROL Status]** op de pagina **[!UICONTROL Taak]** aangeeft Uploaden voltooid, gaat u door met de volgende stappen.
+   * Klik op de algemene navigatiebalk **[!UICONTROL Upload]**.
+   * Klik op de **[!UICONTROL Upload]** pagina in de linkerbovenhoek **[!UICONTROL Browse]**.
+   * Blader in het **[!UICONTROL Open]** dialoogvenster naar het bestand met de regelset (XML).
+   * Selecteer het bestand en klik op **[!UICONTROL Open]**.
+   * On the right side of the **[!UICONTROL Upload]** page, select a destination folder for the rule set file.
+   * Controleer of onder aan de pagina **[!UICONTROL Publish After Uploading]** is ingeschakeld.
+   * In the bottom right corner of the page, click **[!UICONTROL Submit Upload]**.
+   * Klik op de algemene navigatiebalk om de status van de uploadtaak **[!UICONTROL Jobs]** te controleren. Ga door met de volgende stappen als de **[!UICONTROL Status]** kolom op de **[!UICONTROL Job]** pagina zegt: Uploaden voltooid.
 
-1. Klik op de navigatiebalk boven aan de pagina op **[!UICONTROL Instellingen > Toepassingsinstellingen > Publicatie-instelling > Afbeeldingsserver]**.
-1. Ga naar de pagina Publiceren **[!UICONTROL van]** afbeeldingsserver onder de groep **[!UICONTROL Catalog Management]** en zoek het pad **[!UICONTROL voor het]** regelsetdefinitiebestand en klik op **[!UICONTROL Selecteren]**.
-1. Op de **[!UICONTROL Uitgezochte pagina van het Dossier van de Definitie van de Reeks van de Regel (XML)]** , doorblader aan uw dossier van de regelreeks, dan in de laag-juiste hoek van de pagina, klik **[!UICONTROL Uitgezocht]**.
-1. Klik in de rechterbenedenhoek van de pagina Setup op **[!UICONTROL Sluiten]**.
+1. Klik op de navigatiebalk boven aan de pagina **[!UICONTROL Setup > Application Setup > Publish Setup > Image Server]**.
+1. Zoek op de pagina **[!UICONTROL Image Server Publish]** onder de groep **[!UICONTROL Catalog Management]** naar **[!UICONTROL Rule Set Definition File Path]** en klik vervolgens op **[!UICONTROL Select]**.
+1. Blader op de pagina **[!UICONTROL Select Rule Set Definition File (XML)]** naar het bestand met de regelset en klik vervolgens in de rechterbenedenhoek van de pagina op **[!UICONTROL Select]**.
+1. In the lower-right corner of the Setup page, click **[!UICONTROL Close]**.
 1. Voer een publicatietaak voor afbeeldingsservers uit.
 
-   De regelvastgestelde voorwaarden worden toegepast op de aanvragen voor de live dynamische mediafbeeldenservers.
+   De regelvastgestelde voorwaarden worden toegepast op de aanvragen voor de live Dynamic Media Image Servers.
 
    Als u wijzigingen aanbrengt in het bestand met de regelset, worden de wijzigingen direct toegepast wanneer u het bijgewerkte bestand met de regelset opnieuw uploadt en publiceert.
 

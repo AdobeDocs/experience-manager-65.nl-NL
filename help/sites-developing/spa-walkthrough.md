@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 0478afcb-b029-4ce6-b3e6-cee4bb5408ce
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 14cc66dfef7bc7781907bdd6093732912c064579
+source-git-commit: 307a1db2e5bbb72d730c89ba14f5ce02b96c108d
+workflow-type: tm+mt
+source-wordcount: '2000'
+ht-degree: 0%
 
 ---
 
@@ -38,7 +41,7 @@ De analyse is gebaseerd op standaard functionaliteit AEM en de steekproefWij.Ret
 
 * [AEM versie 6.4 met servicepack 2 of hoger
    ](/help/release-notes/sp-release-notes.md)
-* [Installeer de steekproefWij.Retail app van het Dagboek beschikbaar op GitHub hier.](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal)
+* [Installeer de steekproefWe.Retail app van het Dagboek beschikbaar op GitHub hier.](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal)
 
 >[!CAUTION]
 >
@@ -102,7 +105,7 @@ Wanneer een KUUROORD aan hefboomwerking de Redacteur van AEM SPA wordt gebouwd, 
 >De analyse is gebaseerd op standaard functionaliteit AEM en de steekproefWij.Retail app van het Dagboek. Aan de volgende eisen moet worden voldaan:
 >
 >* [AEM versie 6.4 met servicepack 2](/help/release-notes/sp-release-notes.md)
->* [Installeer de steekproefWij.Retail app van het Dagboek beschikbaar op GitHub hier.](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal)
+>* [Installeer de steekproefWe.Retail app van het Dagboek beschikbaar op GitHub hier.](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal)
 >
 
 
@@ -225,7 +228,7 @@ De volgende sectie, die een Toepassing [van het KUUROORD](/help/sites-developing
 
    ![screen_shot_2018-06-07at152636](assets/screen_shot_2018-06-07at152636.png)
 
-   De redacteur van AEM SPA hefboomwerkingen [AEM Inhoud](/help/assets/content-fragments.md) om de volledige inhoud van de pagina als model te leveren JSON.
+   De redacteur van AEM SPA hefboomwerkingen [AEM Inhoud](/help/assets/content-fragments/content-fragments.md) om de volledige inhoud van de pagina als model te leveren JSON.
 
    Door specifieke interfaces uit te voeren, verstrekken de Modellen van het Sling de informatie noodzakelijk aan SPA. De levering van de JSON-gegevens wordt naar beneden gedelegeerd aan elke component (van pagina, alinea, component, enz.).
 
@@ -275,7 +278,7 @@ In de volgende sectie zullen wij het contract onderzoeken dat de Redacteur van h
 
    >[!NOTE]
    >
-   >Dit is een gedragswijziging van gerenderde pagina&#39;s aan serverzijde in AEM, waar een `cq` element is ingevoegd voor elke bewerkbare component.
+   >Dit is een gedragswijziging van gerenderde pagina&#39;s aan serverzijde in AEM, waarbij voor elke bewerkbare component een `cq` element is ingevoegd.
    >
    >
    >Deze benadering in KUUROORD verwijdert de behoefte om douaneelementen te injecteren, die slechts een extra gegevensattribuut verlaten, makend de prijsverhoging voor de frontend ontwikkelaar eenvoudiger.

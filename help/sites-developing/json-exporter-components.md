@@ -10,7 +10,7 @@ topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: 448ad337-d4bb-4603-a27b-77da93feadbd
 translation-type: tm+mt
-source-git-commit: 10072609bc371b5f2dce425e90e583f14f96e371
+source-git-commit: a430c4de89bde3b907d342106465d3b5a7c75cc8
 workflow-type: tm+mt
 source-wordcount: '562'
 ht-degree: 3%
@@ -96,7 +96,7 @@ Zie voor meer informatie:
 
 * Het onderwerp [Inhoudsfragmenten in de gebruikershandleiding voor middelen](https://helpx.adobe.com/experience-manager/6-4/assets/user-guide.html?topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js)
 
-* [Modellen van contentfragmenten](/help/assets/content-fragments-models.md)
+* [Modellen van contentfragmenten](/help/assets/content-fragments/content-fragments-models.md)
 * [Ontwerpen met inhoudsfragmenten](/help/sites-authoring/content-fragments.md)
 * [JSON-exportfunctie voor services voor inhoud](/help/sites-developing/json-exporter.md)
 * [Kerncomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) en de component [Inhoudsfragment](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)

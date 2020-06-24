@@ -2,9 +2,12 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.5 Developing User Guide
+user-guide-title: AEM 6.5 Handboek voor het ontwikkelen van gebruikers
 translation-type: tm+mt
-source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+source-git-commit: 62be4d88f6ed3df68a77a4b61f7e113bdf03002d
+workflow-type: tm+mt
+source-wordcount: '821'
+ht-degree: 6%
 
 ---
 
@@ -13,7 +16,7 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
 
 + [Overzicht van de gebruikershandleiding voor ontwikkeling](home.md)
 + Inleiding voor ontwikkelaars{#introduction}
-   + [Aan de slag met het ontwikkelen van AEM-sites - WKND-zelfstudie](getting-started.md)
+   + [Aan de slag met het ontwikkelen van AEM Sites - WKND-zelfstudie](getting-started.md)
    + [AEM Core Concepts](the-basics.md)
    + [Structuur van de interface voor AEM-aanraking](touch-ui-structure.md)
    + [Concepten van de interface voor AEM-aanraakfuncties](touch-ui-concepts.md)
@@ -33,7 +36,7 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [Sling Cheatsheet](sling-cheatsheet.md)
    + [Sling Adapters gebruiken](sling-adapters.md)
    + [Tagbibliotheken](taglib.md)
-   + Templates{#templates}
+   + Sjablonen{#templates}
       + [Sjablonen](templates.md)
       + [Paginasjablonen - Bewerkbaar ](page-templates-editable.md)
       + [Paginasjablonen - statisch](page-templates-static.md)
@@ -66,7 +69,7 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
       + [eCommerce](ecommerce.md)
       + [Ontwikkelen (algemeen)](generic.md)
       + [Ontwikkelen met SAP Commerce Cloud](sap-commerce-cloud.md)
-+ Componenten{#components}
++ Onderdelen{#components}
    + [Kernonderdelen](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
    + [Stijlsysteem](/help/sites-authoring/style-system.md)
    + [Overzicht van componenten](components.md)
@@ -109,16 +112,16 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
       + [SPA-paginacomponent](spa-page-component.md)
       + [Dynamisch model aan Component Mapping voor SPAs](spa-dynamic-model-to-component-mapping.md)
       + [SPA Model Routing](spa-routing.md)
-      + [Integratie van SPA- en Adobe Experience Platform](spa-launch.md)
+      + [Integratie van SPA en Adobe Experience Platform starten](spa-launch.md)
       + [SPA en rendering op de server](spa-ssr.md)
       + [API-verwijzingen voor SPA Javascript](spa-reference-materials.md)
    + [HTTP-API](/help/assets/mac-api-assets.md)
-   + [Inhoudsfragmenten](/help/assets/content-fragments.md)
-   + [Ervaar fragmenten](/help/sites-authoring/experience-fragments.md)
+   + [Contentfragmenten](/help/assets/content-fragments/content-fragments.md)
+   + [Ervaringsfragmenten](/help/sites-authoring/experience-fragments.md)
    + [Inhoudsfragmenten en inhoudsservices in AEM](https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-content-services-feature-video-understand.html)
 + Ontwikkelingsinstrumenten{#devtools}
    + [Ontwikkelingsinstrumenten](dev-tools.md)
-   + [AEM-moderniseringsgereedschappen](modernization-tools.md)
+   + [AEM-moderniseringstools](modernization-tools.md)
    + [Dialoogvenster-editor](dialog-editor.md)
    + [Dialoogvenster omzetten](dialog-conversion.md)
    + [Ontwikkelen met CRXDE Lite](developing-with-crxde-lite.md)
@@ -150,7 +153,7 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [Pagina configureren voor Bulk bewerken van pagina-eigenschappen](bulk-editing.md)
    + [Inhoudsfragmenten aanpassen en uitbreiden](customizing-content-fragments.md)
    + [Inhoudsfragmenten die componenten voor rendering configureren](content-fragments-config-components-rendering.md)
-   + [Ervaar fragmenten](experience-fragments.md)
+   + [Ervaringsfragmenten](experience-fragments.md)
    + Werkstromen uitbreiden{#extending-workflows}
       + [Workflows ontwikkelen en uitbreiden](workflows.md)
       + [Workflowmodellen maken](workflows-models.md)
@@ -161,18 +164,18 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
       + [Referentie workflowproces](workflows-process-ref.md)
       + [Variabelen in AEM-workflows](/help/sites-developing/using-variables-in-aem-workflows.md)
    + [Het beheer van meerdere sites uitbreiden](extending-msm.md)
-   + Tracering en analyse{#extending-analytics}
+   + Tekstspatiëring en Analytics{#extending-analytics}
       + [Gebeurtenistracking uitbreiden](extending-analytics.md)
       + [Adobe Analytics-tracking toevoegen aan componenten](extending-analytics-components.md)
-      + [Het Adobe Analytics Framework aanpassen](extending-analytics-framework.md)
-      + [Serverpaginanamen voor analyse implementeren](extending-analytics-pa-naming.md)
+      + [Adobe Analytics Framework aanpassen](extending-analytics-framework.md)
+      + [Serverpaginanamen voor Analytics implementeren](extending-analytics-pa-naming.md)
    + Cloud Services{#extending-cloud-services}
-      + [Cloud Service Configurations](extending-cloud-config.md)
-      + [Een aangepaste Cloud-service maken](extending-cloud-config-custom-cloud.md)
+      + [Configuraties van Cloud Servicen](extending-cloud-config.md)
+      + [Een aangepaste Cloud Service maken](extending-cloud-config-custom-cloud.md)
    + [Aangepaste extensies maken](extending-campaign-extensions.md)
    + Formulieren{#extending-forms}
       + [Aangepaste formuliertoewijzingen maken](extending-campaign-form-mapping.md)
-      + [Aangepaste AEM-paginasjabloon maken met Adobe Campagne Form Components](extending-campaign-custom-template.md)
+      + [Aangepaste AEM-paginasjabloon maken met Adobe Campaign-formuliercomponenten](extending-campaign-custom-template.md)
       + [Analyse aanvragen](analyze-request.md)
    + [Services integreren met de JMX-console](jmx-integration.md)
    + [De Bulk-editor ontwikkelen](dev-bulk-editor.md)
@@ -193,7 +196,7 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [Controlelijsten](checklists.md)
    + [Dag](tough-day.md)
    + [Uw gebruikersinterface testen](hobbes.md)
-+ Aanbevolen werkwijzen{#bestpractices}
++ Best practices voor{#bestpractices}
    + [Overzicht van best practices](best-practices.md)
    + [AEM-ontwikkelingrichtlijnen en beste praktijken](dev-guidelines-bestpractices.md)
    + [Aanbevolen werkwijzen voor ontwikkeling](development-practices.md)

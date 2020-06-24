@@ -1,17 +1,20 @@
 ---
 title: Gebruikershandleiding voor AEM 6.5-formulieren
 seo-title: Gebruikershandleiding voor AEM 6.5-formulieren
-description: In deze handleiding worden alle taken van AEM Forms besproken, waaronder het maken, beheren, publiceren en bijwerken van digitale formulieren.
-seo-description: Omvat alle taken in AEM Forms, inclusief het maken, beheren, publiceren en bijwerken van digitale formulieren.
+description: Deze handleiding behandelt alle AEM Forms, waaronder het maken, beheren, publiceren en bijwerken van digitale formulieren.
+seo-description: Omvat alle AEM Forms, inclusief het maken, beheren, publiceren en bijwerken van digitale formulieren.
 translation-type: tm+mt
-source-git-commit: 23252989bb8649b2f0b96a58972c831257e0c5dc
+source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+workflow-type: tm+mt
+source-wordcount: '368'
+ht-degree: 17%
 
 ---
 
 
 # Gebruikershandleiding voor AEM 6.5-formulieren
 
-In deze handleiding worden alle taken van AEM Forms besproken, waaronder het maken, beheren, publiceren en bijwerken van digitale formulieren.
+Deze handleiding behandelt alle AEM Forms, waaronder het maken, beheren, publiceren en bijwerken van digitale formulieren.
 
 ## Belangrijke AEM-artikelen
 
@@ -24,8 +27,8 @@ In deze handleiding worden alle taken van AEM Forms besproken, waaronder het mak
 
 | Handboek | Beschrijving |
 |--- |---|
-| [Opmerkingen bij de release](/help/release-notes/home.md) | Verstrekt belangrijke informatie over de recentste versie van AEM, met inbegrip van wat nieuwe, gesteunde platforms is, verouderde en verwijderde eigenschappen, en bekende kwesties |
-| [Gebruikershandleiding voor middelen](/help/assets/home.md) | Leer hoe u digitale middelen maakt, beheert, levert en optimaliseert. |
+| [Release-opmerkingen](/help/release-notes/home.md) | Verstrekt belangrijke informatie over de recentste versie van AEM, met inbegrip van wat nieuwe, gesteunde platforms is, verouderde en verwijderde eigenschappen, en bekende kwesties |
+| [Handboek voor Assets](/help/assets/home.md) | Leer hoe u digitale middelen maakt, beheert, levert en optimaliseert. |
 | [Gebruikershandleiding voor formulieren](/help/forms/home.md) | In deze handleiding wordt beschreven hoe u digitale formulieren kunt maken, beheren, publiceren en bijwerken. |
 | [Gebruikersgids voor gemeenschappen](/help/communities/home.md) | Maak online ervaringen zoals forums, gebruikersgroepen, leermiddelen en andere sociale functies. |
 | [Beheerdershandleiding](/help/sites-administering/home.md) | Begrijp hoe te om AEM te beheren |
@@ -36,15 +39,15 @@ In deze handleiding worden alle taken van AEM Forms besproken, waaronder het mak
 | [Gebruikershandleiding ontwikkelen](/help/sites-developing/home.md) | Leer hoe u uw AEM-instantie kunt opbouwen. |
 | [Gebruikershandleiding beheren](/help/managing/home.md) | In deze handleiding wordt beschreven hoe u een AEM-project kunt beheren. |
 | [Mobiele gebruikershandleiding](/help/mobile/home.md) | In deze handleiding wordt beschreven hoe u inhoud voor mobiele toepassingen kunt maken en beheren. |
-| [AEM Livefyre](https://marketing.adobe.com/resources/help/en_US/livefyre/home.html) | In deze handleiding ziet u hoe u door de gebruiker gegenereerde inhoud kunt delen met LiveCycle. |
+| [AEM Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | In deze handleiding ziet u hoe u door de gebruiker gegenereerde inhoud kunt delen met LiveCycle. |
 
 ## Belangrijke AEM-bronnen
 
 * [AEM-zelfstudies](https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html)
-* [Gebruikershandleiding voor verzending](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)
+* [Dispatcher-gebruikershandleiding](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)
 * [HTML-gebruikershandleiding](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
 * [Gebruikershandleiding voor kerncomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
-* [GDPR gereedheid](/help/managing/data-protection-and-privacy.md)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&mv=other#solutions/experience-manager)
-* [AEM Community Forum](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
+* [Gereedheid voor GDPR (AVG)](/help/managing/data-protection-and-privacy.md)
+* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
+* [AEM-communityforum](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)

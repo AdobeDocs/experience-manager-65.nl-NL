@@ -3,23 +3,26 @@ title: Lijst met functies voor AEM Fluid Ervaring
 description: Lijst met functies voor dynamische ervaringen
 index: n
 translation-type: tm+mt
-source-git-commit: 378cdba999365083a2f585ad4f4ccd1c7ad7d4ce
+source-git-commit: 307a1db2e5bbb72d730c89ba14f5ce02b96c108d
+workflow-type: tm+mt
+source-wordcount: '350'
+ht-degree: 6%
 
 ---
 
 
 # Lijst met functies voor AEM Fluid Ervaring{#aem-fluid-experiences-feature-list}
 
-Adobe Experience Manager Fluid Experience maakt gebruik van de krachtige functiesets van AEM Sites, AEM Dynamic Media en AEM Assets om een robuuste oplossing te bieden voor het leveren van inhoud zonder kop.
+De Vloeiende Ervaring van de Adobe Experience Manager trekt uit de krachtige eigenschapreeksen van AEM Sites, Dynamic Media AEM, en AEM Assets om een robuuste oplossing voor hoofdloze inhoudslevering te verstrekken.
 
-AEM Fluid Experience onderscheidt zich van klassieke AEM in die zin dat alleen het gebruiksgeval zonder kop wordt aangepakt. Bij de [volledige oplossingen voor AEM-sites, -middelen en dynamische media is de krachtige ondersteuning van AEM beschikbaar voor hybride gebruiksscenario&#39;s.](https://docs.adobe.com/content/help/en/experience-manager-65/user-guide/home.html)
+AEM Fluid Experience onderscheidt zich van klassieke AEM in die zin dat alleen het gebruiksgeval zonder kop wordt aangepakt. Met de [volledige oplossingen voor AEM Sites, bedrijfsmiddelen en Dynamic Media is het mogelijk om inhoud te ontwerpen en te leveren en AEM&#39;s krachtige ondersteuning te bieden voor hybride gebruiksscenario&#39;s.](https://docs.adobe.com/content/help/en/experience-manager-65/user-guide/home.html)
 
 In de volgende tabellen worden de kenmerken van AEM Fluid Experience gedefinieerd en een koppeling naar de relevante ondersteuningsdocumentatie opgenomen.
 
 * [Bewaarplaats](#repository-features)
 * [Toegang, API&#39;s en levering](#access-api-and-delivery-features)
 * [Beheer en integratie](#admin-and-integration-features)
-* [Analyse en personalisatie](#analytics-and-personalization)
+* [Analytics en personalisatie](#analytics-and-personalization)
 
 >[!NOTE]
 >
@@ -45,7 +48,7 @@ In de volgende tabellen worden de kenmerken van AEM Fluid Experience gedefinieer
 |  |
 |---|
 | [HTTP-API](/help/assets/mac-api-assets.md) |
-| [Gestructureerde inhoudsmodellen](/help/assets/content-fragments.md) |
+| [Gestructureerde inhoudsmodellen](/help/assets/content-fragments/content-fragments.md) |
 | [Inhoudsservices](https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html) |
 | [Ervaar fragmenten](/help/sites-authoring/experience-fragments.md) |
 | HTTP API voor gestructureerde inhoud (lezen) |
@@ -69,12 +72,12 @@ In de volgende tabellen worden de kenmerken van AEM Fluid Experience gedefinieer
 | [Workflows](/help/sites-administering/workflows-starting.md) |
 | Connectiviteit (cloudservices) |
 
-## Analyse en personalisatie {#analytics-and-personalization}
+## Analytics en personalisatie {#analytics-and-personalization}
 
 |  |
 |---|
 | [Rapportering van activa](/help/assets/asset-reports.md) |
-| Verbeterde inzichten van Adobe Analytics |
+| Verbeterde inzichten aangedreven door Adobe Analytics |
 | Verbeterde inzichten aangedreven door Adobe Target |
 
 ## Meer informatie {#learn-more}

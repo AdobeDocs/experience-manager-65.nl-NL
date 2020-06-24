@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: a975ea2e-5e24-4a96-bd62-63bb98836ff2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0dc96f07e45ccbfea4edc87431677ada5b1bfa8c
+source-git-commit: a430c4de89bde3b907d342106465d3b5a7c75cc8
+workflow-type: tm+mt
+source-wordcount: '644'
+ht-degree: 4%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: 0dc96f07e45ccbfea4edc87431677ada5b1bfa8c
 
 >[!CAUTION]
 >
->[Inhoudsfragmentmodellen](/help/assets/content-fragments-models.md) worden nu aanbevolen voor het maken van al uw fragmenten.
+>[Inhoudsfragmentmodellen](/help/assets/content-fragments/content-fragments-models.md) worden nu aanbevolen voor het maken van al uw fragmenten.
 >
 >De fragmentmodellen van de inhoud worden gebruikt voor alle voorbeelden in Wij.Retail.
 
@@ -132,7 +135,7 @@ Meer details over de knopen en hun eigenschappen zijn:
     <tr>
      <td><code>precreateElements</code></td>
      <td><p><code>Boolean</code></p> <p>required</p> </td>
-     <td><p><code>true</code>, als de subelementen die de elementen (behalve het hoofdelement) van het inhoudsfragment vertegenwoordigen, moeten worden gemaakt wanneer het inhoudsfragment wordt gemaakt; <em>false</em> als deze 'onderweg' moeten worden gemaakt.</p> <p><strong>Opmerking</strong>: momenteel moet deze parameter worden ingesteld op <code>true</code>.</p> </td>
+     <td><p><code>true</code>, als de subelementen die de elementen (behalve het hoofdelement) van het inhoudsfragment vertegenwoordigen, moeten worden gemaakt wanneer het inhoudsfragment wordt gemaakt; <em>false</em> als deze 'op de vlucht' moeten worden gemaakt.</p> <p><strong>Opmerking</strong>: momenteel moet deze parameter worden ingesteld op <code>true</code>.</p> </td>
     </tr>
     <tr>
      <td><code>version</code></td>

@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: f50150af-deff-4c29-bfe0-1cfc67b29d51
 translation-type: tm+mt
-source-git-commit: 5597fb39500ac1f85d03263bfa1e5239d35d2a2c
+source-git-commit: 307a1db2e5bbb72d730c89ba14f5ce02b96c108d
+workflow-type: tm+mt
+source-wordcount: '779'
+ht-degree: 3%
 
 ---
 
@@ -19,13 +22,13 @@ source-git-commit: 5597fb39500ac1f85d03263bfa1e5239d35d2a2c
 
 ## Inleiding {#introduction}
 
-We.Retail is een referentie-implementatie en voorbeeldinhoud die de aanbevolen manier illustreren om een online aanwezigheid in te stellen met Adobe Experience Manager.
+Wij.Retail is een referentie-implementatie en voorbeeldinhoud die de aanbevolen manier illustreren om een online aanwezigheid met Adobe Experience Manager in te stellen.
 
 Wij.Retail maakt gebruik van de nieuwste AEM-technologieën, zoals HTML, responsieve lay-outs, bewerkbare sjablonen, kerncomponenten en nog veel meer.
 
 Hoewel het een verticale handelsversie illustreert, kan de manier waarop de site is ingesteld op elke verticale locatie worden toegepast en zijn alleen de productcatalogus en de winkelwagenfuncties specifiek voor de detailhandel.
 
-## Functies {#features}
+## Features {#features}
 
 Als standaard referentie-implementatie van AEM toont We.Retail enkele van de krachtigste functies van AEM.
 
@@ -38,8 +41,8 @@ Als standaard referentie-implementatie van AEM toont We.Retail enkele van de kra
 | [eCommerce-mogelijkheden](/help/sites-developing/ecommerce.md) | Functies van een productcatalogus |  |
 | [Communitysites](/help/communities/overview.md) | Bezoekers toestaan deel te nemen aan discussies binnen gemeenschappen, blogs lezen en nog veel meer |  |
 | [Kernonderdelen](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) | Alle componenten zijn gebaseerd op de nieuwe kerncomponenten en zijn bruikbaarder en gebruiker-configureerbaar uit-van-de-doos | [Probeer het!](/help/sites-developing/we-retail-core-components.md) |
-| [Inhoudsfragmenten](/help/assets/content-fragments.md) | In de sectie We.Retail-ervaringen wordt de kracht getoond van het hergebruiken van inhoud via inhoudsfragmenten. | [Probeer ze!](/help/sites-developing/we-retail-content-fragments.md) |
-| [Ervaar fragmenten](/help/sites-authoring/experience-fragments.md) | Een ervaringsfragment is een groep van een of meer componenten, inclusief inhoud en lay-out, waarnaar op pagina&#39;s kan worden verwezen. | [Probeer ze!](/help/sites-developing/we-retail-experience-fragments.md) |
+| [Contentfragmenten](/help/assets/content-fragments/content-fragments.md) | In de sectie We.Retail-ervaringen wordt de kracht getoond van het hergebruiken van inhoud via inhoudsfragmenten. | [Probeer ze!](/help/sites-developing/we-retail-content-fragments.md) |
+| [Ervaringsfragmenten](/help/sites-authoring/experience-fragments.md) | Een ervaringsfragment is een groep van een of meer componenten, inclusief inhoud en lay-out, waarnaar op pagina&#39;s kan worden verwezen. | [Probeer ze!](/help/sites-developing/we-retail-experience-fragments.md) |
 
 ## Aan de slag {#getting-started}
 
@@ -55,7 +58,7 @@ We.Retail wordt geleverd als voorbeeldinhoud van AEM. Als u AEM wilt gebruiken, 
 
 ### Laatste versie {#latest-version}
 
-Hoewel wij.Retail wordt gedistribueerd met de AEM-release, kunnen updates van de inhoud en de bijbehorende functies na de release worden uitgevoerd. Daarom is het mogelijk om de recentste versie van GitHub [te](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases) downloaden en dan [upload](/help/sites-administering/package-manager.md#uploading-packages-from-your-file-system) en [installeer](/help/sites-administering/package-manager.md#installing-packages) het als pakket op uw instantie AEM.
+Hoewel We.Retail wordt gedistribueerd met de AEM-release, kunnen updates van de inhoud en de bijbehorende functies na de release worden uitgevoerd. Daarom is het mogelijk om de recentste versie van GitHub [te](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases) downloaden en dan [upload](/help/sites-administering/package-manager.md#uploading-packages-from-your-file-system) en [installeer](/help/sites-administering/package-manager.md#installing-packages) het als pakket op uw instantie AEM.
 
 ### Eerste stappen {#first-steps}
 
@@ -80,8 +83,8 @@ De volgende lijst geeft een overzicht van belangrijkste eigenschappen die in We.
 | **Functie** | **Wij.Detailhandel** | **Geometrixx** |
 |---|---|---|
 | Globale sitestructuur | Taalmasters worden live gekopieerd naar landspecifieke sites | Niet beschikbaar |
-| Inhoudsfragmenten | Beschikbaar | Niet beschikbaar |
-| Ervaar fragmenten | Beschikbaar | Niet beschikbaar |
+| Contentfragmenten | Beschikbaar | Niet beschikbaar |
+| Ervaringsfragmenten | Beschikbaar | Niet beschikbaar |
 | Responsieve lay-out | Voor alle pagina&#39;s | Alleen Geometrixx-media |
 | Bewerkbare sjablonen | Voor alle pagina&#39;s | Niet beschikbaar |
 | HTL | Alle componenten | Beperkt |

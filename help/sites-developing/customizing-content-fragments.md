@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: d0770bee-4be5-4a6a-8415-70fdfd75015c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+source-git-commit: afed13a2f832b91d0df825d1075852cc84443646
+workflow-type: tm+mt
+source-wordcount: '2749'
+ht-degree: 0%
 
 ---
 
@@ -20,13 +23,13 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
 
 Een inhoudsfragment breidt een standaardelement uit; zie:
 
-* [Inhoudsfragmenten](/help/assets/content-fragments.md) en [paginascripts maken en beheren met inhoudsfragmenten](/help/sites-authoring/content-fragments.md) voor meer informatie over inhoudsfragmenten.
+* [Inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md) en [paginascripts maken en beheren met inhoudsfragmenten](/help/sites-authoring/content-fragments.md) voor meer informatie over inhoudsfragmenten.
 
 * [Elementen](/help/assets/managing-assets-touch-ui.md) beheren en Elementen [aanpassen en uitbreiden](/help/assets/extending-assets.md) voor meer informatie over standaardelementen.
 
 ## Architectuur {#architecture}
 
-De basisonderdelen [van een inhoudsfragment](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) zijn:
+De basisonderdelen [van een inhoudsfragment](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) zijn:
 
 * Een *inhoudsfragment,*
 * bestaande uit een of meer *inhoudselementen*;
@@ -36,11 +39,11 @@ Afhankelijk van het type fragment worden ook modellen of sjablonen gebruikt:
 
 >[!CAUTION]
 >
->[Inhoudsfragmentmodellen](/help/assets/content-fragments-models.md) worden nu aanbevolen voor het maken van al uw fragmenten.
+>[Inhoudsfragmentmodellen](/help/assets/content-fragments/content-fragments-models.md) worden nu aanbevolen voor het maken van al uw fragmenten.
 >
 >De fragmentmodellen van de inhoud worden gebruikt voor alle voorbeelden in Wij.Retail.
 
-* Modellen van inhoudsfragmenten:
+* Modellen van contentfragmenten:
 
    * Wordt gebruikt voor het definiëren van inhoudsfragmenten die gestructureerde inhoud bevatten.
    * Inhoudsfragmentmodellen definiëren de structuur van een inhoudsfragment wanneer dit wordt gemaakt.
@@ -62,7 +65,7 @@ Afhankelijk van het type fragment worden ook modellen of sjablonen gebruikt:
 
 ### Integratie met middelen {#integration-with-assets}
 
-CFM (Content Fragment Management) maakt als volgt deel uit van AEM Assets:
+CFM (Content Fragment Management) maakt deel uit van AEM Assets als:
 
 * Inhoudsfragmenten zijn elementen.
 * Ze gebruiken de bestaande functionaliteit Elementen.
@@ -79,7 +82,8 @@ Inhoudsfragmenten met gestructureerde inhoud (d.w.z. gebaseerd op een inhoudsfra
    * De elementgegevens worden opgeslagen onder het hoofdsubknooppunt:
       `jcr:content/data/master`
 
-   * Variaties worden opgeslagen onder een subknooppunt met de naam van de variatie:bijv. `jcr:content/data/myvariation`
+   * Variaties worden opgeslagen onder een subknooppunt met de naam van de variatie:
+bijv. `jcr:content/data/myvariation`
 
    * De gegevens van elk element worden in het desbetreffende subknooppunt opgeslagen als een eigenschap met de elementnaam:
 De inhoud van het element `text` wordt bijvoorbeeld opgeslagen als eigenschap `text` op `jcr:content/data/master`
@@ -110,7 +114,7 @@ Net als bij standaardelementen wordt een inhoudsfragment opgeslagen onder:
 
 #### Elementmachtigingen {#asset-permissions}
 
-Zie [Inhoudsfragment - Overwegingen](/help/assets/content-fragments-delete.md)verwijderen voor meer informatie.
+Zie [Inhoudsfragment - Overwegingen](/help/assets/content-fragments/content-fragments-delete.md)verwijderen voor meer informatie.
 
 #### Functieintegratie {#feature-integration}
 
@@ -179,7 +183,7 @@ Er zijn nog enkele richtlijnen die u moet volgen om ervoor te zorgen dat de comp
 
 * Als het fragment voor `displayMode` == `singleText` (impliciet of expliciet) wordt gerenderd, worden de volgende aanvullende eigenschappen in spel gezet:
 
-   * `paragraphScope` definieert of alle alinea&#39;s, of alleen een reeks alinea&#39;s, moeten worden gerenderd (waarden: `all` vs. `range`)
+   * `paragraphScope` definieert of alle alinea&#39;s, of alleen een reeks alinea&#39;s, moeten worden gerenderd (waarden: `all` vs `range`)
 
    * if `paragraphScope` == `range` `paragraphRange` , definieert de eigenschap het bereik van alinea&#39;s die moeten worden gerenderd
 
@@ -399,7 +403,7 @@ Zie het volgende:
 
 ## Sessies bewerken {#edit-sessions}
 
-Er wordt een bewerkingssessie gestart wanneer de gebruiker een inhoudsfragment in een van de editorpagina&#39;s opent. De bewerkingssessie is voltooid wanneer de gebruiker de editor verlaat door **Opslaan** of **Annuleren** te selecteren.
+Er wordt een bewerkingssessie gestart wanneer de gebruiker een inhoudsfragment opent in een van de editorpagina&#39;s. De bewerkingssessie is voltooid wanneer de gebruiker de editor verlaat door **Opslaan** of **Annuleren** te selecteren.
 
 ### Vereisten {#requirements}
 

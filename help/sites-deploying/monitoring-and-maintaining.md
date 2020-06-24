@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4244ebbe8ceb3bef8d47e1e32817edbd11db4d9a
+source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
+workflow-type: tm+mt
+source-wordcount: '5899'
+ht-degree: 0%
 
 ---
 
@@ -158,7 +161,7 @@ In het volgende voorbeeld:
 
 ## Werken met auditrecords en logbestanden {#working-with-audit-records-and-log-files}
 
-U kunt op verschillende locaties auditrecords en logbestanden met betrekking tot Adobe Experience Manager (AEM) vinden. Hieronder vindt u een overzicht van waar u kunt vinden.
+Controles en logbestanden met betrekking tot Adobe Experience Manager (AEM) zijn op verschillende locaties te vinden. Hieronder vindt u een overzicht van waar u kunt vinden.
 
 ### Werken met logbestanden {#working-with-logs}
 
@@ -194,12 +197,14 @@ Moderatiehandelingen worden hier geregistreerd.
    * `error.log`
 Foutberichten (van verschillende ernst) worden hier geregistreerd.
 
-   * [ `ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/c_image_server_log.html)Dit logboek wordt slechts gebruikt als [!DNL Dynamic Media] wordt toegelaten. Het verstrekt statistieken en analytische informatie die voor het analyseren van gedrag van het interne proces ImageServer wordt gebruikt.
+   * [ `ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html)
+Dit logboek wordt slechts gebruikt als [!DNL Dynamic Media] wordt toegelaten. Het verstrekt statistieken en analytische informatie die voor het analyseren van gedrag van het interne proces ImageServer wordt gebruikt.
 
    * `request.log`
 Elk toegangsverzoek wordt hier geregistreerd samen met de reactie.
 
-   * [ `s7access-<yyyy>-<mm>-<dd>.log`](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/c_Access_Log.html)Dit logboek wordt slechts gebruikt als [!DNL Dynamic Media] wordt toegelaten. Het s7access logboek registreert elk verzoek aan [!DNL Dynamic Media] door `/is/image` en `/is/content`.
+   * [ `s7access-<yyyy>-<mm>-<dd>.log`](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
+Dit logboek wordt slechts gebruikt als [!DNL Dynamic Media] wordt toegelaten. Het s7access logboek registreert elk verzoek aan [!DNL Dynamic Media] door `/is/image` en `/is/content`.
 
    * `stderr.log`
 Bevat foutberichten, opnieuw van verschillende niveaus van ernst, die tijdens het opstarten worden gegenereerd. Standaard is het logniveau ingesteld op `Warning` ( `WARN`)
@@ -244,7 +249,7 @@ De logniveaus zijn als volgt:
 ### Een aangepast logbestand maken {#create-a-custom-log-file}
 
 >[!NOTE]
-Wanneer u met Adobe Experience Manager werkt, zijn er verschillende methoden om de configuratie-instellingen voor dergelijke services te beheren. zie het [Vormen OSGi](/help/sites-deploying/configuring-osgi.md) voor meer details en de geadviseerde praktijken.
+Wanneer het werken met Adobe Experience Manager zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie het [Vormen OSGi](/help/sites-deploying/configuring-osgi.md) voor meer details en de geadviseerde praktijken.
 
 In bepaalde omstandigheden wilt u mogelijk een aangepast logbestand met een ander logniveau maken. U kunt dit in de repository doen door:
 
@@ -255,7 +260,7 @@ In bepaalde omstandigheden wilt u mogelijk een aangepast logbestand met een ande
 
       Waar `<*identifier*>` wordt vervangen door vrije tekst die u (moet) invoeren om het exemplaar te identificeren (u kunt deze informatie niet weglaten).
 
-      Bijvoorbeeld: `org.apache.sling.commons.log.LogManager.factory.config-MINE`
+      Bijvoorbeeld, `org.apache.sling.commons.log.LogManager.factory.config-MINE`
 
    * Type: `sling:OsgiConfig`
    >[!NOTE]
@@ -326,9 +331,9 @@ In bepaalde omstandigheden wilt u mogelijk een aangepast logbestand met een ande
 
    Onder `/apps/<*project-name*>/config`, creeer een knoop voor de nieuwe [Configuratie](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingwriterconfigurationfactoryconfiguration)van de Schrijver van het Registreren van de Sling van Apache:
 
-   * Naam: `org.apache.sling.commons.log.LogManager.factory.writer-<*identifier*>` (aangezien dit een schrijver is)
+   * Naam: `org.apache.sling.commons.log.LogManager.factory.writer-<*identifier*>` (omdat dit een schrijver is)
 
-      Net als bij Logger, `<*identifier*>` wordt vervangen door vrije tekst die u (moet) ingaan om de instantie te identificeren (u kunt deze informatie niet weglaten). Bijvoorbeeld: `org.apache.sling.commons.log.LogManager.factory.writer-MINE`
+      Net als bij Logger, `<*identifier*>` wordt vervangen door vrije tekst die u (moet) ingaan om de instantie te identificeren (u kunt deze informatie niet weglaten). Bijvoorbeeld, `org.apache.sling.commons.log.LogManager.factory.writer-MINE`
 
    * Type: `sling:OsgiConfig`
    >[!NOTE]
@@ -535,17 +540,17 @@ Sommige hiervan zijn afhankelijk van uw besturingssysteem.
    <td><p>Voeg het volgende toe:<br /> <code>-XX:+HeapDumpOnOutOfMemoryError</code><br /> optie voor de Java-oproep aan AEM.</p> <p>Raadpleeg de <a href="https://java.sun.com/javase/6/webnotes/trouble/TSG-VM/html/clopts.html#gbzrr">handleiding voor probleemoplossing voor Java SE 6 met HotSpot VM</a>.</p> </td>
   </tr>
   <tr>
-   <td>System calls</td>
+   <td>Systeemaanroepen</td>
    <td>Problemen met timing vaststellen.</td>
-   <td><p>Calls to <code>System.currentTimeMillis()</code> or <code>com.day.util</code>.Timing are used to generate timestamps from your code, or via <a href="#html-comments">HTML-comments</a>.</p> <p><strong>Opmerking:</strong> Deze moeten zo worden geïmplementeerd dat ze indien nodig kunnen worden geactiveerd/gedeactiveerd; wanneer een systeem soepel functioneert , zal de overhead van het verzamelen van statistieken niet nodig zijn .</p> </td>
+   <td><p>De vraag aan <code>System.currentTimeMillis()</code> of <code>com.day.util</code>.Timing wordt gebruikt om timestamps van uw code, of via <a href="#html-comments">HTML-commentaren</a>te produceren.</p> <p><strong>Opmerking:</strong> Deze moeten zo worden geïmplementeerd dat ze indien nodig kunnen worden geactiveerd/gedeactiveerd; wanneer een systeem soepel functioneert , zal de overhead van het verzamelen van statistieken niet nodig zijn .</p> </td>
   </tr>
   <tr>
    <td>Apache Bench</td>
    <td>Identificeer geheugenlekken, selectief analyseer reactietijd.</td>
-   <td><p>basic usage is:</p> <p><code>ab -k -n &lt;<em>requests</em>&gt; -c &lt;<em>concurrency</em>&gt; &lt;<em>url</em>&gt;</code></p> <p>Zie <a href="#apache-bench">Apache Bench</a> en de pagina <a href="https://httpd.apache.org/docs/2.2/programs/ab.html"></a> Ab man voor meer informatie.</p> </td>
+   <td><p>basisgebruik is:</p> <p><code>ab -k -n &lt;<em>requests</em>&gt; -c &lt;<em>concurrency</em>&gt; &lt;<em>url</em>&gt;</code></p> <p>Zie <a href="#apache-bench">Apache Bench</a> en de pagina <a href="https://httpd.apache.org/docs/2.2/programs/ab.html"></a> Ab man voor meer informatie.</p> </td>
   </tr>
   <tr>
-   <td>Search Analysis</td>
+   <td>Zoekanalyse</td>
    <td> </td>
    <td>Zoekopdrachten offline uitvoeren, reactietijd van query identificeren, testen en resultaatset bevestigen.<br /> </td>
   </tr>
@@ -556,17 +561,17 @@ Sommige hiervan zijn afhankelijk van uw besturingssysteem.
   </tr>
   <tr>
    <td>JProfiler</td>
-   <td>In-depth CPU and memory profiling.</td>
+   <td>Uitgebreide CPU- en geheugenprofilering.</td>
    <td><a href="https://www.ej-technologies.com/">https://www.ej-technologies.com/</a></td>
   </tr>
   <tr>
    <td>JConsole</td>
-   <td>Observe JVM metrics and threads.</td>
+   <td>Bekijk JVM-metriek en -threads.</td>
    <td><p>Gebruik: jconsole</p> <p>Zie <a href="https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html">jconsole</a> en <a href="#monitoring-performance-using-jconsole">Monitoring Prestaties met behulp van JConsole</a>.</p> <p><strong>Opmerking:</strong> Met JDK 1.6 is JConsole uitbreidbaar met plug-ins. bijvoorbeeld Top of TDA (Thread Dump Analyzer).</p> </td>
   </tr>
   <tr>
    <td>Java VisualVM</td>
-   <td>Observe JVM metrics, threads, memory and profiling.</td>
+   <td>Bekijk JVM-metriek, threads, geheugen en profilering.</td>
    <td><p>Gebruik: jvisualvm of visualvm<br /> </p> <p>Zie <a href="https://java.sun.com/javase/6/docs/technotes/tools/share/jvisualvm.html">jvisualvm</a>, <a href="https://visualvm.dev.java.net/">visualvm</a> en de Prestaties van de <a href="#monitoring-performance-using-j-visualvm">Controle gebruikend (J)VisualVM</a>.</p> <p><strong>Opmerking:</strong> Met JDK 1.6, is VisualVM verlengbaar met stop-ins.</p> </td>
   </tr>
   <tr>
@@ -872,7 +877,7 @@ De volgende informatie kan nuttig zijn:
 * [Hoeveel pagina&#39;s handhaaft u momenteel op dit systeem?](#how-many-pages-do-you-currently-maintain-on-this-system)
 * [Als u MSM gebruikt, wat is het gemiddelde aantal rollouts per maand?](#if-you-use-msm-what-is-the-average-number-of-rollouts-per-month)
 * [Wat is het gemiddelde aantal levende exemplaren per maand?](#what-is-the-average-number-of-live-copies-per-month)
-* [Als u AEM-middelen gebruikt, hoeveel middelen houdt u momenteel aan in Middelen?](#ifyouusecqdamhowmanyassetsdoyoucurrentlymaintainincqdam)
+* [Als u AEM Assets gebruikt, hoeveel middelen handhaaft u momenteel in Middelen?](#ifyouusecqdamhowmanyassetsdoyoucurrentlymaintainincqdam)
 * [Wat is de gemiddelde omvang van de activa?](#what-is-the-average-size-of-the-assets)
 * [Hoeveel sjablonen worden momenteel gebruikt?](#how-many-templates-are-currently-used)
 * [Hoeveel componenten worden momenteel gebruikt?](#how-many-components-are-currently-used)
@@ -898,11 +903,11 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 
 Om het totale aantal paginanavigaties te zien sinds de serverinstallatie een dataopslagvraag gebruikt; via CRXDE - Hulpmiddelen - Vraag:
 
-* **Type**`XPath`
+* **Type** `XPath`
 
-* **Pad**`/`
+* **Pad** `/`
 
-* **Query**`//element(*, cq:AuditEvent)[@cq:type='Activate']`
+* **Query** `//element(*, cq:AuditEvent)[@cq:type='Activate']`
 
 Bereken vervolgens het aantal dagen dat is verstreken sinds de installatie om het gemiddelde te berekenen.
 
@@ -910,21 +915,21 @@ Bereken vervolgens het aantal dagen dat is verstreken sinds de installatie om he
 
 Om het aantal pagina&#39;s momenteel op de server te zien gebruik een bewaarplaatvraag; via CRXDE - Hulpmiddelen - Vraag:
 
-* **Type**`XPath`
+* **Type** `XPath`
 
-* **Pad**`/`
+* **Pad** `/`
 
-* **Query**`//element(*, cq:Page)`
+* **Query** `//element(*, cq:Page)`
 
 #### Als u MSM gebruikt, wat is het gemiddelde aantal rollouts per maand? {#if-you-use-msm-what-is-the-average-number-of-rollouts-per-month}
 
 Om het totale aantal rollouts sinds installatie te bepalen gebruik een bewaarplaatvraag; via CRXDE - Hulpmiddelen - Vraag:
 
-* **Type**`XPath`
+* **Type** `XPath`
 
-* **Pad**`/`
+* **Pad** `/`
 
-* **Query**`//element(*, cq:AuditEvent)[@cq:type='PageRolledOut']`
+* **Query** `//element(*, cq:AuditEvent)[@cq:type='PageRolledOut']`
 
 Bereken het aantal maanden dat is verstreken sinds de installatie om het gemiddelde te berekenen.
 
@@ -932,21 +937,21 @@ Bereken het aantal maanden dat is verstreken sinds de installatie om het gemidde
 
 Om het totale aantal Actieve Kopieën te bepalen die sinds installatie worden gemaakt gebruikt een bewaarplaatvraag; via CRXDE - Hulpmiddelen - Vraag:
 
-* **Type**`XPath`
+* **Type** `XPath`
 
-* **Pad**`/`
+* **Pad** `/`
 
-* **Query**`//element(*, cq:LiveSyncConfig)`
+* **Query** `//element(*, cq:LiveSyncConfig)`
 
 Gebruik opnieuw het aantal maanden dat sinds installatie is verstreken om het gemiddelde te berekenen.
 
-#### Als u AEM-middelen gebruikt, hoeveel middelen houdt u momenteel aan in Middelen? {#if-you-use-aem-assets-how-many-assets-do-you-currently-maintain-in-assets}
+#### Als u AEM Assets gebruikt, hoeveel middelen handhaaft u momenteel in Middelen? {#if-you-use-aem-assets-how-many-assets-do-you-currently-maintain-in-assets}
 
-Als u wilt zien hoeveel DAM-elementen u momenteel beheert, gebruikt u een query voor de opslagplaats. via CRXDE - Hulpmiddelen - Vraag:
+Als u wilt zien hoeveel DAM-middelen u momenteel beheert, gebruikt u een query voor de opslagplaats. via CRXDE - Hulpmiddelen - Vraag:
 
-* **Type**`XPath`
-* **Pad**`/`
-* **Query**`/jcr:root/content/dam//element(*, dam:Asset)`
+* **Type** `XPath`
+* **Pad** `/`
+* **Query** `/jcr:root/content/dam//element(*, dam:Asset)`
 
 #### Wat is de gemiddelde omvang van de activa? {#what-is-the-average-size-of-the-assets}
 
@@ -967,17 +972,17 @@ De totale grootte van de `/var/dam` map bepalen:
 
 Om het aantal malplaatjes momenteel op de server te zien gebruik een bewaarplaatvraag; via CRXDE - Hulpmiddelen - Vraag:
 
-* **Type**`XPath`
-* **Pad**`/`
-* **Query**`//element(*, cq:Template)`
+* **Type** `XPath`
+* **Pad** `/`
+* **Query** `//element(*, cq:Template)`
 
 #### Hoeveel componenten worden momenteel gebruikt? {#how-many-components-are-currently-used}
 
 Om het aantal componenten te zien momenteel op de server gebruik een bewaarplaatvraag; via CRXDE - Hulpmiddelen - Vraag:
 
-* **Type**`XPath`
-* **Pad**`/`
-* **Query**`//element(*, cq:Component)`
+* **Type** `XPath`
+* **Pad** `/`
+* **Query** `//element(*, cq:Component)`
 
 #### Hoeveel verzoeken hebt u per uur op het auteurssysteem op piektijd? {#how-many-requests-per-hour-do-you-have-on-the-author-system-at-peak-time}
 
@@ -1012,7 +1017,7 @@ Zie ook de volgende artikelen voor meer informatie:
 * [Draad-dumpen](https://helpx.adobe.com/experience-manager/kb/TakeThreadDump.html)
 * [Geheugenproblemen analyseren](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html)
 * [Analyseren met ingebouwde analyse](https://helpx.adobe.com/experience-manager/kb/AnalyzeUsingBuiltInProfiler.html)
-* [Analyze slow and blocked processes](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
+* [Langzame en geblokkeerde processen analyseren](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
 
 
 
@@ -1034,8 +1039,8 @@ Als er onvoldoende geheugen beschikbaar is voor uw systeem, is dit op verschille
 
 Controleer in deze gevallen:
 
-* The JVM settings used to [start AEM](/help/sites-deploying/deploy.md#getting-started)
-* The Knowledge Base:
+* De JVM-instellingen die worden gebruikt om AEM te [starten](/help/sites-deploying/deploy.md#getting-started)
+* De Knowledge Base:
 
    * [Geheugenproblemen analyseren](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html)
 
@@ -1049,8 +1054,8 @@ Als er onvoldoende schijfruimte beschikbaar is op uw systeem of als u merkt dat 
    * [Apache Sling Java Script Handler](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjavascripthandler)
    * [Configuratie van Apache Sling-logboekregistratie](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)
    * [HTML-bibliotheekbeheer CQ](/help/sites-deploying/osgi-configuration-settings.md#daycqhtmllibrarymanager)
-   * [CQ WCM Debug Filter](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
-   * [Loggers](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level)[](/help/sites-deploying/configuring.md#loggersandwritersforindividualservices)
+   * [CQ WCM-foutopsporingsfilter](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
+   * [Logboeken](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level) [](/help/sites-deploying/configuring.md#loggersandwritersforindividualservices)
 
 * Of en hoe u [Versie het Zuiveren hebt gevormd](/help/sites-deploying/version-purging.md)
 * De Knowledge Base:
@@ -1060,18 +1065,18 @@ Als er onvoldoende schijfruimte beschikbaar is op uw systeem of als u merkt dat 
 
 ### Reguliere prestatievermindering {#regular-performance-degradation}
 
-If you see the performance of your instance deteriorating after each reboot (sometimes a week or more later), then the following can be checked:
+Als u ziet dat de prestaties van uw instantie achteruitgaan nadat u opnieuw hebt opgestart (soms een week of meer later), kunt u het volgende controleren:
 
 * [Onvoldoende geheugen](#outofmemory)
 * De Knowledge Base:
 
-   * [Unclosed Sessions](https://helpx.adobe.com/experience-manager/kb/AnalyzeUnclosedSessions.html)
+   * [Niet-gesloten sessies](https://helpx.adobe.com/experience-manager/kb/AnalyzeUnclosedSessions.html)
 
 ### JVM-tuning {#jvm-tuning}
 
-De JVM (Java Virtual Machine) is aanzienlijk verbeterd op het gebied van tuning (vooral sinds Java 7). Because of this, specifying a reasonable fixed JVM size and using the defaults will often be suitable.
+De JVM (Java Virtual Machine) is aanzienlijk verbeterd op het gebied van tuning (vooral sinds Java 7). Daarom is het vaak handig om een redelijke, vaste JVM-grootte op te geven en de standaardinstellingen te gebruiken.
 
-If the default settings are not suitable, then it is important to establish a method to monitor and assess GC performance before attempting to tune the JVM; this can involve monitoring factors including, heap size, algorithm and other aspects.
+Als de standaardinstellingen niet geschikt zijn, is het belangrijk een methode vast te stellen om de GC-prestaties te controleren en te beoordelen voordat wordt geprobeerd de JVM af te stemmen. dit kan bestaan uit monitoringfactoren zoals heapgrootte , algoritme en andere aspecten .
 
 Enkele algemene keuzen zijn:
 

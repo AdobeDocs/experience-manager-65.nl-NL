@@ -10,14 +10,17 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: d2decc31-a04b-4a8e-bb19-65f21cf7107e
 translation-type: tm+mt
-source-git-commit: 48fd5ddb386d69795291e560fa7b21da6edf5979
+source-git-commit: 8f1a1beb9aa64b1d2ea5eda0bec3ca6e99c2ddcc
+workflow-type: tm+mt
+source-wordcount: '929'
+ht-degree: 1%
 
 ---
 
 
 # Vertaalprojecten maken voor inhoudsfragmenten {#creating-translation-projects-for-content-fragments}
 
-Naast elementen ondersteunt AEM-middelen (Adobe Experience Manager) workflows voor het kopiëren van talen voor [inhoudsfragmenten](content-fragments.md) (inclusief variaties). Er is geen extra optimalisatie vereist voor het uitvoeren van workflows voor het kopiëren van talen op inhoudsfragmenten. In elke werkstroom wordt het volledige inhoudsfragment verzonden voor vertaling.
+Naast elementen ondersteunt Adobe Experience Manager (AEM)-middelen workflows voor het kopiëren van talen voor [inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md) (inclusief variaties). Er is geen extra optimalisatie vereist voor het uitvoeren van workflows voor het kopiëren van talen op inhoudsfragmenten. In elke werkstroom wordt het volledige inhoudsfragment verzonden voor vertaling.
 
 De typen workflows die u op inhoudsfragmenten kunt uitvoeren, lijken precies op de typen werkstromen die u voor elementen uitvoert. Bovendien komen de opties die beschikbaar zijn binnen elk workflowtype overeen met de opties die beschikbaar zijn onder de corresponderende workflowtypen voor elementen.
 
@@ -56,20 +59,20 @@ Als het inhoudsfragment een verzameling bevat, worden de elementen in de verzame
 
 Als u inhoudsfragmenten met gemengde media wilt kunnen vertalen, bewerkt u eerst het standaardvertaalframework om de vertaling van inline-elementen en -verzamelingen met betrekking tot inhoudsfragmenten mogelijk te maken.
 
-1. Klik op of tik op het AEM-logo en navigeer naar **[!UICONTROL Extra > Implementatie > Cloud Services]**.
-1. Zoek de **[!UICONTROL vertaalintegratie]** onder **[!UICONTROL Adobe Marketing Cloud]** en klik/tik op **[!UICONTROL Configuraties]** tonen.
+1. Click/tap the AEM logo, and navigate to **[!UICONTROL Tools > Deployment > Cloud Services]**.
+1. Zoek **[!UICONTROL Translation Integration]** onder **[!UICONTROL Adobe Marketing Cloud]** en klik/tik op **[!UICONTROL Show Configurations]**.
 
    ![chlimage_1-444](assets/chlimage_1-444.png)
 
-1. Klik in de lijst met beschikbare configuraties op **[!UICONTROL Standaardconfiguratie (configuratie vertaalintegratie)]** of tik hierop om de pagina **[!UICONTROL Standaardconfiguratie]** te openen.
+1. Klik/tik in de lijst met beschikbare configuraties **[!UICONTROL Default configuration (Translation Integration configuration)]** om de **[!UICONTROL Default configuration]** pagina te openen.
 
    ![chlimage_1-445](assets/chlimage_1-445.png)
 
-1. Klik op **[!UICONTROL Bewerken]** op de werkbalk om het dialoogvenster **[!UICONTROL Vertaalconfiguratie]** weer te geven.
+1. Klik op **[!UICONTROL Edit]** de werkbalk om het **[!UICONTROL Translation Config]** dialoogvenster weer te geven.
 
    ![chlimage_1-446](assets/chlimage_1-446.png)
 
-1. Navigeer naar het tabblad **[!UICONTROL Middelen]** en kies **[!UICONTROL Inline-media-elementen en bijbehorende verzamelingen]** in de lijst Elementen **[!UICONTROL van]** inhoudsfragment omzetten. Klik op **[!UICONTROL OK]** of tik op OK om de wijzigingen op te slaan.
+1. Navigeer naar het **[!UICONTROL Assets]** tabblad en kies **[!UICONTROL Inline Media Assets and Associated Collections]** uit de **[!UICONTROL Translate Content Fragment Assets]** lijst. Klik of tik op **[!UICONTROL OK]** om de wijzigingen op te slaan.
 
    ![chlimage_1-447](assets/chlimage_1-447.png)
 
@@ -77,7 +80,7 @@ Als u inhoudsfragmenten met gemengde media wilt kunnen vertalen, bewerkt u eerst
 
    ![chlimage_1-448](assets/chlimage_1-448.png)
 
-1. Klik op het pictogram Element **** invoegen of tik erop.
+1. Klik op het **[!UICONTROL Insert Asset]** pictogram of tik erop.
 
    ![chlimage_1-449](assets/chlimage_1-449.png)
 
@@ -85,44 +88,44 @@ Als u inhoudsfragmenten met gemengde media wilt kunnen vertalen, bewerkt u eerst
 
    ![element invoegen in inhoudsfragment](assets/column-view.png)
 
-1. Klik op het pictogram **[!UICONTROL Inhoud]** koppelen of tik erop.
+1. Klik op het **[!UICONTROL Associate Content]** pictogram of tik erop.
 
    ![chlimage_1-451](assets/chlimage_1-451.png)
 
-1. Klik/tik op Inhoud **[!UICONTROL koppelen]**.
+1. Klik of tik op **[!UICONTROL Associate Content]**.
 
    ![chlimage_1-452](assets/chlimage_1-452.png)
 
-1. Selecteer een verzameling en neem deze op in het inhoudsfragment. Klik op **[!UICONTROL Opslaan]** of tik op Opslaan.
+1. Selecteer een verzameling en neem deze op in het inhoudsfragment. Klik of tik op **[!UICONTROL Save]**.
 
    ![chlimage_1-453](assets/chlimage_1-453.png)
 
-1. Selecteer het inhoudsfragment en klik/tik op het pictogram **[!UICONTROL GlobalNav]** .
-1. Selecteer **[!UICONTROL Verwijzingen]** in het menu om het deelvenster **[!UICONTROL Verwijzingen]** weer te geven.
+1. Selecteer het inhoudsfragment en klik/tik op het **[!UICONTROL GlobalNav]** pictogram.
+1. Selecteer een optie **[!UICONTROL References]** in het menu om het **[!UICONTROL References]** deelvenster weer te geven.
 
    ![chlimage_1-454](assets/chlimage_1-454.png)
 
-1. Klik/tik **[!UICONTROL Exemplaren]** van de Taal onder **[!UICONTROL Exemplaren]** om de taalexemplaren te tonen.
+1. Klik/tik **[!UICONTROL Language Copies]** onder **[!UICONTROL Copies]** om de taalexemplaren te tonen.
 
    ![chlimage_1-455](assets/chlimage_1-455.png)
 
-1. Klik op **[!UICONTROL Maken en vertalen]** onder in het deelvenster om het dialoogvenster **[!UICONTROL Maken en vertalen]** weer te geven.
+1. Klik/tik **[!UICONTROL Create & Translate]** van bij de bodem van het paneel om het **[!UICONTROL Create & Translate]** dialoog te tonen.
 
    ![chlimage_1-456](assets/chlimage_1-456.png)
 
-1. Selecteer de doeltaal in de lijst **[!UICONTROL Doeltalen]** .
+1. Selecteer de doeltaal in de **[!UICONTROL Target Languages]** lijst.
 
    ![chlimage_1-457](assets/chlimage_1-457.png)
 
-1. Selecteer het type vertaalproject in de lijst **[!UICONTROL Project]** .
+1. Selecteer het type vertaalproject in de **[!UICONTROL Project]** lijst.
 
    ![chlimage_1-458](assets/chlimage_1-458.png)
 
-1. Geef de titel van het project op in het vak **[!UICONTROL Projecttitel]** en klik of tik op **Maken**.
+1. Geef de titel van het project op in het **[!UICONTROL Project Title]** vak en klik op **Maken**.
 
    ![chlimage_1-459](assets/chlimage_1-459.png)
 
-1. Navigeer aan de console van **[!UICONTROL Projecten]** , en open de projectomslag voor het vertaalproject u creeerde.
+1. Navigeer aan de **[!UICONTROL Projects]** console, en open de projectomslag voor het vertaalproject u creeerde.
 
    ![chlimage_1-460](assets/chlimage_1-460.png)
 
@@ -131,9 +134,9 @@ Als u inhoudsfragmenten met gemengde media wilt kunnen vertalen, bewerkt u eerst
    ![chlimage_1-461](assets/chlimage_1-461.png)
 
 1. Verifieer vanuit de tegel Vertaaltaak het aantal te vertalen middelen.
-1. Start de vertaaltaak vanaf het **[!UICONTROL onderdeel Vertaaltaak]** .
+1. Start de vertaaltaak vanaf de **[!UICONTROL Translation Job]** tegel.
 
-   ![chlimage_1-461](assets/chlimage_1-462.png)
+   ![chlimage_1-462](assets/chlimage_1-462.png)
 
 1. Klik op de ovalen onder aan de tegel Vertaal-taak om de status van de vertaaltaak weer te geven.
 
@@ -155,7 +158,7 @@ Als u inhoudsfragmenten met gemengde media wilt kunnen vertalen, bewerkt u eerst
 
 1. Navigeer naar de elementen in de verzameling die samen met het inhoudsfragment zijn vertaald. Merk op dat de vertaalde exemplaren van de activa bij de aangewezen doeltaalwortel worden opgeslagen.
 
-   ![chlimage_1-468](assets/chlimage_1-467.png)
+   ![chlimage_1-467](assets/chlimage_1-467.png)
 
    >[!NOTE]
    >

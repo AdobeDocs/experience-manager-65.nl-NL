@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: managing-assets
 discoiquuid: e7b95732-a571-48e8-afad-612059cdbde7
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
 workflow-type: tm+mt
-source-wordcount: '2742'
+source-wordcount: '2731'
 ht-degree: 0%
 
 ---
@@ -154,7 +154,7 @@ In de HTML5- **[!UICONTROL Flyout]** component wordt het element weergegeven als
 >
 >Als de **[!UICONTROL Flyout]** component een aangepaste grootte gebruikt, wordt die aangepaste grootte gebruikt en wordt de responsieve instelling van de component uitgeschakeld.
 >
->Als de **[!UICONTROL Flyout]** component de standaardgrootte gebruikt, zoals in de **[!UICONTROL Design View]** component is ingesteld, wordt de standaardgrootte gebruikt en wordt de component uitgerekt om de paginalay-outgrootte aan te passen met responsieve instelling van de component ingeschakeld. Houd er echter rekening mee dat er een beperking geldt voor de responsieve installatie van de component. Wanneer u de **[!UICONTROL Flyout]** component met responsieve opstelling gebruikt, zou u het niet met volledige paginalrek moeten gebruiken. Anders **[!UICONTROL Flyout]** kan de pagina de rechterrand overschrijden.
+>Als de **[!UICONTROL Flyout]** component de standaardgrootte gebruikt, zoals in de **[!UICONTROL Design View]** component is ingesteld, wordt de standaardgrootte gebruikt en wordt de component uitgerekt om de paginalay-outgrootte aan te passen met responsieve instelling van de component ingeschakeld. Houd er echter rekening mee dat er een beperking geldt voor de responsieve instelling van de component. Wanneer u de **[!UICONTROL Flyout]** component met responsieve opstelling gebruikt, zou u het niet met volledige paginalrek moeten gebruiken. Anders **[!UICONTROL Flyout]** kan de pagina de rechterrand overschrijden.
 
 ![chlimage_1-228](assets/chlimage_1-228.png)
 
@@ -180,13 +180,13 @@ Met de Klassieke **[!UICONTROL Image]** component Dynamic Media kunt u Klassieke
 
 **[!UICONTROL Sharpening]** - Selecteer hoe u de afbeelding wilt verscherpen. Verscherpen wordt gedetailleerd uitgelegd in de aanbevolen werkwijzen [voor](/help/assets/managing-image-presets.md#image-preset-options) voorinstellingen van afbeeldingen en in de aanbevolen werkwijzen [voor](/help/assets/assets/s7_sharpening_images.pdf)Verscherpen.
 
-**[!UICONTROL URL Modifiers]** - U kunt afbeeldingseffecten wijzigen door extra opdrachten voor klassieke Dynamic Media op te geven. Deze worden beschreven in Voorinstellingen [](/help/assets/managing-image-presets.md) afbeelding en de [opdrachtverwijzing](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/c_command_reference.html).
+**[!UICONTROL URL Modifiers]** - U kunt afbeeldingseffecten wijzigen door extra opdrachten voor klassieke Dynamic Media op te geven. Deze worden beschreven in Voorinstellingen [](/help/assets/managing-image-presets.md) afbeelding en de [opdrachtverwijzing](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
 
 **[!UICONTROL Breakpoints]** - Als uw website reageert, wilt u de onderbrekingspunten aanpassen. Onderbrekingspunten moeten worden gescheiden door komma&#39;s ( , ).
 
 ### Afbeeldingssjabloon {#image-template}
 
-[Klassieke Dynamic Media-afbeeldingssjablonen](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) zijn gelaagde Photoshop-inhoud die is geïmporteerd naar Dynamic Media Classic, waar de parameters voor inhoud en eigenschappen werden bepaald op basis van variabiliteit. Met de **[!UICONTROL Image template]** component kunt u afbeeldingen importeren en de tekst dynamisch wijzigen in AEM. Bovendien kunt u de **[!UICONTROL Image template]** component vormen om waarden van cliëntcontext te gebruiken, zodat elke gebruiker het beeld op een gepersonaliseerde manier ervaart.
+[Klassieke Dynamic Media-afbeeldingssjablonen](https://docs.adobe.com/help/en/dynamic-media-classic/using/template-basics/quick-start-template-basics.html) zijn gelaagde Photoshop-inhoud die is geïmporteerd naar Dynamic Media Classic, waar de parameters voor inhoud en eigenschappen werden bepaald op basis van variabiliteit. Met de **[!UICONTROL Image template]** component kunt u afbeeldingen importeren en de tekst dynamisch wijzigen in AEM. Bovendien kunt u de **[!UICONTROL Image template]** component vormen om waarden van cliëntcontext te gebruiken, zodat elke gebruiker het beeld op een gepersonaliseerde manier ervaart.
 
 Tik **[!UICONTROL Edit]** om de component te configureren. U kunt [montages vormen gemeenschappelijk voor alle Dynamic Media Klassieke componenten](#settings-common-to-all-scene-components) evenals andere montages die in deze sectie worden beschreven.
 

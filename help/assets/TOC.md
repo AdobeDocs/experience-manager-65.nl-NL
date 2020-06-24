@@ -2,42 +2,42 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: Gebruikershandleiding voor Experience Manager 6.5-middelen
+user-guide-title: Handleiding voor Experience Manager 6.5-middelen
 translation-type: tm+mt
-source-git-commit: db60a7297defa2ed8e7f30f148d0f74a73a49893
+source-git-commit: d870e80e33c5ba36a43ff45ba2dc82551491bb18
 workflow-type: tm+mt
 source-wordcount: '645'
-ht-degree: 37%
+ht-degree: 38%
 
 ---
 
 
-# Gebruikershandleiding voor Experience Manager 6.5-middelen {#assets}
+# Handleiding voor Experience Manager 6.5-middelen {#assets}
 
 + [Gebruikershandleiding voor [!DNL Assets]](home.md)
 + [AEM 6.5 Opmerkingen bij de release van activa](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/assets.html)
 + [Informatie over DAM](assets.md)
 + [Aanbevolen procedures voor elementen](best-practices-for-assets.md)
-+ AEM-elementen gebruiken {#using}
-   + [Ervaring met de homepage van AEM Assets](assets-home-page.md)
++ AEM Assets gebruiken {#using}
+   + [Ervaring met homepage van AEM Assets](assets-home-page.md)
    + [Middelen zoeken in AEM](search-assets.md)
    + [Meertalige activa](multilingual-assets.md)
-   + [[!DNL Adobe Stock]-middelen gebruiken in AEM-middelen](aem-assets-adobe-stock.md)
+   + [[!DNL Adobe Stock]-middelen gebruiken in AEM Assets](aem-assets-adobe-stock.md)
    + [3D-elementen voorvertonen](previewing-3d-assets.md)
    + [Map-assets en verzamelingen controleren](bulk-approval.md)
    + [Activiteitsstroom in tijdlijn](activity-stream.md)
    + [Proceselementen](assets-workflow.md)
    + [Afbeeldingen met hyperlinks toevoegen](image-maps.md)
    + [Elementen hergebruiken met MSM](reuse-assets-using-msm.md)
-   + [Verbonden elementen met AEM-sites](use-assets-across-connected-assets-instances.md)
+   + [Verbonden elementen met AEM Sites](use-assets-across-connected-assets-instances.md)
 +  Dynamic Media {#dynamic}
    + [Dynamic Media-nieuwsbrief van Experience League](dynamic-media-newsletter.md)
    + [Dynamic Media instellen](administering-dynamic-media.md)
    + [Werken met Dynamic Media](dynamic-media.md)
-   + [Het vormen Dynamische Media - wijze Scene7](config-dms7.md)
-   + [Dynamische media configureren - hybride modus](config-dynamic.md)
-   + [Het oplossen van problemen Dynamische Media - wijze Scene7](troubleshoot-dms7.md)
-   + [Migreren van dynamische media - hybride modus naar dynamische media - S7-modus](migrate-from-hybrid-to-dms7.md)
+   + [Het vormen Dynamic Media - wijze Scene7](config-dms7.md)
+   + [Dynamic Media configureren - hybride modus](config-dynamic.md)
+   + [Het oplossen van problemen - Dynamic Media Scene7 wijze](troubleshoot-dms7.md)
+   + [Migreren van Dynamic Media - Hybride wijze aan Dynamic Media - S7 wijze](migrate-from-hybrid-to-dms7.md)
    + [Dynamic Media-assets beheren](managing-assets.md)
    + [Aanbevolen procedures voor een optimale kwaliteit van uw afbeeldingen](best-practices-for-optimizing-the-quality-of-your-images.md)
    + [Voorinstellingen voor Dynamic Media-viewer beheren](managing-viewer-presets.md)
@@ -57,7 +57,7 @@ ht-degree: 37%
    + [Panoramische afbeeldingen](panoramic-images.md)
    + [Mixed Media Sets](mixed-media-sets.md)
    + [Spin Sets](spin-sets.md)
-   + [Video in dynamische media](video.md)
+   + [Video in Dynamic Media](video.md)
    + [Carousel-banners](carousel-banners.md)
    + [Interactieve afbeeldingen](interactive-images.md)
    + [Interactieve video&#39;s](interactive-videos.md)
@@ -75,14 +75,14 @@ ht-degree: 37%
    + [Feature Pack 18912 installeren voor migratie van grote hoeveelheden bedrijfsmiddelen](bulk-ingest-migrate.md)
    + [Werken met kiezers](working-with-selectors.md)
 + Elementen uitbreiden {#extending}
-   + [AEM-middelen aanpassen en uitbreiden](extending-assets.md)
+   + [AEM Assets aanpassen en uitbreiden](extending-assets.md)
    + [Elementen verwerken met behulp van mediafuncties en workflows](media-handlers.md)
    + [Zoekfunctionaliteit uitbreiden](searchx.md)
-   + [[!DNL ImageMagick] installeren en configureren om met AEM-middelen te werken](best-practices-for-imagemagick.md)
+   + [[!DNL ImageMagick] installeren en configureren om met AEM Assets te werken](best-practices-for-imagemagick.md)
    + [Elementen integreren met activiteitsstroom](extending-activity-stream.md)
    + [Editor van element uitbreiden](asseteditorx.md)
    + [HTTP-API voor assets](mac-api-assets.md)
-   + [Ondersteuning voor contentfragmenten in AEM Assets HTTP API](assets-api-content-fragments.md)
+   + [Ondersteuning voor inhoudsfragmenten in HTTP-API voor AEM Assets](assets-api-content-fragments.md)
    + [Ontwikkeling van proxy&#39;s](proxy.md)
 + Elementen beheren {#administer}
    + [Ondersteunde bestandsindelingen](assets-formats.md)
@@ -131,14 +131,14 @@ ht-degree: 37%
    + [Mappen publiceren naar Brand Portal](brand-portal-publish-folder.md)
    + [Verzamelingen publiceren naar Brand Portal](brand-portal-publish-collection.md)
 + Contentfragmenten {#fragments}
-   + [Werken met contentfragmenten](content-fragments.md)
-   + [Contentfragmenten beheren](content-fragments-managing.md)
-   + [Modellen van contentfragmenten](content-fragments-models.md)
-   + [Variaties - Authoring van content voor fragmenten](content-fragments-variations.md)
-   + [Aan contentfragmenten gekoppelde content](content-fragments-assoc-content.md)
-   + [Metagegevens - Fragmenteigenschappen](content-fragments-metadata.md)
-   + [Contentfragmenten - Overwegingen verwijderen](content-fragments-delete.md)
-   + [Inhoudsfragmenten - Markering](content-fragments-markdown.md)
+   + [Werken met contentfragmenten](content-fragments/content-fragments.md)
+   + [Contentfragmenten beheren](content-fragments/content-fragments-managing.md)
+   + [Modellen van contentfragmenten](content-fragments/content-fragments-models.md)
+   + [Variaties - Authoring van content voor fragmenten](content-fragments/content-fragments-variations.md)
+   + [Aan contentfragmenten gekoppelde content](content-fragments/content-fragments-assoc-content.md)
+   + [Metagegevens - Fragmenteigenschappen](content-fragments/content-fragments-metadata.md)
+   + [Contentfragmenten - Overwegingen verwijderen](content-fragments/content-fragments-delete.md)
+   + [Inhoudsfragmenten - Markering](content-fragments/content-fragments-markdown.md)
    + [Vertaalprojecten maken voor inhoudsfragmenten](creating-translation-projects-for-content-fragments.md)
 + Elementen beheren {#managing}
    + [Digitale middelen beheren](managing-assets-touch-ui.md)

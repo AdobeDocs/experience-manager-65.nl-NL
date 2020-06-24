@@ -1,9 +1,9 @@
 ---
-title: Elementen van HTTP-API in [!DNL Adobe Experience Manager].
-description: Digitale middelen maken, lezen, bijwerken, verwijderen en beheren met HTTP API in [!DNL Adobe Experience Manager Assets].
+title: Elementen van HTTP-API in [!DNL-Adobe Experience Manager].
+description: Digitale elementen maken, lezen, bijwerken, verwijderen en beheren met de HTTP-API in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 307a1db2e5bbb72d730c89ba14f5ce02b96c108d
 workflow-type: tm+mt
 source-wordcount: '1563'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Na de gebeurtenis [!UICONTROL Off Time]zijn een middel en de uitvoeringen ervan 
 
 ## Contentfragmenten {#content-fragments}
 
-Een [inhoudsfragment](/help/assets/content-fragments.md) is een speciaal type element. Het kan worden gebruikt om tot gestructureerde gegevens, zoals teksten, aantallen, data toegang te hebben. Aangezien er verschillende verschillen zijn tussen `standard` elementen (zoals afbeeldingen of documenten), zijn enkele aanvullende regels van toepassing op de afhandeling van inhoudsfragmenten.
+Een [inhoudsfragment](/help/assets/content-fragments/content-fragments.md) is een speciaal type element. Het kan worden gebruikt om tot gestructureerde gegevens, zoals teksten, aantallen, data toegang te hebben. Aangezien er verschillende verschillen zijn tussen `standard` elementen (zoals afbeeldingen of documenten), zijn enkele aanvullende regels van toepassing op de afhandeling van inhoudsfragmenten.
 
 Zie Ondersteuning van [inhoudsfragmenten in de HTTP-API](/help/assets/assets-api-content-fragments.md)van Experience Manager Assets voor meer informatie.
 
@@ -67,7 +67,7 @@ In Experience Manager bevat een element de volgende elementen:
 * Meerdere uitvoeringen, zoals de oorspronkelijke uitvoering (het oorspronkelijk geüploade element), een miniatuur en verschillende andere uitvoeringen. Extra uitvoeringen kunnen afbeeldingen van verschillende grootten, videocoderingen of uit PDF- of [!DNL Adobe InDesign] bestandsbestanden geëxtraheerde pagina&#39;s zijn.
 * Optionele opmerkingen.
 
-Zie Ondersteuning van [inhoudsfragmenten in Experience Manager Assets HTTP API](/help/assets/assets-api-content-fragments.md#content-fragments)voor informatie over elementen in Content Fragments.
+Zie Ondersteuning van [inhoudsfragmenten in de HTTP-API](/help/assets/assets-api-content-fragments.md#content-fragments)van Experience Manager Assets voor informatie over elementen in Content Fragments.
 
 In [!DNL Experience Manager] een map zijn de volgende componenten beschikbaar:
 

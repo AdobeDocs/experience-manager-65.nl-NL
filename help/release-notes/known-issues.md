@@ -7,7 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: d11fc727-f23a-4cde-9fa6-97e2c81b4ad0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 86dbd52d44a78401aa50cce299850469c51b691c
+source-git-commit: 6943eb3d0b73a348fc7bb5a713813bf73f8e7e79
+workflow-type: tm+mt
+source-wordcount: '559'
+ht-degree: 0%
 
 ---
 
@@ -56,15 +59,15 @@ Deze fout oplossen:
 
 ## Formulieren {#forms}
 
-* Als AEM Forms is geïnstalleerd op een Linux-besturingssysteem, werkt Digital Signature with Hardware Security Module niet. (CQ-4266721)
-* (Alleen AEM-formulieren op WebSphere) De optie **Forms Workflow**> **Taakzoekopdracht** retourneert geen resultaat als u naar een **beheerder** zoekt met **Gebruikersnaam** als zoekcriteria. (CQ-4266457)
+* Als AEM Forms zijn geïnstalleerd op het Linux-besturingssysteem, werkt Digital Signature with Hardware Security Module niet. (CQ-4266721)
+* (Alleen AEM Forms op WebSphere) De optie **Forms Workflow**> **Taakzoekopdracht** retourneert geen resultaat als u naar een **beheerder** zoekt met **Gebruikersnaam** als zoekcriteria. (CQ-4266457)
 
-* AEM Forms kan .tif- en .tiff-bestanden met JPEG-compressie niet converteren naar PDF-documenten. (CQ-4265972)
-* De opties **AEM Forms Assets Scanner** en **Letter to Interactive Communication Migration** werken niet op de pagina Migratie **van** AEM-formulieren. (CQ-4266572)
+* AEM Forms kunnen .tif- en .tiff-bestanden met JPEG-compressie niet converteren naar PDF-documenten. (CQ-4265972)
+* De opties **AEM Forms Assets Scanner** en **Letter to Interactive Communication Migration** werken niet op de pagina **AEM Forms Migration** . (CQ-4266572)
 
 * (Alleen JBoss 7) Wanneer u een upgrade uitvoert van een vorige versie naar AEM 6.5 Forms en de vorige versie processen had (.lca) die een kopie van het standaard verzendings- of standaardrenderproces maakten en gebruikten, worden door HTML5 Forms de vereiste handelingen (.lca) niet uitgevoerd. (CQ-4243928)
 * Wanneer een formuliergegevensmodelservice wordt aangeroepen vanuit de regeleditor om de waarden van de afbeeldingskeuzescomponent dynamisch bij te werken, worden de waarden van de afbeeldingskeuzeselectie niet bijgewerkt. (CQ-4254754)
-* Het installatieprogramma van de Ontwerper van de Vormen van AEM vereist de versie met 32 bits van [Visuele C++ redistributable runtime pakket 2012](https://support.microsoft.com/en-in/help/2977003/the-latest-supported-visual-c-downloads) en [Visuele C++ redistributable runtime pakketten 2013](https://support.microsoft.com/en-in/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package). Zorg ervoor dat de hierboven vermelde herdistribueerbare runtimepakketten zijn geïnstalleerd voordat u de installatie start. (CQ-4265668)
+* Het installatieprogramma van de Ontwerper van AEM Forms vereist de versie met 32 bits van [Visuele C++ redistributable runtime pakket 2012](https://support.microsoft.com/en-in/help/2977003/the-latest-supported-visual-c-downloads) en [Visuele C++ redistributable runtime pakketten 2013](https://support.microsoft.com/en-in/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package). Zorg ervoor dat de hierboven vermelde herdistribueerbare runtimepakketten zijn geïnstalleerd voordat u de installatie start. (CQ-4265668)
 
 * Wanneer een adaptief formulier is geconfigureerd om de waarden van een component dynamisch bij te werken en het publicatie-exemplaar dat als host fungeert voor het formulier via de verzender, werkt de functionaliteit voor het dynamisch bijwerken van waarden van een veld niet meer. Om de kwestie op te lossen, op de publicatie instantie, open CRXDE, navigeer aan /libs/fd/af/runtime/clientlibs/guideChartReducer, en creeer het bezit dat in hieronder wordt vermeld.
 
@@ -75,6 +78,7 @@ Deze fout oplossen:
    * Verplicht: Onwaar
    * Meerdere: Onwaar
    * Automatisch gemaakt: Fase
+   Met deze eigenschap hebben de clientbibliotheken in de runtimemap toegang tot proxy&#39;s. (CQ-4268679)
 
-Met deze eigenschap hebben de clientbibliotheken in de runtimemap toegang tot proxy&#39;s. (CQ-4268679)
-
+* 
+   * Wanneer AEM Forms wordt gestart, wordt de `SAX Security Manager could not be setup` waarschuwing weergegeven.

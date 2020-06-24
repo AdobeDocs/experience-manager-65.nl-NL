@@ -12,7 +12,10 @@ discoiquuid: b7777dc5-a867-4799-9e2c-a1f4bb5dd96a
 docset: aem65
 pagetitle: Components for Content Fragments
 translation-type: tm+mt
-source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+source-git-commit: afed13a2f832b91d0df825d1075852cc84443646
+workflow-type: tm+mt
+source-wordcount: '960'
+ht-degree: 1%
 
 ---
 
@@ -39,7 +42,7 @@ Zie Beheer-API voor [inhoudsfragmenten - Client-Side](/help/sites-developing/cus
 >
 >Zie ook Fragmenten van de [Inhoud die Componenten voor het Teruggeven](/help/sites-developing/content-fragments-config-components-rendering.md) vormen voor verdere informatie.
 
-Inhoudsfragmenten van Adobe Experience Manager (AEM) worden [gemaakt en beheerd als pagina-onafhankelijke elementen](/help/assets/content-fragments.md). U kunt hiermee kanaalneutrale inhoud maken, samen met (mogelijk kanaalspecifieke) variaties. [Vervolgens kunt u deze fragmenten en de variaties ervan gebruiken bij het ontwerpen van de inhoudspagina](/help/sites-authoring/content-fragments.md)&#39;s. U kunt ook een bestaand contentfragmentelement gebruiken door het van de elementenbrowser naar de pagina [te](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) slepen (zoals bij andere elementen, zoals de basiscomponentafbeelding). De inhoudsfragmentcomponent die buiten de box valt, geeft slechts één [element](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) van het inhoudsfragment waarnaar wordt verwezen weer. In het dialoogvenster met componenten kunt u het [element, de variatie en het bereik van fragmentalinea](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) &#39;s definiëren die u op de pagina wilt weergeven.
+Inhoudsfragmenten van Adobe Experience Manager (AEM) worden [gemaakt en beheerd als paginaonafhankelijke assets](/help/assets/content-fragments/content-fragments.md). U kunt hiermee kanaalneutrale inhoud maken, samen met (mogelijk kanaalspecifieke) variaties. [Vervolgens kunt u deze fragmenten en de variaties ervan gebruiken bij het ontwerpen van de inhoudspagina](/help/sites-authoring/content-fragments.md)&#39;s. U kunt ook een bestaand contentfragmentelement gebruiken door het van de elementenbrowser naar de pagina [te](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) slepen (zoals bij andere elementen, zoals de basiscomponentafbeelding). De inhoudsfragmentcomponent die buiten de box valt, geeft slechts één [element](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) van het inhoudsfragment waarnaar wordt verwezen weer. In het dialoogvenster met componenten kunt u het [element, de variatie en het bereik van fragmentalinea](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) &#39;s definiëren die u op de pagina wilt weergeven.
 
 >[!NOTE]
 >
@@ -67,7 +70,7 @@ Deze bibliotheek voegt eigenschappen, specifiek voor inhoudsfragmenten, aan de r
 
 ### Tussen inhoud {#in-between-content}
 
-Met de **component** Inhoudsfragment kunt u extra componenten tussen de verschillende alinea&#39;s van het weergegeven [element](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment)neerzetten. In feite bestaat het weergegeven element uit verschillende alinea&#39;s (elke alinea wordt gemarkeerd door een regelterugloop). Tussen deze alinea&#39;s kunt u inhoud invoegen met behulp van andere componenten.
+Met de **component** Inhoudsfragment kunt u extra componenten tussen de verschillende alinea&#39;s van het weergegeven [element](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment)neerzetten. In feite bestaat het weergegeven element uit verschillende alinea&#39;s (elke alinea wordt gemarkeerd door een regelterugloop). Tussen deze alinea&#39;s kunt u inhoud invoegen met behulp van andere componenten.
 
 Vanuit technisch gezichtspunt, zal elke paragraaf van het getoonde element* *life in zijn eigen parsys, en elke component die u binnen-tussen de paragrafen toevoegt (onder de kap) in parsys worden opgenomen.
 
@@ -94,7 +97,7 @@ Als de alineabstructuur van dit exemplaar verandert (door de variatie, het eleme
 
 * Is zo gevormd dat slechts de eerste paragraaf wordt getoond:
 
-   * De inhoud in-tussen zal niet worden getoond (tweede parsys wordt niet meer teruggegeven toe te schrijven aan de nieuwe configuratie).
+   * De inhoud tussen zal niet worden getoond (tweede parsys wordt niet meer teruggegeven toe te schrijven aan de nieuwe configuratie).
 
 ### De component Inhoudsfragment aanpassen {#customizing-the-content-fragment-component}
 
@@ -105,7 +108,7 @@ Als u de uit-van-de-doos component van het inhoudsfragment als blauwdruk voor ui
 
    * De `afterinsert`/ `afteredit`/ `afterdelete` listeners worden gebruikt om JS-gebeurtenissen te activeren. Deze gebeurtenissen worden verwerkt in de `cq.authoring.editor.plugin.cfm` clientbibliotheek om de bijbehorende inhoud weer te geven in het zijpaneel.
    * De code `cq:dropTargets` is geconfigureerd voor het slepen van inhoud van fragmentelementen.
-   * `cq:inplaceEditing` is geconfigureerd ter ondersteuning van het ontwerpen van een inhoudsfragment in de pagina-editor. De fragmentbewerker ter plekke wordt gedefinieerd in de `cq.authoring.editor.plugin.cfm` clientbibliotheek en maakt een snelle koppeling mogelijk om het huidige [element/de huidige variatie](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) te openen in de [fragmenteditor](/help/assets/content-fragments-variations.md).
+   * `cq:inplaceEditing` is geconfigureerd ter ondersteuning van het ontwerpen van een inhoudsfragment in de pagina-editor. De fragmentbewerker ter plekke wordt gedefinieerd in de `cq.authoring.editor.plugin.cfm` clientbibliotheek en maakt een snelle koppeling mogelijk om het huidige [element/de huidige variatie](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) te openen in de [fragmenteditor](/help/assets/content-fragments/content-fragments-variations.md).
 
 ### Element herschrijven vóór renderen {#asset-rewriting-before-rendering}
 

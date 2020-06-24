@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: a6f58f6a-015a-4ced-941c-ef1b6d3e1d6f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 5015a55b79d363a8b7364f154921e956a818ce19
 workflow-type: tm+mt
 source-wordcount: '4312'
 ht-degree: 1%
@@ -56,9 +56,10 @@ Zie [(Optioneel) Een voorinstelling](/help/assets/managing-viewer-presets.md#cre
 Zie Een afbeeldingsbanner [uploaden](#uploading-an-image-banner).
 
 1. **Hotspots toevoegen aan een afbeeldingsbanner** - Voeg een of meer hotspots toe aan een afbeeldingsbanner en koppel deze aan een handeling zoals een hyperlink, een Snelle weergave of een ervaringsfragment. Nadat u hotspots hebt toegevoegd, kunt u deze taak voltooien door de interactieve afbeelding te publiceren.
-Zie [Hotspots toevoegen aan een afbeeldingsbanner](#adding-hotspots-to-an-image-banner).
-Zie [Een voorvertoning weergeven van interactieve afbeeldingen](#optional-previewing-interactive-images) - Optioneel. U kunt desgewenst een representatie van de verscherpte banner bekijken en de interactiviteit ervan testen.
-Zie Elementen [](/help/assets/publishing-dynamicmedia-assets.md) publiceren voor meer informatie over het publiceren van interactieve afbeeldingselementen.
+
+   * Zie [Hotspots toevoegen aan een afbeeldingsbanner](#adding-hotspots-to-an-image-banner).
+   * Zie [Een voorvertoning weergeven van interactieve afbeeldingen](#optional-previewing-interactive-images) - Optioneel. U kunt desgewenst een representatie van de verscherpte banner bekijken en de interactiviteit ervan testen.
+   * Zie Elementen [](/help/assets/publishing-dynamicmedia-assets.md) publiceren voor meer informatie over het publiceren van interactieve afbeeldingselementen.
 
 1. **Een interactieve afbeelding toevoegen aan uw website of uw website in AEM** Als u AEM Sites of AEM e-commerce of beide gebruikt, kunt u de interactieve afbeelding rechtstreeks toevoegen aan een webpagina in AEM door de component Interactieve media naar de pagina te slepen. See [Adding Dynamic Media Assets to Pages.](/help/assets/adding-dynamic-media-assets-to-pages.md)
 Als u AEM Assets en Dynamic Media zelfstandig gebruikt, moet u de insluitcode naar uw website kopiëren en deze vervolgens integreren met uw bestaande Snelle weergave. Zie Een interactieve afbeelding [integreren met uw website](#integrating-an-interactive-image-with-your-website).

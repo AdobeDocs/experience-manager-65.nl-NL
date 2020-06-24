@@ -2,7 +2,10 @@
 title: Opmerkingen bij de release AEM 6.5
 description: De AEM-releaseopmerkingen bevatten belangrijke informatie over de nieuwste versie van AEM, zoals nieuwe, ondersteunde platforms, vervangen en verwijderde functies en bekende problemen.
 translation-type: tm+mt
-source-git-commit: 57bad4e74b2dfd9e389643bfe58ef25564c5c545
+source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+workflow-type: tm+mt
+source-wordcount: '369'
+ht-degree: 16%
 
 ---
 
@@ -21,7 +24,7 @@ De AEM-releaseopmerkingen bevatten belangrijke informatie over de nieuwste versi
 
 | Handboek | Beschrijving |
 |--- |---|
-| [Gebruikershandleiding voor middelen](/help/assets/home.md) | Digitale middelen maken, beheren, leveren en optimaliseren. |
+| [Handboek voor Assets](/help/assets/home.md) | Digitale middelen maken, beheren, leveren en optimaliseren. |
 | [Gebruikershandleiding voor formulieren](/help/forms/home.md) | In deze handleiding wordt beschreven hoe u digitale formulieren kunt maken, beheren, publiceren en bijwerken. |
 | [Gebruikersgids voor gemeenschappen](/help/communities/home.md) | Maak online ervaringen zoals forums, gebruikersgroepen, leermiddelen en andere sociale functies. |
 | [Beheerdershandleiding](/help/sites-administering/home.md) | Begrijp hoe te om AEM te beheren |
@@ -32,18 +35,18 @@ De AEM-releaseopmerkingen bevatten belangrijke informatie over de nieuwste versi
 | [Gebruikershandleiding ontwikkelen](/help/sites-developing/home.md) | Leer hoe u uw AEM-instantie kunt opbouwen. |
 | [Gebruikershandleiding beheren](/help/managing/home.md) | In deze handleiding wordt beschreven hoe u een AEM-project kunt beheren. |
 | [Mobiele gebruikershandleiding](/help/mobile/home.md) | In deze handleiding wordt beschreven hoe u inhoud voor mobiele toepassingen kunt maken en beheren. |
-| [AEM Livefyre](https://marketing.adobe.com/resources/help/en_US/livefyre/home.html) | In deze handleiding ziet u hoe u door de gebruiker gegenereerde inhoud kunt delen met LiveCycle. |
+| [AEM Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | In deze handleiding ziet u hoe u door de gebruiker gegenereerde inhoud kunt delen met LiveCycle. |
 
 ## Belangrijke AEM-bronnen
 
 * [AEM-zelfstudies](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
-* [Gebruikershandleiding voor verzending](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)
+* [Dispatcher-gebruikershandleiding](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)
 * [HTML-gebruikershandleiding](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
 * [Gebruikershandleiding voor kerncomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
-* [GDPR gereedheid](/help/managing/data-protection-and-privacy.md)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&mv=other#solutions/experience-manager)
-* [AEM Community Forum](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
+* [Gereedheid voor GDPR (AVG)](/help/managing/data-protection-and-privacy.md)
+* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
+* [AEM-communityforum](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
 
 ## Copyright, licenties en disclaimers {#copyright-licenses-and-disclaimers}
 

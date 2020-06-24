@@ -10,9 +10,9 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 331f4980-5193-4546-a22e-f27e38bb8250
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
 workflow-type: tm+mt
-source-wordcount: '1611'
+source-wordcount: '1603'
 ht-degree: 2%
 
 ---
@@ -94,7 +94,7 @@ Dit is de enige beschikbare optie als u beeldreeksen, spin reeksen, of gemengde 
 
 Deze optie is niet beschikbaar als u afbeeldingssets, centrifuges of gemengde mediasets bekijkt.
 
-**[!UICONTROL Image Modifiers]** - U kunt afbeeldingseffecten wijzigen door extra opdrachten voor afbeeldingen in te voeren. Deze worden beschreven in Voorinstellingen [van het Beeld](/help/assets/managing-viewer-presets.md) beheren en de verwijzing [van het](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/c_command_reference.html)Bevel.
+**[!UICONTROL Image Modifiers]** - U kunt afbeeldingseffecten wijzigen door extra opdrachten voor afbeeldingen in te voeren. Deze worden beschreven in Voorinstellingen [van het Beeld](/help/assets/managing-viewer-presets.md) beheren en de verwijzing [van het](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html)Bevel.
 
 Deze optie is niet beschikbaar als u afbeeldingssets, centrifuges of gemengde mediasets bekijkt.
 
@@ -140,7 +140,7 @@ You can edit the following [!UICONTROL Advanced] settings by clicking **[!UICONT
 
 Wanneer u in AEM 6.2 [FP-13480](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq620/featurepack/cq-6.2.0-featurepack-13480)installeert, kunt u bepalen of een video wordt geleverd via een HTTPS-verbinding (Secure SSL) of een onveilige verbinding (HTTP). Standaard wordt het video-leveringsprotocol automatisch overgenomen van het protocol van de ingesloten webpagina. Als de webpagina via HTTPS wordt geladen, wordt de video ook via HTTPS geleverd. En omgekeerd, als de webpagina zich op HTTP bevindt, wordt de video geleverd via HTTP. In de meeste gevallen, is dit standaardgedrag fijn en er is geen behoefte om het even welke configuratieveranderingen aan te brengen. U kunt dit standaardgedrag echter negeren door `VideoPlayer.ssl=on` aan het einde van een URL-pad of aan de lijst met andere parameters voor de viewerconfiguratie in een ingesloten codefragment toe te voegen, zodat de beveiligde video-levering geforceerd wordt.
 
-Zie `VideoPlayer.ssl` Beveiligde videoverlevering [in de naslaggids voor viewers voor meer informatie over veilige videoverzending en het gebruik van het](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_video_viewer_20_securevideodelivery.html) configuratiekenmerk in uw URL-pad. Naast de videoviewer is beveiligde video-levering beschikbaar voor de viewer voor gemengde media en de interactieve videoviewer.
+Zie `VideoPlayer.ssl` Beveiligde videoverlevering [in de naslaggids voor viewers voor meer informatie over veilige videoverzending en het gebruik van het](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-viewer-20-securevideodelivery.html) configuratiekenmerk in uw URL-pad. Naast de videoviewer is beveiligde video-levering beschikbaar voor de viewer voor gemengde media en de interactieve videoviewer.
 
 ### Interactieve mediacomponent {#interactive-media-component}
 

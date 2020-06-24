@@ -9,9 +9,9 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 translation-type: tm+mt
-source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+source-git-commit: 6cb05cab9ecbb9fc88e16cc1ab24cafccf7d0b16
 workflow-type: tm+mt
-source-wordcount: '7445'
+source-wordcount: '7603'
 ht-degree: 0%
 
 ---
@@ -187,7 +187,25 @@ Als u de toepassingsserver wilt uitvoeren waarop AEM Forms op JEE worden geïmpl
    * Aanmelden lokaal weigeren
    * Aanmelden als service (moet al zijn ingesteld)
 
-1. Geef de nieuwe gebruikersaccount de machtiging Lezen en uitvoeren, Schrijven, Wijzigen, Omslaginhoud weergeven en Lezen om AEM Forms in de JEE-installatiemap en de GDS-map (Global Document Storage) te voltooien. De locatie van de GDS-map wordt handmatig geconfigureerd tijdens het installatieproces van AEM Forms. Als de locatie-instelling tijdens de installatie leeg blijft, wordt de locatie standaard ingesteld op een map onder de installatie van de toepassingsserver bij [JBoss root]/server/[type]/svcnative/DocumentStorage.
+1. Wijzig de machtigingen voor de nieuwe gebruikersaccount voor de volgende directory&#39;s:
+   * **GDS-map**(Global Document Storage): De locatie van de GDS-map wordt handmatig geconfigureerd tijdens het installatieproces van AEM Forms. Als de locatie-instelling tijdens de installatie leeg blijft, wordt de locatie standaard ingesteld op een directory onder de installatie van de toepassingsserver op `[JBoss root]/server/[type]/svcnative/DocumentStorage`
+   * **CRX-Repository directory**: De standaardlocatie is `[AEM-Forms-installation-location]\crx-repository`
+   * **Tijdelijke mappen** voor AEM Forms:
+      * (Windows) TMP- of TEMP-pad zoals ingesteld in de omgevingsvariabelen
+      * (AIX, Linux, of Solaris) Logged-in de huisfolder van de gebruiker Op op UNIX-Gebaseerde systemen, kan een niet wortelgebruiker de volgende folder als tijdelijke folder gebruiken:
+      * (Linux) /var/tmp of /usr/tmp
+      * (AIX) /tmp of /usr/tmp
+      * (Solaris) /var/tmp of /usr/tmp
+1. Geef de nieuwe gebruikersaccount schrijfmachtigingen voor de volgende directory&#39;s:
+   * [JBoss-directory]\standalone\deployment
+   * [JBoss-directory]\standalone\
+   * [JBoss-directory]\bin\
+   >[!NOTE]
+   >
+   > De standaardinstallatielocatie van JBoss Application Server:
+   > * Windows: C:\Adobe\Adobe_Experience_Manager_Forms\jboss
+   > * Linux: /opt/jreliëf/
+
 1. Start de toepassingsserver.
 
 **Het onbruikbaar maken van de reservereserlet van de Manager van de Configuratie**
@@ -976,7 +994,25 @@ De AEM Forms bij de turnkey van JEE-installatie stellen standaard een serviceacc
    * Aanmelding lokaal weigeren
    * Aanmelden als service (moet al zijn ingesteld)
 
-1. Geef de nieuwe gebruikersaccount de machtiging Lezen en uitvoeren, Schrijven, Wijzigen, Omslaginhoud weergeven en Lezen om AEM Forms in de JEE-installatiemap en de GDS-map (Global Document Storage) te voltooien. De locatie van de GDS-map wordt handmatig geconfigureerd tijdens het installatieproces van AEM Forms. Als de locatie-instelling tijdens de installatie leeg blijft, wordt de locatie standaard ingesteld op een map onder de installatie van de toepassingsserver bij [JBoss root]/server/[type]/svcnative/DocumentStorage.
+1. Wijzig de machtigingen voor de nieuwe gebruikersaccount voor de volgende directory&#39;s:
+   * **GDS-map**(Global Document Storage): De locatie van de GDS-map wordt handmatig geconfigureerd tijdens het installatieproces van AEM Forms. Als de locatie-instelling tijdens de installatie leeg blijft, wordt de locatie standaard ingesteld op een directory onder de installatie van de toepassingsserver op `[JBoss root]/server/[type]/svcnative/DocumentStorage`
+   * **CRX-Repository directory**: De standaardlocatie is `[AEM-Forms-installation-location]\crx-repository`
+   * **Tijdelijke mappen** voor AEM Forms:
+      * (Windows) TMP- of TEMP-pad zoals ingesteld in de omgevingsvariabelen
+      * (AIX, Linux, of Solaris) Logged-in de huisfolder van de gebruiker Op op UNIX-Gebaseerde systemen, kan een niet wortelgebruiker de volgende folder als tijdelijke folder gebruiken:
+      * (Linux) /var/tmp of /usr/tmp
+      * (AIX) /tmp of /usr/tmp
+      * (Solaris) /var/tmp of /usr/tmp
+1. Geef de nieuwe gebruikersaccount schrijfmachtigingen voor de volgende directory&#39;s:
+   * [JBoss-directory]\standalone\deployment
+   * [JBoss-directory]\standalone\
+   * [JBoss-directory]\bin\
+   >[!NOTE]
+   >
+   > De standaardinstallatielocatie van JBoss Application Server:
+   > * Windows: C:\Adobe\Adobe_Experience_Manager_Forms\jboss
+   > * Linux: /opt/jreliëf/.
+
 
 1. Start de service van de toepassingsserver.
 

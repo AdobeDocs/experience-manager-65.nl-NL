@@ -1,20 +1,23 @@
 ---
-title: Opmerkingen bij de release AEM-sites
-description: Opmerkingen bij de release die specifiek zijn voor Adobe Experience Manager 6.5 Sites.
+title: Opmerkingen bij de release AEM Sites
+description: Opmerkingen bij de release specifiek voor Adobe Experience Manager 6.5 Sites.
 uuid: 676ead61-3d97-4f23-b616-c647d590bc8f
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: f82e9bd4-f7b6-492d-8e02-593e74fa1058
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e3f32b526d8a619b8bacfc85e7dce4a7bf5d23a7
+source-git-commit: a430c4de89bde3b907d342106465d3b5a7c75cc8
+workflow-type: tm+mt
+source-wordcount: '856'
+ht-degree: 0%
 
 ---
 
 
-# Opmerkingen bij de release AEM-sites{#aem-sites-release-notes}
+# Opmerkingen bij de release AEM Sites{#aem-sites-release-notes}
 
-Zie het volgende voor de verbeteringen van AEM Sites 6.5 in detail:
+Zie het volgende voor AEM Sites 6.5 verbeteringen in detail:
 
 ## Component- en sjabloonontwikkeling {#component-amp-template-development}
 
@@ -73,17 +76,17 @@ Zie het volgende voor de verbeteringen van AEM Sites 6.5 in detail:
 
 ## Inhoudsfragmenten en -editor {#content-fragments-amp-editor}
 
-* Nieuwe [rail Annotations](/help/assets/content-fragments-variations.md#viewing-editing-deleting-annotations) in Content Fragment Editor om algemene opmerkingen te maken en opmerkingen in de tekst te bekijken (ook weergegeven in track Timeline)
-* Mogelijkheid om het standaard inhoudstype van een tekstelement met meerdere regels in een model [voor](/help/assets/content-fragments-models.md) inhoudsfragmenten in te stellen op eenvoudige tekst, opgemaakte tekst of opmaak
-* Voeg [commentaar/annotaties](/help/assets/content-fragments-variations.md#annotating-a-content-fragment) toe door tekst in RTE (volledig-schermmening) te selecteren
-* [Versies](/help/assets/content-fragments-managing.md#comparing-fragment-versions) van een inhoudsfragment naast elkaar vergelijken via referentieslegel
+* Nieuwe [rail Annotations](/help/assets/content-fragments/content-fragments-variations.md#viewing-editing-deleting-annotations) in Content Fragment Editor om algemene opmerkingen te maken en opmerkingen in de tekst te bekijken (ook weergegeven in track Timeline)
+* Mogelijkheid om het standaard inhoudstype van een tekstelement met meerdere regels in een model [voor](/help/assets/content-fragments/content-fragments-models.md) inhoudsfragmenten in te stellen op eenvoudige tekst, opgemaakte tekst of opmaak
+* Voeg [commentaar/annotaties](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment) toe door tekst in RTE (volledig-schermmening) te selecteren
+* [Versies](/help/assets/content-fragments/content-fragments-managing.md#comparing-fragment-versions) van een inhoudsfragment naast elkaar vergelijken via referentieslegel
 * In het rapport Downloaden van middelen worden nu inhoudsfragmenten dienovereenkomstig weergegeven
 * Voeg ondersteuning voor [inhoudsfragmenten toe aan de HTTP-API](/help/assets/assets-api-content-fragments.md) voor middelen via /api.json. Er zijn API&#39;s voor het maken, bijwerken, lezen en verwijderen van inhoudsfragmenten.
 
 ## Ervaringsfragmenten {#experience-fragments}
 
 * De indexering van [Experience Fragments](/help/sites-authoring/experience-fragments.md)is verbeterd. De inhoud van deze fragmenten wordt gevonden op zoek naar pagina&#39;s waar ze worden gebruikt
-* Met de optie [Exporteren naar doel](/help/sites-administering/experience-fragments-target.md) kunt u het ervaringsfragment nu verzenden als JSON (standaard is HTML) of beide
+* Met de optie [Exporteren naar Target](/help/sites-administering/experience-fragments-target.md) kunt u het ervaringsfragment nu verzenden als JSON (standaard is HTML) of beide
 
 ## Vertaling {#translation}
 
@@ -114,18 +117,18 @@ Zie het volgende voor de verbeteringen van AEM Sites 6.5 in detail:
 >
 >at.js 2.x wordt niet ondersteund door AEM op het punt van de AEM 6.5-release. Gebruik de nieuwste versie van at.js 1.x
 
-* De integratie van Adobe Target kan nu de standaard-API van het Doel gebruiken. Eerdere versies van AEM maken gebruik van de Classic HTTP-API van Target, die nu is afgekeurd.
+* Adobe Target-integratie kan nu de Target Standard API gebruiken. Eerdere versies van AEM maken gebruik van de Target Classic HTTP API, die nu is afgekeurd.
 * Adobe Target `mbox.js` versie 63 is inbegrepen. Adobe raadt u ten zeerste aan om over te schakelen op `at.js` v1.x.
-* `at.js` versie 1.5.0 is nu inbegrepen. Adobe raadt u aan [Adobe Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) te gebruiken om versie `at.js` 1.x op de site te installeren.
+* `at.js` versie 1.5.0 is nu inbegrepen. Adobe raadt u aan [Adobe Experience Platform starten](https://www.adobe.com/experience-platform/launch.html) te gebruiken om versie `at.js` 1.x op de site in te stellen.
 
 ## AEM en Adobe Analytics {#aem-amp-adobe-analytics}
 
 * `s_code.js` H.27.5 is inbegrepen. Adobe raadt u aan over te schakelen op `AppMeasurement.js`
-* `AppMeasurement.js` v1.8.0 is inbegrepen. Adobe raadt u aan [Adobe Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) te gebruiken om AppMeasurement.js op de site te plaatsen.
+* `AppMeasurement.js` v1.8.0 is inbegrepen. Adobe raadt u aan [Adobe Experience Platform starten](https://www.adobe.com/experience-platform/launch.html) te gebruiken om AppMeasurement.js op de site te plaatsen.
 
 ## AEM en handel {#aem-commerce}
 
-De verbeteringen aan het Kader van de Integratie van de Handel zijn op een snellere versiecyclus sinds AEM 6.4. Meer [weten](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/docs.html)?
+De verbeteringen aan het Kader van de Integratie van de Handel zijn op een snellere versiecyclus sinds AEM 6.4. [Klik hier](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/docs.html)voor meer informatie.
 
 ## Invoegtoepassing Gemeenschappen {#communities-add-on}
 
@@ -137,4 +140,4 @@ Zie pagina Opmerkingen bij de release [van Gemeenschappen](../release-notes/comm
 * Metered playback in een opeenvolgingskanaal
 * Automatisch een projectstructuur maken met behulp van een bronbestand, bijvoorbeeld Excel-werkblad
 
-Raadpleeg de opmerkingen bij de release in de gebruikershandleiding voor [AEM-schermen voor meer informatie over wijzigingen in AEM-schermen](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html).
+Voor meer informatie over veranderingen in AEM Screens - zie de Nota&#39;s van de Versie in de Gids [van de Gebruiker van](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)AEM Screens.

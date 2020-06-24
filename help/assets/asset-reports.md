@@ -3,9 +3,9 @@ title: Rapporten over het gebruik en het delen van uw digitale middelen.
 description: Meldt over uw middelen in [!DNL Adobe Experience Manager Assets] die u helpen gebruik, activiteit, en het delen van uw digitale activa te begrijpen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0c41666353a8ee8d39285c99327680ab12377d61
+source-git-commit: a8c4bc1992a48dd01a3f58498e9e924dcc9e886a
 workflow-type: tm+mt
-source-wordcount: '988'
+source-wordcount: '993'
 ht-degree: 7%
 
 ---
@@ -63,7 +63,7 @@ Als u rapporten wilt genereren, moet u ervoor zorgen dat:
 
    >[!NOTE]
    >
-   >In het [!UICONTROL Download] rapport worden alleen de elementen weergegeven die afzonderlijk zijn geselecteerd en gedownload. De gegevens over de elementen in een gedownloade map zijn echter niet in de map opgenomen.
+   >Het [!UICONTROL Download] rapport bevat alleen de gegevens van de elementen die afzonderlijk zijn geselecteerd en die zijn gedownload of gedownload met Snelle actie. De gegevens over de elementen in een gedownloade map zijn echter niet in de map opgenomen.
 1. Configureer rapportdetails zoals titel, beschrijving, miniatuur en mappad in de CRX-opslagplaats waar het rapport wordt opgeslagen. Standaard is het mappad `/content/dam`. U kunt een ander pad opgeven.
 
    ![Pagina om rapportdetails toe te voegen](assets/report_configuration.png)

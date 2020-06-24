@@ -11,7 +11,7 @@ topic-tags: extending-assets
 discoiquuid: 03502b41-b448-47ab-9729-e0a66a3389fa
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 13cf9930876af3dd27b2fcb3e1059dae61769803
+source-git-commit: 307a1db2e5bbb72d730c89ba14f5ce02b96c108d
 workflow-type: tm+mt
 source-wordcount: '1859'
 ht-degree: 2%
@@ -33,7 +33,7 @@ ht-degree: 2%
 >
 De huidige implementatie van AEM Assets HTTP API is REST.
 
-Met de Adobe Experience Manager (AEM) [Assets REST API](/help/assets/mac-api-assets.md) hebben ontwikkelaars via CRUD-bewerkingen (Maken, Lezen, Bijwerken, Verwijderen) rechtstreeks toegang tot inhoud (opgeslagen in AEM) via de HTTP API.
+Met de Adobe Experience Manager (AEM) [Assets REST API](/help/assets/mac-api-assets.md) hebben ontwikkelaars via CRUD-bewerkingen (Maken, Lezen, Bijwerken, Verwijderen) rechtstreeks toegang tot inhoud (opgeslagen in AEM) via de HTTP-API.
 
 Met de API kunt u AEM als een headless CMS (Content Management System) gebruiken door Content Services aan te bieden aan een JavaScript front-end toepassing. Of elke andere toepassing die HTTP-aanvragen kan uitvoeren en JSON-reacties kan verwerken.
 
@@ -41,7 +41,7 @@ Bijvoorbeeld, de Enige Toepassingen van de Pagina (SPA), op kader-gebaseerd of d
 
 Hoewel de Componenten van de Kern AEM een zeer uitvoerige, flexibele en klantgerichte API verstrekken die vereiste Gelezen verrichtingen voor dit doel kan dienen, en de waarvan output JSON kan worden aangepast, vereisen zij AEM WCM (het Beheer van de Inhoud van het Web) knowhow voor implementatie aangezien zij in (API) pagina&#39;s moeten worden ontvangen die op specifieke malplaatjes van AEM gebaseerd zijn. Niet elke organisatie van de SBZ heeft toegang tot dergelijke middelen.
 
-Dit is wanneer de REST API van Activa kan worden gebruikt. Ontwikkelaars hebben direct toegang tot elementen (bijvoorbeeld afbeeldingen en inhoudsfragmenten), zonder dat ze eerst in een pagina moeten worden ingesloten en hun inhoud in geserialiseerde JSON-indeling moeten leveren. (Het is niet mogelijk JSON-uitvoer van de REST API voor middelen aan te passen.) Met de REST API voor middelen kunnen ontwikkelaars ook inhoud wijzigen door nieuwe elementen, inhoudsfragmenten en mappen te maken, bij te werken of te verwijderen.
+Dit is wanneer de REST API van Activa kan worden gebruikt. Ontwikkelaars hebben direct toegang tot elementen (bijvoorbeeld afbeeldingen en inhoudsfragmenten), zonder dat ze eerst in een pagina moeten worden ingesloten en hun inhoud in geserialiseerde JSON-indeling moeten leveren. (Het is niet mogelijk JSON-uitvoer van de REST API voor middelen aan te passen). Met de REST API voor middelen kunnen ontwikkelaars ook inhoud wijzigen door nieuwe elementen, inhoudsfragmenten en mappen te maken, bij te werken of te verwijderen.
 
 De REST-API voor middelen:
 
@@ -62,7 +62,7 @@ De HTTP-methode bepaalt de uit te voeren bewerking:
 * **GET** - voor het ophalen van een JSON-representatie van een middel of een map
 * **POST** - voor het maken van nieuwe elementen of mappen
 * **PUT** - om de eigenschappen van een middel of een omslag bij te werken
-* **VERWIJDEREN** - om een middel of een omslag te schrappen
+* **DELETE** - om een middel of een omslag te schrappen
 
 >[!NOTE]
 >
@@ -137,7 +137,7 @@ In omgevingen met specifieke verificatievereisten wordt OAuth aanbevolen.
 
 ## Beschikbare functies {#available-features}
 
-Inhoudsfragmenten zijn een specifiek type element. Zie [Werken met inhoudsfragmenten](/help/assets/content-fragments.md).
+Inhoudsfragmenten zijn een specifiek type element. Zie [Werken met inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md).
 
 Zie voor meer informatie over functies die beschikbaar zijn via de API:
 
@@ -197,7 +197,7 @@ Elementen kunnen meerdere uitvoeringen hebben. Deze worden doorgaans weergegeven
 
 ### Contentfragmenten {#content-fragments}
 
-Een [inhoudsfragment](/help/assets/content-fragments.md) is een speciaal type element. Ze kunnen worden gebruikt om onder andere toegang te krijgen tot gestructureerde gegevens, zoals teksten, getallen, datums.
+Een [inhoudsfragment](/help/assets/content-fragments/content-fragments.md) is een speciaal type element. Ze kunnen worden gebruikt om onder andere toegang te krijgen tot gestructureerde gegevens, zoals teksten, getallen, datums.
 
 Aangezien er verschillende verschillen zijn met *standaardmiddelen* (zoals afbeeldingen of audio), zijn er enkele aanvullende regels van toepassing op de afhandeling ervan.
 
@@ -236,7 +236,7 @@ Het gebruik kan verschillen afhankelijk van of u een auteur AEM of publicatiemil
 
 >[!NOTE]
 >
->Zie de [API-naslaggids](/help/assets/assets-api-content-fragments.md#api-reference)voor meer informatie. Met name de [Adobe Experience Manager Assets API - Inhoudsfragmenten](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html).
+>Zie de [API-naslaggids](/help/assets/assets-api-content-fragments.md#api-reference)voor meer informatie. Met name de API voor [Adobe Experience Manager Assets - Inhoudsfragmenten](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html).
 
 ### Lezen/Levering {#read-delivery}
 

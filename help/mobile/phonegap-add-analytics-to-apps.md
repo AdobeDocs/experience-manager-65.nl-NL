@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: cd9d2bea-48d8-4a17-8544-ea25dcad69f3
 translation-type: tm+mt
-source-git-commit: 58fa0f05bae7ab5ba51491be3171b5c6ffbe870d
+source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+workflow-type: tm+mt
+source-wordcount: '1064'
+ht-degree: 0%
 
 ---
 
@@ -31,7 +34,7 @@ Instrueer uw AEM-toepassingen om te volgen, rapporteren en te begrijpen hoe gebr
 
 In deze sectie wordt beschreven hoe AEM- *ontwikkelaars* :
 
-* Mobiele analysemogelijkheden integreren in uw mobiele toepassing
+* Mobiele Analytics integreren in uw mobiele toepassing
 * Test uw analyses bijhouden met Bloodhound
 
 ## Vereisten {#prerequisties}
@@ -39,17 +42,17 @@ In deze sectie wordt beschreven hoe AEM- *ontwikkelaars* :
 AEM Mobile heeft een Adobe Analytics-account nodig om trackinggegevens in uw app te verzamelen en te rapporteren. Als deel van de configuratie zal de *Beheerder* AEM eerst moeten:
 
 * Stel een Adobe Analytics-account in en maak een rapportsuite voor uw toepassing in Mobile Services.
-* Configureer een AMS Cloud Service in Adobe Experience Manager (AEM).
+* Configureer een AMS-Cloud Service in Adobe Experience Manager (AEM).
 
-## Voor ontwikkelaars - Mobiele analysemogelijkheden integreren in uw app {#for-developers-integrate-mobile-analytics-into-your-app}
+## Voor ontwikkelaars - Mobiele Analytics integreren in uw app {#for-developers-integrate-mobile-analytics-into-your-app}
 
-### Configureer ContentSync om het configuratiebestand te gebruiken {#configure-contentsync-to-pull-in-configuration-file}
+### ContentSync configureren om het configuratiebestand te gebruiken {#configure-contentsync-to-pull-in-configuration-file}
 
-Nadat het account Analytics is ingesteld, moet u een configuratie voor Content Sync maken om de inhoud in uw mobiele toepassing te plaatsen.
+Nadat u het Analytics-account hebt ingesteld, moet u een configuratie voor inhoudssynchronisatie maken om de inhoud in uw mobiele toepassing te plaatsen.
 
-Zie Inhoud synchroniseren configureren voor meer informatie. De configuratie zal de Synchronisatie van de Inhoud moeten instrueren om ADBMobileConfig in de /www folder te zetten. In de Buiten-app Geometrixx vindt u bijvoorbeeld de configuratie van Content Sync bij: */content/phonegap/geometrixx-outdoor/shell/jcr:content/page-app/app-config/ams-ADBMobileConfig*. Er is ook een configuratie voor ontwikkeling. in het geval van Geometrixx Outdoor is de configuratie echter identiek aan de configuratie zonder ontwikkeling.
+Zie Inhoud synchroniseren configureren voor meer informatie. De configuratie zal de Synchronisatie van de Inhoud moeten instrueren om ADBMobileConfig in de /www folder te zetten. In de Buiten-app Geometrixx vindt u bijvoorbeeld de configuratie van Content Sync bij: */content/phonegap/geometrixx-outdoor/shell/jcr:content/pge-app/app-config/ams-ADBMobileConfig*. Er is ook een configuratie voor ontwikkeling. in het geval van Geometrixx Outdoor is de configuratie echter identiek aan de configuratie zonder ontwikkeling.
 
-Raadpleeg Analytics - Mobile Services - Adobe Mobile Services SDK Config File voor meer informatie over het downloaden van ADBMobileConfig vanaf het dashboard voor AEM-toepassingen voor mobiele apparaten.
+Raadpleeg het configuratiebestand van Analytics - Mobile Services - Adobe Mobile Services SDK voor meer informatie over het downloaden van ADBMobileConfig vanaf het dashboard voor AEM-toepassingen voor mobiele toepassingen.
 
 ```xml
 <jcr:root xmlns:jcr="https://www.jcp.org/jcr/1.0" xmlns:nt="https://www.jcp.org/jcr/nt/1.0"
@@ -102,9 +105,9 @@ Nadat u deze stappen hebt uitgevoerd, wordt uw app ingeschakeld om alle levenscy
 
 ### Instrueer uw code voor het volledig bijhouden van de app {#instrument-your-code-for-full-app-tracking}
 
-Er zijn verschillende tracking-API&#39;s beschikbaar in de [AMS Phonegap-insteekmodule.](https://marketing.adobe.com/resources/help/en_US/mobile/ios/phonegap_methods.html)
+Er zijn verschillende tracking-API&#39;s beschikbaar in de [AMS Phonegap-insteekmodule.](https://docs.adobe.com/content/help/en/mobile-services/ios/phonegap-ios/phonegap-methods.html)
 
-Hiermee kunt u staten en handelingen bijhouden, zoals waar de pagina&#39;s waarnaar uw gebruikers navigeren in uw app, waarin de besturingselementen het meest worden gebruikt. De eenvoudigste manier om uw app voor tracering te gebruiken, is om gebruik te maken van de API&#39;s voor Analytics die door de AMS-plug-in worden geleverd.
+Hiermee kunt u staten en handelingen bijhouden, zoals waar de pagina&#39;s waarnaar uw gebruikers navigeren in uw app, waarin de besturingselementen het meest worden gebruikt. De eenvoudigste manier om uw toepassing voor tracering te gebruiken, is om gebruik te maken van de Analytics API&#39;s die door de AMS-plug-in worden geleverd.
 
 * ADB.trackState()
 * ADB.trackAction()
@@ -113,11 +116,13 @@ Ter referentie kunt u de code in de Geometrixx-app Buiten bekijken. In de toepas
 
 Door uw broncode met deze methodevraag van instrumenten te voorzien kunt u volledige metriek tegen uw toepassing verzamelen.
 
-### Testen van Analyses bijhouden met Bloodhound {#testing-analytics-tracking-with-bloodhound}
+### Het testen van Analytics-tracking met Bloodhound  {#testing-analytics-tracking-with-bloodhound}
 
 ![](do-not-localize/chlimage_1.jpeg)
 
-U kunt desgewenst vóór de implementatie naar productie de Adobe-tool [Bloodhound](https://marketing.adobe.com/developer/gallery/bloodhound-app-measurement-qa-tool-1) gebruiken om de configuratie van de analysemogelijkheden te testen. Als u de analyseconfiguratie wilt testen, moet u het bestand ADBMobileConfig.json bewerken om naar de server te verwijzen waar Bloodhound wordt uitgevoerd in plaats van naar de werkelijke Analytics-server. Om deze verandering aan te brengen, van uw ADBMobileConfig.json verander de volgende ingang.
+<!--NOTE TO WRITER: Bloodhound is no longer available.-->
+
+U kunt desgewenst vóór de implementatie naar productie de Adobe-tool [Bloodhound](https://marketing.adobe.com/developer/gallery/bloodhound-app-measurement-qa-tool-1) gebruiken om de configuratie van de analysemogelijkheden te testen. Als u de analyseconfiguratie wilt testen, moet u het bestand ADBMobileConfig.json bewerken om te wijzen naar de server waarop Bloodhound wordt uitgevoerd in plaats van naar de Analytics-server. Om deze verandering aan te brengen, van uw ADBMobileConfig.json verander de volgende ingang.
 
 ```xml
 ...

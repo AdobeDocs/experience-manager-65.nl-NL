@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: d1326737-f378-46d0-9916-61ead4d31639
 translation-type: tm+mt
-source-git-commit: dca52c05c413fc96bf7fab012a3be52f6769c2e0
+source-git-commit: 759d2dd8d12861757bf7f54b77d8d3ca170887fe
+workflow-type: tm+mt
+source-wordcount: '454'
+ht-degree: 4%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: dca52c05c413fc96bf7fab012a3be52f6769c2e0
 
 Met inhoudsfragmenten kunt u kanaalneutrale inhoud maken, samen met (mogelijk kanaalspecifieke) variaties. **Wij.Retail** (zoals beschikbaar in een out-of-the-box instantie van AEM) verstrekt het fragment **Arctic Surfing in Lofoten** als basisvoorbeeld. Hieruit blijkt dat:
 
-* Inhoudsfragmenten van Adobe Experience Manager (AEM) worden [gemaakt en beheerd als pagina-onafhankelijke elementen](/help/assets/content-fragments.md). U kunt hiermee kanaalneutrale inhoud maken, samen met (mogelijk kanaalspecifieke) variaties.
+* Inhoudsfragmenten van Adobe Experience Manager (AEM) worden [gemaakt en beheerd als paginaonafhankelijke assets](/help/assets/content-fragments/content-fragments.md). U kunt hiermee kanaalneutrale inhoud maken, samen met (mogelijk kanaalspecifieke) variaties.
 
    * Zie [Waar vindt u de elementen van Content Fragment in We.Retail](#where-to-find-content-fragments-in-we-retail)
 
@@ -57,13 +60,13 @@ U kunt het fragment **Arctic Surfing in Lofoten** selecteren en bewerken:
 
 * [http://localhost:4502/editor.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten/arctic-surfing-in-lofoten](http://localhost:4502/editor.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten/arctic-surfing-in-lofoten)
 
-Hier kunt u het fragment [bewerken en beheren](/help/assets/content-fragments.md) met de tabbladen (linkerdeelvenster):
+Hier kunt u het fragment [bewerken en beheren](/help/assets/content-fragments/content-fragments.md) met de tabbladen (linkerdeelvenster):
 
 <!--![](do-not-localize/cf-45-aa.png) ![](do-not-localize/cf-45-a.png) ASSET does not exist-->
 
-* **[Variaties](/help/assets/content-fragments-variations.md)**, inclusief[prijsverlaging](/help/assets/content-fragments-markdown.md)
-* **[Gekoppelde inhoud](/help/assets/content-fragments-assoc-content.md)**
-* **[Metagegevens](/help/assets/content-fragments-metadata.md)**
+* **[Variaties](/help/assets/content-fragments/content-fragments-variations.md)**, inclusief[prijsverlaging](/help/assets/content-fragments/content-fragments-markdown.md)
+* **[Gekoppelde inhoud](/help/assets/content-fragments/content-fragments-assoc-content.md)**
+* **[Metagegevens](/help/assets/content-fragments/content-fragments-metadata.md)**
 
 ![cf-46](assets/cf-46.png)
 
@@ -85,7 +88,7 @@ Het inhoudsfragment **Arctic Surfing in Lofoten** verwijst bijvoorbeeld naar de 
 
 Zie voor meer informatie:
 
-* [Werken met inhoudsfragmenten](/help/assets/content-fragments.md)
+* [Werken met contentfragmenten](/help/assets/content-fragments/content-fragments.md)
 
    * Leer hoe u elementen van inhoudsfragmenten maakt, bewerkt en beheert.
 

@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 9890d045-cead-4d70-b797-95319284e0d8
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+workflow-type: tm+mt
+source-wordcount: '2638'
+ht-degree: 0%
 
 ---
 
@@ -47,14 +50,14 @@ De basispagina wordt opgeslagen onder de eigenschap Doelpad van de toepassing di
 
 De eerste onderliggende pagina&#39;s van de basispagina zijn de taalvariaties van de toepassing. De naam van elke pagina is de taal waarvoor de toepassing wordt gemaakt. Engels is bijvoorbeeld de naam van de Engelse variatie van de toepassing.
 
-**** Opmerking: De standaardblauwdruk van PhoneGap leidt slechts tot een Engelse toepassing. Uw ontwikkelaar kan de blauwdruk aanpassen zodat deze meer taalvariaties kan maken.
+**Opmerking:** De standaardblauwdruk van PhoneGap leidt slechts tot een Engelse toepassing. Uw ontwikkelaar kan de blauwdruk aanpassen zodat deze meer taalvariaties kan maken.
 
 ![chlimage_1-147](assets/chlimage_1-147.png)
 
 De taalpagina heeft twee doelen:
 
 * De pagina-inhoud is de spash-pagina voor de taalvariatie van de toepassing.
-* De pagina-eigenschappen beheren verschillende ontwerpaspecten van de toepassing, zoals de URL die moet worden gebruikt voor het aanvragen van updates van inhoud, en informatie over het tot stand brengen van een verbinding met de cloud en de integratie van Adobe Analytics Services.
+* De pagina-eigenschappen beheren verschillende ontwerpaspecten van de toepassing, zoals de URL die moet worden gebruikt voor het aanvragen van updates van inhoud, en informatie over het maken van verbinding met de cloud en de integratie met Adobe Analytics Services.
 
 ![chlimage_1-148](assets/chlimage_1-148.png)
 
@@ -66,19 +69,19 @@ De pagina Home of index.html van een taalvariatie van een toepassing wordt weerg
 
 Mobiele toepassingen zijn gebaseerd op een blauwdruk die een paginastructuur en eigenschappen definieert. U kunt de volgende toepassingseigenschappen configureren:
 
-* **** Titel: De toepassingstitel.
-* **** Doelpad: De locatie in de opslagplaats waar de toepassing is opgeslagen. Laat de standaardinstelling ongewijzigd om een pad te maken op basis van de toepassingsnaam.
+* **Titel:** De toepassingstitel.
+* **Doelpad:** De locatie in de opslagplaats waar de toepassing is opgeslagen. Laat de standaardinstelling ongewijzigd om een pad te maken op basis van de toepassingsnaam.
 
-* **** Naam: De standaardwaarde is de waarde van de eigenschap Titel, waarbij spatietekens zijn verwijderd. De naam wordt gebruikt binnen CQ om naar de toepassing te verwijzen, bijvoorbeeld voor de opslagplaats knoop die de toepassing vertegenwoordigt.
-* **** Omschrijving: Een beschrijving van de aanvraag.
-* **** Server-URL: De URL die OTA-inhoud (Over-the-Air) biedt, wordt bijgewerkt naar de toepassing. De standaardwaarde is de URL van de publicatieserver van de instantie die wordt gebruikt om een toepassing te maken (deze is afkomstig van de externalizer-service). Opmerking: dit moet een publicatieserverinstantie zijn in plaats van een auteur, die verificatie vereist.
+* **Naam:** De standaardwaarde is de waarde van de eigenschap Titel, waarbij spatietekens zijn verwijderd. De naam wordt gebruikt binnen CQ om naar de toepassing te verwijzen, bijvoorbeeld voor de opslagplaats knoop die de toepassing vertegenwoordigt.
+* **Omschrijving:** Een beschrijving van de aanvraag.
+* **Server-URL:** De URL die OTA-inhoud (Over-the-Air) biedt, wordt bijgewerkt naar de toepassing. De standaardwaarde is de URL van de publicatieserver van de instantie die wordt gebruikt om een toepassing te maken (deze is afkomstig van de externalizer-service). Opmerking: dit moet een publicatieserverinstantie zijn in plaats van een auteur, die verificatie vereist.
 
 U kunt ook een afbeeldingsbestand opgeven dat u als toepassingsminiatuur wilt gebruiken, de PhoneGap Build-configuratie selecteren die u wilt gebruiken en de analytische configuratie voor de Mobile App selecteren die u wilt gebruiken. Deze afbeelding wordt alleen gebruikt als miniatuur voor uw mobiele toepassing in de console voor mobiele apps in Experience Manager.
 
 Er zijn extra (en optionele) tabbladen voor het samenstellen van de cloudservice en het integreren van de insteekmodule Adobe Mobile Services SDK in uw app.
 
 * Opbouwen: Klik hier op Configuraties beheren en stel de build.phonegap.com-service in. Vervolgens kunt u in de vervolgkeuzelijst de nieuwe PhoneGap-service voor de build-cloud selecteren.
-* Analyse: Klik op Configuraties beheren en stel de [Adobe Mobile Services SDK](https://marketing.adobe.com/developer/en_US/get-started/mobile/c-measuring-mobile-applications) -cloudservice in. Vervolgens kunt u in het keuzemenu de nieuwe mobiele service selecteren die u wilt integreren in uw mobiele app.
+* Analytics: Klik op Configuraties beheren en stel de [Adobe Mobile Services SDK](https://docs.adobe.com/content/help/en/mobile-services/using/home.html) -cloudservice in. Vervolgens kunt u in het keuzemenu de nieuwe mobiele service selecteren die u wilt integreren in uw mobiele app.
 
 >[!NOTE]
 >
@@ -96,7 +99,7 @@ In de volgende procedure wordt de Touch UI gebruikt om een mobiele toepassing te
 
    Klik op Configuraties beheren om een PhoneGap-build-configuratie te maken.
 
-1. (Optioneel) Als u SiteCatalyst gebruikt om de toepassingsactiviteiten te volgen, selecteert u op het tabblad Analyse de configuratie die u wilt gebruiken.
+1. (Optioneel) Als u SiteCatalyst gebruikt om de toepassingsactiviteiten te volgen, selecteert u op het tabblad Analytics de configuratie die u wilt gebruiken.
 
    Klik op Configuraties beheren als u een mobiele toepassingsconfiguratie wilt maken.
 
@@ -133,7 +136,7 @@ Nadat u een mobiele toepassing hebt gemaakt, kunt u de eigenschappen wijzigen.
 
    ![](do-not-localize/chlimage_1-12.png)
 
-1. Configureer de eigenschappen op de tabbladen Standaard, Geavanceerd, Samenstellen en Analyse en klik of tik op het pictogram Gereed.
+1. Configureer de eigenschappen op de tabbladen Standaard, Geavanceerd, Build en Analytics en klik of tik op het pictogram Done.
 
    ![](do-not-localize/chlimage_1-13.png)
 
@@ -190,7 +193,7 @@ Stappen voor het maken van een nieuwe app op basis van een toepassingssjabloon:
 
 ![chlimage_1-2](assets/chlimage_1-2.jpeg)
 
-1. Klik op Volgende.
+1. Klik op Next.
 1. Geef een app-id en -titel op, maar u wilt mogelijk ook een naam en een beschrijving opnemen.
 
    1. Bovendien kunt u een PNG-bestand (ondersteunde PhoneGap-pictogramindeling) opgeven als pictogram door in AEM-elementen te bladeren.

@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: b210f5d7-1d68-49ee-ade7-667c6ab11d2b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3dd3f700cd473570889f8d4ced09281a577e2ef8
+source-git-commit: 9eb8f3921e7d485ca4eb035cd04a9d8731dd6b06
+workflow-type: tm+mt
+source-wordcount: '6229'
+ht-degree: 0%
 
 ---
 
@@ -35,9 +38,9 @@ Het kan worden betreden door naar **Hulpmiddelen** - **Verrichtingen** van het A
 >
 >Om tot het Dashboard van Verrichtingen kunnen toegang hebben, moet de het programma geopende gebruiker deel van de &quot;Exploitanten&quot;gebruikersgroep uitmaken. Voor meer informatie, zie documentatie over [Gebruiker, Groep en Recht Beleid](/help/sites-administering/user-group-ac-admin.md)van de Toegang.
 
-## Gezondheidsrapporten {#health-reports}
+## Gezondheidsrapportage {#health-reports}
 
-Het Health Report-systeem biedt informatie over de gezondheid van een AEM-instantie via Sling Health Checks. Dit kan via OSGI, JMX, HTTP-aanvragen (via JSON) of via de Touch UI. Het biedt metingen en drempel van bepaalde configureerbare tellers aan en in sommige gevallen, zal informatie over hoe te om de kwestie op te lossen aanbieden.
+Het Health Report-systeem biedt informatie over de gezondheid van een AEM-instantie via Sling Health Checks. Dit kan via OSGI-, JMX- en HTTP-aanvragen (via JSON) of via de Touch UI. Het biedt metingen en drempel van bepaalde configureerbare tellers aan en in sommige gevallen, zal informatie over hoe te om de kwestie op te lossen aanbieden.
 
 Het heeft verschillende functies, die hieronder worden beschreven.
 
@@ -104,14 +107,14 @@ Voor het maken van een individuele health check zijn twee stappen nodig: een Sli
 
    De volgende eigenschappen moeten op het nieuwe knooppunt worden ingesteld:
 
-   * **** Naam: `sling:resourceType`
+   * **Naam:** `sling:resourceType`
 
-      * **** Type: `String`
-      * **** Waarde: `granite/operations/components/mbean`
-   * **** Naam: `resource`
+      * **Type:** `String`
+      * **Waarde:** `granite/operations/components/mbean`
+   * **Naam:** `resource`
 
-      * **** Type: `String`
-      * **** Waarde: `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/exampleHealthCheck`
+      * **Type:** `String`
+      * **Waarde:** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/exampleHealthCheck`
    >[!NOTE]
    >
    >Het bovenstaande bronnenpad wordt als volgt gemaakt: als de naam van het product van de Health Check &quot;test&quot; is, voegt u &quot;test&quot; toe aan het einde van het pad `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck`
@@ -134,7 +137,7 @@ Voor het maken van een individuele health check zijn twee stappen nodig: een Sli
 
 ### Een samengestelde health check maken {#creating-a-composite-health-check}
 
-Een Composite Health Check&#39;s rol bestaat erin een aantal afzonderlijke Health Checks samen te voegen, die een reeks gemeenschappelijke kenmerken delen. Zo groepeert de veiligheidssamengestelde gezondheidscontrole alle afzonderlijke gezondheidscontroles die beveiligingsgerelateerde controles uitvoeren. De eerste stap om een samengestelde controle tot stand te brengen is een nieuwe configuratie toe te voegen OSGI. Om het in het Dashboard van Verrichtingen te tonen, moet een nieuw configuratieknooppunt worden toegevoegd, de zelfde manier wij voor een eenvoudige controle deden.
+Een Composite Health Check&#39;s rol bestaat erin een aantal afzonderlijke Health Checks samen te voegen die een reeks gemeenschappelijke kenmerken delen. Zo groepeert de veiligheidssamengestelde gezondheidscontrole alle afzonderlijke gezondheidscontroles die beveiligingsgerelateerde controles uitvoeren. De eerste stap om een samengestelde controle tot stand te brengen is een nieuwe configuratie toe te voegen OSGI. Om het in het Dashboard van Verrichtingen te tonen, moet een nieuw configuratieknooppunt worden toegevoegd, de zelfde manier wij voor een eenvoudige controle deden.
 
 1. Ga naar de Manager van de Configuratie van het Web in de Console OSGI. U kunt dit doen door toegang te hebben tot `https://serveraddress:port/system/console/configMgr`
 1. Zoek naar het item met de naam **Apache Sling Composite Health Check**. Nadat u het vindt, merk op dat er twee configuraties reeds beschikbaar zijn: een voor de System Checks en een andere voor de Security Checks.
@@ -146,10 +149,10 @@ Een Composite Health Check&#39;s rol bestaat erin een aantal afzonderlijke Healt
 
    Het doel van elk configuratiebezit is als volgt:
 
-   * **** Naam (hc.name): De naam van de Composite Health Check. Een betekenisvolle naam wordt aanbevolen.
-   * **** Tags (hc.tags): De labels voor deze Health Check. Als deze samengestelde health check bedoeld is om deel uit te maken van een andere samengestelde health check (bijvoorbeeld in een hiërarchie van gezondheidscontroles), voegt u de codes toe waarop deze samenstelling betrekking heeft.
-   * **** Naam MBean (hc.bean.name): De naam van de boon die aan de JMX MBean van deze samengestelde gezondheidscontrole zal worden gegeven.
-   * **** Filterlabels (filter.tags): Dit is een eigenschap die specifiek is voor samengestelde gezondheidscontroles. Dit zijn de tags die de samenstelling moet samenvoegen. De samengestelde health check wordt onder de groep geaggregeerd voor alle gezondheidscontroles waarbij een tag aanwezig is die overeenkomt met een van de filtertags van deze samenstelling. Een samengestelde health check met de **test** en **controle** van filterlabels zal bijvoorbeeld alle individuele en samengestelde gezondheidscontroles samenvoegen die een van de **test** - en **controletags** hebben in hun tageigenschap ( `hc.tags`).
+   * **Naam (hc.name):** De naam van de Composite Health Check. Een betekenisvolle naam wordt aanbevolen.
+   * **Tags (hc.tags):** De labels voor deze Health Check. Als deze samengestelde health check bedoeld is om deel uit te maken van een andere samengestelde health check (bijvoorbeeld in een hiërarchie van gezondheidscontroles), voegt u de codes toe waarop deze samenstelling betrekking heeft.
+   * **Naam MBean (hc.bean.name):** De naam van de boon die aan de JMX MBean van deze samengestelde gezondheidscontrole zal worden gegeven.
+   * **Filterlabels (filter.tags):** Dit is een eigenschap die specifiek is voor samengestelde gezondheidscontroles. Dit zijn de tags die de samenstelling moet samenvoegen. De samengestelde health check wordt onder de groep geaggregeerd voor alle gezondheidscontroles waarbij een tag aanwezig is die overeenkomt met een van de filtertags van deze samenstelling. Een samengestelde health check met de **test** en **controle** van filterlabels zal bijvoorbeeld alle individuele en samengestelde gezondheidscontroles samenvoegen die een van de **test** - en **controletags** hebben in hun tageigenschap ( `hc.tags`).
    >[!NOTE]
    >
    >Voor elke nieuwe configuratie van de Apache Sling Composite Health Check wordt een nieuwe JMX-maboon gemaakt.**
@@ -158,19 +161,19 @@ Een Composite Health Check&#39;s rol bestaat erin een aantal afzonderlijke Healt
 
    Als, bijvoorbeeld, u een configuratie creeerde en de waarde **hc.bean.name** aan **diskusage** plaatst, zullen de configuratieknopen als dit kijken:
 
-   * **** Naam: `Composite Health Check`
+   * **Naam:** `Composite Health Check`
 
-      * **** Type: `nt:unstructured`
+      * **Type:** `nt:unstructured`
    Met de volgende eigenschappen:
 
-   * **** Naam: `sling:resourceType`
+   * **Naam:** `sling:resourceType`
 
-      * **** Type: `String`
-      * **** Waarde: `granite/operations/components/mbean`
-   * **** Naam: `resource`
+      * **Type:** `String`
+      * **Waarde:** `granite/operations/components/mbean`
+   * **Naam:** `resource`
 
-      * **** Type: `String`
-      * **** Waarde: `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/diskusage`
+      * **Type:** `String`
+      * **Waarde:** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/diskusage`
    >[!NOTE]
    >
    >Als u individuele gezondheidscontroles creeert die logisch gezien onder een samengestelde controle behoren die reeds in het dashboard door gebrek aanwezig is, zullen zij automatisch worden gevangen en onder de respectieve samengestelde controle gegroepeerd. Wegens dit, is er geen behoefte om een nieuw configuratieknooppunt voor deze controles tot stand te brengen.
@@ -190,7 +193,7 @@ Een Composite Health Check&#39;s rol bestaat erin een aantal afzonderlijke Healt
    <td><p>Deze gezondheidscontrole werd vereenvoudigd <strong>in AEM 6.4</strong>, en controleert nu onlangs-refactored <code>Oak QueryStats</code> MBean, meer bepaald het <code>SlowQueries </code>attribuut. Als de statistieken om het even welke langzame vragen bevatten, dan keert de gezondheidscontrole een waarschuwing terug. Anders wordt de status OK geretourneerd.<br /> </p> <p>De MBean voor deze gezondheidscontrole is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DqueriesStatus%2Ctype%3DHealthCheck">org.apache.sling.health check:name=queryStatus,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
-   <td>Wachtrij-lengte</td>
+   <td>Lengte van waarnemingswachtrij</td>
    <td><p>De Lengte van de Rij van de observatie herhaalt over alle Lijsten van de Gebeurtenis en Achtergrondwaarnemers, vergelijkt hun <code>queueSize </code>met hun <code>maxQueueSize</code> en:</p>
     <ul>
      <li>Hiermee wordt de status Kritiek geretourneerd als de <code>queueSize</code> waarde de <code>maxQueueSize</code> waarde overschrijdt (dat wil zeggen wanneer gebeurtenissen worden neergezet)</li>
@@ -303,7 +306,7 @@ Een Composite Health Check&#39;s rol bestaat erin een aantal afzonderlijke Healt
    <td>Cachecontrole code</td>
    <td><p>Dit is een Health Check die verschillende JVM-omstandigheden controleert die een CodeCache-bug in Java 7 kunnen activeren:</p>
     <ul>
-     <li>retourneert Waarschuwen als de instantie wordt uitgevoerd in Java 7, waarbij Cacheblozen voor code is ingeschakeld</li>
+     <li>retourneert Waarschuwen als de instantie wordt uitgevoerd in Java 7, waarbij Cachegeheugen leegmaken is ingeschakeld</li>
      <li>retourneert Waarschuwen als de instantie wordt uitgevoerd in Java 7 en de grootte van de gereserveerde codecache is kleiner dan een minimumdrempel (de standaardwaarde is 90 MB)</li>
     </ul> <p>De <code>minimum.code.cache.size</code> drempel kan worden geconfigureerd. Voor meer informatie over de bug, <a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8012547">controleer</a><a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8012547"></a><a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8012547"></a><a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8012547"> deze pagina</a>.</p> <p>De MBean voor deze health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DcodeCacheHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.health check:name=codeCacheHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
@@ -512,7 +515,7 @@ De interface kan worden gebruikt om indexen in de tabel te filteren door de filt
 
 ### Statuspostcode downloaden {#download-status-zip}
 
-Hierdoor wordt het downloaden van een ritssluiting met nuttige informatie over de systeemstatus en configuratie geactiveerd. Het archief bevat instantieconfiguraties, een lijst met bundels, OSGI-, Sling-meetgegevens en statistische gegevens. Dit kan resulteren in een groot bestand. U kunt het effect van grote statusbestanden verminderen door het ZIP- **venster** Downloadstatus te gebruiken. **Het venster is toegankelijk via: AEM > Gereedschappen > Bewerkingen > Diagnose > Statuspostcode downloaden.**
+Hierdoor wordt het downloaden van een ritssluiting met nuttige informatie over de systeemstatus en configuratie geactiveerd. Het archief bevat instantieconfiguraties, een lijst met bundels, OSGI-, Sling-meetgegevens en statistische gegevens. Dit kan resulteren in een groot bestand. U kunt het effect van grote statusbestanden verminderen door het ZIP- **venster** Downloadstatus te gebruiken. Het venster is toegankelijk via:**AEM > Gereedschappen > Bewerkingen > Diagnose > Statuspostcode downloaden.**
 
 In dit venster kunt u selecteren wat u wilt exporteren (logbestanden en of thread-dumps) en het aantal dagen logbestanden dat is opgenomen in de download ten opzichte van de huidige datum.
 
@@ -543,7 +546,7 @@ De volgende taken zijn beschikbaar in het Dashboard van Verrichtingen:
 1. De **onderhoudstaak** van het Logboek van de Controle, die onder het menu van het Venster **van het** Wekelijkse Onderhoud wordt gevestigd.
 1. De **taak van het Onderhoud** van de Weigering van de Versie, die onder het **Wekelijkse menu van het Venster** van het Onderhoud wordt gevestigd.
 
-De standaardtiming voor het dagelijkse onderhoudsvenster is 2 tot 5 AM. De taken die in het wekelijkse onderhoudsvenster worden gevormd zullen tussen 1 en 2 AM op Verzadigdagen uitvoeren.
+De standaardtiming voor het dagelijkse onderhoudsvenster is 2 tot 5 AM. De taken die worden geconfigureerd om te worden uitgevoerd in het wekelijkse onderhoudsvenster, worden uitgevoerd tussen 1 en 2 uur &#39;s nachts.
 
 U kunt de timing ook configureren door op het tandwielpictogram te drukken op een van de twee onderhoudskaarten:
 
@@ -566,7 +569,7 @@ Hoewel de onderhoudstaak werd ontwikkeld om op Lucene betrekking hebbende revisi
 * De wekelijkse uitvoering van de taak van de huisvuilinzameling van de gegevensopslag zal sneller voltooien
 * Het kan ook de algehele AEM-prestaties licht verbeteren
 
-U kunt tot de taak van de Opruiming van de Bindingen van Lucene van toegang hebben: **AEM > Gereedschappen > Bewerkingen > Onderhoud > Dagelijks onderhoud > Overbodig onderhoud > Overbodig verwijderen** van Lucene Binaries.
+U kunt tot de taak van de Opruiming van de Bindingen van Lucene van toegang hebben: **AEM > Gereedschappen > Bewerkingen > Onderhoud > Dagelijks onderhoud > Overbodig schoonmaken** van Lucene Binaries.
 
 ### Opruimverzameling gegevensopslag {#data-store-garbage-collection}
 
@@ -626,25 +629,25 @@ De het onderhoudstaken van de douane kunnen als diensten worden uitgevoerd OSGi.
    <td><strong>Type</strong></td>
   </tr>
   <tr>
-   <td>granite.Maintenance.isStoppable</td>
+   <td>granite.maintenance.isStoppable</td>
    <td>Booleaanse eigenschap die definieert of de taak door de gebruiker kan worden gestopt. Als een taak verklaart dat het stopbaar is moet het tijdens zijn uitvoering controleren of het is tegengehouden en dan dienovereenkomstig handelen. De standaardwaarde is false.</td>
    <td>true</td>
    <td>Optioneel</td>
   </tr>
   <tr>
-   <td>graniet.onderhoud.verplicht</td>
+   <td>granite.maintenance.mandatory</td>
    <td>Booleaanse eigenschap die definieert of een taak verplicht is en periodiek moet worden uitgevoerd. Als een taak verplicht is maar momenteel niet in een actief planningsvenster staat, zal een Health Check dit als een fout rapporteren. De standaardwaarde is false.</td>
    <td>true</td>
    <td>Optioneel</td>
   </tr>
   <tr>
-   <td>granite.onderhoud.name</td>
+   <td>granite.maintenance.name</td>
    <td>Een unieke naam voor de taak - dit wordt gebruikt om naar de taak te verwijzen. Dit is meestal een eenvoudige naam.</td>
    <td>MyMaintenanceTask</td>
    <td>Vereist</td>
   </tr>
   <tr>
-   <td>granite.Maintenance.title</td>
+   <td>granite.maintenance.title</td>
    <td>Een titel die wordt weergegeven voor deze taak</td>
    <td>Mijn speciale onderhoudstaken</td>
    <td>Vereist</td>
@@ -761,7 +764,7 @@ U kunt ook een `JSON` bestand downloaden met een overzicht van de dashboardgegev
    <td>N.v.t.</td>
   </tr>
   <tr>
-   <td>Instance</td>
+   <td>Instantie</td>
    <td>
     <ul>
      <li>de AEM-versie</li>
@@ -772,7 +775,7 @@ U kunt ook een `JSON` bestand downloaden met een overzicht van de dashboardgegev
    <td>N.v.t.</td>
   </tr>
   <tr>
-   <td> Bewaarplaats</td>
+   <td>Bewaarplaats</td>
    <td>
     <ul>
      <li>de eik-versie</li>

@@ -4,7 +4,7 @@ description: Leer de taken voor middelenbeheer, zoals het uploaden, downloaden, 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
+source-git-commit: afed13a2f832b91d0df825d1075852cc84443646
 workflow-type: tm+mt
 source-wordcount: '9087'
 ht-degree: 3%
@@ -16,7 +16,7 @@ ht-degree: 3%
 
 In [!DNL Adobe Experience Manager Assets] kunt u meer doen dan alleen uw elementen opslaan en beheren. [!DNL Experience Manager] biedt mogelijkheden voor middelenbeheer op bedrijfsniveau. U kunt elementen bewerken en delen, geavanceerde zoekopdrachten uitvoeren, meerdere uitvoeringen van tientallen ondersteunde bestandsindelingen maken, versies en digitale rechten beheren, de verwerking van elementen automatiseren, metagegevens beheren en besturen, samenwerken met annotaties en nog veel meer.
 
-In dit artikel worden de basistaken voor middelenbeheer beschreven, zoals het maken of uploaden van bedrijfsmiddelen. updates van metagegevens; kopiëren, verplaatsen en verwijderen; publiceert, publiceert en doorzoekt elementen. Zie [Aan de slag met de gebruikersinterface](/help/sites-authoring/basic-handling.md)voor elementen om de gebruikersinterface te begrijpen. Zie [Inhoud-fragmenten](content-fragments-managing.md) beheren voor informatie over het beheren van inhoudsfragmenten.
+In dit artikel worden de basistaken voor middelenbeheer beschreven, zoals het maken of uploaden van bedrijfsmiddelen. updates van metagegevens; kopiëren, verplaatsen en verwijderen; publiceert, publiceert en doorzoekt elementen. Zie [Aan de slag met de gebruikersinterface](/help/sites-authoring/basic-handling.md)voor elementen om de gebruikersinterface te begrijpen. Zie [Inhoud-fragmenten](/help/assets/content-fragments/content-fragments-managing.md) beheren voor informatie over het beheren van inhoudsfragmenten.
 
 ## Mappen maken {#creating-folders}
 
@@ -113,7 +113,7 @@ Voordat u een element uploadt, moet u ervoor zorgen dat dit een [indeling](/help
 
    [!DNL Experience Manager Assets] Hiermee voorkomt u dat elementen met de verboden tekens in de bestandsnaam worden geüpload. Als u een element probeert te uploaden met een bestandsnaam die een niet-toegestaan teken of meer bevat, wordt een waarschuwingsbericht weergegeven en wordt het uploaden gestopt totdat u deze tekens verwijdert of uploadt met een toegestane naam. [!DNL Assets]
 
-   In het [!UICONTROL Upload Assets] dialoogvenster kunt u lange namen opgeven voor de bestanden die u uploadt, zodat deze passen bij specifieke naamconventies voor bestanden voor uw organisatie.
+   In het [!UICONTROL Upload Assets] dialoogvenster kunt u lange namen opgeven voor de bestanden die u uploadt, zodat u de specifieke naamconventies voor bestanden voor uw organisatie kunt gebruiken.
 
    De volgende tekens (lijst met door spaties gescheiden tekens) worden echter niet ondersteund:
 
@@ -506,7 +506,7 @@ De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeelte
 
    **Een vertoning verwijderen**
 
-   Selecteer een vertoning in het **[!UICONTROL Renditions]** deelvenster en klik op het **[!UICONTROL Delete Rendition]** pictogram op de werkbalk. Uitvoeringen kunnen niet bulksgewijs worden verwijderd nadat de verwerking van het element is voltooid. Voor afzonderlijke elementen kunt u uitvoeringen handmatig uit de gebruikersinterface verwijderen. Voor meerdere elementen kunt u Experience Manager aanpassen om specifieke vertoningen te verwijderen of de elementen te verwijderen en de verwijderde elementen opnieuw te uploaden.
+   Selecteer een vertoning in het **[!UICONTROL Renditions]** deelvenster en klik op het **[!UICONTROL Delete Rendition]** pictogram op de werkbalk. Uitvoeringen kunnen niet bulksgewijs worden verwijderd nadat de verwerking van het element is voltooid. Voor afzonderlijke elementen kunt u uitvoeringen handmatig uit de gebruikersinterface verwijderen. Voor meerdere elementen kunt u Experience Manager aanpassen om specifieke uitvoeringen te verwijderen of de elementen te verwijderen en de verwijderde elementen opnieuw te uploaden.
 
    ![Optie om een vertoning te verwijderen](assets/delete_renditionicon.png)
 
@@ -565,7 +565,7 @@ Schakel ook de knop forceren verwijderen uit met behulp van een overlay, zodat g
 
 ## Elementen downloaden {#downloading-assets}
 
-Zie Elementen [downloaden van Experience Manager](/help/assets/download-assets-from-aem.md).
+Zie [Elementen downloaden van Experience Manager](/help/assets/download-assets-from-aem.md).
 
 ## Publish assets {#publishing-assets}
 
@@ -637,7 +637,7 @@ CUG&#39;s zijn een extra manier om de toegang tot uw elementen te beperken. U ku
 
 Het zoeken naar middelen is van cruciaal belang voor het gebruik van een systeem voor het beheer van digitale activa — of het nu gaat om verder gebruik door creatieve ondernemingen, voor een robuust beheer van activa door zakelijke gebruikers en marketeers, of voor beheer door DAM-beheerders.
 
-Voor eenvoudige, geavanceerde, en douaneonderzoeken om de meest aangewezen activa te ontdekken en te gebruiken, zie [onderzoeksactiva in de Manager](search-assets.md)van de Ervaring.
+Zie [Zoeken in Experience Manager](search-assets.md)voor eenvoudige, geavanceerde en aangepaste zoekopdrachten om de meest geschikte middelen te zoeken en te gebruiken.
 
 ## Snelle acties {#quick-actions}
 
@@ -732,7 +732,7 @@ In de tijdlijn kunt u verschillende gebeurtenissen voor een geselecteerd item we
 
 >[!NOTE]
 >
->De tijdlijn bevat verschillende [opties die specifiek zijn voor inhoudsfragmenten](/help/assets/content-fragments-managing.md#timeline-for-content-fragments).
+>De tijdlijn bevat verschillende [opties die specifiek zijn voor inhoudsfragmenten](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
 
 ## Elementen notities aanbrengen {#annotating}
 
@@ -742,7 +742,7 @@ Videoannotaties worden alleen ondersteund in browsers met HTML5-compatibele vide
 
 >[!NOTE]
 >
->Voor inhoudsfragmenten worden [annotaties gemaakt in de fragmenteditor](/help/assets/content-fragments-variations.md#annotating-a-content-fragment).
+>Voor inhoudsfragmenten worden [annotaties gemaakt in de fragmenteditor](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment).
 
 1. Navigeer naar de locatie van het element waaraan u annotaties wilt toevoegen.
 1. Klik op het **[!UICONTROL Annotate]** pictogram op een van de volgende manieren:
@@ -867,7 +867,7 @@ Als een element annotaties in vreemde talen bevat (vooral niet-Latijnse talen), 
 1. Open de configuratiepagina CQ-DAM-Handler-Gibson Font Manager Service via de URL `https://[aem_server]:[port]/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl`.
 1. Voer een van de volgende handelingen uit om CQ-DAM-Handler-Gibson Font Manager Service te configureren:
 
-   * Geef in de directory System Fonts (Systeemlettertypen) het volledige pad naar de map Fonts op uw systeem op. Als u bijvoorbeeld een Mac-gebruiker bent, kunt u het pad opgeven als */Bibliotheek/Fonts* in de optie Systeemlettertypen. [!DNL Experience Manager] haalt de lettertypen op uit deze map.
+   * Geef in de directory Systeemlettertypen het volledige pad naar de map met lettertypen op uw systeem op. Als u bijvoorbeeld een Mac-gebruiker bent, kunt u het pad opgeven als */Bibliotheek/Fonts* in de optie Systeemlettertypen. [!DNL Experience Manager] haalt de lettertypen op uit deze map.
    * Maak een map met de naam `fonts` in de ``crx-quickstart`` map. CQ-DAM-Handler-Gibson Font Manager Service haalt de lettertypen automatisch op de locatie op `crx-quickstart/fonts`. U kunt dit standaardpad overschrijven vanuit de directory Adobe Server Fonts.
 
    * Maak een nieuwe map voor lettertypen op uw systeem en sla de gewenste lettertypen op in de map. Geef vervolgens het volledige pad naar die map op in de directory met lettertypen voor klanten.

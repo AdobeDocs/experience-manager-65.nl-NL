@@ -12,7 +12,10 @@ discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: a430c4de89bde3b907d342106465d3b5a7c75cc8
+workflow-type: tm+mt
+source-wordcount: '3452'
+ht-degree: 1%
 
 ---
 
@@ -93,7 +96,7 @@ Het mechanisme om logica en verschijning te scheiden helpt verduidelijken wat vo
 
 ### Java gebruiken {#using-java}
 
-[De HTML Java Use-API laat een HTML- dossier toe om helpermethodes in een douaneJava klasse](https://helpx.adobe.com/experience-manager/htl/using/use-api-java.html)toegang te hebben. Hierdoor kunt u Java-code gebruiken om de logica voor het selecteren en configureren van de inhoud van de component te implementeren.
+[Met de HTML Java Use-API kan een HTML-bestand toegang krijgen tot hulplijnmethoden in een aangepaste Java-klasse](https://helpx.adobe.com/experience-manager/htl/using/use-api-java.html). Hierdoor kunt u Java-code gebruiken om de logica voor het selecteren en configureren van de inhoud van de component te implementeren.
 
 ### Werken met JavaScript {#using-javascript}
 
@@ -133,7 +136,7 @@ Dialogen worden gebruikt om auteur toe te staan om met de component in wisselwer
 
 [De graniet-interface biedt een groot aantal basiscomponenten (widgets)](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) die nodig zijn om een dialoogvenster in de ontwerpomgeving te maken. Indien nodig kunt u deze selectie uitbreiden en uw eigen widget [maken](#creatinganewwidget).
 
-Zie voor meer informatie over het ontwikkelen van componenten met behulp van koralen en graniet de volgende bronnen: De componenten van de Manager van de Ervaring van de [bouw die Koraal/Granite middeltypes](https://helpx.adobe.com/experience-manager/using/aem64_coral_resourcetypes.html)gebruiken.
+Zie voor meer informatie over het ontwikkelen van componenten met behulp van koralen en graniet de volgende bronnen: [Experience Manager-componenten maken met gebruik van koraal/graniet-brontypen](https://helpx.adobe.com/experience-manager/using/aem64_coral_resourcetypes.html).
 
 Zie voor meer informatie:
 
@@ -447,7 +450,7 @@ Bij het migreren van een component die is ontworpen voor gebruik met de klassiek
 
    * Het gebruik van [HTML](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) is niet verplicht, maar als uw component moet worden bijgewerkt, is het ideale moment om te overwegen om van JSP naar HTML [te](/help/sites-developing/components-basics.md#htl-vs-jsp)migreren.
 
-* Componenten
+* Onderdelen
 
    * Code migreren [ `cq:listener`](/help/sites-developing/developing-components.md#migrating-cq-listener-code) die klassieke UI-specifieke functies gebruikt
    * De stop van RTE, voor verdere informatie zie het [Vormen van de Rich Redacteur](/help/sites-administering/rich-text-editor.md)van de Tekst.
@@ -496,4 +499,4 @@ U hoeft alleen een `README.md` bestand in de componentstructuur te plaatsen. Dez
 
 ![chlimage_1-7](assets/chlimage_1-7.png)
 
-De ondersteunde markering is gelijk aan die voor [inhoudsfragmenten](/help/assets/content-fragments-markdown.md).
+De ondersteunde markering is gelijk aan die voor [inhoudsfragmenten](/help/assets/content-fragments/content-fragments-markdown.md).

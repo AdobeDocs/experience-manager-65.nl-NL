@@ -1,21 +1,21 @@
 ---
-title: Adobe Experience Manager voor de Adobe Creative Cloud-map waarin tips en trucs worden gedeeld
-description: Configureer Adobe Experience Manager zodat gebruikers in Experience Manager-middelen mappen kunnen uitwisselen met gebruikers van Adobe Creative Cloud (CC).
+title: Adobe Experience Managers naar Adobe Creative Cloud-map met beste praktijken
+description: Configureer Adobe Experience Manager zodat gebruikers in Experience Manager Assets mappen kunnen uitwisselen met gebruikers van Adobe Creative Cloud (CC).
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
 workflow-type: tm+mt
-source-wordcount: '1082'
+source-wordcount: '1079'
 ht-degree: 0%
 
 ---
 
 
-# Adobe Experience Manager voor het delen van Adobe Creative Cloud-mappen {#aem-to-creative-cloud-folder-sharing-best-practices}
+# Adobe Experience Managers naar Adobe Creative Cloud-map delen {#aem-to-creative-cloud-folder-sharing-best-practices}
 
 >[!CAUTION]
 >
->De functie Experience Manager voor het delen van Creative Cloud-mappen is verouderd. Adobe raadt u ten zeerste aan nieuwere mogelijkheden te gebruiken, zoals [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) of de bureaubladtoepassing [van](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)Experience Manager. Meer informatie vindt u in [Experience Manager en in de beste werkwijzen](/help/assets/aem-cc-integration-best-practices.md)voor Creative Cloud-integratie.
+>De functie voor het delen van mappen tussen Experience Manager en Creative Cloud is verouderd. Adobe raadt u ten zeerste aan om nieuwere mogelijkheden te gebruiken, zoals [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) of [Experience Manager-bureaubladtoepassing](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html). Meer informatie over beste praktijken [bij de integratie van](/help/assets/aem-cc-integration-best-practices.md)Experience Manager en Creative Cloud.
 
 Adobe Experience Manager kan zo worden geconfigureerd dat gebruikers in Middelen mappen kunnen delen met gebruikers van Adobe Creative Cloud-toepassingen, zodat ze beschikbaar zijn als gedeelde mappen in de Adobe Creative Cloud Assets-service. De functie kan worden gebruikt om bestanden uit te wisselen tussen creatieve teams en gebruikers van middelen, vooral wanneer creatieve gebruikers geen toegang hebben tot de instantie Assets (ze bevinden zich niet op het bedrijfsnetwerk).
 
@@ -26,11 +26,11 @@ Dit type integratie kan in de volgende gebruiksgevallen worden gebruikt, vooral 
 
 >[!NOTE]
 >
->Voordat u dit document leest, kunt u de algemene best practices [voor](/help/assets/aem-cc-integration-best-practices.md) Experience Manager en Creative Cloud-integratie doornemen voor een overzicht op een hoger niveau van het onderwerp.
+>Voordat u dit document leest, kunt u de algemene best practices [voor](/help/assets/aem-cc-integration-best-practices.md) Experience Manager- en Creative Cloud-integratie doornemen voor een overzicht op een hoger niveau van het onderwerp.
 
 ## Overzicht {#overview}
 
-Experience Manager voor het delen van Creative Cloud-mappen is afhankelijk van het delen van mappen en bestanden aan de serverzijde tussen Middelen en Creative Cloud-accounts. Creatieve professionals die de Creative Cloud-bureaubladtoepassing op hun bureaublad gebruiken, kunnen de gedeelde mappen bovendien rechtstreeks op hun schijven beschikbaar stellen met behulp van Adobe CreativeSync-technologie.
+Voor het delen van mappen naar Creative Cloud is het afhankelijk van het delen van mappen en bestanden op de server tussen Middelen en Creative Cloud-accounts. Creatieve professionals die de Creative Cloud-bureaubladtoepassing op hun bureaublad gebruiken, kunnen de gedeelde mappen bovendien rechtstreeks op hun schijven beschikbaar stellen met behulp van Adobe CreativeSync-technologie.
 
 Het volgende diagram geeft een overzicht van de integratie.
 
@@ -38,31 +38,31 @@ Het volgende diagram geeft een overzicht van de integratie.
 
 De integratie omvat de volgende elementen:
 
-* **De Server** van de Activa van de Manager van de ervaring die in het ondernemingsnetwerk (beheerde diensten of op-gebouw) wordt opgesteld: Hier wordt het delen van mappen gestart.
-* **Adobe Marketing Cloud Assets Core-service**: Fungeert als tussenpersoon tussen Experience Manager en Creative Cloud-opslagservices. Beheerders van het bedrijf dat de integratie gebruikt, moeten een vertrouwensrelatie tot stand brengen tussen de organisatie Marketing Cloud en de instantie Assets. Ze [definiëren ook een lijst met goedgekeurde Creative Cloud-medewerkers](https://marketing.adobe.com/resources/help/en_US/mcloud/t_admin_add_cc_user.html)die gebruikers van middelen ook mappen kunnen delen voor extra beveiliging.
+* **Experience Manager Assets-server** geïmplementeerd in het bedrijfsnetwerk (beheerde services of on-premise): Hier wordt het delen van mappen gestart.
+* **Adobe Marketing Cloud Assets core service**: Fungeert als tussenpersoon tussen Experience Manager en Creative Cloud-opslagservices. Beheerders van het bedrijf dat de integratie gebruikt, moeten een vertrouwensrelatie tot stand brengen tussen de organisatie Marketing Cloud en de instantie Assets. Ze [definiëren ook een lijst met goedgekeurde Creative Cloud-medewerkers](https://docs.adobe.com/content/help/en/core-services/interface/assets/t-admin-add-cc-user.html)die gebruikers van middelen ook mappen kunnen delen voor extra beveiliging.
 
 * **Creative Cloud Assets-webservices** (webinterface voor opslag en Creative Cloud Files): Op deze manier kunnen specifieke gebruikers van de Creative Cloud-app met wie een map Middelen is gedeeld, de uitnodiging accepteren en de map bekijken in hun opslag van Creative Cloud-account.
 * **Creative Cloud-bureaubladtoepassing**: (Optioneel) Hiermee kunt u rechtstreeks via synchronisatie met Creative Cloud Assets-opslag toegang krijgen tot gedeelde mappen/bestanden vanaf het bureaublad van de creatieve gebruiker.
 
 ## Kenmerken en beperkingen {#characteristics-and-limitations}
 
-* **Eenvoudige doorgave van wijzigingen:** Bestandswijzigingen worden alleen in één richting doorgegeven, vanuit het systeem (Experience Manager of Creative Cloud Assets) waar het element oorspronkelijk is gemaakt (geüpload). De integratie biedt geen volledig geautomatiseerde, tweezijdige synchronisatie tussen de twee systemen.
+* **Eenvoudige doorgave van wijzigingen:** Bestandswijzigingen worden alleen in één richting doorgegeven, vanaf het systeem (Experience Manager of Creative Cloud Assets) waar het element oorspronkelijk is gemaakt (geüpload). De integratie biedt geen volledig geautomatiseerde, tweezijdige synchronisatie tussen de twee systemen.
 * **Versioning:**
 
-   * Experience Manager maakt alleen versies van een element op updates als het bestand is gestart in Experience Manager en daar wordt bijgewerkt.
+   * Experience Manager maakt bij updates alleen versies van een element als het bestand in Experience Manager is gestart en daar is bijgewerkt.
    * Creative Cloud Assets beschikt over een eigen [versiefunctie](https://helpx.adobe.com/creative-cloud/help/versioning-faq.html) die is gericht op Werk in uitvoering-updates (slaat updates in principe maximaal 10 dagen op)
 
-* **Ruimtebeperkingen:** Grootte en volumes van uitgewisselde bestanden worden beperkt door het specifieke quotum [voor](https://helpx.adobe.com/creative-cloud/kb/file-storage-quota.html) Creative Cloud-middelen voor creatieve gebruikers (afhankelijk van het abonnementsniveau) en een limiet van 5 GB voor de bestandsgrootte. De ruimte wordt bovendien beperkt door de quota voor middelen die de organisatie heeft in de Adobe Marketing Cloud Assets core-service.
+* **Ruimtebeperkingen:** Grootte en volumes van uitgewisselde bestanden worden beperkt door het specifieke quotum [voor](https://helpx.adobe.com/creative-cloud/kb/file-storage-quota.html) Creative Cloud-middelen voor creatieve gebruikers (afhankelijk van het abonnementsniveau) en een limiet van 5 GB voor de bestandsgrootte. De ruimte wordt bovendien beperkt door het assetquotum dat de organisatie heeft in de kernservice Adobe Marketing Cloud Assets.
 
-* **Ruimtevereisten:** De bestanden in gedeelde mappen moeten ook fysiek worden opgeslagen in Experience Manager en vervolgens in Creative Cloud-account, met een kopie in cache in de Marketing Cloud Assets Core-service.
+* **Ruimtevereisten:** De bestanden in gedeelde mappen moeten ook fysiek worden opgeslagen in Experience Manager en vervolgens in een Creative Cloud-account, met een kopie in cache in de Marketing Cloud Assets Core-service.
 * **Netwerken en bandbreedte:** De bestanden in gedeelde mappen en alle updates moeten via het netwerk tussen de systemen worden getransporteerd. Zorg ervoor dat alleen relevante bestanden en updates worden gedeeld.
-* **Maptype**: Het delen van een map met middelen van het type `sling:OrderedFolder`, wordt niet ondersteund in de context van delen in Adobe Marketing Cloud. Als u een map wilt delen, selecteert u bij het maken ervan in Elementen niet de optie Geordend.
+* **Maptype**: Het delen van een map Middelen van het type `sling:OrderedFolder`wordt niet ondersteund bij het delen in Adobe Marketing Cloud. Als u een map wilt delen, selecteert u bij het maken ervan in Elementen niet de optie Geordend.
 
 ## Best practices {#best-practices}
 
-De aanbevolen procedures voor het gebruik van Experience Manager voor het delen van Creative Cloud-mappen zijn:
+Aanbevolen procedures voor het delen van Experience Manager naar Creative Cloud-mappen zijn:
 
-* **Overwegingen voor volume:** Met Experience Manager/Creative Cloud Mapdeling kunt u kleinere bestanden delen, bijvoorbeeld voor een specifieke campagne of activiteit. Als u grotere sets middelen wilt delen, zoals alle goedgekeurde middelen in de organisatie, gebruikt u andere distributiemethoden (bijvoorbeeld Assets Brand Portal) of Experience Manager-bureaubladtoepassing.
+* **Overwegingen voor volume:** Mapdeling via Experience Manager/Creative Cloud moet worden gebruikt om een kleiner aantal bestanden te delen, bijvoorbeeld voor een specifieke campagne of activiteit. Als u grotere sets middelen wilt delen, zoals alle goedgekeurde middelen in de organisatie, gebruikt u andere distributiemethoden (bijvoorbeeld Assets Brand Portal) of de Experience Manager-bureaubladtoepassing.
 
 * **Vermijd het delen van diepe hiërarchieën:** Het delen werkt recursief en maakt het niet mogelijk selectief te delen. Gewoonlijk worden alleen mappen zonder submappen of met een zeer oppervlakkige hiërarchie, zoals 1 submapniveau, beschouwd als gedeelde mappen.
 * **Afzonderlijke mappen voor delen in één richting:** Afzonderlijke mappen moeten worden gebruikt voor het delen van definitieve middelen van middelen naar Creative Cloud-bestanden en voor het delen van creatieve middelen van Creative Cloud-bestanden naar middelen. Samen met een goede naamgevingsconventie voor deze mappen, wordt er een beter te begrijpen werkomgeving gemaakt voor zowel Middelen als Creative Cloud-gebruikers.

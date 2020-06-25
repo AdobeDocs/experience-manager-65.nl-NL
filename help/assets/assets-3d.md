@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 56c9bc1ea99dcb93af21d8b26bac8792512f4d42
 workflow-type: tm+mt
-source-wordcount: '2230'
+source-wordcount: '2233'
 ht-degree: 2%
 
 ---
@@ -30,9 +30,11 @@ Er is geen aanvullende configuratie vereist voor het gebruik van 3D-elementen in
 
 <!-- See also [Dynamic Media 3D Release Notes](/help/release-notes/aem3d-release-notes.md). -->
 
-## Ondersteunde 3D-bestandsindelingen in Dynamic Media {#supported-three-d-file-formats-in-dm}
+## 3D-indelingen die worden ondersteund in Dynamic Media {#supported-three-d-file-formats-in-dm}
 
-Dynamic Media ondersteunen de volgende 3D-bestandsindelingen:
+Dynamic Media ondersteunen de volgende 3D-indelingen.
+
+Zie ook ondersteunde [3D-indelingen.](/help/assets/assets-formats.md)
 
 | 3D-bestandsextensie | Bestandsindeling | MIME-type | Opmerkingen |
 |---|---|---|---|

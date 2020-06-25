@@ -3,9 +3,9 @@ title: Ondersteunde bestandsindelingen voor verwerking in [!DNL Adobe Experience
 description: Bestandsindelingen en MIME-typen die worden ondersteund door [!DNL Assets] en [!DNL Dynamic Media] en de functies die worden ondersteund voor elke indeling.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
+source-git-commit: f47f5e45c64e3cbbe0b68d449a5ef8d4b7dd7f38
 workflow-type: tm+mt
-source-wordcount: '1608'
+source-wordcount: '1647'
 ht-degree: 2%
 
 ---
@@ -69,6 +69,21 @@ Naast bovenstaande informatie, moet u rekening houden met het volgende:
 * Zie de bestandsindelingen [!DNL Dynamic Media] [Adobe Illustrator (AI), Postscript (EPS) en PDF voor informatie over het weergeven en genereren van dynamische uitvoeringen voor EPS-bestanden.](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
 * Voor EPS-bestanden wordt terugschrijven van metagegevens ondersteund in PostScript Document Structuring Convention (PS-Adobe) versie 3.0 of hoger.
+
+## Ondersteunde 3D-indelingen {#support-3d-formats}
+
+De volgende lijst met 3D-indelingen wordt ondersteund.
+
+Zie [Werken met 3D-elementen in Dynamic Media.](/help/assets/assets-3d.md)
+
+| Format | Opslag | Versioning | Workflow | Publiceren | Toegangsbeheer | Voorvertoning miniatuur | 3D-voorvertoning | Levering Dynamic Media |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| DN | ✓ | ✓ | ✓ |  | ✓ | ✓ |  |  |
+| gLB | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
+| gLTF | ✓ | ✓ | ✓ |  | ✓ |  | ✓ |  |
+| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
+| STL | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
+| USDz | ✓ | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
 
 ## Niet-ondersteunde rasterafbeeldingsindelingen in Dynamic Media {#unsupported-image-formats-dynamic-media}
 

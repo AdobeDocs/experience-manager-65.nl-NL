@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 91833914-b811-4355-a97d-e1a9cb7441f1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 58a06c1a16c62bffad2893fbec0b32d2ce7267a7
+source-git-commit: 1b200f9dd5fc99b37bcc629be7a785e02e8320c0
+workflow-type: tm+mt
+source-wordcount: '2454'
+ht-degree: 0%
 
 ---
 
@@ -29,27 +32,27 @@ Nadat een gemeenschapssite is gemaakt, kan inhoud aan de resulterende pagina&#39
 
 ## Community-functieconsole {#community-functions-console}
 
-In het auteursmilieu, om de console van communautaire functies te bereiken:
+Om de console van communautaire functies in het auteursmilieu te bereiken:
 
-* Vanuit globale navigatie: **[!UICONTROL Gereedschappen]** > **[!UICONTROL Gemeenschappen]** > **[!UICONTROL Communautaire functies]**.
+* Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Communities]** > **[!UICONTROL Community Functions]**.
 
-![chlimage_1-106](assets/chlimage_1-106.png)
+![chlimage_1-379](assets/chlimage_1-379.png)
 
 ## Vooraf gebouwde functies {#pre-built-functions}
 
-Hieronder volgt een korte beschrijving van de functies die aan AEM-gemeenschappen worden geleverd. Elke functie bevat een of meer AEM-pagina&#39;s die onderdelen van een Community bevatten die zijn samengevoegd tot een functie die eenvoudig kan worden opgenomen in een [community-sitesjabloon](/help/communities/sites.md).
+Hier volgt een korte beschrijving van de functies die bij AEM Communities worden geleverd. Elke functie bevat een of meer AEM-pagina&#39;s die onderdelen van een Community bevatten die zijn samengevoegd tot een functie die eenvoudig kan worden opgenomen in een [community-sitesjabloon](/help/communities/sites.md).
 
 Een communitysitesjabloon biedt de structuur voor een communitysite, zoals aanmeldingsgegevens, gebruikersprofielen, meldingen, berichten, berichten, het menu van de site, zoeken, thema&#39;s en brandingfuncties.
 
 ### Instellingen voor Titel en URL {#title-and-url-settings}
 
-**Titel **en **URL **zijn eigenschappen gemeenschappelijk voor alle communautaire functies.
+**Titel** en **URL** zijn eigenschappen die voor alle communautaire functies gelden.
 
 Wanneer een communautaire functie aan een malplaatje van de communautaire plaats wordt toegevoegd of toegevoegd wanneer het [wijzigen](/help/communities/sites-console.md#modifying-site-properties) van de structuur van een communautaire plaats, opent de dialoog van de functie zodat de Titel en URL kunnen worden gevormd.
 
 #### Configuratiefunctie {#configuration-function-details}
 
-![chlimage_1-107](assets/chlimage_1-107.png)
+![chlimage_1-380](assets/chlimage_1-380.png)
 
 * **Titel**
 
@@ -68,7 +71,7 @@ De URL naar de pagina is vervolgens https://localhost:4503/content/sites/engage/
 
 en de menukoppeling voor de pagina wordt weergegeven als:
 
-![chlimage_1-108](assets/chlimage_1-108.png)
+![chlimage_1-381](assets/chlimage_1-381.png)
 
 ### Functie activiteitsstroom {#activity-stream-function}
 
@@ -78,7 +81,7 @@ Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend:
 
 #### Configuratiefunctie {#configuration-function-details-1}
 
-![chlimage_1-109](assets/chlimage_1-109.png)
+![chlimage_1-382](assets/chlimage_1-382.png)
 
 * [Instellingen voor Titel en URL](#title-and-url-settings)
 
@@ -108,7 +111,7 @@ De blogfunctie is een pagina met een [blogcomponent](/help/communities/blog-feat
 
 Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend:
 
-![chlimage_1-110](assets/chlimage_1-110.png)
+![chlimage_1-383](assets/chlimage_1-383.png)
 
 * [Instellingen voor Titel en URL](#title-and-url-settings)
 
@@ -134,7 +137,7 @@ De kalenderfunctie is een pagina met een component [van de](/help/communities/ca
 
 Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend:
 
-![chlimage_1-111](assets/chlimage_1-111.png)
+![chlimage_1-384](assets/chlimage_1-384.png)
 
 * [Instellingen voor Titel en URL](#title-and-url-settings)
 
@@ -199,7 +202,7 @@ Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend:
 
 #### Configuratiefunctie {#configuration-function-details-2}
 
-![chlimage_1-112](assets/chlimage_1-112.png)
+![chlimage_1-384](assets/chlimage_1-384.png)
 
 * [Instellingen voor Titel en URL](#title-and-url-settings)
 
@@ -227,7 +230,7 @@ Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend:
 
 >[!CAUTION]
 >
->De functie groups moet *not *zijn de *eerste noch de enige* functie in de structuur van een plaats of in een malplaatje van de communautaire plaats.
+>De groepfunctie mag *niet* de *eerste of de enige* functie in de structuur van een site of in een sjabloon voor een community-site zijn.
 >
 >Alle andere functies, zoals de [paginafunctie](#page-function), moeten worden opgenomen en als eerste worden vermeld.
 
@@ -242,7 +245,7 @@ Vanaf de [eigenschapverpakking 1](/help/communities/deploy-communities.md#latest
 
 Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend:
 
-![chlimage_1-113](assets/chlimage_1-113.png)
+![chlimage_1-386](assets/chlimage_1-386.png)
 
 * [Instellingen voor Titel en URL](#title-and-url-settings)
 
@@ -265,7 +268,7 @@ De videofunctie is een pagina met één component [](/help/communities/ideation-
 
 Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend met de standaardnamen voor Titel en URL en de standaardweergave-instellingen voor de sjabloon:
 
-![chlimage_1-114](assets/chlimage_1-114.png)
+![chlimage_1-387](assets/chlimage_1-387.png)
 
 * [Instellingen voor Titel en URL](#title-and-url-settings)
 
@@ -293,7 +296,7 @@ De leaderboard-functie is een pagina met één [Leaderboard-component](/help/com
 
 Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend met de standaardnamen voor Titel en URL en de standaardweergave-instellingen voor de sjabloon:
 
-![chlimage_1-115](assets/chlimage_1-115.png)
+![chlimage_1-388](assets/chlimage_1-388.png)
 
 * [Instellingen voor Titel en URL](#title-and-url-settings)
 
@@ -324,7 +327,7 @@ De functie QnA is een pagina met een component [](/help/communities/working-with
 
 Wanneer toegevoegd aan een malplaatje, staat de configuratie beperking aan bevoorrechte leden toe:
 
-![chlimage_1-116](assets/chlimage_1-116.png)
+![chlimage_1-384](assets/chlimage_1-384.png)
 
 * [Instellingen voor Titel en URL](#title-and-url-settings)
 
@@ -352,11 +355,11 @@ Wanneer toegevoegd aan een malplaatje, staat de configuratie beperking aan bevoo
 
 De capaciteit om een communautaire functie tot stand te brengen wordt bereikt door het `Create Community Function` pictogram te selecteren dat bij de bovenkant van de console van de Functies van de Gemeenschap wordt gevestigd. Er kunnen meerdere functies worden gemaakt op basis van dezelfde AEM-blauwdruk en deze kunnen vervolgens op unieke wijze worden aangepast door het openen in de bewerkingsmodus voor auteurs.
 
-![chlimage_1-117](assets/chlimage_1-117.png)
+![chlimage_1-390](assets/chlimage_1-390.png)
 
 ### Community-functienaam {#community-function-name}
 
-![chlimage_1-118](assets/chlimage_1-118.png)
+![chlimage_1-391](assets/chlimage_1-391.png)
 
 In het deelvenster Community Function Name worden een naam, beschrijving en of de functie is ingeschakeld of uitgeschakeld geconfigureerd:
 
@@ -374,7 +377,7 @@ In het deelvenster Community Function Name worden een naam, beschrijving en of d
 
 ### AEM-vervaging {#aem-blueprint}
 
-![chlimage_1-119](assets/chlimage_1-119.png)
+![chlimage_1-392](assets/chlimage_1-392.png)
 
 In het `AEM Blueprint` deelvenster kunt u de blauwdruk selecteren die de onderliggende implementatie van de communautaire functie is.
 
@@ -386,13 +389,13 @@ Zie ook [Beheer](/help/sites-administering/msm.md)van meerdere sites.
 
 ### Miniatuur {#thumbnail}
 
-![chlimage_1-120](assets/chlimage_1-120.png)
+![chlimage_1-393](assets/chlimage_1-393.png)
 
 In het venster Miniatuur kan een afbeelding worden geüpload om te worden weergegeven in de [Community Functions-console](#community-functions-console).
 
 ## Community-functie openen {#open-community-function}
 
-![chlimage_1-121](assets/chlimage_1-121.png)
+![chlimage_1-394](assets/chlimage_1-394.png)
 
 Selecteer het `Open Community Function` pictogram om de bewerkingsmodus voor de auteur te activeren voor het ontwerpen van de pagina-inhoud en het wijzigen van de configuratie van de component(en) met functies.
 
@@ -408,6 +411,6 @@ Voor configuratiedetails, bezoek [de Componenten](/help/communities/author-commu
 
 ## Community-functie bewerken {#edit-community-function}
 
-![chlimage_1-122](assets/chlimage_1-122.png)
+![chlimage_1-395](assets/chlimage_1-395.png)
 
 Selecteer het `Edit Community Function` pictogram om de eigenschappen van de functie te bewerken met dezelfde deelvensters als het [maken van een gemeenschapsfunctie](#create-community-function), inclusief het in- of uitschakelen van de functie.

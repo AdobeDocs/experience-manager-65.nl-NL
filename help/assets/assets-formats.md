@@ -3,9 +3,9 @@ title: Ondersteunde bestandsindelingen voor verwerking in [!DNL Adobe Experience
 description: Bestandsindelingen en MIME-typen die worden ondersteund door [!DNL Assets] en [!DNL Dynamic Media] en de functies die worden ondersteund voor elke indeling.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f47f5e45c64e3cbbe0b68d449a5ef8d4b7dd7f38
+source-git-commit: 62085bdd8fa576e0d4eaeae19076d6edbf8c484a
 workflow-type: tm+mt
-source-wordcount: '1647'
+source-wordcount: '1648'
 ht-degree: 2%
 
 ---
@@ -74,7 +74,7 @@ Naast bovenstaande informatie, moet u rekening houden met het volgende:
 
 De volgende lijst met 3D-indelingen wordt ondersteund.
 
-Zie [Werken met 3D-elementen in Dynamic Media.](/help/assets/assets-3d.md)
+Zie ook [Werken met 3D-elementen in Dynamic Media.](/help/assets/assets-3d.md)
 
 | Format | Opslag | Versioning | Workflow | Publiceren | Toegangsbeheer | Voorvertoning miniatuur | 3D-voorvertoning | Levering Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|

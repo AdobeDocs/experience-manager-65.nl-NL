@@ -3,9 +3,9 @@ title: '[!DNL Adobe Camera Raw]-ondersteuning.'
 description: Leer hoe u ondersteuning voor [!DNL Adobe Camera Raw] inschakelt in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: bf840b0e13e58f961c32b0231e4b691cb47b947a
+source-git-commit: bccc937c1e1a349ab292a748c3c7b9d0c68b6199
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '345'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Afbeeldingen verwerken met Camera Raw {#camera-raw-support}
 
-U kunt de [!DNL Adobe Camera Raw] ondersteuning inschakelen voor het verwerken van Raw-bestandsindelingen, zoals CR2, NEF en RAF, en voor het renderen van afbeeldingen in de JPEG-indeling. De functionaliteit wordt ondersteund bij [!DNL Adobe Experience Manager Assets] het gebruik van het [Camera Raw-pakket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) dat beschikbaar is via Package Share of via [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg).
+U kunt de [!DNL Adobe Camera Raw] ondersteuning inschakelen voor het verwerken van Raw-bestandsindelingen, zoals CR2, NEF en RAF, en voor het renderen van afbeeldingen in de JPEG-indeling. De functionaliteit wordt ondersteund bij [!DNL Adobe Experience Manager Assets] het gebruik van het [Camera Raw-pakket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) dat beschikbaar is bij Softwaredistributie.
 
 >[!NOTE]
 >
@@ -21,7 +21,7 @@ U kunt de [!DNL Adobe Camera Raw] ondersteuning inschakelen voor het verwerken v
 
 Ga als volgt te werk om [!DNL Camera Raw] ondersteuning in [!DNL Experience Manager Assets]te schakelen:
 
-1. Download het [Camera Raw-pakket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) van het Delen van het pakket of van de Distributie [van de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg)Software.
+1. Download het [Camera Raw-pakket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) van Software Distribution.
 1. Ga naar `https://[aem_server]:[port]/workflow`. Open de **[!UICONTROL DAM Update Asset]** workflow.
 1. Open de **[!UICONTROL Process Thumbnails]** stap.
 1. Geef de volgende configuratie op het **[!UICONTROL Thumbnails]** tabblad op:

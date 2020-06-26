@@ -1,23 +1,25 @@
 ---
-title: Videoassets beheren
-description: Leer hoe u video-elementen kunt uploaden, voorvertonen, annoteren en publiceren.
+title: Video-elementen beheren in [!DNL Adobe Experience Manager].
+description: U kunt video-elementen uploaden, voorvertonen, notities aanbrengen en publiceren in [!DNL-Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 46568322e75669532734dddda91a781f45a398d4
 workflow-type: tm+mt
-source-wordcount: '718'
-ht-degree: 10%
+source-wordcount: '741'
+ht-degree: 7%
 
 ---
 
 
 # Videoassets beheren {#manage-video-assets}
 
-Leer hoe u de video-elementen beheert en bewerkt in Adobe Experience Manager Assets. Raadpleeg ook de documentatie bij [](/help/assets/video.md)dynamische media als u een licentie hebt voor het gebruik van Dynamic Media.
+De video-indeling is een essentieel onderdeel van digitale middelen van een organisatie. [!DNL Adobe Experience Manager] biedt geavanceerde aanbiedingen en functies om de volledige levenscyclus van uw video-elementen te beheren nadat deze zijn gemaakt.
+
+Leer hoe u de video-elementen in beheert en bewerkt [!DNL Adobe Experience Manager Assets]. Raadpleeg ook de documentatie bij [!DNL Dynamic Media]video over [](/help/assets/video.md)Dynamic Media als u een gebruikslicentie hebt.
 
 ## Video-elementen uploaden en voorvertonen {#upload-and-preview-video-assets}
 
-Adobe Experience Manager Assets genereert voorvertoningen voor video-elementen met de extensie MP4. Als de indeling van het element niet MP4 is, installeert u het MPEG-pakket om een voorvertoning te genereren. MPEG maakt video-uitvoeringen van het type OGG en MP4. U kunt deze vertoningen voorvertonen in de gebruikersinterface Elementen.
+[!DNL Adobe Experience Manager Assets] Hiermee genereert u voorvertoningen voor video-elementen met de extensie MP4. Als de indeling van het element niet MP4 is, installeert u het MPEG-pakket om een voorvertoning te genereren. MPEG maakt video-uitvoeringen van het type OGG en MP4. U kunt een voorvertoning van de uitvoeringen weergeven in de gebruikersinterface Elementen.
 
 1. Navigeer in de map Digital Assets of in de submappen naar de locatie waar u digitale elementen wilt toevoegen.
 1. Als u het element wilt uploaden, klikt u op **[!UICONTROL Create]** de werkbalk en kiest u **[!UICONTROL Files]**. U kunt het ook rechtstreeks in het gebied met elementen neerzetten. Zie Elementen [](managing-assets-touch-ui.md#uploading-assets) uploaden voor meer informatie over het uploaden.
@@ -35,59 +37,64 @@ Adobe Experience Manager Assets genereert voorvertoningen voor video-elementen m
 
 ## Configuratie voor het uploaden van middelen die groter zijn dan 2 GB {#configuration-to-upload-assets-that-are-larger-than-gb}
 
-Standaard kunt u met de middelen van Experience Manager geen elementen uploaden die groter zijn dan 2 GB vanwege een maximale bestandsgrootte. Nochtans, kunt u deze grens overschrijven door in CRXDE Lite te gaan en een knoop onder de `/apps` folder te creëren. Het knooppunt moet dezelfde knooppuntnaam, directorystructuur en vergelijkbare knooppunteigenschappen van volgorde hebben.
+Standaard kunt u [!DNL Assets] geen elementen uploaden die groter zijn dan 2 GB vanwege een maximale bestandsgrootte. Nochtans, kunt u deze grens overschrijven door in CRXDE Lite te gaan en een knoop onder de `/apps` folder te creëren. Het knooppunt moet dezelfde knooppuntnaam, directorystructuur en vergelijkbare knooppunteigenschappen van volgorde hebben.
 
-Wijzig naast de configuratie Experience Manager de volgende configuraties voor het uploaden van grote elementen:
+Wijzig naast de [!DNL Assets] configuratie de volgende configuraties om grote elementen te uploaden:
 
 * Verhoog de vervaltijd van het token. Zie [!UICONTROL Adobe Granite CSRF Servlet] in webconsole op `https://[aem_server]:[port]/system/console/configMgr`. Zie [CSRF-bescherming](/help/sites-developing/csrf-protection.md)voor meer informatie.
-* Verhoog de `receiveTimeout` configuratie van Dispatcher. Voor meer informatie, zie de configuratie [van de Verzender van de Manager van de](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options)Ervaring.
+* Verhoog de `receiveTimeout` Dispatcher-configuratie. Zie de configuratie [van](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options)Experience Manager Dispatcher voor meer informatie.
 
 >[!NOTE]
 >
->De GKlassieke gebruikersinterface van Experience Manager heeft geen beperking voor de bestandsgrootte van 2 GB. Bovendien wordt de end-to-end workflow voor grote video niet volledig ondersteund.
+>De [!DNL Experience Manager] klassieke gebruikersinterface heeft geen beperking voor de bestandsgrootte van 2 GB. Bovendien wordt de end-to-end workflow voor grote video niet volledig ondersteund.
 
 Voer de volgende stappen in de `/apps` map uit om een hogere maximale bestandsgrootte te configureren.
 
-1. Klik in Experience Manager op **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
-1. Navigeer in CRXDE Lite naar `/libs/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`. Tik op het `>>` pictogram om het directoryvenster weer te geven.
+1. Klik [!DNL Experience Manager]in **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
+1. Navigeer in CRXDE Lite naar `/libs/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`. Klik op het venster `>>`om het directoryvenster weer te geven.
 1. From the toolbar, click the **[!UICONTROL Overlay Node]**. U kunt ook **[!UICONTROL Overlay Node]** selecteren in het contextmenu.
 1. In the **[!UICONTROL Overlay Node]** dialog, click **[!UICONTROL OK]**.
 
-   ![chlimage_1-67](assets/chlimage_1-203.png)
+   ![Overlay-knooppunt](assets/overlay-node-path.png)
 
 1. Vernieuw de browser. Het bedekkingsknooppunt `/jcr_root/apps/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload` is geselecteerd.
 1. Voer op het **[!UICONTROL Properties]** tabblad de juiste waarde in bytes in om de maximale grootte tot de gewenste grootte te verhogen. Voer bijvoorbeeld een `{sizeLimit : "32212254720"}` waarde in als u de maximale grootte tot 30 GB wilt verhogen.
 
-1. From the toolbar, touch **[!UICONTROL Save All]**.
-1. Klik in Experience Manager op **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
-1. Zoek en klik op de pagina Bundles van de webconsole van Adobe Experience Manager onder de kolom Naam van de tabel **[!UICONTROL Adobe Granite Workflow External Process Job Handler]**.
-1. Stel de seconden voor de velden **[!UICONTROL Default Timeout]** en **[!UICONTROL Max Timeout]** in op `18000` (vijf uur) op de pagina Handler van externe procestaken van Adobe Granite Workflow.
-1. Klik op **[!UICONTROL Save]**.
-1. Klik in Experience Manager op **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
+1. Klik **[!UICONTROL Save All]** op de werkbalk.
+1. Klik [!DNL Experience Manager]in **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
+1. Zoek op de [!DNL Adobe Experience Manager] pagina, onder de kolom Naam van de tabel, de gewenste locatie en klik op [!UICONTROL Web Console Bundles] **[!UICONTROL Adobe Granite Workflow External Process Job Handler]**.
+1. Stel op de [!UICONTROL Adobe Granite Workflow External Process Job Handler] pagina de seconden voor zowel **[!UICONTROL Default Timeout]** als **[!UICONTROL Max Timeout]** velden in op `18000` (vijf uur). Klik op **[!UICONTROL Save]**.
+1. Klik [!DNL Experience Manager]in **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
 1. Selecteer op de pagina Workflowmodellen de optie **[!UICONTROL Dynamic Media Encode Video]** en klik op **[!UICONTROL Edit]**.
 1. Dubbelklik op de werkstroompagina op de **[!UICONTROL Dynamic Media Video Service Process]** component.
 1. Vouw in het dialoogvenster [!UICONTROL Step Properties] onder het tabblad **[!UICONTROL Common]** **Geavanceerde instellingen** uit.
 1. In the **[!UICONTROL Timeout]** field, specify a value of `18000`, then click **[!UICONTROL OK]** to return to the **[!UICONTROL Dynamic Media Encode Video]** workflow page.
-1. Klik onder de titel van de pagina Video coderen van dynamische media boven aan de pagina **[!UICONTROL Save]**.
+1. Klik onder de titel van de [!UICONTROL Dynamic Media Encode Video] pagina boven aan de pagina **[!UICONTROL Save]**.
 
 ## Video-elementen publiceren {#publish-video-assets}
 
-Nadat uw video-elementen zijn gepubliceerd, kunt u ze als URL of insluiting op een webpagina opnemen in een webpagina. Zie [publiceren, elementen](/help/assets/publishing-dynamicmedia-assets.md).
+Na publicatie kunt u de video-elementen in een webpagina opnemen als een URL of de elementen rechtstreeks insluiten. Zie Dynamische media-elementen [](/help/assets/publishing-dynamicmedia-assets.md)publiceren voor meer informatie.
 
 ## Video-elementen notities aanbrengen {#annotate-video-assets}
 
-1. Klik in de middelenconsole op het [!UICONTROL Edit] pictogram op de elementenkaart om de pagina met elementdetails weer te geven.
-1. Klik op het [!UICONTROL Preview] pictogram om de video af te spelen.
-1. Klik op de **[!UICONTROL Annotate]** knop om de video een annotatie te geven. Er wordt een aantekening toegevoegd op het specifieke tijdpunt (frame) in de video. Wanneer u notities maakt, kunt u op het canvas tekenen en een opmerking bij de tekening opnemen. Opmerkingen worden automatisch opgeslagen.
+1. Klik in de middelenconsole op [!UICONTROL Edit] de elementenkaart om de pagina met elementdetails weer te geven.
+1. Klik op [!UICONTROL Preview]om de video af te spelen.
+1. Klik op de **[!UICONTROL Annotate]** knop om de video een annotatie te geven. Er wordt een aantekening toegevoegd op het specifieke tijdstip (frame) in de video. Wanneer u notities maakt, kunt u op het canvas tekenen en een opmerking bij de tekening opnemen. Opmerkingen worden automatisch opgeslagen.
 
-   ![chlimage_1-68](assets/chlimage_1-204.png)
+   ![Tekenen en notities aanbrengen in een videoframe](assets/annotate-video.png)
 
    Klik op de knop **[!UICONTROL Close]** om de wizard Annotatie af te sluiten.
 
 1. Zoek naar een specifiek punt in de video, geef de tijd in seconden op in het veld voor **tekst** en klik op **Springen**. Als u bijvoorbeeld de eerste 10 seconden van de video wilt overslaan, voert u 20 in het tekstveld in.
 
-   ![chlimage_1-69](assets/chlimage_1-205.png)
+   ![Hiermee wordt naar een tijd in een video gezocht om met opgegeven seconden over te slaan](assets/seek-in-video.png)
 
 1. Klik op een annotatie om deze in de tijdlijn weer te geven. Klik op de knop **[!UICONTROL Delete]**.
 
-   ![chlimage_1-70](assets/chlimage_1-206.png)
+   ![Annotaties en de details in de tijdlijn weergeven](assets/timeline-view-annotation.png)
+
+>[!MORELIKETHIS]
+>
+>* [Digitale middelen beheren in Experience Manager Assets](/help/assets/managing-assets-touch-ui.md)
+>* [Verzamelingen beheren in Experience Manager-middelen](/help/assets/managing-collections-touch-ui.md)
+

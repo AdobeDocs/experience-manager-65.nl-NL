@@ -3,7 +3,7 @@ title: Elementen van HTTP-API in [!DNL-Adobe Experience Manager].
 description: Digitale elementen maken, lezen, bijwerken, verwijderen en beheren met de HTTP-API in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 307a1db2e5bbb72d730c89ba14f5ce02b96c108d
+source-git-commit: f64df3a706762cdef631e18ad1a6fdd7044a551f
 workflow-type: tm+mt
 source-wordcount: '1563'
 ht-degree: 0%
@@ -77,17 +77,17 @@ In [!DNL Experience Manager] een map zijn de volgende componenten beschikbaar:
 
 De HTTP-API voor middelen bevat de volgende functies:
 
-* Haal een mappenlijst op.
-* Maak een map.
-* Maak een element.
-* Binair element bijwerken.
-* Metagegevens van elementen bijwerken.
-* Een elementuitvoering maken.
-* Een elementuitvoering bijwerken.
-* Maak een middelenopmerking.
-* Kopieer een map of element.
-* Een map of element verplaatsen.
-* Een map, element of uitvoering verwijderen.
+* [Haal een mappenlijst](#retrieve-a-folder-listing)op.
+* [Maak een map](#create-a-folder).
+* [Maak een element](#create-an-asset).
+* [Binair](#update-asset-binary)element bijwerken.
+* [Metagegevens](#update-asset-metadata)van elementen bijwerken.
+* [Een elementuitvoering](#create-an-asset-rendition)maken.
+* [Een elementuitvoering](#update-an-asset-rendition)bijwerken.
+* [Maak een middelenopmerking](#create-an-asset-comment).
+* [Kopieer een map of element](#copy-a-folder-or-asset).
+* [Een map of element](#move-a-folder-or-asset)verplaatsen.
+* [Een map, element of uitvoering](#delete-a-folder-asset-or-rendition)verwijderen.
 
 >[!NOTE]
 >

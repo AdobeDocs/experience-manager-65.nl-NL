@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 46f81c3f-6512-43f1-8ec1-cc717ab6f6ff
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
+source-git-commit: 2b1cc29fbfdb80aff6b6fc5c6c4fc9093d12e418
+workflow-type: tm+mt
+source-wordcount: '687'
+ht-degree: 1%
 
 ---
 
@@ -33,7 +36,7 @@ De `categories`eigenschapwaarde die aan deze clientbibliotheek wordt gegeven, is
 
 1. Click **OK**
 
-![chlimage_1-47](assets/chlimage_1-47.png)
+![chlimage_1-220](assets/chlimage_1-220.png)
 
 Voer op het tabblad **Eigenschappen** voor het nieuwe `clientlibs` knooppunt de eigenschap **Categorieën** in:
 
@@ -52,7 +55,7 @@ Opmerking: De waarde voor categorieën wordt voorafgegaan door &#39;apps&#39;. i
 1. Voer de **naam in:** `js.txt`
 1. Klik op Alles **opslaan**
 
-![chlimage_1-48](assets/chlimage_1-48.png)
+![chlimage_1-221](assets/chlimage_1-221.png)
 
 De eerste regel van css.txt en js.txt identificeert de basislocatie van waaruit de volgende lijsten met bestanden moeten worden gevonden.
 
@@ -96,15 +99,15 @@ In dit geval, met inbegrip van hen allen en zo worden de meer basiscliënten SCF
       * **`cq.social.author.hbs.rating`**
       * **`cq.social.author.hbs.reviews`**
       * **`cq.social.author.hbs.voting`**
-      * click **OK**
+      * Click **OK**
 
 * Klik op Alles **opslaan**
 
-![chlimage_1-49](assets/chlimage_1-49.png)
+![chlimage_1-222](assets/chlimage_1-222.png)
 
 Dit is hoe `/etc/designs/an-scf-sandbox/clientlibs` zou nu in bewaarplaats moeten verschijnen:
 
-![chlimage_1-50](assets/chlimage_1-50.png)
+![chlimage_1-223](assets/chlimage_1-223.png)
 
 ### Clientlibs opnemen in PlayPage-sjabloon {#include-clientlibs-in-playpage-template}
 
@@ -112,11 +115,11 @@ Zonder de categorie `apps.an-scf-sandbox` ClientLibraryFolder op de pagina te pl
 
 Bijvoorbeeld, zonder de clientlibs op te nemen, lijkt de SCF commentaarcomponent ongestileerd:
 
-![chlimage_1-51](assets/chlimage_1-51.png)
+![chlimage_1-224](assets/chlimage_1-224.png)
 
 Zodra apps.an-scf-sandbox clientlibs is opgenomen, wordt de stijl van de SCF-commentaarcomponent weergegeven:
 
-![chlimage_1-52](assets/chlimage_1-52.png)
+![chlimage_1-225](assets/chlimage_1-225.png)
 
 De instructie include behoort tot de `head` sectie van het `html` script. De standaardwaarde **`foundation head.jsp`** bevat een script dat kan worden bedekt: **`headlibs.jsp`**.
 
@@ -147,7 +150,7 @@ Laad uw website in de browser en controleer of de achtergrond geen blauwe tint h
 
 [https://localhost:4502/content/an-scf-sandbox/en/play.html](https://localhost:4502/content/an-scf-sandbox/en/play.html)
 
-![chlimage_1-53](assets/chlimage_1-53.png)
+![chlimage_1-226](assets/chlimage_1-226.png)
 
 ### Uw werk tot nu toe opslaan {#saving-your-work-so-far}
 

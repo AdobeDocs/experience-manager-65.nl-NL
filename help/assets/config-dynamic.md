@@ -10,15 +10,15 @@ discoiquuid: 7d8e7273-29f3-4a45-ae94-aad660d2c71d
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config-dynamic
 translation-type: tm+mt
-source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
+source-git-commit: bccc937c1e1a349ab292a748c3c7b9d0c68b6199
 workflow-type: tm+mt
-source-wordcount: '7713'
+source-wordcount: '7674'
 ht-degree: 1%
 
 ---
 
 
-# Dynamic Media configureren - hybride modus{#configuring-dynamic-media-hybrid-mode}
+# Dynamic Media configureren - hybride modus {#configuring-dynamic-media-hybrid-mode}
 
 Dynamic Media-Hybride moet voor gebruik worden toegelaten en worden gevormd. Afhankelijk van uw gebruiksgeval, hebben de Dynamic Media verscheidene [gesteunde configuraties](#supported-dynamic-media-configurations).
 
@@ -178,7 +178,7 @@ Om dynamische media toe te laten, moet u de dynamische media runmode of van de b
    >* ImageServer-&lt;PortId>-&lt;jjyy>&lt;dd>.log - Het ImageServer-logboek bevat statistieken en analysegegevens die worden gebruikt voor het analyseren van het gedrag van het interne ImageServer-proces.
    Voorbeeld van de naam van een logbestand voor een afbeeldingsserver: `ImageServer-57346-2020-07-25.log`
    * s7access-&lt;yyyy>&lt;dd>.log - Het s7access logboek registreert elk verzoek aan Dynamic Media door `/is/image` en `/is/content`.
-   Deze logboeken worden alleen gebruikt wanneer Dynamic Media is ingeschakeld. Ze zijn niet opgenomen in het volledige **pakket** downloaden dat op de `system/console/status-Bundlelist` pagina wordt gegenereerd. Als u een probleem hebt met de Dynamic Media, kunt u beide logboeken bij het bellen naar Customer Support voegen.
+   Deze logboeken worden alleen gebruikt wanneer Dynamic Media is ingeschakeld. Ze zijn niet opgenomen in het volledige **pakket** downloaden dat op de `system/console/status-Bundlelist` pagina wordt gegenereerd. Als u een probleem hebt met de Dynamic Media, kunt u beide logbestanden bij het aanroepen van Customer Support voegen.
 
 ### Als u AEM op een andere haven of contextweg installeerde... {#if-you-installed-aem-to-a-different-port-or-context-path}
 
@@ -490,7 +490,7 @@ De service Dynamic Media Cloud biedt ondersteuning voor cloudservices, zoals hyb
 Als onderdeel van de configuratie moet u een registratie-id, een URL voor de videoservice, een URL voor de afbeeldingsservice, een URL voor de replicatieservice en een verificatieverificatie invoeren. U zou al deze informatie als deel van het proces van de rekeninglevering moeten ontvangen. Als u deze gegevens niet hebt ontvangen, neemt u contact op met de beheerder van de Adobe Experience Manager of de technische ondersteuning van Adobe voor meer informatie.
 
 >[!NOTE]
-Voordat u Dynamic Media Cloud-services instelt, moet u eerst uw publicatie-instantie hebben ingesteld. U moet ook replicatie-instellingen hebben voordat u de services van Dynamic Media Cloud configureert.
+Voordat u Dynamic Media Cloud-services instelt, moet u eerst uw publicatie-instantie hebben ingesteld. U moet ook replicatie-instellingen hebben voordat u de services van de Dynamic Media Cloud configureert.
 
 Dynamische mediawolkenservices configureren:
 
@@ -508,7 +508,7 @@ Dynamische mediawolkenservices configureren:
 
 ## Video-rapportage configureren {#configuring-video-reporting}
 
-U kunt video het melden over veelvoudige installaties van AEM vormen gebruikend Dynamic Media Hybrid.
+U kunt video rapportering over veelvoudige installaties van AEM vormen gebruikend Dynamic Media Hybrid.
 
 **Wanneer gebruiken:** Op het moment dat u Configuratie van Dynamic Media (pre 6.3) vormt, zijn talrijke eigenschappen begonnen met inbegrip van video rapportering. De configuratie leidt tot een rapportreeks in een regionaal Analytics bedrijf. Als u veelvoudige knopen van de Auteur vormt, creeert u een afzonderlijke rapportreeks voor elke. Dit heeft tot gevolg dat de rapportage van gegevens tussen de installaties inconsistent is. Bovendien als elke knoop van de Auteur naar de zelfde Hybride Publish server verwijst, verandert de laatste installatie van de Auteur de reeks van het bestemmingsrapport voor al videorapportering. Deze kwestie overlaadt het systeem van Analytics met teveel rapportseries.
 
@@ -908,12 +908,12 @@ Instellingen voor de manifestatie en de standaardwaarden ervan:
   <tr>
    <td>defaultPix</td>
    <td>300,300</td>
-   <td><p>Standaardweergavegrootte. De server beperkt antwoordafbeeldingen tot maximaal deze breedte en hoogte als in de aanvraag niet expliciet de weergavegrootte wordt opgegeven met wid=, hei= of scl=.</p> <p>Opgegeven als twee gehele getallen, 0 of groter, gescheiden door een komma. Breedte en hoogte in pixels. Een van beide of beide waarden kan op 0 worden ingesteld om ze onbeperkt te houden. Is niet van toepassing op geneste/ingesloten aanvragen.</p> <p>Zie ook <a href="https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/image_catalog/r_defaultpix.html">DefaultPix</a> in de Image Serving API.</p> <p>Gewoonlijk gebruikt u echter een viewervoorinstelling of voorinstelling voor afbeeldingen om het element te leveren. De standaardvoorinstelling is alleen van toepassing op elementen die geen viewervoorinstelling of voorinstelling voor afbeeldingen gebruiken.</p> </td>
+   <td><p>Standaardweergavegrootte. De server beperkt antwoordafbeeldingen tot maximaal deze breedte en hoogte als in de aanvraag niet expliciet de weergavegrootte wordt opgegeven met wid=, hei= of scl=.</p> <p>Opgegeven als twee gehele getallen, 0 of groter, gescheiden door een komma. Breedte en hoogte in pixels. Een van beide of beide waarden kunnen op 0 worden ingesteld om ze onbeperkt te houden. Is niet van toepassing op geneste/ingesloten aanvragen.</p> <p>Zie ook <a href="https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/image_catalog/r_defaultpix.html">DefaultPix</a> in de Image Serving API.</p> <p>Gewoonlijk gebruikt u echter een viewervoorinstelling of voorinstelling voor afbeeldingen om het element te leveren. De standaardvoorinstelling is alleen van toepassing op elementen die geen viewervoorinstelling of voorinstelling voor afbeeldingen gebruiken.</p> </td>
   </tr>
   <tr>
    <td>standaard miniatuur</td>
    <td>100,100</td>
-   <td><p>Standaardminiatuurgrootte. Wordt gebruikt in plaats van kenmerk::DefaultPix voor aanvragen van miniaturen (req=tmb).</p> <p>De server beperkt antwoordafbeeldingen tot maximaal deze breedte en hoogte als een miniatuuraanvraag (req=tmb) de grootte niet expliciet opgeeft met gebruik van wid=, hei= of scl=.</p> <p>Opgegeven als twee gehele getallen, 0 of groter, gescheiden door een komma. Breedte en hoogte in pixels. Een van beide of beide waarden kan op 0 worden ingesteld om ze onbeperkt te houden. </p> <p>Is niet van toepassing op geneste/ingesloten aanvragen.</p> <p>Zie ook <a href="https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/image_catalog/r_defaultthumbpix.html">DefaultThumbPix</a> in de Image Serving API. </p> </td>
+   <td><p>Standaardminiatuurgrootte. Wordt gebruikt in plaats van kenmerk::DefaultPix voor aanvragen van miniaturen (req=tmb).</p> <p>De server beperkt antwoordafbeeldingen tot maximaal deze breedte en hoogte als een miniatuuraanvraag (req=tmb) de grootte niet expliciet opgeeft met gebruik van wid=, hei= of scl=.</p> <p>Opgegeven als twee gehele getallen, 0 of groter, gescheiden door een komma. Breedte en hoogte in pixels. Een van beide of beide waarden kunnen op 0 worden ingesteld om ze onbeperkt te houden. </p> <p>Is niet van toepassing op geneste/ingesloten aanvragen.</p> <p>Zie ook <a href="https://microsite.omniture.com/t2/help/en_US/s7/is_ir_api/is_api/image_catalog/r_defaultthumbpix.html">DefaultThumbPix</a> in de Image Serving API. </p> </td>
   </tr>
   <tr>
    <td>vervaldatum</td>
@@ -965,7 +965,7 @@ Gevallen van geavanceerd gebruik zouden een hand kunnen gebruiken vormen `icc=` 
 * `iccEmbed` - [https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html)
 
 >[!NOTE]
-De standaardset Adobe-kleurprofielen is alleen beschikbaar als u [Feature Pack 12445 van Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) of [Feature Pack 12445 van Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) hebt geïnstalleerd. Alle eigenschapspakken en de dienstpakken zijn beschikbaar via het Aandeel [van het](https://www.adobeaemcloud.com/content/packageshare.html) Pakket en de Distributie [van de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)Software. Feature Pack 12445 biedt de kleurprofielen van Adobe.
+De standaardset Adobe-kleurprofielen is alleen beschikbaar als u [Feature Pack 12445 van Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) hebt geïnstalleerd. Alle eigenschapspakken en de dienstpakken zijn beschikbaar bij de Distributie [van de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)Software. Feature Pack 12445 biedt de kleurprofielen van Adobe.
 
 ### Functiepakket 12445 installeren {#installing-feature-pack}
 
@@ -973,9 +973,9 @@ U moet functiepak 12445 installeren om de mogelijkheden voor dynamisch kleurbehe
 
 **Om functiepak 12445 te installeren**
 
-1. Navigeer naar [Package Share](https://www.adobeaemcloud.com/content/packageshare.html) of [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) en download een van beide `cq-6.3.0-featurepack-12445`.
+1. Navigeer naar [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) en download beide `cq-6.3.0-featurepack-12445`.
 
-   Zie [hoe te met Pakketten](/help/sites-administering/package-manager.md) voor meer informatie werken bij het gebruiken van het Aandeel van het Pakket en Pakketten in AEM.
+   Zie [Werken met pakketten](/help/sites-administering/package-manager.md) voor meer informatie over het gebruik van pakketten in [!DNL Adobe Experience Manager].
 
 1. Installeer het functiepakket.
 

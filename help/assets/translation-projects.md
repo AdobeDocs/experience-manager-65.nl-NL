@@ -3,9 +3,9 @@ title: Vertaalprojecten maken
 description: Leer hoe u vertaalprojecten maakt in [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '1765'
+source-wordcount: '1763'
 ht-degree: 10%
 
 ---
@@ -176,7 +176,7 @@ Als u deze optie gebruikt, wordt de vertaalworkflow uitgevoerd voor elementen di
    >
    >Als het element dat u toevoegt aan de vertaaltaak subelementen bevat, selecteert u de subelementen en verwijdert u deze zodat de vertaling zonder scheuren kan worden uitgevoerd.
 
-1. Als u de vertaling voor de elementen wilt starten, klikt u op de pijl op de **[!UICONTROL Translation Job]** tegel en selecteert u een element in de **[!UICONTROL Start]** lijst.
+1. Als u de vertaling voor de elementen wilt starten, klikt u op de pijl op de **[!UICONTROL Translation Job]** tegel en selecteert u deze in de **[!UICONTROL Start]** lijst.
 
    ![chlimage_1-81](assets/chlimage_1-81.png)
 
@@ -234,7 +234,7 @@ Als u deze optie gebruikt, wordt een vertaalproject gecreeerd voor de reeks acti
 
    ![chlimage_1-90](assets/chlimage_1-90.png)
 
-1. Als u de vertaling voor de elementen wilt starten, klikt u op de pijl op de **[!UICONTROL Translation Job]** tegel en selecteert u een element in de **[!UICONTROL Start]** lijst.
+1. Als u de vertaling voor de elementen wilt starten, klikt u op de pijl op de **[!UICONTROL Translation Job]** tegel en selecteert u deze in de **[!UICONTROL Start]** lijst.
 
    ![chlimage_1-91](assets/chlimage_1-91.png)
 
@@ -286,7 +286,7 @@ Wanneer u een vertaalworkflow uitvoert om een taalkopie bij te werken met bewerk
 
    ![chlimage_1-99](assets/chlimage_1-99.png)
 
-1. Selecteer in de [!DNL Assets] interface een element dat u al hebt vertaald en klik op het **[!UICONTROL Edit]** pictogram op de werkbalk om het element in de bewerkingsmodus te openen.
+1. Selecteer in de [!DNL Assets] interface een element dat u al hebt vertaald en klik op **[!UICONTROL Edit]** de werkbalk om het element in de bewerkingsmodus te openen.
 1. Bewerk het element en sla de wijzigingen op.
 1. Voer stap 2-14 van de procedure [Toevoegen aan bestaand vertaalproject](#add-to-existing-translation-project) uit om de taalkopie bij te werken.
 1. Klik op de ellips onder aan de **[!UICONTROL Translation Job]** tegel. In de lijst met elementen op de **[!UICONTROL Translation Job]** pagina kunt u duidelijk de tijdelijke locatie weergeven waar de vertaalde versie van het element is opgeslagen.

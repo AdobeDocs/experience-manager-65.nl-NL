@@ -1,12 +1,12 @@
 ---
-title: Digitale middelen en afbeeldingen zoeken in [!DNL Adobe Experience Manager].
-description: Leer hoe u de vereiste middelen vindt in [!DNL Adobe Experience Manager] met het deelvenster Filters en hoe u de middelen gebruikt die worden weergegeven in de zoekopdracht.
+title: Digitale elementen en afbeeldingen zoeken in [!DNL-Adobe Experience Manager].
+description: Leer hoe u de vereiste elementen kunt vinden in [!DNL Adobe Experience Manager] met het deelvenster Filters en hoe u de elementen gebruikt die in de zoekopdracht worden weergegeven.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '5822'
+source-wordcount: '5821'
 ht-degree: 4%
 
 ---
@@ -26,12 +26,12 @@ ht-degree: 4%
 | [Zoekresultaten en gedrag begrijpen](#searchbehavior) | [Zoekfacetten wijzigen](#searchfacets) | [Bulkupdates van metagegevens](#metadataupdates) |
 | [Zoeken in rang en opvoeren](#searchrank) | [Tekst extraheren](#extracttextupload) | [Slimme verzamelingen](#collections) |
 | [Geavanceerd zoeken: filteren en zoekbereik](#scope) | [Aangepaste voorspelling](#custompredicates) | [Onverwachte resultaten begrijpen en problemen oplossen](#troubleshoot-unexpected-search-results-and-issues) |
-| [Zoeken in andere oplossingen en apps](#beyondomnisearch):<ul><li>[Adobe-elementkoppeling](#aal)</li><li>[Brand Portal](#brandportal)</li><li>[Experience Manager-bureaubladtoepassing](#desktopapp)</li><li>[Adobe Stock-afbeeldingen](#adobestock)</li><li>[Dynamische media-elementen](#dynamicmedia)</li></ul> |  |  |
+| [Zoeken in andere oplossingen en apps](#beyondomnisearch):<ul><li>[Adobe-elementkoppeling](#aal)</li><li>[Brand Portal](#brandportal)</li><li>[Experience Manager-bureaubladtoepassing](#desktopapp)</li><li>[Adobe Stock-afbeeldingen](#adobestock)</li><li>[Dynamic Media](#dynamicmedia)</li></ul> |  |  |
 | [Asset Picker](#assetselector) |  |  |
 | [Beperkingen](#limitations) en [tips](#tips) |  |  |
 | [Afbeeldingsvoorbeelden](#samples) |  |  |
 
-Zoek naar elementen met behulp van het veld Onderzoek boven aan de [!DNL Experience Manager] webinterface. Ga naar **[!UICONTROL Assets]** > **[!UICONTROL Files]** in [!DNL Experience Manager], klik onderzoekspictogram in hoogste bar, ga onderzoekssleutelwoord in, en druk terugkeer. U kunt ook de trefwoordsneltoets / (slash) gebruiken om het veld Onderzoek te openen. `Location:Assets` is vooraf geselecteerd om de zoekopdrachten te beperken tot DAM-middelen. [!DNL Experience Manager] biedt suggesties als u begint met het typen van een trefwoord voor zoeken.
+Zoek naar elementen met behulp van het veld Onderzoek boven aan de [!DNL Experience Manager] webinterface. Ga naar **[!UICONTROL Assets]** > **[!UICONTROL Files]** in [!DNL Experience Manager], klik onderzoek in hoogste bar, ga onderzoekssleutelwoord in, en druk terugkeer. U kunt ook de trefwoordsneltoets / (slash) gebruiken om het veld Onderzoek te openen. `Location:Assets` is vooraf geselecteerd om de zoekopdrachten te beperken tot DAM-middelen. [!DNL Experience Manager] biedt suggesties als u begint met het typen van een trefwoord voor zoeken.
 
 Gebruik het **[!UICONTROL Filters]** deelvenster om uw zoekopdracht te beperken door de zoekresultaten te filteren op basis van de verschillende opties (voorspelling), zoals bestandstype, bestandsgrootte, datum van laatste wijziging, status van de bron, gegevens over inzichten en Adobe Stock-licenties. Uw beheerders kunnen het deelvenster Filters aanpassen en zoekvoorvertoningen toevoegen of verwijderen met behulp van zoekfacetten. Het [!UICONTROL File Type] filter in het [!UICONTROL Filters] deelvenster heeft selectievakjes met gemengde status. Tenzij u alle geneste voorspellen (of indelingen) selecteert, worden de selectievakjes op het eerste niveau daarom gedeeltelijk gecontroleerd.
 
@@ -41,7 +41,7 @@ Gebruik het **[!UICONTROL Filters]** deelvenster om uw zoekopdracht te beperken 
 
 Verken uzelf met de zoekinterface en de beschikbare acties.
 
-![De interface voor zoekresultaten van Experience Manager Assets begrijpen](assets/aem_search_results.png)
+![De zoekresultateninterface van Experience Manager Assets begrijpen](assets/aem_search_results.png)
 
 *Afbeelding: Begrijp de interface van[!DNL Experience Manager Assets]onderzoeksresultaten.*
 
@@ -49,7 +49,7 @@ Verken uzelf met de zoekinterface en de beschikbare acties.
 
 ### Dynamische zoekfacetten {#dynamicfacets}
 
-U kunt de gewenste elementen sneller vinden op de pagina met zoekresultaten met behulp van het dynamisch bijgewerkte aantal verwachte zoekresultaten in de zoekfacetten. Het verwachte aantal elementen wordt bijgewerkt, zelfs voordat het zoekfilter wordt toegepast. Door het verwachte aantal op het filter te zien, kunt u snel en efficiënt door de zoekresultaten navigeren. Zie [Zoeken in middelen in Experience Manager](search-assets.md)voor meer informatie.
+U kunt de gewenste elementen sneller vinden op de pagina met zoekresultaten met behulp van het dynamisch bijgewerkte aantal verwachte zoekresultaten in de zoekfacetten. Het verwachte aantal elementen wordt bijgewerkt, zelfs voordat het zoekfilter wordt toegepast. Door het verwachte aantal op het filter te zien, kunt u snel en efficiënt door de zoekresultaten navigeren. Zie Elementen [zoeken in Experience Manager](search-assets.md)voor meer informatie.
 
 ![Zie het geschatte aantal elementen zonder de zoekresultaten te filteren in zoekfacetten.](assets/asset_search_results_in_facets_filters.png)
 
@@ -148,7 +148,7 @@ Als u afbeeldingen wilt zoeken die visueel lijken op een door de gebruiker gesel
 
 Vanuit de [!DNL Experience Manager] gebruikersinterface kunnen gebruikers zoeken in [Adobe Stock-middelen](/help/assets/aem-assets-adobe-stock.md) en een licentie voor de vereiste middelen aanschaffen. Toevoegen `Location: Adobe Stock` in de balk Zoeken. U kunt ook het deelvenster Filters gebruiken om alle middelen te zoeken waarvoor een licentie is verleend of om een bepaald middel te zoeken aan de hand van het bestandsnummer van Adobe Stock.
 
-### Dynamische media-elementen {#dmassets}
+### Dynamic Media {#dmassets}
 
 U kunt filteren op dynamische media-afbeeldingen door **[!UICONTROL Dynamic Media]** > **[!UICONTROL Sets]** te selecteren in het deelvenster **[!UICONTROL Filters]**. Het filtert op en toont assets zoals afbeeldingsets, carrousels, gemengde mediasets, en spinsets.
 
@@ -214,7 +214,7 @@ De gebruikers van de lijn-van-zaken en de marketers gebruiken het Portaal van he
 
 Vanuit de [!DNL Experience Manager] gebruikersinterface kunnen gebruikers zoeken in Adobe Stock-middelen en een licentie voor de vereiste middelen aanschaffen. Toevoegen `Location: Adobe Stock` in het veld Onderzoek. U kunt **[!UICONTROL Filters]** dit deelvenster ook gebruiken om alle onder licentie of zonder licentie geplaatste middelen te zoeken of een bepaald middel te zoeken aan de hand van het bestandsnummer van Adobe Stock. Zie Adobe Stock-afbeeldingen [beheren in Experience Manager](/help/assets/aem-assets-adobe-stock.md#usemanage).
 
-### Dynamische media-elementen zoeken {#dynamicmedia}
+### Dynamic Media zoeken {#dynamicmedia}
 
 U kunt filteren op dynamische media-afbeeldingen door **[!UICONTROL Dynamic Media]** > **[!UICONTROL Sets]** te selecteren in het deelvenster **[!UICONTROL Filters]**. Het filtert op en toont assets zoals afbeeldingsets, carrousels, gemengde mediasets, en spinsets. Tijdens het ontwerpen van webpagina&#39;s kunnen auteurs naar sets zoeken in de Inhoudszoeker. Een filter voor sets is beschikbaar in een pop-upmenu.
 
@@ -354,7 +354,7 @@ Het visuele onderzoek gebruikt slim etiketteren en vereist [!DNL Experience Mana
 1. In CRXDE, in `/oak-index/damAssetLucene` knoop, plaats het `reindex` bezit aan `true`. Sla de wijzigingen op.
 1. (Optioneel) Als u het zoekformulier hebt aangepast, kopieert u het `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` knooppunt naar `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Sla alle wijzigingen op.
 
-Zie slimme tags [begrijpen in Experience Manager](https://helpx.adobe.com/experience-manager/kt/assets/using/smart-tags-feature-video-understand.html) en [hoe u slimme tags](/help/assets/managing-smart-tags.md)kunt beheren voor gerelateerde informatie.
+Zie slimme tags in Experience Manager [en](https://helpx.adobe.com/experience-manager/kt/assets/using/smart-tags-feature-video-understand.html) hoe u slimme tags [](/help/assets/managing-smart-tags.md)kunt beheren voor gerelateerde informatie.
 
 ### Verplichte metagegevens {#mandatorymetadata}
 
@@ -455,7 +455,7 @@ U kunt slimme verzamelingen maken op basis van de zoekcriteria. Selecteer in het
 
 >[!MORELIKETHIS]
 >
->* [Handleiding voor zoekimplementatie van Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/search-tutorial-develop.html)
+>* [Experience Manager-gids voor zoekimplementatie](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/search-tutorial-develop.html)
 >* [Geavanceerde configuratie van zoekresultaten met meerdere waarden en tags](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/search-feature-video-use.html)
 >* [Zoeken naar slimme vertaling configureren](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/translation/smart-translation-search-technical-video-setup.html)
 

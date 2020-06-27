@@ -3,9 +3,9 @@ title: Aanbevolen werkwijzen voor de integratie met Adobe Creative Cloud en [!DN
 description: Aanbevolen procedures voor de integratie van [!DNL Adobe Experience Manager] met [!DNL Adobe Creative Cloud] om workflows voor de overdracht van middelen te stroomlijnen en een hoge snelheid van de inhoud te bereiken.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '3262'
+source-wordcount: '3263'
 ht-degree: 16%
 
 ---
@@ -21,7 +21,7 @@ Lees verder om te weten welke integraties u kunt kiezen tussen desktop en DAM op
 
 >[!NOTE]
 >
->[!DNL Experience Manager] naar [!DNL Creative Cloud] mappen delen is vervangen en wordt niet langer behandeld in deze handleiding. Adobe raadt u aan nieuwere mogelijkheden, zoals [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) of de bureaubladtoepassing [van](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html) Experience Manager, te gebruiken om creatieve gebruikers toegang te bieden tot middelen die worden beheerd in [!DNL Experience Manager].
+>[!DNL Experience Manager] naar [!DNL Creative Cloud] mappen delen is vervangen en wordt niet langer behandeld in deze handleiding. Adobe raadt u aan nieuwere mogelijkheden, zoals [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) of de [Experience Manager-bureaubladtoepassing](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html) , te gebruiken om creatieve gebruikers toegang te bieden tot middelen die worden beheerd in [!DNL Experience Manager].
 
 ## De behoeften van de samenwerking van creatieven, verkopers, en gebruikers DAM {#collaboration-needs-of-creatives-marketers-and-dam-users}
 
@@ -37,11 +37,11 @@ Lees verder om te weten welke integraties u kunt kiezen tussen desktop en DAM op
 |---|---|---|
 | Creatieve gebruikers ontdekken elementen van [!DNL Experience Manager], openen en gebruiken ze, bewerken en uploaden wijzigingen in [!DNL Experience Manager]en uploaden nieuwe bestanden naar [!DNL Experience Manager], zonder [!DNL Creative Cloud] apps te verlaten. | [Adobe-elementkoppeling](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) | [!DNL Adobe Photoshop], [!DNL Adobe Illustrator]en [!DNL Adobe InDesign]. |
 | Zakelijke gebruikers vereenvoudigen het openen en gebruiken van middelen, het bewerken en uploaden van wijzigingen in [!DNL Experience Manager]en het uploaden van nieuwe bestanden naar [!DNL Experience Manager] vanuit de desktopomgeving. Ze gebruiken een algemene integratie om elk elementtype in de native bureaubladtoepassing te openen, inclusief niet-Adobe toepassingen. | [Experience Manager-bureaubladtoepassing](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) | [!DNL Experience Manager] bureaubladtoepassing op Win- en Mac-bureaublad |
-| Marketers en zakelijke gebruikers ontdekken, voorvertonen, licentiëren en opslaan, en beheren de [!DNL Adobe Stock] middelen van binnenuit [!DNL Experience Manager]. Gelicentieerde en opgeslagen elementen bieden geselecteerde [!DNL Adobe Stock] metagegevens voor beter beheer. | [Experience Manager en Adobe Stock-integratie](aem-assets-adobe-stock.md) | [!DNL Experience Manager] webinterface |
+| Marketers en zakelijke gebruikers ontdekken, voorvertonen, licentiëren en opslaan, en beheren de [!DNL Adobe Stock] middelen van binnenuit [!DNL Experience Manager]. Gelicentieerde en opgeslagen elementen bieden geselecteerde [!DNL Adobe Stock] metagegevens voor beter beheer. | [Integratie van Experience Manager en Adobe Stock](aem-assets-adobe-stock.md) | [!DNL Experience Manager] webinterface |
 
 Dit artikel richt zich hoofdzakelijk op de eerste twee aspecten van de samenwerkingsbehoeften. Distributie en sourcing van assets op schaal wordt kort als gebruiksscenario genoemd. Overweeg Adobe Brand Portal of Asset Share Commons voor dergelijke oplossingen. Alternate solutions such as [Brand Portal](https://helpx.adobe.com/nl/experience-manager/brand-portal/user-guide.html), solutions that can be built based on [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) components, [Link Share](/help/assets/link-sharing.md), using [Experience Manager Assets](/help/assets/managing-assets-touch-ui.md) should be reviewed based on specific requirement.
 
-![Creative Cloud-verbindingen voor Experience Manager bepalen welke mogelijkheid wordt gebruikt](assets/creative-connections-aem.png)
+![Creative Cloud-verbindingen voor Experience Manager, bepalen welke mogelijkheden worden gebruikt](assets/creative-connections-aem.png)
 
 ### Toewijzing van gebruiksgevallen en Adobe-oplossingen {#mapping-of-use-cases-and-adobe-solutions}
 
@@ -66,7 +66,7 @@ Om het gebruik van middelen te steunen, zouden andere oplossingen moeten worden 
 * [Brand Portal](https://helpx.adobe.com/nl/experience-manager/brand-portal/user-guide.html) voor een configureerbare SaaS-invoegtoepassing om elementen [!DNL Experience Manager Assets] te publiceren.
 * De oplossingen van de douane worden gecreeerd gebaseerd op de codebasis van de Commons [van het Aandeel van](https://adobe-marketing-cloud.github.io/asset-share-commons/) Activa.
 * [!DNL Experience Manager] [koppeling delen](/help/assets/link-sharing.md) om elementen ad hoc te delen via koppelingen.
-* [De middelen van de Manager van de ervaring Webinterface](/help/assets/managing-assets-touch-ui.md) met gebieden voor externe partijen die door de opstelling van de [!DNL Experience Manager] toegangscontrole en met noodzakelijke aanpassingen van de IT/netwerkconfiguratie worden beveiligd, die deze externe gebruikers toegang tot [!DNL Experience Manager].
+* [Experience Manager Assets-webinterface](/help/assets/managing-assets-touch-ui.md) met gebieden voor externe partijen die zijn beveiligd door de instelling van [!DNL Experience Manager] toegangsbeheer en met noodzakelijke aanpassingen in de IT/netwerkconfiguratie, zodat deze externe gebruikers toegang hebben tot [!DNL Experience Manager].
 
 ## Belangrijkste concepten en gebruiksgevallen {#key-concepts-and-use-cases}
 
@@ -99,18 +99,18 @@ Dit is een korte samenvatting van beste praktijken voor [!DNL Experience Manager
 
 ### Toegang tot [!DNL Adobe Stock] middelen van [!DNL Assets] {#access-to-adobe-stock-assets-from-aem-assets}
 
-[Met Experience Manager en de Adobe Stock-integratie](/help/assets/aem-assets-adobe-stock.md) kunnen [!DNL Experience Manager] gebruikers zoeken, voorvertonen, licentiëren en opslaan, middelen van [!DNL Adobe Stock] naar [!DNL Experience Manager]. Gelicentieerde en opgeslagen [!DNL Stock] elementen hebben geselecteerde [!DNL Stock] metagegevens, die kunnen worden gebruikt om met extra filters naar deze elementen te zoeken.
+[Dankzij de Experience Manager- en Adobe Stock-integratie](/help/assets/aem-assets-adobe-stock.md) kunnen [!DNL Experience Manager] gebruikers zoeken naar, voorvertonen van, licenties voor en opslaan van middelen van [!DNL Adobe Stock] naar [!DNL Experience Manager]. Gelicentieerde en opgeslagen [!DNL Stock] elementen hebben geselecteerde [!DNL Stock] metagegevens, die kunnen worden gebruikt om met extra filters naar deze elementen te zoeken.
 
 Een paar belangrijke punten over deze integratie:
 
 * Wanneer middelen van de voorraad van Adobe aan worden bewaard, worden zij een regelmatig [!DNL Experience Manager], met binair opgeslagen aan de [!DNL Assets][!DNL Experience Manager] bewaarplaats. Sommige metagegevens die betrekking [!DNL Adobe Stock] hebben op het element, worden opgeslagen in [!DNL Experience Manager]het element, anders ziet het innameproces er hetzelfde uit als voor elk ander bestand. Als slimme tags bijvoorbeeld actief zijn, worden de tags bij het opslaan aan deze elementen toegevoegd.
 * Het middel dat wordt opgeslagen naar [!DNL Experience Manager] is een kopie, geen koppeling terug naar [!DNL Adobe Stock].
 
-**Werken met elementen die zijn opgeslagen van[!DNL Adobe Stock]naar[!DNL Experience Manager]in[!DNL Creative Cloud]**. Deze integratie is onafhankelijk van[!DNL Adobe Asset Link], maar[!DNL Adobe Asset Link]herkent deze elementen die op[!DNL Stock]die manier zijn opgeslagen en geeft aanvullende metagegevens en[!DNL Stock]pictogrammen voor deze elementen weer in de[!DNL Adobe Asset Link]extensie-interface in[!DNL Photoshop],[!DNL Illustrator]of[!DNL InDesign]. De bestanden zijn beschikbaar voor bladeren, openen enzovoort, omdat het normale elementen zijn wanneer ze worden opgeslagen naar[!DNL Experience Manager].
+**Werken met elementen die zijn opgeslagen van[!DNL Adobe Stock]naar[!DNL Experience Manager]in[!DNL Creative Cloud]**. Deze integratie is onafhankelijk van[!DNL Adobe Asset Link], maar[!DNL Adobe Asset Link]herkent deze elementen die op[!DNL Stock]die manier zijn opgeslagen en geeft aanvullende metagegevens en een[!DNL Adobe Stock]logo op deze elementen weer in de[!DNL Adobe Asset Link]extensie-interface in[!DNL Photoshop],[!DNL Illustrator]of[!DNL InDesign]. De bestanden zijn beschikbaar voor bladeren, openen enzovoort, omdat het normale elementen zijn wanneer ze worden opgeslagen naar[!DNL Experience Manager].
 Creatieve gebruikers die werken in bestaande[!DNL Creative Cloud]apps met[!DNL Adobe Asset Link]extensies, kunnen niet alleen toegang hebben tot middelen met een licentie van[!DNL Adobe Stock]naar[!DNL Experience Manager], maar ook gebruikmaken van het deelvenster[!DNL Creative Cloud]Bibliotheken om te zoeken naar[!DNL Adobe Stock]middelen en deze te bekijken en te licentiëren.[!DNL Assets]van[!DNL Adobe Stock]gelicentieerd en opgeslagen in[!DNL Experience Manager]worden beschikbaar voor de bredere teams die toegang hebben tot[!DNL Experience Manager Assets]implementatie, terwijl creatieve licentiefaciliteiten van[!DNL Adobe Stock]via het deelvenster[!DNL Creative Cloud]Bibliotheken ze alleen standaard beschikbaar maken in hun[!DNL Creative Cloud]account.
 
 <!-- 
-TBD: A condensed version of the below content is better placed in the Adobe DAM article.
+TBD: A condensed version of the below content is better placed in the Adobe DAM introduction article.
 -->
 
 ## Elementen opslaan in een DAM {#about-storing-assets-in-a-dam}
@@ -121,7 +121,7 @@ Om een efficiënte werkstroom tussen creatieve en marketing/lijn-van-zaken (LOB)
 
 Door middelen in DAM op te slaan, zijn ze gemakkelijk toegankelijk en te vinden. Het zorgt ervoor dat de activa door talrijke gebruikers over de organisatie of het ecosysteem kunnen worden gebruikt, dat partners, klanten, etc. omvat.
 
-De meeste organisaties kiezen ervoor om activa slechts op te slaan die voor de stroomafwaartse marketing/LOB processen relevant zijn (het publiceren aan kanalen zoals Webkanaal via [!DNL Experience Manager Sites] of andere kanalen die door Adobe Experience Cloud - Marketing Cloud, Advertising Cloud worden gediend, en door Analytics Cloud worden gemeten, die aan gebruikers/partners, etc. verstrekken). Bovendien slaan organisaties activa op die aan een overzicht/goedkeuringsprocedure in DAM kunnen worden onderworpen. Op deze manier slaat DAM vooral activa op die een hoge kans hebben om te worden gebruikt, en vermijdt het opslaan van niet-actieve activa.
+De meeste organisaties kiezen ervoor om alleen elementen op te slaan die relevant zijn voor de downstream marketing-/LOB-processen (publiceren naar kanalen zoals het webkanaal via [!DNL Experience Manager Sites] of andere kanalen die worden aangeboden door Adobe Experience Cloud - Marketing Cloud, Advertising Cloud, en gemeten door Analytics Cloud, en bieden gebruikers/partners, enzovoort). Bovendien slaan organisaties activa op die aan een overzicht/goedkeuringsprocedure in DAM kunnen worden onderworpen. Op deze manier slaat DAM vooral activa op die een hoge kans hebben om te worden gebruikt, en vermijdt het opslaan van niet-actieve activa.
 
 De opslag van activa is ook onderworpen aan technische overwegingen en middelgebruik. DAM verleent de extra diensten rond opgeslagen activa, met inbegrip van het halen van meta-gegevens, het versioning, het produceren van voorproeven/het transcoderen, het beheren van verwijzingen, en het toevoegen van toegangsbeheerinformatie. Deze diensten verbruiken extra tijd en infrastructuurmiddelen.
 
@@ -171,7 +171,7 @@ Externe agentschappen en freelancers zonder directe toegang tot het DAM-exemplaa
 Gebruik de volgende strategieën om toegang te verlenen tot definitieve/goedgekeurde middelen:
 
 * Gebruik de bureaubladtoepassing als Asset Link niet werkt.
-* Het Portaal [van het Merk van de Manager van de](https://helpx.adobe.com/nl/experience-manager/brand-portal/user-guide.html) Ervaring gebruiken om activa veilig aan externe partners te verdelen
+* Gebruik [Experience Manager Assets Brand Portal](https://helpx.adobe.com/nl/experience-manager/brand-portal/user-guide.html) voor het veilig distribueren van middelen aan externe partners
 * Gebruik een aangepaste implementatie van een distributie- en sourcingportal op basis van [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
 * De opstelling van het Toegangsbeheer van het gebruik in [!DNL Experience Manager] en noodzakelijke netwerkinfrastructuur (bijvoorbeeld, VPN en IP toegestaan lijst) om externe partijen toegang tot een specifiek gebied van inhoud in uw DAM te geven. Ze kunnen de [!DNL Experience Manager] webinterface gebruiken om elementen op te halen en nieuwe inhoud te uploaden naar uw DAM.
 
@@ -220,7 +220,7 @@ Raadpleeg de [migratiehandleiding](/help/assets/assets-migration-guide.md)voor i
 >[!MORELIKETHIS]
 >
 >* [Adobe-elementkoppeling](https://helpx.adobe.com/in/enterprise/using/adobe-asset-link.html)
->* [Aanbevolen werkwijzen voor de Desktop Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/archive/best-practices-for-v1.html)
+>* [Aanbevolen werkwijzen voor Experience Manager-bureaubladtoepassingen](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/archive/best-practices-for-v1.html)
 >* [Experience Manager Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/brand-portal.html)
->* [Experience Manager en Adobe Stock-integratie](aem-assets-adobe-stock.md)
+>* [Integratie van Experience Manager en Adobe Stock](aem-assets-adobe-stock.md)
 

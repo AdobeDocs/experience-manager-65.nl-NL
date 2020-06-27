@@ -3,9 +3,9 @@ title: Video-elementen beheren in [!DNL Adobe Experience Manager].
 description: U kunt video-elementen uploaden, voorvertonen, notities aanbrengen en publiceren in [!DNL-Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 46568322e75669532734dddda91a781f45a398d4
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '741'
+source-wordcount: '739'
 ht-degree: 7%
 
 ---
@@ -29,7 +29,7 @@ Leer hoe u de video-elementen in beheert en bewerkt [!DNL Adobe Experience Manag
 
    U kunt video alleen in de kaartweergave pauzeren of afspelen. De knoppen [!UICONTROL Play] en [!UICONTROL Pause] zijn niet beschikbaar in de lijstweergave.
 
-1. Als u een voorvertoning van de video wilt weergeven op de pagina met elementdetails, klikt u op het **[!UICONTROL Edit]** pictogram op de kaart.
+1. Klik op de kaart om een voorvertoning van de video weer te geven op de pagina met elementdetails. **[!UICONTROL Edit]**
 
    De video wordt afgespeeld in de native videospeler van de browser. U kunt de video afspelen, pauzeren, het volume bepalen en op het volledige scherm in- of uitzoomen.
 

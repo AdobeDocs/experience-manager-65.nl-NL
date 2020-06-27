@@ -3,7 +3,7 @@ title: Elementen voorbereiden voor vertaling
 description: Maak hoofdmappen voor talen om elementen voor te bereiden voor vertaling ter ondersteuning van meertalige middelen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 0%
@@ -58,10 +58,10 @@ De hoofdpagina van de Italiaanse taalkopie van de voorbeeldhiërarchie heeft bij
 
 ## Taalwortels weergeven {#viewing-language-roots}
 
-De interface van de Manager van de ervaring verstrekt een **[!UICONTROL References]** paneel dat een lijst van taalwortels toont die binnen Elementen zijn gecreeerd.
+De Experience Manager-interface biedt een **[!UICONTROL References]** deelvenster met een lijst met taalwortels die in Elementen zijn gemaakt.
 
 1. Selecteer in de middelenconsole de primaire taal waarvoor u taalkopieën wilt maken.
-1. Klik op het pictogram GlobalNav en kies **[!UICONTROL References]** om het [!UICONTROL Reference] deelvenster te openen.
+1. Selecteer in het linkerspoor de **[!UICONTROL References]** optie om het [!UICONTROL Reference] venster te openen.
 
    ![chlimage_1-122](assets/chlimage_1-122.png)
 

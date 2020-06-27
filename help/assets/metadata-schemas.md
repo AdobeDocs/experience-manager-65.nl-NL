@@ -1,11 +1,11 @@
 ---
-title: 'Metagegevensschema''s om de indeling van de pagina met eigenschappen van metagegevens te definiëren in [!DNL Adobe Experience Manager-middelen]. '
+title: 'Metagegevensschema''s om de indeling van de pagina met eigenschappen van metagegevens in [!DNL Adobe Experience Manager Assets] te definiëren. '
 description: Het metagegevensschema definieert de indeling van de pagina met eigenschappen en de eigenschappen van metagegevens die voor elementen worden weergegeven. Leer hoe u een aangepast metagegevensschema kunt maken, het schema voor metagegevens kunt bewerken en hoe u het schema voor metagegevens op elementen kunt toepassen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 505ee267534b7b3de1f85fb6782b855dbf3c371d
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '2514'
+source-wordcount: '2510'
 ht-degree: 5%
 
 ---
@@ -19,11 +19,11 @@ In [!DNL Adobe Experience Manager Assets]de schema&#39;s staan specifieke velden
 
 Ga als volgt te werk om de pagina met eigenschappen voor een element weer te geven en te bewerken:
 
-1. Klik op het **[!UICONTROL View Properties]** pictogram van Snelle handelingen op het element Elementen in de kaartweergave.
+1. Klik op de **[!UICONTROL View Properties]** optie van de snelle acties op het element Elementen in de kaartweergave.
 
    ![Snelle acties voor elementblok](assets/chlimage_1-170.png)
 
-   U kunt ook een element selecteren en vervolgens op het [!UICONTROL Properties] pictogram op de werkbalk klikken.
+   U kunt ook een element selecteren en op de werkbalk klikken. **[!UICONTROL Properties]**
 
 1. U kunt de verschillende bewerkbare eigenschappen van metagegevens bewerken onder de beschikbare tabbladen. U kunt het element echter niet wijzigen [!UICONTROL Type] op het [!UICONTROL Basic] tabblad Eigenschappen.
 
@@ -48,7 +48,7 @@ Als u een lijst met formulieren of sjablonen wilt weergeven, navigeert u in de [
 |  | [!UICONTROL video] | Schemaformulier voor video-elementen met het MIME-type, zoals `video/avi` en `video/mp4`. |
 | [!UICONTROL collection] |  | Schemaformulier voor verzamelingen. |
 | [!UICONTROL contentfragment] |  | [Schemaformulier voor inhoudsfragmenten](/help/sites-developing/customizing-content-fragments.md). |
-| [!UICONTROL forms] |  | Dit schema-formulier is gerelateerd aan [Adobe Experience Manager Forms](/help/forms/home.md). |
+| [!UICONTROL forms] |  | Dit schemaformulier heeft betrekking op [Adobe Experience Manager Forms](/help/forms/home.md). |
 
 <!-- 
 TBD: Add dm_video child for the default form OOTB.
@@ -68,7 +68,7 @@ Voer de volgende stappen uit om een metagegevensschema toe te voegen:
 
    >[!NOTE]
    >
-   >Er wordt een vergrendelingspictogram weergegeven met de onbewerkte sjablonen. Als u een sjabloon aanpast, wordt het vergrendelingspictogram niet weergegeven.
+   >Er wordt een vergrendelingssymbool weergegeven met de onbewerkte sjablonen. Als u een sjabloon aanpast, wordt de sjabloon niet vergrendeld en ![gesloten](assets/do-not-localize/lock_closed_icon.svg).
 
 1. Geef in het dialoogvenster de titel van het schema op en klik **[!UICONTROL Create]** om het maken van het formulier te voltooien.
 
@@ -175,7 +175,7 @@ Als u een formulier wilt verwijderen, selecteert u een formulier en klikt u op V
 
 >[!NOTE]
 >
->* Nadat u aangepaste wijzigingen in een standaardformulier hebt verwijderd, verschijnt het vergrendelingspictogram opnieuw vóór de wijziging in de interface Metagegevensschema. Hiermee wordt aangegeven dat de standaardstatus van het formulier wordt hersteld.
+>* Nadat u aangepaste wijzigingen in een standaardformulier hebt verwijderd, wordt de vergrendeling ![weer vóór het formulier weergegeven](assets/do-not-localize/lock_closed_icon.svg) . Hiermee wordt aangegeven dat de standaardstatus van het formulier wordt hersteld.
 >* U kunt de standaardschema-formulieren voor metagegevens niet verwijderen in [!DNL Assets].
 
 
@@ -185,7 +185,7 @@ Als u een formulier wilt verwijderen, selecteert u een formulier en klikt u op V
 
 ### Nieuwe formulieren toevoegen voor MIME-typen {#add-new-forms-for-mime-types}
 
-Maak een formulier onder het juiste formuliertype. For example, to add a template for the `image/png` subtype, create the form under the &quot;image&quot; forms. De titel voor het schemaformulier is de naam van het subtype. In dit geval is de titel `png`.
+Create a form under the appropriate form type. For example, to add a template for the `image/png` subtype, create the form under the &quot;image&quot; forms. De titel voor het schemaformulier is de naam van het subtype. In dit geval is de titel `png`.
 
 #### Een bestaande schemasjabloon gebruiken voor verschillende MIME-typen {#use-an-existing-schema-template-for-various-mime-types}
 

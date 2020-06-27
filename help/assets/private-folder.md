@@ -1,11 +1,11 @@
 ---
 title: Een persoonlijke map maken en delen in Adobe Experience Manager.
-description: Leer hoe u een persoonlijke map maakt in de Adobe Experience Manager-middelen en deze deelt met andere gebruikers en hoe u hun verschillende rechten toekent.
+description: Leer hoe u een persoonlijke map maakt in de Adobe Experience Manager Assets en deze deelt met andere gebruikers en hoe u hen verschillende rechten toekent.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '489'
 ht-degree: 0%
 
 ---
@@ -13,12 +13,11 @@ ht-degree: 0%
 
 # Persoonlijke map delen {#private-folder-sharing}
 
-In de gebruikersinterface van Adobe Experience Manager kunt u een persoonlijke map maken die uitsluitend voor u beschikbaar is. U kunt deze persoonlijke map delen met andere gebruikers en deze gebruikers verschillende rechten geven. Op basis van het machtigingsniveau dat u toewijst, kunnen gebruikers verschillende taken op de map uitvoeren, bijvoorbeeld de middelen in de map weergeven of de elementen bewerken.
+In de gebruikersinterface Adobe Experience Manager Assets kunt u een persoonlijke map maken die exclusief voor u beschikbaar is. U kunt deze persoonlijke map delen met andere gebruikers en deze gebruikers verschillende rechten geven. Op basis van het machtigingsniveau dat u toewijst, kunnen gebruikers verschillende taken op de map uitvoeren, bijvoorbeeld de middelen in de map weergeven of de elementen bewerken.
 
 >[!NOTE]
 >
-> De persoonlijke omslag heeft minstens één lid met de rol van de Eigenaar.
-
+> De privé omslag heeft minstens één lid met de rol van de Eigenaar.
 
 1. Klik in de middelenconsole op **[!UICONTROL Create]** de werkbalk en kies een optie in het **[!UICONTROL Folder]** menu.
 
@@ -32,7 +31,7 @@ In de gebruikersinterface van Adobe Experience Manager kunt u een persoonlijke m
 
    ![chlimage_1-413](assets/chlimage_1-413.png)
 
-1. To share the folder with other users and the assign privileges to them, select the folder, and click the **[!UICONTROL Properties]** icon from the toolbar.
+1. To share the folder with other users and the assign privileges to them, select the folder, and click **[!UICONTROL Properties]** from the toolbar.
 
    ![chlimage_1-414](assets/chlimage_1-414.png)
 
@@ -58,7 +57,7 @@ In de gebruikersinterface van Adobe Experience Manager kunt u een persoonlijke m
 
    ![chlimage_1-416](assets/chlimage_1-416.png)
 
-1. Klik op het pictogram Melding om de lijst met meldingen te openen.
+1. Klik op Meldingen om de lijst met meldingen te openen.
 
    ![Lijst van kennisgevingen](assets/Assets-Notification.png)
 

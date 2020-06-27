@@ -3,9 +3,9 @@ title: Elementeditorpagina's maken en configureren
 description: Leer hoe u aangepaste pagina's in de Asset Editor kunt maken en meerdere middelen tegelijk kunt bewerken.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '2129'
+source-wordcount: '2116'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ In dit document wordt het volgende beschreven:
 
 ## Waarom de pagina&#39;s van de Redacteur van Activa creëren en vormen? {#why-create-and-configure-asset-editor-pages}
 
-Digital Asset Management wordt in steeds meer scenario&#39;s gebruikt. Bij de overgang van een kleinschalige oplossing voor een kleine gebruikersgroep professioneel opgeleide gebruikers - bijvoorbeeld fotografen of taxonomisten - naar grotere en gevarieerdere gebruikersgroepen - bijvoorbeeld zakelijke gebruikers, WCM-auteurs, journalisten, enzovoort - kan de krachtige gebruikersinterface van Adobe Experience Manager Assets voor professionele gebruikers te veel informatie bieden en kunnen belanghebbenden specifieke gebruikersinterfaces of toepassingen aanvragen om toegang te krijgen tot de digitale middelen die voor hen van belang zijn.
+Digital Asset Management wordt in steeds meer scenario&#39;s gebruikt. Bij de overgang van een kleinschalige oplossing voor een kleine gebruikersgroep professioneel opgeleide gebruikers - bijvoorbeeld fotografen of taxonomisten - naar grotere en meer gevarieerde gebruikersgroepen - bijvoorbeeld zakelijke gebruikers, WCM-auteurs, journalisten, enzovoort - kan de krachtige gebruikersinterface van Adobe Experience Manager Assets voor professionele gebruikers te veel informatie bieden en kunnen belanghebbenden specifieke gebruikersinterfaces of toepassingen aanvragen om toegang te krijgen tot de digitale middelen die voor hen van belang zijn.
 
 Deze asset-centric toepassingen kunnen eenvoudige fotogalerieën in een Intranet zijn waar de werknemers foto&#39;s van handelsshowbezoeken of een perscentrum in een openbaar-onder ogen ziende website kunnen uploaden. Asset-centric toepassingen kunnen ook worden uitgebreid tot complete oplossingen, zoals winkelwagentjes, kassa&#39;s en verificatieprocessen.
 
@@ -203,7 +203,7 @@ Als u de pagina Asset Editor maakt, is het verstandig de pagina direct onder de 
 
 Een pagina voor de Editor van middelen maken:
 
-1. Navigeer op het tabblad **Websites** naar de plaats waar u een pagina voor de middeleneditor wilt maken en klik op **Nieuw**.
+1. Navigeer op het **[!UICONTROL Websites]** tabblad naar de plaats waar u een pagina voor de middeleneditor wilt maken en klik op **Nieuw**.
 1. Selecteer **Geometrixx Asset Editor** en klik op **Maken**. De nieuwe pagina wordt gemaakt en de pagina wordt weergegeven op het tabblad **Websites** .
 
 ![screen_shot_2012-04-23at15858pm](assets/screen_shot_2012-04-23at15858pm.png)
@@ -356,7 +356,7 @@ Standaard bevindt het bestand zich in de modus Alleen-lezen, zodat gebruikers he
 
 Als de titel kan worden bewerkt, kunt u een titel en een beschrijving toevoegen door op het potlood te klikken om het venster Eigenschappen van **element** te openen. Bovendien kunt u het element in- en uitschakelen door de datum en tijd te selecteren.
 
-Wanneer gebruikers de Titel bewerken door op het potloodpictogram te klikken, kunnen ze de **Titel**, **Beschrijving** wijzigen en **Aan** en **Uit-tijd** invoeren om het element in en uit te schakelen.
+Tijdens het bewerken van de afbeelding kunnen gebruikers de [!UICONTROL Title]Titel **,** Beschrijving **wijzigen en** Aan **en** Uit-tijd **** invoeren om het element in en uit te schakelen.
 
 ![screen_shot_2012-04-23at35241pm](assets/screen_shot_2012-04-23at35241pm.png)
 
@@ -391,7 +391,7 @@ De volgende acties zijn beschikbaar:
 
 ## Elementen bewerken via de pagina Asset Editor {#multi-editing-assets-with-the-asset-editor-page}
 
-Met de middelen van de Manager van de Ervaring kunt u veranderingen in verscheidene activa in één keer aanbrengen. Nadat u elementen hebt geselecteerd, kunt u tegelijkertijd de volgende wijzigingen aanbrengen:
+Met Experience Manager Assets kunt u wijzigingen in meerdere elementen tegelijk aanbrengen. Nadat u elementen hebt geselecteerd, kunt u tegelijkertijd de volgende wijzigingen aanbrengen:
 
 * Tags
 * Metagegevens
@@ -415,14 +415,14 @@ Elementen bewerken via de pagina Asset Editor:
    * Andere metagegevens dan codes: de waarde van het veld wordt alleen weergegeven als deze voor alle geselecteerde elementen gelijk is.
 
 1. Klik op **Downloaden** om een ZIP-bestand met de elementen van de oorspronkelijke vertoningen te downloaden.
-1. Klik op het potloodpictogram naast het veld **Codes** om de codes te bewerken:
+1. Klik op de optie Codes naast het veld **Codes** bewerken.
 
    * Een tag die niet van toepassing is op alle elementen, maar alleen op een paar elementen, heeft een grijze achtergrond.
    * Een tag die van toepassing is op alle elementen heeft een witte achtergrond.
    U kunt:
 
-   * Klik op het pictogram **x** om de tag voor alle elementen te verwijderen.
-   * Klik op het pictogram **+** om de tag aan alle elementen toe te voegen.
+   * Klik `x` om de tag voor alle elementen te verwijderen.
+   * Klik `+` om de tag aan alle elementen toe te voegen.
    * Klik op de **pijl** en selecteer een tag om een nieuwe tag aan alle elementen toe te voegen.
    Klik op **OK** om de wijzigingen in het formulier te schrijven. Het vak naast het veld **Codes** wordt automatisch ingeschakeld.
 

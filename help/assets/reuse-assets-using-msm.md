@@ -4,10 +4,10 @@ description: Gebruik elementen op meerdere pagina's/mappen die zijn afgeleid van
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '3264'
-ht-degree: 11%
+source-wordcount: '3265'
+ht-degree: 10%
 
 ---
 
@@ -70,7 +70,7 @@ Ga als volgt te werk om live kopieën te maken met de eerste methode:
 
 1. Selecteer bronelementen of -mappen. Klik **[!UICONTROL Create > Live Copy]** op de werkbalk.
 
-   ![Live kopie maken van de interface van Experience Manager](assets/create_lc1.png)
+   ![Live kopie maken van Experience Manager-interface](assets/create_lc1.png)
 
    *Afbeelding: Live kopie maken van[!DNL Experience Manager]interface.*
 
@@ -82,7 +82,7 @@ Ga als volgt te werk om live kopieën te maken met de tweede methode:
 
 1. Klik in de [!DNL Experience Manager] interface in de rechterbovenhoek op **[!UICONTROL Create > Live Copy]**.
 
-   ![Live kopie maken van de interface van Experience Manager](assets/create_lc2.png)
+   ![Live kopie maken van Experience Manager-interface](assets/create_lc2.png)
 
    *Afbeelding: Live kopie maken van[!DNL Experience Manager]interface.*
 
@@ -242,7 +242,7 @@ U kunt relaties van verschillende assets in een map met livekopieën onderbreken
 
 Een live kopie is een kopie van de oorspronkelijke bron wanneer deze wordt gemaakt. De metagegevenswaarden van een live kopie worden overgenomen van de bron. De metagegevensvelden behouden afzonderlijk overerving met de respectieve velden van het bronelement.
 
-U hebt echter de flexibiliteit om lokale wijzigingen aan te brengen in een livekopie om een beperkt aantal eigenschappen te wijzigen. Als u lokale wijzigingen wilt aanbrengen, annuleert u de overname van de gewenste eigenschap. Wanneer de overname van een of meer metadatavelden wordt geannuleerd, blijven de liverelatie van de asset en de overname van de andere metadatavelden behouden. Bij een synchronisatie of uitrol worden de lokale wijzigingen niet overschreven. Open daartoe de pagina **[!UICONTROL Properties]** van een asset met livekopieën en klik op het pictogram **[!UICONTROL cancel inheritance]** naast een metadataveld.
+U hebt echter de flexibiliteit om lokale wijzigingen aan te brengen in een livekopie om een beperkt aantal eigenschappen te wijzigen. Als u lokale wijzigingen wilt aanbrengen, annuleert u de overname van de gewenste eigenschap. Wanneer de overname van een of meer metadatavelden wordt geannuleerd, blijven de liverelatie van de asset en de overname van de andere metadatavelden behouden. Bij een synchronisatie of uitrol worden de lokale wijzigingen niet overschreven. To do so, open **[!UICONTROL Properties]** page of a live copy asset, click the **[!UICONTROL cancel inheritance]** option next to a metadata field.
 
 U kunt alle lokale wijzigingen ongedaan maken en de status van het element herstellen. Handeling herstellen wordt onherroepelijk en onmiddellijk genegeerd bij alle lokale wijzigingen en herstelt overerving op alle metagegevensvelden. U keert terug vanaf de **[!UICONTROL Properties]** pagina van een actief voor live kopiëren door op **[!UICONTROL Reset]** de werkbalk te klikken.
 
@@ -252,7 +252,7 @@ U kunt alle lokale wijzigingen ongedaan maken en de status van het element herst
 
 ## Live relatie verwijderen {#detach}
 
-U kunt de relatie tussen een bron en een live kopie volledig verwijderen met de actie Loskoppelen. De live kopie wordt een zelfstandig middel of een zelfstandige map nadat deze is losgekoppeld. Het wordt getoond als nieuwe activa in [!DNL Experience Manager] interface, onmiddellijk na het losmaken. Voer de volgende stappen uit om een live kopie van de bron los te koppelen.
+U kunt de relatie tussen een bron en een live kopie volledig verwijderen met de actie Loskoppelen. De live kopie wordt een zelfstandig middel of een zelfstandige map nadat deze is losgekoppeld. Het wordt getoond als nieuw middel in [!DNL Experience Manager] interface, onmiddellijk na het losmaken. Voer de volgende stappen uit om een live kopie van de bron los te koppelen.
 
 1. Selecteer een actief of map voor live kopiëren. Klik op **[!UICONTROL Properties]** de werkbalk. U kunt ook de sneltoets gebruiken `p`.
 

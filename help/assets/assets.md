@@ -1,11 +1,11 @@
 ---
-title: Informatie over Adobe Experience Manager-middelen
-description: Meer informatie over het beheer van digitale middelen, de gebruiksgevallen ervan en de Adobe Experience Manager Asset-aanbieding
+title: Informatie over Adobe Experience Manager-elementen
+description: Meer informatie over het beheer van digitale middelen, de gebruiksgevallen ervan en de Experience Manager Asset-aanbieding van Adobe
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '875'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # Elementen beheren {#administering-assets}
 
-Elementen zijn een DAM-hulpmiddel (Digital Asset Management) dat volledig is geïntegreerd met het Experience Manager-platform en waarmee uw onderneming digitale middelen kan delen en distribueren. Gebruikers in een organisatie kunnen afbeeldingen, video&#39;s, documenten, audioclips en rich media, zoals Flash-bestanden, beheren, opslaan en openen voor gebruik op het web, in gedrukte vorm en voor digitale distributie.
+Assets is een Digital Asset Management (DAM)-tool die volledig is geïntegreerd met het Experience Manager-platform en waarmee uw onderneming digitale middelen kan delen en distribueren. Gebruikers in een organisatie kunnen afbeeldingen, video&#39;s, documenten, audioclips en rich media, zoals Flash-bestanden, beheren, opslaan en openen voor gebruik op het web, in gedrukte vorm en voor digitale distributie.
 
 ## Wat is Digital Asset Management? {#what-is-digital-asset-management}
 
 Middelen bieden bedrijfsbreed delen en distribueren van de belangrijkste digitale middelen van een organisatie. Gebruikers in een organisatie kunnen digitale elementen zoals afbeeldingen, afbeeldingen, audio, video en documenten via een webinterface (of een CIFS- of WebDAV-map) opslaan, beheren en benaderen.
 
-Goed geïntegreerd in de Manager van de Ervaring, laat het middelenvermogen u het volgende doen:
+Goed geïntegreerd in Experience Manager, laat het middelenvermogen u het volgende doen:
 
 * U kunt afbeeldingen, documenten, audiobestanden en videobestanden in verschillende bestandsindelingen toevoegen en delen.
 * Elementen beheren door deze te groeperen op tags, lichtbakken of sterren (uw favorieten). Annotaties toevoegen aan elementen.
@@ -28,9 +28,9 @@ Goed geïntegreerd in de Manager van de Ervaring, laat het middelenvermogen u he
 * Voer functies voor het bewerken van afbeeldingen uit, zoals schalen en afbeeldingsfilters toevoegen. U kunt meerdere digitale elementen tegelijk importeren en exporteren met een WebDAV- of CIFS-map.
 * Gebruik workflows en meldingen om gezamenlijke verwerking en downloads van een set elementen mogelijk te maken en toegangsrechten voor elementen te beheren.
 
-### De Elementen van de Manager van de ervaring is geïntegreerd met de Plaatsen van de Manager van de Ervaring {#aem-assets-fully-integrated-in-cq-wcm}
+### Experience Manager Assets is geïntegreerd met Experience Manager Sites {#aem-assets-fully-integrated-in-cq-wcm}
 
-Elementen zijn volledig geïntegreerd met Sites en de functionaliteit is beschikbaar via het pictogram DAM. De digitale elementen die worden beheerd in de gegevensopslagruimte van Middelen, zijn dan toegankelijk via de zoekfunctie voor inhoud wanneer u webpagina&#39;s ontwerpt.
+Elementen zijn volledig geïntegreerd met sites en alle functies zijn naadloos beschikbaar. De digitale elementen die worden beheerd in de gegevensopslagruimte van Middelen, zijn dan toegankelijk via de zoekfunctie voor inhoud wanneer u webpagina&#39;s ontwerpt.
 
 De basisgebruikersinterface is het zelfde als dat van Plaatsen. Zie [Overzicht van de sites](/help/sites-authoring/page-authoring.md) voor meer informatie.
 
@@ -49,11 +49,11 @@ Een element is in wezen een binair plus metagegevens plus uitvoeringen plus sube
 
 >[!CAUTION]
 >
->Het uploaden en/of bewerken van een groot volume aan elementen (in het bijzonder afbeeldingen) kan van invloed zijn op de prestaties van uw Experience Manager-instantie.
+>Het uploaden en/of bewerken van een groot volume aan elementen (in het bijzonder afbeeldingen) kan de prestaties van uw Experience Manager-instantie beïnvloeden.
 
-### Terminologie van Experience Manager Assets {#aem-assets-terminology}
+### Experience Manager Assets terminologie {#aem-assets-terminology}
 
-Wanneer u met digitale middelen werkt in Experience Manager, moet u de volgende terminologie begrijpen:
+Wanneer u werkt met digitale middelen in Experience Manager, hebt u de volgende terminologie nodig:
 
 * **Verzameling** Een verzameling elementen op basis van de fysieke locatie (map), de algemene eigenschappen (opgeslagen zoekmap) of de gebruikersselectie (lichtbakmappen).
 
@@ -84,6 +84,6 @@ De taken u met deze vooraf gevormde werkschema&#39;s kunt uitvoeren:
 
 Natuurlijk kunt u werkstromen ook handmatig toepassen. Zie [Assets Media](/help/assets/media-handlers.md)Handlersvoor een lijst met standaardworkflows.
 
-## Experience Manager-middelen en MediaLibrary {#cq-dam-vs-cq-medialibrary}
+## Experience Manager Assets en MediaLibrary {#cq-dam-vs-cq-medialibrary}
 
 Zie [Middelen en MediaLibrary](/help/assets/medialibrary.md) voor informatie over de verschillen.

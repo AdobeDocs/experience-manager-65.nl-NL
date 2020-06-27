@@ -1,9 +1,9 @@
 ---
 title: Metagegevens van uw digitale middelen beheren in [!DNL Adobe Experience Manager].
-description: Meer informatie over de typen metagegevens en hoe u met [!DNL Adobe Experience Manager Assets] metagegevens voor elementen kunt beheren, zodat u elementen gemakkelijker kunt indelen en ordenen. [!DNL Experience Manager] maakt het mogelijk elementen automatisch te ordenen en te verwerken op basis van hun metagegevens.
+description: Leer meer over de typen metagegevens en hoe u met [!DNL Adobe Experience Manager Assets] metagegevens voor elementen kunt beheren, zodat elementen gemakkelijker kunnen worden gecategoriseerd en ingedeeld. [!DNL Experience Manager] maakt het mogelijk elementen automatisch te ordenen en te verwerken op basis van hun metagegevens.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
 source-wordcount: '1437'
 ht-degree: 0%
@@ -50,7 +50,7 @@ To customize the metadata properties page, including adding, modifying, deleting
 
 1. In the Assets user interface, navigate to the location of the assets you want to edit.
 1. Select the assets for which you want to edit common properties.
-1. From the toolbar, click the **[!UICONTROL Properties]** icon to open the properties page for the selected assets.
+1. From the toolbar, click **[!UICONTROL Properties]** to open the properties page for the selected assets.
 
    >[!NOTE]
    >
@@ -64,7 +64,7 @@ To customize the metadata properties page, including adding, modifying, deleting
    >* In the properties page, you can remove assets from the asset list by deselecting them. The asset list has all the assets selected by default. The metadata for assets that you remove from the list is not updated.
    >* At the top of assets list, select the check box near **[!UICONTROL Title]** to toggle between selecting the assets and clearing the list.
 
-1. To select a different metadata schema for the assets, click the **[!UICONTROL Settings]** icon from the toolbar, and select the desired schema.
+1. To select a different metadata schema for the assets, click **[!UICONTROL Settings]** from the toolbar, and select the desired schema.
 1. Save the changes.
 1. To append the new metadata with the existing metadata in fields that contain multiple values, select **[!UICONTROL Append mode]**. If you do not select this option, the new metadata replaces the existing metadata in the fields. click **[!UICONTROL Submit]**.
 

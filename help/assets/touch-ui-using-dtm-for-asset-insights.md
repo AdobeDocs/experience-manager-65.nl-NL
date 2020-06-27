@@ -3,7 +3,7 @@ title: Asset Insights inschakelen via DTM
 description: Leer hoe u DTM (Adobe Dynamic Tag Management) gebruikt om Asset Insights in te schakelen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Asset Insights inschakelen via DTM {#enable-asset-insights-through-dtm}
 
-Het dynamische Beheer van de Markering van Adobe is een hulpmiddel dat uw digitale marketing hulpmiddelen activeert. Deze service wordt gratis geleverd aan klanten van Adobe Analytics.
+Het dynamische Beheer van de Markering van Adobe is een hulpmiddel dat uw digitale marketing hulpmiddelen activeert. Deze service is gratis beschikbaar voor klanten van Adobe Analytics.
 
 Hoewel u uw trackingcode kunt aanpassen om CMS-oplossingen van derden in staat te stellen Asset Insights te gebruiken, raadt Adobe u aan DTM te gebruiken om labels voor Asset Insights in te voegen.
 
@@ -23,13 +23,13 @@ Hoewel u uw trackingcode kunt aanpassen om CMS-oplossingen van derden in staat t
 
 Voer deze stappen uit om Asset Insights in te schakelen via DTM.
 
-1. Klik op het logo van Experience Manager en ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Insights Configuration]**.
+1. Klik op het Experience Manager-logo en ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Insights Configuration]**.
 1. [Experience Manager-instantie configureren met DTM Cloud Service](/help/sites-administering/dtm.md)
 
-   De API-token moet beschikbaar zijn wanneer u zich aanmeldt bij [https://dtm.adobe.com](https://dtm.adobe.com/) en **[!UICONTROL Account Settings]** via het pictogram Profiel gaat. Deze stap is niet vereist vanuit het oogpunt van Asset Insights, omdat de integratie van Experience Manager Sites met Asset Insights nog steeds in de werkzaamheden plaatsvindt.
+   De API-token moet beschikbaar zijn wanneer u zich aanmeldt bij [https://dtm.adobe.com](https://dtm.adobe.com/) en **[!UICONTROL Account Settings]** in het gebruikersprofiel bezoekt. Deze stap is niet vereist vanuit het standpunt van Asset Insights, omdat de integratie van Experience Manager Sites met Asset Insights nog steeds in de werkzaamheden plaatsvindt.
 
 1. Meld u aan bij [https://dtm.adobe.com](https://dtm.adobe.com/)en selecteer een bedrijf.
-1. Een bestaande webeigenschap maken/openen
+1. Een bestaande webeigenschap maken of openen
 
    * Selecteer het **[!UICONTROL Web Properties]** tabblad en klik op **[!UICONTROL Add Property]**.
 
@@ -40,24 +40,24 @@ Voer deze stappen uit om Asset Insights in te schakelen via DTM.
 
    ![chlimage_1-58](assets/chlimage_1-194.png)
 
-1. Uitbreiden **[!UICONTROL Javascript /Third Party Tags]**. Klik vervolgens op **[!UICONTROL Add New Script]** het **[!UICONTROL Sequential HTML]** tabblad om het dialoogvenster Script te openen.
+1. Uitbreiden **[!UICONTROL JavaScript /Third Party Tags]**. Klik vervolgens op **[!UICONTROL Add New Script]** het **[!UICONTROL Sequential HTML]** tabblad om het dialoogvenster Script te openen.
 
    ![chlimage_1-59](assets/chlimage_1-195.png)
 
-1. Klik op het logo Experience Manager en ga naar **[!UICONTROL Tools > Assets]**.
+1. Klik op het Experience Manager-logo en ga naar **[!UICONTROL Tools > Assets]**.
 1. Klik **[!UICONTROL Insights Page Tracker]**, kopieer de trackercode en plak deze in het dialoogvenster Script dat u in stap 6 hebt geopend. Sla de wijzigingen op.
 
    >[!NOTE]
    >
-   > * `AppMeasurement.js` wordt verwijderd. Het is waarschijnlijk beschikbaar via het hulpprogramma Adobe Analytics van DTM.
-   > * De aanroep van `assetAnalytics.dispatcher.init`() wordt verwijderd. De functie wordt naar verwachting aangeroepen zodra het hulpprogramma Adobe Analytics van DTM volledig is geladen.
-   > * Afhankelijk van de locatie waar Asset Insights Page Tracker wordt gehost (bijvoorbeeld Experience Manager, CDN enzovoort), kan de oorsprong van de scriptbron wijzigingen vereisen.
-   > * In het geval van door Experience Manager gehoste Paginanummering, moet de bron verwijzen naar een publicatie-instantie met de hostnaam van de verzender-instantie.
+   > * `AppMeasurement.js` wordt verwijderd. Het is waarschijnlijk beschikbaar via de Adobe Analytics-tool van DTM.
+   > * De aanroep van `assetAnalytics.dispatcher.init`() wordt verwijderd. De functie wordt naar verwachting aangeroepen zodra het Adobe Analytics-hulpprogramma van DTM is voltooid.
+   > * Afhankelijk van waar Asset Insights Page Tracker wordt gehost (bijvoorbeeld Experience Manager, CDN enzovoort), kan de oorsprong van de scriptbron wijzigingen vereisen.
+   > * In het geval van door Experience Manager gehoste paginanummering, moet de bron verwijzen naar een publicatie-instantie met de hostnaam van de verzenderinstantie.
 
 
-1. Ga naar `https://dtm.adobe.com`. Klik **[!UICONTROL Overview]** in het Web bezit en klik **[!UICONTROL Add Tool]** of open een bestaand Hulpmiddel van de Analyse van Adobe. Tijdens het maken van het gereedschap kunt u instellen **[!UICONTROL Configuration Method]** op **[!UICONTROL Automatic]**.
+1. Ga naar `https://dtm.adobe.com`. Klik **[!UICONTROL Overview]** in het Web bezit en klik **[!UICONTROL Add Tool]** of open een bestaand Hulpmiddel van de Analytics van Adobe. Tijdens het maken van het gereedschap kunt u instellen **[!UICONTROL Configuration Method]** op **[!UICONTROL Automatic]**.
 
-   ![Gereedschap Adobe Analytics toevoegen](assets/Add-Adobe-Analytics-Tool.png)
+   ![Adobe Analytics-gereedschap toevoegen](assets/Add-Adobe-Analytics-Tool.png)
 
    Selecteer de gewenste opties voor het rapport Staging/Productie.
 

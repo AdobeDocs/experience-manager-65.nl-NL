@@ -1,11 +1,11 @@
 ---
-title: Samengestelde elementen beheren met verwijzingen en elementen van meerdere pagina's in [!DNL Adobe Experience Manager].
+title: Samengestelde elementen beheren met verwijzingen en elementen van meerdere pagina's in [!DNL-Adobe Experience Manager].
 description: Leer hoe u verwijzingen naar digitale middelen maakt vanuit [!DNL Adobe InDesign], [!DNL Adobe Illustrator] en [!DNL Adobe Photoshop]. Met de functie Paginaviewer kunt u afzonderlijke subelementpagina's van bestanden met meerdere pagina's weergeven, zoals PDF-, INDD-, PPT-, PPTX- en AI-bestanden.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d90a95195a97a1840e1defb49d2a09ffbd3c8650
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '1311'
+source-wordcount: '1315'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Verwijzingen worden opgelost op basis van pad, document-id en instantie-id van d
 
 U kunt vanuit een [!DNL Adobe Illustrator] bestand verwijzen naar bestaande digitale elementen.
 
-1. Haal de digitale middelen op in het lokale bestandssysteem met behulp van de [Experience Manager-bureaubladtoepassing](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html). Navigeer naar de bestandssysteemlocatie van het element waarnaar u wilt verwijzen.
+1. Haal de digitale middelen met de [Experience Manager-bureaubladtoepassing](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)op in het lokale bestandssysteem. Navigeer naar de bestandssysteemlocatie van het element waarnaar u wilt verwijzen.
 1. Sleep het element van de lokale map naar het [!DNL Illustrator] bestand.
 
 1. Sla het [!DNL Illustrator] bestand op het gekoppelde station op of [upload](/help/assets/managing-assets-touch-ui.md#uploading-assets) het bestand naar de [!DNL Experience Manager] opslagplaats.
@@ -40,7 +40,7 @@ U kunt vanuit een [!DNL Adobe Illustrator] bestand verwijzen naar bestaande digi
 
 1. Klik op **[!UICONTROL View Properties]** de werkbalk. Op de [!UICONTROL Properties] pagina wordt de lijst met bestanden die naar het huidige element verwijzen, weergegeven onder de **[!UICONTROL References]** kolom op het **[!UICONTROL Basic]** tabblad.
 
-   ![bekijk de verwijzingen van de Middelen van de Manager van de Ervaring in de kolom van Verwijzingen in activadetails](assets/asset-references.png)
+   ![de verwijzingen naar Experience Manager-middelen in de kolom Referenties weergeven in de elementdetails](assets/asset-references.png)
 
    *Afbeelding: Verwijzingen naar elementen in de elementen.*
 
@@ -81,7 +81,7 @@ Deze procedure is vergelijkbaar met het [toevoegen van digitale elementen als ve
 
 >[!NOTE]
 >
->Er kan ook worden verwezen naar de elementen in samengestelde elementen op basis van hun document-id en instantie-id. Deze functionaliteit is alleen beschikbaar bij [!DNL Adobe Illustrator] en in [!DNL Adobe Photoshop] versies. Voor andere toepassingen wordt het verwijzen uitgevoerd op basis van het relatieve pad van gekoppelde elementen in het samengestelde hoofdelement, zoals dat in eerdere versies van [!DNL Experience Manager]dit programma is gebeurd.
+>Er kan ook worden verwezen naar de elementen in samengestelde elementen op basis van hun document-id en instantie-id. Deze functionaliteit is alleen beschikbaar bij [!DNL Adobe Illustrator] en in [!DNL Adobe Photoshop] versies. Voor andere toepassingen wordt het verwijzen uitgevoerd op basis van het relatieve pad van gekoppelde elementen in het hoofdsamengestelde element, zoals dat in eerdere versies van [!DNL Experience Manager]dit programma is gebeurd.
 
 ## Subelementen maken {#generate-subassets}
 
@@ -105,7 +105,7 @@ Met name voor Microsoft Word-documenten voert u de **[!UICONTROL DAM Parse Word 
 
 ## Subelementen weergeven {#viewing-subassets}
 
-De subelementen worden alleen weergegeven als de subelementen zijn gegenereerd en beschikbaar zijn voor het geselecteerde element met meerdere pagina&#39;s. Open het element met meerdere pagina&#39;s om de gegenereerde subelementen weer te geven. Klik in de linkerbovenhoek van de pagina op het pictogram ![Linkerspoor en klik](assets/do-not-localize/aem_leftrail_contentonly.png) **[!UICONTROL Subassets]** in de lijst. Wanneer u een keuze maakt in de **[!UICONTROL Subassets]** lijst. U kunt ook de sneltoets gebruiken `alt + 5`.
+De subelementen worden alleen weergegeven als de subelementen zijn gegenereerd en beschikbaar zijn voor het geselecteerde element met meerdere pagina&#39;s. Open het element met meerdere pagina&#39;s om de gegenereerde subelementen weer te geven. Klik in de linkerbovenhoek van de pagina op ![Option om de linkertrack](assets/do-not-localize/aem_leftrail_contentonly.png) te openen en klik in de lijst **[!UICONTROL Subassets]** . Wanneer u een keuze maakt in de **[!UICONTROL Subassets]** lijst. U kunt ook de sneltoets gebruiken `alt + 5`.
 
 ![Subelementen weergeven voor elementen die uit meerdere pagina&#39;s bestaan](assets/view_subassets_simulation.gif)
 
@@ -127,11 +127,11 @@ De volgende opties zijn beschikbaar in de werkbalk, in de linkerrails en in de b
 
 * **[!UICONTROL Page Overview]** worden alle subelementen tegelijkertijd weergegeven.
 
-* **[!UICONTROL Timeline]** Nadat u op het pictogram ![](assets/do-not-localize/aem_leftrail_contentonly.png) Linkerspoor hebt geklikt, wordt de activiteitsstroom voor het bestand weergegeven.
+* **[!UICONTROL Timeline]** Nadat u op ![Option hebt geklikt om het linkerspoor](assets/do-not-localize/aem_leftrail_contentonly.png) te openen, wordt de activiteitsstroom voor het bestand weergegeven.
 
 ## Beste werkwijzen en beperking {#best-practice-limitation-tips}
 
-* Bij elke implementatie van Experience Manager kan het genereren van submiddelen zeer bronintensief zijn. Als u subassets genereert wanneer complexe elementen worden geüpload, voegt u de stap toe in de DAM-workflow voor het bijwerken van middelen. Als u op verzoek subassets genereert, maakt u een aparte workflow om subassets te genereren. Met een speciale workflow kunt u de andere stappen in de workflow voor DAM-update-elementen overslaan en computerbronnen opslaan.
+* Bij elke Experience Manager-implementatie kan het genereren van submiddelen zeer veel resources kosten. Als u subassets genereert wanneer complexe elementen worden geüpload, voegt u de stap toe in de DAM-workflow voor het bijwerken van middelen. Als u op verzoek subassets genereert, maakt u een aparte workflow om subassets te genereren. Met een speciale workflow kunt u de andere stappen in de workflow voor DAM-update-elementen overslaan en computerbronnen opslaan.
 
 >[!MORELIKETHIS]
 >
@@ -139,3 +139,4 @@ De volgende opties zijn beschikbaar in de werkbalk, in de linkerrails en in de b
 >* [Bureaubladhandelingen configureren in Adobe Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2)
 >* [Gekoppelde slimme objecten maken in Adobe Photoshop](https://helpx.adobe.com/photoshop/using/create-smart-objects.html#create-linked-smart-objects)
 >* [Afbeeldingen plaatsen in Adobe InDesign](https://helpx.adobe.com/indesign/using/placing-graphics.html)
+

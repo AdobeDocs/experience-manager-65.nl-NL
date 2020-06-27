@@ -1,11 +1,11 @@
 ---
 title: Zoeken in gezichten
-description: In dit artikel wordt beschreven hoe u zoekfacetten in Adobe Experience Manager kunt maken, wijzigen en gebruiken.
+description: In dit artikel wordt beschreven hoe u zoekfacetten in de Adobe Experience Manager maakt, wijzigt en gebruikt.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '2375'
+source-wordcount: '2380'
 ht-degree: 15%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 15%
 
 # Search Facets {#search-facets}
 
-Een bedrijfsbrede implementatie van Adobe Experience Manager-middelen biedt de mogelijkheid om veel middelen op te slaan. Soms kan het lastig en tijdrovend zijn om de juiste middelen te vinden als u alleen de algemene zoekmogelijkheden van Experience Manager gebruikt.
+Een bedrijfsbrede plaatsing van de Activa van de Adobe Experience Manager heeft de capaciteit om vele activa op te slaan. Soms kan het lastig en tijdrovend zijn om het juiste middel te vinden als u alleen de algemene zoekmogelijkheden van Experience Manager gebruikt.
 
 Gebruik zoekfacetten in het deelvenster Filters om de zoekervaring gedetailleerder te maken en de zoekfunctionaliteit efficiënter en veelzijdiger te maken. De facetten van het onderzoek voegen veelvoudige afmetingen (predikaten) toe die u toelaten om complexere onderzoeken uit te voeren. Het deelvenster Filters bevat een aantal standaardfacetten. U kunt ook aangepaste zoekfacetten toevoegen.
 
@@ -115,7 +115,7 @@ Als u een bestaand knooppunt wilt gebruiken, geeft u dit op in het dialoogvenste
 >De voorspelling van Opties is een aangepaste omslag die bezitsvoorspelling omvat om het beschreven gedrag aan te tonen. Momenteel, is er geen REST eindpunt beschikbaar om de functionaliteit te steunen native.
 
 1. Click the Experience Manager logo, and then go to **[!UICONTROL Tools > General > Search Forms]**.
-1. From the **[!UICONTROL Search Forms]** page, select **[!UICONTROL Assets Admin Search Rail]**, then click the Edit icon.
+1. Selecteer op de **[!UICONTROL Search Forms]** pagina de optie **[!UICONTROL Assets Admin Search Rail]** en klik op **[!UICONTROL Edit]**.
 1. Sleep op de pagina **[!UICONTROL Edit Search Form]** **[!UICONTROL Options Predicate]** van het tabblad **[!UICONTROL Select Predicate]** naar het hoofdvenster.
 1. Voer op het tabblad **[!UICONTROL Settings]** een label en een naam voor de eigenschap in. Als u bijvoorbeeld assets wilt zoeken op basis van hun indeling, geeft u een gebruikersvriendelijke naam voor het label op, bijvoorbeeld **[!UICONTROL File Type]**. Geef de eigenschap op op basis waarvan de zoekopdracht in het eigenschapsveld moet worden uitgevoerd, bijvoorbeeld `jcr:content/metadata/dc:format.`
 1. Voer een van de volgende handelingen uit:
@@ -164,9 +164,9 @@ Met de tagvoorspelling kunt u op tags gebaseerde zoekopdrachten naar elementen u
 1. Navigeer naar het deelvenster Zoeken. The **[!UICONTROL Tags]** predicate is added to the Search panel.
 1. Geef tags op op basis waarvan u de elementen wilt zoeken of een selectie wilt maken in de lijst met suggesties.
 
-   ![Door Experience Manager opgegeven suggestie bij het typen van de naam van de tag](assets/chlimage_1-419.png)
+   ![Door Experience Manager opgegeven suggestie bij het typen van de naam van een tag](assets/chlimage_1-419.png)
 
-   *Afbeelding: Inleiding van Experience Manager bij het typen van de naam van de tag.*
+   *Afbeelding: Door Experience Manager opgegeven suggestie bij het typen van de naam van de tag.*
 
 1. Select **[!UICONTROL Match all]** to search for matches that include all tags that you specify.
 
@@ -193,20 +193,17 @@ Net als bij de manier waarop u een voorspelling van eigenschappen of een voorspe
 
 ## Standaardzoekfacetten herstellen {#restoring-default-search-facets}
 
-Standaard wordt een vergrendelingspictogram vóór **[!UICONTROL Assets Admin Search Rail]** op de **[!UICONTROL Search Forms]** pagina weergegeven. Het vergrendelingspictogram verdwijnt als u zoekfacetten aan het formulier toevoegt die aangeven dat het standaardformulier is gewijzigd.
+Standaard wordt er een pictogram ![voor het vergrendelen van een](assets/do-not-localize/lock_closed_icon.svg) vergrendelingspictogram vóór **[!UICONTROL Assets Admin Search Rail]** op de **[!UICONTROL Search Forms]** pagina weergegeven. Het pictogram Vergrendelen aan de hand van een optie op de pagina Formulieren zoeken geeft aan dat de standaardinstellingen intact zijn en niet zijn aangepast. Het pictogram Sluiten ![](assets/do-not-localize/lock_closed_icon.svg) vergrendelen verdwijnt als u zoekfacetten aan het formulier toevoegt die aangeven dat het standaardformulier is gewijzigd.
 
-![Het pictogram Vergrendelen aan de hand van een optie op de pagina Zoekformulieren geeft aan dat de standaardinstellingen intact zijn en niet zijn aangepast.](assets/locked_admin_rail.png)
-
-Het pictogram Vergrendelen aan de hand van een optie op de pagina Formulieren zoeken geeft aan dat de standaardinstellingen intact zijn en niet zijn aangepast.
+![Het pictogram Vergrendelen aan de hand van een optie op de pagina Formulieren zoeken geeft aan dat de standaardinstellingen intact zijn en niet zijn aangepast.](assets/locked_admin_rail.png)
 
 Voer de volgende stappen uit om de standaardzoekfacet te herstellen:
 
 1. Selecteer **[!UICONTROL Assets Admin Search Rail]** op de **[!UICONTROL Search Forms]** pagina.
-1. Click **[!UICONTROL Delete]** in the toolbar.
-   ![deleteoutline](assets/deleteoutline.png)
+1. Klik op de werkbalk op de knop **[!UICONTROL Delete]** Verwijderen ![](assets/deleteoutline.png) .
 1. Klik in het bevestigingsvenster **[!UICONTROL Delete]** om de aangepaste wijzigingen te verwijderen.
 
-   Nadat u de aangepaste wijzigingen in zoekfacetten hebt verwijderd, verschijnt het vergrendelingspictogram opnieuw vóór **[!UICONTROL Assets Admin Search Rail]** op de pagina **[!UICONTROL Search Forms]**.
+   After you delete the custom changes to search facets, the lock icon ![lock closed icon](assets/do-not-localize/lock_closed_icon.svg) reappears before **[!UICONTROL Assets Admin Search Rail]** in the **[!UICONTROL Search Forms]** page.
 
 ## Gebruikersmachtigingen {#user-permissions}
 

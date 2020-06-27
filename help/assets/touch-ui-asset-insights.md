@@ -3,9 +3,9 @@ title: 'Asset Insights '
 description: Leer hoe u met de functie Asset Insights gebruikersbeoordelingen en gebruiksstatistieken kunt bijhouden van afbeeldingen die worden gebruikt in websites van derden, marketingcampagnes en creatieve oplossingen van Adobe.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '698'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ Met Elementinzichten worden gegevens over gebruikersactiviteit vastgelegd, zoals
 
 Als u met behulp van Assets gebruiksstatistieken wilt vastleggen voor afbeeldingen van een website, moet u de insluitcode voor de afbeelding opnemen in de websitecode.
 
-Als u het gebruik van bedrijfsgegevens voor elementen wilt laten weergeven, configureert u eerst de functie voor het ophalen van rapportgegevens van Adobe Analytics. Zie [Elementinzichten](/help/assets/touch-ui-configuring-asset-insights.md)configureren voor meer informatie.
+Als u het gebruik van bedrijfsgegevens voor elementen wilt laten weergeven, moet u eerst de functie configureren om rapportgegevens van Adobe Analytics op te halen. Zie [Elementinzichten](/help/assets/touch-ui-configuring-asset-insights.md)configureren voor meer informatie.
 
 >[!NOTE]
 >
@@ -47,7 +47,7 @@ U kunt de Asset Insights-scores van de metagegevenspagina weergeven.
 
    >[!NOTE]
    >
-   >Omdat de functie Asset Insights de gegevens van Oplossingen gewoonlijk periodiek ophaalt van Adobe Analytics, wordt in de sectie Oplossingen mogelijk niet de meest recente gegevens weergegeven. De tijdspanne waarvoor de gegevens worden getoond hangt het programma van de haalverrichting af die de Inzichten van Activa loopt om de gegevens van de Analyse terug te winnen.
+   >Omdat de functie Asset Insights de gegevens van Solutions doorgaans periodiek van Adobe Analytics ophaalt, wordt in de sectie Solutions mogelijk niet de meest recente gegevens weergegeven. De periode waarvoor de gegevens worden weergegeven, is afhankelijk van het schema van de ophaalbewerking die Asset Insights uitvoert om Analytics-gegevens op te halen.
 
 1. To view performance statistics for the asset graphically over a period of time, select period in the **[!UICONTROL Performance Statistics]** section. De details, inclusief klikken en impressies, worden getoond als trendlijnen van een grafiek.
 
@@ -66,14 +66,14 @@ U kunt de Asset Insights-scores van de metagegevenspagina weergeven.
 You can view scores of all assets within a folder simultaneously using **[!UICONTROL Insights View]**.
 
 1. Navigeer in de gebruikersinterface Elementen naar de map met de elementen waarvoor u inzichten wilt weergeven.
-1. Klik op het pictogram Lay-out op de werkbalk en kies **[!UICONTROL Insights View]**.
+1. Klik op Indeling op de werkbalk en kies **[!UICONTROL Insights View]**.
 1. Op de pagina worden gebruiksscores voor de elementen weergegeven. Vergelijk de ratings van de verschillende activa en teken inzichten.
 
 ## Achtergrondtaak plannen {#scheduling-background-job}
 
 Asset Insights haalt op periodieke wijze gebruiksgegevens voor middelen op uit Adobe Analytics-rapportreeksen. Door gebrek, stelt de Inzichten van Activa een achtergrondbaan om de 24 uur bij 2 AM aan de ophaalgegevens in werking. Nochtans, kunt u zowel de frequentie als de tijd wijzigen door de **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** dienst van de Webconsole te vormen.
 
-1. Klik op het logo van Experience Manager en ga naar **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
+1. Klik op het Experience Manager-logo en ga naar **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 1. Open de **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** serviceconfiguratie.
 
    ![chlimage_1-99](assets/chlimage_1-304.png)

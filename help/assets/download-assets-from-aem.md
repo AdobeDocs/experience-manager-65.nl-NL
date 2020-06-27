@@ -3,9 +3,9 @@ title: Download digitale middelen van [!DNL Adobe Experience Manager].
 description: Leer hoe u elementen downloadt van [!DNL Adobe Experience Manager] en de downloadfunctionaliteit in- of uitschakelt.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '780'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ De elementtypen Afbeeldingssets, Spin-sets, Gemengde mediasets en Carousel-sets 
 
 **Als u elementen wilt downloaden,**
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Navigation]** (Compass icon).
+1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Navigation]**.
 1. Tik op de navigatiepagina op **[!UICONTROL Assets > Files.]**
 1. Navigeer naar een map die elementen bevat die u wilt downloaden.
 1. Selecteer de map of selecteer een of meer middelen in de map.

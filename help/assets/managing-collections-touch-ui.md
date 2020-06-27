@@ -4,9 +4,9 @@ description: Leer taken om verzamelingen met middelen te beheren, zoals verzamel
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
 workflow-type: tm+mt
-source-wordcount: '2064'
+source-wordcount: '2023'
 ht-degree: 12%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 12%
 
 # Verzamelingen beheren {#managing-collections}
 
-Een verzameling is een set elementen in Adobe Experience Manager-middelen. Gebruik verzamelingen om elementen tussen gebruikers te delen. De set kan een statische verzameling of een dynamische verzameling zijn die is gebaseerd op zoekresultaten.
+Een verzameling is een set elementen binnen Adobe Experience Manager Assets. Gebruik verzamelingen om elementen tussen gebruikers te delen. De set kan een statische verzameling of een dynamische verzameling zijn die is gebaseerd op zoekresultaten.
 
 In tegenstelling tot mappen kan een verzameling elementen van verschillende locaties bevatten. U kunt verzamelingen delen met verschillende gebruikers waaraan verschillende niveaus van bevoegdheden zijn toegewezen, zoals weergeven, bewerken, enzovoort.
 
@@ -28,7 +28,7 @@ De inzamelingen zijn van de volgende types, die op de manier worden gebaseerd zi
 
 ## Toegang tot de verzamelingsconsole {#navigating-the-collections-console}
 
-Ga **[!UICONTROL Collections]** in de interface Experience Manager naar **[!UICONTROL Assets]** > **[!UICONTROL Collections]**.
+Ga **[!UICONTROL Collections]** in de Experience Manager-interface naar **[!UICONTROL Assets]** > **[!UICONTROL Collections]**.
 
 ## Een verzameling maken {#creating-a-collection}
 
@@ -52,7 +52,7 @@ U kunt een verzameling maken met statische verwijzingen, bijvoorbeeld een verzam
 
    >[!NOTE]
    >
-   >Met de middelen van Experience Manager kunt u controletaken voor een verzameling maken die lijken op de manier waarop u overzichtstaken voor een map met middelen maakt.
+   >Met Experience Manager Assets kunt u controletaken voor een verzameling maken, vergelijkbaar met de manier waarop u overzichtstaken voor een map met middelen maakt.
 
    Navigeer naar de gebruikersinterface Elementen om elementen aan de verzameling toe te voegen. Zie Elementen [toevoegen aan een verzameling](#adding-assets-to-a-collection)voor meer informatie.
 
@@ -61,11 +61,11 @@ U kunt een verzameling maken met statische verwijzingen, bijvoorbeeld een verzam
 U kunt elementen van de interface Elementen naar een verzameling slepen. U kunt ook een kopie van een verzameling maken en de elementen daar slepen.
 
 1. Selecteer in de gebruikersinterface Elementen de elementen die u aan een verzameling wilt toevoegen.
-1. Sleep de elementen naar de **[!UICONTROL Drop in Collection]** zone. Alternatively, click the **[!UICONTROL To Collection]** icon from the toolbar.
+1. Sleep de elementen naar de **[!UICONTROL Drop in Collection]** zone. U kunt ook op de werkbalk klikken. **[!UICONTROL To Collection]**
 
    ![drop_in_collection](assets/drop_in_collection.png)
 
-1. In the **[!UICONTROL Add To Collection]** page, click the **[!UICONTROL Create Collection]** icon from the toolbar.
+1. Klik op de werkbalk op de **[!UICONTROL Add To Collection]** **[!UICONTROL Create Collection]** pagina.
 
    If you want to add the assets to an existing collection, select it from the page, and click **[!UICONTROL Add]**. Standaard wordt de laatst bijgewerkte verzameling geselecteerd.
 
@@ -110,7 +110,7 @@ Voer de volgende stappen uit om een slimme verzameling te maken:
 
 U kunt elementen toevoegen aan een verzameling die een lijst met bestanden of mappen waarnaar wordt verwezen, bevat. Slimme verzamelingen gebruiken een zoekquery om elementen te vullen. Daarom zijn statische verwijzingen naar elementen en mappen niet op hen van toepassing.
 
-1. Selecteer het element in de gebruikersinterface Elementen en klik op het **[!UICONTROL To Collection]** pictogram op de werkbalk.
+1. Selecteer het element in de gebruikersinterface Elementen en klik op **[!UICONTROL To Collection]** de werkbalk.
 
    ![chlimage_1-8](assets/chlimage_1-113.png)
 
@@ -124,12 +124,12 @@ U kunt elementen toevoegen aan een verzameling die een lijst met bestanden of ma
 
 Slimme verzamelingen worden gemaakt door een zoekopdracht op te slaan, zodat u de inhoud kunt wijzigen door de zoekparameters van de [opgeslagen zoekopdracht](#saved-searches)te wijzigen.
 
-1. Klik in de gebruikersinterface Middelen op het zoekpictogram op de werkbalk.
+1. Klik in de gebruikersinterface Elementen op de zoekoptie op de werkbalk.
 
    ![chlimage_1-9](assets/chlimage_1-110.png)
 
 1. Met de curseur in het vakje van het Onderzoek, duw op de sleutel van de Terugkeer.
-1. Klik op het pictogram GlobalNav om het deelvenster Filters weer te geven.
+1. Open het deelvenster Filters in de Experience Manager-interface.
 1. Selecteer in de lijst met **[!UICONTROL Saved Searches]** de slimme verzameling die u wilt wijzigen. In het deelvenster Zoeken worden de filters weergegeven die zijn geconfigureerd voor de opgeslagen zoekopdracht.
 
    ![select_smart_collection](assets/select_smart_collection.png)
@@ -158,7 +158,7 @@ De meta-gegevens van de inzameling omvat gegevens over de inzameling, met inbegr
 U kunt de metagegevens van meerdere verzamelingen tegelijk bewerken. Deze functionaliteit helpt u snel gemeenschappelijke meta-gegevens in veelvoudige inzamelingen te herhalen.
 
 1. Selecteer twee of meer verzamelingen in de verzamelingsconsole.
-1. From the toolbar, click the **[!UICONTROL Properties]** icon.
+1. Klik **[!UICONTROL Properties]** op de werkbalk.
 1. Bewerk desgewenst de metadata op de pagina **[!UICONTROL Collection Metadata]** onder de tabbladen **[!UICONTROL Basic]** en **[!UICONTROL Advanced]**.
 1. Als u de eigenschappen van metagegevens voor een specifieke verzameling wilt weergeven, schakelt u de overige verzamelingen in de lijst met verzamelingen uit. De gebieden van de meta-gegevensredacteur zijn bevolkt met de meta-gegevens voor de bepaalde inzameling.
 
@@ -197,14 +197,14 @@ In een verzameling is het zoeken in Experience Manager beperkt tot elementen (en
 
 U kunt verzamelingsinstellingen bewerken, zoals titel en beschrijving, of leden toevoegen aan een verzameling.
 
-1. Selecteer een verzameling en klik op het **[!UICONTROL Settings]** pictogram op de werkbalk. U kunt ook de **[!UICONTROL Settings]** snelle actie van de miniatuur van de verzameling gebruiken.
+1. Selecteer een verzameling en klik op **[!UICONTROL Settings]** de werkbalk. U kunt ook de **[!UICONTROL Settings]** snelle actie van de miniatuur van de verzameling gebruiken.
 1. Wijzig de verzamelingsinstellingen op de pagina **[!UICONTROL Collection Settings]**. For example, modify the collection title, descriptions, members, and permissions as discussed in [Adding Collections](#creating-a-collection).
 
 1. Klik op **[!UICONTROL Save]** om de wijzigingen op te slaan.
 
 ## Een verzameling verwijderen {#deleting-a-collection}
 
-1. Selecteer een of meer verzamelingen in de console Verzamelingen en klik op het pictogram Verwijderen op de werkbalk.
+1. Selecteer een of meer verzamelingen in de console Verzamelingen en klik op Verwijderen op de werkbalk.
 
 1. Klik in het dialoogvenster **[!UICONTROL Delete]** om de verwijderactie te bevestigen.
 
@@ -217,7 +217,7 @@ U kunt verzamelingsinstellingen bewerken, zoals titel en beschrijving, of leden 
 Wanneer u een verzameling downloadt, wordt de volledige hiërarchie van elementen in de verzameling gedownload, inclusief mappen en onderliggende verzamelingen.
 
 1. Selecteer een of meer verzamelingen die u wilt downloaden in de console Verzamelingen.
-1. Klik op het downloadpictogram op de werkbalk.
+1. Klik **[!UICONTROL Download]** op de werkbalk.
 1. In the **[!UICONTROL Download]** dialog, click **[!UICONTROL Download]**. Selecteer **[!UICONTROL Renditions]**. Selecteer de **[!UICONTROL Email]** optie voor het verzenden van een e-mailbericht naar de eigenaar van de verzameling.
 
    Wanneer u een verzameling selecteert die u wilt downloaden, wordt de volledige maphiërarchie onder de verzameling gedownload. Als u elke verzameling die u downloadt (inclusief elementen in onderliggende verzamelingen die onder de bovenliggende verzameling zijn genest), in een afzonderlijke map wilt opnemen, selecteert u **[!UICONTROL Create separate folder for each asset]**.
@@ -256,13 +256,11 @@ Opgeslagen zoekopdrachten bewerken is hetzelfde als slimme verzamelingen bewerke
 
 Voer de volgende stappen uit om opgeslagen zoekopdrachten te verwijderen:
 
-1. Klik in de gebruikersinterface Middelen op het zoekpictogram op de werkbalk.
-
-   ![chlimage_1-13](assets/chlimage_1-114.png)
+1. Klik in de gebruikersinterface Middelen op Zoeken in ![afbeelding_1-13](assets/chlimage_1-114.png).
 
 1. Met de curseur op het gebied van Onderzoek, duw op de Enter sleutel.
 
-1. Klik op het pictogram GlobalNav om het deelvenster Filters weer te geven.
+1. Open het deelvenster Filters in de Experience Manager-interface.
 
 1. From the **[!UICONTROL Saved Searches]** list, click **[!UICONTROL Delete]** next to the smart collection that you want to delete.
 
@@ -274,18 +272,14 @@ Voer de volgende stappen uit om opgeslagen zoekopdrachten te verwijderen:
 
 U kunt een workflow voor de elementen in een verzameling uitvoeren. Als de verzameling geneste verzamelingen bevat, wordt de workflow ook uitgevoerd op de elementen in de geneste verzamelingen. Als de verzameling en de geneste verzameling echter dubbele elementen bevatten, wordt de workflow slechts eenmaal uitgevoerd voor dergelijke elementen.
 
-1. Selecteer in de console Verzamelingen een verzameling waarop u een workflow wilt uitvoeren.
-1. Klik op het pictogram GlobalNav en kies een optie in de **[!UICONTROL Timeline]** lijst.
-1. Klik in de tijdlijn op het pictogram Caret onderaan en klik op **[!UICONTROL Start Workflow]**.
-
-   ![chlimage_1-14](assets/chlimage_1-137.png)
-
+1. Open **[!UICONTROL Assets]** > **[!UICONTROL Collections]**. Selecteer een specifieke verzameling als u een workflow op die verzameling wilt uitvoeren.
+1. Open **[!UICONTROL Timeline]** spoorstaaf. Klik ![chlimage_1-14](assets/chlimage_1-137.png) en klik **[!UICONTROL Start Workflow]**.
 1. In the **[!UICONTROL Start Workflow]** section, select a workflow model from the list. Selecteer bijvoorbeeld het **[!UICONTROL DAM Update Asset]** model.
 1. Voer een titel in voor de workflow en klik op **[!UICONTROL Start]**.
-1. Klik in het dialoogvenster op **[!UICONTROL Proceed]**. De workflow wordt uitgevoerd op alle elementen in de verzameling.
+1. Klik in het dialoogvenster op **[!UICONTROL Proceed]**. De workflow verwerkt alle elementen in de geselecteerde verzameling.
 
 >[!MORELIKETHIS]
 >
->* [E-mailmeldingen voor Experience Manager configureren](/help/sites-administering/notification.md#assetsconfig)
+>* [E-mailberichten voor Experience Manager Assets configureren](/help/sites-administering/notification.md#assetsconfig)
 >* [Een revisietaak maken voor verzamelingen](bulk-approval.md)
 

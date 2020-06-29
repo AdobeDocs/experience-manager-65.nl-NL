@@ -10,16 +10,19 @@ topic-tags: developing
 content-type: reference
 discoiquuid: e1b5c25d-cbdd-421c-b81a-feb6039610a3
 translation-type: tm+mt
-source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
+source-git-commit: 342e148ba183782e4c8b0f08328b9d87685ca08e
+workflow-type: tm+mt
+source-wordcount: '531'
+ht-degree: 0%
 
 ---
 
 
 
-# Een SCF-sandbox maken {#create-an-scf-sandbox}
+# Een SCF-sandbox maken  {#create-an-scf-sandbox}
 
 
-Vanaf AEM 6.1-gemeenschappen is het maken van een communitysite de eenvoudigste manier om snel een sandbox te maken. Zie [Aan de slag met AEM-gemeenschappen](getting-started.md).
+Vanaf AEM 6.1-gemeenschappen is het maken van een communitysite de eenvoudigste manier om snel een sandbox te maken. Zie [Aan de slag met AEM Communities](getting-started.md).
 
 Een ander nuttig hulpmiddel voor ontwikkelaars is de gids [van de Componenten van de](components-guide.md)Gemeenschap, die voor exploratie en snelle prototyping van de componenten en de eigenschappen van Gemeenschappen toelaat.
 
@@ -50,10 +53,10 @@ In deze zelfstudie wordt ervan uitgegaan dat u één AEM-auteur en één AEM-pub
 
 Hier volgen enkele handige koppelingen voor ontwikkelaars die nog niet bekend zijn met het AEM-platform:
 
-* [Aan de slag](../../help/sites-deploying/deploy.md#getting-started): voor het implementeren van AEM-instanties
+* [Aan de slag](../../help/sites-deploying/deploy.md#getting-started): voor het implementeren van AEM-instanties.
 
-   * [De basisbeginselen](../../help/sites-developing/the-basics.md): voor ontwikkelaars van websites en functies
-   * [Eerste stappen voor auteurs](../../help/sites-authoring/first-steps.md): voor het ontwerpen van pagina-inhoud
+   * [De basisbeginselen](../../help/sites-developing/the-basics.md): voor ontwikkelaars van websites en functies.
+   * [Eerste stappen voor auteurs](../../help/sites-authoring/first-steps.md): voor het ontwerpen van pagina-inhoud.
 
 ## De ontwikkelomgeving van CRXDE Lite gebruiken {#using-crxde-lite-development-environment}
 
@@ -61,11 +64,11 @@ AEM-ontwikkelaars besteden een groot deel van hun tijd in de ontwikkelomgeving v
 
 Nadat u zich hebt aangemeld met beheerdersrechten, kunt u op verschillende manieren toegang krijgen tot CRXDE Lite:
 
-1. Selecteer in globale navigatie de navigatie- **[!UICONTROL gereedschappen > CRXDE Lite]**.
+1. Selecteer navigatie bij globale navigatie **[!UICONTROL Tools > CRXDE Lite]**.
 
    ![chlimage_1-350](assets/chlimage_1-350.png)
 
-2. Van de [klassieke UI welkomstpagina](http://localhost:4502/welcome.html), scrol neer en klik **[!UICONTROL CRXDE Lite]** in het juiste paneel.
+2. Van de [klassieke UI welkomstpagina](http://localhost:4502/welcome.html), scrol neer en klik in het juiste paneel **[!UICONTROL CRXDE Lite]** .
 
    ![chlimage_1-351](assets/chlimage_1-351.png)
 

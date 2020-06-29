@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: eb3d5c37-8097-46de-8c4f-804ea723f1c5
 docset: aem65
 translation-type: tm+mt
-source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
+source-git-commit: 9ea2efb7409ae38c8771815336ae0d9388d923fa
 workflow-type: tm+mt
 source-wordcount: '1060'
 ht-degree: 1%
@@ -33,11 +33,11 @@ Daarom vereist de geavanceerde scoring-engine voldoende gegevens om de analyse z
 
 Geavanceerde scoring instellen is vrijwel hetzelfde als basisscoring:
 
-* Basisregels en geavanceerde regels voor scoring en badging worden op dezelfde manier [toegepast op inhoud](/help/communities/implementing-scoring.md#apply-rules-to-content)
+* Basisregels en geavanceerde regels voor scoring en badging worden op dezelfde manier [toegepast op inhoud](/help/communities/implementing-scoring.md#apply-rules-to-content) .
 
-   * Basisregels en geavanceerde regels voor scoring en badging kunnen op dezelfde inhoud worden toegepast
+   * Op dezelfde inhoud kunnen de basisregels en de geavanceerde regels voor scoring en badging worden toegepast.
 
-* [Het toelaten van badges voor componenten](/help/communities/implementing-scoring.md#enable-badges-for-component) is generiek
+* [Het is algemeen om badges voor componenten](/help/communities/implementing-scoring.md#enable-badges-for-component) in te schakelen.
 
 De verschillen bij het instellen van de regels voor scoring en badging zijn:
 
@@ -45,23 +45,24 @@ De verschillen bij het instellen van de regels voor scoring en badging zijn:
 * Geavanceerde regels voor scoring:
 
    * `scoringType` instellen op `advanced`
-   * vereist `stopwords`
+   * Vereisten `stopwords`
 
 * Geavanceerde regels voor badging:
 
    * `badgingType` instellen op `advanced`
    * `badgingLevels` vastgesteld op **aantal te gunnen deskundigen**
-   * vereist `badgingPaths` serie van badges in plaats van drempels serie toewijzingspunten aan badges
+   * Vereist een `badgingPaths` array van badges in plaats van drempelwaarden.
 
 >[!NOTE]
 >
 >Installeer het [Expert Identification-pakket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/cq-social-expert-identification-pkg)om geavanceerde scoring- en badingmogelijkheden te gebruiken.
 
+
 ## Configureerbare scores-engine {#configurable-scoring-engine}
 
 De geavanceerde het schrapen motor verstrekt een configuratie OSGi met parameters die het geavanceerde het schrapen algoritme beïnvloeden.
 
-![chlimage_1-139](assets/chlimage_1-139.png)
+![chlimage_1-260](assets/chlimage_1-260.png)
 
 * **Scoregewichten**
 
@@ -102,7 +103,7 @@ Als u de geavanceerde scoring-engine wilt aanroepen, `scoringType`moet u deze in
 
 Zie [Score-subregels](/help/communities/implementing-scoring.md#scoring-sub-rules).
 
-![chlimage_1-140](assets/chlimage_1-140.png)
+![chlimage_1-261](assets/chlimage_1-261.png)
 
 ### Stopwoorden {#stopwords}
 
@@ -122,7 +123,7 @@ De geavanceerde eigenschappen van de merkingsregel verschillen van de [basiseige
 
 In plaats van punten te koppelen aan een badge-afbeelding, is het alleen nodig om het toegestane aantal experts en het toe te kennen badge-image te identificeren.
 
-![chlimage_1-141](assets/chlimage_1-141.png)
+![chlimage_1-262](assets/chlimage_1-262.png)
 
 <table>
  <tbody>
@@ -164,7 +165,7 @@ In deze bètaversie is één beloning-gebaseerd deskundige badge opgenomen:
 
    `/libs/settings/community/badging/images/expert-badge/jcr:content/expert.png`
 
-![chlimage_1-142](assets/chlimage_1-142.png)
+![chlimage_1-263](assets/chlimage_1-263.png)
 
 Zorg ervoor dat het expertsymbool als beloning voor activiteit wordt weergegeven:
 
@@ -197,15 +198,15 @@ In de bètaversie zijn twee geavanceerde scoreregels opgenomen voor de [forumfun
 
 **Opmerkingen:**
 
-* Zowel `rules`als `sub-rules` knopen zijn van type `cq:Page`
+* Zowel `rules` als `sub-rules` knooppunten zijn van het type `cq:Page`.
 
-* `subRules`is een attribuut van typeString[] op de knoop van de regel `jcr:content`
+* `subRules` is een attribuut van typeString[] op de `jcr:content` knoop van de regel.
 
-* `sub-rules` kunnen worden gedeeld door verschillende scoreregels
+* `sub-rules` kunnen worden gedeeld door verschillende scoreregels.
 
-* `rules`moet zich bevinden op een opslagplaats met leesmachtigingen voor iedereen
+* `rules` moet zich bevinden op een locatie in de opslagplaats met leesmachtigingen voor iedereen.
 
-   * Namen van regels moeten uniek zijn, ongeacht de locatie
+* Regelnamen moeten uniek zijn, ongeacht de locatie.
 
 ### Ingesloten Badgingregels {#included-badging-rules}
 
@@ -216,8 +217,7 @@ In de release zijn twee geavanceerde regels voor het aanbrengen van een badge op
 
 **Opmerkingen:**
 
-* `rules` knooppunten zijn van het type cq:Page
-* `rules` moet zich bevinden op een opslagplaats met leesmachtigingen voor iedereen
-
-   * Namen van regels moeten uniek zijn, ongeacht de locatie
+* `rules` knooppunten zijn van het type cq:Page.
+* `rules` moet zich bevinden op een locatie in de opslagplaats met leesmachtigingen voor iedereen.
+* Regelnamen moeten uniek zijn, ongeacht de locatie.
 

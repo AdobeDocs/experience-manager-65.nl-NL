@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: df1ac689-33db-4e30-9f75-3bda2a485652
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
+source-git-commit: cf2733ecee5c74b79b85267191fbdf3cbce9c98b
+workflow-type: tm+mt
+source-wordcount: '295'
+ht-degree: 2%
 
 ---
 
@@ -20,17 +23,18 @@ source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
 
 ## Inleiding {#introduction}
 
-Wanneer AEM Communities een licentie heeft, is het mogelijk om naast het maken van gemeenschapssites ook Community-functies toe te voegen aan elke AEM-site met behulp van standaard AEM-ontwerpgereedschappen.
+Wanneer AEM Communities een licentie hebben, kunnen naast het maken van gemeenschapssites ook Community-functies aan elke AEM-site worden toegevoegd met behulp van standaard AEM-ontwerpgereedschappen.
 
-Ga voor meer informatie over het maken van een site van een community naar:
+Ga voor meer informatie over het maken van een site op de website van de gemeenschap naar:
 
-* [Overzicht van AEM-gemeenschappen](/help/communities/overview.md)
-* [Aan de slag met AEM-gemeenschappen](/help/communities/getting-started.md)
-* [Aan de slag met AEM Communities for Enablement](/help/communities/getting-started-enablement.md)
+* [Overzicht AEM Communities](/help/communities/overview.md)
+* [Aan de slag met AEM Communities](/help/communities/getting-started.md)
+* [Aan de slag met AEM Communities voor Enablement](/help/communities/getting-started-enablement.md)
 
 >[!NOTE]
 >
 >Als u niet bekend bent met de ontwerpomgeving, bekijkt u de documentatie over [basisverwerking](/help/sites-authoring/basic-handling.md) en een [handleiding voor het schrijven van pagina](/help/sites-authoring/qg-page-authoring.md)&#39;s.
+
 
 ## Beschikbare onderdelen van Gemeenschappen {#available-communities-components}
 
@@ -77,7 +81,8 @@ Zie ook de interactieve handleiding voor [Community Components](/help/communitie
 
 >[!NOTE]
 >
->De opiniepeilingscomponent is niet meer beschikbaar en wordt niet meer ondersteund in Experience Manager-gemeenschappen.
+>De opiniepeilingscomponent is niet meer beschikbaar en wordt niet meer ondersteund in Experience Manager Communities.
+
 
 ## Verwante documentatie van Gemeenschappen {#related-communities-documentation}
 

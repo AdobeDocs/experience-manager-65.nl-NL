@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: e6fdaf56-402f-418d-96d8-e46bd3ad1e8c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+source-git-commit: 342e148ba183782e4c8b0f08328b9d87685ca08e
 workflow-type: tm+mt
 source-wordcount: '2746'
 ht-degree: 2%
@@ -155,7 +155,7 @@ U kunt als volgt de rapportage van videokoppen inschakelen nadat u de Analytics-
 
 U `Marketing Cloud Org Id` kunt de site invoeren op het moment dat de site wordt gemaakt [of later door de eigenschappen van de site van de](/help/communities/sites-console.md#enablement) community te [wijzigen](/help/communities/sites-console.md#modifying-site-properties) . [](#aem-analytics-cloud-service-configuration)
 
-![chlimage_1-177](assets/chlimage_1-177.png)
+![chlimage_1-264](assets/chlimage_1-264.png)
 
 Wanneer Video Heartbone Analytics wordt toegelaten, concretiseert de code van JavaScript (JS) voor de videospeler de video hartslagbibliotheekcode (ook in JS) die al logica voor het verzenden van videostatusupdates naar de Analytics video volgende servers om de 10 seconden (niet configureerbaar) behandelt en uiteindelijk verzendt een cumulatief rapport van de videozitting naar de belangrijkste servers van Analytics.
 
@@ -169,7 +169,7 @@ U kunt als volgt een nieuwe Analytics Integration maken, die Adobe Analytics int
 * Omlaag schuiven naar **[!UICONTROL Adobe Analytics]**
 * Selecteer **[!UICONTROL Configure Now]** of **[!UICONTROL Show Configurations]**
 
-![chlimage_1-178](assets/chlimage_1-178.png)
+![chlimage_1-265](assets/chlimage_1-265.png)
 
 ### Configuratiedialoogvenster maken {#create-configuration-dialog}
 
@@ -177,7 +177,7 @@ U kunt als volgt een nieuwe Analytics Integration maken, die Adobe Analytics int
 
 In het dialoogvenster Configuratie maken identificeren de waarden die moeten worden ingevoerd de configuratie.
 
-![chlimage_1-179](assets/chlimage_1-179.png)
+![chlimage_1-266](assets/chlimage_1-266.png)
 
 * **Titel**
 
@@ -201,37 +201,39 @@ For example, enter *communities*
 
 Het eerste ontwerp van een nieuwe Analytics-configuratie resulteert in de weergave van de configuratie en een nieuw dialoogvenster voor de vermelding van de Analytics Settings. Deze dialoog vereist de [vereiste rekeninginformatie](#prerequisites) die van de rekeningsvertegenwoordiger wordt verkregen.
 
-![chlimage_1-180](assets/chlimage_1-180.png)
+![chlimage_1-267](assets/chlimage_1-267.png)
 
 * **Bedrijf**
 
-   Het bedrijf dat is gekoppeld aan de Adobe Analytics-account
+   Het bedrijf dat is gekoppeld aan de Adobe Analytics-account.
 
 * **Gebruikersnaam**
 
-   De aanmeldingsgebruikersnaam voor de gebruiker die gemachtigd is om de Analytics-account te beheren
+   De aanmeldgebruikersnaam voor de gebruiker die gemachtigd is om de Analytics-account te beheren.
 
 * **Wachtwoord**
 
-   Het aanmeldingswachtwoord voor de geautoriseerde gebruiker
+   Het aanmeldingswachtwoord voor de geautoriseerde gebruiker.
 
 * **Datacenter**
 
-   Selecteer het Analytics-datacenter dat als host fungeert voor de rapportsuite
+   Selecteer het Analytics-datacenter dat als host fungeert voor de rapportsuite.
 
 * **Trackingtag niet toevoegen aan pagina**
 
-   Als standaard behouden (uitgeschakeld)
+   Standaard laten (uitgeschakeld).
 
 * **AppMeasurement gebruiken**
 
-   Als standaard behouden (uitgeschakeld)
+   Standaard laten (uitgeschakeld).
 
 * **Pagina-afbeeldingen niet elke avond importeren (auteur)**
 
-   Als standaard behouden (uitgeschakeld)
+   Standaard laten (uitgeschakeld).
 
-* **Pagina-afbeeldingen niet elke avond (publiceren)** als standaard importeren (uitgeschakeld)
+* **Paginaafbeeldingen niet elke avond importeren (publiceren)**
+
+   Standaard laten (uitgeschakeld).
 
 De instellingen opslaan:
 
@@ -239,13 +241,13 @@ De instellingen opslaan:
 
    * Indien niet gelukt,
 
-      * Verifieer de ingangen geen belangrijke ruimten bevatten
-      * Probeer een ander datacenter
-      * Neem contact op met uw accountvertegenwoordiger
+      * Verifieer de ingangen geen belangrijke ruimten bevatten.
+      * Probeer een ander datacenter.
+      * Neem contact op met uw accountvertegenwoordiger.
 
-* Selecteer **OK**
+* Selecteer **OK**.
 
-![chlimage_1-101](assets/chlimage_1-181.png)
+   ![chlimage_1-268](assets/chlimage_1-268.png)
 
 ### Framework maken {#create-framework}
 
@@ -253,22 +255,22 @@ Nadat de basisverbinding met Adobe Analytics is geconfigureerd, moet u een frame
 
 * Selecteer `[+]` pictogram naast **[!UICONTROL  Available Frameworks]** het maken van een nieuw framework
 
-![chlimage_1-182](assets/chlimage_1-182.png)
+   ![chlimage_1-269](assets/chlimage_1-269.png)
 
 * **Titel**
 
-   (Vereist) Een weergavetitel voor het frameworkVoer bijvoorbeeld het communautaire *kader voor activering in*
+   (Vereist) Een weergavetitel voor het frameworkVoer bijvoorbeeld het communautaire *kader* voor activering in.
 
 * **Naam**
 
    (Optioneel) Indien niet opgegeven, wordt de naam standaard ingesteld op een geldige knooppuntnaam die is afgeleid van de titel.
-For example, enter *communities*
+For example, enter *communities*.
 
 * *Sjabloonmodel*
 
-   Selecteer `Adobe Analytics Framework`
+   Selecteer `Adobe Analytics Framework`.
 
-* Selecteer **Maken**
+* Selecteer **Maken**.
 
 Door het Analytics-framework te maken, opent u het configuratiekader.
 
@@ -276,7 +278,7 @@ Door het Analytics-framework te maken, opent u het configuratiekader.
 
 Het doel van het framework is om AEM-variabelen toe te wijzen aan Analytics-variabelen (eVars en events). De Analytics-variabelen die beschikbaar zijn voor toewijzing worden [gedefinieerd in de rapportsuite](#adobe-analytics-report-suite-for-video-reporting).
 
-![chlimage_1-183](assets/chlimage_1-183.png)
+![chlimage_1-270](assets/chlimage_1-270.png)
 
 ### Rapportsuite selecteren {#select-report-suite}
 
@@ -289,9 +291,9 @@ De Sidetrap is niet nodig en kan worden geminimaliseerd zodat het de toegang tot
 
 #### Dialoogvenster Suitten rapporteren vóór en na het selecteren van Item toevoegen {#report-suites-dialog-before-and-after-selecting-add-item}
 
-![chlimage_1-184](assets/chlimage_1-184.png)
+![chlimage_1-271](assets/chlimage_1-271.png)
 
-1. Item **toevoegen + selecteren**
+1. Selecteer Item **toevoegen +**.
 
    Er worden twee vervolgkeuzelijsten weergegeven.
 
@@ -306,11 +308,11 @@ De Sidetrap is niet nodig en kan worden geminimaliseerd zodat het de toegang tot
     Do you want to load the default server settings and overwrite current values in the Server section?
    ```
 
-1. Kies een `Run Mode`
+1. Kies een `Run Mode`.
 
-1. Publiceren **selecteren**
+1. Selecteer **Publiceren**.
 
-![chlimage_1-185](assets/chlimage_1-185.png)
+![chlimage_1-272](assets/chlimage_1-272.png)
 
 De analytische cloudservice en het framework zijn nu voltooid. De toewijzingen worden gedefinieerd zodra een communitysite is gemaakt met deze Analytics-service ingeschakeld.
 
@@ -355,7 +357,7 @@ Voor het correct werken van het volgen en de invoer van Analytics voor een commu
 </div>
 ```
 
-Voor een **aangepaste communautaire plaats** die het `sitepage.hbs` manuscript bedekt, zorg ervoor het element aanwezig is. De `siteUrl`variabele wordt ingesteld wanneer deze op de server wordt gerenderd voordat de client wordt ingeschakeld.
+Voor een **aangepaste communautaire plaats** die het `sitepage.hbs` manuscript bedekt, zorg ervoor het element aanwezig is. De `siteUrl` variabele wordt ingesteld wanneer deze op de server wordt gerenderd voordat de client wordt ingeschakeld.
 
 Voor een **generische plaats** AEM die de componenten van de Gemeenschappen omvat, maar niet met de tovenaar [van de](/help/communities/sites-console.md)plaatsverwezenlijking wordt gecreeerd, is het noodzakelijk om het element toe te voegen. De waarde van de href moet het pad naar de site zijn. Als het sitepad bijvoorbeeld `/content/my/company/en`het volgende is:
 
@@ -378,11 +380,12 @@ Als nieuwe douanecomponenten worden gecreeerd die voor Analytics van instrumente
 
 ### Componentconfiguratie {#component-configuration}
 
-![chlimage_1-186](assets/chlimage_1-186.png)
+![chlimage_1-273](assets/chlimage_1-273.png)
 
 >[!NOTE]
 >
 >De dagboekcomponenten worden gebruikt om de blogeigenschap uit te voeren.
+
 
 ### Analytics toegewezen aan AEM-variabelen {#mapped-analytics-to-aem-variables}
 
@@ -392,7 +395,7 @@ Als het gebruiken van een bestaande rapportreeks die om het even welke variabele
 
 Hier volgt een voorbeeld van standaardtoewijzingen na het volgen van de [aan de slag-zelfstudie](/help/communities/getting-started-enablement.md):
 
-![chlimage_1-187](assets/chlimage_1-187.png)
+![chlimage_1-274](assets/chlimage_1-274.png)
 
 #### Kaart met eVars die met elke gebeurtenis worden verzonden {#map-of-evars-sent-with-each-event}
 
@@ -549,15 +552,15 @@ Als Communities Vars en events toewijzingen overschrijven die al in de rapportsu
 
 #### Voorbeeld, stap 1: Analytics evar14 naar toewijzingstabel slepen {#example-step-dragging-analytics-evar-into-mapping-table}
 
-![chlimage_1-188](assets/chlimage_1-188.png)
+![chlimage_1-275](assets/chlimage_1-275.png)
 
 #### Voorbeeld stap 2: Vervangen evar11 verwijderen door &#39;x&#39; te selecteren {#example-step-selecting-x-to-remove-replaced-evar}
 
-![chlimage_1-189](assets/chlimage_1-189.png)
+![chlimage_1-276](assets/chlimage_1-276.png)
 
 #### Voorbeeld stap 3: AEM var eventData.siteId opnieuw toegewezen aan Analytics evar14 {#example-step-aem-var-eventdata-siteid-remapped-to-analytics-evar}
 
-![chlimage_1-190](assets/chlimage_1-190.png)
+![chlimage_1-277](assets/chlimage_1-277.png)
 
 ## De website van de Gemeenschap publiceren {#publishing-the-community-site}
 
@@ -630,7 +633,7 @@ Wanneer de gegevens als &quot;grote gegevens&quot; kunnen worden gecategoriseerd
 
 Het standaardpollinginterval voor **importeren** is ingesteld op 12 uur.
 
-![chlimage_1-191](assets/chlimage_1-191.png)
+![chlimage_1-278](assets/chlimage_1-278.png)
 
 ### Componentrapport aanpassen {#component-report-customization}
 
@@ -655,7 +658,7 @@ Bijvoorbeeld, **`analytics/reportConfigs/social_forum_components_hbs_topic`**
    * Het wijzigen van het **`interval`** bezit treedt het interval van de Importeur van het Rapport met voeten.
    * De waarde is in seconden en wordt ingesteld op 4 uur (14400 seconden).
 
-![chlimage_1-192](assets/chlimage_1-192.png)
+![chlimage_1-279](assets/chlimage_1-279.png)
 
 ## Gebruikersgegevens beheren in Analytics {#manage-user-data-in-analytics}
 

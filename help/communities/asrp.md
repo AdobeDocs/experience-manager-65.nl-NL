@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 3e81b519-57ca-4ee1-94bd-7adac4605407
 docset: aem65
 translation-type: tm+mt
-source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+source-git-commit: cf2733ecee5c74b79b85267191fbdf3cbce9c98b
 workflow-type: tm+mt
 source-wordcount: '815'
 ht-degree: 0%
@@ -50,7 +50,7 @@ De console [van de Configuratie van de](/help/communities/srp-config.md) Opslag 
 
 * Navigeer vanuit globale navigatie naar **[!UICONTROL Tools > Communities > Storage Configuration]** en selecteer **[!UICONTROL Adobe Storage Resource Provider (ASRP)]**.
 
-![chlimage_1-30](assets/chlimage_1-30.png)
+![asrp-default](assets/asrp-default.png)
 
 De volgende informatie is afkomstig uit het inrichtingsproces:
 

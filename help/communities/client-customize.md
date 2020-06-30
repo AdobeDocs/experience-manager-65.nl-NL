@@ -1,8 +1,8 @@
 ---
 title: Aanpassing aan clientzijde
 seo-title: Aanpassing aan clientzijde
-description: Gedrag of weergave van client-kant aanpassen in AEM-gemeenschappen
-seo-description: Gedrag of weergave van client-kant aanpassen in AEM-gemeenschappen
+description: Gedrag of weergave van de client-kant aanpassen in AEM Communities
+seo-description: Gedrag of weergave van de client-kant aanpassen in AEM Communities
 uuid: 57978c39-9a8a-4098-9001-c8bbe7ee786f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,18 +10,21 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 24b6d1d2-c118-4a25-959f-2783961c4ae3
 translation-type: tm+mt
-source-git-commit: 5b8b1544645465d10e7c2018364b6a74f1ad9a8e
+source-git-commit: efa6c7be93908b2f264da4689caa9c02912c0f0a
+workflow-type: tm+mt
+source-wordcount: '1239'
+ht-degree: 0%
 
 ---
 
 
-# Aanpassing aan clientzijde {#client-side-customization}
+# Aanpassing aan clientzijde  {#client-side-customization}
 
 | **[Essentiële ⇐](essentials.md)** | **[Aanpassing aan server-side bezig jj.](server-customize.md)** |
 |---|---|
 |  | **[SCF Handlebars Helpers](handlebars-helpers.md)** |
 
-Om de verschijning en/of het gedrag van een component AEM Communities aan de cliënt-kant aan te passen, zijn er verscheidene benaderingen.
+Er zijn verschillende benaderingen om de weergave en/of het gedrag van een component AEM Communities aan de clientzijde aan te passen.
 
 Twee belangrijke benaderingen zijn het bedekken of uitbreiden van een component.
 
@@ -106,17 +109,18 @@ De aangepaste stijlen overschrijven nu de standaardframestijlen en de component 
 >
 >Hoewel de `scf-js` klassen geen invloed hebben op stijlen, kunnen de klassennamen in stijlpagina&#39;s worden gebruikt met de waarschuwing dat er, aangezien ze de statussen van elementen bepalen, bijwerkingen kunnen optreden.
 
+
 ## JavaScript uitbreiden {#extending-javascript}
 
-Als u een JavaScript-implementatie voor componenten wilt uitbreiden, hebt u alleen
+Als u een JavaScript-implementatie voor componenten wilt uitbreiden, moet u:
 
-1. Maak een component voor u-app met een jcr:resourceSuperType dat is ingesteld op de waarde van jcr:resourceType van de uitgebreide component, bijvoorbeeld social/forum/components/hbs/forum
-1. Onderzoek Javascript van de standaardSCF component om te bepalen welke methodes moeten worden geregistreerd gebruikend SCF.registerComponent ()
-1. Kopieer het JavaScript van de uitgebreide component of begin helemaal opnieuw
-1. De methode uitbreiden
+1. Maak een component voor u-app met een jcr:resourceSuperType dat is ingesteld op de waarde van jcr:resourceType van de uitgebreide component, bijvoorbeeld social/forum/components/hbs/forum.
+1. Onderzoek Javascript van de standaardSCF component om te bepalen welke methodes moeten worden geregistreerd gebruikend SCF.registerComponent ().
+1. Kopieer het JavaScript van de uitgebreide component of begin helemaal opnieuw.
+1. Breid de methode uit.
 1. Gebruik SCF.registerComponent() om alle methoden te registreren met de standaardinstellingen of de aangepaste objecten en weergaven.
 
-### forum.js: Voorbeeld van uitbreiding van forum - GB {#forum-js-sample-extension-of-forum-hbs}
+### forum.js: Voorbeeld van uitbreiding van forum - GB  {#forum-js-sample-extension-of-forum-hbs}
 
 ```xml
 (function($CQ, _, Backbone, SCF) {
@@ -156,7 +160,7 @@ De clientlibs voor SCF volgen een zeer specifiek noemingspatroon voor twee varia
 | Clientlib-variabele | Patroon voor eigenschap Categorieën |
 |--- |--- |
 | complete clientlib | cq.social.hbs.&lt;naam component> |
-| auteur-clientlib | cq.social.auteur.hbs.&lt;naam component> |
+| auteur-clientlib | cq.social.author.hbs.&lt;naam component> |
 
 ### Volledige Clientlibs {#complete-clientlibs}
 

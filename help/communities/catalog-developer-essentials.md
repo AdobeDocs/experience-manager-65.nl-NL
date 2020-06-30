@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 542467ef-3793-4347-8424-c365c5a166f6
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 82affd528f2526384b319fe89082e0f574ab5855
+workflow-type: tm+mt
+source-wordcount: '357'
+ht-degree: 3%
 
 ---
 
@@ -80,12 +83,11 @@ Het voorbeeld van de [zelfstudie](getting-started-enablement.md)Enablement gebru
 * Een onderliggende filternode toevoegen
 
    * Selecteer het `catalog`knooppunt
-   * Knooppunt **[!UICONTROL maken selecteren]**
+   * Selecteer **[!UICONTROL Create Node]**
 
       * Naam: `filters`
       * Type: `nt:unstructured`
-   * Alles **[!UICONTROL opslaan selecteren]**
-
+      * Selecteer **[!UICONTROL Save All]**
 
 * Eigenschap toevoegen `se_resource-tags` aan `filters` knooppunt
 
@@ -93,12 +95,12 @@ Het voorbeeld van de [zelfstudie](getting-started-enablement.md)Enablement gebru
    * Een eigenschap voor meerdere objecten toevoegen
 
       * Naam: `se_resource-tags`
-      * Type:String
-      * Waarde: *&lt;enter a[TagID](#pre-filter-tagids)>*
-      * Meerdere **[!UICONTROL selecteren]**
-      * Selecteer **[!UICONTROL Toevoegen]**
+      * Type: String
+      * Waarde: *&lt;Voer een[TagID](#pre-filter-tagids)in>*
+         * Selecteer **[!UICONTROL Multi]**
+         * Selecteer **[!UICONTROL Add]**
 
-         * Selecteer in het pop-updialoogvenster `+` om aanvullende voorfilter-ID&#39;s toe te voegen
+            * Selecteer in het pop-updialoogvenster `+` om aanvullende voorfilter-ID&#39;s toe te voegen
 
 * De communitysite opnieuw publiceren
 
@@ -116,5 +118,5 @@ De [tagIDs](../../help/sites-developing/framework.md#tagid) vóór het filter mo
 
 * [API voor rapportage](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/api/package-summary.html)
 
-* [API voor analyse van rapporten](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/analytics/api/package-summary.html)
+* [Analytics API rapporteren](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/analytics/api/package-summary.html)
 

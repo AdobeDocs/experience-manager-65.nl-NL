@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: eece7b8f-6ccd-4037-8713-0cd36cfd9e73
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 272eedc1585dbdea315b49d010e4b1d78cedc360
+source-git-commit: e74d39e63f8b3b5961ea2c31e0ef99c3ab8b06dd
+workflow-type: tm+mt
+source-wordcount: '446'
+ht-degree: 1%
 
 ---
 
@@ -27,6 +30,7 @@ Deze pagina bevat de essentiële informatie voor het werken met de blogfunctie.
 >[!NOTE]
 >
 >De onderliggende infrastructuur van de blogfunctie is de journaalfunctie.
+
 
 ## Essentiële elementen voor client-kant {#essentials-for-client-side}
 
@@ -68,7 +72,7 @@ De blogfunctie bestaat uit twee hoofdcomponenten die beschikbaar zijn door de fu
 | **resourceType** | sociaal/journaal/componenten/hbs/zijbalk |
 |---|---|
 | [**inclusief **](/help/communities/scf.md#add-or-include-a-communities-component) | Nee |
-| [**clientllibs **](/help/communities/clientlibs.md) | cq.social.hbs.Journal_sidebar |
+| [**clientllibs **](/help/communities/clientlibs.md) | cq.social.hbs.journal_sidebar |
 | **templates** | /libs/social/journal/components/hbs/sidebar/sidebar.hbs |
 | **css** | /libs/social/journal/components/hbs/sidebar/clientlibs/sidebar.css |
 | **eigenschappen** | zie [Blogfunctie](/help/communities/blog-feature.md) |
@@ -98,10 +102,10 @@ Vanaf AEM 6.1 Communities omvat het gebruik van een [gemeenschappelijke opslag](
 
 Zie :
 
-* [Overzicht](/help/communities/srp.md) van Storage Resource Provider - introductie en overzicht van opslaggebruik
-* [SRP en de Hoofdzaak](/help/communities/srp-and-ugc.md) UGC - de gebruiksmethodes van SRP en voorbeelden
-* [Toegang tot UGC met SRP](/help/communities/accessing-ugc-with-srp.md) - coderingsrichtlijnen
-* [SocialUtils Refactoring](/help/communities/socialutils.md) - het in kaart brengen van afgekeurde nutsmethodes aan huidige SRP hulpprogrammamethodes
+* [Overzicht](/help/communities/srp.md) van Storage Resource Provider - introductie en overzicht van het gebruik van opslagruimten.
+* [SRP en de Hoofdzaak](/help/communities/srp-and-ugc.md) UGC - SRP nutsmethodes en voorbeelden.
+* [Toegang tot UGC met SRP](/help/communities/accessing-ugc-with-srp.md) - coderingsrichtlijnen.
+* [SocialUtils Refactoring](/help/communities/socialutils.md) - het in kaart brengen verouderde nutsmethodes aan huidige SRP nutsmethodes.
 
 ## Primaire uitgever {#primary-publisher}
 
@@ -119,5 +123,5 @@ Vanaf AEM 6.2, zijn de wijzigingen die eerder manueel moeten worden gemaakt inbe
 
 Rijke media wordt ingesloten in een blogartikel door het `Embed Media from External Sites` pictogram te selecteren:
 
-![chlimage_1-199](assets/chlimage_1-199.png)
+![chlimage_1-471](assets/chlimage_1-471.png)
 

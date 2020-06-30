@@ -3,10 +3,10 @@ title: Beheer [!DNL Adobe Stock] middelen in [!DNL Adobe Experience Manager Asse
 description: Zoek, haal een licentie aan en beheer [!DNL Adobe Stock] middelen vanuit [!DNL Adobe Experience Manager]. Gebruik de in licentie gegeven activa als elk ander digitaal actief.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: 97e17df1f79450b5aed5867633c129a1c21a17ac
 workflow-type: tm+mt
-source-wordcount: '1016'
-ht-degree: 4%
+source-wordcount: '1065'
+ht-degree: 3%
 
 ---
 
@@ -34,8 +34,10 @@ Om communicatie tussen [!DNL Experience Manager] en [!DNL Adobe Stock]toe te sta
 1. Click on [!DNL Experience Manager] logo. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**. Klik op **[!UICONTROL Create]** en selecteer **[!UICONTROL Cloud Solution]** > **[!UICONTROL Adobe Stock]**.
 1. U kunt een bestaand certificaat opnieuw gebruiken of selecteren **[!UICONTROL Create new certificate]**.
 1. Klik op **[!UICONTROL Create certificate]**. Download de openbare sleutel wanneer deze is gemaakt. Klik op **[!UICONTROL Next]**.
-1. Geef de juiste waarden op in de velden met de namen **[!UICONTROL Title]**, **[!UICONTROL Authorization Server]**, **[!UICONTROL API Key]**, **[!UICONTROL Client Secret]** en **[!UICONTROL Payload]**. Zie [Snel starten met JWT-verificatie](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md) voor meer informatie over het ophalen van deze waarden van [!DNL Adobe I/O].
-1. Voeg de gedownloade openbare sleutel toe aan uw [!DNL Adobe I/O] serviceaccount.
+1. Voeg de gedownloade openbare sleutel toe aan uw [!DNL Adobe Developer Console] serviceaccount. Klik op **[!UICONTROL Next]**. Laat het [!UICONTROL Adobe IMS Technical Account Configuration] scherm open om de waarden over enkele ogenblikken weer te geven.
+1. Ga naar [Adobe Developer Console](https://console.adobe.io). Zorg ervoor dat uw account beheerdersmachtigingen heeft voor de organisatie waarvoor de integratie is vereist.
+1. Klik **[!UICONTROL Create new project]** en klik **[!UICONTROL Add API]**. Selecteer een optie **[!UICONTROL Adobe Stock]** in de lijst met API&#39;s die [!UICONTROL available to you]geldig zijn. Selecteer [!UICONTROL OAUTH 2.0 Web]. Configureer en kopieer de verschillende gepresenteerde waarden.
+1. In [!DNL Experience Manager] provide the values in the fields titled **[!UICONTROL Title]**, **[!UICONTROL Authorization Server]**, **[!UICONTROL API Key]**, **[!UICONTROL Client Secret]**, and **[!UICONTROL Payload]**. Zie [JWT-verificatie snel starten](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md)voor meer informatie over deze waarden.
 
 <!-- TBD: Update the URL when the new URL is available. Logged issue github.com/AdobeDocs/adobeio-auth/issues/63.
 -->
@@ -50,7 +52,7 @@ Om communicatie tussen [!DNL Experience Manager] en [!DNL Adobe Stock]toe te sta
 
 >[!NOTE]
 >
->Als er meerdere [!DNL Adobe Stock] configuraties zijn, selecteert u de gewenste configuratie in [!UICONTROL User Preferences] het deelvenster door te klikken op het *gebruikerslogo* in de rechterbovenhoek van de [!DNL Experience Manager] gebruikersinterface.
+>Als er meerdere [!DNL Adobe Stock] configuraties zijn, selecteert u de gewenste configuratie in [!UICONTROL User Preferences] het deelvenster. Klik op het *gebruikerslogo* in de rechterbovenhoek van de [!DNL Experience Manager] gebruikersinterface.
 
 ## [!DNL Adobe Stock] Elementen gebruiken en beheren in [!DNL Experience Manager] {#usemanage}
 

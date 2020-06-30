@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: cf8b3d72-30ba-40ca-ae48-b61abbb28802
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 272eedc1585dbdea315b49d010e4b1d78cedc360
+source-git-commit: e74d39e63f8b3b5961ea2c31e0ef99c3ab8b06dd
+workflow-type: tm+mt
+source-wordcount: '1682'
+ht-degree: 0%
 
 ---
 
@@ -42,9 +45,10 @@ In dit gedeelte van de documentatie wordt het volgende beschreven:
 
 >[!NOTE]
 >
->De componenten `Journal`en `Journal Sidebar` worden genoemd `Blog` en `Blog Sidebar`.
+>De componenten `Journal` en `Journal Sidebar` worden genoemd `Blog` en `Blog Sidebar`.
 >
 >De blogfunctie in AEM 6.0 en eerdere releases wordt nu verwijderd. Het is gebaseerd op een sjabloon en auteurs mogen alleen inhoud maken in de auteursomgeving.
+
 
 ## Blogcomponenten toevoegen aan een pagina {#adding-blog-components-to-a-page}
 
@@ -57,19 +61,21 @@ en sleep ze naar de gewenste plaats op een pagina waarop de blog moet worden wee
 
 Ga voor de benodigde informatie naar [Community Components Basics](/help/communities/basics.md).
 
-Wanneer de [vereiste client-side bibliotheken](/help/communities/blog-developer-basics.md#essentials-for-client-side) worden opgenomen, ziet u zo de `Blog`component eruit:
+Wanneer de [vereiste client-side bibliotheken](/help/communities/blog-developer-basics.md#essentials-for-client-side) worden opgenomen, ziet u zo de `Blog` component eruit:
 
-![chlimage_1-229](assets/chlimage_1-229.png)
+![chlimage_1-147](assets/chlimage_1-147.png)
 
 En hoe het `Blog Sidebar` zal verschijnen:
 
-![chlimage_1-230](assets/chlimage_1-230.png)
+![chlimage_1-148](assets/chlimage_1-148.png)
 
 ### Blog configureren {#configuring-blog}
 
 Selecteer de geplaatste `Blog` component die u wilt openen en selecteer het `Configure` pictogram waarmee het dialoogvenster Bewerken wordt geopend.
 
-![chlimage_1-231](assets/chlimage_1-231.png) ![Blog-instellingen](assets/blog-configure.png)
+![chlimage_1-149](assets/chlimage_1-149.png)
+
+![Bloginstellingen](assets/blog-configure.png)
 
 #### Het tabblad Instellingen {#settings-tab}
 
@@ -111,6 +117,7 @@ Geef op het tabblad **Instellingen** de basisfuncties van de blog op:
 >
 >Met de functie Dagboek wordt automatisch een URL voor de blog gemaakt.
 >Er worden maximaal 50 tekens (met 5 tekens extra voor uniciteit) gebruikt uit de dagboektitel die u hier opgeeft om een URL voor de blog te maken.
+
 
 * **Dagboekbeschrijving**
 
@@ -162,7 +169,7 @@ Geef op het tabblad **Instellingen** de basisfuncties van de blog op:
 
 * **Gebruikers toestaan opmerkingen en onderwerpen te verwijderen**
 
-   Als deze optie is ingeschakeld, kunnen leden hun opmerkingen en blogberichten verwijderen. Standaard is** ** uitgeschakeld.
+   Als deze optie is ingeschakeld, kunnen leden hun opmerkingen en blogberichten verwijderen. De optie Standaard is uitgeschakeld.
 
 * **Volgen toestaan**
 
@@ -208,7 +215,7 @@ Geef op onder het tabblad **Gebruikersmodernisering** de instellingen voor matig
 
 * **Vlagberichten**
 
-   Als deze optie is ingeschakeld, kunnen leden onderwerpen of opmerkingen van anderen als ongeschikt markeren. Standaard is uitgeschakeld**.**
+   Als deze optie is ingeschakeld, kunnen leden onderwerpen of opmerkingen van anderen als ongeschikt markeren. De optie Standaard is uitgeschakeld.
 
 * **Lijst met redenen voor vlag**
 
@@ -216,7 +223,7 @@ Geef op onder het tabblad **Gebruikersmodernisering** de instellingen voor matig
 
 * **Reden voor aangepaste vlag**
 
-   Als deze optie is ingeschakeld, kunnen leden hun eigen reden opgeven om een onderwerp of opmerking als ongeschikt te bestempelen. Standaard is uitgeschakeld**.**
+   Als deze optie is ingeschakeld, kunnen leden hun eigen reden opgeven om een onderwerp of opmerking als ongeschikt te bestempelen. De optie Standaard is uitgeschakeld.
 
 * **Moderniseringsdrempel**
 
@@ -232,7 +239,7 @@ Geef onder het tabblad **Tagveld** op welke tags kunnen worden toegepast als **T
 
 * **Toegestane naamruimten**
 
-   Relevant als `Allow Tagging` wordt gecontroleerd onder het tabblad **Instellingen **tab. De tags die kunnen worden toegepast, zijn beperkt tot de tags binnen de geselecteerde naamruimtecategorieën. De lijst met naamruimten bevat &#39;Standaardtags&#39; (de standaardnaamruimte) en &#39;Alle tags opnemen&#39;. De standaardwaarde is niet ingeschakeld, hetgeen betekent dat alle naamruimten zijn toegestaan.
+   Relevant als `Allow Tagging` is ingeschakeld onder het tabblad **Instellingen** . De tags die kunnen worden toegepast, zijn beperkt tot de tags binnen de geselecteerde naamruimtecategorieën. De lijst met naamruimten bevat &#39;Standaardtags&#39; (de standaardnaamruimte) en &#39;Alle tags opnemen&#39;. De standaardwaarde is niet ingeschakeld, hetgeen betekent dat alle naamruimten zijn toegestaan.
 
 * **Suggestiegrenswaarde**
 
@@ -269,7 +276,7 @@ Geef onder het tabblad **Dagboekzijbalkinstellingen** de datumnotatie voor archi
 
    *(Optioneel)* De locatie van de blogbron waaruit blogartikelen moeten worden vermeld. Als deze optie leeg wordt gelaten, wordt de component resourceType gebruikt die op dezelfde pagina wordt weergegeven. `social/journal/components/hbs/journal`
 
-   * Bijvoorbeeld: `/content/sites/engage/en/blog/jcr:content/content/primary/blog`
+   * Bijvoorbeeld, `/content/sites/engage/en/blog/jcr:content/content/primary/blog`
 
 * **Suggestiegrenswaarde**
 
@@ -299,7 +306,7 @@ De blogartikelen worden op het juiste tabblad (Gepubliceerd, Concepten of Geplan
 
 Wanneer de aangemelde gebruiker moderator of beheerdersrechten heeft, kunnen zij [moderatietaken](/help/communities/moderate-ugc.md) uitvoeren (zoals toegestaan door de configuratie van de component) op alle blogartikelen en commentaar dat op een blog wordt geplaatst.
 
-![chlimage_1-232](assets/chlimage_1-232.png)
+![chlimage_1-152](assets/chlimage_1-152.png)
 
 #### Leden {#members}
 
@@ -314,13 +321,15 @@ Zij kunnen met name:
 * Hun eigen blogartikel of commentaar verwijderen
 * Blogartikelen of opmerkingen van anderen markeren
 
-![chlimage_1-233](assets/chlimage_1-233.png) ![chlimage_1-234](assets/chlimage_1-234.png)
+![chlimage_1-153](assets/chlimage_1-153.png)
+
+![chlimage_1-154](assets/chlimage_1-154.png)
 
 #### Anoniem {#anonymous}
 
 Sitebezoekers die niet zijn aangemeld, kunnen alleen geposte blogartikelen en opmerkingen lezen, deze vertalen als ze worden ondersteund, maar mogen geen blogartikel of commentaar toevoegen en de artikelen of opmerkingen van anderen niet markeren.
 
-![chlimage_1-235](assets/chlimage_1-235.png)
+![chlimage_1-155](assets/chlimage_1-155.png)
 
 ## Additional Information {#additional-information}
 

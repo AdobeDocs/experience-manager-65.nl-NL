@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 135b3077-5343-4888-858d-de5e9b1d4b04
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cf2733ecee5c74b79b85267191fbdf3cbce9c98b
+source-git-commit: f1870c1222004f582ccf337a59e1f30e2dc2cf32
 workflow-type: tm+mt
 source-wordcount: '316'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Navigeer in de ontwerpomgeving naar de Badges-console:
 
 Op deze console worden de badges weergegeven die momenteel beschikbaar zijn en waaruit nieuwe badges kunnen worden toegevoegd.
 
-![chlimage_1-123](assets/chlimage_1-123.png)
+![badges-homepage](assets/badges-homepage.png)
 
 ## Badge maken {#create-badge}
 
@@ -49,7 +49,7 @@ Een badge wordt gemaakt door het uploaden van een voldoende kleine afbeelding (7
 
 Als het publicatiemilieu een landbouwbedrijf van uitgevers is, is het noodzakelijk om [gebruikerssynchronisatie](/help/communities/sync.md)te vormen.
 
-![chlimage_1-124](assets/chlimage_1-124.png)
+![badges-1](assets/badges-1.png)
 
 * **Afbeelding uploaden**
 

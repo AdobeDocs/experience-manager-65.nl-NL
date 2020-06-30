@@ -10,18 +10,21 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 7cd7921e-6438-450a-a676-9da3c4a5ced3
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 82affd528f2526384b319fe89082e0f574ab5855
+workflow-type: tm+mt
+source-wordcount: '134'
+ht-degree: 0%
 
 ---
 
 
 # Catalogusonderdeel {#catalog-feature}
 
-De [ en de `Enablement Assignments`](assignments.md) componenten die in de groep van Gemeenschappen in componentenbrowser worden gevonden zijn componenten van een `Enablement Catalog` enablement gemeenschap [](overview.md#enablement-community).
+De [`Enablement Assignments`](assignments.md) en de `Enablement Catalog` componenten die in de groep van Gemeenschappen in componentenbrowser worden gevonden zijn componenten van een [toelatingsgemeenschap](overview.md#enablement-community).
 
 De `Enablement Catalog` component staat communautaire leden toe om tot een catalogus van [enablement middelen](resources.md)toegang te hebben. Het gebruik van AEM-tags is een belangrijk onderdeel van het beheer van de lijst met activeringsbronnen in een catalogus (zie [Tags toewijzen](tag-resources.md)).
 
-Van het [Begonnen worden met Gemeenschappen AEM voor Enablement](getting-started-enablement.md) leerprogramma, zie de mening van een lid van toewijzingen en catalogi in de [Ervaring de Gepubliceerde sectie van de Plaats](enablement-published-site.md) .
+Van het [Begonnen Worden met AEM Communities voor zelfstudie Enablement](getting-started-enablement.md) , zie de mening van een lid van taken en catalogi in de [Ervaring de Gepubliceerde sectie van de Plaats](enablement-published-site.md) .
 
 ## Additional Information {#additional-information}
 

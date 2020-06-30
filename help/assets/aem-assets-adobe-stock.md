@@ -3,10 +3,10 @@ title: Beheer [!DNL Adobe Stock] middelen in [!DNL Adobe Experience Manager Asse
 description: Zoek, haal een licentie aan en beheer [!DNL Adobe Stock] middelen vanuit [!DNL Adobe Experience Manager]. Gebruik de in licentie gegeven activa als elk ander digitaal actief.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 97e17df1f79450b5aed5867633c129a1c21a17ac
+source-git-commit: 376940612066123a8f84fe6c30ff3002cda08079
 workflow-type: tm+mt
-source-wordcount: '1065'
-ht-degree: 3%
+source-wordcount: '1056'
+ht-degree: 2%
 
 ---
 
@@ -31,7 +31,7 @@ Om communicatie tussen [!DNL Experience Manager] en [!DNL Adobe Stock]toe te sta
 
 ### Create an IMS configuration {#create-an-ims-configuration}
 
-1. Click on [!DNL Experience Manager] logo. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**. Klik op **[!UICONTROL Create]** en selecteer **[!UICONTROL Cloud Solution]** > **[!UICONTROL Adobe Stock]**.
+1. In the [!DNL Experience Manager] user interface, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**. Klik op **[!UICONTROL Create]** en selecteer **[!UICONTROL Cloud Solution]** > **[!UICONTROL Adobe Stock]**.
 1. U kunt een bestaand certificaat opnieuw gebruiken of selecteren **[!UICONTROL Create new certificate]**.
 1. Klik op **[!UICONTROL Create certificate]**. Download de openbare sleutel wanneer deze is gemaakt. Klik op **[!UICONTROL Next]**.
 1. Voeg de gedownloade openbare sleutel toe aan uw [!DNL Adobe Developer Console] serviceaccount. Klik op **[!UICONTROL Next]**. Laat het [!UICONTROL Adobe IMS Technical Account Configuration] scherm open om de waarden over enkele ogenblikken weer te geven.
@@ -52,7 +52,7 @@ Om communicatie tussen [!DNL Experience Manager] en [!DNL Adobe Stock]toe te sta
 
 >[!NOTE]
 >
->Als er meerdere [!DNL Adobe Stock] configuraties zijn, selecteert u de gewenste configuratie in [!UICONTROL User Preferences] het deelvenster. Klik op het *gebruikerslogo* in de rechterbovenhoek van de [!DNL Experience Manager] gebruikersinterface.
+>Als er meerdere [!DNL Adobe Stock] configuraties zijn, selecteert u de gewenste configuratie in het deelvenster Gebruikersvoorkeuren (**[!UICONTROL AEM]** > **[!UICONTROL User Icon]** > **[!UICONTROL User Preferences]** > **[!UICONTROL Stock Configuration]**).
 
 ## [!DNL Adobe Stock] Elementen gebruiken en beheren in [!DNL Experience Manager] {#usemanage}
 

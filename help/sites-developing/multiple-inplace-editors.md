@@ -1,43 +1,37 @@
 ---
-title: Meerdere lokale editors configureren
-seo-title: Meerdere lokale editors configureren
-description: Het is mogelijk om uw component te vormen zodat het veelvoudige op zijn plaats redacteurs heeft
-seo-description: Het is mogelijk om uw component te vormen zodat het veelvoudige op zijn plaats redacteurs heeft
-uuid: 4abbfcd5-fe1b-4c02-b115-97db20e60e1e
-contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: components
-content-type: reference
-discoiquuid: 0fac1e4a-f08f-4c46-b070-cb1d5a05b6e0
+title: Vorm RTE voor veelvoudige op zijn plaats redacteurs.
+description: Creeer veelvoudige op zijn plaats redacteurs in Adobe Experience Manager door de Rich Redacteur van de Tekst te vormen.
+contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b3e1493811176271ead54bae55b1cd0cf759fe71
+source-git-commit: e49411a99a80e91c983afc103a8ea826e75569b8
+workflow-type: tm+mt
+source-wordcount: '445'
+ht-degree: 2%
 
 ---
 
 
-# Meerdere lokale editors configureren{#configuring-multiple-in-place-editors}
+# Meerdere lokale editors configureren {#configure-multiple-in-place-editors}
 
-U kunt de component zo configureren dat deze meerdere interne editors heeft binnen de interface met aanraakbediening.
+U kunt de Rich Text Editor in Adobe Experience Manager zodanig configureren dat deze meerdere op zijn plaats geplaatste editors heeft. Wanneer gevormd kunt u de aangewezen inhoud selecteren en de aangewezen redacteur openen.
 
-Wanneer gevormd kunt u de aangewezen inhoud selecteren en de aangewezen redacteur openen. Bijvoorbeeld:
+![Een specifieke interne editor](assets/rte-inplace-editor.png)
 
-![chlimage_1-8](assets/chlimage_1-8a.png)
-
-## Meerdere editors configureren {#configuring-multiple-editors}
+## Meerdere editors configureren {#configure-multiple-editors}
 
 Om veelvoudige op zijn plaats redacteurs toe te laten is de structuur van een `cq:InplaceEditingConfig` knooptype verbeterd met de definitie van `cq:ChildEditorConfig` knooptype.
 
 Bijvoorbeeld:
 
-```
+```js
    /**
-       * Configures inplace editing of a component.
+       * Configures in-place editing of a component.
        *
-       * @prop active true to activate inplace editing for the component
-       * @prop editorType ID of inplace editor to use
+       * @prop active true to activate in-place editing for the component.
+       * @prop editorType ID of in-place editor to use.
        * @prop cq:childEditors collection of {@link cq:ChildEditorConfig} nodes.
-       * @prop configPath path to editor's config (optional)
-       * @node config editor's config (used if no configPath is specified; optional)
+       * @prop configPath path to editor's config (optional).
+       * @node config editor's config (used if no configPath is specified; optional).
      */
     [cq:InplaceEditingConfig] > nt:unstructured
       - active (boolean)
@@ -47,12 +41,12 @@ Bijvoorbeeld:
       + config (nt:unstructured) = nt:unstructured
 
     /**
-      * Configures one child editor for a subcomponent. The name of the this node will
-      * be used as DD id.
+      * Configures one child editor for a sub-component. The name of the this node is
+      * used as DD ID.
       *
-      * @prop type type of the inline editor. eg: ["image"]
-      * @prop title totle od the inline editor
-      * @prop icon icon to represent the inline editor
+      * @prop type type of the inline editor. For example, ["image"].
+      * @prop title Title of the inline editor.
+      * @prop icon Icon to represent the inline editor.
     */
     [cq:ChildEditorConfig] > nt:unstructured
       orderable
@@ -60,48 +54,38 @@ Bijvoorbeeld:
       - title (string)
 ```
 
-Meerdere editors configureren:
+Voer de volgende stappen uit om meerdere editors te configureren:
 
-1. Definieer de eigenschap op het knooppunt `cq:inplaceEditing` (van het type `cq:InplaceEditingConfig`):
+1. Definieer in het knooppunt `cq:inplaceEditing` (van het type `cq:InplaceEditingConfig`) de volgende eigenschappen:
 
    * Naam:`editorType`
    * Type: `String`
    * Waarde: `hybrid`
 
-1. Onder dit knooppunt maakt u een nieuw knooppunt:
+1. Onder dit knooppunt maakt u een knooppunt:
 
    * Naam: `cq:ChildEditors`
    * Type: `nt:unstructured`
 
-1. Onder het `cq:childEditors` knooppunt maakt u een nieuw knooppunt voor elke interne editor:
+1. Onder `cq:childEditors` knoop, creeer een knoop voor elke op zijn plaats redacteur:
 
-   * Naam: De naam van elk knooppunt moet de naam zijn van de eigenschap die het vertegenwoordigt (zoals bij neerzetdoelen). Bijvoorbeeld, `image`, `text`.
-   * Type: cq: `ChildEditorConfig`
+   * Naam: De naam van elke knoop is de naam van het bezit dat het vertegenwoordigt, zoals het geval met dalingsdoelstellingen is. Bijvoorbeeld `image` en `text`.
+   * Type: `cq:ChildEditorConfig`
    >[!NOTE]
    >
-   >Er is een correlatie tussen de gedefinieerde neerzetdoelen en de onderliggende editors. De naam van de `cq:ChildEditorConfig` knoop zal worden beschouwd als om dalingsdoel ID, voor gebruik als parameter aan de geselecteerde kindredacteur te zijn. Als het bewerkbare subgebied geen neerzetdoel heeft (bijvoorbeeld zoals bij een tekstcomponent), wordt de naam van de onderliggende editor nog steeds beschouwd als een id om het overeenkomende bewerkbare gebied te identificeren.
+   >Er is een correlatie tussen de gedefinieerde neerzetdoelen en de onderliggende editors. De naam van de `cq:ChildEditorConfig` knoop wordt beschouwd als dalingsdoel identiteitskaart, voor gebruik als parameter aan de geselecteerde kindredacteur. Als het bewerkbare subgebied bijvoorbeeld geen neerzetdoel heeft in een tekstcomponent, wordt de naam van de onderliggende editor nog steeds beschouwd als een id om het overeenkomende bewerkbare gebied te identificeren.
 
-1. Definieer op elk van deze knooppunten ( `cq:ChildEditorConfig`) de eigenschappen:
+1. Definieer op elk van deze knooppunten (`cq:ChildEditorConfig`) de eigenschappen:
 
-   * Naam: `type`
-   * Waarde: naam van de geregistreerde ondergeschikte; bijvoorbeeld: `image`, `text`
+   * Naam: `type`.
+   * Waarde: de naam van de geregistreerde interne editor; bijvoorbeeld `image` en `text`.
 
-   * Naam: `title`
-   * Waarde: de titel die u in de lijst van de componentenselectie (van beschikbare redacteurs) wilt tonen; bijvoorbeeld: `Image`, `Text`
+   * Naam: `title`.
+   * Waarde: De titel die wordt weergegeven in de keuzelijst met componenten van de beschikbare editors. Bijvoorbeeld `Image` en `Text`.
 
 ### Aanvullende configuratie voor Rich Text Editors {#additional-configuration-for-rich-text-editors}
 
-De configuratie voor veelvoudige Rich Text Editors is lichtjes verschillend aangezien u elke individuele instantie van RTE afzonderlijk kunt vormen.
-
->[!NOTE]
->
->Voor meer details zie het [Vormen van de Rich Teksteditor](/help/sites-administering/rich-text-editor.md).
-
-Om veelvoudige RTEs te hebben hebt u een configuratie voor elk op zijn plaats RTE nodig:
-
-* Onder `cq:InplaceEditingConfig` definieert u een `config` knooppunt.
-
-   * Onder de `config` knoop bepaalt elke individuele configuratie van RTE.
+De configuratie voor veelvoudige Rich Text Editors is lichtjes verschillend aangezien u elke individuele instantie van RTE afzonderlijk kunt vormen. Voor details, zie de Rich [Redacteur](/help/sites-administering/rich-text-editor.md)van de Tekst vormen. Om veelvoudige RTEs te hebben creeer een configuratie voor elke op zijn plaats RTE. Adobe raadt u aan het nieuwe configuratieknooppunt te maken, `cq:InplaceEditingConfig` aangezien elke afzonderlijke RTE een andere configuratie kan hebben. Onder de nieuwe knoop creeert elke individuele configuratie van RTE.
 
 ```xml
     texttext
@@ -109,7 +93,7 @@ Om veelvoudige RTEs te hebben hebt u een configuratie voor elk op zijn plaats RT
         cq:editConfig
             cq:inplaceEditing
                 cq:childEditors
-                    config
+                    someconfig
                         text1
                             rtePlugins
                         text2
@@ -118,19 +102,21 @@ Om veelvoudige RTEs te hebben hebt u een configuratie voor elk op zijn plaats RT
 
 >[!NOTE]
 >
->De geadviseerde beste praktijken moeten de `config` knoop onder bepalen `cq:InplaceEditingConfig` aangezien elke individuele RTE een verschillende configuratie kan hebben.
+>Voor RTE wordt de `configPath` eigenschap echter ondersteund wanneer de component slechts één instantie van een teksteditor (bewerkbaar subgebied) bevat. Dit gebruik van `configPath` wordt verstrekt om achterwaartse verenigbaarheid met oudere gebruikersinterfacedialogen van de component te steunen.
+
+>[!CAUTION]
 >
->Voor RTE wordt de `configPath` eigenschap echter ondersteund wanneer de component slechts één instantie van een teksteditor (bewerkbaar subgebied) bevat. Dit gebruik van `configPath` wordt verstrekt om achterwaartse verenigbaarheid met oudere dialogen UI van de component te steunen.
+>Noem niet de de configuratieknoop van RTE zoals `config`. Anders, zijn de configuraties RTE beschikbaar voor slechts de beheerders en niet voor de gebruikers in de groep `content-author`.
 
 ## Codevoorbeelden {#code-samples}
 
-**CODE VOOR GITHUB**
+U kunt de code van deze pagina op [aem-authoring-hybrideditors project op GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors)vinden. U kunt het volledige project downloaden als [een ZIP-archief](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors/archive/master.zip).
 
-U kunt de code van deze pagina op GitHub vinden
+## Een interne editor toevoegen {#add-an-in-place-editor}
 
-* [Open aem-authoring-hybrideditors-project op GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors)
-* Het project downloaden als [ZIP-bestand](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors/archive/master.zip)
+Voor algemene informatie over het toevoegen van een op plaats-redacteur zie het document pagina [aanpassen creatie](/help/sites-developing/customizing-page-authoring-touch.md#add-new-in-place-editor).
 
-## Een op plaats-editor toevoegen {#adding-an-in-place-editor}
+>[!MORELIKETHIS]
+>
+>* [Rich Text Editor configureren in Experience Manager](/help/sites-administering/rich-text-editor.md).
 
-Voor algemene informatie over het toevoegen van een interne editor raadpleegt u het document [Paginaontwerp](/help/sites-developing/customizing-page-authoring-touch.md#add-new-in-place-editor)aanpassen.

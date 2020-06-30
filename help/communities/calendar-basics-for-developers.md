@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 88932a3c-ba7f-47ba-9e0b-206755c2d42e
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 82affd528f2526384b319fe89082e0f574ab5855
+workflow-type: tm+mt
+source-wordcount: '220'
+ht-degree: 1%
 
 ---
 
@@ -33,7 +36,7 @@ Deze pagina bevat essentiële informatie over het werken met de kalenderfunctie.
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientllibs</strong></a></td>
-   <td>cq.social.hbs.agenda</td>
+   <td>cq.social.hbs.calendar</td>
   </tr>
   <tr>
    <td> <strong>templates</strong></td>
@@ -63,7 +66,7 @@ Deze pagina bevat essentiële informatie over het werken met de kalenderfunctie.
 
 ### Kalenderfunctie {#calendar-function}
 
-Een communautaire plaatsstructuur die de functie [van de](functions.md#calendar-function) Kalender omvat zal een gevormde c `alendar`component hebben. De functie van de Kalender steunt het identificeren van een [bevoorrechte gebruikersgroep](users.md#privileged-members-group)van een lid.
+Een community-sitestructuur die de functie [](functions.md#calendar-function) Kalender bevat, heeft een geconfigureerde `calendar` component. De functie van de Kalender steunt het identificeren van een [bevoorrechte gebruikersgroep](users.md#privileged-members-group)van een lid.
 
 ### Toegang tot agendaberichten (UGC) {#accessing-calendar-posts-ugc}
 

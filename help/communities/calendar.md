@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 70fa0b9c-cb98-45c4-9c94-bef4a9f3741e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5b8b1544645465d10e7c2018364b6a74f1ad9a8e
+source-git-commit: 82affd528f2526384b319fe89082e0f574ab5855
+workflow-type: tm+mt
+source-wordcount: '1170'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +28,7 @@ De kalenderfunctie biedt ondersteuning voor het verschaffen van informatie over 
 In deze sectie van de documentatie wordt beschreven
 
 * De kalenderfunctie toevoegen aan een AEM-site
-* Configuratie-instellingen voor `Calendar`componenten
+* Configuratie-instellingen voor `Calendar` componenten
 
 ## Een kalender toevoegen aan een pagina {#adding-a-calendar-to-a-page}
 
@@ -39,13 +42,13 @@ Ga voor de benodigde informatie naar [Community Components Basics](/help/communi
 
 Wanneer de [vereiste client-side bibliotheken](/help/communities/calendar-basics-for-developers.md#essentials-for-client-side) worden opgenomen, wordt de `Calendar` component op deze manier weergegeven.
 
-![chlimage_1-147](assets/chlimage_1-147.png)
+![chlimage_1-112](assets/chlimage_1-112.png)
 
 ### Kalender configureren {#configuring-calendar}
 
-Selecteer de geplaatste `Calendar`component die u wilt openen en selecteer het `Configure` pictogram waarmee het dialoogvenster Bewerken wordt geopend.
+Selecteer de geplaatste `Calendar` component die u wilt openen en selecteer het `Configure` pictogram waarmee het dialoogvenster Bewerken wordt geopend.
 
-![chlimage_1-148](assets/chlimage_1-148.png) ![chlimage_1-149](assets/chlimage_1-149.png)
+![chlimage_1-113](assets/chlimage_1-113.png)![chlimage_1-114](assets/chlimage_1-114.png)
 
 #### Het tabblad Instellingen {#settings-tab}
 
@@ -133,7 +136,7 @@ Onder het lusje van de Moderatie **van de** Gebruiker, specificeer hoe de gepost
 
 * **Vlagberichten**
 
-   Als deze optie is ingeschakeld, kunnen leden gebeurtenissen of opmerkingen van anderen als ongeschikt markeren. Standaard is ingeschakeld**.**
+   Als deze optie is ingeschakeld, kunnen leden gebeurtenissen of opmerkingen van anderen als ongeschikt markeren. Standaard is ingeschakeld.
 
 * **Lijst met redenen voor vlag**
 
@@ -141,7 +144,7 @@ Onder het lusje van de Moderatie **van de** Gebruiker, specificeer hoe de gepost
 
 * **Reden voor aangepaste vlag**
 
-   Als deze optie is ingeschakeld, kunnen leden hun eigen reden opgeven om een gebeurtenis of opmerking als ongeschikt aan te duiden. Standaard is uitgeschakeld**.**
+   Als deze optie is ingeschakeld, kunnen leden hun eigen reden opgeven om een gebeurtenis of opmerking als ongeschikt aan te duiden. De optie Standaard is uitgeschakeld.
 
 * **Moderniseringsdrempel**
 
@@ -167,6 +170,7 @@ Onder het tabblad **Tagveld** zijn de tags die kunnen worden toegepast, indien t
 >
 >Ga naar [Tags](/help/sites-administering/tags.md) beheren voor meer informatie over het toevoegen van een nieuwe naamruimte voor tags (taxonomie).
 
+
 #### Tabblad Vertaling {#translation-tab}
 
 Als op het tabblad **Vertaling** vertaling is ingeschakeld voor de site van de gebruikersgemeenschap, kan de vertaling zo worden ingesteld dat de volledige thread (gebeurtenis en opmerkingen) wordt vertaald in plaats van specifieke posts.
@@ -187,7 +191,7 @@ Andere vaardigheden hangen af van het feit of de bezoeker van de site een modera
 
 Wanneer de ondertekende in gebruiker moderator of beheerdervoorrechten heeft, kunnen zij [matigingstaken](/help/communities/moderate-ugc.md) (zoals toegelaten door de configuratie van de component) op alle kalendergebeurtenissen en commentaren uitvoeren die aan een gebeurtenis worden gepost.
 
-![chlimage_1-150](assets/chlimage_1-150.png)
+![chlimage_1-115](assets/chlimage_1-115.png)
 
 #### Leden {#members}
 
@@ -201,13 +205,15 @@ Zij kunnen met name:
 * Verwijder hun eigen agendagebeurtenis of commentaar
 * Andere kalendergebeurtenissen of opmerkingen markeren
 
-![chlimage_1-151](assets/chlimage_1-151.png) ![chlimage_1-152](assets/chlimage_1-152.png)
+![chlimage_1-116](assets/chlimage_1-116.png)
+
+![chlimage_1-117](assets/chlimage_1-117.png)
 
 #### Anoniem {#anonymous}
 
 Sitebezoekers die niet zijn aangemeld, kunnen alleen geposte kalendergebeurtenissen lezen, deze vertalen indien deze worden ondersteund, maar kunnen geen gebeurtenis of opmerking toevoegen en de gebeurtenissen of opmerkingen van anderen niet markeren.
 
-![chlimage_1-153](assets/chlimage_1-153.png)
+![chlimage_1-118](assets/chlimage_1-118.png)
 
 ## Additional Information {#additional-information}
 

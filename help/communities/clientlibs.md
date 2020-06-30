@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 68ce47c8-a03f-40d6-a7f3-2cc64aee0594
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5b8b1544645465d10e7c2018364b6a74f1ad9a8e
+source-git-commit: efa6c7be93908b2f264da4689caa9c02912c0f0a
+workflow-type: tm+mt
+source-wordcount: '402'
+ht-degree: 0%
 
 ---
 
@@ -38,11 +41,11 @@ Wanneer de vereiste clientlibs ontbreken, kan het [toevoegen van een Community-c
 
 ### Voorbeeld: Geplaatste revisies zonder Clientlibs {#example-placed-reviews-without-clientlibs}
 
-![chlimage_1-132](assets/chlimage_1-132.png)
+![chlimage_1-426](assets/chlimage_1-426.png)
 
 ### Voorbeeld: Geplaatste revisies met clips {#example-placed-reviews-with-clientlibs}
 
-![chlimage_1-133](assets/chlimage_1-133.png)
+![chlimage_1-427](assets/chlimage_1-427.png)
 
 ## Vereiste clients identificeren {#identifying-required-clientlibs}
 
@@ -55,7 +58,7 @@ Bijvoorbeeld helemaal boven aan de pagina [](https://localhost:4502/content/comm
 * cq.ckeditor
 * cq.social.hbs.reviews
 
-![chlimage_1-134](assets/chlimage_1-134.png)
+![chlimage_1-246](assets/chlimage_1-246.png)
 
 ## Vereiste clips toevoegen {#adding-required-clientlibs}
 
@@ -63,32 +66,33 @@ Wanneer u een Gemeenschapscomponent aan een pagina wilt toevoegen, moet u de ver
 
 Gebruik [CRXDE|Lite](#using-crxde-lite) om een bestaande cliëntlibslist voor een communautaire plaatspagina te wijzigen.
 
-Om een clientlib voor een communautaire plaats toe te voegen gebruikend [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
+Om een clientlib voor een communautaire plaats toe te voegen gebruikend [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
-* Ga naar [https://&lt;server>:&lt;port>/crx/de](https://localhost:4502/crx/de)
-* Zoek het `clientlibslist` knooppunt voor de pagina waaraan u de component wilt toevoegen
+* Blader naar [https://&lt;server>:&lt;port>/crx/de](https://localhost:4502/crx/de).
+* Zoek het `clientlibslist` knooppunt voor de pagina waaraan u de component wilt toevoegen:
 
    * `/content/sites/sample/en/page/jcr:content/clientlibslist`
 
-* Met geselecteerde `clientlibslist` node
+* Selecteer `clientlibslist` knooppunt:
 
-   * De eigenschap String[] zoeken `scg:requiredClientLibs`
-   * Selecteer de instantie `Value` voor toegang tot het dialoogvenster String-array
+   * Zoek de eigenschap String[] `scg:requiredClientLibs`.
+   * Selecteer het `Value` item om het dialoogvenster String-array te openen.
 
-      * Indien nodig omlaag schuiven
-      * Selecteer + om een nieuwe clientbibliotheek in te voeren
+      * Schuif indien nodig omlaag.
+      * Selecteer + om een nieuwe clientbibliotheek in te voeren.
 
-         * Herhalen om meer clientbibliotheken toe te voegen
-      * Selecteer **OK**
-   * Alles **opslaan selecteren**
+         * Herhaal deze bewerking om meer clientbibliotheken toe te voegen.
 
+         * Selecteer **OK**.
+   * Selecteer **Alles** opslaan.
 
 
 >[!NOTE]
 >
 >Als de site geen gemeenschapssite is, moet het bestaan of de locatie van de clientbibliotheken die voor de site worden gebruikt, worden gedetecteerd.
 
-Gebruikend het [Begonnen worden met het Voorbeeld van Gemeenschappen](/help/communities/getting-started.md) AEM, waar `site-name` is *geëngageerd*, is dit hoe cliëntliblist zou verschijnen als het toevoegen van de revisiecomponent:
 
-![chlimage_1-135](assets/chlimage_1-135.png)
+Gebruikend het [Begonnen worden met het voorbeeld van AEM Communities](/help/communities/getting-started.md) , waar `site-name` is *geëngageerd*, is dit hoe cliëntliblist zou verschijnen als het toevoegen van de revisiecomponent:
+
+![chlimage_1-247](assets/chlimage_1-247.png)
 

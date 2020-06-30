@@ -10,7 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 21714581-7645-4b47-a9b0-9f1424013240
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: f1870c1222004f582ccf337a59e1f30e2dc2cf32
+workflow-type: tm+mt
+source-wordcount: '380'
+ht-degree: 1%
 
 ---
 
@@ -34,6 +37,7 @@ De beschikbare communautaire componenten zijn [hier](author-communities.md#avail
 >Voor algemene ontwerpinformatie raadpleegt u de [handleiding voor het maken van pagina](../../help/sites-authoring/qg-page-authoring.md)&#39;s.
 >
 >Als u niet bekend bent met AEM, bekijkt u de documentatie over [basisverwerking](../../help/sites-authoring/basic-handling.md).
+
 
 ### Ontwerpmodus invoeren {#entering-design-mode}
 
@@ -79,7 +83,7 @@ Voor ontwerpinformatie:
 
 Voor administratieve informatie:
 
-* Tagnaamruimten maken (taxonomie): Tags [beheren](../../help/sites-administering/tags.md)
+* Tagnaamruimten maken (taxonomie): [Tags beheren](../../help/sites-administering/tags.md)
 * Configuratie van community-site: zie [TAGS](sites-console.md#tagging)
 * [Door gebruiker gegenereerde inhoud labelen](../../help/sites-authoring/tags.md)
 * [Tags toewijzen](tag-resources.md)

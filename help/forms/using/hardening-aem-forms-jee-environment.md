@@ -9,9 +9,9 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 translation-type: tm+mt
-source-git-commit: 6cb05cab9ecbb9fc88e16cc1ab24cafccf7d0b16
+source-git-commit: 36c9b3d60331e7482655bc8039153b6b86d721f9
 workflow-type: tm+mt
-source-wordcount: '7603'
+source-wordcount: '7665'
 ht-degree: 0%
 
 ---
@@ -320,7 +320,7 @@ De generatie van de Definitie van de Taal van de Dienst van het Web (WSDL) zou s
 
 ### Beveiliging toepassingsserver {#application-server-security}
 
-In de volgende tabel worden enkele technieken beschreven waarmee u uw toepassingsserver kunt beveiligen nadat de AEM Forms in de JEE-toepassing zijn geïnstalleerd.
+In de volgende tabel vindt u een aantal technieken voor het beveiligen van uw toepassingsserver nadat de AEM Forms voor de JEE-toepassing zijn geïnstalleerd.
 
 <table> 
  <thead> 
@@ -455,6 +455,16 @@ In deze tabel worden de controle- en registratietechnieken beschreven die u kunt
   </tr> 
  </tbody> 
 </table>
+
+### Een gebruiker zonder beheerder inschakelen om PDF Generator uit te voeren
+
+U kunt een gebruiker zonder beheerder inschakelen om PDF Generator te gebruiken. Normaal gesproken kunnen alleen gebruikers met beheerdersrechten PDF Generator gebruiken. Voer de volgende stappen uit om een gebruiker zonder beheerder in staat te stellen PDF Generator uit te voeren:
+
+1. Maak een omgevingsvariabele met de naam PDFG_NON_ADMIN_ENABLED.
+
+1. Stel waarde van de variabele in op TRUE.
+
+1. Start de AEM-formulierinstantie opnieuw.
 
 ## Het vormen AEM Forms op JEE voor toegang voorbij de onderneming {#configuring-aem-forms-on-jee-for-access-beyond-the-enterprise}
 
@@ -674,10 +684,10 @@ Het filterproces Referrer kan als volgt worden beschreven:
    1. Als het POST is, voert de formulierserver de koptekstcontrole Referrer uit.
    1. Als het GET is, overslaat de formulierserver de controle Referrer, tenzij *CSRF_CHECK_GETS* is ingesteld op true, in welk geval de headercontrole Referrer wordt uitgevoerd. *CSRF_CHECK_GETS* wordt gespecificeerd in het *web.xml* dossier voor uw toepassing.
 
-1. De formulierserver controleert of de aangevraagde URI bestaat in allowlist:
+1. De formulierserver controleert of de aangevraagde URI bestaat in de lijst van gewenste personen:
 
-   1. Als de URI is toegestaan, accepteert de server de aanvraag.
-   1. Als de aangevraagde URI niet is toegestaan, haalt de server de Referrer van de aanvraag op.
+   1. Als de URI is op de lijst met gewenste personen gestaan, accepteert de server de aanvraag.
+   1. Als gevraagde URI niet wordt op de lijst met gewenste personen gestaan, wint de server de Referrer van het verzoek terug.
 
 1. Als er een Referrer in het verzoek is, controleert de server of het een Toegestane Referrer is. Als dit is toegestaan, controleert de server op een uitzondering Referrer:
 
@@ -693,7 +703,7 @@ Het filterproces Referrer kan als volgt worden beschreven:
 
 AEM Forms op JEE beschikken over een verwijzingsfilter om Referrer op te geven die toegang hebben tot uw serverbronnen. Standaard filtert het filter Referrer geen aanvragen die een veilige HTTP-methode gebruiken, bijvoorbeeld GET, tenzij *CSRF_CHECK_GETS* is ingesteld op true. Als het havenaantal voor een Toegestane ingang van de Referentie aan 0 wordt geplaatst, zullen de AEM Forms op JEE alle verzoeken met Referrer van die gastheer ongeacht het havenaantal toestaan. Als er geen poortnummer is opgegeven, zijn alleen aanvragen van standaardpoort 80 (HTTP) of poort 443 (HTTPS) toegestaan. Filteren met verwijzing is uitgeschakeld als alle items in de lijst Toegestane verwijzing worden verwijderd.
 
-Wanneer u de Diensten van het Document eerst installeert, wordt de Toegestane lijst van de Verwijzing bijgewerkt met het adres van de server waarop de Diensten van het Document geïnstalleerd is. De ingangen voor de server omvatten de servernaam, het IPv4 adres, het IPv6 adres als IPv6 wordt toegelaten, het loopbackadres, en een localhost ingang. De namen die aan de lijst Toegestane verwijzing worden toegevoegd, worden geretourneerd door het hostbesturingssysteem. Een server met een IP-adres van 10.40.54.187 bevat bijvoorbeeld de volgende vermeldingen: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. Voor elke niet-gekwalificeerde naam die door het besturingssysteem Host wordt geretourneerd (namen die geen IPv4-adres, IPv6-adres of gekwalificeerde domeinnaam hebben), wordt de allowlist niet bijgewerkt. Wijzig de Toegestane lijst van Referiteers om uw bedrijfsomgeving aan te passen. Implementeer de formulierserver niet in de productieomgeving met de standaardlijst Toegestane verwijzing. Nadat u een van de toegestane referentie-, referentie-uitzonderingen of URI&#39;s hebt gewijzigd, zorgt u ervoor dat de server opnieuw wordt gestart zodat de wijzigingen van kracht worden.
+Wanneer u de Diensten van het Document eerst installeert, wordt de Toegestane lijst van de Verwijzing bijgewerkt met het adres van de server waarop de Diensten van het Document geïnstalleerd is. De ingangen voor de server omvatten de servernaam, het IPv4 adres, het IPv6 adres als IPv6 wordt toegelaten, het loopbackadres, en een localhost ingang. De namen die aan de lijst Toegestane verwijzing worden toegevoegd, worden geretourneerd door het hostbesturingssysteem. Een server met een IP-adres van 10.40.54.187 bevat bijvoorbeeld de volgende vermeldingen: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. Voor om het even welke niet gekwalificeerde naam die door het werkende systeem van de Gastheer (namen wordt teruggegeven die geen IPv4 adres, IPv6 adres of gekwalificeerde domeinnaam) hebben wordt de lijst van gewenste personen niet bijgewerkt. Wijzig de Toegestane lijst van Referiteers om uw bedrijfsomgeving aan te passen. Implementeer de formulierserver niet in de productieomgeving met de standaardlijst Toegestane verwijzing. Nadat u een van de toegestane referentie-, referentie-uitzonderingen of URI&#39;s hebt gewijzigd, zorgt u ervoor dat de server opnieuw wordt gestart zodat de wijzigingen van kracht worden.
 
 **Toegestane verwijzingslijst beheren**
 
@@ -1077,4 +1087,4 @@ Stel de `directoryBrowsingEnabled` eigenschap in het bestand ibm-web-ext.xml in 
 1. Selecteer **Beheersbeveiliging** inschakelen.
 1. Schakel zowel **Toepassingsbeveiliging** inschakelen als Java 2-beveiliging **** gebruiken uit.
 1. Klik op **OK** of **Toepassen**.
-1. Klik in het vak **Berichten** rechtstreeks op **Opslaan in de hoofdconfiguratie**.
+1. Klik in het vak **Berichten** rechtstreeks op **Opslaan in de master configuratie**.

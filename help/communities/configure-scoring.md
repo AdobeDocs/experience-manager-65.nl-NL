@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 628b6dcd-8b1c-4166-8fc2-843baa86ac1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4170c7fe48a740e0574a32c7823841dc311fd565
+source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 0%
@@ -264,7 +264,7 @@ Voor onderzoeksdoeleinden, gebruikend JSRP bijvoorbeeld, is de basisomslag die i
 
 * `/content/usergenerated/asi/jcr`
 
-Wordt gevolgd door het pad naar het gebruikersprofiel en eindigt in een map met badges, zoals
+Wordt gevolgd door het pad naar het gebruikersprofiel en eindigt in een map met badges, zoals:
 
 * `/home/users/community/w271OOup2Z4DjnOQrviv/profile/badges`
 

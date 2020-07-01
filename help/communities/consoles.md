@@ -10,14 +10,17 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 5fa9ee8b-5893-4ae9-a986-bfdbb00f355f
 translation-type: tm+mt
-source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
+source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
+workflow-type: tm+mt
+source-wordcount: '344'
+ht-degree: 0%
 
 ---
 
 
 # Communityconsoles {#communities-consoles}
 
-De AEM-consoles, die beschikbaar zijn in de auteursomgeving van het wereldwijde navigatievenster, bieden toegang tot beheerstaken zoals:
+De consoles van AEM Communities, beschikbaar in het auteursmilieu van het globale navigatievenster, verleent toegang tot administratieve taken zoals:
 
 * [Een community-site maken](sites-console.md)
 * Groepen [toevoegen](groups.md) die op de site zijn genest
@@ -34,6 +37,7 @@ In de auteursomgeving, na het aanmelden met beheerdervoorrechten, zijn de `Commu
 >[!NOTE]
 >
 >In de publicatieomgeving wordt op een [communitysite](sites-console.md) een `Administration` menu-item weergegeven wanneer het lid dat is aangemeld de juiste rechten heeft.
+
 
 ## Globaal navigatievenster {#global-navigation-panel}
 
@@ -64,7 +68,7 @@ Om tot de diverse consoles van Gemeenschappen, van globale navigatie toegang te 
 
 * [Rapporten](reports.md)
 
-   In de rapportconsole kunnen rapporten over toewijzingen, paginaweergaven en geposte inhoud (UGC) worden gegenereerd wanneer Adobe Analytics is [ingeschakeld voor een communitysite](sites-console.md#analytics). De console is alleen beschikbaar in de auteursomgeving.
+   In de rapportconsole kunnen rapporten over toewijzingen, paginaweergaven en geposte inhoud (UGC) worden gegenereerd wanneer een communitysite Adobe Analytics [heeft](sites-console.md#analytics)ingeschakeld. De console is alleen beschikbaar in de auteursomgeving.
 
 * [Bronnen](resources.md)
 
@@ -72,4 +76,4 @@ Om tot de diverse consoles van Gemeenschappen, van globale navigatie toegang te 
 
 ## Tools Console {#tools-console}
 
-Toegang tot [Community Tools](tools.md) (voorheen de beheerconsole) vanaf globale navigatie: **[!UICONTROL Gereedschappen > Gemeenschappen]**
+Toegang tot [Community Tools](tools.md) (voorheen de beheerconsole) vanaf globale navigatie: **[!UICONTROL Tools]** > **[!UICONTROL Communities]**

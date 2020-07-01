@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: developing
 discoiquuid: a03145f7-6697-4797-b73e-6f8d241ce469
 translation-type: tm+mt
-source-git-commit: e8d8bf89971d3d9d5ec150308dda247aa53c77bb
+source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
+workflow-type: tm+mt
+source-wordcount: '414'
+ht-degree: 1%
 
 ---
 
@@ -25,7 +28,7 @@ Een andere optie voor onderzoek met steekproefcomponenten is de eigenschappen te
 
 ## Een Community-site maken {#create-a-community-site}
 
-Dit lijkt op het maken van een nieuwe site die wordt beschreven in [Aan de slag met AEM-gemeenschappen](getting-started.md).
+Dit lijkt op het maken van een nieuwe site die wordt beschreven in [Aan de slag met AEM Communities](getting-started.md).
 
 Het belangrijkste verschil is dat deze zelfstudie een nieuwe community-sitesjabloon maakt dat alleen de functie [](functions.md#page-function) Pagina bevat om een eenvoudige community-site te maken die vrij is van andere functies (andere functies dan de vooraf bekabelde functies die voor alle communitysites gelden).
 
@@ -33,7 +36,7 @@ Het belangrijkste verschil is dat deze zelfstudie een nieuwe community-sitesjabl
 
 Om te beginnen, creeer een eenvoudig malplaatje [van de](sites.md)communautaire plaats.
 
-Selecteer **[!UICONTROL Gereedschappen > Gemeenschappen > Sitesjablonen]** in de globale navigatie op een auteurinstantie.
+Selecteer > **[!UICONTROL Tools]****[!UICONTROL Communities]** > **[!UICONTROL Site Templates]**.
 
 ![chlimage_1-82](assets/chlimage_1-82.png)
 
@@ -63,7 +66,7 @@ Selecteer **[!UICONTROL Gereedschappen > Gemeenschappen > Sitesjablonen]** in de
 
 Maak nu een nieuwe communitysite op basis van de eenvoudige sitesjabloon.
 
-Selecteer **[!UICONTROL Gemeenschappen > Sites nadat u de sitesjabloon hebt gemaakt]**.
+Selecteer bij globale navigatie de sitesjabloon **[!UICONTROL Communities > Sites]**.
 
 ![chlimage_1-85](assets/chlimage_1-85.png)
 
@@ -78,10 +81,10 @@ Selecteer **[!UICONTROL Gemeenschappen > Sites nadat u de sitesjabloon hebt gema
    * `Name`: monster
 
       * url = http://localhost:4502/content/sites/sample
-   * `Template`: kiezen `Single Page Template`
 
+      * `Template`: kiezen `Single Page Template`
+      ![chlimage_1-86](assets/chlimage_1-86.png)
 
-![chlimage_1-86](assets/chlimage_1-86.png)
 
 * Selecteer `Next`
 * Step `2 - Design`
@@ -95,7 +98,7 @@ Selecteer **[!UICONTROL Gemeenschappen > Sites nadat u de sitesjabloon hebt gema
 
 * Selecteer `Create`
 
-![chlimage_1-87](assets/chlimage_1-87.png)
+   ![chlimage_1-87](assets/chlimage_1-87.png)
 
 ## De site publiceren {#publish-the-site}
 
@@ -113,7 +116,7 @@ De URL wordt [http://localhost:4502/editor.html/content/sites/sample/en.html](ht
 
 ![chlimage_1-90](assets/chlimage_1-90.png)
 
-Op de eenvoudige homepage is het mogelijk om te zien wat door de communautaire functies en malplaatjes vooraf wordt getelegrafeerd, en spel met het toevoegen en het vormen van communautaire componenten.
+Op de eenvoudige homepage is het mogelijk om te zien wat door de communautaire functies en malplaatjes vooraf wordt getelegrafeerd, en spel met het toevoegen van en het vormen van communautaire componenten.
 
 ## Site weergeven bij publicatie {#view-site-on-publish}
 

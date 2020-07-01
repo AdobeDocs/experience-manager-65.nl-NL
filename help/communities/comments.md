@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 216cfb3e-777e-4773-afba-749debdca000
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5b8b1544645465d10e7c2018364b6a74f1ad9a8e
+source-git-commit: 15bebf5727e0a575d65806375840a44e423efaa0
+workflow-type: tm+mt
+source-wordcount: '994'
+ht-degree: 0%
 
 ---
 
@@ -24,16 +27,17 @@ De functie voor opmerkingen wordt gebruikt om bezoekers die zich hebben aangemel
 
 In het document wordt beschreven:
 
-* Toevoegen `Comments`aan een pagina.
-* De montages van de configuratie voor de `Comments`component.
+* Toevoegen `Comments` aan een pagina.
+* De montages van de configuratie voor de `Comments` component.
 
 >[!NOTE]
 >
 >Anonieme berichten over opmerkingen worden niet ondersteund. Site-bezoekers moeten zich registreren (lid worden) en zich aanmelden om deel te nemen.
 
+
 ### Opmerkingen toevoegen aan een pagina {#adding-comments-to-a-page}
 
-Als u een `Comments`component aan een pagina wilt toevoegen in de ontwerpmodus, gebruikt u de componentbrowser om te zoeken naar
+Als u een `Comments` component aan een pagina wilt toevoegen in de ontwerpmodus, gebruikt u de componentbrowser om te zoeken naar
 
 * `Communities / Comments`
 
@@ -41,19 +45,22 @@ en sleep het naar de juiste positie op een pagina, zoals een positie ten opzicht
 
 Ga voor de benodigde informatie naar [Community Components Basics](/help/communities/basics.md).
 
-Wanneer de [vereiste clientbibliotheken](/help/communities/essentials-comments.md#essentials-for-client-side) worden opgenomen, wordt de `Comments`component op deze manier weergegeven.
+Wanneer de [vereiste clientbibliotheken](/help/communities/essentials-comments.md#essentials-for-client-side) worden opgenomen, wordt de `Comments` component op deze manier weergegeven.
 
-![chlimage_1-143](assets/chlimage_1-143.png)
+![chlimage_1-428](assets/chlimage_1-428.png)
 
 >[!NOTE]
 >
->Er mag slechts één `Comments`component op een pagina voorkomen. Houd er rekening mee dat diverse functies van een Gemeenschappen al opmerkingen bevatten, zoals een blog, agenda, forum, QnA en revisies.
+>Er mag slechts één `Comments` component op een pagina voorkomen. Houd er rekening mee dat diverse functies van een Gemeenschappen al opmerkingen bevatten, zoals een blog, agenda, forum, QnA en revisies.
+
 
 ### Opmerkingen configureren {#configuring-comments}
 
 Selecteer de geplaatste `Comments` component die u wilt openen en selecteer het `Configure` pictogram waarmee het dialoogvenster Bewerken wordt geopend.
 
-![pictogramcommentaarinstellingen](assets/configure.png) ![configureren](assets/commentssettings.png)
+![Configuratiepictogram](assets/configure.png)
+
+![commentaarinstellingen](assets/commentssettings.png)
 
 #### Tabblad Opmerkingen {#comments-tab}
 
@@ -157,19 +164,19 @@ Door het Type van Middel van de Commentaar te veranderen, produceert het comment
 
 Zodra de types van douanemiddelen gekend zijn, ga de Wijze [van het](/help/sites-authoring/default-components-designmode.md) Ontwerp in en klik de geplaatste `Comments` component tweemaal om een dialoog met een extra lusje te openen.
 
-Onder het lusje van de Types **van Middel, specificeer douane resourceType voor nieuwe instanties van de** `Comments or Voting`componenten:
+Onder het lusje van de Types **van Middel, specificeer douane resourceType voor nieuwe instanties van de** `Comments or Voting` componenten:
 
-![chlimage_1-144](assets/chlimage_1-144.png)
+![chlimage_1-429](assets/chlimage_1-429.png)
 
 * **Type bron van opmerking**
 
-   Navigeer naar het resourceType van een uitgebreide `comment`component (enige commentaar) in /apps. Bijvoorbeeld: `/apps/social/commons/components/hbs/comments/comment`
+   Navigeer naar het resourceType van een uitgebreide `comment` component (enige commentaar) in /apps. Bijvoorbeeld, `/apps/social/commons/components/hbs/comments/comment`
 
    Deze bron identificeert het resourceType van UGC die wordt gecreeerd wanneer een bezoeker een commentaar plaatst.
 
 * **Type stembron**
 
-   Navigeer aan resourceType van een uitgebreide `voting`component in /apps. Bijvoorbeeld: `/apps/social/components/hbs/voting`
+   Navigeer naar het resourceType van een uitgebreide `voting` component in /apps. Bijvoorbeeld, `/apps/social/components/hbs/voting`
 
    Dit middel identificeert het middeltype van UGC die wordt gecreeerd wanneer een bezoeker een stem plaatst.
 

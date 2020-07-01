@@ -11,20 +11,35 @@ content-type: reference
 discoiquuid: 9d952604-f9ef-498f-937b-871817c80226
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e8d8bf89971d3d9d5ec150308dda247aa53c77bb
+source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
+workflow-type: tm+mt
+source-wordcount: '932'
+ht-degree: 0%
 
 ---
 
 
 # Berichtenonderdeel {#messaging-feature}
 
-Naast de openbaar zichtbare interacties die in forums en commentaren voorkomen, laat de overseineneigenschap van AEM Gemeenschappen communautaire leden toe om met elkaar meer privé te communiceren.
+Naast de openbaar zichtbare interactie die in forums en commentaren voorkomt, laat de overseineneigenschap van AEM Communities communautaire leden toe om met elkaar meer privé in wisselwerking te staan.
 
 Deze functie kan worden opgenomen wanneer een [communitysite](/help/communities/overview.md#communitiessites) wordt gemaakt.
 
 De overseineneigenschap verstrekt de capaciteit om:
 
-**A** - een bericht aan één of meerdere communautaire leden **B** - verzend directe berichten in [bulk aan de groepen](/help/communities/messaging.md#group-messaging)**C** van de communautaire leden - verzend een bericht met gehechtheid **D** - door:sturen een bericht ************ E - antwoord op een berichtF - schrap een berichtG - verzend een geschrapt bericht
+**A** - een bericht sturen naar een of meer leden van de community
+
+**B** - directe berichten in [bulk verzenden naar groepen die lid zijn van de gemeenschap](/help/communities/messaging.md#group-messaging)
+
+**C** - verzend een bericht met gehechtheid
+
+**D** - een bericht doorsturen
+
+**E** - een bericht beantwoorden
+
+**F** - verwijder een bericht
+
+**G** - herstel een geschrapt bericht
 
 ![messaging-section](assets/messaging-section.png) ![restore-message](assets/restore-message.png)
 
@@ -37,6 +52,7 @@ Om de overseineneigenschap toe te laten en te wijzigen, zie:
 >
 >Het wordt niet ondersteund om `Compose Message, Message, or Message List` componenten (gevonden in `Communities`componentgroep) toe te voegen aan een pagina in de modus Schrijven.
 
+
 ## Berichtcomponenten configureren {#configure-messaging-components}
 
 Wanneer het overseinen voor een communautaire plaats wordt toegelaten, wordt het opstelling zonder verdere configuratie noodzakelijk. De informatie wordt verstrekt als er een behoefte is om de standaardconfiguratie te veranderen.
@@ -45,10 +61,10 @@ Wanneer het overseinen voor een communautaire plaats wordt toegelaten, wordt het
 
 Om de configuratie van de lijst van berichten voor **Inbox**, **Verzonden Punten**, en de pagina&#39;s van het **Afval** van de overseineneigenschap te wijzigen, open de plaats in [auteur uitgeeft wijze](/help/communities/sites-console.md#authoring-site-content).
 
-1. In `Preview`wijze, selecteer de verbinding van **Berichten** om de belangrijkste overseinenpagina te openen. Selecteer vervolgens **Inbox**, **Verzonden items** of **Prullenmand** om de component voor die berichtlijst te configureren.
+1. In `Preview` wijze, selecteer de verbinding van **Berichten** om de belangrijkste overseinenpagina te openen. Selecteer vervolgens **Inbox**, **Verzonden items** of **Prullenmand** om de component voor die berichtlijst te configureren.
 
 1. Selecteer in de `Edit` modus de component op de pagina.
-1. U opent het configuratiedialoogvenster door overerving te annuleren door het `link`pictogram te selecteren.
+1. U opent het configuratiedialoogvenster door overerving te annuleren door het `link` pictogram te selecteren.
 Nadat de overerving is geannuleerd, is het mogelijk om het configuratiepictogram te selecteren om het configuratiedialoogvenster te openen.
 
 1. Nadat de configuratie is voltooid, moet de overerving worden hersteld door het `broken link` pictogram te selecteren.
@@ -61,7 +77,7 @@ Nadat de overerving is geannuleerd, is het mogelijk om het configuratiepictogram
 
 * **Servicekiezer**
 
-   (*Vereist*) Plaats dit aan de waarde van het bezit **`serviceSelector.name`** van de Dienst [van de Verrichtingen van het Overseinen van](/help/communities/messaging.md#messaging-operations-service)Gemeenschappen AEM.
+   (*Vereist*) plaats dit aan de waarde van het bezit **`serviceSelector.name`** van de Dienst [van de Verrichtingen van het Overseinen van](/help/communities/messaging.md#messaging-operations-service)AEM Communities.
 
 * **Pagina samenstellen**
 
@@ -81,7 +97,7 @@ Nadat de overerving is geannuleerd, is het mogelijk om het configuratiepictogram
 
 * **Mappaden**
 
-   (*Vereist*) Verwijzend naar de waarden die voor **inbox.path.name** en **sentitems.path.name** in de Dienst [van de Verrichtingen van het Overseinen van](/help/communities/messaging.md#messaging-operations-service)Gemeenschappen AEM worden geplaatst. Wanneer het vormen voor een `Inbox`, voeg één ingang toe gebruikend de waarde van **inbox.path.name**. Wanneer het vormen voor een `Outbox`, voeg één ingang toe gebruikend de waarde van **sentitems.path.name**. Voeg bij de configuratie voor `Trash`twee items met beide waarden toe.
+   (*Vereist*) Verwijzend de waarden die voor **inbox.path.name** en **sentitems.path.name** in de Dienst [van de Verrichtingen van het Overseinen van](/help/communities/messaging.md#messaging-operations-service)AEM Communities worden geplaatst. Wanneer het vormen voor een `Inbox`, voeg één ingang toe gebruikend de waarde van **inbox.path.name**. Wanneer het vormen voor een `Outbox`, voeg één ingang toe gebruikend de waarde van **sentitems.path.name**. Voeg bij de configuratie voor `Trash`twee items met beide waarden toe.
 
 #### Tabblad Weergave {#display-tab}
 
@@ -97,7 +113,7 @@ Nadat de overerving is geannuleerd, is het mogelijk om het configuratiepictogram
 
 * **Knop Verwijderen**
 
-   Als deze optie is ingeschakeld, wordt een `Delete`knop weergegeven waarmee een bericht kan worden gemarkeerd als gelezen. Hiermee wordt de verwijderfunctionaliteit gedupliceerd als deze ook **`Message Options`** is ingeschakeld.
+   Als deze optie is ingeschakeld, wordt een `Delete` knop weergegeven waarmee een bericht kan worden gemarkeerd als gelezen. Hiermee wordt de verwijderfunctionaliteit gedupliceerd als deze ook **`Message Options`** is ingeschakeld.
 
 * **Berichtopties**
 
@@ -151,7 +167,7 @@ Nadat de overerving is geannuleerd, is het mogelijk om het configuratiepictogram
 
 * **Servicekiezer**
 
-   (*Vereist*) Plaats dit aan de waarde van het bezit **`serviceSelector.name`** van de Dienst [van de Verrichtingen van het Overseinen van](/help/communities/messaging.md#messaging-operations-service)Gemeenschappen AEM.
+   (*Vereist*) plaats dit aan de waarde van het bezit **`serviceSelector.name`** van de Dienst [van de Verrichtingen van het Overseinen van](/help/communities/messaging.md#messaging-operations-service)AEM Communities.
 
 #### Tabblad Weergave {#display-tab-1}
 

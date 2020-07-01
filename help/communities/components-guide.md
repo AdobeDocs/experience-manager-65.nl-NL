@@ -10,14 +10,17 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a777a3f1-b39f-4d90-b9b6-02d3e321a86f
 translation-type: tm+mt
-source-git-commit: e8d8bf89971d3d9d5ec150308dda247aa53c77bb
+source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
+workflow-type: tm+mt
+source-wordcount: '1200'
+ht-degree: 0%
 
 ---
 
 
-# Community Components Guide {#community-components-guide}
+# Community Components Guide  {#community-components-guide}
 
-De communautaire gids voor componenten is een interactief ontwikkelingsinstrument voor het [sociale-componentkader (SCF)](scf.md). Het verstrekt een lijst van beschikbare componenten van de Gemeenschappen AEM of de complexere eigenschappen die van veelvoudige componenten worden gebouwd.
+De communautaire gids voor componenten is een interactief ontwikkelingsinstrument voor het [sociale-componentkader (SCF)](scf.md). Het verstrekt een lijst van beschikbare AEM Communities componenten of de complexere eigenschappen die van veelvoudige componenten worden gebouwd.
 
 Samen met basisinformatie voor elke component, staat de gids voor het experimenteren met toe hoe de componenten SCF/de eigenschappen werken en hoe zij kunnen worden gevormd of worden aangepast.
 
@@ -33,10 +36,10 @@ De site Community Components is toegankelijk door naar
 
 De wisselwerking met de communautaire componenten is afhankelijk van:
 
-* De server (auteur of publicatie)
-* Of de bezoeker van de site zich al dan niet heeft aangemeld
-* Indien aangemeld, de aan het lid toegewezen rechten
-* Al dan niet standaardSRP, [JSRP](jsrp.md), in gebruik is
+* De server (auteur of publicatie).
+* Of de bezoeker van de site al dan niet is aangemeld.
+* Indien aangemeld, de aan het lid toegewezen rechten.
+* Of al dan niet standaardSRP, [JSRP](jsrp.md), in gebruik is.
 
 Als u de modus Bewerken bij de auteur wilt activeren, voegt u een `editor.html` of `cf#` als het eerste padsegment in na de naam van de server:
 
@@ -59,6 +62,7 @@ Als u de modus Bewerken bij de auteur wilt activeren, voegt u een `editor.html` 
 >Voor algemene ontwerpinformatie raadpleegt u de [handleiding voor het maken van pagina](../../help/sites-authoring/qg-page-authoring.md)&#39;s.
 >
 >Als u niet bekend bent met AEM, bekijkt u de documentatie over [basisverwerking](../../help/sites-authoring/basic-handling.md).
+
 
 ### Startpagina {#home-page}
 
@@ -128,7 +132,7 @@ Ga voor meer informatie naar [Clientlibs voor Community Components](clientlibs.m
 
 ## Imitatie {#impersonation}
 
-Voor de auteursinstantie, waar men vaak als beheerder of ontwikkelaar wordt aangemeld, om de component te ervaren die als een andere gebruiker wordt aangemeld, gebruik het tekstvakje links van de knoop van het **[!UICONTROL Vergrijzen]** om of in de gebruikersbenaming te typen of van de trekkrachtlijst te selecteren, en dan de knoop te klikken. Klik op Vorige versie om af te melden en de imitatie te beëindigen.
+Voor de auteurinstantie, waar men vaak als beheerder of ontwikkelaar wordt aangemeld, om de component te ervaren die als een andere gebruiker wordt aangemeld, gebruik het tekstvakje links van de **[!UICONTROL Impersonate]** knoop om of in de gebruikersbenaming te typen of van de trekkrachtlijst te selecteren, en dan de knoop te klikken. Klik op Vorige versie om af te melden en de imitatie te beëindigen.
 
 De publicatie-instantie hoeft zich niet voor te doen. U gebruikt gewoon de koppeling Aanmelden/Afmelden om verschillende gebruikers na te bootsen, zoals de [demogebruikers](tutorials.md#demo-users).
 
@@ -152,15 +156,15 @@ De component comments als voorbeeld gebruiken voor de auteur of de publicatie-in
 
 1. Selecteer het `jcr:content` knooppunt van de component
 
-   Bijvoorbeeld: `/content/community-components/en/comments/jcr:content`
+   Bijvoorbeeld, `/content/community-components/en/comments/jcr:content`
 
 1. Een eigenschap toevoegen
 
-   * **Naam**`scg:showIde`
-   * **Type**`String`
-   * **Waarde**`true`
+   * **Naam** `scg:showIde`
+   * **Type** `String`
+   * **Waarde** `true`
 
-1. Alles **[!UICONTROL opslaan selecteren]**
+1. Selecteer **[!UICONTROL Save All]**
 1. Laad de pagina Opmerkingen in de handleiding opnieuw
 
    [http://localhost:4503/content/community-components/en/comments.html](http://localhost:4503/content/community-components/en/comments.html)

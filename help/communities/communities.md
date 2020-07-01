@@ -10,28 +10,32 @@ topic-tags: developing
 content-type: reference
 discoiquuid: fbfe8097-3c3f-4a05-97ad-1ce526362a26
 translation-type: tm+mt
-source-git-commit: 5b8b1544645465d10e7c2018364b6a74f1ad9a8e
+source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
+workflow-type: tm+mt
+source-wordcount: '406'
+ht-degree: 1%
 
 ---
 
 
-# Ontwikkelingsgemeenschappen {#developing-communities}
+# Ontwikkelingsgemeenschappen  {#developing-communities}
 
 ## Overzicht {#overview}
 
-AEM Communities vereenvoudigt het maken en aanpassen van community-functies, zoals forums, gebruikersgroepen, blogs, Vragen en antwoorden, kalenders, opmerkingen, revisies, stemmen, beoordelingen en toewijzingen. Deze functies leiden ertoe dat door de gebruiker gegenereerde inhoud (UGC) wordt ingevoerd in de publicatieomgeving.
+AEM Communities vereenvoudigen het maken en aanpassen van community-functies, zoals forums, gebruikersgroepen, blogs, Vragen en antwoorden, kalenders, opmerkingen, revisies, stemmen, beoordelingen en toewijzingen. Deze functies leiden ertoe dat door de gebruiker gegenereerde inhoud (UGC) wordt ingevoerd in de publicatieomgeving.
 
 De stichting van een [communitysite](overview.md#communitiessites) is het [sociale raamwerk](scf.md) (SCF). Het creëren van een communautaire plaats begint met de selectie van een malplaatje [van de](sites-console.md) communautaire plaats dat uit [communautaire functies](functions.md)bestaat.
 
 Ga voor een overzicht en zelfstudies om aan de slag te gaan naar:
 
-* [Overzicht van AEM-gemeenschappen](overview.md)
-* [Aan de slag met AEM-gemeenschappen](getting-started.md)
-* [Aan de slag met AEM Communities for Enablement](getting-started-enablement.md)
+* [Overzicht AEM Communities](overview.md)
+* [Aan de slag met AEM Communities](getting-started.md)
+* [Aan de slag met AEM Communities voor Enablement](getting-started-enablement.md)
 
 >[!NOTE]
->
+> 
 >Het wordt ten zeerste aanbevolen de [nieuwste releases](deploy-communities.md#latest-releases)bij te houden.
+
 
 ## Aanbevolen implementaties {#recommended-deployments}
 
@@ -40,13 +44,13 @@ Ga voor een overzicht en zelfstudies om aan de slag te gaan naar:
 
 ## Framework sociale component {#social-component-framework}
 
-* [Kader](scf.md)voor sociale component: overzicht van framework en API&#39;s
-* [SCF-handgrepen Helpers](handlebars-helpers.md): standaardhelpers en hoe aangepaste helpers worden geschreven
-* [Aanpassing](client-customize.md)aan clientzijde: code aanpassen die in browser wordt uitgevoerd
-* [Aanpassing](server-customize.md)op de server: aanpassen van code die op de server wordt uitgevoerd
-* [Storage Resource Provider (SRP)](srp.md): overzicht van de opslag van inhoud in de gemeenschap
-* [Codeerrichtlijnen](code-guide.md): richtlijnen, tips en trucs
-* [Community Components guide](components-guide.md): instrument voor interactieve ontwikkeling
+* [Kader](scf.md)voor sociale component: overzicht van framework en API&#39;s.
+* [SCF-handgrepen Helpers](handlebars-helpers.md): standaardhelpers en hoe aangepaste helpers te schrijven.
+* [Aanpassing](client-customize.md)aan clientzijde: aanpassen van code die in browser wordt uitgevoerd.
+* [Aanpassing](server-customize.md)op de server: aanpassen van code die op de server wordt uitgevoerd.
+* [Storage Resource Provider (SRP)](srp.md): overzicht van de opslag van community-inhoud.
+* [Codeerrichtlijnen](code-guide.md): richtlijnen, tips en trucs.
+* [Community Components guide](components-guide.md): interactief ontwikkelingsinstrument.
 
 ## Componenten, functies en essentiële functies {#component-function-and-feature-essentials}
 

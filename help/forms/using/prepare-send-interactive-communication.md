@@ -8,7 +8,10 @@ topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 110c86ea-9bd8-4018-bfcc-ca33e6b3f3ba
 translation-type: tm+mt
-source-git-commit: 06335b9a85414b6b1141dd19c863dfaad0812503
+source-git-commit: 4c4a5a15e9cbb5cc22bc5999fb40f1d6db3bb091
+workflow-type: tm+mt
+source-wordcount: '1614'
+ht-degree: 0%
 
 ---
 
@@ -29,8 +32,8 @@ Terwijl het voorbereiden van de Interactieve Mededeling gebruikend de Agent UI, 
 
 ## Bereid Interactieve Communicatie gebruikend de Agent UI voor {#prepare-interactive-communication-using-the-agent-ui}
 
-1. Selecteer **[!UICONTROL Formulieren]** > **[!UICONTROL Formulieren en documenten]**.
-1. Selecteer de aangewezen Interactieve Communicatie en tik **[!UICONTROL Open Agent UI]**.
+1. Selecteer **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
+1. Selecteer de gewenste interactieve communicatie en tik op **[!UICONTROL Open Agent UI]**.
 
    >[!NOTE]
    >
@@ -54,7 +57,7 @@ Terwijl het voorbereiden van de Interactieve Mededeling gebruikend de Agent UI, 
 
 Beheer op het tabblad Inhoud de inhoud, zoals documentfragmenten en inhoudsvariabelen in de interactieve communicatie.
 
-1. Selecteer **[!UICONTROL Inhoud]**. Het tabblad Inhoud van de interactieve communicatie wordt weergegeven.
+1. Selecteer **[!UICONTROL Content]**. Het tabblad Inhoud van de interactieve communicatie wordt weergegeven.
 
    ![agentuicontenttab](assets/agentuicontenttab.png)
 
@@ -86,7 +89,7 @@ Beheer op het tabblad Inhoud de inhoud, zoals documentfragmenten en inhoudsvaria
 
 ### Bijlagen beheren {#manage-attachments}
 
-1. Selecteer **[!UICONTROL Bijlage]**. De agent UI toont de beschikbare gehechtheid zoals opstelling terwijl het creëren van de Interactieve Communicatie.
+1. Selecteer **[!UICONTROL Attachment]**. De agent UI toont de beschikbare gehechtheid zoals opstelling terwijl het creëren van de Interactieve Communicatie.
 
    U kunt verkiezen om een gehechtheid samen met de Interactieve Mededeling niet voor te leggen door het meningspictogram te tikken en u kunt het kruis in de gehechtheid tikken om het (als de agent wordt toegestaan om de gehechtheid te schrappen of te verbergen) van de Interactieve Mededeling te schrappen. Voor de bijlagen die verplicht zijn opgegeven tijdens het maken van de interactieve communicatie, zijn de pictogrammen Weergeven en Verwijderen uitgeschakeld.
 
@@ -101,7 +104,7 @@ Beheer op het tabblad Inhoud de inhoud, zoals documentfragmenten en inhoudsvaria
 1. Als de volgorde van de bijlagen niet is vergrendeld tijdens het maken van de interactieve communicatie, kunt u de bijlagen opnieuw ordenen door een bijlage te selecteren en op de pijl-omlaag en -omhoog te tikken.
 1. Met Webvoorvertoning en Afdrukvoorbeeld kunt u zien of de twee uitvoerbestanden aan uw eisen voldoen.
 
-   Als u de voorvertoningen bevredigend vindt, tikt u op **[!UICONTROL Verzenden]** om de interactieve communicatie naar een postproces te verzenden. Als u wijzigingen wilt aanbrengen, sluit u de voorvertoning af en gaat u terug naar de wijzigingen.
+   Als u de voorvertoningen bevredigend vindt, tikt u **[!UICONTROL Submit]** om de interactieve communicatie naar een postproces te verzenden. Als u wijzigingen wilt aanbrengen, sluit u de voorvertoning af en gaat u terug naar de wijzigingen.
 
 ## Tekst opmaken {#formattingtext}
 
@@ -167,3 +170,41 @@ De interface van de Agent heeft ingebouwde steun voor 210 speciale karakters geb
 * Opsommingstekens/nummering overslaan: Schakel deze optie in om opsommingstekens/nummering in het lijstdocumentfragment over te slaan.
 * Niet-gevulde waarden (info): Hiermee geeft u het aantal niet-gevulde variabelen in het documentfragment aan.
 
+## Interactieve communicatie opslaan als concept {#save-as-draft}
+
+U kunt de Agent UI gebruiken om één of meerdere concepten voor elke Interactieve Mededeling te bewaren en het ontwerp later terug te winnen om aan het verder te werken. U kunt voor elk concept een andere naam opgeven om het te identificeren.
+
+Adobe raadt u aan deze instructies op volgorde uit te voeren om een interactieve communicatie als concept op te slaan.
+
+### De functie Opslaan als concept inschakelen {#before-save-as-draft}
+
+De functie Opslaan als concept is niet standaard ingeschakeld. Voer de volgende stappen uit om de functie in te schakelen:
+
+1. Implementeer de [ccrDocumentInstance](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html) Service Provider Interface (SPI). SPI laat u toe om de ontwerp versie van de Interactieve Mededeling aan het gegevensbestand met een ontwerpidentiteitskaart als uniek herkenningsteken te bewaren.
+1. Go to `https://'[server]:[port]'/system/console/configMgr`.
+1. Tik op **[!UICONTROL Create Correspondence Configuration]**.
+1. Selecteer **[!UICONTROL Enable Save Using CCRDocumentInstanceService]** en tik op **[!UICONTROL Save]**.
+
+### Een interactieve communicatie opslaan als concept {#save-as-draft-agent-ui}
+
+Voer de volgende stappen uit om een Interactieve Mededeling als ontwerp te bewaren:
+
+1. Selecteer een interactieve communicatie in Forms Manager en tik op **[!UICONTROL Open Agent UI]**.
+
+1. Breng aangewezen veranderingen in de Agent UI aan en tik **[!UICONTROL Save as Draft]**.
+
+1. Geef de naam van het concept op in het **[!UICONTROL Name]** veld en tik op **[!UICONTROL Done]**.
+
+Als u de interactieve communicatie eenmaal als concept hebt opgeslagen, tikt u **[!UICONTROL Save Changes]** om eventuele verdere wijzigingen in het concept op te slaan.
+
+### Het concept van een interactieve communicatie ophalen {#retrieve-draft}
+
+Nadat u een interactieve communicatie als concept hebt opgeslagen, kunt u deze ophalen om er verder aan te werken. Haal de Interactieve Mededeling terug gebruikend:
+
+`https://server:port/aem/forms/createcorrespondence.hmtl?draftid=[draftid]`
+
+[Conceptid] verwijst naar de unieke id voor de conceptversie die wordt gegenereerd nadat een interactieve communicatie als concept is opgeslagen.
+
+>[!NOTE]
+>
+>Als u wijzigingen aanbrengt in de interactieve communicatie nadat u deze hebt opgeslagen als concept, kan de conceptversie niet worden geopend.

@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
 translation-type: tm+mt
-source-git-commit: 2d04b33258a3727a088461055649c28d57a271c5
+source-git-commit: 530b1c3c1922eb10622888804a603cc82b3eb3aa
 workflow-type: tm+mt
-source-wordcount: '1055'
+source-wordcount: '1148'
 ht-degree: 8%
 
 ---
@@ -67,7 +67,7 @@ Van om het even welke consoles wordt het huidige aantal punten in uw inbox getoo
 
 Uit-de-doos AEM komt vooraf geladen met vier taken die aan de groep van de beheerdergebruiker worden toegewezen.
 
-* [Analyse en doelgericht configureren](/help/sites-administering/opt-in.md)
+* [Analytics en doelen configureren](/help/sites-administering/opt-in.md)
 * [De AEM-beveiligingscontrolelijst toepassen](/help/sites-administering/security-checklist.md)
 * Verzamelde verzameling van verbruiksstatistieken inschakelen
 * [HTTPS configureren](/help/sites-administering/ssl-by-default.md)
@@ -137,22 +137,29 @@ Voor beide weergaven (Lijst en Kalender) kunt u instellingen definiëren:
 
 Met de optie Beheer beheren kunnen beheerders:
 
+* De kolommen van AEM Inbox aanpassen
+
 * Koptekst en logo aanpassen
 
 * De weergave van navigatiekoppelingen in koptekst bepalen
 
-De optie Beheer is alleen zichtbaar voor de leden van de groep met beheerders of workflowbeheerders.
+De optie Beheer is alleen zichtbaar voor de leden van de groep `administrators` `workflow-administrators` of groep.
 
-![beheer](assets/admin-control.png)
+* **Kolomaanpassing**: Pas AEM Inbox aan om de standaardtitel van een kolom te veranderen, de positie van een kolom te herschikken, en extra kolommen te tonen die op de gegevens van een werkschema worden gebaseerd.
+   * **Kolom** toevoegen: Selecteer een kolom die u wilt toevoegen in AEM Inbox.
+   * **Kolom** bewerken: Houd de muis boven de kolomtitel en tik op het pictogram ![Bewerken](assets/edit.svg) om een weergavenaam voor de kolom in te voeren.
+   * **Kolom** verwijderen: Tik op het pictogram ![Verwijderen](assets/delete_updated.svg) om de kolom uit AEM Inbox te verwijderen.
+   * **Kolom** verplaatsen: Sleep het ![verplaatsingspictogram](assets/move_updated.svg) om een kolom naar een nieuwe positie in AEM Inbox te verplaatsen.
+   ![beheer](assets/admin-control-column-customize.png)
 
 * **Aanpassing branding**
 
-   * **Koptekst aanpassen:** Geef de tekst op die in de koptekst moet worden weergegeven ter vervanging van de standaardtekst van **Adobe Experience Manager** .
+   * **Koptekst aanpassen:** Geef de tekst op die in de koptekst moet worden weergegeven om de standaardtekst voor de **Adobe Experience Manager** te vervangen.
 
    * **Logo aanpassen:** Geef de afbeelding op die in de koptekst moet worden weergegeven als logo. Upload een afbeelding in Digital Asset Management (DAM) en verwijs naar die afbeelding in het veld.
 
 * **Gebruikersnavigatie**
-   * **Navigatieopties verbergen:** Selecteer deze optie om de beschikbare navigatieopties in de koptekst te verbergen. De navigatieopties omvatten koppelingen naar andere oplossingen, de koppeling van de Hulp, en de auteursopties beschikbaar op het Tikken van het embleem of de tekst van de Manager van de Ervaring van Adobe.
+   * **Navigatieopties verbergen:** Selecteer deze optie om de beschikbare navigatieopties in de koptekst te verbergen. De navigatieopties omvatten verbindingen aan andere oplossingen, de verbinding van de Hulp, en de auteursopties beschikbaar op het Tikken van het embleem van de Adobe Experience Manager of tekst.
 * **Opslaan:** Tik op deze optie of klik op deze optie om de instellingen op te slaan.
 
 ## Actie ondernemen op een item {#taking-action-on-an-item}

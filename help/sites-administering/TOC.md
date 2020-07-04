@@ -2,9 +2,12 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: admin-user
-user-guide-title: AEM 6.5 Administering User Guide
+user-guide-title: AEM 6.5 Handboek voor beheer
 translation-type: tm+mt
-source-git-commit: e1c1850849b0715af8d865143991c6e937ec0d5f
+source-git-commit: 29f8e59e3fc9d3c089ee3b78c24638cd3cd2e96b
+workflow-type: tm+mt
+source-wordcount: '622'
+ht-degree: 6%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: e1c1850849b0715af8d865143991c6e937ec0d5f
    + [Synchronisatie van actieve kopie configureren](msm-sync.md)
    + [Actieve kopieën maken en synchroniseren](msm-livecopy.md)
    + [Conflicten MSM-rollout](msm-rollout-conflicts.md)
-   + [Aanbevolen MSM-procedures](msm-best-practices.md)
+   + [Beste praktijken MSM](msm-best-practices.md)
    + [Inhoud vertalen voor meertalige sites](translation.md)
    + [Vertaalprojecten beheren](tc-manage.md)
    + [Te vertalen inhoud identificeren](tc-rules.md)
@@ -61,15 +64,15 @@ source-git-commit: e1c1850849b0715af8d865143991c6e937ec0d5f
    + [Container en lay-outmodus voor lay-out configureren](configuring-responsive-layout.md)
    + [Editor](enable-classic-ui-editor.md)
    + [Toegang tot klassieke gebruikersinterface inschakelen](enable-classic-ui.md)
-   + [Beheerconsoles](enable-classic-ui-admin.md)
+   + [Admin Consoles](enable-classic-ui-admin.md)
 + Beveiliging {#security}
    + [Gebruikersbeheer en beveiliging](security.md)
    + [Beheer van gebruikers-, groep- en toegangsrechten](user-group-ac-admin.md)
    + [Beveiligingscontrolelijst](security-checklist.md)
    + [OWASP Top 10](owasp-top10.md)
    + [AEM wordt uitgevoerd in productiekaartmodus](production-ready.md)
-   + [Identiteitsbeheer](identity-management.md)
-   + [Ondersteuning voor verificatie en beheerconsole van Adobe IMS voor door AEM beheerde services](ims-config-and-admin-console.md)
+   + [Identity Management](identity-management.md)
+   + [Ondersteuning voor verificatie en Admin Console van Adobe IMS voor door AEM beheerde services](ims-config-and-admin-console.md)
    + [Een gesloten gebruikersgroep maken](cug.md)
    + [Het verminderen van rangschikkingskwesties in AEM](mitigating-serialization-issues.md)
    + [Gebruikerssynchronisatie](sync.md)
@@ -113,20 +116,20 @@ source-git-commit: e1c1850849b0715af8d865143991c6e937ec0d5f
    + [Integreren met Adobe Analytics](adobeanalytics.md)
    + [Verbinding maken met Adobe Analytics en frameworks maken](adobeanalytics-connect.md)
    + [Koppelingen bijhouden configureren voor Adobe Analytics](adobeanalytics-link.md)
-   + [Componentgegevens toewijzen met de eigenschappen van Adobe Analytics](adobeanalytics-mapping.md)
+   + [Componentgegevens toewijzen aan Adobe Analytics-eigenschappen](adobeanalytics-mapping.md)
    + [Video bijhouden configureren voor Adobe Analytics](adobeanalytics-video.md)
-   + [HTTP2 Veelgestelde vragen over inhoud](scene7-http2faq.md)
-   + [Problemen met de integratie van Adobe Campagne oplossen](troubleshooting-campaignintegration.md)
+   + [Veelgestelde vragen over HTTP2-levering van content](scene7-http2faq.md)
+   + [Problemen met Adobe Campaign-integratie oplossen](troubleshooting-campaignintegration.md)
    + [SharePoint-connectorlicenties, copyrightmeldingen en Disclaimers](sharepoint-connector-licenses.md)
    + [SharePoint-connector](sharepoint-connector.md)
-   + [Veelgestelde vragen over einde levensduur van DHTML Viewer](dhtml-viewer-endoflifefaqs.md)
+   + [Veelgestelde vragen over de gebruiksduur van de DHTML-viewer](dhtml-viewer-endoflifefaqs.md)
    + [Integreren met Adobe Campaign Classic](campaignonpremise.md)
    + [Verwante artikelen van de Gemeenschap](related-community-articles.md)
    + [Integreren met Adobe Campaign Standard](campaignstandard.md)
-   + [Eindbericht voor Flash-viewers](flash-viewers-eol.md)
+   + [Kennisgeving over de gebruiksduur van Flash-viewers](flash-viewers-eol.md)
    + [Productfeed](product-feed.md)
    + [Integreren met dynamisch tagbeheer van Adobe](dtm.md)
-   + [Optie voor Adobe Analytics en Adobe Target](opt-in.md)
+   + [Opteren in Adobe Analytics en Adobe Target](opt-in.md)
    + [AEM-portfolio&#39;s en -portfolio&#39;s](aem-as-portal.md)
    + [Integreren met Dynamic Media Classic (Scene7)](scene7.md)
    + [AEM Livefyre Recipes](aem-livefyre-recipes.md)
@@ -134,31 +137,30 @@ source-git-commit: e1c1850849b0715af8d865143991c6e937ec0d5f
    + [Integreren met BrightStor Content Optimizer](brightedge.md)
    + [Aanbevolen procedures voor e-mailsjablonen](best-practices-for-email-templates.md)
    + [Catalogusproducent](catalog-producer.md)
-   + [Integratie van AEM-middelen met Experience Cloud en Creative Cloud configureren](configure-assets-cc-integration.md)
+   + [Integratie van AEM Assets met Experience Cloud en Creative Cloud configureren](configure-assets-cc-integration.md)
    + [Integreren met Silverpop Engage](silverpop.md)
    + [Integreren met Adobe Campaign](campaign.md)
    + [Integreren met ExactTarget](exacttarget.md)
-   + [Analyse met externe providers](external-providers.md)
-   + [Integreren met de Adobe Marketing Cloud](marketing-cloud.md)
-   + [De integratie handmatig configureren met Adobe Target](target-configuring.md)
+   + [Analytics met externe providers](external-providers.md)
+   + [Integratie met de Adobe Marketing Cloud](marketing-cloud.md)
+   + [De integratie met Adobe Target handmatig configureren](target-configuring.md)
    + [Vereisten voor integratie met Adobe Target](target-requirements.md)
-   + [Integratie met Adobe Target met Adobe I/O](integration-ims-adobe-io.md)
+   + [Integratie met Adobe Target met behulp van Adobe I/O](integration-ims-adobe-io.md)
    + [Adobe-classificaties](adobeanalytics-classifications.md)
    + [Integreren met Adobe Search&amp;Promote](search-and-promote.md)
    + [Oplossingsintegratie](integration.md)
-   + [Fragmenten voor ervaring exporteren naar Adobe-doel](experience-fragments-target.md)
+   + [Exporteren van ervaringsfragmenten naar Adobe Target](experience-fragments-target.md)
    + [Aanbevolen procedures voor e-mailsjablonen](best-practices-for-email-templates.md)
    + [Integreren met Livefyre](livefyre.md)
-+ Aanbevolen werkwijzen {#bestpractices}
-   + [Aanbevolen werkwijzen](administer-best-practices.md)
++ Best practices voor {#bestpractices}
+   + [Best practices voor](administer-best-practices.md)
    + [Aanbevolen werkwijzen voor vertaling](tc-bp.md)
-   + [Aanbevolen MSM-procedures](msm-best-practices.md)
-   + [AEM-sites - GDPR-gereedheid](gdpr-compliance-sites.md)
+   + [Beste praktijken MSM](msm-best-practices.md)
+   + [AEM Sites - GDPR-gereedheid](gdpr-compliance-sites.md)
    + [Behandeling van GDPR-verzoeken voor de AEM Foundation](handling-gdpr-requests-for-aem-platform.md)
    + [AEM-handel - GDPR-gereedheid](gdpr-compliance-commerce.md)
 + Inhoudsbeheer {#contentmanagement}
    + [Werken met pakketten](package-manager.md)
-   + [Offloader middelenwerkstroom](workflow-offloader.md)
    + [Tags beheren](tags.md)
    + [De pagina-exportfunctie](page-exporter.md)
    + [Klassieke UI-tagconsole](classic-console.md)

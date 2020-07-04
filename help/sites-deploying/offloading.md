@@ -10,9 +10,9 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: 370151df-3b8e-41aa-b586-5c21ecb55ffe
 translation-type: tm+mt
-source-git-commit: c3e4b68c10496cac8f75d009fdd9ebd777826850
+source-git-commit: 29f8e59e3fc9d3c089ee3b78c24638cd3cd2e96b
 workflow-type: tm+mt
-source-wordcount: '2747'
+source-wordcount: '2403'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ Voor elke cluster, ziet u een lijst van clusterleden die op de orde wijst waarin
 
 Voor elke instantie in de cluster, kunt u verscheidene op topologie betrekking hebbende eigenschappen zien:
 
-* Een lijst met onderwerpen toestaan voor de professionele gebruiker van de instantie.
+* Een lijst van gewenste personen van onderwerpen voor de baanconsument van de instantie.
 * De eindpunten die voor het verbinden met de topologie worden blootgesteld.
 * De taakonderwerpen waarvoor de instantie is geregistreerd voor offloaden.
 * De taakonderwerpen die de instantie verwerkt.
@@ -108,10 +108,10 @@ Gebruik de volgende procedure om de pagina van het Beheer van de Topologie van d
 
 De Apache Sling Resource-Based Dienst van de Ontdekking stelt op elke instantie in werking om te controleren hoe de instanties van Experience Manager met een topologie interactie aangaan.
 
-De dienst van de Ontdekking verzendt periodieke POST- verzoeken (hartslagen) naar de diensten van de Verbinding van de Topologie om verbindingen met de topologie te vestigen en te handhaven. De dienst van de Verbinding van de Topologie handhaaft een toegestane lijst van IP adressen of gastheernamen die zich bij de topologie mogen aansluiten:
+De dienst van de Ontdekking verzendt periodieke POST- verzoeken (hartslagen) naar de diensten van de Verbinding van de Topologie om verbindingen met de topologie te vestigen en te handhaven. De dienst van de Verbinding van de Topologie handhaaft een lijst van gewenste personen van IP adressen of gastheernamen die worden toegestaan om zich bij de topologie aan te sluiten:
 
 * Om zich bij een instantie aan een topologie aan te sluiten, specificeer URL van de dienst van de Verbinding van de Topologie van het wortellid.
-* Om een instantie toe te laten om zich bij een topologie aan te sluiten, voeg de instantie aan toe staat lijst van de dienst van de Verbinding van de Topologie van het wortellid toe.
+* Om een instantie toe te laten om zich bij een topologie aan te sluiten, voeg de instantie aan de lijst van gewenste personen van de dienst van de Verbinding van de Topologie van het wortellid toe.
 
 Gebruik de console van het Web of een sling:knoop OsgiConfig om de volgende eigenschappen van de dienst te vormen org.apache.sling.discovery.impt.Config:
 
@@ -148,7 +148,7 @@ Gebruik de console van het Web of een sling:knoop OsgiConfig om de volgende eige
    <td>http://localhost:4502/libs/sling/topology/connector</td>
   </tr>
   <tr>
-   <td>Lijst toestaan voor topologieconnector</td>
+   <td>lijst van gewenste personen voor topologieconnector</td>
    <td>topologieConnectorWhitelist</td>
    <td>De lijst van IP adressen of gastheernamen die de lokale dienst van de Verbinding van de Topologie in de topologie toestaat. </td>
    <td><p>localhost</p> <p>127.0.0.1</p> </td>
@@ -169,12 +169,12 @@ Gebruik de volgende procedure om een instantie CQ met het wortellid van een topo
 1. Klik op Discovery Service configureren.
 1. Voeg een punt aan het bezit van de Verbinding URLs van de Topologie toe, en specificeer URL van de dienst van de Verbinding van de Topologie van het lid van de worteltopologie. De URL heeft de notatie https://rootservername:4502/libs/sling/topology/connector.
 
-Voer de volgende procedure op het wortellid van de topologie uit. De procedure voegt de namen van de andere topologieleden aan zijn Dienst van de Ontdekking toe staat lijst toe.
+Voer de volgende procedure op het wortellid van de topologie uit. De procedure voegt de namen van de andere topologieleden aan zijn lijst van gewenste personen van de Dienst van de Ontdekking toe.
 
 1. Open de webconsole in uw browser. ([http://localhost:4502/system/console](http://localhost:4502/system/console))
 1. Klik op Hoofd > Topologiebeheer.
 1. Klik op Discovery Service configureren.
-1. Voor elk lid van de topologie, voeg een punt aan de Schakelaar van de Topologie toe staat lijsteigenschap toe, en specificeer de gastheernaam of IP adres van het topologielid.
+1. Voor elk lid van de topologie, voeg een punt aan het bezit van de lijst van gewenste personen van de Verbinding van de Topologie toe, en specificeer de gastheernaam of IP adres van het topologielid.
 
 ## Het vormen onderwerpconsumptie {#configuring-topic-consumption}
 
@@ -210,22 +210,25 @@ Verschillende JobConsumer-implementaties worden geïnstalleerd met Experience Ma
 |---|---|---|
 | / | org.apache.sling.event.impl.jobs.deprecated.EventAdminBridge | Geïnstalleerd met Apache Sling. Verwerkt banen die OSGi gebeurtenisadmin, voor achterwaartse verenigbaarheid produceert. |
 | com/day/cq/replication/job/&amp;ast; | com.day.cq.replication.impl.AgentManagerImpl | Een replicatieagent die taakladingen herhaalt. |
-| com/adobe/granite/workflow/offloading | com.adobe.granite.workflow.core.offloading.WorkflowOffloadingJobConsumer | Verwerkt taken die door de workflow van DAM Update Asset Offloader worden gegenereerd. |
+
+<!--
+| com/adobe/granite/workflow/offloading |com.adobe.granite.workflow.core.offloading.WorkflowOffloadingJobConsumer |Processes jobs that the DAM Update Asset Offloader workflow generates. |
+-->
 
 ### Onderwerpen voor een instantie uitschakelen en inschakelen {#disabling-and-enabling-topics-for-an-instance}
 
-De service Apache Sling Job Consumer Manager biedt een onderwerp waarin lijst- en bloklijsteigenschappen zijn toegestaan. Vorm deze eigenschappen om de verwerking van specifieke onderwerpen op een instantie van Experience Manager toe te laten of onbruikbaar te maken.
+De Apache Sling de dienst van de Consumentenmanager van de Baan verstrekt onderwerp lijst van gewenste personen en lijst van afgewezen personen eigenschappen. Vorm deze eigenschappen om de verwerking van specifieke onderwerpen op een instantie van Experience Manager toe te laten of onbruikbaar te maken.
 
 **Opmerking:** Als de instantie tot een topologie behoort, kunt u het Offloaden Browser op om het even welke computer in de topologie ook gebruiken om onderwerpen toe te laten of onbruikbaar te maken.
 
-De logica die tot de lijst van toegelaten onderwerpen leidt staat eerst alle onderwerpen toe die in toestaan lijst zijn, en verwijdert dan onderwerpen die op de bloklijst zijn. Standaard zijn alle onderwerpen ingeschakeld (de waarde in de lijst met toegestane onderwerpen is `*`) en zijn geen onderwerpen uitgeschakeld (de lijst met blokken heeft geen waarde).
+De logica die tot de lijst van toegelaten onderwerpen leidt staat eerst alle onderwerpen toe die in de lijst van gewenste personen zijn, en verwijdert dan onderwerpen die op de lijst van afgewezen personen zijn. Door gebrek, worden alle onderwerpen toegelaten (de waarde van de lijst van gewenste personen is `*`) en geen onderwerpen zijn gehandicapt (de lijst van afgewezen personen heeft geen waarde).
 
 Gebruik de Console of een `sling:OsgiConfig` knoop van het Web om de volgende eigenschappen te vormen. Voor `sling:OsgiConfig` knooppunten is org.apache.sling.event.impl.jobs.JobConsumerManager de PID van de service Job Consumer Manager.
 
 | Eigenschapnaam in webconsole | OSGi-id | Beschrijving |
 |---|---|---|
-| Lijst met toegestane onderwerpen | job.consumermanager.whitelist | Een lijst met onderwerpen die de lokale dienst JobManager verwerkt. De standaardwaarde van &amp;ast; veroorzaakt alle onderwerpen om naar de geregistreerde dienst te worden verzonden TopicConsumer. |
-| Lijst met onderwerpblokken | job.consumermanager.blacklist | Een lijst met onderwerpen die de lokale JobManager-service niet verwerkt. |
+| Topic lijst van gewenste personen | job.consumermanager.whitelist | Een lijst met onderwerpen die de lokale dienst JobManager verwerkt. De standaardwaarde van &amp;ast; veroorzaakt alle onderwerpen om naar de geregistreerde dienst te worden verzonden TopicConsumer. |
+| Topic lijst van afgewezen personen | job.consumermanager.blacklist | Een lijst met onderwerpen die de lokale JobManager-service niet verwerkt. |
 
 ## Replication-agents voor offloaden maken {#creating-replication-agents-for-offloading}
 
@@ -316,35 +319,37 @@ Verkrijg identiteitskaart van het Verkopen van een instantie van Experience Mana
 * Open de Console van het Web en, in de het Verdelen Montages, vind de waarde van het het Verdelen bezit van identiteitskaart ([http://localhost:4502/system/console/status-slingsettings](http://localhost:4502/system/console/status-slingsettings)). Deze methode is nuttig als de instantie nog geen deel van de topologie uitmaakt.
 * Gebruik browser van de Topologie als de instantie reeds deel van de topologie uitmaakt.
 
-## De verwerking van DAM-activa verschuiven {#offloading-the-processing-of-dam-assets}
+<!--
+## Offloading the Processing of DAM Assets {#offloading-the-processing-of-dam-assets}
 
-Vorm de instanties van een topologie zodat de specifieke instanties de achtergrondverwerking van activa uitvoeren die in DAM worden toegevoegd of bijgewerkt.
+Configure the instances of a topology so that specific instances perform the background processing of assets that are added or updated in DAM.
 
-Standaard voert Experience Manager de [!UICONTROL DAM Update Asset] workflow uit wanneer een DAM-element wordt gewijzigd of een DAM-element wordt toegevoegd. Wijzig het standaardgedrag zodat Experience Manager de [!UICONTROL DAM Update Asset Offloader] workflow uitvoert. Deze workflow genereert een JobManager-taak met een onderwerp `com/adobe/granite/workflow/offloading`. Dan, vorm de topologie zodat de baan aan een specifieke worker wordt geoffload.
+By default, Experience Manager executes the [!UICONTROL DAM Update Asset] workflow when a DAM asset changes or one is added to DAM. Change the default behavior so that Experience Manager instead executes the [!UICONTROL DAM Update Asset Offloader] workflow. This workflow generates a JobManager job that has a topic of `com/adobe/granite/workflow/offloading`. Then, configure the topology so that the job is offloaded to a dedicated worker.
 
 >[!CAUTION]
 >
->Er mag geen tijdelijke workflow worden gebruikt bij het offloaden van de workflow. De [!UICONTROL DAM Update Asset] workflow mag bijvoorbeeld niet van voorbijgaande aard zijn wanneer deze wordt gebruikt voor het offloaden van elementen. Zie [Tijdelijke workflows](/help/assets/performance-tuning-guidelines.md#workflows)voor informatie over het instellen/ongedaan maken van de overgangsmarkering voor een workflow.
+>No workflow should be transient when used with workflow offloading. For example, the [!UICONTROL DAM Update Asset] workflow must not be transient when used for asset offloading. To set/unset the transient flag on a workflow, see [Transient Workflows](/help/assets/performance-tuning-guidelines.md#workflows).
 
-De volgende procedure veronderstelt de volgende kenmerken voor de het ontladen topologie:
+The following procedure assumes the following characteristics for the offloading topology:
 
-* Een of meer Experience Manager-instanties zijn ontwerpinstanties waarmee gebruikers werken bij het toevoegen of bijwerken van DAM-elementen.
-* Gebruikers kunnen niet rechtstreeks communiceren met een of meer Experience Manager-instanties die de DAM-middelen verwerken. Deze instanties zijn gewijd aan de achtergrondverwerking van DAM-middelen.
+* One or more Experience Manager instance are authoring instances that users interact with for adding or updating DAM assets.
+* Users to do not directly interact with one or more Experience Manager instances that process the DAM assets. These instances are dedicated to the background processing of DAM assets.
 
-1. Voor elke instantie van Experience Manager, vorm de Dienst van de Ontdekking zodat het aan de schakelaar van de wortelTopografie richt. (Zie [het Vormen Lidmaatschap](#title4)van Topologie.)
-1. Vorm de schakelaar van de wortelTopografie zodat de verbindende instanties op toestaan lijst zijn.
-1. Open de Offloading Browser en maak het `com/adobe/granite/workflow/offloading` onderwerp op de instanties onbruikbaar waarmee de gebruikers om activa te uploaden of te veranderen DAM met elkaar in wisselwerking staan.
+1. On each Experience Manager instance, configure the Discovery Service so that it points to the root Topography Connector. (See [Configuring Topology Membership](#title4).)
+1. Configure the root Topography Connector so that the connecting instances are on the allow list.
+1. Open Offloading Browser and disable the `com/adobe/granite/workflow/offloading` topic on the instances with which users interact to upload or change DAM assets.
 
    ![chlimage_1-116](assets/chlimage_1-116.png)
 
-1. Bij elke instantie waarmee gebruikers communiceren om DAM-elementen te uploaden of te wijzigen, configureert u de draagkrachtstarters voor de workflow zo dat deze de [!UICONTROL DAM Update Asset Offloading] workflow gebruiken:
+1. On each instance that users interact with to upload or change DAM assets, configure workflow launchers to use the [!UICONTROL DAM Update Asset Offloading] workflow:
 
-   1. Open de Workflowconsole.
-   1. Klik op het tabblad Launcher.
-   1. Zoek de twee opstartconfiguraties die de [!UICONTROL DAM Update Asset] workflow uitvoeren. Één type van de de gebeurtenisgebeurtenis van de lanceringsconfiguratie is Gemaakt Knoop, en het andere type is Gewijzigde Knoop.
-   1. Wijzig beide gebeurtenistypen, zodat deze de [!UICONTROL DAM Update Asset Offloading] werkstroom uitvoeren. (Zie Workflows [starten wanneer knooppunten worden gewijzigd](/help/sites-administering/workflows-starting.md)voor informatie over startconfiguraties.)
+    1. Open the Workflow console.
+    1. Click the Launcher tab.
+    1. Locate the two Launcher configurations that execute the [!UICONTROL DAM Update Asset] workflow. One launcher configuration event type is Node Created, and the other type is Node Modified.
+    1. Change both event types so that they execute the [!UICONTROL DAM Update Asset Offloading] workflow. (For information about launcher configurations, see [Starting Workflows When Nodes Change](/help/sites-administering/workflows-starting.md).)
 
-1. Schakel in de gevallen waarin de achtergrondverwerking van DAM-elementen wordt uitgevoerd de werkstroomstartprogramma&#39;s uit die de [!UICONTROL DAM Update Asset] werkstroom uitvoeren.
+1. On the instances that perform the background processing of DAM assets, disable the workflow launchers that execute the [!UICONTROL DAM Update Asset] workflow.
+-->
 
 ## Meer informatie {#further-reading}
 

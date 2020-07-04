@@ -3,9 +3,9 @@ title: Aanbevolen procedures voor het vertalen van middelen
 description: Aanbevolen procedures voor efficiënt beheer van middelen om verschillende vertaalde versies te synchroniseren en vertaalworkflows te stroomlijnen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 29f8e59e3fc9d3c089ee3b78c24638cd3cd2e96b
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '412'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Aanbevolen procedures voor het vertalen van middelen {#best-practices-for-translating-assets-efficiently}
 
-Adobe Experience Manager-middelen ondersteunen meertalige workflows om binaire gegevens, metagegevens en tags voor digitale middelen naar meerdere landinstellingen te vertalen en de vertaalde middelen te beheren. Zie [Meertalige elementen](multilingual-assets.md)voor meer informatie.
+De Middelen van de Adobe Experience Manager steunen meertalige werkschema&#39;s om binaire getallen, meta-gegevens, en markeringen voor digitale activa in veelvoudige scènes te vertalen en de vertaalde activa te beheren. Zie [Meertalige elementen](multilingual-assets.md)voor meer informatie.
 
 Voor efficiënt beheer van middelen om ervoor te zorgen dat verschillende vertaalde versies gesynchroniseerd blijven, creeer [taalexemplaren](preparing-assets-for-translation.md) van activa alvorens vertaalwerkschema&#39;s in werking te stellen.
 
@@ -32,13 +32,15 @@ U kunt ook enkele configuratiewijzigingen aanbrengen in een aantal workflows en 
    * [Bestandsgegevensopslag instellen](/help/sites-deploying/data-store-config.md)
    * [Amazon S3 Data Store instellen](/help/sites-deploying/data-store-config.md)
 
-1. Schakel de [DAM MetaData Write-back](/help/sites-administering/workflow-offloader.md#disable-offloading) workflow uit.
+<!--
+1. Disable the [DAM MetaData Write-back](/help/sites-administering/workflow-offloader.md#disable-offloading) workflow.
 
-   Zoals de naam al aangeeft, worden de metagegevens in de [!UICONTROL DAM Metadata Writeback] workflow opnieuw genoteerd naar het binaire bestand. Omdat de metagegevens na de vertaling veranderen, wordt bij het terugschrijven naar het binaire bestand een andere binaire waarde voor een taalkopie gegenereerd.
+   As the name suggests, the [!UICONTROL DAM Metadata Writeback] workflow rewrites the metadata to the binary file. Because the metadata changes after translation, writing it back to the binary file generates a different binary for a language copy.
 
    >[!NOTE]
    >
-   >Als u de [!UICONTROL DAM MetaData Writeback] workflow uitschakelt, wordt het wegschrijven van XMP-metagegevens naar binaire bestanden met elementen uitgeschakeld. Daarom worden toekomstige wijzigingen in metagegevens niet meer opgeslagen in de elementen. Evalueer de gevolgen voordat u deze workflow uitschakelt.
+   >Disabling the [!UICONTROL DAM MetaData Writeback] workflow turns off XMP metadata write-back on asset binaries. Consequently, future metadata changes are no longer be saved within the assets. Evaluate the consequences before disabling this workflow.
+-->
 
 1. Schakel de [!UICONTROL Set last modified date] workflow in.
 

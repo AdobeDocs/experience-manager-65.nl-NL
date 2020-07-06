@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: edc3043c-7ec4-4e4a-b008-95f1784f012e
 translation-type: tm+mt
-source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
+source-git-commit: 29f150215052d61c1e20d25b0c095ea6582e26f7
+workflow-type: tm+mt
+source-wordcount: '728'
+ht-degree: 0%
 
 ---
 
@@ -54,7 +57,7 @@ Voor betere meertalige ondersteuning is het nodig de tekenset UTF8 te gebruiken.
 
 Wijzig MySQL om UTF8 in te stellen als tekenset:
 
-* mysql> SET NAMES &#39;utf8&#39;;
+* mysql > SET NAMES &#39;utf8&#39;;
 
 Wijzig de MySQL-database in de standaardwaarde voor UTF8:
 
@@ -121,7 +124,7 @@ Het SQL-script is afkomstig uit de AEM-opslagplaats:
 1. Selecteer de map /libs/social/config/datastore/dsrp/schema
 1. Downloaden `init-schema.sql`
 
-![chlimage_1-107](assets/chlimage_1-107.png)
+   ![chlimage_1-107](assets/chlimage_1-107.png)
 
 Eén methode voor het downloaden van het schema is:
 
@@ -167,36 +170,35 @@ Alle publicatie- en auteur-AEM-instanties moeten verwijzen naar dezelfde MySQL-s
 
 Wanneer MySQL op een server verschillend van AEM loopt, moet de server hostname in plaats van &quot;localhost&quot;in de schakelaar worden gespecificeerd JDBC.
 
-* Op elke auteur en publiceer AEM-instantie
-* Aangemeld met beheerdersrechten
-* De [webconsole openen](../../help/sites-deploying/configuring-osgi.md)
+* Op elke auteur en publiceer AEM-instantie.
+* Aangemeld met beheerdersrechten.
+* Open de [webconsole](../../help/sites-deploying/configuring-osgi.md).
 
    * Bijvoorbeeld: [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
 
 * Zoek de `Day Commons JDBC Connections Pool`
-* Selecteer het `+` pictogram om een nieuwe verbindingsconfiguratie tot stand te brengen
+* Selecteer het `+` pictogram om een nieuwe verbindingsconfiguratie tot stand te brengen.
 
-![chlimage_1-111](assets/chlimage_1-111.png)
+   ![chlimage_1-111](assets/chlimage_1-111.png)
 
 * Voer de volgende waarden in:
 
-   * **[!UICONTROL JDBC-stuurprogrammaklasse]**: `com.mysql.jdbc.Driver`
-   * **[!UICONTROL URI]** JDBC-verbinding: `jdbc:mysql://localhost:3306/communities?characterEncoding=UTF-8`
+   * **[!UICONTROL JDBC driver class]**: `com.mysql.jdbc.Driver`
+   * **[!UICONTROL JDBC connection URI]**: `jdbc:mysql://localhost:3306/communities?characterEncoding=UTF-8`
 
-      Geef server op in plaats van localhost als MySQL-server niet hetzelfde is als &#39;deze&#39; AEM-server
+      Geef server op in plaats van localhost als MySQL-server niet hetzelfde is als &#39;deze&#39; AEM- *servergemeenschappen* de standaarddatabasenaam (schema) is.
 
-      *gemeenschappen* is de standaardgegevensbestand (schema) naam
+   * **[!UICONTROL Username]**: `root`
 
-   * **[!UICONTROL Gebruikersnaam]**: `root`
+      Of ga gevormde Gebruikersnaam voor de server MySQL in, als niet &quot;wortel&quot;.
 
-      Of ga gevormde Gebruikersnaam voor de server MySQL in, als niet &quot;wortel&quot;
-
-   * **[!UICONTROL Wachtwoord]**:
+   * **[!UICONTROL Password]**:
 
       Wis dit gebied als geen wachtwoord voor MySQL wordt geplaatst,
 
-      else ga het gevormde wachtwoord voor de Gebruikersnaam MySQL in
-   * **[!UICONTROL Naam]** gegevensbron: naam ingevoerd voor de verbinding [](#new-connection-settings)MySQL, bijvoorbeeld &quot;gemeenschappen&quot;
+      anders ga het gevormde wachtwoord voor de Gebruikersnaam MySQL in.
 
-* Selecteer **[!UICONTROL Opslaan]**
+   * **[!UICONTROL Datasource name]**: naam die is ingevoerd voor de [MySQL-verbinding](#new-connection-settings), bijvoorbeeld &#39;community&#39;.
+
+* Selecteer **[!UICONTROL Save]**
 

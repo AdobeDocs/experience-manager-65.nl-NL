@@ -10,9 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 translation-type: tm+mt
-source-git-commit: 2b04724138f28cd7f357d155b88daf964632f3bc
+source-git-commit: d0b333ffa6cad4841e70e652328e92554fb2a7a1
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '598'
 ht-degree: 2%
 
 ---
@@ -32,13 +32,17 @@ De eerste stap bestaat uit het toevoegen van een eigenschap van het type resourc
 
 CRXDE Lite gebruiken:
 
-<!--Resolve steps below-->
-    Naam: ` sling:resourceSuperType&#39;
-    Type: &quot;String&quot;
-    Waarde: &quot;foundation/components/page&quot;
+1. Selecteer knooppunt `/apps/an-scf-sandbox/components/playpage`.
+1. Voer op het tabblad Eigenschappen een nieuwe eigenschap in met de volgende waarden:
 
-1. Klik op het groene **[!UICONTROL[+]Add]**
-1. Klik op **[!UICONTROL Save All]**
+   Naam: `sling:resourceSuperType`
+
+   Type: `String`
+
+   Waarde: `foundation/components/page`
+
+1. Klik op de groene **[!UICONTROL +Add]** knop.
+1. Klik op **[!UICONTROL Save All]**.
 
    ![chlimage_1-231](assets/chlimage_1-231.png)
 
@@ -89,12 +93,12 @@ CRXDE Lite gebruiken:
 
    Aan opstelling voor creatie, bedekking `body.jsp` met een lokaal manuscript en omvat een paragraafsysteem (parsys) in het lichaam:
 
-   1. Ga naar `/apps/an-scf-sandbox/components`
-   1. Selecteer het `playpage`knooppunt
+   1. Ga naar `/apps/an-scf-sandbox/components`.
+   1. Select the `playpage` node.
    1. Klik met de rechtermuisknop en selecteer `Create > Create File...`
 
       * Naam: **body.jsp**
-   1. Klik op **[!UICONTROL Save All]**
+   1. Klik op **[!UICONTROL Save All]**.
    Open `/apps/an-scf-sandbox/components/playpage/body.jsp` en plak in de volgende tekst:
 
    ```xml
@@ -113,7 +117,7 @@ CRXDE Lite gebruiken:
    </body>
    ```
 
-1. Klik op **[!UICONTROL Save All]**
+1. Klik op **[!UICONTROL Save All]**.
 
 **De pagina in een browser weergeven in de bewerkingsmodus:**
 

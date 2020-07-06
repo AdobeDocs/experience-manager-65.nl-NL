@@ -10,12 +10,15 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 translation-type: tm+mt
-source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
+source-git-commit: 2b04724138f28cd7f357d155b88daf964632f3bc
+workflow-type: tm+mt
+source-wordcount: '592'
+ht-degree: 2%
 
 ---
 
 
-# Sandbox-toepassing ontwikkelen {#develop-sandbox-application}
+# Sandbox-toepassing ontwikkelen  {#develop-sandbox-application}
 
 In deze sectie, nu het malplaatje in de [aanvankelijke toepassingssectie](initial-app.md) , en de aanvankelijke pagina&#39;s is opstelling die in de [aanvankelijke inhoudsectie](initial-content.md) worden gevestigd, kan de toepassing worden ontwikkeld gebruikend stichtingsmanuscripten met inbegrip van de capaciteit om creatie met de componenten van de Gemeenschappen toe te laten. Aan het einde van deze sectie is de website functioneel.
 
@@ -34,53 +37,53 @@ CRXDE Lite gebruiken:
     Type: &quot;String&quot;
     Waarde: &quot;foundation/components/page&quot;
 
-1. Klik op groen **[!UICONTROL [+]Toevoegen]**
-1. Klik op Alles **[!UICONTROL opslaan]**
+1. Klik op het groene **[!UICONTROL[+]Add]**
+1. Klik op **[!UICONTROL Save All]**
 
-![chlimage_1-231](assets/chlimage_1-231.png)
+   ![chlimage_1-231](assets/chlimage_1-231.png)
 
 ### Scripts voor hoofd en lichaam {#head-and-body-scripts}
 
 1. Navigeer in het deelvenster **CRXDE Lite** -verkenner naar het bestand `/apps/an-scf-sandbox/components/playpage` en dubbelklik erop `playpage.jsp` om het te openen in het bewerkingsvenster.
 
-#### /apps/an-scf-sandbox/components/playpage/playpage.jsp {#apps-an-scf-sandbox-components-playpage-playpage-jsp}
+   `/apps/an-scf-sandbox/components/playpage/playpage.jsp`
 
-```xml
-<%--
-
-  An SCF Sandbox Play Component component.
-
-  This is the component which renders content for An SCF Sandbox page.
-
---%><%
-%><%@include file="/libs/foundation/global.jsp"%><%
-%><%@page session="false" %><%
-%><%
- // TODO add your code here
-%>
-```
+   ```xml
+   <%--
+   
+     An SCF Sandbox Play Component component.
+   
+     This is the component which renders content for An SCF Sandbox page.
+   
+   --%><%
+   %><%@include file="/libs/foundation/global.jsp"%><%
+   %><%@page session="false" %><%
+   %><%
+    // TODO add your code here
+   %>
+   ```
 
 1. Als u weet dat er scripttags voor openen/sluiten zijn, vervangt u &quot; // TODO ...&quot; met inbegrip van manuscripten voor het hoofd en lichaamsdelen van &lt;html>.
 
    Met een supertype van `foundation/components/page`, zal om het even welk manuscript niet die in deze zelfde omslag wordt bepaald aan een manuscript in `/apps/foundation/components/page` omslag (als het bestaat), anders aan een manuscript in `/libs/foundation/components/page` omslag oplossen.
 
-#### /apps/an-scf-sandbox/components/playpage/playpage.jsp {#apps-an-scf-sandbox-components-playpage-playpage-jsp-1}
+   `/apps/an-scf-sandbox/components/playpage/playpage.jsp`
 
-```xml
-<%--
-
-    An SCF Sandbox Play Component component: playpage.jsp
-
-  This is the component which renders content for An SCF Sandbox page.
-
---%><%
-%><%@include file="/libs/foundation/global.jsp"%><%
-%><%@page session="false" %>
-<html>
-  <cq:include script="head.jsp"/>
-  <cq:include script="body.jsp"/>
-</html>
-```
+   ```xml
+   <%--
+   
+       An SCF Sandbox Play Component component: playpage.jsp
+   
+     This is the component which renders content for An SCF Sandbox page.
+   
+   --%><%
+   %><%@include file="/libs/foundation/global.jsp"%><%
+   %><%@page session="false" %>
+   <html>
+     <cq:include script="head.jsp"/>
+     <cq:include script="body.jsp"/>
+   </html>
+   ```
 
 1. Het stichtingsmanuscript `head.jsp` moet niet worden bedekt, maar het stichtingsmanuscript `body.jsp` is leeg.
 
@@ -91,7 +94,7 @@ CRXDE Lite gebruiken:
    1. Klik met de rechtermuisknop en selecteer `Create > Create File...`
 
       * Naam: **body.jsp**
-   1. Klik op Alles **[!UICONTROL opslaan]**
+   1. Klik op **[!UICONTROL Save All]**
    Open `/apps/an-scf-sandbox/components/playpage/body.jsp` en plak in de volgende tekst:
 
    ```xml
@@ -110,7 +113,7 @@ CRXDE Lite gebruiken:
    </body>
    ```
 
-1. Klik op Alles **[!UICONTROL opslaan]**
+1. Klik op **[!UICONTROL Save All]**
 
 **De pagina in een browser weergeven in de bewerkingsmodus:**
 
@@ -143,7 +146,7 @@ Voor deze zandbak, begin met deze **communautaire** componenten (toelaten door d
 * Overzicht van revisies (weergave)
 * Stemming
 
-Kies bovendien **[!UICONTROL Algemene]** componenten, zoals
+Kies bovendien **[!UICONTROL General]** componenten, zoals
 
 * Afbeelding
 * Tabel
@@ -155,7 +158,8 @@ Kies bovendien **[!UICONTROL Algemene]** componenten, zoals
 >De componenten die voor het paginapunt worden toegelaten worden opgeslagen in de bewaarplaats als waarde van het `components` bezit van
 >`/etc/designs/an-scf-sandbox/jcr:content/playpage/par` knooppunt.
 
-## Openingspagina {#landing-page}
+
+## Landing Page {#landing-page}
 
 In een meertalig milieu, zou de wortelpagina een manuscript omvatten dat het verzoek van de cliënt zou ontleden om de aangewezen taal te bepalen.
 
@@ -164,13 +168,13 @@ In dit eenvoudige voorbeeld wordt de basispagina statisch ingesteld op omleiding
 Wijzig de URL van de browser in de hoofdpagina: [http://localhost:4502/editor.html/content/an-scf-sandbox.html](https://locahost:4502/editor.html/content/an-scf-sandbox.html)
 
 * Het pictogram Pagina-informatie selecteren
-* Eigenschappen **[!UICONTROL voor openen selecteren]**
+* Selecteer **[!UICONTROL Open Properties]**
 * Op het tabblad GEAVANCEERD
 
-   * Blader voor de Redirect-vermelding naar **[!UICONTROL Websites > SCF Sandbox Site > SCF Sandbox]**
-   * Click **[!UICONTROL OK]**
+   * Blader voor het Redirect-bericht naar **[!UICONTROL Websites]** > **[!UICONTROL SCF Sandbox Site]** > **[!UICONTROL SCF Sandbox]**
+   * Klik op **[!UICONTROL OK]**
 
-* Click **[!UICONTROL OK]**
+* Klik op **[!UICONTROL OK]**
 
 Als de site eenmaal is gepubliceerd, wordt het bladeren naar de hoofdpagina op een publicatie-instantie omgeleid naar de Engelse pagina.
 

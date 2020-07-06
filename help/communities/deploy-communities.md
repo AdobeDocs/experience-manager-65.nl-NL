@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+source-git-commit: 85d4cdf0e2cfcb8b5e70387ce2dc556df9033257
 workflow-type: tm+mt
-source-wordcount: '1884'
+source-wordcount: '1893'
 ht-degree: 0%
 
 ---
@@ -74,14 +74,14 @@ ht-degree: 0%
 
          * UGC wordt nooit gerepliceerd
          * UGC is alleen zichtbaar op een AEM-instantie of -cluster waarin de UGC is ingevoerd
-      * Standaard is JSRP
+
+         * Standaard is JSRP
    Voor de functie **[enablement](/help/communities/overview.md#enablement-community)**
 
    * [Mpeg installeren en configureren](/help/communities/ffmpeg.md)
    * [Installeer het JDBC-stuurprogramma voor MySQL](#jdbc-driver-for-mysql)
    * [AEM Communities SCORM-engine installeren](#scorm-package)
    * [MySQL voor activering installeren en configureren](/help/communities/mysql.md)
-
 
 
 
@@ -105,8 +105,8 @@ Net als in AEM 6.4 en verder, maken de eigenschappen en hotfixes van AEM Communi
 
 Twee eigenschappen van Gemeenschappen gebruiken een gegevensbestand MySQL:
 
-* Voor [activering](/help/communities/enablement.md) : SCORM-activiteiten en -studenten opnemen
-* Voor [DSRP](/help/communities/dsrp.md) : door de gebruiker gegenereerde inhoud opslaan (UGC)
+* Voor [activering](/help/communities/enablement.md): SCORM-activiteiten en -studenten opnemen
+* Voor [DSRP](/help/communities/dsrp.md): door de gebruiker gegenereerde inhoud opslaan (UGC)
 
 De MySQL-connector moet afzonderlijk worden opgehaald en geïnstalleerd.
 
@@ -125,7 +125,6 @@ De noodzakelijke stappen zijn:
    * Controleer of het JDBC-stuurprogramma van *Oracle Corporation voor MySQLcom.mysql.jdbc* actief is en start dit als dit niet het geval is (of controleer de logboeken)
 
 1. Als het installeren op een bestaande plaatsing nadat JDBC is gevormd, dan opnieuw bindt JDBC aan de nieuwe schakelaar door de configuratie JDBC van de Webconsole op te slaan:
-
    * Bijvoorbeeld https://localhost:4502/system/console/configMgr
    * Configuratie zoeken `Day Commons JDBC Connections Pool`
    * Selecteren om te openen
@@ -137,7 +136,7 @@ Meer informatie over het installeren van bundels vindt u op de pagina [Webconsol
 
 #### Voorbeeld: MySQL-connectorbundel is geïnstalleerd {#example-installed-mysql-connector-bundle}
 
-![](/help/communities/assets/chlimage_1-125.png)
+![wisselbundels](assets/chlimage-bundles.png)
 
 ### SCORM-pakket {#scorm-package}
 
@@ -222,7 +221,7 @@ Door gebrek, wordt de configuratie `AEM Communities Publisher Configuration` OSG
 
 Daarom is het noodzakelijk om de configuratie op alle secundaire publiceer instanties **uit te** geven om **`Primary Publisher`** checkbox los te maken.
 
-![](/help/communities/assets/chlimage_1-126.png)
+![chlimage_1-411](assets/chlimage_1-411.png)
 
 Voor alle andere (secundaire) publiceer instanties in publiceer landbouwbedrijf:
 
@@ -248,7 +247,7 @@ Er zijn twee replicatieagenten in het auteursmilieu die de vervoerconfiguratie n
 
 * De console van de Replicatie van de toegang op auteur
 
-   * Navigeer van globale navigatie naar **[!UICONTROL Tools > Deployment > Replication > Agents on author]**
+   * Navigeer vanuit globale navigatie naar **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Replication]** > **[!UICONTROL Agents on author]**
 
 * Volg de zelfde procedure voor beide agenten:
 
@@ -266,11 +265,11 @@ In de volgende afbeeldingen ziet u de resultaten van het wijzigen van de poort v
 
 #### Standaardagent (publiceren) {#default-agent-publish}
 
-![](/help/communities/assets/chlimage_1-127.png)
+![chlimage_1-412](assets/chlimage_1-412.png)
 
 #### Reverse Replication Agent (publiceren reverse) {#reverse-replication-agent-publish-reverse}
 
-![](/help/communities/assets/chlimage_1-128.png)
+![chlimage_1-413](assets/chlimage_1-413.png)
 
 ### Tunnelservice op auteur {#tunnel-service-on-author}
 
@@ -280,8 +279,7 @@ De tunneldienst verleent deze toegang gebruikend de replicatieagent op auteur.
 
 Om de tunneldienst toe te laten:
 
-* Op **auteur**
-* Aanmelden met beheerdersrechten
+* Meld u aan met beheerdersrechten voor de auteur.
 * Als de uitgever niet localhost is:4503 of de vervoergebruiker niet is `admin`, dan [vorm de replicatieagent](#replication-agents-on-author)
 
 * Toegang tot de [webconsole](/help/sites-deploying/configuring-osgi.md)
@@ -293,7 +291,7 @@ Om de tunneldienst toe te laten:
 * Het **selectievakje Inschakelen** inschakelen inschakelen
 * Selecteer **Opslaan**
 
-![](/help/communities/assets/chlimage_1-129.png)
+   ![chlimage_1-414](assets/chlimage_1-414.png)
 
 ### De cryptosleutel dupliceren {#replicate-the-crypto-key}
 
@@ -309,16 +307,16 @@ Om het belangrijkste materiaal van auteur aan alle andere instanties te kopiëre
 
       * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
       * Het `bundle.info` bestand geeft de bundel aan
-   * Navigeer bijvoorbeeld in de gegevensmap
+   * Navigeer bijvoorbeeld naar de gegevensmap
 
       * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
-   * Kopieer de hoofd- en primaire knoopdossiers
 
+      * Kopieer de hoofd- en primaire knoopdossiers
 
 
 * Voor elke AEM-doelinstantie
 
-   * Navigeer bijvoorbeeld in de gegevensmap
+   * Navigeer bijvoorbeeld naar de gegevensmap
 
       * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
    * Plak de twee eerder gekopieerde bestanden
@@ -328,6 +326,7 @@ Om het belangrijkste materiaal van auteur aan alle andere instanties te kopiëre
 >[!CAUTION]
 >
 >Als een andere veiligheidseigenschap reeds is gevormd die op de crypto sleutels gebaseerd is, dan het herhalen van de crypto sleutels kon de configuratie beschadigen. Neem voor hulp [contact op met de klantenservice](https://helpx.adobe.com/marketing-cloud/contact-support.html).
+
 
 #### Replicatie opslagplaats {#repository-replication}
 
@@ -339,9 +338,10 @@ Als het sleutelmateriaal in de opslagplaats wordt opgeslagen, zoals het geval wa
 >
 >Het is belangrijk om te verifiëren dat de [replicatieagent op auteur](#replication-agents-on-author) correct wordt gevormd.
 
-Met het zeer belangrijke materiaal dat in de bewaarplaats wordt opgeslagen, is de manier om de crypto sleutel van auteur aan andere instanties te herhalen als volgt:
 
-Met [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
+Met het belangrijkste materiaal dat in de bewaarplaats wordt opgeslagen, is de manier om de crypto sleutel van auteur aan andere instanties te herhalen als volgt:
+
+Met [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
 * Ga naar [https://&lt;server>:&lt;port>/crx/de](https://localhost:4502/crx/de)
 * Selecteer `/etc/key`
@@ -350,7 +350,7 @@ Met [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
 
 * [De graniet-cryptobundel vernieuwen](#refresh-the-granite-crypto-bundle)
 
-![](/help/communities/assets/chlimage_1-130.png)
+   ![chlimage_1-415](assets/chlimage_1-415.png)
 
 #### De graniet-cryptobundel vernieuwen {#refresh-the-granite-crypto-bundle}
 
@@ -361,7 +361,7 @@ Met [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
 * Snel zoeken naar `Adobe Granite Crypto Support` bundel (com.adobe.granite.crypto)
 * Selecteer **Vernieuwen**
 
-![](/help/communities/assets/chlimage_1-131.png)
+   ![chlimage_1-416](assets/chlimage_1-416.png)
 
 * Na een ogenblik, zou een dialoog van het **Succes** moeten verschijnen:
    `Operation completed successfully.`
@@ -391,7 +391,7 @@ Wees vooral voorzichtig met het gebruik van de juiste servernaam, niet `localhos
 
 ### Dispatcher {#dispatcher}
 
-Zie bij gebruik van een Dispatcher:
+Als u een Dispatcher gebruikt, raadpleegt u:
 
 * AEM&#39;s [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) -documentatie
 * [Dispatcher installeren](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html)

@@ -3,9 +3,9 @@ title: XMP-terugverwijzing naar uitvoeringen
 description: Leer hoe de functie XMP-schrijfback de metagegevenswijzigingen voor een element doorgeeft aan alle of aan specifieke uitvoeringen van het element.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c1c845a479fcf04db1b2da8bcb9cf765fedd58b6
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '724'
 ht-degree: 3%
 
 ---
@@ -64,15 +64,15 @@ De wijzigingen in de metagegevens worden doorgegeven aan de uitvoeringen miniatu
 >
 >Voor XMP-terugschrijvingsproblemen in 64-bits Linux, zie [How to enable XMP write-back on 64-bit RedHat Linux](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html).
 >
->Zie Voorwaarden voor het schrijven van [XMP-metagegevens voor meer informatie over ondersteunde platforms](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back).
+>Zie Voorwaarden voor het schrijven van [XMP-metagegevens voor](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back)de ondersteunde platforms.
 
 ## XMP-metagegevens filteren {#filtering-xmp-metadata}
 
-[!DNL Experience Manager Assets] ondersteunt zowel geblokkeerde lijsten als toegestane catalogusfiltering van eigenschappen/knooppunten voor XMP-metagegevens die worden gelezen uit binaire elementen van elementen en die worden opgeslagen in JCR wanneer elementen worden opgenomen.
+[!DNL Experience Manager Assets] ondersteunt zowel lijst van afgewezen personen- als lijst van gewenste personen-filtering van eigenschappen/knooppunten voor XMP-metagegevens die worden gelezen uit binaire elementen van elementen en die worden opgeslagen in JCR wanneer elementen worden opgenomen.
 
-Als u filtert met een geblokkeerde lijst, kunt u alle eigenschappen van XMP-metagegevens importeren, behalve de eigenschappen die voor uitsluiting zijn opgegeven. Voor elementtypen zoals INDD-bestanden met grote hoeveelheden XMP-metagegevens (bijvoorbeeld 1000 knooppunten met 10.000 eigenschappen) zijn de namen van te filteren knooppunten echter niet altijd van tevoren bekend. Als het filtreren gebruikend een geblokkeerde lijst een groot aantal activa met talrijke meta-gegevens XMP om toelaat worden ingevoerd, kan de instantie AEM/de cluster stabiliteitskwesties, bijvoorbeeld verstopte observatierijen ontmoeten.
+Als u filtert met een lijst van afgewezen personen, kunt u alle eigenschappen van XMP-metagegevens importeren, behalve de eigenschappen die voor uitsluiting zijn opgegeven. Voor elementtypen zoals INDD-bestanden met grote hoeveelheden XMP-metagegevens (bijvoorbeeld 1000 knooppunten met 10.000 eigenschappen) zijn de namen van te filteren knooppunten echter niet altijd van tevoren bekend. Als het filtreren gebruikend een lijst van afgewezen personen een groot aantal activa met talrijke meta-gegevens XMP om toelaat worden ingevoerd, kan de instantie AEM/de cluster stabiliteitskwesties, bijvoorbeeld verstopte observatierijen ontmoeten.
 
-Door het filteren van XMP-metagegevens via de toegestane lijst verhelpt u dit probleem door de XMP-eigenschappen te definiëren die moeten worden geïmporteerd. Op deze manier worden andere of onbekende XMP-eigenschappen genegeerd. Voor achterwaartse verenigbaarheid, kunt u sommige van deze eigenschappen aan het filter toevoegen dat een geblokkeerde lijst gebruikt.
+Door het filteren van XMP-metagegevens via lijst van gewenste personen verhelpt u dit probleem door de XMP-eigenschappen te definiëren die moeten worden geïmporteerd. Op deze manier worden andere of onbekende XMP-eigenschappen genegeerd. Voor achterwaartse compatibiliteit kunt u enkele van deze eigenschappen toevoegen aan het filter dat een lijst van afgewezen personen gebruikt.
 
 >[!NOTE]
 >
@@ -80,14 +80,14 @@ Door het filteren van XMP-metagegevens via de toegestane lijst verhelpt u dit pr
 
 1. Om de Manager van de Configuratie te openen, toegang `https://[aem_server]:[port]/system/console/configMgr`.
 1. Open de **[!UICONTROL Adobe CQ DAM XmpFilter]** configuratie.
-1. Als u filtering wilt toepassen via een toegestane lijst, selecteert u de eigenschappen die u wilt importeren in het **[!UICONTROL Apply Allowlist to XMP Properties]****[!UICONTROL Allowed XML Names for XMP filtering]** vak en geeft u deze op.
+1. Als u filters wilt toepassen via een lijst van gewenste personen, selecteert u de eigenschappen die u wilt importeren in het **[!UICONTROL Apply Allowlist to XMP Properties]****[!UICONTROL Allowed XML Names for XMP filtering]** vak en geeft u deze op.
 
    ![chlimage_1-136](assets/chlimage_1-347.png)
 
-1. Als u geblokkeerde XMP-eigenschappen wilt uitfilteren nadat u filtering hebt toegepast via de lijst met toegestane waarden, geeft u de eigenschappen in het **[!UICONTROL Blocked XML Names for XMP filtering]** vak op.
+1. Als u geblokkeerde XMP-eigenschappen wilt uitfilteren nadat u filtering via lijst van gewenste personen hebt toegepast, geeft u de eigenschappen in het **[!UICONTROL Blocked XML Names for XMP filtering]** vak op.
 
    >[!NOTE]
    >
-   >The **[!UICONTROL Apply Blocklist to XMP Properties]** option is selected by default. Met andere woorden, het filtreren gebruikend een geblokkeerde lijst wordt toegelaten door gebrek. Als u dergelijke filters wilt uitschakelen, schakelt u de **[!UICONTROL Apply Blocklist to XMP Properties]** optie uit.
+   >The **[!UICONTROL Apply Blocklist to XMP Properties]** option is selected by default. Met andere woorden, filteren met een lijst van afgewezen personen wordt standaard ingeschakeld. Als u dergelijke filters wilt uitschakelen, schakelt u de **[!UICONTROL Apply Blocklist to XMP Properties]** optie uit.
 
 1. Sla de wijzigingen op.

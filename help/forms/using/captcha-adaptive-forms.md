@@ -10,7 +10,10 @@ topic-tags: author
 discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 translation-type: tm+mt
-source-git-commit: abfb6dced1ffd8d0dd11eaab1e66c78704df543f
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '647'
+ht-degree: 0%
 
 ---
 
@@ -19,12 +22,12 @@ source-git-commit: abfb6dced1ffd8d0dd11eaab1e66c78704df543f
 
 CAPTCHA (Complete Automated Public Turing test to tell Computers and Humans Apart) is een programma dat vaak wordt gebruikt bij online transacties om onderscheid te maken tussen mensen en geautomatiseerde programma&#39;s of bots. Het stelt een uitdaging en evalueert de reactie van de gebruiker om te bepalen of het een mens of bot is die met de site communiceert. Het verhindert de gebruiker om te werk te gaan als de test ontbreekt en de hulp maakt online transacties veilig door bots te houden spam of kwaadwillige doeleinden posten.
 
-AEM Forms ondersteunt CAPTCHA in adaptieve formulieren. U kunt de reCAPTCHA-service van Google gebruiken om CAPTCHA te implementeren.
+AEM Forms ondersteunen CAPTCHA in adaptieve vormen. U kunt de reCAPTCHA-service van Google gebruiken om CAPTCHA te implementeren.
 
->[!NOTE] {graybox=&quot;true&quot;}
+>[!NOTE]
 >
->* AEM Forms ondersteunt alleen reCaptcha v2. Andere versies worden niet ondersteund.
->* CAPTCHA in adaptieve formulieren wordt niet ondersteund in de offlinemodus in de app AEM Forms.
+>* AEM Forms ondersteunen alleen reCaptcha v2. Andere versies worden niet ondersteund.
+>* CAPTCHA in adaptieve formulieren wordt niet ondersteund in de offlinemodus in de AEM Forms-app.
 >
 
 
@@ -40,23 +43,23 @@ De service reCAPTCHA implementeren in AEM Forms:
 1. Haal [reCAPTCHA API sleutelpaar](https://www.google.com/recaptcha/admin) op van Google. De site bevat een sleutel en een geheim.
 1. Configuratiecontainer maken voor cloudservices.
 
-   1. Ga naar **[!UICONTROL Gereedschappen > Algemeen > Configuratiebrowser]**.
+   1. Go to **[!UICONTROL Tools > General > Configuration Browser]**.
    1. Ga als volgt te werk om de algemene map voor cloudconfiguraties in te schakelen of sla deze stap over om een andere map voor cloudserviceconfiguraties te maken en te configureren.
 
-      1. Selecteer de **[!UICONTROL algemene]** map in de configuratiegrowser en tik op **[!UICONTROL Eigenschappen]**.
+      1. Selecteer de **[!UICONTROL global]** map in de configuratiegrowser en tik op **[!UICONTROL Properties]**.
 
-      1. Schakel in het dialoogvenster Configuration Properties de optie **[!UICONTROL Cloud Configurations]** in.
-      1. Tik op **[!UICONTROL Opslaan en sluiten]** om de configuratie op te slaan en het dialoogvenster te sluiten.
-   1. Tik op **[!UICONTROL Maken]** in de configuratiegrowser.
-   1. Geef in het dialoogvenster Configuratie maken een titel op voor de map en schakel **[!UICONTROL Cloud Configurations]** in.
-   1. Tik op **[!UICONTROL Maken]** om de map te maken die geschikt is voor configuraties van de cloudservice.
+      1. Schakel in het dialoogvenster Configuration Properties de optie **[!UICONTROL Cloud Configurations]**.
+      1. Tik **[!UICONTROL Save & Close]** om de configuratie op te slaan en het dialoogvenster af te sluiten.
+   1. Tik in de configuratievenster op **[!UICONTROL Create]**.
+   1. Geef in het dialoogvenster Configuratie maken een titel op voor de map en schakel deze in **[!UICONTROL Cloud Configurations]**.
+   1. Tik **[!UICONTROL Create]** om de map te maken die geschikt is voor cloudserviceconfiguraties.
 
 
 1. Configureer de cloudservice voor reCAPTCHA.
 
-   1. Ga in uw AEM-auteur-exemplaar naar ![tools-1](assets/tools-1.png) > **Cloud Services**.
-   1. Tik **[!UICONTROL op reCAPTCHA]**. De pagina Configurations wordt geopend. Selecteer de configuratiecontainer die u in de vorige stap hebt gemaakt en tik op **[!UICONTROL Maken]**.
-   1. Geef de naam, de sitesleutel en de geheime sleutel voor de service reCAPTCHA op en tik op **[!UICONTROL Maken]** om de configuratie van de cloudservice te maken.
+   1. Ga voor de AEM-auteur naar ![tools-1](assets/tools-1.png) > **Cloud Servicen**.
+   1. Tik op **[!UICONTROL reCAPTCHA]**. De pagina Configurations wordt geopend. Selecteer de configuratiecontainer die in de vorige stap is gemaakt en tik op **[!UICONTROL Create]**.
+   1. Geef Naam, Sitecode en Geheime sleutel voor de service reCAPTCHA op en tik **[!UICONTROL Create]** om de configuratie van de cloudservice te maken.
    1. Geef in het dialoogvenster Component bewerken de site en de geheime sleutels op die in stap 1 zijn verkregen. Tik op Instellingen **** opslaan en tik vervolgens op **OK** om de configuratie te voltooien.
    Zodra de reCAPTCHA-service is geconfigureerd, is deze beschikbaar voor gebruik in adaptieve formulieren. Zie CAPTCHA [gebruiken in adaptieve vormen](#using-captcha)voor meer informatie.
 
@@ -86,7 +89,7 @@ CAPTCHA in adaptieve vorm gebruiken:
 
    >[!NOTE]
    >
-   >Selecteer **[!UICONTROL Standaard]** niet in het vervolgkeuzemenu van de Captcha-service omdat de standaard AEM CAPTCHA-service is afgekeurd.
+   >Selecteer geen **[!UICONTROL Default]** optie in het vervolgkeuzemenu Captcha omdat de standaard AEM CAPTCHA-service is afgekeurd.
 
 1. Sla de eigenschappen op.
 

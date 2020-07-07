@@ -3,10 +3,10 @@ title: Metadataschema van map
 description: Leer hoe u een metagegevensschema maakt voor de mappen met elementen in Adobe Experience Manager Assets
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '947'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -20,7 +20,7 @@ Met Adobe Experience Manager Assets kunt u metagegevensschema&#39;s maken voor e
 Met de editor voor Mapmetagegevensschemaformulieren kunt u metagegevensschema&#39;s voor mappen maken en bewerken.
 
 1. Ga in Experience Manager interface naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Folder Metadata Schemas]**.
-1. Klik op de [!UICONTROL Folder Metadata Schema Forms] pagina **[!UICONTROL Create]**.
+1. Ga naar de pagina [!UICONTROL Folder Metadata Schema Forms] en klik op **[!UICONTROL Create]**.
 1. Geef een naam op voor het formulier en klik op **[!UICONTROL Create]**. Het nieuwe schema-formulier wordt weergegeven op de [!UICONTROL Schema Forms] pagina.
 
 ## Formulieren met metagegevens van mappen bewerken {#edit-folder-metadata-schema-forms}
@@ -108,7 +108,7 @@ Als u een metagegevensschema voor een map configureert, wordt het pad naar het s
 
 ### Wijs aan een schema van de pagina van het Schema van Meta-gegevens van de Omslag toe {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
-1. Ga in Experience Manager interface naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]**> **[!UICONTROL Folder Metadata Schemas]**.
+1. Ga in Experience Manager interface naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Folder Metadata Schemas]**.
 1. Selecteer op de pagina Formulieren schema met metagegevens van map het schema dat u op een map wilt toepassen.
 1. Klik **[!UICONTROL Apply to Folder(s)]** op de werkbalk.
 

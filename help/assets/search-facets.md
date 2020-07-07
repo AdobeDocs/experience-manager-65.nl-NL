@@ -3,7 +3,7 @@ title: Zoeken in gezichten
 description: In dit artikel wordt beschreven hoe u zoekfacetten in de Adobe Experience Manager maakt, wijzigt en gebruikt.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '2380'
 ht-degree: 15%
@@ -114,7 +114,7 @@ Als u een bestaand knooppunt wilt gebruiken, geeft u dit op in het dialoogvenste
 >
 >De voorspelling van Opties is een aangepaste omslag die bezitsvoorspelling omvat om het beschreven gedrag aan te tonen. Momenteel, is er geen REST eindpunt beschikbaar om de functionaliteit te steunen native.
 
-1. Click the Experience Manager logo, and then go to **[!UICONTROL Tools > General > Search Forms]**.
+1. Click the Experience Manager logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
 1. Selecteer op de **[!UICONTROL Search Forms]** pagina de optie **[!UICONTROL Assets Admin Search Rail]** en klik op **[!UICONTROL Edit]**.
 1. Sleep op de pagina **[!UICONTROL Edit Search Form]** **[!UICONTROL Options Predicate]** van het tabblad **[!UICONTROL Select Predicate]** naar het hoofdvenster.
 1. Voer op het tabblad **[!UICONTROL Settings]** een label en een naam voor de eigenschap in. Als u bijvoorbeeld assets wilt zoeken op basis van hun indeling, geeft u een gebruikersvriendelijke naam voor het label op, bijvoorbeeld **[!UICONTROL File Type]**. Geef de eigenschap op op basis waarvan de zoekopdracht in het eigenschapsveld moet worden uitgevoerd, bijvoorbeeld `jcr:content/metadata/dc:format.`
@@ -193,9 +193,9 @@ Net als bij de manier waarop u een voorspelling van eigenschappen of een voorspe
 
 ## Standaardzoekfacetten herstellen {#restoring-default-search-facets}
 
-Standaard wordt er een pictogram ![voor het vergrendelen van een](assets/do-not-localize/lock_closed_icon.svg) vergrendelingspictogram vóór **[!UICONTROL Assets Admin Search Rail]** op de **[!UICONTROL Search Forms]** pagina weergegeven. Het pictogram Vergrendelen aan de hand van een optie op de pagina Formulieren zoeken geeft aan dat de standaardinstellingen intact zijn en niet zijn aangepast. Het pictogram Sluiten ![](assets/do-not-localize/lock_closed_icon.svg) vergrendelen verdwijnt als u zoekfacetten aan het formulier toevoegt die aangeven dat het standaardformulier is gewijzigd.
+Standaard wordt er een pictogram ![voor het vergrendelen van een](assets/do-not-localize/lock_closed_icon.svg) vergrendelingspictogram vóór **[!UICONTROL Assets Admin Search Rail]** op de **[!UICONTROL Search Forms]** pagina weergegeven. Het pictogram Vergrendelen aan de hand van een optie op de pagina Zoekformulieren geeft aan dat de standaardinstellingen intact zijn en niet zijn aangepast. Het pictogram Sluiten ![](assets/do-not-localize/lock_closed_icon.svg) vergrendelen verdwijnt als u zoekfacetten aan het formulier toevoegt die aangeven dat het standaardformulier is gewijzigd.
 
-![Het pictogram Vergrendelen aan de hand van een optie op de pagina Formulieren zoeken geeft aan dat de standaardinstellingen intact zijn en niet zijn aangepast.](assets/locked_admin_rail.png)
+![Het pictogram Vergrendelen aan de hand van een optie op de pagina Zoekformulieren geeft aan dat de standaardinstellingen intact zijn en niet zijn aangepast.](assets/locked_admin_rail.png)
 
 Voer de volgende stappen uit om de standaardzoekfacet te herstellen:
 

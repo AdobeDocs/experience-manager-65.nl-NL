@@ -3,7 +3,7 @@ title: Vertaalcloudservices toepassen op mappen
 description: Vertaalcloudservices toepassen op mappen
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 42%
@@ -42,7 +42,7 @@ Als u de vertaalcloud-services rechtstreeks toepast op uw map met middelen, hoef
 Als u een aangepaste connector wilt toepassen voor de vertaalservices die u wilt gebruiken in vertaalworkflows. Om een aangepaste connector toe te passen installeert u eerst de connector vanaf Package Manager. Vervolgens configureert u de connector vanaf de Cloud Services-console. Nadat u de connector hebt geconfigureerd, is deze beschikbaar in de lijst met connectors op het tabblad Cloud Services die wordt beschreven in [De vertaalservices toepassen](transition-cloud-services.md#applying-the-translation-services). Nadat u de aangepaste connector hebt toegepast en vertaalworkflows hebt uitgevoerd, geeft de tegel **[!UICONTROL Translation Summary]** van het vertaalproject de connectordetails weer onder de koppen **[!UICONTROL Provider]** en **[!UICONTROL Method]**.
 
 1. Installeer de connector via Package Manager.
-1. Klik op het Experience Manager-logo en navigeer naar **[!UICONTROL Tools > Deployment > Cloud Services]**.
+1. Klik op het Experience Manager-logo en navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Cloud Services]**.
 1. Zoek de connector die u onder de pagina **[!UICONTROL Third Party Services]** in de **[!UICONTROL Cloud Services]** hebt geïnstalleerd.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)

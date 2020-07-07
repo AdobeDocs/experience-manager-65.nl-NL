@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: dc0191d0-f181-4e1e-b3f4-73427aa22073
 docset: aem65
 translation-type: tm+mt
-source-git-commit: df89d5cfd5060d493babb89e92a9a98e851b8879
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
 source-wordcount: '3221'
 ht-degree: 0%
@@ -338,12 +338,12 @@ Als u veelvoudige configuraties hebt, toont AEM door gebrek de [standaardconfigu
 >* Als u **Scene7** of het pictogram **S7** niet als optie in inhoudbrowser ziet, moet u Scene7 [vormen om met AEM](/help/sites-administering/scene7.md)te werken.
    >
    >
-* Voor video, steunt Scene7 inhoudsbrowser: >
-   >    * Adaptieve videosets: container met alle video-uitvoeringen die nodig zijn voor naadloze weergave op meerdere schermen
-   >    * Eén MP4-video
-   >    * Single F4V-video
->
-
+* Voor video, steunt Scene7 inhoudsbrowser:
+   >
+   >  
+* Adaptieve videosets: container met alle video-uitvoeringen die nodig zijn voor naadloze weergave op meerdere schermen
+>  * Eén MP4-video
+>  * Single F4V-video
 
 
 ### Bladeren door inhoud {#browsing-content-in-the-classic-ui}

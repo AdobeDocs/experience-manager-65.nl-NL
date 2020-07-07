@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: b9333558-6af9-46b2-9f03-3722645c69a6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
+source-git-commit: ce21755263a2e8a3f0e97acb7f586e32cedde83a
+workflow-type: tm+mt
+source-wordcount: '1727'
+ht-degree: 1%
 
 ---
 
@@ -26,10 +29,9 @@ Ga als volgt te werk om een nieuwe communitysite te maken:
 
 De [instantie van de auteur gebruiken](https://localhost:4502/)
 
-* Aanmelden met beheerdersrechten
-* Ga naar **[!UICONTROL Gemeenschappen > Sites]**
+* Meld u aan met beheerdersrechten en navigeer naar **[!UICONTROL Communities]** > **[!UICONTROL Sites]**.
 
-* Selecteer **Maken**
+* Selecteer **Maken**.
 
 ### Stap 1: Sitesjabloon {#step-site-template}
 
@@ -37,7 +39,7 @@ De [instantie van de auteur gebruiken](https://localhost:4502/)
 
 Voor de stap van het Malplaatje **van de** Plaats, ga een titel, een beschrijving, de naam voor URL in, en selecteer een malplaatje van de communautaire plaats, bijvoorbeeld:
 
-* **Titel** van communautaire site: `Enablement Tutorial`
+* **Titel** van communautaire site: `Enablement Tutorial`.
 
 * **Beschrijving** van communautaire site: `A site for enabling the community to learn.`
 
@@ -54,7 +56,7 @@ Voor de stap van het Malplaatje **van de** Plaats, ga een titel, een beschrijvin
 
 * **Sjabloon** verwijzingssite: naar beneden halen om te kiezen `Reference Structured Learning Site Template`
 
-Selecteer **Volgende**
+Selecteer **Volgende**.
 
 ### Stap 2: Ontwerp {#step-design}
 
@@ -66,9 +68,11 @@ Selecteer de gewenste stijl die u op de sjabloon wilt toepassen. Als deze optie 
 
 #### COMMUNAUTAIRE SITOBRANDING {#community-site-branding}
 
-(optioneel) Upload een bannerafbeelding voor weergave op de sitepagina&#39;s. De banner is vastgezet aan de linkerrand van browser, tussen de communautaire plaatsheader en menu (navigatiekoppelingen). De bannerhoogte wordt bijgesneden tot 120 pixels. Er wordt geen grootte van de banner aangepast aan de breedte van de browser en de hoogte van 120 pixels.
+(Optioneel) Upload een bannerafbeelding voor weergave op de sitepagina&#39;s. De banner is vastgezet aan de linkerrand van browser, tussen de communautaire plaatsheader en menu (navigatiekoppelingen). De bannerhoogte wordt bijgesneden tot 120 pixels. Er wordt geen grootte van de banner aangepast aan de breedte van de browser en de hoogte van 120 pixels.
 
-![chlimage_1-2](assets/chlimage_1-2.png) ![chlimage_1](assets/chlimage_1.jpeg)
+![chlimage_1-449](assets/chlimage_1-449.png)
+
+![chlimage_1](assets/chlimage_1.jpeg)
 
 Selecteer **Volgende**.
 
@@ -84,13 +88,13 @@ Een gemeenschapssite is persoonlijk wanneer anonieme sitebezoekers geen toegang 
 
 Controleer of de meeste selectievakjes zijn uitgeschakeld voor [Gebruikersbeheer](/help/communities/sites-console.md#user-management) :
 
-* Websitebezoekers niet toestaan zich te registreren
-* Anonieme sitebezoekers mogen de site niet bekijken
-* Facultatief al dan niet overseinen onder communautaire leden toestaan
-* Aanmelden met Facebook NIET toestaan
-* Aanmelden met Twitter niet toestaan
+* Sta bezoekers van de site NIET toe zich zelf te registreren.
+* Sta geen anonieme sitebezoekers toe om de site te bekijken.
+* Optioneel of berichten al dan niet worden toegestaan onder leden van de gemeenschap.
+* Meld u NIET aan bij Facebook.
+* Meld u NIET aan bij Twitter.
 
-![chlimage_1-3](assets/chlimage_1-3.png)
+![gebruikersbeheer](assets/user-mgmt.png)
 
 #### TAGGING {#tagging}
 
@@ -103,7 +107,7 @@ Het zoeken naar naamruimten is eenvoudig met &#39;type-ahead&#39;-zoekopdracht. 
 * Type `tut`
 * Selecteer `Tutorial`
 
-![chlimage_1-4](assets/chlimage_1-4.png)
+![enablement-tagging](assets/enablement-tagging.png)
 
 ### ROLES {#roles}
 
@@ -120,21 +124,22 @@ Bijvoorbeeld,
 >
 >[De dienst](/help/communities/deploy-communities.md#tunnel-service-on-author) van de tunnel staat selectie van leden en groepen toe die slechts in publicatiemilieu bestaan.
 
+
 ![machtigingsrollen](assets/site-admin.png)
 
 #### MODERING {#moderation}
 
 Accepteer de standaard algemene instellingen voor het [modereren](/help/communities/sites-console.md#moderation) van door de gebruiker gegenereerde inhoud (UGC).
 
-![chlimage_1-5](assets/chlimage_1-5.png)
+![chlimage_1-452](assets/chlimage_1-452.png)
 
-#### ANALYSE {#analytics}
+#### ANALYTICS {#analytics}
 
-Selecteer in het keuzemenu het cloudserviceframework Analytics dat voor deze communitysite is geconfigureerd.
+Selecteer in de vervolgkeuzelijst het Analytics-framework voor cloudservice dat voor deze communitysite is geconfigureerd.
 
 De selectie die in het schermafbeelding wordt gezien, `Communities`is het frameworkvoorbeeld uit de [configuratiedocumentatie.](/help/communities/analytics.md#aem-analytics-framework-configuration)
 
-![chlimage_1-6](assets/chlimage_1-6.png)
+![chlimage_1-454](assets/chlimage_1-454.png)
 
 #### VERTALING {#translation}
 
@@ -143,7 +148,7 @@ In de [vertaalinstellingen](/help/communities/sites-console.md#translation) word
 * Controleren **machinevertaling toestaan**
 * De standaardinstellingen gebruiken
 
-![chlimage_1-7](assets/chlimage_1-7.png)
+![chlimage_1-456](assets/chlimage_1-456.png)
 
 #### UITSCHAKELING {#enablement}
 
@@ -154,9 +159,9 @@ Voor een machtigingsgemeenschap is het noodzakelijk om één of meerdere Communa
    * Type `s`
    * Selecteer `Sirius Nilson`
 
-* **Org-id** voor marketingcloud (optioneel) De id voor een Adobe Analytics-account die nodig is wanneer [Video Heartbeat Analytics](/help/communities/analytics.md#video-heartbeat-analytics) wordt opgenomen in de rapportage over activering.
+* **Org-id** voor marketingcloud (optioneel) De id voor een Adobe Analytics-account die nodig is wanneer [Video Heartbone Analytics](/help/communities/analytics.md#video-heartbeat-analytics) wordt opgenomen in de actierapportage.
 
-![chlimage_1-8](assets/chlimage_1-8.png)
+![chlimage_1-457](assets/chlimage_1-457.png)
 
 Selecteer **Volgende**.
 
@@ -164,7 +169,7 @@ Selecteer **Volgende**.
 
 Selecteer **Maken.**
 
-![chlimage_1-9](assets/chlimage_1-9.png)
+![chlimage_1-458](assets/chlimage_1-458.png)
 
 Wanneer het proces is voltooid, wordt de map voor de nieuwe site weergegeven in de console Communities > Sites.
 
@@ -186,15 +191,15 @@ Van links naar rechts zijn ze:
 
 * **Site openen**
 
-   Selecteer het potloodpictogram om de gemeenschapssite te openen in de modus Bewerken door auteur om paginacomponenten toe te voegen en/of te configureren
+   Selecteer het potloodpictogram om de gemeenschapssite te openen in de modus Bewerken door auteur om paginacomponenten toe te voegen en/of te configureren.
 
 * **Site bewerken**
 
-   Selecteer het eigenschappenpictogram om de communitysite te openen voor wijziging van eigenschappen, zoals de titel of om het thema te wijzigen
+   Selecteer het eigenschappenpictogram om de communitysite te openen voor wijziging van eigenschappen, zoals de titel, of om het thema te wijzigen.
 
 * **Site publiceren**
 
-   Selecteer het wereldpictogram om de communitysite te publiceren (standaard op localhost:4503)
+   Selecteer het wereldpictogram om de communitysite te publiceren (standaard op localhost:4503).
 
 * **Site exporteren**
 
@@ -205,17 +210,17 @@ UGC is niet opgenomen in het sitepakket.
 
    Als u de communitysite wilt verwijderen, selecteert u het pictogram Site verwijderen dat verschijnt wanneer u de muisaanwijzer op de site in de Community Site Console plaatst. Met deze actie verwijdert u alle items die aan de site zijn gekoppeld, zoals UGC, gebruikersgroepen, elementen en databaserecords.
 
-![inschakelen](assets/enablesiteactions.png)
+   ![inschakelen](assets/enablesiteactions.png)
 
 #### Publiceren selecteren {#select-publish}
 
 Selecteer het pictogram van de wereld om de communitysite te publiceren.
 
-![chlimage_1-10](assets/chlimage_1-10.png)
+![chlimage_1-465](assets/chlimage_1-465.png)
 
 Er wordt een indicatie gegeven dat de site is gepubliceerd.
 
-![chlimage_1-11](assets/chlimage_1-11.png)
+![chlimage_1-466](assets/chlimage_1-466.png)
 
 ## Community-gebruikers en -gebruikersgroepen {#community-users-user-groups}
 
@@ -223,9 +228,9 @@ Er wordt een indicatie gegeven dat de site is gepubliceerd.
 
 Samen met de nieuwe communautaire plaats, worden de nieuwe gebruikersgroepen gecreeerd die de aangewezen toestemmingen hebben die voor diverse administratieve functies worden geplaatst. Ga voor meer informatie naar [Gebruikersgroepen voor communitysites](/help/communities/users.md#usergroupsforcommunitysites).
 
-Voor deze nieuwe communautaire plaats, gezien de plaatsnaam &quot;toelaat&quot;in Stap 1, kunnen de nieuwe gebruikersgroepen die in het publicatiemilieu bestaan van de leden van [Gemeenschappen &amp; de console](/help/communities/members.md#groups-console) van Groepen worden gezien:
+Voor deze nieuwe communautaire plaats, gezien de plaatsnaam &quot;toelaat&quot;in Stap 1, kunnen de nieuwe gebruikersgroepen die in het publiceren milieu bestaan van de leden van [Gemeenschappen &amp; de console](/help/communities/members.md#groups-console)van Groepen worden gezien:
 
-![chlimage_1-12](assets/chlimage_1-12.png)
+![community_usergroup](assets/community_usergroup.png)
 
 ### Leden toewijzen aan de groep van leden voor Community Enable {#assign-members-to-community-enable-members-group}
 
@@ -244,19 +249,19 @@ In dit voorbeeld `Community Ski Class` wordt de groep toegevoegd als lid van de 
 
 * Selecteer **Opslaan**
 
-![chlimage_1-13](assets/chlimage_1-13.png)
+![chlimage_1-418](assets/chlimage_1-418.png)
 
 ## Configuraties bij publiceren {#configurations-on-publish}
 
 `https://localhost:4503/content/sites/enable/en.html {#http-localhost-content-sites-enable-en-html}`
 
-![chlimage_1-14](assets/chlimage_1-14.png)
+![chlimage_1-433](assets/chlimage_1-433.png)
 
 ### Configureren voor verificatiefout {#configure-for-authentication-error}
 
 Zodra een plaats is gevormd en geduwd om te publiceren, [vorm login afbeelding](/help/communities/sites-console.md#configure-for-authentication-error) ( `Adobe Granite Login Selector Authentication Handler`) op publiceer instantie. Het voordeel is dat als de aanmeldingsgegevens niet correct zijn ingevoerd, de verificatiefout de aanmeldingspagina van de communautaire site opnieuw weergeeft met een foutbericht.
 
-Een `Login Page Mapping` item toevoegen als
+Een bestand toevoegen `Login Page Mapping` als:
 
 * `/content/sites/enable/en/signin:/content/sites/enable/en`
 
@@ -266,7 +271,7 @@ Als u met de publicatiesite werkt voor demonstratiedoeleinden, is het handig om 
 
 Hiervoor moet u [CRX|DE](https://localhost:4503/crx/de) Lite gebruiken om de [bronnentoewijzingstabel](/help/sites-deploying/resource-mapping.md) te bewerken bij publicatie.
 
-Aan de slag
+Aan de slag:
 
 1. Bij publiceren, heb toegang tot CRXDE en login met beheerdervoorrechten
 
@@ -309,17 +314,18 @@ Aan de slag
 >
 >Als u deze optie wilt uitschakelen, voegt u de waarde van de `sling:match` eigenschap gewoon toe met een &#39;&#39;x&#39;&#39; - `xlocalhost.4503/$` - en **Alles** opslaan.
 
-![chlimage_1-15](assets/chlimage_1-15.png)
+
+![chlimage_1-364](assets/chlimage_1-364.png)
 
 #### Problemen oplossen: Fout bij opslaan van kaart {#troubleshooting-error-saving-map}
 
 Als het niet lukt om wijzigingen op te slaan, moet u ervoor zorgen dat de naam van het knooppunt `localhost.4503`met een &#39;punt&#39;-scheidingsteken is en niet `localhost:4503` met een &#39;dubbele punt&#39;-scheidingsteken, omdat dit geen geldig naamruimtevoorvoegsel `localhost` is.
 
-![chlimage_1-16](assets/chlimage_1-16.png)
+![chlimage_1-365](assets/chlimage_1-365.png)
 
 #### Problemen oplossen: Doorsturen mislukt {#troubleshooting-fail-to-redirect}
 
-De &#39;**$**&#39; aan het einde van de reguliere-expressie- `sling:match`tekenreeks is van cruciaal belang, zodat alleen exact `https://localhost:4503/` wordt toegewezen. Anders wordt de omleidingswaarde toegevoegd aan elk pad dat mogelijk bestaat na de server:poort in de URL. Wanneer AEM naar de aanmeldingspagina probeert om te leiden, mislukt dit.
+De &#39;**$**&#39; aan het einde van de reguliere-expressiereeks `sling:match` is van cruciaal belang, zodat alleen exact `https://localhost:4503/` wordt toegewezen. Anders wordt de omleidingswaarde toegevoegd aan elk pad dat mogelijk bestaat na de server:poort in de URL. Wanneer AEM naar de aanmeldingspagina probeert om te leiden, mislukt dit.
 
 ## Het aanpassen van de communautaire Plaats {#modifying-the-community-site}
 
@@ -332,6 +338,7 @@ Vergeet niet de site op te **slaan** en opnieuw te **publiceren** nadat u een wi
 >[!NOTE]
 >
 >Als u niet bekend bent met AEM, bekijkt u de documentatie over [basisverwerking](/help/sites-authoring/basic-handling.md) en een [handleiding voor het ontwerpen van pagina](/help/sites-authoring/qg-page-authoring.md)&#39;s.
+
 
 ### Een catalogus toevoegen {#add-a-catalog}
 
@@ -350,13 +357,14 @@ Selecteer het deelvenster STRUCTUUR om een catalogus toe te voegen of een bestaa
 * **URL**: `catalog`
 
 * **Alle naamruimten** selecteren: blijven staan.
-* Selecteer **Opslaan**
 
-![chlimage_1-17](assets/chlimage_1-17.png)
+* Selecteer **Opslaan**.
+
+![chlimage_1-299](assets/chlimage_1-299.png)
 
 Gebruik het pictogram Positie om de functie Catalog naar de tweede positie te verplaatsen, na Toewijzingen.
 
-![chlimage_1-18](assets/chlimage_1-18.png)
+![chlimage_1-300](assets/chlimage_1-300.png)
 
 Selecteer **Opslaan** in de rechterbovenhoek om de wijzigingen in de communitysite op te slaan.
 

@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 translation-type: tm+mt
-source-git-commit: 00c98c4c1178f88844f6bec8a214d096205c58cd
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '4719'
+ht-degree: 0%
 
 ---
 
@@ -47,7 +50,7 @@ Voordat u begint met het configureren of coderen van uw component, moet u het vo
 Voordat een serieuze discussie begint met het ontwikkelen van componenten, moet u weten welke interface uw auteurs zullen gebruiken:
 
 * **Interface met aanraakbediening**
-   [De standaardgebruikersinterface](/help/sites-developing/touch-ui-concepts.md) is gebaseerd op de uniforme gebruikerservaring voor de Adobe Marketing Cloud, waarbij gebruik wordt gemaakt van de onderliggende technologieën van de gebruikersinterface [van](/help/sites-developing/touch-ui-concepts.md#coral-ui) Coral en de gebruikersinterface van [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui).
+   [De standaardgebruikersinterface](/help/sites-developing/touch-ui-concepts.md) is gebaseerd op de verenigde gebruikerservaring voor de Adobe Marketing Cloud, gebruikend de onderliggende technologieën van [Koral UI](/help/sites-developing/touch-ui-concepts.md#coral-ui) en [Granite UI](/help/sites-developing/touch-ui-concepts.md#granite-ui).
 * **Klassieke UI** Gebruikersinterface die op technologie ExtJS wordt gebaseerd die met AEM 6.4 werd verouderd.
 
 Zie de Aanbevelingen van de Interface [UI voor Klanten](/help/sites-deploying/ui-recommendations.md) voor meer details.
@@ -57,9 +60,10 @@ Componenten kunnen worden geïmplementeerd ter ondersteuning van de interface me
 Daarom zullen we op deze pagina de basisbeginselen van beide, en hoe ze te herkennen, aan de orde stellen.
 
 >[!NOTE]
-> Adobe raadt u aan de interface met aanraakbediening te gebruiken om te profiteren van de nieuwste technologie. [AEM Modernination Tools&amp; (moderniatzion-tools.md) kan migratie gemakkelijker maken.
+>
+>Adobe raadt u aan de interface met aanraakbediening te gebruiken om te profiteren van de nieuwste technologie. [AEM Modernination Tools&amp; (moderniatzion-tools.md) kan migratie gemakkelijker maken.
 
-### Opmaak voor Content Logic en rendering {#content-logic-and-rendering-markup}
+### Opmaak voor Content Logic en rendering  {#content-logic-and-rendering-markup}
 
 Het wordt aanbevolen de code die verantwoordelijk is voor opmaak en rendering, gescheiden te houden van de code die de logica regelt die wordt gebruikt om de inhoud van de component te selecteren.
 
@@ -550,7 +554,7 @@ De configuratie wordt gebruikt voor zowel de aanraakinterface als de klassieke g
 
 Het bewerkingsgedrag van een component wordt geconfigureerd door een `cq:editConfig` knooppunt van het type toe te voegen `cq:EditConfig` onder het componentknooppunt (van het type `cq:Component`) en door specifieke eigenschappen en onderliggende knooppunten toe te voegen. De volgende eigenschappen en onderliggende knooppunten zijn beschikbaar:
 
-* [ Eigenschappen `cq:editConfig` van](#configuring-with-cq-editconfig-properties)knooppunten:
+* [ `cq:editConfig` knoopeigenschappen](#configuring-with-cq-editconfig-properties):
 
    * `cq:actions` ( `String array`): definieert de handelingen die op de component kunnen worden uitgevoerd.
    * `cq:layout` ( `String`): : definieert hoe de component wordt bewerkt in de klassieke UI.
@@ -988,10 +992,10 @@ Het `cq:listeners` knooppunt (knooppunttype `cq:EditListenersConfig`) definieert
 >[!NOTE]
 >
 >In het geval van geneste componenten gelden er bepaalde beperkingen voor handelingen die zijn gedefinieerd als eigenschappen op het `cq:listeners` knooppunt:
-
+>
 >* Voor geneste componenten *moeten* de waarden van de volgende eigenschappen `REFRESH_PAGE`: >
->* `aftermove`
-* `aftercopy`
+>  * `aftermove`
+>  * `aftercopy`
 
 
 De gebeurtenishandler kan worden geïmplementeerd met een aangepaste implementatie. Bijvoorbeeld (waarbij `project.customerAction` een statische methode is):
@@ -1003,7 +1007,8 @@ Het volgende voorbeeld is gelijk aan de `REFRESH_INSERTED` configuratie:
 `afterinsert="function(path, definition) { this.refreshCreated(path, definition); }"`
 
 >[!NOTE]
-Voor klassieke UI, om te zien welke parameters in de managers kunnen worden gebruikt, verwijs naar de `before<action>` en `after<action>` gebeurtenissectie van de [ `CQ.wcm.EditBar`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditBar) en [ `CQ.wcm.EditRollover`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditRollover) widgetdocumentatie.
+>
+>Voor klassieke UI, om te zien welke parameters in de managers kunnen worden gebruikt, verwijs naar de `before<action>` en `after<action>` gebeurtenissectie van de [ `CQ.wcm.EditBar`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditBar) en [ `CQ.wcm.EditRollover`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditRollover) widgetdocumentatie.
 
 Met de volgende configuratie wordt de pagina vernieuwd nadat de component is verwijderd, bewerkt, ingevoegd of verplaatst:
 

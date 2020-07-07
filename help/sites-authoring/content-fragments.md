@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 4049a7a5-4b33-4462-a25f-3c0daeb6a8a9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 759d2dd8d12861757bf7f54b77d8d3ca170887fe
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
 source-wordcount: '1158'
 ht-degree: 5%
@@ -82,7 +82,7 @@ Met de inhoudsfragmenten kunt u:
    >
    >Een andere methode is om een specifiek inhoudsfragment rechtstreeks naar de pagina te slepen. Hiermee wordt automatisch de bijbehorende component (inhoudsfragment) gemaakt.
 
-1. In eerste instantie wordt de inhoud van het **hoofdelement** en de **stramienpagina** (variatie) weergegeven. U kunt desgewenst andere elementen en/of variaties [](#selecting-the-element-or-variation) selecteren.
+1. In eerste instantie wordt de inhoud van het **hoofdelement** en de **Master** (variatie) weergegeven. U kunt desgewenst andere elementen en/of variaties [](#selecting-the-element-or-variation) selecteren.
 
    ![cfm-6420-01](assets/cfm-6420-01.png)
 
@@ -173,7 +173,9 @@ Voor tussenliggende inhoud kunt u:
 >Als dit gebeurt, wordt de tussenliggende inhoud als volgt bewaard:
 >
 >* Tussen componenten heeft een absolute positie binnen de reeks componenten in de fragmentstroom. Deze positie verandert niet, zelfs niet wanneer de inhoud van alinea&#39;s in het fragment verandert.
-   >  Hierdoor kan het lijken alsof de relatieve positionering is gewijzigd, aangezien de tussenliggende alinea&#39;s geen contextafhankelijke relatie hebben met de (fragment)alinea&#39;s naast de alinea&#39;s.
+>
+>  
+Hierdoor kan het lijken alsof de relatieve positionering is gewijzigd, aangezien de tussenliggende alinea&#39;s geen contextafhankelijke relatie hebben met de (fragment)alinea&#39;s naast de alinea&#39;s.
 >* Tenzij de twee alinea&#39;s met elkaar in strijd zijn; in dat geval wordt de tussenliggende inhoud niet weergegeven (hoewel deze inhoud intern nog steeds aanwezig is).
 >
 

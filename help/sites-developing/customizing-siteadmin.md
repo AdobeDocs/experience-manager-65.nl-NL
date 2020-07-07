@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: aeb37103-541d-4235-8a78-980b78c8de66
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4d47310ebf9d450de52c925642978ba92ef9c1d4
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '798'
+ht-degree: 0%
 
 ---
 
@@ -109,21 +112,20 @@ public class StarredListInfoProvider implements ListInfoProvider {
 >
 >* Uw implementatie moet op basis van het ingediende verzoek en/of de bron beslissen of de informatie al dan niet aan het JSON-object moet worden toegevoegd.
 >* Als uw `ListInfoProvider` implementatie een eigenschap definieert die al in het reactieobject bestaat, wordt de waarde ervan overschreven door de eigenschap die u opgeeft.
-   >  U kunt [de dienstrangschikking](https://www.osgi.org/javadoc/r2/org/osgi/framework/Constants.html#SERVICE_RANKING) gebruiken om de uitvoeringsorde van veelvoudige `ListInfoProvider` implementaties te beheren.
 >
-
-
+>  
+U kunt [de dienstrangschikking](https://www.osgi.org/javadoc/r2/org/osgi/framework/Constants.html#SERVICE_RANKING) gebruiken om de uitvoeringsorde van veelvoudige `ListInfoProvider` implementaties te beheren.
 
 ### De nieuwe service testen {#testing-the-new-service}
 
 Wanneer u de console van het Beleid van Websites opent en door uw plaats doorbladert, geeft browser een ajax vraag uit om het voorwerp te krijgen JSON dat wordt gebruikt om de console te bouwen. Wanneer u bijvoorbeeld naar de `/content/geometrixx` map bladert, wordt het volgende verzoek naar de AEM-server verzonden om de console te maken:
 
-[https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
+[https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
 
 Om ervoor te zorgen dat de nieuwe dienst na het hebben opgesteld de bundel die het bevat loopt:
 
 1. Verwijs uw browser naar de volgende URL:
-   [https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
+   [https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
 
 1. In de reactie moeten de nieuwe eigenschappen als volgt worden weergegeven:
 

@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 10940000-808a-48ae-8e46-61eccef71eab
 legacypath: /content/docs/en/aem/6-2/administer/operations/page-authoring/configuring-responsive-layouting
 translation-type: tm+mt
-source-git-commit: 710958ceecc8bbbbdae5e836ec0571a9eeaf6a9a
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '1324'
+ht-degree: 1%
 
 ---
 
@@ -113,10 +116,9 @@ Als u een bestaand project (met bestaande inhoud) migreert, moet u:
 >
 >* Onderbrekingspunten toevoegen aan de sjablonen
 >* Voeg dezelfde onderbrekingspunten toe aan de bestaande pagina&#39;s
-   >  Aangezien de overerving in verrichting is, kunt u dit tot de wortelpagina van uw inhoud beperken.
 >
-
-
+>  
+Aangezien de overerving in verrichting is, kunt u dit tot de wortelpagina van uw inhoud beperken.
 
 #### Onderbrekingspunten configureren met behulp van CRXDE Lite {#configuring-breakpoints-using-crxde-lite}
 

@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9df949b0069dad7fc1627977097cec5546cd845f
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
-source-wordcount: '1450'
+source-wordcount: '1446'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ U kunt relationele databases configureren met AEM Web Console Configuration. Ga 
    * Java-klassenaam voor het JDBC-stuurprogramma
    * URI voor JDBC-verbinding
    * Gebruikersnaam en wachtwoord om verbinding te maken met het JDBC-stuurprogramma
-   >[!NOTE] {graybox=&quot;true&quot;}
+   >[!NOTE]
    >
    >Zorg ervoor dat u gevoelige informatie zoals wachtwoorden codeert alvorens de gegevensbron te vormen. Coderen:
    >
@@ -79,7 +79,7 @@ U kunt het AEM-gebruikersprofiel configureren met de configuratie Gebruikersprof
 
    * `name=profile/phoneNumber,type=string`
    * `name=profile/empLocation/*/city,type=string`
-   >[!NOTE] {graybox=&quot;true&quot;}
+   >[!NOTE]
    >
    >In het bovenstaande voorbeeld ***** worden alle knooppunten onder het `profile/empLocation/` knooppunt in het AEM-gebruikersprofiel in de CRXDE-structuur aangegeven. Dit betekent dat het formuliergegevensmodel toegang heeft tot de `city` eigenschap van het type `string` in elk knooppunt onder het `profile/empLocation/` knooppunt. Nochtans, moeten de knopen die het gespecificeerde bezit bevatten een verenigbare structuur volgen.
 

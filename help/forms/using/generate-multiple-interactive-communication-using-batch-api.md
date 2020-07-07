@@ -6,7 +6,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
 translation-type: tm+mt
-source-git-commit: 5a97dd9a34d42bfbf3e2185763e4040e1190f297
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
 source-wordcount: '2197'
 ht-degree: 1%
@@ -68,7 +68,7 @@ U combineert een record met een interactieve communicatiesjabloon om een interac
 
 ### De batch-API gebruiken met gecontroleerde mappen {#using-the-batch-api-watched-folders}
 
-AEM Forms biedt een service voor gecontroleerde mappen die is geconfigureerd voor het gebruik van de batch-API, zodat u deze API gemakkelijk kunt ervaren. U kunt de service openen via de interface van AEM Forms om meerdere interactieve communicatie te genereren. U kunt ook naar wens aangepaste services maken. U kunt de hieronder vermelde methoden gebruiken om Batch API met gecontroleerde map te gebruiken:
+Om het gemakkelijk te maken om API te ervaren, verstrekt de AEM Forms een Gecontroleerde dienst van de Omslag die wordt gevormd om de Partij API, uit de doos te gebruiken. U kunt tot de dienst via AEM Forms UI toegang hebben om veelvoudige interactieve mededelingen te produceren. U kunt ook naar wens aangepaste services maken. U kunt de hieronder vermelde methoden gebruiken om Batch API met gecontroleerde map te gebruiken:
 
 * Invoergegevens (records) opgeven in JSON-bestandsindeling voor een interactieve communicatie
 * Gebruik invoergegevens (records) die zijn opgeslagen in een externe gegevensbron en die via een formuliergegevensmodel zijn benaderd voor een interactieve communicatie
@@ -177,7 +177,7 @@ Voordat u de Java-servlet implementeert, moet u ervoor zorgen dat u een interact
 
 1. Meld u aan bij uw AEM-instantie en maak een interactieve communicatie. Als u de interactieve communicatie wilt gebruiken die in de voorbeeldcode hieronder wordt vermeld, [klikt u hier](assets/SimpleMediumIC.zip).
 1. [Ontwikkel en implementeer een AEM-project met Apache Maven](https://helpx.adobe.com/experience-manager/using/maven_arch13.html) op uw AEM-instantie.
-1. Voeg [AEM Forms Client SDK versie 6.0.12](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) of hoger toe aan de lijst met afhankelijkheden van het POM-bestand van uw AEM-project. Bijvoorbeeld,
+1. Voeg versie 6.0.12 [of hoger van SDK van de Cliënt van](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) AEM Forms in gebiedenlijst van POM- dossier van uw AEM- project toe. Bijvoorbeeld,
 
    ```XML
        <dependency>
@@ -361,4 +361,5 @@ U slaat de gegevens niet alleen op het bestandssysteem op, maar u slaat JSON-bes
    `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=http://localhost:8000/somesamplexmlfile.xml`
 
 >[!NOTE]
-> Alleen het CRX-protocol is standaard ingeschakeld. Om andere gesteunde protocollen toe te laten, zie het [Vormen van vooraf ingevulde dienst gebruikend de Manager](https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#ConfiguringprefillserviceusingConfigurationManager)van de Configuratie.
+>
+>Alleen het CRX-protocol is standaard ingeschakeld. Om andere gesteunde protocollen toe te laten, zie het [Vormen van vooraf ingevulde dienst gebruikend de Manager](https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#ConfiguringprefillserviceusingConfigurationManager)van de Configuratie.

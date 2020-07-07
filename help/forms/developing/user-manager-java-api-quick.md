@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: e0c20fd2-b084-4f61-936c-5282826a8d3d
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '475'
+ht-degree: 0%
 
 ---
 
@@ -33,11 +36,11 @@ Java API Quick Start (SOAP) is beschikbaar voor de gebruikersbeheer-API.
 
 [Snel starten (SOAP-modus): De voorkeursknooppunten via programmacode beheren met de Java API](user-manager-java-api-quick.md#quick-start-soap-mode-programmatically-managing-the-preferences-nodes-using-the-java-api)
 
-De verrichtingen van de Vormen van AEM kunnen worden uitgevoerd gebruikend sterk-getypte API van Vormen AEM en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
+De verrichtingen van AEM Forms kunnen worden uitgevoerd gebruikend AEM Forms sterk-getypte API en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
 
 >[!NOTE]
 >
-> Snel starten in Programmeren met AEM-formulieren is gebaseerd op het document als u een ander besturingssysteem gebruikt, zoals Unix, vervangt u Windows-specifieke paden door paden die worden ondersteund door het desbetreffende besturingssysteem. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Snel starten in Programmeren met AEM-formulieren is gebaseerd op het document als u een ander besturingssysteem gebruikt, zoals Unix, vervangt u Windows-specifieke paden door paden die worden ondersteund door het desbetreffende besturingssysteem. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Snel starten (SOAP-modus): Gebruikers toevoegen met de Java API {#quick-start-soap-mode-adding-users-using-the-java-api}
 
@@ -159,7 +162,7 @@ In het volgende codevoorbeeld wordt een gebruiker met de naam Wendy Blue toegevo
 
 ## Snel starten (SOAP-modus): Gebruikers verwijderen met de Java API {#quick-start-soap-mode-deleting-users-using-the-java-api}
 
-In het volgende codevoorbeeld wordt een gebruiker met de naam Wendy Blue verwijderd uit AEM Forms. (Zie Gebruikers [verwijderen](/help/forms/developing/users.md#deleting-users).)
+In het volgende codevoorbeeld wordt een gebruiker met de naam Wendy Blue van AEM Forms verwijderd. (Zie Gebruikers [verwijderen](/help/forms/developing/users.md#deleting-users).)
 
 ```as3
  /*
@@ -749,7 +752,7 @@ In het volgende codevoorbeeld wordt een gebruiker met de naam Wendy Blue toegevo
 
 ## Snel starten (SOAP-modus): Groepen maken met de Java API {#quick-start-soap-mode-creating-groups-using-the-java-api}
 
-In het volgende codevoorbeeld wordt een groep met de naam AdobeGroup gemaakt naar AEM Forms. (Zie [Groepen](/help/forms/developing/users.md#creating-groups)maken.)
+In het volgende codevoorbeeld wordt een groep met de naam AdobeGroup gemaakt voor AEM Forms. (Zie [Groepen](/help/forms/developing/users.md#creating-groups)maken.)
 
 ```as3
  /*

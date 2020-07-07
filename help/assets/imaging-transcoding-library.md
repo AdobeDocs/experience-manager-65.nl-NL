@@ -3,7 +3,7 @@ title: Afbeeldingstransformatiebibliotheek
 description: Leer hoe u de Imaging Transcoding Library van Adobe configureert en gebruikt, een oplossing voor beeldverwerking die kernfuncties voor het verwerken van afbeeldingen kan uitvoeren, zoals codering, transcodering, het resamplen van afbeeldingen en het vergroten of verkleinen van afbeeldingen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: bccc937c1e1a349ab292a748c3c7b9d0c68b6199
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 0%
@@ -76,7 +76,7 @@ Als u de bibliotheek wilt configureren, maakt u een .conf-bestand om de biblioth
 
 1. Download het pakket [Imaging Transcoding Library van Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) en installeer het met de Package Manager. Het pakket is compatibel met Experience Manager 6.5.
 
-1. Meld u aan bij de webconsole en klik op een bundel-id voor `com.day.cq.dam.cq-dam-switchengine`**[!UICONTROL OSGi > Bundles]**. U kunt ook de `https://[aem_server:[port]/system/console/bundles/` URL openen om de bundelconsole te openen. Zoek `com.day.cq.dam.cq-dam-switchengine` bundel en id.
+1. Meld u aan bij de webconsole en klik op `com.day.cq.dam.cq-dam-switchengine`> **[!UICONTROL OSGi]** **[!UICONTROL Bundles]**. U kunt ook de `https://[aem_server:[port]/system/console/bundles/` URL openen om de bundelconsole te openen. Zoek `com.day.cq.dam.cq-dam-switchengine` bundel en id.
 
 1. Zorg ervoor dat alle vereiste bibliotheken zijn uitgepakt, door de map te controleren met de opdracht `ls -la /aem65/author/crx-quickstart/launchpad/felix/bundle<id>/data/binaries/`, waar de mapnaam is samengesteld met de bundle-id. De opdracht is bijvoorbeeld `ls -la /aem65/author/crx-quickstart/launchpad/felix/bundle588/data/binaries/` of bundle id `588`is.
 
@@ -105,7 +105,7 @@ Als u de bibliotheek wilt configureren, maakt u een .conf-bestand om de biblioth
 
 Werk de [!UICONTROL DAM Update Asset] workflow bij om de bibliotheek te gebruiken voor het verwerken van afbeeldingen.
 
-1. Selecteer in Experience Manager-gebruikersinterface **[!UICONTROL Tools > Workflow > Models]**.
+1. Selecteer in de gebruikersinterface van Experience Manager **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
 
 1. Open vanaf de **[!UICONTROL Workflow Models]** pagina het **[!UICONTROL DAM Update Asset]** workflowmodel in de bewerkingsmodus.
 

@@ -3,9 +3,9 @@ title: Een persoonlijke map maken en delen in Adobe Experience Manager.
 description: Leer hoe u een persoonlijke map maakt in de Adobe Experience Manager Assets en deze deelt met andere gebruikers en hoe u hen verschillende rechten toekent.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '490'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ In de gebruikersinterface Adobe Experience Manager Assets kunt u een persoonlijk
 
    >[!NOTE]
    >
-   > De persoonlijke omslag heeft minstens één lid met de rol van de Eigenaar. Daarom kan de beheerder niet alle eigenaarleden uit een privé omslag verwijderen. Nochtans, om bestaande eigenaars (en beheerder zelf) uit de privé omslag te verwijderen moet de beheerder een andere gebruiker als eigenaar toevoegen.
+   >De privé omslag heeft minstens één lid met de rol van de Eigenaar. Daarom kan de beheerder niet alle eigenaarleden uit een privé omslag verwijderen. Nochtans, om bestaande eigenaars (en beheerder zelf) uit de privé omslag te verwijderen moet de beheerder een andere gebruiker als eigenaar toevoegen.
 
 1. Klik op **[!UICONTROL Save]**. Afhankelijk van de rol die u toewijst, wordt aan de gebruiker een reeks rechten toegewezen aan uw persoonlijke map wanneer de gebruiker zich aanmeldt bij Middelen.
 1. Klik **[!UICONTROL Ok]** om het bevestigingsbericht te sluiten.

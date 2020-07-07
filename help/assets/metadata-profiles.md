@@ -3,7 +3,7 @@ title: Metagegevensprofielen om de metagegevensvereisten van elementen aan te pa
 description: Informatie over metagegevensprofielen voor elementen. Leer hoe u een metagegevensprofiel maakt en toepast op mapelementen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '1310'
 ht-degree: 16%
@@ -17,7 +17,7 @@ Met een metagegevensprofiel kunt u standaardmetagegevens toepassen op elementen 
 
 ## Een metagegevensprofiel toevoegen {#adding-a-metadata-profile}
 
-1. Navigeer naar **[!UICONTROL Tools > Assets > Metadata Profiles]** en klik **[!UICONTROL Create]**.
+1. Navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Profiles]** en klik **[!UICONTROL Create]**.
 1. Voer een titel in voor Metagegevensprofiel, bijvoorbeeld Voorbeeldmetagegevens, en klik op **[!UICONTROL Create]**. De [!UICONTROL Edit Form] voor het metagegevensprofiel wordt weergegeven.
 
    ![chlimage_1-197](assets/chlimage_1-480.png)
@@ -65,7 +65,7 @@ Met een metagegevensprofiel kunt u standaardmetagegevens toepassen op elementen 
 
    ![chlimage_1-203](assets/chlimage_1-486.png)
 
-1. Klik op **[!UICONTROL Copy]** de werkbalk.
+1. Klik op **[!UICONTROL Copy]** op de werkbalk.
 1. Voer in het **[!UICONTROL Copy Metadata Profile]** dialoogvenster een titel in voor de nieuwe kopie van het metagegevensprofiel.
 1. Klik op **[!UICONTROL Copy]**. De kopie van het metadataprofiel wordt weergegeven in de lijst met profielen op de pagina **[!UICONTROL Metadata Profiles]**.
 
@@ -106,7 +106,7 @@ U kunt elementen in een map opnieuw verwerken die al een bestaand videoprofiel h
 
 Voer de stappen uit om het metagegevensprofiel toe te passen:
 
-1. Klik op het logo van Experience Manager en navigeer naar **[!UICONTROL Tools > Assets > Metadata Profiles]**.
+1. Klik op het Experience Manager-logo en navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Profiles]**.
 1. Selecteer het metagegevensprofiel dat u wilt toepassen op een of meerdere mappen.
 
    ![chlimage_1-207](assets/chlimage_1-490.png)
@@ -126,7 +126,7 @@ Voer de stappen uit om het metagegevensprofiel toe te passen:
 
 ### Een metagegevensprofiel algemeen toepassen {#applying-a-metadata-profile-globally}
 
-Naast het toepassen van een profiel op een map, kunt u er ook een globaal toepassen, zodat het geselecteerde profiel wordt toegepast op inhoud die wordt geüpload naar de middelen van Experience Manager in elke map.
+Naast het toepassen van een profiel op een map, kunt u er ook een globaal toepassen, zodat het geselecteerde profiel wordt toegepast op inhoud die in Experience Manager-elementen in een map is geüpload.
 
 U kunt elementen opnieuw verwerken in een map die al een bestaand metagegevensprofiel heeft dat u later hebt gewijzigd. Zie Elementen [opnieuw verwerken in een map nadat u het verwerkingsprofiel](processing-profiles.md#reprocessing-assets)hebt bewerkt.
 
@@ -148,7 +148,7 @@ You can remove a metadata profile from a folder from within the **[!UICONTROL To
 
 ### Metaprofielen uit mappen verwijderen via de gebruikersinterface Profielen {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
-1. Klik op het logo van Experience Manager en navigeer naar **[!UICONTROL Tools > Assets > Metadata Profiles]**.
+1. Klik op het Experience Manager-logo en navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Profiles]**.
 1. Selecteer het metagegevensprofiel dat u uit een of meerdere mappen wilt verwijderen.
 1. Click **[!UICONTROL Remove Metadata Profile from Folder(s)]** and select the folder or multiple folders you want use to remove a profile from and click **[!UICONTROL Done]**.
 
@@ -156,11 +156,11 @@ You can remove a metadata profile from a folder from within the **[!UICONTROL To
 
 ### Metagegevensprofielen uit mappen verwijderen via eigenschappen {#removing-metadata-profiles-from-folders-via-properties}
 
-1. Klik op het logo van Experience Manager en navigeer **[!UICONTROL Assets]** naar de map waaruit u een metagegevensprofiel wilt verwijderen.
+1. Klik op het Experience Manager-logo en navigeer **[!UICONTROL Assets]** naar de map waarvan u een metagegevensprofiel wilt verwijderen.
 1. Klik in de map op het vinkje om het te selecteren en klik vervolgens **[!UICONTROL Properties]**.
 1. Selecteer het tabblad **[!UICONTROL Metadata Profiles]**, selecteer **[!UICONTROL None]** in het vervolgkeuzemenu en klik op **[!UICONTROL Save]**. Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
 
-## Beperkingen en aanbevolen procedures {#limitations-best-practices-tips}
+## Limitations and best practices {#limitations-best-practices-tips}
 
 * U kunt al bestaande metagegevensprofielen hebben sinds de upgrade naar [!DNL Experience Manager] 6.5. Als u een dergelijk profiel na de upgrade toepast in de map [!UICONTROL Properties] op het [!UICONTROL Metadata Profiles] tabblad, worden de velden voor metagegevens niet weergegeven. Als u echter een nieuw metagegevensprofiel toepast, worden de formuliervelden weergegeven, maar niet beschikbaar zoals u had verwacht. Er gaat geen functionaliteit verloren, maar als u de (niet-beschikbare) formuliervelden wilt zien, bewerkt en slaat u de bestaande metagegevensprofielen op.
 

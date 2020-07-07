@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 999ae2be-56ba-48c1-861b-8d4c991a0206
 translation-type: tm+mt
-source-git-commit: 68ea2335a8466c3c23b766efb1a04b6a38d7f670
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
 source-wordcount: '1180'
 ht-degree: 0%
@@ -45,7 +45,7 @@ U kunt de PDF Generator-webpagina&#39;s gebruiken om bestanden te converteren.
 
 ### Informatie over XMP-bestanden {#about-xmp-files}
 
-PDF-documenten die in PDF Generator worden gemaakt in Acrobat 5.0 of hoger, bevatten documentmetagegevens in XML-indeling. *Metagegevens* bevatten informatie over het document en de inhoud ervan, zoals de naam van de auteur, trefwoorden en copyrightinformatie die zoekfuncties kunnen gebruiken.
+PDF-documenten die door PDF Generator worden gemaakt in Acrobat 5.0 of hoger, bevatten documentmetagegevens in XML-indeling. *Metagegevens* bevatten informatie over het document en de inhoud ervan, zoals de naam van de auteur, trefwoorden en copyrightinformatie die zoekfuncties kunnen gebruiken.
 
 De metagegevens van het document bevatten (maar zijn niet beperkt tot) informatie die ook wordt weergegeven op het tabblad Beschrijving van het dialoogvenster Documenteigenschappen in Acrobat. Wijzigingen die worden aangebracht op het tabblad Beschrijving, worden weerspiegeld in de metagegevens van het document. Metagegevens van documenten kunnen worden uitgebreid en gewijzigd met producten van derden.
 
@@ -66,19 +66,21 @@ Als het ZIP-bestand meer dan één HTML-bestand op het laagste niveau van de map
 >
 >* Voor de functie HTML naar PDF zijn bepaalde lettertypen in de systeemmap met lettertypen vereist. Op Linux-, Solaris- en AIX-systemen moet de systeemmap met lettertypen het Courier-lettertype bevatten. Op Windows-systemen moet de systeemmap voor lettertypen Times New Roman bevatten.
    >
-   > 
+   >
 * (Alleen op UNIX gebaseerd systeem) Een van de volgende Japanse lettertypen moet beschikbaar zijn op de AEM Forms-server om een webpagina met een Japans lettertype te converteren naar een PDF-document.
    >
-   >   
-   * &quot;Sazanami Gothic&quot;
-   >   * &quot;Kozuka Gothic Pro-VI&quot;
-   >   * &quot;Kozuka Mincho Pro-VI&quot;
-   >   * &quot;Sazanami Gothic&quot;
-   >   * &quot;Kozuka Mincho Pr6N&quot;
-   >   * &quot;Sazanami Mincho&quot;
-   >   * &quot;Adobe Heiti Std&quot;
-   >   * &quot;Adobe Song Std&quot;
->* Als u een bestand vanaf het lokale bestandssysteem wilt uploaden, gebruikt u de optie Bestand uploaden op de HTML-pagina naar de PDF-pagina.
+   >  
+* &quot;Sazanami Gothic&quot;
+>  * &quot;Kozuka Gothic Pro-VI&quot;
+>  * &quot;Kozuka Mincho Pro-VI&quot;
+>  * &quot;Sazanami Gothic&quot;
+>  * &quot;Kozuka Mincho Pr6N&quot;
+>  * &quot;Sazanami Mincho&quot;
+>  * &quot;Adobe Heiti Std&quot;
+>  * &quot;Adobe Song Std&quot;
+   >
+   >
+* Als u een bestand vanaf het lokale bestandssysteem wilt uploaden, gebruikt u de optie Bestand uploaden op de HTML-pagina naar de PDF-pagina.
 
 
 1. Klik in de beheerconsole op Services > PDF Generator > HTML to PDF.

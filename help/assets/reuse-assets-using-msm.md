@@ -4,10 +4,10 @@ description: Gebruik elementen op meerdere pagina's/mappen die zijn afgeleid van
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '3265'
-ht-degree: 10%
+ht-degree: 11%
 
 ---
 
@@ -61,14 +61,14 @@ MSM onderhoudt een live relatie tussen het bronelement en zijn live kopieën, zo
 
 Voer een van de volgende twee handelingen uit om een live kopie van een of meer bronelementen of -mappen te maken:
 
-* Methode 1: Selecteer de bronelementen en klik op **[!UICONTROL Create > Live Copy]** de werkbalk boven in het scherm.
-* Methode 2: Klik in de [!DNL Experience Manager] gebruikersinterface in de **[!UICONTROL Create > Live Copy]** rechterbovenhoek van de interface.
+* Methode 1: Selecteer de bronelementen en klik op **[!UICONTROL Create]** > **[!UICONTROL Live Copy]** van de werkbalk boven in het scherm.
+* Methode 2: Klik in de [!DNL Experience Manager] gebruikersinterface **[!UICONTROL Create]** > **[!UICONTROL Live Copy]** in de rechterbovenhoek van de interface.
 
 U kunt live kopieën van een middel of map één voor één maken. U kunt live kopieën maken die zijn afgeleid van een middel of een map die zelf een live kopie is. Inhoudsfragmenten (CF&#39;s) worden niet ondersteund voor de gebruikszaak. Wanneer het proberen om hun levende exemplaren tot stand te brengen, worden CFs gekopieerd over zoals is zonder enige verhouding. De gekopieerde CF&#39;s zijn een momentopname in de tijd en worden niet bijgewerkt wanneer oorspronkelijke CF&#39;s worden bijgewerkt.
 
 Ga als volgt te werk om live kopieën te maken met de eerste methode:
 
-1. Selecteer bronelementen of -mappen. Klik **[!UICONTROL Create > Live Copy]** op de werkbalk.
+1. Selecteer bronelementen of -mappen. From the toolbar, click **[!UICONTROL Create]** > **[!UICONTROL Live Copy]**.
 
    ![Live kopie maken van Experience Manager-interface](assets/create_lc1.png)
 
@@ -80,7 +80,7 @@ Ga als volgt te werk om live kopieën te maken met de eerste methode:
 
 Ga als volgt te werk om live kopieën te maken met de tweede methode:
 
-1. Klik in de [!DNL Experience Manager] interface in de rechterbovenhoek op **[!UICONTROL Create > Live Copy]**.
+1. Klik in de [!DNL Experience Manager] interface in de rechterbovenhoek op **[!UICONTROL Create]** > **[!UICONTROL Live Copy]**.
 
    ![Live kopie maken van Experience Manager-interface](assets/create_lc2.png)
 
@@ -112,7 +112,7 @@ De volgende twee methoden werken voor elementen en mappen:
 
 Voer de volgende stappen uit om de informatie en status van een live kopie van een element of een map te controleren.
 
-1. Selecteer een actief exemplaar of een map voor live kopiëren. Klik op **[!UICONTROL Properties]** de werkbalk. U kunt ook de sneltoets gebruiken `p`.
+1. Selecteer een actief exemplaar of een map voor live kopiëren. Klik op **[!UICONTROL Properties]** op de werkbalk. U kunt ook de sneltoets gebruiken `p`.
 1. Klik op **[!UICONTROL Live Copy]**. U kunt het pad van de bron, de status van de schorsing, de synchronisatiestatus, de laatste uitroldatum en de gebruiker die de laatste uitrol heeft uitgevoerd, controleren.
 
    ![Informatie en status van live-kopieën worden in Eigenschappen op een console weergegeven](assets/lcfolder_info_properties.png)
@@ -127,7 +127,7 @@ Voer de volgende stappen uit om de informatie en status van een live kopie van e
 
 [!DNL Experience Manager] beschikt over een console waarmee u de beelden van alle live kopieën van een bronmap kunt controleren. Deze console geeft de status van alle onderliggende elementen weer.
 
-1. Selecteer een bronmap. Klik op **[!UICONTROL Properties]** de werkbalk. U kunt ook de sneltoets gebruiken `p`.
+1. Selecteer een bronmap. Klik op **[!UICONTROL Properties]** op de werkbalk. U kunt ook de sneltoets gebruiken `p`.
 1. Klik op **[!UICONTROL Live Copy Source]**. Klik op **[!UICONTROL Live Copy Overview]** om de console te openen. Dit dashboard biedt een status op hoofdniveau van alle onderliggende assets.
 
    ![Statussen van live kopieën weergeven in Live Copy Console van bron](assets/livecopy-statuses.png)
@@ -188,7 +188,7 @@ Nadat een bron wordt gewijzigd, kunnen de veranderingen aan de levende exemplare
 
 U kunt een rollout-actie starten vanuit het bronelement en alle of enkele geselecteerde live kopieën bijwerken.
 
-1. Selecteer een actief exemplaar of een map voor live kopiëren. Klik op **[!UICONTROL Properties]** de werkbalk. U kunt ook de sneltoets gebruiken `p`.
+1. Selecteer een actief exemplaar of een map voor live kopiëren. Klik op **[!UICONTROL Properties]** op de werkbalk. U kunt ook de sneltoets gebruiken `p`.
 1. Klik op **[!UICONTROL Live Copy Source]**. Klik op **[!UICONTROL Rollout]** op de werkbalk bovenaan.
 1. Selecteer de live kopieën die u wilt bijwerken. Klik op **[!UICONTROL Rollout]**. Selecteer **[!UICONTROL Rollout Source and all Children]** als u de updates van de onderliggende elementen wilt uitvoeren.
 
@@ -254,7 +254,7 @@ U kunt alle lokale wijzigingen ongedaan maken en de status van het element herst
 
 U kunt de relatie tussen een bron en een live kopie volledig verwijderen met de actie Loskoppelen. De live kopie wordt een zelfstandig middel of een zelfstandige map nadat deze is losgekoppeld. Het wordt getoond als nieuw middel in [!DNL Experience Manager] interface, onmiddellijk na het losmaken. Voer de volgende stappen uit om een live kopie van de bron los te koppelen.
 
-1. Selecteer een actief of map voor live kopiëren. Klik op **[!UICONTROL Properties]** de werkbalk. U kunt ook de sneltoets gebruiken `p`.
+1. Selecteer een actief of map voor live kopiëren. Klik op **[!UICONTROL Properties]** op de werkbalk. U kunt ook de sneltoets gebruiken `p`.
 
 1. Klik op **[!UICONTROL Live Copy]**. Click **[!UICONTROL Detach]** in the toolbar. Klik **[!UICONTROL Detach]** in het dialoogvenster dat wordt weergegeven.
 
@@ -272,7 +272,7 @@ U kunt ook snel meerdere elementen in een live kopieermap loskoppelen van de **[
 
 Als een live-kopieermap meerdere elementen bevat, kan het lastig zijn acties op elk element te starten. U kunt de basishandelingen voor veel elementen snel starten vanuit [!UICONTROL Live Copy Console]. De bovenstaande methoden werken nog steeds voor afzonderlijke elementen.
 
-1. Selecteer een bronmap. Klik op **[!UICONTROL Properties]** de werkbalk. U kunt ook de sneltoets gebruiken `p`.
+1. Selecteer een bronmap. Klik op **[!UICONTROL Properties]** op de werkbalk. U kunt ook de sneltoets gebruiken `p`.
 1. Klik op **[!UICONTROL Live Copy Source]**. Klik op **[!UICONTROL Live Copy Overview]** om de console te openen.
 1. Selecteer in dit dashboard een asset van een livekopie van een map met livekopieën. Klik op de gewenste acties op de werkbalk. De beschikbare acties zijn **[!UICONTROL Synchronize]**, **[!UICONTROL Reset]**, **[!UICONTROL Suspend]** en **[!UICONTROL Detach]**. U kunt deze handelingen snel uitvoeren op elk element in een willekeurig aantal mappen met live kopieën dat een live relatie heeft met de geselecteerde bronmap.
 

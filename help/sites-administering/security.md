@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: e72da81b-4085-49b0-86c3-11ad48978a8a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 86d3f14ec9e99297ede0aa1c027884d7f73665bc
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
 source-wordcount: '5487'
 ht-degree: 0%
@@ -104,7 +104,7 @@ In de volgende tabellen wordt elk item vermeld, samen met:
   <tr>
    <td>stuwdammen</td>
    <td>Groeperen</td>
-   <td>Buiten-de-doos verwijzingsgroep voor een typische gebruiker van Elementen AEM. Leden van deze groep hebben de juiste rechten om het uploaden/delen van elementen en verzamelingen mogelijk te maken.</td>
+   <td>Buiten-de-doos verwijzingsgroep voor een typische gebruiker van AEM Assets. Leden van deze groep hebben de juiste rechten om het uploaden/delen van elementen en verzamelingen mogelijk te maken.</td>
    <td> </td>
   </tr>
   <tr>
@@ -232,7 +232,7 @@ De Lijsten van het Toegangsbeheer worden samengesteld uit de individuele toestem
 >
 >Voor gebruikers van CQ 5.3:
 >
->In tegenstelling tot eerdere CQ-versies, **mag het maken** en **verwijderen** niet langer worden toegestaan als een gebruiker alleen pagina&#39;s hoeft te wijzigen. Geef in plaats daarvan alleen de actie **modify** toe als u wilt dat gebruikers componenten op bestaande pagina&#39;s kunnen maken, wijzigen of verwijderen.
+>In tegenstelling tot eerdere CQ-versies, **mag het maken** en **verwijderen** niet langer worden toegestaan als een gebruiker alleen pagina&#39;s hoeft te wijzigen. Geef in plaats daarvan de actie **modify** alleen toe als u wilt dat gebruikers componenten op bestaande pagina&#39;s kunnen maken, wijzigen of verwijderen.
 >
 >Om achterwaartse compatibiliteitsredenen wordt bij de tests voor acties geen rekening gehouden met de speciale behandeling van knooppunten die **jcr:content** definiëren.
 
@@ -364,7 +364,7 @@ Hierdoor kunnen imitatoraccounts taken uitvoeren alsof ze de account gebruiken d
 >
 >De pagina&#39;s kunnen niet worden ontgrendeld door zich als de gebruiker voor te doen die de pagina heeft vergrendeld.
 
-### Best Practices {#best-practices}
+### Best practices voor {#best-practices}
 
 Hieronder worden de aanbevolen procedures beschreven wanneer u werkt met machtigingen en bevoegdheden:
 
@@ -493,11 +493,11 @@ Gebruik de volgende procedure om het wachtwoord van een gebruiker te wijzigen.
 >[!NOTE]
 >
 >U kunt de beveiligingsconsole niet gebruiken om het beheerwachtwoord te wijzigen. Als u het wachtwoord voor de beheerdersaccount wilt wijzigen, gebruikt u de [gebruikersconsole](/help/sites-administering/granite-user-group-admin.md#changing-the-password-for-an-existing-user) die Granite Operations biedt.
-> Als u AEM Forms on JEE gebruikt, moet u onderstaande instructies niet gebruiken om het wachtwoord te wijzigen in plaats van AEM Forms on JEE admin Console (/adminui) te gebruiken om het wachtwoord te wijzigen.
+>
+>Als u AEM Forms gebruikt op JEE, gebruik hieronder geen instructies om wachtwoord te veranderen eerder AEM Forms op JEE admin console (/adminui) gebruiken om het wachtwoord te veranderen.
 
 1. Dubbelklik in de **beveiligingsconsole** op de gebruikersnaam waarvoor u het wachtwoord wilt wijzigen.
 1. Klik op het tabblad **Eigenschappen** (als dit tabblad nog niet actief is).
-
 1. Klik op Wachtwoord **** instellen. Het venster Wachtwoord instellen wordt geopend waar u uw wachtwoord kunt wijzigen.
 
    ![cqsecurityUserPassword](assets/cqsecurityuserpassword.png)

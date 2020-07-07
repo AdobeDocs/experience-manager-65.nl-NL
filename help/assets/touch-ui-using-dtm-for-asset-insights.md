@@ -3,7 +3,7 @@ title: Asset Insights inschakelen via DTM
 description: Leer hoe u DTM (Adobe Dynamic Tag Management) gebruikt om Asset Insights in te schakelen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 0%
@@ -44,15 +44,15 @@ Voer deze stappen uit om Asset Insights in te schakelen via DTM.
 
    ![chlimage_1-59](assets/chlimage_1-195.png)
 
-1. Klik op het Experience Manager-logo en ga naar **[!UICONTROL Tools > Assets]**.
+1. Klik op het Experience Manager-logo en ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]**.
 1. Klik **[!UICONTROL Insights Page Tracker]**, kopieer de trackercode en plak deze in het dialoogvenster Script dat u in stap 6 hebt geopend. Sla de wijzigingen op.
 
    >[!NOTE]
    >
-   > * `AppMeasurement.js` wordt verwijderd. Het is waarschijnlijk beschikbaar via de Adobe Analytics-tool van DTM.
-   > * De aanroep van `assetAnalytics.dispatcher.init`() wordt verwijderd. De functie wordt naar verwachting aangeroepen zodra het Adobe Analytics-hulpprogramma van DTM is voltooid.
-   > * Afhankelijk van waar Asset Insights Page Tracker wordt gehost (bijvoorbeeld Experience Manager, CDN enzovoort), kan de oorsprong van de scriptbron wijzigingen vereisen.
-   > * In het geval van door Experience Manager gehoste paginanummering, moet de bron verwijzen naar een publicatie-instantie met de hostnaam van de verzenderinstantie.
+   >* `AppMeasurement.js` wordt verwijderd. Het is waarschijnlijk beschikbaar via de Adobe Analytics-tool van DTM.
+   >* De vraag aan `assetAnalytics.dispatcher.init()` wordt verwijderd. De functie wordt naar verwachting aangeroepen zodra het Adobe Analytics-hulpprogramma van DTM is voltooid.
+   >* Afhankelijk van waar Asset Insights Page Tracker wordt gehost (bijvoorbeeld Experience Manager, CDN enzovoort), kan de oorsprong van de scriptbron wijzigingen vereisen.
+   >* In het geval van door Experience Manager gehoste paginanummering, moet de bron verwijzen naar een publicatie-instantie met de hostnaam van de verzenderinstantie.
 
 
 1. Ga naar `https://dtm.adobe.com`. Klik **[!UICONTROL Overview]** in het Web bezit en klik **[!UICONTROL Add Tool]** of open een bestaand Hulpmiddel van de Analytics van Adobe. Tijdens het maken van het gereedschap kunt u instellen **[!UICONTROL Configuration Method]** op **[!UICONTROL Automatic]**.

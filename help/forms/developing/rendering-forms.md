@@ -11,7 +11,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: f8749793-e53f-4812-a093-8278f480e6a8
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '556'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +35,7 @@ Afhankelijk van het type clienttoepassing kunt u het formulier naar een clientwe
 
 >[!NOTE]
 >
-> Voor informatie over het creëren van een Webtoepassing die Java servlets gebruikt om de dienst van Vormen aan te halen, zie het [Creëren van de Toepassingen van het Web die Vormen](/help/forms/developing/creating-web-applications-renders-forms.md)teruggeven.
+>Voor informatie over het creëren van een Webtoepassing die Java servlets gebruikt om de dienst van Vormen aan te halen, zie het [Creëren van de Toepassingen van het Web die Vormen](/help/forms/developing/creating-web-applications-renders-forms.md)teruggeven.
 
 U kunt op twee manieren een formulierontwerp (een XDP-bestand) of een PDF-document doorgeven aan de service Forms:
 
@@ -41,7 +44,7 @@ U kunt op twee manieren een formulierontwerp (een XDP-bestand) of een PDF-docume
 
 U kunt deze taken uitvoeren met de service Forms:
 
-* Interactieve PDF-formulieren renderen. (Zie Interactieve PDF-formulieren [renderen](/help/forms/developing/rendering-interactive-pdf-forms.md).)
+* Interactieve PDF forms renderen. (Zie Interactieve PDF forms [renderen](/help/forms/developing/rendering-interactive-pdf-forms.md).)
 * Formulieren weergeven op de client. (Zie Formulieren [renderen op de client](/help/forms/developing/rendering-forms-client.md).)
 * Formulieren weergeven op basis van fragmenten. (Zie Formulieren [renderen op basis van fragmenten](/help/forms/developing/rendering-forms-based-fragments.md).)
 * Formulieren met rechten weergeven. (Zie Formulieren [die zijn geschikt voor rechten](/help/forms/developing/rendering-rights-enabled-forms.md)renderen.)

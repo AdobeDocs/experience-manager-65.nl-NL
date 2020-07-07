@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 532544b0-1932-419a-b6bd-ecf57a926fef
 legacypath: /content/docs/en/aem/6-0/develop/mobile/responsive
 translation-type: tm+mt
-source-git-commit: b3e1493811176271ead54bae55b1cd0cf759fe71
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '5327'
+ht-degree: 0%
 
 ---
 
@@ -33,7 +36,7 @@ Ontwerp uw webpagina&#39;s zodanig dat ze zich aanpassen aan de clientviewport w
 
 ![chlimage_1-4](assets/chlimage_1-4a.png)
 
-Ontwikkel de toepassingen van de Manager van de Ervaring van Adobe (AEM) die HTML5 pagina&#39;s produceren die zich aan veelvoudige venstergrootte en richtlijn aanpassen. De volgende bereiken van viewport-breedten komen bijvoorbeeld overeen met verschillende apparaattypen en -oriëntaties
+Ontwikkel Adobe Experience Manager (AEM) toepassingen die HTML5 pagina&#39;s produceren die zich aan veelvoudige venstergrootte en richtlijn aanpassen. De volgende bereiken van viewport-breedten komen bijvoorbeeld overeen met verschillende apparaattypen en -oriëntaties
 
 * Maximale breedte van 480 pixels (telefoon, staand)
 * Maximale breedte van 767 pixels (telefoon, liggend)
@@ -47,7 +50,7 @@ Zie de volgende onderwerpen voor informatie over het uitvoeren van ontvankelijk 
 * [Vloeiende rasters](/help/sites-developing/responsive.md#developing-a-fluid-grid)
 * [Adaptieve afbeeldingen](/help/sites-developing/responsive.md#using-adaptive-images)
 
-Tijdens het ontwerpen kunt u met **[!UICONTROL Sidetrap]** uw pagina&#39;s voor verschillende schermgrootten bekijken.
+Tijdens het ontwerpen kunt u uw pagina&#39;s voor verschillende schermgrootten voorvertonen. **[!UICONTROL Sidekick]**
 
 ## Voordat u ontwikkelt {#before-you-develop}
 
@@ -104,32 +107,32 @@ In de volgende tabel worden de bestanden in de onderliggende css-map weergegeven
   <tr>
    <td>responsive-1200px.css</td>
    <td>Stijlen voor alle media die 1200 pixels breed of breder zijn.</td>
-   <td><p><br /> @media (min-breedte): 1200 px) {<br /> ... }</p> </td>
+   <td><p>@media (min-breedte): 1200 px) {<br /> ...<br /> }</p> </td>
   </tr>
   <tr>
    <td>responsive-980px-1199px.css</td>
    <td>Stijlen voor media die tussen 980 pixels en 1199 pixels breed zijn.</td>
-   <td><p><br /> @media (min-breedte): 980 px) en (max. breedte: 1199 px) {<br /> ... }</p> </td>
+   <td><p>@media (min-breedte): 980 px) en (max. breedte: 1199 px) {<br /> ...<br /> }</p> </td>
   </tr>
   <tr>
    <td>responsive-768px-979px.css</td>
    <td>Stijlen voor media die tussen 768 pixels en 979 pixels breed zijn. </td>
-   <td><p><br /> @media (min-breedte): 768 px) en (max. breedte: 979 px) {<br /> ... }</p> </td>
+   <td><p>@media (min-breedte): 768 px) en (max. breedte: 979 px) {<br /> ...<br /> }</p> </td>
   </tr>
   <tr>
    <td>responsive-767px-max.css</td>
    <td>Stijlen voor alle media die minder dan 768 pixels breed zijn.</td>
-   <td><p><br /> @media (maximale breedte: 767 px) {<br /> ... }</p> </td>
+   <td><p>@media (maximale breedte: 767 px) {<br /> ...<br /> }</p> </td>
   </tr>
   <tr>
    <td>responsive-480px.css</td>
    <td>Stijlen voor alle media die minder dan 481 pixels breed zijn.</td>
-   <td><br /> @media (maximale breedte: 480) {<br /> ... }</td>
+   <td>@media (maximale breedte: 480) {<br /> ...<br /> }</td>
   </tr>
  </tbody>
 </table>
 
-Het bestand css.txt in de `/etc/designs/weretail/clientlibs` map bevat de CSS-bestanden die in de map met clientbibliotheken worden opgenomen. De volgorde van de bestanden implementeert stijlprioriteit. Stijlen zijn specifieker naarmate de apparaatgrootte afneemt.
+Het bestand css.txt in de `/etc/designs/weretail/clientlibs` map bevat de CSS-bestanden die in de map met clientbibliotheken zijn opgenomen. De volgorde van de bestanden implementeert stijlprioriteit. Stijlen zijn specifieker naarmate de apparaatgrootte afneemt.
 
 `#base=css`
 
@@ -157,8 +160,8 @@ Neem de clientbibliotheekmap op in het JSP-script van uw paginacomponent om het 
 ```
 
 >[!NOTE]
-> In de map `apps.weretail.all` met clientbibliotheken wordt de clientlibs-bibliotheek ingesloten.
-
+>
+>In de map `apps.weretail.all` met clientbibliotheken wordt de clientlibs-bibliotheek ingesloten.
 
 Het JSP manuscript produceert de volgende code van HTML die verwijzingen de stijlbladen:
 
@@ -169,15 +172,15 @@ Het JSP manuscript produceert de volgende code van HTML die verwijzingen de stij
 
 ## Voorvertonen voor specifieke apparaten {#previewing-for-specific-devices}
 
-Bekijk voorvertoningen van uw pagina&#39;s in verschillende viewport grootten om het gedrag van uw responsieve ontwerp te testen. In de modus **[!UICONTROL Voorvertoning]** bevat **[!UICONTROL Sidetrap]** een vervolgkeuzemenu **[!UICONTROL Apparaten]** waarmee u een apparaat kunt selecteren. Wanneer u een apparaat selecteert, wordt de pagina aangepast aan het formaat van de viewport.
+Bekijk voorvertoningen van uw pagina&#39;s in verschillende viewport grootten om het gedrag van uw responsieve ontwerp te testen. In de **[!UICONTROL Preview]** modus **[!UICONTROL Sidekick]** bevat de menuoptie een **[!UICONTROL Devices]** vervolgkeuzelijst waarmee u een apparaat kunt selecteren. Wanneer u een apparaat selecteert, wordt de pagina aangepast aan het formaat van de viewport.
 
 ![chlimage_1-5](assets/chlimage_1-5a.png)
 
-Als u de voorvertoning van het apparaat wilt inschakelen in **[!UICONTROL Sidetrap]**, moet u de pagina en de service **[!UICONTROL MobileEmulatorProvider]** configureren. Een andere paginaconfiguratie controleert de lijst van apparaten die in de lijst van **[!UICONTROL Apparaten]** verschijnt.
+Als u de voorvertoning van het apparaat wilt inschakelen, moet u de pagina en de **[!UICONTROL Sidekick]****[!UICONTROL MobileEmulatorProvider]** service configureren. Een andere paginaconfiguratie controleert de lijst van apparaten die in de **[!UICONTROL Devices]** lijst verschijnt.
 
 ### De lijst met apparaten toevoegen {#adding-the-devices-list}
 
-De lijst **[!UICONTROL Apparaten]** wordt weergegeven in **[!UICONTROL Sidetrap]** wanneer uw pagina het JSP-script bevat dat de lijst **[!UICONTROL Apparaten]** weergeeft. Als u de lijst **[!UICONTROL Apparaten]** wilt toevoegen aan **[!UICONTROL Sidetrap]**, neemt u het `/libs/wcm/mobile/components/simulator/simulator.jsp` script op in de `head` sectie van de pagina.
+De **[!UICONTROL Devices]** lijst wordt weergegeven in **[!UICONTROL Sidekick]** wanneer uw pagina het JSP-script bevat waarmee de **[!UICONTROL Devices]** lijst wordt weergegeven. Als u de **[!UICONTROL Devices]** lijst wilt toevoegen aan **[!UICONTROL Sidekick]**, neemt u het `/libs/wcm/mobile/components/simulator/simulator.jsp` script op in de `head` sectie van de pagina.
 
 Neem de volgende code op in het JSP dat de `head` sectie definieert:
 
@@ -298,7 +301,7 @@ Haal de volgende JavaScript-bibliotheken op en neem deze op in een clientbibliot
 * jquery.js (beschikbaar via de `/etc/clientlibs/granite/jquery` clientbibliotheekmap (categorie = jquery)
 * [jquery.debouncedresize.js](https://github.com/louisremi/jquery-smartresize) (een jQuery-gebeurtenis die één keer optreedt nadat de grootte van het venster is gewijzigd)
 
-**** Tip: U kunt automatisch meerdere clientbibliotheekmappen samenvoegen door deze in te [sluiten](/help/sites-developing/clientlibs.md#embedding-code-from-other-libraries).
+**Tip:** U kunt automatisch meerdere clientbibliotheekmappen samenvoegen door deze in te [sluiten](/help/sites-developing/clientlibs.md#embedding-code-from-other-libraries).
 
 **HTML**
 
@@ -432,7 +435,7 @@ Met de adaptieve afbeeldingscomponentserver wordt de grootte van een JPEG-afbeel
 
 #### De interface van de Adaptive Image Component Servlet {#the-interface-of-the-adaptive-image-component-servlet}
 
-De server voor adaptieve afbeeldingscomponenten is gebonden aan de standaard-Sling-server en ondersteunt de bestandsextensies .jpg, .jpeg, .gif en .png. De servletkiezer is img.
+De server voor adaptieve afbeeldingscomponenten is gebonden aan het standaard-Sling-servlet en ondersteunt de bestandsextensies .jpg, .jpeg, .gif en .png. De servletkiezer is img.
 
 >[!CAUTION]
 >
@@ -494,7 +497,7 @@ Voor informatie over hoe te om de diensten van AEM te vormen, zie het [Vormen OS
      <li>Als u een ondersteunde breedte wilt verwijderen, klikt u op de knop Bijbehorend -.</li>
      <li>Als u een ondersteunde breedte wilt wijzigen, bewerkt u de waarde van het veld.</li>
     </ul> </td>
-   <td><p>adjust.supported.widths</p>
+   <td><p>adapt.supported.widths</p>
     <ul>
      <li>De eigenschap is een multivalueerde tekenreekswaarde.</li>
     </ul> </td>
@@ -549,7 +552,7 @@ De klasse AdaptiveImageComponentServlet overschrijft ook de methode writeLayer. 
 
 ### Referentiewijzigingsservlet voor afbeelding (vaak geometrixx) {#image-reference-modification-servlet-geometrixx-common}
 
-Met de voorbeeldserver voor het wijzigen van afbeeldingsreferenties worden groottekenmerken voor het afbeeldingselement gegenereerd om een afbeelding op de webpagina te schalen.
+Met de voorbeeldserver voor het wijzigen van afbeeldingsreferenties worden groottekenmerken voor het img-element gegenereerd om een afbeelding op de webpagina te schalen.
 
 #### De servlet aanroepen {#calling-the-servlet}
 
@@ -711,7 +714,7 @@ In het volgende voorbeeld is CSS een subset van deze stijlen. Deze ondergroep co
 
 >[!NOTE]
 >
->Met het voorbeeld Geometrixx Media wordt het javascript-framework [Bootstrap](https://twitter.github.com/bootstrap/javascript.html) geïntegreerd in de dynamische rasterimplementatie. Het Bootstrap-framework biedt het bestand bootstrap.css.
+>Met het voorbeeld Geometrixx Media wordt het JavaScript-framework van [Bootstrap](https://twitter.github.com/bootstrap/javascript.html) geïntegreerd in de dynamische rasterimplementatie. Het Bootstrap-framework biedt het bestand bootstrap.css.
 
 ```xml
 /* default styles (no media queries) */
@@ -770,7 +773,7 @@ Modulariseer uw componenten om efficiënt gebruik van de code te maken. Uw site 
 
 **Bedekkingen van pagina-componenten gebruiken**
 
-Maak een hoofdpaginacomponent met scripts voor het genereren van de verschillende delen van een pagina, zoals `head` en `body` secties, `header`, `content`en `footer` secties binnen de hoofdtekst.
+Maak een hoofdpaginacomponent die scripts biedt voor het genereren van de verschillende delen van een pagina, zoals `head` en `body` secties, `header`, `content`en `footer` secties binnen de hoofdtekst.
 
 Andere paginacomponenten maken die de hoofdpaginacomponent als `cq:resourceSuperType`de pagina gebruiken. Deze componenten omvatten manuscripten die de manuscripten van de belangrijkste pagina zonodig met voeten treden.
 

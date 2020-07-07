@@ -1,15 +1,18 @@
 ---
 title: Toegankelijke adaptieve formulieren maken
 seo-title: Toegankelijke adaptieve formulieren maken
-description: Met AEM Forms kunt u gereedschappen maken en toegankelijke adaptieve formulieren maken die voldoen aan toegankelijkheidsnormen.
-seo-description: Met AEM Forms kunt u gereedschappen maken en toegankelijke adaptieve formulieren maken die voldoen aan toegankelijkheidsnormen.
+description: Met AEM Forms kunt u gereedschappen gebruiken en toegankelijke adaptieve formulieren maken en voldoen aan toegankelijkheidsnormen.
+seo-description: Met AEM Forms kunt u gereedschappen gebruiken en toegankelijke adaptieve formulieren maken en voldoen aan toegankelijkheidsnormen.
 uuid: 6472bc2d-47ca-4883-88b7-5de0b758fd00
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1e95c66b-d132-4c44-a1dc-31fd09af8113
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5a76200a573d95026e2347d2049a089d975b5619
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '1780'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: 5a76200a573d95026e2347d2049a089d975b5619
 
 ## Inleiding {#introduction}
 
-Een toegankelijk formulier is een formulier dat iedereen kan gebruiken, inclusief gebruikers met speciale behoeften. Adaptieve formulieren bevatten een aantal functies en mogelijkheden die de bruikbaarheid voor gebruikers met verschillende mogelijkheden verbeteren. Door toegankelijkheid in adaptieve formulieren te creëren, kan niet alleen een zo breed mogelijk publiek voor inhoud worden bereikt, maar is het ook een vereiste bij het verstrekken van documenten in geografische gebieden waar naleving van toegankelijkheidsnormen verplicht is. Met AEM Forms kunnen formulierontwikkelaars voldoen aan de toegankelijkheidsstandaarden.
+Een toegankelijk formulier is een formulier dat iedereen kan gebruiken, inclusief gebruikers met speciale behoeften. Adaptieve formulieren bevatten een aantal functies en mogelijkheden die de bruikbaarheid voor gebruikers met verschillende mogelijkheden verbeteren. Door toegankelijkheid in adaptieve formulieren te creëren, kan niet alleen een zo breed mogelijk publiek voor inhoud worden bereikt, maar is het ook een vereiste bij het verstrekken van documenten in geografische gebieden waar naleving van toegankelijkheidsnormen verplicht is. AEM Forms helpen formulierontwikkelaars om te voldoen aan de toegankelijkheidsstandaarden.
 
 Tijdens het ontwerpen van een adaptief formulier moet de auteur de volgende punten in overweging nemen om een toegankelijke adaptieve vorm te maken:
 
@@ -37,7 +40,7 @@ U hebt een toegankelijkheidstool nodig, zoals ANDI ( **Accessible Name and Descr
 Met het hulpprogramma ANDI (Accessible Name and Description Inspector) kunt u compatibiliteitsproblemen met betrekking tot toegankelijkheid in webinhoud opsporen en verhelpen. Dit is het aanbevolen gereedschap onder de richtlijnen Trusted Tester v5 van het Department of Homeland Security. Het is ontwikkeld door de afdeling Sociale &#x200B; van de Verenigde Staten om te controleren of Section 508 de webinhoud in acht neemt. Het gereedschap:
 
 * Hiermee kunt u toegankelijkheidsproblemen &#x200B; op een webpagina detecteren
-* Biedt suggesties om de &#x200B; voor toegankelijkheid te verbeteren
+* Biedt suggesties voor het verbeteren van &#x200B;
 * Detecteert problemen met toetsenbordtoegankelijkheid en kleurcontrast
 * Geeft duidelijk aan welke inhoud van de schermlezer voldoet aan de normen
 
@@ -48,8 +51,8 @@ ANDI werkt met alle grote internetbrowsers. Zie de documentatie [van](https://ww
 Het Ultramarijn-Toegankelijke thema is een verwijzingsthema. Hiermee kunt u demonstreren hoe u kleurcontrast en andere toegankelijkheidsgerelateerde problemen in een adaptieve vorm kunt oplossen. Adobe raadt u aan een aangepast thema voor de productieomgeving te maken op basis van de stijlen die door uw organisatie zijn goedgekeurd. Voer de volgende stappen uit om het thema te uploaden naar uw AEM-instantie:
 
 1. Download het themapakket.
-1. Ga naar **[!UICONTROL Experience Manager]** > **[!UICONTROL Navigation]** ![Navigation](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Forms]** op uw AEM-instantie.
-1. Tik op **[!UICONTROL Maken]** > **[!UICONTROL Bestand uploaden]**. Selecteer en upload het bestand x Ultramarine-Accessible-Theme.zip. Het thema wordt geüpload naar uw AEM-instantie.
+1. Ga naar **[!UICONTROL Experience Manager]** > **[!UICONTROL Navigation]**![ Navigatie](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Forms]** op uw AEM-instantie.
+1. Tik op **[!UICONTROL Create]** > **[!UICONTROL File Upload]**. Selecteer en upload het bestand x Ultramarine-Accessible-Theme.zip. Het thema wordt geüpload naar uw AEM-instantie.
 
 ## Een adaptief formulier toegankelijk maken
 
@@ -60,8 +63,8 @@ U moet zich op vier belangrijke aspecten concentreren: toetsenbordnavigatie, kle
 Pas het Ultramarijn-Toegankelijke thema toe op uw bestaande adaptieve vorm. Het thema toepassen:
 
 1. Open het aangepaste formulier voor bewerking.
-1. Selecteer een component en tik op het bovenliggende pictogram. Tik in het contextmenu op **[!UICONTROL Aangepaste formuliercontainer]** en tik op het configuratiepictogram.
-1. Selecteer het Ultramarijn-Toegankelijke thema in eigenschappen browser en tik **[!UICONTROL sparen]** pictogram.
+1. Selecteer een component en tik op het bovenliggende pictogram. Tik in het contextmenu op het configuratiepictogram **[!UICONTROL Adaptive Form Container]** en tik vervolgens op dit pictogram.
+1. Selecteer het thema Ultramarijn-Toegankelijk in de eigenschappenbrowser en tik op **[!UICONTROL Save]** het pictogram.
 1. Vernieuw het browservenster. Het thema wordt toegepast op het adaptieve formulier.
 
 Nadat u een toegankelijk thema hebt toegepast, voert u de onderstaande aanvullende oplossingen uit. De oplossingen zijn naast toegankelijkheidsoplossingen die in het toegankelijke thema worden behandeld:
@@ -103,7 +106,7 @@ Het label dat door schermlezers wordt waargenomen, hoeft niet noodzakelijkerwijs
 Voer de volgende stappen uit om de optie Toegankelijkheid te gebruiken:
 
 1. Selecteer een component en tik op ![cmp](assets/cmppr.png).
-1. Klik op **[!UICONTROL Toegankelijkheid]** in het zijpaneel om de gewenste toegankelijkheidsoptie te kiezen.
+1. Klik **[!UICONTROL Accessibility]** in de zijbalk om de gewenste toegankelijkheidsoptie te kiezen.
 
 ### Toegankelijkheidsopties in formuliercomponenten {#accessibility-options-in-form-components}
 
@@ -113,7 +116,7 @@ Voer de volgende stappen uit om de optie Toegankelijkheid te gebruiken:
 
 **Korte beschrijving** Voor de meeste componenten wordt de korte beschrijving weergegeven wanneer de gebruiker de aanwijzer op de component plaatst. U kunt deze optie instellen in het veld Korte beschrijving onder de optie Help-inhoud.
 
-**Titel** Gebruik deze optie als u wilt dat AEM Forms het visuele label dat aan het formulierveld is gekoppeld, gebruikt als schermlezertekst.
+**Titel** Gebruik deze optie als u wilt dat AEM Forms het visuele label dat aan het formulierveld is gekoppeld, gebruiken als schermlezertekst.
 
 **Naam** U kunt een waarde opgeven in het veld Naam van het tabblad Binding. De naam mag geen spaties bevatten.
 
@@ -121,7 +124,7 @@ Voer de volgende stappen uit om de optie Toegankelijkheid te gebruiken:
 
 >[!NOTE]
 >
-> * Keuzerondje en selectievakje kunnen slechts twee toegankelijkheidsopties hebben, namelijk Aangepaste tekst en Titel.
+>* Keuzerondje en selectievakje kunnen slechts twee toegankelijkheidsopties hebben, namelijk Aangepaste tekst en Titel.
 >* Voor op XFA gebaseerde adaptieve formulieren wordt de toegankelijkheidsoptie overgenomen van de toegankelijkheidsopties die zijn ingesteld in de XDP. Knopinfo van XDP wordt toegewezen aan Korte beschrijving en Bijschrift wordt toegewezen aan Titel. De andere opties werken zoals is.
 
 

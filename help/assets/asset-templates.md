@@ -1,9 +1,9 @@
 ---
 title: Asset templates in [!DNL Adobe Experience Manager Assets].
-description: Meer informatie over Asset-sjablonen vindt u in [!DNL Adobe Experience Manager Assets] en hoe u Asset-sjablonen kunt gebruiken om marketingmateriaal te maken.
+description: Meer informatie over Asset templates in [!DNL Adobe Experience Manager Assets] en over het gebruik van asset templates om marketingmateriaal te maken.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '1522'
 ht-degree: 0%
@@ -95,7 +95,7 @@ U kunt direct nadat u het hebt gemaakt, een onderpand bewerken. U kunt het besta
 
    >[!NOTE]
    >
-   >Zorg ervoor dat uw [!DNL Experience Manager] instantie is geïntegreerd met een sjabloon [!DNL InDesign Server] waarmee u gegevens uit de [!DNL Experience Manager Assets] [!DNL InDesign] sjabloon kunt extraheren en deze beschikbaar kunt maken voor bewerking. Zie [Experience Manager-elementen integreren met InDesign Server](/help/assets/indesign.md)voor meer informatie.
+   >Zorg ervoor dat uw [!DNL Experience Manager] instantie is geïntegreerd met een sjabloon [!DNL InDesign Server] waarmee u gegevens uit de [!DNL Experience Manager Assets] [!DNL InDesign] sjabloon kunt extraheren en deze beschikbaar kunt maken voor bewerking. Zie Experience Manager Assets [integreren met InDesign Server](/help/assets/indesign.md)voor meer informatie.
 
 1. Als u de tekst in een bewerkbaar veld wilt wijzigen, klikt u op het tekstveld in de lijst met bewerkbare velden en bewerkt u de tekst in het veld.
 
@@ -131,17 +131,17 @@ U kunt direct nadat u het hebt gemaakt, een onderpand bewerken. U kunt het besta
 
    >[!NOTE]
    >
-   >De pictogrammen Voorvertoning en Gereed zijn alleen beschikbaar als de bewerkbare afbeeldingsvelden in het onderpand geen ontbrekende pictogrammen hebben. Als er pictogrammen ontbreken in het onderpand, komt dat doordat de afbeeldingen in de [!DNL Experience Manager] sjabloon niet [!DNL InDesign] kunnen worden opgelost. In de volgende gevallen [!DNL Experience Manager] kunnen afbeeldingen gewoonlijk niet worden opgelost:
+   >De opties Voorbeeld en Gereed zijn alleen ingeschakeld wanneer de bewerkbare afbeeldingsvelden in het onderpand geen ontbrekende pictogrammen hebben. Als er pictogrammen ontbreken in het onderpand, komt dat doordat de afbeeldingen in de [!DNL Experience Manager] sjabloon niet [!DNL InDesign] kunnen worden opgelost. In de volgende gevallen [!DNL Experience Manager] kunnen afbeeldingen gewoonlijk niet worden opgelost:
    >
-   >    * Afbeeldingen worden niet ingesloten in de onderliggende [!DNL InDesign] sjabloon.
-   >    * Afbeeldingen worden gekoppeld vanuit het lokale bestandssysteem.
+   >* Afbeeldingen worden niet ingesloten in de onderliggende [!DNL InDesign] sjabloon.
+   >* Afbeeldingen worden gekoppeld vanuit het lokale bestandssysteem.
    >
    >Ga als volgt te werk [!DNL Experience Manager] om het omzetten van afbeeldingen in te schakelen:
    >
-   >    * Afbeeldingen insluiten tijdens het maken van [!DNL InDesign] sjablonen (zie [Koppelingen en ingesloten afbeeldingen](https://helpx.adobe.com/indesign/using/graphics-links.html)).
-   >    * Koppel [!DNL Experience Manager] het bestand aan uw lokale bestandssysteem en wijs ontbrekende pictogrammen toe aan bestaande elementen in [!DNL Experience Manager].
+   >* Afbeeldingen insluiten tijdens het maken van [!DNL InDesign] sjablonen (zie [Koppelingen en ingesloten afbeeldingen](https://helpx.adobe.com/indesign/using/graphics-links.html)).
+   >* Koppel [!DNL Experience Manager] het bestand aan uw lokale bestandssysteem en wijs ontbrekende pictogrammen toe aan bestaande elementen in [!DNL Experience Manager].
    >
-   >Zie [!DNL InDesign] Aanbevolen werkwijzen voor het werken met InDesign-documenten in Experience Manager [voor meer informatie over het werken met](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html)documenten.
+   >Raadpleeg de [!DNL InDesign] aanbevolen procedures voor het werken met InDesign-documenten in Experience Manager [voor meer informatie over het werken met](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html)documenten.
 
 1. Als u een PDF-uitvoering voor de brochure wilt genereren, selecteert u de optie Acrobat in het dialoogvenster en klikt u op **[!UICONTROL Continue]**.
 1. Het onderpand wordt gecreeerd in de omslag u met begon. Als u de vertoningen wilt weergeven, opent u het onderpand en kiest u een optie in de lijst GlobalNav. **[!UICONTROL Renditions]**
@@ -182,7 +182,7 @@ U kunt direct nadat u het hebt gemaakt, een onderpand bewerken. U kunt het besta
 
    ![chlimage_1-125](assets/chlimage_1-330.png)
 
-1. Klik op **[!UICONTROL Next]** de werkbalk.
+1. Klik op **[!UICONTROL Next]** op de werkbalk.
 1. Wijzig de rangschikking van de sjablonen desgewenst in het **[!UICONTROL Preview & Reorder]** scherm en bekijk een voorvertoning van de selectie van de sjablonen die u wilt samenvoegen. Then, click **[!UICONTROL Next]** from the toolbar.
 
    ![chlimage_1-126](assets/chlimage_1-331.png)

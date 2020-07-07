@@ -3,9 +3,9 @@ title: Verwerk elementen met gebruik van mediafuncties en workflows in [!DNL-Ado
 description: Leer meer over de media handlers en hoe u workflows kunt gebruiken om taken uit te voeren op uw digitale middelen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
+source-git-commit: 39bbb1d663bb54ef425dfeb5e0fc10ea37eb5708
 workflow-type: tm+mt
-source-wordcount: '2052'
+source-wordcount: '2042'
 ht-degree: 1%
 
 ---
@@ -21,15 +21,13 @@ Mediahandlers zijn services waarin specifieke handelingen op elementen worden ui
 
 >[!NOTE]
 >
->Raadpleeg de pagina met door [Middelen ondersteunde indelingen](assets-formats.md) voor een beschrijving van alle indelingen die worden ondersteund door [!DNL Assets] en de functies die voor elke indeling worden ondersteund.
+>Zie de pagina met door [Middelen ondersteunde indelingen](assets-formats.md) voor een beschrijving van alle indelingen die worden ondersteund door [!DNL Assets] en de functies die voor elke indeling worden ondersteund.
 
 ## Standaardmediahandlers {#default-media-handlers}
 
 De volgende media managers zijn beschikbaar binnen [!DNL Assets] en behandelen de gemeenschappelijkste types MIME:
 
-<!-- TBD: 
-* Apply correct formatting once table is moved to MD.
-* Java versions shouldn't be set to 1.5. Must be updated.
+<!-- TBD: Java versions shouldn't be set to 1.5. Must be updated.
 -->
 
 | Naam handler | Servicenaam (in de systeemconsole) | Ondersteunde MIME-typen |
@@ -140,7 +138,7 @@ Nadat u de volgende procedure hebt uitgevoerd en u een TXT-bestand uploadt naar 
 
 1. Maak in Eclipse `myBundle` [!DNL Maven] project:
 
-   1. Klik in de menubalk op **[!UICONTROL File > New > Other]**.
+   1. Klik in de menubalk op **[!UICONTROL File]** > **[!UICONTROL New]** > **[!UICONTROL Other]**.
    1. Vouw in het dialoogvenster de [!DNL Maven] map uit, selecteer [!DNL Maven] het project en klik op **[!UICONTROL Next]**.
    1. Controleer Create een eenvoudig projectvakje en het vakje van de Plaatsen van de Werkruimte van het Gebruik standaard, dan klik **[!UICONTROL Next]**.
    1. Een [!DNL Maven] project definiëren:
@@ -505,7 +503,7 @@ Scheid de waarden van de spatie [!UICONTROL Process Arguments] met komma&#39;s e
 |---|---|
 | mime:&lt;mime-type> | Optioneel argument. Het proces wordt toegepast als het element hetzelfde MIME-type heeft als het argument. <br>Er kunnen verschillende MIME-typen worden gedefinieerd. |
 | tn:&lt;width>:&lt;height> | Optioneel argument. Het proces leidt tot een duimnagel met de afmetingen die in het argument worden bepaald. <br>Er kunnen verschillende miniaturen worden gedefinieerd. |
-| cmd: &lt;command> | Definieert de opdracht die wordt uitgevoerd. De syntaxis hangt van het hulpmiddel van de bevellijn af. Er kan slechts één opdracht worden gedefinieerd. <br>De volgende variabelen kunnen worden gebruikt om de opdracht te maken:<br>`${filename}`: naam van het invoerbestand, bijvoorbeeld original.jpg <br> `${file}`: volledige padnaam van het invoerbestand, bijvoorbeeld /tmp/cqdam0816.tmp/original.jpg <br> `${directory}`: directory van het invoerbestand, bijvoorbeeld /tmp/cqdam0816.tmp <br>`${basename}`: naam van het invoerbestand zonder de extensie, bijvoorbeeld origineel <br>`${extension}`: extensie van het invoerbestand, bijvoorbeeld JPG. |
+| cmd: &lt;command> | Definieert de opdracht die wordt uitgevoerd. De syntaxis hangt van het hulpmiddel van de bevellijn af. Er kan slechts één opdracht worden gedefinieerd. <br>De volgende variabelen kunnen worden gebruikt om de opdracht te maken:<br>`${filename}`: naam van het invoerbestand, bijvoorbeeld original.jpg <br> `${file}`: de volledige padnaam van het invoerbestand, bijvoorbeeld `/tmp/cqdam0816.tmp/original.jpg` <br> `${directory}`: map van het invoerbestand, bijvoorbeeld `/tmp/cqdam0816.tmp`<br>`${basename}`: naam van het invoerbestand zonder de extensie, bijvoorbeeld origineel <br>`${extension}`: extensie van het invoerbestand, bijvoorbeeld JPG. |
 
 Bijvoorbeeld als [!DNL ImageMagick] is geïnstalleerd op de schijf die als host fungeert voor de [!DNL Experience Manager] server en als u een processtap maakt met [!UICONTROL CommandLineProcess] de functie Implementatie en de volgende waarden als [!UICONTROL Process Arguments]:
 

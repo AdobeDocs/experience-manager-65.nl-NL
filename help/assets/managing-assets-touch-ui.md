@@ -4,7 +4,7 @@ description: Leer de taken voor middelenbeheer, zoals het uploaden, downloaden, 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '9031'
 ht-degree: 3%
@@ -113,7 +113,7 @@ Voordat u een element uploadt, moet u ervoor zorgen dat dit een [indeling](/help
 
    [!DNL Experience Manager Assets] Hiermee voorkomt u dat elementen met de verboden tekens in de bestandsnaam worden geüpload. Als u een element probeert te uploaden met een bestandsnaam die een niet-toegestaan teken of meer bevat, wordt een waarschuwingsbericht weergegeven en wordt het uploaden gestopt totdat u deze tekens verwijdert of uploadt met een toegestane naam. [!DNL Assets]
 
-   In het [!UICONTROL Upload Assets] dialoogvenster kunt u lange namen opgeven voor de bestanden die u uploadt, zodat u de specifieke naamconventies voor bestanden voor uw organisatie kunt gebruiken.
+   In het [!UICONTROL Upload Assets] dialoogvenster kunt u lange namen opgeven voor de bestanden die u uploadt, zodat deze passen bij specifieke naamconventies voor bestanden voor uw organisatie.
 
    De volgende tekens (lijst met door spaties gescheiden tekens) worden echter niet ondersteund:
 
@@ -139,7 +139,7 @@ Seriële uploaden van elementen is standaard ingeschakeld. Als u de functie wilt
 
 ### Elementen uploaden met FTP {#uploading-assets-using-ftp}
 
-Dynamic Media maken het in batches uploaden van elementen via FTP-server mogelijk. Als u grote elementen (> 1 GB) wilt uploaden of volledige mappen en submappen wilt uploaden, moet u FTP gebruiken. U kunt zelfs instellen dat FTP-upload wordt uitgevoerd op een terugkerende geplande basis.
+Dynamic Media maken het in batches uploaden van elementen via FTP-server mogelijk. Als u grote bestanden (>1 GB) wilt uploaden of volledige mappen en submappen wilt uploaden, moet u FTP gebruiken. U kunt zelfs instellen dat FTP-upload wordt uitgevoerd op een terugkerende geplande basis.
 
 >[!NOTE]
 >
@@ -676,7 +676,7 @@ Met de bewerkingsgereedschappen in de [!DNL Assets] interface kunt u kleine bewe
 
    * Selecteer het element en klik op **[!UICONTROL Edit]** de werkbalk.
    * Klik op **[!UICONTROL Edit]** de optie die in de kaartweergave op een element wordt weergegeven.
-   * Klik op **[!UICONTROL Edit]** de werkbalk.
+   * Klik op **[!UICONTROL Edit]** op de werkbalk.
    ![Optie Bewerken in werkbalk](assets/edit_icon.png)
 
 1. Als u de afbeelding wilt uitsnijden, klikt u op **[!UICONTROL Crop]** Optie om een afbeelding ![](assets/chlimage_1-22.png)uit te snijden.
@@ -803,7 +803,7 @@ Videoannotaties worden alleen ondersteund in browsers met HTML5-compatibele vide
 
 ### Annotaties afdrukken {#printing-annotations}
 
-Als een element annotaties heeft of aan een revisiewerkstroom is onderworpen, kunt u het element samen met annotaties en revisiestatus als PDF-bestand afdrukken voor offline revisie.
+Als een element annotaties heeft of een revisiewerkstroom heeft ondergaan, kunt u het element samen met annotaties en de revisiestatus als PDF-bestand afdrukken voor offline revisie.
 
 U kunt ook alleen de annotaties of de revisiestatus afdrukken.
 
@@ -823,7 +823,7 @@ Als u de annotaties en de revisiestatus wilt afdrukken, klikt u op de instructie
 
    ![Als u alleen de revisiestatus van annotatie wilt afdrukken, selecteert u deze in de tijdlijn](assets/chlimage_1-39.png)
 
-1. Klik op **[!UICONTROL Print]** de werkbalk.
+1. Klik op **[!UICONTROL Print]** op de werkbalk.
 
    ![Afdrukken, optie in werkbalk](assets/chlimage_1-40.png)
 

@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: b210f5d7-1d68-49ee-ade7-667c6ab11d2b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9eb8f3921e7d485ca4eb035cd04a9d8731dd6b06
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
 workflow-type: tm+mt
 source-wordcount: '6229'
 ht-degree: 0%
@@ -166,7 +166,7 @@ Een Composite Health Check&#39;s rol bestaat erin een aantal afzonderlijke Healt
       * **Type:** `nt:unstructured`
    Met de volgende eigenschappen:
 
-   * **Naam:** `sling:resourceType`
+   * **Name:** `sling:resourceType`
 
       * **Type:** `String`
       * **Waarde:** `granite/operations/components/mbean`
@@ -306,7 +306,7 @@ Een Composite Health Check&#39;s rol bestaat erin een aantal afzonderlijke Healt
    <td>Cachecontrole code</td>
    <td><p>Dit is een Health Check die verschillende JVM-omstandigheden controleert die een CodeCache-bug in Java 7 kunnen activeren:</p>
     <ul>
-     <li>retourneert Waarschuwen als de instantie wordt uitgevoerd in Java 7, waarbij Cachegeheugen leegmaken is ingeschakeld</li>
+     <li>retourneert Waarschuwen als de instantie wordt uitgevoerd in Java 7, waarbij Cacheblozen voor code is ingeschakeld</li>
      <li>retourneert Waarschuwen als de instantie wordt uitgevoerd in Java 7 en de grootte van de gereserveerde codecache is kleiner dan een minimumdrempel (de standaardwaarde is 90 MB)</li>
     </ul> <p>De <code>minimum.code.cache.size</code> drempel kan worden geconfigureerd. Voor meer informatie over de bug, <a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8012547">controleer</a><a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8012547"></a><a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8012547"></a><a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8012547"> deze pagina</a>.</p> <p>De MBean voor deze health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DcodeCacheHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.health check:name=codeCacheHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
@@ -584,7 +584,7 @@ Workflows kunnen ook worden gewist vanaf het onderhouddashboard. Voor het uitvoe
 
 >[!NOTE]
 >
-> Zie [deze pagina](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances)voor meer informatie over workflowonderhoud.
+>Zie [deze pagina](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances)voor meer informatie over workflowonderhoud.
 
 ### Controle van logboekonderhoud {#audit-log-maintenance}
 

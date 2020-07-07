@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: platform
 discoiquuid: d8ee3b57-633a-425e-bf36-646f0e0bad52
 translation-type: tm+mt
-source-git-commit: 06f1f753b9bb7f7336454f166e03f753e3735a16
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '1886'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +35,7 @@ Voor het gebruik van de integratielaag wordt een aantal AEM-componenten buiten d
 * Uitchecken
 * Zoeken
 
-Voor het zoeken wordt een integratiehaak verstrekt die u toestaat om het onderzoek AEM, een derderdesonderzoek (zoals Onderzoek&amp;Promote) of een combinatie daarvan te gebruiken.
+Voor onderzoek wordt een integratiehaak verstrekt die u toestaat om het AEM onderzoek, een derderdesonderzoek (zoals Search&amp;Promote) of een combinatie van daarvan te gebruiken.
 
 ## Selectie van eCommerce-engine {#ecommerce-engine-selection}
 
@@ -128,13 +131,10 @@ Elke productbron kan worden vertegenwoordigd door een `Product API`. De meeste a
 Hoewel producten (in het algemeen) vele variantassen kunnen hebben, behandelt de uit-van-de-doos productcomponent slechts twee:
 >
 >1. `size`
-   >
-   >
-1. plus één of meer
-   >   Deze extra variant wordt geselecteerd via de `variationAxis` eigenschap van de productreferentie (gewoonlijk `color` voor Geometrixx Buiten).
+>1. plus één of meer
 >
-
-
+>   
+Deze extra variant wordt geselecteerd via de `variationAxis` eigenschap van de productreferentie (gewoonlijk `color` voor Geometrixx Buiten).
 
 #### Productverwijzingen en PIM-gegevens {#product-references-and-pim-data}
 
@@ -193,7 +193,7 @@ public interface Product extends Adaptable {
 }
 ```
 
-#### com.adobe.cq.commerce.api.VariantFilter {#com-adobe-cq-commerce-api-variantfilter}
+#### com.adobe.cq.commerce.api.VariantFilter  {#com-adobe-cq-commerce-api-variantfilter}
 
 ```java
 /**
@@ -309,7 +309,7 @@ public class AxisFilter implements VariantFilter {
 
 #### Architectuur van het winkelwagentje {#architecture-of-the-shopping-cart}
 
-**Componenten**
+**Onderdelen**
 
 * Het winkelwagentje is eigendom van de `CommerceSession:`
 
@@ -525,7 +525,7 @@ Met de `AbstractJcrCommerceSession` meegeleverde gegevens kunt u vouchers toepas
 
 * `jcr:title` (String) - voor de beschrijving van de voucher
 * `code` (String) - de code die de gebruiker moet invoeren om deze voucher toe te passen
-* `promotion` (String) - de promotie die moet worden toegepast;bijv. `/content/campaigns/geometrixx-outdoors/article/10-bucks-off`
+* `promotion` (String) - de promotie die moet worden toegepast; bijv. `/content/campaigns/geometrixx-outdoors/article/10-bucks-off`
 
 Promotiehandlers zijn OSGi-services die het winkelwagentje wijzigen. De kar zal verscheidene haken steunen die in de `PromotionHandler` interface zullen worden bepaald.
 

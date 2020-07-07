@@ -1,8 +1,8 @@
 ---
-title: Fragmenten voor ervaring exporteren naar Adobe-doel
-seo-title: Fragmenten voor ervaring exporteren naar Adobe-doel
-description: Fragmenten voor ervaring exporteren naar Adobe-doel
-seo-description: Fragmenten voor ervaring exporteren naar Adobe-doel
+title: Exporteren van ervaringsfragmenten naar Adobe Target
+seo-title: Exporteren van ervaringsfragmenten naar Adobe Target
+description: Exporteren van ervaringsfragmenten naar Adobe Target
+seo-description: Exporteren van ervaringsfragmenten naar Adobe Target
 uuid: 2df0faab-5d5e-4fc1-93b3-28b7e6f3c306
 contentOwner: carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,15 @@ content-type: reference
 discoiquuid: d4152b4d-531b-4b62-8807-a5bc5afe94c6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6723b12bebba2f239c0886e5f378f1dc70e5e247
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '1170'
+ht-degree: 0%
 
 ---
 
 
-# Fragmenten voor ervaring exporteren naar Adobe-doel{#exporting-experience-fragments-to-adobe-target}
+# Exporteren van ervaringsfragmenten naar Adobe Target{#exporting-experience-fragments-to-adobe-target}
 
 >[!CAUTION]
 >
@@ -30,34 +33,36 @@ source-git-commit: 6723b12bebba2f239c0886e5f378f1dc70e5e247
 6.5.2.0:
 >
 >* De Fragmenten van de ervaring kunnen worden uitgevoerd naar:
-   >   * de standaardwerkruimte.
+   >
+   >   
+   * de standaardwerkruimte.
    >   * een benoemde werkruimte, opgegeven in de Cloud Configuration.
->* AEM moet met Adobe I/O [worden](/help/sites-administering/integration-ims-adobe-io.md)geïntegreerd met Adobe Target.
+>* AEM moet met Adobe Target worden [geïntegreerd met behulp van Adobe I/O](/help/sites-administering/integration-ims-adobe-io.md).
 >
 >
 AEM 6.5.0.0 en 6.5.1.0:
 >
 >* De AEM Experience Fragments worden geëxporteerd naar de standaardwerkruimte van Adobe Target.
->* AEM moet met Adobe Target worden geïntegreerd volgens de instructies bij [Integratie met Adobe Target](/help/sites-administering/target.md).
+>* AEM moet worden geïntegreerd met Adobe Target volgens de instructies in het kader van [Integratie met Adobe Target](/help/sites-administering/target.md).
 
 
-U kunt [Experience Fragments](/help/sites-authoring/experience-fragments.md), gemaakt in Adobe Experience Manager (AEM), exporteren naar Adobe Target. Zij kunnen dan als aanbiedingen in de activiteiten van het Doel worden gebruikt, om ervaringen op schaal te testen en te personaliseren.
+U kunt [Experience Fragments](/help/sites-authoring/experience-fragments.md), gemaakt in Adobe Experience Manager (AEM), exporteren naar Adobe Target (Target). Vervolgens kunnen ze worden gebruikt als aanbiedingen in Target-activiteiten, om ervaringen op schaal te testen en te personaliseren.
 
-Er zijn drie indelingsopties beschikbaar voor het exporteren van een Experience-fragment naar Adobe Target:
+Er zijn drie formaatopties beschikbaar voor het uitvoeren van een Fragment van de Ervaring naar Adobe Target:
 
 * HTML (standaard): Ondersteuning voor weergave van webinhoud en hybride inhoud
 * JSON: Ondersteuning voor levering van inhoud zonder kop
 * HTML &amp; JSON
 
-AEM Experience Fragments kunnen naar de standaardwerkruimte in het Doel van Adobe, of naar user-defined werkruimten voor het Doel van Adobe worden uitgevoerd. Dit gebeurt via Adobe I/O, waarvoor AEM moet worden [geïntegreerd met Adobe Target met behulp van Adobe I/O](/help/sites-administering/integration-ims-adobe-io.md).
+AEM Experience Fragments kan naar de standaardwerkruimte in Adobe Target, of naar user-defined werkruimten voor Adobe Target worden uitgevoerd. Dit gebeurt via Adobe I/O, waarvoor AEM met behulp van Adobe I/O moet worden [geïntegreerd met Adobe Target](/help/sites-administering/integration-ims-adobe-io.md).
 
 >[!NOTE]
 >
->De werkruimten van Adobe Target bestaan niet in Adobe Target zelf. Ze worden gedefinieerd en beheerd in Adobe IMS (Identity Management System) en vervolgens geselecteerd voor gebruik in verschillende oplossingen met behulp van Adobe I/O-integratie.
+>De Adobe Target-werkruimten bestaan niet in Adobe Target zelf. Ze worden gedefinieerd en beheerd in Adobe IMS (Identity Management System) en vervolgens geselecteerd voor gebruik in verschillende oplossingen met behulp van Adobe I/O-integratie.
 
 >[!NOTE]
 >
->De werkruimten van het Doel van Adobe kunnen worden gebruikt om leden van een organisatie (groep) toe te staan om aanbiedingen en activiteiten voor slechts deze organisatie tot stand te brengen en te beheren; zonder andere gebruikers toegang te geven. Bijvoorbeeld landspecifieke organisaties binnen een wereldwijd bereik.
+>De werkruimten van Adobe Target kunnen worden gebruikt om leden van een organisatie (groep) toe te staan om aanbiedingen en activiteiten voor slechts deze organisatie tot stand te brengen en te beheren; zonder andere gebruikers toegang te geven. Bijvoorbeeld landspecifieke organisaties binnen een wereldwijd bereik.
 
 >[!NOTE]
 >
@@ -77,7 +82,7 @@ AEM Experience Fragments kunnen naar de standaardwerkruimte in het Doel van Adob
 
 Er zijn verschillende acties vereist:
 
-1. U moet AEM [integreren met Adobe Target met behulp van Adobe I/O](/help/sites-administering/integration-ims-adobe-io.md).
+1. U moet AEM met Adobe Target [integreren gebruikend Adobe I/O](/help/sites-administering/integration-ims-adobe-io.md).
 2. De Fragmenten van de ervaring worden uitgevoerd van de auteur van AEM, zodat moet u AEM [vormen Verbinding uiterlijk](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer) op de auteursinstantie om ervoor te zorgen dat om het even welke verwijzingen binnen het Fragment van de Ervaring voor Weblevering worden geexternaliseerd.
 
    >[!NOTE]
@@ -86,10 +91,10 @@ Er zijn verschillende acties vereist:
 
 ## Cloudconfiguratie toevoegen {#add-the-cloud-configuration}
 
-Voordat u een fragment exporteert, moet u de **cloudconfiguratie** voor **Adobe Target** toevoegen aan het fragment of de map. Hierdoor kunt u ook:
+Voordat u een fragment exporteert, moet u de **Cloud Configuration** voor **Adobe Target** toevoegen aan het fragment of de map. Hierdoor kunt u ook:
 
 * de indelingsoptie(s) opgeven die voor de export moet worden gebruikt
-* een doelwerkruimte selecteren als doel
+* een Target-werkruimte selecteren als doel
 * selecteer een extern domein om verwijzingen in het Fragment van de Ervaring te herschrijven (facultatief)
 
 De vereiste opties kunnen worden geselecteerd in **Pagina-eigenschappen** van de vereiste map en/of het vereiste fragment. het productdossier zal zo nodig worden geërfd .
@@ -105,9 +110,9 @@ De vereiste opties kunnen worden geselecteerd in **Pagina-eigenschappen** van de
    >
    >Als u de wolkenconfiguratie aan het Fragment van de Ervaring zelf toevoegt, wordt de configuratie geërft door alle variaties.
 
-1. Selecteer het tabblad **Cloud Services** .
+1. Selecteer het tabblad **Cloud Servicen** .
 
-1. Selecteer in **Cloud Service Configuration** de optie **Adobe Target** in de vervolgkeuzelijst.
+1. Selecteer **Adobe Target** in de vervolgkeuzelijst onder Configuratie **Cloud Service** .
 
 1. 
    >[!NOTE]
@@ -130,17 +135,17 @@ De vereiste opties kunnen worden geselecteerd in **Pagina-eigenschappen** van de
 
    Bijvoorbeeld voor een map:
 
-   ![Map - Cloud](assets/xf-target-integration-01.png "Services-map - Cloud Services")
+   ![Map - Cloud](assets/xf-target-integration-01.png "Services-map - Cloud Servicen")
 
 1. **Opslaan en sluiten**.
 
-## Een ervaringsfragment exporteren naar Adobe-doel {#exporting-an-experience-fragment-to-adobe-target}
+## Een ervaringsfragment exporteren naar Adobe Target {#exporting-an-experience-fragment-to-adobe-target}
 
 >[!CAUTION]
 >
->Voor media-elementen, zoals afbeeldingen, wordt alleen een verwijzing naar Doel geëxporteerd. Het element zelf blijft opgeslagen in AEM Assets en wordt geleverd vanuit de AEM-publicatie-instantie.
+>Voor media-elementen, zoals afbeeldingen, wordt alleen een referentie geëxporteerd naar Target. Het element zelf blijft opgeslagen in AEM Assets en wordt geleverd vanuit de AEM-publicatie-instantie.
 >
->Daarom moet het ervaringsfragment, met alle gerelateerde elementen, worden gepubliceerd voordat het naar Target kan worden geëxporteerd.
+>Daarom moet het Experience Fragment, met alle gerelateerde elementen, worden gepubliceerd voordat het naar Target wordt geëxporteerd.
 
 Een ervaringsfragment exporteren van AEM naar Target (na het opgeven van de Cloud Configuration):
 
@@ -161,11 +166,11 @@ Een ervaringsfragment exporteren van AEM naar Target (na het opgeven van de Clou
 
    >[!NOTE]
    >
-   >Als u **Publiceren** selecteert, wordt het ervaringsfragment meteen gepubliceerd en naar Doel verzonden.
+   >Als u **Publiceren** selecteert, wordt het ervaringsfragment meteen gepubliceerd en naar Target verzonden.
 
 1. Tik/klik op **OK** in het bevestigingsvenster.
 
-   Het ervaringsfragment moet nu in Doel staan.
+   Het ervaringsfragment moet nu in Target zijn.
 
    >[!NOTE]
    >
@@ -173,19 +178,19 @@ Een ervaringsfragment exporteren van AEM naar Target (na het opgeven van de Clou
 
    >[!NOTE]
    >
-   >Wanneer u een Experience Fragment weergeeft in Adobe Target, is de *laatst gewijzigde* datum de datum waarop het fragment voor het laatst is gewijzigd in AEM, niet de datum waarop het fragment voor het laatst is geëxporteerd naar Adobe Target.
+   >Wanneer u een Ervingsplugment in Adobe Target weergeeft, is de *laatst gewijzigde* datum die wordt weergegeven de datum waarop het fragment voor het laatst is gewijzigd in AEM, niet de datum waarop het fragment voor het laatst is geëxporteerd naar Adobe Target.
 
 >[!NOTE]
 >
 >U kunt het exporteren ook vanuit de pagina-editor uitvoeren met behulp van vergelijkbare opdrachten in het menu [Pagina-informatie](/help/sites-authoring/author-environment-tools.md#page-information) .
 
-## Het gebruiken van uw Fragmenten van de Ervaring in het Doel van Adobe {#using-your-experience-fragments-in-adobe-target}
+## Uw ervaringsfragmenten in Adobe Target gebruiken {#using-your-experience-fragments-in-adobe-target}
 
-Na het uitvoeren van de voorafgaande taken, toont het ervaringsfragment op de pagina van Aanbiedingen in Doel. Raadpleeg de [specifieke doeldocumentatie](https://experiencecloud.adobe.com/resources/help/en_US/target/target/aem-experience-fragments.html) voor meer informatie over wat u daar kunt bereiken.
+Nadat u de voorgaande taken hebt uitgevoerd, wordt het ervaringsfragment weergegeven op de pagina Aanbiedingen in Target. Bekijk de [specifieke documentatie](https://experiencecloud.adobe.com/resources/help/en_US/target/target/aem-experience-fragments.html) van Target voor meer informatie over wat u daar kunt bereiken.
 
 >[!NOTE]
 >
->Wanneer u een Experience Fragment weergeeft in Adobe Target, is de *laatst gewijzigde* datum de datum waarop het fragment voor het laatst is gewijzigd in AEM, niet de datum waarop het fragment voor het laatst is geëxporteerd naar Adobe Target.
+>Wanneer u een Ervingsplugment in Adobe Target weergeeft, is de *laatst gewijzigde* datum die wordt weergegeven de datum waarop het fragment voor het laatst is gewijzigd in AEM, niet de datum waarop het fragment voor het laatst is geëxporteerd naar Adobe Target.
 
 ## Een ervaringsfragment verwijderen dat al naar Adobe Target is geëxporteerd {#deleting-an-experience-fragment-already-exported-to-adobe-target}
 
@@ -194,12 +199,12 @@ Als u een ervaringsfragment verwijdert dat al naar Target is geëxporteerd, kan 
 Om dergelijke situaties te voorkomen:
 
 * Als het ervaringsfragment momenteel niet in een activiteit wordt gebruikt, staat AEM de gebruiker toe om het fragment zonder een waarschuwingsbericht te schrappen.
-* Als het ervaringsfragment momenteel door een activiteit in Doel wordt gebruikt, wordt de gebruiker van AEM gewaarschuwd over mogelijke gevolgen dat het schrappen van het fragment op de activiteit zal hebben.
+* Als het Experience Fragment momenteel wordt gebruikt door een activiteit in Target, wordt de AEM-gebruiker een foutbericht gewaarschuwd over de mogelijke gevolgen die het verwijderen van het fragment heeft voor de activiteit.
 
    Het foutbericht in AEM belet de gebruiker niet (geforceerd) het ervaringsfragment te verwijderen. Als het ervaringsfragment wordt verwijderd:
 
-   * De doelaanbieding met AEM Experience Fragment kan ongewenste werking vertonen
+   * Het Target-aanbod met AEM Experience Fragment kan ongewenste werking vertonen
 
-      * De aanbieding wordt waarschijnlijk nog steeds weergegeven, aangezien de Experience Fragment-HTML naar Target werd geduwd
+      * Het aanbod wordt waarschijnlijk nog steeds weergegeven, omdat de Experience Fragment HTML naar Target werd geduwd
       * Eventuele verwijzingen in het ervaringsfragment werken mogelijk niet correct als de middelen waarnaar wordt verwezen ook in AEM worden verwijderd.
-   * Natuurlijk zijn verdere wijzigingen in het ervaringsfragment onmogelijk, omdat het ervaringsfragment niet meer bestaat in AEM.
+   * Uiteraard zijn verdere wijzigingen van het ervaringsfragment niet mogelijk omdat het ervaringsfragment niet meer bestaat in AEM.

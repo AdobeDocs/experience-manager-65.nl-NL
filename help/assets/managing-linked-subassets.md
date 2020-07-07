@@ -3,7 +3,7 @@ title: Samengestelde elementen beheren met verwijzingen en elementen van meerder
 description: Leer hoe u verwijzingen naar digitale middelen maakt vanuit [!DNL Adobe InDesign], [!DNL Adobe Illustrator] en [!DNL Adobe Photoshop]. Met de functie Paginaviewer kunt u afzonderlijke subelementpagina's van bestanden met meerdere pagina's weergeven, zoals PDF-, INDD-, PPT-, PPTX- en AI-bestanden.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '1315'
 ht-degree: 0%
@@ -38,7 +38,7 @@ U kunt vanuit een [!DNL Adobe Illustrator] bestand verwijzen naar bestaande digi
 
    ![chlimage_1-85](assets/chlimage_1-259.png)
 
-1. Klik op **[!UICONTROL View Properties]** de werkbalk. Op de [!UICONTROL Properties] pagina wordt de lijst met bestanden die naar het huidige element verwijzen, weergegeven onder de **[!UICONTROL References]** kolom op het **[!UICONTROL Basic]** tabblad.
+1. Klik op **[!UICONTROL View Properties]** op de werkbalk. Op de [!UICONTROL Properties] pagina wordt de lijst met bestanden die naar het huidige element verwijzen, weergegeven onder de **[!UICONTROL References]** kolom op het **[!UICONTROL Basic]** tabblad.
 
    ![de verwijzingen naar Experience Manager-middelen in de kolom Referenties weergeven in de elementdetails](assets/asset-references.png)
 
@@ -89,7 +89,7 @@ Voor de ondersteunde elementen met indelingen die uit meerdere pagina&#39;s best
 
 Genereren van subelementen is standaard uitgeschakeld. Voer de volgende stappen uit om het genereren van subelementen in te schakelen:
 
-1. Meld u aan [!DNL Experience Manager] als beheerder. Ga naar **[!UICONTROL Tools > Workflow > Models]**.
+1. Meld u aan [!DNL Experience Manager] als beheerder. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
 1. Select **[!UICONTROL DAM Update Asset]** workflow and click **[!UICONTROL Edit]**.
 1. Klik **[!UICONTROL Toggle Side Panel]** en zoek de **[!UICONTROL Create Sub Asset]** stap. Voeg de stap toe aan de workflow. Klik op **[!UICONTROL Sync]**.
 
@@ -99,7 +99,7 @@ Voer een van de volgende handelingen uit om de subelementen te genereren:
 * Bestaande elementen met meerdere pagina&#39;s: Voer handmatig de [!UICONTROL DAM Update Assets] workflow uit volgens een van de volgende stappen:
 
    * Selecteer een element en klik [!UICONTROL Timeline] om het linkerdeelvenster te openen. U kunt ook de sneltoets gebruiken `alt + 3`. Klik [!UICONTROL Start Workflow], selecteer [!UICONTROL DAM Update Asset], klik [!UICONTROL Start], en klik [!UICONTROL Proceed].
-   * Select an asset and click [!UICONTROL Create > Workflow] from the toolbar. Selecteer in het pop-updialoogvenster de [!UICONTROL DAM Update Asset] workflow, klik [!UICONTROL Start]en klik op [!UICONTROL Proceed].
+   * Selecteer een element en klik op [!UICONTROL Create] > [!UICONTROL Workflow] op de werkbalk. Selecteer in het pop-updialoogvenster de [!UICONTROL DAM Update Asset] workflow, klik [!UICONTROL Start]en klik op [!UICONTROL Proceed].
 
 Met name voor Microsoft Word-documenten voert u de **[!UICONTROL DAM Parse Word Documents]** workflow uit. Er wordt een `cq:Page` component gegenereerd op basis van de inhoud van het Microsoft Word-document. De afbeeldingen die uit het document zijn geëxtraheerd, worden vanuit de `cq:Page` component gebruikt. Deze afbeeldingen worden geëxtraheerd, zelfs als het genereren van subelementen is uitgeschakeld.
 

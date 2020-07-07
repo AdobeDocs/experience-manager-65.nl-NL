@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 589e3a83-7d1a-43fd-98b7-3b947122829d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2b0ef111f2f393fac2da1eef76c2ec79a471ff3f
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '708'
+ht-degree: 0%
 
 ---
 
@@ -36,7 +39,9 @@ Deze hulp een ontwikkelaar om:
 >
 >* Deze optie is alleen beschikbaar in de interface met aanraakbediening (wanneer u pagina&#39;s bewerkt).
 >* Is niet beschikbaar op mobiele apparaten of kleine vensters op het bureaublad (vanwege ruimtebeperkingen).
-   >   * Dit gebeurt wanneer de breedte minder dan 1024 px is.
+   >
+   >   
+   * Dit gebeurt wanneer de breedte minder dan 1024 px is.
 >* Deze optie is alleen beschikbaar voor gebruikers die lid zijn van de `administrators` groep.
 
 

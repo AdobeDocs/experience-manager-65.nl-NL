@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 765a3d9b-4552-403e-872c-fdf684ac271d
 translation-type: tm+mt
-source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+source-git-commit: ce21755263a2e8a3f0e97acb7f586e32cedde83a
+workflow-type: tm+mt
+source-wordcount: '447'
+ht-degree: 0%
 
 ---
 
@@ -49,7 +52,7 @@ Optionele configuratie van:
 
 * **Adobe Analytics**
 
-   De integratie met de Analyse van Adobe voegt uitvoerige rapporteringseigenschappen toe en steunt de Video Heartmaattoevoeging aan Analytics.
+   De integratie met Adobe Analytics voegt uitvoerige rapporteringseigenschappen toe en steunt de Video Heartmaattoevoeging aan Analytics.
 
 * **Dispatcher**
 
@@ -63,9 +66,14 @@ Elke stap verbindt met documentatie die de noodzakelijke details verstrekt.
 
 1. **[JDBC-stuurprogramma installeren voor MySQL](deploy-communities.md#jdbc-driver-for-mysql)**
 
-   Webconsole gebruiken (bundels): *http://localhost:4502/system/console/bundles* Installeren *voordat* SCORM-pakket wordt geïnstalleerd
+   Webconsole gebruiken (bundels): *http://localhost:4502/system/console/bundles*
 
-1. **[SCORM-pakket](deploy-communities.md#scorm-package)**installeren Pakketbeheer gebruiken:*http://localhost:4502/crx/packmgr/*
+   Installeren *voordat* SCORM-pakket wordt geïnstalleerd
+
+1. **[SCORM-pakket installeren](deploy-communities.md#scorm-package)**
+
+
+   Pakketbeheer gebruiken: *http://localhost:4502/crx/packmgr/*
 
 **Op elke server:**
 
@@ -73,7 +81,9 @@ Elke stap verbindt met documentatie die de noodzakelijke details verstrekt.
 
 1. **[MySQL-databases installeren](mysql.md#database-setup)**
 
-   SQL-scripts uitvoeren die u hebt gedownload van de auteur instanceUse MySQL Workbench
+   SQL-scripts uitvoeren die zijn gedownload van de auteur-instantie
+
+   MySQL Workbench gebruiken
 
 **Op dezelfde serverhostingauteurinstantie:**
 
@@ -95,9 +105,9 @@ Elke stap verbindt met documentatie die de noodzakelijke details verstrekt.
 
 **Instantie van auteur:**
 
-1. (*Optioneel*) Analyseservice **[configureren](analytics.md)**
+1. (*Optioneel*) Analytics-service **[configureren](analytics.md)**
 
-   Tools, implementatie en Cloud Services-console gebruiken: *http://localhost:4502/etc/cloudservices/sitecatalyst.html*
+   Hulpmiddelen, Plaatsing, de console van Cloud Servicen van het gebruik: *http://localhost:4502/etc/cloudservices/sitecatalyst.html*
 
 1. **[MPEG configureren](ffmpeg.md#configure-ffmpeg-transcoding-service)**
 
@@ -109,7 +119,9 @@ Elke stap verbindt met documentatie die de noodzakelijke details verstrekt.
 
 1. **[Community-beheerders maken](users.md#creating-community-members)**
 
-   Voor het auteursmilieu gebruik klassieke-UI de console van de Veiligheid: *http://localhost:4502/useradmin* maken gebruiker(s) met pad = /home/users/community
+   Voor het auteursmilieu gebruik klassieke-UI de console van de Veiligheid: *http://localhost:4502/useradmin*
+
+   Gebruiker(s) maken met pad = /home/users/community
 
    * Voeg leden toe aan de volgende groepen:
 
@@ -118,4 +130,4 @@ Elke stap verbindt met documentatie die de noodzakelijke details verstrekt.
 
 ## Dispatcher {#dispatcher}
 
-Wanneer de implementatie de [AEM Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)bevat, moeten de functies voor activering `clientheader` en `filter` secties worden gewijzigd om ervoor te zorgen dat deze correct werken. Zie [Dispatcher configureren voor Gemeenschappen](dispatcher.md#enablement).
+Wanneer de implementatie de Dispatcher [van](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)AEM omvat, moeten de functies `clientheader` en `filter` secties worden gewijzigd om ervoor te zorgen dat deze correct werken. Zie [Dispatcher for Communities](dispatcher.md#enablement)configureren.

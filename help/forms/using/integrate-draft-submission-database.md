@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 translation-type: tm+mt
-source-git-commit: 070d4e105c94548dda1098bf47cab83e0847f24d
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '1439'
+ht-degree: 1%
 
 ---
 
@@ -18,15 +21,15 @@ source-git-commit: 070d4e105c94548dda1098bf47cab83e0847f24d
 
 ## Voorbeeldoverzicht {#sample-overview}
 
-Met concepten en verzendingscomponenten van AEM Forms kunnen gebruikers hun formulieren opslaan als concepten en later verzenden vanaf elk apparaat. Gebruikers kunnen hun ingevulde formulieren ook via een portal bekijken. Om deze functionaliteit in te schakelen, biedt AEM Forms gegevens en metagegevensservices waarmee de gegevens die een gebruiker heeft ingevuld in het formulier, en de metagegevens van het formulier die aan concepten en verzonden formulieren zijn gekoppeld, worden opgeslagen. Deze gegevens worden standaard opgeslagen in de CRX-opslagplaats. Als gebruikers echter via de publicatieversie van AEM met formulieren werken, wat doorgaans buiten de bedrijfsfirewall valt, willen organisaties wellicht gegevensopslag aanpassen om deze beter te beveiligen en betrouwbaarder te maken.
+Met concepten en verzendingscomponenten van een AEM Forms-portal kunnen gebruikers hun formulieren opslaan als concepten en deze later verzenden vanaf elk apparaat. Gebruikers kunnen hun ingevulde formulieren ook via een portal bekijken. Om deze functionaliteit in te schakelen, bieden AEM Forms gegevens- en metagegevensservices voor het opslaan van de gegevens die een gebruiker heeft ingevuld in het formulier en de metagegevens van het formulier die zijn gekoppeld aan concepten en verzonden formulieren. Deze gegevens worden standaard opgeslagen in de CRX-opslagplaats. Als gebruikers echter via de publicatieversie van AEM met formulieren werken, wat doorgaans buiten de bedrijfsfirewall valt, willen organisaties wellicht gegevensopslag aanpassen om deze beter te beveiligen en betrouwbaarder te maken.
 
 Het voorbeeld, dat in dit document wordt besproken, is een referentie-implementatie van aangepaste gegevens en metagegevensservices om concepten en verzendingscomponenten te integreren in een database. De database die wordt gebruikt in de voorbeeldimplementatie is **MySQL 5.6.24**. U kunt echter de concepten en verzendingscomponent integreren met elke database van uw keuze.
 
 >[!NOTE]
 >
 >* De voorbeelden en configuraties die in dit document worden uitgelegd, zijn in overeenstemming met MySQL 5.6.24 en u moet deze op de juiste wijze vervangen voor uw databasesysteem.
->* Controleer of u de nieuwste versie van het invoegpakket voor AEM Forms hebt geïnstalleerd. Zie het artikel over de release van [AEM Forms voor de lijst met beschikbare pakketten](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) .
-> * Het voorbeeldpakket werkt alleen met verzendacties voor Adaptieve formulieren.
+>* Zorg ervoor dat u de nieuwste versie van het invoegpakket AEM Forms hebt geïnstalleerd. Raadpleeg het artikel over releases van [AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) voor de lijst met beschikbare pakketten.
+>* Het voorbeeldpakket werkt alleen met verzendacties voor Adaptieve formulieren.
 
 
 ## Het voorbeeld instellen en configureren {#set-up-and-configure-the-sample}
@@ -40,12 +43,12 @@ Voer de volgende stappen uit, op alle auteur en publiceer instanties, om de stee
    [Bestand ophalen](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
 
 1. Ga naar AEM package manager op https://[*host*]:[*port*]/crx/packmgr/.
-1. Klik op Pakket **[!UICONTROL uploaden]**.
+1. Klik op **[!UICONTROL Upload Package]**.
 
 1. Blader naar het **zip-pakket aem-fp-db-integration-sample-pkg-6.1.2.zip** en klik op **[!UICONTROL OK]**.
-1. Klik op **[!UICONTROL Installeren]** naast het pakket om het pakket te installeren.
-1. Ga naar **[!UICONTROL AEM Web Console Configuration]** page op https://[*host*]:[*port*]/system/console/configMgr.
-1. Klik om **[!UICONTROL Forms Portal Concept en Submission Configuration]** te openen in bewerkingsmodus.
+1. Klik **[!UICONTROL Install]** aan naast het pakket om het pakket te installeren.
+1. Ga naar **[!UICONTROL AEM Web Console Configuration]** pagina op https://[*host*]:[*poort*]/systeem/console/configMgr.
+1. Klik om te openen **[!UICONTROL Forms Portal Draft and Submission Configuration]** in bewerkingsmodus.
 
 1. Geef de waarden voor de eigenschappen op zoals in de volgende tabel wordt beschreven:
 
@@ -81,10 +84,10 @@ Voer de volgende stappen uit, op alle auteur en publiceer instanties, om de stee
    >
    >Als u de tabelnamen wijzigt, geeft u deze op in de configuratie Formulierportal.
 
-1. Andere configuraties ongewijzigd laten en op **[!UICONTROL Opslaan]** klikken.
+1. Andere configuraties ongewijzigd laten en klikken **[!UICONTROL Save]**.
 
 1. De databaseverbinding kan worden uitgevoerd via de gegevensbron van Apache Sling Connection Pooled.
-1. Zoek en klik voor de Apache Sling-verbinding naar **[!UICONTROL Apache Sling Connection Pooled DataSource]** in de bewerkingsmodus van de webconsoleconfiguratie. Geef de waarden voor de eigenschappen op zoals in de volgende tabel wordt beschreven:
+1. Voor Apache Sling-verbinding zoekt u naar de bewerkingsmodus in de webconsoleconfiguratie en klikt u erop. **[!UICONTROL Apache Sling Connection Pooled DataSource]** Geef de waarden voor de eigenschappen op zoals in de volgende tabel wordt beschreven:
 
 <table>
  <tbody>
@@ -163,7 +166,7 @@ Voer de volgende stappen uit, op alle auteur en publiceer instanties, om de stee
 
 
 
-1. Andere configuraties ongewijzigd laten en op **[!UICONTROL Opslaan]** klikken.
+1. Andere configuraties ongewijzigd laten en klikken **[!UICONTROL Save]**.
 
 1. Als u al een lijst in het gegevensbestandschema hebt, sla aan de volgende stap over.
 
@@ -308,9 +311,9 @@ Voer de volgende stappen uit op alle auteur- en publicatieinstanties om het best
 
    Ga door als het pakket niet door enige bundel wordt uitgevoerd.
 
-1. Navigeer naar `https://'[server]:[port]'/system/console/bundles` en klik op **[!UICONTROL Installeren/Bijwerken]**.
-1. Klik op Bestand **** kiezen en blader om het bestand mysql-connector-java-5.1.39-bin.jar te selecteren. Selecteer ook de selectievakjes **[!UICONTROL Bundel]** starten en Pakketten **** vernieuwen.
-1. Klik op **[!UICONTROL Installeren of Bijwerken]**. Start de server opnieuw als de bewerking is voltooid.
+1. Navigeer naar `https://'[server]:[port]'/system/console/bundles` en klik **[!UICONTROL Install/Update]**.
+1. Klik **[!UICONTROL Choose File]** en blader om het bestand mysql-connector-java-5.1.39-bin.jar te selecteren. Selecteer ook **[!UICONTROL Start Bundle]** en **[!UICONTROL Refresh Packages]** selectievakjes.
+1. Klik op **[!UICONTROL Install or Update]**. Start de server opnieuw als de bewerking is voltooid.
 1. (Alleen ** Windows) Schakel de systeemfirewall van uw besturingssysteem uit.
 
 ## Voorbeeldcode voor poortgegevens en metagegevensservice voor formulieren {#sample-code-for-forms-portal-data-and-metadata-service}
@@ -319,7 +322,7 @@ Het volgende ZIP bevat `FormsPortalSampleDataServiceImpl` en `FormsPortalSampleM
 
 [Bestand ophalen](assets/sample_package.zip)
 
-## De lengte van de bestandsnaam controleren {#verify-length-of-the-file-name}
+## De lengte van de bestandsnaam controleren  {#verify-length-of-the-file-name}
 
 Voor de implementatie van de database van Forms Portal wordt een extra tabel met metagegevens gebruikt. De tabel heeft een samengestelde primaire sleutel die is gebaseerd op de kolommen Key en id van de tabel. MySQL staat primaire sleutels tot de lengte van 255 karakters toe. U kunt het volgende validatiescript aan de clientzijde gebruiken om de lengte te controleren van de bestandsnaam die aan de bestandswidget is gekoppeld. De validatie wordt uitgevoerd wanneer een bestand wordt gekoppeld. Het script dat in de volgende procedure wordt weergegeven, geeft een bericht weer wanneer de bestandsnaam groter is dan 150 (inclusief de extensie). U kunt het script wijzigen om te controleren op een ander aantal tekens.
 
@@ -328,9 +331,9 @@ Voer de volgende stappen uit om [een clientbibliotheek](/help/sites-developing/c
 1. Meld u aan bij CRXDE en navigeer naar /etc/clientlibs/
 1. Maak een knooppunt van het type **cq:ClientLibraryFolder** en geef de naam van het knooppunt op. Bijvoorbeeld, `validation`.
 
-   Klik op Alles **[!UICONTROL opslaan]**.
+   Klik op **[!UICONTROL Save All]**.
 
-1. Klik met de rechtermuisknop op het knooppunt, klik op **[!UICONTROL Nieuw bestand]** maken en maak een bestand met de extensie .txt. Voeg bijvoorbeeld de volgende code `js.txt`toe aan het nieuwe .txt-bestand en klik op Alles **** opslaan.
+1. Klik met de rechtermuisknop op het knooppunt, klik op het knooppunt **[!UICONTROL create new file]** en maak een bestand met de extensie .txt. Voeg bijvoorbeeld de volgende code `js.txt`toe aan het nieuwe .txt-bestand en klik op **[!UICONTROL Save All]**.
 
    ```
    #base=util
@@ -339,9 +342,9 @@ Voer de volgende stappen uit om [een clientbibliotheek](/help/sites-developing/c
 
    In de bovenstaande code `util` staat de naam van de map en de `util.js` naam van het bestand in de `util` map. De `util` map en het `util.js` bestand worden gemaakt in opeenvolgende stappen.
 
-1. Klik met de rechtermuisknop op het `cq:ClientLibraryFolder` knooppunt dat in stap 2 is gemaakt en selecteer Maken > Map maken. Maak een map met de naam `util`. Klik op Alles **[!UICONTROL opslaan]**. Klik met de rechtermuisknop op de `util` map en selecteer Maken > Bestand maken. Maak een bestand met de naam `util.js`. Klik op Alles **[!UICONTROL opslaan]**.
+1. Klik met de rechtermuisknop op het `cq:ClientLibraryFolder` knooppunt dat in stap 2 is gemaakt en selecteer Maken > Map maken. Maak een map met de naam `util`. Klik op **[!UICONTROL Save All]**. Klik met de rechtermuisknop op de `util` map en selecteer Maken > Bestand maken. Maak een bestand met de naam `util.js`. Klik op **[!UICONTROL Save All]**.
 
-1. Voeg de volgende code toe aan het bestand util.js en klik op **[!UICONTROL Alles]** opslaan. De code valideert de lengte van de bestandsnaam.
+1. Voeg de volgende code toe aan het bestand util.js en klik op **[!UICONTROL Save All]**. De code valideert de lengte van de bestandsnaam.
 
    ```
    /*
@@ -398,15 +401,15 @@ Voer de volgende stappen uit om [een clientbibliotheek](/help/sites-developing/c
    >
    >Het script is bedoeld voor een component van de box-widget voor bijlagen (OOTB). Als u de OOTB gehechtheidswidget hebt aangepast dan verander het bovengenoemde manuscript om respectieve veranderingen op te nemen.
 
-1. Voeg de volgende eigenschap toe aan de map die u in stap 2 hebt gemaakt en klik op Alles **** opslaan.
+1. Voeg de volgende eigenschap toe aan de map die in stap 2 is gemaakt en klik op **[!UICONTROL Save All]**.
 
-   * **[!UICONTROL Naam:]** categorieën
+   * **[!UICONTROL Name:]** categorieën
 
-   * **[!UICONTROL Type:]** String
+   * **[!UICONTROL Type:]** Tekenreeks
 
-   * **[!UICONTROL Waarde:]** fp.validation
+   * **[!UICONTROL Value:]** fp.validation
 
-   * **[!UICONTROL meerdere opties:]** Ingeschakeld
+   * **[!UICONTROL multi option:]** Ingeschakeld
 
 1. Navigeer naar de eigenschap embed `/libs/fd/af/runtime/clientlibs/guideRuntime`en voeg deze `fp.validation` waarde toe.
 
@@ -416,5 +419,5 @@ Voer de volgende stappen uit om [een clientbibliotheek](/help/sites-developing/c
    >
    >Als u aangepaste clientbibliotheken gebruikt in plaats van guideRuntime en guideRuntimeWithXfa-clientbibliotheken, gebruikt u de categorienaam om de clientbibliotheek die in deze procedure is gemaakt, in te sluiten in uw aangepaste bibliotheken die tijdens runtime worden geladen.
 
-1. Klik op Alles **[!UICONTROL opslaan.]** Wanneer de bestandsnaam groter is dan 150 tekens (inclusief de extensie), wordt nu een bericht weergegeven.
+1. Klik op **[!UICONTROL Save All.]** Nu als de bestandsnaam groter is dan 150 tekens (inclusief extensie) en er een bericht wordt weergegeven.
 

@@ -4,9 +4,9 @@ description: Suggesties en richtlijnen voor de configuratie van [!DNL Experience
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: da2e435f33e8527793e009700c30e60868d196be
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
-source-wordcount: '2722'
+source-wordcount: '2713'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Hier zijn bepaalde belangrijke aandachtsgebieden waaromheen u prestatieproblemen
 
 ## Platform {#platform}
 
-Experience Manager wordt ondersteund op een aantal platforms, maar Adobe heeft de grootste ondersteuning voor native gereedschappen gevonden in Linux en Windows. Dit levert optimale prestaties en een eenvoudige implementatie op. In het ideale geval moet u een 64-bits besturingssysteem implementeren om te voldoen aan de hoge geheugenvereisten van een [!DNL Experience Manager Assets] implementatie. Zoals met om het even welke plaatsing van de Manager van de Ervaring, zou u TarMK moeten uitvoeren waar mogelijk. Hoewel TarMK niet voorbij één enkele auteurinstantie kan schrapen, wordt het gevonden om beter te presteren dan MongoMK. U kunt TarMK-offloadinstanties toevoegen om de verwerkingskracht van de workflow voor uw [!DNL Experience Manager Assets] implementatie te verhogen.
+Hoewel Experience Manager op een aantal platforms wordt ondersteund, heeft Adobe de grootste ondersteuning voor native gereedschappen op Linux en Windows gevonden. Dit levert optimale prestaties en vereenvoudigt de implementatie. In het ideale geval moet u een 64-bits besturingssysteem implementeren om te voldoen aan de hoge geheugenvereisten van een [!DNL Experience Manager Assets] implementatie. Net als bij elke Experience Manager-implementatie moet u TarMK waar mogelijk implementeren. Hoewel TarMK niet voorbij één enkele auteurinstantie kan schrapen, wordt het gevonden om beter te presteren dan MongoMK. U kunt TarMK-offloadinstanties toevoegen om de verwerkingskracht van de workflow voor uw [!DNL Experience Manager Assets] implementatie te verhogen.
 
 ### Tijdelijke map {#temp-folder}
 
@@ -55,9 +55,8 @@ Als het tijdelijke volume met hoge prestaties gereed is, stelt u de JVM-paramete
 
 Voor optimale prestaties raadt Adobe u aan deze implementatie uit te voeren [!DNL Experience Manager Assets] in Java 8.
 
->[!NOTE]
->
->Oracle heeft de release van updates voor Java 7 vanaf april 2015 stopgezet.
+<!-- TBD: Link to the latest official word around Java.
+-->
 
 ### JVM-parameters {#jvm-parameters}
 
@@ -81,7 +80,7 @@ Wanneer u grote hoeveelheden middelen uploadt naar [!DNLAAdobe Experience Manage
 
 Vorm de als buffer opgetreden voor geheim voorgeheugengrootte in de Console van het Web OSGi. Stel de eigenschap in `https://host:port/system/console/configMgr/com.day.cq.dam.core.impl.cache.CQBufferedImageCache``cq.dam.image.cache.max.memory` bytes in. 1073741824 is bijvoorbeeld 1 GB (1024 x 1024 x 1024 = 1 GB).
 
-Van Manager 6.1 SP1 van de Ervaring, als u een `sling:osgiConfig` knoop voor het vormen van dit bezit gebruikt, zorg ervoor om het gegevenstype aan Lang te plaatsen. Zie [CQBufferedImageCache gebruikt heap tijdens het uploaden](https://helpx.adobe.com/experience-manager/kb/cqbufferedimagecache-consumes-heap-during-asset-uploads.html)van bedrijfsmiddelen voor meer informatie.
+Van Experience Manager 6.1 SP1, als u een `sling:osgiConfig` knoop voor het vormen van dit bezit gebruikt, zorg ervoor om het gegevenstype aan Lang te plaatsen. Zie [CQBufferedImageCache gebruikt heap tijdens het uploaden](https://helpx.adobe.com/experience-manager/kb/cqbufferedimagecache-consumes-heap-during-asset-uploads.html)van bedrijfsmiddelen voor meer informatie.
 
 ### Gedeelde gegevensopslag {#shared-data-stores}
 
@@ -118,7 +117,7 @@ Adobe raadt u aan HTTPS in te schakelen omdat veel bedrijven firewalls hebben di
 
 Primair, hangt uw strategie van de netwerkoptimalisering van de hoeveelheid beschikbare bandbreedte en de lading op uw instantie van de Manager [!DNLEvan de] ervaring af. De gemeenschappelijke configuratieopties, met inbegrip van firewalls of volmachten kunnen helpen netwerkprestaties verbeteren. Hier volgen enkele belangrijke punten:
 
-* Afhankelijk van uw instantietype (klein, gematigd, groot), zorg ervoor dat u voldoende netwerkbandbreedte voor uw instantie van de Manager van de Ervaring hebt. De adequate bandbreedtetoewijzing is vooral belangrijk als de Manager [!DNLEvan de] ervaring op AWS wordt ontvangen.
+* Afhankelijk van het instantietype (klein, matig, groot), moet u ervoor zorgen dat u voldoende netwerkbandbreedte hebt voor uw Experience Manager-instantie. De adequate bandbreedtetoewijzing is vooral belangrijk als de Manager [!DNLEvan de] ervaring op AWS wordt ontvangen.
 * Als uw [!DNLEinstantie van de Manager] van de Ervaring op AWS wordt ontvangen, kunt u profiteren door een veelzijdig het schrapen beleid te hebben. De instantie vergroten als gebruikers een hoge belasting verwachten. Downsize het voor matige/lage lading.
 * HTTPS: De meeste gebruikers hebben firewalls die het verkeer van HTTP snuffelen, wat het uploaden van dossiers of zelfs corrupte dossiers tijdens het uploaden negatief kan beïnvloeden.
 * Grote bestanden uploaden: Zorg ervoor dat gebruikers een bekabelde verbinding met het netwerk hebben (WiFi-verbindingen verzadigen snel).
@@ -228,12 +227,12 @@ Het invoeren van een grote hoeveelheid meta-gegevens kan in middel-intensieve kr
 
 ## Replicatie {#replication}
 
-Als u elementen wilt repliceren naar een groot aantal publicatie-instanties, bijvoorbeeld in een Sites-implementatie, raadt Adobe u aan kettingreplicatie te gebruiken. In dit geval dupliceert de auteurinstantie naar één enkel publicatiegeval dat beurtelings aan andere publiceert instanties herhaalt, die de auteursinstantie vrijmaken.
+Als u elementen wilt repliceren naar een groot aantal publicatie-instanties, bijvoorbeeld in een Sites-implementatie, raadt Adobe u aan kettingreplicatie te gebruiken. In dit geval dupliceert de auteurinstantie naar één enkel publicatiegeval dat beurtelings aan andere publicatieinstanties herhaalt, die de auteursinstantie vrijmaken.
 
 ### Kettingreplicatie configureren {#configure-chain-replication}
 
 1. Bepaal op welke publicatie-instantie u de replicaties wilt koppelen
-1. Op die publicatieinstantie voeg replicatieagenten toe die aan andere publicatieinstanties richten
+1. Op die publicatieinstantie voegt replicatieagenten toe die aan andere publicatieinstanties richten
 1. Schakel op elk van die replicatieagents &quot;Bij ontvangst&quot; in op het tabblad &quot;Triggers&quot;
 
 >[!NOTE]

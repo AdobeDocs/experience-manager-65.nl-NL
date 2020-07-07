@@ -3,7 +3,7 @@ title: 'Metagegevensschema''s om de indeling van de pagina met eigenschappen van
 description: Het metagegevensschema definieert de indeling van de pagina met eigenschappen en de eigenschappen van metagegevens die voor elementen worden weergegeven. Leer hoe u een aangepast metagegevensschema kunt maken, het schema voor metagegevens kunt bewerken en hoe u het schema voor metagegevens op elementen kunt toepassen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
 workflow-type: tm+mt
 source-wordcount: '2510'
 ht-degree: 5%
@@ -185,7 +185,7 @@ Als u een formulier wilt verwijderen, selecteert u een formulier en klikt u op V
 
 ### Nieuwe formulieren toevoegen voor MIME-typen {#add-new-forms-for-mime-types}
 
-Create a form under the appropriate form type. For example, to add a template for the `image/png` subtype, create the form under the &quot;image&quot; forms. De titel voor het schemaformulier is de naam van het subtype. In dit geval is de titel `png`.
+Maak een formulier onder het juiste formuliertype. For example, to add a template for the `image/png` subtype, create the form under the &quot;image&quot; forms. De titel voor het schemaformulier is de naam van het subtype. In dit geval is de titel `png`.
 
 #### Een bestaande schemasjabloon gebruiken voor verschillende MIME-typen {#use-an-existing-schema-template-for-various-mime-types}
 

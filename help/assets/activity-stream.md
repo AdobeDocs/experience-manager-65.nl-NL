@@ -3,24 +3,24 @@ title: Activiteitsstroom in tijdlijn
 description: In dit artikel wordt beschreven hoe u activiteitenlogboeken voor elementen op de tijdlijn kunt weergeven.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '213'
-ht-degree: 23%
+ht-degree: 24%
 
 ---
 
 
 # Activiteitsstroom in tijdlijn {#activity-stream-in-timeline}
 
-Deze functie geeft activiteitenlogboeken voor elementen op de tijdlijn weer. Als u een van de volgende elementgerelateerde bewerkingen uitvoert in Adobe Experience Manager Assets, werkt de functie voor de activiteitsstroom de tijdlijn bij om de activiteit weer te geven.
+Deze functie geeft activiteitenlogboeken voor elementen op de tijdlijn weer. Als u een van de volgende bewerkingen met betrekking tot elementen uitvoert in Adobe Experience Manager Assets, werkt de functie voor de activiteitsstroom de tijdlijn bij om de activiteit weer te geven.
 
 De volgende bewerkingen worden in de activiteitsstroom aangemeld:
 
 * Maken
 * Verwijderen
 * Downloaden (inclusief uitvoeringen)
-* Publiceren
+* Publicatie
 * Publiceren ongedaan maken
 * Goedkeuren
 * Afwijzen

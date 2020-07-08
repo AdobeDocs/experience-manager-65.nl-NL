@@ -3,7 +3,7 @@ title: Verbeterde slimme tags
 description: Verbeterde slimme tags
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '1496'
 ht-degree: 8%
@@ -15,7 +15,7 @@ ht-degree: 8%
 
 ## Overzicht van verbeterde slimme tags {#overview-of-enhanced-smart-tags}
 
-Organisaties die met digitale middelen te maken hebben, maken steeds vaker gebruik van door taxonomie gecontroleerde woordenschat in metagegevens van bedrijfsmiddelen. In wezen, omvat het een lijst van sleutelwoorden die de werknemers, de partners, en de klanten algemeen gebruiken om naar digitale activa van een bepaalde klasse te verwijzen en te zoeken. Door elementen te labelen met een woordenschat die door de taxonomie wordt bepaald, kunt u ze gemakkelijk herkennen en ophalen door zoekopdrachten op basis van tags.
+Organisaties die met digitale middelen te maken hebben, maken steeds vaker gebruik van een door taxonomie gecontroleerde woordenlijst in metagegevens van bedrijfsmiddelen. In wezen, omvat het een lijst van sleutelwoorden die de werknemers, de partners, en de klanten algemeen gebruiken om naar digitale activa van een bepaalde klasse te verwijzen en te zoeken. Door elementen te labelen met een woordenschat die door de taxonomie wordt bepaald, kunt u ze gemakkelijk herkennen en ophalen door zoekopdrachten op basis van tags.
 
 Vergeleken met natuurlijke taalwoordenboeken, helpt het etiketteren van digitale activa die op bedrijfstaxonomie worden gebaseerd hen op de zaken van een bedrijf te richten en zorgt ervoor dat de meest relevante activa in onderzoeken verschijnen.
 
@@ -27,7 +27,7 @@ Nadat een tag is opgeleid en gereed, kan de service deze tags nu toepassen op el
 
 Op de achtergrond gebruikt de Smart Content Service het Adobe Sensei AI-framework om het algoritme voor beeldherkenning op te leiden voor de structuur van uw tags en de bedrijfskatonomie. Deze inhoudsinfo wordt vervolgens gebruikt om relevante tags toe te passen op een andere set elementen.
 
-Smart Content Service is een cloudservice die wordt gehost op Adobe I/O. Als u dit in Adobe Experience Manager wilt gebruiken, moet de systeembeheerder uw Experience Manager-exemplaar integreren met de Adobe I/O-versie.
+Smart Content Service is een cloudservice die wordt gehost op Adobe I/O. Als u dit wilt gebruiken in de Adobe Experience Manager, moet de systeembeheerder uw Experience Manager-implementatie integreren met de Adobe I/O-implementatie.
 
 Samenvattend, zijn hier de belangrijkste stappen om de Slimme Dienst van de Inhoud te gebruiken:
 

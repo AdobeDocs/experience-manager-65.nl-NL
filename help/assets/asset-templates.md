@@ -1,11 +1,11 @@
 ---
-title: Asset templates in [!DNL Adobe Experience Manager Assets].
-description: Meer informatie over Asset templates in [!DNL Adobe Experience Manager Assets] en over het gebruik van asset templates om marketingmateriaal te maken.
+title: Elementsjablonen in [!DNL Adobe Experience Manager Assets].
+description: Meer informatie over Asset-sjablonen [!DNL Adobe Experience Manager Assets] en over het gebruik van asset templates om marketingmateriaal te maken.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
-source-wordcount: '1522'
+source-wordcount: '1512'
 ht-degree: 0%
 
 ---
@@ -79,6 +79,7 @@ U kunt direct nadat u het hebt gemaakt, een onderpand bewerken. U kunt het besta
    * Navigeer op de pagina Sjablonen naar de map waarin u het onderpand hebt gemaakt en klik op de [!UICONTROL Edit] snelle actie op de miniatuur van een onderpand.
    * Klik op de werkbalk op de elementpagina voor het onderpand. **[!UICONTROL Edit]**
    * Select the collateral and click **[!UICONTROL Edit]** from the toolbar.
+
    <!--![chlimage_1-108](assets/chlimage_1-313.png) -->
 
    De elementenzoeker en de teksteditor worden links op de pagina weergegeven. De teksteditor is standaard geopend.
@@ -95,7 +96,7 @@ U kunt direct nadat u het hebt gemaakt, een onderpand bewerken. U kunt het besta
 
    >[!NOTE]
    >
-   >Zorg ervoor dat uw [!DNL Experience Manager] instantie is geïntegreerd met een sjabloon [!DNL InDesign Server] waarmee u gegevens uit de [!DNL Experience Manager Assets] [!DNL InDesign] sjabloon kunt extraheren en deze beschikbaar kunt maken voor bewerking. Zie Experience Manager Assets [integreren met InDesign Server](/help/assets/indesign.md)voor meer informatie.
+   >Zorg ervoor dat uw [!DNL Experience Manager] implementatie is geïntegreerd met een toepassing [!DNL InDesign Server] waarmee u gegevens uit de [!DNL Experience Manager Assets] [!DNL InDesign] sjabloon kunt extraheren en ter beschikking kunt stellen voor bewerking. Zie Experience Manager Assets [integreren met InDesign Server](/help/assets/indesign.md)voor meer informatie.
 
 1. Als u de tekst in een bewerkbaar veld wilt wijzigen, klikt u op het tekstveld in de lijst met bewerkbare velden en bewerkt u de tekst in het veld.
 
@@ -135,11 +136,13 @@ U kunt direct nadat u het hebt gemaakt, een onderpand bewerken. U kunt het besta
    >
    >* Afbeeldingen worden niet ingesloten in de onderliggende [!DNL InDesign] sjabloon.
    >* Afbeeldingen worden gekoppeld vanuit het lokale bestandssysteem.
+
    >
    >Ga als volgt te werk [!DNL Experience Manager] om het omzetten van afbeeldingen in te schakelen:
    >
    >* Afbeeldingen insluiten tijdens het maken van [!DNL InDesign] sjablonen (zie [Koppelingen en ingesloten afbeeldingen](https://helpx.adobe.com/indesign/using/graphics-links.html)).
    >* Koppel [!DNL Experience Manager] het bestand aan uw lokale bestandssysteem en wijs ontbrekende pictogrammen toe aan bestaande elementen in [!DNL Experience Manager].
+
    >
    >Raadpleeg de [!DNL InDesign] aanbevolen procedures voor het werken met InDesign-documenten in Experience Manager [voor meer informatie over het werken met](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html)documenten.
 

@@ -1,12 +1,12 @@
 ---
-title: Aanbevolen werkwijzen voor de integratie met Adobe Creative Cloud en [!DNL Adobe Experience Manager].
-description: Aanbevolen procedures voor de integratie van [!DNL Adobe Experience Manager] met [!DNL Adobe Creative Cloud] om workflows voor de overdracht van middelen te stroomlijnen en een hoge snelheid van de inhoud te bereiken.
+title: Aanbevolen werkwijzen [!DNL Adobe Experience Manager] voor Adobe Creative Cloud en integratie.
+description: Aanbevolen procedures voor [!DNL Adobe Experience Manager] with [!DNL Adobe Creative Cloud] integratie om workflows voor overdracht van elementen te stroomlijnen en een hoge snelheid van de inhoud te bereiken.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
-source-wordcount: '3263'
-ht-degree: 16%
+source-wordcount: '3251'
+ht-degree: 15%
 
 ---
 
@@ -45,6 +45,9 @@ Dit artikel richt zich hoofdzakelijk op de eerste twee aspecten van de samenwerk
 
 ### Toewijzing van gebruiksgevallen en Adobe-oplossingen {#mapping-of-use-cases-and-adobe-solutions}
 
+<!-- TBD: Add some info about XD integration and possibly info about DA v2.0.
+-->
+
 | Hoofdletters gebruiken | [!DNL Adobe Asset Link] | [!DNL Experience Manager] bureaubladtoepassing | Opmerkingen/andere oplossingen |
 |---|---|---|---|
 | Detecteren - door DAM-mappen bladeren | Ja | [!DNL Experience Manager] Webinterface- en desktopacties |  |
@@ -73,7 +76,7 @@ Om het gebruik van middelen te steunen, zouden andere oplossingen moeten worden 
 ### Verklarende woordenlijst {#glossary-of-common-terms}
 
 * **Werk in uitvoering of creatief werk in uitvoering (WIP):** Een fase in de levenscyclus van assets waarbij een asset meerdere wijzigingen ondergaat en doorgaans nog niet klaar is om te worden gedeeld met grotere teams.
-* **Creatieve :**[!DNL Assets] Assets die klaar zijn om te worden gedeeld met een groter team, of die zijn geselecteerd/goedgekeurd door het creatieve team om te delen met marketing- of LOB-teams.
+* **Creatieve elementen:** [!DNL Assets] die klaar zijn om te worden gedeeld met een breder team, of door het creatieve team zijn geselecteerd of goedgekeurd om te worden gedeeld met marketing- of LOB-teams.
 * **Goedkeuring van assets:** Het goedkeuringsproces dat wordt uitgevoerd voor assets die reeds naar DAM zijn geüpload, en dat typisch merkgoedkeuringen, wettelijke goedkeuringen, enz. omvat.
 * **Definitieve asset:** Een asset die alle goedkeuringen/metadatatagging heeft doorlopen en klaar is om door het grotere team te worden gebruikt. Een dergelijke asset wordt opgeslagen in DAM en beschikbaar gesteld aan alle (geïnteresseerde) gebruikers. Deze kan in marketingkanalen of door creatieve teams worden gebruikt om ontwerpen te maken.
 * **Kleine update/wijziging van assets:** Een snelle en kleine wijziging in een digitale asset. Deze wordt vaak uitgevoerd als reactie op een retoucheerverzoek of een verzoek om kleine bewerkingen, een assetrevisie of goedkeuring (bijvoorbeeld om de positie te wijzigen, de tekstgrootte te wijzigen, de verzadiging/helderheid en kleur aan te passen, enz.).
@@ -160,20 +163,20 @@ Hieronder volgen voorbeelden van updates die doorgaans niet relevant zijn:
 
 #### Creatieve gebruikers met directe toegang tot DAM {#creative-users-with-direct-access-to-dam}
 
-Doorgaans hebben interne creatieve teams of agentschappen/creatieve professionals die aan het interne netwerk zijn toegewezen, toegang tot het DAM-exemplaar, inclusief [!DNL Experience Manager] aanmelding. [!DNL Experience Manager] en de netwerkinfrastructuur kan opstelling zijn om directe toegang tot externe partijen - gewoonlijk vertrouwde organisaties zoals agentschappen toe te staan die voor een cliënt werken - toegang tot [!DNL Experience Manager] over netwerk, bijvoorbeeld via VPN of IP toegestane lijst te hebben.
+Doorgaans hebben interne creatieve teams of agentschappen/creatieve professionals die aan het interne netwerk zijn toegewezen, toegang tot de DAM-implementatie, inclusief [!DNL Experience Manager] aanmelding. [!DNL Experience Manager] en de netwerkinfrastructuur kan opstelling zijn om directe toegang tot externe partijen - gewoonlijk vertrouwde op organisaties zoals agentschappen toe te staan die voor een cliënt werken - om toegang tot [!DNL Experience Manager] over netwerk, bijvoorbeeld via VPN of IP lijst van gewenste personen te hebben.
 
 In dergelijke gevallen helpt de Adobe Asset Link- of [!DNL Experience Manager] bureaubladtoepassing u eenvoudig toegang te krijgen tot definitieve/goedgekeurde middelen en kunt u creatieve middelen opslaan naar DAM.
 
 #### Creatieve gebruikers zonder toegang tot DAM {#creative-users-without-access-to-dam}
 
-Externe agentschappen en freelancers zonder directe toegang tot het DAM-exemplaar hebben mogelijk toegang tot goedgekeurde activa nodig of willen hun nieuwe ontwerpen toevoegen aan het DAM.
+Externe agentschappen en freelancers zonder directe toegang tot de DAM-implementatie hebben mogelijk toegang tot goedgekeurde middelen nodig of willen hun nieuwe ontwerpen toevoegen aan de DAM.
 
 Gebruik de volgende strategieën om toegang te verlenen tot definitieve/goedgekeurde middelen:
 
 * Gebruik de bureaubladtoepassing als Asset Link niet werkt.
 * Gebruik [Experience Manager Assets Brand Portal](https://helpx.adobe.com/nl/experience-manager/brand-portal/user-guide.html) voor het veilig distribueren van middelen aan externe partners
 * Gebruik een aangepaste implementatie van een distributie- en sourcingportal op basis van [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
-* De opstelling van het Toegangsbeheer van het gebruik in [!DNL Experience Manager] en noodzakelijke netwerkinfrastructuur (bijvoorbeeld, VPN en IP toegestaan lijst) om externe partijen toegang tot een specifiek gebied van inhoud in uw DAM te geven. Ze kunnen de [!DNL Experience Manager] webinterface gebruiken om elementen op te halen en nieuwe inhoud te uploaden naar uw DAM.
+* De opstelling van het Toegangsbeheer van het gebruik in [!DNL Experience Manager] en noodzakelijke netwerkinfrastructuur (bijvoorbeeld, VPN en IP lijst van gewenste personen) om externe partijen toegang tot een specifiek gebied van inhoud in uw DAM te geven. Ze kunnen de [!DNL Experience Manager] webinterface gebruiken om elementen op te halen en nieuwe inhoud te uploaden naar uw DAM.
 
 #### Werk bezig met middelen van [!DNL Experience Manager] {#work-in-progress-on-assets-from-aem}
 

@@ -3,9 +3,9 @@ title: XMP-terugverwijzing naar uitvoeringen
 description: Leer hoe de functie XMP-schrijfback de metagegevenswijzigingen voor een element doorgeeft aan alle of aan specifieke uitvoeringen van het element.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '723'
 ht-degree: 3%
 
 ---
@@ -70,7 +70,7 @@ De wijzigingen in de metagegevens worden doorgegeven aan de uitvoeringen miniatu
 
 [!DNL Experience Manager Assets] ondersteunt zowel lijst van afgewezen personen- als lijst van gewenste personen-filtering van eigenschappen/knooppunten voor XMP-metagegevens die worden gelezen uit binaire elementen van elementen en die worden opgeslagen in JCR wanneer elementen worden opgenomen.
 
-Als u filtert met een lijst van afgewezen personen, kunt u alle eigenschappen van XMP-metagegevens importeren, behalve de eigenschappen die voor uitsluiting zijn opgegeven. Voor elementtypen zoals INDD-bestanden met grote hoeveelheden XMP-metagegevens (bijvoorbeeld 1000 knooppunten met 10.000 eigenschappen) zijn de namen van te filteren knooppunten echter niet altijd van tevoren bekend. Als het filtreren gebruikend een lijst van afgewezen personen een groot aantal activa met talrijke meta-gegevens XMP om toelaat worden ingevoerd, kan de instantie AEM/de cluster stabiliteitskwesties, bijvoorbeeld verstopte observatierijen ontmoeten.
+Als u filtert met een lijst van afgewezen personen, kunt u alle eigenschappen van XMP-metagegevens importeren, behalve de eigenschappen die voor uitsluiting zijn opgegeven. Voor elementtypen zoals INDD-bestanden met grote hoeveelheden XMP-metagegevens (bijvoorbeeld 1000 knooppunten met 10.000 eigenschappen) zijn de namen van te filteren knooppunten echter niet altijd van tevoren bekend. Als het filtreren gebruikend een lijst van afgewezen personen een groot aantal activa met talrijke meta-gegevens XMP om toelaat worden ingevoerd, kan de plaatsing AEM stabiliteitskwesties, bijvoorbeeld verstopte observatierijen ontmoeten.
 
 Door het filteren van XMP-metagegevens via lijst van gewenste personen verhelpt u dit probleem door de XMP-eigenschappen te definiëren die moeten worden geïmporteerd. Op deze manier worden andere of onbekende XMP-eigenschappen genegeerd. Voor achterwaartse compatibiliteit kunt u enkele van deze eigenschappen toevoegen aan het filter dat een lijst van afgewezen personen gebruikt.
 

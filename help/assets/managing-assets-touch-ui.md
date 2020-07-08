@@ -4,9 +4,9 @@ description: Leer de taken voor middelenbeheer, zoals het uploaden, downloaden, 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
-source-wordcount: '9031'
+source-wordcount: '9026'
 ht-degree: 3%
 
 ---
@@ -63,6 +63,7 @@ Voordat u een element uploadt, moet u ervoor zorgen dat dit een [indeling](/help
 
    * On the toolbar, click **[!UICONTROL Create]**. Then on the menu, click **[!UICONTROL Files]**. U kunt de naam van het bestand desgewenst wijzigen in het dialoogvenster dat verschijnt.
    * In een browser die HTML5 ondersteunt, sleept u de elementen rechtstreeks naar de [!DNL Assets] gebruikersinterface. Het dialoogvenster voor het wijzigen van de naam van het bestand wordt niet weergegeven.
+
    ![Optie maken om elementen te uploaden](assets/create-options.png)
 
    Als u meerdere bestanden wilt selecteren, drukt u op Ctrl of Command en selecteert u de elementen in het dialoogvenster Bestandenkiezer. Als u een iPad gebruikt, kunt u slechts één bestand tegelijk selecteren.
@@ -119,6 +120,7 @@ Voordat u een element uploadt, moet u ervoor zorgen dat dit een [indeling](/help
 
    * de naam van het elementbestand mag geen elementen bevatten `* / : [ \\ ] | # % { } ? &`
    * de naam van de elementenmap mag niet bevatten `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
+
    Voeg geen speciale tekens toe aan de extensies van de bestandsnamen van elementen.
 
    ![Het dialoogvenster Uploadvoortgang toont de status van geüploade bestanden en bestanden die niet zijn geüpload](assets/chlimage_1-10.png)
@@ -131,7 +133,7 @@ Voordat u een element uploadt, moet u ervoor zorgen dat dit een [indeling](/help
 
 ### Seriële uploads {#serialuploads}
 
-Het uploaden van een groot aantal bedrijfsmiddelen verbruikt aanzienlijke I/O-bronnen, wat de prestaties van uw [!DNL Assets] instantie nadelig kan beïnvloeden. Met name als u een trage internetverbinding hebt, neemt de uploadtijd drastisch toe als gevolg van een spiek in schijf-I/O. Bovendien kan uw webbrowser extra beperkingen instellen voor het aantal POST-aanvragen dat [!DNL Assets] kan worden verwerkt voor gelijktijdige uploads van middelen. Hierdoor mislukt de uploadbewerking of wordt deze voortijdig beëindigd. Met andere woorden, sommige bestanden kunnen [!DNL Experience Manager Assets] worden overgeslagen terwijl u een aantal bestanden opneemt of ze kunnen helemaal geen bestand opnemen.
+Het uploaden van talrijke activa in bulk verbruikt significante I/O middelen, die de prestaties van uw [!DNL Assets] plaatsing kunnen negatief beïnvloeden. Met name als u een trage internetverbinding hebt, neemt de uploadtijd drastisch toe als gevolg van een spiek in schijf-I/O. Bovendien kan uw webbrowser extra beperkingen instellen voor het aantal POST-aanvragen dat [!DNL Assets] kan worden verwerkt voor gelijktijdige uploads van middelen. Hierdoor mislukt de uploadbewerking of wordt deze voortijdig beëindigd. Met andere woorden, sommige bestanden kunnen [!DNL Experience Manager Assets] worden overgeslagen terwijl u een aantal bestanden opneemt of ze kunnen helemaal geen bestand opnemen.
 
 Om deze situatie te verhelpen, [!DNL Assets] neemt één activa tegelijkertijd (periodieke upload) tijdens een bulkupload verrichting op, in plaats van het tegelijkertijd opnemen van alle activa.
 
@@ -195,7 +197,7 @@ Als u een uploadtaak die wordt uitgevoerd wilt annuleren, klikt u **[!UICONTROL 
 
 #### Opties voor het bewerken van afbeeldingen tijdens het uploaden instellen {#setting-image-editing-options-at-upload}
 
-Wanneer u afbeeldingsbestanden uploadt, waaronder AI-, EPS- en PSD-bestanden, kunt u de volgende bewerkingen uitvoeren in het [!UICONTROL Upload Job Options] dialoogvenster:
+Wanneer u afbeeldingsbestanden uploadt, zoals AI-, EPS- en PSD-bestanden, kunt u de volgende bewerkingen uitvoeren in het [!UICONTROL Upload Job Options] dialoogvenster:
 
 * Witruimte uitsnijden vanaf de rand van afbeeldingen (zie beschrijving in bovenstaande tabel).
 * Handmatig uitsnijden vanaf de zijkanten van afbeeldingen (zie beschrijving in bovenstaande tabel).
@@ -350,6 +352,7 @@ Voer de volgende stappen uit om een voorvertoning van een element weer te geven 
 1. Inzoomen op het element:
    1. Gebruik de toets `Tab` om de focus naar de inzoomoptie te verplaatsen.
    1. Gebruik de `Enter` toets om in te zoomen op de afbeelding.
+
    Als u wilt uitzoomen, gebruikt u de `Tab` toets om de focus naar de uitzoomoptie te verplaatsen en drukt u op `Enter`.
 
 1. Gebruik de toetsen `Shift` + `Tab` om de focus weer op de afbeelding te plaatsen.
@@ -407,6 +410,7 @@ Voer de volgende stappen uit om een voorvertoning van een element weer te geven 
    * Aantal keer dat het element is weergegeven of gedownload
    * Kanalen/apparaten waardoor het middel werd gebruikt
    * Creatieve oplossingen waarbij het middel onlangs is gebruikt
+
    Zie [Asset Insights](/help/assets/touch-ui-asset-insights.md)voor meer informatie.
 
 1. Klik op **[!UICONTROL Save & Close]**.
@@ -480,6 +484,7 @@ De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeelte
    * Klik **[!UICONTROL Back]** om terug te keren naar het **[!UICONTROL Select Destination]** scherm.
 
    * Klik **[!UICONTROL Cancel]** om de verplaatsingsbewerking te stoppen.
+
    Als u verwijzingen niet bijwerkt, blijven ze naar het vorige pad van het element wijzen. Als u de referenties aanpast, worden deze bijgewerkt naar het nieuwe middelenpad.
 
 ## Uitvoeringen beheren {#managing-renditions}
@@ -555,6 +560,7 @@ Schakel ook de knop forceren verwijderen uit met behulp van een overlay, zodat g
 
       * Als het element geen verwijzingen bevat, wordt het element verwijderd.
       * Als het element verwijzingen bevat, wordt u via een foutbericht geïnformeerd dat naar **een of meer elementen wordt verwezen.** U kunt selecteren **[!UICONTROL Force Delete]** of **[!UICONTROL Cancel]**.
+
    >[!NOTE]
    >
    >Voor het verwijderen van elementen heeft een gebruiker verwijderingsmachtigingen nodig `dam/asset`. Als u alleen over wijzigingsmachtigingen beschikt, kunt u alleen de metagegevens van de elementen bewerken en annotaties toevoegen aan het element. U kunt het element of de metagegevens echter niet verwijderen.
@@ -607,6 +613,7 @@ Zie [Elementen downloaden van Experience Manager](/help/assets/download-assets-f
 
    * **[!UICONTROL Cancel]** om de handeling te stoppen
    * **[!UICONTROL Unpublish]** om te bevestigen dat de elementen op de opgegeven datum niet gepubliceerd zijn (niet meer beschikbaar in de publicatieomgeving).
+
    >[!NOTE]
    >
    >Verwijder tijdens het verwijderen van de publicatie van een complex element alleen de publicatie van het element. Verwijder de publicatie van de verwijzingen niet omdat mogelijk naar deze verwijzingen wordt verwezen door andere gepubliceerde elementen.
@@ -677,6 +684,7 @@ Met de bewerkingsgereedschappen in de [!DNL Assets] interface kunt u kleine bewe
    * Selecteer het element en klik op **[!UICONTROL Edit]** de werkbalk.
    * Klik op **[!UICONTROL Edit]** de optie die in de kaartweergave op een element wordt weergegeven.
    * Klik op **[!UICONTROL Edit]** op de werkbalk.
+
    ![Optie Bewerken in werkbalk](assets/edit_icon.png)
 
 1. Als u de afbeelding wilt uitsnijden, klikt u op **[!UICONTROL Crop]** Optie om een afbeelding ![](assets/chlimage_1-22.png)uit te snijden.
@@ -742,6 +750,7 @@ Videoannotaties worden alleen ondersteund in browsers met HTML5-compatibele vide
 
    * [Snelle acties](/help/assets/managing-assets-touch-ui.md#quick-actions)
    * Vanuit de werkbalk nadat u het element hebt geselecteerd of naar de elementpagina bent genavigeerd
+
    ![Notitie, optie](assets/chlimage_1-29.png)
 
 1. Voeg een opmerking toe in het vak **[!UICONTROL Comment]** onder aan de tijdlijn. U kunt ook een gebied in de afbeelding markeren en een annotatie toevoegen in het dialoogvenster **[!UICONTROL Add Annotation]**.
@@ -870,7 +879,7 @@ Als een element annotaties in vreemde talen bevat (vooral niet-Latijnse talen), 
 
    * Neem de tekenreeks op `<font_family_name_of_custom_font, sans-serif>` in de optie voor de lettertypefamilie. Als u bijvoorbeeld annotaties wilt afdrukken in CJK (Chinees, Japans en Koreaans), neemt u de tekenreeks op `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif` in de optie voor lettertypefamilies. Als u annotaties wilt afdrukken in het Hindi, downloadt u het juiste lettertype en configureert u de lettertypefamilie als Arial Unicode MS, Noto Sans, Noto Sans CJK JP, Noto Sans Devanagari, sans-serif.
 
-1. Start de [!DNL Experience Manager] instantie opnieuw.
+1. Start de [!DNL Experience Manager] implementatie opnieuw.
 
 Hier is een voorbeeld van hoe u kunt vormen [!DNL Experience Manager] om annotaties in CJK (Chinees, Japans en Koreaans) te drukken:
 
@@ -933,6 +942,7 @@ U kunt automatische versioning ook inschakelen via een workflow. Wanneer u een v
 1. Voer de volgende stappen uit om twee versies van een afbeelding te vergelijken:
    * Klik op de versie die u met de huidige versie wilt vergelijken.
    * Sleep de schuifregelaar naar links om deze versie over de huidige versie heen te plaatsen en te vergelijken.
+
    ![Gebruik de schuifregelaar om de geselecteerde versies van een element te vergelijken met de huidige versie](assets/version-slider.gif)
 
    *Afbeelding: Gebruik de schuifregelaar om de geselecteerde versies van een element eenvoudig te vergelijken met de huidige versie.*

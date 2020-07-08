@@ -1,9 +1,9 @@
 ---
-title: Adobe Experience Manager Middelen Startpagina Ervaring
+title: Adobe Experience Manager Assets Home Page Experience
 description: Pas de startpagina Experience Manager Assets aan voor een uitgebreide ervaring met welkomstschermen, waaronder een momentopname van recente activiteiten rond middelen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '536'
 ht-degree: 1%
@@ -11,9 +11,9 @@ ht-degree: 1%
 ---
 
 
-# Adobe Experience Manager Middelen Startpagina Ervaring {#aem-assets-home-page-experience}
+# Adobe Experience Manager Assets Home Page Experience {#aem-assets-home-page-experience}
 
-Pas de Adobe Experience Manager-introductiepagina aan voor een welkomstscherm, inclusief een momentopname van recente activiteiten rond middelen.
+Pas de homepage van de Middelen van de Adobe Experience Manager aan voor een rijke welkomstscherm ervaring, met inbegrip van een momentopname van recente activiteiten rond activa.
 
 De homepage van activa verstrekt een rijke en gepersonaliseerde ervaring van het welkomstscherm, die een momentopname van recente activiteiten, zoals activa omvat die onlangs werden bekeken of geupload.
 
@@ -69,7 +69,7 @@ Deze sectie verschijnt onder de welkomstsectie en toont buiten-de-dooswidgets on
 
 **Recent**: De **[!UICONTROL Recently Viewed]** widget onder deze sectie toont onlangs betreden entiteiten door de het programma geopende gebruiker, met inbegrip van omslagen, inzamelingen, en projecten.
 
-**Detecteren**: De **[!UICONTROL New]** widget in deze sectie geeft de elementen en vertoningen weer die onlangs naar de instantie Assets zijn geüpload.
+**Detecteren**: De **[!UICONTROL New]** widget in deze sectie geeft de elementen en uitvoeringen weer die onlangs zijn geüpload naar de implementatie van Elementen.
 
 Om het zuiveren van de gegevens van de gebruikersactiviteit toe te laten, laat **[!UICONTROL DAM Event Purge Service]** van de Manager van de Configuratie toe. Nadat u deze dienst toelaat, worden de activiteiten van de het programma geopende gebruiker die een gespecificeerd aantal overschrijden geschrapt door het systeem.
 
@@ -77,12 +77,12 @@ Het welkomstscherm biedt eenvoudige navigatiehulpmiddelen, zoals pictogrammen op
 
 >[!NOTE]
 >
->Als u de services [!UICONTROL Day CQ DAM Event Recorder] [!UICONTROL DAM Event Purge] en services inschakelt, worden meer schrijfbewerkingen naar JCR uitgevoerd en wordt het zoeken naar indexering versneld, waardoor de belasting op de server van Experience Manager aanzienlijk toeneemt. De extra belasting op de Experience Manager-server kan van invloed zijn op de prestaties.
+>Als u de [!UICONTROL Day CQ DAM Event Recorder] en [!UICONTROL DAM Event Purge] services inschakelt, worden meer schrijfbewerkingen naar JCR uitgevoerd en wordt het zoeken naar indexering versneld, waardoor de belasting op de Experience Manager-server aanzienlijk toeneemt. De extra belasting op de Experience Manager-server kan van invloed zijn op de prestaties.
 
 >[!CAUTION]
 >
 >Het vangen, het filtreren, en het zuiveren gebruikersactiviteiten die voor de homepage van Activa worden vereist leggen een overheadkosten op prestaties. Daarom moeten beheerders de startpagina effectief configureren voor doelgebruikers.
 >
->Adobe raadt beheerders en gebruikers die bulkbewerkingen uitvoeren aan de functie Startpagina van bedrijfsmiddelen niet te gebruiken om te voorkomen dat gebruikers meer gaan werken. Bovendien kunnen beheerders opnameactiviteiten voor specifieke gebruikers uitsluiten door [!UICONTROL Day CQ DAM Event Recorder] van te configureren [!UICONTROL Configuration Manager].
+>Adobe raadt beheerders en gebruikers die bulkbewerkingen uitvoeren aan de functie Startpagina van bedrijfsmiddelen niet te gebruiken om te voorkomen dat gebruikers meer gaan werken. Bovendien kunnen beheerders opnameactiviteiten voor specifieke gebruikers uitsluiten door deze te configureren [!UICONTROL Day CQ DAM Event Recorder] van [!UICONTROL Configuration Manager].
 >
 >Als u deze functie gebruikt, raadt Adobe u aan de laadfrequentie te laten bepalen op basis van het laden van de server.

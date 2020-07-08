@@ -1,11 +1,11 @@
 ---
-title: '[!DNL Adobe Experience Manager Assets] integreren met [!DNL Adobe InDesign Server]'
-description: Leer hoe u [!DNL Adobe Experience Manager Assets] kunt integreren met [!DNL Adobe InDesign Server].
+title: ' [!DNL Adobe Experience Manager Assets] Integreren met [!DNL Adobe InDesign Server]'
+description: Leer hoe u kunt [!DNL Adobe Experience Manager Assets] integreren met [!DNL Adobe InDesign Server].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 17fa61fd0aff066bd59f4b6384d2d91bb97b749c
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
-source-wordcount: '1547'
+source-wordcount: '1528'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 * Een proxyworker om een specifieke taak te definiëren en te beheren.
 Deze kunnen betrekking hebben op een groot aantal verschillende taken; bijvoorbeeld bestanden verwerken [!DNL InDesign Server] met behulp van een .
 
-Voor het volledig uploaden van bestanden [!DNL Experience Manager Assets] die u met [!DNL Adobe InDesign] een proxy hebt gemaakt, wordt gebruikgemaakt. Dit gebruikt een volmachtsarbeider om met het te communiceren [!DNL Adobe InDesign Server], waar de [manuscripten](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) worden in werking gesteld om meta-gegevens te halen en diverse vertoningen voor te produceren [!DNL Experience Manager Assets]. De volmachtsarbeider laat de bidirectionele communicatie tussen [!DNL InDesign Server] en de [!DNL Experience Manager] instantie(s) in een wolkenconfiguratie toe.
+Voor het volledig uploaden van bestanden [!DNL Experience Manager Assets] die u met [!DNL Adobe InDesign] een proxy hebt gemaakt, wordt gebruikgemaakt. Dit gebruikt een volmachtsarbeider om met het te communiceren [!DNL Adobe InDesign Server], waar de [manuscripten](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) worden in werking gesteld om meta-gegevens te halen en diverse vertoningen voor te produceren [!DNL Experience Manager Assets]. De volmachtsarbeider laat de bidirectionele communicatie tussen de [!DNL InDesign Server] en de [!DNL Experience Manager] instanties in een wolkenconfiguratie toe.
 
 >[!NOTE]
 >
@@ -44,6 +44,7 @@ Dit opdrachtscript:
       * Er worden PDF- en JPG-uitvoeringen gegenereerd.
       * HTML- en IDML-uitvoeringen worden gegenereerd.
    * Plaats de resulterende bestanden terug naar [!DNL Experience Manager Assets].
+
    >[!NOTE]
    >
    >IDML is een op XML gebaseerde indeling die alle inhoud van het [!DNL InDesign] bestand rendert. Het wordt opgeslagen als een gecomprimeerd pakket met [ZIP](https://www.techterms.com/definition/zip) -compressie. Zie [InDesign Interchange Formats INX en IDML](http://www.peachpit.com/articles/article.aspx?p=1381880&amp;seqNum=8)voor meer informatie.
@@ -58,12 +59,12 @@ Dit opdrachtscript:
    * De geëxtraheerde tekst en bestanden worden opgeslagen in [!DNL Experience Manager Assets].
    * Alle uitvoeringen worden opgeslagen in [!DNL Experience Manager Assets], in het element zelf.
 
-## De [!DNL InDesign Server] functie integreren met Experience Manager {#integrating-the-indesign-server-with-aem}
+## Integreer het [!DNL InDesign Server] met Experience Manager {#integrating-the-indesign-server-with-aem}
 
 Om het [!DNL InDesign Server] voor gebruik met [!DNL Experience Manager Assets] en na het vormen van uw volmacht te integreren, moet u:
 
 1. [Installeer de InDesign-server](#installing-the-indesign-server).
-1. Indien nodig, [configureert u de Workflow](#configuring-the-aem-assets-workflow)voor hulpmiddelen van Experience Manager.
+1. Indien nodig, [configureert u de Experience Manager Assets Workflow](#configuring-the-aem-assets-workflow).
 Dit is alleen nodig als de standaardwaarden niet geschikt zijn voor uw instantie.
 1. Configureer een [proxyworker voor de InDesign-server](#configuring-the-proxy-worker-for-indesign-server).
 
@@ -201,13 +202,13 @@ TBD: Make updates to configurations for allow and block list after product updat
 
 >[!NOTE]
 >
->Wanneer u werkt met een pool met workers, kunt u een geblokkeerde lijst met IDS-workers inschakelen.
+>Wanneer u werkt met een groep workers, kunt u de lijst van afgewezen personen van IDS-workers inschakelen.
 >
 >Om dit te doen, laat **[!UICONTROL enable.retry.name]** checkbox, onder de `com.day.cq.dam.ids.impl.IDSJobProcessor.name` configuratie toe, die IDS baanterugwinning toelaat.
 >
 >Ook, onder de `com.day.cq.dam.ids.impl.IDSPoolImpl.name` configuratie, plaats een positieve waarde voor `max.errors.to.blacklist` parameter die aantal baanterugwinnen alvorens IDS van de lijst van baanmanagers bepaalt.
 >
->De IDS-worker wordt standaard opnieuw gevalideerd nadat de configureerbare (`retry.interval.to.whitelist.name`) tijd in minuten is verstreken. Als de worker online wordt gevonden, wordt deze verwijderd uit de geblokkeerde lijst.
+>De IDS-worker wordt standaard opnieuw gevalideerd nadat de configureerbare (`retry.interval.to.whitelist.name`) tijd in minuten is verstreken. Als de worker online wordt gevonden, wordt deze uit de lijst van afgewezen personen verwijderd.
 
 ## Ondersteuning inschakelen voor [!DNL InDesign Server] 10.0 of hoger {#enabling-support-for-indesign-server-or-later}
 
@@ -223,9 +224,9 @@ Voer voor [!DNL InDesign Server] 10.0 of hoger de volgende stappen uit om onders
 
 ## Referenties [!DNL Experience Manager] configureren {#configure-aem-credentials}
 
-U kunt de standaardbeheerdersgeloofsbrieven (gebruikersnaam en wachtwoord) veranderen om tot [!DNL InDesign Server] van uw [!DNL Experience Manager] instantie toegang te hebben zonder de integratie met [!DNL InDesign Server]. te breken.
+U kunt de standaardbeheerdersgeloofsbrieven (gebruikersnaam en wachtwoord) voor de toegang tot van uw plaatsing veranderen [!DNL InDesign Server] zonder de integratie met het [!DNL Experience Manager] uit te breken [!DNL InDesign Server].
 
-1. Ga naar `/etc/cloudservices/proxy.html`.
+1. Go to `/etc/cloudservices/proxy.html`.
 1. Geef in het dialoogvenster de nieuwe gebruikersnaam en het nieuwe wachtwoord op.
 1. Sla de referenties op.
 

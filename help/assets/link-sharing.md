@@ -3,7 +3,7 @@ title: Een URL naar gedeelde elementen genereren
 description: In dit artikel wordt beschreven hoe u elementen, mappen en verzamelingen in Experience Manager Assets als een URL naar externe partijen kunt delen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '1136'
 ht-degree: 4%
@@ -40,7 +40,7 @@ Gebruik het dialoogvenster Koppelen om de URL te genereren voor elementen die u 
 
    >[!NOTE]
    >
-   >Als u koppelingen van uw Experience Manager-auteur naar externe entiteiten wilt delen, dient u ervoor te zorgen dat alleen de volgende URL&#39;s (die worden gebruikt voor het delen van koppelingen) beschikbaar worden gemaakt voor `GET` aanvragen. Andere URL&#39;s blokkeren om de beveiliging van Experience Manager Author te garanderen.
+   >Als u koppelingen van de implementatie van Experience Manager Author naar externe entiteiten wilt delen, dient u ervoor te zorgen dat alleen de volgende URL&#39;s (die worden gebruikt voor het delen van koppelingen) beschikbaar worden gemaakt voor `GET` aanvragen. Andere URL&#39;s blokkeren om de beveiliging van Experience Manager Author te garanderen.
    >
    >* http://[aem_server]:[poort]/linkshare.html
    >* http://[aem_server]:[poort]/linksharepreview.html
@@ -116,6 +116,7 @@ Gebruik het dialoogvenster Koppelen om de URL te genereren voor elementen die u 
    * SMTP-serverpoort: e-mailserverpoort
    * SMTP-gebruiker: gebruikersnaam e-mailserver
    * SMTP-wachtwoord: wachtwoord e-mailserver
+
    ![chlimage_1-263](assets/chlimage_1-548.png)
 
 1. Klik op **[!UICONTROL Save]**.

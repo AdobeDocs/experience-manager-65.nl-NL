@@ -1,6 +1,6 @@
 ---
-title: ' Concepten'
-seo-title: ' Concepten'
+title: Concepten
+seo-title: Concepten
 description: Algemene concepten van e-handel met AEM.
 seo-description: Algemene concepten van e-handel met AEM.
 uuid: 9a4cc154-d82b-43e0-a66c-3edf059e8b75
@@ -11,12 +11,15 @@ content-type: reference
 discoiquuid: 6d595c46-b04e-400b-a014-fbecd2010f5f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 69dfd6b41b32cb9131fd90fd7039a0c224889db5
+source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+workflow-type: tm+mt
+source-wordcount: '4532'
+ht-degree: 0%
 
 ---
 
 
-#  Concepten{#concepts}
+# Concepten{#concepts}
 
 Het integratiekader biedt de mechanismen en componenten voor:
 
@@ -132,10 +135,9 @@ AEM eCommerce wordt geïmplementeerd met een eCommerce-motor:
 >AEM eCommerce dat binnen AEM wordt geïmplementeerd door middel van algemene ontwikkeling op basis van JCR is:
 >
 >* Een zelfstandig, native voorbeeld van eCommerce met AEM om het gebruik van de API te illustreren. Dit kan worden gebruikt om productgegevens, winkelkaarten en kassa&#39;s te controleren in combinatie met de bestaande campagnes voor het weergeven en op de markt brengen van gegevens. In dit geval wordt de productdatabase opgeslagen in de systeemeigen opslagruimte van AEM (implementatie van [JCR](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html)door Adobe).
-   >  De standaard AEM-installatie bevat de grondbeginselen van de [algemene eCommerce-implementatie](/help/sites-administering/generic.md).
 >
-
-
+>  
+De standaard AEM-installatie bevat de grondbeginselen van de [algemene eCommerce-implementatie](/help/sites-administering/generic.md).
 
 ### Handelsleveranciers {#commerce-providers}
 
@@ -201,7 +203,7 @@ Hoewel de daadwerkelijke plaats van uw implementatie kan afhangen; bijvoorbeeld 
 
 ## Producten {#products}
 
-### Productgegevens versus marketinggegevens {#product-data-versus-marketing-data}
+### Product Gegevens versus marketinggegevens {#product-data-versus-marketing-data}
 
 #### Structuur- en marketingcategorieën {#structural-versus-marketing-categories}
 
@@ -230,7 +232,7 @@ Productgegevens kunnen zijn:
 
    Afhankelijk van het gegevenstype wordt het zo nodig [gesynchroniseerd](#catalog-maintenance-data-synchronization) , of direct betreden; bijvoorbeeld, worden de hoogst vluchtige en kritieke gegevens zoals productprijzen teruggewonnen van de e-commerce motor op elke paginaverzoek om ervoor te zorgen dat zij altijd bijgewerkt zijn.
 
-In beide gevallen, wanneer de productgegevens zijn ingegaan/in AEM ingevoerd kan het van de console van **Producten** worden gezien. Hier wordt op de kaart en de lijstweergaven van een product informatie weergegeven zoals:
+In beide gevallen, wanneer de productgegevens zijn ingegaan/in AEM ingevoerd kan het van de console van **Producten** worden gezien. Hier wordt op de kaart en in de lijst informatie over een product weergegeven, zoals:
 
 * de afbeelding
 * de SKU-code
@@ -365,13 +367,13 @@ Deze emmers hebben de vorm van fantoommappen die aan uw catalogusstructuur worde
 
 In dit scenario worden twee auteur-instanties ingesteld:
 
-1. Hoofdauteur-instantie
+1. Master instantie van auteur
 
    Hiermee importeert u productgegevens van PIM, waarop naverwerking voor de assetpaden is uitgeschakeld.
 
 1. Speciale DAM-auteurinstantie
 
-   Importeert en nabewerkt productactiva van PIM, en herhaalt deze dan terug naar de hoofdauteur instantie voor gebruik.
+   Importeert en nabewerkt productactiva van PIM, en herhaalt deze dan terug naar de master auteurinstantie voor gebruik.
 
 ![Architectuurdiagram](assets/chlimage_1-8.png)
 
@@ -406,7 +408,7 @@ Houd er rekening mee dat voor deze prestatietests kennis en analyse van uw doel 
 
 * Inhoudsvolumes
 
-   * Activa
+   * Assets
    * Gelokaliseerde, I18-producten en SKU&#39;s
 
 * Gebruikersactiviteit:
@@ -420,7 +422,7 @@ Houd er rekening mee dat voor deze prestatietests kennis en analyse van uw doel 
    * Invoer
    * Synchronisatie-updates (bijvoorbeeld prijzen)
 
-* Onderhoudsvereisten (back-up, optimalisatie van Tar PM, opschonen van datastore, enz.)
+* Onderhoudsvereisten (back-up, Tar PM-optimalisatie, afvalophaling voor datastore, enz.)
 
 #### Prestaties - Diversen {#performance-miscellaneous}
 
@@ -666,7 +668,7 @@ De component van het adresboek is bereikbaar van de pagina **Mijn Rekening** doo
 
 ![chlimage_1-14](assets/chlimage_1-14.png)
 
-**U kunt op Nieuw adres** toevoegen klikken... om een nieuw adres in uw adresboek toe te voegen. Er wordt een formulier geopend dat u kunt invullen en vervolgens op Adres **** toevoegen klikt.
+U kunt op Nieuw adres **toevoegen klikken...** om een nieuw adres in uw adresboek toe te voegen. Er wordt een formulier geopend dat u kunt invullen en vervolgens op Adres **** toevoegen klikt.
 
 >[!NOTE]
 >

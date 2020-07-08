@@ -1,12 +1,12 @@
 ---
 title: Prestaties afstemmen voor [!DNL Adobe Experience Manager Assets].
-description: Suggesties en richtlijnen voor de configuratie van [!DNL Experience Manager], wijzigingen in hardware, software en netwerkcomponenten om knelpunten te verwijderen en de prestaties van [!DNL Experience Manager Assets] te optimaliseren.
+description: Suggesties en begeleiding [!DNL Experience Manager] over configuratie, veranderingen in hardware, software, en netwerkcomponenten om knelpunten te verwijderen en de prestaties van [!DNL Experience Manager Assets]te optimaliseren.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
-source-wordcount: '2713'
+source-wordcount: '2701'
 ht-degree: 0%
 
 ---
@@ -128,7 +128,7 @@ Primair, hangt uw strategie van de netwerkoptimalisering van de hoeveelheid besc
 
 Stel waar mogelijk de [!UICONTROL DAM Update Asset] workflow in op Overgang. De instelling verlaagt aanzienlijk de overheadkosten die nodig zijn voor het verwerken van workflows, omdat workflows in dit geval niet door de normale tracking- en archiveringsprocessen hoeven te gaan.
 
-1. Navigeer naar `/miscadmin` in de [!DNLEinstantie van de Manager] van de Ervaring bij `https://[aem_server]:[port]/miscadmin`.
+1. Navigeer naar `/miscadmin` in de plaatsing van de Manager [!DNLEvan de] Ervaring bij `https://[aem_server]:[port]/miscadmin`.
 
 1. Vouw uit **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]** > **[!UICONTROL dam]**.
 
@@ -285,11 +285,11 @@ Voor alle kwesties van netwerkprestaties van de klant, voer de volgende taken ui
 * Door een hulpmiddel van de netwerkbenchmark te gebruiken
 * Testen tegen de verzender
 
-### [!DNL Experience Manager] instantie testen {#aem-instance-testing}
+### [!DNL Experience Manager] implementatie testen {#aem-deployment-testing}
 
-Om latentie te minimaliseren en hoge productie door efficiënt gebruik van cpu en lading-verdeling te bereiken, controleer de prestaties van uw [!DNL Experience Manager] instantie regelmatig. Met name:
+Om latentie te minimaliseren en hoge productie door efficiënt gebruik van cpu en lading-delend te bereiken, controleer de prestaties van uw [!DNL Experience Manager] plaatsing regelmatig. Met name:
 
-* Laadtests uitvoeren op de [!DNL Experience Manager] instantie.
+* De ladingstests van de looppas tegen de [!DNL Experience Manager] plaatsing.
 * Uploadprestaties controleren en reageren op de gebruikersinterface.
 
 ## [!DNL Experience Manager Assets] prestatiecontrolelijst en impact van taken voor middelenbeheer {#checklist}

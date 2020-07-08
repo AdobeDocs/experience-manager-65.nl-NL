@@ -1,25 +1,16 @@
 ---
 title: Pagina's maken en indelen
-seo-title: Pagina's maken en indelen
 description: Pagina's maken en beheren met AEM
-seo-description: Pagina's maken en beheren met AEM
-uuid: d2989c42-b500-4256-b779-9667a380b885
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: page-authoring
-content-type: reference
-discoiquuid: e637ba54-7ce1-414f-9558-1d758d05877a
-docset: aem65
 translation-type: tm+mt
-source-git-commit: b68dd6c48d03e233265a2c93e61c0aeb768fa408
+source-git-commit: 90364cdf6044616d43c1851b3def9b1f063449ca
 workflow-type: tm+mt
-source-wordcount: '2334'
-ht-degree: 5%
+source-wordcount: '2523'
+ht-degree: 4%
 
 ---
 
 
-# Pagina&#39;s maken en indelen{#creating-and-organizing-pages}
+# Pagina&#39;s maken en indelen {#creating-and-organizing-pages}
 
 In deze sectie wordt beschreven hoe u pagina&#39;s kunt maken en beheren met Adobe Experience Manager (AEM), zodat u vervolgens inhoud [op die pagina&#39;s kunt](/help/sites-authoring/editing-content.md) maken.
 
@@ -111,10 +102,10 @@ De **titel** en **naam** van de pagina kunnen afzonderlijk worden gemaakt, maar 
 >[!NOTE]
 >
 >Wanneer u een paginanaam definieert, is het verstandig de paginanaam zo kort maar expressief en zo gedenkwaardig mogelijk te houden, zodat de lezer deze goed begrijpt. Zie de [W3C-stijlhandleiding](https://www.w3.org/Provider/Style/TITLE.html) voor het `title` element voor meer informatie.
-
->Houd er ook rekening mee dat sommige browsers (bijvoorbeeld oudere versies van IE) URL&#39;s tot een bepaalde lengte alleen kunnen accepteren, dus er is ook een technische reden om paginanamen kort te houden.
 >
-Bij het maken van een nieuwe pagina [valideert AEM de paginanaam volgens de conventies](/help/sites-developing/naming-conventions.md) die door AEM en de JCR zijn opgelegd.
+>Houd er ook rekening mee dat sommige browsers (bijvoorbeeld oudere versies van IE) URL&#39;s tot een bepaalde lengte alleen kunnen accepteren, dus er is ook een technische reden om paginanamen kort te houden.
+
+Bij het maken van een nieuwe pagina [valideert AEM de paginanaam volgens de conventies](/help/sites-developing/naming-conventions.md) die door AEM en de JCR worden opgelegd.
 
 De minimaal toegestane tekens zijn:
 
@@ -127,11 +118,12 @@ De minimaal toegestane tekens zijn:
 Alle tekens die zijn toegestaan, staan in [de naamgevingsconventies](/help/sites-developing/naming-conventions.md).
 
 >[!NOTE]
-Als AEM wordt uitgevoerd op een implementatie [van](/help/sites-deploying/recommended-deploys.md)MongoMK persistence Manager, zijn de paginanamen beperkt tot 150 tekens.
+>
+>Als AEM wordt uitgevoerd op een implementatie [van](/help/sites-deploying/recommended-deploys.md)MongoMK persistence Manager, zijn de paginanamen beperkt tot 150 tekens.
 
 #### Titel {#title}
 
-Als u bij het maken van een nieuwe pagina alleen een **paginatitel** opgeeft, leidt AEM de **naam**[ van de pagina af van deze tekenreeks en valideert het de naam volgens de conventies die door AEM en JCR worden opgelegd. ](/help/sites-developing/naming-conventions.md) Een veld **Titel** met ongeldige tekens wordt geaccepteerd, maar voor de afgeleide naam worden de ongeldige tekens vervangen. Bijvoorbeeld:
+Als u bij het maken van een nieuwe pagina alleen een **paginatitel** opgeeft, leidt AEM de **naam**[ van de pagina af van deze tekenreeks en valideert het de naam volgens de conventies die door AEM en JCR worden opgelegd. ](/help/sites-developing/naming-conventions.md) Een veld **Titel** met ongeldige tekens wordt geaccepteerd, maar de ongeldige tekens worden vervangen door de afgeleide naam. Bijvoorbeeld:
 
 | Titel | Afgeleide naam |
 |---|---|
@@ -145,8 +137,10 @@ Wanneer u een **paginanaam** opgeeft bij het maken van een nieuwe pagina, zal AE
 ![caop-02](assets/caop-02.png)
 
 >[!NOTE]
-Gebruik geen code van twee letters, zoals gedefinieerd door ISO-639-1, als paginanaam, tenzij dit een hoofdtaalcode is.
-See [Preparing Content for Translation](/help/sites-administering/tc-prep.md) for more information.
+>
+>Gebruik geen code van twee letters, zoals gedefinieerd door ISO-639-1, als paginanaam, tenzij dit een hoofdtaalcode is.
+>
+>See [Preparing Content for Translation](/help/sites-administering/tc-prep.md) for more information.
 
 ### Sjablonen {#templates}
 
@@ -163,7 +157,8 @@ AEM wordt geleverd met verschillende sjablonen die u kunt vinden. Welke sjablone
 * **Template** A lijst van malplaatjes beschikbaar voor gebruik wanneer het produceren van de nieuwe pagina.
 
 >[!NOTE]
-Als dit op uw exemplaar is geconfigureerd, kunnen [sjabloonauteurs sjablonen maken met de Sjablooneditor](/help/sites-authoring/templates.md).
+>
+>Als dit op uw exemplaar is geconfigureerd, kunnen [sjabloonauteurs sjablonen maken met de Sjablooneditor](/help/sites-authoring/templates.md).
 
 ### Onderdelen {#components}
 
@@ -178,7 +173,8 @@ Componenten zijn de elementen die door AEM worden geleverd, zodat u specifieke t
 Nadat u een pagina hebt gemaakt en geopend, kunt u inhoud [toevoegen met de componenten](/help/sites-authoring/editing-content.md#insertinganewparagraph)die beschikbaar zijn in de [deelbrowser](/help/sites-authoring/author-environment-tools.md#componentbrowser).
 
 >[!NOTE]
-De [componentenconsole](/help/sites-authoring/default-components-console.md) geeft een overzicht van de componenten op uw instantie.
+>
+>De [componentenconsole](/help/sites-authoring/default-components-console.md) geeft een overzicht van de componenten op uw instantie.
 
 ## Pagina&#39;s beheren {#managing-pages}
 
@@ -197,6 +193,7 @@ Tenzij alle pagina&#39;s vooraf voor u zijn gemaakt, moet u een pagina maken voo
    * Selecteer de sjabloon die u wilt gebruiken om de nieuwe pagina te maken en klik op **Volgende** of tik op Volgende om door te gaan.
 
    * **Annuleer** om het proces af te breken.
+
    ![caop-04](assets/caop-04.png)
 
 1. Vanaf het laatste werkgebied van de wizard kunt u:
@@ -204,6 +201,7 @@ Tenzij alle pagina&#39;s vooraf voor u zijn gemaakt, moet u een pagina maken voo
    * Gebruik de drie tabbladen om de [pagina-eigenschappen](/help/sites-authoring/editing-page-properties.md) in te voeren die u aan de nieuwe pagina wilt toewijzen. Klik vervolgens op **Maken** of tik op Maken om de pagina daadwerkelijk te maken.
 
    * Gebruik **Vorige** om terug te keren naar de sjabloonselectie.
+
    Hoofdvelden zijn:
 
    * **Titel**:
@@ -212,11 +210,12 @@ Tenzij alle pagina&#39;s vooraf voor u zijn gemaakt, moet u een pagina maken voo
    * **Naam**:
 
       * Hiermee wordt de URI gegenereerd. Indien niet opgegeven, wordt de naam afgeleid van de titel.
-      * Als u bij het maken van een nieuwe pagina een **paginanaam** opgeeft, zal AEM de naam [valideren volgens de conventies](/help/sites-developing/naming-conventions.md) die door AEM en JCR zijn ingesteld.
+      * Als u bij het maken van een nieuwe pagina een **paginanaam** opgeeft, zal AEM de naam [valideren volgens de conventies](/help/sites-developing/naming-conventions.md) die door AEM en JCR zijn opgelegd.
 
       * U **kunt geen ongeldige tekens** verzenden in het veld **Naam** . Wanneer AEM ongeldige tekens detecteert, wordt het veld gemarkeerd en wordt een verklarende melding weergegeven om aan te geven welke tekens moeten worden verwijderd/vervangen.
    >[!NOTE]
-   Zie conventies voor [paginanamen](#page-naming-conventions).
+   >
+   >Zie conventies voor [paginanamen](#page-naming-conventions).
 
    De minimale informatie die nodig is om een nieuwe pagina te maken, is de **titel**.
 
@@ -227,14 +226,16 @@ Tenzij alle pagina&#39;s vooraf voor u zijn gemaakt, moet u een pagina maken voo
    ![chlimage_1-118](assets/chlimage_1-118.png)
 
    >[!NOTE]
-   Als u een pagina maakt met een naam die al op die locatie bestaat, genereert het systeem automatisch een variatie in de naam door een getal toe te voegen. Als er bijvoorbeeld `winter` al een nieuwe pagina bestaat, wordt deze `winter0`.
+   >
+   >Als u een pagina maakt met een naam die al op die locatie bestaat, genereert het systeem automatisch een variatie in de naam door een getal toe te voegen. Als er bijvoorbeeld `winter` al een nieuwe pagina bestaat, wordt deze `winter0`.
 
 1. Als u terugkeert naar de console, zult u uw nieuwe pagina zien:
 
    ![caop-06](assets/caop-06.png)
 
 >[!CAUTION]
-Als een pagina eenmaal is gemaakt, kan de sjabloon ervan niet worden gewijzigd, tenzij u een [startpagina met een nieuwe sjabloon](/help/sites-authoring/launches-creating.md#create-launch-with-new-template)maakt, maar de inhoud die al bestaat, gaat dan verloren.
+>
+>Als een pagina eenmaal is gemaakt, kan de sjabloon ervan niet worden gewijzigd, tenzij u een [startpagina met een nieuwe sjabloon](/help/sites-authoring/launches-creating.md#create-launch-with-new-template)maakt, maar de inhoud die al bestaat, gaat dan verloren.
 
 ### Een pagina openen voor bewerken {#opening-a-page-for-editing}
 
@@ -246,6 +247,7 @@ Nadat u een pagina hebt gemaakt of naar een bestaande pagina (in de console) heb
 
    * [Snelle acties](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Selectiemodus](/help/sites-authoring/basic-handling.md#navigatingandselectionmode) en de werkbalk
+
    Selecteer vervolgens het pictogram **Bewerken** :
 
    ![screen_shot_2018-03-22at105355](assets/screen_shot_2018-03-22at105355.png)
@@ -253,7 +255,8 @@ Nadat u een pagina hebt gemaakt of naar een bestaande pagina (in de console) heb
 1. De pagina wordt geopend en u kunt de pagina [naar wens](/help/sites-authoring/editing-content.md#touchoptimizedui) bewerken.
 
 >[!NOTE]
-U kunt vanuit de pagina-editor alleen naar andere pagina&#39;s navigeren in de modus Voorbeeld, omdat koppelingen niet actief zijn in de modus Bewerken.
+>
+>U kunt vanuit de pagina-editor alleen naar andere pagina&#39;s navigeren in de modus Voorbeeld, omdat koppelingen niet actief zijn in de modus Bewerken.
 
 ### Pagina&#39;s kopiëren en plakken {#copying-and-pasting-a-page}
 
@@ -264,12 +267,14 @@ U kunt een pagina en alle bijbehorende subpagina&#39;s naar een nieuwe locatie k
 
    * [Snelle acties](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Selectiemodus](/help/sites-authoring/basic-handling.md#navigatingandselectionmode) en de werkbalk
+
    En dan het paginapictogram **Kopiëren** :
 
    ![screen_shot_2018-03-22at105425](assets/screen_shot_2018-03-22at105425.png)
 
    >[!NOTE]
-   Als u in de selectiemodus werkt, wordt dit automatisch verlaten zodra de pagina wordt gekopieerd.
+   >
+   >Als u in de selectiemodus werkt, wordt dit automatisch verlaten zodra de pagina wordt gekopieerd.
 
 1. Navigeer naar de locatie voor de nieuwe kopie van de pagina.
 1. Het pictogram **Plakken** is rechtstreeks naar rechts beschikbaar met een vervolgkeuzepijl:
@@ -279,16 +284,20 @@ U kunt een pagina en alle bijbehorende subpagina&#39;s naar een nieuwe locatie k
    U kunt:
    * Selecteer het paginapictogram **Plakken** zelf: Op deze locatie worden een kopie van de originele pagina en eventuele onderliggende pagina&#39;s gemaakt.
    * Selecteer de vervolgkeuzepijl om de optie **Plakken zonder onderliggende items** weer te geven. Op deze locatie wordt een kopie van de originele pagina gemaakt. onderliggende pagina&#39;s worden niet gekopieerd.
+
    >[!NOTE]
-   Als u de pagina kopieert naar een locatie waar al een pagina met dezelfde naam als het origineel bestaat, genereert het systeem automatisch een variatie in de naam door een nummer toe te voegen. Bijvoorbeeld als `winter` reeds bestaat `winter` zal worden `winter1`.
+   >
+   >Als u de pagina kopieert naar een locatie waar al een pagina met dezelfde naam als het origineel bestaat, genereert het systeem automatisch een variatie in de naam door een nummer toe te voegen. Bijvoorbeeld als `winter` reeds bestaat `winter` zal worden `winter1`.
 
 ### Een pagina verplaatsen of de naam ervan wijzigen {#moving-or-renaming-a-page}
 
 >[!NOTE]
-Als u de naam van een pagina wijzigt, gelden de naamgevingsconventies [voor de](#page-naming-conventions) pagina ook voor het opgeven van de nieuwe paginanaam.
+>
+>Als u de naam van een pagina wijzigt, gelden de naamgevingsconventies [voor de](#page-naming-conventions) pagina ook voor het opgeven van de nieuwe paginanaam.
 
 >[!NOTE]
-Een pagina kan alleen worden verplaatst naar een locatie waar de sjabloon waarop de pagina is gebaseerd, is toegestaan. Zie [Sjabloonbeschikbaarheid](/help/sites-developing/templates.md#template-availability) voor meer informatie.
+>
+>Een pagina kan alleen worden verplaatst naar een locatie waar de sjabloon waarop de pagina is gebaseerd, is toegestaan. Zie [Sjabloonbeschikbaarheid](/help/sites-developing/templates.md#template-availability) voor meer informatie.
 
 De procedure om een pagina te verplaatsen of anders te noemen is in wezen het zelfde en door de zelfde tovenaar behandeld. Met deze wizard kunt u:
 
@@ -303,6 +312,7 @@ AEM biedt u de functionaliteit om interne koppelingen bij te werken die verwijze
 
    * [Snelle acties](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Selectiemodus](/help/sites-authoring/basic-handling.md#navigatingandselectionmode) en de werkbalk
+
    Selecteer vervolgens het paginapictogram **Verplaatsen** :
 
    ![screen_shot_2018-03-22at105534](assets/screen_shot_2018-03-22at105534.png)
@@ -314,12 +324,14 @@ AEM biedt u de functionaliteit om interne koppelingen bij te werken die verwijze
    * Geef de naam op die de pagina moet hebben nadat deze is verplaatst en klik op **Volgende** of tik op Volgende om door te gaan.
 
    * **Annuleer** om het proces af te breken.
+
    ![caop-07](assets/caop-07.png)
 
    De paginanaam kan hetzelfde blijven als u alleen de pagina verplaatst.
 
    >[!NOTE]
-   Als u een pagina verplaatst naar een locatie waar al een pagina met dezelfde naam bestaat, genereert het systeem automatisch een variatie in de naam door een getal toe te voegen. Bijvoorbeeld als `winter` reeds bestaat `winter` zal worden `winter1`.
+   >
+   >Als u een pagina verplaatst naar een locatie waar al een pagina met dezelfde naam bestaat, genereert het systeem automatisch een variatie in de naam door een getal toe te voegen. Bijvoorbeeld als `winter` reeds bestaat `winter` zal worden `winter1`.
 
 1. Van het **Uitgezochte stadium van de Bestemming** van de tovenaar kunt u of:
 
@@ -328,30 +340,61 @@ AEM biedt u de functionaliteit om interne koppelingen bij te werken die verwijze
       * Selecteer de bestemming door de duimnagel van de bestemming te klikken.
       * Klik op **Volgende** om door te gaan.
    * Gebruik **Vorige** om terug te keren naar de specificatie van de paginanaam.
+
    >[!NOTE]
-   Standaard wordt het bovenliggende element van de pagina waarvan u de naam verplaatst of wijzigt, geselecteerd als het doel.
+   >
+   >Standaard wordt het bovenliggende element van de pagina waarvan u de naam verplaatst of wijzigt, geselecteerd als het doel.
 
    ![caop-08](assets/caop-08.png)
 
    >[!NOTE]
-   Als u een pagina verplaatst naar een locatie waar al een pagina met dezelfde naam bestaat, genereert het systeem automatisch een variatie in de naam door een getal toe te voegen. Bijvoorbeeld als `winter` reeds bestaat `winter` zal worden `winter1`.
+   >
+   >Als u een pagina verplaatst naar een locatie waar al een pagina met dezelfde naam bestaat, genereert het systeem automatisch een variatie in de naam door een getal toe te voegen. Bijvoorbeeld als `winter` reeds bestaat `winter` zal worden `winter1`.
 
 1. Als de pagina is gekoppeld aan of waarnaar wordt verwezen, of is gepubliceerd, worden de details weergegeven in de stap **Aanpassen/Opnieuw** publiceren.
 
    U kunt aangeven welke aanpassingen moeten worden aangebracht en/of opnieuw moeten worden gepubliceerd.
 
    >[!NOTE]
-   Als er geen koppeling is naar de pagina en er niet naar wordt verwezen, is deze stap niet beschikbaar.
+   >
+   >Als er geen koppeling is naar de pagina en er niet naar wordt verwezen, is deze stap niet beschikbaar.
 
    ![caop-09](assets/caop-09.png)
 
 1. Als u **Verplaatsen** selecteert, wordt het proces voltooid en wordt de pagina waar nodig verplaatst of hernoemd.
 
 >[!NOTE]
-Als de pagina al is gepubliceerd, wordt de publicatie ervan automatisch ongedaan gemaakt wanneer u de pagina verplaatst. By default, it will be republished when the move is complete, but this can changed by unchecking the **Republish** field in the **Adjust/Republish** step.
+>
+>Als de pagina al is gepubliceerd, wordt de publicatie ervan automatisch ongedaan gemaakt wanneer u de pagina verplaatst. By default, it will be republished when the move is complete, but this can changed by unchecking the **Republish** field in the **Adjust/Republish** step.
 
 >[!NOTE]
-Als er op geen enkele manier naar de pagina wordt verwezen, wordt de stap **Aanpassen/Opnieuw** publiceren overgeslagen.
+>
+>Als er op geen enkele manier naar de pagina wordt verwezen, wordt de stap **Aanpassen/Opnieuw** publiceren overgeslagen.
+
+#### Asynchrone handelingen {#asynchronous-actions}
+
+Normaal gesproken wordt de handeling Pagina verplaatsen of Naam wijzigen onmiddellijk uitgevoerd. Dit wordt beschouwd als synchrone verwerking en verdere actie in UI wordt geblokkeerd tot de actie volledig is.
+
+Als het aantal pagina&#39;s waarop de actie betrekking heeft echter boven een gedefinieerde limiet ligt, wordt de actie asynchroon verwerkt, zodat de gebruiker in de gebruikersinterface kan blijven ontwerpen zonder dat dit wordt belemmerd door de actie Pagina verplaatsen of hernoemen.
+
+* Wanneer het klikken van **Beweging** in de laatste stap hierboven, controleert AEM de gevormde grens.
+* Als het aantal pagina&#39;s waarop de actie betrekking heeft, onder de limiet ligt, wordt een synchrone bewerking uitgevoerd.
+* Als het aantal pagina&#39;s waarop de actie betrekking heeft, boven de limiet ligt, wordt een asynchrone bewerking uitgevoerd.
+   * De gebruiker moet definiëren wanneer de asynchrone bewerking moet worden uitgevoerd
+      * **De uitvoering van de asynchrone taak wordt nu** direct gestart.
+      * **Later** kan de gebruiker bepalen wanneer de asynchrone taak wordt gestart.
+
+         ![Asynchrone verplaatsing van pagina](assets/asynchronous-page-move.png)
+
+De status van asynchrone taken kan worden gecontroleerd in het [**Async Job Status **dashboard](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)bij** Globale Navigatie **->** Hulpmiddelen **->** Verrichtingen **->** Banen **
+
+>[!NOTE]
+>
+>Voor meer informatie over asynchrone baanverwerking en hoe te om de grens voor paginamousie te vormen beweeg/noem acties anders, gelieve het [Asynchrone document van Banen](/help/sites-administering/asynchronous-jobs.md) in de de gebruikersgids van het Beleid te zien.
+
+>[!NOTE]
+>
+>Voor asynchrone verwerking van paginaverplaatsingen is AEM 6.5.3.0 of hoger vereist.
 
 ### Een pagina verwijderen {#deleting-a-page}
 
@@ -361,7 +404,8 @@ Als er op geen enkele manier naar de pagina wordt verwezen, wordt de stap **Aanp
    ![screen_shot_2018-03-22at105622](assets/screen_shot_2018-03-22at105622.png)
 
    >[!NOTE]
-   Uit veiligheidsoverwegingen is het pictogram op de pagina **Verwijderen** niet beschikbaar als een snelle actie.
+   >
+   >Uit veiligheidsoverwegingen is het pictogram op de pagina **Verwijderen** niet beschikbaar als een snelle actie.
 
 1. In een dialoogvenster wordt om bevestiging gevraagd, gebruik:
 
@@ -372,7 +416,8 @@ Als er op geen enkele manier naar de pagina wordt verwezen, wordt de stap **Aanp
       * Als de pagina verwijzingen heeft, zal een berichtvakje u meedelen dat **Één of meerdere pagina&#39;s van verwijzingen worden voorzien.** U kunt Verwijderen **forceren** of **Annuleren** selecteren.
 
 >[!NOTE]
-Als een pagina al is gepubliceerd, wordt deze automatisch gepubliceerd voordat deze wordt verwijderd.
+>
+>Als een pagina al is gepubliceerd, wordt deze automatisch gepubliceerd voordat deze wordt verwijderd.
 
 ### Een pagina vergrendelen {#locking-a-page}
 
@@ -385,12 +430,16 @@ U kunt een pagina [](/help/sites-authoring/editing-content.md#locking-a-page) ve
 U kunt mappen maken waarmee u uw bestanden en pagina&#39;s kunt ordenen.
 
 >[!NOTE]
-Mappen zijn ook onderworpen aan de conventies voor [paginanamen](#page-naming-conventions) wanneer u de nieuwe mapnaam opgeeft.
+>
+>Mappen zijn ook onderworpen aan de conventies voor [paginanamen](#page-naming-conventions) wanneer u de nieuwe mapnaam opgeeft.
 
 >[!CAUTION]
-* Mappen kunnen alleen rechtstreeks onder **Sites** of onder andere mappen worden gemaakt. Ze kunnen niet onder een pagina worden gemaakt.
-* Met de standaardhandelingen kunt u eigenschappen verplaatsen, kopiëren, plakken, verwijderen, publiceren, verwijderen en weergeven/bewerken uitvoeren op een map.
-* Mappen zijn niet beschikbaar voor selectie in een live kopie.
+>
+>* Mappen kunnen alleen rechtstreeks onder **Sites** of onder andere mappen worden gemaakt. Ze kunnen niet onder een pagina worden gemaakt.
+>* Met de standaardhandelingen kunt u eigenschappen verplaatsen, kopiëren, plakken, verwijderen, publiceren, verwijderen en weergeven/bewerken uitvoeren op een map.
+>* Mappen zijn niet beschikbaar voor selectie in een live kopie.
+
+>
 
 
 

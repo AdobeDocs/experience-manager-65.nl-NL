@@ -4,7 +4,7 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: Handleiding voor Experience Manager 6.5-middelen
 translation-type: tm+mt
-source-git-commit: e3907ac1c6e3900f280b2570b93053b10128cc6d
+source-git-commit: 9f1548785283ffba119d8404e328f513012a082c
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 39%
@@ -151,7 +151,7 @@ ht-degree: 39%
    + [Vertaalprojecten maken](translation-projects.md)
    + [Elementen voorbereiden voor vertaling](preparing-assets-for-translation.md)
    + [Assets van AEM downloaden](download-assets-from-aem.md)
-   + [Asynchrone bewerkingen](/help/sites-administering/asynchronous-jobs.md)
+   + [Asynchrone taken](asynchronous-jobs.md)
    + [Lichtbak](touch-ui-light-box.md)
    + [Elementinzichten](touch-ui-asset-insights.md)
    + [Elementinzichten inschakelen via Adobe Launch](touch-ui-using-dtm-for-asset-insights.md)

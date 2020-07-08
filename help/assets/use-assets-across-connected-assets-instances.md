@@ -1,11 +1,11 @@
 ---
-title: Gebruik Connected Assets om DAM-middelen te delen in de ontwerpworkflow [!DNL Adobe Experience Manager Sites].
-description: Gebruik de middelen die beschikbaar zijn op een externe implementatie van [!DNL Adobe Experience Manager Assets] bij het maken van uw webpagina's op een andere implementatie van [!DNL Adobe Experience Manager Sites].
+title: Use Connected Assets to share DAM assets in [!DNL Adobe Experience Manager Sites] authoring workflow.
+description: Gebruik de middelen die beschikbaar zijn op een [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] externe implementatie.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: e3907ac1c6e3900f280b2570b93053b10128cc6d
 workflow-type: tm+mt
-source-wordcount: '2019'
+source-wordcount: '1996'
 ht-degree: 48%
 
 ---
@@ -78,6 +78,7 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
    1. In **[!UICONTROL Mount Point]** field, enter the local [!DNL Experience Manager] path where [!DNL Experience Manager] fetches the assets. Bijvoorbeeld de map `remoteassets`.
    1. Pas de waarden van **[!UICONTROL Original Binary transfer optimization Threshold]** aan, afhankelijk van uw netwerk. De weergave van een asset die groter is dan deze drempelwaarde, wordt asynchroon overgedragen.
    1. Select **[!UICONTROL Datastore Shared with Connected Assets]**, if you use a datastore to store your assets and the Datastore is the common storage between both deployments. In dat geval is de drempelwaarde niet van belang, aangezien de binaire gegevens van de werkelijke asset in de datastore staan en niet worden overgedragen.
+
    ![Een typische configuratie voor gekoppelde assets](assets/connected-assets-typical-config.png)
 
    *Afbeelding: Een typische configuratie voor gekoppelde assets.*
@@ -91,6 +92,7 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
    1. Selecteer het workflowstartprogramma en klik op **[!UICONTROL Properties]** op de actiebalk.
 
    1. In the [!UICONTROL Properties] wizard, change the **[!UICONTROL Path]** fields as the following mappings to update their regular expressions to exclude the mount point **[!UICONTROL connectedassets]**.
+
    | Voor | Na |
    |---|---|
    | `/content/dam(/((?!/subassets).)*/)renditions/original` | `/content/dam(/((?!/subassets)(?!connectedassets).)*/)renditions/original` |
@@ -137,13 +139,13 @@ Gebruik bovenstaande instellingen om de functionaliteit van een authoring-ervari
 
    *Afbeelding: Opties voor het filteren van documenttypen en afbeeldingen bij het zoeken naar assets op de externe DAM.*
 
-1. De auteur van een site krijgt een melding als een asset asynchroon wordt opgehaald en als het ophalen mislukt. Tijdens (of zelfs na) het ontwerpen kunnen auteurs gedetailleerde informatie zien over het ophalen van taken en fouten in de gebruikersinterface voor [asynchrone taken](/help/assets/asynchronous-jobs.md).
+1. De auteur van een site krijgt een melding als een asset asynchroon wordt opgehaald en als het ophalen mislukt. Tijdens (of zelfs na) het ontwerpen kunnen auteurs gedetailleerde informatie zien over het ophalen van taken en fouten in de gebruikersinterface voor [asynchrone taken](/help/sites-administering/asynchronous-jobs.md).
 
    ![Melding van het asynchroon op de achtergrond ophalen van assets.](assets/assets_async_transfer_fails.png)
 
    *Afbeelding: Melding van het asynchroon op de achtergrond ophalen van assets.*
 
-1. When publishing a page, [!DNL Experience Manager] displays a complete list of assets that are used in the page. Zorg ervoor dat de externe assets op het moment van publicatie worden opgehaald. Als u de status van elke opgehaalde asset wilt controleren, raadpleegt u de gebruikersinterface voor [asynchrone taken](/help/assets/asynchronous-jobs.md).
+1. When publishing a page, [!DNL Experience Manager] displays a complete list of assets that are used in the page. Zorg ervoor dat de externe assets op het moment van publicatie worden opgehaald. Als u de status van elke opgehaalde asset wilt controleren, raadpleegt u de gebruikersinterface voor [asynchrone taken](/help/sites-administering/asynchronous-jobs.md).
 
    >[!NOTE]
    >
@@ -187,4 +189,4 @@ De opgehaalde assets kunnen net als elke andere lokale asset worden gebruikt, al
 Voer de volgende stappen uit om problemen op te lossen voor algemene foutscenario&#39;s:
 
 * If you cannot search for remote assets from the [!UICONTROL Content Finder] then ensure that the required roles and permissions are in place.
-* Een middel dat van de verre dam wordt gehaald kan niet op een Web-pagina om één of meerdere redenen worden gepubliceerd. Het bestaat niet op verre server, gebrek aan aangewezen toestemmingen om het te halen, of de netwerkmislukking kan de redenen zijn. Zorg ervoor dat het element niet wordt verwijderd van de externe DAM. Zorg ervoor dat de juiste machtigingen zijn ingesteld en dat aan de voorwaarden is voldaan. Voeg het element opnieuw toe aan de pagina en publiceer het opnieuw. Controleer de [lijst met asynchrone taken](/help/assets/asynchronous-jobs.md) op fouten bij het ophalen van assets.
+* Een middel dat van de verre dam wordt gehaald kan niet op een Web-pagina om één of meerdere redenen worden gepubliceerd. Het bestaat niet op verre server, gebrek aan aangewezen toestemmingen om het te halen, of de netwerkmislukking kan de redenen zijn. Zorg ervoor dat het element niet wordt verwijderd van de externe DAM. Zorg ervoor dat de juiste machtigingen zijn ingesteld en dat aan de voorwaarden is voldaan. Voeg het element opnieuw toe aan de pagina en publiceer het opnieuw. Controleer de [lijst met asynchrone taken](/help/sites-administering/asynchronous-jobs.md) op fouten bij het ophalen van assets.

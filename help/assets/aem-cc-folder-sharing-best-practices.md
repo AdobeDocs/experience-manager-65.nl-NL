@@ -3,7 +3,7 @@ title: Adobe Experience Managers naar Adobe Creative Cloud-map met beste praktij
 description: Configureer Adobe Experience Manager zodat gebruikers in Experience Manager Assets mappen kunnen uitwisselen met gebruikers van Adobe Creative Cloud (CC).
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '1079'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >De functie voor het delen van mappen tussen Experience Manager en Creative Cloud is verouderd. Adobe raadt u ten zeerste aan om nieuwere mogelijkheden te gebruiken, zoals [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) of [Experience Manager-bureaubladtoepassing](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html). Meer informatie over beste praktijken [bij de integratie van](/help/assets/aem-cc-integration-best-practices.md)Experience Manager en Creative Cloud.
 
-Adobe Experience Manager kan zo worden geconfigureerd dat gebruikers in Middelen mappen kunnen delen met gebruikers van Adobe Creative Cloud-toepassingen, zodat ze beschikbaar zijn als gedeelde mappen in de Adobe Creative Cloud Assets-service. De functie kan worden gebruikt om bestanden uit te wisselen tussen creatieve teams en gebruikers van middelen, vooral wanneer creatieve gebruikers geen toegang hebben tot de instantie Assets (ze bevinden zich niet op het bedrijfsnetwerk).
+Adobe Experience Manager kan zo worden geconfigureerd dat gebruikers in Middelen mappen kunnen delen met gebruikers van Adobe Creative Cloud-toepassingen, zodat ze beschikbaar zijn als gedeelde mappen in de Adobe Creative Cloud Assets-service. De functie kan worden gebruikt om bestanden uit te wisselen tussen creatieve teams en gebruikers van middelen, vooral wanneer creatieve gebruikers geen toegang hebben tot de implementatie van middelen (ze bevinden zich niet op het bedrijfsnetwerk).
 
 Dit type integratie kan in de volgende gebruiksgevallen worden gebruikt, vooral wanneer het werken met gebruikers die geen directe toegang tot Activa hebben:
 
@@ -39,7 +39,7 @@ Het volgende diagram geeft een overzicht van de integratie.
 De integratie omvat de volgende elementen:
 
 * **Experience Manager Assets-server** geïmplementeerd in het bedrijfsnetwerk (beheerde services of on-premise): Hier wordt het delen van mappen gestart.
-* **Adobe Marketing Cloud Assets core service**: Fungeert als tussenpersoon tussen Experience Manager en Creative Cloud-opslagservices. Beheerders van het bedrijf dat de integratie gebruikt, moeten een vertrouwensrelatie tot stand brengen tussen de organisatie Marketing Cloud en de instantie Assets. Ze [definiëren ook een lijst met goedgekeurde Creative Cloud-medewerkers](https://docs.adobe.com/content/help/en/core-services/interface/assets/t-admin-add-cc-user.html)die gebruikers van middelen ook mappen kunnen delen voor extra beveiliging.
+* **Adobe Marketing Cloud Assets core service**: Fungeert als tussenpersoon tussen Experience Manager en Creative Cloud-opslagservices. Beheerders van het bedrijf dat de integratie gebruikt, moeten een vertrouwensrelatie tot stand brengen tussen de organisatie Marketing Cloud en de implementatie van Middelen. Ze [definiëren ook een lijst met goedgekeurde Creative Cloud-medewerkers](https://docs.adobe.com/content/help/en/core-services/interface/assets/t-admin-add-cc-user.html)die gebruikers van middelen ook mappen kunnen delen voor extra beveiliging.
 
 * **Creative Cloud Assets-webservices** (webinterface voor opslag en Creative Cloud Files): Op deze manier kunnen specifieke gebruikers van de Creative Cloud-app met wie een map Middelen is gedeeld, de uitnodiging accepteren en de map bekijken in hun opslag van Creative Cloud-account.
 * **Creative Cloud-bureaubladtoepassing**: (Optioneel) Hiermee kunt u rechtstreeks via synchronisatie met Creative Cloud Assets-opslag toegang krijgen tot gedeelde mappen/bestanden vanaf het bureaublad van de creatieve gebruiker.

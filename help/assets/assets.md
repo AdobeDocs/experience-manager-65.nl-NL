@@ -1,11 +1,11 @@
 ---
-title: Inleiding tot [!DNL Adobe Experience Manager Assets].
-description: Leer wat het beheer van digitale middelen is, de gebruiksscenario's ervan en het aanbod van [!DNL Adobe Experience Manager Asset].
+title: Introduction to [!DNL Adobe Experience Manager Assets].
+description: Leer wat het beheer van digitale middelen is, zijn gebruiksgevallen, [!DNL Adobe Experience Manager Asset] en het aanbieden van diensten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d5b3a442756e95c15cb01c4117a83b761dc8367
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
-source-wordcount: '862'
+source-wordcount: '852'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Een element is in wezen een binair plus metagegevens plus uitvoeringen plus sube
 
 >[!CAUTION]
 >
->Het uploaden en/of bewerken van een groot volume aan elementen (in het bijzonder afbeeldingen) kan van invloed zijn op de prestaties van uw [!DNL Experience Manager] instantie.
+>Het uploaden en/of bewerken van een groot volume aan middelen (in het bijzonder afbeeldingen) kan de prestaties van uw [!DNL Experience Manager] implementatie beïnvloeden.
 
 ### [!DNL Experience Manager Assets] terminologie {#aem-assets-terminology}
 

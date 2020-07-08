@@ -1,18 +1,18 @@
 ---
-title: Asynchrone bewerkingen
+title: Asynchrone taken
 description: Adobe Experience Manager optimaliseert prestaties door sommige middel-intensieve taken asynchroon te voltooien.
 translation-type: tm+mt
-source-git-commit: 69b90432ac6028a64f36300819e1bead1ae8d671
+source-git-commit: 198593fa456780816216a63790fea8cca469f8c7
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 2%
+source-wordcount: '801'
+ht-degree: 3%
 
 ---
 
 
 # Asynchrone bewerkingen {#asynchronous-operations}
 
-Om negatieve gevolgen voor de prestaties te verminderen, verwerkt Adobe Experience Manager bepaalde langlopende en middelintensieve bewerkingen asynchroon.
+Om negatieve gevolgen voor de prestaties te verminderen, verwerkt Adobe Experience Manager bepaalde langlopende en middelintensieve bewerkingen asynchroon. Asynchrone verwerking omvat het onderzoeken van veelvoudige banen en het runnen van hen op een periodieke manier afhankelijk van de beschikbaarheid van systeemmiddelen.
 
 Deze bewerkingen omvatten:
 
@@ -22,8 +22,6 @@ Deze bewerkingen omvatten:
 * Middelen ophalen die boven de ingestelde drempelwaarde liggen, vanaf een Experience Manager-implementatie op afstand
 * Pagina&#39;s verplaatsen
 * Actieve exemplaren uitrollen
-
-Asynchrone verwerking omvat het onderzoeken van veelvoudige banen en het runnen van hen op een periodieke manier afhankelijk van de beschikbaarheid van systeemmiddelen.
 
 U kunt de status van asynchrone taken weergeven vanaf het **[!UICONTROL Async Job Status]** dashboard op **Algemene navigatie** -> **Gereedschappen** -> **Bewerkingen** -> **Taken**.
 
@@ -35,7 +33,7 @@ U kunt de status van asynchrone taken weergeven vanaf het **[!UICONTROL Async Jo
 
 ## De status van asynchrone bewerkingen controleren {#monitor-the-status-of-asynchronous-operations}
 
-Wanneer AEM een verrichting asynchroon verwerkt, ontvangt u een bericht in uw inbox en door e-mail (als toegelaten).
+Wanneer AEM een verrichting asynchroon verwerkt, ontvangt u een bericht in uw [inbox](/help/sites-authoring/inbox.md) en via e-mail (als toegelaten).
 
 Navigeer naar de **[!UICONTROL Async Job Status]** pagina om de status van de asynchrone bewerkingen in detail weer te geven.
 
@@ -85,7 +83,6 @@ U kunt het schema voor de zuiveringstaak en de duur wijzigen waarvoor de details
    * Het drempelaantal dagen waarna voltooide taken worden verwijderd.
    * Het maximumaantal banen waarvoor gegevens in de geschiedenis worden bewaard.
    * De expressie voor uitsnijden waarin moet worden aangegeven wanneer de purge moet worden uitgevoerd.
-
    ![Configuratie om het leegmaken van asynchrone taken te plannen](assets/async-purge-job.png)
 
 1. Sla de wijzigingen op.
@@ -142,3 +139,12 @@ Als het aantal verwijzingen naar de te verplaatsen pagina(&#39;s) de drempelwaar
    ![MSM-configuratie](assets/async-msm.png)
 
 1. Sla de wijzigingen op.
+
+>[!MORELIKETHIS]
+>
+>* [Pagina&#39;s maken en indelen](/help/sites-authoring/managing-pages.md)
+>* [Actieve kopieën maken en synchroniseren](/help/sites-administering/msm-livecopy.md)
+>* [E-mail configureren in Experience Manager](/help/sites-administering/notification.md).
+>* [Metagegevens van elementen in bulk](/help/assets/metadata-import-export.md)importeren en exporteren.
+>* [Gebruik Connected Assets om DAM-middelen van externe implementaties](/help/assets/use-assets-across-connected-assets-instances.md)te delen.
+

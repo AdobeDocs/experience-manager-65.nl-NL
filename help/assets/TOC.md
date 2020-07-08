@@ -4,17 +4,17 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: Handleiding voor Experience Manager 6.5-middelen
 translation-type: tm+mt
-source-git-commit: d870e80e33c5ba36a43ff45ba2dc82551491bb18
+source-git-commit: e3907ac1c6e3900f280b2570b93053b10128cc6d
 workflow-type: tm+mt
-source-wordcount: '645'
-ht-degree: 38%
+source-wordcount: '638'
+ht-degree: 39%
 
 ---
 
 
 # Handleiding voor Experience Manager 6.5-middelen {#assets}
 
-+ [Gebruikershandleiding voor [!DNL Assets]](home.md)
++ [[!DNL Assets] gebruikershandleiding](home.md)
 + [AEM 6.5 Opmerkingen bij de release van activa](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/assets.html)
 + [Informatie over DAM](assets.md)
 + [Aanbevolen procedures voor elementen](best-practices-for-assets.md)
@@ -22,7 +22,7 @@ ht-degree: 38%
    + [Ervaring met homepage van AEM Assets](assets-home-page.md)
    + [Middelen zoeken in AEM](search-assets.md)
    + [Meertalige activa](multilingual-assets.md)
-   + [[!DNL Adobe Stock]-middelen gebruiken in AEM Assets](aem-assets-adobe-stock.md)
+   + [ [!DNL Adobe Stock] Activa in AEM Assets](aem-assets-adobe-stock.md)
    + [3D-elementen voorvertonen](previewing-3d-assets.md)
    + [Map-assets en verzamelingen controleren](bulk-approval.md)
    + [Activiteitsstroom in tijdlijn](activity-stream.md)
@@ -78,7 +78,7 @@ ht-degree: 38%
    + [AEM Assets aanpassen en uitbreiden](extending-assets.md)
    + [Elementen verwerken met behulp van mediafuncties en workflows](media-handlers.md)
    + [Zoekfunctionaliteit uitbreiden](searchx.md)
-   + [[!DNL ImageMagick] installeren en configureren om met AEM Assets te werken](best-practices-for-imagemagick.md)
+   + [Installeren en [!DNL ImageMagick] configureren om met AEM Assets te werken](best-practices-for-imagemagick.md)
    + [Elementen integreren met activiteitsstroom](extending-activity-stream.md)
    + [Editor van element uitbreiden](asseteditorx.md)
    + [HTTP-API voor assets](mac-api-assets.md)
@@ -151,7 +151,7 @@ ht-degree: 38%
    + [Vertaalprojecten maken](translation-projects.md)
    + [Elementen voorbereiden voor vertaling](preparing-assets-for-translation.md)
    + [Assets van AEM downloaden](download-assets-from-aem.md)
-   + [Asynchrone bewerkingen](asynchronous-jobs.md)
+   + [Asynchrone bewerkingen](/help/sites-administering/asynchronous-jobs.md)
    + [Lichtbak](touch-ui-light-box.md)
    + [Elementinzichten](touch-ui-asset-insights.md)
    + [Elementinzichten inschakelen via Adobe Launch](touch-ui-using-dtm-for-asset-insights.md)

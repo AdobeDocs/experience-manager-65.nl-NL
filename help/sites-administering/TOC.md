@@ -4,9 +4,9 @@ product: adobe experience manager
 audience: admin-user
 user-guide-title: AEM 6.5 Handboek voor beheer
 translation-type: tm+mt
-source-git-commit: 29f8e59e3fc9d3c089ee3b78c24638cd3cd2e96b
+source-git-commit: 8d000088f4fd0ff1f85f11818d4e72337da5a280
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '624'
 ht-degree: 6%
 
 ---
@@ -17,6 +17,7 @@ ht-degree: 6%
 + [Overzicht van de gebruikershandleiding beheren](home.md)
 + Sitefuncties {#introduction}
    + [Websitebeheer](msm-and-translation.md)
+   + [Asynchrone taken](asynchronous-jobs.md)
    + [Inhoud opnieuw gebruiken: Beheer van meerdere sites en Live Copy](msm.md)
    + [Console voor live kopiëren](msm-livecopy-overview.md)
    + [Synchronisatie van actieve kopie configureren](msm-sync.md)

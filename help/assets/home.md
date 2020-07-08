@@ -4,7 +4,7 @@ seo-title: Adobe Experience Manager 6.5 Gebruikershandleiding voor middelen
 description: In deze handleiding worden alle Experience Manager Assets-taken besproken, zoals het maken, beheren, leveren en optimaliseren van digitale middelen.
 seo-description: Omvat alle Experience Manager Assets-taken, zoals het maken, beheren, leveren en optimaliseren van digitale middelen.
 translation-type: tm+mt
-source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 11%
@@ -35,7 +35,7 @@ In deze handleiding worden alle Experience Manager Assets-taken besproken, zoals
 | [Klassieke UI Authoring Guide](/help/sites-classic-ui-authoring/home.md) | In deze handleiding worden de ontwerpconcepten in Experience Manager in de klassieke gebruikersinterface uitgelegd. |
 | [Gebruikershandleiding voor schermen](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html) | Leer over de digitale signaaloplossing om dynamische en interactieve digitale ervaringen te publiceren. |
 | [Gebruikershandleiding implementeren](/help/sites-deploying/home.md) | Deze handleiding toont u de basisbeginselen van Experience Manager. |
-| [Gebruikershandleiding ontwikkelen](/help/sites-developing/home.md) | Leer hoe u uw Experience Manager-exemplaar bouwt. |
+| [Gebruikershandleiding ontwikkelen](/help/sites-developing/home.md) | Leer hoe u uw Experience Manager-implementatie kunt ontwikkelen. |
 | [Gebruikershandleiding beheren](/help/managing/home.md) | In deze handleiding wordt beschreven hoe u een Experience Manager-project kunt beheren. |
 | [Mobiele gebruikershandleiding](/help/mobile/home.md) | In deze handleiding wordt beschreven hoe u inhoud voor mobiele toepassingen kunt maken en beheren. |
 | [Experience Manager Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | In deze handleiding ziet u hoe u door de gebruiker gegenereerde inhoud kunt delen met [!DNL Livefyre]. |

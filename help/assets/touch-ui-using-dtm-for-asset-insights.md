@@ -3,7 +3,7 @@ title: Asset Insights inschakelen via DTM
 description: Leer hoe u DTM (Adobe Dynamic Tag Management) gebruikt om Asset Insights in te schakelen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Hoewel u uw trackingcode kunt aanpassen om CMS-oplossingen van derden in staat t
 Voer deze stappen uit om Asset Insights in te schakelen via DTM.
 
 1. Klik op het Experience Manager-logo en ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Insights Configuration]**.
-1. [Experience Manager-instantie configureren met DTM Cloud Service](/help/sites-administering/dtm.md)
+1. [Experience Manager-implementatie configureren met DTM Cloud Service](/help/sites-administering/dtm.md)
 
    De API-token moet beschikbaar zijn wanneer u zich aanmeldt bij [https://dtm.adobe.com](https://dtm.adobe.com/) en **[!UICONTROL Account Settings]** in het gebruikersprofiel bezoekt. Deze stap is niet vereist vanuit het standpunt van Asset Insights, omdat de integratie van Experience Manager Sites met Asset Insights nog steeds in de werkzaamheden plaatsvindt.
 
@@ -34,6 +34,7 @@ Voer deze stappen uit om Asset Insights in te schakelen via DTM.
    * Selecteer het **[!UICONTROL Web Properties]** tabblad en klik op **[!UICONTROL Add Property]**.
 
    * Werk de velden naar wens bij en klik op **[!UICONTROL Create Property]**. Zie [documentatie](https://helpx.adobe.com/experience-manager/using/dtm.html).
+
    ![Webeigenschap bewerken maken](assets/Create-edit-web-property.png)
 
 1. Selecteer op het **[!UICONTROL Rules]** tabblad een optie in het navigatievenster en klik op **[!UICONTROL Page Load Rules]** **[!UICONTROL Create New Rule]**.

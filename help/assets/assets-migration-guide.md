@@ -1,11 +1,11 @@
 ---
-title: Migreer middelen bulksgewijs naar [!DNL Adobe Experience Manager Assets].
-description: Beschrijft hoe u elementen kunt overbrengen naar [!DNL Adobe Experience Manager], metagegevens kunt toepassen, uitvoeringen kunt genereren en deze kunt activeren om instanties te publiceren.
+title: Migreer activa [!DNL Adobe Experience Manager Assets] in bulk.
+description: Beschrijft hoe te om activa in te brengen [!DNL Adobe Experience Manager], meta-gegevens toe te passen, vertoningen te produceren, en hen te activeren om instanties te publiceren.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
 workflow-type: tm+mt
-source-wordcount: '1791'
+source-wordcount: '1782'
 ht-degree: 8%
 
 ---
@@ -28,6 +28,7 @@ Voordat u daadwerkelijk een van de stappen in deze methodologie uitvoert, moet u
 >* ACS Commons Bulk Workflow Manager
 >* ACS Commons Snelle Manager van de Actie
 >* Synthetische workflow
+
 >
 >
 Deze software is opensource en valt onder de [Apache v2-licentie](https://adobe-consulting-services.github.io/pages/license.html). Om een vraag te stellen of een probleem te melden gaat u naar de respectieve [GitHub-problemen voor ACS AEM-tools](https://github.com/Adobe-Consulting-Services/acs-aem-commons/issues) en [ACS AEM Commons](https://github.com/Adobe-Consulting-Services/acs-aem-tools/issues).
@@ -61,7 +62,7 @@ Er zijn twee manieren om de elementen in het systeem te laden: een op push-gebas
 
 #### Verzenden via HTTP {#pushing-through-http}
 
-Het team van de Diensten van Adobe Beheerde gebruikt een hulpmiddel genoemd Glutton om gegevens in klantenmilieu&#39;s te laden. Glutton is een kleine Java-toepassing die alle elementen van de ene map in een andere map op een [!DNL Experience Manager] instantie laadt. In plaats van Glutton kunt u ook hulpprogramma&#39;s zoals Perl-scripts gebruiken om de elementen in de opslagplaats te posten.
+Het team van de Diensten van Adobe Beheerde gebruikt een hulpmiddel genoemd Glutton om gegevens in klantenmilieu&#39;s te laden. Glutton is een kleine toepassing van Java die alle activa van één folder in een andere folder op een [!DNL Experience Manager] plaatsing laadt. In plaats van Glutton kunt u ook hulpprogramma&#39;s zoals Perl-scripts gebruiken om de elementen in de opslagplaats te posten.
 
 Er zijn twee grote nadelen aan het gebruiken van de benadering van het doorduwen van https:
 
@@ -72,7 +73,7 @@ De andere manier om elementen in te nemen is het ophalen van elementen van het l
 
 #### Ophalen uit het lokale bestandssysteem {#pulling-from-the-local-filesystem}
 
-De CSV Asset Importer [van](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) ACS AEM Tools haalt elementen van het bestandssysteem en de metagegevens van elementen van een CSV-bestand voor het importeren van elementen. De API van de Manager van de Activa van de Ervaring wordt gebruikt om de activa in het systeem in te voeren en de gevormde meta-gegevenseigenschappen toe te passen. In het ideale geval worden elementen op de server gemonteerd via een netwerkbestandsinstallatie of via een externe schijf.
+De CSV Asset Importer [van](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) ACS AEM Tools haalt elementen van het bestandssysteem en de metagegevens van elementen van een CSV-bestand voor het importeren van elementen. De Experience Manager Asset Manager-API wordt gebruikt om de elementen in het systeem te importeren en de geconfigureerde eigenschappen van metagegevens toe te passen. In het ideale geval worden elementen op de server gemonteerd via een netwerkbestandsinstallatie of via een externe schijf.
 
 Aangezien elementen niet via een netwerk hoeven te worden verzonden, verbeteren de algehele prestaties aanzienlijk en wordt deze methode over het algemeen beschouwd als de meest efficiënte manier om elementen in de opslagplaats te laden. Bovendien kunt u, omdat het gereedschap metagegevens ondersteunt, alle elementen en metagegevens in één stap importeren in plaats van ook een tweede stap te maken om de metagegevens toe te passen met een apart gereedschap.
 
@@ -117,15 +118,15 @@ Nadat de migratie is voltooid, moeten de draagraketten voor de [!UICONTROL DAM U
 
 ## Migreren naar meerdere [!DNL Experience Manager] implementaties {#migrating-between-aem-instances}
 
-Hoewel het bijna niet zo gebruikelijk is, moet u soms grote hoeveelheden gegevens van één [!DNL Experience Manager] instantie aan een andere migreren; wanneer u bijvoorbeeld een [!DNL Experience Manager] upgrade uitvoert, uw hardware upgradet of naar een nieuw datacenter migreert, zoals met een AMS-migratie.
+Hoewel bijna niet zo gemeenschappelijk, soms moet u grote hoeveelheden gegevens van één [!DNL Experience Manager] plaatsing aan een andere migreren; bijvoorbeeld wanneer u een [!DNL Experience Manager] upgrade uitvoert, uw hardware upgradet of naar een nieuw datacenter migreert, zoals met een AMS-migratie.
 
-In dit geval worden uw elementen al gevuld met metagegevens en worden er al uitvoeringen gegenereerd. U kunt zich eenvoudig concentreren op het verplaatsen van elementen van de ene naar de andere instantie. Tijdens het migreren tussen [!DNL Experience Manager] instanties voert u de volgende stappen uit:
+In dit geval worden uw elementen al gevuld met metagegevens en worden er al uitvoeringen gegenereerd. U kunt zich eenvoudig concentreren op het verplaatsen van elementen van de ene naar de andere instantie. Wanneer het migreren tussen [!DNL Experience Manager] plaatsing, voert u de volgende stappen uit:
 
 1. Workflows uitschakelen: Omdat u uitvoeringen samen met onze elementen migreert, wilt u de draagraketten voor de workflow uitschakelen. [!UICONTROL DAM Update Asset]
 
-1. Labels migreren: Omdat de tags al in de [!DNL Experience Manager] broninstantie zijn geladen, kunt u ze in een inhoudspakket samenstellen en het pakket op de doelinstantie installeren.
+1. Labels migreren: Omdat er al tags zijn geladen in de [!DNL Experience Manager] implementatie van de bron, kunt u deze maken in een inhoudspakket en het pakket installeren op de doelinstantie.
 
-1. Elementen migreren: Er zijn twee gereedschappen die u kunt adviseren om elementen van de ene [!DNL Experience Manager] instantie naar de andere te verplaatsen:
+1. Elementen migreren: Er zijn twee hulpmiddelen die voor het bewegen van activa van één [!DNL Experience Manager] plaatsing aan een andere worden geadviseerd:
 
    * **Met Vault Remote Copy** of vlt rcp kunt u vlt in een netwerk gebruiken. U kunt een bron- en doelmap opgeven en met vlt alle gegevens in de opslagplaats van de ene instantie downloaden en in de andere instantie laden. Vlt rcp is te vinden op [https://jackrabbit.apache.org/filevault/rcp.html](https://jackrabbit.apache.org/filevault/rcp.html)
    * **Grabbit** is een opensource-hulpprogramma voor inhoudssynchronisatie dat door Time Warner Cable voor hun [!DNL Experience Manager] implementatie is ontwikkeld. Omdat het ononderbroken gegevensstromen, in vergelijking met vlt rcp gebruikt, heeft het een lagere latentie en beweert een snelheidsverbetering van twee tot tien keer sneller dan vlt rcp. Grabbit ondersteunt ook alleen synchronisatie van delta-inhoud, waardoor wijzigingen kunnen worden gesynchroniseerd nadat een initiële migratievoldoende is voltooid.

@@ -1,9 +1,12 @@
 ---
-title: Aanbevolen procedures voor het verwerken van de verschillende ondersteunde bestandsindelingen met behulp van [!DNL Adobe Experience Manager Assets].
-description: Aanbevolen procedures voor het verwerken van de verschillende ondersteunde bestandstypen met [!DNL Experience Manager Assets].
+title: Aanbevolen procedures voor het verwerken van de verschillende ondersteunde bestandsindelingen [!DNL Adobe Experience Manager Assets].
+description: Aanbevolen procedures voor het verwerken van de verschillende ondersteunde bestandstypen met behulp [!DNL Experience Manager Assets]van.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5f67b4e5ccd5d7e982732e449050123e917c9914
+source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+workflow-type: tm+mt
+source-wordcount: '467'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +19,7 @@ Zie [Elementen met ondersteunde indelingen](/help/assets/assets-formats.md)voor 
 
 >[!TIP]
 >
->Als u Adobe Managed Services (AMS) gebruikt, vraagt u de klantenservice van Adobe als u een groot aantal grote PSD- of PSB-bestanden wilt verwerken. [!DNL Experience Manager] Werk samen met de vertegenwoordiger van de klantendienst van Adobe om deze beste praktijken voor uw plaatsing van AMS uit te voeren en de best mogelijke hulpmiddelen en de modellen voor merkgebonden formaten van Adobe te kiezen. [!DNL Experience Manager] PSB-bestanden met een zeer hoge resolutie die groter zijn dan 30000 x 23000 pixels, worden mogelijk niet verwerkt.
+>Als u [!DNL Experience Manager] op Adobe Managed Services (AMS) gebruikt, neemt u contact op met de klantenservice van Adobe als u van plan bent een groot aantal grote PSD- of PSB-bestanden te verwerken. Werk samen met de vertegenwoordiger van de klantendienst van Adobe om deze beste praktijken voor uw plaatsing van AMS uit te voeren en de best mogelijke hulpmiddelen en de modellen voor merkgebonden formaten van Adobe te kiezen. [!DNL Experience Manager] PSB-bestanden met een zeer hoge resolutie die groter zijn dan 30000 x 23000 pixels, worden mogelijk niet verwerkt.
 
 ## [!DNL Adobe Camera Raw] bibliotheek {#adobe-camera-raw-library}
 
@@ -38,11 +41,11 @@ Miniaturen en voorvertoningen die worden gegenereerd met PDF Rasterizer, zijn be
 
 ## [!DNL Adobe InDesign Server] {#adobe-indesign-server}
 
-Adobe raadt u aan [!DNL Adobe InDesign Server] [!DNL Adobe InDesign]om specifieke uitvoeringen, zoals IDML en HTML, te extraheren. Zie [Elementen van Experience Manager toevoegen als verwijzingen in Adobe InDesign](/help/assets/managing-linked-subassets.md#refai)voor meer informatie.
+Adobe raadt u aan [!DNL Adobe InDesign Server] [!DNL Adobe InDesign]om specifieke uitvoeringen, zoals IDML en HTML, te extraheren. Zie Experience Manager-elementen [toevoegen als verwijzingen in Adobe InDesign](/help/assets/managing-linked-subassets.md#refai)voor meer informatie.
 
-## [!DNL Dynamic Media]  {#dynamic-media}
+## [!DNL Dynamic Media] {#dynamic-media}
 
-[!DNL Dynamic Media] produceert en levert veelvoudige variaties van rijke inhoud in echt - tijd door zijn globaal, scalable, en prestaties-geoptimaliseerd netwerk. Het dient voor interactieve kijkervaringen en stroomlijnt het beheerproces voor digitale campagnes. Voor details rond het toelaten [!DNL Dynamic Media], zie het [Vormen Dynamische Media](/help/assets/config-dynamic.md).
+[!DNL Dynamic Media] produceert en levert veelvoudige variaties van rijke inhoud in echt - tijd door zijn globaal, scalable, en prestaties-geoptimaliseerd netwerk. Het dient voor interactieve kijkervaringen en stroomlijnt het beheerproces voor digitale campagnes. Voor details rond het toelaten [!DNL Dynamic Media], zie het [Vormen Dynamic Media](/help/assets/config-dynamic.md).
 
 Op dit moment [!DNL Dynamic Media] kunt u video&#39;s met maximaal 15 GB inhoud per bestand ondersteunen.
 

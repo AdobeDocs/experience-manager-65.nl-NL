@@ -1,8 +1,8 @@
 ---
 title: AEM Forms-app
 seo-title: AEM Forms-app
-description: Met de app AEM Forms kunnen workers in velden adaptieve formulieren gebruiken op hun mobiele apparaten.
-seo-description: Met de app AEM Forms kunnen workers in velden adaptieve formulieren gebruiken op hun mobiele apparaten.
+description: Met de app AEM Forms kunnen workers in het veld adaptieve formulieren gebruiken op hun mobiele apparaten.
+seo-description: Met de app AEM Forms kunnen workers in het veld adaptieve formulieren gebruiken op hun mobiele apparaten.
 uuid: fac976c8-b713-4492-b153-f567e7a11ceb
 contentOwner: sashanka
 content-type: reference
@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: e18aa345-034c-473b-b4c2-01678bb10616
 translation-type: tm+mt
-source-git-commit: 94472fad34fe97740e4711d2cb35beb884db52ce
+source-git-commit: aaedec7314b0fa8551df560eef2574a53c20d1c5
+workflow-type: tm+mt
+source-wordcount: '2403'
+ht-degree: 0%
 
 ---
 
@@ -19,11 +22,11 @@ source-git-commit: 94472fad34fe97740e4711d2cb35beb884db52ce
 
 ## Overzicht {#overview}
 
-Met de app AEM Forms kunt u adaptieve formulieren, mobiele formulieren en formsets op mobiele apparaten synchroniseren op basis van uw server. U kunt werkstromen bepalen die de centric werkschema&#39;s van [Vormen op werkschema&#39;s OSGi](/help/forms/using/aem-forms-workflow.md) of van [Vormen op JEE](/help/forms/using/finance-reference-site-walkthrough.md#approving-the-application)zijn. Bijvoorbeeld, leidt u een bankbedrijf, en gebruikt Vormen AEM om klantentoepassingen en mededelingen te beheren. Uw klanten vullen een formulier in en verzenden het ter verificatie. Als u het formulier inschakelt op mobiele apparaten, kunnen uw klanten het formulier invullen in de app AEM Forms. U kunt de verificatieworkflow ook beheren door het verificatieformulier in te schakelen op mobiele apparaten. Uw veldworker kan een mobiel apparaat bij de klant dragen, de gegevens controleren en het formulier verzenden. De app AEM Forms synchroniseert met de AEM Forms-server en haalt de formulieren op die zijn ingeschakeld voor mobiele apparaten. Als de app offline is, worden gegevens lokaal opgeslagen.
+Met de app AEM Forms kunt u adaptieve formulieren, mobiele formulieren en formsets op mobiele apparaten synchroniseren op basis van uw server. U kunt werkstromen bepalen die de centric werkschema&#39;s van [Vormen op werkschema&#39;s OSGi](/help/forms/using/aem-forms-workflow.md) of van [Vormen op JEE](/help/forms/using/finance-reference-site-walkthrough.md#approving-the-application)zijn. Bijvoorbeeld, stelt u een bankbedrijf in werking, en gebruikt AEM Forms om klantentoepassingen en mededelingen te beheren. Uw klanten vullen een formulier in en verzenden het ter verificatie. Als u het formulier inschakelt op mobiele apparaten, kunnen uw klanten het formulier invullen in de app AEM Forms. U kunt de verificatieworkflow ook beheren door het verificatieformulier in te schakelen op mobiele apparaten. Uw veldworker kan een mobiel apparaat bij de klant dragen, de gegevens controleren en het formulier verzenden. De AEM Forms-app synchroniseert met de AEM Forms-server en haalt de formulieren op die zijn ingeschakeld voor mobiele apparaten. Als de app offline is, worden gegevens lokaal opgeslagen.
 
 De broncode van de app AEM Forms is beschikbaar voor klanten via het delen van pakketten. Het broncodepakket in pakketdeling is beschikbaar als: `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
 
-De app AEM Forms wordt ondersteund op iOS-, Android- en Windows-apparaten. U kunt de app AEM Forms voor Android installeren via Google Play, iOS vanuit de App Store en Windows vanuit de Windows-winkel.
+De app AEM Forms wordt ondersteund op iOS-, Android- en Windows-apparaten. U kunt AEM Forms-app voor Android installeren via Google Play, iOS vanuit de App Store en Windows vanuit de Windows-winkel.
 
     [ ![google_play](assets/google_play.png)](https://play.google.com/store/apps/details?id=com.adobe.aem.forms)
     
@@ -35,48 +38,48 @@ Zie [De app](#customize-build-distribute)AEM Forms aanpassen, bouwen en distribu
 
 ## Vereisten {#prerequisites}
 
-Voor de app AEM Forms is een AEM Forms-server vereist. Gebruikers kunnen formulieren die u maakt op de AEM FormsServer, invullen, opslaan als concepten en verzenden. De app maakt verbinding met de server en haalt ingeschakelde formulieren ervan op. De app AEM Forms synchroniseert met de server en zodra formulieren in de app zijn geladen, kunnen gebruikers offline werken. Als de app offline is, worden gegevens opgeslagen op het apparaat en worden de gegevens gesynchroniseerd met de server wanneer de app online is.
+Voor de app AEM Forms is een AEM Forms-server vereist. Gebruikers kunnen formulieren die u maakt op de AEM FormsServer, invullen, opslaan als concepten en verzenden. De app maakt verbinding met de server en haalt ingeschakelde formulieren ervan op. AEM Forms app synchroniseert met de server en zodra formulieren in de app zijn geladen, kunnen gebruikers offline werken. Als de app offline is, worden gegevens opgeslagen op het apparaat en worden de gegevens gesynchroniseerd met de server wanneer de app online is.
 
-### AEM Forms app met servers die AEM Forms Workflow gebruiken {#aem-forms-app-with-servers-using-aem-forms-workflow}
+### AEM Forms-app met servers met behulp van AEM Forms Workflow {#aem-forms-app-with-servers-using-aem-forms-workflow}
 
-Als u een AEM Forms Workflow-server hebt, kunt u formulieren weergeven als taken in de app AEM Forms. U voert bijvoorbeeld een bankbedrijf uit en de klant vult een toepassing in om uw services te gebruiken. De toepassing is een adaptief formulier dat informatie van uw klanten accepteert en deze opslaat als verzending voor revisie. De beheerder controleert een toepassing en stuurt een verificatieaanvraag door naar de veldworker. Met de doorgestuurde toepassing wordt een verificatieformulier ingeschakeld in de app van de veldworker als taak. Uw veldworker stuurt het mobiele apparaat naar de klant en controleert de gegevens.
+Als u een AEM Forms Workflowserver hebt, kunt u formulieren weergeven als taken in de app AEM Forms. U voert bijvoorbeeld een bankbedrijf uit en de klant vult een toepassing in om uw services te gebruiken. De toepassing is een adaptief formulier dat informatie van uw klanten accepteert en deze opslaat als verzending voor revisie. De beheerder controleert een toepassing en stuurt een verificatieaanvraag door naar de veldworker. Met de doorgestuurde toepassing wordt een verificatieformulier ingeschakeld in de app van de veldworker als taak. Uw veldworker stuurt het mobiele apparaat naar de klant en controleert de gegevens.
 
-### AEM Forms app met servers die Forms-centric workflow gebruiken op OSGi {#aem-forms-app-with-servers-using-forms-centric-workflow-on-osgi}
+### AEM Forms-app met servers die Forms-centric workflow gebruiken op OSGi {#aem-forms-app-with-servers-using-forms-centric-workflow-on-osgi}
 
-Als u een AEM Forms-server hebt, kunt u adaptieve formulieren weergeven als AEM Inbox-toepassing en taken in de app AEM Forms. U voert bijvoorbeeld een bankbedrijf uit en de klant vult een toepassing in om uw services te gebruiken. De toepassing is gekoppeld aan een adaptief formulier dat informatie van uw klanten accepteert, en slaat deze op als verzending voor revisie. De beheerder evalueert de taak en keurt het verificatieverzoek aan de veldworker goed. Uw veldworker stuurt het mobiele apparaat naar de klant en controleert de gegevens.
+Als u een AEM Forms-server hebt, kunt u adaptieve formulieren weergeven als AEM Inbox-toepassing en taken uitvoeren in de AEM Forms-app. U voert bijvoorbeeld een bankbedrijf uit en de klant vult een toepassing in om uw services te gebruiken. De toepassing is gekoppeld aan een adaptief formulier dat informatie van uw klanten accepteert, en slaat deze op als verzending voor revisie. De beheerder evalueert de taak en keurt het verificatieverzoek aan de veldworker goed. Uw veldworker stuurt het mobiele apparaat naar de klant en controleert de gegevens.
 
 ### Standalone formulieren of AEM Forms-app met servers zonder AEM Forms Workflow {#standalone-forms-or-aem-forms-app-with-servers-without-aem-forms-workflow}
 
-Een AEM Forms-server die geen AEM Forms Workflow gebruikt, is AEM Forms op OSGi of een zelfstandig mobiel formulier of een adaptief formulier. De app AEM Forms werkt met uw implementatie van AEM Forms op [OSGi](/help/sites-deploying/configuring-osgi.md). Formulieren die u inschakelt en publiceert voor de app AEM Forms zijn beschikbaar in uw app.
+Een AEM Forms-server die geen AEM Forms Workflow gebruikt, is AEM Forms op OSGi of een zelfstandig mobiel formulier of een adaptief formulier. De app AEM Forms werkt samen met uw AEM Forms-implementatie op [OSGi](/help/sites-deploying/configuring-osgi.md). Formulieren die u inschakelt en publiceert voor de app AEM Forms, zijn beschikbaar in uw app.
 
-De formulieren worden gedownload op uw app en zijn offline beschikbaar. U voert bijvoorbeeld een bankbedrijf uit en een klant vult een toepassing op uw site. De toepassing is een adaptief formulier dat informatie van uw klanten accepteert en dit opslaat voor revisie. De beheerder controleert het formulier en maakt een verificatieformulier in AEM-auteur. Met de beheerder kunt u het formulier synchroniseren met de app AEM Forms en het publiceren. Als het verificatieformulier beschikbaar is in de app AEM Forms, kan uw veldagent een mobiel apparaat gebruiken om de gegevens van uw klant te verifiëren. Het mobiele apparaat wordt gesynchroniseerd met de server en het verificatieformulier wordt geladen in de app. De veldagent kan uw klant bezoeken, de gegevens verifiëren, gegevens opslaan als concept of het verificatieformulier verzenden. Het formulier wordt gesynchroniseerd met de server wanneer de app online is.
+De formulieren worden gedownload op uw app en zijn offline beschikbaar. U voert bijvoorbeeld een bankbedrijf uit en een klant vult een toepassing op uw site. De toepassing is een adaptief formulier dat informatie van uw klanten accepteert en dit opslaat voor revisie. De beheerder controleert het formulier en maakt een verificatieformulier in AEM-auteur. Met de beheerder kunt u het formulier synchroniseren met de app AEM Forms en het publiceren. Als het verificatieformulier beschikbaar is in de app AEM Forms, kan de veldagent een mobiel apparaat gebruiken om de gegevens van uw klant te verifiëren. Het mobiele apparaat wordt gesynchroniseerd met de server en het verificatieformulier wordt geladen in de app. De veldagent kan uw klant bezoeken, de gegevens verifiëren, gegevens opslaan als concept of het verificatieformulier verzenden. Het formulier wordt gesynchroniseerd met de server wanneer de app online is.
 
-Uw formulier synchroniseren in de app AEM Forms:
+Uw formulier synchroniseren in de AEM Forms-app:
 
-1. Selecteer een formulier in de auteur en klik op **[!UICONTROL Eigenschappen]** weergeven.
+1. Selecteer een formulier in de auteur en klik op **[!UICONTROL View Properties]**.
 
-1. Klik op **[!UICONTROL Geavanceerd]** op de pagina met eigenschappen.
-1. Schakel onder Geavanceerd de optie in: **[!UICONTROL Synchroniseer met AEM Forms App]** en tik op **[!UICONTROL Opslaan]**.
+1. Klik op de pagina met eigenschappen **[!UICONTROL Advanced]**.
+1. Schakel onder Geavanceerd de optie in: **[!UICONTROL Sync with AEM Forms App]** tikken **[!UICONTROL Save]**.
 
-Wanneer het formulier wordt gepubliceerd, wordt de app gesynchroniseerd met de server en wordt het formulier opgehaald. Als u meerdere formulieren wilt synchroniseren, selecteert u in de auteur meerdere formulieren in formulierbeheer en tikt u op **[!UICONTROL Synchroniseren met AEM Forms App]**.
+Wanneer het formulier wordt gepubliceerd, wordt de app gesynchroniseerd met de server en wordt het formulier opgehaald. Als u meerdere formulieren wilt synchroniseren, selecteert u in de auteur meerdere formulieren in formulierbeheer en tikt u op **[!UICONTROL Sync with AEM Forms App]**.
 
 ## Ondersteuning voor mobiele apparaten {#mobile-device-support}
 
-Zie de app [AEM Forms (voorheen bekend als Mobile Workspace)](/help/forms/using/aem-forms-jee-supported-platforms.md#aem-forms-workspace-app)
+Zie [AEM Forms-app (voorheen bekend als Mobile Workspace)](/help/forms/using/aem-forms-jee-supported-platforms.md#aem-forms-workspace-app)
 
-## Belangrijke functies van de app AEM Forms {#key-features-of-aem-forms-app}
+## Belangrijkste functies van de app AEM Forms {#key-features-of-aem-forms-app}
 
 ### AEM Forms-app met AEM Forms-servers {#aem-forms-app-with-aem-forms-servers}
 
-U kunt uw app synchroniseren met de AEM Forms-server en met formulieren werken op uw mobiele apparaat.
+U kunt uw app synchroniseren met de AEM Forms-server en met formulieren op uw mobiele apparaat werken.
 
-Met de AEM Forms Workflow-server kan een formulier worden gekoppeld aan een startpunt in een workbench-proces en een AEM Inbox-toepassing. Aan een AEM Inbox-toepassing kan een adaptief formulier zijn gekoppeld. Aan een startpunt kan een adaptief formulier, HTML5-formulier of een bijbehorende indeling zijn gekoppeld. Een startpunt kan als taak worden voorgelegd of de taak kan als ontwerp worden bewaard. Voor meer informatie over verschillen tussen een toepassing AEM Inbox en een startpunt zie [Acties en mogelijkheden van vorm-centric AEM Workflows op OSGi en de werkschema](/help/forms/using/capabilities-osgi-jee-workflows.md)van JEE van Vormen AEM.
+Met de AEM Forms Workflowserver kan een formulier worden gekoppeld aan een startpunt in een workbench-proces en een AEM Inbox-toepassing. Aan een AEM Inbox-toepassing kan een adaptief formulier zijn gekoppeld. Aan een startpunt kan een adaptief formulier, HTML5-formulier of een bijbehorende indeling zijn gekoppeld. Een startpunt kan als taak worden voorgelegd of de taak kan als ontwerp worden bewaard. Voor meer informatie over verschillen tussen een toepassing AEM Inbox en een startpunt zie [Acties en mogelijkheden van vorm-centric AEM Workflows op OSGi en AEM Forms JEE werkschema](capabilities-osgi-jee-workflows.md).
 
-Met AEM Forms Server zonder AEM Forms-workflow wordt een formulier dat is ingeschakeld voor synchronisatie in de app, weergegeven in de app AEM Forms. Formulieren zijn beschikbaar op het tabblad Formulieren van de app en kunnen worden verzonden of opgeslagen als concept. Aangepaste formulieren en mobiele formulieren worden ondersteund in de app.
+Met een AEM Forms-server zonder AEM Forms-workflow wordt een formulier dat is ingeschakeld voor synchronisatie in de app, weergegeven in de AEM Forms-app. Formulieren zijn beschikbaar op het tabblad Formulieren van de app en kunnen worden verzonden of opgeslagen als concept. Aangepaste formulieren en mobiele formulieren worden ondersteund in de app.
 
 1. **Een taak of formulier opslaan als concept**
 
-   Met de optie Opslaan als concept slaat u een momentopname van een taak of formulier op, samen met de gegevens die zijn ingevuld en de bestanden die zijn bijgevoegd in het bijbehorende formulier. De concepten worden opgeslagen op het mobiele apparaat en gesynchroniseerd met de AEM Forms-server voor een later herstel.
+   Met de optie Opslaan als concept slaat u een momentopname van een taak of formulier op, samen met de gegevens die zijn ingevuld en de bestanden die zijn bijgevoegd in het bijbehorende formulier. De concepten worden opgeslagen op het mobiele apparaat en gesynchroniseerd met de AEM Forms-server voor een latere opvraging.
 
    Zie Een taak of formulier [opslaan als concept](/help/forms/using/save-as-draft.md).
 
@@ -90,9 +93,9 @@ Met AEM Forms Server zonder AEM Forms-workflow wordt een formulier dat is ingesc
 
 U kunt uw app synchroniseren met de AEM Forms Workflow-server en u kunt aan taken en formulieren werken op uw mobiele apparaat.
 
-Een taak op het mobiele apparaat bevat een adaptief formulier, HTML5-formulier of een formulierset en kan ook bijlagen en een [overzicht-URL](/help/forms/using/getting-task-variables-summary-url.md)bevatten. Standaard worden de aan u toegewezen taken in de map **[!UICONTROL Taken]** geplaatst. Wanneer u aan een taak werkt, kunt u de taak wijzigen en een conceptkopie van de taak opslaan op de AEM Forms-server.
+Een taak op het mobiele apparaat bevat een adaptief formulier, HTML5-formulier of een formulierset en kan ook bijlagen en een [overzicht-URL](/help/forms/using/getting-task-variables-summary-url.md)bevatten. Standaard worden de aan u toegewezen taken in de **[!UICONTROL Tasks]** map geplaatst. Wanneer u aan een taak werkt, kunt u de taak wijzigen en een conceptkopie van de taak opslaan op de server AEM Forms.
 
-Een formulier op het mobiele apparaat kan een adaptief formulier of een mobiel formulier zijn. Formulieren die kunnen worden gesynchroniseerd in de formulierapp, zijn beschikbaar in de map Forms. U kunt formulieren die zijn ingeschakeld in AEM Forms Server synchroniseren zonder AEM Forms-workflow (AEM Forms on OSGi).
+Een formulier op het mobiele apparaat kan een adaptief formulier of een mobiel formulier zijn. Formulieren die kunnen worden gesynchroniseerd in de formulierapp, zijn beschikbaar in de map Forms. U kunt formulieren die zijn ingeschakeld op de AEM Forms-server synchroniseren zonder AEM Forms-workflow (AEM Forms op OSGi).
 
 Zie:
 
@@ -115,13 +118,13 @@ U kunt de volgende bijlagen toevoegen aan een formulier op uw mobiele apparaat
 
 ### Automatisch opslaan {#autosave}
 
-Wanneer een gebruiker gegevens invoert in de app AEM Forms, slaat de functie Automatisch opslaan deze op regelmatige intervallen op. Met de functie voor automatisch opslaan in de app AEM Forms kunt u gegevensverlies voorkomen als de app wordt gesloten vanwege omstandigheden zoals een lage batterij.
+Wanneer een gebruiker gegevens in de AEM Forms-app invoert, slaat de functie voor automatisch opslaan deze op regelmatige intervallen op. Met de functie voor automatisch opslaan in de app AEM Forms kunt u gegevensverlies voorkomen als de app wordt gesloten vanwege omstandigheden zoals een lage accu.
 
 Zie Automatisch opslaan [gebruiken in de app](/help/forms/using/autosave-data-app.md)AEM Forms.
 
 ## Verschillen tussen de toepassingsfuncties van AEM Inbox en AEM Forms {#differences-between-aem-inbox-and-aem-forms-app-features}
 
-Twee van de belangrijkste manieren om een Forms-centric workflow te starten, zijn met de app [AEM Inbox](/help/forms/using/manage-applications-inbox.md) en AEM Forms. De mogelijkheden van de app AEM Inbox en AEM Forms verschillen echter. AEM Inbox werkt alleen met [Forms-centric workflows](/help/forms/using/aem-forms-workflow.md) , terwijl de app AEM Forms zowel met Forms-centric workflows werkt als met procesbeheer. Zie [Handelingen en mogelijkheden van Form-centric AEM Workflows op OSGi- en AEM Forms JEE-workflows](/help/forms/using/capabilities-osgi-jee-workflows.md)voor meer informatie over verschillen tussen de mogelijkheden van de app AEM Inbox en AEM Forms.
+Twee van de belangrijkste manieren om een Forms-centric workflow te starten, zijn met de app [AEM Inbox](/help/forms/using/manage-applications-inbox.md) en AEM Forms. De mogelijkheden van de app AEM Inbox en AEM Forms verschillen echter. AEM Inbox werkt alleen met [Forms-centric workflows](/help/forms/using/aem-forms-workflow.md) , terwijl de app AEM Forms werkt met zowel Forms-centric workflows als met procesbeheer. Voor meer informatie over verschillen tussen AEM Inbox en AEM Forms app mogelijkheden, zie [Acties en mogelijkheden van vorm-centric AEM Workflows op OSGi en AEM Forms JEE werkschema](capabilities-osgi-jee-workflows.md).
 
 ## Ondersteunde formulieren {#supported-forms}
 
@@ -129,7 +132,7 @@ Ondersteunde formuliertypen in de app AEM Forms:
 
 ### Aangepast formulier {#adaptive-form}
 
-Een adaptief formulier dat dynamisch wordt aangepast aan de gebruikersinvoer, wordt ondersteund in de app AEM Forms. Lazy loaded adaptive forms are also supported.
+Een adaptief formulier dat dynamisch wordt aangepast aan de gebruikersinvoer, wordt ondersteund in de AEM Forms-app. Lazy loaded adaptive forms are also supported.
 
 ### Mobiel formulier {#mobile-form}
 
@@ -141,21 +144,21 @@ Met formsets kunnen meerdere formulieren die betrekking hebben op een service of
 
 >[!NOTE]
 >
->Vereist een AEM Forms Workflow (AEM Forms on JEE).
+>Vereist AEM Forms-workflow (AEM Forms op JEE).
 
-## Hoe AEM Forms app werkt {#how-aem-forms-app-works}
+## De werking van de app AEM Forms {#how-aem-forms-app-works}
 
 De app AEM Forms biedt een mobiele oplossing voor veldwerkers om te werken aan formulieren die aan hen zijn toegewezen. De toepassing plaatst de volledige gegevens in de cache van de server en biedt een efficiënte gebruikerservaring door al het werk lokaal op te slaan. De gegevens van de schijf worden naar de server verzonden via tijdige synchronisatie-updates.
 
-AEM Forms app is een PhoneGap 5.0-gebaseerde toepassing waarin het backbonemodel efficiënt wordt gebruikt om gegevens die in de modellen zijn opgeslagen, via weergaven te presenteren. Alle native bewerkingen worden uitgevoerd via PhoneGap-plug-ins.
+De app AEM Forms is een toepassing die is gebaseerd op PhoneGap 5.0 en waarin het backbonemodel efficiënt wordt gebruikt om gegevens die in de modellen zijn opgeslagen, te presenteren via weergaven. Alle native bewerkingen worden uitgevoerd via PhoneGap-plug-ins.
 
-## De app AEM Forms aanpassen, bouwen en distribueren {#customize-build-distribute}
+## De app AEM Forms aanpassen, maken en distribueren {#customize-build-distribute}
 
 >[!NOTE]
 >
->Alleen van toepassing als u de app maakt met broncode van de app AEM Forms.
+>Alleen van toepassing als u de app maakt met de broncode van de AEM Forms-app.
 
-De app AEM Forms is eenvoudig aan te passen aan de specifieke behoeften van uw organisatie. De broncode voor de toepassing wordt samen met AEM Forms verstrekt. U kunt de broncode wijzigen en uw eigen oplossing voor mobiele werknemers maken. U kunt de app ook ondertekenen met uw eigen bedrijfssleutel.
+De app AEM Forms is eenvoudig aan te passen aan de specifieke behoeften van de organisatie. De broncode voor de toepassing wordt samen met AEM Forms verstrekt. U kunt de broncode wijzigen en uw eigen oplossing voor mobiele werknemers maken. U kunt de app ook ondertekenen met uw eigen bedrijfssleutel.
 
 ### Aanpassen {#customize}
 
@@ -163,11 +166,11 @@ U kunt uw app aanpassen voor:
 
 **Branding**: Wijzig het toepassingspictogram, de toepassingsnaam, start afbeeldingen en pagina&#39;s in de app AEM Forms. U kunt tekst ook wijzigen om de app voor een bepaald gebied te lokaliseren. Zie Aanpassing [branding voor meer informatie over branding van de app AEM Forms](/help/forms/using/branding-customization.md).
 
-**Thema**: Wijzig stijlen zoals kleuren, lettertypen en spatiëring in de gebruikersinterface van de AEM Forms. Zie [Thema aanpassen](/help/forms/using/theme-customization.md)voor meer informatie.
+**Thema**: Wijzig stijlen zoals kleuren, lettertypen en spatiëring in de gebruikersinterface van de AEM Forms-app. Zie [Thema aanpassen](/help/forms/using/theme-customization.md)voor meer informatie.
 
-**Bewegingen**: Verander bewegingen zoals vegen naar rechts en vegen naar links in de gebruikersinterface van de AEM Forms. Zie [Bewegingsaanpassing](/help/forms/using/gesture-customization.md)voor meer informatie.
+**Bewegingen**: Verander bewegingen zoals veeggebaren naar rechts en vegen naar links in de gebruikersinterface van de AEM Forms-app. Zie [Bewegingsaanpassing](/help/forms/using/gesture-customization.md)voor meer informatie.
 
-Zie voor meer informatie over het instellen van een app-project voor AEM Forms voor aanpassing:
+Ga voor meer informatie over het instellen van een AEM Forms-app-project voor aanpassing naar:
 
 * [Omgeving instellen voor de app AEM Forms](/help/forms/using/setup-environment-mobile-workspace.md)
 * [Het project van Visual Studio van de opstelling en bouwt Vensters app](/help/forms/using/setup-visual-studio-project-build-installer.md)
@@ -176,16 +179,16 @@ Zie voor meer informatie over het instellen van een app-project voor AEM Forms v
 
 ### Samenstellen en distribueren {#build-and-distribute}
 
-De broncode voor de app AEM Forms kan worden geëxtraheerd uit de adobe-lc-mobileworkspace-src.zip die beschikbaar is als onderdeel van het bronpakket voor de app AEM Forms bij het delen van pakketten.
+De broncode voor de AEM Forms-app kan worden geëxtraheerd uit de adobe-lc-mobileworkspace-src.zip die beschikbaar is als onderdeel van het bronpakket voor de AEM Forms-app bij het delen van pakketten.
 
-Voer de volgende stappen uit om de App-bron van AEM Forms te verkrijgen:
+Voer de volgende stappen uit om de bron van de AEM Forms-app op te halen:
 
 1. Navigeren naar delen pakket
 
    URL: `https://<server>:<port>/crx/packageshare`.
 
-1. Download het bronpakket. Wanneer u het pakket downloadt, wordt het toegevoegd in het pakketbeheer van AEM Forms.
-1. Ga na het downloaden naar: `https://<server>:<port>/crx/packmgr/index.jsp`, en installeer `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
+1. Download het bronpakket. Wanneer u het pakket downloadt, wordt het toegevoegd in uw AEM Forms pakketbeheer.
+1. Ga na het downloaden naar: `https://<server>:<port>/crx/packmgr/index.jsp`en installeer `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
 
 1. Als u het pakket wilt downloaden, opent u het `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` in uw browser.
 
@@ -195,7 +198,7 @@ Voer de volgende stappen uit om de App-bron van AEM Forms te verkrijgen:
 
 Raadpleeg Het Xcode-project [instellen en de iOS-app](/help/forms/using/setup-xcode-project-build-installer.md)maken voor meer informatie over het maken van een iOS-app (.ipa).
 
-Zie [iOS Code Signing Setup, Process en Troubleshooting](https://developer.apple.com/support/code-signing/)voor meer informatie over het ondertekenen van de app AEM Forms met uw inrichtingsprofiel.
+Zie [iOS Code Signing Setup, Process en Troubleshooting](https://developer.apple.com/support/code-signing/)voor meer informatie over het ondertekenen van de AEM Forms-app met uw inrichtingsprofiel.
 
 **Voor Android**:
 
@@ -207,9 +210,9 @@ Zie [Uw toepassingen](https://developer.android.com/tools/publishing/app-signing
 
 Voor details op hoe te om Vensters tot stand te brengen app (.appx), verwijs [Opstelling het project van Visual Studio en bouwt Windows app](/help/forms/using/setup-visual-studio-project-build-installer.md).
 
-Zie [AEM Forms app](/help/forms/using/distribute-mobile-workspace-app.md)distribueren voor meer informatie over het distribueren van de app via MDM. App-distributie via MDM is alleen van toepassing op iOS en Android.
+Zie AEM Forms [distribueren in de app](/help/forms/using/distribute-mobile-workspace-app.md)voor meer informatie over het distribueren van de app via MDM. App-distributie via MDM is alleen van toepassing op iOS en Android.
 
-## Aanbevelingen voor het upgraden van de mobiele werkruimte naar de AEM Forms-app {#recommendations-to-upgrade-mobile-workspace-to-aem-forms-app}
+## Aanbevelingen voor het upgraden van de mobiele werkruimte naar de app AEM Forms {#recommendations-to-upgrade-mobile-workspace-to-aem-forms-app}
 
 Als u een upgrade uitvoert naar de nieuwste versie van de app AEM Forms, moet u de volgende punten doornemen:
 

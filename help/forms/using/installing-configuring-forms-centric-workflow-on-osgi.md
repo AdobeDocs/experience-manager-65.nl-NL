@@ -8,7 +8,7 @@ topic-tags: installing
 discoiquuid: de292a19-07db-4ed3-b13a-7a2f1cd9e0dd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+source-git-commit: aaedec7314b0fa8551df560eef2574a53c20d1c5
 workflow-type: tm+mt
 source-wordcount: '1700'
 ht-degree: 0%
@@ -20,17 +20,17 @@ ht-degree: 0%
 
 ## Inleiding {#introduction}
 
-Ondernemingen verzamelen en verwerken gegevens van meerdere formulieren, back-endsystemen en andere gegevensbronnen. De verwerking van gegevens omvat controle- en goedkeuringsprocedures, herhaalde taken en archivering van gegevens. Een formulier reviseren en converteren naar PDF-document. Wanneer manueel gedaan, kunnen de herhalende taken veel tijd en middelen vergen.
+Ondernemingen verzamelen en verwerken gegevens van meerdere formulieren, back-endsystemen en andere gegevensbronnen. De verwerking van gegevens omvat toetsings- en goedkeuringsprocedures, herhaalde taken en archivering van gegevens. Een formulier reviseren en converteren naar PDF-document. Wanneer manueel gedaan, kunnen de herhalende taken veel tijd en middelen vergen.
 
 U kunt [Forms-centric workflow gebruiken op OSGi](../../forms/using/aem-forms-workflow.md) om snel adaptieve workflows op basis van formulieren samen te stellen. Deze workflows kunnen u helpen bij het automatiseren van workflows voor revisie en goedkeuring, workflows voor bedrijfsprocessen en andere herhalende taken. Met deze workflows kunt u ook documenten verwerken (PDF-documenten maken, samenstellen, distribueren en archiveren, digitale handtekeningen toevoegen om de toegang tot documenten te beperken, streepjescodes voor formulieren te decoderen en meer) en de ondertekeningsworkflow voor Adobe-handtekeningen gebruiken voor formulieren en documenten.
 
 Nadat de werkstromen zijn ingesteld, kunnen deze handmatig worden geactiveerd om een gedefinieerd proces te voltooien of via programmacode worden uitgevoerd wanneer gebruikers een formulier of interactieve communicatie verzenden. De mogelijkheid is opgenomen in het invoegpakket AEM Forms.
 
-AEM Forms is een krachtig platform op bedrijfsniveau. Forms-centric workflow op OSGi is slechts een van de mogelijkheden van AEM Forms. Voor de volledige lijst van mogelijkheden, zie [Inleiding aan AEM Forms](../../forms/using/introduction-aem-forms.md).
+AEM Forms is een krachtig platform op bedrijfsniveau. Forms-centric workflow op OSGi is slechts een van de mogelijkheden van AEM Forms. Voor de volledige lijst van mogelijkheden, zie [Inleiding aan AEM Forms](introduction-aem-forms.md).
 
 >[!NOTE]
 >
->Met Forms-centric werkschema op OSGi, kunt u werkschema&#39;s voor diverse taken op de stapel snel bouwen en opstellen OSGi, zonder het moeten het volledige vermogen van het Beheer van het Proces op de stapel van JEE installeren. Zie een [vergelijking](../../forms/using/capabilities-osgi-jee-workflows.md) van de Forms-centric AEM Workflows op OSGi en Process Management op JEE om het verschil en de gelijkenissen in de mogelijkheden te leren.
+>Met Forms-centric werkschema op OSGi, kunt u werkschema&#39;s voor diverse taken op de stapel snel bouwen en opstellen OSGi, zonder het moeten het volledige vermogen van het Beheer van het Proces op de stapel van JEE installeren. Zie een [vergelijking](capabilities-osgi-jee-workflows.md) van de Forms-centric AEM Workflows op OSGi en Process Management op JEE om het verschil en de gelijkenissen in de mogelijkheden te leren.
 >
 >Na de vergelijking, als u verkiest om het vermogen van het Beheer van het Proces op de stapel van JEE te installeren, zie AEM Forms [installeren of van de Verbetering op JEE](/help/forms/home.md) voor gedetailleerde informatie over het installeren van en het vormen van de stapel van JEE en de mogelijkheden van het Beheer van het Proces.
 
@@ -141,11 +141,11 @@ Voer de volgende stappen op alle Auteur uit en publiceer instanties om de biblio
 
 #### Vorm de rangschikkingsagent {#configure-the-serialization-agent}
 
-Voer de volgende stappen uit op alle instanties Auteur en Publiceren om het pakket aan de toegestane lijst toe te voegen:
+Voer de volgende stappen uit op alle instanties Auteur en Publish om het pakket aan de lijst van gewenste personen toe te voegen:
 
 1. Open AEM Configuration Manager in een browservenster. De standaard-URL is https://&#39;[server]:[port]&#39;/system/console/configMgr.
 1. Zoek en open Configuratie van de Firewall van de **Deserialization**.
-1. Voeg het pakket **sun.util.agenda** toe aan het veld **allowlist** . Klik op Opslaan.
+1. Voeg het pakket **sun.util.agenda** toe aan het veld **lijst van gewenste personen** . Klik op Opslaan.
 1. Herhaal stap 1-3 voor alle instanties Auteur en Publiceren.
 
 ### Optionele configuraties na installatie {#optional-post-installation-configurations}
@@ -164,7 +164,7 @@ Dispatcher is een hulpprogramma voor het in cache plaatsen en taakverdeling voor
 
 1. Configureer de referentiefilterservice:
 
-   Meld u als beheerder aan bij het configuratiebeheer van Apache Felix. De standaard-URL van de configuratiemanager is https://&#39;server&#39;:[port_number]/system/console/configMgr. Selecteer in het menu **Configuraties** de optie **Filter** Apache-schuifverwijzing. Voer in het veld Hosts toestaan de hostnaam van de verzender in om het als referentie toe te staan en klik op **Opslaan**. De indeling van de vermelding is `https://'[server]:[port]'`.
+   Meld u als beheerder aan bij het configuratiebeheer van Apache Felix. De standaard-URL van de configuratiemanager is https://&#39;server&#39;:[port_number]/system/console/configMgr. Selecteer in het menu **Configuraties** de optie **Filter** Apache-schuifverwijzing. Voer in het veld Hosts toestaan de hostnaam van de verzender in om het als referentie toe te staan en klik op **Opslaan**. The format of the entry is `https://'[server]:[port]'`.
 
 #### Cache configureren {#configure-cache}
 

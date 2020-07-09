@@ -9,7 +9,7 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 translation-type: tm+mt
-source-git-commit: 36c9b3d60331e7482655bc8039153b6b86d721f9
+source-git-commit: f9b11eee4c044a8df4e694aa5f660b5ea375ca3c
 workflow-type: tm+mt
 source-wordcount: '7665'
 ht-degree: 0%
@@ -173,6 +173,7 @@ Als u de toepassingsserver wilt uitvoeren waarop AEM Forms op JEE worden geïmpl
 
    * Selecteer **Gebruiker kan wachtwoord** niet wijzigen.
    * Controleer op het **tabblad Lid van** of de groep **Gebruikers** wordt weergegeven.
+
    >[!NOTE]
    >
    >U kunt deze instelling niet wijzigen voor PDF Generator.
@@ -200,6 +201,7 @@ Als u de toepassingsserver wilt uitvoeren waarop AEM Forms op JEE worden geïmpl
    * [JBoss-directory]\standalone\deployment
    * [JBoss-directory]\standalone\
    * [JBoss-directory]\bin\
+
    >[!NOTE]
    >
    > De standaardinstallatielocatie van JBoss Application Server:
@@ -320,7 +322,7 @@ De generatie van de Definitie van de Taal van de Dienst van het Web (WSDL) zou s
 
 ### Beveiliging toepassingsserver {#application-server-security}
 
-In de volgende tabel vindt u een aantal technieken voor het beveiligen van uw toepassingsserver nadat de AEM Forms voor de JEE-toepassing zijn geïnstalleerd.
+In de volgende tabel worden enkele technieken beschreven waarmee u uw toepassingsserver kunt beveiligen nadat de AEM Forms in de JEE-toepassing zijn geïnstalleerd.
 
 <table> 
  <thead> 
@@ -464,7 +466,7 @@ U kunt een gebruiker zonder beheerder inschakelen om PDF Generator te gebruiken.
 
 1. Stel waarde van de variabele in op TRUE.
 
-1. Start de AEM-formulierinstantie opnieuw.
+1. Start de instantie AEM Forms opnieuw.
 
 ## Het vormen AEM Forms op JEE voor toegang voorbij de onderneming {#configuring-aem-forms-on-jee-for-access-beyond-the-enterprise}
 
@@ -1017,6 +1019,7 @@ De AEM Forms bij de turnkey van JEE-installatie stellen standaard een serviceacc
    * [JBoss-directory]\standalone\deployment
    * [JBoss-directory]\standalone\
    * [JBoss-directory]\bin\
+
    >[!NOTE]
    >
    > De standaardinstallatielocatie van JBoss Application Server:

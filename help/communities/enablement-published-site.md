@@ -10,7 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 26715b94-e2ea-4da7-a0e2-3e5a367ac1cd
 translation-type: tm+mt
-source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
+source-git-commit: e795a647b8728b224792f342200a700169a5e87b
+workflow-type: tm+mt
+source-wordcount: '1210'
+ht-degree: 0%
 
 ---
 
@@ -42,31 +45,32 @@ Wanneer de bezoeker van de site voor het eerst op de gepubliceerde site aankomt,
 
 Een anonieme sitebezoeker wordt direct de aanmeldingspagina voor deze persoonlijke communitysite voor activering getoond. Er is geen optie voor zelfinschrijving of aanmelden bij Facebook of Twitter.
 
-Deze homepage bevat vier menu-items: en `Assignments, Ski Catalog, What's New` `Discussions`, maar u kunt deze bereiken zonder u aan te melden.
+Deze homepage bevat vier menu-items: `Assignments, Ski Catalog, What's New` en `Discussions`, maar geen van deze bestanden kan worden bereikt zonder u aan te melden.
 
 >[!NOTE]
 >
 >Het is mogelijk anonieme toegang tot een enablement-site te verlenen zonder bezoekers van de site toe te staan zich te registreren.
 >Als een enablement-bron is ingesteld op `show in catalog` en `allow anonymous access`, kunnen anonieme sitebezoekers bronnen in de catalogus weergeven.
 
+
 ### Anonieme toegang tot JCR voorkomen {#prevent-anonymous-access-on-jcr}
 
-Een bekende beperking stelt de inhoud van de communautaire plaats aan anonieme bezoekers door jcr inhoud en json bloot, hoewel het **[!UICONTROL toestaan van anonieme toegang]** voor de inhoud van de plaats wordt onbruikbaar gemaakt. Nochtans, kan dit gedrag worden gecontroleerd gebruikend de Beperkingen van het Schuiven als oplossing.
+Een bekende beperking maakt de inhoud van de site van de community toegankelijk voor anonieme bezoekers via jcr-inhoud en json , hoewel deze voor de inhoud van de site **[!UICONTROL allow anonymous access]** is uitgeschakeld. Nochtans, kan dit gedrag worden gecontroleerd gebruikend de Beperkingen van het Schuiven als oplossing.
 
 Voer de volgende stappen uit om de inhoud van uw site te beschermen tegen toegang door anonieme gebruikers via jcr-inhoud en json:
 
-1. Ga naar https://&lt;host>:&lt;port>/editor.html/content/site/&lt;sitename>.html voor een AEM-auteur-exemplaar.
+1. Ga bij AEM Author-instantie naar https://&lt;host>:&lt;port>/editor.html/content/site/&lt;sitename>.html.
 
    >[!NOTE]
    >
    >Ga niet naar de gelokaliseerde site.
 
-1. Ga naar **[!UICONTROL Pagina-eigenschappen]**.
+1. Go to **[!UICONTROL Page Properties]**.
 
-   ![pageProperties-1](assets/page-properties-1.png)
+   ![page-eigenschappen](assets/page-properties.png)
 
-1. Ga naar het tabblad **[!UICONTROL Geavanceerd]** .
-1. Schakel **[!UICONTROL verificatievereiste]** in.
+1. Ga naar **[!UICONTROL Advanced]** tabblad.
+1. Inschakelen **[!UICONTROL Authentication Requirement]**.
 
    ![site-verificatie-1](assets/site-authentication-1.png)
 
@@ -92,7 +96,7 @@ De volgende keer dat het lid inlogt, wordt de homepage, die door het eerste menu
 
 De pagina van Toewijzingen is waar het lid alle het leren wegen en enablement middelen wordt getoond die specifiek aan hen worden toegewezen.
 
-Elke toewijzing bevat basisinformatie over
+Elke toewijzing bevat basisinformatie over:
 
 * Het type toewijzing
 * Of het een nieuwe Toewijzing is
@@ -136,7 +140,7 @@ Het bericht, naast gealigneerde matiging, zijn er opties om het onderwerp op soc
 
 ![chlimage_1-439](assets/chlimage_1-439.png)
 
-### Nieuwe functies {#what-s-new}
+### What&#39;s New {#what-s-new}
 
 Het `What's New` menu-item is de titel op basis van de functie [](functions.md#activity-stream-function) activity stream in de structuur van deze gemeenschapssite.
 
@@ -201,7 +205,7 @@ Met een kleine activiteit en interactie met de Middelen bij publiceren, is het b
 
 * Op auteur
 * Aanmelden met beheerdersrechten
-* Navigeer van het belangrijkste menu aan **[!UICONTROL Gemeenschappen > Middelen]**
+* Navigeer van het hoofdmenu naar **[!UICONTROL Communities > Resources]**
 * Selecteer de `Enablement Tutorial` site
 * Selecteer het `Report` pictogram voor een overzicht van alle Middelen
 * Selecteer een Middel en dan het `Report` pictogram voor een rapport over dat Middel
@@ -214,7 +218,7 @@ Het is waarschijnlijk te vroeg om gegevens van Adobe Analytics weer te geven. He
 
 #### Gebruikersrapport Ski Lessen {#ski-lessons-user-report}
 
-* Selecteer **[!UICONTROL Gemeenschappen > Bronnen]**
+* Selecteer **[!UICONTROL Communities > Resources]**
 
 * Kaart openen `Enablement Tutorial`
 * Kaart openen `Ski Lessons`
@@ -234,29 +238,28 @@ Voor rapporten over toewijzingen:
 
 * Op auteur
 * Aanmelden met beheerdersrechten
-* Ga naar **[!UICONTROL Gemeenschappen > Rapporten > Rapport Toewijzingen]**
-* Selecteer een **[!UICONTROL site]** in het keuzemenu (selecteer `Enablement Tutorial`)
+* Ga naar **[!UICONTROL Communities]** > **[!UICONTROL Reports]** > **[!UICONTROL Assignments Report]**
+* Selecteer een **[!UICONTROL Site]** optie in het keuzemenu (selecteer `Enablement Tutorial`)
 
-* Selecteer **[!UICONTROL Groep]** (selecteer `Community Ski Class`)
+* Selecteren **[!UICONTROL Group]** (selecteren `Community Ski Class`)
 
-* Een **[!UICONTROL toewijzing]** selecteren (selecteren `Ski Lessons`)
+* Selecteer een **[!UICONTROL Assignment]** (selecteer `Ski Lessons`)
 
-* Genereren **[!UICONTROL selecteren]**
+* Selecteer **[!UICONTROL Generate]**
 
 ![chlimage_1-445](assets/chlimage_1-445.png)
 
 Voor rapporten over weergaven:
 
-* Op auteur
-* Aanmelden met beheerdersrechten
-* Ga naar **[!UICONTROL Gemeenschappen > Rapporten > Rapport Weergaven]**
+* Meld u aan bij de auteur met beheerdersrechten
+* Ga naar **[!UICONTROL Communities]** > **[!UICONTROL Reports]** > **[!UICONTROL Views Report]**
 * Selecteer een **site **in het keuzemenu (selecteer`Enablement Tutorial`)
 
-* Selecteer **[!UICONTROL Inhoudstype]** (selecteer `all`)
+* Selecteren **[!UICONTROL Content Type]** (selecteren `all`)
 
-* Selecteer een **[!UICONTROL datumbereik]** (selecteer `Last 7 days`)
+* Selecteer een **[!UICONTROL date range]** (selecteer `Last 7 days`)
 
-* Genereren **[!UICONTROL selecteren]**
+* Selecteer **[!UICONTROL Generate]**
 
 ![chlimage_1-446](assets/chlimage_1-446.png)
 

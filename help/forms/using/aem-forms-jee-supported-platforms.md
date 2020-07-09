@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d1584bc5034e7d4a549a5f824a89e8cf0c06ac3c
+source-git-commit: 5ae20c36efe40e7228488a59ffc27f86e56e2d48
 workflow-type: tm+mt
-source-wordcount: '3217'
+source-wordcount: '3225'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,7 @@ In dit document worden de ondersteunde client- en serverplatforms voor AEM Forms
 >
 >* Zie [Uitzonderingen op ondersteunde serverplatforms](../../forms/using/aem-forms-jee-supported-platforms.md#p-exceptions-to-supported-server-platforms-p)voor een volledige lijst met uitzonderingen op ondersteunde serverplatforms.
 >* AEM Forms op JEE ondersteunen alleen Engelse, Franse, Duitse en Japanse versies van de ondersteunde besturingssystemen en toepassingen.
+
 >
 
 
@@ -155,7 +156,7 @@ Voor het uitvoeren van Adobe Experience Manager Forms is een Java Virtual Machin
    <td>Ondersteund</td>
   </tr> 
    <tr>
-   <td>Oracle Database 19c </td>
+   <td>Oracle Database 19c (Standard, Real Application Clusters (RAC) en Enterprise-edities) </td>
    <td>Repository Microkernal </td>
    <td>Ondersteund</td>
   </tr>
@@ -452,9 +453,11 @@ AEM Forms App ondersteunt nu de Apache Cordova. Hier volgen de platformspecifiek
 >* Conversies van PDF-generator voor OpenOffice worden alleen ondersteund in Windows en Linux.
 >* De functies OCR PDF, PDF optimaliseren en PDF exporteren worden alleen ondersteund in Windows.
 >* Een versie van Acrobat wordt geleverd met AEM Forms om PDF Generator-functionaliteit in te schakelen. De gebundelde versie zou programmatically slechts met AEM Forms moeten worden betreden, tijdens de termijn van de vergunning van AEM Forms, voor gebruik met de Generator van AEM Forms PDF. Voor meer informatie, verwijs naar de productbeschrijving van AEM Forms zoals per uw plaatsing ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) of [Beheerde Diensten](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
+
    >
    >
 * De service PDF Generator biedt geen ondersteuning voor Microsoft Windows 10.
+
 >
 
 
@@ -634,6 +637,7 @@ Zie voor aanvullende vereisten:
 >* Beheerconsole wordt niet ondersteund in Safari.
 >* Correspondence Management biedt geen ondersteuning voor Windows® Internet Explorer 9.0 voor AEM 6.1-formulieren.
 >* Forms Portal ondersteunt JAWS 14.0-schermlezersoftware in Internet Explorer 11 voor toegankelijkheid.
+
 >
 
 
@@ -668,6 +672,7 @@ Zie voor aanvullende vereisten:
 >[!NOTE]
 >
 >* Forms Portal wordt alleen ondersteund op Safari op iPad.
+
 >
 
 

@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5
 discoiquuid: d11fc727-f23a-4cde-9fa6-97e2c81b4ad0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6943eb3d0b73a348fc7bb5a713813bf73f8e7e79
+source-git-commit: 0a55ed44cb7fe3320b2196df38fe8492ee03912d
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '586'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,7 @@ Deze pagina bevat een lijst met bekende problemen uit Adobe Experience Manager 6
    1. Roept &quot;*/libs/granite/ui/content/dumplibs.rebuild.html?invalidate=true*&quot; aan.
    2. Upgrade uitvoeren naar AEM 6.5.
    3. Uitvoeren van &quot;luie contentmigratie&quot; op AEM 6.5.
+
    Er is een [Knowledge Base](https://helpx.adobe.com/experience-manager/kb/avoid-crx-quickstart-deletion-in-aem-6-5.html) -artikel beschikbaar met nadere details en de oplossing voor dit probleem.
 
 * Als u JDK 11 met AEM 6.5 instantie gebruikt, zouden sommige pagina&#39;s als leeg kunnen tonen na het opstellen van sommige pakketten. Het volgende foutbericht wordt weergegeven in het logbestand:
@@ -69,6 +70,8 @@ Deze fout oplossen:
 * Wanneer een formuliergegevensmodelservice wordt aangeroepen vanuit de regeleditor om de waarden van de afbeeldingskeuzescomponent dynamisch bij te werken, worden de waarden van de afbeeldingskeuzeselectie niet bijgewerkt. (CQ-4254754)
 * Het installatieprogramma van de Ontwerper van AEM Forms vereist de versie met 32 bits van [Visuele C++ redistributable runtime pakket 2012](https://support.microsoft.com/en-in/help/2977003/the-latest-supported-visual-c-downloads) en [Visuele C++ redistributable runtime pakketten 2013](https://support.microsoft.com/en-in/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package). Zorg ervoor dat de hierboven vermelde herdistribueerbare runtimepakketten zijn geïnstalleerd voordat u de installatie start. (CQ-4265668)
 
+* De PDF Generator ondersteunt verificatie op basis van smartcards niet.  Wanneer een beheerder het Beleid van de Groep op een server van Vensters toelaat, worden alle bestaande gebruikers PDF Generator ongeldig gemaakt. `Interactive Logon: Require Smart card`
+
 * Wanneer een adaptief formulier is geconfigureerd om de waarden van een component dynamisch bij te werken en het publicatie-exemplaar dat als host fungeert voor het formulier via de verzender, werkt de functionaliteit voor het dynamisch bijwerken van waarden van een veld niet meer. Om de kwestie op te lossen, op de publicatie instantie, open CRXDE, navigeer aan /libs/fd/af/runtime/clientlibs/guideChartReducer, en creeer het bezit dat in hieronder wordt vermeld.
 
    * Naam: allowProxy
@@ -78,6 +81,7 @@ Deze fout oplossen:
    * Verplicht: Onwaar
    * Meerdere: Onwaar
    * Automatisch gemaakt: Fase
+
    Met deze eigenschap hebben de clientbibliotheken in de runtimemap toegang tot proxy&#39;s. (CQ-4268679)
 
 * 

@@ -1,18 +1,12 @@
 ---
 title: Handelingen en mogelijkheden van Form-centric AEM Workflows op OSGi- en AEM Forms JEE-workflows
-seo-title: Handelingen en mogelijkheden van Form-centric AEM Workflows op OSGi- en AEM Forms JEE-workflows
-description: 'null'
-seo-description: 'null'
-uuid: 8af9527d-fa5e-4fcb-88e1-49571528fca6
+description: Handelingen en mogelijkheden van Form-centric AEM Workflows op OSGi- en AEM Forms JEE-workflows
 contentOwner: khsingh
-topic-tags: publish
-discoiquuid: 89bcc76d-122f-4a3f-b857-16e5376e1624
-docset: aem65
 translation-type: tm+mt
-source-git-commit: 7cc206dc95e6975f61ea9343dea67fa2681a9ae1
+source-git-commit: d5d30e16d2561c020a82cdda847a9dd9b48acd3b
 workflow-type: tm+mt
-source-wordcount: '868'
-ht-degree: 18%
+source-wordcount: '914'
+ht-degree: 19%
 
 ---
 
@@ -21,7 +15,7 @@ ht-degree: 18%
 
 ## AEM Inbox en HTML-werkruimte {#aem-inbox-and-html-workspace}
 
-U kunt AEM Inbox gebruiken om Forms-centric AEM Workflows op OSGi uit te voeren en te controleren. In HTML Workspace kunt u echter JEE-workflows voor AEM-formulieren uitvoeren en controleren. In de volgende tabel vindt u informatie over diverse belangrijke acties die beschikbaar zijn in AEM Inbox voor Forms-centric AEM Workflows op OSGi en in de HTML-werkruimte voor JEE-workflows van AEM-formulieren.
+U kunt AEM Inbox gebruiken om Forms-centric AEM Workflows op OSGi uit te voeren en te controleren. In HTML Workspace kunt u AEM Forms JEE Workflows uitvoeren en controleren. In de volgende tabel vindt u informatie over diverse belangrijke acties die beschikbaar zijn in AEM Inbox voor Forms-centric AEM Workflows op OSGi en in HTML Workspace voor AEM Forms JEE Workflows.
 
 <table>
  <tbody>
@@ -103,16 +97,16 @@ U kunt AEM Inbox gebruiken om Forms-centric AEM Workflows op OSGi uit te voeren 
  </tbody>
 </table>
 
-## Form-centric AEM Workflows op OSGi- en AEM Forms JEE Workflows {#form-centric-aem-workflows-on-osgi-and-aem-forms-jee-workflows}
+## Formuliergerichte AEM-workflows op OSGi- en AEM Forms JEE-workflows {#form-centric-aem-workflows-on-osgi-and-aem-forms-jee-workflows}
 
-Form-centric AEM Workflows op OSGi- en AEM Forms JEE Workflows (AEM Forms on JEE Process Management) hebben een andere set mogelijkheden. De volgende tabel helpt u belangrijke mogelijkheden te begrijpen die beschikbaar zijn in Form-centric AEM Workflows op OSGi en AEM Forms op JEE Workflows:
+Form-centric AEM Workflows op OSGi en AEM Forms JEE Workflows (AEM Forms op JEE Process Management) hebben een andere set mogelijkheden. De volgende tabel helpt u belangrijke mogelijkheden te begrijpen die beschikbaar zijn in Form-centric AEM Workflows op OSGi en AEM Forms op JEE Workflows:
 
 <table>
  <tbody>
   <tr>
    <td>Mogelijkheden</td>
    <td>Form-centric AEM Workflows op OSGi<br /> </td>
-   <td>JEE Workflows AEM-formulieren</td>
+   <td>AEM Forms JEE-workflows</td>
   </tr>
   <tr>
    <td>Adaptieve formulieren</td>
@@ -210,19 +204,64 @@ Form-centric AEM Workflows op OSGi- en AEM Forms JEE Workflows (AEM Forms on JEE
    <td>Niet ondersteund</td>
   </tr>
   <tr>
-   <td>HTML5-formulieren, interactieve PDF-formulieren, formulierset<br /> </td>
-   <td>Niet ondersteund<br /> </td>
+   <td>Opiniepeiling/planningsservice</td>
+   <td>Beschikbaar in de verpakking</td>
+   <td>Aangepaste implementatie vereist</td>
+  </tr>
+  <tr>
+   <td>Adaptive Forms-app</td>
+   <td>Ondersteund</td>
+   <td>Ondersteund</td>
+  </tr>
+  <tr>
+   <td>Assembler-service</td>
+   <td>Ondersteund</td>
+   <td>Ondersteund</td>
+  </tr>
+  <tr>
+   <td>PDF Generator-service</td>
+   <td>Ondersteund</td>
+   <td>Ondersteund</td>
+  </tr>
+  <tr>
+   <td>Forms Service</td>
+   <td>Ondersteund</td>
+   <td>Ondersteund</td>
+  </tr>
+  <tr>
+   <td>Uitvoerservice</td>
+   <td>Ondersteund</td>
+   <td>Ondersteund</td>
+  </tr>
+  <tr>
+   <td>Documentcontrole</td>
+   <td>Ondersteund</td>
+   <td>Ondersteund </td>
+  </tr>
+  <tr>
+   <td>Script uitvoeren</td>
+   <td>Ondersteunt ECMAScript</td>
+   <td>Ondersteunt Java-codefragmenten</td>
+  </tr>
+  <tr>
+   <td>Assembler</td>
+   <td>Ondersteund</td>
+   <td>Ondersteund</td>
+  </tr>  
+  <tr>
+   <td>HTML5-formulieren, interactieve PDF forms, formulierset</td>
+   <td>Niet ondersteund</td>
    <td>Ondersteund</td>
   </tr>
   <tr>
    <td>Procesrapportage</td>
-   <td>Niet ondersteund<br /> </td>
-   <td>Ondersteund<br /> </td>
+   <td>Niet ondersteund</td>
+   <td>Ondersteund</td>
   </tr>
   <tr>
    <td>Digitale handtekening</td>
-   <td>Ondersteund<br /> </td>
-   <td>Ondersteund<br /> </td>
+   <td>Ondersteund</td>
+   <td>Ondersteund</td>
   </tr>
   <tr>
    <td>Categorieën beginpunt</td>
@@ -334,8 +373,8 @@ Form-centric AEM Workflows op OSGi- en AEM Forms JEE Workflows (AEM Forms on JEE
 
 1. U kunt Form-centric AEM Workflows op OSGi gebruiken om een gevuld adaptief formulier te ondertekenen. Form-centric AEM Workflows op OSGi ondersteunen formulierondertekening. De ondertekeningservaring [in formulieren](../../forms/using/working-with-adobe-sign.md#create-in-form-signing-experience) wordt niet ondersteund.
 
-1. U hebt toegang tot AEM Inbox nodig om Form-Centric workflows op AEM Forms OSGi en HTML Workspace uit te voeren en te controleren om JEE-workflows voor AEM Forms uit te voeren en te controleren.
-1. Native AEM Forms Document Services zijn zowel beschikbaar voor Form-centric AEM Workflows op OSGi als voor AEM Forms op JEE Workflows. In de AEM-workflow worden native documentservices gebruikt voor Form-centric AEM Workflows op OSGi- en AEM Forms JEE (Process Management) Workflows.
+1. U hebt toegang tot AEM Inbox nodig om Form-Centric workflows op AEM Forms OSGi- en HTML-werkruimte uit te voeren en te controleren om AEM Forms JEE Workflows uit te voeren en te controleren.
+1. Native AEM Forms Document Services zijn zowel beschikbaar voor Form-centric AEM Workflows op OSGi als voor AEM Forms op JEE Workflows. In de AEM-workflow worden native documentservices gebruikt voor Form-centric AEM Workflows op OSGi- en AEM Forms JEE-workflows (Process Management).
 1. AEM Forms JEE Workflows kunnen alleen een adaptief formulier weergeven. Het ondersteunt het renderen van een adaptief formulier als PDF-document niet.
 1. AEM-formulieren JEE Workflows hebben geen aparte stap voor ondertekening door Adobe. U hebt een adaptief formulier met Adobe Sign-functionaliteit nodig voor JEE Workflows voor AEM-formulieren. Raadpleeg de documentatie bij [Adobe Sign voor meer informatie](../../forms/using/working-with-adobe-sign.md#add-and-configure-the-signature-step-component).
 1. U kunt de stap [Invoke Form Data Model Service](../../forms/using/aem-forms-workflow-step-reference.md#p-invoke-form-data-model-service-step-p) gebruiken om een webservice aan te roepen en gegevens te posten of op te halen van een externe toepassing.
@@ -343,7 +382,7 @@ Form-centric AEM Workflows op OSGi- en AEM Forms JEE Workflows (AEM Forms on JEE
 
 ## Verschillen tussen de toepassingsfuncties van AEM Inbox en AEM Forms {#differences-between-aem-inbox-and-aem-forms-app-features}
 
-Twee van de belangrijkste manieren om een Forms-centric workflow te starten, zijn met de app [AEM Inbox](../../forms/using/manage-applications-inbox.md) en AEM Forms. De mogelijkheden van de app AEM Inbox en AEM Forms verschillen echter. AEM Inbox werkt alleen met [Forms-centric workflows](../../forms/using/aem-forms-workflow.md) , terwijl de app AEM Forms zowel met Forms-centric workflows werkt als met procesbeheer.
+Twee van de belangrijkste manieren om een Forms-centric workflow te starten, zijn met de app [AEM Inbox](../../forms/using/manage-applications-inbox.md) en AEM Forms. De mogelijkheden van de app AEM Inbox en AEM Forms verschillen echter. AEM Inbox werkt alleen met [Forms-centric workflows](../../forms/using/aem-forms-workflow.md) , terwijl de app AEM Forms werkt met zowel Forms-centric workflows als met procesbeheer.
 
 In de volgende tabel worden de mogelijkheden van de app AEM Inbox en AEM Forms weergegeven:
 
@@ -352,7 +391,7 @@ In de volgende tabel worden de mogelijkheden van de app AEM Inbox en AEM Forms w
   <tr>
    <td><p><strong>Acties</strong></p> </td>
    <td><p><strong>AEM Inbox</strong></p> </td>
-   <td><p><strong>AEM Forms App</strong></p> </td>
+   <td><p><strong>AEM Forms-app</strong></p> </td>
   </tr>
   <tr>
    <td><p>Een formuliertoepassing starten</p> </td>

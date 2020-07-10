@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 907316d1-3d23-4c46-bccb-bad6fe1bd1bb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5d74f3510ff20e062f1e78f61d98e9c2e7a0414f
+source-git-commit: 6686c10f1af24cc4fbdcf6d4e8b07f7dc0e2a8bb
 workflow-type: tm+mt
 source-wordcount: '1599'
 ht-degree: 0%
@@ -74,7 +74,7 @@ De schakelaar steunt het volgende:
 
 * AEM-versies:
 
-   * AEM 6.5, 6.4, 6.3
+   * AEM 6.4, 6.3
 
 * Microsoft SharePoint-versies:
 
@@ -131,9 +131,9 @@ Standaard stelt de connector één JCR-werkruimte beschikbaar. De SharePoint-ser
 De schakelaar kan ook voor veelvoudige werkruimten worden gevormd. In dit geval wordt elke werkruimte gekoppeld aan de URL van de respectievelijke SharePoint-server die via de werkruimte beschikbaar wordt gemaakt. Als u een werkruimte wilt toevoegen, voegt u een werkruimtedefinitie toe aan de parameter Werkruimten. Een werkruimtedefinitie heeft de volgende indeling:
 `<name>`= `<url>` waarbij`<name>``<url>` de naam van de JCR-werkruimte is en de URL van de SharePoint-server voor die werkruimte.
 
-Voer in AEM nog één stap uit, afgezien van de bovenstaande configuratiestappen. Maak een lijst met de bundel &#39;**com.day.cq.dam.cq-dam-jcr-connectors**&#39;.
+Voer in AEM nog één stap uit, afgezien van de bovenstaande configuratiestappen. Lijst van gewenste personen de bundel &quot;**com.day.cq.dam.cq-dam-jcr-connectors**&quot;.
 
-Voer de volgende stappen uit om lijstbundels in AEM toe te staan:
+Voer de volgende stappen uit om bundels in AEM te lijsten van gewenste personen:
 
 1. Navigeer naar de OSGi Management Console: http://localhost:4502/system/console/configMgr.
 1. Zoek naar de service &quot;Apache Sling Login Admin Whitelist&quot;.

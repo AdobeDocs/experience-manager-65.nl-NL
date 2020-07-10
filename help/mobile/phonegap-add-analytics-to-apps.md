@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: cd9d2bea-48d8-4a17-8544-ea25dcad69f3
 translation-type: tm+mt
-source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+source-git-commit: 8279cd590244a7f2d20cfaf1c7505a3ef57fae4a
 workflow-type: tm+mt
-source-wordcount: '1064'
+source-wordcount: '971'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ AEM Mobile heeft een Adobe Analytics-account nodig om trackinggegevens in uw app
 
 ## Voor ontwikkelaars - Mobiele Analytics integreren in uw app {#for-developers-integrate-mobile-analytics-into-your-app}
 
-### ContentSync configureren om het configuratiebestand te gebruiken {#configure-contentsync-to-pull-in-configuration-file}
+### Configureer ContentSync om het configuratiebestand te gebruiken {#configure-contentsync-to-pull-in-configuration-file}
 
 Nadat u het Analytics-account hebt ingesteld, moet u een configuratie voor inhoudssynchronisatie maken om de inhoud in uw mobiele toepassing te plaatsen.
 
@@ -115,34 +115,6 @@ Hiermee kunt u staten en handelingen bijhouden, zoals waar de pagina&#39;s waarn
 Ter referentie kunt u de code in de Geometrixx-app Buiten bekijken. In de toepassing Geometrixx Outdoor worden alle paginanavigaties bijgehouden met behulp van de methode ADB.trackState(). Zie voor meer informatie de broncode voor /libs/mobileapps/components/angular/ng-page/clientlibs/app-navigation.js
 
 Door uw broncode met deze methodevraag van instrumenten te voorzien kunt u volledige metriek tegen uw toepassing verzamelen.
-
-### Het testen van Analytics-tracking met Bloodhound  {#testing-analytics-tracking-with-bloodhound}
-
-![](do-not-localize/chlimage_1.jpeg)
-
-<!--NOTE TO WRITER: Bloodhound is no longer available.-->
-
-U kunt desgewenst vóór de implementatie naar productie de Adobe-tool [Bloodhound](https://marketing.adobe.com/developer/gallery/bloodhound-app-measurement-qa-tool-1) gebruiken om de configuratie van de analysemogelijkheden te testen. Als u de analyseconfiguratie wilt testen, moet u het bestand ADBMobileConfig.json bewerken om te wijzen naar de server waarop Bloodhound wordt uitgevoerd in plaats van naar de Analytics-server. Om deze verandering aan te brengen, van uw ADBMobileConfig.json verander de volgende ingang.
-
-```xml
-...
-"analytics": {
-    "rsids": "YOUR_RSID",
-    "server": "YOUR_TRACKING_SERVER:YOUR_TRACKING_PORT",
-...
-```
-
-Wijzigen om aan te passen aan dit item:
-
-```xml
-...
-"analytics": {
-    "rsids": "YOUR_RSID",
-    "server": "localhost:50000",
-...
-```
-
-Hiermee worden alle gegevens die door de AMS-plug-in zijn verzameld, omgeleid naar Bloodhound, zodat u de resultaten kunt bekijken.
 
 #### Eigenschappen voor het verbinden met AMS {#properties-for-connecting-to-ams}
 

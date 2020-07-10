@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6b545a51-3677-4ea1-ac7e-2d01ba19283e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+source-git-commit: 8279cd590244a7f2d20cfaf1c7505a3ef57fae4a
 workflow-type: tm+mt
-source-wordcount: '1544'
+source-wordcount: '1550'
 ht-degree: 0%
 
 ---
@@ -47,9 +47,9 @@ De Adobe Analytics-account moet:
 
 Voordat u verdergaat, moet u ervoor zorgen dat u zich bij Adobe Analytics kunt aanmelden. Via:
 
-* [https://marketing.adobe.com](https://marketing.adobe.com)
+* [Aanmelden bij Adobe Experience Cloud](https://login.experiencecloud.adobe.com/exc-content/login.html)
 
-* [https://sc.omniture.com/login/](https://sc.omniture.com/login/)
+* [Aanmelden bij Adobe Analytics](https://sc.omniture.com/login/)
 
 ### AEM configureren voor gebruik van uw Adobe Analytics-datacenters {#configuring-aem-to-use-your-adobe-analytics-data-centers}
 
@@ -121,6 +121,7 @@ Voor identiteitskaart van de Reeks van het Rapport (RSID) die u gebruikt, kunt u
    * Geef een **titel** op.
    * U kunt optioneel de **naam** opgeven voor het knooppunt dat de frameworkgegevens in de opslagplaats opslaat.
    * Adobe **Analytics Framework selecteren**
+
    Klik op **Maken**.
 
    Het framework wordt geopend voor bewerking.

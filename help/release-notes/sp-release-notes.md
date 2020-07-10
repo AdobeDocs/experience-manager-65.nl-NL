@@ -4,9 +4,9 @@ description: De nota's van de versie specifiek voor Adobe Experience Manager 6.5
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 1eca1fcce90dfde8b512414249eb8cc05323c5cc
+source-git-commit: 6686c10f1af24cc4fbdcf6d4e8b07f7dc0e2a8bb
 workflow-type: tm+mt
-source-wordcount: '4396'
+source-wordcount: '4413'
 ht-degree: 0%
 
 ---
@@ -415,6 +415,7 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
 | Gebied | Functie | Vervanging |
 |---|---|---|
 | Integrations | Het **[!UICONTROL AEM Cloud Services Opt-In]** scherm is afgekeurd. Met de integratie van AEM en Target die in AEM 6.5 is bijgewerkt ter ondersteuning van de Target Standard API, die verificatie via Adobe IMS en I/O gebruikt, en de groeiende rol van Adobe Launch voor het van instrumenten voorzien van AEM-pagina&#39;s voor analyses en personalisatie, is de Opt-In-wizard functioneel irrelevant geworden. | Configureer systeemverbindingen, Adobe IMS-verificatie en Adobe I/O-integratie via de respectievelijke AEM cloud services. |
+| Connectors | De Adobe JCR-connector voor Microsoft SharePoint 2010 en Microsoft SharePoint 2013 is vervangen voor AEM 6.5. | N.v.t. |
 
 ## Known issues {#known-issues}
 

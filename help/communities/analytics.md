@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: e6fdaf56-402f-418d-96d8-e46bd3ad1e8c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 342e148ba183782e4c8b0f08328b9d87685ca08e
+source-git-commit: 8279cd590244a7f2d20cfaf1c7505a3ef57fae4a
 workflow-type: tm+mt
 source-wordcount: '2746'
 ht-degree: 2%
@@ -107,9 +107,7 @@ Door u aan te melden bij [Adobe Experience Cloud](https://docs.adobe.com/content
 
       * not **`Counter (no subrelations)`**
    * Kan bestaande gebeurtenissen opnieuw gebruiken (naam wijzigen) of nieuwe gebeurtenissen maken die kunnen worden gebruikt voor communautaire functies
-   <!--
-    NOTE TO WRITER: The following link was broken, so I replaced it. Check for accuracy https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/video_analytics_config.html 
-    -->
+
 
 * [Videobeheer](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html)
 
@@ -532,7 +530,8 @@ Hier volgt een voorbeeld van standaardtoewijzingen na het volgen van de [aan de 
 * *Titel* van UGC-component: Wikingonderwerpen
 * *login (authorizableId)*: `aaron.mcdonald@mailinator.com`
 * *SRP-pad naar UGC*: `/content/usergenerated/asi/.../forum/jmtz-topic3`
-of *pad van te volgen* component: `/content/sites/<site name>/en/jcr:content/content/primary/forum`
+of 
+*pad van te volgen* component: `/content/sites/<site name>/en/jcr:content/content/primary/forum`
 
 * *pad naar community-site-inhoud*: `/content/sites/<site name>/en`
 

@@ -8,9 +8,9 @@ topic-tags: installing
 discoiquuid: de292a19-07db-4ed3-b13a-7a2f1cd9e0dd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: aaedec7314b0fa8551df560eef2574a53c20d1c5
+source-git-commit: 1dfc8fa91d3e5ae8ca49cf1f3cb739b59feb18cf
 workflow-type: tm+mt
-source-wordcount: '1700'
+source-wordcount: '1623'
 ht-degree: 0%
 
 ---
@@ -102,14 +102,16 @@ Voordat u begint met het installeren en configureren van Forms-centric Workflow 
 
 AEM Forms-invoegtoepassing is een toepassing die op AEM wordt geïmplementeerd. Het pakket bevat Forms-centric workflow voor OSGi en andere mogelijkheden. Voer de volgende stappen uit om het invoegpakket te installeren:
 
-1. Meld u als beheerder aan bij de [AEM-server](https://localhost:4502) en open [pakketshare](https://localhost:4502/crx/packageshare). U hebt een Adobe ID nodig om u aan te melden bij de pakketshare.
-1. Zoek in [AEM-pakketshare](https://localhost:4502/crx/packageshare/login.html)in **AEM 6.5 Forms add-on packages** of **latest service packages** op het pakket dat op uw besturingssysteem van toepassing is en klik op **Download**. Lees en accepteer de licentieovereenkomst en klik op **OK**. Het downloaden begint. Nadat u het bestand hebt gedownload, staat het woord **Gedownload** naast het pakket.
+1. Open [Softwaredistributie](https://experience.adobe.com/downloads). U hebt een Adobe ID nodig om u aan te melden bij de Softwaredistributie.
+1. Tik **[!UICONTROL Adobe Experience Manager]** beschikbaar in het koptekstmenu.
+1. In het **[!UICONTROL Filters]** gedeelte:
+   1. Selecteer een optie **[!UICONTROL Forms]** in de **[!UICONTROL Solution]** vervolgkeuzelijst.
+   2. Selecteer de versie en typ voor het pakket. U kunt de **[!UICONTROL Search Downloads]** optie ook gebruiken om de resultaten te filteren.
+1. Tik op de pakketnaam die van toepassing is op het besturingssysteem, selecteer **[!UICONTROL Accept EULA Terms]** en tik op **[!UICONTROL Download]**.
+1. Open [Package Manager](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) en klik **[!UICONTROL Upload Package]** om het pakket te uploaden.
+1. Selecteer het pakket en klik **[!UICONTROL Install]**.
 
-   U kunt het versienummer ook gebruiken om een add-on pakket te zoeken. Raadpleeg het artikel over releases [van](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) AEM Forms voor het versienummer van het meest recente pakket.
-
-1. Klik op **Gedownload** nadat het downloaden is voltooid. U wordt omgeleid naar pakketbeheer. Zoek in pakketbeheer naar het gedownloade pakket en klik op **Installeren**.
-
-   Als u het pakket handmatig downloadt via de directe koppeling die wordt vermeld in het [AEM Forms-releaseartikel](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) , meldt u zich aan bij pakketbeheer, klikt u op Pakket **** uploaden, selecteert u het gedownloade pakket en klikt u op Uploaden. Nadat het pakket is geüpload, klikt u op de pakketnaam en klikt u op **Installeren.**
+   U kunt het pakket ook downloaden via de directe koppeling in het [AEM Forms-releaseartikel](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) .
 
 1. Nadat het pakket is geïnstalleerd, wordt u gevraagd om de AEM-instantie opnieuw te starten. **Start de server niet onmiddellijk opnieuw.** Alvorens de server van AEM Forms tegen te houden, wacht tot de ServiceEvent REGISTERED en ServiceEvent niet GEREGISTREERDE berichten ophouden verschijnen in het [AEM-Installatie-Folder]/crx-quickstart/logs/error.log- dossier en het logboek stabiel is.
 1. Herhaal stap 1-4 voor alle instanties Auteur en Publiceren.

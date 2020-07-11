@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: e18aa345-034c-473b-b4c2-01678bb10616
 translation-type: tm+mt
-source-git-commit: aaedec7314b0fa8551df560eef2574a53c20d1c5
+source-git-commit: 1dfc8fa91d3e5ae8ca49cf1f3cb739b59feb18cf
 workflow-type: tm+mt
-source-wordcount: '2403'
+source-wordcount: '2440'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 Met de app AEM Forms kunt u adaptieve formulieren, mobiele formulieren en formsets op mobiele apparaten synchroniseren op basis van uw server. U kunt werkstromen bepalen die de centric werkschema&#39;s van [Vormen op werkschema&#39;s OSGi](/help/forms/using/aem-forms-workflow.md) of van [Vormen op JEE](/help/forms/using/finance-reference-site-walkthrough.md#approving-the-application)zijn. Bijvoorbeeld, stelt u een bankbedrijf in werking, en gebruikt AEM Forms om klantentoepassingen en mededelingen te beheren. Uw klanten vullen een formulier in en verzenden het ter verificatie. Als u het formulier inschakelt op mobiele apparaten, kunnen uw klanten het formulier invullen in de app AEM Forms. U kunt de verificatieworkflow ook beheren door het verificatieformulier in te schakelen op mobiele apparaten. Uw veldworker kan een mobiel apparaat bij de klant dragen, de gegevens controleren en het formulier verzenden. De AEM Forms-app synchroniseert met de AEM Forms-server en haalt de formulieren op die zijn ingeschakeld voor mobiele apparaten. Als de app offline is, worden gegevens lokaal opgeslagen.
 
-De broncode van de app AEM Forms is beschikbaar voor klanten via het delen van pakketten. Het broncodepakket in pakketdeling is beschikbaar als: `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
+De broncode van de app AEM Forms is via Software Distribution beschikbaar voor klanten. Het broncodepakket in Softwaredistributie is beschikbaar als: `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
 
 De app AEM Forms wordt ondersteund op iOS-, Android- en Windows-apparaten. U kunt AEM Forms-app voor Android installeren via Google Play, iOS vanuit de App Store en Windows vanuit de Windows-winkel.
 
@@ -179,20 +179,18 @@ Ga voor meer informatie over het instellen van een AEM Forms-app-project voor aa
 
 ### Samenstellen en distribueren {#build-and-distribute}
 
-De broncode voor de AEM Forms-app kan worden geëxtraheerd uit de adobe-lc-mobileworkspace-src.zip die beschikbaar is als onderdeel van het bronpakket voor de AEM Forms-app bij het delen van pakketten.
+De broncode voor de AEM Forms-app kan worden geëxtraheerd uit de `adobe-lc-mobileworkspace-src.zip` code die beschikbaar is als onderdeel van het bronpakket van de AEM Forms-app voor softwaredistributie.
 
 Voer de volgende stappen uit om de bron van de AEM Forms-app op te halen:
 
-1. Navigeren naar delen pakket
-
-   URL: `https://<server>:<port>/crx/packageshare`.
-
-1. Download het bronpakket. Wanneer u het pakket downloadt, wordt het toegevoegd in uw AEM Forms pakketbeheer.
-1. Ga na het downloaden naar: `https://<server>:<port>/crx/packmgr/index.jsp`en installeer `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
-
-1. Als u het pakket wilt downloaden, opent u het `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` in uw browser.
-
-   Het bronpakket wordt gedownload op uw apparaat.
+1. Open [Softwaredistributie](https://experience.adobe.com/downloads). U hebt een Adobe ID nodig om u aan te melden bij de Softwaredistributie.
+1. Tik **[!UICONTROL Adobe Experience Manager]** beschikbaar in het koptekstmenu.
+1. In het **[!UICONTROL Filters]** gedeelte:
+   1. Selecteer een optie **[!UICONTROL Forms]** in de **[!UICONTROL Solution]** vervolgkeuzelijst.
+   2. Selecteer de versie en typ voor het pakket. U kunt de **[!UICONTROL Search Downloads]** optie ook gebruiken om de resultaten te filteren.
+1. Tik op de pakketnaam die van toepassing is op het besturingssysteem, selecteer **[!UICONTROL Accept EULA Terms]** en tik op **[!UICONTROL Download]**.
+1. Open [Package Manager](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) en klik **[!UICONTROL Upload Package]** om het pakket te uploaden.
+1. Selecteer het pakket en klik **[!UICONTROL Install]**.
 
 **Voor iOS**:
 

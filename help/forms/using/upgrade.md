@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f89921ef-c638-4a07-88d5-3dd8614c5166
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 43fe9540a3a29ae86f48756c77001c0a4b8ea3e4
+source-git-commit: 1dfc8fa91d3e5ae8ca49cf1f3cb739b59feb18cf
+workflow-type: tm+mt
+source-wordcount: '232'
+ht-degree: 0%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: 43fe9540a3a29ae86f48756c77001c0a4b8ea3e4
 
 AEM 6.5 Forms bevat verschillende nieuwe functies en verbeteringen die het maken, beheren en gebruiken van formulieren en correspondentie stroomlijnen. Voor meer informatie over alle nieuwe mogelijkheden en verbeteringen van AEM 6.5 Forms raadpleegt u het overzichtsdocument [](../../forms/using/whats-new.md)Nieuwe functies.
 
-U kunt een upgrade uitvoeren op uw bestaande installatie van LiveCycle of AEM Forms om nieuwe mogelijkheden en verbeteringen te verkrijgen die worden aangeboden in AEM 6.5 Forms en om de bestaande gegevens, processen en middelen intact te houden. Bij een upgrade blijven de metagegevens en de status van de processen ook behouden. U kunt een upgradepad kiezen om aan de slag te gaan met de upgrade.
+U kunt een upgrade uitvoeren op uw bestaande installatie van LiveCycle of AEM Forms om nieuwe mogelijkheden en verbeteringen te verkrijgen die in AEM 6.5 Forms worden aangeboden, terwijl de bestaande gegevens, processen en middelen intact blijven. Bij een upgrade blijven de metagegevens en de status van de processen ook behouden. U kunt een upgradepad kiezen om aan de slag te gaan met de upgrade.
 
-In het volgende diagram worden de beschikbare upgradepaden voor AEM-formulieren op OSGi weergegeven:
+Het volgende diagram toont de beschikbare verbeteringswegen voor AEM Forms op OSGi:
 
 ![](do-not-localize/osgi-upgrade-path.png)
 
@@ -36,13 +39,13 @@ U kunt een multi-hopverbetering van ook uitvoeren
 * AEM 6.1 Formulieren op OSGi
 * AEM 6.2 Formulieren op OSGi
 
-In het volgende diagram worden de beschikbare upgradepaden voor AEM-formulieren op JEE weergegeven:
+In het volgende diagram worden de beschikbare upgradepaden voor AEM Forms op JEE weergegeven:
 
 ![](do-not-localize/jee-upgrade-6-5.png)
 
 U kunt een directe upgrade uitvoeren vanaf:
 
-* AEM 6.4-formulieren in JEE
+* AEM 6.3 Formulieren in JEE
 * AEM 6.4-formulieren in JEE
 
 U kunt een multi-hopverbetering van ook uitvoeren
@@ -70,7 +73,7 @@ Migration involves moving only assets (PDF, XDP, images, adaptive forms, corresp
 
     * **Run Migration Utility**
 
-      The migration utility makes the adaptive forms and correspondence management assets of earlier versions compatible with AEM 6.3 forms. You can download the utility from AEM package share. For step-by-step information to configure and use the migration utility, see [migration utility](../../forms/using/migration-utility.md) documentation.
+      The migration utility makes the adaptive forms and correspondence management assets of earlier versions compatible with AEM 6.3 forms. You can download the utility from AEM Software Distribution. For step-by-step information to configure and use the migration utility, see [migration utility](../../forms/using/migration-utility.md) documentation.
 
     * **Reconfigure Adobe Sign**
 

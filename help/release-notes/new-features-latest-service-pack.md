@@ -4,9 +4,9 @@ description: Nieuw in Adobe Experience Manager 6.5 Service Pack 5
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d7276f332bece4f736d92e5723d79ffc2d27e900
+source-git-commit: 71c0d0263e1d0da7e33762a3b22773f38db3ba52
 workflow-type: tm+mt
-source-wordcount: '1839'
+source-wordcount: '1863'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Adobe Experience Manager 6.5 de dienstpakken verstrekken nieuwe eigenschappen, klant-gevraagde verhogingen, en prestaties, stabiliteit, en veiligheidsverbeteringen op kwartaalintervallen. De beschikbaarheid op kwartaalbasis maakt het gemakkelijk om tot nieuwe eigenschappen en innovaties toegang te hebben en te nemen.
 
-Dit artikel benadrukt de eigenschappen inbegrepen in het recentste 6.5 Service Pack, [belangrijkste eigenschappen inbegrepen in de vorige 6.5 Pakken](#key-features-previous-service-packs)van de Dienst, en sommige van de [belangrijkste versies sinds de Versie van de Manager van de Ervaring 6.5.4.0](#key-releases-since-last-sp) .
+Dit artikel benadrukt de eigenschappen inbegrepen in het recentste 6.5 Service Pack, [belangrijkste eigenschappen inbegrepen in de vorige 6.5 Pakken](#key-features-previous-service-packs)van de Dienst, en sommige van de [belangrijkste versies sinds Experience Manager 6.5.4.0](#key-releases-since-last-sp) versie.
 
 ## Sites Adobe Experience Managers {#aem-sites}
 
@@ -78,13 +78,13 @@ Met ondersteuning voor 3D-afbeeldingen in [!DNL Dynamic Media] kunnen klanten 3D
 
 ### De kolommen in de Adobe Experience Manager Inbox aanpassen {#customize-aem-inbox-columns}
 
-U kunt een [!DNL Experience Manager] Postvak IN aanpassen om de standaardtitel van een kolom te wijzigen, de positie van een kolom opnieuw te ordenen en extra kolommen weer te geven op basis van de gegevens van een workflow. Leden van `administrators` of `workflow-administrators` groep kunnen de kolommen aanpassen.
+U kunt een [!DNL Experience Manager] Postvak IN aanpassen om de standaardtitel van een kolom te wijzigen, de positie van een kolom opnieuw te ordenen en extra kolommen weer te geven op basis van de gegevens van een workflow. Leden van `administrators` of `workflow-administrators` groep kunnen de kolommen aanpassen. Zie [Beheer](../sites-authoring/inbox.md#inbox-admin-control)voor meer informatie.
 
-![Inbox-kolommen van Experience Manager aanpassen](assets/customize-columns.gif)
+![Experience Manager Inbox-kolommen aanpassen](assets/customize-columns.gif)
 
 ### Interactieve communicatie opslaan als concept {#save-as-draft}
 
-U kunt de Agent UI gebruiken om één of meerdere concepten voor elke Interactieve Mededeling te bewaren en het ontwerp later terug te winnen om aan het verder te werken. U kunt voor elk concept een andere naam opgeven om het te identificeren.
+U kunt de Agent UI gebruiken om één of meerdere concepten voor elke Interactieve Mededeling te bewaren en het ontwerp later terug te winnen om aan het verder te werken. U kunt voor elk concept een andere naam opgeven om het te identificeren. Voor meer informatie, zie [sparen Interactieve Mededelingen als ontwerp](../forms/using/prepare-send-interactive-communication.md#save-as-draft).
 
 ![Opslaan als concept](assets/save-as-draft.gif)
 
@@ -104,7 +104,7 @@ Adobe Experience Manager Forms bevat de volgende toegankelijkheidsverbeteringen:
 
 ### X-509 op certificaten gebaseerde verificatie voor SOAP-webservices in formuliergegevensmodel {#x509-based-authentication-soap}
 
-Het formuliergegevensmodel ondersteunt nu X-509 op certificaten gebaseerde verificatie terwijl SOAP-webservices als gegevensbron worden gebruikt.
+Het formuliergegevensmodel ondersteunt nu X-509 op certificaten gebaseerde verificatie terwijl SOAP-webservices als gegevensbron worden gebruikt. Voor meer informatie, zie de Webdiensten [van de ZEEP](../forms/using/configure-data-sources.md#configure-soap-web-services)vormen.
 
 ### Andere belangrijke verbeteringen {#other-improvements}
 
@@ -112,9 +112,9 @@ Het formuliergegevensmodel ondersteunt nu X-509 op certificaten gebaseerde verif
 
 * Extra ondersteuning voor [!DNL Oracle Real Applications Cluster (RAC) 19c].
 
-## Belangrijkste functies in vorige Experience Manager 6.5-servicepacks {#key-features-previous-service-packs}
+## Belangrijkste kenmerken van de vorige Experience Manager 6.5 Service Packs {#key-features-previous-service-packs}
 
-### Sites van Experience Manager {#aem-sites-previous-service-packs}
+### Experience Manager-sites {#aem-sites-previous-service-packs}
 
 #### Stijlsysteemverbeteringen (6.5.4.0) {#style-system-enhancements}
 
@@ -134,9 +134,9 @@ U kunt nu stijlen selecteren in het dialoogvenster met het verbeterde stijlsyste
 
 #### Configureren [!DNL Experience Manager Assets] met [!DNL Brand Portal] (6.5.4.0) {#configure-assets-bp}
 
-Het machtigingskanaal tussen [!DNL Experience Manager Assets] en [!DNL Brand Portal] is gewijzigd. Eerder, [!DNL Brand Portal] werd gevormd in Klassieke UI via Verouderde Gateway OAuth, die de het symbolenuitwisseling van JWT gebruikt om een token van de Toegang te verkrijgen IMS voor vergunning. [!DNL Experience Manager Assets] wordt nu geconfigureerd met [!DNL Brand Portal] behulp van Adobe I/O, dat een IMS-token aanschaft voor toestemming van uw [!DNL Brand Portal] huurder.
+Het machtigingskanaal tussen [!DNL Experience Manager Assets] en [!DNL Brand Portal] is gewijzigd. Eerder, [!DNL Brand Portal] werd gevormd in Klassieke UI via Verouderde Gateway OAuth, die de het symbolenuitwisseling van JWT gebruikt om een token van de Toegang te verkrijgen IMS voor vergunning. [!DNL Experience Manager Assets] is nu geconfigureerd met [!DNL Brand Portal] behulp van Adobe I/O, dat een IMS-token aanschaft voor toestemming van uw [!DNL Brand Portal] huurder.
 
-De stappen om [!DNL Experience Manager Assets] met [!DNL Brand Portal] te vormen zijn verschillend afhankelijk van uw [!DNL Experience Manager] versie, en of u voor het eerst vormt, of de bestaande configuraties bevordert. Zie [De Middelen van de Manager van de Ervaring met het Portaal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html) van het Merk voor details vormen.
+De stappen om [!DNL Experience Manager Assets] met [!DNL Brand Portal] te vormen zijn verschillend afhankelijk van uw [!DNL Experience Manager] versie, en of u voor het eerst vormt, of de bestaande configuraties bevordert. Zie Experience Manager Assets [configureren met Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html) voor meer informatie.
 
 #### Toegankelijkheidsverbeteringen (6.5.4.0) {#accessibility-enhancements}
 
@@ -153,7 +153,7 @@ Bijvoorbeeld, `On Time (MM-DD-YYYY HH:mm)`. Hier is MM maand in het formaat van 
 
 #### Visueel zoeken naar [!DNL Adobe Experience Manager Assets] (6.5.2.0) {#visual-search}
 
-[!DNL Assets] gebruikers kunnen visueel vergelijkbare afbeeldingen zoeken. De manager van de ervaring toont slimme geëtiketteerde beelden van de bewaarplaats DAM die aan een gebruiker-geselecteerd beeld gelijkaardig zijn. Zie [Visueel onderzoek](../assets/search-assets.md).
+[!DNL Assets] gebruikers kunnen visueel vergelijkbare afbeeldingen zoeken. Experience Manager geeft de slimme getagde afbeeldingen uit de DAM-opslagplaats weer die lijken op een door de gebruiker geselecteerde afbeelding. Zie [Visueel onderzoek](../assets/search-assets.md).
 
 ###  Dynamic Media {#dynamic-media-previous-service-packs}
 
@@ -179,7 +179,7 @@ U kunt nu het aantal kolommen voor een deelvenster definiëren in adaptieve form
 
 ![Lay-out met meerdere kolommen](assets/multi-column-layout.gif)
 
-#### Inbox-aanpassingen van Experience Manager (6.5.4.0) {#aem-inbox}
+#### Experience Manager Inbox-aanpassingen (6.5.4.0) {#aem-inbox}
 
 Met de nieuwe optie Beheer beheren kunnen beheerders:
 
@@ -201,7 +201,7 @@ Experience Manager Forms bevat de volgende toegankelijkheidsverbeteringen:
 
 * Elke pagina van een adaptief formulier bevat nu één titel en één hoofdlabel met een liggend streepje.
 
-#### Deel en verzoek om toegang tot Inbox-items van een gebruiker van Experience Manager Forms (6.5.3.0) {#share-request-access}
+#### Delen en toegang aanvragen tot InBox-items van een gebruiker van Experience Manager Forms (6.5.3.0) {#share-request-access}
 
 U kunt uw Inbox punten met een andere gebruiker delen. Zodra een andere gebruiker toegang krijgt tot uw Inbox-items, kan de gebruiker een claim indienen en de juiste actie ondernemen voor gedeelde items. Op dezelfde manier kunt u andere gebruikers om toegang tot Inbox-items verzoeken. Zie [Delen en verzoek om toegang tot Inbox-items van een gebruiker](../forms/using/configure-shared-queues-osgi.md).
 
@@ -218,13 +218,13 @@ U kunt de batch-API gebruiken om meerdere interactieve communicatie van een sjab
 
 Tussen 5 maart 2005, 2020 en 4 juni 2020 heeft Adobe het volgende uitgebracht, in aanvulling op de servicepacks en cumulatieve fixepakketten:
 
-* [Het portaal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) van de Distributie van de software is beschikbaar om de dienstpakken van de Manager van de Ervaring, cumulatieve fixepakketten, hete moeilijke situaties, en eigenschapspakken te downloaden.
+* [De portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) voor softwaredistributie is beschikbaar voor het downloaden van Experience Manager-servicepakketten, cumulatieve fixepacks, hotfixes en functiepakketten.
 
 * [!DNL Adobe Experience Manager Cloud Manager] [2020.3.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-2020-3-0.html), [2020.4.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-2020-4-0.html)en [2020.5.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/release-notes/release-notes-current.html).
 
-* [Experience Manager desktop app 2.0.2.0](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html).
+* [Experience Manager-bureaubladtoepassing 2.0.2.0](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html).
 
-* [Schermen van Experience Manager: Feature Pack 202004](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/release-notes/release-notes-fp-202004.html).
+* [Experience Manager-schermen: Feature Pack 202004](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/release-notes/release-notes-fp-202004.html).
 
 >[!MORELIKETHIS]
 >

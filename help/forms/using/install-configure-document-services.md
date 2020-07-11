@@ -7,9 +7,9 @@ uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 1dfc8fa91d3e5ae8ca49cf1f3cb739b59feb18cf
 workflow-type: tm+mt
-source-wordcount: '4183'
+source-wordcount: '4122'
 ht-degree: 0%
 
 ---
@@ -42,6 +42,7 @@ AEM Forms biedt een reeks OSGi-services voor het uitvoeren van verschillende bew
    * De AEM-server certificeert een formulier voordat het naar een gebruiker wordt verzonden om te worden geopend met Acrobat of Adobe Reader.
    * De AEM-server valideert een handtekening die aan een formulier is toegevoegd met Acrobat of Adobe Reader.
    * De AEM-server ondertekent een formulier namens een openbare notaris.
+
    De handtekeningsdienst heeft toegang tot certificaten en geloofsbrieven die in de vertrouwde opslag worden opgeslagen. Zie [Handtekeningenservice](/help/forms/using/aem-document-services-programmatically.md)voor meer informatie.
 
 AEM Forms is een krachtig platform op bedrijfsniveau en de documentservices zijn slechts een van de mogelijkheden van AEM Forms. Voor de volledige lijst van mogelijkheden, zie [Inleiding aan AEM Forms](/help/forms/using/introduction-aem-forms.md).
@@ -82,6 +83,7 @@ Voordat u de documentservices voor AEM Forms gaat installeren en configureren, m
 >
 >* In Microsoft Windows ondersteunt de PDF Generator WebKit, Acrobat WebCapture en FhantomJS conversieroutes voor het converteren van HTML-bestanden naar PDF-documenten.
 >* Op UNIX-besturingssystemen ondersteunt de PDF Generator WebKit- en PhantomJS-conversieroutes voor het converteren van HTML-bestanden naar PDF-documenten.
+
 >
 
 
@@ -202,6 +204,7 @@ Als u de service PDF Generator gebruikt om eigen bestandsindelingen zoals Micros
 >* Adobe Acrobat, Microsoft Word, Excel en PowerPoint zijn alleen beschikbaar voor Microsoft Windows. Als u het op UNIX-Gebaseerde werkende systeem gebruikt, installeer OpenOffice om rijke tekstdossiers en gesteunde dossiers van Microsoft Office in Pdf- documenten om te zetten.
 >* Sluit alle dialoogvensters die na de installatie van Adobe Acrobat en software van derden worden weergegeven voor alle gebruikers die zijn geconfigureerd voor gebruik van de service PDF Generator.
 >* Start minstens één keer alle geïnstalleerde software. Alle dialoogvensters sluiten voor alle gebruikers die zijn geconfigureerd voor gebruik van de service PDF Generator.
+
 >
 
 
@@ -255,6 +258,7 @@ Omgevingsvariabelen instellen voor 32-bits en 64-bits Java Development Kit, toep
 >* Stel geen omgevingsvariabelen in voor Microsoft Office-toepassingen zoals Word, PowerPoint, Excel en Project, of voor AutoCAD. Als deze toepassingen op de server zijn geïnstalleerd, worden deze toepassingen automatisch gestart door de service PDF genereren.
 >* Voor op UNIX-Gebaseerde platforms, installeer OpenOffice als /root. Als OpenOffice niet als hoofdmap is geïnstalleerd, converteert de service PDF Generator OpenOffice-documenten niet naar PDF-documenten. Als u OpenOffice als niet-wortelgebruiker moet installeren en in werking stellen, dan verstrek sudo rechten aan de niet-wortelgebruiker.
 >* Als u OpenOffice op een UNIX-Gebaseerd platform gebruikt, stel het volgende bevel in werking om de wegvariabele te plaatsen:
+
 >
 >  
 `export OpenOffice_PATH=/opt/openoffice.org4`
@@ -378,6 +382,7 @@ Kopieer het Unicode-lettertype naar een van de volgende mappen, afhankelijk van 
 >* Zorg ervoor dat alle lettertypen (Unicode en niet-Unicode) beschikbaar zijn in de map /usr/share/fonts of /usr/share/X11/fonts.
 >* Wanneer u de PDF Generator-service uitvoert als een gebruiker die geen hoofdmap heeft, geeft u de gebruiker die geen hoofdmap heeft, lees- en schrijftoegang tot alle fontmappen.
 >* Wanneer u nieuwe lettertypen in de map Fonts installeert, start u het exemplaar AEM Forms opnieuw.
+
 >
 
 
@@ -386,15 +391,16 @@ Kopieer het Unicode-lettertype naar een van de volgende mappen, afhankelijk van 
 
 AEM Forms-invoegtoepassing is een toepassing die op AEM wordt geïmplementeerd. Het pakket bevat AEM Forms Document Services en andere mogelijkheden voor AEM Forms. Voer de volgende stappen uit om het pakket te installeren:
 
-1. Meld u als beheerder aan bij de [AEM-server](http://localhost:4502) en open [pakketshare](http://localhost:4502/crx/packageshare). U hebt een Adobe ID nodig om u aan te melden bij de pakketshare.
+1. Open [Softwaredistributie](https://experience.adobe.com/downloads). U hebt een Adobe ID nodig om u aan te melden bij de Softwaredistributie.
+1. Tik **[!UICONTROL Adobe Experience Manager]** beschikbaar in het koptekstmenu.
+1. In het **[!UICONTROL Filters]** gedeelte:
+   1. Selecteer een optie **[!UICONTROL Forms]** in de **[!UICONTROL Solution]** vervolgkeuzelijst.
+   2. Selecteer de versie en typ voor het pakket. U kunt de **[!UICONTROL Search Downloads]** optie ook gebruiken om de resultaten te filteren.
+1. Tik op de pakketnaam die van toepassing is op het besturingssysteem, selecteer **[!UICONTROL Accept EULA Terms]** en tik op **[!UICONTROL Download]**.
+1. Open [Package Manager](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) en klik **[!UICONTROL Upload Package]** om het pakket te uploaden.
+1. Selecteer het pakket en klik **[!UICONTROL Install]**.
 
-1. Zoek in [AEM-pakketdeling](http://localhost:4502/crx/packageshare/login.html)naar het pakket **[!UICONTROL AEM 6.4 Forms add-on packages]** en klik op het pakket dat van toepassing is op het besturingssysteem. Klik vervolgens op **[!UICONTROL Download]**. Lees en accepteer de licentieovereenkomst en klik op **[!UICONTROL OK]**. Het downloaden begint. Nadat u het bestand hebt gedownload, staat het woord **[!UICONTROL Downloaded]** naast het pakket.
-
-   U kunt het versienummer ook gebruiken om een add-on pakket te zoeken. Raadpleeg het artikel over releases [van](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) AEM Forms voor het versienummer van het meest recente pakket.
-
-1. Klik op **[!UICONTROL Downloaded]** Na het downloaden. U wordt omgeleid naar pakketbeheer. Zoek in pakketbeheer het gedownloade pakket en klik op **[!UICONTROL Install]**.
-
-   Als u het pakket handmatig downloadt via de directe koppeling in het artikel met [AEM Forms, meldt](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) u zich aan bij pakketbeheer, klikt u op **[!UICONTROL Upload Package]**, selecteert u het gedownloade pakket en klikt u op Uploaden. Nadat het pakket is geüpload, klikt u op de pakketnaam en klikt u **[!UICONTROL Install]**.
+   U kunt het pakket ook downloaden via de directe koppeling in het [AEM Forms-releaseartikel](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) .
 
 1. Nadat het pakket is geïnstalleerd, wordt u gevraagd om de AEM-instantie opnieuw te starten. **Stop niet onmiddellijk de server.** Alvorens de server van AEM Forms tegen te houden, wacht tot de ServiceEvent REGISTERED en ServiceEvent niet GEREGISTREERDE berichten ophouden verschijnen in het `[AEM-Installation-Directory]/crx-quickstart/logs/error`.log dossier en het logboek stabiel is.
 

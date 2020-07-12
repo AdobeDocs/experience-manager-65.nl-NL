@@ -3,9 +3,9 @@ title: Adobe Experience Manager 6.5 de Vorige Nota's van de Versie van het Servi
 description: De nota's van de versie specifiek voor Adobe Experience Manager 6.5 Service Pack 3 en vroeger.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: d7276f332bece4f736d92e5723d79ffc2d27e900
+source-git-commit: f75e5ad12aed95e950dbf7a00e0f444605f800dd
 workflow-type: tm+mt
-source-wordcount: '8083'
+source-wordcount: '8092'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Enkele belangrijke functies en verbeteringen die zijn geïntroduceerd in Adobe E
 
 * Ondersteuning voor [RTF](../forms/using/designing-form-template.md) -bestanden in HTML5-formulieren.
 
-* [Verbeterde](new-features-latest-service-pack.md#accessibility-enhancements) toegankelijkheid in de middelen van Experience Manager.
+* [Verbeteringen](new-features-latest-service-pack.md#accessibility-enhancements) voor toegankelijkheid in Experience Manager Assets.
 
 * De ingebouwde opslagplaats (Apache Jackrabbit Oak) wordt bijgewerkt naar versie 1.10.8.
 
@@ -43,7 +43,7 @@ Voor een volledige lijst van eigenschappen en zeer belangrijke hoogtepunten die 
 
 * Wanneer een URL van een pagina van de Plaatsen van de Adobe Experience Manager een dubbelpunt (`:`) of percentagesymbool (`%`) bevat, houdt browser op antwoordend en de gebruikspikes van cpu (NPR-32369, NPR-31918).
 
-* Wanneer een pagina van de Plaatsen van het Manager van de Ervaring voor het uitgeven en een component wordt geopend, blijft de deegactie voor sommige placeholders (NPR-32317) niet beschikbaar.
+* Wanneer een pagina van de Plaatsen van Experience Manager voor het uitgeven en een component wordt geopend, blijft de deegactie voor sommige placeholders (NPR-32317) niet beschikbaar.
 
 * Wanneer de wizard Publicatie beheren wordt geopend, wordt een ervaringsfragment dat is gekoppeld aan een kerncomponent niet weergegeven in de lijsten met gepubliceerde referenties (NPR-32233).
 
@@ -87,7 +87,7 @@ Voor een volledige lijst van eigenschappen en zeer belangrijke hoogtepunten die 
 
 * De knop waarmee de workflow voor het verzamelen van elementen wordt geactiveerd, is uitgeschakeld (NPR-32471).
 
-* Een omslag zonder naam wordt gecreeerd in SPS (het Publiceren Scene7 Systeem) terwijl het bewegen van activa van één omslag aan een andere in de Manager van de Ervaring met de configuratie van Dynamic Media Scene7 (NPR-32440).
+* Een omslag zonder naam wordt gecreeerd in SPS (het Publiceren Scene7 Systeem) terwijl het bewegen van activa van één omslag aan een andere in Experience Manager met de configuratie van Dynamic Media Scene7 (NPR-32440).
 
 * De handeling voor het verplaatsen van alle elementen (met de opdracht Alles selecteren en vervolgens verplaatsen) naar een map met gepubliceerde elementen mislukt bij fout (NPR-32366).
 
@@ -105,7 +105,7 @@ Voor een volledige lijst van eigenschappen en zeer belangrijke hoogtepunten die 
 
 * Meerdere zoekquery&#39;s worden geactiveerd wanneer meerdere tags zijn geselecteerd met het zoekfilter (NPR-32143).
 
-* De interface van Experience Manager Assets geeft afgekapte bestandsnamen weer wanneer elementen met meer dan 50 tekens in de bestandsnaam zijn geüpload (NPR-32054).
+* In de gebruikersinterface van Experience Manager Assets worden afgebroken bestandsnamen weergegeven wanneer elementen met meer dan 50 tekens in de bestandsnaam zijn geüpload (NPR-32054).
 
 * Alle selectievakjes in het deelvenster Filter worden gewist wanneer het eerste en het tweede selectievakje worden gewist, terwijl niveau twee selectievakjes in de boomstructuur van het selectievakje in Adobe Stock zijn ingeschakeld (NPR-31919).
 
@@ -119,23 +119,23 @@ Voor een volledige lijst van eigenschappen en zeer belangrijke hoogtepunten die 
 
 * De resultatenpagina Touch UI-zoekopdracht (uitgevoerd via Omnissearch) wordt automatisch naar boven geschoven en verliest de schuifpositie van de gebruiker (NPR-31307).
 
-* De elementendetailpagina van PDF-elementen bevat geen actieknoppen, behalve de knoppen voor Verzameling en Vertoning toevoegen in Experience Manager die wordt uitgevoerd in de uitvoermodus Dynamic Media Scene7 (CQ-4286705).
+* De elementendetailpagina van PDF-elementen geeft geen actieknoppen weer, behalve de knoppen Aan verzameling en Vertoning toevoegen in Experience Manager die worden uitgevoerd in de uitvoermodus van Dynamic Media Scene7 (CQ-4286705).
 
 * De activa vergen te lang om door het partijuploadproces van Scene7 (CQ-4286445) te verwerken.
 
 * Met de knop Opslaan wordt de externe set niet geïmporteerd als de gebruiker geen wijzigingen heeft aangebracht in de Editor instellen in de Dynamic Media-client (CQ-4285690).
 
-* Miniatuur van 3D-middelen is niet informatief wanneer een ondersteund 3D-model wordt opgenomen in Experience Manager (CQ-4283701).
+* Miniatuur van 3D-middelen is niet informatief wanneer een ondersteund 3D-model in Experience Manager wordt opgenomen (CQ-4283701).
 
 * De onverwerkte status van de voorinstelling van de viewer voor SmartCrop wordt twee keer weergegeven op de bannertekst naast de naam van de voorinstelling (CQ-4283517).
 
 * Onjuiste containerhoogte van een geüpload 3D-model, voorvertoond in 3D-viewer, wordt weergegeven op de detailpagina van het element (CQ-4283309).
 
-* De Carousel Editor wordt niet geopend in IE 11 in de hybride modus van Experience Manager-Dynamic Media (CQ-4255590).
+* De Carousel Editor wordt niet geopend in IE 11 in de hybride modus Experience Manager-Dynamic Media (CQ-4255590).
 
 * De toetsenbordfocus blijft vastzitten in de vervolgkeuzelijst E-mail in het dialoogvenster Downloaden, in Chrome- en Safari-browsers (NPR-32067).
 
-* Het selectievakje Alle inhoud synchroniseren is standaard niet ingeschakeld wanneer wordt geprobeerd om DM-cloud config toe te voegen via Experience Manager (CQ-4288533).
+* Selectievakje voor alle inhoud synchroniseren is niet standaard ingeschakeld wanneer wordt geprobeerd om DM-cloud config toe te voegen op Experience Manager (CQ-4288533).
 
 ### Foundation-UI {#foundation-ui-6540}
 
@@ -213,7 +213,7 @@ Voor een volledige lijst van eigenschappen en zeer belangrijke hoogtepunten die 
 
 >[!NOTE]
 >
->Experience Manager Service Pack bevat geen oplossingen voor Experience Manager Forms. Ze worden geleverd met behulp van een apart Forms add-on pakket. Daarnaast wordt een cumulatief installatieprogramma uitgebracht dat oplossingen voor Adobe Experience Manager Forms op JEE bevat. Zie Invoegtoepassing [van Experience Manager Forms](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) installeren en Formulieren Experience Manager [installeren op JEE](/help/release-notes/sp-release-notes.md#install-aem-forms-jee-installer)voor meer informatie.
+>Experience Manager Service Pack bevat geen oplossingen voor Experience Manager Forms. Ze worden geleverd met behulp van een apart Forms add-on pakket. Daarnaast wordt een cumulatief installatieprogramma uitgebracht dat oplossingen voor Adobe Experience Manager Forms op JEE bevat. Zie [Invoegtoepassing](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) Experience Manager Forms installeren en Experience Manager Forms [installeren in JEE](/help/release-notes/sp-release-notes.md#install-aem-forms-jee-installer)voor meer informatie.
 
 * Correspondentenbeheer: Letters geven extra tekens weer na verzending naar workflows voor postprocessen (NPR-32626).
 
@@ -231,7 +231,7 @@ Voor een volledige lijst van eigenschappen en zeer belangrijke hoogtepunten die 
 
 * Adaptieve formulieren: Het hulpmiddel van de de browser van Chrome rapporteert een beste praktijkmislukking (NPR-32310).
 
-* Adaptieve formulieren: Problemen met de omzetting tijdens het configureren van een adaptief formulier dat is ingesloten op de pagina Experience Manager Sites (NPR-32168).
+* Adaptieve formulieren: Problemen met de omzetting tijdens het configureren van een adaptief formulier dat is ingesloten op een pagina met Experience Manager-sites (NPR-32168).
 
 * Workbench: Er wordt een foutbericht weergegeven wanneer de bewerking PDF-eigenschappen ophalen voor de PDF Utilities-service (NPR-32150) wordt gebruikt.
 
@@ -241,7 +241,7 @@ Voor een volledige lijst van eigenschappen en zeer belangrijke hoogtepunten die 
 
 * Designer: Als een tabel samengevoegde cellen bevat, mislukt de toegankelijkheidstest voor het PDF-uitvoerbestand dat is geconverteerd van een XDP-formulier met de uitvoerservice (CQ-4285372).
 
-* Foundation JEE: Als een Experience Manager Forms-server is losgekoppeld van een cluster, kunnen cacheproblemen voorkomen dat deze opnieuw verbinding maakt met de server (NPR-32412).
+* Foundation JEE: Als de verbinding van een Experience Manager Forms-server met een cluster wordt verbroken, wordt door cacheproblemen voorkomen dat de server opnieuw verbinding maakt met de server (NPR-32412).
 
 ## Adobe Experience Manager 6.5.3.0 {#experience-manager-6530}
 
@@ -472,7 +472,7 @@ Remove one mention of this fix.
 
 >[!NOTE]
 >
->[!DNL Experience Manager] Service Pack bevat geen oplossingen voor [!DNL Experience Manager Forms]. Ze worden geleverd met behulp van een apart Forms add-on pakket. Daarnaast wordt een cumulatief installatieprogramma uitgebracht dat oplossingen voor [!DNL Experience Manager Forms] JEE bevat. Zie Invoegtoepassing [van Experience Manager Forms](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) installeren en Formulieren Experience Manager [installeren op JEE](/help/release-notes/sp-release-notes.md#install-aem-forms-jee-installer)voor meer informatie.
+>[!DNL Experience Manager] Service Pack bevat geen oplossingen voor [!DNL Experience Manager Forms]. Ze worden geleverd met behulp van een apart Forms add-on pakket. Daarnaast wordt een cumulatief installatieprogramma uitgebracht dat oplossingen voor [!DNL Experience Manager Forms] JEE bevat. Zie [Invoegtoepassing](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) Experience Manager Forms installeren en Experience Manager Forms [installeren in JEE](/help/release-notes/sp-release-notes.md#install-aem-forms-jee-installer)voor meer informatie.
 
 #### Formulierinvoegpakket {#forms-add-on-package-6530}
 
@@ -505,6 +505,8 @@ Remove one mention of this fix.
 **Formulieren - Document Services**
 
 * De de Webdienst van de ZEEP die MTOM in een .NET project gebruikt toont uitzonderingen voor AssemblerServiceClient aanhaalt en methodes HtmlToPDF2 (NPR-4281771).
+
+* Axis jar versies 1.4 en 1.4.1 bevatten een kwetsbaarheid op het gebied van beveiliging (NPR-31015).
 
 **Foundation JEE**
 
@@ -656,7 +658,7 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 
 >[!NOTE]
 >
->[!DNL Experience Manager] Service Pack bevat geen oplossingen voor [!DNL Experience Manager Forms]. Ze worden geleverd met een apart [!DNL Forms] invoegpakket. Daarnaast wordt een cumulatief installatieprogramma uitgebracht dat oplossingen voor [!DNL Experience Manager Forms] JEE bevat. Zie Invoegtoepassing [van Experience Manager Forms](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) installeren en JEE-installatieprogramma [van Experience Manager](#forms-jee-installer)installeren voor meer informatie.
+>[!DNL Experience Manager] Service Pack bevat geen oplossingen voor [!DNL Experience Manager Forms]. Ze worden geleverd met een apart [!DNL Forms] invoegpakket. Daarnaast wordt een cumulatief installatieprogramma uitgebracht dat oplossingen voor [!DNL Experience Manager Forms] JEE bevat. Zie Invoegtoepassing [Experience Manager Forms](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) installeren en Experience Manager Forms JEE-installatieprogramma [](#forms-jee-installer)installeren voor meer informatie.
 
 De belangrijkste markeringen voor [!DNL Experience Manager] 6.5.2.0 vormen zijn:
 
@@ -945,7 +947,7 @@ De belangrijkste hooglichten voor [!DNL Experience Manager Forms] 6.5.1.0 zijn:
 
 #### Activa - opgenomen
 
-* Ondersteuning voor beheer van meerdere sites ingeschakeld voor [!DNL Experience Manager Assets]. Zie Elementen [hergebruiken met MSM voor de Elementen](https://helpx.adobe.com/experience-manager/6-5/help/assets/reuse-assets-using-msm.html)van Experience Manager voor meer informatie. NPR-29199: Hotfix voor CQ-4259922
+* Ondersteuning voor beheer van meerdere sites ingeschakeld voor [!DNL Experience Manager Assets]. Zie [Elementen hergebruiken met MSM voor Experience Manager Assets](https://helpx.adobe.com/experience-manager/6-5/help/assets/reuse-assets-using-msm.html)voor meer informatie. NPR-29199: Hotfix voor CQ-4259922
 
 #### Sites - inbegrepen
 

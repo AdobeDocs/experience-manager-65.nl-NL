@@ -10,9 +10,9 @@ topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: bb3fcb53-b8c3-4b1d-9125-4715f34ceb0b
 translation-type: tm+mt
-source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+source-git-commit: d6ae8bffa2d9d59f5656b9344d8826128f12885c
 workflow-type: tm+mt
-source-wordcount: '1706'
+source-wordcount: '1653'
 ht-degree: 3%
 
 ---
@@ -39,22 +39,13 @@ AEM 6.5 wordt geleverd met het Livefyre-functiepakket 1.2.6 vooraf geïnstalleer
 
    ![livefyre-aem-uninstall-64](assets/livefyre-aem-uninstall-64.png)
 
-1. Keer terug naar de homepage AEM, klik Hulpmiddelen, dan navigeer aan **Plaatsing > het Aandeel** van het Pakket.
+1. Download LiveCycle-pakket van [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
 
-   Een lijst met functiepakketten en hotfixes beschikbaar voor downloadweergaven.
-
-1. Zoek in de trefwoordzoekopdracht naar &quot;Livefyre&quot; en selecteer vervolgens het functiepakket Livefyre dat overeenkomt met uw AEM-versie.
-
-   ![livefyre-aem3-6-4](assets/livefyre-aem3-6-4.png)
-
-1. Voor de pagina van de de informatie van het eigenschappak, klik **Download**, lees dan de Overeenkomst van de Vergunning van het Pakket en klik **Accepteren**.
-1. Ga terug naar Pakketbeheer, zoek het nieuwe gedownloade pakket en klik op **Installeren**.
+1. Installeer het gedownloade pakket via Package Manager. Zie [hoe te met Pakketten](/help/sites-administering/package-manager.md) voor meer informatie te werken bij het gebruiken van de Distributie van de Software en de pakketten in AEM
 
    ![livefyre-aem4-6-4](assets/livefyre-aem4-6-4.png)
 
    Uw Livefyre-AEM-pakket is nu geïnstalleerd. Voordat u de integratiefuncties kunt gaan gebruiken, moet u AEM configureren om Livefyre te gebruiken.
-
-   Voor meer informatie over pakketten, zie [hoe te met Pakketten](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/package-manager.html)werken.
 
    Voor meer informatie en versienota&#39;s op eigenschapspakken, zie de Packs van de [Eigenschap](https://helpx.adobe.com/experience-manager/6-3/release-notes/feature-packs-release-notes.html).
 
@@ -176,6 +167,7 @@ U kunt als volgt UGC in AEM Assets importeren:
 
    * **Handmatig om rechten** vragen om een bericht te verkrijgen dat via Instagram kan worden gekopieerd en geplakt en handmatig naar de eigenaars van de inhoud kan worden verzonden.
    * **Rechten** voor inhoud handmatig bepalen om de rechten voor afzonderlijke elementen te overschrijven.
+
    >[!NOTE]
    >
    >Vanwege updates die van invloed zijn op de aggregatie van inhoud van niet-zakelijke gebruikersaccounts, kunnen we geen opmerkingen meer namens u plaatsen of automatisch controleren op antwoorden van de auteur. [Klik hier voor meer](https://developers.facebook.com/blog/post/2018/04/04/facebook-api-platform-product-changes/)informatie.

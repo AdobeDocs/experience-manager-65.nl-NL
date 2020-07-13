@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 9045ce2e-a06d-4da5-9b83-56dd823007bb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: fb7d2a3cebda86fa4d91d2ea89ae459fa4b86fa0
+source-git-commit: 6720d5a0fdf1facc0b10011ec306dffbb31f4ac5
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '408'
 ht-degree: 0%
 
 ---
@@ -27,10 +27,10 @@ De `Leaderboard` component biedt de mogelijkheid om inzicht te krijgen in de man
 
 Voordat de leaderboard-component op een pagina wordt geplaatst, moet u [Communities Scoring and Badges](/help/communities/implementing-scoring.md)configureren.
 
-In deze sectie van de documentatie wordt beschreven
+In dit gedeelte van de documentatie wordt het volgende beschreven:
 
-* De `Leaderboard` component toevoegen aan een [communitysite](/help/communities/overview.md#community-sites)
-* Configuratie-instellingen voor de `Leaderboard` component
+* De `Leaderboard` component toevoegen aan een [communitysite](/help/communities/overview.md#community-sites).
+* De montages van de configuratie voor de `Leaderboard` component.
 
 ### Een Leaderboard toevoegen aan een pagina {#adding-a-leaderboard-to-a-page}
 
@@ -42,19 +42,21 @@ en sleep het naar de juiste plaats op een pagina.
 
 Ga voor de benodigde informatie naar [Community Components Basics](/help/communities/basics.md).
 
-Wanneer de component voor het eerst op een pagina van een communitysite wordt geplaatst, ziet deze er als volgt uit:
+Wanneer de component voor het eerst op een pagina van een communitysite wordt geplaatst, ziet deze er zo uit:
 
-![chlimage_1-19](assets/chlimage_1-19.png)
+![chlimage_1-8](assets/chlimage_1-8.png)
 
 ### Leaderboard configureren {#configuring-leaderboard}
 
 Selecteer de geplaatste `Leaderboard` component die u wilt openen en selecteer het `Configure` pictogram waarmee het dialoogvenster Bewerken wordt geopend.
 
-![chlimage_1-20](assets/chlimage_1-20.png) ![chlimage_1-21](assets/chlimage_1-21.png)
+![chlimage_1-9](assets/chlimage_1-9.png)
+
+![chlimage_1-10](assets/chlimage_1-10.png)
 
 #### Het tabblad Instellingen {#settings-tab}
 
-Geef onder het tabblad **Instellingen** op welke informatie over het lid wordt weergegeven:
+Geef onder het **[!UICONTROL Settings]** tabblad op welke informatie met betrekking tot het lid wordt weergegeven:
 
 * **Weergavenaam**
 
@@ -118,7 +120,7 @@ Configuratie van de component Leaderboard:
    * Badgingregel = `/libs/settings/community/badging/rules//reference-badging`
    * Weergavelimiet = `10`
 
-![chlimage_1-22](assets/chlimage_1-22.png)
+![chlimage_1-11](assets/chlimage_1-11.png)
 
 ### Voorbeeld: Expert Leaderboard {#example-experts-leaderboard}
 
@@ -141,7 +143,7 @@ Configuratie van de component Leaderboard:
    * Badgingregel = `/libs/settings/community/badging/rules/adv-forums-badging`
    * Weergavelimiet = `10`
 
-![chlimage_1-23](assets/chlimage_1-23.png)
+![chlimage_1-12](assets/chlimage_1-12.png)
 
 ### Additional Information {#additional-information}
 

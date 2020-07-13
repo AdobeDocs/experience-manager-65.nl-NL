@@ -10,14 +10,17 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 2d308756-79d1-4d69-b51c-d4b6e692a137
 translation-type: tm+mt
-source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+workflow-type: tm+mt
+source-wordcount: '221'
+ht-degree: 2%
 
 ---
 
 
-# Componenten, functies en essentiële functies {#component-function-and-feature-essentials}
+# Componenten, functies en essentiële functies  {#component-function-and-feature-essentials}
 
-Voor AEM Communities-functies moeten bezoekers lid worden van de site en zich aanmelden bij de [gemeenschapssite](overview.md#communitiessites) voordat ze inhoud kunnen posten. Aldus, worden de malplaatjes [van de](sites.md)communautaire plaats, waarvan een communautaire plaats wordt [gecreeerd](sites-console.md), ontworpen om een login eigenschap evenals gebruikersprofielen, overseinen, onderzoek, moderatie, en vertaling te omvatten.
+Voor AEM Communities-functies moeten bezoekers lid worden van de site en zich aanmelden bij de [communitysite](overview.md#communitiessites) voordat ze inhoud kunnen plaatsen. Aldus, worden de malplaatjes [van de](sites.md)communautaire plaats, waarvan een communautaire plaats wordt [gecreeerd](sites-console.md), ontworpen om een login eigenschap evenals gebruikersprofielen, overseinen, onderzoek, moderatie, en vertaling te omvatten.
 
 Een communautaire plaats zal leden steunen die communautaire groepen creëren wanneer de functie [van](functions.md#groups-function) communautaire groepen in het geselecteerde malplaatje van de communautaire plaats inbegrepen is.
 
@@ -48,7 +51,7 @@ Hieronder vindt u koppelingen naar essentiële informatie voor onderdelen, funct
 * [Groepen](essentials-groups.md)
 * [Ideatie](ideation.md)
 * [Leaderboard](leaderboard.md)
-* [Vragen en antwoorden](qna-essentials.md)`(QnA)`
+* [Vragen en antwoorden](qna-essentials.md) `(QnA)`
 
 ## Features {#features}
 
@@ -61,7 +64,7 @@ Hieronder vindt u koppelingen naar essentiële informatie voor onderdelen, funct
 * [Scores en badges](configure-scoring.md)
 * [Zoeken](search-implementation.md)
 * [Sociale grafiek](essentials-socialgraph.md)
-* [Storage Resource Provider](srp-and-ugc.md)`(SRP)`
+* [Storage Resource Provider](srp-and-ugc.md) `(SRP)`
 
 * [Tags](tag.md)
 

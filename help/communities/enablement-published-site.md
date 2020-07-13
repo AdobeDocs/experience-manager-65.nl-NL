@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 26715b94-e2ea-4da7-a0e2-3e5a367ac1cd
 translation-type: tm+mt
-source-git-commit: e795a647b8728b224792f342200a700169a5e87b
+source-git-commit: b242163267b43507e1cb9c6d4c36bb65385afc62
 workflow-type: tm+mt
 source-wordcount: '1210'
 ht-degree: 0%
@@ -59,7 +59,7 @@ Een bekende beperking maakt de inhoud van de site van de community toegankelijk 
 
 Voer de volgende stappen uit om de inhoud van uw site te beschermen tegen toegang door anonieme gebruikers via jcr-inhoud en json:
 
-1. Ga bij AEM Author-instantie naar https://&lt;host>:&lt;port>/editor.html/content/site/&lt;sitename>.html.
+1. Ga naar https://&lt;host>:&lt;port>/editor.html/content/site/&lt;sitename>.html in de auteur van AEM.
 
    >[!NOTE]
    >
@@ -182,7 +182,7 @@ Navigeer bij de auteur naar de **Gemeenschappen, de console[van](resources.md)**
 * Alle actiemiddelen en leerpaden
 * Eén specifieke activeringsbron of leerpad
 
-Navigeer naar de **Gemeenschappen, de console[van](reports.md)**Rapporten, en produceert rapporten volgens
+Navigeer aan de **Gemeenschappen, de console[van](reports.md)**Rapporten, en produceert rapporten volgens:
 
 * Toewijzingen aan actiemiddelen en leerpaden
 * Berichten naar een gemeenschapssite over een specifieke periode
@@ -203,12 +203,11 @@ Navigeer naar de **Gemeenschappen, de console[van](reports.md)**Rapporten, en pr
 
 Met een kleine activiteit en interactie met de Middelen bij publiceren, is het bekijken van de rapporten over auteur het waard om te kijken.
 
-* Op auteur
-* Aanmelden met beheerdersrechten
-* Navigeer van het hoofdmenu naar **[!UICONTROL Communities > Resources]**
-* Selecteer de `Enablement Tutorial` site
-* Selecteer het `Report` pictogram voor een overzicht van alle Middelen
-* Selecteer een Middel en dan het `Report` pictogram voor een rapport over dat Middel
+* Meld u bij de auteur aan met beheerdersrechten.
+* Navigeer van het hoofdmenu aan **[!UICONTROL Communities]** > **[!UICONTROL Resources]**.
+* Selecteer de `Enablement Tutorial` site.
+* Selecteer het `Report` pictogram voor een overzicht van alle Middelen.
+* Selecteer een Middel en dan het `Report` pictogram voor een rapport over dat Middel.
 
 Het is waarschijnlijk te vroeg om gegevens van Adobe Analytics weer te geven. Het kan 1 tot 12 uur duren voordat deze gegevens worden weergegeven. Standaard SCORM-rapportage is echter al beschikbaar.
 
@@ -236,10 +235,9 @@ De console van Rapporten staat voor generatie van rapporten op toe
 
 Voor rapporten over toewijzingen:
 
-* Op auteur
-* Aanmelden met beheerdersrechten
-* Ga naar **[!UICONTROL Communities]** > **[!UICONTROL Reports]** > **[!UICONTROL Assignments Report]**
-* Selecteer een **[!UICONTROL Site]** optie in het keuzemenu (selecteer `Enablement Tutorial`)
+* Meld u bij de auteur aan met beheerdersrechten.
+* Ga naar **[!UICONTROL Communities]** > **[!UICONTROL Reports]** > **[!UICONTROL Assignments Report]**.
+* Selecteer een **[!UICONTROL Site]** optie in het keuzemenu (selecteer `Enablement Tutorial`).
 
 * Selecteren **[!UICONTROL Group]** (selecteren `Community Ski Class`)
 
@@ -251,15 +249,15 @@ Voor rapporten over toewijzingen:
 
 Voor rapporten over weergaven:
 
-* Meld u aan bij de auteur met beheerdersrechten
-* Ga naar **[!UICONTROL Communities]** > **[!UICONTROL Reports]** > **[!UICONTROL Views Report]**
-* Selecteer een **site **in het keuzemenu (selecteer`Enablement Tutorial`)
+* Meld u bij de auteur aan met beheerdersrechten.
+* Ga naar **[!UICONTROL Communities]** > **[!UICONTROL Reports]** > **[!UICONTROL Views Report]**.
+* Selecteer een **Site **in het keuzemenu (selecteer`Enablement Tutorial`).
 
-* Selecteren **[!UICONTROL Content Type]** (selecteren `all`)
+* Selecteer **[!UICONTROL Content Type]** (selecteer `all`).
 
-* Selecteer een **[!UICONTROL date range]** (selecteer `Last 7 days`)
+* Selecteer een **[!UICONTROL date range]** (selecteer `Last 7 days`).
 
-* Selecteer **[!UICONTROL Generate]**
+* Selecteer **[!UICONTROL Generate]**.
 
 ![chlimage_1-446](assets/chlimage_1-446.png)
 

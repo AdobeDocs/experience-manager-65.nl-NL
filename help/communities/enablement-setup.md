@@ -10,12 +10,15 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f2ac3d66-cc79-498f-83fb-dd96feb88de2
 translation-type: tm+mt
-source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
+source-git-commit: 6720d5a0fdf1facc0b10011ec306dffbb31f4ac5
+workflow-type: tm+mt
+source-wordcount: '857'
+ht-degree: 0%
 
 ---
 
 
-# Eerste instelling voor inschakelen {#initial-setup-for-enablement}
+# Eerste instelling voor inschakelen  {#initial-setup-for-enablement}
 
 ## Auteur- en publicatie-instanties starten {#start-author-and-publish-instances}
 
@@ -26,24 +29,25 @@ Volg de standaard AEM [Aan de slag](../../help/sites-deploying/deploy.md#getting
 * Authoromgeving op [localhost:4502](http://localhost:4502/)
 * Publicatie-omgeving op [localhost:4503](http://localhost:4503/)
 
-voor AEM-gemeenschappen,
+Voor AEM Communities,
 
-* De auteursomgeving is bedoeld voor
+* De auteursomgeving is voor:
 
-   * Ontwikkeling van sites, sjablonen, componenten, actiemiddelen en leerpaden
-   * Toewijzing van leden en groepen leden aan activering van bronnen en leerpaden
-   * Rapporten genereren over toewijzingen, weergaven en publicaties
-   * Administratieve en configuratietaken
+   * De ontwikkeling van plaatsen, malplaatjes, componenten, enablement middelen en het leren wegen.
+   * Toewijzing van leden en groepen leden aan activering van bronnen en leerpaden.
+   * Rapporten genereren over toewijzingen, weergaven en posten.
+   * Administratieve en configuratietaken.
 
-* De publicatieomgeving is bedoeld voor
+* De publicatieomgeving is bedoeld voor:
 
-   * Leren/training op basis van onderwerpen die worden beheerd door de Enablement Manager
-   * Opmerkingen en beoordelingsmogelijkheden en leerpaden
-   * Contact krijgen met de resourcepcontact
+   * Leren/training op basis van onderwerpen die worden beheerd door de Enablement Manager.
+   * Opmerkingen en beoordelingsmogelijkheden en leerpaden.
+   * Het krijgen van contact met de middelcontacten.
 
 >[!NOTE]
 >
 >Als u niet bekend bent met AEM, bekijkt u de documentatie over [basisverwerking](../../help/sites-authoring/basic-handling.md) en een [handleiding voor het ontwerpen van pagina](../../help/sites-authoring/qg-page-authoring.md)&#39;s.
+
 
 ## Laatste versie van Gemeenschappen installeren {#install-latest-communities-release}
 
@@ -51,15 +55,15 @@ Deze zelfstudie maakt een [community-site](overview.md#enablement-community)voor
 
 * [Laatste releases](deploy-communities.md#latest-releases)
 
-Ga naar Aan de slag met [AEM-gemeenschappen](overview.md#engagement-community)voor een zelfstudie waarmee een community-site [voor betrokkenheid wordt gemaakt](getting-started.md).
+Voor een zelfstudie waarmee een [community-site](overview.md#engagement-community)voor betrokkenheid wordt gemaakt, gaat u naar [Aan de slag met AEM Communities](getting-started.md).
 
 ## Functies van Enablement configureren {#configure-enablement-features}
 
 Om deze zelfstudie te volgen, is het nodig om enablement [correct te installeren en](enablement.md)te vormen, die derdeproducten, zoals MySQL en Mopeg vereist.
 
-## Analyses configureren {#configure-analytics}
+## Analytics configureren {#configure-analytics}
 
-Wanneer [Adobe Analytics is geconfigureerd voor de communitysite](analytics.md), is meer informatie beschikbaar in de [rapporten](reports.md) die worden gegenereerd over bronnen voor activering en leerpaden die zijn toegewezen aan communityleden (studenten).
+Wanneer [Adobe Analytics is geconfigureerd voor de communitysite](analytics.md), is meer informatie beschikbaar in de [rapporten](reports.md) die worden gegenereerd over bronnen voor activering en leerpaden die zijn toegewezen aan community-leden (studenten).
 
 ## E-mail voor meldingen configureren {#configure-email-for-notifications}
 
@@ -92,12 +96,12 @@ Met de [tagconsole](../../help/sites-administering/tags.md#tagging-console) kunt
 
 ![chlimage_1-417](assets/chlimage_1-417.png)
 
-Volg daarna de instructies op
+Volg vervolgens de instructies op:
 
 1. [Tagmachtigingen instellen](../../help/sites-administering/tags.md#setting-tag-permissions)
 1. [De labels publiceren](../../help/sites-administering/tags.md#publishing-tags)
 
-Voorbeeldpakket met tags gemaakt voor de zelfstudies om aan de slag te gaan met AEM Communities
+Voorbeeldpakket met codes die zijn gemaakt voor de zelfstudies Aan de slag met AEM Communities
 
 [Bestand ophalen](assets/communities_tutorialtags-10.zip)
 
@@ -118,6 +122,7 @@ Een vierde gebruiker wordt gecreeerd in het auteursmilieu en toegewezen de rolle
 >Als ze later zijn gemaakt, kunnen ze tijdens het maken van leden worden toegevoegd als leden van de groep ** leden van de zelfstudie voor Enablement.
 >
 >In plaats daarvan, later, zullen zij aan de lidgroep [worden](enablement-create-site.md#assignuserstocommunityenablemembersgroup)toegewezen.
+
 
 ### Riley Taylor - Ingeschreven {#riley-taylor-enrollee}
 
@@ -164,7 +169,7 @@ Een vierde gebruiker wordt gecreeerd in het auteursmilieu en toegewezen de rolle
    * riley
    * sidney
 
-* Selecteer **[!UICONTROL Opslaan]**
+* Selecteer **[!UICONTROL Save]**
 
 ### Eigenschappen van de communautaire klasse Ski {#community-ski-class-properties}
 
@@ -173,6 +178,7 @@ Een vierde gebruiker wordt gecreeerd in het auteursmilieu en toegewezen de rolle
 >[!NOTE]
 >
 >Tijdens het creëren van de communautaire plaats, kunnen de bestaande leden en de groepen aan de groep van leden van de communautaire plaats worden toegevoegd.
+
 
 ## Rol van communautaire beheerder {#community-administrator-role}
 
@@ -190,10 +196,10 @@ Maak een gebruiker op de *auteur* die de rol van communautaire beheerder krijgt 
 
    * Bijvoorbeeld gebruikersnaam &#39;admin&#39; / wachtwoord &#39;admin&#39;
 
-* Navigeer vanuit de hoofdconsole naar **[!UICONTROL Gereedschappen, Bewerkingen > Beveiliging > Gebruikers]**
-* Selecteer in het menu **[!UICONTROL Bewerken]** de optie Gebruiker **[!UICONTROL toevoegen]**
+* Navigeer vanuit de hoofdconsole naar **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**.
+* From the **[!UICONTROL Edit]** menu, select **[!UICONTROL Add User]**.
 
-* In the `Create New User` dialog enter
+* In the `Create New User` dialog enter:
 
    * **ID&amp;ast;**: sirius
    * **E-mailadres**: sirius.nilson@mailinator.com
@@ -211,7 +217,7 @@ Omlaag schuiven naar `Add User to Groups`:
    * Selecteer `Community Administrators`
    * Selecteer `Community Enablement Managers`
 
-* Selecteer **[!UICONTROL Opslaan]**
+* Selecteer **[!UICONTROL Save]**
 
 ![chlimage_1-419](assets/chlimage_1-419.png)
 

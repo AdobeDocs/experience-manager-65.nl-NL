@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 18f54a1c-52aa-414d-b494-1f19b5c10345
 translation-type: tm+mt
-source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+workflow-type: tm+mt
+source-wordcount: '349'
+ht-degree: 1%
 
 ---
 
@@ -58,7 +61,7 @@ De commentaarcomponent vestigt een commentaarsysteem zodat elke afzonderlijke po
 
 Paginering en het gebruik van URL&#39;s voor het in cache plaatsen en koppelen vereisen dat de URL uniek is per opmerkingsysteem. Daarom is slechts één instantie van een opmerkingssysteem per pagina toegestaan.
 
-Andere functies zijn al het opmerkingensysteem. Dit zijn:
+Andere functies zijn al het opmerkingensysteem. Deze zijn:
 
 * [Blog](blog-developer-basics.md)
 * [Kalender](calendar-basics-for-developers.md)
@@ -94,8 +97,8 @@ Vanaf AEM 6.1 Communities omvat het gebruik van een [gemeenschappelijke opslag](
 
 Zie:
 
-* [Overzicht](srp.md) van Storage Resource Provider - Inleiding en overzicht van opslaggebruik
-* [SRP en de Hoofdzaak](srp-and-ugc.md) UGC - de gebruiksmethodes van SRP en voorbeelden
-* [Toegang tot UGC met SRP](accessing-ugc-with-srp.md) - Coderingsrichtlijnen
-* [SocialUtils Refactoring](socialutils.md) - het Afgekeurde nutsmethodes van de Toewijzing aan huidige SRP nutsmethodes
+* [Overzicht](srp.md) van Storage Resource Provider - Inleiding en overzicht van het opslaggebruik.
+* [SRP en de Hoofdzaak](srp-and-ugc.md) UGC - SRP nutsmethodes en voorbeelden.
+* [Toegang tot UGC met SRP](accessing-ugc-with-srp.md) - Coderingsrichtlijnen.
+* [SocialUtils Refactoring](socialutils.md) - Afgekeurde nutsmethodes van de Afbeelding aan huidige SRP hulpprogrammamethodes.
 

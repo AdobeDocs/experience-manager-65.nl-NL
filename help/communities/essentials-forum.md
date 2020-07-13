@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 059c5bbe-07eb-4873-8157-2196df887b27
 translation-type: tm+mt
-source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+workflow-type: tm+mt
+source-wordcount: '257'
+ht-degree: 1%
 
 ---
 
@@ -75,8 +78,8 @@ Vanaf AEM 6.1 Communities omvat het gebruik van een [gemeenschappelijke opslag](
 
 Zie:
 
-* [Overzicht](srp.md) van Storage Resource Provider - Inleiding en overzicht van opslaggebruik
-* [SRP en de Hoofdzaak](srp-and-ugc.md) UGC - de gebruiksmethodes van SRP en voorbeelden
-* [Toegang tot UGC met SRP](accessing-ugc-with-srp.md) - Coderingsrichtlijnen
-* [SocialUtils Refactoring](socialutils.md) - het Afgekeurde nutsmethodes van de Toewijzing aan huidige SRP nutsmethodes
+* [Overzicht](srp.md) van Storage Resource Provider - Inleiding en overzicht van het opslaggebruik.
+* [SRP en de Hoofdzaak](srp-and-ugc.md) UGC - SRP nutsmethodes en voorbeelden.
+* [Toegang tot UGC met SRP](accessing-ugc-with-srp.md) - Coderingsrichtlijnen.
+* [SocialUtils Refactoring](socialutils.md) - Afgekeurde nutsmethodes van de Afbeelding aan huidige SRP hulpprogrammamethodes.
 

@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 8714b456-527a-457b-82c4-21bd445dfd9c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+workflow-type: tm+mt
+source-wordcount: '319'
+ht-degree: 0%
 
 ---
 
@@ -48,7 +51,7 @@ In een *[sociale grafiek](/help/communities/essentials-socialgraph.md)*worden de
   </tr>
   <tr>
    <td> <a href="/help/communities/clientlibs.md"><strong>clientllibs</strong></a></td>
-   <td>cq.social.hbs.activity streams</td>
+   <td>cq.social.hbs.activitystreams</td>
   </tr>
   <tr>
    <td> <strong>templates</strong></td>
@@ -60,7 +63,7 @@ In een *[sociale grafiek](/help/communities/essentials-socialgraph.md)*worden de
   </tr>
   <tr>
    <td><strong> eigenschappen</strong></td>
-   <td>zie Functie <a href="/help/communities/activities.md">Activiteitenstromen</a></td>
+   <td>Zie <a href="/help/communities/activities.md">Activiteitenstromen</a></td>
   </tr>
  </tbody>
 </table>

@@ -10,12 +10,15 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 25b7ac08-6cdc-4dd5-a756-d6169b86f9ab
 translation-type: tm+mt
-source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+workflow-type: tm+mt
+source-wordcount: '679'
+ht-degree: 1%
 
 ---
 
 
-# OSGi Events for Communities Components {#osgi-events-for-communities-components}
+# OSGi Events for Communities Components  {#osgi-events-for-communities-components}
 
 ## Overzicht {#overview}
 
@@ -31,90 +34,90 @@ Voor de onderdelen van Communities die in de release worden geleverd, wordt in d
 
 | **Verb** | **Beschrijving** |
 |---|---|
-| POST | lid maakt een agendagebeurtenis |
-| TOEVOEGEN | opmerkingen van leden over een agendagebeurtenis |
-| BIJWERKEN | agendagebeurtenis of commentaar van lid wordt bewerkt |
-| VERWIJDEREN | agendagebeurtenis of commentaar van lid wordt verwijderd |
+| POST | Lid maakt een kalendergebeurtenis |
+| TOEVOEGEN | Opmerkingen van de lidstaten over een kalendergebeurtenis |
+| BIJWERKEN | De agendagebeurtenis of de opmerking van het lid wordt bewerkt |
+| DELETE | De agendagebeurtenis of de opmerking van het lid wordt verwijderd |
 
 [Opmerkingen Component](essentials-comments.md)SocialEvent `topic`= com/adobe/cq/social/comment
 
 | **Verb** | **Beschrijving** |
 |---|---|
-| POST | lid maakt een opmerking |
-| TOEVOEGEN | reactie van lid op opmerking |
-| BIJWERKEN | commentaar van lid is bewerkt |
-| VERWIJDEREN | commentaar van lid is verwijderd |
+| POST | Lid maakt een opmerking |
+| TOEVOEGEN | Antwoorden van de lidstaten op opmerkingen |
+| BIJWERKEN | Opmerking van lid wordt bewerkt |
+| DELETE | Opmerking van lid wordt verwijderd |
 
 [File Library Component](essentials-file-library.md)SocialEvent `topic`= com/adobe/cq/social/fileLibrary
 
 | **Verb** | **Beschrijving** |
 |---|---|
-| POST | lid maakt een map |
-| ATTACH | lid uploadt een bestand |
-| BIJWERKEN | lid werkt een map of bestand bij |
-| VERWIJDEREN | lid verwijdert een map of bestand |
+| POST | Lid maakt een map |
+| ATTACH | Lid uploadt een bestand |
+| BIJWERKEN | Lid werkt een omslag of een dossier bij |
+| DELETE | Lid verwijdert een map of bestand |
 
 [Forum Component](essentials-forum.md)SocialEvent `topic`= com/adobe/cq/social/forum
 
 | **Verb** | **Beschrijving** |
 |---|---|
-| POST | lid maakt forum-onderwerp |
-| TOEVOEGEN | reacties van leden op forum onderwerp |
-| BIJWERKEN | onderwerp of antwoord van lid wordt bewerkt |
-| VERWIJDEREN | forumonderwerp of antwoord van lid wordt verwijderd |
+| POST | Lid maakt het forum |
+| TOEVOEGEN | Antwoorden van de lidstaten op het forum |
+| BIJWERKEN | Het onderwerp of antwoord van het forum van het lid wordt bewerkt |
+| DELETE | Het onderwerp of antwoord van het lid in het forum wordt verwijderd |
 
 [Journal Component](blog-developer-basics.md)SocialEvent `topic`= com/adobe/cq/social/journaal
 
 | **Verb** | **Beschrijving** |
 |---|---|
-| POST | lid maakt een blogartikel |
-| TOEVOEGEN | commentaar van leden op blogartikel |
-| BIJWERKEN | blogartikel of commentaar van lid wordt bewerkt |
-| VERWIJDEREN | blogartikel of commentaar van lid is verwijderd |
+| POST | Lid maakt een blogartikel |
+| TOEVOEGEN | Opmerkingen van leden over blogartikelen |
+| BIJWERKEN | Blogartikel of commentaar van lid wordt bewerkt |
+| DELETE | Blogartikel of commentaar van lid wordt verwijderd |
 
 [QnA Component](qna-essentials.md)SocialEvent `topic` = com/adobe/cq/social/qna
 
 | **Verb** | **Beschrijving** |
 |---|---|
-| POST | lid maakt een QnA-vraag |
-| TOEVOEGEN | lid maakt een QnA-antwoord |
+| POST | Lid maakt een QnA-vraag |
+| TOEVOEGEN | Lid maakt een antwoord op vraag |
 | BIJWERKEN | Vraag of antwoord van lid wordt bewerkt |
-| SELECT | het antwoord van lid is geselecteerd |
-| SELECTEREN OPHEFFEN | het antwoord van het lid is gedeselecteerd |
-| VERWIJDEREN | Vraag of antwoord van lid wordt verwijderd |
+| SELECT | Antwoord van lid is geselecteerd |
+| SELECTEREN OPHEFFEN | Het antwoord van het lid is niet geselecteerd |
+| DELETE | Vraag of antwoord van lid wordt verwijderd |
 
 [Reviews Component](reviews-basics.md)SocialEvent `topic`= com/adobe/cq/social/review
 
 | **Verb** | **Beschrijving** |
 |---|---|
-| POST | lid maakt beoordeling |
-| BIJWERKEN | beoordeling door lid wordt bewerkt |
-| VERWIJDEREN | beoordeling door lid is verwijderd |
+| POST | Lid leidt tot herziening |
+| BIJWERKEN | Revisie van lid wordt bewerkt |
+| DELETE | Herziening door lid wordt verwijderd |
 
 [Beoordelingscomponent](rating-basics.md)SocialEvent `topic`= com/adobe/cq/social/tally
 
 | **Verb** | **Beschrijving** |
 |---|---|
-| WAARDERING TOEVOEGEN | de inhoud van het lid is opgegeven |
-| RATING VERWIJDEREN | de inhoud van het lid is neergezet |
+| WAARDERING TOEVOEGEN | De inhoud van het lid is vervangen |
+| RATING VERWIJDEREN | De inhoud van het lid is verlaagd |
 
 [Stemcomponent](essentials-voting.md)SocialEvent `topic`= com/adobe/cq/social/tally
 
 | **Verb** | **Beschrijving** |
 |---|---|
-| STEMMING TOEVOEGEN | de inhoud van het lid is in stemming gebracht |
-| STEMMING VERWIJDEREN | over de inhoud van het lid is gestemd |
+| STEMMING TOEVOEGEN | Er is gestemd over de inhoud van het lid |
+| STEMMING VERWIJDEREN | Over de inhoud van het lid is gestemd |
 
 **Moderation-enabled Components** SocialEvent `topic`= com/adobe/cq/social/moderation
 
 | **Verb** | **Beschrijving** |
 |---|---|
-| DENKEN | inhoud van lid wordt geweigerd |
-| VLAG ALS ONJUIST | inhoud van lid is gemarkeerd |
-| ONGESCHIKTE LAG ALS ONJUIST | inhoud van lid is ongemarkeerd |
-| ACCEPTEREN | de inhoud van het lid wordt goedgekeurd door moderator |
-| SLUITEN | lid sluit commentaar op bewerkingen en reacties |
-| OPENEN | opmerking opnieuw openen lid |
+| DENKEN | De inhoud van het lid wordt geweigerd |
+| VLAG ALS ONJUIST | Inhoud van lid is gemarkeerd |
+| ONGESCHIKTE LAG ALS ONJUIST | Inhoud van lid is niet gemarkeerd |
+| ACCEPTEREN | De inhoud van het lid wordt goedgekeurd door moderator |
+| SLUITEN | Lid sluit commentaar op bewerkingen en reacties |
+| OPENEN | Opmerking voor opnieuw openen van lid |
 
 ## Gebeurtenissen voor aangepaste componenten {#events-for-custom-components}
 
@@ -125,6 +128,7 @@ De aangepaste gebeurtenis zou de methode overschrijven, `getVerb()` zodat voor e
 >[!NOTE]
 >
 >Zorg ervoor dat een aangepaste extensie is geregistreerd met een lagere rangschikking dan een bestaande implementatie in het product.
+
 
 ### Pseudo-code voor gebeurtenis Custom Component {#pseudo-code-for-custom-component-event}
 
@@ -231,7 +235,7 @@ public class RecipeEvent extends SocialEvent<RecipeEvent.RecipeActions> {
 
 Het is mogelijk naar gebeurtenissen te luisteren om te wijzigen wat er in de activiteitsstroom wordt weergegeven.
 
-Het volgende pseudo-codevoorbeeld verwijdert DELETE-gebeurtenissen voor de component Comments uit de activiteitsstroom.
+Het volgende pseudo-codevoorbeeld verwijdert DELETE gebeurtenissen voor de component Comments uit de activiteitsstroom.
 
 ### Pseudo-code voor EventListener {#pseudo-code-for-eventlistener}
 

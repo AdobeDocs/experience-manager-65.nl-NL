@@ -10,12 +10,15 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 4f85cd3c-5158-4f23-abe2-7e375fd0c8d4
 translation-type: tm+mt
-source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+workflow-type: tm+mt
+source-wordcount: '425'
+ht-degree: 0%
 
 ---
 
 
-# Essentiële elementen van gebruikersgroepen {#community-group-essentials}
+# Essentiële elementen van gebruikersgroepen  {#community-group-essentials}
 
 De eigenschap van communautaire groepen is de capaciteit voor een subcommunity dynamisch om binnen een communautaire plaats door erkende gebruikers van de publicatie en auteursmilieu&#39;s worden gecreeerd.
 
@@ -95,10 +98,11 @@ Het opnemen van veelvoudige communautaire groepsmalplaatjes resulteert in een ke
 
 Met ingang van het Communautair [KP1](deploy-communities.md#latestfeaturepack)is het mogelijk dat een groepsfunctie wordt opgenomen in een groepssjabloon, zodat geneste groepen (subgemeenschappen) kunnen worden opgenomen.
 
-Wanneer een communautaire plaats of groepsmalplaatje de functie van Groepen omvat, is het mogelijk om
+Wanneer een communautaire plaats of groepsmalplaatje de functie van Groepen omvat, is het mogelijk:
 
-* Subcommunity maken in de ontwerpomgeving
-* Creeer een groep in het publicatiemilieu, wanneer gevormd om het toe te staan
+* Maak een subcommunity in de auteursomgeving.
+
+* Maak een groep in de publicatieomgeving wanneer deze is geconfigureerd om deze toe te staan.
 
 Wanneer u een groep maakt in de ontwerpomgeving, moet u eerst de communitysite publiceren en vervolgens de groep publiceren. Het publiceren van de communautaire plaats zal de pagina&#39;s van de groep publiceren, zonder de subcommunity&#39;s lidgroepen tot stand te brengen waaraan ACLs wordt geplaatst. Een beperkte (geheime) groep kan dus zichtbaar zijn totdat de groep expliciet wordt gepubliceerd.
 

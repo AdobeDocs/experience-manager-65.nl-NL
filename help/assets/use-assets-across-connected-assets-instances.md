@@ -3,10 +3,10 @@ title: Use Connected Assets to share DAM assets in [!DNL Adobe Experience Manage
 description: Gebruik de middelen die beschikbaar zijn op een [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] externe implementatie.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 7d001ce126e72663bf8ad0722cf59c1cb7239ae0
 workflow-type: tm+mt
-source-wordcount: '1996'
-ht-degree: 48%
+source-wordcount: '1994'
+ht-degree: 42%
 
 ---
 
@@ -38,7 +38,7 @@ Controleer de volgende punten voordat u deze functie gebruikt of configureert:
 
 ### Ondersteunde bestandsindelingen {#mimetypes}
 
-Met de Content Finder kunnen auteurs zoeken naar afbeeldingen en de volgende typen documenten, waarna ze de gezochte assets gebruiken in de Pagina-editor. U kunt documenten toevoegen aan de `Download`-component en afbeeldingen aan de `Image`-component. Authors can also add the remote assets in any custom [!DNL Experience Manager] component that extends the default `Download` or `Image` components. De ondersteunde indelingen zijn:
+Auteurs zoeken naar afbeeldingen en de volgende typen documenten in de Inhoudszoeker en gebruiken de doorzochte elementen in de Pagina-editor. Documenten worden toegevoegd aan de `Download` component en afbeeldingen aan de `Image` component. Authors also add the remote assets in any custom [!DNL Experience Manager] component that extends the default `Download` or `Image` components. De ondersteunde indelingen zijn:
 
 * **Afbeeldingsindelingen**: De indelingen die de [component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) Image ondersteunt. [!DNL Dynamic Media] afbeeldingen worden niet ondersteund.
 * **Documentindelingen**: Zie [de documentindelingen die worden ondersteund door Connected Assets](assets-formats.md#supported-document-formats).
@@ -58,9 +58,9 @@ Hieronder worden de diverse rollen beschreven voor de configuratie en toepassing
 
 ## Configure a connection between [!DNL Sites] and [!DNL Assets] deployments {#configure-a-connection-between-sites-and-assets-deployments}
 
-An [!DNL Experience Manager] administrator can create this integration. Once created, the permissions required to use it are established via user groups that are defined on the [!DNL Sites] deployment and on the DAM deployment.
+An [!DNL Experience Manager] administrator can create this integration. Zodra gecreeerd, worden de toestemmingen die worden vereist om het te gebruiken gevestigd via gebruikersgroepen. De gebruikersgroepen worden bepaald op de [!DNL Sites] plaatsing en op de plaatsing DAM.
 
-To configure Connected Assets and local [!DNL Sites] connectivity, follow these steps.
+To configure Connected Assets and local [!DNL Sites] connectivity, follow these steps:
 
 1. Access an existing [!DNL Sites] deployment or create a deployment using the following command:
 
@@ -75,7 +75,7 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
 
    1. [!DNL Assets] locatie is `https://[assets_servername_ams]:[port]`.
    1. Referenties van een DAM-distributeur (technische gebruiker).
-   1. In **[!UICONTROL Mount Point]** field, enter the local [!DNL Experience Manager] path where [!DNL Experience Manager] fetches the assets. Bijvoorbeeld de map `remoteassets`.
+   1. In the **[!UICONTROL Mount Point]** field, enter the local [!DNL Experience Manager] path where [!DNL Experience Manager] fetches the assets. Bijvoorbeeld de map `remoteassets`.
    1. Pas de waarden van **[!UICONTROL Original Binary transfer optimization Threshold]** aan, afhankelijk van uw netwerk. De weergave van een asset die groter is dan deze drempelwaarde, wordt asynchroon overgedragen.
    1. Select **[!UICONTROL Datastore Shared with Connected Assets]**, if you use a datastore to store your assets and the Datastore is the common storage between both deployments. In dat geval is de drempelwaarde niet van belang, aangezien de binaire gegevens van de werkelijke asset in de datastore staan en niet worden overgedragen.
 
@@ -107,7 +107,7 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
 
    1. Meld u aan met de beheerdersreferenties. Search for `Cross-Origin`. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 
-   1. Om een configuratie CORS voor [!DNL Sites] plaatsing tot stand te brengen, voegt de klik optie ![aem_assets_add_icon](assets/do-not-localize/aem_assets_add_icon.png) naast **[!UICONTROL Adobe Granite Cross-Origin Resource Sharing Policy]**.
+   1. Als u een CORS-configuratie voor [!DNL Sites] implementatie wilt maken, klikt u op het pictogram ![Opties voor optie toevoegen naast](assets/do-not-localize/assets_add_icon.png) **[!UICONTROL Adobe Granite Cross-Origin Resource Sharing Policy]**.
 
    1. In the field **[!UICONTROL Allowed Origins]**, input the URL of the local [!DNL Sites], that is, `https://[local_sites]:[port]`. Sla de configuratie op.
 
@@ -145,7 +145,7 @@ Gebruik bovenstaande instellingen om de functionaliteit van een authoring-ervari
 
    *Afbeelding: Melding van het asynchroon op de achtergrond ophalen van assets.*
 
-1. When publishing a page, [!DNL Experience Manager] displays a complete list of assets that are used in the page. Zorg ervoor dat de externe assets op het moment van publicatie worden opgehaald. Als u de status van elke opgehaalde asset wilt controleren, raadpleegt u de gebruikersinterface voor [asynchrone taken](/help/sites-administering/asynchronous-jobs.md).
+1. When publishing a page, [!DNL Experience Manager] displays a complete list of assets that are used on the page. Zorg ervoor dat de externe assets op het moment van publicatie worden opgehaald. Als u de status van elke opgehaalde asset wilt controleren, raadpleegt u de gebruikersinterface voor [asynchrone taken](/help/sites-administering/asynchronous-jobs.md).
 
    >[!NOTE]
    >
@@ -153,20 +153,20 @@ Gebruik bovenstaande instellingen om de functionaliteit van een authoring-ervari
 
 >[!CAUTION]
 >
->Zodra de opgehaalde externe assets op een webpagina worden toegepast, zijn ze doorzoekbaar en bruikbaar door iedereen met toegang tot de lokale map waarin de opgehaalde activa zijn opgeslagen (`connectedassets` in de bovenstaande procedure). De assets zijn ook doorzoekbaar en zichtbaar in de lokale opslagplaats, en wel via [!UICONTROL Content Finder].
+>Nadat de opgehaalde externe elementen in een webpagina zijn gebruikt, kunnen ze worden doorzocht en kunnen ze worden gebruikt door iedereen die toegangsrechten heeft tot de lokale map. De opgehaalde elementen worden opgeslagen in de lokale map (`connectedassets` in de bovenstaande doorloop). De assets zijn ook doorzoekbaar en zichtbaar in de lokale opslagplaats, en wel via [!UICONTROL Content Finder].
 
 De opgehaalde assets kunnen net als elke andere lokale asset worden gebruikt, alleen kunnen de bijbehorende metadata niet worden bewerkt.
 
 ## Beperkingen {#limitations}
 
-### Machtigingen en assets beheren {#permissions-and-managing-assets}
+### Machtigingen en vermogensbeheer {#permissions-and-managing-assets}
 
 * Lokale assets worden niet gesynchroniseerd met de oorspronkelijke assets op de externe implementatie. Eventuele bewerkingen, verwijderingen of intrekkingen van machtigingen voor de DAM-implementatie worden niet verderop in de DAM-implementatie doorgegeven.
 * Lokale assets zijn alleen-lezen kopieën. [!DNL Experience Manager] componenten bewerken niet-destructieve elementen in elementen. Andere soorten bewerkingen zijn niet toegestaan.
 * Lokaal opgehaalde assets zijn alleen beschikbaar voor authoring. Workflows voor het bijwerken van assets kunnen niet worden toegepast en metadata kunnen niet worden bewerkt.
 * Alleen afbeeldingen en de vermelde documentindelingen worden ondersteund. [!DNL Dynamic Media] Elementen, inhoudsfragmenten en ervaringsfragmenten worden niet ondersteund.
 * Metadataschema&#39;s worden niet opgehaald.
-* All [!DNL Sites] authors have read permissions on the fetched copies, even if authors do not have access to the remote DAM deployment.
+* Alle [!DNL Sites] auteurs hebben leesmachtigingen voor de opgehaalde kopieën, zelfs als auteurs geen toegang hebben tot de externe DAM-implementatie.
 * Geen API-ondersteuning om de integratie aan te passen.
 * De functionaliteit ondersteunt naadloos zoeken en gebruiken van externe assets. Als u veel externe assets in één keer beschikbaar wilt maken voor lokale implementatie, kunt u overwegen om de assets te migreren. Zie de [Assets-migratiegids](assets-migration-guide.md).
 * Het is niet mogelijk om een extern element als paginaminiatuur in de [!UICONTROL Page Properties] gebruikersinterface te gebruiken. U kunt een miniatuur van een webpagina in de [!UICONTROL Page Properties] gebruikersinterface instellen via de [!UICONTROL Thumbnail] knop [!UICONTROL Select Image].
@@ -180,13 +180,13 @@ De opgehaalde assets kunnen net als elke andere lokale asset worden gebruikt, al
 
 ### Gebruik {#usage}
 
-* De enige functionaliteit die wordt ondersteund is het zoeken naar externe assets en deze slepen en neerzetten op de lokale pagina voor de authoring van content.
+* Gebruikers kunnen tijdens het ontwerpen zoeken naar externe elementen en deze naar de lokale pagina slepen. Er wordt geen andere functionaliteit ondersteund.
 * Voor ophaalbewerkingen geldt een time-out na 5 seconden. Auteurs kunnen problemen ervaren bij het ophalen van assets, bijvoorbeeld als er netwerkproblemen optreden. Authors can reattempt by dragging the remote asset from [!UICONTROL Content Finder] to [!UICONTROL Page Editor].
-* Eenvoudige bewerkingen die niet-destructief zijn en bewerkingen die worden ondersteund via de `Image`-component van , kunnen worden uitgevoerd op opgehaalde elementen. Assets zijn alleen-lezen.
+* Simple edits that are non-destructive and the edit supported via the `Image` component can be done on fetched assets. Assets zijn alleen-lezen.
 
 ## Problemen oplossen {#troubleshoot}
 
-Voer de volgende stappen uit om problemen op te lossen voor algemene foutscenario&#39;s:
+Ga als volgt te werk om problemen op te lossen voor het algemene foutscenario:
 
-* If you cannot search for remote assets from the [!UICONTROL Content Finder] then ensure that the required roles and permissions are in place.
+* If you cannot search for remote assets from the [!UICONTROL Content Finder], then ensure that the required roles and permissions are in place.
 * Een middel dat van de verre dam wordt gehaald kan niet op een Web-pagina om één of meerdere redenen worden gepubliceerd. Het bestaat niet op verre server, gebrek aan aangewezen toestemmingen om het te halen, of de netwerkmislukking kan de redenen zijn. Zorg ervoor dat het element niet wordt verwijderd van de externe DAM. Zorg ervoor dat de juiste machtigingen zijn ingesteld en dat aan de voorwaarden is voldaan. Voeg het element opnieuw toe aan de pagina en publiceer het opnieuw. Controleer de [lijst met asynchrone taken](/help/sites-administering/asynchronous-jobs.md) op fouten bij het ophalen van assets.

@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 6bac681e-59e1-4786-9c50-6679c936cfd1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+workflow-type: tm+mt
+source-wordcount: '221'
+ht-degree: 0%
 
 ---
 
@@ -48,7 +51,7 @@ De toewijzingsfunctie is de mogelijkheid om bronnen voor activering en leerpaden
   </tr>
   <tr>
    <td><strong> eigenschappen</strong></td>
-   <td>Zie, <a href="/help/communities/assignments.md">toewijzingsfunctie</a></td>
+   <td>Zie <a href="/help/communities/assignments.md">Toewijzingsfunctie</a></td>
   </tr>
  </tbody>
 </table>
@@ -91,5 +94,5 @@ Een gemeenschapssitestructuur die de functie [](/help/communities/functions.md#a
 
 * [API voor rapportage](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/api/package-summary.html)
 
-* [API voor analyse van rapporten](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/analytics/api/package-summary.html)
+* [Analytics API rapporteren](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/analytics/api/package-summary.html)
 

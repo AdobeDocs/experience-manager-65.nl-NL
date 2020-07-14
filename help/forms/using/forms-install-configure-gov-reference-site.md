@@ -8,10 +8,10 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 38f40badf8a850de363fa3f28232d3037fbf209b
+source-git-commit: 60a5bb489c1f473f3f848909b8c2eb3192c49e88
 workflow-type: tm+mt
-source-wordcount: '5037'
-ht-degree: 0%
+source-wordcount: '4685'
+ht-degree: 1%
 
 ---
 
@@ -77,31 +77,6 @@ De elementen die in dit pakket zijn opgenomen, zijn:
 * Voorbeeld (in geheugen) Apache Derby Database
 * Apache Derby Data Source (voor gebruik met formuliergegevensmodel)
 
-## Configuratieopties {#configuration-options}
-
-Gebruikers kunnen verschillende workflowserviceopties configureren, waaronder:
-
-1. Invoer Microsoft Dynamics
-1. Adobe-handtekening
-1. Aangepast communicatiebeheer voor AEM
-1. Adobe Analytics
-
-Om hen te vormen om binnen het Werkschema worden toegelaten moeten de gebruikers de volgende taken uitvoeren.
-
-1. Ga naar https://&#39;[server]:[port]&#39;/system/console/configMgr.
-
-1. Zoek de *WeGov-configuraties*.
-
-1. Open de de dienstdefinitie en laat de geselecteerde diensten toe om binnen het werkschema worden aangehaald.
-
->[!NOTE]
->
->Enkel omdat een gebruiker de dienst binnen de pagina van de Manager van de Configuratie toelaat, worden de gebruikers nog vereist om een de dienstconfiguratie op te zetten om met de externe gevraagde diensten te communiceren.
-
-![we gov - formulierpakket](assets/aftia-configuration-options.jpg)
-
-1. Klik op de knop Opslaan als u klaar bent om de instellingen op te slaan.
-
 ## Installatie van demopakket {#demo-package-installation}
 
 Deze sectie bevat informatie over het installeren van het demopakket.
@@ -163,6 +138,7 @@ Deze sectie bevat details en instructies over de configuratie na implementatie v
 
 1. Ga naar *https://&lt;aemserver>:&lt;port>/libs/granite/security/content/groupadmin.html*
 1. Meld u aan als beheerder om de onderstaande taken uit te voeren.
+1. Schuif omlaag naar het einde van de pagina om alle gebruikersgroepen te laden.
 1. Zoek naar &quot;**workflow**&quot;.
 1. Selecteer de groep &quot;**workflowgebruikers**&quot; en klik op &quot;Eigenschappen&quot;.
 1. Navigeer naar het tabblad &quot;Leden&quot;.
@@ -172,9 +148,9 @@ Deze sectie bevat details en instructies over de configuratie na implementatie v
    ![Groepsinstellingen bewerken voor workflowgebruikers](assets/edit_group_settings.jpg)
 
 1. Klik op &quot;Opslaan en sluiten&quot; in de menubalk.
-1. Herhaal stap 2-7 door naar &quot;**Analytics**&quot; te zoeken, de groep &quot;**Analytics Administrator**&quot; te selecteren en de groep &quot;**We.Gov Form Users**&quot; toe te voegen als lid.
-1. Herhaal stap 2-7 door naar &quot;**formuliergebruikers**&quot; te zoeken, de groep &quot;**gebruikers** in de formuliervoeding&quot; te selecteren en de groep &quot;**Gebruikers** in de formulierindeling We.Gov&quot; als lid toe te voegen.
-1. Herhaal stap 2-7 door te zoeken naar &quot;**formuliergebruikers**&quot;, de groep &quot;**formulieren-gebruikers**&quot; te selecteren en voeg nu de groep &quot;**Gebruikers** vanWe.Gov&quot; toe als lid.
+1. Herhaal stap 2-7 door naar &quot;**Analytics**&quot; te zoeken, de groep &quot;**Analytics Administrator**&quot; te selecteren en de groep &quot;**We.Gov Forms Users**&quot; toe te voegen als lid.
+1. Herhaal stap 2-7 door te zoeken naar &quot;**formuliergebruikers**&quot;, de groep &quot;**formulieren-grootgebruikers**&quot; te selecteren en de groep &quot;**We.Gov Forms Users**&quot; toe te voegen als lid.
+1. Herhaal stap 2-7 door naar &quot;**formulieren-gebruikers**&quot; te zoeken, de groep &quot;**formulieren-gebruikers**&quot; te selecteren en voeg nu de groep &quot;**We.Gov-gebruikers**&quot; toe als lid.
 
 ### Configuratie van e-mailserver {#email-server-configuration}
 
@@ -362,7 +338,7 @@ Nadat de cloudconfiguratie is voltooid, wilt u mogelijk het gegevensmodel van he
 
 1. Klik op **Opslaan en Sluiten**.
 
-1. Test de diensten om ervoor te zorgen zij met succes met de gevormde Gegevensbron verbinden
+1. [Test de diensten](work-with-form-data-model.md#test-data-model-objects-and-services) om ervoor te zorgen zij met succes met de gevormde Gegevensbron verbinden
 
    * Om de verbinding te testen selecteer **HOMEMORTGAGEACCOUNT** en geef het de dienst krijgen. Test de dienst en de systeembeheerders kunnen gegevens zien die worden teruggewonnen.
 
@@ -449,7 +425,7 @@ Beheerders kunnen gebruikers de rechten voor AEM-analyse geven door de volgende 
 AEM Forms Analytics-gegevens zijn offline of zonder een Adobe Analytics-wolkenconfiguratie beschikbaar als het `we-gov-forms.ui.analytics-<version>.zip` pakket is geïnstalleerd, maar voor AEM Sites-gegevens is een actieve wolkenconfiguratie vereist.
 
 1. Ga naar *https://&lt;aemserver>:&lt;port>/sites.html/content*
-1. Selecteer de site &quot;AEM Forms wij.Gov&quot; om de sitepagina&#39;s weer te geven.
+1. Selecteer de site &quot;AEM Forms we.Gov&quot; om de sitepagina&#39;s weer te geven.
 1. Selecteer een van de sitepagina (bijvoorbeeld Home) en kies &quot;Analytics &amp; Recommendations&quot;.
 
    ![Analyse en aanbevelingen](assets/analytics_recommendations.jpg)
@@ -488,25 +464,6 @@ AEM Forms Analytics-gegevens zijn offline of zonder een Adobe Analytics-wolkenco
 
    ![Analytics-rapportgegevens weergeven](assets/analytics_report_data.jpg)
 
-#### Adobe Analytics-rapportage weergeven {#view-adobe-analytics-reporting}
-
-U kunt desgewenst rechtstreeks naar Adobe Analytics navigeren om de analysegegevens weer te geven.
-
-1. Ga naar [https://my.omniture.com/login/](https://my.omniture.com/login/)
-1. Aanmelden met uw referenties:
-
-   1. **Bedrijf:** AEM Forms Demo
-   1. **Gebruiker:** &lt;beschikbaar op verzoek>
-   1. **Wachtwoord:** &lt;beschikbaar op verzoek>
-
-1. Selecteer de &quot;Wij.Gov Referentieplaats&quot;van de Reeksen van het Rapport.
-
-   ![Rapportageopties](assets/report_suites.jpg)
-
-1. Selecteer een van de beschikbare rapporten om de analysegegevens van dat rapport weer te geven.
-
-   ![Analytics-gegevens van een rapport](assets/analytics_data.jpg)
-
 ### Configuratie van Adobe Automated Forms {#automated-forms-enablement}
 
 Gebruikers van het gereedschap Conversie moeten het volgende hebben om AEM Forms met Adobe Forms te installeren en te configureren.
@@ -535,7 +492,7 @@ Gebruikers moeten de service Identity Management System (IMS) configureren om zi
 
 1. Zorg ervoor dat u het certificaat downloadt.
 
-1. Ga niet verder met de rest van de configuratie - revisiesectie (TBD)
+1. Ga niet verder met de rest van de configuratie - revisiesectie [Integratie maken in Adobe I/O](#create-integration-adobeio)
 
 >[!NOTE]
 Het in deze sectie gemaakte certificaat wordt gebruikt om de integratieservice in Adobe I/O te maken. Zodra gebruikers in de integratieservice hebben gecreeerd kunnen de gebruikers die informatie van Adobe I/O gebruiken om de configuratie te beëindigen.
@@ -590,7 +547,7 @@ Nu u een integratie hebt gecreeerd laten ons de installatie van de configuratie 
 
 #### Cloud Configuration (Wij.Gov AFC-productie) configureren {#configure-cloud-configuration}
 
-Nadat de IMS-configuratie is voltooid, kunnen we doorgaan met het maken van de cloudconfiguratie in AEM.
+Nadat de IMS-configuratie is voltooid, kunnen we de cloudconfiguratie in AEM controleren. Als de configuratie niet bestaat, gebruikt u de volgende stappen om de wolkenconfiguratie in AEM tot stand te brengen:
 
 1. Open uw browser en navigeer naar de URL van het systeem https://&lt;domain_name>:&lt;system_port>
 
@@ -672,13 +629,7 @@ Zodra de configuratie is ingesteld, kunnen gebruikers deze testen door een PDF-d
 
    ![Geavanceerde conversie-instellingen](assets/aftia-conversion-settings-2.jpg)
 
-1. Selecteer de beginomzetting zodra u alle opties hebt gevormd die u zou willen gebruiken
-
-   >[!NOTE]
-   *Geef een sectie Adaptief formulierthema* op waarin gebruikers het thema Toegankelijk ultramarien thema kunnen opgeven.
-
-   >[!NOTE]
-   Als u het gegenereerde formulier wilt binden met een FDM, of iets anders, moet u het selectievakje *Aangepaste formulieren genereren zonder gegevensbindingen* inschakelen.
+1. Selecteer de beginomzetting zodra u alle opties hebt gevormd die u zou willen gebruiken.
 
 1. Wanneer het conversieproces begint, moeten gebruikers het volgende scherm zien:
 
@@ -688,57 +639,11 @@ Zodra de configuratie is ingesteld, kunnen gebruikers deze testen door een PDF-d
 
    ![Omgezet adaptief formulier](assets/aftia-converted-adaptive-form-2.jpg)
 
-#### De formulierconversie testen (onze creditcardtoepassing financieren) {#testing-forms-conversion-wefinance}
-
-Zodra de configuratie is ingesteld, kunnen gebruikers deze testen door een PDF-document te uploaden.
-
-1. Ga naar het AEM-systeem https://&lt;domain_name>:&lt;system_port>
-
-1. Klik op Formulieren > Formulieren en documenten > AEM Forms financieren > PDF forms.
-
-1. Selecteer de creditcardtoepassing Web.Finance.
-
-1. Klik in de rechterbovenhoek op de knop **Geautomatiseerde omzetting** starten.
-
-1. Gebruikers moeten de optie kunnen zien zoals hieronder wordt weergegeven.
-
-   ![PDF forms](assets/aftia-pdf-forms.jpg)
-
-1. Nadat de knop is geselecteerd, krijgen gebruikers de volgende opties te zien.
-
-   * Zorg ervoor dat gebruikers de configuratie *Web.Finance AFC-productie* selecteren
-
-   ![Select Web.Finance AFC Production](assets/aftia-select-production-configuration.jpg)
-
-   ![Geavanceerde conversie-instellingen](assets/aftia-advanced-conversion-settings-wefinance.jpg)
-
-1. Selecteer de beginomzetting zodra u alle opties hebt gevormd die u zou willen gebruiken
-
-   >[!NOTE]
-   *Geef een sectie Adaptief formulierthema* op waarin gebruikers het thema Toegankelijk ultramarien thema kunnen opgeven.
-
-   >[!NOTE]
-   Als u het gegenereerde formulier wilt binden met een FDM, of iets anders, moet u het selectievakje *Aangepaste formulieren genereren zonder gegevensbindingen* inschakelen.
-
-   >[!NOTE]
-   Gebruikers dienen de locatie van de uitvoermap in te stellen op */content/dam/formsanddocuments/adobe-finance-forms/afc-convert-forms* , zodat het weergegeven formulier wordt weergegeven in het formulierportaal op de website Web.Gov.
-
-1. Wanneer het conversieproces begint, moeten gebruikers het volgende scherm zien:
-
-   ![Conversie in uitvoering](assets/aftia-conversion-progress.jpg)
-
-   >[!NOTE]
-   Er wordt een fout gemeld, ook al selecteert u een aparte map van de map die wordt geleverd in de cloud-configuratie, toch wordt er lokaal een uitvoermap gemaakt en wordt het gegenereerde formulier vervolgens op de juiste locatie geplaatst.
-
-1. Wanneer de conversie is voltooid, zien gebruikers het volgende scherm:
-
-   ![Conversie in uitvoering](assets/aftia-conversion-complete.jpg)
-
-1. Gebruikers kunnen het conversieproces ook controleren en het resultaat bewerken om het systeem betere conversiemogelijkheden te bieden.
+   Klik op de map **Uitvoer** om het gegenereerde adaptieve formulier weer te geven.
 
 #### Bekende problemen en notities {#known-issues-notes}
 
-Het conversieproces van formulieren kent enkele beperkingen en kan op de Adobe-website worden weergegeven. Zie [Bekende problemen](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/known-issues.html) om te controleren of uw formulieren compatibel zijn met dit proces.
+De service Automated Forms Conversion bevat bepaalde [aanbevolen procedures, bekende complexe patronen](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices.html)en [bekende problemen](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/known-issues.html). Controleer deze voordat u de service AEM Forms Automated Forms Conversion gaat gebruiken.
 
 1. Genereer het formulier met adaptieve formulieren genereren zonder gegevensbindingen ingeschakeld als u het formulier na conversie aan een FDM wilt binden.
 
@@ -868,6 +773,30 @@ Het algemeen beschikbare Ultramarine-thema dat door Adobe wordt onderhouden, is 
 Pakketbeheer, gebruikers hebben toegang tot het Ultramarine-thema in AEM Forms door naar **Forms** > **Thema** > **Referentiethema** > **Ultramarijn-Toegankelijk** te navigeren.
 
 ![Ultramarijnthema](assets/aftia-ultramarine-theme.jpg)
+
+## Configuratieopties {#configuration-options}
+
+Gebruikers kunnen verschillende workflowserviceopties configureren, waaronder:
+
+1. Invoer Microsoft Dynamics
+1. Adobe-handtekening
+1. Aangepast communicatiebeheer voor AEM
+1. Adobe Analytics
+
+Om hen te vormen om binnen het Werkschema worden toegelaten moeten de gebruikers de volgende taken uitvoeren.
+
+1. Ga naar https://&#39;[server]:[port]&#39;/system/console/configMgr.
+
+1. Zoek de *WeGov-configuraties*.
+
+1. Open de de dienstdefinitie en laat de geselecteerde diensten toe om binnen het werkschema worden aangehaald.
+
+>[!NOTE]
+Enkel omdat een gebruiker de dienst binnen de pagina van de Manager van de Configuratie toelaat, worden de gebruikers nog vereist om een de dienstconfiguratie op te zetten om met de externe gevraagde diensten te communiceren.
+
+![we gov - formulierpakket](assets/aftia-configuration-options.jpg)
+
+1. Klik op de knop Opslaan als u klaar bent om de instellingen op te slaan.
 
 ## Volgende stappen {#next-steps}
 

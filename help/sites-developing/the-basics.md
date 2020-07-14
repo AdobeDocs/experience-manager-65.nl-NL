@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 6e913190-be92-4862-a8b9-517f8bde0044
 translation-type: tm+mt
-source-git-commit: fc09ba6cb923d9ea25ec14af093d7f86a4835d85
+source-git-commit: d621a612556f0bea032444c2e07be101868b1905
 workflow-type: tm+mt
-source-wordcount: '3365'
+source-wordcount: '3371'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Voordat u ingaat op de kernconcepten van AEM, raadt Adobe u aan de WKND-zelfstudie in het document Aan de [slag met het ontwikkelen van AEM-sites](/help/sites-developing/getting-started.md) te voltooien voor een overzicht van het AEM-ontwikkelingsproces en de introductie van kernconcepten.
+>Voordat u ingaat op de kernconcepten van AEM, raadt Adobe u aan de WKND-zelfstudie in het document [Getting Started Developing AEM Sites](/help/sites-developing/getting-started.md) te voltooien voor een overzicht van het AEM-ontwikkelingsproces en de introductie van kernconcepten.
 
 ## Vereisten voor ontwikkeling op AEM {#prerequisites-for-developing-on-aem}
 
@@ -68,11 +68,11 @@ Zie [Sling ontdekken in 15 minuten](https://sling.apache.org/documentation/getti
 
 In het volgende diagram wordt de resolutie van het script Sling uitgelegd: het toont hoe te om van HTTP- verzoek aan inhoudsknoop, van inhoudsknoop aan middeltype, van middeltype aan manuscript te krijgen en welke scripting variabelen beschikbaar zijn.
 
-![chlimage_1-84](assets/chlimage_1-97.png)
+![Scriptresolutie voor Apache Sling](assets/sling-cheatsheet-01.png)
 
 Het volgende diagram verklaart alle verborgen, maar krachtige, verzoekparameters u kunt gebruiken wanneer het behandelen van SlingPostServlet, de standaardmanager voor alle POST- verzoeken die u eindeloze opties voor het creëren, het wijzigen, het schrappen, het kopiëren en het bewegen van knopen in de bewaarplaats geeft.
 
-![chlimage_1-85](assets/chlimage_1-98.png)
+![De SlingPostServlet gebruiken](assets/sling-cheatsheet-02.png)
 
 ### Verdelen is Content Centric {#sling-is-content-centric}
 
@@ -315,7 +315,7 @@ Een OSGi-framework biedt u vervolgens dynamisch laden/verwijderen, configureren 
 >
 >De pagina Basisonderwijs bevat met name een verzameling presentaties en zelfstudies.
 
-Deze architectuur staat u toe om het Verkopen met toepassing specifieke modules uit te breiden. Sling, en daarom CQ5, gebruikt de implementatie van [Apache Felix](https://felix.apache.org/) van OSGI (Open Services Gateway-initiatief) en is gebaseerd op de specificaties van versie 4.2 van het OSGi Service Platform. Het zijn beide inzamelingen van bundels OSGi die binnen een kader OSGi lopen.
+Deze architectuur staat u toe om het Verkopen met toepassing specifieke modules uit te breiden. Sling, en dus CQ5, gebruikt de implementatie van [Apache Felix](https://felix.apache.org/) van OSGI (Open Services Gateway-initiatief) en is gebaseerd op de specificaties van versie 4.2 van het Platform OSGi Service. Het zijn beide inzamelingen van bundels OSGi die binnen een kader OSGi lopen.
 
 Hierdoor kunt u de volgende handelingen uitvoeren op elk van de pakketten in uw installatie:
 
@@ -444,9 +444,9 @@ De volgende lijst geeft een overzicht van de structuur die u in de repository zu
 
 Met AEM bestaat een productieomgeving vaak uit twee verschillende typen instanties: een [auteur en een publicatie-instantie](/help/sites-deploying/deploy.md#author-and-publish-installs).
 
-## De verzender {#the-dispatcher}
+## De Dispatcher {#the-dispatcher}
 
-Dispatcher is het Adobe-programma voor zowel caching als taakverdeling. Meer informatie vindt u onder [de Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html).
+De Dispatcher is het hulpmiddel van Adobe voor zowel caching als/of lading het in evenwicht brengen. Nadere informatie is te vinden onder [de Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html).
 
 ## FileVault (systeem voor bronrevisie) {#filevault-source-revision-system}
 

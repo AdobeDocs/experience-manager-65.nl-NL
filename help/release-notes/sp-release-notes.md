@@ -4,7 +4,7 @@ description: De nota's van de versie specifiek voor Adobe Experience Manager 6.5
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 6686c10f1af24cc4fbdcf6d4e8b07f7dc0e2a8bb
+source-git-commit: 97714abf86a80f6b3d1c68c85ccf443482da22bf
 workflow-type: tm+mt
 source-wordcount: '4413'
 ht-degree: 0%
@@ -368,7 +368,7 @@ B. Gebruik de [HTTP-API van Package Manager](https://docs.adobe.com/content/docs
 
 1. Alle bundels OSGi zijn of **[!UICONTROL ACTIVE]** of **[!UICONTROL FRAGMENT]** in de Console OSGi (de Console van het Web van het Gebruik: `/system/console/bundles`).
 
-1. De bundel OSGI `org.apache.jackrabbit.oak-core` is versie 1.10.6 of hoger (de Console van het Gebruik: `/system/console/bundles`).
+1. De bundel OSGI `org.apache.jackrabbit.oak-core` is versie 1.22.3 of hoger (de Console van het Gebruik: `/system/console/bundles`).
 
 Zie de [technische vereisten](/help/sites-deploying/technical-requirements.md)voor informatie over de platforms die zijn gecertificeerd voor deze release.
 

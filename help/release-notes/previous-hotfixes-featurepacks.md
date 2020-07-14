@@ -3,9 +3,9 @@ title: Adobe Experience Manager 6.5 de Vorige Nota's van de Versie van het Servi
 description: De nota's van de versie specifiek voor Adobe Experience Manager 6.5 Service Pack 3 en vroeger.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: f75e5ad12aed95e950dbf7a00e0f444605f800dd
+source-git-commit: 60a5bb489c1f473f3f848909b8c2eb3192c49e88
 workflow-type: tm+mt
-source-wordcount: '8092'
+source-wordcount: '8098'
 ht-degree: 0%
 
 ---
@@ -506,7 +506,7 @@ Remove one mention of this fix.
 
 * De de Webdienst van de ZEEP die MTOM in een .NET project gebruikt toont uitzonderingen voor AssemblerServiceClient aanhaalt en methodes HtmlToPDF2 (NPR-4281771).
 
-* Axis jar versies 1.4 en 1.4.1 bevatten een kwetsbaarheid op het gebied van beveiliging (NPR-31015).
+* [Axis jar versies 1.4 en 1.4.1](https://helpx.adobe.com/aem-forms/quick-fixes/6-5/jee-patch-0014.html) bevatten een kwetsbaarheid op het gebied van beveiliging (NPR-31015).
 
 **Foundation JEE**
 

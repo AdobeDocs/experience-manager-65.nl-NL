@@ -8,9 +8,9 @@ contentOwner: anujkapo
 discoiquuid: ddb3778b-be06-4cde-bc6e-0994efa42b18
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 29b1a151a6c284fcb0bf01de425dfba79f5943c2
+source-git-commit: f4dcf58d70ea5a17617ef1e80942de7db3233031
 workflow-type: tm+mt
-source-wordcount: '2422'
+source-wordcount: '2464'
 ht-degree: 0%
 
 ---
@@ -102,7 +102,7 @@ De volgende groepen zijn eveneens opgenomen:
 
 ## Automated Forms Conversion (Camila) {#automated-forms-conversion}
 
-**Deze sectie**: Camila de CX Lead heeft een ouder, op PDF gebaseerd formulier dat werd gebruikt als onderdeel van een op papier gebaseerd proces. Als onderdeel van een moderniseringsinspanning wil ze dit PDF-formulier gebruiken om automatisch een nieuwe, moderne adaptieve formulieren te maken.
+**Deze sectie**: Camila de CX Lead heeft een bestaand PDF-formulier dat is gebruikt als onderdeel van een papierproces. Als onderdeel van een moderniseringsinspanning wil ze dit PDF-formulier gebruiken om automatisch een nieuwe, moderne adaptieve formulieren te maken.
 
 ### Automated Forms Conversion - We.Gov (Camila) {#automated-forms-conversion-wegov}
 
@@ -116,7 +116,7 @@ De volgende groepen zijn eveneens opgenomen:
 
    ![Formulier uploaden](assets/aftia-upload-form.jpg)
 
-1. Camilla selecteert vervolgens een automatische conversietaak voor formulieren
+1. Camilla selecteert vervolgens het PDF-formulier en klikt op **Geautomatiseerde conversie** starten om het conversieproces te starten. U moet mogelijk op **Overschrijven klikken** als u het formulier hebt geconverteerd.
 
    >[!NOTE]
    >
@@ -124,9 +124,11 @@ De volgende groepen zijn eveneens opgenomen:
 
    * **Optioneel**: Als u het Accessible Ultramarine-thema wilt gebruiken, klikt u gewoon op het pictogram Een adaptief formulierthema opgeven en selecteert u het Accessible-Ultramarine-thema dat wordt weergegeven in de lijst met opties.
 
+   ![Conversie starten](assets/aftia-start-conversion.jpg)
+
    ![Ultramarijnthema](assets/aftia-upload-conversion-settings.jpg)
 
-   ![Conversie starten](assets/aftia-start-conversion.jpg)
+   Het percentage voltooide status wordt weergegeven tijdens de conversie. Als de status **Omgezet** wordt weergegeven, klikt u op de **uitvoermap** , selecteert u het aangepaste formulier en klikt u op **Bewerken** om het geconverteerde formulier te openen.
 
 1. Camilla controleert vervolgens het formulier en controleert of alle velden aanwezig zijn
 
@@ -156,7 +158,7 @@ De volgende groepen zijn eveneens opgenomen:
 
 Camila controleert ook of de gemaakte inhoud correct en volledig toegankelijk is volgens de bedrijfsnormen.
 
-1. Camila opent het ingevulde We.Gov-formulier.
+1. Camila klikt op de **uitvoermap** , selecteert het aangepaste formulier en klikt op **Voorvertoning** om het voltooide Web.Gov-formulier te openen.
 
 1. Hiermee opent u het tabblad Audit in het Chrome Developer Tool.
 
@@ -214,24 +216,9 @@ Aya moet sommige documenten thuis herzien alvorens zij de toepassing van het de 
    1. Basisinformatie
 
       1. Voornaam
-      1. Tweede voornaam
       1. Achternaam
-      1. Voorkeursnaam
       1. DOB
-      1. Geslacht
-   1. Contactgegevens
-
-      1. Adres
-      1. Plaats
-      1. Telefoonnummer
-      1. Postcode
       1. E-mail
-      1. Staat
-   1. Staat van echtscheiding
-
-      1. Familiestatus
-
-
 
 1. Gebruik de volgende **dynamische logica** om de dynamische eigenschap te tonen gebruikend het **drop-down van de Status** van de Familie:
 

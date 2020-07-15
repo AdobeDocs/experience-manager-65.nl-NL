@@ -10,9 +10,9 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 331f4980-5193-4546-a22e-f27e38bb8250
 translation-type: tm+mt
-source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
+source-git-commit: 23dfcc944a83dd683078cfe00f85c4cc734e7752
 workflow-type: tm+mt
-source-wordcount: '1603'
+source-wordcount: '1610'
 ht-degree: 2%
 
 ---
@@ -66,6 +66,7 @@ De component Dynamic Media is slim. Afhankelijk van het feit of u een afbeelding
 >
 >* U hebt Dynamic Media [](/help/assets/config-dynamic.md)ingeschakeld. Dynamic Media zijn standaard uitgeschakeld.
 >* De afbeelding heeft een piramideTIFF-bestand. Afbeeldingen die zijn geïmporteerd voordat dynamische media is ingeschakeld, hebben geen TIFF-bestand met piramide.
+
 >
 
 
@@ -138,7 +139,7 @@ You can edit the following [!UICONTROL Advanced] settings by clicking **[!UICONT
 
 #### Beveiligde video leveren {#how-to-delivery-secure-video}
 
-Wanneer u in AEM 6.2 [FP-13480](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq620/featurepack/cq-6.2.0-featurepack-13480)installeert, kunt u bepalen of een video wordt geleverd via een HTTPS-verbinding (Secure SSL) of een onveilige verbinding (HTTP). Standaard wordt het video-leveringsprotocol automatisch overgenomen van het protocol van de ingesloten webpagina. Als de webpagina via HTTPS wordt geladen, wordt de video ook via HTTPS geleverd. En omgekeerd, als de webpagina zich op HTTP bevindt, wordt de video geleverd via HTTP. In de meeste gevallen, is dit standaardgedrag fijn en er is geen behoefte om het even welke configuratieveranderingen aan te brengen. U kunt dit standaardgedrag echter negeren door `VideoPlayer.ssl=on` aan het einde van een URL-pad of aan de lijst met andere parameters voor de viewerconfiguratie in een ingesloten codefragment toe te voegen, zodat de beveiligde video-levering geforceerd wordt.
+Wanneer u in AEM 6.2 [FP-13480](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq620/featurepack/cq-6.2.0-featurepack-13480)installeert, kunt u bepalen of een video wordt geleverd via een HTTPS-verbinding (Secure SSL) of een onveilige verbinding (HTTP). Standaard wordt het video-leveringsprotocol automatisch overgenomen van het protocol van de ingesloten webpagina. Als de webpagina via HTTPS wordt geladen, wordt de video ook via HTTPS geleverd. En omgekeerd, als de webpagina zich op HTTP bevindt, wordt de video geleverd via HTTP. In de meeste gevallen, is dit standaardgedrag fijn en er is geen behoefte om het even welke configuratieveranderingen aan te brengen. U kunt dit standaardgedrag echter negeren door `VideoPlayer.ssl=on` aan het einde van een URL-pad of aan de lijst met andere parameters voor de viewerconfiguratie in een ingesloten codefragment toe te voegen, zodat de beveiligde video-levering geforceerd wordt.
 
 Zie `VideoPlayer.ssl` Beveiligde videoverlevering [in de naslaggids voor viewers voor meer informatie over veilige videoverzending en het gebruik van het](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-viewer-20-securevideodelivery.html) configuratiekenmerk in uw URL-pad. Naast de videoviewer is beveiligde video-levering beschikbaar voor de viewer voor gemengde media en de interactieve videoviewer.
 

@@ -10,7 +10,7 @@ topic-tags: platform
 content-type: reference
 discoiquuid: c081b242-67e4-4820-9bd3-7e4495df459e
 translation-type: tm+mt
-source-git-commit: 4949eeb190f26850f80e1ad107f2057c661ed23d
+source-git-commit: bac56cb8e172d826114e1e607dc24b0a17821f8c
 workflow-type: tm+mt
 source-wordcount: '2100'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Er zijn de volgende gebruiksgevallen:
 
 * Hiermee krijgt u implementatiespecifieke objecten.
 
-   Een op JCR gebaseerde implementatie van de algemene [`Resource`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/Resource.html) interface biedt bijvoorbeeld toegang tot het onderliggende JCR [`Node`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html).&quot;
+   Een op JCR gebaseerde implementatie van de algemene [`Resource`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/Resource.html) interface biedt bijvoorbeeld toegang tot het onderliggende JCR [`Node`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html).
 
 * Het maken van sneltoetsen voor objecten waarvoor interne contextobjecten moeten worden doorgegeven.
 
@@ -70,7 +70,7 @@ Er is echter geen algemene regel: het object kan een nieuw of een bestaand objec
 Er zijn verschillende manieren om te `Adaptable.adaptTo()` implementeren:
 
 * door het object zelf; het implementeren van de methode zelf en het toewijzen aan bepaalde objecten.
-* Door een [`AdapterFactory`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/AdapterFactory.html)&quot;, dat willekeurige objecten in kaart kan brengen.
+* Door een [`AdapterFactory`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/AdapterFactory.html)object, dat willekeurige objecten kan toewijzen.
 
    De voorwerpen moeten nog de `Adaptable` interface uitvoeren en moeten uitbreiden [`SlingAdaptable`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/adapter/SlingAdaptable.html) (die de `adaptTo` vraag tot een centrale adaptermanager overgaat).
 

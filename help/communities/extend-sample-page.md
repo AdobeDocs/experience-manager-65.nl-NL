@@ -11,12 +11,15 @@ content-type: reference
 discoiquuid: a5040371-3bc2-43bc-a103-7175c4c6252d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+source-git-commit: 230c700d87d82d248b7d0bbc45c69c5c2b0e3ff8
+workflow-type: tm+mt
+source-wordcount: '381'
+ht-degree: 0%
 
 ---
 
 
-# Opmerking toevoegen aan voorbeeldpagina {#add-comment-to-sample-page}
+# Opmerking toevoegen aan voorbeeldpagina  {#add-comment-to-sample-page}
 
 Nu de componenten voor het aangepaste opmerkingensysteem in de toepassingsmap (/apps) staan, is het mogelijk om de uitgebreide component te gebruiken. De instantie van het opmerkingssysteem in een website die moet worden beïnvloed moet zijn resourceType plaatsen om het systeem van douanecommentaar te zijn en alle noodzakelijke cliëntbibliotheken te omvatten.
 
@@ -30,7 +33,7 @@ De [Community Components Guide](/help/communities/components-guide.md) identific
 
 Let op de drie clientbibliotheken die nodig zijn voor het renderen en correct functioneren van Opmerkingen. Deze moeten worden opgenomen waar naar de uitgebreide opmerkingen wordt verwezen en in de [uitgebreide clientbibliotheek](/help/communities/extend-create-components.md#create-a-client-library-folder) van opmerkingen ( `apps.custom.comments`).
 
-![chlimage_1-79](assets/chlimage_1-79.png)
+![chlimage_1-47](assets/chlimage_1-47.png)
 
 ### Aangepaste opmerkingen toevoegen aan een pagina {#add-custom-comments-to-a-page}
 
@@ -42,17 +45,17 @@ De opmerking wordt alleen weergegeven en werkt naar behoren als de clientbibliot
 
 #### Opmerkingen Clientlibs op voorbeeldpagina {#comments-clientlibs-on-sample-page}
 
-![Opmerkingen Clientlibs op voorbeeldpagina](assets/chlimage_1-80.png)
+![chlimage_1-48](assets/chlimage_1-48.png)
 
 #### Auteur: Alt-commentaar op voorbeeldpagina {#author-alt-comment-on-sample-page}
 
-![Alt-commentaar op voorbeeldpagina](assets/chlimage_1-81.png)
+![chlimage_1-49](assets/chlimage_1-49.png)
 
 #### Auteur: Opmerkingsknooppunt voor voorbeeldpagina {#author-sample-page-comments-node}
 
 U kunt resourceType in CRXDE verifiëren door de eigenschappen van de commentaarknoop voor de steekproefpagina bij te bekijken `/content/sites/sample/en/jcr:content/content/primary/comments`.
 
-![chlimage_1-82](assets/chlimage_1-82.png)
+![chlimage_1-50](assets/chlimage_1-50.png)
 
 #### Voorbeeldpagina publiceren {#publish-sample-page}
 
@@ -64,6 +67,8 @@ Nadat u zowel de aangepaste toepassing als de voorbeeldpagina hebt gepubliceerd,
 
 Hier aaron.mcdonald@mailinator.com vindt u een opmerking:
 
-![chlimage_1-83](assets/chlimage_1-83.png) ![chlimage_1-84](assets/chlimage_1-84.png)
+![chlimage_1-51](assets/chlimage_1-51.png)
+
+![chlimage_1-52](assets/chlimage_1-52.png)
 
 Nu het lijkt of de uitgebreide component correct werkt met de standaardweergave, is het tijd om de weergave te wijzigen.

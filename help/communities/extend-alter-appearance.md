@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: e0da09b3-725d-4ed1-9273-2532132f6918
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+source-git-commit: 618464d1e01986786a47a4e9c6ecce87e2a77ec3
+workflow-type: tm+mt
+source-wordcount: '270'
+ht-degree: 0%
 
 ---
 
@@ -26,28 +29,29 @@ Voor een eenvoudige demonstratie, een visuele functie, wordt de avatar verwijder
 >
 >Als u de extensie wilt gebruiken, moet de instantie van het opmerkingensysteem in een website die wordt beïnvloed (content), het resourceType instellen op het aangepaste opmerkingssysteem.
 
+
 ## De HBS-scripts wijzigen {#modify-the-hbs-scripts}
 
 Met [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
-* Openen [/apps/custom/components/comments/comment/**comment.hbs **](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
+* Openen [/apps/custom/components/comments/comment/**comment.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
 
-   * verwijder de tag met de avatar voor een commentaarbericht (~ regel 21):
-
-      ```
-      <!--
-       <<img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
-       -->
-      ```
-
-* Openen [/apps/custom/components/comments/**comments.hbs **](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
-
-   * verwijder de tag die de avatar bevat voor de volgende commentaarvermelding (~ regel 44):
+   * Plaats een opmerking bij de tag die de avatar bevat voor een commentaarbericht (~ regel 21):
 
       ```
-      <!--
-       <img class="scf-composer-avatar" src="{{loggedInUser.avatarUrl}}"></img>
-       -->
+        <!--
+         <<img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
+         -->
+      ```
+
+* Openen [/apps/custom/components/comments/**comments.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
+
+   * Verwijder de commentaarmarkering die de avatar voor de volgende commentaaringang (~ lijn 44) omvat:
+
+      ```
+        <!--
+         <img class="scf-composer-avatar" src="{{loggedInUser.avatarUrl}}"></img>
+         -->
       ```
 
 * Alles **opslaan selecteren**
@@ -56,21 +60,21 @@ Met [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
 Nadat de toepassing is gewijzigd, moet de aangepaste component opnieuw worden gerepliceerd.
 
-Een manier om dit te doen is
+Een manier om dit te doen is:
 
 * Vanuit het hoofdmenu
 
-   * Selecteer **Gereedschappen > Bewerkingen > Replicatie**
-   * select `Activate Tree`
-   * instellen `Start Path`: tot `/apps/custom`
-   * deselecteren `Only Modified`
-   * selectieknop `Activate`
+   * Selecteer **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Replication]**.
+   * Selecteer **[!UICONTROL Activate Tree]**.
+   * Instellen `Start Path` op `/apps/custom`.
+   * Deselecteer **[!UICONTROL Only Modified]**.
+   * Selecteer **[!UICONTROL Activate]** de knop.
 
 ### Gewijzigde opmerking weergeven op gepubliceerde voorbeeldpagina {#view-modified-comment-on-published-sample-page}
 
 [Als u doorgaat met de ervaring](/help/communities/extend-sample-page.md#publish-sample-page) met het publicatieexemplaar, dat nog steeds is aangemeld als dezelfde gebruiker, kunt u de pagina nu vernieuwen in de publicatieomgeving om de wijziging te bekijken om de avatar te verwijderen:
 
-![chlimage_1-136](assets/chlimage_1-136.png)
+![chlimage_1-81](assets/chlimage_1-81.png)
 
 ### Voorbeeld van extensiepakket voor opmerkingen {#sample-comment-extension-package}
 

@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 739ec991-552b-42cd-85cd-984d1c9fe8fd
 translation-type: tm+mt
-source-git-commit: bb523ecf97ea18d8e8d5afa238fdf9e95fa58ab4
+source-git-commit: cbb5a6bac5e9932fd36abf20d4424890080d39bf
+workflow-type: tm+mt
+source-wordcount: '297'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: bb523ecf97ea18d8e8d5afa238fdf9e95fa58ab4
 
 ## Overzicht {#overview}
 
-mpeg is een oplossing voor het converteren en streamen van audio en video en wordt, indien geïnstalleerd, gebruikt voor de juiste transcodering van [video-elementen](../../help/sites-authoring/default-components-foundation.md#video) en voor de functie voor activering van AEM Communities.
+mpeg is een oplossing voor het converteren en streamen van audio en video en wordt, indien geïnstalleerd, gebruikt voor de juiste transcodering van [video-elementen](../../help/sites-authoring/default-components-foundation.md#video) en voor de functie Enablement van AEM Communities.
 
 mpeg wordt gebruikt in de auteursomgeving om meta-gegevens voor geupload enablement middelen te verkrijgen evenals een duimnagel te produceren om te tonen wanneer het vermelden van het enablement middel.
 
@@ -42,29 +45,29 @@ MPEG moet worden geïnstalleerd op de server(s) die als host fungeert voor de AE
 
 ## MPEG Transcoding Service configureren {#configure-ffmpeg-transcoding-service}
 
-Wanneer FFmpeg wordt geïnstalleerd, worden standaard meerdere uitvoeringen geconfigureerd (transcoderingen) volgens de [!UICONTROL DAM Update Asset] workflow-definitie.
+Wanneer MPEG wordt geïnstalleerd, worden standaard meerdere uitvoeringen geconfigureerd (transcoderingen) volgens de [!UICONTROL DAM Update Asset] workflowdefinitie.
 
 Aangezien de transcoderingen CPU-intensief zijn, wordt aangeraden de lijst met doeluitvoeringen te wijzigen. In de meeste gevallen is transcodering niet nodig.
 
-U kunt als volgt de workflow [!UICONTROL DAM Update Asset] wijzigen en in dit voorbeeld de transcodering uitschakelen:
+U kunt als volgt de [!UICONTROL DAM Update Asset] workflow wijzigen en in dit voorbeeld de transcodering uitschakelen:
 
 * Meld u aan bij de instantie van de auteur met beheerdersrechten.
-* Navigeer vanuit de globale navigatie naar **[!UICONTROL Gereedschappen]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modellen]**.
-* Zoek **[!UICONTROL DAM Update Asset]**.
+* Navigeer vanuit de globale navigatie naar **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
+* Zoeken **[!UICONTROL DAM Update Asset]**.
 * Dubbelklik om de workflow voor bewerking te openen in de klassieke gebruikersinterface.
 
    Resulterende locatie: [http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html](http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html)
 
-* Dubbelklik op de **[!UICONTROL transcoderingsstap]** FFmpeg om het dialoogvenster Step Properties te openen.
-* Onder het tabblad **[!UICONTROL Proces]** :
+* Dubbelklik op de **[!UICONTROL FFmpeg transcoding]** stap om het dialoogvenster Step Properties te openen.
+* Onder het **[!UICONTROL Process]** tabblad:
 
-   * **[!UICONTROL Aruggen]**: Wis alle ingangen om transcoderende Standaardwaarden onbruikbaar te maken: `profile:firefoxhq,profile:hq,profile:flv,profile:iehq`
+   * **[!UICONTROL Arugments]**: Wis alle ingangen om transcoderende Standaardwaarden onbruikbaar te maken: `profile:firefoxhq,profile:hq,profile:flv,profile:iehq`
 
-![chlimage_1-372](assets/chlimage_1-372.png)
+   ![chlimage_1-372](assets/chlimage_1-372.png)
 
 * Selecteer **[!UICONTROL OK]** om het `Step Properties` dialoogvenster te sluiten.
 
-* Selecteer **[!UICONTROL Opslaan]** om de `DAM Update Asset` workflow op te slaan.
+* Selecteer deze optie **[!UICONTROL Save]** om de `DAM Update Asset` workflow op te slaan.
 
 
 

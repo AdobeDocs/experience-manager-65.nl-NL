@@ -10,12 +10,15 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a07a4690-0e47-4a76-84cb-96abdc70b835
 translation-type: tm+mt
-source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+source-git-commit: 230c700d87d82d248b7d0bbc45c69c5c2b0e3ff8
+workflow-type: tm+mt
+source-wordcount: '271'
+ht-degree: 0%
 
 ---
 
 
-# Component Opmerkingen uitbreiden {#extend-comments-component}
+# Component Opmerkingen uitbreiden  {#extend-comments-component}
 
 Het is de bedoeling om een standaardcomponent [uit te breiden](client-customize.md#extensions) om de weergave of het gedrag van een component voor specifieke toepassingen te wijzigen.
 
@@ -24,6 +27,7 @@ Het pad naar de component is uniek en verwijst naar de standaardcomponent als ee
 >[!NOTE]
 >
 >Het uitbreiden van een [overlappende](client-customize.md#overlays) component wordt niet ondersteund.
+
 
 ## Voorbeeld {#example}
 

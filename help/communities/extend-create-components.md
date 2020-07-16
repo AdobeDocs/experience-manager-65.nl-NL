@@ -10,17 +10,20 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 83c4f18a-d7d6-4090-88c7-41a9075153b5
 translation-type: tm+mt
-source-git-commit: 0b25d956c19c5fc5d79f87b292a0c61a23e5d66a
+source-git-commit: 230c700d87d82d248b7d0bbc45c69c5c2b0e3ff8
+workflow-type: tm+mt
+source-wordcount: '590'
+ht-degree: 4%
 
 ---
 
 
-# De componenten maken {#create-the-components}
+# De componenten maken  {#create-the-components}
 
 In het voorbeeld van het uitbreiden van componenten wordt het opmerkingssysteem gebruikt, dat eigenlijk uit twee componenten bestaat
 
-* Opmerkingen - Het omvattende opmerkingensysteem dat de component is die op een pagina wordt geplaatst
-* Opmerking - De component die een instantie van een geposte opmerking vastlegt
+* Opmerkingen - Het omvattende opmerkingensysteem dat de component is die op een pagina wordt geplaatst.
+* Opmerking - De component die een instantie van een geposte opmerking vastlegt.
 
 Beide componenten moeten worden geplaatst, vooral als het aanpassen van de verschijning van een geposte commentaar.
 
@@ -29,6 +32,7 @@ Beide componenten moeten worden geplaatst, vooral als het aanpassen van de versc
 >Er is slechts één opmerkingsysteem per sitepagina toegestaan.
 >
 >Vele eigenschappen van Gemeenschappen omvatten reeds een commentaarsysteem waarvan resourceType kan worden gewijzigd om het uitgebreide commentaarsysteem van verwijzingen te voorzien.
+
 
 ## De component Opmerkingen maken {#create-the-comments-component}
 
@@ -42,32 +46,32 @@ De verwijdering van het automatisch gemaakte JSP-bestand komt doordat in plaats 
 
    * Selecteer het `/apps` knooppunt
 
-      * **Map** maken met de naam **[!UICONTROL custom]**
+      * **Map** maken met naam **[!UICONTROL custom]**
    * Selecteer het `/apps/custom` knooppunt
 
-      * **Map** maken met naam **[!UICONTROL componenten]**
+      * **Map** maken met naam **[!UICONTROL components]**
 
 
 1. Selecteer het `/apps/custom/components` knooppunt
 
-   * **[!UICONTROL Maken > Component...]**
+   * **[!UICONTROL Create > Component...]**
 
       * **Label**: *opmerkingen*
-      * **Titel**: Opmerkingen *Alt*
-      * **Omschrijving**: Stijl *van alternatieve opmerkingen*
+      * **Titel**: *Alt-opmerkingen*
+      * **Omschrijving**: *Stijl van alternatieve opmerkingen*
       * **Supertype**: *social/commons/components/hbs/comments*
       * **Groep**: *Aangepast*
-   * Selecteer **[!UICONTROL Volgende]**
-   * Selecteer **[!UICONTROL Volgende]**
-   * Selecteer **[!UICONTROL Volgende]**
+   * Selecteer **[!UICONTROL Next]**
+   * Selecteer **[!UICONTROL Next]**
+   * Selecteer **[!UICONTROL Next]**
    * Selecteer **[!UICONTROL OK]**
 
 
 1. Vouw het zojuist gemaakte knooppunt uit: `/apps/custom/components/comments`
-1. Alles **[!UICONTROL opslaan selecteren]**
+1. Selecteer **[!UICONTROL Save All]**
 1. Klikken met rechtermuisknop `comments.jsp`
-1. Selecteren **[!UICONTROL Verwijderen]**
-1. Alles **[!UICONTROL opslaan selecteren]**
+1. Selecteer **[!UICONTROL Delete]**
+1. Selecteer **[!UICONTROL Save All]**
 
 ![chlimage_1-70](assets/chlimage_1-70.png)
 
@@ -80,26 +84,28 @@ De verwijdering van het automatisch gemaakte JSP-bestand komt doordat in plaats 
 1. Navigate to the `/apps/custom/components/comments` node
 1. Klik met de rechtermuisknop op het knooppunt
 
-   * Selecteer **[!UICONTROL Maken > Component...]**
+   * Selecteer **[!UICONTROL Create] > **[!UICONTROL Component...]**
 
       * **Label**: *opmerking*
-      * **Titel**: Opmerking *Alt*
+      * **Titel**: *Alt-opmerking*
       * **Omschrijving**: *Alternatieve commentaarstijl*
       * **Supertype**: *social/commons/components/hbs/comments/comment*
       * **Groep**: `*.hidden*`
-   * Selecteer **[!UICONTROL Volgende]**
-   * Selecteer **[!UICONTROL Volgende]**
-   * Selecteer **[!UICONTROL Volgende]**
+   * Selecteer **[!UICONTROL Next]**
+   * Selecteer **[!UICONTROL Next]**
+   * Selecteer **[!UICONTROL Next]**
    * Selecteer **[!UICONTROL OK]**
 
 
 1. Vouw het zojuist gemaakte knooppunt uit: `/apps/custom/components/comments/comment`
-1. Alles **[!UICONTROL opslaan selecteren]**
+1. Selecteer **[!UICONTROL Save All]**
 1. Klikken met rechtermuisknop `comment.jsp`
-1. Selecteren **[!UICONTROL Verwijderen]**
-1. Alles **[!UICONTROL opslaan selecteren]**
+1. Selecteer **[!UICONTROL Delete]**
+1. Selecteer **[!UICONTROL Save All]**
 
-![chlimage_1-71](assets/chlimage_1-71.png) ![chlimage_1-72](assets/chlimage_1-72.png)
+![chlimage_1-71](assets/chlimage_1-71.png)
+
+![chlimage_1-72](assets/chlimage_1-72.png)
 
 ### De standaard-HBS-scripts kopiëren en wijzigen {#copy-and-modify-the-default-hbs-scripts}
 
@@ -135,7 +141,7 @@ Met [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
       * Naar `/apps/custom/components/comments/comment`
 
 * Knooppunt `/apps/custom` selecteren
-* Alles **[!UICONTROL opslaan selecteren]**
+* Selecteer **[!UICONTROL Save All]**
 
 ## Een clientbibliotheekmap maken {#create-a-client-library-folder}
 
@@ -144,16 +150,16 @@ Als u wilt voorkomen dat deze clientbibliotheek expliciet moet worden opgenomen,
 Met [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
 * Knooppunt `/apps/custom/components/comments` selecteren
-* Knooppunt **[!UICONTROL maken selecteren]**
+* Selecteer **[!UICONTROL Create Node]**
 
    * **Naam**: `clientlibs`
    * **Type**: `cq:ClientLibraryFolder`
-   * Toevoegen aan tabblad **[!UICONTROL Eigenschappen]** :
+   * Toevoegen aan **[!UICONTROL Properties]** tabblad:
 
-      * **Naam** `categories` Type **** Waarde `String` **** `cq.social.author.hbs.comments``Multi`
-      * **Naam** `dependencies` Type **** Waarde `String` **** `cq.social.scf``Multi`
+      * **Naam** `categories` Type **-**`String` **waarde** `cq.social.author.hbs.comments` `Multi`
+      * **Naam** `dependencies` Type **-**`String` **waarde** `cq.social.scf` `Multi`
 
-* Alles **[!UICONTROL opslaan selecteren]**
+* Selecteer **[!UICONTROL Save All]**
 * Selecteer `/apps/custom/components/comments/clientlib`het knooppunt, maak 3 bestanden:
 
    * **Naam**: `css.txt`
@@ -161,7 +167,7 @@ Met [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
    * **Naam**: customcommentsystem.js
 
 * Voer &#39;customcommentsystem.js&#39; in als de inhoud van `js.txt`
-* Alles **[!UICONTROL opslaan selecteren]**
+* Selecteer **[!UICONTROL Save All]**
 
 ![chlimage_1-73](assets/chlimage_1-73.png)
 
@@ -189,7 +195,7 @@ Voer de volgende tekst in als de inhoud van `customcommentsystem.js`:
 })($CQ, _, Backbone, SCF);
 ```
 
-* Alles **[!UICONTROL opslaan selecteren]**
+* Selecteer **[!UICONTROL Save All]**
 
 ## De app publiceren {#publish-the-app}
 
@@ -199,9 +205,9 @@ Een manier om dit te doen is
 
 * Van globale navigatie
 
-   * Selecteer **[!UICONTROL Gereedschappen > Implementatie > Replicatie]**
-   * Selecteer `Activate Tree`
-   * Instellen `Start Path`: tot `/apps/custom`
-   * Uitschakelen `Only Modified`
-   * Selecteren, `Activate`knop
+   * Selecteer **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Replication]**
+   * Selecteer **[!UICONTROL Activate Tree]**
+   * Instellen `Start Path` op `/apps/custom`
+   * Uitschakelen **[!UICONTROL Only Modified]**
+   * Knop Selecteren **[!UICONTROL Activate]**
 

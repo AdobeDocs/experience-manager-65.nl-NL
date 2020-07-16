@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: aa3e50f1-8f5a-489d-a42e-a928e437ab79
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: adf1ac2cb84049ca7e42921ce31135a6149ef510
+workflow-type: tm+mt
+source-wordcount: '513'
+ht-degree: 0%
 
 ---
 
@@ -28,14 +31,6 @@ De `guidelib.dataIntegrationUtils.executeOperation` API roept een service aan va
 ```
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs)
 ```
-
-De API vereist de volgende parameters.
-
-| Parameter | Beschrijving |
-|---|---|
-| `operationInfo` | Structuur voor het opgeven van de modelidentificatie, de bewerkingstitel en de naam van de bewerking van het formulier |
-| `inputs` | Structuur om formulierobjecten op te geven waarvan de waarden worden ingevoerd voor de servicebewerking |
-| `outputs` | Structuur voor het opgeven van formulierobjecten die worden gevuld met de waarden die door de servicebewerking worden geretourneerd |
 
 De structuur van de `guidelib.dataIntegrationUtils.executeOperation` API geeft details over de servicebewerking op. De syntaxis van de structuur is als volgt.
 
@@ -64,20 +59,32 @@ De API-structuur geeft de volgende details over de servicebewerking op.
    <th>Beschrijving</th>
   </tr>
   <tr>
-   <td><code>forDataModelId</code></td>
-   <td>Geef het pad van de gegevensopslagruimte naar het formuliergegevensmodel op, inclusief de naam ervan</td>
+   <td><code>operationInfo</code></td>
+   <td>Structuur voor het opgeven van de modelidentificatie, de bewerkingstitel en de naam van de bewerking van het formulier</td>
+  </tr>
+  <tr>
+   <td><code>formDataModelId</code></td>
+   <td>Hiermee wordt het opslagpad naar het formuliergegevensmodel opgegeven, inclusief de naam ervan</td>
   </tr>
   <tr>
    <td><code>operationName</code></td>
-   <td>Geef de naam op van de uit te voeren servicebewerking</td>
+   <td>Specificeert de naam van de uit te voeren de dienstverrichting</td>
   </tr>
   <tr>
-   <td><code>input</code></td>
-   <td>Een of meer formulierobjecten toewijzen aan de invoerargumenten voor de servicebewerking</td>
+   <td><code>inputs</code></td>
+   <td>Hiermee worden een of meer formulierobjecten toegewezen aan de invoerargumenten voor de servicebewerking</td>
   </tr>
   <tr>
-   <td>Uitvoer</td>
-   <td>Een of meer formulierobjecten toewijzen aan uitvoerwaarden van de servicebewerking om formuliervelden te vullen<br /> </td>
+   <td><code>Outputs</code></td>
+   <td>Hiermee wijst u een of meer formulierobjecten toe aan uitvoerwaarden van de servicebewerking om formuliervelden te vullen<br /> </td>
+  </tr>
+  <tr>
+   <td><code>success</code></td>
+   <td>Retourneert waarden die zijn gebaseerd op de invoerargumenten voor de servicebewerking. Het is een optionele parameter die als callback functie wordt gebruikt.<br /> </td>
+  </tr>
+  <tr>
+   <td><code>failure</code></td>
+   <td>Toont een foutenmelding als de succesvolle callback functie er niet in slaagt om de outputwaarden te tonen die op de inputargumenten worden gebaseerd. Het is een optionele parameter die als callback functie wordt gebruikt.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -104,3 +111,41 @@ var outputs = {
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs);
 ```
 
+## API gebruiken met callback-functie {#using-the-api-callback}
+
+U kunt de service van het formuliergegevensmodel ook aanroepen met behulp van de `guidelib.dataIntegrationUtils.executeOperation` API met een callback-functie. De API-syntaxis ziet er als volgt uit:
+
+```
+guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, callbackFunction)
+```
+
+De callback functie kan `success` `failure` en callback functies hebben.
+
+### Sampletcript van de steekproef met succes en mislukkingscallback functies {#callback-function-success-failure}
+
+In het volgende voorbeeldscript wordt de `guidelib.dataIntegrationUtils.executeOperation` API gebruikt om de `GETOrder` servicebewerking aan te roepen die in het `employeeOrder` formuliergegevensmodel is geconfigureerd.
+
+De `GETOrder` bewerking neemt de waarde in het `Order ID` formulierveld op als invoer voor het `orderId` argument en retourneert de waarde voor het aantal orders in de `success` callback-functie.  Als de `success` callback functie niet de orde hoeveelheid terugkeert, toont de `failure` callback functie het `Error occured` bericht.
+
+>[!NOTE]
+>
+> Als u de `success` callback-functie gebruikt, worden de uitvoerwaarden niet ingevuld in de opgegeven formuliervelden.
+
+```
+var operationInfo = {
+    "formDataModelId": "/content/dam/formsanddocuments-fdm/employeeOrder",
+    "operationTitle": "GETOrder",
+    "operationName": "GETOrder"
+};
+var inputs = {
+    "orderId" : Order ID
+};
+var outputs = {};
+var success = function (wsdlOutput, textStatus, jqXHR) {
+order_quantity.value = JSON.parse(wsdlOutput).quantity;
+ };
+var failure = function(){
+alert('Error occured');
+};
+guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, success, failure);
+```

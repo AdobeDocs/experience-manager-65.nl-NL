@@ -10,7 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: ee39435d-80f5-4758-ae01-1ea0d221b00b
 translation-type: tm+mt
-source-git-commit: 58a06c1a16c62bffad2893fbec0b32d2ce7267a7
+source-git-commit: cbb5a6bac5e9932fd36abf20d4424890080d39bf
+workflow-type: tm+mt
+source-wordcount: '339'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 58a06c1a16c62bffad2893fbec0b32d2ce7267a7
 
 ## Inleiding {#introduction}
 
-De functie voor aanbevolen inhoud biedt een gebied voor ingetekende sitebezoekers (leden van de community) in de publicatieomgeving waarin inhoud wordt gemarkeerd voor
+De functie voor aanbevolen inhoud biedt een gebied voor ingetekende sitebezoekers (leden van de community) in de publicatieomgeving waarin inhoud wordt gemarkeerd voor:
 
 * [Blogs](blog-feature.md)
 * [Kalenders](calendar.md)
@@ -33,8 +36,8 @@ De mogelijkheid om inhoud te voorzien van functies is per component mogelijk toe
 
 In dit gedeelte van de documentatie wordt het volgende beschreven:
 
-* Aanbevolen inhoud toevoegen aan een communitysite
-* Configuratie-instellingen voor de `Featured Content` component
+* Aanbevolen inhoud toevoegen aan een communitysite.
+* De montages van de configuratie voor de `Featured Content` component.
 
 ## Aanbevolen inhoud toevoegen aan een pagina {#adding-featured-content-to-a-page}
 
@@ -54,18 +57,25 @@ Wanneer de [vereiste client-side bibliotheken](essentials-featured.md#essentials
 
 Selecteer de geplaatste `Featured Content` component die u wilt openen en selecteer het `Configure` pictogram waarmee het dialoogvenster Bewerken wordt geopend.
 
-![chlimage_1-14](assets/chlimage_1-14.png) ![chlimage_1-15](assets/chlimage_1-15.png)
+![chlimage_1-14](assets/chlimage_1-14.png)
+
+![chlimage_1-15](assets/chlimage_1-15.png)
 
 ### Het tabblad Instellingen {#settings-tab}
 
-Geef op het tabblad **[!UICONTROL Instellingen]** aan welke inhoud u wilt gebruiken:
+Geef op het **[!UICONTROL Settings]** tabblad aan welke inhoud u wilt gebruiken:
 
-* **[!UICONTROL Weergavenaam]** De titel voor de lijst met aanbevolen inhoud. For example `Featured Questions` or `Featured Ideas`. De standaardwaarde is `Featured Content` als deze leeg blijft.
+* **[!UICONTROL Display Name]**
 
-* **[!UICONTROL Locatie van de aanbevolen inhoud]**
-   *(Vereist)* Blader naar de pagina die de inhoud bevat die mogelijk aanwezig is (onderdelen van die pagina moeten zo zijn geconfigureerd dat aanbevolen inhoud is toegestaan). Bijvoorbeeld, `/content/sites/engage/en/forum`
+   De titel voor de lijst met aanbevolen inhoud. For example `Featured Questions` or `Featured Ideas`. De standaardwaarde is `Featured Content` als deze leeg blijft.
 
-* **[!UICONTROL Weergavelimiet]** Het maximum aantal aanbevolen inhoud dat wordt weergegeven. De standaardwaarde is 5.
+* **[!UICONTROL Location of the Featured Content]**
+
+   *(Vereist)* Blader naar de pagina die de inhoud bevat die mogelijk aanwezig is (onderdelen van die pagina moeten zo zijn geconfigureerd dat aanbevolen inhoud is toegestaan). Bijvoorbeeld, `/content/sites/engage/en/forum`.
+
+* **[!UICONTROL Display Limit]**
+
+   Het maximumaantal aanbevolen inhoud dat kan worden weergegeven. De standaardwaarde is 5.
 
 ## Ervaring met sitebezoekers {#site-visitor-experience}
 

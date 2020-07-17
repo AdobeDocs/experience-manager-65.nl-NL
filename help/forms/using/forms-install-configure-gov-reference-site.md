@@ -8,9 +8,9 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 60a5bb489c1f473f3f848909b8c2eb3192c49e88
+source-git-commit: 419ca05287368235b292e1133c35c2680e6022fc
 workflow-type: tm+mt
-source-wordcount: '4685'
+source-wordcount: '5004'
 ht-degree: 1%
 
 ---
@@ -222,6 +222,48 @@ Deze sectie bevat details en instructies over de Configuratie van de Wolk van de
 1. Geef de geconfigureerde client-id en clientgeheim op in de geconfigureerde Adobe Sign-instantie.
 1. Klik op &quot;Verbinding maken met Adobe-ondertekening&quot;.
 1. Klik na een geslaagde verbinding op &quot;Opslaan en sluiten&quot; om de integratie te voltooien.
+
+### Meerdere formulieren invullen en ondertekenen {#fill-sign-multiple-forms}
+
+In dit document worden de stappen beschreven die nodig zijn om de mogelijkheid in te stellen om meerdere formulieren in te vullen en te ondertekenen. U kunt ook [dezelfde mogelijkheid hier](https://forms.enablementadobe.com/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled)proberen. In dit voorbeeld worden de benodigde gegevens voor dit voorbeeld opgeslagen in de AME-opslagplaats. Dit wordt gedaan om wrijvingsloze ervaring te verzekeren om demo activa op uw lokale server op te stellen. In het echte leven zullen wij de zelfde informatie in RDMS van uw keus opslaan.
+
+#### Vereisten {#pre-requisites-fill-sign-multiple-forms}
+
+* [CQ-mailservice op dag configureren](https://docs.adobe.com/content/help/en/experience-manager-65/communities/administer/email.html)
+
+* [AEM Forms configureren met Adobe-handtekening](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-advanced-authoring/adobe-sign-integration-adaptive-forms.html)
+
+#### Het voorbeeld instellen op de lokale server {#setup-sample-local-server}
+
+Voer de volgende stappen uit om het voorbeeld op de lokale server in te stellen:
+
+1. Installeer het pakket. Dit pakket bevat het volgende:
+   * Adaptieve formulieren. De formulieren bevinden zich in de map **formsandsigndemo**
+   * Aangepaste OSGI-pakketten
+   * Workflows
+1. Configureer het [toestemmingsformulier](http://localhost:4502/editor.html/content/forms/af/formsandsigndemo/consentform.html) om uw Adobe-ondertekeningsconfiguratie te gebruiken.
+1. Configureer het formulier voor het vergrendelen [](http://localhost:4502/editor.html/content/forms/af/formsandsigndemo/multistateinterestratelock.html) van meerdere statussen zodat u uw Adobe-ondertekeningsconfiguratie kunt gebruiken.
+1. Workflowmodel voor [FormSandsigningdemo](http://localhost:4502/editor.html/conf/global/settings/workflow/models/formsandsigningdemo.html) openen:
+   1. Open de stap Formulieren opslaan in CRX.
+   1. Wijzig de localhost in het IP-adres van uw AEM-server.
+   1. Sla uw wijzigingen op.
+   1. Synchroniseer de workflow om het runtimemodel te genereren.
+
+      ![Meerdere formulieren ondertekenen](assets/sign-multiple-forms.jpg)
+
+   1. Open het [Refinance-formulier](http://localhost:4502/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled).
+   1. Vul de vereiste velden in. Zorg ervoor dat u een geldig e-mailadres opgeeft en selecteer een of meer formulieren om het formulier te ondertekenen en te verzenden.
+U ontvangt een e-mail met een koppeling om de formulieren in te vullen en te ondertekenen.
+
+#### Problemen oplossen {#troubleshoot-sign-multiple-forms}
+
+* De logbestanden voor foutopsporing worden naar het `signingmultipleforms.log` bestand in de logmap van de server geschreven.
+
+* De te ondertekenen formulieren worden opgeslagen onder `/content/formsforsigning`.
+
+* Zorg ervoor dat alle bundels actief zijn.
+
+* Controleer de configuratie van uw e-mailserver.
 
 ### (Optioneel) Configuratie van de cloud voor MS Dynamics {#ms-dynamics-cloud-configuration}
 

@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: d936cef5-ad76-482d-97bf-c40137185812
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 58a06c1a16c62bffad2893fbec0b32d2ce7267a7
+source-git-commit: 9e941ce092f7d3248c11886d6bf1e54f2e726362
+workflow-type: tm+mt
+source-wordcount: '1226'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +35,7 @@ De functie Forum biedt een gebied voor ingetekende sitebezoekers (leden van de c
 In dit gedeelte van de documentatie wordt het volgende beschreven:
 
 * De forumfunctie toevoegen aan een AEM-site.
-* De montages van de configuratie voor de `Forum`component.
+* De montages van de configuratie voor de `Forum` component.
 
 ### Een forum toevoegen aan een pagina {#adding-a-forum-to-a-page}
 
@@ -44,15 +47,17 @@ en sleep het naar zijn plaats op een pagina waar het forum zou moeten verschijne
 
 Ga voor de benodigde informatie naar [Community Components Basics](/help/communities/basics.md).
 
-Wanneer de [vereiste client-side bibliotheken](/help/communities/essentials-forum.md#essentials-for-client-side) worden opgenomen, ziet u zo de `Forum`component eruit:
+Wanneer de [vereiste client-side bibliotheken](/help/communities/essentials-forum.md#essentials-for-client-side) worden opgenomen, wordt de `Forum` component als volgt weergegeven:
 
-![chlimage_1-104](assets/chlimage_1-104.png)
+![chlimage_1-60](assets/chlimage_1-60.png)
 
 ### Een forum configureren {#configuring-a-forum}
 
 Selecteer de geplaatste `Forum` component die u wilt openen en selecteer het `Configure` pictogram waarmee het dialoogvenster Bewerken wordt geopend.
 
-![chlimage_1-105](assets/chlimage_1-105.png) ![forum-config](assets/forum-config.png)
+![chlimage_1-61](assets/chlimage_1-61.png)
+
+![forum-config](assets/forum-config.png)
 
 #### Het tabblad Instellingen {#settings-tab}
 
@@ -238,9 +243,11 @@ Geef op onder het tabblad **Sorteerinstellingen** op hoe de geposte opmerkingen 
 
    Trek naar beneden om een van de geselecteerde sorteeropties te selecteren die als standaard moeten worden weergegeven. Standaard is dit `Newest`.
 
-* **Tijdopties selecteren voor het sorteren van analysemogelijkheden**
+* **Tijdopties selecteren voor Analytics-sortering**
 
-   Trek omlaag om een van de twee te selecteren `All, Last 24 Hours, Last 7 Days, Last 30 Days`. Standaard is dit `All`.
+   Trek naar beneden om een van de volgende opties te selecteren: `All, Last 24 Hours, Last 7 Days, Last 30 Days`.
+
+   Standaard is dit `All`.
 
 ### Additional Information {#additional-information}
 

@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: ea2b23af-49c3-409b-a041-43c42d846f21
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 58a06c1a16c62bffad2893fbec0b32d2ce7267a7
+source-git-commit: 9e941ce092f7d3248c11886d6bf1e54f2e726362
+workflow-type: tm+mt
+source-wordcount: '753'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +32,7 @@ In dit gedeelte van de documentatie wordt het volgende beschreven:
 
 ### Een bestandsbibliotheek toevoegen aan een pagina {#adding-a-file-library-to-a-page}
 
-Als u een `File Library` component aan een pagina wilt toevoegen in de ontwerpmodus, zoekt u de component
+Als u een `File Library` component aan een pagina wilt toevoegen in de ontwerpmodus, zoekt u de component:
 
 * `Communities / File Library`
 
@@ -39,13 +42,15 @@ Ga voor de benodigde informatie naar [Community Components Basics](/help/communi
 
 Wanneer de [vereiste client-side bibliotheken](/help/communities/essentials-file-library.md#essentials-for-client-side) worden opgenomen, wordt de `File Library` component als volgt weergegeven:
 
-![chlimage_1-145](assets/chlimage_1-145.png)
+![chlimage_1-430](assets/chlimage_1-430.png)
 
 ### Bestandsbibliotheek configureren {#configuring-file-library}
 
 Selecteer de geplaatste `File Library` component die u wilt openen en selecteer het `Configure` pictogram waarmee het dialoogvenster Bewerken wordt geopend.
 
-![chlimage_1-146](assets/chlimage_1-146.png) ![forum-config-1](assets/forum-config-1.png)
+![chlimage_1-431](assets/chlimage_1-431.png)
+
+![chlimage_1-432](assets/chlimage_1-432.png)
 
 #### Tabblad Opmerkingen {#comments-tab}
 

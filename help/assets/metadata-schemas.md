@@ -63,7 +63,7 @@ application doesn't contain the sub type zip OOTB.
 
 ## Een metagegevensschema toevoegen {#add-a-metadata-schema-form}
 
-Voer de volgende stappen uit om een metagegevensschema toe te voegen:
+Ga als volgt te werk om een metagegevensschemaformulier toe te voegen:
 
 1. Als u een aangepaste sjabloon aan de lijst wilt toevoegen, klikt u op **[!UICONTROL Create]** de werkbalk.
 

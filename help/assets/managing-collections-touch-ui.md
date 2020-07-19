@@ -4,10 +4,10 @@ description: Leer taken om verzamelingen met middelen te beheren, zoals verzamel
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: 983f281b77a122c757bb508bee570c6c8490a2b9
 workflow-type: tm+mt
-source-wordcount: '2023'
-ht-degree: 12%
+source-wordcount: '2041'
+ht-degree: 11%
 
 ---
 
@@ -61,7 +61,7 @@ U kunt een verzameling maken met statische verwijzingen, bijvoorbeeld een verzam
 U kunt elementen van de interface Elementen naar een verzameling slepen. U kunt ook een kopie van een verzameling maken en de elementen daar slepen.
 
 1. Selecteer in de gebruikersinterface Elementen de elementen die u aan een verzameling wilt toevoegen.
-1. Sleep de elementen naar de **[!UICONTROL Drop in Collection]** zone. U kunt ook op de werkbalk klikken. **[!UICONTROL To Collection]**
+1. Sleep de elementen naar de **[!UICONTROL Drop in Collection]** zone. Alternatively, click **[!UICONTROL To Collection]** from the toolbar.
 
    ![drop_in_collection](assets/drop_in_collection.png)
 
@@ -246,7 +246,7 @@ In de gebruikersinterface Assets kunt u op basis van bepaalde regels, zoekcriter
 
 ![saved_search_list](assets/saved_searches_list.png)
 
-Opgeslagen zoekopdrachten worden gemaakt wanneer u een slimme verzameling maakt. Slimme verzamelingen worden automatisch toegevoegd aan de lijst met **[!UICONTROL Saved Searches]**. De query voor opgeslagen zoekopdrachten voor de verzameling wordt opgeslagen in de eigenschap `dam:query` in CRXDE op de relatieve locatie `/content/dam/collections/`.
+Opgeslagen zoekopdrachten worden gemaakt wanneer u een slimme verzameling maakt. Slimme verzamelingen worden automatisch toegevoegd aan de lijst met **[!UICONTROL Saved Searches]**. The [!UICONTROL Saved Searches] query for the collection is saved in the `dam:query` property in CRXDE at the relative location `/content/dam/collections/`. Er gelden geen limieten voor de zoekopdrachten die u kunt opslaan en voor de opgeslagen zoekopdrachten die in de lijst worden weergegeven.
 
 >[!NOTE]
 >
@@ -264,7 +264,7 @@ Voer de volgende stappen uit om opgeslagen zoekopdrachten te verwijderen:
 
 1. From the **[!UICONTROL Saved Searches]** list, click **[!UICONTROL Delete]** next to the smart collection that you want to delete.
 
-   ![select_smart_collection-1](assets/select_smart_collection-1.png)
+   ![select_smart_collection](assets/select_smart_collection.png)
 
 1. Klik in het dialoogvenster **[!UICONTROL Delete]** om de opgeslagen zoekopdracht te verwijderen.
 

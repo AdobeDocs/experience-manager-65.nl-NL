@@ -1,12 +1,12 @@
 ---
-title: 'Metagegevensschema''s om de indeling van de pagina met eigenschappen van metagegevens in [!DNL Adobe Experience Manager Assets] te definiëren. '
+title: 'Metagegevensschema''s om de indeling van de pagina met eigenschappen van metagegevens in [!DNL Adobe Experience Manager Assets]te definiëren. '
 description: Het metagegevensschema definieert de indeling van de pagina met eigenschappen en de eigenschappen van metagegevens die voor elementen worden weergegeven. Leer hoe u een aangepast metagegevensschema kunt maken, het schema voor metagegevens kunt bewerken en hoe u het schema voor metagegevens op elementen kunt toepassen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 0496d2d541be052e1201ada2bff99a2ed6fef4f3
 workflow-type: tm+mt
-source-wordcount: '2510'
-ht-degree: 5%
+source-wordcount: '2527'
+ht-degree: 4%
 
 ---
 
@@ -43,16 +43,17 @@ Als u een lijst met formulieren of sjablonen wilt weergeven, navigeert u in de [
 |---|---|---|
 | [!UICONTROL default] |  | Het basisschema voor metagegevens voor elementen. |
 |  | De volgende onderliggende formulieren nemen de eigenschappen van het [!UICONTROL default] formulier over: |  |
+|  | [!UICONTROL dm_video] | Schemaformulier voor video&#39;s over Dynamic Media. |
 |  | [!UICONTROL image] | Schema-formulier voor afbeeldingen van het MIME-type, zoals `image/jpeg` en `image/png`. <br> Het [!UICONTROL image] formulier heeft de volgende onderliggende formuliersjablonen: <ul><li> [!UICONTROL jpeg]: Schema voor activa met subtype [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff]: Schema voor de elementen met subtype TIFF.</li></ul> |
 |  | [!UICONTROL application] | Schema-formulier voor elementen met het MIME-type zoals `application/pdf` en `application/zip`. <br>[!UICONTROL pdf]: Schemaformulier voor elementen met subtype PDF. |
 |  | [!UICONTROL video] | Schemaformulier voor video-elementen met het MIME-type, zoals `video/avi` en `video/mp4`. |
 | [!UICONTROL collection] |  | Schemaformulier voor verzamelingen. |
 | [!UICONTROL contentfragment] |  | [Schemaformulier voor inhoudsfragmenten](/help/sites-developing/customizing-content-fragments.md). |
 | [!UICONTROL forms] |  | Dit schemaformulier heeft betrekking op [Adobe Experience Manager Forms](/help/forms/home.md). |
+| [!UICONTROL ugc_contentfragment] |  | Schemaformulier voor door de gebruiker gegenereerde inhoudsonderdelen en elementen die via sociale media in Experience Manager zijn geïntegreerd. |
 
 <!-- 
-TBD: Add dm_video child for the default form OOTB.
-video doesn't contain any sub types as listed above OOTB.
+TBD: video doesn't contain any sub types as listed above OOTB.
 application doesn't contain the sub type zip OOTB.
 -->
 

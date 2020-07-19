@@ -3,10 +3,10 @@ title: Use Connected Assets to share DAM assets in [!DNL Adobe Experience Manage
 description: Gebruik de middelen die beschikbaar zijn op een [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] externe implementatie.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7d001ce126e72663bf8ad0722cf59c1cb7239ae0
+source-git-commit: 28c55333e0eebb68ada46ee89785f5f6475abf9e
 workflow-type: tm+mt
-source-wordcount: '1994'
-ht-degree: 42%
+source-wordcount: '2019'
+ht-degree: 41%
 
 ---
 
@@ -27,8 +27,8 @@ For the [!DNL Sites] authors, the remote assets are available as read-only local
 
 Controleer de volgende punten voordat u deze functie gebruikt of configureert:
 
-* De gebruikers maken deel uit van aangewezen gebruikersgroepen voor elke implementatie.
-* Voor de plaatsingstypes van de Adobe Experience Manager, is één van de gesteunde criteria voldaan. [!DNL Experience Manager] 6.5 [!DNL Assets] werkt met [!DNL Experience Manager] als Cloud Service. Zie de functionaliteit [Verbonden elementen in Experience Manager als een Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html)voor meer informatie.
+* De gebruikers maken deel uit van de aangewezen gebruikersgroepen op elke plaatsing.
+* Aan een van de ondersteunde criteria wordt voldaan voor [!DNL Adobe Experience Manager] implementatietypen. [!DNL Experience Manager] 6.5 [!DNL Assets] werkt met [!DNL Experience Manager] als Cloud Service. Zie de functionaliteit [Verbonden elementen in Experience Manager als een Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html)voor meer informatie.
 
    |  | [!DNL Sites] als Cloud Service | [!DNL Experience Manager] 6.5 [!DNL Sites] over AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] on-premise |
    |---|---|---|---|
@@ -41,7 +41,7 @@ Controleer de volgende punten voordat u deze functie gebruikt of configureert:
 Auteurs zoeken naar afbeeldingen en de volgende typen documenten in de Inhoudszoeker en gebruiken de doorzochte elementen in de Pagina-editor. Documenten worden toegevoegd aan de `Download` component en afbeeldingen aan de `Image` component. Authors also add the remote assets in any custom [!DNL Experience Manager] component that extends the default `Download` or `Image` components. De ondersteunde indelingen zijn:
 
 * **Afbeeldingsindelingen**: De indelingen die de [component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) Image ondersteunt. [!DNL Dynamic Media] afbeeldingen worden niet ondersteund.
-* **Documentindelingen**: Zie [de documentindelingen die worden ondersteund door Connected Assets](assets-formats.md#supported-document-formats).
+* **Documentindelingen**: Zie de [ondersteunde documentindelingen](assets-formats.md#supported-document-formats).
 
 ### Betrokken gebruikers en groepen {#users-and-groups-involved}
 
@@ -96,8 +96,8 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
    | Voor | Na |
    |---|---|
    | `/content/dam(/((?!/subassets).)*/)renditions/original` | `/content/dam(/((?!/subassets)(?!connectedassets).)*/)renditions/original` |
-   | `/content/dam(/*/)renditions/original` | `/content/dam(/((?!connectedassets).)*/)renditions/original` |
-   | `/content/dam(/*)/jcr:content/metadata` | `/content/dam(/((?!connectedassets).)*/)jcr:content/metadata` |
+   | `/content/dam(/.*/)renditions/original` | `/content/dam(/((?!connectedassets).)*/)renditions/original` |
+   | `/content/dam(/.*)/jcr:content/metadata` | `/content/dam(/((?!connectedassets).)*/)jcr:content/metadata` |
 
    >[!NOTE]
    >
@@ -182,7 +182,8 @@ De opgehaalde assets kunnen net als elke andere lokale asset worden gebruikt, al
 
 * Gebruikers kunnen tijdens het ontwerpen zoeken naar externe elementen en deze naar de lokale pagina slepen. Er wordt geen andere functionaliteit ondersteund.
 * Voor ophaalbewerkingen geldt een time-out na 5 seconden. Auteurs kunnen problemen ervaren bij het ophalen van assets, bijvoorbeeld als er netwerkproblemen optreden. Authors can reattempt by dragging the remote asset from [!UICONTROL Content Finder] to [!UICONTROL Page Editor].
-* Simple edits that are non-destructive and the edit supported via the `Image` component can be done on fetched assets. Assets zijn alleen-lezen.
+* Eenvoudige bewerkingen die niet-destructief zijn en bewerkingen die worden ondersteund via de `Image`-component van , kunnen worden uitgevoerd op opgehaalde elementen. Assets zijn alleen-lezen.
+* De enige methode om het element opnieuw op te halen is het op een pagina te slepen. Er is geen API-ondersteuning of andere methoden om middelen opnieuw op te halen om deze bij te werken.
 
 ## Problemen oplossen {#troubleshoot}
 

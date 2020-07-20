@@ -10,7 +10,7 @@ content-type: reference
 translation-type: tm+mt
 source-git-commit: 56c9bc1ea99dcb93af21d8b26bac8792512f4d42
 workflow-type: tm+mt
-source-wordcount: '2233'
+source-wordcount: '2241'
 ht-degree: 2%
 
 ---
@@ -152,7 +152,8 @@ Zie ook [Een voorvertoning weergeven van elementen via de software-interface.](/
 
    * Klik rechtsboven op de pagina **[!UICONTROL Preview]** om de **[!UICONTROL Preview]** modus te activeren.
    * Verwijder `/editor.html` de URL van de pagina in de browser.
-   ![3D-element dat in het 3D-mediacomponent](/help/assets/assets-dm/3d-asset-in-3d-media.png)A volledig interactief 3D-element wordt weergegeven, zoals in de **[!UICONTROL Preview]** modus wordt weergegeven.
+
+Een volledig interactief 3D-element zoals weergegeven in    ![3D-element dat in het 3D-mediacomponent](/help/assets/assets-dm/3d-asset-in-3d-media.png)A volledig interactief 3D-element wordt weergegeven, zoals in de **[!UICONTROL Preview]** modus wordt weergegeven.
 
 1. Voer in de **[!UICONTROL Preview]** modus een van de volgende handelingen uit:
 
@@ -280,6 +281,7 @@ Zie ook Pagina&#39;s [publiceren.](/help/sites-authoring/publishing-pages.md)
    * Het 3D-element heeft een ondersteunde indeling (GLB, OBJ, STL en USDZ).
    * Het 3D element werd opgenomen in het Systeem van de Productie van het Beeld van Dynamic Media (IPS).
    * Het 3D-element wordt gepubliceerd.
+
    ![3d-asset-url](/help/assets/assets-dm/3d-asset-url.png)
 
 1. Tik **[!UICONTROL URL]** om de directe productie-URL van het 3D-element weer te geven, die u kunt kopiëren en gebruiken op webpagina&#39;s.

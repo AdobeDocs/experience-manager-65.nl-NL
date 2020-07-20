@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: dc0191d0-f181-4e1e-b3f4-73427aa22073
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: eb5ec39431d365ed6ba274018bbca437a58bfafe
 workflow-type: tm+mt
 source-wordcount: '3221'
 ht-degree: 0%
@@ -176,7 +176,7 @@ Om een component Scene7/een kijker aan een pagina in klassieke UI toe te voegen:
 
 ### Interactieve weergaven toevoegen aan een responsieve website {#adding-interactive-viewing-experiences-to-a-responsive-website}
 
-Het responsieve ontwerp voor uw middelen betekent dat uw middelen worden aangepast afhankelijk van waar ze worden weergegeven. Bij een responsief ontwerp kunnen dezelfde elementen effectief op meerdere apparaten worden weergegeven.
+Het responsieve ontwerp voor uw middelen betekent dat uw middelen worden aangepast afhankelijk van waar ze worden weergegeven. Bij een responsief ontwerp kunnen dezelfde middelen effectief op meerdere apparaten worden weergegeven.
 
 Een interactieve kijkervaring toevoegen aan een responsieve site in de klassieke gebruikersinterface:
 
@@ -221,7 +221,7 @@ In de HTML5 Flyout-component wordt het element weergegeven als gesplitst scherm.
 >
 >Als uw Flyout-component een aangepaste grootte gebruikt, wordt die aangepaste grootte gebruikt en wordt de responsieve instelling van de component uitgeschakeld.
 >
->Als de component Flyout de standaardgrootte gebruikt, zoals die in de ontwerpweergave is ingesteld, wordt de standaardgrootte gebruikt en wordt de component uitgerekt om de grootte van de paginalay-out aan te passen met de responsieve instelling van de component ingeschakeld. Houd er echter rekening mee dat er een beperking geldt voor de responsieve installatie van de component. Wanneer u de component Flyout met ontvankelijke opstelling gebruikt, zou u het niet met volledige paginalrek moeten gebruiken. Anders kan de Flyout de rechterrand van de pagina overschrijden.
+>Als de component Flyout de standaardgrootte gebruikt, zoals die in de ontwerpweergave is ingesteld, wordt de standaardgrootte gebruikt en wordt de component uitgerekt om de grootte van de paginalay-out aan te passen met de responsieve instelling van de component ingeschakeld. Houd er echter rekening mee dat er een beperking geldt voor de responsieve instelling van de component. Wanneer u de component Flyout met ontvankelijke opstelling gebruikt, zou u het niet met volledige paginalrek moeten gebruiken. Anders kan de Flyout de rechterrand van de pagina overschrijden.
 
 ![chlimage_1-53](assets/chlimage_1-53.png)
 
@@ -291,7 +291,7 @@ Als u een veld wilt koppelen aan de waarde van de clientcontext, klikt u op **Se
 
 ![chlimage_1-60](assets/chlimage_1-60.png)
 
-De tekst geeft de naam weer van de gebruiker die momenteel is aangemeld. U kunt de oorspronkelijke waarde van de tekst herstellen door op **Herstellen **naast het veld te klikken.
+De tekst geeft de naam weer van de gebruiker die momenteel is aangemeld. U kunt de oorspronkelijke waarde van de tekst herstellen door op **Herstellen** naast het veld te klikken.
 
 ![chlimage_1-61](assets/chlimage_1-61.png)
 
@@ -336,14 +336,15 @@ Als u veelvoudige configuraties hebt, toont AEM door gebrek de [standaardconfigu
 >* De activa die in de ad hoc omslag worden gevestigd zullen niet in Scene7 inhoudsbrowser verschijnen.
 >* Wanneer de [Veilige Voorproef wordt toegelaten](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), zowel verschijnen de gepubliceerde als unpublished activa op Scene7 in browser van de inhoud Scene7.
 >* Als u **Scene7** of het pictogram **S7** niet als optie in inhoudbrowser ziet, moet u Scene7 [vormen om met AEM](/help/sites-administering/scene7.md)te werken.
+
    >
    >
 * Voor video, steunt Scene7 inhoudsbrowser:
    >
-   >  
-* Adaptieve videosets: container met alle video-uitvoeringen die nodig zijn voor naadloze weergave op meerdere schermen
->  * Eén MP4-video
->  * Single F4V-video
+   >   
+   * Adaptieve videosets: container met alle video-uitvoeringen die nodig zijn voor naadloze weergave op meerdere schermen
+   >   * Eén MP4-video
+   >   * Single F4V-video
 
 
 ### Bladeren door inhoud {#browsing-content-in-the-classic-ui}
@@ -365,6 +366,7 @@ Elementen worden standaard weergegeven op bestandsnaam. U kunt resultaten ook fi
 >* Adaptieve videosets: container met alle video-uitvoeringen die nodig zijn voor naadloze weergave op meerdere schermen
 >* Eén MP4-video
 >* Single F4V-video
+
 >
 
 

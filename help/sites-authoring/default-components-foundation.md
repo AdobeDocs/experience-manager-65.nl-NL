@@ -185,7 +185,8 @@ Afhankelijk van het item dat u kiest, wordt een nieuw deelvenster weergegeven:
          * **Bovenliggende pagina** Geef een pad handmatig of met de kiezer op. Laat leeg als u de huidige pagina als bovenliggend item wilt gebruiken.
       * **Opties voor vaste lijst**
 
-         * **Pagina&#39;s** Selecteer een lijst met pagina&#39;s. Gebruik deze optie `+` om meer items toe te voegen en de knoppen Omhoog en Omlaag om de volgorde aan te passen.
+         * **Pagina&#39;s** Selecteer een lijst met pagina&#39;s. Gebruiken 
+`+` om meer items toe te voegen en de knoppen Omhoog en Omlaag om de volgorde aan te passen.
       * **Zoekopties**
 
          * **Begin in** ga een beginweg, of manueel of gebruikend de selecteur in.
@@ -195,7 +196,8 @@ Afhankelijk van het item dat u kiest, wordt een nieuw deelvenster weergegeven:
 
          * **Querybuilder voorspelt aantekening**U kunt een onderzoeksvraag ingaan gebruikend de predicaataantekening van de Bouwer Querybuilder. U kunt bijvoorbeeld &quot;fulltext=Marketing&quot; invoeren om alle pagina&#39;s met &quot;Marketing&quot; in de inhoud weer te geven in de carrousel.
 Zie [QueryBuilder API](/help/sites-developing/querybuilder-api.md) voor volledige bespreking van vraaguitdrukkingen en verdere voorbeelden.
-   * **De orde door** Uitgezocht `jcr:title`, `jcr:created`, `cq:lastModified`, of van het dropdown menu `cq:template` .
+   * **Volgorde bij** selecteren 
+`jcr:title`, `jcr:created`, `cq:lastModified`of `cq:template` uit het vervolgkeuzemenu.
 
    * **Beperk** het maximumaantal items dat u in de carrousel wilt gebruiken; dit is optioneel.
 
@@ -205,7 +207,7 @@ Zie [QueryBuilder API](/help/sites-developing/querybuilder-api.md) voor volledig
 
 >[!NOTE]
 >
->U kunt een aangepaste carrouselcomponent maken voor Adobe Experience Manager waarmee de digitale elementen in de AEM DAM worden weergegeven. Zie Aangepaste carrouselcomponenten [maken voor Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/custom-carousel-components.html)voor meer informatie.
+>U kunt een aangepaste carrouselcomponent voor Adobe Experience Manager maken die digitale elementen in de AEM DAM weergeeft. Zie Aangepaste carrouselcomponenten [maken voor Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/custom-carousel-components.html)voor meer informatie.
 
 ### Diagram {#chart}
 
@@ -235,7 +237,7 @@ In het volgende voorbeeld ziet u een voorbeeld van diagramgegevens, gevolgd door
 
 >[!NOTE]
 >
->U kunt een aangepast AEM-diagrambesturingselement maken dat gegevens weergeeft die zich in de JCR van AEM bevinden. Zie Gegevens van Adobe Experience Manager [weergeven in een diagram](https://helpx.adobe.com/experience-manager/using/displaying-experience-manager-data-chart.html)voor meer informatie.
+>U kunt een aangepast AEM-diagrambesturingselement maken dat gegevens weergeeft die zich in de JCR van AEM bevinden. Voor informatie, zie de Gegevens van de [Adobe Experience Manager in een Grafiek](https://helpx.adobe.com/experience-manager/using/displaying-experience-manager-data-chart.html)tonen.
 
 ### Inhoudsfragment {#content-fragment}
 
@@ -281,7 +283,7 @@ Met de externe component voor toepassingsintegratie (**Extern**) kunt u externe 
 
 * **Extern**
 
-   * **Doeltoepassing** Geef de URL op van de webtoepassing die moet worden geïntegreerd; bijvoorbeeld:
+   * **Target-toepassing** Geef de URL op van de webtoepassing die moet worden geïntegreerd; bijvoorbeeld:
 
       ```
       https://en.wikipedia.org/wiki/Main_Page
@@ -291,7 +293,7 @@ Met de externe component voor toepassingsintegratie (**Extern**) kunt u externe 
 
    * **Breedte en Hoogte**De grootte van het iframe definiëren
 
-De externe toepassing is geïntegreerd in het alineasysteem van de AEM-pagina. bijvoorbeeld bij het gebruik van een doeltoepassing van `https://en.wikipedia.org/wiki/Main_Page`:
+De externe toepassing is geïntegreerd in het alineasysteem van de AEM-pagina. bijvoorbeeld bij het gebruik van een Target-toepassing van `https://en.wikipedia.org/wiki/Main_Page`:
 
 ![chlimage_1-90](assets/chlimage_1-90.png)
 
@@ -919,7 +921,7 @@ De component Foundation van componenten is afgekeurd. Adobe raadt u aan de [kern
 Formuliercomponenten worden gebruikt om formulieren te maken waarmee bezoekers invoer kunnen verzenden. Formulieren en formuliercomponenten kunnen worden gebruikt om informatie te verzamelen, waaronder gebruikersfeedback (bijvoorbeeld een vragenlijst voor klanttevredenheid) en gebruikersgegevens (bijvoorbeeld gebruikersregistratie).
 
 >[!NOTE]
-Zie de Help bij [AEM Forms](/help/forms/home.md) voor informatie over AEM Forms.
+Zie de Help bij [](/help/forms/home.md) AEM Forms voor informatie over AEM Forms.
 
 Formulieren worden samengesteld uit verschillende onderdelen:
 
@@ -1470,5 +1472,5 @@ Deze Foundation-component is vervangen. Adobe raadt u aan de [Form Button Core-c
 
 Zo kunt u een knop Verzenden maken voor gebruik in een workflow.
 
-![chlimage_1-101](assets/chlimage_1-101.png)
+![chlimage_1-181](assets/chlimage_1-101.png)
 

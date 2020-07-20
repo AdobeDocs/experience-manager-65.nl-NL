@@ -27,7 +27,8 @@ Een beheerder kan een netwerkmap, ook wel een gecontroleerde map genoemd, zo con
 U kunt een van de volgende methoden gebruiken om een gecontroleerde map te maken op het bestandssysteem:
 
 * Wanneer het vormen van de eigenschappen van een Gecontroleerde knoop van de Omslagconfiguratie, typ de volledige weg van de ouderfolder in het folderPath bezit en voeg de naam van de Gecontroleerde Te creëren Omslag toe, zoals aangetoond in het volgende voorbeeld: `C:/MyPDFs/MyWatchedFolder`
-De `MyWatchedFolder`map bestaat niet. AEM Forms proberen de map te maken op het opgegeven pad.
+De 
+`MyWatchedFolder`de map bestaat niet. AEM Forms proberen de map te maken op het opgegeven pad.
 
 * Creeer een omslag op het dossiersysteem alvorens een Gecontroleerd eindpunt van de Omslag te vormen, en dan de volledige weg in het folderPath bezit te verstrekken. Zie [Gecontroleerde mapeigenschappen](#watchedfolderproperties)voor meer informatie over de eigenschap folderPath.
 
@@ -53,6 +54,7 @@ Om een Gecontroleerde Omslag te vormen, creeer een Gecontroleerde knoop van de C
    * `inputProcessorType`
    * `inputProcessorId`
    * `outputFilePattern`
+
    Zie [Gecontroleerde mapeigenschappen](#watchedfolderproperties)voor een volledige lijst met ondersteunde eigenschappen.
 
 1. Klik op Alles **opslaan**. Nadat het knooppunt is gemaakt en de eigenschappen zijn opgeslagen. De `input`, `result`, `failure`, `preserve`, en de `stage`omslagen worden gecreeerd bij de weg die in het `folderPath` bezit wordt gespecificeerd.
@@ -141,6 +143,7 @@ Zie [Bestandspatronen voor meer informatie over bestandspatronen](../../forms/us
    * %l = millisecond
    * %R = willekeurig getal (tussen 0 en 9)
    * %P = proces- of taak-id
+
    Als het op 17 juli 2009 bijvoorbeeld 8 uur &#39;s middags is en u C:/Test/WF0/failure/%Y/%M/%D/%H/ opgeeft, is de resultaatmap C:/Test/WF0/failure/2009/07/17/20
 
    Als het pad niet absoluut maar relatief is, wordt de map gemaakt in de gecontroleerde map. De standaardwaarde is result/%Y/%M/%D/. Dit is de resultatenmap in de Gecontroleerde map. Zie [Bestandspatronen](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)voor meer informatie over bestandspatronen.
@@ -163,7 +166,7 @@ Zie [Bestandspatronen voor meer informatie over bestandspatronen](../../forms/us
 
 * **overwriteDuplicateFilename (Boolean)**: Als u de waarde True instelt, worden de bestanden in de map results en preserve overschreven. Wanneer ingesteld op Onwaar, worden bestanden en mappen met het numerieke indexachtervoegsel gebruikt voor de naam. De standaardwaarde is False.
 * **preserveOnFailed (Boolean)**: Invoerbestanden behouden als de bewerking niet op een service wordt uitgevoerd. De standaardwaarde is true.
-* **inputFilePattern (String)**: Hiermee geeft u het patroon op van de invoerbestanden voor een gecontroleerde map. Hiermee maakt u een toegestane lijst met bestanden.
+* **inputFilePattern (String)**: Hiermee geeft u het patroon op van de invoerbestanden voor een gecontroleerde map. Hiermee maakt u een lijst van gewenste personen van de bestanden.
 * **asynch (Boolean)**: Identificeert het aanroepingstype als asynchroon of synchroon. De standaardwaarde is true (asynchroon). De dossierverwerking is een middel verbruikende taak, houd de waarde van de asynchrone vlag aan waar om het onderdrukken van de belangrijkste draad van de aftastenbaan te verhinderen. In een gegroepeerd milieu, is het kritiek om de vlag waar te houden om lading-in evenwicht brengend voor de dossiers toe te laten die over de beschikbare servers worden verwerkt. Als de vlag vals is, probeert de aftastenbaan om verwerking voor elk top-level dossier/omslag opeenvolgend binnen zijn eigen draad uit te voeren. Stel de markering niet in op onwaar zonder een specifieke reden, zoals verwerking op basis van een workflow op basis van één server.
 
 >[!NOTE]
@@ -538,6 +541,7 @@ Wanneer de bronbestanden in de werkgebiedmap niet kunnen worden verwerkt in de g
 
    * Wijzig de eigenschap includeFilePattern voor de Gecontroleerde map in iets dat niet overeenkomt met een van de nieuwe invoerbestanden (voer bijvoorbeeld NOMATCH in).
    * Onderbreek het proces dat nieuwe invoerbestanden maakt.
+
    Wacht tot AEM Forms alle bestanden herstelt en verwerkt. De meeste bestanden moeten worden hersteld en nieuwe invoerbestanden moeten correct worden verwerkt. De tijdsduur dat u wacht tot de gecontroleerde map de bestanden heeft hersteld en verwerkt, is afhankelijk van de lengte van de bewerking die moet worden aangeroepen en het aantal bestanden dat moet worden hersteld.
 
 1. Bepaal welke bestanden niet kunnen worden verwerkt. Ga naar de volgende stap als u op een geschikte hoeveelheid tijd hebt gewacht en de vorige stap hebt voltooid en er nog steeds onverwerkte bestanden in de map met werkgebieden staan.

@@ -3,7 +3,7 @@ title: 'Metagegevensschema''s om de indeling van de pagina met eigenschappen van
 description: Het metagegevensschema definieert de indeling van de pagina met eigenschappen en de eigenschappen van metagegevens die voor elementen worden weergegeven. Leer hoe u een aangepast metagegevensschema kunt maken, het schema voor metagegevens kunt bewerken en hoe u het schema voor metagegevens op elementen kunt toepassen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0496d2d541be052e1201ada2bff99a2ed6fef4f3
+source-git-commit: 04babc1ec79a0816e1cb9f97e2711fe212f51387
 workflow-type: tm+mt
 source-wordcount: '2527'
 ht-degree: 4%
@@ -43,19 +43,14 @@ Als u een lijst met formulieren of sjablonen wilt weergeven, navigeert u in de [
 |---|---|---|
 | [!UICONTROL default] |  | Het basisschema voor metagegevens voor elementen. |
 |  | De volgende onderliggende formulieren nemen de eigenschappen van het [!UICONTROL default] formulier over: |  |
-|  | [!UICONTROL dm_video] | Schemaformulier voor video&#39;s over Dynamic Media. |
-|  | [!UICONTROL image] | Schema-formulier voor afbeeldingen van het MIME-type, zoals `image/jpeg` en `image/png`. <br> Het [!UICONTROL image] formulier heeft de volgende onderliggende formuliersjablonen: <ul><li> [!UICONTROL jpeg]: Schema voor activa met subtype [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff]: Schema voor de elementen met subtype TIFF.</li></ul> |
-|  | [!UICONTROL application] | Schema-formulier voor elementen met het MIME-type zoals `application/pdf` en `application/zip`. <br>[!UICONTROL pdf]: Schemaformulier voor elementen met subtype PDF. |
-|  | [!UICONTROL video] | Schemaformulier voor video-elementen met het MIME-type, zoals `video/avi` en `video/mp4`. |
+|  | <ul><li>[!UICONTROL dm_video]</li></ul> | Schemaformulier voor video&#39;s over Dynamic Media. |
+|  | <ul><li>[!UICONTROL image]</li></ul> | Schema-formulier voor afbeeldingen van het MIME-type, zoals `image/jpeg` en `image/png`. <br> Het [!UICONTROL image] formulier heeft de volgende onderliggende formuliersjablonen: <ul><li> [!UICONTROL jpeg]: Schema voor activa met subtype [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff]: Schema voor de elementen met subtype TIFF.</li></ul> |
+|  | <ul><li>[!UICONTROL application]</li></ul> | Schema-formulier voor elementen met het MIME-type zoals `application/pdf` en `application/zip`. <br>[!UICONTROL pdf]: Schemaformulier voor elementen met subtype PDF. |
+|  | <ul><li>[!UICONTROL video]</li></ul> | Schemaformulier voor video-elementen met het MIME-type, zoals `video/avi` en `video/mp4`. |
 | [!UICONTROL collection] |  | Schemaformulier voor verzamelingen. |
 | [!UICONTROL contentfragment] |  | [Schemaformulier voor inhoudsfragmenten](/help/sites-developing/customizing-content-fragments.md). |
 | [!UICONTROL forms] |  | Dit schemaformulier heeft betrekking op [Adobe Experience Manager Forms](/help/forms/home.md). |
 | [!UICONTROL ugc_contentfragment] |  | Schemaformulier voor door de gebruiker gegenereerde inhoudsonderdelen en elementen die via sociale media in Experience Manager zijn geïntegreerd. |
-
-<!-- 
-TBD: video doesn't contain any sub types as listed above OOTB.
-application doesn't contain the sub type zip OOTB.
--->
 
 >[!NOTE]
 >
@@ -63,7 +58,7 @@ application doesn't contain the sub type zip OOTB.
 
 ## Een metagegevensschema toevoegen {#add-a-metadata-schema-form}
 
-Ga als volgt te werk om een metagegevensschemaformulier toe te voegen:
+Voer de volgende stappen uit om een metagegevensschema toe te voegen:
 
 1. Als u een aangepaste sjabloon aan de lijst wilt toevoegen, klikt u op **[!UICONTROL Create]** de werkbalk.
 

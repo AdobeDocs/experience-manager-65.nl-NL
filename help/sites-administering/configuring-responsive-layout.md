@@ -45,7 +45,8 @@ AEM realiseert een responsieve indeling voor uw pagina&#39;s met behulp van een 
 
          U kunt de lay-outcontainer als standaard voor de pagina hebben, terwijl het toestaan van de gebruiker om verdere lay-outcontainers binnen dit toe te voegen; bijvoorbeeld om kolombesturing te bereiken.
 
-* **[Lay-outmodus](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**Zodra de lay-outcontainer op de pagina is geplaatst, kunt u de **modus Lay-out**gebruiken om inhoud binnen het responsieve raster te plaatsen.
+* **[Lay-outmodus](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**Als de lay-outcontainer op de pagina is geplaatst, kunt u de opdracht
+**Lay-outmodus** om inhoud binnen het responsieve raster te plaatsen.
 
 * [**Emulator **](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)Hiermee kunt u responsieve websites maken en bewerken die de lay-out op basis van de grootte van het apparaat/venster opnieuw rangschikken door de grootte van componenten interactief aan te passen. De gebruiker kan dan zien hoe de inhoud wordt gerenderd met de emulator.
 
@@ -116,6 +117,7 @@ Als u een bestaand project (met bestaande inhoud) migreert, moet u:
 >
 >* Onderbrekingspunten toevoegen aan de sjablonen
 >* Voeg dezelfde onderbrekingspunten toe aan de bestaande pagina&#39;s
+
 >
 >  
 Aangezien de overerving in verrichting is, kunt u dit tot de wortelpagina van uw inhoud beperken.

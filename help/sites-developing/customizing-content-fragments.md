@@ -1,6 +1,6 @@
 ---
-title: Inhoudsfragmenten aanpassen en uitbreiden
-seo-title: Inhoudsfragmenten aanpassen en uitbreiden
+title: Contentfragmenten aanpassen en uitbreiden
+seo-title: Contentfragmenten aanpassen en uitbreiden
 description: Een inhoudsfragment breidt een standaardelement uit.
 seo-description: Een inhoudsfragment breidt een standaardelement uit.
 uuid: f72c3a23-9b0d-4fab-a960-bb1350f01175
@@ -14,12 +14,12 @@ translation-type: tm+mt
 source-git-commit: afed13a2f832b91d0df825d1075852cc84443646
 workflow-type: tm+mt
 source-wordcount: '2749'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Inhoudsfragmenten aanpassen en uitbreiden{#customizing-and-extending-content-fragments}
+# Contentfragmenten aanpassen en uitbreiden{#customizing-and-extending-content-fragments}
 
 Een inhoudsfragment breidt een standaardelement uit; zie:
 
@@ -50,6 +50,7 @@ Afhankelijk van het type fragment worden ook modellen of sjablonen gebruikt:
    * Een fragment verwijst naar het model; wijzigingen in het model kunnen/zullen dus gevolgen hebben voor afhankelijke fragmenten.
    * Modellen zijn samengesteld uit gegevenstypen.
    * Functies om nieuwe variaties toe te voegen, enz., moeten het fragment dienovereenkomstig bijwerken.
+
    >[!CAUTION]
    >
    >Wijzigingen in een bestaand inhoudsfragmentmodel kunnen van invloed zijn op afhankelijke fragmenten. dit kan leiden tot weeseigenschappen in die fragmenten .
@@ -69,7 +70,7 @@ CFM (Content Fragment Management) maakt deel uit van AEM Assets als:
 
 * Inhoudsfragmenten zijn elementen.
 * Ze gebruiken de bestaande functionaliteit Elementen.
-* Ze zijn volledig geïntegreerd met middelen (beheerconsoles, enz.).
+* Ze zijn volledig geïntegreerd met Elementen (beheerconsoles, enz.).
 
 #### Gestructureerde inhoudsfragmenten toewijzen aan elementen {#mapping-structured-content-fragments-to-assets}
 
@@ -79,7 +80,7 @@ Inhoudsfragmenten met gestructureerde inhoud (d.w.z. gebaseerd op een inhoudsfra
 
 * Alle inhoud wordt opgeslagen onder het `jcr:content/data` knooppunt van het element:
 
-   * De elementgegevens worden opgeslagen onder het hoofdsubknooppunt:
+   * De elementgegevens worden opgeslagen onder het master subknooppunt:
       `jcr:content/data/master`
 
    * Variaties worden opgeslagen onder een subknooppunt met de naam van de variatie:
@@ -88,7 +89,8 @@ bijv. `jcr:content/data/myvariation`
    * De gegevens van elk element worden in het desbetreffende subknooppunt opgeslagen als een eigenschap met de elementnaam:
 De inhoud van het element `text` wordt bijvoorbeeld opgeslagen als eigenschap `text` op `jcr:content/data/master`
 
-* Metagegevens en bijbehorende inhoud worden hieronder opgeslagen `jcr:content/metadata`Met uitzondering van de titel en beschrijving, die niet als traditionele metagegevens worden beschouwd en die worden opgeslagen op `jcr:content`
+* Metagegevens en bijbehorende inhoud worden hieronder opgeslagen `jcr:content/metadata`Met uitzondering van de titel en beschrijving, die niet als traditionele metagegevens worden beschouwd en die worden opgeslagen op 
+`jcr:content`
 
 #### Eenvoudige inhoudsfragmenten toewijzen aan elementen {#mapping-simple-content-fragments-to-assets}
 
@@ -158,7 +160,8 @@ De back-endimplementatie van inhoudsfragmenten is bijvoorbeeld verantwoordelijk 
 
 De parameters voor dit kunnen in de Console [van het](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)Web, voor de OSGi configuratie **van de Component van het Fragment van de** Inhoud van de bundel worden gevormd.
 
-* **Brontypen** Er kan een lijst met componenten `sling:resourceTypes` worden opgegeven die worden gebruikt voor het renderen van inhoudsfragmenten en waarop de achtergrondverwerking moet worden toegepast.
+* **Brontypen** Een lijst met 
+`sling:resourceTypes` kan worden opgegeven om componenten te definiëren die worden gebruikt voor het renderen van inhoudsfragmenten en waar de achtergrondverwerking moet worden toegepast.
 
 * **Referentie-eigenschappen** Een lijst met eigenschappen kan worden geconfigureerd om op te geven waar de verwijzing naar het fragment wordt opgeslagen voor de desbetreffende component.
 
@@ -262,6 +265,7 @@ De volgende drie interfaces kunnen als ingangspunten dienen:
 
    * een inhoudsfragmentmodel of een inhoudsfragmentsjabloon op basis waarvan een inhoudsfragment moet worden gemaakt,
    * en (na het maken) de structuurgegevens van dat fragment
+
    Deze informatie kan omvatten:
 
    * Toegang tot basisgegevens (titel, beschrijving)
@@ -276,6 +280,7 @@ De volgende drie interfaces kunnen als ingangspunten dienen:
       * Structuurgegevens voor een bepaalde wijziging ophalen
       * Toegang tot de variatiesjabloon (zie `VariationTemplate`)
    * Aanvankelijke gekoppelde inhoud ophalen
+
    Interfaces die belangrijke informatie vertegenwoordigen:
 
    * `ElementTemplate`
@@ -318,6 +323,7 @@ De volgende drie interfaces kunnen als ingangspunten dienen:
       * Verzamelingen toevoegen
       * Verzamelingen verwijderen
    * Open het model of de sjabloon van het fragment
+
    De interfaces die de belangrijkste elementen van een fragment vertegenwoordigen zijn:
 
    * **Content Element** ([ContentElement](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
@@ -337,6 +343,7 @@ De volgende drie interfaces kunnen als ingangspunten dienen:
       * Basisgegevens ophalen (naam, titel, beschrijving)
       * Inhoud ophalen/instellen
       * Eenvoudige synchronisatie, gebaseerd op laatst gewijzigde informatie
+
    Alle drie interfaces ( `ContentFragment`, `ContentElement`, `ContentVariation`) breiden de `Versionable` interface uit, die versiemogelijkheden toevoegt, die voor inhoudsfragmenten worden vereist:
 
    * Nieuwe versie van het element maken
@@ -399,7 +406,7 @@ Zie het volgende:
 
 * `filter.xml`
 
-   De methode `filter.xml` voor het beheer van inhoudsfragmenten is zo geconfigureerd dat deze niet overlapt met het inhoudspakket voor de kern van elementen.
+   De methode `filter.xml` voor het beheer van inhoudsfragmenten is zo geconfigureerd dat deze niet overlapt met het inhoudspakket voor de kernelementen.
 
 ## Sessies bewerken {#edit-sessions}
 

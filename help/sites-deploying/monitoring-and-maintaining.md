@@ -207,13 +207,15 @@ Elk toegangsverzoek wordt hier geregistreerd samen met de reactie.
 Dit logboek wordt slechts gebruikt als [!DNL Dynamic Media] wordt toegelaten. Het s7access logboek registreert elk verzoek aan [!DNL Dynamic Media] door `/is/image` en `/is/content`.
 
    * `stderr.log`
-Bevat foutberichten, opnieuw van verschillende niveaus van ernst, die tijdens het opstarten worden gegenereerd. Standaard is het logniveau ingesteld op `Warning` ( `WARN`)
+Bevat foutberichten, opnieuw van verschillende niveaus van ernst, die tijdens het opstarten worden gegenereerd. Standaard is het logniveau ingesteld op 
+`Warning` ( `WARN`)
 
    * `stdout.log`
 Bevat logboekberichten die op gebeurtenissen tijdens opstarten wijzen.
 
    * `upgrade.log`
-Verstrekt een logboek van alle verbeteringsverrichtingen die van de `com.day.compat.codeupgrade` en `com.adobe.cq.upgradesexecutor` pakketten lopen.
+Verstrekt een logboek van alle verbeteringsverrichtingen die van de 
+`com.day.compat.codeupgrade` en `com.adobe.cq.upgradesexecutor` pakketten.
 
 * `<*cq-installation-dir*>/crx-quickstart/repository`
 
@@ -366,9 +368,11 @@ In bepaalde omstandigheden wilt u mogelijk een aangepast logbestand met een ande
    `org.apache.sling.commons.log.file.size` Hiermee bepaalt u de rotatie van het logbestand door een van de volgende instellingen in te stellen:
    * een maximale bestandsgrootte
    * een datum-/tijdschema
+
    om aan te geven wanneer een nieuw bestand wordt gemaakt (en de naam van het bestaande bestand wordt gewijzigd volgens het naampatroon).
    * Een formaatlimiet kan met een getal worden opgegeven. Als er geen grootteindicator is opgegeven, wordt deze gebruikt als het aantal bytes. U kunt ook een van de grootteindicatoren toevoegen - `KB`, `MB`of `GB` (hoofdlettergebruik wordt genegeerd).
    * U kunt een tijd-/datumschema opgeven als een `java.util.SimpleDateFormat` patroon. Hiermee wordt de periode gedefinieerd waarna het bestand wordt geroteerd. ook het achtervoegsel dat aan het geroteerde dossier (voor identificatie) wordt toegevoegd.
+
    De standaardwaarde is &#39;.&#39;jjjj-MM-dd (voor dagelijkse logrotatie).
    Bijvoorbeeld, om middernacht van 20 Januari 2010 (of wanneer het eerste logboekbericht na dit voorkomt om precies te zijn), zal ../logs/error.log worden anders genoemd aan ../logs/error.log.2010-01-20. Logboekregistratie voor 21 januari wordt uitgevoerd naar (een nieuw en leeg) ../logs/error.log totdat de logbestanden bij de volgende wijziging van de dag worden doorgehaald.
    | `'.'yyyy-MM` | Rotatie aan het begin van elke maand |
@@ -449,6 +453,7 @@ Om een replicatieagent te controleren:
    * **Logboek** van de mening om tot het logboek van om het even welke acties door de replicatieagent toegang te hebben.
    * **Verbinding** met de doelinstantie testen.
    * **Indien nodig opnieuw proberen** afdwingen voor alle wachtrij-items.
+
    >[!CAUTION]
    Gebruik de koppeling &quot;Verbinding testen&quot; niet voor het selectievakje Reverse Replication Outbox op een publicatie-instantie.
    Als een replicatietest voor een Postbus rij wordt uitgevoerd, om het even welke punten die ouder zijn dan de testreplicatie zullen met elke omgekeerde replicatie opnieuw worden verwerkt.

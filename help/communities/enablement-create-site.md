@@ -154,7 +154,8 @@ In de [vertaalinstellingen](/help/communities/sites-console.md#translation) word
 
 Voor een machtigingsgemeenschap is het noodzakelijk om één of meerdere Communautaire Beheerders van Enablement te identificeren.
 
-* **De (vereiste) Leden van Enablement Managers** van de `Community Enablement Managers` groep zijn beschikbaar om worden geselecteerd om deze communautaire plaats te beheren.
+* **Beheerders** inschakelen (vereist) Leden van de 
+`Community Enablement Managers` Deze groep is beschikbaar om te worden geselecteerd voor het beheer van deze communitysite.
 
    * Type `s`
    * Selecteer `Sirius Nilson`
@@ -295,6 +296,7 @@ Aan de slag:
       * **Naam** kiezen:overeenkomst
       * **Tekenreeks**
       * **Value** localhost.4503/$
+
    (moet eindigen met &#39;$&#39; teken)
 
    * Eigenschap toevoegen

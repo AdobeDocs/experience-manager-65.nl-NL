@@ -8,9 +8,9 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 419ca05287368235b292e1133c35c2680e6022fc
+source-git-commit: a0717f5bf9ceb2e6def7feb37de4aa114de48938
 workflow-type: tm+mt
-source-wordcount: '5004'
+source-wordcount: '5020'
 ht-degree: 1%
 
 ---
@@ -81,19 +81,16 @@ De elementen die in dit pakket zijn opgenomen, zijn:
 
 Deze sectie bevat informatie over het installeren van het demopakket.
 
-### Uit pakketshare {#from-package-share}
+### Van softwaredistributie {#from-software-distribution}
 
-1. Ga naar *https://&lt;aemserver>:&lt;port>/crx/packageshare/*
-
-   Of klik in AEM op Implementatie en navigeer naar het pictogram Delen van pakket.
-
-   ![Pictogram Delen pakket](assets/package_share_icon.jpg)
-
-1. Meld u aan met uw Adobe ID.
-1. Zoek en zoek het pakket **we-gov-forms.pkg.all-&lt;version>** .
-1. Selecteer de optie &quot;Downloaden&quot; en accepteer de Algemene voorwaarden.
-1. Nadat u het pakket hebt gedownload, selecteert u de optie &quot;Gedownload&quot; om het pakket te zoeken in Pakketbeheer.
-1. Selecteer de optie &quot;Installeren&quot; om het pakket te installeren.
+1. Open [Softwaredistributie](https://experience.adobe.com/downloads). U hebt een Adobe ID nodig om u aan te melden bij de Softwaredistributie.
+1. Tik **[!UICONTROL Adobe Experience Manager]** beschikbaar in het koptekstmenu.
+1. In het **[!UICONTROL Filters]** gedeelte:
+   1. Selecteer een optie **[!UICONTROL Forms]** in de **[!UICONTROL Solution]** vervolgkeuzelijst.
+   2. Selecteer de versie en typ voor het pakket. U kunt de **[!UICONTROL Search Downloads]** optie ook gebruiken om de resultaten te filteren.
+1. Tik op de **pakketnaam &#39;wij-gov-forms.pkg.all-&#39;&lt;version>.zip** , selecteer **[!UICONTROL Accept EULA Terms]** en tik op **[!UICONTROL Download]**.
+1. Open [Package Manager](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) en klik **[!UICONTROL Upload Package]** om het pakket te uploaden.
+1. Selecteer het pakket en klik **[!UICONTROL Install]**.
 
    ![we gov - formulierpakket](assets/wegov_forms_package.jpg)
 

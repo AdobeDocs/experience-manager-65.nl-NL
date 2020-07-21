@@ -1,12 +1,12 @@
 ---
-title: Beheer [!DNL Adobe Stock] middelen in [!DNL Adobe Experience Manager Assets].
-description: Zoek, haal een licentie aan en beheer [!DNL Adobe Stock] middelen vanuit [!DNL Adobe Experience Manager]. Gebruik de in licentie gegeven activa als elk ander digitaal actief.
+title: ' [!DNL Adobe Stock] Elementen beheren in [!DNL Adobe Experience Manager Assets].'
+description: Zoek, haal, vergunning, en [!DNL Adobe Stock] beheer activa van binnen [!DNL Adobe Experience Manager]. Gebruik de in licentie gegeven activa als elk ander digitaal actief.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 376940612066123a8f84fe6c30ff3002cda08079
+source-git-commit: 2701c64b3e049ac423ef74147930de2da78a3d81
 workflow-type: tm+mt
-source-wordcount: '1056'
-ht-degree: 2%
+source-wordcount: '1030'
+ht-degree: 3%
 
 ---
 
@@ -19,7 +19,7 @@ Organisaties kunnen hun [!DNL Adobe Stock] ondernemingsplan integreren [!DNL Exp
 
 ## Vereisten {#prerequisites}
 
-Voor de integratie is een Adobe Stock- [ondernemingsplan](https://stockenterprise.adobe.com/) en [!DNL Experience Manager] 6.5 of hoger vereist. Voor [!DNL Experience Manager] 6.5 de details van het de dienstpak, zie deze [versienota&#39;s](/help/release-notes/sp-release-notes.md).
+Voor de integratie is een Adobe Stock- [ondernemingsplan](https://stockenterprise.adobe.com/)vereist.
 
 ## Integreer [!DNL Experience Manager] en [!DNL Adobe Stock] {#integrate-aem-and-adobe-stock}
 

@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: dc0191d0-f181-4e1e-b3f4-73427aa22073
 docset: aem65
 translation-type: tm+mt
-source-git-commit: eb5ec39431d365ed6ba274018bbca437a58bfafe
+source-git-commit: 9bd71115dac8109c9a47155ab60ac7573d88014c
 workflow-type: tm+mt
 source-wordcount: '3221'
 ht-degree: 0%
@@ -176,7 +176,7 @@ Om een component Scene7/een kijker aan een pagina in klassieke UI toe te voegen:
 
 ### Interactieve weergaven toevoegen aan een responsieve website {#adding-interactive-viewing-experiences-to-a-responsive-website}
 
-Het responsieve ontwerp voor uw middelen betekent dat uw middelen worden aangepast afhankelijk van waar ze worden weergegeven. Bij een responsief ontwerp kunnen dezelfde middelen effectief op meerdere apparaten worden weergegeven.
+Het responsieve ontwerp voor uw middelen betekent dat uw middelen worden aangepast afhankelijk van waar ze worden weergegeven. Bij een responsief ontwerp kunnen dezelfde elementen effectief op meerdere apparaten worden weergegeven.
 
 Een interactieve kijkervaring toevoegen aan een responsieve site in de klassieke gebruikersinterface:
 
@@ -340,9 +340,7 @@ Als u veelvoudige configuraties hebt, toont AEM door gebrek de [standaardconfigu
    >
    >
 * Voor video, steunt Scene7 inhoudsbrowser:
-   >
-   >   
-   * Adaptieve videosets: container met alle video-uitvoeringen die nodig zijn voor naadloze weergave op meerdere schermen
+   >   * Adaptieve videosets: container met alle video-uitvoeringen die nodig zijn voor naadloze weergave op meerdere schermen
    >   * Eén MP4-video
    >   * Single F4V-video
 

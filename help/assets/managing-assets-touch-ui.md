@@ -4,9 +4,9 @@ description: Leer de taken voor middelenbeheer, zoals het uploaden, downloaden, 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '9026'
+source-wordcount: '9016'
 ht-degree: 3%
 
 ---
@@ -114,7 +114,7 @@ Voordat u een element uploadt, moet u ervoor zorgen dat dit een [indeling](/help
 
    [!DNL Experience Manager Assets] Hiermee voorkomt u dat elementen met de verboden tekens in de bestandsnaam worden geüpload. Als u een element probeert te uploaden met een bestandsnaam die een niet-toegestaan teken of meer bevat, wordt een waarschuwingsbericht weergegeven en wordt het uploaden gestopt totdat u deze tekens verwijdert of uploadt met een toegestane naam. [!DNL Assets]
 
-   In het [!UICONTROL Upload Assets] dialoogvenster kunt u lange namen opgeven voor de bestanden die u uploadt, zodat deze passen bij specifieke naamconventies voor bestanden voor uw organisatie.
+   In het [!UICONTROL Upload Assets] dialoogvenster kunt u lange namen opgeven voor de bestanden die u uploadt, zodat u de specifieke naamconventies voor bestanden voor uw organisatie kunt gebruiken.
 
    De volgende tekens (lijst met door spaties gescheiden tekens) worden echter niet ondersteund:
 
@@ -197,7 +197,7 @@ Als u een uploadtaak die wordt uitgevoerd wilt annuleren, klikt u **[!UICONTROL 
 
 #### Opties voor het bewerken van afbeeldingen tijdens het uploaden instellen {#setting-image-editing-options-at-upload}
 
-Wanneer u afbeeldingsbestanden uploadt, zoals AI-, EPS- en PSD-bestanden, kunt u de volgende bewerkingen uitvoeren in het [!UICONTROL Upload Job Options] dialoogvenster:
+Wanneer u afbeeldingsbestanden uploadt, waaronder AI-, EPS- en PSD-bestanden, kunt u de volgende bewerkingen uitvoeren in het [!UICONTROL Upload Job Options] dialoogvenster:
 
 * Witruimte uitsnijden vanaf de rand van afbeeldingen (zie beschrijving in bovenstaande tabel).
 * Handmatig uitsnijden vanaf de zijkanten van afbeeldingen (zie beschrijving in bovenstaande tabel).
@@ -335,11 +335,7 @@ Voer de volgende stappen uit om een voorvertoning van een element weer te geven.
 
 1. In de voorvertoningsmodus zijn zoomopties beschikbaar voor [ondersteunde afbeeldingstypen](/help/assets/assets-formats.md#supported-raster-image-formats) (met interactieve bewerking).
 
-   Als u wilt inzoomen op een element, klikt u op het vergrootglas `+` (of klikt u op het element). Klik op `-`Uitzoomen. Wanneer u inzoomt, kunt u elk gebied van de afbeelding nauwkeurig bekijken door te pannen. Met de zoompijl opnieuw instellen keert u terug naar de oorspronkelijke weergave.
-
-   Klik **[!UICONTROL Reset]** om de weergave weer in te stellen op de oorspronkelijke grootte.
-
-   ![Opnieuw instellen om de oorspronkelijke weergave van de gebruiker te herstellen](assets/chlimage_1-11.png)
+   Als u wilt inzoomen op een element, klikt u op het vergrootglas `+` (of klikt u op het element). Klik op `-`Uitzoomen. Wanneer u inzoomt, kunt u elk gebied van de afbeelding nauwkeurig bekijken door te pannen. Met de zoompijl opnieuw instellen keert u terug naar de oorspronkelijke weergave. Als u de weergave wilt terugzetten op de oorspronkelijke grootte, klikt u op Weergave **[!UICONTROL Reset]** ![](assets/do-not-localize/revert.png)opnieuw instellen.
 
 **Elementen alleen met toetsenbordtoetsen voorvertonen**
 
@@ -428,8 +424,7 @@ Enkele kenmerken die uniek zijn voor een bepaalde kopie van een element, worden 
 
 De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeeltelijke kopie gemaakt wanneer een element wordt gekopieerd.
 
-1. Selecteer een of meer elementen in de [!DNL Assets] interface en klik op **[!UICONTROL Copy]** de werkbalk. U kunt ook de **[!UICONTROL Copy]** snelle actie selecteren op de elementenkaart.
-   ![Optie Kopiëren in werkbalk in de interface Elementen](assets/copy_icon.png)
+1. Selecteer een of meer elementen in de [!DNL Assets] interface en klik op **[!UICONTROL Copy]** de werkbalk. U kunt ook de optie **[!UICONTROL Copy]** Kopiëren op de werkbalk in de middeleninterface ![](assets/do-not-localize/copy_icon.png) selecteren met de snelle actie van de elementenkaart.
 
    >[!NOTE]
    >
@@ -441,10 +436,7 @@ De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeelte
    >
    >Als u een element op dezelfde locatie kopieert, wordt automatisch een variatie in de naam gegenereerd. [!DNL Experience Manager] Als u bijvoorbeeld een element met de naam kopieert `Square`, wordt de titel voor de kopie [!DNL Experience Manager] automatisch als titel gegenereerd `Square1`.
 
-1. Klik op de optie **[!UICONTROL Paste]** Middelen op de werkbalk.
-
-   ![Optie Plakken op de werkbalk Elementen](assets/chlimage_1-14.png)
-   [!DNL Assets] worden vervolgens naar deze locatie gekopieerd.
+1. Klik op de werkbalk op de optie **[!UICONTROL Paste]** Plakken op de werkbalk ![](assets/do-not-localize/paste.png) Elementen. Elementen worden vervolgens naar deze locatie gekopieerd.
 
    >[!NOTE]
    >
@@ -455,7 +447,7 @@ De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeelte
 1. Navigeer naar de locatie van het element dat u wilt verplaatsen.
 
 1. Select the asset, and click **[!UICONTROL Move]** option from the toolbar.
-   ![Optie Verplaatsen op de werkbalk Elementen](assets/move_icon.png)
+   ![Optie Verplaatsen op de werkbalk Elementen](assets/do-not-localize/move.png)
 
 1. Voer in de [!UICONTROL Move Assets] wizard een van de volgende handelingen uit:
 
@@ -685,9 +677,9 @@ Met de bewerkingsgereedschappen in de [!DNL Assets] interface kunt u kleine bewe
    * Klik op **[!UICONTROL Edit]** de optie die in de kaartweergave op een element wordt weergegeven.
    * Klik op **[!UICONTROL Edit]** op de werkbalk.
 
-   ![Optie Bewerken in werkbalk](assets/edit_icon.png)
+   ![Optie Bewerken in werkbalk](assets/do-not-localize/edit_icon.png)
 
-1. Als u de afbeelding wilt uitsnijden, klikt u op **[!UICONTROL Crop]** Optie om een afbeelding ![](assets/chlimage_1-22.png)uit te snijden.
+1. Als u de afbeelding wilt uitsnijden, klikt u op **[!UICONTROL Crop]** Optie om een afbeelding ![](assets/do-not-localize/crop.png)uit te snijden.
 
 1. Selecteer de gewenste optie in de lijst. Het bijsnijdgebied wordt op basis van de gekozen optie weergegeven in de afbeelding. Met de optie **Vrije hand** kunt u de afbeelding bijsnijden zonder beperkingen voor de hoogte-breedteverhouding.
 
@@ -695,19 +687,19 @@ Met de bewerkingsgereedschappen in de [!DNL Assets] interface kunt u kleine bewe
 
 1. Selecteer het gebied dat u wilt bijsnijden en wijzig de grootte of de positie van het gebied in de afbeelding.
 
-1. Use the **Undo** and **Redo** options to revert to the uncropped image or retain the cropped image, respectively.
+1. Met de opties **[!UICONTROL Undo]** en **[!UICONTROL Redo]** Opties kunt u terugkeren naar de niet-uitgesneden afbeelding of de uitgesneden afbeelding behouden.
 
    ![Opties voor Ongedaan maken en opnieuw uitvoeren](assets/chlimage_1-25.png)
 
-1. Klik op de juiste optie **Roteren** om de afbeelding rechtsom of linksom te roteren.
+1. Klik op de gewenste **[!UICONTROL Rotate]** optie om de afbeelding rechtsom of linksom te roteren.
 
    ![Roteer opties met de klok mee en tegen de klok in](assets/chlimage_1-26.png)
 
-1. Klik op de juiste optie **Spiegelen** om de afbeelding horizontaal of verticaal om te draaien.
+1. Klik op de gewenste **[!UICONTROL Flip]** optie om de afbeelding horizontaal of verticaal om te draaien.
 
    ![opties om een afbeelding horizontaal of verticaal om te draaien](assets/chlimage_1-27.png)
 
-1. Klik op de optie **** Voltooien ![](assets/chlimage_1-24.png) om de bewerking van de afbeelding te voltooien. Als u op **Voltooien** klikt, worden de uitvoeringen opnieuw gegenereerd.
+1. Klik op de optie **[!UICONTROL Finish]** ![](assets/do-not-localize/check-ok-done-icon.png)Voltooien om de bewerking van de afbeelding te voltooien. Als u op **Voltooien** klikt, worden de uitvoeringen opnieuw gegenereerd.
 
 >[!NOTE]
 >
@@ -834,7 +826,7 @@ Als u de annotaties en de revisiestatus wilt afdrukken, klikt u op de instructie
 
 1. Klik op **[!UICONTROL Print]** op de werkbalk.
 
-   ![Afdrukken, optie in werkbalk](assets/chlimage_1-40.png)
+   ![Afdrukken, optie in werkbalk](assets/do-not-localize/print.png)
 
 1. Kies in het dialoogvenster Afdrukken de positie waar u de annotaties/revisiestatus wilt weergeven in de PDF. Als u bijvoorbeeld wilt dat de annotaties/status rechtsboven op de pagina met de afgedrukte afbeelding worden afgedrukt, gebruikt u de instelling **Linksboven** . Deze optie is standaard geselecteerd.
 

@@ -3,9 +3,9 @@ title: De activa van het proces om bedrijfsprocessen te verwezenlijken, controle
 description: Middelenverwerking voor het converteren van indelingen, het maken van uitvoeringen, het beheren van elementen, het valideren van elementen en het uitvoeren van workflows.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f6c770e8830bd2fe7c436c4bfe9725564c49a08f
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '941'
+source-wordcount: '942'
 ht-degree: 3%
 
 ---
@@ -72,10 +72,7 @@ Voer de volgende stappen uit om een workflow toe te passen op een element:
 
    ![screen_shot_2019-03-06at123325pm](assets/chlimage_1-136.png)
 
-1. Klik **[!UICONTROL Actions]** onderaan.
-
-   ![chlimage_1-30](assets/chlimage_1-137.png)
-
+1. Klik onderaan op **[!UICONTROL Actions]** chevron omhoog ![](assets/do-not-localize/chevron-up-icon.png) .
 1. Klik op **[!UICONTROL Start Workflow]**. Selecteer in het **[!UICONTROL Start Workflow]** dialoogvenster een workflowmodel in de lijst.
 
    ![chlimage_1-31](assets/chlimage_1-138.png)

@@ -1,11 +1,11 @@
 ---
 title: Digital Rights Management in [!DNL Adobe Experience Manager Assets].
-description: Leer hoe u in [!DNL Experience Manager] de status en informatie voor gelicentieerde middelen beheert.
+description: Leer hoe u de status van verlopen van middelen en informatie over gelicentieerde middelen beheert in [!DNL Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ee54a3fa395e2c1ab4a5895a0bb8fc251d24a35a
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '1353'
+source-wordcount: '1347'
 ht-degree: 6%
 
 ---
@@ -108,10 +108,7 @@ De [!DNL Assets] console kan verschillende statussen voor elementen weergeven. A
 
    ![chlimage_1-155](assets/chlimage_1-155.png)
 
-1. Klik op **[!UICONTROL Publish]** de werkbalk. Als u **Publiceren** niet ziet op de werkbalk, klikt u **[!UICONTROL More]** op de werkbalk en zoekt u de **[!UICONTROL Publish]** optie.
-
-   ![chlimage_1-156](assets/chlimage_1-156.png)
-
+1. Klik op **[!UICONTROL Publish]** op de werkbalk. Als u **Publiceren** niet ziet op de werkbalk, klikt u **[!UICONTROL More]** op de werkbalk en zoekt u de optie **[!UICONTROL Publish]**![ Publicatieoptie](assets/do-not-localize/publish-globe.png) .
 1. Kies een optie in het **[!UICONTROL Publish]** menu en sluit het bevestigingsvenster.
 1. Sluit de selectiemodus. De publicatiestatus voor het element wordt onder aan de elementminiatuur weergegeven in de kaartweergave. In de lijstmening, toont de Gepubliceerde kolom de tijd toen de activa werd gepubliceerd.
 
@@ -138,10 +135,7 @@ De [!DNL Assets] console kan verschillende statussen voor elementen weergeven. A
 
    ![chlimage_1-161](assets/chlimage_1-161.png)
 
-1. Als u wilt zoeken naar elementen op basis van hun status, klikt u **[!UICONTROL Search]** om de balk Zoeken weer te geven.
-
-   ![chlimage_1-162](assets/chlimage_1-162.png)
-
+1. Als u naar elementen wilt zoeken op basis van hun status, klikt u op de optie **[!UICONTROL Search]** ![](assets/do-not-localize/search_icon.png) Zoeken om de balk Zoeken weer te geven.
 1. Druk op Enter en klik [!DNL Experience Manager] om het zoekvenster weer te geven.
 1. In the search panel, click **[!UICONTROL Publish Status]** and select **[!UICONTROL Published]** to search for published assets in [!DNL Assets].
 

@@ -1,15 +1,18 @@
 ---
-title: Opmerkingen bij de release Adobe Experience Manager
+title: Opmerkingen bij de release Adobe Experience Manager Assets
 description: De nieuwe mogelijkheden en verbeteringen voor Adobe Experience Manager 6.5-middelen.
 translation-type: tm+mt
-source-git-commit: a6f95e04fd5b8ed28beaa12e9fd170ed495397b8
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+workflow-type: tm+mt
+source-wordcount: '916'
+ht-degree: 2%
 
 ---
 
 
-# Opmerkingen bij de release Adobe Experience Manager {#aem-assets-release-notes}
+# Opmerkingen bij de release Adobe Experience Manager Assets {#aem-assets-release-notes}
 
-Hier volgen de belangrijkste functies en hooglichten van de Adobe Experience Manager 6.5 Assets-release.
+Hier volgen de belangrijkste kenmerken en hooglichten van de release Adobe Experience Manager 6.5 Assets.
 
 ## Integratie met [!DNL Adobe Creative Cloud] en creatieve workflows {#integration-with-adobe-creative-cloud-and-creative-workflows}
 
@@ -27,21 +30,21 @@ Lees verder om de specifieke mogelijkheden en integratie van [!DNL Experience Ma
 
 ### [!DNL Adobe Stock] integratie {#stock}
 
-Uw organisatie kan haar [!DNL Adobe Stock] ondernemingsplan binnen gebruiken [!DNL Experience Manager Assets] om ervoor te zorgen dat de vergunning gegeven activa algemeen beschikbaar voor uw creatieve en marketing projecten zijn. U kunt snel [!DNL Adobe Stock] middelen vinden, voorproef, en vergunning geven die in de Manager van de Ervaring worden bewaard, gebruikend de krachtige mogelijkheden DAM van [!DNL Experience Manager].
+Uw organisatie kan haar [!DNL Adobe Stock] ondernemingsplan binnen gebruiken [!DNL Experience Manager Assets] om ervoor te zorgen dat de vergunning gegeven activa algemeen beschikbaar voor uw creatieve en marketing projecten zijn. U kunt snel [!DNL Adobe Stock] middelen vinden, voorvertonen en vergunning geven die in Experience Manager worden bewaard, gebruikend de krachtige mogelijkheden DAM van [!DNL Experience Manager].
 
 [!DNL Adobe Stock] biedt ontwerpers en bedrijven toegang tot miljoenen kwalitatief hoogstaande, gekrulde, royaltyvrije foto&#39;s, vectoren, illustraties, video&#39;s, sjablonen en 3D-middelen voor al hun creatieve projecten.
 
-Zie [!DNL Adobe Stock] [gebruiken in Experience Manager Assets](/help/assets/aem-assets-adobe-stock.md)voor meer informatie.
+Zie Adobe Stock Assets [gebruiken in Experience Manager Assets](/help/assets/aem-assets-adobe-stock.md)voor meer informatie.
 
-![Adobe Stock-afbeelding voorvertonen en een licentie aanvragen vanuit Experience Manager-middelen](assets/stock_image_preview_license_options.png)
+![Adobe Stock-afbeelding en -licentie voorvertonen vanuit Experience Manager Assets](assets/stock_image_preview_license_options.png)
 
 *Afbeelding: Geef een voorvertoning weer van de afbeelding en de licentie[!DNL Adobe Stock]vanuit[!DNL Experience Manager Assets].*
 
-![De gelicentieerde Adobe Stock-afbeeldingen zoeken en filteren in Experience Manager](assets/aem-search-filters2.jpg)
+![De gelicentieerde Adobe Stock-afbeeldingen in Experience Manager zoeken en filteren](assets/aem-search-filters2.jpg)
 
 *Afbeelding: Zoek en filter de gelicentieerde[!DNL Adobe Stock]afbeeldingen in[!DNL Experience Manager].*
 
-### Dynamische verwijzingen in [!DNL Adobe InDesign]{#dynamic-references-in-indesign}
+### Dynamische verwijzingen in [!DNL Adobe InDesign] {#dynamic-references-in-indesign}
 
 [!DNL Experience Manager Assets] gebruikt in [!DNL Adobe InDesign] bestanden zijn dynamisch. De verwijzingen worden automatisch bijgewerkt als de middelen waarnaar wordt verwezen in de bewaarplaats worden verplaatst. Zie [hoe u samengestelde elementen](/help/assets/managing-linked-subassets.md)kunt beheren voor meer informatie.
 
@@ -63,9 +66,9 @@ In grote ondernemingen kan de infrastructuur die nodig is om websites te maken, 
 
 ##  Dynamic Media {#dynamic-media}
 
-[!DNL Dynamic Media] biedt verbeterde creatie en levering van geavanceerde media in [!DNL Experience Manager Assets] de aanjager van geavanceerde ervaringen die overweldigend en gepersonaliseerd zijn. Door één hoofdmiddel van hoge kwaliteit te uploaden en onze geavanceerde cloudrendering en viewers te gebruiken, kunt u elke combinatie van uitvoeringen ter plekke aanbieden ter ondersteuning van de mediastrategie van uw organisatie.
+[!DNL Dynamic Media] biedt verbeterde creatie en levering van geavanceerde media in [!DNL Experience Manager Assets] de aanjager van geavanceerde ervaringen die overweldigend en gepersonaliseerd zijn. Door één master middel van hoge kwaliteit te uploaden en onze geavanceerde cloudrendering en viewers te gebruiken, kunt u elke combinatie van uitvoeringen ter plekke aanbieden ter ondersteuning van de mediabeleid van uw organisatie.
 
-Zie Opmerkingen bij de release [!DNL Dynamic Media] Dynamische media voor meer informatie over nieuwe [functies](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/release-notes/s7rn2017.html).
+Zie Opmerkingen bij de release van [!DNL Dynamic Media] Dynamic Media voor meer informatie over nieuwe [functies](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/release-notes/s7rn2017.html).
 
 ### 360 Video-ondersteuning {#video-support}
 
@@ -77,7 +80,7 @@ U kunt de miniaturen voor uw video-elementen nu aanpassen met frames uit de vide
 
 ### Verbeteringen voor toegankelijkheid {#accessibility-enhancements}
 
-[!DNL Dynamic Media] viewers bieden nu ondersteuning voor verbeterde toegankelijkheidsfuncties, zoals apparaatondersteuning, schermlezers en Alt-tekst. Zie Opmerkingen bij de release van [Dynamic Media-viewers voor meer informatie](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html).
+[!DNL Dynamic Media] viewers bieden nu ondersteuning voor verbeterde toegankelijkheidsfuncties, zoals apparaatondersteuning, schermlezers en Alt-tekst. Zie Opmerkingen bij de release van [Dynamic Media viewers voor meer informatie](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html).
 
 ## Verbeterde zoekervaring {#search-experience-enhancement}
 

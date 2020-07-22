@@ -2,7 +2,7 @@
 title: De pagina-exportfunctie
 description: Leer hoe u de AEM Page Exporter gebruikt.
 translation-type: tm+mt
-source-git-commit: b0126894dec33648a24c0308972aa5b47d7e4b84
+source-git-commit: c152cf4bf8cf19e0fa7b328241ced753fa42f7a4
 workflow-type: tm+mt
 source-wordcount: '1052'
 ht-degree: 0%
@@ -16,10 +16,11 @@ Met AEM kunt u een pagina exporteren als een volledige webpagina met afbeeldinge
 
 Nadat de configuratie is geconfigureerd, vraagt u een pagina-export van uw browser door deze te vervangen `html` door `export.zip` in de URL. Hiermee wordt een archiefbestand (zip) gegenereerd dat de weergegeven pagina in HTML-indeling bevat, samen met de elementen waarnaar wordt verwezen. Alle paden op de pagina (bijvoorbeeld paden naar afbeeldingen) worden herschreven zodat ze verwijzen naar de bestanden die in het archief zijn opgenomen of naar de bronnen op de server. Het archiefbestand (zip) kan vervolgens vanuit uw browser worden gedownload.
 
->!![NOTE]
-Afhankelijk van uw browser en de instellingen is de download:
-* een archiefbestand (`<page-name>.export.zip`)
-* een map (`<page-name>`); het archiefbestand is al uitgebreid
+>[!NOTE]
+>
+>Afhankelijk van uw browser en de instellingen is de download:
+>* een archiefbestand (`<page-name>.export.zip`)
+>* een map (`<page-name>`); het archiefbestand is al uitgebreid
 
 
 ## Een pagina exporteren {#exporting-a-page}

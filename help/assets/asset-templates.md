@@ -3,9 +3,9 @@ title: Elementsjablonen in [!DNL Adobe Experience Manager Assets].
 description: Meer informatie over Asset-sjablonen [!DNL Adobe Experience Manager Assets] en over het gebruik van asset templates om marketingmateriaal te maken.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '1512'
+source-wordcount: '1513'
 ht-degree: 0%
 
 ---
@@ -165,9 +165,7 @@ U kunt direct nadat u het hebt gemaakt, een onderpand bewerken. U kunt het besta
 
    ![chlimage_1-120](assets/chlimage_1-325.png)
 
-1. From the [!UICONTROL Template Merge] page, click **[!UICONTROL Merge]**.
-
-   ![chlimage_1-121](assets/chlimage_1-326.png)
+1. Klik op de [!UICONTROL Template Merge] pagina op Elementen **[!UICONTROL Merge]** toevoegen ![](assets/do-not-localize/assets_add_icon.png).
 
 1. Navigeer naar de locatie van de elementen die u wilt samenvoegen en klik op de miniaturen van de elementen die u wilt samenvoegen om deze te selecteren.
 

@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Stock] Elementen beheren in [!DNL Adobe Experience Manager 
 description: Zoek, haal, vergunning, en [!DNL Adobe Stock] beheer activa van binnen [!DNL Adobe Experience Manager]. Gebruik de in licentie gegeven activa als elk ander digitaal actief.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2701c64b3e049ac423ef74147930de2da78a3d81
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '1030'
+source-wordcount: '1029'
 ht-degree: 3%
 
 ---
@@ -72,7 +72,7 @@ Uw [!DNL Experience Manager] gebruikers kunnen naar elementen zoeken, zowel in [
 
 * Als u naar [!DNL Adobe Stock] elementen wilt zoeken, klikt u op **[!UICONTROL Navigation]** > **[!UICONTROL Assets]** > **[!UICONTROL Search Adobe Stock]**.
 
-* Als u naar elementen wilt zoeken [!DNL Adobe Stock] en [!DNL Experience Manager Assets]klikt u op ![search_icon](assets/search_icon.png).
+* Als u naar elementen wilt zoeken [!DNL Adobe Stock] en [!DNL Experience Manager Assets]klikt u op ![Zoeken](assets/do-not-localize/search_icon.png).
 
 U kunt ook `Location: Adobe Stock` [!DNL Adobe Stock] in de zoekbalk typen om elementen te selecteren. [!DNL Experience Manager] biedt geavanceerde filtermogelijkheden voor de gezochte middelen, die gebruikers toestaan om op de vereiste activa snel nul-binnen op de filters te gebruiken, zoals types van gesteunde activa, beeldrichtlijn, en vergunning gegeven staat.
 

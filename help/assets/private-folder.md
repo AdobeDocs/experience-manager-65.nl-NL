@@ -3,9 +3,9 @@ title: Een persoonlijke map maken en delen in Adobe Experience Manager.
 description: Leer hoe u een persoonlijke map maakt in de Adobe Experience Manager Assets en deze deelt met andere gebruikers en hoe u hen verschillende rechten toekent.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '491'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ In de gebruikersinterface Adobe Experience Manager Assets kunt u een persoonlijk
 
 1. To share the folder with other users and the assign privileges to them, select the folder, and click **[!UICONTROL Properties]** from the toolbar.
 
-   ![chlimage_1-414](assets/chlimage_1-414.png)
+   ![info, optie](assets/do-not-localize/info-circle-icon.png)
 
    >[!NOTE]
    >

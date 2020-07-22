@@ -4,9 +4,9 @@ description: Leer taken om verzamelingen met middelen te beheren, zoals verzamel
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 983f281b77a122c757bb508bee570c6c8490a2b9
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '2041'
+source-wordcount: '2044'
 ht-degree: 11%
 
 ---
@@ -124,10 +124,7 @@ U kunt elementen toevoegen aan een verzameling die een lijst met bestanden of ma
 
 Slimme verzamelingen worden gemaakt door een zoekopdracht op te slaan, zodat u de inhoud kunt wijzigen door de zoekparameters van de [opgeslagen zoekopdracht](#saved-searches)te wijzigen.
 
-1. Klik in de gebruikersinterface Elementen op de zoekoptie op de werkbalk.
-
-   ![chlimage_1-9](assets/chlimage_1-110.png)
-
+1. Klik in de gebruikersinterface Elementen op de ![zoekoptie](assets/do-not-localize/search_icon.png) in de werkbalk.
 1. Met de curseur in het vakje van het Onderzoek, duw op de sleutel van de Terugkeer.
 1. Open het deelvenster Filters in de Experience Manager-interface.
 1. Selecteer in de lijst met **[!UICONTROL Saved Searches]** de slimme verzameling die u wilt wijzigen. In het deelvenster Zoeken worden de filters weergegeven die zijn geconfigureerd voor de opgeslagen zoekopdracht.
@@ -256,12 +253,9 @@ Opgeslagen zoekopdrachten bewerken is hetzelfde als slimme verzamelingen bewerke
 
 Voer de volgende stappen uit om opgeslagen zoekopdrachten te verwijderen:
 
-1. Klik in de gebruikersinterface Middelen op Zoeken in ![afbeelding_1-13](assets/chlimage_1-114.png).
-
-1. Met de curseur op het gebied van Onderzoek, duw op de Enter sleutel.
-
+1. Klik in de gebruikersinterface Middelen op de ![zoekoptie](assets/do-not-localize/search_icon.png).
+1. Met de curseur op het gebied van Onderzoek, druk de sleutel van de Terugkeer.
 1. Open het deelvenster Filters in de Experience Manager-interface.
-
 1. From the **[!UICONTROL Saved Searches]** list, click **[!UICONTROL Delete]** next to the smart collection that you want to delete.
 
    ![select_smart_collection](assets/select_smart_collection.png)
@@ -273,7 +267,7 @@ Voer de volgende stappen uit om opgeslagen zoekopdrachten te verwijderen:
 U kunt een workflow voor de elementen in een verzameling uitvoeren. Als de verzameling geneste verzamelingen bevat, wordt de workflow ook uitgevoerd op de elementen in de geneste verzamelingen. Als de verzameling en de geneste verzameling echter dubbele elementen bevatten, wordt de workflow slechts eenmaal uitgevoerd voor dergelijke elementen.
 
 1. Open **[!UICONTROL Assets]** > **[!UICONTROL Collections]**. Selecteer een specifieke verzameling als u een workflow op die verzameling wilt uitvoeren.
-1. Open **[!UICONTROL Timeline]** spoorstaaf. Klik ![chlimage_1-14](assets/chlimage_1-137.png) en klik **[!UICONTROL Start Workflow]**.
+1. Open **[!UICONTROL Timeline]** spoorstaaf. Klik ![omhoog](assets/do-not-localize/chevron-up-icon.png) chevron en klik **[!UICONTROL Start Workflow]**.
 1. In the **[!UICONTROL Start Workflow]** section, select a workflow model from the list. Selecteer bijvoorbeeld het **[!UICONTROL DAM Update Asset]** model.
 1. Voer een titel in voor de workflow en klik op **[!UICONTROL Start]**.
 1. Klik in het dialoogvenster op **[!UICONTROL Proceed]**. De workflow verwerkt alle elementen in de geselecteerde verzameling.

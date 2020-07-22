@@ -12,7 +12,10 @@ discoiquuid: d381ea40-fe49-4d32-bfad-1379c7a02aba
 docset: aem65
 pagetitle: Community Groups Console
 translation-type: tm+mt
-source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
+source-git-commit: ee0d4aa07db6f00409cace8664d02c545e7d6550
+workflow-type: tm+mt
+source-wordcount: '1676'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
 
 De console van Groepen verleent toegang tot het creëren van communautaire groepen wanneer de [malplaatjestructuur](/help/communities/sites-console.md#step1) van een communautaire plaats de [groepsfunctie](/help/communities/functions.md#groups-function)omvat.
 
-* AEM-gemeenschappen ondersteunen het nesten van groepen binnen andere groepen. Groepnesten is mogelijk wanneer de [structuur van de nieuwe groep](/help/communities/tools-groups.md) de groepfunctie bevat.
+* AEM Communities ondersteunen het nesten van groepen binnen andere groepen. Groepnesten is mogelijk wanneer de [structuur van de nieuwe groep](/help/communities/tools-groups.md) de groepfunctie bevat.
 * Alleen voor de auteursomgeving is er een wizard voor het maken van groepen die lijkt op de wizard voor het maken van sites.
 * Of (of niet) de leden groepen in publiceren milieu kunnen tot stand brengen is het configureerbaar wanneer het toevoegen van een functie van Groepen aan een communautaire plaatsstructuur of een communautaire groepsstructuur.
 
@@ -57,13 +60,15 @@ De console Groepen openen:
    * De structuur van de site van de community moet een groepfunctie bevatten.
    * Deze schermafbeeldingen zijn afkomstig uit de zelfstudie Aan de slag nadat u groepen hebt [gemaakt tijdens het publiceren](/help/communities/published-site.md).
 
+   ![createGroup](assets/create-group.png)
+
 * Selecteer de map **** Groepen om deze te openen.
 
    Als deze groep wordt geopend, worden alle bestaande groepen weergegeven, ongeacht of deze groepen bij de auteur of bij de publicatie zijn gemaakt.
 
    Van deze console van Groepen, is het mogelijk om nieuwe groepen te ontwerpen.
 
-   ![chlimage_1-200](assets/chlimage_1-200.png)
+   ![create-new-group](assets/create-new-group.png)
 
 * Selecteer de knop Groep **** maken.
 
@@ -106,7 +111,9 @@ De standaardhoofdmap is de bovenliggende site, maar de hoofdmap kan naar elke lo
 
 ### THEMA VAN DE COMMUNAUTAIRE GROEP {#community-group-theme}
 
-Het framework gebruikt [Twitter Bootstrap](https://twitterbootstrap.org/) om de site een responsief, flexibel ontwerp te geven. Een van de vele vooraf geladen Bootstrap-thema&#39;s kan worden geselecteerd om de geselecteerde communitygroepsjabloon te stijlvol te maken, maar een Bootstrap-thema kan ook worden geüpload.
+![communitygroepthema](assets/communitygrouptheme.png)
+
+Het framework gebruikt [Twitter Bootstrap](https://twitterbootstrap.org/) om een responsief, flexibel ontwerp op de site te brengen. Een van de vele vooraf geladen Bootstrap-thema&#39;s kan worden geselecteerd om de geselecteerde communitygroepsjabloon op te maken, anders kan een Bootstrap-thema worden geüpload.
 
 Als deze optie is geselecteerd, wordt het thema bedekt met een ondoorzichtig blauw vinkje.
 
@@ -116,7 +123,7 @@ Nadat de communitysite is gepubliceerd, kunt u de eigenschappen [](#modifyinggro
 
 ### COMMUNAUTAIRE BRANDBOEK {#community-group-branding}
 
-![chlimage_1-201](assets/chlimage_1-201.png)
+![gemeenschapsmerk](assets/community-group-branding.png)
 
 De branding van de communautaire plaats is een beeld dat als kopbal over de bovenkant van elke pagina wordt getoond. Het is mogelijk om een banner voor de groep weer te geven die afwijkt van andere sitepagina&#39;s.
 
@@ -155,7 +162,7 @@ Een gebruiker U1, daarom, kan een beheerder in een groep G1 en een regelmatige g
 
 Met de instelling voor lidmaatschap kunt u een van de drie manieren selecteren om een community-groep te beveiligen.
 
-![chlimage_1-202](assets/chlimage_1-202.png)
+![lidmaatschap van de gemeenschap](assets/community-group-membership.png)
 
 * **Optioneel lidmaatschap**
 
@@ -171,7 +178,7 @@ Met de instelling voor lidmaatschap kunt u een van de drie manieren selecteren o
 
 **THUMBNAIL**
 
-![chlimage_1-203](assets/chlimage_1-203.png)
+![community-group-miniatuur](assets/community-group-thumbnail.png)
 
 De miniatuur is een afbeelding die bij het ontwerpen en publiceren voor de groep moet worden weergegeven.
 
@@ -179,13 +186,13 @@ De optimale grootte voor een groepsafbeelding is 170 x 90 pixels in een onderste
 
 Als er geen afbeelding wordt toegevoegd, wordt een standaardafbeelding weergegeven.
 
-![chlimage_1-204](assets/chlimage_1-204.png)
+![miniatuurafbeelding](assets/thumbnail-image.png)
 
 ### Stap 4: Groep maken {#step-create-group}
 
-![chlimage_1-205](assets/chlimage_1-205.png)
+![community-create-group](assets/community-create-group.png)
 
-Als er aanpassingen nodig zijn, gebruikt u de knop **Terug ** om deze aan te brengen.
+Als er aanpassingen nodig zijn, maakt u deze met de knop **Terug** .
 
 Nadat **Maken** is geselecteerd en gestart, kan het proces voor het maken van de groep niet worden onderbroken.
 
@@ -200,7 +207,7 @@ Wanneer het proces is voltooid, wordt de kaart voor de nieuwe subcommunity-site 
 
 ## Inhoud groep auteurs {#author-group-content}
 
-![chlimage_1-206](assets/chlimage_1-206.png)
+![open-site](assets/open-site.png)
 
 De pagina-inhoud van een groep kan met dezelfde gereedschappen worden gemaakt als elke andere AEM-pagina. Als u de groep wilt openen voor ontwerpen, selecteert u het pictogram Site openen dat wordt weergegeven wanneer u de muisaanwijzer op de groepskaart plaatst.
 
@@ -208,11 +215,11 @@ De pagina-inhoud van een groep kan met dezelfde gereedschappen worden gemaakt al
 
 De eigenschappen van een bestaande subcommunitysite die tijdens het maken van een community zijn opgegeven, kunnen worden gewijzigd door het pictogram Site bewerken te selecteren dat wordt weergegeven wanneer u de muisaanwijzer op de groepskaart plaatst:
 
-![chlimage_1-207](assets/chlimage_1-207.png)
+![site bewerken](assets/edit-site.png)
 
 De details van de volgende eigenschappen komen overeen met de beschrijvingen in de sectie [Groep maken](#group-creation) . Alle geneste groepen kunnen worden gewijzigd, ongeacht of ze zijn gemaakt in de publicatieomgeving of in de auteursomgeving.
 
-![chlimage_1-208](assets/chlimage_1-208.png)
+![communautaristisch](assets/community-group-basic.png)
 
 ### Basis wijzigen {#modify-basic}
 
@@ -235,7 +242,7 @@ Met het deelvenster STRUCTUUR kunt u de structuur wijzigen die u aanvankelijk he
 * Bij een instantie van een communautaire functie in de sitestructuur:
 
    * **`Gear icon`**
-Bewerk instellingen, zoals de titel van de weergave en de URL-naam*en [geprivilegieerde ledengroepen](/help/communities/users.md#privilegedmembersgroups).
+Bewerk instellingen, zoals de titel van de weergave, de URL en [geprivilegieerde ledengroepen](/help/communities/users.md#privilegedmembersgroups).
 
    * **`Trashcan icon`**
 Verwijder (verwijder) functies uit de sitestructuur.
@@ -259,7 +266,7 @@ Wijzig de volgorde van de functies die wordt weergegeven op de navigatiebalk op 
 
 **Voorbeeld: Een kalenderfunctie toevoegen aan een subcommunautaire (Groep) structuur**
 
-![chlimage_1-209](assets/chlimage_1-209.png)
+![community-group-add-agenda](assets/community-group-add-calendar.png)
 
 ### Ontwerp wijzigen {#modify-design}
 
@@ -284,13 +291,13 @@ Met het deelvenster [MINIATUUR](#thumbnail) kunt u een afbeelding uploaden om de
 
 ## De groep publiceren {#publish-the-group}
 
-![chlimage_1-210](assets/chlimage_1-210.png)
+![publicatiesite](assets/publish-site.png)
 
 Nadat u een community-groep hebt gemaakt of gewijzigd, kunt u de groep publiceren (activeren) door het `Publish Site` pictogram te selecteren.
 
 Zodra de groep met succes wordt gepubliceerd, zal een bericht verschijnen:
 
-![chlimage_1-211](assets/chlimage_1-211.png)
+![in groep gepubliceerd](assets/group-published.png)
 
 >[!CAUTION]
 >
@@ -301,7 +308,7 @@ Zodra de groep met succes wordt gepubliceerd, zal een bericht verschijnen:
 
 ## De groep verwijderen {#delete-the-group}
 
-![verwijderpictogram]()
+![verwijderpictogram](assets/deleteicon.png)
 
 Verwijder een groep uit de console van de Groepen van de gemeenschap door het pictogram van de Groep van de Schrapping te selecteren, dat wanneer het hangen van muis over de groep verschijnt.
 

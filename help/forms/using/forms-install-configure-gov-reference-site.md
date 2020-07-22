@@ -8,7 +8,7 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a0717f5bf9ceb2e6def7feb37de4aa114de48938
+source-git-commit: 5412d788ccebe00707f2d94dfb1e40da6cb0471c
 workflow-type: tm+mt
 source-wordcount: '5020'
 ht-degree: 1%
@@ -222,7 +222,7 @@ Deze sectie bevat details en instructies over de Configuratie van de Wolk van de
 
 ### Meerdere formulieren invullen en ondertekenen {#fill-sign-multiple-forms}
 
-In dit document worden de stappen beschreven die nodig zijn om de mogelijkheid in te stellen om meerdere formulieren in te vullen en te ondertekenen. U kunt ook [dezelfde mogelijkheid hier](https://forms.enablementadobe.com/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled)proberen. In dit voorbeeld worden de benodigde gegevens voor dit voorbeeld opgeslagen in de AME-opslagplaats. Dit wordt gedaan om wrijvingsloze ervaring te verzekeren om demo activa op uw lokale server op te stellen. In het echte leven zullen wij de zelfde informatie in RDMS van uw keus opslaan.
+In dit document worden de stappen beschreven die nodig zijn om de mogelijkheid in te stellen om meerdere formulieren in te vullen en te ondertekenen. U kunt ook [dezelfde mogelijkheid hier](https://forms.enablementadobe.com/content/dam/formsanddocuments/formsandsigndemo/refinanceform/jcr:content?wcmmode=disabled)proberen. In dit voorbeeld worden de benodigde gegevens voor dit voorbeeld opgeslagen in de AEM-opslagplaats. Dit wordt gedaan om wrijvingsloze ervaring te verzekeren om demo activa op uw lokale server op te stellen. In het echte leven zullen wij de zelfde informatie in RDMS van uw keus opslaan.
 
 #### Vereisten {#pre-requisites-fill-sign-multiple-forms}
 

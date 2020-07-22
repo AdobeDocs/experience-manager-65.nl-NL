@@ -3,9 +3,9 @@ title: Een URL naar gedeelde elementen genereren
 description: In dit artikel wordt beschreven hoe u elementen, mappen en verzamelingen in Experience Manager Assets als een URL naar externe partijen kunt delen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '1136'
+source-wordcount: '1137'
 ht-degree: 4%
 
 ---
@@ -28,7 +28,7 @@ Gebruik het dialoogvenster Koppelen om de URL te genereren voor elementen die u 
 >Voordat u een koppeling met gebruikers deelt, moet u ervoor zorgen dat Day CQ Mail Service is geconfigureerd. Er treedt een fout op als u een koppeling probeert te delen zonder eerst de Day CQ Mail Service [te](/help/assets/link-sharing.md#configmailservice)configureren.
 
 1. Selecteer in de gebruikersinterface Elementen het element dat u wilt delen als een koppeling.
-1. Klik op de werkbalk op **[!UICONTROL Share Link]** assets_share ![](assets/assets_share.png).
+1. Klik op het pictogram **[!UICONTROL Share Link]** Elementen ![](assets/do-not-localize/assets_share.png)delen op de werkbalk.
 
    In het **[!UICONTROL Share Link]** veld wordt automatisch een elementkoppeling gemaakt. Kopieer deze koppeling en deel deze met de gebruikers. De standaardvervaltijd voor de verbinding is één dag.
 

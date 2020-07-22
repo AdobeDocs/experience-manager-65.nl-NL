@@ -3,9 +3,9 @@ title: Afbeeldingen met hyperlinks toevoegen aan digitale afbeeldingen
 description: Leer hoe u afbeeldingen met hyperlinks aan een afbeelding kunt toevoegen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '250'
 ht-degree: 0%
 
 ---
@@ -26,12 +26,9 @@ Met Afbeeldingen met hyperlinks kunt u een of meer hyperlinkgebieden toevoegen d
    * Selecteer in de **[!UICONTROL Card]** weergave of de **[!UICONTROL List]** weergave het element en klik op **[!UICONTROL Edit]** de werkbalk.
    * Klik op **[!UICONTROL Edit]** de elementpagina.
 
-      ![chlimage_1-420](assets/chlimage_1-420.png)
+      ![bewerkoptie](assets/do-not-localize/edit_icon.png)
 
-1. Als u een afbeelding met hyperlinks wilt invoegen, klikt u op **[!UICONTROL Launch Map]** de werkbalk.
-
-   ![chlimage_1-421](assets/chlimage_1-421.png)
-
+1. Als u een afbeelding met hyperlinks wilt invoegen, klikt u op de werkbalk op de **[!UICONTROL Launch Map]** afbeelding met hyperlinks ![](assets/do-not-localize/image-map-icon.png) .
 1. Selecteer de vorm van de afbeelding met hyperlinks. De hotspot van de geselecteerde vorm wordt op de afbeelding geplaatst.
 
    ![chlimage_1-422](assets/chlimage_1-422.png)
@@ -40,13 +37,9 @@ Met Afbeeldingen met hyperlinks kunt u een of meer hyperlinkgebieden toevoegen d
 
    ![chlimage_1-423](assets/chlimage_1-423.png)
 
-1. Klik **[!UICONTROL Confirm]** en klik dan **[!UICONTROL Finish]** van de toolbar om de veranderingen te bewaren.
+1. Klik **[!UICONTROL Confirm]** en klik dan **[!UICONTROL Finish]** selecteer controle van de toolbar wordt gedaan ![](assets/do-not-localize/check-ok-done-icon.png) om de veranderingen te bewaren die.
 
-   ![chlimage_1-424](assets/chlimage_1-424.png)
-
-   Als u de afbeelding met hyperlinks wilt verwijderen, klikt u op de hotspot en klikt u **[!UICONTROL Delete]**.
-
-   ![chlimage_1-425](assets/chlimage_1-425.png)
+   Als u de afbeelding met hyperlinks wilt verwijderen, klikt u op de hotspot en klikt u op **[!UICONTROL Delete]** Verwijderen ![](assets/do-not-localize/delete-solid-line.png).
 
 1. Als u de afbeelding met hyperlinks wilt weergeven, navigeert u naar de pagina met elementdetails en plaatst u de cursor boven de afbeelding.
 

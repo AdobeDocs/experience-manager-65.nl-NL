@@ -3,7 +3,7 @@ title: Elementeditorpagina's maken en configureren
 description: Leer hoe u aangepaste pagina's in de Asset Editor kunt maken en meerdere middelen tegelijk kunt bewerken.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
 source-wordcount: '2116'
 ht-degree: 0%
@@ -290,7 +290,7 @@ Zie Elementen [aanpassen en uitbreiden](/help/assets/extending-assets.md) voor i
 
 Hieronder ziet u een voorbeeld van een metagegevensformulier met verschillende velden:
 
-![chlimage_1-162](assets/chlimage_1-390.png)
+![metadata](assets/chlimage_1-390.png)
 
 Op de pagina Asset Editor kunnen gebruikers vervolgens waarden invoeren in de metagegevensvelden (als deze bewerkbaar zijn) en de eindactie uitvoeren (bijvoorbeeld door de wijzigingen te verzenden).
 
@@ -405,6 +405,7 @@ Elementen bewerken via de pagina Asset Editor:
 
    * in Windows: `Ctrl + click` elk element.
    * op Mac: `Cmd + click` elk element.
+
    Een reeks elementen selecteren: Klik op het eerste element en vervolgens op `Shift + click` het laatste element.
 
 1. Klik op Metagegevens **** bewerken in het veld **Handelingen** (links op de pagina).
@@ -419,11 +420,13 @@ Elementen bewerken via de pagina Asset Editor:
 
    * Een tag die niet van toepassing is op alle elementen, maar alleen op een paar elementen, heeft een grijze achtergrond.
    * Een tag die van toepassing is op alle elementen heeft een witte achtergrond.
+
    U kunt:
 
    * Klik `x` om de tag voor alle elementen te verwijderen.
    * Klik `+` om de tag aan alle elementen toe te voegen.
    * Klik op de **pijl** en selecteer een tag om een nieuwe tag aan alle elementen toe te voegen.
+
    Klik op **OK** om de wijzigingen in het formulier te schrijven. Het vak naast het veld **Codes** wordt automatisch ingeschakeld.
 
 1. Bewerk het veld Beschrijving. Stel bijvoorbeeld in op:

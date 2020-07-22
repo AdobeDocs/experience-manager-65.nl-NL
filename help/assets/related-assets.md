@@ -3,9 +3,9 @@ title: Verwante activa
 description: Leer hoe u digitale elementen die gemeenschappelijke kenmerken delen, koppelt. Maak ook bronafhankelijke relaties tussen digitale elementen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
 workflow-type: tm+mt
-source-wordcount: '611'
+source-wordcount: '613'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Verwante activa {#related-assets}
 
-[!DNL Adobe Experience Manager Assets] Hiermee kunt u elementen handmatig koppelen op basis van de behoeften van uw organisatie met behulp van de functie voor gerelateerde elementen. U kunt bijvoorbeeld een licentiebestand koppelen aan een element of aan een afbeelding/video over een vergelijkbaar onderwerp. U kunt elementen die bepaalde algemene kenmerken delen, aan elkaar koppelen. U kunt de eigenschap ook gebruiken om bron/afgeleide verhoudingen tussen activa tot stand te brengen. Als u bijvoorbeeld een PDF-bestand hebt dat is gegenereerd vanuit een INDD-bestand, kunt u het PDF-bestand koppelen aan het INDD-bronbestand.
+[!DNL Adobe Experience Manager Assets] Hiermee kunt u elementen handmatig koppelen op basis van de behoeften van uw organisatie met behulp van de functie voor verwante elementen. U kunt bijvoorbeeld een licentiebestand koppelen aan een element of aan een afbeelding/video over een vergelijkbaar onderwerp. U kunt elementen die bepaalde algemene kenmerken delen, aan elkaar koppelen. U kunt de eigenschap ook gebruiken om bron/afgeleide verhoudingen tussen activa tot stand te brengen. Als u bijvoorbeeld een PDF-bestand hebt dat is gegenereerd vanuit een INDD-bestand, kunt u het PDF-bestand koppelen aan het INDD-bronbestand.
 
 Met deze functie hebt u de flexibiliteit om een PDF- of JPG-bestand met lage resolutie te delen met leveranciers of agentschappen en het INDD-bestand met hoge resolutie alleen op verzoek beschikbaar te maken.
 
@@ -37,15 +37,13 @@ Met deze functie hebt u de flexibiliteit om een PDF- of JPG-bestand met lage res
 
    ![chlimage_1-274](assets/chlimage_1-274.png)
 
-1. Als u een ander element wilt koppelen aan het element dat u hebt geselecteerd, klikt u op **[!UICONTROL Relate]** de werkbalk.
-
-   ![chlimage_1-275](assets/chlimage_1-275.png)
-
+1. Als u een ander element wilt koppelen aan het element dat u hebt geselecteerd, klikt u op de werkbalk op Elementen **[!UICONTROL Relate]** ![](assets/do-not-localize/link-relate.png) koppelen.
 1. Voer een van de volgende handelingen uit:
 
    * Als u het bronbestand voor het element wilt koppelen, selecteert u in de **[!UICONTROL Source]** lijst.
    * Als u een afgeleid bestand wilt koppelen, selecteert u het in de **[!UICONTROL Derived]** lijst.
    * Als u een relatie in twee richtingen tussen de elementen wilt maken, selecteert u deze in de **[!UICONTROL Others]** lijst.
+
    ![chlimage_1-276](assets/chlimage_1-276.png)
 
 1. Navigeer in het **[!UICONTROL Select Asset]** scherm naar de locatie van het element dat u wilt koppelen en selecteer het.
@@ -59,7 +57,7 @@ Met deze functie hebt u de flexibiliteit om een PDF- of JPG-bestand met lage res
 
 1. Als u de koppeling met een element wilt opheffen, klikt u op **[!UICONTROL Unrelate]** de werkbalk.
 
-   ![chlimage_1-279](assets/chlimage_1-279.png)
+   ![ongekoppelde elementen](assets/do-not-localize/link-unrelate-icon.png)
 
 1. Selecteer in het **[!UICONTROL Remove Relations]** dialoogvenster de elementen die u niet wilt koppelen en klik op **[!UICONTROL Unrelate]**.
 

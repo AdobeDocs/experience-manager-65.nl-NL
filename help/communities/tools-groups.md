@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: e9bfbbce-93fc-455c-a2f7-4ee44e63c03f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
+source-git-commit: 17088abc71bb820693259088c8a9b938a43cd9d3
+workflow-type: tm+mt
+source-wordcount: '542'
+ht-degree: 0%
 
 ---
 
@@ -33,9 +36,9 @@ Wanneer een actie wordt ondernomen om een nieuwe communautaire groep tot stand t
 
 ## Groep sjablonen {#group-templates-console}
 
-Om de console van groepsmalplaatjes in het milieu van de Auteur te bereiken AEM:
+Om de console van groepsmalplaatjes in het milieu van AEM Author te bereiken:
 
-* Selecteer **gereedschappen| Gemeenschappen| Groepsjablonen,** van globale navigatie.
+* Selecteer **gereedschappen | Gemeenschappen | Groepsjablonen,** van globale navigatie.
 
 Deze console toont de malplaatjes waarvan een [communautaire plaats](/help/communities/sites-console.md) kan worden gecreeerd en laat nieuwe groepsmalplaatjes toe om worden gecreeerd.
 
@@ -49,7 +52,7 @@ Hiermee wordt het deelvenster Site-editor weergegeven met drie subdeelvensters:
 
 ### Basisinformatie {#basic-info}
 
-![chlimage_1-137](assets/chlimage_1-137.png)
+![site-basic-info](assets/site-basic-info.png)
 
 In het deelvenster Basisinformatie worden een naam, beschrijving en of de sjabloon is ingeschakeld of uitgeschakeld, geconfigureerd:
 
@@ -67,7 +70,7 @@ In het deelvenster Basisinformatie worden een naam, beschrijving en of de sjablo
 
 #### Miniatuur {#thumbnail}
 
-![chlimage_1-138](assets/chlimage_1-138.png)
+![siteminiatuur](assets/site-thumbnail.png)
 
 (Optioneel) Selecteer het pictogram Afbeelding uploaden om een miniatuur met de naam en beschrijving weer te geven aan makers van gemeenschapssites.
 

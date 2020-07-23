@@ -9,17 +9,17 @@ content-type: reference
 discoiquuid: bb8c355c-4475-45ec-9096-0975f0ce2c27
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: a1e4d64a9ac7dc02c5cf2ac6b01994736c45b449
 workflow-type: tm+mt
-source-wordcount: '1339'
-ht-degree: 3%
+source-wordcount: '1333'
+ht-degree: 2%
 
 ---
 
 
 # Elementen voorvertonen met de software-interface {#previewing-assets}
 
-Met Voorvertonen kunt u zien hoe een geüpload digitaal element eruit ziet wanneer het door een klant in een eigen webbrowser wordt bekeken. De standaard ingesloten, apparaatoverschrijdende viewer die aan het element is toegewezen, wordt gebruikt voor Voorvertoning.
+Met Voorvertonen kunt u zien hoe een geüpload digitaal element eruit ziet wanneer het door een klant in een eigen webbrowser wordt bekeken. De standaard ingesloten, apparaatoverschrijdende viewer die aan het element is toegewezen, wordt gebruikt voor de voorvertoning.
 
 Een viewer is een verzameling van verschillende instellingen of &#39;voorinstellingen&#39;, zoals de weergavegrootte van de viewer, het zoomgedrag, kleurenschema&#39;s, randen, lettertypen enzovoort, die bepalen hoe gebruikers multimedia-elementen op hun computerschermen en mobiele apparaten weergeven.
 
@@ -36,7 +36,7 @@ Zie Voorinstellingen [van viewers](/help/assets/managing-viewer-presets.md)beher
 
 **Elementen voorvertonen met de software-interface**
 
-1. Tik vanaf **[!UICONTROL Adobe Experience Manager]** op de pagina **[!UICONTROL Navigatie]** op **[!UICONTROL Assets]** en vervolgens op **[!UICONTROL Files]** om assets te openen.
+1. Tik vanaf **[!UICONTROL Adobe Experience Manager]**, op de **[!UICONTROL Navigation]** pagina, **[!UICONTROL Assets]** en **[!UICONTROL Files]** open elementen.
 1. Near the upper-right corner of the page, from the **[!UICONTROL View]** drop-down list, tap **[!UICONTROL List View.]**
 1. (Optioneel) Gebruik de **[!UICONTROL Type]** kolom om de elementen te sorteren op het type waarvan u een voorvertoning wilt weergeven.
 1. Klik onder de **[!UICONTROL Title]** kolom op de titelnaam (niet op de miniatuurafbeelding) van het element waarvan u een voorvertoning wilt weergeven.

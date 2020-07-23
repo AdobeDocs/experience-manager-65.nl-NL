@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 4a0debdd-acb9-4646-80bb-fec66fae4088
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
+source-git-commit: 17088abc71bb820693259088c8a9b938a43cd9d3
+workflow-type: tm+mt
+source-wordcount: '357'
+ht-degree: 1%
 
 ---
 
@@ -30,9 +33,9 @@ In het document wordt beschreven:
 
 ### Vereiste {#requirement}
 
-Gegevens voor de `Community Activity List` website zijn alleen beschikbaar als Adobe Analytics een licentie heeft en is geconfigureerd voor de communitysite.
+De gegevens voor de `Community Activity List` toepassing zijn alleen beschikbaar als Adobe Analytics een licentie heeft en is geconfigureerd voor de communitysite.
 
-Zie [Analytics Configuration for Communities Features](/help/communities/analytics.md).
+Zie [Analytics Configuration for Communities-functies](/help/communities/analytics.md).
 
 ### Een communautaire activiteitenlijst toevoegen aan een pagina {#adding-a-community-activity-list-to-a-page}
 
@@ -46,9 +49,9 @@ Ga voor de benodigde informatie naar [Community Components Basics](/help/communi
 
 Wanneer de component voor het eerst op een pagina van een communitysite wordt geplaatst, ziet deze er zo uit:
 
-![chlimage_1-54](assets/chlimage_1-54.png)
+![gemeenschapsactiviteit](assets/community-activity.png)
 
-### Lijst met communautaire activiteiten configureren {#configuring-community-activity-list}
+### Lijst met communautaire activiteiten configureren  {#configuring-community-activity-list}
 
 Selecteer de geplaatste `Community Activity List` component die u wilt openen en selecteer het `Configure` pictogram waarmee het dialoogvenster Bewerken wordt geopend.
 
@@ -66,6 +69,7 @@ Geef op het tabblad **Opmerkingen** op of en hoe opmerkingen voor geüploade bes
 
    * `Members`
    * `Content`
+
    Standaard is dit `Members`.
 
 * **Weergavetitel**
@@ -86,6 +90,7 @@ De standaardwaarde is 10.
    * `Posts`(maken van UGC)
    * `Follows`
    * `Likes`
+
    Standaard zijn weergaven.
 
 * **Tijdsperiode**
@@ -98,6 +103,7 @@ De standaardwaarde is 10.
    * `Last 90 days`
    * `This year (since Jan 1st)`
    * `Total`
+
    Standaard is dit `Total`.
 
 * **Contextpad**

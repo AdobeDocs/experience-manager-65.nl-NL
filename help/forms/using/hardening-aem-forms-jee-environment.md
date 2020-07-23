@@ -9,9 +9,9 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 translation-type: tm+mt
-source-git-commit: f9b11eee4c044a8df4e694aa5f660b5ea375ca3c
+source-git-commit: 9e1d77b8696436b392f0d9209ddcb2c9196f3c09
 workflow-type: tm+mt
-source-wordcount: '7665'
+source-wordcount: '7698'
 ht-degree: 0%
 
 ---
@@ -322,7 +322,7 @@ De generatie van de Definitie van de Taal van de Dienst van het Web (WSDL) zou s
 
 ### Beveiliging toepassingsserver {#application-server-security}
 
-In de volgende tabel worden enkele technieken beschreven waarmee u uw toepassingsserver kunt beveiligen nadat de AEM Forms in de JEE-toepassing zijn geïnstalleerd.
+In de volgende tabel vindt u een aantal technieken voor het beveiligen van uw toepassingsserver nadat de AEM Forms voor de JEE-toepassing zijn geïnstalleerd.
 
 <table> 
  <thead> 
@@ -955,6 +955,8 @@ Voor informatie over havens WebSphere die AEM Forms op JEE vereisen, ga naar het
 Verwijzend naar de fysieke architectuur die in de sectie [AEM Forms over fysieke architectuur](hardening-aem-forms-jee-environment.md#aem-forms-on-jee-physical-architecture)JEE wordt beschreven, zou u SSL voor alle verbindingen moeten vormen die u van plan bent te gebruiken. Specifiek, moeten alle verbindingen van de ZEEP over SSL worden geleid om blootstelling van gebruikersgeloofsbrieven op een netwerk te verhinderen.
 
 Voor instructies op hoe te om SSL op JBoss, WebLogic, en WebSphere te vormen, zie &quot;het Vormen SSL&quot;in de [beleidshulp](https://www.adobe.com/go/learn_aemforms_admin_64).
+
+Zie sectie Wederzijdse verificatie in de Help bij [](http://www.adobe.com/go/learn_aemforms_workbench_65)AEM Forms Workbench voor instructies voor het importeren van certificaten naar JVM (Java Virtual Machine) die zijn geconfigureerd voor een AEM Forms-server.
 
 ### SSL-omleiding configureren {#configuring-ssl-redirect}
 

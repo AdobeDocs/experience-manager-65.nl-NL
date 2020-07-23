@@ -12,7 +12,7 @@ discoiquuid: d381ea40-fe49-4d32-bfad-1379c7a02aba
 docset: aem65
 pagetitle: Community Groups Console
 translation-type: tm+mt
-source-git-commit: ee0d4aa07db6f00409cace8664d02c545e7d6550
+source-git-commit: a76707e16aa7054078bcfffe43476e4bd83d83e3
 workflow-type: tm+mt
 source-wordcount: '1676'
 ht-degree: 0%
@@ -259,7 +259,7 @@ Wijzig de volgorde van de functies die wordt weergegeven op de navigatiebalk op 
 
 >[!CAUTION]
 >
->De groepfunctie moet *niet *de *eerste of enige* functie in de sitestructuur zijn.
+>De groepfunctie mag *niet* de *eerste of de enige* functie in de sitestructuur zijn.
 >
 >Alle andere functies, zoals de [paginafunctie](/help/communities/functions.md#page-function), moeten worden opgenomen en als eerste worden vermeld.
 

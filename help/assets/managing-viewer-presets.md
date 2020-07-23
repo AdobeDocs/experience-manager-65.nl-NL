@@ -10,10 +10,10 @@ discoiquuid: cf7823f4-82c2-4e36-9b65-3c58359b8104
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
 translation-type: tm+mt
-source-git-commit: 8279cd590244a7f2d20cfaf1c7505a3ef57fae4a
+source-git-commit: a1e4d64a9ac7dc02c5cf2ac6b01994736c45b449
 workflow-type: tm+mt
-source-wordcount: '4264'
-ht-degree: 14%
+source-wordcount: '4260'
+ht-degree: 13%
 
 ---
 
@@ -423,7 +423,7 @@ Zie [Speciale overwegingen voor het maken van een voorinstelling](#special-consi
    ![6_5_viewervoorinstellingen](assets/6_5_viewerpresets.png)
 
 1. Tik op de pagina Voorinstellingen viewer op de werkbalk op **[!UICONTROL Create.]**
-1. Voer in het dialoogvenster **[!UICONTROL Nieuwe viewervoorinstelling]** in het veld **[!UICONTROL Preset Name]** de naam van de nieuwe voorinstelling in. Choose a name carefully—they are not editable after you tap **[!UICONTROL Create.]**
+1. In the **[!UICONTROL New Viewer Preset]** dialog box, in the **[!UICONTROL Preset Name]** field, enter the name of the new preset. Choose a name carefully—they are not editable after you tap **[!UICONTROL Create.]**
 
    Wanneer u de voorinstelling later in deze stappen opslaat, wordt de naam weergegeven op de pagina Voorinstellingen viewer onder de kolomkop Titel voorinstelling.
 
@@ -488,7 +488,7 @@ When you create or edit an Interactive Video viewer preset, you have the choice 
   </tr>
   <tr>
    <td>Segment</td>
-   <td><p><code>Segment </code>Dit is de standaardweergavemodus voor de voorinstellingen voor de uit-van-box Interactieve video-viewer <code>Shoppable_Video_light</code> en <code>Shoppable_Video_dark</code> en alle interactieve voorinstellingen voor video-viewers die u zelf maakt.</p> <p>Als er in deze modus minder miniaturen zijn toegewezen aan een videosegment dan het aantal zichtbare vlekken in het weergavevenster, worden miniaturen van de volgende of vorige subsegmenten <i>niet </i>opgehaald om lege vlekken in het deelvenster te vullen. Met andere woorden, het behoudt de weergave van stalen die aan het specifieke videosegment zijn toegewezen.</p> </td>
+   <td><p><code>Segment </code>is de standaardweergavemodus voor de voorinstellingen voor de uit-van-box Interactieve video-viewer <code>Shoppable_Video_light</code> en <code>Shoppable_Video_dark</code> en alle interactieve voorinstellingen voor video-viewers die u zelf maakt.</p> <p>Als er in deze modus minder miniaturen zijn toegewezen aan een videosegment dan het aantal zichtbare vlekken in het weergavevenster, worden miniaturen van de volgende of vorige subsegmenten <i>niet </i>opgehaald om lege vlekken in het deelvenster te vullen. Met andere woorden, het behoudt de weergave van stalen die aan het specifieke videosegment zijn toegewezen.</p> </td>
   </tr>
   <tr>
    <td>Doorlopend</td>

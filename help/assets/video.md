@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
+source-git-commit: a1e4d64a9ac7dc02c5cf2ac6b01994736c45b449
 workflow-type: tm+mt
-source-wordcount: '11362'
+source-wordcount: '11360'
 ht-degree: 7%
 
 ---
@@ -33,6 +33,7 @@ De volgende stapsgewijze workflowbeschrijving is ontworpen om u te helpen snel a
    >
    >
 * Zie het [Vormen Cloud Servicen](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services) van Dynamic Media in het Vormen Dynamic Media - Hybride wijze.
+
 >
 
 
@@ -125,7 +126,7 @@ Bovendien wordt de videokwaliteit automatisch dynamisch geschakeld als de netwer
 
 De logica die een videospeler gebruikt om te bepalen welke gecodeerde video moet worden afgespeeld of tijdens het afspelen moet worden geselecteerd, is gebaseerd op het volgende algoritme:
 
-1. Videospeler laadt het eerste videofragment op basis van de bitsnelheid die het dichtst bij de waarde ligt die is ingesteld voor de beginbitsnelheid in de speler zelf.
+1. Videospeler laadt het eerste videofragment op basis van de bitsnelheid die het dichtst bij de waarde ligt die is ingesteld voor de &#39;initiële bitsnelheid&#39; in de speler zelf.
 1. De videospelerschakelaars die op veranderingen in de bandbreedtesnelheid worden gebaseerd die de volgende criteria gebruiken:
 
    1. De speler kiest de hoogste bandbreedtestroom onder of gelijk aan de geschatte bandbreedte.
@@ -138,7 +139,7 @@ Voor het beheren van afzonderlijke video- en adaptieve videosets wordt het volge
 * Video uploaden van diverse ondersteunde video-indelingen en audio-indelingen en video coderen naar MP4 H.264-indeling, zodat deze op meerdere schermen kan worden afgespeeld. U kunt vooraf gedefinieerde adaptieve videovoorinstellingen gebruiken, voorinstellingen voor één videocodering gebruiken of uw eigen codering aanpassen om de kwaliteit en de grootte van de video te bepalen.
 
    * Wanneer een adaptieve videoset wordt gegenereerd, bevat deze MP4-video&#39;s.
-   * **Opmerking**: Stramien-/bronvideo&#39;s worden niet toegevoegd aan een adaptieve videoset.
+   * **Opmerking**: Master-/bronvideo&#39;s worden niet toegevoegd aan een adaptieve videoset.
 
 * ondertiteling in alle HTML5-videoviewers.
 * Video organiseren, doorbladeren en doorzoeken met volledige metagegevensondersteuning voor een efficiënt beheer van video-elementen.
@@ -369,7 +370,7 @@ Over het algemeen geldt dat hoe hoger de gegevenssnelheid, hoe beter uw video er
 Omdat de resolutie en de gegevenssnelheid zijn gekoppeld, hebt u twee opties bij het coderen van video:
 
 * Kies een gegevenssnelheid en codeer vervolgens met de hoogste resolutie die er goed uitziet in de gekozen gegevenssnelheid.
-* Kies een resolutie en codeer met de gegevenssnelheid die nodig is voor video van hoge kwaliteit bij de gekozen resolutie.
+* Kies een resolutie en codeer met de gegevenssnelheid die nodig is voor video van hoge kwaliteit met de gekozen resolutie.
 
 Wanneer u een voorinstelling voor videocodering kiest (of maakt) voor uw primaire bronvideobestand, gebruikt u deze tabel om de juiste resolutie in te stellen:
 
@@ -472,6 +473,7 @@ Google Cloud-instellingen configureren:
 
    * Tik op het dashboard van uw project op de Aan de slag-kaart **[!UICONTROL Explore and enable APIs.]**
    * Tik op het dashboard van uw project op de API&#39;s-kaart **[!UICONTROL Go to APIs overview.]**
+
    ![6_5_googleaccount-apis-enable2](assets/6_5_googleaccount-apis-enable2.png)
 
 1. Tik boven aan de pagina met API&#39;s en services op **[!UICONTROL Enable APIs and Services.]**
@@ -491,6 +493,7 @@ Google Cloud-instellingen configureren:
    * Selecteer in de vervolgkeuzelijst **[!UICONTROL Where will you be calling the API from?]** de optie **[!UICONTROL Web Server (e.g. node.js, Tomcat)]**
 
    * From the **[!UICONTROL What data will you be accessing?]** drop-down list, tap **[!UICONTROL User data.]**
+
    ![6_5_googleaccount-apis-createcredentials2](assets/6_5_googleaccount-apis-createcredentials2.png)
 
 1. Tik op **[!UICONTROL What credentials do I need?]**
@@ -548,7 +551,7 @@ Een YouTube-kanaal maken:
 1. Ga naar [https://www.youtube.com](https://www.youtube.com/) en meld u aan met de referenties van uw Google-account.
 1. Klik in de rechterbovenhoek van de YouTube-pagina op de profielfoto (deze kan ook als een letter binnen een cirkel met effen kleuren worden weergegeven) en klik vervolgens op **[!UICONTROL YouTube settings]** (het pictogram met ronde versnelling).
 1. Klik op de pagina Overzicht onder de kop Extra functies op **[!UICONTROL See all my channels or create a new channel.]**
-1. Klik op de pagina Kanalen op **[!UICONTROL Create a new channel.]**
+1. On the Channels page, click **[!UICONTROL Create a new channel.]**
 1. Voer op de pagina Brand Account in het veld Brand Account Name een bedrijfsnaam of een andere kanaalnaam in die u kiest waar u de video-elementen wilt publiceren en klik vervolgens op **[!UICONTROL Create.]**
 
    Onthoud de naam die u hier invoert, omdat u deze opnieuw moet invoeren wanneer u YouTube instelt in AEM.
@@ -836,9 +839,11 @@ De voortgang controleren (inclusief mislukte codering/YouTube-publicatie):
 1. Voortgang videocodering weergeven in map met elementen:
 
    * In de kaartweergave wordt de voortgang van de videocodering met een percentage weergegeven op het element. Als er een fout optreedt, wordt deze informatie ook weergegeven op het element.
+
    ![chlimage_1-429](assets/chlimage_1-429.png)
 
    * In list view, video encoding progress displays in the **[!UICONTROL Processing Status]** column. Als er een fout is, wordt dit bericht in dezelfde kolom weergegeven.
+
    ![chlimage_1-430](assets/chlimage_1-430.png)
 
    Deze kolom wordt niet standaard weergegeven. Als u de kolom wilt inschakelen, selecteert u **[!UICONTROL View Settings]** in het vervolgkeuzemenu Weergaven en voegt u de kolom **[!UICONTROL Processing Status]** toe en tikt of klikt u op **[!UICONTROL Update.]**
@@ -858,6 +863,7 @@ De voortgang controleren (inclusief mislukte codering/YouTube-publicatie):
    >    * Configuratie Apache Sling-taakwachtrij
    >    * Adobe Granite Workflow External Process Job Handler
    >    * Tijdelijke wachtrij voor Granite Workflow
+
    >
    >U kunt de eigenschappen **[!UICONTROL retries]**, **[!UICONTROL retry delay]** en **[!UICONTROL timeout]** in deze configuraties aanpassen.
 
@@ -892,6 +898,7 @@ De voortgang controleren (inclusief mislukte codering/YouTube-publicatie):
    >    * Configuratie Apache Sling-taakwachtrij
    >    * Adobe Granite Workflow External Process Job Handler
    >    * Tijdelijke wachtrij voor Granite Workflow
+
    >
    >
    >U kunt de eigenschappen **[!UICONTROL retries]**, **[!UICONTROL retry delay]** en **[!UICONTROL timeout]** in deze configuraties aanpassen.
@@ -938,6 +945,7 @@ Hoe u een melding configureert, hangt af van het feit of u meldingen voor coderi
    * Start publiceren
    * Publicatiefout
    * Voltooien publiceren - bevat informatie over kanalen en URL&#39;s
+
    Als u een selectievakje wist, ontvangt u geen e-mailbericht van de publicatieworkflow van YouTube.
 
    >[!NOTE]
@@ -987,6 +995,7 @@ U hoeft alleen Vernieuwen te gebruiken als de einddatum van het rapport de huidi
 
    * Tik in de rechterbovenhoek op de **Datumkiezer **pictogram.
 Geef het begin- en einddatumbereik op waarvoor u videogegevens wilt en tik vervolgens op **[!UICONTROL Run Report.]**
+
    In het groepsvak Metriek bovenaan ziet u verschillende statistische metingen voor alle *gepubliceerde *video&#39;s op uw site.
 
 1. Tik in de tabel met de bovenste gepubliceerde video&#39;s op een videonaam om de video af te spelen en zie ook het rapport voor het vasthouden van het publiek van de video (drop-off).
@@ -1080,7 +1089,7 @@ Bijschriften of ondertitels toevoegen aan video:
 
    U bereikt het beste resultaat met de tool in Internet Explorer 9 of hoger, Google Chrome of Safari.
 
-   Plak in het veld **[!UICONTROL Enter URL of video file]** van het gereedschap de gekopieerde URL van het videobestand en klik vervolgens op **[!UICONTROL Laden]**. Zie Een URL [verkrijgen voor een element](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) om de URL naar het videobestand zelf op te halen. U kunt deze URL vervolgens in **[!UICONTROL Enter URL of video file field.]** Internet Explorer, Chrome of Safari plakken om de video op een native manier af te spelen.
+   In the tool, in the **[!UICONTROL Enter URL of video file]** field, paste the copied URL of your video file and then click **[!UICONTROL Load]**. Zie Een URL [verkrijgen voor een element](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) om de URL naar het videobestand zelf op te halen. U kunt deze URL vervolgens in **[!UICONTROL Enter URL of video file field.]** Internet Explorer, Chrome of Safari plakken om de video op een native manier af te spelen.
 
    Volg nu de aanwijzingen op het scherm van de site om het WebVTT-bestand te ontwerpen en op te slaan. Wanneer u klaar bent, kopieert u de inhoud van het bijschriftbestand en plakt u deze in een teksteditor zonder opmaak en slaat u het bestand op met de bestandsnaamextensie .vtt.
 

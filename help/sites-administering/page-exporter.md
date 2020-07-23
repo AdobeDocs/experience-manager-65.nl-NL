@@ -2,9 +2,9 @@
 title: De pagina-exportfunctie
 description: Leer hoe u de AEM Page Exporter gebruikt.
 translation-type: tm+mt
-source-git-commit: c152cf4bf8cf19e0fa7b328241ced753fa42f7a4
+source-git-commit: 6aee1506b54a932bae8f2521fce4488de7d2a52a
 workflow-type: tm+mt
-source-wordcount: '1052'
+source-wordcount: '1065'
 ht-degree: 0%
 
 ---
@@ -98,7 +98,7 @@ Een volledig nieuwe sjabloon maken:
 
 Zodra uw malplaatje is gevormd moet u het ter beschikking stellen:
 
-1. Navigeer in CRXDE naar de vereiste pagina in de `/content` vertakking.
+1. Navigeer in CRXDE naar de vereiste pagina in de `/content` vertakking. Dit kan een afzonderlijke pagina zijn, of de hoofdpagina van een substructuur.
 
 1. Maak de eigenschap op het `jcr:content` knooppunt van de pagina:
    * `Name`: `cq:exportTemplate`

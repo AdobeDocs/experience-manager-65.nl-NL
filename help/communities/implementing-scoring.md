@@ -12,7 +12,7 @@ discoiquuid: ea033bb9-cb92-4c93-855f-8c902999378c
 docset: aem65
 tagskeywords: scoring, badging, badges, gamification
 translation-type: tm+mt
-source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+source-git-commit: a76707e16aa7054078bcfffe43476e4bd83d83e3
 workflow-type: tm+mt
 source-wordcount: '2897'
 ht-degree: 1%
@@ -62,15 +62,18 @@ Op rollen gebaseerde badges worden door een beheerder toegewezen aan leden van d
 
 Toegewezen (en geawade) badges worden opgeslagen in geselecteerde [SRP](/help/communities/srp.md) en zijn niet direct toegankelijk. Totdat een GUI beschikbaar is, is het enige middel om op rol-gebaseerde badges toe te wijzen dit met code of cURL. Zie de sectie [Badges](#assign-and-revoke-badges)toewijzen en intrekken voor instructies voor cURL.
 
-De release bevat drie badges die zijn gebaseerd op rollen:
+In de release zijn drie badges op basis van rollen opgenomen:
 
 * **moderator**
+
    `/libs/settings/community/badging/images/moderator/jcr:content/moderator.png`
 
 * **groepsbeheerder**
+
    `/libs/settings/community/badging/images/group-manager/jcr:content/group-manager.png`
 
 * **geprivilegieerd lid**
+
    `/libs/settings/community/badging/images/privileged-member/jcr:content/privileged-member.png`
 
 ![chlimage_1-98](assets/chlimage_1-98.png)
@@ -87,12 +90,15 @@ Om badges als beloning voor activiteit te kunnen weergeven, moeten er twee dinge
 De release bevat drie beloningsbadges:
 
 * **goud**
+
    `/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png`
 
 * **zilver**
+
    `/libs/settings/community/badging/images/silver-badge/jcr:content/silver.png`
 
 * **brons**
+
    `/libs/settings/community/badging/images/bronze-badge/jcr:content/bronze.png`
 
 ![chlimage_1-99](assets/chlimage_1-99.png)
@@ -302,7 +308,7 @@ Wijzigingen of toevoegingen aan de in de ontwerpomgeving aangebrachte scoreregel
 
 ## Badgingregels {#badging-rules}
 
-De regels van de badging verbinden het scoren regels aan badges door te specificeren:
+De regels van de Badging koppelen het scoring regels aan badges door te specificeren:
 
 * Scoreregel.
 * De score is nodig om een specifieke badge te ontvangen.
@@ -409,6 +415,7 @@ cURL -i -X POST -H *header* -u *sign* -F *operation* -F *badge* *member-profile-
 >
 >* Kan naar een auteurinstantie verwijzen als de Dienst [van de](/help/communities/users.md#tunnel-service) Tunnel wordt toegelaten.
 >* Kan een duistere, willekeurige naam zijn - zie [Beveiligingscontrolelijst](/help/sites-administering/security-checklist.md#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path) met betrekking tot machtigbare id.
+
 >
 
 

@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 26715b94-e2ea-4da7-a0e2-3e5a367ac1cd
 translation-type: tm+mt
-source-git-commit: b242163267b43507e1cb9c6d4c36bb65385afc62
+source-git-commit: 8738989c18c6f09452da95d0b9f2c05b0a2a1a81
 workflow-type: tm+mt
 source-wordcount: '1210'
 ht-degree: 0%
@@ -39,11 +39,11 @@ Wanneer de bezoeker van de site voor het eerst op de gepubliceerde site aankomt,
 
 **http://localhost:4503/content/sites/enable/en.html**
 
-![chlimage_1-433](assets/chlimage_1-433.png)
+![enablement-login](assets/enablement-login.png)
 
 ## Anonieme sitebezoeker {#anonymous-site-visitor}
 
-Een anonieme sitebezoeker wordt direct de aanmeldingspagina voor deze persoonlijke communitysite voor activering getoond. Er is geen optie voor zelfinschrijving of aanmelden bij Facebook of Twitter.
+Een anonieme sitebezoeker wordt direct de aanmeldingspagina voor deze persoonlijke communitysite voor activering aangeboden. Er is geen optie voor zelfinschrijving of aanmelden bij Facebook of Twitter.
 
 Deze homepage bevat vier menu-items: `Assignments, Ski Catalog, What's New` en `Discussions`, maar geen van deze bestanden kan worden bereikt zonder u aan te melden.
 
@@ -72,7 +72,7 @@ Voer de volgende stappen uit om de inhoud van uw site te beschermen tegen toegan
 1. Ga naar **[!UICONTROL Advanced]** tabblad.
 1. Inschakelen **[!UICONTROL Authentication Requirement]**.
 
-   ![site-verificatie-1](assets/site-authentication-1.png)
+   ![plaatsverificatie](assets/site-authentication.png)
 
 1. Voeg het pad van de aanmeldingspagina toe. Bijvoorbeeld, `/content/......./GetStarted`.
 1. Publiceer de pagina.

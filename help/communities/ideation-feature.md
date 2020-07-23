@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: a3f5a21d-2df6-4663-a1ea-3a067c46f860
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
+source-git-commit: f62fb1eb760ddd7baee9ba5a631ff4b921e2d08b
+workflow-type: tm+mt
+source-wordcount: '1113'
+ht-degree: 0%
 
 ---
 
@@ -44,17 +47,19 @@ Ga voor de benodigde informatie naar [Community Components Basics](/help/communi
 
 Wanneer de [vereiste client-side bibliotheken](/help/communities/ideation.md#essentials-for-client-side) worden opgenomen, wordt de `Ideation` component als volgt weergegeven:
 
-![chlimage_1-71](assets/chlimage_1-71.png)
+![ideatie](assets/ideation.png)
 
 ### Een idee configureren {#configuring-an-ideation}
 
 Selecteer de geplaatste `Ideation` component die u wilt openen en selecteer het `Configure` pictogram waarmee het dialoogvenster Bewerken wordt geopend.
 
-![chlimage_1-72](assets/chlimage_1-72.png) ![video-instellingen](assets/ideation-settings.png)
+![configure-new](assets/configure-new.png)
+
+![video-instellingen](assets/ideation-settings.png)
 
 #### Het tabblad Instellingen {#settings-tab}
 
-Geef op het tabblad **[!UICONTROL Instellingen]** instellingen op voor ideeën en opmerkingen:
+Geef onder het **[!UICONTROL Settings]** tabblad instellingen voor ideeën en opmerkingen op:
 
 * **Miniatuur van bijlage toestaan**
 * **Maximale grootte miniatuur bijvoegen**
@@ -88,7 +93,7 @@ Geef op het tabblad **[!UICONTROL Instellingen]** instellingen op voor ideeën e
 
 * **Tags toestaan**
 
-   Als deze optie is ingeschakeld, kunnen leden labellabels aan hun post toevoegen (zie tabblad **[!UICONTROL Tagveld]** ). De optie Standaard is uitgeschakeld.
+   Als deze optie is ingeschakeld, kunnen leden labels aan hun advertentie toevoegen (zie **[!UICONTROL Tag field]** tabblad). De optie Standaard is uitgeschakeld.
 
 * **Uploaden van bestanden toestaan**
 
@@ -146,7 +151,7 @@ Geef op het tabblad **[!UICONTROL Instellingen]** instellingen op voor ideeën e
 
 #### Tabblad Gebruikersmodernisering {#user-moderation-tab}
 
-Geef op onder het tabblad **[!UICONTROL Gebruikersmodernisering]** op hoe de geposte ideeën en opmerkingen (door de gebruiker gegenereerde inhoud) worden beheerd. Voor meer informatie, zie het [Modereren van Gebruiker Gegenereerde Inhoud](/help/communities/moderate-ugc.md).
+Geef onder het **[!UICONTROL User Moderation]** tabblad op hoe de geposte ideeën en opmerkingen (door de gebruiker gegenereerde inhoud) worden beheerd. Voor meer informatie, zie het [Modereren van Gebruiker Gegenereerde Inhoud](/help/communities/moderate-ugc.md).
 
 * **Posten weigeren**
 
@@ -178,11 +183,11 @@ Geef op onder het tabblad **[!UICONTROL Gebruikersmodernisering]** op hoe de gep
 
 #### Tabblad Tagveld {#tag-field-tab}
 
-Onder het tabblad **[!UICONTROL Tagveld]** zijn de tags die kunnen worden toegepast, indien toegestaan op het tabblad **[!UICONTROL Instellingen]** , beperkt op basis van de gekozen naamruimten.
+Onder het **[!UICONTROL Tag field]** tabblad zijn de tags die kunnen worden toegepast, indien toegestaan onder het **[!UICONTROL Settings]** tabblad, beperkt op basis van de gekozen naamruimten.
 
 * **Toegestane naamruimten**
 
-   Relevant als `Allow Tagging` is ingeschakeld onder het tabblad **[!UICONTROL Instellingen]** . De tags die kunnen worden toegepast, zijn beperkt tot de tags binnen de geselecteerde naamruimtecategorieën. De lijst met naamruimten bevat &#39;Standaardtags&#39; (de standaardnaamruimte) en &#39;Alle tags opnemen&#39;. De standaardwaarde is niet ingeschakeld, hetgeen betekent dat alle naamruimten zijn toegestaan.
+   Relevant als `Allow Tagging` wordt gecontroleerd onder het **[!UICONTROL Settings]** lusje. De tags die kunnen worden toegepast, zijn beperkt tot de tags binnen de geselecteerde naamruimtecategorieën. De lijst met naamruimten bevat &#39;Standaardtags&#39; (de standaardnaamruimte) en &#39;Alle tags opnemen&#39;. De standaardwaarde is niet ingeschakeld, hetgeen betekent dat alle naamruimten zijn toegestaan.
 
 * **Suggestiegrenswaarde**
 
@@ -190,7 +195,7 @@ Onder het tabblad **[!UICONTROL Tagveld]** zijn de tags die kunnen worden toegep
 
 #### Tabblad Instellingen sorteren {#sort-settings-tab}
 
-Geef op onder het tabblad **[!UICONTROL Sorteerinstellingen]** op hoe de geposte opmerkingen worden gesorteerd wanneer ze worden weergegeven.
+Geef onder het **[!UICONTROL Sort Settings]** tabblad op hoe de geposte opmerkingen worden gesorteerd wanneer ze worden weergegeven.
 
 * **Sorteren op**
 
@@ -200,7 +205,7 @@ Geef op onder het tabblad **[!UICONTROL Sorteerinstellingen]** op hoe de geposte
 
    Trek naar beneden om een van de geselecteerde sorteeropties te selecteren die als standaard moeten worden weergegeven. Standaard is dit `Newest`.
 
-* **Tijdopties selecteren voor het sorteren van analysemogelijkheden**
+* **Tijdopties selecteren voor Analytics-sortering**
 
    Trek omlaag om een van de twee te selecteren `All, Last 24 Hours, Last 7 Days, Last 30 Days`. Standaard is dit `All`.
 
@@ -212,23 +217,23 @@ Net als bij alle andere communautaire kenmerken kan een bezoeker van de site all
 
 Na aanmelding kan een lid een nieuw idee maken.
 
-![chlimage_1-73](assets/chlimage_1-73.png)
+![creatief-nieuw-idee](assets/create-new-idea.png)
 
 Voordat het idee wordt verzonden, kan het lid een concept opslaan.
 
 Als u de `Save as Draft` knop selecteert, wordt een concept opgeslagen.
 
-![chlimage_1-74](assets/chlimage_1-74.png)
+![sparen-idee](assets/save-idea.png)
 
 Als u opgeslagen concepten op het `My Drafts` tabblad weergeeft, selecteert u `Read More` om de bewerkingsmodus opnieuw in te schakelen:
 
-![chlimage_1-75](assets/chlimage_1-75.png)
+![bewerken-idee](assets/edit-idea.png)
 
 #### Feedback geven {#providing-feedback}
 
 Zodra het idee is gepubliceerd, kunnen andere leden zich aanmelden, het idee ( `Read More`) openen en het idee volgen, en zo het aantal stemmen verhogen en opmerkingen maken.
 
-![chlimage_1-76](assets/chlimage_1-76.png)
+![feedback](assets/feedback-idea.png)
 
 ### Additional Information {#additional-information}
 

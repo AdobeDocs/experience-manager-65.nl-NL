@@ -11,7 +11,10 @@ topic-tags: site-features
 discoiquuid: 6472dc94-96e0-4286-8f86-d85726cc843c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+source-git-commit: 611743cc4144f99968845093b3903fe7df8bf9d9
+workflow-type: tm+mt
+source-wordcount: '674'
+ht-degree: 12%
 
 ---
 
@@ -29,8 +32,8 @@ U kunt elke workflow toepassen (waartoe u toegang hebt, zoals is toegewezen door
 
 Workflows kunnen worden gestart vanaf:
 
-* [de **Sites** -console](#starting-a-workflow-from-the-sites-console).
-* [bij het bewerken van een pagina, uit **Pagina-informatie **](#starting-a-workflow-from-the-page-editor).
+* [de Sites-console](#starting-a-workflow-from-the-sites-console).
+* [bij het bewerken van een pagina, vanuit Pagina-informatie](#starting-a-workflow-from-the-page-editor).
 
 >[!NOTE]
 >
@@ -38,6 +41,7 @@ Workflows kunnen worden gestart vanaf:
 >
 >* [Hoe te om werkschema&#39;s op activa](/help/assets/assets-workflow.md)toe te passen DAM.
 >* [Werken met projectworkflows](/help/sites-authoring/projects-with-workflows.md).
+
 >
 
 
@@ -50,8 +54,8 @@ Workflows kunnen worden gestart vanaf:
 
 U kunt een workflow starten vanuit:
 
-* [de optie **Maken** van de werkbalk](#starting-a-workflow-from-the-sites-toolbar)Sites.
-* [de **tijdlijn** van de Sites-console](#starting-a-workflow-from-the-timeline).
+* [Kies de optie Maken op de werkbalk](#starting-a-workflow-from-the-sites-toolbar)Sites.
+* [de tijdlijnrail van de Sites-console](#starting-a-workflow-from-the-timeline).
 
 In beide gevallen moet u:
 
@@ -86,8 +90,8 @@ Met de wizard **Workflow** maken kunt u de workflow selecteren en de vereiste de
 
 Nadat u de wizard **Workflow** maken hebt geopend vanuit:
 
-* [de optie **Maken** van de werkbalk](#starting-a-workflow-from-the-sites-toolbar)Sites.
-* [de **tijdlijn** van de Sites-console](#starting-a-workflow-from-the-timeline).
+* [Kies de optie Maken op de werkbalk](#starting-a-workflow-from-the-sites-toolbar)Sites.
+* [de tijdlijnrail van de Sites-console](#starting-a-workflow-from-the-timeline).
 
 U kunt details opgeven:
 
@@ -97,6 +101,7 @@ U kunt details opgeven:
    * **Titel werkstroom**
 
       * U kunt een titel voor dit exemplaar specificeren, om u te helpen het in een later stadium identificeren.
+
    Afhankelijk van het workflowmodel zijn ook de volgende opties beschikbaar. Hierdoor kan het pakket dat als lading is gemaakt, worden bewaard nadat de workflow is voltooid.
 
    * **Workflowpakket behouden**
@@ -105,7 +110,7 @@ U kunt details opgeven:
       * U kunt een titel voor het pakket opgeven om het te identificeren.
    >[!NOTE]
    >
-   >De optie Workflowpakket **bijeenhouden is beschikbaar wanneer de workflow is geconfigureerd voor** Multi Resource Support [](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support) en er meerdere bronnen zijn geselecteerd.
+   >De optie **Workflowpakket bijhouden** is beschikbaar wanneer de workflow is geconfigureerd voor ondersteuning van meerdere resources en er meerdere resources zijn geselecteerd.[](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support)
 
    Als u klaar bent, gebruikt u **Volgende** om door te gaan.
 
@@ -123,14 +128,16 @@ Er wordt een dialoogvenster geopend waarin u de selectie kunt verfijnen op basis
          * Alleen directe kinderen opnemen.
          * Alleen gewijzigde pagina&#39;s opnemen.
          * Alleen al gepubliceerde pagina&#39;s opnemen.
+
          Alle opgegeven onderliggende items worden toegevoegd aan de lijst met bronnen waarop de workflow van toepassing is.
 
       * **Selectie** verwijderen om die bron uit de workflow te verwijderen.
+
    ![wf-53](assets/wf-53.png)
 
    >[!NOTE]
    >
-   >Als u aanvullende bronnen toevoegt, kunt u **Terug** gebruiken om de instelling voor het werkstroompakket **** Behouden aan te passen in de stap **Eigenschappen** .
+   >Als u aanvullende resources toevoegt, kunt u **Terug** gebruiken om de instelling voor **Workflowpakket behouden** aan te passen in de stap **Eigenschappen**.
 
 1. Gebruik **Maken** om de wizard te sluiten en de instantie van de workflow te maken. Een bericht wordt getoond in de console van Plaatsen.
 

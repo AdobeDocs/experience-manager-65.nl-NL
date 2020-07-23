@@ -2,9 +2,9 @@
 title: Actieve kopieën maken en synchroniseren
 description: Leer hoe u Actieve kopieën maakt en synchroniseert.
 translation-type: tm+mt
-source-git-commit: 90364cdf6044616d43c1851b3def9b1f063449ca
+source-git-commit: 4755f33ed27bb876bfb70bab35d411d9b06788b0
 workflow-type: tm+mt
-source-wordcount: '4116'
+source-wordcount: '4115'
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ U kunt een live kopie van elke pagina of vertakking maken. Wanneer u de live kop
 
 U kunt een live kopie van elke pagina maken:
 
-* Pagina&#39;s zijn die door een [blauwdrukconfiguratie](#creating-a-blueprint-configuration)van verwijzingen worden voorzien,
+* Pagina&#39;s die door een [blauwdrukconfiguratie](#creating-a-blueprint-configuration)van verwijzingen worden voorzien.
 * En pagina&#39;s die geen verbinding met een configuratie hebben.
 * AEM ondersteunt ook het maken van een live kopie op de pagina&#39;s van een andere live kopie.
 

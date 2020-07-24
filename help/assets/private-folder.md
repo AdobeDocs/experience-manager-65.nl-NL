@@ -3,9 +3,9 @@ title: Een persoonlijke map maken en delen in Adobe Experience Manager.
 description: Leer hoe u een persoonlijke map maakt in de Adobe Experience Manager Assets en deze deelt met andere gebruikers en hoe u hen verschillende rechten toekent.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '480'
 ht-degree: 0%
 
 ---
@@ -23,11 +23,9 @@ In de gebruikersinterface Adobe Experience Manager Assets kunt u een persoonlijk
 
    ![Map met elementen maken](assets/Create-folder.png)
 
-1. Voer in het **[!UICONTROL Create Folder]** dialoogvenster een titel en naam (optioneel) voor de map in en selecteer **[!UICONTROL Private]**.
+1. Voer in het **[!UICONTROL Create Folder]** dialoogvenster een titel en naam (optioneel) voor de map in en selecteer **[!UICONTROL Private]** optie.
 
-   ![Schakel het selectievakje Privé in om de map privé te maken](assets/private-folder.png)
-
-1. Klik op **[!UICONTROL Create]**. Er wordt een privémap gemaakt in de gebruikersinterface.
+1. Klik op **[!UICONTROL Create]**. Er wordt een persoonlijke map gemaakt.
 
    ![chlimage_1-413](assets/chlimage_1-413.png)
 

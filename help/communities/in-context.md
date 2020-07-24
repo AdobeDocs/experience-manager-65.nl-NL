@@ -10,14 +10,17 @@ topic-tags: administering
 content-type: reference
 discoiquuid: ee104f6f-123b-4a6e-9031-849fc1318cc5
 translation-type: tm+mt
-source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
+source-git-commit: 917fceffb58883df83e96f60da4769046a18f3c0
+workflow-type: tm+mt
+source-wordcount: '796'
+ht-degree: 0%
 
 ---
 
 
 # In context Moderatie {#in-context-moderation}
 
-Voor AEM-gemeenschappen kunnen beheerders en vertrouwde leden van de gemeenschap de moderatie rechtstreeks uitvoeren op de gepubliceerde pagina waar de inhoud van de gemeenschap is geplaatst.
+Voor AEM Communities kan de moderatie door beheerders en vertrouwde op communautaire leden rechtstreeks op de gepubliceerde pagina worden uitgevoerd waar de communautaire inhoud werd gepost.
 
 Wanneer het gebruiken van een [moderatieconsole](moderation.md), omvat de informatie die voor de inhoud wordt getoond een verbinding aan de gepubliceerde pagina om toegang tot extra beschikbare moderatieacties toe te staan wanneer het modereren in-context.
 
@@ -37,7 +40,7 @@ UI die aan de moderator op wordt voorgesteld publiceert instantie is bevat binne
 
 ## Voorbeeld {#example}
 
-Met behulp van de [Geometrixx Engage](http://localhost:4503/content/sites/engage/en.html) -site die bij [Aan de slag met AEM-gemeenschappen](getting-started.md)is gemaakt, is het mogelijk om snel een thread in een forum in te stellen waarop verschillende moderatieactiviteiten in de publicatieomgeving kunnen worden uitgevoerd, zoals hieronder wordt weergegeven.
+Met de [Geometrixx Engage](http://localhost:4503/content/sites/engage/en.html) -site die bij [Aan de slag met AEM Communities](getting-started.md)is gemaakt, is het mogelijk om snel een thread in een forum in te stellen waarop verschillende moderatieactiviteiten in de publicatieomgeving moeten worden uitgevoerd, zoals hieronder wordt weergegeven.
 
 Aaron McDonald (aaron.mcdonald@mailinator.com) werd geïdentificeerd als een vertrouwd lid van de gemeenschap door hem toe te voegen aan de community-engact-moderators groep bij het maken van de site.
 
@@ -58,6 +61,7 @@ Ga voor meer informatie over gebruikersgroepen in de gebruikersgemeenschap naar 
    * De hoofdtekst invoeren
 
       Ik heb niet veel succes gehad als ik elk jaar een kolietvoeders ophang. Ze lijken een dag of twee te komen, dan is dat het. Ik verander het eenmaal per week, is dat te lang? Moet ik het eerder veranderen?
+
    * Post selecteren
    * Afmelden selecteren
 
@@ -89,7 +93,7 @@ Hier volgt een weergave van het forum dat wordt weergegeven door een bezoeker va
 
 Een anonieme bezoeker van de site kan alleen het forum bekijken, maar kan geen inhoud plaatsen en geen moderatieacties uitvoeren.
 
-![chlimage_1](assets/chlimage_1.png)
+![bezoeker van het forum](assets/community-forum-visitor.png)
 
 ### Nieuw lid (#4) {#new-member}
 
@@ -107,7 +111,7 @@ Laat Boyd Vlag selecteren om de inhoud te markeren die door Andrew is geplaatst.
 
 Afmelden
 
-![chlimage_1-1](assets/chlimage_1-1.png)
+![lid van het forum](assets/community-forum-member.png)
 
 ### Beheerder (#3) {#administrator}
 
@@ -118,7 +122,7 @@ Opmerking:
 * Beheerders kunnen vlaggen, Verwijderen, Bewerken, Weigeren, Knippen, Sluiten, Vastzetten, Functie.
 * Admin kan Beleid selecteren om tot de moderatieconsole toegang te hebben.
 
-![communityadmin-forum](assets/communityadmin-forum.png)
+![community-admin-forum](assets/community-admin-forum.png)
 
 Selecteer het menupunt van het Beleid om tot de [moderatieconsole](moderation.md) van publiceer milieu toegang te hebben.
 
@@ -128,7 +132,7 @@ Het zoekfilter is een sidepanel dat in- en uitschakelt.
 
 Afmelden.
 
-![moderationconsole-publish](assets/moderationconsole-publish.png)
+![moderatie-console-publish](assets/moderation-console-publish.png)
 
 ### Moderator van de Gemeenschap (#2) {#community-moderator}
 
@@ -141,7 +145,7 @@ Opmerking:
 * Aaron kan het forumonderwerp knippen om het naar een ander forum te verplaatsen waarvoor hij gematigd is.
 * Aaron kan Beleid selecteren om tot de moderatieconsole toegang te hebben.
 
-![chlimage_1-2](assets/chlimage_1-2.png)
+![gemeenschapsforum-moderator](assets/community-forum-moderator.png)
 
 Selecteer het menupunt van het Beleid om tot de [moderatieconsole](moderation.md) van publiceer milieu toegang te hebben.
 
@@ -151,7 +155,7 @@ Merk op de communautaire moderator de zelfde opties heeft zoals de beheerder (he
 
 Afmelden.
 
-![gematigde toegang](assets/moderatoraccess.png)
+![moderator-toegang](assets/moderator-access.png)
 
 ### Inhoudsauteur (#1) {#content-author}
 
@@ -163,5 +167,5 @@ Opmerking:
 * Rebekah kan ook reageren op andere inhoud of andere inhoud markeren.
 * Rebekah heeft geen toegang tot de moderatieconsole.
 
-![chlimage_1-3](assets/chlimage_1-3.png)
+![communityforum-auteur](assets/community-forum-author.png)
 

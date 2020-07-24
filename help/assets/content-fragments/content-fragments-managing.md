@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 21a18d60-f3fe-4048-9949-8416b5cb4596
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a430c4de89bde3b907d342106465d3b5a7c75cc8
+source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
 workflow-type: tm+mt
-source-wordcount: '1483'
+source-wordcount: '1486'
 ht-degree: 10%
 
 ---
@@ -21,15 +21,15 @@ ht-degree: 10%
 
 # Contentfragmenten beheren{#managing-content-fragments}
 
-Inhoudsfragmenten worden opgeslagen als **elementen**, zodat ze voornamelijk worden beheerd vanaf de **middelenconsole** .
+Content Fragments are stored as **Assets**, so are primarily managed from the **Assets** console.
 
 >[!NOTE]
 >
->Inhoudsfragmenten worden vervolgens gebruikt bij het ontwerpen van pagina&#39;s. Zie [Pagina&#39;s ontwerpen met inhoudsfragmenten](/help/sites-authoring/content-fragments.md).
+>Content fragments are then used with authoring pages; see [Page Authoring with Content Fragments](/help/sites-authoring/content-fragments.md).
 
-## Inhoudsfragmenten maken {#creating-content-fragments}
+## Creating Content Fragments {#creating-content-fragments}
 
-### Een inhoudsmodel maken {#creating-a-content-model}
+### Creating a Content Model {#creating-a-content-model}
 
 [U kunt contentfragmentmodellen](/help/assets/content-fragments/content-fragments-models.md) inschakelen en maken voordat u inhoudsfragmenten met gestructureerde inhoud maakt.
 
@@ -51,6 +51,7 @@ De methode voor het maken van een inhoudsfragment is (in principe) hetzelfde voo
 
       * [Model](/help/assets/content-fragments/content-fragments-models.md) - wordt gebruikt om een fragment tot stand te brengen dat gestructureerde inhoud vereist; bijvoorbeeld het **luchthavenmodel**
    * Alle beschikbare sjablonen en modellen worden weergegeven.
+
    Na selectie gebruikt u **Volgende** om door te gaan.
 
    ![cfm-6420-15](assets/cfm-6420-15.png)
@@ -61,7 +62,7 @@ De methode voor het maken van een inhoudsfragment is (in principe) hetzelfde voo
 
       * **Titel**
 
-         De fragmenttitel.
+         The fragment title.
 
          Verplicht.
 
@@ -98,28 +99,28 @@ Selecteer het fragment om de werkbalk weer te geven met de toepasselijke acties:
 * **Afhandeling**
 * **Eigenschappen**
 
-   * Hiermee kunt u de metagegevens van het fragment weergeven en/of bewerken.
+   * Allows you to view and/or edit the fragment&#39;s metadata.
 
 * **Bewerken**
 
-   * Hiermee kunt u het fragment [openen voor het bewerken van inhoud](/help/assets/content-fragments/content-fragments-variations.md) , samen met de elementen, variaties, bijbehorende inhoud en metagegevens.
+   * Allows you to [open the fragment for editing content](/help/assets/content-fragments/content-fragments-variations.md) together with its elements, variations, associated content and metadata.
 
 * **Tags beheren**
-* **Naar verzameling**
+* **To Collection**
 
    * Voeg het fragment toe aan een verzameling.
-   * Dit kan ook worden gedaan wanneer u een verzameling [aan het fragment](/help/assets/content-fragments/content-fragments-assoc-content.md#adding-associated-content)koppelt.
+   * This can also be done when [associating a collection with the fragment](/help/assets/content-fragments/content-fragments-assoc-content.md#adding-associated-content).
 
-* **Kopiëren**/**plakken**
+* **Copy**/**Paste**
 
 * **Verplaatsen**
-* **Snel publiceren**
+* **Quick Publish**
 * **Publicatie beheren**
 * **Verwijderen**
 
 >[!NOTE]
 >
->Veel van deze acties zijn [standaardhandelingen voor middelen](/help/assets/managing-assets-touch-ui.md) en/of de [AEM-bureaubladtoepassing](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html).
+>Many of these are [standard actions for Assets](/help/assets/managing-assets-touch-ui.md) and/or the [AEM desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html).
 
 ## De fragmenteditor openen {#opening-the-fragment-editor}
 
@@ -130,11 +131,12 @@ Uw fragment openen voor bewerken:
 >Voor het bewerken van een inhoudsfragment hebt u [de juiste machtigingen](/help/sites-developing/customizing-content-fragments.md#asset-permissions)nodig. Neem contact op met de systeembeheerder als er problemen optreden.
 
 1. Gebruik de **middelenconsole** om naar de locatie van het inhoudsfragment te navigeren.
-1. Open het fragment voor bewerking door:
+1. Open the fragment for editing, by either:
 
    * Klikken of tikken op de fragment- of fragmentkoppeling (dit is afhankelijk van de consoleweergave).
    * Selecteer het fragment en **bewerk** het vervolgens op de werkbalk.
-   De fragmenteditor wordt geopend:
+
+   The fragment editor will open:
 
    ![cfm-6420-18](assets/cfm-6420-18.png)
 
@@ -155,6 +157,7 @@ Uw fragment openen voor bewerken:
    * [Annotaties](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
    * [Gekoppelde inhoud](#associating-content-with-your-fragment)
    * [Metagegevens](#viewing-and-editing-the-metadata-properties-of-your-fragment)
+
    ![cfm-10](assets/cfm-10.png)
 
 1. Nadat u wijzigingen hebt aangebracht, gebruikt u **Opslaan** of **Annuleren** .
@@ -199,22 +202,22 @@ Tijdens het bewerken van het inhoudsfragment maakt AEM automatisch versies om er
 1. Wanneer een inhoudsfragment wordt geopend voor het bewerken van AEM, wordt gecontroleerd op het bestaan van een token op basis van cookies dat aangeeft of een *bewerkingssessie* bestaat:
 
    1. Als het token wordt gevonden, wordt het fragment beschouwd als onderdeel van de bestaande bewerkingssessie.
-   2. Als het token *niet* beschikbaar is en de gebruiker begint met het bewerken van inhoud, wordt een versie gemaakt en wordt een token voor deze nieuwe bewerkingssessie verzonden naar de client, waar deze wordt opgeslagen in een cookie.
+   2. If the token is *not* available and the user starts editing content, a version is created and a token for this new editing session is sent to the client, where it is saved in a cookie.
 
-2. Terwijl er een *actieve* bewerkingssessie is, wordt de inhoud die wordt bewerkt automatisch om de 600 seconden opgeslagen (standaard).
+2. While there is an *active* editing session, the content being edited is automatically saved every 600 seconds (default).
 
    >[!NOTE]
    >
-   >Het auto sparen interval is configureerbaar gebruikend het `/conf` mechanisme.
+   >The auto save interval is configurable using the `/conf` mechanism.
    >
    >
-   >Standaardwaarde, zie:
+   >Default value, see:
    >
    >
    >`/libs/settings/dam/cfm/jcr:content/autoSaveInterval`
 
-3. Als de gebruiker ervoor kiest de bewerking te **annuleren** , wordt de versie die aan het begin van de bewerkingssessie is gemaakt, hersteld en wordt het token verwijderd om de bewerkingssessie te beëindigen.
-4. Als de gebruiker de bewerkingen **opslaat** , blijven de bijgewerkte elementen/variaties behouden en wordt het token verwijderd om de bewerkingssessie te beëindigen.
+3. If the user selects to **Cancel** the edit, the version created at the start of the editing session is restored and the token is removed to end the editing session.
+4. If the user selects to **Save** the edits, the updated elements/variations are persisted and the token is removed to end the editing session.
 
 ## De inhoud van het fragment bewerken {#editing-the-content-of-your-fragment}
 
@@ -222,7 +225,7 @@ Nadat u het fragment hebt geopend, kunt u het tabblad [Variaties](/help/assets/c
 
 ## Variaties maken en beheren in uw fragment {#creating-and-managing-variations-within-your-fragment}
 
-Als u de inhoud van het stramien hebt gemaakt, kunt u [Variaties](/help/assets/content-fragments/content-fragments-variations.md) van die inhoud maken en beheren.
+Nadat u de Master inhoud hebt gemaakt, kunt u [Variaties](/help/assets/content-fragments/content-fragments-variations.md) van die inhoud maken en beheren.
 
 ## Inhoud koppelen aan uw fragment {#associating-content-with-your-fragment}
 
@@ -258,12 +261,14 @@ Naast de standaardopties biedt de [tijdlijn](/help/assets/managing-assets-touch-
 >* Standaardfunctionaliteit voor alle elementen
 >* Gemaakt in tijdlijn
 >* Verwant aan het fragmentelement
+
 >
 >
 Annotaties (voor inhoudsfragmenten) zijn:
 >
 >* Opgegeven in de fragmenteditor
 >* Specifiek voor een geselecteerd tekstsegment binnen het fragment
+
 >
 
 

@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: c9d31ed8-c105-453b-bd3c-4660dfd81272
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 48afa2146d0dcbab4beaa1044645c269b49fd7ff
+source-git-commit: 4e823136604d291c5b867634268f67e003185a15
+workflow-type: tm+mt
+source-wordcount: '213'
+ht-degree: 0%
 
 ---
 
@@ -60,11 +63,11 @@ Duw de bedekte commentaarcomponent aan de publicatieinstantie gebruikend het Hul
 >Een robuustere vorm van replicatie zou zijn om een pakket in de Manager van het Pakket te creëren en het te [activeren](/help/sites-administering/package-manager.md#replicating-packages) . Een pakket kan worden geëxporteerd en gearchiveerd.
 
 
-Selecteer in de globale navigatie **[!UICONTROL Gereedschappen]** > **[!UICONTROL Implementatie]** > **[!UICONTROL Replicatie]** en klik op Boomstructuur **** activeren.
+Selecteer in de globale navigatie **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Replication]** en klik **[!UICONTROL Activate Tree]**.
 
-Voer voor het beginpad in `/apps/social/commons` en selecteer **[!UICONTROL Activeren]**.
+Voer voor het beginpad in `/apps/social/commons` en selecteer **[!UICONTROL Activate]**.
 
-![chlimage_1-77](assets/chlimage_1-77.png)
+![verify-content-template](assets/verify-content-template.png)
 
 ### Resultaten weergeven {#view-results}
 
@@ -72,5 +75,5 @@ Als u zich als beheerder aanmeldt bij de publicatie-instantie, bijvoorbeeld http
 
 Als u zich afmeldt en opnieuw aanmeldt als `aaron.mcdonald@mailinator.com/password` en de pagina vernieuwt, ziet u dat de geposte opmerking niet meer wordt weergegeven bij een avatar, maar een eenvoudige &#39;xxx&#39; wordt weergegeven.
 
-![chlimage_1-78](assets/chlimage_1-78.png)
+![create-template-component](assets/create-template-component.png)
 

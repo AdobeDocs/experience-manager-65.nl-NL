@@ -10,7 +10,7 @@ topic-tags: forms-workspace
 discoiquuid: 35497785-263d-44b1-9ee4-85921997295b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e345fbff7030dbdeb3710e34599c0087eed4b1b8
+source-git-commit: 81249e13db9bd173d4251683ccaacbb7f71b3209
 workflow-type: tm+mt
 source-wordcount: '483'
 ht-degree: 2%
@@ -27,9 +27,15 @@ U kunt het login scherm van alle modules wijzigen van AEM Forms die het login va
 1. Meld u aan `/lc/crx/de` met beheerdersmachtigingen.
 1. Voer de volgende handelingen uit:
 
-   1. Repliceer de hiërarchische structuur: van `/libs/livecycle/core/content` om `/apps/livecycle/core/content`. Handhaaf de zelfde (knoop/omslag) eigenschappen en toegangsbeheer.
+   1. Repliceer de hiërarchische structuur: van `/libs/livecycle/core/content` om `/apps/livecycle/core/content`.
 
-   1. Kopieer de inhoudsmap: van `/libs/livecycle/core` naar `/apps/livecycle/core`.
+      Handhaaf de zelfde (knoop/omslag) eigenschappen en toegangsbeheer.
+
+   1. Kopieer de inhoudsmap:
+
+      Van: `/libs/livecycle/core`
+
+      to: `/apps/livecycle/core`.
 
    1. Verwijder de inhoud van de `/apps/livecycle/core` map.
 
@@ -244,6 +250,7 @@ String browserLocale = "en";
 
       * to `/apps/livecycle/core/components/login`
    1. Wijzig `/apps/livecycle/core/components/login/login.jsp` deze optie om de zojuist toegevoegde stijlen op te nemen.
+
 
 
 Bijvoorbeeld:

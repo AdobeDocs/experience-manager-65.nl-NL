@@ -1,21 +1,21 @@
 ---
-title: Map-assets en verzamelingen controleren
+title: Map-assets en verzamelingen reviewen
 description: Stel revisieworkflows in voor elementen in een map of verzameling en deel deze met revisoren of creatieve partners om feedback te zoeken.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
 workflow-type: tm+mt
-source-wordcount: '742'
-ht-degree: 4%
+source-wordcount: '746'
+ht-degree: 5%
 
 ---
 
 
-# Map-assets en verzamelingen controleren {#review-folder-assets-and-collections}
+# Map-assets en verzamelingen reviewen {#review-folder-assets-and-collections}
 
 Stel revisieworkflows in voor elementen in een map of verzameling en deel deze met revisoren of creatieve partners om feedback te zoeken.
 
-Met de Adobe Experience Manager-middelen kunt u een workflow voor ad-hocrevisies instellen voor elementen in een map of verzameling en deze delen met revisoren of creatieve partners om feedback te zoeken.
+Met Adobe Experience Manager Assets kunt u een ad-hocrevisiewerkstroom instellen voor elementen in een map of verzameling en deze delen met revisoren of creatieve partners om feedback te zoeken.
 
 U kunt de revisiewerkstroom aan een project koppelen of een onafhankelijke revisietaak maken.
 
@@ -26,9 +26,7 @@ Nadat de controleur de controle heeft voltooid (activa goedkeurt of verwerpt), o
 ## Een revisietaak voor mappen maken {#creating-a-review-task-for-folders}
 
 1. Selecteer in de gebruikersinterface Middelen de map waarvoor u een revisietaak wilt maken.
-1. Klik in de werkbalk **[!UICONTROL Create Review Task]** om de **[!UICONTROL Review Task]** pagina te openen. If you cannot see the option in the toolbar, click **[!UICONTROL More]** and then select the option.
-
-   ![chlimage_1-403](assets/chlimage_1-403.png)
+1. Klik op de werkbalk op Revisietaak **[!UICONTROL Create Review Task]** maken ![om de](assets/do-not-localize/create-review-task.png) **[!UICONTROL Review Task]** pagina te openen. If you cannot see the option in the toolbar, click **[!UICONTROL More]** and then select the option.
 
 1. (Optioneel) Selecteer in de **[!UICONTROL Project]** lijst het project waaraan u de revisietaak wilt koppelen. Standaard is de **[!UICONTROL None]** optie geselecteerd. Als u geen project aan de overzichtstaak wilt associëren, behoud deze selectie.
 
@@ -60,7 +58,7 @@ Nadat de controleur de controle heeft voltooid (activa goedkeurt of verwerpt), o
 
    ![review_task](assets/review_task.png)
 
-1. Klik op **[!UICONTROL Complete]** de werkbalk. Voer in het dialoogvenster een opmerking in en klik **[!UICONTROL Complete]** om te bevestigen.
+1. Klik op **[!UICONTROL Complete]** op de werkbalk. Voer in het dialoogvenster een opmerking in en klik **[!UICONTROL Complete]** om te bevestigen.
 1. Navigeer naar de gebruikersinterface Elementen en open de map. De pictogrammen voor de goedkeuringsstatus van de elementen worden weergegeven in de kaartweergave en de lijstweergave.
 
    **Kaartweergave**
@@ -74,9 +72,7 @@ Nadat de controleur de controle heeft voltooid (activa goedkeurt of verwerpt), o
 ## Een revisietaak voor verzamelingen maken {#creating-a-review-task-for-collections}
 
 1. Selecteer op de pagina Verzamelingen de verzameling waarvoor u een revisietaak wilt maken.
-1. Klik in de werkbalk **[!UICONTROL Create Review Task]** om de **[!UICONTROL Review Task]** pagina te openen. If you cannot see the option on the toolbar, click **[!UICONTROL More]** and then select the option.
-
-   ![chlimage_1-405](assets/chlimage_1-405.png)
+1. Klik op de werkbalk op Revisietaak **[!UICONTROL Create Review Task]** maken ![om de](assets/do-not-localize/create-review-task.png) **[!UICONTROL Review Task]** pagina te openen. If you cannot see the option on the toolbar, click **[!UICONTROL More]** and then select the option.
 
 1. (Optioneel) Selecteer in de **[!UICONTROL Project]** lijst het project waaraan u de revisietaak wilt koppelen. Standaard is de **[!UICONTROL None]** optie geselecteerd. Als u geen project aan de overzichtstaak wilt associëren, behoud deze selectie.
 
@@ -101,7 +97,7 @@ Nadat de controleur de controle heeft voltooid (activa goedkeurt of verwerpt), o
 
    ![review_task_collection](assets/review_task_collection.png)
 
-1. Klik op **[!UICONTROL Complete]** de werkbalk. Voer in het dialoogvenster een opmerking in en klik **[!UICONTROL Complete]** om te bevestigen.
+1. Klik op **[!UICONTROL Complete]** op de werkbalk. Voer in het dialoogvenster een opmerking in en klik **[!UICONTROL Complete]** om te bevestigen.
 1. Navigeer naar de verzamelingsconsole en open de verzameling. De pictogrammen voor de goedkeuringsstatus van de elementen worden weergegeven in zowel de Kaart- als lijstweergave.
 
    ![collection_reviewStatusCard, weergave](assets/collection_reviewstatuscardview.png)

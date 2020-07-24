@@ -3,9 +3,9 @@ title: De activa van het proces om bedrijfsprocessen te verwezenlijken, controle
 description: Middelenverwerking voor het converteren van indelingen, het maken van uitvoeringen, het beheren van elementen, het valideren van elementen en het uitvoeren van workflows.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
 workflow-type: tm+mt
-source-wordcount: '942'
+source-wordcount: '949'
 ht-degree: 3%
 
 ---
@@ -56,11 +56,9 @@ Voer de volgende stappen uit om een workflow toe te passen op een element:
 
 1. Selecteer in het **[!UICONTROL Start Workflow]** dialoogvenster een workflowmodel in de lijst.
 
-   ![chlimage_1-254](assets/chlimage_1-50.png)
-
 1. (Optioneel) Geef een titel op voor de workflow die kan worden gebruikt om naar de instantie van de workflow te verwijzen.
 
-   ![chlimage_1-255](assets/chlimage_1-51.png)
+   ![Selecteer een workflow, geef een titel op en klik op Start](assets/start-workflow.png)
 
 1. Click **[!UICONTROL Start]** and then click **[!UICONTROL Proceed]**. Elke stap van de workflow wordt als een gebeurtenis in de tijdlijn weergegeven.
 
@@ -75,7 +73,7 @@ Voer de volgende stappen uit om een workflow toe te passen op een element:
 1. Klik onderaan op **[!UICONTROL Actions]** chevron omhoog ![](assets/do-not-localize/chevron-up-icon.png) .
 1. Klik op **[!UICONTROL Start Workflow]**. Selecteer in het **[!UICONTROL Start Workflow]** dialoogvenster een workflowmodel in de lijst.
 
-   ![chlimage_1-31](assets/chlimage_1-138.png)
+   ![beginworkflow](assets/start-workflow.png)
 
 1. (Optioneel) Geef een titel voor de workflow op, die kan worden gebruikt om naar de instantie van de workflow te verwijzen.
 1. Klik op **[!UICONTROL Start]** en klik vervolgens op **[!UICONTROL Confirm]** in het dialoogvenster. De workflow wordt uitgevoerd op alle assets die u hebt geselecteerd.

@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: dca5a2ac-1fc8-4251-b073-730fd6f49b1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
 workflow-type: tm+mt
-source-wordcount: '1943'
+source-wordcount: '1949'
 ht-degree: 14%
 
 ---
@@ -70,13 +70,13 @@ Het wordt aanbevolen AEM 6.5 te hebben om een instantie van AEM-auteur in te ste
 
 * Als u een Adobe-partner bent, gebruikt u het [Adobe Partner Training Program](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) om AEM 6.5 aan te vragen.
 
-Nadat u AEM hebt gedownload, raadpleegt u het [implementeren en onderhouden](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html#defaultlocalinstall)van instructies voor het instellen van een AEM-auteurinstantie.
+Nadat u AEM hebt gedownload, raadpleegt u het [implementeren en onderhouden](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/deploy.html#default-local-install)van instructies voor het instellen van een AEM-auteurinstantie.
 
 ### Download en installeer de nieuwste AEM Service Pack {#servicepack}
 
 Zie voor gedetailleerde instructies
 
-* [Opmerkingen bij de release AEM 6.5 Service Pack](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html)
+* [Opmerkingen bij de release AEM 6.5 Service Pack](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/service-pack/sp-release-notes.html)
 
 **Neem contact op met de klantenservice** als u het nieuwste AEM-pakket of Service Pack niet kunt vinden.
 

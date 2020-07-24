@@ -11,14 +11,17 @@ content-type: reference
 discoiquuid: 404582ab-bb4c-4775-9ae3-17356d376dca
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
+source-git-commit: 4e823136604d291c5b867634268f67e003185a15
+workflow-type: tm+mt
+source-wordcount: '2108'
+ht-degree: 0%
 
 ---
 
 
 # Moderatieconsole {#moderation-console}
 
-In AEM-gemeenschappen is het mogelijk om de inhoud [van de gemeenschap in grote hoeveelheden te](/help/communities/moderate-ugc.md) modereren vanuit zowel de auteur- als de publicatieomgeving door beheerders en moderatoren van de gemeenschap (vertrouwde leden van de gemeenschap die als moderatoren zijn toegewezen).
+In AEM Communities, is de bulk [moderatie van communautaire inhoud](/help/communities/moderate-ugc.md) mogelijk van zowel de auteur als publiceert milieu&#39;s door beheerders en communautaire moderatoren (vertrouwde op communautaire leden die als moderators worden toegewezen).
 
 Beheerders en moderatoren van de gemeenschap kunnen ook [in-context moderatie](/help/communities/in-context.md) in het publicatiemilieu uitvoeren.
 
@@ -45,13 +48,13 @@ De toegang tot de console van de Moderatie van een gepubliceerde communautaire p
 
 Door de verbinding van het Beleid te selecteren, verschijnt de console van de Moderatie:
 
-![moderationconsole-publish](assets/moderationconsole-publish.png)
+![moderatie-console-publish](assets/moderation-console-publish.png)
 
 ## Toegang tot ontwerpomgeving {#author-environment-access}
 
 In het auteursmilieu, om de console van de Moderatie te bereiken
 
-* Selecteer **[!UICONTROL Gemeenschappen]** > **[!UICONTROL Moderatie]** in de globale navigatie.
+* Selecteer **[!UICONTROL Communities]** > **[!UICONTROL Moderation]**.
 
 Slechts wanneer binnen ondertekend als beheerder, of als lid met [moderatortoestemmingen](/help/communities/in-context.md#identifyingtrustedmembers), moderatietaken kunnen worden uitgevoerd. De enige inhoud van de gemeenschap die wordt weergegeven, is de inhoud die de ondertekenaar mag verkleinen.
 
@@ -245,7 +248,7 @@ Het voorbeeld voor het filter Codes installeren:
 
 1. Open pakketbeheer op AEM Author ([https://[aem-auteur]:4502/crx/packmgr/index.jsp](https://aem65-communities-demo.corp.adobe.com:4502/crx/packmgr/index.jsp))-instantie en AEM Publish ([https://[aem-publish]:4503/crx/packmgr/index.jsp](https://aem65-communities-demo.corp.adobe.com:4502/crx/packmgr/index.jsp))-instantie.
 1. Bouw het pakket `com.adobe.social.sample.moderation.filter.ui.apps-1.0-SNAPSHOT.zip` op basis van de Github-code en installeer het pakket en schakel het in.
-1. Open de bundelconsole op AEM Author ( `https://[aem-author]:4502/system/console/bundles`)-instantie en AEM Publish ( `https://[aem-publish]:4503/system/console/bundles`)-instantie.
+1. Open de bundelconsole op AEM Author ( `https://[aem-author]:4502/system/console/bundles`) instantie en AEM Publish ( `https://[aem-publish]:4503/system/console/bundles`) instantie.
 1. Bouw het pakket ` [com](https://sample-moderation-filter.com/).adobe.social.sample.moderation.filter.core-1.0-SNAPSHOT.jar` van Github, en installeer en laat het zelfde toe.
 1. Ga naar het knooppunt **/apps/social/moderation/facets** op AEM Author ([https://[aem-auteur]:4502/crx/de/index.jsp#/apps/social/moderation/facets](https://aem65-communities-demo.corp.adobe.com:4502/crx/de/index.jsp#/apps/social/moderation/facets)) en AEM Publish ([https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facets](https://aem65-communities-demo.corp.adobe.com:4502/crx/de/index.jsp#/apps/social/moderation/facets)).
 1. Voeg een technische gebruiker toe **gemeenschappen-nut-lezer** met `jcr:read` toestemmingen.
@@ -256,11 +259,11 @@ Aangepaste filters beschikbaar maken op bestaande communautaire sites:
 
    * Nieuwe categorie toevoegen `cq.social.hbs.moderation.v2.`
 
-1. Ga naar `/content/we-retail/us/en/community/moderation/shell3/jcr:content/rails/searchWell/items/filters.`
+1. Go to `/content/we-retail/us/en/community/moderation/shell3/jcr:content/rails/searchWell/items/filters.`
 
    * Instellen op nieuwe component `sling:resourceType = social/moderation/v2/filters.`
 
-1. Ga naar `/content/we-retail/us/en/community/moderation/shell3/jcr:content/views/content/items/modcontainer`.
+1. Go to `/content/we-retail/us/en/community/moderation/shell3/jcr:content/views/content/items/modcontainer`.
 
    * Instellen op nieuwe component `sling:resourceType = social/moderation/v2/modcontainer`.
 

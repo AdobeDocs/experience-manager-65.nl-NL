@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 3ebc1d22-a7a2-4375-9aa5-a18a7ceb446a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1669412afb670a9f55f02476e828de55b4f7a55a
+source-git-commit: 3b64b1fe5d47f115681608f38e7e53d078c4698e
 workflow-type: tm+mt
 source-wordcount: '2424'
 ht-degree: 0%
@@ -42,11 +42,11 @@ Adobe biedt twee Maven-archetypen die als basislijn voor uw AEM-projecten kunnen
 * [AEM-projectarchetype](https://github.com/adobe/aem-project-archetype)
 * [Maven archetype voor applicaties Starter Kit voor één pagina](https://github.com/adobe/aem-spa-project-archetype)
 
-## Afhankelijkheden van Experience Manager API {#experience-manager-api-dependencies}
+## Experience Manager API-afhankelijkheden {#experience-manager-api-dependencies}
 
 ### Wat is de UberJar? {#what-is-the-uberjar}
 
-Het &quot;UberJar&quot; is de informele naam die wordt gegeven aan het speciale Java Archives-bestand (JAR) dat door Adobe wordt geleverd. Deze JAR-bestanden bevatten alle openbare Java API&#39;s die worden weergegeven door Adobe Experience Manager. Zij omvatten ook beperkte externe bibliotheken, met name alle openbare API&#39;s die in AEM beschikbaar zijn en afkomstig zijn van de Apache Sling, Apache Jackrabbit, Apache Lucene, Google Guava, en twee bibliotheken die worden gebruikt voor beeldverwerking (Werner Randelshofer&#39;s CYMK JPEG ImageIO-bibliotheek en de TwelveMonkeys-afbeeldingsbibliotheek). UberJars bevatten slechts API interfaces en klassen, betekenend dat zij slechts interfaces en klassen bevatten die door een bundel OSGi in AEM worden uitgevoerd. Zij bevatten ook een *MANIFEST.MF* - dossier dat de correcte pakketuitvoerversies voor elk van deze uitgevoerde pakketten bevat, zodat hebben de projecten die tegen UberJar worden gebouwd de correcte pakketinvoerwaaiers.
+Het &quot;UberJar&quot; is de informele naam die wordt gegeven aan het speciale Java Archives-bestand (JAR) dat door Adobe wordt geleverd. Deze JAR-bestanden bevatten alle openbare Java API&#39;s die door de Adobe Experience Manager worden weergegeven. Zij omvatten ook beperkte externe bibliotheken, met name alle openbare API&#39;s die in AEM beschikbaar zijn en afkomstig zijn van de Apache Sling, Apache Jackrabbit, Apache Lucene, Google Guava, en twee bibliotheken die worden gebruikt voor beeldverwerking (Werner Randelshofer&#39;s CYMK JPEG ImageIO-bibliotheek en de TwelveMonkeys-afbeeldingsbibliotheek). UberJars bevatten slechts API interfaces en klassen, betekenend dat zij slechts interfaces en klassen bevatten die door een bundel OSGi in AEM worden uitgevoerd. Zij bevatten ook een *MANIFEST.MF* - dossier dat de correcte pakketuitvoerversies voor elk van deze uitgevoerde pakketten bevat, zodat hebben de projecten die tegen UberJar worden gebouwd de correcte pakketinvoerwaaiers.
 
 ### Waarom heeft Adobe de UberJars gemaakt? {#why-did-adobe-create-the-uberjars}
 
@@ -126,7 +126,7 @@ Met UberJar, kunt u projectcode compileren die van AEM APIs (en APIs afhangt die
 
 ### Wat kan ik niet doen met de UberJar? {#what-can-t-i-do-with-the-uberjar}
 
-Aangezien UberJar **alleen** API&#39;s bevat, is het niet uitvoerbaar en kan het niet worden gebruikt om Adobe Experience Manager **uit te voeren** . Als u AEM wilt uitvoeren, hebt u de AEM QuickStart-indeling (Standalone of Web Application Archive, WAR) nodig.
+Omdat UberJar **slechts** APIs bevat, is het niet uitvoerbaar en kan niet worden gebruikt om Adobe Experience Manager in **werking te stellen** . Als u AEM wilt uitvoeren, hebt u de AEM QuickStart-indeling (Standalone of Web Application Archive, WAR) nodig.
 
 ### U noemde beperkingen op eenheidstests. Gelieve nader toe te lichten. {#you-mentioned-limitations-on-unit-tests-please-explain-further}
 
@@ -386,10 +386,6 @@ Voeg meer `<filter>` elementen toe aan de paden:
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
     <filter root="/apps/myproject"/>
-    <filter root="/etc/msm/rolloutconfigs/myrolloutconfig"/>
-    <filter root="/etc/blueprints/mysite/globalsite"/>
-    <filter root="/etc/workflow/models/myproject"/>
-    <filter root="/etc/designs/myproject"/>
     <filter root="/content/myproject/sample-content"/>
 </workspaceFilter>
 ```
@@ -699,8 +695,8 @@ $ mvn -PautoInstallPackagePublish -PintegrationServer install
 </profiles>
 ```
 
-### Hoe kan ik-werken met AEM-gemeenschappen {#how-to-work-with-aem-communities}
+### Werken met AEM Communities {#how-to-work-with-aem-communities}
 
-Als er een licentie voor de AEM Communities-mogelijkheid is, is een extra API-jar nodig.
+Als er een licentie voor de AEM Communities-functie is, is een extra API-jar nodig.
 
 Zie [Maven gebruiken voor Gemeenschappen voor meer informatie](/help/communities/maven.md)

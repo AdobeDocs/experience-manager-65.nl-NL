@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: f5316a73-84e2-4a18-98c1-a384eeaa77cf
 translation-type: tm+mt
-source-git-commit: e4456e80059479ca874681e20f8546f29ac92597
+source-git-commit: c798eb79dc9f8e58cef86cf90af02622c3a2ed78
+workflow-type: tm+mt
+source-wordcount: '446'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: e4456e80059479ca874681e20f8546f29ac92597
 
 ## Info over JSRP {#about-jsrp}
 
-Wanneer AEM Communities JSRP als opslagoptie gebruikt (de standaardinstelling), wordt inhoud van de community opgeslagen in JCR en door de gebruiker gegenereerde inhoud (UGC) is alleen toegankelijk vanuit de auteur of de publicatie-instantie waarnaar deze is gepost.
+Wanneer AEM Communities JSRP als opslagoptie gebruiken (de standaardinstelling), wordt inhoud van de gemeenschap opgeslagen in JCR en door de gebruiker gegenereerde inhoud (UGC) is alleen toegankelijk van de auteur of de publicatieinstantie waarnaar deze is gepost.
 
 Wegens de eenvoud van plaatsing, is JSRP over het algemeen best geschikt voor demonstratie of ontwikkelingsmilieu&#39;s van één publiceer instantie en één auteursinstantie.
 
@@ -35,12 +38,13 @@ De console [van de Configuratie van de](srp-config.md) Opslag staat voor de sele
 
 In de auteursomgeving, om de console van de Configuratie van de Opslag te bereiken
 
-* Vanuit globale navigatie: **[!UICONTROL Extra]** > **[!UICONTROL Gemeenschappen]** > **[!UICONTROL Opslagconfiguratie]**
+* Vanuit globale navigatie: **[!UICONTROL Tools]** > **[!UICONTROL Communities]** > **[!UICONTROL Storage Configuration]**
+
+* Selecteer **[!UICONTROL JCR Storage Resource Provider (JSRP)]**
+
+* Selecteer **[!UICONTROL Submit]**
 
 ![chlimage_1-234](assets/chlimage_1-234.png)
-
-* JSRP ( **[!UICONTROL JCR Storage Resource Provider) selecteren]**
-* Selecteer **[!UICONTROL Verzenden]**
 
 ### De configuratie publiceren {#publishing-the-configuration}
 
@@ -48,11 +52,11 @@ Terwijl JSRP de standaardconfiguratie is, om ervoor te zorgen dat de identieke c
 
 * Op auteur:
 
-   * Vanuit globale navigatie: **[!UICONTROL Extra]** > **[!UICONTROL Implementatie]** > **[!UICONTROL Replicatie]**
-   * Selecteer **[!UICONTROL Boomstructuur]** activeren > **[!UICONTROL Startpad]**:
+   * Vanuit globale navigatie: **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Replication]**
+   * Selecteer **[!UICONTROL Activate Tree]** > **[!UICONTROL Start Path]**:
 
       * Bladeren naar `/conf/global/settings/community/srpc/`
-   * Selecteer **[!UICONTROL Activeren]**
+   * Selecteer **[!UICONTROL Activate]**
 
 
 ## Gebruikersgegevens beheren {#managing-user-data}

@@ -4,9 +4,9 @@ description: Leer taken om verzamelingen met middelen te beheren, zoals verzamel
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
 workflow-type: tm+mt
-source-wordcount: '2044'
+source-wordcount: '2047'
 ht-degree: 11%
 
 ---
@@ -102,19 +102,14 @@ Voer de volgende stappen uit om een slimme verzameling te maken:
 
    ![collection_list](assets/collection_listing.png)
 
-   Het label van de knop **[!UICONTROL Create Smart Selection]** verandert in **[!UICONTROL Edit Smart Selection]**. Als u de instellingen van de slimme verzameling wilt bewerken, selecteert u **[!UICONTROL Files]** in de lijst **[!UICONTROL Files & Folders]**. Then, Click the **[!UICONTROL Edit Smart Selection]** button.
-
-   ![chlimage_1-7](assets/chlimage_1-112.png)
+   The label of the **[!UICONTROL Create Smart Selection]** option changes to **[!UICONTROL Edit Smart Selection]**. Als u de instellingen van de slimme verzameling wilt bewerken, selecteert u **[!UICONTROL Files]** in de lijst **[!UICONTROL Files & Folders]**. Klik op de optie Slimme verzameling **[!UICONTROL Edit Smart Selection]** ![](assets/do-not-localize/edit-smart-collection.png) bewerken.
 
 ## Elementen toevoegen aan een verzameling {#adding-assets-to-a-collection}
 
 U kunt elementen toevoegen aan een verzameling die een lijst met bestanden of mappen waarnaar wordt verwezen, bevat. Slimme verzamelingen gebruiken een zoekquery om elementen te vullen. Daarom zijn statische verwijzingen naar elementen en mappen niet op hen van toepassing.
 
-1. Selecteer het element in de gebruikersinterface Elementen en klik op **[!UICONTROL To Collection]** de werkbalk.
-
-   ![chlimage_1-8](assets/chlimage_1-113.png)
-
-   U kunt het element ook naar het **[!UICONTROL Drop in Collection]** gebied op de interface slepen. Voeg de elementen toe wanneer het label van het gebied verandert in **[!UICONTROL Drop to Add]**.
+1. Selecteer het element in de gebruikersinterface Elementen en klik op de werkbalk op **[!UICONTROL To Collection]** Toevoegen aan verzameling ![](assets/do-not-localize/add-to-collection.png) .
+U kunt het element ook naar het **[!UICONTROL Drop in Collection]** gebied op de interface slepen. Voeg de elementen toe wanneer het label van het gebied verandert in **[!UICONTROL Drop to Add]**.
 
 1. Selecteer op de **[!UICONTROL Add To Collection]** pagina de verzameling waaraan u het element wilt toevoegen.
 

@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: e8f28cd5-7950-4aab-bf62-3d4ed3d33cbd
 translation-type: tm+mt
-source-git-commit: 85f3b8f2a5f079954f4907037c1c722a6b25fd91
+source-git-commit: c798eb79dc9f8e58cef86cf90af02622c3a2ed78
+workflow-type: tm+mt
+source-wordcount: '439'
+ht-degree: 4%
 
 ---
 
@@ -23,7 +26,7 @@ In deze sectie maakt u de volgende pagina&#39;s die allemaal de [paginasjabloon]
 
    * SCF Sandbox - De hoofdpagina voor de Engelse versie van de site.
 
-      * SCF-afspelen - Onderliggend item van de hoofdpagina waarop moet worden afgespeeld.
+   * SCF-afspelen - Onderliggend item van de hoofdpagina waarop moet worden afgespeeld.
 
 Hoewel deze zelfstudie niet in [taalkopieën](../../help/sites-administering/tc-prep.md)wordt geschreven, is deze zo ontworpen dat de hoofdpagina detectie van de voorkeurstaal voor de gebruiker via de HTML-koptekst kan implementeren en omleidt naar de juiste hoofdpagina voor de taal. De conventie is de landcode van twee letters te gebruiken voor de knooppuntnaam van de pagina, bijvoorbeeld &quot;en&quot; voor Engels, &quot;fr&quot; voor Frans, enzovoort.
 
@@ -45,29 +48,30 @@ Nu er een [paginamalplaatje](initial-app.md#createthepagetemplate)is, kunnen wij
 
    U kunt ook rechtstreeks toegang krijgen tot de klassieke UI voor websites door naar [/sitebeheerder te bladeren.](http://localhost:4502/siteadmin)
 
-1. Selecteer **[!UICONTROL Websites]** in het deelvenster Verkenner en selecteer vervolgens **[!UICONTROL Nieuw]** > **[!UICONTROL Nieuwe pagina]** op de werkbalk.
+1. Selecteer in het verkenner-venster **[!UICONTROL Websites]** en kies vervolgens op de werkbalk **[!UICONTROL New]** > **[!UICONTROL New Page]**.
 
-   Voer in het dialoogvenster Pagina **** maken het volgende in:
+   Voer in het **[!UICONTROL Create Page]** dialoogvenster het volgende in:
 
    * Titel: `SCF Sandbox Site`
    * Naam: `an-scf-sandbox`
-   * Selecteer **[!UICONTROL een SCF-sandbox-afspeelsjabloon]**
-   * Klik op **[!UICONTROL Maken]**
+   * Selecteer **[!UICONTROL An SCF Sandbox Play Template]**
+   * Klik op **[!UICONTROL Create]**
+
    ![chlimage_1-38](assets/chlimage_1-38.png)
 
-1. Selecteer in het verkenner-venster de pagina die u net hebt gemaakt `/Websites/SCF Sandbox Site`en klik op **[!UICONTROL Nieuw]** > **[!UICONTROL Nieuwe pagina]**:
+1. Selecteer in het verkenner-venster de pagina die u net hebt gemaakt `/Websites/SCF Sandbox Site`en klik op **[!UICONTROL New]** > **[!UICONTROL New Page]**:
 
    * Titel: `SCF Sandbox`
    * Naam: `en`
-   * Selecteer **een SCF-sandbox-afspeelsjabloon **
-   * Klik op **Maken **
+   * Selecteer **[!UICONTROL An SCF Sandbox Play Template]**
+   * Klik op **[!UICONTROL Create]**
 
-1. Selecteer in het verkenner-venster de pagina die u net hebt gemaakt `/Websites/SCF Sandbox Site/SCF Sandbox`en klik op **[!UICONTROL Nieuw]** > **[!UICONTROL Nieuwe pagina]**
+1. Selecteer in het verkenner-venster de pagina die u net hebt gemaakt `/Websites/SCF Sandbox Site/SCF Sandbox`en klik op **[!UICONTROL New]** > **[!UICONTROL New Page]**
 
    * Titel: `SCF Play`
    * Naam: `play`
-   * Selecteer **[!UICONTROL een SCF-sandbox-afspeelsjabloon]**
-   * Klik op **[!UICONTROL Maken]**
+   * Selecteer **[!UICONTROL An SCF Sandbox Play Template]**
+   * Klik op **[!UICONTROL Create]**
 
 1. Zo wordt de website nu weergegeven in de websiteconsole. U ziet dat onderliggende pagina&#39;s van het item dat is geselecteerd in het deelvenster Verkenner, worden weergegeven in het rechterdeelvenster waar ze kunnen worden beheerd.
 
@@ -85,7 +89,7 @@ Wanneer ` [/etc/designs/an-scf-sandbox](setup-website.md#setupthedesigntreeetcde
 
 is gedefinieerd, hetgeen de optionele mogelijkheid biedt om naar ontwerpelementen in een script te verwijzen met behulp van `currentDesign.getPath()`. Bijvoorbeeld
 
-* &lt;% String favIcon = currentDesign.getPath() + &quot;/favicon.ico&quot;; %>
+* `% String favIcon = currentDesign.getPath() + "/favicon.ico"; %`
 
 
    * Naam: `cq:designPath`
@@ -98,12 +102,12 @@ De oplossing moet er als volgt uitzien:
 
 ![chlimage_1-41](assets/chlimage_1-41.png)
 
-* Klik op Alles **[!UICONTROL opslaan]**
+* Klik op **[!UICONTROL Save All]**
 
-[ Problemen met opslaan? Opnieuw aanmelden! ]
+In het geval van om het even welk probleem dat de configuratie bewaart, re-login en vorm opnieuw.
 
 >[!NOTE]
 >
->Het gebruik van cq:designPath is optioneel en staat los van het [gebruik van clientlibs](develop-app.md#includeclientlibsintemplate), die in wezen vereist zijn omdat de SCF-componenten [clientlibs](client-customize.md#clientlibs-for-scf) gebruiken om hun JS en CSS te beheren.
+>Het gebruik van `cq:designPath` is optioneel en staat los van het [gebruik van clientlibs](develop-app.md#includeclientlibsintemplate), die in wezen vereist zijn omdat de SCF-componenten [clientlibs](client-customize.md#clientlibs-for-scf) gebruiken om hun JS en CSS te beheren.
 
 

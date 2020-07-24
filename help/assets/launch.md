@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: f4051767-182e-4cfd-9dfc-8f516378e0b6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
+source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
 workflow-type: tm+mt
-source-wordcount: '6278'
+source-wordcount: '6239'
 ht-degree: 15%
 
 ---
@@ -43,7 +43,7 @@ De belangrijkste manier om te integreren met Adobe Launch is door klanten die zo
 
 Zie [Informatie over het bijhouden van viewers voor Dynamic Media in AEM Sites](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersinAEMSites).
 
-Een secundair gebruiksgeval dat de integratie steunt zijn die klanten die slechts AEM Assets, of Klassieke Dynamic Media gebruiken. In dergelijke gevallen ontvangt u de insluitcode voor uw viewer en voegt u deze toe aan de websitepagina. Vervolgens haalt u de URL voor de productie van de Adobe-bibliotheek bij Starten op en voegt u deze handmatig toe aan de webpaginacode.
+Een secundair gebruiksgeval dat de integratie steunt zijn die klanten die slechts AEM Assets, of Klassieke Dynamic Media gebruiken. In dergelijke gevallen ontvangt u de insluitcode voor uw viewer en voegt u deze toe aan de websitepagina. Vervolgens haalt u de URL voor de productie van de bibliotheek bij Adobe Launch op en voegt u deze handmatig toe aan de code van de webpagina.
 
 Zie [Informatie over het bijhouden van Dynamic Media voor viewers die insluitcode](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersusingEmbedcode)gebruiken.
 
@@ -141,7 +141,9 @@ Om de kijkers van Dynamic Media in AEM Sites te volgen, moeten alle stappen die 
 
 Na de juiste configuratie worden alle Dynamic Media-viewers die u aan een sitepagina toevoegt met een WCM-component die door Dynamic Media wordt ondersteund, automatisch gegevens bijgehouden naar Adobe Analytics, Adobe Analytics for Video, of beide.
 
-Zie Dynamic Media-elementen [aan pagina&#39;s toevoegen met Adobe Sites](https://helpx.adobe.com/experience-manager/6-5/help/assets/adding-dynamic-media-assets-to-pages.html).
+<!-- To be reviewed and updated:
+See [Adding Dynamic Media Assets to Pages using Adobe Sites](https://helpx.adobe.com/experience-manager/6-5/help/assets/adding-dynamic-media-assets-to-pages.html).
+-->
 
 ### Viewers van Dynamic Media bijhouden met gebruik van ingesloten code {#tracking-dynamic-media-viewers-using-embed-code}
 
@@ -153,7 +155,9 @@ Na de juiste configuratie kunt u ondersteuning voor het starten van Adobe toevoe
 
 Zie [De insluitcode](https://docs.adobe.com/content/help/en/launch/using/implement/configure/implement-the-launch-install-code.html) starten toevoegen voor meer informatie over het gebruik van de insluitcode van de Adobe-bibliotheek.
 
-Zie De video- of afbeeldingsviewer [insluiten op een webpagina](https://helpx.adobe.com/experience-manager/6-5/help/assets/embed-code.html) voor meer informatie over het gebruik van de insluitcodefunctie van AEM-Dynamic Media.
+<!-- To be reviewed and updated:
+See [Embedding the Video or Image Viewer on a Web Page](https://helpx.adobe.com/experience-manager/6-5/help/assets/embed-code.html) to learn more about how to use the embed code feature of AEM Dynamic Media.
+-->
 
 **U kunt als volgt Dynamic Media weergeven:**
 
@@ -199,7 +203,7 @@ Als deze optie is geselecteerd, maakt de Data Element-editor een formulier met t
 
 Zie de naslaggids [voor](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html) Dynamic Media Viewers voor de lijst met ondersteunde gebeurtenissen per viewertype. Ga naar de specifieke viewersectie en klik vervolgens op Ondersteuning voor de trackingsubsectie van Adobe Analytics. Momenteel worden in de naslaggids voor Dynamic Media Viewers geen gebeurtenisargumenten vastgelegd.
 
-Laten we nu eens kijken naar de levenscyclus van het Dynamic Media Viewers *Data Element*. De waarde van een dergelijk gegevenselement wordt gevuld nadat de overeenkomstige Dynamic Media viewer-gebeurtenis op de pagina plaatsvindt. Als het gegevenselement bijvoorbeeld naar de **[!UICONTROL LOAD]** gebeurtenis en het bijbehorende argument &#39;asset&#39; verwijst, ontvangt de waarde van dat gegevenselement geldige gegevens nadat de viewer de gebeurtenis LOAD voor de eerste keer uitvoert. Als het gegevenselement naar de **[!UICONTROL ZOOM]** gebeurtenis en zijn &quot;schaal&quot;argument wijst, zal de waarde van zulk een Element van Gegevens leeg blijven tot de kijker een **[!UICONTROL ZOOM]** gebeurtenis voor het eerst verzendt.
+Laten we nu eens kijken naar de levenscyclus van het *gegevenselement* van Dynamic Media Viewers. De waarde van een dergelijk gegevenselement wordt gevuld nadat de overeenkomstige Dynamic Media viewer-gebeurtenis op de pagina plaatsvindt. Als het gegevenselement bijvoorbeeld naar de **[!UICONTROL LOAD]** gebeurtenis en het bijbehorende argument &#39;asset&#39; verwijst, ontvangt de waarde van dat gegevenselement geldige gegevens nadat de viewer de gebeurtenis LOAD voor de eerste keer uitvoert. Als het gegevenselement naar de **[!UICONTROL ZOOM]** gebeurtenis en het bijbehorende &quot;schaal&quot;argument wijst, zal de waarde van zulk een Element van Gegevens leeg blijven tot de kijker een **[!UICONTROL ZOOM]** gebeurtenis voor het eerst verzendt.
 
 Op dezelfde manier worden de waarden van data-elementen automatisch bijgewerkt wanneer de viewer een overeenkomstige gebeurtenis op de pagina verzendt. De waarde-update gebeurt zelfs als de specifieke gebeurtenis niet in de regelconfiguratie is opgegeven. Als bijvoorbeeld het data-element **[!UICONTROL ZoomScale]** is gedefinieerd voor de &quot;scale&quot;-parameter van de ZOOM-gebeurtenis, maar de enige regel in de regelconfiguratie door de gebeurtenis **[!UICONTROL LOAD]** wordt getriggerd, wordt de waarde van **[!UICONTROL ZoomScale]** nog steeds bijgewerkt telkens als een gebruiker zoomt in de viewer.
 
@@ -252,7 +256,7 @@ Als deze optie is geselecteerd, wordt de vervolgkeuzelijst weergegeven in de geb
 
 Met de extensie Dynamic Media Viewers kunt u gebeurtenisparameters van Dynamic Media-viewers gebruiken voor het toewijzen van analysevariabelen in de editor Variabelen instellen van de extensie Adobe Analytics.
 
-De eenvoudigste methode om dat te doen is het volgende twee-stap proces te voltooien:
+De eenvoudigste methode om dat te doen is het volgende proces te voltooien in twee stappen:
 
 * Definieer eerst een of meer gegevenselementen, waarbij elk gegevenselement een parameter van een Dynamic Media Viewer-gebeurtenis vertegenwoordigt.
 * Tot slot klikt u in de editor Variabelen instellen van de Adobe Analytics-extensie op het pictogram voor de kiezer voor gegevenselement (drie gestapelde schijven) om het dialoogvenster Gegevenselement selecteren te openen en selecteert u vervolgens een gegevenselement in het dialoogvenster.
@@ -411,7 +415,7 @@ In deze sectie worden de configuratiestappen beschreven die nodig zijn om Dynami
 U configureert de integratie in de volgende Adobe-producten:
 
 * Adobe Analytics - u configureert de volgende variabelen en rapporten.
-* Adobe Launch - u definieert een eigenschap, een of meer regels en een of meer gegevenselementen om het bijhouden van viewers in te schakelen.
+* Adobe Launch - u definieert een eigenschap, een of meer regels en een of meer gegevenselementen om het bijhouden van de viewer in te schakelen.
 
 Bovendien, als deze integratieoplossing met AEM Sites wordt gebruikt, moet de volgende configuratie ook worden gedaan:
 
@@ -712,10 +716,11 @@ De configuratie AEM bestaat uit de volgende twee belangrijke stappen:
    * Selecteer onder de **[!UICONTROL Select a role for Experience Platform Launch API]** kop **[!UICONTROL Admin]**.
 
    * Selecteer onder de **[!UICONTROL Select one or more product profiles for Experience Platform Launch API]** kop het productprofiel met de naam **[!UICONTROL Launch - <your_company_name>]**.
+
    ![2019-07-25_13-49-18](assets/2019-07-25_13-49-18.png)
 
 1. Klik op **[!UICONTROL Create integration]**.
-1. Klik op de **[!UICONTROL Integration created]** pagina **[!UICONTROL Continue to integration details]**.
+1. Ga naar de pagina **[!UICONTROL Integration created]** en klik op **[!UICONTROL Continue to integration details]**.
 
    ![2019-07-25_14-16-33](assets/2019-07-25_14-16-33.png)
 
@@ -747,7 +752,8 @@ De configuratie AEM bestaat uit de volgende twee belangrijke stappen:
 
    * **[!UICONTROL Title]** - Voer een beschrijvende accounttitel in.
    * **[!UICONTROL Authorization Server]** - Ga terug naar de pagina met integratiegegevens die u eerder hebt geopend. Click the **[!UICONTROL JWT]** tab. Kopieer de servernaam, zonder het pad, zoals hieronder gemarkeerd.
-   Ga terug naar de pagina **[!UICONTROL Account]** en plak de naam in het desbetreffende veld.
+
+(De naam van de voorbeeldserver is alleen ter illustratie)   Ga terug naar de pagina **[!UICONTROL Account]** en plak de naam in het desbetreffende veld.
 Bijvoorbeeld, `https://ims-na1.adobelogin.com/`(de naam van de voorbeeldserver is alleen ter illustratie)
 
    ![2019-07-25_15-01-53](assets/2019-07-25_15-01-53.png)

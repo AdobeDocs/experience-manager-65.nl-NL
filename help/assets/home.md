@@ -4,10 +4,10 @@ seo-title: Adobe Experience Manager 6.5 Gebruikershandleiding voor middelen
 description: In deze handleiding worden alle Experience Manager Assets-taken besproken, zoals het maken, beheren, leveren en optimaliseren van digitale middelen.
 seo-description: Omvat alle Experience Manager Assets-taken, zoals het maken, beheren, leveren en optimaliseren van digitale middelen.
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
 workflow-type: tm+mt
 source-wordcount: '378'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
@@ -18,16 +18,19 @@ In deze handleiding worden alle Experience Manager Assets-taken besproken, zoals
 
 ## Belangrijke Experience Manager-artikelen
 
+<!-- TBD: Some of these links will soon be updated. Change these when new articles go live on docs.adobe.com.
+-->
+
 * [Aan de slag met Experience Manager](https://helpx.adobe.com/experience-manager/get-started.html)
 * [Opmerkingen bij de release Experience Manager 6.5](/help/release-notes/home.md)
-* [Recente documentatieupdates](https://helpx.adobe.com/experience-manager/documentation-updates.html)
+* [Recente documentatie-updates](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [Beveiligingscontrolelijst](/help/sites-administering/security-checklist.md)
 
 ## Experience Manager 6.5-gebruikershandleidingen
 
 | Handboek | Beschrijving |
 |--- |---|
-| [Release-opmerkingen](/help/release-notes/home.md) | Verstrekt belangrijke informatie over de recentste versie, met inbegrip van wat nieuwe, gesteunde platforms is, verouderde en verwijderde eigenschappen, en bekende kwesties |
+| [Releaseopmerkingen](/help/release-notes/home.md) | Verstrekt belangrijke informatie over de recentste versie, met inbegrip van wat nieuwe, gesteunde platforms is, verouderde en verwijderde eigenschappen, en bekende kwesties |
 | [Gebruikershandleiding voor formulieren](/help/forms/home.md) | In deze handleiding wordt beschreven hoe u digitale formulieren kunt maken, beheren, publiceren en bijwerken. |
 | [Gebruikersgids voor gemeenschappen](/help/communities/home.md) | Maak online ervaringen zoals forums, gebruikersgroepen, leermiddelen en andere sociale functies. |
 | [Beheerdershandleiding](/help/sites-administering/home.md) | Begrijp hoe u Experience Manager moet beheren. |

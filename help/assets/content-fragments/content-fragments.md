@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 7ecc1bcf-38a9-4a59-8dd3-79cb90dec33d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a430c4de89bde3b907d342106465d3b5a7c75cc8
+source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
 workflow-type: tm+mt
-source-wordcount: '1971'
+source-wordcount: '1973'
 ht-degree: 3%
 
 ---
@@ -32,7 +32,7 @@ Deze en de volgende pagina&#39;s bevatten de taken voor het maken, configureren 
 
 * [Inhoudsfragmenten](/help/assets/content-fragments/content-fragments-managing.md) beheren: maak inhoudsfragmenten. vervolgens bewerken, publiceren en verwijzen
 * [Modellen](/help/assets/content-fragments/content-fragments-models.md) voor inhoudsfragmenten - uw modellen inschakelen, maken en definiëren
-* [Variaties - Fragmentinhoud](/help/assets/content-fragments/content-fragments-variations.md) ontwerpen - de fragmentinhoud ontwerpen en variaties in het stramien maken
+* [Variaties - Fragmentinhoud](/help/assets/content-fragments/content-fragments-variations.md) ontwerpen - de fragmentinhoud ontwerpen en variaties van de Master inhoud maken
 * [Markering](/help/assets/content-fragments/content-fragments-markdown.md) - markeringssyntaxis gebruiken voor uw fragment
 * [Gekoppelde inhoud](/help/assets/content-fragments/content-fragments-assoc-content.md) gebruiken - gekoppelde inhoud toevoegen
 * [Metagegevens - Fragmenteigenschappen](/help/assets/content-fragments/content-fragments-metadata.md) - de fragmenteigenschappen weergeven en bewerken
@@ -79,11 +79,12 @@ Samen met de JSON-exportmogelijkheden van AEM-kerncomponenten kan deze gestructu
 >**Inhoudsfragmenten** en **[ervaringsfragmenten](/help/sites-authoring/experience-fragments.md)**zijn verschillende functies in AEM:
 >* **Inhoudsfragmenten** zijn redactionele inhoud, voornamelijk tekst en verwante afbeeldingen. Het zijn pure inhoud, zonder ontwerp en lay-out.
 >* **de inhoud van de ervaringsfragmenten** volledig wordt ingedeeld; een fragment van een webpagina.
+
 >
 >
 De Fragmenten van de ervaring kunnen inhoud in de vorm van Inhoudsfragmenten bevatten, maar niet andersom.
 >
->Zie ook [Inhoudsfragmenten en ervaringsfragmenten in AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/content-fragments-experience-fragments-article-understand.html)voor meer informatie.
+>Zie ook [Inhoudsfragmenten en ervaringsfragmenten in AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html)voor meer informatie.
 
 >[!CAUTION]
 >
@@ -138,6 +139,7 @@ Elementen kunnen op verschillende manieren met een inhoudsfragment worden gebrui
    * Vormen een integraal onderdeel van het fragment (zie [Componentdelen van een inhoudsfragment](#constituent-parts-of-a-content-fragment)).
    * De positie van het element definiëren.
    * Zie Elementen [invoegen in uw fragment](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment) in de fragmenteditor voor meer informatie.
+
    >[!NOTE]
    >
    >Visuele elementen die in het inhoudsfragment zelf worden ingevoegd, worden aan de voorafgaande alinea gekoppeld. Wanneer het fragment aan een pagina wordt toegevoegd, worden deze elementen ten opzichte van die alinea verplaatst wanneer tussenliggende inhoud wordt toegevoegd.
@@ -189,6 +191,7 @@ De elementen van het inhoudsfragment bestaan uit de volgende onderdelen (direct 
    * Kan alleen worden toegevoegd aan, verwijderd uit of verplaatst binnen een fragment met [RTF-indeling in de fragmenteditor](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
    * Kan alleen worden toegevoegd aan tekstelementen met meerdere regels (elk fragmenttype).
    * Aan de voorgaande tekst (alinea) worden toegevoegd.
+
    >[!CAUTION]
    >
    >Kan (per ongeluk) uit een fragment worden verwijderd door over te schakelen op de indeling Onbewerkte tekst.
@@ -218,6 +221,7 @@ De elementen van het inhoudsfragment bestaan uit de volgende onderdelen (direct 
 
          * Door de fragmenteigenschappen **weer te geven of te bewerken** vanuit de console
          * De **metagegevens** bewerken in de fragmenteditor
+
    >[!CAUTION]
    >
    >Metagegevensverwerkingsprofielen zijn niet van toepassing op inhoudsfragmenten.
@@ -227,18 +231,18 @@ De elementen van het inhoudsfragment bestaan uit de volgende onderdelen (direct 
    * Een integraal onderdeel van het fragment
 
       * Elk inhoudsfragment heeft één instantie van Master.
-      * Stramien kan niet worden verwijderd.
-   * Stramien is toegankelijk in de fragmenteditor onder **[Variaties](/help/assets/content-fragments/content-fragments-variations.md)**.
-   * Stramien is geen variatie als zodanig, maar is de basis van alle variaties.
+      * Master kan niet worden verwijderd.
+   * Master is toegankelijk in de fragmenteditor onder **[Variaties](/help/assets/content-fragments/content-fragments-variations.md)**.
+   * Master is geen variatie als zodanig, maar is de basis van alle variaties.
 
 
 * **Variaties**
 
    * Uitvoeringen van fragmenttekst die specifiek zijn voor redactionele doeleinden; kan verband houden met het kanaal, maar is niet verplicht, en kan ook voor ad-hoclokale aanpassingen worden gebruikt.
-   * worden gemaakt als kopieën van **stramien**, maar kunnen vervolgens naar wens worden bewerkt; er is gewoonlijk inhoudsoverlap tussen de variaties zelf.
+   * worden gemaakt als kopieën van **Master**, maar kunnen vervolgens naar wens worden bewerkt; er is gewoonlijk inhoudsoverlap tussen de variaties zelf.
    * Kan worden gedefinieerd tijdens het ontwerpen van fragmenten of vooraf worden gedefinieerd in fragmentsjablonen.
    * Opgeslagen in het fragment, om spreiding van inhoudskopieën te voorkomen.
-   * Variaties kunnen worden [gesynchroniseerd](/help/assets/content-fragments/content-fragments-variations.md#synchronizing-with-master) met stramien als de stramieninhoud is bijgewerkt.
+   * Variaties kunnen worden [gesynchroniseerd](/help/assets/content-fragments/content-fragments-variations.md#synchronizing-with-master) met Master als de Master inhoud is bijgewerkt.
    * Kan worden [samengevat](/help/assets/content-fragments/content-fragments-variations.md#summarizing-text) om de tekst snel af te kappen tot een vooraf gedefinieerde lengte.
    * Beschikbaar op het tabblad [Variaties](/help/assets/content-fragments/content-fragments-variations.md) van de fragmenteditor.
 

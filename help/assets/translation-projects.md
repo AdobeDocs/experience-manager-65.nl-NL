@@ -1,11 +1,11 @@
 ---
 title: Vertaalprojecten maken
-description: Leer hoe u vertaalprojecten maakt in [!DNL Adobe Experience Manager].
+description: Leer hoe u vertaalprojecten kunt maken in [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: 34b98636966264b15b16fffc9e712b925303a701
 workflow-type: tm+mt
-source-wordcount: '1763'
+source-wordcount: '1768'
 ht-degree: 10%
 
 ---
@@ -46,11 +46,9 @@ Use the **[!UICONTROL Create structure only]** option to create a target folder 
 
 1. Klik **[!UICONTROL Create & Translate]** onderaan.
 
-   ![chlimage_1-58](assets/chlimage_1-58.png)
-
 1. From the **[!UICONTROL Target Languages]** list, select the language for which you want to create a folder structure.
 
-   ![chlimage_1-59](assets/chlimage_1-59.png)
+   ![doeltaal selecteren](assets/target-language.png)
 
 1. Kies in de lijst **[!UICONTROL Project]** de optie **[!UICONTROL Create structure only]**.
 
@@ -58,11 +56,11 @@ Use the **[!UICONTROL Create structure only]** option to create a target folder 
 
 1. Klik op **[!UICONTROL Create]**. De nieuwe structuur voor de doeltaal wordt vermeld onder **[!UICONTROL Language Copies]**.
 
-   ![chlimage_1-61](assets/chlimage_1-61.png)
+   ![taalkopieën](assets/lang-copy2.png)
 
 1. Klik op de structuur in de lijst en klik vervolgens **[!UICONTROL Reveal in Assets]** om naar de mapstructuur in de doeltaal te navigeren.
 
-   ![chlimage_1-62](assets/chlimage_1-62.png)
+   ![onthullend-in-activa](assets/reveal-in-assets.png)
 
 ### Een nieuw vertaalproject maken {#create-a-new-translation-project}
 
@@ -74,8 +72,6 @@ Als u deze optie gebruikt, worden de te vertalen middelen gekopieerd aan de taal
    ![chlimage_1-63](assets/chlimage_1-63.png)
 
 1. Klik **[!UICONTROL Create & Translate]** onderaan.
-
-   ![chlimage_1-64](assets/chlimage_1-64.png)
 
 1. Selecteer in de lijst **[!UICONTROL Target Languages]** de taal of talen waarvoor u een mappenstructuur wilt maken.
 
@@ -91,15 +87,15 @@ Als u deze optie gebruikt, worden de te vertalen middelen gekopieerd aan de taal
 
 1. Klik op **[!UICONTROL Create]**. Middelen uit de bronmap worden gekopieerd naar de doelmappen voor de landinstellingen die u in stap 4 hebt geselecteerd.
 
-   ![chlimage_1-68](assets/chlimage_1-68.png)
+   ![taalkopieën](assets/lang-copy2.png)
 
 1. Als u naar de map wilt navigeren, selecteert u de taalkopie en klikt u op **[!UICONTROL Reveal in Assets]**.
 
-   ![chlimage_1-69](assets/chlimage_1-69.png)
+   ![onthullend-in-activa](assets/reveal-in-assets.png)
 
 1. Navigeer aan de console van Projecten. De vertaalomslag wordt gekopieerd aan de console van Projecten.
 
-   ![chlimage_1-70](assets/chlimage_1-70.png)
+   ![chlimage_1-78](assets/chlimage_1-70.png)
 
 1. Open de map om het vertaalproject weer te geven.
 
@@ -135,11 +131,9 @@ Als u deze optie gebruikt, wordt de vertaalworkflow uitgevoerd voor elementen di
 1. Klik **[!UICONTROL Language Copies]** onder **[!UICONTROL Copies]**. Er wordt een lijst met beschikbare vertaalkopieën weergegeven.
 1. Klik **[!UICONTROL Create & Translate]** onderaan.
 
-   ![chlimage_1-75](assets/chlimage_1-75.png)
-
 1. Selecteer in de lijst **[!UICONTROL Target Languages]** de taal of talen waarvoor u een mappenstructuur wilt maken.
 
-   ![chlimage_1-76](assets/chlimage_1-76.png)
+   ![doeltaal selecteren](assets/target-language.png)
 
 1. Selecteer in de lijst **[!UICONTROL Project]** de optie **[!UICONTROL Add to existing translation project]** om de vertaalworkflow in de map uit te voeren.
 
@@ -151,7 +145,7 @@ Als u deze optie gebruikt, wordt de vertaalworkflow uitgevoerd voor elementen di
 
 1. Selecteer in de **[!UICONTROL Existing translation project]** lijst een project waaraan u het element voor vertaling wilt toevoegen.
 
-   ![chlimage_1-78](assets/chlimage_1-78.png)
+   ![chlimage_1-70](assets/chlimage_1-78.png)
 
 1. Klik op **[!UICONTROL Create]**. De te vertalen assets worden toegevoegd aan de doelmap. De bijgewerkte map wordt weergegeven onder de sectie **[!UICONTROL Language Copies]**.
 
@@ -176,7 +170,7 @@ Als u deze optie gebruikt, wordt de vertaalworkflow uitgevoerd voor elementen di
    >
    >Als het element dat u toevoegt aan de vertaaltaak subelementen bevat, selecteert u de subelementen en verwijdert u deze zodat de vertaling zonder scheuren kan worden uitgevoerd.
 
-1. Als u de vertaling voor de elementen wilt starten, klikt u op de pijl op de **[!UICONTROL Translation Job]** tegel en selecteert u deze in de **[!UICONTROL Start]** lijst.
+1. Als u de vertaling voor de elementen wilt starten, klikt u op de pijl op de **[!UICONTROL Translation Job]** tegel en selecteert u een element in de **[!UICONTROL Start]** lijst.
 
    ![chlimage_1-81](assets/chlimage_1-81.png)
 
@@ -207,11 +201,9 @@ Als u deze optie gebruikt, wordt een vertaalproject gecreeerd voor de reeks acti
 1. Open the **[!UICONTROL References]** pane, and click **[!UICONTROL Language Copies]** under **[!UICONTROL Copies]** to display the list of language copies.
 1. Schakel het selectievakje voor **[!UICONTROL Language Copies]** in en selecteer vervolgens de doelmap die overeenkomt met de juiste landinstelling.
 
-   ![chlimage_1-84](assets/chlimage_1-84.png)
+   ![taalkopie selecteren](assets/lang-copy1.png)
 
 1. Klik **[!UICONTROL Update language copies]** onderaan.
-
-   ![chlimage_1-85](assets/chlimage_1-85.png)
 
 1. Kies in de lijst **[!UICONTROL Project]** de optie **[!UICONTROL Create a new translation project]**.
 
@@ -234,7 +226,7 @@ Als u deze optie gebruikt, wordt een vertaalproject gecreeerd voor de reeks acti
 
    ![chlimage_1-90](assets/chlimage_1-90.png)
 
-1. Als u de vertaling voor de elementen wilt starten, klikt u op de pijl op de **[!UICONTROL Translation Job]** tegel en selecteert u deze in de **[!UICONTROL Start]** lijst.
+1. Als u de vertaling voor de elementen wilt starten, klikt u op de pijl op de **[!UICONTROL Translation Job]** tegel en selecteert u een element in de **[!UICONTROL Start]** lijst.
 
    ![chlimage_1-91](assets/chlimage_1-91.png)
 
@@ -261,11 +253,9 @@ Als u deze optie gebruikt, worden de elementen toegevoegd aan een bestaand verta
 
 1. Schakel het selectievakje voor **[!UICONTROL Language Copies]** in om alle taalkopieën te selecteren. Hef de selectie van andere kopieën op, met uitzondering van de taalkopieën die overeenkomen met de landinstellingen waarnaar u wilt vertalen.
 
-   ![chlimage_1-95](assets/chlimage_1-95.png)
+   ![taalkopie selecteren](assets/lang-copy1.png)
 
 1. Klik **[!UICONTROL Update language copies]** onderaan.
-
-   ![chlimage_1-96](assets/chlimage_1-96.png)
 
 1. Kies in de lijst **[!UICONTROL Project]** de optie **[!UICONTROL Add to existing translation project]**.
 
@@ -273,7 +263,7 @@ Als u deze optie gebruikt, worden de elementen toegevoegd aan een bestaand verta
 
 1. Selecteer in de **[!UICONTROL Existing translation project]** lijst een project waaraan u het element voor vertaling wilt toevoegen.
 
-   ![chlimage_1-98](assets/chlimage_1-98.png)
+   ![een project selecteren](assets/select-a-project.png)
 
 1. Klik op **[!UICONTROL Start]**.
 1. Zie de stappen 9-14 van [Toevoegen aan bestaand vertaalproject](translation-projects.md#add-to-existing-translation-project) om de rest van de procedure te voltooien.
@@ -294,17 +284,13 @@ Wanneer u een vertaalworkflow uitvoert om een taalkopie bij te werken met bewerk
    ![chlimage_1-101](assets/chlimage_1-101.png)
 
 1. Schakel het selectievakje naast **[!UICONTROL Title]**.
-1. From the toolbar, click **[!UICONTROL Accept Translation]** and then click **[!UICONTROL Accept]** in the dialog to overwrite the translated asset in the target folder with the translated version of the edited asset.
-
-   ![chlimage_1-102](assets/chlimage_1-102.png)
+1. From the toolbar, click **[!UICONTROL Accept Translation]** ![accept translation](assets/do-not-localize/thumb-up.png) and then click **[!UICONTROL Accept]** in the dialog to overwrite the translated asset in the target folder with the translated version of the edited asset.
 
    >[!NOTE]
    >
    >Accepteer zowel het element als de metagegevens om de vertaalworkflow in staat te stellen het doelmiddel bij te werken.
 
-   Klik hierop **[!UICONTROL Reject Translation]** om de oorspronkelijk vertaalde versie van het element in de hoofdmap van de doellandinstelling te behouden en de bewerkte versie af te wijzen.
-
-   ![chlimage_1-103](assets/chlimage_1-103.png)
+   Klik op Vertaling **[!UICONTROL Reject Translation]** afwijzen ![](assets/do-not-localize/thumb-down.png) om de oorspronkelijk vertaalde versie van het element in de hoofdmap van de doellandinstelling te behouden en de bewerkte versie af te wijzen.
 
 1. Als u de vertaalde metagegevens wilt weergeven, navigeert u naar de [!DNL Assets] console en opent u de [!UICONTROL Properties] pagina voor elk van de vertaalde elementen.
 

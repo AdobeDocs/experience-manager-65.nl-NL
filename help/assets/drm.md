@@ -3,9 +3,9 @@ title: Digital Rights Management in [!DNL Adobe Experience Manager Assets].
 description: Leer hoe u de status van verlopen van middelen en informatie over gelicentieerde middelen beheert in [!DNL Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
 workflow-type: tm+mt
-source-wordcount: '1347'
+source-wordcount: '1346'
 ht-degree: 6%
 
 ---
@@ -65,9 +65,6 @@ In het deelvenster Zoeken kunt u zoeken naar verlopen elementen, waaronder verlo
    ![chlimage_1-150](assets/chlimage_1-150.png)
 
 1. Klik op het [!DNL Experience Manager] logo om het zoekvenster weer te geven.
-
-   ![chlimage_1-151](assets/chlimage_1-151.png)
-
 1. Click the **[!UICONTROL Expiry Status]** option to expand it.
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
@@ -114,11 +111,9 @@ De [!DNL Assets] console kan verschillende statussen voor elementen weergeven. A
 
    ![chlimage_1-157](assets/chlimage_1-157.png)
 
-1. Als u de pagina met elementdetails wilt weergeven, selecteert u in de [!DNL Assets] interface een element en klikt u op **[!UICONTROL Properties]**.
+1. Als u de pagina met elementdetails wilt weergeven, selecteert u in de [!DNL Assets] interface een element en klikt u op de eigenschappen **[!UICONTROL Properties]** van de ![](assets/do-not-localize/info-circle-icon.png)weergave.
 
-   ![chlimage_1-158](assets/chlimage_1-158.png)
-
-1. Stel op het tabblad Geavanceerd een vervaldatum voor het element in vanuit het **[!UICONTROL Expires]** veld.
+1. Stel op het [!UICONTROL Advanced] tabblad een vervaldatum voor het element in vanuit het **[!UICONTROL Expires]** veld.
 
    ![de vervaldatum en tijd van het element instellen in het veld Verlopen](assets/asset-properties-advanced-tab.png)
 

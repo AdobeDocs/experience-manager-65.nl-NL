@@ -3,7 +3,7 @@ title: Vorm activa het etiketteren gebruikend de Slimme Dienst van de Inhoud.
 description: Leer hoe u slimme tags en verbeterde slimme tags kunt configureren in [!DNL Adobe Experience Manager]de Smart Content Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
+source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
 workflow-type: tm+mt
 source-wordcount: '931'
 ht-degree: 37%
@@ -29,6 +29,9 @@ Voordat u de Smart Content Service kunt gebruiken, moet u het volgende doen om e
 
 * Een Adobe ID-account met beheerdersrechten voor de organisatie.
 * De service Smart Content Service is ingeschakeld voor uw organisatie.
+
+<!-- TBD: This link will update soon after the new articles goes live on docs.adobe.com. Change it when new URL is available.
+-->
 
 Om Verbeterde Slimme Markeringen toe te laten, naast bovenstaand, installeer ook het recentste de dienstpak [van](https://helpx.adobe.com/experience-manager/aem-releases-updates.html)AEM.
 

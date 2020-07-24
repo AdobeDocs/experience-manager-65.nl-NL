@@ -3,9 +3,9 @@ title: Asset Insights inschakelen via DTM
 description: Leer hoe u DTM (Adobe Dynamic Tag Management) gebruikt om Asset Insights in te schakelen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '576'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Voer deze stappen uit om Asset Insights in te schakelen via DTM.
 
    * Selecteer het **[!UICONTROL Web Properties]** tabblad en klik op **[!UICONTROL Add Property]**.
 
-   * Werk de velden naar wens bij en klik op **[!UICONTROL Create Property]**. Zie [documentatie](https://helpx.adobe.com/experience-manager/using/dtm.html).
+   * Werk de velden naar wens bij en klik op **[!UICONTROL Create Property]**. Zie [documentatie](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html).
 
    ![Webeigenschap bewerken maken](assets/Create-edit-web-property.png)
 
@@ -50,7 +50,7 @@ Voer deze stappen uit om Asset Insights in te schakelen via DTM.
 
    >[!NOTE]
    >
-   >* `AppMeasurement.js` wordt verwijderd. Het is waarschijnlijk beschikbaar via de Adobe Analytics-tool van DTM.
+   >* `AppMeasurement.js` wordt verwijderd. Het wordt verwacht beschikbaar te zijn via de Adobe Analytics-tool van DTM.
    >* De vraag aan `assetAnalytics.dispatcher.init()` wordt verwijderd. De functie wordt naar verwachting aangeroepen zodra het Adobe Analytics-hulpprogramma van DTM is voltooid.
    >* Afhankelijk van waar Asset Insights Page Tracker wordt gehost (bijvoorbeeld Experience Manager, CDN enzovoort), kan de oorsprong van de scriptbron wijzigingen vereisen.
    >* In het geval van door Experience Manager gehoste paginanummering, moet de bron verwijzen naar een publicatie-instantie met de hostnaam van de verzenderinstantie.

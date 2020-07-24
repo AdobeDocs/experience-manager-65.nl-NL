@@ -10,7 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: dcde4e03-78ab-4779-96a1-05ac41f14701
 translation-type: tm+mt
-source-git-commit: e4456e80059479ca874681e20f8546f29ac92597
+source-git-commit: e7268e43620860b7a1f7aa0a1f1a54199dadcf17
+workflow-type: tm+mt
+source-wordcount: '224'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ De `Liking` component is een nuttig hulpmiddel dat gebruikers toestaat om een me
 
 ## Koppeling toevoegen aan een pagina {#adding-liking-to-a-page}
 
-Als u een `Liking` component wilt toevoegen aan een pagina in de ontwerpmodus, gebruikt u de componentbrowser om te zoeken naar:
+Als u een `Liking` component aan een pagina wilt toevoegen in de ontwerpmodus, gebruikt u de componentbrowser om te zoeken naar
 
 * `Communities / Liking`
 
@@ -39,19 +42,19 @@ Selecteer de geplaatste `Liking` component die u wilt openen en selecteer het `C
 
 ![chlimage_1-94](assets/chlimage_1-94.png)
 
-Geef op het tabblad **[!UICONTROL Teksten en labels]** de eigenschappen op die worden gebruikt voor het opnemen van ‘like’.
+Geef onder het **[!UICONTROL Texts & Labels]** tabblad de eigenschappen op die worden gebruikt voor het opnemen van &#39;like&#39;.
 
 ![chlimage_1-95](assets/chlimage_1-95.png)
 
-* **[!UICONTROL Label voor positieve respons]**
+* **[!UICONTROL Positive Response Label]**
 
    (*Vereist*) De eigenschapsnaam voor een positieve reactie.
 
-* **[!UICONTROL Negatief antwoordlabel]**
+* **[!UICONTROL Negative Response Label]**
 
    (*Vereist*) De eigenschapsnaam voor een negatieve reactie.
 
-* **[!UICONTROL Tallnaam]**
+* **[!UICONTROL Tally Name]**
 
    (*Vereist*) De interne, identificeerbare eigenschapsnaam voor dit geval van een stemcomponent.
 

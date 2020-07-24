@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a1e4d64a9ac7dc02c5cf2ac6b01994736c45b449
+source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
 workflow-type: tm+mt
-source-wordcount: '11360'
+source-wordcount: '11362'
 ht-degree: 7%
 
 ---
@@ -731,7 +731,7 @@ Plak de gekopieerde waarde in de geopende teksteditor. Deze waarde hebt u later 
    * (Optioneel) Sleep de component met het label **[!UICONTROL Section Header]** naar links en zet deze neer in het formuliergebied.
    * (Optioneel) Klik **[!UICONTROL Field Label]** om de component te selecteren.
    * (Optioneel) Typ rechts van de pagina onder het tabblad Instellingen in het tekstveld Veld Label de tekst Veld `YouTube Privacy`.
-   * Klik op het **[!UICONTROL Build Form]** tabblad en sleep de component met het label **[!UICONTROL Multi Value Text]** en zet deze onder de **[!UICONTROL YouTube Privacy]** kop die u net hebt gemaakt.
+   * Klik op het **[!UICONTROL Build Form]** tabblad en sleep de component met het label **[!UICONTROL Multi Value Text]** en zet deze onder de **[!UICONTROL YouTube Privacy]** kop die u zojuist hebt gemaakt.
 
    * Klik **[!UICONTROL Field Label]** om de component te selecteren.
    * Plak rechts van de pagina, onder het tabblad Instellingen, de Publishing-waarden (Field Label value en Map to property value) die u eerder hebt gekopieerd, in de respectievelijke velden op het formulier. Plak de waarde Keuzen in het veld Standaardwaarde.
@@ -773,7 +773,7 @@ Video&#39;s publiceren naar uw YouTube-kanaal:
 1. Klik in de rechterbovenhoek van de eigenschappenpagina van de video op **[!UICONTROL Save and Close.]**
 1. On the toolbar, click **[!UICONTROL Quick Publish.]**
 
-   Zie ook Publicatiebeheer [gebruiken met AEM Sites](https://helpx.adobe.com/experience-manager/kt/sites/using/publication-management-feature-video-use.html).
+   Zie ook Publicatiebeheer [gebruiken met AEM Sites](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html).
 
    U kunt desgewenst de gepubliceerde video op uw YouTube-kanaal verifiëren.
 
@@ -990,7 +990,7 @@ Videorapporten weergeven:
 1. Tik in de linkerbovenhoek van AEM op het AEM-logo en tik vervolgens in het linkerspoor op **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Assets]** > **[!UICONTROL Video Reports.]**
 1. Voer een van de volgende handelingen uit op de pagina Videorapporten:
 
-   * Tik in de rechterbovenhoek op het pictogram **Videorapport vernieuwen **pictogram.
+   * Tik in de rechterbovenhoek op het pictogram **Video-rapport vernieuwen **pictogram.
 U hoeft alleen Vernieuwen te gebruiken als de einddatum van het rapport de huidige dag is. Dit zorgt ervoor dat u video het volgen ziet die sinds de laatste tijd is voorgekomen u het rapport in werking stelde.
 
    * Tik in de rechterbovenhoek op de **Datumkiezer **pictogram.

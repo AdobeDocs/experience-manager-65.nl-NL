@@ -4,9 +4,9 @@ description: Leer de taken voor middelenbeheer, zoals het uploaden, downloaden, 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
 workflow-type: tm+mt
-source-wordcount: '9016'
+source-wordcount: '9005'
 ht-degree: 3%
 
 ---
@@ -114,7 +114,7 @@ Voordat u een element uploadt, moet u ervoor zorgen dat dit een [indeling](/help
 
    [!DNL Experience Manager Assets] Hiermee voorkomt u dat elementen met de verboden tekens in de bestandsnaam worden geüpload. Als u een element probeert te uploaden met een bestandsnaam die een niet-toegestaan teken of meer bevat, wordt een waarschuwingsbericht weergegeven en wordt het uploaden gestopt totdat u deze tekens verwijdert of uploadt met een toegestane naam. [!DNL Assets]
 
-   In het [!UICONTROL Upload Assets] dialoogvenster kunt u lange namen opgeven voor de bestanden die u uploadt, zodat u de specifieke naamconventies voor bestanden voor uw organisatie kunt gebruiken.
+   In het [!UICONTROL Upload Assets] dialoogvenster kunt u lange namen opgeven voor de bestanden die u uploadt, zodat deze passen bij specifieke naamconventies voor bestanden voor uw organisatie.
 
    De volgende tekens (lijst met door spaties gescheiden tekens) worden echter niet ondersteund:
 
@@ -377,15 +377,11 @@ Voer de volgende stappen uit om een voorvertoning van een element weer te geven 
 
 1. Gebruik de datumkiezer naast het veld **[!UICONTROL On Time]** om een bepaalde datum/tijd voor de activering van de asset te plannen.
 
-   ![Tijdkiezer op de datum of gebruik de toetsenbordtoetsen in het veld Op tijd om datum en tijd voor activering van het element toe te voegen](assets/schedule-activation.png)
+   ![Tijdkiezer op de datum of gebruik de toetsenbordtoetsen in het veld Op tijd om datum en tijd voor activering van het element toe te voegen](assets/datepicker.png)
 
-   *Afbeelding: Elementactivering plannen.*
+   *Afbeelding: Gebruik de datumkiezer om activering van middelen te plannen.*
 
 1. Als u het element na een bepaalde duur wilt deactiveren, kiest u de datum/tijd van deactivering in de datumkiezer naast het **[!UICONTROL Off Time]** veld. De deactiveringsdatum moet later zijn dan de activeringsdatum voor een element. Na de [!UICONTROL Off Time]API zijn een middel en de uitvoeringen ervan niet beschikbaar via de [!DNL Assets] webinterface of via de HTTP-API.
-
-   ![Datum en tijd kiezen of toetsenbordtoetsen in het veld Uit-tijd gebruiken om datum en tijd toe te voegen voor het deactiveren van elementen](assets/schedule-deactivation.png)
-
-   *Afbeelding: Plan de deactivering van elementen.*
 
 1. Selecteer een of meer tags in het **[!UICONTROL Tags]** veld. Als u een aangepaste tag wilt toevoegen, typt u de naam van de tag in het vak en drukt u op Enter. De nieuwe tag wordt opgeslagen in [!DNL Experience Manager]. [!DNL YouTube] vereist dat codes worden gepubliceerd. Bekijk [publicatievideo&#39;s op YouTube](video.md#publishing-videos-to-youtube).
 
@@ -503,15 +499,11 @@ De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeelte
 
    **Een vertoning verwijderen**
 
-   Selecteer een vertoning in het **[!UICONTROL Renditions]** deelvenster en klik op de **[!UICONTROL Delete Rendition]** optie in de werkbalk. Uitvoeringen kunnen niet bulksgewijs worden verwijderd nadat de verwerking van het element is voltooid. Voor afzonderlijke elementen kunt u uitvoeringen handmatig uit de gebruikersinterface verwijderen. Voor meerdere elementen kunt u Experience Manager aanpassen om specifieke uitvoeringen te verwijderen of de elementen te verwijderen en de verwijderde elementen opnieuw te uploaden.
-
-   ![Optie om een vertoning te verwijderen](assets/delete_renditionicon.png)
+   Selecteer een vertoning in het **[!UICONTROL Renditions]** deelvenster en klik vervolgens op de **[!UICONTROL Delete Rendition]** optie ![Option om een weergaveoptie](assets/do-not-localize/deleteoutline.png) uit de werkbalk te verwijderen. Uitvoeringen kunnen niet bulksgewijs worden verwijderd nadat de verwerking van het element is voltooid. Voor afzonderlijke elementen kunt u uitvoeringen handmatig uit de gebruikersinterface verwijderen. Voor meerdere elementen kunt u Experience Manager aanpassen om specifieke uitvoeringen te verwijderen of de elementen te verwijderen en de verwijderde elementen opnieuw te uploaden.
 
    **Een nieuwe uitvoering uploaden**
 
-   Navigate to the asset details page for the asset, and click the **[!UICONTROL Add Rendition]** option in the toolbar to upload a new rendition for the asset.
-
-   ![De optie Vertoning toevoegen om nieuwe vertoning te uploaden](assets/chlimage_1-16.png)
+   Navigeer naar de pagina met elementdetails voor het element en klik op de optie **[!UICONTROL Add Rendition]** Vertoning ![toevoegen om nieuwe uitvoering](assets/do-not-localize/add.png) te uploaden in de werkbalk om een nieuwe uitvoering voor het element te uploaden.
 
    >[!NOTE]
    >
@@ -541,11 +533,9 @@ Schakel ook de knop forceren verwijderen uit met behulp van een overlay, zodat g
 
 1. Navigeer naar de locatie van de elementen die u wilt verwijderen.
 
-1. Select the asset, and click **[!UICONTROL Delete]** from the toolbar.
+1. Selecteer het element en klik op de werkbalk op de optie **[!UICONTROL Delete]** ![](assets/do-not-localize/deleteoutline.png) Verwijderen.
 
-   ![Verwijderen, optie](assets/delete_icon.png)
-
-1. Klik in het bevestigingsdialoogvenster op:
+1. Selecteer een van de volgende opties in het bevestigingsvenster:
 
    * **[!UICONTROL Cancel]** om de handeling te stoppen
    * **[!UICONTROL Delete]** ter bevestiging van de actie :
@@ -590,9 +580,7 @@ Zie [Elementen downloaden van Experience Manager](/help/assets/download-assets-f
 
 1. Navigeer naar de locatie van de map met middelen die u uit de publicatieomgeving wilt verwijderen (publicatie ongedaan maken).
 
-1. Selecteer het element of de map waarvan u de publicatie wilt ongedaan maken en klik op **[!UICONTROL Manage Publication]** optie op de werkbalk.
-
-   ![Publicatie beheren, optie](assets/manage_publication.png)
+1. Selecteer het element of de map waarvan u de publicatie wilt ongedaan maken en klik op de werkbalk op de optie **[!UICONTROL Manage Publication]** Publicatie ![](assets/do-not-localize/globe-publication.png) beheren.
 
 1. Select the **[!UICONTROL Unpublish]** action from the list.
 
@@ -788,7 +776,7 @@ Videoannotaties worden alleen ondersteund in browsers met HTML5-compatibele vide
 
 1. Als u opgeslagen annotaties voor een element wilt weergeven, navigeert u naar de locatie van het element en opent u de elementpagina voor het element.
 
-1. Kies in de Experience Manager-interface **[!UICONTROL Timeline]**.
+1. In the Experience Manager interface, choose **[!UICONTROL Timeline]**.
 
    ![Opties beschikbaar in Experience Manager](assets/chlimage_1-35.png)
 
@@ -842,9 +830,7 @@ Als u de annotaties en de revisiestatus wilt afdrukken, klikt u op de instructie
 
    ![Annotatie en revisiestatus in gegenereerde PDF](assets/chlimage_1-42.png)
 
-1. Download of druk de PDF af met de opties rechtsboven.
-
-   ![Downloadopties en afdrukopties voor PDF](assets/chlimage_1-43.png)
+1. Download de optie ![Downloaden voor PDF](assets/do-not-localize/download.png) of druk ![afdrukopties op PDF](assets/do-not-localize/print.png) in de PDF met de opties in de rechterbovenhoek.
 
    >[!NOTE]
    >

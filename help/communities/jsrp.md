@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: f5316a73-84e2-4a18-98c1-a384eeaa77cf
 translation-type: tm+mt
-source-git-commit: c798eb79dc9f8e58cef86cf90af02622c3a2ed78
+source-git-commit: e7268e43620860b7a1f7aa0a1f1a54199dadcf17
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '444'
 ht-degree: 1%
 
 ---
@@ -44,20 +44,18 @@ In de auteursomgeving, om de console van de Configuratie van de Opslag te bereik
 
 * Selecteer **[!UICONTROL Submit]**
 
-![chlimage_1-234](assets/chlimage_1-234.png)
+![jsrp-configuration](assets/jsrp-configuration.png)
 
 ### De configuratie publiceren {#publishing-the-configuration}
 
 Terwijl JSRP de standaardconfiguratie is, om ervoor te zorgen dat de identieke configuratie in het publicatiemilieu wordt geplaatst:
 
-* Op auteur:
+* Vanuit globale navigatie: **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Replication]**
+* Selecteer **[!UICONTROL Activate Tree]** > **[!UICONTROL Start Path]**:
 
-   * Vanuit globale navigatie: **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Replication]**
-   * Selecteer **[!UICONTROL Activate Tree]** > **[!UICONTROL Start Path]**:
+   * Bladeren naar `/conf/global/settings/community/srpc/`
 
-      * Bladeren naar `/conf/global/settings/community/srpc/`
-   * Selecteer **[!UICONTROL Activate]**
-
+* Selecteer **[!UICONTROL Activate]**
 
 ## Gebruikersgegevens beheren {#managing-user-data}
 

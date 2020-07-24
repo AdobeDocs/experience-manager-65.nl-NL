@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 7449f99e-77d7-4c0f-96d5-b67d5e1f124a
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: e7268e43620860b7a1f7aa0a1f1a54199dadcf17
+workflow-type: tm+mt
+source-wordcount: '99'
+ht-degree: 2%
 
 ---
 
@@ -19,7 +22,9 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 Deze pagina bevat de essentiële informatie voor het werken met de functie Lederboard.
 
-Voordat de leaderboard-component op een pagina wordt geplaatst, moet u [Communities Scoring and Badges](implementing-scoring.md)configureren. Zie ook [Scoring en de Hoofdzaak](configure-scoring.md)van Badges.
+Voordat de leaderboard-component op een pagina wordt geplaatst, moet u [Communities Scoring and Badges](implementing-scoring.md)configureren.
+
+Zie [Scoring en Badges Essentials](configure-scoring.md).
 
 ## Essentiële elementen voor client-kant {#essentials-for-client-side}
 

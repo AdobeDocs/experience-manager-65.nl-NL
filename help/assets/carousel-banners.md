@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: e26c7f7f-bdd7-421a-8614-ba48abf381d2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
 workflow-type: tm+mt
-source-wordcount: '4729'
+source-wordcount: '4732'
 ht-degree: 3%
 
 ---
@@ -94,7 +94,7 @@ Zo kunt u snel aan de slag:
       ](/help/assets/adding-dynamic-media-assets-to-pages.md)Als u een klant van AEM Sites bent, kunt u de carrousel toevoegen die direct aan de pagina in AEM wordt geplaatst, gebruikend de Interactieve component van Media.
 
 
-Zie Carousel Sets [bewerken als u carrouselsets moet bewerken.](#editing-carousel-sets) Bovendien kunt u de eigenschappen [van de](https://helpx.adobe.com/experience-manager/6-5/help/assets/managing-assets-touch-ui.md#editingproperties)Carousel-set weergeven en bewerken.
+Zie Carousel Sets [bewerken als u carrouselsets moet bewerken.](#editing-carousel-sets) Bovendien kunt u de eigenschappen [van de](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/managing-assets-touch-ui.html#editing-properties)Carousel-set weergeven en bewerken.
 
 ## Variabelen hotspot en afbeelding met hyperlinks identificeren {#identifying-hotspot-and-image-map-variables}
 
@@ -200,6 +200,7 @@ Zie [Elementen](/help/assets/managing-assets-touch-ui.md)uploaden om afbeeldings
    * Near the upper-left corner of the page, tap **[!UICONTROL Add Slide]** icon.
 
    * Tik in het midden van de pagina op **[!UICONTROL Tap to open Asset Selector.]**
+
    Tik om assets te selecteren die u in de carrouselset wilt opnemen. Geselecteerde assets hebben een vinkje. Tik in de rechterbovenhoek van de pagina op **[!UICONTROL Selecteren]** als u klaar bent.
 
    Met de Asset Selector kunt u zoeken naar elementen door een trefwoord in te voeren en te tikken of door te klikken op **[!UICONTROL Return.]** U kunt ook filters toepassen om de zoekresultaten te verfijnen. U kunt filteren op pad, verzameling, bestandstype en tag. Selecteer het filter en tik op het pictogram **[!UICONTROL Filter]** op de werkbalk. Change the view by tapping the View icon and selecting **[!UICONTROL Column View]**, **[!UICONTROL Card View]**, or **[!UICONTROL List View.]**
@@ -226,6 +227,7 @@ Zie [Elementen](/help/assets/managing-assets-touch-ui.md)uploaden om afbeeldings
    >    * Stijl van de knoppen. Gebruikers kunnen door de banners roteren door op elke punt of elk getal te tikken. U kunt wijzigen waar de knoppen van de ingestelde indicator worden weergegeven (en of ze numeriek of gestippeld zijn) en hoe groot ze zijn.
    >    * Wijzig de markeerstijl van een afbeeldingskaart of het pictogram dat voor hotspots wordt gebruikt.
    >    * Voordat u een viewervoorinstelling bewerkt, kiest u de stijl waarvan u de voorinstelling wilt baseren. Als u dit niet doet, gaan alle wijzigingen verloren wanneer u de viewervoorinstelling gaat bewerken
+
    >
    >
    >Zie [Speciale overwegingen voor Carousel Banners](/help/assets/viewer-presets.md#specialconsiderationsforcreatingacarouselbannerviewerpreset) voor gedetailleerde instructies en meer informatie over de viewer editor.
@@ -274,6 +276,7 @@ Zie ook Afbeeldingskaarten [toevoegen](/help/assets/image-maps.md).
 
    * Voor hotspots: Tik in de afbeelding op een locatie waar u de hotspot wilt weergeven.
    * Voor afbeeldingen met hyperlinks: Klik in de afbeelding en sleep van linksboven naar rechtsonder om het gebied met de afbeeldingskaart te maken. U kunt de grootte van de afbeelding met hyperlinks aanpassen door de hoeken te slepen.
+
    Sleep indien nodig de hotspot of de afbeelding met hyperlinks naar een nieuwe locatie. Voeg desgewenst extra hotspots of afbeeldingen met hyperlinks toe.
 
    Tik op het tabblad **[!UICONTROL Actions]** om een hotspot of afbeelding met hyperlinks te verwijderen. Selecteer onder de kop **[!UICONTROL Maps & Hotspots]** in het vervolgkeuzemenu **[!UICONTROL Selected Type]** de naam van de hotspot of de afbeelding met hyperlinks die u wilt verwijderen. Tik op het pictogram **[!UICONTROL Trash]** naast het menu en tik vervolgens op **[!UICONTROL Delete.]**
@@ -298,6 +301,7 @@ Zie ook Afbeeldingskaarten [toevoegen](/help/assets/image-maps.md).
          De op URL gebaseerde methode van het verbinden is niet mogelijk als uw interactieve inhoud verbindingen met relatieve URLs, in het bijzonder verbindingen met AEM Sites pagina&#39;s heeft.
 
       * Als u een zelfstandige klant bent, geeft u in het tekstveld HREF het volledige URL-pad naar een gekoppelde webpagina op.
+
    Zorg ervoor dat u opgeeft of u de koppeling wilt openen in een nieuw browsertabblad (aanbevolen standaard) of op hetzelfde tabblad.
 
    Zie [Werken met kiezers](/help/assets/working-with-selectors.md) voor meer informatie.
@@ -356,6 +360,7 @@ U kunt diverse bewerkingstaken uitvoeren op Carousel Sets, zoals:
    * Als u een dia wilt verwijderen, selecteert u de dia en tikt u op **[!UICONTROL Delete Slide]** de werkbalk.
    * To apply a preset, near the upper-right corner of the page, tap the **[!UICONTROL Preset]** drop-down list, then select a viewer preset.
    * Als u een volledige Carousel-set wilt verwijderen, navigeert u naar de Carousel-set, selecteert u deze en tikt u op **[!UICONTROL Delete.]**
+
    >[!NOTE]
    Als u interactieve afbeeldingen met hotspots bewerkt en de afbeelding bijsnijdt, worden de hotspots verwijderd.
 

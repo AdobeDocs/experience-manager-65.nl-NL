@@ -3,9 +3,9 @@ title: Adobe Experience Managers naar Adobe Creative Cloud-map met beste praktij
 description: Configureer Adobe Experience Manager zodat gebruikers in Experience Manager Assets mappen kunnen uitwisselen met gebruikers van Adobe Creative Cloud (CC).
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
 workflow-type: tm+mt
-source-wordcount: '1079'
+source-wordcount: '1082'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->De functie voor het delen van mappen tussen Experience Manager en Creative Cloud is verouderd. Adobe raadt u ten zeerste aan om nieuwere mogelijkheden te gebruiken, zoals [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) of [Experience Manager-bureaubladtoepassing](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html). Meer informatie over beste praktijken [bij de integratie van](/help/assets/aem-cc-integration-best-practices.md)Experience Manager en Creative Cloud.
+>De functie voor het delen van mappen tussen Experience Manager en Creative Cloud is verouderd. Adobe raadt u ten zeerste aan om nieuwere mogelijkheden te gebruiken, zoals [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) of [Experience Manager-bureaubladtoepassing](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html). Meer informatie over beste praktijken [bij de integratie van](/help/assets/aem-cc-integration-best-practices.md)Experience Manager en Creative Cloud.
 
 Adobe Experience Manager kan zo worden geconfigureerd dat gebruikers in Middelen mappen kunnen delen met gebruikers van Adobe Creative Cloud-toepassingen, zodat ze beschikbaar zijn als gedeelde mappen in de Adobe Creative Cloud Assets-service. De functie kan worden gebruikt om bestanden uit te wisselen tussen creatieve teams en gebruikers van middelen, vooral wanneer creatieve gebruikers geen toegang hebben tot de implementatie van middelen (ze bevinden zich niet op het bedrijfsnetwerk).
 

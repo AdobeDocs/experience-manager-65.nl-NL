@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: e8f28cd5-7950-4aab-bf62-3d4ed3d33cbd
 translation-type: tm+mt
-source-git-commit: c798eb79dc9f8e58cef86cf90af02622c3a2ed78
+source-git-commit: 65e2b98cfd980f17302b4751127e25827decec22
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 4%
@@ -38,13 +38,13 @@ Nu er een [paginamalplaatje](initial-app.md#createthepagetemplate)is, kunnen wij
 
    Als u wilt overschakelen naar de klassieke UI, selecteert u de globale navigatie en houdt u de muisaanwijzer boven de rechterzijde van het pictogram Projecten. Selecteer het pictogram *Overschakelen naar klassieke gebruikersinterface* dat wordt weergegeven:
 
-   ![chlimage_1-36](assets/chlimage_1-36.png)
+   ![classic-ui](assets/classic-ui.png)
 
    De capaciteit om op klassieke UI over te schakelen moet door een beheerder [worden](../../help/sites-administering/enable-classic-ui.md)toegelaten.
 
 1. Van de [klassieke UI Welkome pagina](http://localhost:4502/welcome.html), uitgezochte **[!UICONTROL Websites]**.
 
-   ![chlimage_1-37](assets/chlimage_1-37.png)
+   ![classic-ui-website](assets/classic-ui-website.png)
 
    U kunt ook rechtstreeks toegang krijgen tot de klassieke UI voor websites door naar [/sitebeheerder te bladeren.](http://localhost:4502/siteadmin)
 
@@ -57,7 +57,7 @@ Nu er een [paginamalplaatje](initial-app.md#createthepagetemplate)is, kunnen wij
    * Selecteer **[!UICONTROL An SCF Sandbox Play Template]**
    * Klik op **[!UICONTROL Create]**
 
-   ![chlimage_1-38](assets/chlimage_1-38.png)
+   ![classic-ui-create-page](assets/classic-ui-create-page.png)
 
 1. Selecteer in het verkenner-venster de pagina die u net hebt gemaakt `/Websites/SCF Sandbox Site`en klik op **[!UICONTROL New]** > **[!UICONTROL New Page]**:
 
@@ -75,11 +75,11 @@ Nu er een [paginamalplaatje](initial-app.md#createthepagetemplate)is, kunnen wij
 
 1. Zo wordt de website nu weergegeven in de websiteconsole. U ziet dat onderliggende pagina&#39;s van het item dat is geselecteerd in het deelvenster Verkenner, worden weergegeven in het rechterdeelvenster waar ze kunnen worden beheerd.
 
-   ![chlimage_1-39](assets/chlimage_1-39.png)
+   ![classic-ui-website-page](assets/classic-ui-website-page.png)
 
    Dit is de repository weergave van wat er is gemaakt met het gereedschap Website en de sjabloon:
 
-   ![chlimage_1-40](assets/chlimage_1-40.png)
+   ![classic-ui-repository-view](assets/classic-ui-repository-view.png)
 
 ## Het ontwerppad toevoegen {#add-the-design-path}
 
@@ -100,7 +100,7 @@ is gedefinieerd, hetgeen de optionele mogelijkheid biedt om naar ontwerpelemente
 
 De oplossing moet er als volgt uitzien:
 
-![chlimage_1-41](assets/chlimage_1-41.png)
+![classic-ui-repository-path](assets/classic-ui-repository-path.png)
 
 * Klik op **[!UICONTROL Save All]**
 

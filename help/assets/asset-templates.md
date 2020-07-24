@@ -3,9 +3,9 @@ title: Elementsjablonen in [!DNL Adobe Experience Manager Assets].
 description: Meer informatie over Asset-sjablonen [!DNL Adobe Experience Manager Assets] en over het gebruik van asset templates om marketingmateriaal te maken.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
 workflow-type: tm+mt
-source-wordcount: '1513'
+source-wordcount: '1515'
 ht-degree: 0%
 
 ---
@@ -106,7 +106,7 @@ U kunt direct nadat u het hebt gemaakt, een onderpand bewerken. U kunt het besta
 
 1. Klik **[!UICONTROL Preview]** om een voorvertoning van de tekstwijzigingen weer te geven.
 
-   ![chlimage_1-112](assets/chlimage_1-317.png)
+   ![weergavewijzigingen](assets/view-changes.png)
 
 1. Als u een afbeelding wilt omwisselen, klikt u op de knop **[!UICONTROL Asset Finder]**.
 
@@ -122,11 +122,11 @@ U kunt direct nadat u het hebt gemaakt, een onderpand bewerken. U kunt het besta
 
 1. Klik **[!UICONTROL Preview]** om een voorvertoning van de afbeelding weer te geven.
 
-   ![chlimage_1-116](assets/chlimage_1-321.png)
+   ![weergavewijzigingen](assets/view-changes.png)
 
 1. Als u een specifieke pagina in een pagina-element wilt bewerken dat uit meerdere pagina&#39;s bestaat, gebruikt u de paginanavigator onderaan.
 
-   ![chlimage_1-117](assets/chlimage_1-322.png)
+   ![paginanavigator](assets/page-navigator.png)
 
 1. Klik op **[!UICONTROL Preview]** de werkbalk om een voorvertoning van alle wijzigingen weer te geven. Klik **[!UICONTROL Done]** om de bewerkingswijzigingen in het onderpand op te slaan.
 
@@ -172,8 +172,6 @@ U kunt direct nadat u het hebt gemaakt, een onderpand bewerken. U kunt het besta
    ![chlimage_1-122](assets/chlimage_1-327.png)
 
    U kunt ook naar sjablonen zoeken in het vak Onderzoek.
-
-   ![chlimage_1-123](assets/chlimage_1-328.png)
 
    U kunt door de [!DNL Experience Manager Assets] bewaarplaats of inzamelingen doorbladeren, en aan de plaats van de gewenste malplaatjes navigeren en dan hen selecteren om samen te voegen.
 

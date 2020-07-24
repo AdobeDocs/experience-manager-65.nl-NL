@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: dd0cbc05-a361-46bc-b9f1-d045f8f23890
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ca15258a5dc7ca99b6c9d6ae85e42c77a3802c87
+source-git-commit: 65e2b98cfd980f17302b4751127e25827decec22
+workflow-type: tm+mt
+source-wordcount: '1202'
+ht-degree: 0%
 
 ---
 
@@ -54,7 +57,7 @@ Een bekende beperking stelt de inhoud van de communautaire plaats aan anonieme b
 
 Voer de volgende stappen uit om de inhoud van uw site te beschermen tegen toegang door anonieme gebruikers via jcr-inhoud en json:
 
-1. Ga naar https:// hostnaam:port/editor.html/content/site/sitename.html voor een AEM-auteurinstantie.
+1. Ga bij AEM Author-instantie naar https:// hostname:port/editor.html/content/site/sitename.html.
 
    >[!NOTE]
    >
@@ -89,7 +92,7 @@ Zodra u bent aangemeld als lid van de geregistreerde gemeenschap, ziet u de volg
    1. Stel nieuwe directe berichten samen om naar individuen en groepen te verzenden.
 
 * [De optie Meldingen](/help/communities/notifications.md) geeft u de opdracht om de sectie Meldingen te openen waarin u uw belangwekkende gebeurtenissen kunt bekijken en de berichtinstellingen kunt bewerken.
-* [Het beleid](/help/communities/published-site.md#moderationlink) leidt u aan de Pagina van de Moderatie van de Gemeenschappen AEM, als u moderatie voorrechten hebt.
+* [Het beleid](/help/communities/published-site.md#moderationlink) leidt u aan de Pagina van de Moderatie van AEM Communities, als u moderatievoorrechten hebt.
 
 ![chlimage_1-33](assets/chlimage_1-33.png)
 
@@ -103,6 +106,7 @@ U ziet dat de kalenderpagina de startpagina is omdat de gekozen Sjabloon Referen
 >
 >* [Community Components](/help/communities/author-communities.md) (voor auteurs)
 >* [Component, Function en Feature Essentials](/help/communities/essentials.md) (voor ontwikkelaars)
+
 >
 
 
@@ -125,7 +129,7 @@ Dit is een voorbeeld waarin een groep wordt gemaakt in de publicatieomgeving.
 
 Groepen kunnen ook in de auteursomgeving worden gecreeerd en binnen de communautaire plaats in het auteursmilieu (de console[van](/help/communities/groups.md)Communautaire Groepen) worden beheerd. In deze zelfstudie wordt vervolgens uitgelegd hoe u groepen [kunt maken over de auteur](/help/communities/nested-groups.md) .
 
-![chlimage_1-36](assets/chlimage_1-36.png)
+![classic-ui](assets/classic-ui.png)
 
 Een referentiegroep maken:
 
@@ -143,11 +147,11 @@ Een referentiegroep maken:
 
 1. Groep **maken selecteren**
 
-![chlimage_1-37](assets/chlimage_1-37.png)
+![classic-ui-website](assets/classic-ui-website.png)
 
 Nadat er een nieuwe groep is gemaakt, **selecteert u de nieuwe groep** Sport om er twee (geneste) groepen in te maken. Aangezien een sitestructuur niet kan beginnen met de groepsfunctie, moet u na het openen van de Sportgroep de koppeling Groepen selecteren:
 
-![chlimage_1-38](assets/chlimage_1-38.png)
+![classic-ui-create-page](assets/classic-ui-create-page.png)
 
 De tweede set koppelingen, die begint met `Blog`, behoort tot de geselecteerde groep, de `Sports` groep. Door de verbinding van Sport te selecteren `Groups` , is het mogelijk om twee groepen binnen de groep van Sport te nesten.
 
@@ -175,7 +179,7 @@ Nadat beide groepen zijn gemaakt, selecteert u de Baseball-groep, een open groep
 
 De koppelingen van de groep worden weergegeven onder de koppelingen van de hoofdsite en resulteren in de volgende weergave:
 
-![chlimage_1-39](assets/chlimage_1-39.png)
+![classic-ui-website-page](assets/classic-ui-website-page.png)
 
 Op auteur - met administratieve voorrechten, navigeer aan de console [van de Groepen van](/help/communities/members.md) Gemeenschappen en voeg Weston McCall aan de `Community Engage Gymnastics <uid> Members` groep toe.
 
@@ -190,7 +194,7 @@ Alleen de Baseball-groep is zichtbaar.
 
 Meld u aan bij Weston McCall (weston.mccall@dodgit.com / wachtwoord) en navigeer naar dezelfde locatie. Het is bekend dat Weston in staat is om `Join` de open `Baseball` groep en ook `enter or Leave` de particuliere `Gymnastics` groep te vormen.
 
-![chlimage_1-40](assets/chlimage_1-40.png)
+![classic-ui-repository-view](assets/classic-ui-repository-view.png)
 
 ### Koppeling naar webpagina {#web-page-link}
 
@@ -198,7 +202,7 @@ Selecteer de koppeling Webpagina om de basiswebpagina weer te geven die in de si
 
 Ga bijvoorbeeld naar de **auteur** -instantie, open de `engage` map in de console [](/help/communities/sites-console.md)Communitysites en selecteer het pictogram Site **** openen om de modus Schrijfbewerking te openen. Selecteer vervolgens de voorvertoningsmodus om de `Web Page` koppeling te selecteren en selecteer vervolgens de bewerkingsmodus om titel- en tekstcomponenten toe te voegen. Ten slotte publiceert u alleen de pagina of de hele site opnieuw.
 
-![chlimage_1-41](assets/chlimage_1-41.png)
+![classic-ui-repository-path](assets/classic-ui-repository-path.png)
 
 ### Moderniseringskoppeling {#moderationlink}
 

@@ -3,9 +3,9 @@ title: Elementen voorbereiden voor vertaling
 description: Maak hoofdmappen voor talen om elementen voor te bereiden voor vertaling ter ondersteuning van meertalige middelen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '439'
 ht-degree: 0%
 
 ---
@@ -67,4 +67,4 @@ De Experience Manager-interface biedt een **[!UICONTROL References]** deelvenste
 
 1. Klik in het venster Referenties op **[!UICONTROL Language Copies]**. In het [!UICONTROL Language Copies] deelvenster worden de taalkopieën van de elementen weergegeven.
 
-   ![chlimage_1-123](assets/chlimage_1-123.png)
+   ![taalkopieën](assets/lang-copy2.png)

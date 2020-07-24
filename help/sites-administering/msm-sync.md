@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6bcf0fcc-481a-4283-b30d-80b517701280
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 37c9cb6db35cb941a117a03aadf7a9815809c85e
+source-git-commit: 3b64b1fe5d47f115681608f38e7e53d078c4698e
 workflow-type: tm+mt
-source-wordcount: '2684'
+source-wordcount: '2673'
 ht-degree: 0%
 
 ---
@@ -188,7 +188,7 @@ In de volgende tabel worden de synchronisatiehandelingen weergegeven die met AEM
   </tr>
   <tr>
    <td>werkstroom</td>
-   <td><p>Hiermee wordt de workflow gestart die door de eigenschap target (alleen voor pagina's) wordt gedefinieerd en wordt de live kopie als een payload ingesteld.</p> <p>Het doelpad is het pad van het modelknooppunt, bijvoorbeeld /etc/workflow/models/request_for_activation/jcr:content/model</p> </td>
+   <td><p>Hiermee wordt de workflow gestart die door de eigenschap target (alleen voor pagina's) wordt gedefinieerd en wordt de live kopie als een payload ingesteld.</p> <p>Het doelpad is het pad van het modelknooppunt.</p> </td>
    <td>doel: (String) Het pad naar het workflowmodel.<br /> </td>
   </tr>
   <tr>
@@ -408,11 +408,12 @@ De onderliggende pagina&#39;s van de blauwdrukpagina nemen de configuratie over.
 
 Geef een rollout-configuratie op die u als systeemstandaard wilt gebruiken. Om het gebrek te specificeren, vorm de dienst OSGi:
 
-* **Day CQ WCM Live Relationship Manager** De service-PID is `com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`
+* **Day CQ WCM Live Relationship Manager** De service-PID is 
+`com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`
 
 Vorm de dienst gebruikend of de Console [van het](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) Web of een [gegevensopslagknoop](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository).
 
 * In de Webconsole, is de naam van het bezit om te vormen Standaardrollout config.
 * Gebruikend een gegevensopslaggegevensopslagknoop, is de naam van het bezit te vormen `liverelationshipmgr.relationsconfig.default`.
 
-Plaats deze bezitswaarde aan de weg van de rollout configuratie aan gebruik als systeemgebrek. De standaardwaarde is `/etc/msm/rolloutconfigs/default`, namelijk de **Standaardconfiguratie** van de Output.
+Plaats deze bezitswaarde aan de weg van de rollout configuratie aan gebruik als systeemgebrek. De standaardwaarde is `/libs/msm/wcm/rolloutconfigs/default`, namelijk de **Standaardconfiguratie** van de Output.

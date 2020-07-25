@@ -3,8 +3,12 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.5 Mobile User Guide
+user-guide-description: Create and manage content for mobile apps.
 translation-type: tm+mt
-source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+workflow-type: tm+mt
+source-wordcount: '315'
+ht-degree: 0%
 
 ---
 
@@ -35,7 +39,7 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [Eigenschappen en knooppunten van inhoud](content-properties.md)
    + [Configuratie voor gedeelde bronnen exporteren](creating-shared-resources-export-configuration.md)
    + [Sjablonen en componenten maken en toevoegen](mobile-ondemand-app-templates.md)
-   + [Aanbevolen werkwijzen](best-practices-aem-mobile.md)
+   + [Best practices voor](best-practices-aem-mobile.md)
    + [Artikel-exportconfiguratie maken](creating-article-export-configuration.md)
    + [Mobiel met inhoudssynchronisatie](mobile-ondemand-contentsync.md)
    + [Paginasjablonen voor mobiele apps](apps-architecture.md)
@@ -75,17 +79,17 @@ source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
    + [Apparaatfuncties openen](phonegap-access-device-features.md)
    + [Adobe Analytics toevoegen aan uw mobiele toepassing](phonegap-add-analytics-to-apps.md)
    + [Paginasjablonen voor mobiele apps](phonegap-apps-arch-page-templates.md)
-   + [Adobe Target Cloud Service configureren](aem-mobile-configuring-cloud-service.md)
+   + [Adobe Target-Cloud Service configureren](aem-mobile-configuring-cloud-service.md)
    + [Toepassingen voor één pagina](phonegap-single-page-applications.md)
    + [Modellen in opslagplaats](administer-mobile-apps.md)
    + [AEM PhoneGap starten](starting-aem-phonegap-app.md)
    + [Mobiele apps testen](develop-mobile-apps-testing.md)
    + [Een app structureren](phonegap-structure-an-app.md)
-   + [App-prestaties bijhouden met Adobe Mobile Analytics](phonegap-intro-to-app-analytics.md)
+   + [App-prestaties volgen met Adobe Mobile Analytics](phonegap-intro-to-app-analytics.md)
 + Adobe PhoneGap Enterprise beheren {#administering-phonegap}
    + [Mobile QuickStart](phonegap-mobile-quickstart.md)
    + [Inhoud voor Adobe PhoneGap Enterprise beheren met AEM](administer-phonegap.md)
-   + [Uw Adobe PhoneGap Build Cloud-service configureren](configure-phonegap-build-cloud.md)
+   + [Uw Adobe PhoneGap Build-Cloud Service configureren](configure-phonegap-build-cloud.md)
    + [Het filter Referrer instellen op Leeg maken](setting-referrer-filter-empty.md)
-   + [Uw Adobe Mobile Services Cloud Service configureren](configure-adobe-mobile-cloud-service.md)
+   + [Uw Adobe Mobile Services-Cloud Service configureren](configure-adobe-mobile-cloud-service.md)
    + [Uw gebruikers en gebruikersgroepen configureren](configure-users-groups.md)

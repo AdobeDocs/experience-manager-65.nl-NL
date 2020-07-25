@@ -3,8 +3,9 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: Handleiding voor Experience Manager 6.5-middelen
+user-guide-description: Create, manage, deliver, and optimize digital assets.
 translation-type: tm+mt
-source-git-commit: 9f1548785283ffba119d8404e328f513012a082c
+source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 39%
@@ -24,7 +25,7 @@ ht-degree: 39%
    + [Meertalige activa](multilingual-assets.md)
    + [ [!DNL Adobe Stock] Activa in AEM Assets](aem-assets-adobe-stock.md)
    + [3D-elementen voorvertonen](previewing-3d-assets.md)
-   + [Map-assets en verzamelingen controleren](bulk-approval.md)
+   + [Map-assets en verzamelingen reviewen](bulk-approval.md)
    + [Activiteitsstroom in tijdlijn](activity-stream.md)
    + [Proceselementen](assets-workflow.md)
    + [Afbeeldingen met hyperlinks toevoegen](image-maps.md)

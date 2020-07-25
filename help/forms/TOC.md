@@ -4,8 +4,9 @@ product: adobe experience manager
 sub-product: formulieren
 audience: end-user
 user-guide-title: Gebruikershandleiding voor AEM 6.5-formulieren
+user-guide-description: Create, manage, publish, and update digital forms.
 translation-type: tm+mt
-source-git-commit: 8bb5e92140371fbfee0f946ed3701cd40a972702
+source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
 workflow-type: tm+mt
 source-wordcount: '3695'
 ht-degree: 0%
@@ -196,7 +197,7 @@ ht-degree: 0%
 + Workflows {#workflows}
    + [Forms-centric workflow op OSGi](using/aem-forms-workflow.md)
    + [Forms-centric workflow op OSGi - Step Reference](using/aem-forms-workflow-step-reference.md)
-   + [Een gebruiker of groep dynamisch selecteren voor workflowstappen op basis van AEM Forms](using/dynamically-select-a-user-or-group-for-aem-workflow.md)
+   + [Selecteer dynamisch een gebruiker of groep voor AEM Forms-centric werkstroomstappen](using/dynamically-select-a-user-or-group-for-aem-workflow.md)
    + [Handelingen en mogelijkheden van Form-centric AEM Workflows op OSGi- en AEM Forms JEE-workflows](using/capabilities-osgi-jee-workflows.md)
    + [Documentservices-API&#39;s starten vanuit de AEM-workflow](using/initiating-document-services-apis-aem.md)
    + [Aanmelden bij werkstromen van AEM Forms](/help/forms/using/forms-workflow-logs.md)

@@ -2,95 +2,99 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.5 Deploying Guide
+user-guide-title: AEM 6.5-implementatiegids
+user-guide-description: Learn more about installing, deploying, and the architecture of Adobe Experience Manager 6.5, including our Adobe Managed Services cloud deployment.
 translation-type: tm+mt
-source-git-commit: 47bd0c5327f4127080ca65f4f84db4c643c34e7c
+source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+workflow-type: tm+mt
+source-wordcount: '319'
+ht-degree: 1%
 
 ---
 
 
-# AEM 6.5 - Gebruikershandleiding implementeren {#deploying}
+# AEM 6.5 Gebruikershandleiding implementeren {#deploying}
 
 + [Gebruikershandleiding implementeren](home.md)
-+ Introductie tot het AEM-platform {#introduction}
-   + [Introductie tot het AEM-platform](platform.md)
-   + [Technische eisen](technical-requirements.md)
++ Inleiding tot het AEM-Platform {#introduction}
+   + [Inleiding tot het AEM-Platform](platform.md)
+   + [Technische vereisten](technical-requirements.md)
    + [Opslagelementen in AEM 6.5](storage-elements-in-aem-6.md)
    + [AEM met MongoDB](aem-with-mongodb.md)
 + AEM implementeren {#deploying}
    + [Implementeren en onderhouden](deploy.md)
    + [Aanbevolen implementaties](recommended-deploys.md)
-   + [Installatie van toepassingsserver](application-server-install.md)
-   + [Custom Standalone Install](custom-standalone-install.md)
-   + [Begin en einde van opdrachtregel](command-line-start-and-stop.md)
-   + [Het vormen van knoopopslag en gegevensopslag in AEM 6](data-store-config.md)
-   + [Herziening opschonen](revision-cleanup.md)
-   + [Aak en indexering](queries-and-indexing.md)
-   + [Hoe u AEM kunt uitvoeren met TarMK-koude stand-by](tarmk-cold-standby.md)
+   + [Installeren van toepassingsserver](application-server-install.md)
+   + [Aangepaste standalone installatie](custom-standalone-install.md)
+   + [Start en stop opdrachtregel](command-line-start-and-stop.md)
+   + [Opslaan van knooppunten en gegevensopslag configureren in AEM 6](data-store-config.md)
+   + [Revisie opschonen](revision-cleanup.md)
+   + [Oak-query&#39;s en indexering](queries-and-indexing.md)
+   + [AEM uitvoeren met TarMK Cold Standby](tarmk-cold-standby.md)
    + [RDBMS-ondersteuning in AEM 6.5](rdbms-support-in-aem.md)
-   + [Indexering via de door de eik geleide pot](indexing-via-the-oak-run-jar.md)
-   + [Oak-run.jar Indexing Use cases](oak-run-indexing-usecases.md)
-   + [Problemen oplossen met Oak-indexen](troubleshooting-oak-indexes.md)
-   + [Optie in de Geaggregeerde Inzameling van de Statistieken van het Gebruik](opt-in-aggregated-usage-statistics.md)
-   + [Definities van verwijderingsvoertuig bijwerken](update-release-vehicle-definitions.md)
+   + [Indexering via de eiken-run-jar](indexing-via-the-oak-run-jar.md)
+   + [Gebruiksscenario&#39;s voor indexeren van eikenrun.jar](oak-run-indexing-usecases.md)
+   + [Probleemoplossing voor Oak-indexen](troubleshooting-oak-indexes.md)
+   + [Opteren in verzameling van samengevoegde verbruiksstatistieken](opt-in-aggregated-usage-statistics.md)
+   + [Definities van releasevoertuig bijwerken](update-release-vehicle-definitions.md)
    + [Problemen oplossen](troubleshooting.md)
 + AEM configureren {#configuring}
    + [Basisconfiguratieconcepten](configuring.md)
-   + [Registratie](configure-logging.md)
-   + [Het vormen OSGi](configuring-osgi.md)
+   + [Logboekregistratie](configure-logging.md)
+   + [OSGi configureren](configuring-osgi.md)
    + [OSGi-configuratie-instellingen](osgi-configuration-settings.md)
-   + [Modes uitvoeren](configure-runmodes.md)
-   + [webconsole](web-console.md)
+   + [Modi uitvoeren](configure-runmodes.md)
+   + [Webconsole](web-console.md)
    + [Replicatie](replication.md)
-   + [Replicatie met wederzijdse SSL](mssl-replication.md)
-   + [Replicatie van problemen oplossen](troubleshoot-rep.md)
-   + [Aflopen van statische objecten](expiration-static-objects.md)
-   + [Versieopruiming](version-purging.md)
-   + [Uw AEM-exemplaar controleren en onderhouden](monitoring-and-maintaining.md)
-   + [Offloadtaken](offloading.md)
-   + [Eenmalige aanmelding ingeschakeld](single-sign-on.md)
-   + [Toewijzing van bronnen](resource-mapping.md)
-   + [Het toelaten van HTTP over SSL](/help/sites-administering/ssl-by-default.md)
-   + [Consistentie en reiscontroles](consistency-check.md)
+   + [Repliceren met wederzijdse SSL](mssl-replication.md)
+   + [Problemen met replicatie oplossen](troubleshoot-rep.md)
+   + [Verlopen van statische objecten](expiration-static-objects.md)
+   + [Versie leegmaken](version-purging.md)
+   + [Uw AEM-instantie bewaken en onderhouden](monitoring-and-maintaining.md)
+   + [Taken verschuiven](offloading.md)
+   + [Single Sign On](single-sign-on.md)
+   + [Brontoewijzing](resource-mapping.md)
+   + [HTTP via SSL inschakelen](/help/sites-administering/ssl-by-default.md)
+   + [Consistentie- en reiscontroles](consistency-check.md)
    + [Richtlijnen voor prestaties](performance-guidelines.md)
-   + [Optimalisering van prestaties](configuring-performance.md)
-   + [Prestatiehandleiding voor bedrijfsmiddelen](assets-performance-sizing.md)
-   + [De hoe te Artikelen van de configuratie](ht-deploy.md)
+   + [Optimalisatie van prestaties](configuring-performance.md)
+   + [Prestatiehandleiding voor middelen](assets-performance-sizing.md)
+   + [Hoe kan ik-artikelen configureren](ht-deploy.md)
    + [Webconsole configureren](configuring-web-console.md)
-+ Upgrade naar AEM 6.5 {#upgrading}
-   + [Upgrade naar AEM 6.5](upgrade.md)
++ Upgrade uitvoeren naar AEM 6.5 {#upgrading}
+   + [Upgrade uitvoeren naar AEM 6.5](upgrade.md)
    + [Uw upgrade plannen](upgrade-planning.md)
-   + [Het beoordelen van de Complexiteit van de Verbetering met de Detector van het Patroon](pattern-detector.md)
-   + [Achterwaartse Verenigbaarheid in AEM 6.5](backward-compatibility.md)
+   + [De complexiteit van upgrades beoordelen met de patroondetector](pattern-detector.md)
+   + [Achterwaartse compatibiliteit in AEM 6.5](backward-compatibility.md)
    + [Upgradeprocedure](upgrade-procedure.md)
-   + [Een in-place upgrade uitvoeren](in-place-upgrade.md)
+   + [Een op locatie uitgevoerde upgrade uitvoeren](in-place-upgrade.md)
    + [Lazy Content Migration](lazy-content-migration.md)
-   + [Het CRX2Oak-migratiehulpmiddel gebruiken](using-crx2oak.md)
+   + [Het CRX2Oak-migratiehulpprogramma gebruiken](using-crx2oak.md)
    + [Onderhoudstaken vóór upgrade](pre-upgrade-maintenance-tasks.md)
    + [Controles en probleemoplossing na upgrade](post-upgrade-checks-and-troubleshooting.md)
-   + [De bevorderende Vormen van het Onderzoek van de Douane](upgrading-custom-search-forms.md)
+   + [Aangepaste zoekformulieren bijwerken](upgrading-custom-search-forms.md)
    + [Duurzame verbeteringen](sustainable-upgrades.md)
    + [Code en aanpassingen bijwerken](upgrading-code-and-customizations.md)
-   + [De Stappen van de verbetering voor de Installaties van de Server van de Toepassing](app-server-upgrade.md)
-   + [Lijst van verouderde bundels die na de Verbetering worden verwijderd](obsolete-bundles.md)
-+ Herstructurering van de opslagplaats {#restructuring}
+   + [Upgradestappen voor installatie van toepassingsservers](app-server-upgrade.md)
+   + [Lijst met verouderde bundels die na de upgrade zijn verwijderd](obsolete-bundles.md)
++ Repositoregeling {#restructuring}
    + [Repositoregeling herstructurering in AEM 6.5](repository-restructuring.md)
    + [Herstructurering van de gemeenschappelijke opslagplaats in AEM 6.5](all-repository-restructuring-in-aem-6-5.md)
-   + [Herstructurering vestigingen in AEM 6.5](sites-repository-restructuring-in-aem-6-5.md)
-   + [Herstructurering van de vermogensbestanddelen van AEM 6.5](assets-repository-restructuring-in-aem-6-5.md)
-   + [Dynamic Media Repository Restructuring in AEM 6.5](dynamicmedia-repository-restructuring-in-aem-6-5.md)
-   + [Forms Repository Restructuring in AEM 6.5](forms-repository-restructuring-in-aem-6-5.md)
-   + [Herstructurering van de opslagplaats voor de elektronische handel in AEM 6.5](ecommerce-repository-restructuring-in-aem-6-5.md)
-   + [Repositoregeling herstructurering voor AEM-gemeenschappen in 6.5](communities-repository-restructuring-in-aem-6-5.md)
+   + [Sites Repositoregeling Herstructurering AEM 6.5](sites-repository-restructuring-in-aem-6-5.md)
+   + [Herstructurering van activa Bewaarinstelling in AEM 6.5](assets-repository-restructuring-in-aem-6-5.md)
+   + [Herstructurering van de Dynamic Media in AEM 6.5](dynamicmedia-repository-restructuring-in-aem-6-5.md)
+   + [Forms Repository Herstructurering in AEM 6.5](forms-repository-restructuring-in-aem-6-5.md)
+   + [Herstructurering van de opslagplaats voor elektronische handel in AEM 6.5](ecommerce-repository-restructuring-in-aem-6-5.md)
+   + [Herstructurering van de opslagplaats voor AEM Communities in punt 6.5](communities-repository-restructuring-in-aem-6-5.md)
 + eCommerce {#ecommerce}
-   + [Overzicht van eCommerce](ecommerce.md)
+   + [Overzicht eCommerce](ecommerce.md)
    + [SAP Commerce Cloud](sap-commerce-cloud.md)
-   + [Cloud van de Handel van Salesforce](https://github.com/adobe/commerce-salesforce)
+   + [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
    + [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
-+ Beste praktijken {#practices}
++ Best practices voor {#practices}
    + [Best practices implementeren](best-practices.md)
    + [Prestatieschema](performance-tree.md)
-   + [Best practices voor prestatietests](best-practices-for-performance-testing.md)
+   + [Best practices voor het testen van prestaties](best-practices-for-performance-testing.md)
    + [Beste praktijken voor Vragen en het Indexeren](best-practices-for-queries-and-indexing.md)
    + [Aanbevelingen voor gebruikersinterface voor klanten](ui-recommendations.md)
    + [Prestaties en schaalbaarheid](performance.md)

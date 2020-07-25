@@ -3,11 +3,12 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: Handleiding voor auteur AEM 6.5
+user-guide-description: Learn key concepts for creating content and authoring in AEM.
 translation-type: tm+mt
-source-git-commit: af27ed32c21a338600201e05871c1b18548ecba6
+source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
 workflow-type: tm+mt
 source-wordcount: '273'
-ht-degree: 40%
+ht-degree: 41%
 
 ---
 
@@ -41,7 +42,7 @@ ht-degree: 40%
    + [Een pagina ontwerpen voor mobiele apparaten](mobile.md)
    + [AEM-probleem bij ontwerpen oplossen](troubleshooting.md)
    + [Sneltoetsen bij het bewerken van pagina&#39;s](page-authoring-keyboard-shortcuts.md)
-   + [Aanbevolen werkwijzen](best-practices.md)
+   + [Best practices voor](best-practices.md)
 + Site- en paginafuncties {#siteandpage}
    + [Tags gebruiken](tags.md)
    + [Paginasjablonen maken](templates.md)
@@ -56,7 +57,7 @@ ht-degree: 40%
    + [Componenten configureren in ontwerpmodus](default-components-designmode.md)
    + [Elementaire componenten](default-components-foundation.md)
    + [Basisstructuur](scaffolding.md)
-   + [Gegevens van paginaanalyse bekijken](page-analytics-using.md)
+   + [Analytics-gegevens pagina bekijken](page-analytics-using.md)
 + Projecten {#projects}
    + [Projecten](projects.md)
    + [Projecten beheren](touch-ui-managing-projects.md)
@@ -76,8 +77,8 @@ ht-degree: 40%
 + Paginaprestaties {#page-performance}
    + [Inhoudsinzicht](content-insights.md)
    + [Paginaprestaties analyseren](ci-analyze.md)
-   + [Gegevens van paginaanalyse bekijken](pa-using.md)
-   + [Functies voor zoeken en promoten aan uw pagina toevoegen](search-and-promote.md)
+   + [Analytics-gegevens pagina bekijken](pa-using.md)
+   + [Search&amp;Promote toevoegen aan uw pagina](search-and-promote.md)
 + Personalisatie {#personalization}
    + [Personalisatie](personalization.md)
    + [Pagina&#39;s voorvertonen met ContextHub-gegevens](ch-previewing.md)
@@ -88,9 +89,9 @@ ht-degree: 40%
    + [Audiences beheren](managing-audiences.md)
    + [Aanbiedingen maken en beheren](offerlib.md)
    + [Inzicht in segmentering](segmentation-overview.md)
-+ AEM- en Adobe-campagne {#aem-adobe-campaign}
-   + [Werken met Adobe-campagne](adobe-campaign.md)
-   + [Werken met Adobe Campagne Classic en Adobe Campagne Standard](campaign.md)
-   + [Adobe-campagne als doel instellen](target-adobe-campaign.md)
-   + [Adobe Campagneformulieren maken in AEM](adobe-campaign-forms.md)
-   + [Adobe-campagnecomponenten](adobe-campaign-components.md)
++ AEM en Adobe Campaign {#aem-adobe-campaign}
+   + [Werken met Adobe Campaign](adobe-campaign.md)
+   + [Werken met Adobe Campaign Classic en Adobe Campaign Standard](campaign.md)
+   + [Je Adobe Campaign als doelgroep instellen](target-adobe-campaign.md)
+   + [Adobe Campaign-formulieren maken in AEM](adobe-campaign-forms.md)
+   + [Adobe Campaign-componenten](adobe-campaign-components.md)

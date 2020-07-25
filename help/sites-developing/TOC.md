@@ -3,8 +3,9 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.5 Handboek voor het ontwikkelen van gebruikers
+user-guide-description: This guide covers how to build out your AEM instance.
 translation-type: tm+mt
-source-git-commit: 62be4d88f6ed3df68a77a4b61f7e113bdf03002d
+source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
 workflow-type: tm+mt
 source-wordcount: '821'
 ht-degree: 6%
@@ -16,7 +17,7 @@ ht-degree: 6%
 
 + [Overzicht van de gebruikershandleiding voor ontwikkeling](home.md)
 + Inleiding voor ontwikkelaars{#introduction}
-   + [Aan de slag met het ontwikkelen van AEM Sites - WKND-zelfstudie](getting-started.md)
+   + [Aan de slag met het ontwikkelen van AEM Sites - WKND-tutorial](getting-started.md)
    + [AEM Core Concepts](the-basics.md)
    + [Structuur van de interface voor AEM-aanraking](touch-ui-structure.md)
    + [Concepten van de interface voor AEM-aanraakfuncties](touch-ui-concepts.md)
@@ -34,7 +35,7 @@ ht-degree: 6%
    + [Migratie naar de aanraakinterface](/help/sites-developing/touch-ui-migration.md)
 + Platform{#platform}
    + [Sling Cheatsheet](sling-cheatsheet.md)
-   + [Sling Adapters gebruiken](sling-adapters.md)
+   + [Sling Adapters](sling-adapters.md)
    + [Tagbibliotheken](taglib.md)
    + Sjablonen{#templates}
       + [Sjablonen](templates.md)
@@ -151,8 +152,8 @@ ht-degree: 6%
    + [De consoles aanpassen](customizing-consoles-touch.md)
    + [Weergaven van pagina-eigenschappen aanpassen](page-properties-views.md)
    + [Pagina configureren voor Bulk bewerken van pagina-eigenschappen](bulk-editing.md)
-   + [Inhoudsfragmenten aanpassen en uitbreiden](customizing-content-fragments.md)
-   + [Inhoudsfragmenten die componenten voor rendering configureren](content-fragments-config-components-rendering.md)
+   + [Contentfragmenten aanpassen en uitbreiden](customizing-content-fragments.md)
+   + [Contentfragmenten die componenten voor rendering configureren](content-fragments-config-components-rendering.md)
    + [Ervaringsfragmenten](experience-fragments.md)
    + Werkstromen uitbreiden{#extending-workflows}
       + [Workflows ontwikkelen en uitbreiden](workflows.md)

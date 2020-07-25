@@ -2,9 +2,13 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.5 Classic UI Authoring User Guide
+user-guide-title: AEM 6.5 Klassieke UI Authoring User Guide
+user-guide-description: This guide covers the concepts of authoring in AEM in the classic user interface.
 translation-type: tm+mt
-source-git-commit: c34993650bbd309b036085abfae4f7db547c7104
+source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+workflow-type: tm+mt
+source-wordcount: '266'
+ht-degree: 21%
 
 ---
 
@@ -32,7 +36,7 @@ source-git-commit: c34993650bbd309b036085abfae4f7db547c7104
    + [Pagina-eigenschappen bewerken](classic-page-author-edit-page-properties.md)
    + [Annotaties bij het bewerken van een pagina](classic-page-author-annotations.md)
    + [AEM-probleem bij ontwerpen oplossen](classic-page-author-troubleshooting.md)
-   + [Toegankelijke inhoud maken (WCAG 2.0-compatibiliteit)](classic-page-author-accessible-content.md)
+   + [Toegankelijke content maken (WCAG 2.0-compatibiliteit)](classic-page-author-accessible-content.md)
    + [Een pagina ontwerpen voor mobiele apparaten](classic-feature-mobile.md)
    + [Componenten voor paginaontwerp](classic-page-author-edit-mode.md)
    + [Sneltoetsen bij het bewerken van pagina&#39;s](classic-page-author-keyboard-shortcuts.md)
@@ -43,7 +47,7 @@ source-git-commit: c34993650bbd309b036085abfae4f7db547c7104
    + [Tags gebruiken](classic-feature-tags.md)
    + [Basisstructuur](classic-feature-scaffolding.md)
    + [Componenten configureren in ontwerpmodus](classic-page-author-design-mode.md)
-   + [Functies voor zoeken en promoten aan uw pagina toevoegen](classic-feature-search-promote.md)
+   + [Search&amp;Promote toevoegen aan uw pagina](classic-feature-search-promote.md)
    + [Onderdelen](classic-page-author-default-components.md)
 + Workflows {#workflows}
    + [Deelnemen aan workflows](classic-workflows-participating.md)
@@ -59,7 +63,7 @@ source-git-commit: c34993650bbd309b036085abfae4f7db547c7104
    + [Campagnebeheer](classic-personalization-campaigns.md)
    + [Teasers en strategieën](classic-personalization-campaigns-teasers-strategy.md)
    + [Openingspagina&#39;s](classic-personalization-campaigns-landingpage.md)
-   + [Doelaanbiedingen](classic-personalization-campaigns-target-offers.md)
+   + [Target-aanbiedingen](classic-personalization-campaigns-target-offers.md)
    + [Werken met de manager van de Campagne van de Marketing](classic-personalization-campaigns-mktg-manager.md)
    + [E-mailmarketing](classic-personalization-campaigns-email.md)
    + [Onbetaalde e-mails bijhouden](classic-personalization-campaigns-email-tracking-bounces.md)
@@ -69,16 +73,16 @@ source-git-commit: c34993650bbd309b036085abfae4f7db547c7104
    + [Werken met de manager van de Campagne van de Marketing](classic-personalization-campaigns-mktg-manager.md)
    + [Een effectieve openingspagina voor nieuwsbrieven maken](classic-personalization-campaigns-email-landingpage.md)
    + [Abonnementen beheren](classic-personalization-campaigns-email-subscriptions.md)
-+ Adobe-campagne {#campaign}
-   + [Werken met Adobe Campagne 6.1 en Adobe Campaign Standard](classic-personalization-ac-campaign.md)
-   + [Werken met Adobe-campagne](classic-personalization-ac.md)
-   + [Adobe-campagnecomponenten](classic-personalization-ac-components.md)
-   + [Adobe-campagne als doel instellen](classic-personalization-ac-target.md)
-   + [Adobe Campagneformulieren maken in AEM](classic-personalization-ac-forms.md)
++ Adobe Campaign {#campaign}
+   + [Werken met Adobe Campaign 6.1 en Adobe Campaign Standard](classic-personalization-ac-campaign.md)
+   + [Werken met Adobe Campaign](classic-personalization-ac.md)
+   + [Adobe Campaign-componenten](classic-personalization-ac-components.md)
+   + [Je Adobe Campaign als doelgroep instellen](classic-personalization-ac-target.md)
+   + [Adobe Campaign-formulieren maken in AEM](classic-personalization-ac-forms.md)
 + Elementen ontwerpen in klassieke gebruikersinterface {#assets}
    + [Werken met elementen](classicui-assets.md)
-   + [Dynamische media-elementen leveren](dynamic-media-assets-delivering.md)
-   + [Dynamische media-elementen toevoegen aan pagina&#39;s](dynamic-media-assets-adding-to-page.md)
+   + [Dynamic Media-elementen leveren](dynamic-media-assets-delivering.md)
+   + [Dynamic Media-elementen toevoegen aan pagina&#39;s](dynamic-media-assets-adding-to-page.md)
    + [Het toevoegen van Eigenschappen Scene7 aan uw Pagina](manage-assets-classic-s7.md)
    + [Video](manage-assets-classic-s7-video.md)
    + [Werken met Dynamic Media](dynamic-media-assets.md)

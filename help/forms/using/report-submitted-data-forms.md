@@ -1,22 +1,25 @@
 ---
 title: API's voor het werken met verzonden formulieren op een formulierportal
 seo-title: API's voor het werken met verzonden formulieren op een formulierportal
-description: AEM Forms biedt API's die u kunt gebruiken om query's uit te voeren en acties uit te voeren voor verzonden formuliergegevens in de portal Formulieren.
-seo-description: AEM Forms biedt API's die u kunt gebruiken om query's uit te voeren en acties uit te voeren voor verzonden formuliergegevens in de portal Formulieren.
+description: AEM Forms bevatten API's waarmee u gegevens over verzonden formulieren in de portal Formulieren kunt opvragen en acties kunt uitvoeren.
+seo-description: AEM Forms bevatten API's waarmee u gegevens over verzonden formulieren in de portal Formulieren kunt opvragen en acties kunt uitvoeren.
 uuid: c47c8392-e5a9-4c40-b65e-4a7f379a6b45
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: developer-reference
 discoiquuid: 9457effd-3595-452f-a976-ad9eda6dc909
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '570'
+ht-degree: 5%
 
 ---
 
 
 # API&#39;s voor het werken met verzonden formulieren op een formulierportal {#apis-to-work-with-submitted-forms-on-forms-portal}
 
-AEM Forms biedt API&#39;s die u kunt gebruiken voor het zoeken naar formuliergegevens die via de portal Formulieren worden verzonden. Bovendien kunt u opmerkingen plaatsen of eigenschappen van verzonden formulieren bijwerken met de API&#39;s die in dit document worden beschreven.
+AEM Forms bevatten API&#39;s die u kunt gebruiken voor het zoeken naar formuliergegevens die via de portal Formulieren worden verzonden. Bovendien kunt u opmerkingen plaatsen of eigenschappen van verzonden formulieren bijwerken met de API&#39;s die in dit document worden beschreven.
 
 >[!NOTE]
 >
@@ -34,7 +37,7 @@ Voor deze API zijn geen aanvullende parameters vereist.
 
 Het reactieobject bevat een JSON-array die formuliernamen en het pad naar de opslagplaats bevat. De structuur van de respons is als volgt:
 
-```
+```json
 [
  {formName: "<form name>",
  formPath: "<path to the form>" },
@@ -46,13 +49,13 @@ Het reactieobject bevat een JSON-array die formuliernamen en het pad naar de ops
 
 **Aanvraag-URL**
 
-```
+```http
 https://[host]:[port]/content/forms/portal/submission.review.json?func=getFormsForSubmissionReview
 ```
 
 **Antwoord**
 
-```java
+```json
 [{"formPath":"/content/dam/formsanddocuments/forms-review/form2","formName":"form2"},{"formPath":"/content/dam/formsanddocuments/forms-review/form1","formName":"form1"}]
 ```
 
@@ -105,7 +108,7 @@ Geef de volgende parameters op in de aanvraag-URL:
 
 Het reactieobject bevat een JSON-array die details van de opgegeven formulieren bevat. De structuur van de respons is als volgt:
 
-```
+```json
 {
  total: "<total number of submissions>",
  items: [{ formName: "<name of the form>", formPath: "<path to the form>", owner: "<owner of the form>"},
@@ -116,13 +119,13 @@ Het reactieobject bevat een JSON-array die details van de opgegeven formulieren 
 
 **Aanvraag-URL**
 
-```
+```http
 https://[host]:[port]/content/forms/portal/submission.review.json?func=getAllSubmissions&formPath=/content/dam/formsanddocuments/forms-review/form2
 ```
 
 **Antwoord**
 
-```java
+```json
 {"total":1,"items":[{"formName":"form2","formPath":"/content/dam/formsanddocuments/forms-review/form2","submitID":"1403037413508500","formType":"af","jcr:lastModified":"2015-11-05T17:52:32.243+05:30","owner":"admin"}]}
 ```
 
@@ -147,7 +150,7 @@ Retourneert een opmerking-id bij het plaatsen van een opmerking.
 
 **Aanvraag-URL**
 
-```
+```http
 https://[host:'port'/content/forms/portal/submission.review.json?func=addComment&submitID=1403037413508500&comment=API+test+comment
 ```
 
@@ -157,7 +160,7 @@ https://[host:'port'/content/forms/portal/submission.review.json?func=addComment
 1403873422601300
 ```
 
-## GET /content/forms/portal/submission.review.json?func=getComments {#get-content-forms-portal-submission-review-json-func-getcomments-nbsp}
+## GET /content/forms/portal/submission.review.json?func=getComments   {#get-content-forms-portal-submission-review-json-func-getcomments-nbsp}
 
 Retourneert alle opmerkingen die op het opgegeven verzendexemplaar zijn geplaatst.
 
@@ -173,7 +176,7 @@ Geef de volgende parameter op in de aanvraag-URL:
 
 Het reactieobject bevat een JSON-array die alle opmerkingen bevat die aan de opgegeven verzendings-id zijn gekoppeld. De structuur van de respons is als volgt:
 
-```
+```json
 [{
  owner: "<name of the commenter>",
  comment: "<comment text>",
@@ -185,7 +188,7 @@ Het reactieobject bevat een JSON-array die alle opmerkingen bevat die aan de opg
 
 **Aanvraag-URL**
 
-```
+```http
 https://[host]:'port'/content/forms/portal/submission.review.json?func=getComments&submitID=1403037413508500
 ```
 
@@ -217,13 +220,13 @@ Retourneert een JSON-object met informatie over de geposte update.
 
 **Aanvraag-URL**
 
-```
+```http
 https://[host]:'port'/content/forms/portal/submission.review.json?func=updateSubmission&submitID=1403037413508500&value=sample_value&property=some_new_prop
 ```
 
 **Antwoord**
 
-```java
+```json
 {"formName":"form2","owner":"admin","jcr:lastModified":1446727516593,"path":"/content/forms/fp/admin/submit/metadata/1403037413508500.html","submitID":"1403037413508500","status":"submitted"}
 ```
 

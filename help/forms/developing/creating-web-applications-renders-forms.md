@@ -11,7 +11,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: f29b089e-8902-4744-81c5-15ee41ba8069
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1831'
+ht-degree: 0%
 
 ---
 
@@ -56,7 +59,7 @@ waarbij &lt;*install directory*> het installatiepad is. Ten behoeve van de clien
 
 Als u toegang wilt krijgen tot het formulierontwerp Purchase Order Dynamic.xdp, geeft u `Applications/FormsApplication/1.0/FormsFolder/Purchase Order Dynamic.xdp` de naam van het formulier op (de eerste parameter die aan de `renderPDFForm` methode is doorgegeven) en `repository:///` de URI-waarde van de basisinhoud.
 
-De XML-gegevensbestanden die door de webtoepassing worden gebruikt, zijn verplaatst van de map Data naar `C:\Adobe`(het bestandssysteem dat hoort bij de J2EE-toepassingsserver die als host fungeert voor AEM-formulieren). De bestandsnamen zijn Purchase Order *Canada.xml* en Purchase Order *US.xml*.
+De XML-gegevensbestanden die door de webtoepassing worden gebruikt, zijn verplaatst van de map Data naar `C:\Adobe`(het bestandssysteem dat hoort bij de J2EE-toepassingsserver die als host fungeert voor AEM Forms). De bestandsnamen zijn Purchase Order *Canada.xml* en Purchase Order *US.xml*.
 
 >[!NOTE]
 >
@@ -75,7 +78,7 @@ Voer de volgende stappen uit om een webtoepassing te maken die formulieren weerg
 
 >[!NOTE]
 >
->Sommige van deze stappen zijn afhankelijk van de J2EE-toepassing waarop AEM Forms is geïmplementeerd. De methode die u bijvoorbeeld gebruikt om een WAR-bestand te implementeren, is afhankelijk van de J2EE-toepassingsserver die u gebruikt. In deze sectie wordt ervan uitgegaan dat AEM Forms wordt geïmplementeerd op JBoss®.
+>Sommige van deze stappen hangen van de toepassing J2EE af waarop AEM Forms wordt opgesteld. De methode die u bijvoorbeeld gebruikt om een WAR-bestand te implementeren, is afhankelijk van de J2EE-toepassingsserver die u gebruikt. In deze sectie wordt ervan uitgegaan dat AEM Forms worden geïmplementeerd op JBoss®.
 
 ### Een webproject maken {#creating-a-web-project}
 
@@ -122,7 +125,7 @@ Zie [Including AEM Forms Java library files](/help/forms/developing/invoking-aem
 
 U maakt Java-toepassingslogica waarmee de service Forms wordt geactiveerd vanuit het Java-servlet. De volgende code toont de syntaxis van `RenderFormFragment` Java Servlet:
 
-```as3
+```java
      public class RenderFormFragment extends HttpServlet implements Servlet {
          public void doGet(HttpServletRequest req, HttpServletResponse resp
          throws ServletException, IOException {
@@ -145,7 +148,7 @@ Als u een formulier wilt genereren op basis van fragmenten met de API van de For
 1. Maak een `FormsServiceClient` object door de constructor ervan te gebruiken en het `ServiceClientFactory` object door te geven.
 1. Maak een `URLSpec` object dat URI-waarden opslaat met de constructor ervan.
 1. Roep de `URLSpec` methode van het `setApplicationWebRoot` object aan en geef een tekenreekswaarde door die de hoofdmap van de toepassing vertegenwoordigt.
-1. Roep de `URLSpec` methode van het `setContentRootURI` object aan en geef een tekenreekswaarde door die de URI-waarde van de inhoudshoofdmap opgeeft. Zorg ervoor dat het formulierontwerp en de fragmenten zich in de URI van de inhoudsbasis bevinden. Als niet, werpt de dienst van Vormen een uitzondering. Geef op om naar de gegevensopslagruimte van AEM-formulieren te verwijzen. `repository://`.
+1. Roep de `URLSpec` methode van het `setContentRootURI` object aan en geef een tekenreekswaarde door die de URI-waarde van de inhoudshoofdmap opgeeft. Zorg ervoor dat het formulierontwerp en de fragmenten zich in de URI van de inhoudsbasis bevinden. Als niet, werpt de dienst van Vormen een uitzondering. Geef een verwijzing op naar de gegevensopslagruimte van AEM Forms `repository://`.
 1. Roep de `URLSpec` methode van het `setTargetURL` object aan en geef een tekenreekswaarde door die de doel-URL-waarde opgeeft waarnaar formuliergegevens worden gepost. Als u de doel-URL in het formulierontwerp definieert, kunt u een lege tekenreeks doorgeven. U kunt ook de URL opgeven waarnaar een formulier wordt verzonden om berekeningen uit te voeren.
 1. Roep de methode van het `FormsServiceClient` `renderPDFForm` object aan en geef de volgende waarden door:
 
@@ -154,6 +157,7 @@ Als u een formulier wilt genereren op basis van fragmenten met de API van de For
    * Een `PDFFormRenderSpec` object dat uitvoeringsopties opslaat. Zie [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)voor meer informatie.
    * Een `URLSpec` object dat URI-waarden bevat die vereist zijn voor de Forms-service om een formulier te genereren op basis van fragmenten.
    * Een `java.util.HashMap` object dat bestandsbijlagen opslaat. Dit is een optionele parameter en u kunt opgeven `null` of u geen bestanden aan het formulier wilt koppelen.
+
    De `renderPDFForm` methode retourneert een `FormsResult` object dat een formuliergegevensstroom bevat die naar de webbrowser van de client moet worden geschreven.
 
 1. Maak een `com.adobe.idp.Document` object door de `FormsResult` methode van het `getOutputContent` object aan te roepen.
@@ -166,7 +170,7 @@ Als u een formulier wilt genereren op basis van fragmenten met de API van de For
 
 In het volgende codevoorbeeld ziet u het Java-servlet dat de service Forms aanroept en een formulier genereert op basis van fragmenten.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -307,7 +311,7 @@ De webpagina index.html biedt een ingangspunt voor de Java-server en roept de se
 
 De Java-servlet legt de gegevens vast die vanuit de HTML-pagina zijn gepost met de volgende Java-code:
 
-```as3
+```java
              Document oInputData = null;
  
              //Get the value of selected radio button
@@ -327,7 +331,7 @@ De Java-servlet legt de gegevens vast die vanuit de HTML-pagina zijn gepost met 
 
 De volgende HTML-code bevindt zich in het bestand index.html dat tijdens de installatie van de ontwikkelomgeving is gemaakt. (Zie [Een webproject](/help/forms/developing/rendering-forms.md#creating-a-web-project)maken.)
 
-```as3
+```xml
  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
  <html xmlns="https://www.w3.org/1999/xhtml">
  <head>
@@ -379,7 +383,7 @@ Als u de Java-servlet wilt implementeren die de service Forms aanroept, moet u u
 
 ### WAR-bestand implementeren op de J2EE-toepassingsserver {#deploying-the-war-file-to-the-j2ee-application-server}
 
-U kunt het WAR-bestand implementeren op de J2EE-toepassingsserver waarop AEM Forms is geïmplementeerd. Nadat het WAR-bestand is geïmplementeerd, kunt u de HTML-webpagina openen met een webbrowser.
+U kunt het dossier van WAR aan de J2EE toepassingsserver opstellen waarop AEM Forms wordt opgesteld. Nadat het WAR-bestand is geïmplementeerd, kunt u de HTML-webpagina openen met een webbrowser.
 
 **Het WAR-bestand implementeren op de J2EE-toepassingsserver:**
 
@@ -387,7 +391,7 @@ U kunt het WAR-bestand implementeren op de J2EE-toepassingsserver waarop AEM For
 
 ### Uw webtoepassing testen {#testing-your-web-application}
 
-Nadat u de webtoepassing hebt geïmplementeerd, kunt u deze testen met een webbrowser. Ervan uitgaande dat u dezelfde computer gebruikt als die waarop AEM Forms wordt gehost, kunt u de volgende URL opgeven:
+Nadat u de webtoepassing hebt geïmplementeerd, kunt u deze testen met een webbrowser. Ervan uitgaande dat u dezelfde computer gebruikt als die waarop AEM Forms worden gehost, kunt u de volgende URL opgeven:
 
 * http://localhost:8080/FragmentsWebApplication/index.html
 

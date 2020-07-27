@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fc418da9-496f-4a2b-bfe4-2add3ac4f468
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: bd70508b361ac8b62ebc0344538a18369a075f3e
+workflow-type: tm+mt
+source-wordcount: '2301'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
 
 Het gebruik van tabellen is een effectieve, vereenvoudigde en georganiseerde manier om complexe gegevens weer te geven. Het helpt gebruikers bij het gemakkelijk identificeren van informatie en het verstrekken van input in een geordende regeling van rijen en kolommen. De meeste vormen van financiële diensten en overheidsorganisaties vereisen grote gegevenslijsten om aantallen te zetten en berekeningen uit te voeren.
 
-Met AEM Forms wordt in de zijbalk in de browser met componenten een tabelcomponent weergegeven waarmee u tabellen in adaptieve formulieren kunt maken. Enkele belangrijke mogelijkheden zijn:
+AEM Forms bevat een component Tabel in de deelvensterbrowser in het zijpaneel, waarmee u tabellen kunt maken in adaptieve formulieren. Enkele belangrijke mogelijkheden zijn:
 
 * Responsieve lay-out op mobiele apparaten
 * Configureerbare rijen en kolommen
@@ -88,9 +91,9 @@ Als u sortering wilt toepassen op tabelkolommen, moeten de cellen in de tabelkol
 
 Sorteren inschakelen:
 
-1. Selecteer de tabel en tik op ![](assets/configure_icon.png) (Configureren). U kunt de lijst ook selecteren gebruikend browser van de **Inhoud** in de knoop van de Interactieve Mededeling.
+1. Selecteer de lijst en tik ![configure_icon](assets/configure_icon.png) (vorm). U kunt de lijst ook selecteren gebruikend browser van de **Inhoud** in de knoop van de Interactieve Mededeling.
 1. Selecteer Sorteren **inschakelen**.
-1. Tik ![](assets/done_icon.png) om de tabeleigenschappen op te slaan. De sorteerpictogrammen, pijlen omhoog en omlaag, in kolomkoppen geven aan dat het sorteren is ingeschakeld.
+1. Tik op ![done_icon](assets/done_icon.png) om de tabeleigenschappen op te slaan. De sorteerpictogrammen, pijlen omhoog en omlaag, in kolomkoppen geven aan dat het sorteren is ingeschakeld.
 
    ![Sorteren inschakelen](assets/enable_sorting_new.png)
 
@@ -118,7 +121,7 @@ De opmaakeigenschappen worden weergegeven in het zijpaneel.
 
 >[!NOTE]
 >
->U kunt het kleurthema voor koptekst- en tekstrijen wijzigen door de waarden van LESS-variabelen te wijzigen. Zie [Thema&#39;s in AEM-formulieren](/help/forms/using/themes.md) voor meer informatie [](/help/forms/using/creating-custom-adaptive-form-themes.md).
+>U kunt het kleurthema voor koptekst- en tekstrijen wijzigen door de waarden van LESS-variabelen te wijzigen. Zie [Thema&#39;s in AEM Forms](/help/forms/using/themes.md) voor meer informatie [](/help/forms/using/creating-custom-adaptive-form-themes.md).
 
 ## Een rij dynamisch toevoegen of verwijderen {#add-or-delete-a-row-dynamically}
 
@@ -160,7 +163,7 @@ Zie de API-naslaggids voor [JavaScript-bibliotheken voor adaptieve formulieren](
 
 ## Mobiele lay-outs {#mobile-layouts}
 
-Tabellen in adaptieve formulieren bieden ongeëvenaarde beleving van mobiele apparaten vanwege hun dynamische en responsieve lay-outs. AEM Forms biedt twee typen mobiele lay-outs voor tabellen: kopteksten aan de linkerkant en Inklapbare kolommen.
+Tabellen in adaptieve formulieren bieden ongeëvenaarde beleving van mobiele apparaten vanwege hun dynamische en responsieve lay-outs. AEM Forms bieden twee typen mobiele lay-outs voor tabellen: kopteksten aan de linkerkant en Inklapbare kolommen.
 
 U kunt een mobiele lay-out voor een lijst van het Stijllusje van het Edit componentendialoogvenster voor een lijst vormen.
 
@@ -196,7 +199,7 @@ Uitgebreide kolom van een tabel op een mobiel apparaat
 
 ## Gegevens in een tabel samenvoegen {#merge-data-in-a-table}
 
-Met tabellen in adaptieve formulieren kunt u de tabel tijdens runtime vullen met gegevens uit een XML-bestand. Het XML-bestand met gegevens kan zich bevinden in het lokale bestandssysteem van de computer waarop de AEM Forms-server wordt uitgevoerd of in de CRX-opslagruimte.
+Met tabellen in adaptieve formulieren kunt u de tabel tijdens runtime vullen met gegevens uit een XML-bestand. Het XML-bestand met gegevens kan zich bevinden in het lokale bestandssysteem van de computer waarop de AEM Forms-server wordt uitgevoerd of in de CRX-opslagplaats.
 
 Neem bijvoorbeeld de volgende overzichtstabel met banktransacties die we willen vullen met gegevens uit een XML-bestand.
 

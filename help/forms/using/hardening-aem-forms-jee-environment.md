@@ -9,7 +9,7 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 translation-type: tm+mt
-source-git-commit: 9e1d77b8696436b392f0d9209ddcb2c9196f3c09
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '7698'
 ht-degree: 0%
@@ -218,7 +218,7 @@ De Manager van de configuratie maakte gebruik van servlet die op uw toepassingss
 1. Open het bestand META-INF/application.xml.
 1. Zoek naar de adobe-bootstrapper.war sectie:
 
-   ```as3
+   ```java
    <!-- bootstrapper start --> 
    <module id="WebApp_adobe_bootstrapper"> 
        <web> 
@@ -238,7 +238,7 @@ De Manager van de configuratie maakte gebruik van servlet die op uw toepassingss
 1. Stop de server van AEM Forms.
 1. Maak een commentaarregel van adobe-bootstrapper.war en de adobe-lcm-bootstrapper-redirectory. oorlogsmodules, als hieronder:
 
-   ```as3
+   ```java
    <!-- bootstrapper start --> 
    <!-- 
    <module id="WebApp_adobe_bootstrapper"> 
@@ -280,7 +280,7 @@ Wanneer AEM Forms op JEE worden geïnstalleerd, wordt één enkel standaardgebru
 
 1. Typ de volgende URL in een webbrowser:
 
-   ```as3
+   ```java
    https://[host name]:[port]/adminui
    ```
 
@@ -313,7 +313,7 @@ De generatie van de Definitie van de Taal van de Dienst van het Web (WSDL) zou s
 
 1. Typ de volgende URL in een webbrowser:
 
-   ```as3
+   ```java
    https://[host name]:[port]/adminui
    ```
 
@@ -357,7 +357,7 @@ Bij Oracle heeft de databaseaccount die u gebruikt alleen de bevoegdheden CONNEC
 
 1. Wijzig [JBOSS_HOME]\\standalone\configuration\lc_{datasource.xml} om `integratedSecurity=true` aan verbindingsURL, zoals aangetoond in dit voorbeeld toe te voegen:
 
-   ```as3
+   ```java
     jdbc:sqlserver://<serverhost>:<port>;databaseName=<dbname>;integratedSecurity=true
    ```
 
@@ -369,7 +369,7 @@ Bij Oracle heeft de databaseaccount die u gebruikt alleen de bevoegdheden CONNEC
 
 1. Start de WebLogic Server Administration Console door de volgende URL te typen in de URL-regel van een webbrowser:
 
-   ```as3
+   ```java
    https://[host name]:7001/console
    ```
 
@@ -730,7 +730,7 @@ Gebruik de lijst ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** voor de Uitzonderinge
 
 De lijst-id ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** wordt gedefinieerd als een constante in de `UMConstants` klasse van de `com.adobe.idp.um.api` naamruimte, gevonden in `adobe-usermanager-client.jar`. U kunt de AEM Forms-API&#39;s gebruiken om deze lijst te maken, te wijzigen of te bewerken. Als u bijvoorbeeld de lijst Uitzonderingen globale toegestane verwijzingsverwijzing wilt maken, gebruikt u:
 
-```as3
+```java
 addAllowedRefererExceptions(UMConstants.LC_GLOBAL_ALLOWED_REFERER_EXCEPTION, Arrays.asList("/index.html", "/sample/(.)*"))
 ```
 
@@ -758,7 +758,7 @@ Mogelijk hebt u aangepaste WAR-bestanden gemaakt die u kunt gebruiken voor AEM F
 
 Hieronder ziet u een voorbeeld van de filtervermelding in het bestand *web.xml* voor een ***WAR-bestand van het type SAMPLE*** :
 
-```as3
+```java
 <filter> 
        <filter-name> filter-name </filter-name> 
        <filter-class> com.adobe.idp.um.auth.filter.RemoteCSRFFilter </filter-class> 
@@ -976,7 +976,7 @@ Raadpleeg de documentatie bij de toepassingsserver voor informatie over SSL-omle
 
 1. Voeg de volgende code toe in het https-verbindingselement:
 
-   ```
+   ```xml
    <connector name="https" protocol="HTTP/1.1" scheme="https" socket-binding="https" secure="true" enabled="true"> 
     <ssl name="jboss7_ssl" key-alias="jboss71" password="Tibco321" certificate-key-file="../standalone/configuration/server.keystore" protocol="TLSv1"/> 
     </connector>
@@ -1053,7 +1053,7 @@ De toegang tot de JBoss Management Console en de Console JMX wordt reeds gevormd
 
 Na het registreren in de Console van het Beleid, is het mogelijk om de de folderlijst van de console te doorbladeren door URL te wijzigen. Als u bijvoorbeeld de URL wijzigt in een van de volgende URL&#39;s, wordt mogelijk een mappenlijst weergegeven:
 
-```as3
+```java
 https://<servername>:8080/adminui/secured/ 
 https://<servername>:8080/um/
 ```
@@ -1066,7 +1066,7 @@ Deze sectie bevat aanbevelingen voor de configuratie van toepassingsservers voor
 
 Stel de eigenschappen voor indexmappen in het bestand weblogic.xml in op `false`, zoals in dit voorbeeld:
 
-```as3
+```xml
 <container-descriptor> 
     <index-directory-enabled>false 
     </index-directory-enabled> 

@@ -10,7 +10,10 @@ topic-tags: customization
 discoiquuid: c34dd4c2-5fff-4355-b86d-cc8a956dd8af
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '304'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +28,7 @@ In dit artikel wordt uitgelegd hoe u een knop kunt maken om de koppeling van een
 
 De vereiste code om de actie aan het malplaatje toe te voegen is beschikbaar hieronder. Het `onclick` kenmerk in het codefragment bevat een script waarmee een koppeling van een formulier via e-mail wordt verzonden.
 
-```mxml
+```html
 <div class="__FP_boxes-container __FP_single-color">
     <div class="boxes __FP_boxes __FP_single-color" data-repeatable="true">
   <div class="__FP_boxes-thumbnail">

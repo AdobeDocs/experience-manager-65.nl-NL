@@ -6,7 +6,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '2197'
 ht-degree: 1%
@@ -28,7 +28,7 @@ U combineert een record met een interactieve communicatiesjabloon om een interac
 
 **Eén record in een JSON-bestand**
 
-```JSON
+```json
 {
    "employee": {
        "name": "Sara",
@@ -41,7 +41,7 @@ U combineert een record met een interactieve communicatiesjabloon om een interac
 
 **Meerdere records in een JSON-bestand**
 
-```JSON
+```json
 [{
    "employee": {
        "name": "John",
@@ -179,7 +179,7 @@ Voordat u de Java-servlet implementeert, moet u ervoor zorgen dat u een interact
 1. [Ontwikkel en implementeer een AEM-project met Apache Maven](https://helpx.adobe.com/experience-manager/using/maven_arch13.html) op uw AEM-instantie.
 1. Voeg versie 6.0.12 [of hoger van SDK van de Cliënt van](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) AEM Forms in gebiedenlijst van POM- dossier van uw AEM- project toe. Bijvoorbeeld,
 
-   ```XML
+   ```xml
        <dependency>
            <groupId>com.adobe.aemfd</groupId>
            <artifactId>aemfd-client-sdk</artifactId>
@@ -345,12 +345,15 @@ Dan toont volgende URL op de publicatieknoop het Kanaal van het Web van de inter
 U slaat de gegevens niet alleen op het bestandssysteem op, maar u slaat JSON-bestanden ook op in CRX-opslagruimte, bestandssysteem, webserver of u hebt toegang tot gegevens via de OSGI-prefill-service. De syntaxis om gegevens samen te voegen die diverse protocollen gebruiken is:
 
 * **CRX-protocol**
+
    `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=crx:///tmp/fd/af/mergedJsonData.json`
 
 * **Bestandsprotocol**
+
    `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=file:///C:/Users/af/mergedJsonData.json`
 
 * **Prefill-serviceprotocol**
+
    `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=service://[SERVICE_NAME]/[IDENTIFIER]`
 
    SERVICE_NAME verwijst naar de naam van de prefill dienst OSGI. Zie Een vooraf ingevulde service maken en uitvoeren.
@@ -358,6 +361,7 @@ U slaat de gegevens niet alleen op het bestandssysteem op, maar u slaat JSON-bes
    IDENTIFIER verwijst naar om het even welke meta-gegevens die door de Prefill dienst worden vereist OSGI om de Prefill gegevens te halen. Een id voor de aangemelde gebruiker is een voorbeeld van metagegevens die kunnen worden gebruikt.
 
 * **HTTP-protocol**
+
    `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=http://localhost:8000/somesamplexmlfile.xml`
 
 >[!NOTE]

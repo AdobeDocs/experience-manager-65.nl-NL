@@ -11,7 +11,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 2ad227de-68a8-446f-8c4f-a33a6f95bec8
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '2123'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +27,7 @@ Voordat u het DDX-document kunt doorgeven aan de Assembler-service, moet u de XM
 
 Voor deze bespreking, veronderstel dat het volgende Dx- document dynamisch wordt gecreeerd.
 
-```as3
+```xml
  <?xml version="1.0" encoding="UTF-8"?>
  <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
       <PDFsFromBookmarks prefix="stmt">
@@ -37,7 +40,7 @@ Dit DDX-document demonteert een PDF-document. Het wordt aanbevolen dat u vertrou
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Assembler, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Voor meer informatie over de dienst van de Assembler, zie de Verwijzing van de [Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
@@ -64,8 +67,8 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
-* jbossall-client.jar (vereist als AEM-formulieren worden geïmplementeerd op JBoss)
+* adobe-utilities.jar (vereist als AEM Forms worden geïmplementeerd op JBoss)
+* jbossall-client.jar (vereist als AEM Forms worden geïmplementeerd op JBoss)
 
 **Een PDF Assembler-client maken**
 
@@ -101,7 +104,7 @@ Alle gedemonteerde PDF-documenten worden geretourneerd in een verzamelingsobject
 
 [Een DDX-document dynamisch maken met de webservice-API](/help/forms/developing/dynamically-creating-ddx-documents.md#dynamically-create-a-ddx-document-using-the-web-service-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -170,6 +173,7 @@ Maak dynamisch een DDX-document en demonstreer een PDF-document met de API (Java
    * Een `com.adobe.idp.Document` object dat het dynamisch gemaakte DDX-document vertegenwoordigt
    * Een `java.util.Map` object dat het te demonteren PDF-document bevat
    * Een `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` object dat de runtime-opties opgeeft, inclusief het standaardfont en het logniveau van de taak
+
    De `invokeDDX` methode retourneert een `com.adobe.livecycle.assembler.client.AssemblerResult` object dat de gedemonteerde PDF-documenten en eventuele uitzonderingen bevat.
 
 1. Sla de gedemonteerde PDF-documenten op.
@@ -184,7 +188,7 @@ Maak dynamisch een DDX-document en demonstreer een PDF-document met de API (Java
 
 [Snel starten (SOAP-modus): Een DDX-document dynamisch maken met de Java API](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-dynamically-creating-a-ddx-document-using-the-java-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -258,6 +262,7 @@ Maak dynamisch een DDX-document en demonstreer een PDF-document met de API (webs
    * Een `BLOB` object dat het dynamisch gemaakte DDX-document vertegenwoordigt
    * De `mapItem` array die het invoer-PDF-document bevat
    * Een `AssemblerOptionSpec` object dat uitvoeringsopties opgeeft
+
    De `invokeDDX` methode retourneert een `AssemblerResult` object dat de resultaten van de taak en eventuele uitzonderingen bevat die zich hebben voorgedaan.
 
 1. Sla de gedemonteerde PDF-documenten op.
@@ -270,6 +275,6 @@ Maak dynamisch een DDX-document en demonstreer een PDF-document met de API (webs
 
 **Zie ook**
 
-[AEM-formulieren aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[AEM Forms aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[AEM-formulieren aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[AEM Forms aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)

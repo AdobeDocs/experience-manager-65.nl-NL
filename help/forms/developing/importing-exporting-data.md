@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 2e783745-c986-45ba-8e65-7437d114ca38
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '2742'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 ## Over de service Formuliergegevensintegratie {#about-the-form-data-integration-service}
 
-Met de service Formuliergegevensintegratie kunt u gegevens importeren in een PDF-formulier en gegevens exporteren uit een PDF-formulier. De import- en exportbewerkingen ondersteunen twee typen PDF-formulieren:
+Met de service Formuliergegevensintegratie kunt u gegevens importeren in een PDF-formulier en gegevens exporteren uit een PDF-formulier. De import- en exportbewerkingen ondersteunen twee typen PDF forms:
 
 * Een Acrobat-formulier (gemaakt in Acrobat) is een PDF-document dat formuliervelden bevat.
 * Een Adobe XML-formulier (gemaakt in Designer) is een PDF-document dat voldoet aan de XML Adobe XML Forms Architecture (XFA).
@@ -31,16 +34,16 @@ Afhankelijk van het type PDF-formulier kunnen formuliergegevens in een van de vo
 
 U kunt deze taken uitvoeren met de service Formuliergegevensintegratie:
 
-* Gegevens importeren in PDF-formulieren. Zie Formuliergegevens [importeren](importing-exporting-data.md#importing-form-data)voor meer informatie.
-* Gegevens exporteren uit PDF-formulieren. Zie Formuliergegevens [exporteren voor meer informatie](importing-exporting-data.md#exporting-form-data).
+* Gegevens importeren in PDF forms. Zie Formuliergegevens [importeren](importing-exporting-data.md#importing-form-data)voor meer informatie.
+* Gegevens exporteren uit PDF forms. Zie Formuliergegevens [exporteren voor meer informatie](importing-exporting-data.md#exporting-form-data).
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Integratie van de Gegevens van de Vorm, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Voor meer informatie over de dienst van de Integratie van de Gegevens van de Vorm, zie de Verwijzing van de [Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Formuliergegevens importeren {#importing-form-data}
 
-U kunt formuliergegevens in interactieve PDF-formulieren importeren met de service Formuliergegevensintegratie. Een interactief PDF-formulier is een PDF-document dat een of meer velden bevat voor het verzamelen van informatie van een gebruiker of voor het weergeven van aangepaste informatie. De service Formuliergegevensintegratie ondersteunt geen formulierberekeningen, validatie of scripts.
+U kunt formuliergegevens in interactieve PDF forms importeren met de service Formuliergegevensintegratie. Een interactief PDF-formulier is een PDF-document dat een of meer velden bevat voor het verzamelen van informatie van een gebruiker of voor het weergeven van aangepaste informatie. De service Formuliergegevensintegratie ondersteunt geen formulierberekeningen, validatie of scripts.
 
 Als u gegevens wilt importeren in een formulier dat is gemaakt in Designer, moet u verwijzen naar een geldige XML-gegevensbron voor XDP. Neem bijvoorbeeld het volgende voorbeeld van een hypotheekapplicatie.
 
@@ -48,7 +51,7 @@ Als u gegevens wilt importeren in een formulier dat is gemaakt in Designer, moet
 
 Als u gegevenswaarden wilt importeren in dit formulier, moet u beschikken over een geldige XML-gegevensbron die overeenkomt met het formulier. U kunt geen willekeurige XML-gegevensbron gebruiken om gegevens in een formulier te importeren met de service Formuliergegevensintegratie. Het verschil tussen een willekeurige XML-gegevensbron en een XDP XML-gegevensbron is dat een XDP-gegevensbron voldoet aan de XDP (XML Forms Architecture). De volgende XML vertegenwoordigt een XDP XML-gegevensbron die overeenkomt met het voorbeeld van een hypotheektoepassing.
 
-```as3
+```xml
  <?xml version="1.0" encoding="UTF-8" ?>
  - <xfa:datasets xmlns:xfa="https://www.xfa.org/schema/xfa-data/1.0/">
  - <xfa:data>
@@ -81,7 +84,7 @@ Als u gegevenswaarden wilt importeren in dit formulier, moet u beschikken over e
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Integratie van de Gegevens van de Vorm, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Voor meer informatie over de dienst van de Integratie van de Gegevens van de Vorm, zie de Verwijzing van de [Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary-of-steps}
 
@@ -102,9 +105,9 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-formdataIntegration-client.jar
-* adobe-utilities.jar (vereist als AEM-formulieren worden geïmplementeerd op JBoss)
-* jbossall-client.jar (vereist als AEM-formulieren worden geïmplementeerd op JBoss)
+* adobe-formdataintegration-client.jar
+* adobe-utilities.jar (vereist als AEM Forms worden geïmplementeerd op JBoss)
+* jbossall-client.jar (vereist als AEM Forms worden geïmplementeerd op JBoss)
 
 Zie [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van deze JAR-bestanden.
 
@@ -134,7 +137,7 @@ Nadat u gegevens in een formulier hebt geïmporteerd, kunt u het formulier opsla
 
 [Formuliergegevens importeren met de webservice-API](importing-exporting-data.md#import-form-data-using-the-web-service-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -171,6 +174,7 @@ Formuliergegevens importeren met de API voor formuliergegevensintegratie (Java):
 
    * Het `com.adobe.idp.Document` object waarin het PDF-formulier is opgeslagen.
    * Het `com.adobe.idp.Document` object dat formuliergegevens opslaat.
+
    De `importData` methode retourneert een `com.adobe.idp.Document` object dat een PDF-formulier opslaat dat de gegevens bevat die zich in de XML-gegevensbron bevinden.
 
 1. Sla het PDF-formulier op als een PDF-bestand.
@@ -184,7 +188,7 @@ Formuliergegevens importeren met de API voor formuliergegevensintegratie (Java):
 
 [Snel starten (SOAP-modus): Formuliergegevens importeren met de Java API](/help/forms/developing/form-data-integration-service-java.md#quick-start-soap-mode-importing-form-data-using-the-java-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -203,7 +207,7 @@ Formuliergegevens importeren met de API (webservice) voor formuliergegevensinteg
 1. Creeer een de dienstcliënt van de Integratie van Gegevens van de Vorm.
 
    * Maak een `FormDataIntegrationClient` object met de standaardconstructor.
-   * Maak een `FormDataIntegrationClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/FormDataIntegration?blob=mtom`.) U hoeft het `lc_version` kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt. Geef echter op `?blob=mtom` om MTOM te gebruiken.
+   * Maak een `FormDataIntegrationClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de service AEM Forms (bijvoorbeeld `http://localhost:8080/soap/services/FormDataIntegration?blob=mtom`.) U hoeft het `lc_version` kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt. Geef echter op `?blob=mtom` om MTOM te gebruiken.
    * Maak een `System.ServiceModel.BasicHttpBinding` object door de waarde van het `FormDataIntegrationClient.Endpoint.Binding` veld op te halen. Kiezen naar de geretourneerde waarde `BasicHttpBinding`.
    * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
@@ -235,6 +239,7 @@ Formuliergegevens importeren met de API (webservice) voor formuliergegevensinteg
 
    * Het `BLOB` object waarin het PDF-formulier is opgeslagen.
    * Het `BLOB` object dat formuliergegevens opslaat.
+
    De `importData` methode retourneert een `BLOB` object dat een PDF-formulier opslaat dat de gegevens bevat die zich in de XML-gegevensbron bevinden.
 
 1. Sla het PDF-formulier op als een PDF-bestand.
@@ -248,7 +253,7 @@ Formuliergegevens importeren met de API (webservice) voor formuliergegevensinteg
 
 [Overzicht van de stappen](importing-exporting-data.md#summary-of-steps)
 
-[AEM-formulieren aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[AEM Forms aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
 ## Formuliergegevens exporteren {#exporting-form-data}
 
@@ -256,7 +261,7 @@ U kunt formuliergegevens vanuit een interactief PDF-formulier exporteren met de 
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Integratie van de Gegevens van de Vorm, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Voor meer informatie over de dienst van de Integratie van de Gegevens van de Vorm, zie de Verwijzing van de [Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-1}
 
@@ -276,9 +281,9 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-formdataIntegration-client.jar
-* adobe-utilities.jar (vereist als AEM-formulieren worden geïmplementeerd op JBoss)
-* jbossall-client.jar (vereist als AEM-formulieren worden geïmplementeerd op JBoss)
+* adobe-formdataintegration-client.jar
+* adobe-utilities.jar (vereist als AEM Forms worden geïmplementeerd op JBoss)
+* jbossall-client.jar (vereist als AEM Forms worden geïmplementeerd op JBoss)
 
 **Een serviceclient voor formuliergegevensintegratie maken**
 
@@ -302,7 +307,7 @@ Nadat u formuliergegevens hebt geëxporteerd, kunt u de gegevens opslaan als een
 
 [Formuliergegevens exporteren met de webservice-API](importing-exporting-data.md#export-form-data-using-the-web-service-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -343,7 +348,7 @@ Formuliergegevens exporteren met de API voor formuliergegevensintegratie (Java):
 
 [Snel starten (SOAP-modus): Formuliergegevens exporteren met de Java API](/help/forms/developing/form-data-integration-service-java.md#quick-start-soap-mode-exporting-form-data-using-the-java-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -360,7 +365,7 @@ Formuliergegevens exporteren met de API (webservice) voor formuliergegevensinteg
 1. Creeer een de dienstcliënt van de Integratie van Gegevens van de Vorm.
 
    * Maak een `FormDataIntegrationClient` object met de standaardconstructor.
-   * Maak een `FormDataIntegrationClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/FormDataIntegration?blob=mtom`.) U hoeft het `lc_version` kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt. Geef echter op `?blob=mtom` om MTOM te gebruiken.
+   * Maak een `FormDataIntegrationClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de service AEM Forms (bijvoorbeeld `http://localhost:8080/soap/services/FormDataIntegration?blob=mtom`.) U hoeft het `lc_version` kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt. Geef echter op `?blob=mtom` om MTOM te gebruiken.
    * Maak een `System.ServiceModel.BasicHttpBinding` object door de waarde van het `FormDataIntegrationClient.Endpoint.Binding` veld op te halen. Kiezen naar de geretourneerde waarde `BasicHttpBinding`.
    * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
@@ -393,6 +398,6 @@ Formuliergegevens exporteren met de API (webservice) voor formuliergegevensinteg
 
 [Overzicht van de stappen](importing-exporting-data.md#summary-of-steps)
 
-[AEM-formulieren aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[AEM Forms aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[AEM-formulieren aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[AEM Forms aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)

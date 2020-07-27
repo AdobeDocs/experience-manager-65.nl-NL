@@ -1,22 +1,25 @@
 ---
 title: Trackingtabellen aanpassen
 seo-title: Trackingtabellen aanpassen
-description: Hoe te om de vertoning van de details van gebruikersprocessen in de taaklijst aan te passen die in het volgende lusje van de werkruimte van Vormen AEM wordt getoond.
-seo-description: Hoe te om de vertoning van de details van gebruikersprocessen in de taaklijst aan te passen die in het volgende lusje van de werkruimte van Vormen AEM wordt getoond.
+description: Hoe te om de vertoning van de details van gebruikersprocessen in de taaklijst aan te passen die in het volgende lusje van de werkruimte van AEM Forms wordt getoond.
+seo-description: Hoe te om de vertoning van de details van gebruikersprocessen in de taaklijst aan te passen die in het volgende lusje van de werkruimte van AEM Forms wordt getoond.
 uuid: 13d6ebf2-99d5-434f-85f9-b0cba5f5751a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: bb7a6e9f-4f28-4d97-8a0c-949259fd6857
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '356'
+ht-degree: 1%
 
 ---
 
 
 # Trackingtabellen aanpassen{#customize-tracking-tables}
 
-Het tabblad Tekstspatiëring in de werkruimte van AEM-formulieren wordt gebruikt om de details weer te geven van procesinstanties waarbij de aangemelde gebruiker is betrokken. Als u de volgende tabellen wilt weergeven, selecteert u eerst een procesnaam in het linkerdeelvenster om de lijst met exemplaren in het middelste venster weer te geven. Selecteer een procesinstantie om een takenlijst te zien die door deze instantie in de juiste ruit wordt geproduceerd. Standaard geven de tabelkolommen de volgende taakkenmerken weer (het bijbehorende kenmerk in het taakmodel staat tussen haakjes):
+Het volgende lusje in de werkruimte van AEM Forms wordt gebruikt om de details van procesinstanties te tonen waarin de het programma geopende gebruiker betrokken is. Als u de volgende tabellen wilt weergeven, selecteert u eerst een procesnaam in het linkerdeelvenster om de lijst met exemplaren in het middelste venster weer te geven. Selecteer een procesinstantie om een takenlijst te zien die door deze instantie in de juiste ruit wordt geproduceerd. Standaard geven de tabelkolommen de volgende taakkenmerken weer (het bijbehorende kenmerk in het taakmodel staat tussen haakjes):
 
 * ID ( `taskId`)
 * Naam ( `stepName`)
@@ -113,13 +116,13 @@ De resterende kenmerken in het taakmodel die beschikbaar zijn voor weergave in d
  </tbody>
 </table>
 
-Voor de volgende aanpassingen in de takenlijst, moet u semantische veranderingen in de broncode doen. Zie [Inleiding tot het aanpassen van de werkruimte](/help/forms/using/introduction-customizing-html-workspace.md) van Vormen AEM voor hoe u semantische veranderingen kunt aanbrengen gebruikend werkruimte SDK en een geminificeerde pakket van de veranderde bron bouwen.
+Voor de volgende aanpassingen in de takenlijst, moet u semantische veranderingen in de broncode doen. Zie [Inleiding tot het Aanpassen van de werkruimte](/help/forms/using/introduction-customizing-html-workspace.md) van AEM Forms voor hoe u semantische veranderingen kunt aanbrengen gebruikend werkruimte SDK en een geminificeerde pakket van de veranderde bron bouwen.
 
 ## Tabelkolommen en hun volgorde wijzigen {#changing-table-columns-and-their-order}
 
 1. Om de taakattributen te wijzigen die in de lijst en hun orde worden getoond, vorm het dossier /ws/js/runtime/templates/processinstancehistory.html:
 
-   ```as3
+   ```html
    <table>
        <thead>
            <tr>
@@ -134,7 +137,7 @@ Voor de volgende aanpassingen in de takenlijst, moet u semantische veranderingen
    </table>
    ```
 
-   ```as3
+   ```html
    <table>
        <tbody>
            <%_.each(obj, function(task){%>
@@ -157,7 +160,7 @@ U kunt als volgt de tabel met de takenlijst sorteren wanneer u op de kolomkop kl
 
 1. Registreer een klikmanager voor `.fixedTaskTableHeader th` in het dossier `js/runtime/views/processinstancehistory.js`.
 
-   ```as3
+   ```javascript
    events: {
        //other handlers
        "click .fixedTaskTableHeader th": "onTaskTableHeaderClick",
@@ -167,7 +170,7 @@ U kunt als volgt de tabel met de takenlijst sorteren wanneer u op de kolomkop kl
 
    Roep in de handler de `onTaskTableHeaderClick` functie van `js/runtime/util/history.js`.
 
-   ```as3
+   ```javascript
    onTaskTableHeaderClick: function (event) {
            history.onTaskTableHeaderClick(event);
    }
@@ -179,7 +182,7 @@ U kunt als volgt de tabel met de takenlijst sorteren wanneer u op de kolomkop kl
 
    Sorteren gebeurt met behulp van de Backbone-sorteerfunctie in de taaklijstverzameling door een vergelijkingsfunctie op te geven.
 
-   ```as3
+   ```javascript
        return {
            //other methods
            onTaskTableHeaderClick  : onTaskTableHeaderClick,
@@ -187,7 +190,7 @@ U kunt als volgt de tabel met de takenlijst sorteren wanneer u op de kolomkop kl
        };
    ```
 
-   ```as3
+   ```javascript
    onTaskTableHeaderClick = function (event) {
            var target = $(event.target),
             comparator,

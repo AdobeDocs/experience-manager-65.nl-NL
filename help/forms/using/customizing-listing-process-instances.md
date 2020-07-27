@@ -1,24 +1,27 @@
 ---
 title: De lijst met procesinstanties aanpassen
 seo-title: De lijst met procesinstanties aanpassen
-description: Hoe te om de eigenschappen aan te passen die in procesinstantie in de werkruimte van Vormen AEM worden getoond.
-seo-description: Hoe te om de eigenschappen aan te passen die in procesinstantie in de werkruimte van Vormen AEM worden getoond.
+description: Hoe te om de eigenschappen aan te passen die in procesinstantie in de werkruimte van AEM Forms worden getoond.
+seo-description: Hoe te om de eigenschappen aan te passen die in procesinstantie in de werkruimte van AEM Forms worden getoond.
 uuid: 3b55d9b9-7f73-46dd-9eb6-42be218440a1
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 40d7d43f-ee0a-4e34-ae93-20c9c940f76b
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '302'
+ht-degree: 0%
 
 ---
 
 
 # De lijst met procesinstanties aanpassen {#customizing-the-listing-of-process-instances}
 
-De lijst met procesinstanties wordt weergegeven op het tabblad Tekstspatiëring van de werkruimte van AEM Forms.
+De lijst met procesinstanties wordt weergegeven op het tabblad Bijhouden van de werkruimte AEM Forms.
 
-In de lijst met procesinstanties worden voor elke procesinstantie in de werkruimte AEM Forms enkele eigenschappen van die instantie weergegeven. De volgende eigenschappen zijn beschikbaar voor elke procesinstantie. Deze eigenschappen worden opgeslagen als attributen in het model van de procesinstantiecomponent en zijn beschikbaar voor gebruik in zijn mening en malplaatje.
+In de lijst van procesinstanties, voor elke procesinstantie, toont de werkruimte van AEM Forms sommige eigenschappen van die instantie. De volgende eigenschappen zijn beschikbaar voor elke procesinstantie. Deze eigenschappen worden opgeslagen als attributen in het model van de procesinstantiecomponent en zijn beschikbaar voor gebruik in zijn mening en malplaatje.
 
 <table>
  <tbody>
@@ -69,13 +72,13 @@ In de lijst met procesinstanties worden voor elke procesinstantie in de werkruim
 
 Voer de volgende stappen uit om de `description` eigenschap van de procesinstantie in de procesinstantiekaart weer te geven.
 
-1. Voer de [algemene stappen uit voor het aanpassen](/help/forms/using/generic-steps-html-workspace-customization.md)van de werkruimte van AEM Forms.
+1. Voer de [algemene stappen uit om de werkruimte van AEM Forms aan te passen](/help/forms/using/generic-steps-html-workspace-customization.md).
 1. Ga als volgt te werk:
 
    1. Kopieer /libs/ws/js/runtime/templates/processinstance.html naar/apps/ws/js/runtime/templates/, als deze niet bestaat. Klik op Alles **opslaan**.
    1. Voeg procesbeschrijvingsdiv toe met klasse = &#39;processDescription&#39; inprocessinstance.html.
 
-   ```
+   ```jsp
    <div class="processDescription" title="<%= description%>"><%= description%></div>
    ```
 

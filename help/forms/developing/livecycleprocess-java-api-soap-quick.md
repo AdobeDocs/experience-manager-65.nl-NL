@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 9c17fa2d-0337-4204-822e-dcdafebf0e4d
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '403'
+ht-degree: 0%
 
 ---
 
@@ -31,17 +34,17 @@ De Java API (SOAP) Quick Start is beschikbaar voor processen. Een *procesinstant
 
 [Snel starten (SOAP-modus): De status van een taak ophalen met de Java API](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api)
 
-De verrichtingen van de Vormen van AEM kunnen worden uitgevoerd gebruikend sterk-getypte API van Vormen AEM en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
+De verrichtingen van AEM Forms kunnen worden uitgevoerd gebruikend AEM Forms sterk-getypte API en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
 
 >[!NOTE]
 >
->De snelle aanvang die in Programmering met Vormen wordt gevestigd AEM is gebaseerd op de Vormen als u een ander werkend systeem, zoals Unix gebruikt, vervangt vensters specifieke wegen met wegen door het toepasselijke werkende systeem dat worden gesteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. (Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+>De snelle aanvang die in Programmering met AEM Forms wordt gevestigd is gebaseerd op de Vormen als u een ander werkend systeem, zoals Unix gebruikt, vervangt vensters specifieke wegen door wegen door het toepasselijke werkende systeem dat worden gesteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. (Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
 
 ## Snel starten (SOAP-modus): Zoeken naar procesinstanties met de Java API {#quick-start-soap-mode-searching-for-process-instances-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt gezocht naar procesinstanties die zijn gebaseerd op het proces *MortgaugeLoan - Prebuilt* .
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -159,7 +162,7 @@ In het volgende Java-codevoorbeeld wordt gezocht naar procesinstanties die zijn 
 
 In het volgende Java-codevoorbeeld wordt een procesinstantie opgeschort. Als u een procesinstantie wilt onderbreken, hebt u de proces-oproepings-id nodig die kan worden verkregen wanneer een langdurig proces wordt aangeroepen met de API voor oproeping.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -251,7 +254,7 @@ In het volgende Java-codevoorbeeld wordt een procesinstantie opgeschort. Als u e
 
 In het volgende Java-codevoorbeeld wordt een instantie voor een geschorst proces gestart.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -339,7 +342,7 @@ In het volgende Java-codevoorbeeld wordt een instantie voor een geschorst proces
 
 In het volgende Java-codevoorbeeld wordt een procesinstantie beëindigd met de id-waarde 756c22860a242fb101ec7a5bc0977fd6.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -430,7 +433,7 @@ In het volgende Java-codevoorbeeld wordt een procesinstantie beëindigd met de i
 
 Met de volgende Java-code worden gegevens verwijderd uit een proces met de naam *SecureDocument*. Een filter wordt gebruikt dat specificeert om gegevens voor die procesinstanties te zuiveren waar de procesvariabele genoemd *inValue* groter is dan 200.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -535,9 +538,9 @@ Met de volgende Java-code worden gegevens verwijderd uit een proces met de naam 
 
 ## Snel starten (SOAP-modus): De status van een taak ophalen met de Java API {#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api}
 
-In het volgende codevoorbeeld wordt de status van 10 taken in AEM Forms opgehaald.
+In het volgende codevoorbeeld wordt de status van 10 AEM Forms-taken opgehaald.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:

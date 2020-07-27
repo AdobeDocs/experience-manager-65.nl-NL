@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 discoiquuid: 60d67c6b-5994-42ef-b159-ed6edf5cf9d4
 translation-type: tm+mt
-source-git-commit: dfa983db4446cbb0cbdeb42297248aba55b3dffd
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '476'
+ht-degree: 1%
 
 ---
 
@@ -61,7 +64,7 @@ Uit het vak worden de volgende gebeurtenissen bijgehouden in een adaptieve vorm 
 
 ## Tijdslimiet voor de gebeurtenis &#39;visit&#39; van het veld aanpassen {#customizing-the-field-visit-event-timeout}
 
-Als een gebruiker in de standaard AEM-formulierinstelling meer dan 60 seconden in een veld doorbrengt, wordt een `fieldvisit` gebeurtenis geactiveerd en worden de gegevens van het veld naar Adobe Analytics verzonden. U kunt de basislijn voor het bijhouden van veldtijd onder AEM Forms Analytics Configuration op de AEM Configuration-console (/system/console/configMgr) aanpassen om de time-outlimiet te verhogen of te verlagen.
+Als een gebruiker in de standaard AEM-formulierinstelling meer dan 60 seconden doorbrengt in een veld, wordt een `fieldvisit` gebeurtenis geactiveerd en worden de gegevens van het veld naar Adobe Analytics verzonden. U kunt de de tijd volgende basislijn van het Gebied aanpassen onder de Configuratie van AEM Forms Analytics bij de console van de Configuratie AEM (/system/console/configMgr) om de onderbrekingsgrens te verhogen of te verminderen.
 
 ## De volgende gebeurtenissen aanpassen {#customizing-the-tracking-events}
 
@@ -79,7 +82,7 @@ U kunt de waarde van *eventName* - en *variableValueMap* -argumenten evalueren o
 
 In het volgende voorbeeld blijft de status voor de *foutgebeurtenis* van elk *fieldName* -kenmerk behouden. De gebeurtenis wordt alleen naar de analyseserver verzonden als er opnieuw een fout optreedt.
 
-```
+```javascript
 case 'error':
         if(errorOccurred[variableValueMap.fieldName] == true) {
             pushEvent(eventName, variableValueMap)
@@ -90,10 +93,10 @@ case 'error':
 
 ## De gebeurtenis panelvisit aanpassen {#customizing-the-panelvisit-event}
 
-Bij de standaard installatie van AEM Forms wordt na elke 60 seconden gecontroleerd of het venster met het adaptieve formulier actief is. Als het venster actief is, wordt een `panelVisit`gebeurtenis geactiveerd naar Adobe Analytics. Hiermee kunt u controleren of het document of formulier actief is en kunt u de tijd berekenen die aan het desbetreffende formulier of document is besteed.
+Bij de standaardinstelling AEM Forms wordt na elke 60 seconden gecontroleerd of het venster met het adaptieve formulier actief is. Als het venster actief is, wordt een `panelVisit`gebeurtenis geactiveerd naar Adobe Analytics. Hiermee kunt u controleren of het document of formulier actief is en kunt u de tijd berekenen die aan het desbetreffende formulier of document is besteed.
 
 >[!NOTE]
 >
->De naam van de gebeurtenis die wordt gebruikt om activiteit op te halen en de tijd die wordt doorgebracht te berekenen is &quot;panelVisit&quot;. Deze gebeurtenis is anders dan de gebeurtenis die het deelvenster bezoeken in de bovenstaande tabel wordt weergegeven.
+>De naam van de gebeurtenis die wordt gebruikt om activiteit op te halen en de tijd die wordt doorgebracht te berekenen is &quot;panelVisit&quot;. Deze gebeurtenis is anders dan de gebeurtenis die wordt weergegeven in de bovenstaande tabel voor het bezoek van het deelvenster.
 
 U kunt de functie planningHeartBeatCheck die beschikbaar is in het `/libs/afanalytics/js/custom.js` bestand aanpassen om deze gebeurtenis die regelmatig naar Adobe Analytics wordt verzonden, te wijzigen of te stoppen.

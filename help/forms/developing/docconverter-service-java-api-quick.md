@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ea4b26c8-b9cf-42c2-b4da-2884336014a9
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 0%
@@ -36,7 +36,7 @@ De verrichtingen van AEM Forms kunnen worden uitgevoerd gebruikend AEM Forms ste
 
 In het volgende Java-codevoorbeeld wordt een PDF-document met de naam *Loan.pdf* geconverteerd naar een PDF/A-document dat is opgeslagen als een PDF-bestand met de naam *LoanArchive.pdf*. (Zie Documenten [converteren naar PDF/A-documenten](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdf-a-documents).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -139,7 +139,7 @@ In het volgende Java-codevoorbeeld wordt een PDF-document met de naam *Loan.pdf*
 
 In het volgende Java-codevoorbeeld wordt bepaald of het invoer-PDF-document PDF/A-compatibel is. Het invoer-PDF-document dat wordt doorgegeven aan de DocConverter-service heet *LoanArchive.pdf*. De resultaten van de bevestiging worden geschreven aan een dossier van XML genoemd *ValidationResults.xml*. (Zie PDF/A-compatibiliteit [via programmacode bepalen](/help/forms/developing/pdf-a-documents.md#programmatically-determining-pdf-a-compliancy).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:

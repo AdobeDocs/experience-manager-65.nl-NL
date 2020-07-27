@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f146202f-25f1-46a0-9943-c483f5f09f9f
 translation-type: tm+mt
-source-git-commit: 67ea825215d1ca7cc2e350ed1c128c3146de45ec
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '832'
+ht-degree: 0%
 
 ---
 
@@ -58,7 +61,7 @@ In dit gedeelte wordt beschreven hoe u de EMC NetWorker-software op de Content S
 
    De volgende tekst bevat opmaaktekens voor regeleinden. Als u deze tekst naar een locatie buiten dit document kopieert, kopieert u een gedeelte per keer en verwijdert u de opmaaktekens wanneer u deze op de nieuwe locatie plakt.
 
-   ```as3
+   ```shell
     ################################################
     # NetWorker Module for Documentum v1.2 nsrnmd_win.cfg D5.3+ example with
     # typical set of working parameters.  THIS FILE MUST BE SITE-CUSTOMISED.
@@ -196,7 +199,7 @@ In dit gedeelte wordt beschreven hoe u de EMC NetWorker-software op de Content S
 
    * Volledige back-up van database (nsrnmddbf.bat):
 
-      `NetWorker_database_module_root` `-s`*&lt;NetWorker_Server_Name>*`-U``[username]`wachtwoord`-P`*[]*`-l full`*&lt;database_name>*
+      `NetWorker_database_module_root` `-s`*&lt;NetWorker_Server_Name>*`-U``[username]``-P`*[wachtwoord ]*`-l full`*&lt;database_name>*
 
    * Incrementele back-up van databases (nsrnmddbi.bat):
 
@@ -223,9 +226,9 @@ In dit gedeelte wordt beschreven hoe u de EMC NetWorker-software op de Content S
 1. Klik met de rechtermuisknop op Apparaten en selecteer Maken.
 1. Voer de volgende waarden in en klik op OK:
 
-   **** Naam: Het volledige pad van de gedeelde map
+   **Naam:** Het volledige pad van de gedeelde map
 
-   **** Mediatype: `File`
+   **Mediatype:** `File`
 
 1. Klik met de rechtermuisknop op het nieuwe apparaat en selecteer Bewerkingen.
 1. Klik op Label, voer een naam in, klik op OK en klik op Onderbrengen.
@@ -243,7 +246,7 @@ Voer de volgende taken uit nadat u een volledige back-up van uw AEM-formuliergeg
 1. Open een opdrachtprompt en wijzig deze in `[NetWorker_root]\Legato\nsr\bin`.
 1. Voer de volgende opdracht uit:
 
-   ```as3
+   ```shell
     - nsrnmdsv.exe -f <path_to_cfg_file>
    ```
 
@@ -263,6 +266,6 @@ Voer de volgende taken uit voordat u de AEM-formuliergegevens herstelt. (Zie [De
 1. Een opdrachtprompt openen en wijzigen in *[NetWorker_root]*\Legato\nsr\bin
 1. Voer de volgende opdracht uit:
 
-   ```as3
+   ```shell
     - nsrnmdrs.exe -B <docbase_name> -f <path_to_cfg_file> -C SA
    ```

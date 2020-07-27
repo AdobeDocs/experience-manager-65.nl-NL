@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: b89293c4-ea2e-4fa4-9e5e-ef4f548e9608
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1071'
+ht-degree: 0%
 
 ---
 
@@ -43,7 +46,7 @@ Java API Quick Start (SOAP) is beschikbaar voor de Rights Management-service:
 
 [Snel starten (SOAP-modus): Een beleid verwijderen uit een Word-document met de Java API](document-security-service-java-api.md#quick-start-soap-mode-removing-a-policy-from-a-word-document-using-the-java-api)
 
-De verrichtingen van de Vormen van AEM kunnen worden uitgevoerd gebruikend sterk-getypte API van Vormen AEM en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
+De verrichtingen van AEM Forms kunnen worden uitgevoerd gebruikend AEM Forms sterk-getypte API en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
 
 >[!NOTE]
 >
@@ -53,7 +56,7 @@ De verrichtingen van de Vormen van AEM kunnen worden uitgevoerd gebruikend sterk
 
 In het volgende Java-codevoorbeeld wordt een nieuw beleid gemaakt met de naam *Kopie* toestaan. De beleidsreeks waaraan het beleid wordt toegevoegd wordt genoemd *Globale Reeks* van het Beleid. Deze beleidsset bestaat standaard. (Zie Beleid [maken](/help/forms/developing/protecting-documents-policies.md#creating-policies).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -182,7 +185,7 @@ In het volgende Java-codevoorbeeld wordt een nieuw beleid gemaakt met de naam *K
 
 In het volgende Java-codevoorbeeld wordt een beleid met de naam Kopie ** toestaan gewijzigd door de offline leaseperiode in te stellen op 40 dagen. (Zie Beleid [wijzigen](/help/forms/developing/protecting-documents-policies.md#modifying-policies).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -283,7 +286,7 @@ In het volgende Java-codevoorbeeld wordt een beleid met de naam Kopie ** toestaa
 
 In het volgende Java-codevoorbeeld wordt een beleid met de naam *Kopie* toestaan verwijderd. (Zie Beleid [verwijderen](/help/forms/developing/protecting-documents-policies.md#deleting-policies).)
 
-```as3
+```java
  /*
      * * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -375,7 +378,7 @@ In het volgende Java-codevoorbeeld wordt een beleid met de naam *Kopie* toestaan
 
 In het volgende Java-codevoorbeeld wordt een beleid met de naam Kopiëren ** toestaan toegepast op een PDF-document met de naam *Loan.pdf*. De beleidsreeks waaraan het beleid wordt toegevoegd wordt genoemd *Globale Reeks* van het Beleid. Het document dat met een beleid is beveiligd, wordt opgeslagen als een PDF-bestand met de naam *PolicyProtectedLoanDoc.pdf. *(Zie Beleid [toepassen op PDF-documenten](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -481,7 +484,7 @@ In het volgende Java-codevoorbeeld wordt een beleid met de naam Kopiëren ** toe
 
 In het volgende codevoorbeeld wordt een beleid verwijderd uit een PDF-document met de naam *PolicyProtectedLoanDoc.pdf*. Het onbeveiligde PDF-document wordt opgeslagen als *unProtectedLoan.pdf*. (Zie Beleid [verwijderen uit PDF-documenten](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-pdf-documents).)
 
-```as3
+```java
  /*
      * * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -588,7 +591,7 @@ In het volgende codevoorbeeld wordt een beleid verwijderd uit een PDF-document m
 
 In het volgende Java-codevoorbeeld wordt een door een beleid beveiligd document met de naam *PolicyProtectedLoanDoc.pdf* ingetrokken. Een gereviseerd PDF-document bevindt zich op de volgende URL-locatie `https://'[server]:[port]'/RightsManagement/UpdatedLoan.pdf`. (Zie Toegang [tot documenten](/help/forms/developing/protecting-documents-policies.md#revoking-access-to-documents)intrekken.)
 
-```as3
+```java
  /*
      * * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -702,7 +705,7 @@ In het volgende Java-codevoorbeeld wordt een door een beleid beveiligd document 
 
 In het volgende Java-codevoorbeeld wordt een door een beleid beveiligd PDF-document met de naam *PolicyProtectedLoanDoc.* pdf geïnspecteerd. (Zie Met [beleid beveiligde PDF-documenten](/help/forms/developing/protecting-documents-policies.md#inspecting-policy-protected-pdf-documents)controleren.)
 
-```as3
+```java
  /*
      * * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -820,7 +823,7 @@ In het volgende Java-codevoorbeeld wordt een door een beleid beveiligd PDF-docum
 
 In het volgende Java-codevoorbeeld wordt de toegang tot een ingetrokken PDF-document met de naam *PolicyProtectedLoanDoc.pdf* hersteld. (Zie Toegang [tot ingetrokken documenten](/help/forms/developing/protecting-documents-policies.md#reinstating-access-to-revoked-documents)opnieuw instellen.)
 
-```as3
+```java
  /*
      * * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -926,7 +929,7 @@ In het volgende Java-codevoorbeeld wordt de toegang tot een ingetrokken PDF-docu
 
 In het volgende Java-codevoorbeeld wordt een nieuw PDF-watermerk gemaakt met de naam &#39;Voorbeeld-PDF-watermerk&#39;. Dit watermerk bevat één element (zie Watermerken [maken](/help/forms/developing/protecting-documents-policies.md#creating-watermarks)).
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -1059,7 +1062,7 @@ public class PDFWatermarksSOAPMode {
 
 In het volgende Java-codevoorbeeld wordt een nieuw tekstwatermerk gemaakt met de naam *Voorbeeldtekstwatermerk*. Dit watermerk bevat één element.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -1208,7 +1211,7 @@ public class TextWatermarks {
 
 In het volgende Java-codevoorbeeld wordt een watermerk met de naam &#39;Voorbeeldtekstwatermerk&#39; gewijzigd en wordt de dekking van het eerste element ingesteld op 100.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -1320,7 +1323,7 @@ public class ModifyWatermarks {
 
 In het volgende Java-codevoorbeeld wordt een watermerk met de naam *Vertrouwelijk* gewijzigd door de waarde van het `opacity` kenmerk te wijzigen in 80.
 
-```as3
+```java
  /*
      * * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -1418,7 +1421,7 @@ In het volgende Java-codevoorbeeld wordt een watermerk met de naam *Vertrouwelij
 
 In het volgende Java-codevoorbeeld wordt gezocht naar de gebeurtenis create policy.
 
-```as3
+```java
  /*
      * * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -1527,11 +1530,11 @@ In het volgende Java-codevoorbeeld wordt gezocht naar de gebeurtenis create poli
  
 ```
 
-## Snel starten (SOAP): Een beleid toepassen op een Word-document met behulp van de Java API {#quick-start-soap-applying-a-policy-to-a-word-document-using-the-java-api}
+## Snel starten (SOAP): Een beleid toepassen op een Word-document met de Java API {#quick-start-soap-applying-a-policy-to-a-word-document-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt een beleid met de naam Kopiëren ** toestaan toegepast op een Word-document met de naam *Loan.doc*. De beleidsreeks waaraan het beleid wordt toegevoegd wordt genoemd *Globale Reeks* van het Beleid. Het document dat met een beleid is beveiligd, wordt opgeslagen als een DOC-bestand met de naam *PolicyProtectedLoanDoc.doc. *(Zie Beleid [toepassen op PDF-documenten](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents).)
 
-```as3
+```java
  /*
      * * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -1646,7 +1649,7 @@ In het volgende Java-codevoorbeeld wordt een beleid met de naam Kopiëren ** toe
 
 Het volgende codevoorbeeld verwijdert een beleid uit een document van Word genoemd *PolicyProtectedLoanDoc.doc*. Het onbeveiligde Word-document wordt opgeslagen als *unProtectedLoan.doc*. (Zie Beleid [verwijderen uit Word-documenten](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-word-documents).)
 
-```as3
+```java
  /*
      * * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -1754,7 +1757,7 @@ Het volgende codevoorbeeld verwijdert een beleid uit een document van Word genoe
 
 In het volgende Java-codevoorbeeld wordt een nieuw abstract beleid gemaakt met de naam AllowCopy. De beleidsreeks waaraan het beleid wordt toegevoegd wordt genoemd Globale Reeks van het Beleid. Deze beleidsset bestaat standaard. (Zie Beleid maken.)
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -1871,7 +1874,7 @@ public class CreateAbstractPolicySoap {
 
 In het volgende Java-codevoorbeeld wordt een abstract beleid met de naam AllowCopy gewijzigd. De beleidsreeks waarin het beleid wordt gewijzigd wordt genoemd Globale Reeks van het Beleid. Deze beleidsset bestaat standaard. (Zie Beleid maken.)
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -1970,7 +1973,7 @@ public class ModifyingAbstractPolicySoap {
 
 In het volgende Java-codevoorbeeld wordt een abstract beleid met de naam AllowCopy verwijderd. De beleidsreeks waarvan het beleid wordt geschrapt wordt genoemd Globale Reeks van het Beleid. Deze beleidsset bestaat standaard. (Zie Beleid maken.)
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -2057,7 +2060,7 @@ public class DeleteAbstractPolicySoap {
 
 In het volgende Java-codevoorbeeld ziet u de methode voor het beveiligen van een document in de instructieworkflow voor een bestaande gebruiker.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -2168,7 +2171,7 @@ In het volgende Java-codevoorbeeld ziet u hoe u een document kunt beveiligen in 
 * Er wordt een nieuwe gebruiker, licentie en beleid gemaakt.
 * De gebruiker is gekoppeld aan de licentie en het beleid en het document is beveiligd.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:

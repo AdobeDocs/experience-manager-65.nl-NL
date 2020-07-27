@@ -1,8 +1,8 @@
 ---
 title: Informatie weergeven in het deelvenster Taakoverzicht
 seo-title: Informatie weergeven in het deelvenster Taakoverzicht
-description: In de werkruimte van Vormen AEM, kan een ruit van het Overzicht van de Taak worden gevormd om de taak samen te vatten of een andere Web-pagina te tonen.
-seo-description: In de werkruimte van Vormen AEM, kan een ruit van het Overzicht van de Taak worden gevormd om de taak samen te vatten of een andere Web-pagina te tonen.
+description: In de werkruimte van AEM Forms, kan een ruit van het Overzicht van de Taak worden gevormd om de taak samen te vatten of een andere Web-pagina te tonen.
+seo-description: In de werkruimte van AEM Forms, kan een ruit van het Overzicht van de Taak worden gevormd om de taak samen te vatten of een andere Web-pagina te tonen.
 uuid: 2fcc3d9f-0ec2-4250-8dc1-9746fd72ea60
 contentOwner: robhagat
 content-type: reference
@@ -10,14 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 90d0f584-b598-4b21-85d7-31da5f13d404
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '305'
+ht-degree: 0%
 
 ---
 
 
 # Informatie weergeven in het deelvenster Taakoverzicht {#displaying-information-in-the-task-summary-pane}
 
-Als u een taak opent in de werkruimte van AEM-formulieren, wordt in het deelvenster Taakoverzicht een overzicht van de taak weergegeven. Deze extra en relevante informatie voor een taak voegt meer waarde toe aan de eindgebruiker van de werkruimte van Vormen AEM.
+Wanneer u een taak in de werkruimte van AEM Forms opent, kan een ruit van het Overzicht van de Taak een samenvatting van de taak tonen. Deze extra en relevante informatie voor een taak voegt meer waarde voor de eindgebruiker van de werkruimte van AEM Forms toe.
 
 In de werkruimte AEM Forms kunt u een webpagina van uw keuze weergeven in het deelvenster Taakoverzicht. Een proces kan worden gecreeerd om een ruit van het Overzicht van de Taak te tonen gebruikend Workbench.
 
@@ -35,7 +38,7 @@ In de werkruimte AEM Forms kunt u een webpagina van uw keuze weergeven in het de
    * `Create a folder`**SampleSummary **onder`/apps`. In de Lijst van het Toegangsbeheer van`/apps/SampleSummary`, voeg een ingang toe voor het`PERM_WORKSPACE_USER`toestaan van`jcr:readprivileges`.
    * `Create a file `html.esp` at `/apps/`. For example, add the following lines in `SampleSummaryhtml.esp`.`
 
-   ```
+   ```html
    <html>
        <body>
            <h1>Sample Summary</h1>
@@ -49,4 +52,4 @@ In de werkruimte AEM Forms kunt u een webpagina van uw keuze weergeven in het de
    ```
 
    * Plaats de waarde van taak summiere url zoals `/lc/content/SampleSummary.html` in Assign de stap van de Taak.
-   * Wanneer de taak verbonden aan deze Assign stap van de Taak in de werkruimte van Vormen van AEM wordt geopend, `html.esp` bij `/apps/SampleSummary` wordt teruggegeven in de ruit van het taakoverzicht.
+   * Wanneer de taak verbonden aan deze Assign stap van de Taak in de werkruimte van AEM Forms wordt geopend, `html.esp` bij `/apps/SampleSummary` wordt teruggegeven in de ruit van het taakoverzicht.

@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ee54d9d4-190d-4665-925a-9740ac65fbd5
 translation-type: tm+mt
-source-git-commit: d3719a9ce2fbb066f99445475af8e1f1e7476f4e
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1538'
+ht-degree: 0%
 
 ---
 
@@ -33,11 +36,11 @@ U kunt SSO ook toelaten door SPNEGO te gebruiken. (Zie [SSO inschakelen met SPNE
 1. Selecteer Ja om SSO in te schakelen. Als u Nee selecteert, zijn de overige instellingen op de pagina niet beschikbaar.
 1. Stel de resterende opties op de pagina naar wens in en klik op OK:
 
-   * **** Type SSO: (Verplicht) Selecteer HTTP-koptekst om SSO in te schakelen via HTTP-headers.
-   * **** HTTP-header voor de id van de gebruiker: (Verplicht) Naam van de koptekst waarvan de waarde de unieke id van de aangemelde gebruiker bevat. Het Beheer van de gebruiker gebruikt deze waarde om de gebruiker in het gegevensbestand van het Beheer van de Gebruiker te vinden. De waarde die via deze header wordt verkregen, moet overeenkomen met de unieke id van de gebruiker die vanuit de LDAP-directory is gesynchroniseerd. (Zie [Gebruikersinstellingen](/help/forms/using/admin-help/adding-configuring-users.md#user-settings).)
-   * **** De id-waarde wordt toegewezen aan de gebruikersnaam van de gebruiker in plaats van aan de unieke id van de gebruiker: Wijst de unieke-id van de gebruiker toe aan de gebruikersnaam. Selecteer deze optie als het unieke herkenningsteken van de gebruiker een binaire waarde is die niet gemakkelijk door de kopballen van HTTP kan worden verspreid (bijvoorbeeld, objectGUID als u gebruikers van Actieve Folder synchroniseert).
-   * **** HTTP-header voor domein: (Niet verplicht) Naam van de koptekst waarvan de waarde de domeinnaam bevat. Gebruik deze instelling alleen als geen enkele HTTP-header de gebruiker uniek identificeert. Gebruik deze instelling voor gevallen waarin meerdere domeinen bestaan en de unieke id alleen binnen een domein uniek is. In dit geval geeft u de headernaam op in dit tekstvak en geeft u domeintoewijzing op voor de meerdere domeinen in het vak Domeintoewijzing. (Zie Bestaande domeinen [](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains)bewerken en omzetten.)
-   * **** Domeintoewijzing: (Verplicht) Geeft toewijzing voor meerdere domeinen in de notatie *header value=domain name*.
+   * **Type SSO:** (Verplicht) Selecteer HTTP-koptekst om SSO in te schakelen via HTTP-headers.
+   * **HTTP-header voor de id van de gebruiker:** (Verplicht) Naam van de koptekst waarvan de waarde de unieke id van de aangemelde gebruiker bevat. Het Beheer van de gebruiker gebruikt deze waarde om de gebruiker in het gegevensbestand van het Beheer van de Gebruiker te vinden. De waarde die via deze header wordt verkregen, moet overeenkomen met de unieke id van de gebruiker die vanuit de LDAP-directory is gesynchroniseerd. (Zie [Gebruikersinstellingen](/help/forms/using/admin-help/adding-configuring-users.md#user-settings).)
+   * **De id-waarde wordt toegewezen aan de gebruikersnaam van de gebruiker in plaats van aan de unieke id van de gebruiker:** Wijst de unieke-id van de gebruiker toe aan de gebruikersnaam. Selecteer deze optie als het unieke herkenningsteken van de gebruiker een binaire waarde is die niet gemakkelijk door de kopballen van HTTP kan worden verspreid (bijvoorbeeld, objectGUID als u gebruikers van Actieve Folder synchroniseert).
+   * **HTTP-header voor domein:** (Niet verplicht) Naam van de koptekst waarvan de waarde de domeinnaam bevat. Gebruik deze instelling alleen als geen enkele HTTP-header de gebruiker uniek identificeert. Gebruik deze instelling voor gevallen waarin meerdere domeinen bestaan en de unieke id alleen binnen een domein uniek is. In dit geval geeft u de headernaam op in dit tekstvak en geeft u domeintoewijzing op voor de meerdere domeinen in het vak Domeintoewijzing. (Zie Bestaande domeinen [](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains)bewerken en omzetten.)
+   * **Domeintoewijzing:** (Verplicht) Geeft toewijzing voor meerdere domeinen in de notatie *header value=domain name*.
 
       Neem bijvoorbeeld een situatie waarin de HTTP-header voor een domein domain domainName is en waarden van domain1, domain2 of domain3 kan hebben. In dit geval, gebruik domeinafbeelding om de domainName waarden aan de domeinnamen van het Beheer van de Gebruiker in kaart te brengen. Elke toewijzing moet op een andere regel staan:
 
@@ -59,7 +62,7 @@ U kunt SSO ook toelaten door de kopballen van HTTP te gebruiken. (Zie [SSO insch
 
 >[!NOTE]
 >
->De Vormen van AEM op JEE steunt het vormen SSO gebruikend Kerberos/SPNEGO in een veelvoudige milieu&#39;s van het kinddomein niet.
+>AEM Forms op JEE steunen het vormen SSO gebruikend Kerberos/SPNEGO in een veelvoudige milieu&#39;s van het kinddomein niet.
 
 1. Bepaal welk domein om SSO toe te laten te gebruiken. De AEM-formulierserver en de gebruikers moeten deel uitmaken van hetzelfde Windows-domein of vertrouwde domein.
 1. Maak in Active Directory een gebruiker die de AEM-formulierserver vertegenwoordigt. (Zie [Een gebruikersaccount](enabling-single-sign-on-aem.md#create-a-user-account)maken.) Als u meer dan één domein om SPNEGO te gebruiken vormt, zorg ervoor dat de wachtwoorden voor elk van deze gebruikers verschillend zijn. Als de wachtwoorden niet verschillend zijn, werkt SPNEGO SSO niet.
@@ -71,13 +74,13 @@ U kunt SSO ook toelaten door de kopballen van HTTP te gebruiken. (Zie [SSO insch
    * Voeg LDAP toe als verificatieprovider.
    * Voeg Kerberos als authentificatieleverancier toe. Verstrek de volgende informatie over de Nieuwe pagina of geef de pagina van de Authentificatie voor Kerberos uit:
 
-      * **** Verificatieprovider: Kerberos
-      * **** DNS IP: Het DNS IP-adres van de server waarop AEM-formulieren worden uitgevoerd. U kunt dit IP adres bepalen door `ipconfig/all` op de bevellijn te lopen.
-      * **** KDC-host: Volledig - gekwalificeerde gastheernaam of IP adres van de Actieve server van de Folder die voor authentificatie wordt gebruikt
-      * **** Servicegebruiker: De service principal name (SPN) die wordt doorgegeven aan het gereedschap KtPass. In het voorbeeld dat eerder wordt gebruikt, is de de dienstgebruiker `HTTP/lcserver.um.lc.com`.
-      * **** Servicerealm: Domeinnaam voor Active Directory. In het eerder gebruikte voorbeeld is de domeinnaam `UM.LC.COM.`
-      * **** Servicewachtwoord: Wachtwoord van de gebruiker van de dienst. In het voorbeeld dat eerder wordt gebruikt, is het de dienstwachtwoord `password`.
-      * **** SPNEGO inschakelen: Hiermee wordt het gebruik van SPNEGO voor Single Sign-On (SSO) ingeschakeld. Selecteer deze optie.
+      * **Verificatieprovider:** Kerberos
+      * **DNS IP:** Het DNS IP-adres van de server waarop AEM-formulieren worden uitgevoerd. U kunt dit IP adres bepalen door `ipconfig/all` op de bevellijn te lopen.
+      * **KDC-host:** Volledig - gekwalificeerde gastheernaam of IP adres van de Actieve server van de Folder die voor authentificatie wordt gebruikt
+      * **Servicegebruiker:** De service principal name (SPN) die wordt doorgegeven aan het gereedschap KtPass. In het voorbeeld dat eerder wordt gebruikt, is de de dienstgebruiker `HTTP/lcserver.um.lc.com`.
+      * **Servicerealm:** Domeinnaam voor Active Directory. In het eerder gebruikte voorbeeld is de domeinnaam `UM.LC.COM.`
+      * **Servicewachtwoord:** Wachtwoord van de gebruiker van de dienst. In het voorbeeld dat eerder wordt gebruikt, is het de dienstwachtwoord `password`.
+      * **SPNEGO inschakelen:** Hiermee wordt het gebruik van SPNEGO voor Single Sign-On (SSO) ingeschakeld. Selecteer deze optie.
 
 1. Configureer de instellingen van de SPNEGO-clientbrowser. (Zie [Instellingen](enabling-single-sign-on-aem.md#configuring-spnego-client-browser-settings)van SPNEGO-clientbrowser configureren.)
 
@@ -107,24 +110,25 @@ U kunt SSO ook toelaten door de kopballen van HTTP te gebruiken. (Zie [SSO insch
 
    De waarden die u moet verstrekken worden beschreven als volgt:
 
-   **** host: Volledig gekwalificeerde naam van de formulierserver of elke unieke URL. In dit voorbeeld is deze ingesteld op lcserver.um.lc.com.
+   **host:** Volledig gekwalificeerde naam van de formulierserver of elke unieke URL. In dit voorbeeld is deze ingesteld op lcserver.um.lc.com.
 
-   **** REALM: Het Actieve domein van de Folder voor het domeincontrolemechanisme. In dit voorbeeld is deze ingesteld op UM.LC.COM. Zorg ervoor dat u het domein in hoofdletters invoert. Voer de volgende stappen uit om het domein voor Windows 2003 te bepalen:
+   **REALM:** Het Actieve domein van de Folder voor het domeincontrolemechanisme. In dit voorbeeld is deze ingesteld op UM.LC.COM. Zorg ervoor dat u het domein in hoofdletters invoert. Voer de volgende stappen uit om het domein voor Windows 2003 te bepalen:
 
    * Klik met de rechtermuisknop op Deze computer en selecteer Eigenschappen
    * Klik op het tabblad Computernaam. De waarde van de Naam van het Domein is de domeinnaam.
-   **** gebruiker: De aanmeldnaam van de gebruikersaccount die u in de vorige taak hebt gemaakt. In dit voorbeeld is deze ingesteld op spnegodemo.
+
+   **gebruiker:** De aanmeldnaam van de gebruikersaccount die u in de vorige taak hebt gemaakt. In dit voorbeeld is deze ingesteld op spnegodemo.
 
 Als deze fout optreedt:
 
-```as3
+```java
 DsCrackNames returned 0x2 in the name entry for spnegodemo.
 ktpass:failed getting target domain for specified user.
 ```
 
 Geef de gebruiker op als spnegodemo@um.lc.com:
 
-```as3
+```java
 ktpass -princ HTTP/lcserver.um.lc.com@UM.LC.COM -mapuser spnegodemo
 ```
 

@@ -10,7 +10,10 @@ topic-tags: interactive-communications
 discoiquuid: bbaba39b-e15a-4143-b6fc-7789fa2917b4
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1694'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
 
 ## Inline-voorwaarden {#inline-conditions}
 
-Met AEM Forms kunt u inline voorwaarden in tekstmodules gebruiken om de weergave van tekst te automatiseren die afhankelijk is van de context of de gegevens die aan het formuliergegevensmodel (in interactieve communicatie) of het gegevenswoordenboek (in letters) zijn gekoppeld. De gealigneerde voorwaarde toont specifieke inhoud die op voorwaardevaluatie wordt gebaseerd waar of vals is.
+Met AEM Forms kunt u inline-omstandigheden gebruiken in tekstmodules om de rendering te automatiseren van tekst die afhankelijk is van de context of gegevens die aan het formuliergegevensmodel (in interactieve communicatie) of het gegevenswoordenboek (in letters) zijn gekoppeld. De gealigneerde voorwaarde toont specifieke inhoud die op voorwaardevaluatie wordt gebaseerd waar of vals is.
 
 De voorwaarden voeren berekeningen uit op gegevenswaarden die door het model/gegevenswoordenboek van de vormgegevens of door eind - gebruikers worden verstrekt. Met inline voorwaarden kunt u tijd besparen en menselijke fouten verminderen, terwijl u tegelijkertijd zeer contextuele en gepersonaliseerde interactieve communicatie/letters maakt.
 
@@ -37,7 +40,7 @@ Zie Regel maken in tekst in [Teksten in interactieve communicatie](../../forms/u
 
 Zodra u het tekstfragment in een Interactieve Communicatie omvat en de Agent gebruikt de Agent UI om een Interactieve Mededeling voor te bereiden, worden de (model van vormgegevens) gegevens voor de ontvangers geëvalueerd en de tekst wordt getoond slechts aan de ontvangers in de V.S.
 
-### Voorbeeld: Het gebruiken van gealigneerde voorwaarde in een brief om het aangewezen adres terug te geven {#example-using-inline-condition-in-a-letter-to-render-the-appropriate-address}
+### Voorbeeld: Het gebruiken van gealigneerde voorwaarde in een brief om het aangewezen adres terug te geven  {#example-using-inline-condition-in-a-letter-to-render-the-appropriate-address}
 
 U kunt inline voorwaarde in een brief opnemen door de gealigneerde voorwaarde in de aangewezen tekstmodule op te nemen. Het volgende voorbeeld gebruikt twee voorwaarden om het aangewezen adres, Sir of Ma&#39;am, in een brief te evalueren en te tonen die op het DD element Gender wordt gebaseerd. Met vergelijkbare stappen kunt u andere voorwaarden maken.
 
@@ -61,7 +64,7 @@ U kunt inline voorwaarde in een brief opnemen door de gealigneerde voorwaarde in
 
    Dubbeltik op een DD-element om dit in de voorwaarde in te voegen. Voeg de juiste operator in en stel de volgende voorwaarde in het dialoogvenster samen.
 
-   ```java
+   ```javascript
    ${DD_creditcard_Gender=="Male"}
    ```
 
@@ -73,7 +76,7 @@ U kunt inline voorwaarde in een brief opnemen door de gealigneerde voorwaarde in
 
 1. Voeg een vergelijkbare voorwaarde in door de tekst te selecteren `Ma'am`.
 
-   ```java
+   ```javascript
    ${DD_creditcard_Gender == "Female"}
    ```
 
@@ -81,6 +84,7 @@ U kunt inline voorwaarde in een brief opnemen door de gealigneerde voorwaarde in
 
    * Een voorbeeld-XML-gegevensbestand dat is gemaakt op basis van het relevante gegevenswoordenboek terwijl de letter wordt voorvertoond met voorbeeldgegevens.
    * Een XML-gegevensbestand dat is gekoppeld aan het desbetreffende gegevenswoordenboek.
+
    Zie [Gegevenswoordenboek](../../forms/using/data-dictionary.md)voor meer informatie.
 
    ![5_letteruitvoer](assets/5_letteroutput.png)
@@ -141,7 +145,7 @@ In het volgende voorbeeld worden de stappen beschreven voor het gebruik van herh
 
 1. Open (tijdens het bewerken of maken) een tekstmodule met DD-elementen die herhaalde/dynamische gegevens renderen en de vereiste tekst rond de DD-elementen insluiten. Een tekstmodule heeft bijvoorbeeld de volgende DD-elementen om een overzicht van transacties op een creditcard te maken:
 
-   ```
+   ```javascript
    {^DD_creditcard_TransactionDate^} {^DD_creditcard_TransactionAmount^}
    {^DD_creditcard_TransactionType^}
    ```
@@ -154,7 +158,7 @@ In het volgende voorbeeld worden de stappen beschreven voor het gebruik van herh
 
    ![1_repeat](assets/1_repeat.png)
 
-   ```
+   ```javascript
    Date: {^DD_creditcard_TransactionDate^} Amount (USD): {^DD_creditcard_TransactionAmount^} Transaction Type: {^DD_creditcard_TransactionType^}
    ```
 
@@ -174,7 +178,7 @@ In het volgende voorbeeld worden de stappen beschreven voor het gebruik van herh
 
 1. Voeg zo nodig een voorwaarde in om de transacties selectief te renderen, bijvoorbeeld om transactiebedragen van meer dan 50 cent te renderen:
 
-   ```
+   ```javascript
    ${DD_creditcard_TransactionAmount > 0.5}
    ```
 
@@ -184,6 +188,7 @@ In het volgende voorbeeld worden de stappen beschreven voor het gebruik van herh
 
    * **Regeleinde**: Voegt een regeleinde in na elk transactieitem in de uitvoerletter.
    * **Tekst**: Hiermee wordt het opgegeven tekstteken ingevoegd na elk transactiemateriaal in de uitvoerletter.
+
    Nadat de voorwaarde is ingevoegd, wordt de tekst met de herhaling rood gemarkeerd en wordt er een greep aan de linkerkant weergegeven. U kunt de aanwijzer boven de greep links van de herhaling plaatsen om de herhalingsconstructie weer te geven.
 
    ![4_repeat_hoverdetail](assets/4_repeat_hoverdetail.png)
@@ -196,6 +201,7 @@ In het volgende voorbeeld worden de stappen beschreven voor het gebruik van herh
 
    * Een voorbeeld-XML-gegevensbestand dat is gemaakt op basis van het relevante gegevenswoordenboek terwijl de letter wordt voorvertoond met voorbeeldgegevens.
    * Een XML-gegevensbestand dat is gekoppeld aan het desbetreffende gegevenswoordenboek.
+
    Zie [Gegevenswoordenboek](https://helpx.adobe.com/aem-forms/6-2/data-dictionary.html)voor meer informatie.
 
    ![6_repeatOutputPreview](assets/6_repeatoutputpreview.png)
@@ -206,7 +212,7 @@ In het volgende voorbeeld worden de stappen beschreven voor het gebruik van herh
    >
    >U kunt voorwaarde en herhaling slechts opnemen terwijl het creëren van of het uitgeven van de relevante tekstmodule. Terwijl u een voorvertoning van de letter weergeeft, kunt u wel bewerkingen in de tekstmodule uitvoeren, maar kunt u geen voorwaarde of herhaling invoegen.
 
-## Inline voorwaarde en herhaling gebruiken - sommige gebruiksgevallen {#using-inline-condition-and-repeat-some-use-cases}
+## Inline voorwaarde en herhaling gebruiken - sommige gebruiksgevallen  {#using-inline-condition-and-repeat-some-use-cases}
 
 ### Herhalen binnen voorwaarde {#repeat-within-condition}
 
@@ -218,11 +224,11 @@ Terwijl de herhaling de creditcardtransacties teruggeeft, verzekert de voorwaard
 
 ![herhaaldelijke toestand](assets/repeatwitincondition.png)
 
-Op dezelfde manier kunt u, afhankelijk van uw vereiste, tot stand brengen:
+Op dezelfde manier kunt u volgens uw vereiste het volgende maken:
 
 * Een of meer voorwaarden binnen een voorwaarde
 * Een of meer voorwaarden binnen een herhaling
-* Een combinatie van voorwaarden en herhaling binnen een voorwaarde of herhaling
+* Een combinatie van voorwaarden en herhaling binnen een toestand of herhaling
 
 ### Lege inline-voorwaarde {#empty-inline-condition}
 

@@ -11,7 +11,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: b4f57e42-60a6-407d-9764-15a11615827d
 translation-type: tm+mt
-source-git-commit: 2e4b8ee13257758cba6b76012fed4958f7eabbd7
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1842'
+ht-degree: 0%
 
 ---
 
@@ -77,7 +80,7 @@ In deze sectie wordt een eenvoudig interactief formulier met een script dat is g
 
 De syntaxis van het script in dit formulierontwerp is als volgt:
 
-```as3
+```javascript
      NumericField3 = NumericField2 + NumericField1
 ```
 
@@ -89,7 +92,7 @@ In dit formulierontwerp is de knop Berekenen een opdrachtknop en bevindt het scr
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van Vormen, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Voor meer informatie over de dienst van Vormen, zie de Verwijzing van de [Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Overzicht van de stappen {#summary-of-steps}
 
@@ -120,7 +123,7 @@ Nadat u hebt gecontroleerd welke verwerkingsstatus aan een verzonden formulier i
 
 **Zie ook**
 
-[Met inbegrip van AEM-formulieren Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)[Formuliergegevens berekenen met de Java API](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-java-api)[Formuliergegevens berekenen met behulp van de webservice API](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-web-service-api)[Verbindingseigenschappen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)[Formulierservice-API Snelle start](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)[](/help/forms/developing/rendering-interactive-pdf-forms.md)[Interactieve PDF-formulierenRenderingCreëren van webtoepassingen die formulieren genereren](/help/forms/developing/creating-web-applications-renders-forms.md)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)[Formuliergegevens berekenen met de Java API](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-java-api)[Formuliergegevens berekenen met behulp van de API](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-web-service-api)[Setting connection properties](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)[Forms Service API Quick Starts](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)[](/help/forms/developing/rendering-interactive-pdf-forms.md)[Rendering Interactive PDF formsRenderingCreating Web Applications that Renders](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ## Formuliergegevens berekenen met de Java API {#calculate-form-data-using-the-java-api}
 
@@ -144,6 +147,7 @@ Formuliergegevens berekenen met de API voor formulieren (Java):
       * Een tekenreekswaarde die omgevingsvariabelen opgeeft, inclusief alle relevante HTTP-headers. U moet het inhoudstype specificeren om te behandelen door één of meerdere waarden voor de `CONTENT_TYPE` omgevingsvariabele te specificeren. Als u bijvoorbeeld XML- en PDF-gegevens wilt verwerken, geeft u de volgende tekenreekswaarde op voor deze parameter: `CONTENT_TYPE=application/xml&CONTENT_TYPE=application/pdf`
       * Een tekenreekswaarde die de `HTTP_USER_AGENT` koptekstwaarde opgeeft; bijvoorbeeld `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
       * Een `RenderOptionsSpec` object dat uitvoeringsopties opslaat.
+
       De `processFormSubmission` methode retourneert een `FormsResult` object dat de resultaten van het verzenden van het formulier bevat.
 
    * Controleer of de verwerkingsstatus die aan een verzonden formulier is gekoppeld, `1` door de `FormsResult` methode van het `getAction` object aan te roepen. Als deze methode de waarde retourneert `1`, is de berekening uitgevoerd en kunnen de gegevens worden teruggeschreven naar de webbrowser van de client.
@@ -197,6 +201,7 @@ Formuliergegevens berekenen met de API voor formulieren (webservice):
       * Een leeg `javax.xml.rpc.holders.ShortHolder` object dat door de methode wordt gevuld.
       * Een leeg `MyArrayOf_xsd_anyTypeHolder` object dat door de methode wordt gevuld. Met deze parameter worden bestandsbijlagen opgeslagen die samen met het formulier worden verzonden.
       * Een leeg `FormsResultHolder` object dat door de methode wordt gevuld met het formulier dat wordt verzonden.
+
       De `processFormSubmission` methode vult de `FormsResultHolder` parameter met de resultaten van het verzenden van het formulier. De `processFormSubmission` methode retourneert een `FormsResult` object dat de resultaten van het verzenden van het formulier bevat.
 
    * Controleer of de verwerkingsstatus die aan een verzonden formulier is gekoppeld, `1` door de `FormsResult` methode van het `getAction` object aan te roepen. Als deze methode de waarde retourneert `1`, is de berekening uitgevoerd en kunnen de gegevens worden teruggeschreven naar de webbrowser van de client.
@@ -209,4 +214,4 @@ Formuliergegevens berekenen met de API voor formulieren (webservice):
    * Maak een bytearray en vul deze door de `BLOB` methode van het `getBinaryData` object aan te roepen. Hierdoor wordt de inhoud van het `FormsResult` object toegewezen aan de bytearray.
    * Roep de `javax.servlet.http.HttpServletResponse` methode van het `write` object aan om de formuliergegevensstroom naar de webbrowser van de client te verzenden. Geef de bytearray door aan de `write` methode.
 
-**Zie ook** AEM-formulieren[aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+**Zie ook** AEM Forms[aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)

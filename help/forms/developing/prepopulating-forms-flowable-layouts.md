@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 30a12fc6-07b8-4c7c-b9e2-caa2bec0ac48
 translation-type: tm+mt
-source-git-commit: ebb60e79aa7fb45e059e2d2451f6d549cd24b8b0
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '3489'
+ht-degree: 0%
 
 ---
 
@@ -36,11 +39,11 @@ Er moet een XML-element aanwezig zijn voor elk formulierveld dat u vooraf wilt i
 
 Wanneer u een formulier invult dat al gegevens bevat, moet u opgeven welke gegevens al in de XML-gegevensbron worden weergegeven. Stel dat een formulier met tien velden gegevens bevat in vier velden. Ga er vervolgens van uit dat u de resterende zes velden vooraf wilt invullen. In dit geval moet u 10 XML-elementen opgeven in de XML-gegevensbron die wordt gebruikt om het formulier vooraf in te vullen. Als u slechts zes elementen opgeeft, zijn de oorspronkelijke vier velden leeg.
 
-U kunt bijvoorbeeld een formulier zoals het voorbeeldbevestigingsformulier vooraf invullen. (Zie &quot;Bevestigingsformulier&quot; in [Interactieve PDF-formulieren](/help/forms/developing/rendering-interactive-pdf-forms.md)weergeven.)
+U kunt bijvoorbeeld een formulier zoals het voorbeeldbevestigingsformulier vooraf invullen. (Zie &#39;Bevestigingsformulier&#39; in Interactieve PDF forms [](/help/forms/developing/rendering-interactive-pdf-forms.md)renderen.)
 
-Als u het voorbeeldbevestigingsformulier vooraf wilt invullen, moet u een XML-gegevensbron maken die drie XML-elementen bevat die overeenkomen met de drie velden in het formulier. Dit formulier bevat de volgende drie velden: `FirstName`, `LastName`, en `Amount`. De eerste stap bestaat uit het maken van een XML-gegevensbron die XML-elementen bevat die overeenkomen met de velden in het formulierontwerp. De volgende stap bestaat uit het toewijzen van gegevenswaarden aan de XML-elementen, zoals in de volgende XML-code wordt getoond.
+Als u het voorbeeldbevestigingsformulier vooraf wilt invullen, moet u een XML-gegevensbron maken die drie XML-elementen bevat die overeenkomen met de drie velden in het formulier. Dit formulier bevat de volgende drie velden: `FirstName`, `LastName`en `Amount`. De eerste stap bestaat uit het maken van een XML-gegevensbron die XML-elementen bevat die overeenkomen met de velden in het formulierontwerp. De volgende stap bestaat uit het toewijzen van gegevenswaarden aan de XML-elementen, zoals in de volgende XML-code wordt getoond.
 
-```as3
+```xml
      <Untitled>
          <FirstName>Jerry</FirstName>
          <LastName>Johnson</LastName>
@@ -111,7 +114,7 @@ Een XML-gegevensbron die wordt gebruikt om de inkoopordervorm die in het vorige 
 
 De volgende XML-gegevensbron wordt gebruikt om het inkooporderformulier vooraf in te vullen.
 
-```as3
+```xml
      <header>
          <!-- XML elements used to prepopulate non-repeating fields such as address
          <!and city
@@ -188,7 +191,7 @@ Elke gegevenssubgroep moet XML-elementen bevatten die overeenkomen met de veldna
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van Vormen, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Voor meer informatie over de dienst van Vormen, zie de Verwijzing van de [Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary-of-steps}
 
@@ -225,13 +228,13 @@ U kunt een vooraf ingevuld formulier net als een ander formulier weergeven. Het 
 
 **Zie ook**
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 [Forms Service API, snel aan de slag](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Interactieve PDF-formulieren renderen](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Interactieve PDF forms renderen](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
 [Webtoepassingen maken die formulieren renderen](/help/forms/developing/creating-web-applications-renders-forms.md)
 
@@ -270,7 +273,7 @@ Voer de volgende stappen uit om een formulier vooraf in te vullen met een stroom
 
       ` Element txtPartNum = (Element)document.createElement("txtPartNum");  txtPartNum.appendChild(document.createTextNode("00010-100"));  detail.appendChild(txtPartNum);`
 
-   * Herhaal de laatste substap voor alle XML-elementen die aan het detailelement moeten worden toegevoegd. Als u de XML-gegevensbron correct wilt maken die wordt gebruikt om het inkooporderformulier te vullen, moet u de volgende XML-elementen aan het detailelement toevoegen: `txtDescription`, `numQty`, en `numUnitPrice`.
+   * Herhaal de laatste substap voor alle XML-elementen die aan het detailelement moeten worden toegevoegd. Als u de XML-gegevensbron correct wilt maken die wordt gebruikt om het inkooporderformulier te vullen, moet u de volgende XML-elementen aan het detailelement toevoegen: `txtDescription`, `numQty`en `numUnitPrice`.
    * Herhaal de laatste twee substappen voor alle gegevensitems die worden gebruikt om het formulier vooraf in te vullen.
 
 1. De XML-gegevensbron converteren
@@ -294,6 +297,7 @@ Voer de volgende stappen uit om een formulier vooraf in te vullen met een stroom
    * Een `PDFFormRenderSpec` object dat uitvoeringsopties opslaat.
    * Een `URLSpec` object dat URI-waarden bevat die door de service Forms worden vereist.
    * Een `java.util.HashMap` object dat bestandsbijlagen opslaat. Dit is een optionele parameter en u kunt opgeven `null` of u geen bestanden aan het formulier wilt koppelen.
+
    De `renderPDFForm` methode retourneert een `FormsResult` object dat een formuliergegevensstroom bevat die naar de webbrowser van de client moet worden geschreven.
 
    * Maak een `javax.servlet.ServletOutputStream` object dat wordt gebruikt om een formuliergegevensstroom naar de webbrowser van de client te verzenden.
@@ -307,7 +311,7 @@ Voer de volgende stappen uit om een formulier vooraf in te vullen met een stroom
 
 [Snel starten (SOAP-modus): Formulieren met stroombare indelingen vooraf invullen met de Java API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -346,7 +350,7 @@ Voer de volgende stappen uit om een formulier met een stroombare indeling vooraf
 
       ` Element txtPartNum = (Element)document.createElement("txtPartNum");  txtPartNum.appendChild(document.createTextNode("00010-100"));  detail.appendChild(txtPartNum);`
 
-   * Herhaal de laatste substap voor alle XML-elementen die aan het detailelement moeten worden toegevoegd. Als u de XML-gegevensbron correct wilt maken die wordt gebruikt om het inkooporderformulier te vullen, moet u de volgende XML-elementen aan het detailelement toevoegen: `txtDescription`, `numQty`, en `numUnitPrice`.
+   * Herhaal de laatste substap voor alle XML-elementen die aan het detailelement moeten worden toegevoegd. Als u de XML-gegevensbron correct wilt maken die wordt gebruikt om het inkooporderformulier te vullen, moet u de volgende XML-elementen aan het detailelement toevoegen: `txtDescription`, `numQty`en `numUnitPrice`.
    * Herhaal de laatste twee substappen voor alle gegevensitems die worden gebruikt om het formulier vooraf in te vullen.
 
 1. De XML-gegevensbron converteren
@@ -374,6 +378,7 @@ Voer de volgende stappen uit om een formulier met een stroombare indeling vooraf
    * Een leeg `javax.xml.rpc.holders.LongHolder` object dat door de methode wordt gevuld. (In dit argument wordt het aantal pagina&#39;s in het formulier opgeslagen).
    * Een leeg `javax.xml.rpc.holders.StringHolder` object dat door de methode wordt gevuld. (In dit argument wordt de waarde van de landinstelling opgeslagen.)
    * Een leeg `com.adobe.idp.services.holders.FormsResultHolder` object dat de resultaten van deze bewerking zal bevatten.
+
    De `renderPDFForm` methode vult het `com.adobe.idp.services.holders.FormsResultHolder` object dat als laatste argumentwaarde wordt doorgegeven, met een formuliergegevensstroom die naar de webbrowser van de client moet worden geschreven.
 
    * Maak een `FormResult` object door de waarde van het `com.adobe.idp.services.holders.FormsResultHolder` `value` gegevenslid van het object op te halen.
@@ -383,11 +388,12 @@ Voer de volgende stappen uit om een formulier met een stroombare indeling vooraf
    * Maak een `javax.servlet.ServletOutputStream` object dat wordt gebruikt om de gegevensstroom van het formulier naar de webbrowser van de client te schrijven door de `javax.servlet.http.HttpServletResponse` methode van het `getOutputStream` object aan te roepen.
    * Maak een bytearray en vul deze door de `BLOB` methode van het `getBinaryData` object aan te roepen. Hierdoor wordt de inhoud van het `FormsResult` object toegewezen aan de bytearray.
    * Roep de `javax.servlet.http.HttpServletResponse` methode van het `write` object aan om de formuliergegevensstroom naar de webbrowser van de client te verzenden. Geef de bytearray door aan de `write` methode.
+
    >[!NOTE]
    >
    >De `renderPDFForm` methode vult het `com.adobe.idp.services.holders.FormsResultHolder` object dat als laatste argumentwaarde wordt doorgegeven, met een formuliergegevensstroom die naar de webbrowser van de client moet worden geschreven.
 
 **Zie ook**
 
-[AEM-formulieren aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[AEM Forms aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
 

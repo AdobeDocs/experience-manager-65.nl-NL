@@ -12,7 +12,10 @@ topic-tags: operations
 discoiquuid: c4706632-02e5-4510-ad9c-4f732d5fbdad
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9678b4979580bab23dea8ca7493b48b63d5bcfa6
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1876'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +40,7 @@ Dit fragment bevat twee subformulieren met de naam *subPatientphysical* en *subP
 
 In het volgende DDX-document worden meerdere XDP-fragmenten samengevoegd in een XDP-document.
 
-```as3
+```xml
  <?xml version="1.0" encoding="UTF-8"?>
  <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
          <XDP result="tuc018result.xdp">
@@ -52,7 +55,7 @@ In het volgende DDX-document worden meerdere XDP-fragmenten samengevoegd in een 
 
 Het DDX-document bevat een XDP- `result` tag met de naam van het resultaat. In deze situatie is de waarde `tuc018result.xdp`. Naar deze waarde wordt verwezen in de toepassingslogica die wordt gebruikt om het XDP-document op te halen nadat de Assembler-service het resultaat heeft geretourneerd. Neem bijvoorbeeld de volgende Java-toepassingslogica die wordt gebruikt om het geassembleerde XDP-document op te halen (de waarde is vet):
 
-```as3
+```java
  //Iterate through the map object to retrieve the result XDP document
  for (Iterator i = allDocs.entrySet().iterator(); i.hasNext();) {
      // Retrieve the Map object’s value
@@ -71,13 +74,13 @@ Het DDX-document bevat een XDP- `result` tag met de naam van het resultaat. In d
  }
 ```
 
-Met de `XDP source` tag wordt het XDP-bestand opgegeven dat een volledig XDP-document vertegenwoordigt dat kan worden gebruikt als container voor het toevoegen van XDP-fragmenten of als een van een aantal documenten die op volgorde worden toegevoegd. In deze situatie wordt het XDP-document alleen als container gebruikt (de eerste illustratie die wordt getoond in *Meerdere XDP-fragmenten* samenvoegen). De andere XDP-bestanden worden dus in de XDP-container geplaatst.
+Met de `XDP source` tag wordt het XDP-bestand opgegeven dat een volledig XDP-document vertegenwoordigt dat kan worden gebruikt als container voor het toevoegen van XDP-fragmenten of als een van een aantal documenten die op volgorde worden toegevoegd. In deze situatie wordt het XDP-document alleen als container gebruikt (de eerste illustratie die wordt getoond in Meerdere XDP-fragmenten *samenvoegen*). De andere XDP-bestanden worden dus in de XDP-container geplaatst.
 
-Voor elk subformulier kunt u een `XDPContent` element toevoegen (dit element is optioneel). In het bovenstaande voorbeeld zijn er drie subformulieren: `subPatientContact`, `subPatientPhysical`, en `subPatientHealth`. Zowel het `subPatientPhysical` subformulier als het `subPatientHealth` subformulier bevinden zich in hetzelfde XDP-bestand, tuc018_patiënt.xdp. Het fragmentelement geeft de naam van het subformulier op, zoals gedefinieerd in Designer.
+Voor elk subformulier kunt u een `XDPContent` element toevoegen (dit element is optioneel). In het bovenstaande voorbeeld zijn er drie subformulieren: `subPatientContact`, `subPatientPhysical`en `subPatientHealth`. Zowel het `subPatientPhysical` subformulier als het `subPatientHealth` subformulier bevinden zich in hetzelfde XDP-bestand, tuc018_patiënt.xdp. Het fragmentelement geeft de naam van het subformulier op, zoals gedefinieerd in Designer.
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Assembler, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Voor meer informatie over de dienst van de Assembler, zie de Verwijzing van de [Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
@@ -104,8 +107,8 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
-* jbossall-client.jar (vereist als AEM-formulieren worden geïmplementeerd op JBoss)
+* adobe-utilities.jar (vereist als AEM Forms worden geïmplementeerd op JBoss)
+* jbossall-client.jar (vereist als AEM Forms worden geïmplementeerd op JBoss)
 
 **Een PDF Assembler-client maken**
 
@@ -119,7 +122,7 @@ Er moet naar een DDX-document worden verwezen om meerdere XDP-documenten samen t
 
 Als u meerdere XDP-documenten wilt samenstellen, verwijst u naar alle XDP-bestanden die worden gebruikt om het resultaat-XDP-document samen te stellen. Controleer of de naam van het subformulier in het XDP-document waarnaar wordt verwezen door het `source` kenmerk, is opgegeven in het `fragment` kenmerk. Een subformulier wordt gedefinieerd in Designer. Neem bijvoorbeeld de volgende XML.
 
-```as3
+```xml
  <XDPContent insertionPoint="ddx_fragment" source="tuc018_contact.xdp" fragment="subPatientContact" required="false"/>
 ```
 
@@ -143,7 +146,7 @@ Een samengesteld XDP-document wordt geretourneerd binnen een verzamelingsobject.
 
 [Meerdere XDP-fragmenten samenstellen met de webservice-API](assembling-multiple-xdp-fragments.md#assemble-multiple-xdp-fragments-using-the-web-service-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -190,6 +193,7 @@ U kunt meerdere XDP-fragmenten samenstellen met behulp van de API (Java) voor ve
    * Een `com.adobe.idp.Document` object dat staat voor het te gebruiken DDX-document
    * Een `java.util.Map` object dat de invoer-XDP-bestanden bevat
    * Een `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` object dat de runtime-opties opgeeft, inclusief het standaardfont en het logniveau van de taak
+
    De `invokeDDX` methode retourneert een `com.adobe.livecycle.assembler.client.AssemblerResult` object dat het geassembleerde XDP-document bevat.
 
 1. Haal het samengevoegde XDP-document op.
@@ -202,7 +206,7 @@ U kunt meerdere XDP-fragmenten samenstellen met behulp van de API (Java) voor ve
 
 **Zie ook**
 
-[Meerdere XDP-fragmenten](assembling-multiple-xdp-fragments.md#assembling-multiple-xdp-fragments)[snel starten samenstellen (SOAP-modus): Meerdere XDP-fragmenten samenstellen met de Java API](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)[inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)[Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
+[Meerdere XDP-fragmenten](assembling-multiple-xdp-fragments.md#assembling-multiple-xdp-fragments)[snel starten samenstellen (SOAP-modus): Meerdere XDP-fragmenten samenstellen met de Java API](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)[Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ## Meerdere XDP-fragmenten samenstellen met de webservice-API {#assemble-multiple-xdp-fragments-using-the-web-service-api}
 
@@ -212,7 +216,7 @@ U kunt meerdere XDP-fragmenten samenstellen met behulp van de API (webservice) v
 
    Creeer een project van Microsoft .NET dat MTOM gebruikt. Zorg ervoor dat u de volgende definitie van WSDL gebruikt wanneer het plaatsen van een de dienstverwijzing:
 
-   ```as3
+   ```java
     https://localhost:8080/soap/services/AssemblerService?WSDL&lc_version=9.0.1.
    ```
 
@@ -223,7 +227,7 @@ U kunt meerdere XDP-fragmenten samenstellen met behulp van de API (webservice) v
 1. Maak een PDF Assembler-client.
 
    * Maak een `AssemblerServiceClient` object met de standaardconstructor.
-   * Maak een `AssemblerServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde door die de WSDL opgeeft voor de AEM Forms-service, zoals `https://localhost:8080/soap/services/AssemblerService?blob=mtom`). U hoeft het `lc_version` kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.
+   * Maak een `AssemblerServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde door die de WSDL opgeeft voor de service AEM Forms, zoals `https://localhost:8080/soap/services/AssemblerService?blob=mtom`). U hoeft het `lc_version` kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.
    * Maak een `System.ServiceModel.BasicHttpBinding` object door de waarde van het `AssemblerServiceClient.Endpoint.Binding` veld op te halen. Kiezen naar de geretourneerde waarde `BasicHttpBinding`.
    * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
@@ -266,6 +270,7 @@ U kunt meerdere XDP-fragmenten samenstellen met behulp van de API (webservice) v
    * Een `BLOB` object dat staat voor het DDX-document
    * Het `MyMapOf_xsd_string_To_xsd_anyType` object dat de vereiste bestanden bevat
    * Een `AssemblerOptionSpec` object dat uitvoeringsopties opgeeft
+
    De `invokeDDX` methode retourneert een `AssemblerResult` object dat de resultaten van de taak en eventuele uitzonderingen bevat die zich hebben voorgedaan.
 
 1. Haal het samengevoegde XDP-document op.
@@ -278,4 +283,4 @@ U kunt meerdere XDP-fragmenten samenstellen met behulp van de API (webservice) v
 
 **Zie ook**
 
-[Meerdere XDP-fragmenten samenstellen](assembling-multiple-xdp-fragments.md#assembling-multiple-xdp-fragments)AEM-formulieren[aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Meerdere XDP-fragmenten samenstellen](assembling-multiple-xdp-fragments.md#assembling-multiple-xdp-fragments)AEM Forms[aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)

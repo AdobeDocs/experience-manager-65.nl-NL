@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6128c91a-4173-42b4-926f-bbbb2b54ba5b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: fa99c3bc2110aadb403920aa3e0fcf0919f26735
+source-git-commit: d488b1acc789c0fb1a631e58844d9fe9a70c2662
 workflow-type: tm+mt
-source-wordcount: '2611'
+source-wordcount: '2610'
 ht-degree: 0%
 
 ---
@@ -95,7 +95,7 @@ De belangrijkste MSM API-objecten hebben als volgt interactie (zie ook Gebruikte
 
    * Voor het eerst dat een live kopie wordt ingesteld, wordt ook een RolloutConfig gebruikt (die de LiveActions activeert).
 
-### Nieuwe synchronisatiehandeling maken {#creating-a-new-synchronization-action}
+## Nieuwe synchronisatiehandeling maken {#creating-a-new-synchronization-action}
 
 Creeer de acties van de douanesynchronisatie om met uw rollout configuraties te gebruiken. Maak een synchronisatiehandeling als de [geïnstalleerde handelingen](/help/sites-administering/msm-sync.md#installed-synchronization-actions) niet voldoen aan uw specifieke toepassingsvereisten. Hiertoe maakt u twee klassen:
 
@@ -162,7 +162,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 >
 >De `Resource` argumenten kunnen `null` of `Resources` voorwerpen zijn die niet aan `Node` voorwerpen, zoals [ `NonExistingResource`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/NonExistingResource.html) voorwerpen aanpassen.
 
-### Een nieuwe rollout-configuratie maken {#creating-a-new-rollout-configuration}
+## Een nieuwe rollout-configuratie maken {#creating-a-new-rollout-configuration}
 
 Maak een rollout-configuratie wanneer de geïnstalleerde rollout-configuraties niet voldoen aan de toepassingsvereisten:
 
@@ -175,7 +175,7 @@ De nieuwe rollout configuratie is dan beschikbaar aan u wanneer het plaatsen van
 >
 >Zie ook de [beste werkwijzen voor het aanpassen van rollouts](/help/sites-administering/msm-best-practices.md#customizing-rollouts).
 
-#### De configuratie voor rollout maken {#create-the-rollout-configuration}
+### De configuratie voor rollout maken {#create-the-rollout-configuration}
 
 Een nieuwe rollout-configuratie maken:
 
@@ -224,7 +224,7 @@ Een nieuwe rollout-configuratie maken:
 
 1. Klik op Alles **opslaan**.
 
-#### Synchronisatiehandelingen toevoegen aan de configuratie van de rollout {#add-synchronization-actions-to-the-rollout-configuration}
+### Synchronisatiehandelingen toevoegen aan de configuratie van de rollout {#add-synchronization-actions-to-the-rollout-configuration}
 
 De configuraties van de rollout worden opgeslagen onder de knoop [van de](#create-the-rollout-configuration) rollout configuratie die u onder `/apps/msm/<your-project>/rolloutconfigs` knoop hebt gecreeerd.
 
@@ -243,7 +243,7 @@ De naam moet gelijk zijn aan de naam **van de** handeling in de tabel onder [Syn
 
 1. Voeg en vorm zo vele knopen van de synchronisatieactie toe aangezien u vereist. Wijzig de rangschikking van de actieknoppen zodat de volgorde overeenkomt met de volgorde waarin u deze wilt uitvoeren. Het bovenste actieknooppunt komt eerst voor.
 
-### Een eenvoudige LiveActionFactory-klasse maken en gebruiken {#creating-and-using-a-simple-liveactionfactory-class}
+## Een eenvoudige LiveActionFactory-klasse maken en gebruiken {#creating-and-using-a-simple-liveactionfactory-class}
 
 Volg de procedures in deze sectie om een `LiveActionFactory` en gebruik het in een rollout configuratie te ontwikkelen. De procedures gebruiken Maven en Eclipse om `LiveActionFactory`:
 
@@ -262,7 +262,7 @@ U kunt de code van deze pagina op GitHub vinden
 * [Open ExperienceManager-java-msmrollout project op GitHub](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-msmrollout)
 * Het project downloaden als [ZIP-bestand](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-msmrollout/archive/master.zip)
 
-#### Maven {#create-the-maven-project}
+### Maven {#create-the-maven-project}
 
 Voor de volgende procedure is het vereist dat u het adobe-public profiel hebt toegevoegd aan het Maven-instellingenbestand.
 
@@ -288,7 +288,7 @@ Voor de volgende procedure is het vereist dat u het adobe-public profiel hebt to
 
 1. Start Eclipse en [importeer het Maven-project](/help/sites-developing/howto-projects-eclipse.md#import-the-maven-project-into-eclipse).
 
-#### Afhankelijkheden toevoegen aan het POM-bestand {#add-dependencies-to-the-pom-file}
+### Afhankelijkheden toevoegen aan het POM-bestand {#add-dependencies-to-the-pom-file}
 
 Voeg gebiedsdelen toe zodat de compiler van de Verduistering de klassen kan van verwijzingen voorzien die in de `LiveActionFactory` code worden gebruikt.
 
@@ -345,7 +345,7 @@ Voeg gebiedsdelen toe zodat de compiler van de Verduistering de klassen kan van 
    ```
 
 1. Open het POM- dossier voor de bundel van de Ontdekkingsreiziger **van het** Project bij `MyLiveActionFactory-bundle/pom.xml`.
-1. Klik in de editor op het `pom.xml` tabblad en zoek de sectie Project/afhankelijkheden. Voeg de volgende XML binnen het gebiedsdeelelement toe en sla dan het dossier op:
+1. Klik in de editor op het `pom.xml` tabblad en zoek de sectie Project/afhankelijkheden. Voeg de volgende XML binnen het gebiedsdeelelement toe en bewaar dan het dossier:
 
    ```xml
     <dependency>
@@ -378,7 +378,7 @@ Voeg gebiedsdelen toe zodat de compiler van de Verduistering de klassen kan van 
     </dependency>
    ```
 
-#### LiveActionFactory implementeren {#implement-liveactionfactory}
+### LiveActionFactory implementeren {#implement-liveactionfactory}
 
 De volgende `LiveActionFactory` klasse voert een `LiveAction` die berichten over de bron en doelpagina&#39;s registreert uit, en kopieert het `cq:lastModifiedBy` bezit van de bronknoop aan de doelknoop. De naam van de live actie is `exampleLiveAction`.
 
@@ -544,7 +544,7 @@ De volgende `LiveActionFactory` klasse voert een `LiveAction` die berichten over
    13.08.2013 14:34:55.454 *INFO* [OsgiInstallerImpl] org.apache.sling.audit.osgi.installer Started bundle com.adobe.example.msm.MyLiveActionFactory-bundle [316]
    ```
 
-#### De voorbeeldconfiguratie voor rollout maken {#create-the-example-rollout-configuration}
+### De voorbeeldconfiguratie voor rollout maken {#create-the-example-rollout-configuration}
 
 Creeer de MSM rollout configuratie die de `LiveActionFactory` die u creeerde gebruikt:
 
@@ -554,7 +554,7 @@ Creeer de MSM rollout configuratie die de `LiveActionFactory` die u creeerde geb
    * **Naam**: voorbeplerolloutconfig
    * **cq:trigger**: `publish`
 
-#### Voeg de Actieve Actie aan de Configuratie van de Uitvoer van het Voorbeeld toe {#add-the-live-action-to-the-example-rollout-configuration}
+### Voeg de Actieve Actie aan de Configuratie van de Uitvoer van het Voorbeeld toe {#add-the-live-action-to-the-example-rollout-configuration}
 
 Vorm de rollout configuratie die u in de vorige procedure creeerde zodat het de `ExampleLiveActionFactory` klasse gebruikt.
 
@@ -575,7 +575,7 @@ Vorm de rollout configuratie die u in de vorige procedure creeerde zodat het de 
 
 1. Klik op Alles **opslaan**.
 
-#### Live kopie maken {#create-the-live-copy}
+### Live kopie maken {#create-the-live-copy}
 
 [Creeer een levende kopie](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page) van de Engelse/Producten tak van de Plaats van de Verwijzing Wij.Retail gebruikend uw rollout configuratie:
 
@@ -591,7 +591,7 @@ Activeer de pagina **Producten** (Engels) van de brontak en bekijk de logboekber
 ```
 
 <!--
-### Removing the Chapters Step in the Create Site Wizard {#removing-the-chapters-step-in-the-create-site-wizard}
+## Removing the Chapters Step in the Create Site Wizard {#removing-the-chapters-step-in-the-create-site-wizard}
 
 In some cases, the **Chapters** selection is not required in the create site wizard (only the **Languages** selection is required). To remove this step in the default We.Retail English blueprint:
 
@@ -611,7 +611,7 @@ In some cases, the **Chapters** selection is not required in the create site wiz
     1. **Name** = `xtype`; **Type** = `String`; **Value** = `hidden`
 -->
 
-### Taalnamen en standaardlanden wijzigen {#changing-language-names-and-default-countries}
+## Taalnamen en standaardlanden wijzigen {#changing-language-names-and-default-countries}
 
 AEM gebruikt een standaardreeks taal en landcodes.
 
@@ -641,9 +641,7 @@ De talen wijzigen:
 
    Geef de nieuwe map een naam `wcm`.
 
-1. Herhaal de vorige stap om de `/apps/wcm/core` mappenstructuur te maken. Creeer een knoop van type `sling:Folder` in `core` geroepen `resources`.
-
-   ![chlimage_1-77](assets/chlimage_1-77.png)
+1. Herhaal de vorige stap om de `/apps/wcm/core` mappenstructuur te maken. Creeer een knoop van type `sling:Folder` in `core` geroepen `resources`. <!-- ![chlimage_1-77](assets/chlimage_1-77.png) -->
 
 1. Klik met de rechtermuisknop op het `/libs/wcm/core/resources/languages` knooppunt en klik op **Kopiëren**.
 1. Klik met de rechtermuisknop op de `/apps/wcm/core/resources` map en klik op **Plakken**. Wijzig de onderliggende knooppunten naar wens.
@@ -651,9 +649,9 @@ De talen wijzigen:
 1. Klik **Hulpmiddelen**, **Verrichtingen** dan de Console **van het** Web. Van deze console klik **OSGi**, dan **Configuratie**.
 1. Zoek en klik op **Day CQ WCM Language Manager** en wijzig de waarde van **Taallijst** in `/apps/wcm/core/resources/languages`. Klik vervolgens op **Opslaan**.
 
-   ![chlimage_1-70](assets/chlimage_1-78.png)
+   ![chlimage_1-78](assets/chlimage_1-78.png)
 
-### MSM-vergrendelingen configureren op pagina-eigenschappen (interface met aanraakbediening) {#configuring-msm-locks-on-page-properties-touch-enabled-ui}
+## MSM-vergrendelingen configureren op pagina-eigenschappen (interface met aanraakbediening) {#configuring-msm-locks-on-page-properties-touch-enabled-ui}
 
 Wanneer u een aangepaste pagina-eigenschap maakt, moet u mogelijk overwegen of de nieuwe eigenschap kan worden geïmplementeerd voor live kopieën.
 

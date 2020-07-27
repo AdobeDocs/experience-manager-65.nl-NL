@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: aa3e50f1-8f5a-489d-a42e-a928e437ab79
 translation-type: tm+mt
-source-git-commit: adf1ac2cb84049ca7e42921ce31135a6149ef510
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 0%
@@ -28,13 +28,13 @@ In dit document wordt het schrijven van een JavaScript met de `guidelib.dataInte
 
 De `guidelib.dataIntegrationUtils.executeOperation` API roept een service aan vanuit een adaptief formulierveld. De API-syntaxis ziet er als volgt uit:
 
-```
+```javascript
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs)
 ```
 
 De structuur van de `guidelib.dataIntegrationUtils.executeOperation` API geeft details over de servicebewerking op. De syntaxis van de structuur is als volgt.
 
-```
+```javascript
 var operationInfo = {
 formDataModelId,
 operationTitle,
@@ -95,7 +95,7 @@ In het volgende voorbeeldscript wordt de `guidelib.dataIntegrationUtils.executeO
 
 De `getAccountById` bewerking neemt de waarde in het `employeeID` formulierveld op als invoer voor het `empId` argument en retourneert de werknemernaam, het accountnummer en het rekeningssaldo voor de corresponderende employee. De uitvoerwaarden worden ingevuld in de opgegeven formuliervelden. De waarde in `name` argument wordt bijvoorbeeld ingevuld in het `fullName` formulierelement en de waarde voor het `accountNumber` argument in het `account` formulierelement.
 
-```
+```javascript
 var operationInfo = {
 "formDataModelId": "/content/dam/formsanddocuments-fdm/employeeAccount",
 "operationName": "getAccountDetails"
@@ -115,7 +115,7 @@ guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs);
 
 U kunt de service van het formuliergegevensmodel ook aanroepen met behulp van de `guidelib.dataIntegrationUtils.executeOperation` API met een callback-functie. De API-syntaxis ziet er als volgt uit:
 
-```
+```javascript
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, callbackFunction)
 ```
 
@@ -131,7 +131,7 @@ De `GETOrder` bewerking neemt de waarde in het `Order ID` formulierveld op als i
 >
 > Als u de `success` callback-functie gebruikt, worden de uitvoerwaarden niet ingevuld in de opgegeven formuliervelden.
 
-```
+```javascript
 var operationInfo = {
     "formDataModelId": "/content/dam/formsanddocuments-fdm/employeeOrder",
     "operationTitle": "GETOrder",

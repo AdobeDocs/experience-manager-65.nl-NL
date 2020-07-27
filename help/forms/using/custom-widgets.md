@@ -11,7 +11,10 @@ topic-tags: hTML5_forms
 discoiquuid: 17a86543-30d3-4e16-a373-67b46d551da9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '671'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +29,7 @@ Een voorbeeld van de standaard- en aangepaste widget
 
 ## Aangepaste widgets integreren met HTML5-formulieren {#integrating-custom-widgets-with-html-forms}
 
-### Een profiel maken {#create-a-profile-nbsp}
+### Een profiel maken  {#create-a-profile-nbsp}
 
 U kunt een profiel maken of een bestaand profiel kiezen om een aangepaste widget toe te voegen. Zie Aangepast profiel [maken voor meer informatie over het maken van profielen](/help/forms/using/custom-profile.md).
 
@@ -69,15 +72,15 @@ HTML5-formulieren bieden een implementatie van het widgetframework dat kan worde
 
 Als u uw eigen widget wilt maken, neemt u in het hierboven gemaakte profiel verwijzingen op van het JavaScript-bestand dat overschreven functies en nieuw toegevoegde functies bevat. De *sliderNumericFieldWidget* is bijvoorbeeld een widget voor numerieke velden. Als u de widget in uw profiel in de koptekstsectie wilt gebruiken, neemt u de volgende regel op:
 
-```
+```javascript
 window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
 ```
 
-### Aangepaste widget registreren met XFA Scripting Engine {#register-custom-widget-with-xfa-scripting-engine-nbsp}
+### Aangepaste widget registreren met XFA Scripting Engine  {#register-custom-widget-with-xfa-scripting-engine-nbsp}
 
 Wanneer de aangepaste widgetcode gereed is, registreert u de widget met de scriptengine met behulp van de `registerConfig`API voor [Form Bridge](/help/forms/using/form-bridge-apis.md). Het neemt widgetConfigObject als input.
 
-```
+```javascript
 window.formBridge.registerConfig("widgetConfig",
         {
         ".<field-identifier>":"<name-of-the-widget>"

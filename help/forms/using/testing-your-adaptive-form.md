@@ -8,7 +8,10 @@ contentOwner: khsingh
 discoiquuid: ecddb22e-c148-441f-9088-2e5b35c7021b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '933'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +24,7 @@ Deze zelfstudie is een stap in de [serie Uw eerste adaptieve formulier](https://
 
 Nadat het adaptieve formulier gereed is, is het belangrijk dat u het adaptief test voordat u het naar de eindgebruikers implementeert. U kunt elk veld handmatig testen (functionele tests) of het testen van het adaptieve formulier automatiseren. Wanneer u meerdere adaptieve formulieren hebt, wordt het handmatig testen van elk veld van alle adaptieve formulieren een enorme opgave.
 
-AEM Forms biedt een testframework, Calvin, om het testen van uw adaptieve formulieren te automatiseren. Met behulp van het framework schrijft en voert u tests voor de gebruikersinterface rechtstreeks in een webbrowser uit. Het framework biedt JavaScript API&#39;s voor het maken van tests. Met de geautomatiseerde testprocedure kunt u de vooraf ingevulde ervaring van een adaptief formulier testen, ervaringen met een adaptief formulier, expressieregels, validaties, lazy loading en UI-interacties verzenden. Deze zelfstudie begeleidt u door de stappen voor het maken en uitvoeren van geautomatiseerde tests op een adaptieve vorm. Aan het einde van deze zelfstudie kunt u het volgende doen:
+AEM Forms bieden een testframework, Calvin, om het testen van uw adaptieve formulieren te automatiseren. Met behulp van het framework schrijft en voert u tests voor de gebruikersinterface rechtstreeks in een webbrowser uit. Het framework biedt JavaScript API&#39;s voor het maken van tests. Met de geautomatiseerde testprocedure kunt u de vooraf ingevulde ervaring van een adaptief formulier testen, ervaringen met een adaptief formulier, expressieregels, validaties, lazy loading en UI-interacties verzenden. Deze zelfstudie begeleidt u door de stappen voor het maken en uitvoeren van geautomatiseerde tests op een adaptieve vorm. Aan het einde van deze zelfstudie kunt u het volgende doen:
 
 * [Een testsuite maken voor uw adaptieve formulier](../../forms/using/testing-your-adaptive-form.md#step-create-a-test-suite)
 * [Tests maken voor uw adaptieve formulier](../../forms/using/testing-your-adaptive-form.md#step-create-a-test-case-to-prefill-values-in-an-adaptive-form)
@@ -31,7 +34,7 @@ AEM Forms biedt een testframework, Calvin, om het testen van uw adaptieve formul
 
 De testreeksen hebben een inzameling van testgevallen. U kunt meerdere testreeksen hebben. Het wordt aanbevolen voor elk formulier een aparte testsuite te gebruiken. Een testsuite maken:
 
-1. Meld u als beheerder aan bij de auteur van AEM Forms. Open CRXDE Lite. Tik op AEM-logo > **Gereedschappen** > **Algemeen** > **CRXDE Lite** of open de URL [https://localhost:4502/crx/de/index.jsp](https://localhost:4502/crx/de/index.jsp) in een browser om CRXDE Lite te openen.
+1. Log naar de auteur van AEM Forms als beheerder. Open CRXDE Lite. Tik op AEM-logo > **Gereedschappen** > **Algemeen** > **CRXDE Lite** of open de URL [https://localhost:4502/crx/de/index.jsp](https://localhost:4502/crx/de/index.jsp) in een browser om CRXDE Lite te openen.
 
 1. Navigeer naar /etc/clientlibs in CRXDE Lite. Klik met de rechtermuisknop op de submap /etc/clientlibs en klik op **Maken** > **Knooppunt maken.** In het het gebiedstype van de Naam **WijRetailFormTestCase**. Selecteer het type als **cq:ClientLibraryFolder** en klik op **OK**. Er wordt een knooppunt gemaakt. U kunt om het even welke naam in plaats van WijRetailFormTestCase gebruiken.
 1. Voeg de volgende eigenschappen aan de knoop WebRetailFormTestCase toe en tik **sparen ALLES**.
@@ -72,17 +75,17 @@ Zorg ervoor dat elke eigenschap wordt toegevoegd aan een afzonderlijk vak, zoals
 
 ![afhankelijkheden](assets/dependencies.png)
 
-1. Klik met de rechtermuisknop op het knooppunt **[!UICONTROL WeRetailFormTestCase]** en klik op **Maken** > **Bestand** maken. Typ in het veld Naam `js.txt` en klik op **OK**.
+1. Klik met de rechtermuisknop op het **[!UICONTROL WeRetailFormTestCases]** knooppunt en klik op **Maken** > **Bestand** maken. Typ in het veld Naam `js.txt` en klik op **OK**.
 1. Open het bestand js.txt om het te bewerken, voeg de volgende code toe en sla het bestand op:
 
-   ```
+   ```text
    #base=.
     init.js
    ```
 
-1. Maak een bestand met de naam init.js in het `WeRetailFormTestCases`knooppunt. Voeg de onderstaande code toe aan het bestand en tik op Alles **[!UICONTROL opslaan]**.
+1. Maak een bestand met de naam init.js in het `WeRetailFormTestCases`knooppunt. Voeg de onderstaande code toe aan het bestand en tik op **[!UICONTROL Save All]**.
 
-   ```
+   ```javascript
    (function(window, hobs) {
        'use strict';
        window.testsuites = window.testsuites || {};
@@ -108,7 +111,7 @@ Een testcase is een reeks handelingen om een specifieke functionaliteit te teste
 
 Een handeling is een specifieke activiteit op een adaptief formulier, zoals het klikken op een knop. U kunt als volgt een testcase en acties maken om de gebruikersinvoer voor elk adaptief formulierveld te valideren:
 
-1. Navigeer in de lijst CRXDE naar de `/content/forms/af/create-first-adaptive-form` map. Klik met de rechtermuisknop op het knooppunt voor de map **[!UICONTROL create-first-adaptive-form]** en klik op **[!UICONTROL Maken]**> **[!UICONTROL Bestand]** maken. Typ in het veld Naam `prefill.xml` en klik op **[!UICONTROL OK]**. Voeg de volgende code toe aan het bestand:
+1. Navigeer in de lijst CRXDE naar de `/content/forms/af/create-first-adaptive-form` map. Klik met de rechtermuisknop op het **[!UICONTROL create-first-adaptive-form]** mapknooppunt en klik op **[!UICONTROL Create]**> **[!UICONTROL Create File]**. Typ in het veld Naam `prefill.xml` en klik op **[!UICONTROL OK]**. Voeg de volgende code toe aan het bestand:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?><afData>
@@ -127,11 +130,11 @@ Een handeling is een specifieke activiteit op een adaptief formulier, zoals het 
    </afData>
    ```
 
-1. Ga naar `/etc/clientlibs`. Klik met de rechtermuisknop op de `/etc/clientlibs` submap en klik op **[!UICONTROL Maken]**> **[!UICONTROL Knooppunt]** maken.
+1. Ga naar `/etc/clientlibs`. Klik met de rechtermuisknop op de `/etc/clientlibs` submap en klik op **[!UICONTROL Create]**> **[!UICONTROL Create Node]**.
 
-   Typ het **[!UICONTROL veldtype Naam]** `WeRetailFormTests`. Selecteer de tekst als `cq:ClientLibraryFolder` en klik op **[!UICONTROL OK]**.
+   In het **[!UICONTROL Name]** veldtype `WeRetailFormTests`. Selecteer de tekst als `cq:ClientLibraryFolder` en klik op **[!UICONTROL OK]**.
 
-1. Voeg de volgende eigenschappen aan de knoop **[!UICONTROL WeRetailFormTests]** toe.
+1. Voeg de volgende eigenschappen toe aan het **[!UICONTROL WeRetailFormTests]** knooppunt.
 
 <table>
  <tbody>
@@ -163,16 +166,16 @@ Een handeling is een specifieke activiteit op een adaptief formulier, zoals het 
  </tbody>
 </table>
 
-1. Maak een bestand, js.txt, in het knooppunt **[!UICONTROL WeRetailFormTests]** . Voeg het volgende toe aan het bestand:
+1. Maak een bestand met de naam js.txt in het **[!UICONTROL WeRetailFormTests]** knooppunt. Voeg het volgende toe aan het bestand:
 
    ```shell
    #base=.
    prefillTest.js
    ```
 
-   Klik op Alles **[!UICONTROL opslaan]**.
+   Klik op **[!UICONTROL Save All]**.
 
-1. Maak een bestand `prefillTest.js`in het knooppunt **[!UICONTROL WeRetailFormTests]** . Voeg de onderstaande code toe aan het bestand. In de code wordt een testcase gemaakt. Het testhoofdlettergebruik vult alle velden van een formulier voor en valideert bepaalde velden om ervoor te zorgen dat correcte waarden worden ingevoerd.
+1. Maak een bestand `prefillTest.js`in het **[!UICONTROL WeRetailFormTests]** knooppunt. Voeg de onderstaande code toe aan het bestand. In de code wordt een testcase gemaakt. Het testhoofdlettergebruik vult alle velden van een formulier voor en valideert bepaalde velden om ervoor te zorgen dat correcte waarden worden ingevoerd.
 
    ```
    (function (window, hobs) {
@@ -213,17 +216,18 @@ Een testsuite kan meerdere testgevallen bevatten. U kunt alle testgevallen in ee
 * Een vinkje geeft aan dat een test is geslaagd: ![](assets/save_icon.svg)
 * Een X-pictogram geeft aan dat een test is mislukt: ![](assets/close-icon.svg)
 
-1. Ga naar het pictogram AEM > **[!UICONTROL Gereedschappen]**> **[!UICONTROL Bewerkingen]**> **[!UICONTROL Testen]**
+1. Navigeren naar AEM-pictogram > **[!UICONTROL Tools]**> **[!UICONTROL Operations]**> **[!UICONTROL Testing]**
 1. Alle tests van de testsuite uitvoeren:
 
-   1. Tik in het deelvenster Tests op de detailhandel **[!UICONTROL We - Tests (1)]**. De suite wordt uitgebreid om een testlijst weer te geven.
-   1. Tik op de knop **[!UICONTROL Tests]** uitvoeren. Het lege gebied aan de rechterkant van het scherm wordt tijdens de test vervangen door een adaptieve vorm.
+   1. Tik in het deelvenster Tests op **[!UICONTROL We retail - Tests (1)]**. De suite wordt uitgebreid om een testlijst weer te geven.
+   1. Tik op de **[!UICONTROL Run tests]** knop. Het lege gebied aan de rechterkant van het scherm wordt tijdens de test vervangen door een adaptieve vorm.
+
    ![run-all-test](assets/run-all-test.png)
 
 1. Eén test uitvoeren vanuit de testsuite:
 
-   1. Tik in het deelvenster Tests op de detailhandel **[!UICONTROL We - Tests (1)]**. De suite wordt uitgebreid om een testlijst weer te geven.
-   1. Tik op de knop **[!UICONTROL Vooraf invullen]** en tik op de knop **[!UICONTROL Tests]** uitvoeren. Het lege gebied aan de rechterkant van het scherm wordt tijdens de test vervangen door een adaptieve vorm.
+   1. Tik in het deelvenster Tests op **[!UICONTROL We retail - Tests (1)]**. De suite wordt uitgebreid om een testlijst weer te geven.
+   1. Tik op de knop **[!UICONTROL Prefill Test]** en tik op de **[!UICONTROL Run tests]** knop. Het lege gebied aan de rechterkant van het scherm wordt tijdens de test vervangen door een adaptieve vorm.
 
 1. Tik op de testnaam, de test Vooraf invullen, om de resultaten van de testcase te bekijken. Hiermee wordt het deelvenster Resultaat geopend. Tik op de naam van uw testcase in het paneel Resultaat en bekijk alle details van de test.
 

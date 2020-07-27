@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 532e607d-5bc5-4ccc-92c6-30efe1081872
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '503'
+ht-degree: 0%
 
 ---
 
@@ -33,7 +36,7 @@ De volgende Snelle Beginnen zijn beschikbaar voor de dienst van de Manager van d
 
 [Snel starten (SOAP-modus): Taakgegevens ophalen met de Java API](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-task-information-using-the-java-api)
 
-De verrichtingen van de Vormen van AEM kunnen worden uitgevoerd gebruikend sterk-getypte API van Vormen AEM en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
+De verrichtingen van AEM Forms kunnen worden uitgevoerd gebruikend AEM Forms sterk-getypte API en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
 
 >[!NOTE]
 >
@@ -47,7 +50,7 @@ De verrichtingen van de Vormen van AEM kunnen worden uitgevoerd gebruikend sterk
 
 In het volgende Java-codevoorbeeld wordt een taak toegewezen aan de gebruiker Tony Blue.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -180,7 +183,7 @@ In het volgende Java-codevoorbeeld wordt een taak toegewezen aan de gebruiker To
 
 In het volgende Java-codevoorbeeld wordt een taak vergrendeld die overeenkomt met de waarde 2 voor de taak-id.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -269,7 +272,7 @@ In het volgende Java-codevoorbeeld wordt een taak vergrendeld die overeenkomt me
 
 In het volgende Java-codevoorbeeld worden alle taken opgehaald die zijn toegewezen aan een gebruiker met de naam *tony blue*. Deze gebruiker is opgegeven in de eigenschappen van de verbinding. Informatie over geretourneerde taken, zoals de waarde en beschrijving van de id, wordt weergegeven.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -395,7 +398,7 @@ In het volgende Java-codevoorbeeld worden alle taken opgehaald die zijn toegewez
 
 In het volgende Java-codevoorbeeld worden formuliergegevens opgehaald van een taak met de id-waarde 304. Formuliergegevens worden geschreven naar een XML-bestand met de naam *FormData.xml* op C:\Adobe.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -501,7 +504,7 @@ In het volgende Java-codevoorbeeld worden formuliergegevens opgehaald van een ta
 
 In het volgende Java-codevoorbeeld wordt een formulier bijgewerkt met gegevens uit het *bestand FormData.xml* .
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -611,7 +614,7 @@ In het volgende Java-codevoorbeeld wordt een formulier bijgewerkt met gegevens u
 
 In het volgende Java-codevoorbeeld worden bestandsbijlagen opgehaald. Elke bestandsbijlage wordt opgeslagen als een TXT-bestand.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar
@@ -715,7 +718,7 @@ In het volgende Java-codevoorbeeld worden bestandsbijlagen opgehaald. Elke besta
 
 In het volgende Java-codevoorbeeld worden alle taken opgehaald die zijn gebaseerd op een proces met de naam *MortgaugeLoan - Prebuilt*. Het statuut van elke teruggekeerde taak wordt gecontroleerd om ervoor te zorgen dat het een voltooide taak is. Informatie zoals de naam van de gebruiker die de taak heeft voltooid en de datum waarop de taak is voltooid, wordt opgehaald en weergegeven.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-taskmanager-client.jar

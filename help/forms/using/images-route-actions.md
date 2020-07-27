@@ -1,15 +1,18 @@
 ---
 title: Afbeeldingen aanpassen die worden gebruikt in routehandelingen
 seo-title: Afbeeldingen aanpassen die worden gebruikt in routehandelingen
-description: Hoe kan ik-om de afbeeldingen aan te passen die worden gebruikt in routehandelingen in de werkruimte van LiveCycle AEM-formulieren.
-seo-description: Hoe kan ik-om de afbeeldingen aan te passen die worden gebruikt in routehandelingen in de werkruimte van LiveCycle AEM-formulieren.
+description: Hoe kan ik-om-de beelden aan te passen die in routeacties in de werkruimte van AEM Forms LiveCycle worden gebruikt?
+seo-description: Hoe kan ik-om-de beelden aan te passen die in routeacties in de werkruimte van AEM Forms LiveCycle worden gebruikt?
 uuid: 42608376-587e-4b57-a9d5-8f9ebd981426
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 10158c13-47b4-43e3-ac47-690f3cbab158
 translation-type: tm+mt
-source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '327'
+ht-degree: 0%
 
 ---
 
@@ -44,13 +47,13 @@ Als u de afbeeldingen wilt aanpassen die worden gebruikt in routehandelingen, vo
 
 ## Taaklijstactie pop-up {#task-list-task-action-popup}
 
-1. Maak een pop-up met handelingen voor de takenlijst. Zie [Code](introduction-customizing-html-workspace.md#building-html-workspace-code)voor de werkruimte van AEM-formulieren maken. Hiervoor moet het ontwikkelingspakket worden gebruikt.
+1. Maak een pop-up met handelingen uit de takenlijst. Zie [Werkruimtecode](introduction-customizing-html-workspace.md#building-html-workspace-code)AEM Forms maken. Hiervoor moet het ontwikkelingspakket worden gebruikt.
 
 1. Kopiëren `/libs/ws/js/runtime/templates/task.html` naar `/apps/ws/js/runtime/templates/task.html`.
 
 1. Als de naam van de CSS-stijl gelijk is aan de naam van de routeactie die van de server komt, wijzigt u de volgende code in `/apps/ws/js/runtime/templates/task.html`:
 
-   ```
+   ```jsp
    <%if(routeList == null){%>
                <li>
                    <a href="javascript:void(0);" title="<%= $.t('taskaction.directcommand.'+availableCommands.directCommands[0])%>" value="<%= availableCommands.directCommands[0]%>" data-action="route"><%= $.t('taskaction.directcommand.'+availableCommands.directCommands[0])%></a>
@@ -80,7 +83,7 @@ Als u de afbeeldingen wilt aanpassen die worden gebruikt in routehandelingen, vo
 
 1. Als de naam van de CSS stijl van de naam van de routeactie die van de server komt verschillend is, wijzig de volgende code binnen `/apps/ws/js/runtime/templates/task.html`. Het voegt een stapel van de `if-else` servlet voorwaarden toe om de stijl met de naam van de routeactie in kaart te brengen.
 
-```
+```jsp
 <%if(routeList == null){%>
             <li>
                 <a href="javascript:void(0);" title="<%= $.t('taskaction.directcommand.'+availableCommands.directCommands[0])%>" value="<%= availableCommands.directCommands[0]%>" data-action="route"><%= $.t('taskaction.directcommand.'+availableCommands.directCommands[0])%></a>
@@ -120,7 +123,7 @@ To
 
 1. Als de naam van de CSS-stijl gelijk is aan de naam van de routeactie die van de server komt, wijzigt u de volgende code in `/apps/ws/js/runtime/templates/taskdetails.html`:
 
-   ```
+   ```jsp
    <%for (var i = 0; i < availableCommands.directCommands.length; i++) {%>
                            <li class="routeAction">
                                <a href="javascript:void(0);" title="<%= availableCommands.directCommands[i]%>" value="<%= availableCommands.directCommands[i]%>" data-action="route"><%= availableCommands.directCommands[i]%></a>
@@ -140,7 +143,7 @@ To
 
 1. Als de naam van de CSS stijl van de naam van de routeactie die van de server komt verschillend is, wijzig de volgende code binnen `/apps/ws/js/runtime/templates/taskdetails.html`. Het voegt een stapel van `if-else` servlet voorwaarden toe om de stijl met de naam van de routeactie in kaart te brengen.
 
-   ```
+   ```jsp
    <%for (var i = 0; i < availableCommands.directCommands.length; i++) {%>
                            <li class="routeAction">
                                <a href="javascript:void(0);" title="<%= availableCommands.directCommands[i]%>" value="<%= availableCommands.directCommands[i]%>" data-action="route"><%= availableCommands.directCommands[i]%></a>

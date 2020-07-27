@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 2ec2a75e-4191-4660-a6f2-26cc667720b3
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '440'
+ht-degree: 0%
 
 ---
 
@@ -25,27 +28,27 @@ De volgende Java API Quick Start (SOAP) is beschikbaar voor de Application Manag
 
 [Snel starten (SOAP-modus): Toepassingen importeren met de Java API](#quick-start-soap-mode-importing-applications-using-the-java-api)
 
-[Snel starten (SOAP-modus): Een AEM Forms Application ophalen met de Java API](application-manager-client-java-api.md#quick-start-soap-mode-getting-a-application-using-the-java-api)
+[Snel starten (SOAP-modus): Een AEM Forms-toepassing ophalen met de Java API](application-manager-client-java-api.md#quick-start-soap-mode-getting-a-application-using-the-java-api)
 
 [Snel starten (SOAP-modus): Toepassingen ophalen met de Java API](application-manager-client-java-api.md#quick-start-soap-mode-getting-the-applications-using-the-java-api)
 
 [Snel starten (SOAP-modus): Status ophalen van toepassingen met Java API](application-manager-client-java-api.md#quick-start-soap-mode-getting-status-of-applications-using-java-api)
 
-[Snel starten (SOAP-modus):voorvertoning van het toepassingsarchief van AEM Forms en hoger weergeven met de Java API](application-manager-client-java-api.md#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api)
+[Snel starten (SOAP-modus):voorvertoning van de AEM Forms en het latere toepassingsarchief weergeven met de Java API](application-manager-client-java-api.md#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api)
 
-[Snel starten (SOAP-modus):het toepassingsarchief van AEM Forms verwijderen met de Java API](application-manager-client-java-api.md#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api)
+[Snel starten (SOAP-modus):het archief van de AEM Forms-toepassing verwijderen met de Java API](application-manager-client-java-api.md#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api)
 
-De verrichtingen van de Vormen van AEM kunnen worden uitgevoerd gebruikend sterk-getypte API van Vormen AEM en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
+De verrichtingen van AEM Forms kunnen worden uitgevoerd gebruikend AEM Forms sterk-getypte API en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
 
 >[!NOTE]
 >
->Het snelle begin dat in Programmering met Vormen wordt gevestigd AEM is gebaseerd op de Server die van Vormen op JBoss en het werkende systeem van Vensters wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals Unix, vervangt u vensterspecifieke paden door paden die worden ondersteund door het desbetreffende besturingssysteem. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Het snelle begin dat in Programmering met AEM Forms wordt gevestigd is gebaseerd op de Server die van Vormen op JBoss en het werkende systeem van Vensters wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals Unix, vervangt u vensterspecifieke paden door paden die worden ondersteund door het desbetreffende besturingssysteem. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Snel starten (SOAP-modus): Toepassingsversie maken met de Java API {#quick-start-soap-mode-creating-application-version-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt een toepassing gemaakt met de JAVA API.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -144,7 +147,7 @@ public class CreateApplicationVersion_SOAP {
 
 In het volgende Java-codevoorbeeld wordt een toepassing geëxporteerd met de JAVA API.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -251,7 +254,7 @@ In het volgende Java-codevoorbeeld wordt een toepassing geïmporteerd met de JAV
 >
 >De Java API importApplication() vervangt bestaande toepassingen met dezelfde naam door nieuwere toepassingen. Als u een bestaande toepassing wilt bijwerken, gebruikt u API importApplication() in plaats van API updateApplication().
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -334,7 +337,7 @@ public class ImportLCA_SOAP {
 
 In het volgende Java-codevoorbeeld wordt een toepassing opgehaald met de Java API.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -441,9 +444,9 @@ public class GetApplication_SOAP {
 
 In het volgende Java-codevoorbeeld worden de toepassingen opgehaald met de Java API.
 
-**opmerking**: Als u de toepassings-API van AEM Forms ophaalt, getApplications(), wordt alleen geïmplementeerde toepassingen geretourneerd.
+**opmerking**: Het krijgen van de Toepassing API van AEM Forms, getApplications (), keert slechts opgestelde toepassingen terug.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -538,7 +541,7 @@ public class GetApplications_SOAP {
 
 ## Snel starten (SOAP-modus): Status ophalen van toepassingen met Java API {#quick-start-soap-mode-getting-status-of-applications-using-java-api}
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -643,9 +646,9 @@ public class GetApplicationStatus_SOAP {
 
 ## Snel starten (SOAP-modus):voorvertoning weergeven van het toepassingsarchief van LiveCycle ES2 en hoger met de Java API {#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api}
 
-Het volgende Java-codevoorbeeld is bedoeld voor een voorvertoning van het toepassingsarchief van AEM Forms en hoger met de Java API.
+Het volgende Java-codevoorbeeld is bedoeld voor het voorvertonen van AEM Forms en latere toepassingsarchieven met behulp van de Java API.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -724,7 +727,7 @@ public class PreviewLCA_SOAP {
 
 Het volgende Java-codevoorbeeld is bedoeld voor het verwijderen van een toepassingsarchief.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:

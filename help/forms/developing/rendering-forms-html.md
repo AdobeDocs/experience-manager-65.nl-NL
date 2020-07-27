@@ -11,7 +11,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 translation-type: tm+mt
-source-git-commit: 9f3129aff8a3e389231b0fe0973794e5d34480a0
+source-git-commit: c74d9e86727f2deda62b8d1eb105b28ef4b6d184
+workflow-type: tm+mt
+source-wordcount: '4108'
+ht-degree: 1%
 
 ---
 
@@ -34,7 +37,7 @@ Als u een formulier wilt weergeven als HTML, moet het formulierontwerp worden op
 
 Wanneer een formulierontwerp wordt weergegeven als een HTML-formulier, wordt elk subformulier op het tweede niveau weergegeven als een HTML-pagina (deelvenster). U kunt de hiërarchie van een subformulier weergeven in Designer. Onderliggende subformulieren die tot het basissubformulier behoren (de standaardnaam van een basissubformulier is form1), zijn de deelvenstersubformulieren. In het volgende voorbeeld worden de subformulieren van een formulierontwerp weergegeven.
 
-```as3
+```java
      form1
          Master Pages
          PanelSubform1
@@ -50,7 +53,7 @@ Wanneer een formulierontwerp wordt weergegeven als een HTML-formulier, wordt elk
 
 Wanneer formulierontwerpen worden weergegeven als HTML-formulieren, blijven de deelvensters beperkt tot een bepaald paginaformaat. Als u dynamische subformulieren hebt, moeten deze in het deelvenstersubformulier worden genest. Dynamische subformulieren kunnen worden uitgebreid naar een oneindig aantal HTML-pagina&#39;s.
 
-Wanneer een formulier wordt weergegeven als een HTML-formulier, hebben paginaformaten (vereist voor paginering van formulieren die worden weergegeven als PDF) geen betekenis. Omdat een formulier met een stroombare indeling kan worden uitgebreid naar een oneindig aantal HTML-pagina&#39;s, is het belangrijk dat u geen voetteksten op de basispagina plaatst. Een voettekst onder het inhoudsgebied op een basispagina kan HTML-inhoud overschrijven die voorbij een paginagrens loopt.
+Wanneer een formulier wordt weergegeven als een HTML-formulier, hebben paginaformaten (vereist voor paginering van formulieren die worden weergegeven als PDF) geen betekenis. Omdat een formulier met een stroombare indeling kan worden uitgebreid naar een oneindig aantal HTML-pagina&#39;s, is het belangrijk dat u geen voetteksten op de master pagina plaatst. Een voettekst onder het inhoudsgebied op een master pagina kan HTML-inhoud overschrijven die voorbij een paginagrens loopt.
 
 U moet expliciet van deelvenster naar deelvenster gaan met de methoden `xfa.host.pageUp` en `xfa.host.pageDown` methoden. U kunt pagina&#39;s wijzigen door een formulier naar de service Forms te verzenden en het formulier weer terug te sturen naar het clientapparaat, meestal een webbrowser.
 
@@ -78,7 +81,7 @@ U moet expliciet van deelvenster naar deelvenster gaan met de methoden `xfa.host
 
 Een auteur van een formulier geeft aan of een script op de server of de client wordt uitgevoerd. De dienst van Vormen leidt tot een verdeelde, gebeurtenisverwerkingsmilieu voor uitvoering van vormintelligentie die tussen de cliënt en de server door de `runAt` attributen te gebruiken kan worden verdeeld. Zie [Forms Designer voor meer informatie over dit kenmerk of over het maken van scripts in formulierontwerpen](https://www.adobe.com/go/learn_aemforms_designer_63)
 
-De Forms-service kan scripts uitvoeren terwijl het formulier wordt gegenereerd. Hierdoor kunt u een formulier vooraf invullen met gegevens door verbinding te maken met een database of met webservices die mogelijk niet beschikbaar zijn op de client. U kunt de `Click` gebeurtenis van een knoop ook plaatsen om op de server te lopen zodat de cliënt reisgegevens aan de server zal afronden. Hierdoor kan de client scripts uitvoeren waarvoor mogelijk serverbronnen nodig zijn, zoals een ondernemingsdatabase, terwijl een gebruiker communiceert met een formulier. Voor HTML-formulieren kunnen formele scripts alleen op de server worden uitgevoerd. Dit betekent dat u deze scripts moet markeren om te worden uitgevoerd bij `server` of `both`.
+De Forms-service kan scripts uitvoeren terwijl het formulier wordt gegenereerd. Hierdoor kunt u een formulier vooraf invullen met gegevens door verbinding te maken met een database of met webservices die mogelijk niet beschikbaar zijn op de client. U kunt de `Click` gebeurtenis van een knoop ook plaatsen om op de server te lopen zodat de cliënt reisgegevens aan de server zal afronden. Hierdoor kan de client scripts uitvoeren waarvoor mogelijk serverbronnen nodig zijn, zoals een ondernemingsdatabase, terwijl een gebruiker communiceert met een formulier. Voor HTML-formulieren kunnen formele scripts alleen op de server worden uitgevoerd. Als gevolg hiervan moet u deze scripts markeren om te worden uitgevoerd bij `server` of `both`.
 
 U kunt formulieren ontwerpen die tussen pagina&#39;s (deelvensters) bewegen door ze aan te roepen `xfa.host.pageUp` en `xfa.host.pageDown` methoden te gebruiken. Dit script wordt in de `Click` gebeurtenis van een knop geplaatst en het `runAt` kenmerk wordt ingesteld op `Both`. De reden die u kiest, `Both` is dat Adobe Reader of Acrobat (voor formulieren die als PDF worden gerenderd) pagina&#39;s kan wijzigen zonder naar de server te gaan en dat HTML-formulieren pagina&#39;s kunnen wijzigen door gegevens naar de server af te snijden. Een formulier wordt dus naar de service Forms verzonden en een formulier wordt als HTML weergegeven met de nieuwe pagina.
 
@@ -99,11 +102,11 @@ Wanneer de formserver een XDP teruggeeft die een drop-down lijst bevat, naast he
 
 U kunt deze invoerelementen op de volgende manier uitschakelen als u de gegevens niet wilt posten. `var __CUSTOM_SCRIPTS_VERSION = 1; //enabling the feature function _user_onsubmit() { var elems = document.getElementsByName("header[0].drpOrderedByStateProv_DISPLAYITEMS_[0]"); elems[0].disabled = true; elems = document.getElementsByName("header[0].drpOrderedByStateProv_VALUEITEMS_[0]"); elems[0].disabled = true; }`
 
-```as3
+```java
 header[0].drpOrderedByStateProv_DISPLAYITEMS_[0] header[0].drpOrderedByStateProv_VALUEITEMS_[0]
 ```
 
-```as3
+```java
 var __CUSTOM_SCRIPTS_VERSION = 1; //enabling the feature
     function _user_onsubmit() {
     var elems = document.getElementsByName("header[0].drpOrderedByStateProv_DISPLAYITEMS_[0]");
@@ -115,7 +118,7 @@ var __CUSTOM_SCRIPTS_VERSION = 1; //enabling the feature
 
 ## XFA-subsets {#xfa-subsets}
 
-Wanneer u formulierontwerpen maakt om als HTML te worden gerenderd, moet u het script beperken tot de XFA-subset voor scripts in de javascript-taal.
+Wanneer u formulierontwerpen maakt om als HTML te worden gerenderd, moet u het script beperken tot de XFA-subset voor scripts in JavaScript-taal.
 
 Scripts die op de client worden uitgevoerd of op zowel de client als de server worden uitgevoerd, moeten binnen de XFA-subset worden geschreven. Scripts die op de server worden uitgevoerd, kunnen het volledige XFA-scriptmodel gebruiken en ook FormCalc gebruiken. Zie [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63)voor meer informatie over het gebruik van JavaScript.
 
@@ -154,7 +157,7 @@ Bij het schakelen tussen HTML-pagina&#39;s (deelvensters) blijft alleen de statu
 
 In het volgende script wordt de waarde `fillColor` van een veld behouden op basis van de waarde van `hiddenField`. Stel dat dit script zich in de `Calculate` gebeurtenis van een veld bevindt.
 
-```as3
+```java
      If (hiddenField.rawValue == 1)
          this.fillColor = "255,0,0"
      else
@@ -184,7 +187,7 @@ U kunt een volledig HTML-formulier weergeven dat voldoet aan toegankelijkheidsri
 Het wordt aanbevolen het gebruik van validatieregels voor formuliervelden te beperken wanneer u het formulier weergeeft als een HTML-formulier. Sommige validatieregels worden mogelijk niet ondersteund voor HTML-formulieren. Wanneer bijvoorbeeld een validatiepatroon van DD-MM-JJJJ wordt toegepast op een `Date/Time` veld dat zich bevindt in een formulierontwerp dat als HTML-formulier wordt weergegeven, werkt het niet correct, zelfs niet als de datum correct is getypt. Dit validatiepatroon werkt echter goed voor formulieren die als PDF worden gegenereerd.
 
 >[!NOTE]
-Voor meer informatie over de dienst van Vormen, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+Voor meer informatie over de dienst van Vormen, zie de Verwijzing van de [Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Overzicht van de stappen {#summary-of-steps}
 
@@ -214,7 +217,7 @@ U stelt HTML-runtime-opties in wanneer u een HTML-formulier rendert. U kunt bijv
 
 Wanneer een HTML-werkbalk op een HTML-formulier wordt weergegeven, kan een gebruiker maximaal tien bestanden selecteren die samen met de formuliergegevens moeten worden verzonden. Nadat de bestanden zijn verzonden, kan de service Forms de bestanden ophalen.
 
-Bij het weergeven van een formulier als HTML kunt u een user-agent-waarde opgeven. Een gebruiker-agent waarde verstrekt browser en systeeminformatie. Dit is een optionele waarde en u kunt een lege tekenreekswaarde doorgeven. De weergave van een HTML-formulier met de snelle start van de Java API laat zien hoe u een gebruikersagent-waarde kunt verkrijgen en gebruiken om een formulier te genereren als HTML.
+Bij het weergeven van een formulier als HTML kunt u een user-agent-waarde opgeven. Een gebruiker-agent waarde verstrekt browser en systeeminformatie. Dit is een optionele waarde en u kunt een lege tekenreekswaarde doorgeven. De weergave van een HTML-formulier met de snelle start van de Java API laat zien hoe u een gebruikersagent-waarde ophaalt en gebruikt om een formulier te genereren als HTML.
 
 HTTP-URL&#39;s waarnaar formuliergegevens worden verzonden, kunnen worden opgegeven door de doel-URL in te stellen met de API voor de Forms Service Client of kunnen worden opgegeven in de knop Verzenden in het XDP-formulierontwerp. Als het doel-URL is opgegeven in het formulierontwerp, moet u geen waarde instellen met de API voor de Forms Service Client.
 
@@ -240,13 +243,13 @@ Wanneer de service Forms een HTML-formulier genereert, wordt een formuliergegeve
 
 [Een formulier weergeven als HTML met de webservice-API](#render-a-form-as-html-using-the-web-service-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 [Forms Service API, snel aan de slag](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Interactieve PDF-formulieren renderen](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Interactieve PDF forms renderen](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
 [HTML-formulieren renderen met aangepaste werkbalken](/help/forms/developing/rendering-html-forms-custom-toolbars.md)
 
@@ -271,8 +274,9 @@ Een HTML-formulier renderen met de API voor formulieren (Java):
    * Als u een HTML-formulier met een werkbalk wilt weergeven, roept u de methode van het `HTMLRenderSpec` object aan en geeft u een `setHTMLToolbar` `HTMLToolbar` opsommingswaarde door. Als u bijvoorbeeld een verticale HTML-werkbalk wilt weergeven, geeft u door `HTMLToolbar.Vertical`.
    * Als u de landinstellingswaarde voor het HTML-formulier wilt instellen, roept u de methode van het `HTMLRenderSpec` `setLocale` object aan en geeft u een tekenreekswaarde door die de waarde van de landinstelling opgeeft. (Dit is een optionele instelling.)
    * Als u het HTML-formulier wilt renderen binnen volledige HTML-tags, roept u de `HTMLRenderSpec` methode van het object aan en geeft u het door `setOutputType` `OutputType.FullHTMLTags`. (Dit is een optionele instelling.)
+
    >[!NOTE]
-   Formulieren worden niet in HTML weergegeven als de `StandAlone` optie is `true` en de `ApplicationWebRoot` verwijzing naar een andere server dan de J2EE-toepassingsserver die als host fungeert voor AEM Forms (de `ApplicationWebRoot` waarde wordt opgegeven met het `URLSpec` object dat wordt doorgegeven aan de `FormsServiceClient` methode van het `(Deprecated) renderHTMLForm` object). Als het een andere server van AEM Forms `ApplicationWebRoot` is, moet de waarde van de web root-URI in de beheerconsole worden ingesteld als de URI-waarde van de webtoepassing van het formulier. Dit kan worden gedaan door login aan de beleidsconsole, het klikken van de Diensten > Vormen, en het plaatsen van de Wortel URI van het Web als https://server-name:port/FormServer. Sla vervolgens uw instellingen op.
+   Formulieren worden niet in HTML weergegeven als de `StandAlone` optie is `true` en de `ApplicationWebRoot` verwijzing naar een andere server dan de J2EE-toepassingsserver die AEM Forms host (de `ApplicationWebRoot` waarde wordt opgegeven met het `URLSpec` object dat wordt doorgegeven aan de `FormsServiceClient` methode van het `(Deprecated) renderHTMLForm` object). Als de server een andere server `ApplicationWebRoot` is van de server die als host fungeert voor de AEM Forms, moet de waarde van de URI van de webhoofdmap in de beheerconsole worden ingesteld als de URI-waarde van de webtoepassing van het formulier. Dit kan worden gedaan door login aan de beleidsconsole, het klikken van de Diensten > Vormen, en het plaatsen van de Wortel URI van het Web als https://server-name:port/FormServer. Sla vervolgens uw instellingen op.
 
 1. Een HTML-formulier renderen
 
@@ -285,6 +289,7 @@ Een HTML-formulier renderen met de API voor formulieren (Java):
    * Een tekenreekswaarde die de `HTTP_USER_AGENT` koptekstwaarde opgeeft; bijvoorbeeld `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
    * Een `URLSpec` object dat URI-waarden opslaat die vereist zijn om een HTML-formulier te genereren.
    * Een `java.util.HashMap` object dat bestandsbijlagen opslaat. Dit is een optionele parameter en u kunt opgeven `null` of u geen bestanden aan het formulier wilt koppelen.
+
    De `(Deprecated) renderHTMLForm` methode retourneert een `FormsResult` object dat een formuliergegevensstroom bevat die naar de webbrowser van de client kan worden geschreven.
 
 1. De formuliergegevensstroom naar de webbrowser van de client schrijven
@@ -303,7 +308,7 @@ Een HTML-formulier renderen met de API voor formulieren (Java):
 
 [Snel starten (SOAP-modus): HTML-formulieren renderen met de Java API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-using-the-java-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -326,8 +331,9 @@ Een HTML-formulier renderen met de API voor formulieren (webservice):
    * Als u een HTML-formulier met een werkbalk wilt weergeven, roept u de methode van het `HTMLRenderSpec` object aan en geeft u een `setHTMLToolbar` `HTMLToolbar` opsommingswaarde door. Als u bijvoorbeeld een verticale HTML-werkbalk wilt weergeven, geeft u door `HTMLToolbar.Vertical`.
    * Als u de landinstellingswaarde voor het HTML-formulier wilt instellen, roept u de methode van het `HTMLRenderSpec` `setLocale` object aan en geeft u een tekenreekswaarde door die de waarde van de landinstelling opgeeft. Zie [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)voor meer informatie.
    * Als u het HTML-formulier wilt renderen binnen volledige HTML-tags, roept u de `HTMLRenderSpec` methode van het object aan en geeft u het door `setOutputType` `OutputType.FullHTMLTags`.
+
    >[!NOTE]
-   Formulieren worden niet in HTML weergegeven als de `StandAlone` optie is `true` en de `ApplicationWebRoot` verwijzing naar een andere server dan de J2EE-toepassingsserver die als host fungeert voor AEM Forms (de `ApplicationWebRoot` waarde wordt opgegeven met het `URLSpec` object dat wordt doorgegeven aan de `FormsServiceClient` methode van het `(Deprecated) renderHTMLForm` object). Als het een andere server van AEM Forms `ApplicationWebRoot` is, moet de waarde van de web root-URI in de beheerconsole worden ingesteld als de URI-waarde van de webtoepassing van het formulier. Dit kan worden gedaan door login aan de beleidsconsole, het klikken van de Diensten > Vormen, en het plaatsen van de Wortel URI van het Web als https://server-name:port/FormServer. Sla vervolgens uw instellingen op.
+   Formulieren worden niet in HTML weergegeven als de `StandAlone` optie is `true` en de `ApplicationWebRoot` verwijzing naar een andere server dan de J2EE-toepassingsserver die AEM Forms host (de `ApplicationWebRoot` waarde wordt opgegeven met het `URLSpec` object dat wordt doorgegeven aan de `FormsServiceClient` methode van het `(Deprecated) renderHTMLForm` object). Als de server een andere server `ApplicationWebRoot` is van de server die als host fungeert voor de AEM Forms, moet de waarde van de URI van de webhoofdmap in de beheerconsole worden ingesteld als de URI-waarde van de webtoepassing van het formulier. Dit kan worden gedaan door login aan de beleidsconsole, het klikken van de Diensten > Vormen, en het plaatsen van de Wortel URI van het Web als https://server-name:port/FormServer. Sla vervolgens uw instellingen op.
 
 1. Een HTML-formulier renderen
 
@@ -346,6 +352,7 @@ Een HTML-formulier renderen met de API voor formulieren (webservice):
    * Een leeg `javax.xml.rpc.holders.StringHolder` object dat door de methode wordt gevuld. In dit argument wordt de waarde van de landinstelling opgeslagen.
    * Een leeg `javax.xml.rpc.holders.StringHolder` object dat door de methode wordt gevuld. In dit argument wordt de gebruikte HTML-renderwaarde opgeslagen.
    * Een leeg `com.adobe.idp.services.holders.FormsResultHolder` object dat de resultaten van deze bewerking zal bevatten.
+
    De `(Deprecated) renderHTMLForm` methode vult het `com.adobe.idp.services.holders.FormsResultHolder` object dat als laatste argumentwaarde wordt doorgegeven, met een formuliergegevensstroom die naar de webbrowser van de client moet worden geschreven.
 
 1. De formuliergegevensstroom naar de webbrowser van de client schrijven
@@ -362,5 +369,5 @@ Een HTML-formulier renderen met de API voor formulieren (webservice):
 
 [Formulieren weergeven als HTML](#rendering-forms-as-html)
 
-[AEM-formulieren aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[AEM Forms aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
 

@@ -10,7 +10,10 @@ topic-tags: Configuration
 discoiquuid: d4e2acb0-8d53-4749-9d84-15b8136e610b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '715'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +32,8 @@ De lokalisatie van adaptieve formulieren is afhankelijk van twee typen taalwoord
 
 Wanneer een adaptief formulier wordt weergegeven, identificeert het de aangevraagde landinstelling door de volgende parameters in de opgegeven volgorde te bekijken:
 
-* De parameter van het verzoek `afAcceptLang`om de browser scène van gebruikers met voeten te treden, kunt u de `afAcceptLang` verzoekparameter overgaan om scène te dwingen. Met de volgende URL wordt het formulier bijvoorbeeld geforceerd weergegeven in de Japanse landinstelling:
+* De parameter van het verzoek `afAcceptLang`om de browser scène van gebruikers met voeten te treden, kunt u overgaan 
+`afAcceptLang` request parameter to force the locale. Met de volgende URL wordt het formulier bijvoorbeeld geforceerd weergegeven in de Japanse landinstelling:
    `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
 * De landinstelling van de browser die voor de gebruiker is ingesteld. Deze landinstelling wordt in de aanvraag opgegeven met behulp van de `Accept-Language` koptekst.
@@ -56,7 +60,7 @@ Ondersteuning voor een nieuwe landinstelling toevoegen bij runtime voor adaptiev
 
 ### Een landinstelling toevoegen aan de Guide Localization-service {#add-a-locale-to-the-guide-localization-service-br}
 
-1. Ga naar `https://'[server]:[port]'/system/console/configMgr`.
+1. Go to `https://'[server]:[port]'/system/console/configMgr`.
 1. Klik om de **Guide Localization Service** -component te bewerken.
 1. Voeg de landinstelling toe die u wilt toevoegen aan de lijst met ondersteunde landinstellingen.
 
@@ -70,7 +74,7 @@ Maak een knooppunt van het type `cq:ClientLibraryFolder` onder `etc/<folderHiera
 
 * **js.txt** met het volgende:
 
-```
+```text
 /libs/fd/xfaforms/clientlibs/I18N/Namespace.js
 I18N.js
 /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js
@@ -86,7 +90,7 @@ Voeg de volgende bestanden toe aan de clientbibliotheek:
 * **LogMessages.js** die `guidelib.i18n.strings` en `guidelib.i18n.LogMessages` voor `<locale>` zoals die in `/etc/clientlibs/fd/af/I18N/fr/javascript/LogMessages.js`wordt bepaald.
 * **js.txt** met het volgende:
 
-```
+```text
 i18n.js
 LogMessages.js
 ```

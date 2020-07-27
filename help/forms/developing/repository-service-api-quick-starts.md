@@ -10,14 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 2fd1a21a-0f90-49d8-9f62-383b268d540d
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '616'
+ht-degree: 0%
 
 ---
 
 
 # Repository Service API {#repository-service-api-quick-starts}
 
-De volgende snelstarthandleidingen zijn beschikbaar voor de service Repository voor AEM-formulieren.
+De volgende Snelle Beginnen zijn beschikbaar voor de dienst van de Bewaarplaats van AEM Forms.
 
 [Snel starten (SOAP-modus): Een map maken met de Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api)
 
@@ -39,21 +42,21 @@ De volgende snelstarthandleidingen zijn beschikbaar voor de service Repository v
 
 [Snel starten (SOAP-modus): Een bron verwijderen met de Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-deleting-a-resource-using-the-java-api)
 
-De verrichtingen van de Vormen van AEM kunnen worden uitgevoerd gebruikend sterk-getypte API van Vormen AEM en de verbindingswijze zou aan ZEEP moeten worden geplaatst
+De verrichtingen van AEM Forms kunnen worden uitgevoerd gebruikend AEM Forms sterk-getypte API en de verbindingswijze zou aan ZEEP moeten worden geplaatst
 
 **Applications/FormsApplication**
 
-De meeste AEM Forms repository-services beginnen snel met interactie met een toepassing die is benoemd `Applications/FormsApplication,` zoals in de volgende afbeelding wordt getoond.
+De meeste AEM Forms repository service begint snel met interactie met een toepassing genaamd `Applications/FormsApplication,` zoals getoond in de volgende illustratie.
 
-De map FormsFolder is een locatie in de opslagplaats van AEM-formulieren. U kunt deze map bijvoorbeeld via programmacode toevoegen aan `Applications/FormsApplication`. (Zie [Snel starten (SOAP-modus): Een map maken met de Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api).)
+De map FormsFolder is een locatie in de opslagplaats van AEM Forms. U kunt deze map bijvoorbeeld via programmacode toevoegen aan `Applications/FormsApplication`. (Zie [Snel starten (SOAP-modus): Een map maken met de Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api).)
 
-Het pad naar een bron in de AEM Forms-opslagplaats is:
+Het pad naar een bron in de gegevensopslagruimte van AEM Forms is:
 
 `Applications/Application-name/Application-version/Folder.../Filename`
 
 >[!NOTE]
 >
->U kunt in de AEM Forms Repository door een webbrowser bladeren. Als u in de gegevensopslagruimte wilt bladeren, voert u de volgende URL in een webbrowser in `https://[server name]:[server port]/repository`. Met een webbrowser kunt u snelstartresultaten controleren. Als u bijvoorbeeld inhoud toevoegt aan de AEM Forms Repository, kunt u de inhoud zien in een webbrowser.
+>U kunt in de gegevensopslagruimte van AEM Forms bladeren met een webbrowser. Als u in de gegevensopslagruimte wilt bladeren, voert u de volgende URL in een webbrowser in `https://[server name]:[server port]/repository`. Met een webbrowser kunt u snelstartresultaten controleren. Als u bijvoorbeeld inhoud toevoegt aan de gegevensopslagruimte van AEM Forms, kunt u de inhoud zien in een webbrowser.
 
 >[!NOTE]
 >
@@ -63,7 +66,7 @@ Het pad naar een bron in de AEM Forms-opslagplaats is:
 
 In het volgende Java-codevoorbeeld wordt op de volgende locatie een map met de naam *FormsFolder* gemaakt `/Applications/FormsApplication/1.0/`. (Zie Mappen [maken](/help/forms/developing/aem-forms-repository.md#creating-folders).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-repository-client.jar
@@ -169,7 +172,7 @@ In het volgende Java-codevoorbeeld wordt op de volgende locatie een map met de n
 
 In het volgende Java-codevoorbeeld wordt een resource met de naam *loan.xdp* geschreven in de repository. De bron wordt toegevoegd aan de `/Applications/FormsApplication/1.0/FormsFolder` locatie. (Zie Bronnen [schrijven](/help/forms/developing/aem-forms-repository.md#writing-resources).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-repository-client.jar
@@ -297,7 +300,7 @@ In het volgende Java-codevoorbeeld wordt een resource met de naam *loan.xdp* ges
 
 In het volgende Java-codevoorbeeld worden bronnen weergegeven waarin zich `Applications/FormsApplication/1.0/FormsFolder`bevinden. (Zie [Verkoopbronnen](/help/forms/developing/aem-forms-repository.md#listing-resources).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-repository-client.jar
@@ -396,7 +399,7 @@ In het volgende Java-codevoorbeeld worden bronnen weergegeven waarin zich `Appli
 
 In het volgende Java-codevoorbeeld wordt een bron met de naam *Loan.xdp* uit de opslagplaats gelezen. Het XDP-bestand bevindt zich in `/Applications/FormsApplication/1.0/FormsFolder/`. (Zie [Bronnen](/help/forms/developing/aem-forms-repository.md#reading-resources)lezen.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-repository-client.jar
@@ -497,7 +500,7 @@ In het volgende Java-codevoorbeeld wordt een bron met de naam *Loan.xdp* uit de 
 
 Het volgende Java-codevoorbeeld wordt bijgewerkt `/Applications/FormsApplication/1.0/FormsFolder` door de beschrijving ervan te wijzigen. (Zie [Bronnen](/help/forms/developing/aem-forms-repository.md#updating-resources)bijwerken.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-repository-client.jar
@@ -609,7 +612,7 @@ Het volgende Java-codevoorbeeld wordt bijgewerkt `/Applications/FormsApplication
 
 In het volgende Java-codevoorbeeld wordt gezocht naar Loan.xdp in `Applications/FormsApplication/1.0/FormsFolder`. (Zie [Zoeken naar bronnen](/help/forms/developing/aem-forms-repository.md#searching-for-resources).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-repository-client.jar
@@ -731,9 +734,9 @@ In het volgende Java-codevoorbeeld wordt gezocht naar Loan.xdp in `Applications/
 
 ## Snel starten (SOAP-modus): Relaties maken tussen bronnen met de Java API {#quick-start-soap-mode-creating-relationships-between-resources-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een relatie gemaakt tussen twee bronnen in de opslagplaats van AEM Forms. (Zie [Resourcerelaties](/help/forms/developing/aem-forms-repository.md#creating-resource-relationships)maken.)
+In het volgende Java-codevoorbeeld wordt een relatie gemaakt tussen twee bronnen in de gegevensopslagruimte van AEM Forms. (Zie [Resourcerelaties](/help/forms/developing/aem-forms-repository.md#creating-resource-relationships)maken.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-repository-client.jar
@@ -874,7 +877,7 @@ In het volgende Java-codevoorbeeld wordt een relatie gemaakt tussen twee bronnen
 
 In het volgende Java-codevoorbeeld wordt /Applications/FormsApplication/1.0/FormsFolder/Loan.xdp vergrendeld. (Zie [Bronnen](/help/forms/developing/aem-forms-repository.md#locking-resources)vergrendelen.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-repository-client.jar
@@ -985,7 +988,7 @@ In het volgende Java-codevoorbeeld wordt /Applications/FormsApplication/1.0/Form
 
 Het volgende codevoorbeeld van Java leest en leidt tot toegangsbeheerlijsten (ACLs) in de bewaarplaats.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-repository-client.jar
@@ -1100,7 +1103,7 @@ Het volgende codevoorbeeld van Java leest en leidt tot toegangsbeheerlijsten (AC
 
 In het volgende Java-codevoorbeeld wordt Loan.xdp verwijderd uit `Applications/FormsApplication/1.0/FormsFolder`. Als dit XDP-bestand zich niet in deze map bevindt, wordt een uitzondering gegenereerd. (Zie [Bronnen](/help/forms/developing/aem-forms-repository.md#deleting-resources)verwijderen.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-repository-client.jar

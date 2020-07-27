@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '3988'
 ht-degree: 0%
@@ -75,7 +75,7 @@ Objecten en services voor gegevensmodellen toevoegen:
 
    >[!NOTE]
    >
-   >U kunt services die u hebt geconfigureerd op het tabblad Services van een formuliergegevensmodel, aanroepen met behulp van de adaptieve formulierregels. De gevormde diensten zijn beschikbaar in de Invoke de dienstenactie van de regelredacteur voor meer informatie over het gebruiken van deze diensten in adaptieve vormregels, zie de Diensten van de Invoke en Reeks Waarde van regels in [regelredacteur](/help/forms/using/rule-editor.md).
+   >U kunt services die u op het tabblad Services van een formuliergegevensmodel hebt geconfigureerd, aanroepen met behulp van de aangepaste formulierregels. De gevormde diensten zijn beschikbaar in de Invoke de dienstenactie van de regelredacteur voor meer informatie over het gebruiken van deze diensten in adaptieve vormregels, zie de Diensten van de Invoke en Reeks Waarde van regels in [regelredacteur](/help/forms/using/rule-editor.md).
 
 ## Gegevensmodelobjecten en onderliggende eigenschappen maken {#create-data-model-objects-and-child-properties}
 
@@ -200,7 +200,7 @@ Gebruik het verzoekattribuut om de bijbehorende eigenschappen van de gegevensbro
 
 1. Neem de volgende tekst op in het bestand head.jsp:
 
-   ```
+   ```jsp
    <%Map paraMap = new HashMap();
     paraMap.put("<request_attribute>",request.getParameter("<request_attribute>"));
     request.setAttribute("paramMap",paraMap);%>
@@ -242,6 +242,7 @@ Een koppeling toevoegen:
    * Selecteer het associatietype — Een-op-een of een-op-een.
    * Selecteer het gegevensmodelobject dat u wilt koppelen.
    * Selecteer de leesservice om gegevens van het geselecteerde modelobject te lezen. Het argument van de leesservice wordt weergegeven. Bewerk het argument om het indien nodig te wijzigen en koppel het aan de eigenschap van het gegevensmodelobject dat u wilt koppelen.
+
    In het volgende voorbeeld is het standaardargument voor de leesservice van het gegevensmodelobject Afhankelijkheden `dependentid`.
 
    ![add-association-example](assets/add-association-example.png)
@@ -279,6 +280,7 @@ Eigenschappen bewerken:
    * **Gegevensmodelobject**: Geef de lees- en schrijfservices op en bewerk argumenten.
    * **Eigenschap**: Geef het type, subtype en de indeling voor de eigenschap op. U kunt ook opgeven of de geselecteerde eigenschap de primaire sleutel voor het gegevensmodelobject is.
    * **Service**: Geef het invoermodelobject, het uitvoertype en de argumenten voor de service op. Voor de Get dienst, kunt u specificeren als het wordt verwacht om een serie terug te keren.
+
    ![edit-properties-service](assets/edit-properties-service.png)
 
    Dialoogvenster Eigenschappen bewerken voor een get-service
@@ -363,7 +365,7 @@ In dit voorbeeld kunt u het uitvoermodelobject ook kiezen als argument voor pers
 
 ![edit-prop-nav-prop2](assets/edit-prop-nav-prop2.png)
 
-Op dezelfde manier kunt u een `GET LINK` dienst kiezen en zijn navigatie-eigenschappen vormen wanneer het toevoegen van verenigingen in het Model van de Gegevens van de Vorm. Als u echter een navigatie-eigenschap wilt selecteren, moet u controleren of de eigenschap **[!UICONTROL Binding To field]** is ingesteld op **Letterlijk**.
+Op dezelfde manier kunt u een `GET LINK` dienst kiezen en zijn navigatie-eigenschappen vormen wanneer het toevoegen van verenigingen in het Model van de Gegevens van de Vorm. Als u echter een navigatie-eigenschap wilt kunnen selecteren, moet u ervoor zorgen dat de eigenschap **[!UICONTROL Binding To field]** is ingesteld op **Letterlijk**.
 
 ![add-association-nav-prop](assets/add-association-nav-prop.png)
 
@@ -508,24 +510,24 @@ In de volgende tabel worden de beperkingen voor invoergegevens weergegeven die z
 
 In dit voorbeeld worden de invoergegevens gevalideerd op basis van maximum-, minimum- en vereiste beperkingen die zijn gedefinieerd in het Swagger-bestand. De invoergegevens voldoen alleen aan de validatiecriteria als Order-id aanwezig is en de waarde tussen 1 en 10 ligt.
 
-```xml
-parameters: [
-{
-name: "orderId",
-in: "path",
-description: "ID of pet that needs to be fetched",
-required: true,
-type: "integer",
-maximum: 10,
-minimum: 1,
-format: "int64"
-}
-]
+```json
+   parameters: [
+   {
+   name: "orderId",
+   in: "path",
+   description: "ID of pet that needs to be fetched",
+   required: true,
+   type: "integer",
+   maximum: 10,
+   minimum: 1,
+   format: "int64"
+   }
+   ]
 ```
 
 Er wordt een uitzondering weergegeven als de invoergegevens niet voldoen aan de validatiecriteria. Als het logboekniveau aan **Debug** wordt geplaatst, wordt een fout geregistreerd aan het **error.log** - dossier. Bijvoorbeeld,
 
-```java
+```verilog
 21.01.2019 17:26:37.411 *ERROR* com.adobe.aem.dermis.core.validation.JsonSchemaValidator {"errorCode":"AEM-FDM-001-044","errorMessage":"Input validations failed during operation execution.","violations":{"/orderId":["numeric instance is greater than the required maximum (maximum: 10, found: 16)"]}}
 ```
 

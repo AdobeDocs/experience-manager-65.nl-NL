@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: cb75b826-d044-44be-b364-790c046513e0
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '568'
+ht-degree: 1%
 
 ---
 
@@ -22,7 +25,7 @@ HTML5-formulieren hebben het idee van **profielen** die als REST-eindpunten word
 
 https://&lt;*host*>:&lt;*port*>/content/xfaforms/profiles/default.html?contentRoot=&lt;*path of the folder containing form xdp*>&amp;template=&lt;*name of the xdp*>
 
-Bijvoorbeeld: `http://localhost:4502/content/xfaforms/profiles/default.html?contentRoot=c:/xdps&template=sampleForm.xdp`
+Bijvoorbeeld, `http://localhost:4502/content/xfaforms/profiles/default.html?contentRoot=c:/xdps&template=sampleForm.xdp`
 
 Voor een douaneprofiel, verandert het eindpunt dienovereenkomstig. Het eindpunt voor het aangepaste profiel met de naam Transform is bijvoorbeeld:
 
@@ -30,7 +33,7 @@ Voor een douaneprofiel, verandert het eindpunt dienovereenkomstig. Het eindpunt 
 
 Als uw sjabloon zich in de AEM-opslagplaats bevindt in een toepassing met de naam FormSubmission, is de URI:
 
-```
+```http
 http://localhost:4502/content/xfaforms/profiles/default.html?
  contentRoot=crx:///content/dam/formsanddocuments/FormSubmission/1.0
  &template=sampleForm.xdp

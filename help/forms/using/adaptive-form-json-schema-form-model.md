@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 375ba8fc-3152-4564-aec5-fcff2a95cf4c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4ecf5efc568cd21f11801a71d491c3d75ca367fe
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1469'
+ht-degree: 2%
 
 ---
 
@@ -23,9 +26,9 @@ Voor het ontwerpen van een adaptief formulier met behulp van een JSON-schema als
 * [Een adaptief formulier maken](../../forms/using/creating-adaptive-form.md)
 * [JSON Schema](https://json-schema.org/)
 
-## Een JSON-schema gebruiken als formuliermodel {#using-a-json-schema-as-form-model}
+## Een JSON-schema gebruiken als formuliermodel  {#using-a-json-schema-as-form-model}
 
-AEM Forms ondersteunt het maken van een adaptief formulier met een bestaand JSON-schema als formuliermodel. Dit JSON-schema vertegenwoordigt de structuur waarin gegevens worden geproduceerd of verbruikt door het back-end systeem in uw organisatie. Het JSON-schema dat u gebruikt, moet voldoen aan de [v4-specificaties](https://json-schema.org/draft-04/schema).
+AEM Forms ondersteunen het maken van een adaptief formulier met een bestaand JSON-schema als formuliermodel. Dit JSON-schema vertegenwoordigt de structuur waarin gegevens worden geproduceerd of verbruikt door het back-end systeem in uw organisatie. Het JSON-schema dat u gebruikt, moet voldoen aan de [v4-specificaties](https://json-schema.org/draft-04/schema).
 
 De belangrijkste kenmerken van het gebruik van een JSON-schema zijn:
 
@@ -37,7 +40,7 @@ Een JSON-schema bestaat uit eenvoudige en complexe elementtypen. De elementen he
 
 Deze toewijzing van JSON-elementen met adaptieve formuliercomponenten is als volgt:
 
-```
+```json
 "birthDate": {
               "type": "string",
               "format": "date",
@@ -125,7 +128,7 @@ Het adaptieve formulier gebruikt informatie die beschikbaar is in het JSON-schem
 
 Hier is een voorbeeld van een JSON-schema.
 
-```
+```json
 {
  "$schema": "https://json-schema.org/draft-04/schema#",
  "definitions": {
@@ -307,7 +310,7 @@ Hier is een voorbeeld van een JSON-schema.
 
 De sleutels van de definitie worden gebruikt om herbruikbare schema&#39;s te identificeren. De herbruikbare schemadefinities worden gebruikt om fragmenten tot stand te brengen. Het is gelijkaardig aan het identificeren van complexe types in XSD. Hieronder volgt een voorbeeld van een JSON-schema met definities:
 
-```
+```json
 {
   "$schema": "https://json-schema.org/draft-04/schema#",
 
@@ -338,7 +341,7 @@ In het bovenstaande voorbeeld wordt een klantrecord gedefinieerd, waarbij elke k
 
 Met de eigenschap **aem:afProperties** kunt u het JSON-schemaveld vooraf configureren en toewijzen aan een aangepaste formuliercomponent. Hieronder ziet u een voorbeeld:
 
-```
+```json
 {
     "properties": {
         "sizeInMB": {
@@ -356,13 +359,13 @@ Met de eigenschap **aem:afProperties** kunt u het JSON-schemaveld vooraf configu
 }
 ```
 
-## Scripts of expressies configureren voor formulierobjecten {#configure-scripts-or-expressions-for-form-objects}
+## Scripts of expressies configureren voor formulierobjecten  {#configure-scripts-or-expressions-for-form-objects}
 
 JavaScript is de expressietaal van adaptieve formulieren. Alle expressies zijn geldige JavaScript-expressies en gebruiken API&#39;s van het scriptmodel voor aangepaste formulieren. U kunt formulierobjecten vooraf configureren om een expressie [op een formuliergebeurtenis te](../../forms/using/adaptive-form-expressions.md) evalueren.
 
 Met de eigenschap aaem:afproperties kunt u aangepaste formulierexpressies of scripts vooraf configureren voor adaptieve formuliercomponenten. Wanneer bijvoorbeeld de gebeurtenis initialize wordt geactiveerd, stelt de onderstaande code de waarde van het telefoonveld in en drukt een waarde af op het logbestand:
 
-```
+```json
 "telephone": {
   "type": "string",
   "pattern": "/\\d{10}/",
@@ -390,7 +393,7 @@ U moet lid zijn van de gebruikersgroep [voor](/help/forms/using/forms-groups-pri
    <td>Valideren</td>
    <td>Ingeschakeld</td>
    <td>Waarde vastleggen</td>
-   <td>Klikken </td>
+   <td>Klik op </td>
    <td>Opties</td>
   </tr>
   <tr>
@@ -589,7 +592,7 @@ Hier volgt een voorbeeld van de JSON-code voor bovengenoemde voorbeelden.
 
 ### Veld verbergen bij initialisatiegebeurtenis {#hiding-a-field-on-initialize-event}
 
-```
+```json
 "name": {
     "type": "string",
     "aem:afProperties": {
@@ -602,7 +605,7 @@ Hier volgt een voorbeeld van de JSON-code voor bovengenoemde voorbeelden.
 
 #### Waarde van een ander veld configureren bij gebeurtenis value commit {#configure-value-of-another-field-on-value-commit-event}
 
-```
+```json
 "Income": {
     "type": "object",
     "properties": {
@@ -722,7 +725,7 @@ U kunt de volgende beperkingen toevoegen aan JSON-schemaelementen om de waarden 
  </tbody>
 </table>
 
-## Niet-ondersteunde constructies {#non-supported-constructs}
+## Niet-ondersteunde constructies  {#non-supported-constructs}
 
 De volgende JSON-schemaconstructies worden niet ondersteund door adaptieve formulieren:
 

@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 154255e7-468a-42e6-a33d-eee691cf854d
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '331'
+ht-degree: 0%
 
 ---
 
@@ -20,9 +23,9 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 Met AEM Forms kunt u een formulier opslaan als concept. Met de conceptfunctionaliteit kunt u een formulier bijhouden dat u later vanaf elk apparaat kunt invullen en verzenden.
 
-Standaard slaat AEM Forms de gebruikersgegevens op die zijn gekoppeld aan het concept en de verzending van een formulier in het `/content/forms/fp` knooppunt op het exemplaar Publish. Daarnaast bieden de AEM Forms portalcomponenten gegevensservices waarmee u de implementatie van het opslaan van gebruikersgegevens voor concepten en verzendingen kunt aanpassen. U kunt bijvoorbeeld gebruikersgegevens opslaan in een gegevensopslag.
+Standaard worden de gebruikersgegevens die zijn gekoppeld aan het concept en de verzending van een formulier door AEM Forms opgeslagen in het `/content/forms/fp` knooppunt in het exemplaar Publiceren. Bovendien verlenen de AEM Forms portalcomponenten gegevensdiensten, die u kunt gebruiken om de implementatie aan te passen van het opslaan van gebruikersgegevens voor ontwerpen en voorlegging. U kunt bijvoorbeeld gebruikersgegevens opslaan in een gegevensopslag.
 
-## Vereisten {#prerequisites}
+## Vereisten  {#prerequisites}
 
 * Componenten van [Forms Portal inschakelen](/help/forms/using/enabling-forms-portal-components.md)
 * Een [pagina met een portal voor formulieren maken](/help/forms/using/creating-form-portal-page.md)
@@ -202,8 +205,8 @@ U kunt de onderstaande aantekening gebruiken om de servicerangschikking te verho
 
 Als u de bovenstaande annotatie wilt gebruiken, importeert u het volgende naar uw project:
 
-```
+```java
 import org.apache.felix.scr.annotations.Properties;
- import org.apache.felix.scr.annotations.Property;
+import org.apache.felix.scr.annotations.Property;
 ```
 

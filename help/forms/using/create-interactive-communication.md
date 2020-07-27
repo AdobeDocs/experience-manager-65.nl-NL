@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f4d98cb9-84d8-4735-91d2-b9ceec861e5e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3271ad3a7d0daac731803975e12d79b77905068a
+source-git-commit: bd70508b361ac8b62ebc0344538a18369a075f3e
 workflow-type: tm+mt
-source-wordcount: '5933'
+source-wordcount: '5946'
 ht-degree: 0%
 
 ---
@@ -187,7 +187,7 @@ Tik op het documentfragment, tik op ![configure_icon](assets/configure_icon.png)
 
    ![webchannelmiddelen](assets/webchannelassets.png)
 
-   Tik op het documentfragment, tik op ![configure_icon](assets/configure_icon.png) (Configure_icon) en tik vervolgens op **[!UICONTROL Properties]** het zijpaneel van de Interactive Communication. De **[!UICONTROL Variables and Data Model Objects]** sectie bevat een lijst met de variabelen, inclusief de verborgen variabelen, en gegevensmodelobjecten die in de documentfragmenten worden gebruikt. Gebruik het pictogram ![Bewerken](assets/edit.svg) (Bewerken) naast elk gegevensmodelobject of elke variabele om de eigenschappen te bewerken. Voor documentfragmenten die [automatisch in het kanaal van het Web gebruikend het kanaal van de Druk zijn gegenereerd](#synchronize) , gebruik bovendien het ![](assets/cancelinheritance.png) (Cancel Overerving) pictogram naast elk voorwerp van het gegevensmodel en de variabele om overerving [te](#cancelinheritance) annuleren en hen te kunnen uitgeven.
+   Tik op het documentfragment, tik op ![configure_icon](assets/configure_icon.png) (Configure_icon) en tik vervolgens op **[!UICONTROL Properties]** het zijpaneel van de Interactive Communication. De **[!UICONTROL Variables and Data Model Objects]** sectie bevat een lijst met de variabelen, inclusief de verborgen variabelen, en gegevensmodelobjecten die in de documentfragmenten worden gebruikt. Gebruik het pictogram ![Bewerken](assets/edit.svg) (Bewerken) naast elk gegevensmodelobject of elke variabele om de eigenschappen te bewerken. Voor documentfragmenten die [automatisch zijn gegenereerd](#synchronize) in het webkanaal via het kanaal Afdrukken, gebruikt u bovendien het pictogram ![Overerving](assets/cancelinheritance.png) annuleren (Overerving annuleren) naast elk gegevensmodelobject en de variabele om overerving [te](#cancelinheritance) annuleren en te bewerken.
 
 1. Tik op het webkanaal terwijl het webkanaal is geselecteerd om extra componenten aan het webkanaal toe te voegen **[!UICONTROL Components]**. De belemmering-en-dalingscomponenten in het Webkanaal van uw Interactieve Communicatie zoals vereist en ga te werk om hen te vormen.
 
@@ -386,12 +386,12 @@ Tik op het hoofdvenster in de websjabloon en tik op **+** om een **tabelcomponen
 
 #### Tekst toevoegen of bewerken in tabelcellen {#addedittexttable}
 
-1. Selecteer het standaardtekstvak in de tabelcel en tik op ![](assets/edit.png) (Bewerken).
-1. Typ de tekst in de tabelcel en tik ![](assets/done_icon.png) om deze op te slaan.
+1. Selecteer het standaardtekstvak in de tabelcel en tik op ![Bewerken](assets/edit.png) (Bewerken).
+1. Typ de tekst in de tabelcel en tik op ![done_icon](assets/done_icon.png) om deze op te slaan.
 
 #### Binding maken tussen tabelcellen en objectelementen van gegevensmodellen {#createbindingtablecells}
 
-1. Selecteer het standaardtekstvak in de tabelrij en tik op ![](assets/edit.png) (Bewerken).
+1. Selecteer het standaardtekstvak in de tabelrij en tik op ![Bewerken](assets/edit.png) (Bewerken).
 1. Tik op de vervolgkeuzelijst Gegevensmodelobjecten en selecteer de eigenschap.
 1. Tik om de tabelcel en de objecteigenschap van het gegevensmodel op te slaan en een binding te maken.
 
@@ -399,10 +399,10 @@ Tik op het hoofdvenster in de websjabloon en tik op **+** om een **tabelcomponen
 
 #### Een hyperlink maken voor tekst in de tabelcel {#createhyperlinktable}
 
-1. Selecteer het standaardtekstvak in de tabelcel en tik op ![](assets/edit.svg) (Bewerken).
+1. Selecteer het standaardtekstvak in de tabelcel en tik op ![Bewerken](assets/edit.svg) (Bewerken).
 1. Selecteer de tekst in de tabelcel en tik op het pictogram Hyperlink.
 1. Geef de URL op in het veld **Pad** .
-1. Tik ![](assets/done_icon.png) om de eigenschappen van de hyperlink op te slaan.
+1. Tik op ![done_icon](assets/done_icon.png) om de eigenschappen van de hyperlink op te slaan.
 
 ![Hyperlink maken](assets/create_hyperlink_table_new.png)
 
@@ -426,9 +426,9 @@ Sorteren kan worden toegepast op tabelkolommen met:
 
 Sorteren inschakelen:
 
-1. Selecteer de tabel en tik op ![](assets/configure_icon.png) (Configureren). U kunt de lijst ook selecteren gebruikend browser van de **Inhoud** in de knoop van de Interactieve Mededeling.
+1. Selecteer de lijst en tik ![configure_icon](assets/configure_icon.png) (vorm). U kunt de lijst ook selecteren gebruikend browser van de **Inhoud** in de knoop van de Interactieve Mededeling.
 1. Selecteer Sorteren **inschakelen.**
-1. Tik ![](assets/done_icon.png) om de tabeleigenschappen op te slaan. De sorteerpictogrammen, pijlen omhoog en omlaag, in kolomkoppen geven aan dat het sorteren is ingeschakeld.
+1. Tik op ![done_icon](assets/done_icon.png) om de tabeleigenschappen op te slaan. De sorteerpictogrammen, pijlen omhoog en omlaag, in kolomkoppen geven aan dat het sorteren is ingeschakeld.
 
    ![Sorteren inschakelen](assets/enable_sorting_new-1.png)
 
@@ -479,7 +479,7 @@ U kunt knoop als component aan het Webkanaal van de Interactieve Communicatie to
 Om knoop toe te voegen en regels te bepalen over het:
 
 1. Tik op het hoofdvenster in de websjabloon en tik op **+** om de component **Button** toe te voegen aan de interactieve communicatie.
-1. Tik op de component Button en tik ![](assets/edit-rules.png) om regels voor de tik van de knop te definiëren.
+1. Tik op de knopcomponent en tik op ![bewerkingsregels](assets/edit-rules.png) om regels voor de tik van de knop te definiëren.
 1. Selecteer in de sectie **Wanneer** de optie **Klikken** in de status van de vervolgkeuzelijst.
 1. In de sectie **Dan** :
 

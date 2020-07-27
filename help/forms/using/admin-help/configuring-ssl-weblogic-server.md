@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 968c2574-ec9a-45ca-9c64-66f4caeec285
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1074'
+ht-degree: 0%
 
 ---
 
@@ -115,7 +118,7 @@ Zie het bestand keytool.html in de JDK-documentatie voor meer informatie over he
 
    Bijvoorbeeld:
 
-   ```as3
+   ```java
    C:\Program Files\Java\jrockit-jdk1.6.0_24-R28\bin\keytool" -genkey -v -alias ads-credentials -keyalg RSA -keystore "ads-credentials.jks" -validity 3650 -storepass P@ssw0rd -keypass P@ssw0rd -dname "CN=wasnode01, OU=LC, O=Adobe, L=Noida, S=UP,C=91
    ```
 
@@ -135,7 +138,7 @@ Zie het bestand keytool.html in de JDK-documentatie voor meer informatie over he
 
    Bijvoorbeeld:
 
-   ```as3
+   ```java
    C:\Program Files\Java\jrockit-jdk1.6.0_24-R28\bin\keytool" -export -v -alias ads-credentials -file "ads-ca.cer" -keystore "ads-credentials.jks" -storepass P@ssw0rd
    ```
 
@@ -144,7 +147,7 @@ Zie het bestand keytool.html in de JDK-documentatie voor meer informatie over he
 1. Kopieer het bestand ads-ca.cer naar alle hostcomputers die beveiligde communicatie met de toepassingsserver nodig hebben.
 1. Voeg het certificaat in een nieuw sleutelarchiefbestand in (het sleutelarchief van Aangepast vertrouwen) door de volgende opdracht in te voeren:
 
-   [JAVA_HOME]`/bin/keytool -import -v -noprompt -alias bedrock -file "ads-ca.cer" -keystore "ads-ca.jks" -storepass store_password -keypass key_password`
+   [JAVA_HOME] `/bin/keytool -import -v -noprompt -alias bedrock -file "ads-ca.cer" -keystore "ads-ca.jks" -storepass store_password -keypass key_password`
 
    >[!NOTE]
    >
@@ -152,7 +155,7 @@ Zie het bestand keytool.html in de JDK-documentatie voor meer informatie over he
 
    Bijvoorbeeld:
 
-   ```as3
+   ```java
    C:\Program Files\Java\jrockit-jdk1.6.0_24-R28\bin\keytool" -import -v -noprompt -alias bedrock -file "ads-ca.cer" -keystore "ads-ca.jks" -storepass Password1 -keypass Password1
    ```
 
@@ -177,7 +180,7 @@ Configureer WebLogic zodanig dat deze gebruikmaakt van het sleutelarchief Aangep
 1. Klik op **Wijzigen** om de lijst met sleutelarchieven op te halen als een vervolgkeuzelijst en selecteer **Aangepaste identiteit en aangepast vertrouwen**.
 1. Geef onder Identiteit de volgende waarden op:
 
-   **Aangepast identiteitssleutelarchief**: *[appserverdomain]*/adobe/*[server name]*/ads-credentials.jks, waarbij *[appserverdomain] *het werkelijke pad is en de *[servernaam]* de naam van de toepassingsserver.
+   **Aangepast identiteitssleutelarchief**: *[appserverdomain]*/adobe/*[server name]*/ads-credentials.jks, waarbij *[appserverdomain] *het daadwerkelijke pad is en de *[servernaam]* de naam van de toepassingsserver.
 
    **Type** aangepast identiteitssleutelarchief: JKS
 
@@ -185,11 +188,11 @@ Configureer WebLogic zodanig dat deze gebruikmaakt van het sleutelarchief Aangep
 
 1. Geef onder Vertrouwd de volgende waarden op:
 
-   **Aangepaste sleutelarchiefbestandsnaam** vertrouwen: `*[appserverdomain]*/adobe/*'server'*/ads-ca.jks`, waarbij `*[appserverdomain]*` het werkelijke pad is
+   **Aangepaste sleutelarchiefbestandsnaam** vertrouwen: `*[appserverdomain]*/adobe/*'server'*/ads-ca.jks`, waar `*[appserverdomain]*` is het werkelijke pad?
 
    **Type** aangepast sleutelarchief vertrouwen: JKS
 
-   **Wachtwoordgroep** voor aangepast vertrouwen: *mypassword* (aangepast wachtwoord vertrouwenssleutel)
+   **Wachtwoordgroep** voor aangepast vertrouwen: *mypassword* (aangepast wachtwoord voor vertrouwenssleutel)
 
 1. Onder Algemeen, in Configuratie, uitgezochte **SSL**.
 1. Standaard is Keystore geselecteerd voor Identiteit en Vertrouwenslocaties. Als dat niet het geval is, wijzigt u deze in sleutelarchief.

@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e047a95e-0acb-438a-8d27-f005c0adc508
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '2657'
+ht-degree: 0%
 
 ---
 
@@ -51,19 +54,19 @@ Als uw processen zijn ontworpen en geïmplementeerd zonder dat e-mail vereist is
 >
 >Als u onjuiste informatie invoert, kunt u op Annuleren klikken om terug te keren naar de vorige weergegeven pagina.
 
-### E-mailsjablonen configureren voor gebruik van de AEM Forms Workspace {#configuring-email-templates-to-use-html-workspace}
+### E-mailsjablonen configureren voor gebruik van de werkruimte AEM Forms {#configuring-email-templates-to-use-html-workspace}
 
 >[!NOTE]
 >
 >De Flex-werkruimte is verouderd voor de release van AEM-formulieren.
 
-Standaard bevatten de e-mails die door AEM-formulieren worden verzonden koppelingen naar (Vervangen voor AEM-formulieren op JEE) Flex Workspace. U kunt AEM-formulieren configureren om e-mailberichten met koppelingen naar de werkruimte van AEM-formulieren te verzenden. Zie [dit](/help/forms/using/features-html-workspace-available-flex.md) artikel voor meer informatie over de voordelen van de werkruimte van AEM Forms over (afgekeurd voor AEM-formulieren in JEE) Flex Workspace.
+Standaard bevatten de e-mails die door AEM-formulieren worden verzonden koppelingen naar (Vervangen voor AEM-formulieren op JEE) Flex Workspace. U kunt AEM-formulieren configureren om e-mailberichten met koppelingen naar de werkruimte van AEM Forms te verzenden. Zie [dit](/help/forms/using/features-html-workspace-available-flex.md) artikel voor meer informatie over de voordelen van AEM Forms Workspace over (Vervangen voor AEM-formulieren in JEE) Flex Workspace.
 
 1. Klik in de beheerconsole op Home > Services > Formulierwerkstroom > Serverinstellingen > Taakmeldingen.
 1. Taaktoewijzingssjabloon openen.
 1. Plaats het malplaatje in de taakberichten aan het volgende: `https://@@notification-host@@:8080/lc/libs/ws/index.html?taskId=@@taskid@@`
 
-   ```as3
+   ```java
    https://@@notification-host@@:8080/lc/libs/ws/index.html?taskId=@@taskid@@
    ```
 
@@ -126,7 +129,7 @@ U kunt deadline-meldingen verzenden naar gebruikers en groepen wanneer de deadli
 
 ### De tag DO NOT DELETE verbergen voor alle e-mails {#hide-the-do-not-delete-tag-for-all-emails}
 
-U kunt e-mail zodanig configureren dat deze wordt verborgen voor de tag NIET VERWIJDEREN in alle e-mails die worden verzonden in een humanitair proces. Zie [How to hide the &#39;DO-NOT-DELETE&#39; tag with CSS voor meer informatie](https://blogs.adobe.com/LiveCycleHelp/2013/09/how-to-hide-the-do-not-delete-tag-with-css.html)
+U kunt e-mail configureren om te verbergen voor de tag NIET DELETE bijhouden in alle e-mails die worden verzonden in een humanitair proces. Zie [How to hide the &#39;DO-NOT-DELETE&#39; tag with CSS voor meer informatie](https://blogs.adobe.com/LiveCycleHelp/2013/09/how-to-hide-the-do-not-delete-tag-with-css.html)
 
 ## Meldingen voor beheerders configureren {#configuring-notifications-for-administrators}
 

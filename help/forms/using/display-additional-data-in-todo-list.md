@@ -1,8 +1,8 @@
 ---
 title: Extra gegevens weergeven in de lijst ToDo
 seo-title: Extra gegevens weergeven in de lijst ToDo
-description: Hoe kan ik de weergave van de lijst Te doen van LiveCycle AEM Forms-werkruimte aanpassen om meer informatie naast de standaardwerkruimte weer te geven.
-seo-description: Hoe kan ik de weergave van de lijst Te doen van LiveCycle AEM Forms-werkruimte aanpassen om meer informatie naast de standaardwerkruimte weer te geven.
+description: Hoe kan ik de weergave van de lijst Te doen van LiveCycle AEM Forms-werkruimte aanpassen om meer informatie naast de standaardinstelling weer te geven.
+seo-description: Hoe kan ik de weergave van de lijst Te doen van LiveCycle AEM Forms-werkruimte aanpassen om meer informatie naast de standaardinstelling weer te geven.
 uuid: 9467c655-dce2-43ce-8e8f-54542fe81279
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,14 +10,17 @@ topic-tags: forms-workspace
 discoiquuid: fed3b562-bcc2-4fb7-8fd2-35b1ac621e16
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '308'
+ht-degree: 0%
 
 ---
 
 
 # Extra gegevens weergeven in de lijst ToDo{#displaying-additional-data-in-todo-list}
 
-Standaard worden in de lijst Te doen van de werkruimte AEM-formulieren de naam en beschrijving van de taakweergave weergegeven. U kunt echter andere gegevens toevoegen, zoals de aanmaakdatum en de einddatum. U kunt ook pictogrammen toevoegen en de stijl van de weergave wijzigen.
+Standaard worden in de lijst AEM Forms-werkruimte de naam en beschrijving van de taakweergave weergegeven. U kunt echter andere gegevens toevoegen, zoals de aanmaakdatum en de einddatum. U kunt ook pictogrammen toevoegen en de stijl van de weergave wijzigen.
 
 ![Een blik bij de Te doen lusje van de Werkruimte van HTML die standaardconfiguratie toont](assets/html-todo-list.png)
 
@@ -31,12 +34,12 @@ Zie [dit](/help/forms/using/html-workspace-json-object-description.md) artikel v
 
 ## Informatie weergeven over een taak {#displaying-information-on-a-task}
 
-1. Voer de [algemene stappen uit voor het aanpassen](../../forms/using/generic-steps-html-workspace-customization.md)van de werkruimte van AEM Forms.
+1. Voer de [algemene stappen uit om de werkruimte van AEM Forms aan te passen](../../forms/using/generic-steps-html-workspace-customization.md).
 1. Om extra informatie voor een taak te tonen, moeten de overeenkomstige zeer belangrijk-waardeparen binnen het taakblok van worden toegevoegd `translation.json`.
 
    Bijvoorbeeld wijzigen `/apps/ws/locales/en-US/translation.json` voor Engels:
 
-   ```
+   ```json
    "task" : {
            "reminder" : {
                "value" : "Reminder",
@@ -112,7 +115,7 @@ Zie [dit](/help/forms/using/html-workspace-json-object-description.md) artikel v
 
 1. Voeg bijvoorbeeld informatie toe in het taakblok:
 
-   ```
+   ```json
    "stepname" : {
                "value" : "Step Name",
                "tooltip" : "This task belongs to __stepName__ step"
@@ -135,17 +138,17 @@ Zie [dit](/help/forms/using/html-workspace-json-object-description.md) artikel v
 
 ## Item toevoegen in de HTML-sjabloon {#adding-entry-in-the-html-template}
 
-Tot slot moet u een ingang in het dev pakket voor elk bezit omvatten dat u aan de taak wilt toevoegen. Om tot stand te brengen verwijs naar de code van de de werkruimte van de Vormen van AEM.
+Tot slot moet u een ingang in het dev pakket voor elk bezit omvatten dat u aan de taak wilt toevoegen. Om tot stand te brengen verwijs naar de werkruimtecode van de Bouwstijl AEM Forms.
 
 1. Kopiëren `task.html`:
 
-   * from: `/libs/ws/js/runtime/templates/`
+   * Van: `/libs/ws/js/runtime/templates/`
    * to: `/apps/ws/js/runtime/templates/`
 
 1. Voeg de nieuwe informatie toe aan `/apps/ws/js/runtime/templates/task.html`.
 
    Voeg bijvoorbeeld toe onder `div class="taskProperties"`:
 
-   ```
+   ```jsp
    <span class="stepname" alt="<%= $.t('task.stepname.value')%>" title = '<%= $.t("task.stepname.tooltip",{stepName:stepName})%>'/>
    ```

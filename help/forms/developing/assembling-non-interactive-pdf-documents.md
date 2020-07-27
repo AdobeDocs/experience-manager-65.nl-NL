@@ -11,7 +11,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 8a75c201-bd88-4809-be08-69de94656489
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1760'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,7 @@ U kunt een niet-interactief PDF-document samenstellen wanneer u een interactief 
 
 Voor deze bespreking, veronderstel dat het volgende DDX- document wordt gebruikt.
 
-```as3
+```xml
  <?xml version="1.0" encoding="UTF-8"?>
  <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
       <PDF result="out.pdf">
@@ -46,7 +49,7 @@ De service Assembler kan niet-interactieve PDF-documenten samenstellen zonder da
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Assembler, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Voor meer informatie over de dienst van de Assembler, zie de Verwijzing van de [Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
@@ -73,10 +76,10 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
-* jbossall-client.jar (vereist als AEM-formulieren worden geïmplementeerd op JBoss)
+* adobe-utilities.jar (vereist als AEM Forms worden geïmplementeerd op JBoss)
+* jbossall-client.jar (vereist als AEM Forms worden geïmplementeerd op JBoss)
 
-als AEM Forms wordt geïmplementeerd op een andere ondersteunde J2EE-toepassingsserver dan JBoss, moet u de bestanden adobe-utilities.jar en jbossall-client.jar vervangen door JAR-bestanden die specifiek zijn voor de J2EE-toepassingsserver waarop AEM Forms wordt geïmplementeerd.
+als AEM Forms worden geïmplementeerd op een andere ondersteunde J2EE-toepassingsserver dan JBoss, moet u de bestanden adobe-utilities.jar en jbossall-client.jar vervangen door JAR-bestanden die specifiek zijn voor de J2EE-toepassingsserver waarop AEM Forms worden geïmplementeerd.
 
 **Een Assembler-client maken**
 
@@ -104,7 +107,7 @@ Als slechts één PDF-document wordt doorgegeven aan de Assembler-service, retou
 
 **Zie ook**
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -145,6 +148,7 @@ U kunt een niet-interactief PDF-document samenstellen met behulp van de API (Jav
    * Een `com.adobe.idp.Document` object dat het DDX-document vertegenwoordigt. Controleer of dit DDX-document de waarde bevat `inDoc` voor het PDF-bronelement.
    * Een `com.adobe.idp.Document` object dat het interactieve PDF-document bevat.
    * Een `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` object dat de runtime-opties opgeeft, inclusief standaardniveau voor lettertypen en taaklogbestanden.
+
    De `invokeOneDocument` methode retourneert een `com.adobe.idp.Document` object dat een niet-interactief PDF-document bevat.
 
 1. Sla het niet-interactieve PDF-document op.
@@ -207,6 +211,7 @@ U kunt een niet-interactief PDF-document samenstellen met behulp van de API (web
    * Een `BLOB` object dat staat voor het DDX-document
    * Een `BLOB` object dat staat voor het interactieve PDF-document
    * Een `AssemblerOptionSpec` object dat uitvoeringsopties opgeeft
+
    De `invokeOneDocument` methode retourneert een `BLOB` object dat een niet-interactief PDF-document bevat.
 
 1. Sla het niet-interactieve PDF-document op.
@@ -220,4 +225,4 @@ U kunt een niet-interactief PDF-document samenstellen met behulp van de API (web
 
 **Zie ook**
 
-[AEM-formulieren aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[AEM Forms aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)

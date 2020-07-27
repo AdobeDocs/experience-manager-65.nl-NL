@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+source-git-commit: d80c6609b5a0ac299b57b1d0c0e8d6210e595b97
 workflow-type: tm+mt
-source-wordcount: '1893'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -75,6 +75,7 @@ ht-degree: 0%
          * UGC wordt nooit gerepliceerd
          * UGC is alleen zichtbaar op een AEM-instantie of -cluster waarin de UGC is ingevoerd
       * default is JSRP
+
    Voor de functie **[enablement](/help/communities/overview.md#enablement-community)**
 
    * [Mpeg installeren en configureren](/help/communities/ffmpeg.md)
@@ -137,7 +138,7 @@ Meer informatie over het installeren van bundels vindt u op de pagina [Webconsol
 
 #### Voorbeeld: MySQL-connectorbundel is geïnstalleerd {#example-installed-mysql-connector-bundle}
 
-![](/help/communities/assets/chlimage_1-125.png)
+![](../assets/chlimage_1-125.png)
 
 ### SCORM-pakket {#scorm-package}
 
@@ -221,7 +222,7 @@ Door gebrek, wordt de configuratie `AEM Communities Publisher Configuration` OSG
 
 Daarom is het noodzakelijk om de configuratie op alle secundaire publiceer instanties **uit te** geven om **`Primary Publisher`** checkbox los te maken.
 
-![](/help/communities/assets/chlimage_1-126.png)
+![](../assets/chlimage_1-126.png)
 
 Voor alle andere (secundaire) publiceer instanties in publiceer landbouwbedrijf:
 
@@ -265,11 +266,11 @@ In de volgende afbeeldingen ziet u de resultaten van het wijzigen van de poort v
 
 #### Standaardagent (publiceren) {#default-agent-publish}
 
-![](/help/communities/assets/chlimage_1-127.png)
+![configure-Limieten](../assets/configure-limits.png)
 
 #### Reverse Replication Agent (publiceren reverse) {#reverse-replication-agent-publish-reverse}
 
-![](/help/communities/assets/chlimage_1-128.png)
+![](../assets/chlimage_1-128.png)
 
 ### Tunnelservice op auteur {#tunnel-service-on-author}
 
@@ -292,7 +293,7 @@ Om de tunneldienst toe te laten:
 * Schakel het selectievakje **enable **box in
 * Selecteer **Opslaan**
 
-![](/help/communities/assets/chlimage_1-129.png)
+![](../assets/chlimage_1-129.png)
 
 ### De cryptosleutel dupliceren {#replicate-the-crypto-key}
 
@@ -349,7 +350,7 @@ Met [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
 
 * [De Granite Crypto-bundel vernieuwen](#refresh-the-granite-crypto-bundle)
 
-![](/help/communities/assets/chlimage_1-130.png)
+![](../assets/chlimage_1-130.png)
 
 #### De graniet-cryptobundel vernieuwen {#refresh-the-granite-crypto-bundle}
 
@@ -360,7 +361,7 @@ Met [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
 * locate `Adobe Granite Crypto Support` bundle (com.adobe.granite.crypto)
 * selecteren **Vernieuwen**
 
-![](/help/communities/assets/chlimage_1-131.png)
+![](../assets/chlimage_1-131.png)
 
 * na een ogenblik zou een **Succesdialoog **moeten verschijnen:
    `Operation completed successfully.`

@@ -1,8 +1,8 @@
 ---
 title: Aangepaste rapporten in procesrapportage
 seo-title: Aangepaste rapporten in procesrapportage
-description: U kunt douanerapporten tot stand brengen en deze rapporten toevoegen aan de Vormen AEM op het Melden UI van het Proces JEE.
-seo-description: U kunt douanerapporten tot stand brengen en deze rapporten toevoegen aan de Vormen AEM op het Melden UI van het Proces JEE.
+description: U kunt douanerapporten tot stand brengen en deze rapporten toevoegen aan de AEM Forms over het Melden UI van het Proces JEE.
+seo-description: U kunt douanerapporten tot stand brengen en deze rapporten toevoegen aan de AEM Forms over het Melden UI van het Proces JEE.
 uuid: 81039fe8-d757-4c85-a1eb-88e4e6aa8500
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,7 +10,10 @@ topic-tags: process-reporting
 discoiquuid: 222daab8-4514-44a5-b5c9-c5510809c74e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: c74d9e86727f2deda62b8d1eb105b28ef4b6d184
+workflow-type: tm+mt
+source-wordcount: '1033'
+ht-degree: 0%
 
 ---
 
@@ -45,20 +48,20 @@ CRX QueryBuilder REST-interface stelt de functionaliteit van de Asset Share Quer
    >
    >In elke vraag, richt de wegparameter aan de crx opslagplaats en de karakters zijn ontsnapt volgens de norm URL.
 
-## De service maken met de API van Query Builder {#creating-a-service-using-query-builder-api-nbsp}
+## De service maken met de API van Query Builder  {#creating-a-service-using-query-builder-api-nbsp}
 
 De eerste vereiste voor het maken van een service met de API voor Query Builder is het [maken en implementeren van CQ OSGI-bundel](https://docs.adobe.com/docs/v5_2/html-resources/cq5_guide_developer/cq5_guide_developer.html) en het [gebruik van de Query Builder-API](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html).
 
 1. Creeer de dienst OSGi met aangewezen aantekeningen. Om tot het gebruik te toegang te hebben QueryBuilder:
 
-   ```
+   ```java
    @Reference(referenceInterface = QueryBuilder.class)
     private QueryBuilder queryBuilder;
    ```
 
 1. Maak een groep met voorspelling. Code voor het maken van een predicaatgroep is:
 
-   ```
+   ```java
    PredicateGroup predicateGroup = new PredicateGroup();
     predicateGroup.setAllRequired(true);
    ```
@@ -340,7 +343,7 @@ public class PeriodicProcessVolume {
 
 Het voorbeeldbestand `pom.xml`dat u boven de service wilt maken, is:
 
-```java
+```xml
 <project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
@@ -420,7 +423,7 @@ Het voorbeeldbestand `pom.xml`dat u boven de service wilt maken, is:
 </project>
 ```
 
-## Een aparte UI maken {#creating-a-separate-ui-nbsp}
+## Een aparte UI maken  {#creating-a-separate-ui-nbsp}
 
 De eerste vereisten aan het creëren van een afzonderlijke UI voor het tonen van resultaten zijn het [Verdelen van Grondbeginselen](https://docs.adobe.com/docs/en/cq/5-6-1/developing/the_basics.html), het [Creëren van een Knoop](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) CRX en het verstrekken van aangewezen [toegangsvoorrechten](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control).
 
@@ -432,7 +435,7 @@ De eerste vereisten aan het creëren van een afzonderlijke UI voor het tonen van
 
    Een voorbeeldknooppunt met JSP- en CSS-bestanden
 
-1. Voeg javascript-code toe om een Ajax-aanroep naar de REST API van de querybuilder of naar uw service te starten. Voeg ook de juiste argumenten toe.
+1. Voeg JavaScript code toe om een vraag Ajax aan querybuilder REST API of aan uw dienst te beginnen. Voeg ook de juiste argumenten toe.
 
 1. Voeg een aangewezen succesmanager aan Ajax vraag toe om het resultaat te ontleden en te tonen. U kunt het resultaat parseren in meerdere indelingen (json/csv/user defined) en het weergeven in een tabel of in andere formulieren.
 
@@ -440,7 +443,7 @@ De eerste vereisten aan het creëren van een afzonderlijke UI voor het tonen van
 
 Een voorbeeld JSP code die zowel OSGi Service als QueryBuilder API gebruikt is:
 
-```
+```html
 <%@taglib prefix="sling" uri="https://sling.apache.org/taglibs/sling/1.0"%>
 <%request.setAttribute("silentAuthor", new Boolean(true));%>
 <%@include file="/libs/foundation/global.jsp"%>
@@ -628,7 +631,7 @@ response.setCharacterEncoding("utf-8");
 </html>
 ```
 
-## Het integreren rapport UI in bestaand Proces Meldend UI {#integrating-report-ui-in-existing-process-reporting-ui-nbsp}
+## Het integreren rapport UI in bestaand Proces Meldend UI  {#integrating-report-ui-in-existing-process-reporting-ui-nbsp}
 
 De eerste vereisten aan het creëren van een afzonderlijke UI voor het tonen van resultaten zijn het [Verdelen van Grondbeginselen](https://wem.help.adobe.com/enterprise/en_US/10-0/wem/developing/the_basics.html), het [Creëren van een Knoop](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) CRX en het verstrekken van aangewezen [toegangsvoorrechten](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control).
 
@@ -640,6 +643,7 @@ De eerste vereisten aan het creëren van een afzonderlijke UI voor het tonen van
    * **link**- Geeft een relatieve koppeling aan naar de renderer van de afzonderlijke UI. De verbinding wordt gecreeerd Stap 1.
    * **description**- Geeft de beschrijving van één regel op voor het rapport. U kunt het beschrijvingsveld leeg laten.
    * **icon**- Geeft de afbeelding aan die het rapport pictorially moet vertegenwoordigen. U kunt het pictogramveld leeg laten.
+
    ![Eigenschappen van knooppunt ](assets/node_properties_new.png)
 
    Eigenschappen van knooppunt

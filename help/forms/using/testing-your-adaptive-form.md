@@ -8,9 +8,9 @@ contentOwner: khsingh
 discoiquuid: ecddb22e-c148-441f-9088-2e5b35c7021b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 252dac988c8256cf99ee8487feb937d5345ed797
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '936'
 ht-degree: 1%
 
 ---
@@ -213,8 +213,8 @@ Een handeling is een specifieke activiteit op een adaptief formulier, zoals het 
 
 Een testsuite kan meerdere testgevallen bevatten. U kunt alle testgevallen in een testsuite tegelijk of afzonderlijk uitvoeren. Wanneer u een test uitvoert, geven de pictogrammen de resultaten aan:
 
-* Een vinkje geeft aan dat een test is geslaagd: ![](assets/save_icon.svg)
-* Een X-pictogram geeft aan dat een test is mislukt: ![](assets/close-icon.svg)
+* Een vinkje geeft aan dat een test is geslaagd: ![save_icon](assets/save_icon.svg)
+* Een X-pictogram geeft aan dat een test is mislukt: ![close-icon](assets/close-icon.svg)
 
 1. Navigeren naar AEM-pictogram > **[!UICONTROL Tools]**> **[!UICONTROL Operations]**> **[!UICONTROL Testing]**
 1. Alle tests van de testsuite uitvoeren:

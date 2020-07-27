@@ -10,7 +10,10 @@ topic-tags: correspondence-management
 discoiquuid: 68e3071e-7ce6-4bdc-8561-14bcaeae2b6c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5a586758da84f467e075adcc33cdcede2fbf09c7
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '800'
+ht-degree: 1%
 
 ---
 
@@ -56,8 +59,8 @@ Meer informatie vindt u in de [JSP EL-specificatie](https://download.oracle.com/
    * byte
    * java.lang.Double
    * Dubbel
-   * java.lang.long
-   * Lang
+   * java.lang.Long
+   * Long
    * java.lang.Float
    * Zwevend
    * java.util.Calendar
@@ -108,7 +111,7 @@ U kunt een aangepaste bundel maken om uw eigen externe functies te exporteren vo
    * byte
    * java.lang.Double
    * Dubbel
-   * java.lang.long
+   * java.lang.Long
    * Lang
    * java.lang.Float
    * Zwevend
@@ -119,7 +122,7 @@ U kunt een aangepaste bundel maken om uw eigen externe functies te exporteren vo
 
 1. Bepaal de implementatie van de interface, vorm het als dienst OSGI en bepaal de volgende de diensteigenschappen:
 
-```
+```jsp
 @org.apache.felix.scr.annotations.Properties({
   @org.apache.felix.scr.annotations.Property(name = "connectors.jsoninvoker", boolValue = true),
   @org.apache.felix.scr.annotations.Property(name = "connectors.jsoninvoker.alias", value = "<service_id>"),
@@ -128,7 +131,7 @@ U kunt een aangepaste bundel maken om uw eigen externe functies te exporteren vo
 
 Het item exm.service=true instrueert Expression Manager dat de service externe functies bevat die geschikt zijn voor gebruik in expressies. De waarde &lt;service_id> moet een geldige Java-id zijn (alfanumeriek,$, _ zonder andere speciale tekens). Deze waarde, voorafgegaan door het trefwoord REMOTE_, vormt het voorvoegsel dat in expressies wordt gebruikt. Bijvoorbeeld, kan een interface met een geannoteerde methodebar () en de dienst identiteitskaart foo in de de diensteigenschappen, binnen uitdrukkingen worden van verwijzingen voorzien gebruikend REMOTE_foo:bar ().
 
-```
+```java
 package mergeandfuse.com;
 
 import org.apache.felix.scr.annotations.Component;

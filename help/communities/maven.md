@@ -1,8 +1,8 @@
 ---
 title: Maven gebruiken voor Gemeenschappen
 seo-title: Maven gebruiken voor Gemeenschappen
-description: AEM Communities API jar en AEM Uber API jar
-seo-description: AEM Communities API jar en AEM Uber API jar
+description: Jar voor AEM Communities-API en AEM Uber-API
+seo-description: Jar voor AEM Communities-API en AEM Uber-API
 uuid: ea37a89a-db6c-4018-8ab9-f5717e6c0421
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a726c904-aadd-4678-be84-9e05808ab8be
 translation-type: tm+mt
-source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
+source-git-commit: f05d7c19e3284c0627e29b9590db4749be100229
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
 
 ## Overzicht {#overview}
 
-Dit gedeelte van de documentatie van de AEM Communities is een aanvulling op:
+Deze sectie van de documentatie van AEM Communities is naast:
 
 * [AEM-projecten bouwen met Apache Maven](../../help/sites-developing/ht-projects-maven.md).
 
@@ -30,7 +33,7 @@ Er zijn nu twee &#39;Number&#39;-artefacten die afzonderlijke artefacten vervang
 
 ## Communities API Jar Artifact {#communities-api-jar-artifact}
 
-Hier volgt een voorbeeld van een GAV voor de API-jar van AEM Communities:
+Hier volgt een voorbeeld van een GAV voor de AEM Communities API-jar:
 
 ```xml
 <dependency>
@@ -41,12 +44,12 @@ Hier volgt een voorbeeld van een GAV voor de API-jar van AEM Communities:
 </dependency>
 ```
 
-Zorg ervoor dat de opgegeven versie overeenstemt met de pakketversie van de Gemeenschappen die voor AEM Communities is geïnstalleerd. Om het geïnstalleerde versienummer te verifiëren:
+Zorg ervoor dat de opgegeven versie overeenkomt met de pakketversie van Communities die voor AEM Communities is geïnstalleerd. Om het geïnstalleerde versienummer te verifiëren:
 
-1. Aanmelden met beheerdersrechten.
+1. Meld u aan met beheerdersrechten.
 1. Blader naar [Pakketbeheer](../../help/sites-administering/package-manager.md). Bijvoorbeeld: [http://localhost:4502/crx/packmgr/](http://localhost:4502/crx/packmgr/)
 
-1. Zoek het pakket *cq-social Communities-pkg-1.x.xxx*
+1. Zoek het pakket: `cq-socialcommunities-pkg-1.x.xxx`
 1. Extraheer de versie uit de pakketnaam:
    * De eerste versie voor AEM 6.3 is versie 1.11.170.
    * De pakken van de eigenschap zullen versies 1.12.xxx zijn.

@@ -11,7 +11,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: ebe8136b-2a79-4035-b9d5-aa70a5bbd4af
 translation-type: tm+mt
-source-git-commit: 868936e0fd20d3867e31f0351d7b388149472fd2
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '2092'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +29,7 @@ Als u twee of meer PDF-documenten in één PDF-document wilt samenvoegen, hebt u
 
 Voor deze bespreking, veronderstel dat het volgende DDX- document wordt gebruikt.
 
-```as3
+```xml
  <?xml version="1.0" encoding="UTF-8"?>
  <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
      <PDF result="out.pdf">
@@ -44,7 +47,7 @@ Dit DDX-document voegt twee PDF-documenten met de naam *map.pdf* en *direction.p
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Assembler, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Voor meer informatie over de dienst van de Assembler, zie de Verwijzing van de [Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
@@ -79,10 +82,10 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
-* jbossall-client.jar (vereist als AEM-formulieren worden geïmplementeerd op JBoss)
+* adobe-utilities.jar (vereist als AEM Forms worden geïmplementeerd op JBoss)
+* jbossall-client.jar (vereist als AEM Forms worden geïmplementeerd op JBoss)
 
-als AEM Forms wordt geïmplementeerd op een andere ondersteunde J2EE-toepassingsserver dan JBoss, moet u de bestanden adobe-utilities.jar en jbossall-client.jar vervangen door JAR-bestanden die specifiek zijn voor de J2EE-toepassingsserver waarop AEM Forms wordt geïmplementeerd.
+als AEM Forms worden geïmplementeerd op een andere ondersteunde J2EE-toepassingsserver dan JBoss, moet u de bestanden adobe-utilities.jar en jbossall-client.jar vervangen door JAR-bestanden die specifiek zijn voor de J2EE-toepassingsserver waarop AEM Forms worden geïmplementeerd.
 
 **Een PDF Assembler-client maken**
 
@@ -104,7 +107,7 @@ Zowel het bestand map.pdf als het bestand direction.pdf moeten in een verzamelin
 
 **Uitvoeringsopties instellen**
 
-U kunt runtime opties plaatsen die het gedrag van de dienst van de Assembler controleren terwijl het een baan uitvoert. U kunt bijvoorbeeld een optie instellen die de Assembler-service de opdracht geeft door te gaan met het verwerken van een taak als er een fout optreedt. Zie de `AssemblerOptionSpec` klasseverwijzing in de API-naslaggids voor [AEM-formulieren voor informatie over de runtime-opties die u kunt instellen](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+U kunt runtime opties plaatsen die het gedrag van de dienst van de Assembler controleren terwijl het een baan uitvoert. U kunt bijvoorbeeld een optie instellen die de Assembler-service de opdracht geeft door te gaan met het verwerken van een taak als er een fout optreedt. Zie de `AssemblerOptionSpec` klasseverwijzing in de API-naslaggids voor [AEM Forms voor informatie over de runtime-opties die u kunt instellen](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 **PDF-invoerdocumenten samenstellen**
 
@@ -145,7 +148,7 @@ In de volgende tabel vindt u een overzicht van enkele sleutelwaarden en objectty
 
 **Zie ook**
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -190,7 +193,8 @@ U kunt een PDF-document samenstellen met de API (Java) voor vergaderingsservice:
 
    * Een `com.adobe.idp.Document` object dat staat voor het te gebruiken DDX-document
    * Een `java.util.Map` object dat de invoer-PDF-bestanden bevat die moeten worden samengevoegd
-   * Een `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` object dat de runtime-opties opgeeft, inclusief het standaardniveau voor fonts en taaklogbestanden
+   * Een `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` object dat de runtime-opties opgeeft, inclusief standaardniveau voor lettertypen en taaklogbestanden
+
    De `invokeDDX` methode retourneert een `com.adobe.livecycle.assembler.client.AssemblerResult` object dat de resultaten van de taak en eventuele uitzonderingen bevat die zich hebben voorgedaan.
 
 1. Extraheer de resultaten.
@@ -200,6 +204,7 @@ U kunt een PDF-document samenstellen met de API (Java) voor vergaderingsservice:
    * Roep de `AssemblerResult` methode van het `getDocuments` object aan. Hiermee wordt een `java.util.Map` object geretourneerd.
    * Doorloop het `java.util.Map` object totdat u het resulterende `com.adobe.idp.Document` object vindt. (U kunt het PDF-resultaatelement dat in het DDX-document is opgegeven, gebruiken om het document op te halen.)
    * Roep de `com.adobe.idp.Document` methode van het `copyToFile` object aan om het PDF-document uit te pakken.
+
    >[!NOTE]
    >
    >Als `LOG_LEVEL` is ingesteld op het maken van een logbestand, kunt u het logbestand extraheren met de `AssemblerResult` methode van het `getJobLog` object.
@@ -208,7 +213,7 @@ U kunt een PDF-document samenstellen met de API (Java) voor vergaderingsservice:
 
 [Snel starten (SOAP-modus): Een PDF-document samenstellen met de Java API](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-pdf-document-using-the-java-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -270,6 +275,7 @@ U kunt PDF-documenten samenstellen met de API (webservice) van de Assembler Serv
    * Een `BLOB` object dat het DDX-document vertegenwoordigt.
    * De `mapItem` array die de invoer-PDF-documenten bevat. De sleutels moeten overeenkomen met de namen van de PDF-bronbestanden en de waarden ervan moeten de `BLOB` objecten zijn die overeenkomen met die bestanden.
    * Een `AssemblerOptionSpec` object dat uitvoeringsopties opgeeft.
+
    De `invoke` methode retourneert een `AssemblerResult` object dat de resultaten van de taak en eventuele uitzonderingen bevat die zich hebben voorgedaan.
 
 1. Extraheer de resultaten.
@@ -279,10 +285,11 @@ U kunt PDF-documenten samenstellen met de API (webservice) van de Assembler Serv
    * Open het `AssemblerResult` veld van het `documents` object. Dit is een `Map` object dat de PDF-resultaatdocumenten bevat.
    * Doorloop het `Map` object totdat u de sleutel vindt die overeenkomt met de naam van het resulterende document. Dan giet dat serielid `value` aan een `BLOB`.
    * Pak de binaire gegevens die het PDF-document vertegenwoordigen, uit door de `BLOB` eigenschap van het `MTOM` object te openen. Hiermee wordt een array met bytes geretourneerd die u naar een PDF-bestand kunt schrijven.
+
    >[!NOTE]
    >
    >Als `LOG_LEVEL` is ingesteld om een logbestand te maken, kunt u het logbestand extraheren door de waarde van het `AssemblerResult` `jobLog` gegevenslid van het object op te halen.
 
 **Zie ook**
 
-[AEM-formulieren aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[AEM Forms aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)

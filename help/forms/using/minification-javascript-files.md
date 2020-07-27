@@ -1,8 +1,8 @@
 ---
 title: Miniatuur van de JavaScript-bestanden
 seo-title: Miniatuur van de JavaScript-bestanden
-description: Instructies voor het genereren van geminificeerde code nadat de werkruimte van AEM Forms is aangepast om de JS-bestanden voor het web te optimaliseren.
-seo-description: Instructies voor het genereren van geminificeerde code nadat de werkruimte van AEM Forms is aangepast om de JS-bestanden voor het web te optimaliseren.
+description: Instructies voor het genereren van geminificeerde code na aanpassingen in de werkruimte van AEM Forms om de JS-bestanden voor het web te optimaliseren.
+seo-description: Instructions to generate minified code after AEM Forms workspace customizations to optimize the JS files for the web.
 uuid: ad91e380-a988-4740-9534-e09657e0322a
 contentOwner: robhagat
 content-type: reference
@@ -10,14 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: c88a3013-5da2-4b09-9f29-ac1fb00822ec
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '208'
+ht-degree: 0%
 
 ---
 
 
 # Miniatuur van de JavaScript-bestanden {#minification-of-the-javascript-files}
 
-Met Minificatie worden de overbodige tekens, zoals witruimte, nieuwe regel en opmerkingen, uit de broncode verwijderd. Dit verbetert de prestaties door de grootte van de code te verminderen. De miniatuur heeft geen invloed op de functionaliteit, maar vermindert de leesbaarheid van de code.
+Minification removes from the source code the redundant characters, such as white space, new line, and comments. Dit verbetert de prestaties door de grootte van de code te verminderen. While minification does not impact the functionality, it reduces the readability of the code.
 
 Voer de volgende stappen uit om geminificeerde code voor semantische wijzigingen te genereren.
 
@@ -25,21 +28,23 @@ Voer de volgende stappen uit om geminificeerde code voor semantische wijzigingen
 
    >[!NOTE]
    >
-   >Zie [Introductie tot het aanpassen van de werkruimte](/help/forms/using/introduction-customizing-html-workspace.md) van Vormen AEM voor meer details over de pakketten.
+   >See [Introduction to Customizing AEM Forms workspace](/help/forms/using/introduction-customizing-html-workspace.md) for more details about the packages.
 
 1. Werk paden bij `main.js` onder client-html/src/main/webapp/js voor toegevoegde/bijgewerkte modellen/weergaven.
 
-   Bijvoorbeeld, toevoeging van een nieuw model van de Schaduwrij, zeg mySharequeue, verandering:
+   For example, addition of a new Sharequeue model, say mySharequeue, change:
 
-   ```
+   ```javascript
    sharequeuemodel : pathprefix + 'runtime/models/sharequeue',
-   
-   To
-   
+   ```
+
+   Naar
+
+   ```javascript
    sharequeuemodel : pathprefix + 'runtime/myModels/mySharequeue',
    ```
 
-1. Bijwerken `registry-config.xml, located at client-html/src/main/webapp/js/resource_generator,` als er sprake is van een wijziging/toevoeging van alias in `main.js`.
+1. Update `registry-config.xml, located at client-html/src/main/webapp/js/resource_generator,` in case there is change/addition of alias in `main.js`.
 
    Bijvoorbeeld, toevoeging van een nieuw model van de Schaduwrij, zeg mySharequeue, verandering:
 
@@ -48,16 +53,18 @@ Voer de volgende stappen uit om geminificeerde code voor semantische wijzigingen
                name="sharequeue"
                path="runtime/models/sharequeue.js"
                service="service"/>
-   
-   To
-   
+   ```
+
+   Naar
+
+   ```xml
    <sharequeue
                name="sharequeue"
                path="runtime/myModels/mySharequeue.js"
                service="service"/>
    ```
 
-1. Voer de opdracht uit op client-html/src/main/webapp/js/minifier:
+1. At client-html/src/main/webapp/js/minifier, run command:
 
    ```shell
    mvn clean install

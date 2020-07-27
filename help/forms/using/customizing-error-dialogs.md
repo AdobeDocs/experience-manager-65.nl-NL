@@ -1,28 +1,31 @@
 ---
 title: Foutdialoogvensters aanpassen
 seo-title: Foutdialoogvensters aanpassen
-description: Hoe kan ik-om de foutendialogen van de werkruimte van Vormen van LiveCycle aan te passen om verschillende foutenbeschrijvingen toe te voegen.
-seo-description: Hoe kan ik-om de foutendialogen van de werkruimte van Vormen van LiveCycle aan te passen om verschillende foutenbeschrijvingen toe te voegen.
+description: Hoe kan ik-om de foutendialoogvensters van de werkruimte van LiveCycle AEM Forms aan te passen om verschillende foutenbeschrijvingen toe te voegen.
+seo-description: Hoe kan ik-om de foutendialoogvensters van de werkruimte van LiveCycle AEM Forms aan te passen om verschillende foutenbeschrijvingen toe te voegen.
 uuid: 5ed1da68-bd5b-4a36-9a14-9d61733237e6
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: f547c0c1-3917-4092-9d63-c1b3aaefcef0
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '170'
+ht-degree: 4%
 
 ---
 
 
 # Foutdialoogvensters aanpassen {#customizing-error-dialogs}
 
-In de werkruimte van AEM-formulieren kunt u foutmeldingen aanpassen. Voer de [algemene stappen voor de aanpassing](/help/forms/using/generic-steps-html-workspace-customization.md) van de AEM Forms-werkruimte uit, gevolgd door de onderstaande stappen, om de foutmeldingen aan te passen.
+In de werkruimte AEM Forms kunt u de foutmeldingen aanpassen. Voer de [algemene stappen voor de aanpassing](/help/forms/using/generic-steps-html-workspace-customization.md) van de werkruimte AEM Forms uit, gevolgd door de onderstaande stappen, om foutmeldingen aan te passen.
 
 ## Tekst aanpassen {#customizing-text}
 
 1. Wijzig in het `/apps/ws/locales/en-US/translation.json` bestand de waarden van `wserror` de aangepaste waarden. Bijvoorbeeld:
 
-   ```
+   ```json
    "wserror" : {
     "message" : "Message:",
     "ComponentUI" : "Component UI:",
@@ -30,15 +33,18 @@ In de werkruimte van AEM-formulieren kunt u foutmeldingen aanpassen. Voer de [al
     "ok" : "Ok",
     "ErrorCode" : "Error Code:"
     }
-   
-   To
-    "wserror" : {
-    "message" : "Error Message:",
-    "ComponentUI" : "UI Component:",
-    "error" : "Something went wrong!!",
-    "ok" : "Ok",
-    "ErrorCode" : "Error Code:"
-    }
+   ```
+
+   Naar
+
+   ```json
+   "wserror" : {
+   "message" : "Error Message:",
+   "ComponentUI" : "UI Component:",
+   "error" : "Something went wrong!!",
+   "ok" : "Ok",
+   "ErrorCode" : "Error Code:"
+   }
    ```
 
    >[!NOTE]
@@ -193,25 +199,27 @@ In de werkruimte van AEM-formulieren kunt u foutmeldingen aanpassen. Voer de [al
        white-space: nowrap;
        overflow: hidden;
    }
-   
-   To
-   
+   ```
+
+   Naar
+
+   ```css
    .browse-btn span, .attachementbtn span, .cancelAttachmentUpdate span, #taskAttachmentsContainer .uploadStatus span, .submitNoteButton span, .updateNoteButton span, .cancelNoteUpdate span,
    #userSearchPopUp #actionbar span, #taskarea .action button span, .oooAction button span, .wsMessageContainerDiv .action button span
    {
-       display: block;
-       text-overflow: ellipsis;
-       white-space: nowrap;
-       overflow: hidden;
+      display: block;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
    }
    
    /*-------- Customized following Portion --------*/
    .error-dialog .foot-bar button span
    {
-       display: block;
-       text-overflow: ellipsis;
-       text-decoration:underline;
-       white-space: wrap;
+      display: block;
+      text-overflow: ellipsis;
+      text-decoration:underline;
+      white-space: wrap;
    }
    ```
 
@@ -236,9 +244,11 @@ In de werkruimte van AEM-formulieren kunt u foutmeldingen aanpassen. Voer de [al
     box-shadow:0px 0px 10px 3px #888;
     display:none;
 }
+```
 
-To
+Naar
 
+```css
 .error-dialog{
     border: 9px solid #DEDEDE;
     width: 200px;
@@ -267,9 +277,11 @@ To
     overflow: hidden;
     white-space: nowrap;
 }
+```
 
-To
+Naar
 
+```css
 .error-dialog .head-bar{
     height: 40px;
     background: url(../images/error.png) no-repeat 7px 10px #DEDEDE;

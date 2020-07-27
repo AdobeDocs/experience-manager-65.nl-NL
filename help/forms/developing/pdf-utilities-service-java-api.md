@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 4ec4c674-d7d3-4988-9d77-78d274970672
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '429'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +32,7 @@ De volgende snelstarthandleidingen zijn beschikbaar voor de service PDF-hulpprog
 
 [Snel starten (SOAP-modus): PDF-documenten ontsmetten](pdf-utilities-service-java-api.md#quick-start-soap-mode-sanitizing-pdf-documents)
 
-De verrichtingen van de Vormen van AEM kunnen worden uitgevoerd gebruikend sterk-getypte API van Vormen AEM en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
+De verrichtingen van AEM Forms kunnen worden uitgevoerd gebruikend AEM Forms sterk-getypte API en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
 
 >[!NOTE]
 >
@@ -39,7 +42,7 @@ De verrichtingen van de Vormen van AEM kunnen worden uitgevoerd gebruikend sterk
 
 In het volgende codevoorbeeld wordt een PDF-document geconverteerd naar een XDP-document. (Zie PDF-documenten [converteren naar XDP-documenten](/help/forms/developing/pdf-utilities.md#converting-pdf-documents-into-xdp-documents).
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -140,7 +143,7 @@ In het volgende codevoorbeeld wordt een PDF-document geconverteerd naar een XDP-
 
 In het volgende codevoorbeeld wordt een XDP-document geconverteerd naar een PDF-document. (Zie XDP-documenten [converteren naar PDF-documenten](/help/forms/developing/pdf-utilities.md#converting-xdp-documents-into-pdf-documents).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -240,7 +243,7 @@ In het volgende codevoorbeeld wordt een XDP-document geconverteerd naar een PDF-
 
 In het volgende codevoorbeeld wordt bepaald of het document een PDF-document is en, zo ja, de oudste Acrobat-versie die het kan lezen. (Zie Eigenschappen [PDF-document](/help/forms/developing/pdf-utilities.md#retrieving-pdf-document-properties)ophalen.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -357,7 +360,7 @@ In het volgende codevoorbeeld wordt bepaald of het document een PDF-document is 
 
 In het volgende codevoorbeeld wordt de opslagmodus voor snelle webweergave ingesteld en wordt het PDF-document vervolgens doorgegeven aan de coderingsservice waar het is versleuteld. Het gecodeerde PDF-document dat wordt opgeslagen voor snelle webweergave, wordt opgeslagen als een PDF-bestand met de naam* FastWebViewLoan.pdf*. (Zie [Opslagmodi](/help/forms/developing/pdf-utilities.md#setting-pdf-document-save-modes)voor PDF-documenten instellen.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -497,7 +500,7 @@ In het volgende codevoorbeeld wordt de opslagmodus voor snelle webweergave inges
 
 In het volgende Java-codevoorbeeld wordt een PDF-document met de naam *Loan.pdf* geconverteerd naar een PDF/A-2b-document dat wordt opgeslagen als een PDF-bestand met de naam *LoanArchive.pdf*. (Zie Documenten [converteren naar PDF/A-documenten](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdf-a-documents).)
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -585,7 +588,7 @@ public class CreatePDFADocument {
 
 In het volgende Java-codevoorbeeld wordt een PDF-document met de naam *Loan.pdf* gesimuleerd.
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:

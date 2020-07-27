@@ -10,7 +10,10 @@ topic-tags: correspondence-management
 discoiquuid: 6378ae30-a351-49f7-8e9a-f0bd4287b9d3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1381'
+ht-degree: 1%
 
 ---
 
@@ -168,7 +171,7 @@ Voer de volgende stappen uit als u Correspondentiebeheer wilt aanpassen, zodat u
 
       Voeg vervolgens de volgende code aan het einde toe in het bestand formaction.js (onder de tak /apps) en klik op Alles **** opslaan:
 
-      ```
+      ```javascript
       /* Action url for xml file to be added.*/
       var ACTION_URL = "/apps/fd/cm/ma/gui/content/commons/actionhandlers/items/letterpdfdownloader.html";
       
@@ -276,7 +279,7 @@ Voer de volgende stappen uit als u Correspondentiebeheer wilt aanpassen, zodat u
    1. Dubbelklik op het bestand **POST.jsp** om het te openen in CRX.
    1. Voeg de volgende code toe aan het POST.jsp-bestand en klik op **Alles** opslaan:
 
-      Deze code is specifiek voor de brief teruggeeft dienst. Voeg voor andere elementen de Java-bibliotheken van dat element aan deze code toe. Zie de API [voor](https://adobe.com/go/learn_aemforms_javadocs_63_en)AEM-formulieren voor meer informatie over AEM Forms API&#39;s.
+      Deze code is specifiek voor de brief teruggeeft dienst. Voeg voor andere elementen de Java-bibliotheken van dat element aan deze code toe. Zie [AEM Forms API](https://adobe.com/go/learn_aemforms_javadocs_63_en)voor meer informatie over AEM Forms API&#39;s.
 
       Zie AEM [Components](/help/sites-developing/components.md)voor meer informatie over AEM-bibliotheken.
 

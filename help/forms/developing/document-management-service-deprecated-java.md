@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 9cffdb77-c8a4-4a15-b64f-1d3aadaa60c7
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '645'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +42,7 @@ De volgende snelstarthandleidingen zijn beschikbaar voor de service Documentbehe
 
 [Snel starten (SOAP-modus): Machtigingen voor inhoudsservices instellen met de Java API](document-management-service-deprecated-java.md#quick-start-soap-mode-setting-content-services-permissions-using-the-java-api-deprecated)
 
-De verrichtingen van de Vormen van AEM kunnen worden uitgevoerd gebruikend sterk-getypte API van Vormen AEM en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
+De verrichtingen van AEM Forms kunnen worden uitgevoerd gebruikend AEM Forms sterk-getypte API en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
 
 >[!NOTE]
 
@@ -49,7 +52,7 @@ De snelle die begin in Programmering met vormen wordt gevestigd AEM is gebaseerd
 
 In het volgende Java-codevoorbeeld wordt een nieuwe ruimte gemaakt met de naam *Testdirectory* in het startpunt van het bedrijf. De identificatiewaarde van de nieuwe ruimte wordt geschreven aan de console.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -145,7 +148,7 @@ In het volgende Java-codevoorbeeld wordt een nieuwe ruimte gemaakt met de naam *
 
 Het volgende de codevoorbeeld van Java schrapt een ruimte genoemd /Company Huis/de Folder van de Test.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -245,7 +248,7 @@ Het volgende de codevoorbeeld van Java schrapt een ruimte genoemd /Company Huis/
 
 In het volgende Java-codevoorbeeld wordt een PDF-bestand met de naam *MortgaugeForm.pdf* toegevoegd aan de map /Company Home/Test Directory. De auteur- en beschrijvingskenmerken worden ingesteld. De identificatiewaarde van de nieuwe inhoud wordt geschreven aan de console.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -368,7 +371,7 @@ In het volgende Java-codevoorbeeld wordt een PDF-bestand met de naam *MortgaugeF
 
 In het volgende Java-codevoorbeeld wordt een PDF-bestand met de naam *MortgaugeForm.pdf* opgehaald uit /Company Home. Het PDF-bestand wordt opgeslagen in het lokale bestandssysteem en krijgt de naam *UpdatedMortgaugeForm.pdf*.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -474,7 +477,7 @@ In het volgende Java-codevoorbeeld wordt een PDF-bestand met de naam *MortgaugeF
 
 In het volgende Java-codevoorbeeld wordt een PDF-bestand met de naam *MortgaugeForm.pdf* verplaatst van /Company Home/Test Directory naar /Company Home. De identificatiewaarde van de verplaatste inhoud wordt geschreven aan de console.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -575,7 +578,7 @@ In het volgende Java-codevoorbeeld wordt een PDF-bestand met de naam *MortgaugeF
 
 Het volgende de codevoorbeeld van Java maakt een lijst van inhoud die in /Company Huis wordt gevestigd. Elk knooppunttype en knooppuntnaam wordt getoond.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -688,7 +691,7 @@ Het volgende de codevoorbeeld van Java maakt een lijst van inhoud die in /Compan
 
 De volgende code van Java zoekt /Company Huis naar een document dat de tekst MortgaugeForm bevat. De submappen worden ook doorzocht.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -798,7 +801,7 @@ De volgende code van Java zoekt /Company Huis naar een document dat de tekst Mor
 
 In het volgende Java-codevoorbeeld wordt een machtiging ingesteld voor een gebruiker met de naam tony blue. Het opgegeven domein is het standaarddomein. De toestemming van de consument wordt gespecificeerd en de knoop is `/Company Home/Test Directory`.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -908,7 +911,7 @@ In het volgende Java-codevoorbeeld wordt een machtiging ingesteld voor een gebru
 
 Met de volgende Java-code maakt u een koppeling naar een XML-gegevensbestand en een PDF-formulier. Dit type koppeling heeft de naam LinkedBy. Op het PDF-document moet de koppelbare afbeelding zijn toegepast.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:

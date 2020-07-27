@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 79437b96-7b57-4581-b7e7-fcaedc3d05de
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '4460'
+ht-degree: 2%
 
 ---
 
@@ -677,13 +680,13 @@ Voer de volgende stappen uit om de aangepaste eigenschap weer te geven in de geb
 
    1. Voeg het volgende toe aan regel 19 van het bestand (na de copyrightinstructie).
 
-      ```
+      ```jsp
       <%@page import="java.util.Map"%>
       ```
 
    1. Voeg de volgende code van een functie die waarde voor elke douanebezit aan het eind van het dossier krijgt:
 
-      ```
+      ```jsp
       <%!
           private String getCustomPropertyValue(Map<String, Object> extendedProperties, String propertyName) {
       
@@ -699,7 +702,7 @@ Voer de volgende stappen uit om de aangepaste eigenschap weer te geven in de geb
 
    1. Voeg het volgende toe vóór het begin van de &lt;tr>-tag (&lt;tr &lt;%= attrs.build() %>>):
 
-      ```
+      ```jsp
       <%
           String GeoLocation = "";
           if (asset != null) {
@@ -715,7 +718,7 @@ Voer de volgende stappen uit om de aangepaste eigenschap weer te geven in de geb
 
    1. Als u de nieuwe eigenschap wilt weergeven in de gebruikersinterface, voegt u als volgt een TD-tag toe vóór de eindtag tr (&lt;/tr>):
 
-      ```
+      ```jsp
       <td is="coral-td" value="<%= xssAPI.encodeForHTMLAttr(geographicalLocation) %>"><%= xssAPI.encodeForHTML(geographicalLocation) %></td>
       ```
 

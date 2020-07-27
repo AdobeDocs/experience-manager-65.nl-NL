@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: developer-reference
 discoiquuid: c05c9911-7c49-4342-89de-61b8b9953c83
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '969'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,7 @@ De **connect** -API accepteert een handler als argument. Nadat een verbinding to
 
 U kunt de volgende voorbeeldcode gebruiken om de verbinding tot stand te brengen.
 
-```
+```javascript
 // Example showing how to connect to FormBridge
 window.addEventListener("FormBridgeInitialized",
                                 function(event) {
@@ -37,7 +40,7 @@ window.addEventListener("FormBridgeInitialized",
 >
 >Zorg ervoor dat u een verbinding maakt voordat u het bestand formRuntime.jsp toevoegt.
 
-## Beschikbare Form Bridge-API {#available-form-bridge-api-nbsp}
+## Beschikbare Form Bridge-API  {#available-form-bridge-api-nbsp}
 
 **getBridgeVersion()**
 
@@ -50,7 +53,7 @@ Hiermee wordt het versienummer van de scriptbibliotheek geretourneerd
 **isConnected()** Controleert of de formulierstatus is geïnitialiseerd
 
 * **Invoer**: Geen
-* **Uitvoer**: **True** als de XFA-formulierstatus is geïnitialiseerd
+* **Uitvoer**: **Waar** als de XFA-formulierstatus is geïnitialiseerd
 
 * **Fouten**: Geen
 
@@ -91,11 +94,11 @@ Hiermee wordt het versienummer van de scriptbibliotheek geretourneerd
 
       * **pagingConfig:** Hiermee kan de gebruiker het standaardgedrag negeren waarbij alleen de eerste pagina wordt weergegeven. De configuratie wordt als volgt overschreven:
 
-         *window.formBridge.registerConfig(&quot;pagingConfig&quot;:{pagingDisabled: &lt;true| false>, shrinkPageDisabled: &lt;true| false> }).*
+         *window.formBridge.registerConfig(&quot;pagingConfig&quot;:{pagingDisabled: &lt;true | false>, shrinkPageDisabled: &lt;true | false> }).*
 
       * **LoggingConfig:** Staat de gebruiker toe om het niveau van het registreren met voeten te treden, het registreren voor een categorie onbruikbaar te maken, of om de logboekconsole te tonen of naar server te verzenden. De configuratie kan als volgt worden overschreven:
 
-      ```JavaScript
+      ```javascript
       formBridge.registerConfig{
         "LoggerConfig" : {
       {
@@ -109,7 +112,7 @@ Hiermee wordt het versienummer van de scriptbibliotheek geretourneerd
 
       * **SubmitServiceProxyConfig:** Gebruikers toestaan verzendingen te registreren en proxyservices te registreren.
 
-         ```JavaScript
+         ```javascript
          window.formBridge.registerConfig("submitServiceProxyConfig",
          {
          "submitServiceProxy" : "`<submitServiceProxy>`",

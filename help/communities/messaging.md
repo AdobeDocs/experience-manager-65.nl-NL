@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 232a0ec1-8dfc-41ec-84cc-69f9db494ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+source-git-commit: eb5317be52eec39b947ccb3c456d21d567ef2841
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 0%
@@ -47,7 +47,7 @@ Zoals hieronder getoond, bestaat een configuratie van de dienst voor plaatsen di
 
 Als u een nieuwe configuratie wilt toevoegen, selecteert u het plusteken &#39;**+**&#39; naast de naam van de service:
 
-* **Berichtvelden toegestaan**
+* **Lijst van gewenste personen Berichtvelden**
 
    Hiermee geeft u de eigenschappen op van de component Bericht samenstellen die gebruikers kunnen bewerken en behouden. Als nieuwe formulierelementen worden toegevoegd, moet de element-id desgewenst worden toegevoegd om te worden opgeslagen in SRP. Standaard zijn dit twee items: *onderwerp* en *inhoud*.
 
@@ -85,11 +85,11 @@ Als u een nieuwe configuratie wilt toevoegen, selecteert u het plusteken &#39;**
 
 * **Pad in vak**
 
-   (*Vereist*) Het pad, relatief ten opzichte van het knooppunt van de gebruiker (/home/users/*gebruikersnaam*), dat moet worden gebruikt voor de **`inbox`** map. Het pad mag NIET eindigen met een slash &#39;/&#39; achter het pad. Standaard is dit */e-mail/inbox*.
+   (*Vereist*) Het pad, relatief ten opzichte van het knooppunt van de gebruiker (/home/users/*gebruikersnaam*), dat moet worden gebruikt voor de `inbox` map. Het pad mag NIET eindigen met een slash &#39;/&#39; achter het pad. Standaard is dit */e-mail/inbox*.
 
 * **Pad naar verzonden items**
 
-   (*Vereist*) Het pad, relatief ten opzichte van het knooppunt van de gebruiker (/home/users/*gebruikersnaam*), dat moet worden gebruikt voor de **`send items`** map. Het pad mag NIET eindigen met een slash &#39;/&#39; achter het pad. Standaard is dit */e-mail/sentimenten* .
+   (*Vereist*) Het pad, relatief ten opzichte van het knooppunt van de gebruiker (/home/users/*gebruikersnaam*), dat moet worden gebruikt voor de `sent items` map. Het pad mag NIET eindigen met een slash &#39;/&#39; achter het pad. Standaard is dit */e-mail/sentimenten* .
 
 * **Ondersteuningsbijlagen**
 
@@ -111,13 +111,13 @@ Als u een nieuwe configuratie wilt toevoegen, selecteert u het plusteken &#39;**
 
    Als supportAttachments wordt gecontroleerd, specificeert deze waarde de maximum toegestane totale grootte (in bytes) van alle gehechtheid. De standaardwaarde is *104857600* (100 MB).
 
-* **Bloklijst Type bijlage**
+* **lijst van afgewezen personen bijlagetype**
 
-   Een blocklist met bestandsextensies, vooraf ingesteld op &#39;**.**&quot;, dat zal door het systeem worden verworpen. Als de extensie niet wordt geblokkeerd, is deze toegestaan. Extensies kunnen worden toegevoegd of verwijderd met de pictogrammen &#39;**+**&#39; en &#39;**-**&#39;.
+   Een lijst van afgewezen personen met bestandsextensies, voorafgegaan door &#39;**.**&quot;, dat zal door het systeem worden verworpen. Als de extensie niet is op de lijst met ongewenste personen gestaan, is deze toegestaan. Extensies kunnen worden toegevoegd of verwijderd met de pictogrammen &#39;**+**&#39; en &#39;**-**&#39;.
 
 * **Toegestane typen bijlagen**
 
-   **(*Handeling vereist*)** Een toegestane lijst met bestandsextensies, het tegenovergestelde van de keuzelijst met bestandsnamen. Als u alle bestandsextensies wilt toestaan, met uitzondering van extensies die geblokkeerd zijn, gebruikt u het pictogram &#39;**-**&#39; om één leeg item te verwijderen.
+   **(*Actie vereist*)** Een lijst van gewenste personen van filename uitbreidingen, het tegenovergestelde van de lijst van afgewezen personen. Als u alle bestandsextensies wilt toestaan, behalve de extensies die zijn op de lijst met ongewenste personen gestaan, gebruikt u het pictogram &#39;**-**&#39; om één leeg item te verwijderen.
 
 * **Servicekiezer**
 
@@ -125,15 +125,15 @@ Als u een nieuwe configuratie wilt toevoegen, selecteert u het plusteken &#39;**
 
    De standaardwaarde is */bin/messaging* .
 
-* **Veld toestaan**
+* **Lijst van gewenste personen veld**
 
-   Gebruik **berichtenlijst**.
+   De Lijst van gewenste personen **van de Gebieden van het** Bericht van het gebruik.
 
 >[!CAUTION]
 >
 >Telkens wanneer een `Messaging Operations Service` configuratie voor uitgeven wordt geopend, als `allowedAttachmentTypes.name` was verwijderd, wordt een lege ingang opnieuw toegevoegd om het bezit configureerbaar te maken. Bij één leeg item worden bestandsbijlagen uitgeschakeld.
 >
->Als u alle bestandsextensies wilt toestaan, met uitzondering van extensies die geblokkeerd zijn, gebruikt u het pictogram &#39;**-**&#39; om (opnieuw) één leeg item te verwijderen voordat u op **Opslaan** klikt.
+>Als u alle bestandsextensies wilt toestaan, behalve de extensies die zijn op de lijst met ongewenste personen gestaan, gebruikt u het pictogram &#39;**-**&#39; om (opnieuw) de lege invoer te verwijderen voordat u op **Opslaan** klikt.
 
 
 ## Groepsberichten {#group-messaging}

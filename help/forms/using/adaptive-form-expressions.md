@@ -9,7 +9,10 @@ topic-tags: develop
 discoiquuid: 2fd2276e-cfe3-47ad-94c1-9c7af56b7a17
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '2766'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,7 @@ JavaScript is de expressietaal van adaptieve formulieren. Alle expressies zijn g
 
 ## Aanbevolen werkwijzen voor het schrijven van expressies {#best-practices-for-writing-expressions}
 
-* Wanneer u expressies schrijft, kunt u de naam van een veld of deelvenster gebruiken om velden en deelvensters te openen. Gebruik de eigenschap value om toegang te krijgen tot de waarde van een veld. Bijvoorbeeld: `field1.value`
+* Wanneer u expressies schrijft, kunt u de naam van een veld of deelvenster gebruiken om velden en deelvensters te openen. Gebruik de eigenschap value om toegang te krijgen tot de waarde van een veld. Bijvoorbeeld, `field1.value`
 * Gebruik unieke namen voor velden en deelvensters in het formulier. Hiermee voorkomt u mogelijke conflicten met veldnamen die tijdens het schrijven van expressies worden gebruikt.
 * Gebruik tijdens het schrijven van expressies met meerdere regels een puntkomma om een instructie te beëindigen.
 
@@ -85,7 +88,7 @@ De klikuitdrukking behandelt de acties die op de klikgebeurtenis van een knoop w
 
 **Retourneringstype**: De klikuitdrukking keert geen waarde terug. Als een expressie een waarde retourneert, wordt de waarde genegeerd.
 
-**Voorbeeld**: Als u een tekstvak **textbox1** wilt vullen bij het klikken op een knop met de waarde **AEM Forms**, klikt u op de knop `textbox1.value="AEM Forms"`
+**Voorbeeld**: Als u een tekstvak **textbox1** wilt vullen met de actie click van een knop met **AEM Forms** waarde, klikt u op de knop als volgt: `textbox1.value="AEM Forms"`
 
 ### Initialisatiescript {#initialization-script}
 
@@ -143,7 +146,7 @@ Als in het bovenstaande voorbeeld de niet-lege waarde niet overeenkomt met het p
 
 >[!NOTE]
 >
->Als u een validatie-expressie schrijft voor een niet-verplicht of verplicht veld, wordt de expressie geëvalueerd, ongeacht de zichtbaarheidsstatus van het veld. Als u de validatie voor de verborgen velden wilt stoppen, stelt u de eigenschap validationsDisabled in het script Initialization of Value Commit in op true. Bijvoorbeeld: `this.validationsDisabled=true`
+>Als u een validatie-expressie schrijft voor een niet-verplicht of verplicht veld, wordt de expressie geëvalueerd, ongeacht de zichtbaarheidsstatus van het veld. Als u de validatie voor de verborgen velden wilt stoppen, stelt u de eigenschap validationsDisabled in het script Initialization of Value Commit in op true. Bijvoorbeeld, `this.validationsDisabled=true`
 
 ### Waarde script vastleggen {#value-commit-script}
 
@@ -224,13 +227,13 @@ GuideBridge is een verzameling API&#39;s die kunnen worden gebruikt voor interac
 
 * Als u een adaptief formulier of de specifieke deelvensters ervan wilt valideren, gebruikt u `guideBridge.validate(errorList, somExpression).`
 
-#### GuideBridge gebruiken buiten expressies {#using-guidebridge-outside-expressions-nbsp}
+#### GuideBridge gebruiken buiten expressies  {#using-guidebridge-outside-expressions-nbsp}
 
 U kunt ook de GuideBridge-API&#39;s buiten de expressies gebruiken. U kunt bijvoorbeeld de GuideBridge-API gebruiken om communicatie in te stellen tussen pagina-HTML die als host fungeert voor het adaptieve formulier en het formuliermodel. Bovendien kunt u de waarde instellen die afkomstig is van het bovenliggende item van het Iframe-bestand dat het formulier host.
 
 Als u GuideBridge API wilt gebruiken voor het bovenstaande voorbeeld, neemt u een instantie van GuideBridge op. Om de instantie vast te leggen, luistert u naar de `bridgeInitializeStart`gebeurtenis van een `window`object:
 
-```
+```javascript
 window.addEventListener("bridgeInitializeStart", function(evnt) {
 
      // get hold of the guideBridge object
@@ -260,7 +263,7 @@ GuideBridge biedt ook bepaalde gebeurtenissen voor externe scripts op de hostpag
 
 Gebruik de volgende code om handlers te registreren:
 
-```
+```javascript
 guideBridge.on("elementValueChanged", function (event, data)  {
 
       // execute some logic when value of a field is changed

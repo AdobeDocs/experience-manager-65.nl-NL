@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f9a3f897-90c6-4942-8a86-aae510298f2a
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '197'
+ht-degree: 0%
 
 ---
 
@@ -19,11 +22,11 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 De gebruikers kunnen een langzamere reactietijd ervaren als zij tot vele groepen (bijvoorbeeld, 500 of meer) behoren of als de groepen diep worden genesteld (bijvoorbeeld, 30 niveaus). Als dit probleem optreedt, kunt u AEM-formulieren zo configureren dat de gegevens in bepaalde domeinen vooraf worden opgehaald.
 
-1. Klik in de beheerconsole op **[!UICONTROL Instellingen > Gebruikersbeheer > Configuratie > Configuratiebestanden]** importeren en exporteren.
-1. Als u de huidige configuratie-instelling naar een bestand wilt exporteren, klikt u op **[!UICONTROL Exporteren]** en slaat u het configuratiebestand op een andere locatie op.
+1. Klik in de beheerconsole op **[!UICONTROL Settings > User Management > Configuration > Import And Export Configuration Files]**.
+1. Als u de huidige configuratie-instelling naar een bestand wilt exporteren, klikt u op het configuratiebestand **[!UICONTROL Export]** en slaat u dit op een andere locatie op.
 1. Voeg het volgende knooppunt toe (vet gemarkeerd):
 
-   ```as3
+   ```xml
     <node name="UM">
     <map/>
     <node name="PrincipalCache">
@@ -40,6 +43,6 @@ De gebruikers kunnen een langzamere reactietijd ervaren als zij tot vele groepen
 
    In dit voorbeeld worden meerdere domeinen geconfigureerd voor prefetch. De domeinnamen worden gescheiden door een &quot;/&quot;. Dit wordt getoond in het voorbeeld hierboven met *Domain_Name1*, *Domain_Name2*, en *Domain_Name3*.
 
-1. Als u het bijgewerkte bestand wilt importeren, klikt u in Gebruikersbeheer op **[!UICONTROL Configuratie > Configuratiebestanden]** importeren en exporteren.
-1. Klik op **[!UICONTROL Bladeren]** om het bestand te zoeken, klik op Importeren en klik vervolgens op **[!UICONTROL OK]**.
+1. Klik in Gebruikersbeheer op **[!UICONTROL Configuration > Import And Export Configuration Files]**.
+1. Klik **[!UICONTROL Browse]** om het bestand te zoeken, klik op Importeren en klik vervolgens op **[!UICONTROL OK]**.
 

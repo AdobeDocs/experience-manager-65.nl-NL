@@ -10,7 +10,10 @@ topic-tags: customization
 discoiquuid: d388acef-7313-4e68-9395-270aef6ef2c6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1718'
+ht-degree: 0%
 
 ---
 
@@ -120,7 +123,7 @@ Zodra het projectmalplaatje wordt gecreeerd, doe de volgende veranderingen, zoal
 <table>
  <tbody>
   <tr>
-   <td><strong>Functie</strong></td>
+   <td><strong>-functie</strong></td>
    <td><strong>Beschrijving</strong></td>
   </tr>
   <tr>
@@ -131,7 +134,7 @@ Zodra het projectmalplaatje wordt gecreeerd, doe de volgende veranderingen, zoal
    <td><code>getEventMap</code></td>
    <td>Retourneert een kaart voor het converteren van HTML-gebeurtenissen naar XFA-gebeurtenissen. <br /> <code class="code">{
       blur: XFA_EXIT_EVENT,
-      }</code><br /> In dit voorbeeld wordt getoond dat <code>blur</code> een HTML-gebeurtenis is en dat <code>XFA_EXIT_EVENT</code> de bijbehorende XFA-gebeurtenis is. </td>
+      }</code><br /> In dit voorbeeld wordt getoond dat het een HTML-gebeurtenis <code>blur</code> is en dat het de overeenkomstige XFA-gebeurtenis <code>XFA_EXIT_EVENT</code> is. </td>
   </tr>
   <tr>
    <td><code>getOptionsMap</code></td>
@@ -188,7 +191,7 @@ De aangepaste weergave toepassen op een adaptief formulierveld:
 1. Open het dialoogvenster **Eigenschap** voor het veld waarop u de aangepaste weergave wilt toepassen.
 1. Werk op het tabblad **Stijl** de `CSS class` eigenschap bij en voeg de naam van de vormgeving toe aan de `widget_<widgetName>` indeling. Bijvoorbeeld: **widget_numericstepper**
 
-## Voorbeeld: Een aangepaste weergave maken {#sample-create-a-custom-appearance-nbsp}
+## Voorbeeld: Een aangepaste weergave maken   {#sample-create-a-custom-appearance-nbsp}
 
 Bekijk nu een voorbeeld om een douaneverschijning voor een numeriek gebied tot stand te brengen om als numerieke stapper of schuif te verschijnen. Voer de volgende stappen uit:
 
@@ -219,11 +222,11 @@ Bekijk nu een voorbeeld om een douaneverschijning voor een numeriek gebied tot s
 
 1. Open het gereedschap Eclipse en voer de volgende handelingen uit om het Eclipse-project te importeren:
 
-   1. Selecteer **[!UICONTROL Bestand > Importeren > Bestaande projecten in werkruimte]**.
+   1. Selecteer **[!UICONTROL File > Import > Existing Projects into Workspace]**.
 
    1. Blader naar de map waarin u de `archetype:generate` opdracht hebt uitgevoerd en selecteer deze.
 
-   1. Click **[!UICONTROL Finish]**.
+   1. Klik op **[!UICONTROL Finish]**.
 
       ![eclipse-screenshot](assets/eclipse-screenshot.png)
 
@@ -246,7 +249,7 @@ Bekijk nu een voorbeeld om een douaneverschijning voor een numeriek gebied tot s
 1. Vervang de inhoud van de `bootstrap-number-input.js` (jQuery-plug-in) door de inhoud van het `numericStepper-plugin.js` bestand.
 1. Voeg in het `numericStepper-widget.js` bestand de volgende code toe om de rendermethode te overschrijven om de insteekmodule aan te roepen en het `$userControl` object te retourneren:
 
-   ```java
+   ```javascript
    render : function() {
         var control = $.xfaWidget.numericInput.prototype.render.apply(this, arguments);
         var $control = $(control);
@@ -266,7 +269,7 @@ Bekijk nu een voorbeeld om een douaneverschijning voor een numeriek gebied tot s
 
 1. Overschrijf in het `numericStepper-widget.js` bestand de `getOptionsMap` eigenschap om de toegangsoptie te negeren en verberg de knoppen + en - in de uitgeschakelde modus.
 
-   ```java
+   ```javascript
    getOptionsMap: function(){
        var parentOptionsMap = $.xfaWidget.numericInput.prototype.getOptionsMap.apply(this,arguments),
    
@@ -314,8 +317,8 @@ Bekijk nu een voorbeeld om een douaneverschijning voor een numeriek gebied tot s
 
 1. Open het adaptieve formulier in de bewerkingsmodus waarop u de aangepaste weergave wilt toepassen en voer de volgende handelingen uit:
 
-   1. Klik met de rechtermuisknop op het veld waarop u de weergave wilt toepassen en klik op **[!UICONTROL Bewerken]** om het dialoogvenster Component bewerken te openen.
+   1. Klik met de rechtermuisknop op het veld waarop u de weergave wilt toepassen en klik om het dialoogvenster Component bewerken **[!UICONTROL Edit]** te openen.
 
-   1. Werk op het tabblad Stijl de eigenschap voor de **[!UICONTROL CSS-klasse]** bij die u wilt toevoegen `widget_numericStepper`.
+   1. Werk op het tabblad Stijl de **[!UICONTROL CSS class]** eigenschap bij die u wilt toevoegen `widget_numericStepper`.
 
 De nieuwe weergave die u zojuist hebt gemaakt, is nu beschikbaar voor gebruik.

@@ -10,7 +10,10 @@ topic-tags: develop
 discoiquuid: 1cb54c8a-9322-4b5a-b5a7-0eef342cee54
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1283'
+ht-degree: 1%
 
 ---
 
@@ -130,7 +133,7 @@ In het volgende voorbeeld wordt het maken van een testsuite voor het testen van 
 1. Klik met de rechtermuisknop op het testknooppunt (hier **afTestRegistration)** en klik vervolgens op **Maken** > **Bestand** maken. Geef het bestand de naam js.txt en klik op **OK**.
 1. Voeg de volgende tekst toe aan het bestand js.txt:
 
-   ```
+   ```javascript
    #base=.
    js.txt
    ```
@@ -139,7 +142,7 @@ In het volgende voorbeeld wordt het maken van een testsuite voor het testen van 
 1. Klik met de rechtermuisknop op het testknooppunt (hier **afTestRegistration)** en klik op **Maken** > **Bestand** maken. Geef het bestand een naam in it.js en klik op **OK**.
 1. Kopieer de volgende code naar het bestand init.js en klik op Alles **** opslaan:
 
-   ```
+   ```javascript
    (function(window, hobs) {
        'use strict';
        window.testsuites = window.testsuites || {};
@@ -165,7 +168,7 @@ In het volgende voorbeeld wordt het maken van een testsuite voor het testen van 
    | **Eigenschap** | **Type** | **Waarde** |
    |---|---|---|
    | categorieën | Tekenreeks[] | granite.testing.hobbes.tests, granite.testing.hobbes.tests.testForm |
-   | afhankelijkheden | Tekenreeks[] | graniet.testing.calvin.tests |
+   | afhankelijkheden | Tekenreeks[] | granite.testing.calvin.tests |
 
    >[!NOTE]
    >
@@ -177,7 +180,7 @@ In het volgende voorbeeld wordt het maken van een testsuite voor het testen van 
 
    Als u de volgende code wilt gebruiken om een ander adaptief formulier te testen, wijzigt u het pad en de naam van het formulier in **navigateTo** (lijnen 11, 36 en 62) en de respectieve testgevallen. Zie API&#39;s van [Calvin voor meer informatie over API&#39;s voor het testen van verschillende aspecten van formulieren en formulierobjecten](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html).
 
-   ```
+   ```javascript
    (function(window, hobs) {
        'use strict';
    
@@ -283,7 +286,7 @@ Testsets kunnen afzonderlijk worden uitgevoerd. Wanneer u een testsuite uitvoert
 
 Een vinkje geeft aan dat een test is geslaagd: ![vinkje](assets/checkmark.png)
 
-Een X-pictogram geeft aan dat een test is mislukt: ![kruis](assets/cross.png)
+Een X-pictogram geeft aan dat een test is mislukt: ![kruisen](assets/cross.png)
 
 Een testsuite uitvoeren:
 

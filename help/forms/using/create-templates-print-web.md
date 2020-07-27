@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 879ff6ca-e5f3-451d-acc2-f75142101ddd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e545fc5e2ea139bd8ebb7f84138ba68e03d71d19
+source-git-commit: bd70508b361ac8b62ebc0344538a18369a075f3e
+workflow-type: tm+mt
+source-wordcount: '1801'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +32,7 @@ De sjablonen voor het webkanaal worden gemaakt in AEM. Sjabloonauteurs en -behee
 Dit leerprogramma begeleidt u door de stappen om malplaatjes voor de kanalen van de Druk en van het Web tot stand te brengen zodat zij voor gebruik terwijl het creëren van Interactieve Mededelingen beschikbaar zijn. Aan het einde van deze zelfstudie kunt u het volgende doen:
 
 * XDP-sjablonen maken voor het afdrukkanaal met Adobe Forms Designer
-* De XDP-sjablonen uploaden naar de AEM Forms Server
+* Upload de XDP malplaatjes aan de Server van AEM Forms
 * Sjablonen voor het webkanaal maken en inschakelen
 
 ## Sjabloon maken voor afdrukkanaal {#create-template-for-print-channel}
@@ -70,6 +73,7 @@ Voer de volgende stappen uit om een XDP malplaatje voor het kanaal van de Druk t
    1. Geef **BillDetails** op in het veld **Naam** .
 
    1. Selecteer **Geen gegevensbinding** in de vervolgkeuzelijst **Gegevensbinding** .
+
    ![Designer-subformulier](assets/forms_designer_subform_new.png)
 
 1. Selecteer op dezelfde manier het basissubformulier, selecteer het tabblad **Subformulier** en selecteer **Overlopen** in de vervolgkeuzelijst **Inhoud** . Op het tabblad **Bindingen** :
@@ -77,6 +81,7 @@ Voer de volgende stappen uit om een XDP malplaatje voor het kanaal van de Druk t
    1. Geef **TelecaBill** op in het veld **Naam** .
 
    1. Selecteer **Geen gegevensbinding** in de vervolgkeuzelijst **Gegevensbinding** .
+
    ![Subformulier voor afdruksjabloon](assets/root_subform_print_template_new.png)
 
 1. Herhaal stap 2 tot en met 5 om de volgende subformulieren te maken:
@@ -91,6 +96,7 @@ Voer de volgende stappen uit om een XDP malplaatje voor het kanaal van de Druk t
    * ItemCalls
    * Nu betalen
    * ValueAddedServices
+
    Als u tijd wilt besparen, kunt u ook bestaande subformulieren kopiëren en plakken om nieuwe subformulieren te maken.
 
    Als u het subformulier **Teksten** rechts van het subformulier Laden wilt plaatsen, selecteert u het subformulier **Teksten** in het linkerdeelvenster, selecteert u het tabblad **Lay-out** en geeft u een waarde op voor het veld **AnkerX** . De waarde moet groter zijn dan de waarde voor het veld **Breedte** voor het subformulier **Laden** . Selecteer het subformulier **Laden** en selecteer het tabblad **Indeling** om de waarde van het veld **Breedte** weer te geven.
@@ -111,10 +117,10 @@ Voer de volgende stappen uit om een XDP malplaatje voor het kanaal van de Druk t
 
 Nadat u een XDP-sjabloon hebt gemaakt met de Forms Designer, moet u de sjabloon uploaden naar de AEM Forms-server, zodat de sjabloon beschikbaar is voor gebruik tijdens het maken van de interactieve communicatie.
 
-1. Selecteer **[!UICONTROL Formulieren]** > **[!UICONTROL Formulieren en documenten]**.
+1. Selecteer **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
 1. Tik op **Maken** > **Bestand uploaden**.
 
-   Navigeer en selecteer het sjabloon **create_first_ic_print_template** (XDP) en tik op **Openen** om de XDP-sjabloon te importeren naar de AEM Forms-server.
+   Navigeer en selecteer het sjabloon **create_first_ic_print_template** (XDP) en tik op **Openen** om de XDP-sjabloon te importeren naar de server AEM Forms.
 
 ### XDP-sjabloon maken voor layoutfragmenten {#create-xdp-template-for-layout-fragments}
 
@@ -140,7 +146,7 @@ Als u een lay-outfragment wilt maken voor het afdrukkanaal van de interactieve c
 
    ![Lay-outfragment](assets/layout_fragment_print_new.png)
 
-1. Selecteer **Rij 1** in de linkerruit en selecteer **Voorwerp** > **Binding** > **Rij voor Elk Punt** van Gegevens herhalen.
+1. Selecteer **Rij 1** in de linkerruit en selecteer **Voorwerp** > **Binding** > **Herhaling Rij voor Elk Punt** van Gegevens.
 
    ![Eigenschappen voor layoutfragment herhalen](assets/layout_fragment_print_repeat_new.png)
 
@@ -156,7 +162,7 @@ Als u een lay-outfragment wilt maken voor het afdrukkanaal van de interactieve c
    1. Selecteer **.xdp** in de vervolgkeuzelijst **Opslaan als type** .
 
    1. Tik op **Opslaan**.
-   Nadat u een XDP-sjabloon voor een lay-outfragment hebt gemaakt met de Forms Designer, moet u deze naar de AEM Forms-server [uploaden](../../forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server) , zodat de sjabloon beschikbaar is voor gebruik tijdens het maken van lay-outfragmenten.
+   Nadat u een XDP-sjabloon voor een lay-outfragment hebt gemaakt met de Forms Designer, moet u de sjabloon [uploaden](../../forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server) naar de AEM Forms-server, zodat de sjabloon beschikbaar is voor gebruik tijdens het maken van lay-outfragmenten.
 
 ## Sjabloon maken voor webkanaal {#create-template-for-web-channel}
 
@@ -173,7 +179,7 @@ Als u een webkanaalsjabloon wilt maken, definieert u een map waarin u de gemaakt
 
 Voer de volgende stappen uit om een map voor de bewerkbare sjablonen te maken:
 
-1. Tik op **Gereedschappen** ![](assets/hammer-icon.svg) > **Configuratiebrowser**.
+1. Tik op **Gereedschappen** ![hamerpictogram](assets/hammer-icon.svg) > **Configuratiebrowser**.
 1. Tik op **Maken** op de pagina Configuration Browser.
 1. Geef in het dialoogvenster **Configuratie** maken de titel **Create_First_IC_templates** op als de titel voor de map, controleer **Bewerkbare sjablonen** en tik op **Maken**.
 
@@ -217,7 +223,7 @@ Voer de volgende stappen uit om een malplaatje voor het kanaal van het Web in de
 
    ![Inhoudsstructuur](assets/content_tree_root_panel_new.png)
 
-1. Selecteer het deelvenster en tik op ![](assets/configure_icon.png) (Configureren).
+1. Selecteer het paneel en tik ![configure_icon](assets/configure_icon.png) (Configure).
 1. In het deelvenster Eigenschappen:
 
    1. Geef in het veld Naam de **details** van de facturering op.
@@ -225,6 +231,7 @@ Voer de volgende stappen uit om een malplaatje voor het kanaal van het Web in de
    1. Selecteer **1** in de vervolgkeuzelijst **Aantal kolommen** .
 
    1. Tik ![](/help/forms/using/assets/done_icon.png) om de eigenschappen op te slaan.
+
    De naam van het deelvenster wordt bijgewerkt naar **Bill Details** in de inhoudsstructuur.
 
 1. Herhaal stap 7 - 11 om deelvensters met de volgende eigenschappen toe te voegen aan de sjabloon:
@@ -248,7 +255,7 @@ Zodra u het malplaatje van het Web hebt gecreeerd, moet u het toelaten om het ma
 
 Voer de volgende stappen uit om het malplaatje van het Web toe te laten:
 
-1. Tik op **Gereedschappen** ![](assets/hammer-icon.svg) > **Sjablonen**.
+1. Tik op **Gereedschappen** ![hamerpictogram](assets/hammer-icon.svg) > **Sjablonen**.
 1. Navigeer naar de sjabloon **Create_First_IC_Web_Template** , selecteer deze en tik op **Enable**.
 1. Tab **Schakel** opnieuw in om te bevestigen.
 
@@ -267,4 +274,4 @@ Op basis van het gebruiksscenario moet u de knoppen **Nu** betalen en **Abonnere
 
    ![Toegestane componenten](assets/allowed_components_af_new.png)
 
-1. Tik ![](assets/done_icon.png) om de eigenschappen op te slaan.
+1. Tik op ![done_icon](assets/done_icon.png) om de eigenschappen op te slaan.

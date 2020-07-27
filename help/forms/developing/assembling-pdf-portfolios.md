@@ -11,7 +11,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 023f0d9e-bfde-4879-a839-085fadffb48e
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1785'
+ht-degree: 0%
 
 ---
 
@@ -24,9 +27,9 @@ De volgende afbeelding is een schermafbeelding van een portfolio met de stijl *O
 
 ![ap_ap_portfolio](assets/ap_ap_portfolio.png)
 
-Het maken van een PDF-portfolio is een papierloos alternatief voor het doorgeven van een verzameling documenten. Met AEM-formulieren kunt u portfolio&#39;s maken door de Assembler-service aan te roepen met een gestructureerd DDX-document. Het volgende DDX-document is een voorbeeld van een DDX-document waarmee een PDF-portfolio wordt gemaakt.
+Het maken van een PDF-portfolio is een papierloos alternatief voor het doorgeven van een verzameling documenten. Met behulp van AEM Forms kunt u portfolio&#39;s maken door de Assembler-service aan te roepen met een gestructureerd DDX-document. Het volgende DDX-document is een voorbeeld van een DDX-document waarmee een PDF-portfolio wordt gemaakt.
 
-```as3
+```xml
  <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
      <PDF result="portfolio1.pdf">
          <Portfolio>
@@ -52,7 +55,7 @@ Het DXX-document moet een `Portfolio` tag met een geneste `Navigator` tag bevatt
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Assembler, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Voor meer informatie over de dienst van de Assembler, zie de Verwijzing van de [Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
@@ -79,8 +82,8 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
-* jbossall-client.jar (vereist als AEM-formulieren worden geïmplementeerd op JBoss)
+* adobe-utilities.jar (vereist als AEM Forms worden geïmplementeerd op JBoss)
+* jbossall-client.jar (vereist als AEM Forms worden geïmplementeerd op JBoss)
 
 **Een PDF Assembler-client maken**
 
@@ -122,7 +125,7 @@ Een PDF-portfolio wordt geretourneerd in een verzamelingsobject. Doorloop het ve
 
 [Een PDF-portfolio samenstellen met de API voor webservices](#assemble-a-pdf-portfolio-using-the-web-service-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -168,6 +171,7 @@ U kunt een PDF-portfolio samenstellen met de API (Java) voor vergaderingsservice
    * Een `com.adobe.idp.Document` object dat staat voor het te gebruiken DDX-document
    * Een `java.util.Map` object dat de bestanden bevat die zijn vereist om een PDF-portfolio te maken.
    * Een `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` object dat de runtime-opties opgeeft, inclusief het standaardfont en het taaklogniveau
+
    De `invokeDDX` methode retourneert een `com.adobe.livecycle.assembler.client.AssemblerResult` object dat de geassembleerde PDF-portfolio en eventuele uitzonderingen bevat.
 
 1. Sla het samengevoegde portfolio op.
@@ -182,7 +186,7 @@ U kunt een PDF-portfolio samenstellen met de API (Java) voor vergaderingsservice
 
 [Snel starten (SOAP-modus): PDF-portfolio&#39;s samenstellen met de Java API](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -226,7 +230,7 @@ U kunt een PDF-portfolio samenstellen met de API (webservice) voor vergaderingss
    * Maak een bytearray waarin de inhoud van het `System.IO.FileStream` object wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de `System.IO.FileStream` eigenschap van het `Length` object op te halen.
    * Vul de bytearray met streamgegevens door de `System.IO.FileStream` `Read` methode van het object aan te roepen. Geef de bytearray, de startpositie en de streamlengte door om te lezen.
    * Vul het `BLOB` object door het `MTOM` veld ervan toe te wijzen met de inhoud van de bytearray.
-   * Create a `MyMapOf_xsd_string_To_xsd_anyType` object. Dit verzamelobject wordt gebruikt om invoerbestanden op te slaan die nodig zijn om een PDF-portfolio te maken.
+   * Create a `MyMapOf_xsd_string_To_xsd_anyType` object. Dit verzamelobject wordt gebruikt voor het opslaan van invoerbestanden die nodig zijn om een PDF-portfolio te maken.
    * Maak voor elk invoerbestand een `MyMapOf_xsd_string_To_xsd_anyType_Item` object.
    * Wijs een tekenreekswaarde toe die de sleutelnaam aan het `MyMapOf_xsd_string_To_xsd_anyType_Item` `key` gebied van het voorwerp vertegenwoordigt. Deze waarde moet overeenkomen met de waarde van het element dat is opgegeven in het DDX-document. (Voer deze taak uit voor elk invoerbestand.)
    * Wijs het `BLOB` object dat het invoerbestand opslaat toe aan het `MyMapOf_xsd_string_To_xsd_anyType_Item` veld van het `value` object. (Voer deze taak uit voor elk invoer-PDF-document.)
@@ -244,6 +248,7 @@ U kunt een PDF-portfolio samenstellen met de API (webservice) voor vergaderingss
    * Een `BLOB` object dat staat voor het DDX-document
    * Het `MyMapOf_xsd_string_To_xsd_anyType` object dat de vereiste bestanden bevat
    * Een `AssemblerOptionSpec` object dat uitvoeringsopties opgeeft
+
    De `invokeDDX` methode retourneert een `AssemblerResult` object dat de resultaten van de taak en eventuele uitzonderingen bevat die zich hebben voorgedaan.
 
 1. Sla het samengevoegde portfolio op.
@@ -256,6 +261,6 @@ U kunt een PDF-portfolio samenstellen met de API (webservice) voor vergaderingss
 
 **Zie ook**
 
-[AEM-formulieren aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[AEM Forms aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[AEM-formulieren aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[AEM Forms aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)

@@ -10,7 +10,10 @@ topic-tags: correspondence-management
 discoiquuid: 666fee78-a103-44dc-afe7-71b90ce219b7
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '614'
+ht-degree: 0%
 
 ---
 
@@ -164,6 +167,7 @@ Ga als volgt te werk om lettertypen aan te passen door het bestand tbxeditor-con
       * Eigenschappen zoals hoogte- en letterspatiëring
       * Standaardwaarden van lettertypefamilie en -grootte, hoogte, letterspatiëring en datumnotatie
       * Opsommingstekens
+
       Als u bijvoorbeeld een Japans lettertype met de naam Sazanami Mincho Medium wilt toevoegen, moet u het volgende item in het XML-bestand invoeren: `<font>Sazanami Mincho Medium</font>`. Dit lettertype moet ook op de clientcomputer zijn geïnstalleerd om het lettertype te kunnen aanpassen en er toegang toe te hebben. Zie Aangepaste lettertypen [toevoegen aan de clientcomputer](#addcustomfonts)voor meer informatie.
 
       U kunt ook de standaardinstellingen voor verschillende aspecten van tekst wijzigen en de lettertypen uit de teksteditor verwijderen door de items te verwijderen.
@@ -182,7 +186,7 @@ Raadpleeg de volgende secties voor meer informatie over het installeren van lett
 
 ## Lettertypeaanpassingen openen {#access-font-customizations}
 
-Nadat u wijzigingen hebt aangebracht in de lettertypen in het bestand tbxeditor-config.xml in CRX en de vereiste lettertypen hebt geïnstalleerd op de clientcomputer die wordt gebruikt om toegang te krijgen tot AEM-formulieren, worden de wijzigingen weergegeven in de teksteditor.
+Nadat u wijzigingen hebt aangebracht in de lettertypen in het bestand tbxeditor-config.xml in CRX en de vereiste lettertypen hebt geïnstalleerd op de clientcomputer die wordt gebruikt voor toegang tot AEM Forms, worden de wijzigingen weergegeven in de teksteditor.
 
 Het lettertype Sazanami Mincho Medium dat bijvoorbeeld wordt toegevoegd aan het bestand [Customize fonts door het bestand tbxeditor-config.xml in de CRX](#customizefonts) -procedure te bewerken, wordt als volgt weergegeven in de gebruikersinterface van de teksteditor:
 

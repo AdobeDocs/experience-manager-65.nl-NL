@@ -10,7 +10,10 @@ topic-tags: publish
 discoiquuid: f0a5588d-f210-4f04-bc35-b62834f90ab1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '6991'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
 
 ## Stappen voor formulierwerkstroom {#forms-workflow-steps}
 
-Workflowstappen voor formulieren voeren specifieke bewerkingen voor AEM-formulieren uit in een AEM-workflow. Met deze stappen kunt u snel een op formulieren gebaseerde, op Forms gebaseerde workflow maken voor OSGi. Deze workflows kunnen worden gebruikt voor het ontwikkelen van basis revisie- en goedkeurings-workflows, interne en interne bedrijfsprocessen binnen de firewall. U kunt ook de stappen van de Workflow van Forms gebruiken om documentservices te starten, te integreren met de ondertekeningsworkflow van Adobe Sign en andere bewerkingen in AEM Forms uit te voeren. U hebt de invoegtoepassing [AEM Forms nodig](https://www.adobe.com/go/learn_aemforms_documentation_63) om deze stappen in een workflow te kunnen gebruiken.
+Workflowstappen voor formulieren voeren AEM Forms-specifieke bewerkingen uit in een AEM-workflow. Met deze stappen kunt u snel een op formulieren gebaseerde, op Forms gebaseerde workflow maken voor OSGi. Deze workflows kunnen worden gebruikt voor het ontwikkelen van basis revisie- en goedkeurings-workflows, interne en interne bedrijfsprocessen binnen de firewall. U kunt ook de stappen van de Workflow van Forms gebruiken om documentservices te starten, met de ondertekeningsworkflow van Adobe Sign te integreren en andere AEM Forms uit te voeren. U hebt [AEM Forms-invoegtoepassing](https://www.adobe.com/go/learn_aemforms_documentation_63) nodig om deze stappen in een workflow te kunnen gebruiken.
 
 ## Taakstap toewijzen {#assign-task-step}
 
@@ -75,11 +78,11 @@ U kunt de component ook gebruiken om het gedrag van de taak te controleren. Bijv
    * **Lay-outsjabloon opslaan met:** Sla de lay-outsjabloon op met een pad dat relatief is ten opzichte van de laadbewerking of sla deze op in een variabele van het gegevenstype Document. De [lay-outsjabloon](../../forms/using/layout-design-details.md) verwijst naar een XDP-bestand dat u maakt met Forms Designer. Deze optie is beschikbaar slechts als u Interactieve Communicatie Agent UI van de drop-down lijst van het Type selecteert.
 
 * **Toewijzen > Opties toewijzen:** Geef de methode op waarmee de taak aan een gebruiker wordt toegewezen. U kunt de taak dynamisch toewijzen aan een gebruiker of groep met behulp van het script Deelnemerkiezer of u kunt de taak toewijzen aan een specifieke AEM-gebruiker of -groep.
-* **Deelnemerkiezer:** De optie is beschikbaar als de optie **Dynamisch naar een gebruiker of groep** is geselecteerd in het veld Opties toewijzen. U kunt een ECMAScript of de dienst gebruiken om een gebruiker of een groep dynamisch te selecteren. Zie [Dynamisch een workflow toewijzen aan de gebruikers](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) en een aangepaste stap Dynamische deelnemer in Adobe Experience Manager [maken voor meer informatie.](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
+* **Deelnemerkiezer:** De optie is beschikbaar als de optie **Dynamisch naar een gebruiker of groep** is geselecteerd in het veld Opties toewijzen. U kunt een ECMAScript of de dienst gebruiken om een gebruiker of een groep dynamisch te selecteren. Zie [Dynamisch een workflow toewijzen aan de gebruikers](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) en een aangepaste stap Dynamische Adobe Experience Manager [maken voor meer informatie.](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
 
-* **Deelnemers:** Het veld is beschikbaar wanneer de optie **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** is geselecteerd in het veld **Deelnemerkiezer** . In het veld kunt u gebruikers of groepen selecteren voor de optie RandomParticipantChooser.
+* **Deelnemers:** Het veld is beschikbaar wanneer de **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** optie is geselecteerd in het veld **Deelnemerkiezer** . In het veld kunt u gebruikers of groepen selecteren voor de optie RandomParticipantChooser.
 
-* **Geadresseerde:** Het veld is beschikbaar wanneer **[!UICONTROL com.adobe.fd.workspace.step.service.VariableParticipantChooser]** is geselecteerd in het veld **Deelnemerkiezer** . In het veld kunt u een variabele van het gegevenstype String selecteren om de toewijzing te definiëren.
+* **Geadresseerde:** Het veld is beschikbaar wanneer de optie **[!UICONTROL com.adobe.fd.workspace.step.service.VariableParticipantChooser]** is geselecteerd in het veld **Deelnemerkiezer** . In het veld kunt u een variabele van het gegevenstype String selecteren om de toewijzing te definiëren.
 
 * **Argumenten:** Het veld is beschikbaar wanneer een ander script dan het script RandomParticipantChoose is geselecteerd in het veld Deelnemerkiezer. In het veld kunt u een lijst met door komma&#39;s gescheiden argumenten opgeven voor het script dat is geselecteerd in het veld Deelnemerkiezer.
 
@@ -173,7 +176,7 @@ Als u bijvoorbeeld het pad van een map opgeeft, worden alle bestanden die rechts
 
 ## De stap Service van het formuliergegevensmodel aanroepen {#invoke-form-data-model-service-step}
 
-U kunt [AEM Forms Data Integration](../../forms/using/data-integration.md) gebruiken om verschillende gegevensbronnen te configureren en er verbinding mee te maken. Deze gegevensbronnen kunnen een gegevensbestand, de Webdienst, de dienst van REST, de dienst van OData, en oplossing van CRM zijn. Met AEM Forms Data Integration kunt u een formuliergegevensmodel maken dat verschillende services omvat voor het ophalen, optellen en bijwerken van gegevens in de geconfigureerde database. Met de stap **Data Model Service** aanroepen kunt u een formuliergegevensmodel (FDM) selecteren en de services van de FDM gebruiken om gegevens op te halen, bij te werken of toe te voegen aan verschillende gegevensbronnen.
+U kunt de Integratie [van Gegevens van](../../forms/using/data-integration.md) AEM Forms gebruiken om te vormen en met ongelijksoortige gegevensbronnen te verbinden. Deze gegevensbronnen kunnen een gegevensbestand, de Webdienst, de dienst van REST, de dienst van OData, en oplossing van CRM zijn. De Integratie van Gegevens van AEM Forms staat u toe om een model van vormgegevens te creëren dat diverse diensten omvat om gegevensherwinning uit te voeren, toevoegings, het bijwerken verrichtingen op het gevormde gegevensbestand. Met de stap **Data Model Service** aanroepen kunt u een formuliergegevensmodel (FDM) selecteren en de services van de FDM gebruiken om gegevens op te halen, bij te werken of toe te voegen aan verschillende gegevensbronnen.
 
 Om input voor gebieden van de stap te verklaren, worden de volgende gegevensbestandlijst en het dossier JSON gebruikt als voorbeeld:
 
@@ -206,26 +209,26 @@ Om input voor gebieden van de stap te verklaren, worden de volgende gegevensbest
 
 **Voorbeeld-JSON-bestand**
 
-```
-{ 
-  customer: { 
-   firstName: "Sarah", 
-   lastName:"Rose", 
-   customerId: "1", 
-   emailAddress:"srose@we.info" 
- }, 
-  insurance: {
-   customerId: "1", 
-  policyType: "Premium,
-  policyNumber: "Premium-521499",
-  customerDetails: { 
-   firstName: "Sarah",
-   lastName: "Rose",
-   customerId: "1",
-   emailAddress: "srose@we.info" 
-  }
- }
-}
+```json
+  { 
+    customer: { 
+     firstName: "Sarah", 
+     lastName:"Rose", 
+     customerId: "1", 
+     emailAddress:"srose@we.info" 
+   }, 
+    insurance: {
+     customerId: "1", 
+    policyType: "Premium,
+    policyNumber: "Premium-521499",
+    customerDetails: { 
+     firstName: "Sarah",
+     lastName: "Rose",
+     customerId: "1",
+     emailAddress: "srose@we.info" 
+    }
+   }
+  }
 ```
 
 Voor de stap Service van het formuliergegevensmodel aanroepen worden de onderstaande velden weergegeven, waarmee bewerkingen in het formuliergegevensmodel worden vergemakkelijkt:
@@ -270,15 +273,15 @@ Met de stap Document ondertekenen kunt u documenten ondertekenen met Adobe Sign.
 * **Werkstroomwerkgebied:** Een werkstroom kan uit meerdere fasen bestaan. Deze fasen worden weergegeven in het Postvak IN van AEM. U kunt deze fasen definiëren in de eigenschappen van het model (Selecteren > Pagina > Pagina-eigenschappen > Staven).
 * **Ondertekenaars selecteren:** Geef de methode op waarmee u ondertekenaars voor het document wilt kiezen. U kunt de workflow dynamisch toewijzen aan een gebruiker of groep of gegevens van een ondertekenaar handmatig toevoegen.
 * **Script of service om ondertekenaars te selecteren:** De optie is alleen beschikbaar als de optie Dynamisch is geselecteerd in het veld Ondertekenaars selecteren. U kunt een ECMAScript of een dienst specificeren om ondertekenaars en verificatieopties voor een document te kiezen.
-* **Details ondertekenaar:** De optie is alleen beschikbaar als de optie Handmatig is geselecteerd in het veld Ondertekenaars selecteren. Geef een e-mailadres op en kies een optioneel verificatiemechanisme. Voordat u een verificatiemechanisme met twee stappen selecteert, moet u controleren of de bijbehorende verificatieoptie is ingeschakeld voor het geconfigureerde Adobe-ondertekeningsaccount. U kunt een variabele van het gegevenstype String gebruiken om waarden te definiëren voor de velden **[!UICONTROL E-mail]**, **[!UICONTROL Landcode]** en **[!UICONTROL Telefoonnummer]** . De velden **[!UICONTROL Landcode]** en **[!UICONTROL Telefoonnummer]** worden alleen weergegeven als u **[!UICONTROL Telefoonverificatie]** selecteert in de vervolgkeuzelijst **[!UICONTROL 2-stappencontrole]** .
+* **Details ondertekenaar:** De optie is alleen beschikbaar als de optie Handmatig is geselecteerd in het veld Ondertekenaars selecteren. Geef een e-mailadres op en kies een optioneel verificatiemechanisme. Voordat u een verificatiemechanisme met twee stappen selecteert, moet u controleren of de bijbehorende verificatieoptie is ingeschakeld voor het geconfigureerde Adobe-ondertekeningsaccount. U kunt een variabele van het gegevenstype String gebruiken om waarden voor **[!UICONTROL Email]**, **[!UICONTROL Country Code]**, en **[!UICONTROL Phone Number]** gebieden te bepalen. De velden **[!UICONTROL Country Code]** en **[!UICONTROL Phone Number]** velden worden alleen weergegeven als u een **[!UICONTROL Phone Verification]** optie selecteert in de **[!UICONTROL 2-step verification]** vervolgkeuzelijst.
 * **Statusvariabele:** In een Adobe Sign-document wordt de ondertekeningsstatus van het document opgeslagen in een variabele van het gegevenstype String. Geef de naam van de statusvariabele op (adobeSignStatus). Een statusvariabele van een instantie is beschikbaar in CRXDE op /etc/workflow/instances/&lt;server>/&lt;date-time>/&lt;instance of workflow model>/workItems/&lt;node>/metaData bevat status van een variabele.
 * **Ondertekend document opslaan met onderstaande opties:** Geef de locatie op waar de ondertekende documenten moeten worden bewaard. U kunt ervoor kiezen het ladingsdossier te overschrijven, het ondertekende document bij een plaats binnen de ladingsfolder te plaatsen, of het ondertekende document op te slaan in een variabele van het type van Document.
 
 ## Stappen voor Document Services {#document-services-steps}
 
-AEM Document Services is een reeks services voor het maken, samenstellen en beveiligen van PDF-documenten. AEM Forms biedt een aparte AEM-workflowstap voor elke documentservice.
+AEM Document Services is een reeks services voor het maken, samenstellen en beveiligen van PDF-documenten. AEM Forms bieden een aparte AEM-workflowstap voor elke documentservice.
 
-Net als bij andere workflowstappen voor AEM Forms, zoals Taak toewijzen, E-mail verzenden en Document ondertekenen, kunt u variabelen gebruiken in alle stappen voor AEM-documentservices. Zie [Variabelen in AEM-workflows](../../forms/using/variable-in-aem-workflows.md)voor meer informatie over het maken en beheren van variabelen.
+Net als bij andere workflowstappen voor AEM Forms, zoals Taak toewijzen, E-mail verzenden en Document ondertekenen, kunt u variabelen gebruiken in alle stappen van de AEM-documentservices. Zie [Variabelen in AEM-workflows](../../forms/using/variable-in-aem-workflows.md)voor meer informatie over het maken en beheren van variabelen.
 
 ### Tijdstempel document toepassen {#apply-document-time-stamp-step}
 
@@ -309,7 +312,7 @@ Hiermee genereert u een PDF-document op basis van de opgegeven URL-, HTML- en ZI
 
 ### Gegevensstap exporteren {#export-data-step}
 
-Hiermee exporteert u gegevens uit een PDF-formulier of XDP-bestand. Hiervoor moet u het bestandspad van Invoerdocument en de indeling Gegevens exporteren invoeren. De opties voor de Indeling van de Gegevens van de Uitvoer zijn Auto, XDP en XmlData.
+Hiermee exporteert u gegevens uit een PDF forms- of XDP-bestand. Hiervoor moet u het bestandspad van Invoerdocument en de indeling Gegevens exporteren invoeren. De opties voor de Indeling van de Gegevens van de Uitvoer zijn Auto, XDP en XmlData.
 
 ### PDF exporteren naar opgegeven tekststap {#export-pdf-to-specified-type-step}
 
@@ -341,7 +344,7 @@ Hiermee optimaliseert u PDF-bestanden door de grootte ervan te verkleinen. Het r
 
 Optimalisatie-instellingen bepalen hoe bestanden worden geoptimaliseerd. Hier volgen voorbeelden van instellingen:
 
-* Doelversie PDF
+* Target PDF-versie
 * Objecten zoals JavaScript-handelingen en ingesloten paginaminiaturen negeren
 * Gebruikersgegevens zoals opmerkingen en bestandsbijlagen negeren
 * Ongeldige of ongebruikte instellingen negeren
@@ -359,7 +362,7 @@ Hiermee maakt u een formulier dat is gemaakt in Form Designer (XDP), naar een PD
 
 ### Stap voor beveiligd document {#secure-document-step}
 
-Een document versleutelen, ondertekenen en certificeren. AEM Forms ondersteunt zowel op wachtwoorden gebaseerde versleuteling als versleuteling op basis van certificaten. U kunt ook kiezen uit verschillende algoritmen voor het ondertekenen van documenten. Bijvoorbeeld SHA-256 en SH-512. U kunt de workflowstap ook gebruiken om PDF-documenten door te lezen. De workflowstap biedt opties voor het decoderen van streepjescodes, digitale handtekeningen, het importeren en exporteren van PDF-gegevens en andere opties.
+Een document versleutelen, ondertekenen en certificeren. AEM Forms ondersteunen zowel op wachtwoorden gebaseerde versleuteling als versleuteling op basis van certificaten. U kunt ook kiezen uit verschillende algoritmen voor het ondertekenen van documenten. Bijvoorbeeld SHA-256 en SH-512. U kunt de workflowstap ook gebruiken om PDF-documenten door te lezen. De workflowstap biedt opties voor het decoderen van streepjescodes, digitale handtekeningen, het importeren en exporteren van PDF-gegevens en andere opties.
 
 ### Verzenden naar printer, stap {#send-to-printer-step}
 
@@ -378,52 +381,52 @@ De stap Afgedrukte uitvoer genereren heeft de volgende eigenschappen:
 
 **Invoereigenschappen**
 
-* **[!UICONTROL Sjabloonbestand selecteren met]**: Geef het pad van het sjabloonbestand op. U kunt het sjabloonbestand selecteren met het pad dat relatief is ten opzichte van de lading, opgeslagen op een absoluut pad of met een variabele van het gegevenstype Document. Bijvoorbeeld [Payload_Directory]/Workflow/data.xml. Als het pad niet bestaat in de crx-gegevensopslagruimte, kan een beheerder het pad maken voordat het wordt gebruikt. Bovendien kunt u ook payload accepteren als het invoergegevensbestand.
+* **[!UICONTROL Select template file using]**: Geef het pad van het sjabloonbestand op. U kunt het sjabloonbestand selecteren met het pad dat relatief is ten opzichte van de lading, opgeslagen op een absoluut pad of met een variabele van het gegevenstype Document. Bijvoorbeeld [Payload_Directory]/Workflow/data.xml. Als het pad niet bestaat in de crx-gegevensopslagruimte, kan een beheerder het pad maken voordat het wordt gebruikt. Bovendien kunt u ook payload accepteren als het invoergegevensbestand.
 
-* **[!UICONTROL Gegevensdocument selecteren met]**: Geef het pad van een invoergegevensbestand op. U kunt het invoergegevensbestand selecteren met het pad dat relatief is ten opzichte van de lading, opgeslagen op een absoluut pad of met een variabele van het gegevenstype Document. Bijvoorbeeld [Payload_Directory]/Workflow/data.xml. Als het pad niet bestaat in de crx-gegevensopslagruimte, kan een beheerder het pad maken voordat het wordt gebruikt.
+* **[!UICONTROL Select data document using]**: Geef het pad van een invoergegevensbestand op. U kunt het invoergegevensbestand selecteren met het pad dat relatief is ten opzichte van de lading, opgeslagen op een absoluut pad of met een variabele van het gegevenstype Document. Bijvoorbeeld [Payload_Directory]/Workflow/data.xml. Als het pad niet bestaat in de crx-gegevensopslagruimte, kan een beheerder het pad maken voordat het wordt gebruikt.
 
-* **[!UICONTROL Printerindeling]**: Een waarde in de indeling Afdrukken die aangeeft welke paginabeschrijvingstaal moet worden gebruikt om de uitvoerstroom te genereren wanneer geen XDC-bestand wordt geleverd. Als u een letterlijke waarde opgeeft, selecteert u een van de volgende waarden:
+* **[!UICONTROL Printer Format]**: Een waarde in de indeling Afdrukken die aangeeft welke paginabeschrijvingstaal moet worden gebruikt om de uitvoerstroom te genereren wanneer geen XDC-bestand wordt geleverd. Als u een letterlijke waarde opgeeft, selecteert u een van de volgende waarden:
 
-   * **[!UICONTROL Aangepaste PCL]**: Gebruik de optie om een aangepast XDC-bestand voor PCL op te geven.
-   * **[!UICONTROL Aangepast PostScript]**: Gebruik de optie om een aangepast XDC-bestand voor PostScript op te geven.
-   * **[!UICONTROL Aangepaste ZPL]**: Gebruik de optie om een aangepast XDC-bestand op te geven voor ZPL.
-   * **[!UICONTROL Algemene kleur PCL (5c)]**: Gebruik een algemene kleur PCL (5c).
+   * **[!UICONTROL Custom PCL]**: Gebruik de optie om een aangepast XDC-bestand voor PCL op te geven.
+   * **[!UICONTROL Custom PostScript]**: Gebruik de optie om een aangepast XDC-bestand voor PostScript op te geven.
+   * **[!UICONTROL Custom ZPL]**: Gebruik de optie om een aangepast XDC-bestand op te geven voor ZPL.
+   * **[!UICONTROL Generic Color PCL (5c)]**: Gebruik een algemene kleur PCL (5c).
    * **[!UICONTROL Generic PostScript Level3]**: Gebruik algemeen PostScript Level 3.
    * **[!UICONTROL ZPL 300 DPI]**: Gebruik ZPL 300 DPI. Zpl300.xdc wordt gebruikt.
    * **[!UICONTROL ZPL 600 DPI]**: Gebruik ZPL 600 DPI. Het bestand zpl600.xdc wordt gebruikt.
-   * **[!UICONTROL Aangepaste IPL]**: Gebruik de optie om een aangepast XDC-bestand voor IPL op te geven.
+   * **[!UICONTROL Custom IPL]**: Gebruik de optie om een aangepast XDC-bestand voor IPL op te geven.
    * **[!UICONTROL IPL 300 DPI]**: Gebruik IPL 300 DPI. Het bestand ipl300.xdc wordt gebruikt.
    * **[!UICONTROL IPL 400 DPI]**: Gebruik IPL 400 DPI. Het bestand ipl400.xdc wordt gebruikt.
-   * **[!UICONTROL Aangepaste TPCL]**: Gebruik de optie om een aangepast XDC-bestand voor TPCL op te geven.
+   * **[!UICONTROL Custom TPCL]**: Gebruik de optie om een aangepast XDC-bestand voor TPCL op te geven.
    * **[!UICONTROL TPCL 305 DPI]**: Gebruik TPCL 300 DPI. Het bestand tpcl305.xdc wordt gebruikt.
    * **[!UICONTROL PCL 600 DPI]**: Gebruik TPCL 600 DPI. Het bestand tpcl600.xdc wordt gebruikt.
-   * **[!UICONTROL Aangepaste DPL]**: Gebruik de optie om een aangepast XDC-bestand DPL op te geven.
+   * **[!UICONTROL Custom DPL]**: Gebruik de optie om een aangepast XDC-bestand DPL op te geven.
    * **[!UICONTROL DPL300DPI]**: Gebruik DPL 300 DPI. Het bestand dpl300.xdc wordt gebruikt.
    * **[!UICONTROL DPL406DPI]**: Gebruik DPL 400 DPI. Het bestand dpl406.xdc wordt gebruikt.
    * **[!UICONTROL DPL600DPI]**: Gebruik DPL 600 DPI. De dpl600.xdc wordt gebruikt.
 
 **Uitvoereigenschappen**
 
-* **[!UICONTROL Uitvoerdocument opslaan met]**: Geef de locatie op waar u het uitvoerbestand wilt opslaan. U kunt het uitvoerbestand opslaan op een locatie die relatief is ten opzichte van de lading, in een variabele of een absolute locatie opgeven om het uitvoerbestand op te slaan. Als het pad niet bestaat in de crx-gegevensopslagruimte, kan een beheerder het pad maken voordat het wordt gebruikt.
+* **[!UICONTROL Save output document using]**: Geef de locatie op waar u het uitvoerbestand wilt opslaan. U kunt het uitvoerbestand opslaan op een locatie die relatief is ten opzichte van de lading, in een variabele of een absolute locatie opgeven om het uitvoerbestand op te slaan. Als het pad niet bestaat in de crx-gegevensopslagruimte, kan een beheerder het pad maken voordat het wordt gebruikt.
 
 **Geavanceerde eigenschappen**
 
-* **[!UICONTROL Hoofdlocatie van inhoud selecteren met]**: De inhoudsbasis is een tekenreekswaarde die de URI, absolute referentie of locatie in de gegevensopslagruimte opgeeft voor het ophalen van relatieve elementen die door het formulierontwerp worden gebruikt. Als het formulierontwerp bijvoorbeeld relatief verwijst naar een afbeelding, zoals ../myImage.gif, moet myImage.gif zich op repository:// bevinden. De standaardwaarde is repository://, die naar het hoofdniveau van de gegevensopslagruimte wijst.
+* **[!UICONTROL Select Content Root location using]**: De inhoudsbasis is een tekenreekswaarde die de URI, absolute referentie of locatie in de gegevensopslagruimte opgeeft voor het ophalen van relatieve elementen die door het formulierontwerp worden gebruikt. Als het formulierontwerp bijvoorbeeld relatief verwijst naar een afbeelding, zoals ../myImage.gif, moet myImage.gif zich op repository:// bevinden. De standaardwaarde is repository://, die naar het hoofdniveau van de gegevensopslagruimte wijst.
 
    Wanneer u een element kiest uit uw toepassing, moet het pad van de URI van de inhoudsbasis de juiste structuur hebben. Als bijvoorbeeld een formulier wordt gekozen uit een toepassing met de naam SampleApp en wordt geplaatst op SampleApp/1.0/forms/Test.xdp, moet de URI van de inhoudswortel worden opgegeven als repository://administrator@password/Applications/SampleApp/1.0/forms/ of gegevensopslagruimte:/Applications/SampleApp/1.0/forms/ (als de bevoegdheid null is). Wanneer de URI voor de inhoudsbasis op deze manier wordt opgegeven, worden de paden van alle middelen waarnaar wordt verwezen in het formulier, omgezet met deze URI.
 
-* **[!UICONTROL Selecteer een XCI-bestand met]**: XCI-bestanden worden gebruikt om lettertypen en andere eigenschappen te beschrijven die voor formulierontwerpelementen worden gebruikt. U kunt een XCI-bestand relatief ten opzichte van de payload, op een absoluut pad houden of een variabele van het gegevenstype Document gebruiken.
+* **[!UICONTROL Select XCI file using]**: XCI-bestanden worden gebruikt om lettertypen en andere eigenschappen te beschrijven die voor formulierontwerpelementen worden gebruikt. U kunt een XCI-bestand relatief ten opzichte van de payload, op een absoluut pad houden of een variabele van het gegevenstype Document gebruiken.
 
-* **[!UICONTROL Landinstelling]**: Hier geeft u de taal op die wordt gebruikt voor het genereren van het PDF-document. Als u een letterlijke waarde opgeeft, selecteert u een taal in de lijst of selecteert u een van de volgende waarden:
+* **[!UICONTROL Locale]**: Hier geeft u de taal op die wordt gebruikt voor het genereren van het PDF-document. Als u een letterlijke waarde opgeeft, selecteert u een taal in de lijst of selecteert u een van de volgende waarden:
    * **Als u de standaardinstelling**van de server wilt gebruiken:
-(Standaard) Gebruik de landinstelling die is geconfigureerd op de AEM Forms Server. De landinstelling wordt geconfigureerd met de beheerconsole. (Zie [Help bij](http://www.adobe.com/go/learn_aemforms_designer_65)Designer.)
+(Standaard) Gebruik de landinstelling die is geconfigureerd op de AEM Forms-server. De landinstelling wordt geconfigureerd met de beheerconsole. (Zie [Help bij](http://www.adobe.com/go/learn_aemforms_designer_65)Designer.)
 
    * **Aangepaste waarde**gebruiken:
 Typ de landinstellingscode in het letterlijke vak of selecteer een tekenreeksvariabele die de landinstellingscode bevat. Ga naar http://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html voor een volledige lijst met ondersteunde landinstellingscodes.
 
-* **[!UICONTROL Exemplaren]**: Een geheel getal dat aangeeft hoeveel exemplaren voor de uitvoer moeten worden gegenereerd. De standaardwaarde is 1.
+* **[!UICONTROL Copies]**: Een geheel getal dat aangeeft hoeveel exemplaren voor de uitvoer moeten worden gegenereerd. De standaardwaarde is 1.
 
-* **[!UICONTROL Duplexafdrukken]**:  Een pagineringswaarde die aangeeft of dubbelzijdig of enkelzijdig afdrukken moet worden gebruikt. Deze waarde wordt gebruikt voor printers die PostScript en PCL ondersteunen. Als u een letterlijke waarde opgeeft, selecteert u een van de volgende waarden:
-   * **[!UICONTROL Duplex lange rand]**: Dubbelzijdig afdrukken en afdrukken met paginering met lange randen.
-   * **[!UICONTROL Duplex, korte zijde]**: Dubbelzijdig afdrukken en afdrukken met korte paginering.
+* **[!UICONTROL Duplex Printing]**:  Een pagineringswaarde die aangeeft of dubbelzijdig of enkelzijdig afdrukken moet worden gebruikt. Deze waarde wordt gebruikt voor printers die PostScript en PCL ondersteunen. Als u een letterlijke waarde opgeeft, selecteert u een van de volgende waarden:
+   * **[!UICONTROL Duplex Long Edge]**: Dubbelzijdig afdrukken en afdrukken met paginering met lange randen.
+   * **[!UICONTROL Duplex Short Edge]**: Dubbelzijdig afdrukken en afdrukken met korte paginering.
    * **[!UICONTROL Simplex]**: Enkelzijdig afdrukken gebruiken.

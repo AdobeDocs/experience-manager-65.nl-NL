@@ -10,7 +10,10 @@ topic-tags: customization
 discoiquuid: ad6db3fd-0d26-4241-bf73-be74b7f6e509
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '346'
+ht-degree: 0%
 
 ---
 
@@ -155,7 +158,7 @@ Overweeg een scenario waarin u de vervolgkeuzelijst **Frame** wilt vullen op bas
 
    ![Landnamen](assets/country-dropdown.png) toevoegen ![Script toevoegen om de vervolgkeuzelijsten](assets/state-dropdown.png) ![Land en Staat te vullen met namen van staten](assets/2dropdowns.png)
 
-   ```
+   ```javascript
    JSON.parse(
        $.ajax({
            url: "/apps/myfolder/demo/dropdown",

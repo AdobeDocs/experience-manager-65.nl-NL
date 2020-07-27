@@ -9,7 +9,10 @@ topic-tags: author
 discoiquuid: 9d8d7044-ffce-4ab4-9543-a2d2f9da31e3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: c74d9e86727f2deda62b8d1eb105b28ef4b6d184
+workflow-type: tm+mt
+source-wordcount: '1503'
+ht-degree: 0%
 
 ---
 
@@ -68,7 +71,7 @@ Rest Endpoint-verzendhandeling configureren
 >[!NOTE]
 Als u de velden als parameters in een REST-URL wilt doorgeven, moeten alle velden verschillende elementnamen hebben, zelfs als de velden op verschillende deelvensters zijn geplaatst.
 
-### Gegevens naar een bron of een extern eindpunt voor de rusttijd verzenden {#post-submitted-data-to-a-resource-or-external-rest-end-point-nbsp}
+### Gegevens naar een bron of een extern eindpunt voor de rusttijd verzenden  {#post-submitted-data-to-a-resource-or-external-rest-end-point-nbsp}
 
 Gebruik de actie **Verzenden naar REST Endpoint** om de verzonden gegevens naar een rest-URL te posten. De URL kan van een interne (de server waarop het formulier wordt gegenereerd) of van een externe server zijn.
 
@@ -107,7 +110,7 @@ Deze verzendactie is beschikbaar voor op XFA gebaseerde adaptieve formulieren en
 
 ## Een formulierwerkstroom aanroepen {#invoke-a-forms-workflow}
 
-Met de optie **Verzenden naar Forms-workflow** verzendt u een gegevens-xml en eventuele bestandsbijlagen naar een bestaand Adobe LiveCycle- of AEM-formulier voor JEE-proces.
+Met de optie **Verzenden naar Forms workflow** verzendt u een gegevens-xml en eventuele bestandsbijlagen naar een bestaande Adobe LiveCycle of AEM Forms tijdens het JEE-proces.
 
 Zie [Formuliergegevens verzenden en verwerken met behulp van formulierwerkstromen](../../forms/using/submit-form-data-livecycle-process.md)voor informatie over het configureren van de verzendactie Verzenden naar formulierwerkstroom.
 
@@ -117,11 +120,11 @@ Met de handeling **Verzenden met gebruik van het formuliergegevensmodel** schrij
 
 Daarnaast kunt u een formulierbijlage verzenden met behulp van een formuliergegevensmodel en een Document of Record (DoR) naar de gegevensbron.
 
-Voor informatie over het model van vormgegevens, zie de Integratie [van Gegevens van](../../forms/using/data-integration.md)Vormen AEM.
+Voor informatie over het model van vormgegevens, zie de Integratie [van Gegevens van](../../forms/using/data-integration.md)AEM Forms.
 
 ## Formulierportal Handeling verzenden {#forms-portal-submit-action}
 
-Met de optie Handeling **verzenden voor** Forms Portal worden formuliergegevens beschikbaar via een AEM Forms-portal.
+Met de optie Handeling **** Formulierportaal verzenden stelt u formuliergegevens beschikbaar via een portal AEM Forms.
 
 Zie [Concepten en verzendingen voor meer informatie over de Forms Portal en de verzendactie](../../forms/using/draft-submission-component.md).
 
@@ -133,7 +136,7 @@ Voordat u de handeling Een AEM-workflow **aanroepen gebruikt,** configureert u d
 
 ## Revalidatie op de server in adaptieve vorm {#server-side-revalidation-in-adaptive-form}
 
-Doorgaans plaatsen ontwikkelaars in elk onlinesysteem voor het vastleggen van gegevens enkele JavaScript-validaties aan de clientzijde om een aantal bedrijfsregels af te dwingen. Maar in moderne browsers, moeten de eindgebruikers die bevestigingen omzeilen en manueel bijdragen gebruikend diverse technieken, zoals Browser van het Web DevTools Console indienen. Dergelijke technieken zijn ook geldig voor adaptieve formulieren. Een formulierontwikkelaar kan verschillende validatielogboeken maken, maar technisch kunnen eindgebruikers die validatielogboeken omzeilen en ongeldige gegevens naar de server verzenden. Ongeldige gegevens zouden de bedrijfsregels overtreden die een auteur van formulieren heeft afgedwongen.
+In elk onlinesysteem voor gegevensvastlegging plaatsen ontwikkelaars doorgaans bepaalde JavaScript-validaties op de client om een aantal bedrijfsregels af te dwingen. Maar in moderne browsers, moeten de eindgebruikers die bevestigingen omzeilen en manueel bijdragen gebruikend diverse technieken, zoals Browser van het Web DevTools Console indienen. Dergelijke technieken zijn ook geldig voor adaptieve formulieren. Een formulierontwikkelaar kan verschillende validatielogboeken maken, maar technisch kunnen eindgebruikers die validatielogboeken omzeilen en ongeldige gegevens naar de server verzenden. Ongeldige gegevens zouden de bedrijfsregels overtreden die een auteur van formulieren heeft afgedwongen.
 
 Met de functie voor opnieuw valideren aan de serverzijde kunt u ook de validaties uitvoeren die door de auteur van een adaptief formulier zijn verstrekt tijdens het ontwerpen van een adaptief formulier op de server. Hierdoor wordt voorkomen dat bij het verzenden van gegevens en bij het valideren van formulieren inbreuk wordt gemaakt op de bedrijfsregels.
 
@@ -163,7 +166,7 @@ In het geval van **complexe validatieregels** bevindt het exacte validatiescript
 
 Aangepaste functies ondersteunen in validatie-expressies
 
-Auteurs kunnen aangepaste javascript-bibliotheek configureren per adaptief formulier. Houd in de bibliotheek alleen de herbruikbare functies die afhankelijk zijn van bibliotheken van derden jquery en underscore.js.
+Auteurs kunnen de aangepaste JavaScript-bibliotheek per adaptief formulier configureren. Houd in de bibliotheek alleen de herbruikbare functies die afhankelijk zijn van bibliotheken van derden jquery en underscore.js.
 
 ## Foutafhandeling bij verzendactie {#error-handling-on-submit-action}
 

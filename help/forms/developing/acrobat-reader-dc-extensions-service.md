@@ -9,7 +9,10 @@ content-type: reference
 topic-tags: develop
 discoiquuid: 31a9bfc6-462d-4535-888f-31026b8fa674
 translation-type: tm+mt
-source-git-commit: 21efe30c6a69d04c737bc523aeaab504db8f605b
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '282'
+ht-degree: 0%
 
 ---
 
@@ -24,18 +27,18 @@ De volgende snelstarthandleidingen zijn beschikbaar voor de Acrobat Reader DC Ex
 
 [Snel starten (SOAP-modus): Crediteringsgegevens ophalen met de Java API](acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-retrieving-credential-information-using-the-java-api)
 
-De verrichtingen van de Vormen van AEM kunnen worden uitgevoerd gebruikend sterk-getypte API van Vormen AEM en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
+De verrichtingen van AEM Forms kunnen worden uitgevoerd gebruikend AEM Forms sterk-getypte API en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
 
 >[!NOTE]
 >
->De snelle Beginnen die in Programmering met Vormen AEM wordt gevestigd zijn gebaseerd op het de serverwerkende systeem van Vormen. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Quick Start in Programming with AEM Forms is gebaseerd op het besturingssysteem Forms server. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Snel starten (SOAP-modus):gebruiksrechten toepassen met de Java API {#quick-start-soap-mode-applying-usage-rights-using-the-java-api}
 
-In het volgende Java-codevoorbeeld worden gebruiksrechten toegepast op een PDF-document met de naam *Loan.pdf*. Het PDF-document waarvoor rechten zijn ingeschakeld, wordt opgeslagen als een PDF-bestand met de naam *LoanUsageRights.pdf*. De volgende gebruiksrechten worden toegepast op dit PDF-document: `enabledComments`, `enabledFormFillIn`, en `enabledDigitalSignatures`. (Zie Gebruiksrechten [toepassen op PDF-documenten](/help/forms/developing/assigning-usage-rights.md).)
+In het volgende Java-codevoorbeeld worden gebruiksrechten toegepast op een PDF-document met de naam *Loan.pdf*. Het PDF-document waarvoor rechten zijn ingeschakeld, wordt opgeslagen als een PDF-bestand met de naam *LoanUsageRights.pdf*. De volgende gebruiksrechten worden toegepast op dit PDF-document: `enabledComments`, `enabledFormFillIn`en `enabledDigitalSignatures`. (Zie Gebruiksrechten [toepassen op PDF-documenten](/help/forms/developing/assigning-usage-rights.md).)
 
 
-```as3
+```java
  /* 
      * This Java Quick Start uses the SOAP mode and contains the following JAR files 
      * in the class path: 
@@ -147,7 +150,7 @@ In het volgende Java-codevoorbeeld worden gebruiksrechten toegepast op een PDF-d
 
 In het volgende Java-codevoorbeeld worden gebruiksrechten verwijderd uit een PDF-document waarvoor rechten zijn ingeschakeld met de naam *LoanUsageRights.pdf*. (Zie Gebruiksrechten [verwijderen uit PDF-documenten](/help/forms/developing/assigning-usage-rights.md).)
 
-```as3
+```java
  /* 
      * This Java Quick Start uses the SOAP mode and contains the following JAR files 
      * in the class path: 
@@ -247,7 +250,7 @@ In het volgende Java-codevoorbeeld worden gebruiksrechten verwijderd uit een PDF
 
 In het volgende Java-codevoorbeeld wordt informatie opgehaald over de referentie die wordt gebruikt om gebruiksrechten toe te passen op een PDF-document waarvoor rechten zijn ingeschakeld met de naam *LoanUsageRights.pdf*. (Zie [Referentiegegevens](/help/forms/developing/assigning-usage-rights.md)ophalen.)
 
-```as3
+```java
  /* 
      * This Java Quick Start uses the SOAP mode and contains the following JAR files 
      * in the class path: 

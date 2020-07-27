@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 07fffbd5-5430-4abc-b532-0840ecc7b1b0
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '793'
+ht-degree: 0%
 
 ---
 
@@ -37,17 +40,17 @@ Java API Quick Start (SOAP) is beschikbaar voor de service Handtekening:
 
 [Snel starten (SOAP-modus): Een digitale handtekening verwijderen met de Java API](signature-service-java-api-quick.md#quick-start-soap-mode-removing-a-digital-signature-using-the-java-api)
 
-De verrichtingen van de Vormen van AEM kunnen worden uitgevoerd gebruikend sterk-getypte API van Vormen AEM en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
+De verrichtingen van AEM Forms kunnen worden uitgevoerd gebruikend AEM Forms sterk-getypte API en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
 
 >[!NOTE]
 >
->Het snelle Begin dat in Programmering met Vormen wordt gevestigd AEM is gebaseerd op de Server die van Vormen op de Server van de Toepassing JBoss en het werkende systeem van Microsoft Windows wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Het snelle Begin dat in Programmering met AEM Forms wordt gevestigd is gebaseerd op de server die van Vormen op de Server van de Toepassing JBoss en het werkende systeem van Microsoft Windows wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Snel starten (SOAP-modus): Een handtekeningveld toevoegen aan een PDF-document met de Java API {#quick-start-soap-mode-adding-a-signature-field-to-a-pdf-document-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt een handtekeningveld met de naam *SignatureField1* toegevoegd aan een PDF-document dat is gebaseerd op een PDF-bestand met de *naam Loan.pdf*. Het PDF-document dat het nieuwe handtekeningveld bevat, wordt opgeslagen als een PDF-bestand met de naam *LoanSig.pdf*. (Zie [Handtekeningvelden](/help/forms/developing/digitally-signing-certifying-documents.md#adding-signature-fields)toevoegen.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -163,7 +166,7 @@ In het volgende Java-codevoorbeeld wordt een handtekeningveld met de naam *Signa
 
 In het volgende Java-codevoorbeeld worden de namen opgehaald van handtekeningvelden in een PDF-document met de naam *LoanSig.pdf*. (Zie Namen van handtekeningvelden [ophalen](/help/forms/developing/digitally-signing-certifying-documents.md#retrieving-signature-field-names).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -269,7 +272,7 @@ In het volgende Java-codevoorbeeld worden de namen opgehaald van handtekeningvel
 
 In het volgende Java-codevoorbeeld wordt een handtekeningveld met de naam SignatureField1 gewijzigd door alle velden in het formulier te vergrendelen wanneer een handtekening wordt toegepast op het handtekeningveld en ervoor te zorgen dat geen wijzigingen zijn toegestaan. Nadat de handtekeningservice het PDF-document heeft geretourneerd dat het gewijzigde handtekeningveld bevat, wordt het PDF-document opgeslagen als een PDF-bestand met de naam LoanSig.pdf. (In dit voorbeeld wordt het PDF-bestand overschreven dat is doorgegeven aan de service Handtekening.) (Zie Handtekeningvelden [wijzigen](/help/forms/developing/digitally-signing-certifying-documents.md#modifying-signature-fields).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -397,7 +400,7 @@ In het volgende Java-codevoorbeeld wordt een handtekeningveld met de naam Signat
 
 In het volgende Java-codevoorbeeld wordt een PDF-document dat is gebaseerd op een PDF-bestand met de naam *LoanSig.pdf*, digitaal ondertekend. De alias die voor de veiligheidsreferentie wordt gespecificeerd is veilig, en de herroepingscontrole wordt uitgevoerd. Omdat er geen CRL- of OCSP-serverinformatie is opgegeven, worden de servergegevens opgehaald uit het certificaat dat wordt gebruikt om het PDF-document digitaal te ondertekenen. Het ondertekende document wordt opgeslagen als een PDF-bestand met de naam *LoanSigned.pdf*. (Zie PDF-documenten [digitaal ondertekenen](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -546,7 +549,7 @@ In het volgende Java-codevoorbeeld wordt een PDF-document dat is gebaseerd op ee
 
 In het volgende Java-codevoorbeeld wordt een interactief formulier ondertekend dat wordt gegenereerd door de service Forms. De `com.adobe.idp.Document` instantie die door de dienst van Vormen is teruggekeerd wordt overgegaan tot de dienst van de Handtekening. Het ondertekende interactieve formulier wordt opgeslagen als een PDF-bestand met de naam *LoanXFASigned.pdf*.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -758,7 +761,7 @@ In het volgende Java-codevoorbeeld wordt een interactief formulier ondertekend d
 
 In het volgende Java-codevoorbeeld wordt een PDF-document gecertificeerd dat is gebaseerd op een PDF-bestand met de naam *LoanSig.pdf*. De alias die voor de beveiligingsreferentie is opgegeven, is beveiligd en er wordt geen controle op de intrekking uitgevoerd. Het gecertificeerde document wordt opgeslagen als een PDF-bestand met de naam *LoanCertified.pdf*. (Zie PDF-documenten [certificeren](/help/forms/developing/digitally-signing-certifying-documents.md#certifying-pdf-documents).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -907,7 +910,7 @@ In het volgende Java-codevoorbeeld wordt een PDF-document gecertificeerd dat is 
 
 In het volgende Java-codevoorbeeld wordt een digitale handtekening gecontroleerd die zich bevindt in een ondertekend PDF-document dat is gebaseerd op een PDF-bestand met de naam LoanSigned.pdf. De verificatietijd is ingesteld op de huidige tijd en de optie voor intrekkingscontrole is ingesteld op de beste inspanning. (Zie Digitale handtekeningen [verifiëren](#verifying-digital-signatures).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-signatures-client.jar
@@ -1071,7 +1074,7 @@ In het volgende Java-codevoorbeeld wordt een digitale handtekening gecontroleerd
 
 In het volgende Java-codevoorbeeld worden meerdere digitale handtekeningen gecontroleerd die zich bevinden in een ondertekend PDF-document dat is gebaseerd op een PDF-bestand met de naam LoanAllSigs.pdf. De verificatietijd is ingesteld op de huidige tijd en de optie voor intrekkingscontrole is ingesteld op de beste inspanning. (Zie Meerdere digitale handtekeningen [verifiëren](signature-service-java-api-quick.md#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -1233,7 +1236,7 @@ In het volgende Java-codevoorbeeld worden meerdere digitale handtekeningen gecon
 
 In het volgende Java-codevoorbeeld wordt een digitale handtekening verwijderd uit een handtekeningveld met de naam *SignatureField1*. De naam van het PDF-bestand dat het handtekeningveld bevat, is *LoanSigned.pdf*. (Zie Digitale handtekeningen [verwijderen](/help/forms/developing/digitally-signing-certifying-documents.md#removing-digital-signatures).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:

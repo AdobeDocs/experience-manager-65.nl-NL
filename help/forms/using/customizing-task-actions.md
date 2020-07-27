@@ -9,14 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: ca3f6025-7e17-4173-8267-e24a338ea4a1
 translation-type: tm+mt
-source-git-commit: 49da3dbe590f70b98185a6bc330db6077dc864c0
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '311'
+ht-degree: 0%
 
 ---
 
 
 # Taakhandelingen aanpassen {#customizing-task-actions}
 
-In de werkruimte van AEM-formulieren kunnen gebruikers de taakhandelingen aanpassen. Voordat u de taakhandelingen aanpast, moet u de stappen volgen die in de [algemene stappen worden weergegeven voor het aanpassen](/help/forms/using/generic-steps-html-workspace-customization.md)van de werkruimte van AEM Forms.
+In de werkruimte AEM Forms kunnen gebruikers de taakhandelingen aanpassen. Voordat u de taakhandelingen aanpast, moet u de stappen volgen die in de [algemene stappen worden weergegeven voor het aanpassen](/help/forms/using/generic-steps-html-workspace-customization.md)van de werkruimte van AEM Forms.
 
 ## Tekststijl aanpassen {#customizing-text-style}
 
@@ -135,11 +138,11 @@ Als u alleen afbeeldingen voor handelingen wilt weergeven, past u de afbeeldinge
 
 ### Taaklijsttaak, pop-upmenu {#task-list-task-action-nbsp-pop-up-menu}
 
-1. U hebt ontwikkelingspakket nodig om items van het pop-upmenu Taaktaak in de taaklijst van AEM Forms aan te passen. Voor gedetailleerde informatie over het creëren van ontwikkelingspakket, zie de code van de de werkruimte van de Vormen van [AEM.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
+1. U hebt ontwikkelingspakket nodig om items van het pop-upmenu Taaklijst in de werkruimte AEM Forms aan te passen. Zie [Werkruimtecode maken voor meer informatie over het maken van ontwikkelingspakket.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
 
 1. Kopieer /libs/ws/js/runtime/templates/task.html om het volgende codefragment te `/apps/ws/js/runtime/templates/task.html`vervangen:
 
-   ```
+   ```html
    // Orignal code
    <div class="taskActionsPopUp">
            <!--START_TASKACTIONS-->
@@ -174,7 +177,7 @@ Als u alleen afbeeldingen voor handelingen wilt weergeven, past u de afbeeldinge
        </div>
    ```
 
-   ```
+   ```html
    //New code
    
    <div class="taskActionsPopUp">
@@ -267,7 +270,7 @@ Voer de volgende stappen uit om het pop-upmenu Acties voor details aan te passen
 * Kopieer het bestand /libs/ws/js/runtime/templates/taskdetails.html naar de `/apps/ws/js/runtime/templates/` map:
 * Pictogramlabel inkapselen in de ankertag in plaats van tekst. Met de *nieuwe code* hieronder wordt bijvoorbeeld de pictogramtag ingekapseld in de ankertag:
 
-```
+```html
 // Original code
 <div class="taskActionsPopUp">
         <!--START_ACTIONBUTTONGROUP-->
@@ -310,7 +313,7 @@ Voer de volgende stappen uit om het pop-upmenu Acties voor details aan te passen
     </div>
 ```
 
-```
+```html
 //New code
 
 <div class="taskActionsPopUp">

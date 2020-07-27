@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1f15f028-aa81-478e-97eb-f83a4dc0418c
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '3246'
+ht-degree: 0%
 
 ---
 
@@ -240,7 +243,7 @@ Voor het maken van een VLV is een paar items nodig die de `vlvSearch` - en `vlvI
 
 Hier volgt een voorbeeldscript voor LDIF voor VLV-invoer voor gebruikers:
 
-```as3
+```text
  dn: cn=lcuser,cn=userRoot,cn=ldbm database,cn=plugins,cn=config
  objectclass: top
  objectclass: vlvSearch
@@ -290,11 +293,11 @@ Nadat u de directoryinstellingen hebt geconfigureerd en de LDAP VLV-items voor g
 1. Na het creëren van objecten ingangen, stop Zon ONE Server.
 1. Met het gereedschap Vlvindex genereert u de index door de volgende tekst te typen:
 
-   *directoryserverinstantie*`\vlvindex.bat -n userRoot -T lcuser`
+   *directoryserverinstantie* `\vlvindex.bat -n userRoot -T lcuser`
 
    De volgende uitvoer wordt gegenereerd:
 
-   ```as3
+   ```shell
     D:\tools\ldap\sun\shared\bin>..\..\slapd-chetanmeh-xp3\vlvindex.bat -n userRoot -T livecycle
     [21/Nov/2007:16:47:26 +051800] - userRoot: Indexing VLV: livecycle
     [21/Nov/2007:16:47:27 +051800] - userRoot: Indexed 1000 entries (5%).
@@ -309,11 +312,11 @@ Nadat u de directoryinstellingen hebt geconfigureerd en de LDAP VLV-items voor g
 
 1. Als VLV ook voor groepen wordt toegelaten, creeer de overeenkomstige index voor de groepen. Verifieer of de indexen door het volgende bevel in werking te stellen worden gecreeerd:
 
-   *sun one server directory* `\shared\bin>ldapsearch -h`*hostname *`-p`*port no*`-s base -b "" objectclass=*`
+   *sun one server directory* `\shared\bin>ldapsearch -h`*hostname *`-p`*port no* `-s base -b "" objectclass=*`
 
    Uitvoer zoals de volgende voorbeeldgegevens wordt gegenereerd:
 
-   ```as3
+   ```shell
     D:\tools\ldap\sun\shared\bin>ldapsearch.exe -h localhost -p 55850 -s base -b "" objectclass=*
     ldapsearch.exe: started Tue Nov 27 16:34:20 2007
     version: 1

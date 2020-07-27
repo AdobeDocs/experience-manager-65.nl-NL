@@ -10,7 +10,10 @@ content-strategy: max-2018
 discoiquuid: 770e9174-b648-462a-abe9-05fefa967d86
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: bd70508b361ac8b62ebc0344538a18369a075f3e
+workflow-type: tm+mt
+source-wordcount: '6067'
+ht-degree: 0%
 
 ---
 
@@ -30,13 +33,13 @@ U kunt:
 
 ## Een thema maken, downloaden of uploaden {#creating-downloading-or-uploading-a-theme}
 
-Met AEM Forms kunt u thema&#39;s maken, downloaden of uploaden. Net als andere elementen, zoals formulieren, documenten en letters, wordt een thema gemaakt. Het thema wordt opgeslagen als een afzonderlijke entiteit, compleet met meta-eigenschappen zoals formulieren. Thema&#39;s die een afzonderlijke entiteit zijn, maken hergebruik in meerdere adaptieve vormen en interactieve communicatie mogelijk. U kunt een thema ook naar een ander exemplaar van AEM Forms verplaatsen en het opnieuw gebruiken.
+Met AEM Forms kunt u thema&#39;s maken, downloaden of uploaden. Net als andere elementen, zoals formulieren, documenten en letters, wordt een thema gemaakt. Het thema wordt opgeslagen als een afzonderlijke entiteit, compleet met meta-eigenschappen zoals formulieren. Thema&#39;s die een afzonderlijke entiteit zijn, maken hergebruik in meerdere adaptieve vormen en interactieve communicatie mogelijk. U kunt een thema ook naar een andere instantie van AEM Forms verplaatsen en opnieuw gebruiken.
 
 ### Een thema maken {#creating-a-theme}
 
 Voer de volgende stappen uit om een thema te maken:
 
-1. Klik op **Adobe Experience Manager**, klik op **Formulieren** en klik vervolgens op **Thema**&#39;s.
+1. Klik op **Adobe Experience Manager**, klik op **Formulieren** en klik vervolgens op **Thema&#39;s**.
 
 1. Klik op de pagina Thema&#39;s op **Maken > Thema**.
 Er wordt een wizard gestart om een thema te maken.
@@ -55,7 +58,7 @@ Er wordt een wizard gestart om een thema te maken.
 
 U kunt thema&#39;s exporteren als ZIP-bestand en deze gebruiken in andere projecten of AEM-instanties. Een thema downloaden:
 
-1. Klik op **Adobe Experience Manager**, klik op **Formulieren** en klik vervolgens op **Thema**&#39;s.
+1. Klik op **Adobe Experience Manager**, klik op **Formulieren** en klik vervolgens op **Thema&#39;s**.
 
 1. Selecteer **een thema op de pagina Thema&#39;s en klik op** Downloaden ****. Er wordt een dialoogvenster weergegeven met de details van het thema.
 
@@ -71,7 +74,7 @@ U kunt gemaakte thema&#39;s gebruiken met voorinstellingen voor stijlen voor uw 
 
 Een thema uploaden:
 
-1. Klik op **Adobe Experience Manager**, klik op **Formulieren** en klik vervolgens op **Thema**&#39;s.
+1. Klik op **Adobe Experience Manager**, klik op **Formulieren** en klik vervolgens op **Thema&#39;s**.
 
 1. Klik op de pagina Thema&#39;s op **Maken > Bestand uploaden**.
 1. Blader in de vraag Bestand uploaden naar en selecteer een themapakket op uw computer en klik op **Uploaden**.
@@ -192,7 +195,7 @@ Lijst met meta-eigenschappen van een thema (bevindt zich op de pagina met eigens
 
 ## Over de Thema-editor {#about-the-theme-editor}
 
-AEM Forms wordt geleverd met Thema Editor. Het is een handige interface voor zakelijke gebruikers en webontwerpers/ontwikkelaars die functies biedt die vereist zijn om de opmaak van verschillende adaptieve formulieren en interactieve communicatie-elementen eenvoudig op te geven. Wanneer u een thema maakt, wordt het opgeslagen als een afzonderlijke entiteit, zoals formulieren, interactieve communicatie, letters, documentfragmenten en gegevenswoordenboeken.
+AEM Forms worden geleverd bij de Thema-editor. Het is een handige interface voor zakelijke gebruikers en webontwerpers/ontwikkelaars die functies biedt die vereist zijn om de opmaak van verschillende adaptieve formulieren en interactieve communicatie-elementen eenvoudig op te geven. Wanneer u een thema maakt, wordt het opgeslagen als een afzonderlijke entiteit, zoals formulieren, interactieve communicatie, letters, documentfragmenten en gegevenswoordenboeken.
 
 In de Thema-editor kunt u stijlen van de componenten die in een thema zijn opgemaakt, aanpassen. U kunt de weergave van een formulier of interactieve communicatie op een apparaat aanpassen.
 
@@ -221,9 +224,9 @@ Een specifieke component is van invloed op objecten van de specifieke categorie.
    * **Geavanceerd:** Hiermee kunt u aangepaste CSS aan een object toevoegen, die de eigenschappen overschrijft die door visuele besturingselementen worden gedefinieerd als er sprake is van overlapping.
 
    * **CSS** weergeven: Hiermee kunt u CSS van de geselecteerde component weergeven
-   In de zijbalk onder in het scherm staat bovendien een pijl. Als u op de pijl klikt, hebt u nog twee opties: Fout bij **simuleren** en **simuleren.** Deze opties worden samen met de hierboven beschreven opties [hieronder](../../forms/using/themes.md#using-rail)uitgebreid besproken.
+   In de zijbalk onder in het scherm staat bovendien een pijl. Als u op de pijl klikt, hebt u nog twee opties: **Simuleer Succes** en **Simuleer Fout.** Deze opties worden samen met de hierboven beschreven opties [hieronder](../../forms/using/themes.md#using-rail)uitgebreid besproken.
 
-[ De redacteur van het ![thema met de spoorstaaf en Canvas benadrukte.](assets/themes.png)](assets/themes-1.png) **A.** Zijbalk **B.** Canvas
+[ ![Thema-editor met Rail en Canvas gemarkeerd.](assets/themes.png)](assets/themes-1.png) **A.** Zijbalk **B.** Canvas
 
 ### Stijlcomponenten {#styling-components}
 
@@ -296,7 +299,7 @@ Met de plusknop in de elementenbibliotheek kunt u de stijl permanent opslaan met
 
 Wanneer u een aangepaste naam voor een stijl opgeeft, is de stijl gekoppeld aan een thema en is deze niet meer beschikbaar voor andere thema&#39;s. Een opgeslagen stijl verwijderen:
 
-1. Klik op de CANVAS-werkbalk op **Thema-opties** ![](assets/theme-options.png) > Stijlen **** beheren.
+1. Klik op de CANVAS-werkbalk op **Themaopties** ![bij themaopties](assets/theme-options.png) > Stijlen **** beheren.
 1. Selecteer een opgeslagen stijl in het dialoogvenster Stijlen beheren en klik op **Verwijderen**.
 
    ![De opgeslagen stijl verwijderen](assets/manage-styles.png)
@@ -490,8 +493,8 @@ U kunt nu lettertypen gebruiken die beschikbaar zijn in een webservice in een ad
 
 Voer de volgende stappen uit om Typekit in AEM te configureren:
 
-1. Klik in de auteurinstantie op ![](assets/adobeexperiencemanager.png)adobeexperienceManagerAdobe Experience Manager > Tools ![hammer](assets/hammer.png) > Deployment > Cloud Services.
-1. Ga op de pagina **Cloud Services** naar **Services** van derden > **Typekit** en klik op Nu **** configureren onder Typekit. Als er al een configuratie beschikbaar is, klikt u op de knop **+** om een nieuwe instantie te maken.
+1. Klik in de auteur op ![](assets/adobeexperiencemanager.png)adobeexperienceManager Adobe Experience Manager > Tools ![hammer](assets/hammer.png) > Deployment > Cloud Servicen.
+1. Navigeer op de pagina **Cloud Servicen** naar **services** van derden > **Typekit** en klik op Nu **** configureren onder Typekit. Als er al een configuratie beschikbaar is, klikt u op de knop **+** om een nieuwe instantie te maken.
 1. Geef in het dialoogvenster Configuratie **** maken een titel op voor de configuratie en klik op **Maken**.
 
    U wordt opnieuw gericht aan de configuratiepagina.
@@ -641,6 +644,7 @@ De gegenereerde CSS kunt u met de volgende opties zien:
       1. Klik op **Geavanceerd** op de pagina Eigenschappen die wordt geopend.
       1. Blader op het tabblad Geavanceerd in het veld Clientlib-locatie naar de clientbibliotheek die u wilt gebruiken en selecteer deze.
       1. Click **Save**.
+
       De stijl die u opgeeft in de clientbibliotheek, wordt geïmporteerd in het thema dat deze stijl gebruikt. U geeft bijvoorbeeld de opmaak op voor tekstvak, numeriek vak en schakel over in de clientbibliotheek. Wanneer u de clientbibliotheek in het thema importeert, wordt de stijl voor het tekstvak, het numerieke vak en de switch geïmporteerd. Vervolgens kunt u andere componenten opmaken met de themaeditor.
 U kunt ook een thema maken, er kopieën van maken en vervolgens de opmaak wijzigen die in de gekopieerde thema&#39;s wordt geboden voor vergelijkbare gebruiksdoeleinden.
 Zie Specifieke weergave [ophalen met thema&#39;s](#specific-af-appearance)

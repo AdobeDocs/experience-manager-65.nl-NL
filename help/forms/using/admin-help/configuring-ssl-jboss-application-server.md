@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c187daa4-41b7-47dc-9669-d7120850cafd
 translation-type: tm+mt
-source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 0%
@@ -94,7 +94,7 @@ In deze procedure:
 1. 
    * **Voor één server,** in het lc_&lt;dbaname/tunkey>.xml- dossier, voeg het volgende na &lt;security-realms> sectie toe:
 
-   ```as3
+   ```xml
    <security-realm name="SSLRealm">
    <server-identities>
    <ssl>
@@ -110,13 +110,13 @@ In deze procedure:
 
    Voeg het volgende toe aan de aanwezige &lt;server>-sectie na bovenstaande code:
 
-   ```
+   ```xml
    <https-listener name="default-secure" socket-binding="https" security-realm="SSLRealm"/>
    ```
 
    * **Voor servercluster,** in de [toepassingswortel]\domain\configuration\host.xml op alle knopen, voeg het volgende na &lt;security-realms> sectie toe:
 
-   ```as3
+   ```xml
    <security-realm name="SSLRealm">
    <server-identities>
    <ssl>
@@ -132,7 +132,7 @@ In deze procedure:
 
    Voeg het volgende toe aan de aanwezige &lt;server>-sectie na bovenstaande code:
 
-   ```
+   ```xml
    <https-listener name="default-secure" socket-binding="https" security-realm="SSLRealm"/>
    ```
 

@@ -1,6 +1,6 @@
 ---
-title: Interactieve PDF-formulieren renderen
-seo-title: Interactieve PDF-formulieren renderen
+title: Interactieve PDF forms renderen
+seo-title: Interactieve PDF forms renderen
 description: 'null'
 seo-description: 'null'
 uuid: df2a4dc8-f19e-49de-850f-85a204102631
@@ -11,14 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 3cb307ec-9b7b-4f03-b860-48553ccee746
 translation-type: tm+mt
-source-git-commit: 7cbe3e94eddb81925072f68388649befbb027e6d
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '2442'
+ht-degree: 0%
 
 ---
 
 
-# Interactieve PDF-formulieren renderen {#rendering-interactive-pdf-forms}
+# Interactieve PDF forms renderen {#rendering-interactive-pdf-forms}
 
-Met de Forms-service worden interactieve PDF-formulieren weergegeven op clientapparaten, meestal webbrowsers, om informatie van gebruikers te verzamelen. Nadat een interactief formulier is gegenereerd, kan een gebruiker gegevens invoeren in formuliervelden en op een verzendknop op het formulier klikken om informatie terug te sturen naar de service Forms. Een interactief PDF-formulier is alleen zichtbaar als Adobe Reader of Acrobat is geïnstalleerd op de computer die als host fungeert voor de webbrowser van de client.
+De service Forms geeft interactieve PDF forms weer naar clientapparaten, meestal webbrowsers, om informatie van gebruikers te verzamelen. Nadat een interactief formulier is gegenereerd, kan een gebruiker gegevens invoeren in formuliervelden en op een verzendknop op het formulier klikken om informatie terug te sturen naar de service Forms. Een interactief PDF-formulier is alleen zichtbaar als Adobe Reader of Acrobat is geïnstalleerd op de computer die als host fungeert voor de webbrowser van de client.
 
 >[!NOTE]
 >
@@ -83,7 +86,7 @@ De voorbeeldtoepassing voor leningen is een voorbeeld van een Forms-servicetoepa
 
 De volgende code toont de syntaxis van een Java-server met de naam GetLoanForm:
 
-```as3
+```java
      public class GetLoanForm extends HttpServlet implements Servlet {
          public void doGet(HttpServletRequest req, HttpServletResponse resp
          throws ServletException, IOException {
@@ -99,7 +102,7 @@ Normaal gesproken plaatst u geen API-code van Forms Service Client binnen een Ja
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van Vormen, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Voor meer informatie over de dienst van Vormen, zie de Verwijzing van de [Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 **Overzicht van de stappen**
 
@@ -202,6 +205,7 @@ Een interactief PDF-formulier renderen met de API voor formulieren (Java):
 
       * Een tekenreekswaarde die de naam van de bestandsbijlage opgeeft, inclusief de bestandsnaamextensie.
    * Een `com.adobe.idp.Document` object dat de bestandsbijlage bevat.
+
    >[!NOTE]
    >
    >Herhaal deze stap voor elk bestand dat u aan het formulier wilt koppelen. Deze stap is optioneel en u kunt doorgeven `null` als u geen bestandsbijlagen wilt verzenden.
@@ -215,6 +219,7 @@ Een interactief PDF-formulier renderen met de API voor formulieren (Java):
    * Een `PDFFormRenderSpec` object dat uitvoeringsopties opslaat. Dit is een optionele parameter en u kunt opgeven `null` of u geen runtime-opties wilt opgeven.
    * Een `URLSpec` object dat URI-waarden bevat die door de service Forms worden vereist.
    * Een `java.util.HashMap` object dat bestandsbijlagen opslaat. Dit is een optionele parameter en u kunt opgeven `null` of u geen bestanden aan het formulier wilt koppelen.
+
    De `renderPDFForm` methode retourneert een `FormsResult` object dat een formuliergegevensstroom bevat die naar de webbrowser van de client moet worden geschreven.
 
 1. De formuliergegevensstroom naar de webbrowser van de client schrijven
@@ -254,6 +259,7 @@ Een interactief PDF-formulier renderen met de Forms API (webservice):
 
       * Een tekenreekswaarde die de naam van de bestandsbijlage opgeeft, inclusief de bestandsextensie
    * Een `BLOB` object dat de bestandsbijlage bevat
+
    >[!NOTE]
    >
    >Herhaal deze stap voor elk bestand dat u aan het formulier wilt koppelen.
@@ -271,6 +277,7 @@ Een interactief PDF-formulier renderen met de Forms API (webservice):
    * Een leeg `javax.xml.rpc.holders.LongHolder` object dat door de methode wordt gevuld. (In dit argument wordt het aantal pagina&#39;s in het formulier opgeslagen.)
    * Een leeg `javax.xml.rpc.holders.StringHolder` object dat door de methode wordt gevuld. (In dit argument wordt de waarde van de landinstelling opgeslagen.)
    * Een leeg `com.adobe.idp.services.holders.FormsResultHolder` object dat de resultaten van deze bewerking zal bevatten.
+
    De `renderPDFForm` methode vult het `com.adobe.idp.services.holders.FormsResultHolder` object dat als laatste argumentwaarde wordt doorgegeven, met een formuliergegevensstroom die naar de webbrowser van de client moet worden geschreven.
 
 1. De formuliergegevensstroom naar de webbrowser van de client schrijven

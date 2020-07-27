@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e80c3f98-baa1-45bc-b713-51a2eb5ec165
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '599'
+ht-degree: 0%
 
 ---
 
@@ -27,11 +30,11 @@ Zo werkt traditionele verificatie:
 1. De verificatieprovider valideert de referenties.
 1. De authentificatieleverancier controleert dan of de gebruiker in het gegevensbestand van het Beheer van de Gebruiker bestaat. De volgende resultaten zijn mogelijk:
 
-   **** Bestaat: Als de gebruiker huidig en ontgrendeld is, keert het Beheer van de Gebruiker authentificatie succes terug. Als de gebruiker echter niet actief is of is vergrendeld, retourneert het Gebruikersbeheer een verificatiefout.
+   **Bestaat:** Als de gebruiker huidig en ontgrendeld is, keert het Beheer van de Gebruiker authentificatie succes terug. Als de gebruiker echter niet actief is of is vergrendeld, retourneert het Gebruikersbeheer een verificatiefout.
 
-   **** Bestaat niet: Gebruikersbeheer retourneert een verificatiefout.
+   **Bestaat niet:** Gebruikersbeheer retourneert een verificatiefout.
 
-   **** Ongeldig: Gebruikersbeheer retourneert een verificatiefout.
+   **Ongeldig:** Gebruikersbeheer retourneert een verificatiefout.
 
 1. Het resultaat dat door de authentificatieleverancier is teruggekeerd wordt geëvalueerd. Als de verificatieprovider het succes van de verificatie heeft geretourneerd, mag de gebruiker zich aanmelden. Anders, controleert het Beheer van de Gebruiker met de volgende authentificatieleverancier (stappen 2-3).
 1. Verificatiefout wordt geretourneerd als geen enkele verificatieprovider de gebruikersgegevens valideert.
@@ -44,7 +47,7 @@ Wanneer just-in-time levering wordt uitgevoerd, wordt een nieuwe gebruiker dynam
 
 AEM-formulieren bieden de volgende API&#39;s voor just-in-time provisioning:
 
-```as3
+```java
 package com.adobe.idp.um.spi.authentication  ;
 publ ic interface IdentityCreator {
 /**

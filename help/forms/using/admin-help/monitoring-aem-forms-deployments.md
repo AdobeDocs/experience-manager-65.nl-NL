@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b3e7bca0-5aaf-4f28-bddb-fd7e8ed72ee8
 translation-type: tm+mt
-source-git-commit: 215ba1cb3e98954418b844849c812c9ba6cf572b
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '634'
+ht-degree: 0%
 
 ---
 
@@ -25,14 +28,14 @@ Voor meer informatie over het controleren van AEM vormplaatsingen, zie [Een tech
 
 AEM-formulieren bieden twee geregistreerde MB&#39;s die navigatie- en statistische informatie bieden. Dit zijn de enige MBeans die voor integratie en inspectie worden gesteund:
 
-* **** ServiceStatistic: Dit MBean verstrekt informatie over de naam van de Dienst en zijn versie.
-* **** OperationStatistic: Dit MBean verstrekt de statistiek van de dienst van elke vormserver. Dit is waar de beheerders informatie over een bepaalde dienst zoals oproepingstijd, aantal fouten, etc. kunnen krijgen.
+* **ServiceStatistic:** Dit MBean verstrekt informatie over de naam van de Dienst en zijn versie.
+* **OperationStatistic:** Dit MBean verstrekt de statistiek van de dienst van elke vormserver. Dit is waar de beheerders informatie over een bepaalde dienst zoals oproepingstijd, aantal fouten, etc. kunnen krijgen.
 
 ### ServiceStatisticMbean, openbare interfaces {#servicestatisticmbean-public-interfaces}
 
 Deze openbare interfaces van ServiceStatistic MBean kunnen voor testdoeleinden worden betreden:
 
-```as3
+```java
  public String getServiceId();
  public int getMajorVersion();
  public int getMinorVersion();
@@ -42,7 +45,7 @@ Deze openbare interfaces van ServiceStatistic MBean kunnen voor testdoeleinden w
 
 Deze openbare interfaces van OperationStatistic MBean kunnen voor testdoeleinden worden betreden:
 
-```as3
+```java
  // InvocationCount: The number of times the method is invoked.
  public long getInvocationCount();
  // InvocationStartTime: The time at which the method started to execute.
@@ -72,33 +75,33 @@ Met behulp van een JMX-console (JConsole) zijn statistieken van OperationStatist
 
 **MBean tree**
 
-**** Naam Adobe-domein: Afhankelijk van de toepassingsserver. Als het domein niet wordt gedefinieerd door de toepassingsserver, wordt standaard adobe.com gebruikt.
+**Naam Adobe-domein:** Afhankelijk van de toepassingsserver. Als het domein niet wordt gedefinieerd door de toepassingsserver, wordt standaard adobe.com gebruikt.
 
-**** ServiceType: AdobeService is de naam die wordt gebruikt om alle services weer te geven.
+**ServiceType:** AdobeService is de naam die wordt gebruikt om alle services weer te geven.
 
-**** AdobeServiceName: Servicenaam of Service-id.
+**AdobeServiceName:** Servicenaam of Service-id.
 
-**** Versie: Versie van de service.
+**Versie:** Versie van de service.
 
 **Bewerkingsstatistieken**
 
-**** Aanroepingstijd: Tijd die nodig is om de methode uit te voeren. Dit omvat niet de tijd het verzoek in series wordt vervaardigd, van cliënt aan server wordt overgebracht, en deserialized.
+**Aanroepingstijd:** Tijd die nodig is om de methode uit te voeren. Dit omvat niet de tijd het verzoek in series wordt vervaardigd, van cliënt aan server wordt overgebracht, en deserialized.
 
-**** Aantal aanroepen: Het aantal tijden de dienst wordt aangehaald.
+**Aantal aanroepen:** Het aantal tijden de dienst wordt aangehaald.
 
-**** Gemiddelde aanroepingstijd: Gemiddelde tijd van alle aanroepen die zijn uitgevoerd sinds de server is gestart.
+**Gemiddelde aanroepingstijd:** Gemiddelde tijd van alle aanroepen die zijn uitgevoerd sinds de server is gestart.
 
-**** Maximale aanroepingstijd: De duur van de langste aanroep die is uitgevoerd sinds de server is gestart.
+**Maximale aanroepingstijd:** De duur van de langste aanroep die is uitgevoerd sinds de server is gestart.
 
-**** Minimale aanroepingstijd: De duur van de kortste aanroep die is uitgevoerd sinds de server is gestart.
+**Minimale aanroepingstijd:** De duur van de kortste aanroep die is uitgevoerd sinds de server is gestart.
 
-**** Aantal uitzonderingen: Aantal oproepen die tot mislukkingen hebben geleid.
+**Aantal uitzonderingen:** Aantal oproepen die tot mislukkingen hebben geleid.
 
-**** Uitzonderingsbericht: Het foutbericht van de laatste uitzondering die is opgetreden.
+**Uitzonderingsbericht:** Het foutbericht van de laatste uitzondering die is opgetreden.
 
-**** Datum laatste monsterneming: De datum van de laatste aanroeping.
+**Datum laatste monsterneming:** De datum van de laatste aanroeping.
 
-**** Tijdeenheid: De standaardwaarde is millisecond.
+**Tijdeenheid:** De standaardwaarde is millisecond.
 
 Voor JMX-bewaking hebben de toepassingsservers doorgaans een bepaalde configuratie nodig. Raadpleeg de documentatie bij de toepassingsserver voor meer informatie.
 
@@ -111,7 +114,7 @@ Om MBans van JConsole te bekijken, vorm de JBoss startparameters van de JVM van 
 1. Bewerk het bestand run.bat onder InstallJBoss/bin.
 1. Zoek de lijn JAVA_OPTS en voeg het volgende toe:
 
-   ```as3
+   ```shell
     -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=9088 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false
    ```
 
@@ -120,7 +123,7 @@ Om MBans van JConsole te bekijken, vorm de JBoss startparameters van de JVM van 
 1. Bewerk het startWebLogic.bat-bestand onder `[WebLogic home]/user_projects/domains/Adobe_Live_Cycle/bin`.
 1. Zoek de lijn JAVA_OPTS en voeg het volgende toe:
 
-   ```as3
+   ```shell
     -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=9088 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false
    ```
 
@@ -139,13 +142,13 @@ Om MBans van JConsole te bekijken, vorm de JBoss startparameters van de JVM van 
 
 1. Voeg op de beheerconsole (Application Server > server1 > Process Definition > JVM) de volgende regel toe aan het veld voor Generic JVM-argument:
 
-   ```as3
+   ```shell
     -Djavax.management.builder.initial= -Dcom.sun.management.jmxremote
    ```
 
 1. Voeg de volgende drie regels toe aan het bestand /opt/IBM/WebSphere/AppServer/java/jre/lib/management/management.properties (of &lt;Your Websphere JRE>/ lib/management/management.properties) of verwijder de commentaarmarkering:
 
-   ```as3
+   ```shell
     com.sun.management.jmxremote.port=9999 //any port you like, but make sure you use this port when you connect
     com.sun.management.jmxremote.authenticate=false
     com.sun.management.jmxremote.ssl=false

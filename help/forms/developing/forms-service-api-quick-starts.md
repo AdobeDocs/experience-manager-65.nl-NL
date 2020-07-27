@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 9fe48243-24c6-4e08-9886-148cd99dec87
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1546'
+ht-degree: 0%
 
 ---
 
@@ -31,9 +34,9 @@ De volgende snelstarthandleidingen zijn beschikbaar voor de service Forms:
 
 [Snel starten (SOAP-modus): Een HTML-formulier weergeven met een aangepaste werkbalk met de Java API](forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-with-a-custom-toolbar-using-the-java-api)
 
-[Snel starten (SOAP-modus): PDF-formulieren die zijn verzonden als XML, verwerken met de Java API](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api)
+[Snel starten (SOAP-modus): PDF forms die als XML zijn verzonden, afhandelen met de Java API](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api)
 
-[Snel starten (SOAP-modus): PDF-formulieren die zijn verzonden als PDF, verwerken met de Java API](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api)
+[Snel starten (SOAP-modus): PDF forms die als PDF zijn verzonden, verwerken met de Java API](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api)
 
 [Snel starten (SOAP-modus): HTML-formulieren verwerken die zijn verzonden als XML met de Java API](forms-service-api-quick-starts.md#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api)
 
@@ -49,7 +52,7 @@ De volgende snelstarthandleidingen zijn beschikbaar voor de service Forms:
 
 [Snel starten (SOAP-modus): Documenten doorgeven aan de Forms Service met de Java API](forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api)
 
-Toepassingslogica die de service-API van Forms gebruikt, wordt geïmplementeerd als Java-servlets. De verrichtingen van de Vormen van AEM kunnen worden uitgevoerd gebruikend sterk-getypte API van Vormen AEM en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
+Toepassingslogica die de service-API van Forms gebruikt, wordt geïmplementeerd als Java-servlets. De verrichtingen van AEM Forms kunnen worden uitgevoerd gebruikend AEM Forms sterk-getypte API en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
 
 >[!NOTE]
 >
@@ -59,9 +62,9 @@ Toepassingslogica die de service-API van Forms gebruikt, wordt geïmplementeerd 
 
 ## Snel starten (SOAP-modus): Een interactief PDF-formulier weergeven met de Java API {#quick-start-soap-mode-rendering-an-interactive-pdf-form-using-the-java-api}
 
-In het volgende codevoorbeeld wordt een interactief PDF-formulier met de naam *Loan.xdp* weergegeven in een clientwebbrowser. Een bestand wordt aan het formulier gekoppeld. U ziet dat het formulierontwerp deel uitmaakt van een toepassing en dat hiernaar wordt verwezen door de URI-waarde van de inhoudsbasis te gebruiken `repository:///`. (Zie Interactieve PDF-formulieren [renderen](/help/forms/developing/rendering-forms.md#rendering-interactive-pdf-forms).)
+In het volgende codevoorbeeld wordt een interactief PDF-formulier met de naam *Loan.xdp* weergegeven in een clientwebbrowser. Een bestand wordt aan het formulier gekoppeld. U ziet dat het formulierontwerp deel uitmaakt van een toepassing en dat hiernaar wordt verwezen door de URI-waarde van de inhoudsbasis te gebruiken `repository:///`. (Zie Interactieve PDF forms [renderen](/help/forms/developing/rendering-forms.md#rendering-interactive-pdf-forms).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -203,7 +206,7 @@ In het volgende codevoorbeeld wordt een interactief PDF-formulier met de naam *L
 
 In het volgende codevoorbeeld wordt een formulier met de naam *Loan.xdp* op de client gegenereerd met de Java API van de Forms-service. U ziet dat het formulierontwerp deel uitmaakt van een toepassing en dat hiernaar wordt verwezen door de URI-waarde van de inhoudsbasis te gebruiken `repository:///`. (Zie Formulieren [renderen op de client](/help/forms/developing/rendering-forms.md#rendering-forms-at-the-client).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -336,7 +339,7 @@ In het volgende codevoorbeeld wordt een formulier met de naam *Loan.xdp* op de c
 
 In het volgende codevoorbeeld wordt een hulplijn (afgekeurd) met de naam *TLALifeClaim.xdp* gerenderd naar een webbrowser van de client.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -470,9 +473,9 @@ In het volgende codevoorbeeld wordt een hulplijn (afgekeurd) met de naam *TLALif
 
 ## Snel starten (SOAP-modus): Een formulier weergeven op basis van fragmenten met de Java API {#quick-start-soap-mode-rendering-a-form-based-on-fragments-using-the-java-api}
 
-In het volgende codevoorbeeld wordt een formulier weergegeven dat is gebaseerd op fragmenten. De naam van het formulierontwerp is *PurchaseOrderDynamic.xdp* en bevindt zich in de opslagplaats voor AEM-formulieren (het XDP-bestand wordt opgeslagen in een map met de naam FormsFolder in de opslagplaats). Ook de fragmenten die de POFragment-formulierverwijzingen moeten vinden, moeten zich in de opslagplaats bevinden. (Zie Formulieren [renderen op basis van fragmenten](/help/forms/developing/rendering-forms.md#rendering-forms-based-on-fragments).)
+In het volgende codevoorbeeld wordt een formulier weergegeven dat is gebaseerd op fragmenten. De naam van het formulierontwerp is *PurchaseOrderDynamic.xdp* en bevindt zich in de gegevensopslagruimte AEM Forms (het XDP-bestand wordt opgeslagen in een map met de naam FormsFolder in de gegevensopslagruimte). Ook de fragmenten die de POFragment-formulierverwijzingen moeten vinden, moeten zich in de opslagplaats bevinden. (Zie Formulieren [renderen op basis van fragmenten](/help/forms/developing/rendering-forms.md#rendering-forms-based-on-fragments).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -605,7 +608,7 @@ In het volgende codevoorbeeld wordt een formulier weergegeven dat is gebaseerd o
 
 In het volgende codevoorbeeld wordt een formulier waarvoor rechten zijn ingeschakeld, weergegeven in een clientwebbrowser. Met de gebruiksrechten die in dit codevoorbeeld zijn ingesteld, kan een gebruiker opmerkingen toevoegen aan het formulier en formuliergegevens opslaan. (Zie Formulieren [die zijn geschikt voor rechten](/help/forms/developing/rendering-forms.md#rendering-rights-enabled-forms)renderen.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -742,7 +745,7 @@ In het volgende codevoorbeeld wordt een formulier waarvoor rechten zijn ingescha
 
 In het volgende codevoorbeeld wordt een HTML-formulier weergegeven met de Java API van de Forms-service. Er wordt een werkbalk toegevoegd aan het HTML-formulier en aan twee bestandsbijlagen. Bovendien wordt de waarde van de gebruikersagent opgehaald uit het `HttpServletRequest` object. (Zie Formulieren [weergeven als HTML](/help/forms/developing/rendering-forms.md#rendering-forms-as-html).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -903,7 +906,7 @@ In het volgende codevoorbeeld wordt een HTML-formulier weergegeven met de Java A
 
 In het volgende codevoorbeeld wordt een HTML-formulier gerenderd met de Forms service Client API. De naam van het aangepaste CSS-bestand waarnaar wordt verwezen, is *custom.css*. (Zie HTML-formulieren [renderen met aangepaste CSS-bestanden](/help/forms/developing/rendering-forms.md#rendering-html-forms-using-custom-css-files).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -1058,7 +1061,7 @@ In het volgende codevoorbeeld wordt een HTML-formulier gerenderd met de Forms se
 
 In het volgende codevoorbeeld wordt een HTML-formulier weergegeven met een werkbalk die in het Frans wordt weergegeven. De locatie van fscmenu.xml is C:\Adobe (deze map moet zich op de server bevinden die als host fungeert voor AEM Forms). De waarde voor de landinstelling is `fr_FR`. De sectie over het renderen van een HTML-formulier met een aangepaste werkbalk toont de syntaxis van het bestand fscmenu.xml dat in deze snelle start wordt gebruikt. (Zie HTML-formulieren [renderen met aangepaste werkbalken](/help/forms/developing/rendering-forms.md#rendering-html-forms-with-custom-toolbars).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -1210,11 +1213,11 @@ In het volgende codevoorbeeld wordt een HTML-formulier weergegeven met een werkb
  
 ```
 
-## Snel starten (SOAP-modus): PDF-formulieren die zijn verzonden als XML, verwerken met de Java API {#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api}
+## Snel starten (SOAP-modus): PDF forms die als XML zijn verzonden, afhandelen met de Java API {#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api}
 
 In het volgende codevoorbeeld wordt een formulier afgehandeld dat als XML wordt verzonden. De waarde van het inhoudstype die aan de `processFormSubmission` methode wordt doorgegeven, is `CONTENT_TYPE=text/xml`. De waarden die overeenkomen met de genoemde velden `mortgageAmount`, `lastName`en `firstName` worden weergegeven. In deze snelle start `getNodeText` wordt een door de gebruiker gedefinieerde methode gebruikt. Het accepteert een `org.w3c.dom.Document` instantie en een tekenreekswaarde die de knooppuntnaam opgeeft. Deze methode retourneert een tekenreekswaarde die de waarde van het knooppunt vertegenwoordigt. (Zie [Verstuurde formulieren](/help/forms/developing/rendering-forms.md#handling-submitted-forms)verwerken.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -1379,11 +1382,11 @@ In het volgende codevoorbeeld wordt een formulier afgehandeld dat als XML wordt 
 >
 >Volledig kwalificeren wanneer u een `com.adobe.idp.Document` object en een object `org.w3c.dom.Document` in dezelfde toepassing gebruikt `org.w3c.dom.Document`.
 
-## Snel starten (SOAP-modus): PDF-formulieren die zijn verzonden als PDF, verwerken met de Java API {#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api}
+## Snel starten (SOAP-modus): PDF forms die als PDF zijn verzonden, verwerken met de Java API {#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api}
 
 In het volgende codevoorbeeld wordt een formulier afgehandeld dat als PDF-gegevens wordt verzonden. De waarde van het inhoudstype die aan de `processFormSubmission` methode wordt doorgegeven, is `CONTENT_TYPE=application/pdf`. Het verzonden formulier wordt opgeslagen als een PDF-bestand met de naam *tempPDF.pdf*. Omdat het formulier als PDF wordt verzonden, kunnen ook bestandsbijlagen worden opgehaald. Alle bestandsbijlagen worden opgeslagen als JPEG-bestanden. (Zie [Verstuurde formulieren](/help/forms/developing/rendering-forms.md#handling-submitted-forms)verwerken.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -1533,7 +1536,7 @@ In het volgende codevoorbeeld wordt een formulier afgehandeld dat als PDF-gegeve
 
 In het volgende codevoorbeeld wordt een HTML-formulier afgehandeld dat als XML-gegevens wordt verzonden. De waarde van het inhoudstype die aan de `processFormSubmission` methode wordt doorgegeven, is `CONTENT_TYPE=application/x-www-form-urlencoded`.De waarden die overeenkomen met de velden met de naam `mortgageAmount`, `lastName`en `firstName` worden weergegeven. In deze snelle start `getNodeText` wordt een door de gebruiker gedefinieerde methode gebruikt. Het accepteert een `org.w3c.dom.Document` instantie en een tekenreekswaarde die de knooppuntnaam opgeeft. Deze methode retourneert een tekenreekswaarde die de waarde van het knooppunt vertegenwoordigt. (Zie [Verstuurde formulieren](/help/forms/developing/rendering-forms.md#handling-submitted-forms)verwerken.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -1693,7 +1696,7 @@ In het volgende codevoorbeeld wordt een HTML-formulier afgehandeld dat als XML-g
 
 In het volgende Java-codevoorbeeld worden formuliergegevens verwerkt die als XML worden verzonden. Formuliergegevens worden opgehaald uit de formulierverzending met de API Forms en verzonden naar de service Output. De formuliergegevens en een formulierontwerp worden gebruikt om een niet-interactief PDF-document te maken. Het niet-interactieve PDF-document wordt opgeslagen in een knooppunt Content Services (afgekeurd) met de naam `/Company Home/Test Directory`. De naam van het formulier wordt dynamisch gemaakt. Met andere woorden, de voornaam en achternaam van de gebruiker worden gebruikt om het PDF-bestand een naam te geven. De resource-id van de nieuwe inhoud wordt naar de webbrowser van de client geschreven. (Zie PDF-documenten [maken met verzonden XML-gegevens](/help/forms/developing/rendering-forms.md#creating-pdf-documents-with-submitted-xml-data).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -2250,7 +2253,7 @@ public class RenderDynamicForm extends HttpServlet implements Servlet {
 
 In het volgende codevoorbeeld wordt een formulier verwerkt dat een berekeningsscript bevat en worden de resultaten teruggeschreven naar de webbrowser van de client. (Zie Formuliergegevens [berekenen](/help/forms/developing/rendering-forms.md#calculating-form-data).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -2368,7 +2371,7 @@ In het volgende codevoorbeeld wordt een formulier verwerkt dat een berekeningssc
 
 In het volgende codevoorbeeld worden de prestaties geoptimaliseerd door de opties voor caching, standalone en linearzed in te stellen. Een gelineariseerd bestand is geoptimaliseerd voor levering op het web. (Zie De prestaties van de service [Formulieren](/help/forms/developing/rendering-forms.md#optimizing-the-performance-of-the-forms-service)optimaliseren.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -2496,7 +2499,7 @@ In het volgende codevoorbeeld worden de prestaties geoptimaliseerd door de optie
 
 Met de volgende snelle Java-start maakt u een interactief PDF-formulier dat is gebaseerd op een formulierontwerp met de naam *Loan.xdp* op waarde. U ziet dat het formulierontwerp wordt gebruikt om een `com.adobe.idp.Document` object met de naam *inputXDP* te vullen. (Zie Formulieren [renderen op waarde](/help/forms/developing/rendering-forms.md#rendering-forms-by-value).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar
@@ -2623,7 +2626,7 @@ Met de volgende snelle Java-start maakt u een interactief PDF-formulier dat is g
 
 De volgende snelle start van Java haalt het bestand Loan.xdp op uit Content Services (afgekeurd). Dit XDP-bestand bevindt zich in de ruimte `/Company Home/Form Designs`. Het XDP-bestand wordt geretourneerd in een `com.adobe.idp.Document` instantie. Het `com.adobe.idp.Document` exemplaar wordt overgegaan tot de dienst van Vormen. Het interactieve formulier wordt naar een webbrowser van een client geschreven. (Zie Documenten [doorgeven aan de Forms Service](/help/forms/developing/passing-documents-forms-service.md).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-forms-client.jar

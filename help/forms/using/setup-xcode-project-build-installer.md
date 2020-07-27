@@ -10,7 +10,7 @@ topic-tags: forms-app
 discoiquuid: 88555db2-712f-4ef9-bf47-76c7ba83d964
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1dfc8fa91d3e5ae8ca49cf1f3cb739b59feb18cf
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '818'
 ht-degree: 0%
@@ -90,7 +90,7 @@ Voor gedetailleerde informatie over het ondertekenen van code en het toevoegen v
 1. Zorg ervoor dat dezelfde handtekening is geselecteerd voor **Foutopsporing**, **Geen** en **Elke iOS SDK**.
 1. Vervang de volgende code in het `AEM Forms-info.plist` bestand:
 
-   ```java
+   ```xml
    <key>NSAppTransportSecurity</key>
    <dict>
    <key>NSAllowsArbitraryLoads</key>
@@ -100,7 +100,7 @@ Voor gedetailleerde informatie over het ondertekenen van code en het toevoegen v
 
    met de volgende code te vervangen `yourserver.com` door een geschikte hostnaam voor uw server.
 
-   ```java
+   ```xml
    <key>NSAppTransportSecurity</key>
    <dict>
    <key>NSExceptionDomains</key>

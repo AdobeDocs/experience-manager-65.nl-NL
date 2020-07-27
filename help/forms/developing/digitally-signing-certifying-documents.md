@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 42de04bf-25e4-4478-a411-38671ed871ae
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '16977'
 ht-degree: 0%
@@ -195,6 +195,7 @@ Een handtekeningveld toevoegen met de handtekening-API (webservice):
    * Een `PositionRect` object dat de locatie van het handtekeningveld opgeeft.
    * Een `FieldMDPOptions` object dat in het PDF-document velden opgeeft die worden vergrendeld nadat een digitale handtekening is toegepast op het handtekeningveld. Deze parameterwaarde is optioneel en u kunt deze doorgeven `null`.
    * Een `PDFSeedValueOptions` object dat verschillende runtimewaarden opgeeft. Deze parameterwaarde is optioneel en u kunt deze doorgeven `null`.
+
    De `addSignatureField` methode retourneert een `BLOB` object dat een PDF-document vertegenwoordigt dat een handtekeningveld bevat.
 
 1. Het PDF-document opslaan als een PDF-bestand
@@ -460,6 +461,7 @@ Wijzig een handtekeningveld met de handtekening-API (Java):
    * Vergrendel alle velden in het PDF-document door de methode van het `FieldMDPOptionSpec` object aan te roepen en de `setMdpValue` `FieldMDPAction.ALL` opsommingswaarde door te geven.
    * Stel de zaadwaardewoordenboekgegevens in door de methode van het `PDFSignatureFieldProperties` object aan te roepen en het `setSeedValue` `PDFSeedValueOptionSpec` object door te geven.
    * Stel de vergrendelingswoordenboekgegevens van het handtekeningveld in door de methode van het `PDFSignatureFieldProperties`object aan te roepen en het `setFieldMDP` `FieldMDPOptionSpec` object door te geven.
+
    >[!NOTE]
    >
    >Zie de `PDFSeedValueOptionSpec` klasseverwijzing voor een overzicht van alle waarden in het zaadwaardewoordenboek die u kunt instellen. (Zie [API-naslaggids](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)voor AEM Forms.)
@@ -471,6 +473,7 @@ Wijzig een handtekeningveld met de handtekening-API (Java):
    * Het `com.adobe.idp.Document` object waarin het PDF-document is opgeslagen dat het te wijzigen handtekeningveld bevat
    * Een tekenreekswaarde die de naam van het handtekeningveld opgeeft
    * Het `PDFSignatureFieldProperties` object waarin het handtekeningveldvergrendelingswoordenboek en de zaadwaardewoordenboekgegevens zijn opgeslagen
+
    De `modifySignatureField` methode retourneert een `com.adobe.idp.Document` object waarin een PDF-document is opgeslagen dat het gewijzigde handtekeningveld bevat.
 
 1. Het PDF-document opslaan als een PDF-bestand
@@ -520,6 +523,7 @@ Wijzig een handtekeningveld met de handtekening-API (webservice):
    * Vergrendel alle velden in het PDF-document door de `FieldMDPAction.ALL` opsommingswaarde toe te wijzen aan het `FieldMDPOptionSpec` gegevenslid van het `mdpValue` object.
    * Stel zaadwaardewoordenboekgegevens in door het `PDFSeedValueOptionSpec` object toe te wijzen aan het `PDFSignatureFieldProperties` gegevenslid van het `seedValue` object.
    * Stel de vergrendelingswoordenboekgegevens voor handtekeningvelden in door het `FieldMDPOptionSpec` object toe te wijzen aan het `PDFSignatureFieldProperties` gegevenslid van het `fieldMDP` object.
+
    >[!NOTE]
    >
    >Zie de `PDFSeedValueOptionSpec` klasseverwijzing voor een overzicht van alle waarden in het zaadwaardewoordenboek die u kunt instellen. (Zie [AEM Forms API-naslaggids](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)).
@@ -531,6 +535,7 @@ Wijzig een handtekeningveld met de handtekening-API (webservice):
    * Het `BLOB` object waarin het PDF-document is opgeslagen dat het te wijzigen handtekeningveld bevat
    * Een tekenreekswaarde die de naam van het handtekeningveld opgeeft
    * Het `PDFSignatureFieldProperties` object waarin het handtekeningveldvergrendelingswoordenboek en de zaadwaardewoordenboekgegevens zijn opgeslagen
+
    De `modifySignatureField` methode retourneert een `BLOB` object waarin een PDF-document is opgeslagen dat het gewijzigde handtekeningveld bevat.
 
 1. Het PDF-document opslaan als een PDF-bestand
@@ -584,8 +589,8 @@ Wanneer u een Cipher nShield HSM-referentie gebruikt om een PDF-document te onde
 
 U kunt de volgende configuratiewaarde toevoegen in het cknfastrc-bestand, dat zich bevindt op /opt/nfast/cknfastrc (of c:\nfast\cknfastrc):
 
-```as3
- CKNFAST_ASSUME_SINGLE_PROCESS=0
+```shell
+    CKNFAST_ASSUME_SINGLE_PROCESS=0
 ```
 
 Nadat u deze configuratiewaarde aan het cknfastrc dossier toevoegt, kan de nieuwe referentie worden gebruikt zonder de J2EE toepassingsserver opnieuw te beginnen.
@@ -721,6 +726,7 @@ Een PDF-document digitaal ondertekenen met de handtekening-API (Java):
    * Een `OCSPOptionSpec` object dat voorkeuren voor ondersteuning van het online certificaatstatusprotocol (OCSP) opslaat. Als de intrekkingscontrole niet wordt uitgevoerd, wordt deze parameter niet gebruikt en kunt u opgeven `null`.
    * Een `CRLPreferences` object waarin voorkeuren voor certificaatintrekkingslijsten (CRL) zijn opgeslagen. Als de intrekkingscontrole niet wordt uitgevoerd, wordt deze parameter niet gebruikt en kunt u opgeven `null`.
    * Een `TSPPreferences` object dat voorkeuren voor ondersteuning van een tijdstempelprovider (TSP) opslaat. Deze parameter is optioneel en kan worden `null`gebruikt. Zie [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)voor meer informatie.
+
    De `sign` methode retourneert een `com.adobe.idp.Document` object dat het ondertekende PDF-document vertegenwoordigt.
 
 1. Het ondertekende PDF-document opslaan
@@ -788,6 +794,7 @@ Een PDF-document digitaal ondertekenen met de API voor handtekening (webservice)
    * Een `OCSPOptionSpec` object dat voorkeuren voor ondersteuning van het online certificaatstatusprotocol (OCSP) opslaat. Als de intrekkingscontrole niet wordt uitgevoerd, wordt deze parameter niet gebruikt en kunt u opgeven `null`. Zie [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)voor meer informatie over dit object.
    * Een `CRLPreferences` object waarin voorkeuren voor certificaatintrekkingslijsten (CRL) zijn opgeslagen. Als de intrekkingscontrole niet wordt uitgevoerd, wordt deze parameter niet gebruikt en kunt u opgeven `null`.
    * Een `TSPPreferences` object dat voorkeuren voor ondersteuning van een tijdstempelprovider (TSP) opslaat. Deze parameter is optioneel en kan worden `null`gebruikt.
+
    De `sign` methode retourneert een `BLOB` object dat het ondertekende PDF-document vertegenwoordigt.
 
 1. Het ondertekende PDF-document opslaan
@@ -919,6 +926,7 @@ Een interactief formulier digitaal ondertekenen met de API voor formulieren en h
       * Een `PDFFormRenderSpec` object dat uitvoeringsopties opslaat.
       * Een `URLSpec` object dat URI-waarden bevat die door de service Forms worden vereist. U kunt opgeven `null` voor deze parameterwaarde.
       * Een `java.util.HashMap` object dat bestandsbijlagen opslaat. Dit is een optionele parameter en u kunt opgeven `null` of u geen bestanden aan het formulier wilt koppelen.
+
       De `renderPDFForm2` methode retourneert een `FormsResult` object dat een formuliergegevensstroom bevat
 
    * Haal het PDF-formulier op door de `FormsResult` methode van het `getOutputContent` object aan te roepen. Deze methode retourneert een `com.adobe.idp.Document` object dat het interactieve formulier vertegenwoordigt.
@@ -939,6 +947,7 @@ Een interactief formulier digitaal ondertekenen met de API voor formulieren en h
    * Een `OCSPPreferences` object dat voorkeuren voor ondersteuning van het online certificaatstatusprotocol (OCSP) opslaat. Als de intrekkingscontrole niet wordt uitgevoerd, wordt deze parameter niet gebruikt en kunt u opgeven `null`.
    * Een `CRLPreferences` object waarin voorkeuren voor certificaatintrekkingslijsten (CRL) zijn opgeslagen. Als de intrekkingscontrole niet wordt uitgevoerd, wordt deze parameter niet gebruikt en kunt u opgeven `null`.
    * Een `TSPPreferences` object dat voorkeuren voor ondersteuning van een tijdstempelprovider (TSP) opslaat. Deze parameter is optioneel en kan worden `null`gebruikt.
+
    De `sign` methode retourneert een `com.adobe.idp.Document` object dat het ondertekende PDF-document vertegenwoordigt.
 
 1. Het ondertekende PDF-document opslaan
@@ -984,6 +993,7 @@ Een interactief formulier digitaal ondertekenen met de API voor formulieren en h
       * Wijs de bijbehorende wachtwoordwaarde aan het veld toe `SignatureServiceClient.ClientCredentials.UserName.Password`.
       * Wijs de constante waarde toe `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
    * Wijs de constante waarde toe `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode`.
+
    >[!NOTE]
    >
    >Herhaal deze stappen voor de Forms-serviceclient.
@@ -1031,6 +1041,7 @@ Een interactief formulier digitaal ondertekenen met de API voor formulieren en h
    * Een `OCSPPreferences` object dat voorkeuren voor ondersteuning van het online certificaatstatusprotocol (OCSP) opslaat. Als de intrekkingscontrole niet wordt uitgevoerd, wordt deze parameter niet gebruikt en kunt u opgeven `null`. Zie [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)voor meer informatie over dit object.
    * Een `CRLPreferences` object waarin voorkeuren voor certificaatintrekkingslijsten (CRL) zijn opgeslagen. Als de intrekkingscontrole niet wordt uitgevoerd, wordt deze parameter niet gebruikt en kunt u opgeven `null`.
    * Een `TSPPreferences` object dat voorkeuren voor ondersteuning van een tijdstempelprovider (TSP) opslaat. Deze parameter is optioneel en kan worden `null`gebruikt.
+
    De `sign` methode retourneert een `BLOB` object dat het ondertekende PDF-document vertegenwoordigt.
 
 1. Het ondertekende PDF-document opslaan
@@ -1066,8 +1077,8 @@ U kunt PDF-documenten programmatisch certificeren met de Java API voor de handte
 
 U kunt de volgende configuratiewaarde toevoegen in het cknfastrc-bestand, dat zich bevindt op /opt/nfast/cknfastrc (of c:\nfast\cknfastrc):
 
-```as3
-             CKNFAST_ASSUME_SINGLE_PROCESS=0
+```shell
+    CKNFAST_ASSUME_SINGLE_PROCESS=0
 ```
 
 Nadat u deze configuratiewaarde aan het cknfastrc dossier toevoegt, kan de nieuwe referentie worden gebruikt zonder de J2EE toepassingsserver opnieuw te beginnen.
@@ -1179,6 +1190,7 @@ Een PDF-document certificeren met de handtekening-API (Java):
    * Een `OCSPPreferences` object dat voorkeuren voor ondersteuning van het online certificaatstatusprotocol (OCSP) opslaat. Als de intrekkingscontrole niet wordt uitgevoerd, wordt deze parameter niet gebruikt en kunt u opgeven `null`. Zie [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)voor meer informatie over dit object.
    * Een `CRLPreferences` object waarin voorkeuren voor certificaatintrekkingslijsten (CRL) zijn opgeslagen. Als de intrekkingscontrole niet wordt uitgevoerd, wordt deze parameter niet gebruikt en kunt u opgeven `null`.
    * Een `TSPPreferences` object dat voorkeuren voor ondersteuning van een tijdstempelprovider (TSP) opslaat. Nadat u bijvoorbeeld een `TSPPreferences` object hebt gemaakt, kunt u de URL van de TSP-server instellen door de `TSPPreferences` methode van het `setTspServerURL` object aan te roepen. Deze parameter is optioneel en kan worden `null`gebruikt. Voor meer informatie, zie de Verwijzing van de [Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+
    De `certify` methode retourneert een `com.adobe.idp.Document` object dat het gecertificeerde PDF-document vertegenwoordigt.
 
 1. Het gecertificeerde PDF-document opslaan als een PDF-bestand
@@ -1251,6 +1263,7 @@ Een PDF-document certificeren met de handtekening-API (webservice):
    * Een `OCSPPreferences` object dat voorkeuren voor ondersteuning van het online certificaatstatusprotocol (OCSP) opslaat. Hiermee wordt informatie gegeven over de status van de referentie die wordt gebruikt voor de certificering van het PDF-document. Als de intrekkingscontrole niet wordt uitgevoerd, wordt deze parameter niet gebruikt en kunt u opgeven `null`.
    * Een `CRLPreferences` object waarin voorkeuren voor certificaatintrekkingslijsten (CRL) zijn opgeslagen. Als de intrekkingscontrole niet wordt uitgevoerd, wordt deze parameter niet gebruikt en kunt u opgeven `null`.
    * Een `TSPPreferences` object dat voorkeuren voor ondersteuning van een tijdstempelprovider (TSP) opslaat. Nadat u bijvoorbeeld een `TSPPreferences` object hebt gemaakt, kunt u de URL van de TSP instellen door het gegevenslid van het `TSPPreferences` `tspServerURL` object in te stellen. Deze parameter is optioneel en kan worden `null`gebruikt.
+
    De `certify` methode retourneert een `BLOB` object dat het gecertificeerde PDF-document vertegenwoordigt.
 
 1. Het gecertificeerde PDF-document opslaan als een PDF-bestand
@@ -1410,6 +1423,7 @@ Verifieer een digitale handtekening met de API van de Handtekeningenservice (Jav
    * Een tekenreekswaarde die staat voor de naam van het handtekeningveld dat de te controleren handtekening bevat.
    * Een `PKIOptions` object dat PKI-runtime-opties bevat.
    * Een `VerifySPIOptions` instantie die SPI-informatie bevat. U kunt `null` voor deze parameter opgeven.
+
    De `verify2` methode retourneert een `PDFSignatureVerificationInfo` object dat informatie bevat die kan worden gebruikt om de digitale handtekening te verifiëren.
 
 1. De status van de handtekening bepalen
@@ -1478,6 +1492,7 @@ Verifieer een digitale handtekening met behulp van de Signature Service API (web
    * Een tekenreekswaarde die staat voor de naam van het handtekeningveld dat de te controleren handtekening bevat.
    * Een `PKIOptions` object dat PKI-runtime-opties bevat.
    * Een `VerifySPIOptions` instantie die SPI-informatie bevat. U kunt `null` voor deze parameter opgeven.
+
    De `verify2` methode retourneert een `PDFSignatureVerificationInfo` object dat informatie bevat die kan worden gebruikt om de digitale handtekening te verifiëren.
 
 1. De status van de handtekening bepalen
@@ -1625,6 +1640,7 @@ Verifieer meerdere digitale handtekeningen met de API voor handtekeningenservice
    * Een `com.adobe.idp.Document` object dat een PDF-document bevat dat meerdere digitale handtekeningen bevat.
    * Een `PKIOptions` object dat PKI-runtime-opties bevat.
    * Een `VerifySPIOptions` instantie die SPI-informatie bevat. U kunt `null` voor deze parameter opgeven.
+
    De `verifyPDFDocument` methode retourneert een `PDFDocumentVerificationInfo` object dat informatie bevat over alle digitale handtekeningen in het PDF-document.
 
 1. Alle handtekeningen doorlopen
@@ -1690,6 +1706,7 @@ Verifieer veelvoudige digitale handtekeningen door de Dienst API van de Handteke
    * Een `BLOB` object dat een PDF-document bevat dat meerdere digitale handtekeningen bevat.
    * Een `PKIOptions` object dat PKI-runtime-opties bevat.
    * Een `VerifySPIOptions` instantie die SPI-informatie bevat. U kunt null opgeven voor deze parameter.
+
    De `verifyPDFDocument` methode retourneert een `PDFDocumentVerificationInfo` object dat informatie bevat over alle digitale handtekeningen in het PDF-document.
 
 1. Alle handtekeningen doorlopen
@@ -1789,6 +1806,7 @@ Een digitale handtekening verwijderen met de handtekening-API (Java):
 
    * Een `com.adobe.idp.Document` object dat staat voor het PDF-document dat de te verwijderen handtekening bevat.
    * Een tekenreekswaarde die de naam aangeeft van het handtekeningveld dat de digitale handtekening bevat.
+
    De `clearSignatureField` methode retourneert een `com.adobe.idp.Document` object dat staat voor het PDF-document waaruit de digitale handtekening is verwijderd.
 
 1. Het PDF-document opslaan als een PDF-bestand
@@ -1845,6 +1863,7 @@ Een digitale handtekening verwijderen met de handtekening-API (webservice):
 
    * Een `BLOB` object dat het ondertekende PDF-document bevat.
    * Een tekenreekswaarde die de naam vertegenwoordigt van het handtekeningveld dat de digitale handtekening bevat die moet worden verwijderd.
+
    De `clearSignatureField` methode retourneert een `BLOB` object dat staat voor het PDF-document waaruit de digitale handtekening is verwijderd.
 
 1. Het PDF-document opslaan als een PDF-bestand

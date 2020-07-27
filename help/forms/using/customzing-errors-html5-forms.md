@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 discoiquuid: 44e49789-9075-41b3-bce8-03e8efce2d5a
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '541'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ Het artikel bevat de stappen waarmee u foutberichten voor HTML5-formulieren kunt
 * foutberichten weergeven voor meerdere velden op een bepaald moment.
 * geeft de fout weer ongeacht of een veld is geselecteerd of niet.
 
-## Foutberichten aanpassen {#customizing-error-messages-nbsp}
+## Foutberichten aanpassen  {#customizing-error-messages-nbsp}
 
 Download en extraheer het bijgevoegde pakket (CustomErrorManager-1.0-SNAPSHOT.zip) voordat u de foutberichten aanpast.
 
@@ -31,7 +34,7 @@ Nadat u het pakket hebt uitgepakt, opent u de map CustomErrorManager-1.0-SNAPSHO
 
 [Bestand ophalen](assets/customerrormanager-1.0-snapshot.zip)
 
-### De positie van foutberichten aanpassen {#customizing-the-position-of-error-messages-nbsp}
+### De positie van foutberichten aanpassen  {#customizing-the-position-of-error-messages-nbsp}
 
 Als u de positie van het foutbericht wilt aanpassen, voegt u &lt;div>-tag toe voor elk fout- en waarschuwingsveld, plaatst u de tag &lt;div> links of rechts en past u CSS-stijlen toe op de tag &lt;div>. Voor gedetailleerde stappen, zie de hieronder vermelde procedure:
 
@@ -46,7 +49,7 @@ Als u de positie van het foutbericht wilt aanpassen, voegt u &lt;div>-tag toe vo
 
 1. Bij de implementatie buiten het vak worden aan de rechterkant van het veld foutberichten weergegeven. Gebruik de volgende code om de foutberichten bovenaan weer te geven.
 
-   ```
+   ```javascript
    markError: function (jqWidget, msg, type) {
                var element = jqWidget.element,                                //Gives the div containing widget
                    pos = $(element).offset(),                          //Calculates the position of the div in the view port
@@ -77,7 +80,7 @@ Als u de positie van het foutbericht wilt aanpassen, voegt u &lt;div>-tag toe vo
 1. Navigeer naar de `CustomErrorManager-1.0-SNAPSHOT` map en maak een archief van de mappen jcr_root en META-INF. Wijzig de naam van het archief in CustomErrorManager-1.0-SNAPSHOT.zip.
 1. Gebruik pakketbeheer om het pakket te uploaden en te installeren.
 
-## Foutberichten weergeven voor meerdere velden {#display-error-messages-for-multiple-fields-nbsp}
+## Foutberichten weergeven voor meerdere velden  {#display-error-messages-for-multiple-fields-nbsp}
 
 Gebruik het bijgevoegde pakket om foutberichten voor alle velden tegelijk weer te geven. Gebruik het standaardprofiel als u één foutbericht wilt weergeven.
 
@@ -89,7 +92,7 @@ Gebruik het bijgevoegde pakket om foutberichten voor alle velden tegelijk weer t
 
    Gebruik de volgende code om de tekengrootte en kleur van fout-/waarschuwingsberichten te wijzigen.
 
-   ```
+   ```css
    #customError {
    color: #0000FF; // it changes the color of Error Message
    display:none;

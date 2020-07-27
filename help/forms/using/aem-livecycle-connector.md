@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 7e404b45-1302-4dd1-b3c9-3f47fedb5f94
 translation-type: tm+mt
-source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '1029'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Hoewel de eigenschappen vanzelfsprekend zijn, zijn de belangrijkste als volgt:
 
 * **Server-URL** - Geeft de URL naar de LiveCycle-server op. Als u wilt dat LiveCycle en AEM via https communiceren, start u AEM met de volgende JVM
 
-   ```
+   ```java
    argument
     -Djavax.net.ssl.trustStore=<<em>path to LC keystore</em>>
    ```
@@ -118,7 +118,7 @@ Voer de volgende stappen uit om een blootgestelde service te starten vanuit AEM:
 
    Met het bovenstaande codefragment wordt de createPDF API van GeneratePDFServiceClient gestart om een document naar PDF te converteren. U kunt gelijkaardige aanroeping in JSP uitvoeren gebruikend de volgende code. Het belangrijkste verschil is het volgende codegebruik Sling ScriptHelper om tot GeneratePdfServiceClient toegang te hebben.
 
-   ```java
+   ```jsp
    <%@ page import="com.adobe.livecycle.generatepdf.client.GeneratePdfServiceClient" %>
    <%@ page import="com.adobe.livecycle.generatepdf.client.CreatePDFResult" %>
    <%@ page import="com.adobe.idp.Document" %>
@@ -156,7 +156,7 @@ ServiceClientFactory scf = scfProvider.getDefaultServiceClientFactory();
 
 Bijna elke documentservice in LiveCycle vereist verificatie. U kunt om het even welke volgende opties gebruiken om deze diensten te beginnen zonder expliciete geloofsbrieven in de code te verstrekken:
 
-### Configuratie toestaan {#allowlist-configuration}
+### Configuratie Lijst van gewenste personen {#allowlist-configuration}
 
 De configuratie van LiveCycle Client SDK bevat een instelling voor servicenamen. Deze configuratie is een lijst van de diensten waarvoor de aanroepingslogica uit de doos beheerderreferentie gebruikt. Als u bijvoorbeeld DirectoryManager-services (onderdeel van de gebruikersbeheer-API) aan deze lijst toevoegt, kan elke clientcode de service rechtstreeks gebruiken en wordt de geconfigureerde gegevens automatisch doorgegeven als onderdeel van de aanvraag die naar de LiveCycle-server wordt verzonden
 

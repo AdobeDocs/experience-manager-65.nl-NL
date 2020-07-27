@@ -10,7 +10,7 @@ topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
 translation-type: tm+mt
-source-git-commit: 1dfc8fa91d3e5ae8ca49cf1f3cb739b59feb18cf
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '940'
 ht-degree: 0%
@@ -70,14 +70,14 @@ Ga als volgt te werk om een upgrade uit te voeren van AEM 6.3 Forms of AEM 6.4 F
 
       Als u [Steekproef voor het integreren van concepten &amp; verzendingscomponent](https://helpx.adobe.com/experience-manager/6-3/forms/using/integrate-draft-submission-database.html) met het gegevensbestand en bevordering van een vorige versie gebruikt, dan stel de volgende SQL vragen na het uitvoeren van de verbetering in werking:
 
-      ```
+      ```sql
       UPDATE metadata m, additionalmetadatatable am
       SET m.dataType = am.value
       WHERE m.id = am.id
       AND am.key = 'dataType'
       ```
 
-      ```
+      ```sql
       DELETE from additionalmetadatatable
       WHERE `key` = 'dataType'
       ```

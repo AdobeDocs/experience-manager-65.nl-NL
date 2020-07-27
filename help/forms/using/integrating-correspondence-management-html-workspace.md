@@ -1,30 +1,33 @@
 ---
 title: Toepassingen van derden integreren in de werkruimte van AEM Forms
 seo-title: Toepassingen van derden integreren in de werkruimte van AEM Forms
-description: Integreer toepassingen van derden, zoals Correspondence Management, in de werkruimte van AEM Forms.
-seo-description: Hoe kan ik-toepassingen van derden, zoals Correspondence Management, integreren in de werkruimte van AEM Forms.
+description: Integreer toepassingen van derden, zoals Correspondence Management in de werkruimte AEM Forms.
+seo-description: Hoe kan ik-toepassingen van andere leveranciers, zoals Correspondence Management, integreren in de werkruimte van AEM Forms.
 uuid: 7654cf86-b896-4db2-8f5d-6c1b2e6c229f
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: f70f21e3-3bec-490d-889e-faf496fb738b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '650'
+ht-degree: 0%
 
 ---
 
 
 # Toepassingen van derden integreren in de werkruimte van AEM Forms{#integrating-third-party-applications-in-aem-forms-workspace}
 
-De werkruimte van de Vormen van AEM steunt het beheer van taak en voltooiingsactiviteiten voor formulieren en documenten. Deze formulieren en documenten kunnen XDP-formulieren, Flex®-formulieren of hulplijnen (afgekeurd) zijn die zijn gerenderd in de indelingen XDP, PDF, HTML of Flex.
+De werkruimte van AEM Forms ondersteunt het beheer van taken en het invullen van formulieren en documenten. Deze formulieren en documenten kunnen XDP-formulieren, Flex®-formulieren of hulplijnen (afgekeurd) zijn die zijn gerenderd in de indelingen XDP, PDF, HTML of Flex.
 
-Deze mogelijkheden worden verder versterkt. AEM Forms ondersteunt nu samenwerking met toepassingen van derden die functionaliteit ondersteunen die vergelijkbaar is met de werkruimte van AEM Forms. Een veelvoorkomend onderdeel van deze functionaliteit is de workflow van de toewijzing en de daaropvolgende goedkeuring van een taak. AEM Forms biedt één enkele ervaring voor AEM Forms-zakelijke gebruikers, zodat al dergelijke taaktoewijzingen of goedkeuringen voor de ondersteunde toepassingen kunnen worden verwerkt via de werkruimte van AEM Forms.
+Deze mogelijkheden worden verder versterkt. AEM Forms ondersteunen nu samenwerking met toepassingen van derden die functionaliteit ondersteunen die lijkt op de werkruimte van AEM Forms. Een veelvoorkomend onderdeel van deze functionaliteit is de workflow van de toewijzing en de daaropvolgende goedkeuring van een taak. AEM Forms verstrekken één enkele verenigde ervaring voor de ondernemingsgebruikers van AEM Forms zodat al dergelijke taaktaken of goedkeuringen voor de gesteunde toepassingen door de werkruimte van AEM Forms kunnen worden behandeld.
 
-Laten we Correspondentiebeheer bijvoorbeeld beschouwen als de voorbeeldkandidaat voor integratie met de AEM Forms-werkruimte. Correspondentiebeheer heeft het concept van een &#39;brief&#39;, die kan worden weergegeven en acties mogelijk maakt.
+Laten we Correspondentiebeheer bijvoorbeeld beschouwen als de voorbeeldkandidaat voor integratie met de werkruimte AEM Forms. Correspondentiebeheer heeft het concept van een &#39;brief&#39;, die kan worden weergegeven en acties mogelijk maakt.
 
 ## Correspondentenbeheermiddelen maken {#create-correspondence-management-assets}
 
-Begin door een malplaatje van het Beheer van de Correspondentie te creëren dat in de werkruimte van Vormen AEM wordt teruggegeven. Zie [Een lettertypesjabloon](../../forms/using/create-letter.md)maken voor meer informatie.
+Begin door een malplaatje van het Beheer van de Correspondentie te creëren dat in de werkruimte van AEM Forms wordt teruggegeven. Zie [Een lettertypesjabloon](../../forms/using/create-letter.md)maken voor meer informatie.
 
 Heb toegang tot het malplaatje van het Beheer van de Correspondentie bij zijn URL om te verifiëren of het malplaatje van het Beheer van de Correspondentie met succes kan worden teruggegeven. De URL heeft een patroon dat lijkt op `https://'[server]:[port]'/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`
 
@@ -64,7 +67,7 @@ Gebruik de volgende stappen om een taak te maken om een letter te renderen en te
 
    Hieronder ziet u een voorbeeld van een aangepaste omslag:
 
-   ```java
+   ```javascript
    public LetterInstanceInfo getLetterInstanceInfo(Document dataXML) throws Exception {
    try {
    if(dataXML == null)

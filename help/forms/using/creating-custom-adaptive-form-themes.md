@@ -9,7 +9,10 @@ topic-tags: customization
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 437e6581-4eb1-4fbd-a6da-86b9c90cec89
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '825'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 >[!CAUTION]
 >
->AEM Forms biedt de [Thema Editor](/help/forms/using/themes.md) -mogelijkheid om adaptieve [formulierthema&#39;s](/help/forms/using/themes.md)te maken en te wijzigen. Voer de stappen uit die in dit artikel worden vermeld, slechts als u van een versie hebt bevorderd die niet de Redacteur [van het](/help/forms/using/themes.md) Thema heeft en u een bestaande investering in thema&#39;s hebt die worden gecreeerd gebruikend Minder/CSS dossiers (pre-thema redacteursmethode).
+>AEM Forms bieden de [Thema-editor](/help/forms/using/themes.md) de mogelijkheid om adaptieve [formulierthema](/help/forms/using/themes.md)&#39;s te maken en te wijzigen. Voer de stappen uit die in dit artikel worden vermeld, slechts als u van een versie hebt bevorderd die niet de Redacteur [van het](/help/forms/using/themes.md) Thema heeft en u een bestaande investering in thema&#39;s hebt die worden gecreeerd gebruikend Minder/CSS dossiers (pre-thema redacteursmethode).
 
 ## Vereisten {#prerequisites}
 
@@ -42,7 +45,7 @@ U maakt een **adaptieve sjabloon** en past het thema toe op de sjabloon. Vervolg
 >
 >Als u deze stappen met de namen uitvoert, zou het resulterende malplaatje aan de volgende momentopname gelijkaardig moeten lijken:
 
-![](assets/thumbnail.png) Adaptieve formuliermomentopname **** op basis van woud: Voorbeeld van *bosthema*
+![Adaptieve formuliermomentopname](assets/thumbnail.png)**op basis van woud:** *Forest Theme Sample*
 
 1. Maak een knooppunt van het type `cq:ClientLibraryFolder` onder het `/apps`knooppunt.
 
@@ -63,17 +66,19 @@ U maakt een **adaptieve sjabloon** en past het thema toe op de sjabloon. Vervolg
       Deze map bestaat uit `less` variabele bestanden, `less` mengbestanden, `less` bestanden die stijlen definiëren met behulp van mixins en variabelen. En al deze minder dossiers worden dan ingevoerd in styles.less.
 
    * `css`map: Bevat de CSS-bestanden waarin u de statische stijlen definieert die in het thema moeten worden gebruikt.
+
    **Minder variabelebestanden**: Dit zijn de bestanden waarin u de variabelen definieert of overschrijft die worden gebruikt bij het definiëren van CSS-stijlen.
 
    Adaptieve formulieren bieden OTB-variabelen die zijn gedefinieerd in de volgende bestanden zonder .less:
 
    * `/apps/clientlibs/fd/af/guidetheme/common/less/globalvariables.less`
    * `/apps/clientlibs/fd/af/guidetheme/common/less/layoutvariables.less`
-   Adaptieve formulieren bevatten ook variabelen van derden die zijn gedefinieerd in:
+
+   Adaptieve formulieren bevatten ook variabelen van derden, zoals gedefinieerd in:
 
    `/apps/clientlibs/fd/af/third-party/less/variables.less`
 
-   U kunt de variabelen gebruiken waarvoor minder nodig is, maar u kunt deze variabelen ook overschrijven of nieuwe, minder variabelen maken.
+   U kunt de variabelen gebruiken waarvoor minder nodig is, maar u kunt ook deze variabelen overschrijven of nieuwe, minder variabelen maken.
 
    >[!NOTE]
    >
@@ -81,7 +86,7 @@ U maakt een **adaptieve sjabloon** en past het thema toe op de sjabloon. Vervolg
 
    Voorbeeld overschrijvende variabelen:
 
-   ```
+   ```css
    @button-background-color: rgb(19, 102, 44);
    @button-border-color: rgb(19, 102, 44);
    @button-border-size: 0px;
@@ -96,24 +101,27 @@ U maakt een **adaptieve sjabloon** en past het thema toe op de sjabloon. Vervolg
       `/apps/clientlibs/fd/af/guidetheme/common/less/globalvariables.less/apps/clientlibs/fd/af/guidetheme/common/less/layoutvariables.less`
 
    1. Importeer vervolgens het bestand met de waarde Minder, dat overschreven variabelen bevat.
+
    Voorbeeld van nieuwe definities van variabelen:
 
-   ```
+   ```css
    @button-focus-bg-color: rgb(40, 208, 90);
    @button-hover-bg-color: rgb(30, 156, 67);
    ```
 
-   **** Minder gemengde bestanden: U kunt de functies definiëren die variabelen als argumenten accepteren. De uitvoer van deze functies is de resulterende stijlen. Gebruik deze combinaties in verschillende stijlen om te voorkomen dat CSS-stijlen worden herhaald.
+   **Minder gemengde bestanden:** U kunt de functies definiëren die variabelen als argumenten accepteren. De uitvoer van deze functies is de resulterende stijlen. Gebruik deze combinaties in verschillende stijlen om te voorkomen dat CSS-stijlen worden herhaald.
 
    Adaptieve formulieren bieden OTB-mixen die zijn gedefinieerd in:
 
    * `/apps/clientlibs/fd/af/guidetheme/common/less/adaptiveforms-mixins.less`
+
    Aangepaste formulieren bieden ook mengsels van derden, zoals gedefinieerd in:
 
    * `/apps/clientlibs/fd/af/third-party/less/mixins.less`
+
    Bemonsteringsmixterdefinitie:
 
-   ```
+   ```css
    .rounded-corners (@radius) {
      -webkit-border-radius: @radius;
      -moz-border-radius: @radius;
@@ -127,7 +135,7 @@ U maakt een **adaptieve sjabloon** en past het thema toe op de sjabloon. Vervolg
    }
    ```
 
-   **** Stijlen.bestand: Gebruik dit bestand om alle bestanden op te nemen die u in de clientbibliotheek nodig hebt (variabelen, mixins, stijlen).
+   **Stijlen.bestand:** Gebruik dit bestand om alle bestanden op te nemen die u in de clientbibliotheek nodig hebt (variabelen, mixins, stijlen).
 
    In het volgende voorbeeldbestand kan `styles.less` de importinstructie in willekeurige volgorde worden geplaatst.
 
@@ -138,7 +146,7 @@ U maakt een **adaptieve sjabloon** en past het thema toe op de sjabloon. Vervolg
    * `components.less`
    * `layouts.less`
 
-   ```
+   ```css
    @import "../../../clientlibs/fd/af/guidetheme/common/less/globalvariables.less";
    @import "../../../clientlibs/fd/af/guidetheme/common/less/layoutvariables.less";
    @import "forestTheme-variables";
@@ -170,7 +178,7 @@ U maakt een **adaptieve sjabloon** en past het thema toe op de sjabloon. Vervolg
 
    Bijvoorbeeld:
 
-   ```
+   ```javascript
    #base=/apps/clientlibs/fd/af/third-party/css
    bootstrap.css
    
@@ -214,14 +222,14 @@ Nadat u een adaptief formulierthema hebt gemaakt, voert u de volgende stappen ui
 
       Het volgende voorbeeldcodefragment importeert het `af.theme.forest` thema.
 
-      ```
+      ```jsp
       <%@include file="/libs/fd/af/components/guidesglobal.jsp"%>
       <cq:includeClientLib categories="af.theme.forest"/>
       ```
 
    1. **Optioneel**: Hef op de aangepaste pagina de header.jsp, footer.jsp en de body.jsp op, al naar gelang de vereisten.
 
-1. Een aangepaste sjabloon maken (bijvoorbeeld: `/apps/myAfCustomizations/myAfTemplates/forestTemplate`) waarvan jcr:content verwijst naar een aangepaste pagina die in de vorige stap is gemaakt (bijvoorbeeld: `myAfCustomizations/myAfPages/forestPage)`.
+1. Een aangepaste sjabloon maken (bijvoorbeeld: `/apps/myAfCustomizations/myAfTemplates/forestTemplate`) waarvan jcr:content verwijst naar de aangepaste pagina die in de vorige stap is gemaakt (bijvoorbeeld: `myAfCustomizations/myAfPages/forestPage)`.
 
    ![Opname van CRX-opslagplaats](assets/2-1.png)
 

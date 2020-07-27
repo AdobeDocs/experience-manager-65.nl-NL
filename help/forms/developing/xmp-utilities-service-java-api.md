@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 1b229ddf-9350-40b6-8056-dcbe0c5afd5b
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '231'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ De volgende snelstarthandleidingen zijn beschikbaar voor de service XMP Utilitie
 
 [Snel starten (SOAP-modus): XMP-metagegevens importeren met de Java API](xmp-utilities-service-java-api.md#quick-start-soap-mode-importing-xmp-metadata-using-the-java-api)
 
-De verrichtingen van de Vormen van AEM kunnen worden uitgevoerd gebruikend sterk-getypte API van Vormen AEM en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
+De verrichtingen van AEM Forms kunnen worden uitgevoerd gebruikend AEM Forms sterk-getypte API en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
 
 >[!NOTE]
 >
@@ -33,7 +36,7 @@ De verrichtingen van de Vormen van AEM kunnen worden uitgevoerd gebruikend sterk
 
 In het volgende codevoorbeeld worden XMP-metagegevens opgehaald, geïnspecteerd en opgeslagen. (Zie Metagegevens [exporteren uit PDF-documenten](/help/forms/developing/xmp-utilities.md#exporting-metadata-from-pdf-documents).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-pdfutility-client.jar
@@ -138,7 +141,7 @@ In het volgende codevoorbeeld worden XMP-metagegevens opgehaald, geïnspecteerd 
 
 In het volgende codevoorbeeld worden XMP-metagegevens geïmporteerd en wordt het nieuwe PDF-bestand op schijf opgeslagen. Het PDF-document is gebaseerd op een PDF-bestand met de naam Loan.pdf. Het XML-document dat de metagegevens bevat die in het PDF-document moeten worden geïmporteerd, is gebaseerd op een XML-bestand met de naam *LoanMetaData.xml*. Zie Metagegevens [importeren in PDF-documenten](/help/forms/developing/xmp-utilities.md#importing-metadata-into-pdf-documents)voor informatie over dit XML-bestand.
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-pdfutility-client.jar

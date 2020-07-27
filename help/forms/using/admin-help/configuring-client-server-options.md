@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '10273'
+ht-degree: 0%
 
 ---
 
@@ -116,7 +119,7 @@ Als uitgebreide verificatie is ingeschakeld, krijgen gebruikers die een met bele
 1. Open het bestand in een editor en zoek het knooppunt AllowedUrls.
 1. Voeg de volgende regels toe aan het `AllowedUrls` knooppunt: `<entry key="sso-l" value="/ssoexample/login.jsp"/> <entry key="sso-s" value="/ssoexample"/> <entry key="sso-o" value="/ssoexample/logout.jsp"/>`
 
-   ```as3
+   ```xml
    <entry key="sso-l" value="/ssoexample/login.jsp"/>
    <entry key="sso-s" value="/ssoexample"/>
    <entry key="sso-o" value="/ssoexample/logout.jsp"/>
@@ -819,7 +822,7 @@ Acrobat Reader DC-extensies voor Microsoft Office zijn een insteekmodule die wor
 1. Exporteer het configuratiebestand voor documentbeveiliging. (Zie [Het configuratiebestand](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file)voor documentbeveiliging handmatig bewerken.)
 1. Open het configuratiebestand in een editor en zoek het `PolicyServer` knooppunt. Voeg een `ClientVersionRules` knooppunt toe als een direct onderliggend element van het `PolicyServer` knooppunt, als dat niet bestaat:
 
-   ```as3
+   ```java
     <node name="ClientVersionRules">
         <map>
             <entry key="infoURL" value="URL"/>
@@ -855,6 +858,7 @@ Acrobat Reader DC-extensies voor Microsoft Office zijn een insteekmodule die wor
    * Apple OS X
    * Sun Solaris
    * HP-UX
+
    `SDKVersions` geeft de versie van de C++ Client-API voor documentbeveiliging aan die door de clienttoepassing wordt gebruikt. Bijvoorbeeld, `"8.2"`.
 
    `APPFamilies` wordt gedefinieerd door de client-API.
@@ -875,7 +879,7 @@ Acrobat Reader DC-extensies voor Microsoft Office zijn een insteekmodule die wor
 
 In dit voorbeeld worden alle Windows-clients toegang geweigerd.
 
-```as3
+```java
  <node name="ClientVersionRules">
      <map>
          <entry key="infoURL" value="https://www.dont.use/windows.html"/>
@@ -893,7 +897,7 @@ In dit voorbeeld worden alle Windows-clients toegang geweigerd.
 
 In dit voorbeeld wordt mijn toepassingsversie 3.0 en Mijn andere toepassingsversie 2.0 toegang geweigerd. De zelfde ontkenningsinformatie URL wordt gebruikt ongeacht de reden voor ontkenning.
 
-```as3
+```java
  <node name="ClientVersionRules">
      <map>
          <entry key="infoURL" value=”https://get.a.new/version.html”/>
@@ -918,7 +922,7 @@ In dit voorbeeld wordt mijn toepassingsversie 3.0 en Mijn andere toepassingsvers
 
 In dit voorbeeld worden alle aanvragen van een Microsoft PowerPoint 2007- of Microsoft PowerPoint 2010-installatie van Acrobat Reader DC-extensies voor Microsoft Office afgewezen.
 
-```as3
+```java
  <node name="ClientVersionRules">
      <map>
          <entry key="infoURL" value=”https://get.a.new/version.html”/>
@@ -951,7 +955,7 @@ Standaard kunt u maximaal vijf elementen in een watermerk opgeven. De maximale b
 
    De tweede vermelding, *maximale elementen* , is het maximale aantal elementen dat is toegestaan in een watermerk. De standaardwaarde is 5.
 
-   ```as3
+   ```java
    <entry key="maximumSizeOfWatermarkElement" value="max filesize in KB"/>
    <entry key="maximumWatermarkElementsPerWatermark" value="max elements"/>
    ```
@@ -971,7 +975,7 @@ De volgende veranderingen in config.xml schakelen alle externe verbindingen van 
 1. Open het configuratiebestand in een editor en zoek het `DisplaySettings` knooppunt.
 1. Als u alle externe koppelingen wilt uitschakelen, voegt u in het `DisplaySettings` knooppunt de volgende vermelding toe en slaat u het bestand op: `<entry key="ExternalLinksAllowed" value="false"/>`
 
-   ```as3
+   ```java
    <entry key="ExternalLinksAllowed" value="false"/>
    ```
 
@@ -985,7 +989,7 @@ De volgende veranderingen in config.xml laten TLS steun voor de Uitgenodigde eig
 1. Open het configuratiebestand in een editor en zoek het `DisplaySettings` knooppunt.
 1. Zoek het volgende knooppunt: `<node name="ExternalUser">`
 
-   ```as3
+   ```java
    <node name="ExternalUser">
    ```
 
@@ -1001,7 +1005,7 @@ De volgende veranderingen in config.xml om de eindpunten van de ZEEP voor docume
 1. Exporteer het configuratiebestand voor documentbeveiliging. (Zie [Het configuratiebestand](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file)voor documentbeveiliging handmatig bewerken.)
 1. Open het configuratiebestand in een editor en zoek het volgende knooppunt: `<node name="DRM">`
 
-   ```as3
+   ```java
    <node name="DRM">
    ```
 
@@ -1011,7 +1015,7 @@ De volgende veranderingen in config.xml om de eindpunten van de ZEEP voor docume
 
 1. Als u SOAP-eindpunten voor documenten met documentbeveiliging wilt uitschakelen, stelt u het waardekenmerk in op **false**.
 
-   ```as3
+   ```java
    <node name="DRM">
        <map>
            <entry key="AllowUnencryptedVoucher" value="false"/>

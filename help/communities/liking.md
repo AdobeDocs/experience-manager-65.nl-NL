@@ -10,9 +10,9 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: dcde4e03-78ab-4779-96a1-05ac41f14701
 translation-type: tm+mt
-source-git-commit: e7268e43620860b7a1f7aa0a1f1a54199dadcf17
+source-git-commit: c9fa5624a59f4b9a6f970628b03bbd8b7a277a73
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -34,17 +34,17 @@ Ga voor de benodigde informatie naar [Community Components Basics](basics.md).
 
 Wanneer de [vereiste client-side bibliotheken](essentials-liking.md#essentials-for-client-side) worden opgenomen, wordt de `Liking` component op deze manier weergegeven.
 
-![chlimage_1-93](assets/chlimage_1-93.png)
+![koppelingscomponent](assets/liking-component.png)
 
 ## Liking configureren {#configuring-liking}
 
 Selecteer de geplaatste `Liking` component die u wilt openen en selecteer het `Configure` pictogram waarmee het dialoogvenster Bewerken wordt geopend.
 
-![chlimage_1-94](assets/chlimage_1-94.png)
+![configure-new](assets/configure-new.png)
 
 Geef onder het **[!UICONTROL Texts & Labels]** tabblad de eigenschappen op die worden gebruikt voor het opnemen van &#39;like&#39;.
 
-![chlimage_1-95](assets/chlimage_1-95.png)
+![configureren-koppelen](assets/configure-liking.png)
 
 * **[!UICONTROL Positive Response Label]**
 

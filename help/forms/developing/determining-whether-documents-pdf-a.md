@@ -11,7 +11,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: c429d6e1-7847-43c8-bf75-cb0078dbb9d5
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '2069'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +27,7 @@ De PDF/A-1-specificatie bestaat uit twee conformiteitsniveaus, namelijk A en B. 
 
 Voor deze bespreking, veronderstel dat het volgende DDX- document wordt gebruikt.
 
-```as3
+```xml
  <?xml version="1.0" encoding="UTF-8"?>
  <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
          <DocumentInformation source="Loan.pdf" result="Loan_result.xml">
@@ -43,7 +46,7 @@ De Assembler-service geeft informatie die aangeeft of het invoer-PDF-document co
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Assembler, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Voor meer informatie over de dienst van de Assembler, zie de Verwijzing van de [Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
@@ -70,10 +73,10 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
-* jbossall-client.jar (vereist als AEM-formulieren worden geïmplementeerd op JBoss)
+* adobe-utilities.jar (vereist als AEM Forms worden geïmplementeerd op JBoss)
+* jbossall-client.jar (vereist als AEM Forms worden geïmplementeerd op JBoss)
 
-als AEM Forms wordt geïmplementeerd op een andere ondersteunde J2EE-toepassingsserver dan JBoss, moet u de bestanden adobe-utilities.jar en jbossall-client.jar vervangen door JAR-bestanden die specifiek zijn voor de J2EE-toepassingsserver waarop AEM Forms wordt geïmplementeerd. Zie [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van alle JAR-bestanden voor AEM Forms.
+als AEM Forms worden geïmplementeerd op een andere ondersteunde J2EE-toepassingsserver dan JBoss, moet u de bestanden adobe-utilities.jar en jbossall-client.jar vervangen door JAR-bestanden die specifiek zijn voor de J2EE-toepassingsserver waarop AEM Forms worden geïmplementeerd. Zie [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van alle JAR-bestanden voor AEM Forms.
 
 **Een PDF Assembler-client maken**
 
@@ -89,7 +92,7 @@ Er moet naar een PDF-document worden verwezen en dat document moet worden doorge
 
 **Uitvoeringsopties instellen**
 
-U kunt runtime opties plaatsen die het gedrag van de dienst van de Assembler controleren terwijl het een baan uitvoert. U kunt bijvoorbeeld een optie instellen die de Assembler-service de opdracht geeft door te gaan met het verwerken van een taak als er een fout optreedt. Zie de `AssemblerOptionSpec` klasseverwijzing in de API-naslaggids voor [AEM-formulieren voor informatie over de runtime-opties die u kunt instellen](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+U kunt runtime opties plaatsen die het gedrag van de dienst van de Assembler controleren terwijl het een baan uitvoert. U kunt bijvoorbeeld een optie instellen die de Assembler-service de opdracht geeft door te gaan met het verwerken van een taak als er een fout optreedt. Zie de `AssemblerOptionSpec` klasseverwijzing in de API-naslaggids voor [AEM Forms voor informatie over de runtime-opties die u kunt instellen](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 **Informatie over het PDF-document ophalen**
 
@@ -99,7 +102,7 @@ Nadat u de Assembler-serviceclient hebt gemaakt, naar het DDX-document verwijst,
 
 In het XML-document dat door de Assembler-service wordt geretourneerd, wordt aangegeven of het invoer-PDF-document compatibel is met PDF/A. Als het PDF-invoerdocument bijvoorbeeld niet PDF/A-compatibel is, retourneert de Assembler-service een XML-document dat het volgende element bevat:
 
-```as3
+```xml
  <PDFAConformance isCompliant="false" compliance="PDF/A-1b" resultLevel="Detailed" ignoreUnusedResources="true" allowCertificationSignatures="true">
 ```
 
@@ -111,7 +114,7 @@ Sla het XML-document op als een XML-bestand zodat u het bestand kunt openen en d
 
 [Bepalen of een document PDF/A-compatibel is met de webservice-API](/help/forms/developing/determining-whether-documents-pdf-a.md#determine-whether-a-document-is-pdf-a-compliant-using-the-web-service-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -157,6 +160,7 @@ Bepaal of een PDF-document PDF/A-compatibel is met de API (Java) voor vergaderin
    * Een `com.adobe.idp.Document` object dat staat voor het te gebruiken DDX-document
    * Een `java.util.Map` object dat het invoer-PDF-bestand bevat dat wordt gebruikt om de compatibiliteit met PDF/A te bepalen
    * Een `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` object dat de runtime-opties opgeeft
+
    De `invokeDDX` methode retourneert een `com.adobe.livecycle.assembler.client.AssemblerResult` object dat XML-gegevens bevat die aangeven of het invoer-PDF-document compatibel is met PDF/A.
 
 1. Sla het geretourneerde XML-document op.
@@ -171,7 +175,7 @@ Bepaal of een PDF-document PDF/A-compatibel is met de API (Java) voor vergaderin
 
 [Snel starten (SOAP-modus): Bepalen of een document compatibel is met PDF/A met behulp van de Java API](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api) (SOAP-modus)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -233,6 +237,7 @@ Bepaal of een PDF-document PDF/A-compatibel is met behulp van de API (webservice
    * Een `BLOB` object dat het DDX-document vertegenwoordigt.
    * Het `MyMapOf_xsd_string_To_xsd_anyType` object dat het invoer-PDF-document bevat. De sleutels ervan moeten overeenkomen met de namen van de PDF-bronbestanden en de waarden ervan moeten het `BLOB` object zijn dat overeenkomt met het invoer-PDF-bestand.
    * Een `AssemblerOptionSpec` object dat uitvoeringsopties opgeeft.
+
    De `invoke` methode retourneert een `AssemblerResult` object dat XML-gegevens bevat die opgeven of het invoer-PDF-document een PDF/A-document is.
 
 1. Sla het geretourneerde XML-document op.
@@ -245,4 +250,4 @@ Bepaal of een PDF-document PDF/A-compatibel is met behulp van de API (webservice
 
 **Zie ook**
 
-[AEM-formulieren aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[AEM Forms aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)

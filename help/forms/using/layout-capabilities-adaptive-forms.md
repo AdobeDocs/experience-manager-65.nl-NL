@@ -9,7 +9,10 @@ topic-tags: author
 discoiquuid: 9459c414-eac9-4bd9-a773-cceaeb736c56
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5a76200a573d95026e2347d2049a089d975b5619
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1155'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,7 @@ Met Adobe Experience Manager (AEM) kunt u gebruiksvriendelijke adaptieve formuli
 
 Lees de volgende artikelen voor meer informatie over adaptieve formulieren voordat u meer leert over de verschillende lay-outmogelijkheden van adaptieve formulieren.
 
-[Inleiding tot AEM-formulieren](../../forms/using/introduction-aem-forms.md)
+[Inleiding tot AEM Forms](../../forms/using/introduction-aem-forms.md)
 
 [Inleiding tot ontwerpformulieren](../../forms/using/introduction-forms-authoring.md)
 
@@ -60,7 +63,7 @@ Lijst met deelvensterindelingen in adaptieve formulieren
 
 Met deze deelvensterlay-out maakt u een responsieve lay-out die zich aanpast aan de schermgrootte van uw apparaat zonder dat u hiervoor speciale navigatie nodig hebt.
 
-Met deze indeling kunt u meerdere adaptieve **[!UICONTROL deelvensterformuliercomponenten]** achter elkaar in het deelvenster plaatsen.
+Met deze lay-out kunt u meerdere **[!UICONTROL Panel adaptive form]** componenten achter elkaar in het deelvenster plaatsen.
 
 ![Een formulier met een responsieve indeling zoals wordt weergegeven op een klein scherm](assets/responsive_layout_seen_on_small_screen.png)
 
@@ -76,7 +79,7 @@ Met deze deelvensterindeling kunt u navigatie met instructies in een formulier b
 
 Gebruik de `Panel adaptive form` component om stapsgewijze navigatie in een deelvenster te bieden. Als u deze lay-out gebruikt, gaat een gebruiker pas naar de volgende stap nadat de huidige stap is voltooid
 
-```
+```javascript
 window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpression)
 ```
 
@@ -122,9 +125,9 @@ Deze indeling bepaalt de navigatie met behulp van een navigatiebalk en een navig
 
 De mobiele lay-outs zijn beschikbaar op `/libs/fd/af/layouts/mobile/` locatie. De volgende mobiele lay-outs zijn standaard beschikbaar in adaptieve formulieren.
 
-![Lijst met mobiele lay-outs in adaptieve formulieren](assets/mobile-navigation.png)
+![Lijst met mobiele indelingen in adaptieve formulieren](assets/mobile-navigation.png)
 
-Lijst met mobiele lay-outs in adaptieve formulieren
+Lijst met mobiele indelingen in adaptieve formulieren
 
 Als u een mobiele indeling gebruikt, kunt u het formuliermenu gebruiken om toegang te krijgen tot verschillende formulierdeelvensters. U kunt hiertoe tikken op ![het pictogram em6forms_form_menu](assets/aem6forms_form_menu.png) .
 

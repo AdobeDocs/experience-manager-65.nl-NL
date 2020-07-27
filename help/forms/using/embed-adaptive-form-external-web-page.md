@@ -9,7 +9,7 @@ topic-tags: author
 discoiquuid: d739c6da-3b41-4452-8728-d7cd1a3ae20b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '979'
 ht-degree: 0%
@@ -120,14 +120,14 @@ Laten we een voorbeeld bekijken van hoe u een Apache 2.4 reverse-proxyserver zon
 
 1. Open het `httpd.conf` configuratiebestand en verwijder de commentaarmarkering voor de volgende coderegels. U kunt deze coderegels ook toevoegen aan het bestand.
 
-   ```
+   ```text
    LoadModule proxy_html_module modules/mod_proxy_html.so
    LoadModule proxy_http_module modules/mod_proxy_http.so
    ```
 
 1. Stel proxyregels in door de volgende coderegels in het `httpd-proxy.conf` configuratiebestand toe te voegen.
 
-   ```
+   ```text
    ProxyPass /forms https://[AEM_Instance]/forms
    ProxyPassReverse /forms https://[AEM_Instance]/forms
    ```
@@ -136,7 +136,7 @@ Laten we een voorbeeld bekijken van hoe u een Apache 2.4 reverse-proxyserver zon
 
 Als u de AEM-server niet koppelt op een contextpad, gelden de proxyregels op de Apache-laag als volgt:
 
-```java
+```text
 ProxyPass /content https://<AEM_Instance>/content
 ProxyPass /etc https://<AEM_Instance>/etc
 ProxyPass /etc.clientlibs https://<AEM_Instance>/etc.clientlibs
@@ -151,7 +151,7 @@ ProxyPassReverse /content https://<AEM_Instance>/content
 
 >[!NOTE]
 >
->Als u opstelling een andere topologie, zorg ervoor dat u verzend toevoegt, vooraf instelt, en andere URLs aan de toegestane lijst bij de verzender laag.
+>Als u opstelling een andere topologie, ervoor zorgt dat u verzend toevoegt, vooraf instelt, en andere URLs aan de lijst van gewenste personen bij de verzender laag.
 
 ## Best practices {#best-practices}
 

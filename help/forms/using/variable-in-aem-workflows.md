@@ -10,9 +10,9 @@ topic-tags: publish
 discoiquuid: cbf4e35a-7905-44ab-ab68-fb443443f02d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 252dac988c8256cf99ee8487feb937d5345ed797
 workflow-type: tm+mt
-source-wordcount: '2090'
+source-wordcount: '2101'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Voer de volgende stappen uit om een variabele te maken:
    * Formuliergegevensmodel - Geef een formuliergegevensmodelpad op.
    * ArrayList - Geef een subtype op voor de verzameling.
 
-1. Geef een optionele beschrijving voor de variabele op en tik ![](assets/done_icon.png) om de wijzigingen op te slaan. De variabele wordt weergegeven in de lijst die beschikbaar is in het linkerdeelvenster.
+1. Geef een optionele beschrijving voor de variabele op en tik op ![done_icon](assets/done_icon.png) om de wijzigingen op te slaan. De variabele wordt weergegeven in de lijst die beschikbaar is in het linkerdeelvenster.
 
 Houd rekening met de volgende werkwijzen wanneer u variabelen maakt:
 
@@ -97,10 +97,10 @@ U kunt ook specifieke elementen van een variabele van het type JSON of XML bijwe
 Voer de volgende stappen uit om toewijzingen tussen variabelen toe te voegen:
 
 1. Tik op de pagina voor workflowbewerking op het pictogram Stappen dat beschikbaar is in de assistent van het workflowmodel.
-1. Sleep de stap Variabele **** instellen naar de werkstroomeditor en zet deze neer. Tik vervolgens op de stap en selecteer ![](assets/configure_icon.png) (Configureren).
+1. Sleep de stap Variabele **** instellen naar de werkstroomeditor en zet deze neer. Tik op de stap en selecteer ![configure_icon](assets/configure_icon.png) (Configure_icon).
 1. Selecteer **[!UICONTROL Mapping]** > **[!UICONTROL Add Mapping]**.
 1. Selecteer in de sectie **Variabele** toewijzen de variabele voor het opslaan van gegevens, selecteer de toewijzingsmodus en geef een waarde op die u in de variabele wilt opslaan. De toewijzingsmodi variëren op basis van het type variabele.
-1. Wijs meer variabelen toe om een betekenisvolle expressie te maken. Tap ![](assets/done_icon.png) to save the changes.
+1. Wijs meer variabelen toe om een betekenisvolle expressie te maken. Tik op ![done_icon](assets/done_icon.png) om de wijzigingen op te slaan.
 
 ### Voorbeeld 1: Vraag een variabele van XML om waarde voor een koordvariabele te plaatsen {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
 
@@ -273,8 +273,8 @@ workflowSession.startWorkflow(model, wfData, metaData);
 ## Een variabele bewerken {#edit-a-variable}
 
 1. Tik op de pagina voor de bewerkingsworkflow op het pictogram Variabelen in de assistent van het workflowmodel. In het gedeelte Variabelen in het linkerdeelvenster worden alle bestaande variabelen weergegeven.
-1. Tik op het pictogram ![](assets/edit.png) (Bewerken) naast de naam van de variabele die u wilt bewerken.
-1. Bewerk de variabelegegevens en tik ![](assets/done_icon.png) om de wijzigingen op te slaan. U kunt de **[!UICONTROL Name]** velden en **[!UICONTROL Type]** velden van een variabele niet bewerken.
+1. Tik op het pictogram ![Bewerken](assets/edit.png) (Bewerken) naast de naam van de variabele die u wilt bewerken.
+1. Bewerk de variabelegegevens en tik op ![done_icon](assets/done_icon.png) om de wijzigingen op te slaan. U kunt de **[!UICONTROL Name]** velden en **[!UICONTROL Type]** velden van een variabele niet bewerken.
 
 ## Een variabele verwijderen {#delete-a-variable}
 
@@ -284,7 +284,7 @@ Voer de volgende stappen uit om een variabele te verwijderen:
 
 1. Tik op de pagina voor de bewerkingsworkflow op het pictogram Variabelen in de assistent van het workflowmodel. In het gedeelte Variabelen in het linkerdeelvenster worden alle bestaande variabelen weergegeven.
 1. Tik op het pictogram Verwijderen naast de naam van de variabele die u wilt verwijderen.
-1. Tik ![](assets/done_icon.png) om de variabele te bevestigen en te verwijderen.
+1. Tik ![done_icon](assets/done_icon.png) om de variabele te bevestigen en te verwijderen.
 
 ## Verwijzingen {#references}
 

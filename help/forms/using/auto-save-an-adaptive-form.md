@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: d519ac4e-6d29-4a69-874e-792acabe87ff
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '669'
+ht-degree: 0%
 
 ---
 
@@ -26,22 +29,24 @@ U kunt een adaptief formulier zodanig configureren dat de inhoud automatisch wor
 
 Voor een adaptief formulier is de optie voor automatisch opslaan niet uitgeschakeld. U kunt de optie Automatisch opslaan inschakelen in de sectie **Automatisch opslaan** in de eigenschappen van een adaptief formulier. De sectie **Automatisch opslaan** bevat ook diverse andere configuratieopties. Voer de volgende stappen uit om de optie Automatisch opslaan in te schakelen en te configureren voor een adaptief formulier:
 
-1. Als u de sectie Automatisch opslaan wilt openen in de eigenschappen, selecteert u een component en tikt u op ![veldniveau](assets/field-level.png) > **[!UICONTROL Aangepaste formuliercontainer]**. Tik vervolgens op ![cmp](assets/cmppr.png).
-1. In de sectie **[!UICONTROL Automatisch opslaan]** **[!UICONTROL schakelt]** u de optie Automatisch opslaan in.
-1. Geef in het vak **[!UICONTROL Adaptieve formuliergebeurtenis]** 1 of TRUE op om het formulier automatisch op te slaan wanneer het formulier in de browser wordt geladen. U kunt ook een voorwaardelijke expressie opgeven voor een gebeurtenis die, wanneer deze wordt geactiveerd en waar wordt geretourneerd, de inhoud van het formulier opslaat.
+1. Als u de sectie Automatisch opslaan wilt openen in de eigenschappen, selecteert u een component en tikt u op ![veldniveau](assets/field-level.png) > **[!UICONTROL Adaptive Form Container]** en vervolgens op ![cmp](assets/cmppr.png).
+1. In de **[!UICONTROL Auto Save]** sectie kiest u **[!UICONTROL Enable]** de optie Automatisch opslaan.
+1. Geef in het **[!UICONTROL Adaptive Form Event]** vak 1 of TRUE op om het formulier automatisch op te slaan wanneer het formulier in de browser wordt geladen. U kunt ook een voorwaardelijke expressie opgeven voor een gebeurtenis die, wanneer deze wordt geactiveerd en waar wordt geretourneerd, de inhoud van het formulier opslaat.
 1. Geef de trigger op. Automatisch opslaan wordt geactiveerd op basis van uw configuratie. U kunt kiezen uit de volgende opties:
 
-   * **[!UICONTROL Gebaseerd op tijd:]** Selecteer de optie om de inhoud op te slaan op basis van een specifiek tijdsinterval.
-   * **[!UICONTROL Gebaseerd op gebeurtenis:]** Selecteer de optie om de inhoud op te slaan op basis van een gebeurtenis die wordt gestart.
+   * **[!UICONTROL Time based:]** Selecteer de optie om de inhoud op te slaan op basis van een specifiek tijdsinterval.
+   * **[!UICONTROL Event based:]** Selecteer de optie om de inhoud op te slaan op basis van een gebeurtenis die wordt gestart.
+
    Wanneer u een trigger selecteert, wordt het vak Strategieconfiguratie ingeschakeld. Met het vak Strategieconfiguratie kunt u:
 
-   * Geef een tijdsinterval op als u **[!UICONTROL Op tijd gebaseerde]** trigger selecteert.
-   * Geef een naam voor de gebeurtenis op als u een trigger op basis van **[!UICONTROL gebeurtenissen]** selecteert.
+   * Geef een tijdsinterval op als u een **[!UICONTROL Time based]** trigger selecteert.
+   * Geef een naam op voor de gebeurtenis als u **[!UICONTROL Event based]** trigger selecteert.
+
    U kunt ook uw eigen aangepaste strategie maken en aan de lijst toevoegen. Zie Een aangepaste strategie [implementeren om de formulieren](/help/forms/using/auto-save-an-adaptive-form.md#p-implement-a-custom-strategy-to-enable-autosave-for-adaptive-forms-p)automatisch op te slaan voor meer informatie.
 
 1. (Alleen op tijd gebaseerde automatische opslag) Voer de volgende stappen uit om opties voor op tijd gebaseerde automatische opslag te configureren.
 
-   1. Geef in het vak **[!UICONTROL Automatisch opslaan op dit interval]** het tijdsinterval in seconden op. Het formulier wordt herhaaldelijk opgeslagen nadat het aantal seconden is verstreken dat in het intervalvak is opgegeven.
+   1. Geef in het **[!UICONTROL Auto save on this interval]** vak het tijdsinterval in seconden op. Het formulier wordt herhaaldelijk opgeslagen nadat het aantal seconden is verstreken dat in het intervalvak is opgegeven.
 
 1. (Alleen op gebeurtenissen gebaseerde automatische opslag) Voer de volgende stappen uit om opties voor automatisch opslaan op basis van gebeurtenissen te configureren.
 
@@ -53,7 +58,7 @@ Voor een adaptief formulier is de optie voor automatisch opslaan niet uitgeschak
    >
    >Als u de optie Automatisch opslaan wilt gebruiken voor anonieme gebruikers, moet u de Forms Common Configuration Service zodanig configureren dat alle gebruikers formulieren kunnen bekijken, verifiëren en ondertekenen.
    >
-   >Om de dienst te vormen, ga naar de configuratie van de Console van het Web AEM bij `https://server:port/system/console/configMgr` en geef de Gemeenschappelijke Dienst **[!UICONTROL van de Configuratie van]** Vormen uit om de optie **[!UICONTROL Alle Gebruikers]** op het **[!UICONTROL Allow]** gebied te kiezen, en sparen de configuratie.
+   >Om de dienst te vormen, ga naar de configuratie van de Console van het Web AEM bij `https://server:port/system/console/configMgr` en geef **[!UICONTROL Forms Common Configuration Service]** uit om de **[!UICONTROL All Users]** optie op het **[!UICONTROL Allow]** gebied te kiezen, en sparen de configuratie.
 
 ## Een aangepaste strategie implementeren om automatisch opslaan van aangepaste formulieren in te schakelen {#implement-a-custom-strategy-to-enable-autosave-for-adaptive-forms}
 
@@ -63,7 +68,7 @@ U kunt een aangepaste gebeurtenis implementeren om de functie voor automatisch o
 
    In het volgende script wordt bijvoorbeeld de aangepaste `emailFocusChange`gebeurtenis gebruikt om de functie voor automatisch opslaan te activeren:
 
-   ```
+   ```javascript
    window.addEventListener("bridgeInitializeStart", function (){
        guideBridge.connect(function () { guideBridge.on("elementFocusChanged", function (event,data) {
            if(data.target.name === 'Email') {
@@ -80,7 +85,7 @@ U kunt een aangepaste gebeurtenis implementeren om de functie voor automatisch o
 
 1. Open het adaptieve formulier in de modus Schrijven.
 
-1. Selecteer in de bewerkingsmodus een component, tik vervolgens op ![veldniveau](assets/field-level.png) > **[!UICONTROL Aangepaste formuliercontainer]** en tik vervolgens op ![cmr](assets/cmppr.png).
-1. Open in de eigenschappen de sectie **[!UICONTROL Standaard]** . Voer in het vak **** Clientbibliotheek de waarde in van de categorie-eigenschap die is gedefinieerd tijdens het maken van de clientbibliotheekmappen.
-1. Open de sectie Automatisch opslaan. Geef in het vak **[!UICONTROL Automatisch opslaan na deze gebeurtenis]** een aangepaste gebeurtenis op die al in de clientbibliotheek is gedefinieerd. Click **[!UICONTROL OK]**.
+1. Selecteer in de bewerkingsmodus een component, tik vervolgens op ![veldniveau](assets/field-level.png) > **[!UICONTROL Adaptive Form Container]**, en tik vervolgens op ![cmr](assets/cmppr.png).
+1. Open de **[!UICONTROL Basic]** sectie in de eigenschappen. Voer in het **[!UICONTROL Client Library Category]** vak de waarde in van de categorie-eigenschap die is gedefinieerd tijdens het maken van de clientbibliotheekmappen.
+1. Open de sectie Automatisch opslaan. Geef in het **[!UICONTROL Auto save after this event]** vak een aangepaste gebeurtenis op die al in de clientbibliotheek is gedefinieerd. Klik op **[!UICONTROL OK]**.
 

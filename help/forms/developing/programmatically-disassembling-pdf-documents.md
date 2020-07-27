@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 8e38a597-5d22-4d83-95fe-4494fb04e4a3
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1730'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +30,7 @@ Door het `PDFsFromBookmarks` element wordt één document gegenereerd voor elke 
 
 Voor deze bespreking, veronderstel het volgende Dx- document wordt gebruikt.
 
-```as3
+```xml
  <?xml version="1.0" encoding="UTF-8"?>
  <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
       <PDFsFromBookmarks prefix="stmt">
@@ -46,7 +49,7 @@ Voor deze bespreking, veronderstel het volgende Dx- document wordt gebruikt.
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Assembler, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Voor meer informatie over de dienst van de Assembler, zie de Verwijzing van de [Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
@@ -73,10 +76,10 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
-* jbossall-client.jar (vereist als AEM-formulieren worden geïmplementeerd op JBoss)
+* adobe-utilities.jar (vereist als AEM Forms worden geïmplementeerd op JBoss)
+* jbossall-client.jar (vereist als AEM Forms worden geïmplementeerd op JBoss)
 
-als AEM Forms wordt geïmplementeerd op een ondersteunde J2EE-toepassingsserver die geen JBoss is, moet u adobe-utilities.jar en jbossall-client.jar vervangen door JAR-bestanden die specifiek zijn voor de J2EE-toepassingsserver waarop AEM Forms wordt geïmplementeerd.
+als AEM Forms worden geïmplementeerd op een ondersteunde J2EE-toepassingsserver die geen JBoss is, moet u adobe-utilities.jar en jbossall-client.jar vervangen door JAR-bestanden die specifiek zijn voor de J2EE-toepassingsserver waarop AEM Forms worden geïmplementeerd.
 
 **Een PDF Assembler-client maken**
 
@@ -104,7 +107,7 @@ Alle gedemonteerde PDF-documenten worden geretourneerd in een verzamelingsobject
 
 **Zie ook**
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -150,6 +153,7 @@ U kunt een PDF-document desassembleren met de API (Java) voor de vergaderingsser
    * Een `com.adobe.idp.Document` object dat staat voor het te gebruiken DDX-document
    * Een `java.util.Map` object dat het te demonteren PDF-document bevat
    * Een `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` object dat de runtime-opties opgeeft, inclusief het standaardfont en het logniveau van de taak
+
    De `invokeDDX` methode retourneert een `com.adobe.livecycle.assembler.client.AssemblerResult` object dat de gedemonteerde PDF-documenten en eventuele uitzonderingen bevat.
 
 1. Sla de gedemonteerde PDF-documenten op.
@@ -166,7 +170,7 @@ U kunt een PDF-document desassembleren met de API (Java) voor de vergaderingsser
 
 [Snel starten (SOAP-modus): Een PDF-document demonteren met de Java API](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-disassembling-a-pdf-document-using-the-java-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -228,6 +232,7 @@ U kunt een PDF-document desassembleren met de API (webservice) voor de Assembler
    * Een `BLOB` object dat staat voor het DDX-document dat het PDF-document demonteert
    * Het `MyMapOf_xsd_string_To_xsd_anyType` object dat het PDF-document bevat dat moet worden gedeassembleerd
    * Een `AssemblerOptionSpec` object dat uitvoeringsopties opgeeft
+
    De `invokeDDX` methode retourneert een `AssemblerResult` object dat de taakresultaten en eventuele uitzonderingen bevat die zich hebben voorgedaan.
 
 1. Sla de gedemonteerde PDF-documenten op.
@@ -242,4 +247,4 @@ U kunt een PDF-document desassembleren met de API (webservice) voor de Assembler
 
 [PDF-documenten programmatisch demonteren](#programmatically-disassembling-pdf-documents)
 
-[AEM-formulieren aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[AEM Forms aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)

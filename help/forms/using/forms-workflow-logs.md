@@ -1,8 +1,8 @@
 ---
-title: Aanmelden bij AEM Forms-workflows
-seo-title: Aanmelden bij AEM Forms-workflows
-description: Met logboeken kunt u fouten opsporen in workflowproblemen met AEM Forms.
-seo-description: Met logboeken kunt u fouten opsporen in workflowproblemen met AEM Forms.
+title: Aanmelden bij werkstromen van AEM Forms
+seo-title: Aanmelden bij werkstromen van AEM Forms
+description: Logboeken gebruiken om fouten op te sporen in de werkstroom van AEM Forms.
+seo-description: Logboeken gebruiken om fouten op te sporen in de werkstroom van AEM Forms.
 uuid: 869d0271-c7e3-4b6d-8e63-893dc6af8b8a
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,12 +10,15 @@ topic-tags: publish
 discoiquuid: 14bb521a-42ea-4fe2-90fb-202e7ddf917a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '282'
+ht-degree: 6%
 
 ---
 
 
-# Aanmelden bij AEM Forms-workflows{#logging-in-aem-forms-workflows}
+# Aanmelden bij werkstromen van AEM Forms{#logging-in-aem-forms-workflows}
 
 Workflowstappen voor formulieren bieden gedetailleerde logboeken voor het eenvoudig opsporen van fouten in workflowgerelateerde problemen. Schakel foutopsporingslogbestand in voor AEM Forms-workflows om de logbestanden weer te geven.
 
@@ -40,7 +43,7 @@ De logbestanden voor foutopsporing voor formulierworkflows zijn onder andere:
 
 * Variabelen die zijn geschreven in de JCR-gegevensopslagruimte. Bijvoorbeeld:
 
-   ```
+   ```verilog
       [DEBUG] Successfully written variable <variable name> into meta data node at <JCR path where meta data is being written>
    ```
 
@@ -49,14 +52,14 @@ De logbestanden voor foutopsporing voor formulierworkflows zijn onder andere:
 
 * Dynamische stapmetagegevensparameters. Bijvoorbeeld:
 
-   ```
+   ```verilog
    [DEBUG] Document of Record to be generated for adaptive form <path of adaptive form>
     [DEBUG] Locale to be used for Document of Record is <locale>
    ```
 
 In het volgende voorbeeld worden de logboeken voor de stap Document ondertekenen weergegeven:
 
-```xml
+```verilog
 [DEBUG] Executing sign document step.
 [DEBUG] Using adobe sign configuration: <path of adobe sign configuration>
 [DEBUG] Invoking Adobe Sign Service for creating agreement
@@ -76,19 +79,19 @@ Als er een uitzondering is, kunt u de volledige stacktracering bekijken om de oo
 
 ## Foutopsporingsregistratie inschakelen voor AEM Forms-workflows {#enable-debug-logging-for-aem-forms-workflows}
 
-Voer de volgende stappen uit om foutopsporingslogbestanden voor AEM Forms-workflows in te schakelen:
+Voer de volgende stappen uit om het registreren van fouten voor de werkschema&#39;s van AEM Forms toe te laten:
 
 1. Ga naar AEM webconsoleconfiguratiebeheer op:
 
    https://&#39;[server]:[port]&#39;/system/console/configMgr
 
-1. Selecteer **[!UICONTROL Verdelen]** > **[!UICONTROL Logondersteuning]**.
-1. Tik op Nieuwe **[!UICONTROL logboekregistratie toevoegen.]**
-1. Selecteer **[!UICONTROL Foutopsporing]** als **[!UICONTROL Logniveau]**.
+1. Selecteer **[!UICONTROL Sling]** > **[!UICONTROL Log Support]**.
+1. Tik op **[!UICONTROL Add new Logger.]**
+1. Selecteer **[!UICONTROL Debug]** als **[!UICONTROL Log Level]**.
 1. Geef de locatie van het logbestand op. De standaardlocatie voor het logbestand is: *logs\error.log*
-1. Geef de naam van het pakket op als **com.adobe.granite.workflow.core** in de kolom **[!UICONTROL Logger]** .
+1. Geef de naam van het pakket op als **com.adobe.granite.workflow.core** in de **[!UICONTROL Logger]** kolom.
 
-   Als u deze stappen uitvoert, kunnen de logbestanden voor foutopsporing worden opgeslagen voor het pakket **com.adobe.granite.workflow.core** . Tik op **[!UICONTROL +]** en voeg de volgende pakketnamen toe aan de lijst:
+   Als u deze stappen uitvoert, kunnen de logbestanden voor foutopsporing worden opgeslagen voor het pakket **com.adobe.granite.workflow.core** . Tik op de volgende pakketnamen **[!UICONTROL +]** en voeg deze toe aan de lijst:
 
    * com.adobe.fd.workflow
    * com.adobe.fd.workspace

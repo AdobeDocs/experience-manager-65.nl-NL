@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 813162be-dbf5-4dc1-80ff-e37dbc25ef60
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '238'
+ht-degree: 0%
 
 ---
 
@@ -23,17 +26,17 @@ Java API Quick Start (SOAP) is beschikbaar voor de API Backup and Restore Servic
 
 [Snel starten: Back-upmodus verlaten met de Java API (SOAP)](backup-restore-service-api-quick.md#quick-start-soap-mode-leaving-backup-mode-using-the-java-api)
 
-De verrichtingen van de Vormen van AEM kunnen worden uitgevoerd gebruikend sterk-getypte API van Vormen AEM en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
+De verrichtingen van AEM Forms kunnen worden uitgevoerd gebruikend AEM Forms sterk-getypte API en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
 
 >[!NOTE]
 >
->De snelle Beginnen die in Programmering met Vormen AEM wordt gevestigd zijn gebaseerd op het werkende systeem van Vormen. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>De snelle Begarts die in Programmering met AEM Forms wordt gevestigd zijn gebaseerd op het werkende systeem van Vormen. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Snel starten (SOAP-modus): Back-upmodus starten met de Java API {#quick-start-soap-mode-entering-backup-mode-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt gedurende twee uur de back-upmodus geactiveerd met een uniek label. Nadat de back-uptijd is verlopen of als de back-upmodus expliciet is afgesloten, keert de formulierserver terug naar het opschonen van bestanden in de algemene documentopslag. (Zie Back-upmodus [invoeren op de formulierserver](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -148,7 +151,7 @@ In het volgende Java-codevoorbeeld wordt gedurende twee uur de back-upmodus geac
 
 In het volgende Java-codevoorbeeld wordt expliciet aangegeven dat een Forms Server de back-upmodus verlaat en terugkeert naar het leegmaken van bestanden uit de algemene documentopslag. (Zie Back-upmodus [verlaten op de formulierserver](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:

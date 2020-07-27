@@ -11,7 +11,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 7eb0e8a8-d76a-43f7-a012-c21157b14cd4
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '2304'
+ht-degree: 0%
 
 ---
 
@@ -55,7 +58,7 @@ U kunt de JS- en CSS-bestanden verkrijgen door het bestand adobe-forms-&lt;appse
 
 De volgende XML-syntaxis toont een voorbeeld van het bestand fscmenu.xml.
 
-```as3
+```html
  <div id="fscmenu" fscJS="FSToolBarURI/scripts/fscmenu.js" fscCSS="FSToolBarURI/fscmenu.css" fscVCSS="FSToolBarURI/fscmenu-v.css" fscIECSS="FSToolBarURI/fscmenu-ie.css">
          <ul class="fscmenuItem" id="Home">
              <li>
@@ -109,7 +112,7 @@ Als onderdeel van het aanpassen van een werkbalk kunt u de waarde voor de landin
 
 Als u de landinstellingswaarde van een werkbalk wilt wijzigen, moet u ervoor zorgen dat het bestand fscmenu.xml de taal bevat die u wilt weergeven. De volgende syntaxis van XML toont het fscmenu.xml- dossier dat wordt gebruikt om een Franse toolbar te tonen.
 
-```as3
+```html
  <div id="fscmenu" fscJS="FSToolBarURI/scripts/fscmenu.js" fscCSS="FSToolBarURI/fscmenu.css" fscVCSS="FSToolBarURI/fscmenu-v.css" fscIECSS="FSToolBarURI/fscmenu-ie.css">
          <ul class="fscmenuItem" id="Home">
              <li>
@@ -152,7 +155,7 @@ Geef ook een geldige landinstellingswaarde op door de methode van het `HTMLRende
 >
 >Voordat u een HTML-formulier genereert dat gebruikmaakt van een aangepaste werkbalk, moet u weten hoe HTML-formulieren worden gegenereerd. (Zie Formulieren [weergeven als HTML](/help/forms/developing/rendering-forms-html.md).)
 
-Voor meer informatie over de dienst van Vormen, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+Voor meer informatie over de dienst van Vormen, zie de Verwijzing van de [Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary-of-steps}
 
@@ -192,13 +195,13 @@ Wanneer de service Forms een HTML-formulier genereert, wordt een formuliergegeve
 
 [HTML-formulieren met een aangepaste werkbalk weergeven met de webservice-API](#rendering-an-html-form-with-a-custom-toolbar-using-the-web-service-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 [Forms Service API, snel aan de slag](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Interactieve PDF-formulieren renderen](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Interactieve PDF forms renderen](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
 [Formulieren weergeven als HTML](/help/forms/developing/rendering-forms-html.md)
 
@@ -223,6 +226,7 @@ Een HTML-formulier met een aangepaste werkbalk weergeven met de API (Java) voor 
    * Als u een HTML-formulier met een werkbalk wilt weergeven, roept u de methode van het `HTMLRenderSpec` object aan en geeft u een `setHTMLToolbar` `HTMLToolbar` opsommingswaarde door. Als u bijvoorbeeld een verticale HTML-werkbalk wilt weergeven, geeft u door `HTMLToolbar.Vertical`.
    * Geef de locatie van het XML-bestand van het fsmenu op door de methode van het `HTMLRenderSpec` `setToolbarURI` object aan te roepen en een tekenreekswaarde door te geven die de URI-locatie van het XML-bestand aangeeft.
    * Stel, indien van toepassing, de waarde van de landinstelling in door de methode van het `HTMLRenderSpec` `setLocale` object aan te roepen en een tekenreekswaarde door te geven die de waarde van de landinstelling opgeeft. De standaardwaarde is Engels.
+
    >[!NOTE]
    >
    >Met de snelstarthandleidingen die aan deze sectie zijn gekoppeld, stelt u deze waarde in op `fr_FR`*.*
@@ -238,6 +242,7 @@ Een HTML-formulier met een aangepaste werkbalk weergeven met de API (Java) voor 
    * Een tekenreekswaarde die de `HTTP_USER_AGENT` koptekstwaarde opgeeft, zoals `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
    * Een `URLSpec` object dat URI-waarden opslaat die vereist zijn om een HTML-formulier te genereren.
    * Een `java.util.HashMap` object dat bestandsbijlagen opslaat. Dit is een optionele parameter en u kunt opgeven `null` of u geen bestanden aan het formulier wilt koppelen.
+
    De `renderHTMLForm` methode retourneert een `FormsResult` object dat een formuliergegevensstroom bevat die naar de webbrowser van de client moet worden geschreven.
 
 1. De formuliergegevensstroom naar de webbrowser van de client schrijven
@@ -254,7 +259,7 @@ Een HTML-formulier met een aangepaste werkbalk weergeven met de API (Java) voor 
 
 [Snel starten (SOAP-modus): Een HTML-formulier weergeven met een aangepaste werkbalk met de Java API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-with-a-custom-toolbar-using-the-java-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -277,6 +282,7 @@ Een HTML-formulier met een aangepaste werkbalk weergeven met de API (webservice)
    * Als u een HTML-formulier met een werkbalk wilt weergeven, roept u de methode van het `HTMLRenderSpec` object aan en geeft u een `setHTMLToolbar` `HTMLToolbar` opsommingswaarde door. Als u bijvoorbeeld een verticale HTML-werkbalk wilt weergeven, geeft u door `HTMLToolbar.Vertical`.
    * Geef de locatie van het XML-bestand van het fsmenu op door de methode van het `HTMLRenderSpec` `setToolbarURI` object aan te roepen en een tekenreekswaarde door te geven die de URI-locatie van het XML-bestand aangeeft.
    * Stel, indien van toepassing, de waarde van de landinstelling in door de methode van het `HTMLRenderSpec` `setLocale` object aan te roepen en een tekenreekswaarde door te geven die de waarde van de landinstelling opgeeft. De standaardwaarde is Engels.
+
    >[!NOTE]
    >
    >Met de snelstarthandleidingen die aan deze sectie zijn gekoppeld, stelt u deze waarde in op `fr_FR`*.*
@@ -298,6 +304,7 @@ Een HTML-formulier met een aangepaste werkbalk weergeven met de API (webservice)
    * Een leeg `javax.xml.rpc.holders.StringHolder` object dat door de `renderHTMLForm` methode wordt gevuld. In dit argument wordt de waarde van de landinstelling opgeslagen.
    * Een leeg `javax.xml.rpc.holders.StringHolder` object dat door de `renderHTMLForm` methode wordt gevuld. In dit argument wordt de gebruikte HTML-renderwaarde opgeslagen.
    * Een leeg `com.adobe.idp.services.holders.FormsResultHolder` object dat de resultaten van deze bewerking zal bevatten.
+
    De `renderHTMLForm` methode vult het `com.adobe.idp.services.holders.FormsResultHolder` object dat als laatste argumentwaarde wordt doorgegeven, met een formuliergegevensstroom die naar de webbrowser van de client moet worden geschreven.
 
 1. De formuliergegevensstroom naar de webbrowser van de client schrijven
@@ -312,4 +319,4 @@ Een HTML-formulier met een aangepaste werkbalk weergeven met de API (webservice)
 
 **Zie ook**
 
-[AEM-formulieren aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[AEM Forms aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)

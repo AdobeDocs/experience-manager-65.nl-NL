@@ -1,8 +1,8 @@
 ---
 title: Starten en stoppen van services
 seo-title: Starten en stoppen van services
-description: Leer hoe u services die aan AEM Forms-modules en de toepassingsserver en -database zijn gekoppeld, kunt starten en stoppen.
-seo-description: Leer hoe u services die aan AEM Forms-modules en de toepassingsserver en -database zijn gekoppeld, kunt starten en stoppen.
+description: Leer hoe te om de diensten te beginnen en tegen te houden verbonden aan de modules van AEM Forms en de toepassingsserver en het gegevensbestand.
+seo-description: Leer hoe te om de diensten te beginnen en tegen te houden verbonden aan de modules van AEM Forms en de toepassingsserver en het gegevensbestand.
 uuid: 8c831cb2-4165-4118-8a09-764cec4e5e05
 contentOwner: admin
 content-type: reference
@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b93060bd-c6e1-40d2-8acd-ccafb8ed56da
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '287'
+ht-degree: 0%
 
 ---
 
@@ -38,14 +41,14 @@ Een volledige implementatie van AEM-formulieren omvat een toepassingsserver en d
 
 In Windows zijn deze services toegankelijk via het deelvenster **** Systeembeheer **>** Services. Als u bijvoorbeeld AEM-formulieren op JBoss hebt geïnstalleerd met de methode key turnkey, zijn de volgende services beschikbaar op uw systeem:
 
-* JBoss voor Adobe Experience Manager-formulieren
-* MySQL voor Adobe Experience Manager-formulieren
+* JBoss voor Adobe Experience Managers
+* MySQL voor formulieren voor Adobe Experience Managers
 
 Start of stop deze services door deze te selecteren in de lijst in het deelvenster Services en vervolgens op de desbetreffende actieknop in het deelvenster te klikken.
 
 Voer in UNIX® of Linux de volgende tekst in vanaf een opdrachtregel, waarbij *`[service name]`* de naam van de service is die u controleert:
 
-```as3
+```java
      ps -A | grep [service name]
 ```
 

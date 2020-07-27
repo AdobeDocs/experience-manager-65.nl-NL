@@ -10,7 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: 046e3314-b436-47ed-98be-43d85f576789
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '1910'
 ht-degree: 0%
@@ -170,7 +170,7 @@ Nadat u elke wijziging aan de serverzijde hebt aangebracht, start u de bundel Ad
 >
 >Mogelijk moet u de cache van de browser wissen.
 
-1. Ga naar `https://[host]:'port'/system/console/bundles`. Meld u indien nodig aan als beheerder.
+1. Go to `https://[host]:'port'/system/console/bundles`. Meld u indien nodig aan als beheerder.
 
 1. Zoek de Adobe Asset Composer Building Block-bundel. Start de bundel opnieuw: Klik op Stoppen en vervolgens op Start.
 
@@ -192,7 +192,7 @@ De handeling/knop bij klikken op handeling/knop wordt uitgevoerd met logica voor
 * Nieuwe toegevoegde actie in-/uitschakelen: doet dit door de actionEnabled() functie te negeren.
 * Werkelijke afhandeling van actie wanneer de gebruiker op de knop klikt: gedaan door de implementatie van de handleAction() functie te negeren.
 
-1. Ga naar `https://'[server]:[port]'/[ContextPath]/crx/de`. Meld u indien nodig aan als beheerder.
+1. Go to `https://'[server]:[port]'/[ContextPath]/crx/de`. Meld u indien nodig aan als beheerder.
 
 1. Maak in de map Apps een map met de naam `js` in de tak /apps van CRX met een structuur die lijkt op de volgende map:
 
@@ -226,7 +226,7 @@ De handeling/knop bij klikken op handeling/knop wordt uitgevoerd met logica voor
    1. Dubbelklik op het bestand ccrcustomization.js om dit te openen in CRX.
    1. Plak de volgende code in het bestand en klik op Alles **** opslaan:
 
-      ```
+      ```javascript
       /* for adding and handling custom actions in Extensible Toolbar.
         * One instance of handler will be created for each action.
         * CM.domain.CCRCustomActionHandler is actionHandler class.
@@ -349,6 +349,7 @@ Het LCA-proces wordt uitgevoerd op de LiveCycle-server en vereist het serveradre
    * **Server-URL**: URL van de server LC waarvan verzendt voor de dienst van het Overzicht de code van de actiemanager gebruikt.
    * **Gebruikersnaam**: Gebruikersnaam beheerder van de LC-server
    * **Wachtwoord**: Wachtwoord voor de gebruikersnaam van de beheerder
+
    ![Configuratie van Adobe LiveCycle Client SDK](assets/3_clientsdkconfiguration.png)
 
 #### LiveCycle Archive (LCA) installeren {#install-livecycle-archive-lca}
@@ -379,7 +380,7 @@ Het vereiste LiveCycle-proces dat het e-mailserviceproces mogelijk maakt.
 
 1. Klik op **Importeren**.
 
-#### ServiceName toevoegen aan de lijst van de Dienst van de Toegestane lijst {#adding-servicename-to-the-allowlist-service-list}
+#### Het toevoegen van ServiceName aan de lijst van de Dienst van de Lijst van gewenste personen {#adding-servicename-to-the-allowlist-service-list}
 
 Vermeld in de AEM-server de LiveCycle-services die u wilt openen tot de AEM-server.
 
@@ -398,7 +399,7 @@ In dit scenario configureert u de e-mailservice in de LiveCycle-server, zodat Co
 
 1. Ga naar **Home > Services > Toepassingen en services > Servicebeheer**.
 
-1. Zoek en klik op **EmailService**.
+1. Locate and click **EmailService**.
 
 1. In **Gastheer** SMTP, vorm de e-maildienst.
 
@@ -420,6 +421,7 @@ Zie AEM Forms [verbinden met Adobe LiveCycle](/help/forms/using/aem-livecycle-co
    * **crx.username**= AEM-gebruikersnaam
    * **crx.password**= AEM-wachtwoord
    * **crx.appRoot**=/content/apps/cm
+
    >[!NOTE]
    >
    >Start de LiveCycle Server telkens opnieuw wanneer u wijzigingen op de server aanbrengt. Zie LiveCycle ES [uitbreiden via aangepaste DSC-ontwikkeling](https://www.adobe.com/devnet/livecycle/articles/dsc_development.html)voor informatie over het maken van uw eigen LiveCycle-component.

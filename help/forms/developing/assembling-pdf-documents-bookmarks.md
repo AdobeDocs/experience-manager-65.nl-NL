@@ -11,7 +11,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 9f4711a8-033c-4051-ab41-65a26838899b
 translation-type: tm+mt
-source-git-commit: e3f700b52446505224fa4b4688d439750a66f471
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '2526'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +30,7 @@ Bladwijzers bevatten de volgende eigenschappen:
 
 Voor deze bespreking, veronderstel dat het volgende DDX- document wordt gebruikt.
 
-```as3
+```xml
  <?xml version="1.0" encoding="UTF-8"?>
  <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
        <PDF result="FinalDoc.pdf">
@@ -44,7 +47,7 @@ In dit voorbeeld-DDX-document geeft het `Bookmarks` element `doc2` als waarde op
 
 In dit onderwerp wordt de volgende taal voor XML-bladwijzers gebruikt om een PDF-document met bladwijzers samen te stellen.
 
-```as3
+```xml
  <?xml version="1.0" encoding="UTF-8"?>
  <Bookmarks xmlns="https://ns.adobe.com/pdf/bookmarks" version="1.0">
        <Bookmark>
@@ -84,7 +87,7 @@ Wanneer een gebruiker op de *Open referentie Loan Details* klikt, wordt LoanDeta
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Assembler, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Voor meer informatie over de dienst van de Assembler, zie de Verwijzing van de [Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
@@ -113,10 +116,10 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
-* jbossall-client.jar (vereist als AEM-formulieren worden geïmplementeerd op JBoss)
+* adobe-utilities.jar (vereist als AEM Forms worden geïmplementeerd op JBoss)
+* jbossall-client.jar (vereist als AEM Forms worden geïmplementeerd op JBoss)
 
-als AEM Forms wordt geïmplementeerd op een andere ondersteunde J2EE-toepassingsserver dan JBoss, moet u de bestanden adobe-utilities.jar en jbossall-client.jar vervangen door JAR-bestanden die specifiek zijn voor de J2EE-toepassingsserver waarop AEM Forms wordt geïmplementeerd. Zie [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van alle JAR-bestanden voor AEM Forms.
+als AEM Forms worden geïmplementeerd op een andere ondersteunde J2EE-toepassingsserver dan JBoss, moet u de bestanden adobe-utilities.jar en jbossall-client.jar vervangen door JAR-bestanden die specifiek zijn voor de J2EE-toepassingsserver waarop AEM Forms worden geïmplementeerd. Zie [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van alle JAR-bestanden voor AEM Forms.
 
 **Een PDF Assembler-client maken**
 
@@ -130,7 +133,7 @@ Er moet naar een DDX-document worden verwezen om een PDF-document samen te stell
 
 Verwijs naar een PDF-document waaraan bladwijzers worden toegevoegd. Het maakt niet uit of het PDF-document waarnaar wordt verwezen al bladwijzers bevat. Als het `Bookmarks` element een onderliggend element van het PDF-bronelement is, worden de bestaande bladwijzers in de PDF-bron vervangen door de bladwijzers. Als u echter de bestaande bladwijzers wilt behouden, moet u ervoor zorgen dat dit een nevenfunctie van het PDF-bronelement `Bookmarks` is. Neem bijvoorbeeld het volgende voorbeeld:
 
-```as3
+```xml
  <PDF result="foo">
       <PDF source="inDoc"/>
       <Bookmarks source="doc2"/>
@@ -151,7 +154,7 @@ U moet zowel het PDF-document waaraan bladwijzers worden toegevoegd als het XML-
 
 **Uitvoeringsopties instellen**
 
-U kunt runtime opties plaatsen die het gedrag van de dienst van de Assembler controleren terwijl het een baan uitvoert. U kunt bijvoorbeeld een optie instellen die de Assembler-service de opdracht geeft door te gaan met het verwerken van een taak als er een fout optreedt. Zie de `AssemblerOptionSpec` klasseverwijzing in de API-naslaggids voor [AEM-formulieren voor informatie over de runtime-opties die u kunt instellen](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+U kunt runtime opties plaatsen die het gedrag van de dienst van de Assembler controleren terwijl het een baan uitvoert. U kunt bijvoorbeeld een optie instellen die de Assembler-service de opdracht geeft door te gaan met het verwerken van een taak als er een fout optreedt. Zie de `AssemblerOptionSpec` klasseverwijzing in de API-naslaggids voor [AEM Forms voor informatie over de runtime-opties die u kunt instellen](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 **Het PDF-document samenstellen**
 
@@ -163,7 +166,7 @@ U moet de resultaten extraheren uit het geretourneerde object Map en het bijbeho
 
 **Zie ook**
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -222,6 +225,7 @@ U kunt een PDF-document samenstellen met bladwijzers met behulp van de API (Java
    * Een `com.adobe.idp.Document` object dat staat voor het te gebruiken DDX-document
    * Een `java.util.Map` object dat zowel het invoer-PDF-document als het XML-bladwijzerdocument bevat.
    * Een `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` object dat de runtime-opties opgeeft, inclusief standaardniveau voor lettertypen en taaklogbestanden
+
    De `invokeDDX` methode retourneert een `com.adobe.livecycle.assembler.client.AssemblerResult` object dat de resultaten van de taak en eventuele uitzonderingen bevat die zich hebben voorgedaan.
 
 1. Sla het PDF-document met bladwijzers op.
@@ -236,7 +240,7 @@ U kunt een PDF-document samenstellen met bladwijzers met behulp van de API (Java
 
 [Snel starten (SOAP-modus): PDF-documenten samenstellen met bladwijzers met behulp van de Java API](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-pdf-documents-with-bookmarks-using-the-java-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -309,6 +313,7 @@ U kunt een PDF-document samenstellen met bladwijzers met behulp van de API (webs
    * Een `BLOB` object dat staat voor het DDX-document
    * De `MyMapOf_xsd_string_To_xsd_anyType` array die de invoerdocumenten bevat
    * Een `AssemblerOptionSpec` object dat uitvoeringsopties opgeeft
+
    De `invokeDDX` methode retourneert een `AssemblerResult` object dat de resultaten van de taak en eventuele uitzonderingen bevat die zich hebben voorgedaan.
 
 1. Sla het PDF-document met bladwijzers op.
@@ -321,4 +326,4 @@ U kunt een PDF-document samenstellen met bladwijzers met behulp van de API (webs
 
 **Zie ook**
 
-[AEM-formulieren aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[AEM Forms aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)

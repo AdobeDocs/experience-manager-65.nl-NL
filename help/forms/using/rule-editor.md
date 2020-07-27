@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '6774'
+ht-degree: 0%
 
 ---
 
@@ -134,11 +137,11 @@ Tijdens het schrijven van een When-regel kunt u de Clear Value of action activer
 
 Naast formuliergegevensmodelservice kunt u een directe WSDL-URL opgeven om een webservice aan te roepen. Een service voor een formuliergegevensmodel heeft echter vele voordelen en de aanbevolen aanpak om een service aan te roepen.
 
-Voor meer informatie over het vormen van de diensten in het model van vormgegevens, zie de Integratie [van Gegevens van de Vormen](/help/forms/using/data-integration.md)AEM.
+Voor meer informatie over het vormen van de diensten in het model van vormgegevens, zie de Integratie [van Gegevens van](/help/forms/using/data-integration.md)AEM Forms.
 
 **Stel waarde van** Berekenen in en stel de waarde van het opgegeven object in. U kunt de objectwaarde instellen op een tekenreeks, de waarde van een ander object, de berekende waarde met behulp van de wiskundige expressie of functie, de waarde van een eigenschap van een object of de uitvoerwaarde van een geconfigureerde formuliergegevensmodelservice. Wanneer u de optie Webservice kiest, worden alle services weergegeven die in alle formuliergegevensmodellen zijn geconfigureerd op uw AEM-exemplaar. Als u een service voor een formuliergegevensmodel kiest, worden extra velden weergegeven waarin u formulierobjecten kunt toewijzen met invoer- en uitvoerparameters voor de opgegeven service.
 
-Voor meer informatie over het vormen van de diensten in het model van vormgegevens, zie de Integratie [van Gegevens van de Vormen](/help/forms/using/data-integration.md)AEM.
+Voor meer informatie over het vormen van de diensten in het model van vormgegevens, zie de Integratie [van Gegevens van](/help/forms/using/data-integration.md)AEM Forms.
 
 Met het regeltype Eigenschap **** instellen kunt u de waarde van een eigenschap van het opgegeven object instellen op basis van een voorwaardenactie.
 
@@ -176,7 +179,7 @@ De volgende afbeelding toont een voorbeeld van het dynamisch toevoegen van selec
 
 ### Waarde instellen van {#set-value-of}
 
-Met de waarde **[!UICONTROL Set van]** regeltype kunt u de waarde van een formulierobject instellen, afhankelijk van het feit of aan de opgegeven voorwaarde wordt voldaan of niet. De waarde kan worden ingesteld op een waarde van een ander object, een letterlijke tekenreeks, een waarde die is afgeleid van een wiskundige expressie of een functie, een waarde van een eigenschap van een ander object of de uitvoer van een service van een formuliergegevensmodel. Op dezelfde manier kunt u controleren op een voorwaarde voor een component, een tekenreeks, een eigenschap of waarden die zijn afgeleid van een functie of wiskundige expressie.
+Met het **[!UICONTROL Set Value of]** regeltype kunt u de waarde van een formulierobject instellen, afhankelijk van het feit of aan de opgegeven voorwaarde wordt voldaan of niet. De waarde kan worden ingesteld op een waarde van een ander object, een letterlijke tekenreeks, een waarde die is afgeleid van een wiskundige expressie of een functie, een waarde van een eigenschap van een ander object of de uitvoer van een service van een formuliergegevensmodel. Op dezelfde manier kunt u controleren op een voorwaarde voor een component, een tekenreeks, een eigenschap of waarden die zijn afgeleid van een functie of wiskundige expressie.
 
 Merk op dat de Vastgestelde Waarde van regeltype niet beschikbaar voor alle vormvoorwerpen, zoals panelen en toolbarknopen is. Een standaardsetwaarde van regel heeft de volgende structuur:
 
@@ -294,7 +297,7 @@ Een typisch Validate regel is gestructureerd als volgt:
 
 >[!NOTE]
 >
->Als de opgegeven waarde niet voldoet aan de regel Valideren, kunt u een validatiebericht voor de gebruiker weergeven. U kunt het bericht in het veld **[!UICONTROL Script-validatiebericht]** opgeven in de componenteigenschappen op de zijbalk.
+>Als de opgegeven waarde niet voldoet aan de regel Valideren, kunt u een validatiebericht voor de gebruiker weergeven. U kunt het bericht in het **[!UICONTROL Script validation message]** veld in de componenteigenschappen in de zijbalk opgeven.
 
 ![scriptvalidatie](assets/script-validation.png)
 
@@ -330,7 +333,7 @@ Om het gebruikersinterface van de regelredacteur te lanceren:
 
    Eventuele bestaande regels voor de geselecteerde formulierobjecten worden in deze weergave weergegeven. Zie [Regels](../../forms/using/rule-editor.md#p-manage-rules-p)beheren voor meer informatie over het beheren van bestaande regels.
 
-1. Tik op **[!UICONTROL Maken]** om een nieuwe regel te schrijven. De visuele redacteur van het gebruikersinterface van de regelredacteur opent door gebrek wanneer u de regelredacteur de eerste keer lanceert.
+1. Tik **[!UICONTROL Create]** om een nieuwe regel te schrijven. De visuele redacteur van het gebruikersinterface van de regelredacteur opent door gebrek wanneer u de regelredacteur de eerste keer lanceert.
 [ Gebruikersinterface ![van regeleditor](assets/rule-editor-ui.png)
 
    Klik om de vergrote afbeelding weer te geven
@@ -343,7 +346,7 @@ Hiermee geeft u de titel weer van het adaptieve formulierobject waarmee u de reg
 
 ### B. Formulierobjecten en -functies {#b-form-objects-and-functions-br}
 
-Het deelvenster links in de gebruikersinterface van de regeleditor bevat twee tabbladen: **[!UICONTROL Formulierobjecten]** en - **[!UICONTROL functies]**.
+De ruit op de linkerzijde in het gebruikersinterface van de regelredacteur omvat twee lusjes - **[!UICONTROL Forms Objects]** en **[!UICONTROL Functions]**.
 
 Op het tabblad Formulierobjecten wordt een hiërarchische weergave weergegeven van alle objecten in het aangepaste formulier. De titel en het type van de objecten worden weergegeven. Bij het schrijven van een regel kunt u formulierobjecten naar de regeleditor slepen. Wanneer u een regel maakt of bewerkt en een object of functie naar een tijdelijke aanduiding sleept, neemt de tijdelijke aanduiding automatisch het juiste waardetype.
 
@@ -373,17 +376,17 @@ Voor meer informatie over het gebruiken van visuele regelredacteur, zie [schrijf
 
 Gebruikers in de gebruikersgroep voor formulieren hebben toegang tot de code-editor. Voor andere gebruikers is de code-editor niet beschikbaar. Als u de rechten hebt, kunt u van visuele redacteurswijze aan de wijze van de coderedacteur van de regel, en vice versa schakelen, gebruikend de schakelaar recht boven de regelredacteur. Wanneer u regelredacteur de eerste keer lanceert, opent het op de visuele redacteurswijze. U kunt regels op de visuele redacteurswijze schrijven of op de wijze schakelen van de coderedacteur om een regelmanuscript te schrijven. Nochtans, merk op dat als u een regel wijzigt of een regel in coderedacteur schrijft, u niet terug naar de visuele redacteur voor die regel kunt schakelen tenzij u de coderedacteur ontruimt.
 
-AEM vormt sporen de wijze van de regelredacteur u het laatst gebruikte om een regel te schrijven. Wanneer u de regelredacteur de volgende keer lanceert, opent het op die wijze. Nochtans, kunt u een standaardwijze ook vormen om de regelredacteur op de gespecificeerde wijze te openen. Daartoe:
+AEM Forms volgen de wijze van de regelredacteur u het laatst gebruikte om een regel te schrijven. Wanneer u de regelredacteur de volgende keer lanceert, opent het op die wijze. Nochtans, kunt u een standaardwijze ook vormen om de regelredacteur op de gespecificeerde wijze te openen. Daartoe:
 
 1. Ga naar AEM-webconsole op `https://[host]:[port]/system/console/configMgr`.
-1. Klik om de **[!UICONTROL Adaptive Form Configuration Service]** te bewerken.
-1. Kies **[!UICONTROL Visuele Redacteur]** of de Redacteur **[!UICONTROL van de]** Code van de **[!UICONTROL StandaardWijze voor de drop-down Redacteur]** van de Regel
+1. Klik om te bewerken **[!UICONTROL Adaptive Form Configuration Service]**.
+1. kiezen **[!UICONTROL Visual Editor]** of **[!UICONTROL Code Editor]** in het **[!UICONTROL Default Mode for Rule Editor]** keuzemenu
 
-1. Click **[!UICONTROL Save]**.
+1. Klik op **[!UICONTROL Save]**.
 
 ### F. Gereed en annuleer knoppen {#f-done-and-cancel-buttons}
 
-Met de knop **[!UICONTROL Gereed]** slaat u een regel op. U kunt een onvolledige regel opslaan. Onvolledig zijn echter ongeldig en worden niet uitgevoerd. Opgeslagen regels voor een formulierobject worden weergegeven wanneer u de regeleditor de volgende keer start vanuit hetzelfde formulierobject. U kunt bestaande regels in die weergave beheren. Zie [Regels](../../forms/using/rule-editor.md#p-manage-rules-p)beheren voor meer informatie.
+De **[!UICONTROL Done]** knoop wordt gebruikt om een regel te bewaren. U kunt een onvolledige regel opslaan. Onvolledig zijn echter ongeldig en worden niet uitgevoerd. Opgeslagen regels voor een formulierobject worden weergegeven wanneer u de regeleditor de volgende keer start vanuit hetzelfde formulierobject. U kunt bestaande regels in die weergave beheren. Zie [Regels](../../forms/using/rule-editor.md#p-manage-rules-p)beheren voor meer informatie.
 
 De **[!UICONTROL Cancel]** knoop verwerpt om het even welke veranderingen u aan een regel aanbracht en sluit de regelredacteur.
 
@@ -408,7 +411,7 @@ Voer de volgende stappen uit om regels te schrijven:
 
 1. Eerst schrijft u de regel om de zichtbaarheid van het veld Sjabloon bij echtgeno(o)t(e) in te stellen op basis van de optie die de gebruiker selecteert voor het keuzerondje Genderstatus.
 
-   Open het aanvraagformulier voor de lening in de ontwerpmodus. Tik op de component **burgerlijke status** en tik op ![bewerkingsregels](assets/edit-rules.png). Tik vervolgens op **[!UICONTROL Maken]** om de regeleditor te starten.
+   Open het aanvraagformulier voor de lening in de ontwerpmodus. Tik op de component **burgerlijke status** en tik op ![bewerkingsregels](assets/edit-rules.png). Tik vervolgens **[!UICONTROL Create]** om de regeleditor te starten.
 
    ![write-rules-visual-editor-1](assets/write-rules-visual-editor-1.png)
 
@@ -416,7 +419,7 @@ Voer de volgende stappen uit om regels te schrijven:
 
    U kunt het geselecteerde object niet wijzigen of wijzigen, maar u kunt een ander regeltype selecteren met de vervolgkeuzelijst Regel, zoals hieronder wordt weergegeven. Als u een regel voor een ander object wilt maken, tikt u op Annuleren om de regeleditor af te sluiten en start u deze opnieuw vanuit het gewenste formulierobject.
 
-1. Tik op Frame **** selecteren en selecteer **[!UICONTROL is gelijk aan]**. Het veld **[!UICONTROL Een tekenreeks]** invoeren wordt weergegeven.
+1. Tik op **[!UICONTROL Select State]** de vervolgkeuzelijst en selecteer **[!UICONTROL is equal to]**. Het **[!UICONTROL Enter a String]** veld wordt weergegeven.
 
    ![write-rules-visual-editor-2](assets/write-rules-visual-editor-2.png)
 
@@ -430,7 +433,7 @@ Voer de volgende stappen uit om regels te schrijven:
 
    U hebt de voorwaarde gedefinieerd als `When Marital Status is equal to Married`. Definieer vervolgens de actie die moet worden uitgevoerd als deze voorwaarde Waar is.
 
-1. Selecteer **[!UICONTROL Tonen]** in de vervolgkeuzelijst Handeling **** selecteren in de instructie Vervolgens.
+1. Selecteer een optie in de **[!UICONTROL Show]** **[!UICONTROL Select Action]** vervolgkeuzelijst bij Vervolgens.
 
    ![write-rules-visual-editor-5](assets/write-rules-visual-editor-5.png)
 
@@ -456,13 +459,13 @@ Voer de volgende stappen uit om regels te schrijven:
 
 1. Vervolgens schrijft u een regel om het beleenbare bedrag van de lening te berekenen, dat 50% van het totale salaris is, en geeft u dit weer in het veld Beleenbaarheid van de lening. Hiertoe maakt u **Set value of** rules on Loan Eligibility field.
 
-   Tik in de ontwerpmodus op het veld **[!UICONTROL Belichting]** voor lening en tik op ![bewerkingsregels](assets/edit-rules.png). Tik vervolgens op **[!UICONTROL Maken]** om de regeleditor te starten.
+   Tik in de ontwerpmodus op het **[!UICONTROL Loan Eligibility]** veld en tik op ![bewerkingsregels](assets/edit-rules.png). Tik vervolgens **[!UICONTROL Create]** om de regeleditor te starten.
 
-1. Selecteer Waarde van **[!UICONTROL regel]** instellen in de vervolgkeuzelijst met regels.
+1. Selecteer **[!UICONTROL Set Value Of]** regel in de vervolgkeuzelijst.
 
    ![write-rules-visual-editor-10](assets/write-rules-visual-editor-10.png)
 
-1. Tik op **[!UICONTROL Optie]** selecteren en selecteer **[!UICONTROL Wiskundige expressie]**. Er wordt een veld voor het schrijven van wiskundige expressies geopend.
+1. Tik **[!UICONTROL Select Option]** en selecteer **[!UICONTROL Mathematical Expression]**. Er wordt een veld voor het schrijven van wiskundige expressies geopend.
 
    ![write-rules-visual-editor-11](assets/write-rules-visual-editor-11.png)
 
@@ -473,6 +476,7 @@ Voer de volgende stappen uit om regels te schrijven:
    * Selecteer **Plus** in het veld **Operator** selecteren.
 
    * Selecteer of sleep-daling van het lusje van de Objecten van de Vormen het gebied van de Salaris **van de** Muis in het andere voorwerp van de **Daling of selecteer hier** gebied.
+
    ![write-rules-visual-editor-12](assets/write-rules-visual-editor-12.png)
 
 1. Tik vervolgens in het gemarkeerde gebied rond het expressieveld en tik op **Uitbreiden**.
@@ -500,6 +504,7 @@ Voer de volgende stappen uit om regels te schrijven:
    * Selecteren **is gelijk aan** in het veld **Operator** selecteren.
 
    * Selecteer Tekenreeks in het andere **object Drop of selecteer hier** een veld en geef **Gehuwd** op in het veld **Een tekenreeks** invoeren.
+
    De regel wordt uiteindelijk als volgt weergegeven in de regeleditor.  ![write-rules-visual-editor-16](assets/write-rules-visual-editor-16.png)
 
    Tik op **Gereed** om de regel op te slaan.
@@ -546,35 +551,45 @@ For more information, see [usejsdoc.org](https://usejsdoc.org/).
 
 Ondersteunde `jsdoc` tags:
 
-* **Privésyntaxis**: Een `@private`privéfunctie wordt niet opgenomen als een aangepaste functie.
+* **Privésyntaxis**: 
+Een functie van het type private is niet opgenomen als een aangepaste functie.`@private`
+Een functie van het type private is niet opgenomen als een aangepaste functie.
 
-* **Naamsyntaxis**: U kunt `@name funcName <Function Name>`ook `,` het volgende gebruiken: `@function funcName <Function Name>` of **of** `@func` `funcName <Function Name>`.
+* **Naamsyntaxis**: 
+U kunt `@name funcName <Function Name>`ook `,` het volgende gebruiken: `@function funcName <Function Name>` **of** `@func` . `funcName <Function Name>`.
    `funcName` is de naam van de functie (geen spaties toegestaan).
    `<Function Name>` is de weergavenaam van de functie.
 
-* **Syntaxis lid**: Koppelt `@memberof namespace`een naamruimte aan de functie.
+* **Syntaxis lid**: 
+Koppelt een naamruimte aan de functie.`@memberof namespace`
+Koppelt een naamruimte aan de functie.
 
-* **Parametersyntaxis**: U kunt `@param {type} name <Parameter Description>`ook het volgende gebruiken: `@argument` of `{type} name <Parameter Description>` of **** `@arg` `{type}` `name <Parameter Description>`.
+* **Parametersyntaxis**: 
+U kunt ook het volgende gebruiken: `@param {type} name <Parameter Description>`
+U kunt ook het volgende gebruiken: `@argument` `{type} name <Parameter Description>` **of** `@arg` `{type}``name <Parameter Description>`.
 Geeft parameters weer die door de functie worden gebruikt. Een functie kan meerdere parametertags hebben, één tag voor elke parameter in de volgorde waarin deze voorkomt.
    `{type}` vertegenwoordigt parametertype. Toegestane parametertypen zijn:
 
    1. string
    1. getal
    1. boolean
+
    Alle andere parametertypen worden in een van de bovenstaande categorieën ingedeeld. Geen wordt niet ondersteund. Selecteer een van de bovenstaande typen. Typen zijn niet hoofdlettergevoelig. Spaties zijn niet toegestaan in de parameter `name`. `<Parameter Descrption>` `<parameter>  can have multiple words. </parameter>`
 
-* **Syntaxis retourneringstype**: U kunt `@return {type}`ook deze optie gebruiken `@returns {type}`.
+* **Syntaxis retourneringstype**: 
+U kunt ook `@return {type}`Alternatief gebruiken, kunt u gebruiken `@returns {type}`.
 Voegt informatie over de functie toe, zoals zijn doel.
 {type} staat voor het retourneringstype van de functie. Toegestane retourtypen zijn:
 
    1. string
    1. getal
    1. boolean
+
    Alle andere retourneringstypen worden in een van de bovenstaande categorieën ingedeeld. Geen wordt niet ondersteund. Selecteer een van de bovenstaande typen. Retourtypen zijn niet hoofdlettergevoelig.
 
 >[!NOTE]
 >
->Opmerkingen vóór aangepaste functie worden gebruikt voor overzicht. Samenvatting kan tot veelvoudige lijnen worden uitgebreid tot een markering wordt ontmoet. Beperk de grootte tot één voor een beknopte beschrijving in de regelbouwer.
+>Opmerkingen vóór aangepaste functie worden gebruikt voor overzicht. De samenvatting kan tot veelvoudige lijnen uitbreiden tot een markering wordt ontmoet. Beperk de grootte tot één voor een beknopte beschrijving in de regelbouwer.
 
 **Een aangepaste functie toevoegen**
 
@@ -600,13 +615,13 @@ Als u een formulier wilt openen in de bewerkingsmodus, selecteert u een formulie
 
 1. Selecteer het invoernumerieke vak en tik op ![bewerkingsregels](assets/edit-rules.png) om de regeleditor te openen.
 1. Tik op **Regel**maken. Maak met de opties hieronder een regel om de kwadratwaarde van de invoer op te slaan in het veld Uitvoer van het formulier.
-   [ Het ![gebruiken van douanefuncties om een](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)ruleTap **Done** tot stand te brengen. Uw aangepaste functie wordt toegevoegd.
+   [ ![Het gebruiken van douanefuncties om een](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)ruleTap **Done** tot stand te brengen. Uw aangepaste functie wordt toegevoegd.
 
 #### Ondersteunde typen functiedeclaratie {#function-declaration-supported-types}
 
 **Functie, instructie**
 
-```
+```javascript
 function area(len) {
     return len*len;
 }
@@ -616,7 +631,7 @@ Deze functie is opgenomen zonder `jsdoc` opmerkingen.
 
 **Functie-expressie**
 
-```
+```javascript
 var area;
 //Some codes later
 /** */
@@ -750,7 +765,7 @@ Wanneer de gebruiker mededeelt dat hij minder dan 36 maanden op zijn huidige woo
 
 ## Effect van regeleditor op bestaande scripts {#impact-of-rule-editor-on-existing-scripts}
 
-In versies van AEM Forms die ouder zijn dan AEM 6.1 Forms, functiepak 1, schrijven formulierauteurs en -ontwikkelaars expressies naar het tabblad Scripts van het dialoogvenster Component bewerken om dynamisch gedrag toe te voegen aan adaptieve formulieren. Het tabblad Scripts wordt nu vervangen door de regeleditor.
+In versies voor AEM Forms ouder dan AEM 6.1 Forms feature pack 1 schrijven ontwerpers en ontwikkelaars van formulieren expressies naar het tabblad Scripts van het dialoogvenster Component bewerken om dynamisch gedrag toe te voegen aan adaptieve formulieren. Het tabblad Scripts wordt nu vervangen door de regeleditor.
 
 Alle scripts of expressies die u op het tabblad Scripts moet schrijven, zijn beschikbaar in de regeleditor. Hoewel u ze niet kunt weergeven of bewerken in de visuele editor, kunt u scripts in de code-editor bewerken als u deel uitmaakt van de gebruikersgroep voor formulieren.
 
@@ -758,7 +773,7 @@ Alle scripts of expressies die u op het tabblad Scripts moet schrijven, zijn bes
 
 ### Formuliergegevensmodelservice aanroepen {#invoke}
 
-Beschouw een webservice `GetInterestRates` die het bedrag van de lening, de looptijd en de kredietscore van de aanvrager als input gebruikt, en retourneert een leningenplan met daarin het bedrag en de rentevoet van het EMI. U maakt een formuliergegevensmodel met de webservice als gegevensbron. U voegt gegevensmodelobjecten en een `get` service toe aan het formuliermodel. De service wordt weergegeven op het tabblad Services van het formuliergegevensmodel. Maak vervolgens een adaptief formulier dat velden van gegevensmodelobjecten bevat om gebruikersinvoer voor de hoeveelheid leningen, de looptijd en de creditscore vast te leggen. Voeg een knop toe die de webservice activeert om plandetails op te halen. De uitvoer wordt ingevuld in de desbetreffende velden.
+Beschouw een webservice `GetInterestRates` die het bedrag van de lening, de looptijd en de kredietscore van de aanvrager als input gebruikt, en retourneert een leningenplan inclusief het bedrag en de rentevoet van het EMI. U maakt een formuliergegevensmodel met de webservice als gegevensbron. U voegt gegevensmodelobjecten en een `get` service toe aan het formuliermodel. De service wordt weergegeven op het tabblad Services van het formuliergegevensmodel. Maak vervolgens een adaptief formulier dat velden van gegevensmodelobjecten bevat om gebruikersinvoer voor de hoeveelheid leningen, de looptijd en de creditscore vast te leggen. Voeg een knop toe die de webservice activeert om plandetails op te halen. De uitvoer wordt ingevuld in de desbetreffende velden.
 
 De volgende regel toont hoe u de Invoke de dienstactie zult vormen om het voorbeeldscenario te verwezenlijken.
 

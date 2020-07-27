@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: d855aac2-f34d-402f-9dc3-c7ad494b45f2
 translation-type: tm+mt
-source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+source-git-commit: d80c6609b5a0ac299b57b1d0c0e8d6210e595b97
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -49,11 +49,11 @@ Om deze configuratie te bereiken OSGi:
 * Zoeken `AEM Communities User Generated Content Contribution Limits Configuration`.
 * Selecteer het bewerkingspictogram.
 
-![chlimage_1-127](assets/chlimage_1-127.png)
+![configure-Limieten](assets/configure-limits.png)
 
 * **[!UICONTROL Automatically Apply UGC Contribution Limits]**
 
-   Als deze optie ingeschakeld is, worden automatisch bijdragelimieten ingesteld voor gebruikers die zich als leden van de gemeenschap registreren. Dit wordt weerspiegeld in het profiel van het lid van de gemeenschap en kan van de [lidconsole](members.md)worden toegelaten/worden onbruikbaar gemaakt. Nieuwe leden met een e-mailadres uit een toegestane lijst met domeinen worden nooit beperkt.
+   Als deze optie ingeschakeld is, worden automatisch bijdragelimieten ingesteld voor gebruikers die zich als leden van de gemeenschap registreren. Dit wordt weerspiegeld in het profiel van het lid van de gemeenschap en kan van de [lidconsole](members.md)worden toegelaten/worden onbruikbaar gemaakt. Nieuwe leden met een e-mailadres uit een lijst van gewenste personen domeinen hebben nooit een beperking.
 
    De optie Standaard is uitgeschakeld.
 
@@ -71,11 +71,11 @@ Om deze configuratie te bereiken OSGi:
 
 * **[!UICONTROL Domains]**
 
-   Een allowlist van een of meer e-maildomeinen. Selecteer + pictogram om extra ingangen te maken.
+   Een lijst met lijsten van gewenste personen van een of meer e-maildomeinen. Selecteer + pictogram om extra ingangen te maken.
 
-   Gebruikers met e-mailadressen in de lijst met toegestane domeinen worden niet beïnvloed wanneer de UGC-bijdragelimieten automatisch worden toegepast. Als domein bijvoorbeeld aan de lijst met domeinen `mycompany.com` wordt toegevoegd, `me@mycompany.com` wordt een lid met een e-mailadres nooit verplicht om te posten.
+   Gebruikers met e-mailadressen in de lijst van gewenste personen van domeinen worden niet beïnvloed wanneer de UGC-bijdragelimieten automatisch worden toegepast. Als domein bijvoorbeeld aan de lijst met domeinen `mycompany.com` wordt toegevoegd, `me@mycompany.com` wordt een lid met een e-mailadres nooit verplicht om te posten.
 
-   De standaardwaarde is een lege allowlist.
+   Standaard is dit een lege lijst van gewenste personen.
 
 * **[!UICONTROL Messaging Recipients]**
 

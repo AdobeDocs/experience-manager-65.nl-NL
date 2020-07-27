@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 0ff30df7-b3ad-4c34-9644-87c689acc294
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1761'
+ht-degree: 0%
 
 ---
 
@@ -19,19 +22,19 @@ source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 U kunt een cliënttoepassing tot stand brengen gebruikend de Bouwer van de Flits die (SSO) authentificatie het enig-sign uitvoert gebruikend de tokens van HTTP. Stel bijvoorbeeld dat u een webtoepassing maakt met Flash Builder. Ga er vervolgens van uit dat de toepassing verschillende weergaven bevat, waarbij elke weergave een andere bewerking AEM Forms aanroept. In plaats van een gebruiker te verifiëren voor elke Forms-bewerking, kunt u een aanmeldingspagina maken waarmee de gebruiker één keer kan verifiëren. Zodra voor authentiek verklaard, kan een gebruiker veelvoudige verrichtingen aanhalen zonder het moeten opnieuw voor authentiek verklaren. Als een gebruiker zich bijvoorbeeld heeft aangemeld bij Workspace (of een andere Forms-toepassing), hoeft de gebruiker zich niet opnieuw te verifiëren.
 
-Hoewel de clienttoepassing de vereiste toepassingslogica bevat om SSO-verificatie uit te voeren, voert AEM gebruikerbeheer de werkelijke gebruikersverificatie uit. Om een gebruiker voor authentiek te verklaren gebruikend de tokens van HTTP, roept de cliënttoepassing de `authenticateWithHTTPToken` verrichting van de Dienst van de Manager van de Authentificatie aan. Gebruikersbeheer kan gebruikers verifiëren met een HTTP-token. Voor volgende verwijderings- of webserviceaanroepen naar AEM Forms hoeft u geen referenties voor verificatie door te geven.
+Hoewel de clienttoepassing de vereiste toepassingslogica bevat om SSO-verificatie uit te voeren, voert AEM gebruikerbeheer de werkelijke gebruikersverificatie uit. Om een gebruiker voor authentiek te verklaren gebruikend de tokens van HTTP, roept de cliënttoepassing de `authenticateWithHTTPToken` verrichting van de Dienst van de Manager van de Authentificatie aan. Gebruikersbeheer kan gebruikers verifiëren met een HTTP-token. Voor verdere remoting of Webdienst vraag aan AEM Forms, moet u geen geloofsbrieven voor authentificatie overgaan.
 
 >[!NOTE]
 >
->Voordat u deze sectie leest, wordt u aangeraden AEM-formulieren aan te roepen met behulp van Remoting. (Zie AEM-formulieren [aanroepen met AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
+>Voordat u deze sectie leest, wordt u aangeraden AEM Forms aanroepen met Remoting. (Zie AEM Forms [aanroepen met AEM Forms verwijderen](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
 
-Het volgende proces van de Vormen AEM van korte duur, genoemd `MyApplication/EncryptDocument`, wordt aangehaald nadat een gebruiker gebruikend SSO voor authentiek wordt verklaard. (Zie het voorbeeld [](/help/forms/developing/aem-forms-processes.md)van een kortstondig proces voor informatie over dit proces, zoals de invoer- en uitvoerwaarden.)
+Het volgende kortstondige proces van AEM Forms, genoemd `MyApplication/EncryptDocument`, wordt aangehaald nadat een gebruiker gebruikend SSO voor authentiek wordt verklaard. (Zie het voorbeeld [](/help/forms/developing/aem-forms-processes.md)van een kortstondig proces voor informatie over dit proces, zoals de invoer- en uitvoerwaarden.)
 
 ![cf_cf_encryptdocumentprocess2](assets/cf_cf_encryptdocumentprocess2.png)
 
 >[!NOTE]
 >
->Dit proces is niet gebaseerd op een bestaand AEM Forms-proces. Om samen met de codevoorbeelden te volgen die bespreken hoe te om dit proces aan te halen, creeer een proces genoemd `MyApplication/EncryptDocument` gebruikend workbench. (Zie [Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63)gebruiken.)
+>Dit proces is niet gebaseerd op een bestaand proces van AEM Forms. Om samen met de codevoorbeelden te volgen die bespreken hoe te om dit proces aan te halen, creeer een proces genoemd `MyApplication/EncryptDocument` gebruikend workbench. (Zie [Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63)gebruiken.)
 
 De clienttoepassing die is gebouwd met Flash Builder, communiceert met de beveiligingsserver van de User Manager die is geconfigureerd op `/um/login` en `/um/logout`. De clienttoepassing verzendt dus tijdens het opstarten een aanvraag naar de `/um/login` URL om de status van de gebruiker te bepalen. Vervolgens reageert Gebruikersbeheer op de gebruikersstatus. De clienttoepassing en de beveiligingsserver van Gebruikersbeheer communiceren via HTTP.
 
@@ -101,7 +104,7 @@ In de vorige illustratie wordt de toepassingsstroom beschreven die plaatsvindt w
 
 1. De clienttoepassing activeert de `applicationComplete` gebeurtenis.
 1. De oproep aan `ISSOManager.singleSignOn` wordt gemaakt. De clienttoepassing verzendt een aanvraag naar de beveiligingsserver van de gebruikersbeheerder.
-1. Als de beveiligingsserver de gebruiker verifieert, wordt het `ISSOManager` verzonden `SSOEvent.AUTHENTICATION_SUCCESS`. Als reactie hierop geeft de clienttoepassing de hoofdpagina weer. In dit voorbeeld roept de hoofdpagina het kortstondige AEM Forms-proces met de naam MyApplication/EncryptDocument aan.
+1. Als de beveiligingsserver de gebruiker verifieert, wordt het `ISSOManager` verzonden `SSOEvent.AUTHENTICATION_SUCCESS`. Als reactie hierop geeft de clienttoepassing de hoofdpagina weer. In dit voorbeeld roept de hoofdpagina het kortstondige proces van AEM Forms aan genoemd MyApplication/EncryptDocument.
 1. Als de beveiligingsserver niet kan bepalen of de gebruiker geldig is, vraagt de toepassing opnieuw om de gebruikersgegevens. De `ISSOManager` klasse verzendt de `SSOEvent.AUTHENTICATION_REQUIRED` gebeurtenis. De aanmeldingspagina wordt weergegeven in de clienttoepassing.
 1. De gegevens die op de aanmeldingspagina worden opgegeven, worden naar de `ISSOManager.login` methode verzonden. Als de verificatie succesvol is, leidt dit tot stap 3. Anders wordt de `SSOEvent.AUTHENTICATION_FAILED` gebeurtenis geactiveerd. De clienttoepassing geeft de aanmeldingspagina en een geschikt foutbericht weer.
 
@@ -117,7 +120,7 @@ De clienttoepassing bestaat uit de volgende bestanden:
 * `views/login.mxml`: Vertegenwoordigt het aanmeldingsscherm. (Zie [Het bestand](creating-flash-builder-applications-perform.md#creating-the-login-mxml-file)login.mxml maken.)
 * `views/logout.mxml`: Vertegenwoordigt het logout scherm. (Zie Het bestand [logout.mxml](creating-flash-builder-applications-perform.md#creating-the-logout-mxml-file)maken.)
 * `views/progress.mxml`: Vertegenwoordigt een vooruitgangsmening. (Zie [Het bestand](creating-flash-builder-applications-perform.md#creating-the-progress-mxml-file)progress.mxml maken.)
-* `views/remoting.mxml`: Vertegenwoordigt de mening die het kortstondige proces van Vormen AEM genoemd MyApplication/EncryptDocument gebruikend remoting aanhaalt. (Zie Het bestand [remoting.mxml](creating-flash-builder-applications-perform.md#creating-the-remoting-mxml-file)maken.)
+* `views/remoting.mxml`: Vertegenwoordigt de mening die AEM Forms kortstondig proces genoemd MyApplication/EncryptDocument gebruikend remoting aanhaalt. (Zie Het bestand [remoting.mxml](creating-flash-builder-applications-perform.md#creating-the-remoting-mxml-file)maken.)
 
 In de volgende afbeelding ziet u een visuele weergave van de clienttoepassing.
 
@@ -125,13 +128,13 @@ In de volgende afbeelding ziet u een visuele weergave van de clienttoepassing.
 
 >[!NOTE]
 >
->Er zijn twee pakketten met de naam um en views. Zorg er bij het maken van de clienttoepassing voor dat u de bestanden in de juiste pakketten plaatst. Voeg ook het bestand adobe-remoting-provider.swc toe aan het klassepad van uw project. (Zie [Inclusief het Flex-bibliotheekbestand](/help/forms/developing/invoking-aem-forms-using-remoting.md#including-the-aem-forms-flex-library-file)voor AEM-formulieren.)
+>Er zijn twee pakketten met de naam um en views. Zorg er bij het maken van de clienttoepassing voor dat u de bestanden in de juiste pakketten plaatst. Voeg ook het bestand adobe-remoting-provider.swc toe aan het klassepad van uw project. (Zie [Inclusief het Flex-bibliotheekbestand](/help/forms/developing/invoking-aem-forms-using-remoting.md#including-the-aem-forms-flex-library-file)AEM Forms.)
 
 ### Het bestand SSOStandalone.mxml maken {#creating-the-ssostandalone-mxml-file}
 
 De volgende code vertegenwoordigt het SSOStandalone.mxml- dossier.
 
-```as3
+```xml
  <?xml version="1.0" encoding="utf-8"?>
  <mx:Application
                  layout="absolute"
@@ -248,7 +251,7 @@ De volgende code vertegenwoordigt het SSOStandalone.mxml- dossier.
 
 De volgende code vertegenwoordigt het bestand ISSOManager.as.
 
-```as3
+```java
  package um
  {
      import flash.events.IEventDispatcher;
@@ -299,7 +302,7 @@ De volgende code vertegenwoordigt het bestand ISSOManager.as.
 
 De volgende code vertegenwoordigt het SSOEvent.as-bestand.
 
-```as3
+```java
  package um
  {
      import flash.events.Event;
@@ -371,7 +374,7 @@ De volgende code vertegenwoordigt het SSOEvent.as-bestand.
 
 De volgende code vertegenwoordigt het bestand SSOManager.as.
 
-```as3
+```java
  package um
  {
      import flash.events.Event;
@@ -535,7 +538,7 @@ De volgende code vertegenwoordigt het bestand SSOManager.as.
 
 De volgende code vertegenwoordigt het bestand UserManager.as.
 
-```as3
+```java
  package um
  {
      import flash.events.Event;
@@ -601,7 +604,7 @@ De volgende code vertegenwoordigt het bestand UserManager.as.
 
 De volgende code vertegenwoordigt het login.mxml- dossier.
 
-```as3
+```xml
  <?xml version="1.0" encoding="utf-8"?>
  <mx:Canvas  width="500" height="400">
      <mx:Script>
@@ -644,7 +647,7 @@ De volgende code vertegenwoordigt het login.mxml- dossier.
 
 De volgende code vertegenwoordigt het logout.mxml- dossier.
 
-```as3
+```xml
  <?xml version="1.0" encoding="utf-8"?>
  <mx:Canvas  width="500" height="400">
      <mx:Label x="97" y="188" text="You have successfully logged out from the application"/>
@@ -657,7 +660,7 @@ De volgende code vertegenwoordigt het logout.mxml- dossier.
 
 De volgende code vertegenwoordigt het progress.mxml- dossier.
 
-```as3
+```xml
  <?xml version="1.0" encoding="utf-8"?>
  <mx:Canvas >
      <mx:Label x="151" y="141" text="Wait...."/>
@@ -669,7 +672,7 @@ De volgende code vertegenwoordigt het progress.mxml- dossier.
 
 De volgende code vertegenwoordigt het remoting.mxml- dossier dat het `MyApplication/EncryptDocument` proces aanhaalt. Aangezien een document aan het proces wordt doorgegeven, bevindt de toepassingslogica die verantwoordelijk is voor het doorgeven van een beveiligd document aan AEM Forms zich in dit bestand. (Zie Beveiligde documenten [doorgeven om processen aan te roepen met behulp van Verwijderen](/help/forms/developing/invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).)
 
-```as3
+```xml
  <?xml version="1.0" encoding="utf-8"?>
  <mx:Canvas  width="664" height="400" creationComplete="initializeChannelSet()" xmlns:views="views.*">
      <mx:Script>
@@ -885,7 +888,7 @@ Als reactie op deze waarde wordt een `SSOEvent.AUTHENTICATION_REQUIRED` waarde v
 
 De beveiligingsserver van de gebruikersbeheerder reageert op de volgende waarde:
 
-```as3
+```verilog
  HTTP/1.1 200 OK
  Set-Cookie: lcAuthToken=53630BC8-F6D4-F588-5D5B-4668EFB2EC7A; Path=/
  authenticated=true&authstate=COMPLETE&assertionid=53630BC8-F6D4-F588-5D5B-4668EFB2EC7A
@@ -895,16 +898,16 @@ Hierdoor `authstate=COMPLETE the SSOEvent.AUTHENTICATION_SUCCESS` wordt verzonde
 
 ### De gebruiker is al geverifieerd {#the-user-is-already-authenticated}
 
-In dit geval heeft de gebruiker zich al aangemeld bij AEM Forms en navigeert deze naar de clienttoepassing. De cliënttoepassing verbindt met de veiligheidsserver van de Manager van de Gebruiker tijdens opstarten.
+In deze situatie heeft de gebruiker zich al aangemeld bij AEM Forms en navigeert hij vervolgens naar de clienttoepassing. De cliënttoepassing verbindt met de veiligheidsserver van de Manager van de Gebruiker tijdens opstarten.
 
-```as3
+```verilog
  GET /um/login?um%5Fno%5Fredirect=true HTTP/1.1
  Cookie: JSESSIONID=A4E0BCC2DD4BCCD3167C45FA350BD72A; lcAuthToken=53630BC8-F6D4-F588-5D5B-4668EFB2EC7A
 ```
 
 Omdat de gebruiker al voor authentiek is verklaard, is het koekje van de Manager van de Gebruiker aanwezig en wordt verzonden naar de veiligheidsserver van de Manager van de Gebruiker. De servlet krijgt dan de `assertionId` waarde en verifieert of het geldig is. Als deze geldig is, `authstate=COMPLETE` wordt deze geretourneerd. Anders `authstate=CREDENTIAL_CHALLENGE` wordt het geretourneerd. Dit is een typische reactie:
 
-```as3
+```verilog
  HTTP/1.1 200 OK
         authenticated=true&authstate=COMPLETE&assertionid=53630BC8-F6D4-F588-5D5B-4668EFB2EC7A
 ```

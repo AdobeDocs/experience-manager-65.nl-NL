@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '1439'
 ht-degree: 1%
@@ -77,6 +77,7 @@ Voer de volgende stappen uit, op alle auteur en publiceer instanties, om de stee
    Een andere naam opgeven voor de metagegevenstabel:
 
    * Zoek in de configuratie van de webconsole naar en klik op Forms Portal Metadata Service Sample Implementation. U kunt de waarden van gegevensbron, meta-gegevens/extra naam van de meta-gegevenslijst veranderen.
+
    Een andere naam voor de gegevenstabel opgeven:
 
    * In de Configuratie van de Console van het Web, vind en klik de Steekproef van de Dienst van Gegevens van het Portaal van Vormen Implementatie. U kunt de waarden van gegevensbron en naam van de gegevenslijst veranderen.
@@ -162,6 +163,7 @@ Voer de volgende stappen uit, op alle auteur en publiceer instanties, om de stee
 >
 > * Het JDBC-stuurprogramma voor MySQL wordt niet bij het voorbeeld geleverd. Zorg ervoor dat u daarvoor de provisioned hebt en verstrek de vereiste informatie om de JDBC verbindingspool te vormen.
 > * Wijs de auteur aan en publiceer instanties om het zelfde gegevensbestand te gebruiken. De waarde van het veld URI van de JDBC-verbinding moet gelijk zijn voor alle auteur- en publicatie-instanties.
+
 >
 
 
@@ -335,7 +337,7 @@ Voer de volgende stappen uit om [een clientbibliotheek](/help/sites-developing/c
 
 1. Klik met de rechtermuisknop op het knooppunt, klik op het knooppunt **[!UICONTROL create new file]** en maak een bestand met de extensie .txt. Voeg bijvoorbeeld de volgende code `js.txt`toe aan het nieuwe .txt-bestand en klik op **[!UICONTROL Save All]**.
 
-   ```
+   ```javascript
    #base=util
     util.js
    ```
@@ -346,7 +348,7 @@ Voer de volgende stappen uit om [een clientbibliotheek](/help/sites-developing/c
 
 1. Voeg de volgende code toe aan het bestand util.js en klik op **[!UICONTROL Save All]**. De code valideert de lengte van de bestandsnaam.
 
-   ```
+   ```javascript
    /*
     * ADOBE CONFIDENTIAL
     * ___________________

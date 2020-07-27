@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7c0efcb3-5b07-4090-9119-b7318c8b7980
 translation-type: tm+mt
-source-git-commit: d3719a9ce2fbb066f99445475af8e1f1e7476f4e
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '1240'
+ht-degree: 0%
 
 ---
 
@@ -70,7 +73,7 @@ Voor het toelaten van SSL, moet WebSphere toegang tot een gebruikersrekening in 
 1. Onder Administratieve veiligheid, uitgezochte **Administratieve gebruikersrollen**.
 1. Klik op Toevoegen en voer de volgende handelingen uit:
 
-   1. **Type**&amp;ast; in het zoekvak en klik op Zoeken.
+   1. Type **&amp;ast;** in het zoekvak en klik op Zoeken.
    1. Klik op **Beheerder** onder rollen.
    1. Voeg de pas gecreëerde gebruiker aan Toegewezen aan rol toe en wijs het aan Beheerder toe.
 
@@ -81,7 +84,7 @@ Voor het toelaten van SSL, moet WebSphere toegang tot een gebruikersrekening in 
 
 1. Selecteer **Beveiliging > Algemene beveiliging** in de beheerconsole van WebSphere.
 1. Klik op **Wizard** Beveiligingsconfiguratie.
-1. Controleer of het selectievakje Toepassingsbeveiliging **** inschakelen is ingeschakeld. Click **Next**.
+1. Controleer of het selectievakje Toepassingsbeveiliging **** inschakelen is ingeschakeld. Klik op **Next**.
 1. Selecteer **Federatieve opslagplaatsen** en klik op **Volgende**.
 1. Geef de referenties op die u wilt instellen en klik op **Volgende**.
 1. Click **Finish**.
@@ -100,7 +103,7 @@ U kunt sleutelarchieven en sleutelarchieven maken met het hulpprogramma ikeyman 
 1. Geef het pad op naar het sleutelarchief. Als u al een sleutelarchief hebt gemaakt via ikeyman, geeft u het pad naar het sleutelarchiefbestand op.
 1. Geef het wachtwoord op en bevestig het.
 1. Kies het keystore-type en klik op **Toepassen**.
-1. Sla de hoofdconfiguratie op.
+1. Sla de master configuratie op.
 1. Klik op **Persoonlijk certificaat**.
 1. Als u al een sleutelarchief hebt gemaakt met ikeyman, wordt het certificaat weergegeven. Anders moet u een nieuw zelfondertekend certificaat toevoegen door de volgende stappen uit te voeren:
 
@@ -119,7 +122,7 @@ U kunt sleutelarchieven en sleutelarchieven maken met het hulpprogramma ikeyman 
 1. Selecteer **NodeDeafultSSLSetting**.
 1. Selecteer in de vervolgkeuzelijsten Naam van vertrouwde opslag en Naam van sleutelarchief de aangepaste truststore en sleutelarchief die u hebt gemaakt.
 1. Klik op **Toepassen**.
-1. Sla de hoofdconfiguratie op.
+1. Sla de master configuratie op.
 1. Start het WebSphere-profiel opnieuw.
 
    Uw profiel wordt nu uitgevoerd op aangepaste SSL-instellingen en uw certificaat.
@@ -175,7 +178,7 @@ Voer de volgende stappen uit om de poort dynamisch te maken en het probleem op t
 1. Open het bestand `[aem-forms_root]`\crx-repository\launchpad\sling.properties.
 1. Zoek de `sling.bootdelegation.ibm` eigenschap en voeg deze toe `com.ibm.websphere.ssl.*`aan het waardeveld. Het bijgewerkte veld ziet er als volgt uit:
 
-   ```as3
+   ```java
    sling.bootdelegation.ibm=com.ibm.xml.*, com.ibm.websphere.ssl.*
    ```
 

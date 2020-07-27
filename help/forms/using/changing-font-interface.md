@@ -11,16 +11,19 @@ topic-tags: forms-workspace
 discoiquuid: 9fcb80b4-cbc2-48a5-afd1-4f3bc50bc503
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '292'
+ht-degree: 1%
 
 ---
 
 
 # Het lettertype in de interface wijzigen{#changing-the-font-on-the-interface}
 
-U kunt het lettertype wijzigen dat wordt weergegeven in de werkruimte van AEM-formulieren. Lettertypen die in een specifieke sectie van de gebruikersinterface worden gebruikt, worden gedefinieerd in de bijbehorende sectie van het stijlblad. U kunt de lettertypen in de gebruikersinterface selectief wijzigen.
+U kunt het lettertype wijzigen dat in de werkruimte AEM Forms wordt weergegeven. Lettertypen die in een specifieke sectie van de gebruikersinterface worden gebruikt, worden gedefinieerd in de bijbehorende sectie van het stijlblad. U kunt de lettertypen in de gebruikersinterface selectief wijzigen.
 
-Voer de [algemene stappen voor de aanpassing](../../forms/using/generic-steps-html-workspace-customization.md) van de AEM Forms-werkruimte uit en voer, afhankelijk van uw vereisten, de stappen uit voor het aanpassen van CSS, HTML of beide.
+Voer de [algemene stappen voor de aanpassing](../../forms/using/generic-steps-html-workspace-customization.md) van de werkruimte AEM Forms uit en voer, afhankelijk van uw vereisten, de stappen voor het aanpassen van CSS, HTML of beide in.
 
 1. Wijzig of voeg de lettertypefamilie toe aan een bestaande stijl.
 1. Wijzig of voeg de lettertypefamilie inline voor het HTML-element toe.
@@ -43,7 +46,7 @@ Voer bijvoorbeeld de volgende stappen uit als u het font van het ankerpunt op de
 
       Werk het bestand /apps/ws/js/runtime/templates/appnavigation.html als volgt bij:
 
-      ```
+      ```jsp
       <li class="process"><a href="#" title="<%= $.t('index.header.topnav.startprocess.detail')%>" style="font-family:Courier New;" ><%= $.t('index.header.topnav.startprocess.name')%></a></li>
       <li class="todo"><a href="#/todo" title="<%= $.t('index.header.topnav.todo.detail')%>" style="font-family:Courier New;" ><%= $.t('index.header.topnav.todo.name')%></a></li>
       <li class="track"><a href="#/tracking" title="<%= $.t('index.header.topnav.tracking.detail')%>" style="font-family:Courier New;" ><%= $.t('index.header.topnav.tracking.name')%></a></li>
@@ -62,7 +65,7 @@ Voer bijvoorbeeld de volgende stappen uit als u het font van het ankerpunt op de
 
       Als u de lettertypefamilie inline voor het HTML-element wilt toevoegen, voegt u het volgende toe in het bestand appnavigation.html op /apps/ws/js/runtime/templates.
 
-      ```css
+      ```jsp
       <div id="topnav" class="myNewFontStyle">
           <ul>
               <li class="process"><a href="#" title="<%= $.t('index.header.topnav.startprocess.detail')%>" ><%= $.t('index.header.topnav.startprocess.name')%></a></li>

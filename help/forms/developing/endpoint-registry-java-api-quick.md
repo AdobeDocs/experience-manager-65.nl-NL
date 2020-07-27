@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: e5989859-e58d-4049-9e0d-c4c848d597af
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '545'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +40,7 @@ Java API Quick Start (SOAP) is beschikbaar voor de Endpoint Registry.
 
 [QuickStart: Gegevens van eindpuntconnector ophalen met de Java API](endpoint-registry-java-api-quick.md#quickstart-retrieving-endpoint-connector-information-using-the-java-api)
 
-De verrichtingen van de Vormen van AEM kunnen worden uitgevoerd gebruikend sterk-getypte API van Vormen AEM en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
+De verrichtingen van AEM Forms kunnen worden uitgevoerd gebruikend AEM Forms sterk-getypte API en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
 
 >[!NOTE]
 >
@@ -51,7 +54,7 @@ De verrichtingen van de Vormen van AEM kunnen worden uitgevoerd gebruikend sterk
 
 In het volgende Java-codevoorbeeld wordt een EJB-eindpunt toegevoegd aan de service *MyApplication/EncryptDocument*. (Zie EJB-eindpunten [toevoegen](/help/forms/developing/programmatically-endpoints.md#adding-ejb-endpoints).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-livecycle-client.jar
@@ -150,7 +153,7 @@ In het volgende Java-codevoorbeeld wordt een EJB-eindpunt toegevoegd aan de serv
 
 In het volgende Java-codevoorbeeld wordt een SOAP-eindpunt toegevoegd aan de service *MyApplication/EncryptDocument*. (Zie [SOAP-eindpunten](/help/forms/developing/programmatically-endpoints.md#adding-soap-endpoints)toevoegen.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-livecycle-client.jar
@@ -254,7 +257,7 @@ In het volgende Java-codevoorbeeld wordt het eindpunt van een gecontroleerde map
 >
 >U moet het dossier WatchedFolderEndpointConfigConstants.java in uw project omvatten om het volgende snelle begin te compileren en in werking te stellen. (Zie [Gecontroleerde waarden voor mapconfiguratie constant bestand](/help/forms/developing/programmatically-endpoints.md#watched-folder-configuration-values-constant-file).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-livecycle-client.jar
@@ -389,7 +392,7 @@ In het volgende Java-codevoorbeeld wordt een e-maileindpunt toegevoegd aan de se
 >
 >U moet het bestand EmailEndpointConfigConstants.java in uw project opnemen om het volgende snelle begin te compileren en uit te voeren. (Zie Constante bestand met waarden voor [e-mailconfiguratie](/help/forms/developing/programmatically-endpoints.md#email-configuration-values-constant-file).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-livecycle-client.jar
@@ -528,7 +531,7 @@ In het volgende Java-codevoorbeeld wordt een e-maileindpunt toegevoegd aan de se
 
 In het volgende Java-codevoorbeeld wordt een eindpunt Remoting toegevoegd aan de service *MyApplication/EncryptDocument*. (Zie Eindpunten [verwijderen](/help/forms/developing/programmatically-endpoints.md#adding-remoting-endpoints)toevoegen.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-livecycle-client.jar
@@ -633,7 +636,7 @@ In het volgende Java-codevoorbeeld wordt een eindpunt Remoting toegevoegd aan de
 
 In het volgende Java-codevoorbeeld wordt een TaskManager-eindpunt toegevoegd aan de service *MyApplication/EncryptDocument*. De naam van de categorie is *EncryptProcess*. (Zie [Het Toevoegen van Eindpunten](/help/forms/developing/programmatically-endpoints.md#adding-taskmanager-endpoints)TaskManager.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-livecycle-client.jar
@@ -742,7 +745,7 @@ In het volgende Java-codevoorbeeld wordt een TaskManager-eindpunt toegevoegd aan
 
 Het volgende de codevoorbeeld van Java wijzigt een Gecontroleerd eindpunt van de Omslag.Het eindpunt is voor het proces *MyApplication/EncryptDocument* . De gecontroleerde map wordt gewijzigd in `C:\NewWatchedFolder`. (Zie Eindpunten [wijzigen](/help/forms/developing/programmatically-endpoints.md#modifying-endpoints).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-livecycle-client.jar
@@ -892,7 +895,7 @@ Het volgende de codevoorbeeld van Java wijzigt een Gecontroleerd eindpunt van de
 
 De volgende code van Java verwijdert een eindpunt EJB uit de dienst genoemd *MyApplication/EncryptDocument*. (Zie Eindpunten [verwijderen](/help/forms/developing/programmatically-endpoints.md#removing-endpoints).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-livecycle-client.jar
@@ -1011,7 +1014,7 @@ De volgende code van Java verwijdert een eindpunt EJB uit de dienst genoemd *MyA
 
 De volgende code van Java wint informatie over een Gecontroleerd eindpunt van de Omslag terug. De informatie over elke configuratiewaarde wordt teruggewonnen en getoond. Deze codelijst specificeert of elke configuratiewaarde vereist of facultatief is. Bovendien worden de naam en de waarde voor elke configuratiewaarde weergegeven. (Zie Informatie over [eindpuntaansluiting](/help/forms/developing/programmatically-endpoints.md#retrieving-endpoint-connector-information)ophalen.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the following JAR files
      * 1. adobe-livecycle-client.jar

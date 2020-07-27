@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: e0c20fd2-b084-4f61-936c-5282826a8d3d
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
 workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 0%
@@ -46,7 +46,7 @@ De verrichtingen van AEM Forms kunnen worden uitgevoerd gebruikend AEM Forms ste
 
 In het volgende codevoorbeeld wordt een gebruiker met de naam Wendy Blue toegevoegd aan AEM Forms. (Zie Gebruikers [toevoegen](/help/forms/developing/users.md#adding-users).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -164,7 +164,7 @@ In het volgende codevoorbeeld wordt een gebruiker met de naam Wendy Blue toegevo
 
 In het volgende codevoorbeeld wordt een gebruiker met de naam Wendy Blue van AEM Forms verwijderd. (Zie Gebruikers [verwijderen](/help/forms/developing/users.md#deleting-users).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -260,7 +260,7 @@ In het volgende codevoorbeeld wordt een gebruiker met de naam Wendy Blue van AEM
 
 In het volgende codevoorbeeld worden een lokale gebruiker en de lokale groep gevonden waartoe de gebruiker behoort. (Zie Gebruikers en groepen [](/help/forms/developing/users.md#managing-users-and-groups)beheren.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -384,7 +384,7 @@ In het volgende codevoorbeeld worden een lokale gebruiker en de lokale groep gev
 
 Het volgende codevoorbeeld wijst de rol van de Gebruiker van de Diensten aan een hoofd toe, drukt de rollen het hoofd heeft, en verwijdert dan de rol uit het hoofd. Voor deze snelle start worden twee services aangeroepen: de dienst DirectoryManager en de dienst AuthorizationManager.(Zie Rollen en machtigingen [beheren](/help/forms/developing/users.md#managing-roles-and-permissions).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -527,7 +527,7 @@ Het volgende codevoorbeeld wijst de rol van de Gebruiker van de Diensten aan een
 
 In het volgende Java-codevoorbeeld worden gebruikers gesynchroniseerd met de API&#39;s voor gebruikersbeheer. (Zie Gebruikers [](/help/forms/developing/users.md#programmatically-synchronizing-users)programmatisch synchroniseren.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -636,7 +636,7 @@ In het volgende Java-codevoorbeeld worden gebruikers gesynchroniseerd met de API
 
 In het volgende codevoorbeeld wordt een gebruiker met de naam Wendy Blue toegevoegd aan AEM Forms. (Zie Gebruikers [toevoegen](/help/forms/developing/users.md#adding-users).)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -754,7 +754,7 @@ In het volgende codevoorbeeld wordt een gebruiker met de naam Wendy Blue toegevo
 
 In het volgende codevoorbeeld wordt een groep met de naam AdobeGroup gemaakt voor AEM Forms. (Zie [Groepen](/help/forms/developing/users.md#creating-groups)maken.)
 
-```as3
+```java
  /*
      * This Java Quick Start uses the SOAP mode and contains the following JAR files
      * in the class path:
@@ -906,7 +906,7 @@ In het volgende codevoorbeeld wordt een groep met de naam AdobeGroup gemaakt voo
 
 De volgende Java-codemodellen die het beheer van knooppunten voorkeuren uitvoeren met de API&#39;s voor gebruikersbeheer. (Zie [De knooppunten](/help/forms/developing/programmatically-preferences-nodes.md#programmatically-managing-the-preferences-nodes)van de Voorkeuren programmatisch beheren)
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:
@@ -1009,7 +1009,7 @@ public class ManagePreferences {
 
 De volgende Java-codemodellen die het beheer van voorkeursknooppunten beheren met de API&#39;s voor gebruikersbeheer (zie [Programmaticaal het beheer van de voorkeursknooppunten](/help/forms/developing/programmatically-preferences-nodes.md#programmatically-managing-the-preferences-nodes))
 
-```as3
+```java
 /*
  * This Java Quick Start uses the SOAP mode and contains the following JAR files
  * in the class path:

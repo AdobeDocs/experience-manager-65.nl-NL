@@ -9,14 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 32118d3b-54d0-4283-b489-780bdcbfc8d2
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+workflow-type: tm+mt
+source-wordcount: '6355'
+ht-degree: 1%
 
 ---
 
 
 # Programmaticaal AEM Document Services gebruiken {#using-aem-document-services-programmatically}
 
-Clientklassen die zijn vereist om Maven Projecten te bouwen met AEM Document Services zijn beschikbaar in de [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) jar. Voor informatie rond beproefde projecten, zie [hoe te om uw AEM- project te bouwen gebruikend Maven](/help/sites-developing/ht-projects-maven.md).
+De klassen van de cliënt die worden vereist om Gemaakt te bouwen Projecten gebruikend de Diensten van het Document van AEM zijn beschikbaar in de [Cliënt SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) van AEM Forms. Voor informatie rond beproefde projecten, zie [hoe te om uw AEM- project te bouwen gebruikend Maven](/help/sites-developing/ht-projects-maven.md).
 
 >[!NOTE]
 >
@@ -101,7 +104,7 @@ Digitale handtekeningen worden weergegeven in handtekeningvelden. Dit zijn formu
 
 Hier volgt een voorbeeld van een Java-code waarmee een onzichtbaar handtekeningveld wordt toegevoegd aan een PDF-document.
 
-```
+```java
 /*************************************************************************
  *
  * ADOBE CONFIDENTIAL
@@ -234,13 +237,13 @@ sigAppearence.setSigningFormat(signingFormat);
 signOptions.setSigAppearence(sigAppearence);
 ```
 
-### Een handtekeningveld toevoegen {#adding-a-signature-field-nbsp}
+### Een handtekeningveld toevoegen  {#adding-a-signature-field-nbsp}
 
 U kunt een handtekeningveld programmatisch toevoegen met de Java API of de API van de Signature-service van de Java-API. U kunt meerdere handtekeningvelden toevoegen aan een PDF-document. Elke handtekeningveldnaam moet echter uniek zijn.
 
 **Syntaxis**:
 
-```
+```java
 public Document addSignatureField(Document inDoc,
  String signatureFieldName,
  Integer pageNo,
@@ -623,7 +626,7 @@ import com.adobe.fd.signatures.pki.client.types.prefs.TSPPreferencesImpl;
 
 ### Handtekening ophalen {#getting-signature}
 
-U kunt de namen ophalen van alle handtekeningvelden in een PDF-document dat u wilt ondertekenen of certificeren. Als u niet zeker weet welke namen van handtekeningvelden zich in een PDF-document bevinden of als u de namen wilt verifiëren, haalt u de namen via programmacode op. De service Handtekening retourneert de volledig gekwalificeerde naam van het handtekeningveld, zoals `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
+You can retrieve the names of all signature fields that are located in a PDF document that you want to sign or certify. If you are not sure of the signature field names located in a PDF document or to verify the names, then retrieve the names programmatically. The Signature service returns the fully qualified name of the signature field, such as `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
 
 **Syntaxis**: `getSignature(Document doc, String signatureFieldName, UnlockOptions unlockOptions)`
 
@@ -641,7 +644,7 @@ U kunt de namen ophalen van alle handtekeningvelden in een PDF-document dat u wi
   </tr>
   <tr>
    <td><code>signatureFieldName</code></td>
-   <td>De naam van het handtekeningveld dat een handtekening bevat. Geef de volledig gekwalificeerde naam van het handtekeningveld op. Als u een PDF-document gebruikt dat is gebaseerd op een XFA-formulier, kan de gedeeltelijke naam van het handtekeningveld worden gebruikt. U kunt bijvoorbeeld <code>form1[0].#subform[1].SignatureField3[3]</code> opgeven als <code>SignatureField3[3]</code>.</td>
+   <td>The name of the signature field that contains a signature. Specify the fully qualified name of the signature field. When using a PDF document that is based on an XFA form, then the partial name of the signature field can be used. For example, <code>form1[0].#subform[1].SignatureField3[3]</code> can be specified as <code>SignatureField3[3]</code>.</td>
   </tr>
   <tr>
    <td><code>UnlockOptions</code></td>
@@ -652,7 +655,7 @@ U kunt de namen ophalen van alle handtekeningvelden in een PDF-document dat u wi
 
 In het volgende Java-codevoorbeeld worden de handtekeninggegevens opgehaald van het opgegeven handtekeningveld in een PDF-document.
 
-```
+```java
 /*************************************************************************
  *
  * ADOBE CONFIDENTIAL
@@ -745,9 +748,9 @@ public class GetSignature {
 }
 ```
 
-### Lijst met handtekeningvelden ophalen {#getting-signature-field-list-nbsp}
+### Getting signature field list  {#getting-signature-field-list-nbsp}
 
-U kunt de namen ophalen van alle handtekeningvelden in een PDF-document dat u wilt ondertekenen of certificeren. Als u niet zeker weet wat de namen van handtekeningvelden zijn in een PDF-document, kunt u deze via programmacode ophalen en verifiëren. De service Handtekening retourneert de volledig gekwalificeerde naam van het handtekeningveld, zoals `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
+U kunt de namen ophalen van alle handtekeningvelden in een PDF-document dat u wilt ondertekenen of certificeren. Als u niet zeker weet wat de namen van handtekeningvelden zijn in een PDF-document, kunt u deze via programmacode ophalen en verifiëren. The Signature service returns the fully qualified name of the signature field, such as `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
 
 **Syntaxis**: `public List <PDFSignatureField> getSignatureFieldList (Document inDoc, UnlockOptions unlockOptions)`
 
@@ -755,10 +758,10 @@ U kunt de namen ophalen van alle handtekeningvelden in een PDF-document dat u wi
 
 | Parameters | Beschrijving |
 |---|---|
-| `inDoc` | Document, object dat PDF bevat |
+| `inDoc` | Document object containing PDF |
 | `unlockOptions` | Bevat de parameters die nodig zijn om een gecodeerd bestand te ontgrendelen. Dit is alleen vereist als het bestand is versleuteld. |
 
-In het volgende Java-codevoorbeeld worden de namen opgehaald van handtekeningvelden in een PDF-document.
+The following Java code example retrieves the names of signature fields located in a PDF document.
 
 ```java
 /*************************************************************************
@@ -860,7 +863,7 @@ public class GetSignatureFields {
 }
 ```
 
-### Handtekeningvelden wijzigen {#modifying-signature-fields-nbsp}
+### Modifying signature fields  {#modifying-signature-fields-nbsp}
 
 U kunt handtekeningvelden in een PDF-document wijzigen. Als u een handtekeningveld wijzigt, moet u de vergrendelingswoordenboekwaarden van het handtekeningveld of de waarden van het zaadwaardewoordenboek bewerken.
 
@@ -880,7 +883,7 @@ Door een bestaand handtekeningveld te wijzigen, kunt u het PDF-document bewerken
   </tr>
   <tr>
    <td><code>inDoc</code></td>
-   <td>Document, object dat PDF bevat</td>
+   <td>Document object containing PDF</td>
   </tr>
   <tr>
    <td><code>signatureFieldName</code></td>
@@ -888,7 +891,7 @@ Door een bestaand handtekeningveld te wijzigen, kunt u het PDF-document bewerken
   </tr>
   <tr>
    <td><code>pdfSignatureFieldProperties</code></td>
-   <td>Object dat informatie opgeeft over de <code>PDFSeedValueOptionSpec</code> en de <code>FieldMDPOptionSpec</code> waarden van het handtekeningveld.</td>
+   <td>Object that specifies information about the <code>PDFSeedValueOptionSpec</code> and <code>FieldMDPOptionSpec</code> values of the signature field.</td>
   </tr>
   <tr>
    <td><code>unlockOptions</code></td>
@@ -1027,7 +1030,7 @@ public class ModifySignatureField {
 }
 ```
 
-### PDF-documenten certificeren {#certifying-pdf-documents-nbsp}
+### PDF-documenten certificeren  {#certifying-pdf-documents-nbsp}
 
 U kunt een PDF-document beveiligen door het te certificeren met een bepaald type handtekening, een zogenaamde gecertificeerde handtekening. Een gecertificeerde handtekening wordt op de volgende manieren onderscheiden van een digitale handtekening:
 
@@ -1037,7 +1040,7 @@ U kunt een PDF-document beveiligen door het te certificeren met een bepaald type
 
 **Syntaxis**:
 
-```
+```java
 secureDocument(Document inDoc, EncryptionOptions encryptionOptions,
  SignatureOptions signatureOptions, ReaderExtensionOptions readerExtensionOptions, UnlockOptions unlockOptions)
 ```
@@ -1338,7 +1341,7 @@ Met SecureDocument kunt u een PDF-document versleutelen, ondertekenen/certificer
 
 **PDF-documenten versleutelen met een wachtwoord**
 
-Wanneer u een PDF-document versleutelt met een wachtwoord, moet de gebruiker het wachtwoord opgeven om het PDF-document te openen in Adobe Reader of Acrobat. Voordat het document door een andere bewerking in AEM Forms Document Services wordt gebruikt, moet een PDF-document met een wachtwoord worden ontgrendeld.
+Wanneer u een PDF-document versleutelt met een wachtwoord, moet de gebruiker het wachtwoord opgeven om het PDF-document te openen in Adobe Reader of Acrobat. Voordat het document door een andere bewerking Document Services voor AEM Forms wordt gebruikt, moet een PDF-document met een wachtwoord worden ontgrendeld.
 
 **PDF-documenten versleutelen met certificaten**
 
@@ -1353,7 +1356,7 @@ Een algoritme wordt gebruikt om twee grote aantallen te produceren, die als sleu
 * Een van de toetsen fungeert als de persoonlijke sleutel van een gebruiker. Het is belangrijk dat alleen de gebruiker toegang heeft tot deze sleutel.
 * De andere sleutel is de openbare sleutel van de gebruiker, die met anderen kan worden gedeeld.
 
-Een certificaat met een openbare sleutel bevat de openbare sleutel van een gebruiker en identificeert informatie. De indeling X.509 wordt gebruikt voor het opslaan van certificaten. Certificaten worden doorgaans uitgegeven en digitaal ondertekend door een certificeringsinstantie (CA), een erkende entiteit die een zekere mate van vertrouwen biedt in de geldigheid van het certificaat. Certificaten hebben een vervaldatum waarna ze niet meer geldig zijn.
+A public key certificate contains a user&#39;s public key and identifying information. De indeling X.509 wordt gebruikt voor het opslaan van certificaten. Certificates are typically issued and digitally signed by a certificate authority (CA), which is a recognized entity that provides a measure of confidence in the validity of the certificate. Certificaten hebben een vervaldatum waarna ze niet meer geldig zijn.
 
 Bovendien bevatten de certificaatintrekkingslijsten (CRL&#39;s) informatie over certificaten die vóór de vervaldatum zijn ingetrokken. CRL&#39;s worden periodiek gepubliceerd door certificeringsinstanties. De intrekkingsstatus van een certificaat kan ook via het online certificaatstatusprotocol (OCSP) via het netwerk worden opgehaald.
 
@@ -1369,11 +1372,11 @@ Voordat u Reader kunt gebruiken om een PDF-document met een certificaat uit te b
 
 **PDF-documenten digitaal ondertekenen**
 
-Digitale handtekeningen kunnen op PDF-documenten worden toegepast om een beveiligingsniveau te bieden. Digitale handtekeningen bieden, net als handgeschreven handtekeningen, een manier waarop ondertekenaars zichzelf identificeren en instructies over een document maken.
+Digitale handtekeningen kunnen op PDF-documenten worden toegepast om een beveiligingsniveau te bieden. Digital signatures, like handwritten signatures, provide a means by which signers identify themselves and make statements about a document.
 
-De technologie die wordt gebruikt om documenten digitaal te ondertekenen, helpt ervoor te zorgen dat zowel de ondertekenaar als de ontvangers duidelijk zijn over wat is ondertekend en er zeker van zijn dat het document niet is gewijzigd sinds het werd ondertekend.
+The technology used to digitally sign documents helps to ensure that both the signer and recipients are clear about what was signed and confident that the document was not altered since it was signed.
 
-PDF-documenten worden ondertekend met behulp van openbare-sleuteltechnologie. Een ondertekenaar heeft twee toetsen: een openbare sleutel en een persoonlijke sleutel. De persoonlijke sleutel wordt opgeslagen in de referentie van een gebruiker die beschikbaar moet zijn op het moment van ondertekening.
+PDF documents are signed by means of public-key technology. Een ondertekenaar heeft twee toetsen: een openbare sleutel en een persoonlijke sleutel. De persoonlijke sleutel wordt opgeslagen in de referentie van een gebruiker die beschikbaar moet zijn op het moment van ondertekening.
 
 De openbare sleutel wordt opgeslagen in het certificaat van de gebruiker dat beschikbaar moet zijn aan ontvangers om de handtekening te valideren. Informatie over ingetrokken certificaten vindt u in de certificaatintrekkingslijsten (CRL&#39;s) en de online certificaatstatusprotocollen (OCSP&#39;s) die door de certificeringsinstanties (CA&#39;s) worden verspreid. De tijd van het ondertekenen kan van een vertrouwde op bron worden verkregen die als Tijdstempelinstantie wordt bekend.
 
@@ -1383,7 +1386,7 @@ De openbare sleutel wordt opgeslagen in het certificaat van de gebruiker dat bes
 
 >[!NOTE]
 >
->AEM Forms ondersteunt ook *[CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29)*-specificaties voor het digitaal ondertekenen van PDF-documenten.
+>AEM Forms ondersteunt ook de *[CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29)*-specificatie voor het digitaal ondertekenen van PDF-documenten.
 
 **PDF-documenten certificeren**
 
@@ -1411,7 +1414,7 @@ Een annotatie kan bijvoorbeeld bepaalde tekst op een pagina verbergen die belang
 
 **Syntaxis**:
 
-```
+```java
 secureDocument(Document inDoc,
  EncryptionOptions encryptionOptions,
  SignatureOptions signatureOptions,
@@ -1452,7 +1455,7 @@ secureDocument(Document inDoc,
 
 **Voorbeeld 1**: In dit voorbeeld wordt wachtwoordversleuteling uitgevoerd ter certificering van een handtekeningveld en Reader Extending the PDF document.
 
-```
+```java
 /*************************************************************************
  *
  * ADOBE CONFIDENTIAL
@@ -2077,7 +2080,7 @@ public class PassEncryptSignExtend {
 
 Als het volgende foutbericht wordt weergegeven tijdens het uitbreiden van een PDF-document door een lezer:
 
-```xml
+```javascript
 org.apache.sling.engine.impl.SlingRequestProcessorImpl service: Uncaught Throwable java.lang.ThreadDeath: null at com.adobe.internal.pdftoolkit.services.javascript.GibsonContextFactory.observeInstructionCount(GibsonContextFactory.java:138)
 ```
 
@@ -2085,7 +2088,7 @@ Dit betekent dat de Reader Extension-service de JavaScripts die in het document 
 
 Het time-outinterval dat is gedefinieerd voor de JavaScripts in het PDF-document, beheren met:
 
-```xml
+```javascript
 ReaderExtensionsOptionSpec optionSpec = new ReaderExtensionsOptionSpec(usageRights, message);
 optionSpec.setJsScriptExecutionTimeoutInterval(100);
 ```
@@ -2748,7 +2751,7 @@ public class VerifyFieldEncryptedPDF {
 
 ### Meerdere digitale handtekeningen verifiëren {#verifying-multiple-digital-signatures}
 
-Met AEM kunt u digitale handtekeningen in PDF-documenten verifiëren. Een PDF-document kan meerdere digitale handtekeningen bevatten als het is onderworpen aan een bedrijfsproces waarvoor handtekeningen van meerdere ondertekenaars vereist zijn. Een financiële transactie vereist bijvoorbeeld handtekeningen van zowel de leningfunctionaris als de beheerder. U kunt de API van de handtekeningenservice gebruiken om alle handtekeningen in het PDF-document te verifiëren. Wanneer u meerdere digitale handtekeningen controleert, kunt u de status en eigenschappen van elke handtekening controleren. Voordat u een digitale handtekening vertrouwt, raadt Adobe u aan deze te verifiëren.
+Met AEM kunt u digitale handtekeningen in PDF-documenten verifiëren. Een PDF-document kan meerdere digitale handtekeningen bevatten als het is onderworpen aan een bedrijfsproces waarvoor handtekeningen van meerdere ondertekenaars vereist zijn. Een financiële transactie vereist bijvoorbeeld handtekeningen van zowel de leningfunctionaris als de beheerder. U kunt de API van de handtekeningenservice gebruiken om alle handtekeningen in het PDF-document te verifiëren. Wanneer u meerdere digitale handtekeningen controleert, kunt u de status en eigenschappen van elke handtekening controleren. Before you trust a digital signature, Adobe recommends that you verify it.
 
 **Syntaxis**: `verifyDocument(Document doc, RevocationCheckStyle revocationCheckStyle, VerificationTime verificationTime, ValidationPreferences prefStore, ResourceResolver resourceResolver)`
 
@@ -2762,28 +2765,28 @@ Met AEM kunt u digitale handtekeningen in PDF-documenten verifiëren. Een PDF-do
   </tr>
   <tr>
    <td><code>inDoc</code> </td>
-   <td>Document, object dat PDF bevat<br /> </td>
+   <td>Document object containing PDF<br /> </td>
   </tr>
   <tr>
    <td><code>revocationCheckStyle</code></td>
-   <td>De optie voor het controleren van de intrekking van certificaten die tijdens de validatie zijn aangetroffen</td>
+   <td>The option to govern the revocation checking of the certificates encountered during validation</td>
   </tr>
   <tr>
    <td><code>verificationTime</code></td>
-   <td>Het tijdstip waarop de handtekening moet worden gevalideerd</td>
+   <td>The time at which the signature should be validated</td>
   </tr>
   <tr>
    <td><code>dssPrefs</code></td>
-   <td>Voorkeuren voor het besturen van verschillende validatieconfiguraties. Voor een versleuteld document stelt u ontgrendelingsopties in met <code>setUnlockOptions()</code></td>
+   <td>Preferences to control various validation configurations. For an encrypted document, set unlock options by using <code>setUnlockOptions()</code></td>
   </tr>
   <tr>
    <td><code>resourceResolver</code></td>
-   <td>Resourceoplosser voor de graniet Trust Store</td>
+   <td>Resource resolver to the granite trust store</td>
   </tr>
  </tbody>
 </table>
 
-De volgende voorbeeldcode gebruikt DocAssuranceService om de handtekeningvelden in een reeds gecodeerd PDF-document te verifiëren.
+The following sample code uses DocAssuranceService to verify the signature fields in an already encrypted PDF document.
 
 ```java
 /*************************************************************************
@@ -3044,9 +3047,9 @@ public class VerifyEncryptedPDFDoc {
 }
 ```
 
-### Digitale handtekeningen verwijderen {#removing-digital-signatures}
+### Removing digital signatures {#removing-digital-signatures}
 
-U kunt een nieuwe digitale handtekening alleen op een handtekeningveld toepassen nadat u de vorige digitale handtekening hebt verwijderd. U kunt een digitale handtekening niet overschrijven. Als u probeert een digitale handtekening toe te passen op een handtekeningveld dat al een handtekening bevat, treedt een uitzondering op.
+You can apply a new digital signature to a signature field only after you remove the previous digital signature. You cannot overwrite a digital signature. If you attempt to apply a digital signature to a signature field that contains a signature already, an exception occurs.
 
 **Syntaxis**: `clearSignatureField(Document inDoc, String signatureFieldName, UnlockOptions unlockOptions)`
 
@@ -3060,20 +3063,20 @@ U kunt een nieuwe digitale handtekening alleen op een handtekeningveld toepassen
   </tr>
   <tr>
    <td><code>inDoc</code> </td>
-   <td>Document, object dat PDF bevat<br /> </td>
+   <td>Document object containing PDF<br /> </td>
   </tr>
   <tr>
    <td><code>signatureFieldName</code></td>
-   <td>De naam van het handtekeningveld<br /> </td>
+   <td>The name of the signature field<br /> </td>
   </tr>
   <tr>
    <td><code>unlockOptions</code> </td>
-   <td>Bevat de parameters die vereist zijn om een gecodeerd bestand te ontgrendelen. Dit is alleen vereist als het bestand is versleuteld<br /> </td>
+   <td>Includes the parameters require to unlock an encrypted file, This is required only if the file is encrypted<br /> </td>
   </tr>
  </tbody>
 </table>
 
-In het volgende Java-codevoorbeeld wordt een digitale handtekening uit een handtekeningveld verwijderd.
+The following Java code sample removes a digital signature from a signature field.
 
 ```java
 /*************************************************************************
@@ -3165,9 +3168,9 @@ public class ClearSignatureField {
 }
 ```
 
-### Handtekeningveld voor certificering wordt opgehaald {#getting-certifying-signature-field}
+### Getting certifying signature field {#getting-certifying-signature-field}
 
-U kunt de namen ophalen van alle handtekeningvelden in een PDF-document dat u wilt ondertekenen of certificeren. Als u niet zeker weet welke namen van handtekeningvelden zich in een PDF-document bevinden of als u de namen wilt verifiëren, kunt u deze via programmacode ophalen. De service Handtekening retourneert de volledig gekwalificeerde naam van het handtekeningveld, zoals `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
+You can retrieve the names of all signature fields that are located in a PDF document that you want to sign or certify. Als u niet zeker weet welke namen van handtekeningvelden zich in een PDF-document bevinden of als u de namen wilt verifiëren, kunt u deze via programmacode ophalen. De service Handtekening retourneert de volledig gekwalificeerde naam van het handtekeningveld, zoals `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
 
 **Syntaxis**: `getCertifyingSignatureField(Document inDoc, UnlockOptions unlockOptions)`
 
@@ -3190,9 +3193,9 @@ U kunt de namen ophalen van alle handtekeningvelden in een PDF-document dat u wi
  </tbody>
 </table>
 
-In het volgende Java-codevoorbeeld wordt het handtekeningveld opgehaald dat is gebruikt om het document te certificeren.
+The following Java code example retrieves the signature field that was used to certify the document.
 
-```
+```java
 /*************************************************************************
  *
  * ADOBE CONFIDENTIAL
@@ -3284,9 +3287,9 @@ public class GetCertifyingSignatureField {
 }
 ```
 
-### PDF-coderingstype ophalen {#getting-pdf-encryption-type}
+### Getting PDF encryption type {#getting-pdf-encryption-type}
 
-U kunt de namen ophalen van alle handtekeningvelden in een PDF-document dat u wilt ondertekenen of certificeren. Als u niet zeker weet welke namen van handtekeningvelden zich in een PDF-document bevinden of als u de namen wilt verifiëren, kunt u deze via programmacode ophalen. De service Handtekening retourneert de volledig gekwalificeerde naam van het handtekeningveld, bijvoorbeeld `asform1[0].grantApplication[0].page1[0].SignatureField1[0]`.
+You can retrieve the names of all signature fields that are located in a PDF document that you want to sign or certify. Als u niet zeker weet welke namen van handtekeningvelden zich in een PDF-document bevinden of als u de namen wilt verifiëren, kunt u deze via programmacode ophalen. The Signature service returns the fully qualified name of the signature field, such `asform1[0].grantApplication[0].page1[0].SignatureField1[0]`.
 
 **Syntaxis**: `void getPDFEncryption(Document inDoc)`
 
@@ -3428,75 +3431,75 @@ Verwijder op wachtwoorden gebaseerde versleuteling uit een PDF-document zodat ge
 In het volgende codevoorbeeld wordt op een wachtwoord gebaseerde codering verwijderd uit een PDF-document.
 
 ```java
-package com.adobe.docassurance.samples;
+    package com.adobe.docassurance.samples;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import org.apache.felix.scr.annotations.Component;
-import org.apache.felix.scr.annotations.Reference;
-import org.apache.felix.scr.annotations.Service;
-import org.apache.sling.jcr.api.SlingRepository;
+    import java.io.File;
+    import java.io.FileNotFoundException;
+    import org.apache.felix.scr.annotations.Component;
+    import org.apache.felix.scr.annotations.Reference;
+    import org.apache.felix.scr.annotations.Service;
+    import org.apache.sling.jcr.api.SlingRepository;
 
-import com.adobe.aemfd.docmanager.Document;
-import com.adobe.fd.docassurance.client.api.DocAssuranceService;
+    import com.adobe.aemfd.docmanager.Document;
+    import com.adobe.fd.docassurance.client.api.DocAssuranceService;
 
-/**
- * The following Java code example removes password-based encryption from a PDF document.
- * The master password value used to remove password-based encryption is PermissionPassword
- *
- */
-@Component(enabled=true,immediate=true)
-@Service(value=RemovePasswordEncryption.class)
-public class RemovePasswordEncryption {
+    /**
+    * The following Java code example removes password-based encryption from a PDF document.
+    * The master password value used to remove password-based encryption is PermissionPassword
+    *
+    */
+    @Component(enabled=true,immediate=true)
+    @Service(value=RemovePasswordEncryption.class)
+    public class RemovePasswordEncryption {
 
- // Create reference for DocAssuranceService
- @Reference
- private DocAssuranceService docAssuranceService;
+    // Create reference for DocAssuranceService
+    @Reference
+    private DocAssuranceService docAssuranceService;
 
- @Reference
-    private SlingRepository slingRepository;
+    @Reference
+        private SlingRepository slingRepository;
 
- /**
-  * The below sample code demonstrates removing password encryption from a PDF using AEM EncryptionService.
-  *
-  * @param inFilePath  path of the input PDF File
-  * Path Example for Files stored at hardDisk = "C:/temp/test.pdf"
-  *
-  * @param outFilePath path where the output PDF File needs to be saved
-  * Path Example for Files stored at hardDisk = "C:/temp/test_out.pdf"
-  * @throws Exception
-  */
- public void removePasswordEncryption(String inputFile, String outputFile) throws Exception {
+    /**
+    * The below sample code demonstrates removing password encryption from a PDF using AEM EncryptionService.
+    *
+    * @param inFilePath  path of the input PDF File
+    * Path Example for Files stored at hardDisk = "C:/temp/test.pdf"
+    *
+    * @param outFilePath path where the output PDF File needs to be saved
+    * Path Example for Files stored at hardDisk = "C:/temp/test_out.pdf"
+    * @throws Exception
+    */
+    public void removePasswordEncryption(String inputFile, String outputFile) throws Exception {
 
-  File inFile = new File(inputFile);
-  Document inDoc = new Document(inFile);
+    File inFile = new File(inputFile);
+    Document inDoc = new Document(inFile);
 
-  File outFile = new File(outputFile);
-  Document outDoc = null;
+    File outFile = new File(outputFile);
+    Document outDoc = null;
 
-     try{
+        try{
 
-      String password = "PermissionPassword"; //master password with which the pdf was encrypted
-                //in case if the pdf is encrypted only with user password, specify the
-                //user password
-      //Remove password-based encryption from the PDF document
-      outDoc = docAssuranceService.removePDFPasswordSecurity(inDoc,password);
+        String password = "PermissionPassword"; //master password with which the pdf was encrypted
+                    //in case if the pdf is encrypted only with user password, specify the
+                    //user password
+        //Remove password-based encryption from the PDF document
+        outDoc = docAssuranceService.removePDFPasswordSecurity(inDoc,password);
 
-     }finally{
-                /**
-                 * always close the PDFDocument object after your processing is done.
-                 */
-                if(inDoc != null){
-                    inDoc.close();
-                }
+        }finally{
+                    /**
+                    * always close the PDFDocument object after your processing is done.
+                    */
+                    if(inDoc != null){
+                        inDoc.close();
+                    }
 
-        }
+            }
 
-        outDoc.copyToFile(outFile);
+            outDoc.copyToFile(outFile);
 
- }
+    }
 
-}
+    }
 ```
 
 ### Certificaatversleuteling verwijderen {#removing-certificate-encryption}
@@ -3523,7 +3526,7 @@ U kunt versleuteling op basis van certificaten verwijderen uit een PDF-document,
   </tr>
   <tr>
    <td><code>ResourceResolver</code></td>
-   <td>ResourceResolver om tot de belangrijkste opslag van de bepaalde gebruiker toegang te hebben om de Credentials te halen.</td>
+   <td>ResourceResolver to access the key store of the particular user to fetch the Credential.</td>
   </tr>
  </tbody>
 </table>
@@ -3531,111 +3534,111 @@ U kunt versleuteling op basis van certificaten verwijderen uit een PDF-document,
 In het volgende Java-codevoorbeeld wordt versleuteling op basis van een certificaat verwijderd uit een PDF-document.
 
 ```java
-package com.adobe.docassurance.samples;
+    package com.adobe.docassurance.samples;
 
-import java.io.File;
+    import java.io.File;
 
-import javax.jcr.Session;
+    import javax.jcr.Session;
 
-import org.apache.felix.scr.annotations.Component;
-import org.apache.felix.scr.annotations.Reference;
-import org.apache.felix.scr.annotations.Service;
-import org.apache.sling.api.resource.ResourceResolver;
-import org.apache.sling.jcr.api.SlingRepository;
-import org.apache.sling.jcr.resource.JcrResourceResolverFactory;
+    import org.apache.felix.scr.annotations.Component;
+    import org.apache.felix.scr.annotations.Reference;
+    import org.apache.felix.scr.annotations.Service;
+    import org.apache.sling.api.resource.ResourceResolver;
+    import org.apache.sling.jcr.api.SlingRepository;
+    import org.apache.sling.jcr.resource.JcrResourceResolverFactory;
 
-import com.adobe.aemfd.docmanager.Document;
-import com.adobe.fd.docassurance.client.api.DocAssuranceService;
+    import com.adobe.aemfd.docmanager.Document;
+    import com.adobe.fd.docassurance.client.api.DocAssuranceService;
 
-/**
- * The following Java code example removes certificate-based encryption from a PDF document
- *
- */
-@Component(enabled=true,immediate=true)
-@Service(value=RemovePKIEncryption.class)
-public class RemovePKIEncryption {
-
- // Create reference for docAssuranceServiceInterface
- @Reference
- private DocAssuranceService docAssuranceService;
-
- @Reference
-    private SlingRepository slingRepository;
-
- @Reference
-    private JcrResourceResolverFactory jcrResourceResolverFactory ;
-
- /**
-  * The below sample code demonstrates encrypting PDF with Password using AEM docAssuranceService.
-  *
-  * @param inFilePath  path of the input PDF File
-  * Path Example for Files stored at hardDisk = "C:/temp/test.pdf"
-  *
-  * @param outFilePath path where the output PDF File needs to be saved
-  * Path Example for Files stored at hardDisk = "C:/temp/test_Encrypted.pdf"
-  *
-  * @throws Exception
-  */
- public void removePKIEncryption(String inputFile, String outputFile) throws Exception {
-
-  File inFile = new File(inputFile);
-  Document inDoc = new Document(inFile);
-
-  File outFile = new File(outputFile);
-  Document outDoc = null;
-
-        Session adminSession = null;
-        ResourceResolver resourceResolver = null;
-        try{
-    adminSession = slingRepository.loginAdministrative(null);
-    resourceResolver = jcrResourceResolverFactory.getResourceResolver(adminSession);
-
-    //Remove certificate-based encryption from the PDF document
     /**
-     * Here the alias("encryption") of the private credential stored in the keystore of the
-     * user has been provided with the user's resource resolver
-     */
-    outDoc = docAssuranceService.removePDFCertificateSecurity(inDoc, "encryption",resourceResolver);
+    * The following Java code example removes certificate-based encryption from a PDF document
+    *
+    */
+    @Component(enabled=true,immediate=true)
+    @Service(value=RemovePKIEncryption.class)
+    public class RemovePKIEncryption {
 
-        }catch(Exception e){
+    // Create reference for docAssuranceServiceInterface
+    @Reference
+    private DocAssuranceService docAssuranceService;
 
-         // TODO Auto-generated catch block
-        }finally{
-            /**
-             * always close the PDFDocument object after your processing is done.
-             */
-            if(inDoc != null){
-                inDoc.close();
-            }
-            if(adminSession != null && adminSession.isLive()){
-                if(resourceResolver != null){
-                    resourceResolver.close();
+    @Reference
+        private SlingRepository slingRepository;
+
+    @Reference
+        private JcrResourceResolverFactory jcrResourceResolverFactory ;
+
+    /**
+    * The below sample code demonstrates encrypting PDF with Password using AEM docAssuranceService.
+    *
+    * @param inFilePath  path of the input PDF File
+    * Path Example for Files stored at hardDisk = "C:/temp/test.pdf"
+    *
+    * @param outFilePath path where the output PDF File needs to be saved
+    * Path Example for Files stored at hardDisk = "C:/temp/test_Encrypted.pdf"
+    *
+    * @throws Exception
+    */
+    public void removePKIEncryption(String inputFile, String outputFile) throws Exception {
+
+    File inFile = new File(inputFile);
+    Document inDoc = new Document(inFile);
+
+    File outFile = new File(outputFile);
+    Document outDoc = null;
+
+            Session adminSession = null;
+            ResourceResolver resourceResolver = null;
+            try{
+        adminSession = slingRepository.loginAdministrative(null);
+        resourceResolver = jcrResourceResolverFactory.getResourceResolver(adminSession);
+
+        //Remove certificate-based encryption from the PDF document
+        /**
+        * Here the alias("encryption") of the private credential stored in the keystore of the
+        * user has been provided with the user's resource resolver
+        */
+        outDoc = docAssuranceService.removePDFCertificateSecurity(inDoc, "encryption",resourceResolver);
+
+            }catch(Exception e){
+
+            // TODO Auto-generated catch block
+            }finally{
+                /**
+                * always close the PDFDocument object after your processing is done.
+                */
+                if(inDoc != null){
+                    inDoc.close();
                 }
-                adminSession.logout();
+                if(adminSession != null && adminSession.isLive()){
+                    if(resourceResolver != null){
+                        resourceResolver.close();
+                    }
+                    adminSession.logout();
+                }
             }
-        }
 
-        outDoc.copyToFile(outFile);
- }
+            outDoc.copyToFile(outFile);
+    }
 
- }
+    }
 ```
 
 ## Uitvoerservice {#output-service}
 
-De uitvoerservice biedt API&#39;s waarmee een XDP-bestand kan worden gerenderd in de indelingen .pdf, .pcl, .zpl en .ps. De service ondersteunt de volgende API&#39;s:
+The Output service provides APIs to render an XDP file in .pdf, .pcl, .zpl, and .ps formats. De service ondersteunt de volgende API&#39;s:
 
-* **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p):**Hiermee wordt een PDF-document gegenereerd door een formulierontwerp samen te voegen met gegevens die als letterlijke waarden zijn opgeslagen op een netwerklocatie, lokaal bestandssysteem of HTTP-locatie.
+* **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p):**Generates a PDF document by merging a form design with data stored on a network location, local file system, or HTTP location as literal values.
 
 * **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p):**Hiermee wordt een PDF-document gegenereerd door een formulierontwerp samen te voegen met gegevens die in een toepassing zijn opgeslagen.
 * **[generatePDFOutputBatch](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutputbatch-p):**Hiermee voegt u een formulierontwerp samen met gegevens om een PDF-document te maken. Hiermee genereert u desgewenst een metagegevensbestand voor elke record of slaat u de uitvoer op in een PDF-bestand.
-* **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p):**Hiermee genereert u een PCL-, PostScript- of ZPL-uitvoer van een formulierontwerp en een gegevensbestand dat is opgeslagen op een netwerklocatie, lokaal bestandssysteem of HTTP-locatie als letterlijke waarden.
+* **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p):**Generates a PCL, PostScript, or ZPL output from a form design and data file stored on a network location, local file system, or HTTP location as literal values.
 
-* **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p):**Hiermee genereert u een PCL-, PostScript- en ZPL-uitvoer van een formulierontwerp en gegevensbestand dat in een toepassing is opgeslagen.
+* **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p):**Generates a PCL, PostScript, and ZPL output from a form design and data file that are stored in an application.
 
 ### generatePDFOutput {#generatepdfoutput}
 
-Met de API generatePDFOutput wordt een PDF-document gegenereerd door een formulierontwerp met gegevens samen te voegen. Hiermee genereert u desgewenst een metagegevensbestand voor elke record of slaat u de uitvoer op in een PDF-bestand. Gebruik de API generatePDFOutput voor de formulierontwerpen of gegevens die zijn opgeslagen op een netwerklocatie, lokaal bestandssysteem of HTTP-locatie als letterlijke waarden. Als het formulierontwerp en de XML-gegevens in een toepassing worden opgeslagen, gebruikt u de API [generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p) .
+Met de API generatePDFOutput wordt een PDF-document gegenereerd door een formulierontwerp met gegevens samen te voegen. Optionally, generates a metadata file for each record or saves the output to a PDF file. Use the generatePDFOutput API for the form designs or data that are stored on a network location, local file system, or HTTP location as literal values. If the form design and XML data are stored in an application, use the [generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p) API.
 
 **Syntaxis:** `Document generatePDFOutput(String uriOrFileName, Document data, PDFOutputOptions options);`
 
@@ -3657,87 +3660,87 @@ Met de API generatePDFOutput wordt een PDF-document gegenereerd door een formuli
   </tr>
   <tr>
    <td>opties</td>
-   <td>Geeft waarden op voor de variabelen contentRoot, locale, AcrobatVersion, linearzedPDF en taggedPDF. De parameter options accepteert object van het type PDFOutputOptions. <br /> </td>
+   <td>Geeft waarden op voor de variabelen contentRoot, locale, AcrobatVersion, linearzedPDF en taggedPDF. The options parameter accept object of type PDFOutputOptions. <br /> </td>
   </tr>
  </tbody>
 </table>
 
-In het volgende voorbeeld van Java-code wordt een PDF-document gegenereerd door een formulierontwerp samen te voegen met gegevens die zijn opgeslagen in een XML-bestand.
+The following Java code sample generates a PDF document by merging a form design with data stored in an XML file.
 
 ```java
-@Reference private OutputService outputService;
+    @Reference private OutputService outputService;
 
-private File generatePDFOutput(String contentRoot,File inputXML,String templateStr,String acrobatVersion,String tagged,String linearized, String locale) {
+    private File generatePDFOutput(String contentRoot,File inputXML,String templateStr,String acrobatVersion,String tagged,String linearized, String locale) {
 
-String outputFolder="C:/Output";
+    String outputFolder="C:/Output";
 
-Document doc=null;
+    Document doc=null;
 
-try {
+    try {
 
-        PDFOutputOptions option = new PDFOutputOptions();         option.setContentRoot(contentRoot);         if(acrobatVersion.equalsIgnoreCase("Acrobat_10"))
+            PDFOutputOptions option = new PDFOutputOptions();         option.setContentRoot(contentRoot);         if(acrobatVersion.equalsIgnoreCase("Acrobat_10"))
 
-        {
+            {
 
-            option.setAcrobatVersion(com.adobe.fd.output.api.AcrobatVersion.Acrobat_10);
+                option.setAcrobatVersion(com.adobe.fd.output.api.AcrobatVersion.Acrobat_10);
 
-        } else if(acrobatVersion.equalsIgnoreCase("Acrobat_10_1")) {
+            } else if(acrobatVersion.equalsIgnoreCase("Acrobat_10_1")) {
 
-            option.setAcrobatVersion(com.adobe.fd.output.api.AcrobatVersion.Acrobat_10_1);
+                option.setAcrobatVersion(com.adobe.fd.output.api.AcrobatVersion.Acrobat_10_1);
 
-        } else if(acrobatVersion.equalsIgnoreCase("Acrobat_11")) {             option.setAcrobatVersion(com.adobe.fd.output.api.AcrobatVersion.Acrobat_11);
+            } else if(acrobatVersion.equalsIgnoreCase("Acrobat_11")) {             option.setAcrobatVersion(com.adobe.fd.output.api.AcrobatVersion.Acrobat_11);
+
+            }
+
+            if (tagged.equalsIgnoreCase("true") ) {
+
+                option.setTaggedPDF(true );
+
+            }
+
+            if (linearized.equalsIgnoreCase("true") ) {
+
+                option.setTaggedPDF(true );
+
+            }
+
+            if(locale!=null)
+
+            {
+
+                option.setLocale(locale);
+
+            }
+
+            InputStream in = new FileInputStream(inputXML);
+
+            doc = outputService.generatePDFOutput(templateStr,new Document(in),option);         File toSave = new File(outputFolder+"Output.pdf");
+
+            doc.copyToFile(toSave);
+
+            return toSave;
+
+        } catch (OutputServiceException e) {
+
+            e.printStackTrace();
+
+        }catch (FileNotFoundException e) {
+
+            e.printStackTrace();
+
+        } catch (IOException e) {
+
+            e.printStackTrace();
+
+        }finally{
+
+                    doc.dispose();
 
         }
 
-        if (tagged.equalsIgnoreCase("true") ) {
-
-            option.setTaggedPDF(true );
-
-        }
-
-        if (linearized.equalsIgnoreCase("true") ) {
-
-            option.setTaggedPDF(true );
-
-        }
-
-        if(locale!=null)
-
-        {
-
-            option.setLocale(locale);
-
-        }
-
-        InputStream in = new FileInputStream(inputXML);
-
-        doc = outputService.generatePDFOutput(templateStr,new Document(in),option);         File toSave = new File(outputFolder+"Output.pdf");
-
-        doc.copyToFile(toSave);
-
-        return toSave;
-
-    } catch (OutputServiceException e) {
-
-         e.printStackTrace();
-
-    }catch (FileNotFoundException e) {
-
-         e.printStackTrace();
-
-    } catch (IOException e) {
-
-         e.printStackTrace();
-
-    }finally{
-
-                doc.dispose();
+        return null;
 
     }
-
-    return null;
-
-}
 ```
 
 ### generatePDFOutput {#generatepdfoutput-1}
@@ -3764,95 +3767,95 @@ Met de API generatePDFOutput wordt een PDF-document gegenereerd door een formuli
   </tr>
   <tr>
    <td>opties</td>
-   <td>Geeft waarden op voor de variabelen contentRoot, locale, AcrobatVersion, linearzedPDF en taggedPDF. De parameter options accepteert object van het type PDFOutputOptions.</td>
+   <td>Geeft waarden op voor de variabelen contentRoot, locale, AcrobatVersion, linearzedPDF en taggedPDF. The options parameter accepts object of type PDFOutputOptions.</td>
   </tr>
  </tbody>
 </table>
 
-In het volgende voorbeeld van Java-code wordt een PDF-document gegenereerd door een formulierontwerp samen te voegen met gegevens die zijn opgeslagen in een XML-bestand.
+The following Java code sample generates a PDF document by merging a form design with data stored in an XML file.
 
 ```java
-@Reference private OutputService outputService;
+    @Reference private OutputService outputService;
 
-private File generatePDFOutput2(String contentRoot, File inputXML, File templateStr, String acrobatVersion, String tagged, String linearized, String locale) {
+    private File generatePDFOutput2(String contentRoot, File inputXML, File templateStr, String acrobatVersion, String tagged, String linearized, String locale) {
 
-String outputFolder="C:/Output";
+    String outputFolder="C:/Output";
 
-Document doc=null;
+    Document doc=null;
 
-     try {
+        try {
 
-            PDFOutputOptions option = new PDFOutputOptions();             option.setContentRoot(contentRoot);
-            if(locale!=null)
+                PDFOutputOptions option = new PDFOutputOptions();             option.setContentRoot(contentRoot);
+                if(locale!=null)
 
-            {
+                {
 
-                option.setLocale(locale);
+                    option.setLocale(locale);
 
-            }
+                }
 
-            if(acrobatVersion.equalsIgnoreCase("Acrobat_10"))
+                if(acrobatVersion.equalsIgnoreCase("Acrobat_10"))
 
-            {
+                {
 
-                option.setAcrobatVersion(com.adobe.fd.output.api.AcrobatVersion.Acrobat_10);
+                    option.setAcrobatVersion(com.adobe.fd.output.api.AcrobatVersion.Acrobat_10);
 
-            } else if(acrobatVersion.equalsIgnoreCase("Acrobat_10_1")) {                 option.setAcrobatVersion(com.adobe.fd.output.api.AcrobatVersion.Acrobat_10_1);
+                } else if(acrobatVersion.equalsIgnoreCase("Acrobat_10_1")) {                 option.setAcrobatVersion(com.adobe.fd.output.api.AcrobatVersion.Acrobat_10_1);
 
-            } else if(acrobatVersion.equalsIgnoreCase("Acrobat_11")) {                 option.setAcrobatVersion(com.adobe.fd.output.api.AcrobatVersion.Acrobat_11);
+                } else if(acrobatVersion.equalsIgnoreCase("Acrobat_11")) {                 option.setAcrobatVersion(com.adobe.fd.output.api.AcrobatVersion.Acrobat_11);
 
-            }
+                }
 
-            if (tagged.equalsIgnoreCase("true") ) {
+                if (tagged.equalsIgnoreCase("true") ) {
 
-                option.setTaggedPDF(true );
+                    option.setTaggedPDF(true );
 
-            }
+                }
 
-            if (linearized.equalsIgnoreCase("true") ) {
+                if (linearized.equalsIgnoreCase("true") ) {
 
-                option.setTaggedPDF(true );
+                    option.setTaggedPDF(true );
 
-            }
+                }
 
-            InputStream inputXMLStream = new FileInputStream(inputXML);
+                InputStream inputXMLStream = new FileInputStream(inputXML);
 
-            InputStream templateStream = new FileInputStream(templateStr);;
+                InputStream templateStream = new FileInputStream(templateStr);;
 
-            doc = outputService.generatePDFOutput(new Document(templateStream),new             Document(inputXMLStream),option);
+                doc = outputService.generatePDFOutput(new Document(templateStream),new             Document(inputXMLStream),option);
 
-                     File toSave = new File(outputFolder,"Output.pdf");
+                        File toSave = new File(outputFolder,"Output.pdf");
 
-                     doc.copyToFile(toSave);
+                        doc.copyToFile(toSave);
 
-                    return toSave;
+                        return toSave;
 
-                } catch (OutputServiceException e) {
+                    } catch (OutputServiceException e) {
 
-                         e.printStackTrace();
+                            e.printStackTrace();
 
-               }catch (FileNotFoundException e) {
+                }catch (FileNotFoundException e) {
 
-                          e.printStackTrace();
+                            e.printStackTrace();
 
-               } catch (IOException e) {
+                } catch (IOException e) {
 
-                          e.printStackTrace();
+                            e.printStackTrace();
 
-               }finally{
+                }finally{
 
-                            doc.dispose();
+                                doc.dispose();
 
-              }
+                }
 
-                return null;
+                    return null;
 
-}
+    }
 ```
 
 ### generatePDFOutputBatch {#generatepdfoutputbatch}
 
-Hiermee voegt u een formulierontwerp samen met gegevens om een PDF-document te maken. Hiermee genereert u desgewenst een metagegevensbestand voor elke record of slaat u de uitvoer op in een PDF-bestand. Gebruik de API generatePDFOutputBatch voor formulierontwerpen of gegevens die als letterlijke waarden zijn opgeslagen op een netwerklocatie, een lokaal bestandssysteem of een HTTP-locatie.
+Merges a form design with data to create a PDF document. Hiermee genereert u desgewenst een metagegevensbestand voor elke record of slaat u de uitvoer op in een PDF-bestand. Use the generatePDFOutputBatch API for form designs or data that are stored on a network location, local file system, or HTTP location as literal values.
 
 **Syntaxis:** `BatchResult generatePDFOutputBatch(Map templates, Map data, PDFOutputOptions options, BatchOptions batchOptions);`
 
@@ -3874,7 +3877,7 @@ Hiermee voegt u een formulierontwerp samen met gegevens om een PDF-document te m
   </tr>
   <tr>
    <td>opties</td>
-   <td>Geeft waarden op voor de variabelen contentRoot, locale, AcrobatVersion, linearzedPDF en taggedPDF. De parameter options accepteert object van het type PDFOutputOptions.</td>
+   <td>Geeft waarden op voor de variabelen contentRoot, locale, AcrobatVersion, linearzedPDF en taggedPDF. The options parameter accepts object of type PDFOutputOptions.</td>
   </tr>
   <tr>
    <td>batchOptions</td>
@@ -3883,7 +3886,7 @@ Hiermee voegt u een formulierontwerp samen met gegevens om een PDF-document te m
  </tbody>
 </table>
 
-In het volgende Java-codevoorbeeld worden PDF-documenten gegenereerd door een formulierontwerp samen te voegen met gegevens die zijn opgeslagen in een XML-bestand.
+The following Java code sample generates PDF documents by merging a form designs with data stored in an XML file.
 
 ```java
 private ArrayList generatePDFBatch(String contentRoot,String multipleFiles) {
@@ -3996,7 +3999,7 @@ Hiermee genereert u een PCL-, PostScript- en ZPL-uitvoer van een formulierontwer
  </tbody>
 </table>
 
-In het volgende Java-codevoorbeeld worden PCL-, PostScript- en ZPL-uitvoer gegenereerd op basis van een formulierontwerp en gegevens. Het uitvoertype is afhankelijk van de waarde die aan de `printConfig`parameter wordt doorgegeven.
+The following Java code sample generates a PCL, PostScript, and ZPL output from a form design and data. Het uitvoertype is afhankelijk van de waarde die aan de `printConfig`parameter wordt doorgegeven.
 
 ```java
 @Reference private OutputService outputService;
@@ -4060,7 +4063,7 @@ Document doc=null;
 
 ### generatePrintedOutput {#generateprintedoutput-1}
 
-Hiermee genereert u een PCL-, PostScript- en ZPL-uitvoer op basis van een formulierontwerp en een gegevensbestand. Het gegevensbestand wordt samengevoegd met het formulierontwerp en voor afdrukken opgemaakt. De uitvoer kan rechtstreeks naar een printer worden verzonden of als bestand worden opgeslagen. Gebruik de API generatePrintedOutput voor de formulierontwerpen of gegevens die in een toepassing zijn opgeslagen.
+Generates a PCL, PostScript, and ZPL output given a form design and data file. Het gegevensbestand wordt samengevoegd met het formulierontwerp en voor afdrukken opgemaakt. The output can be sent directly to a printer or saved as file. Use the generatePrintedOutput API for the form designs or data stored in an application.
 
 **Syntaxis:** `Document generatePrintedOutput(Document inputdocument, Document data, PrintedOutputOptions);`
 
@@ -4074,7 +4077,7 @@ Hiermee genereert u een PCL-, PostScript- en ZPL-uitvoer op basis van een formul
   </tr>
   <tr>
    <td>Inputdocument<br /> </td>
-   <td>Hiermee geeft u het pad en de naam van het invoerbestand op. Als alleen de bestandsnaam wordt opgegeven, wordt het bestand gelezen ten opzichte van de inhoudRoot die in de opties is opgegeven. Het bestand kan van het type XDP zijn. </td>
+   <td>Hiermee geeft u het pad en de naam van het invoerbestand op. Als alleen de bestandsnaam wordt opgegeven, wordt het bestand gelezen ten opzichte van de inhoudRoot die in de opties is opgegeven. The file can be of type XDP. </td>
   </tr>
   <tr>
    <td>gegevens</td>
@@ -4082,12 +4085,12 @@ Hiermee genereert u een PCL-, PostScript- en ZPL-uitvoer op basis van een formul
   </tr>
   <tr>
    <td>opties</td>
-   <td>Dit object wordt gebruikt om de waarden van contentRoot, locale, printConfig, copies en paginationOverride in te stellen. De parameter options accepteert object van het type PrintedOutputOptions.<br /> </td>
+   <td>Dit object wordt gebruikt om de waarden van contentRoot, locale, printConfig, copies en paginationOverride in te stellen. The options parameter accepts object of type PrintedOutputOptions.<br /> </td>
   </tr>
  </tbody>
 </table>
 
-In het volgende Java-codevoorbeeld worden PCL-, PostScript- en ZPL-uitvoer gegenereerd op basis van een formulierontwerp en gegevens. Het uitvoertype is afhankelijk van de waarde die aan de `printConfig`parameter wordt doorgegeven.
+The following Java code sample generates a PCL, PostScript, and ZPL output from a form design and data. Het uitvoertype is afhankelijk van de waarde die aan de `printConfig`parameter wordt doorgegeven.
 
 ```java
 @Reference private OutputService outputService;
@@ -4163,11 +4166,11 @@ Hiermee genereert u een document met de PS-, PCL- en ZPL-indeling door een formu
   </tr>
   <tr>
    <td>gegevens</td>
-   <td>Hiermee geeft u een kaart van sleutel- en gegevensdocument op. Als de sleutel niet ongeldig is, dan wordt het gegevensdocument teruggegeven met malplaatje voor overeenkomstige sleutel in de malplaatjesKaart.<br /> </td>
+   <td>Specifies map of key and data document. If key is not null, then data document is rendered with template for corresponding key in the templates Map.<br /> </td>
   </tr>
   <tr>
    <td>opties</td>
-   <td>Hiermee wordt het object opgegeven van het type PrintedOutputOptions. Dit object wordt gebruikt om de waarden van contentRoot, locale, printConfig, copies, paginationOverride in te stellen.<br /> </td>
+   <td>Specifies object of type PrintedOutputOptions. This object is used to set the values of contentRoot, locale, printConfig, copies, paginationOverride.<br /> </td>
   </tr>
   <tr>
    <td>batchOptions</td>
@@ -4307,7 +4310,7 @@ Hiermee exporteert u formuliergegevens uit een interactief PDF-formulier in XML-
   </tr>
   <tr>
    <td>dataFormat<br /> </td>
-   <td>Hiermee geeft u de indeling op waarin gegevens worden geëxporteerd. De variabele accepteert variabele van het type enum (XDP, XmlData, Auto).<br /> </td>
+   <td>Hiermee geeft u de indeling op waarin gegevens worden geëxporteerd. It accepts variable of type enum(XDP, XmlData, Auto).<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -4651,7 +4654,7 @@ De service createPDF genereert de volgende uitzonderingen:
 
 **Syntaxis:**
 
-```
+```java
 Map exportPDF(Document inputDoc, String inputFileName, String formatType, Document settingsDoc) throws ConversionException, InvalidParameterException, FileFormatNotSupportedException;
 ```
 
@@ -4744,7 +4747,7 @@ De service createPDF genereert de volgende uitzonderingen:
 
 **Syntaxis:**
 
-```
+```java
 OptimizePDFResult optimizePDF(Document inputDoc, String fileTypeSettings, Document settingsDoc) throws ConversionException, InvalidParameterException, FileFormatNotSupportedException;
 ```
 
@@ -4834,7 +4837,7 @@ De htmlToPdf2 service genereert de volgende uitzonderingen:
 
 **Syntaxis:**
 
-```
+```java
 HtmlToPdfResult htmlToPdf2(String inputUrl, String fileTypeSettingsName, String securitySettingsName, Document settingsDoc, Document xmpDoc) throws ConversionException, InvalidParameterException, FileFormatNotSupportedException;
 ```
 
@@ -4932,7 +4935,7 @@ Hiermee converteert u de ondersteunde indelingen naar PDF-documenten. De methode
 
 **Syntaxis:**
 
-```
+```java
 Map createPDF(Document inputDoc, String inputFileName, String pdfSettings, String securitySettings, Document settingsDoc, Document xmpDoc) throws ConversionException, InvalidParameterException, FileFormatNotSupportedException;
 ```
 
@@ -4954,9 +4957,9 @@ Map createPDF(Document inputDoc, String inputFileName, String pdfSettings, Strin
   </tr>
   <tr>
    <td>pdfSettings</td>
-   <td><p>PDF-uitvoerinstellingen voor het geconverteerde document. U kunt alleen de volgende instellingen toepassen:</p>
+   <td><p>PDF output settings for the converted document. U kunt alleen de volgende instellingen toepassen:</p>
     <ul>
-     <li>Hoge_kwaliteit_Afdrukken<br /> </li>
+     <li>High_Quality_Print<br /> </li>
      <li>PDFA1b_2005_RGB<br /> </li>
      <li>PDFA1b_2005_CMYK<br /> </li>
      <li>PDFX1a_2001<br /> </li>
@@ -4981,12 +4984,12 @@ Map createPDF(Document inputDoc, String inputFileName, String pdfSettings, Strin
   </tr>
   <tr>
    <td>xmpDoc </td>
-   <td>Het bestand bevat metagegevens voor het gegenereerde PDF-document. Het is een optionele parameter.</td>
+   <td>The file contains metadata information for generated PDF Document. Het is een optionele parameter.</td>
   </tr>
  </tbody>
 </table>
 
-In het volgende Java-codevoorbeeld worden invoerbestanden van het type PostScript (PS), Encapsulated PostScript (EPS) en printertekstbestanden (PRN) geconverteerd naar PDF-bestanden.
+The following Java code sample converts input files of type PostScript (PS), Encapsulated PostScript (EPS), and printer text files (PRN) to PDF files.
 
 ```java
 @Reference DistillerService distillerService;

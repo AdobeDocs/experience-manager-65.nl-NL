@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6128c91a-4173-42b4-926f-bbbb2b54ba5b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d488b1acc789c0fb1a631e58844d9fe9a70c2662
+source-git-commit: 3a1d02fc1bc561b54e57cf91abc8f4406ba8c365
 workflow-type: tm+mt
-source-wordcount: '2610'
+source-wordcount: '2601'
 ht-degree: 0%
 
 ---
@@ -25,8 +25,9 @@ Met deze pagina kunt u de functionaliteit van het beheer van meerdere sites uitb
 
 * Leer meer over de belangrijkste leden van de MSM Java API.
 * Creeer een nieuwe synchronisatieactie die in een rollout configuratie kan worden gebruikt.
-* Verwijder de stap &quot;Hoofdstukken&quot; in de wizard Site maken.
 * Wijzig de standaardtaal en landcodes.
+
+<!-- * Remove the "Chapters" step in the Create Site wizard. -->
 
 >[!NOTE]
 >
@@ -345,7 +346,7 @@ Voeg gebiedsdelen toe zodat de compiler van de Verduistering de klassen kan van 
    ```
 
 1. Open het POM- dossier voor de bundel van de Ontdekkingsreiziger **van het** Project bij `MyLiveActionFactory-bundle/pom.xml`.
-1. Klik in de editor op het `pom.xml` tabblad en zoek de sectie Project/afhankelijkheden. Voeg de volgende XML binnen het gebiedsdeelelement toe en bewaar dan het dossier:
+1. Klik in de editor op het `pom.xml` tabblad en zoek de sectie Project/afhankelijkheden. Voeg de volgende XML binnen het gebiedsdeelelement toe en sla dan het dossier op:
 
    ```xml
     <dependency>

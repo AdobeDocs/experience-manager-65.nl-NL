@@ -3,9 +3,9 @@ title: 'Metagegevensschema''s om de indeling van de pagina met eigenschappen van
 description: Het metagegevensschema definieert de indeling van de pagina met eigenschappen en de eigenschappen van metagegevens die voor elementen worden weergegeven. Leer hoe u een aangepast metagegevensschema kunt maken, het schema voor metagegevens kunt bewerken en hoe u het schema voor metagegevens op elementen kunt toepassen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
+source-git-commit: 8c481c9a5052ff057ae0857c2ac825cec2b26269
 workflow-type: tm+mt
-source-wordcount: '2524'
+source-wordcount: '2523'
 ht-degree: 4%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 4%
 
 # Metadata schemas {#metadata-schemas}
 
-Organisaties beschikken over een metagegevensmodel dat de detectie, het gebruik, de interoperabiliteit enzovoort van middelen verbetert. Correcte toepassing van metagegevens is onaantastbaar voor het onderhouden van workflows en processen die zijn gebaseerd op metagegevens. Om aan organisatie-brede meta-gegevensstrategie en normen te houden, kunt u meta-gegevensschema&#39;s gebruiken die gebruikers DAM helpen zich te richten. [!DNL Adobe Experience Manager] biedt eenvoudige en flexibele methoden voor het maken, onderhouden en toepassen van metagegevensschema&#39;s.
+Organisaties beschikken over een metagegevensmodel dat de detectie, het gebruik, de interoperabiliteit, enzovoort van middelen verbetert. Correcte toepassing van metagegevens is onaantastbaar voor het onderhouden van workflows en processen die zijn gebaseerd op metagegevens. Om aan organisatie-brede meta-gegevensstrategie en normen te houden, kunt u meta-gegevensschema&#39;s gebruiken die gebruikers DAM helpen zich te richten. [!DNL Adobe Experience Manager] biedt eenvoudige en flexibele methoden voor het maken, onderhouden en toepassen van metagegevensschema&#39;s.
 
 In [!DNL Adobe Experience Manager Assets]de schema&#39;s staan specifieke velden waarin specifieke informatie moet worden ingevuld. Het bevat ook lay-outinformatie om meta-gegevensgebieden op een gebruikersvriendelijke manier te tonen. Metagegevenseigenschappen zijn onder andere titel, beschrijving, MIME-typen, tags en meer. U kunt de [!UICONTROL Metadata Schema Forms] redacteur gebruiken om de bestaande schema&#39;s te wijzigen of de schema&#39;s van douanemetagegevens toe te voegen.
 
@@ -27,9 +27,9 @@ Ga als volgt te werk om de pagina met eigenschappen voor een element weer te gev
 
 *Afbeelding: Het tabblad Standaard voor elementen[!UICONTROL Properties].*
 
-Als u het MIME-type voor een element wilt wijzigen, gebruikt u een aangepast schema voor metagegevens of wijzigt u een bestaand formulier. Zie [Metagegevensschemaformulieren](/help/assets/metadata-schemas.md#edit-metadata-schema-forms) bewerken voor meer informatie. Als u het metagegevensschema van een MIME-type wijzigt, wordt de indeling van de eigenschappenpagina voor de elementen en alle subtypen gewijzigd. Als u bijvoorbeeld een JPEG-schema wijzigt onder, wordt de indeling van metagegevens (eigenschappen van elementen) `default/image` alleen gewijzigd voor elementen met het MIME-type `image/jpeg`. Als u echter het standaardschema bewerkt, worden de wijzigingen doorgevoerd in de indeling van de metagegevens voor alle typen elementen.
+Als u het MIME-type voor een element wilt wijzigen, gebruikt u een aangepast schema voor metagegevens of wijzigt u een bestaand formulier. Zie Metagegevensschema [bewerken Forms](/help/assets/metadata-schemas.md#edit-metadata-schema-forms) voor meer informatie. Als u het metagegevensschema van een MIME-type wijzigt, wordt de indeling van de eigenschappenpagina voor de elementen en alle subtypen gewijzigd. Als u bijvoorbeeld een JPEG-schema wijzigt onder, wordt de indeling van metagegevens (eigenschappen van elementen) `default/image` alleen gewijzigd voor elementen met het MIME-type `image/jpeg`. Als u echter het standaardschema bewerkt, worden de wijzigingen doorgevoerd in de indeling van de metagegevens voor alle typen elementen.
 
-## Metagegevensschema-formulieren {#default-metadata-schema-forms}
+## Metagegevensschema Forms {#default-metadata-schema-forms}
 
 Als u een lijst met formulieren of sjablonen wilt weergeven, navigeert u in de [!DNL Experience Manager] interface naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**.
 
@@ -45,8 +45,8 @@ Als u een lijst met formulieren of sjablonen wilt weergeven, navigeert u in de [
 |  | <ul><li>[!UICONTROL video]</li></ul> | Schemaformulier voor video-elementen met het MIME-type, zoals `video/avi` en `video/mp4`. |
 | [!UICONTROL collection] |  | Schemaformulier voor verzamelingen. |
 | [!UICONTROL contentfragment] |  | [Schemaformulier voor inhoudsfragmenten](/help/sites-developing/customizing-content-fragments.md). |
-| [!UICONTROL forms] |  | Dit schemaformulier heeft betrekking op [Adobe Experience Manager Forms](/help/forms/home.md). |
-| [!UICONTROL ugc_contentfragment] |  | Schemaformulier voor door de gebruiker gegenereerde inhoudsonderdelen en elementen die via sociale media in Experience Manager zijn geïntegreerd. |
+| [!UICONTROL forms] |  | Dit schema-formulier heeft betrekking op [Adobe Experience Manager Forms](/help/forms/home.md). |
+| [!UICONTROL ugc_contentfragment] |  | Schemaformulier voor door de gebruiker gegenereerde inhoudsonderdelen en elementen die via sociale media in de Experience Manager zijn geïntegreerd. |
 
 >[!NOTE]
 >
@@ -54,7 +54,7 @@ Als u een lijst met formulieren of sjablonen wilt weergeven, navigeert u in de [
 
 ## Een metagegevensschema toevoegen {#add-a-metadata-schema-form}
 
-Voer de volgende stappen uit om een metagegevensschema toe te voegen:
+Ga als volgt te werk om een metagegevensschemaformulier toe te voegen:
 
 1. Als u een aangepaste sjabloon aan de lijst wilt toevoegen, klikt u op **[!UICONTROL Create]** de werkbalk.
 
@@ -111,7 +111,7 @@ Hier volgen de geldige waarden voor deze eigenschap:
 
 * `./jcr:content/metadata/dc:title`: Hiermee wordt de waarde in het metadataknooppunt van de asset opgeslagen als de eigenschap `dc:title`.
 
-* `./jcr:created`: Hiermee slaat u de aanmaakdatum en -tijd van een element op. Het is een beschermde eigenschap. Als u deze eigenschappen configureert, kunt u deze het beste markeren als Uitschakelen, Bewerken.
+* `./jcr:created`: Hiermee slaat u de aanmaakdatum en -tijd van een element op. Het is een beschermde eigenschap. Als u deze eigenschappen configureert, raadt Adobe u aan deze als Uitschakelen bewerken te markeren.
 
 Om ervoor te zorgen dat de component correct in de vorm van het meta-gegevensschema wordt getoond, zou de bezitspad geen ruimten moeten omvatten.
 
@@ -131,15 +131,15 @@ Om ervoor te zorgen dat de component correct in de vorm van het meta-gegevenssch
 
 Als u de optie **[!UICONTROL Required]** selecteert, kunt u zoeken naar assets waarvoor verplichte metadata ontbreken. Vouw in het deelvenster **[!UICONTROL Filters]** het predicaat **[!UICONTROL Metadata Validation]** uit en selecteer de optie **[!UICONTROL Invalid]**. In de zoekresultaten worden assets weergegeven waarvoor verplichte metadata ontbreken die u via het schemaformulier hebt geconfigureerd.
 
-![Ongeldige optie geselecteerd in het deelvenster Metagegevensvalidatie van het deelvenster Filters ](assets/chlimage_1-178.png)
+![Optie geselecteerd in het deelvenster Metagegevensvalidatie van het deelvenster Filters](assets/invalid-metadata-predicate.png)
 
 Als u de component Contextuele metagegevens toevoegt aan een tabblad van een schemaformulier, wordt de component weergegeven als een lijst op de eigenschappenpagina van elementen waarop het specifieke schema wordt toegepast. De lijst bevat alle andere tabbladen, behalve het tabblad waarop u de component Contextuele metagegevens hebt toegepast. Momenteel biedt deze functie basisfunctionaliteit voor het beheren van de weergave van metagegevens op basis van de context.
 
-![Tabellen met eigenschappen van elementen van de component Contextual Metadata](assets/chlimage_1-179.png)
+![Samengestelde tabbladen met tabbladen met metagegevens van eigenschappen van elementen](assets/metadata-contextual-component-list.png)
 
 Als u een tabblad in de eigenschappenpagina wilt weergeven naast het tabblad waarop de component Contextuele metagegevens is toegepast, selecteert u het tabblad in de lijst. Het tabblad wordt toegevoegd aan de pagina met eigenschappen.
 
-![Het tabblad dat is geselecteerd in de lijst Contextual Metadata wordt weergegeven op de pagina met eigenschappen van elementen](assets/contextual-metadata-asset-properties.png)
+![Het tabblad dat is geselecteerd in de lijst met contextuele metagegevens, wordt weergegeven op de pagina met eigenschappen van elementen](assets/contextual-metadata-asset-properties.png)
 
 *Afbeelding: Contextuele metagegevens op de pagina met eigenschappen van elementen.*
 
@@ -151,13 +151,11 @@ In plaats van eigenschappen voor de opties op het tabblad **[!UICONTROL Settings
 
 Met de schema-editor kunt u een tabblad toevoegen of verwijderen. The default schema form includes the **[!UICONTROL Basic]**, **[!UICONTROL Advanced]** , **[!UICONTROL IPTC]**, and **[!UICONTROL IPTC Extension]** tabs.
 
-![Standaardtabbladen in formulier voor metagegevensschema](assets/chlimage_1-181.png)
+![Standaardtabbladen in het metagegevensschema](assets/metadata-schema-form-tabs.png)
 
-Klik `+` om een tabblad toe te voegen aan een schemaformulier. Standaard heeft het nieuwe tabblad de naam `Unnamed-1`. U kunt de naam wijzigen van het **[!UICONTROL Settings]** tabblad.
+Klik `+` om een tabblad toe te voegen aan een schemaformulier. Standaard heeft het nieuwe tabblad de naam `Unnamed-1`. U kunt de naam wijzigen van het **[!UICONTROL Settings]** tabblad. Klik `X` om een tabblad te verwijderen.
 
-Klik `X` om een tabblad te verwijderen.
-
-![Een tabblad toevoegen of verwijderen met de Editor voor een metagegevensschema](assets/chlimage_1-182.png)
+![Een tabblad toevoegen of verwijderen met de Editor voor een metagegevensschema](assets/metadata-schema-form-new-tab.png)
 
 ## Formulieren met metagegevens verwijderen {#delete-metadata-schema-forms}
 
@@ -238,7 +236,7 @@ U kunt een ander schema toepassen bij de submap. De elementen in een submap over
 
 1. Selecteer de map waarop u het gewijzigde schema wilt toepassen en klik op **[!UICONTROL Apply]**.
 
-   ![Map selecteren om metagegevensschema toe te passen](assets/chlimage_1-188.png)
+   ![Map selecteren om metagegevensschema toe te passen](assets/metadata-schema-select-folder.png)
 
 1. Als op de map het andere metagegevensschema is toegepast, verschijnt er een waarschuwing dat u op het punt staat het bestaande metagegevensschema te overschrijven. Klik op **Overschrijven**.
 1. Klik op **OK** om het succesbericht te sluiten.
@@ -265,7 +263,7 @@ U kunt verplichte velden definiëren op mapniveau. Deze worden afgedwongen voor 
 
 1. Navigeer naar de map en upload elementen met ontbrekende metagegevens voor het verplichte veld dat u aan het aangepaste formulier hebt toegevoegd. Op de kaartweergave van het element wordt een bericht voor de ontbrekende metagegevens van het verplichte veld weergegeven.
 
-   ![Bericht waarin de verplichte metagegevens voor het uploaden van elementen in de map ontbreken in de weergave met de elementenkaart](assets/chlimage_1-192.png)
+   ![Bericht waarin de verplichte metagegevens voor het uploaden van elementen in de map ontbreken in de weergave met de elementenkaart](assets/metadata-missing-info-card-view.png)
 
 1. (Optioneel) Toegang `https://[aem_server]:[port]/system/console/components/`. Vorm en laat `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` component toe die door gebrek wordt onbruikbaar gemaakt. Stel een frequentie in waarmee de geldigheid van metagegevens over de elementen wordt [!DNL Experience Manager] gecontroleerd. Deze configuratie voegt een eigenschap toe `hasValidMetadata` aan `jcr:content` elementen. [!DNL Experience Manager] gebruikt deze eigenschap om de ongeldige elementen in een zoekresultaat te filteren. Als u na een controle een element toevoegt, wordt het element pas gemarkeerd met `hasValidMetadata` de volgende geplande controle. De elementen worden daarom pas na de volgende geplande controle in zoekfilters voor ongeldige metagegevens weergegeven.
 

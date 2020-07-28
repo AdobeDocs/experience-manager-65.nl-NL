@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 404582ab-bb4c-4775-9ae3-17356d376dca
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4e823136604d291c5b867634268f67e003185a15
+source-git-commit: 391893f7cf83c018d29af14200c6f160b6d83bdd
 workflow-type: tm+mt
 source-wordcount: '2108'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -112,7 +112,7 @@ Het inhoudsgebied bevat informatie voor gepost UGC:
 
 ### Rail filteren {#ootbfilters}
 
-![chlimage_1-212](assets/chlimage_1-212.png)
+![open-filterrail](assets/open-filterrail.png)
 
 Met het pictogram van het zijpaneel wordt de filterrail geopend. De filterrail, die links van het inhoudsgebied verschijnt, verstrekt verschillende filters, elk die een onmiddellijk effect op referenced UGC hebben die in het inhoudsgebied verschijnt.
 
@@ -141,17 +141,17 @@ Met Inhoudspad wordt de referentie-UGC beperkt tot de posten die in de opgegeven
 
 Bij zoeken naar tekst wordt de UGC waarnaar wordt verwezen, beperkt tot advertenties waarin de ingevoerde tekst voorkomt.
 
-![chlimage_1-213](assets/chlimage_1-213.png)
+![tekst zoeken](assets/text-search.png)
 
 #### Site {#site}
 
 De site beperkt de UGC waarnaar wordt verwezen, tot advertenties aan geselecteerde communitysites. Als geen plaatsen worden gecontroleerd, dan worden alle verwijzingen naar UGC getoond.
 
-![chlimage_1-214](assets/chlimage_1-214.png)
+![site-panel](assets/site-panel.png)
 
 >[!NOTE]
 >
->Wanneer de bulkmoderatieconsole door een beheerder wordt betreden, worden alle verwijzingen naar UGC getoond, met inbegrip van plaatsen die niet met de tovenaar [van de](/help/communities/sites-console.md)plaatsverwezenlijking, zoals de steekproeven Geometrixx worden gecreeerd.
+>Wanneer de bulkmoderatieconsole door een beheerder wordt betreden, worden alle verwijzingen naar UGC getoond, met inbegrip van plaatsen die niet met de tovenaar [van de](/help/communities/sites-console.md)plaatsinrichting, zoals de steekproeven van Geometrixx worden gecreeerd.
 >
 >Wanneer de bulkmoderatieconsole bij publiceren door een vertrouwd communautair lid wordt betreden, dan slechts worden de verwijzingen naar UGC die voor communautaire plaatsen worden gecreeerd het lid aan gematigd wordt toegelaten getoond, en met de filter van de Plaats kunnen worden gefiltreerd.
 
@@ -189,8 +189,7 @@ Aanvullende bronnen toevoegen waarop moet worden gefilterd:
    * Als u bijvoorbeeld wilt filteren op opgenomen stemcomponenten, voert u het volgende in:
 
       `Voting=social/tally/components/hbs/voting`
-
-![chlimage_1-215](assets/chlimage_1-215.png)
+   ![extra-contenttype](assets/additional-contenttype.png)
 
 * Selecteer Opslaan.
 * Vernieuw de Gemeenschappen - de console van de Moderatie.
@@ -216,25 +215,25 @@ Als u een vlag voert, wordt de UGC waarnaar wordt verwezen, beperkt tot publicat
 
 Wanneer een stuk inhoud is gemarkeerd, blijft het gemarkeerd totdat u de markering van dat stuk inhoud ongedaan maakt door nogmaals de knop **Vlag** te selecteren. Er zijn geen markeringsniveaus, zoals belangrijk of opgevolgd.
 
-![chlimage_1-216](assets/chlimage_1-216.png)
+![vlaggen](assets/flagging.png)
 
 #### Leden {#members}
 
 Leden beperken de UGC waarnaar wordt verwezen, die aan UGC wordt weergegeven en die door de ingevoerde lidnaam is gepost.
 
-![chlimage_1-217](assets/chlimage_1-217.png)
+![leden](assets/members.png)
 
 #### Gepost in de laatste {#posted-in-the-last}
 
 Gepost in de Laatste grenzen UGC van verwijzingen aan posten die in het laatste uur, de dag, de week, de maand, of het jaar worden getoond.
 
-![chlimage_1-218](assets/chlimage_1-218.png)
+![gepost-laatst](assets/posted-last.png)
 
 #### Zin {#sentiment}
 
 [Sentiment](/help/communities/moderate-ugc.md#sentiment) beperkt de UGC waarnaar wordt verwezen tot posten met een sentiment-waarde die positief, negatief of neutraal is.
 
-![chlimage_1-219](assets/chlimage_1-219.png)
+![sentiment](assets/sentiment.png)
 
 ## Aangepaste filters {#custom-filters}
 
@@ -271,7 +270,7 @@ Aangepaste filters beschikbaar maken op bestaande communautaire sites:
 
 [Moderatiehandelingen](/help/communities/moderate-ugc.md#moderation-actions) kunnen worden uitgevoerd op een of meer selecties in het inhoudsgebied of bij het weergeven van inhoudsdetails.
 
-Als u de artikelen in grote stappen wilt matigen, klikt u in het inhoudsgebied op het pictogram Selecteren ( ![selecteren](assets/selecticon.png)) op een artikel. Dit pictogram verschijnt wanneer u de muis (bureaublad) erop plaatst of een vinger op de post (mobiel) ingedrukt houdt. Op deze manier opent u de multiselectiemodus en kunt u nu de volgende posts selecteren die bulksgewijs moeten worden gemodereerd door er gewoon op te klikken. Gebruik de knoppen op de werkbalk om moderatiehandelingen uit te voeren op de geselecteerde posten. Alle acties worden ter bevestiging voorgelegd.
+Als u de artikelen in grote stappen wilt matigen, klikt u in het inhoudsgebied op het pictogram Selecteren (![selecteren](assets/selecticon.png)) op een artikel. Dit pictogram verschijnt wanneer u de muis (bureaublad) erop plaatst of een vinger op de post (mobiel) ingedrukt houdt. Op deze manier opent u de multiselectiemodus en kunt u nu de volgende posts selecteren die bulksgewijs moeten worden gemodereerd door er gewoon op te klikken. Gebruik de knoppen op de werkbalk om moderatiehandelingen uit te voeren op de geselecteerde posten. Alle acties worden ter bevestiging voorgelegd.
 
 Als u één artikel in het inhoudsgebied wilt gematigd, houdt u de muisaanwijzer (bureaublad) of drukt u met een vinger op de post (mobiel), zodat er knoppen op de post verschijnen. Als u op één inhoudsgegeven werkt, wordt alleen een verwijderactie ter bevestiging verzonden.
 
@@ -318,19 +317,19 @@ De tekst van de post op de kaartweergave boven de mageractiepictogrammen is de t
 
 #### Reageren {#reply}
 
-![chlimage_1-220](assets/chlimage_1-220.png)
+![antwoord](assets/reply.png)
 
 Wanneer het werken met één enkele post, zal een pictogram van het Antwoord verschijnen als het type UGC antwoorden steunt en wordt gevormd om antwoorden toe te staan.
 
 #### Toestaan {#allow}
 
-![chlimage_1-221](assets/chlimage_1-221.png)
+![toestaan](assets/allow.png)
 
 Wanneer u met één bericht werkt, wordt het pictogram Toestaan weergegeven wanneer de advertentie is gemarkeerd of geweigerd. Als deze optie is gemarkeerd, worden alle markeringen gewist als u Toestaan selecteert.
 
 #### Weigeren {#deny}
 
-![chlimage_1-222](assets/chlimage_1-222.png)
+![ontkennen](assets/deny.png)
 
 De actie **Afwijzen** is slechts beschikbaar voor inhoud die wordt gematigd, en verschijnt niet op ongematigde inhoud behalve in multi-selectiemodus.
 
@@ -342,31 +341,31 @@ Inhoud die de status in behandeling verlaat, kan nooit terugkeren naar een statu
 
 #### Verwijderen {#delete}
 
-![chlimage_1-223](assets/chlimage_1-223.png)
+![delete](assets/delete.png)
 
 In de modus Enkel selecteren of Samenvoegen kunt u items selecteren en verwijderen. De verwijderactie leidt tot een bevestigingsvenster. Als deze items eenmaal zijn verwijderd, verdwijnen ze direct uit het inhoudsgebied. **Zodra UGC wordt geschrapt, wordt het permanent verwijderd uit de bewaarplaats en kan later niet worden teruggewonnen**.
 
 #### Sluiten {#close}
 
-![chlimage_1-224](assets/chlimage_1-224.png)
+![close](assets/close.png)
 
 Wanneer u met één artikel werkt, wordt een pictogram Sluiten weergegeven als het type UGC de mogelijkheid ondersteunt om verdere posten voor die bron te voorkomen.
 
 #### Moderatiegeschiedenis {#moderation-history}
 
-![chlimage_1-225](assets/chlimage_1-225.png)
+![matiging](assets/moderation.png)
 
 Wanneer u met één bericht werkt, wordt een pictogram Moderatiegeschiedenis weergegeven wanneer u de muisaanwijzer op de desbetreffende post plaatst. Als u het pictogram selecteert, wordt een deelvenster weergegeven met een overzicht van de acties die met betrekking tot de UGC-post zijn uitgevoerd.
 
 Als u wilt terugkeren naar de weergave van het inhoudsgebied van meerdere UGC-posten, selecteert u de X in de rechterbovenhoek van het deelvenster met weergavedetails.
 
-Bijvoorbeeld :
+Bijvoorbeeld:
 
-![chlimage_1-226](assets/chlimage_1-226.png)
+![gematigdheid in de geschiedenis](assets/moderation-history.png)
 
 #### Details weergeven {#view-detail}
 
-![chlimage_1-227](assets/chlimage_1-227.png)
+![weergave](assets/view.png)
 
 Als u met één artikel werkt, kunt u meer details bekijken door de UGC in de detailmodus te openen.
 
@@ -374,7 +373,7 @@ Als u dit wilt doen, plaatst u de muisaanwijzer op de post om het `View Detail` 
 
 Als u wilt terugkeren naar de weergave van het inhoudsgebied van meerdere UGC-posten, selecteert u de X in de rechterbovenhoek van het deelvenster met weergavedetails.
 
-Bijvoorbeeld :
+Bijvoorbeeld:
 
-![chlimage_1-228](assets/chlimage_1-228.png)
+![view1](assets/view1.png)
 

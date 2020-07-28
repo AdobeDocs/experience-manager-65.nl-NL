@@ -1,11 +1,11 @@
 ---
 title: Video-elementen beheren in [!DNL Adobe Experience Manager].
-description: U kunt video-elementen uploaden, voorvertonen, notities aanbrengen en publiceren in [!DNL-Adobe Experience Manager].
+description: Video-elementen uploaden, voorvertonen, notities aanbrengen en publiceren in [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 8c481c9a5052ff057ae0857c2ac825cec2b26269
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '734'
 ht-degree: 7%
 
 ---
@@ -23,26 +23,20 @@ Leer hoe u de video-elementen in beheert en bewerkt [!DNL Adobe Experience Manag
 
 1. Navigeer in de map Digital Assets of in de submappen naar de locatie waar u digitale elementen wilt toevoegen.
 1. Als u het element wilt uploaden, klikt u op **[!UICONTROL Create]** de werkbalk en kiest u **[!UICONTROL Files]**. U kunt het ook rechtstreeks in het gebied met elementen neerzetten. Zie Elementen [](managing-assets-touch-ui.md#uploading-assets) uploaden voor meer informatie over het uploaden.
-1. Als u een video wilt voorvertonen in de kaartweergave, klikt u op de **[!UICONTROL Play]** knop in het video-element.
+1. Als u een voorvertoning van een video wilt weergeven in de Kaart-weergave, klikt u op de optie voor het **[!UICONTROL Play]** afspelen ![](assets/do-not-localize/play.png) van het video-element. U kunt video alleen in de kaartweergave pauzeren of afspelen. De opties [!UICONTROL Play] en [!UICONTROL Pause] zijn niet beschikbaar in de lijstweergave.
 
-   ![chlimage_1-65](assets/chlimage_1-201.png)
+1. Klik op de kaart om een voorvertoning van de video weer te geven op de pagina met elementdetails. **[!UICONTROL Edit]** De video wordt afgespeeld in de native videospeler van de browser. U kunt de video afspelen, pauzeren, het volume bepalen en op het volledige scherm in- of uitzoomen.
 
-   U kunt video alleen in de kaartweergave pauzeren of afspelen. De knoppen [!UICONTROL Play] en [!UICONTROL Pause] zijn niet beschikbaar in de lijstweergave.
-
-1. Klik op de kaart om een voorvertoning van de video weer te geven op de pagina met elementdetails. **[!UICONTROL Edit]**
-
-   De video wordt afgespeeld in de native videospeler van de browser. U kunt de video afspelen, pauzeren, het volume bepalen en op het volledige scherm in- of uitzoomen.
-
-   ![chlimage_1-66](assets/chlimage_1-202.png)
+   ![Besturingselementen voor het afspelen van video](assets/video-playback-controls.png)
 
 ## Configuratie voor het uploaden van middelen die groter zijn dan 2 GB {#configuration-to-upload-assets-that-are-larger-than-gb}
 
-Standaard kunt u [!DNL Assets] geen elementen uploaden die groter zijn dan 2 GB vanwege een maximale bestandsgrootte. Nochtans, kunt u deze grens overschrijven door in CRXDE Lite te gaan en een knoop onder de `/apps` folder te creëren. Het knooppunt moet dezelfde knooppuntnaam, directorystructuur en vergelijkbare knooppunteigenschappen van volgorde hebben.
+Standaard kunt u [!DNL Assets] geen elementen uploaden die groter zijn dan 2 GB vanwege een maximale bestandsgrootte. U kunt deze limiet echter overschrijven door naar CRXDE Lite te gaan en een knooppunt onder de `/apps` map te maken. Het knooppunt moet dezelfde knooppuntnaam, directorystructuur en vergelijkbare knooppunteigenschappen van volgorde hebben.
 
 Wijzig naast de [!DNL Assets] configuratie de volgende configuraties om grote elementen te uploaden:
 
 * Verhoog de vervaltijd van het token. Zie [!UICONTROL Adobe Granite CSRF Servlet] in webconsole op `https://[aem_server]:[port]/system/console/configMgr`. Zie [CSRF-bescherming](/help/sites-developing/csrf-protection.md)voor meer informatie.
-* Verhoog de `receiveTimeout` Dispatcher-configuratie. Zie de configuratie [van](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options)Experience Manager Dispatcher voor meer informatie.
+* Verhoog de `receiveTimeout` Dispatcher-configuratie. Voor meer informatie, zie de configuratie [van](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options)Experience Manager Dispatcher.
 
 >[!NOTE]
 >
@@ -96,5 +90,5 @@ Na publicatie kunt u de video-elementen in een webpagina opnemen als een URL of 
 >[!MORELIKETHIS]
 >
 >* [Digitale middelen beheren in Experience Manager Assets](/help/assets/managing-assets-touch-ui.md)
->* [Verzamelingen beheren in Experience Manager-middelen](/help/assets/managing-collections-touch-ui.md)
+>* [Verzamelingen beheren in Experience Managers](/help/assets/managing-collections-touch-ui.md)
 

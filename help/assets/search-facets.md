@@ -3,9 +3,9 @@ title: Facetten doorzoeken.
 description: Hoe te om, onderzoeksfacetten in Adobe Experience Manager tot stand te brengen te wijzigen en te gebruiken.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 8c481c9a5052ff057ae0857c2ac825cec2b26269
 workflow-type: tm+mt
-source-wordcount: '2381'
+source-wordcount: '2370'
 ht-degree: 15%
 
 ---
@@ -28,11 +28,9 @@ De zoekfacetten die in het deelvenster Filters worden weergegeven, worden in het
 Voor zoekopdrachten in volledige tekst voegt u de voorspelling toe aan het formulier. [!UICONTROL Fulltext] Gebruik de voorspelling van de eigenschap om te zoeken naar elementen die overeenkomen met één eigenschap die u opgeeft. Gebruik de voorspelling Opties om te zoeken in elementen die overeenkomen met een of meer waarden voor een bepaalde eigenschap. Voeg de Datumbereik-voorspelling toe aan zoekelementen die binnen een opgegeven datumbereik zijn gemaakt.
 
 1. Click the Experience Manager logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
-1. Selecteer op de pagina Formulieren zoeken de optie **[!UICONTROL Assets Admin Search Rail]** en klik op het pictogram **** Bewerken ![](assets/do-not-localize/aemassets_edit.png).
+1. Selecteer op de pagina Zoeken in Forms de optie **[!UICONTROL Assets Admin Search Rail]** en klik op het pictogram **[!UICONTROL Edit]** voor ![](assets/do-not-localize/aemassets_edit.png)bewerken.
 
    ![Zoek en selecteer de middelen die Admin Search Rail](assets/assets_admin_searchrail.png)
-
-   Zoek en selecteer de middelen die Admin Search Rail
 
    >[!NOTE]
    >
@@ -76,7 +74,7 @@ Voor zoekopdrachten in volledige tekst voegt u de voorspelling toe aan het formu
 1. Als u de voorvertoning wilt sluiten, klikt u op de knop **[!UICONTROL Close]** Sluiten ![](assets/do-not-localize/close.png) rechtsboven in de voorvertoning.
 1. Klik **[!UICONTROL Done]** om de instellingen op te slaan.
 1. Navigeer naar het deelvenster Zoeken in de gebruikersinterface Elementen. De voorspelling van de eigenschap wordt toegevoegd aan het deelvenster.
-1. Voer in het tekstvak een beschrijving in voor het element dat u wilt doorzoeken. Voer bijvoorbeeld &quot;Adobe&quot; in. Wanneer u een zoekopdracht uitvoert, worden elementen met een beschrijving die overeenkomt met &quot;Adobe&quot;, weergegeven in de zoekresultaten.
+1. Voer in het tekstvak een beschrijving in voor het element dat u wilt doorzoeken. For example, enter `Adobe`. Wanneer u een zoekopdracht uitvoert, worden elementen met overeenkomende beschrijving in de zoekresultaten `Adobe` vermeld.
 
 ## Een voorspelling van opties toevoegen {#adding-an-options-predicate}
 
@@ -90,13 +88,13 @@ Wanneer u een optie selecteert, wordt het onderzoek uitgevoerd gebaseerd op het 
 
 Als u bijvoorbeeld &quot;Afbeeldingen&quot; selecteert voor bestandstypen, wordt de zoekquery voor de assets samengesteld door de eigenschap `value` te combineren met een OR-bewerking. De zoekquery voor afbeeldingen wordt bijvoorbeeld samengesteld door de resultaten te combineren die overeenkomen met *afbeelding/jpeg*, *afbeelding/gif*, *afbeelding/png*, *afbeelding/pjpeg* en *afbeelding/tiff* voor de eigenschap `jcr:content/metadata/dc:format` met behulp van een OR-bewerking.
 
-![Het bezit van de waarde van een dossiertype, zoals die in CRXDE wordt gezien wordt gebruikt voor onderzoeksvragen om te werken](assets/chlimage_1-418.png)
+![Het bezit van de waarde van een dossiertype, zoals die in CRXDE wordt gezien wordt gebruikt voor onderzoeksvragen om te werken](assets/filetype-value-property.png)
 
 Het bezit van de waarde van een dossiertype, zoals die in CRXDE wordt gezien wordt gebruikt voor onderzoeksvragen om te werken
 
 In plaats van handmatig een knooppuntstructuur voor de opties in de CRXDE-opslagplaats te maken, kunt u de opties in een JSON-bestand definiëren door corresponderende sleutel-waardeparen op te geven. Geef het pad van het JSON-bestand op in het veld **[!UICONTROL Property Name]**. U kunt bijvoorbeeld de sleutel-waardeparen `image/bmp`, `image/gif`, `image/jpeg` en `image/png` definiëren en hun waarden opgeven zoals getoond in het volgende JSON-voorbeeldbestand. In the **[!UICONTROL Property Name]** field, you can specify the CRXDE path for this file.
 
-```JSON
+```json
 {
     "options" :
  [
@@ -137,7 +135,7 @@ Als u een bestaand knooppunt wilt gebruiken, geeft u dit op in het dialoogvenste
 Met de voorspelling Multi-Value-eigenschap kunt u elementen zoeken naar meerdere waarden. Neem bijvoorbeeld een scenario waarin u afbeeldingen van meerdere producten in Elementen hebt en de metagegevens voor elke afbeelding een SKU-nummer bevatten dat aan het product is gekoppeld. Met deze voorspelling kunt u op basis van meerdere SKU-nummers zoeken naar productafbeeldingen.
 
 1. Click the Experience Manager logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
-1. Selecteer op de pagina Zoekformulieren de optie **[!UICONTROL Assets Admin Search Rail]** en klik op het pictogram **[!UICONTROL Edit]** Bewerken ![](assets/do-not-localize/aemassets_edit.png).
+1. Selecteer op de pagina Zoeken in Forms **[!UICONTROL Assets Admin Search Rail]** de optie **[!UICONTROL Edit]** Bewerkingspictogram ![](assets/do-not-localize/aemassets_edit.png).
 1. Sleep op de pagina Zoekformulier bewerken een **[!UICONTROL Multi Value Property Predicate]** van het tabblad **[!UICONTROL Select Predicate]** naar het hoofdvenster.
 1. In the **[!UICONTROL Settings]** tab, enter a label and placeholder text for the predicate. Specify the property name based on which the search is to be performed in the property field, for example `jcr:content/metadata/dc:value`. U kunt ook een knooppunt selecteren in het dialoogvenster Selecteren.
 1. Zorg ervoor dat **[!UICONTROL Delimiter Support]** is geselecteerd. Geef in het veld **[!UICONTROL Input Delimiters]** scheidingstekens op om afzonderlijke waarden van elkaar te scheiden. Standaard wordt een komma opgegeven als scheidingsteken. U kunt een ander scheidingsteken opgeven.
@@ -150,7 +148,7 @@ Met de voorspelling Multi-Value-eigenschap kunt u elementen zoeken naar meerdere
 Met de tagvoorspelling kunt u op tags gebaseerde zoekopdrachten naar elementen uitvoeren. Middelen zoeken standaard naar elementen die overeenkomen met een of meer tags op basis van de tags die u opgeeft. Met andere woorden, de zoekquery voert een OR-bewerking uit met de opgegeven tags. U kunt echter de optie Alle tags afstemmen gebruiken om te zoeken naar elementen die alle tags bevatten die u opgeeft.
 
 1. Click the Experience Manager logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
-1. Selecteer op de pagina Formulieren zoeken de optie **[!UICONTROL Assets Admin Search Rail]** en klik op het pictogram **[!UICONTROL Edit]** ![](assets/do-not-localize/aemassets_edit.png)Bewerken.
+1. Selecteer op de pagina Zoeken in Forms de optie **[!UICONTROL Assets Admin Search Rail]** en klik op het pictogram **[!UICONTROL Edit]** voor ![](assets/do-not-localize/aemassets_edit.png)bewerken.
 1. In the Edit Search Form page, drag **[!UICONTROL Tags Predicate]** from the Select Predicate tab to the main pane.
 1. Voer op het tabblad Instellingen een plaatsaanduidingstekst in voor de voorspelling. Specify the property name based on which the search is to be performed in the property field, for example *jcr:content/metadata/cq:tags*. U kunt ook een knooppunt in CRXDE selecteren in het dialoogvenster Selecteren.
 1. Configureer de padeigenschap Root-tags van deze voorspelling om verschillende tags in de lijst Tags te vullen.
@@ -164,9 +162,9 @@ Met de tagvoorspelling kunt u op tags gebaseerde zoekopdrachten naar elementen u
 1. Navigeer naar het deelvenster Zoeken. The **[!UICONTROL Tags]** predicate is added to the Search panel.
 1. Geef tags op op basis waarvan u de elementen wilt zoeken of een selectie wilt maken in de lijst met suggesties.
 
-   ![Door Experience Manager opgegeven suggestie bij het typen van de naam van een tag](assets/chlimage_1-419.png)
+   ![Door de Experience Manager opgegeven suggestie bij het typen van de naam van de tag](assets/tag-suggestion.png)
 
-   *Afbeelding: Door Experience Manager opgegeven suggestie bij het typen van de naam van de tag.*
+   *Afbeelding: Door de Experience Manager opgegeven suggestie bij het typen van de naam van de tag.*
 
 1. Select **[!UICONTROL Match all]** to search for matches that include all tags that you specify.
 
@@ -193,9 +191,9 @@ Net als bij de manier waarop u een voorspelling van eigenschappen of een voorspe
 
 ## Standaardzoekfacetten herstellen {#restoring-default-search-facets}
 
-Standaard wordt er een pictogram ![voor het vergrendelen van een](assets/do-not-localize/lock_closed_icon.svg) vergrendelingspictogram vóór **[!UICONTROL Assets Admin Search Rail]** op de **[!UICONTROL Search Forms]** pagina weergegeven. Het pictogram Vergrendelen aan de hand van een optie op de pagina Zoekformulieren geeft aan dat de standaardinstellingen intact zijn en niet zijn aangepast. Het pictogram Sluiten ![](assets/do-not-localize/lock_closed_icon.svg) vergrendelen verdwijnt als u zoekfacetten aan het formulier toevoegt die aangeven dat het standaardformulier is gewijzigd.
+Standaard wordt er een pictogram ![voor het vergrendelen van een](assets/do-not-localize/lock_closed_icon.svg) vergrendelingspictogram vóór **[!UICONTROL Assets Admin Search Rail]** op de **[!UICONTROL Search Forms]** pagina weergegeven. Het vergrendelingspictogram tegen een optie op de pagina Zoeken in Forms geeft aan dat de standaardinstellingen intact zijn en niet zijn aangepast. Het pictogram Sluiten ![](assets/do-not-localize/lock_closed_icon.svg) vergrendelen verdwijnt als u zoekfacetten aan het formulier toevoegt die aangeven dat het standaardformulier is gewijzigd.
 
-![Het pictogram Vergrendelen aan de hand van een optie op de pagina Zoekformulieren geeft aan dat de standaardinstellingen intact zijn en niet zijn aangepast.](assets/locked_admin_rail.png)
+![Het vergrendelingspictogram tegen een optie op de pagina Zoeken in Forms geeft aan dat de standaardinstellingen intact zijn en niet zijn aangepast.](assets/locked_admin_rail.png)
 
 Voer de volgende stappen uit om de standaardzoekfacet te herstellen:
 

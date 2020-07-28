@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 6866d209-5789-4ef9-bc3c-d644d4fb4b1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f7e5afe46100db7837647ac89aaf58cf101143b0
+source-git-commit: 391893f7cf83c018d29af14200c6f160b6d83bdd
+workflow-type: tm+mt
+source-wordcount: '1517'
+ht-degree: 2%
 
 ---
 
@@ -35,7 +38,7 @@ Moderatie van UGC is nuttig voor het erkennen van positieve bijdragen en het bep
 
 * [Community-inhoud opslaan](working-with-srp.md)
 
-* [bulkmoderniseringsconsole](moderation.md)
+* [Moderniseringsconsole](moderation.md)
 
    De console van de Moderatie is toegankelijk door beheerders en [communautaire moderatoren](/help/communities/users.md) in het openbare milieu evenals door beheerders in het auteursmilieu. Dit is mogelijk wanneer inhoud van de gebruikersgemeenschap wordt opgeslagen in een [algemene winkel](/help/communities/working-with-srp.md).
 
@@ -154,11 +157,15 @@ Het is mogelijk voor een beheerder of communautaire moderator om één of meerde
 
 Door de actie Knippen te selecteren, wordt de inhoud gekopieerd naar een klembord. Meerdere posts kunnen als groep naar de nieuwe locatie worden gekopieerd en verplaatst.
 
-![cutugc](assets/cutugc.png) ![putbackugc](assets/putbackugc.png)
+![cutugc](assets/cutugc.png)
 
-Op de andere locatie, wanneer inhoud op het klembord aanwezig is, wordt naast Nieuwe advertentie een knop Plakken weergegeven met een nummer dat het aantal te plakken posten aangeeft. Met de knop Plakken kunt u het klembord wissen in plaats van plakken.
+![putbackugc](assets/putbackugc.png)
 
-![chlimage_1-28](assets/chlimage_1-28.png) ![chlimage_1-29](assets/chlimage_1-29.png)
+Op de andere locatie, wanneer inhoud op het klembord aanwezig is, wordt naast Nieuwe advertentie een knop Plakken weergegeven met een nummer dat het aantal te plakken posten aangeeft. Met de knop Plakken kunt u het klembord wissen in plaats van te plakken.
+
+![pasteugisch](assets/pasteugc.png)
+
+![pasteugc1](assets/pasteugc1.png)
 
 ### Weigeren {#deny}
 
@@ -192,9 +199,9 @@ De actie Toestaan is een optie voor UGC die is gemarkeerd, geweigerd of niet is 
 
 Wanneer de UGC wordt voorgezeten, zal de post niet op de gepubliceerde plaats verschijnen alvorens door een matigingsactie wordt goedgekeurd. Tijdens het creëren van een [communautaire plaats](/help/communities/sites-console.md), zal het controleren van de doos [Inhoud wordt Voorgematigd](sites-console.md#moderation) premoderatie voor de volledige plaats toelaten. Zodra de componenten op een pagina worden geplaatst, kunnen de componenten die matiging steunen voor premoderatie worden gevormd gebruikend het plaatsen in hun uitgeven dialoog:
 
-* [Opmerkingen](comments.md) en [revisies](reviews.md)bij **[!UICONTROL Moderatie]** van gebruikers > **[!UICONTROL Moderatie]**.
+* [Opmerkingen](comments.md) en [revisies](reviews.md)in **[!UICONTROL User Moderation]** > **[!UICONTROL Pre-Moderation]**.
 
-* [Forum](/help/communities/forum.md), [ideatie](/help/communities/ideation-feature.md), [QnA](/help/communities/working-with-qna.md), en [kalender](/help/communities/calendar.md)in **[!UICONTROL Montages]** > **** Gematigd.
+* [Forum](/help/communities/forum.md), [ideatie](/help/communities/ideation-feature.md), [QnA](/help/communities/working-with-qna.md), en [kalender](/help/communities/calendar.md)in **[!UICONTROL Settings]** > **[!UICONTROL Moderated]**.
 
 ### Spam-detectie {#spam-detection}
 
@@ -215,7 +222,7 @@ Ga als volgt te werk om de spamdetectieengine in te schakelen:
 1. Open [Webconsole](https://localhost:4502/system/console/configMgr)door naar `/system/console/configMgr`te gaan.
 
 1. Zoek de **AEM Communities Auto Moderation** configuratie en bewerk deze.
-1. Voeg het **[!UICONTROL SpamProcess]** -item toe.
+1. Voeg het **[!UICONTROL SpamProcess]** item toe.
 
 ![spamproces](assets/spamprocess.png)
 
@@ -247,7 +254,7 @@ Vanuit de [bulksgewijze moderatieconsole](/help/communities/moderation.md), is h
 
 #### Wachtwoorden {#watchwords}
 
-AEM-gemeenschappen bieden een *watchword-analysator* als een stap in het proces om [sentimenten](#sentiment)te evalueren. De bijdrage aan de sentimentwaarde die wordt geboden door watchwords is te wijten aan een vergelijking van negatieve en positieve watchwords die worden gebruikt in de geposte inhoud, en verboden woorden.
+AEM gemeenschappen verstrekken een *watchword analysator* als stap in het proces om [sentiment](#sentiment)te evalueren. De bijdrage aan de sentimentwaarde die wordt geboden door watchwords is te wijten aan een vergelijking van negatieve en positieve watchwords die worden gebruikt in de geposte inhoud, en verboden woorden.
 
 #### Sentificatie en wachtwoorden configureren {#configure-sentiment-and-watchwords}
 
@@ -259,7 +266,7 @@ The **sentimentprocess.name** may also be modified to reference the location of 
 
 sentiment en wachtwoorden configureren:
 
-* Meld u als beheerder aan bij de auteurinstantie.
+* Meld u als beheerder aan bij de auteur.
 * Open [webconsole](https://localhost:4502/system/console/configMgr).
 * Zoeken `sentimentprocess.name`.
 * Selecteer de configuratie die u wilt openen in de bewerkingsmodus.

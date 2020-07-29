@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: dd0cbc05-a361-46bc-b9f1-d045f8f23890
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 65e2b98cfd980f17302b4751127e25827decec22
+source-git-commit: bd9abe033216a00b93b2098e12b100ad478a8d08
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## Bladeren naar nieuwe site bij publicatie {#browse-to-new-site-on-publish}
 
-Nu de nieuwe site voor gemeenschappen is gepubliceerd, bladert u naar de URL die wordt weergegeven bij het maken van de site, maar naar de publicatieserver, bijvoorbeeld
+Nu de nieuwe site voor gemeenschappen is gepubliceerd, bladert u naar de URL die wordt weergegeven bij het maken van de site, maar naar de publicatieserver, bijvoorbeeld:
 
 * Auteur-URL = https://localhost:4502/content/sites/engage/en.html
 * URL publiceren = https://localhost:4503/content/sites/engage/en.html
@@ -65,13 +65,14 @@ Voer de volgende stappen uit om de inhoud van uw site te beschermen tegen toegan
 
 1. Ga naar **Pagina-eigenschappen**.
 
-   ![plaatsverificatie](assets/site-authentication.png)
+   ![page-eigenschappen](assets/page-properties.png)
 
 1. Ga naar het tabblad **Geavanceerd** .
 
-   ![page-eigenschappen](assets/page-properties.png)
-
 1. Schakel **verificatievereiste** in.
+
+   ![plaatsverificatie](assets/site-authentication.png)
+
 1. Voeg het pad van de aanmeldingspagina toe. Bijvoorbeeld: **/content/......./GetStarted**.
 1. Publiceer de pagina.
 
@@ -198,7 +199,7 @@ Meld u aan bij Weston McCall (weston.mccall@dodgit.com / wachtwoord) en navigeer
 
 ### Koppeling naar webpagina {#web-page-link}
 
-Selecteer de koppeling Webpagina om de basiswebpagina weer te geven die in de site is opgenomen. De standaard AEM-ontwerpgereedschappen kunnen worden gebruikt om inhoud aan deze pagina toe te voegen in de ontwerpomgeving.
+Selecteer de koppeling Webpagina om de basiswebpagina weer te geven die in de site is opgenomen. U kunt de standaardinstellingen AEM de ontwerpgereedschappen gebruiken om inhoud aan deze pagina toe te voegen in de ontwerpomgeving.
 
 Ga bijvoorbeeld naar de **auteur** -instantie, open de `engage` map in de console [](/help/communities/sites-console.md)Communitysites en selecteer het pictogram Site **** openen om de modus Schrijfbewerking te openen. Selecteer vervolgens de voorvertoningsmodus om de `Web Page` koppeling te selecteren en selecteer vervolgens de bewerkingsmodus om titel- en tekstcomponenten toe te voegen. Ten slotte publiceert u alleen de pagina of de hele site opnieuw.
 

@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 048f7b30-20c3-4567-bd32-38cf2643cf39
 translation-type: tm+mt
-source-git-commit: df59879cfa6b0bc7eba13f679e833fabbcbe92f2
+source-git-commit: 6a9f273c6e9eb822e2d4765700361a205019b84c
 workflow-type: tm+mt
 source-wordcount: '1175'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Zie ook [Kenmerken van Opties](working-with-srp.md#characteristics-of-srp-option
    * Versie 2.6 of hoger
    * Het is niet nodig om mongo&#39;s te configureren of te sharding
    * Het gebruik van een [replicaset wordt sterk aanbevolen](#mongoreplicaset)
-   * Kan op dezelfde host als AEM worden uitgevoerd of extern worden uitgevoerd
+   * Kan op dezelfde host worden uitgevoerd als AEM of extern worden uitgevoerd
 
 * [Apache Solr](https://lucene.apache.org/solr/):
 
@@ -43,7 +43,7 @@ Zie ook [Kenmerken van Opties](working-with-srp.md#characteristics-of-srp-option
    * Keuze van uitvoeringsmodi:
       * Standalone modus
       * [SolrCloud-modus](solr.md#solrcloud-mode) (aanbevolen voor productieomgevingen)
-   * Keuze van meertalig zoeken (MLS)
+   * Keuze van meertalig zoeken (MLS):
       * [Standaard MLS installeren](solr.md#installing-standard-mls)
       * [Geavanceerde MLS installeren](solr.md#installing-advanced-mls)
 
@@ -92,10 +92,12 @@ Op auteur, om tot de console van de Configuratie van de Opslag toegang te hebben
       * **[!UICONTROL Solr URL]**
 De URL die wordt gebruikt om te communiceren met Solr in zelfstandige modus.
 Leeg laten als deze wordt uitgevoerd in de SolrCloud-modus.
+
          *Standaard*: https://127.0.0.1:8983/solr/
 
       * **[!UICONTROL Solr Collection]**
 De naam van de Solr-verzameling.
+
          *Standaard*: verzameling1
 
 * Selecteer **[!UICONTROL Submit]**
@@ -224,7 +226,7 @@ Om MSRP voor een demonstratie of ontwikkelomgeving te plaatsen, zie [HowTo Opste
 
 Zorg ervoor MSRP is gevormd om de standaardleverancier te zijn door de configuratie van de opslagoptie te controleren. Standaard is de leverancier van de opslagbron JSRP.
 
-Op alle auteur en publiceer AEM instanties, vernieuw de console [van de Configuratie van de](srp-config.md) Opslag of controleer de bewaarplaats AEM:
+Ga bij alle auteur- en publiceer AEM naar de [opslagconfiguratieconsole](srp-config.md) of controleer de AEM opslagplaats:
 
 * In JCR, indien [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
 
@@ -239,7 +241,7 @@ Er is een open bronhulpmiddel beschikbaar op GitHub voor dit doel:
 
 * [AEM Communities UGC-migratiehulpprogramma](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
 
-Het migratiehulpmiddel kan worden aangepast om UGC uit vroegere versies van sociale gemeenschappen AEM voor invoer in AEM Communities 6.1 of later uit te voeren.
+Het migratiehulpmiddel kan worden aangepast om UGC uit vroegere versies van AEM sociale gemeenschappen voor invoer in AEM Communities 6.1 of later uit te voeren.
 
 ### Fout: niet-gedefinieerde veldprovider_id {#error-undefined-field-provider-id}
 
@@ -265,8 +267,8 @@ Als u de fout wilt oplossen, moet u bij het volgen van de instructies voor het [
 Als een poging om een beveiligde verbinding te maken met de MongoDB-server mislukt als gevolg van een ontbrekende klassedefinitie, moet de MongoDB-stuurprogrammabundel, die beschikbaar is `mongo-java-driver`in de openbare gegevensopslagruimte, worden bijgewerkt.
 
 1. Download het stuurprogramma van [https://search.maven.org/#artifactdetails%7Corg.mongodb%7Cmongo-java-driver%7C2.13.2%7Cjar](https://search.maven.org/#artifactdetails%7Corg.mongodb%7Cmongo-java-driver%7C2.13.2%7Cjar) (versie 2.13.2 of hoger).
-1. Kopieer de bundel naar de map &quot;crx-quickstart/install&quot; voor een AEM-instantie.
-1. Start de AEM-instantie opnieuw.
+1. Kopieer de bundel naar de map &quot;crx-quickstart/install&quot; voor een AEM.
+1. Start de AEM opnieuw.
 
 ## Bronnen {#resources}
 

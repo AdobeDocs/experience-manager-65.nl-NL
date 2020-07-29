@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: ac3d18bf0b39efbe927c10aef557296140628e19
 workflow-type: tm+mt
-source-wordcount: '2190'
+source-wordcount: '2187'
 ht-degree: 0%
 
 ---
@@ -24,17 +24,17 @@ De toepassing en gegevensbestanden waarvan een back-up moet worden gemaakt, word
 
 Overweeg de volgende punten met betrekking tot back-up en herstel:
 
-* Er moet een back-up van de database worden gemaakt voordat de GDS- en AEM-opslaglocatie wordt gebruikt.
+* Er moet een back-up van de database worden gemaakt voordat de GDS en AEM opslagplaats worden gebruikt.
 * Als u de knopen in een gegroepeerd gegroepeerd milieu voor steun moet onderdrukken, zorg ervoor dat de secundaire knopen vóór de primaire knoop worden gesloten. Anders kan dit leiden tot inconsistentie in de cluster of server. Ook, zou de primaire knoop vóór om het even welk secundair knooppunt levend moeten worden gemaakt.
 * Voor de herstelbewerking van een cluster moet de toepassingsserver worden gestopt voor elk knooppunt in de cluster.
 
 ## Globale map voor documentopslag {#global-document-storage-directory}
 
-De GDS is een map die wordt gebruikt voor het opslaan van bestanden met een lange levensduur die in een proces worden gebruikt. De levensduur van bestanden met een lange levensduur is bedoeld om een of meer keren een AEM-formuliersysteem te starten en kan dagen en zelfs jaren beslaan. Deze bestanden van lange duur kunnen PDF&#39;s, beleidsregels en formuliersjablonen bevatten. Bestanden met een lange levensduur vormen een essentieel onderdeel van de algemene status van veel implementaties van AEM-formulieren. Als sommige of alle documenten met een lange levensduur verloren gaan of beschadigd raken, kan de formulierserver instabiel worden.
+De GDS is een map die wordt gebruikt voor het opslaan van bestanden met een lange levensduur die in een proces worden gebruikt. De levensduur van bestanden met een lange levensduur moet een of meer keren worden gestart met een AEM formuliersysteem en kan dagen en zelfs jaren beslaan. Deze bestanden van lange duur kunnen PDF&#39;s, beleidsregels en formuliersjablonen bevatten. Bestanden met een lange levensduur vormen een essentieel onderdeel van de algemene status van veel AEM formulieren. Als sommige of alle documenten met een lange levensduur verloren gaan of beschadigd raken, kan de formulierserver instabiel worden.
 
 Invoerdocumenten voor asynchrone aanroep van taken worden ook opgeslagen in de GDS en moeten beschikbaar zijn voor het verwerken van aanvragen. Daarom is het belangrijk dat u de betrouwbaarheid van het bestandssysteem dat de GDS host en een redundante array van onafhankelijke schijven (RAID) of andere technologie gebruikt, als geschikt beschouwt voor uw vereisten op het gebied van kwaliteit en serviceniveau.
 
-De locatie van de GDS wordt bepaald tijdens het installatieproces van AEM-formulieren of later met behulp van de beheerconsole. Naast het houden van een high-availability plaats voor GDS, kunt u gegevensbestandopslag voor documenten ook toelaten. Zie [Back-upopties als database wordt gebruikt voor documentopslag](files-back-recover.md#backup-options-when-database-is-used-for-document-storage).
+De locatie van de GDS wordt bepaald tijdens het installatieproces van AEM formulieren of later met behulp van de beheerconsole. Naast het houden van een high-availability plaats voor GDS, kunt u gegevensbestandopslag voor documenten ook toelaten. Zie [Back-upopties als database wordt gebruikt voor documentopslag](files-back-recover.md#backup-options-when-database-is-used-for-document-storage).
 
 ### GDS-locatie {#gds-location}
 
@@ -55,13 +55,13 @@ De locatie van de GDS kan tijdens een herstelbewerking worden gewijzigd als de o
 
 ### Back-upopties wanneer database wordt gebruikt voor documentopslag {#backup-options-when-database-is-used-for-document-storage}
 
-U kunt AEM-formulieren documentopslag inschakelen in de AEM-formulierdatabase met behulp van de beheerconsole. Hoewel met deze optie alle permanente documenten in de database blijven staan, is voor AEM-formulieren de op het bestandssysteem gebaseerde GDS-map nog steeds vereist, omdat deze wordt gebruikt voor het opslaan van permanente en tijdelijke bestanden en bronnen met betrekking tot sessies en aanroepen van AEM-formulieren.
+U kunt AEM formulierdocumentopslag inschakelen in de AEM formulierdatabase met behulp van de beheerconsole. Hoewel met deze optie alle permanente documenten in de database blijven staan, is voor AEM formulieren de op het bestandssysteem gebaseerde GDS-map nog steeds vereist, omdat deze wordt gebruikt voor het opslaan van permanente en tijdelijke bestanden en bronnen die verband houden met sessies en aanroepen van AEM formulieren.
 
-Wanneer u de optie &quot;Documentopslag in de database inschakelen&quot; selecteert in de Core System Settings in de beheerconsole of door Configuratiebeheer te gebruiken, staan AEM-formulieren de back-upmodus voor momentopnamen en de schuifmodus niet toe. Daarom hoeft u geen back-upmodi te beheren met AEM-formulieren. Als u deze optie gebruikt, dient u slechts eenmaal een back-up van de GDS te maken nadat u de optie hebt ingeschakeld. Wanneer u AEM-formulieren herstelt van een back-up, hoeft u de naam van de back-upmap voor de GDS niet te wijzigen of de GDS te herstellen.
+Wanneer u de optie &quot;Documentopslag in de database inschakelen&quot; selecteert in de Core System Settings in de beheerconsole of door Configuration Manager te gebruiken, staan AEM formulieren de back-upmodus voor momentopnamen en de schuifmodus niet toe. Daarom hoeft u de back-upmodi niet te beheren met AEM formulieren. Als u deze optie gebruikt, dient u slechts eenmaal een back-up van de GDS te maken nadat u de optie hebt ingeschakeld. Wanneer u AEM formulieren herstelt van een back-up, hoeft u de naam van de back-upmap voor de GDS niet te wijzigen of GDS te herstellen.
 
-## AEM-opslagplaats {#aem-repository}
+## AEM {#aem-repository}
 
-AEM-opslagplaats (crx-repository) wordt gemaakt als crx-repository is geconfigureerd tijdens de installatie van AEM-formulieren. De locatie van de crx-repository directory wordt bepaald tijdens het installatieproces van AEM-formulieren. Back-up en herstel van de AEM-opslagruimte is vereist in combinatie met database en GDS voor consistente AEM-formuliergegevens in AEM-formulieren. De AEM-opslagplaats bevat gegevens voor Correspondence Management Solution, Forms Manager en AEM Forms Workspace.
+AEM opslagplaats (crx-gegevensopslagplaats) wordt gecreeerd als crx-bewaarplaats tijdens het installeren van AEM vormen wordt gevormd. De locatie van de crx-repository directory wordt bepaald tijdens het installatieproces van AEM formulieren. AEM back-up en herstel in de opslagplaats is vereist in combinatie met database en GDS voor consistente AEM formuliergegevens in AEM formulieren. AEM opslagplaats bevat gegevens voor Correspondence Management Solution, Forms Manager en AEM Forms Workspace.
 
 ### Correspondentenbeheeroplossing {#correspondence-management-solution}
 
@@ -75,17 +75,17 @@ Met formulierbeheer stroomlijnt u het bijwerken, beheren en verwijderen van form
 
 ### Werkruimte AEM Forms {#html-workspace}
 
-De werkruimte van AEM Forms komt overeen met de mogelijkheden van de (Vervangen voor AEM-formulieren op JEE) Flex-werkruimte en voegt nieuwe mogelijkheden toe om de werkruimte uit te breiden en te integreren en deze gebruikersvriendelijker te maken.
+De werkruimte van AEM Forms komt overeen met de mogelijkheden van de (Vervangen voor AEM formulieren in JEE) Flex Workspace en voegt nieuwe mogelijkheden toe om Workspace uit te breiden en te integreren en gebruikersvriendelijker te maken.
 
 >[!NOTE]
 >
->De Flex-werkruimte is verouderd voor de release van AEM-formulieren.
+>De Flex-werkruimte is verouderd voor AEM formulierrelease.
 
-Hierdoor is taakbeheer op clients zonder Flash Player en Adobe Reader mogelijk. Het vereenvoudigt de uitvoering van HTML-formulieren, behalve PDF forms en Flex-formulieren.
+Hierdoor is taakbeheer mogelijk voor clients zonder Flash Player en Adobe Reader. Het vergemakkelijkt de uitvoering van HTML Forms, naast PDF forms en Flex-formulieren.
 
-## AEM-formulierdatabase {#aem-forms-database}
+## AEM formulierdatabase {#aem-forms-database}
 
-In de AEM-formulierdatabase wordt inhoud opgeslagen, zoals formulierartefacten, serviceconfiguraties, processtatus en databasereferenties naar bestanden in de GDS en de hoofdmap voor inhoudsopslag (voor Content Services). De steunen van het gegevensbestand kunnen in echt - tijd zonder een onderbreking in de dienst worden uitgevoerd, en de terugwinning kan op een specifiek punt in tijd of aan een bepaalde verandering zijn. In deze sectie wordt beschreven hoe u uw database zo configureert dat hiervan in real-time een back-up kan worden gemaakt.
+In de database met AEM formulieren wordt inhoud opgeslagen, zoals formulierartefacten, serviceconfiguraties, processtatus en databaseverwijzingen naar bestanden in de GDS en de hoofdmap voor inhoudsopslag (voor Content Services). De steunen van het gegevensbestand kunnen in echt - tijd zonder een onderbreking in de dienst worden uitgevoerd, en de terugwinning kan op een specifiek punt in tijd of aan een bepaalde verandering zijn. In deze sectie wordt beschreven hoe u uw database zo configureert dat hiervan in real-time een back-up kan worden gemaakt.
 
 Op een behoorlijk gevormd AEM vormensysteem, kunnen de systeembeheerder en de gegevensbestandbeheerder gemakkelijk samenwerken om het systeem aan een verenigbare, bekende staat terug te krijgen.
 
@@ -93,7 +93,7 @@ Als u een back-up van de database in real-time wilt maken, moet u de modus Momen
 
 >[!NOTE]
 >
->Adobe® LiveCycle® Content Services ES (Afgekeurd) is een inhoudsbeheersysteem dat met LiveCycle is geïnstalleerd. Hiermee kunnen gebruikers processen ontwerpen, beheren, bewaken en optimaliseren die op mensen zijn gericht. De ondersteuning voor Content Services (Afgekeurd) eindigt op 31-12-2014. Zie [Adobe-productlevenscyclusdocument](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html). Zie [Inhoudsservices](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf)beheren voor informatie over het configureren van Inhoudsservices (afgekeurd).
+>Adobe® LiveCycle® Content Services ES (Afgekeurd) is een contentbeheersysteem dat is geïnstalleerd met LiveCycle. Hiermee kunnen gebruikers processen ontwerpen, beheren, bewaken en optimaliseren die op mensen zijn gericht. De ondersteuning voor Content Services (Afgekeurd) eindigt op 31-12-2014. Zie [Adobe product lifecycle document](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html). Zie [Inhoudsservices](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf)beheren voor informatie over het configureren van Inhoudsservices (afgekeurd).
 
 ### DB2 {#db2}
 
@@ -101,7 +101,7 @@ Vorm uw DB2 gegevensbestand om op de wijze van het archieflogboek te lopen.
 
 >[!NOTE]
 >
->Als uw AEM-formulieromgeving is geüpgraded vanaf een eerdere versie van AEM-formulieren en DB2 gebruikt, wordt online back-up niet ondersteund. In dit geval moet u AEM-formulieren sluiten en een offlineback-up uitvoeren. Toekomstige versies van AEM-formulieren ondersteunen online back-ups voor klanten van upgrades.
+>Als de omgeving van uw AEM formulieren is geüpgraded vanaf een eerdere versie van AEM formulieren en DB2 gebruikt, wordt online back-up niet ondersteund. In dit geval moet u AEM formulieren sluiten en een offlineback-up uitvoeren. Toekomstige versies van AEM formulieren ondersteunen online back-ups voor klanten van upgrades.
 
 IBM beschikt over een pakket hulpmiddelen en Help-systemen waarmee databasebeheerders hun back-up- en hersteltaken kunnen beheren:
 
@@ -131,7 +131,7 @@ SQL de Server verstrekt ook twee steun en terugwinningshulpmiddelen:
 * SQL Server Management Studio (GUI)
 * T-SQL (opdrachtregel)
 
-Zie [Back-](https://articles.techrepublic.com.com/5100-1035_61-1043671.md)upstrategieën en [Back-up en herstel](https://msdn.microsoft.com/en-us/library/ms187048(v=SQL.90).aspx).
+Zie [Back-up en herstel](https://msdn.microsoft.com/en-us/library/ms187048(v=SQL.90).aspx)voor meer informatie.
 
 ### MySQL {#mysql}
 
@@ -157,7 +157,7 @@ De map Content Storage Root bevat de opslagruimte Content Services (Afgekeurd) w
 
 ### Locatie van opslaghoofdmap voor inhoud (zelfstandige omgeving) {#content-storage-root-location-stand-alone-environment}
 
-De hoofdmap voor inhoudsopslag wordt gemaakt wanneer Content Services (Afgekeurd) is geïnstalleerd. De locatie van de hoofdmap voor inhoudsopslag wordt bepaald tijdens het installatieproces van AEM-formulieren.
+De hoofdmap voor inhoudsopslag wordt gemaakt wanneer Content Services (Afgekeurd) is geïnstalleerd. De locatie van de hoofdmap voor inhoudsopslag wordt bepaald tijdens het installatieproces van AEM formulieren.
 
 De standaardlocatie voor de hoofdmap van de inhoudsopslag is `[aem-forms root]/lccs_data`.
 
@@ -197,10 +197,10 @@ De standaardlocatie voor de hoofdmap van de index staat `[aem-forms root]/lucene
 
 ## Door de klant geïnstalleerde lettertypen {#customer-installed-fonts}
 
-Als u extra lettertypen hebt geïnstalleerd op uw AEM-formulieromgeving, moet u er een afzonderlijk back-up van maken. Maak een back-up van alle mappen met lettertypen die in de beheerconsole zijn opgegeven onder Instellingen > Core System > Configurations. Zorg ervoor dat u een back-up maakt van de volledige lettertypemap.
+Als u aanvullende lettertypen hebt geïnstalleerd op uw AEM, moet u er een afzonderlijk back-up van maken. Maak een back-up van alle mappen met lettertypen voor Adobe en klanten die zijn opgegeven in de beheerconsole onder Instellingen > Core System > Configurations. Zorg ervoor dat u een back-up maakt van de volledige lettertypemap.
 
 >[!NOTE]
 >
->De Adobe-lettertypen die met AEM-formulieren zijn geïnstalleerd, bevinden zich standaard in de `[aem-forms root]/fonts` map.
+>Standaard bevinden de met AEM formulieren geïnstalleerde Adobe-lettertypen zich in de `[aem-forms root]/fonts` map.
 
 Als u het besturingssysteem op de hostcomputer opnieuw initialiseert en u de lettertypen van het vorige besturingssysteem wilt gebruiken, moet ook een back-up worden gemaakt van de inhoud van de systeemmap met lettertypen. (Raadpleeg de documentatie bij het besturingssysteem voor specifieke instructies.)

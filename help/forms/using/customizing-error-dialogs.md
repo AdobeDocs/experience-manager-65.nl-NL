@@ -1,15 +1,15 @@
 ---
 title: Foutdialoogvensters aanpassen
 seo-title: Foutdialoogvensters aanpassen
-description: Hoe kan ik-om de foutendialoogvensters van de werkruimte van LiveCycle AEM Forms aan te passen om verschillende foutenbeschrijvingen toe te voegen.
-seo-description: Hoe kan ik-om de foutendialoogvensters van de werkruimte van LiveCycle AEM Forms aan te passen om verschillende foutenbeschrijvingen toe te voegen.
+description: Hoe kan ik-om de foutendialogen van de werkruimte van LiveCycle AEM Forms aan te passen om verschillende foutenbeschrijvingen toe te voegen.
+seo-description: Hoe kan ik-om de foutendialogen van de werkruimte van LiveCycle AEM Forms aan te passen om verschillende foutenbeschrijvingen toe te voegen.
 uuid: 5ed1da68-bd5b-4a36-9a14-9d61733237e6
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: f547c0c1-3917-4092-9d63-c1b3aaefcef0
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07abce0e6e4d1a299ce32ab130366b4e676b6388
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 4%
@@ -38,13 +38,13 @@ In de werkruimte AEM Forms kunt u de foutmeldingen aanpassen. Voer de [algemene 
    Naar
 
    ```json
-   "wserror" : {
-   "message" : "Error Message:",
-   "ComponentUI" : "UI Component:",
-   "error" : "Something went wrong!!",
-   "ok" : "Ok",
-   "ErrorCode" : "Error Code:"
-   }
+    "wserror" : {
+    "message" : "Error Message:",
+    "ComponentUI" : "UI Component:",
+    "error" : "Something went wrong!!",
+    "ok" : "Ok",
+    "ErrorCode" : "Error Code:"
+    }
    ```
 
    >[!NOTE]
@@ -207,19 +207,19 @@ In de werkruimte AEM Forms kunt u de foutmeldingen aanpassen. Voer de [algemene 
    .browse-btn span, .attachementbtn span, .cancelAttachmentUpdate span, #taskAttachmentsContainer .uploadStatus span, .submitNoteButton span, .updateNoteButton span, .cancelNoteUpdate span,
    #userSearchPopUp #actionbar span, #taskarea .action button span, .oooAction button span, .wsMessageContainerDiv .action button span
    {
-      display: block;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      overflow: hidden;
+       display: block;
+       text-overflow: ellipsis;
+       white-space: nowrap;
+       overflow: hidden;
    }
    
    /*-------- Customized following Portion --------*/
    .error-dialog .foot-bar button span
    {
-      display: block;
-      text-overflow: ellipsis;
-      text-decoration:underline;
-      white-space: wrap;
+       display: block;
+       text-overflow: ellipsis;
+       text-decoration:underline;
+       white-space: wrap;
    }
    ```
 

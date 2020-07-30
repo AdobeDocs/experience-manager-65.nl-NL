@@ -3,7 +3,7 @@ title: Elementeditorpagina's maken en configureren
 description: Leer hoe u aangepaste pagina's in de Asset Editor kunt maken en meerdere middelen tegelijk kunt bewerken.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
+source-git-commit: c679cc5ad8f0ecf3495b020ef593de2e73c05ae0
 workflow-type: tm+mt
 source-wordcount: '2111'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Deze asset-centric toepassingen kunnen eenvoudige fotogalerieën in een Intranet
 
 Het creëren van een middel-centric toepassing wordt grotendeels een configuratieproces dat geen codering vereist, slechts kennis van gebruikersgroepen en hun behoeften evenals kennis van de meta-gegevens die worden gebruikt. Elementgerichte toepassingen die zijn gemaakt met Elementen zijn uitbreidbaar: met een matige codeerinspanning kunnen herbruikbare componenten voor het zoeken, bekijken, en het wijzigen van activa worden gecreeerd.
 
-Een op elementen gerichte toepassing in Experience Manager bestaat uit een pagina Asset Editor, die kan worden gebruikt voor een gedetailleerde weergave van een specifiek element. Een pagina van de Redacteur van Activa staat ook voor het uitgeven van meta-gegevens toe, op voorwaarde dat de gebruiker die tot de activa toegang heeft de noodzakelijke toestemmingen heeft.
+Een op elementen gerichte toepassing in Experience Manager bestaat uit een pagina Asset Editor, die kan worden gebruikt om een gedetailleerde weergave van een specifiek element te krijgen. Een pagina van de Redacteur van Activa staat ook voor het uitgeven van meta-gegevens toe, op voorwaarde dat de gebruiker die tot de activa toegang heeft de noodzakelijke toestemmingen heeft.
 
 <!--
 ## Create and configure an Asset Share page {#creating-and-configuring-an-asset-share-page}
@@ -171,7 +171,7 @@ To add predicates:
 
 1. Drag the appropriate predicates to the Asset Share page underneath the query builder. Doing so creates the appropriate fields.
 
-![assetshare4](assets/assetshare4.bmp)
+![assetshare4](assets/assetshare4.png)
 
 The following predicates are available:
 
@@ -204,17 +204,17 @@ Als u de pagina Asset Editor maakt, is het verstandig de pagina direct onder de 
 Een pagina voor de Editor van middelen maken:
 
 1. Navigeer op het **[!UICONTROL Websites]** tabblad naar de plaats waar u een pagina voor de middeleneditor wilt maken en klik op **Nieuw**.
-1. Selecteer **Geometrixx Asset Editor** en klik op **Maken**. De nieuwe pagina wordt gemaakt en de pagina wordt weergegeven op het tabblad **Websites** .
+1. Selecteer **Geometrixx-itemeditor** en klik op **Maken**. De nieuwe pagina wordt gemaakt en de pagina wordt weergegeven op het tabblad **Websites** .
 
 ![screen_shot_2012-04-23at15858pm](assets/screen_shot_2012-04-23at15858pm.png)
 
 De basispagina die is gemaakt met de sjabloon Geometrixx Asset Editor ziet er als volgt uit:
 
-![assetshare5](assets/assetshare5.bmp)
+![assetshare5](assets/assetshare5.png)
 
 Als u de pagina Asset Editor wilt aanpassen, gebruikt u elementen van de assistent. De pagina Asset Editor die vanuit het **Geometrixx Press Center** wordt geopend, is een aangepaste versie van een pagina die op deze sjabloon is gebaseerd:
 
-![assetshare6](assets/assetshare6.bmp)
+![assetshare6](assets/assetshare6.png)
 
 #### Een Asset Editor instellen om te openen vanaf een pagina voor het delen van elementen {#setting-which-asset-editor-opens-from-an-asset-share-page}
 
@@ -262,7 +262,7 @@ Elementeditorcomponenten toevoegen:
 
 #### Metagegevensformulier en tekstveld - De component Metagegevens weergeven configureren {#metadata-form-and-text-field-configuring-the-view-metadata-component}
 
-Het metagegevensformulier is een formulier met een begin- en eindactie. Tussendoor voert u **tekstvelden** in. Zie [Formulieren](/help/sites-authoring/default-components-foundation.md#form-component) voor meer informatie over het werken met formulieren.
+Het metagegevensformulier is een formulier met een begin- en eindactie. Tussendoor voert u **tekstvelden** in. Zie [Forms](/help/sites-authoring/default-components-foundation.md#form-component) voor meer informatie over het werken met formulieren.
 
 1. Maak een startactie door in het gedeelte Start van het formulier op **Bewerken** te klikken. U kunt desgewenst een titel voor een vak invoeren. Standaard is de titel van het vak **Metagegevens**. Schakel het selectievakje Clientvalidatie in als u de Java-Script-clientcode voor validatie wilt genereren.
 
@@ -387,14 +387,14 @@ De volgende acties zijn beschikbaar:
 
 ## Elementen bewerken via de pagina Asset Editor {#multi-editing-assets-with-the-asset-editor-page}
 
-Met Experience Manager Assets kunt u wijzigingen in meerdere elementen tegelijk aanbrengen. Nadat u elementen hebt geselecteerd, kunt u tegelijkertijd de volgende wijzigingen aanbrengen:
+Met Experience Manager-elementen kunt u meerdere elementen tegelijk wijzigen. Nadat u elementen hebt geselecteerd, kunt u tegelijkertijd de volgende wijzigingen aanbrengen:
 
 * Tags
 * Metagegevens
 
 Elementen bewerken via de pagina Asset Editor:
 
-1. Open de pagina Geometrixx **Press Center** :
+1. Open de pagina **Press Center** :
    `https://localhost:4502/content/geometrixx/en/company/press.html`
 
 1. Selecteer de elementen:

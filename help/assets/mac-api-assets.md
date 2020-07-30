@@ -1,11 +1,11 @@
 ---
-title: Elementen van HTTP-API in [!DNL-Adobe Experience Manager].
-description: Digitale elementen maken, lezen, bijwerken, verwijderen en beheren met de HTTP-API in [!DNL Adobe Experience Manager Assets].
+title: Elementen van HTTP-API in [!DNL Adobe Experience Manager].
+description: Digitale elementen maken, lezen, bijwerken, verwijderen en beheren met de HTTP API in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f64df3a706762cdef631e18ad1a6fdd7044a551f
+source-git-commit: 92b7ca5c4864c4cca0eb8f1fb1c6bcec9d87c21c
 workflow-type: tm+mt
-source-wordcount: '1563'
+source-wordcount: '1568'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ In Experience Manager bevat een element de volgende elementen:
 * Meerdere uitvoeringen, zoals de oorspronkelijke uitvoering (het oorspronkelijk geüploade element), een miniatuur en verschillende andere uitvoeringen. Extra uitvoeringen kunnen afbeeldingen van verschillende grootten, videocoderingen of uit PDF- of [!DNL Adobe InDesign] bestandsbestanden geëxtraheerde pagina&#39;s zijn.
 * Optionele opmerkingen.
 
-Zie Ondersteuning van [inhoudsfragmenten in de HTTP-API](/help/assets/assets-api-content-fragments.md#content-fragments)van Experience Manager Assets voor informatie over elementen in Content Fragments.
+Zie Ondersteuning van [inhoudsfragmenten in HTTP-API](/help/assets/assets-api-content-fragments.md#content-fragments)van Experience Manager Assets voor informatie over elementen in Content Fragments.
 
 In [!DNL Experience Manager] een map zijn de volgende componenten beschikbaar:
 
@@ -253,6 +253,9 @@ Hiermee verplaatst u een map of element op het opgegeven pad naar een nieuwe bes
 * `X-Overwrite` - Gebruik deze optie `T` `F` om bestaande bronnen te verwijderen of om te voorkomen dat bestaande bronnen worden overschreven.
 
 **Verzoek**: `MOVE /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-moved"`
+
+Niet gebruiken `/content/dam` in de URL. Een voorbeeldopdracht die tijdens het overschrijven moet worden verplaatst, is:
+`curl -u admin:admin -X MOVE https://[aem_server]:[port]/api/assets/source/file.png -H "X-Destination: http://[aem_server]:[port]/api/assets/destination/file.png" -H "X-Overwrite: T"`
 
 **Antwoordcodes**: De responscodes zijn:
 

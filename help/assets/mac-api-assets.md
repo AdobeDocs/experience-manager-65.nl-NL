@@ -3,9 +3,9 @@ title: Elementen van HTTP-API in [!DNL Adobe Experience Manager].
 description: Digitale elementen maken, lezen, bijwerken, verwijderen en beheren met de HTTP API in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 92b7ca5c4864c4cca0eb8f1fb1c6bcec9d87c21c
+source-git-commit: f29eeb54c115514947a11bbc8a9e9e7df7cd082b
 workflow-type: tm+mt
-source-wordcount: '1568'
+source-wordcount: '1571'
 ht-degree: 0%
 
 ---
@@ -254,8 +254,11 @@ Hiermee verplaatst u een map of element op het opgegeven pad naar een nieuwe bes
 
 **Verzoek**: `MOVE /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-moved"`
 
-Niet gebruiken `/content/dam` in de URL. Een voorbeeldopdracht die tijdens het overschrijven moet worden verplaatst, is:
-`curl -u admin:admin -X MOVE https://[aem_server]:[port]/api/assets/source/file.png -H "X-Destination: http://[aem_server]:[port]/api/assets/destination/file.png" -H "X-Overwrite: T"`
+Niet gebruiken `/content/dam` in de URL. Een voorbeeldopdracht voor het verplaatsen van elementen en het overschrijven van bestaande elementen is:
+
+```shell
+curl -u admin:admin -X MOVE https://[aem_server]:[port]/api/assets/source/file.png -H "X-Destination: http://[aem_server]:[port]/api/assets/destination/file.png" -H "X-Overwrite: T"
+```
 
 **Antwoordcodes**: De responscodes zijn:
 

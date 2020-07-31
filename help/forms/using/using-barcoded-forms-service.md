@@ -1,6 +1,6 @@
 ---
 title: Barcoded Forms Service
-seo-title: De service AEM Forms Barcoded Forms gebruiken
+seo-title: AEM Forms Barcoded Forms Service gebruiken
 description: 'Met de service AEM Forms Barcoded Forms kunt u gegevens ophalen uit elektronische afbeeldingen van streepjescodes. '
 seo-description: 'Met de service AEM Forms Barcoded Forms kunt u gegevens ophalen uit elektronische afbeeldingen van streepjescodes. '
 uuid: b044a788-0e4a-4718-b71a-bd846933d51b
@@ -10,7 +10,7 @@ topic-tags: document_services
 discoiquuid: d431c4cb-e4be-41a5-8085-42393d4d468c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
 workflow-type: tm+mt
 source-wordcount: '1042'
 ht-degree: 1%
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 ## Overzicht {#overview}
 
-De service Barcoded Forms extraheert gegevens uit elektronische afbeeldingen van streepjescodes. De service accepteert TIFF- en PDF-bestanden die een of meer streepjescodes bevatten als invoer en extraheert de streepjescodegegevens. Streepjescodegegevens kunnen op verschillende manieren worden opgemaakt, zoals XML, tekenreeks met scheidingstekens of elke aangepaste indeling die met JavaScript is gemaakt.
+De Barcoded Forms-service extraheert gegevens uit elektronische afbeeldingen van streepjescodes. De service accepteert TIFF- en PDF-bestanden die een of meer streepjescodes bevatten als invoer en extraheert de streepjescodegegevens. Streepjescodegegevens kunnen op verschillende manieren worden opgemaakt, zoals XML, tekenreeks met scheidingstekens of elke aangepaste indeling die met JavaScript is gemaakt.
 
 De service Barcoded Forms ondersteunt de volgende **tweedimensionale (2D)** symbolen die worden geleverd als gescande TIFF- of PDF-documenten:
 
@@ -96,11 +96,11 @@ De service Barcoded Forms retourneert het volgende XML-document na het decoderen
 
 ### Workflows die formulieren met streepjescodes gebruiken {#workflows-that-use-barcoded-forms}
 
-Formulierauteurs maken met Designer interactieve formulieren met streepjescodes. (Zie [Help bij](https://www.adobe.com/go/learn_aemforms_designer_63)Designer.) Wanneer een gebruiker een formulier met streepjescodes invult in Adobe Reader of Acrobat, wordt de streepjescode automatisch bijgewerkt om de formuliergegevens te coderen.
+Formulierauteurs maken met Designer interactieve formulieren met streepjescodes. (Zie [Help bij](https://www.adobe.com/go/learn_aemforms_designer_63)Designer.) Wanneer een gebruiker een formulier met streepjescodes invult met Adobe Reader of Acrobat, wordt de streepjescode automatisch bijgewerkt om de formuliergegevens te coderen.
 
-De service Barcoded Forms is handig voor het converteren van gegevens op papier naar elektronische indeling. Wanneer bijvoorbeeld een formulier met streepjescodes wordt gevuld en afgedrukt, kan de afgedrukte kopie worden gescand en worden gebruikt als invoer voor de service Barcoded Forms.
+De service Barcoded Forms is handig voor het converteren van gegevens die op papier staan naar elektronisch formaat. Wanneer bijvoorbeeld een formulier met streepjescodes wordt gevuld en afgedrukt, kan de afgedrukte kopie worden gescand en worden gebruikt als invoer voor de service Barcoded Forms.
 
-De gecontroleerde omslageindpunten worden typisch gebruikt om toepassingen te beginnen die de Barcoded dienst van Vormen gebruiken. Zo kunnen documentscanners TIFF- of PDF-afbeeldingen van formulieren met streepjescodes opslaan in een controlemap. Het gecontroleerde omslageindpunt gaat de beelden tot de dienst voor het decoderen over.
+De gecontroleerde omslageindpunten worden typisch gebruikt om toepassingen te beginnen die de Barcoded dienst van Forms gebruiken. Zo kunnen documentscanners TIFF- of PDF-afbeeldingen van formulieren met streepjescodes opslaan in een controlemap. Het gecontroleerde omslageindpunt gaat de beelden tot de dienst voor het decoderen over.
 
 ### Aanbevolen indelingen voor codering en decodering {#recommended-encoding-and-decoding-formats}
 
@@ -133,7 +133,7 @@ Bovendien kan de service elke streepjescode decoderen die ondersteunde symbolen 
 
 ## Eigenschappen van de service configureren   {#configureproperties}
 
-Met de **AEMFD Barcoded Forms Service** in AEM Console kunt u eigenschappen voor deze service configureren. De standaard-URL van de AEM-console is `https://[host]:'port'/system/console/configMgr`.
+U kunt de **AEMFD Barcoded Forms Service** in AEM Console gebruiken om eigenschappen voor deze dienst te vormen. De standaard-URL van AEM console is `https://[host]:'port'/system/console/configMgr`.
 
 ## De service gebruiken {#using}
 
@@ -232,15 +232,15 @@ De volgende voorbeeldcode decodeert een streepjescode in een document en slaat d
 %>
 ```
 
-### De BCF-service gebruiken met AEM Workflows {#using-the-bcf-service-with-aem-workflows}
+### Het gebruiken van de dienst BCF met AEM Werkstromen {#using-the-bcf-service-with-aem-workflows}
 
-Het runnen van de Barcoded dienst van Vormen van een werkschema is gelijkaardig aan het runnen van de dienst van JSP/Servlet. Het enige verschil is bij het runnen van de dienst van JSP/Servlet het documentvoorwerp wint automatisch een geval van voorwerp ResourceResolver van het voorwerp ResourceResolverHelper terug. Dit automatische mechanisme werkt niet wanneer de code vanuit een workflow wordt aangeroepen.
+Het runnen van de Gecodeerde dienst van Forms van een werkschema is gelijkaardig aan het runnen van de dienst van JSP/Servlet. Het enige verschil is bij het runnen van de dienst van JSP/Servlet het documentvoorwerp wint automatisch een geval van voorwerp ResourceResolver van het voorwerp ResourceResolverHelper terug. Dit automatische mechanisme werkt niet wanneer de code vanuit een workflow wordt aangeroepen.
 
 Voor een workflow geeft u expliciet een instantie van het object ResourceResolver door aan de klasseconstructor Document. Vervolgens gebruikt het object Document het aangeboden ResourceResolver-object om inhoud uit de opslagruimte te lezen.
 
 Het volgende voorbeeldwerkstroomproces decodeert een streepjescode in een document en slaat het resultaat op schijf op. De code wordt geschreven in ECMAScript en het document wordt overgegaan als werkschemalading:
 
-```
+```javascript
 /*
  * Imports 
  */

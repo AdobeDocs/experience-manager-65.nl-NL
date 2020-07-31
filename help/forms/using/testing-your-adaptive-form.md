@@ -8,7 +8,7 @@ contentOwner: khsingh
 discoiquuid: ecddb22e-c148-441f-9088-2e5b35c7021b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 252dac988c8256cf99ee8487feb937d5345ed797
+source-git-commit: a842aa85652e5c04d5825a3e88aa6b64ef8a0088
 workflow-type: tm+mt
 source-wordcount: '936'
 ht-degree: 1%
@@ -34,7 +34,7 @@ AEM Forms bieden een testframework, Calvin, om het testen van uw adaptieve formu
 
 De testreeksen hebben een inzameling van testgevallen. U kunt meerdere testreeksen hebben. Het wordt aanbevolen voor elk formulier een aparte testsuite te gebruiken. Een testsuite maken:
 
-1. Log naar de auteur van AEM Forms als beheerder. Open CRXDE Lite. Tik op AEM-logo > **Gereedschappen** > **Algemeen** > **CRXDE Lite** of open de URL [https://localhost:4502/crx/de/index.jsp](https://localhost:4502/crx/de/index.jsp) in een browser om CRXDE Lite te openen.
+1. Log naar de auteur van AEM Forms als beheerder. Open CRXDE Lite. Tik op AEM Logo > **Gereedschappen** > **Algemeen** > **CRXDE Lite** of open de URL [https://localhost:4502/crx/de/index.jsp](https://localhost:4502/crx/de/index.jsp) in een browser om CRXDE Lite te openen.
 
 1. Navigeer naar /etc/clientlibs in CRXDE Lite. Klik met de rechtermuisknop op de submap /etc/clientlibs en klik op **Maken** > **Knooppunt maken.** In het het gebiedstype van de Naam **WijRetailFormTestCase**. Selecteer het type als **cq:ClientLibraryFolder** en klik op **OK**. Er wordt een knooppunt gemaakt. U kunt om het even welke naam in plaats van WijRetailFormTestCase gebruiken.
 1. Voeg de volgende eigenschappen aan de knoop WebRetailFormTestCase toe en tik **sparen ALLES**.
@@ -101,7 +101,7 @@ Zorg ervoor dat elke eigenschap wordt toegevoegd aan een afzonderlijk vak, zoals
 
    De bovenstaande code maakt een testsuite met de naam **We Retail - Tests**.
 
-1. Open de testgebruikersinterface voor AEM (AEM > Gereedschappen > Bewerkingen > Testen). De testsuite - **We Retail - Tests** - wordt weergegeven in de gebruikersinterface.
+1. Open AEM testgebruikersinterface (AEM > Gereedschappen > Bewerkingen > Testen). De testsuite - **We Retail - Tests** - wordt weergegeven in de gebruikersinterface.
 
    ![we-retail-testsuite](assets/we-retail-test-suite.png)
 
@@ -177,7 +177,7 @@ Een handeling is een specifieke activiteit op een adaptief formulier, zoals het 
 
 1. Maak een bestand `prefillTest.js`in het **[!UICONTROL WeRetailFormTests]** knooppunt. Voeg de onderstaande code toe aan het bestand. In de code wordt een testcase gemaakt. Het testhoofdlettergebruik vult alle velden van een formulier voor en valideert bepaalde velden om ervoor te zorgen dat correcte waarden worden ingevoerd.
 
-   ```
+   ```javascript
    (function (window, hobs) {
        'use strict';
    
@@ -216,7 +216,7 @@ Een testsuite kan meerdere testgevallen bevatten. U kunt alle testgevallen in ee
 * Een vinkje geeft aan dat een test is geslaagd: ![save_icon](assets/save_icon.svg)
 * Een X-pictogram geeft aan dat een test is mislukt: ![close-icon](assets/close-icon.svg)
 
-1. Navigeren naar AEM-pictogram > **[!UICONTROL Tools]**> **[!UICONTROL Operations]**> **[!UICONTROL Testing]**
+1. Ga naar AEM pictogram > **[!UICONTROL Tools]**> **[!UICONTROL Operations]**> **[!UICONTROL Testing]**
 1. Alle tests van de testsuite uitvoeren:
 
    1. Tik in het deelvenster Tests op **[!UICONTROL We retail - Tests (1)]**. De suite wordt uitgebreid om een testlijst weer te geven.

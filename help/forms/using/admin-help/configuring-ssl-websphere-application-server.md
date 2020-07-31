@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7c0efcb3-5b07-4090-9119-b7318c8b7980
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
 workflow-type: tm+mt
 source-wordcount: '1240'
 ht-degree: 0%
@@ -127,7 +127,7 @@ U kunt sleutelarchieven en sleutelarchieven maken met het hulpprogramma ikeyman 
 
    Uw profiel wordt nu uitgevoerd op aangepaste SSL-instellingen en uw certificaat.
 
-## Ondersteuning mogelijk maken voor AEM-formuliernative {#enabling-support-for-aem-forms-natives}
+## Ondersteuning mogelijk maken voor AEM {#enabling-support-for-aem-forms-natives}
 
 1. Selecteer **Beveiliging > Algemene beveiliging** in de beheerconsole van WebSphere.
 1. Vouw in de sectie Verificatie de **RMI/IOOP-beveiliging** uit en klik op **CSIv2 binnenkomende communicatie**.
@@ -178,7 +178,7 @@ Voer de volgende stappen uit om de poort dynamisch te maken en het probleem op t
 1. Open het bestand `[aem-forms_root]`\crx-repository\launchpad\sling.properties.
 1. Zoek de `sling.bootdelegation.ibm` eigenschap en voeg deze toe `com.ibm.websphere.ssl.*`aan het waardeveld. Het bijgewerkte veld ziet er als volgt uit:
 
-   ```java
+   ```shell
    sling.bootdelegation.ibm=com.ibm.xml.*, com.ibm.websphere.ssl.*
    ```
 

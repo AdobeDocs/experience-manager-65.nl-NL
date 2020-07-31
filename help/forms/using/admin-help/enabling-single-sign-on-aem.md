@@ -1,6 +1,6 @@
 ---
-title: Single Sign-On inschakelen in AEM-formulieren
-seo-title: Single Sign-On inschakelen in AEM-formulieren
+title: Single Sign-On inschakelen in AEM formulieren
+seo-title: Single Sign-On inschakelen in AEM formulieren
 description: Leer hoe te om enig teken-op (SSO) toe te laten gebruikend de kopballen van HTTP en SPNEGO.
 seo-description: Leer hoe te om enig teken-op (SSO) toe te laten gebruikend de kopballen van HTTP en SPNEGO.
 uuid: 2bc08b4f-dcbe-4a16-9025-32fc14605e13
@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ee54d9d4-190d-4665-925a-9740ac65fbd5
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
 workflow-type: tm+mt
 source-wordcount: '1538'
 ht-degree: 0%
@@ -18,17 +18,17 @@ ht-degree: 0%
 ---
 
 
-# Single Sign-On inschakelen in AEM-formulieren{#enabling-single-sign-on-in-aem-forms}
+# Single Sign-On inschakelen in AEM formulieren{#enabling-single-sign-on-in-aem-forms}
 
-AEM-formulieren bieden twee manieren om SSO (Single Sign-On) - HTTP-headers en SPNEGO in te schakelen.
+AEM formulieren bieden twee manieren om SSO (Single Sign-On) - HTTP-headers en SPNEGO in te schakelen.
 
-Wanneer SSO is geïmplementeerd, zijn de aanmeldingspagina&#39;s voor AEM-formulieren niet vereist en worden deze niet weergegeven als de gebruiker al is geverifieerd via het bedrijfsportaal.
+Wanneer SSO is geïmplementeerd, zijn de aanmeldingspagina&#39;s voor AEM formulieren niet vereist en worden deze niet weergegeven als de gebruiker al is geverifieerd via het bedrijfsportaal.
 
-Als AEM-formulieren een gebruiker niet kunnen verifiëren met een van deze methoden, wordt de gebruiker omgeleid naar een aanmeldingspagina.
+Als AEM formulieren een gebruiker niet kunnen verifiëren met een van deze methoden, wordt de gebruiker omgeleid naar een aanmeldingspagina.
 
 ## SSO inschakelen met HTTP-headers {#enable-sso-using-http-headers}
 
-U kunt de Poortconfiguratiepagina gebruiken om enige sign-on (SSO) tussen toepassingen en om het even welke toepassing toe te laten die het overbrengen van de identiteit over de kopbal van HTTP steunt. Wanneer SSO is geïmplementeerd, zijn de aanmeldingspagina&#39;s voor AEM-formulieren niet vereist en worden deze niet weergegeven als de gebruiker al is geverifieerd via het bedrijfsportaal.
+U kunt de Poortconfiguratiepagina gebruiken om enige sign-on (SSO) tussen toepassingen en om het even welke toepassing toe te laten die het overbrengen van de identiteit over de kopbal van HTTP steunt. Wanneer SSO is geïmplementeerd, zijn de aanmeldingspagina&#39;s voor AEM formulieren niet vereist en worden deze niet weergegeven als de gebruiker al is geverifieerd via het bedrijfsportaal.
 
 U kunt SSO ook toelaten door SPNEGO te gebruiken. (Zie [SSO inschakelen met SPNEGO](enabling-single-sign-on-aem.md#enable-sso-using-spnego).)
 
@@ -56,7 +56,7 @@ Voor de stappen om toegestane verwijzers te vormen, zie toegestane verwijzingen 
 
 ## SSO inschakelen met SPNEGO {#enable-sso-using-spnego}
 
-U kunt het Eenvoudige en Beschermde Mechanisme van de Onderhandeling van GSSAPI (SPNEGO) gebruiken om enige sign-on (SSO) toe te laten wanneer het gebruiken van Actieve Folder als uw server LDAP in een milieu van Vensters. Als SSO is ingeschakeld, zijn de aanmeldingspagina&#39;s voor AEM-formulieren niet vereist en worden deze niet weergegeven.
+U kunt het Eenvoudige en Beschermde Mechanisme van de Onderhandeling van GSSAPI (SPNEGO) gebruiken om enige sign-on (SSO) toe te laten wanneer het gebruiken van Actieve Folder als uw server LDAP in een milieu van Vensters. Als SSO is ingeschakeld, zijn de aanmeldingspagina&#39;s voor AEM formulieren niet vereist en worden deze niet weergegeven.
 
 U kunt SSO ook toelaten door de kopballen van HTTP te gebruiken. (Zie [SSO inschakelen met HTTP-headers](enabling-single-sign-on-aem.md#enable-sso-using-http-headers).)
 
@@ -64,8 +64,8 @@ U kunt SSO ook toelaten door de kopballen van HTTP te gebruiken. (Zie [SSO insch
 >
 >AEM Forms op JEE steunen het vormen SSO gebruikend Kerberos/SPNEGO in een veelvoudige milieu&#39;s van het kinddomein niet.
 
-1. Bepaal welk domein om SSO toe te laten te gebruiken. De AEM-formulierserver en de gebruikers moeten deel uitmaken van hetzelfde Windows-domein of vertrouwde domein.
-1. Maak in Active Directory een gebruiker die de AEM-formulierserver vertegenwoordigt. (Zie [Een gebruikersaccount](enabling-single-sign-on-aem.md#create-a-user-account)maken.) Als u meer dan één domein om SPNEGO te gebruiken vormt, zorg ervoor dat de wachtwoorden voor elk van deze gebruikers verschillend zijn. Als de wachtwoorden niet verschillend zijn, werkt SPNEGO SSO niet.
+1. Bepaal welk domein om SSO toe te laten te gebruiken. De AEM formulierserver en de gebruikers moeten deel uitmaken van hetzelfde Windows-domein of vertrouwde domein.
+1. In Actieve Folder, creeer een gebruiker die de AEM vormenserver vertegenwoordigt. (Zie [Een gebruikersaccount](enabling-single-sign-on-aem.md#create-a-user-account)maken.) Als u meer dan één domein om SPNEGO te gebruiken vormt, zorg ervoor dat de wachtwoorden voor elk van deze gebruikers verschillend zijn. Als de wachtwoorden niet verschillend zijn, werkt SPNEGO SSO niet.
 1. Wijs de de dienstbelangrijkste naam toe. (Zie [Een serviceprecitenaam (SPN)](enabling-single-sign-on-aem.md#map-a-service-principal-name-spn)toewijzen.)
 1. Configureer de domeincontroller. (Zie [Kerberos integriteit-controle mislukkingen](enabling-single-sign-on-aem.md#prevent-kerberos-integrity-check-failures)verhinderen.)
 1. Voeg of bewerk een ondernemingsdomein toe zoals beschreven in het [Toevoegen van domeinen](/help/forms/using/admin-help/adding-domains.md#adding-domains) of het [Bewerken en het omzetten van bestaande domeinen](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains). Wanneer u creeert of het ondernemingsdomein uitgeeft, voer deze taken uit:
@@ -75,7 +75,7 @@ U kunt SSO ook toelaten door de kopballen van HTTP te gebruiken. (Zie [SSO insch
    * Voeg Kerberos als authentificatieleverancier toe. Verstrek de volgende informatie over de Nieuwe pagina of geef de pagina van de Authentificatie voor Kerberos uit:
 
       * **Verificatieprovider:** Kerberos
-      * **DNS IP:** Het DNS IP-adres van de server waarop AEM-formulieren worden uitgevoerd. U kunt dit IP adres bepalen door `ipconfig/all` op de bevellijn te lopen.
+      * **DNS IP:** Het DNS IP-adres van de server waarop AEM formulieren worden uitgevoerd. U kunt dit IP adres bepalen door `ipconfig/all` op de bevellijn te lopen.
       * **KDC-host:** Volledig - gekwalificeerde gastheernaam of IP adres van de Actieve server van de Folder die voor authentificatie wordt gebruikt
       * **Servicegebruiker:** De service principal name (SPN) die wordt doorgegeven aan het gereedschap KtPass. In het voorbeeld dat eerder wordt gebruikt, is de de dienstgebruiker `HTTP/lcserver.um.lc.com`.
       * **Servicerealm:** Domeinnaam voor Active Directory. In het eerder gebruikte voorbeeld is de domeinnaam `UM.LC.COM.`
@@ -121,14 +121,14 @@ U kunt SSO ook toelaten door de kopballen van HTTP te gebruiken. (Zie [SSO insch
 
 Als deze fout optreedt:
 
-```java
+```shell
 DsCrackNames returned 0x2 in the name entry for spnegodemo.
 ktpass:failed getting target domain for specified user.
 ```
 
 Geef de gebruiker op als spnegodemo@um.lc.com:
 
-```java
+```shell
 ktpass -princ HTTP/lcserver.um.lc.com@UM.LC.COM -mapuser spnegodemo
 ```
 
@@ -153,7 +153,7 @@ Als de server wordt betreden door de computernaam, zoals https://lcserver:8080 t
 1. Klik op het pictogram Lokaal intranet en klik vervolgens op Sites.
 1. Klik op Geavanceerd en typ in het vak Deze website toevoegen aan zone de URL van de formulierserver. For example, type `https://lcserver.um.lc.com`
 1. Klik op OK totdat alle dialoogvensters zijn gesloten.
-1. Test de configuratie door de URL van uw AEM-formulierserver te openen. Typ bijvoorbeeld in het vak URL van de browser `https://lcserver.um.lc.com:8080/um/login?um_no_redirect=true`
+1. Test de configuratie door de URL van uw AEM formulierserver te openen. Typ bijvoorbeeld in het vak URL van de browser `https://lcserver.um.lc.com:8080/um/login?um_no_redirect=true`
 
 **Mozilla Firefox configureren**
 

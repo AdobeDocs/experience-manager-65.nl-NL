@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
 workflow-type: tm+mt
 source-wordcount: '6774'
 ht-degree: 0%
@@ -33,7 +33,7 @@ De regelredacteur verstrekt een intuïtieve en vereenvoudigde gebruikersinterfac
 * Een service van een formuliergegevensmodel aanroepen en een bewerking uitvoeren
 * Eigenschap van een object instellen
 
-De redacteur van de regel vervangt de scriptmogelijkheden in Vormen AEM 6.1 en vroegere versies. Nochtans, worden uw bestaande manuscripten bewaard in de nieuwe regelredacteur. Voor meer informatie over het werken met bestaande manuscripten in de regelredacteur, zie [Gevolgen van regelredacteur op bestaande manuscripten](../../forms/using/rule-editor.md#p-impact-of-rule-editor-on-existing-scripts-p).
+De redacteur van de regel vervangt de scriptmogelijkheden in AEM 6.1 Forms en vroegere versies. Nochtans, worden uw bestaande manuscripten bewaard in de nieuwe regelredacteur. Voor meer informatie over het werken met bestaande manuscripten in de regelredacteur, zie [Gevolgen van regelredacteur op bestaande manuscripten](../../forms/using/rule-editor.md#p-impact-of-rule-editor-on-existing-scripts-p).
 
 Gebruikers die zijn toegevoegd aan de gebruikersgroep voor formulieren, kunnen nieuwe scripts maken en bestaande scripts bewerken. Gebruikers in de groep met gebruikers van formulieren kunnen de scripts gebruiken, maar kunnen geen scripts maken of bewerken.
 
@@ -133,13 +133,13 @@ Tijdens het schrijven van een When-regel kunt u de Clear Value of action activer
 
 **Schakel** het opgegeven object uit.
 
-**De aanroepende dienst** roept de dienst aan die in een model van vormgegevens wordt gevormd. Wanneer u de Invoke-service kiest, wordt een veld weergegeven. Als u op het veld tikt, worden alle services weergegeven die in alle modellen formuliergegevens op uw AEM-instantie zijn geconfigureerd. Als u een service voor een formuliergegevensmodel kiest, worden extra velden weergegeven waarin u formulierobjecten kunt toewijzen met invoer- en uitvoerparameters voor de opgegeven service. Zie voorbeeldregel voor het aanroepen van formuliergegevensmodelservices.
+**De aanroepende dienst** roept de dienst aan die in een model van vormgegevens wordt gevormd. Wanneer u de Invoke-service kiest, wordt een veld weergegeven. Als u op het veld tikt, worden alle services weergegeven die zijn geconfigureerd in alle formuliergegevensmodellen op uw AEM. Als u een service voor een formuliergegevensmodel kiest, worden extra velden weergegeven waarin u formulierobjecten kunt toewijzen met invoer- en uitvoerparameters voor de opgegeven service. Zie voorbeeldregel voor het aanroepen van formuliergegevensmodelservices.
 
 Naast formuliergegevensmodelservice kunt u een directe WSDL-URL opgeven om een webservice aan te roepen. Een service voor een formuliergegevensmodel heeft echter vele voordelen en de aanbevolen aanpak om een service aan te roepen.
 
 Voor meer informatie over het vormen van de diensten in het model van vormgegevens, zie de Integratie [van Gegevens van](/help/forms/using/data-integration.md)AEM Forms.
 
-**Stel waarde van** Berekenen in en stel de waarde van het opgegeven object in. U kunt de objectwaarde instellen op een tekenreeks, de waarde van een ander object, de berekende waarde met behulp van de wiskundige expressie of functie, de waarde van een eigenschap van een object of de uitvoerwaarde van een geconfigureerde formuliergegevensmodelservice. Wanneer u de optie Webservice kiest, worden alle services weergegeven die in alle formuliergegevensmodellen zijn geconfigureerd op uw AEM-exemplaar. Als u een service voor een formuliergegevensmodel kiest, worden extra velden weergegeven waarin u formulierobjecten kunt toewijzen met invoer- en uitvoerparameters voor de opgegeven service.
+**Stel waarde van** Berekenen in en stel de waarde van het opgegeven object in. U kunt de objectwaarde instellen op een tekenreeks, de waarde van een ander object, de berekende waarde met behulp van de wiskundige expressie of functie, de waarde van een eigenschap van een object of de uitvoerwaarde van een geconfigureerde formuliergegevensmodelservice. Wanneer u de optie Webservice kiest, worden alle services weergegeven die in alle formuliergegevensmodellen op uw AEM zijn geconfigureerd. Als u een service voor een formuliergegevensmodel kiest, worden extra velden weergegeven waarin u formulierobjecten kunt toewijzen met invoer- en uitvoerparameters voor de opgegeven service.
 
 Voor meer informatie over het vormen van de diensten in het model van vormgegevens, zie de Integratie [van Gegevens van](/help/forms/using/data-integration.md)AEM Forms.
 
@@ -165,7 +165,7 @@ De volgende afbeelding toont een voorbeeld van het dynamisch toevoegen van selec
 
 **Met Formulier** opslaan slaat u het formulier op.
 
-**Het formulier wordt verzonden met Forms** .
+**Het formulier wordt verzonden door Forms** .
 
 **Het formulier** opnieuw instellen: hiermee wordt het formulier opnieuw ingesteld.
 
@@ -358,7 +358,7 @@ Het tabblad Functies bevat een set ingebouwde functies, zoals som van, min of me
 
 >[!NOTE]
 >
->U kunt tekstzoekopdrachten uitvoeren op namen en titels van objecten en functies op de tabbladen Formulierobjecten en -functies.
+>U kunt tekstzoekopdrachten uitvoeren op namen en titels van objecten en functies op de tabbladen Objecten en Functies van Forms.
 
 In de linkerstructuur van de formulierobjecten kunt u op de formulierobjecten tikken om de regels weer te geven die op elk object zijn toegepast. U kunt niet alleen door de regels van de verschillende formulierobjecten navigeren, u kunt ook regels kopiëren en plakken tussen de formulierobjecten. Zie [Kopiëren en plakken voor meer informatie](../../forms/using/rule-editor.md#p-copy-paste-rules-p).
 
@@ -378,7 +378,7 @@ Gebruikers in de gebruikersgroep voor formulieren hebben toegang tot de code-edi
 
 AEM Forms volgen de wijze van de regelredacteur u het laatst gebruikte om een regel te schrijven. Wanneer u de regelredacteur de volgende keer lanceert, opent het op die wijze. Nochtans, kunt u een standaardwijze ook vormen om de regelredacteur op de gespecificeerde wijze te openen. Daartoe:
 
-1. Ga naar AEM-webconsole op `https://[host]:[port]/system/console/configMgr`.
+1. Ga naar AEM webconsole op `https://[host]:[port]/system/console/configMgr`.
 1. Klik om te bewerken **[!UICONTROL Adaptive Form Configuration Service]**.
 1. kiezen **[!UICONTROL Visual Editor]** of **[!UICONTROL Code Editor]** in het **[!UICONTROL Default Mode for Rule Editor]** keuzemenu
 
@@ -471,11 +471,11 @@ Voer de volgende stappen uit om regels te schrijven:
 
 1. In het veld Expressie:
 
-   * Selecteer of sleep-daling van het lusje van de Objecten van de Vormen het gebied van de **Salaris** in het eerste voorwerp van de **Daling of selecteer hier** gebied.
+   * Selecteer of sleep-daling van het lusje van de Objecten van Forms het **Salaire** gebied in het eerste voorwerp van de **Daling of selecteer hier** gebied.
 
    * Selecteer **Plus** in het veld **Operator** selecteren.
 
-   * Selecteer of sleep-daling van het lusje van de Objecten van de Vormen het gebied van de Salaris **van de** Muis in het andere voorwerp van de **Daling of selecteer hier** gebied.
+   * Selecteer of sleep-daling van het lusje van de Objecten van Forms het gebied van de Salaris **van de** Muis in het andere voorwerp van de **Daling of selecteer hier** gebied.
 
    ![write-rules-visual-editor-12](assets/write-rules-visual-editor-12.png)
 
@@ -499,7 +499,7 @@ Voer de volgende stappen uit om regels te schrijven:
 
    In de instructie When:
 
-   * Selecteer of sleep de cursor vanuit het tabblad Formulierobject naar het veld **Beginstatus** in het eerste object **Drop of selecteer hier** het veld.
+   * Selecteer of sleep-daling van het lusje van de Objecten van Forms het gebied van de **Gewone Status** in het eerste voorwerp van de **Daling of selecteer hier** gebied.
 
    * Selecteren **is gelijk aan** in het veld **Operator** selecteren.
 
@@ -589,7 +589,7 @@ Voegt informatie over de functie toe, zoals zijn doel.
 
 >[!NOTE]
 >
->Opmerkingen vóór aangepaste functie worden gebruikt voor overzicht. De samenvatting kan tot veelvoudige lijnen uitbreiden tot een markering wordt ontmoet. Beperk de grootte tot één voor een beknopte beschrijving in de regelbouwer.
+>Opmerkingen vóór aangepaste functie worden gebruikt voor overzicht. Samenvatting kan tot veelvoudige lijnen worden uitgebreid tot een markering wordt ontmoet. Beperk de grootte tot één voor een beknopte beschrijving in de regelbouwer.
 
 **Een aangepaste functie toevoegen**
 
@@ -642,7 +642,7 @@ area = function(len) {
 
 **Functie-expressie en -instructie**
 
-```
+```javascript
 var b={};
 /** */
 b.area = function(len) {
@@ -652,7 +652,7 @@ b.area = function(len) {
 
 **Functiedeclaratie als variabele**
 
-```
+```javascript
 /** */
 var x1,
     area = function(len) {
@@ -665,7 +665,7 @@ Beperking: aangepaste functie kiest alleen de eerste functiedeclaratie uit de li
 
 **Functiedeclaratie als object**
 
-```
+```javascript
 var c = {
     b : {
         /** */
@@ -765,7 +765,7 @@ Wanneer de gebruiker mededeelt dat hij minder dan 36 maanden op zijn huidige woo
 
 ## Effect van regeleditor op bestaande scripts {#impact-of-rule-editor-on-existing-scripts}
 
-In versies voor AEM Forms ouder dan AEM 6.1 Forms feature pack 1 schrijven ontwerpers en ontwikkelaars van formulieren expressies naar het tabblad Scripts van het dialoogvenster Component bewerken om dynamisch gedrag toe te voegen aan adaptieve formulieren. Het tabblad Scripts wordt nu vervangen door de regeleditor.
+In versies van AEM Forms vóór AEM 6.1 Forms-functiepak 1 schrijven formulierauteurs en -ontwikkelaars die expressies schrijven op het tabblad Scripts van het dialoogvenster Component bewerken om dynamisch gedrag toe te voegen aan adaptieve formulieren. Het tabblad Scripts wordt nu vervangen door de regeleditor.
 
 Alle scripts of expressies die u op het tabblad Scripts moet schrijven, zijn beschikbaar in de regeleditor. Hoewel u ze niet kunt weergeven of bewerken in de visuele editor, kunt u scripts in de code-editor bewerken als u deel uitmaakt van de gebruikersgroep voor formulieren.
 
@@ -773,7 +773,7 @@ Alle scripts of expressies die u op het tabblad Scripts moet schrijven, zijn bes
 
 ### Formuliergegevensmodelservice aanroepen {#invoke}
 
-Beschouw een webservice `GetInterestRates` die het bedrag van de lening, de looptijd en de kredietscore van de aanvrager als input gebruikt, en retourneert een leningenplan inclusief het bedrag en de rentevoet van het EMI. U maakt een formuliergegevensmodel met de webservice als gegevensbron. U voegt gegevensmodelobjecten en een `get` service toe aan het formuliermodel. De service wordt weergegeven op het tabblad Services van het formuliergegevensmodel. Maak vervolgens een adaptief formulier dat velden van gegevensmodelobjecten bevat om gebruikersinvoer voor de hoeveelheid leningen, de looptijd en de creditscore vast te leggen. Voeg een knop toe die de webservice activeert om plandetails op te halen. De uitvoer wordt ingevuld in de desbetreffende velden.
+Beschouw een webservice `GetInterestRates` die het bedrag van de lening, de looptijd en de kredietscore van de aanvrager als input gebruikt, en retourneert een leningenplan met daarin het bedrag en de rentevoet van het EMI. U maakt een formuliergegevensmodel met de webservice als gegevensbron. U voegt gegevensmodelobjecten en een `get` service toe aan het formuliermodel. De service wordt weergegeven op het tabblad Services van het formuliergegevensmodel. Maak vervolgens een adaptief formulier dat velden van gegevensmodelobjecten bevat om gebruikersinvoer voor de hoeveelheid leningen, de looptijd en de creditscore vast te leggen. Voeg een knop toe die de webservice activeert om plandetails op te halen. De uitvoer wordt ingevuld in de desbetreffende velden.
 
 De volgende regel toont hoe u de Invoke de dienstactie zult vormen om het voorbeeldscenario te verwezenlijken.
 
@@ -785,9 +785,9 @@ Service van formuliergegevensmodel aanroepen met adaptieve formulierregel
 
 In een aanvraagformulier voor een lening wilt u vastleggen of de aanvrager van de lening een bestaande klant is of niet. Op basis van de informatie die de gebruiker opgeeft, moet het veld met de klant-id worden weergegeven of verborgen. Ook, wilt u nadruk op het gebied van identiteitskaart van de klant plaatsen als de gebruiker een bestaande klant is. Het aanvraagformulier voor de lening bestaat uit de volgende onderdelen:
 
-* Een keuzerondje. **Bent u een bestaande Geometrixx-klant?**, met de opties Ja en Nee. De waarde voor Ja is **0** en Nee is **1**.
+* Een keuzerondje. **Bent u een bestaande klant van de Geometrixx?**, met de opties Ja en Nee. De waarde voor Ja is **0** en Nee is **1**.
 
-* Een tekstveld, **Geometrixx klant-id**, om de klant-id op te geven.
+* Een tekstveld, **klant-id** van Geometrixx, waarin de klant-id wordt opgegeven.
 
 Wanneer u wanneer regel op het radioknoop schrijft om dit gedrag uit te voeren, verschijnt de regel als volgt in de visuele regelredacteur.  ![when-rule-example](assets/when-rule-example.png)
 

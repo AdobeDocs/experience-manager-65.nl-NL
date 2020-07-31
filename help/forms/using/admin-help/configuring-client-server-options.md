@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
 workflow-type: tm+mt
 source-wordcount: '10273'
 ht-degree: 0%
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 **Basis-URL:** De URL voor beveiliging van het basisdocument met de servernaam en -poort. Aan de basis toegevoegde informatie maakt verbinding-URL&#39;s. Bijvoorbeeld: /edc/Main.do wordt toegevoegd om toegang te krijgen tot de webpagina&#39;s. Gebruikers reageren via deze URL ook op uitnodigingen voor externe gebruikersregistratie.
 
-Als u IPv6 gebruikt, ga de Basis URL als computernaam of DNS naam in. Als u een numeriek IP-adres gebruikt, kunnen met beleid beveiligde bestanden niet worden geopend. Gebruik ook HTTP Secure (HTTPS) URL voor uw server.
+Als u IPv6 gebruikt, ga de Basis URL als computernaam of DNS naam in. Als u een numeriek IP adres gebruikt, zal Acrobat er niet in slagen om beleid beschermde dossiers te openen. Gebruik ook HTTP Secure (HTTPS) URL voor uw server.
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ Voor een bespreking van hoe de off-line huur en synchronisatie werken, zie [Prim
 
 **Toegang voor anonieme gebruikers toestaan:** Selecteer deze optie om de capaciteit toe te laten om gedeeld en persoonlijk beleid tot stand te brengen dat anonieme gebruikers toestaat om beleid-beschermde documenten te openen. (Gebruikers die geen accounts hebben, hebben wel toegang tot het document, maar kunnen zich niet aanmelden voor documentbeveiliging of andere documenten die met een beleid zijn beveiligd.)
 
-**Toegang tot versie 7-clients uitschakelen:** Hiermee geeft u aan of gebruikers verbinding kunnen maken met de server met Acrobat of Reader 7.0. Als deze optie is geselecteerd, moeten gebruikers Acrobat of Reader 8.0 en hoger gebruiken om de documentbeveiligingsbewerkingen in PDF-documenten te voltooien. Als het beleid vereist dat Acrobat of Reader 8.0 en hoger in de gecertificeerde modus worden uitgevoerd wanneer beleidsbeveiligde documenten worden geopend, moet u de toegang tot Acrobat of Reader 7 uitschakelen. (Zie Documentmachtigingen opgeven voor gebruikers en groepen.)
+**Toegang tot versie 7-clients uitschakelen:** Hiermee geeft u aan of gebruikers Acrobat of Reader 7.0 kunnen gebruiken om verbinding te maken met de server. Als deze optie is ingeschakeld, moeten gebruikers Acrobat of Reader 8.0 en hoger gebruiken om de documentbeveiligingsbewerkingen in PDF-documenten te voltooien. Als het beleid vereist dat Acrobat of Reader 8.0 en later op verklaarde wijze in werking moeten stellen wanneer het openen van beleid-beschermde documenten, zou u toegang tot Acrobat of Reader 7 moeten onbruikbaar maken. (Zie Documentmachtigingen opgeven voor gebruikers en groepen.)
 
 **Offline toegang per document** toestaan Selecteer deze optie om offline toegang per document op te geven. Als deze instelling is ingeschakeld, heeft de gebruiker alleen offline toegang tot de documenten die de gebruiker minstens één keer online heeft geopend.
 
@@ -55,25 +55,25 @@ Voor een bespreking van hoe de off-line huur en synchronisatie werken, zie [Prim
 
 **Uitgebreide verificatie** selecteren toestaan om uitgebreide verificatie in te schakelen en vervolgens de URL voor uitgebreide verificatie-landing invoeren.
 
-Als u deze optie selecteert, kunnen clienttoepassingen uitgebreide verificatie gebruiken. Uitgebreide verificatie biedt aangepaste verificatieprocessen en verschillende verificatieopties die op de AEM-formulierserver zijn geconfigureerd. Gebruikers kunnen nu bijvoorbeeld via Acrobat en Reader Client last krijgen van de op SAML gebaseerde verificatie in plaats van de gebruikersnaam/het wachtwoord voor AEM-formulieren. Standaard bevat de landings-URL *localhost* als servernaam. Vervang de servernaam door een volledig-gekwalificeerde hostnaam. De hostnaam in de bestemmings-URL wordt automatisch ingevuld vanaf de basis-URL als uitgebreide verificatie nog niet is ingeschakeld. Zie [De uitgebreide verificatieprovider](configuring-client-server-options.md#add-the-extended-authentication-provider)toevoegen.
+Als u deze optie selecteert, kunnen clienttoepassingen uitgebreide verificatie gebruiken. Uitgebreide verificatie biedt aangepaste verificatieprocessen en verschillende verificatieopties die op de AEM formulierserver zijn geconfigureerd. Bijvoorbeeld, kunnen de gebruikers de op SAML-Gebaseerde authentificatie in plaats van AEM vormen gebruikersbenaming/Wachtwoord, van Acrobat en de Cliënt van de Reader nu ervaren. Standaard bevat de landings-URL *localhost* als servernaam. Vervang de servernaam door een volledig-gekwalificeerde hostnaam. De hostnaam in de bestemmings-URL wordt automatisch ingevuld vanaf de basis-URL als uitgebreide verificatie nog niet is ingeschakeld. Zie [De uitgebreide verificatieprovider](configuring-client-server-options.md#add-the-extended-authentication-provider)toevoegen.
 
-***opmerking **: Uitgebreide verificatie wordt ondersteund op Apple Mac OS X met Adobe Acrobat versie 11.0.6 en hoger.*
+***opmerking **: Uitgebreide verificatie wordt ondersteund door Apple Mac OS X met Adobe Acrobat versie 11.0.6 en hoger.*
 
-**Voorkeursbreedte voor HTML-besturing voor uitgebreide verificatie** Geef de breedte op van het uitgebreide verificatiedialoogvenster dat in Acrobat wordt geopend en waarin de gebruikersgegevens kunnen worden ingevoerd.
+**Voorkeursbreedte voor HTML-besturing voor uitgebreide verificatie** Geef de breedte op van het uitgebreide verificatiedialoogvenster dat in Acrobat wordt geopend voor het invoeren van gebruikersgegevens.
 
-**Gewenste HTML-besturingssysteemhoogte voor uitgebreide verificatie** Geef de hoogte op van het uitgebreide verificatiedialoogvenster dat in Acrobat wordt geopend en waarin de gebruikersgegevens kunnen worden ingevoerd.
+**Voorkeurshoogte van HTML-besturing voor uitgebreide verificatie** Geef de hoogte op van het uitgebreide verificatiedialoogvenster dat in Acrobat wordt geopend voor het invoeren van gebruikersgegevens.
 
 ***opmerking **: De breedte en hoogte van dit dialoogvenster zijn als volgt:*Breedte: Minimum = 400, maximum = 900
 
 Hoogte: minimum = 450; maximum = 800
 
-**Client Credential Caching inschakelen:** Selecteer deze optie als u wilt dat gebruikers hun gegevens (gebruikersnaam en wachtwoord) in de cache kunnen opslaan. Wanneer de gebruikersgegevens in het cachegeheugen zijn opgeslagen, hoeven ze niet telkens hun gegevens in te voeren wanneer ze een document openen of op de knop Vernieuwen klikken op de pagina Beveiligingsbeleid beheren in Adobe Acrobat. U kunt het aantal dagen opgeven voordat gebruikers hun gegevens opnieuw moeten opgeven. Als u het aantal dagen instelt op 0, kunnen referenties voor onbepaalde tijd in het cachegeheugen worden opgeslagen.
+**Client Credential Caching inschakelen:** Selecteer deze optie als u wilt dat gebruikers hun gegevens (gebruikersnaam en wachtwoord) in de cache kunnen opslaan. Wanneer de gebruikersgegevens in het cachegeheugen zijn opgeslagen, hoeven ze niet telkens hun gegevens in te voeren wanneer ze een document openen of op de knop Vernieuwen op de pagina Beveiligingsbeleid beheren in Adobe Acrobat klikken. U kunt het aantal dagen opgeven voordat gebruikers hun gegevens opnieuw moeten opgeven. Als u het aantal dagen instelt op 0, kunnen referenties voor onbepaalde tijd in het cachegeheugen worden opgeslagen.
 
 ## Gebruikers en beheerders voor documentbeveiliging configureren {#configuring-document-security-users-and-administrators}
 
 ### Documentbeveiligingsrollen toewijzen aan beheerders {#assigning-document-security-roles-to-administrators}
 
-Uw AEM-formulieromgeving bevat een of meer beheerdergebruikers die de juiste rechten hebben voor het maken van gebruikers en groepen. Als uw organisatie documentbeveiliging gebruikt, moet ten minste één beheerder ook het recht krijgen om uitgenodigde en lokale gebruikers te beheren.
+Uw AEM formulieromgeving bevat een of meer beheerdergebruikers die de juiste rechten hebben voor het maken van gebruikers en groepen. Als uw organisatie documentbeveiliging gebruikt, moet ten minste één beheerder ook het recht krijgen om uitgenodigde en lokale gebruikers te beheren.
 
 De beheerders moeten de rol van de Gebruiker van de beleidsconsole ook hebben om tot beleidsconsole toegang te hebben. (Zie Rollen [](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles)maken en configureren.)
 
@@ -83,7 +83,7 @@ Om gebruikers en groepen in geselecteerde domeinen tijdens de onderzoeken van de
 
 De zichtbare gebruiker en de groepslijst zijn zichtbaar aan de coördinator van de beleidsreeks en gebruikt om te beperken welke domeinen de eindgebruiker kan doorbladeren wanneer het kiezen van gebruikers of groepen om aan beleid toe te voegen. Als deze taak niet wordt uitgevoerd, zal de coördinator van de beleidsreeks geen gebruikers of groepen vinden om aan het beleid toe te voegen. Er kunnen voor elke beleidsset meerdere beleidssetcoördinatoren zijn.
 
-1. Nadat u de AEM-formulieromgeving hebt geïnstalleerd en geconfigureerd met documentbeveiliging, stelt u alle relevante domeinen in Gebruikersbeheer in. <!-- Fix broken link (See Setting up and managing domains) -->
+1. Nadat u de AEM formulieromgeving hebt geïnstalleerd en geconfigureerd met documentbeveiliging, stelt u alle relevante domeinen in Gebruikersbeheer in. <!-- Fix broken link (See Setting up and managing domains) -->
 
    ***opmerking **: Het creëren van domeinen moet worden gedaan alvorens om het even welk beleid kan worden gecreeerd.*
 
@@ -95,11 +95,11 @@ De zichtbare gebruiker en de groepslijst zijn zichtbaar aan de coördinator van 
 
 ## De uitgebreide verificatieprovider toevoegen {#add-the-extended-authentication-provider}
 
-AEM-formulieren bieden een voorbeeldconfiguratie die u kunt aanpassen aan uw omgeving. Voer de volgende stappen uit:
+AEM formulieren bieden een voorbeeldconfiguratie die u kunt aanpassen aan uw omgeving. Voer de volgende stappen uit:
 
 >[!NOTE]
 >
->Uitgebreide verificatie wordt ondersteund op Apple Mac OS X met Adobe Acrobat versie 11.0.6 en hoger.
+>Uitgebreide verificatie wordt ondersteund door Apple Mac OS X met Adobe Acrobat versie 11.0.6 en hoger.
 
 1. Vraag het WAR-voorbeeldbestand aan om dit te implementeren. Raadpleeg de installatiegids die geschikt is voor uw toepassingsserver.
 1. Zorg ervoor dat de formulierserver een volledig gekwalificeerde naam heeft in plaats van IP-adressen als de basis-URL en dat het een HTTPS-URL is. Zie [Serverconfiguratie-instellingen](configuring-client-server-options.md#server-configuration-settings).
@@ -112,7 +112,7 @@ Als uitgebreide verificatie is ingeschakeld, krijgen gebruikers die een met bele
 
 >[!NOTE]
 >
->Uitgebreide verificatie wordt ondersteund op Apple Mac OS X met Adobe Acrobat versie 11.0.6 en hoger.
+>Uitgebreide verificatie wordt ondersteund door Apple Mac OS X met Adobe Acrobat versie 11.0.6 en hoger.
 
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Configuratie > Configuratiebestanden importeren en exporteren.
 1. Klik op Exporteren en sla het configuratiebestand op uw schijf op.
@@ -131,7 +131,7 @@ Als uitgebreide verificatie is ingeschakeld, krijgen gebruikers die een met bele
 
 Met documentbeveiliging kunt u met beleid beveiligde documenten offline gebruiken zonder een internet- of netwerkverbinding. Deze mogelijkheid vereist dat het beleid offline toegang toestaat, zoals beschreven in de [documentmachtigingen voor gebruikers en groepen](/help/forms/using/admin-help/creating-policies.md#specify-the-document-permissions-for-users-and-groups)opgeven. Voordat een document met een dergelijk beleid offline kan worden gebruikt, moet de ontvanger het document openen terwijl het online is en offline toegang inschakelen door op Ja te klikken wanneer hierom wordt gevraagd. De ontvanger kan ook worden verzocht zijn identiteit te verifiëren. De ontvanger kan dan documenten offline gebruiken voor de duur van de offline huurperiode die in het beleid wordt gespecificeerd.
 
-Wanneer de offline leaseperiode afloopt, moet de ontvanger opnieuw synchroniseren met de documentbeveiliging door een document online te openen of door een menuopdracht voor Acrobat of Acrobat Reader DC-extensies te gebruiken om te synchroniseren. (Zie *Acrobat Help* of de juiste Help bij *Acrobat Reader DC-extensies*.)
+Wanneer de offline leaseperiode afloopt, moet de ontvanger opnieuw synchroniseren met de documentbeveiliging door een document online te openen of door een menuopdracht voor Acrobat- of Acrobat Reader DC-extensies te gebruiken om te synchroniseren. (Zie *Acrobat Help* of de juiste Help bij *Acrobat Reader DC-extensies*.)
 
 Omdat documenten die offline toegang toestaan, sleutelmateriaal in cache moeten plaatsen op de computer waarop de bestanden offline zijn opgeslagen, kan het bestand mogelijk in gevaar worden gebracht als een onbevoegde gebruiker het sleutelmateriaal kan verkrijgen. Om deze mogelijkheid te compenseren, worden de geplande en handzeer belangrijke het omvergooienopties verstrekt die u kunt vormen om een onbevoegd persoon te verhinderen de sleutel te gebruiken om tot het document toegang te hebben.
 
@@ -196,7 +196,7 @@ U kunt de volgende gebeurtenistypen selecteren voor controle:
 * Met beleid beveiligde documentgebeurtenissen, zoals pogingen van geautoriseerde of onbevoegde gebruikers om documenten te openen
 * Beleidsgebeurtenissen, zoals het maken, wijzigen, verwijderen, inschakelen en uitschakelen van beleid
 * Gebruikersgebeurtenissen, zoals externe gebruikersuitnodigingen en registraties, geactiveerde en gedeactiveerde gebruikersaccounts, wijzigingen in gebruikerswachtwoorden en profielupdates
-* AEM-formuliergebeurtenissen, zoals niet-overeenkomende versies, niet-beschikbare directoryserver- en verificatieproviders en wijzigingen in de serverconfiguratie
+* AEM formuliergebeurtenissen, zoals niet-overeenkomende versies, niet-beschikbare directoryserver- en verificatieproviders en wijzigingen in de serverconfiguratie
 
 ### Gebeurteniscontrole in- of uitschakelen {#enable-or-disable-event-auditing}
 
@@ -239,7 +239,7 @@ U kunt een privacymeldingsbericht in- en uitschakelen. Wanneer u privacymeldinge
 
 ### Een aangepast type auditgebeurtenis importeren {#import-a-custom-audit-event-type}
 
-Als u een toepassing gebruikt waarvoor beveiliging is ingeschakeld en die het controleren van extra gebeurtenissen ondersteunt, zoals gebeurtenissen die specifiek zijn voor een bepaald bestandstype, kan een Adobe-partner u aangepaste auditgebeurtenissen bieden die u in documentbeveiliging kunt importeren. Gebruik deze functie alleen als u aangepaste gebeurtenistypen hebt ontvangen van een Adobe-partner.
+Als u een document veiligheid-toegelaten toepassing gebruikt die controle van extra gebeurtenissen, zoals gebeurtenissen steunt specifiek voor een bepaald dossiertype, kan een partner van Adobe u van de gebeurtenissen van de douanecontrole voorzien die u in documentveiligheid kunt invoeren. Gebruik deze functie alleen als u aangepaste gebeurtenistypen hebt ontvangen van een Adobe-partner.
 
 1. Klik in de beheerconsole op Services > Documentbeveiliging > Configuratie > Gebeurtenisbeheer.
 1. Klik op Bladeren om naar het XML-bestand te gaan dat u wilt importeren en klik op Importeren.
@@ -309,9 +309,9 @@ U kunt gebeurteniscontrole in- en uitschakelen en de typen gebeurtenissen opgeve
 
 **Beleid schakelen op document:** Een gebruiker of een beheerder schakelt het beleid dat aan een document in bijlage is.
 
-**Document publiceren als:** Een nieuw document waarvan documentName en de vergunning identiek aan een bestaand document zijn wordt geregistreerd op de server, en de documenten hebben geen ouder-kind verhouding. Deze gebeurtenis kan worden geactiveerd met de SDK van AEM-formulieren.
+**Document publiceren als:** Een nieuw document waarvan documentName en de vergunning identiek aan een bestaand document zijn wordt geregistreerd op de server, en de documenten hebben geen ouder-kind verhouding. Deze gebeurtenis kan worden geactiveerd met de SDK van AEM formulieren.
 
-**Document herhalen:** Een nieuw document waarvan documentName en vergunning identiek aan een bestaand document zijn wordt geregistreerd op de server, en de documenten hebben een ouder-kind verhouding. Deze gebeurtenis kan worden geactiveerd met de SDK van AEM-formulieren.
+**Document herhalen:** Een nieuw document waarvan documentName en vergunning identiek aan een bestaand document zijn wordt geregistreerd op de server, en de documenten hebben een ouder-kind verhouding. Deze gebeurtenis kan worden geactiveerd met de SDK van AEM formulieren.
 
 **Beleidsgebeurtenissen**
 
@@ -365,7 +365,7 @@ U kunt gebeurteniscontrole in- en uitschakelen en de typen gebeurtenissen opgeve
 
 **De gesynchroniseerde toepassing van de Cliënt** van de Cliënt moet informatie met de server synchroniseren om voor off-line toegang toe te staan.
 
-**Versie komt niet overeen:** Een versie van de SDK van AEM-formulieren die niet compatibel is met de server die verbinding probeerde te maken met de server.
+**Versie komt niet overeen:** Een versie van de SDK voor AEM formulieren die niet compatibel is met de server die verbinding probeerde te maken met de server.
 
 **Informatie over mapsynchronisatie:** Deze informatie is niet beschikbaar op de pagina Gebeurtenissen. De huidige informatie van de foldersynchronisatie, met inbegrip van de huidige synchronisatiestatus en de tijd van de laatste synchronisatie, wordt getoond op de pagina van het Beheer van het Domein. Klik op Instellingen > Gebruikersbeheer > Domeinbeheer om de pagina Domeinbeheer in de beheerconsole te openen.
 
@@ -420,7 +420,7 @@ Deze instellingen bepalen de tekst die wordt weergegeven in het dialoogvenster v
 
 **Aanpassing voor weergave van clientcertificaten**
 
-**Alleen vertrouwde referentie-uitgevers weergeven:** Als deze optie is geselecteerd, worden in de clienttoepassing alleen certificaten van referentie-uitgevers aan de gebruiker aangeboden die door AEM-formulieren worden vertrouwd (zie Certificaten en referenties beheren). Als deze optie niet is geselecteerd, wordt de gebruiker een lijst met alle certificaten op het systeem van de gebruiker weergegeven.
+**Alleen vertrouwde referentie-uitgevers weergeven:** Als deze optie is geselecteerd, worden in de clienttoepassing alleen certificaten van referentie-uitgevers aan de gebruiker aangeboden die AEM formulieren zo configureren dat ze worden vertrouwd (zie Certificaten en referenties beheren). Als deze optie niet is geselecteerd, wordt de gebruiker een lijst met alle certificaten op het systeem van de gebruiker weergegeven.
 
 ## Dynamische watermerken configureren {#configure-dynamic-watermarks}
 
@@ -452,24 +452,24 @@ Houd rekening met het volgende wanneer u watermerken configureert:
 * U kunt de maximale PDF-bestandsgrootte wijzigen die u als watermerkelement wilt gebruiken. Grote PDF-documenten die als watermerk worden gebruikt, verminderen echter de prestaties tijdens offlinesynchronisatie van documenten die met dergelijke watermerken zijn toegepast. Zie De configuratieparameters [van het watermerk](configuring-client-server-options.md#change-the-watermark-configuration-parameters)wijzigen.
 * Alleen de eerste pagina van de geselecteerde PDF wordt gebruikt als watermerk. Zorg ervoor dat de informatie die u als watermerk wilt weergeven, beschikbaar is op de eerste pagina zelf.
 * Hoewel u de schaling van het PDF-document kunt opgeven, moet u rekening houden met het paginaformaat en de indeling van de PDF als u het als watermerk wilt gebruiken in de kop-, voettekst- of marges.
-* Voer de naam correct in wanneer u de naam van het lettertype opgeeft. AEM-formulieren vervangen het lettertype dat u hebt opgegeven als dit niet aanwezig is op de clientcomputer waar het document wordt geopend.
+* Voer de naam correct in wanneer u de naam van het lettertype opgeeft. AEM formulieren vervangen het font dat u hebt opgegeven als dit niet aanwezig is op de clientcomputer waar het document wordt geopend.
 * Als u tekst hebt geselecteerd als watermerkinhoud, werkt het opgeven van de schaaloptie Aanpassen aan pagina niet voor pagina&#39;s met een afwijkende breedte.
 * Wanneer u de plaatsing van de elementen van het watermerk opgeeft, moet u ervoor zorgen dat niet meer dan één element dezelfde positionering heeft. Als twee watermerkelementen dezelfde positie hebben, zoals het midden, lijken ze overlappend te zijn op het document en in de volgorde waarin ze aan het watermerk zijn toegevoegd.
-* Wanneer u de tekengrootte en het type opgeeft, moet u ervoor zorgen dat de lengte van de tekst volledig zichtbaar is binnen de pagina. De inhoud van de tekst wordt over nieuwe regels verdeeld, zodat de inhoud van het watermerk die u in de marges wilt opnemen, kan overlappen in de inhoudsgebieden op pagina&#39;s. Als het document echter wordt geopend in Acrobat 9, wordt de tekst na de enkele regel afgekapt.
+* Wanneer u de tekengrootte en het type opgeeft, moet u ervoor zorgen dat de lengte van de tekst volledig zichtbaar is binnen de pagina. De inhoud van de tekst wordt over nieuwe regels verdeeld, zodat de inhoud van het watermerk die u in de marges wilt opnemen, kan overlappen in de inhoudsgebieden op pagina&#39;s. Als het document echter in Acrobat 9 wordt geopend, wordt de tekst na de enkele regel afgekapt.
 
 ### Beperkingen van dynamische watermerken {#limitations-of-dynamic-watermarks}
 
-Dynamische watermerken worden mogelijk niet door alle clienttoepassingen ondersteund. Raadpleeg de desbetreffende Help bij Acrobat Reader DC-extensies. Houd ook rekening met het volgende in de versies van Acrobat die dynamische watermerken ondersteunen:
+Dynamische watermerken worden mogelijk niet door alle clienttoepassingen ondersteund. Raadpleeg de desbetreffende Help bij Acrobat Reader DC-extensies. Houd rekening met het volgende over de versies van Acrobat die dynamische watermerken ondersteunen:
 
 * U kunt een PDF-document dat met een wachtwoord is beveiligd, niet als watermerkelement gebruiken.
-* Acrobat- en Adobe Reader-versies ouder dan 10 bieden geen ondersteuning voor de volgende functies voor watermerken:
+* Acrobat- en Adobe Reader-versies ouder dan 10 bieden geen ondersteuning voor de volgende watermerkfuncties:
 
    * PDF-watermerken
    * Meerdere elementen in het watermerk (Text/PDF)
    * Geavanceerde opties, zoals paginabereik of weergaveopties
    * Opties voor tekstopmaak, zoals opgegeven lettertype, lettertypenaam en -kleur. Eerdere versies van Acrobat en Reader geven de tekstinhoud echter weer in het standaardlettertype en de standaardkleur.
 
-* Acrobat 9.0 en eerdere versies: In Acrobat 9.0 en lager worden beleidsnamen in dynamische watermerken niet ondersteund. Als in Acrobat 9.0 een document wordt geopend dat met een beleid is beveiligd en dat een dynamisch watermerk bevat dat een beleidsnaam en andere dynamische gegevens bevat, wordt het watermerk weergegeven zonder de naam van het beleid. Als het dynamische watermerk alleen de beleidsnaam bevat, wordt in Acrobat een foutbericht weergegeven
+* Acrobat 9.0 en eerdere versies: Acrobat 9.0 en eerder ondersteunen geen beleidsnamen in dynamische watermerken. Als in Acrobat 9.0 een document wordt geopend dat met een beleid is beveiligd en een dynamisch watermerk heeft dat een beleidsnaam en andere dynamische gegevens bevat, wordt het watermerk weergegeven zonder de naam van het beleid. Als het dynamische watermerk alleen de beleidsnaam bevat, geeft Acrobat een foutbericht weer
 
 ### Een dynamische watermerksjabloon toevoegen {#add-a-dynamic-watermark-template}
 
@@ -553,7 +553,7 @@ Met documentbeveiliging wordt automatisch een e-mailuitnodiging voor een registr
 
 Het registratiebericht bevat een koppeling naar een registratiepagina en informatie over de manier waarop u zich kunt registreren. Nadat de uitgenodigde gebruiker zich heeft geregistreerd, geeft de documentveiligheid een activeringse-mail met een verbinding aan een pagina van de Activering uit. Als de account is geactiveerd, blijft deze geldig totdat u de account deactiveert of verwijdert.
 
-Als u ingebouwde registratie toelaat, specificeert u uw server SMTP, registratie e-maildetails, toegangsmogelijkheden, en stelt wachtwoord-e-mailinformatie slechts eenmaal in. Voordat u ingebouwde registratie inschakelt, moet u ervoor zorgen dat u een lokaal domein in Gebruikersbeheer hebt gemaakt en de rol &quot;Gebruiker uitnodigen voor documentbeveiliging&quot; hebt toegewezen aan de juiste gebruikers en groepen in uw organisatie. (Zie [Een lokaal domein](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) toevoegen en rollen [](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles)maken en configureren.) Als u geen ingebouwde registratie gebruikt, moet u uw eigen systeem van de gebruikersregistratie hebben die gebruikend AEM vormen SDK wordt gecreeerd. Zie de Help over het ontwikkelen van SPI&#39;s voor AEM-formulieren in [Programmeren met AEM-formulieren](https://www.adobe.com/go/learn-aemforms-programming-63). Als u de optie Ingebouwde registratie niet gebruikt, wordt u aangeraden een bericht te configureren in de activerings-e-mail en in het aanmeldingsscherm van de client om gebruikers te laten weten hoe ze contact kunnen opnemen met de beheerder voor een nieuw wachtwoord of voor andere informatie.
+Als u ingebouwde registratie toelaat, specificeert u uw server SMTP, registratie e-maildetails, toegangsmogelijkheden, en stelt wachtwoord-e-mailinformatie slechts eenmaal in. Voordat u ingebouwde registratie inschakelt, moet u ervoor zorgen dat u een lokaal domein in Gebruikersbeheer hebt gemaakt en de rol &quot;Gebruiker uitnodigen voor documentbeveiliging&quot; hebt toegewezen aan de juiste gebruikers en groepen in uw organisatie. (Zie [Een lokaal domein](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) toevoegen en rollen [](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles)maken en configureren.) Als u geen ingebouwde registratie gebruikt, moet u uw eigen systeem van de gebruikersregistratie hebben die gebruikend de AEM vorm SDK wordt gecreeerd. Zie de Help bij &quot;Developing SPIs for AEM forms&quot; in [Programming with AEM forms](https://www.adobe.com/go/learn-aemforms-programming-63). Als u de optie Ingebouwde registratie niet gebruikt, wordt u aangeraden een bericht te configureren in de activerings-e-mail en in het aanmeldingsscherm van de client om gebruikers te laten weten hoe ze contact kunnen opnemen met de beheerder voor een nieuw wachtwoord of voor andere informatie.
 
 **Ingeschakelde gebruikersregistratie inschakelen en configureren**
 
@@ -777,10 +777,10 @@ Wanneer clienttoepassingen proberen een koppeling tot stand te brengen met docum
 
 De ontkenningsinstellingen kunnen verschillende sets ontkenningsvoorwaarden bevatten. Als alle kenmerken van een set overeenkomen, krijgt de toepassing die het verzoek indient, geen toegang tot de documentbeveiligingsservices.
 
-De ontkenning-van-dienst eigenschap vereist dat de cliënttoepassingen de versie 8.2 of recenter van de SDK van de Cliënt van de documentveiligheid C++ gebruiken. De volgende Adobe-producten bieden productinformatie wanneer u documentbeveiligingsservices aanvraagt:
+De ontkenning-van-dienst eigenschap vereist dat de cliënttoepassingen de versie 8.2 of recenter van de SDK van de Cliënt van de documentveiligheid C++ gebruiken. De volgende Adobe producten verstrekken productinformatie wanneer het vragen van de diensten van de documentveiligheid:
 
 * Adobe Acrobat 9.0 Professional/Acrobat 9.0 Standard of hoger
-* Adobe Reader 9.0 of hoger
+* Adobe Reader 9.0 en hoger
 * Acrobat Reader DC-extensies voor Microsoft Office 8.2 en hoger
 
 Clienttoepassingen gebruiken de client-API van de C++-client-SDK voor documentbeveiliging om services aan te vragen van documentbeveiliging. De client-API-aanvragen bevatten platform- en SDK-versiegegevens (vooraf gecompileerd in de client-API) en productgegevens die zijn verkregen van de clienttoepassing.
@@ -795,11 +795,11 @@ De toepassingen of stop-ins van de cliënt verstrekken productinformatie in hun 
 
 Als er geen informatie van toepassing is, laat de clienttoepassing het desbetreffende veld leeg.
 
-Verschillende Adobe-toepassingen bevatten productinformatie wanneer u documentbeveiligingsservices aanvraagt, waaronder Acrobat-, Adobe Reader- en Acrobat Reader DC-extensies voor Microsoft Office.
+Verschillende Adobe-toepassingen bevatten productinformatie wanneer documentbeveiligingsservices worden aangevraagd, waaronder Acrobat-, Adobe Reader- en Acrobat Reader DC-extensies voor Microsoft Office.
 
 **Acrobat en Adobe Reader**
 
-Wanneer Acrobat of Adobe Reader de service aanvraagt bij de documentbeveiliging, worden de volgende productgegevens weergegeven:
+Wanneer Acrobat of Adobe Reader een service aanvraagt bij de documentbeveiliging, wordt de volgende productinformatie verschaft:
 
 * **Integrator:** Adobe Systems, Inc.
 * **Integratorversie:** 1,0
@@ -809,7 +809,7 @@ Wanneer Acrobat of Adobe Reader de service aanvraagt bij de documentbeveiliging,
 
 **Acrobat Reader DC-extensies voor Microsoft Office**
 
-Acrobat Reader DC-extensies voor Microsoft Office zijn een insteekmodule die wordt gebruikt met de Microsoft Office-producten Microsoft Word, Microsoft Excel en Microsoft PowerPoint. Wanneer het om de dienst verzoekt, verstrekt het de volgende informatie:
+De uitbreidingen van Acrobat Reader DC voor Microsoft Office zijn een elektrisch toestel dat met de producten van Microsoft Office Microsoft Word, Microsoft Excel, en Microsoft PowerPoint wordt gebruikt. Wanneer het om de dienst verzoekt, verstrekt het de volgende informatie:
 
 * **Integrator:** Adobe Systems Incorporated
 * **Integratorversie:** 8,2
@@ -822,7 +822,7 @@ Acrobat Reader DC-extensies voor Microsoft Office zijn een insteekmodule die wor
 1. Exporteer het configuratiebestand voor documentbeveiliging. (Zie [Het configuratiebestand](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file)voor documentbeveiliging handmatig bewerken.)
 1. Open het configuratiebestand in een editor en zoek het `PolicyServer` knooppunt. Voeg een `ClientVersionRules` knooppunt toe als een direct onderliggend element van het `PolicyServer` knooppunt, als dat niet bestaat:
 
-   ```java
+   ```xml
     <node name="ClientVersionRules">
         <map>
             <entry key="infoURL" value="URL"/>
@@ -879,7 +879,7 @@ Acrobat Reader DC-extensies voor Microsoft Office zijn een insteekmodule die wor
 
 In dit voorbeeld worden alle Windows-clients toegang geweigerd.
 
-```java
+```xml
  <node name="ClientVersionRules">
      <map>
          <entry key="infoURL" value="https://www.dont.use/windows.html"/>
@@ -897,7 +897,7 @@ In dit voorbeeld worden alle Windows-clients toegang geweigerd.
 
 In dit voorbeeld wordt mijn toepassingsversie 3.0 en Mijn andere toepassingsversie 2.0 toegang geweigerd. De zelfde ontkenningsinformatie URL wordt gebruikt ongeacht de reden voor ontkenning.
 
-```java
+```xml
  <node name="ClientVersionRules">
      <map>
          <entry key="infoURL" value=”https://get.a.new/version.html”/>
@@ -922,7 +922,7 @@ In dit voorbeeld wordt mijn toepassingsversie 3.0 en Mijn andere toepassingsvers
 
 In dit voorbeeld worden alle aanvragen van een Microsoft PowerPoint 2007- of Microsoft PowerPoint 2010-installatie van Acrobat Reader DC-extensies voor Microsoft Office afgewezen.
 
-```java
+```xml
  <node name="ClientVersionRules">
      <map>
          <entry key="infoURL" value=”https://get.a.new/version.html”/>
@@ -955,7 +955,7 @@ Standaard kunt u maximaal vijf elementen in een watermerk opgeven. De maximale b
 
    De tweede vermelding, *maximale elementen* , is het maximale aantal elementen dat is toegestaan in een watermerk. De standaardwaarde is 5.
 
-   ```java
+   ```xml
    <entry key="maximumSizeOfWatermarkElement" value="max filesize in KB"/>
    <entry key="maximumWatermarkElementsPerWatermark" value="max elements"/>
    ```
@@ -975,7 +975,7 @@ De volgende veranderingen in config.xml schakelen alle externe verbindingen van 
 1. Open het configuratiebestand in een editor en zoek het `DisplaySettings` knooppunt.
 1. Als u alle externe koppelingen wilt uitschakelen, voegt u in het `DisplaySettings` knooppunt de volgende vermelding toe en slaat u het bestand op: `<entry key="ExternalLinksAllowed" value="false"/>`
 
-   ```java
+   ```xml
    <entry key="ExternalLinksAllowed" value="false"/>
    ```
 
@@ -989,7 +989,7 @@ De volgende veranderingen in config.xml laten TLS steun voor de Uitgenodigde eig
 1. Open het configuratiebestand in een editor en zoek het `DisplaySettings` knooppunt.
 1. Zoek het volgende knooppunt: `<node name="ExternalUser">`
 
-   ```java
+   ```xml
    <node name="ExternalUser">
    ```
 
@@ -1005,7 +1005,7 @@ De volgende veranderingen in config.xml om de eindpunten van de ZEEP voor docume
 1. Exporteer het configuratiebestand voor documentbeveiliging. (Zie [Het configuratiebestand](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file)voor documentbeveiliging handmatig bewerken.)
 1. Open het configuratiebestand in een editor en zoek het volgende knooppunt: `<node name="DRM">`
 
-   ```java
+   ```xml
    <node name="DRM">
    ```
 
@@ -1015,7 +1015,7 @@ De volgende veranderingen in config.xml om de eindpunten van de ZEEP voor docume
 
 1. Als u SOAP-eindpunten voor documenten met documentbeveiliging wilt uitschakelen, stelt u het waardekenmerk in op **false**.
 
-   ```java
+   ```xml
    <node name="DRM">
        <map>
            <entry key="AllowUnencryptedVoucher" value="false"/>

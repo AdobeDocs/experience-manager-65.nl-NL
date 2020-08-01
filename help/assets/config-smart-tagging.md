@@ -3,9 +3,9 @@ title: Vorm activa het etiketteren gebruikend de Slimme Dienst van de Inhoud.
 description: Leer hoe u slimme tags en verbeterde slimme tags kunt configureren in [!DNL Adobe Experience Manager]de Smart Content Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '932'
 ht-degree: 37%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 37%
 
 # Asset tagging configureren met behulp van de Smart Content Service {#configure-asset-tagging-using-the-smart-content-service}
 
-Met Adobe Developer Console kunt u [!DNL Adobe Experience Manager] de service Slimme inhoud integreren. Gebruik deze configuratie om tot de Slimme Dienst van de Inhoud van binnen toegang te hebben [!DNL Experience Manager].
+U kunt [!DNL Adobe Experience Manager] met de Slimme Dienst van de Inhoud integreren gebruikend de Console van de Ontwikkelaar van Adobe. Gebruik deze configuratie om tot de Slimme Dienst van de Inhoud van binnen toegang te hebben [!DNL Experience Manager].
 
 Het artikel detailleert de volgende zeer belangrijke taken uit die worden vereist om de Slimme Dienst van de Inhoud te vormen. At the back end, the [!DNL Experience Manager] server authenticates your service credentials with the Adobe Developer Console gateway before forwarding your request to the Smart Content Service.
 
@@ -33,7 +33,7 @@ Voordat u de Smart Content Service kunt gebruiken, moet u het volgende doen om e
 <!-- TBD: This link will update soon after the new articles goes live on docs.adobe.com. Change it when new URL is available.
 -->
 
-Om Verbeterde Slimme Markeringen toe te laten, naast bovenstaand, installeer ook het recentste de dienstpak [van](https://helpx.adobe.com/experience-manager/aem-releases-updates.html)AEM.
+Om Verbeterde Slimme Markeringen toe te laten, naast het bovenstaande, installeer ook het recentste de dienstpak [van de](https://helpx.adobe.com/experience-manager/aem-releases-updates.html)Experience Manager.
 
 ## Openbaar certificaat verkrijgen {#obtain-public-certificate}
 
@@ -51,7 +51,7 @@ Met een openbaar certificaat kunt u uw profiel verifiëren op Adobe Developer Co
 
    Laat de overige velden voorlopig leeg (later te verstrekken). Klik op **[!UICONTROL OK]**.
 
-   ![Het dialoogvenster Experience Manager Smart Content Service om de URL van de inhoudsservice te bieden](assets/aem_scs.png)
+   ![Het dialoogvenster Experience Manager Smart Content Service om de contentservice-URL op te geven](assets/aem_scs.png)
 
    >[!NOTE]
    >
@@ -79,9 +79,9 @@ Nadat een certificaat is verlopen, wordt het niet meer vertrouwd. U kunt een ver
 1. Als u een openbaar certificaat wilt downloaden, klikt u op **[!UICONTROL Download Public Certificate for OAuth Integration]**.
 1. Ga naar [https://console.adobe.io](https://console.adobe.io) en navigeer naar de bestaande Smart Content Services op de **[!UICONTROL Integrations]** pagina. Upload het nieuwe certificaat. For more information, see the instructions in [Create Adobe Developer Console integration](#create-adobe-i-o-integration).
 
-## Adobe Developer Console-integratie maken {#create-adobe-i-o-integration}
+## Integratie van Adobe Developer Console maken {#create-adobe-i-o-integration}
 
-Als u API&#39;s voor Smart Content Service wilt gebruiken, maakt u een integratie in Adobe Developer Console om API-sleutel, technische account-id, organisatie-id en clientgeheim te genereren.
+Als u API&#39;s voor Smart Content Service wilt gebruiken, maakt u een integratie in de Adobe Developer Console om API-sleutel, technische account-id, organisatie-id en clientgeheim te genereren.
 
 1. Open [https://console.adobe.io](https://console.adobe.io/) in uw browser. Selecteer het gewenste account en verifieer dat de bijbehorende organisatierol is ingesteld op systeembeheerder.
 1. Maak een project een geef het de gewenste naam. Klik op **[!UICONTROL Add API]**.
@@ -94,7 +94,7 @@ Als u API&#39;s voor Smart Content Service wilt gebruiken, maakt u een integrati
 
 ## Smart Content Service configureren {#configure-smart-content-service}
 
-Als u de integratie wilt configureren, gebruikt u de waarden Technical Account ID, Organization ID, Client Secret, Authorization Server en API-sleutelvelden van de integratie met de Adobe Developer Console. Door een cloud-configuratie met slimme tags te maken, kunnen API-aanvragen van de [!DNL Experience Manager] implementatie worden geverifieerd.
+Om de integratie te vormen, gebruik de waarden van Technische Rekening ID, Organisatie identiteitskaart, Geheime cliënt, de Server van de Vergunning, en API zeer belangrijke gebieden van de integratie van de Console van de Ontwikkelaar van Adobe. Door een cloud-configuratie met slimme tags te maken, kunnen API-aanvragen van de [!DNL Experience Manager] implementatie worden geverifieerd.
 
 1. Navigeer in [!DNL Experience Manager], naar **[!UICONTROL Tools]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Legacy Cloud Services]** om de [!UICONTROL Cloud Services] console te openen.
 1. Open onder de **[!UICONTROL Assets Smart Tags]** sectie de configuratie die hierboven is gemaakt. Klik op de pagina met service-instellingen **[!UICONTROL Edit]**.

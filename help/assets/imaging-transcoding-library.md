@@ -1,11 +1,11 @@
 ---
 title: Afbeeldingstransformatiebibliotheek
-description: Leer hoe u de Imaging Transcoding Library van Adobe configureert en gebruikt, een oplossing voor beeldverwerking die kernfuncties voor het verwerken van afbeeldingen kan uitvoeren, zoals codering, transcodering, het resamplen van afbeeldingen en het vergroten of verkleinen van afbeeldingen.
+description: Leer hoe u de bibliotheek Imaging Transcoding Adobe kunt configureren en gebruiken, een oplossing voor beeldverwerking die kernfuncties voor het verwerken van afbeeldingen kan uitvoeren, zoals coderen, transcoderen, het resamplen van afbeeldingen en het vergroten of verkleinen van afbeeldingen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '952'
+source-wordcount: '942'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Afbeeldingstransformatiebibliotheek {#imaging-transcoding-library}
 
-De grafische transformatiebibliotheek van Adobe is een merkgebonden oplossing voor beeldverwerking die kernfuncties voor beeldverwerking kan uitvoeren, zoals:
+Imaging Transcoding Library is een oplossing voor imaging-verwerking die kernfuncties voor het verwerken van afbeeldingen kan uitvoeren, zoals:
 
 * Codering
 * Transcodering (ondersteunde indelingen converteren)
@@ -27,7 +27,7 @@ De bibliotheek voor grafische transformatie biedt CMYK-ondersteuning en volledig
 Naast de ondersteuning van een groot aantal bestandsindelingen en profielen biedt Imaging Transcoding Library aanzienlijke voordelen ten opzichte van andere oplossingen van derden op het gebied van prestaties, schaalbaarheid en kwaliteit. Hier volgen enkele belangrijke voordelen van het gebruik van de bibliotheek voor het transformeren van afbeeldingen:
 
 * **Schalen met grotere bestandsgrootte of resolutie**: Schalen wordt vooral bereikt door de gepatenteerde mogelijkheid om de afbeeldingstranscoderingsbibliotheek tijdens het decoderen van bestanden te vergroten of te verkleinen. Hierdoor wordt gegarandeerd dat het runtimegeheugengebruik altijd optimaal is en geen kwadratische functie voor het vergroten van de bestandsgrootte of het oplossen van megapixels is. De bibliotheek voor het transformeren van afbeeldingen kan grotere en hoge-resolutiebestanden (met hogere megapixels) verwerken. Gereedschappen van derden, zoals ImageMagick, kunnen grote bestanden en vastlopen niet verwerken tijdens het verwerken van dergelijke bestanden.
-* **Afbeeldingscompressie en -algoritmen** voor Photoshop-kwaliteit: Consistentie met de industriestandaard wat betreft de kwaliteit van de downsampling (vloeiend, scherp en automatisch bicubisch) en de compressiekwaliteit. De bibliotheek voor grafische transformatie beoordeelt verder de kwaliteitsfactor van de invoerafbeelding en gebruikt op intelligente wijze optimale tabellen en kwaliteitsinstellingen voor de uitvoerafbeelding. Hierdoor ontstaan bestanden van optimale grootte zonder dat dit ten koste gaat van de visuele kwaliteit.
+* **Compressie- en formaatalgoritmen** voor Photoshop-kwaliteit: Consistentie met de industriestandaard wat betreft de kwaliteit van de downsampling (vloeiend, scherp en automatisch bicubisch) en de compressiekwaliteit. De bibliotheek voor grafische transformatie beoordeelt verder de kwaliteitsfactor van de invoerafbeelding en gebruikt op intelligente wijze optimale tabellen en kwaliteitsinstellingen voor de uitvoerafbeelding. Hierdoor ontstaan bestanden van optimale grootte zonder dat dit ten koste gaat van de visuele kwaliteit.
 * **Hoge doorvoer:** De reactietijd is lager en de productie is constant hoger dan ImageMagick. Daarom zou de Bibliotheek van de Transcodering van Beelden de wachttijd voor gebruikers en de kosten van het ontvangen moeten verminderen.
 * **Beter schalen bij gelijktijdig laden:** De afbeeldingstransformatiebibliotheek functioneert optimaal onder gelijktijdige laadvoorwaarden. Deze server biedt een hoge doorvoer met optimale CPU-prestaties, een optimaal geheugengebruik en een lage responstijd, wat de hostingkosten helpt te verlagen.
 
@@ -55,7 +55,7 @@ De opdrachtregelargumenten voor de bibliotheek voor het transformeren van afbeel
 
 U kunt de volgende opties voor de `-resize` parameter vormen:
 
-* `X`: Werkt vergelijkbaar met Experience Manager. Bijvoorbeeld -resize 319.
+* `X`: Werkt vergelijkbaar met [!DNL Experience Manager]. Bijvoorbeeld -resize 319.
 * `WxH`: De hoogte-breedteverhouding wordt bijvoorbeeld niet behouden `-resize 319x319`.
 * `Wx`: Hiermee stelt u de breedte vast en berekent u de hoogte met behoud van de hoogte-breedteverhouding. Bijvoorbeeld `-resize 319x`.
 * `xH`: Hiermee stelt u de hoogte vast en berekent u de breedte met behoud van de hoogte-breedteverhouding. Bijvoorbeeld `-resize x319`.
@@ -72,9 +72,9 @@ Om ITL verwerking te vormen, creeer een configuratiedossier en werk het werksche
 
 ### Configuratiebestand maken voor geëxtraheerde bundel {#create-conf-file}
 
-Als u de bibliotheek wilt configureren, maakt u een .conf-bestand om de bibliotheken aan te geven met de volgende stappen. U hebt beheerder- of basismachtigingen nodig.
+Om de bibliotheek te vormen, creeer een CONF dossier om op de bibliotheken te wijzen gebruikend de volgende stappen. U hebt beheerder- of basismachtigingen nodig.
 
-1. Download het pakket [Imaging Transcoding Library van Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) en installeer het met de Package Manager. Het pakket is compatibel met Experience Manager 6.5.
+1. Download het pakket [Imaging Transcoding Library van Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) en installeer het met de Package Manager. Het pakket is compatibel met [!DNL Experience Manager] 6.5.
 
 1. Meld u aan bij de webconsole en klik op `com.day.cq.dam.cq-dam-switchengine`> **[!UICONTROL OSGi]** **[!UICONTROL Bundles]**. U kunt ook de `https://[aem_server:[port]/system/console/bundles/` URL openen om de bundelconsole te openen. Zoek `com.day.cq.dam.cq-dam-switchengine` bundel en id.
 
@@ -92,7 +92,7 @@ Als u de bibliotheek wilt configureren, maakt u een .conf-bestand om de biblioth
 
 1. Voer `ldconfig` bevel uit om de noodzakelijke verbindingen en het geheime voorgeheugen tot stand te brengen.
 
-1. Bewerk het `.bash_profile` bestand in de account waarmee Experience Manager wordt gestart. Voeg toe `LD_LIBRARY_PATH` door het volgende toe te voegen.
+1. Bewerk het [!DNL Experience Manager]`.bash_profile` bestand in de account die u wilt starten. Voeg toe `LD_LIBRARY_PATH` door het volgende toe te voegen.
 
    ```shell
    LD_LIBRARY_PATH=.
@@ -105,7 +105,7 @@ Als u de bibliotheek wilt configureren, maakt u een .conf-bestand om de biblioth
 
 Werk de [!UICONTROL DAM Update Asset] workflow bij om de bibliotheek te gebruiken voor het verwerken van afbeeldingen.
 
-1. Selecteer in de gebruikersinterface van Experience Manager **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
+1. Selecteer in de [!DNL Experience Manager] gebruikersinterface **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
 
 1. Open vanaf de **[!UICONTROL Workflow Models]** pagina het **[!UICONTROL DAM Update Asset]** workflowmodel in de bewerkingsmodus.
 
@@ -126,6 +126,7 @@ Als u bijvoorbeeld miniaturen wilt maken voor een TIFF-afbeelding met behulp van
    * `SWitchEngine -input ${file} -destMime PNG -resize 140x100 -output ${directory}cq5dam.thumbnail.140.100.png`
    * `SWitchEngine -input ${file} -destMime PNG -resize 319 -output ${directory}cq5dam.thumbnail.319.319.png`
    * `SWitchEngine -input ${file} -destMime JPEG -resize 1280 -preserveCMYK -output ${directory}cq5dam.web.1280.1280.jpeg`
+
    ![schil](assets/chlimage_1-199.png)
 
 1. (Optioneel) Genereer miniaturen van een tussentijdse uitvoering met één opdracht. De tussenliggende vertoning fungeert als bron voor het genereren van statische weergaven en webuitvoeringen. Deze methode is sneller dan de eerdere methode. Met deze methode kunt u echter geen aangepaste parameters op miniaturen toepassen.
@@ -136,7 +137,7 @@ Als u bijvoorbeeld miniaturen wilt maken voor een TIFF-afbeelding met behulp van
 
 1. Synchroniseer het bijgewerkte [!UICONTROL DAM Update Asset] workflowmodel. Sla de workflow op.
 
-Controleer de configuratie, upload een TIFF-afbeelding en controleer het bestand error.log. Je zult berichten met `INFO` aanhalingstekens van `SwitchEngineHandlingProcess execute: executing command line`. In de logboeken worden de gegenereerde uitvoeringen vermeld. Nadat de workflow is voltooid, kunt u de nieuwe uitvoeringen weergeven in Experience Manager.
+Controleer de configuratie, upload een TIFF-afbeelding en controleer het bestand error.log. Je zult berichten met `INFO` aanhalingstekens van `SwitchEngineHandlingProcess execute: executing command line`. In de logboeken worden de gegenereerde uitvoeringen vermeld. Nadat de workflow is voltooid, kunt u de nieuwe uitvoeringen weergeven in [!DNL Experience Manager].
 
 >[!MORELIKETHIS]
 >

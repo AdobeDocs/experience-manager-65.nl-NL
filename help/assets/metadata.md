@@ -1,11 +1,11 @@
 ---
 title: Metagegevens van uw digitale middelen beheren in [!DNL Adobe Experience Manager].
-description: Leer meer over de typen metagegevens en hoe u met [!DNL Adobe Experience Manager Assets] metagegevens voor elementen kunt beheren, zodat elementen gemakkelijker kunnen worden gecategoriseerd en ingedeeld. [!DNL Experience Manager] maakt het mogelijk elementen automatisch te ordenen en te verwerken op basis van hun metagegevens.
+description: Leer meer over de typen metagegevens en [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] hoe u elementen automatisch kunt ordenen en verwerken op basis van hun metagegevens.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '1437'
+source-wordcount: '1412'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Typically, the applications that create digital assets add some metadata to the 
 
 ## Modify metadata in bulk {#modify-metadata-in-bulk}
 
-Adobe Enterprise Manager Assets lets you edit the metadata of multiple assets simultaneously so you can quickly propagate common metadata changes to assets in bulk. You can also edit the metadata for multiple collections in bulk.
+[!DNL Adobe Enterprise Manager Assets] lets you edit the metadata of multiple assets simultaneously so you can quickly propagate common metadata changes to assets in bulk. You can also edit the metadata for multiple collections in bulk.
 
 Use the properties page to perform metadata changes on multiple assets or collections:
 
@@ -48,7 +48,7 @@ To customize the metadata properties page, including adding, modifying, deleting
 >
 >The bulk editing methods work for assets available in a folder or a collection. For the assets that are available across folders or match a common criteria, it is possible to [bulk update the metadata after searching](search-assets.md#metadataupdates).
 
-1. In the Assets user interface, navigate to the location of the assets you want to edit.
+1. In the [!DNL Assets] user interface, navigate to the location of the assets you want to edit.
 1. Select the assets for which you want to edit common properties.
 1. From the toolbar, click **[!UICONTROL Properties]** to open the properties page for the selected assets.
 
@@ -121,7 +121,7 @@ De twee basistypen metagegevens zijn technische metagegevens en beschrijvende me
 Technische metagegevens zijn handig voor softwaretoepassingen die werken met digitale elementen en mogen niet handmatig worden onderhouden. [!DNL Experience Manager Assets] en andere software bepalen automatisch de technische metagegevens en de metagegevens kunnen veranderen wanneer het element wordt gewijzigd. De beschikbare technische metagegevens van een element zijn grotendeels afhankelijk van het bestandstype van het element. Voorbeelden van technische metagegevens zijn:
 
 * Grootte van een bestand.
-* Afmetingen (hoogte en breedte) van een afbeelding.
+* Dimension (hoogte en breedte) van een afbeelding.
 * Bitsnelheid van een audio- of videobestand.
 * Resolutie (detailniveau) van een afbeelding.
 
@@ -140,7 +140,7 @@ Er zijn verschillende manieren om metagegevens in bestanden in te sluiten. Een s
 
 ### XMP {#xmp}
 
-[!DNL Extensible Metadata Platform] (XMP) is een open standaard die door [!DNL Experience Manager Assets] voor al meta-gegevensbeheer wordt gebruikt. De standaard biedt universele metagegevenscodering die in alle bestandsindelingen kan worden ingesloten. Adobe en andere bedrijven ondersteunen de XMP-standaard omdat deze een Rich Content Model biedt. Gebruikers van de XMP-standaard en van [!DNL Experience Manager Assets] een krachtig platform waarop u kunt bouwen. For more information, see [XMP](https://www.adobe.com/products/xmp.html).
+[!DNL Extensible Metadata Platform] (XMP) is een open standaard die door [!DNL Experience Manager Assets] voor al meta-gegevensbeheer wordt gebruikt. De standaard biedt universele metagegevenscodering die in alle bestandsindelingen kan worden ingesloten. Adobe en andere bedrijven ondersteunen XMP standaard omdat deze een Rich Content-model biedt. Gebruikers van XMP standaard en van [!DNL Experience Manager Assets] een krachtig platform om op te bouwen. For more information, see [XMP](https://www.adobe.com/products/xmp.html).
 
 ### ID3 {#id}
 
@@ -160,7 +160,7 @@ Exchangeable image file format (Exif) is de meest gebruikte metagegevensindeling
 
 Een belangrijke beperking van Exif is dat een aantal populaire indelingen voor afbeeldingsbestanden, zoals BMP, GIF of PNG, dit niet ondersteunen.
 
-Metagegevensvelden die door EXIF worden gedefinieerd, zijn doorgaans technisch van aard en worden slechts in beperkte mate gebruikt voor beschrijvend metagegevensbeheer. Daarom [!DNL Experience Manager Assets] biedt u de toewijzing van EXIF-eigenschappen in [algemene metagegevensschema](metadata-schemas.md) en in [XMP](xmp-writeback.md).
+Metagegevensvelden die door EXIF worden gedefinieerd, zijn doorgaans technisch van aard en worden slechts in beperkte mate gebruikt voor beschrijvend metagegevensbeheer. Om deze reden, [!DNL Experience Manager Assets] biedt afbeelding van eigenschappen Exif in [gemeenschappelijke meta-gegevensschema](metadata-schemas.md) en in [XMP](xmp-writeback.md)aan.
 
 ### Overige metagegevens {#other-metadata}
 
@@ -199,7 +199,7 @@ De toepassingsspecifieke metagegevens bevatten technische en beschrijvende metag
 * PDF en PDF/X.
 * Photoshop en psAux - [!DNL Adobe Photoshop].
 
-### Metagegevens van Digital Rights Management {#digital-rights-management-metadata}
+### Metagegevens Digital Rights Management {#digital-rights-management-metadata}
 
 * CC - [!DNL Creative Commons].
 * [!DNL XMPRights].
@@ -207,7 +207,7 @@ De toepassingsspecifieke metagegevens bevatten technische en beschrijvende metag
 * PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.idealliance.org/prism-metadata).
 * PRL - PRISM Rights Language.
 * PUR - PRISM-gebruiksrechten.
-* `xmpPlus` - Integratie van PLUS met XMP.
+* `xmpPlus` - integratie van PLUS met XMP.
 
 ### Specifieke metagegevens voor fotografie {#photography-specific-metadata}
 
@@ -221,7 +221,7 @@ De toepassingsspecifieke metagegevens bevatten technische en beschrijvende metag
 * PDF en PDF/X - Adobe PDF en toepassingen van derden.
 * PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.prismstandard.org).
 * XMP - [!DNL Extensible Metadata Platform].
-* `xmpPG` - XMP-metagegevens voor gepagineerde tekst.
+* `xmpPG` - XMP metagegevens voor gepagineerde tekst.
 
 ### Multimediaspecifieke metagegevens {#multimedia-specific-metadata}
 

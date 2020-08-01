@@ -3,9 +3,9 @@ title: Map-assets en verzamelingen reviewen
 description: Stel revisieworkflows in voor elementen in een map of verzameling en deel deze met revisoren of creatieve partners om feedback te zoeken.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '736'
 ht-degree: 5%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 5%
 
 Stel revisieworkflows in voor elementen in een map of verzameling en deel deze met revisoren of creatieve partners om feedback te zoeken.
 
-Met Adobe Experience Manager Assets kunt u een ad-hocrevisiewerkstroom instellen voor elementen in een map of verzameling en deze delen met revisoren of creatieve partners om feedback te zoeken.
+[!DNL Adobe Experience Manager Assets] Hiermee kunt u een workflow voor ad-hocrevisies instellen voor elementen in een map of verzameling en deze delen met revisoren of creatieve partners om feedback te zoeken.
 
 U kunt de revisiewerkstroom aan een project koppelen of een onafhankelijke revisietaak maken.
 
@@ -25,7 +25,7 @@ Nadat de controleur de controle heeft voltooid (activa goedkeurt of verwerpt), o
 
 ## Een revisietaak voor mappen maken {#creating-a-review-task-for-folders}
 
-1. Selecteer in de gebruikersinterface Middelen de map waarvoor u een revisietaak wilt maken.
+1. Selecteer in de [!DNL Assets] gebruikersinterface de map waarvoor u een revisietaak wilt maken.
 1. Klik op de werkbalk op Revisietaak **[!UICONTROL Create Review Task]** maken ![om de](assets/do-not-localize/create-review-task.png) **[!UICONTROL Review Task]** pagina te openen. If you cannot see the option in the toolbar, click **[!UICONTROL More]** and then select the option.
 
 1. (Optioneel) Selecteer in de **[!UICONTROL Project]** lijst het project waaraan u de revisietaak wilt koppelen. Standaard is de **[!UICONTROL None]** optie geselecteerd. Als u geen project aan de overzichtstaak wilt associëren, behoud deze selectie.
@@ -49,7 +49,7 @@ Nadat de controleur de controle heeft voltooid (activa goedkeurt of verwerpt), o
    ![review_name](assets/review_name.png)
 
 1. Click **[!UICONTROL Submit]**, and then click **[!UICONTROL Done]** to close the confirmation message. Er wordt een bericht voor de nieuwe taak naar de goedkeurder verzonden.
-1. Meld u aan bij Middelen als fiatteur en navigeer naar de interface Middelen. Als u elementen wilt goedkeuren, klikt u op de revisietaak **[!UICONTROL Notifications]** en selecteert u deze in de lijst.
+1. Meld u aan [!DNL Assets] als fiatteur en navigeer naar de [!DNL Assets] gebruikersinterface. Als u elementen wilt goedkeuren, klikt u op de revisietaak **[!UICONTROL Notifications]** en selecteert u deze in de lijst.
 
    ![Melding van activa](assets/aemAssetsNotification.png)
 
@@ -59,7 +59,7 @@ Nadat de controleur de controle heeft voltooid (activa goedkeurt of verwerpt), o
    ![review_task](assets/review_task.png)
 
 1. Klik op **[!UICONTROL Complete]** op de werkbalk. Voer in het dialoogvenster een opmerking in en klik **[!UICONTROL Complete]** om te bevestigen.
-1. Navigeer naar de gebruikersinterface Elementen en open de map. De pictogrammen voor de goedkeuringsstatus van de elementen worden weergegeven in de kaartweergave en de lijstweergave.
+1. Navigeer naar de [!DNL Assets] gebruikersinterface en open de map. De pictogrammen voor de goedkeuringsstatus van de elementen worden weergegeven in de kaartweergave en de lijstweergave.
 
    **Kaartweergave**
 
@@ -91,7 +91,7 @@ Nadat de controleur de controle heeft voltooid (activa goedkeurt of verwerpt), o
    ![task_details-collection](assets/task_details-collection.png)
 
 1. Click **[!UICONTROL Submit]**, and then click **[!UICONTROL Done]** to close the confirmation message. Er wordt een bericht voor de nieuwe taak naar de goedkeurder verzonden.
-1. Meld u aan bij Middelen als fiatteur en navigeer naar de middelenconsole. Als u elementen wilt goedkeuren, klikt u op de revisietaak **[!UICONTROL Notifications]** en selecteert u deze in de lijst.
+1. Meld u aan [!DNL Assets] als fiatteur en navigeer naar de [!DNL Assets] console. Als u elementen wilt goedkeuren, klikt u op de revisietaak **[!UICONTROL Notifications]** en selecteert u deze in de lijst.
 1. In the **[!UICONTROL Review Task]** page, examine the details of the review task, and then click **[!UICONTROL Review]**.
 1. Alle elementen in de verzameling zijn zichtbaar op de overzichtspagina. Selecteer de elementen en klik **[!UICONTROL Approve/Reject]** om de elementen goed te keuren of af te wijzen.
 

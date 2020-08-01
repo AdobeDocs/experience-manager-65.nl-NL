@@ -3,9 +3,9 @@ title: Vertaalprojecten maken
 description: Leer hoe u vertaalprojecten kunt maken in [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 34b98636966264b15b16fffc9e712b925303a701
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '1768'
+source-wordcount: '1762'
 ht-degree: 10%
 
 ---
@@ -66,7 +66,7 @@ Use the **[!UICONTROL Create structure only]** option to create a target folder 
 
 Als u deze optie gebruikt, worden de te vertalen middelen gekopieerd aan de taalwortel van de taal waaraan u wilt vertalen. Afhankelijk van de opties u kiest, wordt een vertaalproject gecreeerd voor de activa in de console van Projecten. Afhankelijk van de instellingen kan het vertaalproject handmatig worden gestart of automatisch worden uitgevoerd zodra het vertaalproject is gemaakt.
 
-1. Selecteer in de interface Elementen de bronmap waarvoor u een taalkopie wilt maken.
+1. Selecteer in de [!DNL Assets] gebruikersinterface de bronmap waarvoor u een taalkopie wilt maken.
 1. Open the **[!UICONTROL References]** pane and click **[!UICONTROL Language Copies]** under **[!UICONTROL Copies]**.
 
    ![chlimage_1-63](assets/chlimage_1-63.png)
@@ -85,7 +85,7 @@ Als u deze optie gebruikt, worden de te vertalen middelen gekopieerd aan de taal
 
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
-1. Klik op **[!UICONTROL Create]**. Middelen uit de bronmap worden gekopieerd naar de doelmappen voor de landinstellingen die u in stap 4 hebt geselecteerd.
+1. Klik op **[!UICONTROL Create]**. [!DNL Assets] in de bronmap worden gekopieerd naar de doelmappen voor de landinstellingen die u in stap 4 hebt geselecteerd.
 
    ![taalkopieën](assets/lang-copy2.png)
 
@@ -95,7 +95,7 @@ Als u deze optie gebruikt, worden de te vertalen middelen gekopieerd aan de taal
 
 1. Navigeer aan de console van Projecten. De vertaalomslag wordt gekopieerd aan de console van Projecten.
 
-   ![chlimage_1-78](assets/chlimage_1-70.png)
+   ![chlimage_1-70](assets/chlimage_1-70.png)
 
 1. Open de map om het vertaalproject weer te geven.
 
@@ -111,12 +111,11 @@ Als u deze optie gebruikt, worden de te vertalen middelen gekopieerd aan de taal
 
    Zie [De status van een vertaaltaak](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job)controleren voor meer informatie over de taakstatus.
 
-1. Navigeer naar de interface Middelen en open de pagina Eigenschappen voor elk van de vertaalde elementen om de vertaalde metagegevens weer te geven.
+1. Navigeer naar de [!DNL Assets] UI en open de pagina Eigenschappen voor elk van de vertaalde elementen om de vertaalde meta-gegevens te bekijken.
 
    ![de vertaalde metagegevens weergeven op de pagina met eigenschappen van elementen](assets/translated-metadata-asset-properties.png)
 
    *Afbeelding: Vertaalde metagegevens op de pagina met eigenschappen van elementen.*
-
 
    >[!NOTE]
    >
@@ -126,7 +125,7 @@ Als u deze optie gebruikt, worden de te vertalen middelen gekopieerd aan de taal
 
 Als u deze optie gebruikt, wordt de vertaalworkflow uitgevoerd voor elementen die u na een vorige vertaalworkflow aan de bronmap toevoegt. Alleen de nieuw toegevoegde elementen worden gekopieerd naar de doelmap die eerder vertaalde elementen bevat. In dit geval wordt geen nieuw vertaalproject opgezet.
 
-1. Navigeer in de interface Elementen naar de bronmap die niet-vertaalde elementen bevat.
+1. Navigeer in de [!DNL Assets] gebruikersinterface naar de bronmap met niet-vertaalde elementen.
 1. Selecteer een asset die u wilt vertalen en open het **[!UICONTROL Reference pane]**. In de sectie **[!UICONTROL Language Copies]** wordt het aantal momenteel beschikbare vertaalkopieën weergegeven.
 1. Klik **[!UICONTROL Language Copies]** onder **[!UICONTROL Copies]**. Er wordt een lijst met beschikbare vertaalkopieën weergegeven.
 1. Klik **[!UICONTROL Create & Translate]** onderaan.
@@ -184,7 +183,7 @@ Als u deze optie gebruikt, wordt de vertaalworkflow uitgevoerd voor elementen di
 
    Zie [De status van een vertaaltaak](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job)controleren voor meer informatie.
 
-1. Nadat de vertaling is voltooid, verandert de status in Ready to Review. Navigeer naar de interface Middelen en open de pagina Eigenschappen voor elk van de vertaalde elementen om de vertaalde metagegevens weer te geven.
+1. Nadat de vertaling is voltooid, verandert de status in Ready to Review. Navigeer naar de [!DNL Assets] UI en open de pagina Eigenschappen voor elk van de vertaalde elementen om de vertaalde meta-gegevens te bekijken.
 
 ## Taalkopieën bijwerken {#update-language-copies}
 
@@ -197,7 +196,7 @@ Voer deze workflow uit om extra elementen te vertalen en deze op te nemen in een
 
 Als u deze optie gebruikt, wordt een vertaalproject gecreeerd voor de reeks activa waarvoor u een taalexemplaar wilt bijwerken.
 
-1. Selecteer in de interface Middelen de bronmap waarin u een element hebt toegevoegd.
+1. Selecteer in de [!DNL Assets] gebruikersinterface de bronmap waaraan u een element hebt toegevoegd.
 1. Open the **[!UICONTROL References]** pane, and click **[!UICONTROL Language Copies]** under **[!UICONTROL Copies]** to display the list of language copies.
 1. Schakel het selectievakje voor **[!UICONTROL Language Copies]** in en selecteer vervolgens de doelmap die overeenkomt met de juiste landinstelling.
 
@@ -240,13 +239,13 @@ Als u deze optie gebruikt, wordt een vertaalproject gecreeerd voor de reeks acti
 
    Zie [De status van een vertaaltaak](../sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job)controleren voor meer informatie over de taakstatus.
 
-1. Navigeer naar de interface Middelen en open de pagina Eigenschappen voor elk van de vertaalde elementen om de vertaalde metagegevens weer te geven.
+1. Navigeer naar de gebruikersinterface en open de pagina Eigenschappen voor elk van de vertaalde elementen om de vertaalde metagegevens weer te geven. [!DNL Assets]
 
 ### Toevoegen aan bestaand vertaalproject {#add-to-existing-translation-project-1}
 
 Als u deze optie gebruikt, worden de elementen toegevoegd aan een bestaand vertaalproject en wordt de taalkopie bijgewerkt voor de landinstelling die u kiest.
 
-1. Selecteer in de interface Middelen de bronmap waaraan u een elementmap hebt toegevoegd.
+1. Selecteer in de [!DNL Assets] gebruikersinterface de bronmap waaraan u een elementmap hebt toegevoegd.
 1. Open the **[!UICONTROL References pane]**, and click **[!UICONTROL Language Copies]** under **[!UICONTROL Copies]** to display the list of language copies.
 
    ![chlimage_1-94](assets/chlimage_1-94.png)

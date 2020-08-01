@@ -3,9 +3,9 @@ title: Voeg een watermerk toe aan uw digitale elementen.
 description: Leer hoe u met de functie Watermerken een digitaal watermerk aan elementen kunt toevoegen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5035d3457187f4d5fe5c2af255a1a886df7291b4
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '226'
 ht-degree: 0%
 
 ---
@@ -39,4 +39,4 @@ Als u een watermerk op elementen wilt toepassen, voegt u de stap Watermerken toe
 1. Save the **[!UICONTROL DAM Update Asset]** workflow with the watermark step.
 1. Upload vanuit de [!DNL Assets] gebruikersinterface een voorbeeldelement. Het watermerk wordt weergegeven met de tekengrootte, de kleur enzovoort, op de positie die u in de bovenstaande stappen hebt geconfigureerd.
 
-Als u PDF-documenten programmatisch of met dynamische informatie wilt voorzien van een watermerk, kunt u het [aanbod van AEM Document Services](/help/forms/using/overview-aem-document-services.md) gebruiken.
+Als u PDF-documenten programmatisch of met dynamische informatie wilt voorzien van een watermerk, kunt u het [Experience Manager Document Services](/help/forms/using/overview-aem-document-services.md) -aanbod gebruiken.

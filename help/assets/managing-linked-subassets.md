@@ -1,11 +1,11 @@
 ---
-title: Samengestelde elementen beheren met verwijzingen en elementen van meerdere pagina's in [!DNL-Adobe Experience Manager].
-description: Leer hoe u verwijzingen naar digitale middelen maakt vanuit [!DNL Adobe InDesign], [!DNL Adobe Illustrator] en [!DNL Adobe Photoshop]. Met de functie Paginaviewer kunt u afzonderlijke subelementpagina's van bestanden met meerdere pagina's weergeven, zoals PDF-, INDD-, PPT-, PPTX- en AI-bestanden.
+title: Samengestelde elementen beheren met verwijzingen en elementen van meerdere pagina's in [!DNL Adobe Experience Manager].
+description: Leer hoe u verwijzingen naar digitale elementen maakt vanuit [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop]de toepassing zelf. Met de functie Paginaviewer kunt u afzonderlijke subelementpagina's van bestanden met meerdere pagina's weergeven, zoals PDF-, INDD-, PPT-, PPTX- en AI-bestanden.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '1315'
+source-wordcount: '1299'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Verwijzingen worden opgelost op basis van pad, document-id en instantie-id van d
 
 U kunt vanuit een [!DNL Adobe Illustrator] bestand verwijzen naar bestaande digitale elementen.
 
-1. Haal de digitale middelen met de [Experience Manager-bureaubladtoepassing](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)op in het lokale bestandssysteem. Navigeer naar de bestandssysteemlocatie van het element waarnaar u wilt verwijzen.
+1. Haal de digitale middelen op het lokale bestandssysteem op met de [Experience Manager-bureaubladtoepassing](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html). Navigeer naar de bestandssysteemlocatie van het element waarnaar u wilt verwijzen.
 1. Sleep het element van de lokale map naar het [!DNL Illustrator] bestand.
 
 1. Sla het [!DNL Illustrator] bestand op het gekoppelde station op of [upload](/help/assets/managing-assets-touch-ui.md#uploading-assets) het bestand naar de [!DNL Experience Manager] opslagplaats.
@@ -40,7 +40,7 @@ U kunt vanuit een [!DNL Adobe Illustrator] bestand verwijzen naar bestaande digi
 
 1. Klik op **[!UICONTROL View Properties]** op de werkbalk. Op de [!UICONTROL Properties] pagina wordt de lijst met bestanden die naar het huidige element verwijzen, weergegeven onder de **[!UICONTROL References]** kolom op het **[!UICONTROL Basic]** tabblad.
 
-   ![de verwijzingen naar Experience Manager-middelen in de kolom Referenties weergeven in de elementdetails](assets/asset-references.png)
+   ![de verwijzingen van de Middelen van de Experience Manager in de kolom van Verwijzingen in activadetails bekijken](assets/asset-references.png)
 
    *Afbeelding: Verwijzingen naar elementen in de elementen.*
 
@@ -48,11 +48,11 @@ U kunt vanuit een [!DNL Adobe Illustrator] bestand verwijzen naar bestaande digi
 
 Als u vanuit een [!DNL InDesign] bestand naar digitale elementen wilt verwijzen, sleept u elementen naar het [!DNL InDesign] bestand of exporteert u het [!DNL InDesign] bestand als een ZIP-archief.
 
-Er bestaan al middelen waarnaar wordt verwezen in [!DNL Experience Manager Assets]. U kunt subelementen extraheren door InDesign Server [te](indesign.md)configureren. Ingesloten elementen in een [!DNL InDesign] bestand worden geëxtraheerd als subelementen.
+Er bestaan al middelen waarnaar wordt verwezen in [!DNL Experience Manager Assets]. U kunt subassets extraheren door InDesign Server [te configureren](indesign.md). Ingesloten elementen in een [!DNL InDesign] bestand worden geëxtraheerd als subelementen.
 
 >[!NOTE]
 >
->Als de voorvertoning [!DNL InDesign Server] is proxy, wordt de voorvertoning van [!DNL InDesign] bestanden ingesloten in de XMP-metagegevens. In dit geval is het niet expliciet vereist miniatuurextractie uit te voeren. Als de proxy echter niet [!DNL InDesign Server] is proxy, moeten miniaturen expliciet worden uitgepakt voor [!DNL InDesign] bestanden.
+>Als de voorvertoning [!DNL InDesign Server] is proxy, wordt de voorvertoning van [!DNL InDesign] bestanden ingesloten in de XMP metagegevens. In dit geval is het niet expliciet vereist miniatuurextractie uit te voeren. Als de proxy echter niet [!DNL InDesign Server] is proxy, moeten miniaturen expliciet worden uitgepakt voor [!DNL InDesign] bestanden.
 
 ### Verwijzingen maken door elementen te slepen {#create-references-by-dragging-aem-assets}
 
@@ -101,21 +101,21 @@ Voer een van de volgende handelingen uit om de subelementen te genereren:
    * Selecteer een element en klik [!UICONTROL Timeline] om het linkerdeelvenster te openen. U kunt ook de sneltoets gebruiken `alt + 3`. Klik [!UICONTROL Start Workflow], selecteer [!UICONTROL DAM Update Asset], klik [!UICONTROL Start], en klik [!UICONTROL Proceed].
    * Selecteer een element en klik op [!UICONTROL Create] > [!UICONTROL Workflow] op de werkbalk. Selecteer in het pop-updialoogvenster de [!UICONTROL DAM Update Asset] workflow, klik [!UICONTROL Start]en klik op [!UICONTROL Proceed].
 
-Met name voor Microsoft Word-documenten voert u de **[!UICONTROL DAM Parse Word Documents]** workflow uit. Er wordt een `cq:Page` component gegenereerd op basis van de inhoud van het Microsoft Word-document. De afbeeldingen die uit het document zijn geëxtraheerd, worden vanuit de `cq:Page` component gebruikt. Deze afbeeldingen worden geëxtraheerd, zelfs als het genereren van subelementen is uitgeschakeld.
+Met name voor Microsoft Word-documenten voert u de **[!UICONTROL DAM Parse Word Documents]** workflow uit. Er wordt een `cq:Page` component gegenereerd op basis van de inhoud van het Microsoft Word-document. De afbeeldingen die uit het document zijn geëxtraheerd, worden vanuit de `cq:Page` component gebruikt. These images are extracted even if subasset generation is disabled.
 
-## Subelementen weergeven {#viewing-subassets}
+## View subassets {#viewing-subassets}
 
-De subelementen worden alleen weergegeven als de subelementen zijn gegenereerd en beschikbaar zijn voor het geselecteerde element met meerdere pagina&#39;s. Open het element met meerdere pagina&#39;s om de gegenereerde subelementen weer te geven. Klik in de linkerbovenhoek van de pagina op ![Option om de linkertrack](assets/do-not-localize/aem_leftrail_contentonly.png) te openen en klik in de lijst **[!UICONTROL Subassets]** . Wanneer u een keuze maakt in de **[!UICONTROL Subassets]** lijst. U kunt ook de sneltoets gebruiken `alt + 5`.
+The subassets are displayed only if the subassets are generated and are available for the selected multi-page asset. To view the generated subassets, open the multi-page asset. In the upper-left area of the page, click ![Option to open left rail](assets/do-not-localize/aem_leftrail_contentonly.png) and click **[!UICONTROL Subassets]** from the list. When you select **[!UICONTROL Subassets]** from the list. U kunt ook de sneltoets gebruiken `alt + 5`.
 
-![Subelementen weergeven voor elementen die uit meerdere pagina&#39;s bestaan](assets/view_subassets_simulation.gif)
+![View subassets for a multi-page asset](assets/view_subassets_simulation.gif)
 
-## Pagina&#39;s van een bestand met meerdere pagina&#39;s weergeven {#view-pages-of-a-multi-page-file}
+## View pages of a multi-page file {#view-pages-of-a-multi-page-file}
 
 U kunt een bestand met meerdere pagina&#39;s, zoals PDF, INDD, PPT, PPTX en AI, weergeven met de functie Paginaviewer van [!DNL Experience Manager Assets]. Open een element met meerdere pagina&#39;s en klik in de linkerbovenhoek van de pagina. **[!UICONTROL View Pages]** In de Paginaviewer die wordt geopend, worden de pagina&#39;s van het element en de besturingselementen weergegeven waarmee u door elke pagina kunt bladeren en erop kunt inzoomen.
 
 ![Pagina&#39;s van elementen met meerdere pagina&#39;s weergeven en bekijken](assets/view_multipage_asset_fmr.gif)
 
-U kunt bijvoorbeeld pagina&#39;s uitnemen met [!DNL InDesign]behulp van [!DNL InDesign Server]. Als de voorvertoningen van pagina&#39;s worden opgeslagen tijdens het maken van het [!DNL InDesign] bestand, is [!DNL InDesign Server] dit niet vereist voor het uitnemen van pagina&#39;s.
+For [!DNL InDesign], you can extract pages using [!DNL InDesign Server]. Als de voorvertoningen van pagina&#39;s worden opgeslagen tijdens het maken van het [!DNL InDesign] bestand, is [!DNL InDesign Server] dit niet vereist voor het uitnemen van pagina&#39;s.
 
 De volgende opties zijn beschikbaar in de werkbalk, in de linkerrails en in de besturingselementen voor de Paginaviewer:
 
@@ -131,12 +131,12 @@ De volgende opties zijn beschikbaar in de werkbalk, in de linkerrails en in de b
 
 ## Beste werkwijzen en beperking {#best-practice-limitation-tips}
 
-* Bij elke Experience Manager-implementatie kan het genereren van submiddelen zeer veel resources kosten. Als u subassets genereert wanneer complexe elementen worden geüpload, voegt u de stap toe in de DAM-workflow voor het bijwerken van middelen. Als u op verzoek subassets genereert, maakt u een aparte workflow om subassets te genereren. Met een speciale workflow kunt u de andere stappen in de workflow voor DAM-update-elementen overslaan en computerbronnen opslaan.
+* Bij elke [!DNL Experience Manager] implementatie kan het genereren van submiddelen zeer veel resources vergen. Als u subassets genereert wanneer complexe elementen worden geüpload, voegt u de stap toe in de DAM-workflow voor het bijwerken van middelen. If you are generating subassets on-demand then create a separate workflow to generate subassets. Met een speciale workflow kunt u de andere stappen in de workflow voor DAM-update-elementen overslaan en computerbronnen opslaan.
 
 >[!MORELIKETHIS]
 >
 >* [Adobe Experience Manager-bureaubladtoepassing gebruiken](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)
->* [Bureaubladhandelingen configureren in Adobe Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2)
+>* [Configure Desktop Actions in Adobe Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2)
 >* [Gekoppelde slimme objecten maken in Adobe Photoshop](https://helpx.adobe.com/photoshop/using/create-smart-objects.html#create-linked-smart-objects)
 >* [Afbeeldingen plaatsen in Adobe InDesign](https://helpx.adobe.com/indesign/using/placing-graphics.html)
 

@@ -3,9 +3,9 @@ title: Metadataschema van map
 description: Leer hoe u een metagegevensschema maakt voor de mappen met elementen in Adobe Experience Manager Assets
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '939'
 ht-degree: 4%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 4%
 
 # Metadataschema van map {#folder-metadata-schema}
 
-Met Adobe Experience Manager Assets kunt u metagegevensschema&#39;s maken voor elementmappen, waarmee de lay-out en metagegevens worden gedefinieerd die op pagina&#39;s met mapeigenschappen worden weergegeven.
+[!DNL Adobe Experience Manager Assets] Hiermee kunt u metagegevensschema&#39;s maken voor middelenmappen, waarmee de lay-out en de metagegevens worden gedefinieerd die op pagina&#39;s met mapeigenschappen worden weergegeven.
 
 ## Een schema voor metagegevens van een map toevoegen {#add-a-folder-metadata-schema-form}
 
-Met de editor voor Mapmetagegevensschemaformulieren kunt u metagegevensschema&#39;s voor mappen maken en bewerken.
+Met de Forms-editor voor het schema Metagegevens van map kunt u metagegevensschema&#39;s voor mappen maken en bewerken.
 
-1. Ga in Experience Manager interface naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Folder Metadata Schemas]**.
+1. In [!DNL Experience Manager] interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Folder Metadata Schemas]**.
 1. Ga naar de pagina [!UICONTROL Folder Metadata Schema Forms] en klik op **[!UICONTROL Create]**.
 1. Geef een naam op voor het formulier en klik op **[!UICONTROL Create]**. Het nieuwe schema-formulier wordt weergegeven op de [!UICONTROL Schema Forms] pagina.
 
@@ -32,7 +32,7 @@ U kunt een nieuw toegevoegd of bestaand schema voor metagegevens bewerken, dat h
 
 U kunt deze formulieritems toewijzen/configureren aan een veld binnen een metagegevensknooppunt in de CRX-opslagruimte. U kunt nieuwe tabbladen of formulieritems toevoegen aan het metagegevensschemaformulier.
 
-1. Selecteer op de pagina Schema-formulieren het formulier dat u hebt gemaakt en selecteer de **[!UICONTROL Edit]** optie in de werkbalk.
+1. Selecteer op de pagina Schema Forms het formulier dat u hebt gemaakt en selecteer vervolgens de **[!UICONTROL Edit]** optie in de werkbalk.
 1. Klik op de pagina van de Editor van het metagegevensschema van de map `+` om een tabblad aan het formulier toe te voegen. Als u de naam van het tabblad wilt wijzigen, klikt u op de standaardnaam en geeft u de nieuwe naam op onder **[!UICONTROL Settings]**.
 
    ![custom_tab](assets/custom_tab.png)
@@ -80,7 +80,7 @@ Hier volgen de geldige waarden voor deze eigenschap:
 
 * `./jcr:content/metadata/dc:title`: Hiermee wordt de waarde in het metagegevensknooppunt van de map opgeslagen als de eigenschap `dc:title`.
 
-* `./jcr:created`: Geeft de JCR-eigenschap op het knooppunt van de map weer. Als u deze eigenschappen configureert in CRXDE, raadt Adobe u aan ze te markeren als Uitschakelen, omdat ze zijn beveiligd. Anders treedt de fout &#39; `Asset(s) failed to modify`&#39; op wanneer u de eigenschappen van het element opslaat.
+* `./jcr:created`: Geeft de JCR-eigenschap op het knooppunt van de map weer. Als u deze eigenschappen in CRXDE vormt, adviseert Adobe dat u hen als onbruikbaar maakt uitgeeft markeert, omdat zij beschermd zijn. Anders treedt de fout &#39; `Asset(s) failed to modify`&#39; op wanneer u de eigenschappen van het element opslaat.
 
 Neem geen spatie op in het eigenschapspad om ervoor te zorgen dat de component correct wordt weergegeven in het schema voor metagegevens.
 
@@ -96,20 +96,20 @@ Neem geen spatie op in het eigenschapspad om ervoor te zorgen dat de component c
 
 ## Formulieren met metagegevens van mappen verwijderen {#delete-folder-metadata-schema-forms}
 
-U kunt de schemaformulieren van de omslagmeta-gegevens van de pagina van de Vormen van het Schema van Meta-gegevens schrappen. Als u een formulier wilt verwijderen, selecteert u het formulier en klikt u op de werkbalk op de optie Verwijderen.
+U kunt de schemaformulieren van de omslagmeta-gegevens van het Schema Forms van de Meta-gegevens van de Omslag schrappen pagina. Als u een formulier wilt verwijderen, selecteert u het formulier en klikt u op de werkbalk op de optie Verwijderen.
 
 ![delete_form](assets/delete_form.png)
 
 ## Een schema voor metagegevens van mappen toewijzen {#assign-a-folder-metadata-schema}
 
-U kunt een schema van omslagmeta-gegevens aan een omslag of van de pagina van de Vormen van het Schema van Meta-gegevens van de Omslag toewijzen of wanneer het creëren van een omslag.
+U kunt een schema van omslagmeta-gegevens aan een omslag of van de pagina van Forms van het Schema van Meta-gegevens van de Omslag toewijzen of wanneer het creëren van een omslag.
 
 Als u een metagegevensschema voor een map configureert, wordt het pad naar het schema opgeslagen in de `folderMetadataSchema` eigenschap van het mapknooppunt onder.*/jcr:content*.
 
 ### Wijs aan een schema van de pagina van het Schema van Meta-gegevens van de Omslag toe {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
-1. Ga in Experience Manager interface naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Folder Metadata Schemas]**.
-1. Selecteer op de pagina Formulieren schema met metagegevens van map het schema dat u op een map wilt toepassen.
+1. In [!DNL Experience Manager] interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Folder Metadata Schemas]**.
+1. Selecteer op de pagina Forms van het schema Metagegevens map het schema dat u op een map wilt toepassen.
 1. Klik **[!UICONTROL Apply to Folder(s)]** op de werkbalk.
 
 1. Selecteer de map waarop u het schema wilt toepassen en klik op **[!UICONTROL Apply]**. Als er al een metagegevensschema op de map is toegepast, verschijnt er een waarschuwingsbericht dat u het bestaande metagegevensschema wilt overschrijven. Klik op **[!UICONTROL Overwrite]**.

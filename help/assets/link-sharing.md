@@ -1,11 +1,11 @@
 ---
 title: Een URL naar gedeelde elementen genereren
-description: In dit artikel wordt beschreven hoe u elementen, mappen en verzamelingen in Experience Manager Assets als een URL naar externe partijen kunt delen.
+description: In dit artikel wordt beschreven hoe u elementen, mappen en verzamelingen [!DNL Experience Manager Assets] binnen een URL kunt delen met externe partijen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '1137'
+source-wordcount: '1104'
 ht-degree: 4%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 4%
 
 # Middelen delen via een koppeling {#asset-link-sharing}
 
-Met Adobe Experience Manager Assets kunt u elementen, mappen en verzamelingen als een URL delen met leden van uw organisatie en externe entiteiten, waaronder partners en leveranciers. Het delen van elementen via een koppeling is een handige manier om bronnen beschikbaar te maken voor externe partijen zonder dat deze zich eerst hoeven aan te melden bij Middelen.
+[!DNL Adobe Experience Manager Assets] kunt u elementen, mappen en verzamelingen als een URL delen met leden van uw organisatie en externe entiteiten, waaronder partners en leveranciers. Het delen van elementen via een koppeling is een handige manier om bronnen beschikbaar te maken voor externe partijen zonder dat ze zich eerst hoeven aan te melden bij [!DNL Assets].
 
 >[!NOTE]
 >
@@ -27,7 +27,7 @@ Gebruik het dialoogvenster Koppelen om de URL te genereren voor elementen die u 
 >
 >Voordat u een koppeling met gebruikers deelt, moet u ervoor zorgen dat Day CQ Mail Service is geconfigureerd. Er treedt een fout op als u een koppeling probeert te delen zonder eerst de Day CQ Mail Service [te](/help/assets/link-sharing.md#configmailservice)configureren.
 
-1. Selecteer in de gebruikersinterface Elementen het element dat u wilt delen als een koppeling.
+1. Selecteer in de [!DNL Assets] gebruikersinterface het element dat u wilt delen als koppeling.
 1. Klik op het pictogram **[!UICONTROL Share Link]** Elementen ![](assets/do-not-localize/assets_share.png)delen op de werkbalk.
 
    In het **[!UICONTROL Share Link]** veld wordt automatisch een elementkoppeling gemaakt. Kopieer deze koppeling en deel deze met de gebruikers. De standaardvervaltijd voor de verbinding is één dag.
@@ -40,7 +40,7 @@ Gebruik het dialoogvenster Koppelen om de URL te genereren voor elementen die u 
 
    >[!NOTE]
    >
-   >Als u koppelingen van de implementatie van Experience Manager Author naar externe entiteiten wilt delen, dient u ervoor te zorgen dat alleen de volgende URL&#39;s (die worden gebruikt voor het delen van koppelingen) beschikbaar worden gemaakt voor `GET` aanvragen. Andere URL&#39;s blokkeren om de beveiliging van Experience Manager Author te garanderen.
+   >Als u koppelingen van de implementatie van uw [!DNL Experience Manager] auteur naar externe entiteiten wilt delen, moet u ervoor zorgen dat u alleen de volgende URL&#39;s (die worden gebruikt voor het delen van koppelingen) beschikbaar maakt voor `GET` aanvragen. Andere URL&#39;s blokkeren om de beveiliging van [!DNL Experience Manager] Auteur te garanderen.
    >
    >* http://[aem_server]:[poort]/linkshare.html
    >* http://[aem_server]:[poort]/linksharepreview.html
@@ -51,9 +51,9 @@ Gebruik het dialoogvenster Koppelen om de URL te genereren voor elementen die u 
    >
    >Als een gedeeld element naar een andere locatie wordt verplaatst, werkt de koppeling niet meer. Maak de koppeling opnieuw en deel deze opnieuw met de gebruikers.
 
-1. Ga in Experience Manager-interface naar **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
+1. Ga in [!DNL Experience Manager] interface naar **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 
-1. Open de **[!UICONTROL Day CQ Link Externalizer]** configuratie en wijzig de volgende eigenschappen op het **[!UICONTROL Domains]** gebied met de waarden die tegen `local`, `author`, en `publish`worden vermeld. Geef voor de eigenschappen `local` en `author` de URL op voor respectievelijk de lokale instantie en de auteur. Zowel `local` als `author` eigenschappen hebben dezelfde waarde als u één Experience Manager Author-instantie uitvoert. Geef `publish`bijvoorbeeld de URL op voor de publicatie-instantie van Experience Manager.
+1. Open de **[!UICONTROL Day CQ Link Externalizer]** configuratie en wijzig de volgende eigenschappen op het **[!UICONTROL Domains]** gebied met de waarden die tegen `local`, `author`, en `publish`worden vermeld. Geef voor de eigenschappen `local` en `author` de URL op voor respectievelijk de lokale instantie en de auteur. Zowel `local` als `author` eigenschappen hebben dezelfde waarde als u één [!DNL Experience Manager] instantie Auteur uitvoert. Geef `publish`bijvoorbeeld de URL voor de [!DNL Experience Manager] publicatie-instantie op.
 
 1. Typ in het vak E-mailadres van het dialoogvenster **[!UICONTROL Link Sharing]** de e-mail-id van de gebruiker met wie u de koppeling wilt delen. U kunt de koppeling ook delen met meerdere gebruikers.
 
@@ -96,19 +96,19 @@ Gebruik het dialoogvenster Koppelen om de URL te genereren voor elementen die u 
 
    >[!NOTE]
    >
-   >Experience Manager ondersteunt het genereren van een voorvertoning van elementen van deze MIME-typen: JPG, PNG, GIF, BMP, INDD, PDF en PPT. U kunt alleen de elementen van de andere MIME-typen downloaden.
+   >[!DNL Experience Manager] ondersteunt het genereren van een voorvertoning van elementen van deze MIME-typen: JPG, PNG, GIF, BMP, INDD, PDF en PPT. U kunt alleen de elementen van de andere MIME-typen downloaden.
 
 1. Als u het gedeelde element wilt downloaden, klikt u **[!UICONTROL Select]** op de werkbalk, klikt u op het element en vervolgens klikt u **[!UICONTROL Download]** op de werkbalk.
 
    ![chlimage_1-262](assets/chlimage_1-547.png)
 
-1. Als u de elementen die u als koppelingen hebt gedeeld, wilt weergeven, gaat u naar de gebruikersinterface voor elementen en klikt u op het Experience Manager-logo. Kies een optie **[!UICONTROL Navigation]** in de lijst om het navigatievenster weer te geven.
+1. Als u de elementen die u hebt gedeeld als koppelingen wilt weergeven, gaat u naar de [!DNL Assets] gebruikersinterface en klikt u op het [!DNL Experience Manager] logo. Kies een optie **[!UICONTROL Navigation]** in de lijst om het navigatievenster weer te geven.
 1. Kies in het navigatievenster **[!UICONTROL Shared Links]** als u een lijst met gedeelde assets wilt weergeven.
 1. Als u een element niet wilt delen, selecteert u het en klikt u op **[!UICONTROL Unshare]** de werkbalk. Hierna volgt een bevestigingsbericht. De vermelding voor het element wordt uit de lijst verwijderd.
 
 ## CQ-mailservice op dag configureren {#configmailservice}
 
-1. Ga op de startpagina van Experience Manager naar **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
+1. Navigeer op de [!DNL Experience Manager] startpagina naar **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 1. Van de lijst van de diensten, bepaal de plaats **[!UICONTROL Day CQ Mail Service]**.
 1. Click **[!UICONTROL Edit]** beside the service, and configure the following parameters for **[!UICONTROL Day CQ Mail Service]** with the details mentioned against their names:
 
@@ -123,9 +123,9 @@ Gebruik het dialoogvenster Koppelen om de URL te genereren voor elementen die u 
 
 ## Maximale gegevensgrootte configureren {#maxdatasize}
 
-Wanneer u elementen downloadt van de koppeling die wordt gedeeld met de functie voor het delen van koppelingen, comprimeert Experience Manager de hiërarchie van elementen uit de opslagplaats en retourneert het element vervolgens in een ZIP-bestand. Bij gebrek aan beperkingen van de hoeveelheid gegevens die in een ZIP-bestand kan worden gecomprimeerd, worden enorme hoeveelheden gegevens gecomprimeerd, waardoor fouten in het geheugen in JVM worden veroorzaakt. Om het systeem van een potentiële ontkenning van de dienstaanval toe te schrijven aan deze situatie te beveiligen, vorm de maximumgrootte gebruikend de **[!UICONTROL Max Content Size (uncompressed)]** parameter voor [!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet] in de Manager van de Configuratie. Als de niet-gecomprimeerde grootte van het element de geconfigureerde waarde overschrijdt, worden de verzoeken om het downloaden van het element afgewezen. De standaardwaarde is 100 MB.
+Wanneer u elementen downloadt van de koppeling die wordt gedeeld met de functie voor het delen van koppelingen, [!DNL Experience Manager] wordt de hiërarchie van elementen gecomprimeerd vanuit de opslagplaats en wordt het element vervolgens geretourneerd in een ZIP-bestand. Bij gebrek aan beperkingen van de hoeveelheid gegevens die in een ZIP-bestand kan worden gecomprimeerd, worden enorme hoeveelheden gegevens gecomprimeerd, waardoor fouten in het geheugen in JVM worden veroorzaakt. Om het systeem van een potentiële ontkenning van de dienstaanval toe te schrijven aan deze situatie te beveiligen, vorm de maximumgrootte gebruikend de **[!UICONTROL Max Content Size (uncompressed)]** parameter voor [!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet] in de Manager van de Configuratie. Als de niet-gecomprimeerde grootte van het element de geconfigureerde waarde overschrijdt, worden de verzoeken om het downloaden van het element afgewezen. De standaardwaarde is 100 MB.
 
-1. Click the Experience Manager logo and then go to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
+1. Click the [!DNL Experience Manager] logo and then go to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 1. Van de Console van het Web, bepaal de plaats van de **[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]** configuratie.
 1. Open de **[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]** configuratie in geef wijze uit, en wijzig de waarde van de **[!UICONTROL Max Content Size (uncompressed)]** parameter.
 
@@ -136,6 +136,6 @@ Wanneer u elementen downloadt van de koppeling die wordt gedeeld met de functie 
 ## Beste werkwijzen en probleemoplossing {#bestpractices}
 
 * Elementmappen of verzamelingen die een witruimte in hun naam bevatten, worden mogelijk niet gedeeld.
-* Als gebruikers de gedeelde elementen niet kunnen downloaden, vraagt u bij de Experience Manager-beheerder aan welke [downloadlimieten](#maxdatasize) gelden.
-* Als u geen e-mail met koppelingen naar gedeelde elementen kunt verzenden of als de andere gebruikers uw e-mail niet kunnen ontvangen, raadpleegt u uw Experience Manager-beheerder of de [e-mailservice](#configmailservice) is geconfigureerd of niet.
+* Als gebruikers de gedeelde elementen niet kunnen downloaden, moet u bij de [!DNL Experience Manager] beheerder nagaan wat de [downloadlimiet](#maxdatasize) is.
+* Als u geen e-mail met koppelingen naar gedeelde elementen kunt verzenden of als de andere gebruikers uw e-mail niet kunnen ontvangen, raadpleegt u uw [!DNL Experience Manager] beheerder of de [e-mailservice](#configmailservice) is geconfigureerd of niet.
 * Als u geen elementen kunt delen via de functie voor het delen van koppelingen, controleert u of u de juiste machtigingen hebt. Zie [Elementen](#sharelink)delen.

@@ -3,9 +3,9 @@ title: De activa van het proces om bedrijfsprocessen te verwezenlijken, controle
 description: Middelenverwerking voor het converteren van indelingen, het maken van uitvoeringen, het beheren van elementen, het valideren van elementen en het uitvoeren van workflows.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '949'
+source-wordcount: '948'
 ht-degree: 3%
 
 ---
@@ -66,7 +66,7 @@ Voer de volgende stappen uit om een workflow toe te passen op een element:
 
 ## Een workflow toepassen op meerdere elementen {#applying-a-workflow-to-multiple-assets}
 
-1. Navigeer in de middelenconsole naar de locatie van de elementen waarvoor u een workflow wilt starten en selecteer de elementen. Selecteer een optie in het **[!UICONTROL Timeline]** menu om de tijdlijn weer te geven.
+1. Navigeer in de [!DNL Assets] console naar de locatie van de elementen waarvoor u een workflow wilt starten en selecteer de elementen. Selecteer een optie in het **[!UICONTROL Timeline]** menu om de tijdlijn weer te geven.
 
    ![screen_shot_2019-03-06at123325pm](assets/chlimage_1-136.png)
 

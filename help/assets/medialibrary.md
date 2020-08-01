@@ -1,77 +1,77 @@
 ---
-title: Vergelijk Adobe Experience Manager Assets en Media Library-aanbod.
-description: Vergelijk het aanbod van Experience Manager Assets en Media Library en ken de verschillen.
+title: Aanbieding voor [!DNL Adobe Experience Manager Assets] vergelijkingsmateriaal en mediabibliotheek.
+description: De [!DNL Experience Manager Assets] Vergelijking en het aanbod van de Bibliotheek van Media en kennen de verschillen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '594'
 ht-degree: 1%
 
 ---
 
 
-# Experience Manager Assets versus Experience Manager Media Library {#aem-assets-vs-aem-medialibrary}
+# [!DNL Experience Manager Assets] versus [!DNL Experience Manager] Mediabibliotheek {#aem-assets-vs-aem-medialibrary}
 
-Adobe Experience Manager Assets is een integraal onderdeel van het Experience Manager-platform. Deze soepele integratie wordt gezien als een groot voordeel van Experience Manager en zorgt voor consistentie in contentbeheer en hoge productiviteit voor makers van inhoud.
+[!DNL Adobe Experience Manager Assets] is een integrerend onderdeel van het [!DNL Experience Manager] platform. Deze soepele integratie wordt gezien als een groot voordeel van [!DNL Experience Manager] en zorgt voor consistentie in inhoudsbeheer en hoge productiviteit voor makers van inhoud.
 
 ## Veelgestelde vragen {#frequently-asked-questions}
 
-### Wat is middelen? {#what-is-aem-assets}
+### Wat is [!DNL Assets]dat? {#what-is-aem-assets}
 
-Elementen zijn een mogelijkheid van Experience Manager waarmee gebruikers hun digitale elementen (afbeeldingen, video&#39;s, documenten en audioclips) kunnen beheren in een opslagplaats op internet. De activa omvatten meta-steun, vertoningen, de vinder en de beleidsinterface.
+[!DNL Assets] is een mogelijkheid [!DNL Experience Manager] waarmee gebruikers hun digitale elementen (afbeeldingen, video&#39;s, documenten en audioclips) kunnen beheren in een gegevensopslagruimte op internet. [!DNL Assets] bevat ondersteuning voor metagegevens, uitvoeringen, de zoeker en de beheerinterface.
 
-### Wat is de Media Library van Experience Manager? {#what-is-the-aem-media-library}
+### Wat is de [!DNL Experience Manager] mediabibliotheek? {#what-is-the-aem-media-library}
 
-De Experience Manager Media Library is een aangewezen onderdeel van de WCM-inhoudsopslagruimte van Experience Manager waar afbeeldingen en andere gedeelde bronnen worden opgeslagen. De mediabibliotheek biedt basismogelijkheden voor beheer van digitale elementen aan WCM.
+De [!DNL Experience Manager] mediabibliotheek is een aangewezen onderdeel van de opslagplaats voor [!DNL Experience Manager] WCM-inhoud waar afbeeldingen en andere gedeelde bronnen worden opgeslagen. De mediabibliotheek biedt basismogelijkheden voor beheer van digitale elementen aan WCM.
 
-### Wat krijg ik van Activa die geen deel van WCM uitmaken? {#what-do-i-get-from-aem-assets-that-is-not-part-of-aem-wcm}
+### Wat krijg ik van [!DNL Assets] dat maakt geen deel uit van WCM? {#what-do-i-get-from-aem-assets-that-is-not-part-of-aem-wcm}
 
-Unieke functies die alleen beschikbaar zijn voor klanten van Elementen zijn:
+Unieke functies die alleen beschikbaar zijn voor klanten van [!DNL Assets] zijn:
 
 * de mogelijkheid om andere metagegevens dan titel, tags en beschrijving te extraheren en te bewerken.
-* de Middelen Admin, beschikbaar bij het welkomstscherm.
+* de [!DNL Assets] beheerder, beschikbaar via het welkomstscherm.
 * alle workflowstappen met betrekking tot Digital Asset Management, zoals inname, verwijdering van middelen, verwerking van submiddelen, uitname van metagegevens.
 * , ook `dam` in de pakketruimte.
 
-Voor het gebruik van deze functies is een geldige licentie voor Elementen vereist.
+Voor het gebruik van deze functies is een geldige licentie van vereist [!DNL Assets].
 
-### Zijn de activa beschikbaar als afzonderlijk Pakket? {#is-aem-assets-available-as-a-separate-package}
+### Is [!DNL Assets] beschikbaar als afzonderlijk pakket? {#is-aem-assets-available-as-a-separate-package}
 
-Nee. Om de installatie en implementatie te vereenvoudigen, worden alle toepassingen en invoegtoepassingen van Experience Manager geleverd in één pakket met alle functionaliteit inbegrepen. Dit betekent niet dat u toestemming hebt om alle functies in het pakket te gebruiken.
+Nee. Om installatie en plaatsing te vereenvoudigen, worden alle [!DNL Experience Manager] toepassingen en toe:voegen-ons geleverd in één enkel pakket met alle functionaliteit inbegrepen. Dit betekent niet dat u toestemming hebt om alle functies in het pakket te gebruiken.
 
-### Ik wil metagegevens van digitale elementen bewerken. Heb ik middelen nodig? {#i-want-to-edit-metadata-of-digital-assets-do-i-need-aem-assets}
+### Ik wil metagegevens van digitale elementen bewerken. Moet ik [!DNL Assets]? {#i-want-to-edit-metadata-of-digital-assets-do-i-need-aem-assets}
 
-Als u andere metagegevens dan titel, beschrijving en tags wilt bewerken, moet u een licentie voor Elementen maken.
+Als u andere metagegevens dan titel, beschrijving en tags wilt bewerken, is een licentie vereist. [!DNL Assets]
 
-### Ik wil de categorie voorspellen gebruiken op mijn website. Heb ik middelen nodig? {#i-want-to-use-the-category-predicate-on-my-website-do-i-need-aem-assets}
+### Ik wil de categorie voorspellen gebruiken op mijn website. Moet ik [!DNL Assets]? {#i-want-to-use-the-category-predicate-on-my-website-do-i-need-aem-assets}
 
-Ja, de predikaat van de categorie maakt deel uit van Activa en vereist een vergunning van Activa.
+Ja, de categorie predikaat maakt deel uit van [!DNL Assets] en vereist een [!DNL Assets] licentie.
 
-### Ik wil afbeeldingen automatisch vergroten of verkleinen tijdens het importeren. Heb ik middelen nodig? {#i-want-to-automatically-resize-images-upon-import-do-i-need-aem-assets}
+### Ik wil afbeeldingen automatisch vergroten of verkleinen tijdens het importeren. Moet ik [!DNL Assets]? {#i-want-to-automatically-resize-images-upon-import-do-i-need-aem-assets}
 
-Nee. Het wijzigen van het formaat en de automatische workflowgestuurde transformatie van statische afbeeldingen en de mogelijkheid om uitvoeringen te beheren maken deel uit van Experience Manager Media Library. Voor deze functies is geen middelenlicentie vereist.
+Nee. Het wijzigen van het formaat en de automatische workflowgestuurde transformatie van statische afbeeldingen en de mogelijkheid om uitvoeringen te beheren maken deel uit van de [!DNL Experience Manager] Mediabibliotheek. Voor deze functies is geen [!DNL Assets] licentie vereist.
 
-### Ik wil afbeeldingen vergroten of verkleinen met een aangepaste afbeeldingscomponent. Heb ik middelen nodig? {#i-want-to-resize-images-using-a-customized-image-component-do-i-need-aem-assets}
+### Ik wil afbeeldingen vergroten of verkleinen met een aangepaste afbeeldingscomponent. Moet ik [!DNL Assets]? {#i-want-to-resize-images-using-a-customized-image-component-do-i-need-aem-assets}
 
-De afbeeldingscomponent maakt deel uit van WCM. De afbeeldingsbibliotheek die door de afbeeldingscomponent (maar ook door Elementen) wordt gebruikt, maakt deel uit van het Experience Manager-platform en heeft geen licentie voor Elementen nodig.
+De afbeeldingscomponent maakt deel uit van WCM. De afbeeldingsbibliotheek die door de afbeeldingscomponent (maar ook door [!DNL Assets]) wordt gebruikt, maakt deel uit van het [!DNL Experience Manager] platform en heeft geen [!DNL Assets] licentie nodig.
 
-### Hoe kan ik voorkomen dat mijn gebruikers middelen gebruiken als ik geen licentie voor middelen heb verleend? {#how-can-i-prevent-my-users-from-using-aem-assets-if-i-did-not-license-aem-assets}
+### Hoe kan ik mijn gebruikers verhinderen te gebruiken [!DNL Assets] als ik geen vergunning heb verleend [!DNL Assets]. {#how-can-i-prevent-my-users-from-using-aem-assets-if-i-did-not-license-aem-assets}
 
-U kunt alle middelenspecifieke workflows, componenten, taxonomieën, opties en de middelenbeheerder verwijderen uit Experience Manager. Zo voorkomt u dat uw gebruikers per ongeluk de functies Middelen gebruiken waarvoor u geen licentie hebt verleend.
+U kunt alle [!DNL Assets]specifieke workflows, componenten, taxonomieën, opties en de [!DNL Assets] beheerder verwijderen uit [!DNL Experience Manager]. Zo voorkomt u dat uw gebruikers per ongeluk [!DNL Assets] functies gebruiken waarvoor u geen licentie hebt verleend.
 
 ### Ik wil afbeeldingen aan een pagina toevoegen en deze afbeeldingen uitsnijden en vergroten of verkleinen. Heb ik middelen nodig? {#i-want-to-add-images-to-a-page-and-want-to-crop-and-resize-these-images-do-i-need-aem-assets}
 
-In dit geval is het niet verplicht om middelen te kopen, zelfs als de mediabibliotheek niet hoeft te worden gebruikt om afbeeldingen op een website te gebruiken, omdat de component Slimme afbeelding het rechtstreeks uploaden van afbeeldingen naar de pagina toestaat.
+In dit geval hoeft u geen mediawisselaar te kopen [!DNL Assets], zelfs niet als u afbeeldingen op een website wilt gebruiken omdat de component SmartImage het uploaden van afbeeldingen naar de pagina toestaat.
 
-### Een gedetailleerde lijst met functies die beschikbaar zijn in Middelen versus Mediabibliotheek {#listoffeatures}
+### Een gedetailleerde lijst met functies die beschikbaar zijn in [!DNL Assets] vs. de mediabibliotheek {#listoffeatures}
 
-**Elementen van Experience Manager**
+**Experience Manager-elementen**
 
 * Verzamelingen en lichtbak
 * Geavanceerde eigenschappen en beheer van metagegevens
-* Adobe Asset Link (verbinding maken met Creative Cloud voor ondernemingen)
-* Experience Manager-bureaubladtoepassing
+* Adobe Asset Link (verbinding maken met Creative Cloud voor bedrijf)
+* [!DNL Experience Manager] bureaubladtoepassing
 * Profielen verwerken
 * [!DNL Adobe InDesign Server] integratie
 * Middelensjablonen en raamwerk voor catalogusproducenten
@@ -79,7 +79,7 @@ In dit geval is het niet verplicht om middelen te kopen, zelfs als de mediabibli
 * Meertalig beheer van bedrijfsmiddelen
 * PIM-integratie
 * Rechtenbeheer
-* Camera RAW-ondersteuning
+* Camera Raw ondersteuning
 * Beheer en configuratie van zoekfactoren
 * Vooraf gebouwde DAM-workflows (bijvoorbeeld foto&#39;s)
 * Asset Reporting and analytics called Insights
@@ -102,6 +102,6 @@ In dit geval is het niet verplicht om middelen te kopen, zelfs als de mediabibli
 * Projecten, taken, workflowauthoring
 * Activiteitsstroom (tijdlijn)
 * Query Builder (API)
-* Integratie van Marketing Cloud
+* Marketing Cloud-integratie
 * UI-aanpassing en -extensie
 * Opmerkingen en aantekening

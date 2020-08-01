@@ -2,42 +2,42 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: Handleiding voor Experience Manager 6.5-middelen
+user-guide-title: Experience Manager 6.5 Gebruikershandleiding voor middelen
 user-guide-description: Create, manage, deliver, and optimize digital assets.
 translation-type: tm+mt
-source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '630'
 ht-degree: 39%
 
 ---
 
 
-# Handleiding voor Experience Manager 6.5-middelen {#assets}
+# Experience Manager 6.5 Gebruikershandleiding voor middelen {#assets}
 
 + [[!DNL Assets] gebruikershandleiding](home.md)
-+ [AEM 6.5 Opmerkingen bij de release van activa](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/assets.html)
++ [Experience Manager 6.5 Opmerkingen bij de release van activa](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/assets.html)
 + [Informatie over DAM](assets.md)
 + [Aanbevolen procedures voor elementen](best-practices-for-assets.md)
-+ AEM Assets gebruiken {#using}
-   + [Ervaring met homepage van AEM Assets](assets-home-page.md)
-   + [Middelen zoeken in AEM](search-assets.md)
++ Experience Manager-elementen gebruiken {#using}
+   + [De ervaring van de homepage van activa](assets-home-page.md)
+   + [Digitale middelen zoeken](search-assets.md)
    + [Meertalige activa](multilingual-assets.md)
-   + [ [!DNL Adobe Stock] Activa in AEM Assets](aem-assets-adobe-stock.md)
+   + [ [!DNL Adobe Stock] Activa in activa](aem-assets-adobe-stock.md)
    + [3D-elementen voorvertonen](previewing-3d-assets.md)
    + [Map-assets en verzamelingen reviewen](bulk-approval.md)
    + [Activiteitsstroom in tijdlijn](activity-stream.md)
    + [Proceselementen](assets-workflow.md)
    + [Afbeeldingen met hyperlinks toevoegen](image-maps.md)
    + [Elementen hergebruiken met MSM](reuse-assets-using-msm.md)
-   + [Verbonden elementen met AEM Sites](use-assets-across-connected-assets-instances.md)
+   + [Verbonden elementen met sites](use-assets-across-connected-assets-instances.md)
 +  Dynamic Media {#dynamic}
    + [Dynamic Media-nieuwsbrief van Experience League](dynamic-media-newsletter.md)
    + [Dynamic Media instellen](administering-dynamic-media.md)
    + [Werken met Dynamic Media](dynamic-media.md)
-   + [Het vormen Dynamic Media - wijze Scene7](config-dms7.md)
+   + [Dynamic Media configureren - Scene7-modus](config-dms7.md)
    + [Dynamic Media configureren - hybride modus](config-dynamic.md)
-   + [Het oplossen van problemen - Dynamic Media Scene7 wijze](troubleshoot-dms7.md)
+   + [Dynamic Media voor probleemoplossing - Scene7-modus](troubleshoot-dms7.md)
    + [Migreren van Dynamic Media - Hybride wijze aan Dynamic Media - S7 wijze](migrate-from-hybrid-to-dms7.md)
    + [Dynamic Media-assets beheren](managing-assets.md)
    + [Aanbevolen procedures voor een optimale kwaliteit van uw afbeeldingen](best-practices-for-optimizing-the-quality-of-your-images.md)
@@ -49,7 +49,7 @@ ht-degree: 39%
    + [Dynamic Media-afbeeldingsprofielen](image-profiles.md)
    + [Smart Imaging](imaging-faq.md)
    + [Video](s7-video.md)
-   + [Scene7 eigenschappen toevoegen aan uw pagina](scene7.md)
+   + [Scene7-functies aan uw pagina toevoegen](scene7.md)
    + [HTTP2-levering van content](http2.md)
    + [Dynamic Media-assets leveren](delivering-dynamic-media-assets.md)
    + [Hotlinkbeveiliging in Dynamic Media activeren](hotlink-protection.md)
@@ -76,20 +76,20 @@ ht-degree: 39%
    + [Feature Pack 18912 installeren voor migratie van grote hoeveelheden bedrijfsmiddelen](bulk-ingest-migrate.md)
    + [Werken met kiezers](working-with-selectors.md)
 + Elementen uitbreiden {#extending}
-   + [AEM Assets aanpassen en uitbreiden](extending-assets.md)
+   + [Elementen aanpassen en uitbreiden](extending-assets.md)
    + [Elementen verwerken met behulp van mediafuncties en workflows](media-handlers.md)
    + [Zoekfunctionaliteit uitbreiden](searchx.md)
-   + [Installeren en [!DNL ImageMagick] configureren om met AEM Assets te werken](best-practices-for-imagemagick.md)
+   + [Installeren en [!DNL ImageMagick] configureren om met middelen te werken](best-practices-for-imagemagick.md)
    + [Elementen integreren met activiteitsstroom](extending-activity-stream.md)
    + [Editor van element uitbreiden](asseteditorx.md)
    + [HTTP-API voor assets](mac-api-assets.md)
-   + [Ondersteuning voor inhoudsfragmenten in HTTP-API voor AEM Assets](assets-api-content-fragments.md)
+   + [Ondersteuning voor inhoudsfragmenten in HTTP-API voor middelen](assets-api-content-fragments.md)
    + [Ontwikkeling van proxy&#39;s](proxy.md)
 + Elementen beheren {#administer}
    + [Ondersteunde bestandsindelingen](assets-formats.md)
    + [Facetten doorzoeken](search-facets.md)
    + [Metagegevens voor elementen beheren](metadata.md)
-   + [XMP-terugverwijzing naar uitvoeringen](xmp-writeback.md)
+   + [Terugverwijzing naar vertoningen XMP](xmp-writeback.md)
    + [Delen van koppelingen van middelen](link-sharing.md)
    + [Rapporten over assets](asset-reports.md)
    + [Verbeterde slimme tags](enhanced-smart-tags.md)
@@ -104,17 +104,17 @@ ht-degree: 39%
    + [Richtlijnen voor migratie van middelen](assets-migration-guide.md)
    + [XMP-metadata](xmp.md)
    + [Elementennetwerkoverwegingen](assets-network-considerations.md)
-   + [AEM Assets en AEM MediaLibrary](medialibrary.md)
+   + [Middelen en MediaLibrary](medialibrary.md)
    + [PDF-rasterizer gebruiken](aem-pdf-rasterizer.md)
    + [Uploadbeperkingen configureren](configuring-asset-upload-restrictions.md)
-   + [Aanbevolen werkwijzen voor AEM- en Creative Cloud-integratie](aem-cc-integration-best-practices.md)
+   + [Integratie van Experience Manager en Creative Cloud](aem-cc-integration-best-practices.md)
    + [Integreren met InDesign Server](indesign.md)
    + [Metadataprofielen](metadata-profiles.md)
-   + [Digital Rights Management in middelen](drm.md)
+   + [Digital Rights Management in activa](drm.md)
    + [Demo-pakket gebruiken voor elementinzichten](touch-ui-using-demo-package-for-asset-insights.md)
    + [Aanbevolen werkwijzen voor bestandsindelingen voor elementen](assets-file-format-best-practices.md)
    + [Aanbevolen procedures voor het controleren van elementen](assets-monitoring-best-practices.md)
-   + [Camera Raw-ondersteuning](camera-raw.md)
+   + [Camera Raw ondersteuning](camera-raw.md)
    + [MIME-type van activa detecteren met Apache Tika](detect-asset-mime-type-with-tika.md)
    + [Afbeeldingstransformatiebibliotheek](imaging-transcoding-library.md)
    + [Ondersteuning voor IPTC-metagegevens](iptc-support.md)
@@ -123,11 +123,11 @@ ht-degree: 39%
    + [Watermerk uw elementen](watermarking.md)
    + [Bulkmetagegevens importeren en exporteren](metadata-import-export.md)
    + [Elementsjablonen](asset-templates.md)
-   + [Aanbevolen procedures om mappen te delen met Creative Cloud](aem-cc-folder-sharing-best-practices.md)
+   + [Aanbevolen procedures voor het delen van mappen met Creative Cloud](aem-cc-folder-sharing-best-practices.md)
    + [Metadataschema van map](folder-metadata-schema.md)
    + [Slimme tags beheren](managing-smart-tags.md)
 + Brand Portal {#brandportal}
-   + [AEM Assets configureren met Brand Portal](configure-aem-assets-with-brand-portal.md)
+   + [ Assets configureren met Brand Portal ](configure-aem-assets-with-brand-portal.md)
    + [Assets publiceren naar Brand Portal](brand-portal-publish-assets.md)
    + [Mappen publiceren naar Brand Portal](brand-portal-publish-folder.md)
    + [Verzamelingen publiceren naar Brand Portal](brand-portal-publish-collection.md)
@@ -151,7 +151,7 @@ ht-degree: 39%
    + [Videoassets beheren](managing-video-assets.md)
    + [Vertaalprojecten maken](translation-projects.md)
    + [Elementen voorbereiden voor vertaling](preparing-assets-for-translation.md)
-   + [Assets van AEM downloaden](download-assets-from-aem.md)
+   + [Elementen downloaden van Experience Manager](download-assets-from-aem.md)
    + [Asynchrone taken](asynchronous-jobs.md)
    + [Lichtbak](touch-ui-light-box.md)
    + [Elementinzichten](touch-ui-asset-insights.md)

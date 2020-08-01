@@ -1,11 +1,11 @@
 ---
-title: De zoekfunctionaliteit van Adobe Experience Manager Assets uitbreiden
-description: Breid de onderzoeksmogelijkheden van de Middelen van de Adobe Experience Manager voorbij de gebreken uit.
+title: De zoekfunctionaliteit van [!DNL Adobe Experience Manager Assets]uitbreiden.
+description: Breid de onderzoeksmogelijkheden [!DNL Adobe Experience Manager Assets] van voorbij de gebreken uit.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '841'
 ht-degree: 15%
 
 ---
@@ -35,9 +35,9 @@ Om de pre-gevormde voorspelden te bedekken, kopieer de `facets` knoop van `/libs
 
 ## Tabs toevoegen {#adding-tabs}
 
-U kunt extra zoektabbladen toevoegen door deze in de beheerinterface voor middelen te configureren. Extra tabbladen maken:
+U kunt extra onderzoekslusjes toevoegen door hen in de [!DNL Assets] admin interface te vormen. Extra tabbladen maken:
 
-1. Maak de mapstructuur `/apps/wcm/core/content/damadmin/tabs,`als deze nog niet bestaat en kopieer het `tabs` knooppunt van `/libs/wcm/core/content/damadmin` en plak het.
+1. Maak de mappenstructuur `/apps/wcm/core/content/damadmin/tabs,`als deze nog niet bestaat en kopieer het `tabs` knooppunt van `/libs/wcm/core/content/damadmin` en plak het.
 1. Maak en configureer het tweede tabblad naar wens.
 
    >[!NOTE]
@@ -48,7 +48,7 @@ U kunt extra zoektabbladen toevoegen door deze in de beheerinterface voor middel
 
 [!DNL Assets] wordt geleverd met een set vooraf gedefinieerde voorspelling die kan worden gebruikt om een pagina voor het delen van elementen aan te passen. Het aanpassen van een Aandeel van Activa op deze manier wordt behandeld in [creeer en vorm een pagina](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page)van het Aandeel van Activa.
 
-Naast het gebruiken van reeds bestaande predikaten, kunnen de ontwikkelaars van Experience Manager ook hun eigen predikaten tot stand brengen gebruikend de [Bouwer van de Vraag API](/help/sites-developing/querybuilder-api.md).
+Naast het gebruiken van reeds bestaande predikaten, kunnen de [!DNL Experience Manager] ontwikkelaars ook hun eigen predikaten tot stand brengen gebruikend de [Bouwer van de Vraag API](/help/sites-developing/querybuilder-api.md).
 
 Voor het maken van aangepaste predikaten is basiskennis van het [Widget-framework](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html)vereist.
 
@@ -296,6 +296,6 @@ De volgende voorspelling is beschikbaar als vooraf geconfigureerde ExtJS-widgets
 
 ## Zoekresultaten aanpassen {#customizing-search-results}
 
-De presentatie van zoekresultaten op een pagina voor het delen van bedrijfsmiddelen wordt bepaald door de geselecteerde lens. Experience Manager Assets wordt geleverd met een set vooraf gedefinieerde lenzen die kunnen worden gebruikt om een pagina voor het delen van bedrijfsmiddelen aan te passen. Op deze manier wordt het op deze manier aanpassen van een Asset Share behandeld in het [maken en configureren van een pagina](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page)voor het delen van bedrijfsmiddelen.
+De presentatie van zoekresultaten op een pagina voor het delen van bedrijfsmiddelen wordt bepaald door de geselecteerde lens. [!DNL Experience Manager Assets] wordt geleverd met een set vooraf gedefinieerde lenzen die kunnen worden gebruikt om een pagina voor het delen van elementen aan te passen. Op deze manier wordt het op deze manier aanpassen van een Asset Share behandeld in het [maken en configureren van een pagina](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page)voor het delen van bedrijfsmiddelen.
 
-Naast het gebruik van reeds bestaande lenzen kunnen Experience Manager-ontwikkelaars ook hun eigen lenzen maken.
+Naast het gebruik van reeds bestaande lenzen kunnen [!DNL Experience Manager] ontwikkelaars ook hun eigen lenzen maken.

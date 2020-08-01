@@ -1,11 +1,11 @@
 ---
-title: Metagegevens van vele elementen en verzamelingen beheren in Adobe Enterprise Manager.
+title: Metagegevens van vele elementen en verzamelingen in [!DNL Adobe Enterprise Manager]beheren.
 description: Bewerk de metagegevens van veel elementen en verzamelingen tegelijk om wijzigingen in algemene metagegevens snel door te geven.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '467'
 ht-degree: 12%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 12%
 
 # Elementen en verzamelingen beheren {#managing-multiple-assets-and-collections}
 
-Met de Adobe Enterprise Manager-middelen kunt u de metagegevens van meerdere elementen tegelijk bewerken, zodat u snel algemene wijzigingen in metagegevens in meerdere elementen samen kunt doorgeven. U kunt de metagegevens voor meerdere verzamelingen ook bulksgewijs bewerken.
+[!DNL Adobe Enterprise Manager Assets] Hiermee kunt u de metagegevens van meerdere elementen tegelijk bewerken, zodat u snel algemene wijzigingen in metagegevens in elementen bulksgewijs kunt doorgeven. U kunt de metagegevens voor meerdere verzamelingen ook bulksgewijs bewerken.
 
 Gebruik de eigenschappenpagina om wijzigingen in metagegevens uit te voeren voor meerdere elementen of verzamelingen:
 
@@ -28,7 +28,7 @@ Gebruik de schema-editor om de pagina met eigenschappen van metagegevens aan te 
 
 ## Eigenschappen van metagegevens van meerdere elementen bewerken {#editing-metadata-properties-of-multiple-assets}
 
-1. Navigeer in de gebruikersinterface Elementen naar de locatie van de elementen die u wilt bewerken.
+1. Navigeer in de [!DNL Assets] gebruikersinterface naar de locatie van de elementen die u wilt bewerken.
 1. Selecteer de elementen waarvan u de algemene eigenschappen wilt bewerken.
 1. Klik in de werkbalk **[!UICONTROL Properties]** om de pagina met eigenschappen voor de geselecteerde elementen te openen.
 

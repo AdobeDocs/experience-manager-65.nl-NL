@@ -4,17 +4,17 @@ description: Leer taken om verzamelingen met middelen te beheren, zoals verzamel
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '2047'
-ht-degree: 11%
+source-wordcount: '2022'
+ht-degree: 10%
 
 ---
 
 
 # Verzamelingen beheren {#managing-collections}
 
-Een verzameling is een set elementen binnen Adobe Experience Manager Assets. Gebruik verzamelingen om elementen tussen gebruikers te delen. De set kan een statische verzameling of een dynamische verzameling zijn die is gebaseerd op zoekresultaten.
+Een verzameling is een set elementen binnen [!DNL Adobe Experience Manager Assets]. Gebruik verzamelingen om elementen tussen gebruikers te delen. De set kan een statische verzameling of een dynamische verzameling zijn die is gebaseerd op zoekresultaten.
 
 In tegenstelling tot mappen kan een verzameling elementen van verschillende locaties bevatten. U kunt verzamelingen delen met verschillende gebruikers waaraan verschillende niveaus van bevoegdheden zijn toegewezen, zoals weergeven, bewerken, enzovoort.
 
@@ -28,7 +28,7 @@ De inzamelingen zijn van de volgende types, die op de manier worden gebaseerd zi
 
 ## Toegang tot de verzamelingsconsole {#navigating-the-collections-console}
 
-Ga **[!UICONTROL Collections]** in de Experience Manager-interface naar **[!UICONTROL Assets]** > **[!UICONTROL Collections]**.
+Ga **[!UICONTROL Collections]** in de [!DNL Experience Manager] interface naar **[!UICONTROL Assets]** > **[!UICONTROL Collections]**.
 
 ## Een verzameling maken {#creating-a-collection}
 
@@ -52,15 +52,15 @@ U kunt een verzameling maken met statische verwijzingen, bijvoorbeeld een verzam
 
    >[!NOTE]
    >
-   >Met Experience Manager Assets kunt u controletaken voor een verzameling maken, vergelijkbaar met de manier waarop u overzichtstaken voor een map met middelen maakt.
+   >[!DNL Experience Manager Assets] Hiermee kunt u controletaken voor een verzameling maken, vergelijkbaar met de manier waarop u overzichtstaken voor een map met elementen maakt.
 
-   Navigeer naar de gebruikersinterface Elementen om elementen aan de verzameling toe te voegen. Zie Elementen [toevoegen aan een verzameling](#adding-assets-to-a-collection)voor meer informatie.
+   Navigeer naar de [!DNL Assets] gebruikersinterface om elementen aan de verzameling toe te voegen. Zie Elementen [toevoegen aan een verzameling](#adding-assets-to-a-collection)voor meer informatie.
 
 ### Verzamelingen maken met dropzone {#create-collections-using-dropzone}
 
-U kunt elementen van de interface Elementen naar een verzameling slepen. U kunt ook een kopie van een verzameling maken en de elementen daar slepen.
+U kunt elementen vanuit de [!DNL Assets] gebruikersinterface naar een verzameling slepen. U kunt ook een kopie van een verzameling maken en de elementen daar slepen.
 
-1. Selecteer in de gebruikersinterface Elementen de elementen die u aan een verzameling wilt toevoegen.
+1. Selecteer in de [!DNL Assets] gebruikersinterface de elementen die u aan een verzameling wilt toevoegen.
 1. Sleep de elementen naar de **[!UICONTROL Drop in Collection]** zone. Alternatively, click **[!UICONTROL To Collection]** from the toolbar.
 
    ![drop_in_collection](assets/drop_in_collection.png)
@@ -78,7 +78,7 @@ Een slimme verzameling gebruikt zoekcriteria om elementen dynamisch te vullen. U
 
 Voer de volgende stappen uit om een slimme verzameling te maken:
 
-1. Navigeer naar de gebruikersinterface Elementen en klik op Zoeken.
+1. Navigeer naar de [!DNL Assets] gebruikersinterface en klik op Zoeken.
 
 1. Typ het zoekwoord in het vak Zoeken en druk op `Enter`. Open het deelvenster Filters en pas een zoekfilter toe.
 
@@ -108,7 +108,7 @@ Voer de volgende stappen uit om een slimme verzameling te maken:
 
 U kunt elementen toevoegen aan een verzameling die een lijst met bestanden of mappen waarnaar wordt verwezen, bevat. Slimme verzamelingen gebruiken een zoekquery om elementen te vullen. Daarom zijn statische verwijzingen naar elementen en mappen niet op hen van toepassing.
 
-1. Selecteer het element in de gebruikersinterface Elementen en klik op de werkbalk op **[!UICONTROL To Collection]** Toevoegen aan verzameling ![](assets/do-not-localize/add-to-collection.png) .
+1. Selecteer het element in de gebruikersinterface [!DNL A]voor sets en klik op de werkbalk op **[!UICONTROL To Collection]** Toevoegen aan verzameling ![](assets/do-not-localize/add-to-collection.png) .
 U kunt het element ook naar het **[!UICONTROL Drop in Collection]** gebied op de interface slepen. Voeg de elementen toe wanneer het label van het gebied verandert in **[!UICONTROL Drop to Add]**.
 
 1. Selecteer op de **[!UICONTROL Add To Collection]** pagina de verzameling waaraan u het element wilt toevoegen.
@@ -119,9 +119,9 @@ U kunt het element ook naar het **[!UICONTROL Drop in Collection]** gebied op de
 
 Slimme verzamelingen worden gemaakt door een zoekopdracht op te slaan, zodat u de inhoud kunt wijzigen door de zoekparameters van de [opgeslagen zoekopdracht](#saved-searches)te wijzigen.
 
-1. Klik in de gebruikersinterface Elementen op de ![zoekoptie](assets/do-not-localize/search_icon.png) in de werkbalk.
+1. Klik in de [!DNL Assets] gebruikersinterface op de ![zoekoptie](assets/do-not-localize/search_icon.png) van de zoekoptie op de werkbalk.
 1. Met de curseur in het vakje van het Onderzoek, duw op de sleutel van de Terugkeer.
-1. Open het deelvenster Filters in de Experience Manager-interface.
+1. Open het deelvenster Filters in de [!DNL Experience Manager] interface.
 1. Selecteer in de lijst met **[!UICONTROL Saved Searches]** de slimme verzameling die u wilt wijzigen. In het deelvenster Zoeken worden de filters weergegeven die zijn geconfigureerd voor de opgeslagen zoekopdracht.
 
    ![select_smart_collection](assets/select_smart_collection.png)
@@ -156,7 +156,7 @@ U kunt de metagegevens van meerdere verzamelingen tegelijk bewerken. Deze functi
 
    >[!NOTE]
    >
-   >* In de [!UICONTROL Properties] pagina kunt u verzamelingen verwijderen uit de lijst met verzamelingen door ze te deselecteren. Alle verzamelingen zijn standaard geselecteerd in de lijst met verzamelingen. Experience Manager werkt de metagegevens van de verzamelingen die u verwijdert niet bij.
+   >* In de [!UICONTROL Properties] pagina kunt u verzamelingen verwijderen uit de lijst met verzamelingen door ze te deselecteren. Alle verzamelingen zijn standaard geselecteerd in de lijst met verzamelingen. [!DNL Experience Manager] werkt de metagegevens van de verzamelingen die u verwijdert niet bij.
    >* Schakel boven aan de lijst het selectievakje in **[!UICONTROL Title]** om te schakelen tussen het selecteren van de verzamelingen en het wissen van de lijst.
 
 
@@ -175,15 +175,15 @@ Gebruik de Schema-editor om de [!UICONTROL Properties] pagina met metagegevens a
 
 ## Verzamelingen zoeken {#searching-collections}
 
-U kunt inzamelingen van de console van Inzamelingen zoeken. Wanneer u in het vak Zoeken met trefwoorden zoekt, zoekt Middelen naar namen van verzamelingen, metagegevens en de tags die aan de verzamelingen zijn toegevoegd.
+U kunt inzamelingen van de console van Inzamelingen zoeken. Wanneer u met trefwoorden zoekt in het vak Zoeken, zoekt u naar namen van verzamelingen, metagegevens en de tags die aan de verzamelingen zijn toegevoegd. [!DNL Assets]
 
-Als u zoekt naar verzamelingen op het hoogste niveau, worden alleen afzonderlijke verzamelingen geretourneerd in zoekresultaten. Elementen of mappen in de verzamelingen zijn uitgesloten. In alle andere gevallen (bijvoorbeeld in een afzonderlijke verzameling of in een mappenhiërarchie) worden alle relevante elementen, mappen en verzamelingen geretourneerd.
+Als u zoekt naar verzamelingen op het hoogste niveau, worden alleen afzonderlijke verzamelingen geretourneerd in zoekresultaten. [!DNL Assets] of mappen in de verzamelingen worden uitgesloten. In alle andere gevallen (bijvoorbeeld in een afzonderlijke verzameling of in een mappenhiërarchie) worden alle relevante elementen, mappen en verzamelingen geretourneerd.
 
 ## Zoeken in verzamelingen {#searching-within-collections}
 
 Klik in de console Verzamelingen op een verzameling om deze te openen.
 
-In een verzameling is het zoeken in Experience Manager beperkt tot elementen (en de bijbehorende tags en metagegevens) in de verzameling die u bekijkt. Wanneer u in een map zoekt, worden alle overeenkomende elementen en onderliggende mappen in de huidige map geretourneerd. Wanneer u in een verzameling zoekt, worden alleen overeenkomende elementen, mappen en andere verzamelingen geretourneerd die directe leden van de verzameling zijn.
+In een verzameling is het [!DNL Experience Manager] zoeken beperkt tot elementen (en de bijbehorende tags en metagegevens) in de verzameling die u bekijkt. Wanneer u in een map zoekt, worden alle overeenkomende elementen en onderliggende mappen in de huidige map geretourneerd. Wanneer u in een verzameling zoekt, worden alleen overeenkomende elementen, mappen en andere verzamelingen geretourneerd die directe leden van de verzameling zijn.
 
 ## Verzamelingsinstellingen bewerken {#editing-collection-settings}
 
@@ -234,7 +234,7 @@ U kunt een verzameling toevoegen aan een andere verzameling en zo een geneste ve
 
 ## Opgeslagen zoekopdrachten {#saved-searches}
 
-In de gebruikersinterface Assets kunt u op basis van bepaalde regels, zoekcriteria of aangepaste zoekfacetten zoeken of filteren. Als u deze opslaat als **[!UICONTROL Saved Searches]**, kunt u ze later openen vanuit de lijst **[!UICONTROL Saved Searches]** in het deelvenster Filteren. Als u een opgeslagen zoekopdracht maakt, wordt ook een slimme verzameling gemaakt.
+In the [!DNL Assets] user interface, you can search or filter assets based on certain rules, search criteria, or custom search facets. Als u deze opslaat als **[!UICONTROL Saved Searches]**, kunt u ze later openen vanuit de lijst **[!UICONTROL Saved Searches]** in het deelvenster Filteren. Als u een opgeslagen zoekopdracht maakt, wordt ook een slimme verzameling gemaakt.
 
 ![saved_search_list](assets/saved_searches_list.png)
 
@@ -248,9 +248,9 @@ Opgeslagen zoekopdrachten bewerken is hetzelfde als slimme verzamelingen bewerke
 
 Voer de volgende stappen uit om opgeslagen zoekopdrachten te verwijderen:
 
-1. Klik in de gebruikersinterface Middelen op de ![zoekoptie](assets/do-not-localize/search_icon.png).
+1. Klik in de [!DNL Assets] gebruikersinterface op de ![zoekoptie](assets/do-not-localize/search_icon.png).
 1. Met de curseur op het gebied van Onderzoek, druk de sleutel van de Terugkeer.
-1. Open het deelvenster Filters in de Experience Manager-interface.
+1. Open het deelvenster Filters in de [!DNL Experience Manager] interface.
 1. From the **[!UICONTROL Saved Searches]** list, click **[!UICONTROL Delete]** next to the smart collection that you want to delete.
 
    ![select_smart_collection](assets/select_smart_collection.png)

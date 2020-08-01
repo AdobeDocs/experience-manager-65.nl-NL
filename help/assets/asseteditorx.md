@@ -3,9 +3,9 @@ title: Editor van element uitbreiden
 description: Leer hoe u de mogelijkheden van de Asset Editor uitbreidt met behulp van aangepaste componenten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '695'
+source-wordcount: '688'
 ht-degree: 13%
 
 ---
@@ -17,21 +17,21 @@ De Asset Editor is de pagina die wordt geopend wanneer op een element wordt gekl
 
 De configuratie van de redacteur die de vooraf bepaalde het uitgeven componenten gebruikt wordt behandeld in het [Creëren van en het Vormen van een Pagina](assets-finder-editor.md#creating-and-configuring-an-asset-editor-page)van de Redacteur van Activa.
 
-Naast het gebruik van reeds bestaande editorcomponenten, kunnen de ontwikkelaars van de Manager van de Ervaring van Adobe ook hun eigen componenten tot stand brengen.
+Naast het gebruiken van reeds bestaande redacteurscomponenten, kunnen de [!DNL Adobe Experience Manager] ontwikkelaars ook hun eigen componenten tot stand brengen.
 
 ## Een sjabloon voor de Asset Editor maken {#creating-an-asset-editor-template}
 
 De volgende voorbeeldpagina&#39;s worden opgenomen in Geometrixx:
 
-* Voorbeeldpagina voor Geometrixx: `/content/geometrixx/en/press/asseteditor.html`
+* Voorbeeldpagina Geometrixx: `/content/geometrixx/en/press/asseteditor.html`
 * Voorbeeldsjabloon: `/apps/geometrixx/templates/asseteditor`
 * Voorbeeld van paginacomponent: `/apps/geometrixx/components/asseteditor`
 
 ### Clientlib configureren {#configuring-clientlib}
 
-Elementen gebruiken een extensie van de WCM-bewerkingsclient. De clientlibs worden meestal in geladen `init.jsp`.
+[!DNL Assets] componenten gebruiken een uitbreiding van WCM uitgeeft clientlib. De clientlibs worden meestal in geladen `init.jsp`.
 
-Vergeleken met het standaard clientlib laden (in kern `init.jsp`), moet een malplaatje van Activa het volgende hebben:
+Vergeleken met het standaard clientlib laden (in kern `init.jsp`), moet een [!DNL Assets] malplaatje het volgende hebben:
 
 * De sjabloon moet de `cq.dam.edit` clientlib bevatten (in plaats van `cq.wcm.edit`).
 
@@ -41,23 +41,23 @@ In de meeste gevallen moet het kopiëren van het bestaande monster `init.jsp` (`
 
 ### JS-handelingen configureren {#configuring-js-actions}
 
-Voor sommige elementen worden JS-functies gedefinieerd in `component.js`. Kopieer dit bestand naar de map met componenten en koppel deze.
+Voor sommige [!DNL Assets] componenten zijn JS-functies vereist die zijn gedefinieerd in `component.js`. Kopieer dit bestand naar de map met componenten en koppel deze.
 
 ```javascript
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>
 ```
 
-In het voorbeeld wordt deze javascript-bron geladen in `head.jsp`(`/apps/geometrixx/components/asseteditor/head.jsp`).
+In het voorbeeld wordt deze JavaScript-bron geladen in `head.jsp`(`/apps/geometrixx/components/asseteditor/head.jsp`).
 
 ### Aanvullende stijlbladen {#additional-style-sheets}
 
-Sommige middelencomponenten gebruiken de widgetbibliotheek. Om correct in de inhoudscontext te worden teruggegeven, moet een extra stijlblad worden geladen. Voor de component Handeling tag is nog een component vereist.
+Sommige [!DNL Assets] componenten gebruiken de widgetbibliotheek. Om correct in de inhoudscontext te worden teruggegeven, moet een extra stijlblad worden geladen. Voor de component Handeling tag is nog een component vereist.
 
 ```css
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">
 ```
 
-### Geometrixx stijlblad {#geometrixx-style-sheet}
+### Stijlblad Geometrixx {#geometrixx-style-sheet}
 
 Voor de voorbeeldpaginacomponenten is het vereist dat alle kiezers beginnen met `.asseteditor` van `static.css` (`/etc/designs/geometrixx/static.css`). Beste praktijken: Kopieer alle `.asseteditor` kiezers naar de stijlpagina en pas de regels naar wens aan.
 

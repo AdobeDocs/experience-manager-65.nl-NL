@@ -3,9 +3,9 @@ title: Elementen voorbereiden voor vertaling
 description: Maak hoofdmappen voor talen om elementen voor te bereiden voor vertaling ter ondersteuning van meertalige middelen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '429'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Meertalige elementen zijn elementen met binaire getallen, metagegevens en tags in meerdere talen. Over het algemeen bestaan binaire bestanden, metagegevens en tags voor elementen in één taal, die vervolgens naar andere talen worden vertaald voor gebruik in meertalige projecten.
 
-In Adobe Experience Manager Assets worden meertalige middelen opgenomen in mappen, waarbij elke map de middelen in een andere taal bevat.
+In [!DNL Adobe Experience Manager Assets]mappen worden meertalige middelen opgenomen, waarbij elke map de middelen in een andere taal bevat.
 
 Elke taalmap wordt een taalkopie genoemd. De hoofdmap van een taalkopie, de hoofdtaal genoemd, identificeert de taal van de inhoud in de taalkopie. Bijvoorbeeld: */content/dam/it* is de Italiaanse taalbasis voor de Italiaanse taalkopie. De exemplaren van de taal moeten een [correct-gevormde taalwortel](preparing-assets-for-translation.md#creating-a-language-root) gebruiken zodat de correcte taal wordt gericht wanneer de vertalingen van bronactiva worden uitgevoerd.
 
@@ -46,7 +46,7 @@ Als u de hoofdmap van de taal wilt maken, maakt u een map en gebruikt u een ISO-
 
 De hoofdpagina van de Italiaanse taalkopie van de voorbeeldhiërarchie heeft bijvoorbeeld de eigenschap Naam `it` . Het bezit van de Naam wordt gebruikt als naam van de activaknoop in de bewaarplaats, en bepaalt daarom de weg van de activa. (`https://[aem_server]:[port]/assets.html/content/dam/it/`).
 
-1. From the Assets console, click **[!UICONTROL Create]** and choose **[!UICONTROL Folder]** from the menu.
+1. From the [!DNL Assets] console, click **[!UICONTROL Create]** and choose **[!UICONTROL Folder]** from the menu.
 
    ![Map maken](assets/Create-folder.png)
 
@@ -54,13 +54,13 @@ De hoofdpagina van de Italiaanse taalkopie van de voorbeeldhiërarchie heeft bij
 
    ![Taalcode toevoegen in map](assets/Add-language-code-in-folder.png)
 
-1. Klik op **[!UICONTROL Create]**. De taalwortel wordt gecreeerd in de console van Activa.
+1. Klik op **[!UICONTROL Create]**. De taalwortel wordt gecreeerd in de [!DNL Assets] console.
 
 ## Taalwortels weergeven {#viewing-language-roots}
 
-De Experience Manager-interface biedt een **[!UICONTROL References]** deelvenster met een lijst met taalwortels die in Elementen zijn gemaakt.
+[!DNL Experience Manager] de interface verstrekt een **[!UICONTROL References]** paneel dat een lijst van taalwortels toont die binnen zijn gecreeerd [!DNL Assets].
 
-1. Selecteer in de middelenconsole de primaire taal waarvoor u taalkopieën wilt maken.
+1. Selecteer in de [!DNL Assets] console de primaire taal waarvoor u taalkopieën wilt maken.
 1. Selecteer in het linkerspoor de **[!UICONTROL References]** optie om het [!UICONTROL Reference] venster te openen.
 
    ![chlimage_1-122](assets/chlimage_1-122.png)

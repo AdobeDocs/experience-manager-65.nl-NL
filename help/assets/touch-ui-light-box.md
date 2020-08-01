@@ -1,11 +1,11 @@
 ---
-title: Lichtbak als persoonlijke afbeeldingsgalerie in Adobe Experience Manager-middelen.
-description: Leer meer over Lichtbak als persoonlijke afbeeldingengalerie in Adobe Experience Manager-middelen.
+title: Lichtbak als persoonlijke afbeeldingsgalerie in [!DNL Adobe Experience Manager Assets].
+description: Meer informatie over Lichtbak als persoonlijke afbeeldingengalerie in Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '240'
 ht-degree: 1%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 1%
 
 Lichtbak is een speciaal type verzameling dat eenvoudig toegang biedt tot elementen. U kunt snel toegang krijgen tot Lichtbak om elementen toe te voegen of te verwijderen. Het fungeert als een persoonlijke galerie voor afbeeldingen.
 
-Als u Adobe Experience Manager Assets gebruikt, wordt er automatisch een lichtbak gemaakt wanneer u zich voor het eerst aanmeldt bij de toepassing. Dit is exclusief voor uw aanmelding. Andere gebruikers hebben geen toegang tot uw lichtbak.
+Als u een [!DNL Adobe Experience Manager Assets] gebruiker bent, wordt Lichtbak automatisch gecreeerd wanneer u eerste login aan de toepassing. Dit is exclusief voor uw aanmelding. Andere gebruikers hebben geen toegang tot uw lichtbak.
 
 ## Elementen toevoegen aan lichtbak {#adding-assets-to-lightbox}
 
-1. Selecteer in de gebruikersinterface Elementen de elementen die u aan Lichtbak wilt toevoegen.
+1. Selecteer in de [!DNL Assets] gebruikersinterface de elementen die u aan Lichtbak wilt toevoegen.
 1. Sleep de elementen naar de **[!UICONTROL Drop in Lightbox]** zone. Laat los wanneer de drop-zone actief wordt, en zijn etiket verandert in **[!UICONTROL Drop to Add]**.
 
    ![add_to_lightbox](assets/add_to_lightbox.png)

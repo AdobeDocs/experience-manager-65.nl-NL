@@ -1,23 +1,23 @@
 ---
-title: Ontwikkeling van proxy's
-description: Een proxy is een Experience Manager-instantie die proxyworkers gebruikt om taken te verwerken. Leer hoe u een proxy voor Experience Manager, ondersteunde bewerkingen, proxycomponenten en hoe u een aangepaste proxyworker kunt ontwikkelen.
+title: '[!DNL Assets] proxyontwikkeling'
+description: Een proxy is [!DNL Experience Manager] instance that uses proxy workers to process jobs. Learn how to configure an [!DNL Experience Manager] een proxy, ondersteunde bewerkingen, proxycomponenten en hoe een aangepaste proxyworker kan worden ontwikkeld.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '861'
 ht-degree: 0%
 
 ---
 
 
-# Ontwikkeling van proxy&#39;s {#assets-proxy-development}
+# [!DNL Assets] proxyontwikkeling {#assets-proxy-development}
 
-Adobe Experience Manager Assets gebruikt een proxy om verwerking voor bepaalde taken te distribueren.
+[!DNL Adobe Experience Manager Assets] gebruikt een volmacht om verwerking voor bepaalde taken te verdelen.
 
-Een proxy is een specifieke (en soms aparte) instantie van Experience Manager die proxy-workers gebruikt als processors die verantwoordelijk zijn voor het afhandelen van een taak en het maken van een resultaat. Een volmachtsarbeider kan voor een grote verscheidenheid van taken worden gebruikt. In het geval van een proxy voor middelen kan dit worden gebruikt voor het laden van elementen voor rendering binnen elementen. De [IDS-proxyworker](indesign.md) gebruikt bijvoorbeeld een [!DNL Adobe InDesign] Server om bestanden te verwerken voor gebruik in Middelen.
+Een proxy is een specifieke (en soms aparte) Experience Manager-instantie die proxyworkers gebruikt als processors die een taak afhandelen en een resultaat maken. Een volmachtsarbeider kan voor een grote verscheidenheid van taken worden gebruikt. In het geval van een [!DNL Assets] proxy kan dit worden gebruikt voor het laden van elementen voor rendering binnen elementen. De [IDS-proxyworker](indesign.md) gebruikt bijvoorbeeld een [!DNL Adobe InDesign] Server om bestanden te verwerken voor gebruik in Middelen.
 
-Wanneer de proxy een aparte instantie van Experience Manager is, wordt de belasting van de ontwerpinstantie(s) van Experience Manager verminderd. Middelen voeren standaard de elementverwerkingstaken uit in dezelfde JVM (extern via Proxy) om de belasting voor de ontwerpinstantie van Experience Manager te verminderen.
+Wanneer de proxy een aparte [!DNL Experience Manager] instantie is, wordt de belasting van de ontwerpinstantie(s) van de Experience Manager verminderd. Standaard [!DNL Assets] worden de elementverwerkingstaken in dezelfde JVM (extern via Proxy) uitgevoerd om de belasting op de Experience Manager-ontwerpinstantie te verminderen.
 
 ## Proxy (HTTP-toegang) {#proxy-http-access}
 
@@ -103,17 +103,17 @@ Hieronder ziet u een voorbeeld van API-gebruik:
  proxyJobService.removeJob(jobId);
 ```
 
-### Cloud Service Configurations {#cloud-service-configurations}
+### Configuraties van Cloud Servicen {#cloud-service-configurations}
 
 >[!NOTE]
 >
 >Referentiedocumentatie voor de proxy-API is beschikbaar onder [`com.day.cq.dam.api.proxy`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/proxy/package-summary.html).
 
-Zowel zijn de volmacht als de configuraties van de volmachtsarbeider beschikbaar via de configuraties van de wolkendiensten toegankelijk van de console van de **Hulpmiddelen** van Middelen of onder `/etc/cloudservices/proxy`. Van elke proxyworker wordt verwacht dat deze een knooppunt toevoegt onder `/etc/cloudservices/proxy` voor arbeidersspecifieke configuratiedetails (bijvoorbeeld `/etc/cloudservices/proxy/workername`).
+Zowel zijn de volmacht als de configuraties van de volmachtsarbeider beschikbaar via de configuraties van de wolkendiensten toegankelijk van de console van [!DNL Assets] Hulpmiddelen **of onder** `/etc/cloudservices/proxy`. Van elke proxyworker wordt verwacht dat deze een knooppunt toevoegt onder `/etc/cloudservices/proxy` voor arbeidersspecifieke configuratiedetails (bijvoorbeeld `/etc/cloudservices/proxy/workername`).
 
 >[!NOTE]
 >
->Zie [Configuratie](indesign.md#configuring-the-proxy-worker-for-indesign-server) van de Worker van de Volmacht van de Server InDesign en configuratie [van de Diensten van de](../sites-developing/extending-cloud-config.md) Wolk voor meer informatie.
+>Zie de configuratie [van de Worker van de Volmacht](indesign.md#configuring-the-proxy-worker-for-indesign-server) InDesign Server en de configuratie [van](../sites-developing/extending-cloud-config.md) Cloud Servicen voor meer informatie.
 
 Hieronder ziet u een voorbeeld van API-gebruik:
 
@@ -132,9 +132,9 @@ Hieronder ziet u een voorbeeld van API-gebruik:
 
 ### Een aangepaste proxyworker ontwikkelen {#developing-a-customized-proxy-worker}
 
-De [IDS-proxy-worker](indesign.md) is een voorbeeld van een Assets-proxy-worker die al buiten het vak is geplaatst om de verwerking van InDesign-elementen uit te besteden.
+De [IDS volmachtsarbeider](indesign.md) is een voorbeeld van een [!DNL Assets] volmachtsarbeider die reeds uit-van-de-doos wordt verstrekt om de verwerking van activa van de InDesign uit te besteden.
 
-U kunt ook uw eigen de volmachtsarbeider van Activa ontwikkelen en vormen om een gespecialiseerde worker tot stand te brengen om uw de verwerkingstaken van Activa te verzenden en uit te besteden.
+U kunt ook uw eigen [!DNL Assets] proxyworker ontwikkelen en configureren om een gespecialiseerde worker te maken die uw [!DNL Assets] verwerkingstaken verzendt en uitbesteedt.
 
 Als u uw eigen aangepaste proxyworker wilt instellen, moet u:
 
@@ -156,7 +156,7 @@ In het volgende diagram en in de volgende stappen wordt gedetailleerd beschreven
 
 >[!NOTE]
 >
->In de volgende stappen worden equivalenten van InDesign als referentievoorbeelden aangegeven.
+>In de volgende stappen worden equivalenten van InDesign aangegeven als referentievoorbeelden.
 
 1. Er wordt een [verkooptaak](https://sling.apache.org/site/eventing-and-jobs.html) gebruikt, dus u moet een taakonderwerp voor uw gebruiksgeval definiëren.
 
@@ -176,7 +176,7 @@ In het volgende diagram en in de volgende stappen wordt gedetailleerd beschreven
 
 >[!NOTE]
 >
->Wat het raamwerk van de volmacht van Activa niet uit-de-doos verstrekt is het poolmechanisme.
+>Wat het [!DNL Assets] volmachtskader niet uit-van-de-doos verstrekt is het poolmechanisme.
 >
 >De [!DNL InDesign] integratie staat de toegang van een pool van [!DNL InDesign] servers (IDSPool) toe. Deze pooling is specifiek voor [!DNL InDesign] integratie en maakt geen deel uit van het [!DNL Assets] proxykader.
 
@@ -184,4 +184,4 @@ In het volgende diagram en in de volgende stappen wordt gedetailleerd beschreven
 >
 >Synchronisatie van resultaten:
 >
->Bij n instanties die dezelfde proxy gebruiken, blijft het verwerkingsresultaat bij de proxy. Het is de taak van de client (Experience Manager-auteur) om het resultaat aan te vragen met dezelfde unieke taak-id als die aan de client is gegeven bij het maken van een taak. De proxy haalt de taak gewoon uit en zorgt ervoor dat het resultaat klaar is om te worden aangevraagd.
+>Bij n instanties die dezelfde proxy gebruiken, blijft het verwerkingsresultaat bij de proxy. Het is de taak van de client (Experience Manager Auteur) om het resultaat aan te vragen met dezelfde unieke taak-id als die aan de client is gegeven bij het maken van een taak. De proxy haalt de taak gewoon uit en zorgt ervoor dat het resultaat klaar is om te worden aangevraagd.

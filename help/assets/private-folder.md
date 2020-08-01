@@ -1,11 +1,11 @@
 ---
-title: Een persoonlijke map maken en delen in Adobe Experience Manager.
-description: Leer hoe u een persoonlijke map maakt in de Adobe Experience Manager Assets en deze deelt met andere gebruikers en hoe u hen verschillende rechten toekent.
+title: Een persoonlijke map maken en delen in [!DNL Adobe Experience Manager].
+description: Leer hoe u een persoonlijke map maakt in [!DNL Adobe Experience Manager Assets] de toepassing en deze deelt met andere gebruikers en hoe u deze map verschillende rechten toekent.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '480'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # Persoonlijke map delen {#private-folder-sharing}
 
-In de gebruikersinterface Adobe Experience Manager Assets kunt u een persoonlijke map maken die exclusief voor u beschikbaar is. U kunt deze persoonlijke map delen met andere gebruikers en deze gebruikers verschillende rechten geven. Op basis van het machtigingsniveau dat u toewijst, kunnen gebruikers verschillende taken op de map uitvoeren, bijvoorbeeld de middelen in de map weergeven of de elementen bewerken.
+U kunt een persoonlijke map maken in de [!DNL Adobe Experience Manager Assets] gebruikersinterface die exclusief voor u beschikbaar is. U kunt deze persoonlijke map delen met andere gebruikers en deze gebruikers verschillende rechten geven. Op basis van het machtigingsniveau dat u toewijst, kunnen gebruikers verschillende taken op de map uitvoeren, bijvoorbeeld de middelen in de map weergeven of de elementen bewerken.
 
 >[!NOTE]
 >
 >De privé omslag heeft minstens één lid met de rol van de Eigenaar.
 
-1. Klik in de middelenconsole op **[!UICONTROL Create]** de werkbalk en kies een optie in het **[!UICONTROL Folder]** menu.
+1. Klik in de [!DNL Assets] console op **[!UICONTROL Create]** de werkbalk en kies vervolgens **[!UICONTROL Folder]** in het menu.
 
    ![Map met elementen maken](assets/Create-folder.png)
 
@@ -49,9 +49,9 @@ In de gebruikersinterface Adobe Experience Manager Assets kunt u een persoonlijk
    >
    >De privé omslag heeft minstens één lid met de rol van de Eigenaar. Daarom kan de beheerder niet alle eigenaarleden uit een privé omslag verwijderen. Nochtans, om bestaande eigenaars (en beheerder zelf) uit de privé omslag te verwijderen moet de beheerder een andere gebruiker als eigenaar toevoegen.
 
-1. Klik op **[!UICONTROL Save]**. Afhankelijk van de rol die u toewijst, wordt aan de gebruiker een reeks rechten toegewezen aan uw persoonlijke map wanneer de gebruiker zich aanmeldt bij Middelen.
+1. Klik op **[!UICONTROL Save]**. Afhankelijk van de rol die u toewijst, krijgt de gebruiker een reeks rechten toegewezen aan uw persoonlijke map wanneer de gebruiker zich aanmeldt bij [!DNL Assets].
 1. Klik **[!UICONTROL Ok]** om het bevestigingsbericht te sluiten.
-1. De gebruiker met wie u de map deelt, ontvangt een melding voor delen. Meld u aan bij Middelen met de referenties van de gebruiker om het bericht weer te geven.
+1. De gebruiker met wie u de map deelt, ontvangt een melding voor delen. Meld u aan [!DNL Assets] met de referenties van de gebruiker om het bericht weer te geven.
 
    ![chlimage_1-416](assets/chlimage_1-416.png)
 

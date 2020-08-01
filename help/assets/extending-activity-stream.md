@@ -1,23 +1,23 @@
 ---
-title: Elementen integreren met activiteitsstroom
-description: Beschrijft de opnamemogelijkheden van de Manager van de Ervaring en hoe te om het te vormen om specifieke gebeurtenissen te registreren.
+title: ' [!DNL Assets] Integreren met activiteitsstroom.'
+description: Beschrijft de opnamemogelijkheden [!DNL Experience Manager] van en hoe te om het te vormen om specifieke gebeurtenissen te registreren.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 566add37d6dd7efe22a99fc234ca42878f050aee
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '253'
 ht-degree: 1%
 
 ---
 
 
-# Elementen integreren met activiteitsstroom {#integrating-assets-with-activity-stream}
+# Integreren [!DNL Assets] met activiteitsstroom {#integrating-assets-with-activity-stream}
 
-Gebruikers van Adobe Experience Manager-middelen voeren veel handelingen uit, zoals het maken, uploaden en verwijderen van middelen. Deze acties kunnen worden opgenomen zodat u een geschiedenis kunt verstrekken van wat door een gebruiker is gedaan. In deze sectie worden de opnamemogelijkheden van Experience Manager beschreven en de manier waarop u Experience Manager kunt configureren om specifieke gebeurtenissen vast te leggen.
+[!DNL Adobe Experience Manager Assets] gebruikers voeren veel handelingen uit, zoals het maken, uploaden en verwijderen van elementen. Deze acties kunnen worden opgenomen zodat u een geschiedenis kunt verstrekken van wat door een gebruiker is gedaan. In deze sectie worden de opnamemogelijkheden van [!DNL Experience Manager] en het configureren [!DNL Experience Manager] van specifieke gebeurtenissen beschreven.
 
 ## Prestatieoverwegingen en standaardgedrag {#performance-considerations-and-default-behavior}
 
-Deze integratie kan CPU- en schijfruimte in beslag nemen, bijvoorbeeld bij het importeren van grote hoeveelheden. Om deze redenen is de integratie van Elementen met de Activiteitenstroom standaard uitgeschakeld.
+Deze integratie kan CPU- en schijfruimte in beslag nemen, bijvoorbeeld bij het importeren van grote hoeveelheden. Om deze redenen is de [!DNL Assets] integratie met de activiteitsstroom standaard uitgeschakeld.
 
 ## Ondersteunde handelingsgebeurtenissen {#supported-action-events}
 
@@ -39,7 +39,7 @@ De volgende gebeurtenissen kunnen worden geconfigureerd om te worden opgenomen:
 * Submiddel bijgewerkt (SUBASSET_UPDATED)
 * Subelement verwijderd (SUBASSET_REMOVED)
 
-## Assets-gebeurtenissen configureren {#configuring-aem-assets-events-recording}
+## Gebeurtenissen [!DNL Assets] opnemen configureren {#configuring-aem-assets-events-recording}
 
 De [webconsole](/help/sites-deploying/configuring-osgi.md) biedt toegang tot de afstemming van gebeurtenissen in Assets. Ga als volgt te werk om de Gebeurtenisrecorder voor middelen te configureren:
 

@@ -1,11 +1,11 @@
 ---
 title: 'Asset Insights '
-description: Leer hoe u met de functie Asset Insights gebruikersbeoordelingen en gebruiksstatistieken kunt bijhouden van afbeeldingen die worden gebruikt in websites van derden, marketingcampagnes en creatieve oplossingen van Adobe.
+description: Leer hoe u met Asset Insights gebruikersbeoordelingen en gebruiksstatistieken kunt bijhouden van afbeeldingen die worden gebruikt in websites van derden, marketingcampagnes en creatieve oplossingen voor Adobe.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '698'
+source-wordcount: '692'
 ht-degree: 2%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 2%
 
 # Asset Insights {#asset-insights}
 
-Met de functie Asset Insights kunt u gebruikersbeoordelingen en gebruiksstatistieken bijhouden van afbeeldingen die worden gebruikt in websites van derden, marketingcampagnes en creatieve oplossingen van Adobe. Het helpt inzichten betreffende hun prestaties en populariteit af te leiden.
+Met Asset Insights kunt u gebruikersbeoordelingen en gebruiksstatistieken bijhouden van afbeeldingen die worden gebruikt in websites van derden, marketingcampagnes en creatieve oplossingen voor Adobe. Het helpt inzichten betreffende hun prestaties en populariteit af te leiden.
 
-Met Elementinzichten worden gegevens over gebruikersactiviteit vastgelegd, zoals het aantal keer dat een afbeelding wordt beoordeeld, geklikt en afbeeldingen worden afgedrukt (het aantal keer dat een afbeelding op de website wordt geladen). Er worden scores toegewezen aan afbeeldingen op basis van deze statistieken. U kunt de scores en de prestatiesstatistieken gebruiken om populaire beelden voor opneming in catalogi, marketing campagnes, etc. te selecteren. U kunt zelfs archiverings en vergunningsvernieuwing beleid formuleren dat op deze statistieken wordt gebaseerd.
+[!DNL Assets] Met deze inzichten worden gegevens over gebruikersactiviteit vastgelegd, zoals het aantal keren dat een afbeelding wordt beoordeeld, geklikt en de afbeeldingen worden afgedrukt (het aantal keer dat een afbeelding op de website wordt geladen). Er worden scores toegewezen aan afbeeldingen op basis van deze statistieken. U kunt de scores en de prestatiesstatistieken gebruiken om populaire beelden voor opneming in catalogi, marketing campagnes, etc. te selecteren. U kunt zelfs archiverings en vergunningsvernieuwing beleid formuleren dat op deze statistieken wordt gebaseerd.
 
-Als u met behulp van Assets gebruiksstatistieken wilt vastleggen voor afbeeldingen van een website, moet u de insluitcode voor de afbeelding opnemen in de websitecode.
+Voor [!DNL Assets] inzichten om gebruiksstatistieken voor afbeeldingen van een website vast te leggen, moet u de insluitcode voor de afbeelding opnemen in de websitecode.
 
-Als u het gebruik van bedrijfsgegevens voor elementen wilt laten weergeven, moet u eerst de functie configureren om rapportgegevens van Adobe Analytics op te halen. Zie [Elementinzichten](/help/assets/touch-ui-configuring-asset-insights.md)configureren voor meer informatie.
+Om de statistieken van het de vertoningsgebruik van Activa van Inzichten voor activa te laten, vorm eerst de eigenschap om rapportgegevens van Adobe Analytics te halen. Zie [Elementinzichten](/help/assets/touch-ui-configuring-asset-insights.md)configureren voor meer informatie.
 
 >[!NOTE]
 >
@@ -29,7 +29,7 @@ Als u het gebruik van bedrijfsgegevens voor elementen wilt laten weergeven, moet
 
 U kunt de Asset Insights-scores van de metagegevenspagina weergeven.
 
-1. Selecteer de afbeelding in de gebruikersinterface Elementen (UI) en klik op **[!UICONTROL Properties]** de werkbalk.
+1. Selecteer de afbeelding in de [!DNL Assets] gebruikersinterface (UI) en klik op **[!UICONTROL Properties]** de werkbalk.
 1. Klik op het **[!UICONTROL Insights]** tabblad op de pagina Eigenschappen.
 1. Controleer de gebruiksdetails voor het element op het **[!UICONTROL Insights]** tabblad. In de **[!UICONTROL Score]** sectie worden het totale gebruik en de prestatiesbronnen van een element beschreven.
 
@@ -43,11 +43,12 @@ U kunt de Asset Insights-scores van de metagegevenspagina weergeven.
    * **Web en mobiel**: Het aantal keren dat het middel deel uitmaakte van websites en apps
    * **Sociaal**: Het aantal keren dat het middel is gebruikt in oplossingen, zoals Adobe Social en Adobe Campaign
    * **E-mail**: Het aantal keren dat het middel in e-mailcampagnes is gebruikt
+
    ![usage_statistics](assets/usage_statistics.png)
 
    >[!NOTE]
    >
-   >Omdat de functie Asset Insights de gegevens van Solutions doorgaans periodiek van Adobe Analytics ophaalt, wordt in de sectie Solutions mogelijk niet de meest recente gegevens weergegeven. De periode waarvoor de gegevens worden weergegeven, is afhankelijk van het schema van de ophaalbewerking die Asset Insights uitvoert om Analytics-gegevens op te halen.
+   >Omdat de functie Asset Insights doorgaans de gegevens van Solutions van Adobe Analytics ophaalt, wordt in de sectie Oplossingen mogelijk niet de meest recente gegevens weergegeven. De periode waarvoor de gegevens worden weergegeven, is afhankelijk van het schema van de ophaalbewerking die Asset Insights uitvoert om Analytics-gegevens op te halen.
 
 1. To view performance statistics for the asset graphically over a period of time, select period in the **[!UICONTROL Performance Statistics]** section. De details, inclusief klikken en impressies, worden getoond als trendlijnen van een grafiek.
 
@@ -65,15 +66,15 @@ U kunt de Asset Insights-scores van de metagegevenspagina weergeven.
 
 You can view scores of all assets within a folder simultaneously using **[!UICONTROL Insights View]**.
 
-1. Navigeer in de gebruikersinterface Elementen naar de map met de elementen waarvoor u inzichten wilt weergeven.
+1. Navigeer in de [!DNL Assets] gebruikersinterface naar de map met de elementen waarvoor u inzichten wilt weergeven.
 1. Klik op Indeling op de werkbalk en kies **[!UICONTROL Insights View]**.
 1. Op de pagina worden gebruiksscores voor de elementen weergegeven. Vergelijk de ratings van de verschillende activa en teken inzichten.
 
 ## Achtergrondtaak plannen {#scheduling-background-job}
 
-Asset Insights haalt op periodieke wijze gebruiksgegevens voor middelen op uit Adobe Analytics-rapportreeksen. Door gebrek, stelt de Inzichten van Activa een achtergrondbaan om de 24 uur bij 2 AM aan de ophaalgegevens in werking. Nochtans, kunt u zowel de frequentie als de tijd wijzigen door de **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** dienst van de Webconsole te vormen.
+Asset Insights haalt op periodieke wijze gebruiksgegevens voor middelen van Adobe Analytics-rapportensuites op. Door gebrek, stelt de Inzichten van Activa een achtergrondbaan om de 24 uur bij 2 AM aan de ophaalgegevens in werking. Nochtans, kunt u zowel de frequentie als de tijd wijzigen door de **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** dienst van de Webconsole te vormen.
 
-1. Klik op het Experience Manager-logo en ga naar **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
+1. Click the [!DNL Experience Manager] logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 1. Open de **[!UICONTROL Adobe CQ DAM Asset Performance Report Sync Job]** serviceconfiguratie.
 
    ![chlimage_1-99](assets/chlimage_1-304.png)

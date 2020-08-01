@@ -1,26 +1,26 @@
 ---
-title: Elementen van HTTP-API in [!DNL Adobe Experience Manager].
+title: '[!DNL Assets] HTTP API in [!DNL Adobe Experience Manager].'
 description: Digitale elementen maken, lezen, bijwerken, verwijderen en beheren met de HTTP API in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f29eeb54c115514947a11bbc8a9e9e7df7cd082b
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '1571'
+source-wordcount: '1567'
 ht-degree: 0%
 
 ---
 
 
-# HTTP-API voor assets {#assets-http-api}
+# [!DNL Assets] HTTP-API {#assets-http-api}
 
 ## Overzicht {#overview}
 
-Met de HTTP-API voor middelen kunt u CRUD-bewerkingen (read-read-update-delete) maken voor digitale elementen, waaronder metagegevens, vertoningen en opmerkingen, en voor gestructureerde inhoud met behulp van [!DNL Experience Manager] Content Fragments. Deze wordt weergegeven op `/api/assets` en geïmplementeerd als REST API. Dit omvat [ondersteuning voor inhoudsfragmenten](/help/assets/assets-api-content-fragments.md).
+Met de [!DNL Assets] HTTP-API kunt u CRUD-bewerkingen (read-read-update-delete) maken voor digitale elementen, waaronder metagegevens, vertoningen en opmerkingen, en voor gestructureerde inhoud met behulp van [!DNL Experience Manager] Content Fragments. Deze wordt weergegeven op `/api/assets` en geïmplementeerd als REST API. Dit omvat [ondersteuning voor inhoudsfragmenten](/help/assets/assets-api-content-fragments.md).
 
 Toegang krijgen tot de API:
 
 1. Open het API-servicedocument op `https://[hostname]:[port]/api.json`.
-1. Volg de koppelingen van de service Middelen die naar `https://[hostname]:[server]/api/assets.json`leiden.
+1. Volg de [!DNL Assets] servicekoppeling waarnaar wordt verwezen `https://[hostname]:[server]/api/assets.json`.
 
 De API-reactie is een JSON-bestand voor sommige MIME-typen en een antwoordcode voor alle MIME-typen. Het JSON-antwoord is optioneel en is mogelijk niet beschikbaar, bijvoorbeeld voor PDF-bestanden. Vertrouw op de antwoordcode voor verdere analyse of acties.
 
@@ -34,7 +34,7 @@ Zie Ondersteuning van [inhoudsfragmenten in de HTTP-API](/help/assets/assets-api
 
 ## Gegevensmodel {#data-model}
 
-De HTTP-API voor middelen stelt twee belangrijke elementen, mappen en elementen beschikbaar (voor standaardelementen).
+De [!DNL Assets] HTTP API stelt twee belangrijke elementen, omslagen en activa (voor standaardactiva) bloot.
 
 Bovendien, stelt het meer gedetailleerde elementen voor de modellen van douanegegevens bloot die gestructureerde inhoud in de Fragments van de Inhoud beschrijven. Zie Gegevensmodellen [van](/help/assets/assets-api-content-fragments.md#content-fragments) inhoudsfragmenten voor meer informatie.
 
@@ -75,7 +75,7 @@ In [!DNL Experience Manager] een map zijn de volgende componenten beschikbaar:
 * Eigenschappen.
 * Koppelingen.
 
-De HTTP-API voor middelen bevat de volgende functies:
+De [!DNL Assets] HTTP-API bevat de volgende functies:
 
 * [Haal een mappenlijst](#retrieve-a-folder-listing)op.
 * [Maak een map](#create-a-folder).

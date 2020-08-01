@@ -3,9 +3,9 @@ title: Verwante activa
 description: Leer hoe u digitale elementen die gemeenschappelijke kenmerken delen, koppelt. Maak ook bronafhankelijke relaties tussen digitale elementen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '611'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Met deze functie hebt u de flexibiliteit om een PDF- of JPG-bestand met lage res
 
 ## Relatieve elementen {#relating-assets}
 
-1. Open vanuit de Experience Manager-interface de **[!UICONTROL Properties]** pagina voor een element dat u wilt koppelen.
+1. Open vanuit de [!DNL Experience Manager] interface de **[!UICONTROL Properties]** pagina voor een element dat u wilt koppelen.
 
    ![de eigenschappenpagina van een element openen om het element te koppelen](assets/asset-properties-relate-assets.png)
 
@@ -65,9 +65,9 @@ Met deze functie hebt u de flexibiliteit om een PDF- of JPG-bestand met lage res
 
 1. Klik **[!UICONTROL OK]** om het dialoogvenster te sluiten. De elementen waarvoor u relaties hebt verwijderd, worden verwijderd uit de lijst met verwante elementen onder de **[!UICONTROL Related]** sectie.
 
-## Verwante elementen vertalen {#translating-related-assets}
+## Gerelateerde elementen vertalen {#translating-related-assets}
 
-Het maken van bron-/afgeleide relaties tussen elementen met de functie Verwante elementen is ook handig in vertaalworkflows. Wanneer u een vertaalworkflow uitvoert op een afgeleid element, worden [!DNL Experience Manager Assets] automatisch alle elementen opgehaald waarnaar het bronbestand verwijst en dat dit element bevat voor vertaling. Op deze manier wordt het element waarnaar door het bronelement wordt verwezen, samen met de bron en afgeleide elementen omgezet. Neem bijvoorbeeld een scenario waarin uw Engelse taalkopie een afgeleid element en het bronbestand van dat element bevat, zoals wordt weergegeven.
+Het maken van bron-/afgeleide relaties tussen elementen met behulp van de functie voor gerelateerde elementen is ook handig in vertaalworkflows. Wanneer u een vertaalworkflow uitvoert op een afgeleid element, worden [!DNL Experience Manager Assets] automatisch alle elementen opgehaald waarnaar het bronbestand verwijst en dat dit element bevat voor vertaling. Op deze manier wordt het element waarnaar door het bronelement wordt verwezen, samen met de bron en afgeleide elementen omgezet. Neem bijvoorbeeld een scenario waarin uw Engelse taalkopie een afgeleid element en het bronbestand van dat element bevat, zoals wordt weergegeven.
 
 ![chlimage_1-281](assets/chlimage_1-281.png)
 

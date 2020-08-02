@@ -1,13 +1,8 @@
 ---
 title: Opmerkingen bij de release AEM Sites
 description: Opmerkingen bij de release specifiek voor Adobe Experience Manager 6.5 Sites.
-uuid: 676ead61-3d97-4f23-b616-c647d590bc8f
-contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.4
-discoiquuid: f82e9bd4-f7b6-492d-8e02-593e74fa1058
-docset: aem65
 translation-type: tm+mt
-source-git-commit: a430c4de89bde3b907d342106465d3b5a7c75cc8
+source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
 workflow-type: tm+mt
 source-wordcount: '856'
 ht-degree: 0%
@@ -15,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# Opmerkingen bij de release AEM Sites{#aem-sites-release-notes}
+# Opmerkingen bij de release AEM Sites {#aem-sites-release-notes}
 
 Zie het volgende voor AEM Sites 6.5 verbeteringen in detail:
 
@@ -27,10 +22,10 @@ Zie het volgende voor AEM Sites 6.5 verbeteringen in detail:
 
    * operator &quot;in&quot; voor tekenreeksen, arrays en objecten:
 
-      ```
+      ```html
       ${'a' in 'abc’}
-       ${100 in myArray}
-       ${'a' in myObject}
+      ${100 in myArray}
+      ${'a' in myObject}
       ```
 
    * Declaraties van variabelen met subset van gegevens:
@@ -41,10 +36,10 @@ Zie het volgende voor AEM Sites 6.5 verbeteringen in detail:
 
    * Id&#39;s voor terugloop van gegevensdoorhaling:
 
-      ```
+      ```html
       <div data-sly-unwrap.isUnwrapped="${myCondition || myOtherCondition}">
-       text <span data-sly-test="${isUnwrapped}>is unwrapped</code>
-       </div>
+      text <span data-sly-test="${isUnwrapped}>is unwrapped</code>
+      </div>
       ```
 
    * Ondersteuning voor negatieve getallen
@@ -61,7 +56,7 @@ Zie het volgende voor AEM Sites 6.5 verbeteringen in detail:
 
 >[!CAUTION]
 >
->AEM bevat versie 1.12.4 van de jQuery-bibliotheek voor maximale compatibiliteit met bestaande aangepaste code. Adobe heeft wijzigingen aangebracht om bekende beveiligingsproblemen te verhelpen.
+>AEM bevat versie 1.12.4 van de jQuery-bibliotheek voor maximale compatibiliteit met bestaande aangepaste code. Adobe heeft wijzigingen aangebracht om bekende beveiligingsproblemen aan te pakken.
 
 ## Sitebeheer {#site-administration}
 
@@ -115,16 +110,16 @@ Zie het volgende voor AEM Sites 6.5 verbeteringen in detail:
 
 >[!CAUTION]
 >
->at.js 2.x wordt niet ondersteund door AEM op het punt van de AEM 6.5-release. Gebruik de nieuwste versie van at.js 1.x
+>at.js 2.x wordt niet ondersteund met AEM op het punt van de AEM 6.5-release. Gebruik de nieuwste versie van at.js 1.x
 
-* Adobe Target-integratie kan nu de Target Standard API gebruiken. Eerdere versies van AEM maken gebruik van de Target Classic HTTP API, die nu is afgekeurd.
-* Adobe Target `mbox.js` versie 63 is inbegrepen. Adobe raadt u ten zeerste aan om over te schakelen op `at.js` v1.x.
-* `at.js` versie 1.5.0 is nu inbegrepen. Adobe raadt u aan [Adobe Experience Platform starten](https://www.adobe.com/experience-platform/launch.html) te gebruiken om versie `at.js` 1.x op de site in te stellen.
+* Adobe Target-integratie kan nu de Target Standard API gebruiken. Eerdere versies van AEM gebruiken de Classic HTTP API van Target, die nu is afgekeurd.
+* Adobe Target `mbox.js` versie 63 is inbegrepen. Adobe beveelt ten zeerste aan om over te schakelen op `at.js` v1.x.
+* `at.js` versie 1.5.0 is nu inbegrepen. Adobe raadt u aan [Adobe Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) te gebruiken om versie `at.js` 1.x op de site te plaatsen.
 
 ## AEM en Adobe Analytics {#aem-amp-adobe-analytics}
 
 * `s_code.js` H.27.5 is inbegrepen. Adobe raadt u aan over te schakelen op `AppMeasurement.js`
-* `AppMeasurement.js` v1.8.0 is inbegrepen. Adobe raadt u aan [Adobe Experience Platform starten](https://www.adobe.com/experience-platform/launch.html) te gebruiken om AppMeasurement.js op de site te plaatsen.
+* `AppMeasurement.js` v1.8.0 is inbegrepen. Adobe raadt aan [Adobe Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) te gebruiken om AppMeasurement.js op de site te plaatsen.
 
 ## AEM en handel {#aem-commerce}
 

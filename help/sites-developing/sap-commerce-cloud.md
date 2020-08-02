@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 96dc0c1a-b21d-480a-addf-c3d0348bd3ad
 translation-type: tm+mt
-source-git-commit: 316e53720071da41cc4ac5ae62c280ad3804a8f4
+source-git-commit: 2dad235c94c73c1c624fa05ff86a7260d4d4a01b
 workflow-type: tm+mt
-source-wordcount: '2331'
+source-wordcount: '2329'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,7 @@ ht-degree: 0%
 Het integratieframework bevat een integratielaag met een API. Zo kunt u:
 
 * plug-in een eCommerce-systeem en haal productgegevens naar AEM
+
 * bouwen AEM componenten voor handelsmogelijkheden onafhankelijk van de specifieke eCommerce-motor
 
 ![chlimage_1-11](assets/chlimage_1-11a.png)
@@ -56,6 +57,7 @@ Het eCommerce-kader kan worden gebruikt met elke oplossing voor e-handel, waarbi
    * De `adaptTo` implementatie zoekt naar een `cq:commerceProvider` eigenschap in de hiërarchie van de bron:
 
       * Indien gevonden, wordt de waarde gebruikt om de raadpleging van de handelsdienst te filtreren.
+
       * Indien niet gevonden, wordt de hoogste commerciële dienst gebruikt.
    * Een `cq:Commerce` mixin wordt gebruikt zodat `cq:commerceProvider` kan aan sterk-getypte middelen worden toegevoegd.
 
@@ -69,7 +71,7 @@ Het eCommerce-kader kan worden gebruikt met elke oplossing voor e-handel, waarbi
 Zie de volgende voorbeelden:
 
 | `cq:commerceProvider = geometrixx` | in een standaard AEM installatie is een specifieke implementatie vereist; bijvoorbeeld het geometrixx-voorbeeld, dat minimale extensies voor de algemene API bevat |
-|---|---|
+|--- |--- |
 | `cq:commerceProvider = hybris` | hybrusimplementatie |
 
 ### Voorbeeld {#example}
@@ -117,6 +119,7 @@ Voor de ontwikkeling van Hybris 4 is het volgende vereist:
 * In de OSGi configuratiemanager:
 
    * Schakel Hybris 5-ondersteuning voor de parser Standaardreactie uit.
+
    * Zorg ervoor dat de dienst van de Handler van de Authentificatie van Hybris Basis een lagere de dienstrangschikking heeft dan de dienst van de Handler van Hybris OAuth.
 
 ### Sessieafhandeling {#session-handling}
@@ -124,7 +127,9 @@ Voor de ontwikkeling van Hybris 4 is het volgende vereist:
 hybris gebruikt een gebruikerssessie om informatie op te slaan , zoals het winkelwagentje van de klant . De sessie-id wordt geretourneerd van hybris in een `JSESSIONID` cookie die moet worden verzonden bij volgende aanvragen naar hybris. Om te voorkomen dat de sessie-id in de opslagplaats wordt opgeslagen, wordt deze gecodeerd in een ander cookie dat in de browser van de winkels wordt opgeslagen. De volgende stappen worden uitgevoerd:
 
 * Op het eerste verzoek wordt geen cookie ingesteld op verzoek van de klant; er wordt dus een verzoek naar de instantie hybris verzonden om een sessie te maken.
+
 * De sessiecookies worden uit de reactie geëxtraheerd, gecodeerd in een nieuw cookie (bijvoorbeeld `hybris-session-rest`) en ingesteld op de reactie op de gebruiker. De codering in een nieuwe cookie is vereist, omdat de oorspronkelijke cookie alleen geldig is voor een bepaald pad en anders niet vanuit de browser wordt teruggestuurd in volgende aanvragen. De padgegevens moeten ook worden toegevoegd aan de waarde van het cookie.
+
 * Op volgende aanvragen worden de cookies gedecodeerd uit de `hybris-session-<*xxx*>` cookies en ingesteld op de HTTP-client die wordt gebruikt om gegevens van hybris aan te vragen.
 
 >[!NOTE]
@@ -136,6 +141,7 @@ hybris gebruikt een gebruikerssessie om informatie op te slaan , zoals het winke
 * Deze sessie &quot;bezit&quot; de **winkelwagen**
 
    * toevoegen/verwijderen/enz. uitvoeren
+
    * de verschillende berekeningen op het karretje uitvoert;
 
       `commerceSession.getProductPrice(Product product)`
@@ -145,6 +151,7 @@ hybris gebruikt een gebruikerssessie om informatie op te slaan , zoals het winke
    `CommerceSession.getUserContext()`
 
 * Is ook eigenaar van de **betalingsverwerkingsverbinding**
+
 * Heeft ook de **uitvoeringsverbinding**
 
 ### Productsynchronisatie en -publicatie {#product-synchronization-and-publishing}
@@ -163,33 +170,34 @@ Productgegevens die in hybris worden bewaard, moeten in AEM beschikbaar zijn. He
 * Veranderingen in de hybris in de catalogus worden via een diervoeder aan AEM gemeld en vervolgens doorgegeven aan AEM b)
 
    * Product toegevoegd/verwijderd/gewijzigd ten opzichte van catalogusversie.
+
    * Goedgekeurd product.
 
 * De hybris-extensie biedt een pollingimporter (&quot;hybris&quot;-schema), die kan worden geconfigureerd om wijzigingen met een opgegeven interval in AEM te importeren (bijvoorbeeld elke 24 uur waarin het interval in seconden wordt opgegeven):
 
-   * 
-
-      ```js
-      http://localhost:4502/content/geometrixx-outdoors/en_US/jcr:content.json
-       {
-       * "jcr:mixinTypes": ["cq:PollConfig"],
-       * "enabled": true,
-       * "source": "hybris:outdoors",
-       * "jcr:primaryType": "cq:PageContent",
-       * "interval": 86400
-       }
-      ```
+   ```JavaScript
+       http://localhost:4502/content/geometrixx-outdoors/en_US/jcr:content.json
+        {
+        * "jcr:mixinTypes": ["cq:PollConfig"],
+        * "enabled": true,
+        * "source": "hybris:outdoors",
+        * "jcr:primaryType": "cq:PageContent",
+        * "interval": 86400
+        }
+   ```
 
 * De catalogusconfiguratie in AEM herkent **nog niet actieve** en **online** catalogusversies.
 
 * Voor het synchroniseren van producten tussen catalogusversies moet de bijbehorende AEM (a, c) worden geactiveerd.
 
    * Als u een product wilt toevoegen aan een versie van een **online** catalogus, moet de productpagina worden geactiveerd.
+
    * Voor het verwijderen van een product is deactivering vereist.
 
 * Voor het activeren van een pagina in AEM (c) is een controle (b) vereist. Dit is alleen mogelijk als
 
    * Het product bevindt zich in een versie van de **online** catalogus voor productpagina&#39;s.
+
    * De producten waarnaar wordt verwezen, zijn beschikbaar in een **onlinecatalogusversie** voor andere pagina&#39;s (bijvoorbeeld campagnepagina&#39;s).
 
 * Geactiveerde productpagina&#39;s hebben toegang tot de **online** versie (d) van de productgegevens.
@@ -213,7 +221,6 @@ Elke productbron kan worden vertegenwoordigd door een `Product API`. De meeste a
 >[!NOTE]
 >
 >In feite wordt een variant as bepaald door wat er `Product.getVariantAxes()` terugkeert:
->
 >* hybris definieert het voor de implementatie van hybris
 >
 >
@@ -224,7 +231,7 @@ Hoewel producten (in het algemeen) vele variantassen kunnen hebben, behandelt de
    >
 1. plus één of meer
 >
->   
+>
 Deze extra variant wordt geselecteerd via de `variationAxis` eigenschap van de productreferentie (gewoonlijk `color` voor Geometrixx Outdoors).
 
 #### Productverwijzingen en productgegevens {#product-references-and-product-data}
@@ -237,7 +244,7 @@ In het algemeen:
 
 Er moet een 1:1-kaart zijn tussen productvariaties en productgegevensknooppunten.
 
-Productverwijzingen moeten ook een knooppunt hebben voor elke gepresenteerde variatie - maar er is geen verplichting om alle variaties weer te geven. Als een product bijvoorbeeld S, M, L-variaties heeft, kunnen de productgegevens dat zijn.
+Productverwijzingen moeten ook een knooppunt hebben voor elke gepresenteerde variatie - maar er is geen verplichting om alle variaties weer te geven. Als een product bijvoorbeeld S, M, L-variaties heeft, kunnen de productgegevens als volgt zijn:
 
 ```shell
 etc
@@ -249,7 +256,7 @@ etc
 |       |──shirt-l
 ```
 
-Een &quot;Big and Tall&quot;-catalogus kan alleen bestaan.
+Een catalogus van het type &quot;Big and Tall&quot; kan alleen het volgende bevatten:
 
 ```shell
 content
@@ -335,24 +342,30 @@ public class AxisFilter implements VariantFilter {
 
 * **Algemeen opslagmechanisme**
 
-   * Productknooppunten zijn niet:ongestructureerd.
+   * Productknooppunten zijn `nt:unstructured`.
+
    * Een productknooppunt kan:
 
       * Een verwijzing, met de elders opgeslagen productgegevens:
 
          * Productverwijzingen bevatten een `productData` eigenschap die verwijst naar de productgegevens (doorgaans onder `/etc/commerce/products`).
+
          * De productgegevens zijn hiërarchisch; productkenmerken worden overgenomen van de voorouders van een productgegevensknooppunt.
+
          * De verwijzingen van het product kunnen lokale eigenschappen ook bevatten, die die in hun productgegevens worden gespecificeerd met voeten treden.
       * Een product zelf:
 
          * Zonder een `productData` eigenschap.
+
          * Een productknooppunt dat alle eigenschappen lokaal bevat (en geen eigenschap productData bevat), neemt productkenmerken rechtstreeks van zijn eigen voorouders over.
 
 
 * **AEM-generieke productstructuur**
 
    * Elke variant moet een eigen bladnode hebben.
+
    * De interface van het product vertegenwoordigt zowel producten als varianten, maar het verwante gegevensopslagknooppunt is specifiek waarover het is.
+
    * Het productknooppunt beschrijft de productkenmerken en de variantassen.
 
 #### Voorbeeld {#example-1}
@@ -507,6 +520,7 @@ De `CommerceSession` eigenaar van de drie elementen:
 **Betalingsverwerking**
 
 * De eigenaar is `CommerceSession` ook eigenaar van de betalingsverwerkingsverbinding.
+
 * Implementatoren moeten specifieke oproepen (aan hun gekozen betalingsverwerkingsservice) toevoegen aan de `CommerceSession` implementatie.
 
 **Afhandeling bestellen**

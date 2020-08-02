@@ -1,12 +1,12 @@
 ---
 title: Facetten doorzoeken.
-description: Hoe u zoekfacetten maakt, wijzigt en gebruikt in [!DNL Adobe Experience Manager].
+description: Hoe te om, onderzoeksfacetten tot stand te brengen te wijzigen en te gebruiken in [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: c7f06670ca8b488a661fde7a133bce6886ee7f5d
 workflow-type: tm+mt
-source-wordcount: '2343'
-ht-degree: 14%
+source-wordcount: '2340'
+ht-degree: 15%
 
 ---
 
@@ -134,7 +134,7 @@ Als u een bestaand knooppunt wilt gebruiken, geeft u dit op in het dialoogvenste
 
 Met de voorspelling Multi-Value-eigenschap kunt u elementen zoeken naar meerdere waarden. Overweeg een scenario waarin u afbeeldingen van meerdere producten in hebt [!DNL Assets] en de metagegevens voor elke afbeelding een SKU-nummer bevatten dat aan het product is gekoppeld. Met deze voorspelling kunt u op basis van meerdere SKU-nummers zoeken naar productafbeeldingen.
 
-1. Klik op het [!DNL-logo voor Experience Managers en ga naar **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
+1. Click the [!DNL Experience Manager] logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
 1. Selecteer op de pagina Zoeken in Forms **[!UICONTROL Assets Admin Search Rail]** de optie **[!UICONTROL Edit]** Bewerkingspictogram ![](assets/do-not-localize/aemassets_edit.png).
 1. Sleep op de pagina Zoekformulier bewerken een **[!UICONTROL Multi Value Property Predicate]** van het tabblad **[!UICONTROL Select Predicate]** naar het hoofdvenster.
 1. In the **[!UICONTROL Settings]** tab, enter a label and placeholder text for the predicate. Specify the property name based on which the search is to be performed in the property field, for example `jcr:content/metadata/dc:value`. U kunt ook een knooppunt selecteren in het dialoogvenster Selecteren.

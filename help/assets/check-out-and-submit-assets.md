@@ -3,10 +3,10 @@ title: Controleer uw digitale middelen in en uit voor bewerking.
 description: Leer hoe u middelen kunt uitchecken voor bewerking en ze weer kunt inchecken nadat de wijzigingen zijn voltooid.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: ee94193ff31c60e954be0070ecf84e447effc4f6
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 2%
+source-wordcount: '428'
+ht-degree: 1%
 
 ---
 
@@ -56,6 +56,10 @@ Beheerders kunnen elementen inchecken die door andere gebruikers zijn uitgecheck
    ![chlimage_1-476](assets/chlimage_1-476.png)
 
 1. Klik **[!UICONTROL Release Lock]** op de werkbalk. Het element is ingecheckt en kan worden bewerkt aan andere gebruikers.
+
+## Aanbevolen werkwijzen en beperkingen {#tips-limitations}
+
+* Het is mogelijk om een *map* te verwijderen die uitgecheckte elementbestanden bevat. Voordat u een map verwijdert, moet u controleren of er geen digitale elementen zijn uitgecheckt door gebruikers.
 
 >[!MORELIKETHIS]
 >

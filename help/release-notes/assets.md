@@ -1,18 +1,18 @@
 ---
-title: Opmerkingen bij de release Adobe Experience Manager Assets
-description: De nieuwe mogelijkheden en verbeteringen voor Adobe Experience Manager 6.5-middelen.
+title: Opmerkingen bij de release van [!DNL Adobe Experience Manager Assets] 6.5.
+description: De nieuwe mogelijkheden en verbeteringen van [!DNL Adobe Experience Manager] 6.5 [!DNL Assets].
 translation-type: tm+mt
-source-git-commit: 91caca39b0b6c5c0c98b58be02f518901a3d90e3
+source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '901'
 ht-degree: 2%
 
 ---
 
 
-# Opmerkingen bij de release Adobe Experience Manager Assets {#aem-assets-release-notes}
+# [!DNL Adobe Experience Manager Assets] releaseopmerkingen {#aem-assets-release-notes}
 
-Hier volgen de belangrijkste kenmerken en hooglichten van de release Adobe Experience Manager 6.5 Assets.
+Hier volgen de belangrijkste kenmerken en hooglichten van de [!DNL Adobe Experience Manager] 6.5- [!DNL Assets] release.
 
 ## Integratie met [!DNL Adobe Creative Cloud] en creatieve workflows {#integration-with-adobe-creative-cloud-and-creative-workflows}
 
@@ -20,27 +20,27 @@ Hier volgen de belangrijkste kenmerken en hooglichten van de release Adobe Exper
 
 Lees verder om de specifieke mogelijkheden en integratie van [!DNL Experience Manager] 6.5 te kennen die u kunt gebruiken om uw gebruiksscenario&#39;s voor snelheid van inhoud optimaal te ondersteunen.
 
-### Adobe-elementkoppeling {#aal}
+### Adobe-itemkoppeling {#aal}
 
 [!DNL Adobe Asset Link] versterkt de samenwerking tussen creatieve en marketingmedewerkers bij het maken van inhoud. Creatieven hebben toegang tot inhoud die is opgeslagen in [!DNL Experience Manager Assets], zonder de apps te verlaten waarmee ze het meest vertrouwd zijn. Creatieven kunnen naadloos door middelen bladeren, zoeken, uitchecken en inchecken met het deelvenster in de app in [!DNL Adobe Photoshop], [!DNL Adobe Illustrator]en in [!DNL Adobe InDesign] apps.
 
-[!DNL Adobe Asset Link] maakt deel uit van [Creative Cloud voor ondernemingen](https://www.adobe.com/creativecloud/business/enterprise.html) . Zie [!DNL Experience Manager] Adobe Asset Link [voor meer informatie over de](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)toepassing, inclusief de noodzakelijke configuratie van uwimplementatie.
+[!DNL Adobe Asset Link] maakt deel uit van [Creative Cloud voor zakelijke](https://www.adobe.com/creativecloud/business/enterprise.html) aanbiedingen. Voor meer informatie over het, met inbegrip van noodzakelijke configuratie van uw [!DNL Experience Manager] plaatsing, zie de Verbinding [van Activa van](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)Adobe.
 
 ![Middelen zoeken in Adobe Photoshop](assets/asset_search_photoshop.png)
 
 ### [!DNL Adobe Stock] integratie {#stock}
 
-Uw organisatie kan haar [!DNL Adobe Stock] ondernemingsplan binnen gebruiken [!DNL Experience Manager Assets] om ervoor te zorgen dat de vergunning gegeven activa algemeen beschikbaar voor uw creatieve en marketing projecten zijn. U kunt snel [!DNL Adobe Stock] middelen vinden, voorvertonen en vergunning geven die in Experience Manager worden bewaard, gebruikend de krachtige mogelijkheden DAM van [!DNL Experience Manager].
+Uw organisatie kan haar [!DNL Adobe Stock] ondernemingsplan binnen gebruiken [!DNL Experience Manager Assets] om ervoor te zorgen dat de vergunning gegeven activa algemeen beschikbaar voor uw creatieve en marketing projecten zijn. U kunt snel [!DNL Adobe Stock] middelen vinden, voorproef, en vergunning geven die in Experience Manager worden bewaard, gebruikend de krachtige mogelijkheden DAM van [!DNL Experience Manager].
 
 [!DNL Adobe Stock] biedt ontwerpers en bedrijven toegang tot miljoenen kwalitatief hoogstaande, gekrulde, royaltyvrije foto&#39;s, vectoren, illustraties, video&#39;s, sjablonen en 3D-middelen voor al hun creatieve projecten.
 
-Zie Adobe Stock Assets [gebruiken in Experience Manager Assets](/help/assets/aem-assets-adobe-stock.md)voor meer informatie.
+Zie Adobe Stock-elementen [gebruiken in Experience Manager Assets](/help/assets/aem-assets-adobe-stock.md)voor meer informatie.
 
 ![Adobe Stock-afbeelding en -licentie voorvertonen vanuit Experience Manager Assets](assets/stock_image_preview_license_options.png)
 
 *Afbeelding: Geef een voorvertoning weer van de afbeelding en de licentie[!DNL Adobe Stock]vanuit[!DNL Experience Manager Assets].*
 
-![De gelicentieerde Adobe Stock-afbeeldingen in Experience Manager zoeken en filteren](assets/aem-search-filters2.jpg)
+![De gelicentieerde Adobe Stock-afbeeldingen zoeken en filteren in Experience Manager](assets/aem-search-filters2.jpg)
 
 *Afbeelding: Zoek en filter de gelicentieerde[!DNL Adobe Stock]afbeeldingen in[!DNL Experience Manager].*
 
@@ -70,7 +70,7 @@ In grote ondernemingen kan de infrastructuur die nodig is om websites te maken, 
 
 Zie Opmerkingen bij de release van [!DNL Dynamic Media] Dynamic Media voor meer informatie over nieuwe [functies](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/release-notes/s7rn2017.html).
 
-### 360 Video-ondersteuning {#video-support}
+### 360 video-ondersteuning {#video-support}
 
 Beheer uw 360-videobestanden rechtstreeks met behulp van de meest geavanceerde viewers voor VR-ervaringen op desktops, mobiele apparaten en VR-headsets. [!DNL Experience Manager] Zie [360-video](/help/assets/360-video.md)gebruiken voor meer informatie.
 
@@ -82,7 +82,7 @@ U kunt de miniaturen voor uw video-elementen nu aanpassen met frames uit de vide
 
 [!DNL Dynamic Media] viewers bieden nu ondersteuning voor verbeterde toegankelijkheidsfuncties, zoals apparaatondersteuning, schermlezers en Alt-tekst. Zie Opmerkingen bij de release van [Dynamic Media viewers voor meer informatie](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html).
 
-## Verbeterde zoekervaring {#search-experience-enhancement}
+## Verbeterde zoekervaring {#experience-enhancement-for-searching}
 
 [!DNL Experience Manager] Vanaf 6.5 kunnen marketers de gewenste middelen sneller vinden op de pagina met zoekresultaten. De zoekfacetten worden met het aantal elementen bijgewerkt, zelfs voordat het zoekfilter wordt toegepast. Door het verwachte aantal op het filter te zien, kunnen gebruikers efficiënt door de zoekresultaten navigeren. Zie Elementen [zoeken in Experience Manager](../assets/search-assets.md)voor meer informatie.
 

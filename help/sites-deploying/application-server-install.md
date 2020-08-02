@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 6fdce35d-2709-41cc-87fb-27a4b867e960
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 316e53720071da41cc4ac5ae62c280ad3804a8f4
+workflow-type: tm+mt
+source-wordcount: '1175'
+ht-degree: 0%
 
 ---
 
@@ -19,10 +22,10 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 >[!NOTE]
 >
->`JAR` en `WAR` zijn de bestandstypen waarin AEM wordt uitgebracht. Voor deze indelingen wordt kwaliteitscontrole uitgevoerd om rekening te houden met de ondersteuningsniveaus die Adobe heeft vastgelegd.
+>`JAR` en `WAR` zijn de bestandstypen waarin AEM wordt vrijgegeven. Deze formaten ondergaan kwaliteitsgarantie om de steunniveaus aan te passen Adobe heeft toegezegd.
 
 
-In deze sectie wordt uitgelegd hoe u Adobe Experience Manager (AEM) kunt installeren met een toepassingsserver. Raadpleeg de sectie [Ondersteunde platforms](/help/sites-deploying/technical-requirements.md#servlet-engines-application-servers) voor de specifieke supportniveaus voor de afzonderlijke toepassingsservers.
+Deze sectie vertelt u hoe te om Adobe Experience Manager (AEM) met een toepassingsserver te installeren. Raadpleeg de sectie [Ondersteunde Platforms](/help/sites-deploying/technical-requirements.md#servlet-engines-application-servers) voor de specifieke supportniveaus voor de afzonderlijke toepassingsservers.
 
 De installatiestappen van de volgende toepassingsservers worden beschreven:
 
@@ -35,7 +38,7 @@ Raadpleeg de documentatie bij de toepassingsserver voor meer informatie over het
 
 >[!NOTE]
 >
->Als u Dynamic Media gebruikt in een WAR-implementatie, raadpleegt u de documentatie over [dynamische media](/help/assets/config-dynamic.md#enabling-dynamic-media).
+>Als u Dynamic Media in een plaatsing van WAR gebruikt, gelieve de [dynamische media documentatie](/help/assets/config-dynamic.md#enabling-dynamic-media)te zien.
 
 ## Algemene beschrijving {#general-description}
 
@@ -54,20 +57,20 @@ Indien opgesteld zal het volgende door gebrek gebeuren:
 
 U kunt het standaardgedrag als volgt wijzigen:
 
-* uitvoeringsmodus: configureer de `sling.run.modes` parameter in het `WEB-INF/web.xml` bestand met de AEM-oorlog vóór de implementatie
+* uitvoeringsmodus: configureer de `sling.run.modes` parameter in het `WEB-INF/web.xml` bestand met de AEM vóór de implementatie
 
-* sling.home: configureer de `sling.home` parameter in het `WEB-INF/web.xml`bestand met de AEM-oorlog vóór de implementatie
+* sling.home: configureer de `sling.home` parameter in het `WEB-INF/web.xml`bestand met de AEM vóór de implementatie
 
-* contextbasis: naam van AEM-oorlogsbestand wijzigen
+* contextbasis: naam van AEM oorlogsbestand wijzigen
 
 #### Installatie publiceren {#publish-installation}
 
 Als u een publicatie-instantie wilt implementeren, moet u de uitvoeringsmodus instellen voor publicatie:
 
-* De map WEB-INF/web.xml uit het AEM-oorlogsbestand verwijderen
+* De map WEB-INF/web.xml uit het AEM oorlogsbestand verwijderen
 * De parameter sling.run.modes wijzigen om te publiceren
-* Web.xml-bestand opnieuw omzetten in AEM-oorlogsbestand
-* AEM-oorlogsbestand implementeren
+* Het bestand web.xml opnieuw omzetten in AEM oorlogsbestand
+* AEM oorlogsbestand implementeren
 
 #### Installatiecontrole {#installation-check}
 
@@ -81,12 +84,12 @@ Om te controleren of alles is geïnstalleerd, kunt u:
 Voor demonstratiedoeleinden kan het aangewezen zijn om auteur te installeren en instantie in één toepassingsserver te publiceren. Hiervoor doet u het volgende:
 
 1. Wijzig de variabelen sling.home en sling.run.modes van de publicatie-instantie.
-1. Pak het bestand WEB-INF/web.xml uit het AEM-oorlogsbestand.
+1. Pak het bestand WEB-INF/web.xml uit van het AEM oorlogsbestand.
 1. Wijzig de parameter sling.home in een ander pad (absolute en relatieve paden zijn mogelijk).
 1. Wijzig sling.run.modes om te publiceren voor de publicatie-instantie.
 1. Herhaal het bestand web.xml.
 1. Wijzig de naam van de oorlogsbestanden, zodat ze verschillende namen hebben: bijvoorbeeld de ene naam wordt gewijzigd in aemauteur.war en de andere in aempublish.war.
-1. Gebruik hogere geheugeninstellingen, bijvoorbeeld voor standaard AEM-instanties, bijvoorbeeld: -Xmx3072m
+1. Gebruik hogere geheugeninstellingen, bijvoorbeeld voor standaardinstellingen AEM bijvoorbeeld: -Xmx3072m
 1. Implementeer de twee webtoepassingen.
 1. Na de Plaatsing houdt de twee Webtoepassingen tegen.
 1. In zowel auteur- als publicatieinstanties zorgt u ervoor dat in de bestanden sling.properties de eigenschap felix.service.urlhandlers=false is ingesteld op false (de standaardwaarde is dat deze is ingesteld op true).
@@ -102,14 +105,14 @@ Lees de bovenstaande [algemene beschrijving](#general-description) voor een impl
 
 * Laat de Basiskopballen van de Auditie door overgaan:
 
-   * Één manier om AEM te laten een gebruiker voor authentiek verklaren is de globale administratieve veiligheid van de server onbruikbaar te maken WebSphere, om dit te doen: Ga naar Beveiliging -> Algemene beveiliging en schakel het selectievakje Beheersbeveiliging inschakelen uit, sla de server op en start deze opnieuw.
+   * Één manier om AEM te laten om een gebruiker voor authentiek te verklaren is de globale administratieve veiligheid van de server onbruikbaar te maken WebSphere, om dit te doen: Ga naar Beveiliging -> Algemene beveiliging en schakel het selectievakje Beheersbeveiliging inschakelen uit, sla de server op en start deze opnieuw.
 
 * set `"JAVA_OPTS= -Xmx2048m"`
 * Als u AEM wilt installeren met gebruik van contextroot = /, moet u eerst de hoofdmap van de context van de bestaande standaardwebtoepassing wijzigen
 
-**AEM-webtoepassing implementeren**
+**AEM webtoepassing implementeren**
 
-* AEM-oorlogsbestand downloaden
+* AEM bestand downloaden
 * Stel uw configuraties in web.xml indien nodig in (zie hierboven in de Algemene beschrijving)
 
    * WEB-INF/web.xml-bestand uitpakken
@@ -117,11 +120,11 @@ Lees de bovenstaande [algemene beschrijving](#general-description) voor een impl
    * uncomment sling.home aanvankelijke parameter en reeks dit pad aangezien u nodig hebt
    * Het bestand web.xml herstellen
 
-* AEM-oorlogsbestand implementeren
+* AEM oorlogsbestand implementeren
 
    * Kies een contextwortel (als u de sling looppaswijzen wilt plaatsen moet u de gedetailleerde stappen van de opstellen tovenaar selecteren, dan het specificeren in stap 6 van de tovenaar)
 
-* AEM-webtoepassing starten
+* AEM webtoepassing starten
 
 #### JBoss EAP 6.3.0/6.4.0 {#jboss-eap}
 
@@ -133,7 +136,7 @@ Geheugenargumenten in uw conf-bestand instellen (bijvoorbeeld `standalone.conf`)
 
 * JAVA_OPTS=&quot;-Xms64m -Xmx2048m&quot;
 
-Als u de implementatie-scanner gebruikt om de AEM-webtoepassing te installeren, is het mogelijk goed om de waarde `deployment-timeout,` voor die set als een `deployment-tiimeout` kenmerk in het XML-bestand van uw instantie te verhogen (bijvoorbeeld `configuration/standalone.xml)`:
+als u de plaatsing-scanner voor gebruikt om de AEM Webtoepassing te installeren, zou het goed kunnen zijn om de `deployment-timeout,` voor die reeks een `deployment-tiimeout` attribuut in het xml- dossier van uw instantie (b.v. `configuration/standalone.xml)`:
 
 ```xml
 <subsystem xmlns="urn:jboss:domain:deployment-scanner:1.1">
@@ -141,11 +144,11 @@ Als u de implementatie-scanner gebruikt om de AEM-webtoepassing te installeren, 
 </subsystem>
 ```
 
-**AEM-webtoepassing implementeren**
+**AEM webtoepassing implementeren**
 
-* Upload de AEM-webtoepassing in uw JBoss-beheerconsole.
+* Upload de AEM webtoepassing in uw JBoss-beheerconsole.
 
-* Schakel de AEM-webtoepassing in.
+* Schakel de AEM webtoepassing in.
 
 #### Oracle WebLogic 12.1.3/12.2 {#oracle-weblogic}
 
@@ -166,10 +169,10 @@ Dit gebruikt een eenvoudige serverlay-out met slechts een Server Admin.
 
 * Maken in `${myDomain}` een pakketmap en in een cq-map en erin een overzichtsmap
 
-**AEM-webtoepassing implementeren**
+**AEM webtoepassing implementeren**
 
-* AEM-oorlogsbestand downloaden
-* Plaats het AEM-oorlogsbestand in de map ${myDomain}/packages/cq
+* AEM bestand downloaden
+* Plaats het AEM oorlogsdossier in ${myDomain}/packages/cq omslag
 * Stel uw configuraties in `WEB-INF/web.xml` indien nodig (zie hierboven in de Algemene beschrijving).
 
    * Bestand `WEB-INF/web.xml`uitpakken
@@ -177,7 +180,7 @@ Dit gebruikt een eenvoudige serverlay-out met slechts een Server Admin.
    * uncomment sling.home aanvankelijke parameter en reeks dit weg zoals u nodig hebt (zie Algemene Beschrijving)
    * Het bestand web.xml herstellen
 
-* AEM-oorlogsbestand distribueren als een toepassing (voor de andere instellingen worden de standaardinstellingen gebruikt)
+* Implementeer AEM oorlogsbestand als een toepassing (voor de andere instellingen worden de standaardinstellingen gebruikt)
 * De installatie kan tijd in beslag nemen...
 * Controleer of de installatie is voltooid zoals hierboven vermeld in de algemene beschrijving (bijv. door op error.log te tikken)
 * U kunt de basisinhoud van de context wijzigen op het tabblad Configuratie van de webtoepassing in de WebLogic `/console`
@@ -195,54 +198,54 @@ Lees de bovenstaande [algemene beschrijving](#general-description) voor een impl
    * Tomcat biedt geen toegang voor beheerders of beheerders bij de installatie. Daarom moet u manueel uitgeven `tomcat-users.xml` om toegang voor deze rekeningen toe te staan:
 
       * Bewerk `tomcat-users.xml` om toegang voor beheerder en manager op te nemen. De configuratie zou gelijkaardig aan het volgende voorbeeld moeten kijken:
-      * 
-         ```
+
+         ```xml
          <?xml version='1.0' encoding='utf-8'?>
-          <tomcat-users>
-          <role rolename="manager"/>
-          <role rolename="tomcat"/>
-          <role rolename="admin"/>
-          <role rolename="role1"/>
-          <role rolename="manager-gui"/>
-          <user username="both" password="tomcat" roles="tomcat,role1"/>
-          <user username="tomcat" password="tomcat" roles="tomcat"/>
-          <user username="admin" password="admin" roles="admin,manager-gui"/>
-          <user username="role1" password="tomcat" roles="role1"/>
-          </tomcat-users>
+         <tomcat-users>
+         role rolename="manager"/>
+         role rolename="tomcat"/>
+         <role rolename="admin"/>
+         <role rolename="role1"/>
+         <role rolename="manager-gui"/>
+         <user username="both" password="tomcat" roles="tomcat,role1"/>
+         <user username="tomcat" password="tomcat" roles="tomcat"/>
+         <user username="admin" password="admin" roles="admin,manager-gui"/>
+         <user username="role1" password="tomcat" roles="role1"/>
+         </tomcat-users>
          ```
-   * Als u AEM met contextwortel &quot;/&quot;wilt opstellen dan moet u contextwortel van bestaande Webapp veranderen ROOT:
+   * Als u AEM wilt implementeren met contextroot &quot;/&quot;, moet u de hoofdmap van de context van de bestaande ROOT-webapp wijzigen:
 
       * ROOT-webapp stoppen en verwijderen
       * Naam van map ROOT.war wijzigen in de map webapps van Tomcat
       * Webapp opnieuw starten
-   * Als u de AEM-webtoepassing installeert met behulp van de manager-gui, moet u de maximale grootte van een geüpload bestand verhogen, aangezien de standaard alleen uploadgrootte van 50 MB toestaat. Open hiertoe web.xml van de manager Webtoepassing,
+   * Als u de AEM webtoepassing installeert met behulp van de manager-gui, moet u de maximale grootte van een geüpload bestand verhogen, aangezien de standaard alleen uploadgrootte van 50 MB toestaat. Open hiertoe web.xml van de manager Webtoepassing,
 
       `webapps/manager/WEB-INF/web.xml`
 
-      en vergroot de max-file-size en maximum-request-size tot minstens 500MB, zie het volgende `multipart-config` voorbeeld van zulk een `web.xml` dossier:
+      en vergroot de max-file-size en maximum-request-size tot minstens 500MB, zie het volgende `multipart-config` voorbeeld van zulk een `web.xml` dossier.
 
+      ```xml
+      <multipart-config>
+      <!-- 500MB max -->
+      <max-file-size>524288000</max-file-size>
+      <max-request-size>524288000</max-request-size>
+      <file-size-threshold>0</file-size-threshold>
+      </multipart-config>
       ```
-        <multipart-config>
-         <!-- 500MB max -->
-         <max-file-size>524288000</max-file-size>
-         <max-request-size>524288000</max-request-size>
-         <file-size-threshold>0</file-size-threshold>
-         </multipart-config>
-      ```
 
 
 
 
-* **AEM-webtoepassing implementeren**
+* **AEM webtoepassing implementeren**
 
-   * AEM-oorlogsbestand downloaden
+   * AEM bestand downloaden
    * Stel uw configuraties in web.xml indien nodig in (zie hierboven in de Algemene beschrijving)
 
       * WEB-INF/web.xml-bestand uitpakken
       * de parameter sling.run.modes wijzigen om te publiceren
       * uncomment sling.home aanvankelijke parameter en reeks dit pad aangezien u nodig hebt
       * Het bestand web.xml herstellen
-   * Wijzig de naam van het AEM-oorlogsbestand in ROOT.war als u het wilt gebruiken als hoofdwebapp, en wijzig de naam ervan in bijvoorbeeld aemauthor.war als u de hoofdmap van de context wilt gebruiken
+   * Wijzig de naam van AEM oorlogsbestand in ROOT.war als u het wilt gebruiken als hoofdwebapp, en wijzig de naam van het bestand in bijvoorbeeld aemauthor.war als u de hoofdmap van de context als hoofdmap wilt gebruiken.
    * kopiëren naar de map met tomcat-webapps
    * wachten tot AEM is geïnstalleerd
 
@@ -252,4 +255,3 @@ Lees de bovenstaande [algemene beschrijving](#general-description) voor een impl
 Voor informatie over het behandelen van kwesties die tijdens installatie kunnen verschijnen, zie:
 
 * [Problemen oplossen](/help/sites-deploying/troubleshooting.md)
-

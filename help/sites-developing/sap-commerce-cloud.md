@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 96dc0c1a-b21d-480a-addf-c3d0348bd3ad
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 316e53720071da41cc4ac5ae62c280ad3804a8f4
 workflow-type: tm+mt
 source-wordcount: '2331'
 ht-degree: 0%
@@ -27,7 +27,7 @@ ht-degree: 0%
 Het integratieframework bevat een integratielaag met een API. Zo kunt u:
 
 * plug-in een eCommerce-systeem en haal productgegevens naar AEM
-* AEM-componenten voor handelsmogelijkheden ontwikkelen, onafhankelijk van de specifieke eCommerce-engine
+* bouwen AEM componenten voor handelsmogelijkheden onafhankelijk van de specifieke eCommerce-motor
 
 ![chlimage_1-11](assets/chlimage_1-11a.png)
 
@@ -35,23 +35,23 @@ Het integratieframework bevat een integratielaag met een API. Zo kunt u:
 >
 >[API-documentatie](/help/sites-developing/ecommerce.md#api-documentation) is ook beschikbaar.
 
-Voor het gebruik van de integratielaag wordt een aantal AEM-componenten buiten de doos meegeleverd. Deze zijn momenteel:
+Een aantal uit-van-de-doos AEM componenten worden verstrekt om de integratielaag te gebruiken. Deze zijn momenteel:
 
 * een productweergaveonderdeel
 * een winkelwagentje
 * uitchecken
 
-Voor onderzoek wordt een integratiehaak verstrekt die u toestaat om het onderzoek AEM, het onderzoek van het eCommerce systeem, een derdenonderzoek (zoals Search&amp;Promote) of een combinatie daarvan te gebruiken.
+Voor onderzoek wordt een integratiehaak verstrekt die u toestaat om het AEM onderzoek, het onderzoek van het eCommerce systeem, een derdenonderzoek (zoals Search&amp;Promote) of een combinatie daarvan te gebruiken.
 
 ## Selectie van eCommerce-engine {#ecommerce-engine-selection}
 
-Het eCommerce-kader kan met elke oplossing voor eCommerce worden gebruikt; de gebruikte motor moet door AEM kunnen worden geïdentificeerd:
+Het eCommerce-kader kan worden gebruikt met elke oplossing voor e-handel, waarbij de gebruikte motor moet worden geïdentificeerd aan de hand van AEM:
 
 * eCommerce Engines zijn OSGi-services die de `CommerceService` interface ondersteunen
 
    * Motoren kunnen worden onderscheiden door een `commerceProvider` service-eigenschap
 
-* AEM ondersteunt `Resource.adaptTo()` voor `CommerceService` en `Product`
+* AEM ondersteuning `Resource.adaptTo()` voor `CommerceService` en `Product`
 
    * De `adaptTo` implementatie zoekt naar een `cq:commerceProvider` eigenschap in de hiërarchie van de bron:
 
@@ -68,7 +68,7 @@ Het eCommerce-kader kan met elke oplossing voor eCommerce worden gebruikt; de ge
 
 Zie de volgende voorbeelden:
 
-| `cq:commerceProvider = geometrixx` | in een standaard AEM-installatie is een specifieke implementatie vereist; bijvoorbeeld het geometrixx-voorbeeld, dat minimale extensies voor de algemene API bevat |
+| `cq:commerceProvider = geometrixx` | in een standaard AEM installatie is een specifieke implementatie vereist; bijvoorbeeld het geometrixx-voorbeeld, dat minimale extensies voor de algemene API bevat |
 |---|---|
 | `cq:commerceProvider = hybris` | hybrusimplementatie |
 
@@ -96,7 +96,7 @@ Zie de volgende voorbeelden:
 
 >[!NOTE]
 >
->Gebruikend CRXDE Lite kunt u zien hoe dit in de productcomponent voor de hybris implementatie wordt behandeld:
+>Met CRXDE Lite kunt u zien hoe dit wordt verwerkt in de productcomponent voor de hybris-implementatie:
 >
 >`/apps/geometrixx-outdoors/components/hybris/product/product.jsp`
 
@@ -112,11 +112,7 @@ Voor de ontwikkeling van Hybris 4 is het volgende vereist:
 
    `-P hybris4`
 
-   De vooraf geconfigureerde distributie van Hybris 4 wordt gedownload en in de bundel ingesloten:
-
-   ```
-   cq-commerce-hybris-server
-   ```
+   Het downloadt de vooraf geconfigureerde distributie van Hybris 4 en sluit het in de bundel in `cq-commerce-hybris-server`.
 
 * In de OSGi configuratiemanager:
 
@@ -153,18 +149,18 @@ hybris gebruikt een gebruikerssessie om informatie op te slaan , zoals het winke
 
 ### Productsynchronisatie en -publicatie {#product-synchronization-and-publishing}
 
-Productgegevens die in hybris worden bewaard, moeten beschikbaar zijn in AEM. Het volgende mechanisme is ingevoerd:
+Productgegevens die in hybris worden bewaard, moeten in AEM beschikbaar zijn. Het volgende mechanisme is ingevoerd:
 
 * Een eerste lading id&#39;s wordt geleverd door hybris als voer. Deze feed kan worden bijgewerkt.
-* hybris zal bijgewerkte informatie verstrekken via een feed (welke AEM opiniepeilingen).
-* Als AEM productgegevens gebruikt, worden aanvragen voor de huidige gegevens teruggestuurd naar hybris (voorwaardelijk verzoek ophalen met de laatst gewijzigde datum).
+* hybris zal bijgewerkte informatie verstrekken via een feed ( die AEM opiniepeilingen ) .
+* Wanneer AEM productgegevens gebruikt, worden aanvragen voor de huidige gegevens teruggestuurd naar hybris (voorwaardelijk verzoek ophalen met de laatst gewijzigde datum).
 * Bij hybris is is het mogelijk de voederinhoud op declaratieve wijze te specificeren.
-* Het toewijzen van de voederstructuur aan het AEM-inhoudsmodel gebeurt in de voederadapter aan de AEM-zijde.
+* Het toewijzen van de voederstructuur aan het AEM inhoudsmodel gebeurt in de voederadapter aan de AEM kant.
 
 ![chlimage_1-12](assets/chlimage_1-12a.png)
 
 * De importer (b) wordt gebruikt voor de initiële installatie van de paginaboomstructuur in AEM voor catalogi.
-* Catalogusveranderingen in hybris worden via een diervoeder aan AEM gemeld, die vervolgens aan AEM worden doorgegeven (b)
+* Veranderingen in de hybris in de catalogus worden via een diervoeder aan AEM gemeld en vervolgens doorgegeven aan AEM b)
 
    * Product toegevoegd/verwijderd/gewijzigd ten opzichte van catalogusversie.
    * Goedgekeurd product.
@@ -172,7 +168,8 @@ Productgegevens die in hybris worden bewaard, moeten beschikbaar zijn in AEM. He
 * De hybris-extensie biedt een pollingimporter (&quot;hybris&quot;-schema), die kan worden geconfigureerd om wijzigingen met een opgegeven interval in AEM te importeren (bijvoorbeeld elke 24 uur waarin het interval in seconden wordt opgegeven):
 
    * 
-      ```
+
+      ```js
       http://localhost:4502/content/geometrixx-outdoors/en_US/jcr:content.json
        {
        * "jcr:mixinTypes": ["cq:PollConfig"],
@@ -185,19 +182,19 @@ Productgegevens die in hybris worden bewaard, moeten beschikbaar zijn in AEM. He
 
 * De catalogusconfiguratie in AEM herkent **nog niet actieve** en **online** catalogusversies.
 
-* Voor het synchroniseren van producten tussen catalogusversies is een (de-)activering van de bijbehorende AEM-pagina (a, c) vereist
+* Voor het synchroniseren van producten tussen catalogusversies moet de bijbehorende AEM (a, c) worden geactiveerd.
 
    * Als u een product wilt toevoegen aan een versie van een **online** catalogus, moet de productpagina worden geactiveerd.
    * Voor het verwijderen van een product is deactivering vereist.
 
-* Voor het activeren van een pagina in AEM (c) is een controle vereist (b) en dit is alleen mogelijk als
+* Voor het activeren van een pagina in AEM (c) is een controle (b) vereist. Dit is alleen mogelijk als
 
    * Het product bevindt zich in een versie van de **online** catalogus voor productpagina&#39;s.
    * De producten waarnaar wordt verwezen, zijn beschikbaar in een **onlinecatalogusversie** voor andere pagina&#39;s (bijvoorbeeld campagnepagina&#39;s).
 
 * Geactiveerde productpagina&#39;s hebben toegang tot de **online** versie (d) van de productgegevens.
 
-* De publicatie-instantie van AEM vereist toegang tot hybris voor het ophalen van product en gepersonaliseerde gegevens (d).
+* De AEM publicatie-instantie vereist toegang tot hybris voor het ophalen van product- en gepersonaliseerde gegevens (d).
 
 ### Architectuur {#architecture}
 
@@ -209,7 +206,7 @@ Niet alle eigenschappen zijn echter variantassen. Variaties kunnen ook andere ei
 
 Elk product en/of elke variant wordt vertegenwoordigd door een middel, en daarom kaarten 1:1 aan een gegevensopslagknoop. Het gevolg is dat een specifiek product en/of specifieke variant op unieke wijze kan worden geïdentificeerd door het pad ervan.
 
-De product/variant-bron bevat niet altijd de werkelijke productgegevens. Dit kan een representatie zijn van gegevens die daadwerkelijk op een ander systeem worden opgeslagen (zoals hybris). Productbeschrijvingen, prijzen, enz. worden bijvoorbeeld niet opgeslagen in AEM, maar in real-time opgehaald van de eCommerce-engine.
+De product/variant-bron bevat niet altijd de werkelijke productgegevens. Dit kan een representatie zijn van gegevens die daadwerkelijk op een ander systeem worden opgeslagen (zoals hybris). Productbeschrijvingen, prijzen, enz. worden bijvoorbeeld niet in AEM opgeslagen, maar in real-time opgehaald van de eCommerce-engine.
 
 Elke productbron kan worden vertegenwoordigd door een `Product API`. De meeste aanroepen in de product-API zijn variatiespecifiek (hoewel variaties gedeelde waarden kunnen overerven van een voorouder), maar er zijn ook aanroepen die de set variaties vermelden ( `getVariantAxes()`, `getVariants()`, enz.).
 
@@ -228,7 +225,7 @@ Hoewel producten (in het algemeen) vele variantassen kunnen hebben, behandelt de
 1. plus één of meer
 >
 >   
-Deze extra variant wordt geselecteerd via de `variationAxis` eigenschap van de productreferentie (gewoonlijk `color` voor Geometrixx Buiten).
+Deze extra variant wordt geselecteerd via de `variationAxis` eigenschap van de productreferentie (gewoonlijk `color` voor Geometrixx Outdoors).
 
 #### Productverwijzingen en productgegevens {#product-references-and-product-data}
 
@@ -240,25 +237,25 @@ In het algemeen:
 
 Er moet een 1:1-kaart zijn tussen productvariaties en productgegevensknooppunten.
 
-Productverwijzingen moeten ook een knooppunt hebben voor elke gepresenteerde variatie - maar er is geen verplichting om alle variaties weer te geven. Als een product bijvoorbeeld S, M, L-variaties heeft, kunnen de productgegevens als volgt zijn:
+Productverwijzingen moeten ook een knooppunt hebben voor elke gepresenteerde variatie - maar er is geen verplichting om alle variaties weer te geven. Als een product bijvoorbeeld S, M, L-variaties heeft, kunnen de productgegevens dat zijn.
 
 ```shell
 etc
-  commerce
-    products
-      shirt
-        shirt-s
-        shirt-m
-        shirt-l
+|──commerce
+|  |──products
+|     |──shirt
+|       |──shirt-s
+|       |──shirt-m
+|       |──shirt-l
 ```
 
-Een catalogus van het type &quot;Big and Tall&quot; kan alleen het volgende bevatten:
+Een &quot;Big and Tall&quot;-catalogus kan alleen bestaan.
 
 ```shell
 content
-  big-and-tall
-    shirt
-      shirt-l
+|──big-and-tall
+|  |──shirt
+|     |──shirt-l
 ```
 
 Tot slot is er geen verplichting om productgegevens te gebruiken. U kunt alle productgegevens onder de verwijzingen in de catalogus plaatsen; maar dan kunt u niet echt meerdere catalogi hebben zonder alle productgegevens te dupliceren.
@@ -352,7 +349,7 @@ public class AxisFilter implements VariantFilter {
          * Een productknooppunt dat alle eigenschappen lokaal bevat (en geen eigenschap productData bevat), neemt productkenmerken rechtstreeks van zijn eigen voorouders over.
 
 
-* **AEM-algemene productstructuur**
+* **AEM-generieke productstructuur**
 
    * Elke variant moet een eigen bladnode hebben.
    * De interface van het product vertegenwoordigt zowel producten als varianten, maar het verwante gegevensopslagknooppunt is specifiek waarover het is.
@@ -428,16 +425,16 @@ public class AxisFilter implements VariantFilter {
 * Opslag
 
    * In het hybris-geval is de hybris-server eigenaar van het winkelwagentje.
-   * In de AEM-generische gevalskaarten van worden opgeslagen in [ClientContext](/help/sites-administering/client-context.md).
+   * In het AEM-generieke geval worden de karretjes van de wortels opgeslagen in de [ClientContext](/help/sites-administering/client-context.md).
 
 **Personalisatie**
 
-* De aanpassing zou altijd door [ClientContext](/help/sites-administering/client-context.md)moeten worden aangedreven.
-* In alle gevallen wordt een ClientContext `/version/` van het winkelwagentje gemaakt:
+* Personalisatie moet altijd door de [ClientContext](/help/sites-administering/client-context.md)worden geleid.
+* In alle gevallen wordt een ClientContext van `/version/` de winkelwagen gemaakt:
 
    * De producten moeten volgens de `CommerceSession.addCartEntry()` methode worden toegevoegd.
 
-* In het volgende voorbeeld ziet u een voorbeeld van winkelwageninformatie in het ClientContext-winkelwagentje:
+* In het volgende voorbeeld ziet u een voorbeeld van de informatie over winkelwagentjes in de ClientContext wagen:
 
 ![chlimage_1-13](assets/chlimage_1-13a.png)
 
@@ -456,9 +453,9 @@ De `CommerceSession` eigenaar van de drie elementen:
    Het schema voor de inhoud van het winkelwagentje wordt bepaald door de API:
 
    ```java
-       public void addCartEntry(Product product, int quantity);
-       public void modifyCartEntry(int entryNumber, int quantity);
-       public void deleteCartEntry(int entryNumber);
+   public void addCartEntry(Product product, int quantity);
+   public void modifyCartEntry(int entryNumber, int quantity);
+   public void deleteCartEntry(int entryNumber);
    ```
 
 1. **Prijzen**
@@ -466,12 +463,12 @@ De `CommerceSession` eigenaar van de drie elementen:
    Het prijsschema wordt ook bepaald door de API:
 
    ```java
-       public String getCartPreTaxPrice();
-       public String getCartTax();
-       public String getCartTotalPrice();
-       public String getOrderShipping();
-       public String getOrderTotalTax();
-       public String getOrderTotalPrice();
+   public String getCartPreTaxPrice();
+   public String getCartTax();
+   public String getCartTotalPrice();
+   public String getOrderShipping();
+   public String getOrderTotalTax();
+   public String getOrderTotalPrice();
    ```
 
 1. **Bestelgegevens**
@@ -479,9 +476,9 @@ De `CommerceSession` eigenaar van de drie elementen:
    orderdetails worden echter *niet* door de API vastgelegd:
 
    ```java
-       public void updateOrderDetails(Map<String, String> orderDetails);
-       public Map<String, String> getOrderDetails();
-       public void submitOrder();
+   public void updateOrderDetails(Map<String, String> orderDetails);
+   public Map<String, String> getOrderDetails();
+   public void submitOrder();
    ```
 
 **Verzendberekeningen**
@@ -504,7 +501,7 @@ De `CommerceSession` eigenaar van de drie elementen:
    >
 * Controleren of de methode beschikbaar is
 >* Prijsinformatie toevoegen
->* Om kopers in staat te stellen de orderpagina in AEM bij te werken (inclusief de superset van verzendmethoden en de beschrijvende tekst), terwijl ze toch de controle hebben om de relevante `CommerceSession` informatie openbaar te maken.
+>* Opdat kopers de bestelpagina in AEM kunnen bijwerken (inclusief de superset van de verzendmethoden en de beschrijvende tekst), terwijl ze toch de controle hebben om de relevante `CommerceSession` informatie toegankelijk te maken.
 
 
 **Betalingsverwerking**
@@ -551,7 +548,7 @@ Het ingangspunt voor zoekAPI is de `CommerceService#search` methode die een `Com
 
 ### Gebruikersintegratie {#user-integration}
 
-Er wordt integratie tussen AEM en verschillende systemen voor e-handel geboden. Hiervoor is een strategie nodig voor het synchroniseren van aankopen tussen de verschillende systemen, zodat AEM-specifieke code alleen kennis hoeft te hebben van AEM en omgekeerd:
+Er wordt gezorgd voor integratie tussen AEM en verschillende systemen voor e-handel. Hiervoor is een strategie nodig voor het synchroniseren van aankopen tussen de verschillende systemen, zodat AEM specifieke code alleen op de hoogte moet zijn van AEM en omgekeerd:
 
 * Verificatie
 
@@ -559,27 +556,27 @@ Er wordt integratie tussen AEM en verschillende systemen voor e-handel geboden. 
 
 * Rekeningen in hybriden
 
-   AEM maakt een bijbehorende (ondergeschikte) account in hybris voor elke winkel. De gebruikersnaam van dit account is gelijk aan de AEM-gebruikersnaam. Een cryptografisch-willekeurig wachtwoord wordt auto-geproduceerd en (gecodeerd) opgeslagen in AEM.
+   AEM maakt een bijbehorende (ondergeschikte) account in hybris voor elke winkel. De gebruikersnaam van dit account is gelijk aan de AEM gebruikersnaam. Een cryptografisch-willekeurig wachtwoord wordt auto-geproduceerd en (gecodeerd) opgeslagen in AEM.
 
 #### Bestaande gebruikers {#pre-existing-users}
 
-Een AEM front-end kan vóór een bestaande hybris implementatie worden geplaatst. Er kan ook een hybris-engine worden toegevoegd aan een bestaande AEM-installatie. Hiertoe moeten de systemen bestaande gebruikers in elk systeem netjes kunnen verwerken:
+Een AEM front-end kan vóór een bestaande hybris implementatie worden geplaatst. Ook kan een hybris-engine aan een bestaande AEM-installatie worden toegevoegd. Hiertoe moeten de systemen bestaande gebruikers in elk systeem netjes kunnen verwerken:
 
 * AEM -> hybris
 
-   * Wanneer u zich aanmeldt bij hybris, als de AEM-gebruiker nog niet bestaat:
+   * Wanneer u zich aanmeldt bij hybris, als de AEM gebruiker nog niet bestaat:
 
       * een nieuwe hybrusgebruiker maken met een cryptografisch willekeurig wachtwoord
-      * sla de hybris-gebruikersnaam op in de gebruikersmap van de AEM-gebruiker
+      * sla de hybris-gebruikersnaam op in de gebruikersmap van de AEM gebruiker
    * Zie: `com.adobe.cq.commerce.hybris.impl.HybrisSessionImpl#login()`
 
 
 * hybris -> AEM
 
-   * Wanneer u zich aanmeldt bij AEM, als het systeem de gebruiker herkent:
+   * Wanneer het programma openen aan AEM, als het systeem de gebruiker erkent:
 
       * poging om zich aan te melden bij hybris met geleverde gebruikersnaam/pwd
-      * als dit lukt, maakt u de nieuwe gebruiker in AEM met hetzelfde wachtwoord (AEM-specifieke salt resulteert in AEM-specifieke hash).
+      * als dit lukt, maakt u de nieuwe gebruiker AEM met hetzelfde wachtwoord (AEM-specifieke salt resulteert in AEM-specifieke hash).
    * Het bovenstaande algoritme wordt geïmplementeerd in een Sling `AuthenticationInfoPostProcessor`
 
       * Zie: `com.adobe.cq.commerce.hybris.impl.user.LazyUserImporter.java`
@@ -591,7 +588,7 @@ Uw aangepaste importhandler bouwen op bestaande functionaliteit:
 
 * moet de `ImportHandler` interface implementeren
 
-* kan de `DefaultImportHandler`
+* kan de `DefaultImportHandler`inhoud uitbreiden.
 
 ```java
 /**
@@ -601,66 +598,66 @@ Uw aangepaste importhandler bouwen op bestaande functionaliteit:
  */
 public interface ImportHandler {
 
-    /**
-     * Not used.
-     */
-    public void createTaxonomie(ImporterContext ctx);
+  /**
+  * Not used.
+  */
+  public void createTaxonomie(ImporterContext ctx);
 
-    /**
-     * Creates a catalog with the given name.
-     * @param ctx   The importer context
-     * @param name  The catalog's name
-     * @return Path of created catalog
-     */
-    public String createCatalog(ImporterContext ctx, String name) throws Exception;
+  /**
+  * Creates a catalog with the given name.
+  * @param ctx   The importer context
+  * @param name  The catalog's name
+  * @return Path of created catalog
+  */
+  public String createCatalog(ImporterContext ctx, String name) throws Exception;
 
-    /**
-     * Creates a product from the given values.
-     * @param ctx                The importer context
-     * @param values             The product's properties
-     * @param parentCategoryPath The containing category's path
-     * @return Path of created product
-     */
-    public String createProduct(ImporterContext ctx, ValueMap values, String parentCategoryPath) throws Exception;
+  /**
+  * Creates a product from the given values.
+  * @param ctx                The importer context
+  * @param values             The product's properties
+  * @param parentCategoryPath The containing category's path
+  * @return Path of created product
+  */
+  public String createProduct(ImporterContext ctx, ValueMap values, String parentCategoryPath) throws Exception;
 
-    /**
-     * Creates a variant product from the given values.
-     * @param ctx             The importer context
-     * @param values          The product's properties
-     * @param baseProductPath The base product's path
-     * @return Path of created product
-     */
-    public String createVariantProduct(ImporterContext ctx, ValueMap values, String baseProductPath) throws Exception;
+  /**
+  * Creates a variant product from the given values.
+  * @param ctx             The importer context
+  * @param values          The product's properties
+  * @param baseProductPath The base product's path
+  * @return Path of created product
+  */
+  public String createVariantProduct(ImporterContext ctx, ValueMap values, String baseProductPath) throws Exception;
 
-    /**
-     * Creates an asset for a product. This is usually a product
-     * image.
-     * @param ctx             The importer context
-     * @param values          The product's properties
-     * @param baseProductPath The product's path
-     * @return Path of created asset
-     */
-    public String createAsset(ImporterContext ctx, ValueMap values, String productPath) throws Exception;
+  /**
+  * Creates an asset for a product. This is usually a product
+  * image.
+  * @param ctx             The importer context
+  * @param values          The product's properties
+  * @param baseProductPath The product's path
+  * @return Path of created asset
+  */
+  public String createAsset(ImporterContext ctx, ValueMap values, String productPath) throws Exception;
 
-    /**
-     * Creates a category from the given values.
-     * @param ctx           The importer context
-     * @param values        The category's properties
-     * @param parentPath    Path of parent category or base path of import in case of root category
-     * @return Path of created category
-     */
-    public String createCategory(ImporterContext ctx, ValueMap values, String parentCategoryPath) throws Exception;
+  /**
+  * Creates a category from the given values.
+  * @param ctx           The importer context
+  * @param values        The category's properties
+  * @param parentPath    Path of parent category or base path of import in case of root category
+  * @return Path of created category
+  */
+  public String createCategory(ImporterContext ctx, ValueMap values, String parentCategoryPath) throws Exception;
 }
 ```
 
-Uw aangepaste handler kan alleen door de importer worden herkend als deze de `service.ranking`eigenschap opgeeft met een waarde hoger dan 0; bijvoorbeeld:
+Uw aangepaste handler kan alleen door de importer worden herkend als deze de `service.ranking`eigenschap opgeeft met een waarde hoger dan 0; bijvoorbeeld.
 
 ```java
 @Component
 @Service
 @Property(name = "service.ranking", value = 100)
-public class MyImportHandler extends DefaultImportHandler {
-    ...
+public class MyImportHandler extends DefaultImportHandler
+{
+...
 }
 ```
-

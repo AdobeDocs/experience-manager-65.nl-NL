@@ -1,20 +1,18 @@
 ---
-title: Opmerkingen bij de release AEM-gemeenschappen
-description: Opmerkingen bij de release die specifiek zijn voor Adobe Experience Manager 6.5-gemeenschappen.
-uuid: 1b436959-581c-4b34-b2df-cccc5727da59
-contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.5
-discoiquuid: c3505807-1550-491a-8619-e87839afca4f
-docset: aem65
+title: Opmerkingen bij de release AEM Communities
+description: Opmerkingen bij de release die specifiek betrekking hebben op Adobe Experience Manager 6.5 Gemeenschappen.
 translation-type: tm+mt
-source-git-commit: 57bad4e74b2dfd9e389643bfe58ef25564c5c545
+source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
+workflow-type: tm+mt
+source-wordcount: '493'
+ht-degree: 0%
 
 ---
 
 
-# Opmerkingen bij de release AEM-gemeenschappen{#aem-communities-release-notes}
+# Opmerkingen bij de release AEM Communities {#aem-communities-release-notes}
 
-Lees verder voor de verbeteringen aan AEM Communities sinds de release 6.4. Raadpleeg de gebruikershandleiding [van](https://helpx.adobe.com/experience-manager/6-4/communities/user-guide.html)AEM 6.5 Communities voor meer informatie over de nieuwe functies.
+Lees verder voor de verbeteringen aan AEM Communities sinds de release 6.4. Zie [AEM 6.5 Community User Guide](https://helpx.adobe.com/experience-manager/6-4/communities/user-guide.html)voor meer informatie over de nieuwe functies.
 
 Voor de recentste versie, zie de het [Plaatsen sectie van Gemeenschappen](https://helpx.adobe.com/in/experience-manager/6-4/help/communities/deploy-communities.html#LatestReleases) van de documentatie.
 
@@ -22,13 +20,13 @@ Voor de recentste versie, zie de het [Plaatsen sectie van Gemeenschappen](https:
 
 ### Verbeteringen van de betrokkenheid van de gemeenschap {#enhancements-to-community-engagement}
 
-**@Mtifications ondersteunen** AEM Communities biedt geregistreerde gebruikers nu de mogelijkheid om andere geregistreerde leden te labelen (vermelden) om hun aandacht te vestigen in Door gebruikers gegenereerde inhoud. De gelabelde (vermelde) leden worden vervolgens op de hoogte gesteld, met een diepe koppeling naar de overeenkomstige door de gebruiker gegenereerde inhoud. Gebruikers kunnen er echter voor kiezen om het web- en e-mailbericht uit te schakelen of in te schakelen.
+**@Mtifications-ondersteuning** AEM Communities stellen geregistreerde gebruikers nu in staat om andere geregistreerde leden van tags te voorzien (genoemd), zodat ze hun aandacht kunnen vestigen in door gebruikers gegenereerde inhoud. De gelabelde (vermelde) leden worden vervolgens op de hoogte gesteld, met een diepe koppeling naar de overeenkomstige door de gebruiker gegenereerde inhoud. Gebruikers kunnen er echter voor kiezen om het web- en e-mailbericht uit te schakelen of in te schakelen.
 
 ![Op de vergadering](assets/at-mentions.png)
 
 De gebruikers van de Gemeenschap hoeven niet naar hun voornaam, familienaam, of gebruikersnaam te zoeken om te zien of heeft iemand uit aan hen bereikt of hun aandacht nodig. Bovendien kunnen UGC-auteurs reacties vragen bij specifieke geregistreerde gebruikers die het probleem het beste kunnen oplossen en invoer kunnen toevoegen.
 
-De communautaire beheerders moeten Mentie **op communautaire componenten toelaten om geregistreerde gebruikers toe te staan de functionaliteit op die componenten gebruiken.
+De communautaire beheerders moeten Mentie **op communautaire componenten** toelaten om geregistreerde gebruikers toe te staan de functionaliteit op die componenten gebruiken.
 
 **Groepsberichten**
 
@@ -56,7 +54,7 @@ De nieuwe Mening van de Lijst met betere UI is verstrekt in bulkmoderatie om Geb
 
 **Site- en groepsbeheerders van auteurs**
 
-Gemeenschappen, vanaf AEM 6.5, maken gedecentraliseerd beheer (en beheer) van verschillende gemeenschapssites en groepen/geneste groepen mogelijk. Organisaties die meerdere communitysites en geneste groepen hosten, kunnen nu leden selecteren voor beheerdersrollen aan de Auteur op het moment dat de site (en groep) wordt gemaakt.
+Gemeenschappen, AEM 6.5 en hoger, maken gedecentraliseerd beheer (en beheer) van verschillende gemeenschapssites en groepen/geneste groepen mogelijk. Organisaties die meerdere communitysites en geneste groepen hosten, kunnen nu leden selecteren voor beheerdersrollen aan de Auteur op het moment dat de site (en groep) wordt gemaakt.
 
 ![Sitebeheerder](assets/site-admin.png)
 
@@ -68,8 +66,10 @@ Sitebeheerders kunnen een groep op elk hiërarchisch niveau maken en de standaar
 
 De enablement-functionaliteit van AEM 6.5 Communities ondersteunt Shareable Content Object Reference Model [(SCORM) 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) -engine.
 
-**De steun van de toetsenbordnavigatie op enablement componenten**De componenten van Enablement (bijvoorbeeld Catalogus en het Spelen van de Cursus, Toewijzingen, de Bibliotheek van het Dossier) in AEM-Gemeenschappen steunen toetsenbordnavigatie voor betere toegankelijkheid.
+* Ondersteuning voor toetsenbordnavigatie op schakelingscomponenten
+* De componenten van Enablement (bijvoorbeeld Catalog en Cursus het Spelen, Toewijzingen, de Bibliotheek van het Dossier) in AEM Communities steunen toetsenbordnavigatie voor betere toegankelijkheid.
 
 ### Andere verbeteringen {#other-enhancements}
 
-* **Solr 7 support**AEM 6.5 Communities ondersteunt Apache Solr 7.0 versie van het zoekplatform bij het opzetten van MSRP en DSRP.
+* Solr 7-ondersteuning
+* AEM 6.5 Community&#39;s ondersteunen Apache Solr 7.0-versie van het zoekplatform bij het opzetten van MSRP en DSRP.

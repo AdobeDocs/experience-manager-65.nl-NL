@@ -3,7 +3,7 @@ title: Adobe Experience Manager 6.5 de Vorige Nota's van de Versie van het Servi
 description: De nota's van de versie specifiek voor Adobe Experience Manager 6.5 Service Pack 3 en vroeger.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: 60a5bb489c1f473f3f848909b8c2eb3192c49e88
+source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
 workflow-type: tm+mt
 source-wordcount: '8098'
 ht-degree: 0%
@@ -21,17 +21,17 @@ Enkele belangrijke functies en verbeteringen die zijn geïntroduceerd in Adobe E
 
 * Adobe Experience Manager Assets is nu geconfigureerd met Brand Portal via Adobe I/O Console.
 
-* Er is nu een nieuwe stap Afdrukbare uitvoer [](../forms/using/aem-forms-workflow-step-reference.md) genereren beschikbaar voor workflows met formulieren voor Adobe Experience Managers.
+* Er is nu een nieuwe stap Afdrukbare uitvoer [](../forms/using/aem-forms-workflow-step-reference.md) genereren beschikbaar voor Adobe Experience Manager Forms-workflows.
 
 * [Ondersteuning](../forms/using/resize-using-layout-mode.md) voor meerdere kolommen in de lay-outmodus voor adaptieve formulieren en interactieve communicatie.
 
 * Ondersteuning voor [RTF](../forms/using/designing-form-template.md) -bestanden in HTML5-formulieren.
 
-* [Verbeteringen](new-features-latest-service-pack.md#accessibility-enhancements) voor toegankelijkheid in Experience Manager Assets.
+* [Verbeteringen](new-features-latest-service-pack.md#accessibility-enhancements) voor toegankelijkheid in Experience Managers.
 
 * De ingebouwde opslagplaats (Apache Jackrabbit Oak) wordt bijgewerkt naar versie 1.10.8.
 
-* U kunt selectieve inhoudsubstructuren aan *Dynamic Media nu synchroniseren - wijze* Scene7 in plaats van allen beschikbaar bij `content/dam`.
+* U kunt selectieve inhoudsubstructuren nu synchroniseren met *Dynamic Media - Scene7-modus* in plaats van alle beschikbare substructuren op `content/dam`.
 
 * Integratie van formuliergegevensmodellen met SOAP-webservice ondersteunt nu keuzegroepen of kenmerken voor elementen.
 
@@ -41,9 +41,9 @@ Voor een volledige lijst van eigenschappen en zeer belangrijke hoogtepunten die 
 
 ### Sites {#sites-fixes}
 
-* Wanneer een URL van een pagina van de Plaatsen van de Adobe Experience Manager een dubbelpunt (`:`) of percentagesymbool (`%`) bevat, houdt browser op antwoordend en de gebruikspikes van cpu (NPR-32369, NPR-31918).
+* Wanneer een URL van een Adobe Experience Manager Sites-pagina een dubbele punt (`:`) of percentagesymbool (`%`) bevat, reageert de browser niet meer en CPU-gebruikspikes (NPR-32369, NPR-31918).
 
-* Wanneer een pagina van de Plaatsen van Experience Manager voor het uitgeven en een component wordt geopend, blijft de deegactie voor sommige placeholders (NPR-32317) niet beschikbaar.
+* Wanneer een pagina van de Plaatsen van de Experience Manager voor het uitgeven wordt geopend en een component wordt gekopieerd, blijft de deegactie niet beschikbaar voor sommige placeholders (NPR-32317).
 
 * Wanneer de wizard Publicatie beheren wordt geopend, wordt een ervaringsfragment dat is gekoppeld aan een kerncomponent niet weergegeven in de lijsten met gepubliceerde referenties (NPR-32233).
 
@@ -51,7 +51,7 @@ Voor een volledige lijst van eigenschappen en zeer belangrijke hoogtepunten die 
 
 * Wanneer de server-tijd en machine-tijd in verschillende tijdzones zijn, toont de geplande publicatietijd servertijd in Touch UI, terwijl in Klassieke UI, machinetijd wordt getoond (NPR-32077).
 
-* Experience Manager Sites kan geen pagina openen met een achtervoegsel in de URL (NPR-32072).
+* Sites van Experience Managers kunnen geen pagina openen met een achtervoegsel in de URL (NPR-32072).
 
 * Wanneer een gebruiker een inhoudsfragment bewerkt, wordt een verwijderde variant van het inhoudsfragment hersteld (NPR-32062).
 
@@ -63,7 +63,7 @@ Voor een volledige lijst van eigenschappen en zeer belangrijke hoogtepunten die 
 
 * Wanneer de Fragmenten van de Ervaring worden gesleept, wordt de hoge reactietijd waargenomen (NPR-31878).
 
-* Wanneer u de component van de Belemmering hier optie in ontvankelijke placeholder van het net selecteert, wordt een GET verzoek verzonden en het verzoek resulteert in HTTP 403 fout (NPR-31845).
+* Wanneer u de component van de Belemmering hier optie in ontvankelijke placeholder van het net selecteert, wordt een verzoek van de GET verzonden en het verzoek resulteert in fout HTTP 403 (NPR-31845).
 
 * Wanneer u de inhoud binnen dezelfde map verplaatst, is de optie Pagina verplaatsen uitgeschakeld (NPR-31840).
 
@@ -73,7 +73,7 @@ Voor een volledige lijst van eigenschappen en zeer belangrijke hoogtepunten die 
 
 * Wanneer een gebruiker op de knop Maken klikt, is de pagina-optie niet beschikbaar (NPR-31756).
 
-* Kan de campagne in de Adobe-campagne niet synchroniseren met de ontwerpimportcomponent OOTB (Out of the box) (NPR-31728).
+* Kan de campagne niet synchroniseren in Adobe-campagne met OOTB (Out of the box)-ontwerpimportcomponent (NPR-31728).
 
 * Wanneer u een lijst met opsommingstekens probeert te wijzigen in een genummerde lijst, worden alleen de eerste twee items van de lijst gewijzigd (NPR-31636).
 
@@ -87,7 +87,7 @@ Voor een volledige lijst van eigenschappen en zeer belangrijke hoogtepunten die 
 
 * De knop waarmee de workflow voor het verzamelen van elementen wordt geactiveerd, is uitgeschakeld (NPR-32471).
 
-* Een omslag zonder naam wordt gecreeerd in SPS (het Publiceren Scene7 Systeem) terwijl het bewegen van activa van één omslag aan een andere in Experience Manager met de configuratie van Dynamic Media Scene7 (NPR-32440).
+* Er wordt een map zonder naam gemaakt in SPS (Scene7 Publishing System) terwijl een element van de ene map naar de andere wordt verplaatst in Experience Manager met de Scene7-configuratie van Dynamic Media (NPR-32440).
 
 * De handeling voor het verplaatsen van alle elementen (met de opdracht Alles selecteren en vervolgens verplaatsen) naar een map met gepubliceerde elementen mislukt bij fout (NPR-32366).
 
@@ -107,7 +107,7 @@ Voor een volledige lijst van eigenschappen en zeer belangrijke hoogtepunten die 
 
 * In de gebruikersinterface van Experience Manager Assets worden afgebroken bestandsnamen weergegeven wanneer elementen met meer dan 50 tekens in de bestandsnaam zijn geüpload (NPR-32054).
 
-* Alle selectievakjes in het deelvenster Filter worden gewist wanneer het eerste en het tweede selectievakje worden gewist, terwijl niveau twee selectievakjes in de boomstructuur van het selectievakje in Adobe Stock zijn ingeschakeld (NPR-31919).
+* Alle selectievakjes in het deelvenster Filter worden gewist wanneer het eerste en het tweede selectievakje worden gewist, terwijl op niveau twee selectievakjes in de boomstructuur van het selectievakje in Adobe Stock zijn ingeschakeld (NPR-31919).
 
 * Bestanden en mapzoekopdrachten met Omnissearch-facetten geven uitzondering (NPR-31872).
 
@@ -119,23 +119,23 @@ Voor een volledige lijst van eigenschappen en zeer belangrijke hoogtepunten die 
 
 * De resultatenpagina Touch UI-zoekopdracht (uitgevoerd via Omnissearch) wordt automatisch naar boven geschoven en verliest de schuifpositie van de gebruiker (NPR-31307).
 
-* De elementendetailpagina van PDF-elementen geeft geen actieknoppen weer, behalve de knoppen Aan verzameling en Vertoning toevoegen in Experience Manager die worden uitgevoerd in de uitvoermodus van Dynamic Media Scene7 (CQ-4286705).
+* Op de elementendetailpagina van PDF-elementen worden geen actieknoppen weergegeven, behalve naar de knoppen Verzameling en Vertoning toevoegen in de Experience Manager die wordt uitgevoerd in de Scene7-uitvoeringsmodus van Dynamic Media (CQ-4286705).
 
-* De activa vergen te lang om door het partijuploadproces van Scene7 (CQ-4286445) te verwerken.
+* Het duurt te lang om de batchupload van Scene7 te doorlopen (CQ-4286445).
 
 * Met de knop Opslaan wordt de externe set niet geïmporteerd als de gebruiker geen wijzigingen heeft aangebracht in de Editor instellen in de Dynamic Media-client (CQ-4285690).
 
-* Miniatuur van 3D-middelen is niet informatief wanneer een ondersteund 3D-model in Experience Manager wordt opgenomen (CQ-4283701).
+* Miniatuur van 3D-middelen is niet informatief wanneer een ondersteund 3D-model in de Experience Manager wordt opgenomen (CQ-4283701).
 
 * De onverwerkte status van de voorinstelling van de viewer voor SmartCrop wordt twee keer weergegeven op de bannertekst naast de naam van de voorinstelling (CQ-4283517).
 
 * Onjuiste containerhoogte van een geüpload 3D-model, voorvertoond in 3D-viewer, wordt weergegeven op de detailpagina van het element (CQ-4283309).
 
-* De Carousel Editor wordt niet geopend in IE 11 in de hybride modus Experience Manager-Dynamic Media (CQ-4255590).
+* De Carousel Editor wordt niet geopend in IE 11 in de Hybride modus Experience Manager Dynamic Media (CQ-4255590).
 
 * De toetsenbordfocus blijft vastzitten in de vervolgkeuzelijst E-mail in het dialoogvenster Downloaden, in Chrome- en Safari-browsers (NPR-32067).
 
-* Selectievakje voor alle inhoud synchroniseren is niet standaard ingeschakeld wanneer wordt geprobeerd om DM-cloud config toe te voegen op Experience Manager (CQ-4288533).
+* Het selectievakje Alle inhoud synchroniseren is standaard niet ingeschakeld wanneer wordt geprobeerd om DM-cloud config op Experience Manager toe te voegen (CQ-4288533).
 
 ### Foundation-UI {#foundation-ui-6540}
 
@@ -209,11 +209,11 @@ Voor een volledige lijst van eigenschappen en zeer belangrijke hoogtepunten die 
 
 * MS Word- en MS Excel-documenten met JPEG-afbeeldingen kunnen niet worden geparseerd en er is een fout opgetreden bij het parseren van een klasse die niet is gevonden (NPR-31952).
 
-### Formulieren {#forms-6540}
+### Forms {#forms-6540}
 
 >[!NOTE]
 >
->Experience Manager Service Pack bevat geen oplossingen voor Experience Manager Forms. Ze worden geleverd met behulp van een apart Forms add-on pakket. Daarnaast wordt een cumulatief installatieprogramma uitgebracht dat oplossingen voor Adobe Experience Manager Forms op JEE bevat. Zie [Invoegtoepassing](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) Experience Manager Forms installeren en Experience Manager Forms [installeren in JEE](/help/release-notes/sp-release-notes.md#install-aem-forms-jee-installer)voor meer informatie.
+>Experience Manager Service Pack omvat geen moeilijke situaties voor Experience Manager Forms. Ze worden geleverd met een apart Forms-add-onpakket. Daarnaast wordt een cumulatief installatieprogramma uitgebracht dat oplossingen voor Adobe Experience Manager Forms op JEE bevat. Voor meer informatie, zie de toe:voegen-aan [van Experience Manager Forms](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) installeren en Experience Manager Forms [installeren op JEE](/help/release-notes/sp-release-notes.md#install-aem-forms-jee-installer).
 
 * Correspondentenbeheer: Letters geven extra tekens weer na verzending naar workflows voor postprocessen (NPR-32626).
 
@@ -221,17 +221,17 @@ Voor een volledige lijst van eigenschappen en zeer belangrijke hoogtepunten die 
 
 * Correspondentenbeheer: De standaardwaarden die in de lettertypesjabloon worden gedefinieerd, worden niet weergegeven in de voorvertoningsmodus (NPR-32511).
 
-* Mobiele formulieren: De knop Verzenden wordt weergegeven als vergroot tijdens het renderen van een XDP-formulier in een HTML-versie (NPR-32514).
+* Mobiele Forms: De knop Verzenden wordt weergegeven als vergroot tijdens het renderen van een XDP-formulier in een HTML-versie (NPR-32514).
 
 * Documentservices: Problemen met URL-toegang voor Letters en enkele andere pagina&#39;s na toepassing van Service Pack 2 (NPR-32508, NPR-32509).
 
 * Documentservices: Als het aantal transacties op een server een specifieke limiet overschrijdt, mislukt de conversie van HTML naar PDF en worden de instellingen voor het bestandstype van de [!DNL Forms] server verwijderd (NPR-32204).
 
-* Adaptieve formulieren: Browser het hulpmiddel van de toegankelijkheid meldt mislukkingen in adaptieve vormen overeenkomstig de richtlijnen van niveau AA van WCAG2 (NPR-32312, NPR-32309, CQ-4285439).
+* Adaptieve Forms: Browser het hulpmiddel van de toegankelijkheid meldt mislukkingen in adaptieve vormen overeenkomstig de richtlijnen van niveau AA van WCAG2 (NPR-32312, NPR-32309, CQ-4285439).
 
-* Adaptieve formulieren: Het hulpmiddel van de de browser van Chrome rapporteert een beste praktijkmislukking (NPR-32310).
+* Adaptieve Forms: Het hulpmiddel van de de browser van Chrome rapporteert een beste praktijkmislukking (NPR-32310).
 
-* Adaptieve formulieren: Problemen met de omzetting tijdens het configureren van een adaptief formulier dat is ingesloten op een pagina met Experience Manager-sites (NPR-32168).
+* Adaptieve Forms: Vertaalproblemen tijdens het configureren van een adaptief formulier dat is ingesloten op de pagina Sites van Experience Manager (NPR-32168).
 
 * Workbench: Er wordt een foutbericht weergegeven wanneer de bewerking PDF-eigenschappen ophalen voor de PDF Utilities-service (NPR-32150) wordt gebruikt.
 
@@ -241,7 +241,7 @@ Voor een volledige lijst van eigenschappen en zeer belangrijke hoogtepunten die 
 
 * Designer: Als een tabel samengevoegde cellen bevat, mislukt de toegankelijkheidstest voor het PDF-uitvoerbestand dat is geconverteerd van een XDP-formulier met de uitvoerservice (CQ-4285372).
 
-* Foundation JEE: Als de verbinding van een Experience Manager Forms-server met een cluster wordt verbroken, wordt door cacheproblemen voorkomen dat de server opnieuw verbinding maakt met de server (NPR-32412).
+* Foundation JEE: Als een Experience Manager Forms-server wordt losgekoppeld van een cluster, wordt door cacheproblemen voorkomen dat deze opnieuw verbinding maakt met de server (NPR-32412).
 
 ## Adobe Experience Manager 6.5.3.0 {#experience-manager-6530}
 
@@ -321,25 +321,25 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 
 * Bulkverplaatsing van activa mislukt en geeft een waarschuwingsbericht weer (NPR-30610).
 
-* De namen van activa worden veranderd in kleine letters wanneer het bewegen van activa van één omslag aan een andere in [!DNL Experience Manager] lopen in wijze [!DNL Dynamic Media]-Scene7 (NPR-31630).
+* Namen van middelen worden in kleine letters gewijzigd wanneer middelen van de ene map naar de andere worden verplaatst in [!DNL Experience Manager] [!DNL Dynamic Media]Scene7-modus (NPR-31630).
 
-* Er wordt een fout waargenomen tijdens het bewerken van een externe imageset, voor de afbeelding die zich bevindt in de map met de naam van het Scene7-bedrijf (NPR-31340).
+* Er is een fout opgetreden tijdens het bewerken van een externe imageset voor de afbeelding die zich bevindt in de map met dezelfde naam als de bedrijfsnaam van Scene7 (NPR-31340).
 
 * [!DNL Dynamic Media] activa met referenties worden niet gepubliceerd (NPR-31180).
 
-* Het uploaden van [!DNL Dynamic Media][!DNL Dynamic Media Classic] 7-Scene7 wijze aan duurt te lang om (NPR-31048) te voltooien.
+* Het uploaden van [!DNL Dynamic Media]7-Scene7 modus naar [!DNL Dynamic Media Classic] duurt te lang om te voltooien (NPR-31048).
 
 * Hotspot die aan een afbeeldingselement is toegevoegd, is niet zichtbaar via de Interactive Image Viewer op de pagina met elementdetails (NPR-30979).
 
-* Er worden enorme slingerbanen gecreëerd en de verwerkingsbanner wordt opnieuw weergegeven wanneer acties die op activa in [!DNL Experience manager Assets] worden uitgevoerd, worden doorgegeven aan Scene7 (NPR-30947).
+* Er worden enorme slingerbanen gecreëerd en de verwerkingsbanner wordt weer opgebouwd wanneer acties op activa in Scene7 [!DNL Experience manager Assets] worden uitgevoerd (NPR-30947).
 
 * Conflict doet zich voor bij het maken van Taalkopie van middelen en middelen wordt niet geüpload naar Scene7 (NPR-30932).
 
 * Dynamische vertoningen die zijn gedownload van [!DNL Experience Manager] uitvoering in [!DNL Dynamic Media]-hybride modus worden verbroken (het gaat om teksttypen met de inhoud &#39;kan afbeelding niet vinden&#39; in plaats van het type afbeeldingsinhoud) (NPR-30876).
 
-* [!DNL Dynamic Media] De videowerkstroom van de codering ontbreekt om duimnagel voor de video te produceren die van [!DNL Dynamic Media Classic] aan wijze [!DNL Dynamic Media]-Scene7 op Adobe Experience Manager (CQ-4282011) wordt gemigreerd.
+* [!DNL Dynamic Media] De workflow Video coderen genereert geen miniatuur voor de video die op de Adobe Experience Manager van de modus [!DNL Dynamic Media Classic] naar de modus [!DNL Dynamic Media]-Scene7 wordt gemigreerd (CQ-4282011).
 
-* IpsApiException waargenomen terwijl het migreren van activa van één instantie aan een andere gebruikend verschillende het bedrijfs IDs Scene7 (CQ-4280548).
+* IpsApiException werd waargenomen terwijl het migreren van activa van één geval aan een andere gebruikend verschillende het bedrijfs identiteitskaart van Scene7 (CQ-4280548).
 
 * De miniatuur van 3D-middelen is niet informatief wanneer een ondersteund 3D-model wordt ingesloten in [!DNL Experience Manager] (CQ-4283701).
 
@@ -349,17 +349,17 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 
 * Video&#39;s kunnen niet worden afgespeeld met SmartCropVideoViewer in Internet Explorer 11 en Safari (CQ-4281422).
 
-* Het gebruik van verplaatsingsknoop om veelvoudige activa, van één omslag aan een andere te bewegen, ontbreekt in [!DNL Experience Manager] lopende op runmode [!DNL Dynamic Media]-Scene7 (CQ-4280384).
+* Het gebruik van de verplaatsingsknop om meerdere elementen van de ene map naar de andere te verplaatsen, mislukt in de [!DNL Experience Manager] uitvoermodus van [!DNL Dynamic Media]-Scene7 (CQ-4280384).
 
 * Vervormde video wordt weergegeven op de elementdetails wanneer het MIME-type niet MP4 is (CQ-4279704).
 
 * Video&#39;s die onlangs in mappen met videoprofiel zijn opgenomen, worden nog steeds verwerkt nadat het coderingspercentage is voltooid tot 100% (CQ-4279389).
 
-* Het bewegen van activa van een omslag leidt tot grote aantallen sling banen (vraag Scene7 API) dan ideaal vereist (CQ-4278664).
+* Als u elementen uit een map verplaatst, ontstaan er veel slingertaken (Scene7 API-aanroepen) die bij voorkeur vereist zijn (CQ-4278664).
 
-* De namen van de imageset worden veranderd in kleine letters in Scene7, wanneer imageset (of mediaset) wordt gecreeerd en met aangewezen noemende overeenkomst in DAM (CQ-4281112) genoemd.
+* Namen van de imageset worden in Scene7 gewijzigd in kleine letters, wanneer imageset (of mediaset) wordt gemaakt en benoemd met de juiste naamgevingsconventie in DAM (CQ-4281112).
 
-* Scene7 de reeksen van de Migrator publiceren verkeerd staat (CQ-4263492).
+* Scene7 Migrator-sets publiceren de status onjuist (CQ-4263492).
 
 * De resultatenpagina Touch UI-zoekopdracht (uitgevoerd via Omnissearch) wordt automatisch naar boven geschoven en verliest de schuifpositie van de gebruiker in Content Fragments (CQ-4282898).
 
@@ -399,7 +399,7 @@ Remove one mention of this fix.
 * Wanneer een pagina met bepaalde fragmenten van de Ervaring in niet redacteurswijze (of in Auteur zonder het `editor.html` voorvoegsel en `wcmmode=disabled`, of in Uitgever) wordt geopend., beëindigt het verzoek in de code van de de statusfout van HTTP `500` (NPR-30743).
 * Gebruikers kunnen hun wachtwoord niet wijzigen en toegang krijgen tot hun profielpagina (NPR-31161).
 
-### Zoeken en gebruikersinterface {#search-ui-interface}
+### Zoeken en gebruikersinterface {#ui-interface-and-search}
 
 * Wanneer u op een pagina met zoekresultaten overschakelt van de kaartweergave naar de lijstweergave, is er een vertraging voordat de pagina kan worden geschoven (NPR-31286).
 
@@ -468,15 +468,15 @@ Remove one mention of this fix.
 
 * De indexupdates van Lucene die auteurserver veroorzaken om te vertragen (NPR-31548).
 
-### Formulieren {#forms-6530}
+### Forms {#forms-6530}
 
 >[!NOTE]
 >
->[!DNL Experience Manager] Service Pack bevat geen oplossingen voor [!DNL Experience Manager Forms]. Ze worden geleverd met behulp van een apart Forms add-on pakket. Daarnaast wordt een cumulatief installatieprogramma uitgebracht dat oplossingen voor [!DNL Experience Manager Forms] JEE bevat. Zie [Invoegtoepassing](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) Experience Manager Forms installeren en Experience Manager Forms [installeren in JEE](/help/release-notes/sp-release-notes.md#install-aem-forms-jee-installer)voor meer informatie.
+>[!DNL Experience Manager] Service Pack bevat geen oplossingen voor [!DNL Experience Manager Forms]. Ze worden geleverd met een apart Forms-add-onpakket. Daarnaast wordt een cumulatief installatieprogramma uitgebracht dat oplossingen voor [!DNL Experience Manager Forms] JEE bevat. Voor meer informatie, zie de toe:voegen-aan [van Experience Manager Forms](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) installeren en Experience Manager Forms [installeren op JEE](/help/release-notes/sp-release-notes.md#install-aem-forms-jee-installer).
 
-#### Formulierinvoegpakket {#forms-add-on-package-6530}
+#### Forms-invoegtoepassing {#forms-add-on-package-6530}
 
-**Adaptieve formulieren**
+**Adaptieve Forms**
 
 * Tekenreeksen bevatten de woordenboeksleutel bij het lokaliseren van adaptieve formulieren (NPR-31110).
 
@@ -496,13 +496,13 @@ Remove one mention of this fix.
 
 * OSGi-workflow mislukt als gevolg van 100% CPU-gebruik (NPR-31233).
 
-**HTML5-formulieren**
+**HTML5 Forms**
 
 * Als u HTML5-voorbeeld van een XDP-formulier genereert, wordt een flikkering weergegeven terwijl exemplaren van een subformulier worden toegevoegd (NPR-30909).
 
-#### Formulieren bij JEE-installatieprogramma {#forms-jee-installer-6530}
+#### Forms op JEE-installatieprogramma {#forms-jee-installer-6530}
 
-**Formulieren - Document Services**
+**Forms - Document Services**
 
 * De de Webdienst van de ZEEP die MTOM in een .NET project gebruikt toont uitzonderingen voor AssemblerServiceClient aanhaalt en methodes HtmlToPDF2 (NPR-4281771).
 
@@ -510,7 +510,7 @@ Remove one mention of this fix.
 
 **Foundation JEE**
 
-* De configuratie van de actie laadt niet de procesnamen voor Invoke a Forms Workflow submit actie (NPR-31478).
+* De configuratie van de actie laadt niet de procesnamen voor het aanhalen van een Forms Workflow voorlegt actie (NPR-31478).
 
 ### Inclusief functiepakketten {#feature-packs-included-6530}
 
@@ -518,9 +518,9 @@ Remove one mention of this fix.
 >
 >Voor [!DNL Experience Manager Forms] klanten is het van essentieel belang om een [!DNL Experience Manager Forms] invoegpakket te installeren nadat u een [!DNL Experience Manager] Service Pack, Cumulative Fix Pack of Feature Pack hebt geïnstalleerd.
 
-#### Formulieren - Foundation JEE {#forms-foundation-jee-feature}
+#### Forms - Foundation JEE {#forms-foundation-jee-feature}
 
-* [!DNL Experience Manager] Formulierondersteuning voor Oracle 18c (NPR-29155).
+* [!DNL Experience Manager] Forms-ondersteuning voor Oracle 18c (NPR-29155).
 
 ## Adobe Experience Manager 6.5.2.0 {#experience-manager-6520}
 
@@ -572,7 +572,7 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 * Het metagegevensschema van mappen detecteert het gegevenstype niet automatisch en maakt dus geen gerelateerde TypeHint in de vorm van het verzenden van formulieren. NPR-30599: Hotfix voor CQ-4275227
 * Opties voor het bewerken van elementen uitsnijden en roteren zijn uitgeschakeld in de DMS7-ontwerpinterface. NPR-30118: Hotfix voor CQ-4273221
 * De functie van de Verbinding van het aandeel werkt niet aan [!DNL Experience Manager] instantie met configuratie DMS7. NPR-30080, NPR-30492: Hotfix voor CQ-4273651
-* Het toevoegen van de [!DNL Dynamic Media]-component Scene7 aan de pagina, en dan het publiceren van de pagina brengt niet de configuratie dmscene7 telkens teweeg. NPR-30641: Hotfix voor CQ-4275962
+* Wanneer u de component [!DNL Dynamic Media]-Scene7 aan de pagina toevoegt en de pagina vervolgens publiceert, wordt de configuratie dmscene7 niet telkens opnieuw geactiveerd. NPR-30641: Hotfix voor CQ-4275962
 * Toegevoegd een IPSJobJournal in [!DNL Experience Manager] om slechts één baan van de Systemen van de Preventie van het Binnendringen (IPS) per verwerkingsprofiel tot stand te brengen. NPR-30490: Hotfix voor CQ-4273614
 * [!DNL Dynamic Media]: Er zijn standaardfilters toegevoegd om te voorkomen dat elementen worden gerepliceerd naar het [!DNL Experience Manager] publicatieknooppunt. NPR-30538: Hotfix voor CQ-4274678
 * Introduceerde een externe werkstroom van het Herproces voor multi-middelsteun om omslag als lading toe te staan. De werkstroom heeft twee stappen - verwerkt activa zonder handvatten via meta-gegevenskaart aan volgende stap opnieuw en uploadt alle activa zonder activa handvat aan S7 in één enkele IPS baan. Voor meer details, zie het Vormen [!DNL Dynamic Media] Cloud Servicen. NPR-30489: Hotfix voor CQ-4272903
@@ -588,7 +588,7 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 * Als de gebruiker een e-mailadres in hoofdletters heeft, kunnen gebruikers niet inchecken voor de elementen die eerder zijn uitgecheckt. Hotfix voor CQ-4276575
 * De bewerking Verwijderen is alleen van toepassing op voorinstellingen die zijn geselecteerd. Als de lijst na de bewerking automatisch wordt vernieuwd op het scherm, worden andere voorinstellingen weergegeven die al zijn vernieuwd. Hotfix voor CQ-4261461
 * Het vormen van [!DNL Dynamic Media] Cloud Servicen op [!DNL Dynamic Media]-Hybride wijze resulteert in veelvoudige lege rapportsuites die in worden gecreeerd [!DNL Analytics][!DNL Experience Manager], en zonder rapportsuite identiteitskaart die in wordt opgeslagen, resulterend in rapportsuite duplicatie. Hotfix voor CQ-4249780
-* Rename verrichting in [!DNL Experience Manager] activa aan gedupliceerde naam kan niet synchroniseren aan Scene7. Hotfix voor CQ-4276763
+* Naam van bewerking in [!DNL Experience Manager] element wijzigen in gedupliceerde naam kan niet worden gesynchroniseerd met Scene7. Hotfix voor CQ-4276763
 * Door de gebruiker gegenereerde inhoud wordt onjuist weergegeven in het deelvenster met zoekfilters. Hotfix voor CQ-4273875
 * De optie Vergelijkbare zoeken is niet beschikbaar voor TIFF-afbeeldingen. Hotfix voor CQ-4278238
 * Geïmplementeerde optie om video te dempen bij het laden in VideoPlayer. Hotfix voor CQ-4266465
@@ -654,17 +654,17 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 * De aangepaste inhoud wordt pas correct weergegeven op de publicatieversie als de instantie opnieuw is gestart. NPR-30377: Hotfix voor CQ-4273706
 * Wanneer u Starten op een website configureert, wordt voor het bibliotheekadres een schuine streep (/) toegevoegd, zodat u telkens handmatig kunt ingrijpen. NPR-30694: Hotfix voor CQ-4275501
 
-### Formulieren {#forms-6520}
+### Forms {#forms-6520}
 
 >[!NOTE]
 >
->[!DNL Experience Manager] Service Pack bevat geen oplossingen voor [!DNL Experience Manager Forms]. Ze worden geleverd met een apart [!DNL Forms] invoegpakket. Daarnaast wordt een cumulatief installatieprogramma uitgebracht dat oplossingen voor [!DNL Experience Manager Forms] JEE bevat. Zie Invoegtoepassing [Experience Manager Forms](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) installeren en Experience Manager Forms JEE-installatieprogramma [](#forms-jee-installer)installeren voor meer informatie.
+>[!DNL Experience Manager] Service Pack bevat geen oplossingen voor [!DNL Experience Manager Forms]. Ze worden geleverd met een apart [!DNL Forms] invoegpakket. Daarnaast wordt een cumulatief installatieprogramma uitgebracht dat oplossingen voor [!DNL Experience Manager Forms] JEE bevat. Zie [Installeer Experience Manager Forms add-on](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) en [installeer Experience Manager Forms JEE installer](#forms-jee-installer)voor meer informatie.
 
 De belangrijkste markeringen voor [!DNL Experience Manager] 6.5.2.0 vormen zijn:
 
 * Instelling Automatisch toegevoegd aan `RenderAtClient` de API voor `PDFFormRenderOptions` [!DNL Experience Manager] Forms OSGi.
 
-#### Formulierinvoegpakket {#forms-add-on-package}
+#### Forms-invoegtoepassing {#forms-add-on-package}
 
 **Back-end integratie**
 
@@ -680,11 +680,11 @@ De belangrijkste markeringen voor [!DNL Experience Manager] 6.5.2.0 vormen zijn:
 
 * Een veld dat is gemarkeerd als vereist in het formuliergegevensmodel, wordt weergegeven als vereist in de interface Correspondentie maken (CCR UI). NPR-30623: Hotfix voor CQ-4274902
 
-**Formulieren - workflow**
+**Forms - Workflow**
 
 * Niet-toegewezen uitvoervariabelen op Gecontroleerde mappen zorgen ervoor dat de activering mislukt. Hotfix voor CQ-4264451
 
-**HTML5-formulieren**
+**HTML5 Forms**
 
 * Wanneer de douanecode of het project voor de tweede keer wordt opgesteld, geeft de pagina niet terug en de volgende fout komt voor:
 
@@ -696,15 +696,15 @@ De belangrijkste markeringen voor [!DNL Experience Manager] 6.5.2.0 vormen zijn:
 
 #### Forms JEE-installatieprogramma {#forms-jee-installer}
 
-**Formulieren - Documentbeveiliging**
+**Forms - Documentbeveiliging**
 
 * Het toepassen van een handtekening met tijdstempel mislukt vanwege een fout: ALC-DSC-003-000: com.adobe.idp.dsc.DSCInvocationException: Inroepfout. NPR-30820: Hotfix voor CQ-4275852
 
-**Formulieren - Document Services**
+**Forms - Document Services**
 
-* Als &quot;SubmitURL&quot;een en-teken (&amp;) bevat, worden de parseringsfouten gezien in het logbestand wanneer de POST-aanvraag wordt ingediend voor renderpdf servlet. NPR-30865: Hotfix voor CQ-4278232
+* Als &quot;SubmitURL&quot;een ampersand (&amp;) bevat, worden de ontledingsfouten gezien in het logboek wanneer het verzoek van de POST aan renderpdf servlet wordt gemaakt. NPR-30865: Hotfix voor CQ-4278232
 
-**Formulieren - Foundation JEE**
+**Forms - Foundation JEE**
 
 * De HTMLtoPDF-service geeft maxReuseCount niet weer in de JMX-console. NPR-30134, NPR-30304: Hotfix voor CQ-4273763
 * Het toevoegen van of het uitgeven van een verbinding van de Dienst van het Web door de Webdiensten van [!DNL Experience Manager Forms] Workbench aan te halen veroorzaakt een fout: ClassNotFoundException org.apache.axis.message.SOAPBodyElement. NPR-30105: Hotfix voor CQ-4273217
@@ -719,7 +719,7 @@ De belangrijkste markeringen voor [!DNL Experience Manager] 6.5.2.0 vormen zijn:
 
 * Er is een configuratie-eigenschap toegevoegd waarmee u Experience Fragments rechtstreeks kunt exporteren naar door de gebruiker gedefinieerde werkruimten voor [!DNL Adobe Target]. NPR-29189: Hotfix voor CQ-4249782
 
-#### Formulieren - Document Services {#forms-document-services-1}
+#### Forms - Document Services {#forms-document-services-1}
 
 * Instelling Automatisch toegevoegd aan `RenderAtClient` de API voor `PDFFormRenderOptions` [!DNL Experience Manager Forms] OSGi. NPR-30759: Hotfix voor CQ-4278193
 
@@ -740,12 +740,12 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 * Dialoogvenster Verwijderen is niet zichtbaar om het verwijderen van taken toe te staan. NPR-29720: Hotfix voor CQ-4271074
 * Nadat een gebruiker de elementtitel op de eigenschappenpagina heeft toegevoegd en vervolgens de pagina probeert te sluiten, [!DNL Experience Manager] wordt de eigenschappenpagina weer geopend. NPR-29627: Hotfix voor CQ-4264929
 * VersioningTimelineEventProvider moet een hoofdversie leveren samen met het knooppunt van het type nt: versie. Hotfix voor GRANITE-26063
-* Uitgevoerde de capaciteit om 360 bolvormige video&#39;s op wijze te uploaden en te spelen [!DNL Experience Manager] DM-Scene7. Hotfix voor CQ-4265131
+* De mogelijkheid om 360 bolvormige video&#39;s te uploaden en af te spelen in de modus [!DNL Experience Manager] DM-Scene7 is geïmplementeerd. Hotfix voor CQ-4265131
 * Met Live kopie wordt een onjuiste status opgehaald als de bron wordt bewerkt. Hotfix voor CQ-4265451
 * Ondersteuning voor beheer van meerdere sites ingeschakeld voor [!DNL Experience Manager Assets]. Hotfix voor CQ-4271453, CQ-4268621, CQ-4257491
 * [!DNL Experience Manager] een extra item voor de huidige versie van het element in de tijdlijngeschiedenis weer te geven, waarbij de laatste incheckopmerking van [!DNL Adobe Asset Link]wordt weergegeven. Hotfix voor CQ-4262864
 * In de tijdlijn van het inhoudsfragment wordt een foutbericht weergegeven wanneer eigenschappen ontbreken. Hotfix voor CQ-4272560
-* Een kwestie met Scene7 videospeler wanneer uitgebreid aan het volledige scherm. Hotfix voor CQ-4266700
+* Dit is een probleem met Scene7-videospeler wanneer deze wordt uitgevouwen tot volledig scherm. Hotfix voor CQ-4266700
 * ZoomVerticalViewer: Panknoppen mogen niet worden weergegeven als één afbeeldingselement wordt gebruikt. Hotfix voor CQ-4264795
 * Wanneer u een onderliggende node in de live kopie verwijdert, moet de liveRelationship worden losgekoppeld. Hotfix voor CQ-4270395
 * Het meta-gegevensschema bevat slechts punten van de globale configuratie en mist degenen van de actieve huurder. De URL-waarde van het formPath wordt weer ingesteld op de standaardwaarde, zelfs als deze wordt gewijzigd. NPR-29945: Hotfix voor CQ-4262898
@@ -834,17 +834,17 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 
 * Gegevens over geheugengebruik worden niet weergegeven in de systeemconsole bij gebruik van Java11\. NPR-29669
 
-### Formulieren
+### Forms
 
 De belangrijkste hooglichten voor [!DNL Experience Manager Forms] 6.5.1.0 zijn:
 
-* Alleen OSGi: Er is een nieuw kenmerk toegevoegd `PAGECOUNT` in de service Uitvoer en Formulieren.
+* Alleen OSGi: Een nieuw kenmerk toegevoegd `PAGECOUNT` in Output en Forms Service.
 
 * Alleen OSGI: Ondersteuning ingeschakeld voor het maken van statische PDF-bestanden met Forms Service.
 * Toegelaten toestemmingen op XMLForm.exe voor beheerder en wortelgebruikers.
 * Ondersteuning ingeschakeld voor ADFS v3.0 for Dynamics on-premise integratie.
 
-#### Formulierinvoegpakket
+#### Forms-invoegtoepassing
 
 **Backend-integratie**
 
@@ -858,21 +858,21 @@ De belangrijkste hooglichten voor [!DNL Experience Manager Forms] 6.5.1.0 zijn:
 
 * Zelfs als er geen inhoud wordt verwacht van de REST API-uitvoer, genereert de aanroepbewerking van het formuliergegevensmodel een fout. Hotfix voor CQ-4268828
 
-**Adaptieve formulieren**
+**Adaptieve Forms**
 
 * Unable to add new instance in Adaptive Form Fragment during lazy loading. NPR-29818: Hotfix voor CQ-4269875
 * Verify component registreert of toont geen fout voor Document van de malplaatjes van het Verslag. Hotfix voor CQ-4272999
-* Toegevoegde ondersteuning voor het uitschakelen van de layouteditor voor Adaptieve formulieren. Hotfix voor CQ-4270810
-* De stap Verifiëren voor Adaptive Forms is hersteld in [!DNL Experience Manager] 6.5. Hotfix voor CQ-4269583
+* Toegevoegde ondersteuning voor het uitschakelen van de lay-outeditor voor Adaptive Forms. Hotfix voor CQ-4270810
+* De stap Verifiëren voor Adaptive Forms is in [!DNL Experience Manager] 6.5 hersteld. Hotfix voor CQ-4269583
 
 * Fout bij validatie van adaptieve formuliervelden [!DNL Adobe Sign]. Hotfix voor CQ-4269463
 * Wanneer een [!DNL Experience Manager Forms] instantie meer dan 20 adaptieve formulierfragmenten heeft en de naam van alle formulierfragmenten begint met dezelfde tekenreeks, retourneert de zoekopdracht niet of alleen naar recente 20 gemaakte fragmenten. Hotfix voor CQ-4264414, CQ-4264914
 
-* Prestatieproblemen wanneer de toepassing Adaptive Forms wordt gebruikt met een grote dataset. . Hotfix voor CQ-4235310
+* Prestatieproblemen wanneer de adaptieve Forms-toepassing wordt gebruikt met een grote dataset. . Hotfix voor CQ-4235310
 
 * Wanneer betreden door anonieme rekening op een publicatie instantie, ontbreekt GuideRuntime manuscript om te laden. Hotfix voor CQ-4268679
 
-**Formulieren - Interactieve communicatie**
+**Forms - Interactieve communicatie**
 
 * De interactieve Communicatie malplaatje maakt geen lijst van kopbal en footer componenten in toegestane componentenlijst. Hotfix voor CQ-4237895
 * Wanneer u een interactieve sjabloon voor communicatie-afdrukken maakt die een afbeeldingsveld bevat, wordt de titel van het diagram ingesteld op leeg. Hotfix voor CQ-4264772
@@ -883,11 +883,11 @@ De belangrijkste hooglichten voor [!DNL Experience Manager Forms] 6.5.1.0 zijn:
 * De montages van de agent zijn niet zichtbaar aangezien Editable door de controledoos van de Agent wordt ongecontroleerd wanneer het bindingstype van het Fragment van de Tekst in niets/het ModelVoorwerp van Gegevens voor het gebied van het Koord/variabele wordt veranderd. Hotfix voor CQ-4261953
 * Voor de voorlegging van de UI van de Agent, slaat het resulterende dossier van Webgegevens informatie voor erving-geannuleerde niet gebonden gebieden op. Hotfix voor CQ-4265621
 
-**Formulieren - workflow**
+**Forms - Workflow**
 
 * Wanneer een formulier opnieuw wordt verzonden vanuit de Postvak UIT de app voor adaptieve formulieren, gaan er gegevens verloren. NPR-28345: Hotfix voor CQ-4260929
 * Documenten worden niet gesloten tijdens het opslaan voor niet-variabele gevallen. Hotfix voor CQ-4269784
-* De app Adaptive Forms heeft de ondersteuning voor Microsoft Windows 8.1 ingetrokken. Hotfix voor CQ-4265274
+* De adaptieve Forms-app heeft de ondersteuning voor Microsoft Windows 8.1 ingetrokken. Hotfix voor CQ-4265274
 * Wanneer een afbeelding van meer dan 2 MB als een bijlage op veldniveau aan een formulier wordt gekoppeld in de Android-versie van de [!DNL Experience Manager Forms] app, loopt de app vast. Hotfix voor CQ-4265578
 
 * Toegelaten pre-populatieopties voor Interactieve Communicatie Kanaal van de Druk in Assign taak. Hotfix voor CQ-4265577
@@ -898,11 +898,11 @@ De belangrijkste hooglichten voor [!DNL Experience Manager Forms] 6.5.1.0 zijn:
 * Verzending vanuit werkruimte mislukt met een umlaut-teken. Hotfix voor CQ-4263172
 * Als de workflow tijdens een upgrade wordt geopend voor bewerking, wordt in de gebruikersinterface van de controlemap (UI) een fout weergegeven in plaats van de naam van de workflow. Hotfix voor CQ-4238579
 
-**Formulieren - Beheer**
+**Forms - Beheer**
 
 * Wanneer een andere extensie dan xsd of schema.json wordt geüpload, vindt uploaden niet plaats en wordt er geen foutbericht gegenereerd. Hotfix voor CQ-4266716
 
-**Formulieren - Correspondentenbeheer**
+**Forms - Correspondentenbeheer**
 
 * [!DNL Experience Manager Forms] 6.5 de Create Correspondence UI (CCR UI) kan geen correspondentie openen die met [!DNL Experience Manager Forms] 6.3 wordt gecreeerd. Hotfix voor CQ-4266392
 * De functie Som in XDP werkt niet als het DDE gegevenstype van type aantal is. Hotfix voor CQ-4227403
@@ -917,18 +917,18 @@ De belangrijkste hooglichten voor [!DNL Experience Manager Forms] 6.5.1.0 zijn:
 * De naam van PhantomJS is vervangen door WebToPDF voor conversie van HTML naar PDF. NPR-29933: Hotfix voor CQ-4234545
 * Er wordt een fout gegenereerd bij het converteren van het ZIP-bestand naar PDF. Hotfix voor CQ-4268628
 
-**Formulieren - Designer**
+**Forms - Designer**
 
 * Wanneer een volledige toegankelijkheidscontrole wordt uitgevoerd op de statische PDF die is gemaakt met [!DNL Experience Manager Forms Designer]het gereedschap, mislukt de controle van de primaire taal omdat het taalkenmerk ontbreekt. Hotfix voor CQ-4272923, CQ-4271002
 
-**Formulieren - Documentbeveiliging**
+**Forms - Documentbeveiliging**
 
 * Digital Signature with Hardware Security Module (HSM) werkt niet op OSGi Linux op Java 11 en Java 8\. NPR-29838: Hotfix voor CQ-4270441
 * Digital Signature with Hardware Security Module (HSM) werkt niet op JEE Linux en op alle ondersteunde toepassingsservers, zoals JBoss en Websphere. NPR-29839: Hotfix voor CQ-4266721
 * Als u de handtekeningen in een PDF verifieert met behulp van PDF Advanced Electronic Signatures (PAdES), wordt InvalidOperationException gegenereerd. NPR-29842: Hotfix voor CQ-4244837
 * Extra ondersteuning voor documentbeveiliging voor Office 2019\. Hotfix voor CQ-4254369, CQ-4259764
 
-**Formulieren - Document Services**
+**Forms - Document Services**
 
 * PDF kan niet worden geconverteerd naar PDF/A-1b met formulierveld heeft geen weergavewoordenboek. NPR-29940: Hotfix voor CQ-4269618
 
@@ -937,7 +937,7 @@ De belangrijkste hooglichten voor [!DNL Experience Manager Forms] 6.5.1.0 zijn:
 * Kan de machtigingen voor XMLForm.exe niet wijzigen. NPR-29828, NPR-29237: Hotfix voor Q-4267080
 * In de statische PDF die door de uitvoermodule van de [!DNL Experience Manager Forms] server wordt gemaakt, wordt het taalkenmerk/de taaltag niet gevuld met de taal van het gemaakte document. NPR-27332: Hotfix voor CQ-4271002
 
-**Formulieren - Foundation JEE**
+**Forms - Foundation JEE**
 
 * Niet-beschikbare pdfg_srt in definitieve artefacten veroorzaakt het installatieprogramma om te ontbreken. NPR-29854: Hotfix voor CQ-4270137
 * LCBackupMode.sh werkt niet. NPR-29840: Hotfix voor CQ-4269424
@@ -947,15 +947,15 @@ De belangrijkste hooglichten voor [!DNL Experience Manager Forms] 6.5.1.0 zijn:
 
 #### Activa - opgenomen
 
-* Ondersteuning voor beheer van meerdere sites ingeschakeld voor [!DNL Experience Manager Assets]. Zie [Elementen hergebruiken met MSM voor Experience Manager Assets](https://helpx.adobe.com/experience-manager/6-5/help/assets/reuse-assets-using-msm.html)voor meer informatie. NPR-29199: Hotfix voor CQ-4259922
+* Ondersteuning voor beheer van meerdere sites ingeschakeld voor [!DNL Experience Manager Assets]. Zie Elementen [hergebruiken met MSM voor Experience Manager Assets](https://helpx.adobe.com/experience-manager/6-5/help/assets/reuse-assets-using-msm.html)voor meer informatie. NPR-29199: Hotfix voor CQ-4259922
 
 #### Sites - inbegrepen
 
 * Exporteer [!DNL Experience Manager] ervaringsfragmenten naar [!DNL Adobe Target]. Zie [de Experience Fragment Link Rewriter Provider - HTML](https://helpx.adobe.com/experience-manager/6-5/help/sites-developing/experience-fragments.html#TheExperienceFragmentLinkRewriterProviderHTML)voor meer informatie. Hotfix voor CQ-4265469
 
-#### Formulieren - Document Services - inbegrepen
+#### Forms - Document Services - inbegrepen
 
-* Alleen OSGi: Een nieuw kenmerk PAGECOUNT toegevoegd in Output and Forms Service. NPR-28922: Hotfix voor CQ-4270870
+* Alleen OSGi: Een nieuw kenmerk PAGECOUNT toegevoegd in Output en Forms Service. NPR-28922: Hotfix voor CQ-4270870
 * Alleen OSGi: Ondersteuning ingeschakeld voor het maken van statische PDF-bestanden met Forms Service. NPR-28572: Hotfix voor CQ-4270869
 * Toegelaten toestemmingen op XMLForm.exe voor beheerder en wortelgebruikers. NPR-29237: Hotfix voor CQ-4267080
 

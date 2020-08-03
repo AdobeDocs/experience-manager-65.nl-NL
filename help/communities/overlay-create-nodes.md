@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: cd4f53ee-537b-4f10-a64f-474ba2c44576
 translation-type: tm+mt
-source-git-commit: 48afa2146d0dcbab4beaa1044645c269b49fd7ff
+source-git-commit: 9d6ec05fdc98e33a11303d189414c2c45c5e8b3c
+workflow-type: tm+mt
+source-wordcount: '257'
+ht-degree: 4%
 
 ---
 
@@ -24,7 +27,7 @@ Bedek het opmerkingensysteem met een aangepaste versie door het minimale aantal 
 >De inhoud van de map /libs wordt nooit bewerkt, omdat een nieuwe installatie of upgrade de map /libs kan verwijderen of vervangen, terwijl de inhoud van de map /apps ongewijzigd blijft.
 
 
-Gebruikend [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) op een auteursinstantie, begin door een weg in de /apps omslag te creëren die aan de weg aan de overlappende componenten in de /libs omslag identiek is.
+Wanneer u [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) op een auteurinstantie gebruikt, begint u met het maken van een pad in de map /apps dat identiek is aan het pad naar de bovenliggende componenten in de map /libs.
 
 Het pad dat wordt gedupliceerd is:
 
@@ -35,43 +38,43 @@ Sommige knooppunten in het pad zijn mappen en andere componenten.
 1. Bladeren naar [http://localhost:4502/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp)
 1. Maken `/apps/social` (als deze nog niet bestaat)
    * Knooppunt `/apps` selecteren
-   * **[!UICONTROL Maken > Map...]**
+   * **[!UICONTROL Create > Folder ...]**
       * Naam invoeren: `social`
 1. Knooppunt `social` selecteren
-   * **[!UICONTROL Maken]** > **[!UICONTROL Map...]**
+   * **[!UICONTROL Create]** > **[!UICONTROL Folder...]**
       * Naam invoeren: `commons`
 1. Knooppunt `commons` selecteren
-   * **[!UICONTROL Maken > Map...]**
+   * **[!UICONTROL Create > Folder...]**
       * Naam invoeren: `components`
 1. Knooppunt `components` selecteren
-   * **[!UICONTROL Maken > Map..]**.
+   * **[!UICONTROL Create > Folder..]**.
       * Naam invoeren: `hbs`
 1. Knooppunt `hbs` selecteren
-   * **[!UICONTROL Maken]** > Component **[!UICONTROL maken...]**
+   * **[!UICONTROL Create]** > **[!UICONTROL Create Component...]**
       * Label invoeren: `comments`
       * Titel invoeren: `Comments`
       * Beschrijving invoeren: `List of comments without showing avatars`
       * Supertype: `social/commons/components/comments`
       * Groep invoeren: `Communities`
-      * Klik op **[!UICONTROL Volgende]** totdat **[!UICONTROL OK]**
+      * Klikken **[!UICONTROL Next]** tot **[!UICONTROL OK]**
 1. Knooppunt `comments` selecteren
 
-   * **[!UICONTROL Maken > Component maken...]**
+   * **[!UICONTROL Create]** > **[!UICONTROL Create Component...]**
 
       * Label invoeren: `comment`
       * Titel invoeren: `Comment`
       * Beschrijving invoeren: `A comment instance without avatars`
       * Supertype: `social/commons/components/comments/comment`
       * Groep invoeren: `.hidden`
-      * Klik op **[!UICONTROL Volgende]** totdat **[!UICONTROL OK]**
-   * Alles **[!UICONTROL opslaan selecteren]**
+      * Klikken **[!UICONTROL Next]** tot **[!UICONTROL OK]**
+   * Selecteer **[!UICONTROL Save All]**
 1. De standaardinstelling verwijderen `comments.jsp`
    * Knooppunt selecteren `/apps/social/commons/components/hbs/comments/comments.jsp`
-   * Selecteren **[!UICONTROL Verwijderen]**
+   * Selecteer **[!UICONTROL Delete]**
 1. De standaardcomment.jsp verwijderen
    * Selecteer knooppunt `/apps/social/commons/components/hbs/comments/comment/comment.jsp`
-   * Selecteren **[!UICONTROL Verwijderen]**
-   * Alles **[!UICONTROL opslaan selecteren]**
+   * Selecteer **[!UICONTROL Delete]**
+   * Selecteer **[!UICONTROL Save All]**
 
 >[!NOTE]
 >
@@ -79,6 +82,7 @@ Sommige knooppunten in het pad zijn mappen en andere componenten.
 >
 >* `social/commons/components/comments`
 >* `social/commons/components/comments/comment`
+
 >
 
 
@@ -93,7 +97,7 @@ De eigen eigenschap `Type`(property `sling:resourceType`) van de overlay moet ee
    * Type: `String`
    * Waarde: `social/commons/components/hbs/comments/comment`
 1. Groen selecteren `[+] Add`
-   * Alles **[!UICONTROL opslaan selecteren]**
+   * Selecteer **[!UICONTROL Save All]**
 
-![chlimage_1-4](assets/chlimage_1-4.png)
+![create-nodes](assets/create-nodes.png)
 

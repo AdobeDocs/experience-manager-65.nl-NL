@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: c9d31ed8-c105-453b-bd3c-4660dfd81272
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4e823136604d291c5b867634268f67e003185a15
+source-git-commit: 9d6ec05fdc98e33a11303d189414c2c45c5e8b3c
 workflow-type: tm+mt
-source-wordcount: '213'
-ht-degree: 0%
+source-wordcount: '211'
+ht-degree: 1%
 
 ---
 
@@ -30,9 +30,9 @@ Als u de avatar niet naast elke geposte opmerking wilt weergeven:
 1. Kopiëren `comment.hbs`van `libs`naar `apps`
 
    1. Selecteer `/libs/social/commons/components/hbs/comments/comment/comment.hbs`
-   1. Kopie **selecteren**
+   1. Selecteer **[!UICONTROL Copy]**
    1. Selecteer `/apps/social/commons/components/hbs/comments/comment`
-   1. Plakken **selecteren**
+   1. Selecteer **[!UICONTROL Paste]**
 
 1. De bedekking openen `comment.hbs`
 

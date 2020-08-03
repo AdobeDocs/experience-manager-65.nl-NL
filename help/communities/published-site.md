@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: dd0cbc05-a361-46bc-b9f1-d045f8f23890
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bd9abe033216a00b93b2098e12b100ad478a8d08
+source-git-commit: 046da7a00be6073cb885b4e9774c48ab474e7e6d
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Wanneer de bezoeker van de site voor het eerst op de gepubliceerde site aankomt,
 
 `https://localhost:4503/content/sites/engage/en.html {#http-localhost-content-sites-engage-en-html}`
 
-![chlimage_1-31](assets/chlimage_1-31.png)
+![auteur](assets/authorpublished.png)
 
 ## Anonieme sitebezoeker {#anonymous-site-visitor}
 
@@ -82,7 +82,7 @@ Deze ervaring veronderstelt [Aaron McDonald](/help/communities/tutorials.md#demo
 
 Selecteer en onderteken in de rechterbovenhoek met gebruikersnaam (aaron.mcdonald@mailinator.com) en wachtwoord (wachtwoord). `Log in` Meld u aan met de Twitter- of Facebook-referenties.
 
-![chlimage_1-32](assets/chlimage_1-32.png)
+![aanmelden](assets/login.png)
 
 Zodra u bent aangemeld als lid van de geregistreerde gemeenschap, ziet u de volgende menu-items om op uw communitysite te klikken en deze te verkennen:
 
@@ -95,11 +95,11 @@ Zodra u bent aangemeld als lid van de geregistreerde gemeenschap, ziet u de volg
 * [De optie Meldingen](/help/communities/notifications.md) geeft u de opdracht om de sectie Meldingen te openen waarin u uw belangwekkende gebeurtenissen kunt bekijken en de berichtinstellingen kunt bewerken.
 * [Het beleid](/help/communities/published-site.md#moderationlink) leidt u aan de Pagina van de Moderatie van AEM Communities, als u moderatievoorrechten hebt.
 
-![chlimage_1-33](assets/chlimage_1-33.png)
+![beheersen](assets/adminscreen.png)
 
 U ziet dat de kalenderpagina de startpagina is omdat de gekozen Sjabloon Referentie-site eerst de kalenderfunctie bevatte, gevolgd door de functie Activiteitenstroom, de functie Forum, enzovoort. Deze structuur is zichtbaar van de console van het Malplaatje [van de](/help/communities/sites.md#edit-site-template) Plaats of wanneer het wijzigen van plaatseigenschappen in het auteursmilieu:
 
-![chlimage_1-34](assets/chlimage_1-34.png)
+![sitetemplate](assets/sitetemplate.png)
 
 >[!NOTE]
 >
@@ -120,7 +120,7 @@ Leden kunnen een nieuw onderwerp plaatsen of een onderwerp volgen.
 
 Sitebezoekers kunnen artikelen weergeven en op verschillende manieren sorteren.
 
-![chlimage_1-35](assets/chlimage_1-35.png)
+![forumlink](assets/forumlink.png)
 
 ### Groepen koppelen {#groups-link}
 
@@ -130,7 +130,7 @@ Dit is een voorbeeld waarin een groep wordt gemaakt in de publicatieomgeving.
 
 Groepen kunnen ook in de auteursomgeving worden gecreeerd en binnen de communautaire plaats in het auteursmilieu (de console[van](/help/communities/groups.md)Communautaire Groepen) worden beheerd. In deze zelfstudie wordt vervolgens uitgelegd hoe u groepen [kunt maken over de auteur](/help/communities/nested-groups.md) .
 
-![classic-ui](assets/classic-ui.png)
+![grouplink](assets/grouplink.png)
 
 Een referentiegroep maken:
 
@@ -148,11 +148,11 @@ Een referentiegroep maken:
 
 1. Groep **maken selecteren**
 
-![classic-ui-website](assets/classic-ui-website.png)
+   ![createggroup](assets/creategroup.png)
 
 Nadat er een nieuwe groep is gemaakt, **selecteert u de nieuwe groep** Sport om er twee (geneste) groepen in te maken. Aangezien een sitestructuur niet kan beginnen met de groepsfunctie, moet u na het openen van de Sportgroep de koppeling Groepen selecteren:
 
-![classic-ui-create-page](assets/classic-ui-create-page.png)
+![grouplink1](assets/grouplink1.png)
 
 De tweede set koppelingen, die begint met `Blog`, behoort tot de geselecteerde groep, de `Sports` groep. Door de verbinding van Sport te selecteren `Groups` , is het mogelijk om twee groepen binnen de groep van Sport te nesten.
 
@@ -180,7 +180,7 @@ Nadat beide groepen zijn gemaakt, selecteert u de Baseball-groep, een open groep
 
 De koppelingen van de groep worden weergegeven onder de koppelingen van de hoofdsite en resulteren in de volgende weergave:
 
-![classic-ui-website-page](assets/classic-ui-website-page.png)
+![grouplink2](assets/grouplink2.png)
 
 Op auteur - met administratieve voorrechten, navigeer aan de console [van de Groepen van](/help/communities/members.md) Gemeenschappen en voeg Weston McCall aan de `Community Engage Gymnastics <uid> Members` groep toe.
 
@@ -195,7 +195,7 @@ Alleen de Baseball-groep is zichtbaar.
 
 Meld u aan bij Weston McCall (weston.mccall@dodgit.com / wachtwoord) en navigeer naar dezelfde locatie. Het is bekend dat Weston in staat is om `Join` de open `Baseball` groep en ook `enter or Leave` de particuliere `Gymnastics` groep te vormen.
 
-![classic-ui-repository-view](assets/classic-ui-repository-view.png)
+![grouplink3](assets/grouplink3.png)
 
 ### Koppeling naar webpagina {#web-page-link}
 
@@ -203,7 +203,7 @@ Selecteer de koppeling Webpagina om de basiswebpagina weer te geven die in de si
 
 Ga bijvoorbeeld naar de **auteur** -instantie, open de `engage` map in de console [](/help/communities/sites-console.md)Communitysites en selecteer het pictogram Site **** openen om de modus Schrijfbewerking te openen. Selecteer vervolgens de voorvertoningsmodus om de `Web Page` koppeling te selecteren en selecteer vervolgens de bewerkingsmodus om titel- en tekstcomponenten toe te voegen. Ten slotte publiceert u alleen de pagina of de hele site opnieuw.
 
-![classic-ui-repository-path](assets/classic-ui-repository-path.png)
+![webpagelink](assets/webpagelink.png)
 
 ### Moderniseringskoppeling {#moderationlink}
 
@@ -211,7 +211,7 @@ Wanneer het communautaire lid moderatievoorrechten heeft, dan zal de verbinding 
 
 Gebruik de knop Vorige van de browser om terug te keren naar de gepubliceerde site. De meeste consoles zijn niet toegankelijk via globale navigatie in de publicatieomgeving. [](/help/communities/moderate-ugc.md)
 
-![chlimage_1-42](assets/chlimage_1-42.png)
+![moderniseringslink](assets/moderationlink.png)
 
 ## Zelfregistratie {#self-registration}
 
@@ -220,7 +220,9 @@ Nadat u zich hebt afgemeld, kunt u een nieuwe gebruikersregistratie maken.
 * Selecteer `Log In`
 * Selecteer `Sign up for a new account`
 
-![chlimage_1-43](assets/chlimage_1-43.png) ![chlimage_1-44](assets/chlimage_1-44.png)
+![registratie](assets/registration.png)
+
+![inschrijving](assets/signup.png)
 
 Standaard is het e-mailadres de aanmeldings-id. Als deze optie is uitgeschakeld, kan de bezoeker zijn of haar eigen aanmeldings-id (gebruikersnaam) invoeren. De gebruikersnaam moet uniek zijn in de publicatieomgeving.
 
@@ -228,9 +230,9 @@ Als u de naam, het e-mailadres en het wachtwoord van de gebruiker hebt opgegeven
 
 Nadat u zich hebt aangemeld, is de eerste pagina die wordt weergegeven de bijbehorende `Profile` pagina, die ze zelf kunnen aanpassen.
 
-![chlimage_1-45](assets/chlimage_1-45.png)
+![profiel](assets/profile.png)
 
 Als het lid zijn aanmeldings-id vergeet, wordt het e-mailadres gebruikt.
 
-![chlimage_1-46](assets/chlimage_1-46.png)
+![forgotusernaam](assets/forgotusername.png)
 

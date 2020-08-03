@@ -1,8 +1,8 @@
 ---
 title: Publikaties
 seo-title: Publikaties
-description: AEM-gemeenschappen hebben meldingen die gebeurtenissen weergeven die van belang zijn voor de ondertekenende community
-seo-description: AEM-gemeenschappen hebben meldingen die gebeurtenissen weergeven die van belang zijn voor de ondertekenende community
+description: AEM Communities hebben meldingen die gebeurtenissen weergeven die van belang zijn voor het aanmeldingscommunity-lid
+seo-description: AEM Communities hebben meldingen die gebeurtenissen weergeven die van belang zijn voor het aanmeldingscommunity-lid
 uuid: 2f5ea4b5-7308-414e-a3f8-2e8aa76b1ef4
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: ab9088b7-a691-4153-ac82-1e8c0a19ed5d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 22e853ecaf2696c7329a81bb9d375b1dbc74452c
+source-git-commit: 5d196d1f6d5f94f2d3ef0d4461cfe38562f8ba8c
+workflow-type: tm+mt
+source-wordcount: '621'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: 22e853ecaf2696c7329a81bb9d375b1dbc74452c
 
 ## Overzicht {#overview}
 
-AEM Communities biedt een meldingssectie waarin gebeurtenissen worden weergegeven die van belang zijn voor de ondertekenaars in een community.
+AEM Communities geeft een sectie met meldingen weer waarin gebeurtenissen worden weergegeven die van belang zijn voor de ondertekenaars in het community-lid.
 
 Meldingen zijn vergelijkbaar met [activiteiten](/help/communities/essentials-activities.md) en [abonnementen](/help/communities/subscriptions.md) , omdat zij het gevolg kunnen zijn van:
 
@@ -68,13 +71,13 @@ Componenten moeten worden geconfigureerd om het volgende in te schakelen. Functi
 
 ## Meldingen van: {#notifications-from-following}
 
-![chlimage_1-243](assets/chlimage_1-243.png)
+![meldingen](assets/notifications.png)
 
-Met de knop **[!UICONTROL Volgen]** kunt u items opvolgen als activiteiten, abonnementen en/of meldingen. Telkens wanneer de knop **[!UICONTROL Volgen]** is geselecteerd, kunt u een selectie in- of uitschakelen. De `Email Subscriptions` selectie is alleen aanwezig als deze is geconfigureerd.
+Met de **[!UICONTROL Follow]** knop kunt u items opvolgen als activiteiten, abonnementen en/of meldingen. Elke keer dat de **[!UICONTROL Follow]** knop wordt geselecteerd, is het mogelijk om een selectie in of uit te schakelen. De `Email Subscriptions` selectie is alleen aanwezig als deze is geconfigureerd.
 
-Als er een methode van het volgende is geselecteerd, verandert de tekst van de knop in **[!UICONTROL Volgende]**. Voor het gemak is het mogelijk om alle methoden uit `Unfollow All` te schakelen.
+Als een van de volgende methoden is geselecteerd, verandert de tekst van de knop in **[!UICONTROL Following]**. Voor het gemak is het mogelijk om alle methoden uit `Unfollow All` te schakelen.
 
-De knop **[!UICONTROL Volg]** wordt weergegeven:
+De **[!UICONTROL Follow]** knop verschijnt:
 
 * Wanneer u het profiel van een ander lid weergeeft.
 * Op een hoofdpagina met functies, zoals forums, QnA en blogs:
@@ -91,17 +94,17 @@ Als u de koppeling Instellingen kennisgeving op de pagina Meldingen selecteert, 
 
 Het webkanaal is altijd ingeschakeld.
 
-![chlimage_1-244](assets/chlimage_1-244.png)
+![notifications14](assets/notifications1.png)
 
 Het e-mailkanaal, dat afhankelijk is van de juiste [configuratie van de e-mail](/help/communities/email.md), biedt dezelfde instellingen als voor het webkanaal.
 
 Het e-mailkanaal is standaard uitgeschakeld.
 
-![chlimage_1-245](assets/chlimage_1-245.png)
+![notifications2](assets/notifications2.png)
 
 Het kan door een lid worden aangezet, maar nog hangt van e-mail af die wordt gevormd.
 
-![chlimage_1-246](assets/chlimage_1-246.png)
+![notifications3](assets/notifications3.png)
 
 ## Meldingen weergeven {#viewing-notifications}
 
@@ -111,13 +114,13 @@ Een door de [wizard gemaakte communitysite](/help/communities/sites-console.md) 
 
 Als u de gepubliceerde site bezoekt en de `Notifications` koppeling selecteert, worden alle meldingen voor het lid weergegeven.
 
-![chlimage_1-247](assets/chlimage_1-247.png)
+![notifications4](assets/notifications4.png)
 
 ### E-mailmeldingen {#email-notifications}
 
 Wanneer het e-mailkanaal is ingeschakeld, ontvangt het lid een e-mail met een koppeling naar de inhoud op het web.
 
-![chlimage_1-248](assets/chlimage_1-248.png)
+![notifications5](assets/notifications5.png)
 
 ## E-mailberichten aanpassen {#customize-email-notifications}
 

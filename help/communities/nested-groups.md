@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 752235d2-21ac-46d2-82ed-5fec09c645e9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c9fa5624a59f4b9a6f970628b03bbd8b7a277a73
+source-git-commit: 5d196d1f6d5f94f2d3ef0d4461cfe38562f8ba8c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '539'
+ht-degree: 3%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 Bij AEM Author-instantie, van globale navigatie:
 
-* Selecteer **[!UICONTROL Communities] > **[!UICONTROL Sites]**.
+* Selecteer **[!UICONTROL Communities]** > **[!UICONTROL Sites]**.
 * Selecteer deze optie **[!UICONTROL engage folder]** om deze te openen.
 * Selecteer de kaart voor de **[!UICONTROL Getting Started Tutorial]** Engelse site.
 
@@ -34,11 +34,11 @@ Bij AEM Author-instantie, van globale navigatie:
 
 Het resultaat moet de console [van](/help/communities/groups.md)Groepen bereiken:
 
-![chlimage_1-91](assets/chlimage_1-91.png)
+![createGroup](assets/create-group.png)
 
 De groepfunctie wordt weergegeven als een map waarin instanties van groepen worden gemaakt. Selecteer de map Groepen om deze te openen. De groep die bij publicatie wordt gemaakt, is zichtbaar.
 
-![chlimage_1-92](assets/chlimage_1-92.png)
+![create-new-group](assets/create-new-group.png)
 
 ## Hoofdartgroep maken {#create-main-arts-group}
 
@@ -94,11 +94,11 @@ De `groups` map bevat nu twee groepen (de pagina vernieuwen).
 
 Voordat u groepen maakt die in de `arts` groep zijn genest, houdt u de muisaanwijzer boven de `arts` kaart en selecteert u het publicatiepictogram om deze te publiceren.
 
-![koppelingscomponent](assets/liking-component.png)
+![publicatiesite](assets/publish-site.png)
 
 Wacht op bevestiging dat de groep is gepubliceerd.
 
-![chlimage_1-94](assets/chlimage_1-94.png)
+![in groep gepubliceerd](assets/group-published.png)
 
 De `arts` groep moet ook een `groups` map bevatten, maar een map die leeg is en waarin nieuwe groepen kunnen worden gemaakt. Navigeer naar de map met kunstgroepen en maak drie geneste groepen, elk met een andere lidmaatschapsinstelling:
 
@@ -133,11 +133,11 @@ Om aan de genestelde groepen van de console van Plaatsen van Gemeenschappen te n
 * Selecteer **[!UICONTROL arts card]**
 * Map selecteren **[!UICONTROL Groups]**
 
-![configureren-koppelen](assets/configure-liking.png)
+![create-new-group2](assets/create-new-group2.png)
 
 ## Groepen publiceren {#publishing-groups}
 
-![chlimage_1-96](assets/chlimage_1-96.png)
+![publicatiesite](assets/publish-site.png)
 
 Na publicatie van de hoofdsite van de community:
 
@@ -149,7 +149,7 @@ Na publicatie van de hoofdsite van de community:
 
    * Alle groepen moeten van boven naar beneden worden gepubliceerd.
 
-![chlimage_1-97](assets/chlimage_1-97.png)
+![in groep gepubliceerd](assets/group-published.png)
 
 ## Ervaring met publiceren {#experience-on-publish}
 

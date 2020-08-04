@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 21a18d60-f3fe-4048-9949-8416b5cb4596
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
+source-git-commit: c71c24a291b728ab429b18a405123c96123cf617
 workflow-type: tm+mt
 source-wordcount: '1486'
 ht-degree: 10%
@@ -21,15 +21,15 @@ ht-degree: 10%
 
 # Contentfragmenten beheren{#managing-content-fragments}
 
-Content Fragments are stored as **Assets**, so are primarily managed from the **Assets** console.
+Inhoudsfragmenten worden opgeslagen als **elementen**, zodat ze voornamelijk worden beheerd vanaf de **middelenconsole** .
 
 >[!NOTE]
 >
->Content fragments are then used with authoring pages; see [Page Authoring with Content Fragments](/help/sites-authoring/content-fragments.md).
+>Inhoudsfragmenten worden vervolgens gebruikt bij het ontwerpen van pagina&#39;s. Zie [Pagina&#39;s ontwerpen met inhoudsfragmenten](/help/sites-authoring/content-fragments.md).
 
-## Creating Content Fragments {#creating-content-fragments}
+## Inhoudsfragmenten maken {#creating-content-fragments}
 
-### Creating a Content Model {#creating-a-content-model}
+### Een inhoudsmodel maken {#creating-a-content-model}
 
 [U kunt contentfragmentmodellen](/help/assets/content-fragments/content-fragments-models.md) inschakelen en maken voordat u inhoudsfragmenten met gestructureerde inhoud maakt.
 
@@ -62,7 +62,7 @@ De methode voor het maken van een inhoudsfragment is (in principe) hetzelfde voo
 
       * **Titel**
 
-         The fragment title.
+         De fragmenttitel.
 
          Verplicht.
 
@@ -99,28 +99,28 @@ Selecteer het fragment om de werkbalk weer te geven met de toepasselijke acties:
 * **Afhandeling**
 * **Eigenschappen**
 
-   * Allows you to view and/or edit the fragment&#39;s metadata.
+   * Hiermee kunt u de metagegevens van het fragment weergeven en/of bewerken.
 
 * **Bewerken**
 
-   * Allows you to [open the fragment for editing content](/help/assets/content-fragments/content-fragments-variations.md) together with its elements, variations, associated content and metadata.
+   * Hiermee kunt u het fragment [openen voor het bewerken van inhoud](/help/assets/content-fragments/content-fragments-variations.md) , samen met de elementen, variaties, bijbehorende inhoud en metagegevens.
 
 * **Tags beheren**
-* **To Collection**
+* **Naar verzameling**
 
    * Voeg het fragment toe aan een verzameling.
-   * This can also be done when [associating a collection with the fragment](/help/assets/content-fragments/content-fragments-assoc-content.md#adding-associated-content).
+   * Dit kan ook worden gedaan wanneer u een verzameling [aan het fragment](/help/assets/content-fragments/content-fragments-assoc-content.md#adding-associated-content)koppelt.
 
-* **Copy**/**Paste**
+* **Kopiëren**/**plakken**
 
 * **Verplaatsen**
-* **Quick Publish**
+* **Snel publiceren**
 * **Publicatie beheren**
 * **Verwijderen**
 
 >[!NOTE]
 >
->Many of these are [standard actions for Assets](/help/assets/managing-assets-touch-ui.md) and/or the [AEM desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html).
+>Veel van deze acties zijn [standaardhandelingen voor middelen](/help/assets/managing-assets-touch-ui.md) en/of de [AEM bureaubladtoepassing](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html).
 
 ## De fragmenteditor openen {#opening-the-fragment-editor}
 
@@ -131,23 +131,19 @@ Uw fragment openen voor bewerken:
 >Voor het bewerken van een inhoudsfragment hebt u [de juiste machtigingen](/help/sites-developing/customizing-content-fragments.md#asset-permissions)nodig. Neem contact op met de systeembeheerder als er problemen optreden.
 
 1. Gebruik de **middelenconsole** om naar de locatie van het inhoudsfragment te navigeren.
-1. Open the fragment for editing, by either:
+1. Open het fragment voor bewerking door:
 
    * Klikken of tikken op de fragment- of fragmentkoppeling (dit is afhankelijk van de consoleweergave).
    * Selecteer het fragment en **bewerk** het vervolgens op de werkbalk.
 
-   The fragment editor will open:
+   De fragmenteditor wordt geopend:
 
    ![cfm-6420-18](assets/cfm-6420-18.png)
 
    >[!NOTE]
    >
    >1. Er wordt een bericht weergegeven wanneer al naar het fragment wordt verwezen op een inhoudspagina.
-      >
-      >
-      >
-
-   2. Het zijpaneel kan worden verborgen of weergegeven met het pictogram **Zijpaneel** in-/uitschakelen.
+   >2. Het zijpaneel kan worden verborgen of weergegeven met het pictogram **Zijpaneel** in-/uitschakelen.
 
 
 1. Navigeer door de drie modi met de pictogrammen in het zijpaneel:
@@ -197,27 +193,27 @@ De editor heeft twee opties:
 
    Sluit de editor af zonder de laatste wijzigingen op te slaan.
 
-Tijdens het bewerken van het inhoudsfragment maakt AEM automatisch versies om ervoor te zorgen dat eerdere inhoud kan worden hersteld als u de wijzigingen **annuleert** :
+Tijdens het bewerken van het inhoudsfragment AEM automatisch versies worden gemaakt om ervoor te zorgen dat eerdere inhoud kan worden hersteld als u de wijzigingen **annuleert** :
 
-1. Wanneer een inhoudsfragment wordt geopend voor het bewerken van AEM, wordt gecontroleerd op het bestaan van een token op basis van cookies dat aangeeft of een *bewerkingssessie* bestaat:
+1. Wanneer een inhoudsfragment wordt geopend voor het bewerken AEM wordt gecontroleerd op het bestaan van een token op basis van cookies dat aangeeft of een *bewerkingssessie* bestaat:
 
    1. Als het token wordt gevonden, wordt het fragment beschouwd als onderdeel van de bestaande bewerkingssessie.
-   2. If the token is *not* available and the user starts editing content, a version is created and a token for this new editing session is sent to the client, where it is saved in a cookie.
+   2. Als het token *niet* beschikbaar is en de gebruiker begint met het bewerken van inhoud, wordt een versie gemaakt en wordt een token voor deze nieuwe bewerkingssessie verzonden naar de client, waar deze wordt opgeslagen in een cookie.
 
-2. While there is an *active* editing session, the content being edited is automatically saved every 600 seconds (default).
+2. Terwijl er een *actieve* bewerkingssessie is, wordt de inhoud die wordt bewerkt automatisch om de 600 seconden opgeslagen (standaard).
 
    >[!NOTE]
    >
-   >The auto save interval is configurable using the `/conf` mechanism.
+   >Het auto sparen interval is configureerbaar gebruikend het `/conf` mechanisme.
    >
    >
-   >Default value, see:
+   >Standaardwaarde, zie:
    >
    >
    >`/libs/settings/dam/cfm/jcr:content/autoSaveInterval`
 
-3. If the user selects to **Cancel** the edit, the version created at the start of the editing session is restored and the token is removed to end the editing session.
-4. If the user selects to **Save** the edits, the updated elements/variations are persisted and the token is removed to end the editing session.
+3. Als de gebruiker ervoor kiest de bewerking te **annuleren** , wordt de versie die aan het begin van de bewerkingssessie is gemaakt, hersteld en wordt het token verwijderd om de bewerkingssessie te beëindigen.
+4. Als de gebruiker de bewerkingen **opslaat** , blijven de bijgewerkte elementen/variaties behouden en wordt het token verwijderd om de bewerkingssessie te beëindigen.
 
 ## De inhoud van het fragment bewerken {#editing-the-content-of-your-fragment}
 
@@ -330,7 +326,7 @@ Inhoudsfragmenten moeten worden gepubliceerd voor gebruik in de publicatieomgevi
 
 >[!CAUTION]
 >
->Nadat een fragment is gepubliceerd en/of waarnaar wordt verwezen, geeft AEM een waarschuwing weer wanneer een auteur het fragment opent voor opnieuw bewerken. Hiermee wordt u gewaarschuwd dat wijzigingen in het fragment ook van invloed zijn op de pagina&#39;s waarnaar wordt verwezen.
+>Nadat een fragment is gepubliceerd en/of waarnaar wordt verwezen, geeft AEM een waarschuwing weer wanneer een auteur het fragment opent om opnieuw te bewerken. Hiermee wordt u gewaarschuwd dat wijzigingen in het fragment ook van invloed zijn op de pagina&#39;s waarnaar wordt verwezen.
 
 ## Een fragment verwijderen {#deleting-a-fragment}
 

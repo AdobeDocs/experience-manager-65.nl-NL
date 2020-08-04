@@ -4,9 +4,9 @@ description: De nota's van de versie specifiek voor Adobe Experience Manager 6.5
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
+source-git-commit: 2f5072a73b11853bbfd63c4b4ce9ffcf186adad1
 workflow-type: tm+mt
-source-wordcount: '4380'
+source-wordcount: '4406'
 ht-degree: 0%
 
 ---
@@ -78,6 +78,7 @@ Hier volgt een lijst met oplossingen uit de release van [!DNL Experience Manager
 * Wanneer u van Experience Manager 6.2 aan Experience Manager 6.5 bevordert, toont de component Parsys van statische malplaatjes niet correct. De hoogte van de component Parsys wordt geplaatst aan 0 en de componenten binnen het zijn niet zichtbaar (NPR-33663).
 * Wanneer een gebruiker een Layout Container op dezelfde pagina kopieert en plakt, worden componenten in een Layout Container niet weergegeven (NPR-33648).
 * Met de Dispatcher Health Check wordt een `Invalid cookie header` waarschuwingsbericht weergegeven in de logbestanden (NPR-33629).
+* Gereflecteerde XSS in PreferencesServlet (NPR-33438).
 
 ### [!DNL Assets] {#assets-6550}
 
@@ -239,6 +240,8 @@ Hier volgt een lijst met oplossingen uit de release van [!DNL Experience Manager
 
 * Er wordt een foutbericht weergegeven tijdens de installatie van het SDL-pakket van de Experience Manager (NPR-33175).
 
+* SSRF-kwetsbaarheid in Experience Manager (NPR-33435).
+
 ### Platform {#platform-6550}
 
 * Het [!DNL Sling] filter wordt niet aangeroepen als het `sling:match` kaartitem wordt gemaakt onder `/etc/maps` (NPR-33362).
@@ -264,6 +267,7 @@ Hier volgt een lijst met oplossingen uit de release van [!DNL Experience Manager
 * Erkende IMS-gebruikers in de lokale beheergroep van Experience Managers kunnen geen IMS-configuraties maken of wijzigen (NPR-33045).
 * Op de pagina Startconfiguraties van Adobe worden niet alle records weergegeven (NPR-33011).
 * Gebruikers in een groep van inhoudsauteurs kunnen vanwege een JavaScript-fout de eigenschappen van een Adobe Target-component niet bewerken (NPR-32996).
+* Xxx-site scripting voor JSON (NPR-32744).
 
 ### Omzettingsprojecten {#translation-6550}
 
@@ -295,6 +299,7 @@ Hier volgt een lijst met oplossingen uit de release van [!DNL Experience Manager
 * Een gebruiker kan geen e-mail naar een andere gebruiker in een gemeenschap (NPR-32598) verzenden.
 * Een verzonden blog wordt pas weergegeven wanneer de gebruiker de pagina vernieuwt (NPR-32391).
 * Tijdens het maken van een versie van meldingen en abonnementen op door gebruikers gegenereerde inhoud (UGC) wordt een onjuiste id van de bronpagina opgeslagen (CQ-4279355, CQ-4289703).
+* Probleem met scripts die verwijzen naar andere sites (NPR-33203).
 
 ### Workflow {#workflow-6550}
 
@@ -321,6 +326,7 @@ Hier volgt een lijst met oplossingen uit de release van [!DNL Experience Manager
 * BackendIntegration: De verzoeken van het het gegevensmodel van de vorm ontbreken aangezien verfrist teken wegens onjuiste inactieve staat (NPR-33169) verloopt.
 * Designer: Schermlezers voeren de tabvolgorde uit op basis van de standaard geografische volgorde in plaats van de aangepaste tabvolgorde die is gedefinieerd in het XDP-bestand (NPR-32160).
 * Designer: Als de optie Tags toevoegen is ingeschakeld, verdwijnt de rand van het subformulier in de gegenereerde PDF-uitvoer (NPR-32778).
+* Opgeslagen XSS met GuideSOMProviderServlet (NPR-32700).
 
 ## Installeer 6.5.5.0 {#install}
 
@@ -342,7 +348,7 @@ Voer de volgende stappen uit om Service Pack op een bestaande Adobe Experience M
 
 1. Download het de dienstpak van de Distributie [van de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.5.zip)Software.
 
-1. Open Package Manager en klik **[!UICONTROL Upload Package]** om het pakket te uploaden. Zie [Package Manager](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html)voor informatie over het gebruik ervan.
+1. Open Package Manager en klik **[!UICONTROL Upload Package]** om het pakket te uploaden. Zie [Pakketbeheer](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html)voor informatie over het gebruik ervan.
 
 1. Selecteer het pakket en klik **[!UICONTROL Install]**.
 
@@ -394,7 +400,7 @@ Voor informatie over het installeren van het cumulatieve installatieprogramma vo
 
 UberJar voor Experience Manager 6.5.5.0 is beschikbaar in de [Adobe Public Maven bewaarplaats](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aem/uber-jar/6.5.5/).
 
-Om UberJar in een Geweven project te gebruiken, zie [hoe te UberJar](/help/sites-developing/ht-projects-maven.md) gebruiken en de volgende gebiedsdeel in uw projectPOM omvatten:
+Om UberJar in een Geweven project te gebruiken, zie [hoe te UberJar](/help/sites-developing/ht-projects-maven.md) gebruiken en omvat het volgende gebiedsdeel in uw projectPOM:
 
 ```shell
 <dependency>

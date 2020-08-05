@@ -11,7 +11,10 @@ topic-tags: upgrading
 discoiquuid: fcb17227-ff1f-4b47-ae94-6b7f60923876
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a8deb66b23e6ddde9c5f6379ef4f766668336369
+source-git-commit: d3a69bbbc9c3707538be74fd05f94f20a688d860
+workflow-type: tm+mt
+source-wordcount: '1275'
+ht-degree: 0%
 
 ---
 
@@ -24,15 +27,17 @@ source-git-commit: a8deb66b23e6ddde9c5f6379ef4f766668336369
 
 ## Stappen voor upgrade {#pre-upgrade-steps}
 
-Voordat u de upgrade uitvoert, moeten verschillende stappen worden uitgevoerd. Zie [Bevorderen Code en Aanpassingen](/help/sites-deploying/upgrading-code-and-customizations.md) en [Pre-Upgrade onderhoudstaken](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) voor meer informatie. Bovendien, zorg ervoor dat uw systeem aan de vereisten voor de nieuwe versie van AEM voldoet. Zie hoe de Detector van het Patroon u kan helpen de ingewikkeldheid van uw verbetering schatten en ook de sectie van het Toepassingsgebied en van de Vereisten van de Verbetering van de [Planning van Uw Verbetering](/help/sites-deploying/upgrade-planning.md) voor meer informatie zien.
+Voordat u de upgrade uitvoert, moeten verschillende stappen worden uitgevoerd. Zie [Bevorderen Code en Aanpassingen](/help/sites-deploying/upgrading-code-and-customizations.md) en [Pre-Upgrade onderhoudstaken](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) voor meer informatie. Zorg er bovendien voor dat uw systeem voldoet aan de vereisten voor de nieuwe versie van AEM. Zie hoe de Detector van het Patroon u kan helpen de ingewikkeldheid van uw verbetering schatten en ook de sectie van het Toepassingsgebied en van de Vereisten van de Verbetering van de [Planning van Uw Verbetering](/help/sites-deploying/upgrade-planning.md) voor meer informatie zien.
+
+Tot slot merk op dat de onderbreking tijdens de verbetering significant kan worden verminderd door de bewaarplaats te indexeren **alvorens** de verbetering uit te voeren. Zie Offlineindexering [gebruiken om tijdens een upgrade de downtime te verminderen voor meer informatie](/help/sites-deploying/upgrade-offline-reindexing.md)
 
 ## Migratievereisten {#migration-prerequisites}
 
-* **** Minimale vereiste Java-versie: Het migratiehulpprogramma werkt alleen met Java versies 7 en hoger. Merk op dat voor AEM 6.3 en hoger de JRE 8 en JRE 7 &amp; 8 van IBM van Oracle de enige ondersteunde versies zijn.
+* **Minimale vereiste Java-versie:** Het migratiehulpprogramma werkt alleen met Java versies 7 en hoger. Merk op dat voor AEM 6.3 en hoger JRE 8 en JRE 7 &amp; 8 van IBM de enige ondersteunde versies van Oracle zijn.
 
-* **** Bijgewerkte instantie: Als u van een versie **ouder dan 5.6** bevordert, zorg ervoor dat u een op zijn plaats verbetering aan AEM 6.0 door de procedure te volgen die in versie 6.0 van de documentatie van de Verbetering wordt beschreven.
+* **Bijgewerkte instantie:** Als u van een versie **ouder dan 5.6** bevordert, zorg ervoor dat u een op zijn plaats verbetering aan AEM 6.0 hebt uitgevoerd door de procedure te volgen die in versie 6.0 van de documentatie van de Verbetering wordt beschreven.
 
-## Voorbereiding van het Jar-bestand van AEM Quickstart {#prep-quickstart-file}
+## Voorbereiding van het AEM QuickStart-jar-bestand {#prep-quickstart-file}
 
 1. Stop de instantie als deze wordt uitgevoerd.
 
@@ -46,15 +51,16 @@ Voordat u de upgrade uitvoert, moeten verschillende stappen worden uitgevoerd. Z
 
 ## Migratie van opslagplaats voor inhoud {#content-repository-migration}
 
-Deze migratie is niet vereist als u een upgrade uitvoert van AEM 6.3. Voor versies ouder dan 6.3, verstrekt Adobe een hulpmiddel dat kan worden gebruikt om de bewaarplaats aan de nieuwe versie van de Tar van het Segment van het Eak aanwezig in AEM 6.3 te migreren. Deze wordt geleverd als onderdeel van het pakket quickstart en is verplicht voor alle upgrades die TarMK zullen gebruiken. Voor upgrades voor omgevingen die gebruikmaken van MongoMK is geen migratie naar opslagplaats vereist. Raadpleeg de veelgestelde vragen over het migreren naar [eiken segment voor meer informatie over de voordelen van de nieuwe indeling Segment Tar](/help/sites-deploying/revision-cleanup.md#online-revision-cleanup-frequently-asked-questions).
+Deze migratie is niet vereist als u een upgrade uitvoert vanaf AEM 6.3. Voor versies ouder dan 6.3, verstrekt Adobe een hulpmiddel dat kan worden gebruikt om de bewaarplaats aan de nieuwe versie van de Tar van het Segment van het Eak in AEM 6.3 te migreren. Deze wordt geleverd als onderdeel van het pakket quickstart en is verplicht voor alle upgrades die TarMK zullen gebruiken. Voor upgrades voor omgevingen die gebruikmaken van MongoMK is geen migratie naar opslagplaats vereist. Raadpleeg de veelgestelde vragen over het migreren naar [eiken segment voor meer informatie over de voordelen van de nieuwe indeling Segment Tar](/help/sites-deploying/revision-cleanup.md#online-revision-cleanup-frequently-asked-questions).
 
-De werkelijke migratie wordt uitgevoerd met behulp van het standaard AEM quickstart jar-bestand, uitgevoerd met een nieuwe `-x crx2oak` optie die het crx2oak-gereedschap uitvoert om de upgrade te vereenvoudigen en robuuster te maken.
+De werkelijke migratie wordt uitgevoerd met het standaard AEM QuickStart-jar-bestand, uitgevoerd met een nieuwe `-x crx2oak` optie die het crx2oak-gereedschap uitvoert om de upgrade te vereenvoudigen en robuuster te maken.
 
 >[!NOTE]
 >
 >Als u de migratie van TarMK-inhoud in de opslagplaats uitvoert met de CRX2Oak QuickStart-extensie, kunt u de runmode voor de **samplinginhoud** verwijderen door het volgende toe te voegen aan de migratie-opdrachtregel:
 >
 >* `--promote-runmode nosamplecontent`
+
 >
 
 
@@ -122,7 +128,7 @@ Waar `<<YOUR_PROFILE>>` en `<<ADDITIONAL_FLAGS>>` worden vervangen door het prof
 
 * Als u Java 7 gebruikt, voegt u de `-XX:MaxPermSize=2048m` parameter net na de `-Xmx` parameter toe.
 
-Voor extra instructies bij het gebruiken van het crx2oak hulpmiddel, zie het Gebruiken van het Hulpmiddel [van de Migratie](/help/sites-deploying/using-crx2oak.md)CRX2Oak. U kunt indien nodig handmatig een upgrade uitvoeren van de crx2oak-hulplijn door deze handmatig te vervangen door nieuwere versies nadat u de snelstart hebt uitgenomen. De AEM-installatiemap bevindt zich op de volgende locatie: `<aem-install>/crx-quickstart/opt/extensions/crx2oak.jar`. De nieuwste versie van het migratiehulpprogramma CRX2Oak kunt u downloaden uit de Adobe-opslagruimte op: [https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/crx2oak/](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/crx2oak/)
+Voor extra instructies bij het gebruiken van het crx2oak hulpmiddel, zie het Gebruiken van het Hulpmiddel [van de Migratie](/help/sites-deploying/using-crx2oak.md)CRX2Oak. U kunt indien nodig handmatig een upgrade uitvoeren van de crx2oak-hulplijn door deze handmatig te vervangen door nieuwere versies nadat u de snelstart hebt uitgenomen. De installatiemap van AEM bevindt zich op de volgende locatie: `<aem-install>/crx-quickstart/opt/extensions/crx2oak.jar`. De nieuwste versie van het CRX2Oak-migratiehulpprogramma kan worden gedownload van de Adobe Repository op: [https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/crx2oak/](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/crx2oak/)
 
 Als de migratie is voltooid, wordt het gereedschap afgesloten met de afsluitcode nul. Bovendien, controleer op WARN en FOUT- berichten in het `upgrade.log` dossier, dat onder `crx-quickstart/logs` in de AEM installatiemap wordt gevestigd, aangezien deze op niet-fatale fouten konden wijzen die tijdens de migratie voorkwamen.
 
@@ -130,7 +136,7 @@ Controleer de configuratiebestanden onder de `crx-quickstart/install` map. Als e
 
 **Een opmerking over datastores:**
 
-Hoewel dit de nieuwe standaardinstelling `FileDataStore` is voor AEM 6.3-installaties, is het gebruik van een externe datastore niet vereist. Terwijl het gebruiken van een externe datastore als beste praktijken voor productielokaties wordt geadviseerd, is het geen eerste vereiste om te bevorderen. Vanwege de complexiteit die al aanwezig is bij de upgrade van AEM, raden we u aan de upgrade uit te voeren zonder een datastore-migratie uit te voeren. Indien gewenst, kan een datastore migratie achteraf als afzonderlijke inspanning worden uitgevoerd.
+Terwijl `FileDataStore` het nieuwe gebrek voor AEM 6.3 installaties is, wordt het gebruiken van een externe datastore niet vereist. Terwijl het gebruiken van een externe datastore als beste praktijken voor productielokaties wordt geadviseerd, is het geen eerste vereiste om te bevorderen. Vanwege de complexiteit die al aanwezig is bij de upgrade van AEM, raden we u aan de upgrade uit te voeren zonder een datastore-migratie uit te voeren. Indien gewenst, kan een datastore migratie achteraf als afzonderlijke inspanning worden uitgevoerd.
 
 ## Problemen met migratie oplossen {#troubleshooting-migration-issues}
 
@@ -168,17 +174,17 @@ Waar `/path/to/datastore` staat het pad naar de datastore van het bestand.
 
 ### Bepaal het correcte bevel van het verbeteringsbegin {#determining-the-correct-upgrade-start-command}
 
-Als u de upgrade wilt uitvoeren, is het belangrijk dat u AEM start met het jar-bestand om de instantie te tonen. Voor een upgrade naar 6.5 raadpleegt u ook andere opties voor het herstructureren van inhoud en migratie in [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md) die u kunt kiezen met de upgradeopdracht.
+Als u de upgrade wilt uitvoeren, is het belangrijk dat u AEM het jar-bestand gaat gebruiken om de instantie op te roepen. Voor een upgrade naar 6.5 raadpleegt u ook andere opties voor het herstructureren van inhoud en migratie in [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md) die u kunt kiezen met de upgradeopdracht.
 
-De upgrade wordt niet gestart als AEM wordt gestart vanaf het startscript. De meeste klanten beginnen AEM gebruikend het beginmanuscript en hebben dit beginmanuscript aangepast om schakelaars voor omgevingsconfiguraties zoals geheugenmontages, veiligheidscertificaten, enz. te omvatten. Om deze reden, adviseren wij na deze procedure om het juiste verbeteringsbevel te bepalen:
+Merk op dat het beginnen van AEM van het beginmanuscript niet de verbetering zal beginnen. De meeste klanten beginnen AEM het beginmanuscript te gebruiken en hebben dit beginmanuscript aangepast om schakelaars voor omgevingsconfiguraties zoals geheugenmontages, veiligheidscertificaten, enz. te omvatten. Om deze reden, adviseren wij na deze procedure om het juiste verbeteringsbevel te bepalen:
 
-1. Bij een lopende instantie AEM, voer het volgende van de bevellijn uit:
+1. Voer bij een actieve AEM de volgende handelingen uit vanaf de opdrachtregel:
 
    ```shell
    ps -ef | grep java
    ```
 
-1. Zoek het AEM-proces. Het zal er ongeveer als volgt uitzien:
+1. Zoek het AEM. Het zal er ongeveer als volgt uitzien:
 
    ```shell
    /usr/bin/java -server -Xmx1024m -XX:MaxPermSize=256M -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar crx-quickstart/app/cq-quickstart-6.2.0-standalone-quickstart.jar start -c crx-quickstart -i launchpad -p 4502 -Dsling.properties=conf/sling.properties

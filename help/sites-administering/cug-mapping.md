@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 13085dd3-d283-4354-874b-cd837a9db9f9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a268b7046430cc17c8b59b9306cf3533d73bb4a2
+source-git-commit: c2937a1989c6cfe33cc3f56f89c307cb5fb8d272
+workflow-type: tm+mt
+source-wordcount: '504'
+ht-degree: 0%
 
 ---
 
@@ -23,8 +26,8 @@ source-git-commit: a268b7046430cc17c8b59b9306cf3533d73bb4a2
 <table>
  <tbody>
   <tr>
-   <td><strong>Oudere AEM-versies</strong></td>
-   <td><strong>AEM 6.5</strong></td>
+   <td><strong>Oudere AEM</strong></td>
+   <td><strong>AEM 6,5</strong></td>
    <td><strong>Opmerkingen</strong></td>
   </tr>
   <tr>
@@ -52,13 +55,13 @@ source-git-commit: a268b7046430cc17c8b59b9306cf3533d73bb4a2
 
 ## Vergelijking van OSGi Services {#comparison-of-osgi-services}
 
-**Oudere AEM-versies**
+**Oudere AEM**
 
 Label: Ondersteuning voor Adobe Granite Closed User Group (CUG)
 
 Naam: com.day.cq.auth.impl.CugSupportImpl
 
-**AEM 6.5**
+**AEM 6,5**
 
 * Label: Apache Jackrabbit Oak CUG Configuration
 
@@ -73,7 +76,7 @@ Naam: com.day.cq.auth.impl.CugSupportImpl
    ConfigurationPolicy = REQUIRED
 
 * Naam: com.adobe.granite.auth.requirements.impl.RequirementService
-* Label: Adobe Granite-verificatievereiste en Aanmeldingspad-handler
+* Label: Adobe Granite-verificatie vereist en Aanmeldingspad-handler
 
    Naam: com.adobe.granite.auth.requirements.impl.DefaultRequirementHandler
 
@@ -84,7 +87,9 @@ Naam: com.day.cq.auth.impl.CugSupportImpl
 * Configuratie van de CUG-autorisatie en inschakelen/uitschakelen van de evaluatie.
 Dienst om uitsluitingslijsten van principes te configureren die niet door de CUG-autorisatie moeten worden beïnvloed.
 
-   >[!NOTE] Als CugExcludeImpl niet wordt gevormd, zal CugConfiguration terug naar het gebrek vallen.
+   >[!NOTE]
+   > 
+   >Als het `CugExcludeImpl` niet wordt gevormd, zal `CugConfiguration` terug naar het gebrek vallen.
 
    Het is mogelijk om een aangepaste CugExclude-implementatie aan te sluiten in het geval van speciale behoeften.
 

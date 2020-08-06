@@ -12,7 +12,7 @@ discoiquuid: 5c035d4c-6e03-48b6-8404-800b52d659b8
 docset: aem65
 targetaudience: target-audience upgrader
 translation-type: tm+mt
-source-git-commit: d3a69bbbc9c3707538be74fd05f94f20a688d860
+source-git-commit: cbd48b28798c1bb7c00175fc1faecfea5484b07b
 workflow-type: tm+mt
 source-wordcount: '865'
 ht-degree: 0%
@@ -28,10 +28,9 @@ ht-degree: 0%
 
 Wanneer u uw AEM-omgevingen upgradet, moet u rekening houden met de verschillen in aanpak tussen het upgraden van auteursomgevingen of het publiceren van omgevingen om downtime voor zowel uw auteurs als eindgebruikers tot een minimum te beperken. Deze pagina schetst de procedure op hoog niveau voor de bevordering van een AEM topologie die momenteel op een versie van AEM 6.x loopt. Aangezien het proces tussen auteur en publicatieniveaus evenals op Mongo en TarMK gebaseerde plaatsingen verschilt, is elke rij en microkernel vermeld in een afzonderlijke sectie. Wanneer het uitvoeren van uw plaatsing, adviseren wij eerst uw auteursmilieu te bevorderen, bepalend succes, en dan aan de publicatiemilieu&#39;s te werk te gaan.
 
->[!IMPORTANT]
+<!-->>[!IMPORTANT]
+>De downtime tijdens de upgrade kan aanzienlijk worden verminderd door de repository te indexeren voordat de upgrade wordt uitgevoerd. Zie Offline opnieuw indexeren [gebruiken om de downtime tijdens een upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)te verminderen—>
 >
->De downtime tijdens de upgrade kan aanzienlijk worden verminderd door de repository te indexeren voordat de upgrade wordt uitgevoerd. Zie Offlineindexering [gebruiken om tijdens een upgrade de downtime te verminderen voor meer informatie](/help/sites-deploying/upgrade-offline-reindexing.md)
-
 ## TarMK-auteurreeks {#tarmk-author-tier}
 
 ### Begintopologie {#starting-topology}

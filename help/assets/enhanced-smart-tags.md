@@ -3,9 +3,9 @@ title: Verbeterde slimme tags
 description: Verbeterde slimme tags
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 892237699a4027e7dab406fd620cac220aa8b88b
 workflow-type: tm+mt
-source-wordcount: '1471'
+source-wordcount: '1468'
 ht-degree: 8%
 
 ---
@@ -68,7 +68,7 @@ Voeg de elementen toe aan een map en pas de tags toe op elk element vanaf de eig
 >[!NOTE]
 >
 >1. Opleiding is een onherroepelijk proces. Adobe raadt u aan de tags in de gekromde set elementen te controleren voordat u de Smart Content Service op de tags informeert.
->1. Lees de trainingsrichtlijnen [voor de](smart-tags-training-guidelines.md) Smart Content Service voordat u de training voor een tag start.
+>1. Zie de trainingsrichtlijnen voor [](smart-tags-training-guidelines.md)Smart Content Service voordat u gaat trainen voor een tag.
 >1. Wanneer u de Slimme Dienst van de Inhoud voor het eerst opleidt, adviseert Adobe dat u het op minstens twee verschillende markeringen opleidt.
 
 

@@ -1,8 +1,8 @@
 ---
 ttitle: Administering generic eCommerce
 seo-title: Algemene eCommerce beheren
-description: De algemene oplossing AEM verstrekt methodes om de handelsinformatie te beheren die binnen de bewaarplaats wordt gehouden.
-seo-description: De algemene oplossing AEM verstrekt methodes om de handelsinformatie te beheren die binnen de bewaarplaats wordt gehouden.
+description: De AEM generische oplossing verstrekt methodes om de handelsinformatie te beheren die binnen de bewaarplaats wordt gehouden.
+seo-description: De AEM generische oplossing verstrekt methodes om de handelsinformatie te beheren die binnen de bewaarplaats wordt gehouden.
 uuid: 8d2b02a6-0658-4957-a366-29a59350f3e8
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,14 +11,17 @@ content-type: reference
 discoiquuid: 9167cbe2-2efb-422d-b58b-0c24b9476fe6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 95d9ed8a0ccfa7651b83058d337511dd6b15665f
+source-git-commit: 1207cd54d9d605b7fbf606393cd33b5c19b603f4
+workflow-type: tm+mt
+source-wordcount: '3008'
+ht-degree: 0%
 
 ---
 
 
 # Algemene eCommerce beheren {#administering-generic-ecommerce}
 
-De algemene oplossing AEM verstrekt methodes om de handelsinformatie te beheren die binnen de bewaarplaats wordt gehouden (in tegenstelling tot het gebruiken van een externe e-commerce motor). Dit omvat:
+De AEM generische oplossing verstrekt methodes om de handelsinformatie te beheren die binnen de bewaarplaats wordt gehouden (in tegenstelling tot het gebruiken van een externe e-commerce motor). Dit omvat:
 
 * [Producten](/help/sites-administering/concepts.md#products)
 * [Productvarianten](/help/sites-administering/concepts.md#product-variants)
@@ -30,7 +33,7 @@ De algemene oplossing AEM verstrekt methodes om de handelsinformatie te beheren 
 
 >[!NOTE]
 >
->De standaard AEM-installatie omvat de algemene implementatie van eCommerce (AEM).
+>De standaard AEM installatie omvat de generieke implementatie van de eCommerce AEM (JCR).
 >
 >Dit is momenteel bedoeld voor demonstratiedoeleinden of als de basis voor een aangepaste implementatie volgens uw vereisten.
 
@@ -49,11 +52,11 @@ Voor elk afzonderlijk producttype is een steiger nodig. Het geschikte substraat 
 
 >[!NOTE]
 >
->De Geometrixx-Outdoor-winkel heeft één producttype (en dus één substraat):
+>De winkel Geometrixx-Buiten heeft één productsoort (en dus één enkel substraat):
 >
 >`/etc/scaffolding/geometrixx-outdoors`
 >
->Het producttype Geometrixx-Outdoor is actief op:
+>Het producttype Geometrixx-Buiten is actief op:
 >
 >`/etc/commerce/products/geometrixx-outdoors`
 >
@@ -69,7 +72,7 @@ Voor elk afzonderlijk producttype is een steiger nodig. Het geschikte substraat 
 
    ![chlimage_1-1](do-not-localize/chlimage_1-13.png)
 
-1. Opgeven:
+1. Geef het volgende op:
 
    * **Importeur**
 
@@ -107,7 +110,7 @@ Voor elk afzonderlijk producttype is een steiger nodig. Het geschikte substraat 
 
    ![chlimage_1-22](assets/chlimage_1-22.jpeg)
 
-1. Opgeven:
+1. Geef het volgende op:
 
    * **Winkelnaam**
 
@@ -133,7 +136,7 @@ Voor elk afzonderlijk producttype is een steiger nodig. Het geschikte substraat 
 
 >[!NOTE]
 >
->Het standaardproductbeheer is van fundamenteel belang, omdat de set Geometrixx-Outdoor-producten elementair is gehouden. De complexiteit is gebaseerd op de [basisstructuur](/help/sites-authoring/scaffolding.md)van het product, dus met uw eigen productsteigers is het mogelijk om geavanceerdere bewerkingen uit te voeren.
+>Het standaardproductbeheer is van fundamenteel belang, omdat de set Geometrixx-Outdoor-producten van fundamenteel belang is. De complexiteit is gebaseerd op de [basisstructuur](/help/sites-authoring/scaffolding.md)van het product, dus met uw eigen productsteigers is het mogelijk om geavanceerdere bewerkingen uit te voeren.
 
 #### Productinformatie maken - Voor aanraking geoptimaliseerde gebruikersinterface {#creating-product-information-touch-optimized-ui}
 
@@ -142,6 +145,7 @@ Voor elk afzonderlijk producttype is een steiger nodig. Het geschikte substraat 
 
    * **Product maken**
    * **Productvariatie maken**
+
    ![chlimage_1-14](do-not-localize/chlimage_1-14.png)
 
 1. De wizard wordt geopend. Gebruik de tabbladen **Standaard** en **Product** om de [productkenmerken](/help/sites-administering/concepts.md#product-attributes) voor het nieuwe product of de nieuwe productvariant in te voeren.
@@ -168,13 +172,14 @@ Voor elk afzonderlijk producttype is een steiger nodig. Het geschikte substraat 
 >
 >Dit betekent dat, door gebrek, zij door de [verzender](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html)worden geblokkeerd, zo vorm zo zoals vereist.
 
-#### Productinformatie bewerken - Voor aanraking geoptimaliseerde gebruikersinterface {#editing-product-information-touch-optimized-ui}
+#### Productinformatie bewerken - Voor aanraking geoptimaliseerde interface {#editing-product-information-touch-optimized-ui}
 
 1. Navigeer met de **Producten** -console (via **Handel**) naar de productinformatie.
 1. Een van de volgende methoden gebruiken:
 
    * [snelle acties](/help/sites-authoring/basic-handling.md#quick-actions)
    * [selectiemodus](/help/sites-authoring/basic-handling.md#navigating-and-selection-mode)
+
    Selecteer het pictogram **Productgegevens** weergeven:
 
    ![chlimage_1-3](do-not-localize/chlimage_1-15.png)
@@ -199,6 +204,7 @@ Voor elk afzonderlijk producttype is een steiger nodig. Het geschikte substraat 
 
    * Naar productpagina navigeren
    * Productpagina bewerken
+
    ![chlimage_1-89](assets/chlimage_1-89.png)
 
 ### Zoeken naar producten {#search-for-products}
@@ -216,9 +222,9 @@ Voor elk afzonderlijk producttype is een steiger nodig. Het geschikte substraat 
 
 #### Zoeken uitbreiden {#extending-search}
 
-U kunt een bestaand facet wijzigen of nieuwe toevoegen, gebruikend CRXDE Lite:
+U kunt een bestaand facet wijzigen of nieuwe facetten toevoegen met behulp van CRXDE Lite:
 
-1. Navigeren naar:
+1. Ga naar:
 
    `http://localhost:4502/crx/de/index.jsp#/libs/commerce/gui/content/products/aside/items/search/items/searchpanel/facets`
 
@@ -298,7 +304,7 @@ Het mechanisme voor het selecteren van de afbeelding die moet worden weergegeven
 1. Typ de gekozen **afbeeldingscategorie** ( `cat1` bijvoorbeeld).
 1. Tik/klik op **Gereed**. De pagina wordt vernieuwd en het juiste element moet worden weergegeven.
 
-#### Catalogus {#catalog}
+#### Catalogus  {#catalog}
 
 1. Navigeer naar de catalogus.
 1. Tik/klik op **Eigenschappen** weergeven.
@@ -323,7 +329,7 @@ Het mechanisme voor het selecteren van de afbeelding die moet worden weergegeven
 
 >[!NOTE]
 >
->De productinformatie wordt vaak gepubliceerd via de pagina&#39;s die ernaar verwijzen. Als u bijvoorbeeld pagina X publiceert met verwijzingen naar product Y, vraagt AEM of u ook product Y wilt publiceren.
+>De productinformatie wordt vaak gepubliceerd via de pagina&#39;s die ernaar verwijzen. Wanneer u bijvoorbeeld pagina X publiceert met verwijzingen naar product Y, AEM u wordt gevraagd of u ook product Y wilt publiceren.
 >
 >In speciale gevallen ondersteunt AEM ook het rechtstreeks publiceren van de productgegevens.
 
@@ -332,6 +338,7 @@ Het mechanisme voor het selecteren van de afbeelding die moet worden weergegeven
 
    * [snelle acties](/help/sites-authoring/basic-handling.md#quick-actions)
    * [selectiemodus](/help/sites-authoring/basic-handling.md#navigating-and-selection-mode)
+
    Selecteer naar wens het pictogram **Publiceren** of **Publiceren** ongedaan maken:
 
    ![chlimage_1-6](do-not-localize/chlimage_1-18.png) ![chlimage_1-7](do-not-localize/chlimage_1-19.png)
@@ -340,12 +347,12 @@ Het mechanisme voor het selecteren van de afbeelding die moet worden weergegeven
 
 ### Productfeed {#product-feed}
 
-Met de integratie Zoeken en bevorderen kunt u:
+Dankzij de Search&amp;Promote-integratie kunt u:
 
 * gebruik de eCommerce-API, onafhankelijk van de onderliggende structuur van de gegevensopslagruimte en het handelsplatform.
-* hefboomwerking de eigenschap van de Schakelaar van de Index van Onderzoek&amp;Promote om een productvoer in formaat van XML te verstrekken.
-* hefboomwerking de Verre eigenschap van Controle van Onderzoek&amp;Promote om op bestelling of geplande verzoeken van de productvoer uit te voeren
-* feed-generatie voor verschillende zoek&amp;Promote accounts, geconfigureerd als configuraties met cloudservices.
+* hefboomwerking de eigenschap van de Schakelaar van de Index van Search&amp;Promote om een productvoer in formaat van XML te verstrekken.
+* de functie voor afstandsbediening van Search&amp;Promote gebruiken om op aanvraag of geplande aanvragen van de productfeed uit te voeren
+* feed generation voor verschillende Search&amp;Promote-accounts, geconfigureerd als cloudservices configuraties.
 
 Lees voor meer informatie de [Productfeed](/help/sites-administering/product-feed.md).
 
@@ -398,7 +405,7 @@ Als u op de hotspot klikt, wordt een dialoogvenster geopend waarin u de grootte 
 
 1. Wijzig en verplaats de vorm naar wens.
 1. Klik op de vorm.
-1. Als u op het bladerpictogram klikt, wordt de [Asset Picker](../assets/search-assets.md#assetselector)geopend.
+1. Als u op het bladerpictogram klikt, wordt de [Asset Picker](../assets/search-assets.md#assetpicker)geopend.
 
    >[!NOTE]
    >
@@ -493,7 +500,7 @@ Een catalogus genereren:
 
 1. Open de nieuwe `Swimwear` pagina en klik vervolgens op Vervaging **** bewerken om het dialoogvenster **Eigenschappen** te openen waarin u de selectie **Producten** kunt instellen.
 
-   Open bijvoorbeeld het veld **Tags/Trefwoorden** om Activiteit te selecteren en vervolgens zwemmen in het gedeelte Geometrixx-Buiten.
+   Open bijvoorbeeld het veld **Tags/Trefwoorden** om Activiteit te selecteren en vervolgens zwemmen in de sectie Geometrixx-Buiten.
 
 1. Klik op **OK** om de eigenschappen op te slaan. voorbeeldproducten worden weergegeven onder de criteria **voor** productselectie op de pagina Bladeren.
 1. Klik op Wijzigingen **rollout...**, selecteer **Rollout-pagina en alle subpagina** en klik vervolgens op **Volgende** en **Uitvoeren**. Zodra de rollout met succes wordt voltooid zal de indicator van de **Status** als groen worden getoond.
@@ -517,6 +524,7 @@ Een catalogus uitrollen:
 
    * [snelle acties](/help/sites-authoring/basic-handling.md#quick-actions)
    * [selectiemodus](/help/sites-authoring/basic-handling.md#navigating-and-selection-mode)
+
    Selecteer het pictogram **Wijzigingen** doorvoeren:
 
    ![](do-not-localize/chlimage_1-24.png)
@@ -586,7 +594,8 @@ Een catalogus uitrollen:
 1. Bewerk de **eigenschappen** door:
 
    * het openen van de pagina, dan het klikken van de Edit knoop om het dialoogvenster van Eigenschappen te openen
-   * **het selecteren van de pagina in de console van Websites, dan gebruikend het contextmenu (gewoonlijk de juiste muisknoop) om** Eigenschappen te selecteren... en opent u het dialoogvenster met eigenschappen
+   * het selecteren van de pagina in de console van Websites, dan gebruikend het contextmenu (gewoonlijk de juiste muisknoop) om **Eigenschappen te selecteren...** en opent u het dialoogvenster met eigenschappen
+
    Geef desgewenst het type **** promotie, het type **** korting, de waarde **voor** korting en andere velden op.
 
 1. Klik op **OK** om op te slaan.
@@ -630,15 +639,15 @@ Als u de eigenschappen van een voucher of promotie wilt wijzigen, dubbelklikt u 
 
 Als u gebruikers wilt toestaan vouchers aan hun winkelwagentjes toe te voegen, kunt u de ingebouwde component **Vouchers** (categorie Handel) gebruiken. U moet dit toevoegen aan dezelfde pagina als waar de winkelwagen wordt weergegeven (maar dit is niet verplicht). De component vouchers is slechts een formulier waarin de gebruiker een vouchercode kan invoeren. Het is de winkelwagencomponent die de lijst met toegepaste vouchers en de korting daarop weergeeft.
 
-Op de demo-site (Geometrixx Outdoor - English) kunt u de vouchervorm zien op de cartpagina, onder het winkelwagentje zelf.
+Op de demo-site (Geometrixx Outdoors - Engels) ziet u het bonformulier op de cartpagina, onder het winkelwagentje zelf.
 
 ## Orders {#orders}
 
 >[!NOTE]
 >
->Er zij op gewezen dat AEM buiten de box geen handelingen heeft die vereist zijn voor standaardfuncties met betrekking tot bestellingen, zoals het retourneren van handelswaar, het bijwerken van de status van de bestelling, het uitvoeren van de afhandeling en het genereren van verpakkingsslips. Het is hoofdzakelijk bedoeld als technologievoorproef.
+>Er zij op gewezen dat AEM buiten de box geen handelingen heeft die vereist zijn voor standaardfuncties met betrekking tot bestellingen, zoals het retourneren van handelswaar, het bijwerken van de status van de bestelling, het uitvoeren van de uitvoering en het genereren van pakslips. Het is hoofdzakelijk bedoeld als technologievoorproef.
 >
->Het algemene orderbeheer in AEM is van fundamenteel belang gehouden; de velden in de wizard zijn afhankelijk van het subbestand :
+>Het algemene orderbeheer in AEM is van essentieel belang gehouden; de velden in de wizard zijn afhankelijk van het subbestand :
 >`/etc/scaffolding/geometrixx-outdoors/order/jcr:content/cq:dialog`
 >
 >Als u een aangepast subbestand maakt, kunt u meer ordergegevens opslaan.
@@ -671,6 +680,7 @@ Op de demo-site (Geometrixx Outdoor - English) kunt u de vouchervorm zien op de 
 
    * [snelle acties](/help/sites-authoring/basic-handling.md#quick-actions)
    * [selectiemodus](/help/sites-authoring/basic-handling.md#navigating-and-selection-mode)
+
    Selecteer het pictogram **Bestelgegevensvolgorde** weergeven:
 
    ![](do-not-localize/chlimage_1-15.png)

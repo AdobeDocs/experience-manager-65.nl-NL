@@ -3,7 +3,7 @@ title: Asset Insights inschakelen via DTM
 description: Leer hoe u DTM (Adobe Dynamic Tag Management) gebruikt om Asset Insights in te schakelen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
+source-git-commit: 892237699a4027e7dab406fd620cac220aa8b88b
 workflow-type: tm+mt
 source-wordcount: '576'
 ht-degree: 0%
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # Asset Insights inschakelen via DTM {#enable-asset-insights-through-dtm}
 
-Het dynamische Beheer van de Markering van Adobe is een hulpmiddel dat uw digitale marketing hulpmiddelen activeert. Deze service is gratis beschikbaar voor klanten van Adobe Analytics.
+Adobe Dynamisch tagbeheer is een programma waarmee u uw digitale marketingtools kunt activeren. Deze service wordt gratis aan Adobe Analytics-klanten aangeboden.
 
-Hoewel u uw trackingcode kunt aanpassen om CMS-oplossingen van derden in staat te stellen Asset Insights te gebruiken, raadt Adobe u aan DTM te gebruiken om labels voor Asset Insights in te voegen.
+Hoewel u uw trackingcode kunt aanpassen om CMS-oplossingen van derden in staat te stellen Asset Insights te gebruiken, raadt Adobe u aan DTM te gebruiken om Asset Insights-tags in te voegen.
 
 >[!NOTE]
 >
@@ -23,10 +23,10 @@ Hoewel u uw trackingcode kunt aanpassen om CMS-oplossingen van derden in staat t
 
 Voer deze stappen uit om Asset Insights in te schakelen via DTM.
 
-1. Klik op het Experience Manager-logo en ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Insights Configuration]**.
-1. [Experience Manager-implementatie configureren met DTM Cloud Service](/help/sites-administering/dtm.md)
+1. Klik op het logo van de Experience Manager en ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Insights Configuration]**.
+1. [Implementatie van Experience Managers configureren met DTM Cloud Service](/help/sites-administering/dtm.md)
 
-   De API-token moet beschikbaar zijn wanneer u zich aanmeldt bij [https://dtm.adobe.com](https://dtm.adobe.com/) en **[!UICONTROL Account Settings]** in het gebruikersprofiel bezoekt. Deze stap is niet vereist vanuit het standpunt van Asset Insights, omdat de integratie van Experience Manager Sites met Asset Insights nog steeds in de werkzaamheden plaatsvindt.
+   De API-token moet beschikbaar zijn wanneer u zich aanmeldt bij [https://dtm.adobe.com](https://dtm.adobe.com/) en **[!UICONTROL Account Settings]** in het gebruikersprofiel bezoekt. Deze stap is niet vereist vanuit het standpunt van de Inzichten van Activa, omdat de integratie van de Plaatsen van de Experience Manager met de Inzichten van Activa nog in de werken is.
 
 1. Meld u aan bij [https://dtm.adobe.com](https://dtm.adobe.com/)en selecteer een bedrijf.
 1. Een bestaande webeigenschap maken of openen
@@ -45,20 +45,20 @@ Voer deze stappen uit om Asset Insights in te schakelen via DTM.
 
    ![chlimage_1-59](assets/chlimage_1-195.png)
 
-1. Klik op het Experience Manager-logo en ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]**.
+1. Klik op het logo van de Experience Manager en ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]**.
 1. Klik **[!UICONTROL Insights Page Tracker]**, kopieer de trackercode en plak deze in het dialoogvenster Script dat u in stap 6 hebt geopend. Sla de wijzigingen op.
 
    >[!NOTE]
    >
-   >* `AppMeasurement.js` wordt verwijderd. Het wordt verwacht beschikbaar te zijn via de Adobe Analytics-tool van DTM.
+   >* `AppMeasurement.js` wordt verwijderd. Naar verwachting is het beschikbaar via het Adobe Analytics-hulpprogramma van DTM.
    >* De vraag aan `assetAnalytics.dispatcher.init()` wordt verwijderd. De functie wordt naar verwachting aangeroepen zodra het Adobe Analytics-hulpprogramma van DTM is voltooid.
-   >* Afhankelijk van waar Asset Insights Page Tracker wordt gehost (bijvoorbeeld Experience Manager, CDN enzovoort), kan de oorsprong van de scriptbron wijzigingen vereisen.
-   >* In het geval van door Experience Manager gehoste paginanummering, moet de bron verwijzen naar een publicatie-instantie met de hostnaam van de verzenderinstantie.
+   >* Afhankelijk van de plaats waar Asset Insights Page Tracker wordt gehost (bijvoorbeeld Experience Manager, CDN enzovoort), kan de oorsprong van de scriptbron wijzigingen vereisen.
+   >* In het geval van door Experience Managers gehoste paginanummering, moet de bron verwijzen naar een publicatie-instantie met de hostnaam van de verzenderinstantie.
 
 
-1. Ga naar `https://dtm.adobe.com`. Klik **[!UICONTROL Overview]** in het Web bezit en klik **[!UICONTROL Add Tool]** of open een bestaand Hulpmiddel van de Analytics van Adobe. Tijdens het maken van het gereedschap kunt u instellen **[!UICONTROL Configuration Method]** op **[!UICONTROL Automatic]**.
+1. Ga naar `https://dtm.adobe.com`. Klik **[!UICONTROL Overview]** in het Web bezit en klik **[!UICONTROL Add Tool]** of open een bestaand Hulpmiddel van Adobe Analytics. Tijdens het maken van het gereedschap kunt u instellen **[!UICONTROL Configuration Method]** op **[!UICONTROL Automatic]**.
 
-   ![Adobe Analytics-gereedschap toevoegen](assets/Add-Adobe-Analytics-Tool.png)
+   ![Gereedschap Adobe Analytics toevoegen](assets/Add-Adobe-Analytics-Tool.png)
 
    Selecteer de gewenste opties voor het rapport Staging/Productie.
 
@@ -96,7 +96,7 @@ Voer deze stappen uit om Asset Insights in te schakelen via DTM.
              "",  /** eVar to put Asset ID for Asset Click Events in, e.g. 'eVar3' */
              "",  /** event to include in tracking-calls for Asset Impression Events, e.g. 'event8' */
              "",  /** event to include in tracking-calls for Asset Click Events, e.g. 'event7' */
-             sObj  /** [OPTIONAL] if the webpage already has an AppMeasurement object, please include the object here. If unspecified, Pagetracker Core shall create its own AppMeasurement object */
+             sObj  /** [OPTIONAL] if the webpage already has an AppMeasurement object, include the object here. If unspecified, Pagetracker Core shall create its own AppMeasurement object */
              );
        sObj.usePlugins = true;
        sObj.doPlugins = assetAnalytics.core.updateContextData;

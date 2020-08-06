@@ -12,9 +12,9 @@ discoiquuid: ebd99cc4-8762-4c28-a177-d62dac276afe
 docset: aem65
 targetaudience: target-audience upgrader
 translation-type: tm+mt
-source-git-commit: d3a69bbbc9c3707538be74fd05f94f20a688d860
+source-git-commit: cbd48b28798c1bb7c00175fc1faecfea5484b07b
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '720'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,8 @@ In deze sectie gaat het om het upgraden van een AEM naar AEM 6.5:
 * [Uw upgrade plannen](/help/sites-deploying/upgrade-planning.md)
 * [De complexiteit van upgrades beoordelen met patroondetector](/help/sites-deploying/pattern-detector.md)
 * [Achterwaartse compatibiliteit in AEM 6.5](/help/sites-deploying/backward-compatibility.md)
-* [Offlineindexering gebruiken om de downtime tijdens een upgrade te verminderen](/help/sites-deploying/upgrade-offline-reindexing.md)
+
+<!--* [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
 * [Upgradeprocedure](/help/sites-deploying/upgrade-procedure.md)
 * [Code en aanpassingen bijwerken](/help/sites-deploying/upgrading-code-and-customizations.md)
 * [Onderhoudstaken vóór upgrade](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)

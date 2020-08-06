@@ -3,9 +3,9 @@ title: Migreer activa [!DNL Adobe Experience Manager Assets] in bulk.
 description: Beschrijft hoe te om activa in te brengen [!DNL Adobe Experience Manager], meta-gegevens toe te passen, vertoningen te produceren, en hen te activeren om instanties te publiceren.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 892237699a4027e7dab406fd620cac220aa8b88b
 workflow-type: tm+mt
-source-wordcount: '1782'
+source-wordcount: '1781'
 ht-degree: 8%
 
 ---
@@ -17,14 +17,14 @@ Bij het migreren van elementen naar [!DNL Adobe Experience Manager]zijn er versc
 
 ## Vereisten {#prerequisites}
 
-Voordat u daadwerkelijk een van de stappen in deze methodologie uitvoert, moet u de leidraad in tips voor het afstemmen van [middelenprestaties bekijken en implementeren](performance-tuning-guidelines.md). Veel van de stappen, zoals het vormen van maximum gezamenlijke banen, verbeteren zeer de stabiliteit en de prestaties van de server onder lading. Andere stappen, zoals het vormen van een Opslag van de Gegevens van het Dossier, zijn veel moeilijker uit te voeren nadat het systeem met activa is geladen.
+Voordat u daadwerkelijk een van de stappen in deze methodologie uitvoert, moet u de richtlijnen in tips voor het afstemmen van [middelenprestaties bekijken en implementeren](performance-tuning-guidelines.md). Veel van de stappen, zoals het vormen van maximum gezamenlijke banen, verbeteren zeer de stabiliteit en de prestaties van de server onder lading. Andere stappen, zoals het vormen van een Opslag van de Gegevens van het Dossier, zijn veel moeilijker uit te voeren nadat het systeem met activa is geladen.
 
 >[!NOTE]
 >
 >De volgende gereedschappen voor middelenmigratie maken geen deel uit van [!DNL Experience Manager] en worden niet ondersteund door Adobe:
 >
->* ACS AEM Tools Tag Maker
->* CSV Asset Importer ACS AEM Tools
+>* ACS AEM Tagmaker
+>* ACS AEM Tools CSV Asset Importer
 >* ACS Commons Bulk Workflow Manager
 >* ACS Commons Snelle Manager van de Actie
 >* Synthetische workflow
@@ -52,7 +52,7 @@ Voordat u de migratie start, moet u de draagraketten voor de [!UICONTROL DAM Upd
 
 ### Labels laden {#loading-tags}
 
-Mogelijk hebt u al een tagtaxonomie die u op uw afbeeldingen toepast. Hoewel gereedschappen als CSV Asset Importer en [!DNL Experience Manager] ondersteuning voor metagegevensprofielen het toepassen van tags op elementen kunnen automatiseren, moeten de tags in het systeem worden geladen. De eigenschap van de Maker [van de Markering van de Tags van](https://adobe-consulting-services.github.io/acs-aem-tools/features/tag-maker/index.html) ACS AEM Tools laat u markeringen bevolken door een spreadsheet van Microsoft Excel te gebruiken die in het systeem wordt geladen.
+Mogelijk hebt u al een tagtaxonomie die u op uw afbeeldingen toepast. Hoewel gereedschappen als CSV Asset Importer en [!DNL Experience Manager] ondersteuning voor metagegevensprofielen het toepassen van tags op elementen kunnen automatiseren, moeten de tags in het systeem worden geladen. De [ACS AEM de eigenschap van de Maker](https://adobe-consulting-services.github.io/acs-aem-tools/features/tag-maker/index.html) van de Markering van Hulpmiddelen laat u markeringen bevolken door een spreadsheet van Microsoft te gebruiken Excel die in het systeem wordt geladen.
 
 ### Middelen opnemen {#ingesting-assets}
 
@@ -62,7 +62,7 @@ Er zijn twee manieren om de elementen in het systeem te laden: een op push-gebas
 
 #### Verzenden via HTTP {#pushing-through-http}
 
-Het team van de Diensten van Adobe Beheerde gebruikt een hulpmiddel genoemd Glutton om gegevens in klantenmilieu&#39;s te laden. Glutton is een kleine toepassing van Java die alle activa van één folder in een andere folder op een [!DNL Experience Manager] plaatsing laadt. In plaats van Glutton kunt u ook hulpprogramma&#39;s zoals Perl-scripts gebruiken om de elementen in de opslagplaats te posten.
+Het team van Managed Services van Adobe gebruikt een hulpmiddel genoemd Glutton om gegevens in klantenmilieu&#39;s te laden. Glutton is een kleine toepassing van Java die alle activa van één folder in een andere folder op een [!DNL Experience Manager] plaatsing laadt. In plaats van Glutton kunt u ook hulpprogramma&#39;s zoals Perl-scripts gebruiken om de elementen in de opslagplaats te posten.
 
 Er zijn twee grote nadelen aan het gebruiken van de benadering van het doorduwen van https:
 
@@ -73,13 +73,13 @@ De andere manier om elementen in te nemen is het ophalen van elementen van het l
 
 #### Ophalen uit het lokale bestandssysteem {#pulling-from-the-local-filesystem}
 
-De CSV Asset Importer [van](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) ACS AEM Tools haalt elementen van het bestandssysteem en de metagegevens van elementen van een CSV-bestand voor het importeren van elementen. De Experience Manager Asset Manager-API wordt gebruikt om de elementen in het systeem te importeren en de geconfigureerde eigenschappen van metagegevens toe te passen. In het ideale geval worden elementen op de server gemonteerd via een netwerkbestandsinstallatie of via een externe schijf.
+De [ACS AEM Tools CSV Asset Importer](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) vult elementen van het bestandssysteem en de metagegevens van elementen van een CSV-bestand voor het importeren van elementen. De API van de Manager van de Activa van de Experience Manager wordt gebruikt om de activa in het systeem in te voeren en de gevormde meta-gegevenseigenschappen toe te passen. In het ideale geval worden elementen op de server gemonteerd via een netwerkbestandsinstallatie of via een externe schijf.
 
 Aangezien elementen niet via een netwerk hoeven te worden verzonden, verbeteren de algehele prestaties aanzienlijk en wordt deze methode over het algemeen beschouwd als de meest efficiënte manier om elementen in de opslagplaats te laden. Bovendien kunt u, omdat het gereedschap metagegevens ondersteunt, alle elementen en metagegevens in één stap importeren in plaats van ook een tweede stap te maken om de metagegevens toe te passen met een apart gereedschap.
 
 ### Procesuitvoeringen {#processing-renditions}
 
-Nadat u de elementen in het systeem hebt geladen, moet u ze verwerken via de [!UICONTROL DAM Update Asset] workflow om metagegevens te extraheren en uitvoeringen te genereren. Voordat u deze stap uitvoert, moet u de [!UICONTROL DAM Update Asset] workflow dupliceren en aanpassen aan uw wensen. Het uit-van-de-doos werkschema bevat vele stappen die niet noodzakelijk voor u, zoals de generatie van Scene7 PTIFF of [!DNL InDesign Server] integratie kunnen zijn.
+Nadat u de elementen in het systeem hebt geladen, moet u ze verwerken via de [!UICONTROL DAM Update Asset] workflow om metagegevens te extraheren en uitvoeringen te genereren. Voordat u deze stap uitvoert, moet u de [!UICONTROL DAM Update Asset] workflow dupliceren en aanpassen aan uw wensen. De out-of-the-box workflow bevat veel stappen die u wellicht niet nodig hebt, zoals het genereren of [!DNL InDesign Server] integreren van Scene7 PTIFF.
 
 Nadat u de werkstroom volgens uw behoeften hebt gevormd, hebt u twee opties om het uit te voeren:
 
@@ -88,7 +88,7 @@ Nadat u de werkstroom volgens uw behoeften hebt gevormd, hebt u twee opties om h
 
 ### Elementen activeren {#activating-assets}
 
-Voor plaatsingen die een publicatielaag hebben, moet u de activa uit activeren aan publiceer landbouwbedrijf. Adobe raadt u weliswaar aan meerdere publicatie-instanties uit te voeren, maar het is het meest efficiënt om alle elementen te repliceren naar één publicatie-instantie en die instantie vervolgens te klonen. Wanneer u grote aantallen elementen activeert en een boomstructuur activeert, moet u mogelijk ingrijpen. Dit is de reden waarom: Als u de activering uitschakelt, worden items toegevoegd aan de wachtrij Verschuivende taken/gebeurtenis. Nadat de grootte van deze rij ongeveer 40.000 punten begint te overschrijden, vertraagt de verwerking dramatisch. Als deze wachtrij groter is dan 100.000 items, heeft de systeemstabiliteit te lijden.
+Voor plaatsingen die een publicatielaag hebben, moet u de activa uit activeren aan publiceer landbouwbedrijf. Hoewel Adobe aanbeveelt meerdere publicatieinstanties uit te voeren, is het het meest efficiënt om alle elementen te repliceren naar één publicatieinstantie en die instantie vervolgens te klonen. Wanneer u grote aantallen elementen activeert en een boomstructuur activeert, moet u mogelijk ingrijpen. Dit is de reden waarom: Als u de activering uitschakelt, worden items toegevoegd aan de wachtrij Verschuivende taken/gebeurtenis. Nadat de grootte van deze rij ongeveer 40.000 punten begint te overschrijden, vertraagt de verwerking dramatisch. Als deze wachtrij groter is dan 100.000 items, heeft de systeemstabiliteit te lijden.
 
 Om dit probleem te verhelpen, kunt u de [Snelle Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) van de Actie gebruiken om middelenreplicatie te beheren. Dit werkt zonder de het Verschuiven rijen te gebruiken, verminderend overheadkosten, terwijl het vertragen van de werkbelasting om de server te verhinderen worden overbelast. Een voorbeeld om FAM te gebruiken om replicatie te beheren wordt getoond op de de documentatiepagina van de eigenschap.
 
@@ -118,7 +118,7 @@ Nadat de migratie is voltooid, moeten de draagraketten voor de [!UICONTROL DAM U
 
 ## Migreren naar meerdere [!DNL Experience Manager] implementaties {#migrating-between-aem-instances}
 
-Hoewel bijna niet zo gemeenschappelijk, soms moet u grote hoeveelheden gegevens van één [!DNL Experience Manager] plaatsing aan een andere migreren; bijvoorbeeld wanneer u een [!DNL Experience Manager] upgrade uitvoert, uw hardware upgradet of naar een nieuw datacenter migreert, zoals met een AMS-migratie.
+Hoewel bijna niet zo gemeenschappelijk, soms moet u grote hoeveelheden gegevens van één [!DNL Experience Manager] plaatsing aan een andere migreren; wanneer u bijvoorbeeld een [!DNL Experience Manager] upgrade uitvoert, uw hardware upgradet of naar een nieuw datacenter migreert, zoals met een AMS-migratie.
 
 In dit geval worden uw elementen al gevuld met metagegevens en worden er al uitvoeringen gegenereerd. U kunt zich eenvoudig concentreren op het verplaatsen van elementen van de ene naar de andere instantie. Wanneer het migreren tussen [!DNL Experience Manager] plaatsing, voert u de volgende stappen uit:
 

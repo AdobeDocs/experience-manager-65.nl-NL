@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: 07b38da6-2efa-4a43-9afa-7151a241a5ad
 translation-type: tm+mt
-source-git-commit: 79914fa8fa28d5cf3fe7828d71a34ff920bc3e60
+source-git-commit: 1207cd54d9d605b7fbf606393cd33b5c19b603f4
+workflow-type: tm+mt
+source-wordcount: '394'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 79914fa8fa28d5cf3fe7828d71a34ff920bc3e60
 
 >[!NOTE]
 >
->Adobe adviseert gebruikend de Redacteur van het KUUROORD voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
 
 Met de tegel **App** beheren en de pagina &quot;App beheren&quot; kunt u metagegevens van toepassingen weergeven en bewerken. Metagegevens van de app zijn vereist voor het vrijgeven van een toepassing aan de winkel van een leverancier. Dit kunnen algemene metagegevens, iOS-metagegevens en schermafbeeldingen zijn. Zie App Tile [beheren](/help/mobile/phonegap-app-details-tile.md) voor meer informatie over algemene en iOS-metagegevens.
 
@@ -48,7 +51,7 @@ U kunt gemeenschappelijke en IOS Meta-gegevens uitgeven:
 
 ## Schermafbeeldingen toevoegen en verwijderen {#add-and-remove-screenshots}
 
-U kunt schermafbeeldingen van de app opnemen in de lijst met metagegevens. Sommige leveranciers hebben nauwkeurige schermafbeeldingen nodig wanneer ze een app naar hun app-winkel verzenden. Deze afbeeldingen moeten al in Elementen voorkomen. Zie [Asset Picker](../assets/search-assets.md#assetselector) om uw schermafbeeldingen te uploaden.
+U kunt schermafbeeldingen van de app opnemen in de lijst met metagegevens. Sommige leveranciers hebben nauwkeurige schermafbeeldingen nodig wanneer ze een app naar hun app-winkel verzenden. Deze afbeeldingen moeten al in Elementen voorkomen. Zie [Asset Picker](../assets/search-assets.md#assetpicker) om uw schermafbeeldingen te uploaden.
 
 ![chlimage_1-33](assets/chlimage_1-33.png)
 
@@ -85,7 +88,7 @@ Zie de volgende middelen om meer over andere auteursrollen te leren:
 * [Een bestaande hybride app importeren](/help/mobile/phonegap-adding-content-to-imported-app.md)
 * [Inhoudsservices](/help/mobile/develop-content-as-a-service.md)
 
-### Additional Resources {#additional-resources}
+### Aanvullende bronnen {#additional-resources}
 
 Meer informatie over de rollen en verantwoordelijkheden van een Beheerder en Ontwikkelaar vindt u in de volgende bronnen:
 

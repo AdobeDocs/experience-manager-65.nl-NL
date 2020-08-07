@@ -1,11 +1,11 @@
 ---
 title: De invoegtoepassingen van de Rich Text Editor configureren
-description: Leer om de Adobe Experience Manager Rich Text Editor stop-ins te vormen om individuele functionaliteit toe te laten.
+description: Leer hoe u de insteekmodules van de Adobe Experience Manager Rich Text Editor configureert voor het inschakelen van afzonderlijke functies.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: df992fc0204519509c4662a7d4315939af2fc92c
+source-git-commit: d6f48896a56950d44dfe0d1f9b712157951af83c
 workflow-type: tm+mt
-source-wordcount: '4385'
+source-wordcount: '4382'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Voor details over de andere configuraties RTE, zie [Rich Text Editor](/help/site
 
 >[!NOTE]
 >
->Als u werkt met CRXDE Lite, wordt u aangeraden de wijzigingen regelmatig op te slaan met [!UICONTROL Save All] deze optie.
+>Als u met CRXDE Lite werkt, wordt u aangeraden de wijzigingen regelmatig op te slaan met behulp van [!UICONTROL Save All] deze optie.
 
 ## Een insteekmodule activeren en de eigenschap features configureren {#activateplugin}
 
@@ -31,7 +31,7 @@ Standaard zijn `format`, `link`, `list`, `justify`, en de `control` stoppen en a
 >
 >Het respectieve `rtePlugins` knooppunt wordt genoemd `<rtePlugins-node>` om dubbel werk in dit artikel te voorkomen.
 
-1. Gebruikend CRXDE Lite, bepaal de plaats van de tekstcomponent voor uw project.
+1. Zoek met CRXDE Lite de tekstcomponent voor uw project.
 1. Creeer de ouderknoop van `<rtePlugins-node>` als het niet bestaat, alvorens om het even welke stop-ins te vormen RTE:
 
    * Afhankelijk van uw component zijn de bovenliggende knooppunten:
@@ -62,7 +62,7 @@ Nadat u een insteekmodule hebt geactiveerd, volgt u deze richtlijnen om de `feat
 |  | Alle functies inschakelen | Enkele specifieke functies inschakelen | Alle functies uitschakelen |
 |---|---|---|---|
 | Naam | functies | functies | functies |
-| Type | Tekenreeks | String[] (multi-string; Type instellen op String en klikken op Meerdere in CRXDE Lite) | Tekenreeks |
+| Type | Tekenreeks | String[] (multi-string; Stel Type in op String en klik op Meerdere in CRXDE Lite) | Tekenreeks |
 | Waarde | `*` (een sterretje) | ingesteld op een of meer functiewaarden | - |
 
 ## Begrijp de findreplace plug-in {#findreplace}
@@ -79,7 +79,7 @@ Wanneer het gebruiken van RTE, kunnen de auteurs inhoud in één van de volgende
 
 * **Browsermodus**: Plak tekst met gebruik van de standaardimplementatie van de browser. Het is geen aanbevolen methode omdat hierdoor ongewenste opmaakcodes kunnen ontstaan.
 
-* **Modus** Onbewerkte tekst: Plak de inhoud van het klembord als onbewerkte tekst. Alle elementen van stijl en opmaak worden uit de gekopieerde inhoud verwijderd voordat deze in de AEM-component worden ingevoegd.
+* **Modus** Onbewerkte tekst: Plak de inhoud van het klembord als onbewerkte tekst. Alle elementen van stijl en opmaak worden uit de gekopieerde inhoud verwijderd voordat deze in AEM component worden ingevoegd.
 
 * **MS Word-modus**: Plak de tekst, inclusief tabellen, met opmaak wanneer u kopieert vanuit MS Word. Het kopiëren en plakken van tekst uit een andere bron, zoals een webpagina of MS Excel, wordt niet ondersteund en behoudt alleen de gedeeltelijke opmaak.
 
@@ -107,7 +107,7 @@ De configuratie staat voor de volgende drie soorten gebruiksgevallen toe:
 
 * Plak tekst met gebruik van de standaardimplementatie van de browser. Het is geen aanbevolen methode omdat hierdoor ongewenste opmaakcodes kunnen ontstaan. Gevormd met `browser` hieronder.
 
-* Plak de inhoud van het klembord als onbewerkte tekst. Alle elementen van stijl en opmaak worden uit de gekopieerde inhoud verwijderd voordat deze in de AEM-component worden ingevoegd. Gevormd met `plaintext` hieronder.
+* Plak de inhoud van het klembord als onbewerkte tekst. Alle elementen van stijl en opmaak worden uit de gekopieerde inhoud verwijderd voordat deze in AEM component worden ingevoegd. Gevormd met `plaintext` hieronder.
 
 * Plak de tekst, inclusief tabellen, met opmaak wanneer u kopieert vanuit MS Word. Het kopiëren en plakken van tekst uit een andere bron, zoals een webpagina of MS Excel, wordt niet ondersteund en behoudt alleen de gedeeltelijke opmaak. Gevormd met `wordhtml` hieronder.
 
@@ -269,7 +269,7 @@ Geef vervolgens de locatie(s) op van de stijlpagina(&#39;s) waarnaar u wilt verw
 1. Voeg de eigenschap toe `externalStyleSheets` aan het bovenliggende knooppunt van `<rtePlugins-node>`:
 
    * **Naam** `externalStyleSheets`
-   * **Type** `String[]` (meerdere tekenreeksen; klik op **Multi** in CRXDE)
+   * **Type** `String[]` (meerdere tekenreeksen; klik op **Multi** in (CRXDE)
    * **Waarde(s)** Het pad en de bestandsnaam van elk stijlblad dat u wilt opnemen. Gebruik repository paden.
 
    >[!NOTE]
@@ -329,11 +329,11 @@ Geef vervolgens de locatie(s) op van de stijlpagina(&#39;s) waarnaar u wilt verw
 
 ### RTE configureren voor optimale woordeinden in het Japans {#jpwordwrap}
 
-Auteurs die AEM gebruiken om inhoud in de Japanse taal te ontwerpen, kunnen een stijl toepassen op tekens om regeleinde te voorkomen wanneer een regeleinde niet vereist is. Op deze manier kunnen auteurs de zinnen op de gewenste positie laten afbreken. De stijl voor deze functionaliteit is gebaseerd op CSS-klasse die vooraf is gedefinieerd in de CSS-stijlpagina.
+Auteurs die AEM gebruiken om inhoud in de Japanse taal te schrijven, kunnen een stijl toepassen op tekens om regeleinde te voorkomen wanneer een regeleinde niet vereist is. Op deze manier kunnen auteurs de zinnen op de gewenste positie laten afbreken. De stijl voor deze functionaliteit is gebaseerd op CSS-klasse die vooraf is gedefinieerd in de CSS-stijlpagina.
 
 >[!NOTE]
 >
->Voor deze functie is ten minste AEM 6.5 Service Pack 1 vereist.
+>Deze eigenschap vereist minstens AEM 6.5 Service Pack 1.
 
 Ga als volgt te werk om de stijl te maken die auteurs op Japanse tekst kunnen toepassen:
 
@@ -352,7 +352,7 @@ Ga als volgt te werk om de stijl te maken die auteurs op Japanse tekst kunnen to
 `String`
    * Waarde: `Japanese word-wrap`
 
-1. Maak een stijlpagina en geef het pad op. Zie [de locatie van stijlpagina](#locationofstylesheet)opgeven. Voeg de volgende inhoud aan de stijlpagina toe. Wijzig de achtergrondkleur naar wens.
+1. Maak een stijlpagina en geef het pad op. Zie [de locatie van stijlpagina](#locationofstylesheet)opgeven. Voeg de volgende inhoud toe aan het stijlblad. Wijzig de achtergrondkleur naar wens.
 
    ```css
    .text span.jpn-word-wrap {
@@ -445,7 +445,7 @@ Als u aangepaste indelingen definieert, worden de standaardindelingen (`<p>`, `<
 
 ## Speciale tekens configureren {#spchar}
 
-Wanneer in een standaard AEM-installatie de `misctools` insteekmodule is ingeschakeld voor speciale tekens (`specialchars`), is er direct een standaardselectie beschikbaar voor gebruik. bijvoorbeeld de symbolen copyright en trademark.
+Wanneer de `misctools` plug-in in een standaard AEM is ingeschakeld voor speciale tekens (`specialchars`), is er direct een standaardselectie beschikbaar voor gebruik. bijvoorbeeld de symbolen copyright en trademark.
 
 U kunt RTE vormen om uw eigen selectie van karakters beschikbaar te maken; of door verschillende karakters, of een volledige opeenvolging te bepalen.
 
@@ -607,7 +607,7 @@ Wanneer de insteekmodule voor spellingcontrole is geactiveerd, gebruikt de RTE w
 >[!NOTE]
 Het bericht `Spell checking failed` wordt gezien als een controle voor een taal wordt geprobeerd die niet geïnstalleerd is. De standaardwoordenboeken bevinden zich in `/libs/cq/spellchecker/dictionaries`de map en de juiste leesmij-bestanden. Wijzig de bestanden niet.
 
-Een standaard AEM-installatie bevat de woordenboeken voor Amerikaans Engels (`en_us`) en Brits Engels (`en_gb`). Voer de volgende stappen uit om meer woordenboeken toe te voegen.
+Een standaard AEM installatie omvat de woordenboeken voor Amerikaans Engels (`en_us`) en Brits Engels (`en_gb`). Voer de volgende stappen uit om meer woordenboeken toe te voegen.
 
 1. Ga naar de pagina [https://extensions.openoffice.org/](https://extensions.openoffice.org/).
 
@@ -697,7 +697,7 @@ Bij het toevoegen van koppelingen in AEM kunt u het volgende definiëren:
 
 Om te vormen hoe de verbindingen in AEM van een ander programma worden toegevoegd, bepaal de regels van HTML.
 
-1. Gebruikend CRXDE Lite, bepaal de plaats van de tekstcomponent voor uw project.
+1. Zoek met CRXDE Lite de tekstcomponent voor uw project.
 1. Maak een nieuw knooppunt op hetzelfde niveau als `<rtePlugins-node>`, dat wil zeggen, maak het knooppunt onder het bovenliggende knooppunt van `<rtePlugins-node>`:
 
    * **Naam** `htmlRules`
@@ -731,7 +731,7 @@ Om te vormen hoe de verbindingen in AEM van een ander programma worden toegevoeg
       * **Naam** `cssExternal`
       * **Type** `String`
       * **Waarde** de naam van de CSS-klasse (zonder een voorafgaande &#39;.&#39;; for example, `cssClass` instead of `.cssClass`)
-   * Array van geldige **protocollen** (inclusief https://, https:// file://, mailto: onder andere)
+   * Array met geldige **protocollen** (inclusief `https://`, `https://`, `file://`en `mailto:` onder andere)
 
       * **Naam** `protocols`
       * **Type** `String[]`
@@ -764,7 +764,7 @@ Om te vormen hoe de verbindingen in AEM van een ander programma worden toegevoeg
 
          * **Naam** `targetInternal`
          * **Type** `String`
-         * **Waarde** van het doel voor interne koppelingen (alleen gebruiken wanneer de modus &quot;is `auto`)
+         * **Waarde** van het doel voor interne koppelingen (alleen gebruiken als de modus is `auto`)
       * Het doel voor externe koppelingen:
 
          * **Naam** `targetExternal`

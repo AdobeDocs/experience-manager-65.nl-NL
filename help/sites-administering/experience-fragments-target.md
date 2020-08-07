@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: d4152b4d-531b-4b62-8807-a5bc5afe94c6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1afda7c23dd71f7ba40c295c13cf24a4d52dbd1c
+source-git-commit: e6d02717811ac78b77dc459814941d654e94733f
 workflow-type: tm+mt
 source-wordcount: '1179'
 ht-degree: 0%
@@ -37,11 +37,13 @@ ht-degree: 0%
    >   
    * de standaardwerkruimte.
    >   * een benoemde werkruimte, opgegeven in de Cloud Configuration.
-      >     **Opmerking:** Voor het exporteren naar specifieke werkruimten is Adobe Target Premium vereist.
+   >   * **Opmerking:** Voor het exporteren naar specifieke werkruimten is Adobe Target Premium vereist.
+>
 >* AEM moeten met Adobe Target worden [geïntegreerd met behulp van Adobe I/O](/help/sites-administering/integration-ims-adobe-io.md).
 
 >
 >
+
 AEM 6.5.0.0 en 6.5.1.0:
 >
 >* De fragmenten AEM Experience worden geëxporteerd naar de standaardwerkruimte van Adobe Target.

@@ -1,9 +1,9 @@
 ---
-title: Adobe Experience Manager 6.5 de Vorige Nota's van de Versie van het Service Pack
-description: De nota's van de versie specifiek voor Adobe Experience Manager 6.5 Service Pack 3 en vroeger.
+title: Opmerkingen bij de release van Adobe Experience Manager 6.5 Vorige Service Pack
+description: Release-aantekeningen specifiek voor Adobe Experience Manager 6.5 Service Pack 3 en eerder.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
+source-git-commit: d6f48896a56950d44dfe0d1f9b712157951af83c
 workflow-type: tm+mt
 source-wordcount: '8098'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## Adobe Experience Manager 6.5.4.0 {#experience-manager-6540}
 
-Adobe Experience Manager 6.5.4.0 is een belangrijke update die nieuwe eigenschappen omvat, zeer belangrijke klant gevraagde verhogingen en prestaties, stabiliteit, veiligheidsverbeteringen, die sinds de algemene beschikbaarheid van 6.5 versie in **april 2019** worden vrijgegeven. Het kan bovenop Adobe Experience Manager 6.5 worden geïnstalleerd.
+Adobe Experience Manager 6.5.4.0 is een belangrijke update die nieuwe eigenschappen, zeer belangrijke klant gevraagde verhogingen en prestaties, stabiliteit, veiligheidsverbeteringen omvat, die sinds de algemene beschikbaarheid van versie 6.5 in **april 2019** wordt vrijgegeven. Deze kan boven op Adobe Experience Manager 6.5 worden geïnstalleerd.
 
 Enkele belangrijke functies en verbeteringen die zijn geïntroduceerd in Adobe Experience Manager 6.5.4.0 zijn:
 
@@ -31,13 +31,13 @@ Enkele belangrijke functies en verbeteringen die zijn geïntroduceerd in Adobe E
 
 * De ingebouwde opslagplaats (Apache Jackrabbit Oak) wordt bijgewerkt naar versie 1.10.8.
 
-* U kunt selectieve inhoudsubstructuren nu synchroniseren met *Dynamic Media - Scene7-modus* in plaats van alle beschikbare substructuren op `content/dam`.
+* U kunt selectieve inhoudsubstructuren nu synchroniseren naar de modus *Dynamische media - Scene7 in plaats van naar alle beschikbare substructuren* `content/dam`.
 
 * Integratie van formuliergegevensmodellen met SOAP-webservice ondersteunt nu keuzegroepen of kenmerken voor elementen.
 
 * De invoer of de output van de ZEEP en complexe gegevensstructuren steunen nu Dynamische Vervanging van de Groep.
 
-Voor een volledige lijst van eigenschappen en zeer belangrijke hoogtepunten die in de recentste de dienstpakken worden geïntroduceerd, zie [wat in Adobe Experience Manager 6.5 de dienstpakken](new-features-latest-service-pack.md)nieuw is.
+Voor een volledige lijst van eigenschappen en belangrijkste hoogtepunten die in de recentste de dienstpakken worden geïntroduceerd, zie [wat in Adobe Experience Manager 6.5 de dienstpakken](new-features-latest-service-pack.md)nieuw is.
 
 ### Sites {#sites-fixes}
 
@@ -87,7 +87,7 @@ Voor een volledige lijst van eigenschappen en zeer belangrijke hoogtepunten die 
 
 * De knop waarmee de workflow voor het verzamelen van elementen wordt geactiveerd, is uitgeschakeld (NPR-32471).
 
-* Er wordt een map zonder naam gemaakt in SPS (Scene7 Publishing System) terwijl een element van de ene map naar de andere wordt verplaatst in Experience Manager met de Scene7-configuratie van Dynamic Media (NPR-32440).
+* Een map zonder naam wordt gemaakt in SPS (Scene7 Publishing System) en een element van de ene map naar de andere verplaatst in Experience Manager met Dynamic Media Scene7 Configuration (NPR-32440).
 
 * De handeling voor het verplaatsen van alle elementen (met de opdracht Alles selecteren en vervolgens verplaatsen) naar een map met gepubliceerde elementen mislukt bij fout (NPR-32366).
 
@@ -119,11 +119,11 @@ Voor een volledige lijst van eigenschappen en zeer belangrijke hoogtepunten die 
 
 * De resultatenpagina Touch UI-zoekopdracht (uitgevoerd via Omnissearch) wordt automatisch naar boven geschoven en verliest de schuifpositie van de gebruiker (NPR-31307).
 
-* Op de elementendetailpagina van PDF-elementen worden geen actieknoppen weergegeven, behalve naar de knoppen Verzameling en Vertoning toevoegen in de Experience Manager die wordt uitgevoerd in de Scene7-uitvoeringsmodus van Dynamic Media (CQ-4286705).
+* Op de pagina met middelendetails van PDF-elementen worden geen actieknoppen weergegeven, behalve de knoppen voor verzameling en uitvoering toevoegen in Experience Manager die wordt uitgevoerd in de uitvoeringsmodus Dynamische media Scene7 (CQ-4286705).
 
 * Het duurt te lang om de batchupload van Scene7 te doorlopen (CQ-4286445).
 
-* Met de knop Opslaan wordt de externe set niet geïmporteerd als de gebruiker geen wijzigingen heeft aangebracht in de Editor instellen in de Dynamic Media-client (CQ-4285690).
+* Met de knop Opslaan wordt de externe set niet geïmporteerd als de gebruiker geen wijzigingen heeft aangebracht in de Editor instellen in de Dynamic Media Client (CQ-4285690).
 
 * Miniatuur van 3D-middelen is niet informatief wanneer een ondersteund 3D-model in de Experience Manager wordt opgenomen (CQ-4283701).
 
@@ -131,7 +131,7 @@ Voor een volledige lijst van eigenschappen en zeer belangrijke hoogtepunten die 
 
 * Onjuiste containerhoogte van een geüpload 3D-model, voorvertoond in 3D-viewer, wordt weergegeven op de detailpagina van het element (CQ-4283309).
 
-* De Carousel Editor wordt niet geopend in IE 11 in de Hybride modus Experience Manager Dynamic Media (CQ-4255590).
+* De Carousel Editor wordt niet geopend in IE 11 in de modus Dynamische media hybride van Experience Manager (CQ-4255590).
 
 * De toetsenbordfocus blijft vastzitten in de vervolgkeuzelijst E-mail in het dialoogvenster Downloaden, in Chrome- en Safari-browsers (NPR-32067).
 
@@ -179,7 +179,7 @@ Voor een volledige lijst van eigenschappen en zeer belangrijke hoogtepunten die 
 
 ### Campagne gericht {#campaign-targeting-6540}
 
-* Target-cloudconfiguratie mislukt met de fout get-boxes request mislukt (CQ-4279880).
+* De configuratie van de doelcloud mislukt als de fout get-boxes is mislukt (CQ-4279880).
 
 ### Brand Portal {#assets-brand-portal-6540}
 
@@ -203,7 +203,7 @@ Voor een volledige lijst van eigenschappen en zeer belangrijke hoogtepunten die 
 
 * Het formulier Lid maken wordt weergegeven als een lege pagina (NPR-31997).
 
-* De gebruiker kan het Analytics-rapport over een ontwerpinstantie (NPR-30913) niet bekijken.
+* De gebruiker kan het Analytics-rapport over de auteurinstantie (NPR-30913) niet bekijken.
 
 ### eikenindexering en vragen {#oak-indexing-6540}
 
@@ -337,7 +337,7 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 
 * Dynamische vertoningen die zijn gedownload van [!DNL Experience Manager] uitvoering in [!DNL Dynamic Media]-hybride modus worden verbroken (het gaat om teksttypen met de inhoud &#39;kan afbeelding niet vinden&#39; in plaats van het type afbeeldingsinhoud) (NPR-30876).
 
-* [!DNL Dynamic Media] De workflow Video coderen genereert geen miniatuur voor de video die op de Adobe Experience Manager van de modus [!DNL Dynamic Media Classic] naar de modus [!DNL Dynamic Media]-Scene7 wordt gemigreerd (CQ-4282011).
+* [!DNL Dynamic Media] De workflow Video coderen genereert geen miniatuur voor de video die in Adobe Experience Manager van de modus [!DNL Dynamic Media Classic] naar de modus [!DNL Dynamic Media]-Scene7 wordt gemigreerd (CQ-4282011).
 
 * IpsApiException werd waargenomen terwijl het migreren van activa van één geval aan een andere gebruikend verschillende het bedrijfs identiteitskaart van Scene7 (CQ-4280548).
 
@@ -421,7 +421,7 @@ Remove one mention of this fix.
 
 * Updates in de configuratie van de buffergrootte voor de op Jetty-Gebaseerde dienst van HTTP worden niet bewaard (NPR-30925).
 
-* QueryBuilder steunt nu orde ``fn:name()`` in xpath vragen (NPR-31322).
+* QueryBuilder steunt nu orde `fn:name()` in xpath vragen (NPR-31322).
 
 * Er wordt een dubbele activeringsstructuur gemaakt bij een upgrade vanaf [!DNL Experience Manager] 6.3 (NPR-31513).
 
@@ -431,7 +431,7 @@ Remove one mention of this fix.
 
 * Er wordt een fout weergegeven bij het koppelen van een ZIP-bestand aan een [!DNL Experience Manager Communities] bericht vanwege verschillende versies van Apache POI en Apache Tika bundle (NPR-31018).
 
-* De ``org.apache.sling.distribution.api`` bundel is verborgen in de configuratiemanager en is daarom niet beschikbaar voor aangepaste bundels (NPR-31720).
+* De `org.apache.sling.distribution.api` bundel is verborgen in de configuratiemanager en is daarom niet beschikbaar voor aangepaste bundels (NPR-31720).
 
 ### Projecten {#projects}
 
@@ -462,7 +462,7 @@ Remove one mention of this fix.
 * Jackson Databind-bibliotheken bijgewerkt naar versie 2.9.9.3 om nieuwe kwetsbaarheden te verhelpen (NPR-30967).
 * Activiteiten en aanmeldingstitels zijn inconsistent (NPR-30941).
 * Paginering werkt niet correct in [!DNL Communities] Blogs (NPR-30914).
-* Analytics-rapporten worden niet gevuld in de [!DNL Experience Manager] auteursomgeving. Er wordt een lege pagina weergegeven (NPR-30913).
+* Rapporten over analysemogelijkheden worden niet gevuld in de [!DNL Experience Manager] auteursomgeving. Er wordt een lege pagina weergegeven (NPR-30913).
 
 ### Eik {#oak}
 
@@ -575,7 +575,7 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 * Wanneer u de component [!DNL Dynamic Media]-Scene7 aan de pagina toevoegt en de pagina vervolgens publiceert, wordt de configuratie dmscene7 niet telkens opnieuw geactiveerd. NPR-30641: Hotfix voor CQ-4275962
 * Toegevoegd een IPSJobJournal in [!DNL Experience Manager] om slechts één baan van de Systemen van de Preventie van het Binnendringen (IPS) per verwerkingsprofiel tot stand te brengen. NPR-30490: Hotfix voor CQ-4273614
 * [!DNL Dynamic Media]: Er zijn standaardfilters toegevoegd om te voorkomen dat elementen worden gerepliceerd naar het [!DNL Experience Manager] publicatieknooppunt. NPR-30538: Hotfix voor CQ-4274678
-* Introduceerde een externe werkstroom van het Herproces voor multi-middelsteun om omslag als lading toe te staan. De werkstroom heeft twee stappen - verwerkt activa zonder handvatten via meta-gegevenskaart aan volgende stap opnieuw en uploadt alle activa zonder activa handvat aan S7 in één enkele IPS baan. Voor meer details, zie het Vormen [!DNL Dynamic Media] Cloud Servicen. NPR-30489: Hotfix voor CQ-4272903
+* Introduceerde een externe werkstroom van het Herproces voor multi-middelsteun om omslag als lading toe te staan. De werkstroom heeft twee stappen - verwerkt activa zonder handvatten via meta-gegevenskaart aan volgende stap opnieuw en uploadt alle activa zonder activa handvat aan S7 in één enkele IPS baan. Voor meer details, zie het Vormen [!DNL Dynamic Media] Cloud Services. NPR-30489: Hotfix voor CQ-4272903
 * Het uploaden van onjuiste CSV na correcte CSV wipes uit correcte CSV. Hotfix voor CQ-4277694, CQ-4277814
 * Het onjuiste pictogram dat specifiek is voor de bijdragemappen die moeten worden verwijderd. Hotfix voor CQ-4277580
 * Als u een gebruiker selecteert in de gebruikerskiezer op het tabblad Asset Contribution, wordt de naam van de gebruiker niet weergegeven in de tabel en wordt in het dialoogvenster Gebruikers verwijderen op de eigenschappenpagina een onjuiste tekst weergegeven. Hotfix voor CQ-4277875
@@ -587,7 +587,7 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 * Als u de zoekopdracht sorteert op relevantie, worden [!DNL InDesign] documenten samen met [!DNL InDesign] sjablonen geretourneerd. Hotfix voor CQ-4273864
 * Als de gebruiker een e-mailadres in hoofdletters heeft, kunnen gebruikers niet inchecken voor de elementen die eerder zijn uitgecheckt. Hotfix voor CQ-4276575
 * De bewerking Verwijderen is alleen van toepassing op voorinstellingen die zijn geselecteerd. Als de lijst na de bewerking automatisch wordt vernieuwd op het scherm, worden andere voorinstellingen weergegeven die al zijn vernieuwd. Hotfix voor CQ-4261461
-* Het vormen van [!DNL Dynamic Media] Cloud Servicen op [!DNL Dynamic Media]-Hybride wijze resulteert in veelvoudige lege rapportsuites die in worden gecreeerd [!DNL Analytics][!DNL Experience Manager], en zonder rapportsuite identiteitskaart die in wordt opgeslagen, resulterend in rapportsuite duplicatie. Hotfix voor CQ-4249780
+* Het vormen van [!DNL Dynamic Media] Cloud Services op [!DNL Dynamic Media]-Hybride wijze resulteert in veelvoudige lege rapportsuites die in worden gecreeerd [!DNL Analytics][!DNL Experience Manager], en zonder rapportsuite identiteitskaart die in wordt opgeslagen, resulterend in rapportsuite duplicatie. Hotfix voor CQ-4249780
 * Naam van bewerking in [!DNL Experience Manager] element wijzigen in gedupliceerde naam kan niet worden gesynchroniseerd met Scene7. Hotfix voor CQ-4276763
 * Door de gebruiker gegenereerde inhoud wordt onjuist weergegeven in het deelvenster met zoekfilters. Hotfix voor CQ-4273875
 * De optie Vergelijkbare zoeken is niet beschikbaar voor TIFF-afbeeldingen. Hotfix voor CQ-4278238

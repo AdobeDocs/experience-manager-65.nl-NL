@@ -1,12 +1,12 @@
 ---
 title: Opmerkingen bij de release van Adobe Experience Manager 6.5 Service Pack
-description: De nota's van de versie specifiek voor Adobe Experience Manager 6.5 Service Pack 5.
+description: Release-aantekeningen specifiek voor Adobe Experience Manager 6.5 Service Pack 5.
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 2f5072a73b11853bbfd63c4b4ce9ffcf186adad1
+source-git-commit: ca965d8495c0460b2b6bc5e08d8818b91f9fcdee
 workflow-type: tm+mt
-source-wordcount: '4406'
+source-wordcount: '4415'
 ht-degree: 0%
 
 ---
@@ -25,11 +25,11 @@ ht-degree: 0%
 
 ## Wat is inbegrepen in Adobe Experience Manager 6.5.5.0 {#what-s-included-in-aem}
 
-Adobe Experience Manager 6.5.5.0 is een belangrijke update die nieuwe eigenschappen, zeer belangrijke klant gevraagde verhogingen, en prestaties, stabiliteit, en veiligheidsverbeteringen omvat, die sinds de algemene beschikbaarheid van 6.5 versie in **april 2019** worden vrijgegeven. Het kan bovenop Adobe Experience Manager 6.5 worden geïnstalleerd.
+Adobe Experience Manager 6.5.5.0 is een belangrijke update die nieuwe eigenschappen, zeer belangrijke klant gevraagde verhogingen, en prestaties, stabiliteit, en veiligheidsverbeteringen omvat, die sinds de algemene beschikbaarheid van 6.5 versie in **april 2019** worden vrijgegeven. Deze kan boven op Adobe Experience Manager 6.5 worden geïnstalleerd.
 
 Enkele belangrijke functies en verbeteringen die zijn geïntroduceerd in Adobe Experience Manager 6.5.5.0 zijn:
 
-* Pas de kolomnamen aan die in Adobe Experience Manager Inbox tonen.
+* Pas de kolomnamen aan die in Adobe Experience Manager Inbox worden weergegeven.
 
 * Verbeterde toegankelijkheid op diverse gebieden in het Beheer van de Inhoud van het Web van de Experience Manager (WCM) zoals de Redacteur van de Pagina, de Componenten van de Kern, RTE, en Admin gebruikersinterface.
 
@@ -39,11 +39,11 @@ Enkele belangrijke functies en verbeteringen die zijn geïntroduceerd in Adobe E
 
 * Verbeterde uitzonderingsbehandeling in [!DNL Adobe Experience Manager Assets] gebruikersinterfacestroom.
 
-* Als u de publicatie-URL voor Dynamic Media Scene7 wilt ophalen, `getRemoteAssetPublishURL` wordt een nieuwe methode toegevoegd aan de `com.day.cq.dam.api.s7dam.scene7.ImageUrlApi` interface.
+* Om publicatie-URL voor Dynamic Media Scene7 op te halen, `getRemoteAssetPublishURL` wordt een nieuwe methode toegevoegd aan de `com.day.cq.dam.api.s7dam.scene7.ImageUrlApi` interface.
 
 * [Verbeterde toegankelijkheid](#assets-6550) in overeenstemming [!DNL Adobe Experience Manager Assets] met de Web Content Accessibility Guidelines (WCAG).
 
-* De integratie van het Aandeel van het Pakket van binnen Adobe Experience Manager werd verwijderd.
+* Integratie met delen van pakket is verwijderd uit Adobe Experience Manager.
 
 * De ingebouwde opslagplaats (Apache Jackrabbit Oak) wordt bijgewerkt naar versie 1.22.3.
 
@@ -77,8 +77,9 @@ Hier volgt een lijst met oplossingen uit de release van [!DNL Experience Manager
 * Wanneer u een pad selecteert voor een ervaringsfragmentcomponent en het selectievakje Dialoogvenster Selectie openen inschakelt, wordt niet naar het geselecteerde pad genavigeerd in de padbrowser (NPR-32308).
 * Wanneer u van Experience Manager 6.2 aan Experience Manager 6.5 bevordert, toont de component Parsys van statische malplaatjes niet correct. De hoogte van de component Parsys wordt geplaatst aan 0 en de componenten binnen het zijn niet zichtbaar (NPR-33663).
 * Wanneer een gebruiker een Layout Container op dezelfde pagina kopieert en plakt, worden componenten in een Layout Container niet weergegeven (NPR-33648).
-* Met de Dispatcher Health Check wordt een `Invalid cookie header` waarschuwingsbericht weergegeven in de logbestanden (NPR-33629).
+* Met de health check van de verzender wordt een `Invalid cookie header` waarschuwingsbericht weergegeven in de logbestanden (NPR-33629).
 * Gereflecteerde XSS in PreferencesServlet (NPR-33438).
+* Anonieme gebruikers hebben toegang tot de functies van CRX DE Lite (GRANITE-27790).
 
 ### [!DNL Assets] {#assets-6550}
 
@@ -186,7 +187,7 @@ Hier volgt een lijst met oplossingen uit de release van [!DNL Experience Manager
 
 * Bij het gebruiken van het cascading popup in meta-gegevensschema&#39;s, bij het selecteren van en het bewaren van een drop-down optie die een apostrof (van de kinddrop-down) bevat, verdwijnt de geselecteerde apostrof optie na het heropenen van activa [!UICONTROL Properties] (NPR-32649).
 
-* [!UICONTROL Asset Insights Sync Job] stopt en mislukt als er ongeldige items worden aangetroffen (aan de Analytics-zijde) in plaats van naar de volgende vermelding te gaan (NPR-32674).
+* [!UICONTROL Asset Insights Sync Job] stopt en mislukt als er ongeldige items worden aangetroffen (aan de zijde Analytics) in plaats van naar de volgende vermelding te gaan (NPR-32674).
 
 * Gyroscoop werkt niet omdat bewegingssensoren standaard zijn uitgeschakeld in mobiele browsers in panoramische viewer (CQ-4272937).
 
@@ -200,7 +201,7 @@ Hier volgt een lijst met oplossingen uit de release van [!DNL Experience Manager
 
 * Traversale waarschuwingen worden waargenomen in logboeken bij het openen van een slimme verzameling die meer dan 10.000 activa bevat (NPR-32980).
 
-* Namen van middelen worden gewijzigd in kleine letters wanneer middelen van de ene map naar de andere worden verplaatst in de [!DNL Adobe Experience Manager] werkmodus van Dynamic Media Scene7 (NPR-32995).
+* Elementnamen worden gewijzigd in kleine letters wanneer middelen van de ene map naar de andere worden verplaatst in de [!DNL Adobe Experience Manager] werkmodus van Dynamic Media Scene7 (NPR-32995).
 
 * Een doorzocht middel kan niet worden geschrapt nadat aan zijn eigenschappen van de onderzoeksresultaten navigeert en dan naar onderzoeksresultaten teruggaat om het te schrappen (NPR-32998).
 
@@ -214,11 +215,11 @@ Hier volgt een lijst met oplossingen uit de release van [!DNL Experience Manager
 
 * Uitzondering wordt waargenomen in logboeken bij het openen van uitvoeringen per spoor voor een PDF onder een map met profiel voor slimme uitsnijdingen (CQ-4294201).
 
-* Voorinstellingen voor afbeeldingen publiceren niet als deze standaard [!UICONTROL Dynamic Media sync mode] is uitgeschakeld in de Experience Manager met de Scene7-runmode voor Dynamic Media (CQ-4294200).
+* Voorinstellingen voor afbeeldingen publiceren niet, als deze standaard [!UICONTROL Dynamic Media sync mode] is uitgeschakeld in de Experience Manager met Dynamic Media Scene7-runmode (CQ-4294200).
 
 * De verwerking van bedrijfsmiddelen tijdens bulkupload blijft vastzitten en de werkstroominstantie toont vastgelopen instanties van update DAM-middelen (CQ-4293916).
 
-* Het creëren van een configuratie van Dynamic Media op de werken van de Experience Manager, maar op het gebruikersinterface gebeurt niets bij het selecteren van sparen (CQ-4292442).
+* Het creëren van een Dynamische configuratie van Media op Experience Manager werkt, maar op het gebruikersinterface gebeurt niets bij het selecteren van sparen (CQ-4292442).
 
 * Voorvertoning van F4V-video-elementen werkt niet in progressief afspelen op Safari/Mac (CQ-4289844).
 
@@ -232,9 +233,9 @@ Hier volgt een lijst met oplossingen uit de release van [!DNL Experience Manager
 
    * Het uploaden van grote binaire bestanden naar Dynamic Media Image Processing-servers duurt te lang.
 
-   * De tijd van de duimgeneratie bij Experience Manager stijgt wegens Dynamic Media Scene7 architectuur.
+   * De tijd van de duimnagelgeneratie bij Experience Manager stijgt wegens Dynamic Media Scene7 architectuur.
 
-* Dynamic Media Scene7-migratiekwesties mislukken voor klanten met een groot aantal bedrijfsmiddelen (CQ-4279206).
+* Dynamic Media Scene7-migratiekwesties mislukken voor klanten met een groot aantal middelen (CQ-4279206).
 
 * De lay-out van de video 360-viewer wordt verbroken wanneer deze `setVideo` wordt gebruikt en de video wordt bij gebruik afgebroken `video= modifier` (CQ-4263201).
 
@@ -310,7 +311,7 @@ Hier volgt een lijst met oplossingen uit de release van [!DNL Experience Manager
 
 >[!NOTE]
 >
->Experience Manager Service Pack bevat geen oplossingen voor [!DNL Forms]. Ze worden geleverd met een apart Forms-add-onpakket. Daarnaast wordt een cumulatief installatieprogramma uitgebracht dat oplossingen voor AEM Forms op JEE bevat. Voor meer informatie, zie toe:voegen- [aan](#install-aem-forms-add-on-package) AEM Forms installeren en AEM Forms [installeren op JEE](#install-aem-forms-jee-installer).
+>Experience Manager Service Pack bevat geen oplossingen voor [!DNL Forms]. Ze worden geleverd met een apart Forms-add-onpakket. Daarnaast wordt een cumulatief installatieprogramma uitgebracht dat oplossingen voor AEM Forms op JEE bevat. Zie de invoegtoepassing [AEM Forms](#install-aem-forms-add-on-package) installeren en AEM Forms in JEE [installeren voor meer informatie](#install-aem-forms-jee-installer).
 
 * Correspondentenbeheer: De volgorde van de activa in een doelgebied verandert na indiening van een brief (NPR-33359, NPR-33153).
 * Adaptieve Forms: Wanneer een gebruiker een adaptief formulier bewerkt, werkt de [!UICONTROL Start Workflow] optie in het [!UICONTROL Page Information] menu niet (NPR-33004).
@@ -340,15 +341,15 @@ Hier volgt een lijst met oplossingen uit de release van [!DNL Experience Manager
 
 >[!NOTE]
 >
->Adobe raadt u niet aan het pakket Adobe Experience Manager 6.5.5.0 te verwijderen of te verwijderen.
+>Adobe raadt u niet aan het Adobe Experience Manager 6.5.5.0-pakket te verwijderen of te verwijderen.
 
 ### Het Service Pack installeren {#install-service-pack}
 
-Voer de volgende stappen uit om Service Pack op een bestaande Adobe Experience Manager 6.5 instantie te installeren:
+Voer de volgende stappen uit om het Service Pack op een bestaande Adobe Experience Manager 6.5-instantie te installeren:
 
 1. Download het de dienstpak van de Distributie [van de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.5.zip)Software.
 
-1. Open Package Manager en klik **[!UICONTROL Upload Package]** om het pakket te uploaden. Zie [Pakketbeheer](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html)voor informatie over het gebruik ervan.
+1. Open Package Manager en klik **[!UICONTROL Upload Package]** om het pakket te uploaden. Zie [Package Manager](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html)voor informatie over het gebruik ervan.
 
 1. Selecteer het pakket en klik **[!UICONTROL Install]**.
 
@@ -358,7 +359,7 @@ Voer de volgende stappen uit om Service Pack op een bestaande Adobe Experience M
 
 **Automatische installatie**
 
-Er zijn twee manieren om Adobe Experience Manager 6.5.5.0 op een werkende instantie automatisch te installeren:
+Er zijn twee manieren om Adobe Experience Manager 6.5.5.0 automatisch op een werkexemplaar te installeren:
 
 A. Plaats het pakket in de `../crx-quickstart/install` map wanneer de server online beschikbaar is. Het pakket wordt automatisch geïnstalleerd.
 
@@ -366,7 +367,7 @@ B. Gebruik de [HTTP-API van Package Manager](https://docs.adobe.com/content/docs
 
 >[!NOTE]
 >
->Adobe Experience Manager 6.5.5.0 ondersteunt geen Bootstrap-installatie.
+>Adobe Experience Manager 6.5.5.0 biedt geen ondersteuning voor Bootstrap-installatie.
 
 **Installatie valideren**
 
@@ -382,17 +383,17 @@ Zie de [technische vereisten](/help/sites-deploying/technical-requirements.md)vo
 
 >[!NOTE]
 >
->Sla over als u geen AEM Forms gebruikt. Correcties in Adobe Experience Manager Forms worden geleverd via een afzonderlijk invoegpakket.
+>Sla dit over als u AEM Forms niet gebruikt. Correcties in Adobe Experience Manager Forms worden geleverd via een afzonderlijk invoegpakket.
 
-1. Zorg ervoor dat u het Service Pack van de Adobe Experience Manager hebt geïnstalleerd.
+1. Controleer of u het Adobe Experience Manager Service Pack hebt geïnstalleerd.
 1. Download het overeenkomstige Forms add-on pakket dat in [AEM Forms-releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) voor uw besturingssysteem wordt vermeld.
-1. Installeer het Forms-invoegtoepassingspakket zoals beschreven in [Invoegpakketten](../forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package)voor AEM Forms installeren.
+1. Installeer het Forms-invoegtoepassingspakket zoals beschreven in [AEM Forms-invoegtoepassingspakketten](../forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package)installeren.
 
 ### Adobe Experience Manager Forms installeren op JEE {#install-aem-forms-jee-installer}
 
 >[!NOTE]
 >
->Sla dit over als u geen AEM Forms gebruikt op JEE. Correcties in Adobe Experience Manager Forms op JEE worden via een afzonderlijk installatieprogramma geleverd.
+>Sla dit over als u AEM Forms niet gebruikt op JEE. Correcties in Adobe Experience Manager Forms op JEE worden via een afzonderlijk installatieprogramma geleverd.
 
 Voor informatie over het installeren van het cumulatieve installatieprogramma voor Experience Manager Forms op JEE en configuratie na de implementatie, zie de [versienota&#39;s voor flard 0014](https://helpx.adobe.com/aem-forms/quick-fixes/6-5/jee-patch-0014.html).
 
@@ -400,7 +401,7 @@ Voor informatie over het installeren van het cumulatieve installatieprogramma vo
 
 UberJar voor Experience Manager 6.5.5.0 is beschikbaar in de [Adobe Public Maven bewaarplaats](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aem/uber-jar/6.5.5/).
 
-Om UberJar in een Geweven project te gebruiken, zie [hoe te UberJar](/help/sites-developing/ht-projects-maven.md) gebruiken en omvat het volgende gebiedsdeel in uw projectPOM:
+Om UberJar in een Geweven project te gebruiken, zie [hoe te UberJar](/help/sites-developing/ht-projects-maven.md) gebruiken en de volgende gebiedsdeel in uw projectPOM omvatten:
 
 ```shell
 <dependency>
@@ -420,7 +421,7 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
 
 | Gebied | Functie | Vervanging |
 |---|---|---|
-| Integrations | Het **[!UICONTROL AEM Cloud Services Opt-In]** scherm is afgekeurd. Met de integratie van AEM en Target in AEM 6.5 wordt bijgewerkt om de Target Standard API te ondersteunen, die verificatie via Adobe IMS en I/O gebruikt, en de groeiende rol van Adobe Launch voor het van instrumenten voorzien van AEM pagina&#39;s voor analyse en personalisatie, is de Opt-In tovenaar functioneel irrelevant geworden. | Configureer systeemverbindingen, Adobe IMS-verificatie en Adobe I/O-integratie via de respectievelijke AEM cloud services. |
+| Integrations | Het **[!UICONTROL AEM Cloud Services Opt-In]** scherm is afgekeurd. Met de integratie van de AEM en van het Doel in AEM 6.5 wordt bijgewerkt om de Standaard API van het Doel te steunen, die authentificatie via Adobe IMS en I/O gebruikt, en de groeiende rol van de Lancering van de Adobe voor het van instrumenten voorzien van AEM pagina&#39;s voor analyse en verpersoonlijking, is de Opt-In tovenaar functioneel irrelevant geworden. | Configureer systeemverbindingen, Adobe IMS-verificatie en Adobe I/O-integratie via de respectievelijke AEM-cloudservices. |
 | Connectors | De Adobe JCR-connector voor Microsoft SharePoint 2010 en Microsoft SharePoint 2013 is vervangen door AEM 6.5. | N.v.t. |
 
 ## Known issues {#known-issues}
@@ -438,11 +439,11 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
 * Als de [!UICONTROL Connected assets configuration] tovenaar een 404 foutenmelding na installatie terugkeert, installeer manueel de `cq-remotedam-client-ui-content` en de `cq-remotedam-client-ui-components` pakketten opnieuw gebruikend de Manager van het Pakket.
 
 * De volgende fouten en waarschuwingsberichten kunnen tijdens de installatie van AEM 6.5.x.x worden weergegeven:
-   * &quot;Wanneer de Target-integratie is geconfigureerd in AEM met de Target Standard API (IMS-verificatie), leidt het exporteren van Experience Fragments naar Target tot onjuiste aanbiedingstypen die worden gemaakt. In plaats van het type &quot;Experience Fragment&quot;/bron &quot;Adobe Experience Manager&quot; maakt Target verschillende aanbiedingen met het type &quot;HTML&quot;/source &quot;Adobe Target Classic&quot;.
+   * &quot;Wanneer de integratie van het Doel in AEM gebruikend StandaardAPI van het Doel (authentificatie IMS) wordt gevormd, dan leidt het uitvoeren van de Fragmenten van de Ervaring naar Doel in verkeerde aanbiedingstypes die worden gecreeerd. In plaats van het type &quot;Experience Fragment&quot;/bron &quot;Adobe Experience Manager&quot; maakt Target verschillende aanbiedingen met het type &quot;HTML&quot;/source &quot;Adobe Target Classic&quot;.
    * `com.adobe.granite.maintenance.impl.TaskScheduler`: Geen onderhoudsvensters gevonden bij graniet/bediening/onderhoud.
    * De adaptieve servervalidatie van het formulier mislukt wanneer statistische functies zoals SUM, MAX en MIN worden gebruikt. CQ-4274424
    * `com.adobe.granite.maintenance.impl.TaskScheduler` - Geen onderhoudsvensters gevonden bij graniet/bediening/onderhoud.
-   * Hotspot in een Dynamic Media-interactieve afbeelding is niet zichtbaar wanneer u een voorvertoning van het element weergeeft via de Shopable Banner-viewer.
+   * Hotspot in een interactieve afbeelding voor dynamische media is niet zichtbaar wanneer u een voorvertoning van het element weergeeft via de Shopable Banner-viewer.
 
 ## OSGi-bundels en inhoudspakketten inbegrepen {#osgi-bundles-and-content-packages-included}
 

@@ -12,7 +12,7 @@ ht-degree: 99%
 
 # Snelgids voor WCAG 2.1{#quick-guide-to-wcag}
 
-Adobe Experience Manager (AEM) is ontwikkeld om de naleving van de Web Content Accessibility Guidelines te maximaliseren.
+Adobe Experience Manager (AEM) is ontwikkeld om maximale overeenstemming met de Web Content Accessibility Guidelines te bereiken.
 
 De [Web Content Accessibility Guidelines (WCAG) versie 2.1](https://www.w3.org/TR/WCAG/) zijn een reeks internationaal erkende richtlijnen die door het [World Wide Web Consortium (W3C)](https://www.w3.org/) in het kader van hun [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/) zijn ontwikkeld.
 
@@ -43,7 +43,8 @@ Met andere woorden, richtlijnen die kunnen worden toegepast op verschillende web
 Elke richtlijn is zodanig opgesteld dat het op objectieve manier kan worden getest om te garanderen dat een groep toegankelijkheidsdeskundigen het er in het algemeen over eens is dat aan de richtlijn is voldaan. Een van de uitdagingen van toegankelijkheidsrichtlijnen is dat sommige richtlijnen technisch getest kunnen worden, terwijl andere vereisen dat mensen oordelen of de richtlijn al dan niet succesvol is nageleefd.
 
 * **Prioritaire en contextafhankelijke implementatie ondersteunen:**
-De richtlijnen van WCAG 2.1 krijgen een prioriteitsniveau en hebben betrekking op de mogelijke gevolgen van het niet volgen van een richtlijn voor een bepaalde groep gebruikers met een handicap. Op die manier kunnen auteurs een geïnformeerde beslissing nemen over de belangrijkste richtlijnen voor hun specifieke situatie. Daarnaast wordt het concept van *ondersteunde toegankelijkheid* geïntroduceerd. Op deze manier kunnen auteurs beslissen hoe ze webtechnologieën die mogelijk geen volledige toegankelijkheidsondersteuning bieden, het beste kunnen gebruiken, of van gebruikers verlangen dat ze over specifieke ondersteunende technologische hulpmiddelen en/of browsers beschikken om te kunnen profiteren van toegankelijkheidsfuncties.
+De richtlijnen van WCAG 2.1 krijgen een prioriteitsniveau en hebben betrekking op de mogelijke gevolgen van het niet volgen van een richtlijn voor een bepaalde groep gebruikers met een handicap. Op die manier kunnen auteurs een geïnformeerde beslissing nemen over de belangrijkste richtlijnen voor hun specifieke situatie. Daarnaast wordt het begrip 
+*ondersteuning van toegankelijkheid* geïntroduceerd. Op deze manier kunnen auteurs beslissen hoe ze webtechnologieën die mogelijk geen volledige toegankelijkheidsondersteuning bieden, het beste kunnen gebruiken, of van gebruikers verlangen dat ze over specifieke ondersteunende technologische hulpmiddelen en/of browsers beschikken om te kunnen profiteren van toegankelijkheidsfuncties.
 
 Deze doelstellingen hebben de structuur van WCAG 2.1 aanzienlijk beïnvloed.
 

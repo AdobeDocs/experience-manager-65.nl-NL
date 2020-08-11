@@ -10,7 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: a0e5491e-66bc-47b0-94a5-45a02bc558da
 translation-type: tm+mt
-source-git-commit: 62f2a11491e427a13cecae75c225ed41a44783cd
+source-git-commit: 0051791da06d15a48b82cf93164a89b4ea42ce98
+workflow-type: tm+mt
+source-wordcount: '211'
+ht-degree: 0%
 
 ---
 
@@ -27,19 +30,20 @@ Ga voor de benodigde informatie naar [Community Components Basics](basics.md).
 
 Wanneer de [vereiste client-side bibliotheken](rating-basics.md#essentials-for-client-side) worden opgenomen, wordt de `Rating` component op deze manier weergegeven.
 
-![chlimage_1-493](assets/chlimage_1-493.png)
+![beoordeling](assets/rating.png)
 
 ## Classificatie configureren {#configuring-rating}
 
 Selecteer de geplaatste `Rating` component die u wilt openen en selecteer het `Configure` pictogram waarmee het dialoogvenster Bewerken wordt geopend.
 
-![chlimage_1-494](assets/chlimage_1-494.png)
+![configure-new](assets/configure-new.png)
 
-Onder het tabblad **[!UICONTROL Teksten en labels]** geeft u de interne id voor de waardering op.
+Onder het **[!UICONTROL Texts & Labels]** lusje specificeert u het interne herkenningsteken voor de Classificatie.
 
-![chlimage_1-495](assets/chlimage_1-495.png)
+![tallyname](assets/tallyname.png)
 
-**[!UICONTROL Tally Name]**(*Required*) Een eenvoudige naam voor `Rating`welke uniek dit geval identificeert. Moet een geldige knooppuntnaam voor de bewaarplaats zijn.
+**[!UICONTROL Tally Name]**
+(*Vereist*) Een eenvoudige naam voor de instantie `Rating` die dit exemplaar uniek identificeert. Moet een geldige knooppuntnaam voor de bewaarplaats zijn.
 
 ## Ervaring met sitebezoekers {#site-visitor-experience}
 

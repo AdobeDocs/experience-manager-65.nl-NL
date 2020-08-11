@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: fde053ff-b671-456b-869c-81f16ea1f1be
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 62f2a11491e427a13cecae75c225ed41a44783cd
+source-git-commit: 0051791da06d15a48b82cf93164a89b4ea42ce98
+workflow-type: tm+mt
+source-wordcount: '601'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: 62f2a11491e427a13cecae75c225ed41a44783cd
 
 ## Overzicht {#overview}
 
-Voor AEM-gemeenschappen zijn er verschillende rapporten die op verschillende manieren toegankelijk zijn vanuit de auteursomgeving.
+Voor AEM Communities zijn er diverse rapporten die op verschillende manieren toegankelijk zijn vanuit de auteursomgeving.
 
 In het algemeen zijn de verschillende verslagen:
 
@@ -44,27 +47,27 @@ Rapporten in tabelvorm kunnen worden geëxporteerd in de .csv-indeling voor verd
 
 ### Verslagen voor communautaire sites {#reports-for-community-sites}
 
-* Vanuit globale navigatie: **[!UICONTROL Navigation]** > **[!UICONTROL Communities]** > **[!UICONTROL Reports]**
+* Vanuit globale navigatie: **[!UICONTROL Navigation]** > **[!UICONTROL Communities]** >  **[!UICONTROL Reports]**
 
 * Kies uit:
 
-   * **[!UICONTROL Toewijzingsrapport]**
+   * **[!UICONTROL Assignments Report]**
 
       * Genereer een rapport voor de geselecteerde Community Site, Gebruiker of Groep en Toewijzing.
-   * **[!UICONTROL Post Report]**
+   * **[!UICONTROL Posts Report]**
 
       * Genereer een rapport voor een geselecteerde Community Site, Type inhoud en Tijdsperiode.
-   * **[!UICONTROL Rapport Weergaven]**
+   * **[!UICONTROL Views Report]**
 
       * een rapport genereren voor een geselecteerde Community Site, Type inhoud en Tijdsperiode.
 
 
 
-![chlimage_1-236](assets/chlimage_1-236.png)
+![rapporten](assets/reports1.png)
 
 ### Rapporten voor Middelen Enablement en het Leren Wegen {#reports-for-enablement-resources-and-learning-paths}
 
-* Vanuit globale navigatie: **[!UICONTROL Navigation]** > **[!UICONTROL Communities]** > **[!UICONTROL Resources]**
+* Vanuit globale navigatie: **[!UICONTROL Navigation]** > **[!UICONTROL Communities]** >  **[!UICONTROL Resources]**
 
 * Selecteer een bestaande community-site voor activering:
 
@@ -93,7 +96,7 @@ Met de toewijzingsconsole kunnen rapporten worden gefilterd door de communitysit
 
 Het verslag bevat informatie over de voortgang van de activiteiten en eventuele opmerkingen of beoordelingen.
 
-![chlimage_1-237](assets/chlimage_1-237.png)
+![toewijzingsrapport](assets/assignment-report.png)
 
 Selecteer de criteria voor het rapport:
 
@@ -104,6 +107,7 @@ Selecteer de criteria voor het rapport:
 * **Gebruiker of groep**
    * Selecteer Gebruiker om een rapport voor één student te genereren.
    * Selecteer Groep om een rapport voor een groep studenten te genereren.
+
    De tunneldienst zal tot leden en lidgroepen van het publicatiemilieu toegang hebben.
 
 * **Toewijzen**
@@ -112,13 +116,13 @@ Selecteer de criteria voor het rapport:
 
 Selecteer **Genereer** om het rapport te maken:
 
-![chlimage_1-238](assets/chlimage_1-238.png)
+![genereren](assets/generate-assignment-report.png)
 
 ## Rapport Weergaven {#views-report}
 
 Met de weergaveconsole kunnen rapporten gedurende een bepaalde periode worden gegenereerd op paginaweergaven door een of meer algemene functies.
 
-![chlimage_1-239](assets/chlimage_1-239.png)
+![view-report](assets/view-report.png)
 
 Selecteer de criteria voor het rapport:
 
@@ -126,11 +130,11 @@ Selecteer de criteria voor het rapport:
 
    Selecteer een communitysite.
 
-* **[!UICONTROL Inhoudstype]**
+* **[!UICONTROL Content Type]**
 
    Kan Alle inhoud kiezen of een van de functies op de site selecteren.
 
-* **[!UICONTROL Tijdskader]**
+* **[!UICONTROL Time frame]**
 
    Selecteer een van de volgende opties:
 
@@ -139,15 +143,15 @@ Selecteer de criteria voor het rapport:
    * Laatste 90 dagen
    * Vorig jaar
 
-Selecteer **[!UICONTROL Genereer]** om het rapport te maken.
+Selecteer **[!UICONTROL Generate]** om het rapport te maken.
 
-![chlimage_1-240](assets/chlimage_1-240.png)
+![genereren, weergaven](assets/generate-views.png)
 
 ## Post Report {#posts-report}
 
 Met de Post-console kunnen rapporten gedurende een bepaalde periode worden gegenereerd op het aantal posten voor een of meer algemene functies.
 
-![chlimage_1-241](assets/chlimage_1-241.png)
+![verslag](assets/posts-report.png)
 
 Selecteer de criteria voor het rapport:
 
@@ -155,11 +159,11 @@ Selecteer de criteria voor het rapport:
 
    Selecteer een communitysite.
 
-* **[!UICONTROL Inhoudstype]**
+* **[!UICONTROL Content Type]**
 
    Kan Alle inhoud kiezen of een van de functies op de site selecteren.
 
-* **[!UICONTROL Tijdskader]**
+* **[!UICONTROL Time frame]**
 
    Selecteer een van de volgende opties:
 
@@ -168,15 +172,15 @@ Selecteer de criteria voor het rapport:
    * Laatste 90 dagen
    * Vorig jaar
 
-Selecteer **[!UICONTROL Genereer]** om het rapport te maken.
+Selecteer **[!UICONTROL Generate]** om het rapport te maken.
 
-![chlimage_1-242](assets/chlimage_1-242.png)
+![genereren](assets/generate-posts-report.png)
 
 ## Problemen oplossen {#troubleshooting}
 
 ### Geen community-sites vermeld {#no-community-sites-listed}
 
-Als er geen communitysites worden vermeld, controleert u of Adobe Analytics is ingeschakeld voor een site. Als u rapporten over toewijzingen kiest, moet u ervoor zorgen dat de toewijzingsfunctie zich in de structuur van de gemeenschapssite bevindt.
+Als er geen community-sites worden vermeld, moet u ervoor zorgen dat Adobe Analytics is ingeschakeld voor een site. Als u rapporten over toewijzingen kiest, moet u ervoor zorgen dat de toewijzingsfunctie zich in de structuur van de gemeenschapssite bevindt.
 
 ### Rapporten worden niet weergegeven in een instantie van AEM-auteur {#reports-do-not-show-in-aem-author-instance}
 

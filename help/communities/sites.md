@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 202d7dba-2b34-431d-b10f-87775632807f
 translation-type: tm+mt
-source-git-commit: 89156f94f2d0494d44d4f0b99abfba4fafbc66d3
+source-git-commit: 6ab91667ad668abf80ccf1710966169b3a187928
+workflow-type: tm+mt
+source-wordcount: '449'
+ht-degree: 0%
 
 ---
 
@@ -28,11 +31,11 @@ De console van de Malplaatjes van de Plaats is zeer gelijkaardig aan de console 
 
 In het auteursmilieu, om de console van communautaire plaatsen te bereiken:
 
-* Vanuit globale navigatie: **[!UICONTROL Gereedschappen > Gemeenschappen > Sitesjablonen]**
+* Vanuit globale navigatie: **[!UICONTROL Tools > Communities > Site Templates]**
 
 Deze console toont de malplaatjes waarvan een [communautaire plaats](sites-console.md) kan worden gecreeerd en laat nieuwe plaatssjablonen toe om worden gecreeerd.
 
-![chlimage_1-18](assets/chlimage_1-18.png)
+![site-sjabloon](assets/site-template.png)
 
 ## Sitesjabloon maken {#create-site-template}
 
@@ -42,31 +45,31 @@ Hiermee wordt het deelvenster Site-editor weergegeven met drie subdeelvensters:
 
 ### Basisinformatie {#basic-info}
 
-![chlimage_1-19](assets/chlimage_1-19.png)
+![site-template-basicinfo](assets/site-template-basicinfo.png)
 
 In het deelvenster Basisinformatie worden een naam, beschrijving en of de sjabloon is ingeschakeld of uitgeschakeld, geconfigureerd:
 
-* **[!UICONTROL Sjabloonnaam communautaire site]**
+* **[!UICONTROL Community Site Template Name]**
 
    De naam-id van de sjabloon.
 
-* **[!UICONTROL Beschrijving van sjabloon communautaire site]**
+* **[!UICONTROL Community Site Template Description]**
 
    De sjabloonbeschrijving.
 
-* **[!UICONTROL Uitgeschakeld/Ingeschakeld]**
+* **[!UICONTROL Disabled/Enabled]**
 
    Een schakeloptie die bepaalt of naar de sjabloon kan worden verwezen.
 
 ### Miniatuur {#thumbnail}
 
-![chlimage_1-20](assets/chlimage_1-20.png)
+![siteminiatuur](assets/site-thumbnail.png)
 
 (Optioneel) Selecteer het pictogram Afbeelding uploaden om een miniatuur met de naam en beschrijving weer te geven aan makers van gemeenschapssites.
 
 ### Structuur {#structure}
 
-![chlimage_1-21](assets/chlimage_1-21.png)
+![sitestructuur](assets/site-structure.png)
 
 Als u communityfuncties wilt toevoegen, sleept u van de rechterkant naar links in de volgorde waarin de koppelingen in het sitemenu moeten worden weergegeven. Stijlen worden toegepast op de sjabloon tijdens het maken van de site.
 
@@ -83,7 +86,7 @@ De paginafunctie biedt een lege pagina. De groepsfunctie biedt de mogelijkheid o
 >Alle andere functies, zoals de [paginafunctie](functions.md#page-function), moeten worden opgenomen en als eerste worden vermeld.
 
 
-![chlimage_1-22](assets/chlimage_1-22.png)
+![site-editor](assets/site-editor.png)
 
 ### Groepsjablonen voor groepfuncties {#group-templates-for-groups-function}
 
@@ -94,11 +97,11 @@ Wanneer het omvatten van een groepsfunctie in het plaatssjabloon, vereist de con
 >De functie Groepen mag *niet* de *eerste of de enige* functie in de sitestructuur zijn.
 
 
-![chlimage_1-23](assets/chlimage_1-23.png)
+![locatiefuncties](assets/site-functions.png)
 
 Door twee of meer groepsmalplaatjes te selecteren, wordt een keus verstrekt aan de groepsbeheerder wanneer eigenlijk het creëren van een nieuwe groep in de gemeenschap.
 
-![chlimage_1-24](assets/chlimage_1-24.png)
+![plaatsfunctie](assets/site-functions1.png)
 
 ## Sitesjabloon bewerken {#edit-site-template}
 

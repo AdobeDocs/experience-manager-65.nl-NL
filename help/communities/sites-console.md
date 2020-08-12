@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 4130f952-5bb5-4e32-91d6-47b2885b30a4
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 89156f94f2d0494d44d4f0b99abfba4fafbc66d3
+source-git-commit: e49acbc042d84ae970058b4e99ab6f980866db5a
+workflow-type: tm+mt
+source-wordcount: '3290'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +28,7 @@ De console van de Plaatsen van Gemeenschappen verleent toegang tot:
 * Sitebeheer
 * [Geneste groepen](/help/communities/groups.md) maken en bewerken (subgemeenschappen)
 
-Zie [Aan de slag met AEM-gemeenschappen](/help/communities/getting-started.md) om te zien hoe snel een gemeenschapssite kan worden gemaakt in de auteursomgeving en hoe u groepen van gemeenschappen kunt maken vanuit de auteur- en publicatieomgeving.
+Zie [Aan de slag met AEM Communities](/help/communities/getting-started.md) om te zien hoe snel een communitysite kan worden gemaakt in de ontwerpomgeving en hoe u communitygroepen kunt maken van de auteur- en publicatieomgevingen.
 
 >[!NOTE]
 >
@@ -44,7 +47,7 @@ Voordat u een community-site maakt, moet u *het volgende doen* :
 De beste praktijken, om ervoor te zorgen de plaats bereid is om vele eigenschappen te steunen, moeten de volgende stappen nemen:
 
 * Installeer het [nieuwste functiepakket](/help/communities/deploy-communities.md#latestfeaturepack).
-* Schakel [Adobe Analytics](/help/communities/analytics.md) voor AEM-gemeenschappen in.
+* Schakel [Adobe Analytics](/help/communities/analytics.md) in voor AEM Communities.
 * E- [mail configureren](/help/communities/email.md)
 * Identificeer [communautaire beheerders](/help/communities/users.md#creating-community-members).
 * [Schakel de OAuth-handler](/help/communities/social-login.md#adobe-granite-oauth-authentication-handler) in voor aanmelden bij een sociaal netwerk.
@@ -63,7 +66,7 @@ Als u toegang wilt krijgen tot een bestaande communitysite, ten behoeve van het 
 
 In de volgende afbeelding ziet u bijvoorbeeld de hoofdconsole van Communitysites met de mappen voor twee communitysites: [inschakelen](/help/communities/getting-started-enablement.md) en [inschakelen](/help/communities/getting-started.md):
 
-![chlimage_1-154](assets/chlimage_1-154.png)
+![site-console](assets/site-console.png)
 
 ## Site maken {#site-creation}
 
@@ -128,7 +131,7 @@ Het deelvenster Ontwerp bevat twee subdeelvensters voor het selecteren van het t
 
 ![sitethema](assets/sitetheme.png)
 
-Het framework gebruikt [Twitter Bootstrap](https://twitterbootstrap.org/) om de site een responsief, flexibel ontwerp te geven. U kunt een van de vele vooraf geladen Bootstrap-thema&#39;s selecteren om de geselecteerde communitysitesjabloon op te maken of u kunt een Bootstrap-thema uploaden.
+Het framework gebruikt [Twitter Bootstrap](https://twitterbootstrap.org/) om de site responsief en flexibel te ontwerpen. U kunt een van de vele vooraf geladen Bootstrap-thema&#39;s selecteren om de stijl van de geselecteerde communitysitesjabloon te bepalen of u kunt een Bootstrap-thema uploaden.
 
 Als deze optie is geselecteerd, wordt het thema bedekt met een ondoorzichtig blauw vinkje.
 
@@ -136,7 +139,7 @@ Nadat de communitysite is gepubliceerd, kunt u de eigenschappen [](#modifying-si
 
 #### COMMUNAUTAIRE SITOBRANDING {#community-site-branding}
 
-![chlimage_1-155](assets/chlimage_1-155.png)
+![branding van sites](assets/site-branding.png)
 
 De branding van de communautaire plaats is een beeld dat als kopbal over de bovenkant van elke pagina wordt getoond.
 
@@ -228,7 +231,7 @@ Laat de optie voor een *privésite* van de community uitgeschakeld. De optie Sta
 
 #### TAGGING {#tagging}
 
-![chlimage_1-156](assets/chlimage_1-156.png)
+![sitetags](assets/site-tagging.png)
 
 De tags die kunnen worden toegepast op community-inhoud, worden beheerd door de tagnaamruimten te selecteren die eerder zijn gedefinieerd via de [tagconsole](/help/sites-administering/tags.md#tagging-console).
 
@@ -262,7 +265,7 @@ Het zoeken naar leden van een community is eenvoudig met &#39;type-ahead&#39;-zo
 
 #### MODERING {#moderation}
 
-![chlimage_1-157](assets/chlimage_1-157.png)
+![modernisering van de locatie](assets/site-moderation.png)
 
 De globale instelling voor het modereren van door gebruikers gegenereerde inhoud (UGC) wordt door deze instellingen beheerd. Individuele componenten hebben extra montages om matiging te controleren.
 
@@ -276,14 +279,14 @@ De globale instelling voor het modereren van door gebruikers gegenereerde inhoud
 
 #### ANALYSE {#analytics}
 
-![chlimage_1-158](assets/chlimage_1-158.png)
+![locatieanalyse](assets/site-analytics.png)
 
 * **Analyse inschakelen**
 
-   Deze optie is alleen beschikbaar wanneer Adobe Analytics is [geconfigureerd](/help/communities/analytics.md) voor communautaire functies.
+   Alleen beschikbaar wanneer Adobe Analytics is [geconfigureerd](/help/communities/analytics.md) voor functies van Communities.
 De optie Standaard is uitgeschakeld. Als deze optie is ingeschakeld, wordt een extra selectiemenu weergegeven:
 
-![chlimage_1-159](assets/chlimage_1-159.png)
+![voor locatieanalyse](assets/site-analytics-enable.png)
 
 * **Verwijzing naar Cloud Config Framework**
 
@@ -292,13 +295,13 @@ De optie Standaard is uitgeschakeld. Als deze optie is ingeschakeld, wordt een e
 
 #### VERTALING {#translation}
 
-![chlimage_1-160](assets/chlimage_1-160.png)
+![site-vertaling](assets/site-translation.png)
 
 * **Machinevertaling toestaan**
 
-   Als deze optie is ingeschakeld (de standaardinstelling is uitgeschakeld), wordt automatische omzetting ingeschakeld voor UGC binnen de site. Dit heeft geen invloed op andere inhoud, zoals pagina-inhoud, zelfs niet als de site is ingesteld als een meertalige site. Zie Door gebruiker gegenereerde inhoud [](/help/communities/translate-ugc.md) vertalen voor informatie over het configureren van een gelicentieerde vertaalservice voor AEM-gemeenschappen. Zie Inhoud [vertalen voor meertalige sites](/help/sites-administering/translation.md) voor een volledig overzicht.
+   Als deze optie is ingeschakeld (de standaardinstelling is uitgeschakeld), wordt automatische omzetting ingeschakeld voor UGC binnen de site. Dit heeft geen invloed op andere inhoud, zoals pagina-inhoud, zelfs niet als de site is ingesteld als een meertalige site. Zie Door gebruiker gegenereerde inhoud [](/help/communities/translate-ugc.md) vertalen voor informatie over het configureren van een vertaalservice met licentie voor AEM Communities. Zie Inhoud [vertalen voor meertalige sites](/help/sites-administering/translation.md) voor een volledig overzicht.
 
-![chlimage_1-161](assets/chlimage_1-161.png)
+![allow-machine-translatie](assets/allow-machine-translation.png)
 
 * **Machine Translation inschakelen voor geselecteerde talen**
 
@@ -353,13 +356,13 @@ Standaard is *geselecteerd*.
 
 #### UITSCHAKELING {#enablement}
 
-![chlimage_1-162](assets/chlimage_1-162.png)
+![locatienablement](assets/site-enablement.png)
 
 De `ENABLEMENT`montages zijn van toepassing wanneer het gekozen malplaatje van de communautaire plaats de [toewijzingsfunctie](/help/communities/functions.md#assignments-function)omvat, die beschikbaar is wanneer de enablement eigenschappen vergunning en [gevormd](/help/communities/enablement.md)zijn. De verwijzingsplaatssjabloon die de toewijzingsfunctie omvat is `Reference Structured Learning Site Template.`
 
 * **Enablement Managers**(Vereist) Slechts zijn de leden van de `Community Enablementmanagers` groep beschikbaar om worden geselecteerd om deze enablement gemeenschap te beheren. Enablement managers zijn verantwoordelijk voor het toewijzen van leden aan bronnen. Zie ook Gebruikers en gebruikersgroepen [beheren](/help/communities/users.md).
 
-* **Org-id marketingcloud**
+* **Org-id Marketing Cloud**
 
    (optioneel) De id voor een [Video Heartbone Analytics](/help/communities/analytics.md#video-heartbeat-analytics) -licentie.
 
@@ -378,25 +381,23 @@ Nadat de site is gemaakt:
 * Het onbruikbaar maken van het malplaatje van de communautaire plaats zal niet de gecreeerde communautaire plaats beïnvloeden.
 * Het is mogelijk om de [STRUCTUUR](#modify-structure) van een communautaire plaats uit te geven door zijn eigenschappen te wijzigen.
 
-![chlimage_1-163](assets/chlimage_1-163.png)
+![site maken](assets/create-site1.png)
 
 Wanneer het proces is voltooid, wordt de map voor de nieuwe site weergegeven in de console Communitysites, waar auteurs pagina-inhoud kunnen toevoegen of waar beheerders de eigenschappen van de site kunnen wijzigen.
 
-![chlimage_1-164](assets/chlimage_1-164.png)
+![modify-site-property](assets/modify-site-property.png)
 
 Als u een communitysite wilt wijzigen, selecteert u de projectmap om deze te openen:
 
-![site-1](assets/siteactions-1.png)
+![project](assets/site-project.png)
 
 Wanneer u de muisaanwijzer op een site of een sitekaart plaatst, worden pictogrammen weergegeven waarmee u de site kunt [bewerken in de ontwerpmodus](#authoring-site-content), de site-eigenschappen kunt [openen voor wijziging](#modifying-site-properties), de site [kunt](#publishing-the-site)publiceren, de site [kunt](#exporting-the-site)exporteren en de site [kunt](#deleting-the-site)verwijderen.
 
 ## Site-inhoud ontwerpen {#authoring-site-content}
 
-![chlimage_1-165](assets/chlimage_1-165.png)
+De inhoud van een site kan met dezelfde gereedschappen worden gemaakt als elke andere AEM website. Als u de site wilt openen voor ontwerpen, selecteert u het `Open Site` pictogram dat wordt weergegeven wanneer u de muis op de site plaatst. De site wordt op een nieuw tabblad geopend, zodat de console Communitysites toegankelijk blijft.
 
-De inhoud van een site kan met dezelfde gereedschappen worden gemaakt als elke andere AEM-website. Als u de site wilt openen voor ontwerpen, selecteert u het `Open Site` pictogram dat wordt weergegeven wanneer u de muis op de site plaatst. De site wordt op een nieuw tabblad geopend, zodat de console Communitysites toegankelijk blijft.
-
-![chlimage_1-166](assets/chlimage_1-166.png)
+![site-inhoud](assets/site-content.png)
 
 >[!NOTE]
 >
@@ -405,13 +406,13 @@ De inhoud van een site kan met dezelfde gereedschappen worden gemaakt als elke a
 
 ## Site-eigenschappen wijzigen {#modifying-site-properties}
 
-![chlimage_1-167](assets/chlimage_1-167.png)
+![site bewerken](assets/edit-site.png)
 
 De eigenschappen van een bestaande site die tijdens het maken van de site zijn opgegeven, kunnen worden gewijzigd door het `Edit Site`pictogram te selecteren dat met de muis op de site wordt weergegeven.
 
-`Details of the following properties match the descriptions provided in the` Sectie [Site maken](#site-creation) .
+`Details of the following properties match the descriptions provided in the` [Sectie Site maken](#site-creation) .
 
-![chlimage_1-168](assets/chlimage_1-168.png)
+![modify-site-basicinfo](assets/modify-site-basicinfo.png)
 
 ### Basis wijzigen {#modify-basic}
 
@@ -467,7 +468,7 @@ Als u bijvoorbeeld de naam van de URL wijzigt, wordt de bestaande UGC niet verpl
 
 #### Voorbeeld: Een catalogusfunctie toevoegen aan een community-sitestructuur {#example-adding-a-catalog-function-to-a-community-site-structure}
 
-![chlimage_1-169](assets/chlimage_1-169.png)
+![add-catalog-site](assets/add-catalog-site.png)
 
 ### Ontwerp wijzigen {#modify-design}
 
@@ -503,11 +504,11 @@ Zie de beschrijving van [ENABLEMENT](#enablement) .
 
 Nadat een communitysite net is gemaakt of gewijzigd, is het mogelijk om de site te publiceren (activeren) door het `Publish Site` pictogram te selecteren dat wordt weergegeven wanneer u de muisaanwijzer op de site plaatst.
 
-![chlimage_1-170](assets/chlimage_1-170.png)
+![publicatiesite](assets/publish-site.png)
 
 Er verschijnt een indicatie nadat de site is gepubliceerd.
 
-![chlimage_1-171](assets/chlimage_1-171.png)
+![op de site gepubliceerd](assets/site-published.png)
 
 ### Publiceren met geneste groepen {#publishing-with-nested-groups}
 
@@ -515,7 +516,7 @@ Na het publiceren van een communautaire plaats, is het noodzakelijk om elke subc
 
 ## De site exporteren {#exporting-the-site}
 
-![chlimage_1-172](assets/chlimage_1-172.png)
+![exportlocatie](assets/export-site.png)
 
 Selecteer het exportpictogram als u de muisaanwijzer op de site plaatst, om een pakket van de communitysite te maken dat zowel in [pakketbeheer](/help/sites-administering/package-manager.md) wordt opgeslagen als wordt gedownload.
 
@@ -558,7 +559,7 @@ Standaard leidt een communitysite naar een voorbeeld van een aanmeldingspagina a
 
 Om correct om te leiden, zodra een plaats is gevormd en ertoe aangezet om te publiceren, voltooi deze stappen om authentificatiemislukking te krijgen om aan de communautaire plaats om te leiden:
 
-* Op elk publicatieexemplaar van AEM.
+* Op elke AEM-publicatie-instantie.
 * Meld u aan met beheerdersrechten.
 * Open de [webconsole](/help/sites-deploying/configuring-osgi.md).
 
@@ -575,11 +576,11 @@ Om correct om te leiden, zodra een plaats is gevormd en ertoe aangezet om te pub
 
 * Selecteer **Opslaan**.
 
-![chlimage_1-173](assets/chlimage_1-173.png)
+![auth-error](assets/auth-error.png)
 
 ### Omleiding van verificatie testen {#test-authentication-redirection}
 
-Op zelfde AEM publiceert instantie die met een login paginaplaat voor de communautaire plaats wordt gevormd:
+Op zelfde AEM publiceer instantie die met een login paginaplaat voor de communautaire plaats wordt gevormd:
 
 * Blader naar de homepage van de website van de community.
 
@@ -590,7 +591,7 @@ Op zelfde AEM publiceert instantie die met een login paginaplaat voor de communa
 * Voer duidelijk onjuiste gegevens in, zoals gebruikersnaam &quot;x&quot; en wachtwoord &quot;x&quot;.
 * De aanmeldingspagina moet worden weergegeven met de fout &quot;Ongeldige aanmelding&quot;.
 
-![chlimage_1-174](assets/chlimage_1-174.png)
+![testverificatie](assets/test-authentication.png)
 
 ## Toegang tot communitysites vanuit de hoofdsiteconsole {#accessing-community-sites-from-main-sites-console}
 
@@ -598,5 +599,7 @@ Vanuit de globale console van navigatiesites bevinden de communitysites zich in 
 
 Terwijl het mogelijk is om tot een communautaire plaats op deze manier, voor administratieve taken toegang te hebben, zou de communautaire plaats van de console van de Plaatsen van Gemeenschappen moeten worden betreden.
 
-![chlimage_1-175](assets/chlimage_1-175.png)
+![toegangs-plaats](assets/access-site.png)
+
+
 

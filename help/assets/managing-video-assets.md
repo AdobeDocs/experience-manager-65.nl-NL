@@ -3,7 +3,7 @@ title: Video-elementen beheren in [!DNL Adobe Experience Manager].
 description: Video-elementen uploaden, voorvertonen, notities aanbrengen en publiceren in [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 9e67e252348f471c052f6c3e88aea61d7a309241
 workflow-type: tm+mt
 source-wordcount: '732'
 ht-degree: 7%
@@ -15,7 +15,7 @@ ht-degree: 7%
 
 De video-indeling is een essentieel onderdeel van digitale middelen van een organisatie. [!DNL Adobe Experience Manager] biedt geavanceerde aanbiedingen en functies om de volledige levenscyclus van uw video-elementen te beheren nadat deze zijn gemaakt.
 
-Leer hoe u de video-elementen in beheert en bewerkt [!DNL Adobe Experience Manager Assets]. Raadpleeg ook de documentatie bij [!DNL Dynamic Media]video over [](/help/assets/video.md)Dynamic Media als u een gebruikslicentie hebt.
+Leer hoe u de video-elementen in beheert en bewerkt [!DNL Adobe Experience Manager Assets]. Raadpleeg ook de documentatie bij [!DNL Dynamic Media]video over [](/help/assets/video.md)dynamische media als u een gebruikslicentie hebt.
 
 ## Video-elementen uploaden en voorvertonen {#upload-and-preview-video-assets}
 
@@ -36,7 +36,7 @@ Standaard kunt u [!DNL Assets] geen elementen uploaden die groter zijn dan 2 GB 
 Wijzig naast de [!DNL Assets] configuratie de volgende configuraties om grote elementen te uploaden:
 
 * Verhoog de vervaltijd van het token. Zie [!UICONTROL Adobe Granite CSRF Servlet] in webconsole op `https://[aem_server]:[port]/system/console/configMgr`. Zie [CSRF-bescherming](/help/sites-developing/csrf-protection.md)voor meer informatie.
-* Verhoog de `receiveTimeout` Dispatcher-configuratie. Voor meer informatie, zie de configuratie [van](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options)Experience Manager Dispatcher.
+* Verhoog de `receiveTimeout` configuratie van Dispatcher. Voor meer informatie, zie de configuratie [van de Verzender van de](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options)Experience Manager.
 
 >[!NOTE]
 >
@@ -79,7 +79,7 @@ Na publicatie kunt u de video-elementen in een webpagina opnemen als een URL of 
 
    Klik op de knop **[!UICONTROL Close]** om de wizard Annotatie af te sluiten.
 
-1. Zoek naar een specifiek punt in de video, geef de tijd in seconden op in het veld voor **tekst** en klik op **Springen**. Als u bijvoorbeeld de eerste 10 seconden van de video wilt overslaan, voert u 20 in het tekstveld in.
+1. Zoek naar een specifiek punt in de video, geef de tijd in seconden op in het veld voor **tekst** en klik op **Springen**. Als u bijvoorbeeld de eerste 20 seconden van de video wilt overslaan, voert u 20 in het tekstveld in.
 
    ![Hiermee wordt naar een tijd in een video gezocht om met opgegeven seconden over te slaan](assets/seek-in-video.png)
 

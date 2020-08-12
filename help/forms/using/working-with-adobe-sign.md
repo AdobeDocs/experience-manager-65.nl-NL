@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e562ffe229543a1ee93467bcbc1a7be6c12927c6
+source-git-commit: d1361296ee0161c36061543459056c25ebef0e97
 workflow-type: tm+mt
-source-wordcount: '3574'
+source-wordcount: '3770'
 ht-degree: 0%
 
 ---
@@ -160,7 +160,7 @@ Voer de volgende stappen uit om een cloudservice en de volgorde van ondertekenin
 
    Als de lijst van de Cloud Service **van** Adobe Sign leeg is, volg Adobe Sign met het artikel van AEM Forms [van de](../../forms/using/adobe-sign-integration-adaptive-forms.md) Vorm om de dienst te vormen.
 
-1. Selecteer de handtekeningvolgorde in het dialoogvenster **Ondertekenaars kunnen ondertekenen** . Adobe Sign-zangers kunnen een adaptief formulier **opeenvolgend** ondertekenen - een voor een andere ondertekenaar of **tegelijkertijd** - in willekeurige volgorde.
+1. Selecteer de handtekeningvolgorde in het dialoogvenster **Ondertekenaars kunnen ondertekenen** . Adobe Sign-zangers kunnen een adaptief formulier **achtereenvolgens** ondertekenen - een voor een andere ondertekenaar of **tegelijkertijd** - in elke willekeurige volgorde.
 
    Eén ondertekenaar ontvangt het formulier voor ondertekening achtereenvolgens in de volgorde. Nadat een ondertekenaar het ondertekenen van het document heeft voltooid, wordt het formulier verzonden naar de volgende ondertekenaar, enzovoort.
 
@@ -304,12 +304,16 @@ De ervaring voor het ondertekenen van formulieren is nu gereed. U kunt een voorb
 
 ## Veelgestelde vragen {#frequently-asked-questions}
 
+**V:** U kunt een adaptief formulier insluiten in een ander adaptief formulier. Kan het ingesloten adaptieve formulier Adobe Sign inschakelen?
 **Ans:** Nee, AEM Forms biedt geen ondersteuning voor het gebruik van een adaptief formulier waarmee een adaptief formulier dat geschikt is voor Adobe Sign, wordt ingesloten voor ondertekening
 
+**V:** Wanneer ik een adaptief formulier maak met de geavanceerde sjabloon en dit open voor bewerking, wordt het foutbericht &quot;Elektronische handtekening of Ondertekenaars zijn niet correct geconfigureerd&quot; weergegeven. wordt weergegeven. Hoe kan ik het foutbericht oplossen?
 **Ans:** Adaptief formulier dat is gemaakt met de geavanceerde sjabloon is geconfigureerd voor gebruik van Adobe Sign. U lost de fout op door een Adobe Sign-cloudconfiguratie te maken en te selecteren en een Adobe Sign-ondertekenaar voor het aangepaste formulier te configureren.
 
+**V:** Kan ik Adobe Sign-tekstcodes gebruiken in een statisch tekstonderdeel van een adaptief formulier?
 **Ans:** Ja, u kunt tekstcodes in een tekstcomponent gebruiken om Adobe Sign-velden toe te voegen aan een [Document of Record](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) (alleen automatisch gegenereerd document met de optie Opnemen) voor adaptief formulier. Zie [Adobe Sign-documentatie](https://helpx.adobe.com/sign/using/text-tag.html)voor meer informatie over de procedure en regels voor het maken van een tekstcode. Houd er rekening mee dat adaptieve formulieren beperkte ondersteuning bieden voor tekstcodes. Met de tekstcodes kunt u alleen die velden maken die [Adobe Sign Block](../../forms/using/working-with-adobe-sign.md#configure-cloud-signatures-for-an-adaptive-form) ondersteunt.
 
+**V:** AEM Forms biedt zowel Adobe Sign-onderdelen voor blok- als handtekeningstappen. Kunnen deze gelijktijdig in een adaptieve vorm worden gebruikt?
 **Ans:** U kunt beide componenten tegelijkertijd in een formulier gebruiken. Hier volgen enkele aanbevelingen voor het gebruik van deze componenten:
 
 **Adobe Sign-blok:** Met het Adobe Sign Block kunt u Adobe Sign-velden overal op het adaptieve formulier toevoegen. Het helpt ook om specifieke gebieden aan ondertekenaars toe te wijzen. Wanneer een adaptief formulier wordt voorvertoond of gepubliceerd, is Adobe Sign Block standaard niet zichtbaar. Deze blokken zijn alleen beschikbaar in het ondertekenende document. In het ondertekenende document worden alleen de velden ingeschakeld die zijn toegewezen aan een ondertekenaar. Adobe Sign-blok kan worden gebruikt met eerste en volgende ondertekenaars.
@@ -329,6 +333,14 @@ De ervaring voor het ondertekenen van formulieren is nu gereed. U kunt een voorb
 * Als u meerdere Adobe Sign Cloud-services gebruikt, wijst u de services **[!UICONTROL oAuth URL]** van alle services naar hetzelfde nummer **[!UICONTROL Adobe Sign Shard]**.
 
 * Gebruik afzonderlijke e-mailadressen om Adobe Sign-account en voor de eerste ondertekenaar en de enkele ondertekenaar te configureren. Het e-mailadres van de eerste ondertekenaar of de enige ondertekenaar (in het geval van de enkele ondertekenaar) kan niet hetzelfde zijn als het Adobe Sign-account dat wordt gebruikt om AEM-cloudservices te configureren.
+
+
+**Probleem** Wanneer Adobe Sign is geconfigureerd voor een adaptief formulier, wordt de workflow die is geconfigureerd met de optie Forms Workflow aanroepen niet gestart.
+
+**Resolutie**
+
+* Als u Adobe Sign gebruikt zonder de stap Handtekening of als het formulier handtekeningen van meerdere personen vereist, wacht de AEM Forms-server tot de planner bevestigt dat alle personen het formulier hebben ondertekend. De planner dient het adaptieve formulier alleen in nadat alle persoon de ondertekening heeft voltooid en de workflow pas begint nadat het adaptieve formulier met succes is verzonden. U kunt het interval van de [planner](adobe-sign-integration-adaptive-forms.md) verkorten om de status van het ondertekenen van formulieren met snelle intervallen te controleren en het verzenden van formulieren te versnellen.
+
 
 ## Verwante artikelen {#related-articles}
 

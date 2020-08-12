@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 300aa9f3-596f-42bc-8d46-e535f2bc4379
 translation-type: tm+mt
-source-git-commit: 6d425dcec4fab19243be9acb41c25b531a84ea74
+source-git-commit: 6ab91667ad668abf80ccf1710966169b3a187928
+workflow-type: tm+mt
+source-wordcount: '1189'
+ht-degree: 3%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 6d425dcec4fab19243be9acb41c25b531a84ea74
 
 ## Overzicht {#overview}
 
-De zoekfunctie is een essentieel kenmerk van AEM-gemeenschappen. Naast de zoekmogelijkheden van het [AEM-platform](../../help/sites-deploying/queries-and-indexing.md) biedt AEM Communities de [UGC-zoekAPI](#ugc-search-api) voor het zoeken naar door gebruikers gegenereerde inhoud (UGC). UGC heeft unieke eigenschappen omdat deze afzonderlijk van andere AEM-inhoud en gebruikersgegevens wordt ingevoerd en opgeslagen.
+De zoekfunctie is een essentieel onderdeel van AEM Communities. Naast de zoekmogelijkheden van het [AEM platform](../../help/sites-deploying/queries-and-indexing.md) biedt AEM Communities de [UGC-zoekAPI](#ugc-search-api) voor het zoeken naar door gebruikers gegenereerde inhoud (UGC). UGC heeft unieke eigenschappen omdat deze afzonderlijk van andere AEM inhoud en gebruikersgegevens wordt ingevoerd en opgeslagen.
 
 Voor Gemeenschappen zijn de twee dingen die over het algemeen worden doorzocht:
 
@@ -29,7 +32,7 @@ Voor Gemeenschappen zijn de twee dingen die over het algemeen worden doorzocht:
 
 * Gebruikers en gebruikersgroepen (gebruikersgegevens)
 
-   * Gebruikt de zoekmogelijkheden van het AEM-platform.
+   * Gebruikt de zoekmogelijkheden van het AEM platform.
 
 Deze sectie van de documentatie is van belang voor ontwikkelaars die douanecomponenten creëren die tot UGC leiden of leiden.
 
@@ -47,7 +50,7 @@ De gemeenschappelijke opslag [UGC](working-with-srp.md) wordt verstrekt door é�
 
 ### ASRP-zoekopdrachten {#asrp-searches}
 
-Voor [ASRP](asrp.md)wordt UGC opgeslagen in de cloud van Adobe. Hoewel UGC niet zichtbaar is in CRX, is [moderatie](moderate-ugc.md) beschikbaar bij zowel de auteur als publicatiemilieu&#39;s. Het gebruik van de [UGC zoek API](#ugc-search-api) werkt voor ASRP het zelfde als voor andere SRPs.
+Voor [ASRP](asrp.md), wordt UGC opgeslagen in de wolk van Adobe. Hoewel UGC niet zichtbaar is in CRX, is [moderatie](moderate-ugc.md) beschikbaar bij zowel de auteur als publicatiemilieu&#39;s. Het gebruik van de [UGC zoek API](#ugc-search-api) werkt voor ASRP het zelfde als voor andere SRPs.
 
 De hulpmiddelen bestaan momenteel niet voor het beheren van de onderzoeken van ASRP.
 
@@ -59,8 +62,8 @@ Voor [MSRP](msrp.md), wordt UGC opgeslagen in MongoDB die wordt gevormd om Solr 
 
 Wat MSRP en Solr betreft:
 
-* Ingesloten Solr voor het platform AEM wordt niet gebruikt voor MSRP.
-* Als het gebruiken van verre Solr voor het platform AEM, kan het met MSRP worden gedeeld, maar zij zouden verschillende inzamelingen moeten gebruiken.
+* Ingesloten Solr voor het AEM platform wordt niet gebruikt voor MSRP.
+* Als het gebruiken van verre Solr voor het AEM platform, kan het met MSRP worden gedeeld, maar zij zouden verschillende inzamelingen moeten gebruiken.
 * Solr kan voor standaardonderzoek of voor meertalige onderzoek (MLS) worden gevormd.
 * Voor configuratiedetails, zie [Solr Configuratie](msrp.md#solr-configuration) voor MSRP.
 
@@ -70,7 +73,7 @@ Wanneer u aangepaste eigenschappen maakt die doorzoekbaar zijn, moet u zich aan 
 
 ### JSRP-zoekopdrachten {#jsrp-searches}
 
-Voor [JSRP](jsrp.md), wordt UGC opgeslagen in [Eak](../../help/sites-deploying/platform.md) en is zichtbaar slechts in de bewaarplaats van de auteur AEM of publiceer instantie waarop het werd ingegaan.
+Voor [JSRP](jsrp.md), wordt UGC opgeslagen in [Eak](../../help/sites-deploying/platform.md) en is zichtbaar slechts in de bewaarplaats van de AEM auteur of publicatieinstantie waarop het werd ingegaan.
 
 Aangezien UGC typisch in het publicatiemilieu, voor multi-uitgeversproductiesystemen is ingegaan, is het noodzakelijk om een [publicatiecluster](topologies.md)te vormen, niet een publicatielandbouwbedrijf, zodat de ingegane inhoud van alle uitgevers zichtbaar is.
 
@@ -80,22 +83,22 @@ Voor aangepaste zoekfuncties moet de [UGC-zoekAPI](#ugc-search-api)worden gebrui
 
 #### Oak-indexering {#oak-indexing}
 
-Hoewel er niet automatisch eiken-indexen worden gemaakt voor het zoeken naar het AEM-platform, zijn deze vanaf AEM 6.2 toegevoegd voor AEM-gemeenschappen om de prestaties te verbeteren en paginering te ondersteunen bij de presentatie van UGC-zoekresultaten.
+Hoewel er niet automatisch eiken-indices worden gemaakt voor het zoeken naar AEM platform, zijn deze vanaf AEM 6.2 toegevoegd voor AEM Communities om de prestaties te verbeteren en paginering te ondersteunen bij de presentatie van UGC-zoekresultaten.
 
 Als aangepaste eigenschappen in gebruik zijn en zoekacties traag zijn, moeten aanvullende indexen voor de aangepaste eigenschappen worden gemaakt om deze beter te laten presteren. Om draagbaarheid te handhaven, houd aan de [noemende vereisten](#naming-of-custom-properties) wanneer het creëren van douaneeigenschappen die doorzoekbaar zijn.
 
 Als u bestaande indexen wilt wijzigen of aangepaste indexen wilt maken, raadpleegt u [Eak-query&#39;s en indexering](../../help/sites-deploying/queries-and-indexing.md).
 
-De Manager [van de Index van de](https://adobe-consulting-services.github.io/acs-aem-commons/features/oak-index-manager.html) Eak is beschikbaar bij ACS AEM Commons. Het voorziet in:
+De Manager [van de Index van de](https://adobe-consulting-services.github.io/acs-aem-commons/features/oak-index-manager.html) eikel is beschikbaar bij ACS AEM Commons. Het voorziet in:
 
 * Een weergave van bestaande indexen.
 * De mogelijkheid om opnieuw indexeren te starten.
 
-De bestaande eiken-indexen in [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)bekijken:
+De bestaande eiken-indexen in [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)worden als volgt weergegeven:
 
 * `/oak:index/socialLucene`
 
-![chlimage_1-235](assets/chlimage_1-235.png)
+![social-lucene](assets/social-lucene.png)
 
 ## Eigenschappen van Geïndexeerde zoekopdracht {#indexed-search-properties}
 
@@ -198,7 +201,7 @@ Het is belangrijk dat de URL verwijst naar de communautaire component (bron) en 
 
 ## SRP {#srp-tools}
 
-Er is een project van Adobe Marketing Cloud GitHub dat bevat:
+Er is een project Adobe Marketing Cloud GitHub dat bevat:
 
 [AEM Communities SRP Tools](https://github.com/Adobe-Marketing-Cloud/aem-communities-srp-tools)
 

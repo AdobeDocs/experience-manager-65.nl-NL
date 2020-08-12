@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 0225a543-0fad-488b-8b0b-8b3512d44fbe
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 4b6311cbfe11a61b74f68bf5a25ad1f5faef5358
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ Een Rich Text Editor (RTE) biedt de mogelijkheid om tekst met opmaak in te voere
 
 Voor de componenten van de Gemeenschappen, hoewel gelijkend op de [rijke tekstredacteur in het auteursmilieu](../../help/sites-authoring/rich-text-editor.md), beïnvloedt het tekst ingegaan in het publicatiemilieu.
 
-![chlimage_1-410](assets/chlimage_1-410.png)
+![rich-text-editor](assets/rich-text-editor.png)
 
 ## RTF-editor inschakelen {#enabling-rich-text-editor}
 
@@ -60,7 +63,7 @@ De hyperlinkopties toevoegen aan de werkbalk:
 
 * Een werkbalk met de naam &quot; `links`&quot; toevoegen
    * `{ name: 'links', items: [ 'Link','Unlink','Anchor' ] }`
-* Alles **[!UICONTROL opslaan selecteren]**
+* Selecteer **[!UICONTROL Save All]**
 
 #### /libs/clientlibs/social/commons/scf/ckrte.js {#libs-clientlibs-social-commons-scf-ckrte-js}
 

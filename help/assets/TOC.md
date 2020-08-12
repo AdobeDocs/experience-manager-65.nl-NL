@@ -5,10 +5,10 @@ audience: end-user
 user-guide-title: Experience Manager 6.5 Gebruikershandleiding voor middelen
 user-guide-description: Create, manage, deliver, and optimize digital assets.
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 9e67e252348f471c052f6c3e88aea61d7a309241
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 39%
+source-wordcount: '635'
+ht-degree: 38%
 
 ---
 
@@ -35,10 +35,10 @@ ht-degree: 39%
    + [Dynamic Media-nieuwsbrief van Experience League](dynamic-media-newsletter.md)
    + [Dynamic Media instellen](administering-dynamic-media.md)
    + [Werken met Dynamic Media](dynamic-media.md)
-   + [Dynamic Media configureren - Scene7-modus](config-dms7.md)
-   + [Dynamic Media configureren - hybride modus](config-dynamic.md)
-   + [Dynamic Media voor probleemoplossing - Scene7-modus](troubleshoot-dms7.md)
-   + [Migreren van Dynamic Media - Hybride wijze aan Dynamic Media - S7 wijze](migrate-from-hybrid-to-dms7.md)
+   + [Dynamische media configureren - Scene7-modus](config-dms7.md)
+   + [Dynamische media configureren - hybride modus](config-dynamic.md)
+   + [Problemen met dynamische media oplossen - Scene7-modus](troubleshoot-dms7.md)
+   + [Migreren van dynamische media - hybride modus naar dynamische media - S7-modus](migrate-from-hybrid-to-dms7.md)
    + [Dynamic Media-assets beheren](managing-assets.md)
    + [Aanbevolen procedures voor een optimale kwaliteit van uw afbeeldingen](best-practices-for-optimizing-the-quality-of-your-images.md)
    + [Voorinstellingen voor Dynamic Media-viewer beheren](managing-viewer-presets.md)
@@ -58,7 +58,7 @@ ht-degree: 39%
    + [Panoramische afbeeldingen](panoramic-images.md)
    + [Mixed Media Sets](mixed-media-sets.md)
    + [Spin Sets](spin-sets.md)
-   + [Video in Dynamic Media](video.md)
+   + [Video in dynamische media](video.md)
    + [Carousel-banners](carousel-banners.md)
    + [Interactieve afbeeldingen](interactive-images.md)
    + [Interactieve video&#39;s](interactive-videos.md)
@@ -72,7 +72,7 @@ ht-degree: 39%
    + [URL&#39;s koppelen aan uw webapplicatie](linking-urls-to-yourwebapplication.md)
    + [Regelsets gebruiken om URL&#39;s te transformeren](using-rulesets-to-transform-urls.md)
    + [Dynamic Media-assets publiceren](publishing-dynamicmedia-assets.md)
-   + [Uw CDN-gecachete content ongeldig maken](invalidate-cdn-cached-content.md)
+   + [Het ongeldig maken van uw CDN geheime voorgeheugen door middel van Dynamic Media Classic](invalidate-cdn-cache-dm-classic.md)
    + [Feature Pack 18912 installeren voor migratie van grote hoeveelheden bedrijfsmiddelen](bulk-ingest-migrate.md)
    + [Werken met kiezers](working-with-selectors.md)
 + Elementen uitbreiden {#extending}

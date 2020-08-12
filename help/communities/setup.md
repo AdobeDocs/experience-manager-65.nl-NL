@@ -10,7 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 0d462ad1-5619-4bb6-9609-bc8987c40a0c
 translation-type: tm+mt
-source-git-commit: 6d425dcec4fab19243be9acb41c25b531a84ea74
+source-git-commit: 6ab91667ad668abf80ccf1710966169b3a187928
+workflow-type: tm+mt
+source-wordcount: '678'
+ht-degree: 0%
 
 ---
 
@@ -21,12 +24,12 @@ source-git-commit: 6d425dcec4fab19243be9acb41c25b531a84ea74
 
 Voor ontwikkelings- en demonstratiedoeleinden is het nodig één auteur en één publicatieexemplaar uit te voeren.
 
-Hiervoor volgt u de basisinstructies voor AEM [Getting Started](../../help/sites-deploying/deploy.md#getting-started) , die resulteren in:
+Hiervoor volgt u de AEM [Aan de slag](../../help/sites-deploying/deploy.md#getting-started) -instructies, die resulteren in:
 
 * Authoromgeving op [localhost:4502](http://localhost:4502/)
 * Publicatie-omgeving op [localhost:4503](http://localhost:4503/)
 
-voor AEM-gemeenschappen,
+Voor AEM Communities:
 
 * De auteursomgeving is voor:
 
@@ -45,17 +48,17 @@ voor AEM-gemeenschappen,
 
 ## Laatste versie van Gemeenschappen installeren {#install-latest-communities-release}
 
-Deze zelfstudie maakt een community-site [voor](overview.md#engagement-community) betrokkenheid en is gebaseerd op versie 1.10 van het functiepakket AEM Communities 6.2.
+Deze zelfstudie maakt een [betrokkenheidscommunity-site](overview.md#engagement-community) en is gebaseerd op AEM Communities 6.2-functiepakket versie 1.10.
 
 Ga voor de installatie van het nieuwste functiepakket naar:
 
 * [Laatste releases](deploy-communities.md#latest-releases)
 
-Voor een zelfstudie waarmee een [community-site](overview.md#enablement-community)voor activering wordt gemaakt, gaat u naar [Aan de slag met AEM-gemeenschappen voor activering](getting-started-enablement.md).
+Voor een zelfstudie waarmee een community-site [voor](overview.md#enablement-community)activering wordt gemaakt, gaat u naar [Aan de slag met AEM Communities for Enablement](getting-started-enablement.md).
 
 ## Analyses configureren {#configure-analytics}
 
-Wanneer [Adobe Analytics voor de communautaire plaats](analytics.md)wordt gevormd, is de informatie over communautaire activiteit beschikbaar die de ervaring van het gemeenschapslid verbetert evenals terugkoppelt aan beheerders van de plaats verstrekt.
+Wanneer [Adobe Analytics voor de communautaire plaats](analytics.md)wordt gevormd, is de informatie over communautaire activiteit beschikbaar die de ervaring van het communautaire lid verbetert evenals terugkoppelt aan beheerders van de plaats verstrekt.
 
 Integratie met Adobe Analytics is optioneel.
 
@@ -91,17 +94,17 @@ Maak een gebruiker op de *auteur* die de rol van communautaire beheerder krijgt 
 
    * Bijvoorbeeld gebruikersnaam &#39;admin&#39; / wachtwoord &#39;admin&#39;
 
-* Navigeer vanuit de hoofdconsole naar **[!UICONTROL Gereedschappen]** > **[!UICONTROL Bewerkingen]** > **[!UICONTROL Beveiliging]** > **[!UICONTROL Gebruikers]**.
-* Selecteer in het menu **Bewerken **de optie Gebruiker**[!UICONTROL toevoegen ]**
+* Navigeer vanuit de hoofdconsole naar **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**.
+* Selecteer in het menu **Bewerken **de optie **[!UICONTROL Add User]**
 
 * In the `Create New User` dialog enter:
 
    * **[!UICONTROL ID]**: sirius
-   * **[!UICONTROL E-mailadres]**: sirius.nilson@mailinator.com
-   * **[!UICONTROL Wachtwoord]**: password
-   * **[!UICONTROL Wachtwoord&amp;amp bevestigen;ten;]**: password
-   * **[!UICONTROL Voornaam]**: Sirius
-   * **[!UICONTROL Achternaam]**: Nilson
+   * **[!UICONTROL Emai Address]**: sirius.nilson@mailinator.com
+   * **[!UICONTROL Password]**: password
+   * **[!UICONTROL Confirm Password&ast;]**: password
+   * **[!UICONTROL First Name]**: Sirius
+   * **[!UICONTROL Last Name]**: Nilson
 
 ### Sirius toewijzen aan de groep met communautaire beheerders {#assign-sirius-to-community-administrators-group}
 
@@ -112,9 +115,9 @@ Omlaag schuiven naar `Add User to Groups`:
    * Selecteer `Community Administrators`
    * Selecteer `Community Enablement Managers`
 
-* Selecteer **[!UICONTROL Opslaan]**.
+* Selecteer **[!UICONTROL Save]**.
 
-![chlimage_1-301](assets/chlimage_1-301.png)
+![aanmaken-gebruiker](assets/create-user.png)
 
 ## Sociale aanmelding inschakelen {#enable-social-login}
 
@@ -140,14 +143,14 @@ Met de [tagconsole](../../help/sites-administering/tags.md#tagging-console) kunt
 * `Tutorial: Arts / Auditory`
 * `Tutorial: Arts / History`
 
-![chlimage_1-302](assets/chlimage_1-302.png)
+![zelfstudielabels](assets/tutorial-tags.png)
 
 Volg vervolgens de instructies op:
 
 1. [Stel de tagmachtigingen](../../help/sites-administering/tags.md#setting-tag-permissions)in.
 1. [Publiceer de labels](../../help/sites-administering/tags.md#publishing-tags).
 
-Voorbeeldpakket met tags gemaakt voor de zelfstudies om aan de slag te gaan met AEM Communities
+Voorbeeld van pakket met tags die zijn gemaakt voor de Tutorials Aan de slag van AEM Communities
 
 [Bestand ophalen](assets/tutorial_tags-v63.zip)
 
@@ -157,4 +160,4 @@ Het wordt geadviseerd, maar facultatief, om [MSRP](msrp.md) (MongoDB) als [gemee
 
 Voor instructies gaat u naar [Hoe te MongoDB instellen voor demo](demo-mongo.md).
 
-Door gebrek, resulteert de installatie van de auteur en publiceert AEM instanties in gebruiker geproduceerde inhoud (UGC) die in opslag [JCR van de Tar wordt opgeslagen die gebruikend](../../help/sites-deploying/platform.md) JSRP [](jsrp.md)wordt betreden. JSRP is geen gemeenschappelijke opslag, wat betekent UGC slechts op de instantie zichtbaar is waarop het was ingegaan. Normaal, is UGC ingegaan op een publiceer instantie en zou niet zichtbaar in het auteursmilieu zijn, resulterend in alle matigingstaken die de publiceer instantie moeten gebruiken.
+Door gebrek, resulteert de installatie van de auteur en publiceert AEM instanties in gebruiker geproduceerde inhoud (UGC) die in de opslag [van Tar](../../help/sites-deploying/platform.md) JCR wordt opgeslagen die gebruikend [JSRP](jsrp.md)wordt betreden. JSRP is geen gemeenschappelijke opslag, wat betekent UGC slechts op de instantie zichtbaar is waarop het was ingegaan. Normaal, is UGC ingegaan op een publiceer instantie en zou niet zichtbaar in het auteursmilieu zijn, resulterend in alle matigingstaken die de publiceer instantie moeten gebruiken.

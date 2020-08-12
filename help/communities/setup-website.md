@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: d18c0ece-4c4f-499c-ac94-a9aaa7f883c4
 translation-type: tm+mt
-source-git-commit: 6d425dcec4fab19243be9acb41c25b531a84ea74
+source-git-commit: 6ab91667ad668abf80ccf1710966169b3a187928
+workflow-type: tm+mt
+source-wordcount: '510'
+ht-degree: 2%
 
 ---
 
@@ -40,6 +43,7 @@ De code in deze zelfstudie vertrouwt erop dat de naam van de hoofdmap gelijk is 
 >* De namen die in CRXDE worden gezien zijn knooppuntnamen die de weg aan adresseerbare inhoud vormen.
 >* Node names may contain spaces, but when used in an URI, the space must be encoded either as &#39;%20&#39; or &#39;+&#39;.
 >* Node-namen kunnen afbreekstreepjes en onderstrepingstekens bevatten, maar deze moeten worden gecodeerd als er in een Java-bestand naar wordt verwezen als een pakketnaam. Zowel koppeltekens als onderstrepingstekens worden overgeslagen met een onderstrepingsteken gevolgd door de Unicode-waarde:
+
    >
    >   
    * afbreekstreepje wordt &#39;_002d&#39;
@@ -54,34 +58,35 @@ De map /apps is beveiligd en niet toegankelijk voor het publiek, net als de mapp
 
 1. Map maken `/apps/an-scf-sandbox` .
 
-   Het gebruiken van **[!UICONTROL CRXDE Lite]**, in de verkenner ruit
+   Werken **[!UICONTROL CRXDE Lite]**, in het deelvenster Verkenner
 
    1. Selecteer de `/apps` map.
-   1. Klik met de rechtermuisknop op **[!UICONTROL Maken]**... of trek het **[!UICONTROL Create...]** -menu.
-   1. Map **[!UICONTROL maken selecteren...]**.
-   1. Voer in het dialoogvenster Map **** maken `an-scf-sandbox`.
-   1. Click **[!UICONTROL OK]**.
+   1. Klikken met rechtermuisknop **[!UICONTROL Create]**... of trek het **[!UICONTROL Create...]** menu omlaag.
+   1. Selecteer **[!UICONTROL Create Folder...]**.
+   1. In the **[!UICONTROL Create Folder]** dialog, enter `an-scf-sandbox`.
+   1. Klik op **[!UICONTROL OK]**.
 
-1. Submap voor **[!UICONTROL componenten]** maken.
-
-   1. Selecteer de `/apps/an-scf-sandbox` map.
-   1. Klik op **[!UICONTROL Maken > Map]** maken.
-   1. Voer in het dialoogvenster Map **** maken **[!UICONTROL componenten]** in.
-   1. Click **[!UICONTROL OK]**.
-
-1. Submap voor **[!UICONTROL sjablonen]** maken.
+1. Submap maken **[!UICONTROL components]** .
 
    1. Selecteer de `/apps/an-scf-sandbox` map.
-   1. Klik op **[!UICONTROL Maken > Map]** maken.
-   1. Voer in het dialoogvenster Map **** maken **[!UICONTROL sjablonen]** in.
-   1. Click **[!UICONTROL OK]**.
+   1. Klik op **[!UICONTROL Create > Create Folder]**.
+   1. In the **[!UICONTROL Create Folder]** dialog, enter **[!UICONTROL components]**.
+   1. Klik op **[!UICONTROL OK]**.
+
+1. Submap maken **[!UICONTROL templates]** .
+
+   1. Selecteer de `/apps/an-scf-sandbox` map.
+   1. Klik op **[!UICONTROL Create > Create Folder]**.
+   1. In the **[!UICONTROL Create Folder]** dialog, enter **[!UICONTROL templates]**.
+   1. Klik op **[!UICONTROL OK]**.
    1. Opnieuw selecteren `/apps/an-scf-sandbox`.
-   1. Selecteer **[!UICONTROL Alles]** opslaan.
+   1. Selecteer **[!UICONTROL Save All]**.
+
    Net als bij elk bewerkingsproces, kunt u dit vaak opslaan. Als u problemen ondervindt met het invoeren van gegevens, kan dit zijn omdat er een time-out is opgetreden bij uw aanmelding of omdat u vorige bewerkingen moet opslaan.
 
-1. De structuur in het verkendervenster van CRXDE Lite zou nu iets als dit moeten kijken:
+1. De structuur in het deelvenster Verkenner van CRXDE Lite moet er nu ongeveer als volgt uitzien:
 
-   ![chlimage_1-44](assets/chlimage_1-44.png)
+   ![crxde-template](assets/crxde-template.png)
 
 ## De ontwerpmap instellen (/etc/designs) {#setup-the-design-directory-etc-designs}
 
@@ -91,27 +96,28 @@ De map /etc/designs bevat de afbeeldingen, scripts en opmaakmodellen die samen m
 
    Opmerking: Als u CRXDE Lite gebruikt om een Knoop van type tot stand te brengen `cq:Page`, zouden het Toegangsbeheer en de Replicatie niet aan standaardmontages voor een pagina worden geplaatst.
 
-1. Selecteer in het verkendervenster de map **[!UICONTROL Ontwerpen]** en klik vervolgens op **[!UICONTROL Nieuw]** > **[!UICONTROL Nieuwe pagina]**.
+1. Selecteer de **[!UICONTROL Designs]** map in het deelvenster Verkenner en klik op **[!UICONTROL New]** > **[!UICONTROL New Page]**.
 
    Enter:
 
-   * Titel: Een **[!UICONTROL SCF-sandbox]**
+   * Titel: **[!UICONTROL An SCF Sandbox]**
    * Naam: **[!UICONTROL an-scf-sandbox]**
-   * Selecteer **[!UICONTROL ontwerppaginasjabloon]**
-   Klik op **[!UICONTROL Maken]**.
+   * Selecteer **[!UICONTROL Design Page Template]**
 
-   ![chlimage_1-45](assets/chlimage_1-45.png)
+   Klik op **[!UICONTROL Create]**.
+
+   ![design-template](assets/design-template.png)
 
 1. Vernieuw het verkennervenster als de map &quot;An SCF Sandbox&quot; niet wordt weergegeven.
 
-1. Keer terug naar CRXDE Lite (http:// localhost:4502/crx/de) en breid /etc/designs uit om het knooppunt met de naam &quot;an-scf-sandbox&quot; te zien.
+1. Ga terug naar CRXDE Lite (http:// localhost:4502/crx/de) en vouw /etc/designs uit om het knooppunt met de naam &quot;an-scf-sandbox&quot; weer te geven.
 
    In de rechterbenedenruit van CRXDE, kunt u het lusje van Eigenschappen, het lusje van het Controle van de Toegang en het lusje van de Replicatie bekijken om te zien wat gebruikend het Malplaatje van de Pagina van het Ontwerp werd bepaald.
 
-   ![chlimage_1-46](assets/chlimage_1-46.png)
+   ![crxde-configure-template](assets/crxde-configure-template.png)
 
 ## De inhoudsdirectory (/inhoud) instellen {#setup-the-content-directory-content}
 
 De map /content in de opslagmap is waar de website-inhoud zich bevindt. De paden onder /content bestaan uit de paden van de URL voor browserverzoeken.
 
-*Nadat* de [paginasjabloon](initial-app.md#createthepagetemplate) is gemaakt als onderdeel van de oorspronkelijke toepassing, kan de eerste pagina-inhoud worden gemaakt op basis van de sjabloon.... [****](initial-app.md)
+*Nadat* de [paginasjabloon](initial-app.md#createthepagetemplate) is gemaakt als onderdeel van de oorspronkelijke toepassing, kan de eerste pagina-inhoud worden gemaakt op basis van de sjabloon.... [**ê&#x200B;**](initial-app.md)

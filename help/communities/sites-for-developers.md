@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: dc7a085e-d6de-4bc8-bd7e-6b43f8d172d2
 translation-type: tm+mt
-source-git-commit: 89156f94f2d0494d44d4f0b99abfba4fafbc66d3
+source-git-commit: e49acbc042d84ae970058b4e99ab6f980866db5a
+workflow-type: tm+mt
+source-wordcount: '568'
+ht-degree: 1%
 
 ---
 
@@ -70,25 +73,25 @@ Identificeer het douanemalplaatje door een `page-template` bezit aan de configur
 
 `/content/sites/sample/en/configuration`
 
-![chlimage_1-80](assets/chlimage_1-80.png)
+![crxde-siteconfiguration](assets/crxde-siteconfiguration.png)
 
-Ben zeker om allen **te** sparen en douanecode aan alle instanties te herhalen AEM (de douanecode is niet inbegrepen wanneer de inhoud van de communautaire plaats van de console wordt gepubliceerd).
+Ben zeker om allen **te** sparen en douanecode aan alle AEM instanties (de douanecode is niet inbegrepen wanneer de inhoud van de communautaire plaats van de console wordt gepubliceerd) te herhalen.
 
 De geadviseerde praktijk voor het herhalen van douanecode is een pakket [tot stand te](../../help/sites-administering/package-manager.md#creating-a-new-package) brengen en het op alle instanties op te stellen.
 
 ## Een communautaire site exporteren {#exporting-a-community-site}
 
-Wanneer een communitysite is gemaakt, kan de site worden geëxporteerd als een AEM-pakket dat is opgeslagen in pakketbeheer en dat kan worden gedownload en geüpload.
+Wanneer een gemeenschapssite is gemaakt, kan de site worden geëxporteerd als een AEM pakket dat is opgeslagen in pakketbeheer en dat kan worden gedownload en geüpload.
 
 Dit is beschikbaar bij de console [van de Plaatsen van](sites-console.md#exporting-the-site)Gemeenschappen.
 
 Merk op dat UGC en douanecode niet inbegrepen in het pakket van de communautaire plaats is.
 
-Om UGC uit te voeren, gebruik het Hulpmiddel [van de Migratie van](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)AEM-Gemeenschappen UGC, een open bronmigratiehulpmiddel beschikbaar op GitHub.
+Om UGC uit te voeren, gebruik het Hulpmiddel [van de Migratie van](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)AEM Communities UGC, een open bronmigratiehulpmiddel beschikbaar op GitHub.
 
 ## Een Community-site verwijderen {#deleting-a-community-site}
 
-Vanaf AEM Communities 6.3 Service Pack 1 wordt het pictogram Site verwijderen weergegeven wanneer u de muisaanwijzer boven de community plaatst vanuit **[!UICONTROL Communities]** > **[!UICONTROL Sites]** Console. Als u tijdens de ontwikkeling een gemeenschapssite wilt verwijderen en een nieuwe site wilt starten, kunt u deze functionaliteit gebruiken. Als u een gemeenschapssite verwijdert, worden de volgende aan die site gekoppelde items verwijderd:
+Vanaf AEM Communities 6.3 Service Pack 1 wordt het pictogram Site verwijderen weergegeven wanneer u de muisaanwijzer boven de communitysite plaatst vanuit **[!UICONTROL Communities]** > **[!UICONTROL Sites]** console. Als u tijdens de ontwikkeling een gemeenschapssite wilt verwijderen en een nieuwe site wilt starten, kunt u deze functionaliteit gebruiken. Als u een gemeenschapssite verwijdert, worden de volgende aan die site gekoppelde items verwijderd:
 
 * [UGC](#user-generated-content)
 * [Gebruikersgroepen](#community-user-groups)
@@ -138,10 +141,10 @@ Bijvoorbeeld, `community-engage-x0e11-members`.
 
 Vanaf de hoofdconsole:
 
-* Selecteer **[!UICONTROL Elementen]**.
-* Ga **[!UICONTROL Uitgezochte]** wijze in.
+* Selecteer **[!UICONTROL Assets]**.
+* Ga **[!UICONTROL Select]** wijze in.
 * Selecteer een map met de [unieke site-id](#community-unique-site-id).
-* Selecteer **[!UICONTROL Verwijderen]** (moet mogelijk **[!UICONTROL Meer selecteren...]**).
+* Selecteer **[!UICONTROL Delete]** (eventueel moet u kiezen uit **[!UICONTROL More...]**).
 
 ### Databasegegevens {#database-records}
 

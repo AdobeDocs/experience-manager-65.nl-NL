@@ -10,7 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 3acac082-efbe-4995-b374-851cb9aaf62d
 translation-type: tm+mt
-source-git-commit: 6d425dcec4fab19243be9acb41c25b531a84ea74
+source-git-commit: 6ab91667ad668abf80ccf1710966169b3a187928
+workflow-type: tm+mt
+source-wordcount: '451'
+ht-degree: 0%
 
 ---
 
@@ -37,23 +40,26 @@ Ga voor de benodigde informatie naar [Community Components Basics](basics.md).
 
 Wanneer de vereiste bibliotheek aan de clientzijde `cq.social.hbs.search`is opgenomen, wordt de `Search` component op deze manier weergegeven.
 
-![chlimage_1-373](assets/chlimage_1-373.png)
+![add-search](assets/add-search.png)
 
 ### De toegevoegde zoekopdracht configureren {#configure-the-added-search}
 
 Selecteer de geplaatste `Search` component die u wilt openen en selecteer het `Configure` pictogram waarmee het dialoogvenster Bewerken wordt geopend.
 
-![chlimage_1-374](assets/chlimage_1-374.png)
+![samenkomen](assets/configure-new.png)
 
-Geef op onder het tabblad **[!UICONTROL Zoekinstellingen]** op hoe wordt gezocht in welke paden een zoekopdracht wordt uitgevoerd door een bezoeker.
+Geef op onder het **[!UICONTROL Search Settings]** tabblad op hoe wordt gezocht in welke paden een query wordt ingevoerd door een bezoeker.
 
-![chlimage_1-375](assets/chlimage_1-375.png)
+![zoekinstellingen](assets/search-settings.png)
 
-* **[!UICONTROL Zoekpaden]** Door zoekpaden toe te voegen met de knop Item toevoegen, wordt de zoekopdracht beperkt. Als voorbeeld, om het onderzoek tot een specifiek forum te beperken, selecteer een forumcomponent die binnen een pagina wordt geplaatst:
+* **[!UICONTROL Search Paths]**
+Door zoekpaden toe te voegen met de knop Item toevoegen, is de zoekopdracht naar inhoud beperkt. Als voorbeeld, om het onderzoek tot een specifiek forum te beperken, selecteer een forumcomponent die binnen een pagina wordt geplaatst:
 
    * `/content/community-components/en/forum/jcr:content/content/forum`
 
-* **[!UICONTROL Resulterende pagina]** De resultaten worden weergegeven op een aparte pagina die met de browser is opgegeven om een pagina met de `Search Results` component te selecteren.
+* **[!UICONTROL Result Page]**
+De resultaten worden weergegeven op een aparte pagina die u in de browser hebt opgegeven om een pagina met de 
+`Search Results` component.
 
 ## Zoekresultaten {#search-results}
 
@@ -71,23 +77,23 @@ Ga voor de benodigde informatie naar [Community Components Basics](basics.md).
 
 Wanneer de vereiste bibliotheek aan de clientzijde `cq.social.hbs.search`is opgenomen, ziet u hier de `Search Result` component als volgt:
 
-![chlimage_1-376](assets/chlimage_1-376.png)
+![zoekresultaat](assets/search-result1.png)
 
 ### Het toegevoegde zoekresultaat configureren {#configure-the-added-search-result}
 
 Selecteer de geplaatste `Search Results` component die u wilt openen en selecteer het `Configure` pictogram waarmee het dialoogvenster Bewerken wordt geopend.
 
-![chlimage_1-377](assets/chlimage_1-377.png)
+![vormen](assets/configure-new.png)
 
-Op het tabblad Instellingen **[!UICONTROL van]** zoekresultaat kunt u opgeven welke paden in de zoekopdracht worden opgenomen wanneer een bezoeker een query invoert.
+Onder het **[!UICONTROL Search Result Settings]** tabblad kunt u opgeven welke paden in de zoekopdracht worden opgenomen wanneer een bezoeker een query invoert.
 
-![chlimage_1-378](assets/chlimage_1-378.png)
+![search-result-settings](assets/search-result-settings.png)
 
-* **[!UICONTROL Zoekresultaten per pagina]**
+* **[!UICONTROL Search Results Per Page]**
 
    Bepaal het aantal onderwerpen/posten dat per pagina wordt getoond. De standaardwaarde is 10.
 
-* **[!UICONTROL Paden zoeken]**
+* **[!UICONTROL Search Paths]**
 
    Door zoekpaden toe te voegen met de knop Item toevoegen, is de zoekopdracht naar inhoud beperkt.
 

@@ -8,12 +8,15 @@ topic-tags: introduction
 discoiquuid: 1142bcd4-e3a7-41ce-a710-132ae6c21dbe
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d2d4e0d8b538c96a7a05be6ad1012343f49694b3
+source-git-commit: 43c04a8b2f1e2e7f2067cec055d8737dfc7b3e84
+workflow-type: tm+mt
+source-wordcount: '1071'
+ht-degree: 0%
 
 ---
 
 
-# Zelfstudie: Uw eerste adaptieve formulier maken{#tutorial-create-your-first-adaptive-form}
+# Zelfstudie: Uw eerste adaptieve formulier maken {#tutorial-create-your-first-adaptive-form}
 
 ![01-create-first-adaptive-form-hero-image](assets/01-create-first-adaptive-form-hero-image.png)
 
@@ -34,15 +37,15 @@ De reis begint met het leren van het gebruiksgeval:
 
 Een website biedt een reeks producten aan voor verschillende klanten. Klanten bladeren door de portal, selecteren en bestellen de producten. Elke klant maakt een account en geeft verzendadres en factuuradres. Een bestaande klant, Sara Rose, probeert haar verzendadres toe te voegen aan de website. De website bevat een onlineformulier voor het toevoegen en bijwerken van verzendadressen.
 
-De website wordt uitgevoerd op Adobe Experience Manager (AEM) en gebruikt AEM Forms voor het vastleggen en verwerken van gegevens. Het formulier voor het toevoegen en bijwerken van adressen is een adaptief formulier. De website slaat klantgegevens in een database op. Zij gebruiken de adrestoevoeging en werken vorm bij om beschikbare adressen terug te winnen en te tonen. Ze gebruiken ook het aangepaste formulier om bijgewerkte en nieuwe adressen te accepteren.
+De website wordt uitgevoerd op Adobe Experience Manager (AEM) en gebruikt AEM [!DNL Forms] voor het vastleggen en verwerken van gegevens. Het formulier voor het toevoegen en bijwerken van adressen is een adaptief formulier. De website slaat klantgegevens in een database op. Zij gebruiken de adrestoevoeging en werken vorm bij om beschikbare adressen terug te winnen en te tonen. Ze gebruiken ook het aangepaste formulier om bijgewerkte en nieuwe adressen te accepteren.
 
 ### Vereiste {#prerequisite}
 
-* Stel een AEM-auteurinstantie in.
+* Stel een AEM auteur-instantie in.
 * Installeer de invoegtoepassing [AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md) op de auteurinstantie.
-* Vraag het JAR-bestand (JDBC-databasestuurprogramma) aan bij de databaseprovider. De voorbeelden in de zelfstudie zijn gebaseerd op MySQL-database en gebruiken het [MySQL JDBC-databasestuurprogramma](https://dev.mysql.com/downloads/connector/j/5.1.html)van Oracle.
+* Vraag het JAR-bestand (JDBC-databasestuurprogramma) aan bij de databaseprovider. De voorbeelden in het leerprogramma zijn gebaseerd op [!DNL MySQL] gegevensbestand en gebruiken [!DNL Oracle's] MySQL JDBC gegevensbestandbestuurder [](https://dev.mysql.com/downloads/connector/j/5.1.html).
 
-* Stel een database in die klantgegevens bevat met de onderstaande velden. Een database is niet essentieel om een adaptief formulier te maken. Deze zelfstudie gebruikt een database om het gegevensmodel van het formulier en de persistentiemogelijkheden van AEM Forms weer te geven.
+* Stel een database in die klantgegevens bevat met de onderstaande velden. Een database is niet essentieel om een adaptief formulier te maken. Deze zelfstudie gebruikt een database om het gegevensmodel van het formulier en de persistentiemogelijkheden van AEM weer te geven [!DNL Forms].
 
 ![adaptiveformdata](assets/adaptiveformdata.png)
 
@@ -50,7 +53,7 @@ De website wordt uitgevoerd op Adobe Experience Manager (AEM) en gebruikt AEM Fo
 
 ![03-create-adaptive-form-main-image_small](assets/03-create-adaptive-form-main-image_small.png)
 
-Adaptieve formulieren zijn nieuwe generatie, boeiend, responsief, dynamisch en adaptief van aard. Met behulp van adaptieve formulieren kunt u persoonlijke en doelgerichte ervaringen bieden. AEM Forms beschikt over een WYSIWYG-editor voor slepen en neerzetten waarmee u adaptieve formulieren kunt maken. Zie [Inleiding tot het ontwerpen van adaptieve formulieren](../../forms/using/introduction-forms-authoring.md)voor meer informatie over adaptieve formulieren.
+Adaptieve formulieren zijn nieuwe generatie, boeiend, responsief, dynamisch en adaptief van aard. Met behulp van adaptieve formulieren kunt u persoonlijke en doelgerichte ervaringen bieden. AEM [!DNL Forms] een WYSIWYG-editor voor slepen en neerzetten waarmee u adaptieve formulieren kunt maken. Zie [Inleiding tot het ontwerpen van adaptieve formulieren](../../forms/using/introduction-forms-authoring.md)voor meer informatie over adaptieve formulieren.
 
 Doelstellingen:
 
@@ -65,12 +68,12 @@ Doelstellingen:
 
 ![05-create-form-data-model-main_small](assets/05-create-form-data-model-main_small.png)
 
-Met een formuliergegevensmodel kunt u een adaptief formulier aansluiten op verschillende gegevensbronnen. Bijvoorbeeld: AEM-gebruikersprofiel, RESTful-webservices, SOAP-webservices, OData-services en relationele databases. Een gegevensmodel van de Vorm is een verenigd schema van de gegevensvertegenwoordiging van bedrijfsentiteiten en de diensten beschikbaar in verbonden gegevensbronnen. U kunt het formuliergegevensmodel met een adaptief formulier gebruiken om gegevens op te halen, bij te werken, te verwijderen en aan verbonden gegevensbronnen toe te voegen.
+Met een formuliergegevensmodel kunt u een adaptief formulier aansluiten op verschillende gegevensbronnen. Bijvoorbeeld AEM gebruikersprofiel, RESTful Webdiensten, op SOAP-Gebaseerde Webdiensten, OData diensten, en relationele gegevensbestanden. Een gegevensmodel van de Vorm is een verenigd schema van de gegevensvertegenwoordiging van bedrijfsentiteiten en de diensten beschikbaar in verbonden gegevensbronnen. U kunt het formuliergegevensmodel met een adaptief formulier gebruiken om gegevens op te halen, bij te werken, te verwijderen en aan verbonden gegevensbronnen toe te voegen.
 
 Doelstellingen:
 
-* De database-instantie van de website (MySQL-database) configureren als gegevensbronnen
-* Maak het formuliergegevensmodel met MySQL-database als gegevensbron
+* De database-instantie (database-[!DNL MySQL] database) van de website configureren als gegevensbronnen
+* Het formuliergegevensmodel maken met [!DNL MySQL] database als gegevensbron
 * Gegevensmodelobjecten toevoegen aan formuliergegevensmodel
 * Lezen- en schrijfservices configureren voor het gegevensmodel van het formulier
 * Formuliergegevensmodel testen en geconfigureerde services met testgegevens
@@ -108,7 +111,7 @@ Doelstellingen:
 
 ![11-test-uw-adaptieve vorm](assets/11-test-your-adaptive-form.png)
 
-Adaptieve formulieren zijn een integraal onderdeel van de interactie van uw klant. Het is belangrijk dat u de aangepaste formulieren test met elke wijziging die u erin aanbrengt. Het testen van elk veld van een formulier is vervelend. AEM Forms biedt een SDK (Calvin SDK) waarmee u het testen van adaptieve formulieren kunt automatiseren. Met Calvin kunt u het testen van uw adaptieve formulieren automatiseren in de webbrowser.
+Adaptieve formulieren zijn een integraal onderdeel van de interactie van uw klant. Het is belangrijk dat u de aangepaste formulieren test met elke wijziging die u erin aanbrengt. Het testen van elk veld van een formulier is vervelend. AEM [!DNL Forms] biedt een SDK (Calvin SDK) om het testen van adaptieve formulieren te automatiseren. Met Calvin kunt u het testen van uw adaptieve formulieren automatiseren in de webbrowser.
 
 Doelstellingen:
 
@@ -122,12 +125,12 @@ Doelstellingen:
 
 ![12-publish-your-adaptive-form-_small](assets/12-publish-your-adaptive-form-_small.png)
 
-U kunt adaptieve formulieren publiceren als een zelfstandig formulier (toepassing op één pagina), opnemen in de pagina [met AEM-](/help/forms/using/embed-adaptive-form-aem-sites.md)sites of op een AEM-site aanbieden met [Forms Portal](../../forms/using/introduction-publishing-forms.md).
+U kunt adaptieve formulieren publiceren als een zelfstandig formulier (toepassing op één pagina), opnemen in AEM [sitepagina](/help/forms/using/embed-adaptive-form-aem-sites.md)of op een AEM aanbieden [!DNL Site] met [Forms Portal](../../forms/using/introduction-publishing-forms.md).
 
 Doelstellingen:
 
-* Het adaptieve formulier publiceren als een AEM-pagina
-* Het adaptieve formulier insluiten in een AEM-sitepagina
-* Het adaptieve formulier insluiten in een externe webpagina (een niet-AEM-webpagina die buiten AEM wordt gehost)
+* Het adaptieve formulier publiceren als een AEM
+* Het adaptieve formulier insluiten in een AEM [!DNL Sites] pagina
+* Het adaptieve formulier insluiten in een externe webpagina (een niet-AEM webpagina die buiten AEM wordt gehost)
 
 [![Zie de Guide](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](publish-your-adaptive-form.md)

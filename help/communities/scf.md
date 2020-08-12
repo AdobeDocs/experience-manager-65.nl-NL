@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: d7b5b5e3-2d84-4a6b-bcc2-d490882ff3ed
 translation-type: tm+mt
-source-git-commit: 6d425dcec4fab19243be9acb41c25b531a84ea74
+source-git-commit: 6ab91667ad668abf80ccf1710966169b3a187928
+workflow-type: tm+mt
+source-wordcount: '1505'
+ht-degree: 0%
 
 ---
 
@@ -42,7 +45,7 @@ De API van de sociale component kan worden uitgebreid om gegevens te verstrekken
 
 ### Hoe pagina&#39;s voor de client worden gerenderd {#how-pages-are-rendered-for-client}
 
-![chlimage_1-25](assets/chlimage_1-25.png)
+![scf-page-rendering](assets/scf-overview.png)
 
 ### Component Customization and Extension {#component-customization-and-extension}
 
@@ -54,7 +57,7 @@ Als u de componenten wilt aanpassen of uitbreiden, schrijft u alleen de overlays
    * Wijzig de JS-sjabloon en de CSS.
 * Voor look, Voel en UX:
    * Wijzig de JS-sjabloon, CSS en [breid JavaScript](client-customize.md#extending-javascript)uit of overschrijf JavaScript.
-* Om de informatie te wijzigen beschikbaar aan het Malplaatje JS of aan het GET eindpunt:
+* Om de informatie te wijzigen beschikbaar aan het Malplaatje JS of aan het eindpunt van GET:
    * Breid de [Sociale Component](server-customize.md#socialcomponent-interface)uit.
 * Aangepaste verwerking toevoegen tijdens bewerkingen:
    * Schrijf een [OperationExtension](server-customize.md#operationextension-class).
@@ -79,9 +82,9 @@ Bezoek het Overzicht [van de Leverancier van het Middel van de](srp.md) Opslag o
 
 De HTTP-API ondersteunt eenvoudige aanpassingen en keuzemogelijkheden van clientplatforms voor PhoneGap-apps, native apps en andere integraties en mashups. Bovendien staat HTTP API een communautaire plaats toe om als dienst zonder een cliënt te lopen, zodat de kadercomponenten in om het even welke webpage kunnen worden geïntegreerd die op om het even welke technologie wordt voortgebouwd.
 
-### HTTP-API - aanvragen OPHALEN {#http-api-get-requests}
+### HTTP API - GET {#http-api-get-requests}
 
-Voor elke SocialComponent, verstrekt het kader een op HTTP-Gebaseerd API eindpunt. Het eindpunt wordt betreden door een GET verzoek naar het middel met &quot;.social.json&quot;selecteur + uitbreiding te verzenden. Gebruikend Sling, wordt het verzoek overhandigd aan `DefaultSocialGetServlet`.
+Voor elke SocialComponent, verstrekt het kader een op HTTP-Gebaseerd API eindpunt. Het eindpunt wordt betreden door een verzoek van de GET naar het middel met &quot;.social.json&quot;selecteur + uitbreiding te verzenden. Gebruikend Sling, wordt het verzoek overhandigd aan `DefaultSocialGetServlet`.
 
 **`DefaultSocialGetServlet`**
 
@@ -95,11 +98,11 @@ Voor elke SocialComponent, verstrekt het kader een op HTTP-Gebaseerd API eindpun
 
 Een standaard GET servlet luistert naar .social.json verzoeken waaraan de SocialComponent met klantgerichte JSON antwoordt.
 
-![chlimage_1-26](assets/chlimage_1-26.png)
+![SCF-kader](assets/scf-framework.png)
 
-### HTTP-API - POST-aanvragen {#http-api-post-requests}
+### HTTP API - POST-aanvragen {#http-api-post-requests}
 
-Naast de GET (Gelezen) verrichtingen, bepaalt het kader een eindpuntpatroon om andere verrichtingen op een component toe te laten, met inbegrip van Create, Update en Schrapping. Deze eindpunten zijn HTTP-API&#39;s die invoer accepteren en reageren met HTTP-statuscodes of met een JSON-reactieobject.
+Naast de (Gelezen) verrichtingen van de GET, bepaalt het kader een eindpuntpatroon om andere verrichtingen op een component toe te laten, met inbegrip van Create, Update en Schrapping. Deze eindpunten zijn HTTP-API&#39;s die invoer accepteren en reageren met HTTP-statuscodes of met een JSON-reactieobject.
 
 Met dit eindpuntpatroon van het framework worden CUD-bewerkingen uitbreidbaar, herbruikbaar en getest.
 
@@ -107,7 +110,7 @@ Met dit eindpuntpatroon van het framework worden CUD-bewerkingen uitbreidbaar, h
 
 Er is een Sling POST:verrichting voor elke verrichting SocialComponent. De bedrijfslogica en onderhoudscode voor elke verrichting zijn verpakt in een OperationService die door HTTP API of van elders als dienst OSGi toegankelijk is. Hooks wordt geleverd ter ondersteuning van instelbare bewerkingsextensies voor acties voor en na acties.
 
-![chlimage_1-27](assets/chlimage_1-27.png)
+![scf-post-request](assets/scf-post-request.png)
 
 ### Storage Resource Provider (SRP) {#storage-resource-provider-srp}
 
@@ -129,7 +132,7 @@ HBS-scripts zijn eenvoudig, zonder logica, kunnen op zowel de server als de clie
 
 Het framework biedt verschillende helpers [van](handlebars-helpers.md) Handlebars die nuttig zijn bij het ontwikkelen van sociale componenten.
 
-Op de server, wanneer het Sling een GET verzoek oplost, identificeert het het manuscript dat zal worden gebruikt om op het verzoek te antwoorden. Als het manuscript een malplaatje HBS (.hbs) is, zal het Sling het verzoek aan de Motor van Handlebars delegeren. De Motor Handlebars zal dan de SocialComponent van aangewezen SocialComponentFactory krijgen, een context bouwen, en HTML teruggeven.
+Op de server, wanneer het Sling een verzoek van de GET verhelpt, identificeert het het manuscript dat zal worden gebruikt om op het verzoek te antwoorden. Als het manuscript een malplaatje HBS (.hbs) is, zal het Sling het verzoek aan de Motor van Handlebars delegeren. De Motor Handlebars zal dan de SocialComponent van aangewezen SocialComponentFactory krijgen, een context bouwen, en HTML teruggeven.
 
 ### Geen toegangsbeperking {#no-access-restriction}
 
@@ -155,9 +158,9 @@ Het resultaat is een JCR-onderliggend knooppunt onder een pari-knooppunt, dat ad
 
 Het opnemen van een component verwijst naar het proces waarbij een verwijzing naar een [&quot;niet-bestaande&quot; resource](srp.md#for-non-existing-resources-ners) (geen JCR-knooppunt) binnen de sjabloon wordt toegevoegd, zoals het gebruik van een scripttaal.
 
-Vanaf AEM 6.1, wanneer een component dynamisch inbegrepen in plaats van toegevoegd is, is het mogelijk om de eigenschappen van de component in auteur *design *mode uit te geven.
+Vanaf AEM 6.1, wanneer een component dynamisch in plaats van toegevoegd wordt omvat, is het mogelijk om de eigenschappen van de component in auteur *design *mode uit te geven.
 
-Slechts een beperkt aantal onderdelen van de AEM-gemeenschappen kan dynamisch worden opgenomen. Het zijn:
+Slechts een paar AEM Communities-componenten kunnen dynamisch worden opgenomen. Het zijn:
 
 * [Opmerkingen](essentials-comments.md)
 * [Classificatie](rating-basics.md)

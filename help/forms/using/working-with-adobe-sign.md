@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d1361296ee0161c36061543459056c25ebef0e97
+source-git-commit: f34742a9d11909dcf8403e1b002b65a01e882a74
 workflow-type: tm+mt
-source-wordcount: '3770'
+source-wordcount: '3784'
 ht-degree: 0%
 
 ---
@@ -334,6 +334,7 @@ De ervaring voor het ondertekenen van formulieren is nu gereed. U kunt een voorb
 
 * Gebruik afzonderlijke e-mailadressen om Adobe Sign-account en voor de eerste ondertekenaar en de enkele ondertekenaar te configureren. Het e-mailadres van de eerste ondertekenaar of de enige ondertekenaar (in het geval van de enkele ondertekenaar) kan niet hetzelfde zijn als het Adobe Sign-account dat wordt gebruikt om AEM-cloudservices te configureren.
 
+### AEM Forms-workflow geconfigureerd voor een adaptief formulier dat geschikt is voor Adobe Sign, wordt niet gestart {#adobe-sign-aem-form-workflow-failures}
 
 **Probleem** Wanneer Adobe Sign is geconfigureerd voor een adaptief formulier, wordt de workflow die is geconfigureerd met de optie Forms Workflow aanroepen niet gestart.
 

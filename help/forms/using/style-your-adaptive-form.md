@@ -8,10 +8,10 @@ uuid: ffb2cc22-baaf-4525-a2e3-29f39271c670
 topic-tags: introduction
 discoiquuid: 655303a4-99bb-4ba3-9d50-a178f5edcf85
 translation-type: tm+mt
-source-git-commit: bd70508b361ac8b62ebc0344538a18369a075f3e
+source-git-commit: e3ecf724cdfcd20ef4c089605e644ad10ef1221b
 workflow-type: tm+mt
-source-wordcount: '2077'
-ht-degree: 4%
+source-wordcount: '1955'
+ht-degree: 5%
 
 ---
 
@@ -26,7 +26,7 @@ Deze zelfstudie is een stap in de [serie Uw eerste adaptieve formulier](https://
 
 ## Over de zelfstudie  {#about-the-tutorial}
 
-U kunt thema&#39;s gebruiken om een adaptief formulier een unieke vormgeving en stijl te geven. U kunt thema&#39;s uit de doos toepassen die van de adaptieve redacteur van vormen worden voorzien of douanethema&#39;s van uw tot stand brengen. AEM Forms beschikken over een [themaeditor](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html) om aangepaste thema&#39;s te maken. Met één thema kunt u hetzelfde adaptieve formulier weergeven dat u op mobiele apparaten, tablets of desktops hebt geopend. Eerdere kennis van CSS of LESS is niet vereist voor het gebruik van de themaeditor, maar is wel gewenst.
+U kunt thema&#39;s gebruiken om een adaptief formulier een unieke vormgeving en stijl te geven. U kunt thema&#39;s uit de doos toepassen die van de adaptieve redacteur van vormen worden voorzien of douanethema&#39;s van uw tot stand brengen. AEM [!DNL Forms] verstrekt een [themaredacteur](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html) om douanethema&#39;s tot stand te brengen. Met één thema kunt u hetzelfde adaptieve formulier weergeven dat u op mobiele apparaten, tablets of desktops hebt geopend. Eerdere kennis van CSS of LESS is niet vereist voor het gebruik van de themaeditor, maar is wel gewenst.
 
 Aan het einde van de zelfstudie leert u:
 
@@ -55,16 +55,16 @@ De adaptieve vormenredacteur verstrekt veelvoudige uit-van-de-doos thema&#39;s. 
 
    [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html)
 
-1. Open eigenschappen van **container** Adaptief formulier. Navigeer in de eigenschappenbrowser naar **Standaard** > **Adaptief formulierthema**. In het veld **Adaptief formulierthema** worden alle kant-en-klare thema&#39;s en aangepaste thema&#39;s weergegeven. Standaard wordt het thema Canvas toegepast.
-1. Selecteer een thema in het veld **Adaptief formulierthema** . Bijvoorbeeld **enquêtethema**. Tik op ![naam_6_3_formulieren_opslaan](assets/aem_6_3_forms_save.png) om het geselecteerde thema toe te passen.
+1. Open eigenschappen van **[!UICONTROL Adaptive Form container]**. Navigeer in de eigenschappenbrowser naar **[!UICONTROL Basic]** > **[!UICONTROL Adaptive Form Theme]**. In het **[!UICONTROL Adaptive Form Theme]** veld worden alle kant-en-klare thema&#39;s en aangepaste thema&#39;s weergegeven. Standaard wordt het thema Canvas toegepast.
+1. Selecteer een thema in het **[!UICONTROL Adaptive Form Theme]** veld. Bijvoorbeeld **enquêtethema**. Tik op ![naam_6_3_formulieren_opslaan](assets/aem_6_3_forms_save.png) om het geselecteerde thema toe te passen.
 
-![Aangepast formulier met het standaardthema](assets/default-adaptive-form.png)
+   ![Aangepast formulier met het standaardthema](assets/default-adaptive-form.png)
 
-**Afbeelding:** *Aangepast formulier met het standaardthema*
+   **Afbeelding:** *Aangepast formulier met het standaardthema*
 
-![Aangepast formulier met het thema Beoordeling](assets/adaptive-form-with-survey-theme.png)
+   ![Aangepast formulier met het thema Beoordeling](assets/adaptive-form-with-survey-theme.png)
 
-**Afbeelding:** *Aangepast formulier met het thema Beoordeling*
+   **Afbeelding:** *Aangepast formulier met het thema Beoordeling*
 
 ## Stap 2: Het aangepaste formulier bijwerken {#step-update-your-adaptive-form}
 
@@ -76,20 +76,20 @@ Voor het hierboven weergegeven ontwerp zijn wijzigingen vereist in de plaatsaand
 
       [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html)
 
-   1. Tik op de afbeelding met het logo in de koptekstcomponent en tik op de ![eigenschappen cmp](assets/cmppr.png) . Tik in de afbeeldingseigenschap op X om de bestaande logoafbeelding te verwijderen.
-   1. Tik op Uploaden, selecteer het logo.png en tik op ![aaem_6_3_forms_save](assets/aem_6_3_forms_save.png) om de wijzigingen op te slaan. De afbeelding is gedownload in de sectie [Voordat u begint](/help/forms/using/style-your-adaptive-form.md#before-you-start) .
-   1. Tik op koptekst `We.Retail`en tik op ![aaem_6_3_edit](assets/aem_6_3_edit.png) **edit**. Wijzig de koptekst in `we retail`. Pas vette opmaak alleen toe op `we`de insteekmodule `we retail`.
+   1. Tik op de afbeelding met het logo in de [!UICONTROL header] component en tik op ![cmp](assets/cmppr.png) **[!UICONTROL properties]**. Tik in de [!UICONTROL image] eigenschap op X om de bestaande logoafbeelding te verwijderen.
+   1. Tik **[!UICONTROL upload]** op logo.png en tik op ![aaem_6_3_forms_save](assets/aem_6_3_forms_save.png) om de wijzigingen op te slaan. De afbeelding is gedownload in de sectie [Voordat u begint](/help/forms/using/style-your-adaptive-form.md#before-you-start) .
+   1. Tik op koptekst `We.Retail`en tik op ![aaem_6_3_edit](assets/aem_6_3_edit.png) **[!UICONTROL edit]**. Wijzig de koptekst in `we retail`. Pas vette opmaak alleen toe op `we`de insteekmodule `we retail`.
 
-   ![we-retail-logo-text](assets/we-retail-logo-text.png)
+      ![we-retail-logo-text](assets/we-retail-logo-text.png)
 
 1. Titel verwijderen en plaatsaanduidingstekst toevoegen:
 
    1. Tik op het veld Customer ID en tik op ![cmp](assets/cmppr.png) -eigenschappen.
-   1. Kopieer de inhoud van het veld **Titel** naar het veld **Plaatsaanduidingstekst** .
-   1. Verwijder de inhoud van het veld **Titel** en tik op ![em_6_3_forms_save](assets/aem_6_3_forms_save.png).
+   1. Kopieer de inhoud van het **[!UICONTROL Title]** veld naar het **[!UICONTROL Placeholder Text]** veld.
+   1. Verwijder de inhoud van het **[!UICONTROL Title]** veld en tik op ![aaem_6_3_forms_save](assets/aem_6_3_forms_save.png).
    1. Herhaal de vorige drie stappen voor alle tekstvakken, het numerieke vak en het e-mailveld in het formulier.
 
-   ![aangepast-vorm](assets/updated-adaptive-form.png)
+      ![aangepast-vorm](assets/updated-adaptive-form.png)
 
 ## Stap 3: Een aangepast thema maken voor uw aangepaste formulier {#step-create-a-custom-theme-for-your-adaptive-form}
 
@@ -101,17 +101,17 @@ In deze zelfstudie maakt u een stijl van de kop- en voettekst, tekst en numeriek
 
 ### Een thema maken {#create-a-theme}
 
-1. Meld u aan bij de AEM-auteur en navigeer naar **Adobe Experience Manager** > **Formulieren** > **Thema**. De standaard-URL is [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes).
-1. Tik **[!UICONTROL Create]** en selecteer **[!UICONTROL Theme]**. De pagina Thema maken met de velden die nodig zijn om een thema te maken, wordt weergegeven. De velden Titel en Naam zijn verplicht:
+1. Meld u aan bij de AEM auteur en navigeer naar **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Themes]**. De standaard-URL is [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes).
+1. Tik **[!UICONTROL Create]** en selecteer **[!UICONTROL Theme]**. De [!UICONTROL Create Theme] pagina met de velden die nodig zijn om een thema te maken, wordt weergegeven. De velden **[!UICONTROL Title]** en **[!UICONTROL Name]** velden zijn verplicht:
 
    * **Titel:** Geef een titel van het thema op. Bijvoorbeeld **Globaal thema.** Met de titel kunt u het thema herkennen aan de lijst met thema&#39;s.
    * **Naam:** Geef de naam van het thema op. Bijvoorbeeld **Global-Theme.** Er wordt een knooppunt met de opgegeven naam gemaakt in de repository. Wanneer u een titel begint te typen, wordt automatisch een waarde voor het naamveld gegenereerd. U kunt de voorgestelde waarde wijzigen. Het naamveld mag alleen alfanumerieke tekens, afbreekstreepjes en onderstrepingstekens bevatten. Alle ongeldige invoer wordt vervangen door een afbreekstreepje.
 
-1. Tik op **Maken**. Er wordt een thema gemaakt en er verschijnt een dialoogvenster waarin u het formulier kunt openen om het te bewerken. Tik op **Openen** om het nieuwe thema op een nieuw tabblad te openen. Het thema wordt geopend in de themaeditor. Voor het opmaken gebruikt de themaeditor een adaptief formulier dat niet in de verpakking is en wordt geleverd met AEM Forms.
+1. Tik op **[!UICONTROL Create]**. Er wordt een thema gemaakt en er verschijnt een dialoogvenster waarin u het formulier kunt openen om het te bewerken. Tik **[!UICONTROL Open]** om het nieuwe thema op een nieuw tabblad te openen. Het thema wordt geopend in de themaeditor. Voor het opmaken gebruikt de themaeditor een adaptief formulier dat niet in de doos is meegeleverd en dat bij AEM wordt geleverd [!DNL Forms].
 
    Voor informatie over het gebruiken van thema redacteur UI, zie [Ongeveer de themaredacteur](/help/forms/using/themes.md#aboutthethemeeditor).
 
-1. Tik op **Themaopties** ![theme-options](assets/theme-options.png) > **Configure**. Selecteer in het veld **Voorbeeld van formulier** het adaptieve formulier voor het **verzendadres-add-update-form** , tik op ![aaem_6_3_forms_save](assets/aem_6_3_forms_save.png), en klik op **Opslaan**. De themaeditor is nu geconfigureerd voor het gebruik van uw eigen adaptieve formulier in plaats van het standaard adaptieve formulier. Tik op **Annuleren** om terug te keren naar de themaeditor.
+1. Tik op **[!UICONTROL Theme Options]** themaopties ![>](assets/theme-options.png) **[!UICONTROL Configure]**. Selecteer in het **[!UICONTROL Preview Form]** veld het adaptieve formulier voor het **verzendadres-add-update-form** , tik op ![naam_6_3_forms_save](assets/aem_6_3_forms_save.png), tik **[!UICONTROL Save]**. De themaeditor is nu geconfigureerd voor het gebruik van uw eigen adaptieve formulier in plaats van het standaard adaptieve formulier. Tik **[!UICONTROL Cancel]** om naar de themaeditor terug te gaan.
 
    ![aangepast thema](assets/custom-theme.png)
 
@@ -125,9 +125,9 @@ In deze zelfstudie maakt u een stijl van de kop- en voettekst, tekst en numeriek
 
 Koptekst en voettekst geven een consistent en duidelijk beeld van een adaptief formulier. Over het algemeen bevat de koptekst het logo en de naam van de organisatie, bevat de voettekst copyrightinformatie en deze blijven in meerdere vormen van een organisatie identiek. De kop- en voettekst van het adaptieve formulier voor het verzendadres-add-update-formulier opmaken:
 
-1. Navigeer in het deelvenster Kiezers naar de optie **Koptekst** > **Tekst** . Het deelvenster Kiezers bevindt zich links van de themaeditor. Als het deelvenster niet zichtbaar is, tikt u op het ![schakelpaneel](assets/toggle-side-panel.png) Zijpaneel in-/uitschakelen.
+1. Navigeer in het deelvenster Kiezers naar de optie **[!UICONTROL Header]** > **[!UICONTROL Text]** . Het deelvenster Kiezers bevindt zich links van de themaeditor. Als het deelvenster niet zichtbaar is, tikt u op het ![schakelpaneel](assets/toggle-side-panel.png) Zijpaneel in-/uitschakelen.
 
-1. Stel de volgende eigenschappen in in de **tekstaccordeon** en tik op ![aaem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Stel de volgende eigenschappen in in de **[!UICONTROL Text]** accordeon en tik op ![aaem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    | Eigenschap | Waarde |
    |---|---|
@@ -135,10 +135,10 @@ Koptekst en voettekst geven een consistent en duidelijk beeld van een adaptief f
    | Lettertypekleur | FFFFFF |
    | Fontgrootte | 54px |
 
-1. Tik op de koptekstwidget en tik op **Koptekst**. De opties voor het opmaken van de koptekstwidget worden links weergegeven. Breid de **Afmetingen en Positie** accordion uit, plaats de **Hoogte** aan `120px`, en tik ![a_6_3_forms_save](assets/aem_6_3_forms_save.png).
-1. Breid de achtergrondaccordeon van de kopbalwidget uit, plaats de **Achtergrondkleur** aan `F6921E.`
+1. Tik op de [!UICONTROL header] widget en tik op **[!UICONTROL Header]**. De opties voor het opmaken van de koptekstwidget worden links weergegeven. Vouw de **[!UICONTROL Dimensions & Position]** accordeon uit, stel de **[!UICONTROL Height]** accordeon in `120px`op ![en tik op](assets/aem_6_3_forms_save.png)aaem_6_3_forms_save.
+1. Breid de **[!UICONTROL Background]** accordeon van de kopbalwidget uit, plaats **[!UICONTROL Background Color]** aan `F6921E.`
 
-   Houd de muis boven **Afbeelding en verloop** > **+ Toevoegen** en tik op **Afbeelding**. Stel de volgende eigenschappen in en tik op ![aaem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+   Houd de muisaanwijzer boven **[!UICONTROL Image & Gradient]** > **[!UICONTROL + Add]** en tik op **[!UICONTROL Image]**. Stel de volgende eigenschappen in en tik op ![aaem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    | Eigenschap | Waarde |
    |---|---|
@@ -146,93 +146,93 @@ Koptekst en voettekst geven een consistent en duidelijk beeld van een adaptief f
    | Positie | Rechts onder |
    | Naast elkaar | Niet herhalen |
 
-1. Tik in de themaeditor op het logo in de koptekst en tik op **Koptekstlogo**. Vouw de accordeon Dimensions &amp; Position uit, stel de volgende eigenschappen in en tik op ![aaem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Tik in de themaeditor op het logo in de koptekst en tik op **[!UICONTROL Header Logo]**. Breid de Dimension en Positie accordeon uit, stel de volgende eigenschappen in en tik ![aaem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
-<table> 
- <tbody> 
-  <tr> 
-   <td>Marge</td> 
-   <td>Waarde</td> 
-  </tr> 
-  <tr> 
-   <td>Marge</td> 
-   <td> 
-    <ul> 
-     <li>Boven: 1.5 rem</li> 
-     <li>Onder: -35 px</li> 
-     <li>Links: 1rem<strong><br /> </strong></li> 
-    </ul> <p><strong>Tip:</strong> Tik op het <img src="assets/link.png"> koppelingspictogram om voor elk veld een andere waarde in te stellen.<br /> </p> </td> 
-  </tr> 
-  <tr> 
-   <td>Hoogte</td> 
-   <td>4.75rem</td> 
-  </tr> 
- </tbody> 
-</table>
+   <table> 
+    <tbody> 
+     <tr> 
+      <td><b>Marge</b></td> 
+      <td><b>Waarde</b></td> 
+     </tr> 
+     <tr> 
+      <td>Marge</td> 
+      <td> 
+       <ul> 
+        <li>Boven: 1.5 rem</li> 
+        <li>Onder: -35 px</li> 
+        <li>Links: 1rem<strong><br /> </strong></li> 
+       </ul> <p><strong>Tip:</strong> Tik op het <img src="assets/link.png"> koppelingspictogram om voor elk veld een andere waarde in te stellen.<br /> </p> </td> 
+     </tr> 
+     <tr> 
+      <td>Hoogte</td> 
+      <td>4.75rem</td> 
+     </tr> 
+    </tbody> 
+   </table>
 
-1. Tik op de voettekstwidget en tik op **Voettekst**. Vouw de **achtergrondaccordeon** uit, stel de **achtergrondkleur** in op `F6921E`en tik ![op aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Tik op de voettekstwidget en tik op **[!UICONTROL Footer]**. Vouw de **[!UICONTROL Background]** accordeon uit, stel de **[!UICONTROL Background Color]** accordeon in `F6921E`op ![en tik op](assets/aem_6_3_forms_save.png)aaem_6_3_forms_save.
 
 ### De component voor gegevensvastlegging opmaken en een achtergrond op het adaptieve formulier toepassen {#style-the-data-capture-component-and-apply-a-background-to-the-adaptive-form}
 
 U kunt meerdere componenten in een adaptief formulier gebruiken om gegevens vast te leggen. Bijvoorbeeld tekstvak en numeriek vak. U kunt identieke stijl aan alle gegevens verstrekken vangt componenten of afzonderlijke stijl voor elke component. In deze zelfstudie wordt een identieke stijl toegepast op numerieke vakken (Customer ID, ZIP Code) en tekstvakken (Customer ID, Name, Shipping Address, State, Email). De componenten voor gegevensvastlegging opmaken:
 
-1. Tik op het veld Customer ID en tik op de optie **Field Widget** . Stel de volgende eigenschappen in en tik op ![aaem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Tik op het **[!UICONTROL Customer ID]** veld en tik op de **[!UICONTROL Field Widget]** optie. Stel de volgende eigenschappen in en tik op ![aaem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
-<table> 
- <tbody> 
-  <tr> 
-   <td>Accordeon</td> 
-   <td>Eigenschap</td> 
-   <td>Waarde</td> 
-  </tr> 
-  <tr> 
-   <td>Rand</td> 
-   <td>Randkleur</td> 
-   <td>A7A9AC</td> 
-  </tr> 
-  <tr> 
-   <td>Rand</td> 
-   <td>Straal rand </td> 
-   <td> 
-    <ul> 
-     <li>Boven: 7 px<br /> </li> 
-     <li>Rechts: 7 px<br /> </li> 
-     <li>Onder: 7 px<br /> </li> 
-     <li>Links: 7 px<br /> </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>Tekst</td> 
-   <td>Lettertypefamilie</td> 
-   <td>Arial</td> 
-  </tr> 
-  <tr> 
-   <td>Tekst</td> 
-   <td>Lettertypekleur</td> 
-   <td>939598<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>Tekst</td> 
-   <td>Fontgrootte</td> 
-   <td>18px</td> 
-  </tr> 
-  <tr> 
-   <td>Afmetingen en positie</td> 
-   <td>Breedte</td> 
-   <td>60%</td> 
-  </tr> 
-  <tr> 
-   <td>Afmetingen en positie</td> 
-   <td>Marge</td> 
-   <td> 
-    <ul> 
-     <li>Links: 10rem</li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
-</table>
+   <table> 
+    <tbody> 
+     <tr> 
+      <td><b>Accordeon</b></td> 
+      <td><b>Eigenschap</b></td> 
+      <td><b>Waarde</b></td> 
+     </tr> 
+     <tr> 
+      <td>Rand</td> 
+      <td>Randkleur</td> 
+      <td>A7A9AC</td> 
+     </tr> 
+     <tr> 
+      <td>Rand</td> 
+      <td>Straal rand </td> 
+      <td> 
+       <ul> 
+        <li>Boven: 7 px<br /> </li> 
+        <li>Rechts: 7 px<br /> </li> 
+        <li>Onder: 7 px<br /> </li> 
+        <li>Links: 7 px<br /> </li> 
+       </ul> </td> 
+     </tr> 
+     <tr> 
+      <td>Tekst</td> 
+      <td>Lettertypefamilie</td> 
+      <td>Arial</td> 
+     </tr> 
+     <tr> 
+      <td>Tekst</td> 
+      <td>Lettertypekleur</td> 
+      <td>939598<br /> </td> 
+     </tr> 
+     <tr> 
+      <td>Tekst</td> 
+      <td>Fontgrootte</td> 
+      <td>18px</td> 
+     </tr> 
+     <tr> 
+      <td>Dimension en positie</td> 
+      <td>Breedte</td> 
+      <td>60%</td> 
+     </tr> 
+     <tr> 
+      <td>Dimension en positie</td> 
+      <td>Marge</td> 
+      <td> 
+       <ul> 
+        <li>Links: 10rem</li> 
+       </ul> </td> 
+     </tr> 
+    </tbody> 
+    </table>
 
-1. Tik op het lege gebied boven het veld Customer ID en tik op **Responsive Panel Container**. Stel de **achtergrond** > **Achtergrondkleur** in op F1F2F2. Tik op ![naam_6_3_formulieren_opslaan](assets/aem_6_3_forms_save.png).
+1. Tik op het lege gebied boven het **[!UICONTROL Customer ID]** veld en tik op **[!UICONTROL Responsive Panel Container]**. Stel het **[!UICONTROL Background]** > **[!UICONTROL Background Color]** in op F1F2F2. Tik op ![naam_6_3_formulieren_opslaan](assets/aem_6_3_forms_save.png).
 
    ![](do-not-localize/responsive-panel-container.png)
 
@@ -240,53 +240,53 @@ U kunt meerdere componenten in een adaptief formulier gebruiken om gegevens vast
 
 U kunt een aangepast thema gebruiken om een identieke stijl toe te passen op alle knoppen van het adaptieve formulier en [inline styling](/help/forms/using/inline-style-adaptive-forms.md) om een stijl toe te passen op een specifieke knop. De knoppen opmaken:
 
-1. Tik op de knop **Verzenden** en tik op de optie **Knop** . Stel de volgende eigenschappen in en tik op ![aaem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Tik op de **[!UICONTROL Submit]** knop en tik op de **[!UICONTROL Button]** optie. Stel de volgende eigenschappen in en tik op ![aaem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
-<table> 
- <tbody> 
-  <tr> 
-   <td>Accordeon</td> 
-   <td>Eigenschap</td> 
-   <td>Waarde</td> 
-  </tr> 
-  <tr> 
-   <td>Achtergrond</td> 
-   <td>Achtergrondkleur</td> 
-   <td>F6921E</td> 
-  </tr> 
-  <tr> 
-   <td>Border<br /> </td> 
-   <td>Randkleur</td> 
-   <td>F6921E</td> 
-  </tr> 
-  <tr> 
-   <td>Rand</td> 
-   <td>Straal rand </td> 
-   <td> 
-    <ul> 
-     <li>Boven: 7 px<br /> </li> 
-     <li>Rechts: 7 px<br /> </li> 
-     <li>Onder: 7 px<br /> </li> 
-     <li>Links: 7 px</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>Tekst<br /> </td> 
-   <td>Lettertypefamilie</td> 
-   <td>Arial</td> 
-  </tr> 
-  <tr> 
-   <td>Tekst</td> 
-   <td>Lettertypekleur</td> 
-   <td>FFFFFF</td> 
-  </tr> 
-  <tr> 
-   <td>Tekst</td> 
-   <td>Fontgrootte</td> 
-   <td>18px</td> 
-  </tr> 
- </tbody> 
-</table>
+   <table> 
+    <tbody> 
+     <tr> 
+      <td><b>Accordeon</b></td> 
+      <td><b>Eigenschap&lt;/b</td> 
+      <td><b>Waarde</b></td> 
+     </tr> 
+     <tr> 
+      <td>Achtergrond</td> 
+      <td>Achtergrondkleur</td> 
+      <td>F6921E</td> 
+     </tr> 
+     <tr> 
+      <td>Border<br /> </td> 
+      <td>Randkleur</td> 
+      <td>F6921E</td> 
+     </tr> 
+     <tr> 
+      <td>Rand</td> 
+      <td>Straal rand </td> 
+      <td> 
+       <ul> 
+        <li>Boven: 7 px<br /> </li> 
+        <li>Rechts: 7 px<br /> </li> 
+        <li>Onder: 7 px<br /> </li> 
+        <li>Links: 7 px</li> 
+       </ul> </td> 
+     </tr> 
+     <tr> 
+      <td>Tekst<br /> </td> 
+      <td>Lettertypefamilie</td> 
+      <td>Arial</td> 
+     </tr> 
+     <tr> 
+      <td>Tekst</td> 
+      <td>Lettertypekleur</td> 
+      <td>FFFFFF</td> 
+     </tr> 
+     <tr> 
+      <td>Tekst</td> 
+      <td>Fontgrootte</td> 
+      <td>18px</td> 
+     </tr> 
+    </tbody> 
+   </table>
 
 1. [Pas het aangepaste thema](/help/forms/using/style-your-adaptive-form.md#step-apply-a-theme-to-your-adaptive-form)Global Theme toe op het aangepaste formulier. Als de stijl niet op het adaptieve formulier wordt weerspiegeld, maakt u de cache van de browser leeg en probeert u het opnieuw.
 
@@ -297,162 +297,163 @@ U kunt een aangepast thema gebruiken om een identieke stijl toe te passen op all
 Sommige stijlen zijn alleen van toepassing op een bepaalde component. Dergelijke componenten worden opgemaakt in de editor voor adaptieve formulieren.
 
 1. Open het aangepaste formulier voor bewerking. [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/change-billing-shipping-address.html)
-1. Selecteer in de bovenste balk de optie **Stijl** .
+1. Selecteer de **[!UICONTROL Style]** optie op de bovenste balk.
 
    ![style-option](assets/style-option.png)
 
-1. Tik op de knop **Bijvoegen** en tik op ![aem_6_3_](assets/aem_6_3_edit.png)editicon. Stel de volgende eigenschappen in in de **accordeon Afmetingen en Positie** :
+1. Tik op de **[!UICONTROL Attach]** knop en tik op ![aem_6_3_](assets/aem_6_3_edit.png)editicon. Stel de volgende eigenschappen in in de **[!UICONTROL Dimensions and Position]** accordeon:
 
    | Eigenschap | Waarde |
    |---|---|
    | Zwevend | Links |
    | Breedte | 10% |
 
-1. Tik op de door de **overheid goedgekeurde optie voor het aantonen van het adres** en tik op ![aem_6_3_](assets/aem_6_3_edit.png)editicon. Stel de volgende eigenschappen in:
+1. Tik op de **[!UICONTROL Government approved address proof]** optie en tik op ![aem_6_3_](assets/aem_6_3_edit.png)editicon. Stel de volgende eigenschappen in:
 
-<table> 
- <tbody> 
-  <tr> 
-   <td>Accordeon</td> 
-   <td>Eigenschap</td> 
-   <td>Waarde</td> 
-  </tr> 
-  <tr> 
-   <td>Afmetingen en positie</td> 
-   <td>Zwevend</td> 
-   <td>Links</td> 
-  </tr> 
-  <tr> 
-   <td>Afmetingen en positie</td> 
-   <td>Breedte</td> 
-   <td>73%</td> 
-  </tr> 
-  <tr> 
-   <td>Afmetingen en positie</td> 
-   <td>Opvulling</td> 
-   <td> 
-    <ul> 
-     <li>Links: 10 px</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>Afmetingen en positie</td> 
-   <td>Hoogte</td> 
-   <td>40px</td> 
-  </tr> 
-  <tr> 
-   <td>Afmetingen en positie<br /> </td> 
-   <td>Marge</td> 
-   <td><br /> 
-    <ul> 
-     <li>Rechts: 2rem</li> 
-     <li>Links: 10rem </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>Achtergrond</td> 
-   <td>Achtergrondkleur</td> 
-   <td>FFFFFF</td> 
-  </tr> 
-  <tr> 
-   <td>Rand</td> 
-   <td>Randbreedte</td> 
-   <td>1px</td> 
-  </tr> 
-  <tr> 
-   <td>Rand</td> 
-   <td>Randstijl</td> 
-   <td>Een ononderbroken lijn</td> 
-  </tr> 
-  <tr> 
-   <td>Rand</td> 
-   <td>Randkleur</td> 
-   <td>A7A9AC</td> 
-  </tr> 
-  <tr> 
-   <td>Rand</td> 
-   <td>Straal rand</td> 
-   <td>7px</td> 
-  </tr> 
-  <tr> 
-   <td>Tekst</td> 
-   <td>Lettertypefamilie</td> 
-   <td>Arial</td> 
-  </tr> 
-  <tr> 
-   <td>Tekst</td> 
-   <td>Lettertypekleur</td> 
-   <td>BCBEC0</td> 
-  </tr> 
-  <tr> 
-   <td>Tekst</td> 
-   <td>Fontgrootte</td> 
-   <td>18px</td> 
-  </tr> 
-  <tr> 
-   <td>Tekst</td> 
-   <td>Lijnhoogte</td> 
-   <td>2</td> 
-  </tr> 
- </tbody> 
-</table>
+   <table> 
+    <tbody> 
+     <tr> 
+      <td><b>Accordeon</b></td> 
+      <td><b>Eigenschap</b></td> 
+      <td><b>Waarde</b></td> 
+     </tr> 
+     <tr> 
+      <td>Dimension en positie</td> 
+      <td>Zwevend</td> 
+      <td>Links</td> 
+     </tr> 
+     <tr> 
+      <td>Dimension en positie</td> 
+      <td>Breedte</td> 
+      <td>73%</td> 
+     </tr> 
+     <tr> 
+      <td>Dimension en positie</td> 
+      <td>Opvulling</td> 
+      <td> 
+       <ul> 
+        <li>Links: 10 px</li> 
+       </ul> </td> 
+     </tr> 
+     <tr> 
+      <td>Dimension en positie</td> 
+      <td>Hoogte</td> 
+      <td>40px</td> 
+     </tr> 
+     <tr> 
+      <td>Dimension en positie<br /> </td> 
+      <td>Marge</td> 
+      <td><br /> 
+       <ul> 
+        <li>Rechts: 2rem</li> 
+        <li>Links: 10rem </li> 
+       </ul> </td> 
+     </tr> 
+     <tr> 
+      <td>Achtergrond</td> 
+      <td>Achtergrondkleur</td> 
+      <td>FFFFFF</td> 
+     </tr> 
+     <tr> 
+      <td>Rand</td> 
+      <td>Randbreedte</td> 
+      <td>1px</td> 
+     </tr> 
+     <tr> 
+      <td>Rand</td> 
+      <td>Randstijl</td> 
+      <td>Een ononderbroken lijn</td> 
+     </tr> 
+     <tr> 
+      <td>Rand</td> 
+      <td>Randkleur</td> 
+      <td>A7A9AC</td> 
+     </tr> 
+     <tr> 
+      <td>Rand</td> 
+      <td>Straal rand</td> 
+      <td>7px</td> 
+     </tr> 
+     <tr> 
+      <td>Tekst</td> 
+      <td>Lettertypefamilie</td> 
+      <td>Arial</td> 
+     </tr> 
+     <tr> 
+      <td>Tekst</td> 
+      <td>Lettertypekleur</td> 
+      <td>BCBEC0</td> 
+     </tr> 
+     <tr> 
+      <td>Tekst</td> 
+      <td>Fontgrootte</td> 
+      <td>18px</td> 
+     </tr> 
+     <tr> 
+      <td>Tekst</td> 
+      <td>Lijnhoogte</td> 
+      <td>2</td> 
+     </tr> 
+     </tr> 
+    </tbody> 
+   </table>
 
-1. Tik op de knop **Verzenden** en tik op het ![pictogram aem_6_3_edit](assets/aem_6_3_edit.png) . Stel de volgende eigenschappen in:
+1. Tik op de **[!UICONTROL Submit]** knop en tik op het pictogram ![aem_6_3_edit](assets/aem_6_3_edit.png) . Stel de volgende eigenschappen in:
 
-<table> 
- <tbody> 
-  <tr> 
-   <td>Accordeon</td> 
-   <td>Eigenschap</td> 
-   <td>Waarde</td> 
-  </tr> 
-  <tr> 
-   <td>Afmetingen en positie</td> 
-   <td>Zwevend</td> 
-   <td>Rechts</td> 
-  </tr> 
-  <tr> 
-   <td>Afmetingen en positie</td> 
-   <td>Marge</td> 
-   <td> 
-    <ul> 
-     <li>Boven: 5rem</li> 
-     <li>Rechts: 14rem</li> 
-     <li>Onder: 20 px</li> 
-     <li>Links: 20 px<br /> </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>Achtergrond</td> 
-   <td>Achtergrondkleur</td> 
-   <td>F6921E</td> 
-  </tr> 
-  <tr> 
-   <td>Rand</td> 
-   <td>Randkleur</td> 
-   <td>F6921E</td> 
-  </tr> 
- </tbody> 
-</table>
+   <table> 
+    <tbody> 
+     <tr> 
+      <td><b>Accordeon</b></td> 
+      <td><b>Eigenschap</b></td> 
+      <td><b>Waarde</b></td> 
+     </tr> 
+     <tr> 
+      <td>Dimension en positie</td> 
+      <td>Zwevend</td> 
+      <td>Rechts</td> 
+     </tr> 
+     <tr> 
+      <td>Dimension en positie</td> 
+      <td>Marge</td> 
+      <td> 
+       <ul> 
+        <li>Boven: 5rem</li> 
+        <li>Rechts: 14rem</li> 
+        <li>Onder: 20 px</li> 
+        <li>Links: 20 px<br /> </li> 
+       </ul> </td> 
+     </tr> 
+     <tr> 
+      <td>Achtergrond</td> 
+      <td>Achtergrondkleur</td> 
+      <td>F6921E</td> 
+     </tr> 
+     <tr> 
+      <td>Rand</td> 
+      <td>Randkleur</td> 
+      <td>F6921E</td> 
+     </tr> 
+    </tbody> 
+   </table>
 
-![styled-adaptive-form-1](assets/styled-adaptive-form-1.png)
+   ![styled-adaptive-form-1](assets/styled-adaptive-form-1.png)
 
 ## Stap 5: Bonussectie: Weblettertypen gebruiken in een aangepast thema {#step-bonus-section-using-web-fonts-in-a-custom-theme}
 
 U kunt verschillende lettertypen gebruiken om een adaptief formulier te ontwerpen. Op alle apparaten waarop het adaptieve formulier wordt weergegeven, worden mogelijk niet de fonts gebruikt om het adaptieve formulier te ontwerpen. U kunt een service voor weblettertypen gebruiken om de vereiste lettertypen aan het doelapparaat te leveren.
 
-Adobe Typekit is een service voor weblettertypen. U kunt de service configureren en gebruiken met adaptieve formulieren. Zo gebruikt u Adobe Typekit in een adaptieve vorm:
+[!DNL Adobe Typekit] is een service voor weblettertypen. U kunt de service configureren en gebruiken met adaptieve formulieren. Voor gebruik [!DNL Adobe Typekit] in een adaptieve vorm:
 
 >[!NOTE]
 >
->![Typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) Typekit wordt nu Adobe-lettertypen genoemd en wordt geleverd bij Creative Cloud en andere abonnementen. [Meer](https://fonts.adobe.com/)informatie.
+>![Typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) [!DNL Typekit] worden nu Adobe Fonts genoemd en worden geleverd bij Creative Cloud- en andere abonnementen. [Meer](https://fonts.adobe.com/)informatie.
 
-1. Maak een [Adobe Typekit](https://typekit.com/) -account, maak een kit, voeg het lettertype Myriad Pro toe aan de kit, publiceer de kit en verkrijg de kit-id. Adobe Typekit-lettertypen (weblettertypen) zijn vereist voor een adaptief formulier.
-1. Navigeer op de AEM Forms-server naar ![adobeExperience](assets/adobeexperiencemanager.png) Manager **Adobe Experience Manager** > **Tools** ![hammer](assets/hammer.png) > **Deployment** ****>Cloud Servicen. Navigeer op de pagina Cloud Servicen naar Services **van** derden > **Typekit** en klik op Nu **configureren** onder Typekit. Als er al een configuratie beschikbaar is, klikt u op de knop + om een nieuwe instantie te maken.
+1. Maak een [Adobe Typekit](https://typekit.com/) -account, maak een kit, voeg Myriad Pro-lettertype aan de kit toe, publiceer de kit en verkrijg de kit-id. U moet [!DNL Adobe Typekit] lettertypen (weblettertypen) in een adaptieve vorm gebruiken.
+1. Navigeer in de AEM [!DNL Forms] server naar ![adobeexperience](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** hamer ![>](assets/hammer.png) > **[!UICONTROL Deployment]** **[!UICONTROL Cloud Services]**. Navigeer op de pagina Cloud Services naar **[!UICONTROL Third Party Services]** > **[!UICONTROL Typekit]** en klik onder **[!UICONTROL Configure]** Nu [!UICONTROL Typekit]. Als er al een configuratie beschikbaar is, klikt u op de knop + om een nieuwe instantie te maken.
 
-   Geef in het dialoogvenster Configuratie maken een **titel** op voor de configuratie en klik op **Maken**. U wordt opnieuw gericht aan de configuratiepagina. Geef in het dialoogvenster Component bewerken dat wordt weergegeven uw **kit-id** op en klik op **OK**.
+   Geef in het dialoogvenster Configuratie maken een **titel** voor de configuratie op en klik op **[!UICONTROL Create]**. U wordt opnieuw gericht aan de configuratiepagina. Geef in het [!UICONTROL Edit Component] dialoogvenster dat verschijnt uw **kit-id** op en klik op **[!UICONTROL OK]**.
 
-1. Vorm uw thema om de configuratie te gebruiken TypeKit. Open **Globaal thema** in de themaeditor voor de auteur. In de themaredacteur, navigeer aan de Opties van het Thema ![thema-opties](assets/theme-options.png) > vormen. Selecteer de kit in het veld **Typekit-configuratie** en klik op **Opslaan**.
+1. Vorm uw thema om de [!DNL TypeKit] configuratie te gebruiken. Voor de auteursinstantie, open **[!UICONTROL Global Theme]** in de themaredacteur. Navigeer in de themaeditor naar **[!UICONTROL Theme Options]** themaopties ![>](assets/theme-options.png) **[!UICONTROL Configure]**. Selecteer de kit in **[!UICONTROL Typekit Configuration]** het veld en klik op **[!UICONTROL Save]**.
 
-   De lettertypen die aan de Typekit zijn toegevoegd, kunnen in de **tekstaccordeon** van alle componenten worden geselecteerd.
+   De lettertypen die aan de tekst [!UICONTROL Typekit] zijn toegevoegd, kunnen in de **[!UICONTROL Text]** accordeon van alle componenten worden geselecteerd.
 

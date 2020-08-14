@@ -1,16 +1,16 @@
 ---
 title: We.Gov-referentiesite doorloopt
 seo-title: We.Gov-referentiesite doorloopt
-description: Gebruik fictieve gebruikers en groepen om AEM Forms taken uit te voeren met het Web.Gov-demopakket.
-seo-description: Gebruik fictieve gebruikers en groepen om AEM Forms taken uit te voeren met het Web.Gov-demopakket.
+description: Gebruik fictieve gebruikers en groepen om AEM Forms-taken uit te voeren met behulp van het Wij.Gov-demopakket.
+seo-description: Gebruik fictieve gebruikers en groepen om AEM Forms-taken uit te voeren met behulp van het Wij.Gov-demopakket.
 uuid: 797e301a-36ed-4bae-9ea8-ee77285c786d
 contentOwner: anujkapo
 discoiquuid: ddb3778b-be06-4cde-bc6e-0994efa42b18
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f4dcf58d70ea5a17617ef1e80942de7db3233031
+source-git-commit: d1da42d7274e9a4257b9e8effae2b754e0104aa4
 workflow-type: tm+mt
-source-wordcount: '2464'
+source-wordcount: '2536'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Opstelling de verwijzingsplaats zoals die in [Opstelling wordt beschreven en vor
 
 * AEM Forms
 
-   * Automated Forms Conversion
+   * Automatische Forms-omzetting
    * Authoring
    * Formuliergegevensmodellen/gegevensbronnen
 
@@ -34,7 +34,7 @@ Opstelling de verwijzingsplaats zoals die in [Opstelling wordt beschreven en vor
 
    * Gegevens vastleggen
    * (Optioneel) Gegevensintegratie (MS Dynamics)
-   * (Optioneel) Adobe-handtekening
+   * (Optioneel) Adobe Sign
 
 * Workflow
 * E-mailmeldingen
@@ -64,7 +64,7 @@ Het Wij.Gov-demopakket wordt geleverd met de volgende ingebouwde fictieve gebrui
 
 De volgende groepen zijn eveneens opgenomen:
 
-* **Gebruikers van GV-formulieren**
+* **We.Gov Forms-gebruikers**
 
    * George Lang (lid)
    * Camila Santos (lid)
@@ -77,12 +77,12 @@ De volgende groepen zijn eveneens opgenomen:
 
 ### Demo-overzicht: legenda {#demo-overview-terms-legend}
 
-1. **Imiteren**: Gedefinieerde gebruikers en groepen in AEM-demo.
+1. **Imiteren**: Gedefinieerde gebruikers en groepen in AEM demo.
 1. **Knop**: Gekleurde rechthoek of omcirkelde pijl voor navigatie.
 1. **Klik**: Een handeling uitvoeren in het gebruikersartikel.
 1. **Koppelingen**: Deze bevindt zich boven aan het hoofdmenu op de site Web.Gov.
 1. **Gebruikersinstructies**: Een reeks numerieke stappen om door het verhaal van de gebruiker te navigeren.
-1. **Formulierportal**: *https://&lt;aemserver>:&lt;port>/content/we-gov/formsportal.html*
+1. **Forms Portal**: *https://&lt;aemserver>:&lt;port>/content/we-gov/formsportal.html*
 1. **Mobiele weergave**:Gebruikers van de webserver kunnen een mobiele weergave repliceren met een browser van een andere grootte.
 1. **Bureaubladweergave**: We gov-gebruikers bekijken de demo op een laptop of desktop.
 1. **Pre-screener-formulier**: Formulier op de startpagina van de website Web.Gov.
@@ -90,19 +90,19 @@ De volgende groepen zijn eveneens opgenomen:
 
    *https://&lt;aemserver>:&lt;port>/content/forms/af/adobe-gov-forms/enrollment-application-for-health-benefits.html*
 
-1. **Adobe Web.Gov-site**: *https://&lt;aemserver>:&lt;port>/content/we-gov/home.html*
-1. **Adobe Inbox**: Pictogram [van](assets/bell.svg) Bell van de bovenste menubalk in AEM-achterkant.
+1. **Site** Adobe wij.Gov: *https://&lt;aemserver>:&lt;port>/content/we-gov/home.html*
+1. **Adobe in vak**: Pictogram [van](assets/bell.svg) Bell van de bovenste menubalk in AEM achtergrond.
 
    *https://&lt;aemserver>:&lt;port>/aem/start.html*
 
 1. **E-mailclient**: Voorkeur voor het weergeven van e-mails (Gmail, Outlook)
 1. **CTA**: Oproep tot actie
 1. **Navigeren**: Een specifiek referentiepunt op de browserpagina zoeken.
-1. **AFC**: Automated Forms Conversion
+1. **AFC**: Automatische Forms-omzetting
 
 ## Automated Forms Conversion (Camila) {#automated-forms-conversion}
 
-**Deze sectie**: Camila de CX Lead heeft een bestaand PDF-formulier dat is gebruikt als onderdeel van een papierproces. Als onderdeel van een moderniseringsinspanning wil ze dit PDF-formulier gebruiken om automatisch een nieuwe, moderne adaptieve formulieren te maken.
+**Deze sectie**: Camila de CX Lead heeft een bestaand PDF-formulier dat is gebruikt als onderdeel van een papierproces. Als onderdeel van een moderniseringsinspanning wil ze dit PDF-formulier gebruiken om automatisch een nieuwe, moderne Adaptieve Forms te maken.
 
 ### Automated Forms Conversion - We.Gov (Camila) {#automated-forms-conversion-wegov}
 
@@ -111,7 +111,7 @@ De volgende groepen zijn eveneens opgenomen:
 1. Aanmelden met:
    * **Gebruiker**: camila.santos
    * **Wachtwoord**: password
-1. Selecteer Formulieren > Formulieren en documenten > AEM Forms We.gov-formulieren > AFC op de hoofdpagina.
+1. Selecteer op de hoofdpagina Forms > Forms &amp; Documents > AEM Forms Web.gov Forms > AFC.
 1. Camila uploadt de PDF naar AEM Forms.
 
    ![Formulier uploaden](assets/aftia-upload-form.jpg)
@@ -134,7 +134,7 @@ De volgende groepen zijn eveneens opgenomen:
 
    ![Omzetting controleren](assets/aftia-review-conversion.jpg)
 
-1. Camilla begint vervolgens met het bewerken van het formulier dat ze selecteert in Hoofdvenster > Bewerken (de moersleutel) > Tabs bovenaan selecteren in het vervolgkeuzemenu Indeling deelvenster > Selecteren in het selectievakje.
+1. Camilla begint vervolgens met het bewerken van het formulier. Ze selecteert Hoofdvenster > Bewerken (de moersleutel) > Tabs bovenaan in het vervolgkeuzemenu Indeling deelvenster > Selecteert het selectievakje.
 
    ![Eigenschappen van revisie](assets/aftia-review-properties.jpg)
 
@@ -153,6 +153,9 @@ De volgende groepen zijn eveneens opgenomen:
 1. Klik op de knop Opslaan en sluiten.
 
    ![FDM-selectie](assets/aftia-select-fdm.jpg)
+
+1. Camila klikt op de **uitvoermap** , selecteert het aangepaste formulier en klikt op **Bewerken** om het ingevulde We.Gov-formulier te openen.
+1. Camila selecteert een adaptief formulierveld en klikt op pictogram ![](assets/configure-icon.svg)Configureren. Ze maakt een binding met de entiteiten van het formuliergegevensmodel met het veld **Bindverwijzing** . Ze herhaalt deze stap voor alle velden in het adaptieve formulier.
 
 ### Toegankelijkheidstest formulier (Camila) {#form-accessibility-testing}
 
@@ -245,7 +248,7 @@ Aya moet sommige documenten thuis herzien alvorens zij de toepassing van het de 
 
 1. Ga naar *https://&lt;aemserver>:&lt;port>/content/we-gov/home.html*
 1. Klik in de navigatiebalk op &quot;**Online services**&quot;.
-1. Selecteer in het venster &quot;Conceptformulieren&quot; de bestaande &quot;Inschrijvingstoepassing voor gezondheidsvoordelen&quot;.
+1. Selecteer in het deelvenster &quot;Concept Forms&quot; de bestaande &quot;Inschrijvingstoepassing voor gezondheidsvoordelen&quot;.
 
    ![Inschrijvingsaanvraag voor gezondheidsvoordelen](/help/forms/using/assets/enrollment_application.png)
 
@@ -265,16 +268,16 @@ Aya moet sommige documenten thuis herzien alvorens zij de toepassing van het de 
    >
    >Wanneer Aya het veld Telefoonnummer invult, moet ze het invullen als een doorlopend getal van 11 cijfers zonder streepjes, spaties of afbreekstreepjes.
 
-   Na het verzenden van Aya ontvangt je pagina Bedankt. Naar keuze ontvangt zij ook een e-mail die zij kan openen om het document van verslag elektronisch met het Teken van Adobe te ondertekenen.
+   Na het verzenden van Aya ontvangt je pagina Bedankt. Desgewenst ontvangt zij ook een e-mail die zij kan openen om het document van registratie elektronisch met Adobe Sign te ondertekenen.
 
-### Optioneel: Adobe-handtekening (Aya) {#adobe-sign}
+### Optioneel: Adobe Sign (Aya) {#adobe-sign}
 
 **Gebruikersinstructies:**
 
-1. Navigeer naar uw e-mailclient en zoek de Adobe-e-mail voor ondertekening.
-1. Klik op de koppeling naar Adobe-ondertekening.
+1. Navigeer naar uw e-mailclient en zoek de Adobe Sign-e-mail.
+1. Klik op de koppeling naar Adobe Sign.
 
-   ![Adobe-koppeling voor ondertekenen](/help/forms/using/assets/adobe_sign_link.png)
+   ![Koppeling met Adobe ondertekenen](/help/forms/using/assets/adobe_sign_link.png)
 
 **Gebruikersinstructies:**
 
@@ -327,11 +330,11 @@ Dankzij gegevensintegratie en geautomatiseerde workflows wordt de toepassing van
 
    1. Voeg desgewenst enkele revisienotities rechtstreeks toe in Dynamiek.
 
-1. Sluit en ga terug naar AEM Inbox.
+1. Sluiten en terug naar AEM Postvak IN.
 
    ![MS Dynamics-record](/help/forms/using/assets/ms_dynamics.png)
 
-### Terug naar AEM Inbox (George) {#george-user-story-back-to-aem-inbox}
+### Terug naar AEM Postvak IN (George) {#george-user-story-back-to-aem-inbox}
 
 George keurt de aanvraag van Aya goed en dankzij een bestaande geautomatiseerde workflow wordt ook een bevestigingsbericht naar Aya gestuurd.
 
@@ -350,7 +353,7 @@ George keurt de aanvraag van Aya goed en dankzij een bestaande geautomatiseerde 
 
 **Deze sectie:** Camila de CX Lead organiseert een welkome telefoongesprek met Aya om uit te leggen hoe gebruik kan worden gemaakt van de overheidsdiensten waarvoor ze is goedgekeurd.
 
-### (Optioneel) AEM Inbox &amp; MS Dynamics {#camila-user-story-aem-inbox-ms-dynamics}
+### (Optioneel) AEM Inbox en MS Dynamics {#camila-user-story-aem-inbox-ms-dynamics}
 
 **Gebruikersinstructies:**
 
@@ -386,7 +389,7 @@ George keurt de aanvraag van Aya goed en dankzij een bestaande geautomatiseerde 
    1. Voeg telefoongesprekdetails toe.
    1. Sla het venster op en sluit het.
 
-1. Navigeer weer in AEM naar de linkerbovenhoek en klik op &quot;**Verzenden**&quot; om de toepassing te verzenden.
+1. Navigeer weer in AEM naar de linkerbovenhoek en klik op **Verzenden** om de toepassing te verzenden.
 1. In de modale modus kunt u een bericht achterlaten.
 1. Klik op Gereed.
 
@@ -435,13 +438,13 @@ George keurt de aanvraag van Aya goed en dankzij een bestaande geautomatiseerde 
 
 ## (Optioneel) Formuliergegevensmodel (Camila) {#form-data-model}
 
-**Deze sectie**: Camila navigeert naar de Integraties van Gegevens van AEM Forms waar ze een snelle test kan uitvoeren om te zien dat de informatie die via de integratie van het Model van de Gegevens van het Vorm naar de externe gegevensbron wordt verzonden inderdaad aanwezig is.
+**Deze sectie**: Camila navigeert naar AEM Forms Data Integrations waar ze een snelle test kan uitvoeren om te zien dat de informatie die via de integratie van het formuliergegevensmodel naar de externe gegevensbron wordt verzonden, aanwezig is.
 
 ### Formuliergegevensmodel (Camila) {#form-data-model-camila}
 
 **Deze sectie**: Camila navigeert aan de pagina van Gegevensbronnen om de gegevens te bevestigen die de server binnen het gegevensbestand van Derby heeft herhaald.
 
-1. Als de gebruikerservaring is voltooid en de gebruikersinzending is voltooid, navigeert Camila naar het tabblad Gegevensbronnen in AEM Forms (**Formulieren** > **Gegevensintegratie**)
+1. Als de gebruikerservaring is voltooid en de gebruikersverzending is voltooid, navigeert Camila naar het tabblad Gegevensbronnen in AEM Forms (**Forms** > **Gegevensintegratie**)
 
 1. Camila selecteert vervolgens AEM Forms **We.gov FDM** en bewerkt vervolgens de **We.gov-inschrijving FDM**.
 
@@ -449,7 +452,7 @@ George keurt de aanvraag van Aya goed en dankzij een bestaande geautomatiseerde 
 
    ![Contact opnemen met leesservice](assets/aftia-contact-read-service.jpg)
 
-1. Camila verstrekt dan de testdienst van contactidentiteitskaart en klikt dan op de knoop van de Test.
+1. Camila verstrekt dan de testdienst van contactidentiteitskaart en klikt dan op de knoop van de Test. 1 of 2, bijvoorbeeld als u het formulier hebt verzonden. Als u het formulier niet hebt verzonden, worden er geen gegevens geretourneerd.
 
    ![Contact opnemen met leesservice](assets/aftia-test-service.jpg)
 
@@ -484,14 +487,14 @@ George keurt de aanvraag van Aya goed en dankzij een bestaande geautomatiseerde 
 ### Adobe Analytics Sites Reporting (Camila) {#camila-reviews-sites-reporting-we-gov-adobe-analytics}
 
 1. Ga naar *https://&lt;aemserver>:&lt;port>/sites.html/content*
-1. Selecteer de site **&quot;** AEM Forms We.Gov&quot; om de sitepagina&#39;s weer te geven.
+1. Selecteer de &quot;**AEM Forms We.Gov-site**&quot; om de sitepagina&#39;s weer te geven.
 1. Selecteer een van de sitepagina (bijvoorbeeld Home) en kies &quot;**Analytics &amp; Recommendations**&quot;.
 
-   ![Analytics en Aanbeveling](/help/forms/using/assets/analytics_recommendation.jpg)
+   ![Analyse en aanbeveling](/help/forms/using/assets/analytics_recommendation.jpg)
 
-1. Op deze pagina wordt opgehaalde informatie van Adobe Analytics weergegeven die betrekking heeft op de pagina AEM Sites (OPMERKING: Deze informatie wordt door het ontwerp periodiek vernieuwd vanuit Adobe Analytics en wordt niet in real-time weergegeven).
+1. Op deze pagina wordt opgehaalde informatie van Adobe Analytics weergegeven die betrekking heeft op de AEM Sites-pagina (OPMERKING: Deze informatie wordt door het ontwerp periodiek vernieuwd vanuit Adobe Analytics en wordt niet in real-time weergegeven).
 
-   ![Belangrijke cijfers voor Adobe Analytics](/help/forms/using/assets/analytics_key_metrics.jpg)
+   ![Metrische Adobe Analytics-sleutel](/help/forms/using/assets/analytics_key_metrics.jpg)
 
 1. Terug op de pagina van de paginamening (betreden in stap 3.), kunt u de informatie van de paginamening ook bekijken door de vertoning te veranderen die punten in de &quot;Mening **van de** Lijst&quot;plaatst te bekijken.
 1. Zoek het vervolgkeuzemenu **Weergave** en selecteer **Lijstweergave**.
@@ -512,11 +515,11 @@ George keurt de aanvraag van Aya goed en dankzij een bestaande geautomatiseerde 
 
    *https://&lt;aemserver>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/adobe-gov-forms*
 
-1. Selecteer het adaptieve formulier &quot;**Inschrijvingstoepassing voor gezondheidsvoordelen**&quot; en selecteer de optie &quot;**Analytics-rapport**&quot;.
+1. Selecteer het adaptieve formulier &quot;**Inschrijvingstoepassing voor gezondheidsvoordelen**&quot; en selecteer de optie &quot;**Analyserapport**&quot;.
 
    ![Inschrijvingsaanvraag voor gezondheidsvoordelen](/help/forms/using/assets/analytics_report_benefits.jpg)
 
-1. Wacht tot de pagina is geladen en bekijk de Analytics-rapportgegevens.
+1. Wacht tot de pagina is geladen en bekijk de analysegegevens.
 
-   ![Analytics-rapportgegevens](/help/forms/using/assets/analytics_report_data_updated.jpg)
+   ![Analyserapportgegevens](/help/forms/using/assets/analytics_report_data_updated.jpg)
 

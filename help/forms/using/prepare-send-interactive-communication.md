@@ -8,9 +8,9 @@ topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 110c86ea-9bd8-4018-bfcc-ca33e6b3f3ba
 translation-type: tm+mt
-source-git-commit: 4c4a5a15e9cbb5cc22bc5999fb40f1d6db3bb091
+source-git-commit: 5bbafd9006b04d761ffab218e8480c1e94903bb6
 workflow-type: tm+mt
-source-wordcount: '1614'
+source-wordcount: '2031'
 ht-degree: 0%
 
 ---
@@ -77,6 +77,7 @@ Beheer op het tabblad Inhoud de inhoud, zoals documentfragmenten en inhoudsvaria
       * [Tekstgedeelten markeren](#highlightemphasize)
    * [Speciale tekens](#specialcharacters)
    * [Sneltoetsen](/help/forms/using/keyboard-shortcuts.md)
+
    Voor meer informatie over de acties beschikbaar voor diverse documentfragmenten in het gebruikersinterface van de Agent, zie [Acties en info beschikbaar in het gebruikersinterface](#actionsagentui)van de Agent.
 
 1. Als u een pagina-einde wilt toevoegen aan de afdrukuitvoer van de interactieve communicatie, plaatst u de cursor op de plaats waar u een pagina-einde wilt invoegen en selecteert u Pagina-einde voor of Pagina-einde na ( ![pagina-einde vóór](assets/pagebreakbeforeafter.png)).
@@ -180,7 +181,12 @@ Adobe raadt u aan deze instructies op volgorde uit te voeren om een interactieve
 
 De functie Opslaan als concept is niet standaard ingeschakeld. Voer de volgende stappen uit om de functie in te schakelen:
 
-1. Implementeer de [ccrDocumentInstance](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html) Service Provider Interface (SPI). SPI laat u toe om de ontwerp versie van de Interactieve Mededeling aan het gegevensbestand met een ontwerpidentiteitskaart als uniek herkenningsteken te bewaren.
+1. Implementeer de [ccrDocumentInstance](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html) Service Provider Interface (SPI).
+
+   SPI laat u toe om de ontwerp versie van de Interactieve Mededeling aan het gegevensbestand met een ontwerpidentiteitskaart als uniek herkenningsteken te bewaren. Deze instructies veronderstellen dat u vroegere kennis op hoe te om een bundel te bouwen OSGi gebruikend een Geweven project hebt.
+
+   Voor de implementatie van steekproefSPI, zie [Voorbeeld crDocumentInstance SPI implementatie](#sample-ccrDocumentInstance-spi).
+1. Open `http://<hostname>:<port>/ system/console/bundles` en tik **[!UICONTROL Install/Update]** om de OSGi-bundel te uploaden. Controleer of de status van het geüploade pakket wordt weergegeven als **Actief**. Start de server opnieuw als de status van het pakket niet wordt weergegeven als **Actief**.
 1. Go to `https://'[server]:[port]'/system/console/configMgr`.
 1. Tik op **[!UICONTROL Create Correspondence Configuration]**.
 1. Selecteer **[!UICONTROL Enable Save Using CCRDocumentInstanceService]** en tik op **[!UICONTROL Save]**.
@@ -208,3 +214,233 @@ Nadat u een interactieve communicatie als concept hebt opgeslagen, kunt u deze o
 >[!NOTE]
 >
 >Als u wijzigingen aanbrengt in de interactieve communicatie nadat u deze hebt opgeslagen als concept, kan de conceptversie niet worden geopend.
+
+### Voorbeeld crDocumentInstance SPI-implementatie {#sample-ccrDocumentInstance-spi}
+
+Voer SPI uit om een Interactieve Mededeling als ontwerp te bewaren. `ccrDocumentInstance` Hieronder volgt een voorbeeldimplementatie van de `ccrDocumentInstance` SPI.
+
+```javascript
+package Implementation;
+
+import com.adobe.fd.ccm.ccr.ccrDocumentInstance.api.exception.CCRDocumentException;
+import com.adobe.fd.ccm.ccr.ccrDocumentInstance.api.model.CCRDocumentInstance;
+import com.adobe.fd.ccm.ccr.ccrDocumentInstance.api.services.CCRDocumentInstanceService;
+import org.apache.commons.lang3.StringUtils;
+import org.osgi.service.component.annotations.Component;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.util.*;
+
+
+@Component(service = CCRDocumentInstanceService.class, immediate = true)
+public class CCRDraftService implements CCRDocumentInstanceService {
+
+ private static final Logger logger = LoggerFactory.getLogger(CCRDraftService.class);
+
+ private HashMap<String, Object> draftDataMap = new HashMap<>();
+
+ @Override
+ public String save(CCRDocumentInstance ccrDocumentInstance) throws CCRDocumentException {
+     String documentInstanceName = ccrDocumentInstance.getName();
+     if (StringUtils.isNotEmpty(documentInstanceName)) {
+         logger.info("Saving ccrData with name : {}", ccrDocumentInstance.getName());
+         if (!CCRDocumentInstance.Status.SUBMIT.equals(ccrDocumentInstance.getStatus())) {
+             ccrDocumentInstance = mySQLDataBaseServiceCRUD(ccrDocumentInstance,null, "SAVE");
+         }
+     } else {
+         logger.error("Could not save data as draft name is empty");
+     }
+     return ccrDocumentInstance.getId();
+ }
+
+ @Override
+ public void update(CCRDocumentInstance ccrDocumentInstance) throws CCRDocumentException {
+     String documentInstanceName = ccrDocumentInstance.getName();
+     if (StringUtils.isNotEmpty(documentInstanceName)) {
+         logger.info("Saving ccrData with name : {}", documentInstanceName);
+         mySQLDataBaseServiceCRUD(ccrDocumentInstance, ccrDocumentInstance.getId(), "UPDATE");
+     } else {
+         logger.error("Could not save data as draft Name is empty");
+     }
+ }
+
+ @Override
+ public CCRDocumentInstance get(String id) throws CCRDocumentException {
+     CCRDocumentInstance cCRDocumentInstance;
+     if (StringUtils.isEmpty(id)) {
+         logger.error("Could not retrieve data as draftId is empty");
+         cCRDocumentInstance = null;
+     } else {
+         cCRDocumentInstance = mySQLDataBaseServiceCRUD(null, id,"GET");
+     }
+     return cCRDocumentInstance;
+ }
+
+ @Override
+ public List<CCRDocumentInstance> getAll(String userId, Date creationTime, Date updateTime,
+                                         Map<String, Object> optionsParams) throws CCRDocumentException {
+     List<CCRDocumentInstance> ccrDocumentInstancesList = new ArrayList<>();
+
+     HashMap<String, Object> allSavedDraft = mySQLGetALLData();
+     for (String key : allSavedDraft.keySet()) {
+         ccrDocumentInstancesList.add((CCRDocumentInstance) allSavedDraft.get(key));
+     }
+     return ccrDocumentInstancesList;
+ }
+
+ //The APIs call the service in the database using the following section.
+ private CCRDocumentInstance mySQLDataBaseServiceCRUD(CCRDocumentInstance ccrDocumentInstance,String draftId, String method){
+     if(method.equals("SAVE")){
+
+         String autoGenerateId = draftDataMap.size() + 1 +"";
+         ccrDocumentInstance.setId(autoGenerateId);
+         draftDataMap.put(autoGenerateId, ccrDocumentInstance);
+         return ccrDocumentInstance;
+
+     }else if (method.equals("UPDATE")){
+
+         draftDataMap.put(ccrDocumentInstance.getId(), ccrDocumentInstance);
+         return ccrDocumentInstance;
+
+     }else if(method.equals("GET")){
+
+         return (CCRDocumentInstance) draftDataMap.get(draftId);
+
+     }
+     return null;
+ }
+
+ private HashMap<String, Object> mySQLGetALLData(){
+     return draftDataMap;
+ }
+}
+```
+
+De `save`, `update`, `get`en `getAll` verrichtingen roepen de gegevensbestanddienst om een Interactieve Mededeling als ontwerp te bewaren, een Interactieve Mededeling bij te werken, gegevens van het gegevensbestand terug te winnen, en gegevens voor alle Interactieve Mededelingen terug te winnen beschikbaar in het gegevensbestand. Deze steekproef gebruikt `mySQLDataBaseServiceCRUD` als naam van de gegevensbestanddienst.
+
+In de volgende tabel wordt de voorbeeldimplementatie van de `ccrDocumentInstance` SPI uitgelegd. Het toont aan hoe de `save`, `update`, `get`en `getAll` verrichtingen de gegevensbestanddienst in de steekproefimplementatie roepen.
+
+<table> 
+ <tbody>
+ <tr>
+  <td><p><strong>Bewerking</strong></p></td>
+  <td><p><strong>Voorbeelden van databaseservices</strong></p></td> 
+   </tr>
+  <tr>
+   <td><p>U kunt een concept voor een interactieve communicatie maken of deze rechtstreeks verzenden. De API voor sparen verrichting controleert als Interactieve Communicatie als ontwerp wordt voorgelegd en het een ontwerp naam omvat. De API roept dan de dienst mySQLDataBaseServiceCRUD met sparen als inputmethode.</p></br><img src="assets/save-as-draft-save-operation.png"/></br>[#$sd1_sf1_dp9]</td>
+   <td><p>De mySQLDataBaseServiceCRUD-service verifieert Opslaan als de invoermethode en genereert een automatisch gegenereerde concept-id en retourneert deze naar AEM. De logica om een ontwerpID te produceren kan variëren gebaseerd op het gegevensbestand.</p></br><img src="assets/save-operation-service.png"/></br>[#$sd1_sf1_dp13]</td>
+   </tr>
+  <tr>
+   <td><p>De API voor de updateverrichting wint de status van Interactief Communicatie ontwerp terug en controleert als de Interactieve Communicatie een ontwerpnaam omvat. De API roept de mySQLDataBaseServiceCRUD-service aan om die status in de database bij te werken.</p></br><img src="assets/save-as-draft-update-operation.png"/></br>[#$sd1_sf1_dp17]</td>
+   <td><p>De mySQLDataBaseServiceCRUD dienst verifieert Update als inputmethode en bewaart de status van Interactief Communicatie ontwerp in het gegevensbestand.</br></p><img src="assets/update-operation-service.png"/></td>
+   </tr>
+   <tr>
+   <td><p>De API voor de get-bewerking controleert of de interactieve communicatie een concept-id bevat. De API roept dan de dienst mySQLDataBaseServiceCRUD met krijgen als inputmethode om de gegevens voor de Interactieve Mededeling terug te winnen.</br></p><img src="assets/save-as-draft-get-operation.png"/></td>
+   <td><p>De mySQLDataBaseServiceCRUD dienst verifieert krijgen als inputmethode en wint de gegevens voor de Interactieve Communicatie terug die op ontwerpidentiteitskaart wordt gebaseerd.</p></br><img src="assets/get-operation-service.png"/></br>[#$sd1_sf1_dp29]</td>
+   </tr>
+   <tr>
+   <td><p>De API voor de bewerking getAll roept de mySQLGetALLData-service aan om gegevens op te halen voor alle interactieve communicatie die in de database is opgeslagen.</br></p><img src="assets/save-as-draft-getall-operation.png"/></td>
+   <td><p>De mySQLGetALLData-service haalt gegevens op voor alle interactieve communicatie die in de database is opgeslagen.</p></br><img src="assets/getall-operation-service.png"/></br>[#$sd1_sf1_dp37]</td>
+   </tr>
+  </tbody>
+</table>
+
+Hieronder ziet u een voorbeeld van het `pom.xml` bestand dat deel uitmaakt van de implementatie:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.adobe.livecycle</groupId>
+    <artifactId>draft-sample</artifactId>
+    <version>2.0.0-SNAPSHOT</version>
+
+    <name>Interact</name>
+    <packaging>bundle</packaging>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.adobe.aemfd</groupId>
+            <artifactId>aemfd-client-sdk</artifactId>
+            <version>6.0.122</version>
+        </dependency>
+    </dependencies>
+
+
+    <!-- ====================================================================== -->
+    <!-- B U I L D D E F I N I T I O N -->
+    <!-- ====================================================================== -->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <version>3.3.0</version>
+                <extensions>true</extensions>
+                <executions>
+                    <!--Configure extra execution of 'manifest' in process-classes phase to make sure SCR metadata is generated before unit test runs-->
+                    <execution>
+                        <id>scr-metadata</id>
+                        <goals>
+                            <goal>manifest</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <exportScr>true</exportScr>
+                    <instructions>
+                        <!-- Enable processing of OSGI DS component annotations -->
+                        <_dsannotations>*</_dsannotations>
+                        <!-- Enable processing of OSGI metatype annotations -->
+                        <_metatypeannotations>*</_metatypeannotations>
+                        <Bundle-SymbolicName>${project.groupId}-${project.artifactId}</Bundle-SymbolicName>
+                    </instructions>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <profiles>
+        <profile>
+            <id>autoInstall</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.sling</groupId>
+                        <artifactId>maven-sling-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>install-bundle</id>
+                                <phase>install</phase>
+                                <goals>
+                                    <goal>install</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
+</project>
+```
+
+>[!NOTE]
+>
+>Zorg ervoor dat u de `aemfd-client-sdk` afhankelijkheid in het `pom.xml` bestand bijwerkt naar 6.0.122.

@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: c012d639-c6e6-4f73-bbd8-78a4baa38c17
 translation-type: tm+mt
-source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
+source-git-commit: 2fcd87cd1def7fc265ba40c83b50db86618f3b70
+workflow-type: tm+mt
+source-wordcount: '637'
+ht-degree: 0%
 
 ---
 
@@ -59,7 +62,7 @@ Voor een communautaire plaats, nadat de plaats wordt gepubliceerd en de markerin
 
 Hieronder ziet u hoe het wordt weergegeven in CRXDE wanneer een beheerder leesmachtigingen toepast op `/etc/tags/ski-catalog` de groep `Community Enable Members`.
 
-![chlimage_1-420](assets/chlimage_1-420.png)
+![sitetags](assets/site-tags.png)
 
 ## Catalogustagnaamruimten {#catalog-tag-namespaces}
 
@@ -67,7 +70,7 @@ De catalogusfunctie gebruikt tags om zichzelf te definiëren. Wanneer het vormen
 
 De functie Catalog bevat een taginstelling die de tags definieert die worden vermeld in de filterinterface voor de catalogus. De instelling &quot;Alle naamruimten&quot; verwijst naar het bereik van tagnaamruimten die voor de communitysite zijn geselecteerd.
 
-![chlimage_1-421](assets/chlimage_1-421.png)
+![catalog-naamruimte](assets/catalog-namespace.png)
 
 ## Tags toepassen op Enablement Resources {#applying-tags-to-enablement-resources}
 
@@ -88,7 +91,7 @@ Aldus, om het even welke enablement middelen die met één van worden geëtikett
 
 verschijnt in `Ski Catalog` nadat de enablement resource is gepubliceerd.
 
-![chlimage_1-422](assets/chlimage_1-422.png)
+![basis-info](assets/applytags-basicinfo.png)
 
 ## Catalogus weergeven bij publiceren {#viewing-catalog-on-publish}
 
@@ -100,5 +103,5 @@ Als er tagnaamruimten zijn toegevoegd en ontbreken, controleert u of de tags en 
 
 Als er na het selecteren van een tag tijdens het weergeven van de catalogus geen actiemiddelen worden weergegeven, controleert u of er een tag uit de naamruimte(n) van de catalogus is toegepast op de resource enablement.
 
-![chlimage_1-423](assets/chlimage_1-423.png)
+![view-catalog](assets/viewcatalog.png)
 

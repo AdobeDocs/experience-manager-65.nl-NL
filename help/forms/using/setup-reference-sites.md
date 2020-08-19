@@ -1,8 +1,8 @@
 ---
 title: Opstelling en vorm de plaatsen van de de zelfdienstverwijzing van Web.Finance en van de Werknemer
 seo-title: Opstelling en vorm de plaatsen van de de zelfdienstverwijzing van Web.Finance en van de Werknemer
-description: De de verwijzingsplaatsen van AEM Forms tonen hoe u AEM Forms kunt gebruiken om werkschema's van begin tot eind in een organisatie uit te voeren.
-seo-description: De de verwijzingsplaatsen van AEM Forms tonen hoe u AEM Forms kunt gebruiken om werkschema's van begin tot eind in een organisatie uit te voeren.
+description: AEM Forms-referentiesites laten zien hoe u AEM Forms kunt gebruiken om end-to-end workflow in een organisatie te implementeren.
+seo-description: AEM Forms-referentiesites laten zien hoe u AEM Forms kunt gebruiken om end-to-end workflow in een organisatie te implementeren.
 uuid: 199349b7-97bd-4eca-a2e7-19d6708fcbee
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,9 +10,9 @@ topic-tags: introduction
 discoiquuid: 03886dd3-5873-4908-912b-fbbddb26c322
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 371ecbdaad97b7111353f40d1ddfb686e99d46c5
+source-git-commit: b0e071cb3bf972ceaa2af3b70a7887557e6f10f9
 workflow-type: tm+mt
-source-wordcount: '2802'
+source-wordcount: '2839'
 ht-degree: 0%
 
 ---
@@ -20,16 +20,18 @@ ht-degree: 0%
 
 # Opstelling en vorm de plaatsen van de de zelfdienstverwijzing van Web.Finance en van de Werknemer{#set-up-and-configure-we-finance-and-employee-self-service-reference-sites}
 
-AEM Forms bieden implementatie van referentiesites om aan te tonen hoe AEM Forms organisaties in de financiële-dienstensector en de overheid helpen bij het omvormen van hun complexe transacties in eenvoudige en aansprekende digitale ervaringen op elk gewenst moment.
+AEM Forms biedt implementatie van referentiesite om aan te tonen hoe AEM Forms organisaties van de Financial Services Industry en de overheid helpt om hun complexe transacties om te zetten in eenvoudige en aantrekkelijke digitale ervaringen op elk apparaat, waar en wanneer dan ook.
 
 Wij.De financiële referentieplaats trekt echte gebruiksgevallen om met bestaande en potentiële klanten, van het punt van eerste aanraking tot het beheren van correspondentie en transacties op een gepersonaliseerde en rendabele manier te werken.
+
+Installeer de de verwijzingspakketten van Wij.Gov en Web.Finance gebruikend de Distributie [van de](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html)Software. Voor meer informatie, zie de pakketten [van de](#refsite)verwijzingsplaatsen opstellen.
 
 Met de referentiesites kunt u de volgende belangrijke mogelijkheden van AEM Forms verkennen en weergeven.
 
 * Vereenvoudigde ontwerpervaring met aantrekkelijke en responsieve adaptieve formulieren en interactieve communicatie.
 * Interactieve Mededelingen om interactieve, gepersonaliseerde, en ontvankelijke klantenmededelingen tot stand te brengen die aan het apparaat het plaatsen en de lay-out aanpassen.
 * Gegevensintegratie om verbinding te maken met verschillende gegevensbronnen om formuliergegevens vooraf in te vullen en te verzenden via een formuliergegevensmodel.
-* Forms workflow om bedrijfsprocessen en workflows te automatiseren.
+* Forms-workflow om bedrijfsprocessen en workflows te automatiseren.
 * Geavanceerde mogelijkheden voor gegevensbeheer en -verwerking door gebruikers.
 * Integratie met Adobe Sign om adaptieve formulieren veilig te ondertekenen en te verzenden.
 * Integratie met Adobe Target voor gerichte aanbevelingen en A/B-tests om het rendement van investeringen vanuit een formulier te maximaliseren.
@@ -46,14 +48,14 @@ De referentiesites bieden herbruikbare elementen die u als sjablonen kunt gebrui
 
 Voordat u de referentiesite instelt, moet u het volgende doen:
 
-* **AEM-essentiële onderdelen** AEM QuickStart, AEM Forms add-on-pakket en referentiesite-pakketten. Zie de versies [van](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) AEM Forms voor toe:voegen-op en de pakketdetails van verwijzingsplaatsen.
+* **AEM essentiële onderdelen** AEM QuickStart-, AEM Forms-add-on-pakket en referentiesite-pakketten. Zie [AEM Forms-releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) voor informatie over pakketten met invoegtoepassingen en referentiesites.
 
 * **Een dienst** SMTP U kunt om het even welke dienst gebruiken SMTP.
 
-* **Adobe Sign-ontwikkelaarsaccount en Adobe Sign API-toepassing** Adobe Sign Developer account is vereist voor het gebruik van mogelijkheden voor digitale ondertekening. Zie [Adobe-ondertekening](https://acrobat.adobe.com/us/en/why-adobe/developer-form.html).
+* **Adobe Sign-ontwikkelaarsaccount en Adobe Sign API-toepassing** Voor het gebruik van digitale ondertekeningsmogelijkheden is een Adobe Sign-ontwikkelaarsaccount vereist. Zie [Adobe Sign](https://acrobat.adobe.com/us/en/why-adobe/developer-form.html).
 
-* Een lopende instantie van de Dynamiek 365 van Microsoft om met AEM Forms te integreren. Om de verwijzingsplaats in werking te stellen, voert u de steekproefgegevens in de instantie van de Dynamiek van Microsoft in om de interactieve mededeling vooraf in te vullen die in de verwijzingsplaats wordt gebruikt.
-* Een actieve instantie van AEM met het pakket Forms add-on. Voor meer informatie, zie het [Installeren en het vormen AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md).
+* Een lopende instantie van de Dynamica 365 van Microsoft om met AEM Forms te integreren. Om de verwijzingsplaats in werking te stellen, voert u de steekproefgegevens in de instantie van de Dynamiek van Microsoft in om de interactieve mededeling vooraf in te vullen die in de verwijzingsplaats wordt gebruikt.
+* Een actieve instantie van AEM met Forms add-on pakket. Zie AEM Forms [](../../forms/using/installing-configuring-aem-forms-osgi.md)installeren en configureren voor meer informatie.
 
 Voer de volgende stappen in de geadviseerde opeenvolging uit aan opstelling en vorm de verwijzingsplaatsen.
 
@@ -67,7 +69,7 @@ Voer de volgende stappen in de geadviseerde opeenvolging uit aan opstelling en v
   <tr>
    <td><a href="#installandconfigureaemform">AEM Forms installeren en configureren</a></td>
    <td>Auteur en publicatie</td>
-   <td>Installeer en configureer de auteur van AEM Forms en publiceer instanties.</td>
+   <td>Installeer en configureer de AEM Forms-auteur en publiceer instanties.</td>
   </tr>
   <tr>
    <td><a href="#ssl">SSL configureren</a></td>
@@ -92,12 +94,12 @@ Voer de volgende stappen in de geadviseerde opeenvolging uit aan opstelling en v
   <tr>
    <td><a href="#aemds">AEM DS-instellingen configureren</a></td>
    <td>Auteur</td>
-   <td>Configureer AEM DS voor het verzenden van formulieren op publicatieexemplaar en verwerkingsworkflows op de auteurinstantie.</td>
+   <td>Configureer AEM DS voor het verzenden van formulieren op een publicatie-instantie en verwerkingsworkflows op de auteurinstantie.</td>
   </tr>
   <tr>
    <td><a href="#refsite">Referentiesites implementeren</a></td>
    <td>Auteur</td>
-   <td>Implementeer pakketten met referentiesites op de auteur-instantie van AEM Forms.</td>
+   <td>Implementeer pakketten met referentiesites op de auteur van AEM Forms.</td>
   </tr>
   <tr>
    <td><a href="../../forms/using/setup-reference-sites.md#optional-import-sample-data-into-microsoft-dynamics">Voorbeeldgegevens importeren in Microsoft Dynamics</a></td>
@@ -107,7 +109,7 @@ Voer de volgende stappen in de geadviseerde opeenvolging uit aan opstelling en v
   <tr>
    <td><a href="../../forms/using/setup-reference-sites.md#configure-oauth-cloud-service-for-microsoft-dynamics">De OAuth-cloudservice voor Microsoft Dynamics configureren</a></td>
    <td>Auteur en publicatie</td>
-   <td>Vorm de OAuth wolkendienst in AEM Forms om communicatie tussen AEM Forms en de Dynamiek van Microsoft toe te laten. </td>
+   <td>Configureer de OAuth-cloudservice in AEM Forms om communicatie tussen AEM Forms en Microsoft Dynamics mogelijk te maken. </td>
   </tr>
   <tr>
    <td><a href="#scheduler">Adobe Sign Scheduler configureren</a></td>
@@ -115,7 +117,7 @@ Voer de volgende stappen in de geadviseerde opeenvolging uit aan opstelling en v
    <td>Verander de configuratie van de planner om status om de twee minuten te controleren.</td>
   </tr>
   <tr>
-   <td><a href="#sign-service">Referentiesite configureren, Adobe Sign Cloud Service</a></td>
+   <td><a href="#sign-service">Referentie-site Adobe Sign-Cloud Service configureren</a></td>
    <td>Author and Publish<br /> </td>
    <td>Een configuratie die met de pakketten van verwijzingsplaatsen komt en herconfiguratie met geldige geloofsbrieven vereist.</td>
   </tr>
@@ -134,7 +136,7 @@ Voer de volgende stappen in de geadviseerde opeenvolging uit aan opstelling en v
 
 ## AEM Forms installeren en configureren {#installandconfigureaemform}
 
-Installeer en stel AEM Forms zoals die in het [Installeren en het vormen AEM Forms op OSGi](../../forms/using/installing-configuring-aem-forms-osgi.md)worden beschreven op.
+Installeer en implementeer AEM Forms zoals beschreven in AEM Forms [installeren en configureren op OSGi](../../forms/using/installing-configuring-aem-forms-osgi.md).
 
 >[!NOTE]
 >
@@ -204,20 +206,20 @@ Nadat u de SMTP-server hebt geconfigureerd, probeert u een formulier in te vulle
 
 ## AEM DS-instellingen configureren {#aemds}
 
-AEM DS de montages van de Dienst worden vereist op de Publish instantie voor e-mailmededelingen in de gevallen van het het gebruik van de verwijzingsplaats. Voor gedetailleerde stappen om AEM DS de opstelling van de Dienst op de Publish instantie te vormen, zie [montages](../../forms/using/configuring-the-processing-server-url-.md)AEM DS vormen.
+AEM de montages van de Dienst van DS worden vereist op de Publish instantie voor e-mailmededelingen in de gevallen van het het gebruik van de verwijzingsplaats. Voor gedetailleerde stappen om AEM de opstelling van de Dienst te vormen DS op de Publish instantie, zie [vormen AEM montages](../../forms/using/configuring-the-processing-server-url-.md)DS.
 
-Geef in de AEM DS Settings Service voor AEM Forms-referentiesites de URL van de publicatieserver op in plaats van de URL van de verwerkingsserver.
+Voor AEM Forms-referentiesites geeft u in de AEM DS Settings Service de URL van de publicatieserver op in plaats van de URL van de verwerkingsserver.
 
 >[!CAUTION]
 >
->Plaats niet `/lc` in URL van de verwerkingsserver als u het voor AEM Forms OSGi vormt.
+>Plaats de URL van de verwerkingsserver niet `/lc` in als u deze voor AEM Forms OSGi configureert.
 
 ## Referentiesites implementeren {#refsite}
 
 Installeer de pakketten met referentiesites met behulp van [Software Distribution](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html).
 
-* [Sitepakket AEM Forms FSI](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffd%2FAEM-FORMS-6.5-FSI-REF-SITE)
-* [Sitepakket AEM Forms Gov](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffd%2FAEM-FORMS-6.5-GOV-REF-SITE)
+* [AEM Forms FSI Reference Site Package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffd%2FAEM-FORMS-6.5-FSI-REF-SITE)
+* [AEM Forms We.Gov-demopakket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=168&amp;package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fwe-gov-forms.pkg.all-2.0.2.zip)
 
 Meer over leren hoe te om pakketten te gebruiken, zie [hoe te met Pakketten](/help/sites-administering/package-manager.md)werken.
 
@@ -234,7 +236,7 @@ De toepassing van de huishypotheek en de plaatsen van de autoverzekeringstoepass
 
 U kunt als volgt de aangepaste entiteit importeren voor de toepassing voor automatische verzekering:
 
-1. Download het **pakket met oplossingen WebFinanceAutoInsurance_1_0.zip** via `https://'[server]:[port]'/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/WeFinanceAutoInsurance_1_0.zip` de AEM-auteur.
+1. Download het pakket **WebFinanceAutoInsurance_1_0.zip** oplossing van `https://'[server]:[port]'/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/WeFinanceAutoInsurance_1_0.zip` op uw AEM auteurinstantie.
 1. Ga in de instantie van Microsoft Dynamics naar **Instellingen > Oplossingen** en klik op **Importeren**. Selecteer en importeer het pakket.
 
 U kunt als volgt de aangepaste entiteit importeren voor de toepassing voor automatische verzekering:
@@ -245,7 +247,7 @@ U kunt als volgt de aangepaste entiteit importeren voor de toepassing voor autom
 
 De gegevens van de klant en het verzekeringspolis importeren:
 
-1. Download de bestanden **We.Finance Customers.csv, We.Finance Auto Insurance Renewals.csv**, en **home hypotheek** op de volgende locaties op uw AEM-auteur:
+1. Download de bestanden **We.Finance Customers.csv, We.Finance Auto Insurance Renewals.csv**, en **home hypotheek** op de volgende locaties op uw AEM auteur-exemplaar:
 
    * `https://'server':[port/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/We.Finance Customers.csv`
    * `https://'server':[port/content/aemforms-refsite-collaterals/we-finance/auto-insurance/ms-dynamics/We.Finance Auto Insurance Renewals.csv`
@@ -261,13 +263,13 @@ De gegevens van de klant en het verzekeringspolis importeren:
 
 ## De OAuth-cloudservice voor Microsoft Dynamics configureren {#configure-oauth-cloud-service-for-microsoft-dynamics}
 
-Vorm de OAuth wolkendienst in AEM Forms om communicatie tussen AEM Forms en de Dynamiek van Microsoft toe te laten. Voer de volgende stappen uit om de Cloud Service OAuth op auteur te vormen AEM en instanties te publiceren:
+Configureer de OAuth-cloudservice in AEM Forms om communicatie tussen AEM Forms en Microsoft Dynamics mogelijk te maken. Voer de volgende stappen uit om de Cloud Service OAuth op AEM auteur te vormen en instanties te publiceren:
 
-1. Ga in de auteur van AEM naar **Gereedschappen** > **Cloud Servicen** > **Gegevensbronnen** > **Algemeen**. Tik op het pictogram Dynamische integratie **van** opnieuw plaatsen en tik op Eigenschappen.
+1. Ga bij AEM auteur naar **Gereedschappen** > **Cloud Services** > **Gegevensbronnen** > **Algemeen**. Tik op het pictogram Dynamische integratie **van** opnieuw plaatsen en tik op Eigenschappen.
 1. Ga naar Microsoft Azure Active Directory-account. Voeg de gekopieerde URL voor de configuratie van de cloudservice toe aan de instelling **Reageren-URL** voor uw geregistreerde toepassing. Sla de configuratie op.
 1. In het lusje van de Montages van de Authentificatie, specificeer de Wortel **van de** Dienst, **Cliënt Id**, Geheime **** Cliënt, en **Middel URL** voor uw instantie van de Dynamica van Microsoft. Klik op **Verbinding maken met OAuth** die wordt omgeleid naar de aanmeldingspagina voor Microsoft Dynamics.
-1. Geef uw aanmeldingsgegevens op. Nadat u zich hebt aangemeld, wordt u omgeleid naar de configuratiepagina van de cloudservice van AEM Forms. Klik op **Opslaan en sluiten**. De configuratie van de cloudservice wordt opgeslagen.
-1. Ga naar **Forms** > **Data Integrations** > **We.Finance**. Selecteer Automatische verzekering (dynamiek) en klik op Bewerken. De entiteiten van de Dynamiek van Microsoft zijn vermeld onder de Bronnen van Gegevens tabel. Wacht tot alle entiteiten van de Dynamiek van Microsoft worden opgehaald en onder de gegevensbronnen tabel worden vermeld.
+1. Geef uw aanmeldingsgegevens op. Nadat u zich hebt aangemeld, wordt u omgeleid naar de configuratiepagina van de AEM Forms-cloudservice. Klik op **Opslaan en sluiten**. De configuratie van de cloudservice wordt opgeslagen.
+1. Ga naar **Forms** > **Gegevensintegratie** > **We.Finance**. Selecteer Automatische verzekering (dynamiek) en klik op Bewerken. De entiteiten van de Dynamiek van Microsoft zijn vermeld onder de Bronnen van Gegevens tabel. Wacht tot alle entiteiten van de Dynamiek van Microsoft worden opgehaald en onder de gegevensbronnen tabel worden vermeld.
 1. Selecteer de entiteit **AutoInsuranceRenewal** en klik op **Modelobject** testen. Geef in de sectie met invoerverzoeken de waarde voor de klant-id op als &quot;900001&quot; en klik op **Testen**. De sectie van de Output toont de verslagen die van de Dynamica van Microsoft voor klantenidentiteitskaart 900001 worden gehaald.
 1. Geef in de sectie met invoerverzoeken de waarde voor de klant-id op als &quot;900001&quot; en klik op **Testen**. De sectie van de Output toont de verslagen die van de Dynamica van Microsoft voor klantenidentiteitskaart 900001 worden gehaald.
 1. Herhaal stap 1-6 op de publicatie-instantie.
@@ -276,13 +278,13 @@ Vorm de OAuth wolkendienst in AEM Forms om communicatie tussen AEM Forms en de D
 
 Doe het volgende op zowel auteur als publicatieinstanties:
 
-1. Ga naar AEM Web Configuration Console op `https://'[server]:[port]'system/console/configMgr`.
+1. Ga naar AEM webconfiguratieconsole bij `https://'[server]:[port]'system/console/configMgr`.
 1. Zoek en tik **[!UICONTROL Adobe Sign Configuration Service]** om het te openen voor configuratie.
 1. Vorm **[!UICONTROL Status Update Scheduler Expression]** als **0 0/2 * * *?**.
 
    >[!NOTE]
    >
-   >De bovenstaande plannerconfiguratie controleert de status van de Adobe-ondertekeningsservice elke twee minuten.
+   >De bovenstaande plannerconfiguratie controleert de status van de dienst van Adobe Sign om de twee minuten.
 
 1. Tik op **[!UICONTROL Save]**.
 
@@ -290,21 +292,21 @@ Doe het volgende op zowel auteur als publicatieinstanties:
 
 Doe het volgende op zowel auteur als publicatieinstanties:
 
-1. Ga naar **Gereedschappen** > **Cloud Servicen** > **Adobe-ondertekening** > **Algemeen**. Selecteer **AEM Forms Referentie-site ondertekenen** en tik op Eigenschappen.
+1. Ga naar **Gereedschappen** > **Cloud Services** > **Adobe Sign** > **Algemeen**. Selecteer **AEM Forms Reference Site Sign** en tik Eigenschappen.
 
    >[!CAUTION]
    >
    >Zorg ervoor dat de `https://[host]:[ssl_port]/mnt/overlay/adobesign/cloudservices/adobesign/properties.html` URL wordt toegevoegd aan de lijst voor omleiding van de OAuth-configuratie van de Adobe Sign API-toepassing.
 
-1. Geef de client-id en het geheim van de OAuth-configuratie voor de Adobe-toepassing ondertekenen op.
-1. (Optioneel) Selecteer de **[!UICONTROL Enable Adobe Sign for attachments also]** optie en tik op **[!UICONTROL Connect to Adobe Sign]**. De bestanden die zijn gekoppeld aan een adaptief formulier, worden toegevoegd aan het corresponderende Adobe Sign-document dat is verzonden voor ondertekening.
-1. Tik met uw Adobe-ondertekeningsgegevens op **[!UICONTROL Connect to Adobe Sign]** en meld u aan.
+1. Geef de client-id en het geheim van de OAuth-configuratie van de Adobe Sign-toepassing op.
+1. (Optioneel) Selecteer de **[!UICONTROL Enable Adobe Sign for attachments also]** optie en tik op **[!UICONTROL Connect to Adobe Sign]**. De bestanden die zijn gekoppeld aan een adaptief formulier, worden toegevoegd aan het corresponderende Adobe Sign-document dat ter ondertekening is verzonden.
+1. Tik op **[!UICONTROL Connect to Adobe Sign]** en meld u aan met uw Adobe Sign-referenties.
 
 ## Forms Common Configuration Service configureren {#anonymous}
 
 Ga als volgt te werk op de publicatie-instantie om toegang tot anonieme gebruikers toe te staan:
 
-1. Ga naar AEM Web Configuration Console op `https://'[server]:[port]'/system/console/configMgr`.
+1. Ga naar AEM webconfiguratieconsole bij `https://'[server]:[port]'/system/console/configMgr`.
 1. Zoek en tik **[!UICONTROL Forms Common Configuration Service]** om het te openen voor configuratie.
 1. Configureer het **[!UICONTROL Allow]** veld voor **[!UICONTROL All Users]**.
 1. Tik op **[!UICONTROL Save]**.
@@ -317,7 +319,7 @@ Doe het volgende op zowel auteur als publicatieinstanties:
 1. Navigeer naar **/conf/global/settings/cloudconfigs/fdm/roi-rest/jcr:content/swaggerFile** en open het gameterbestand.
 1. Werk de host- en poortinstellingen naar wens bij in uw omgeving.
 1. Sla de instellingen op.
-1. (Alleen **** instantie Auteur) Ga naar **Gereedschappen** > **Cloud Servicen** > **Gegevensbronnen** > **Algemeen**. Selecteer **de rij-rij** en tik **Eigenschappen**.Tik de Montages **van de** Authentificatie van de Tik en reeks het Type **van** Authentificatie aan **Basisauthentificatie**. Geef `admin`/ op `admin`als gebruikersnaam/wachtwoord voor toegang tot de service. Tik op **Opslaan en sluiten**.
+1. (Alleen **** instantie Auteur) Ga naar **Gereedschappen** > **Cloud Services** > **Gegevensbronnen** > **Algemeen**. Selecteer **de rij-rij** en tik **Eigenschappen**.Tik de Montages **van de** Authentificatie van de Tik en reeks het Type **van** Authentificatie aan **Basisauthentificatie**. Geef `admin`/ op `admin`als gebruikersnaam/wachtwoord voor toegang tot de service. Tik op **Opslaan en sluiten**.
 
 ## Integreren met Marketing Cloud {#integrate-with-marketing-cloud}
 
@@ -327,55 +329,55 @@ Ga als volgt te werk om Adobe Analytics en Adobe Target in AEM Forms te configur
 
 ### Adobe Analytics configureren {#configureanalytics}
 
-Dankzij de integratie van AEM Forms met Adobe Analytics kunt u controleren en analyseren hoe uw klanten omgaan met uw formulieren en documenten. Hiermee kunt u probleemgebieden herkennen en corrigeren en de conversiesnelheid verhogen.
+Dankzij de AEM Forms-integratie met Adobe Analytics kunt u controleren en analyseren hoe uw klanten omgaan met uw formulieren en documenten. Hiermee kunt u probleemgebieden herkennen en corrigeren en de conversiesnelheid verhogen.
 
-Als u deze functionaliteit wilt ervaren op de referentiesite, configureert u uw Analytics-account zoals beschreven in Analytics [Configuring en Reports](../../forms/using/configure-analytics-forms-documents.md).
+Om deze functionaliteit in verwijzingsplaats te ervaren, vorm uw account Analytics zoals die in het [Vormen van analyses en rapporten](../../forms/using/configure-analytics-forms-documents.md)wordt beschreven.
 
 Om een rapport te produceren, worden de zaadgegevens gebundeld met de verwijzingsplaatsen. Voer de volgende handelingen uit voordat u zaadgegevens gebruikt:
 
-1. Zorg ervoor dat wij.Finance analytische configuraties beschikbaar zijn in de AEM cloud services. U kunt cloudservices op een van de volgende manieren vinden:
+1. Zorg ervoor dat wij.Finance analytische configuraties beschikbaar zijn in de AEM Cloud Services. U kunt cloudservices op een van de volgende manieren vinden:
 
    * Navigeer naar https://&lt;host>:&lt;port>/libs/cq/core/content/tools/cloudservices.html. **[!UICONTROL Tools>Cloud Services>Legacy Cloud Services]**
-   * Klik op de **[!UICONTROL Cloud Services]** pagina onder **[!UICONTROL Adobe Analytics]** de sectie `Show Configurations`. U kunt de beschikbare configuraties van Web.Finance zien. Klik om de configuratie te openen. Klik op de configuratiepagina **[!UICONTROL Edit]**. Geef een geldig bedrijf, gebruikersnaam, gedeeld geheim (wachtwoord) en datacenter op en klik op **[!UICONTROL Connect to Analytics]**. Als het dialoogvenster Verbinding gelukt is, klikt u op **[!UICONTROL OK]** het configuratiedialoogvenster. Configureer het framework onder de Analytics-configuratie zoals beschreven in de [Configuring Analytics and Reports](../../forms/using/configure-analytics-forms-documents.md).
+   * Klik op de **[!UICONTROL Cloud Services]** pagina onder **[!UICONTROL Adobe Analytics]** de sectie `Show Configurations`. U kunt de beschikbare configuraties van Web.Finance zien. Klik om de configuratie te openen. Klik op de configuratiepagina **[!UICONTROL Edit]**. Geef een geldig bedrijf, gebruikersnaam, gedeeld geheim (wachtwoord) en datacenter op en klik op **[!UICONTROL Connect to Analytics]**. Als het dialoogvenster Verbinding gelukt is, klikt u op **[!UICONTROL OK]** het configuratiedialoogvenster. Vorm het kader onder de configuratie van Analytics zoals die in het [Vormen Analytics en Rapporten](../../forms/using/configure-analytics-forms-documents.md)wordt beschreven.
 
 1. Ga naar https://&lt;*host*>:&lt;*port*>/system/console/configMgr en voer de volgende handelingen uit:
 
    * Zoek en klik op de **[!UICONTROL Web Console Configuration]** pagina **[!UICONTROL AEM Forms Analytics Configuration]**.
 
-   * Op het **[!UICONTROL SiteCatalyst Framework]** gebied van de dialoog van de Configuratie van AEM Forms Analytics, selecteer wij-financiert (wij-financiert) of wij-gov (wij-gov).
+   * Selecteer op het **[!UICONTROL SiteCatalyst Framework]** gebied van de dialoog van de Configuratie van de Analyse van AEM Forms, wij-financiert (wij-financiert) of wij-gov (wij-gov).
    * Klik **[!UICONTROL Save]** en laat de pagina verfrissen.
 
 1. Ga naar formulierbeheer op https://&lt;host>:&lt;port>/aem/forms en voer de volgende handelingen uit:
 
    * Open de map Web.Finance en selecteer het formulier waarvoor u het rapport wilt weergeven.
-   * Klik op Analytics inschakelen op de werkbalk Handelingen. Nadat u analyses voor het formulier hebt ingeschakeld, klikt u op Analytics-rapport. Er wordt een leeg rapport gegenereerd. Nadat een leeg rapport wordt geproduceerd, moet u zaadgegevens verstrekken die van refsite pakket worden verscheept om analytische rapport voor demodoel te produceren.
+   * Klik op Analyses inschakelen op de werkbalk Handelingen. Nadat u analyses voor het formulier hebt ingeschakeld, klikt u op Analyserapport. Er wordt een leeg rapport gegenereerd. Nadat een leeg rapport wordt geproduceerd, moet u zaadgegevens verstrekken die van refsite pakket worden verscheept om analytische rapport voor demodoel te produceren.
 
    Referentiesites bieden analyses die gegevens bevatten over de aanvraag van een creditcard, hypotheek op woningen en gebruik van kinderondersteuning.
 
-### Target configureren {#configure-target}
+### Doel configureren {#configure-target}
 
-De referentiesite toont de integratie van AEM Forms met Adobe Target, waarmee u doelgerichte en gepersonaliseerde inhoud kunt opnemen in adaptieve documenten. Ook kunnen er A/B-tests voor adaptieve formulieren worden gemaakt.
+De referentiesite laat de integratie zien van AEM Forms met Adobe Target, waarmee u gerichte en gepersonaliseerde inhoud kunt opnemen in adaptieve documenten. Ook kunnen er A/B-tests voor adaptieve formulieren worden gemaakt.
 
-Ga als volgt te werk om Target in AEM te configureren, zodat u de integratie in de referentiesite kunt ervaren:
+Ga als volgt te werk om Doel in AEM te configureren voor de integratie in de verwijzingssite:
 
 1. Start de auteur quickstart met het jvm-argument `-Dabtesting.enabled=true` om A/B-tests op de server in te schakelen.
 
    >[!NOTE]
    >
-   >Als de instantie AEM op JBoss loopt, die als dienst van de installatie van de Sleutel is begonnen, voeg de `-Dabtesting.enabled=true` parameter in de volgende ingang in het `jboss\bin\standalone.conf.bat` dossier toe:
+   >Als de AEM-instantie wordt uitgevoerd op JBoss, die is gestart als een service van de Turnkey-installatie, voegt u de `-Dabtesting.enabled=true` parameter toe aan de volgende vermelding in het `jboss\bin\standalone.conf.bat` bestand:
    `set "JAVA_OPTS=%JAVA_OPTS% -Dadobeidp.serverName=server1 -Dfile.encoding=utf8 -Djava.net.preferIPv4Stack=true -Dabtesting.enabled=true"`
 
 1. Ga naar `https://<hostname>:<port>/libs/cq/core/content/tools/cloudservices.html`.
 
-1. Klik in de **[!UICONTROL Adobe Target]** sectie op **[!UICONTROL Show Configurations]**. U kunt de beschikbare Configuratie van de Configuratie van Wij.Financiën Target zien. Klik om de configuratie te openen. Klik op de configuratiepagina **[!UICONTROL Edit]**. Het **[!UICONTROL Edit Component]** dialoogvenster voor de configuratie wordt geopend.
+1. Klik in de **[!UICONTROL Adobe Target]** sectie op **[!UICONTROL Show Configurations]**. U kunt de beschikbare Configuratie van het Doel van Web zien. Klik om de configuratie te openen. Klik op de configuratiepagina **[!UICONTROL Edit]**. Het **[!UICONTROL Edit Component]** dialoogvenster voor de configuratie wordt geopend.
 
-1. Geef uw clientcode, e-mail en wachtwoord op die aan uw Target-account zijn gekoppeld. Selecteer API-type als **[!UICONTROL REST]**.
-1. Klik op **[!UICONTROL Connect to Adobe target]**. Klik op de knop Target-account als de configuratie is voltooid. **[!UICONTROL OK]** U kunt zien dat de verpakte configuratie een Target Framework heeft.
+1. Geef uw clientcode, e-mail en wachtwoord op die aan uw doelaccount zijn gekoppeld. Selecteer API-type als **[!UICONTROL REST]**.
+1. Klik op **[!UICONTROL Connect to Adobe target]**. Klik op de knop Doelaccount als de configuratie is voltooid. **[!UICONTROL OK]** U kunt zien de verpakte configuratie een Kader van het Doel heeft.
 
 1. Go to `https://<hostname>:<port>/system/console/configMgr`.
 
 1. Klik op **[!UICONTROL AEM Forms Target Configuration]**.
-1. Selecteer een Target-framework.
+1. Selecteer een doelframework.
 1. Geef in het **[!UICONTROL Target URLs]** veld de URL op naar AEM Forms. Bijvoorbeeld: `https://<hostname>:<port>/`.
 
 1. Klik op **[!UICONTROL Save]**.

@@ -10,14 +10,17 @@ topic-tags: administering
 content-type: reference
 discoiquuid: e228f1db-91ea-4ec3-86da-06d89d74bc72
 translation-type: tm+mt
-source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
+source-git-commit: 7acd89d830b9e758eec1b5a4beb18c22e4d12dcf
+workflow-type: tm+mt
+source-wordcount: '1491'
+ht-degree: 2%
 
 ---
 
 
 # Solr Configuratie voor SRP {#solr-configuration-for-srp}
 
-## Solr voor AEM-platform {#solr-for-aem-platform}
+## Solr. voor AEM Platform {#solr-for-aem-platform}
 
 Een [installatie van Apache Solr](https://lucene.apache.org/solr/) kan tussen de [knoopopslag](../../help/sites-deploying/data-store-config.md) (Oak) en [gemeenschappelijke opslag](working-with-srp.md) (SRP) door verschillende inzamelingen worden gedeeld te gebruiken.
 
@@ -80,7 +83,8 @@ sh./scripts/cloud-scripts/zkcli.sh \
 #### 2. Een verzameling maken {#create-a-collection}
 
 Referentie:
-[https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create](https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create)
+[https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create
+](https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create)
 
 Gebruik:
 ./bin/solr create \
@@ -107,9 +111,9 @@ sh./scripts/cloud-scripts/zkcli.sh \
 
 ### Vergelijking van standaard en geavanceerde MLS {#comparison-of-standard-and-advanced-mls}
 
-Meertalig zoeken (MLS) voor AEM-gemeenschappen is ontworpen om het Solr-platform te voorzien in verbeterde zoekopdrachten in alle ondersteunde talen, waaronder het Engels.
+Meertalig zoeken (MLS) voor AEM Communities is ontwikkeld voor het Solr-platform, zodat alle ondersteunde talen, waaronder het Engels, beter kunnen worden doorzocht.
 
-MLS voor AEM-gemeenschappen is beschikbaar als standaard MLS of geavanceerde MLS. Standaard MLS bevat alleen Solr-configuratie-instellingen en sluit insteekmodules of bronbestanden uit. Geavanceerde MLS is de uitgebreidere oplossing en bevat zowel de configuratie-instellingen voor Solr als plug-ins en bijbehorende bronnen
+MLS voor AEM gemeenschappen is beschikbaar als Standaard MLS of Geavanceerde MLS. Standaard MLS bevat alleen Solr-configuratie-instellingen en sluit insteekmodules of bronbestanden uit. Geavanceerde MLS is de uitgebreidere oplossing en bevat zowel de configuratie-instellingen voor Solr als plug-ins en bijbehorende bronnen
 
 Standaard MLS bevat verbeteringen voor het zoeken naar inhoud voor de volgende talen:
 
@@ -139,11 +143,11 @@ In alle gevallen worden de volgende 33 talen ondersteund in Advanced MLS.
 | Fins | Lets | Thai |
 | Frans | Litouws | Turks |
 
-#### Vergelijking van AEM 6.1 Solr onderzoek, Standaard MLS en Geavanceerde MLS {#comparison-of-aem-solr-search-standard-mls-and-advanced-mls}
+#### Vergelijking van AEM 6.1 Solr zoeken, Standaard MLS en Geavanceerde MLS {#comparison-of-aem-solr-search-standard-mls-and-advanced-mls}
 
-**Opmerking**: AEM 6.1 verwijst naar AEM 6.1 Community FP3 en eerder.
+**Opmerking**: AEM 6.1 verwijst naar AEM 6.1 KP3 en lager.
 
-![chlimage_1-283](assets/chlimage_1-283.png)
+![compare-solr-mls](assets/compare-solr-mls.png)
 
 ### Standaard MLS installeren {#installing-standard-mls}
 
@@ -156,7 +160,7 @@ Standaard MLS-bestanden (schema.xml, solrconfig.xml) voor Solr 4.10.
 
 Standaard MLS-bestanden (schema.xml, solrconfig.xml) voor Solr 5.x.
 
-De standaard MLS-bestanden worden opgeslagen in de AEM-opslagruimte.
+De standaard MLS-bestanden worden opgeslagen in de AEM opslagplaats.
 
 **Opmerking**: Terwijl de Solr dossiers in msrp/ omslag worden opgeslagen, zijn zij ook voor DSRP (geen noodzakelijke veranderingen).
 
@@ -221,7 +225,7 @@ Voor het Geavanceerde pakket MLS, zie [AEM Geavanceerde MLS](deploy-communities.
 
 Ga als volgt te werk om aan de slag te gaan met de installatie voor de zelfstandige of SolrCloud-modus:
 
-* Download het zip-archief van AEM-SOLR-MLS naar de server die Solr host.
+* Download AEM-SOLR-MLS zip archief naar de server die Solr host.
 * Pak het archief uit.
 
 #### SolrCloud-modus - Geavanceerde MLS {#solrcloud-mode-advanced-mls}

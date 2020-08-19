@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 63abeda4-6ea1-4b45-b188-f9c6b44ca0cd
 translation-type: tm+mt
-source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
+source-git-commit: 7acd89d830b9e758eec1b5a4beb18c22e4d12dcf
+workflow-type: tm+mt
+source-wordcount: '1141'
+ht-degree: 0%
 
 ---
 
@@ -19,17 +22,18 @@ source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
 
 ## Inleiding {#introduction}
 
-Vanaf AEM Communities 6.1, wordt de communautaire inhoud, die algemeen als gebruiker geproduceerde inhoud (UGC) wordt bedoeld, opgeslagen in één enkele, gemeenschappelijke opslag die door een leverancier van [opslagmiddelen](working-with-srp.md) (SRP) wordt verstrekt.
+Vanaf AEM Communities 6.1 wordt de inhoud van de gemeenschap, die algemeen als gebruiker geproduceerde inhoud (UGC) wordt bedoeld, opgeslagen in één enkele, gemeenschappelijke opslag die door een leverancier van [opslagmiddelen](working-with-srp.md) (SRP) wordt verstrekt.
 
-Er zijn verscheidene opties SRP, die allen tot UGC door een nieuwe interface van Gemeenschappen toegang hebben AEM, [SocialResourceProvider API](srp-and-ugc.md) (SRP API), die allen creeert, leest, update, en schrapt (CRUD) verrichtingen omvat.
+Er zijn verscheidene opties SRP, die allen tot UGC door een nieuwe interface van AEM Communities, [SocialResourceProvider API](srp-and-ugc.md) (SRP API) toegang hebben, die allen creeer, lezen, bijwerken, en schrapt (CRUD) verrichtingen omvat.
 
 Alle componenten SCF worden uitgevoerd gebruikend SRP API, toestaand code om zonder kennis van of de [onderliggende topologie](topologies.md) of plaats van UGC worden ontwikkeld.
 
-***De API voor SocialResourceProvider is alleen beschikbaar voor klanten met een licentie van AEM-gemeenschappen.***
+***De API voor SocialResourceProvider is alleen beschikbaar voor klanten met een licentie van AEM Communities.***
 
 >[!NOTE]
 >
 >**Aangepaste componenten**: Voor gelicentieerde klanten van AEM Communities, is SRP API beschikbaar aan ontwikkelaars van douanecomponenten voor de toegang tot van UGC ongeacht de onderliggende topologie. Zie Hoofdzaak [SRP en UGC](srp-and-ugc.md).
+
 
 Zie ook:
 
@@ -39,15 +43,15 @@ Zie ook:
 
 ## Informatie over de opslagplaats {#about-the-repository}
 
-Om SRP te begrijpen, is het nuttig om de rol van de bewaarplaats AEM (OAK) in een AEM communautaire plaats te begrijpen.
+Om SRP te begrijpen, is het nuttig om de rol van de AEM bewaarplaats (OAK) in een AEM communautaire plaats te begrijpen.
 
 **Java Content Repository (JCR)** Deze standaard definieert een gegevensmodel en een programmeerinterface voor toepassingen ([JCR API](https://jackrabbit.apache.org/jcr/jcr-api.html)) voor opslagruimten voor inhoud. Het combineert kenmerken van conventionele dossiersystemen met die van relationele gegevensbestanden, en voegt een aantal extra eigenschappen toe die inhoudstoepassingen vaak nodig hebben.
 
-Eén implementatie van JCR is de AEM-opslagplaats, OAK.
+Eén implementatie van JCR is de AEM opslagplaats, OAK.
 
-**Apache Jackrabbit Oak (OAK)**[OAK](../../help/sites-deploying/platform.md) is een implementatie van JCR 2.0. Dit is een gegevensopslagsysteem dat speciaal is ontworpen voor inhoudgerichte toepassingen. Dit is een soort hiërarchische database die is ontworpen voor ongestructureerde en semi-gestructureerde gegevens. De dataopslag slaat niet alleen de gebruikersgerichte inhoud op, maar ook alle code, sjablonen en interne gegevens die door de toepassing worden gebruikt. De UI voor de toegang tot van inhoud is [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md).
+**Apache Jackrabbit Oak (OAK)**[OAK](../../help/sites-deploying/platform.md) is een implementatie van JCR 2.0. Dit is een gegevensopslagsysteem dat speciaal is ontworpen voor inhoudgerichte toepassingen. Dit is een soort hiërarchische database die is ontworpen voor ongestructureerde en semi-gestructureerde gegevens. De dataopslag slaat niet alleen de gebruikersgerichte inhoud op, maar ook alle code, sjablonen en interne gegevens die door de toepassing worden gebruikt. De interface voor het benaderen van inhoud is [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md).
 
-Zowel JCR als OAK worden doorgaans gebruikt om naar de AEM-opslagplaats te verwijzen.
+Zowel JCR als OAK worden typisch gebruikt om naar de AEM bewaarplaats te verwijzen.
 
 Nadat u site-inhoud hebt ontwikkeld in de omgeving van de privéauteur, moet u deze kopiëren naar de openbare publicatieomgeving. Dit wordt vaak gedaan door een verrichting genoemd *[replicatie](deploy-communities.md#replication-agents-on-author)*. Dit gebeurt onder controle van de auteur/ontwikkelaar/beheerder.
 
@@ -68,9 +72,9 @@ Wanneer UGC aan gedeelde opslag wordt bewaard, is er één enkel geval van lidin
 
 ### ASRP {#asrp}
 
-In het geval van ASRP, wordt UGC niet opgeslagen in JCR, wordt het opgeslagen in de wolkendienst die door Adobe wordt ontvangen en wordt beheerd. UGC die in ASRP is opgeslagen, kan niet worden weergegeven met CRXDE Lite en kan niet worden benaderd via de JCR API.
+In het geval van ASRP, wordt UGC niet opgeslagen in JCR, wordt het opgeslagen in de wolkendienst die door Adobe wordt ontvangen en wordt beheerd. UGC die in ASRP is opgeslagen, kan niet met CRXDE Lite worden bekeken en kan niet worden benaderd met behulp van de JCR API.
 
-Zie [ASRP - Adobe Storage Resource Provider](asrp.md).
+Zie [ASRP - de Leverancier](asrp.md)van het Middel van de Opslag van Adobe.
 
 Ontwikkelaars hebben niet rechtstreeks toegang tot de UGC.
 
@@ -88,13 +92,13 @@ MSRP gebruikt Solr voor vragen.
 
 ### JSRP {#jsrp}
 
-JSRP is de standaardleverancier voor de toegang tot van al UGC op één enkele instantie AEM. Het verstrekt de capaciteit om AEM Gemeenschappen 6.1 zonder de behoefte aan vestiging MSRP of ASRP snel te ervaren.
+JSRP is de standaardleverancier voor de toegang tot van al UGC op één enkele AEM instantie. Het verstrekt de capaciteit om AEM Communities 6.1 zonder de behoefte aan vestiging MSRP of ASRP snel te ervaren.
 
 Zie [JSRP - JCR Storage Resource Provider](jsrp.md).
 
-In het geval van JSRP, terwijl UGC wordt opgeslagen in JCR, en toegankelijk via zowel CRXDE Lite als JCR API, wordt het sterk geadviseerd dat JCR API nooit wordt gebruikt om dit te doen, anders kunnen toekomstige veranderingen douanecode beïnvloeden.
+In het geval van JSRP, terwijl UGC wordt opgeslagen in JCR, en toegankelijk via zowel CRXDE Lite als JCR API, wordt ten zeerste geadviseerd dat JCR API nooit wordt gebruikt om dit te doen, anders kunnen toekomstige veranderingen douanecode beïnvloeden.
 
-Bovendien wordt de opslagplaats voor de auteur- en publicatieomgevingen niet gedeeld. Hoewel een cluster met publicatie-instanties resulteert in een gedeelde publicatierecorder, is UGC die tijdens publicatie wordt ingevoerd, niet zichtbaar voor de auteur, zodat de auteur de UGC niet kan beheren. UGC blijft alleen behouden in de AEM-opslagruimte (JCR) van het exemplaar waarop de UGC is ingevoerd.
+Bovendien wordt de opslagplaats voor de auteur- en publicatieomgevingen niet gedeeld. Hoewel een cluster met publicatie-instanties resulteert in een gedeelde publicatierecorder, is UGC die tijdens publicatie wordt ingevoerd, niet zichtbaar voor de auteur, zodat de auteur de UGC niet kan beheren. UGC blijft alleen behouden in de AEM repository (JCR) van de instantie waarin het werd ingevoerd.
 
 JSRP gebruikt de indexen van het Eak voor vragen.
 

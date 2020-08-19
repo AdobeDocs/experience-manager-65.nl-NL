@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 33c85af4-4c56-487a-ba60-55211cb9f72c
 translation-type: tm+mt
-source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
+source-git-commit: 2fcd87cd1def7fc265ba40c83b50db86618f3b70
+workflow-type: tm+mt
+source-wordcount: '361'
+ht-degree: 0%
 
 ---
 
@@ -43,7 +46,7 @@ Componenten moeten worden geconfigureerd om abonnementen *en* volgende mogelijkh
 
 ## Abonnementen van volgende {#subscriptions-from-following}
 
-![chlimage_1-5](assets/chlimage_1-5.png)
+![abonnement-volgende](assets/subscription-following.png)
 
 Met de knop **Volgen** kunt u items opvolgen als activiteiten, abonnementen en/of meldingen. Telkens wanneer de knop **Volgen** is geselecteerd, kunt u een selectie in- of uitschakelen.
 
@@ -61,9 +64,9 @@ Als e-mail is [geconfigureerd voor het beantwoorden via e-mail](email.md#configu
 
 Als ze op het e-mailbericht reageren, wordt de inhoud die ze in het antwoord invoeren, online weergegeven als inhoud.
 
-![chlimage_1-6](assets/chlimage_1-6.png)
+![e-mailantwoord](assets/email-reply.png)
 
 De hoeveelheid tijd die nodig is om een antwoord te verzenden, wordt bepaald door het updateinterval [van de](email.md#configure-polling-importer)stemgerechtigde importeur.
 
-![chlimage_1-7](assets/chlimage_1-7.png)
+![QA](assets/qa.png)
 

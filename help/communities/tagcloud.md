@@ -10,7 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 23a5a65e-774d-4789-9659-09e8be0c2bcd
 translation-type: tm+mt
-source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
+source-git-commit: 2fcd87cd1def7fc265ba40c83b50db86618f3b70
+workflow-type: tm+mt
+source-wordcount: '534'
+ht-degree: 0%
 
 ---
 
@@ -37,33 +40,35 @@ Ga voor de benodigde informatie naar [Community Components Basics](basics.md).
 
 Wanneer de [vereiste client-side bibliotheken](tag.md#essentials-for-client-side) worden opgenomen, wordt de `Social Tag Cloud` component als volgt weergegeven:
 
-![chlimage_1-303](assets/chlimage_1-303.png)
+![social-tag](assets/social-tag.png)
 
 ## Cloud voor sociale tags configureren {#configuring-social-tag-cloud}
 
 Selecteer de geplaatste `Social Tag Cloud` component die u wilt openen en selecteer het `Configure` pictogram waarmee het dialoogvenster Bewerken wordt geopend.
 
-![chlimage_1-304](assets/chlimage_1-304.png)
+![vormen](assets/configure-new.png)
 
-Geef op onder het tabblad **[!UICONTROL Sociale tag Cloud]** op welke tags u wilt weergeven en geef, als de tags actieve koppelingen zijn, de locatie van de pagina op voor de zoekresultaten:
+Geef op onder het **[!UICONTROL Social Tag Cloud]** tabblad op welke tags u wilt weergeven en, als de tags actieve koppelingen zijn, de locatie van de pagina voor de zoekresultaten:
 
-![chlimage_1-305](assets/chlimage_1-305.png)
+![social-tag-cloud](assets/social-tag-cloud.png)
 
-* **[!UICONTROL Sociale tags die moeten worden weergegeven]** Identificeren welke UGC-tags moeten worden weergegeven. De pull-down opties zijn:
+* **[!UICONTROL Social Tags to Display]**
+Bepaal welke UGC-tags moeten worden weergegeven. De pull-down opties zijn:
 
    * `From page and child pages`
    * `All tags`
+
    De standaardinstelling is `From page and child pages`, waarbij &quot;pagina&quot; verwijst naar de onderstaande **pagina** -instelling.
 
-* **[!UICONTROL Pagina]**
+* **[!UICONTROL Page]**
 
    (Vereist als niet `All tags)` de weg aan UGC voor een pagina. Standaard is de huidige pagina als deze leeg blijft.
 
-* **[!UICONTROL Geen koppelingen op tags]**
+* **[!UICONTROL No links on tags]**
 
-   Als deze optie is ingeschakeld, worden de labels in de labelcloud weergegeven als onbewerkte tekst. Als deze optie is uitgeschakeld, worden de tags weergegeven als actieve koppelingen die zoeken op alle inhoud waarop de tag wordt toegepast. De optie Standaard is uitgeschakeld en de optie Pad **[!UICONTROL zoekresultaat]** moet zijn ingesteld.
+   Als deze optie is ingeschakeld, worden de labels in de labelcloud weergegeven als onbewerkte tekst. Als deze optie is uitgeschakeld, worden de tags weergegeven als actieve koppelingen die zoeken op alle inhoud waarop de tag wordt toegepast. De optie Standaard is uitgeschakeld en moet **[!UICONTROL Search Result Path]** worden ingesteld.
 
-* **[!UICONTROL Resultaatpad zoeken]**
+* **[!UICONTROL Search Result Path]**
 
    Het pad naar een pagina waarop een `Search Result` component is geplaatst, geconfigureerd om te verwijzen naar UGC, dat het UGC-pad bevat dat is opgegeven door de instelling **Pagina** .
 
@@ -71,11 +76,11 @@ Geef op onder het tabblad **[!UICONTROL Sociale tag Cloud]** op welke tags u wil
 
 Als u de weergave van de **sociale-tagcloud** wilt bewerken, voert u de [ontwerpmodus](../../help/sites-authoring/default-components-designmode.md) in en dubbelklikt u op de geplaatste `Social Tag Cloud` component om een dialoogvenster met een extra tabblad te openen.
 
-Geef op het tabblad **[!UICONTROL Sociale tag - Cloud (Ontwerp)]** op hoe tags moeten worden weergegeven. Een tag kan een eenvoudige tag zijn, een enkel woord in de standaardnaamruimte of een hiërarchische taxonomie:
+Geef op het **[!UICONTROL Social Tag Cloud (Design)]** tabblad op hoe tags moeten worden weergegeven. Een tag kan een eenvoudige tag zijn, een enkel woord in de standaardnaamruimte of een hiërarchische taxonomie:
 
-![chlimage_1-306](assets/chlimage_1-306.png)
+![social-tag-cloud-design](assets/social-tag-cloud-design.png)
 
-* **[!UICONTROL Volledige-titelpaden tonen]**
+* **[!UICONTROL Show full title paths]**
 
    Als deze optie is ingeschakeld, worden de titels voor de bovenliggende tags en naamruimte voor elke toegepaste tag weergegeven.
 
@@ -83,11 +88,12 @@ Geef op het tabblad **[!UICONTROL Sociale tag - Cloud (Ontwerp)]** op hoe tags m
 
    * Ingeschakeld: `Geometrixx Media: Gadgets / Cars`
    * Niet ingeschakeld: `Cars`
+
    Er is geen verschil voor een eenvoudige tag.
 
    De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Alleen bladlabels tonen]**
+* **[!UICONTROL Show only leaf tags]**
 
    Als deze optie is ingeschakeld, worden alleen toegepaste tags weergegeven die geen andere tags bevatten.
 
@@ -100,16 +106,17 @@ Geef op het tabblad **[!UICONTROL Sociale tag - Cloud (Ontwerp)]** op hoe tags m
    `Geometrixx Media (the namespace)`, `Gadgets`en `Cars`
 
    * Ingeschakeld: Alleen `Cars` wordt weergegeven, indien toegepast.
-   * Niet ingeschakeld: `Geometrixx Media` en `Gadgets``Cars` ook worden weergegeven, indien van toepassing.
+   * Niet ingeschakeld: `Geometrixx Media` en `Gadgets``Cars` worden weergegeven, indien van toepassing.
+
    Een eenvoudige tag is een bladtag.
 
    De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Koppelingssjabloon]**
+* **[!UICONTROL Link Template]**
 
    Een andere sjabloon dan een standaard die wordt gebruikt om de koppelingen in een tagcloud weer te geven wanneer koppelingen zijn ingeschakeld via het dialoogvenster voor bewerken van componenten.
 
-* **[!UICONTROL Dezelfde grootte voor alle tags]**
+* **[!UICONTROL Same size for all tags]**
 
    Als deze optie is ingeschakeld, worden alle woorden in de tagcloud dezelfde stijl toegewezen. Als deze optie is uitgeschakeld, worden woorden anders opgemaakt op basis van hun gebruik. De optie Standaard is uitgeschakeld.
 

@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 404582ab-bb4c-4775-9ae3-17356d376dca
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 391893f7cf83c018d29af14200c6f160b6d83bdd
+source-git-commit: 18f401babef4cb2aad47e6e4cbb0500b0f8365e2
 workflow-type: tm+mt
 source-wordcount: '2108'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 # Moderatieconsole {#moderation-console}
 
-In AEM Communities, is de bulk [moderatie van communautaire inhoud](/help/communities/moderate-ugc.md) mogelijk van zowel de auteur als publiceert milieu&#39;s door beheerders en communautaire moderatoren (vertrouwde op communautaire leden die als moderators worden toegewezen).
+In AEM Communities, is de bulk [moderatie van communautaire inhoud](/help/communities/moderate-ugc.md) van zowel auteur als publicatiemilieu&#39;s door beheerders en communautaire moderatoren (vertrouwde op communautaire leden die als moderators worden toegewezen) mogelijk.
 
 Beheerders en moderatoren van de gemeenschap kunnen ook [in-context moderatie](/help/communities/in-context.md) in het publicatiemilieu uitvoeren.
 
@@ -241,13 +241,13 @@ Naast de filters uit de doos in de Rail van de [Filter](/help/communities/modera
 
 ![custom-tag-filter](assets/custom-tag-filter.png)
 
-Het [voorbeeldproject](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/master/aem-communities-moderation-filter) op Github implementeert het filter Tag om de UGC-lijst te filteren op basis van of de specifieke tags worden toegepast op door de gebruiker gegenereerde inhoud. U kunt de voorbeeldcode volgen en analoge filters voor andere vergelijkbare UGC-metagegevensvelden maken.
+Het [voorbeeldproject](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/main/aem-communities-moderation-filter) op Github implementeert het filter Tag om de UGC-lijst te filteren op basis van of de specifieke tags worden toegepast op door de gebruiker gegenereerde inhoud. U kunt de voorbeeldcode volgen en analoge filters voor andere vergelijkbare UGC-metagegevensvelden maken.
 
 Het voorbeeld voor het filter Codes installeren:
 
 1. Open pakketbeheer op AEM Author ([https://[aem-auteur]:4502/crx/packmgr/index.jsp](https://aem65-communities-demo.corp.adobe.com:4502/crx/packmgr/index.jsp))-instantie en AEM Publish ([https://[aem-publish]:4503/crx/packmgr/index.jsp](https://aem65-communities-demo.corp.adobe.com:4502/crx/packmgr/index.jsp))-instantie.
 1. Bouw het pakket `com.adobe.social.sample.moderation.filter.ui.apps-1.0-SNAPSHOT.zip` op basis van de Github-code en installeer het pakket en schakel het in.
-1. Open de bundelconsole op AEM Author ( `https://[aem-author]:4502/system/console/bundles`) instantie en AEM Publish ( `https://[aem-publish]:4503/system/console/bundles`) instantie.
+1. Open de bundelconsole op AEM Author ( `https://[aem-author]:4502/system/console/bundles`)-instantie en AEM Publish ( `https://[aem-publish]:4503/system/console/bundles`)-instantie.
 1. Bouw het pakket ` [com](https://sample-moderation-filter.com/).adobe.social.sample.moderation.filter.core-1.0-SNAPSHOT.jar` van Github, en installeer en laat het zelfde toe.
 1. Ga naar het knooppunt **/apps/social/moderation/facets** op AEM Author ([https://[aem-auteur]:4502/crx/de/index.jsp#/apps/social/moderation/facets](https://aem65-communities-demo.corp.adobe.com:4502/crx/de/index.jsp#/apps/social/moderation/facets)) en AEM Publish ([https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facets](https://aem65-communities-demo.corp.adobe.com:4502/crx/de/index.jsp#/apps/social/moderation/facets)).
 1. Voeg een technische gebruiker toe **gemeenschappen-nut-lezer** met `jcr:read` toestemmingen.

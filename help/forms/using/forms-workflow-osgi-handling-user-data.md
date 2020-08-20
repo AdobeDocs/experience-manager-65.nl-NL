@@ -1,6 +1,6 @@
 ---
-title: Forms-centric workflows op OSGi| Gebruikersgegevens verwerken
-seo-title: Forms-centric workflows op OSGi| Gebruikersgegevens verwerken
+title: Forms-gecentreerde workflows op OSGi | Gebruikersgegevens verwerken
+seo-title: Forms-gecentreerde workflows op OSGi | Gebruikersgegevens verwerken
 description: 'null'
 seo-description: 'null'
 uuid: 6eefbe84-6496-4bf8-b065-212aa50cd074
@@ -8,19 +8,22 @@ topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 4e0709031aca030e50840811a9b3717f3cb20340
+workflow-type: tm+mt
+source-wordcount: '1003'
+ht-degree: 0%
 
 ---
 
 
-# Forms-centric workflows op OSGi| Gebruikersgegevens verwerken {#forms-centric-workflows-on-osgi-handling-user-data}
+# Forms-gecentreerde workflows op OSGi | Gebruikersgegevens verwerken {#forms-centric-workflows-on-osgi-handling-user-data}
 
-Met Forms-centric AEM-workflows kunt u real-world Forms-centric bedrijfsprocessen automatiseren. Workflows bestaan uit een reeks stappen die worden uitgevoerd in een volgorde die is opgegeven in het bijbehorende workflowmodel. Elke stap voert een specifieke actie uit zoals het toewijzen van een taak aan een gebruiker of het verzenden van een e-mailbericht. Workflows kunnen communiceren met middelen in de opslagplaats, gebruikersaccounts en services. Daarom kunnen workflows complexe activiteiten coördineren die elk aspect van Experience Manager omvatten.
+Met Forms-gerichte AEM-workflows kunt u real-world Forms-gerichte bedrijfsprocessen automatiseren. Workflows bestaan uit een reeks stappen die worden uitgevoerd in een volgorde die is opgegeven in het bijbehorende workflowmodel. Elke stap voert een specifieke actie uit zoals het toewijzen van een taak aan een gebruiker of het verzenden van een e-mailbericht. Workflows kunnen communiceren met middelen in de opslagplaats, gebruikersaccounts en services. Daarom kunnen werkstromen ingewikkelde activiteiten coördineren die om het even welk aspect van Experience Manager impliceren.
 
 Een op formulieren gerichte workflow kan op een van de volgende manieren worden geactiveerd of gestart:
 
-* Een toepassing verzenden vanuit AEM Inbox
-* Een toepassing verzenden vanuit de AEM Forms App
+* Een toepassing verzenden vanuit AEM Postvak In
+* Een toepassing verzenden vanuit AEM [!DNL Forms] app
 * Een adaptief formulier indienen
 * Een controlemap gebruiken
 * Een interactieve communicatie of een brief indienen
@@ -29,7 +32,7 @@ Voor meer informatie over Forms-centric AEM werkschema&#39;s en mogelijkheden, z
 
 ## Gebruikersgegevens en gegevensopslag {#user-data-and-data-stores}
 
-Wanneer een werkstroom wordt geactiveerd, wordt automatisch een lading gegenereerd voor de werkstroominstantie. Aan elke werkstroominstantie wordt een unieke instantie-id en een bijbehorende ladings-id toegewezen. De payload bevat de opslaglocaties voor gebruikers- en formuliergegevens die zijn gekoppeld aan een workflowexemplaar. Daarnaast worden concepten en historische gegevens voor een werkstroominstantie ook opgeslagen in de AEM-opslagplaats.
+Wanneer een werkstroom wordt geactiveerd, wordt automatisch een lading gegenereerd voor de werkstroominstantie. Aan elke werkstroominstantie wordt een unieke instantie-id en een bijbehorende ladings-id toegewezen. De payload bevat de opslaglocaties voor gebruikers- en formuliergegevens die zijn gekoppeld aan een workflowexemplaar. Daarnaast worden concepten en historische gegevens voor een werkstroominstantie ook opgeslagen in de AEM opslagplaats.
 
 De standaardopslagplaatsen waar lading, concepten, en geschiedenis van een werkschemainstantie verblijven zijn als volgt:
 
@@ -41,8 +44,8 @@ De standaardopslagplaatsen waar lading, concepten, en geschiedenis van een werks
  <tbody>
   <tr>
    <td> </td>
-   <td>AEM 6.4-vormen</td>
-   <td>AEM 6.3-formulieren</td>
+   <td><b>AEM 6.4 [!DNL Forms]</b></td>
+   <td><b>AEM 6.3 [!DNL Forms]</b></td>
   </tr>
   <tr>
    <td><strong>Workflow- <br /> instantie</strong></td>
@@ -74,22 +77,24 @@ U kunt gebruikersgegevens uit een werkstroominstantie in de gegevensopslagruimte
 U kunt de resultaten echter niet identificeren of dubbelzinnig weergeven wanneer u werkstromen identificeert die aan een aanvrager zijn gekoppeld in de volgende scenario&#39;s:
 
 * **Workflow geactiveerd door een gecontroleerde map**: Een workflowinstantie kan niet worden geïdentificeerd met de initiator als de workflow wordt geactiveerd door een gecontroleerde map. In dit geval wordt de gebruikersinformatie gecodeerd in de opgeslagen gegevens.
-* **Workflow gestart vanaf AEM-instantie** publiceren: Alle workflowinstanties worden gemaakt met behulp van een servicegebruiker wanneer adaptieve formulieren, interactieve communicatie of letters worden verzonden vanuit een AEM-publicatie-instantie. In deze gevallen wordt de gebruikersnaam van de aangemelde gebruiker niet vastgelegd in de gegevens van de workflowinstantie.
+* **Workflow gestart vanaf AEM instantie** publiceren: Alle workflowinstanties worden gemaakt met behulp van een servicegebruiker wanneer adaptieve formulieren, interactieve communicatie of letters vanuit AEM publicatie-instantie worden verzonden. In deze gevallen wordt de gebruikersnaam van de aangemelde gebruiker niet vastgelegd in de gegevens van de workflowinstantie.
 
 ### Gebruikersgegevens openen {#access}
 
 Voer de volgende stappen uit om gebruikersgegevens te identificeren en te benaderen die voor een workflowinstantie zijn opgeslagen:
 
-1. Ga in de AEM-auteurinstantie naar `https://'[server]:[port]'/crx/de` en navigeer naar **[!UICONTROL Gereedschappen > Query]**.
+1. Ga bij AEM instantie van de auteur naar `https://'[server]:[port]'/crx/de` en navigeer naar **[!UICONTROL Tools > Query]**.
 
-   Selecteer **[!UICONTROL SQL2]** in de keuzelijst **[!UICONTROL Type]** .
+   Selecteer **[!UICONTROL SQL2]** in de **[!UICONTROL Type]** vervolgkeuzelijst.
 
 1. Voer afhankelijk van de beschikbare informatie een van de volgende query&#39;s uit:
 
    * Voer het volgende uit als de werkstroominitiator bekend is:
+
    `SELECT &ast; FROM [cq:Workflow] AS s WHERE ISDESCENDANTNODE([path-to-workflow-instances]) and s.[initiator]='*initiator-ID*'`
 
    * Voer het volgende uit als de gebruiker van wie u gegevens vindt de huidige werkschema toegewezen is:
+
    `SELECT &ast; FROM [cq:WorkItem] AS s WHERE ISDESCENDANTNODE([path-to-workflow-instances]) and s.[assignee]='*assignee-id*'`
 
    De query retourneert de locatie van alle werkstroominstanties voor de opgegeven werkstroominitiator of de huidige werkstroomontvanger.
@@ -116,13 +121,13 @@ Voer de volgende stappen uit om gebruikersgegevens te identificeren en te benade
 
 1. Herhaal stap 3 - 5 voor alle werkstroominstanties die door de query in stap 2 zijn geretourneerd.
 
->[!NOTE]
->
->In de app AEM Forms worden ook gegevens opgeslagen in de offlinemodus. Het is mogelijk dat gegevens voor een workflowinstantie lokaal worden opgeslagen op afzonderlijke apparaten en naar de Forms-server worden verzonden wanneer de app synchroniseert met de server.
+   >[!NOTE]
+   >
+   >AEM [!DNL Forms] app slaat ook gegevens op in de offlinemodus. Het is mogelijk dat gegevens voor een workflowinstantie lokaal op afzonderlijke apparaten worden opgeslagen en naar de [!DNL Forms] server worden verzonden wanneer de app met de server synchroniseert.
 
 ### Gebruikersgegevens verwijderen {#delete-user-data}
 
-U moet een AEM-beheerder zijn om gebruikersgegevens uit workflowinstanties te verwijderen door de volgende stappen uit te voeren:
+U moet een AEM beheerder zijn om gebruikersgegevens uit workflowinstanties te verwijderen door de volgende stappen uit te voeren:
 
 1. Volg de instructies in de gebruikersgegevens [van de](/help/forms/using/forms-workflow-osgi-handling-user-data.md#access) Toegang en neem nota van het volgende:
 
@@ -134,11 +139,12 @@ U moet een AEM-beheerder zijn om gebruikersgegevens uit workflowinstanties te ve
 1. Voer deze stap uit voor workflowinstanties in de status **RUNNING**, **SUSPENDED** of **STALE** :
 
    1. Ga naar `https://'[server]:[port]'/aem/start.html` en login met beheerdergeloofsbrieven.
-   1. Navigeer naar **[!UICONTROL Gereedschappen > Workflow > Instanties]**.
-   1. Selecteer relevante workflowinstanties voor de gebruiker en tik op **[!UICONTROL Beëindigen]** om actieve exemplaren te beëindigen.
-   Zie Workflowinstanties [beheren voor meer informatie over het werken met workflowinstanties](/help/sites-administering/workflows-administering.md).
+   1. Ga naar **[!UICONTROL Tools > Workflow> Instances]**.
+   1. Selecteer relevante workflowinstanties voor de gebruiker en tik **[!UICONTROL Terminate]** om actieve exemplaren te beëindigen.
 
-1. Ga naar de console van CRXDE Lite, navigeer aan de nuttige weg voor een werkschemainstantie, en schrap de `payload` knoop.
+      Zie Workflowinstanties [beheren voor meer informatie over het werken met workflowinstanties](/help/sites-administering/workflows-administering.md).
+
+1. Ga naar [!DNL CRXDE Lite] console, navigeer naar het payload pad voor een workflowinstantie en verwijder het `payload` knooppunt.
 1. Navigeer naar het pad naar concepten voor een werkstroominstantie en verwijder het `draft` knooppunt.
 1. Navigeer naar het historiepad voor een workflowinstantie en verwijder het `history` knooppunt.
 1. Navigeer naar het pad van de workflowinstantie voor een workflowinstantie en verwijder het `[workflow-instance-ID]` knooppunt voor de workflow.
@@ -148,11 +154,11 @@ U moet een AEM-beheerder zijn om gebruikersgegevens uit workflowinstanties te ve
    >Als u het knooppunt voor workflowinstanties verwijdert, wordt de instantie van de workflow voor alle workflowdeelnemers verwijderd.
 
 1. Herhaal stap 2 - 6 voor alle workflowinstanties die voor een gebruiker zijn geïdentificeerd.
-1. Offline concept- en verzendgegevens van deelnemers aan de workflow in AEM Forms identificeren en verwijderen om verzending naar de server te voorkomen.
+1. Offline concept- en verzendgegevens uit AEM [!DNL Forms] app-outbox van workflowdeelnemers identificeren en verwijderen om verzending naar de server te voorkomen.
 
 U kunt API&#39;s ook gebruiken om knooppunten en eigenschappen te openen en te verwijderen. Zie de volgende documenten voor meer informatie.
 
-* [Programmatoegang tot het JCR AEM](/help/sites-developing/access-jcr.md)
+* [Programmatoegang tot het AEM JCR](/help/sites-developing/access-jcr.md)
 * [Knooppunten en eigenschappen verwijderen](https://docs.adobe.com/docs/en/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
 * [API-referentie](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)
 

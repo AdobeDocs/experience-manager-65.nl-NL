@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 89f3630f-c01a-4dc0-9ff5-169785f22c01
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 10c17fc199c476ec66059cc6bf4cbb4a0ff1af40
+source-git-commit: fcdae5363e7a0070b5d6b76227e5c65efb71bc03
 workflow-type: tm+mt
 source-wordcount: '464'
 ht-degree: 0%
@@ -44,13 +44,13 @@ Ga voor de benodigde informatie naar [Community Components Basics](/help/communi
 
 Wanneer de [vereiste client-side bibliotheken](/help/communities/essentials-activities.md#essentials-for-client-side) worden opgenomen, ziet u zo de `Activity Streams` component eruit:
 
-![chlimage_1-195](assets/chlimage_1-195.png)
+![activity-streams](assets/activity-component.png)
 
 ### Activiteitenstromen configureren {#configuring-activity-streams}
 
 Selecteer de geplaatste `Activity Streams` component die u wilt openen en selecteer het `Configure` pictogram waarmee het dialoogvenster Bewerken wordt geopend.
 
-![chlimage_1-494](assets/chlimage_1-494.png)
+![vormen](assets/configure-new.png)
 
 Geef op onder het tabblad **Gebruikersactiviteiten** op welke activiteiten u wilt weergeven:
 
@@ -80,7 +80,7 @@ Geef op onder het tabblad **Gebruikersactiviteiten** op welke activiteiten u wil
 
 Componenten moeten worden geconfigureerd om het volgende in te schakelen. Functies die het volgende toestaan, zijn [blog](/help/communities/blog-feature.md), [forum](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [agenda](/help/communities/calendar.md), [bestandsbibliotheek](/help/communities/file-library.md)[](/help/communities/comments.md)en commentaren.
 
-![chlimage_1-5](assets/chlimage_1-5.png)
+![volgende weergave](assets/following-activities.png)
 
 Met de knop **Volg** kunt u items volgen als activiteiten, [meldingen](/help/communities/notifications.md)of [abonnementen](/help/communities/subscriptions.md). Telkens wanneer de knop **Volgen** is geselecteerd, kunt u een selectie in- of uitschakelen. De `Email Subscriptions` selectie is alleen aanwezig als deze is geconfigureerd.
 

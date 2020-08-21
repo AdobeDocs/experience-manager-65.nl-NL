@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 6e6ffe09-c50b-4238-8b8c-597c133d0a9e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2bcd098ae901070d5e50cd89d06c854884b4e461
+source-git-commit: c190d5f223c85f6c49fea1391d8a3d2baff20192
+workflow-type: tm+mt
+source-wordcount: '1380'
+ht-degree: 0%
 
 ---
 
@@ -32,24 +35,26 @@ De functie van het QnA-forum (vragen en antwoorden) biedt leden van de gemeensch
 
 In de documentatie wordt beschreven:
 
-* Het toevoegen van de QnA-forumfunctie aan een AEM-site.
+* Het toevoegen van de QnA forumeigenschap aan een AEM plaats.
 * De montages van de configuratie voor de `QnA`component.
 
 ## Een forum voor vragen en antwoorden toevoegen aan een pagina {#adding-a-q-a-forum-to-a-page}
 
-Om een `QnA` component aan een pagina op auteurswijze toe te voegen, gebruik componentenbrowser om van de plaats de plaats te bepalen `Communities / QnA`en het te slepen op een pagina waar het forum QnA zou moeten verschijnen.
+Om een `QnA` component aan een pagina op auteurswijze toe te voegen, gebruik componentenbrowser om van de plaats de plaats te bepalen `Communities / QnA` en het te slepen op een pagina waar het forum QnA zou moeten verschijnen.
 
 Ga voor de benodigde informatie naar [Community Components Basics](/help/communities/basics.md).
 
-Wanneer de [vereiste clientbibliotheken](/help/communities/qna-essentials.md#essentials-for-client-side) worden opgenomen, ziet u de `QnA`component als volgt:
+Wanneer de [vereiste clientbibliotheken](/help/communities/qna-essentials.md#essentials-for-client-side) worden opgenomen, ziet u de `QnA` component als volgt:
 
-![chlimage_1](assets/chlimage_1.png)
+![qna-component](assets/qna-component.png)
 
 ### QnA configureren {#configuring-qna}
 
 Selecteer de geplaatste `QnA` component die u wilt openen en selecteer het `Configure` pictogram waarmee het dialoogvenster Bewerken wordt geopend.
 
-![chlimage_1-1](assets/chlimage_1-1.png) ![qna-config](assets/qna-config.png)
+![vormen](assets/configure-new.png)
+
+![qna-config](assets/qna-config.png)
 
 #### Het tabblad Instellingen {#settings-tab}
 

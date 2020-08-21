@@ -10,7 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 071cac6d-05c5-47ab-85bc-ead6693ca1f4
 translation-type: tm+mt
-source-git-commit: 2bcd098ae901070d5e50cd89d06c854884b4e461
+source-git-commit: c190d5f223c85f6c49fea1391d8a3d2baff20192
+workflow-type: tm+mt
+source-wordcount: '234'
+ht-degree: 0%
 
 ---
 
@@ -27,27 +30,27 @@ Ga voor de benodigde informatie naar [Community Components Basics](basics.md).
 
 Wanneer de [vereiste client-side bibliotheken](essentials-voting.md#essentials-for-client-side) worden opgenomen, wordt de `Voting` component op deze manier weergegeven.
 
-![chlimage_1-307](assets/chlimage_1-307.png)
+![stemcomponent](assets/voting-component.png)
 
 ## Stemmen configureren {#configuring-voting}
 
 Selecteer de geplaatste `Voting` component die u wilt openen en selecteer het `Configure` pictogram waarmee het dialoogvenster Bewerken wordt geopend.
 
-![chlimage_1-308](assets/chlimage_1-308.png)
+![vormen](assets/configure-new.png)
 
-Geef op het tabblad **[!UICONTROL Teksten en labels]** de eigenschappen op die worden gebruikt voor het opnemen van stemmen.
+Geef onder het **[!UICONTROL Texts & Labels]** tabblad de eigenschappen op die worden gebruikt voor het opnemen van stemmen.
 
-![chlimage_1-309](assets/chlimage_1-309.png)
+![stemlabel](assets/voting-label.png)
 
-* **[!UICONTROL Label voor positieve respons]**
+* **[!UICONTROL Positive Response Label]**
 
    (*Vereist*) De interne eigenschapnaam voor een positieve reactie.
 
-* **[!UICONTROL Negatief antwoordlabel]**
+* **[!UICONTROL Negative Response Label]**
 
    (*Vereist*) De interne eigenschapnaam voor een negatieve reactie.
 
-* **[!UICONTROL Tallnaam]**
+* **[!UICONTROL Tally Name]**
 
    (*Vereist*) De interne, identificeerbare eigenschapsnaam voor dit geval van een stemcomponent.
 

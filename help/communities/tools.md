@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 410149d6-15bd-41e5-bdba-1d8e6eab7b87
 pagetitle: Communities Tools
 translation-type: tm+mt
-source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
+source-git-commit: c190d5f223c85f6c49fea1391d8a3d2baff20192
+workflow-type: tm+mt
+source-wordcount: '110'
+ht-degree: 0%
 
 ---
 
@@ -20,9 +23,9 @@ source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
 
 Meld u aan bij de auteur voor toegang tot de console met EG-gereedschappen:
 
-* Vanuit globale navigatie: **[!UICONTROL Gereedschappen]** > **[!UICONTROL Gemeenschappen]**.
+* Vanuit globale navigatie: **[!UICONTROL Tools]** > **[!UICONTROL Communities]**.
 
-   ![chlimage_1-129](assets/chlimage_1-129.png)
+   ![gemeenschappen](assets/communities-home.png)
 
 * [Sitesjablonen](sites.md) - Console voor het maken en beheren van sitesjablonen.
 

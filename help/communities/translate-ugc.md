@@ -10,14 +10,17 @@ topic-tags: administering
 content-type: reference
 discoiquuid: bfaf80c5-448b-47fb-9f22-57ee0eb169b2
 translation-type: tm+mt
-source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
+source-git-commit: c190d5f223c85f6c49fea1391d8a3d2baff20192
+workflow-type: tm+mt
+source-wordcount: '1091'
+ht-degree: 0%
 
 ---
 
 
 # Door gebruiker gegenereerde inhoud vertalen {#translating-user-generated-content}
 
-Met de vertaalfunctie voor AEM Communities wordt het concept van het [vertalen van pagina-inhoud](../../help/sites-administering/translation.md) uitgebreid naar door de gebruiker gegenereerde inhoud (UGC) die via SCF-componenten [(](scf.md)social component framework) naar sites van de gemeenschap wordt gepost.
+De vertaalfunctie voor AEM Communities breidt het concept van het [vertalen van pagina-inhoud](../../help/sites-administering/translation.md) uit naar door de gebruiker gegenereerde inhoud (UGC) die via SCF-componenten [(](scf.md)social component framework) naar sites van de gemeenschap wordt gepost.
 
 De vertaling van UGC stelt bezoekers en leden van de site in staat een wereldwijde gemeenschap te ervaren door taalbarrières te verwijderen.
 
@@ -31,7 +34,7 @@ Stel bijvoorbeeld:
 
 ## Overzicht {#overview}
 
-In deze sectie van de documentatie wordt specifiek besproken hoe de vertaalservice met UGC werkt en wordt er vanuit gegaan dat u weet hoe u AEM met een [vertaalserviceprovider](../../help/sites-administering/translation.md#connectingtoatranslationserviceprovider) kunt verbinden en deze service in een website kunt integreren door een [vertaalintegratieframework](../../help/sites-administering/tc-tic.md)te configureren.
+In deze sectie van de documentatie wordt specifiek besproken hoe de vertaalservice met UGC werkt, waarbij wordt uitgegaan van een inzicht in de manier waarop u AEM kunt verbinden met een [vertaalserviceprovider](../../help/sites-administering/translation.md#connectingtoatranslationserviceprovider) en deze service kunt integreren in een website door een [vertaalintegratieframework](../../help/sites-administering/tc-tic.md)te configureren.
 
 Wanneer een vertaaldienstverlener met de plaats wordt geassocieerd, handhaaft elke taalexemplaar van de plaats zijn eigen draden van UGC die door componenten SCF zoals commentaren wordt gepost.
 
@@ -39,7 +42,7 @@ Wanneer een kader van de vertaalintegratie naast de vertaaldienstverlener wordt 
 
 ## De standaardvertaalservice {#the-default-translation-service}
 
-AEM Communities wordt geleverd met een [proeflicentie](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license) voor een [standaardvertaalservice](../../help/sites-administering/tc-msconf.md) die voor verschillende talen is ingeschakeld.
+AEM Communities wordt geleverd met een [proeflicentie](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license) voor een [standaardvertaalservice](../../help/sites-administering/tc-msconf.md) die is ingeschakeld voor verschillende talen.
 
 Wanneer u een communitysite [](sites-console.md)maakt, wordt de standaardvertaalservice ingeschakeld wanneer deze `Allow Machine Translation` wordt gecontroleerd vanuit het subdeelvenster [TRANSLATION](sites-console.md#translation) .
 
@@ -75,55 +78,59 @@ Om een nieuwe Vertaalintegratie tot stand te brengen, die een schakelaar van de 
 
 * Aanmelden als beheerder
 * Vanuit het [hoofdmenu](http://localhost:4502/)
-* Selecteer **[!UICONTROL gereedschappen]**
-* Selecteer **[!UICONTROL bewerkingen]**
-* Cloud **[!UICONTROL selecteren]**
-* Cloudservices **[!UICONTROL selecteren]**
-* Omlaag schuiven naar **[!UICONTROL vertaalintegratie]**
+* Selecteer **[!UICONTROL Tools]**
+* Selecteer **[!UICONTROL Operations]**
+* Selecteer **[!UICONTROL Cloud]**
+* Selecteer **[!UICONTROL Cloud Services]**
+* Omlaag schuiven naar **[!UICONTROL Translation Integration]**
 
-   ![chlimage_1-65](assets/chlimage_1-65.png)
+   ![vertaling-integratie](assets/translation-integration.png)
 
-* Configuraties **[!UICONTROL tonen selecteren]**
+* Selecteer **[!UICONTROL Show Configurations]**
 
-   ![chlimage_1-66](assets/chlimage_1-66.png)
+   ![show-configuration](assets/translation-integration1.png)
 
-* Selecteer `[+]` pictogram naast **[!UICONTROL Beschikbare Configuraties]** om een nieuwe configuratie te creëren
+* Selecteer `[+]` pictogram naast **[!UICONTROL Available Configurations]** om een nieuwe configuratie tot stand te brengen
 
 #### Configuratiedialoogvenster maken {#create-configuration-dialog}
 
-![chlimage_1-67](assets/chlimage_1-67.png)
+![create-configuration](assets/translation-integration2.png)
 
-* **[!UICONTROL Bovenliggende configuratie]**
+* **[!UICONTROL Parent Configuration]**
 
    (Vereist) Verlaat gewoonlijk als gebrek. Standaard is dit `/etc/cloudservices/translation`.
 
-* **[!UICONTROL Titel]**
+* **[!UICONTROL Title]**
 
    (Vereist) Voer de gewenste weergavetoewijzing in. Geen standaardwaarde.
 
-* **[!UICONTROL Naam]**
+* **[!UICONTROL Name]**
 
    (Optioneel) Voer een naam in voor de configuratie. De standaardwaarde is een knooppuntnaam die op de Titel wordt gebaseerd.
 
-* Selecteer **[!UICONTROL Maken]**
+* Selecteer **[!UICONTROL Create]**
 
 #### Dialoogvenster Config voor vertaling {#translation-config-dialog}
 
-![chlimage_1-68](assets/chlimage_1-68.png)
+![configuratie-dialoogvenster](assets/translation-integration3.png)
 
 Voor gedetailleerde instructies gaat u naar [Een configuratie voor vertaalintegratie maken](../../help/sites-administering/tc-tic.md#creating-a-translation-integration-configuration)
 
-* **[!UICONTROL Tabblad Sites]** : kan als standaardinstellingen worden verlaten.
+* **[!UICONTROL Sites]** tab: kan als standaardinstellingen worden verlaten.
 
-* **[!UICONTROL Tabblad Gemeenschappen]** :
-   * **[!UICONTROL Vertaalbureau]** Selecteer de vertaalprovider in de vervolgkeuzelijst. Standaard is dit `microsoft`de testservice.
+* **[!UICONTROL Communities]** tab:
+   * **[!UICONTROL Translation Provider]**
+Selecteer de vertaalprovider in de vervolgkeuzelijst. Standaard is 
+`microsoft`, de testservice.
 
-   * **[!UICONTROL Inhoudscategorie]** Selecteer een categorie die de inhoud beschrijft die wordt vertaald. Standaard is `General.`
+   * **[!UICONTROL Content Category]**
+Selecteer een categorie die de inhoud beschrijft die wordt vertaald. Standaard is 
+`General.`
 
-   * **[!UICONTROL Een landinstelling kiezen...]**
+   * **[!UICONTROL Choose A Locale...]**
 (Optioneel) Als u een landinstelling selecteert voor het opslaan van UGC, worden posts van alle taalkopieën in één algemeen gesprek weergegeven. Kies bij conventie de landinstelling voor de [basistaal](sites-console.md#translation) voor de website. Als u `No Common Store` kiest, wordt algemene vertaling uitgeschakeld. Globale vertaling is standaard uitgeschakeld.
 
-* **[!UICONTROL Tabblad Middelen]** : kan als standaardinstellingen worden verlaten.
+* **[!UICONTROL Assets]** tab: kan als standaardinstellingen worden verlaten.
 * Selecteer **[!UICONTROL OK]**
 
 #### Activering {#activation}
@@ -153,7 +160,7 @@ Een van deze instellingen is of gemeenschapsinhoud altijd in de taal van uw voor
 
 Wanneer de pagina&#39;s automatisch in de aangewezen taal van de gebruiker worden vertaald, wordt UI voor het tonen van de originele tekst en het verbeteren van de vertaling nog ter beschikking gesteld.
 
-![chlimage_1-69](assets/chlimage_1-69.png)
+![gebruikersprofiel](assets/translation-integration4.png)
 
 ### Site-instelling van community {#community-site-setting}
 

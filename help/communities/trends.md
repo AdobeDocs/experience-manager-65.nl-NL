@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 4a0debdd-acb9-4646-80bb-fec66fae4088
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 17088abc71bb820693259088c8a9b938a43cd9d3
+source-git-commit: c190d5f223c85f6c49fea1391d8a3d2baff20192
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 1%
@@ -33,9 +33,9 @@ In het document wordt beschreven:
 
 ### Vereiste {#requirement}
 
-De gegevens voor de `Community Activity List` toepassing zijn alleen beschikbaar als Adobe Analytics een licentie heeft en is geconfigureerd voor de communitysite.
+Gegevens voor de `Community Activity List` website zijn alleen beschikbaar wanneer Adobe Analytics een licentie heeft en geconfigureerd voor de communitysite.
 
-Zie [Analytics Configuration for Communities-functies](/help/communities/analytics.md).
+Zie [Analytics Configuration for Communities Features](/help/communities/analytics.md).
 
 ### Een communautaire activiteitenlijst toevoegen aan een pagina {#adding-a-community-activity-list-to-a-page}
 
@@ -55,11 +55,11 @@ Wanneer de component voor het eerst op een pagina van een communitysite wordt ge
 
 Selecteer de geplaatste `Community Activity List` component die u wilt openen en selecteer het `Configure` pictogram waarmee het dialoogvenster Bewerken wordt geopend.
 
-![chlimage_1-55](assets/chlimage_1-55.png)
+![vormen](assets/configure-new.png)
 
 Geef op het tabblad **Opmerkingen** op of en hoe opmerkingen voor geüploade bestanden worden weergegeven:
 
-![chlimage_1-56](assets/chlimage_1-56.png)
+![eigenschappen](assets/activity-list-properties.png)
 
 * **Type**
 
@@ -126,5 +126,5 @@ Standaard is ingeschakeld.
 
 **Trending Content** config: Type = Inhoud, Type activiteit = Post
 
-![chlimage_1-57](assets/chlimage_1-57.png)
+![componenten](assets/activity-list-components.png)
 

@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: eece7b8f-6ccd-4037-8713-0cd36cfd9e73
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e74d39e63f8b3b5961ea2c31e0ef99c3ab8b06dd
+source-git-commit: 548e19b0fc76ede8685ea938ed871fbdc8c3858f
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 1%
@@ -71,8 +71,8 @@ De blogfunctie bestaat uit twee hoofdcomponenten die beschikbaar zijn door de fu
 
 | **resourceType** | sociaal/journaal/componenten/hbs/zijbalk |
 |---|---|
-| [**inclusief **](/help/communities/scf.md#add-or-include-a-communities-component) | Nee |
-| [**clientllibs **](/help/communities/clientlibs.md) | cq.social.hbs.journal_sidebar |
+| [**inclusief**](/help/communities/scf.md#add-or-include-a-communities-component) | Nee |
+| [**clientllibs**](/help/communities/clientlibs.md) | cq.social.hbs.journal_sidebar |
 | **templates** | /libs/social/journal/components/hbs/sidebar/sidebar.hbs |
 | **css** | /libs/social/journal/components/hbs/sidebar/clientlibs/sidebar.css |
 | **eigenschappen** | zie [Blogfunctie](/help/communities/blog-feature.md) |
@@ -115,13 +115,13 @@ Zie [Primaire uitgever](/help/communities/deploy-communities.md#primary-publishe
 
 ## Rijke media toestaan {#allowing-rich-media}
 
-Het AEM-platform blokkeert koppelingen van andere websites om XSS-aanvallen te voorkomen zoals beschreven in
+Het AEM platform blokkeert koppelingen van andere websites om XSS-aanvallen te voorkomen zoals beschreven in
 
-* [Beveiligen tegen XSS (Cross-Site Scripting)](/help/sites-developing/security.md#protect-against-cross-site-scripting-xss)
+* [Protect tegen XSS (Cross-Site Scripting)](/help/sites-developing/security.md#protect-against-cross-site-scripting-xss)
 
-Vanaf AEM 6.2, zijn de wijzigingen die eerder manueel moeten worden gemaakt inbegrepen in het standaard antiSamy configuratiedossier.
+Vanaf AEM 6.2 worden de eerder vereiste wijzigingen die handmatig moeten worden aangebracht, opgenomen in het standaard AntiSamy-configuratiebestand.
 
 Rijke media wordt ingesloten in een blogartikel door het `Embed Media from External Sites` pictogram te selecteren:
 
-![chlimage_1-471](assets/chlimage_1-471.png)
+![media](assets/media-icon.png)
 

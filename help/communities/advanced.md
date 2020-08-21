@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: eb3d5c37-8097-46de-8c4f-804ea723f1c5
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9ea2efb7409ae38c8771815336ae0d9388d923fa
+source-git-commit: fcdae5363e7a0070b5d6b76227e5c65efb71bc03
 workflow-type: tm+mt
 source-wordcount: '1060'
 ht-degree: 1%
@@ -62,7 +62,7 @@ De verschillen bij het instellen van de regels voor scoring en badging zijn:
 
 De geavanceerde het schrapen motor verstrekt een configuratie OSGi met parameters die het geavanceerde het schrapen algoritme beïnvloeden.
 
-![chlimage_1-260](assets/chlimage_1-260.png)
+![geavanceerde scoring-engine](assets/advanced-scoring-engine.png)
 
 * **Scoregewichten**
 
@@ -103,7 +103,7 @@ Als u de geavanceerde scoring-engine wilt aanroepen, `scoringType`moet u deze in
 
 Zie [Score-subregels](/help/communities/implementing-scoring.md#scoring-sub-rules).
 
-![chlimage_1-261](assets/chlimage_1-261.png)
+![geavanceerd scoretype](assets/advanced-scoring-type.png)
 
 ### Stopwoorden {#stopwords}
 
@@ -123,7 +123,7 @@ De geavanceerde eigenschappen van de merkingsregel verschillen van de [basiseige
 
 In plaats van punten te koppelen aan een badge-afbeelding, is het alleen nodig om het toegestane aantal experts en het toe te kennen badge-image te identificeren.
 
-![chlimage_1-262](assets/chlimage_1-262.png)
+![geavanceerde merkregels](assets/advanced-badging-rules.png)
 
 <table>
  <tbody>
@@ -165,7 +165,7 @@ In deze bètaversie is één beloning-gebaseerd deskundige badge opgenomen:
 
    `/libs/settings/community/badging/images/expert-badge/jcr:content/expert.png`
 
-![chlimage_1-263](assets/chlimage_1-263.png)
+![deskundige-badge](assets/included-badge.png)
 
 Zorg ervoor dat het expertsymbool als beloning voor activiteit wordt weergegeven:
 

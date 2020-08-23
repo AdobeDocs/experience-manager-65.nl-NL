@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: ed84157a-e6b4-4dde-af2e-a1e0b6259628
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '1397'
+source-wordcount: '1395'
 ht-degree: 18%
 
 ---
@@ -71,7 +71,7 @@ Indien nodig kunt u [gemengde mediasets](#editing-mixed-media-sets)bewerken. Daa
 
 >[!NOTE]
 >
->Als u kwesties creeert reeksen hebt, zie de Dynamic Media van het Oplossen van [problemen - wijze](/help/assets/troubleshoot-dms7.md)Scene7.
+>Zie [Problemen met dynamische media oplossen - Scene7-modus](/help/assets/troubleshoot-dms7.md)voor informatie over het maken van sets.
 
 ## Elementen uploaden {#uploading-assets}
 
@@ -97,7 +97,7 @@ Wanneer u elementen aan de set toevoegt, worden deze automatisch in alfanumeriek
 
    >[!NOTE]
    >
-   >Wanneer u de gemengde mediaset maakt, kunt u de miniatuur van de gemengde mediaset wijzigen of AEM toestaan de miniatuur automatisch te selecteren op basis van de elementen in de gemengde mediaset. Als u een miniatuur wilt selecteren, klikt u op een willekeurige afbeelding **[!UICONTROL Change thumbnail]** en selecteert u deze (u kunt ook naar andere mappen navigeren om afbeeldingen te zoeken). If you have selected a thumbnail and then decide that you want AEM to generate one from the mixed media set, select **[!UICONTROL Switch to Automatic thumbnail.]**
+   >Wanneer u de gemengde mediaset maakt, kunt u de miniatuur van de gemengde mediaset wijzigen of AEM de miniatuur automatisch selecteren op basis van de elementen in de gemengde mediaset. Als u een miniatuur wilt selecteren, klikt u op een willekeurige afbeelding **[!UICONTROL Change thumbnail]** en selecteert u deze (u kunt ook naar andere mappen navigeren om afbeeldingen te zoeken). If you have selected a thumbnail and then decide that you want AEM to generate one from the mixed media set, select **[!UICONTROL Switch to Automatic thumbnail.]**
 
 1. Tik op de Asset Selector om de elementen te selecteren die u in de gemengde mediaset wilt opnemen. Select them and click **[!UICONTROL Select.]**
 
@@ -151,10 +151,10 @@ U kunt diverse bewerkingstaken rechtstreeks in de gebruikersinterface uitvoeren 
 
       >[!NOTE]
       >
-      >    * To delete an entire Mixed Media Set, from any viewing mode (such as **[!UICONTROL Card View]** or **[!UICONTROL Column View]**) navigate to the Mixed Media Set. Wijs de asset aan en tik op het vinkje om deze te selecteren. Druk op **[!UICONTROL Backspace]** het toetsenbord of klik op **[!UICONTROL More]** (drie punten) op de werkbalk en tik vervolgens op **[!UICONTROL Delete.]**
+      >* To delete an entire Mixed Media Set, from any viewing mode (such as **[!UICONTROL Card View]** or **[!UICONTROL Column View]**) navigate to the Mixed Media Set. Wijs de asset aan en tik op het vinkje om deze te selecteren. Druk op **[!UICONTROL Backspace]** het toetsenbord of klik op **[!UICONTROL More]** (drie punten) op de werkbalk en tik vervolgens op **[!UICONTROL Delete.]**
          >
-         >    
-      * You can edit the assets in a Mixed Media Set by navigating to the set, clicking **Set Members]** in the left rail, and then tapping the **[!UICONTROL Pencil]** icon on an individual asset to open the editing window.
+         >
+      * You can edit the assets in a Mixed Media Set by navigating to the set, clicking **[!UICONTROL Set Members]** in the left rail, and then tapping the **[!UICONTROL Pencil]** icon on an individual asset to open the editing window.
 
 
 1. Tik **[!UICONTROL Save]** wanneer u klaar bent met bewerken.
@@ -164,7 +164,7 @@ U kunt diverse bewerkingstaken rechtstreeks in de gebruikersinterface uitvoeren 
    >* Als u de assets in een gemengde mediaset wilt bewerken, gaat u naar de gemengde mediaset. Tik (niet selecteren) op de set om deze te openen op de pagina Voorvertoning van AEM-set. Klik in de linkertrack op het inlasteken omlaag om de vervolgkeuzelijst te openen en tik vervolgens op **[!UICONTROL Set Members.]** de pagina Leden instellen, houd de cursor boven een element en tik vervolgens op **[!UICONTROL Edit]** (potloodpictogram) om de bewerkingspagina te openen.
       >
       >
-   * Als u een volledige gemengde mediaset wilt verwijderen, gaat u vanuit een willekeurige weergavemodus (zoals kaart- of kolomweergave) naar de gemengde mediaset. Hover on the set, then tap **Select]** (checkmark icon). Druk op **[!UICONTROL Backspace]** het toetsenbord of tik op **[!UICONTROL More]** (rij met drie punten) en tik vervolgens op **[!UICONTROL Delete.]**
+   * Als u een volledige gemengde mediaset wilt verwijderen, gaat u vanuit een willekeurige weergavemodus (zoals kaart- of kolomweergave) naar de gemengde mediaset. Hover on the set, then tap **Select** (checkmark icon). Druk op **[!UICONTROL Backspace]** het toetsenbord of tik op **[!UICONTROL More]** (rij met drie punten) en tik vervolgens op **[!UICONTROL Delete.]**
 
 
 ## Voorvertoning van gemengde mediasets {#previewing-mixed-media-sets}

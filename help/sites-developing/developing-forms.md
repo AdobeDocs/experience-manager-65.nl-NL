@@ -1,6 +1,6 @@
 ---
-title: Formulieren ontwikkelen (klassieke gebruikersinterface)
-seo-title: Formulieren ontwikkelen (klassieke gebruikersinterface)
+title: Forms ontwikkelen (klassieke gebruikersinterface)
+seo-title: Forms ontwikkelen (klassieke gebruikersinterface)
 description: Meer informatie over het ontwikkelen van formulieren
 seo-description: Meer informatie over het ontwikkelen van formulieren
 uuid: 33859f29-edc5-4bd5-a634-35549f3b5ccf
@@ -11,12 +11,15 @@ content-type: reference
 discoiquuid: 6ee3bd3b-51d1-462f-b12e-3cbe24898b85
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+workflow-type: tm+mt
+source-wordcount: '1952'
+ht-degree: 0%
 
 ---
 
 
-# Formulieren ontwikkelen (klassieke gebruikersinterface){#developing-forms-classic-ui}
+# Forms ontwikkelen (klassieke gebruikersinterface){#developing-forms-classic-ui}
 
 De basisstructuur van een formulier is:
 
@@ -24,13 +27,12 @@ De basisstructuur van een formulier is:
 * Formulierelementen
 * Einde formulier
 
-Al deze worden gerealiseerd met een reeks standaardcomponenten [van de](/help/sites-authoring/default-components.md#form)Vorm, beschikbaar in een standaardinstallatie AEM.
+Al deze worden gerealiseerd met een reeks standaardcomponenten [van het](/help/sites-authoring/default-components.md#form)Vorm, beschikbaar in een standaard AEM installatie.
 
 Naast het [ontwikkelen van nieuwe componenten](/help/sites-developing/developing-components-samples.md) voor gebruik op uw formulieren kunt u ook:
 
 * [Uw formulier vooraf laden met waarden](#preloading-form-values)
-* [(bepaalde) velden met meerdere waarden vooraf laden
-   ](#preloading-form-fields-with-multiple-values)
+* [(bepaalde) velden met meerdere waarden vooraf laden](#preloading-form-fields-with-multiple-values)
 * [Nieuwe acties ontwikkelen](#developing-your-own-form-actions)
 * [Nieuwe beperkingen ontwikkelen](#developing-your-own-form-constraints)
 * [Specifieke formuliervelden weergeven of verbergen](#showing-and-hiding-form-components)
@@ -71,7 +73,8 @@ Met het **pad** voor het laden van items kunt u een lijst openen vanuit een map 
 
 1. Voeg een nieuwe eigenschap (bijvoorbeeld `myList`) van het type tekenreeks met meerdere waarden ( `String[]`) toe voor de lijst met vervolgkeuzelijsten. Inhoud kan ook worden geïmporteerd met een script, zoals met een JSP-script of cURL in een shell-script.
 
-1. Gebruik het volledige pad in het veld Pad **laden** items: bijvoorbeeld: `/etc/designs/geometrixx/formlistvalues/myList`
+1. Gebruik het volledige pad in het veld Pad **laden** items:
+bijvoorbeeld: `/etc/designs/geometrixx/formlistvalues/myList`
 
 Let op: als de waarden in de afbeelding `String[]` als volgt zijn opgemaakt:
 
@@ -79,7 +82,7 @@ Let op: als de waarden in de afbeelding `String[]` als volgt zijn opgemaakt:
 * `AK=Alaska`
 * *enz.*
 
-Vervolgens genereert AEM de lijst als:
+aem genereert de lijst vervolgens als:
 
 * `<option value="AL">Alabama</option>`
 * `<option value="AK">Alaska</option>`
@@ -90,7 +93,7 @@ Deze functie kan bijvoorbeeld goed worden gebruikt in een meertalige instelling.
 
 Een formulier heeft een handeling nodig. Met een handeling wordt de bewerking gedefinieerd die wordt uitgevoerd wanneer het formulier wordt verzonden met de gebruikersgegevens.
 
-Een reeks acties wordt geleverd met een standaard AEM-installatie. U ziet deze onder:
+Een reeks acties wordt voorzien van een standaard AEM installatie, deze kunnen onder worden gezien:
 
 `/libs/foundation/components/form/actions`
 
@@ -127,11 +130,12 @@ U kunt uw eigen actie toevoegen onder `/apps` als volgt:
 1. Maak in de map een van de volgende handelingen:
 
    1. Een postscript.
-De naam van het script is `post.POST.<extension>`bijvoorbeeld dat `post.POST.jsp`het postscript wordt aangeroepen wanneer een formulier wordt verzonden om het formulier te verwerken, het de code bevat die de gegevens uit het formulier afhandelt `POST`.
+De naam van het script is `post.POST.<extension>`bijvoorbeeld dat `post.POST.jsp`het postscript wordt aangeroepen wanneer een formulier wordt verzonden om het formulier te verwerken, het de code bevat die de gegevens uit het formulier afhandelt 
+`POST`.
 
    1. Voeg een voorwaarts script toe dat wordt aangeroepen wanneer het formulier wordt verzonden.
 De naam van het script is `forward.<extension`>, `forward.jsp`dit script kan bijvoorbeeld een pad definiëren. Het huidige verzoek wordt dan door:sturen aan de gespecificeerde weg.
-   De noodzakelijke vraag is `FormsHelper#setForwardPath` (2 varianten). Doorgaans wordt een validatie, oftewel logica, uitgevoerd om het doelpad te vinden en vervolgens door te sturen naar dat pad, zodat de standaard Sling POST-server de werkelijke opslag in JCR kan uitvoeren.
+   De noodzakelijke vraag is `FormsHelper#setForwardPath` (2 varianten). Doorgaans wordt een validatie, oftewel logica, uitgevoerd om het doelpad te vinden en vervolgens door te sturen naar dat pad, zodat de standaard Sling POST-servlet de werkelijke opslag in JCR kan uitvoeren.
 
    Er zou ook een ander servlet kunnen zijn die de daadwerkelijke verwerking doet, in een dergelijk geval de formulieractie en de actie `forward.jsp` zou slechts als &quot;lijm&quot;code dienst doen. Een voorbeeld van dit is de postactie bij `/libs/foundation/components/form/actions/mail`, die details aan door:sturen `<currentpath>.mail.html`waar een postservlet heeft.
 
@@ -139,6 +143,7 @@ De naam van het script is `forward.<extension`>, `forward.jsp`dit script kan bij
 
    * a `post.POST.jsp` is nuttig voor kleine verrichtingen die volledig door de actie zelf worden gedaan
    * terwijl het nuttig `forward.jsp` is wanneer slechts delegatie wordt vereist.
+
    De uitvoeringsvolgorde voor de scripts is:
 
    * Tijdens het weergeven van het formulier ( `GET`):
@@ -172,7 +177,7 @@ De naam van het script wordt `init.<extension>`weergegeven, bijvoorbeeld `init.j
    1. Een opschoonscript.
 De naam van het script is `cleanup.<extension>`, bijvoorbeeld `cleanup.jsp`Dit script kan worden gebruikt om opschoning uit te voeren.
 
-1. Gebruik de component van **Vormen** in parsys. De **keuzelijst Type** handeling bevat nu uw nieuwe handeling.
+1. Gebruik de component **Forms** in een parsys. De **keuzelijst Type** handeling bevat nu uw nieuwe handeling.
 
    >[!NOTE]
    >
@@ -238,7 +243,7 @@ Vervolgens kunt u het volgende definiëren:
 
 U kunt het formulier zo configureren dat formuliercomponenten worden weergegeven of verborgen op basis van de waarde van andere velden in het formulier.
 
-Het is handig de zichtbaarheid van een formulierveld te wijzigen als het veld alleen onder specifieke omstandigheden nodig is. Op een feedbackformulier wordt bijvoorbeeld aan klanten gevraagd of ze productinformatie per e-mail naar hen willen sturen. Als u Ja selecteert, wordt een tekstveld weergegeven waarmee de klant zijn e-mailadres kan typen.
+Het is handig de zichtbaarheid van een formulierveld te wijzigen als het veld alleen onder bepaalde omstandigheden nodig is. Op een feedbackformulier wordt bijvoorbeeld aan klanten gevraagd of ze productinformatie per e-mail naar hen willen sturen. Als u Ja selecteert, wordt een tekstveld weergegeven waarmee de klant zijn e-mailadres kan typen.
 
 In het dialoogvenster Regels **tonen/verbergen** bewerken kunt u opgeven onder welke voorwaarden een formuliercomponent wordt weergegeven of verborgen.
 
@@ -277,6 +282,7 @@ In JavaScript gebruiken voorwaarden de waarde van de eigenschap Elementnaam om n
       * **om het even welk** - als slechts één of meerdere voorwaarden waar moeten zijn om de component te tonen of te verbergen
    * Selecteer in de voorwaardelijn (een wordt standaard weergegeven) een component, operator en geef een waarde op.
    * Voeg desgewenst meer voorwaarden toe door op Voorwaarde **** toevoegen te klikken.
+
    Bijvoorbeeld:
 
    ![chlimage_1-9](assets/chlimage_1-9.png)

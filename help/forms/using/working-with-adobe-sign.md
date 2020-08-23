@@ -10,7 +10,7 @@ topic-tags: develop
 discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f34742a9d11909dcf8403e1b002b65a01e882a74
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
 source-wordcount: '3784'
 ht-degree: 0%
@@ -90,7 +90,7 @@ Voer de volgende stappen uit om een adaptief formulier te maken dat geschikt is 
 Voer de volgende stappen uit om Adobe Sign in een bestaande adaptieve vorm te gebruiken:
 
 1. Ga naar **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
-1. Selecteer het adaptieve formulier en tik op **[!UICONTROL Properties]**.
+1. Selecteer het aangepaste formulier en tik op **[!UICONTROL Properties]**.
 1. Selecteer op het **[!UICONTROL Basic]** tabblad de [configuratiecontainer](../../forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) die u hebt gemaakt tijdens de configuratie van Adobe Sign met AEM Forms.
 1. In the **[!UICONTROL Form Mode]** tab, select one of the following options:
 
@@ -146,7 +146,7 @@ Adobe Sign is niet ingeschakeld voor een adaptief formulier. Voer de volgende st
 
 ### Adobe Sign-Cloud Service en -handtekeningvolgorde selecteren {#selectadobesigncloudserviceforanadaptiveform}
 
-U kunt meerdere Adobe Sign-services configureren voor een exemplaar van AEM Forms. Het is raadzaam voor elke functie een aparte reeks diensten te hebben (Human Resources, Finance, enzovoort). Hierdoor wordt het bijhouden en rapporteren van ondertekende documenten eenvoudiger. Een bank heeft bijvoorbeeld meerdere afdelingen. U kunt een afzonderlijke configuratie voor elke afdeling hebben voor het beter volgen van de documenten.
+U kunt meerdere Adobe Sign-services configureren voor een exemplaar van AEM Forms. Het is raadzaam voor elke functie een aparte reeks diensten te hebben (Human Resource, Finance, enzovoort). Hierdoor wordt het bijhouden en rapporteren van ondertekende documenten eenvoudiger. Een bank heeft bijvoorbeeld meerdere afdelingen. U kunt een afzonderlijke configuratie voor elke afdeling hebben voor het beter volgen van de documenten.
 
 Een document kan ook meerdere ondertekenaars hebben. Een creditcardtoepassing kan bijvoorbeeld meerdere aanvragers hebben. Een bank vereist handtekeningen van alle aanvragers voordat de aanvraag wordt verwerkt. Voor scenario&#39;s met meerdere ondertekenaars kunt u ervoor kiezen het document in volgorde van opeenvolgende of gelijktijdige ondertekening te ondertekenen.
 
@@ -160,7 +160,7 @@ Voer de volgende stappen uit om een cloudservice en de volgorde van ondertekenin
 
    Als de lijst van de Cloud Service **van** Adobe Sign leeg is, volg Adobe Sign met het artikel van AEM Forms [van de](../../forms/using/adobe-sign-integration-adaptive-forms.md) Vorm om de dienst te vormen.
 
-1. Selecteer de handtekeningvolgorde in het dialoogvenster **Ondertekenaars kunnen ondertekenen** . Adobe Sign-zangers kunnen een adaptief formulier **achtereenvolgens** ondertekenen - een voor een andere ondertekenaar of **tegelijkertijd** - in elke willekeurige volgorde.
+1. Selecteer de handtekeningvolgorde in het dialoogvenster **Ondertekenaars kunnen ondertekenen** . Adobe Sign-zangers kunnen een adaptief formulier **opeenvolgend** ondertekenen - een voor een andere ondertekenaar of **tegelijkertijd** - in willekeurige volgorde.
 
    Eén ondertekenaar ontvangt het formulier voor ondertekening achtereenvolgens in de volgorde. Nadat een ondertekenaar het ondertekenen van het document heeft voltooid, wordt het formulier verzonden naar de volgende ondertekenaar, enzovoort.
 
@@ -311,7 +311,7 @@ De ervaring voor het ondertekenen van formulieren is nu gereed. U kunt een voorb
 **Ans:** Adaptief formulier dat is gemaakt met de geavanceerde sjabloon is geconfigureerd voor gebruik van Adobe Sign. U lost de fout op door een Adobe Sign-cloudconfiguratie te maken en te selecteren en een Adobe Sign-ondertekenaar voor het aangepaste formulier te configureren.
 
 **V:** Kan ik Adobe Sign-tekstcodes gebruiken in een statisch tekstonderdeel van een adaptief formulier?
-**Ans:** Ja, u kunt tekstcodes in een tekstcomponent gebruiken om Adobe Sign-velden toe te voegen aan een [Document of Record](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) (alleen automatisch gegenereerd document met de optie Opnemen) voor adaptief formulier. Zie [Adobe Sign-documentatie](https://helpx.adobe.com/sign/using/text-tag.html)voor meer informatie over de procedure en regels voor het maken van een tekstcode. Houd er rekening mee dat adaptieve formulieren beperkte ondersteuning bieden voor tekstcodes. Met de tekstcodes kunt u alleen die velden maken die [Adobe Sign Block](../../forms/using/working-with-adobe-sign.md#configure-cloud-signatures-for-an-adaptive-form) ondersteunt.
+**Ans:** Ja, u kunt tekstcodes in een tekstcomponent gebruiken om Adobe Sign-velden toe te voegen aan een [Document of Record](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) (alleen automatisch gegenereerd document met de optie Record) dat adaptief formulier heeft ingeschakeld. Zie [Adobe Sign-documentatie](https://helpx.adobe.com/sign/using/text-tag.html)voor meer informatie over de procedure en regels voor het maken van een tekstcode. Houd er rekening mee dat adaptieve formulieren beperkte ondersteuning bieden voor tekstcodes. Met de tekstcodes kunt u alleen die velden maken die [Adobe Sign Block](../../forms/using/working-with-adobe-sign.md#configure-cloud-signatures-for-an-adaptive-form) ondersteunt.
 
 **V:** AEM Forms biedt zowel Adobe Sign-onderdelen voor blok- als handtekeningstappen. Kunnen deze gelijktijdig in een adaptieve vorm worden gebruikt?
 **Ans:** U kunt beide componenten tegelijkertijd in een formulier gebruiken. Hier volgen enkele aanbevelingen voor het gebruik van deze componenten:
@@ -347,6 +347,4 @@ De ervaring voor het ondertekenen van formulieren is nu gereed. U kunt een voorb
 
 * [Adobe Sign integreren met AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md)
 * [Adobe Sign in een adaptieve vorm gebruiken](../../forms/using/working-with-adobe-sign.md)
-
-* [Adobe Sign gebruiken met AEM Forms (video)
-   ](https://helpx.adobe.com/experience-manager/kt/forms/using/adobe-sign-integration-feature-video.html)
+* [Adobe Sign gebruiken met AEM Forms (video)](https://helpx.adobe.com/experience-manager/kt/forms/using/adobe-sign-integration-feature-video.html)

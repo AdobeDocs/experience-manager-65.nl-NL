@@ -8,9 +8,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1210'
 ht-degree: 9%
 
 ---
@@ -18,9 +18,9 @@ ht-degree: 9%
 
 # URL&#39;s koppelen aan uw webapplicatie {#linking-urls-to-your-web-application}
 
-Uw websites en toepassingen hebben via URL-oproepen toegang tot de services van Dynamic Media. Nadat u een element hebt gepubliceerd, activeert Dynamic Media een URL-tekenreeks die verwijst naar het element. U kunt deze URL&#39;s voor testdoeleinden in een webbrowser plakken.
+Via URL-aanroepen hebben uw websites en toepassingen toegang tot Dynamic Media-services. Nadat u een element hebt gepubliceerd, activeert Dynamic Media een URL-tekenreeks die verwijst naar het element. U kunt deze URL&#39;s voor testdoeleinden in een webbrowser plakken.
 
-U maakt alleen een koppeling naar URL&#39;s als u AEM *niet* als uw WCM gebruikt. Linking-versus insluiten-wordt gebruikt wanneer u een videospeler als pop-up of modaal venster wilt leveren. Als u AEM als uw WCM gebruikt, voegt [u de elementen rechtstreeks op uw pagina toe.](adding-dynamic-media-assets-to-pages.md)
+U koppelt alleen aan URL&#39;s als u *geen* AEM gebruikt als uw WCM. Linking-versus insluiten-wordt gebruikt wanneer u een videospeler als pop-up of modaal venster wilt leveren. Als u AEM gebruikt als uw WCM, voegt [u de elementen rechtstreeks op uw pagina toe.](adding-dynamic-media-assets-to-pages.md)
 
 Als u deze URL-tekenreeksen wilt plaatsen in uw webpagina&#39;s en toepassingen, kopieert u ze van Dynamic Media.
 
@@ -88,7 +88,7 @@ Er zijn verschillende manieren waarop u een URL-tekenreeks kunt verkrijgen. In d
 
 ## Een URL verkrijgen voor een statisch element {#obtaining-a-url-for-a-static-asset}
 
-Dynamic Media ondersteunen de levering van statische elementen. Dit zijn aanvullende elementen die verder gaan dan alleen afbeeldingen en video. Tot de ondersteunde indelingen voor statische elementen voor levering behoren:
+Dynamische media ondersteunt de levering van statische elementen. Dit zijn aanvullende elementen die verder gaan dan alleen afbeeldingen en video. Tot de ondersteunde indelingen voor statische elementen voor levering behoren:
 
 * 3D-bestanden
 * Geanimeerde GIF
@@ -138,7 +138,7 @@ Dynamic Media ondersteunen de levering van statische elementen. Dit zijn aanvull
 
    Als de registratie-id bijvoorbeeld `87654321|MyCompany`is, is de naam van de klant `MyCompany`.
 
-1. Tik in de linkerbovenhoek van de pagina op **[!UICONTROL-Cloud Servicen**, tik vervolgens op het Experience Manager-logo en navigeer naar **[!UICONTROL General > CRXDE Lite.]**
+1. Tik in de linkerbovenhoek van de pagina **[!UICONTROL Cloud Services]** op het logo van de Experience Manager en navigeer naar **[!UICONTROL General > CRXDE Lite.]**
 1. Kopieer het volledige pad voor video-uitvoering vanuit de JCR (Java Content Repository).
 
    Het weergavepad van de video kan er bijvoorbeeld ongeveer als volgt uitzien:
@@ -165,6 +165,7 @@ Dynamic Media ondersteunen de levering van statische elementen. Dit zijn aanvull
 1. Ga als volgt te werk op de **[!UICONTROL Dynamic Media Cloud Services Settings]** pagina:
 
    * Kopieer onder **[!UICONTROL Video Service URL]** het volledige URL-pad. U hebt het gekopieerde URL-pad later in deze stappen nodig. Het URL-pad kan er bijvoorbeeld ongeveer als volgt uitzien:
+
    `https://gateway-na.assetsadobe.com/DMGateway/`
 
    (Bovenstaand pad dient slechts ter illustratie; het is niet het daadwerkelijke pad dat u kopieert.)
@@ -181,7 +182,7 @@ Dynamic Media ondersteunen de levering van statische elementen. Dit zijn aanvull
    | HTTP <br> Als u HTTP gebruikt (niet-veilige video levering), zorg ervoor u https in de waarde van de VideoDienst URL verandert u vroeger kopieerde. | `public/` |
    | HTTPS | `public-ssl/` |
 
-1. Kopieer het volledige pad naar video-elementen in AEM, zoals verwerkt door Dynamic Media. U hebt dit gekopieerde pad naar video-elementen later in deze stappen nodig.
+1. Kopieer het volledige pad naar het video-element in AEM, zoals dit wordt verwerkt door Dynamic Media. U hebt dit gekopieerde pad naar video-elementen later in deze stappen nodig.
 
    Bijvoorbeeld:
 
@@ -199,8 +200,8 @@ Dynamic Media ondersteunen de levering van statische elementen. Dit zijn aanvull
 
    `https://gateway-na.assetsadobe.com/DMGateway/public-ssl/demoCo/content/dam/marketing/MyVideo.mp4.m3u8`
 
-## HTTP/2 gebruiken om uw Dynamic Media-elementen te leveren {#using-http-to-deliver-your-dynamic-media-assets}
+## Het gebruiken van HTTP/2 om uw Dynamische activa van Media te leveren {#using-http-to-deliver-your-dynamic-media-assets}
 
-HTTP/2 is het nieuwe, bijgewerkte webprotocol dat de manier verbetert waarop browsers en servers communiceren. Het zorgt voor een snellere overdracht van informatie en vermindert de hoeveelheid verwerkingskracht die nodig is. De levering van Dynamic Media-elementen kan nu plaatsvinden via HTTP/2, waardoor de respons- en laadtijden beter zijn.
+HTTP/2 is het nieuwe, bijgewerkte webprotocol dat de manier verbetert waarop browsers en servers communiceren. Het zorgt voor een snellere overdracht van informatie en vermindert de hoeveelheid verwerkingskracht die nodig is. De levering van dynamische media-elementen kan nu plaatsvinden via HTTP/2, wat betere responstijd en laadtijden biedt.
 
-Zie [HTTP2 Levering van Inhoud](http2.md) voor volledige details over begonnen worden het gebruiken van HTTP/2 met uw rekening van Dynamic Media.
+Zie [HTTP2 Levering van Inhoud](http2.md) voor volledige details over begonnen worden het gebruiken van HTTP/2 met uw Dynamische rekening van Media.

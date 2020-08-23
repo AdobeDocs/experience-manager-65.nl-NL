@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: e228f1db-91ea-4ec3-86da-06d89d74bc72
 translation-type: tm+mt
-source-git-commit: 7acd89d830b9e758eec1b5a4beb18c22e4d12dcf
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
 source-wordcount: '1491'
 ht-degree: 2%
@@ -83,8 +83,7 @@ sh./scripts/cloud-scripts/zkcli.sh \
 #### 2. Een verzameling maken {#create-a-collection}
 
 Referentie:
-[https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create
-](https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create)
+[https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create](https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create)
 
 Gebruik:
 ./bin/solr create \
@@ -128,7 +127,7 @@ Geavanceerde MLS bevat verbeteringen voor het zoeken naar inhoud voor de volgend
 * Chinees (vereenvoudigd): Een slimmere tokenizer toegevoegd.
 * Diverse talen: Er is een stemmer, een stopwoordlijst en een normalisatie toegevoegd.
 
-In alle gevallen worden de volgende 33 talen ondersteund in Advanced MLS.
+In alle talen worden de volgende 33 talen ondersteund in Advanced MLS.
 
 | Arabisch | Duits | Noors |
 |---|---|---|

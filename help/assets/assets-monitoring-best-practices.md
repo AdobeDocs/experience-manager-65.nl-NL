@@ -1,11 +1,11 @@
 ---
-title: Tips en trucs om de implementatie van [!DNL Adobe Experience Manager Assets] te controleren.
-description: Tips en trucs om de omgeving en de prestaties van uw implementatie van [!DNL Adobe Experience Manager] te controleren nadat deze is geïmplementeerd.
+title: Aanbevolen werkwijzen voor [!DNL Adobe Experience Manager Assets] toezicht op de werkgelegenheid.
+description: Aanbevolen procedures om de omgeving en prestaties van [!DNL Adobe Experience Manager] uw implementatie te controleren nadat deze is geïmplementeerd.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 99ce6e0572797b7bccf755aede93623be6bd5698
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '1682'
+source-wordcount: '1671'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ De bewaking van het milieu omvat de bewaking van het volgende:
 * JMX MBeans
 * Externe websites
 
-U hebt externe hulpmiddelen nodig, zoals NewRelic(TM) en AppDynamics(TM) om elk item te controleren. Met deze gereedschappen kunt u waarschuwingen definiëren die specifiek zijn voor uw systeem, zoals een hoog systeemgebruik, een back-up van de workflow, storingen in de health check of niet-geverifieerde toegang tot uw website. Adobe raadt geen bepaalde gereedschappen aan boven andere. Zoek het hulpmiddel dat voor u werkt, en hefboomwerking het om de besproken punten te controleren.
+U hebt externe hulpmiddelen nodig, zoals NewRelic(TM) en AppDynamics(TM) om elk item te controleren. Met deze gereedschappen kunt u waarschuwingen definiëren die specifiek zijn voor uw systeem, zoals een hoog systeemgebruik, een back-up van de workflow, storingen in de health check of niet-geverifieerde toegang tot uw website. Adobe adviseert geen bepaalde hulpmiddelen over anderen. Zoek het hulpmiddel dat voor u werkt, en hefboomwerking het om de besproken punten te controleren.
 
 #### Interne toepassingsbewaking {#internal-application-monitoring}
 
@@ -83,7 +83,7 @@ In veel gevallen is een basislijn nodig om een statistiek effectief te kunnen co
 
 **JVM-bewaking**
 
-Net als bij elke op Java gebaseerde toepassingsstapel, [!DNL Experience Manager] hangt dit af van de bronnen die er via de onderliggende Java Virtual Machine aan worden geleverd. U kunt de status van veel van deze bronnen controleren via Platform MXBeans die door JVM beschikbaar worden gemaakt. Voor meer informatie over MXBeans, zie het [Gebruiken van de Server van het Platform MBean en Platform MXBeans](https://docs.oracle.com/javase/7/docs/technotes/guides/management/mxbeans.html).
+Net als bij elke op Java gebaseerde toepassingsstapel, [!DNL Experience Manager] hangt dit af van de bronnen die er via de onderliggende Java Virtual Machine aan worden geleverd. U kunt de status van veel van deze bronnen controleren via Platform MXBeans die door JVM beschikbaar worden gemaakt. Voor meer informatie over MXBeans, zie het [Gebruiken van de Server van Platform MBean en Platform MXBeans](https://docs.oracle.com/javase/7/docs/technotes/guides/management/mxbeans.html).
 
 Hier volgen enkele basislijnparameters die u kunt controleren voor JVM:
 
@@ -95,7 +95,7 @@ Geheugen
 * Alarmdrempel: Wanneer het heap- of non-heap-geheugengebruik meer dan 75% van het overeenkomstige maximale geheugen bedraagt.
 * Alarmdefinitie: Het systeemgeheugen is onvoldoende of er is een geheugenlek in de code. Analyseer een draadstortplaats om bij een definitie aan te komen.
 
->[!Nofferte]
+>[!NOTE]
 >
 >De informatie die door dit boon wordt verstrekt wordt uitgedrukt in bytes.
 
@@ -122,7 +122,7 @@ Replication-agents
 
 * Alarmdefinitie: Aanwezigheid van een geblokkeerde rij in het systeem erop wijst die dat het replicatiedoel neer of onbereikbaar is. Vaak leiden netwerk- of infrastructuurproblemen ertoe dat overdreven items in de wachtrij worden geplaatst, wat de systeemprestaties nadelig kan beïnvloeden.
 
->[!Nofferte]
+>[!NOTE]
 >
 >Voor de parameters MBean en URL, vervang `<AGENT_NAME>` met de naam van de replicatieagent u wilt controleren.
 
@@ -198,5 +198,5 @@ In het proces van controle, als u problemen ontmoet, zijn hier sommige het oplos
 * Gebruik de workflowconsole om te controleren of uw workflows naar behoren werken. Indien mogelijk kunt u meerdere workflows samenvoegen tot één workflow.
 * Herzie live monitoring en zoek naar extra knelpunten of hoge consumenten van specifieke hulpbronnen.
 * Onderzoek de uitgang punten van het cliëntnetwerk en de ingangen richten aan het [!DNL Experience Manager] plaatsingsnetwerk, met inbegrip van de verzender. Dit zijn vaak knelpunten. Zie [Elementennetwerkoverwegingen](/help/assets/assets-network-considerations.md)voor meer informatie.
-* Vergroot de grootte van uw [!DNL Experience Manager] server. U hebt mogelijk een te grote [!DNL Experience Manager] implementatie. De klantenservice van Adobe kan u helpen te identificeren of uw server ondermaats is.
-* Onderzoek de `access.log` en de `error.log` dossiers voor ingangen rond de tijd van iets fout ging. Zoek naar patronen die op anomalieën van de douanecode kunnen wijzen. Voeg deze toe aan de lijst met gebeurtenissen die u controleert.
+* Vergroot de grootte van uw [!DNL Experience Manager] server. U hebt mogelijk een te grote [!DNL Experience Manager] implementatie. De klantenservice van Adobe kan u helpen bepalen of uw server te klein is.
+* Onderzoek de `access.log` en de `error.log` dossiers voor ingangen rond de tijd van iets ging fout. Zoek naar patronen die op anomalieën van de douanecode kunnen wijzen. Voeg deze toe aan de lijst met gebeurtenissen die u controleert.

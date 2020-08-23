@@ -10,10 +10,10 @@ discoiquuid: cf7823f4-82c2-4e36-9b65-3c58359b8104
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
 translation-type: tm+mt
-source-git-commit: a1e4d64a9ac7dc02c5cf2ac6b01994736c45b449
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '4260'
-ht-degree: 13%
+source-wordcount: '4244'
+ht-degree: 15%
 
 ---
 
@@ -27,7 +27,7 @@ Raadpleeg de *Adobe Scene7 HTML5 Viewer SDK* voor instructies over het maken en 
 Path: `<scene7_domain>/s7sdk/<library_version>/docs/jsdocs/index.html`.
 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html)
 
-Zie ook de naslaggids voor [Adobe Viewers](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html).
+Zie ook de [Adobe Viewers Reference Guide](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html).
 
 In deze sectie wordt beschreven hoe u voorinstellingen voor viewers kunt maken, bewerken en beheren. U kunt een viewervoorinstelling op elk gewenst moment op een element toepassen. Zie Voorinstellingen [voor viewers](#applying-a-viewer-preset-to-an-asset)toepassen.
 
@@ -43,7 +43,7 @@ Zie ook Toegankelijkheid [en navigatie](https://docs.adobe.com/content/help/en/d
 
 ## Viewer-voorinstellingen beheren {#managing-viewer-presets-1}
 
-U kunt in AEM viewervoorinstellingen toevoegen, bewerken, verwijderen, publiceren, de publicatie ervan ongedaan maken en voorvertonen door te tikken op **[!UICONTROL Tools]** (hamerpictogram) **[!UICONTROL > Assets > Viewer Presets.]**
+You can add, edit, delete, publish, unpublish, and preview viewer presets in AEM by tapping **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets > Viewer Presets.]**
 
 ![6_5_tools-assets-viewerpresets](assets/6_5_tools-assets-viewerpresets.png)
 
@@ -55,7 +55,7 @@ U kunt in AEM viewervoorinstellingen toevoegen, bewerken, verwijderen, publicere
 
 Verschillende webpagina&#39;s hebben verschillende behoeften. Soms wilt u bijvoorbeeld een webpagina die een koppeling bevat waarmee de HTML5 Viewer wordt geopend in een apart browservenster. In andere gevallen kan het nodig zijn de HTML5 Viewer rechtstreeks in te sluiten op de hostpagina. In het laatste geval kan de webpagina een statische indeling hebben. Of de interface reageert mogelijk op een ander scherm op verschillende apparaten of voor verschillende venstergrootten in de browser. Om aan deze behoeften tegemoet te komen, ondersteunen alle vooraf gedefinieerde, kant-en-klare HTML5 Viewers die bij Dynamic Media worden geleverd zowel statische webpagina&#39;s als responsieve webpagina&#39;s.
 
-Zie de [Reactiebibliotheek](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html) van het Beeld in het Beeld *Scene7* die API Hulpvoor meer informatie over hoe te om ontvankelijke kijkers op uw Web-pagina&#39;s in te bedden.
+Zie de bibliotheek met [responsieve afbeeldingen](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html) in de Help *van de* Scene7 Image Serving API voor meer informatie over het insluiten van responsieve viewers op uw webpagina&#39;s.
 
 >[!NOTE]
 >
@@ -64,7 +64,7 @@ Zie de [Reactiebibliotheek](https://docs.adobe.com/content/help/en/dynamic-media
 
 ### Compatibiliteit van het systeem met voorinstellingen voor viewers  {#viewer-preset-system-compatibility}
 
-Alle voorinstellingen voor viewers buiten de box die bij Dynamic Media worden geleverd, zijn volledig compatibel met de volgende systemen:
+Alle voorinstellingen van de out-of-the-box Viewer die bij Dynamische media worden geleverd, zijn volledig compatibel met de volgende systemen:
 
 * Desktops
 * Apple iPhone
@@ -117,7 +117,7 @@ Beheerders kunnen de volgende rich media-typen toevoegen en aanpassen bij het ma
     <ul>
      <li>Een hoogte-breedteverhouding van 2:1.</li>
      <li>Gelabeld met de trefwoorden <code>equirectangular</code>, of <code>spherical</code> en <code>panorama</code>, <code>spherical </code>en <code>panoramic</code>. Zie <a href="/help/sites-authoring/tags.md">Tags</a>gebruiken.</li>
-    </ul> <p>Zowel de hoogte-breedteverhouding als de trefwoordcriteria zijn van toepassing op panoramische elementen voor de pagina met elementdetails en de WCM-component "Panoramische media".</p> <p><strong>Belangrijk</strong>: Deze kijker is slechts beschikbaar op Dynamic Media - wijze Scene7.</p> </td>
+    </ul> <p>Zowel zijn de aspectverhouding als de sleutelwoordcriteria van toepassing op panoramische activa voor de de detailpagina van activa en de component van "Panoramische Media" WCM.</p> <p><strong>Belangrijk</strong>: Deze viewer is alleen beschikbaar in de modus Dynamische media - Scene7.</p> </td>
   </tr>
   <tr>
    <td><strong>Video over slim uitsnijden</strong><br /> </td>
@@ -129,7 +129,7 @@ Beheerders kunnen de volgende rich media-typen toevoegen en aanpassen bij het ma
   </tr>
   <tr>
    <td><strong>360-video</strong></td>
-   <td><p>Met de 360/VR-videoviewer kunt u rechthoekige video renderen voor een indrukwekkende kijkervaring van een kamer, eigenschap, locatie, landschap of medische procedure.</p> <p>Tijdens het afspelen op een plat beeldscherm heeft de gebruiker controle over de kijkhoek; afspelen op mobiele apparaten maakt doorgaans gebruik van de ingebouwde gyroscopische besturingselementen.</p> <p>De viewer bevat native ondersteuning voor de levering van 360 video-elementen. Standaard is geen aanvullende configuratie nodig voor weergave of afspelen. U levert 360 Video gebruikend standaardvideouitbreidingen zoals .mp4, .mkv, en .mov. De meest algemene codec is H.264.</p> <p><strong>Belangrijk</strong>: Deze kijker is slechts beschikbaar op Dynamic Media - wijze Scene7.</p> </td>
+   <td><p>Met de 360/VR-videoviewer kunt u rechthoekige video renderen voor een indrukwekkende kijkervaring van een kamer, eigenschap, locatie, landschap of medische procedure.</p> <p>Tijdens het afspelen op een plat beeldscherm heeft de gebruiker controle over de kijkhoek; afspelen op mobiele apparaten maakt doorgaans gebruik van de ingebouwde gyroscopische besturingselementen.</p> <p>De viewer bevat native ondersteuning voor de levering van 360 video-elementen. Standaard is geen aanvullende configuratie nodig voor weergave of afspelen. U levert 360 Video gebruikend standaardvideouitbreidingen zoals .mp4, .mkv, en .mov. De meest algemene codec is H.264.</p> <p><strong>Belangrijk</strong>: Deze viewer is alleen beschikbaar in de modus Dynamische media - Scene7.</p> </td>
   </tr>
   <tr>
    <td><strong>Video</strong></td>
@@ -152,7 +152,7 @@ Beheerders kunnen de volgende rich media-typen toevoegen en aanpassen bij het ma
 
 ### Lijst met voorinstellingen voor viewers buiten de box {#list-of-out-of-the-box-viewer-presets}
 
-In de volgende tabel worden alle vooraf gedefinieerde, voorinstellingen voor viewers buiten de box weergegeven die bij Dynamic Media worden geleverd.
+In de volgende tabel worden alle vooraf gedefinieerde, kant-en-klare voorinstellingen voor viewers weergegeven die bij Dynamische media worden geleverd.
 
 Zie ook [Live demos](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html).
 
@@ -162,7 +162,7 @@ Zie Opmerkingen bij de release van viewers in de inhoudsopgave van de naslaggids
 
 >[!NOTE]
 >
->Alle voorinstellingen van de viewer buiten de box in Dynamic Media zijn al geactiveerd (ingeschakeld), maar u moet deze wel publiceren.
+>Alle voorinstellingen voor viewers die niet in de box staan, zijn al geactiveerd (ingeschakeld), maar moeten wel worden gepubliceerd.
 >Zie Voorinstellingen [voor](#publishing-viewer-presets)viewers publiceren.
 >
 >Alle nieuwe viewervoorinstellingen die u maakt en toevoegt, moeten zowel worden geactiveerd *als *gepubliceerd.
@@ -387,7 +387,7 @@ In de volgende tabel worden de bewegingen van de mobiele viewer weergegeven die 
 
 ## Increasing the number of Viewer Presets that display {#increasing-the-number-of-viewer-presets-that-display}
 
-In AEM kunt u een groot aantal verschillende voorinstellingen voor viewers weergeven wanneer u elementen weergeeft van **[!UICONTROL Detail View > Viewers.]** U kunt het aantal weergegeven viewers verhogen of verlagen.
+AEM toont een groot aantal viewervoorinstellingen wanneer u elementen weergeeft van **[!UICONTROL Detail View > Viewers.]** U kunt het aantal weergegeven viewers verhogen of verlagen.
 
 **Het aantal weergegeven viewervoorinstellingen verhogen**
 
@@ -406,9 +406,9 @@ In AEM kunt u een groot aantal verschillende voorinstellingen voor viewers weerg
 
 ## Een voorinstelling voor viewers maken {#creating-a-new-viewer-preset}
 
-Door viewervoorinstellingen te maken, kunt u verschillende instellingen toepassen op weergave en interactie met elementen. U hoeft echter geen nieuwe voorinstellingen voor viewers te maken. Desgewenst kunt u de standaardvoorinstellingen voor viewers buiten de box gebruiken die al bij AEM Assets worden geleverd.
+Door viewervoorinstellingen te maken, kunt u verschillende instellingen toepassen op weergave en interactie met elementen. U hoeft echter geen nieuwe voorinstellingen voor viewers te maken. Desgewenst kunt u de standaardvoorinstellingen voor viewers gebruiken die al bij AEM Assets worden geleverd.
 
-Als u een nieuwe viewervoorinstelling maakt nadat u deze hebt opgeslagen, wordt de status van de viewer automatisch geactiveerd (ingesteld op **[!UICONTROL On]**) op de pagina Voorinstellingen viewer. Deze status betekent dat deze zichtbaar is in de component Dynamic Media en de component Interactieve media en wanneer u een voorvertoning van een afbeelding of video weergeeft.
+Als u een nieuwe viewervoorinstelling maakt nadat u deze hebt opgeslagen, wordt de status van de viewer automatisch geactiveerd (ingesteld op **[!UICONTROL On]**) op de pagina Voorinstellingen viewer. Deze status betekent dat deze zichtbaar is in de component Dynamische media en de component Interactieve media en wanneer u een voorvertoning van een afbeelding of video weergeeft.
 
 Sommige voorinstellingen voor viewers hebben exclusieve instellingen die het gebruik en het algemene gedrag van de viewer kunnen beïnvloeden. Afhankelijk van de viewervoorinstelling die u maakt, is het verstandig rekening te houden met deze speciale overwegingen.
 
@@ -418,7 +418,7 @@ Zie [Speciale overwegingen voor het maken van een voorinstelling](#special-consi
 
 **Een viewervoorinstelling maken**
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools** (hammer icon) **[!UICONTROL > Assets > Viewer Presets**.
+1. Tik in de linkerbovenhoek van AEM op het AEM-logo en tik vervolgens in het linkerspoor op **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets]**.
 
    ![6_5_viewervoorinstellingen](assets/6_5_viewerpresets.png)
 
@@ -438,7 +438,7 @@ Zie [Speciale overwegingen voor het maken van een voorinstelling](#special-consi
 
       Met de visuele editor kunt u zien welk effect een bepaalde eigenschap heeft op een stijl. Stel een eigenschap in of pas deze aan om direct te zien welk effect het heeft op de viewer met behulp van het voorbeeld links van de editor.
 
-      De CSS-opmaakeigenschappen voor elk type voorinstelling voor viewers worden beschreven in het Help-onderwerp &quot;Customizing *`<viewer name>`* Viewer&quot; in de [naslaggids](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html)voor viewers. Als u bijvoorbeeld een viewervoorinstelling van het type maakt, raadpleegt u `Mixed_Media`Gemengde Media Viewer [](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) aanpassen voor een lijst en beschrijving van elke eigenschap.
+      De eigenschappen voor CSS-stijlen voor elk type voorinstelling voor viewers worden beschreven in het Help-onderwerp &quot;Customizing *`<viewer name>`* Viewer&quot; in de [naslaggids](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html)voor viewers. Als u bijvoorbeeld een viewervoorinstelling van het type maakt, raadpleegt u `Mixed_Media`Gemengde Media Viewer [](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) aanpassen voor een lijst en beschrijving van elke eigenschap.
 
    * Als u stijlinstellingen hebt gedefinieerd in een afzonderlijk CSS-bestand, kunt u het CSS-bestand uploaden naar AEM Assets. Tap **[!UICONTROL Import CSS]** below the **[!UICONTROL Selected Type]** pull-down menu (you may need to scroll the visual editor up to see it) to find the uploaded CSS file and associate it with the viewer preset.
 
@@ -542,14 +542,14 @@ De Viewer-voorinstellingen die beschikbaar zijn in de gebruikersinterface, zijn 
 
 **Voorinstellingen voor viewers activeren of deactiveren**
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools** (hammer icon) **[!UICONTROL > Assets > Viewer Presets.]**
+1. Tik in de linkerbovenhoek van AEM op het AEM-logo en tik vervolgens in het linkerspoor op **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets.]**
 1. Tik op de voorinstellingspagina van de viewer onder de **[!UICONTROL State]** kolomkop op de schakelknop om een viewervoorinstelling te activeren of te deactiveren.
 
    De viewervoorinstellingen die worden geactiveerd, worden aan de rechterkant weergegeven, in een blauw vak. bij gedeactiveerde viewervoorinstellingen wordt de schakeloptie links weergegeven, in een lichtgrijs vak.
 
 ## Voorinstellingen van viewer publiceren {#publishing-viewer-presets}
 
-Als u de status van een viewervoorinstelling activeert (of inschakelt), is deze zichtbaar in de component Dynamic Media, de component Interactieve media en wanneer u een element weergeeft.
+Als u de status van een viewervoorinstelling activeert (of inschakelt), betekent dit dat deze zichtbaar is in de component Dynamische media, de component Interactieve media en wanneer u een element weergeeft.
 
 Als u echter* *een asset wilt leveren met een viewervoorinstelling, moet de viewervoorinstelling ook worden gepubliceerd. Alle viewervoorinstellingen moeten geactiveerd *en *gepubliceerd zijn om een URL of insluitcode voor een asset te verkrijgen. U moet alle standaard viewervoorinstellingen die bij dynamische media worden geleverd, activeren en publiceren. Aangepaste viewervoorinstellingen die u maakt en toevoegt, worden automatisch geactiveerd, maar moeten ook worden gepubliceerd.
 
@@ -559,13 +559,13 @@ Zie ook [Elementen](/help/assets/previewing-assets.md)voorvertonen.
 
 **Voorinstellingen voor viewers publiceren**
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools** (hammer icon) **[!UICONTROL > Assets > Viewer Presets.]**
+1. Tik in de linkerbovenhoek van AEM op het AEM-logo en tik vervolgens in het linkerspoor op **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets.]**
 1. Selecteer een of meer voorinstellingen voor viewers die u wilt publiceren.
 1. Tik op het **[!UICONTROL Publish]** pictogram op de werkbalk.
 
 ## Voorinstellingen van viewer sorteren {#sorting-viewer-presets}
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools** (hammer icon) **[!UICONTROL > Assets > Viewer Presets.]**
+1. Tik in de linkerbovenhoek van AEM op het AEM-logo en tik vervolgens in het linkerspoor op **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets.]**
 1. Klik op **[!UICONTROL Preset Title]**, **[!UICONTROL Type]**, **[!UICONTROL Published]** of **[!UICONTROL State]** om op die kolomkop te sorteren. Klik bijvoorbeeld op **[!UICONTROL Type]** om de typen viewervoorinstellingen in alfabetische of omgekeerd alfabetische volgorde te sorteren.
 
 ## Viewer-voorinstellingen bewerken {#editing-viewer-presets}
@@ -574,7 +574,7 @@ Houd er rekening mee dat het bewerken van *vooraf gedefinieerde, voorinstellinge
 
 **Voorinstellingen voor viewers bewerken**
 
-1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools** (hammer icon) **[!UICONTROL > Asset > Viewer Presets.]**
+1. Tik in de linkerbovenhoek van AEM op het AEM-logo en tik vervolgens in het linkerspoor op **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Asset]>[!UICONTROL Viewer Presets.]**
 1. Selecteer een voorinstelling door het vakje links van de titel van de voorinstelling voor de viewer in te schakelen.
 1. Tik op de werkbalk op **[!UICONTROL Edit.]**
 1. Breng op de pagina **[!UICONTROL Viewer Preset Editor]** de wijzigingen aan die u in de viewervoorinstelling wilt aanbrengen met behulp van de opties op de tabbladen **[!UICONTROL Appearance]** en **[!UICONTROL Behavior]**.
@@ -586,9 +586,9 @@ Houd er rekening mee dat het bewerken van *vooraf gedefinieerde, voorinstellinge
    * Tik **[!UICONTROL Save]** om uw wijzigingen op te slaan en terug te keren naar de pagina Voorinstelling viewer.
    * Tik **[!UICONTROL Cancel]** om eventuele wijzigingen die u hebt aangebracht, te voorkomen en terug te keren naar de voorinstellingspagina van de viewer.
 
-## Aangepaste voorinstellingen van viewers verwijderen {#deleting-custom-viewer-presets}
+## Aangepaste voorinstellingen viewer verwijderen {#deleting-custom-viewer-presets}
 
-U kunt Viewer-voorinstellingen verwijderen die u hebt gemaakt en aan Dynamic Media hebt toegevoegd.
+U kunt Viewer-voorinstellingen verwijderen die u hebt gemaakt en toegevoegd aan dynamische media.
 
 **Aangepaste voorinstellingen voor viewers verwijderen**
 
@@ -616,4 +616,4 @@ Als u zowel de asset als de geselecteerde viewer al hebt gepubliceerd, worden de
 
 Zie URL&#39;s [koppelen aan uw webtoepassing](/help/assets/linking-urls-to-yourwebapplication.md)voor informatie over de URL&#39;s voor voorinstellingen van de viewer. Zie ook De video-viewer [insluiten op een webpagina](/help/assets/embed-code.md).
 
-Als u AEM als uw WCM gebruikt, kunt u elementen toevoegen met behulp van de voorinstellingen van de viewer rechtstreeks op de pagina. See [Adding Dynamic Media Assets to Pages](/help/assets/adding-dynamic-media-assets-to-pages.md).
+Als u AEM gebruikt als uw WCM, kunt u elementen toevoegen met behulp van de voorinstellingen van de viewer rechtstreeks op de pagina. See [Adding Dynamic Media Assets to Pages](/help/assets/adding-dynamic-media-assets-to-pages.md).

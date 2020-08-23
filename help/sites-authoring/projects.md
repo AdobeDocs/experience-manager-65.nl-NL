@@ -11,14 +11,17 @@ content-type: reference
 discoiquuid: dee7ac7c-ca86-48e9-8d95-7826fa926c68
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+workflow-type: tm+mt
+source-wordcount: '1395'
+ht-degree: 9%
 
 ---
 
 
 # Projecten{#projects}
 
-Met projecten kunt u resources groeperen in één entiteit. Een gemeenschappelijke, gedeelde omgeving maakt het gemakkelijk om uw projecten te beheren. De soorten middelen u met een project kunt associëren worden bedoeld in AEM als Banden. De tegels kunnen project en teaminformatie, activa, werkschema&#39;s, en andere types van informatie omvatten, zoals die in detail in de Tegels van het [Project worden beschreven.](#project-tiles)
+Met projecten kunt u resources groeperen in één entiteit. Een gemeenschappelijke, gedeelde omgeving maakt het gemakkelijk om uw projecten te beheren. De soorten middelen u met een project kunt associëren worden bedoeld in AEM als Tegels. De tegels kunnen project en teaminformatie, activa, werkschema&#39;s, en andere types van informatie omvatten, zoals die in detail in de Tegels van het [Project worden beschreven.](#project-tiles)
 
 >[!CAUTION]
 >
@@ -33,8 +36,7 @@ Als gebruiker kunt u het volgende doen:
 
 Zie de volgende aanvullende onderwerpen:
 
-* [Projecten beheren
-   ](/help/sites-authoring/touch-ui-managing-projects.md)
+* [Projecten beheren](/help/sites-authoring/touch-ui-managing-projects.md)
 * [Werken met taken](/help/sites-authoring/task-content.md)
 * [Werken met projectworkflows](/help/sites-authoring/projects-with-workflows.md)
 * [Creative Project- en PIM-integratie](/help/sites-authoring/managing-product-information.md)
@@ -65,16 +67,16 @@ Aan uw project kunnen de volgende tegels zijn gekoppeld. Elk wordt beschreven in
 * Openingspagina&#39;s
 * E-mails
 * Workflows
-* Starten
+* Lanceringen
 * Taken
 
-### Activa {#assets}
+### Assets {#assets}
 
 In de **middelentegel** kunt u alle elementen verzamelen die u voor een bepaald project gebruikt.
 
 ![chlimage_1-70](assets/chlimage_1-70.png)
 
-U uploadt elementen rechtstreeks in de tegel. Bovendien kunt u de Reeksen van het Beeld, Reeksen van de Rotatie, of Gemengde Reeksen van Media tot stand brengen als u de Dynamische toe:voegen-aan van Media hebt.
+U uploadt elementen rechtstreeks in de tegel. Daarnaast kunt u Afbeeldingssets, Spin-sets of Gemengde mediasets maken als u over de invoegtoepassing Dynamische media beschikt.
 
 ![chlimage_1-71](assets/chlimage_1-71.png)
 
@@ -84,7 +86,7 @@ Net als bij elementen kunt u [elementverzamelingen](/help/assets/managing-collec
 
 ![chlimage_1-72](assets/chlimage_1-72.png)
 
-Voeg een verzameling toe door op Verzameling **** toevoegen te klikken en de gewenste verzameling in de lijst te selecteren.
+Voeg een verzameling toe door op **Verzameling toevoegen** te klikken en de juiste verzameling in de lijst te selecteren.
 
 ### Ervaringen {#experiences}
 
@@ -92,7 +94,7 @@ Met de tegel **Ervaring** kunt u een mobiele app, website of publicatie aan het 
 
 ![chlimage_1-73](assets/chlimage_1-73.png)
 
-De pictogrammen geven aan welke ervaring wordt weergegeven: website, mobiele toepassing of een publicatie. Voeg ervaringen toe door op het plusteken (+) te klikken of op Ervaring **** toevoegen te klikken en het type ervaring te selecteren.
+De pictogrammen geven aan welke ervaring wordt weergegeven: website, mobiele applicatie of een publicatie. Voeg ervaringen toe door op het plusteken (+) te klikken of op **Ervaring toevoegen** te klikken en het type ervaring te selecteren.
 
 ![chlimage_1-74](assets/chlimage_1-74.png)
 
@@ -164,7 +166,7 @@ U kunt uw project toewijzen om bepaalde workflows te volgen. Afhankelijk van wel
 
 Deze worden beschreven in [Werken met projectworkflows.](/help/sites-authoring/projects-with-workflows.md)
 
-### Starten {#launches}
+### Lanceringen {#launches}
 
 In de tegel Opstarten worden alle opstarten weergegeven die zijn aangevraagd met een workflow voor het [starten van een aanvraag.](/help/sites-authoring/projects-with-workflows.md)
 
@@ -178,7 +180,7 @@ Met Taken kunt u de status van projectgerelateerde taken, waaronder workflows, c
 
 ## Projectsjablonen {#project-templates}
 
-AEM verzendt drie verschillende sjablonen uit de doos:
+AEM schepen met drie verschillende sjablonen uit de doos:
 
 * Een eenvoudig project - een referentiemonster voor alle projecten die niet in andere categorieën passen (een &#39;catch-all&#39;-project). Het omvat drie basisrollen (Eigenaars, Editors, en Waarnemers) en vier werkschema&#39;s (de Goedkeuring van het Project, de Lancering van het Verzoek, de Pagina van het Aanbrengen van het Verzoek en E-mail van het Verzoek).
 * Een mediaproject - een referentiemonsteringsproject voor aan media gerelateerde activiteiten. Het omvat verscheidene media verwante projectrollen (Fotografen, Editors, Copywriters, Ontwerpers, Eigenaars en Waarnemers). Het omvat ook twee workflows met betrekking tot media-inhoud - Verzoek om kopie (voor het aanvragen en reviseren van tekst) en Fotoopname van product (voor het beheren van productgerelateerde fotografie)
@@ -242,4 +244,4 @@ Voor creatieve projecten worden ook extra rollen - bijvoorbeeld fotografen - geg
 
 >[!NOTE]
 >
->Wanneer u het project creeert en gebruikers aan de diverse rollen toevoegt, worden de groepen verbonden aan het project automatisch gecreeerd om bijbehorende toestemmingen te beheren. Bijvoorbeeld, zou een project genoemd Mijn project drie groepen **MijnProjecteigenaars**, **Mijn Projecteditors**, **Mijn projectwaarnemers** hebben. Als het project echter wordt verwijderd, worden deze groepen niet automatisch verwijderd. Een beheerder moet de groepen handmatig verwijderen in **Gereedschappen** > **Beveiliging** > **Groepen**.
+>Wanneer u het project creëert en gebruikers aan de verschillende rollen toevoegt, worden de groepen die aan het project gekoppeld zijn, automatisch gecreëerd om bijbehorende machtigingen te beheren. Bijvoorbeeld: een project met de naam Mijn project zou drie groepen hebben: **Mijn projecteigenaars**, **Mijn projecteditors**, **Mijn projectwaarnemers**. Als het project echter wordt verwijderd, worden deze groepen niet automatisch verwijderd. Een beheerder moet de groepen handmatig verwijderen in **Gereedschappen** > **Beveiliging** > **Groepen**.

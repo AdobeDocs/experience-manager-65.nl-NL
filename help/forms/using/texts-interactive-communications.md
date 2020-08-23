@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f04050f8-42de-4ef0-b6ed-145d59bbffce
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+workflow-type: tm+mt
+source-wordcount: '2443'
+ht-degree: 0%
 
 ---
 
@@ -29,19 +32,19 @@ Het tekstdocumentfragment in Interactive Communication ondersteunt het volgende 
 
 ## Tekst maken {#createtext}
 
-1. Selecteer **[!UICONTROL Formulieren]** > **[!UICONTROL Documentfragmenten]**.
-1. Selecteer **[!UICONTROL Maken]** > **[!UICONTROL Tekst]**.
+1. Selecteer **[!UICONTROL Forms]** > **[!UICONTROL Document Fragments]**.
+1. Selecteer **[!UICONTROL Create]** > **[!UICONTROL Text]**.
 1. Geef de volgende informatie op:
 
-   * **[!UICONTROL Titel]**: (Optioneel) Voer de titel in voor het tekstdocumentfragment. Titels hoeven niet uniek te zijn en kunnen speciale tekens en niet-Engelse tekens bevatten. De teksten worden bedoeld door hun titels (indien beschikbaar) zoals in duimnagels en eigenschappen.
-   * **[!UICONTROL Naam]**: De unieke naam voor de tekst in een map. Geen twee documentfragmenten (tekst, voorwaarde of lijst) in een staat kunnen bestaan met dezelfde naam in een map. In het veld Naam kunt u alleen Engelse tekens, cijfers en afbreekstreepjes invoeren. Het veld Naam wordt automatisch ingevuld op basis van het veld Titel. De speciale tekens, spaties, getallen en niet-Engelse tekens die in het veld Titel zijn ingevoerd, worden vervangen door afbreekstreepjes in het veld Naam. Hoewel de waarde in het veld Titel automatisch naar de naam wordt gekopieerd, kunt u de waarde bewerken.
+   * **[!UICONTROL Title]**: (Optioneel) Voer de titel in voor het tekstdocumentfragment. Titels hoeven niet uniek te zijn en kunnen speciale tekens en niet-Engelse tekens bevatten. De teksten worden bedoeld door hun titels (indien beschikbaar) zoals in duimnagels en eigenschappen.
+   * **[!UICONTROL Name]**: De unieke naam voor de tekst in een map. Geen twee documentfragmenten (tekst, voorwaarde of lijst) in een staat kunnen bestaan met dezelfde naam in een map. In het veld Naam kunt u alleen Engelse tekens, cijfers en afbreekstreepjes invoeren. Het veld Naam wordt automatisch ingevuld op basis van het veld Titel. De speciale tekens, spaties, getallen en niet-Engelse tekens die in het veld Titel zijn ingevoerd, worden vervangen door afbreekstreepjes in het veld Naam. Hoewel de waarde in het veld Titel automatisch naar de naam wordt gekopieerd, kunt u de waarde bewerken.
 
-   * **[!UICONTROL Omschrijving]**: Typ een beschrijving van de tekst.
-   * **[!UICONTROL Formuliergegevensmodel]**: Selecteer desgewenst het keuzerondje Formuliergegevensmodel om de tekst te maken op basis van een formuliergegevensmodel. Als u het keuzerondje Formuliergegevensmodel selecteert, wordt het veld **[!UICONTROL Formuliergegevensmodel]** weergegeven. Blader naar een formuliergegevensmodel en selecteer dit. Zorg er tijdens het maken van tekst en een voorwaarde voor interactieve communicatie voor dat u hetzelfde gegevensmodel gebruikt dat u in de interactieve communicatie wilt gebruiken. Zie [Gegevensintegratie](/help/forms/using/data-integration.md)voor meer informatie over het formuliergegevensmodel.
+   * **[!UICONTROL Description]**: Typ een beschrijving van de tekst.
+   * **[!UICONTROL Form Data Model]**: Selecteer desgewenst het keuzerondje Formuliergegevensmodel om de tekst te maken op basis van een formuliergegevensmodel. Wanneer u het keuzerondje Formuliergegevensmodel selecteert, wordt het **[!UICONTROL Form Data Model]** veld weergegeven. Blader naar een formuliergegevensmodel en selecteer dit. Zorg er tijdens het maken van tekst en een voorwaarde voor interactieve communicatie voor dat u hetzelfde gegevensmodel gebruikt dat u in de interactieve communicatie wilt gebruiken. Zie [Gegevensintegratie](/help/forms/using/data-integration.md)voor meer informatie over het formuliergegevensmodel.
 
    * **[!UICONTROL Tags]**: Als u een aangepaste tag wilt maken, typt u een waarde in het tekstveld en drukt u op Enter. Wanneer u deze tekst opslaat, worden de nieuwe tags gemaakt.
 
-1. Tik op **[!UICONTROL Volgende]**.
+1. Tik op **[!UICONTROL Next]**.
 
    De pagina Tekst maken wordt weergegeven. Als u ervoor hebt gekozen om een op een formuliergegevensmodel gebaseerde tekst te maken, worden de eigenschappen van het formuliergegevensmodel weergegeven in het linkerdeelvenster.
 
@@ -59,11 +62,12 @@ Het tekstdocumentfragment in Interactive Communication ondersteunt het volgende 
    * [Speciale tekens](#special)
    * [Tekst zoeken en vervangen](#searching)
    * [Sneltoetsen](/help/forms/using/keyboard-shortcuts.md)
+
    >[!NOTE]
    >
-   >U kunt formuliergegevensmodelelementen, gegevenswoordenboekelementen en variabelen toevoegen met het @-symbool in de teksteditor. Wanneer u een tekenreeks opgeeft die wordt voorafgegaan door @ in de teksteditor, worden alle elementen van het gegevensmodel, elementen van het gegevenswoordenboek en variabelen doorzocht en worden elementen of variabelen met de doorzochte tekenreeks weergegeven. U kunt door de onderzoeksresultaten navigeren en een element of een variabele selecteren. Als er geen passend resultaat is, wordt het bericht *Geen overeenkomende resultaten gevonden* weergegeven.
+   >U kunt formuliergegevensmodelelementen, gegevenswoordenboekelementen en variabelen toevoegen met het @-symbool in de teksteditor. Wanneer u een tekenreeks opgeeft die wordt voorafgegaan door @ in de teksteditor, worden alle elementen van het gegevensmodel, gegevenswoordenboek en variabelen doorzocht en worden elementen of variabelen met de doorzochte tekenreeks weergegeven. U kunt door de onderzoeksresultaten navigeren en een element of een variabele selecteren. Als er geen passend resultaat is, wordt het bericht *Geen overeenkomende resultaten gevonden* weergegeven.
 
-1. Tik op **[!UICONTROL Opslaan]**.
+1. Tik op **[!UICONTROL Save]**.
 
    De tekst wordt gemaakt. Nu kunt u doorgaan met het gebruik van de tekst als een bouwsteen tijdens het maken van een interactieve communicatie.
 
@@ -71,11 +75,11 @@ Het tekstdocumentfragment in Interactive Communication ondersteunt het volgende 
 
 U kunt een bestaand tekstdocumentfragment bewerken met de volgende stappen. U kunt ook een tekstdocumentfragment bewerken in een interactieve communicatie-editor.
 
-1. Selecteer **[!UICONTROL Formulieren]** > **[!UICONTROL Documentfragmenten]**.
+1. Selecteer **[!UICONTROL Forms]** > **[!UICONTROL Document Fragments]**.
 1. Navigeer naar een tekstdocumentfragment en selecteer het.
-1. Tik op **[!UICONTROL Bewerken]**.
+1. Tik op **[!UICONTROL Edit]**.
 1. Breng de gewenste wijzigingen aan. Zie Tekst [maken voor meer informatie over opties in tekst](#createtext).
-1. Tik op **[!UICONTROL Opslaan]** en tik vervolgens op **[!UICONTROL Sluiten]**.
+1. Tik **[!UICONTROL Save]** en tik vervolgens op **[!UICONTROL Close]**.
 
 ## Een tekstdocumentfragment aanpassen met eigenschappen van het formuliergegevensmodel {#formdatamodel}
 
@@ -85,7 +89,7 @@ Als u een formuliergegevensmodel hebt opgegeven tijdens het maken van een tekst,
 
 ![insertFDmelementtext](assets/insertfdmelementtext.png)
 
-* Als u een eigenschap van een formuliergegevensmodel in de tekst wilt invoegen, plaatst u de cursor op de plaats waar u de eigenschap wilt invoegen en selecteert u de eigenschap **[A]** in het linkerdeelvenster door erop te tikken en tikt u op **[!UICONTROL [B]en selecteert u de eigenschap]**A. U kunt ook dubbeltikken op de eigenschap om deze in te voegen op de cursorpositie**[ C ]**. Eigenschappen van het formuliergegevensmodel worden gemarkeerd in een bruine achtergrondkleur.
+* Als u een eigenschap van een formuliergegevensmodel in tekst wilt invoegen, plaatst u de cursor op de plaats waar u de eigenschap wilt invoegen en selecteert u de eigenschap **[A]** in het linkerdeelvenster door erop te tikken en tikt u op **[!UICONTROL[B]Add Selected]**. U kunt ook dubbeltikken op de eigenschap om deze in te voegen op de cursorpositie **[C]** . Eigenschappen van het formuliergegevensmodel worden gemarkeerd in een bruine achtergrondkleur.
 
 U kunt ook de eigenschap van het formuliergegevensmodel zoeken en toevoegen met het symbool @ in de teksteditor. Plaats de cursor op de plaats waar u de eigenschap wilt invoegen. Typ @ gevolgd door de zoekreeks. De zoekbewerking wordt uitgevoerd op alle eigenschappen en variabelen van het formuliergegevensmodel die beschikbaar zijn in het documentfragment. De eigenschappen of variabelen die de zoekreeks bevatten, worden opgehaald en weergegeven als een vervolgkeuzelijst. Navigeer door de onderzoeksresultaten en klik het bezit dat u bij de cursorplaats wilt opnemen. Druk op Esc om de zoekresultaten te verbergen.
 
@@ -107,28 +111,28 @@ Tijdens het maken of bewerken van een tekstdocumentfragment kunt u variabelen ma
 
 ### Variabelen maken {#createvariables}
 
-1. Tik in het linkerdeelvenster op **[!UICONTROL Variabelen]**.
+1. Tik in het linkervenster op **[!UICONTROL Variables]**.
 
    Het deelvenster Variabelen wordt weergegeven.
 
    ![variabele](assets/variablespane.png)
 
-1. Tik op **[!UICONTROL Maken]**.
+1. Tik op **[!UICONTROL Create]**.
 
    Het deelvenster Variabelen maken wordt weergegeven.
 
-1. Voer de volgende gegevens in en tik op **[!UICONTROL Maken]**:
+1. Voer de volgende gegevens in en tik op **[!UICONTROL Create]**:
 
-   * **[!UICONTROL Naam]** : Naam van de variabele.
-   * **[!UICONTROL Omschrijving]** : Voer desgewenst een beschrijving van de variabele in.
+   * **[!UICONTROL Name]** : Naam van de variabele.
+   * **[!UICONTROL Description]** : Voer desgewenst een beschrijving van de variabele in.
    * **[!UICONTROL Type]** : Selecteer een type variabele: Tekenreeks, Aantal, Boolean of Datum.
-   * **[!UICONTROL Alleen]** specifieke waarden toestaan: Voor de variabelen van het Koord en van het Aantal, kunt u ervoor zorgen dat de agent van een specifieke reeks waarden voor placeholder in de Agent UI kiest. Als u de reeks waarden wilt opgeven, selecteert u deze optie en geeft u door komma&#39;s gescheiden waarden op die zijn toegestaan in het veld **[!UICONTROL Waarden]** .
+   * **[!UICONTROL Allow Specific Values Only]** : Voor de variabelen van het Koord en van het Aantal, kunt u ervoor zorgen dat de agent van een specifieke reeks waarden voor placeholder in de Agent UI kiest. Als u de reeks waarden wilt opgeven, selecteert u deze optie en geeft u door komma&#39;s gescheiden waarden op die zijn toegestaan in het **[!UICONTROL Values]** veld.
 
-1. Tik op **[!UICONTROL Maken]**.
+1. Tik op **[!UICONTROL Create]**.
 
    De variabele wordt gemaakt en vermeld in het deelvenster Variabelen.
 
-1. Als u een variabele in de tekst wilt invoegen, plaatst u de cursor op de juiste plaats, selecteert u de variabele en tikt u op Geselecteerde **** toevoegen.
+1. Als u een variabele in de tekst wilt invoegen, plaatst u de cursor op de juiste plaats, selecteert u de variabele en tikt u op **[!UICONTROL Add Selected]**.
 
    ![variabele ingevoegd](assets/variableinserted.png)
 
@@ -136,7 +140,7 @@ Tijdens het maken of bewerken van een tekstdocumentfragment kunt u variabelen ma
 
    U kunt ook variabelen zoeken en toevoegen met het @-symbool in de teksteditor. Plaats de cursor op de plaats waar u de variabele wilt invoegen. Typ @ gevolgd door de zoekreeks. De zoekbewerking wordt uitgevoerd op alle eigenschappen en variabelen van het formuliergegevensmodel die beschikbaar zijn in het documentfragment. De eigenschappen en variabelen die de zoekreeks bevatten, worden opgehaald en weergegeven als een vervolgkeuzelijst. Navigeer door de onderzoeksresultaten en klik de variabele die u bij de cursorplaats wilt opnemen. Druk op Esc om de zoekresultaten te verbergen.
 
-1. Tik op **[!UICONTROL Opslaan]**.
+1. Tik op **[!UICONTROL Save]**.
 
 ## Regels maken in tekst {#rules}
 
@@ -155,12 +159,13 @@ Met de regeleditor in een tekst kunt u regels maken om tekenreeksen tekst of stu
 
    ![selectcontentApplicationRule](assets/selectcontentapplyrule.png)
 
-1. Tik op **[!UICONTROL Regel]** maken.
+1. Tik op **[!UICONTROL Create Rule]**.
 
    Het dialoogvenster Regel maken wordt weergegeven. Naast tekenreeks, nummer, wiskundige expressie en datum zijn in de Regeleditor ook de volgende opties beschikbaar voor het maken van instructies van de regels:
 
    * Eigenschappen van gekoppeld formuliergegevensmodel
    * Alle variabelen die u hebt gemaakt
+
    Selecteer de gewenste optie die u wilt evalueren.
 
    ![ruleeditor](assets/ruleeditor.png) ![ruleeditorfdm](assets/ruleeditorfdm.png)
@@ -183,7 +188,7 @@ Met de regeleditor in een tekst kunt u regels maken om tekenreeksen tekst of stu
    * U kunt ook meerdere voorwaarden in een regel maken.
    * U kunt ook overlappende regels maken, waarin een regel wordt toegepast op een deel van een inhoud waarop al een regel is toegepast.
 
-1. Tik **[!UICONTROL op Gereed]**.
+1. Tik op **[!UICONTROL Done]**.
 
    De regel wordt toegepast. De tekst of inhoud waarop de regel wordt toegepast, wordt groen gemarkeerd. Wanneer u de cursor boven de linkergreep van de markering houdt, wordt de toegepaste regel weergegeven.
 
@@ -194,11 +199,12 @@ Met de regeleditor in een tekst kunt u regels maken om tekenreeksen tekst of stu
 ## Tekst opmaken {#formatting}
 
 Tijdens het maken of bewerken van tekst verandert de werkbalk afhankelijk van het type bewerkingen dat u wilt uitvoeren: Alinea, Uitlijning of Lijst:
-[ ![Selecteer een type werkbalk](do-not-localize/toolbarselection.png)
+
+![Type werkbalk selecteren](do-not-localize/toolbarselection.png)
 
 Selecteer een type werkbalk: Alinea, Uitlijning of Lijst
 
-](assets/toolbarselection.png) Werkbalk ![voor het bewerken van lettertypen](do-not-localize/paragraphtoolbar.png)
+![Werkbalk voor bewerken van lettertypen](do-not-localize/paragraphtoolbar.png)
 
 Werkbalk voor bewerken van lettertypen
 
@@ -257,15 +263,16 @@ Wanneer u werkt met tekstdocumentfragmenten die een grote hoeveelheid tekst beva
 Met de functie Zoeken en vervangen kunt u elke tekenreeks in een tekstdocumentfragment zoeken (en vervangen). De functie bevat ook een krachtige zoekopdracht met een reguliere expressie.
 
 1. Open een tekstdocumentfragment om [te bewerken](#edittext).
-1. Tik op **[!UICONTROL Zoeken en vervangen]**.
+1. Tik op **[!UICONTROL Find & Replace]**.
 
-1. Typ de tekst die u wilt doorzoeken in het tekstvak **[!UICONTROL Zoeken]** en de nieuwe tekst (vervangende tekst) in het tekstvak **[!UICONTROL Vervangen]** en tik op **[!UICONTROL Vervangen]**.
+1. Typ de tekst die u wilt doorzoeken in het **[!UICONTROL Find]** tekstvak en de nieuwe tekst (vervangende tekst) in het **[!UICONTROL Replace]** tekstvak en tik op **[!UICONTROL Replace]**.
 
 1. Als de gezochte tekst wordt gevonden, wordt de tekst vervangen door de vervangingstekst.
 
-   * Als er een ander exemplaar van de zoektekst wordt gevonden, wordt dat exemplaar gemarkeerd in het tekstdocumentfragment. Als u nogmaals op **[!UICONTROL Vervangen]** tikt, wordt het gemarkeerde exemplaar vervangen en gaat de cursor verder als een derde exemplaar wordt gevonden.
+   * Als er een ander exemplaar van de zoektekst wordt gevonden, wordt dat exemplaar gemarkeerd in het tekstdocumentfragment. Als u **[!UICONTROL Replace]** opnieuw tikt, wordt de gemarkeerde instantie vervangen en gaat de cursor verder als een derde exemplaar wordt gevonden.
    * Als er geen ander exemplaar wordt gevonden, wordt in het dialoogvenster Zoeken en vervangen een bericht weergegeven: Einde van module bereikt.
+
    U kunt ook op Alles vervangen tikken om alle overeenkomsten in één keer te vervangen.
 
-   Zoeken en vervangen bevat ook een krachtige zoekopdracht voor reguliere expressies. Als u regex wilt gebruiken in uw zoekopdracht, selecteert u **[!UICONTROL Reg ex]** en tikt u op **[!UICONTROL Zoeken]** of **[!UICONTROL Vervangen]**.
+   Zoeken en vervangen bevat ook een krachtige zoekopdracht voor reguliere expressies. Als u regex wilt gebruiken in de zoekopdracht, selecteert u **[!UICONTROL Reg ex]** en tikt u op **[!UICONTROL Find]** of **[!UICONTROL Replace]**.
 

@@ -1,6 +1,6 @@
 ---
-title: AEM-componenten - De basisbeginselen
-seo-title: AEM-componenten - De basisbeginselen
+title: Componenten AEM - De basisbeginselen
+seo-title: Componenten AEM - De basisbeginselen
 description: Wanneer u begint nieuwe componenten te ontwikkelen moet u de grondbeginselen van hun structuur en configuratie begrijpen
 seo-description: Wanneer u begint nieuwe componenten te ontwikkelen moet u de grondbeginselen van hun structuur en configuratie begrijpen
 uuid: 0225b34d-5ac4-40c3-b226-0c9b24bdf782
@@ -11,19 +11,19 @@ content-type: reference
 discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '4719'
+source-wordcount: '4718'
 ht-degree: 0%
 
 ---
 
 
-# AEM-componenten - De basisbeginselen{#aem-components-the-basics}
+# Componenten AEM - De basisbeginselen{#aem-components-the-basics}
 
 Wanneer u begint om nieuwe componenten te ontwikkelen moet u de grondbeginselen van hun structuur en configuratie begrijpen.
 
-Dit proces omvat het lezen van de theorie en het bekijken van de brede waaier van componentenimplementaties in een standaardAEM instantie. Deze laatste benadering wordt enigszins gecompliceerd door het feit dat, hoewel AEM is verschoven naar een nieuwe standaard, moderne interface met aanraakbediening, deze de klassieke interface blijft ondersteunen.
+Dit proces omvat het lezen van de theorie en het bekijken van de brede waaier van componentenimplementaties in een standaard AEM instantie. Deze laatste benadering wordt enigszins gecompliceerd door het feit dat hoewel AEM is verschoven naar een nieuwe standaard, moderne, aanraakinterface, deze de klassieke UI blijft ondersteunen.
 
 ## Overzicht {#overview}
 
@@ -50,10 +50,10 @@ Voordat u begint met het configureren of coderen van uw component, moet u het vo
 Voordat een serieuze discussie begint met het ontwikkelen van componenten, moet u weten welke interface uw auteurs zullen gebruiken:
 
 * **Interface met aanraakbediening**
-   [De standaardgebruikersinterface](/help/sites-developing/touch-ui-concepts.md) is gebaseerd op de verenigde gebruikerservaring voor de Adobe Marketing Cloud, gebruikend de onderliggende technologieën van [Koral UI](/help/sites-developing/touch-ui-concepts.md#coral-ui) en [Granite UI](/help/sites-developing/touch-ui-concepts.md#granite-ui).
+   [De standaardgebruikersinterface](/help/sites-developing/touch-ui-concepts.md) is gebaseerd op de verenigde gebruikerservaring voor de Adobe Marketing Cloud, die de onderliggende technologieën van [Koral UI](/help/sites-developing/touch-ui-concepts.md#coral-ui) en [Granite UI](/help/sites-developing/touch-ui-concepts.md#granite-ui)gebruikt.
 * **Klassieke UI** Gebruikersinterface die op technologie ExtJS wordt gebaseerd die met AEM 6.4 werd verouderd.
 
-Zie de Aanbevelingen van de Interface [UI voor Klanten](/help/sites-deploying/ui-recommendations.md) voor meer details.
+Zie [UI Interface Recommendations for Customers](/help/sites-deploying/ui-recommendations.md) voor meer informatie.
 
 Componenten kunnen worden geïmplementeerd ter ondersteuning van de interface met aanraakbediening, de klassieke interface of beide. Wanneer het bekijken van een standaardinstantie zult u ook uit-van-de-dooscomponenten zien die oorspronkelijk voor klassieke UI, of aanraking-toegelaten UI, of allebei werden ontworpen.
 
@@ -61,7 +61,7 @@ Daarom zullen we op deze pagina de basisbeginselen van beide, en hoe ze te herke
 
 >[!NOTE]
 >
->Adobe raadt u aan de interface met aanraakbediening te gebruiken om te profiteren van de nieuwste technologie. [AEM Modernination Tools&amp; (moderniatzion-tools.md) kan migratie gemakkelijker maken.
+>Adobe raadt u aan de interface met aanraakbediening te gebruiken om te profiteren van de nieuwste technologie. [AEM Moderniseringsgereedschappen](modernization-tools.md) kunnen de migratie vereenvoudigen.
 
 ### Opmaak voor Content Logic en rendering  {#content-logic-and-rendering-markup}
 
@@ -75,7 +75,7 @@ HTML is een HTML-sjabloontaal die is geïntroduceerd met AEM 6.0.
 
 De discussie over het al dan niet gebruiken van [HTML](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) of JSP (de Pagina&#39;s van de Server van Java) wanneer het ontwikkelen van uw eigen componenten zou ongecompliceerd moeten zijn aangezien HTML nu de geadviseerde scripting taal voor AEM is.
 
-Zowel HTML als JSP kunnen worden gebruikt voor de ontwikkeling van componenten voor zowel de klassieke als de interface met aanraakbediening. Hoewel er een tendens kan zijn om aan te nemen dat HTML slechts voor aanraking-toegelaten UI en JSP voor klassieke UI is, is dit een misvatting en meer toe te schrijven aan timing. De interface met aanraakbediening en HTML zijn gedurende ongeveer dezelfde periode in AEM opgenomen. Aangezien HTML nu de aanbevolen taal is, wordt het gebruikt voor nieuwe componenten, die meestal voor de interface met aanraakbediening zijn.
+Zowel HTML als JSP kunnen worden gebruikt voor de ontwikkeling van componenten voor zowel de klassieke als de interface met aanraakbediening. Hoewel er een tendens kan zijn om aan te nemen dat HTML slechts voor aanraking-toegelaten UI en JSP voor klassieke UI is, is dit een misvatting en meer toe te schrijven aan timing. De interface met aanraakbediening en HTML zijn in AEM opgenomen over ongeveer dezelfde periode. Aangezien HTML nu de aanbevolen taal is, wordt het gebruikt voor nieuwe componenten, die meestal voor de interface met aanraakbediening zijn.
 
 >[!NOTE]
 >
@@ -85,8 +85,8 @@ Zowel HTML als JSP kunnen worden gebruikt voor de ontwikkeling van componenten v
 
 Zie (na het lezen van deze pagina) voor het maken van uw eigen componenten voor de juiste interface:
 
-* [AEM-componenten voor de interface met aanraakfuncties](/help/sites-developing/developing-components.md)
-* [AEM-componenten voor de klassieke gebruikersinterface](/help/sites-developing/developing-components-classic.md)
+* [Componenten AEM voor de interface met aanraakbediening](/help/sites-developing/developing-components.md)
+* [Componenten AEM voor de klassieke gebruikersinterface](/help/sites-developing/developing-components-classic.md)
 
 U kunt snel aan de slag door een bestaande component te kopiëren en vervolgens de gewenste wijzigingen aan te brengen. Zie voor meer informatie over het maken van uw eigen componenten en het toevoegen van deze componenten aan het alineasysteem:
 
@@ -94,11 +94,11 @@ U kunt snel aan de slag door een bestaande component te kopiëren en vervolgens 
 
 ### Componenten verplaatsen naar de instantie Publiceren {#moving-components-to-the-publish-instance}
 
-De componenten die inhoud renderen moeten op dezelfde AEM-instantie als de inhoud worden geïmplementeerd. Daarom moeten alle componenten die voor creatie en het teruggeven van pagina&#39;s op de auteursinstantie worden gebruikt op worden opgesteld publiceert instantie. Bij implementatie zijn de componenten beschikbaar voor het renderen van geactiveerde pagina&#39;s.
+De componenten die inhoud teruggeven moeten op de zelfde AEM instantie worden opgesteld zoals de inhoud. Daarom moeten alle componenten die voor creatie en het teruggeven van pagina&#39;s op de auteursinstantie worden gebruikt op worden opgesteld publiceert instantie. Bij implementatie zijn de componenten beschikbaar voor het renderen van geactiveerde pagina&#39;s.
 
 Gebruik de volgende gereedschappen om uw componenten naar de publicatie-instantie te verplaatsen:
 
-* [Gebruik Pakketbeheer](/help/sites-administering/package-manager.md) om uw componenten aan een pakket toe te voegen en deze naar een andere AEM-instantie te verplaatsen.
+* [Gebruik Pakketbeheer](/help/sites-administering/package-manager.md) om uw componenten aan een pakket toe te voegen en deze naar een andere AEM te verplaatsen.
 * [Gebruik het gereedschap](/help/sites-authoring/publishing-pages.md#manage-publication) Boomreplicatie activeren om de componenten te repliceren.
 
 >[!NOTE]
@@ -122,7 +122,7 @@ Gebruik de volgende gereedschappen om uw componenten naar de publicatie-instanti
 
 ## Structuur {#structure}
 
-De structuur van een AEM-component is krachtig en flexibel en de belangrijkste overwegingen zijn:
+De structuur van een AEM is krachtig en flexibel, en de belangrijkste overwegingen zijn:
 
 * Type bron
 * Componentdefinitie
@@ -136,7 +136,7 @@ De structuur van een AEM-component is krachtig en flexibel en de belangrijkste o
 
 Een zeer belangrijk element van de structuur is het middeltype.
 
-* In de inhoudsstructuur worden intenties gedeclareerd.
+* De inhoudstructuur declareert intenties.
 * Het type van middel voert hen uit.
 
 Dit is een abstractie die helpt ervoor te zorgen dat zelfs wanneer de blik en het gevoel in tijd verandert, de intentie de tijd blijft.
@@ -147,8 +147,8 @@ Dit is een abstractie die helpt ervoor te zorgen dat zelfs wanneer de blik en he
 
 De definitie van een component kan als volgt worden uitgesplitst:
 
-* AEM-componenten zijn gebaseerd op [Sling](https://sling.apache.org/documentation.html).
-* AEM-componenten bevinden zich (gewoonlijk) onder:
+* AEM componenten zijn gebaseerd op [Sling](https://sling.apache.org/documentation.html).
+* AEM onderdelen bevinden zich (gewoonlijk) onder:
 
    * HTML: `/libs/wcm/foundation/components`
    * JSP: `/libs/foundation/components`
@@ -157,7 +157,7 @@ De definitie van een component kan als volgt worden uitgesplitst:
 
    * `/apps/<myApp>/components`
 
-* AEM-standaardcomponenten worden gedefinieerd als `cq:Component` en hebben de belangrijkste elementen:
+* AEM standaardcomponenten worden gedefinieerd als `cq:Component` en hebben de belangrijkste elementen:
 
    * jcr-eigenschappen:
 
@@ -168,6 +168,7 @@ De definitie van een component kan als volgt worden uitgesplitst:
       Deze definiëren de statische elementen die door de component worden gebruikt.
 
    * Scripts:
+
    Wordt gebruikt om het gedrag van de resulterende instantie van de component te implementeren.
 
 * **Basisknooppunt**:
@@ -178,7 +179,7 @@ De definitie van een component kan als volgt worden uitgesplitst:
 
    * `jcr:title` - titel van de component; wordt bijvoorbeeld gebruikt als label wanneer de component in de componentenbrowser of sidekick wordt vermeld.
    * `jcr:description` - Beschrijving van het onderdeel; kan als muis-over wenk in componentenbrowser of sidekick worden gebruikt.
-   * Klassieke gebruikersinterface:
+   * Klassieke interface:
 
       * `icon.png` - Pictogram voor deze component.
       * `thumbnail.png` - Afbeelding die wordt weergegeven als dit onderdeel wordt vermeld in het alineasysteem.
@@ -198,7 +199,7 @@ De definitie van een component kan als volgt worden uitgesplitst:
 
       * `cq:dialog` ( `nt:unstructured`) - Dialoogvenster voor deze component. Definieert de interface waarmee de gebruiker de component kan configureren en/of inhoud kan bewerken.
       * `cq:design_dialog` ( `nt:unstructured`) - Ontwerpbewerking voor deze component
-   * Klassieke gebruikersinterface:
+   * Klassieke interface:
 
       * `dialog` ( `cq:Dialog`) - Dialoogvenster voor deze component. Definieert de interface waarmee de gebruiker de component kan configureren en/of inhoud kan bewerken.
       * `design_dialog` ( `cq:Dialog`) - Ontwerpbewerking voor deze component.
@@ -208,7 +209,7 @@ De definitie van een component kan als volgt worden uitgesplitst:
 
 Het pictogram of de afkorting voor de component wordt gedefinieerd via JCR-eigenschappen van de component wanneer de component door de ontwikkelaar wordt gemaakt. Deze eigenschappen worden in de volgende volgorde geëvalueerd en de eerste geldige gevonden eigenschap wordt gebruikt.
 
-1. `cq:icon` - Tekenreekseigenschap die verwijst naar een standaardpictogram in de [Coral UI-bibliotheek](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) dat moet worden weergegeven in de componentbrowser
+1. `cq:icon` - Tekenreekseigenschap die naar een standaardpictogram in de [Coral UI-bibliotheek](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) verwijst dat in de componentbrowser moet worden weergegeven
    * Gebruik de waarde van het HTML-kenmerk van het pictogram Coral.
 1. `abbreviation` - Tekenreekseigenschap om de afkorting van de componentnaam in de componentbrowser aan te passen
    * De afkorting moet worden beperkt tot twee tekens.
@@ -304,7 +305,7 @@ Een component is een knooppunt van het type `cq:Component` en heeft de volgende 
   <tr>
    <td><code>dialogPath</code></td>
    <td><code>String</code></td>
-   <td>Pad naar een dialoogvenster om het geval te behandelen wanneer de component geen dialoogknooppunt heeft.<br /> </td>
+   <td>Pad naar een dialoogvenster om het hoofdlettergebruik te behandelen wanneer de component geen dialoogknooppunt heeft.<br /> </td>
   </tr>
   <tr>
    <td> </td>
@@ -412,7 +413,7 @@ Onderliggende knooppunten die van bijzonder belang zijn, zijn onder meer:
 * Interface voor aanraakbediening:
    * `cq:dialog` ( `nt:unstructured`) - definieert het dialoogvenster voor het bewerken van de inhoud van deze component
    * `cq:design_dialog` ( `nt:unstructured`) - geeft de ontwerpbewerkingsopties voor deze component op
-* Klassieke gebruikersinterface:
+* Klassieke interface:
    * `dialog` ( `cq:Dialog`) - definieert het dialoogvenster voor het bewerken van de inhoud van deze component (specifiek voor de klassieke UI)
    * `design_dialog` ( `cq:Dialog`) - geeft de ontwerpbewerkingsopties voor deze component op
    * `icon.png` - afbeeldingsbestand dat moet worden gebruikt als pictogram voor de component in de Sidetrap
@@ -430,6 +431,7 @@ Dialoogvensterdefinities zijn specifiek voor de gebruikersinterface:
 >
 >* Voor compatibiliteitsdoeleinden kan de interface met aanraakbediening gebruikmaken van de definitie van een klassiek dialoogvenster UI, wanneer er geen dialoogvenster is gedefinieerd voor de interface met aanraakbediening.
 >* Het gereedschap [](/help/sites-developing/dialog-conversion.md) Dialoogomzetting is ook beschikbaar als hulpmiddel bij het uitbreiden/omzetten van componenten waarvoor alleen dialoogvensters zijn gedefinieerd voor de klassieke interface.
+
 >
 
 
@@ -443,6 +445,7 @@ Dialoogvensterdefinities zijn specifiek voor de gebruikersinterface:
       * kan een bezit hebben `helpPath` om de van de context afhankelijke hulpbron (absolute of relatieve weg) te bepalen die wordt betreden wanneer het pictogram van de Hulp (te bepalen? pictogram) is geselecteerd.
          * Voor componenten buiten het vak verwijst dit vaak naar een pagina in de documentatie.
          * Als er geen waarde `helpPath` is opgegeven, wordt de standaard-URL (documentatieoverzichtspagina) weergegeven.
+
    ![chlimage_1-242](assets/chlimage_1-242.png)
 
    In het dialoogvenster worden afzonderlijke velden gedefinieerd:
@@ -458,6 +461,7 @@ Dialoogvensterdefinities zijn specifiek voor de gebruikersinterface:
       * kan een bezit hebben `helpPath` om de van de context afhankelijke hulpbron (absolute of relatieve weg) te bepalen die wordt betreden wanneer de knoop van de **Hulp** wordt geselecteerd.
          * Voor componenten buiten het vak verwijst dit vaak naar een pagina in de documentatie.
          * Als er geen waarde `helpPath` is opgegeven, wordt de standaard-URL (documentatieoverzichtspagina) weergegeven.
+
    ![chlimage_1-243](assets/chlimage_1-243.png)
 
    In het dialoogvenster worden afzonderlijke velden gedefinieerd:
@@ -596,11 +600,11 @@ Het bewerkingsgedrag van een component wordt geconfigureerd door een `cq:editCon
 
 Er zijn vele bestaande configuraties in de bewaarplaats. U kunt gemakkelijk naar specifieke eigenschappen of kindknopen zoeken:
 
-* Een eigenschap van het `cq:editConfig` knooppunt zoeken, bijvoorbeeld `cq:actions`, kunt u het hulpmiddel van de Vraag in **CRXDE Lite** en onderzoek met het volgende de vraagkoord van XPath gebruiken:
+* Een eigenschap van het `cq:editConfig` knooppunt zoeken, bijvoorbeeld `cq:actions`U kunt het gereedschap Query gebruiken in **CRXDE Lite** en zoeken met de volgende Xpad-queryreeks:
 
    `//element(cq:editConfig, cq:EditConfig)[@cq:actions]`
 
-* U kunt zoeken naar een onderliggende node van `cq:editConfig`bijvoorbeeld `cq:dropTargets`het type `cq:DropTargetConfig`; u kunt het hulpmiddel van de Vraag in** CRXDE Lite* gebruiken en met het volgende de vraagkoord van XPath zoeken:
+* U kunt zoeken naar een onderliggende node van `cq:editConfig`bijvoorbeeld `cq:dropTargets`het type `cq:DropTargetConfig`; u kunt het hulpmiddel van de Vraag in** CRXDE Lite** gebruiken en onderzoek met het volgende de vraagkoord van XPath:
 
    `//element(cq:dropTargets, cq:DropTargetConfig)`
 
@@ -773,7 +777,7 @@ Het `cq:dropTargets` knooppunt (knooppunttype `nt:unstructured`) definieert een 
 >
 >In de interface met aanraakbediening wordt alleen het eerste doel gebruikt.
 
-Elk onderliggend knooppunt van het type `cq:DropTargetConfig` definieert een neerzetdoel in de component. De knooppuntnaam is belangrijk omdat deze als volgt in JSP moet worden gebruikt om de CSS-klassenaam te genereren die is toegewezen aan het DOM-element dat het effectieve doel voor neerzetten is:
+Elk onderliggend knooppunt van het type `cq:DropTargetConfig` definieert een neerzetdoel in de component. De knooppuntnaam is belangrijk omdat deze in JSP moet worden gebruikt om de CSS-klassenaam te genereren die is toegewezen aan het DOM-element dat het effectieve doel voor neerzetten is:
 
 ```
 <drop target css class> = <drag and drop prefix> +
@@ -891,7 +895,7 @@ Het `cq:inplaceEditing` knooppunt (knooppunttype `cq:InplaceEditingConfig`) defi
    <td><p>(<code>String</code>) Type editor. De beschikbare typen zijn:</p>
     <ul>
      <li>platte tekst: te gebruiken voor niet-HTML-inhoud.<br /> </li>
-     <li>titel: is een verbeterde plaintext editor die grafische titels omzet in een gewone tekst voordat het bewerken begint. Wordt gebruikt door de component Geometrixx title.<br /> </li>
+     <li>titel: is een verbeterde plaintext editor die grafische titels omzet in een gewone tekst voordat het bewerken begint. Wordt gebruikt door de titelcomponent van de Geometrixx.<br /> </li>
      <li>tekst: te gebruiken voor HTML-inhoud (gebruikt de Rich Text Editor).<br /> </li>
     </ul> </td>
   </tr>

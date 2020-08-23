@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '6774'
+source-wordcount: '6766'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Een regel is een combinatie van handelingen en voorwaarden. In de regeleditor om
 
 De regelredacteur verstrekt een reeks vooraf bepaalde regeltypes, zoals wanneer, tonen, verbergen, toelaten, onbruikbaar maken, Vastgestelde Waarde van, en Valideren om u te helpen regels schrijven. Elk regeltype staat u toe om voorwaarden en acties in een regel te bepalen. Het document verklaart verder elk regeltype in detail.
 
-Een regel volgt doorgaans een van de volgende constructies:
+Een regel volgt doorgaans een van de volgende elementen:
 
 **Condition-Action** In deze constructie definieert een regel eerst een voorwaarde gevolgd door een actie die moet worden geactiveerd. De constructie is vergelijkbaar met if-then statement in programmeertalen.
 
@@ -334,11 +334,10 @@ Om het gebruikersinterface van de regelredacteur te lanceren:
    Eventuele bestaande regels voor de geselecteerde formulierobjecten worden in deze weergave weergegeven. Zie [Regels](../../forms/using/rule-editor.md#p-manage-rules-p)beheren voor meer informatie over het beheren van bestaande regels.
 
 1. Tik **[!UICONTROL Create]** om een nieuwe regel te schrijven. De visuele redacteur van het gebruikersinterface van de regelredacteur opent door gebrek wanneer u de regelredacteur de eerste keer lanceert.
-[ Gebruikersinterface ![van regeleditor](assets/rule-editor-ui.png)
 
-   Klik om de vergrote afbeelding weer te geven
+   ![Gebruikersinterface van regeleditor](assets/rule-editor-ui.png)
 
-   ] (assets/rule-editor-ui-1.png) bekijken elke component van de regelredacteur UI in detail.
+Laten wij elke component van de regelredacteur UI in detail bekijken.
 
 ### A. Weergave componentregel {#a-component-rule-display}
 
@@ -376,7 +375,7 @@ Voor meer informatie over het gebruiken van visuele regelredacteur, zie [schrijf
 
 Gebruikers in de gebruikersgroep voor formulieren hebben toegang tot de code-editor. Voor andere gebruikers is de code-editor niet beschikbaar. Als u de rechten hebt, kunt u van visuele redacteurswijze aan de wijze van de coderedacteur van de regel, en vice versa schakelen, gebruikend de schakelaar recht boven de regelredacteur. Wanneer u regelredacteur de eerste keer lanceert, opent het op de visuele redacteurswijze. U kunt regels op de visuele redacteurswijze schrijven of op de wijze schakelen van de coderedacteur om een regelmanuscript te schrijven. Nochtans, merk op dat als u een regel wijzigt of een regel in coderedacteur schrijft, u niet terug naar de visuele redacteur voor die regel kunt schakelen tenzij u de coderedacteur ontruimt.
 
-AEM Forms volgen de wijze van de regelredacteur u het laatst gebruikte om een regel te schrijven. Wanneer u de regelredacteur de volgende keer lanceert, opent het op die wijze. Nochtans, kunt u een standaardwijze ook vormen om de regelredacteur op de gespecificeerde wijze te openen. Daartoe:
+AEM Forms volgt de wijze van de regelredacteur u het laatst gebruikte om een regel te schrijven. Wanneer u de regelredacteur de volgende keer lanceert, opent het op die wijze. Nochtans, kunt u een standaardwijze ook vormen om de regelredacteur op de gespecificeerde wijze te openen. Daartoe:
 
 1. Ga naar AEM webconsole op `https://[host]:[port]/system/console/configMgr`.
 1. Klik om te bewerken **[!UICONTROL Adaptive Form Configuration Service]**.
@@ -402,7 +401,7 @@ Laten we begrijpen hoe u een regel maakt in een visuele editor met behulp van he
 
 ![create-rule-example](assets/create-rule-example.png)
 
-In het gedeelte met vereisten voor leningen in het voorbeeldformulier voor het aanvragen van leningen moeten aanvragers hun echtelijke staat, salaris en indien gehuwd, het salaris van hun echtgenoot vermelden. Op basis van de gebruikersinput wordt het bedrag dat voor de lening in aanmerking komt, berekend door de regel en wordt dit weergegeven in het veld Beleenbaarheid van de lening. Pas de volgende regels toe om het scenario uit te voeren:
+In het gedeelte met vereisten voor leningen in het voorbeeld van het aanvraagformulier voor leningen moeten aanvragers hun echtelijke status, salaris en indien gehuwd, het salaris van hun echtgenoot vermelden. Op basis van de gebruikersinput wordt het bedrag dat voor de lening in aanmerking komt, berekend door de regel en wordt dit weergegeven in het veld Beleenbaarheid van de lening. Pas de volgende regels toe om het scenario uit te voeren:
 
 * Het veld Salaris van de echtgenoot wordt alleen weergegeven wanneer de huwelijksstatus wordt gehuwd.
 * De beleenbaarheid van de lening bedraagt 50% van het totale salaris.
@@ -427,7 +426,7 @@ Voer de volgende stappen uit om regels te schrijven:
 
    ![Waarden voor keuzerondjes in regeleditor](assets/radio-button-values.png)
 
-1. Geef in het veld **Een tekenreeks** invoeren in de regel **0** op.
+1. Geef in het veld **Een tekenreeks** invoeren op de regel **0** op.
 
    ![write-rules-visual-editor-4](assets/write-rules-visual-editor-4.png)
 
@@ -765,7 +764,7 @@ Wanneer de gebruiker mededeelt dat hij minder dan 36 maanden op zijn huidige woo
 
 ## Effect van regeleditor op bestaande scripts {#impact-of-rule-editor-on-existing-scripts}
 
-In versies van AEM Forms vóór AEM 6.1 Forms-functiepak 1 schrijven formulierauteurs en -ontwikkelaars die expressies schrijven op het tabblad Scripts van het dialoogvenster Component bewerken om dynamisch gedrag toe te voegen aan adaptieve formulieren. Het tabblad Scripts wordt nu vervangen door de regeleditor.
+In AEM Forms-versies vóór AEM 6.1 Forms-functiepak 1 schrijven formulierauteurs en -ontwikkelaars expressies naar het tabblad Scripts van het dialoogvenster Component bewerken om dynamisch gedrag toe te voegen aan adaptieve formulieren. Het tabblad Scripts wordt nu vervangen door de regeleditor.
 
 Alle scripts of expressies die u op het tabblad Scripts moet schrijven, zijn beschikbaar in de regeleditor. Hoewel u ze niet kunt weergeven of bewerken in de visuele editor, kunt u scripts in de code-editor bewerken als u deel uitmaakt van de gebruikersgroep voor formulieren.
 
@@ -773,7 +772,7 @@ Alle scripts of expressies die u op het tabblad Scripts moet schrijven, zijn bes
 
 ### Formuliergegevensmodelservice aanroepen {#invoke}
 
-Beschouw een webservice `GetInterestRates` die het bedrag van de lening, de looptijd en de kredietscore van de aanvrager als input gebruikt, en retourneert een leningenplan met daarin het bedrag en de rentevoet van het EMI. U maakt een formuliergegevensmodel met de webservice als gegevensbron. U voegt gegevensmodelobjecten en een `get` service toe aan het formuliermodel. De service wordt weergegeven op het tabblad Services van het formuliergegevensmodel. Maak vervolgens een adaptief formulier dat velden van gegevensmodelobjecten bevat om gebruikersinvoer voor de hoeveelheid leningen, de looptijd en de creditscore vast te leggen. Voeg een knop toe die de webservice activeert om plandetails op te halen. De uitvoer wordt ingevuld in de desbetreffende velden.
+Beschouw een webservice `GetInterestRates` die het bedrag van de lening, de looptijd en de kredietscore van de aanvrager als input gebruikt, en retourneert een leningenplan inclusief het bedrag en de rentevoet van het EMI. U maakt een formuliergegevensmodel met de webservice als gegevensbron. U voegt gegevensmodelobjecten en een `get` service toe aan het formuliermodel. De service wordt weergegeven op het tabblad Services van het formuliergegevensmodel. Maak vervolgens een adaptief formulier dat velden van gegevensmodelobjecten bevat om gebruikersinvoer voor de hoeveelheid leningen, de looptijd en de creditscore vast te leggen. Voeg een knop toe die de webservice activeert om plandetails op te halen. De uitvoer wordt ingevuld in de desbetreffende velden.
 
 De volgende regel toont hoe u de Invoke de dienstactie zult vormen om het voorbeeldscenario te verwezenlijken.
 

@@ -1,8 +1,8 @@
 ---
 title: Aangepaste weergaven maken in HTML5-formulieren
 seo-title: Aangepaste weergaven maken in HTML5-formulieren
-description: U kunt aangepaste widgets aansluiten op mobiele formulieren. U kunt bestaande jQuery-widgets uitbreiden of uw eigen aangepaste widgets ontwikkelen.
-seo-description: U kunt aangepaste widgets aansluiten op mobiele formulieren. U kunt bestaande jQuery-widgets uitbreiden of uw eigen aangepaste widgets ontwikkelen.
+description: U kunt aangepaste widgets aansluiten op een mobiele Forms. U kunt bestaande jQuery-widgets uitbreiden of uw eigen aangepaste widgets ontwikkelen.
+seo-description: U kunt aangepaste widgets aansluiten op een mobiele Forms. U kunt bestaande jQuery-widgets uitbreiden of uw eigen aangepaste widgets ontwikkelen.
 uuid: a9013c3d-20c7-45c9-be24-8e9d4525eff8
 contentOwner: robhagat
 content-type: reference
@@ -11,9 +11,9 @@ topic-tags: hTML5_forms
 discoiquuid: 17a86543-30d3-4e16-a373-67b46d551da9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '667'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Aangepaste weergaven maken in HTML5-formulieren{#create-custom-appearances-in-html-forms}
 
-U kunt aangepaste widgets aansluiten op mobiele formulieren. U kunt bestaande jQuery-widgets uitbreiden of uw eigen aangepaste widgets ontwikkelen met het raamwerk voor weergaven. De XFA-engine gebruikt verschillende widgets. Zie [Weergaveframework voor adaptieve formulieren en HTML5-formulieren](/help/forms/using/introduction-widgets.md) voor meer informatie.
+U kunt aangepaste widgets aansluiten op een mobiele Forms. U kunt bestaande jQuery-widgets uitbreiden of uw eigen aangepaste widgets ontwikkelen met het raamwerk voor weergaven. De XFA-engine gebruikt verschillende widgets. Zie [Weergaveframework voor adaptieve formulieren en HTML5-formulieren](/help/forms/using/introduction-widgets.md) voor meer informatie.
 
 ![Een voorbeeld van de standaard- en aangepaste widget](assets/custom-widgets.jpg)
 
@@ -92,10 +92,14 @@ window.formBridge.registerConfig("widgetConfig",
 
 De widgetconfiguratie wordt aangeboden als een JSON-object (een verzameling sleutelwaardeparen), waarbij de sleutel de velden identificeert en de waarde de widget vertegenwoordigt die met deze velden moet worden gebruikt. Een voorbeeldconfiguratie ziet er als volgt uit:
 
+```
 *{*
 
-*&quot;identifier1&quot;: &quot;customwidgetname&quot;,&quot;identifier2&quot;: &quot;customwidgetname2&quot;,..
+*“identifier1” : “customwidgetname”,
+“identifier2” : “customwidgetname2”,
+..
 }*
+```
 
 waarbij &quot;id&quot; een jQuery CSS-kiezer is die een bepaald veld, een set velden van een bepaald type of alle velden vertegenwoordigt. In het volgende voorbeeld wordt de waarde van de id in verschillende gevallen weergegeven:
 

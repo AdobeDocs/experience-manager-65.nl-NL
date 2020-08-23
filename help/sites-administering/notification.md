@@ -1,8 +1,8 @@
 ---
 title: E-mailmelding configureren
 seo-title: E-mailmelding configureren
-description: Leer hoe u e-mailmeldingen in AEM configureert.
-seo-description: Leer hoe u e-mailmeldingen in AEM configureert.
+description: Leer hoe u e-mailmeldingen in AEM kunt configureren.
+seo-description: Leer hoe u e-mailmeldingen in AEM kunt configureren.
 uuid: 6cbdc312-860b-4a69-8bbe-2feb32204a27
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,7 +10,10 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+workflow-type: tm+mt
+source-wordcount: '1145'
+ht-degree: 1%
 
 ---
 
@@ -37,7 +40,7 @@ Wanneer een gebruiker op de hoogte wordt gesteld, ontvangt hij een e-mail in de 
 
 ## De Mail Service configureren {#configuring-the-mail-service}
 
-AEM kan alleen e-mailberichten verzenden als de **Day CQ Mail Service** correct is geconfigureerd. U kunt de configuratie in de console van het Web bekijken. Wanneer het werken met AEM zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie het [Vormen OSGi](/help/sites-deploying/configuring-osgi.md) voor meer details en de geadviseerde praktijken.
+AEM kunnen e-mailberichten alleen verzenden als de **Day CQ Mail Service** correct is geconfigureerd. U kunt de configuratie in de console van het Web bekijken. Wanneer het werken met AEM zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie het [Vormen OSGi](/help/sites-deploying/configuring-osgi.md) voor meer details en de geadviseerde praktijken.
 
 De volgende beperkingen zijn van toepassing:
 
@@ -58,14 +61,14 @@ De configuratie kijkt als volgt in de console van het Web:
 
 Wanneer u zich abonneert op berichten voor pagina- of forumgebeurtenissen, wordt het e-mailadres standaard ingesteld op `no-reply@acme.com` Per e-mailadres. U kunt deze waarde wijzigen door de service E-mailkanaal **voor** meldingen in de webconsole te configureren.
 
-U configureert het e-mailadres door een `sling:OsgiConfig` knooppunt aan de repository toe te voegen. Gebruik de volgende procedure om de knoop toe te voegen direct gebruikend CRXDE Lite:
+U configureert het e-mailadres door een `sling:OsgiConfig` knooppunt aan de repository toe te voegen. Gebruik de volgende procedure om de knoop direct toe te voegen gebruikend CRXDE Lite:
 
-1. Voeg in CRXDE Lite een map toe die `config` onder uw toepassingsmap staat.
+1. Voeg in CRXDE Lite een map toe `config` onder de toepassingsmap.
 1. Voeg in de configuratiemap een knooppunt met de naam:
 
    `com.day.cq.wcm.notification.email.impl.EmailChannel` van het type `sling:OsgiConfig`
 
-1. Voeg een `String` bezit aan de genoemde knoop] toe `email.from`. Geef voor de waarde het e-mailadres op dat u wilt gebruiken.
+1. Voeg een `String` eigenschap toe aan het knooppunt met de naam `email.from`. Geef voor de waarde het e-mailadres op dat u wilt gebruiken.
 
 1. Klik op Alles **opslaan**.
 
@@ -299,13 +302,13 @@ Een sjabloon toevoegen voor een nieuwe taal:
 
 >[!NOTE]
 >
->De bestandsnaam van de e-mailsjabloon moet een taalcode in kleine letters van twee letters zijn die door AEM wordt herkend. `<language-code>` Voor taalcodes is AEM afhankelijk van ISO-639-1.
+>De naam die als bestandsnaam voor de e-mailsjabloon wordt `<language-code>` gebruikt, moet bestaan uit een taalcode in kleine letters van twee letters die door AEM wordt herkend. Voor taalcodes is AEM gebaseerd op ISO-639-1.
 
-## E-mailmeldingen voor AEM Assets configureren {#assetsconfig}
+## E-mailberichten voor AEM Assets configureren {#assetsconfig}
 
-Wanneer verzamelingen in AEM Assets worden gedeeld of niet gedeeld, kunnen gebruikers e-mailmeldingen ontvangen van AEM. Voer de volgende stappen uit om e-mailmeldingen te configureren.
+Wanneer Verzamelingen in AEM Assets worden gedeeld of niet gedeeld, kunnen gebruikers e-mailmeldingen ontvangen van AEM. Voer de volgende stappen uit om e-mailmeldingen te configureren.
 
 1. Vorm de e-maildienst, zoals hierboven beschreven in het [Vormen van de Dienst](/help/sites-administering/notification.md#configuring-the-mail-service)van de Post.
-1. Meld u als beheerder aan bij AEM. Klik op **Gereedschappen** > **Bewerkingen** > **Webconsole** om de webconsoleconfiguratie te openen.
+1. Meld u aan bij AEM als beheerder. Klik op **Gereedschappen** > **Bewerkingen** > **Webconsole** om de webconsoleconfiguratie te openen.
 1. CQ DAM-bronverzamelingsserver **op de dag bewerken**. Selecteer E- **mail** verzenden. Click **Save**.
 

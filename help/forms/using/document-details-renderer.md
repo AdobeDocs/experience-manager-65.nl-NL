@@ -1,15 +1,15 @@
 ---
 title: Documentdetails voor renderer
 seo-title: Documentdetails voor renderer
-description: Conceptuele informatie over hoe renderingen werken in de werkruimte AEM Forms om de verschillende ondersteunde formulieren en bestandstypen weer te geven.
-seo-description: Conceptuele informatie over hoe renderingen werken in de werkruimte AEM Forms om de verschillende ondersteunde formulieren en bestandstypen weer te geven.
+description: Conceptuele informatie over hoe renderingen werken in de AEM Forms-werkruimte om de verschillende ondersteunde formulier- en bestandstypen weer te geven.
+seo-description: Conceptuele informatie over hoe renderingen werken in de AEM Forms-werkruimte om de verschillende ondersteunde formulier- en bestandstypen weer te geven.
 uuid: ae3f0585-9105-4ca7-a490-ffdefd3ac8cd
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: b6e88080-6ffc-4796-98c7-d7462bca454e
 translation-type: tm+mt
-source-git-commit: c74d9e86727f2deda62b8d1eb105b28ef4b6d184
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
 source-wordcount: '676'
 ht-degree: 0%
@@ -21,14 +21,14 @@ ht-degree: 0%
 
 ## Inleiding {#introduction}
 
-In de werkruimte AEM Forms worden meerdere formuliertypen naadloos ondersteund. Deze omvatten:
+In de AEM Forms-werkruimte worden meerdere formuliertypen naadloos ondersteund. Deze omvatten:
 
 * PDF forms (XDP / Acrobat / Platte PDF&#39;s)
 * Nieuwe HTML-formulieren
 * Afbeeldingen
 * Toepassingen van derden (bijvoorbeeld Correspondence Management)
 
-In dit document wordt uitgelegd hoe deze renderers werken vanuit het perspectief van semantische aanpassing/hergebruik van componenten, zodat aan de vereisten van de klant wordt voldaan zonder dat een renditie wordt verbroken. Hoewel de werkruimte AEM Forms alle gebruikersinterface-/semantische wijzigingen toestaat, wordt aangeraden de renderinglogica van verschillende formuliertypen niet te wijzigen, anders kunnen de resultaten onvoorspelbaar zijn. Dit document is bedoeld als leidraad/kennis ter ondersteuning van rendering van hetzelfde formulier, waarbij dezelfde werkruimtecomponenten in verschillende portalen worden gebruikt, en niet voor het wijzigen van de renderinglogica zelf.
+In dit document wordt uitgelegd hoe deze renderers werken vanuit het perspectief van semantische aanpassing/hergebruik van componenten, zodat aan de vereisten van de klant wordt voldaan zonder dat een renditie wordt verbroken. Hoewel in de AEM Forms-werkruimte alle gebruikersinterface-/semantische wijzigingen mogelijk zijn, wordt aangeraden de renderinglogica van verschillende formuliertypen niet te wijzigen, anders kunnen de resultaten onvoorspelbaar zijn. Dit document is bedoeld als leidraad/kennis ter ondersteuning van rendering van hetzelfde formulier, waarbij dezelfde werkruimtecomponenten in verschillende portalen worden gebruikt, en niet voor het wijzigen van de renderinglogica zelf.
 
 ## PDF forms {#pdf-forms}
 
@@ -36,7 +36,7 @@ PDF forms worden gerenderd door `PdfTaskForm View`.
 
 Wanneer een XDP-formulier wordt weergegeven als PDF, wordt een `FormBridge` JavaScript™ toegevoegd door de FormsAugmenter-service. Met dit JavaScript™ (in het PDF-formulier) kunt u handelingen uitvoeren zoals het verzenden, opslaan of offline maken van formulieren.
 
-In de werkruimte van AEM Forms, communiceert de mening PDFTaskForm met `FormBridge`javascript, via intermediaire HTML aanwezig bij `/lc/libs/ws/libs/ws/pdf.html`. De stroom is:
+In de AEM Forms-werkruimte communiceert de PDFTaskForm-weergave met `FormBridge`javascript via een intermediaire HTML die zich op `/lc/libs/ws/libs/ws/pdf.html`bevindt. De stroom is:
 
 **PDFTaskForm, weergave - pdf.html**
 
@@ -54,7 +54,7 @@ Deze methode is de standaardmanier voor communicatie met een PDFJavaScript vanui
 >
 >Het wordt niet aanbevolen de inhoud van de PDFTaskForm-weergave te wijzigen.
 
-## Nieuwe HTML-formulieren {#new-html-forms}
+## Nieuwe HTML Forms {#new-html-forms}
 
 Nieuwe HTML-formulieren worden gegenereerd door de NewHTMLTaskForm View.
 
@@ -66,11 +66,11 @@ Dit JavaScript verschilt van het JavaScript waarnaar in de bovenstaande PDF form
 >
 >Het wordt afgeraden de inhoud van de weergave NewHTMLTaskForm te wijzigen.
 
-## Flex-formulieren en hulplijnen {#flex-forms-and-guides}
+## Flex Forms en hulplijnen {#flex-forms-and-guides}
 
-Flex Forms wordt door SwfTaskForm teruggegeven en de gidsen worden teruggegeven door Meningen HtmlTaskForm.
+Flex Forms wordt gerenderd door SWFTaskForm en de hulplijnen worden gerenderd door respectievelijk HTMLTaskForm Views.
 
-In de werkruimte AEM Forms communiceren deze weergaven met het SWF-bestand dat de flex-vorm/hulplijn vormt met behulp van een intermediair SWF-bestand dat zich bevindt op `/lc/libs/ws/libs/ws/WSNextAdapter.swf`
+In de AEM Forms-werkruimte communiceren deze weergaven met het SWF-bestand dat het flex-formulier/de flex-hulplijn vormt. Hierbij wordt gebruikgemaakt van een intermediair SWF-bestand dat zich op `/lc/libs/ws/libs/ws/WSNextAdapter.swf`
 
 De communicatie vindt plaats met `swfObject.postMessage` / `window.flexMessageHandler`.
 
@@ -84,16 +84,16 @@ Dit protocol wordt bepaald door het `WsNextAdapter.swf`. Het bestaande object `f
 
 Toepassingen van derden worden gerenderd met de ExtAppTaskForm-weergave.
 
-**De toepassing van de derde aan de werkruimtenmededeling van AEM Forms**
+**Communicatie van externe toepassingen naar de AEM Forms-werkruimte**
 
-De werkruimte AEM Forms luistert naar `window.global.postMessage([Message],[Payload])`
+AEM Forms-werkruimte luistert naar `window.global.postMessage([Message],[Payload])`
 
-[Bericht] kan een tekenreeks zijn die is opgegeven als `SubmitMessage`| `CancelMessage`| `ErrorMessage`| `actionEnabledMessage`in het `runtimeMap`gebied. De toepassingen van de derde moeten deze interface gebruiken om de werkruimte van AEM Forms te melden zoals nodig. Het gebruik van deze interface is verplicht, omdat de werkruimte van AEM Forms moet weten dat wanneer de taak wordt ingediend zodat deze het taakvenster kan opschonen.
+[Bericht] kan een tekenreeks zijn die is opgegeven als `SubmitMessage`| `CancelMessage`| `ErrorMessage`| `actionEnabledMessage`in het `runtimeMap`gebied. Toepassingen van derden moeten deze interface gebruiken om AEM Forms-werkruimte naar behoefte op de hoogte te stellen. Het gebruik van deze interface is verplicht, omdat de AEM Forms-werkruimte moet weten dat wanneer de taak wordt verzonden, zodat deze het taakvenster kan opschonen.
 
-**De werkruimte van AEM Forms aan de mededeling van de derdetoepassing**
+**AEM Forms-werkruimte voor communicatie met toepassingen van derden**
 
-Als de directe actieknoppen van de werkruimte van AEM Forms zichtbaar zijn, roept het `window.[External-App-Name].getMessage([Action])`, waar [ `Action]` wordt gelezen van `routeActionMap`. De externe toepassing moet luisteren naar deze interface en vervolgens de werkruimte van AEM Forms via de `postMessage ()` API op de hoogte stellen.
+Als de knoppen voor directe actie van de AEM Forms-werkruimte zichtbaar zijn, wordt aangeroepen `window.[External-App-Name].getMessage([Action])`waar `[Action]` wordt gelezen van de `routeActionMap`. De externe toepassing moet luisteren naar deze interface en vervolgens de AEM Forms-werkruimte via de `postMessage ()` API op de hoogte stellen.
 
 Een Flex-toepassing kan bijvoorbeeld definiëren `ExternalInterface.addCallback('getMessage', listener)` om deze communicatie te ondersteunen. Als de externe toepassing het verzenden van formulieren via eigen knoppen wil verwerken, moet u dit opgeven `hideDirectActions = true() in the runtimeMap` en kunt u deze listener overslaan. Deze constructie is dus optioneel.
 
-U kunt meer lezen over de integratie van toepassingen van derden met betrekking tot Correspondence Management bij het [integreren van Correspondentiebeheer in de werkruimte](/help/forms/using/integrating-correspondence-management-html-workspace.md)AEM Forms.
+U kunt meer lezen over de integratie van toepassingen van derden met betrekking tot Correspondence Management bij [Integrating Correspondence Management in de AEM Forms-werkruimte](/help/forms/using/integrating-correspondence-management-html-workspace.md).

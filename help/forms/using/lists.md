@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0d5436c6-1976-496c-b9a7-7dc6e830bb5d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+workflow-type: tm+mt
+source-wordcount: '6930'
+ht-degree: 0%
 
 ---
 
@@ -40,7 +43,7 @@ De oplossing van het Beheer van de Correspondentie steunt twee soorten aan dynam
 
 ### Tekst maken {#create-text}
 
-1. Selecteer **Formulieren** > **Documentfragmenten**.
+1. Selecteer **Forms** > **Documentfragmenten**.
 1. Tik op **Maken** > **Tekst** of selecteer een tekstelement en tik op **Bewerken**.
 1. Geef de volgende informatie op voor de tekst:
 
@@ -58,13 +61,14 @@ De oplossing van het Beheer van de Correspondentie steunt twee soorten aan dynam
 
 1. Er wordt een teksteditor geopend en u voert de tekst in. Gebruik de werkbalk boven aan de pagina om de tekst, invoegvoorwaarden, koppeling en pagina-einden op te maken.
 
-   [ ![Toolbar](assets/advancedediting.png)
+   ![Werkbalk](assets/advancedediting.png)
 
    * **Koppeling**: Voeg [hypertextkoppeling](#insert-hyperlink) in de tekst in.
    * **Herhalen**: Met Herhalen wordt het verzamelingselement in het gegevenswoordenboek afgedrukt met een scheidingsteken.
    * **Voorwaarde**: Tik om een voorwaarde in te voegen. Voeg op voorwaarde gebaseerde tekst in. Als de voorwaarde waar is, dan is de tekst zichtbaar in brief, anders niet.
    * **Beschrijving** toevoegen: Voeg een aantekening aan een stuk van tekst toe. Dit zijn metagegevens die zichtbaar zijn voor de auteur, maar geen deel van de gemaakte brief.
    * **Pagina-einde**: Als u het kenmerk Pagina-einden van een tekstmodule instelt op false, wordt de tekstmodule niet over pagina&#39;s verdeeld.
+
    Er wordt een teksteditor geopend. Voer de tekst in. De werkbalk verandert afhankelijk van het type bewerkingen dat u wilt uitvoeren: Alinea, Uitlijning of Lijst:
 
    ![Type werkbalk selecteren](assets/toolbarselection.png)
@@ -99,6 +103,7 @@ De oplossing van het Beheer van de Correspondentie steunt twee soorten aan dynam
    * Valutasymbolen zoals €, ¥ en £
    * Wiskundige symbolen zoals A, Ö, ∂ en ^
    * Interpunctiesymbolen zoals ‟ en&quot;
+
    ![specialcharacters-1](assets/specialcharacters-1.png)
 
    Correspondence Management biedt ondersteuning voor 210 speciale tekens. De beheerder kan ondersteuning voor meer/aangepaste speciale tekens [toevoegen door deze aan te passen](/help/forms/using/custom-special-characters.md).
@@ -119,6 +124,7 @@ De oplossing van het Beheer van de Correspondentie steunt twee soorten aan dynam
 
    * Voeg een gegevenswoordenboekelement in de tekst toe, selecteer een gegevenselement in de lijst en tik op Invoegen ( ![invoegen](assets/insert.png)). Als u Beveiligd selecteert, is het gegevenswoordenboekelement alleen-lezen en wordt het weergegeven in de lettereditor, maar niet in de gebruikersinterface Correspondentie maken of Correspondence Creator.
    * Voeg een plaatsaanduidingselement toe aan de tekst. Tik in het deelvenster Gegevenselementen op Nieuw maken, voer de details voor het nieuwe gegevenselement in en tik op Maken om het nieuwe element aan de lijst toe te voegen. De nieuwe plaatsaanduiding kan op dezelfde manier in de tekst worden ingevoegd als het gegevenswoordenboekelement. Als u een tijdelijke aanduiding wilt bewerken, selecteert u een tijdelijke aanduiding en tikt u op Bewerken.
+
    ![Plaatsaanduidingselementen](assets/placeholder_elements_in_xmldata.png)
 
    Plaatsaanduidingselementen zoals opgegeven in het bestand met voorbeeldgegevens van een gegevenswoordenboek
@@ -138,7 +144,7 @@ Voer de volgende stappen uit om een hyperlink in een tekstelement te maken:
 
 1. Selecteer de tekst of het gegevensmodelobject in de teksteditor.
 
-2. Tik op **[!UICONTROL Koppeling]**. Tik op het veld **[!UICONTROL Alt-tekst]** om de bestaande naam of tekst van het gegevensmodel te verwijderen.
+2. Tik op **[!UICONTROL Link]**. Tik op **[!UICONTROL Alt Text]** het veld om de bestaande naam of tekst van het gegevensmodel te verwijderen.
 
 3. Geef de URL op en tik op ![Opslaan](assets/save_icon.svg).
 
@@ -160,7 +166,7 @@ Met de functie Zoeken en vervangen kunt u elke tekenreeks in een tekstelement zo
 
    Als u op de knop Zoeken blijft drukken, gaat de zoekopdracht verder op de pagina. Nadat de laatste instantie van de tekst is gevonden, geeft het bericht **Reached end end of module** aan dat er geen zoekresultaten meer zijn gevonden.
 
-   Als er echter geen zoektekst wordt gevonden in de tekstmodule, wordt het volgende bericht weergegeven: Niet **gevonden**.
+   Als er echter geen zoektekst wordt gevonden in de tekstmodule, wordt het volgende bericht weergegeven: **Overeenkomst niet gevonden**.
 
 1. Als u nogmaals op Zoeken drukt, gaat de zoekopdracht verder boven aan de pagina.
 
@@ -227,7 +233,7 @@ Een lijst is een groep gerelateerde inhoud die in een lettertypesjabloon als é�
 * **Met briefing**: Een alfabetische lijst met kleine letters (a,b,...) en hoofdletters (A,B,...).
 * **Aangepast**: U kunt naar keuze een willekeurig genummerd/met briefhoofd en voor- en achtervoegselwaarden maken.
 
-1. Selecteer **Formulieren** > **Documentfragmenten**.
+1. Selecteer **Forms** > **Documentfragmenten**.
 
 1. Selecteer **Maken** > **Lijst**.
 
@@ -300,7 +306,7 @@ Met de Condition-editor kunt u een standaardvoorwaarde opgeven. Als de waarde va
 
 ### Een voorwaarde maken {#create-a-condition}
 
-1. Selecteer **Formulieren** > **Documentfragmenten**.
+1. Selecteer **Forms** > **Documentfragmenten**.
 1. Selecteer **Maken > Voorwaarde**.
 1. Geef de volgende informatie voor de lijst op:
 
@@ -342,13 +348,13 @@ Met de Condition-editor kunt u een standaardvoorwaarde opgeven. Als de waarde va
 
 ## Lay-outfragmenten {#layoutfragments}
 
-Een lay-outfragment is gebaseerd op XDPs die in Ontwerper worden gecreeerd. Als u lay-outfragmenten wilt maken, moet u de XDP&#39;s maken en deze [uploaden naar AEM-formulieren](/help/forms/using/import-export-forms-templates.md).
+Een lay-outfragment is gebaseerd op XDPs die in Ontwerper worden gecreeerd. Voor het maken van lay-outfragmenten moet u de XDP&#39;s maken en [uploaden naar AEM Forms](/help/forms/using/import-export-forms-templates.md).
 
 Een of meer lay-outfragmenten kunnen onderdelen van een letter vormen en de grafische lay-out van die onderdelen definiëren. Een indelingsfragment kan typische formuliervelden bevatten, zoals Adres en Referentienummer, en lege subformulieren die doelgebieden aangeven. Bovendien kunt u met layoutfragmenten tabellen maken en deze in letters invoegen.
 
 Doorgaans worden layout-patronen die u opnieuw kunt gebruiken, gezocht in Letters en worden er lay-outfragmenten voor gemaakt. Bijvoorbeeld de aanhef, het adres en het onderwerpgedeelte van de letter, die in dezelfde volgorde staat als meerdere letters. Een ander voorbeeld kan een tabel zijn met een vergelijkbaar aantal rijen en kolommen die in meerdere letters worden gebruikt.
 
-U kunt een lay-outfragment maken op basis van een bestaande XDP. Een lay-outfragment kan bestaan uit velden en doelgebieden of uit een of meer tabellen. De tabellen in een layout kunnen statisch of dynamisch zijn. Er wordt een XDP gemaakt in Designer en [geüpload naar AEM-formulieren](/help/forms/using/import-export-forms-templates.md). Een XDP kan de structuur of van een lay-outfragment of van een brief vormen. Meer informatie over [lay-outontwerp](/help/forms/using/layout-design-details.md).
+U kunt een lay-outfragment maken op basis van een bestaande XDP. Een lay-outfragment kan bestaan uit velden en doelgebieden of uit een of meer tabellen. De tabellen in een layout kunnen statisch of dynamisch zijn. Er wordt een XDP gemaakt in Designer en [geüpload naar AEM Forms](/help/forms/using/import-export-forms-templates.md). Een XDP kan de structuur of van een lay-outfragment of van een brief vormen. Meer informatie over [lay-outontwerp](/help/forms/using/layout-design-details.md).
 
 Met fragmenten die zijn gebonden aan doelgebieden, kan de letter worden gewijzigd op het moment van ontwerpen. U kunt een lay-outfragment met verschillende afmetingen maken en het juiste fragment kan aan het doelgebied worden gebonden. Met layoutfragmenten kunt u ook enkele tabeleigenschappen aanpassen:
 
@@ -404,19 +410,21 @@ Zie [Voorbeeld met voorbeeldbestanden voor een gedetailleerd voorbeeld van het g
 
    * **Rijen**: Selecteer het aantal rijen voor de indeling. De gevormde rijtelling moet groter dan of gelijk aan de originele rijtelling zijn.
    * **Kolommen**: Selecteer het aantal kolommen voor de lay-out. De gevormde kolomtelling moet groter dan of gelijk aan de originele kolomtelling zijn.
+
    Voor elke kolom zijn de volgende gegevens vereist:
 
    * **Koptekst**: tekst die moet worden weergegeven voor de koptekst
    * **Voettekst**: tekst die moet worden weergegeven voor de voettekst
    * **Type**: type van extra kolom. Veld of doelgebied. Type is ingeschakeld voor statische plaatsaanduidingstabellen. Het type kan op kolomniveau en niet op celniveau worden bepaald. Alle cellen in een uitgebreide kolom zouden van het zelfde type zijn. Voor een dynamische tabel zijn alle kolommen van het veldtype. Voor tabellen zonder plaatsaanduiding kunt u het type van extra kolommen niet definiëren. In dat geval is het type van de extra cellen in de uitgebreide kolom gelijk aan het type van de laatste kolom in die rij; en het type cel in een extra rij is hetzelfde als het type van de laatste cel in die kolom.
    * **Breedteverhouding:** verhouding van de tabelkolombreedten.
+
    Zie [Voorbeeld met voorbeeldbestanden voor een gedetailleerd voorbeeld van het gebruik van statische en dynamische tabellen in lay-outfragmenten: statische en dynamische tabellen in een letter](#examplewithsamplefiles)gebruiken.
 
 1. Tik op **Opslaan**.
 
 ### Een XDP uploaden naar Correspondentenbeheer {#upload-an-xdp-to-correspondence-management}
 
-Zie Elementen [importeren en exporteren naar AEM-formulieren](/help/forms/using/import-export-forms-templates.md)voor instructies over het uploaden/importeren van een XDP naar Correspondentiebeheer.
+Zie [Elementen importeren naar AEM Forms](/help/forms/using/import-export-forms-templates.md)voor instructies over het uploaden/importeren van een XDP naar Correspondence Management.
 
 ### Tips en trucs {#best-practices-tips-and-tricks-2}
 
@@ -454,20 +462,20 @@ Wanneer u werkt met een combinatie van datums, zoals startDate - endDate, gebrui
 
 Wanneer een indeling veel velden en doelgebieden bevat die zijn toegewezen aan één XML-element, gebruikt u binding op formulierniveau en maakt u een afzonderlijk knooppunt voor elk element. Velden die op formulierniveau zijn gebonden, worden genegeerd bij het toewijzen van gegevens in Correspondentiebeheer.
 
-#### Doelgebieden van subformulieren in een basispagina niet gebruiken {#do-not-use-subform-target-areas-in-a-master-page}
+#### Doelgebieden van subformulieren op een master pagina niet gebruiken {#do-not-use-subform-target-areas-in-a-master-page}
 
-Subformulieren zijn bedoeld voor gebieden in een basispagina en zijn niet zichtbaar in de gebruikersinterface Middelen beheren en er kunnen geen gegevens aan worden toegewezen.
+Subformulieren zijn bedoeld voor gebieden op een master pagina en zijn niet zichtbaar in de gebruikersinterface Middelen beheren en er kunnen geen gegevens aan worden toegewezen.
 
 #### De juiste posities en typen kiezen voor de doelgebieden {#choosing-appropriate-positions-and-types-for-target-areas}
 
 Let bij het ontwerpen van de indeling op het kiezen van subformulieren. Als de indeling één subformulier bevat, kan het een stroomtype zijn. Nadat u de velden in het subformulier hebt geplaatst, kunt u het subformulier onderbrengen in een ander subformulier, zodat het subformulier met terugloop ook wordt weergegeven en de indeling niet wordt verstoord.
 
-#### Velden op stramienpagina&#39;s plaatsen {#placing-fields-on-master-pages}
+#### Velden op master pagina&#39;s plaatsen {#placing-fields-on-master-pages}
 
-Let op het volgende wanneer u een veld op een stramienpagina plaatst:
+Let op het volgende wanneer u een veld op een master pagina plaatst:
 
-* De binding van stramienpaginavelden instellen op Globale gegevens gebruiken
-* Plaats het veld niet rechtstreeks onder het basisgebied PageArea van de basispagina.
+* De binding van master paginavelden instellen op Globale gegevens gebruiken
+* Plaats het veld niet rechtstreeks onder het basisgebied PageArea van de master pagina.
 * Plaats het veld in een benoemd subformulier en zorg ervoor dat de binding van het benoemde subformulier is ingesteld op Naam gebruiken.
 
 ## Tabellen maken met behulp van lay-outfragmenten {#creating-tables-using-layout-fragments}
@@ -498,7 +506,8 @@ In dit voorbeeld wordt getoond hoe u een dynamische en een statische tabel kunt 
 
    * Voeg subformulier toe aan de tabelkolom. Zorg ervoor dat u de indeling van het bovenliggende subformulier van de tabel wijzigt in Stroominhoud en dat u de bindingen van het subformulier uit de tabel verwijdert.
    * Voeg een subformulier toe aan de tabelcel. Zorg ervoor dat u de indeling van het bovenliggende subformulier van de tabel wijzigt in Stroominhoud en dat u de bindingen van het subformulier uit de tabel verwijdert.
-   U kunt ook de statische en dynamische XDP&#39;s gebruiken die bij deze stap zijn gevoegd.
+
+   U kunt ook de statische en dynamische XDP&#39;s gebruiken die bij deze stap horen.
 
    Zie [Lay-outfragmenten voor meer informatie over het werken met lay-outfragmenten](#layoutfragments).
 Raadpleeg de Help bij [Designer](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/)voor meer informatie over het ontwerpen van lay-outs.
@@ -507,7 +516,7 @@ Raadpleeg de Help bij [Designer](https://help.adobe.com/en_US/AEMForms/6.1/Desig
 
    [Bestand ophalen](assets/dynamic.xdp.zip)
 
-1. Upload de XDP&#39;s naar AEM-formulieren.
+1. Upload de XDP&#39;s naar AEM Forms.
 1. Maak een lay-outfragment op basis van de dynamische XDP. Het lusje van de Lijst van de eigenschappen toont dat de lijst dynamisch is (Configuratie voor gebied). Het aantal rijen (1) en kolommen (3) worden afgeleid van het XDP/Layout-fragment.
 
    De velden van deze indeling worden later gebonden aan de geïmporteerde DD en in de letter wordt het aantal rijen dynamisch gemaakt op basis van het aantal records in het bestand met testgegevens (het XML-gegevensbestand dat is gekoppeld aan de DD).
@@ -519,7 +528,7 @@ Raadpleeg de Help bij [Designer](https://help.adobe.com/en_US/AEMForms/6.1/Desig
 1. Maak een lay-outfragment op basis van de statische XDP. Het lusje van de Lijst van de eigenschappen toont dat de lijst statisch is (Configuratie voor gebied). Het aantal rijen (1) en kolommen (3) worden afgeleid van het XDP/Layout-fragment.
 
    U kunt het aantal kolommen en rijen hier wijzigen. Afhankelijk van wat u in dit scherm kiest, blijft het aantal rijen en kolommen van een statische tabel vast in de letter die met deze indeling wordt gemaakt.
-   [ Een layoutfragmentscherm ![maken](assets/statictableproperties.png)](assets/statictableproperties-1.png)
+   [ ![Een layoutfragmentscherm maken](assets/statictableproperties.png)](assets/statictableproperties-1.png)
 
 1. Maak een letter met beide lay-outfragmenten erin. Wanneer u dynamische XDP in de brief opneemt, plaats de band van zijn gebieden aan de de inzamelingselementen van het Woordenboek van Gegevens.
 

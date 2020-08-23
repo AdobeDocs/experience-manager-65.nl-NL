@@ -1,8 +1,8 @@
 ---
 title: Definities van releasevoertuig bijwerken
 seo-title: Definities van releasevoertuig bijwerken
-description: Dit artikel detailleert de diverse types van versies AEM, met inbegrip van volledige versies, eigenschapspakken, en de dienstenpakketten.
-seo-description: Dit artikel detailleert de diverse types van versies AEM, met inbegrip van volledige versies, eigenschapspakken, en de dienstenpakketten.
+description: Dit artikel detailleert de diverse types van AEM versies, met inbegrip van volledige versies, eigenschapspakken, en de dienstenpakketten.
+seo-description: Dit artikel detailleert de diverse types van AEM versies, met inbegrip van volledige versies, eigenschapspakken, en de dienstenpakketten.
 uuid: 388fb6f5-0249-41e2-a460-1bb4cd0f8494
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,21 +10,21 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 32695db5-d62d-4959-8a24-3d56b4a19904
 translation-type: tm+mt
-source-git-commit: 6a5a8e64c6eaab816d07d8206601849c974d1e26
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '768'
 ht-degree: 2%
 
 ---
 
 
-# Definities van releasevoertuig voor AEM-update{#update-release-vehicle-definitions}
+# Definities van releasevoertuig AEM bijwerken{#update-release-vehicle-definitions}
 
-Dit document bevat informatie over de verschillende typen Adobe Experience Manager (AEM)-releases, zoals volledige releases, functiepakketten en servicepakketten die Adobe aan klanten levert.
+Dit document bevat details over de verschillende typen Adobe Experience Manager (AEM)-releases, waaronder volledige releases, functiepakketten en servicepakketten die Adobe aan klanten levert.
 
->[!Nofferte]
+>[!NOTE]
 >
->Raadpleeg het stappenplan voor [AEM-updateversies voor een releaseschema van de AEM-updateversies](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html)
+>Voor versieschema van AEM update-releases raadpleegt u het stappenplan voor [AEM update-releases](https://helpx.adobe.com/experience-manager/update-releases-roadmap.html)
 
 ## Volledige release {#full-release}
 
@@ -72,7 +72,7 @@ Dit document bevat informatie over de verschillende typen Adobe Experience Manag
    <td>
     <ul>
      <li>Wordt geleverd als een zelfstandig productinstallatieprogramma</li>
-     <li>Beschikbaar op de website voor licentieverlening en de website voor beheerde services</li>
+     <li>Beschikbaar op de website voor licentieverlening en de website voor Managed Services-licenties</li>
      <li>Vereist mogelijk migratie naar opslagplaats voor inhoud</li>
     </ul> </td>
   </tr>
@@ -221,7 +221,7 @@ Dit document bevat informatie over de verschillende typen Adobe Experience Manag
    <td><strong>Beschikbaarheid en installatie</strong></td>
    <td>
     <ul>
-     <li>Als pakket geleverd door AEM-klantenservice</li>
+     <li>Door AEM klantenservice als pakket geleverd</li>
      <li>Niet noodzakelijk inbegrepen in de dienstpakken of volledige versies</li>
     </ul> </td>
   </tr>
@@ -240,9 +240,9 @@ Dit document bevat informatie over de verschillende typen Adobe Experience Manag
    <td><strong>Definitie</strong></td>
    <td>
     <ul>
-     <li>De Pakken van de eigenschap zijn toevoegings-functionaliteit en worden geleverd via de Pakken van de Dienst. Als een AEM-versie zijn laatste servicepack heeft uitgebracht, levert Adobe in de toekomst geen functiepakket voor dit pakket.</li>
-     <li>FP's bevatten productverbeteringen die zijn gepland voor een volgende productrelease, maar die op basis van de beslissing van het productbeheer van Adobe vroeg worden geleverd.</li>
-     <li>Functies worden altijd samengevoegd met de volgende grote release en vervolgens teruggezet naar de AEM-versie die de klant nodig heeft</li>
+     <li>De Pakken van de eigenschap zijn toevoegings-functionaliteit en worden geleverd via de Pakken van de Dienst. Als een AEM versie zijn laatste de dienstpak heeft vrijgegeven, zal Adobe geen eigenschapspak voor het in de toekomst leveren.</li>
+     <li>FPs bevatten die voor een volgende productversie, maar op het besluit van het Beheer van het Product van de Adobe vroeg worden gepland geleverd.</li>
+     <li>Functies worden altijd samengevoegd met de volgende grote release en vervolgens teruggezet naar de AEM versie die de klant nodig heeft</li>
      <li>De gemeenschappelijke belangen en de eigenschapspakketten van GA worden samengevoegd in het volgende de dienstpak</li>
     </ul> </td>
   </tr>
@@ -272,7 +272,7 @@ Dit document bevat informatie over de verschillende typen Adobe Experience Manag
    <td>
     <ul>
      <li>Wordt geleverd via servicepacks</li>
-     <li>Beschikbaar op Delen van pakket. Klanten accepteren de Algemene voorwaarden van Adobe via Delen van pakketten.</li>
+     <li>Beschikbaar op Delen van pakket. Klanten accepteren Adobe en voorwaarden delen via pakket.</li>
     </ul> </td>
   </tr>
   <tr>

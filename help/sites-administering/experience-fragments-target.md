@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: d4152b4d-531b-4b62-8807-a5bc5afe94c6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e6d02717811ac78b77dc459814941d654e94733f
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
 source-wordcount: '1179'
 ht-degree: 0%
@@ -119,7 +119,6 @@ De vereiste opties kunnen worden geselecteerd in **Pagina-eigenschappen** van de
 
 1. Selecteer **Adobe Target** in de vervolgkeuzelijst onder Configuratie **Cloud Service** .
 
-1. 
    >[!NOTE]
    >
    >De JSON-indeling van een Experience Fragment-aanbieding kan worden aangepast. Hiervoor definieert u een component van het fragment van de klantenervaring en annoteert u hoe u de eigenschappen van de component in het Sling-model van de component exporteert.
@@ -211,6 +210,6 @@ Om dergelijke situaties te voorkomen:
 
    * De aanbieding van het Doel met AEM Fragment van de Ervaring kan ongewenste gedrag tonen
 
-      * De aanbieding wordt waarschijnlijk nog steeds weergegeven, aangezien de Experience Fragment HTML naar Target werd geduwd
+      * De aanbieding wordt waarschijnlijk nog steeds weergegeven, aangezien de Experience Fragment-HTML naar Target werd geduwd
       * Eventuele verwijzingen in het ervaringsfragment werken mogelijk niet correct als middelen waarnaar wordt verwezen ook in AEM worden verwijderd.
    * Uiteraard zijn verdere wijzigingen van het ervaringsfragment niet mogelijk omdat het ervaringsfragment niet meer in AEM bestaat.

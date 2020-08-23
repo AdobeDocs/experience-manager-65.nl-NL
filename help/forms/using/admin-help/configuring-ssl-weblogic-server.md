@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 968c2574-ec9a-45ca-9c64-66f4caeec285
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
 source-wordcount: '1074'
 ht-degree: 0%
@@ -59,8 +59,8 @@ De opdracht Keytool bevindt zich gewoonlijk in de map JavaJre/bin en moet versch
    <td><p>De locatie en naam van het sleutelarchiefbestand.</p><p>De locatie kan het absolute pad van het bestand bevatten. Of het kan relatief zijn ten opzichte van de huidige map van de opdrachtprompt waar de sleutelgereedschapsopdracht wordt ingevoerd.</p></td>
    <td>
     <ul>
-     <li><p>Aangepast sleutelarchief voor identiteiten: <code>[</code><i>appserverdomain]</i><code>/adobe/</code><i>[servernaam]</i><code>/ads-ssl.jks</code></p></li>
-     <li><p>Aangepast sleutelarchief vertrouwen: <code>[</code><i>appserverdomain]</i><code>/adobe/</code><i>[servernaam]</i><code>/ads-ca.jks</code></p></li>
+     <li><p>Aangepast sleutelarchief voor identiteiten: <code>[</code><i>appserverdomain<code>]</code></i><code>/adobe/</code><i>[servernaam]</i><code>/ads-ssl.jks</code></p></li>
+     <li><p>Aangepast sleutelarchief vertrouwen: <code>[</code><i>appserverdomain<code>]</code></i><code>/adobe/</code><i>[servernaam]</i><code>/ads-ca.jks</code></p></li>
     </ul></td>
   </tr>
   <tr>
@@ -95,7 +95,7 @@ De opdracht Keytool bevindt zich gewoonlijk in de map JavaJre/bin en moet versch
      <li><p><code><i>[User name]</i></code> Dit is de identificatie van de gebruiker die eigenaar is van het sleutelarchief.</p></li>
      <li><p><code><i>[Group Name]</i></code> is de identificatie van de ondernemingsgroep waartoe de eigenaar van het sleutelarchief behoort.</p></li>
      <li><p><code><i>[Company Name]</i></code> is de naam van uw organisatie.</p></li>
-     <li><p><code><i>[City Name]</i></code> is de stad waar uw organisatie zich bevindt.</p></li>
+     <li><p><code><i>[City Name]</i></code> Dit is de stad waar uw organisatie zich bevindt.</p></li>
      <li><p><code><i>[State or province]</i></code> is de staat of provincie waar uw organisatie zich bevindt.</p></li>
      <li><p><code><i>[Country Code]</i></code> Dit is de tweelettercode voor het land waar uw organisatie zich bevindt.</p></li>
     </ul></td>
@@ -134,7 +134,7 @@ Zie het bestand keytool.html in de JDK-documentatie voor meer informatie over he
 
    >[!NOTE]
    >
-   >Vervang `[JAVA_HOME]` de map waarin de JDK is geïnstalleerd en vervang `store`*_*`password`* door het wachtwoord voor het sleutelarchief voor aangepaste identiteiten.*
+   >Vervang `[JAVA_HOME]` de map waarin de JDK is geïnstalleerd en vervang `store`*_* `password`* door het wachtwoord voor het sleutelarchief voor aangepaste identiteiten.*
 
    Bijvoorbeeld:
 
@@ -151,7 +151,7 @@ Zie het bestand keytool.html in de JDK-documentatie voor meer informatie over he
 
    >[!NOTE]
    >
-   >Vervang `[JAVA_HOME]` door de directory waarin JDK is geïnstalleerd, en vervang `store`*_*`password`en`key`*_* `password` *met uw eigen wachtwoorden.*
+   >Vervang `[JAVA_HOME]` door de directory waarin JDK is geïnstalleerd, en vervang `store`*_* `password` en `key`*_* `password` *met uw eigen wachtwoorden.*
 
    Bijvoorbeeld:
 

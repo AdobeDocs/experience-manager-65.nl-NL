@@ -3,9 +3,9 @@ title: Terugverwijzing naar vertoningen XMP
 description: Leer hoe de functie XMP terugschrijven de metagegevenswijzigingen voor een element doorgeeft aan alle of aan specifieke uitvoeringen van het element.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '722'
+source-wordcount: '718'
 ht-degree: 3%
 
 ---
@@ -33,7 +33,7 @@ Om de meta-gegevensveranderingen toe te laten om aan de vertoningen van de activ
 
 1. Om de Manager van de Configuratie te openen, toegang `https://[aem_server]:[port]/system/console/configMgr`.
 1. Open de **[!UICONTROL Adobe CQ DAM Rendition Maker]** configuratie.
-1. Selecteer de optie **[!UICONTROL Propagate XMP[!UICONTROL ** en sla de wijzigingen op.
+1. Selecteer de **[!UICONTROL Propagate XMP]** optie en sla de wijzigingen op.
 
    ![chlimage_1-135](assets/chlimage_1-346.png)
 
@@ -72,7 +72,7 @@ De wijzigingen in de metagegevens worden doorgegeven aan de uitvoeringen miniatu
 
 Als u filtert met een lijst van afgewezen personen, kunt u alle eigenschappen van XMP metagegevens importeren, behalve de eigenschappen die voor uitsluiting zijn opgegeven. Voor elementtypen zoals INDD-bestanden met grote hoeveelheden XMP metagegevens (bijvoorbeeld 1000 knooppunten met 10.000 eigenschappen) zijn de namen van knooppunten die moeten worden gefilterd niet altijd van tevoren bekend. Als het filtreren gebruikend een lijst van afgewezen personen een groot aantal activa met talrijke XMP meta-gegevens om toelaat worden ingevoerd, kan de [!DNL Experience Manager] plaatsing stabiliteitskwesties, bijvoorbeeld verstopte observatierijen ontmoeten.
 
-Door het filteren van XMP metagegevens via lijst van gewenste personen wordt dit probleem opgelost doordat u de XMP eigenschappen kunt definiëren die moeten worden geïmporteerd. Op deze manier worden andere of onbekende XMP eigenschappen genegeerd. Voor achterwaartse compatibiliteit kunt u enkele van deze eigenschappen toevoegen aan het filter dat een lijst van afgewezen personen gebruikt.
+Door het filteren van XMP metagegevens via lijst van gewenste personen verhelpt u dit probleem door de XMP te definiëren die moeten worden geïmporteerd. Op deze manier worden andere of onbekende XMP eigenschappen genegeerd. Voor achterwaartse compatibiliteit kunt u enkele van deze eigenschappen toevoegen aan het filter dat een lijst van afgewezen personen gebruikt.
 
 >[!NOTE]
 >

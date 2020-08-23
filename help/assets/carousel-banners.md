@@ -1,6 +1,6 @@
 ---
 title: Carousel-banners
-description: Leer hoe u met carrouselbanners in Dynamic Media werkt
+description: Leer hoe u met carrouselbanners werkt in Dynamic Media
 uuid: 73684a08-d84d-4665-ab89-3a1bf88ac5dd
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: e26c7f7f-bdd7-421a-8614-ba48abf381d2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
-source-wordcount: '4732'
-ht-degree: 3%
+source-wordcount: '4730'
+ht-degree: 2%
 
 ---
 
@@ -43,22 +43,22 @@ Bekijk een 10 minuten en 33 seconden analyse over [hoe carrouselbanners worden g
 
 >[!NOTE]
 >
->Niet-administratieve gebruikers moeten aan de **[!UICONTROL dam-users]** groep worden toegevoegd om carrouselbanners te kunnen tot stand brengen of uitgeven. Als u problemen ondervindt bij het maken of bewerken van bestanden, raadpleegt u de systeembeheerder die u aan de **d[!UICONTROL am-users]**-groep kan toevoegen.
+>Niet-administratieve gebruikers moeten aan de **[!UICONTROL dam-users]** groep worden toegevoegd om carrouselbanners te kunnen tot stand brengen of uitgeven. Als u problemen ondervindt bij het maken of bewerken van bestanden, raadpleegt u de systeembeheerder die u aan de **d[!UICONTROL am-users]** -groep kan toevoegen.
 
 ## Snel starten: Carousel Banners {#quick-start-carousel-banners}
 
 Zo kunt u snel aan de slag:
 
-1. [Identificeer hotspot en beeldkaartvariabelen](#identifying-hotspot-and-image-map-variables) (slechts voor klanten die AEM Assets + Dynamic Media gebruiken)
+1. [Identificeer hotspot en beeldkaartvariabelen](#identifying-hotspot-and-image-map-variables) (slechts voor klanten die AEM Assets + Dynamische Media gebruiken)
 
    Begin door dynamische variabelen te identificeren die door de bestaande snelle meningsimplementatie worden gebruikt zodat u hotspots en beeldkaartgegevens behoorlijk tijdens het proces van de de bannerverwezenlijking van de carrousel in AEM Assets kunt ingaan.
 
    >[!NOTE]
    >
-   >Als u een AEM Sites of een klant van de Handel bent, kunt u de ingebouwde eigenschap gebruiken om aan productpagina&#39;s te navigeren en de bestaande skus in de productcatalogus te zoeken. U hoeft niet handmatig hotspot- of afbeeldingskaartvariabelen in te voeren. Zie informatie over het [instellen van eCommerce](/help/sites-administering/generic.md).
+   >Als u een AEM Sites- of e-commerceklanten bent, kunt u de ingebouwde functie gebruiken om naar productpagina&#39;s te navigeren en de bestaande skus in de productcatalogus op te zoeken. U hoeft niet handmatig hotspot- of afbeeldingskaartvariabelen in te voeren. Zie informatie over het [instellen van eCommerce](/help/sites-administering/generic.md).
    >
    >
-   >Als u een klant van AEM Assets en Dynamic Media bent, zult u gegevens voor hotspots en beeldkaarten manueel ingaan, en dan gepubliceerde URL of bedt code met uw systeem van het de inhoudsbeheer van de derde integreren.
+   >Als u een AEM Assets- en Dynamic Media-klant bent, voert u handmatig gegevens in voor hotspots en afbeeldingen met hyperlinks. Vervolgens integreert u de gepubliceerde URL of de Embed-code met uw externe contentbeheersysteem.
 
 1. Optioneel: [Maak zo nodig een viewervoorinstelling voor een carrouselset](/help/assets/managing-viewer-presets.md).
 
@@ -86,27 +86,25 @@ Zo kunt u snel aan de slag:
 
 1. Voer een van de volgende handelingen uit:
 
-   * [Een carrouselbanner toevoegen aan uw websitepagina
-      ](#adding-a-carousel-banner-to-your-website-page)U kunt de URL van de carrouselbanner of de ingesloten code die u hebt gekopieerd, toevoegen aan de websitepagina.
+   * [Voeg een carrouselbanner toe aan uw websitepagina](#adding-a-carousel-banner-to-your-website-page) . U kunt de URL van de carrouselbanner of de ingesloten code die u naar de websitepagina hebt gekopieerd, toevoegen.
 
       * [Integreer de carrouselbanner met een bestaande QuickView](#integrating-the-carousel-banner-with-an-existing-quickview). Als u een systeem voor webcontentbeheer van derden gebruikt, moet u de nieuwe carrouselbanner integreren met de bestaande Quickview-implementatie op uw website.
-   * [Een carrouselbanner toevoegen aan uw website in AEM
-      ](/help/assets/adding-dynamic-media-assets-to-pages.md)Als u een klant van AEM Sites bent, kunt u de carrousel toevoegen die direct aan de pagina in AEM wordt geplaatst, gebruikend de Interactieve component van Media.
+   * [Voeg een carrouselbanner toe aan uw website in AEM](/help/assets/adding-dynamic-media-assets-to-pages.md) Als u een AEM Sites-klant bent, kunt u de carrousel die rechtstreeks op de pagina in AEM is ingesteld, toevoegen met de component Interactieve media.
 
 
 Zie Carousel Sets [bewerken als u carrouselsets moet bewerken.](#editing-carousel-sets) Bovendien kunt u de eigenschappen [van de](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/managing-assets-touch-ui.html#editing-properties)Carousel-set weergeven en bewerken.
 
 ## Variabelen hotspot en afbeelding met hyperlinks identificeren {#identifying-hotspot-and-image-map-variables}
 
-Begin door dynamische variabelen te identificeren die door de bestaande snelle meningsimplementatie worden gebruikt zodat u hotspots of de gegevens van de beeldkaart behoorlijk tijdens het proces van de carrouselvastgestelde verwezenlijking in AEM Assets kunt ingaan.
+Begin door dynamische variabelen te identificeren die door de bestaande snelle meningsimplementatie worden gebruikt zodat u hotspots of beeldkaartgegevens behoorlijk tijdens het het vastgestelde proces van de carrouselverwezenlijking in AEM Assets kunt ingaan.
 
 Wanneer u hotspots of afbeeldingen met hyperlinks toevoegt aan een bannerafbeelding in AEM Assets, moet u een SKU en optionele aanvullende variabelen toewijzen aan elke hotspot of afbeelding met hyperlinks. Dergelijke variabelen worden later gebruikt om hotspots of afbeeldingen met hyperlinks te laten overeenkomen met inhoud voor snelle weergave.
 
 >[!NOTE]
 >
->Als u een AEM Sites en/of de e-commerceklanten van AEM bent, sla deze stap over. U hoeft de variabelen van hotspot of afbeeldingen met hyperlinks niet handmatig te identificeren; u kunt de integratie met Ecommerce voor productintegratie gebruiken. Zie informatie over het [instellen van eCommerce](/help/sites-administering/generic.md). Daarnaast kunt u de component Interactive gebruiken en toevoegen aan uw webpagina.
+>Als u een AEM Sites en/of AEM ecommerce klant bent, sla deze stap over. U hoeft de hotspot- of afbeeldingskaartvariabelen niet handmatig te identificeren; u kunt de integratie met Ecommerce voor productintegratie gebruiken. Zie informatie over het [instellen van eCommerce](/help/sites-administering/generic.md). Daarnaast kunt u de component Interactive gebruiken en toevoegen aan uw webpagina.
 >
->Als u een AEM Assets of klant van Media bent, publiceert u de URL of sluit code in en integreert u deze vervolgens met het contentbeheersysteem van derden en identificeert u handmatig hotspots en afbeeldingen met hyperlinks.
+>Als u een AEM Assets- of Media-klant bent, publiceert u de URL- of insluitcode en integreert u deze vervolgens met het contentbeheersysteem van derden en identificeert u handmatig hotspots en afbeeldingen met hyperlinks.
 
 Het is belangrijk om het aantal en het type variabelen correct te identificeren om met hotspot of beeldkaartgegevens te associëren. Op elke hotspot of afbeeldingskaart die aan een bannerafbeelding wordt toegevoegd, moet voldoende informatie staan om het product ondubbelzinnig te identificeren in het bestaande back-endsysteem. Tegelijkertijd mag elke hotspot of afbeelding met hyperlinks niet meer gegevens bevatten dan nodig is. De reden hiervoor is dat het gegevensinvoerproces hierdoor te complex en voortdurend hotspot- of imagekaartbeheer wordt.
 
@@ -117,7 +115,7 @@ Soms is het voldoende om IT-specialisten te raadplegen die verantwoordelijk zijn
 De meeste snelle weergaveimplementaties gebruiken het volgende paradigma:
 
 * De gebruiker activeert een gebruikersinterface-element op de website. Tik bijvoorbeeld op een knop **[!UICONTROL Quick View]**.
-* De website verzendt een Ajax-verzoek naar de achterkant om de gegevens of inhoud van de snelle weergave te laden, indien nodig.
+* De website stuurt een Ajax-aanvraag naar de achterkant om de gegevens of inhoud van de snelle weergave te laden, indien nodig.
 * De gegevens van de Snelle weergave worden omgezet in de inhoud ter voorbereiding op de weergave op de webpagina.
 * Tot slot geeft de front-end code dergelijke inhoud visueel op het scherm terug.
 
@@ -136,7 +134,7 @@ Tijdens dit proces is het belangrijk om verschillende delen van uw website te be
 
 In het eenvoudigste geval, is het enige veranderlijke deel in Snelle mening URL productSKU. In dit geval is de SKU-waarde het enige gegevensstuk dat u nodig hebt om hotspots of afbeeldingen met hyperlinks toe te voegen aan de bannerafbeelding.
 
-In complexe gevallen heeft de URL van de snelle weergave echter naast de SKU ook verschillende elementen, zoals categorie-id, kleurcode, code voor grootte enzovoort. In dergelijke gevallen is elk element een afzonderlijke variabele in de definitie van hotspot- of afbeeldingskaart in de bannerfunctie carrousel.
+In complexe gevallen heeft de URL van de Snelle weergave echter naast de SKU ook verschillende elementen, zoals categorie-id, kleurcode, code voor grootte enzovoort. In dergelijke gevallen is elk element een afzonderlijke variabele in de definitie van hotspot- of afbeeldingskaart in de bannerfunctie carrousel.
 
 Bekijk de volgende voorbeelden van snelle weergave-URL&#39;s en de resulterende hotspot- of afbeeldingskaartvariabelen:
 
@@ -180,7 +178,7 @@ Bekijk de volgende voorbeelden van snelle weergave-URL&#39;s en de resulterende 
 
 ## Beeldbanners uploaden {#uploading-image-banners}
 
-Als u de afbeeldingen die u wilt gebruiken al hebt geüpload, gaat u naar de volgende stap [Carousel-sets](#creating-carousel-sets)maken. Houd er rekening mee dat de afbeeldingen die in de carrousel worden gebruikt, moeten worden geüpload nadat de Dynamic Media zijn ingeschakeld.
+Als u de afbeeldingen die u wilt gebruiken al hebt geüpload, gaat u naar de volgende stap [Carousel-sets](#creating-carousel-sets)maken. Houd er rekening mee dat de afbeeldingen die in de carrousel worden gebruikt, moeten worden geüpload nadat Dynamic Media is ingeschakeld.
 
 Zie [Elementen](/help/assets/managing-assets-touch-ui.md)uploaden om afbeeldingsbanners te uploaden.
 
@@ -200,8 +198,7 @@ Zie [Elementen](/help/assets/managing-assets-touch-ui.md)uploaden om afbeeldings
    * Near the upper-left corner of the page, tap **[!UICONTROL Add Slide]** icon.
 
    * Tik in het midden van de pagina op **[!UICONTROL Tap to open Asset Selector.]**
-
-   Tik om assets te selecteren die u in de carrouselset wilt opnemen. Geselecteerde assets hebben een vinkje. Tik in de rechterbovenhoek van de pagina op **[!UICONTROL Selecteren]** als u klaar bent.
+   Tik om assets te selecteren die u in de carrouselset wilt opnemen. Geselecteerde assets hebben een vinkje. When you are finished, near the upper-right corner of the page, tap **[!UICONTROL Select]**.
 
    Met de Asset Selector kunt u zoeken naar elementen door een trefwoord in te voeren en te tikken of door te klikken op **[!UICONTROL Return.]** U kunt ook filters toepassen om de zoekresultaten te verfijnen. U kunt filteren op pad, verzameling, bestandstype en tag. Selecteer het filter en tik op het pictogram **[!UICONTROL Filter]** op de werkbalk. Change the view by tapping the View icon and selecting **[!UICONTROL Column View]**, **[!UICONTROL Card View]**, or **[!UICONTROL List View.]**
 
@@ -213,7 +210,7 @@ Zie [Elementen](/help/assets/managing-assets-touch-ui.md)uploaden om afbeeldings
    * Sleep indien nodig dia&#39;s om de volgorde van de afbeeldingen in de lijst te wijzigen.
    * Als u een afbeelding wilt verwijderen, selecteert u de afbeelding en tikt u op **[!UICONTROL Delete Slide]** de werkbalk.
 
-   * Tik op de vervolgkeuzelijst met voorinstellingen en selecteer vervolgens een voorinstelling die u meteen op de set wilt toepassen om een voorinstelling toe te passen in de rechterbovenhoek van de pagina.
+   * Als u een voorinstelling wilt toepassen, klikt u in de rechterbovenhoek van de pagina op de vervolgkeuzelijst met voorinstellingen en selecteert u vervolgens een voorinstelling die u tegelijk op de set wilt toepassen.
    Als u een dia wilt verwijderen, tikt u op de dia of klikt u op de dia en tikt u of klikt u op **[!UICONTROL Delete Slide]** de werkbalk. Als u een dia wilt verplaatsen, tikt u op het invoegpictogram en houdt u de muisknop ingedrukt en verplaatst u de gewenste locatie.
 
 1. Nadat u de afbeeldingen in dia&#39;s hebt toegevoegd, kunt u een hotspot, afbeelding met hyperlinks of beide toevoegen aan uw afbeelding. Zie hotspots of afbeeldingen met hyperlinks [toevoegen](#adding-hotspots-or-image-maps-to-an-image-banner).
@@ -287,7 +284,7 @@ Zie ook Afbeeldingskaarten [toevoegen](/help/assets/image-maps.md).
    * Tik op **[!UICONTROL Quickview.]**
 
       * Als u een AEM Sites- en e-commerceklanten bent, tikt u op het pictogram Productkiezer (vergrootglas) om de pagina Selecteer product te openen. Tik op het product dat u wilt gebruiken en tik vervolgens op het vinkje in de rechterbovenhoek van de pagina om terug te keren naar de Carousel Banner Editor.
-      * Als u geen AEM Sites of de consument van de Handel bent
+      * Als u geen klant van AEM Sites of van de Handel bent
 
          * Zie [Hotspotvariabelen](#identifying-hotspot-and-image-map-variables) identificeren aangezien u deze variabelen kunt willen bepalen.
          * Voer vervolgens handmatig de SKU-waarde in. Typ in het tekstveld SKU-waarde de SKU (Stock Keeping Unit) van het product. Dit is een unieke id voor elk afzonderlijk product of elke service die u aanbiedt. De ingevoerde waarde van SKU bevolkt automatisch het veranderlijke gedeelte van het snelle meningsmalplaatje zodat het systeem weet om aangewezen hotspot met een bepaalde snelle mening van SKU te associëren.
@@ -296,7 +293,7 @@ Zie ook Afbeeldingskaarten [toevoegen](/help/assets/image-maps.md).
          * Zie [Werken met kiezers](/help/assets/working-with-selectors.md) voor meer informatie.
    * Tik op **[!UICONTROL Hyperlink.]**
 
-      * Als u een klant van AEM Sites bent, tik het pictogram van de Selecteur van de Plaats (omslag) om aan een URL te navigeren.
+      * Als u een AEM Sites-klant bent, tikt u op het pictogram Sitekiezer (map) om naar een URL te navigeren.
          >[!NOTE]
          De op URL gebaseerde methode van het verbinden is niet mogelijk als uw interactieve inhoud verbindingen met relatieve URLs, in het bijzonder verbindingen met AEM Sites pagina&#39;s heeft.
 
@@ -308,7 +305,7 @@ Zie ook Afbeeldingskaarten [toevoegen](/help/assets/image-maps.md).
 
    * Tik op **[!UICONTROL Experience Fragment.]**
 
-      * Als u een klant van AEM Sites bent, tik het pictogram van het Onderzoek (vergrootglas) om de pagina van het Fragment van de Ervaring te openen. Tik op het gewenste fragment voor beleving of klik op het gewenste fragment. Tik vervolgens op Selecteren in de rechterbovenhoek van de pagina om terug te keren naar de pagina Hotspot-beheer.
+      * Als u een AEM Sites-klant bent, tikt u op het zoekpictogram (vergrootglas) om de pagina Experience Fragment te openen. Tik op het gewenste fragment voor beleving of klik op het gewenste fragment. Tik vervolgens op Selecteren in de rechterbovenhoek van de pagina om terug te keren naar de pagina Hotspot-beheer.
 Zie Fragmenten [ervaren](/help/sites-authoring/experience-fragments.md).
 
       * Geef de breedte en hoogte van het ervaringsfragment op zoals dit wordt weergegeven op de banner.
@@ -321,7 +318,7 @@ U kunt dit omzeilen door voorinstellingen voor viewers te gebruiken of te maken 
    U kunt ook een voorvertoning weergeven van hoe de carrouselbanner eruitziet. Zie [(Optioneel) Een voorvertoning weergeven van carrouselbanners](#optional-previewing-carousel-banners).
 
 1. Tik op **[!UICONTROL Save.]**
-1. Publiceer de carrouselset. Bij het publiceren wordt de insluitcode of URL gemaakt die u op uw websitepagina kunt gebruiken. Als u een klant van AEM Sites bent, kunt u de carrousel die rechtstreeks aan uw webpagina wordt geplaatst toevoegen.
+1. Publiceer de carrouselset. Bij het publiceren wordt de insluitcode of URL gemaakt die u op uw websitepagina kunt gebruiken. Als u een AEM Sites-klant bent, kunt u de carrousel rechtstreeks aan uw webpagina toevoegen.
 
    Zie [Elementen](/help/assets/publishing-dynamicmedia-assets.md)publiceren.
 
@@ -370,7 +367,7 @@ Met Voorvertoning kunt u zien hoe uw carrouselbanner eruit ziet voor klanten en 
 
 Wanneer u tevreden bent met de carrouselbanner, kunt u deze publiceren.
 See [Embedding the Video or Image Viewer on a Web Page](/help/assets/embed-code.md).
-See [Linking URLs to your web application](/help/assets/linking-urls-to-yourwebapplication.md). De op URL gebaseerde methode van koppelen is niet mogelijk als uw interactieve inhoud koppelingen naar relatieve URL&#39;s bevat, met name koppelingen naar pagina&#39;s van AEM Sites.
+See [Linking URLs to your web application](/help/assets/linking-urls-to-yourwebapplication.md). De op URL gebaseerde methode van koppelen is niet mogelijk als uw interactieve inhoud koppelingen naar relatieve URL&#39;s bevat, met name koppelingen naar AEM Sites-pagina&#39;s.
 See [Adding Dynamic Media Assets to pages.](/help/assets/adding-dynamic-media-assets-to-pages.md)
 
 U kunt een voorvertoning van carrouselbanners weergeven in de Carousel Editor (voorkeursmethode) of in de **[!UICONTROL Viewers]** lijst.
@@ -383,7 +380,7 @@ U kunt een voorvertoning van carrouselbanners weergeven in de Carousel Editor (v
 
    ![experience_fragment-carouselbanner-viewerdropdown](assets/experience_fragment-carouselbanner-viewerdropdown.png)
 
-1. Tikken op **voorvertoning.]**
+1. Tik op **[Voorvertoning.]**
 1. Tik op de hotspots of afbeeldingen met hyperlinks op de afbeelding om de bijbehorende handelingen te testen.
 
 **Een voorvertoning van carrouselbanners weergeven in de lijst Viewers**
@@ -395,22 +392,22 @@ U kunt een voorvertoning van carrouselbanners weergeven in de Carousel Editor (v
 
 ## Carrouselbanners publiceren {#publishing-carousel-banners}
 
-U moet de carrousel publiceren om deze te kunnen gebruiken. Als u een Carousel-set publiceert, worden de URL en de insluitcode geactiveerd. Het publiceert ook de carrousel aan de wolk van Dynamic Media die met een CDN voor scalable en prestatieslevering geïntegreerd is.
+U moet de carrousel publiceren om deze te kunnen gebruiken. Als u een Carousel-set publiceert, worden de URL en de insluitcode geactiveerd. De carrousel wordt ook gepubliceerd naar de Dynamic Media-cloud, die is geïntegreerd met een CDN voor schaalbare en krachtige levering.
 
 >[!NOTE]
 Als u een bestaande interactieve afbeelding met hotspots voor uw carrouselbanner gebruikt, moet u de interactieve afbeelding afzonderlijk publiceren nadat u de carrouselbanner hebt gepubliceerd.
 Als u een reeds gepubliceerde interactieve afbeelding wijzigt die u in een carrouselbanner gebruikt, moet u de interactieve afbeelding publiceren voordat deze wijzigingen worden weerspiegeld in de carrouselbanner.
 
-Zie [Dynamic Media-elementen](/help/assets/publishing-dynamicmedia-assets.md) publiceren voor informatie over het publiceren van carrouselbanners.
+Zie Dynamische media-elementen [publiceren](/help/assets/publishing-dynamicmedia-assets.md) voor informatie over het publiceren van carrouselbanners.
 
 ## Een carrouselbanner toevoegen aan uw websitepagina {#adding-a-carousel-banner-to-your-website-page}
 
 Nadat u bannerafbeeldingen hebt geüpload om een carrousel te maken, hotspots en/of afbeeldingen met hyperlinks naar de banner hebt toegevoegd en de carrouselset hebt gepubliceerd, kunt u deze nu toevoegen aan uw bestaande websitepagina.
 
 >[!NOTE]
-Als u een klant van AEM Sites bent, kunt u de carrouselbanner rechtstreeks aan uw pagina toevoegen door de interactieve component van Media aan uw pagina te slepen. See [Adding Dynamic Media Assets to Pages.](/help/assets/adding-dynamic-media-assets-to-pages.md)
+Als u een AEM Sites-klant bent, kunt u de carrouselbanner rechtstreeks aan de pagina toevoegen door de component Interactieve media naar de pagina te slepen. See [Adding Dynamic Media Assets to Pages.](/help/assets/adding-dynamic-media-assets-to-pages.md)
 
-Als u echter een zelfstandige AEM-assets klant bent, kunt u de carrouselbanner handmatig toevoegen aan de bestemmingspagina van uw website, zoals beschreven in deze sectie.
+Als u echter een zelfstandige AEM bent, kunt u de carrouselbanner handmatig toevoegen aan de bestemmingspagina van uw website, zoals beschreven in deze sectie.
 
 1. Kopieer de insluitcode van de gepubliceerde carrouselset.
 See [Embedding the Video or Image Viewer on a Web Page](/help/assets/embed-code.md).

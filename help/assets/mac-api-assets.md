@@ -3,9 +3,9 @@ title: '[!DNL Assets] HTTP API in [!DNL Adobe Experience Manager].'
 description: Digitale elementen maken, lezen, bijwerken, verwijderen en beheren met de HTTP API in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: fb3fdf25718cd099ff36a206718aa4bf8a2b5068
 workflow-type: tm+mt
-source-wordcount: '1567'
+source-wordcount: '1661'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,10 @@ Toegang krijgen tot de API:
 De API-reactie is een JSON-bestand voor sommige MIME-typen en een antwoordcode voor alle MIME-typen. Het JSON-antwoord is optioneel en is mogelijk niet beschikbaar, bijvoorbeeld voor PDF-bestanden. Vertrouw op de antwoordcode voor verdere analyse of acties.
 
 Na de gebeurtenis [!UICONTROL Off Time]zijn een middel en de uitvoeringen ervan niet beschikbaar via de [!DNL Assets] webinterface en via de HTTP-API. De API retourneert een foutbericht van 404 als het in de toekomst [!UICONTROL On Time] is of in het verleden [!UICONTROL Off Time] is.
+
+>[!CAUTION]
+>
+>[HTTP API werkt de meta-gegevenseigenschappen](#update-asset-metadata) in `jcr` namespace bij. De gebruikersinterface van de Experience Manager werkt echter de eigenschappen van metagegevens in de `dc` naamruimte bij.
 
 ## Contentfragmenten {#content-fragments}
 
@@ -168,7 +172,7 @@ Hiermee werkt u de binaire waarde (uitvoering met de oorspronkelijke naam) van e
 
 Werkt de metagegevenseigenschappen van het element bij. Als u een eigenschap in de `dc:` naamruimte bijwerkt, werkt de API dezelfde eigenschap in de `jcr` naamruimte bij. De API synchroniseert de eigenschappen niet onder de twee naamruimten.
 
-**Verzoek**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"dc:title":"My Asset"}}'`
+**Verzoek**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"jcr:title":"My Asset"}}'`
 
 **Antwoordcodes**: De responscodes zijn:
 
@@ -176,6 +180,27 @@ Werkt de metagegevenseigenschappen van het element bij. Als u een eigenschap in 
 * 404 - NIET GEVONDEN - als Asset niet kon worden gevonden of betreden op de verstrekte URI.
 * 412 - VOORWAARDE MISLUKT - als de wortelinzameling niet kan worden gevonden of worden betreden.
 * 500 - INTERNE SERVERFOUT - als iets anders fout gaat.
+
+### Metagegevens synchroniseren tussen `dc` en `jcr` naamruimte {#sync-metadata-between-namespaces}
+
+De API-methode werkt de metagegevenseigenschappen in de `jcr` naamruimte bij. De updates die worden gemaakt met Touch-UI wijzigen de eigenschappen van metagegevens in de `dc` naamruimte. Als u de waarden van metagegevens wilt synchroniseren tussen `dc` en `jcr` naamruimte, kunt u een workflow maken en de Experience Manager configureren om de workflow uit te voeren bij het bewerken van elementen. Gebruik een ECMA-script om de vereiste eigenschappen van metagegevens te synchroniseren. In het volgende voorbeeldscript wordt de tekenreeks title tussen `dc:title` en `jcr:title`gesynchroniseerd.
+
+```javascript
+var workflowData = workItem.getWorkflowData();
+if (workflowData.getPayloadType() == "JCR_PATH")
+{
+ var path = workflowData.getPayload().toString();
+ var node = workflowSession.getSession().getItem(path);
+ var metadataNode = node.getNode("jcr:content/metadata");
+ var jcrcontentNode = node.getNode("jcr:content");
+if (jcrcontentNode.hasProperty("jcr:title"))
+{
+ var jcrTitle = jcrcontentNode.getProperty("jcr:title");
+ metadataNode.setProperty("dc:title", jcrTitle.toString());
+ metadataNode.save();
+}
+}
+```
 
 ## Een elementuitvoering maken {#create-an-asset-rendition}
 

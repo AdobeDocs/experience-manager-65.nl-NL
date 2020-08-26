@@ -4,9 +4,9 @@ description: Suggesties en begeleiding [!DNL Experience Manager] over configurat
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 2c8220aab9215efba2e4568961a2a6a544803920
 workflow-type: tm+mt
-source-wordcount: '2701'
+source-wordcount: '2682'
 ht-degree: 0%
 
 ---
@@ -28,11 +28,11 @@ Hier zijn bepaalde belangrijke aandachtsgebieden waaromheen u prestatieproblemen
 
 ## Platform {#platform}
 
-Hoewel Experience Manager op een aantal platforms wordt ondersteund, heeft Adobe de grootste ondersteuning voor native gereedschappen op Linux en Windows gevonden. Dit levert optimale prestaties en vereenvoudigt de implementatie. In het ideale geval moet u een 64-bits besturingssysteem implementeren om te voldoen aan de hoge geheugenvereisten van een [!DNL Experience Manager Assets] implementatie. Net als bij elke Experience Manager-implementatie moet u TarMK waar mogelijk implementeren. Hoewel TarMK niet voorbij één enkele auteurinstantie kan schrapen, wordt het gevonden om beter te presteren dan MongoMK. U kunt TarMK-offloadinstanties toevoegen om de verwerkingskracht van de workflow voor uw [!DNL Experience Manager Assets] implementatie te verhogen.
+Hoewel Experience Manager op een aantal platforms wordt ondersteund, biedt Adobe de grootste ondersteuning voor native gereedschappen in Linux en Windows, waardoor de prestaties en de implementatie optimaal zijn. In het ideale geval moet u een 64-bits besturingssysteem implementeren om te voldoen aan de hoge geheugenvereisten van een [!DNL Experience Manager Assets] implementatie. Zoals met om het even welke plaatsing van de Experience Manager, zou u TarMK moeten uitvoeren waar mogelijk. Hoewel TarMK niet voorbij één enkele auteurinstantie kan schrapen, wordt het gevonden om beter te presteren dan MongoMK. U kunt TarMK-offloadinstanties toevoegen om de verwerkingskracht van de workflow voor uw [!DNL Experience Manager Assets] implementatie te verhogen.
 
 ### Tijdelijke map {#temp-folder}
 
-Om de uploadtijden van middelen te verbeteren, gebruik krachtige opslag voor de tijdelijke folder van Java. In Linux en Windows kan een RAM-station of SSD worden gebruikt. In cloudomgevingen kan een vergelijkbaar type snelle opslag worden gebruikt. In Amazon EC2 kan bijvoorbeeld een [tijdelijk station](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) worden gebruikt voor de tijdelijke map.
+Om de uploadtijden van middelen te verbeteren, gebruik krachtige opslag voor de tijdelijke folder van Java. In Linux en Windows kan een RAM-station of SSD worden gebruikt. In cloudomgevingen kan een vergelijkbaar type snelle opslag worden gebruikt. In Amazon EC2 kan bijvoorbeeld een [ephalefstation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) voor de tijdelijke map worden gebruikt.
 
 Ervan uitgaande dat de server over voldoende geheugen beschikt, configureert u een RAM-station. Voer in Linux de volgende opdrachten uit om een 8 GB RAM-station te maken:
 
@@ -45,7 +45,7 @@ mkfs -q /dev/ram1 800000
 
 In Windows OS gebruikt u een stuurprogramma van een andere fabrikant om een RAM-station te maken of gewoon krachtige opslagsystemen zoals SSD te gebruiken.
 
-Als het tijdelijke volume met hoge prestaties gereed is, stelt u de JVM-parameter in `-Djava.io.tmpdir`. U kunt bijvoorbeeld de JVM-parameter hieronder toevoegen aan de `CQ_JVM_OPTS` variabele in het `bin/start` script van [!DNLEExperience Manager]:
+Als het tijdelijke volume met hoge prestaties gereed is, stelt u de JVM-parameter in `-Djava.io.tmpdir`. U kunt bijvoorbeeld de JVM-parameter hieronder toevoegen aan de `CQ_JVM_OPTS` variabele in het `bin/start` script van [!DNL Experience Manager]:
 
 `-Djava.io.tmpdir=/mnt/aem-tmp`
 
@@ -53,7 +53,7 @@ Als het tijdelijke volume met hoge prestaties gereed is, stelt u de JVM-paramete
 
 ### Java-versie {#java-version}
 
-Voor optimale prestaties raadt Adobe u aan deze implementatie uit te voeren [!DNL Experience Manager Assets] in Java 8.
+Adobe raadt u aan Java 8 te gebruiken [!DNL Experience Manager Assets] voor optimale prestaties.
 
 <!-- TBD: Link to the latest official word around Java.
 -->
@@ -76,7 +76,7 @@ Het wordt aanbevolen de gegevensopslag te scheiden van de segmentopslag voor all
 
 ### De maximale grootte van de cache voor gebufferde afbeeldingen configureren {#configure-the-maximum-size-of-the-buffered-image-cache}
 
-Wanneer u grote hoeveelheden middelen uploadt naar [!DNLAAdobe Experience Manager], om onverwachte pieken in het geheugenverbruik mogelijk te maken en om te voorkomen dat JVM uitvalt met OutOfMemoryErrors, verlaagt u de geconfigureerde maximumgrootte van de cache voor gebufferde images. Bekijk een voorbeeld van een systeem met een maximale heap (- `Xmx`param) van 5 GB, een Oak BlobCache ingesteld op 1 GB en een documentcache ingesteld op 2 GB. In dit geval neemt de gebufferde cache maximaal 1,25 GB en geheugen in beslag, waardoor er slechts 0,75 GB geheugen overblijft voor onverwachte pieken.
+Wanneer u grote hoeveelheden assets uploadt naar [!DNL Adobe Experience Manager], om onverwachte pieken in geheugenverbruik mogelijk te maken en om te voorkomen dat JVM uitvalt met OutOfMemoryErrors, verlaagt u de geconfigureerde maximumgrootte van de cache voor gebufferde images. Bekijk een voorbeeld van een systeem met een maximale heap (- `Xmx`param) van 5 GB, een Oak BlobCache ingesteld op 1 GB en een documentcache ingesteld op 2 GB. In dit geval neemt de gebufferde cache maximaal 1,25 GB en geheugen in beslag, waardoor er slechts 0,75 GB geheugen overblijft voor onverwachte pieken.
 
 Vorm de als buffer opgetreden voor geheim voorgeheugengrootte in de Console van het Web OSGi. Stel de eigenschap in `https://host:port/system/console/configMgr/com.day.cq.dam.core.impl.cache.CQBufferedImageCache``cq.dam.image.cache.max.memory` bytes in. 1073741824 is bijvoorbeeld 1 GB (1024 x 1024 x 1024 = 1 GB).
 
@@ -88,7 +88,7 @@ Het uitvoeren van S3 of de Gedeelde Datastore van het Dossier kan helpen om schi
 
 ### S3-gegevensopslag {#s-data-store}
 
-Met de volgende S3 Data Store-configuratie ( `org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.cfg`) kon Adobe 12,8 TB binaire grote objecten (BLOB&#39;s) uitpakken uit een bestaande bestandsgegevensopslag naar een S3-gegevensopslag op een klantsite:
+De volgende S3 configuratie van de Opslag van Gegevens ( `org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.cfg`) hielp Adobe 12.8 TB binaire grote voorwerpen (BLOBs) uit een bestaande opslag van dossiergegevens in een S3 gegevensopslag bij een klantenplaats halen:
 
 ```conf
 accessKey=<snip>
@@ -113,12 +113,12 @@ accessKey=<snip>
 
 ## Netwerkoptimalisatie {#network-optimization}
 
-Adobe raadt u aan HTTPS in te schakelen omdat veel bedrijven firewalls hebben die HTTP-verkeer sluizen, wat het uploaden van bestanden negatief beïnvloedt en bestanden beschadigt. Bij grote bestanden uploaden dient u ervoor te zorgen dat gebruikers een bekabelde verbinding met het netwerk hebben omdat een WiFi-netwerk snel verzadigd raakt. Voor richtlijnen betreffende het identificeren van netwerkknelpunten, zie de het rangschikken van [Activa gids](/help/assets/assets-sizing-guide.md). Om netwerkprestaties te beoordelen door netwerktopologie te analyseren, zie de overwegingen [van het](/help/assets/assets-network-considerations.md)middelennetwerk.
+Adobe raadt aan HTTPS in te schakelen omdat veel bedrijven firewalls hebben die HTTP-verkeer sluizen, wat het uploaden van bestanden negatief beïnvloedt en bestanden beschadigt. Bij grote bestanden uploaden dient u ervoor te zorgen dat gebruikers een bekabelde verbinding met het netwerk hebben omdat een WiFi-netwerk snel verzadigd raakt. Voor richtlijnen betreffende het identificeren van netwerkknelpunten, zie de het rangschikken van [Activa gids](/help/assets/assets-sizing-guide.md). Om netwerkprestaties te beoordelen door netwerktopologie te analyseren, zie de overwegingen [van het](/help/assets/assets-network-considerations.md)middelennetwerk.
 
-Primair, hangt uw strategie van de netwerkoptimalisering van de hoeveelheid beschikbare bandbreedte en de lading op uw instantie van de Manager [!DNLEvan de] ervaring af. De gemeenschappelijke configuratieopties, met inbegrip van firewalls of volmachten kunnen helpen netwerkprestaties verbeteren. Hier volgen enkele belangrijke punten:
+Primair, hangt uw strategie van de netwerkoptimalisering van de hoeveelheid beschikbare bandbreedte en de lading op uw [!DNL Experience Manager] instantie af. De gemeenschappelijke configuratieopties, met inbegrip van firewalls of volmachten kunnen helpen netwerkprestaties verbeteren. Hier volgen enkele belangrijke punten:
 
-* Afhankelijk van het instantietype (klein, matig, groot), moet u ervoor zorgen dat u voldoende netwerkbandbreedte hebt voor uw Experience Manager-instantie. De adequate bandbreedtetoewijzing is vooral belangrijk als de Manager [!DNLEvan de] ervaring op AWS wordt ontvangen.
-* Als uw [!DNLEinstantie van de Manager] van de Ervaring op AWS wordt ontvangen, kunt u profiteren door een veelzijdig het schrapen beleid te hebben. De instantie vergroten als gebruikers een hoge belasting verwachten. Downsize het voor matige/lage lading.
+* Afhankelijk van uw instantietype (klein, gematigd, groot), zorg ervoor dat u voldoende netwerkbandbreedte voor uw instantie van de Experience Manager hebt. De adequate bandbreedtetoewijzing is vooral belangrijk als op AWS [!DNL Experience Manager] wordt ontvangen.
+* Als uw [!DNL Experience Manager] instantie op AWS wordt gehost, kunt u profiteren van een veelzijdig schalingsbeleid. De instantie vergroten als gebruikers een hoge belasting verwachten. Downsize het voor matige/lage lading.
 * HTTPS: De meeste gebruikers hebben firewalls die het verkeer van HTTP snuffelen, wat het uploaden van dossiers of zelfs corrupte dossiers tijdens het uploaden negatief kan beïnvloeden.
 * Grote bestanden uploaden: Zorg ervoor dat gebruikers een bekabelde verbinding met het netwerk hebben (WiFi-verbindingen verzadigen snel).
 
@@ -128,7 +128,7 @@ Primair, hangt uw strategie van de netwerkoptimalisering van de hoeveelheid besc
 
 Stel waar mogelijk de [!UICONTROL DAM Update Asset] workflow in op Overgang. De instelling verlaagt aanzienlijk de overheadkosten die nodig zijn voor het verwerken van workflows, omdat workflows in dit geval niet door de normale tracking- en archiveringsprocessen hoeven te gaan.
 
-1. Navigeer naar `/miscadmin` in de plaatsing van de Manager [!DNLEvan de] Ervaring bij `https://[aem_server]:[port]/miscadmin`.
+1. Navigeer aan `/miscadmin` in de [!DNL Experience Manager] plaatsing bij `https://[aem_server]:[port]/miscadmin`.
 
 1. Vouw uit **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]** > **[!UICONTROL dam]**.
 
@@ -144,17 +144,17 @@ Als er geen tijdelijke workflows kunnen worden gebruikt, voert u de workflow reg
 
 Doorgaans voert u de werkstromen wekelijks uit. Nochtans, in middel-intensieve scenario&#39;s, zoals tijdens brede activaopname, kunt u het vaker uitvoeren.
 
-Om werkschemazuivering te vormen, voeg een nieuwe configuratie van de Woorden van het Werkschema van Adobe Granite door de console OSGi toe. Vervolgens configureert en plant u de workflow als onderdeel van het wekelijkse onderhoudsvenster.
+Om werkschemazuivering te vormen, voeg een nieuwe Adobe Granite configuratie van de Wrijving van het Werkschema door de console OSGi toe. Vervolgens configureert en plant u de workflow als onderdeel van het wekelijkse onderhoudsvenster.
 
 Als het leegmaken te lang duurt, is het wel even. Daarom dient u ervoor te zorgen dat uw reinigingstaken zijn voltooid om situaties te voorkomen waarin het leegmaken van werkstromen mislukt vanwege het grote aantal werkstromen.
 
-Bijvoorbeeld, na het uitvoeren van talrijke niet-voorbijgaande werkschema&#39;s (die tot de knopen van de werkschemainstantie leidt), kunt u het Werkschema van [ACS AEM Commons Remover](https://adobe-consulting-services.github.io/acs-aem-commons/features/workflow-remover.html) op een ad hoc basis uitvoeren. Het verwijdert overbodige, voltooide workflowexemplaren direct in plaats van te wachten tot de Adobe Granite Workflow Purge-planner wordt uitgevoerd.
+Bijvoorbeeld, na het uitvoeren van talrijke niet-voorbijgaande werkschema&#39;s (die tot de knopen van de werkschemainstantie leidt), kunt u [ACS AEM de Werkstroom van de Commons Remover](https://adobe-consulting-services.github.io/acs-aem-commons/features/workflow-remover.html) op een ad hoc basis uitvoeren. Het verwijdert overtollige, voltooide werkschemainstanties onmiddellijk eerder dan het wachten op de Adobe Granite planner van de Wrijving van het Werkschema van de.
 
 ### Maximumaantal parallelle banen {#maximum-parallel-jobs}
 
-In [!DNLEExperience Manager] wordt standaard een maximumaantal parallelle taken uitgevoerd dat gelijk is aan het aantal processors op de server. Het probleem met deze instelling is dat tijdens perioden van zware belasting alle processors in beslag worden genomen door [!UICONTROL DAM Update Asset] workflows, waardoor de reactiesnelheid van de gebruikersinterface wordt vertraagd en wordt voorkomen dat [!DNLEervaringsbeheer] andere processen uitvoert die de prestaties en stabiliteit van de server garanderen. U kunt deze waarde als een goede praktijk instellen op de helft van de processors die beschikbaar zijn op de server door de volgende stappen uit te voeren:
+Standaard wordt [!DNL Experience Manager] een maximumaantal parallelle taken uitgevoerd dat gelijk is aan het aantal processors op de server. Het probleem met deze instelling is dat tijdens perioden van zware belasting alle processors in beslag worden genomen door [!UICONTROL DAM Update Asset] workflows, waardoor de reactiesnelheid van de gebruikersinterface wordt vertraagd en wordt voorkomen dat [!DNLEervaringsbeheer] andere processen uitvoert die de prestaties en stabiliteit van de server waarborgen. U kunt deze waarde als een goede praktijk instellen op de helft van de processors die beschikbaar zijn op de server door de volgende stappen uit te voeren:
 
-1. Op de Auteur van de Manager van de [!DNLEervaring] , toegang `https://[aem_server]:[port]/system/console/slingevent`.
+1. Ga naar [!DNL Experience Manager] Auteur `https://[aem_server]:[port]/system/console/slingevent`.
 
 1. Klik **[!UICONTROL Edit]** op elke werkschemarij die voor uw implementatie relevant is, bijvoorbeeld **[!UICONTROL Granite Transient Workflow Queue]**.
 
@@ -164,9 +164,9 @@ Het instellen van een wachtrij op de helft van de beschikbare processors is een 
 
 ### DAM Update Asset Configuration {#dam-update-asset-configuration}
 
-Het [!UICONTROL DAM Update Asset] werkschema bevat een volledige reeks stappen die voor taken, zoals de generatie van Scene7 PTIFF en [!DNL Adobe InDesign Server] integratie worden gevormd. Het is echter mogelijk dat de meeste gebruikers niet meerdere van deze stappen nodig hebben. Adobe raadt u aan een aangepaste kopie van het [!UICONTROL DAM Update Asset] workflowmodel te maken en overbodige stappen te verwijderen. Werk in dit geval de draagraketten bij zodat deze [!UICONTROL DAM Update Asset] naar het nieuwe model verwijzen.
+De [!UICONTROL DAM Update Asset] workflow bevat een volledige reeks stappen die zijn geconfigureerd voor taken, zoals het genereren en [!DNL Adobe InDesign Server] integreren van Scene7 PTIFF. Het is echter mogelijk dat de meeste gebruikers niet meerdere van deze stappen nodig hebben. Adobe raadt u aan een aangepaste kopie van het [!UICONTROL DAM Update Asset] workflowmodel te maken en overbodige stappen te verwijderen. Werk in dit geval de draagraketten bij zodat deze [!UICONTROL DAM Update Asset] naar het nieuwe model verwijzen.
 
-Als u de [!UICONTROL DAM Update Asset] workflow intensief uitvoert, kan de bestandsdatatastore aanzienlijk groter worden. De resultaten van een door Adobe uitgevoerd experiment hebben aangetoond dat de grootte van de datastore met ongeveer 400 GB kan toenemen als binnen 8 uur ongeveer 5500 workflows worden uitgevoerd.
+Als u de [!UICONTROL DAM Update Asset] workflow intensief uitvoert, kan de bestandsdatatastore aanzienlijk groter worden. De resultaten van een door Adobe uitgevoerd experiment hebben aangetoond dat de datastore-grootte met ongeveer 400 GB kan toenemen als binnen 8 uur ongeveer 5500 workflows worden uitgevoerd.
 
 Het is een tijdelijke verhoging, en datastore wordt hersteld aan zijn originele grootte nadat u de taak van de datastore huisvuilinzameling in werking stelt.
 
@@ -176,15 +176,15 @@ Als u een beperkte schijfruimte hebt en [!UICONTROL DAM Update Asset] werkschema
 
 #### Genereren van uitvoering bij uitvoering {#runtime-rendition-generation}
 
-Klanten gebruiken afbeeldingen van verschillende grootten en indelingen op hun website of voor distributie aan zakelijke partners. Omdat elke uitvoering de afdruk van het middel in de opslagplaats vergroot, raadt Adobe u aan deze functie zorgvuldig te gebruiken. Om de hoeveelheid bronnen te verminderen die nodig is om afbeeldingen te verwerken en op te slaan, kunt u deze afbeeldingen tijdens runtime genereren in plaats van als uitvoeringen tijdens het opnemen.
+Klanten gebruiken afbeeldingen van verschillende grootten en indelingen op hun website of voor distributie aan zakelijke partners. Aangezien elke uitvoering de afdruk van het middel in de opslagplaats vergroot, raadt Adobe u aan deze functie zorgvuldig te gebruiken. Om de hoeveelheid bronnen te verminderen die nodig is om afbeeldingen te verwerken en op te slaan, kunt u deze afbeeldingen tijdens runtime genereren in plaats van als uitvoeringen tijdens het opnemen.
 
 Vele klanten van Plaatsen voeren een beeldservlet uit die resizes en teelten beelden op het ogenblik zij worden gevraagd, wat extra lading aan de publicatieinstantie oplegt. Maar zolang deze afbeeldingen in het cachegeheugen kunnen worden opgeslagen, kan de uitdaging worden beperkt.
 
-Een alternatieve benadering is Scene7-technologie te gebruiken om beeldmanipulatie volledig uit te schakelen. Daarnaast kunt u Brand Portal implementeren dat niet alleen taken voor het genereren van vertoningen overneemt van de infrastructuur van [!DNLEExperience Manager] , maar ook de volledige publicatielaag.
+Een andere manier is om Scene7-technologie te gebruiken om beeldmanipulatie volledig uit te schakelen. Daarnaast kunt u Brand Portal implementeren dat niet alleen taken voor het genereren van vertoningen overneemt van de [!DNL Experience Manager] infrastructuur, maar ook de volledige publicatielaag.
 
 #### ImageMagick {#imagemagick}
 
-Als u de [!UICONTROL DAM Update Asset] workflow aanpast om uitvoeringen te genereren met ImageMagick, raadt Adobe u aan het `policy.xml` bestand op `/etc/ImageMagick/`. Standaard gebruikt ImageMagick de volledige beschikbare schijfruimte op het volume van het besturingssysteem en het beschikbare geheugen. Breng de volgende configuratieveranderingen binnen de `policymap` sectie van `policy.xml` aan om deze middelen te beperken.
+Als u de [!UICONTROL DAM Update Asset] workflow aanpast om uitvoeringen te genereren met ImageMagick, raadt Adobe u aan het `policy.xml` bestand bij te wijzigen `/etc/ImageMagick/`. Standaard gebruikt ImageMagick de volledige beschikbare schijfruimte op het volume van het besturingssysteem en het beschikbare geheugen. Breng de volgende configuratieveranderingen binnen de `policymap` sectie van `policy.xml` aan om deze middelen te beperken.
 
 ```xml
 <policymap>
@@ -211,33 +211,33 @@ Stel bovendien het pad van de tijdelijke map van ImageMagick in het `configure.x
 >
 >De `policy.xml` dossiers ImageMagick en `configure.xml` zijn beschikbaar bij `/usr/lib64/ImageMagick-&#42;/config/` in plaats van `/etc/ImageMagick/`.Zie [documentatie](https://www.imagemagick.org/script/resources.php) ImageMagick voor plaats van de configuratiedossiers.
 
-Als u [!DNL Experience Manager] op Adobe Managed Services (AMS) gebruikt, neemt u contact op met de klantenservice van Adobe als u van plan bent een groot aantal grote PSD- of PSB-bestanden te verwerken. Werk samen met de vertegenwoordiger van de klantendienst van Adobe om deze beste praktijken voor uw plaatsing van AMS uit te voeren en de best mogelijke hulpmiddelen en de modellen voor merkgebonden formaten van Adobe te kiezen. [!DNL Experience Manager] PSB-bestanden met een zeer hoge resolutie die groter zijn dan 30000 x 23000 pixels, worden mogelijk niet verwerkt.
+Als u Adobe Managed Services (AMS) gebruikt, neemt u contact op met de klantenservice van Adobe als u van plan bent een groot aantal grote PSD- of PSB-bestanden te verwerken. [!DNL Experience Manager] Werk samen met de Adobe Care-vertegenwoordiger om deze best practices te implementeren voor uw AMS-implementatie en om de best mogelijke tools en modellen voor de bedrijfseigen indelingen van de Adobe te kiezen. [!DNL Experience Manager] PSB-bestanden met een zeer hoge resolutie die groter zijn dan 30000 x 23000 pixels, worden mogelijk niet verwerkt.
 
-### XMP-schrijfback {#xmp-writeback}
+### XMP {#xmp-writeback}
 
-Met XMP-schrijfback wordt het oorspronkelijke element bijgewerkt wanneer metagegevens worden gewijzigd in [!DNL Experience Manager]. Dit resulteert in het volgende:
+XMP writeback werkt het oorspronkelijke element bij wanneer metagegevens worden gewijzigd in. Dit resulteert in [!DNL Experience Manager]het volgende:
 
 * Het element zelf wordt gewijzigd
 * Er wordt een versie van het element gemaakt
 * [!UICONTROL DAM Update Asset] wordt uitgevoerd met het element
 
-De vermelde resultaten verbruiken aanzienlijke middelen. Daarom raadt Adobe aan om de functie voor het terugdraaien [van XMP uit te](https://helpx.adobe.com/experience-manager/kb/disable-xmp-writeback.html)schakelen als dit niet verplicht is.
+De vermelde resultaten verbruiken aanzienlijke middelen. Daarom adviseert Adobe [onbruikbaar makend XMP Terugschrijven](https://helpx.adobe.com/experience-manager/kb/disable-xmp-writeback.html), als het niet wordt vereist.
 
-Het invoeren van een grote hoeveelheid meta-gegevens kan in middel-intensieve kringactiviteit resulteren XMP als de loopwerkstroomvlag wordt gecontroleerd. Plan zo&#39;n import tijdens het gebruik van een slanke server, zodat de prestaties voor andere gebruikers niet worden beïnvloed.
+Het invoeren van een grote hoeveelheid meta-gegevens kan in middel-intensieve XMP terugzetactiviteit resulteren als de loopwerkstroomvlag wordt gecontroleerd. Plan zo&#39;n import tijdens het gebruik van een slanke server, zodat de prestaties voor andere gebruikers niet worden beïnvloed.
 
 ## Replicatie {#replication}
 
-Als u elementen wilt repliceren naar een groot aantal publicatie-instanties, bijvoorbeeld in een Sites-implementatie, raadt Adobe u aan kettingreplicatie te gebruiken. In dit geval dupliceert de auteurinstantie naar één enkel publicatiegeval dat beurtelings aan andere publicatieinstanties herhaalt, die de auteursinstantie vrijmaken.
+Bij het repliceren van activa aan een groot aantal publiceer instanties, bijvoorbeeld in een implementatie van Plaatsen, adviseert Adobe u kettingreplicatie te gebruiken. In dit geval dupliceert de auteurinstantie naar één enkel publicatiegeval dat beurtelings aan andere publiceert instanties herhaalt, die de auteursinstantie vrijmaken.
 
 ### Kettingreplicatie configureren {#configure-chain-replication}
 
 1. Bepaal op welke publicatie-instantie u de replicaties wilt koppelen
-1. Op die publicatieinstantie voegt replicatieagenten toe die aan andere publicatieinstanties richten
+1. Op die publicatieinstantie voeg replicatieagenten toe die aan andere publicatieinstanties richten
 1. Schakel op elk van die replicatieagents &quot;Bij ontvangst&quot; in op het tabblad &quot;Triggers&quot;
 
 >[!NOTE]
 >
->Adobe raadt automatische activering van elementen niet aan. Indien nodig raadt Adobe u echter aan dit als de laatste stap in een workflow te doen, meestal DAM Update Asset.
+>Adobe beveelt geen automatische activering van elementen aan. Indien nodig raadt Adobe u echter aan dit als de laatste stap in een workflow te doen, meestal DAM Update Asset.
 
 ## Zoekindexen {#search-indexes}
 
@@ -280,7 +280,7 @@ Stel voor elke [!DNL Experience Manager] implementatie een systeem voor het test
 Voor alle kwesties van netwerkprestaties van de klant, voer de volgende taken uit:
 
 * De netwerkprestaties van de test van binnen het klantennetwerk
-* Test de netwerkprestaties vanuit het Adobe-netwerk. Voor klanten van AMS, werk met uw CSE om van binnen het netwerk van Adobe te testen.
+* De netwerkprestaties van de test van binnen het netwerk van Adobe. Voor klanten van AMS, werk met uw CSE om van binnen het netwerk van Adobe te testen.
 * De netwerkprestaties van de test van een ander toegangspunt
 * Door een hulpmiddel van de netwerkbenchmark te gebruiken
 * Testen tegen de verzender
@@ -299,7 +299,7 @@ Om latentie te minimaliseren en hoge productie door efficiënt gebruik van cpu e
 * Implementeer in Java 8.
 * Stel optimale JVM-parameters in.
 * Configureer een FileSystem DataStore of een S3-gegevensopslag.
-* Genereren van subelementen uitschakelen. Als deze optie is ingeschakeld, maakt de workflow van AEM een afzonderlijk element voor elke pagina in een element van meerdere pagina&#39;s. Elk van deze pagina&#39;s is een individueel middel dat extra schijfruimte verbruikt, versioning, en extra werkschemaverwerking vereist. Als u geen afzonderlijke pagina&#39;s nodig hebt, schakelt u het genereren van subelementen en het uitnemen van pagina&#39;s uit.
+* Genereren van subelementen uitschakelen. Als deze optie is ingeschakeld, maakt AEM workflow een afzonderlijk element voor elke pagina in een element van meerdere pagina&#39;s. Elk van deze pagina&#39;s is een individueel middel dat extra schijfruimte verbruikt, versioning, en extra werkschemaverwerking vereist. Als u geen afzonderlijke pagina&#39;s nodig hebt, schakelt u het genereren van subelementen en het uitnemen van pagina&#39;s uit.
 * Schakel tijdelijke workflows in.
 * Stem de wachtrijen voor de Granite-workflow af om gelijktijdige taken te beperken.
 * Vorm [!DNL ImageMagick] om middelverbruik te beperken.

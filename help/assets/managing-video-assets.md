@@ -3,9 +3,9 @@ title: Video-elementen beheren in [!DNL Adobe Experience Manager].
 description: Video-elementen uploaden, voorvertonen, notities aanbrengen en publiceren in [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 268689d534f8bf649335269f9169455c381f9554
+source-git-commit: 93b8fccc2a0c4663104150fdba3651ff5e4f6bbc
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '728'
 ht-degree: 7%
 
 ---
@@ -15,14 +15,14 @@ ht-degree: 7%
 
 De video-indeling is een essentieel onderdeel van digitale middelen van een organisatie. [!DNL Adobe Experience Manager] biedt geavanceerde aanbiedingen en functies om de volledige levenscyclus van uw video-elementen te beheren nadat deze zijn gemaakt.
 
-Leer hoe u de video-elementen in beheert en bewerkt [!DNL Adobe Experience Manager Assets]. Raadpleeg ook de documentatie bij [!DNL Dynamic Media]video over [](/help/assets/video.md)dynamische media als u een gebruikslicentie hebt.
+Leer hoe u de video-elementen in beheert en bewerkt [!DNL Adobe Experience Manager Assets]. Codering en transcodering van video, bijvoorbeeld MPEG-transcodering, is mogelijk door [!DNL Dynamic Media] integratie.
 
 ## Video-elementen uploaden en voorvertonen {#upload-and-preview-video-assets}
 
 [!DNL Adobe Experience Manager Assets] Hiermee genereert u voorvertoningen voor video-elementen met de extensie MP4. Als de indeling van het element niet MP4 is, installeert u het MPEG-pakket om een voorvertoning te genereren. MPEG maakt video-uitvoeringen van het type OGG en MP4. U kunt een voorvertoning van de uitvoeringen weergeven in de [!DNL Assets] gebruikersinterface.
 
 1. Navigeer in de map met digitale elementen of in de submappen naar de locatie waar u digitale elementen wilt toevoegen.
-1. Als u het element wilt uploaden, klikt u op **[!UICONTROL Create]** de werkbalk en kiest u **[!UICONTROL Files]**. U kunt het ook rechtstreeks in het gebied met elementen neerzetten. Zie Elementen [](managing-assets-touch-ui.md#uploading-assets) uploaden voor meer informatie over het uploaden.
+1. Als u het element wilt uploaden, klikt u op **[!UICONTROL Create]** de werkbalk en kiest u **[!UICONTROL Files]**. U kunt ook een bestand naar de gebruikersinterface slepen. Zie [Elementen](managing-assets-touch-ui.md#uploading-assets) uploaden voor meer informatie.
 1. Als u een voorvertoning van een video wilt weergeven in de Kaart-weergave, klikt u op de optie voor het **[!UICONTROL Play]** afspelen ![](assets/do-not-localize/play.png) van het video-element. U kunt video alleen in de kaartweergave pauzeren of afspelen. De opties [!UICONTROL Play] en [!UICONTROL Pause] zijn niet beschikbaar in de lijstweergave.
 
 1. Klik op de kaart om een voorvertoning van de video weer te geven op de pagina met elementdetails. **[!UICONTROL Edit]** De video wordt afgespeeld in de native videospeler van de browser. U kunt de video afspelen, pauzeren, het volume bepalen en op het volledige scherm in- of uitzoomen.
@@ -71,13 +71,11 @@ Na publicatie kunt u de video-elementen in een webpagina opnemen als een URL of 
 
 ## Video-elementen notities aanbrengen {#annotate-video-assets}
 
-1. Klik in de [!DNL Assets] console op [!UICONTROL Edit] de elementenkaart om de pagina met elementdetails weer te geven.
-1. Klik op [!UICONTROL Preview]om de video af te spelen.
-1. Klik op de **[!UICONTROL Annotate]** knop om de video een annotatie te geven. Er wordt een aantekening toegevoegd op het specifieke tijdstip (frame) in de video. Wanneer u notities maakt, kunt u op het canvas tekenen en een opmerking bij de tekening opnemen. Opmerkingen worden automatisch opgeslagen.
+1. Selecteer in de [!DNL Assets] console **[!UICONTROL Edit]** op de elementenkaart om de pagina met elementdetails weer te geven.
+1. Klik op **[!UICONTROL Preview]** om de video af te spelen.
+1. Klik op **[!UICONTROL Annotate]** de video als u deze wilt annoteren. Er wordt een aantekening toegevoegd op het specifieke tijdstip (frame) in de video. Wanneer u notities maakt, kunt u op het canvas tekenen en een opmerking bij de tekening opnemen. Opmerkingen worden automatisch opgeslagen. Klik op de knop **[!UICONTROL Close]** om de wizard Annotatie af te sluiten.
 
    ![Tekenen en notities aanbrengen in een videoframe](assets/annotate-video.png)
-
-   Klik op de knop **[!UICONTROL Close]** om de wizard Annotatie af te sluiten.
 
 1. Zoek naar een specifiek punt in de video, geef de tijd in seconden op in het veld voor **tekst** en klik op **Springen**. Als u bijvoorbeeld de eerste 20 seconden van de video wilt overslaan, voert u 20 in het tekstveld in.
 
@@ -91,4 +89,5 @@ Na publicatie kunt u de video-elementen in een webpagina opnemen als een URL of 
 >
 >* [Digitale middelen beheren in Experience Manager Assets](/help/assets/managing-assets-touch-ui.md)
 >* [Verzamelingen beheren in Experience Managers](/help/assets/managing-collections-touch-ui.md)
+>* [Dynamische mediavideodocumentatie](/help/assets/video.md).
 

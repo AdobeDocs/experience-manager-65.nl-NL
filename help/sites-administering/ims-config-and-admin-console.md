@@ -1,8 +1,8 @@
 ---
-title: Adobe IMS-verificatie en [!DNL Admin Console]-ondersteuning voor door AEM beheerde services
-seo-title: Adobe IMS-verificatie en [!DNL Admin Console]-ondersteuning voor door AEM beheerde services
-description: Leer hoe u de [!DNL Admin Console] in AEM gebruikt.
-seo-description: Leer hoe u de [!DNL Admin Console] in AEM gebruikt.
+title: Adobe IMS-verificatie [!DNL Admin Console] en -ondersteuning voor AEM Managed Services
+seo-title: Adobe IMS-verificatie [!DNL Admin Console] en -ondersteuning voor AEM Managed Services
+description: Leer hoe u de Admin Console [!DNL] in AEM gebruikt.
+seo-description: Leer hoe u de Admin Console [!DNL] in AEM gebruikt.
 uuid: 3f5b32c7-cf62-41a4-be34-3f71bbf224eb
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,12 +10,15 @@ topic-tags: Security
 content-type: reference
 discoiquuid: f6112dea-a1eb-4fd6-84fb-f098476deab7
 translation-type: tm+mt
-source-git-commit: a9931024f5cd79e2e363ed46edaef5e3e66c6e14
+source-git-commit: 5a421c66930d8c7a9eb633c707b4b51d4549b303
+workflow-type: tm+mt
+source-wordcount: '1730'
+ht-degree: 10%
 
 ---
 
 
-# Verificatie en [!DNL Admin Console] ondersteuning van Adobe IMS voor door AEM beheerde services {#adobe-ims-authentication-and-admin-console-support-for-aem-managed-services}
+# Adobe IMS-verificatie en [!DNL Admin Console] ondersteuning voor AEM Managed Services {#adobe-ims-authentication-and-admin-console-support-for-aem-managed-services}
 
 >[!NOTE]
 >
@@ -23,25 +26,25 @@ source-git-commit: a9931024f5cd79e2e363ed46edaef5e3e66c6e14
 
 ## Inleiding {#introduction}
 
-AEM 6.4.3.0 introduceert [!DNL Admin Console] ondersteuning voor AEM-instanties en verificatie op basis van Adobe IMS (Identity Management System) voor klanten van **AEM Managed Services** .
+AEM 6.4.3.0 introduceert [!DNL Admin Console] steun voor AEM instanties en Adobe IMS (het Systeem van Identity Management) gebaseerde authentificatie voor **AEM klanten van Managed Services** .
 
-Met AEM-toegang tot de service kunnen klanten van AEM Managed Services alle Experience Cloud-gebruikers in één console beheren. [!DNL Admin Console] Gebruikers en groepen kunnen worden toegewezen aan productprofielen die aan AEM-instanties zijn gekoppeld, zodat zij zich kunnen aanmelden bij een specifieke instantie.
+AEM aan boord gaan aan [!DNL Admin Console] zal AEM klanten van Managed Services toestaan om alle Experience Cloud gebruikers in één console te beheren. Gebruikers en groepen kunnen worden toegewezen aan productprofielen die aan AEM instanties zijn gekoppeld, zodat zij zich kunnen aanmelden bij een specifieke instantie.
 
 ## Belangrijkste kenmerken {#key-highlights}
 
-* AEM IMS-verificatieondersteuning is alleen bedoeld voor AEM-auteurs, -beheerders of -ontwikkelaars, niet voor externe eindgebruikers van de site van de klant, zoals sitebezoekers
-* De [!DNL Admin Console] klant van de Beheerde Diensten van AEM zal als organisaties IMS en hun Instanties als Contexten van het Product vertegenwoordigen. Systeem- en productbeheerders van klanten kunnen de toegang tot instanties beheren
-* De Beheerde Diensten van AEM zullen klantentopologieën met de [!DNL Admin Console]. Er zal één geval van het Context van het Product van de Diensten van AEM Beheerde per Instantie in de [!DNL Admin Console].
+* AEM IMS-verificatieondersteuning is alleen bedoeld voor AEM-auteurs, -beheerders of -ontwikkelaars, niet voor externe eindgebruikers van de site zoals sitebezoekers
+* De klant [!DNL Admin Console] zal AEM klanten van Managed Services als organisaties IMS en hun Instanties als Contexten van het Product vertegenwoordigen. Systeem- en productbeheerders van klanten kunnen de toegang tot instanties beheren
+* AEM Managed Services zal de topologieën van de klant met [!DNL Admin Console]. Er zal één geval van AEM het Context van het Product van Managed Services per Instantie in de [!DNL Admin Console]. zijn
 * Product Profiles in [!DNL Admin Console] will determine which instances a user can access
 * Federatieve verificatie met behulp van eigen SAML 2-compatibele identiteitsproviders van klanten wordt ondersteund
-* Alleen Enterprise- of federatieve id&#39;s (voor Single Sign-On van klant) worden ondersteund, niet persoonlijke Adobe-id&#39;s.
-* [!DNL User Management]( in Adobe [!DNL Admin Console]) blijven eigendom van de klantenbeheerders.
+* Alleen Enterprise- of federatieve id&#39;s (voor Single Sign-On van klant) worden ondersteund, geen persoonlijke Adobe-id&#39;s.
+* [!DNL User Management] (in Adobe [!DNL Admin Console]) blijven eigendom van de beheerders van de klant.
 
 ## Architectuur {#architecture}
 
-IMS-verificatie werkt met behulp van het OAuth-protocol tussen AEM en het Adobe IMS-eindpunt. Zodra een gebruiker aan IMS is toegevoegd en een Adobe ID heeft, kan deze zich aanmelden bij AEM Managed Services-instanties met IMS-referenties.
+IMS de Authentificatie werkt door het protocol OAuth tussen AEM en het eindpunt van Adobe IMS te gebruiken. Zodra een gebruiker aan IMS is toegevoegd en een Adobe ID heeft, kan deze zich aanmelden bij AEM Managed Services-instanties met IMS-referenties.
 
-De gebruikerslogin stroom wordt hieronder getoond, zal de gebruiker aan IMS en facultatief aan klant IDP voor bevestiging van SSO worden opnieuw gericht en dan terug naar AEM.
+De gebruikerslogin stroom wordt hieronder getoond, zal de gebruiker aan IMS en naar keuze aan klant IDP voor bevestiging van SSO worden opnieuw gericht en dan terug naar AEM.
 
 ![image2018-9-23_23-55-8](assets/image2018-9-23_23-55-8.png)
 
@@ -51,7 +54,7 @@ De gebruikerslogin stroom wordt hieronder getoond, zal de gebruiker aan IMS en f
 
 The customer onboarding to [!DNL Admin Console] is a pre-requisite to using Adobe IMS for AEM authentication.
 
-Als eerste stap moeten klanten beschikken over een organisatie die is ingericht in Adobe IMS. Adobe Enterprise-klanten worden vertegenwoordigd als IMS-organisaties in de [Adobe [!DNL Admin Console]](https://helpx.adobe.com/enterprise/using/admin-console.html).
+Als eerste stap, zouden de klanten een Organisatie moeten hebben die in Adobe IMS wordt voorzien. Adobe Enterprise-klanten worden vertegenwoordigd als IMS-organisaties in de [Adobe [!DNL Admin Console]](https://helpx.adobe.com/nl/enterprise/using/admin-console.html).
 
 AEM Managed Services customers should already have an organization provisioned, and as part of the IMS provisioning, the customer instances will be made available in the [!DNL Admin Console] for managing user entitlements and access.
 
@@ -62,18 +65,18 @@ Zodra een klant als IMS Organisatie bestaat en AMS met levering van de klant voo
 ![image2018-9-23_23-33-25](assets/image2018-9-23_23-33-25.png)
 
 1. The designated System Admin receives an invite to log in to the [!DNL Admin Console]
-1. System Admin beweert Domain om de eigendom van het domein te bevestigen (in dit voorbeeld acme.com)
+1. System Admin eist Domain om de eigendom van het domein te bevestigen (in dit voorbeeld acme.com)
 1. Systeembeheer stelt gebruikersmappen in
 1. Systeembeheerder configureert de Identiteitsprovider (IDP) in de [!DNL Admin Console] installatie van SSO.
-1. De AEM-beheerder beheert de lokale groepen, machtigingen en bevoegdheden op de gebruikelijke wijze. Zie Synchronisatie van gebruikers en groepen
+1. De AEM Admin beheert de lokale groepen, de toestemmingen en de voorrechten zoals gebruikelijk. Zie Synchronisatie van gebruikers en groepen
 
 >[!NOTE]
 >
->Zie het artikel [deze pagina voor meer informatie over de basisbeginselen van Adobe Identity Management, inclusief de IDP-configuratie.](https://helpx.adobe.com/enterprise/using/set-up-identity.html)
+>Zie het artikel [deze pagina voor meer informatie over de Adobe Identity Management Basics, inclusief de IDP-configuratie.](https://helpx.adobe.com/nl/enterprise/using/set-up-identity.html)
 >
->Voor meer informatie over het Beleid van de Onderneming en [!DNL Admin Console] zie het artikel [deze pagina](https://helpx.adobe.com/enterprise/managing/user-guide.html).
+>Voor meer informatie over het Beleid van de Onderneming en [!DNL Admin Console] zie het artikel [deze pagina](https://helpx.adobe.com/nl/enterprise/managing/user-guide.html).
 
-### Gebruikers aan boord nemen voor de [!DNL Admin Console]{#onboarding-users-to-the-admin-console}
+### Gebruikers aan boord nemen van [!DNL Admin Console] {#onboarding-users-to-the-admin-console}
 
 Er zijn drie manieren aan boord van gebruikers afhankelijk van de grootte van de klant en hun voorkeur:
 
@@ -83,9 +86,9 @@ Er zijn drie manieren aan boord van gebruikers afhankelijk van de grootte van de
 
 #### Manual Addition through [!DNL Admin Console] UI {#manual-addition-through-admin-console-ui}
 
-Users and Groups can be manually created in the [!DNL Admin Console] UI. Deze methode kan worden gebruikt als ze niet over een groot aantal gebruikers beschikken om te beheren. Bijvoorbeeld een aantal van minder dan 50 AEM-gebruikers.
+Users and Groups can be manually created in the [!DNL Admin Console] UI. Deze methode kan worden gebruikt als ze niet over een groot aantal gebruikers beschikken om te beheren. Bijvoorbeeld een aantal van minder dan 50 AEM gebruikers.
 
-Gebruikers kunnen ook handmatig worden gemaakt als de klant deze methode al gebruikt voor het beheer van andere Adobe-producten, zoals Analytics, Target of Creative Cloud.
+Gebruikers kunnen ook handmatig worden gemaakt als de klant deze methode al gebruikt voor het beheer van andere Adobe-producten, zoals Analytics-, Target- of Creative Cloud-toepassingen.
 
 ![image2018-9-23_20-39-9](assets/image2018-9-23_20-39-9.png)
 
@@ -97,7 +100,7 @@ Voor een eenvoudige afhandeling van het maken van gebruikers kan een CSV-bestand
 
 #### User Sync Tool {#user-sync-tool}
 
-Met het hulpprogramma voor gebruikerssynchronisatie (UST in het kort) kunnen zakelijke klanten Adobe-gebruikers maken of beheren met Active Directory of andere geteste OpenLDAP-directoryservices. De doelgebruikers zijn de Beheerders van de Identiteit van IT (de Folder van de Onderneming en de Beheerders van het Systeem) die het hulpmiddel zullen kunnen installeren en vormen. Het opensource-programma kan worden aangepast, zodat klanten het kunnen aanpassen aan hun eigen specifieke vereisten.
+Met het Hulpprogramma voor gebruikerssynchronisatie (UST in het kort) kunnen zakelijke klanten Adobe-gebruikers maken of beheren met Active Directory of andere geteste OpenLDAP-directoryservices. De doelgebruikers zijn de Beheerders van de Identiteit van IT (de Folder van de Onderneming en de Beheerders van het Systeem) die het hulpmiddel zullen kunnen installeren en vormen. Het opensource-programma kan worden aangepast, zodat klanten het kunnen aanpassen aan hun eigen specifieke vereisten.
 
 When User Sync runs, it fetches a list of users from the organization’s Active Directory (or any other compatible data source) and compares it with the list of users within the [!DNL Admin Console]. It then calls the Adobe [!DNL User Management] API so that the [!DNL Admin Console] is synchronized with the organization’s directory. De wisselstroom is volledig eenrichtingsverkeer; eventuele bewerkingen in de map worden [!DNL Admin Console] niet naar de map doorgestuurd.
 
@@ -107,7 +110,7 @@ To set up User Sync, the organization needs to create a set of credentials in th
 
 ![image2018-9-23_13-36-56](assets/image2018-9-23_13-36-56.png)
 
-De User Sync wordt op deze locatiegedistribueerd via de Adobe Github-repository:
+De User Sync wordt op deze locatie gedistribueerd via de Adobe Github-repository:
 
 [https://github.com/adobe-apiplatform/user-sync.py/releases/latest](https://github.com/adobe-apiplatform/user-sync.py/releases/latest)
 
@@ -133,7 +136,7 @@ Meer informatie over de nieuwe groepsfuncties vindt u hier:
 
 >[!NOTE]
 >
->De AEM IMS-configuratie wordt afgehandeld door het team van Adobe Managed Services. Nochtans, kan de klantenbeheerder het volgens hun vereisten wijzigen (bijvoorbeeld AutoLidmaatschap van de Groep of de Afbeelding van de Groep). De IMS-client wordt ook geregistreerd door het team voor beheerde services.
+>De AEM IMS-configuratie wordt afgehandeld door het team van Adobe Managed Services. Nochtans, kan de klantenbeheerder het volgens hun vereisten wijzigen (bijvoorbeeld AutoLidmaatschap van de Groep of de Afbeelding van de Groep). De IMS-client wordt ook geregistreerd door uw Managed Services-team.
 
 ## Het gebruik {#how-to-use}
 
@@ -163,7 +166,7 @@ Gebruikers en groepen die zijn toegevoegd onder dit productprofiel, kunnen zich 
 
 #### Aanmelden bij lokale beheerder {#local-admin-login}
 
-AEM kan lokale aanmeldingen voor Admin-gebruikers blijven ondersteunen, aangezien het aanmeldingsscherm een optie heeft om zich lokaal aan te melden:
+AEM kunnen lokale aanmeldingen voor Admin-gebruikers blijven ondersteunen, aangezien het aanmeldingsscherm een optie heeft om zich lokaal aan te melden:
 
 ![screen_shot_2018-09-18at121056am](assets/screen_shot_2018-09-18at121056am.png)
 
@@ -189,19 +192,19 @@ Nadat de verificatie is voltooid, wordt de gebruiker teruggeleid naar AEM en aan
 
 ### Bestaande gebruikers migreren {#migrating-existing-users}
 
-Voor bestaande instanties AEM die een andere methode van Authentificatie gebruiken en nu aan IMS worden gemigreerd, moet er een migratiestap zijn.
+Voor bestaande AEM instanties die een andere verificatiemethode gebruiken en nu naar IMS worden gemigreerd, moet er een migratiestap zijn.
 
-Bestaande gebruikers in de AEM-opslagplaats (lokaal, via LDAP of SAML) kunnen worden gemigreerd om naar IMS te verwijzen als de IDP met behulp van het User Migration Utility.
+Bestaande gebruikers in de AEM opslagplaats (lokaal, via LDAP of SAML) kunnen worden gemigreerd om naar IMS te verwijzen als de IDP met behulp van het Hulpprogramma voor gebruikersmigratie.
 
 Dit hulpprogramma wordt door uw AMS-team uitgevoerd als onderdeel van IMS-provisioning.
 
-### Bevoegdheden en ACL&#39;s beheren in AEM {#managing-permissions-and-acls-in-aem}
+### Het beheren van Toestemmingen en ACLs in AEM {#managing-permissions-and-acls-in-aem}
 
-Toegangsbeheer en toegangsrechten blijven in AEM worden beheerd, dit kan worden bereikt door scheiding van Gebruikersgroepen die afkomstig zijn van IMS (bijv. AEM-GRP-008 in het onderstaande voorbeeld) en lokale groepen waar de machtigingen en toegangsbeheer zijn gedefinieerd. De gebruikersgroepen die van IMS worden gesynchroniseerd kunnen aan lokale groepen worden toegewezen en de toestemmingen erven.
+Toegangsbeheer en toegangsrechten blijven in AEM worden beheerd, dit kan worden bereikt door scheiding van Gebruikersgroepen die afkomstig zijn van IMS (bijvoorbeeld AEM-GRP-008 in het onderstaande voorbeeld) en lokale groepen waar de machtigingen en toegangsbeheer zijn gedefinieerd. De gebruikersgroepen die van IMS worden gesynchroniseerd kunnen aan lokale groepen worden toegewezen en de toestemmingen erven.
 
 In het onderstaande voorbeeld voegen we gesynchroniseerde groepen toe aan de lokale *Dam_Users*-groep.
 
-Hier, is een gebruiker ook toegewezen aan een paar groepen in [!DNL Admin Console]. (Houd er rekening mee dat de gebruikers en groepen kunnen worden gesynchroniseerd via LDAP met het gereedschap voor gebruikerssynchronisatie of lokaal kunnen worden gemaakt. Zie de sectie Gebruikers **aan boord van[!DNL Admin Console]**hierboven.)
+Hier, is een gebruiker ook toegewezen aan een paar groepen in [!DNL Admin Console]. (Houd er rekening mee dat de gebruikers en groepen kunnen worden gesynchroniseerd via LDAP met het gereedschap voor gebruikerssynchronisatie of lokaal kunnen worden gemaakt. Zie de sectie Gebruikers **aan boord van[!DNL Admin Console]** hierboven.)
 
 &amp;ast;Merk op dat gebruikersgroepen slechts gesynchroniseerd worden wanneer de gebruikers aan de instantie, voor klanten die een groot aantal gebruikers en groepen hebben, een nut van de Synchronisatie van de Groep kan door AMS worden in werking gesteld om groepen voor toegangsbeheer en toestemmingenbeheer vooraf te halen zoals hierboven beschreven.
 
@@ -215,10 +218,10 @@ Wanneer de gebruiker zich aanmeldt, worden diens groepslidmaatschappen gesynchro
 
 ![screen_shot_2018-09-17at94033pm](assets/screen_shot_2018-09-17at94033pm.png)
 
-In AEM kunnen de gebruikersgroepen die via IMS zijn gesynchroniseerd, als leden worden toegevoegd aan bestaande lokale groepen, bijvoorbeeld DAM-gebruikers.
+AEM kunnen de gebruikersgroepen die via IMS zijn gesynchroniseerd, als leden worden toegevoegd aan bestaande lokale groepen, bijvoorbeeld DAM-gebruikers.
 
 ![screen_shot_2018-09-17at95804pm](assets/screen_shot_2018-09-17at95804pm.png)
 
-Zoals hieronder getoond, erft de groep *AEM-GRP_008* de Toestemmingen en Bevoegdheden van Gebruikers DAM. Dit is een efficiënte manier om toestemmingen voor gesynchroniseerde groepen te beheren en wordt algemeen gebruikt in op LDAP gebaseerde Methodes van de Authentificatie eveneens.
+Zoals hieronder getoond, erft de groep *AEM-GRP_008* de Toestemmingen en Bevoegdheden van Gebruikers DAM. Dit is een effectieve manier om machtigingen voor gesynchroniseerde groepen te beheren en wordt ook veel gebruikt in LDAP-gebaseerde verificatiemethoden.
 
 ![screen_shot_2018-09-17at110505pm](assets/screen_shot_2018-09-17at110505pm.png)

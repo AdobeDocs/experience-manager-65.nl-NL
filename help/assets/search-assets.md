@@ -4,7 +4,7 @@ description: Leer hoe u de vereiste elementen [!DNL Adobe Experience Manager] in
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 4efe5247d91fa846c4a444c81245b0fa1515a7b4
+source-git-commit: 5bbdc80f199a2af38631a5443c46daae827abb52
 workflow-type: tm+mt
 source-wordcount: '5807'
 ht-degree: 4%
@@ -403,7 +403,7 @@ U kunt het volgende doen met de activa u in Experience Manager hebt gezocht:
 
 ### Gezochte resultaten sorteren {#sort}
 
-U kunt zoekresultaten sorteren om sneller de vereiste middelen te vinden. U kunt de zoekresultaten sorteren in de lijstweergave en alleen wanneer u **[!UICONTROL [Files]](#searchui)** in het **[!UICONTROL Filters]** deelvenster selecteert. [!DNL Experience Manager Assets] gebruikt sorteren op de server om snel alle assets (hoe talrijk ook) in een map of de resultaten van een zoekopdracht te sorteren. Sorteren op de server levert sneller en nauwkeuriger resultaten op dan sorteren op de client.
+U kunt zoekresultaten sorteren om sneller de vereiste middelen te vinden. U kunt de zoekresultaten sorteren in de lijstweergave en alleen wanneer u **[[!UICONTROL Files]](#searchui)** in het **[!UICONTROL Filters]** deelvenster selecteert. [!DNL Experience Manager Assets] gebruikt sorteren op de server om snel alle assets (hoe talrijk ook) in een map of de resultaten van een zoekopdracht te sorteren. Sorteren op de server levert sneller en nauwkeuriger resultaten op dan sorteren op de client.
 
 In de lijstweergave kunt u de zoekresultaten op dezelfde manier sorteren als elementen in een willekeurige map. Sorteren werkt op deze kolommen: Naam, Titel, Status, Dimension, Grootte, Classificatie, Gebruik (Gemaakt op), (Datum) Gewijzigd, (Datum) Gepubliceerd, Workflow en Uitgecheckt.
 

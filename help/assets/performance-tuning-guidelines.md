@@ -4,9 +4,9 @@ description: Suggesties en begeleiding [!DNL Experience Manager] over configurat
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 2c8220aab9215efba2e4568961a2a6a544803920
+source-git-commit: 5a421c66930d8c7a9eb633c707b4b51d4549b303
 workflow-type: tm+mt
-source-wordcount: '2682'
+source-wordcount: '2680'
 ht-degree: 0%
 
 ---
@@ -152,7 +152,7 @@ Bijvoorbeeld, na het uitvoeren van talrijke niet-voorbijgaande werkschema&#39;s 
 
 ### Maximumaantal parallelle banen {#maximum-parallel-jobs}
 
-Standaard wordt [!DNL Experience Manager] een maximumaantal parallelle taken uitgevoerd dat gelijk is aan het aantal processors op de server. Het probleem met deze instelling is dat tijdens perioden van zware belasting alle processors in beslag worden genomen door [!UICONTROL DAM Update Asset] workflows, waardoor de reactiesnelheid van de gebruikersinterface wordt vertraagd en wordt voorkomen dat [!DNLEervaringsbeheer] andere processen uitvoert die de prestaties en stabiliteit van de server waarborgen. U kunt deze waarde als een goede praktijk instellen op de helft van de processors die beschikbaar zijn op de server door de volgende stappen uit te voeren:
+Standaard wordt [!DNL Experience Manager] een maximumaantal parallelle taken uitgevoerd dat gelijk is aan het aantal processors op de server. Het probleem met deze instelling is dat tijdens perioden van zware belasting alle processors in beslag worden genomen door [!UICONTROL DAM Update Asset] workflows, waardoor de reactiesnelheid van de gebruikersinterface wordt vertraagd en andere processen die de prestaties en stabiliteit van de server garanderen, niet [!DNL Experience Manager] kunnen worden uitgevoerd. U kunt deze waarde als een goede praktijk instellen op de helft van de processors die beschikbaar zijn op de server door de volgende stappen uit te voeren:
 
 1. Ga naar [!DNL Experience Manager] Auteur `https://[aem_server]:[port]/system/console/slingevent`.
 

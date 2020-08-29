@@ -10,22 +10,21 @@ content-type: reference
 discoiquuid: ad450124-49a5-4afb-aac3-ed3733d6504b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b2fd6e0412ee0dacf7b68f4a0b219804dd4a6150
+source-git-commit: af326f2d2b278fe36df05afc8c172f74c99a064c
+workflow-type: tm+mt
+source-wordcount: '743'
+ht-degree: 0%
 
 ---
 
 
 # We.Doorloop van de referentiewebsite voor Verzekering van financiële automatische vernieuwing{#we-finance-auto-insurance-renewal-reference-site-walkthrough}
 
-## Voorwaarden {#pre-requisites}
+## We.Finance Reference Site-scenario  {#we-finance-reference-site-scenario}
 
-Opstelling de verwijzingsplaats zoals die in [Opstelling wordt beschreven en vorm de Plaats](../../forms/using/setup-reference-sites.md)van de Verwijzing van Vormen AEM.
+Wij.Finance-site is een site voor financiële services die u helpt interactieve communicatiemogelijkheden van AEM Forms te leren kennen.
 
-## We.Finance Reference Site-scenario {#we-finance-reference-site-scenario}
-
-Wij.Finance-site is een site voor financiële services die u helpt interactieve communicatiemogelijkheden van AEM Forms te leren.
-
-Lees op gedetailleerde analyse van Wij.Het gebruikscase van de AutoVerzekering van de Financiën die toont hoe de vormen AEM en zijn integratie met de Dynamica van Microsoft klantenervaring in een financieel de dienstbedrijf verpersoonlijken. De interactieve analyse wordt ontworpen om implementatie van complexe digitale transacties en klantenmededeling in een financieel bedrijf te vergemakkelijken.
+Lees op gedetailleerde analyse van Wij.De Auto van de Verzekering van de Financiën gebruikscase die toont hoe AEM vormen en zijn integratie met de Dynamica van Microsoft klantenervaring in een financieel de dienstbedrijf verpersoonlijken. De interactieve analyse wordt ontworpen om implementatie van complexe digitale transacties en klantenmededeling in een financieel bedrijf te vergemakkelijken.
 
 **De rit begint met de gebruikscase:**
 
@@ -40,7 +39,7 @@ Het Auto-Verzekeringstoepassingsscenario van Web.Finance is een visuele gesproke
 
 ### Gloria stuurt een mededeling over de verlenging van het verzekeringsbeleid van We.Finance {#gloria-sends-an-insurance-policy-renewal-communication-from-we-finance}
 
-Gloria logt in instantie AEM, klikt **Auto Verzekering Verlengt,** en klikt dan **Open Agent UI.** Klik vooraf vult het verzekeringsdocument met beleidsdetails van Sarah Rose. Gloria klikt **op Verzenden** en er wordt een bericht weergegeven op het scherm &quot;Verzending geïnitieerd&quot; en vervolgens in enkele seconden &quot;Verzenden met succes&quot;.
+Gloria logt in AEM instantie, klikt **Auto Verzekering Verlengt,** en klikt dan **Open Agent UI.** Klik vooraf vult het verzekeringsdocument met beleidsdetails van Sarah Rose. Gloria klikt **op Verzenden** en er wordt een bericht weergegeven op het scherm &quot;Verzending geïnitieerd&quot; en vervolgens in enkele seconden &quot;Verzenden met succes&quot;.
 
 Sarah ontvangt een e-mail met het onderwerp &quot;Uw automatische Verzekering Verlenging&quot;.
 
@@ -48,7 +47,7 @@ Sarah ontvangt een e-mail met het onderwerp &quot;Uw automatische Verzekering Ve
 
 #### Zie het zelf {#see-it-yourself}
 
-Ga naar **Adobe Experience Manager** > **Forms** > **Forms &amp; Documents** > **We.Finance** > **Auto Insurance**. Selecteer de Auto Verzekering Verlenging **interactieve mededeling** en klik **Open Agent UI**. De interactieve mededeling opent omhoog in de Agent UI. Voer een geldig e-mailadres in om de e-mail te ontvangen met het bijgevoegde beleidsdocument en klik op Verzenden.
+Ga naar **Adobe Experience Manager** > **Forms** > **Forms &amp; Documents** > **We.Finance** > **Automatische verzekering**. Selecteer de Auto Verzekering Verlenging **interactieve mededeling** en klik **Open Agent UI**. De interactieve mededeling opent omhoog in de Agent UI. Voer een geldig e-mailadres in om de e-mail te ontvangen met het bijgevoegde beleidsdocument en klik op Verzenden.
 
 U hebt rechtstreeks vanuit `https://[authorHost]: authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal.`
 

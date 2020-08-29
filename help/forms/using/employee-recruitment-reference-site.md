@@ -1,23 +1,22 @@
 ---
 title: Referentiesite voor werving van werknemers doorloopt
-seo-title: Aanwerving werknemers
-description: In de verwijzingssite van AEM Forms wordt uitgelegd hoe organisaties functies van AEM Forms kunnen gebruiken om de workflow voor het werven van werknemers te implementeren.
-seo-description: In de verwijzingssite van AEM Forms wordt uitgelegd hoe organisaties functies van AEM Forms kunnen gebruiken om de workflow voor het werven van werknemers te implementeren.
+seo-title: Aanwerving van werknemers
+description: Op de AEM Forms-site wordt uitgelegd hoe organisaties AEM Forms-functies kunnen gebruiken om de workflow voor het werven van werknemers te implementeren.
+seo-description: Op de AEM Forms-site wordt uitgelegd hoe organisaties AEM Forms-functies kunnen gebruiken om de workflow voor het werven van werknemers te implementeren.
 uuid: 27e456ba-3c08-4c43-ad54-1ba0070995ad
 topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 5f04b13e-ea40-4c86-9168-e020c52435a2
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: af326f2d2b278fe36df05afc8c172f74c99a064c
+workflow-type: tm+mt
+source-wordcount: '1432'
+ht-degree: 0%
 
 ---
 
 
 # Referentiesite voor werving van werknemers doorloopt {#employee-recruitment-reference-site-walkthrough}
-
-## Vereiste {#prerequisite}
-
-Stel de referentiesites in zoals beschreven in [Stel AEM Forms referentiesites](/help/forms/using/setup-reference-sites.md)in en configureer deze.
 
 ## Overzicht {#overview}
 
@@ -28,7 +27,7 @@ We.Finance is een organisatie die kandidaten in staat stelt om een aanvraag voor
 * Interviewproces
 * Verzameling van kandidaatgegevens
 * Kandidaatachtergrondcontrole
-* Uitvoeren van aanbiedingen aan geselecteerde kandidaten
+* Aanbiedingen aan geselecteerde kandidaten uitrollen
 
 >[!NOTE]
 >
@@ -84,17 +83,17 @@ Sarah klikt op Toepassen op een baan posten. Het taaktoepassingsformulier wordt 
 
 ### Hoe werkt het {#how-it-works}
 
-De startpagina van We.Finance en de carrièrepagina zijn pagina&#39;s van AEM-sites. Op de pagina met carrièremogelijkheden wordt een adaptief formulier ingesloten, dat gebruikmaakt van een herhaalbaar deelvenster om vacatures op te halen met een service en deze op de pagina weer te geven. U kunt het aangepaste formulier bekijken op `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/employee/recruitment/jobs.html`.
+De startpagina van We.Finance en de carrièrepagina zijn AEM Sites-pagina&#39;s. Op de pagina met carrièremogelijkheden wordt een adaptief formulier ingesloten, dat gebruikmaakt van een herhaalbaar deelvenster om vacatures op te halen met een service en deze op de pagina weer te geven. U kunt het aangepaste formulier bekijken op `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/employee/recruitment/jobs.html`.
 
 ### Zie het zelf {#see-it-yourself}
 
-Ga naar `https://[publishHost]:[publishPort]/content/we-finance/global/en.html` en klik op **[!UICONTROL Carrière]**. Klik op **[!UICONTROL Zoeken]** om de takenlijst te vullen en klik vervolgens op **[!UICONTROL Toepassen]** voor een taak. Vul het formulier in en verzend de aanvraag.
+Ga naar `https://[publishHost]:[publishPort]/content/we-finance/global/en.html` en klik **[!UICONTROL Career]**. Klik **[!UICONTROL Search]** **[!UICONTROL Apply]** om de takenlijst te vullen en klik dan voor een baan. Vul het formulier in en verzend de aanvraag.
 
 Zorg ervoor dat u een geldige e-mailid opgeeft in de toepassing omdat alle communicatie via deze analyse wordt verzonden naar de opgegeven e-mailid.
 
 ## John Jacobs verkiest het profiel van Sarah Rose voor de screening van de huurmanager {#john-jacobs-shortlists-sarah-rose-s-profile-for-the-hiring-manager-s-screening}
 
-De organisatie ontvangt de sollicitatie van Sarah. John Jacobs, een rekruteur, heeft de taak gekregen om Sarah&#39;s profiel te herzien. Hij evalueert de taak in zijn Postvak IN, zoekt het profiel dat overeenkomt met de vereiste taak en klikt op Snellijst. Sarah&#39;s profiel wordt doorgestuurd naar Gloria Rios, de huurmanager, voor haar goedkeuring.
+De organisatie ontvangt de sollicitatie van Sarah. John Jacobs, een rekruteur, heeft de taak gekregen om Sarah&#39;s profiel te herzien. Hij evalueert de taak in zijn AEM Postvak In, zoekt het profiel dat overeenkomt met de vereiste taak en klikt op Snellijst. Sarah&#39;s profiel wordt doorgestuurd naar Gloria Rios, de huurmanager, voor haar goedkeuring.
 
 ![jjacobs-inbox-1](assets/jjacobs-inbox-1.png)
 
@@ -126,7 +125,7 @@ Gloria keurt Sarah Rose goed voor een interview
 
 **Hoe werkt het**
 
-Als Gloria de kandidaat voor een interview goedkeurt, creëert de workflow een taak in het AEM Inbox van John Doe, die een rekruteur is voor We.Finance.
+Als Gloria de kandidaat voor een interview goedkeurt, creëert de workflow een taak in het AEM Inbox van Jan Doe, die een rekruteur is voor We.Finance.
 
 ### Zie het zelf {#see-it-yourself-2}
 
@@ -140,7 +139,7 @@ John Doe krijgt de taak om een interview te plannen in zijn inbox. John Doe sele
 
 ![johnjacobsaeminbox](assets/johnjacobsaeminbox.png)
 
-Inbox van John Doe&#39;s AEM
+John Doe&#39;s AEM inbox
 
 ![johndoescheduleinterview](assets/johndoescheduleinterview.png)
 
@@ -198,7 +197,7 @@ John Doe selecteert het verzoek van de kandidaat-beoordeling en opent het. John 
 
 ![johndoeadditionainformationinbox](assets/johndoeadditionainformationinbox.png)
 
-Inbox van John Doe&#39;s AEM
+John Doe&#39;s AEM Inbox
 
 ![johndoeadditionalinformationreview-copy](assets/johndoeadditionalinformationreview-copy.png)
 
@@ -210,7 +209,7 @@ John Jacobs ziet het verzoek van de achtergrondcontrole in zijn inbox. John Jaco
 
 ![johnjacobsbackgroundcheckinbox](assets/johnjacobsbackgroundcheckinbox.png)
 
-Inbox van John Jacobs&#39;s AEM
+John Jacobs AEM inbox
 
 ![johnjacobsbackgroundcheck](assets/johnjacobsbackgroundcheckgoahead.png)
 
@@ -218,11 +217,11 @@ Als John Jacobs de achtergrondcontrole heeft uitgevoerd, klikt u op Vooruit
 
 ## John Doe stuurt de gezamenlijke brief naar Sarah Rose {#john-doe-sends-out-the-joining-letter-to-sarah-rose}
 
-John Doe ontvangt een verzoek in zijn AEM inbox om de aansluitende brief te verzenden. John opent het verzoek en bekijkt de details. John Doe voegt de bij elkaar behorende brief PDF toe en klikt dan Bijvoegen &amp; verzenden het Verbinden Letter.
+John Doe ontvangt een verzoek in zijn AEM inbox voor het verzenden van de aansluitende brief. John opent het verzoek en bekijkt de details. John Doe voegt de bij elkaar behorende brief PDF toe en klikt dan Bijvoegen &amp; verzenden het Verbinden Letter.
 
 ![johndoejoiningletterinbox](assets/johndoejoiningletterinbox.png)
 
-Inbox van John Doe&#39;s AEM
+John Doe&#39;s AEM inbox
 
 ![johndoejoinletterattachandsend](assets/johndoejoiningletterattachandsend.png)
 

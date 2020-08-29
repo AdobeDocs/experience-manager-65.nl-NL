@@ -1,26 +1,26 @@
 ---
-title: We.Gov-referentiesite doorloopt
-seo-title: We.Gov-referentiesite doorloopt
-description: Gebruik fictieve gebruikers en groepen om AEM Forms-taken uit te voeren met behulp van het Wij.Gov-demopakket.
-seo-description: Gebruik fictieve gebruikers en groepen om AEM Forms-taken uit te voeren met behulp van het Wij.Gov-demopakket.
+title: We.Gov en We.Finance
+seo-title: We.Gov en We.Finance
+description: Gebruik fictieve gebruikers en groepen om AEM Forms-taken uit te voeren met het Demopakket We.Gov en We.Finance.
+seo-description: Gebruik fictieve gebruikers en groepen om AEM Forms-taken uit te voeren met het Demopakket We.Gov en We.Finance.
 uuid: 797e301a-36ed-4bae-9ea8-ee77285c786d
 contentOwner: anujkapo
 discoiquuid: ddb3778b-be06-4cde-bc6e-0994efa42b18
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d1da42d7274e9a4257b9e8effae2b754e0104aa4
+source-git-commit: c6b8e184042394d99ceb099c918b81e2cce49497
 workflow-type: tm+mt
-source-wordcount: '2536'
+source-wordcount: '2548'
 ht-degree: 0%
 
 ---
 
 
-# We.Gov-referentiesite doorloopt {#we-gov-reference-site-walkthrough}
+# We.Gov en We.Finance {#we-gov-reference-site-walkthrough}
 
 ## Voorwaarden {#pre-requisites}
 
-Opstelling de verwijzingsplaats zoals die in [Opstelling wordt beschreven en vormt Web.Gov verwijzingsplaats](../../forms/using/forms-install-configure-gov-reference-site.md).
+Opstelling de verwijzingsplaats zoals die in [Opstelling en vormt Wij.Gov en Wij.Finance verwijzingsplaats](../../forms/using/forms-install-configure-gov-reference-site.md)wordt beschreven.
 
 ## Gebruikersartikel {#user-story}
 

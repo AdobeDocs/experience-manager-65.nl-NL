@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: AEM 6.5 Forms Handboek
 user-guide-description: Create, manage, publish, and update digital forms.
 translation-type: tm+mt
-source-git-commit: a1ada0e747f46923dc834c872e522e648adae073
+source-git-commit: c6b8e184042394d99ceb099c918b81e2cce49497
 workflow-type: tm+mt
-source-wordcount: '3719'
+source-wordcount: '3704'
 ht-degree: 0%
 
 ---
@@ -42,11 +42,8 @@ ht-degree: 0%
       + [Zelfstudie: Sjablonen maken](using/create-templates-print-web.md)
       + [Zelfstudie: Interactieve communicatie maken](using/create-interactive-communication0.md)
    + AEM Forms Reference Collaterals {#aem-forms-reference-collaterals}
-      + [Opstelling en vorm de plaatsen van de de zelfdienstverwijzing van Web.Finance en van de Werknemer](using/setup-reference-sites.md)
-      + [De Web.Gov-referentiesite instellen en configureren](/help/forms/using/forms-install-configure-gov-reference-site.md)
-      + [We.Financiële referentiesite doorlopen](using/finance-reference-site-walkthrough.md)
-      + [We.Gov-referentiesite doorloopt](/help/forms/using/forms-gov-reference-site-user-demo.md)
-      + [Werknemerslijst voor zelfbedieningsverwijzingssite](/help/forms/using/employee-self-service-reference-site.md)
+      + [De referentiesite Web.Gov en Web.Finance instellen en configureren](/help/forms/using/forms-install-configure-gov-reference-site.md)
+      + [We.Gov en We.Finance](/help/forms/using/forms-gov-reference-site-user-demo.md)
       + [Referentiesite voor werving van werknemers doorloopt](/help/forms/using/employee-recruitment-reference-site.md)
       + [We.Referentiesite voor verlenging autoverzekering financieren](/help/forms/using/finance-auto-insurance-renewal-reference-site-walkthrough.md)
       + [We.Gov-referentiesite FOIA-doortocht](/help/forms/using/gov-reference-site-foia-walkthrough.md)
@@ -405,7 +402,7 @@ ht-degree: 0%
       + [Algemene AEM Forms-instellingen](/help/forms/using/admin-help/configure-general-aem-forms-settings.md)
       + [Het licentietype voor de implementatie bijwerken](/help/forms/using/admin-help/update-license-type-deployment.md)
    + Domeinen instellen en beheren {#setup-manage-domains}
-      + [Domeinen toevoegen](/help/forms/using/admin-help/adding-domains.md)
+      + [Het toevoegen van domeinen](/help/forms/using/admin-help/adding-domains.md)
       + [Een domein verwijderen](/help/forms/using/admin-help/delete-domain.md)
       + [Instellingen voor accountvergrendeling configureren](/help/forms/using/admin-help/configure-account-locking-settings.md)
       + [Bestaande domeinen bewerken en converteren](/help/forms/using/admin-help/editing-converting-existing-domains.md)
@@ -506,11 +503,11 @@ ht-degree: 0%
       + [Overzicht van uitvoerservice](/help/forms/using/admin-help/overview-8.md)
       + [De tekenset wijzigen](/help/forms/using/admin-help/change-character-set.md)
       + [XCI-configuratieopties opgeven](/help/forms/using/admin-help/specify-xci-configuration-options.md)
-      + [caching configureren voor uitvoer](/help/forms/using/admin-help/configuring-caching-output.md)
+      + [Caching configureren voor Output](/help/forms/using/admin-help/configuring-caching-output.md)
       + [Bestandslocaties voor uitvoer opgeven](/help/forms/using/admin-help/specify-file-locations-output.md)
       + [Lettertypen beschikbaar maken](/help/forms/using/admin-help/make-fonts-available.md)
       + [Te insluiten fonts opgeven](/help/forms/using/admin-help/specify-fonts-embed.md)
-      + [Beveiligingsinstellingen opgeven](/help/forms/using/admin-help/specify-security-settings.md)
+      + [Specificatie beveiligingsinstellingen](/help/forms/using/admin-help/specify-security-settings.md)
       + [De tekenset wijzigen](/help/forms/using/admin-help/change-character-set.md)
    + Workflow voor formulieren configureren{#configure-forms-workflow}
       + [Informatie over beheer en procesterminologie](/help/forms/using/admin-help/administration-process-terminology.md)
@@ -613,7 +610,7 @@ ht-degree: 0%
          + [JavaAPI Quick Start (SOAP), service voor integratie van formuliergegevens](developing/form-data-integration-service-java.md)
          + [Forms Service API Quick Start](developing/forms-service-api-quick-starts.md)
          + [Java API QuickStart (SOAP) voor PDF-service genereren](developing/generate-pdf-service-java-api.md)
-         + [Snel aan de slag-API](developing/invocation-api-quick-starts.md)
+         + [Snel aan de slag met de oproepings-API](developing/invocation-api-quick-starts.md)
          + [LiveCycleProcess Java API(SOAP)Snel starten](developing/livecycleprocess-java-api-soap-quick.md)
          + [Java API voor uitvoerservice, snel starten (SOAP)](developing/output-service-java-api-quick.md)
          + [Java APIQuick Start (SOAP) van PDF-hulpprogramma&#39;s](developing/pdf-utilities-service-java-api.md)

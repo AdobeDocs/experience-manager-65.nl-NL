@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: introduction
 discoiquuid: 67b03098-c58d-4a57-90e0-e4ddd78e5d99
 translation-type: tm+mt
-source-git-commit: dc7804c9985bf9a14bfad40f546e393b39615dab
+source-git-commit: af326f2d2b278fe36df05afc8c172f74c99a064c
+workflow-type: tm+mt
+source-wordcount: '505'
+ht-degree: 2%
 
 ---
 
@@ -33,11 +36,7 @@ Hier volgen de belangrijkste mogelijkheden van interactieve communicatie:
 * De gebruikersinterface van de agent toont druk en Webvoorproef van Interactieve Communicatie
 * Met slepen en neerzetten kunt u snel afdrukken- en webkanalen maken
 
-## Voorbeeld van gebruik {#sample-use-case}
-
-De [welkomstkit voor een voorbeeldtoepassing van een creditcardklant](/help/forms/using/finance-reference-site-walkthrough.md#credit-card-application-walkthrough) laat de mogelijkheden van een interactieve communicatie zien.
-
-## Interactieve communicatie maken {#interactive-communication-creation}
+## Interactieve communicatie maken  {#interactive-communication-creation}
 
 ![interactive_communication-01](assets/interactive_communication-01.jpg)
 
@@ -113,7 +112,7 @@ De interactieve Communicatie is het gebrek en geadviseerde benadering om klanten
   <tr>
    <td>Grafieken</td>
    <td>Grafieken die worden ondersteund in afdruk en webkanaal</td>
-   <td> Niet ondersteund</td>
+   <td>Niet ondersteund</td>
   </tr>
   <tr>
    <td>Thema's</td>
@@ -122,12 +121,12 @@ De interactieve Communicatie is het gebrek en geadviseerde benadering om klanten
   </tr>
   <tr>
    <td>Controle en verificatie</td>
-   <td> Niet ondersteund</td>
+   <td>Niet ondersteund</td>
    <td>Ondersteund</td>
   </tr>
   <tr>
    <td>Concepten en instantie beheren</td>
-   <td> Niet ondersteund</td>
+   <td>Niet ondersteund</td>
    <td>Ondersteund</td>
   </tr>
   <tr>
@@ -137,12 +136,12 @@ De interactieve Communicatie is het gebrek en geadviseerde benadering om klanten
   </tr>
   <tr>
    <td>Handtekening agent</td>
-   <td> Niet ondersteund</td>
+   <td>Niet ondersteund</td>
    <td>Ondersteund</td>
   </tr>
   <tr>
    <td>Externe functies</td>
-   <td> Niet ondersteund</td>
+   <td>Niet ondersteund</td>
    <td>Ondersteund</td>
   </tr>
  </tbody>

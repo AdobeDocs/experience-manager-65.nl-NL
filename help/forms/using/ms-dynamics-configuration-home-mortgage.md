@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: Configuration
 discoiquuid: 6b31397a-fb06-4043-9368-59fb4fce8afa
 translation-type: tm+mt
-source-git-commit: f323b490c37effc3cbb36c793b62fa788eca9545
+source-git-commit: af326f2d2b278fe36df05afc8c172f74c99a064c
+workflow-type: tm+mt
+source-wordcount: '432'
+ht-degree: 0%
 
 ---
 
@@ -21,13 +24,11 @@ Leer hoe u de Microsoft® Dynamics 365-services kunt gebruiken door adaptieve fo
 
 Microsoft® Dynamics 365 is een software van het Beheer van de Verhouding van de Klant (CRM) en van de Planning van het Middel van de Onderneming (ERP) die ondernemingsoplossingen voor het creëren van en het beheren van klantenrekeningen, contacten, lood, kansen, en gevallen verstrekt.
 
-AEM Forms verleent de wolkendienst om Dynamiek 365 met de module van de Integratie [van Gegevens van](/help/forms/using/data-integration.md) Vormen te integreren. De de toepassingsanalyse van de Mortectuur van het [Basis van het scenario met de Dynamica](/help/forms/using/finance-reference-site-walkthrough.md#home-mortgage-application-walkthrough-with-microsoft-dynamics) van Microsoft® toont hoe een klant de Web.Finance verwijzingsplaats gebruikt om voor een lening toe te passen wanneer de plaats de Dynamica Microsoft® voor de Integratie van Gegevens van Vormen gebruikt. Alvorens u de de toepassingsanalyse van de Kortere meetkunde van het Huis met het scenario van de Dynamiek van Microsoft® kunt gebruiken, moet u de Dynamica 365 vormen Microsoft® die met de Web.Finance verwijzingsplaats moet worden gebruikt.
+AEM Forms biedt een cloudservice om Dynamics 365 te integreren met de module [Forms Data Integration](/help/forms/using/data-integration.md) . Alvorens u de de toepassingsanalyse van de Kortere meetkunde van het Huis met het scenario van de Dynamiek van Microsoft® kunt gebruiken, moet u de Dynamica 365 vormen Microsoft® die met de Web.Finance verwijzingsplaats moet worden gebruikt.
 
 ## Vereisten {#prerequisites}
 
 Alvorens u begint opstelling en Dynamica 365 te vormen, zorg ervoor dat u hebt:
-
-* [Stel AEM Forms verwijzingssites](/help/forms/using/setup-reference-sites.md)in en configureer deze.
 
 * AEM 6.3 Forms Service Pack 1 en hoger
 * Microsoft® Dynamics 365-account
@@ -41,11 +42,11 @@ Alvorens u begint opstelling en Dynamica 365 te vormen, zorg ervoor dat u hebt:
    `https://[server]:[port]/editor.html/content/we-finance/global/en/loan-landing-page.html`
 
 1. Schuif omlaag naar de rekenmachine voor de beginmeter.
-1. Markeer het deelvenster van de rechterkolom (rekenmachine) en tik om het pop-upmenu weer te geven. Tik in het pop-upmenu op Configureren. Het dialoogvenster Container voor AEM-formulieren bewerken wordt geopend.
+1. Markeer het deelvenster van de rechterkolom (rekenmachine) en tik om het pop-upmenu weer te geven. Tik in het pop-upmenu op Configureren. Het dialoogvenster AEM Forms-container bewerken wordt geopend.
 
    ![calculatorConfigurpanel](assets/calculatorconfigurepanel.png)
 
-1. Blader in het dialoogvenster Container voor AEM-formulieren bewerken door het middelenpad en selecteer de rekenmachine voor hypothecair gebruik in het volgende pad en tik op **Bevestigen**:
+1. Blader in het dialoogvenster AEM Forms-container bewerken door het middelenpad en selecteer de hypothecaire calculator voor thuisgebruik op het volgende pad en tik op **Bevestigen**:
 
    formsanddocuments/We.Finance/MS Dynamics/
 

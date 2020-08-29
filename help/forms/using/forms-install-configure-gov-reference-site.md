@@ -1,5 +1,5 @@
 ---
-title: De Web.Gov-referentiesite instellen en configureren
+title: De referentiesite Web.Gov en Web.Finance instellen en configureren
 seo-title: De Web.Gov-referentiesite instellen en configureren
 description: Een AEM Forms-demopakket installeren, configureren en aanpassen.
 seo-description: Een AEM Forms-demopakket installeren, configureren en aanpassen.
@@ -8,15 +8,15 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4c42e5e5274c41469824f12b228698a77bf5d4a6
+source-git-commit: c6b8e184042394d99ceb099c918b81e2cce49497
 workflow-type: tm+mt
-source-wordcount: '4723'
+source-wordcount: '4727'
 ht-degree: 1%
 
 ---
 
 
-# De Web.Gov-referentiesite instellen en configureren {#set-up-and-configure-we-gov-reference-site}
+# De referentiesite Web.Gov en Web.Finance instellen en configureren {#set-up-and-configure-we-gov-reference-site}
 
 ## Details demopakket {#demo-package-details}
 
@@ -125,7 +125,7 @@ Voer de stappen in 4.1 en 4.2 uit om een nieuwe pakketversie te installeren. U k
 
    ![WeGov-pakket verwijderen](assets/uninstall_wegov_forms_package.jpg)
 
-1. Selecteer na bevestiging nogmaals &quot;Verwijderen&quot; en voer de procedure voor het verwijderen uit.
+1. Selecteer bij bevestiging nogmaals &quot;Verwijderen&quot; en sta het verwijderingsproces toe.
 
 ## Configuratie demopakket {#demo-package-configuration}
 

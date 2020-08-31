@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 63abeda4-6ea1-4b45-b188-f9c6b44ca0cd
 translation-type: tm+mt
-source-git-commit: 7acd89d830b9e758eec1b5a4beb18c22e4d12dcf
+source-git-commit: 9a4ae73c08657195da2741cccdb196bd7f7142c9
 workflow-type: tm+mt
 source-wordcount: '1141'
 ht-degree: 0%
@@ -154,4 +154,4 @@ Wanneer een [lid](users.md) UGC op pub1 (opgeslagen in MongoDB) plaatst, worden 
 
 De eerste keer dat de UGC op pub2 wordt gelezen, als er niets is ingesteld, is het standaardgedrag dat de schaduwknooppunten worden gemaakt.
 
-Als u een ander gedrag wilt gebruiken dan het standaardgedrag, moet u dit instellen voor de instantie van de auteur en doorsturen naar alle publicatie-instanties. Dit is doorgaans een handmatig proces.
+Als u een ander gedrag wilt gebruiken dan het standaardgedrag, moet u dit instellen voor de instantie van de auteur en doorsturen naar alle publicatieinstanties. Dit is doorgaans een handmatig proces.

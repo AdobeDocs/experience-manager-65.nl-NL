@@ -4,7 +4,7 @@ description: Suggesties en begeleiding [!DNL Experience Manager] over configurat
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5a421c66930d8c7a9eb633c707b4b51d4549b303
+source-git-commit: 9a4ae73c08657195da2741cccdb196bd7f7142c9
 workflow-type: tm+mt
 source-wordcount: '2680'
 ht-degree: 0%
@@ -239,7 +239,7 @@ Bij het repliceren van activa aan een groot aantal publiceer instanties, bijvoor
 >
 >Adobe beveelt geen automatische activering van elementen aan. Indien nodig raadt Adobe u echter aan dit als de laatste stap in een workflow te doen, meestal DAM Update Asset.
 
-## Zoekindexen {#search-indexes}
+## Indexen zoeken {#search-indexes}
 
 Zorg ervoor u de recentste de dienstpakken en op prestaties betrekking hebbende hotfixes uitvoert aangezien zij vaak updates aan systeemindexen omvatten. Zie Tips voor het afstemmen van [prestaties](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html) voor sommige indexoptimalisaties.
 

@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 300aa9f3-596f-42bc-8d46-e535f2bc4379
 translation-type: tm+mt
-source-git-commit: 6ab91667ad668abf80ccf1710966169b3a187928
+source-git-commit: 9a4ae73c08657195da2741cccdb196bd7f7142c9
 workflow-type: tm+mt
 source-wordcount: '1189'
 ht-degree: 3%
@@ -83,9 +83,9 @@ Voor aangepaste zoekfuncties moet de [UGC-zoekAPI](#ugc-search-api)worden gebrui
 
 #### Oak-indexering {#oak-indexing}
 
-Hoewel er niet automatisch eiken-indices worden gemaakt voor het zoeken naar AEM platform, zijn deze vanaf AEM 6.2 toegevoegd voor AEM Communities om de prestaties te verbeteren en paginering te ondersteunen bij de presentatie van UGC-zoekresultaten.
+Terwijl de indexen van het Eak niet automatisch voor het AEM platformonderzoek worden gecreeerd, zijn zij met ingang van AEM 6.2 toegevoegd voor AEM Communities om prestaties te verbeteren en steun voor paginering te verlenen wanneer het voorstellen van UGC onderzoeksresultaten.
 
-Als aangepaste eigenschappen in gebruik zijn en zoekacties traag zijn, moeten aanvullende indexen voor de aangepaste eigenschappen worden gemaakt om deze beter te laten presteren. Om draagbaarheid te handhaven, houd aan de [noemende vereisten](#naming-of-custom-properties) wanneer het creëren van douaneeigenschappen die doorzoekbaar zijn.
+Als aangepaste eigenschappen in gebruik zijn en zoekacties traag zijn, moeten aanvullende indexen worden gemaakt voor de aangepaste eigenschappen om deze beter te laten presteren. Om draagbaarheid te handhaven, houd aan de [noemende vereisten](#naming-of-custom-properties) wanneer het creëren van douaneeigenschappen die doorzoekbaar zijn.
 
 Als u bestaande indexen wilt wijzigen of aangepaste indexen wilt maken, raadpleegt u [Eak-query&#39;s en indexering](../../help/sites-deploying/queries-and-indexing.md).
 

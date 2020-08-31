@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: upgrading
 content-type: reference
 translation-type: tm+mt
-source-git-commit: d3a69bbbc9c3707538be74fd05f94f20a688d860
+source-git-commit: f465b6ffd1a93ddad3db0caf00d4ff797e1b189f
 workflow-type: tm+mt
 source-wordcount: '1343'
 ht-degree: 0%
@@ -20,11 +20,11 @@ ht-degree: 0%
 
 Een van de belangrijkste uitdagingen bij het upgraden van Adobe Experience Manager is de downtime die aan de auteursomgeving is gekoppeld wanneer een upgrade op locatie wordt uitgevoerd. Inhoudsauteurs hebben tijdens een upgrade geen toegang tot de omgeving. Daarom is het wenselijk om de hoeveelheid tijd te minimaliseren het neemt om de verbetering uit te voeren. Voor grote opslagplaatsen, met name AEM Assets-projecten, die doorgaans grote gegevensopslagruimten en een hoog niveau van uploads per uur hebben, neemt het opnieuw indexeren van eiken een significant percentage van de upgradetijd in beslag.
 
-In deze sectie wordt beschreven hoe u het Oak-runtime-programma kunt gebruiken om de opslagplaats opnieuw te indexeren **voordat** de upgrade wordt uitgevoerd, waardoor de hoeveelheid downtime tijdens de daadwerkelijke upgrade wordt verminderd. De voorgestelde stappen kunnen op de indexen van [Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html) voor versies AEM 6.4 en hoger worden toegepast.
+In deze sectie wordt beschreven hoe u het Oak-runtime-programma kunt gebruiken om de opslagplaats opnieuw te indexeren **voordat** de upgrade wordt uitgevoerd, waardoor de hoeveelheid downtime tijdens de daadwerkelijke upgrade wordt verminderd. De voorgestelde stappen kunnen op indexen van [Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html) voor versies AEM 6.4 en hoger worden toegepast.
 
 ## Overzicht {#overview}
 
-Nieuwe versies van de AEM brengen wijzigingen aan de indexdefinities van eikel aan aangezien de eigenschapreeks wordt uitgebreid. Door wijzigingen in de eiken-indexen wordt de functie opnieuw gecomprimeerd wanneer de AEM wordt bijgewerkt. Het opnieuw indexeren is duur voor middelenimplementaties omdat tekst in elementen (bijvoorbeeld tekst in een PDF-bestand) wordt geëxtraheerd en geïndexeerd. Bij MongoMK-opslagruimten blijven gegevens via het netwerk behouden, waardoor er meer tijd nodig is voor opnieuw indexeren.
+Nieuwe versies van de AEM brengen wijzigingen aan de indexdefinities van eikel aan aangezien de eigenschapreeks wordt uitgebreid. Wijzigingen in de indexen van het eik dwingen opnieuw indexeren wanneer u het AEM-exemplaar bijwerkt. Het opnieuw indexeren is duur voor middelenimplementaties omdat tekst in elementen (bijvoorbeeld tekst in een PDF-bestand) wordt geëxtraheerd en geïndexeerd. Bij MongoMK-opslagruimten blijven gegevens via het netwerk behouden, waardoor er meer tijd nodig is voor opnieuw indexeren.
 
 Het probleem waarmee de meeste klanten tijdens een upgrade worden geconfronteerd, beperkt het downtime-venster. De oplossing moet de het opnieuw indexeren activiteit tijdens de verbetering **overslaan** . Dit kan worden bereikt door de nieuwe indeces te creëren **alvorens** de verbetering uit te voeren, dan eenvoudig hen tijdens de verbetering invoeren.
 
@@ -38,8 +38,8 @@ Bovendien is dit de orde van de stappen zoals die in de benadering worden beschr
 
 1. Tekst van binaire tekens wordt als eerste geëxtraheerd
 2. Doelindexdefinities worden gemaakt
-3. Offline indexen worden gemaakt
-4. De indexen worden vervolgens geïmporteerd tijdens het upgradeproces
+3. Offlineindexen worden gemaakt
+4. De indexen worden dan ingevoerd tijdens het verbeteringsproces
 
 ### Tekst uitnemen {#text-extraction}
 
@@ -147,7 +147,7 @@ Raadpleeg het aanmaken [van](https://jackrabbit.apache.org/oak/docs/query/oak-ru
 
 **Offline indexeren uitvoeren voor de gegenereerde indexdefinities**
 
-Lucene-herindexering kan offline worden uitgevoerd met behulp van een eik-run. Dit proces leidt tot indexgegevens in de schijf onder `indexing-result/indices`. Het schrijft **niet** naar de gegevensopslagplaats en vereist dus niet dat de lopende AEM wordt gestopt. Het gemaakte tekstarchief wordt in dit proces gebruikt:
+Lucene-herindexering kan offline worden uitgevoerd met behulp van een eik-run. Dit proces leidt tot indexgegevens in de schijf onder `indexing-result/indices`. Het schrijft **niet** naar de opslagplaats en vereist dus niet dat de actieve AEM wordt gestopt. Het gemaakte tekstarchief wordt in dit proces gebruikt:
 
 ```
 java -Doak.indexer.memLimitInMB=500 -jar oak-run.jar index <nodestore path> --reindex --doc-traversal-mode --checkpoint <checkpoint> --fds-path <datastore path> --index-definitions-file merge-index-definitions_target.json --pre-extracted-text-dir text-extraction/store

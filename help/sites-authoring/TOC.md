@@ -2,21 +2,21 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: Handleiding voor auteur AEM 6.5
+user-guide-title: AEM 6.5 Handboek voor ontwerpen
 user-guide-description: Learn key concepts for creating content and authoring in AEM.
 translation-type: tm+mt
-source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+source-git-commit: 0b702f58ef7dc85df43bc6d34866dbf3d1100b5e
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '272'
 ht-degree: 41%
 
 ---
 
 
-# Handleiding voor auteur AEM 6.5 {#authoring}
+# AEM 6.5 Handboek voor ontwerpen {#authoring}
 
 + [Overzicht van gebruikershandleiding voor ontwerpen](home.md)
-+ Essentiële taken, gereedschappen en concepten voor AEM Authoring {#essentials}
++ Essentiële taken, gereedschappen en concepten voor AEM ontwerpen {#essentials}
    + [Eerste stappen voor auteurs](first-steps.md)
    + [Pagina&#39;s ontwerpen](page-authoring.md)
    + [Snelle gids voor het ontwerpen van pagina&#39;s](qg-page-authoring.md)
@@ -40,7 +40,7 @@ ht-degree: 41%
    + [Exporteren naar CSV](csv-export.md)
    + [Onderdelen](default-components.md)
    + [Een pagina ontwerpen voor mobiele apparaten](mobile.md)
-   + [AEM-probleem bij ontwerpen oplossen](troubleshooting.md)
+   + [Problemen met AEM bij ontwerpen oplossen](troubleshooting.md)
    + [Sneltoetsen bij het bewerken van pagina&#39;s](page-authoring-keyboard-shortcuts.md)
    + [Best practices voor](best-practices.md)
 + Site- en paginafuncties {#siteandpage}
@@ -53,11 +53,10 @@ ht-degree: 41%
    + [Responsieve lay-out](responsive-layout.md)
    + [Inhoudsinzicht](content-insights.md)
    + [Toegankelijke content maken (WCAG 2.1-compatibiliteit)](creating-accessible-content.md)
-   + [Basisstructuur](scaffolding.md)
    + [Componenten configureren in ontwerpmodus](default-components-designmode.md)
    + [Elementaire componenten](default-components-foundation.md)
    + [Basisstructuur](scaffolding.md)
-   + [Analytics-gegevens pagina bekijken](page-analytics-using.md)
+   + [Gegevens van paginaanalyse bekijken](page-analytics-using.md)
 + Projecten {#projects}
    + [Projecten](projects.md)
    + [Projecten beheren](touch-ui-managing-projects.md)
@@ -77,7 +76,7 @@ ht-degree: 41%
 + Paginaprestaties {#page-performance}
    + [Inhoudsinzicht](content-insights.md)
    + [Paginaprestaties analyseren](ci-analyze.md)
-   + [Analytics-gegevens pagina bekijken](pa-using.md)
+   + [Gegevens van paginaanalyse bekijken](pa-using.md)
    + [Search&amp;Promote toevoegen aan uw pagina](search-and-promote.md)
 + Personalisatie {#personalization}
    + [Personalisatie](personalization.md)
@@ -93,5 +92,5 @@ ht-degree: 41%
    + [Werken met Adobe Campaign](adobe-campaign.md)
    + [Werken met Adobe Campaign Classic en Adobe Campaign Standard](campaign.md)
    + [Je Adobe Campaign als doelgroep instellen](target-adobe-campaign.md)
-   + [Adobe Campaign-formulieren maken in AEM](adobe-campaign-forms.md)
+   + [Adobe Campaign Forms maken in AEM](adobe-campaign-forms.md)
    + [Adobe Campaign-componenten](adobe-campaign-components.md)

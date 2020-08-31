@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: AEM 6.5 Forms Handboek
 user-guide-description: Create, manage, publish, and update digital forms.
 translation-type: tm+mt
-source-git-commit: c6b8e184042394d99ceb099c918b81e2cce49497
+source-git-commit: 0b702f58ef7dc85df43bc6d34866dbf3d1100b5e
 workflow-type: tm+mt
-source-wordcount: '3704'
+source-wordcount: '3700'
 ht-degree: 0%
 
 ---
@@ -398,11 +398,11 @@ ht-degree: 0%
    + [Transactierapporten Billable API&#39;s](using/transaction-reports-billable-apis.md)
    + [Een transactie opnemen voor aangepaste implementaties](using/record-transaction-custom-implementation.md)
 + Beheerdershulp voor AEM Forms op JEE {#administrator-help}
-   + Aan de slag {#get-started}
+   + Dominiëren {#get-started}
       + [Algemene AEM Forms-instellingen](/help/forms/using/admin-help/configure-general-aem-forms-settings.md)
       + [Het licentietype voor de implementatie bijwerken](/help/forms/using/admin-help/update-license-type-deployment.md)
    + Domeinen instellen en beheren {#setup-manage-domains}
-      + [Het toevoegen van domeinen](/help/forms/using/admin-help/adding-domains.md)
+      + [Domeinen toevoegen](/help/forms/using/admin-help/adding-domains.md)
       + [Een domein verwijderen](/help/forms/using/admin-help/delete-domain.md)
       + [Instellingen voor accountvergrendeling configureren](/help/forms/using/admin-help/configure-account-locking-settings.md)
       + [Bestaande domeinen bewerken en converteren](/help/forms/using/admin-help/editing-converting-existing-domains.md)
@@ -501,13 +501,12 @@ ht-degree: 0%
       + [Validatieberichten configureren](/help/forms/using/admin-help/configuring-validation-messages.md)
    + Uitvoer configureren {#configure-output}
       + [Overzicht van uitvoerservice](/help/forms/using/admin-help/overview-8.md)
-      + [De tekenset wijzigen](/help/forms/using/admin-help/change-character-set.md)
       + [XCI-configuratieopties opgeven](/help/forms/using/admin-help/specify-xci-configuration-options.md)
       + [Caching configureren voor Output](/help/forms/using/admin-help/configuring-caching-output.md)
       + [Bestandslocaties voor uitvoer opgeven](/help/forms/using/admin-help/specify-file-locations-output.md)
       + [Lettertypen beschikbaar maken](/help/forms/using/admin-help/make-fonts-available.md)
       + [Te insluiten fonts opgeven](/help/forms/using/admin-help/specify-fonts-embed.md)
-      + [Specificatie beveiligingsinstellingen](/help/forms/using/admin-help/specify-security-settings.md)
+      + [Beveiligingsinstellingen opgeven](/help/forms/using/admin-help/specify-security-settings.md)
       + [De tekenset wijzigen](/help/forms/using/admin-help/change-character-set.md)
    + Workflow voor formulieren configureren{#configure-forms-workflow}
       + [Informatie over beheer en procesterminologie](/help/forms/using/admin-help/administration-process-terminology.md)

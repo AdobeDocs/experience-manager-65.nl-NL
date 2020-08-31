@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: upgrading
 content-type: reference
 translation-type: tm+mt
-source-git-commit: f465b6ffd1a93ddad3db0caf00d4ff797e1b189f
+source-git-commit: 9a4ae73c08657195da2741cccdb196bd7f7142c9
 workflow-type: tm+mt
 source-wordcount: '1343'
 ht-degree: 0%
@@ -147,7 +147,7 @@ Raadpleeg het aanmaken [van](https://jackrabbit.apache.org/oak/docs/query/oak-ru
 
 **Offline indexeren uitvoeren voor de gegenereerde indexdefinities**
 
-Lucene-herindexering kan offline worden uitgevoerd met behulp van een eik-run. Dit proces leidt tot indexgegevens in de schijf onder `indexing-result/indices`. Het schrijft **niet** naar de opslagplaats en vereist dus niet dat de actieve AEM wordt gestopt. Het gemaakte tekstarchief wordt in dit proces gebruikt:
+Lucene-herindexering kan offline worden uitgevoerd met behulp van een eik-run. Dit proces leidt tot indexgegevens in de schijf onder `indexing-result/indexes`. Het schrijft **niet** naar de opslagplaats en vereist dus niet dat de actieve AEM wordt gestopt. Het gemaakte tekstarchief wordt in dit proces gebruikt:
 
 ```
 java -Doak.indexer.memLimitInMB=500 -jar oak-run.jar index <nodestore path> --reindex --doc-traversal-mode --checkpoint <checkpoint> --fds-path <datastore path> --index-definitions-file merge-index-definitions_target.json --pre-extracted-text-dir text-extraction/store
@@ -155,7 +155,7 @@ java -Doak.indexer.memLimitInMB=500 -jar oak-run.jar index <nodestore path> --re
 Sample <checkpoint> looks like r16c85700008-0-8
 —fds-path: path to data store.
 --pre-extracted-text-dir: Directory of pre-extracted text.
-merge-index-definitions_target: JSON file having merged definitions for the target AEM instance. indices in this file will be re-indexed.
+merge-index-definitions_target: JSON file having merged definitions for the target AEM instance. indexes in this file will be re-indexed.
 ```
 
 Het gebruik van de `--doc-traversal-mode` parameter is handig bij MongoMK-installaties, omdat dit de herindextijd aanzienlijk verbetert door opslagruimteinhoud in een lokaal, plat bestand te spoolen. Er is echter meer schijfruimte nodig van tweemaal de grootte van de opslagplaats.
@@ -164,9 +164,9 @@ In het geval van MongoMK kan dit proces worden versneld als deze stap wordt uitg
 
 Aanvullende technische details zijn te vinden in de [documentatie bij het uitvoeren van de eik voor indexering](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html).
 
-### Indices importeren {#importing-indices}
+### Indexen importeren {#importing-indexes}
 
-Met AEM 6.4 en nieuwere versies, heeft AEM de ingebouwde capaciteit om indexen van schijf op startopeenvolging in te voeren. De map `<repository>/indexing-result/indices` wordt gecontroleerd op de aanwezigheid van indexgegevens tijdens het opstarten. U kunt de vooraf gemaakte index tijdens het [upgradeproces](in-place-upgrade.md#performing-the-upgrade) naar de bovenstaande locatie kopiëren voordat u begint met de nieuwe versie van de **doel** AEM jar. AEM importeert het in de opslagplaats en verwijdert het overeenkomstige controlepunt uit het systeem. Een herindex wordt dus volledig vermeden.
+Met AEM 6.4 en nieuwere versies, heeft AEM de ingebouwde capaciteit om indexen van schijf op startopeenvolging in te voeren. De map `<repository>/indexing-result/indexes` wordt gecontroleerd op de aanwezigheid van indexgegevens tijdens het opstarten. U kunt de vooraf gemaakte index tijdens het [upgradeproces](in-place-upgrade.md#performing-the-upgrade) naar de bovenstaande locatie kopiëren voordat u begint met de nieuwe versie van de **doel** AEM jar. AEM importeert het in de opslagplaats en verwijdert het overeenkomstige controlepunt uit het systeem. Een herindex wordt dus volledig vermeden.
 
 ## Aanvullende tips en probleemoplossing {#troubleshooting}
 

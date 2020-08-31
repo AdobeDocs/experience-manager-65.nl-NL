@@ -5,9 +5,9 @@ audience: end-user
 user-guide-title: AEM 6.5 Klassieke UI Authoring User Guide
 user-guide-description: This guide covers the concepts of authoring in AEM in the classic user interface.
 translation-type: tm+mt
-source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+source-git-commit: 0b702f58ef7dc85df43bc6d34866dbf3d1100b5e
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '257'
 ht-degree: 21%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 21%
    + [Pagina&#39;s publiceren](classic-page-author-publish-pages.md)
    + [Pagina-eigenschappen bewerken](classic-page-author-edit-page-properties.md)
    + [Annotaties bij het bewerken van een pagina](classic-page-author-annotations.md)
-   + [AEM-probleem bij ontwerpen oplossen](classic-page-author-troubleshooting.md)
+   + [Problemen met AEM bij ontwerpen oplossen](classic-page-author-troubleshooting.md)
    + [Toegankelijke content maken (WCAG 2.0-compatibiliteit)](classic-page-author-accessible-content.md)
    + [Een pagina ontwerpen voor mobiele apparaten](classic-feature-mobile.md)
    + [Componenten voor paginaontwerp](classic-page-author-edit-mode.md)
@@ -61,10 +61,8 @@ ht-degree: 21%
 + Personalisatie {#personalization}
    + [Inzicht in segmentering](classic-personalization-campaigns-segmentation.md)
    + [Campagnebeheer](classic-personalization-campaigns.md)
-   + [Teasers en strategieën](classic-personalization-campaigns-teasers-strategy.md)
    + [Openingspagina&#39;s](classic-personalization-campaigns-landingpage.md)
-   + [Target-aanbiedingen](classic-personalization-campaigns-target-offers.md)
-   + [Werken met de manager van de Campagne van de Marketing](classic-personalization-campaigns-mktg-manager.md)
+   + [Doelaanbiedingen](classic-personalization-campaigns-target-offers.md)
    + [E-mailmarketing](classic-personalization-campaigns-email.md)
    + [Onbetaalde e-mails bijhouden](classic-personalization-campaigns-email-tracking-bounces.md)
    + [Teasers en strategieën](classic-personalization-campaigns-teasers-strategy.md)
@@ -78,12 +76,12 @@ ht-degree: 21%
    + [Werken met Adobe Campaign](classic-personalization-ac.md)
    + [Adobe Campaign-componenten](classic-personalization-ac-components.md)
    + [Je Adobe Campaign als doelgroep instellen](classic-personalization-ac-target.md)
-   + [Adobe Campaign-formulieren maken in AEM](classic-personalization-ac-forms.md)
+   + [Adobe Campaign Forms maken in AEM](classic-personalization-ac-forms.md)
 + Elementen ontwerpen in klassieke gebruikersinterface {#assets}
    + [Werken met elementen](classicui-assets.md)
-   + [Dynamic Media-elementen leveren](dynamic-media-assets-delivering.md)
-   + [Dynamic Media-elementen toevoegen aan pagina&#39;s](dynamic-media-assets-adding-to-page.md)
-   + [Het toevoegen van Eigenschappen Scene7 aan uw Pagina](manage-assets-classic-s7.md)
+   + [Dynamische media-elementen leveren](dynamic-media-assets-delivering.md)
+   + [Dynamische media-elementen toevoegen aan pagina&#39;s](dynamic-media-assets-adding-to-page.md)
+   + [Scene7-functies aan uw pagina toevoegen](manage-assets-classic-s7.md)
    + [Video](manage-assets-classic-s7-video.md)
    + [Werken met Dynamic Media](dynamic-media-assets.md)
    + [Naamconventies voor het testen van elementen](asset-naming-conventions.md)

@@ -2,18 +2,18 @@
 cloud: experience-cloud
 product: experience manager
 audience: end-user
-user-guide-title: Opmerkingen bij de release AEM 6.5
+user-guide-title: AEM 6.5 Opmerkingen bij de release
 user-guide-description: Learn about the latest new features in AEM 6.5 in the release notes.
 translation-type: tm+mt
-source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+source-git-commit: c1af919d4c0fd984249e1a7009274c63b8ce9adb
 workflow-type: tm+mt
-source-wordcount: '52'
+source-wordcount: '57'
 ht-degree: 3%
 
 ---
 
 
-# Opmerkingen bij de release AEM 6.5 {#release-notes}
+# AEM 6.5 Opmerkingen bij de release {#release-notes}
 
 + [Overzicht AEM 6.5](home.md)
 + [Algemene opmerkingen bij de release](release-notes.md)
@@ -21,10 +21,11 @@ ht-degree: 3%
    + [Nieuwe functies](new-features-latest-service-pack.md)
    + [Opmerkingen bij de release Service Pack 5](sp-release-notes.md)
    + [Opmerkingen bij de vorige release Service Pack](previous-hotfixes-featurepacks.md)
-+ [Opmerkingen bij de release AEM Sites](sites.md)
-+ [Opmerkingen bij de release AEM Assets](assets.md)
-+ [Opmerkingen bij de release AEM Communities](communities-release-notes.md)
++ [Opmerkingen bij de release van AEM Sites](sites.md)
++ [Opmerkingen bij de release van AEM Assets](assets.md)
++ [AEM Forms JEE Patch Installer](jee-patch-installer-65.md)
++ [Opmerkingen bij de release van AEM Communities](communities-release-notes.md)
 + [Verouderde en verwijderde functies](deprecated-removed-features.md)
 + [Bekende problemen](known-issues.md)
-+ [AEM Foundation en Repository](wcm-platform.md)
++ [AEM stichting en bewaarplaats](wcm-platform.md)
 + [Status van TouchUI-functie](touch-ui-features-status.md)

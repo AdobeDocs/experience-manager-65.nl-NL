@@ -4,9 +4,9 @@ description: De nota's van de versie specifiek voor [!DNL Adobe Experience Manag
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 6da27dfda2bb504fc7a1de24260e94141f1a22ab
+source-git-commit: f072522706074d5b3f4e4749caf4379ff8fdfcc3
 workflow-type: tm+mt
-source-wordcount: '4221'
+source-wordcount: '4219'
 ht-degree: 0%
 
 ---
@@ -154,7 +154,7 @@ Hier volgt een lijst met oplossingen uit de release van [!DNL Experience Manager
 
    *Afbeelding:[!UICONTROL Search for Help]in[!UICONTROL Help]menu*
 
-   * het foutbericht als een onjuiste waarde wordt ingevoerd in [!ICONTROL Impersonate as] field under [!UICONTROL User] option en focus correct naar het tekstveld wordt verplaatst (NPR-33804).
+   * het foutbericht als een onjuiste waarde wordt ingevoerd in het [!UICONTROL Impersonate as] veld onder [!UICONTROL User] optie en de focus correct naar het tekstveld wordt verplaatst (NPR-33804).
 
    ![Menu Gebruiker in koptekst](assets/User_aem_header.png)
 

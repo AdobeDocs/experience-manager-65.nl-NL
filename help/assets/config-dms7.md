@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: d357b5832a3bd95c372c26fd7553eba70583eb6f
 workflow-type: tm+mt
-source-wordcount: '5440'
+source-wordcount: '5591'
 ht-degree: 6%
 
 ---
@@ -71,17 +71,17 @@ Met Feature Pack 18912 kunt u opgenomen elementen bulksgewijs via FTP importeren
 
 Zie [Installeren van functiepak 18912 voor bulkassemigratie](/help/assets/bulk-ingest-migrate.md) voor meer informatie.
 
-## Dynamische mediaconfiguratie maken {#configuring-dynamic-media-cloud-services}
+## Dynamische mediaconfiguratie maken in Cloud Services {#configuring-dynamic-media-cloud-services}
 
 **Voordat u dynamische media** configureert: Nadat u uw provisioning-e-mail met Dynamic Media-referenties hebt ontvangen, moet u zich [aanmelden](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) bij Dynamic Media Classic om uw wachtwoord te wijzigen. Het wachtwoord dat in de e-mailprovisioning wordt ingevoerd, wordt door het systeem gegenereerd en is alleen bedoeld als tijdelijk wachtwoord. Het is belangrijk dat u het wachtwoord bijwerkt zodat Dynamic Media Cloud Service is ingesteld met de juiste referenties.
 
 ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
-**Een dynamische mediaconfiguratie maken**
+**Om een Dynamische Configuratie van Media in Cloud Services te creëren**
 
-1. Tik in AEM op het AEM om de globale navigatieconsole te openen en tik op het pictogram Gereedschappen of tik vervolgens op **[!UICONTROL Cloud Services > Dynamic Media Configuration.]**
+1. Tik in AEM op het AEM logo om toegang te krijgen tot de algemene navigatieconsole en tik op het pictogram Gereedschappen en tik vervolgens op **[!UICONTROL Cloud Services > Dynamic Media Configuration.]**
 1. Tik op de pagina Configuratiebrowser voor dynamische media in het linkerdeelvenster op **[!UICONTROL global]** (tik niet op het mappictogram links van **[!UICONTROL global]** of selecteer dit niet) en tik vervolgens op **[!UICONTROL Create.]**
-1. Voer op de pagina Dynamische mediaconfiguratie maken een titel in, het e-mailadres van de Dynamic Media-account, het wachtwoord en selecteer vervolgens het gebied. Deze worden door Adobe in de provisioning-e-mail aan u verstrekt. Neem contact op met de ondersteuningsafdeling als u dit niet hebt ontvangen.
+1. Voer op de **[!UICONTROL Create Dynamic Media Configuration]** pagina een titel in, het e-mailadres van de Dynamic Media-account, het wachtwoord en selecteer vervolgens uw regio. Deze worden door Adobe in de provisioning-e-mail aan u verstrekt. Neem contact op met de ondersteuningsafdeling als u dit niet hebt ontvangen.
 
    Klik op **[!UICONTROL Connect to Dynamic Media.]**
 
@@ -89,7 +89,7 @@ Zie [Installeren van functiepak 18912 voor bulkassemigratie](/help/assets/bulk-i
    >
    >Nadat u een e-mailbericht met dynamische media-referenties hebt ontvangen, [meldt u zich aan bij](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) Dynamic Media Classic om uw wachtwoord te wijzigen. Het wachtwoord dat in de e-mailprovisioning wordt ingevoerd, wordt door het systeem gegenereerd en is alleen bedoeld als tijdelijk wachtwoord. Het is belangrijk dat u het wachtwoord bijwerkt zodat de Dynamic Media Cloud Service wordt ingesteld met de juiste referenties.
 
-1. Wanneer de verbinding tot stand is gebracht, kunt u ook het volgende instellen:
+1. Wanneer de verbinding is gelukt, stelt u het volgende in. Koppen met een sterretje (*) zijn vereist:
 
    * **[!UICONTROL Company]** - de naam van de Dynamic Media-account. Het is mogelijk dat u meerdere Dynamic Media-accounts hebt voor verschillende submerken, divisies of verschillende testomgevingen/productieomgevingen.
 
@@ -98,6 +98,7 @@ Zie [Installeren van functiepak 18912 voor bulkassemigratie](/help/assets/bulk-i
    * **[!UICONTROL Publishing Assets]** - U kunt uit de volgende drie opties kiezen:
       * **[!UICONTROL Immediately]** betekent dat wanneer elementen worden geüpload, het systeem de elementen opgeeft en de URL/Embed onmiddellijk levert. Er is geen tussenkomst van de gebruiker nodig om elementen te publiceren.
       * **[!UICONTROL Upon Activation]** betekent dat u het element eerst expliciet moet publiceren voordat een URL/koppeling Insluiten wordt opgegeven.
+      * **[!UICONTROL Selective Publish]** Met deze opties kunt u bepalen welke mappen worden gepubliceerd in dynamische media, zodat u functies kunt gebruiken, zoals Slim uitsnijden of Dynamische uitvoeringen of mappen die alleen in AEM worden gepubliceerd voor voorvertoning. dezelfde activa worden *niet* in Dynamic Media gepubliceerd voor levering in het publieke domein.<br>U kunt deze optie hier in de map instellen **[!UICONTROL Dynamic Media Cloud Configuration]** of u kunt deze optie desgewenst instellen op mapniveau, in de map **[!UICONTROL Properties]**.<br>Zie [Werken met Selectieve publicatie in dynamische media.](/help/assets/selective-publishing.md)<br>Als u deze configuratie later wijzigt of deze later wijzigt op mapniveau, hebben die wijzigingen alleen invloed op nieuwe elementen die u vanaf dat punt uploadt. De publicatiestatus van bestaande elementen in de map blijft ongewijzigd totdat u deze handmatig wijzigt vanuit een **[!UICONTROL Quick Publish]** van beide of het **[!UICONTROL Manage Publication]** dialoogvenster.
    * **[!UICONTROL Secure Preview Server]** - Hiermee kunt u het URL-pad naar de voorvertoningsserver voor veilige vertoningen opgeven. Dat wil zeggen dat AEM na het genereren van uitvoeringen veilig toegang hebben tot de externe dynamische media-uitvoeringen en deze kunnen voorvertonen (er worden geen binaire bestanden teruggestuurd naar de AEM-instantie).
 Tenzij u een speciale regeling hebt om de server van uw eigen bedrijf of een speciale server te gebruiken, adviseert Adobe Systems dat u deze het plaatsen zoals gespecificeerd verlaat.
 
@@ -106,7 +107,7 @@ Tenzij u een speciale regeling hebt om de server van uw eigen bedrijf of een spe
    * **[!UICONTROL Dynamic Media sync mode]**
       * **[!UICONTROL Enabled by default]** - De configuratie wordt standaard toegepast op alle mappen, tenzij u een map markeert die specifiek is bedoeld voor uitsluiting. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
       * **[!UICONTROL Disabled by default]** - De configuratie wordt pas op een map toegepast als u een geselecteerde map expliciet markeert voor synchronisatie met Dynamic Media.
-Als u een geselecteerde map wilt markeren voor synchronisatie met Dynamic Media, selecteert u een elementmap en klikt u vervolgens op **[!UICONTROL Properties.]** het tabblad **[!UICONTROL Details]** Op in de **[!UICONTROL Dynamic Media sync mode]** vervolgkeuzelijst. Kies een van de volgende drie opties. Tik op **[!UICONTROL Save.]** *Onthoud wanneer u klaar bent: Deze drie opties zijn niet beschikbaar als u Alle inhoud ****synchroniseren eerder hebt geselecteerd.*
+Als u een geselecteerde map wilt markeren voor synchronisatie met Dynamic Media, selecteert u een elementmap en klikt u vervolgens op **[!UICONTROL Properties.]** het tabblad **[!UICONTROL Details]** Op in de **[!UICONTROL Dynamic Media sync mode]** vervolgkeuzelijst. Kies een van de volgende drie opties. Tik op **[!UICONTROL Save.]** *Onthoud wanneer u klaar bent: Deze drie opties zijn niet beschikbaar als u Alle inhoud ****synchroniseren eerder hebt geselecteerd.* Zie ook [Werken met Selectief publiceren op mapniveau in Dynamische media.](/help/assets/selective-publishing.md)
          * **[!UICONTROL Inherited]** - Geen expliciete synchronisatiewaarde in de map; in plaats daarvan overerft de map de synchronisatiewaarde van een van de bovenliggende mappen of de standaardmodus in de cloudconfiguratie. De gedetailleerde status voor overgeërfde toont als knopinfo.
          * **[!UICONTROL Enable for sub-folders]** - Neem alles op in deze substructuur voor synchronisatie met dynamische media. De mapspecifieke instellingen overschrijven de standaardmodus in de cloudconfiguratie.
          * **[!UICONTROL Disabled for sub-folders]** - Sluit alles in deze substructuur uit van synchroniseren naar dynamische media.

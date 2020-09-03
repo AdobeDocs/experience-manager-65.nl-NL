@@ -3,9 +3,9 @@ title: Slimme tags en zoekopdrachten beheren
 description: Onnauwkeurige slimme tags bijwerken of verwijderen om de relevantie van tags te verbeteren
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: deb8ce3c6758efa9a127bfad4163ebd1c0f6f97a
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '455'
 ht-degree: 0%
 
 ---
@@ -44,3 +44,7 @@ De zoekresultaten die overeenkomen met alle zoektermen in metagegevensvelden wor
 1. komt overeen met `woman running` de waarden in de verschillende metagegevensvelden.
 1. overeenkomende waarden `woman running` in slimme tags.
 1. overeenkomende met `woman` of van `running` in slimme tags.
+
+>[!CAUTION]
+>
+>Als het indexeren van Lucene uit [!DNL Adobe Experience Manager] toen wordt gedaan werkt het onderzoek dat op slimme markeringen wordt gebaseerd niet zoals verwacht.

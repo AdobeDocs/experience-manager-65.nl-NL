@@ -7,7 +7,7 @@ topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6e7368663d18dd0b5b46be9e292dba17577acf70
+source-git-commit: 6890af51d240cbdf84d8d95215ac0ea80326c713
 workflow-type: tm+mt
 source-wordcount: '2538'
 ht-degree: 0%
@@ -202,6 +202,7 @@ U kunt deze selectievakjes ook gebruiken in combinatie met de zoekvoorspelling o
    | Publiceren naar dynamische media | Selectieve publicatie | Alleen gepubliceerd naar dynamische media. |
    | Publiceren van dynamische media ongedaan maken | Onmiddellijk of bij activering | Niet ongepubliceerd van AEM, of Dynamic Media, of beide. |
    | Publiceren van dynamische media ongedaan maken | Selectieve publicatie | Niet gepubliceerd met alleen Dynamic Media. |
+
 1. Stel onder **[!UICONTROL Schedule]**de timing van de deactivering in.
 | Geselecteerd schema | Wat gebeurt er? |
 | — | — |

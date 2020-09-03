@@ -8,21 +8,21 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: e6c9b50b-c27c-48bf-b3c0-9994e7bf6d7e
 translation-type: tm+mt
-source-git-commit: 3eacfe8a79d155dddde8908d05b05790d048b0c5
+source-git-commit: 10eef47ec15aef1f17238702520848df4ed36342
 workflow-type: tm+mt
-source-wordcount: '652'
-ht-degree: 19%
+source-wordcount: '679'
+ht-degree: 18%
 
 ---
 
 
 # De CDN-cache ongeldig maken door middel van Dynamic Media Classic {#invalidating-your-cdn-cached-content}
 
-Dynamische media-elementen worden door de CDN in cache geplaatst voor snelle levering. Wanneer u echter updates aan een element aanbrengt, wilt u deze wijzigingen mogelijk direct van kracht laten worden. Door de CDN-inhoud (Content Delivery Network) in de cache te ongeldig te maken, kunt u snel elementen bijwerken die door Dynamic Media worden geleverd, in plaats van te wachten tot de cache verloopt.
+Dynamische media-elementen worden door de CDN in cache geplaatst voor snelle levering. Wanneer u echter updates aan een element aanbrengt, wilt u deze wijzigingen mogelijk direct van kracht laten worden. Door de inhoud van uw CDN (Content Delivery Network) die in de cache is opgeslagen te valideren, kunt u snel elementen bijwerken die door Dynamic Media worden geleverd, in plaats van te wachten tot de cache verloopt.
 
 >[!IMPORTANT]
 >
->De volgende stappen zijn slechts op Dynamische Media in AEM 6.5, Service Pack 5 of vroeger van toepassing.
+>De volgende stappen zijn slechts op Dynamische Media in AEM 6.5, Service Pack 5 (AEM 6.5.5) of vroeger van toepassing.<br>Als u Dynamische Media in AEM 6.5, Service Pack 6 (AEM 6.5.6) of later gebruikt, volg de stappen die in het [Onvalsing van het CDN geheime voorgeheugen door middel van Dynamische Media worden gevonden](/help/assets/invalidate-cdn-cache-dynamic-media.md)
 
 Zie ook Overzicht van [cache in Dynamic Media Classic (Scene7)](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
 

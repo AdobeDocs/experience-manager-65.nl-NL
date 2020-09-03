@@ -4,9 +4,9 @@ description: De nota's van de versie specifiek voor [!DNL Adobe Experience Manag
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f072522706074d5b3f4e4749caf4379ff8fdfcc3
+source-git-commit: 32addae877604a242c97eac3ed81bbc2f55ec60a
 workflow-type: tm+mt
-source-wordcount: '4219'
+source-wordcount: '4235'
 ht-degree: 0%
 
 ---
@@ -361,6 +361,8 @@ Hier volgt een lijst met oplossingen uit de release van [!DNL Experience Manager
 * Wanneer u Designer opent, wordt in het welkomstscherm een onjuist jaar weergegeven (CQ-4295289).
 
 * Wanneer u [!DNL Acrobat DC] op de server installeert, is de **[!UICONTROL Distribute Form]** optie inactief (CQ-4296304).
+
+Voor informatie over veiligheidsupdates, zie de pagina [van bulletins van de](https://helpx.adobe.com/security/products/experience-manager.html)Experience Manager veiligheid.
 
 ## 6.5.6.0 installeren {#install}
 

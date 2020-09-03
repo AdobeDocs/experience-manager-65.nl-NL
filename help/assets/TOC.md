@@ -5,10 +5,10 @@ audience: end-user
 user-guide-title: Experience Manager 6.5 Gebruikershandleiding voor middelen
 user-guide-description: Create, manage, deliver, and optimize digital assets.
 translation-type: tm+mt
-source-git-commit: 9e67e252348f471c052f6c3e88aea61d7a309241
+source-git-commit: 32f8e42325314d5afbec3b3e1611fd696e1a4603
 workflow-type: tm+mt
-source-wordcount: '635'
-ht-degree: 38%
+source-wordcount: '642'
+ht-degree: 37%
 
 ---
 
@@ -72,6 +72,7 @@ ht-degree: 38%
    + [URL&#39;s koppelen aan uw webapplicatie](linking-urls-to-yourwebapplication.md)
    + [Regelsets gebruiken om URL&#39;s te transformeren](using-rulesets-to-transform-urls.md)
    + [Dynamic Media-assets publiceren](publishing-dynamicmedia-assets.md)
+   + [Werken met Selectief publiceren in dynamische media](selective-publishing.md)
    + [Het ongeldig maken van uw CDN geheime voorgeheugen door middel van Dynamic Media Classic](invalidate-cdn-cache-dm-classic.md)
    + [Feature Pack 18912 installeren voor migratie van grote hoeveelheden bedrijfsmiddelen](bulk-ingest-migrate.md)
    + [Werken met kiezers](working-with-selectors.md)

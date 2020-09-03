@@ -4,9 +4,9 @@ description: Leer hoe u de vereiste elementen [!DNL Adobe Experience Manager] in
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5bbdc80f199a2af38631a5443c46daae827abb52
+source-git-commit: deb8ce3c6758efa9a127bfad4163ebd1c0f6f97a
 workflow-type: tm+mt
-source-wordcount: '5807'
+source-wordcount: '5827'
 ht-degree: 4%
 
 ---
@@ -354,6 +354,10 @@ Het visuele onderzoek gebruikt slim etiketteren en vereist [!DNL Experience Mana
 1. (Optioneel) Als u het zoekformulier hebt aangepast, kopieert u het `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` knooppunt naar `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Sla de wijzigingen op.
 
 Zie slimme tags in de Experience Manager [en](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/smart-tags-feature-video-use.html) hoe u slimme tags [](/help/assets/managing-smart-tags.md)kunt beheren voor gerelateerde informatie.
+
+>[!CAUTION]
+>
+>Als het indexeren van Lucene uit [!DNL Adobe Experience Manager]wordt gedaan, dan het onderzoek dat op slimme markeringen wordt gebaseerd werkt niet zoals verwacht.
 
 ### Verplichte metagegevens {#mandatorymetadata}
 

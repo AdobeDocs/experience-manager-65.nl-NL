@@ -8,7 +8,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: e6c9b50b-c27c-48bf-b3c0-9994e7bf6d7e
 translation-type: tm+mt
-source-git-commit: 10eef47ec15aef1f17238702520848df4ed36342
+source-git-commit: 54645149dc4968c1c4f85eedb5ce4d71f80c3b64
 workflow-type: tm+mt
 source-wordcount: '679'
 ht-degree: 18%
@@ -22,7 +22,7 @@ Dynamische media-elementen worden door de CDN in cache geplaatst voor snelle lev
 
 >[!IMPORTANT]
 >
->De volgende stappen zijn slechts op Dynamische Media in AEM 6.5, Service Pack 5 (AEM 6.5.5) of vroeger van toepassing.<br>Als u Dynamische Media in AEM 6.5, Service Pack 6 (AEM 6.5.6) of later gebruikt, volg de stappen die in het [Onvalsing van het CDN geheime voorgeheugen door middel van Dynamische Media worden gevonden](/help/assets/invalidate-cdn-cache-dynamic-media.md)
+>De volgende stappen zijn slechts op Dynamische Media in AEM 6.5, Service Pack 5 (AEM 6.5.5) of vroeger van toepassing.<br>Als u Dynamische Media in AEM 6.5, Service Pack 6 (AEM 6.5.6) of later gebruikt, volg de stappen die in het [Onvalsing van het CDN geheime voorgeheugen door middel van Dynamische Media worden gevonden.](/help/assets/invalidate-cdn-cache-dynamic-media.md)
 
 Zie ook Overzicht van [cache in Dynamic Media Classic (Scene7)](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
 

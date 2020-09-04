@@ -12,9 +12,9 @@ discoiquuid: b97482f2-2791-4d14-ae82-388302d9eab3
 docset: aem65
 legacypath: /deploy/platform/data-store-config
 translation-type: tm+mt
-source-git-commit: f0ec3415ffef70c985828f17b32dc0d453c1ae7c
+source-git-commit: 93cb84763cfd77b67a5dd1481caab79337f6e7c4
 workflow-type: tm+mt
-source-wordcount: '3427'
+source-wordcount: '3423'
 ht-degree: 0%
 
 ---
@@ -190,7 +190,7 @@ Na het downloaden kunt u de S3-connector als volgt installeren en configureren:
 1. Bewerk het bestand en voeg de configuratieopties toe die nodig zijn voor de installatie.
 1. Start AEM.
 
-### Een upgrade uitvoeren naar een nieuwe versie van de 1.10.x S3-connector {#upgrading-to-a-new-version-of-the-x-s-connector}
+### Een upgrade uitvoeren naar een nieuwe versie van de 1.10.x S3-connector {#upgrading-to-a-new-version-of-the-s-connector}
 
 Voer de volgende stappen uit als u wilt upgraden naar een nieuwe versie van de 1.10.x S3-connector (bijvoorbeeld van 1.10.0 naar 1.10.4):
 
@@ -204,7 +204,7 @@ Voer de volgende stappen uit als u wilt upgraden naar een nieuwe versie van de 1
 
    >[!NOTE]
    >
-   >De hierboven weergegeven bestandsnamen worden alleen ter illustratie gebruikt en zijn niet definitief.
+   >De hierboven vermelde bestandsnamen worden alleen ter illustratie gebruikt.
 
 1. Download de nieuwste versie van het 1.8.x-functiepakket van de [Adobe Repository](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/).
 1. Pak de inhoud uit en ga naar een aparte map. `jcr_root/libs/system/install/15`

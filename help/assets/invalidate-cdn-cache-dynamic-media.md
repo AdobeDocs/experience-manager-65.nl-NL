@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5.6/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 6a44c4ac11f2fdf794895c28468c2a600a09b3c0
+source-git-commit: 54645149dc4968c1c4f85eedb5ce4d71f80c3b64
 workflow-type: tm+mt
 source-wordcount: '1259'
 ht-degree: 0%
@@ -20,7 +20,7 @@ De dynamische activa van Media worden in het voorgeheugen ondergebracht door CDN
 
 >[!IMPORTANT]
 >
->De volgende stappen zijn alleen van toepassing op Dynamic Media - Scene7-modus in AEM 6.5, Service Pack 6 (AEM 6.5.6) of hoger. Deze CDN-validatiefunctie vereist ook dat u de uit-van-de-box CDN gebruikt die is gebundeld met AEM Dynamic Media; andere aangepaste CDN&#39;s worden niet ondersteund.<br>Als u Dynamische Media in AEM 6.5, Service Pack 5 (AEM 6.5.5) of vroeger gebruikt, volg de stappen die in het [Invalideren van het CDN geheime voorgeheugen door middel van Dynamische Media Classic worden gevonden](/help/assets/invalidate-cdn-cache-dm-classic.md)
+>De volgende stappen zijn alleen van toepassing op Dynamic Media - Scene7-modus in AEM 6.5, Service Pack 6 (AEM 6.5.6) of hoger. Deze CDN-validatiefunctie vereist ook dat u de uit-van-de-box CDN gebruikt die is gebundeld met AEM Dynamic Media; andere aangepaste CDN&#39;s worden niet ondersteund.<br>Als u Dynamische Media in AEM 6.5, Service Pack 5 (AEM 6.5.5) of vroeger gebruikt, volg de stappen die in het [Invalideren van het CDN geheime voorgeheugen door middel van Dynamische Klassiek van Media worden gevonden.](/help/assets/invalidate-cdn-cache-dm-classic.md)
 
 Zie ook [Caching overzicht in Dynamische Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
 

@@ -7,7 +7,7 @@ topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 68e3e80b1c1dda8352ff30989f85f83e82bde261
+source-git-commit: 29f91713f5760ab0b5a557b5c811ef2efee1cc61
 workflow-type: tm+mt
 source-wordcount: '2538'
 ht-degree: 1%
@@ -114,6 +114,7 @@ Zie [Creating a Dynamic Media Configuration](#configuring-dynamic-media-cloud-se
 
 1. Tik in de rechterbovenhoek van de **[!UICONTROL Manage Publication]** pagina op **[!UICONTROL Next.]**
 1. Voer op de **[!UICONTROL Manage Publication - Scope]** pagina een van de volgende handelingen uit:
+
    * Selecteer zo nodig een of meer elementen die u uit publicatie wilt verwijderen.
    * In the upper-right corner of the **[!UICONTROL Manage Publication - Scope]** page, tap **[!UICONTROL Publish]** or **[!UICONTROL Publish to Dynamic Media.]**
 1. Tik op **[!UICONTROL OK.]**

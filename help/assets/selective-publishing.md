@@ -7,7 +7,7 @@ topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4a144e53217c4353818d778415cc303b21412566
+source-git-commit: 68e3e80b1c1dda8352ff30989f85f83e82bde261
 workflow-type: tm+mt
 source-wordcount: '2538'
 ht-degree: 1%
@@ -98,7 +98,7 @@ Zie [Creating a Dynamic Media Configuration](#configuring-dynamic-media-cloud-se
       >
       >Als dit niet op de werkbalk wordt weergegeven, tikt u op de knop Ovaal en selecteert u **[!UICONTROL Manage Publication]** **[!UICONTROL Manage Publication]** in het lijstmenu.
 
-1. Selecteer op de **[!UICONTROL Manage Publication – Options]** pagina onder **[!UICONTROL Action]** het gewenste activeringstype.
+1. Selecteer op de **[!UICONTROL Manage Publication - Options]** pagina onder **[!UICONTROL Action]** het gewenste activeringstype.
 
    | Actie | Beschrijving |
    | --- | --- |
@@ -113,9 +113,9 @@ Zie [Creating a Dynamic Media Configuration](#configuring-dynamic-media-cloud-se
    | **[!UICONTROL Later]** | Selecteer deze optie om de elementen op een bepaalde datum en tijd te publiceren. |
 
 1. Tik in de rechterbovenhoek van de **[!UICONTROL Manage Publication]** pagina op **[!UICONTROL Next.]**
-1. Voer op de **[!UICONTROL Manage Publication – Scope]** pagina een van de volgende handelingen uit:
+1. Voer op de **[!UICONTROL Manage Publication - Scope]** pagina een van de volgende handelingen uit:
    * Selecteer zo nodig een of meer elementen die u uit publicatie wilt verwijderen.
-   * In the upper-right corner of the **[!UICONTROL Manage Publication – Scope]** page, tap **[!UICONTROL Publish]** or **[!UICONTROL Publish to Dynamic Media.]**
+   * In the upper-right corner of the **[!UICONTROL Manage Publication - Scope]** page, tap **[!UICONTROL Publish]** or **[!UICONTROL Publish to Dynamic Media.]**
 1. Tik op **[!UICONTROL OK.]**
 
 ### Publicatie van middelen via Dynamic Media selectief ongedaan maken of AEM met Publicatie beheren {#selective-unpublish-manage-publication}
@@ -129,7 +129,7 @@ Zie [Creating a Dynamic Media Configuration](#configuring-dynamic-media-cloud-se
       >
       >Als dit niet op de werkbalk wordt weergegeven, tikt u op de knop Ovaal en selecteert u **[!UICONTROL Manage Publication]** **[!UICONTROL Manage Publication]** in het lijstmenu.
 
-1. Selecteer op de **[!UICONTROL Manage Publication – Options]** pagina onder **[!UICONTROL Action]** het gewenste type deactivering.
+1. Selecteer op de **[!UICONTROL Manage Publication - Options]** pagina onder **[!UICONTROL Action]** het gewenste type deactivering.
 
    | Actie | Beschrijving |
    | --- | --- |
@@ -144,9 +144,9 @@ Zie [Creating a Dynamic Media Configuration](#configuring-dynamic-media-cloud-se
    | **[!UICONTROL Later]** | Selecteer deze optie om de publicatie van de elementen op een bepaalde datum en tijd ongedaan te maken. |
 
 1. Tik in de rechterbovenhoek van de **[!UICONTROL Manage Publication]** pagina op **[!UICONTROL Next.]**
-1. Voer op de **[!UICONTROL Manage Publication – Scope]** pagina een van de volgende handelingen uit:
+1. Voer op de **[!UICONTROL Manage Publication - Scope]** pagina een van de volgende handelingen uit:
    * Selecteer een of meer elementen die u uit het ongedaan maken van de publicatie wilt verwijderen.
-   * In the upper-right corner of the **[!UICONTROL Manage Publication – Scope]** page, tap **[!UICONTROL Unpublish]** or **[!UICONTROL Unpublish from Dynamic Media.]**
+   * In the upper-right corner of the **[!UICONTROL Manage Publication - Scope]** page, tap **[!UICONTROL Unpublish]** or **[!UICONTROL Unpublish from Dynamic Media.]**
 1. Tik op **[!UICONTROL OK.]**
 
 ## Elementen publiceren naar dynamische media of AEM met Snel publiceren {#quick-publish-aem-dm}
@@ -223,8 +223,8 @@ U kunt deze selectievakjes ook gebruiken in combinatie met de zoekvoorspelling o
    | Nu | De geselecteerde actie wordt onmiddellijk uitgevoerd. |
    | Later | De geselecteerde actie wordt uitgevoerd op de geselecteerde bepaalde datum en tijd. |
 
-1. Tik in de rechterbovenhoek van de **[!UICONTROL Manage Publication – Options]** pagina op **[!UICONTROL Next.]**
-1. (Optioneel) Controleer op de **[!UICONTROL Manage Publication – Scope]** pagina de **[!UICONTROL Publish Target]** kolom in de tabel voor de geselecteerde elementen.
+1. Tik in de rechterbovenhoek van de **[!UICONTROL Manage Publication - Options]** pagina op **[!UICONTROL Next.]**
+1. (Optioneel) Controleer op de **[!UICONTROL Manage Publication - Scope]** pagina de **[!UICONTROL Publish Target]** kolom in de tabel voor de geselecteerde elementen.
 
    | Instelling Middelen publiceren in dynamische mediaconfiguratie | Geselecteerde actie | Publicatiedoel |
    | --- | --- | --- |
@@ -237,9 +237,9 @@ U kunt deze selectievakjes ook gebruiken in combinatie met de zoekvoorspelling o
    | Selectieve publicatie | Publiceren ongedaan maken | AEM |
    | Selectieve publicatie | Publiceren van dynamische media ongedaan maken |  Dynamic Media  |
 
-1. Voer op de **[!UICONTROL Manage Publication – Scope]** pagina een van de volgende handelingen uit:
+1. Voer op de **[!UICONTROL Manage Publication - Scope]** pagina een van de volgende handelingen uit:
    * Selecteer een of meer elementen die u uit publiceren of verwijderen.
-   * In the upper-right corner of the **[!UICONTROL Manage Publication – Scope]** page, tap **[!UICONTROL Publish]** or **[!UICONTROL Unpublish]** to begin the action.
+   * In the upper-right corner of the **[!UICONTROL Manage Publication - Scope]** page, tap **[!UICONTROL Publish]** or **[!UICONTROL Unpublish]** to begin the action.
 1. Tik op **[!UICONTROL OK.]**
 
 ## De publicatiestatus van een element controleren {#check-publish-status-of-asset}

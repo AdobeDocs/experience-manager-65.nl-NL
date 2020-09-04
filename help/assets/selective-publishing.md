@@ -7,10 +7,10 @@ topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6890af51d240cbdf84d8d95215ac0ea80326c713
+source-git-commit: 5e5108b943907e5286298552c724d2b33873503f
 workflow-type: tm+mt
 source-wordcount: '2538'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -49,12 +49,13 @@ Nadat u selectief publiceren in een omslag vormt, kunt u om het even welke volge
    * Bewerk de eigenschappen van een bestaande map. Navigeer naar een map waarvan u de eigenschappen wilt bewerken. **[!UICONTROL Card View]** Ga naar **[!UICONTROL Column View]****[!UICONTROL List View]** de map. Selecteer de map, tik vervolgens op de werkbalk **[!UICONTROL Properties.]**
    * Bewerk de eigenschappen van een nieuwe map - In **[!UICONTROL Card View]**, **[!UICONTROL Column View]** of **[!UICONTROL List View]**, in de rechterbovenhoek van de pagina, tik **[!UICONTROL Create > Folder.]** in het **[!UICONTROL Create Folder]** dialoogvenster, voer een titel (vereist) voor de map in, tik vervolgens op **[!UICONTROL Create.]** Selecteer de map, tik vervolgens op de werkbalk op **[!UICONTROL Properties.]**
 
-1. Selecteer een van de volgende opties in de **[!UICONTROL Sync mode]** vervolgkeuzelijst:
-| Synchronisatiemodus | Beschrijving |
-| — | — |
-| **[!UICONTROL Inherited]** | Geen expliciete synchronisatiewaarde in de map. in plaats daarvan, erft de omslag de synchronisatiewaarde van één van zijn voorouderomslagen of de standaardwijze die in uw wordt geplaatst **[!UICONTROL Dynamic Media Configuration]**. De gedetailleerde status voor **[!UICONTROL Inherited]** presentaties wordt weergegeven als knopinfo. |
-| **[!UICONTROL Sync everything in this folder sub-tree to dynamicmedia]** | Voor het succesvol publiceren naar dynamische media moeten elementen worden gesynchroniseerd met dynamische media. Als u deze optie selecteert, worden alle elementen in deze substructuur opgenomen voor synchronisatie met dynamische media. De mapspecifieke instellingen overschrijven de standaardinstelling in de **[!UICONTROL Dynamic Media Configuration]**map. |
-| **[!UICONTROL Exclude everything in this folder sub-tree from dynamicmedia sync]** | Sluit alle elementen in deze substructuur uit van synchroniseren naar dynamische media. |
+1. In the **[!UICONTROL Sync mode]** drop-down list, select one of the following:
+
+   | Synchronisatiemodus | Beschrijving |
+   | --- | --- |
+   | **[!UICONTROL Inherited]** | Geen expliciete synchronisatiewaarde in de map; in plaats daarvan, erft de omslag de synchronisatiewaarde van één van zijn voorouderomslagen of de standaardwijze die in uw wordt geplaatst **[!UICONTROL Dynamic Media Configuration]**. De gedetailleerde status voor **[!UICONTROL Inherited]** presentaties wordt weergegeven als knopinfo. |
+   | **[!UICONTROL Sync everything in this folder sub-tree to dynamicmedia]** | Voor het publiceren naar dynamische media moet u de elementen synchroniseren met Dynamic Media. Als u deze optie selecteert, worden alle elementen in deze substructuur opgenomen voor synchronisatie met dynamische media. De mapspecifieke instellingen overschrijven de standaardinstelling in de **[!UICONTROL Dynamic Media Configuration]** map. |
+   | **[!UICONTROL Exclude everything in this folder sub-tree from dynamicmedia sync]** | Sluit alle elementen in deze substructuur uit van synchroniseren naar dynamische media. |
 
    ![Selectieve publicatie op mapniveau](/help/assets/assets-dm/createfolder-properties-selectivepublish.png)
 
@@ -69,6 +70,7 @@ Nadat u selectief publiceren in een omslag vormt, kunt u om het even welke volge
    | **[!UICONTROL Immediately]** | Wanneer middelen naar deze map worden geüpload, neemt het systeem de elementen in AEM en wordt de URL/Embed onmiddellijk weergegeven. Deze optie is alleen gekoppeld aan AEM publicatie en er is geen tussenkomst van de gebruiker nodig om elementen te publiceren.<br>Deze optie is *niet* beschikbaar als u **[!UICONTROL Exclude everything in this folder sub-tree from dynamicmedia sync]** in **[!UICONTROL Sync mode]** de vorige stap hebt geselecteerd. |
    | **[!UICONTROL Upon Activation]** | Wanneer elementen naar deze map worden geüpload, moet u het element eerst expliciet publiceren voordat er een koppeling URL/Embed wordt opgegeven. Deze optie is alleen gekoppeld aan AEM publiceren.<br>Deze optie is *niet* beschikbaar als u **[!UICONTROL Exclude everything in this folder sub-tree from dynamicmedia sync]** in **[!UICONTROL Sync mode]** de vorige stap hebt geselecteerd. |
    | **[!UICONTROL Selective Publish]** | De activa worden gepubliceerd aan uw keus van of AEM of aan Dynamische Media voor levering in het openbare domein. Beide publicatiemethoden sluiten elkaar uit.  Met andere woorden, u kunt elementen publiceren naar DMS7 zodat u functies zoals Slim uitsnijden of dynamische uitvoeringen kunt gebruiken. U kunt ook uitsluitend elementen publiceren naar AEM voor een beveiligde voorvertoning. dezelfde activa worden *niet* aan DMS7 gepubliceerd voor levering in het publieke domein. Deze optie is niet beschikbaar als u **[!UICONTROL Exclude everything in this folder sub-tree from dynamicmedia sync]** in **[!UICONTROL Sync mode]** de vorige stap hebt geselecteerd. |
+
 1. Tik in de rechterbovenhoek van de pagina op **[!UICONTROL Save & Close]** en tik vervolgens **[!UICONTROL OK]** om terug te keren naar AEM Assets.
 
 ## Elementen selectief publiceren naar Dynamic Media of AEM met Publicatie beheren{#selective-publish-manage-publication}
@@ -96,16 +98,20 @@ Zie [Creating a Dynamic Media Configuration](#configuring-dynamic-media-cloud-se
       >
       >Als dit niet op de werkbalk wordt weergegeven, tikt u op de knop Ovaal en selecteert u **[!UICONTROL Manage Publication]** **[!UICONTROL Manage Publication]** in het lijstmenu.
 
-1. Selecteer op de **[!UICONTROL Manage Publication – Options]** pagina onder **[!UICONTROL Action]**het gewenste activeringstype.
-| Actie | Beschrijving |
-| — | — |
-| **[!UICONTROL Publish]** (tot AEM) | Selecteer deze optie als u elementen wilt publiceren die moeten worden AEM voor een beveiligde voorvertoning. |
-| **[!UICONTROL Publish to Dynamic Media]** | Selecteer deze optie om elementen naar Dynamic Media te publiceren voor levering in het publieke domein of om functies zoals Slim uitsnijden of dynamische uitvoeringen te gebruiken.<br>Deze optie is alleen beschikbaar als **[!UICONTROL Dynamic Media Publish mode]** deze is ingesteld op **[!UICONTROL Selective Publish]** in de eigenschappen van de map. |
-1. Stel onder **[!UICONTROL Schedule]**de tijdinstellingen van de publicatie in.
-| Schema | Beschrijving |
-| — | — |
-| **[!UICONTROL Now]** | Selecteer deze optie om de elementen direct te publiceren. |
-| **[!UICONTROL Later]** | Selecteer deze optie om de elementen op een bepaalde datum en tijd te publiceren. |
+1. Selecteer op de **[!UICONTROL Manage Publication – Options]** pagina onder **[!UICONTROL Action]** het gewenste activeringstype.
+
+   | Actie | Beschrijving |
+   | --- | --- |
+   | **[!UICONTROL Publish]** (tot AEM) | Selecteer deze optie als u elementen wilt publiceren die u wilt AEM voor een beveiligde voorvertoning. |
+   | **[!UICONTROL Publish to Dynamic Media]** | Selecteer deze optie om elementen naar dynamische media te publiceren voor levering in het publieke domein of zodat u functies zoals Slim uitsnijden of dynamische uitvoeringen kunt gebruiken.<br>Deze optie is alleen beschikbaar als **[!UICONTROL Dynamic Media Publish mode]** deze is ingesteld op **[!UICONTROL Selective Publish]** in de eigenschappen van de map. |
+
+1. Stel onder **[!UICONTROL Schedule]** de tijdinstellingen van de publicatie in.
+
+   | Schema | Beschrijving |
+   | --- | --- |
+   | **[!UICONTROL Now]** | Selecteer deze optie om de elementen direct te publiceren. |
+   | **[!UICONTROL Later]** | Selecteer deze optie om de elementen op een bepaalde datum en tijd te publiceren. |
+
 1. Tik in de rechterbovenhoek van de **[!UICONTROL Manage Publication]** pagina op **[!UICONTROL Next]**.
 1. Voer op de **[!UICONTROL Manage Publication – Scope]** pagina een van de volgende handelingen uit:
    * Selecteer zo nodig een of meer elementen die u uit publicatie wilt verwijderen.
@@ -123,16 +129,20 @@ Zie [Creating a Dynamic Media Configuration](#configuring-dynamic-media-cloud-se
       >
       >Als dit niet op de werkbalk wordt weergegeven, tikt u op de knop Ovaal en selecteert u **[!UICONTROL Manage Publication]** **[!UICONTROL Manage Publication]** in het lijstmenu.
 
-1. Selecteer op de **[!UICONTROL Manage Publication – Options]** pagina onder **[!UICONTROL Action]**het gewenste type deactivering.
-| Actie | Beschrijving |
-| — | — |
-| **[!UICONTROL Unpublish]** (uit AEM) | Selecteer deze optie om de publicatie van elementen uit AEM ongedaan te maken. |
-| **[!UICONTROL Unpublish from Dynamic Media]** | Selecteer deze optie als u de publicatie van elementen op dynamische media ongedaan wilt maken.<br>Deze optie is alleen beschikbaar als **[!UICONTROL Dynamic Media Publish mode]** deze is ingesteld op **[!UICONTROL Selective Publish]** in de eigenschappen van de map.  |
-1. Stel onder **[!UICONTROL Schedule]**de timing van de deactivering in.
-| Schema | Beschrijving |
-| — | — |
-| **[!UICONTROL Now]** | Selecteer deze optie om de publicatie van de elementen direct ongedaan te maken. |
-| **[!UICONTROL Later]** | Selecteer deze optie om de publicatie van de elementen op een bepaalde datum en tijd ongedaan te maken. |
+1. Selecteer op de **[!UICONTROL Manage Publication – Options]** pagina onder **[!UICONTROL Action]** het gewenste type deactivering.
+
+   | Actie | Beschrijving |
+   | --- | --- |
+   | **[!UICONTROL Unpublish]** (van AEM) | Selecteer deze optie als u de publicatie van elementen uit AEM wilt opheffen. |
+   | **[!UICONTROL Unpublish from Dynamic Media]** | Selecteer deze optie als u de publicatie van elementen van Dynamic Media ongedaan wilt maken.<br>Deze optie is alleen beschikbaar als **[!UICONTROL Dynamic Media Publish mode]** deze is ingesteld op **[!UICONTROL Selective Publish]** in de eigenschappen van de map. |
+
+1. Stel onder **[!UICONTROL Schedule]** de timing van de deactivering in.
+
+   | Schema | Beschrijving |
+   | --- | --- |
+   | **[!UICONTROL Now]** | Selecteer deze optie om de publicatie van de elementen direct ongedaan te maken. |
+   | **[!UICONTROL Later]** | Selecteer deze optie om de publicatie van de elementen op een bepaalde datum en tijd ongedaan te maken. |
+
 1. Tik in de rechterbovenhoek van de **[!UICONTROL Manage Publication]** pagina op **[!UICONTROL Next]**.
 1. Voer op de **[!UICONTROL Manage Publication – Scope]** pagina een van de volgende handelingen uit:
    * Selecteer een of meer elementen die u uit het ongedaan maken van de publicatie wilt verwijderen.
@@ -159,12 +169,15 @@ U kunt **[!UICONTROL Quick Publish]** voor eenvoudige gevallen van activering va
       >Als dit niet op de werkbalk wordt weergegeven, tikt u op de knop Ovaal en selecteert u **[!UICONTROL Quick Publish]** **[!UICONTROL Quick Publish]** in het lijstmenu.
 
       ![Snel publiceren op mapniveau naar dynamische media](/help/assets/assets-dm/selective-publish-folder-quick-publish-to-dm.png)
+
 1. Selecteer een van de volgende opties in de **[!UICONTROL Quick Publish]** menulijst.
-| De optie Snel publiceren | Wat zij doet |
-| — | — |
-| Publiceren naar AEM | Hiermee publiceert u de geselecteerde elementen onmiddellijk naar AEM. |
-| Publiceren op Brand Portal | De geselecteerde elementen worden direct gepubliceerd naar **[!UICONTROL Brand Portal]**.<br>Deze optie is alleen beschikbaar als uw AEM Assets-instantie **[!UICONTROL Brand Portal]** al is geconfigureerd. |
-| Publiceren op dynamische media | Hiermee publiceert u de geselecteerde elementen direct naar Dynamic Media.<br>Een middel moet reeds aan Dynamische Media worden gesynchroniseerd. Indien nodig, zorg ervoor dat **[!UICONTROL Sync mode]** in de eigenschappen van een omslag reeds wordt geplaatst aan **[!UICONTROL Sync everything in this folder sub-tree to dynamicmedia]**. |
+
+   | Snel publiceren, optie | Wat het doet |
+   | --- | --- | 
+   | Publiceren naar AEM | Hiermee publiceert u de geselecteerde elementen direct naar AEM. |
+   | Publiceren naar Brand Portal | Hiermee publiceert u de geselecteerde elementen direct naar **[!UICONTROL Brand Portal]**.<br>Deze optie is alleen beschikbaar als uw AEM Assets-instantie **[!UICONTROL Brand Portal]** al is geconfigureerd. |
+   | Publiceren naar dynamische media | Hiermee publiceert u de geselecteerde elementen direct naar Dynamic Media.<br>Een middel moet reeds aan Dynamische Media worden gesynchroniseerd. Indien nodig, zorg ervoor dat **[!UICONTROL Sync mode]** in de eigenschappen van een omslag reeds wordt geplaatst aan **[!UICONTROL Sync everything in this folder sub-tree to dynamicmedia]**. |
+
 1. Tik **[!UICONTROL OK]** vervolgens op **[!UICONTROL Close]**.
 
 ## Elementen selectief publiceren of de publicatie ervan ongedaan maken door middel van zoekresultaten {#selective-publish-unpublish-search-results}
@@ -203,11 +216,13 @@ U kunt deze selectievakjes ook gebruiken in combinatie met de zoekvoorspelling o
    | Publiceren van dynamische media ongedaan maken | Onmiddellijk of bij activering | Niet ongepubliceerd van AEM, of Dynamic Media, of beide. |
    | Publiceren van dynamische media ongedaan maken | Selectieve publicatie | Niet gepubliceerd met alleen Dynamic Media. |
 
-1. Stel onder **[!UICONTROL Schedule]**de timing van de deactivering in.
-| Geselecteerd schema | Wat gebeurt er? |
-| — | — |
-| Nu | De geselecteerde actie wordt onmiddellijk uitgevoerd. |
-| Later | De geselecteerde actie wordt uitgevoerd op de geselecteerde bepaalde datum en tijd. |
+1. Stel onder **[!UICONTROL Schedule]** de timing van de deactivering in.
+
+   | Geselecteerd schema | Wat er gebeurt |
+   | --- | --- |
+   | Nu | De geselecteerde actie wordt onmiddellijk uitgevoerd. |
+   | Later | De geselecteerde actie wordt uitgevoerd op de geselecteerde bepaalde datum en tijd. |
+
 1. Tik in de rechterbovenhoek van de **[!UICONTROL Manage Publication – Options]** pagina op **[!UICONTROL Next]**.
 1. (Optioneel) Controleer op de **[!UICONTROL Manage Publication – Scope]** pagina de **[!UICONTROL Publish Target]** kolom in de tabel voor de geselecteerde elementen.
 

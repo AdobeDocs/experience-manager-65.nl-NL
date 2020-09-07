@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: b4d38e45-eaa0-4ace-a885-a2e84fdfd5a1
 pagetitle: Configuring Email
 translation-type: tm+mt
-source-git-commit: 097109edcf66cc06460c9d962037e49613e3405b
+source-git-commit: 8496c2fa298b5490bb2560f61de77876d66fd6f6
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '750'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 # E-mail configureren {#configuring-email}
 
-AEM Communities gebruiken e-mail voor:
+AEM Communities gebruikt e-mail voor:
 
 * [Publikaties](notifications.md)
 * [Communityabonnementen](subscriptions.md)
@@ -76,7 +76,7 @@ Bijvoorbeeld (alleen invullen met waarden voor illustratieve doeleinden):
 
    Indien gecontroleerd, laat registreren van SMTP serverinteractie toe.
 
-## AEM Communities-e-mailconfiguratie {#aem-communities-email-configuration}
+## AEM Communities E-mailconfiguratie {#aem-communities-email-configuration}
 
 Zodra de [standaardpostdienst](#default-mail-service-configuration) wordt gevormd, worden de twee bestaande instanties van `AEM Communities Email Reply Configuration` OSGi config, inbegrepen in de versie, functioneel.
 
@@ -112,7 +112,7 @@ Deze configuratie moet niet worden gewijzigd.
 
 * Verifieer of **Create post from response email** is `unchecked`.
 
-![chlimage_1-100](assets/chlimage_1-100.png)
+![chlimage_1-100](assets/configure-email.png)
 
 ### Configuratie voor abonnementen {#configuration-for-subscriptions}
 
@@ -122,7 +122,7 @@ Voor Gemeenschapsabonnementen is het mogelijk om de mogelijkheid voor een lid om
 * Selecteer het bewerkingspictogram.
 * Controleer of de **naam** is `subscriptions-email`.
 
-![chlimage_1-101](assets/chlimage_1-101.png)
+   ![chlimage_1-101](assets/configure-email-subscription.png)
 
 * **[!UICONTROL Name]**
 
@@ -138,9 +138,10 @@ Voor Gemeenschapsabonnementen is het mogelijk om de mogelijkheid voor een lid om
 * **[!UICONTROL Maximum length of Subject]**
 
    Als tracker-id aan de onderwerpregel wordt toegevoegd, is dit de maximumlengte van het onderwerp, met uitzondering van de bijgehouden id, waarna het wordt bijgesneden. Deze waarde moet zo klein mogelijk zijn om te voorkomen dat bijgehouden id-informatie verloren gaat. De standaardwaarde is 200.
-* **[!UICONTROL Email "From" address]**
 
-   *(Vereist)* Adres dat het bericht per e-mail zou worden verzonden van. Waarschijnlijk de zelfde die gebruiker **** SMTP voor de [standaardpostdienst](#configuredefaultmailservice)wordt gespecificeerd. Standaard is dit `no-reply@example.com`.
+* **[!UICONTROL "Reply-To" email address]**
+
+   Adres dat als &quot;antwoord-aan&quot;e-mailadres wordt gebruikt. Standaard is dit `communities@adobe.com`.
 
 * **[!UICONTROL Reply-to-Delimiter]**
 

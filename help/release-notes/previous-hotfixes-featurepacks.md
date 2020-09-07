@@ -1,11 +1,11 @@
 ---
-title: Opmerkingen bij de release van Adobe Experience Manager 6.5 Vorige Service Pack
-description: Release-aantekeningen specifiek voor Adobe Experience Manager 6.5 Service Pack 3 en eerder.
+title: '[!DNL Adobe Experience Manager] 6.5 Opmerkingen bij de vorige release van Service Pack.'
+description: De nota's van de versie voor [!DNL Adobe Experience Manager] 6.5 de Pakken van de Dienst.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: a842da57a155f56ad3efc268610c167fe140998b
+source-git-commit: c27f44326f653bbdc61e866e89e60893e81a7a3b
 workflow-type: tm+mt
-source-wordcount: '11319'
+source-wordcount: '11326'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,15 @@ ht-degree: 0%
 
 # Hotfixes en de Pakken van de Eigenschap inbegrepen in vorige Packs van de Dienst {#hotfixes-and-feature-packs-included-in-previous-service-packs}
 
-## Adobe Experience Manager 6.5.5.0 {#experience-manager-6550}
+## [!DNL Adobe Experience Manager] 6.5.5.0 {#experience-manager-6550}
 
 Adobe Experience Manager 6.5.5.0 is een belangrijke update die nieuwe eigenschappen, zeer belangrijke klant gevraagde verhogingen, en prestaties, stabiliteit, en veiligheidsverbeteringen omvat, die sinds de algemene beschikbaarheid van 6.5 versie in **april 2019** worden vrijgegeven. Deze kan boven op Adobe Experience Manager 6.5 worden geïnstalleerd.
 
-Enkele belangrijke functies en verbeteringen die zijn geïntroduceerd in Adobe Experience Manager 6.5.5.0 zijn:
+Enkele belangrijke functies en verbeteringen die zijn geïntroduceerd in [!DNL Adobe Experience Manager] 6.5.5.0 zijn:
 
-* Pas de kolomnamen aan die in Adobe Experience Manager Inbox worden weergegeven.
+* Anonieme toegang tot CRXDE Lite is niet toegestaan. In plaats daarvan worden de gebruikers naar het aanmeldingsscherm geleid. Zie [Ontwikkelen met CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+
+* Pas de kolomnamen aan die in [!DNL Adobe Experience Manager] Inbox worden weergegeven.
 
 * Verbeterde toegankelijkheid op diverse gebieden in het Beheer van de Inhoud van het Web van de Experience Manager (WCM) zoals de Redacteur van de Pagina, de Componenten van de Kern, RTE, en Admin gebruikersinterface.
 
@@ -69,7 +71,7 @@ Hier volgt een lijst met oplossingen uit de release van [!DNL Experience Manager
 * Wanneer een gebruiker een Layout Container op dezelfde pagina kopieert en plakt, worden componenten in een Layout Container niet weergegeven (NPR-33648).
 * Met de health check van de verzender wordt een `Invalid cookie header` waarschuwingsbericht weergegeven in de logbestanden (NPR-33629).
 * Gereflecteerde XSS in PreferencesServlet (NPR-33438).
-* Anonieme gebruikers hebben toegang tot de functies van CRX DE Lite (GRANITE-27790).
+* Anonieme gebruikers hebben toegang tot CRXDE Lite-functies (GRANITE-27790).
 
 ### [!DNL Assets] {#assets-6550}
 

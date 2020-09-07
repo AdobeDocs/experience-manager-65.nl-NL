@@ -4,9 +4,9 @@ description: Nieuw in Adobe Experience Manager 6.5 Service Pack 6
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8980348736825f45647a91062b1fe4e4a790b8f1
+source-git-commit: f8a072e0ab24d542a1bec8faf03da57f99747102
 workflow-type: tm+mt
-source-wordcount: '2411'
+source-wordcount: '2435'
 ht-degree: 0%
 
 ---
@@ -126,6 +126,8 @@ U kunt nu meerdere bestanden koppelen aan de [!UICONTROL File Attachment] compon
 * Verbeterde ondersteuning voor schermlezers.
 
 #### Andere belangrijke verbeteringen (6.5.5.0) {#other-enhancements-sites}
+
+* Anonieme toegang tot CRXDE Lite is niet toegestaan om de beveiliging te verbeteren. In plaats daarvan worden de gebruikers naar het aanmeldingsscherm geleid. Zie [Ontwikkelen met CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 * Wanneer u een paginastructuur kopieert of plakt, kunt u nu de basispagina plakken of de basispagina plakken met de subpagina&#39;s van de structuur.
 

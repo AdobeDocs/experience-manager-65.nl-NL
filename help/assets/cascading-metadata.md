@@ -3,9 +3,9 @@ title: Trapsgewijze metagegevens in [!DNL Adobe Experience Manager Assets].
 description: In dit artikel wordt beschreven hoe u trapsgewijze metagegevens voor elementen definieert.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a61e1e9ffb132b59c725b2078f09641a3c2a479a
+source-git-commit: c92215a6cb1f4c3d02e9a5f5b3fd36c65fc002ce
 workflow-type: tm+mt
-source-wordcount: '895'
+source-wordcount: '898'
 ht-degree: 5%
 
 ---
@@ -16,6 +16,10 @@ ht-degree: 5%
 Wanneer gebruikers de metagegevens van een element vastleggen, verschaffen ze informatie in de verschillende beschikbare velden. U kunt specifieke metagegevensvelden of veldwaarden weergeven die afhankelijk zijn van de opties die in de andere velden zijn geselecteerd. Een dergelijke voorwaardelijke weergave van metagegevens wordt trapsgewijze metagegevens genoemd. Met andere woorden, u kunt een afhankelijkheid maken tussen een bepaald metagegevensveld/een bepaalde waarde en een of meer velden en/of hun waarden.
 
 Gebruik schema&#39;s voor metagegevens om regels voor de weergave van trapsgewijze metagegevens te definiëren. Als uw metagegevensschema bijvoorbeeld een elementtypeveld bevat, kunt u een relevante set velden definiëren die moet worden weergegeven op basis van het type element dat de gebruiker selecteert.
+
+>[!CAUTION]
+>
+>Cascading metadata wordt niet ondersteund voor Content Fragments.
 
 Hier volgen enkele gebruiksgevallen waarvoor u trapsgewijze metagegevens kunt definiëren:
 
@@ -35,7 +39,7 @@ Overweeg een scenario waarin u trapsgewijze metagegevens wilt weergeven op basis
 
 Geef de copyrightinformatie, ongeacht het gekozen elementtype, weer als een verplicht veld.
 
-1. Ga in [!DNL Experience Manager] interface naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**.
+1. In [!DNL Experience Manager] interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**.
 1. In the **[!UICONTROL Schema Forms]** page, select a schema form and then click **[!UICONTROL Edit]** from the toolbar to edit the schema.
 
    ![select_form](assets/select_form.png)
@@ -50,11 +54,12 @@ Geef de copyrightinformatie, ongeacht het gekozen elementtype, weer als een verp
 
    ![asset_type_field](assets/asset_type_field.png)
 
-1. Sleutelwaardeparen zijn de opties die aan een gebruiker van een formulier worden verstrekt. U kunt de sleutel-waardeparen of manueel of van een JSON- dossier verstrekken.
+1. Sleutelwaardeparen zijn de opties die aan een gebruiker van een formulier worden verstrekt. U kunt de sleutel-waardeparen of manueel of van een JSON dossier verstrekken.
 
    * Als u de waarden handmatig wilt opgeven, selecteert u **[!UICONTROL Add Manually]** de gewenste waarden, klikt u erop **[!UICONTROL Add Choice]** en geeft u de optietekst en -waarde op. Geef bijvoorbeeld de elementtypen Video, PDF, Word en Afbeelding op.
 
    * Als u de waarden van een JSON-bestand dynamisch wilt ophalen, selecteert u het pad van het JSON-bestand **[!UICONTROL Add Through JSON Path]** en geeft u dit op. [!DNL Experience Manager] Hiermee haalt u de sleutelwaardeparen op in real-time wanneer het formulier aan de gebruiker wordt gepresenteerd.
+
    Beide opties sluiten elkaar uit. U kunt de opties niet importeren uit een JSON-bestand en handmatig bewerken.
 
    ![add_choice](assets/add_choice.png)

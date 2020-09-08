@@ -1,8 +1,8 @@
 ---
 title: Basisconfiguratieconcepten
 seo-title: Basisconfiguratieconcepten
-description: Leer hoe u AEM configureert.
-seo-description: Leer hoe u AEM configureert.
+description: Leer hoe te om AEM te vormen.
+seo-description: Leer hoe te om AEM te vormen.
 uuid: edcdd4bd-5917-417e-8913-40d488383ea9
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,20 +10,23 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: 2673ea92-1651-4b1b-9aac-f4ba8b36782e
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 8f35717324cd2c1524fb2cf931b3ce21be05729a
+workflow-type: tm+mt
+source-wordcount: '2132'
+ht-degree: 0%
 
 ---
 
 
 # Basisconfiguratieconcepten{#basic-configuration-concepts}
 
-Adobe Experience Manager (AEM) wordt geïnstalleerd met standaardinstellingen voor alle parameters waardoor het programma &#39;buiten het vak&#39; kan worden uitgevoerd. Nochtans, kunt u AEM voor uw eigen specifieke vereisten vormen.
+Adobe Experience Manager (AEM) wordt geïnstalleerd met standaardinstellingen voor alle parameters, zodat deze &quot;buiten het vak&quot; kan worden uitgevoerd. Nochtans, kunt u AEM voor uw eigen specifieke vereisten vormen.
 
 Er zijn vele aspecten van AEM die kunnen worden gevormd:
 
 * Sommige worden [algemeen gevormd voor elke projectinstallatie](#primary-configuration-considerations) en moeten worden herzien om te bevestigen of zij op uw project van toepassing zijn of niet.
 * [Andere configuraties](#further-configuration-considerations) kunnen gemeenschappelijk zijn, maar niet noodzakelijk; gerelateerd aan functies, of systeemprestaties en stabiliteit.
-* Andere functies zijn alleen vereist voor bepaalde optionele functies van AEM (deze worden samen met de betreffende functie gedocumenteerd).
+* Andere functies zijn alleen vereist voor bepaalde optionele functies van AEM (deze worden samen met de desbetreffende functie beschreven).
 
 Afhankelijk van de specifieke configuratie kunnen deze veranderingen door één van beide worden aangebracht:
 
@@ -45,19 +48,19 @@ Afhankelijk van de specifieke configuratie kunnen deze veranderingen door één 
 
 * **AEM WCM**
 
-   Verschillende aspecten kunnen binnen AEM WCM zelf worden gevormd, velen die de console van [Hulpmiddelen](/help/sites-administering/tools-consoles.md) gebruiken; bijvoorbeeld, replicatieagenten.
+   Diverse aspecten kunnen binnen AEM WCM zelf worden gevormd, velen die de console van [Hulpmiddelen](/help/sites-administering/tools-consoles.md) gebruiken; bijvoorbeeld, replicatieagenten.
 
 >[!NOTE]
 >
->Wanneer u met Adobe Experience Manager werkt, zijn er verschillende methoden om de configuratie-instellingen voor OSGi-services (console- of opslagknooppunten) te beheren.
+>Wanneer het werken met Adobe Experience Manager, zijn er verscheidene methodes om de configuratiemontages voor de diensten OSGi (console of bewaargegevensknooppunten) te beheren.
 >
 >Zie [het Vormen OSGi](/help/sites-deploying/configuring-osgi.md) voor volledige details.
 
 >[!NOTE]
 >
->Het vormen AEM is ongecompliceerd, maar u moet zich ervan bewust zijn dat:
+>Het vormen AEM is duidelijk, maar u moet zich ervan bewust zijn dat:
 >
->Bepaalde wijzigingen kunnen grote gevolgen hebben voor de toepassing(en). Om deze reden, zorg u de noodzakelijke ervaring en de kennis alvorens u begint AEM te vormen, en breng slechts de veranderingen aan die u weet worden vereist. Eventuele wijzigingen die via de OSGi-console zijn aangebracht, worden **onmiddellijk** toegepast op het actieve systeem (opnieuw opstarten is niet vereist).
+>Bepaalde wijzigingen kunnen grote gevolgen hebben voor de toepassing(en). Om deze reden, verzeker u de noodzakelijke ervaring en de kennis alvorens u begint AEM te vormen, en slechts de veranderingen aan te brengen die u weet worden vereist. Eventuele wijzigingen die via de OSGi-console zijn aangebracht, worden **onmiddellijk** toegepast op het actieve systeem (opnieuw opstarten is niet vereist).
 
 ## Belangrijkste overwegingen voor configuratie {#primary-configuration-considerations}
 
@@ -71,7 +74,7 @@ Verschillende belangrijke configuratieproblemen worden weergegeven in de [lijst]
 
 ### De standaardinterface configureren - geoptimaliseerd voor aanraking of Klassiek {#configuring-the-default-ui-touch-optimized-or-classic}
 
-Er zijn twee UI&#39;s beschikbaar voor gebruik in AEM:
+Er zijn twee UIs beschikbaar voor gebruik in AEM:
 
 * De interface met aanraakfuncties
 * De klassieke gebruikersinterface
@@ -108,7 +111,7 @@ Dit betekent dat wanneer een IP adres moet worden gespecificeerd u (zoals vereis
 
 ### Versie leegmaken {#version-purging}
 
-In een standaardinstallatie maakt AEM een nieuwe versie van een pagina of knooppunt wanneer u een pagina activeert (nadat u de inhoud hebt bijgewerkt). U kunt ook op verzoek extra versies maken met het tabblad **Versioning** van het Help-bureaublad. Al deze versies worden opgeslagen in de opslagplaats en kunnen indien nodig worden hersteld.
+In een standaardinstallatie AEM een nieuwe versie van een pagina of een knooppunt maken wanneer u een pagina activeert (nadat u de inhoud hebt bijgewerkt). U kunt ook op verzoek extra versies maken met het tabblad **Versioning** van de assistent. Al deze versies worden opgeslagen in de opslagplaats en kunnen indien nodig worden hersteld.
 
 Deze versies worden nooit gewist, zodat de grootte van de opslagplaats na verloop van tijd zal groeien en daarom moet worden beheerd.
 
@@ -126,7 +129,7 @@ Zie [Logging](/help/sites-deploying/configure-logging.md) voor meer informatie.
 
 ### Modi uitvoeren {#run-modes}
 
-Met de uitvoermodi kunt u uw AEM-instantie instellen voor een bepaald doel. bijvoorbeeld auteur of publicatie, test, ontwikkeling of intranet, enz.
+Met de uitvoermodi kunt u uw AEM instellen voor een bepaald doel. bijvoorbeeld auteur of publicatie, test, ontwikkeling of intranet, enz.
 
 Dit wordt gedaan door inzamelingen van configuratieparameters voor elke looppaswijze te bepalen. Een basisreeks configuratieparameters wordt toegepast voor alle looppaswijzen, kunt u extra reeksen aan het doel van uw specifiek milieu dan stemmen. Deze worden vervolgens naar wens toegepast.
 
@@ -136,13 +139,13 @@ Zie Modi [](/help/sites-deploying/configure-runmodes.md) uitvoeren voor meer inf
 
 ### Single Sign On {#single-sign-on}
 
-Met Single Sign On (SSO) heeft een gebruiker toegang tot meerdere systemen nadat hij de verificatiegegevens (zoals een gebruikersnaam en wachtwoord) eenmaal heeft opgegeven. Een afzonderlijk systeem (de vertrouwde op authentiek verklaard) voert de authentificatie uit en verstrekt de Manager van de Ervaring van de gebruikersgeloofsbrieven. De Manager van de ervaring controleert en handhaaft de toegangstoestemmingen voor de gebruiker (d.w.z. bepaalt welke middelen de gebruiker aan toegang wordt toegestaan).
+Met Single Sign On (SSO) heeft een gebruiker toegang tot meerdere systemen nadat hij de verificatiegegevens (zoals een gebruikersnaam en wachtwoord) eenmaal heeft opgegeven. Een afzonderlijk systeem (dat als vertrouwde op authentiek wordt bekend) voert de authentificatie uit en verstrekt Experience Manager de gebruikersgeloofsbrieven. De Experience Manager controleert en handhaaft de toegangstoestemmingen voor de gebruiker (d.w.z. bepaalt welke middelen de gebruiker wordt toegestaan om toegang te hebben).
 
 Zie [Single Sign On](/help/sites-deploying/single-sign-on.md) voor meer informatie.
 
 ### Brontoewijzing {#resource-mapping}
 
-Brontoewijzing wordt gebruikt om omleidingen, ijdelings-URL&#39;s en virtuele hosts voor AEM te definiëren.
+De afbeelding van het middel wordt gebruikt om omleidingen, ijdelheid URLs en virtuele gastheren voor AEM te bepalen.
 
 U kunt bijvoorbeeld de volgende toewijzingen gebruiken:
 
@@ -159,7 +162,7 @@ De agenten van de replicatie zijn centraal aan AEM als mechanisme dat wordt gebr
 * Inhoud expliciet uit de Dispatcher-cache verwijderen.
 * Hiermee wordt gebruikersinvoer (bijvoorbeeld formulierinvoer) vanuit de publicatieomgeving geretourneerd naar de auteursomgeving (onder controle van de auteursomgeving).
 
-Zie [Replicatie](/help/sites-deploying/replication.md)voor meer informatie.
+For further details see [Replication](/help/sites-deploying/replication.md).
 
 ### OSGi-configuratie-instellingen {#osgi-configuration-settings}
 
@@ -173,31 +176,31 @@ Wanneer het werken met AEM zijn er verscheidene methodes om de configuratiemonta
 
 LDAP-verificatie is vereist voor verificatie van gebruikers die zijn opgeslagen in een (centrale) LDAP-directory, zoals Active Directory. Dit helpt de inspanning te verminderen die wordt vereist om gebruikersrekeningen te beheren.
 
-LDAP-verificatie vindt plaats op het niveau van de gegevensopslagruimte, zodat deze rechtstreeks door de gegevensopslagruimte wordt afgehandeld. Zie LDAP [configureren met AEM](/help/sites-administering/ldap-config.md)voor meer informatie.
+LDAP-verificatie vindt plaats op het niveau van de gegevensopslagruimte, zodat deze rechtstreeks door de gegevensopslagruimte wordt afgehandeld. Zie [LDAP configureren met AEM](/help/sites-administering/ldap-config.md)voor meer informatie.
 
 Voor gebruikersbeheer binnen AEM (met inbegrip van toewijzing van toegangsrechten) zie het Beleid van de [Gebruiker en Veiligheid](/help/sites-administering/security.md).
 
 ### De Dispatcher configureren {#configuring-the-dispatcher}
 
-Dispatcher is het programma voor het in cache plaatsen en/of taakverdeling van Adobe. Het gebruik van de Dispatcher helpt ook uw AEM-server tegen aanvallen te beschermen. Daarom kunt u de veiligheid van uw instantie verhogen AEM door de Dispatcher samen met een onderneming-klasse Webserver te gebruiken.
+Dispatcher is een Adobe Experience Manager-programma voor caching en/of taakverdeling dat kan worden gebruikt in combinatie met een webserver op bedrijfsniveau.
 
 Zie [Verzender](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) voor volledige details, in het bijzonder het [Vormen van de Verzender](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html) voor verdere configuratiedetails.
 
 ### AEM LiveCycle Connector configureren {#configuring-aem-livecycle-connector}
 
-Met de release van de AEM Doc Services en AEM Doc Security, hebben we nu de mogelijkheid om de LiveCycle-documentservices aan te roepen om een XFA-formulier te genereren, een document te converteren naar PDF en een document te beveiligen met beleid. Lees de [AEM LiveCycle Connector](https://helpx.adobe.com/livecycle/help/aem/aem-livecycle-connector.html) voor meer informatie.
+Met de versie van de AEM Doc Services en AEM Doc Security, hebben we nu de mogelijkheid om de documentservices van LiveCycle aan te roepen om een XFA-formulier te genereren, een document te converteren naar PDF en een document te beveiligen met beleid. Lees [AEM LiveCycle Connector](https://helpx.adobe.com/livecycle/help/aem/aem-livecycle-connector.html) voor meer informatie.
 
 ### Het Verschuiven van de baan en het Beleid van de Topologie {#job-offloading-and-topology-administration}
 
-[Het ontladen](/help/sites-deploying/offloading.md) verdeelt verwerkingstaken die instanties van de Manager van de Ervaring in een topologie. Met offloading kunt u specifieke instanties van Experience Manager gebruiken voor het uitvoeren van specifieke typen verwerking. Met gespecialiseerde verwerking kunt u het gebruik van beschikbare serverbronnen maximaliseren.
+[Het ontladen](/help/sites-deploying/offloading.md) verdeelt verwerkingstaken die instanties van de Experience Manager in een topologie. Met offloading kunt u specifieke instanties van Experience Managers gebruiken voor het uitvoeren van specifieke typen verwerking. Met gespecialiseerde verwerking kunt u het gebruik van beschikbare serverbronnen maximaliseren.
 
-De technologieën zijn los-gekoppelde clusters van de Manager van de Ervaring die aan het ontladen deelnemen. Een cluster bestaat uit een of meer Experience Manager-serverinstanties (één instantie wordt beschouwd als een cluster).
+De technologieën zijn losjes-verbonden clusters van de Experience Manager die aan het ontladen deelnemen. Een cluster bestaat uit een of meer serverinstanties van de Experience Manager (één instantie wordt beschouwd als een cluster).
 
 Voor meer informatie over hoe te om topologielidmaatschap te bekijken of te wijzigen, raadpleeg de [Administering sectie van Topologieën](/help/sites-deploying/offloading.md#administering-topologies) .
 
 ### De welkomstconsole configureren {#configuring-the-welcome-console}
 
-De welkomstconsole van de klassieke UI biedt een lijst met koppelingen naar de verschillende consoles en functies in AEM.
+De welkomstconsole van de klassieke UI biedt een lijst met koppelingen naar de verschillende consoles en functionaliteit binnen AEM.
 
 Het is mogelijk om de verbindingen te vormen die zichtbaar zijn, zie het [Vormen van de Welkome Console](/help/sites-developing/customizing-the-welcome-console.md) voor verdere details.
 
@@ -229,9 +232,9 @@ U kunt HTTP via SSL inschakelen om veiligere verbindingen met uw servers te gebr
 
 Zie HTTP [inschakelen via SSL](/help/sites-administering/ssl-by-default.md) voor meer informatie.
 
-### AEM-portfolio&#39;s en -portfolio&#39;s {#aem-portals-and-portlets}
+### AEM en portlets {#aem-portals-and-portlets}
 
-Een portal is een webtoepassing die verpersoonlijking, één aanmelding, integratie van inhoud uit verschillende bronnen en de presentatielaag van informatiesystemen host. Met de portletcomponent kunt u ook een portlet op de pagina insluiten. Om toegang te krijgen tot inhoud van CQ5 WCM, kan de portalserver worden uitgerust met de CQ5 Portal Director Portlet. U kunt dit doen door portlet te installeren, te vormen en toe te voegen aan de portlet pagina.
+Een portal is een webtoepassing die verpersoonlijking, één aanmelding, integratie van inhoud uit verschillende bronnen en de presentatielaag van informatiesystemen host. Met de portletcomponent kunt u ook een portlet op de pagina insluiten. Als u toegang wilt krijgen tot inhoud van de CQ5 WCM, kan de portalserver worden uitgerust met de CQ5 Portal Director Portlet. U kunt dit doen door portlet te installeren, te vormen en toe te voegen aan de portlet pagina.
 
 Zie [Portal en Portlets](/help/sites-administering/aem-as-portal.md) voor meer informatie.
 
@@ -245,11 +248,11 @@ Zie [Verlopen van statische objecten](/help/sites-deploying/expiration-static-ob
 
 Elk Java-proces heeft toegang tot bestanden - hiervoor zijn systeembronnen vereist. Daarom wordt een bovengrens gedefinieerd voor het aantal bestanden dat elk proces gelijktijdig mag openen. Als dit wordt overschreden, kan een uitzonderingsfout voorkomen.
 
-Als het AEM-proces dit maximum overschrijdt, wordt het bericht &quot; `too many open files`&quot; weergegeven in `error.log`.
+Als het AEM dit maximum overschrijdt, wordt het bericht &quot; `too many open files`&quot; weergegeven in `error.log`.
 
 Om dergelijke uitzonderingen te vermijden, moet u:
 
-1. Controleer hoeveel geopende bestanden uw AEM-proces gebruikt.
+1. Controleer hoeveel geopende bestanden uw AEM gebruikt.
 
    Hoe u deze controle uitvoert, is afhankelijk van het platform waarop uw instantie wordt uitgevoerd. U kunt hulpprogramma&#39;s gebruiken, zoals Lay of (Unix) of Procesverkenner (Windows).
 
@@ -264,7 +267,7 @@ Om dergelijke uitzonderingen te vermijden, moet u:
 
    Door gebrek, vormt `serverctl` `CQ_MAX_OPEN_FILES` aan `8192`; dit zou voor de meeste scenario &#39; s voldoende moeten zijn .
 
-### De Rich Text Editor configureren {#configuring-the-rich-text-editor}
+### Configuring the Rich Text Editor {#configuring-the-rich-text-editor}
 
 De **Rich Text Editor** (**RTE**) biedt auteurs een groot aantal [functies](/help/sites-authoring/rich-text-editor.md) voor het bewerken van hun tekstinhoud. hen voorzien van pictogrammen, selectiekaders en menu&#39;s voor een ervaring WYSIWYG.
 
@@ -306,9 +309,9 @@ Pagina-impressies worden weergegeven in de kolom **Impressies** van de klassieke
 
 * In de instantie van de auteur:
 
-   * [Adobe Page Impressions Tracke](/help/sites-deploying/osgi-configuration-settings.md)
+   * [Adobe-paginamruitingen, overtreklijn](/help/sites-deploying/osgi-configuration-settings.md)
 
 >[!CAUTION]
 >
->De configuratie van Adobe Page Impressions Tracker in de auteursomgeving staat anonieme aanvragen toe aan de volgende service.
+>Bij de configuratie van Adobe Page Impressions Tracker in de auteursomgeving zijn anonieme aanvragen voor de volgende service mogelijk.
 

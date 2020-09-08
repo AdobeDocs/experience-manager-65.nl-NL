@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dfc473eb-6091-4f5d-a5a0-789972c513a9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 24d817bf8e52136980783ef14cea8531519ee622
+source-git-commit: cbc43991143397c8bc0080b7402bfdc664522ab8
 workflow-type: tm+mt
-source-wordcount: '1912'
+source-wordcount: '1895'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ AEM Forms biedt een set formulieren voor het verkrijgen van gegevens van eindgeb
 
 **Aangepaste formulieren:** Deze formulieren veranderen de weergave op basis van de schermgrootte van het apparaat, zijn aantrekkelijk en interactief van aard. Adaptief Forms kan ook worden geïntegreerd met Adobe Analytics, Adobe Sign en Adobe Target. Hierdoor kunt u op basis van demografie en andere functies persoonlijke formulieren en procesgeoriënteerde ervaringen aan gebruikers aanbieden. U kunt adaptieve formulieren ook integreren met Adobe Sign.
 
-**PDF forms** zijn geschikt voor pixelperfect afdrukken en het vastleggen van digitale informatie in een PDF-document. In de digitale avatar kunt u Adobe Acrobat of Acrobat Reader gebruiken om deze formulieren in te vullen. U kunt deze formulieren hosten op uw website of de portal Formulieren gebruiken om deze formulieren weer te geven op een AEM site. U kunt deze formulieren ook als bijlagen naar anderen verzenden. Deze formulieren zijn het meest geschikt voor desktopomgevingen.
+**PDF forms** zijn geschikt voor pixelperfect afdrukken en het vastleggen van digitale informatie in een PDF-document. In de digitale avatar kunt u deze formulieren invullen met Adobe Acrobat of Acrobat Reader. U kunt deze formulieren hosten op uw website of de portal Formulieren gebruiken om deze formulieren weer te geven op een AEM site. U kunt deze formulieren ook als bijlagen naar anderen verzenden. Deze formulieren zijn het meest geschikt voor desktopomgevingen.
 
 **HTML5 Forms** is de browservriendelijke versie van PDF forms. HTML5 Forms is geschikt voor omgevingen die geen ondersteuning bieden voor PDF-plug-ins. Met HTML5 Forms kunnen op XFA gebaseerde formulieren worden weergegeven op mobiele apparaten en desktopbrowsers waarop XFA-gebaseerde PDF niet wordt ondersteund. Deze formulieren zijn het meest geschikt voor tablets en desktopomgevingen.
 
@@ -155,7 +155,7 @@ Voer de volgende stappen op alle Auteur uit en publiceer instanties om de biblio
 1. Stop de onderliggende AEM instantie.
 1. Open het `[AEM installation directory]\crx-quickstart\conf\sling.properties` bestand om het te bewerken.
 
-   Als u eerst `[AEM installation directory]\crx-quickstart\bin\start.bat` de AEM hebt gestart, bewerkt u de eigenschap sling.properties op `[AEM_root]\crx-quickstart\`.
+   Als u eerst `[AEM installation directory]\crx-quickstart\bin\start.bat` de AEM hebt gestart, bewerkt u de eigenschappen sling.property op `[AEM_root]\crx-quickstart\`.
 
 1. Voeg de volgende eigenschappen toe aan het bestand sling.properties:
 
@@ -180,7 +180,7 @@ Voer de volgende stappen uit op alle instanties Auteur en Publish om het pakket 
 
 #### Dispatcher configureren {#configure-dispatcher}
 
-Dispatcher is een programma voor het in cache plaatsen en taakverdeling voor AEM. AEM Dispatcher helpt ook AEM server tegen aanvallen te beschermen. U kunt de veiligheid van uw AEM instantie verhogen door Dispatcher samen met een onderneming-klasse Webserver te gebruiken. Als u [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html)gebruikt, voert u de volgende configuraties uit voor AEM Forms:
+Dispatcher is een Adobe Experience Manager-programma voor caching en/of taakverdeling dat kan worden gebruikt in combinatie met een webserver op bedrijfsniveau. Als u [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html)gebruikt, voert u de volgende configuraties uit voor AEM Forms:
 
 1. Toegang voor AEM Forms configureren:
 

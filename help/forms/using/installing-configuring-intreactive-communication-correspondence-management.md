@@ -1,16 +1,16 @@
 ---
 title: Interactieve communicatie installeren en configureren
 seo-title: Interactieve communicatie installeren en configureren
-description: Installeer en vorm AEM Forms Interactieve Mededelingen om bedrijfscorrespondentie, documenten, verklaringen, voordelenberichten, marketing post, rekeningen, en welkomstkits tot stand te brengen.
-seo-description: Installeer en vorm AEM Forms Interactieve Mededelingen om bedrijfscorrespondentie, documenten, verklaringen, voordelenberichten, marketing post, rekeningen, en welkomstkits tot stand te brengen.
+description: Installeer en configureer AEM Forms Interactive Communications om zakelijke correspondentie, documenten, instructies, kennisgevingen van voordelen, marketingmails, facturen en welkomstkits te maken.
+seo-description: Installeer en configureer AEM Forms Interactive Communications om zakelijke correspondentie, documenten, instructies, kennisgevingen van voordelen, marketingmails, facturen en welkomstkits te maken.
 uuid: 8acb7f68-0b52-4acd-97e2-af31c9408e8d
 topic-tags: installing
 discoiquuid: 225f2bc1-6842-4c79-a66d-8024a29325c0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: cbc43991143397c8bc0080b7402bfdc664522ab8
 workflow-type: tm+mt
-source-wordcount: '1413'
+source-wordcount: '1396'
 ht-degree: 0%
 
 ---
@@ -20,37 +20,37 @@ ht-degree: 0%
 
 ## Inleiding {#introduction}
 
-AEM Form heeft de mogelijkheid om het maken, samenstellen, beheren en leveren van beveiligde en interactieve documenten, zoals zakelijke correspondentie, documenten, instructies, kennisgevingen van voordelen, marketingmails, facturen en welkomstkits, te centraliseren. Dit vermogen is gekend als interactieve mededeling. De mogelijkheid is opgenomen in het invoegpakket AEM Forms. Het invoegpakket wordt geïmplementeerd op een instantie Auteur of Publiceren van AEM.
+AEM Form heeft de mogelijkheid om het maken, samenstellen, beheren en leveren van beveiligde en interactieve documenten, zoals zakelijke correspondentie, documenten, instructies, kennisgevingen van voordelen, marketingmails, facturen en welkomstkits, te centraliseren. Dit vermogen is gekend als interactieve mededeling. De mogelijkheid is opgenomen in het invoegpakket voor AEM Forms. Het invoegpakket wordt geïmplementeerd op een instantie Auteur of Publiceren van AEM.
 
-U kunt de interactieve communicatiemogelijkheid gebruiken om communicatie in meerdere indelingen te produceren. Bijvoorbeeld web en PDF. U kunt interactieve communicatie met AEM Workflow integreren om de geassembleerde communicatie te verwerken en aan klanten op het kanaal van hun keus te leveren. U kunt bijvoorbeeld een communicatie naar de eindgebruiker verzenden via e-mail.
+U kunt de interactieve communicatiemogelijkheid gebruiken om communicatie in meerdere indelingen te produceren. Bijvoorbeeld web en PDF. U kunt interactieve communicatie met AEM Workflow integreren om de geassembleerde communicatie te verwerken en te leveren aan klanten op het kanaal van hun keuze. U kunt bijvoorbeeld een communicatie naar de eindgebruiker verzenden via e-mail.
 
 Als u een upgrade uitvoert van een vorige versie en al hebt geïnvesteerd in het beheer van correspondentie, kunt u het [compatibiliteitspakket](../../forms/using/installing-configuring-intreactive-communication-correspondence-management.md#install-compatibility-package) installeren en het correspondentiebeheer blijven gebruiken. Voor informatie over de verschillen tussen interactieve mededeling en correspondentiebeheer, zie [Interactief Communicatieoverzicht](/help/forms/using/interactive-communications-overview.md#interactive-communications-vs-correspondence-management).
 
-AEM Forms is een krachtig platform op bedrijfsniveau. Interactieve communicatie is slechts een van de mogelijkheden van AEM Forms. Voor de volledige lijst van mogelijkheden, zie [Inleiding aan AEM Forms](../../forms/using/introduction-aem-forms.md).
+AEM Forms is een krachtig platform op bedrijfsniveau. Interactieve communicatie is slechts een van de mogelijkheden van AEM Forms. Zie [Introductie tot AEM Forms](../../forms/using/introduction-aem-forms.md)voor de volledige lijst met mogelijkheden.
 
 ## Implementatietopologie {#deployment-topology}
 
-AEM Forms-invoegtoepassing is een toepassing die op AEM wordt geïmplementeerd. U vereist slechts een minimum van één AEM Author en instantie van de Verwerking om het Interactieve Communicatie vermogen in werking te stellen. De volgende topologie is indicatieve topologie om AEM Forms Interactieve Mededelingen, het Beheer van de Correspondentie, AEM Forms gegevens vangen, en vorm-Centric werkschema op mogelijkheden in werking te stellen OSGi. Voor gedetailleerde informatie over de topologie, zie [Architectuur en plaatsingstopologieën voor AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
+AEM Forms add-on package is een toepassing die op AEM wordt geïmplementeerd. U vereist slechts een minimum van één instantie van de Auteur AEM en van de Verwerking om het Interactieve Communicatie vermogen in werking te stellen. De volgende topologie is indicatieve topologie om de Interactieve Mededelingen van AEM Forms, het Beheer van de Correspondentie, AEM Forms gegevensvangst, en Forms-Centric werkschema op mogelijkheden in werking te stellen OSGi. Voor gedetailleerde informatie over de topologie, zie [Architectuur en plaatsingstopologieën voor AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
 ![aanbevolen topologie](assets/recommended-topology.png)
 
-De Interactieve Mededelingen van AEM Forms stellen admin, creatie, en de gebruikersinterfaces van de agentengebruiker op de instanties van de Auteur van AEM Forms in werking. De instanties van de Publish gastheer definitieve versie van interactieve mededelingen die klaar voor consumptie door eindgebruikers zijn.
+AEM Forms Interactive Communications voert admin, authoring en gebruikersinterfaces voor agent uit op de Author-instanties van AEM Forms. De instanties van de Publish gastheer definitieve versie van interactieve mededelingen die klaar voor consumptie door eindgebruikers zijn.
 
 ## Systeemvereisten {#system-requirements}
 
-Voordat u de mogelijkheden voor interactieve communicatie en correspondentiebeheer van AEM Forms gaat installeren en configureren, moet u ervoor zorgen dat:
+Voordat u de mogelijkheden voor interactief communicatie- en correspondentiebeheer van AEM Forms gaat installeren en configureren, moet u ervoor zorgen dat:
 
 * Hardware- en software-infrastructuur is aanwezig. Raadpleeg de [technische vereisten](/help/sites-deploying/technical-requirements.md)voor een gedetailleerde lijst met ondersteunde hardware en software.
 
-* Het installatiepad van de AEM-instantie bevat geen spaties.
-* Er wordt een AEM-instantie uitgevoerd. In AEM-terminologie is een &quot;instantie&quot; een kopie van AEM die wordt uitgevoerd op een server in de auteur- of publicatiemodus. U hebt ten minste één AEM-instantie (Auteur of Verwerking) nodig om AEM Forms interactieve communicatie- en correspondentiebeheermogelijkheden uit te voeren:
+* Het installatiepad van de AEM-instantie bevat geen witruimten.
+* Er wordt een AEM-instantie uitgevoerd. In AEM terminologie is een &quot;instantie&quot; een kopie van AEM die op een server in de auteur- of publicatiemodus wordt uitgevoerd. U hebt ten minste één AEM nodig (Auteur of Verwerking) om AEM Forms-functies voor interactieve communicatie en correspondentiebeheer uit te voeren:
 
-   * **Auteur**: Een AEM-instantie die wordt gebruikt om inhoud te maken, te uploaden en te bewerken en om de website te beheren. Wanneer de inhoud gereed is om live te gaan, wordt deze gekopieerd naar de publicatie-instantie.
-   * **Verwerking:** Een verwerkingsinstantie is een [geharde AEM Author](/help/forms/using/hardening-securing-aem-forms-environment.md) -instantie. Nadat u de installatie hebt uitgevoerd, kunt u een instantie Auteur instellen en deze lastiger maken.
+   * **Auteur**: Een AEM die wordt gebruikt om inhoud te maken, te uploaden en te bewerken en om de website te beheren. Wanneer de inhoud gereed is om live te gaan, wordt deze gekopieerd naar de publicatie-instantie.
+   * **Verwerking:** Een verwerkingsinstantie is een [verhard AEM Author](/help/forms/using/hardening-securing-aem-forms-environment.md) -instantie. Nadat u de installatie hebt uitgevoerd, kunt u een instantie Auteur instellen en deze lastiger maken.
 
-   * **Publiceren**: Een AEM-instantie die de gepubliceerde inhoud via internet of een intern netwerk aan het publiek levert.
+   * **Publiceren**: Een AEM instantie die de gepubliceerde inhoud via internet of een intern netwerk aan het publiek levert.
 
-* Er wordt voldaan aan de geheugenvereisten. AEM Forms-invoegpakket vereist:
+* Er wordt voldaan aan de geheugenvereisten. AEM Forms-add-on-pakket vereist:
 
    * 15 GB tijdelijke ruimte voor op Microsoft Windows gebaseerde installaties.
    * 6 GB tijdelijke ruimte voor UNIX-installaties.
@@ -88,9 +88,9 @@ Voordat u de mogelijkheden voor interactieve communicatie en correspondentiebehe
 
 ## AEM Forms-invoegtoepassing installeren {#install-aem-forms-add-on-package}
 
-AEM Forms-invoegtoepassing is een toepassing die op AEM wordt geïmplementeerd. Het pakket bevat AEM Forms interactieve communicatie, correspondentiebeheer en andere mogelijkheden. Voer de volgende stappen uit om het invoegpakket te installeren:
+AEM Forms add-on package is een toepassing die op AEM wordt geïmplementeerd. Het pakket bevat interactieve AEM Forms-communicatie, correspondentiebeheer en andere mogelijkheden. Voer de volgende stappen uit om het invoegpakket te installeren:
 
-1. Open [Softwaredistributie](https://experience.adobe.com/downloads). U hebt een Adobe ID nodig om u aan te melden bij de Softwaredistributie.
+1. Open [Softwaredistributie](https://experience.adobe.com/downloads). U hebt een Adobe ID nodig om u aan te melden bij de softwaredistributie.
 1. Tik **[!UICONTROL Adobe Experience Manager]** beschikbaar in het koptekstmenu.
 1. In het **[!UICONTROL Filters]** gedeelte:
    1. Selecteer een optie **[!UICONTROL Forms]** in de **[!UICONTROL Solution]** vervolgkeuzelijst.
@@ -101,12 +101,12 @@ AEM Forms-invoegtoepassing is een toepassing die op AEM wordt geïmplementeerd. 
 
    U kunt het pakket ook downloaden via de directe koppeling in het [AEM Forms-releaseartikel](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) .
 
-1. Nadat het pakket is geïnstalleerd, wordt u gevraagd om de AEM-instantie opnieuw te starten. **Start de server niet onmiddellijk opnieuw.** Alvorens de server van AEM Forms tegen te houden, wacht tot de ServiceEvent REGISTERED en ServiceEvent niet GEREGISTREERDE berichten ophouden verschijnen in het [AEM-Installatie-Folder]/crx-quickstart/logs/error.log- dossier en het logboek stabiel is.
+1. Nadat het pakket is geïnstalleerd, wordt u gevraagd om de AEM opnieuw te starten. **Start de server niet onmiddellijk opnieuw.** Voordat u de AEM Forms-server stopt, wacht u tot de berichten ServiceEvent REGISTERED en ServiceEvent UNREGISTERED niet meer voorkomen in het bestand [AEM-Installation-Directory]/crx-quickstart/logs/error.log en het logbestand stabiel is.
 1. Herhaal stap 1-7 voor alle instanties Auteur en Publiceren.
 
 ## Configuratie na installatie {#post-installation-configurations}
 
-AEM Forms hebben een paar verplichte en optionele configuraties. De verplichte configuraties omvatten het vormen bibliotheken BouncyCastle en serialization agent. De optionele configuraties zijn het configureren van dispatcher en Adobe Target.
+AEM Forms heeft een paar verplichte en optionele configuraties. De verplichte configuraties omvatten het vormen bibliotheken BouncyCastle en serialization agent. De optionele configuraties zijn het configureren van dispatcher en Adobe Target.
 
 ### Verplichte configuraties na installatie {#mandatory-post-installation-configurations}
 
@@ -114,10 +114,10 @@ AEM Forms hebben een paar verplichte en optionele configuraties. De verplichte c
 
 Voer de volgende stappen op alle Auteur uit en publiceer instanties om de bibliotheken op te starten afvaardigen:
 
-1. Stop de onderliggende AEM-instantie.
-1. Open de [AEM-installatiemap]\crx-quickstart\conf\sling.properties.
+1. Stop de onderliggende AEM instantie.
+1. Open het bestand [AEM installatiemap]\crx-quickstart\conf\sling.properties.
 
-   Als u de [AEM-installatiemap]\crx-quickstart\bin\start.bat hebt gebruikt om AEM te starten, bewerkt u de sling.properties op de locatie [AEM_root]\crx-quickstart\.
+   Als u [AEM installatiemap]\crx-quickstart\bin\start.bat hebt gebruikt om AEM te starten, bewerkt u de eigenschappen sling.properties op de locatie [AEM_root]\crx-quickstart\.
 
 1. Voeg de volgende eigenschappen toe aan het bestand sling.properties:
 
@@ -126,7 +126,7 @@ Voer de volgende stappen op alle Auteur uit en publiceer instanties om de biblio
    sling.bootdelegation.class.org.bouncycastle.jce.provider.BouncyCastleProvider=org.bouncycastle.*
    ```
 
-1. Sla het bestand op, sluit het en start de AEM-instantie.
+1. Sla het bestand op, sluit het en start het AEM.
 1. Herhaal stap 1-4 voor alle instanties Auteur en Publiceren.
 
 #### Vorm de rangschikkingsagent {#configure-the-serialization-agent}
@@ -142,9 +142,9 @@ Voer de volgende stappen uit op alle instanties Auteur en Publish om het pakket 
 
 #### Compatibiliteitspakket installeren {#install-compatibility-package}
 
-De interactieve mededeling is het gebrek en geadviseerde benadering om klantenmededelingen in Vormen AEM 6.5 tot stand te brengen. Als u een upgrade hebt uitgevoerd of een migratie hebt uitgevoerd van een vorige versie en u wilt doorgaan met het gebruik van letters (Correspondentiebeheer), installeert u het [AEMFD-compatibiliteitspakket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT).
+De interactieve mededeling is het gebrek en geadviseerde benadering om klantenmededelingen in AEM 6.5 Forms tot stand te brengen. Als u een upgrade hebt uitgevoerd of een migratie hebt uitgevoerd van een vorige versie en u wilt doorgaan met het gebruik van letters (Correspondentiebeheer), installeert u het [AEMFD-compatibiliteitspakket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT).
 
-Met het compatibiliteitspakket AEMFD kunt u de volgende elementen van AEM 6.4 Forms, AEM 6.3 Forms en AEM 6.2 Forms op AEM 6.5 Forms gebruiken:
+Met het compatibiliteitspakket voor AEMFD kunt u de volgende middelen gebruiken van AEM 6.4 Forms, AEM 6.3 Forms en AEM 6.2 Forms op AEM 6.5 Forms:
 
 * Documentfragmenten
 * Letters
@@ -153,7 +153,7 @@ Met het compatibiliteitspakket AEMFD kunt u de volgende elementen van AEM 6.4 Fo
 
 #### Dispatcher configureren {#configure-dispatcher}
 
-Dispatcher is een hulpprogramma voor het in cache plaatsen en taakverdeling voor AEM. AEM Dispatcher helpt ook de AEM-server te beschermen tegen aanvallen. U kunt de beveiliging van uw AEM-instantie verhogen door de Dispatcher in combinatie met een webserver op bedrijfsniveau te gebruiken. Als u [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html)gebruikt, voert u de volgende configuraties voor AEM Forms uit:
+Dispatcher is een Adobe Experience Manager-programma voor caching en/of taakverdeling dat kan worden gebruikt in combinatie met een webserver op bedrijfsniveau. Als u [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html)gebruikt, voert u de volgende configuraties uit voor AEM Forms:
 
 1. Toegang voor AEM Forms configureren:
 
@@ -161,7 +161,7 @@ Dispatcher is een hulpprogramma voor het in cache plaatsen en taakverdeling voor
 
    `/0025 { /type "allow" /glob "* /bin/xfaforms/submitaction*" } # to enable AEM Forms submission`
 
-   Sla het bestand op en sluit het. Raadpleeg de documentatie bij [Dispatcher voor meer informatie over filters](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html).
+   Sla het bestand op en sluit het. Raadpleeg de documentatie bij [Verzender](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html)voor meer informatie over filters.
 
 1. Configureer de referentiefilterservice:
 
@@ -169,9 +169,9 @@ Dispatcher is een hulpprogramma voor het in cache plaatsen en taakverdeling voor
 
 #### Adobe Target integreren {#integrate-adobe-target}
 
-Uw klanten zullen waarschijnlijk een interactieve mededeling verlaten als de ervaring het levert niet aansprekend is. Hoewel het voor de klanten frustrerend is, kan het het steunvolume en de kosten voor uw organisatie ook herstellen. Het is kritiek en uitdagend om de juiste klantenervaring te identificeren en te verstrekken die de omzettingssnelheid verhoogt. AEM-formulieren vormen de sleutel tot dit probleem.
+Uw klanten zullen waarschijnlijk een interactieve mededeling verlaten als de ervaring het levert niet aansprekend is. Hoewel het voor de klanten frustrerend is, kan het het steunvolume en de kosten voor uw organisatie ook herstellen. Het is kritiek en uitdagend om de juiste klantenervaring te identificeren en te verstrekken die de omzettingssnelheid verhoogt. AEM formulieren vormen de sleutel tot dit probleem.
 
-AEM-formulieren kunnen worden geïntegreerd met Adobe Target, een oplossing voor Adobe Marketing Cloud, om persoonlijke en aantrekkelijke klantervaringen te bieden via meerdere digitale kanalen. Als u Adobe Target wilt gebruiken voor het personaliseren van een interactieve communicatie, [integreert u Adobe Target met AEM Forms](../../forms/using/ab-testing-adaptive-forms.md#setupandintegratetargetinaemforms).
+AEM formulieren kunnen worden geïntegreerd met Adobe Target, een Adobe Marketing Cloud-oplossing, om persoonlijke en aantrekkelijke klantervaringen te bieden via meerdere digitale kanalen. Als u Adobe Target wilt gebruiken voor het personaliseren van een interactieve communicatie, [integreert u Adobe Target met AEM Forms](../../forms/using/ab-testing-adaptive-forms.md#setupandintegratetargetinaemforms).
 
 #### SSL-communicatie configureren voor formuliergegevensmodel  {#configure-ssl-communcation-for-form-data-model}
 

@@ -4,7 +4,7 @@ description: De nota's van de versie specifiek voor [!DNL Adobe Experience Manag
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 32addae877604a242c97eac3ed81bbc2f55ec60a
+source-git-commit: 622fbe5eba3e737ebc25e6c57d7ed68d7bff9555
 workflow-type: tm+mt
 source-wordcount: '4235'
 ht-degree: 0%
@@ -434,7 +434,7 @@ Voor informatie over het installeren van het cumulatieve installatieprogramma vo
 
 ### UberJar {#uber-jar}
 
-UberJar voor Experience Manager 6.5.6.0 is beschikbaar in de [Adobe Public Maven bewaarplaats](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.6/).
+UberJar voor Experience Manager 6.5.6.0 is beschikbaar in de [Adobe Public Maven bewaarplaats](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.6-1.0/).
 
 Om UberJar in een Geweven project te gebruiken, zie [hoe te UberJar](/help/sites-developing/ht-projects-maven.md) gebruiken en omvat het volgende gebiedsdeel in uw projectPOM:
 
@@ -442,7 +442,7 @@ Om UberJar in een Geweven project te gebruiken, zie [hoe te UberJar](/help/sites
 <dependency>
       <groupId>com.adobe.aem</groupId>
       <artifactId>uber-jar</artifactId>
-      <version>6.5.6</version>  
+      <version>6.5.6-1.0</version>  
       <scope>provided</scope>
 </dependency>
 ```

@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 translation-type: tm+mt
-source-git-commit: ac3d18bf0b39efbe927c10aef557296140628e19
+source-git-commit: e5c2385c29e2d20d453e2d1496f7d459d1c55876
 workflow-type: tm+mt
 source-wordcount: '2187'
 ht-degree: 0%
@@ -73,9 +73,9 @@ Een eenvoudige installatie van een Correspondentenbeheeroplossing bestaat uit ee
 
 Met formulierbeheer stroomlijnt u het bijwerken, beheren en verwijderen van formulieren.
 
-### Werkruimte AEM Forms {#html-workspace}
+### AEM Forms Workspace {#html-workspace}
 
-De werkruimte van AEM Forms komt overeen met de mogelijkheden van de (Vervangen voor AEM formulieren in JEE) Flex Workspace en voegt nieuwe mogelijkheden toe om Workspace uit te breiden en te integreren en gebruikersvriendelijker te maken.
+AEM Forms Workspace past de mogelijkheden van de Flex Workspace (Verouderd voor AEM formulieren op JEE) aan en voegt nieuwe mogelijkheden toe om Workspace uit te breiden en te integreren en gebruikersvriendelijker te maken.
 
 >[!NOTE]
 >

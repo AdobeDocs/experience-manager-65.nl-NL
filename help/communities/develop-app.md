@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 translation-type: tm+mt
-source-git-commit: d0b333ffa6cad4841e70e652328e92554fb2a7a1
+source-git-commit: e5c2385c29e2d20d453e2d1496f7d459d1c55876
 workflow-type: tm+mt
 source-wordcount: '598'
 ht-degree: 2%
@@ -48,7 +48,7 @@ CRXDE Lite gebruiken:
 
 ### Scripts voor hoofd en lichaam {#head-and-body-scripts}
 
-1. Navigeer in het deelvenster **CRXDE Lite** -verkenner naar het bestand `/apps/an-scf-sandbox/components/playpage` en dubbelklik erop `playpage.jsp` om het te openen in het bewerkingsvenster.
+1. Navigeer in het deelvenster **CRXDE Lite** Explorer naar het bestand `/apps/an-scf-sandbox/components/playpage` en dubbelklik erop `playpage.jsp` om dit te openen in het bewerkvenster.
 
    `/apps/an-scf-sandbox/components/playpage/playpage.jsp`
 
@@ -99,6 +99,7 @@ CRXDE Lite gebruiken:
 
       * Naam: **body.jsp**
    1. Klik op **[!UICONTROL Save All]**.
+
    Open `/apps/an-scf-sandbox/components/playpage/body.jsp` en plak in de volgende tekst:
 
    ```xml
@@ -129,7 +130,7 @@ Het paneel Middelen/component wordt weergegeven wanneer het zijpaneel geopend is
 
 ![chlimage_1-232](assets/chlimage_1-232.png)
 
-* Klassieke gebruikersinterface: [http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html](http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html)
+* Klassieke interface: [http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html](http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html)
 
 Hieronder ziet u hoe de afspeelpagina wordt weergegeven in de klassieke gebruikersinterface, inclusief in de zoekfunctie voor inhoud (cf):
 

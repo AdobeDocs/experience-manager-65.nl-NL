@@ -1,8 +1,8 @@
 ---
 title: MSRP - MongoDB Storage Resource Provider
 seo-title: MSRP - MongoDB Storage Resource Provider
-description: Stel AEM Communities in om een relationele database te gebruiken als de algemene opslag
-seo-description: Stel AEM Communities in om een relationele database te gebruiken als de algemene opslag
+description: AEM Communities instellen om een relationele database te gebruiken als de algemene opslag
+seo-description: AEM Communities instellen om een relationele database te gebruiken als de algemene opslag
 uuid: 9fc06d4f-a60f-4ce3-8586-bcc836aa7de6
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 048f7b30-20c3-4567-bd32-38cf2643cf39
 translation-type: tm+mt
-source-git-commit: 412200c1bb0c7050c981fc5dc2a5430f37b3beb3
+source-git-commit: 94bc3550a7e18b9203e7a0d495d195d7b798e012
 workflow-type: tm+mt
-source-wordcount: '1175'
+source-wordcount: '1174'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## Over MSRP {#about-msrp}
 
-Wanneer de AEM Communities wordt gevormd om MSRP als zijn gemeenschappelijke opslag te gebruiken, is de gebruiker geproduceerde inhoud (UGC) toegankelijk van alle auteur en publiceer instanties zonder de behoefte aan synchronisatie of replicatie.
+Wanneer AEM Communities wordt gevormd om MSRP als zijn gemeenschappelijke opslag te gebruiken, is de gebruiker geproduceerde inhoud (UGC) toegankelijk van alle auteur en publiceer instanties zonder de behoefte aan synchronisatie of replicatie.
 
 Zie ook [Kenmerken van Opties](working-with-srp.md#characteristics-of-srp-options) SRP en [Aanbevolen Topologieën](topologies.md).
 
@@ -37,7 +37,7 @@ Zie ook [Kenmerken van Opties](working-with-srp.md#characteristics-of-srp-option
 
 * [Apache Solr](https://lucene.apache.org/solr/):
 
-   * Versie 4.10 of versie 5
+   * Solr versie 7.0
    * Solr vereist Java 1.7 of hoger
    * Er is geen service nodig
    * Keuze van uitvoeringsmodi:
@@ -80,7 +80,7 @@ Op auteur, om tot de console van de Configuratie van de Opslag toegang te hebben
 
 * **[!UICONTROL SolrConfiguration]**
 
-   * **[Zookeeper](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files)-host **
+   * **[Zookeeper](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files)-host**
 
       Wanneer het lopen op wijze [SolrCloud met een externe ZooKeeper, plaats deze waarde aan](solr.md#solrcloud-mode) voor ZooKeeper, zoals `HOST:PORT` *my.server.com:2181*
 
@@ -139,7 +139,7 @@ Voor configuratiedetails, zie de Configuratie van [Solr voor SRP](solr.md).
 
 Als bevordering van een vroegere die versie met MSRP wordt gevormd, zal het noodzakelijk zijn:
 
-1. Voer de [upgrade uit naar AEM Communities](upgrade.md)
+1. Voer de [upgrade naar AEM Communities uit](upgrade.md)
 1. Nieuwe Solr-configuratiebestanden installeren
    * Voor [standaard MLS](solr.md#installing-standard-mls)
    * Voor [geavanceerde MLS](solr.md#installing-advanced-mls)
@@ -235,7 +235,7 @@ Ga bij alle auteur- en publiceer AEM naar de [opslagconfiguratieconsole](srp-con
 
 ### UGC verdwijnt na upgrade {#ugc-disappears-after-upgrade}
 
-Als een upgrade wordt uitgevoerd vanaf een bestaande AEM Communities 6.0-site, moet een reeds bestaande UGC worden geconverteerd om te voldoen aan de vereiste structuur voor de [SRP](srp.md) API na een upgrade naar AEM Communities 6.3.
+Als u een upgrade uitvoert vanaf een bestaande AEM Communities 6.0-site, moet een reeds bestaande UGC worden geconverteerd om te voldoen aan de structuur die is vereist voor de [SRP](srp.md) API na een upgrade naar AEM Communities 6.3.
 
 Er is een open bronhulpmiddel beschikbaar op GitHub voor dit doel:
 

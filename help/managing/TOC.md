@@ -2,10 +2,11 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.5 Handboek voor beheer
+user-guide-title: AEM 6.5 Handboek beheren
+breadcrumb-title: Managing Guide
 user-guide-description: Learn how to manage an AEM project.
 translation-type: tm+mt
-source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+source-git-commit: e917a36f9b8748080e9ab770a7f58f06123ea166
 workflow-type: tm+mt
 source-wordcount: '63'
 ht-degree: 20%
@@ -13,7 +14,7 @@ ht-degree: 20%
 ---
 
 
-# AEM 6.5 Handboek voor beheer {#managing}
+# AEM 6.5 Handboek beheren {#managing}
 
 + [Gebruikershandleiding beheren](home.md)
 + Beheren - Checklist voor beste praktijken {#managing-best-practices-checklist}

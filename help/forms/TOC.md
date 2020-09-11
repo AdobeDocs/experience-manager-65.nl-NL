@@ -4,9 +4,10 @@ product: adobe experience manager
 sub-product: formulieren
 audience: end-user
 user-guide-title: AEM 6.5 Forms Handboek
+breadcrumb-title: Forms Guide
 user-guide-description: Create, manage, publish, and update digital forms.
 translation-type: tm+mt
-source-git-commit: 0b702f58ef7dc85df43bc6d34866dbf3d1100b5e
+source-git-commit: e917a36f9b8748080e9ab770a7f58f06123ea166
 workflow-type: tm+mt
 source-wordcount: '3700'
 ht-degree: 0%
@@ -398,7 +399,7 @@ ht-degree: 0%
    + [Transactierapporten Billable API&#39;s](using/transaction-reports-billable-apis.md)
    + [Een transactie opnemen voor aangepaste implementaties](using/record-transaction-custom-implementation.md)
 + Beheerdershulp voor AEM Forms op JEE {#administrator-help}
-   + Dominiëren {#get-started}
+   + Aan de slag {#get-started}
       + [Algemene AEM Forms-instellingen](/help/forms/using/admin-help/configure-general-aem-forms-settings.md)
       + [Het licentietype voor de implementatie bijwerken](/help/forms/using/admin-help/update-license-type-deployment.md)
    + Domeinen instellen en beheren {#setup-manage-domains}

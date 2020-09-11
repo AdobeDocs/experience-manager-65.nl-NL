@@ -4,9 +4,9 @@ description: De nota's van de versie specifiek voor [!DNL Adobe Experience Manag
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 622fbe5eba3e737ebc25e6c57d7ed68d7bff9555
+source-git-commit: 74f1fc80bb908f7b7114177c5f8355ff892b95ed
 workflow-type: tm+mt
-source-wordcount: '4235'
+source-wordcount: '4234'
 ht-degree: 0%
 
 ---
@@ -112,7 +112,7 @@ Hier volgt een lijst met oplossingen uit de release van [!DNL Experience Manager
 
 * De pagina met zoekresultaten en de pagina met zoekresultaten hebben nu meer informatieve titels voor een beter begrip van schermlezers (NPR-34093).
 
-* Schermlezers kondigen nu de opties aan om de geselecteerde tags op het [!UICONTROL Basic] tabblad met knoppen voor elementen [!UICONTROL Properties]te verwijderen en de geselecteerde tags te verwijderen (NPR-33972).
+* Schermlezers kondigen nu de opties aan om de geselecteerde tags op het [!UICONTROL Basic] tabblad met asset- [!UICONTROL Properties] knoppen te verwijderen en de geselecteerde tags te verwijderen (NPR-33972).
 
 * De elementen in elke rij in de lijstweergave worden nu correct door schermlezers aangekondigd als de elementen van dezelfde rij (NPR-33932).
 

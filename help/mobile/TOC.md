@@ -2,10 +2,11 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.5 Mobile User Guide
+user-guide-title: AEM 6.5 Mobiele gebruikershandleiding
+breadcrumb-title: Mobile Guide
 user-guide-description: Create and manage content for mobile apps.
 translation-type: tm+mt
-source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+source-git-commit: e917a36f9b8748080e9ab770a7f58f06123ea166
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 0%
@@ -13,7 +14,7 @@ ht-degree: 0%
 ---
 
 
-# AEM 6.5 Mobile User Guide {#mobile}
+# AEM 6.5 Mobiele gebruikershandleiding {#mobile}
 
 + [Overzicht van de mobiele gebruikershandleiding](home.md)
 + Inleiding tot AEM Mobile {#introduction}
@@ -49,14 +50,14 @@ ht-degree: 0%
    + [Inhoud leveren](develop-content-as-a-service.md)
 + De toepassing On-Demand Services beheren {#administering}
    + [AEM Mobile On-Demand](aem-mobile.md)
-   + [AEM Mobile-installatie](aem-mobile-setup.md)
+   + [AEM Mobile-configuratie](aem-mobile-setup.md)
    + [Uw gebruikers en gebruikersgroepen configureren](aem-mobile-configure-users.md)
    + [Voorvertonen met Preflight](aem-mobile-manage-ondemand-services.md)
    + [Mobiele apps](administer-mobile-apps.md)
    + [Modellen - overzicht](model-management.md)
    + [Spaties en entiteiten](spaces-and-entities.md)
    + [Verzamelingen beheren](mobile-on-demand-managing-collections.md)
-+ Adobe PhoneGap Enterprise ontwerpen {#author-phonegap}
++ Authoring in Adobe PhoneGap Enterprise {#author-phonegap}
    + [PhoneGap](phonegap.md)
    + [App-metagegevens bewerken](phonegap-editmetadata.md)
    + [Toepassingsdefinities](phonegap-app-definitions.md)
@@ -64,7 +65,7 @@ ht-degree: 0%
    + [Een nieuwe AEM Mobile-app maken met de wizard Maken](phonegap-create-new-app.md)
    + [Mobiele toepassingen ontwerpen](phonegap-authoring-apps.md)
    + [App-tegel beheren](phonegap-app-details-tile.md)
-   + [Aanpassing van AEM Mobile-inhoud](phonegap-aem-mobile-content-personalization.md)
+   + [AEM Mobile-inhoud aanpassen](phonegap-aem-mobile-content-personalization.md)
 + Adobe PhoneGap Enterprise ontwikkelen {#developphonegap}
    + [PhoneGap](developing-in-phonegap.md)
    + [Mobiele toepassingen maken](building-app-mobile-phonegap.md)
@@ -85,11 +86,11 @@ ht-degree: 0%
    + [AEM PhoneGap starten](starting-aem-phonegap-app.md)
    + [Mobiele apps testen](develop-mobile-apps-testing.md)
    + [Een app structureren](phonegap-structure-an-app.md)
-   + [App-prestaties volgen met Adobe Mobile Analytics](phonegap-intro-to-app-analytics.md)
+   + [App-prestaties bijhouden met Adobe Mobile Analytics](phonegap-intro-to-app-analytics.md)
 + Adobe PhoneGap Enterprise beheren {#administering-phonegap}
    + [Mobile QuickStart](phonegap-mobile-quickstart.md)
    + [Inhoud voor Adobe PhoneGap Enterprise beheren met AEM](administer-phonegap.md)
-   + [Uw Adobe PhoneGap Build-Cloud Service configureren](configure-phonegap-build-cloud.md)
+   + [Adobe PhoneGap Build-Cloud Service configureren](configure-phonegap-build-cloud.md)
    + [Het filter Referrer instellen op Leeg maken](setting-referrer-filter-empty.md)
    + [Uw Adobe Mobile Services-Cloud Service configureren](configure-adobe-mobile-cloud-service.md)
    + [Uw gebruikers en gebruikersgroepen configureren](configure-users-groups.md)

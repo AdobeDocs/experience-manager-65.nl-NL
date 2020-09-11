@@ -9,7 +9,7 @@ topic-tags: develop
 discoiquuid: 13f00bb2-561f-4d64-8829-292c663abeab
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6b4bc58efd72900c54cb245878239e345d72ae3e
+source-git-commit: e5c2385c29e2d20d453e2d1496f7d459d1c55876
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # SOM-expressies gebruiken in aangepaste formulieren{#using-som-expressions-in-adaptive-forms}
 
-Aangepaste formulieren worden gemodelleerd als AEM-pagina die wordt weergegeven als JCR-inhoudsstructuur in AEM-opslagruimte. Het belangrijkste element van de inhoudsstructuur is guideContainer-knooppunt. Onder guideContainer, is er rootPanel die genestelde paneel en gebieden kan bevatten.
+Aangepaste formulieren worden gemodelleerd als AEM pagina die wordt weergegeven als JCR-inhoudsstructuur in AEM opslagplaats. Het belangrijkste element van de inhoudsstructuur is guideContainer-knooppunt. Onder guideContainer, is er rootPanel die genestelde paneel en gebieden kan bevatten.
 
 U kunt een scriptobjectmodel (SOM) gebruiken om te verwijzen naar waarden, eigenschappen en methoden binnen een bepaald DOM (Document Object Model). Een DOM organiseert de geheugenvoorwerpen en de eigenschappen in een boomhiërarchie. Een SOM-expressie verwijst naar Velden/Elementen en deelvensters tekenen.
 
@@ -35,7 +35,7 @@ Een SOM-expressie voor een element in een adaptieve vorm wordt vooraf ingesteld 
 
 DOM-structuur met twee keuzerondjes
 
-De SOM-expressie verandert wanneer u de positie van de keuzerondjes in het adaptieve formulier wijzigt. In de ontwerpmodus kunt u de SOM-expressie van een veld of element in AEM-formulieren weergeven met de optie SOM-expressie weergeven. De optie wordt weergegeven in het deelvenster en wanneer u met de rechtermuisknop op het veld of element klikt.
+De SOM-expressie verandert wanneer u de positie van de keuzerondjes in het adaptieve formulier wijzigt. In de ontwerpmodus kunt u de SOM-expressie van een veld of element in AEM Forms weergeven met de optie SOM-expressie weergeven. De optie wordt weergegeven in het deelvenster en wanneer u met de rechtermuisknop op het veld of element klikt.
 
 ![SOM-expressies extraheren in een adaptieve vorm](assets/som-expressions.png)
 
@@ -48,4 +48,3 @@ In deelvensters hebt u toegang tot de functie via de werkbalk van het deelvenste
 SOM-expressies extraheren met de werkbalk van het deelvenster
 
 Sommige API&#39;s die in [GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html) worden vermeld, gebruiken de SOM-expressie van een element. Als u bijvoorbeeld een bepaald veld in een adaptieve vorm de focus wilt geven, geeft u de overeenkomstige SOM-expressie door aan de `getFocus`API in `guideBridge`.
-

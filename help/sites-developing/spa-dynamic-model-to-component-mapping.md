@@ -10,7 +10,10 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 8b4b0afc-8534-4010-8f34-cb10475a8e79
 translation-type: tm+mt
-source-git-commit: 2dad220d6593ed542816f8a97b0d4b44f0d57876
+source-git-commit: 4c9a0bd73e8d87d3869c6a133f5d1049f8430cd1
+workflow-type: tm+mt
+source-wordcount: '370'
+ht-degree: 0%
 
 ---
 
@@ -31,11 +34,11 @@ Elke punten in het model bevatten een `:type` gebied dat een AEM middeltype bloo
 
 Gelieve te verwijzen naar het document van de Blauwdruk [van het](/help/sites-developing/spa-blueprint.md) KUUROORD voor meer informatie over modelontleding en de front-end componententoegang tot het model.
 
-Zie ook het npm-pakket: [https://www.npmjs.com/package/@adobe/cq-spa-component-mapping](https://www.npmjs.com/package/@adobe/cq-spa-component-mapping)
+Zie ook het npm-pakket: [https://www.npmjs.com/package/@adobe/aem-spa-component-mapping](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 
 ## Modelgestuurde toepassing voor één pagina {#model-driven-single-page-application}
 
-Toepassingen met één pagina die gebruikmaken van de Javascript SPA SDK voor AEM, worden door een model gestuurd:
+Toepassingen van één pagina die gebruikmaken van de Javascript SPA SDK voor AEM zijn modelgestuurd:
 
 1. De front-end componenten registreren zich aan de Opslag van de Toewijzing van de [Component](/help/sites-developing/spa-dynamic-model-to-component-mapping.md#componentmapping-module).
 1. Dan herhaalt de [Container](/help/sites-developing/spa-blueprint.md#container), zodra voorzien van een model door de [ModelLeverancier](/help/sites-developing/spa-blueprint.md#the-model-provider), over zijn modelinhoud ( `:items`).

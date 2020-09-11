@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
 translation-type: tm+mt
-source-git-commit: c3438cff60901edad8b81fe1a1bfddbbbe39a18d
+source-git-commit: 94bc3550a7e18b9203e7a0d495d195d7b798e012
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '788'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ Deze configuratie is geschikt voor *niet-productieomgevingen* , zoals voor ontwi
    * Het gedefinieerde pad naar de gegevensdirectory wordt &lt;mongo-dbpath> genoemd.
 
 
-* MongoDB kan op dezelfde host als AEM worden uitgevoerd of op afstand worden uitgevoerd.
+* MongoDB kan op dezelfde host worden uitgevoerd als AEM of extern worden uitgevoerd.
 
 ### MongoDB starten {#start-mongodb}
 
@@ -72,7 +72,7 @@ Hiermee wordt een MongoDB-server gestart met de standaardpoort 27017.
 
 >[!NOTE]
 >
->Als MongoDB wordt gestart *na* AEM, **start** u alle **AEM** -instanties opnieuw zodat deze op de juiste wijze verbinding maken met MongoDB.
+>Als MongoDB wordt gestart *na* AEM, **start** u alle **AEM** instanties opnieuw zodat ze op de juiste wijze verbinding maken met MongoDB.
 
 
 ### Optie voor demoproductie: MongoDB-replicaset instellen {#demo-production-option-setup-mongodb-replica-set}
@@ -100,7 +100,7 @@ De volgende opdrachten zijn een voorbeeld van het instellen van een replicaset m
 * Download Solr van [Apache Lucene](https://archive.apache.org/dist/lucene/solr/):
 
    * Geschikt voor elk besturingssysteem.
-   * Gebruik versie 4.10 of versie 5.
+   * Solr versie 7.0.
    * Solr vereist Java 1.7 of hoger.
 
 * Basisconfiguratie
@@ -143,9 +143,9 @@ U kunt een eenvoudige solrCloud-instelling (geen productie) uitvoeren door solr 
 
 ## MongoDB identificeren als een gemeenschappelijke winkel {#identify-mongodb-as-common-store}
 
-Start de auteur en publiceer zo nodig AEM-instanties.
+Start de auteur en publiceer AEM indien nodig.
 
-Als AEM actief was voordat MongoDB werd gestart, moeten de AEM-instanties opnieuw worden gestart.
+Als AEM actief was voordat MongoDB werd gestart, moeten de AEM instanties opnieuw worden gestart.
 
 Volg de instructies op de hoofddocumentatiepagina: [MSRP - MongoDB Common Store](msrp.md)
 
@@ -175,6 +175,7 @@ Als u de algemene opslag van MongoDB wilt testen en verifiëren, plaatst u een o
    * Gebruiker `core selector` om te selecteren `collection1`
    * Selecteer `Query`
    * Selecteer `Execute Query`
+
    ![chlimage_1-194](assets/chlimage_1-194.png)
 
 ## Problemen oplossen {#troubleshooting}
@@ -185,8 +186,9 @@ Als u de algemene opslag van MongoDB wilt testen en verifiëren, plaatst u een o
 
 1. Zorg ervoor MSRP is gevormd om de standaardleverancier te zijn:
 
-   * Ga bij alle auteurs naar de [opslagconfiguratieconsole en publiceer AEM-instanties](srp-config.md)
-   Of controleer de AEM-opslagplaats:
+   * Voor alle auteur en publiceer AEM instanties, herzie de console van de Configuratie van de [Opslag](srp-config.md)
+
+   Of controleer de AEM opslagplaats:
 
    * In JCR, indien [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
 

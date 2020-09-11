@@ -2,26 +2,26 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.5 Handboek voor het ontwikkelen van gebruikers
+user-guide-title: AEM 6.5 Handboek voor het ontwikkelen van toepassingen
 user-guide-description: This guide covers how to build out your AEM instance.
 translation-type: tm+mt
-source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+source-git-commit: 4c9a0bd73e8d87d3869c6a133f5d1049f8430cd1
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '820'
 ht-degree: 6%
 
 ---
 
 
-# AEM 6.5 Handboek voor het ontwikkelen van gebruikers {#developing}
+# AEM 6.5 Handboek voor het ontwikkelen van toepassingen {#developing}
 
 + [Overzicht van de gebruikershandleiding voor ontwikkeling](home.md)
 + Inleiding voor ontwikkelaars{#introduction}
    + [Aan de slag met het ontwikkelen van AEM Sites - WKND-tutorial](getting-started.md)
-   + [AEM Core Concepts](the-basics.md)
-   + [Structuur van de interface voor AEM-aanraking](touch-ui-structure.md)
-   + [Concepten van de interface voor AEM-aanraakfuncties](touch-ui-concepts.md)
-   + [AEM-ontwikkeling - Richtlijnen en beste praktijken](dev-guidelines-bestpractices.md)
+   + [AEM kernconcepten](the-basics.md)
+   + [Structuur van de interface voor AEM aanraakbediening](touch-ui-structure.md)
+   + [Concepten van de interface AEM Touch-Enabled](touch-ui-concepts.md)
+   + [AEM ontwikkeling - Richtsnoeren en beste praktijken](dev-guidelines-bestpractices.md)
    + [Client-Side bibliotheken gebruiken](clientlibs.md)
    + [Developing and Page Diff](pagediff.md)
    + [Editor-beperkingen](editor-limitations.md)
@@ -43,7 +43,7 @@ ht-degree: 6%
       + [Paginasjablonen - statisch](page-templates-static.md)
       + [Sjablonen voor inhoudsfragmenten](content-fragment-templates.md)
       + [Adaptieve sjabloonrendering](templates-adaptive-rendering.md)
-   + [Het gebruiken van de Verschuivende Samenvoeging van het Middel in AEM](sling-resource-merger.md)
+   + [Het gebruiken van de Verschuivende Fusie van het Middel in AEM](sling-resource-merger.md)
    + [Bedekkingen](overlays.md)
    + [Naamgevingsconventies](naming-conventions.md)
    + [Een nieuwe graniet UI-veldcomponent maken](granite-ui-component.md)
@@ -53,8 +53,8 @@ ht-degree: 6%
       + [Query Builder-API](querybuilder-api.md)
    + Tags{#tagging}
       + [Tags](tags.md)
-      + [AEM Tagging Framework](framework.md)
-      + [Tags maken in een AEM-toepassing](building.md)
+      + [Kader voor tags AEM](framework.md)
+      + [Tags maken in een AEM toepassing](building.md)
    + [Pagina&#39;s aanpassen die worden weergegeven door de fouthandler](customizing-errorhandler-pages.md)
    + [Aangepaste knooppunttypen](custom-nodetypes.md)
    + [Lettertypen toevoegen voor grafisch renderen](adding-fonts.md)
@@ -62,7 +62,7 @@ ht-degree: 6%
    + [URL&#39;s extern maken](externalizer.md)
    + [Banen voor offloaden maken en consumeren](dev-offloading.md)
    + [Cookie-gebruik configureren](cookie-optout.md)
-   + [Programmatoegang tot het JCR AEM](access-jcr.md)
+   + [Programmatoegang tot het AEM JCR](access-jcr.md)
    + [Services integreren met de JMX-console](jmx-integration.md)
    + [De Bulk-editor ontwikkelen](dev-bulk-editor.md)
    + [Rapporten ontwikkelen](dev-reports.md)
@@ -74,9 +74,9 @@ ht-degree: 6%
    + [Kernonderdelen](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
    + [Stijlsysteem](/help/sites-authoring/style-system.md)
    + [Overzicht van componenten](components.md)
-   + [AEM-componenten - De basisbeginselen](components-basics.md)
-   + [AEM-componenten ontwikkelen](developing-components.md)
-   + [AEM-componenten ontwikkelen - Codevoorbeelden](developing-components-samples.md)
+   + [Componenten AEM - De basisbeginselen](components-basics.md)
+   + [AEM ontwikkelen](developing-components.md)
+   + [Ontwikkelen AEM componenten - Codevoorbeelden](developing-components-samples.md)
    + [JSON-exportfunctie voor services voor inhoud](json-exporter.md)
    + [JSON-export inschakelen voor een component](json-exporter-components.md)
    + [Afbeeldingseditor](image-editor.md)
@@ -93,29 +93,29 @@ ht-degree: 6%
       + [Woordenboeken beheren met Vertaler](i18n-translator.md)
       + [Tekenreeksen uitnemen voor vertaling](i18n-extract.md)
    + Klassieke UI-componenten{#classic-ui-components}
-      + [AEM-componenten ontwikkelen (klassieke gebruikersinterface)](developing-components-classic.md)
+      + [Ontwikkeling AEM componenten (klassieke gebruikersinterface)](developing-components-classic.md)
       + [Widgets gebruiken en uitbreiden (klassieke UI)](widgets.md)
       + [xtypes gebruiken (klassieke UI)](xtypes.md)
-      + [Formulieren ontwikkelen (klassieke gebruikersinterface)](developing-forms.md)
+      + [Forms ontwikkelen (klassieke gebruikersinterface)](developing-forms.md)
 + Erviteitsbeheer zonder hoofd{#headless}
-   + [Koploos en hybride met AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+   + [Hoofdloos en hybride met AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
    + [JSON-export inschakelen voor een component](json-exporter-components.md)
    + Toepassingen voor één pagina{#spas}
       + [Introductie van het KUUROORD en Analyse](spa-walkthrough.md)
       + [SPA WKND-zelfstudie](spa-wknd.md)
-      + [Aan de slag met SPA&#39;s in AEM - Reageren](spa-getting-started-react.md)
+      + [Begonnen het worden met SPAs in AEM - Reageer](spa-getting-started-react.md)
       + [Aan de slag met SPA&#39;s in AEM - hoekig](spa-getting-started-angular.md)
       + [Het uitvoeren van een Component van de Reactie voor SPA](spa-implementing-react-component.md)
       + [Diepe kieuwen van SPA](spa-deep-dives.md)
       + [Overzicht van SPA-editor](spa-overview.md)
-      + [SBZ&#39;s voor AEM ontwikkelen](spa-architecture.md)
+      + [Het ontwikkelen van SPAs voor AEM](spa-architecture.md)
       + [SPA-blauwdruk](spa-blueprint.md)
       + [SPA-paginacomponent](spa-page-component.md)
       + [Dynamisch model aan Component Mapping voor SPAs](spa-dynamic-model-to-component-mapping.md)
       + [SPA Model Routing](spa-routing.md)
-      + [Integratie van SPA en Adobe Experience Platform starten](spa-launch.md)
+      + [Integratie van SPA en Adobe Experience Platform Launch](spa-launch.md)
       + [SPA en rendering op de server](spa-ssr.md)
-      + [API-verwijzingen voor SPA Javascript](spa-reference-materials.md)
+      + [SPA-referentiematerialen](spa-reference-materials.md)
    + [HTTP-API](/help/assets/mac-api-assets.md)
    + [Contentfragmenten](/help/assets/content-fragments/content-fragments.md)
    + [Ervaringsfragmenten](/help/sites-authoring/experience-fragments.md)
@@ -127,14 +127,14 @@ ht-degree: 6%
    + [Dialoogvenster omzetten](dialog-conversion.md)
    + [Ontwikkelen met CRXDE Lite](developing-with-crxde-lite.md)
    + [Pakketten beheren met Maven](vlt-mavenplugin.md)
-   + [AEM-projecten ontwikkelen met Eclipse](howto-projects-eclipse.md)
-   + [AEM-projecten bouwen met Apache Maven](ht-projects-maven.md)
-   + [AEM-projecten ontwikkelen met behulp van IntelliJ IDEA](ht-intellij.md)
+   + [Hoe te om AEM Projecten te ontwikkelen gebruikend Eclipse](howto-projects-eclipse.md)
+   + [Hoe te om AEM Projecten te bouwen gebruikend Apache Maven](ht-projects-maven.md)
+   + [Hoe te om AEM Projecten te ontwikkelen gebruikend IntelliJ IDEA](ht-intellij.md)
    + [Het gereedschap VLT gebruiken](ht-vlttool.md)
    + [Het gereedschap Proxyserver gebruiken](ht-proxy-server.md)
-   + [AEM Brackets Extension](aem-brackets.md)
+   + [Extensie AEM](aem-brackets.md)
    + [AEM Developer Tools for Eclipse](aem-eclipse.md)
-   + [AEM-repo](aem-repo-tool.md)
+   + [AEM](aem-repo-tool.md)
 + Personalisatie{#personlization}
    + [ContextHub](contexthub.md)
    + [ContextHub JavaScript API-naslaggids](contexthub-api.md)
@@ -163,20 +163,20 @@ ht-degree: 6%
       + [Referentie workflowstap](workflows-step-ref.md)
       + [Best practices voor workflow](workflows-best-practices.md)
       + [Referentie workflowproces](workflows-process-ref.md)
-      + [Variabelen in AEM-workflows](/help/sites-developing/using-variables-in-aem-workflows.md)
+      + [Variabelen in AEM werkstromen](/help/sites-developing/using-variables-in-aem-workflows.md)
    + [Het beheer van meerdere sites uitbreiden](extending-msm.md)
-   + Tekstspatiëring en Analytics{#extending-analytics}
+   + Tracering en analyse{#extending-analytics}
       + [Gebeurtenistracking uitbreiden](extending-analytics.md)
       + [Adobe Analytics-tracking toevoegen aan componenten](extending-analytics-components.md)
       + [Adobe Analytics Framework aanpassen](extending-analytics-framework.md)
-      + [Serverpaginanamen voor Analytics implementeren](extending-analytics-pa-naming.md)
+      + [Serverpaginanamen voor analyse implementeren](extending-analytics-pa-naming.md)
    + Cloud Services{#extending-cloud-services}
       + [Configuraties van Cloud Servicen](extending-cloud-config.md)
       + [Een aangepaste Cloud Service maken](extending-cloud-config-custom-cloud.md)
    + [Aangepaste extensies maken](extending-campaign-extensions.md)
-   + Formulieren{#extending-forms}
+   + Forms{#extending-forms}
       + [Aangepaste formuliertoewijzingen maken](extending-campaign-form-mapping.md)
-      + [Aangepaste AEM-paginasjabloon maken met Adobe Campaign-formuliercomponenten](extending-campaign-custom-template.md)
+      + [Aangepaste AEM paginasjabloon maken met Adobe Campaign-formuliercomponenten](extending-campaign-custom-template.md)
       + [Analyse aanvragen](analyze-request.md)
    + [Services integreren met de JMX-console](jmx-integration.md)
    + [De Bulk-editor ontwikkelen](dev-bulk-editor.md)
@@ -199,7 +199,7 @@ ht-degree: 6%
    + [Uw gebruikersinterface testen](hobbes.md)
 + Best practices voor{#bestpractices}
    + [Overzicht van best practices](best-practices.md)
-   + [AEM-ontwikkelingrichtlijnen en beste praktijken](dev-guidelines-bestpractices.md)
+   + [Richtlijnen voor AEM ontwikkeling en beste praktijken](dev-guidelines-bestpractices.md)
    + [Aanbevolen werkwijzen voor ontwikkeling](development-practices.md)
    + [Inhoudsarchitectuur](content-architecture.md)
    + [Softwarearchitectuur](software-architecture.md)

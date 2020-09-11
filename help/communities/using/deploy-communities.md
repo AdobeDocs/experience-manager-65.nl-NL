@@ -11,7 +11,7 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 7e05502b590fb2c7c36919f94611efe999262d32
+source-git-commit: 94bc3550a7e18b9203e7a0d495d195d7b798e012
 workflow-type: tm+mt
 source-wordcount: '1890'
 ht-degree: 0%
@@ -150,7 +150,7 @@ De AEM Communities SCORM-engine is vereist voor de functie [enablement](/help/co
 
 **Een SCORM-pakket installeren**
 
-1. Installeer het [cq-social-scorm-pakket, versie 2.3.7](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/social/scorm/cq-social-scorm-pkg)van het Delen van het Pakket
+1. Installeer het [cq-social-scorm-pakket, versie 2.3.7](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/social/scorm/cq-social-scorm-pkg) van het Delen van het Pakket
 1. Download `/libs/social/config/scorm/database_scormengine_data.sql` van instantie cq en voer het in mysql server uit om een bevorderd schema te creëren scormEngineDB.
 1. Voeg `/content/communities/scorm/RecordResults` in Uitgesloten bezit van Wegen in filter CSRF van `https://<hostname>:<port>/system/console/configMgr` op uitgevers toe.
 

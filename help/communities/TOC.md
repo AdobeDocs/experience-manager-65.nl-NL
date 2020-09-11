@@ -2,10 +2,11 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: Gebruikershandleiding voor AEM 6.5-gemeenschappen
+user-guide-title: AEM 6.5 Gebruikersgids voor gemeenschappen
+breadcrumb-title: Communities Guide
 user-guide-description: Create online experiences such as forums, user groups, learning resources, and other social features.
 translation-type: tm+mt
-source-git-commit: 73fbf9c4f631e87132fbd9ef5cf769b4f8ce7a17
+source-git-commit: e917a36f9b8748080e9ab770a7f58f06123ea166
 workflow-type: tm+mt
 source-wordcount: '466'
 ht-degree: 0%
@@ -13,15 +14,15 @@ ht-degree: 0%
 ---
 
 
-# Gebruikershandleiding voor AEM 6.5-gemeenschappen {#communities}
+# AEM 6.5 Gebruikersgids voor gemeenschappen {#communities}
 
 + [Overzicht gebruikersgids voor gemeenschappen](home.md)
 + Inleiding tot AEM Communities {#introduction}
    + [Communitysites](administer-landing.md)
-   + [Overzicht AEM Communities](overview.md)
-   + [Opmerkingen bij de release AEM Communities](/help/release-notes/communities-release-notes.md)
+   + [AEM Communities - Overzicht](overview.md)
+   + [Opmerkingen bij de release van AEM Communities](/help/release-notes/communities-release-notes.md)
    + [Aan de slag met AEM Communities](getting-started.md)
-   + [Aan de slag met AEM Communities voor Enablement](getting-started-enablement.md)
+   + [Aan de slag met AEM Communities for Enablement](getting-started-enablement.md)
    + [Eerste instelling](setup.md)
    + [Auteur van een nieuwe communautaire site](create-site.md)
    + [Ervaar de gepubliceerde site](published-site.md)
@@ -32,14 +33,14 @@ ht-degree: 0%
    + [Ervaar de gepubliceerde Enablement Site](enablement-published-site.md)
 + Implementeren {#deploy}
    + [Gemeenschappen inzetten](deploy-communities.md)
-   + [Opwaarderen naar AEM 6.5-gemeenschappen](upgrade.md)
+   + [Opwaarderen naar AEM 6.5 Gemeenschappen](upgrade.md)
    + [Aanbevolen topologieën voor Gemeenschappen](topologies.md)
-   + [Dispatcher for Communities configureren](dispatcher.md)
+   + [Dispatcher configureren voor Gemeenschappen](dispatcher.md)
 + Beheer {#administer}
-   + [Gebruiker- en UGC-beheerservice in AEM Communities](user-ugc-management-service.md)
+   + [Gebruikersbeheer en UGC-beheerservice in AEM Communities](user-ugc-management-service.md)
    + [Communitysites](administer-landing.md)
    + [Communityconsoles](consoles.md)
-   + [Analytics Configuration for Communities-functies](analytics.md)
+   + [Analytische configuratie voor functies van Gemeenschappen](analytics.md)
    + [Functies van Enablement configureren](enablement.md)
    + [Berichten configureren](messaging.md)
    + [Communautaire inhoud moderniseren](moderate-ugc.md)
@@ -83,7 +84,7 @@ ht-degree: 0%
    + [Framework sociale component](scf.md)
    + [Community Components Guide](components-guide.md)
    + [Componenten, functies en essentiële functies](essentials.md)
-   + [Zelfstudies](tutorials.md)
+   + [Tutorials](tutorials.md)
    + [Problemen oplossen](troubleshooting.md)
    + [Codeerrichtlijnen](code-guide.md)
    + [Aanpassing op de server](server-customize.md)

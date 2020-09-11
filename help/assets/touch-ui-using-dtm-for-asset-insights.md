@@ -3,9 +3,9 @@ title: Asset Insights inschakelen via DTM
 description: Leer hoe u DTM (Adobe Dynamic Tag Management) gebruikt om Asset Insights in te schakelen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 892237699a4027e7dab406fd620cac220aa8b88b
+source-git-commit: 3fbf32ec0930b8e832f8bea5b466fcb6bd38fbd3
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: '619'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,11 @@ ht-degree: 0%
 
 # Asset Insights inschakelen via DTM {#enable-asset-insights-through-dtm}
 
-Adobe Dynamisch tagbeheer is een programma waarmee u uw digitale marketingtools kunt activeren. Deze service wordt gratis aan Adobe Analytics-klanten aangeboden.
+Adobe Dynamisch tagbeheer is een programma waarmee u uw digitale marketingtools kunt activeren. Deze service wordt gratis aan Adobe Analytics-klanten aangeboden. U kunt uw trackingcode aanpassen om CMS-oplossingen van derden in staat te stellen Asset Insights te gebruiken, of u kunt DTM gebruiken om labels voor Asset Insights in te voegen. Inzichten worden alleen ondersteund en opgegeven voor afbeeldingen.
 
-Hoewel u uw trackingcode kunt aanpassen om CMS-oplossingen van derden in staat te stellen Asset Insights te gebruiken, raadt Adobe u aan DTM te gebruiken om Asset Insights-tags in te voegen.
-
->[!NOTE]
+>[!CAUTION]
 >
->Inzichten worden alleen ondersteund en opgegeven voor afbeeldingen.
+>Adobe DTM is afgekeurd ten gunste van Adobe Experience Platform Launch en zal binnenkort [aflopen](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). Adobe raadt u aan Launch te [gebruiken voor inzicht in elementen](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html).
 
 Voer deze stappen uit om Asset Insights in te schakelen via DTM.
 

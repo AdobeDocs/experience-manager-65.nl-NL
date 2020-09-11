@@ -10,7 +10,7 @@ content-type: reference
 discoiquuid: 04ac8203-320b-4671-aaad-6e1397b12b6f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 10072609bc371b5f2dce425e90e583f14f96e371
+source-git-commit: 4c9a0bd73e8d87d3869c6a133f5d1049f8430cd1
 workflow-type: tm+mt
 source-wordcount: '2112'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # SPA-blauwdruk{#spa-blueprint}
 
-Om de auteur toe te laten om de Redacteur van AEM SPA te gebruiken om de inhoud van een KUUROORD uit te geven, zijn er vereisten die het KUUROORD moet vervullen, die in dit document worden beschreven.
+Om de auteur toe te laten om de AEM Redacteur van het KUUROORD te gebruiken om de inhoud van een KUUROORD uit te geven, zijn er vereisten die het KUUROORD moet vervullen, die in dit document worden beschreven.
 
 >[!NOTE]
 >
@@ -34,13 +34,13 @@ Dit document beschrijft het algemene contract dat om het even welk kader van het
 >
 >De volgende vereisten zijn frameonafhankelijk. Als aan deze vereisten wordt voldaan, kan een kader-specifieke laag worden verstrekt die uit modules, componenten, en de diensten wordt samengesteld.
 >
->**Aan deze vereisten is reeds voldaan voor de React and Angular frameworks in AEM.** De vereisten in deze blauwdruk zijn alleen relevant als u een ander kader voor gebruik met AEM wilt implementeren.
+>**Aan deze vereisten wordt reeds voldaan voor de React en Hoekige kaders in AEM.** De vereisten in deze blauwdruk zijn alleen relevant als u een ander kader voor gebruik met AEM wilt implementeren.
 
 >[!CAUTION]
 >
 >Hoewel de mogelijkheden van het KUUROORD van AEM kader-onafhankelijk zijn, momenteel slechts worden het React en Hoekkader gesteund.
 
-Om de auteur toe te laten om de Redacteur van de Pagina AEM te gebruiken om de gegevens uit te geven die door een Enige Kader van de Toepassing van de Pagina worden blootgesteld, moet een project de structuur van het model kunnen interpreteren die de semantische die gegevens vertegenwoordigt voor een toepassing binnen de bewaarplaats AEM worden opgeslagen. Om dit doel te bereiken, worden twee raamwerk-agnostische bibliotheken verstrekt: de `PageModelManager` en de `ComponentMapping`.
+Om de auteur toe te laten om de AEM Redacteur van de Pagina te gebruiken om de gegevens uit te geven die door een Enige Kader van de Toepassing van de Pagina worden blootgesteld, moet een project de structuur van het model kunnen interpreteren die de semantische waarde van de gegevens vertegenwoordigt die voor een toepassing binnen de AEM bewaarplaats worden opgeslagen. Om dit doel te bereiken, worden twee raamwerk-agnostische bibliotheken verstrekt: de `PageModelManager` en de `ComponentMapping`.
 
 ### PageModelManager {#pagemodelmanager}
 
@@ -48,7 +48,7 @@ De `PageModelManager` bibliotheek wordt verstrekt als pakket NPM dat door een pr
 
 Namens het KUUROORD, onttrekt het de herwinning en het beheer van de structuur JSON die de daadwerkelijke inhoudsstructuur vertegenwoordigt. Het is ook verantwoordelijk voor het synchroniseren met het KUUROORD om het te laten weten wanneer het zijn componenten moet opnieuw teruggeven.
 
-Zie het NPM-pakket [@adobe/cq-spa-page-model-manager](https://www.npmjs.com/package/@adobe/cq-spa-page-model-manager)
+Zie het NPM-pakket [@adobe/aem-spa-page-model-manager](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
 
 Wanneer het initialiseren van de `PageModelManager`app, laadt de bibliotheek eerst het verstrekte wortelmodel van de app (via parameter, meta-eigenschap, of huidige URL). Als in de bibliotheek wordt aangegeven dat het model van de huidige pagina geen deel uitmaakt van het hoofdmodel, wordt het opgehaald en opgenomen als het model van een onderliggende pagina.
 
@@ -62,7 +62,7 @@ Elke punten in het model bevatten een `:type` gebied dat een AEM middeltype bloo
 
 #### Dynamisch model naar componenttoewijzing {#dynamic-model-to-component-mapping}
 
-Voor details over hoe het dynamische model aan componentenafbeelding in Javascript SPA SDK voor AEM voorkomt zie het artikel [Dynamisch Model aan de Afbeelding van de Component voor SPAs](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
+Voor details over hoe het dynamische model aan componentenafbeelding in het KUUROORD Javascript SDK voor AEM voorkomt zie het artikel [Dynamisch Model aan de Afbeelding van de Component voor SPAs](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
 ### Framework-specifieke laag {#framework-specific-layer}
 
@@ -74,7 +74,7 @@ In de rest van dit document worden de vereisten van deze specifieke laag van het
 
 ### Paginamodel {#page-model}
 
-De inhoudsstructuur van de pagina wordt opgeslagen in AEM. Het model van de pagina wordt gebruikt om de componenten van het KUUROORD in kaart te brengen en te concretiseren. De ontwikkelaars van het KUUROORD creëren componenten SPA die zij aan componenten AEM in kaart brengen. Hiervoor gebruiken ze het brontype (of het pad naar de AEM-component) als een unieke sleutel.
+De inhoudsstructuur van de pagina wordt opgeslagen in AEM. Het model van de pagina wordt gebruikt om de componenten van het KUUROORD in kaart te brengen en te concretiseren. De ontwikkelaars van het KUUROORD creëren componenten SPA die zij aan AEM componenten in kaart brengen. Om dit te doen, gebruiken zij het middeltype (of weg aan de AEM component) als unieke sleutel.
 
 De componenten van het KUUROORD moeten synchroon met het paginamodel zijn en met om het even welke veranderingen in zijn inhoud dienovereenkomstig worden bijgewerkt. Een patroon dat gebruikmaakt van dynamische componenten, moet worden gebruikt om direct componenten te instantiëren volgens de opgegeven structuur van het paginamodel.
 
@@ -82,7 +82,7 @@ De componenten van het KUUROORD moeten synchroon met het paginamodel zijn en met
 
 Het paginamodel maakt gebruik van de JSON Model Exporter, die zelf is gebaseerd op de [Sling Model](https://sling.apache.org/documentation/bundles/models.html) API. De exporteerbare slingmodellen stellen de volgende lijst van gebieden bloot om de onderliggende bibliotheken toe te laten het gegevensmodel interpreteren:
 
-* `:type`: Type van het middel AEM (gebrek = middeltype)
+* `:type`: Type van de AEM (gebrek = middeltype)
 * `:children`: Hierarchische onderliggende elementen van de huidige bron. Onderliggende items maken geen deel uit van de binneninhoud van de huidige bron (vindt u bij items die een pagina vertegenwoordigen)
 * `:hierarchyType`: Het hiërarchische type van een bron. Het paginatype `PageModelManager` wordt momenteel ondersteund
 
@@ -90,22 +90,22 @@ Het paginamodel maakt gebruik van de JSON Model Exporter, die zelf is gebaseerd 
 * `:itemsOrder`: Ordered list of the children. Het JSON-toewijzingsobject garandeert de volgorde van de velden niet. Door zowel de kaart als de huidige array te hebben, heeft de consument van de API de voordelen van beide structuren
 * `:path`: Inhoudspad van een item (aanwezig op items die een pagina vertegenwoordigen)
 
-Zie ook Aan de [slag met AEM Content Services.](https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html)
+Zie ook [Aan de slag met AEM Content Services.](https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html)
 
 ### Framework-Specific Module {#framework-specific-module}
 
 Het scheiden van zorgen helpt de uitvoering van het project te vergemakkelijken. Daarom moet een npm-specifiek pakket worden verstrekt. Dit pakket is verantwoordelijk voor het samenvoegen en blootstellen van de basismodules, de diensten, en de componenten. Deze componenten moeten de logica van het gegevensmodelbeheer inkapselen en toegang tot de gegevens verlenen de component van het project verwacht. De module is ook verantwoordelijk voor het tijdelijk blootstellen van nuttige ingangspunten van de onderliggende bibliotheken.
 
-Om de interoperabiliteit van de bibliotheken te vergemakkelijken, adviseert Adobe de kader-specifieke module om de volgende bibliotheken te bundelen. Indien nodig, kan de laag onderliggende APIs inkapselen en aanpassen alvorens hen aan het project bloot te stellen.
+Om de interoperabiliteit van de bibliotheken te bevorderen, adviseert Adobe de kader-specifieke module om de volgende bibliotheken te bundelen. Indien nodig, kan de laag onderliggende APIs inkapselen en aanpassen alvorens hen aan het project bloot te stellen.
 
-* [@adobe/cq-spa-page-model-manager](https://www.npmjs.com/package/@adobe/cq-spa-page-model-manager)
-* [@adobe/cq-spa-component-mapping](https://www.npmjs.com/package/@adobe/cq-spa-component-mapping)
+* [@adobe/aem-spa-page-model-manager](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
+* [@adobe/aem-spa-component-mapping](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 
 #### Implementaties {#implementations}
 
 #### Reageren {#react}
 
-npm-module: [@adobe/cq-response-editable-components](https://www.npmjs.com/package/@adobe/cq-react-editable-components)
+npm-module: [@adobe/aem-response-editable-components](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
 
 #### Hoekig {#angular}
 
@@ -161,14 +161,14 @@ De `Page` component breidt de `Container` component uit. Een container is een co
 
 De component Responsief raster is een container. Het bevat een specifieke variant van de ModelLeverancier die zijn kolommen vertegenwoordigt. Het responsieve Net en zijn kolommen zijn verantwoordelijk voor het versieren van het buitenste element van HTML van de component van het project met de specifieke klassennamen in het model.
 
-De component Responsief raster moet vooraf worden toegewezen aan de AEM-tegenhanger omdat deze component complex is en zelden wordt aangepast.
+De component Responsief raster moet vooraf worden toegewezen aan de AEM tegenhanger omdat deze component complex is en zelden wordt aangepast.
 
 #### Specifieke modelvelden {#specific-model-fields}
 
 * `gridClassNames:` Klassenamen opgegeven voor het responsieve raster
 * `columnClassNames:` Klassenamen opgegeven voor de responsieve kolom
 
-Zie ook het npm middel [@adobe/cq-response-editable-components#srccomponentsresponsivegridjsx](https://www.npmjs.com/package/@adobe/cq-react-editable-components#srccomponentsresponsivegridjsx)
+Zie ook de npm-bron [@adobe/aem-response-editable-components#srccomponentsresponsivegridjsx](https://www.npmjs.com/package/@adobe/aem-react-editable-components#srccomponentsresponsivegridjsx)
 
 #### Plaatsaanduiding van het reponsieve raster {#placeholder-of-the-reponsive-grid}
 
@@ -186,6 +186,7 @@ Bijvoorbeeld:
 >
 >* `"new section"`: Geeft aan dat het huidige element de tijdelijke aanduiding van de container is
 >* `"aem-Grid-newComponent"`: Hiermee wordt de component genormaliseerd voor het ontwerpen van de lay-out
+
 >
 
 
@@ -245,7 +246,7 @@ De projectcomponenten moeten minstens de volgende gegevensattributen produceren 
 
 Samengevat, om door de paginaredacteur als editable te worden geïnterpreteerd, moet een projectcomponent het volgende contract in acht nemen:
 
-* Verstrek de verwachte attributen om een front-end componenteninstantie aan een middel te associëren AEM.
+* Verstrek de verwachte attributen om een front eindcomponenteninstantie aan een AEM middel te associëren.
 * Verstrek de verwachte reeks attributen en klassennamen die de verwezenlijking van lege placeholders toelaat.
 * Geef de verwachte klassenamen op, zodat u elementen kunt slepen en neerzetten.
 

@@ -4,7 +4,7 @@ description: Nieuw in Adobe Experience Manager 6.5 Service Pack 6
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5cf27977d3d94d39c9dfec51eb50778048f76dfd
+source-git-commit: 3ed140d0649379d27019e9f5b0753c07f30f5491
 workflow-type: tm+mt
 source-wordcount: '2455'
 ht-degree: 0%
@@ -17,8 +17,6 @@ ht-degree: 0%
 Adobe Experience Manager 6.5 de dienstpakken verstrekken nieuwe eigenschappen, klant-gevraagde verhogingen, en prestaties, stabiliteit, en veiligheidsverbeteringen op kwartaalintervallen. De beschikbaarheid op kwartaalbasis maakt het gemakkelijk om tot nieuwe eigenschappen en innovaties toegang te hebben en te nemen.
 
 Dit artikel benadrukt de eigenschappen inbegrepen in recentste 6.5 Service Pack, [belangrijkste eigenschappen inbegrepen in de vorige 6.5 Pakken](#key-features-previous-service-packs)van de Dienst, en sommige van de [belangrijkste versies sinds Experience Manager 6.5.5.0](#key-releases-since-last-sp) .
-
->[!VIDEO](https://video.tv.adobe.com/v/39867)
 
 ## Adobe- [!DNL Experience Manager] sites {#aem-sites}
 

@@ -4,9 +4,9 @@ description: De nota's van de versie specifiek voor [!DNL Adobe Experience Manag
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 74f1fc80bb908f7b7114177c5f8355ff892b95ed
+source-git-commit: 74606bc3e9c768c3d94b7d05c722980f29e20e0e
 workflow-type: tm+mt
-source-wordcount: '4234'
+source-wordcount: '4230'
 ht-degree: 0%
 
 ---
@@ -47,9 +47,9 @@ De belangrijkste functies en verbeteringen die in Adobe Experience Manager 6.5.6
 
 * Ondersteuning voor Adobe Sign Text Tags in Automated Forms Conversion Service.
 
-* Steun voor SMB 2 en SMB 3 protocollen.
+* Ondersteuning voor het converteren van gekleurde formulieren naar adaptieve formulieren [!DNL Automated Forms Conversion service].
 
-* Ondersteuning voor het converteren van gekleurde formulieren naar adaptieve formulieren met de Automated Forms Conversion-service.
+* Steun voor SMB 2 en SMB 3 protocollen.
 
 * De ingebouwde opslagplaats (Apache Jackrabbit Oak) wordt bijgewerkt naar versie 1.2.2.4.
 

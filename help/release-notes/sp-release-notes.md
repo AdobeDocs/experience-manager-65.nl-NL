@@ -4,9 +4,9 @@ description: De nota's van de versie specifiek voor [!DNL Adobe Experience Manag
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 74606bc3e9c768c3d94b7d05c722980f29e20e0e
+source-git-commit: 3ed140d0649379d27019e9f5b0753c07f30f5491
 workflow-type: tm+mt
-source-wordcount: '4230'
+source-wordcount: '4270'
 ht-degree: 0%
 
 ---
@@ -434,7 +434,7 @@ Voor informatie over het installeren van het cumulatieve installatieprogramma vo
 
 ### UberJar {#uber-jar}
 
-UberJar voor Experience Manager 6.5.6.0 is beschikbaar in de [Adobe Public Maven bewaarplaats](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.6-1.0/).
+UberJar voor Experience Manager 6.5.6.0 is beschikbaar in de [Centrale bewaarplaats](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.6-1.0/)van Maven.
 
 Om UberJar in een Geweven project te gebruiken, zie [hoe te UberJar](/help/sites-developing/ht-projects-maven.md) gebruiken en omvat het volgende gebiedsdeel in uw projectPOM:
 
@@ -446,6 +446,10 @@ Om UberJar in een Geweven project te gebruiken, zie [hoe te UberJar](/help/sites
       <scope>provided</scope>
 </dependency>
 ```
+
+>[!NOTE]
+>
+>Vanaf deze release zijn UberJar en andere verwante artefacten beschikbaar in Maven Central Repository in plaats van in Adobe Public Maven repository (repo.adobe.com). De naam van het hoofdbestand van UberJar wordt gewijzigd in `uber-jar-<version>.jar`. Als gevolg hiervan is er geen `classifier`waarde, met `apis` als waarde, voor de `dependency` tag.
 
 ## Deprecated features {#removed-deprecated-features}
 

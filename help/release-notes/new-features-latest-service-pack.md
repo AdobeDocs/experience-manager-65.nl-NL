@@ -4,9 +4,9 @@ description: Nieuw in Adobe Experience Manager 6.5 Service Pack 6
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f8a072e0ab24d542a1bec8faf03da57f99747102
+source-git-commit: 5cf27977d3d94d39c9dfec51eb50778048f76dfd
 workflow-type: tm+mt
-source-wordcount: '2435'
+source-wordcount: '2455'
 ht-degree: 0%
 
 ---
@@ -88,6 +88,10 @@ U kunt de [!DNL Experience Manager Forms] server nu configureren om de handeling
 ### Toegevoegde ondersteuning voor [!DNL Adobe Sign] tekstcodes in Automated Forms Conversion Service {#sign-integration-acroform-afcs}
 
 Als een AcroForm-formulier [!DNL Adobe Sign] tekstcodes bevat, worden deze velden nu herkend en weergegeven als [!DNL Adobe Sign] velden in het adaptieve formulier dat is geconverteerd met [!DNL Automated Forms Conversion service]. Een ondertekenaar kan dergelijke velden invullen terwijl hij het adaptieve formulier ondertekent.
+
+### Ondersteuning voor het omzetten van gekleurde PDF forms in aangepaste formulieren {#colore-PDF-forms}
+
+U kunt gekleurde PDF forms omzetten [!DNL Automated Forms Conversion service] in adaptieve formulieren.
 
 ### Steun voor SMB 2 en SMB 3 protocollen {#smb-support}
 

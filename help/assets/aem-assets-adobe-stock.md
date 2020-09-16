@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Stock] Elementen beheren in [!DNL Adobe Experience Manager 
 description: Zoek, haal, vergunning, en [!DNL Adobe Stock] beheer activa van binnen [!DNL Adobe Experience Manager]. Gebruik de in licentie gegeven activa als elk ander digitaal actief.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
+source-git-commit: 2ac848fa360ad87ff4f87efc38ae1361ae890cb2
 workflow-type: tm+mt
-source-wordcount: '1031'
-ht-degree: 3%
+source-wordcount: '1048'
+ht-degree: 2%
 
 ---
 
@@ -35,16 +35,16 @@ Om communicatie tussen [!DNL Experience Manager] en [!DNL Adobe Stock]toe te sta
 1. U kunt een bestaand certificaat opnieuw gebruiken of selecteren **[!UICONTROL Create new certificate]**.
 1. Klik op **[!UICONTROL Create certificate]**. Download de openbare sleutel wanneer deze is gemaakt. Klik op **[!UICONTROL Next]**.
 1. Voeg de gedownloade openbare sleutel toe aan uw [!DNL Adobe Developer Console] serviceaccount. Klik op **[!UICONTROL Next]**. Laat het [!UICONTROL Adobe IMS Technical Account Configuration] scherm open om de waarden over enkele ogenblikken weer te geven.
-1. Ga naar [Adobe Developer Console](https://console.adobe.io). Zorg ervoor dat uw account beheerdersmachtigingen heeft voor de organisatie waarvoor de integratie is vereist.
-1. Klik **[!UICONTROL Create new project]** en klik **[!UICONTROL Add API]**. Selecteer een optie **[!UICONTROL Adobe Stock]** in de lijst met API&#39;s die [!UICONTROL available to you]geldig zijn. Selecteer [!UICONTROL OAUTH 2.0 Web]. Configureer en kopieer de verschillende gepresenteerde waarden.
+1. Toegang tot [Adobe Developer Console](https://console.adobe.io). Zorg ervoor dat uw account beheerdersmachtigingen heeft voor de organisatie waarvoor de integratie is vereist.
+1. Klik **[!UICONTROL Create new project]** en klik **[!UICONTROL Add API]**. Selecteer een optie **[!UICONTROL Adobe Stock]** in de lijst met API&#39;s die voor u beschikbaar zijn. Selecteer [!UICONTROL OAUTH 2.0 Web]. Configureer en kopieer de verschillende gepresenteerde waarden.
 1. In [!DNL Experience Manager] provide the values in the fields titled **[!UICONTROL Title]**, **[!UICONTROL Authorization Server]**, **[!UICONTROL API Key]**, **[!UICONTROL Client Secret]**, and **[!UICONTROL Payload]**. Zie [JWT-verificatie snel starten](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md)voor meer informatie over deze waarden.
 
-<!-- TBD: Update the URL when the new URL is available. Logged issue github.com/AdobeDocs/adobeio-auth/issues/63.
+<!-- TBD: Update the URL to update the terminology when AIO team updates their documentation URL. Logged issue github.com/AdobeDocs/adobeio-auth/issues/63.
 -->
 
 ### Configuratie maken [!DNL Adobe Stock] in [!DNL Experience Manager] {#create-adobe-stock-configuration-in-aem}
 
-1. In the [!DNL Experience Manager] user interface, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]**.
+1. Navigeer in het [!DNL Experience Manager]venster naar **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]**.
 1. Klik **[!UICONTROL Create]** om een configuratie tot stand te brengen en het te associëren met uw bestaande Configuratie IMS. Selecteren `PROD` als omgevingsparameter.
 1. Laat in **[!UICONTROL Licensed Assets Path]** het veld de locatie ongewijzigd. Wijzig de locatie waar u de [!DNL Adobe Stock] elementen wilt opslaan niet.
 1. Voltooi het maken door alle vereiste eigenschappen toe te voegen. Klik op **[!UICONTROL Save & Close]**.
@@ -52,7 +52,7 @@ Om communicatie tussen [!DNL Experience Manager] en [!DNL Adobe Stock]toe te sta
 
 >[!NOTE]
 >
->Als er meerdere [!DNL Adobe Stock] configuraties zijn, selecteert u de gewenste configuratie in het deelvenster Gebruikersvoorkeuren (**[!UICONTROL AEM]** > **[!UICONTROL User Icon]** > **[!UICONTROL User Preferences]** > **[!UICONTROL Stock Configuration]**).
+>Als er meerdere [!DNL Adobe Stock] configuraties zijn, selecteert u de gewenste configuratie in het deelvenster Gebruikersvoorkeuren. Als u het deelvenster vanaf de startpagina van de Experience Manager wilt openen, klikt u op het gebruikerspictogram en vervolgens op **[!UICONTROL User Preferences]** > **[!UICONTROL Stock Configuration]**).
 
 ## [!DNL Adobe Stock] Elementen gebruiken en beheren in [!DNL Experience Manager] {#usemanage}
 
@@ -60,7 +60,7 @@ Met deze mogelijkheid kunnen organisaties hun gebruikers toestaan te werken met 
 
 Als een [!DNL Adobe Stock] [!DNL Experience Manager]actief eenmaal in licentie is gegeven, kan het worden gebruikt en beheerd als een typisch actief. De gebruikers kunnen bovendien de elementen zoeken en voorvertonen. [!DNL Experience Manager]de elementen kopiëren en publiceren; delen van de activa op [!DNL Brand Portal]; toegang tot en gebruik de middelen via [!DNL Experience Manager] bureaubladtoepassing; enzovoort.
 
-![Zoek naar Adobe Stock-middelen en filterresultaten van uw Adobe Experience Manager-werkruimte](assets/adobe-stock-search-results-workspace.png)
+![Zoeken naar Adobe Stock-middelen en filterresultaten vanuit uw Adobe Experience Manager-werkruimte](assets/adobe-stock-search-results-workspace.png)
 
 *Afbeelding: Zoek naar[!DNL Adobe Stock]activa en filterresultaten van uw[!DNL Experience Manager]interface.*
 
@@ -122,7 +122,7 @@ Gebruikers kunnen de eigenschappen van zowel gelicentieerde als niet-gelicentiee
 
 >[!MORELIKETHIS]
 >
->* [Videozelfstudie over het gebruik van Adobe Stock Assets met Experience Manager Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
->* [Help bij Adobe Stock Enterprise Plan](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
+>* [Videozelfstudie over het gebruik van Adobe Stock-elementen met Experience Manager Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
+>* [Adobe Stock Enterprise Plan Help](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
 >* [Veelgestelde vragen over Adobe Stock](https://helpx.adobe.com/stock/faq.html)
 

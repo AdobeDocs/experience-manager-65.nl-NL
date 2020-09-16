@@ -1,12 +1,12 @@
 ---
 title: Rapporten over het gebruik en het delen van uw digitale middelen.
-description: Meldt over uw middelen in [!DNL Adobe Experience Manager Assets] die u helpen gebruik, activiteit, en het delen van uw digitale activa te begrijpen.
+description: Rapporten over uw elementen [!DNL Adobe Experience Manager Assets] in die u helpen gebruik, activiteit, en het delen van uw digitale activa begrijpen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a8c4bc1992a48dd01a3f58498e9e924dcc9e886a
+source-git-commit: 2ac848fa360ad87ff4f87efc38ae1361ae890cb2
 workflow-type: tm+mt
-source-wordcount: '993'
-ht-degree: 7%
+source-wordcount: '988'
+ht-degree: 8%
 
 ---
 
@@ -25,7 +25,7 @@ Wanneer een rapport wordt gegenereerd, ontvangt u een melding via e-mail (option
 
 ## Vereiste {#prerequisite-for-reporting}
 
-Als u rapporten wilt genereren, moet u ervoor zorgen dat:
+Ga als volgt te werk om rapporten te genereren:
 
 * Service inschakelen [!UICONTROL Day CQ DAM Event Recorder] via **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 * Selecteer de activiteiten of gebeurtenissen waarop u wilt rapporteren. Als u bijvoorbeeld een rapport wilt genereren over gedownloade elementen, selecteert u [!UICONTROL Asset downloaded (DOWNLOADED)].
@@ -50,7 +50,7 @@ Als u rapporten wilt genereren, moet u ervoor zorgen dat:
 
 1. Klik in de [!DNL Experience Manager] interface op **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Reports]**.
 
-![Pagina Gereedschappen om te navigeren in middelenrapport](assets/AssetsReportNavigation.png)
+   ![Pagina Gereedschappen om te navigeren in middelenrapport](assets/AssetsReportNavigation.png)
 
 1. Klik op de [!UICONTROL Asset Reports] pagina op **[!UICONTROL Create]** de werkbalk.
 1. Kies op de **[!UICONTROL Create Report]** pagina het rapport dat u wilt maken en klik op **[!UICONTROL Next]**.
@@ -59,11 +59,12 @@ Als u rapporten wilt genereren, moet u ervoor zorgen dat:
 
    >[!NOTE]
    >
-   >Standaard worden de Content Fragments en de shares van de koppeling opgenomen in het [!UICONTROL Download] assetrapport. Selecteer de aangewezen optie om een rapport van verbindingsaandelen tot stand te brengen of inhoudsfragmenten van het downloadrapport uit te sluiten.
+   >Standaard worden de Content Fragments en de link shares opgenomen in het Asset- [!UICONTROL Download] rapport. Selecteer de aangewezen optie om een rapport van verbindingsaandelen tot stand te brengen of inhoudsfragmenten van het downloadrapport uit te sluiten.
 
    >[!NOTE]
    >
-   >Het [!UICONTROL Download] rapport bevat alleen de gegevens van de elementen die afzonderlijk zijn geselecteerd en die zijn gedownload of gedownload met Snelle actie. De gegevens over de elementen in een gedownloade map zijn echter niet in de map opgenomen.
+   >Het [!UICONTROL Download] rapport bevat alleen de gegevens van de elementen die worden gedownload nadat u deze afzonderlijk hebt geselecteerd of die u met Snelle actie hebt gedownload. De gegevens van de elementen in een gedownloade map worden echter niet in de map opgenomen.
+
 1. Configureer rapportdetails zoals titel, beschrijving, miniatuur en mappad in de CRX-opslagplaats waar het rapport wordt opgeslagen. Standaard is het mappad `/content/dam`. U kunt een ander pad opgeven.
 
    ![Pagina om rapportdetails toe te voegen](assets/report_configuration.png)
@@ -94,7 +95,7 @@ Als u rapporten wilt genereren, moet u ervoor zorgen dat:
 
    ![De pagina van details van het rapport van het Aandeel van de Verbinding](assets/link_share.png)
 
-1. Klik op **[!UICONTROL Next]** de werkbalk.
+1. Klik op **[!UICONTROL Next]** op de werkbalk.
 
 1. Op de **[!UICONTROL Configure Columns]** pagina zijn enkele kolommen standaard geselecteerd om in het rapport te worden weergegeven. U kunt meer kolommen selecteren. Schakel een geselecteerde kolom uit om deze uit te sluiten in het rapport.
 
@@ -104,7 +105,7 @@ Als u rapporten wilt genereren, moet u ervoor zorgen dat:
 
    ![Rapportkolommen selecteren of deselecteren](assets/custom_columns.png)
 
-1. Klik op **[!UICONTROL Create]** de werkbalk. Een bericht meldt dat de rapportgeneratie is in werking gesteld.
+1. Klik op **[!UICONTROL Create]** op de werkbalk. Een bericht meldt dat de rapportgeneratie is in werking gesteld.
 1. Voor de [!UICONTROL Asset Reports] pagina, is de status van de rapportgeneratie gebaseerd op de huidige staat van de rapportbaan, bijvoorbeeld [!UICONTROL Success], [!UICONTROL Failed], [!UICONTROL Queued], of [!UICONTROL Scheduled]. Dezelfde status wordt weergegeven in het vak met meldingen. Klik op de rapportkoppeling om de rapportpagina weer te geven. Alternatively, select the report, and click **[!UICONTROL View]** from the toolbar.
 
    ![Een gegenereerd rapport](assets/report_page.png)
@@ -141,7 +142,7 @@ Ga als volgt te werk om aangepaste kolommen aan deze rapporten toe te voegen:
 
    Als u meer aangepaste kolommen wilt toevoegen, klikt u op stap 5 **[!UICONTROL Add]** en 6 en herhaalt u deze.
 
-1. Klik op **[!UICONTROL Create]** de werkbalk. Een bericht meldt dat de rapportgeneratie is in werking gesteld.
+1. Klik op **[!UICONTROL Create]** op de werkbalk. Een bericht meldt dat de rapportgeneratie is in werking gesteld.
 
 ## De zuiveringsservice configureren {#configure-purging-service}
 

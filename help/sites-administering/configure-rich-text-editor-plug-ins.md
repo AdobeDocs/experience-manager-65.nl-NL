@@ -3,9 +3,9 @@ title: De invoegtoepassingen van de Rich Text Editor configureren
 description: Leer hoe u de insteekmodules van de Adobe Experience Manager Rich Text Editor configureert voor het inschakelen van afzonderlijke functies.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d6f48896a56950d44dfe0d1f9b712157951af83c
+source-git-commit: 6f5e650c99017c4b2f04ca8495eea8481b3236cd
 workflow-type: tm+mt
-source-wordcount: '4382'
+source-wordcount: '4383'
 ht-degree: 0%
 
 ---
@@ -352,7 +352,7 @@ Ga als volgt te werk om de stijl te maken die auteurs op Japanse tekst kunnen to
 `String`
    * Waarde: `Japanese word-wrap`
 
-1. Maak een stijlpagina en geef het pad op. Zie [de locatie van stijlpagina](#locationofstylesheet)opgeven. Voeg de volgende inhoud toe aan het stijlblad. Wijzig de achtergrondkleur naar wens.
+1. Maak een stijlpagina en geef het pad op. Zie [de locatie van stijlpagina](#locationofstylesheet)opgeven. Voeg de volgende inhoud aan de stijlpagina toe. Wijzig de achtergrondkleur naar wens.
 
    ```css
    .text span.jpn-word-wrap {
@@ -602,7 +602,7 @@ Als u zowel de CSS-tekenreeks als de stijltekenreeks in code opgeeft, heeft de C
 
 ## Woordenboeken toevoegen voor de spellingcontrole {#adddict}
 
-Wanneer de insteekmodule voor spellingcontrole is geactiveerd, gebruikt de RTE woordenboeken voor elke geschikte taal. Deze worden vervolgens geselecteerd volgens de taal van de website door ofwel de taaleigenschap van de substructuur te nemen of de taal uit de URL te halen; bijvoorbeeld. de `/en/` tak wordt gecontroleerd als Engels, de `/de/` tak als Duits.
+Wanneer de insteekmodule voor spellingcontrole is geactiveerd, gebruikt de RTE woordenboeken voor elke geschikte taal. Deze worden vervolgens geselecteerd volgens de taal van de website door ofwel de taaleigenschap van de substructuur te nemen of de taal uit de URL te halen; bijvoorbeeld. de `/en/` vertakking wordt gecontroleerd als Engels, de `/de/` vertakking als Duits.
 
 >[!NOTE]
 Het bericht `Spell checking failed` wordt gezien als een controle voor een taal wordt geprobeerd die niet geïnstalleerd is. De standaardwoordenboeken bevinden zich in `/libs/cq/spellchecker/dictionaries`de map en de juiste leesmij-bestanden. Wijzig de bestanden niet.
@@ -731,7 +731,7 @@ Om te vormen hoe de verbindingen in AEM van een ander programma worden toegevoeg
       * **Naam** `cssExternal`
       * **Type** `String`
       * **Waarde** de naam van de CSS-klasse (zonder een voorafgaande &#39;.&#39;; for example, `cssClass` instead of `.cssClass`)
-   * Array met geldige **protocollen** (inclusief `https://`, `https://`, `file://`en `mailto:` onder andere)
+   * Array met geldige **protocollen**. De ondersteunde protocollen zijn `http://`, `https://`, `file://`en `mailto:`.
 
       * **Naam** `protocols`
       * **Type** `String[]`

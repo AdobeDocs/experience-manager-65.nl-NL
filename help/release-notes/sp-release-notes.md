@@ -4,9 +4,9 @@ description: De nota's van de versie specifiek voor [!DNL Adobe Experience Manag
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 3ed140d0649379d27019e9f5b0753c07f30f5491
+source-git-commit: b6db346f7ec2570972329a8edb089fe909120b75
 workflow-type: tm+mt
-source-wordcount: '4270'
+source-wordcount: '4214'
 ht-degree: 0%
 
 ---
@@ -104,39 +104,39 @@ Hier volgt een lijst met oplossingen uit de release van [!DNL Experience Manager
 
 ### [!DNL Assets] {#assets-6560}
 
-**Verbeterde toegankelijkheid in Experience Manager-middelen**
+**Toegankelijkheidsverbeteringen in Experience Manager-elementen**
 
-* Gebruikers kunnen nu de interactieve gebruikersinterfaceopties in de [!UICONTROL References] lijst met middelen bekijken en hierop de focus plaatsen met behulp van toetsenbordtoetsen (NPR-34115).
+* Met de toetsenbordtoetsen kunnen gebruikers nu toegang krijgen tot de interactieve gebruikersinterfaceopties in de [!UICONTROL References] lijst met middelen (NPR-34115).
 
-* Schermlezer kondigt de opties in het zoekfilter aan als uitbreidbare accordeons (NPR-34104).
+* De schermlezer kondigt nu de bedoelde actie aan van de voorspelling op de zoekpagina (NPR-34104).
 
 * De pagina met zoekresultaten en de pagina met zoekresultaten hebben nu meer informatieve titels voor een beter begrip van schermlezers (NPR-34093).
 
-* Schermlezers kondigen nu de opties aan om de geselecteerde tags op het [!UICONTROL Basic] tabblad met asset- [!UICONTROL Properties] knoppen te verwijderen en de geselecteerde tags te verwijderen (NPR-33972).
+* Schermlezers kondigen nu de opties aan om de geselecteerde labels op het [!UICONTROL Basic] [!UICONTROL Properties] tabblad van de elementpagina te verwijderen (NPR-33972).
 
-* De elementen in elke rij in de lijstweergave worden nu correct door schermlezers aangekondigd als de elementen van dezelfde rij (NPR-33932).
+* De elementen in elke rij in de lijstweergave worden nu door schermlezers aangekondigd als de elementen van dezelfde rij (NPR-33932).
 
-* Wanneer u navigeert met de Tab-toets, wordt de gebruiker nu op de juiste wijze naar de sluitoptie verplaatst in de versievoorvertoning (NPR-33863).
+* Wanneer de gebruiker met `Tab` Key navigeert, wordt nu de optie Sluiten in de voorvertoning van de versie gebruikt (NPR-33863).
 
-* De gebruiker krijgt nu de juiste focus om naar het zoekpictogram te gaan nadat het onderzoek is gesloten (NPR-33705).
+* De focus van de gebruiker wordt nu naar het zoekpictogram verplaatst nadat het onderzoek is gesloten (NPR-33705).
 
-* De opties voor de gebruikersinterface die u kunt gebruiken, hebben nu een prominentere visuele focus met verbeterd contrast wanneer u de focus hebt op toetsenbordtoetsen. Daarom kunnen gebruikers met een waargenomen toetsenbord nu de gebieden met focus onderscheiden (NPR-33542).
+* De opties voor de gebruikersinterface die u kunt activeren, hebben nu een prominentere visuele focus met verbeterd contrast wanneer u navigeert met behulp van toetsenbordtoetsen. De gebruikers van het toetsenbord kunnen de gebieden met focus identificeren (NPR-33542).
 
-* De sleepfunctionaliteit met het toetsenbord werkt nu correct in [!UICONTROL Metadata Schema Editor] de bladermodus van schermlezers (CQ-4296326).
+* De sleepfunctionaliteit met het toetsenbord werkt nu in [!UICONTROL Metadata Schema Editor] de bladermodus van schermlezers (CQ-4296326).
 
-* In het dialoogvenster voor het delen van koppelingen kunnen de schermlezers tijdens het navigeren in de bladermodus:
+* In het dialoogvenster voor het delen van koppelingen navigeert u in de bladermodus door een schermlezer.
 
-   * commentaar nu niet meer toevoegen aan de tabelgegevens zodra het dialoogvenster is geladen.
+   * De tabelinformatie wordt niet van commentaar voorzien zodra het dialoogvenster is geladen.
 
-   * U kunt naar alle vermelde automatische suggesties navigeren.
+   * Kan naar alle vermelde automatische suggesties navigeren.
 
-   * Commentaar nu de weergegeven automatische suggesties voor de [!UICONTROL Add Email Address/Search] (CQ-4294232).
+   * Hiermee worden de weergegeven automatische suggesties voor de [!UICONTROL Add Email Address/Search] (CQ-4294232) weergegeven.
 
-* Als u de Esc-toets gebruikt om de snelactiepictogrammen uit de miniatuurweergave te verwijderen, wordt de toetsenbordfocus niet langer van het laatste item met focus verwijderd (CQ-4293554).
+* Als u de `Esc` toets gebruikt om de snelactiepictogrammen uit de kaartweergave te verwijderen, wordt de toetsenbordfocus niet langer van het laatste item met focus verwijderd (CQ-4293554).
 
-* Schermlezer kondigt nu tekstalternatieven aan, die hun functionaliteit weergeven voor pictogrammen (zoals chevrons) in plaats van hun letterlijke namen (CQ-4272943).
+* Voor interactieve opties in de gebruikersinterface worden nu het doel van de pictogrammen door de schermlezer aangegeven in plaats van de letterlijke namen (CQ-4272943).
 
-* De toetsenbordfocus wordt nu met succes verplaatst naar [!UICONTROL Flyout], [!UICONTROL InlineZoom], [!UICONTROL Shoppable_Banner], [!UICONTROL Zoom_dark], [!UICONTROL Zoom_light], [!UICONTROL ZoomVertical_dark], en [!UICONTROL ZoomVertical_light] opties wanneer u navigeert met behulp van de Tab-toets op het toetsenbord in de elementdetails [!UICONTROL Viewers] in Dynamic Media (CQ-4290605).
+* De toetsenbordfocus wordt nu met succes verplaatst naar [!UICONTROL Flyout], [!UICONTROL InlineZoom], [!UICONTROL Shoppable_Banner], [!UICONTROL Zoom_dark], [!UICONTROL Zoom_light], [!UICONTROL ZoomVertical_dark], en [!UICONTROL ZoomVertical_light] opties wanneer u navigeert met de Tab-toets op het toetsenbord in de elementdetails [!UICONTROL Viewers] in [!DNL Dynamic Media] (CQ-4290605).
 
 * [!UICONTROL Save & Close] op de elementpagina kan nu worden geopend met [!UICONTROL Properties] toetsenbordtoetsen (NPR-34107).
 
@@ -144,38 +144,35 @@ Hier volgt een lijst met oplossingen uit de release van [!DNL Experience Manager
 
 * In [!DNL Experience Manager] koptekstsectie kondigt de schermlezer nu in de modus Bladeren aan dat:
 
-   * automatisch bewerkte suggesties in [!UICONTROL Type to search] Omnsearch.
+   * Suggesties die automatisch worden bewerkt in [!UICONTROL Type to search] Omnsearch.
 
-   * de uitgevouwen of samengevouwen status voor [!UICONTROL Solutions], [!UICONTROL Help], [!UICONTROL Inbox] en [!UICONTROL User] opties.
+   * De toestand zoals deze is uitgevouwen of samengevouwen voor opties [!UICONTROL Solutions], [!UICONTROL Help], [!UICONTROL Inbox]en [!UICONTROL User] .
 
-   * het [!UICONTROL Searching Help] statusbericht dat wordt weergegeven wanneer de gebruiker een zoektekenreeks in het [!UICONTROL Search for Help] veld onder [!UICONTROL Help] optie invoert.
+   * Het [!UICONTROL Searching Help] statusbericht dat wordt weergegeven wanneer de gebruiker een zoektekenreeks in het [!UICONTROL Search for Help] veld onder [!UICONTROL Help] optie invoert.
 
    ![Menu Help in koptekst](assets/Help_aem_header.png)
 
-   *Afbeelding:[!UICONTROL Search for Help]in[!UICONTROL Help]menu*
+   *Afbeelding:[!UICONTROL Search for Help]in[!UICONTROL Help].*
 
-   * het foutbericht als een onjuiste waarde wordt ingevoerd in het [!UICONTROL Impersonate as] veld onder [!UICONTROL User] optie en de focus correct naar het tekstveld wordt verplaatst (NPR-33804).
+   * Het foutbericht als een onjuiste waarde wordt ingevoerd in het [!UICONTROL Impersonate as] veld onder [!UICONTROL User] optie en de focus correct wordt verplaatst naar het tekstveld (NPR-33804).
 
    ![Menu Gebruiker in koptekst](assets/User_aem_header.png)
 
-   *Afbeelding:[!UICONTROL Impersonate as]veld in[!UICONTROL User]menu in koptekst*
+   *Afbeelding:[!UICONTROL Impersonate as]veld in[!UICONTROL User]menu in koptekst.*
 
-* De gebruiker kan nu de focus verplaatsen met de toetsenbordtoetsen binnen:
+* De gebruiker kan nu de focus wijzigen met het toetsenbord binnen:
 
-   * [!UICONTROL Search/Add Email Address] in [!UICONTROL Link Sharing] dialoogvenster.
+   * [!UICONTROL Search/Add Email Address] in het [!UICONTROL Link Sharing] dialoogvenster.
 
-   * [!UICONTROL Add User or Group] veld onder [!UICONTROL Closed User Group] op [!UICONTROL Permissions] tabblad van de map [!UICONTROL Properties] (NPR-34452).
+   * [!UICONTROL Add User or Group] veld onder [!UICONTROL Closed User Group] op het [!UICONTROL Permissions] tabblad Map [!UICONTROL Properties] (NPR-34452).
 
 **In Experience Manager Assets opgeloste emissies**
 
-[!DNL Adobe Experience Manager] 6.5.6.0 Middelen bieden oplossingen voor de volgende problemen:
+[!DNL Adobe Experience Manager] 6.5.6.0 [!DNL Assets] biedt oplossingen voor de volgende problemen:
 
-* Voorvertoning van marketingonderpandselementen (zoals brochure, Flyer en Business card) die zijn gemaakt met de sjabloon [!DNL Adobe InDesign] (INDD), bevat geen regeleinden en alinea-einden (NPR-34268).
+* Voorvertoning van marketingonderpandselementen (zoals brochure, Flyer en Business card) die met [!DNL Adobe InDesign] template zijn gemaakt, geeft geen regeleinden en alinea-einden weer (NPR-34268).
 
-* Het uitnemen van tekst voor de geüploade PDF-bestanden werkt niet en het zoeken naar bepaalde woorden in een PDF-bestand met volledige tekst kan dat PDF-bestand niet ophalen (NPR-34164).
-
-   >[!NOTE]
-   >Start de Adobe Experience Manager-instantie opnieuw nadat u Service Pack 6.5.6.0 hebt geïnstalleerd om deze oplossing te laten werken.
+* Het uitnemen van tekst en dus het zoeken naar de geüploade PDF-bestanden in volledige tekst werkt niet (NPR-34164). Start de [!DNL sAdobe Experience Manager] implementatie opnieuw nadat u Service Pack 6 hebt geïnstalleerd om dit probleem te verhelpen.
 
 * In de tijdlijn van elementen die uit meerdere pagina&#39;s bestaan, worden annotaties weergegeven die op alle subelementen zijn toegepast wanneer u in het element bladert in de tijdlijnweergave, in plaats van de annotaties weer te geven die specifiek zijn voor de specifieke subelementen (NPR-34100).
 
@@ -205,11 +202,7 @@ Hier volgt een lijst met oplossingen uit de release van [!DNL Experience Manager
 
 * Bij het maken van regels voor vervolgkeuzelijsten in [!UICONTROL Folder Metadata Schema Form]kan de gebruiker geen waarden in [!UICONTROL Field Choices] kolom selecteren (CQ-4297530).
 
-* De runtime kopie van het aangepaste workflowmodel voor middelen (gemaakt in `/var/workflow/models/dam`) wordt verwijderd wanneer u 6.5 Service Pack 5 of eerdere versies installeert op 6.5 GA (NPR-34532).
-
-   >[!NOTE]
-   >
-   >Als u een upgrade uitvoert naar het [!DNL Experience Manager] 6.5 Service Pack 6, wordt uw runtimeexemplaar niet opgehaald als uw runtimeexemplaar wordt verwijderd bij de installatie van [!DNL Experience Manager] 6.5 Service Pack 5 of eerdere versies op 6.5 GA. Als u de runtimekopie wilt ophalen, synchroniseert u de ontwerptijdkopie van het workflowmodel met de runtimekopie met de HTTP-API:
+* De runtime kopie van het aangepaste workflowmodel voor middelen (gemaakt in `/var/workflow/models/dam`) wordt verwijderd wanneer u [!DNL Experience Manager] 6.5 Service Pack 5 of een vorige versie installeert op [!DNL Experience Manager] 6.5 (NPR-34532). Als u de runtimekopie wilt ophalen, synchroniseert u de ontwerptijdkopie van het workflowmodel met de runtimekopie met de HTTP-API:
    `<designModelPath>/jcr:content.generate.json`.
 
 **In dynamische media opgeloste problemen**
@@ -410,7 +403,7 @@ B. Gebruik de [HTTP-API van Package Manager](https://docs.adobe.com/content/docs
 
 1. Alle bundels OSGi zijn of **[!UICONTROL ACTIVE]** of **[!UICONTROL FRAGMENT]** in de Console OSGi (de Console van het Web van het Gebruik: `/system/console/bundles`).
 
-1. De bundel OSGI `org.apache.jackrabbit.oak-core` is versie 1.22.3 of hoger (de Console van het Gebruik: `/system/console/bundles`).
+1. De bundel OSGi `org.apache.jackrabbit.oak-core` is versie 1.22.3 of later (de Console van het Web van het Gebruik: `/system/console/bundles`).
 
 Zie de [technische vereisten](/help/sites-deploying/technical-requirements.md)voor informatie over de platforms die zijn gecertificeerd voor deze release.
 
@@ -453,7 +446,7 @@ Om UberJar in een Geweven project te gebruiken, zie [hoe te UberJar](/help/sites
 
 ## Deprecated features {#removed-deprecated-features}
 
-Deze sectie maakt een lijst van eigenschappen en mogelijkheden die als verouderd met AEM 6.5.6.0 zijn gemerkt. Functies die volgens plan in een toekomstige versie zullen worden verwijderd, worden eerst op afgekeurd ingesteld, met een andere optie die moet worden gebruikt.
+Deze sectie maakt een lijst van eigenschappen en mogelijkheden die als verouderd met Experience Manager 6.5.6.0 zijn gemerkt. Functies die volgens plan in een toekomstige versie zullen worden verwijderd, worden eerst op afgekeurd ingesteld, met een andere optie die moet worden gebruikt.
 
 Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik maken van de functie of het vermogen en plannen maken om hun implementatie te wijzigen en de alternatieve optie te gebruiken.
 
@@ -464,7 +457,7 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
 
 ## Known issues {#known-issues}
 
-* Als u [!DNL Experience Manager] 6.5 Service Pack 5 of eerdere versies installeert op 6.5 GA, wordt de runtime kopie van uw eigen workflowmodel voor middelen (gemaakt in `/var/workflow/models/dam`) verwijderd.
+* Als u [!DNL Experience Manager] 6.5 Service Pack 5 of een vorig de dienstpak op [!DNL Experience Manager] 6.5 installeert, wordt het runtime exemplaar van uw activa aangepaste werkschemamodel (gecreeerd in `/var/workflow/models/dam`) geschrapt.
 Om uw runtime exemplaar terug te winnen, stelt Adobe voor om het exemplaar van de ontwerptijd van het model van het douanewerkschema met zijn runtime exemplaar te synchroniseren gebruikend HTTP API:
    `<designModelPath>/jcr:content.generate.json`.
 

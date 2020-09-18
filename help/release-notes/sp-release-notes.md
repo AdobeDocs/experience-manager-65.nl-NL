@@ -4,9 +4,9 @@ description: De nota's van de versie specifiek voor [!DNL Adobe Experience Manag
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b6db346f7ec2570972329a8edb089fe909120b75
+source-git-commit: 4f6b2bbb58f7f18798eb01a6c8f2cef4b02063a3
 workflow-type: tm+mt
-source-wordcount: '4214'
+source-wordcount: '4225'
 ht-degree: 0%
 
 ---
@@ -169,6 +169,8 @@ Hier volgt een lijst met oplossingen uit de release van [!DNL Experience Manager
 **In Experience Manager Assets opgeloste emissies**
 
 [!DNL Adobe Experience Manager] 6.5.6.0 [!DNL Assets] biedt oplossingen voor de volgende problemen:
+
+* Annotaties worden niet gemarkeerd wanneer deze worden geselecteerd in de tijdlijn van het element (CQ-4302422).
 
 * Voorvertoning van marketingonderpandselementen (zoals brochure, Flyer en Business card) die met [!DNL Adobe InDesign] template zijn gemaakt, geeft geen regeleinden en alinea-einden weer (NPR-34268).
 

@@ -8,9 +8,9 @@ topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 110c86ea-9bd8-4018-bfcc-ca33e6b3f3ba
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 65647a5e7c30991e06dd43125159547490fdddef
 workflow-type: tm+mt
-source-wordcount: '2031'
+source-wordcount: '2035'
 ht-degree: 0%
 
 ---
@@ -100,7 +100,7 @@ Beheer op het tabblad Inhoud de inhoud, zoals documentfragmenten en inhoudsvaria
 
    >[!NOTE]
    >
-   >Het pictogram Bibliotheektoegang is alleen beschikbaar als bibliotheektoegang is ingeschakeld tijdens het maken van de interactieve communicatie (in de eigenschappen Documentcontainer van het afdrukkanaal).
+   >Bibliotheektoegangspictogram is alleen beschikbaar als bibliotheektoegang is ingeschakeld tijdens het maken van de interactieve communicatie (in de eigenschappen Documentcontainer van het afdrukkanaal).
 
 1. Als de volgorde van de bijlagen niet is vergrendeld tijdens het maken van de interactieve communicatie, kunt u de bijlagen opnieuw ordenen door een bijlage te selecteren en op de pijl-omlaag en -omhoog te tikken.
 1. Met Webvoorvertoning en Afdrukvoorbeeld kunt u zien of de twee uitvoerbestanden aan uw eisen voldoen.
@@ -366,7 +366,7 @@ Hieronder ziet u een voorbeeld van het `pom.xml` bestand dat deel uitmaakt van d
         <dependency>
             <groupId>com.adobe.aemfd</groupId>
             <artifactId>aemfd-client-sdk</artifactId>
-            <version>6.0.122</version>
+            <version>6.0.146</version>
         </dependency>
     </dependencies>
 
@@ -443,4 +443,4 @@ Hieronder ziet u een voorbeeld van het `pom.xml` bestand dat deel uitmaakt van d
 
 >[!NOTE]
 >
->Zorg ervoor dat u de `aemfd-client-sdk` afhankelijkheid in het `pom.xml` bestand bijwerkt naar 6.0.122.
+>Zorg ervoor dat u de `aemfd-client-sdk` afhankelijkheid aan 6.0.146 of een recentere versie in het `pom.xml` dossier bijwerkt.

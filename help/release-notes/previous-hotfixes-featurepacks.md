@@ -3,9 +3,9 @@ title: '[!DNL Adobe Experience Manager] 6.5 Opmerkingen bij de vorige release va
 description: De nota's van de versie voor [!DNL Adobe Experience Manager] 6.5 de Pakken van de Dienst.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: c27f44326f653bbdc61e866e89e60893e81a7a3b
+source-git-commit: 5db4dd7ccc7d722f0503b22fdd5ff9e5508be4ea
 workflow-type: tm+mt
-source-wordcount: '11326'
+source-wordcount: '11370'
 ht-degree: 0%
 
 ---
@@ -74,6 +74,10 @@ Hier volgt een lijst met oplossingen uit de release van [!DNL Experience Manager
 * Anonieme gebruikers hebben toegang tot CRXDE Lite-functies (GRANITE-27790).
 
 ### [!DNL Assets] {#assets-6550}
+
+>[!IMPORTANT]
+>
+>Windows-gebruikers van [!DNL Experience Manager desktop app] wordt aangeraden een upgrade uit te voeren naar [bureaubladtoepassing versie 2.0.3.2](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html#whats-new-added) voor toegang tot de DAM-opslagruimte op [!DNL Adobe Experience Manager 6.5.5.0] exemplaar. Omdat ze problemen kunnen ondervinden bij het openen van de DAM-opslagplaats op [!DNL Adobe Experience Manager] 6.5.5.0-exemplaar met de bureaubladtoepassing versie 2.0.2.
 
 **Toegankelijkheidsverbeteringen in Experience Manager-elementen**
 

@@ -1,14 +1,18 @@
 ---
-source-git-commit: e3f12a9bbcb111e9a174e6bc3a0ec634df73c60f
+source-git-commit: 2969f3b27becc7586ec1e3359cdb31f0acf88da9
+workflow-type: tm+mt
 translation-type: tm+mt
+source-wordcount: '84'
+ht-degree: 0%
 
 ---
-# Documentatie voor Adobe Experience Manager 6.5
+# Adobe Experience Manager 6.5-documentatie
 
-Dit is de opslagplaats voor documentatie van Adobe Experience Manager 6.5. In deze documentatie worden de installatie, het beheer, het ontwerpgebruik en het aanpassen van AEM besproken.
+Dit is de opslagplaats voor Adobe Experience Manager 6.5-documentatie. Deze documentatie behandelt de installatie, het beheer, het auteursgebruik, en hoe te om AEM aan te passen.
 
 Uw bijdragen aan de documentatie zijn welkom. Zie de volgende bronnen:
 
 * [contribute.md](contributing.md) Voor een overzicht van hoe te om aan de documentatie bij te dragen.
 * [Guidelines.md](guidelines.md) Voor een overzicht van wat in bijdragen wordt verwacht en hoe te om uw documentatiebijdragen samen te stellen.
 * [gedragscode.md](code-of-conduct.md) Voor een overzicht van de normen van gedrag wij verwachten aangezien u aan dit documentatieproject bijdraagt.
+

@@ -4,9 +4,9 @@ description: Nieuw in Adobe Experience Manager 6.5 Service Pack 6
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b676f73a800c45be12de70b8ba57a332563a49a4
+source-git-commit: f52eb4ccfc1c9f0a121039432ed57401a2def573
 workflow-type: tm+mt
-source-wordcount: '2465'
+source-wordcount: '2453'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ U kunt er nu voor kiezen om elementen selectief te publiceren of de publicatie e
 
 ### Andere verbeteringen in elementen {#other-enhancements-assets-6560}
 
-* Gebruikersgroepen van privémappen worden nu uit de opslagplaats verwijderd wanneer privémappen worden verwijderd. Door het verwijderen van een privémap wordt de opslagruimte van zwevende gebruikersgroepen gewist. Deze worden telkens gemaakt wanneer een persoonlijke map wordt gemaakt. Zie Verwijderen van [gebruikersgroepen bij het verwijderen](#group-removal-on-folder-deletion)van mappen voor meer informatie.
+* Gebruikersgroepen die zijn gekoppeld aan mappen (privégroepen en niet-privégroepen) worden nu verwijderd uit de opslagplaats wanneer deze mappen worden [verwijderd](/help/assets/private-folder.md#delete-private-folder). Bestaande redundante, zwevende, ongebruikte en automatisch gegenereerde gebruikersgroepen kunnen echter met JMX uit de opslagplaats worden opgeschoond.
 
 ## [!DNL Adobe Experience Manager Forms] {#aem-forms}
 

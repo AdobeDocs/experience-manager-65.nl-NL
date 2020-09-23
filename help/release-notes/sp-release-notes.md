@@ -4,9 +4,9 @@ description: De nota's van de versie specifiek voor [!DNL Adobe Experience Manag
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 4da9481dbd74a8cecf13c51b78c94abc4d48332e
+source-git-commit: bd67a41e493cbcf97956de09e088d16997ab0e93
 workflow-type: tm+mt
-source-wordcount: '4294'
+source-wordcount: '4304'
 ht-degree: 0%
 
 ---
@@ -22,10 +22,6 @@ ht-degree: 0%
 | Type | Service Pack-release |
 | Date | 3 september 2020 |
 | URL downloaden | [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.6-1.0.zip) |
-
->[!NOTE]
->
->Een bijgewerkte versie van AEM 6.5 Service Pack 6 is beschikbaar. Als u reeds een vorige versie van Service Pack 6 hebt geïnstalleerd, bevorder aan de recentste beschikbare versie.
 
 ## Wat is inbegrepen in Adobe Experience Manager 6.5.6.0 {#what-s-included-in-aem}
 
@@ -319,6 +315,8 @@ Hier volgt een lijst met oplossingen uit de release van [!DNL Experience Manager
 
 * Aangepaste formulieren hebben enkele open resourceoplossers. Deze leiden tot mislukte indiening. Het probleem doet zich af en toe voor (CQ-4299407).
 
+* Wanneer u de veldconfiguratie voor het eerst opent, wordt het eigenschappenpictogram niet weergegeven (CQ-4296284).
+
 **Workflow**
 
 * Wanneer een werkstroomfiatteur een bijlage uploadt, wordt de naam van de bijlage gewijzigd in `undefined` (NPR-33699).
@@ -386,6 +384,10 @@ Voer de volgende stappen uit om het Service Pack op een bestaande Adobe Experien
 1. Open Package Manager en klik **[!UICONTROL Upload Package]** om het pakket te uploaden. Zie [Package Manager](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html)voor informatie over het gebruik ervan.
 
 1. Selecteer het pakket en klik **[!UICONTROL Install]**.
+
+>[!NOTE]
+>
+>Vanwege een bekende uitgave is een bijgewerkt Service Pack-pakket beschikbaar. U wordt aangeraden het pakket te installeren.
 
 >[!NOTE]
 >

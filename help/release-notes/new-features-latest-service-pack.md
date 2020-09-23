@@ -4,9 +4,9 @@ description: Nieuw in Adobe Experience Manager 6.5 Service Pack 6
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 3ed140d0649379d27019e9f5b0753c07f30f5491
+source-git-commit: b676f73a800c45be12de70b8ba57a332563a49a4
 workflow-type: tm+mt
-source-wordcount: '2455'
+source-wordcount: '2465'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ U kunt er nu voor kiezen om elementen selectief te publiceren of de publicatie e
 
 ### Andere verbeteringen in elementen {#other-enhancements-assets-6560}
 
-* Gebruikersgroepen van privémappen worden nu uit de opslagplaats verwijderd wanneer privémappen worden verwijderd. Door het verwijderen van een privémap wordt de opslagruimte van zwevende gebruikersgroepen gewist. Deze worden telkens gemaakt wanneer een persoonlijke map wordt gemaakt.
+* Gebruikersgroepen van privémappen worden nu uit de opslagplaats verwijderd wanneer privémappen worden verwijderd. Door het verwijderen van een privémap wordt de opslagruimte van zwevende gebruikersgroepen gewist. Deze worden telkens gemaakt wanneer een persoonlijke map wordt gemaakt. Zie Verwijderen van [gebruikersgroepen bij het verwijderen](#group-removal-on-folder-deletion)van mappen voor meer informatie.
 
 ## [!DNL Adobe Experience Manager Forms] {#aem-forms}
 
@@ -87,7 +87,7 @@ U kunt de [!DNL Experience Manager Forms] server nu configureren om de handeling
 
 Als een AcroForm-formulier [!DNL Adobe Sign] tekstcodes bevat, worden deze velden nu herkend en weergegeven als [!DNL Adobe Sign] velden in het adaptieve formulier dat is geconverteerd met [!DNL Automated Forms Conversion service]. Een ondertekenaar kan dergelijke velden invullen terwijl hij het adaptieve formulier ondertekent.
 
-### Ondersteuning voor het omzetten van gekleurde PDF forms in aangepaste formulieren {#colore-PDF-forms}
+### Support to convert colored PDF forms to adaptive forms {#colore-PDF-forms}
 
 U kunt gekleurde PDF forms omzetten [!DNL Automated Forms Conversion service] in adaptieve formulieren.
 

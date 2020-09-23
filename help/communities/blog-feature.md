@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: cf8b3d72-30ba-40ca-ae48-b61abbb28802
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e74d39e63f8b3b5961ea2c31e0ef99c3ab8b06dd
+source-git-commit: 8361f65f52c2a67658ef1b7b7615df149208777b
 workflow-type: tm+mt
-source-wordcount: '1682'
+source-wordcount: '1676'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ In dit gedeelte van de documentatie wordt het volgende beschreven:
 >
 >De componenten `Journal` en `Journal Sidebar` worden genoemd `Blog` en `Blog Sidebar`.
 >
->De blogfunctie in AEM 6.0 en eerdere releases wordt nu verwijderd. Het is gebaseerd op een sjabloon en auteurs mogen alleen inhoud maken in de auteursomgeving.
+>De blogfunctie in AEM 6.0 en eerdere versies wordt nu verwijderd. Het is gebaseerd op een sjabloon en auteurs mogen alleen inhoud maken in de auteursomgeving.
 
 
 ## Blogcomponenten toevoegen aan een pagina {#adding-blog-components-to-a-page}
@@ -61,19 +61,15 @@ en sleep ze naar de gewenste plaats op een pagina waarop de blog moet worden wee
 
 Ga voor de benodigde informatie naar [Community Components Basics](/help/communities/basics.md).
 
-Wanneer de [vereiste client-side bibliotheken](/help/communities/blog-developer-basics.md#essentials-for-client-side) worden opgenomen, ziet u zo de `Blog` component eruit:
+Wanneer de [vereiste client-side bibliotheken](/help/communities/blog-developer-basics.md#essentials-for-client-side) worden opgenomen, wordt de `Blog` component als volgt weergegeven:
 
-![chlimage_1-147](assets/chlimage_1-147.png)
-
-En hoe het `Blog Sidebar` zal verschijnen:
-
-![chlimage_1-148](assets/chlimage_1-148.png)
+![add-blog-component](assets/add-blog-component.png)
 
 ### Blog configureren {#configuring-blog}
 
 Selecteer de geplaatste `Blog` component die u wilt openen en selecteer het `Configure` pictogram waarmee het dialoogvenster Bewerken wordt geopend.
 
-![chlimage_1-149](assets/chlimage_1-149.png)
+![vormen](assets/configure-new.png)
 
 ![Bloginstellingen](assets/blog-configure.png)
 
@@ -262,6 +258,7 @@ Geef onder het tabblad **Dagboekzijbalkinstellingen** de datumnotatie voor archi
    * MMMMM: volledige maand, zoals juni
    * MMM: korte maand, zoals jun
    * MM: maandnummer, bijvoorbeeld 06
+
    De standaardwaarde is &quot;jjjj MMMMM&quot;, die bijvoorbeeld &quot;2015 juni&quot; zou weergeven
 
 * **Type weergave**
@@ -306,7 +303,7 @@ De blogartikelen worden op het juiste tabblad (Gepubliceerd, Concepten of Geplan
 
 Wanneer de aangemelde gebruiker moderator of beheerdersrechten heeft, kunnen zij [moderatietaken](/help/communities/moderate-ugc.md) uitvoeren (zoals toegestaan door de configuratie van de component) op alle blogartikelen en commentaar dat op een blog wordt geplaatst.
 
-![chlimage_1-152](assets/chlimage_1-152.png)
+![moderator-homepage](assets/moderator-homepage.png)
 
 #### Leden {#members}
 
@@ -321,15 +318,15 @@ Zij kunnen met name:
 * Hun eigen blogartikel of commentaar verwijderen
 * Blogartikelen of opmerkingen van anderen markeren
 
-![chlimage_1-153](assets/chlimage_1-153.png)
+![lid-homepage](assets/member-homepage.png)
 
-![chlimage_1-154](assets/chlimage_1-154.png)
+![create-blog](assets/create-blog.png)
 
 #### Anoniem {#anonymous}
 
 Sitebezoekers die niet zijn aangemeld, kunnen alleen geposte blogartikelen en opmerkingen lezen, deze vertalen als ze worden ondersteund, maar mogen geen blogartikel of commentaar toevoegen en de artikelen of opmerkingen van anderen niet markeren.
 
-![chlimage_1-155](assets/chlimage_1-155.png)
+![anonieme gebruikersweergave](assets/anonymous-user-view.png)
 
 ## Additional Information {#additional-information}
 

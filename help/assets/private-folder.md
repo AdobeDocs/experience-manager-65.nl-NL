@@ -3,9 +3,9 @@ title: Persoonlijke map in [!DNL Adobe Experience Manager Assets]
 description: Leer hoe u een persoonlijke map maakt in [!DNL Adobe Experience Manager Assets] de toepassing en deze deelt met andere gebruikers en hoe u deze map verschillende rechten toekent.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b676f73a800c45be12de70b8ba57a332563a49a4
+source-git-commit: be97ef4f3bb6b904dabcfcd44025a4898bcf4dee
 workflow-type: tm+mt
-source-wordcount: '627'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---
@@ -67,26 +67,30 @@ Persoonlijke map maken en delen:
 
 >[!NOTE]
 >
->Om een privé omslag tot stand te brengen, vereist u Gelezen en geeft ACL toestemmingen op de ouderomslag uit waaronder u een privé omslag wilt tot stand brengen. Als u geen beheerder bent, worden deze toestemmingen niet toegelaten voor u door gebrek `/content/dam`. In dit geval moet u eerst deze machtigingen voor uw gebruikers-id/groep verkrijgen voordat u probeert persoonlijke mappen te maken of mapinstellingen weer te geven.
+>Als u een persoonlijke map wilt maken, hebt u lees- en [toegangsbeheermachtigingen](/help/sites-administering/security.md#permissions-in-aem) nodig voor de bovenliggende map waarin u een persoonlijke map wilt maken. Als u geen beheerder bent, worden deze toestemmingen niet toegelaten voor u door gebrek `/content/dam`. In dit geval moet u eerst deze machtigingen voor uw gebruikers-id/groep verkrijgen voordat u probeert persoonlijke mappen te maken.
 
 ## Verwijderen van persoonlijke map {#delete-private-folder}
 
-U kunt een privémap verwijderen door de map te selecteren en de [!UICONTROL Delete] optie in het bovenste menu te selecteren of door de Backspace-toets op het toetsenbord te gebruiken.
+U kunt een map verwijderen door de map te selecteren en de [!UICONTROL Delete] optie te selecteren in het bovenste menu of door de Backspace-toets op het toetsenbord te gebruiken.
 
-### Verwijderen van gebruikersgroep na verwijderen van map {#group-removal-on-folder-deletion}
-
-Als u een privémap verwijdert met de bovenstaande methode uit de gebruikersinterface, worden ook de bijbehorende gebruikersgroepen verwijderd. Bestaande redundante, ongebruikte en automatisch gegenereerde gebruikersgroepen kunnen echter uit de opslagplaats worden opgeschoond met behulp van [JMX](#group-clean-up-jmx).
+![Optie verwijderen in bovenste menu](assets/delete-option.png)
 
 >[!CAUTION]
 >
 >Als u een privémap uit CRXDE Lite verwijdert, blijven er overbodige gebruikersgroepen over in de opslagplaats.
 
+>[!NOTE]
+>
+>Als u een map verwijdert met de bovenstaande methode uit de gebruikersinterface, worden ook de bijbehorende gebruikersgroepen verwijderd.
+Bestaande redundante, ongebruikte en automatisch gegenereerde gebruikersgroepen kunnen echter uit de opslagplaats worden opgeschoond met behulp van [JMX](#group-clean-up-jmx).
+
 ### JMX gebruiken om ongebruikte gebruikersgroepen op te schonen {#group-clean-up-jmx}
 
 Opschonen van opslagruimten voor ongebruikte gebruikersgroepen:
 
-1. Open JMX om overtollige groepen voor Activa van te zuiveren `http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`.
+1. Open JMX om overtollige groepen voor Activa op uw [!DNL Experience Manager] auteursinstantie van schoon te maken `http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`.
+Bijvoorbeeld, `http://no1010042068039.corp.adobe.com:4502/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`.
 
 1. Roep de `clean` methode aan vanuit deze JMX.
 
-U ziet dat alle overbodige gebruikersgroepen of de automatisch gegenereerde groepen (die worden gemaakt bij het maken van een privémap met dezelfde naam als een eerder verwijderde groep) uit het pad worden verwijderd `/home/groups/mac/default/<user_name>/<folder_name>`.
+U ziet dat alle overbodige gebruikersgroepen of de automatisch gegenereerde groepen (die worden gemaakt bij het maken van een map met dezelfde naam als een eerder verwijderde groep) uit het pad worden verwijderd `/home/groups/mac/default/<user_name>/<folder_name>`.

@@ -4,9 +4,9 @@ description: Leer de taken voor middelenbeheer, zoals het uploaden, downloaden, 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b676f73a800c45be12de70b8ba57a332563a49a4
+source-git-commit: f52eb4ccfc1c9f0a121039432ed57401a2def573
 workflow-type: tm+mt
-source-wordcount: '9139'
+source-wordcount: '9183'
 ht-degree: 3%
 
 ---
@@ -303,7 +303,7 @@ U transcodeert een videobestand door een keuze te maken uit verschillende videov
 |---|---|---|
 | Adaptieve video |  | Eén coderingsvoorinstelling die met een willekeurige hoogte-breedteverhouding werkt voor het maken van video&#39;s voor levering op mobiele apparaten, tablets en desktops. Geüploade bronvideo&#39;s die met deze voorinstelling zijn gecodeerd, worden ingesteld met een vaste hoogte. De breedte wordt echter automatisch geschaald om de hoogte-breedteverhouding van de video te behouden. <br>Aangepaste videocodering wordt aanbevolen. |
 | Enkele coderingsvoorinstellingen | Voorinstellingen voor codering sorteren | Selecteer Naam of Grootte om de coderingsvoorinstellingen onder Desktop, Mobiel en Tablet op naam of op resolutiegrootte te sorteren. |
-|  | X | Maak een MP4-bestand voor een streaming of progressieve videobeleving op bureaubladcomputers. Selecteer een of meer hoogte-breedteverhoudingen met de gewenste resolutiegrootte en gegevenssnelheid. |
+|  | Desktop | Maak een MP4-bestand voor een streaming of progressieve videobeleving op bureaubladcomputers. Selecteer een of meer hoogte-breedteverhoudingen met de gewenste resolutiegrootte en gegevenssnelheid. |
 |  | Mobiel | Maak een MP4-bestand voor levering op mobiele iPhone- of Android-apparaten. Selecteer een of meer hoogte-breedteverhoudingen met de gewenste resolutie- en doelgegevenssnelheid. |
 |  | Tablet | Maak een MP4-bestand voor levering op iPad- of Android-tablets. Selecteer een of meer hoogte-breedteverhoudingen met de gewenste resolutie- en doelgegevenssnelheid. |
 
@@ -538,25 +538,30 @@ Zie [Subassets](managing-linked-subassets.md#generate-subassets)beheren voor mee
 
 Voor het verwijderen van elementen heeft een gebruiker verwijderingsmachtigingen nodig `dam/asset`. Als u alleen over wijzigingsmachtigingen beschikt, kunt u alleen de metagegevens van de elementen bewerken en annotaties toevoegen aan het element. U kunt het element of de metagegevens echter niet verwijderen.
 
-Als u de inkomende verwijzingen van andere pagina&#39;s wilt oplossen of verwijderen, werkt u de relevante verwijzingen bij voordat u een element verwijdert. Als u gebruikers niet wilt toestaan om waarnaar wordt verwezen, te verwijderen en verbroken koppelingen te verlaten, schakelt u de optie voor het forceren verwijderen uit met behulp van een overlay.
+Als u de inkomende verwijzingen van andere pagina&#39;s wilt oplossen of verwijderen, werkt u de relevante verwijzingen bij voordat u een element verwijdert. Als u gebruikers niet wilt toestaan om waarnaar wordt verwezen, te verwijderen en verbroken koppelingen te behouden, schakelt u de optie voor het forceren verwijderen uit met een bedekking.
 
-1. Navigeer naar de locatie van de elementen die u wilt verwijderen.
+Middelen of mappen met elementen verwijderen:
 
-1. Selecteer het element en klik op de werkbalk op de optie **[!UICONTROL Delete]** ![](assets/do-not-localize/deleteoutline.png) Verwijderen.
+1. Navigeer naar de locatie van het element of de map die u wilt verwijderen.
 
-1. Selecteer een van de volgende opties in het bevestigingsvenster:
+1. Selecteer het element of de map en klik op de werkbalk op de optie **[!UICONTROL Delete]** ![](assets/do-not-localize/deleteoutline.png) Verwijderen.
 
-   * **[!UICONTROL Cancel]** om de handeling te stoppen
-   * **[!UICONTROL Delete]** ter bevestiging van de actie :
+   Zodra u de schrapping bevestigt:
 
-      * Als het element geen verwijzingen bevat, wordt het element verwijderd.
-      * Als het element verwijzingen bevat, wordt u via een foutbericht geïnformeerd dat naar **een of meer elementen wordt verwezen.** U kunt selecteren **[!UICONTROL Force Delete]** of **[!UICONTROL Cancel]**.
+   * Als het element geen verwijzingen bevat, wordt het element verwijderd.
 
+   * Als het element verwijzingen bevat, wordt u via een foutbericht geïnformeerd dat naar **een of meer elementen wordt verwezen**. U kunt selecteren **[!UICONTROL Force Delete]** of **[!UICONTROL Cancel]**.
    >[!NOTE]
    >
    >* Als u de inkomende verwijzingen van andere pagina&#39;s wilt oplossen of verwijderen, werkt u de relevante verwijzingen bij voordat u een element verwijdert. Schakel ook de knop forceren verwijderen uit met behulp van een overlay, zodat gebruikers geen bestanden waarnaar wordt verwezen kunnen verwijderen en verbroken koppelingen behouden blijven.
    >* Het is mogelijk om een *map* te verwijderen die uitgecheckte elementbestanden bevat. Voordat u een map verwijdert, moet u controleren of er geen digitale elementen zijn uitgecheckt door gebruikers.
 
+
+>[!NOTE]
+>
+>Als u een map verwijdert met de bovenstaande methode uit de gebruikersinterface, worden ook de bijbehorende gebruikersgroepen verwijderd.
+>
+>Bestaande, redundante, ongebruikte en automatisch gegenereerde gebruikersgroepen kunnen echter worden opgeschoond vanuit de opslagplaats met behulp van de `clean` methode in JMX in uw auteurinstantie (`http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`).
 
 ## Elementen downloaden {#downloading-assets}
 

@@ -1,8 +1,8 @@
 ---
 title: Grondbeginselen van Community-componenten
 seo-title: Grondbeginselen van Community-componenten
-description: Functies van Gemeenschappen toevoegen aan AEM-sites in bewerkingsmodus en componenten configureren
-seo-description: Functies van Gemeenschappen toevoegen aan AEM-sites in bewerkingsmodus en componenten configureren
+description: Functies van Gemeenschappen toevoegen aan AEM sites in bewerkingsmodus en componenten configureren
+seo-description: Functies van Gemeenschappen toevoegen aan AEM sites in bewerkingsmodus en componenten configureren
 uuid: c017a7c5-40d1-4592-9317-96fd727dac86
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 21714581-7645-4b47-a9b0-9f1424013240
 translation-type: tm+mt
-source-git-commit: f1870c1222004f582ccf337a59e1f30e2dc2cf32
+source-git-commit: c77a353d43a3a6f33dffecf0b4e7672ed3e2dd3f
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 1%
@@ -22,9 +22,9 @@ ht-degree: 1%
 
 ## Overzicht {#overview}
 
-In het gedeelte dat wordt geschreven in de documentatie wordt beschreven hoe u de functies van Communities toevoegt aan AEM-sites in de modus Bewerken van auteur en hoe u componentconfiguraties beschrijft.
+In het gedeelte dat wordt geschreven in de documentatie wordt beschreven hoe u de functies van een Gemeenschappen toevoegt aan AEM sites in de bewerkingsmodus van de auteur en hoe u componentconfiguraties beschrijft.
 
-Componenten kunnen worden onderzocht met behulp van een AEM-instantie en de interactieve handleiding voor [Community Components](components-guide.md).
+Componenten kunnen worden onderzocht met behulp van een AEM en de interactieve [Community Components-handleiding](components-guide.md).
 
 ## Toegang tot onderdelen van Gemeenschappen {#accessing-communities-components}
 
@@ -36,7 +36,7 @@ De beschikbare communautaire componenten zijn [hier](author-communities.md#avail
 >
 >Voor algemene ontwerpinformatie raadpleegt u de [handleiding voor het maken van pagina](../../help/sites-authoring/qg-page-authoring.md)&#39;s.
 >
->Als u niet bekend bent met AEM, bekijkt u de documentatie over [basisverwerking](../../help/sites-authoring/basic-handling.md).
+>Als u niet bekend bent met AEM, bekijkt u de documentatie over de [basisafhandeling](../../help/sites-authoring/basic-handling.md).
 
 
 ### Ontwerpmodus invoeren {#entering-design-mode}
@@ -47,11 +47,11 @@ Zie Componenten [configureren in Ontwerpmodus](../../help/sites-authoring/defaul
 
 Hieronder vindt u afbeeldingen van het selecteren van een paar onderdelen van de Gemeenschappen en het weergeven hiervan in de browser met componenten:
 
-![chlimage_1-424](assets/chlimage_1-424.png)
+![componentontwerp](assets/component-design.png)
 
 De geselecteerde componenten zijn nu beschikbaar in de componentenbrowser:
 
-![chlimage_1-425](assets/chlimage_1-425.png)
+![component-design1](assets/component-design1.png)
 
 ## Vereiste clientlibs {#required-clientlibs}
 
@@ -61,11 +61,11 @@ Wanneer u een Community-component aan een pagina toevoegt, als het resultaat een
 
 ### Voorbeeld: Aanvankelijk geplaatste revisies zonder clientbibliotheken... {#example-initially-placed-reviews-without-client-libraries}
 
-![chlimage_1-426](assets/chlimage_1-426.png)
+![clientlibs1](assets/clientlibs1.png)
 
 ### ... En met clientbibliotheken {#and-with-client-libraries}
 
-![chlimage_1-427](assets/chlimage_1-427.png)
+![clientlibs2](assets/clientlibs2.png)
 
 ## Tags {#tagging}
 
@@ -90,6 +90,6 @@ Voor administratieve informatie:
 
 Voor informatie over ontwikkelaars:
 
-* [AEM Tagging Framework](../../help/sites-developing/framework.md)
+* [Kader voor tags AEM](../../help/sites-developing/framework.md)
 * [Grondbeginselen van tags](tag.md)
 

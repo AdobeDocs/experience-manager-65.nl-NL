@@ -1,23 +1,26 @@
 ---
 title: Single Sign On
 seo-title: Single Sign On
-description: Leer hoe u SSO (Single Sign On) voor een AEM-instantie configureert.
-seo-description: Leer hoe u SSO (Single Sign On) voor een AEM-instantie configureert.
+description: Leer hoe te om Enige Sign aan (SSO) voor een AEM instantie te vormen.
+seo-description: Leer hoe te om Enige Sign aan (SSO) voor een AEM instantie te vormen.
 uuid: b8dcb28e-4604-4da5-b8dd-4e1e2cbdda18
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
+topic-tags: configuring, Security
 content-type: reference
-topic-tags: Security
 discoiquuid: 86e8dc12-608d-4aff-ba7a-5524f6b4eb0d
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+workflow-type: tm+mt
+source-wordcount: '755'
+ht-degree: 0%
 
 ---
 
 
 # Single Sign On {#single-sign-on}
 
-Met Single Sign On (SSO) heeft een gebruiker toegang tot meerdere systemen nadat hij de verificatiegegevens (zoals een gebruikersnaam en wachtwoord) eenmaal heeft opgegeven. Een afzonderlijk systeem (de vertrouwde op authentiek verklaard) voert de authentificatie uit en verstrekt de Manager van de Ervaring van de gebruikersgeloofsbrieven. De Manager van de ervaring controleert en handhaaft de toegangstoestemmingen voor de gebruiker (d.w.z. bepaalt welke middelen de gebruiker aan toegang wordt toegestaan).
+Met Single Sign On (SSO) heeft een gebruiker toegang tot meerdere systemen nadat hij de verificatiegegevens (zoals een gebruikersnaam en wachtwoord) eenmaal heeft opgegeven. Een afzonderlijk systeem (dat als vertrouwde op authentiek wordt bekend) voert de authentificatie uit en verstrekt Experience Manager de gebruikersgeloofsbrieven. De Experience Manager controleert en handhaaft de toegangstoestemmingen voor de gebruiker (d.w.z. bepaalt welke middelen de gebruiker wordt toegestaan om toegang te hebben).
 
 De dienst van de Handler van de Authentificatie SSO ( `com.adobe.granite.auth.sso.impl.SsoAuthenticationHandler`) verwerkt de authentificatieresultaten die de vertrouwde op authentificator verstrekt. De manager van de Authentificatie SSO zoekt naar een ssid (Herkenningsteken SSO) als waarde van een speciaal attribuut in de volgende plaatsen in deze orde:
 
@@ -36,26 +39,27 @@ U moet dezelfde kenmerknaam opgeven voor beide services. Het attribuut is inbegr
 
 ## SSO configureren {#configuring-sso}
 
-Om SSO voor een instantie te vormen AEM, moet u de Handler van de Authentificatie [SSO vormen](/help/sites-deploying/osgi-configuration-settings.md#adobegranitessoauthenticationhandler):
+Om SSO voor een AEM instantie te vormen, moet u de Handler van de Authentificatie [SSO vormen](/help/sites-deploying/osgi-configuration-settings.md#adobegranitessoauthenticationhandler):
 
 1. Wanneer het werken met AEM zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie het [Vormen OSGi](/help/sites-deploying/configuring-osgi.md) voor meer details en de geadviseerde praktijken.
 
    Bijvoorbeeld voor NTLM-set:
 
-   * **** Pad: indien nodig; bijvoorbeeld: `/`
+   * **Pad:** indien nodig; bijvoorbeeld: `/`
    * **Namen** koptekst: `LOGON_USER`
    * **Id-indeling**: `^<DOMAIN>\\(.+)$`
 
       Waar `<*DOMAIN*>` wordt vervangen door uw eigen domeinnaam.
    Voor CoSign:
 
-   * **** Pad: indien nodig; bijvoorbeeld: `/`
+   * **Pad:** indien nodig; bijvoorbeeld: `/`
    * **Namen** koptekst: remote_user
-   * **** ID-indeling: asIs
+   * **ID-indeling:** asIs
+
    Voor SiteMinder:
 
-   * **** Pad: indien nodig; bijvoorbeeld: `/`
-   * **** Naam koptekst: SM_USER
+   * **Pad:** indien nodig; bijvoorbeeld: `/`
+   * **Naam koptekst:** SM_USER
    * **Id-indeling**: asIs
 
 
@@ -68,7 +72,7 @@ Om SSO voor een instantie te vormen AEM, moet u de Handler van de Authentificati
 >
 >Door gebruikers te verplichten door een Webserver te gaan die de agent van uw SSO systeem in werking stelt, wordt gewaarborgd dat geen gebruiker een kopbal, een koekje of een parameter kan direct verzenden die de gebruiker zal leiden om door AEM worden vertrouwd, aangezien de agent dergelijke informatie zal filtreren indien verzonden van de buitenkant.
 >
->Elke gebruiker die rechtstreeks toegang heeft tot uw AEM-instantie zonder via de webserver te gaan, kan als elke gebruiker optreden door de header, cookie of parameter te verzenden als de namen bekend zijn.
+>Elke gebruiker die rechtstreeks toegang heeft tot de AEM zonder de webserver te gebruiken, kan als gebruiker optreden door de header, cookie of parameter te verzenden als de namen bekend zijn.
 >
 >Zorg ook dat van kopballen, koekjes en de namen van de verzoekparameter, u slechts vormt die voor uw opstelling SSO wordt vereist.
 
@@ -83,6 +87,7 @@ Om SSO voor een instantie te vormen AEM, moet u de Handler van de Authentificati
 >
 >* `disp_iis.ini`
 >* IIS
+
 >
 >
 In `disp_iis.ini` set:
@@ -90,6 +95,7 @@ In `disp_iis.ini` set:
 >
 >* `servervariables=1` (stuurt IIS-servervariabelen als aanvraagheaders door naar de externe instantie)
 >* `replaceauthorization=1` (Vervangt een koptekst met de naam &quot;Autorisatie&quot;, anders dan &quot;Standaard&quot;, door de waarde &quot;Standaard&quot;.)
+
 >
 >
 In IIS:
@@ -98,6 +104,7 @@ In IIS:
    >
    >
 * laat **Geïntegreerde authentificatie van Vensters toe**
+
 >
 
 
@@ -153,15 +160,16 @@ Transfer-Encoding: chunked
 Dit werkt ook als u daarom vraagt:
 `http://localhost:4502/libs/cq/core/content/welcome.html?TestParameter=admin`
 
-U kunt ook de volgende krullingsopdracht gebruiken om de `TestHeader` koptekst naar `admin:``curl -D - -H "TestHeader: admin" http://localhost:4502/libs/cq/core/content/welcome.html`
+U kunt ook de volgende krullingsopdracht gebruiken om de `TestHeader` koptekst naar `admin:`
+`curl -D - -H "TestHeader: admin" http://localhost:4502/libs/cq/core/content/welcome.html`
 
 >[!NOTE]
 >
 >Als u de parameter request in een browser gebruikt, ziet u slechts een deel van de HTML - zonder CSS. Dit komt omdat alle verzoeken van HTML zonder de verzoekparameter worden gedaan.
 
-## Koppelingen voor afmelden bij AEM verwijderen {#removing-aem-sign-out-links}
+## Koppelingen AEM afmelden verwijderen {#removing-aem-sign-out-links}
 
-Wanneer u SSO gebruikt, worden aanmelden en afmelden extern afgehandeld, zodat de eigen aftekenkoppelingen van AEM&#39;s niet meer van toepassing zijn en moeten worden verwijderd.
+Wanneer u SSO gebruikt, worden aanmelden en afmelden extern afgehandeld, zodat AEM eigen aftekenkoppelingen niet langer van toepassing zijn en moeten worden verwijderd.
 
 U kunt de koppeling Afmelden op het welkomstscherm als volgt verwijderen.
 

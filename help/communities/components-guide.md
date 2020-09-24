@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a777a3f1-b39f-4d90-b9b6-02d3e321a86f
 translation-type: tm+mt
-source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
+source-git-commit: 3da113e88784def54e0a94e280bf1a965de015ed
 workflow-type: tm+mt
 source-wordcount: '1200'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Community Components Guide  {#community-components-guide}
 
-De communautaire gids voor componenten is een interactief ontwikkelingsinstrument voor het [sociale-componentkader (SCF)](scf.md). Het verstrekt een lijst van beschikbare AEM Communities componenten of de complexere eigenschappen die van veelvoudige componenten worden gebouwd.
+De communautaire gids voor componenten is een interactief ontwikkelingsinstrument voor het [sociale-componentkader (SCF)](scf.md). Het biedt een lijst met beschikbare AEM Communities-componenten of de complexere functies van meerdere componenten.
 
 Samen met basisinformatie voor elke component, staat de gids voor het experimenteren met toe hoe de componenten SCF/de eigenschappen werken en hoe zij kunnen worden gevormd of worden aangepast.
 
@@ -47,7 +47,7 @@ Als u de modus Bewerken bij de auteur wilt activeren, voegt u een `editor.html` 
 
    [https://&lt;server>:&lt;port>/editor.html/content/community-components/en.html](http://localhost:4502/editor.html/content/community-components/en.html)
 
-* Klassieke gebruikersinterface:
+* Klassieke interface:
 
    [https://&lt;server>:&lt;port>/cf#/content/community-components/en.html](http://localhost:4502/cf#/content/community-components/en.html)
 
@@ -61,7 +61,7 @@ Als u de modus Bewerken bij de auteur wilt activeren, voegt u een `editor.html` 
 >
 >Voor algemene ontwerpinformatie raadpleegt u de [handleiding voor het maken van pagina](../../help/sites-authoring/qg-page-authoring.md)&#39;s.
 >
->Als u niet bekend bent met AEM, bekijkt u de documentatie over [basisverwerking](../../help/sites-authoring/basic-handling.md).
+>Als u niet bekend bent met AEM, bekijkt u de documentatie over de [basisafhandeling](../../help/sites-authoring/basic-handling.md).
 
 
 ### Startpagina {#home-page}
@@ -70,13 +70,13 @@ De handleiding bevat een lijst met SCF-componenten die beschikbaar zijn voor voo
 
 De Gids van Componenten zoals bekeken op een auteursinstantie op Edit wijze:
 
-![chlimage_1-404](assets/chlimage_1-404.png)
+![community-component1](assets/community-component1.png)
 
 ## Componentpagina&#39;s {#component-pages}
 
 Selecteer een component in de lijst links op de pagina.
 
-![chlimage_1-405](assets/chlimage_1-405.png)
+![community-component-pagina&#39;s](assets/community-component2.png)
 
 De hoofdtekst van de hulplijn wordt weergegeven:
 
@@ -100,20 +100,22 @@ Wanneer u de handleiding gebruikt voor een instantie van de auteur, kunt u het c
 
 Voor de gids van Componenten Community, worden sommige montages van de componentendialoog bedekt met de [Includable](scf.md#add-or-include-a-communities-component) knevelstaat. Als u wilt schakelen tussen het gebruik van de bestaande bron of een dynamisch opgenomen bron, selecteert u in de bewerkingsmodus zowel de component als de insluitende tekst en dubbelklikt u om het dialoogvenster Bewerken te openen:
 
-![chlimage_1-406](assets/chlimage_1-406.png)
+![community-component3](assets/community-component3.png)
 
 Onder het tabblad **Sjablonen** :
 
-![chlimage_1-407](assets/chlimage_1-407.png)
+![community-component4](assets/community-component4.png)
 
 * **Inclusief de onderliggende component met sling:include**
 
    Als deze optie niet is ingeschakeld, gebruikt de Component Guide de bestaande bron in de repository (een jcr-knooppunt dat een onderliggend knooppunt is van een par-knooppunt).
 
    * weergegeven tekst is: &quot;Deze component is opgenomen via het pari-knooppunt.&quot;
+
    Indien gecontroleerd, zal de Gids van de Component sling gebruiken om dynamisch een component van het resourceType van de kindknoop (niet-bestaande middel) te omvatten.
 
    * weergegeven tekst is: &quot;Deze component wordt dynamisch opgenomen.&quot;
+
    De optie Standaard is uitgeschakeld.
 
 ### Interacties publiceren {#publish-interactions}
@@ -122,7 +124,7 @@ Wanneer u de handleiding gebruikt op een publicatie-instantie, kunt u de compone
 
 >[!NOTE]
 >
->Houd er rekening mee dat als SRP standaard op [JSRP](jsrp.md)blijft staan, UGC die op de publicatieinstantie is ingevoerd, alleen zichtbaar is op de publicatie-instantie en *niet* zichtbaar is vanaf de [moderatieconsole](moderate-ugc.md) op de auteurinstantie.
+>Houd er rekening mee dat als SRP standaard op [JSRP](jsrp.md)blijft staan, UGC dat op de publicatieinstantie is ingevoerd, alleen zichtbaar is op publicatie en *niet* zichtbaar is vanaf de [moderatieconsole](moderate-ugc.md) op de auteurinstantie.
 
 ## Client-Side bibliotheken {#client-side-libraries}
 
@@ -171,7 +173,9 @@ De component comments als voorbeeld gebruiken voor de auteur of de publicatie-in
 
 1. Er zijn nu drie tabbladen voor sjablonen, CSS en gegevens.
 
-![chlimage_1-408](assets/chlimage_1-408.png) ![chlimage_1-409](assets/chlimage_1-409.png)
+![community-component5](assets/community-component5.png)
+
+![community-component6](assets/community-component6.png)
 
 ### Tabblad Sjablonen {#templates-tab}
 

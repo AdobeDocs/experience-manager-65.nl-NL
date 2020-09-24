@@ -5,12 +5,15 @@ description: Verleen beperkte toegang tot regelredacteur om gebruikersgroepen te
 seo-description: Verleen beperkte toegang tot regelredacteur om gebruikersgroepen te selecteren.
 uuid: efa2570a-20ac-4b43-8a0e-38247f84d02f
 content-type: reference
-topic-tags: develop
+topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ab694a93-00d2-44d7-8ded-68ab2ad50693
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+workflow-type: tm+mt
+source-wordcount: '328'
+ht-degree: 0%
 
 ---
 
@@ -19,14 +22,14 @@ source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
 
 ## Overzicht {#overview}
 
-U kunt verschillende typen gebruikers hebben met verschillende vaardigheden die werken met Adaptieve formulieren. Hoewel ervaren gebruikers de juiste kennis hebben om met scripts en complexe regels te werken, kunnen er gebruikers op basisniveau zijn die alleen met de indeling en basiseigenschappen van adaptieve formulieren moeten werken.
+U kunt verschillende typen gebruikers hebben met verschillende vaardigheden die werken met Adaptive Forms. Hoewel ervaren gebruikers de juiste kennis hebben om met scripts en complexe regels te werken, kunnen er gebruikers op basisniveau zijn die alleen met de indeling en basiseigenschappen van adaptieve formulieren moeten werken.
 
-Met AEM Forms kunt u de toegang tot regeleditors beperken tot gebruikers op basis van hun rol of functie. In de Adaptive montages van de Dienst van de Configuratie van Vormen, kunt u de [gebruikersgroepen](/help/sites-administering/security.md) specificeren die tot regelredacteur kunnen bekijken en toegang hebben.
+AEM Forms staat u toe om de toegang van de regelredacteur tot gebruikers te beperken die op hun rol of functie wordt gebaseerd. In de Adaptive Forms Configuration Service-instellingen kunt u de [gebruikersgroepen](/help/sites-administering/security.md) opgeven die de regeleditor kunnen weergeven en openen.
 
 ## Geef gebruikersgroepen op die toegang kunnen krijgen tot de regeleditor {#specify-user-groups-that-can-access-rule-editor}
 
 1. Meld u als beheerder aan bij AEM Forms.
-1. Klik in de auteurinstantie op ![](assets/adobeexperiencemanager.png)adobeexperienceManagerAdobe Experience Manager > Tools ![hammer](assets/hammer.png) > Operations > Web Console. De webconsole wordt in een nieuw venster geopend.
+1. Klik in de auteurinstantie op ![](assets/adobeexperiencemanager.png)adobeexperienceAdobe Experience Manager > ![Tools hammer](assets/hammer.png) > Operations > Web Console. De webconsole wordt in een nieuw venster geopend.
 
    ![1-2](assets/1-2.png)
 

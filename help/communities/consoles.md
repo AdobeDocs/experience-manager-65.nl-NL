@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 5fa9ee8b-5893-4ae9-a986-bfdbb00f355f
 translation-type: tm+mt
-source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
+source-git-commit: 6be0aa7c3f6b21ad26221289a6cca2b4615ed3f4
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '343'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Communityconsoles {#communities-consoles}
 
-De consoles van AEM Communities, beschikbaar in het auteursmilieu van het globale navigatievenster, verleent toegang tot administratieve taken zoals:
+De AEM Communities-consoles, die beschikbaar zijn in de ontwerpomgeving van het algemene navigatievenster, bieden toegang tot beheertaken zoals:
 
 * [Een community-site maken](sites-console.md)
 * Groepen [toevoegen](groups.md) die op de site zijn genest
@@ -41,8 +41,6 @@ In de auteursomgeving, na het aanmelden met beheerdervoorrechten, zijn de `Commu
 
 ## Globaal navigatievenster {#global-navigation-panel}
 
-![chlimage_1-91](assets/chlimage_1-91.png)
-
 Selecteer het `Adobe Experience Manager` pictogram in de linkerbovenhoek om het algemene navigatievenster te openen en toegang te krijgen tot twee pictogrammen:
 
 * [Navigatieconsole](#navigation-console)
@@ -52,7 +50,7 @@ Selecteer het `Adobe Experience Manager` pictogram in de linkerbovenhoek om het 
 
 Om tot de diverse consoles van Gemeenschappen, van globale navigatie toegang te hebben selecteer **navigatie, Gemeenschappen**.
 
-![chlimage_1-92](assets/chlimage_1-92.png)
+![gemeenschappen](assets/communities.png)
 
 * [Sites](sites-console.md)
 

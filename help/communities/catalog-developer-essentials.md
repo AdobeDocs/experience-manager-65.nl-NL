@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 542467ef-3793-4347-8424-c365c5a166f6
 translation-type: tm+mt
-source-git-commit: 82affd528f2526384b319fe89082e0f574ab5855
+source-git-commit: 41de9fff615b5b2f77d835740dfb1d33aa81e59b
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 3%
@@ -104,13 +104,13 @@ Het voorbeeld van de [zelfstudie](getting-started-enablement.md)Enablement gebru
 
 * De communitysite opnieuw publiceren
 
-![chlimage_1-189](assets/chlimage_1-189.png)
+![configure-catalog](assets/configure-catalog.png)
 
 #### Label-id&#39;s vóór filter {#pre-filter-tagids}
 
 De [tagIDs](../../help/sites-developing/framework.md#tagid) vóór het filter moet exact overeenkomen met de tags die zijn toegepast op de instellingsbronnen. Deze worden in de `resources` map voor de site weergegeven als de waarden van de eigenschap `se_resource-tags`.
 
-![chlimage_1-190](assets/chlimage_1-190.png)
+![configure-filters](assets/configure-catalog1.png)
 
 ### Referentie-API&#39;s {#reference-apis}
 
@@ -118,5 +118,5 @@ De [tagIDs](../../help/sites-developing/framework.md#tagid) vóór het filter mo
 
 * [API voor rapportage](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/api/package-summary.html)
 
-* [Analytics API rapporteren](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/analytics/api/package-summary.html)
+* [API voor analyse van rapporten](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/analytics/api/package-summary.html)
 

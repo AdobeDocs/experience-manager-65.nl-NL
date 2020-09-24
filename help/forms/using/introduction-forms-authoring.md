@@ -6,11 +6,11 @@ seo-description: AEM Forms biedt gebruiksvriendelijke maar toch krachtige interf
 uuid: 3b150507-41b9-47c2-a94c-f85b903b2274
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: introduction
+topic-tags: introduction, author
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 68ea2335a8466c3c23b766efb1a04b6a38d7f670
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
 workflow-type: tm+mt
 source-wordcount: '3027'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Met adaptieve formulieren kunt u aantrekkelijke, responsieve, dynamische en adap
 
 * **Met een XDP-formuliersjabloon** is een ideaal formuliermodel als u investeert in XFA-formulieren of XDP-formulieren. Dit biedt een directe manier om uw XFA-formulieren om te zetten in adaptieve formulieren. Bestaande XFA-regels blijven behouden in de bijbehorende adaptieve formulieren. De resulterende adaptieve formulieren ondersteunen XFA-constructies, zoals validaties, gebeurtenissen, eigenschappen en patronen.
 
-* **Gebruikend een Definitie van het Schema van XML (XSD) of een schema JSON van het Schema** XML en JSON- schema&#39;s vertegenwoordigen de structuur waarin het gegeven wordt geproduceerd of door het achterste deelsysteem in uw organisatie verbruikt. U kunt het schema koppelen aan een adaptief formulier en de elementen ervan gebruiken om dynamische inhoud toe te voegen aan het aangepaste formulier. De elementen van het schema zijn beschikbaar voor gebruik op het tabblad Gegevensmodelobjecten van de browser Inhoud wanneer u adaptieve formulieren maakt.
+* **Het gebruiken van een Definitie van het Schema van XML (XSD) of een schema JSON van het Schema** XML en JSON- schema&#39;s vertegenwoordigen de structuur waarin het gegeven wordt geproduceerd of door het achterste deelsysteem in uw organisatie verbruikt. U kunt het schema koppelen aan een adaptief formulier en de elementen ervan gebruiken om dynamische inhoud toe te voegen aan het aangepaste formulier. De elementen van het schema zijn beschikbaar voor gebruik op het tabblad Gegevensmodelobjecten van de browser Inhoud wanneer u adaptieve formulieren maakt.
 
 * **Geen of geen formuliermodel** gebruiken Aangepaste formulieren die met deze optie zijn gemaakt, gebruiken geen formuliermodel. De XML-gegevens die op basis van dergelijke formulieren worden gegenereerd, hebben een vlakke structuur met velden en bijbehorende waarden.
 
@@ -60,7 +60,7 @@ Met de zijbalk kunt u
 
 * Zie formulierinhoud zoals deelvensters, componenten, velden en indeling.
 * Eigenschappen van componenten bewerken.
-* Zoek, bekijk en gebruik middelen in uw DAM-opslagplaats (AEM Digital Asset Management).
+* Zoek, bekijk en gebruik middelen in uw AEM DAM-opslagplaats (Digital Asset Management).
 * Voeg componenten toe aan uw formulier.
 
 ![Zijbalk](assets/sidebar-comps.png)
@@ -146,7 +146,7 @@ Hiermee kunt u formuliermodelelementen naar het aangepaste formulier slepen en n
   </tr>
   <tr>
    <td>Bestandsbijlage</td>
-   <td><p>Hiermee voegt u een knop toe waarmee gebruikers door ondersteunende documenten kunnen bladeren en deze aan een formulier kunnen toevoegen.</p> <p><strong>Opmerking: </strong>De component Bestandsbijlage ondersteunt een vooraf gedefinieerde set bestandsindelingen in adaptieve formulieren die zijn ingeschakeld voor Adobe-ondertekening. Zie <a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">Ondersteunde bestandsindelingen</a>voor meer informatie.</p> </td>
+   <td><p>Hiermee voegt u een knop toe waarmee gebruikers door ondersteunende documenten kunnen bladeren en deze aan een formulier kunnen toevoegen.</p> <p><strong>Opmerking: </strong>De component Bestandsbijlage ondersteunt een vooraf gedefinieerde set bestandsindelingen in adaptieve formulieren die zijn ingeschakeld voor Adobe Sign. Zie <a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">Ondersteunde bestandsindelingen</a>voor meer informatie.</p> </td>
   </tr>
   <tr>
    <td>Lijst met bestandsbijlagen</td>
@@ -182,7 +182,7 @@ Hiermee kunt u formuliermodelelementen naar het aangepaste formulier slepen en n
   </tr>
   <tr>
    <td>Deelvenster</td>
-   <td><p>Hiermee voegt u een deelvenster of subdeelvenster toe.</p> <p>U kunt ook een deelvenstercomponent toevoegen vanaf de werkbalk van het bovenliggende deelvenster met de knop Deelvenster <span class="uicontrol"></code> toevoegen. Op dezelfde manier kunt u een paneelspecifieke toolbar toevoegen gebruikend de <span class="uicontrol">Add knoop van de Toolbar</code> van het Comité. U kunt de positie van de paneelwerkbalk configureren met behulp van het dialoogvenster Deelvenster bewerken.</code></code></p> </td>
+   <td><p>Hiermee voegt u een deelvenster of subdeelvenster toe.</p> <p>U kunt ook een deelvenstercomponent toevoegen vanaf de werkbalk van het bovenliggende deelvenster met de knop Deelvenster <span class="uicontrol"></code> toevoegen. U kunt ook een paneelspecifieke werkbalk toevoegen met de knop Werkbalk <span class="uicontrol">van deelvenster</code> toevoegen. U kunt de positie van de paneelwerkbalk configureren met behulp van het dialoogvenster Deelvenster bewerken.</code></code></p> </td>
   </tr>
   <tr>
    <td>Wachtwoordvak</td>
@@ -295,7 +295,7 @@ U kunt de volgende tips en trucs gebruiken bij het werken met adaptieve formulie
    1. Zoeken en tikken **[!UICONTROL Adaptive Forms Configuration Service]**.
    1. Schakel in het dialoogvenster Adaptive Forms Configuration Service de optie **[!UICONTROL Make File Names Unique]**. Standaard is dit uitgeschakeld.
 
-* Als u gebruikers wilt toestaan een PDF toe te voegen met een Safari-browser, zorgt u ervoor dat **application/pdf** wordt toegevoegd aan de eigenschap Ondersteunde bestandstypen van de component Bestandsbijlage. Adaptieve formulieren die zijn gemaakt met de vorige versie van AEM Forms bevatten mogelijk **.pdf** in plaats van **application/pdf** in de eigenschap Ondersteunde bestandstypen.
+* Als u gebruikers wilt toestaan een PDF toe te voegen met een Safari-browser, zorgt u ervoor dat **application/pdf** wordt toegevoegd aan de eigenschap Ondersteunde bestandstypen van de component Bestandsbijlage. Adaptieve formulieren die zijn gemaakt met de vorige AEM Forms-versie bevatten mogelijk **.pdf** in plaats van **application/pdf** in de eigenschap Ondersteunde bestandstypen.
 
 Zie [Aanbevolen werkwijzen voor het werken met adaptieve formulieren](/help/forms/using/adaptive-forms-best-practices.md)voor meer tips over het werken met adaptieve formulieren.
 
@@ -311,7 +311,7 @@ De pagina-werkbalk boven in het scherm bevat opties waarmee u een voorbeeld van 
 
 * **Pagina-informatie** ![thema-opties](assets/theme-options.png): Hiermee kunt u pagina-eigenschappen weergeven, een formulier publiceren/publiceren, een formulierwerkstroom starten en het formulier openen in een klassieke gebruikersinterface.
 
-* **Emulatorliniaal**![](assets/ruler.png): Hiermee kunt u het uiterlijk van het formulier emuleren voor verschillende weergavegrootten, zoals tablets en telefoons.
+* **Emulatorliniaal**![](assets/ruler.png): Hiermee kunt u het uiterlijk van een formulier emuleren voor verschillende weergavegrootten, zoals tablets en telefoons.
 
 * **Bewerken**: Hiermee kunt u andere modi selecteren, zoals: **[!UICONTROL Edit]**, **[!UICONTROL Style]**, **[!UICONTROL Developer]** en **[!UICONTROL Design]**.
 
@@ -335,7 +335,7 @@ Wanneer u een component selecteert, ziet u een werkbalk waarin u de component ku
 
 A.**Configureren**: Wanneer u tikt **[!UICONTROL Configure]**, zijn componenteigenschappen zichtbaar in de zijbalk. Als u deze eigenschappen configureert, kunt u de ervaring voor het vastleggen van gegevens aanpassen. U kunt de elementnaam van de component wijzigen en de labeltekst opgeven in het veld Titel van de component. Met elementnaam kunt u waarden vastleggen die gebruikers invoeren met de component. In de componenteigenschappen geeft u het gedrag van de component op en beheert u de gebruikersinvoer. Configureer eigenschappen in de zijbalk om gebruikersgegevens vast te leggen en te gebruiken voor verdere verwerking. Met eigenschappen voor adaptieve formuliercontainers kunt u clientbibliotheken, indelingen, thema&#39;s, Document of Record-instellingen, opslaginstellingen, verzendinstellingen en metagegevensinstellingen opgeven.
 
-B.**Kopiëren**: Met de kopieeroptie kunt u een component kopiëren en op andere plaatsen in het formulier plakken. Wanneer u een component plakt, krijgt de geplakte component een nieuwe elementnaam maar behoudt deze de eigenschappen van de gekopieerde component.
+B.**Kopiëren**: Met de optie Kopiëren kunt u een component kopiëren en op andere plaatsen in het formulier plakken. Wanneer u een component plakt, krijgt de geplakte component een nieuwe elementnaam maar behoudt deze de eigenschappen van de gekopieerde component.
 
 C.**Knippen**: Met de optie Knippen kunt u een component in het aangepaste formulier van de ene naar de andere plaats verplaatsen.
 
@@ -349,7 +349,7 @@ G. **Regels** bewerken: Hiermee opent u de regeleditor. Zie [Regeleditor](../../
 
 H. **Groep**: Hiermee kunt u meerdere componenten selecteren als u meerdere componenten tegelijk wilt knippen, kopiëren of plakken.
 
-I. **Bovenliggend element**: Hiermee kunt u het bovenliggende element van een component selecteren. Een tekstveld bevindt zich bijvoorbeeld binnen een subsectie, die zich in een sectie bevindt. De sectie bevindt zich in het hoofddeelvenster van de hulplijn en de adaptieve formuliercontainer is de bovenliggende laag van een hoofddeelvenster van de hulplijn. Voor een component, kunt u alle opties zien met hiërarchie gesorteerd onderaan-op.
+I. **Bovenliggend element**: Hiermee kunt u het bovenliggende element van een component selecteren. Een tekstveld bevindt zich bijvoorbeeld binnen een subsectie, die zich in een sectie bevindt. De sectie bevindt zich in het hoofddeelvenster van de hulplijn en de adaptieve formuliercontainer is het bovenliggende element van een hoofddeelvenster van de hulplijn. Voor een component, kunt u alle opties zien met hiërarchie gesorteerd onderaan-op.
 
 Als u bijvoorbeeld tikt **[!UICONTROL Parent]** voor een tekstvak, kunt u zien:
 

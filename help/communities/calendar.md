@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 70fa0b9c-cb98-45c4-9c94-bef4a9f3741e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f62fb1eb760ddd7baee9ba5a631ff4b921e2d08b
+source-git-commit: 41de9fff615b5b2f77d835740dfb1d33aa81e59b
 workflow-type: tm+mt
 source-wordcount: '1170'
 ht-degree: 0%
@@ -42,15 +42,15 @@ Ga voor de benodigde informatie naar [Community Components Basics](/help/communi
 
 Wanneer de [vereiste client-side bibliotheken](/help/communities/calendar-basics-for-developers.md#essentials-for-client-side) worden opgenomen, wordt de `Calendar` component op deze manier weergegeven.
 
-![chlimage_1-112](assets/chlimage_1-112.png)
+![agendacomponent](assets/calendar-component.png)
 
 ### Kalender configureren {#configuring-calendar}
 
 Selecteer de geplaatste `Calendar` component die u wilt openen en selecteer het `Configure` pictogram waarmee het dialoogvenster Bewerken wordt geopend.
 
-![chlimage_1-113](assets/chlimage_1-113.png)
+![vormen](assets/configure-new.png)
 
-![chlimage_1-114](assets/chlimage_1-114.png)
+![configure-Kalender](assets/configure-calendar1.png)
 
 #### Het tabblad Instellingen {#settings-tab}
 
@@ -193,7 +193,7 @@ Andere vaardigheden hangen af van het feit of de bezoeker van de site een modera
 
 Wanneer de ondertekende in gebruiker moderator of beheerdervoorrechten heeft, kunnen zij [matigingstaken](/help/communities/moderate-ugc.md) (zoals toegelaten door de configuratie van de component) op alle kalendergebeurtenissen en commentaren uitvoeren die aan een gebeurtenis worden gepost.
 
-![chlimage_1-115](assets/chlimage_1-115.png)
+![moderatorvisie](assets/moderators-view.png)
 
 #### Leden {#members}
 
@@ -207,15 +207,15 @@ Zij kunnen met name:
 * Verwijder hun eigen agendagebeurtenis of commentaar
 * Andere kalendergebeurtenissen of opmerkingen markeren
 
-![chlimage_1-116](assets/chlimage_1-116.png)
+![create-event](assets/configure-calendar2.png)
 
-![chlimage_1-117](assets/chlimage_1-117.png)
+![gebeurtenis-post](assets/configure-calendar3.png)
 
 #### Anoniem {#anonymous}
 
 Sitebezoekers die niet zijn aangemeld, kunnen alleen geposte kalendergebeurtenissen lezen, deze vertalen indien deze worden ondersteund, maar kunnen geen gebeurtenis of opmerking toevoegen en de gebeurtenissen of opmerkingen van anderen niet markeren.
 
-![chlimage_1-118](assets/chlimage_1-118.png)
+![anonieme gebruikersweergave](assets/anonymous-user-view1.png)
 
 ## Additional Information {#additional-information}
 

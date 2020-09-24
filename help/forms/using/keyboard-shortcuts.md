@@ -1,20 +1,23 @@
 ---
-title: Sneltoetsen voor AEM-formulieren
-seo-title: Sneltoetsen voor AEM-formulieren
+title: AEM Forms-sneltoetsen
+seo-title: AEM Forms-sneltoetsen
 description: In dit artikel worden de sneltoetsen weergegeven die kunnen worden gebruikt met Adaptieve formuliereditor, Thema-editor, Inhoudsbrowser en Correspondentiebeheer voor Windows- en Macintosh-besturingssystemen.
 seo-description: In dit artikel worden de sneltoetsen weergegeven die kunnen worden gebruikt met de Aangepaste formuliereditor, Thema-editor, Inhoudsbrowser en Correspondentiebeheer.
 uuid: 1a16c2e6-c0f1-42e0-9ab4-692f3e58eeaf
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 content-type: reference
-topic-tags: correspondence-management
+topic-tags: author, correspondence-management
 discoiquuid: 010e3639-b1a9-40fb-8615-7d18c4784b73
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+workflow-type: tm+mt
+source-wordcount: '1172'
+ht-degree: 10%
 
 ---
 
 
-# Sneltoetsen voor AEM-formulieren {#aem-forms-keyboard-shortcuts}
+# AEM Forms-sneltoetsen {#aem-forms-keyboard-shortcuts}
 
 In dit artikel worden de sneltoetsen weergegeven die kunnen worden gebruikt met Adaptieve formuliereditor, Thema-editor, Inhoudsbrowser en Correspondentiebeheer voor Windows- en Macintosh-besturingssystemen.
 
@@ -49,11 +52,12 @@ In dit artikel worden de sneltoetsen weergegeven die kunnen worden gebruikt met 
 >
 >* Windows: Houd Ctrl ingedrukt en klik op de gewenste componenten.
 >* MAC OS: Command en klikken op de vereiste componenten.
+
 >
 
 
 
-## Thema-editor {#themeeditor}
+## Thema-editor  {#themeeditor}
 
 | **Actie** | **Sneltoets in Windows** | **Sneltoets voor Mac OS** |
 |---|---|---|
@@ -67,7 +71,7 @@ In dit artikel worden de sneltoetsen weergegeven die kunnen worden gebruikt met 
 >
 >Sneltoetsen gemarkeerd met een &#39;&amp;ast&#39;; werken zowel met de Ctrl- als met Command-toets in Mac OS.
 
-## Inhoudsbrowser {#contentbrowser}
+## Inhoudsbrowser  {#contentbrowser}
 
 | **Actie** | **Sneltoets in Windows** | **Sneltoets voor Mac OS** |
 |---|---|---|
@@ -75,8 +79,8 @@ In dit artikel worden de sneltoetsen weergegeven die kunnen worden gebruikt met 
 | Alle accordeons samenvouwen in de structuur Formulierobjecten van de inhoudbrowser wanneer deze de focus heeft | Ctrl+A om alle accordeons te selecteren, gevolgd door Pijl-links, die moeten worden samengevouwen | Command+A om alle accordeons te selecteren, gevolgd door Pijl-links, die moeten worden samengevouwen |
 | De geselecteerde accordeon uitbreiden in de formulierobjectstructuur | Pijl-rechts | Pijl-rechts |
 | Geselecteerde accordeon samenvouwen in de formulierobjectstructuur | Pijl-links | Pijl-links |
-| Selecteer het volgende item in de structuur Formulierobjecten | Pijl-omlaag | Pijl-omlaag |
-| Selecteer het vorige item in de structuur Formulierobjecten | Pijl-omhoog | Pijl-omhoog |
+| Volgend item selecteren in de Forms Objects tree | Pijl-omlaag | Pijl-omlaag |
+| Vorig item selecteren in de Forms-objectenstructuur | Pijl-omhoog | Pijl-omhoog |
 
 [1] Vervangt Ctrl + Pijl-rechts voor Windows en Command + Pijl-rechts voor Mac OS.\
 [2] Vervangt Ctrl + Pijl-links voor Windows en Command + Pijl-links voor Mac OS.
@@ -86,7 +90,7 @@ In dit artikel worden de sneltoetsen weergegeven die kunnen worden gebruikt met 
 Deze sectie bevat een lijst met verschillende toetsenborden en toegankelijkheidssneltoetsen die u kunt gebruiken in de teksteditor van Correspondence Management. U kunt deze sneltoetsen gebruiken als u:
 
 * Een [tekstelement](texts-interactive-communications.md) maken of bewerken
-* Een tekstmodule bewerken nadat u op het desbetreffende pictogram Bewerken ( ![bewerkingsmodule](assets/edittextmodule.png)) hebt getikt tijdens het [maken van een overeenkomst](/help/forms/using/create-correspondence.md).
+* Een tekstmodule bewerken nadat u op het betreffende pictogram Bewerken ( ![bewerkingsmodule](assets/edittextmodule.png)) hebt getikt tijdens het [maken van een overeenkomst](/help/forms/using/create-correspondence.md).
 
 ### Tekst selecteren en de cursor verplaatsen {#text-selection-and-moving-the-cursor-around}
 

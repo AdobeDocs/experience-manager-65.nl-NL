@@ -1,15 +1,15 @@
 ---
 title: API's voor het werken met verzonden formulieren op een formulierportal
 seo-title: API's voor het werken met verzonden formulieren op een formulierportal
-description: AEM Forms bevatten API's waarmee u gegevens over verzonden formulieren in de portal Formulieren kunt opvragen en acties kunt uitvoeren.
-seo-description: AEM Forms bevatten API's waarmee u gegevens over verzonden formulieren in de portal Formulieren kunt opvragen en acties kunt uitvoeren.
+description: AEM Forms biedt API's die u kunt gebruiken om query's uit te voeren en acties uit te voeren voor verzonden formuliergegevens in de portal Formulieren.
+seo-description: AEM Forms biedt API's die u kunt gebruiken om query's uit te voeren en acties uit te voeren voor verzonden formuliergegevens in de portal Formulieren.
 uuid: c47c8392-e5a9-4c40-b65e-4a7f379a6b45
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: developer-reference
+topic-tags: publish, developer-reference
 discoiquuid: 9457effd-3595-452f-a976-ad9eda6dc909
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
 workflow-type: tm+mt
 source-wordcount: '570'
 ht-degree: 5%
@@ -19,7 +19,7 @@ ht-degree: 5%
 
 # API&#39;s voor het werken met verzonden formulieren op een formulierportal {#apis-to-work-with-submitted-forms-on-forms-portal}
 
-AEM Forms bevatten API&#39;s die u kunt gebruiken voor het zoeken naar formuliergegevens die via de portal Formulieren worden verzonden. Bovendien kunt u opmerkingen plaatsen of eigenschappen van verzonden formulieren bijwerken met de API&#39;s die in dit document worden beschreven.
+AEM Forms biedt API&#39;s die u kunt gebruiken voor het zoeken naar formuliergegevens die via de portal Formulieren worden verzonden. Bovendien kunt u opmerkingen plaatsen of eigenschappen van verzonden formulieren bijwerken met de API&#39;s die in dit document worden beschreven.
 
 >[!NOTE]
 >

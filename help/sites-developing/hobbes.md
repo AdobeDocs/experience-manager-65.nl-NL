@@ -7,11 +7,14 @@ uuid: 408a60b5-cba9-4c9f-abd3-5c1fb5be1c50
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
-topic-tags: testing
+topic-tags: components, testing
 discoiquuid: 938100ad-94f9-408a-819d-72657dc115f7
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b3e1493811176271ead54bae55b1cd0cf759fe71
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+workflow-type: tm+mt
+source-wordcount: '751'
+ht-degree: 1%
 
 ---
 
@@ -20,13 +23,13 @@ source-git-commit: b3e1493811176271ead54bae55b1cd0cf759fe71
 
 >[!NOTE]
 >
->Vanaf AEM 6.5 is het testframework voor de gebruikersinterface van hobbes.js afgekeurd. Adobe is niet van plan om het verder te verbeteren en raadt klanten aan om de automatisering van Selenium te gebruiken.
+>Vanaf AEM 6.5 is het testframework voor de gebruikersinterface van hobbes.js afgekeurd. Adobe is niet van plan haar verder te verbeteren en raadt klanten aan seleniumautomatisering te gebruiken.
 >
-> Zie [Vervangen en Verwijderde functies](/help/release-notes/deprecated-removed-features.md).
+>Zie [Vervangen en Verwijderde functies](/help/release-notes/deprecated-removed-features.md).
 
 AEM biedt een raamwerk voor het automatiseren van tests voor uw AEM UI. Met behulp van het framework schrijft en voert u tests voor de gebruikersinterface rechtstreeks in een webbrowser uit. Het framework biedt een javascript API voor het maken van tests.
 
-Het AEM-testframework gebruikt Hobbes.js, een testbibliotheek die in Javascript is geschreven. Het Hobbes.js-framework is ontwikkeld voor het testen van AEM als onderdeel van het ontwikkelingsproces. Het framework is nu beschikbaar voor gebruik door het publiek om uw AEM-toepassingen te testen.
+Het AEM testframework gebruikt Hobbes.js, een testbibliotheek die in Javascript is geschreven. Het Hobbes.js-framework is ontwikkeld voor het testen van AEM als onderdeel van het ontwikkelingsproces. Het framework is nu beschikbaar voor gebruik door het publiek om uw AEM toepassingen te testen.
 
 >[!NOTE]
 >
@@ -121,7 +124,7 @@ Zie de documentatie [van de](https://helpx.adobe.com/experience-manager/6-5/site
 
    >[!NOTE]
    >
-   >**Alleen AEM-formulieren**
+   >**Alleen AEM Forms**
    >
    >
    >Als u adaptieve formulieren wilt testen, voegt u de volgende waarden toe aan de categorieën en afhankelijkheden. Bijvoorbeeld:

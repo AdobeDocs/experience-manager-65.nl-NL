@@ -5,12 +5,12 @@ description: Met thema's kunt u een adaptief formulier of interactieve communica
 seo-description: Met thema's kunt u een adaptief formulier of interactieve communicatie stileren en een visuele identiteit geven. U kunt een thema delen op elk gewenst aantal adaptieve formulieren of interactieve communicatie.
 uuid: 88b6b6fd-181b-48c5-ac15-2b37592bd14b
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: interactive-communications
+topic-tags: develop, interactive-communications
 content-strategy: max-2018
 discoiquuid: 770e9174-b648-462a-abe9-05fefa967d86
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bd70508b361ac8b62ebc0344538a18369a075f3e
+source-git-commit: a929252a13f66da8ac3e52aea0655b12bdd1425f
 workflow-type: tm+mt
 source-wordcount: '6067'
 ht-degree: 0%
@@ -33,13 +33,13 @@ U kunt:
 
 ## Een thema maken, downloaden of uploaden {#creating-downloading-or-uploading-a-theme}
 
-Met AEM Forms kunt u thema&#39;s maken, downloaden of uploaden. Net als andere elementen, zoals formulieren, documenten en letters, wordt een thema gemaakt. Het thema wordt opgeslagen als een afzonderlijke entiteit, compleet met meta-eigenschappen zoals formulieren. Thema&#39;s die een afzonderlijke entiteit zijn, maken hergebruik in meerdere adaptieve vormen en interactieve communicatie mogelijk. U kunt een thema ook naar een andere instantie van AEM Forms verplaatsen en opnieuw gebruiken.
+Met AEM Forms kunt u thema&#39;s maken, downloaden of uploaden. Net als andere elementen, zoals formulieren, documenten en letters, wordt een thema gemaakt. Het thema wordt opgeslagen als een afzonderlijke entiteit, compleet met meta-eigenschappen zoals formulieren. Thema&#39;s die een afzonderlijke entiteit zijn, maken hergebruik in meerdere adaptieve vormen en interactieve communicatie mogelijk. U kunt een thema ook naar een andere AEM Forms-instantie verplaatsen en opnieuw gebruiken.
 
 ### Een thema maken {#creating-a-theme}
 
 Voer de volgende stappen uit om een thema te maken:
 
-1. Klik op **Adobe Experience Manager**, klik op **Formulieren** en klik vervolgens op **Thema&#39;s**.
+1. Klik op **Adobe Experience Manager**, klik op **Forms** en klik vervolgens op **Thema&#39;s**.
 
 1. Klik op de pagina Thema&#39;s op **Maken > Thema**.
 Er wordt een wizard gestart om een thema te maken.
@@ -56,9 +56,9 @@ Er wordt een wizard gestart om een thema te maken.
 
 ### Een thema downloaden {#downloading-a-theme}
 
-U kunt thema&#39;s exporteren als ZIP-bestand en deze gebruiken in andere projecten of AEM-instanties. Een thema downloaden:
+U kunt thema&#39;s exporteren als ZIP-bestand en deze gebruiken in andere projecten of AEM. Een thema downloaden:
 
-1. Klik op **Adobe Experience Manager**, klik op **Formulieren** en klik vervolgens op **Thema&#39;s**.
+1. Klik op **Adobe Experience Manager**, klik op **Forms** en klik vervolgens op **Thema&#39;s**.
 
 1. Selecteer **een thema op de pagina Thema&#39;s en klik op** Downloaden ****. Er wordt een dialoogvenster weergegeven met de details van het thema.
 
@@ -74,7 +74,7 @@ U kunt gemaakte thema&#39;s gebruiken met voorinstellingen voor stijlen voor uw 
 
 Een thema uploaden:
 
-1. Klik op **Adobe Experience Manager**, klik op **Formulieren** en klik vervolgens op **Thema&#39;s**.
+1. Klik op **Adobe Experience Manager**, klik op **Forms** en klik vervolgens op **Thema&#39;s**.
 
 1. Klik op de pagina Thema&#39;s op **Maken > Bestand uploaden**.
 1. Blader in de vraag Bestand uploaden naar en selecteer een themapakket op uw computer en klik op **Uploaden**.
@@ -195,7 +195,7 @@ Lijst met meta-eigenschappen van een thema (bevindt zich op de pagina met eigens
 
 ## Over de Thema-editor {#about-the-theme-editor}
 
-AEM Forms worden geleverd bij de Thema-editor. Het is een handige interface voor zakelijke gebruikers en webontwerpers/ontwikkelaars die functies biedt die vereist zijn om de opmaak van verschillende adaptieve formulieren en interactieve communicatie-elementen eenvoudig op te geven. Wanneer u een thema maakt, wordt het opgeslagen als een afzonderlijke entiteit, zoals formulieren, interactieve communicatie, letters, documentfragmenten en gegevenswoordenboeken.
+AEM Forms wordt geleverd met Thema Editor. Het is een handige interface voor zakelijke gebruikers en webontwerpers/ontwikkelaars die functies biedt die vereist zijn om de opmaak van verschillende adaptieve formulieren en interactieve communicatie-elementen eenvoudig op te geven. Wanneer u een thema maakt, wordt het opgeslagen als een afzonderlijke entiteit, zoals formulieren, interactieve communicatie, letters, documentfragmenten en gegevenswoordenboeken.
 
 In de Thema-editor kunt u stijlen van de componenten die in een thema zijn opgemaakt, aanpassen. U kunt de weergave van een formulier of interactieve communicatie op een apparaat aanpassen.
 
@@ -219,12 +219,12 @@ Een specifieke component is van invloed op objecten van de specifieke categorie.
       Wanneer u alle veldcomponenten met een specifieke achtergrondkleur aanpast, nemen alle velden, zoals leeftijd, naam en adres, de achtergrondkleur over. Wanneer u een numeriek vak selecteert, zoals de leeftijd, en de breedte en breedte van alle numerieke vakken zoals de leeftijd verkleint, wordt het aantal personen in een familie verminderd. De breedte van tekstvakken wordt niet gewijzigd.
 
    * **Status:** Hiermee kunt u stijlen van een object in een specifieke status aanpassen. U kunt bijvoorbeeld opgeven hoe een object eruitziet als het zich in de standaardtoestand, de standaardfocus, de uitgeschakelde toestand, de aanwijsstatus of de foutstatus bevindt.
-   * **Eigenschapcategorieën:** De stijleigenschappen worden in verschillende categorieën verdeeld. Bijvoorbeeld afmeting en positie, tekst, achtergrond, rand en effecten. Onder elke categorie geeft u opmaakgegevens op. Onder Achtergrond kunt u bijvoorbeeld Achtergrondkleur en Afbeelding en Verloop opgeven.
+   * **Eigenschapcategorieën:** De stijleigenschappen worden in verschillende categorieën verdeeld. Bijvoorbeeld Dimension en positie, Tekst, Achtergrond, Rand en Effecten. Onder elke categorie geeft u opmaakgegevens op. Onder Achtergrond kunt u bijvoorbeeld Achtergrondkleur en Afbeelding en Verloop opgeven.
 
    * **Geavanceerd:** Hiermee kunt u aangepaste CSS aan een object toevoegen, die de eigenschappen overschrijft die door visuele besturingselementen worden gedefinieerd als er sprake is van overlapping.
 
    * **CSS** weergeven: Hiermee kunt u CSS van de geselecteerde component weergeven
-   In de zijbalk onder in het scherm staat bovendien een pijl. Als u op de pijl klikt, hebt u nog twee opties: **Simuleer Succes** en **Simuleer Fout.** Deze opties worden samen met de hierboven beschreven opties [hieronder](../../forms/using/themes.md#using-rail)uitgebreid besproken.
+   In de zijbalk onder in het scherm is bovendien een pijl aanwezig. Als u op de pijl klikt, hebt u nog twee opties: **Simuleer Succes** en **Simuleer Fout.** Deze opties worden samen met de hierboven beschreven opties [hieronder](../../forms/using/themes.md#using-rail)uitgebreid besproken.
 
 [ ![Thema-editor met Rail en Canvas gemarkeerd.](assets/themes.png)](assets/themes-1.png) **A.** Zijbalk **B.** Canvas
 
@@ -334,7 +334,7 @@ De knoppen voor Opnieuw/Ongedaan maken verschijnen wanneer u een component opmaa
 
 ## De Thema-editor gebruiken {#using-the-theme-editor}
 
-Met de Thema-editor kunt u een thema bewerken dat u hebt gemaakt of geüpload. Navigeer naar **Formulieren en documenten > Thema**&#39;s, selecteer een thema en open dit. Het thema wordt geopend in de Thema-editor.
+Met de Thema-editor kunt u een thema bewerken dat u hebt gemaakt of geüpload. Navigeer naar **Forms &amp; Documents > Thema**&#39;s, selecteer een thema en open het. Het thema wordt geopend in de Thema-editor.
 
 Zoals hierboven is beschreven, heeft de Thema-editor twee deelvensters: Zijbalk en canvas.
 ![themaeditor](assets/theme-editor.png)
@@ -398,7 +398,7 @@ De opties voor het aanpassen van statusstijlen variëren voor verschillende comp
    <td><strong>Gebruiken</strong></td>
   </tr>
   <tr>
-   <td><p>Afmetingen en positie</p> </td>
+   <td><p>Dimension en positie</p> </td>
    <td><p>Hiermee kunt u de uitlijning, grootte, positionering en plaatsing van componenten in het thema opmaken. </p> <p>De opties zijn weergave-instellingen, opvulling, marge, breedte, hoogte en Z-index.</p> <p>U kunt de modus Lay-out ook gebruiken om de breedte van componenten te definiëren met behulp van een eenvoudige interface voor slepen en neerzetten. Zie De modus Lay-out <a href="../../forms/using/resize-using-layout-mode.md">gebruiken om het formaat van componenten</a>te wijzigen voor meer informatie.</p> </td>
   </tr>
   <tr>
@@ -454,9 +454,9 @@ Voer de volgende stappen uit om de opmaak voor een bepaalde component aan te pas
 
 1. Selecteer **Widget** numeriek vak.
 1. De titel van het zijpaneel verandert in de widget Numerieke vak en bevat opties waarmee u de vormgeving kunt aanpassen.
-Gebruik de optie **Afmeting en positie** in het zijpaneel om de grootte van de component aan te passen. Controleer of de status **Standaard** is.
+Gebruik de optie **Dimension en positie** in het zijpaneel om de grootte van de component aan te passen. Controleer of de status **Standaard** is.
 
-Selecteer in plaats van de widget **Numerieke vak** te selecteren de optie **Veldwidget** op de werkbalk van de component en voer de bovenstaande stappen uit. Wanneer u afmetingen selecteert voor de optie **Veldwidget** , hebben alle tekstvakken behalve het numerieke vak dezelfde grootte.
+Selecteer in plaats van de widget **Numerieke vakken** te selecteren de optie **Veldwidget** op de werkbalk van de component en voer de bovenstaande stappen uit. Wanneer u afmetingen selecteert voor de optie **Veldwidget** , hebben alle tekstvakken behalve het numerieke vak dezelfde grootte.
 
 ### Velden voor een bepaalde status opmaken {#styling-fields-given-state}
 
@@ -489,12 +489,12 @@ U kunt formulieren of interactieve communicatiecomponenten opmaken voor meerdere
 
 ### Weblettertypen in een thema gebruiken {#using-web-fonts-in-a-theme}
 
-U kunt nu lettertypen gebruiken die beschikbaar zijn in een webservice in een adaptief formulier of interactieve communicatie. De [Typekit](https://typekit.com/), de service voor weblettertypen van Adobe, is beschikbaar als een configuratie. Als u Typekit wilt gebruiken, maakt u een kit en lettertypen en haalt u de Kit-id op van de [Typekit-website](https://typekit.com/).
+U kunt nu lettertypen gebruiken die beschikbaar zijn in een webservice in een adaptief formulier of interactieve communicatie. De out-of-the-box, [Typekit](https://typekit.com/), de dienst van het Webdoopvont, is beschikbaar als configuratie. Als u Typekit wilt gebruiken, maakt u een kit en lettertypen en haalt u de Kit-id op van de [Typekit-website](https://typekit.com/).
 
 Voer de volgende stappen uit om Typekit in AEM te configureren:
 
-1. Klik in de auteur op ![](assets/adobeexperiencemanager.png)adobeexperienceManager Adobe Experience Manager > Tools ![hammer](assets/hammer.png) > Deployment > Cloud Servicen.
-1. Navigeer op de pagina **Cloud Servicen** naar **services** van derden > **Typekit** en klik op Nu **** configureren onder Typekit. Als er al een configuratie beschikbaar is, klikt u op de knop **+** om een nieuwe instantie te maken.
+1. Klik in de auteurinstantie op ![](assets/adobeexperiencemanager.png)adobeexperienceAdobe Experience Manager > Tools ![hammer](assets/hammer.png) > Deployment > Cloud Services.
+1. Navigeer op de pagina **Cloud Services** naar **Services** van derden > **Typekit** en klik op Nu **** configureren onder Typekit. Als er al een configuratie beschikbaar is, klikt u op de knop **+** om een nieuwe instantie te maken.
 1. Geef in het dialoogvenster Configuratie **** maken een titel op voor de configuratie en klik op **Maken**.
 
    U wordt opnieuw gericht aan de configuratiepagina.
@@ -513,7 +513,7 @@ Voer de volgende stappen uit om een thema te vormen om de configuratie te gebrui
 
 U kunt de dienst van de themaconfiguratie gebruiken om meer doopvonten aan de themaredacteur toe te voegen. Voer de volgende stappen uit om lettertypen toe te voegen:
 
-1. Meld u aan bij de AEM-webconsole met beheerdersrechten. De URL voor de AEM-webconsole is `https://'[server]:[port]'/system/console/configMgr`.
+1. Meld u aan bij AEM webconsole met beheerdersrechten. URL voor de AEM webconsole is `https://'[server]:[port]'/system/console/configMgr`.
 1. Open **Adaptive Form Theme Configuration Service**.
 
    ![theme-config](assets/theme-config.png)
@@ -569,7 +569,7 @@ Een thema toepassen op een interactieve communicatie:
 
 1. Selecteer in de zijbalk onder **Standaard** uw thema in de vervolgkeuzelijst **Thema** en klik op **Gereed** ![selectievakje](assets/check-button.png)
 
-### Het thema van een formulier wijzigen tijdens runtime {#change-theme-of-a-form-at-runtime}
+### Het thema van een formulier tijdens runtime wijzigen {#change-theme-of-a-form-at-runtime}
 
 Met een thema kunt u verschillende onderdelen van een formulier opmaken. Met de `themeOverride` eigenschap kunt u het thema van een formulier dynamisch wijzigen. Een typische URL van een formulier is:
 
@@ -583,11 +583,11 @@ Met de `themeOverride` optie kunt u een pad naar een thema opgeven. Het wijzigt 
 
 ## Specifieke weergave ophalen met thema&#39;s {#specific-af-appearance}
 
-Met AEM Forms, samen met standaard uit-van-de-doos canvasthema, zijn er vele andere thema&#39;s. Als u een formulier of interactieve communicatie met andere thema&#39;s wilt ontwerpen, alsmede aanvullende wijzigingen, kopieert u het thema uit de map Themabibliotheek. Plak de gekopieerde thema&#39;s buiten de map Themabibliotheek en bewerk het gekopieerde thema op basis van de gewenste wijzigingen.
+Met AEM Forms zijn er, samen met het standaard canvasthema voor buitengebruik, veel andere thema&#39;s. Als u een formulier of interactieve communicatie met andere thema&#39;s wilt ontwerpen, alsmede aanvullende wijzigingen, kopieert u het thema uit de map Themabibliotheek. Plak de gekopieerde thema&#39;s buiten de map Themabibliotheek en bewerk het gekopieerde thema op basis van de gewenste wijzigingen.
 
 Voer de volgende stappen uit om een thema te kopiëren:
 
-1. Navigeer in de ontwerpversie naar **Adobe Experience Manager > Formulieren > Thema**&#39;s.
+1. Navigeer in de ontwerpversie naar **Adobe Experience Manager > Forms > Thema**&#39;s.
 1. Open de map Themabibliotheek.
 1. Houd de aanwijzer in de map Themabibliotheek boven het corresponderende, uit-de-box thema en tik op **Kopiëren**.
 1. Plak het gekopieerde thema buiten de map Themabibliotheek.
@@ -633,13 +633,13 @@ De gegenereerde CSS kunt u met de volgende opties zien:
    Wanneer u een thema bewerkt, kunt u door elementen (zoals afbeeldingen) bladeren en elementen uit andere thema&#39;s toevoegen. U bewerkt bijvoorbeeld de achtergrond van een pagina. Als u bijvoorbeeld **Pagina** ![bewerken-knop](assets/edit-button.png)> **Achtergrond** > **Toevoegen** > **Afbeelding** selecteert, wordt er een dialoogvenster weergegeven waarin u afbeeldingen in een ander thema kunt zoeken en toevoegen.
 
 * U kunt problemen met uw huidige thema oplossen als een element wordt toegevoegd uit een ander thema en het andere thema wordt verplaatst of verwijderd. U wordt aangeraden te voorkomen dat u bladeren en elementen uit andere thema&#39;s toevoegt.
-* **Basisclientlib, themageditor en inline styling gebruiken**
+* **Het gebruiken van basis clientlib, themageditor, en gealigneerde het stileren**
 
    * **Basis clientlib**:
 
       De basisclientbibliotheek bevat opmaakgegevens. Stijlinformatie in bibliotheken aan de clientzijde in thema&#39;s gebruiken.
 
-      1. Ga naar **Experience Manager > Formulieren > Thema**&#39;s.
+      1. Navigeer naar **Experience Manager > Forms > Thema**&#39;s.
       1. Selecteer een thema op de pagina Thema&#39;s en klik op Eigenschappen **** weergeven.
       1. Klik op **Geavanceerd** op de pagina Eigenschappen die wordt geopend.
       1. Blader op het tabblad Geavanceerd in het veld Clientlib-locatie naar de clientbibliotheek die u wilt gebruiken en selecteer deze.

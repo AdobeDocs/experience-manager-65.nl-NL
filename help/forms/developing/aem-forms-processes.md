@@ -1,23 +1,26 @@
 ---
-title: AEM-formulierprocessen begrijpen
-seo-title: AEM-formulierprocessen begrijpen
+title: AEM Forms-processen begrijpen
+seo-title: AEM Forms-processen begrijpen
 description: 'null'
 seo-description: 'null'
 uuid: 7cbebe7d-f222-42fa-8eb6-d2443458a791
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: development-tools
+topic-tags: development-tools, coding
 discoiquuid: ac9fe461-63e7-442b-bd1c-eb9576ef55aa
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+workflow-type: tm+mt
+source-wordcount: '791'
+ht-degree: 0%
 
 ---
 
 
-# AEM-formulierprocessen begrijpen {#understanding-aem-forms-processes}
+# AEM Forms-processen begrijpen {#understanding-aem-forms-processes}
 
-Een veelvoorkomend geval is dat een set services van AEM Forms op één document werkt. U kunt een verzoek naar de de dienstcontainer verzenden door een proces te creëren gebruikend Workbench. Een proces vertegenwoordigt een bedrijfsproces dat u automatiseert. Zie [Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63)gebruiken voor informatie over het maken van processen.
+Een veel voorkomend geval is dat een set AEM Forms-services op één document werkt. U kunt een verzoek naar de de dienstcontainer verzenden door een proces te creëren gebruikend Workbench. Een proces vertegenwoordigt een bedrijfsproces dat u automatiseert. Zie [Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63)gebruiken voor informatie over het maken van processen.
 
 Zodra een proces wordt geactiveerd, wordt het de dienst en kan als andere diensten worden aangehaald. Één verschil tussen de standaarddienst, zoals de dienst van de Encryptie en de dienst die uit een proces voortkwam, is dat laatstgenoemde één verrichting heeft die vele acties uitvoert. In tegenstelling, heeft een standaarddienst vele verrichtingen. Elke bewerking voert doorgaans één actie uit, zoals het toepassen van een beleid op een document of het versleutelen van een document.
 
@@ -29,7 +32,7 @@ Er zijn echter situaties waarin een proces niet synchroon kan worden voltooid va
 * Een proces kan organisatorische grenzen overspannen.
 * Een proces heeft externe input nodig om het te voltooien. Neem bijvoorbeeld een situatie waarin een formulier wordt verzonden naar een manager die buiten het kantoor is. In dit geval is het proces niet volledig totdat de manager het formulier retourneert en invult.
 
-   Deze soorten processen zijn gekend als langlevende processen. Een proces van lange duur wordt asynchroon uitgevoerd, toestaand voor systemen om als middelen toelaten in wisselwerking te staan en het volgen van en het toezicht op de verrichting toe te staan. Wanneer een proces met een lange levensduur wordt aangeroepen, maakt AEM Forms een waarde voor de aanroepings-id als onderdeel van een record die de status van het proces met een lange levensduur bijhoudt. De record wordt opgeslagen in de AEM Forms-database. U kunt langlevende procesverslagen zuiveren wanneer zij niet meer worden vereist.
+   Deze typen processen worden langlevende processen genoemd. Een proces van lange duur wordt asynchroon uitgevoerd, toestaand voor systemen om als middelen toelaten in wisselwerking te staan en het volgen van en het toezicht op de verrichting toe te staan. Wanneer een proces met een lange levensduur wordt aangeroepen, maakt AEM Forms een waarde voor de aanroepings-id als onderdeel van een record die de status van het proces met een lange levensduur bijhoudt. De record wordt opgeslagen in de AEM Forms-database. U kunt langlevende procesverslagen zuiveren wanneer zij niet meer worden vereist.
 
 >[!NOTE]
 >
@@ -57,15 +60,15 @@ Wanneer dit proces van korte duur wordt aangehaald, voert het de volgende acties
    >
    >Een kortstondig proces bestaat meestal uit meer dan drie acties. U maakt een proces met Workbench. (Zie [Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63)gebruiken.)
 
-   *Programmeren met AEM-* formulieren beschrijft de volgende manieren waarop u dit kortstondige proces programmatically kunt aanroepen:
+   *Het programmeren met AEM* formsbeschrijft de volgende manieren waarin u dit kortstondige proces programmatically kunt aanhalen:
 
-   * [Een kortstondig proces aanroepen door een onbeveiligd document door te geven met AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting) (Using a Flex application)
+   * [Een kortstondig proces aanroepen door een onbeveiligd document door te geven met AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting) (een Flex-toepassing gebruiken)
    * [Een kortstondig proces aanroepen met de API](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api) Inroeping (Java Invocation API)
-   * [AEM-formulieren aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding) (voorbeeld van webservice)
-   * [AEM-formulieren aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom) (voorbeeld voor webservices)
-   * [AEM-formulieren aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref) (voorbeeld van webservice)
-   * [AEM-formulieren aanroepen met behulp van BLOB-gegevens via HTTP](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http) (voorbeeld van webservice)
-   * [AEM Forms aanroepen met DIME](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-dime) (voorbeeld voor webservice)
+   * [AEM Forms aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding) (voorbeeld voor webservice)
+   * [AEM Forms aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom) (voorbeeld voor webservice)
+   * [AEM Forms aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref) (voorbeeld voor webservice)
+   * [AEM Forms aanroepen met behulp van BLOB-gegevens via HTTP](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http) (voorbeeld voor webservices)
+   * [AEM Forms aanroepen met DIME](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-dime) (voorbeeld van webservice)
    * [Het MyApplication/EncryptDocument-proces aanroepen met REST](/help/forms/developing/invoking-aem-forms-using-rest.md)
 
 **Voorbeeld van langlevend proces**
@@ -76,4 +79,4 @@ Dit proces wordt aangehaald wanneer een aanvrager een leningformulier indient. H
 
 >[!NOTE]
 >
->Dit proces kan worden gemaakt aan de hand van de zelfstudie die is opgegeven bij [Uw eerste AEM-formuliertoepassing](https://www.adobe.com/go/learn_aemforms_firstapp_ds_63)maken.
+>Dit proces kan worden gemaakt door de zelfstudie te volgen die is opgegeven in [Uw eerste AEM Forms-toepassing](https://www.adobe.com/go/learn_aemforms_firstapp_ds_63)maken.

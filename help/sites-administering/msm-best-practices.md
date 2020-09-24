@@ -1,16 +1,19 @@
 ---
 title: Aanbevolen MSM-procedures
 seo-title: Aanbevolen MSM-procedures
-description: Zoek naar beste praktijken die door de technische en consultancyteams van Adobe worden gecompileerd helpen aan de slag te gaan met AEM Multi-Site Manager.
-seo-description: Zoek naar beste praktijken die door de technische en consultancyteams van Adobe worden gecompileerd helpen aan de slag te gaan met AEM Multi-Site Manager.
+description: Zoek naar beste praktijken die door Adobe engineering en consultancyteams worden gecompileerd helpen om met de AEM MultiManager van de Plaats in gebruik te worden.
+seo-description: Zoek naar beste praktijken die door Adobe engineering en consultancyteams worden gecompileerd helpen om met de AEM MultiManager van de Plaats in gebruik te worden.
 uuid: cbb598bb-ec8f-4985-97af-7c87f5891c66
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
+topic-tags: site-features, best-practices
 content-type: reference
-topic-tags: best-practices
 discoiquuid: 04344537-7485-40a9-ad14-804ba448f1e2
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: a929252a13f66da8ac3e52aea0655b12bdd1425f
+workflow-type: tm+mt
+source-wordcount: '1530'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +29,7 @@ MSM is een configureerbaar framework voor het automatiseren van de implementatie
 * Een **governancemodel** in een vroeg stadium vaststellen en gebruikers dienovereenkomstig trainen om succes te waarborgen. Een goede praktijk vanuit bestuurlijk oogpunt is om de autoriteit **tot een minimum te beperken die lokale inhoudsproducenten moeten** toewijzen/verbinden met andere lokale gebruikers en hun respectieve levende exemplaren. Dit komt omdat onbestuurde, geketende overerving de complexiteit van een MSM-structuur aanzienlijk kan verhogen en de prestaties en betrouwbaarheid ervan in gevaar kan brengen.
 
 * Zodra er een plan voor uw structuur, inhoudsstromen, automatisering en bestuur bestaat - **prototype en grondig uw systeem** testen, alvorens levende implementatie te beginnen.
-* Houd er rekening mee dat **Adobe Consulting en toonaangevende System Integrators** over uitgebreide ervaring beschikken bij het plannen en implementeren van content automatisering met MSM, zodat ze u zowel kunnen helpen aan de slag te gaan met uw MSM-project als gedurende de volledige implementatie ervan.
+* Onthoud dat **Adobe Consulting en toonaangevende System Integrators** over uitgebreide ervaring beschikken bij het plannen en implementeren van content automatisering met MSM, zodat ze u zowel kunnen helpen om aan de slag te gaan met uw MSM-project als gedurende de volledige implementatie ervan.
 
 >[!NOTE]
 >
@@ -34,6 +37,7 @@ MSM is een configureerbaar framework voor het automatiseren van de implementatie
 >
 >* [Veelgestelde vragen over MSM](https://helpx.adobe.com/experience-manager/kb/index/msm_faq.html)
 >* [Problemen met MSM oplossen](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-msm-issues.html)
+
 >
 
 
@@ -44,6 +48,7 @@ MSM is een configureerbaar framework voor het automatiseren van de implementatie
 >
 >* MSM is flexibeler en staat fijnkorrelige controle over toe welke inhoud wordt gesynchroniseerd en wanneer.
 >* [De kerncomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) worden nu geadviseerd over de stichtingscomponenten.
+
 >
 
 
@@ -114,11 +119,11 @@ MSM kan op twee manieren helpen bij het maken van meertalige websites:
 
          Neem contact op met uw vertaalserviceprovider voor meer informatie.
 
-      * Een alternatieve benadering voor het maken en vertalen van taalmeesters is het gebruik van taalkopieën in combinatie met het implementatiekader van de vertaalafdeling van AEM.
+      * Een alternatieve benadering voor het maken en vertalen van taalmeesters is het gebruik van taalkopieën in combinatie met AEM kader voor vertaalintegratie buiten de doos.
 
 * Bij het uitrollen van inhoud van taalmeesters.
 
-   * Bijvoorbeeld, van de Franse taalmeester aan landspecifieke plaatsen, zoals Frankrijk/Frans, Canada/Frans, Zwitserland/Frans.
+   * Bijvoorbeeld vanuit de Franse taal die master is voor landspecifieke sites, zoals Frankrijk/Frans, Canada/Frans, Zwitserland/Frans.
 
 Zie Inhoud [vertalen voor meertalige sites](/help/sites-administering/translation.md) en de aanbevolen procedures voor [vertaling](/help/sites-administering/tc-bp.md)voor meer informatie.
 

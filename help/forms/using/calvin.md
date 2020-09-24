@@ -6,11 +6,11 @@ seo-description: Met Calvin kunt u testcase maken in CRXDE en UI-tests rechtstre
 uuid: 7bf4fc8f-96df-4407-8d10-cf18880518bd
 contentOwner: gtalwar
 content-type: reference
-topic-tags: develop
+topic-tags: adaptive_forms, develop
 discoiquuid: 1cb54c8a-9322-4b5a-b5a7-0eef342cee54
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
 workflow-type: tm+mt
 source-wordcount: '1283'
 ht-degree: 1%
@@ -97,7 +97,7 @@ Voordat u dit artikel kunt gebruiken voor het maken van testcase, moet u het vol
 
 In het volgende voorbeeld wordt het maken van een testsuite voor het testen van meerdere adaptieve formulieren besproken. U moet een afzonderlijk testcase maken voor elk formulier dat u moet testen. Als u in stap 11 vergelijkbare stappen uitvoert en de JavaScript-code wijzigt, kunt u uw eigen testsuite maken om uw aangepaste formulieren te testen.
 
-1. Ga naar CRXDE Lite in uw Webbrowser: `https://'[server]:[port]'/crx/de`.
+1. Ga naar CRXDE Lite in uw webbrowser: `https://'[server]:[port]'/crx/de`.
 1. Klik met de rechtermuisknop op de submap /etc/clientlibs en klik op **Maken** > **Knooppunt** maken. Voer een naam in (hier afTestRegistration), geef het type knooppunt op als cq:ClientLibraryFolder en klik op **OK.**
 
    De clientlibs-map bevat het registratieaspect van uw toepassing (JS en Init). U wordt aangeraden alle Hobbes-testreekobjecten te registreren die specifiek zijn voor een formulier in de clientlibs-map.
@@ -306,7 +306,7 @@ Een testsuite uitvoeren:
 
    ![4_reviewresults](assets/4_reviewresults.png)
 
-De stappen voor het testen van uw AEM-adaptieve formulieren zijn vergelijkbaar met die voor het testen van uw AEM-interface. Raadpleeg de volgende onderwerpen in [Uw gebruikersinterface](https://helpx.adobe.com//experience-manager/6-3/help/sites-developing/hobbes.html)testen voor meer informatie over het testen van uw aangepaste formulieren:
+De stappen voor het testen van uw AEM adaptieve formulieren zijn vergelijkbaar met die voor het testen van de gebruikersinterface van uw AEM. Raadpleeg de volgende onderwerpen in [Uw gebruikersinterface](https://helpx.adobe.com//experience-manager/6-3/help/sites-developing/hobbes.html)testen voor meer informatie over het testen van uw aangepaste formulieren:
 
 * Testuiteinden weergeven
 * Meerdere tests uitvoeren

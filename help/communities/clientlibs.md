@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 68ce47c8-a03f-40d6-a7f3-2cc64aee0594
 docset: aem65
 translation-type: tm+mt
-source-git-commit: efa6c7be93908b2f264da4689caa9c02912c0f0a
+source-git-commit: f6aa95514a266a042c9bd1165634e30e80479ae7
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Voor basisinformatie gaat u naar :
 
 * [Clientzijbibliotheken](/help/sites-developing/clientlibs.md) gebruiken die zowel gebruiksdetails als foutopsporingsgereedschappen bieden
 * [Clientlibs voor SCF](/help/communities/client-customize.md#clientlibs) die nuttige informatie wanneer het aanpassen van componenten SCF verstrekt
-* [Blog: AEM-clientbibliotheken, zoals in het voorbeeld wordt uitgelegd](https://blogs.adobe.com/experiencedelivers/experience-management/clientlibs-explained-example/)
+* [Blog: AEM Clientbibliotheken, zoals wordt uitgelegd in het voorbeeld](https://blogs.adobe.com/experiencedelivers/experience-management/clientlibs-explained-example/)
 
 ## Waarom Clientlibs vereist zijn {#why-clientlibs-are-required}
 
@@ -41,24 +41,24 @@ Wanneer de vereiste clientlibs ontbreken, kan het [toevoegen van een Community-c
 
 ### Voorbeeld: Geplaatste revisies zonder Clientlibs {#example-placed-reviews-without-clientlibs}
 
-![chlimage_1-426](assets/chlimage_1-426.png)
+![geplaatste revisies](assets/placed-reviews.png)
 
 ### Voorbeeld: Geplaatste revisies met clips {#example-placed-reviews-with-clientlibs}
 
-![chlimage_1-427](assets/chlimage_1-427.png)
+![revisies-clientlibs](assets/reviews-clientlibs.png)
 
 ## Vereiste clients identificeren {#identifying-required-clientlibs}
 
 De essentiële eigenschapinformatie voor ontwikkelaars identificeert de vereiste clientlibs.
 
-Bovendien, van een instantie AEM, die aan de Gids [van Componenten van de](/help/communities/components-guide.md) Gemeenschap doorbladert verleent toegang tot een lijst van cliëntlib categorieën voor een component worden vereist.
+Daarnaast kunt u vanuit een AEM naar de [Community Components Guide](/help/communities/components-guide.md) bladeren om een lijst met clientlib-categorieën weer te geven die voor een component zijn vereist.
 
 Bijvoorbeeld helemaal boven aan de pagina [](https://localhost:4502/content/community-components/en/reviews.html) Revisies worden de vereiste clientlibs weergegeven
 
 * cq.ckeditor
 * cq.social.hbs.reviews
 
-![chlimage_1-246](assets/chlimage_1-246.png)
+![clientlibs-reviews](assets/clientlibs-reviews.png)
 
 ## Vereiste clips toevoegen {#adding-required-clientlibs}
 
@@ -92,7 +92,7 @@ Om een clientlib voor een communautaire plaats toe te voegen gebruikend [CRXDE L
 >Als de site geen gemeenschapssite is, moet het bestaan of de locatie van de clientbibliotheken die voor de site worden gebruikt, worden gedetecteerd.
 
 
-Gebruikend het [Begonnen worden met het voorbeeld van AEM Communities](/help/communities/getting-started.md) , waar `site-name` is *geëngageerd*, is dit hoe cliëntliblist zou verschijnen als het toevoegen van de revisiecomponent:
+Gebruikend het [Beginnen met het voorbeeld van AEM Communities](/help/communities/getting-started.md) , waar `site-name` is *geëngageerd*, is dit hoe de cliëntliblist zou verschijnen als het toevoegen van de revisiecomponent:
 
-![chlimage_1-247](assets/chlimage_1-247.png)
+![revisie-component](assets/review-component.png)
 

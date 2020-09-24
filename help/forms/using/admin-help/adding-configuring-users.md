@@ -8,7 +8,10 @@ contentOwner: admin
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 discoiquuid: 20ca99e3-4843-4254-b3e9-0255cc752363
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: a929252a13f66da8ac3e52aea0655b12bdd1425f
+workflow-type: tm+mt
+source-wordcount: '1675'
+ht-degree: 0%
 
 ---
 
@@ -21,19 +24,19 @@ Gebruiker- en groepsgegevens worden bijgehouden in een opslagsysteem van derden,
 
 Wanneer u gebruikers creeert, kunt u hen aan groepen toevoegen en rollen toewijzen aan hen.
 
-1. Klik in de beheerconsole op **[!UICONTROL Instellingen > Gebruikersbeheer > Gebruikers en groepen]** en klik op **[!UICONTROL Nieuwe gebruiker]**.
+1. Klik in de beheerconsole **[!UICONTROL Settings > User Management > Users and Groups]** en klik op **[!UICONTROL New User]**.
 .
-1. Geef onder **[!UICONTROL Algemene instellingen]** de vereiste informatie op en klik op **[!UICONTROL Volgende]**. Zie [Gebruikersinstellingen](adding-configuring-users.md#user-settings)voor meer informatie over de instellingen.
-1. (Optioneel) Als u de gebruiker aan een groep wilt toevoegen, klikt u op Groepen **** zoeken en voert u de volgende taken uit:
+1. Geef onder **[!UICONTROL General Settings]** desgewenst informatie op en klik op **[!UICONTROL Next]**. Zie [Gebruikersinstellingen](adding-configuring-users.md#user-settings)voor meer informatie over de instellingen.
+1. (Optioneel) Als u de gebruiker aan een groep wilt toevoegen, klikt u op **[!UICONTROL Find Groups]** en voert u de volgende taken uit:
 
-   * Typ in het vak **[!UICONTROL Zoeken]** de naam van de groep geheel of gedeeltelijk.
-   * Selecteer het domein waarnaar u wilt zoeken, selecteer het aantal items dat u wilt weergeven en klik op **[!UICONTROL Zoeken]**.
-   * (Optioneel) Als u groepdetails wilt weergeven, selecteert u de groepsnaam en klikt u op **[!UICONTROL OK]** om terug te keren naar de pagina met zoekresultaten.
+   * Typ in het **[!UICONTROL Find]** vak de naam van de groep geheel of gedeeltelijk.
+   * Selecteer het domein waarnaar u wilt zoeken, selecteer het aantal items dat u wilt weergeven en klik op **[!UICONTROL Find]**.
+   * (Optioneel) Als u groepdetails wilt weergeven, selecteert u de groepsnaam en klikt u op de pagina met zoekresultaten **[!UICONTROL OK]** om deze weer te geven.
    * Schakel het selectievakje voor de groep in en klik op **[!UICONTROL OK]**.
    * Klik op **[!UICONTROL Next]**.
 
-1. (Optioneel) Als u rollen wilt toewijzen aan de gebruiker, klikt u op Rollen **** zoeken, schakelt u het selectievakje in voor de rollen die u wilt toewijzen en klikt u op **[!UICONTROL OK]**.
-1. Click **[!UICONTROL Finish]**.
+1. (Optioneel) Als u rollen wilt toewijzen aan de gebruiker, klikt u op **[!UICONTROL Find Roles]** het selectievakje voor de rollen die u wilt toewijzen en klikt u op **[!UICONTROL OK]**.
+1. Klik op **[!UICONTROL Finish]**.
 
    >[!NOTE]
    >
@@ -69,7 +72,7 @@ Gebruik bijvoorbeeld geen onderstrepingstekens (_) in canonieke namen `sample_us
 
 **Landinstelling:** Landinstelling ISO van gebruiker
 
-**Sleutel zakelijke agenda:** Laat u toe om een bedrijfskalender aan een gebruiker in kaart te brengen, die op de waarde voor dit het plaatsen wordt gebaseerd. Zakelijke kalenders definiëren zakelijke en niet-zakelijke dagen. AEM-formulieren kunnen bedrijfscalenders gebruiken voor het berekenen van toekomstige datums en tijden voor gebeurtenissen zoals herinneringen, deadlines en escalaties. De manier waarop u zakelijke kalendersleutels toewijst aan gebruikers hangt af van of u een onderneming, lokaal, of hybride domein gebruikt. (Zie [Domeinen](/help/forms/using/admin-help/adding-domains.md#adding-domains)toevoegen.)
+**Sleutel zakelijke agenda:** Laat u toe om een bedrijfskalender aan een gebruiker in kaart te brengen, die op de waarde voor dit het plaatsen wordt gebaseerd. Zakelijke kalenders definiëren zakelijke en niet-zakelijke dagen. AEM formulieren kunnen zakelijke kalenders gebruiken voor het berekenen van toekomstige datums en tijden voor gebeurtenissen zoals herinneringen, deadlines en escalaties. De manier waarop u zakelijke kalendersleutels toewijst aan gebruikers hangt af van of u een onderneming, lokaal, of hybride domein gebruikt. (Zie [Domeinen](/help/forms/using/admin-help/adding-domains.md#adding-domains)toevoegen.)
 
 Als u een lokaal of hybride domein gebruikt, wordt de informatie over gebruikers opgeslagen slechts in het gegevensbestand van het Beheer van de Gebruiker. Stel voor deze gebruikers de Business Calendar Key in op een tekenreeks. Wijs vervolgens de agenda-key van het bedrijf (de tekenreeks) toe aan een zakelijke kalender in de formulierworkflow.
 
@@ -85,7 +88,7 @@ In ondernemingsdomeinen, gebruik een niet-DN attribuut als gebruiker - identitei
 
 Controleer of de gebruikersnaam uniek is. Gebruik geen code die is toegewezen aan een verwijderde gebruiker.
 
-AEM-formulieren kunnen geen onderscheid maken tussen gebruikersaccounts die identieke gebruikers-id&#39;s en wachtwoorden hebben, maar tot verschillende domeinen behoren. Maak geen accounts met dezelfde gebruikersnaam op meerdere domeinen om dit probleem te voorkomen.
+AEM formulieren kunnen geen onderscheid maken tussen gebruikersaccounts die identieke gebruikers-id&#39;s en wachtwoorden hebben, maar tot verschillende domeinen behoren. Maak geen accounts met dezelfde gebruikersnaam op meerdere domeinen om dit probleem te voorkomen.
 
 Wanneer u SQL Server als uw database gebruikt, kunt u geen gebruikers-id maken die meer dan 255 tekens bevat.
 
@@ -107,68 +110,69 @@ Maak geen gebruikersnamen die met een hekje (#) beginnen. Het uitvoeren van taak
 
 ## Het wachtwoord voor een lokale gebruiker wijzigen {#change-the-password-for-a-local-user}
 
-1. Klik in de beheerconsole op **[!UICONTROL Instellingen > Gebruikersbeheer > Gebruikers en groepen]**.
-1. Geef informatie op om de zoekopdracht naar een bepaalde gebruiker te beperken en klik op **[!UICONTROL Zoeken]**. De resultaten van de zoekopdracht worden onder aan de pagina weergegeven. U kunt de lijst sorteren door op een van de kolomkoppen te klikken.
-1. Klik op de naam van de gebruiker en klik vervolgens op Wachtwoord **** wijzigen.
+1. Klik in de beheerconsole op **[!UICONTROL Settings > User Management > Users and Groups]**.
+1. Geef informatie op om de zoekopdracht naar een bepaalde gebruiker te beperken en klik op **[!UICONTROL Find]**. De resultaten van de zoekopdracht worden onder aan de pagina weergegeven. U kunt de lijst sorteren door op een van de kolomkoppen te klikken.
+1. Klik op de naam van de gebruiker en klik vervolgens op **[!UICONTROL Change Password]**.
 1. Typ en bevestig het nieuwe wachtwoord en klik op **[!UICONTROL OK]**. Het wachtwoord moet minimaal acht tekens lang zijn.
 
 ## De eigenschappen van een gebruiker bewerken {#edit-a-user-s-properties}
 
-1. Klik in de beheerconsole op **[!UICONTROL Instellingen > Gebruikersbeheer > Gebruikers en groepen]**.
+1. Klik in de beheerconsole op **[!UICONTROL Settings > User Management > Users and Groups]**.
 1. Voer de volgende taken uit om te zoeken naar de gebruiker die u wilt bewerken:
 
-   * Typ uw zoekcriteria in het vak **[!UICONTROL Zoeken]** .
-   * Selecteer **[!UICONTROL Naam]** , **[!UICONTROL E-mail]** of **[!UICONTROL gebruikersnaam]** in de lijst **[!UICONTROL Gebruiken]**.
-   * Selecteer **[!UICONTROL Gebruikers]** in de lijst **** In.
-   * Selecteer het domein, selecteer het aantal punten aan vertoning, en klik dan **[!UICONTROL Vondst]**.
+   * Typ uw zoekcriteria in het **[!UICONTROL Find]** vak.
+   * Selecteer in de **[!UICONTROL Using]** lijst **[!UICONTROL Name]**, **[!UICONTROL Email]** of **[!UICONTROL User ID]**.
+   * Selecteer in het **[!UICONTROL In list]** vak **[!UICONTROL Users]**.
+   * Selecteer het domein, selecteer het aantal items dat u wilt weergeven en klik op **[!UICONTROL Find]**.
 
 1. Klik op de gebruiker die u wilt bewerken.
-1. Voor een gebruiker die deel van een lokaal of hybride domein uitmaakt, op het lusje van het **[!UICONTROL Detail]** , geef de **[!UICONTROL Algemene Montages]** en **[!UICONTROL Login Montages]** uit, en klik **[!UICONTROL sparen]**. Zie [Gebruikersinstellingen](adding-configuring-users.md#user-settings)voor meer informatie over de instellingen. U kunt de algemene instellingen en aanmeldingsinstellingen niet bewerken voor een gebruiker die tot een ondernemingsdomein behoort.
-1. Als u de groepsinstellingen voor de gebruiker wilt bewerken, klikt u op het tabblad **[!UICONTROL Groepslidmaatschap]** en voert u de volgende taken uit:
+1. Voor een gebruiker die deel van een lokaal of hybride domein uitmaakt, op het **[!UICONTROL Detail]** lusje, geef **[!UICONTROL General Settings]** en **[!UICONTROL Login Settings]** uit, en klik **[!UICONTROL Save]**. Zie [Gebruikersinstellingen](adding-configuring-users.md#user-settings)voor meer informatie over de instellingen. U kunt de algemene instellingen en aanmeldingsinstellingen niet bewerken voor een gebruiker die tot een ondernemingsdomein behoort.
+1. Als u de groepsinstellingen voor de gebruiker wilt bewerken, klikt u op het **[!UICONTROL Group Membership]** tabblad en voert u de volgende taken uit:
 
-   * Klik op Groep **** zoeken en voer de zoekinformatie in.
-   * Als u de gebruiker aan een nieuwe groep wilt toevoegen, schakelt u het selectievakje voor de groep in, klikt u op **[!UICONTROL OK]** en vervolgens op **[!UICONTROL Opslaan]**.
+   * Klik op de zoekgegevens **[!UICONTROL Find Group]** en vul deze in.
+   * Als u de gebruiker aan een nieuwe groep wilt toevoegen, schakelt u het selectievakje voor de groep in, klikt u **[!UICONTROL OK]** en klikt u op **[!UICONTROL Save]**.
+
    >[!NOTE]
    >
    >Lokale gebruikers kunnen niet worden toegevoegd aan directorygroepen. Directorygebruikers kunnen echter wel aan lokale groepen worden toegevoegd.
 
-   * Als u de gebruiker uit een groep wilt verwijderen, schakelt u het selectievakje voor de groep in, klikt u op **[!UICONTROL Verwijderen]** en vervolgens op **[!UICONTROL Opslaan]**.
+   * Als u de gebruiker uit een groep wilt verwijderen, schakelt u het selectievakje voor de groep in, klikt u **[!UICONTROL Delete]** en klikt u op **[!UICONTROL Save]**.
 
 
-1. Als u de rollen van de gebruiker wilt bewerken, klikt u op het tabblad **[!UICONTROL Roltoewijzingen]** en voert u de volgende taken uit:
+1. Als u de rollen van de gebruiker wilt bewerken, klikt u op het **[!UICONTROL Role Assignments]** tabblad en voert u de volgende taken uit:
 
-   * Als u een lijst met rollen wilt weergeven, klikt u op Rollen **[!UICONTROL zoeken]**.
-   * Als u een rol wilt toevoegen, schakelt u het selectievakje voor de rol in, klikt u op **[!UICONTROL OK]** en vervolgens op **[!UICONTROL Opslaan]**.
-   * Als u een rol wilt verwijderen, schakelt u het selectievakje voor de rol in, klikt u op **[!UICONTROL Toewijzen]** ongedaan maken en klikt u vervolgens op **[!UICONTROL Opslaan]**.
+   * Als u een lijst met rollen wilt weergeven, klikt u **[!UICONTROL Find Roles]**.
+   * Als u een rol wilt toevoegen, schakelt u het selectievakje voor de rol in, klikt u **[!UICONTROL OK]** en klikt u op **[!UICONTROL Save]**.
+   * Als u een rol wilt verwijderen, schakelt u het selectievakje voor de rol in, klikt u **[!UICONTROL Unassign]** en klikt u op **[!UICONTROL Save]**.
 
 ## Een gebruiker verwijderen {#delete-a-user}
 
-1. Klik in de beheerconsole op **[!UICONTROL Instellingen > Gebruikersbeheer > Gebruikers en groepen]**.
+1. Klik in de beheerconsole op **[!UICONTROL Settings > User Management > Users and Groups]**.
 1. Voer de volgende taken uit om te zoeken naar de gebruiker die u wilt verwijderen:
 
-   * Typ uw zoekcriteria in het vak **[!UICONTROL Zoeken]** .
-   * Selecteer **[!UICONTROL Naam]** , **[!UICONTROL E-mail]** of **[!UICONTROL gebruikersnaam]** in de lijst **[!UICONTROL Gebruiken]**.
-   * Selecteer **[!UICONTROL Gebruikers]** in de lijst **** In.
-   * Selecteer het domein, selecteer het aantal punten aan vertoning, en klik dan **[!UICONTROL Vondst]**.
+   * Typ uw zoekcriteria in het **[!UICONTROL Find]** vak.
+   * Selecteer in de **[!UICONTROL Using]** lijst **[!UICONTROL Name]**, **[!UICONTROL Email]** of **[!UICONTROL User ID]**.
+   * Selecteer in het **[!UICONTROL In list]** vak **[!UICONTROL Users]**.
+   * Selecteer het domein, selecteer het aantal items dat u wilt weergeven en klik op **[!UICONTROL Find]**.
 
-1. Schakel het selectievakje voor de gebruiker in, klik op **[!UICONTROL Verwijderen]** en klik op **[!UICONTROL OK]**.
+1. Selecteer het selectievakje voor de gebruiker, klik **[!UICONTROL Delete]** en klik op **[!UICONTROL OK]**.
 
 >[!NOTE]
 >
->Met AEM Forms on JEE kunnen gebruikers van de invoegtoepassing voor AEM-formulieren die op een OSGi worden uitgevoerd, ook worden herkend als AEM-gebruikers. Dit is vereist voor scenario&#39;s waarbij invoegtoepassing voor één aanmelding tussen AEM Forms in JEE- en AEM-formulieren op een OSGi vereist is (bijvoorbeeld HTML-werkruimte). Met bovengenoemde verwijderingsbewerking wordt een gebruiker alleen verwijderd uit AEM Forms on JEE. De gebruiker wordt niet verwijderd uit de invoegtoepassing AEM Forms die wordt uitgevoerd in de OSGi-omgeving. Maar om het even welke login poging die na het schrappen van de gebruiker (een login poging aan de server van JEE van de Vormen AEM of toe:voegen-on van de Vormen AEM op milieu OSGi) wordt gemaakt wordt ontkend.
+>Met AEM Forms on JEE kunnen gebruikers van de add-on AEM formulieren die op een OSGi worden uitgevoerd, ook worden herkend als AEM gebruikers. Dit is vereist voor scenario&#39;s waarbij een eenmalige aanmelding tussen AEM Forms op JEE en AEM formulieren invoegtoepassing op een OSGi vereist is (bijvoorbeeld HTML-werkruimte). Met bovengenoemde verwijderingsbewerking wordt alleen een gebruiker uit AEM Forms op JEE verwijderd. De gebruiker wordt niet geschrapt van AEM Forms toe:voegen-op lopend op milieu OSGi. Maar om het even welke login poging die na het schrappen van de gebruiker wordt gemaakt (een login poging aan de server van AEM Forms toe:voegen-op JEE of toe:voegen-on AEM Forms op milieu OSGi) wordt ontkend.
 
 ## Aangepaste handler voor aanmeldingsfouten maken {#create-custom-login-error-handler}
 
-Als een gebruiker zonder de vereiste AEM-formulieren en CQ-machtigingen zich probeert aan te melden bij de volgende toepassingen die zijn ingesloten in CQ, wordt de gebruiker omgeleid naar de standaard CQ 404-pagina met de fouttrace:
+Als een gebruiker zonder de vereiste AEM en CQ-machtigingen zich probeert aan te melden bij de volgende toepassingen die zijn ingesloten in CQ, wordt de gebruiker omgeleid naar de standaard CQ 404-pagina met de fouttrace:
 
 * Correspondentenbeheeroplossing
-* AEM-formulierwerkruimte
+* Werkruimte AEM formulieren
 
-   ***opmerking **: De Flex-werkruimte is verouderd voor de release van AEM-formulieren.*
+   ***opmerking **: De Flex-werkruimte is verouderd voor AEM formulierrelease.*
 
 * formulierbeheer
 * Procesrapportage
 
 CQ verstrekt een mechanisme om standaard 404 manager jsp met voeten te treden.
 
-Zie Pagina&#39;s [aanpassen die worden weergegeven door de foutafhandeling](https://docs.adobe.com/docs/en/cq/current/developing/customizing_error_handler_pages.html) in de documentatie van Adobe Experience Manager voor meer informatie over het aanpassen van de pagina voor foutafhandeling.
+Zie Pagina&#39;s [aanpassen die worden weergegeven door de foutafhandeling](https://docs.adobe.com/docs/en/cq/current/developing/customizing_error_handler_pages.html) in de Adobe Experience Manager-documentatie voor meer informatie over het aanpassen van de pagina voor foutafhandeling.

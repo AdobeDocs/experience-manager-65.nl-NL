@@ -1,24 +1,27 @@
 ---
 title: Projecten beheren - Checklist voor aanbevolen procedures
 seo-title: Projecten beheren - Checklist voor aanbevolen procedures
-description: Het beheren van een project om de Manager van de Ervaring van Adobe (AEM) uit te voeren vereist planning en begrip. De controlelijsten van het Project zijn voorgenomen als reeks beste praktijken voor projectlevering. Ze begeleiden u door alle fasen van de levenscyclus van het project en zorgen voor controle op hoog niveau van uw huidige status.
-seo-description: Het beheren van een project om de Manager van de Ervaring van Adobe (AEM) uit te voeren vereist planning en begrip. De controlelijsten van het Project zijn voorgenomen als reeks beste praktijken voor projectlevering. Ze begeleiden u door alle fasen van de levenscyclus van het project en zorgen voor controle op hoog niveau van uw huidige status.
+description: Het beheren van een project om Adobe Experience Manager (AEM) uit te voeren vereist planning en begrip. De controlelijsten van het Project zijn voorgenomen als reeks beste praktijken voor projectlevering. Ze begeleiden u door alle fasen van de levenscyclus van het project en zorgen voor controle op hoog niveau van uw huidige status.
+seo-description: Het beheren van een project om Adobe Experience Manager (AEM) uit te voeren vereist planning en begrip. De controlelijsten van het Project zijn voorgenomen als reeks beste praktijken voor projectlevering. Ze begeleiden u door alle fasen van de levenscyclus van het project en zorgen voor controle op hoog niveau van uw huidige status.
 uuid: 859f73f4-535a-49a1-9ae4-a4aacd7f36dd
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
+topic-tags: managing-checklist, introduction
 content-type: reference
-topic-tags: introduction
 discoiquuid: 2bfa287a-aad0-4681-9f9c-d48e8179684c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 810d4e9fa93bd0913ba6c928a2508587c605c07e
+source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+workflow-type: tm+mt
+source-wordcount: '3316'
+ht-degree: 0%
 
 ---
 
 
 # Projecten beheren - Checklist voor aanbevolen procedures{#managing-projects-best-practices-checklist}
 
-Het beheren van een project om de Manager van de Ervaring van Adobe (AEM) uit te voeren vereist planning en begrip om u zich van de kwesties en (verwante) besluiten bewust te zijn die u (zowel vóór als terwijl het uitvoeren van uw project) moet maken.
+Het beheren van een project om Adobe Experience Manager (AEM) uit te voeren vereist planning en begrip om u bewust te zijn van de kwesties en (verwante) besluiten die u (zowel vóór als tijdens het uitvoeren van uw project) moet maken.
 
 Om u te helpen, bestaan de beste praktijken uit:
 
@@ -55,7 +58,7 @@ Het werkblad **Projecthartslag** biedt een grafisch overzicht van de belangrijks
 
 ## Status op rol {#status-by-role}
 
-Het **werkblad &quot;Status per rol** &quot; geeft een gedetailleerde uitsplitsing van [**gezondheid **,** kwaliteit **en** volledigheid **](#projectheartbeat)per**[ fase](#phases-and-milestones)** **[](#persona)**en Persona.
+Het **werkblad &quot;Status per rol** &quot; geeft een gedetailleerde uitsplitsing van [**gezondheid**, **kwaliteit** en **volledigheid**](#projectheartbeat) per **[fase](#phases-and-milestones)** **[](#persona)** en Persona.
 
 ## Fasen en mijlpalen {#phases-and-milestones}
 
@@ -151,7 +154,7 @@ De planning van uw project consolideert de voorbereiding. Hier moet u beginnen d
    * Belangrijke feiten over het project presenteren.
    * Beantwoord vragen.
    * Ervoor zorgen dat iedereen dezelfde kennisbasis heeft.
-   * Neem de betrokkenheid van iedereen die erbij betrokken zal zijn - dat moet verdiend worden.
+   * Neem de betrokkenheid van iedereen die erbij betrokken zal zijn. Dat zal verdiend moeten worden.
 
       * Door de hoofdrolspelers (inclusief potentiële auteurs) bij het begin van het project te betrekken, verhoogt u de kans dat ze zich voor het project engageren.
 
@@ -199,6 +202,7 @@ De planning van de ontwikkeling is zeer belangrijk om ervoor te zorgen dat uw pr
 
    * Hoe zij met elkaar en met gebruikers zullen in wisselwerking staan.
    * De gegevens die door toepassingen moeten worden verbruikt en geproduceerd, in plaats van hun interne structuur.
+
    De definities moeten betrekking hebben op:
 
    * Basiscodestructuur voor het project
@@ -230,7 +234,7 @@ De planning van de ontwikkeling is zeer belangrijk om ervoor te zorgen dat uw pr
 
 * **Ervaar ontwerp**
 
-   De ervaring van het Ontwerp (XD) impliceert het ontwerpen van de gebruikerservaring voor uw oplossing.
+   Het Ontwerp van de ervaring (XD) impliceert het ontwerpen van de gebruikerservaring voor uw oplossing.
 
    De gebruikerservaring moet worden geanalyseerd en ontwikkeld voor zowel uw auteurs als de eindgebruikers van uw website.
 
@@ -257,6 +261,7 @@ Op een vergelijkbare basis moeten de bewerkingen correct worden gepland om ervoo
    * Definitie van het gebruik van bevoegdheden die van invloed zijn op de publicatieomgeving; bijvoorbeeld: `replicate`
    * Voor gebruikers met minimale bevoegdheden moeten workflows worden gedefinieerd
    * Gebruikers in de `editor` groep mogen geen `admin` rechten hebben en mogen geen deel uitmaken van de `administrators` groep
+
    Zie [Gebruikersbeheer en -beveiliging](/help/sites-administering/security.md)voor meer informatie.
 
 * **Toezicht en onderhoud**
@@ -265,6 +270,7 @@ Op een vergelijkbare basis moeten de bewerkingen correct worden gepland om ervoo
 
    * Wat moet er worden gecontroleerd?
    * onderhoudstaken; zowel regelmatig als in bijzondere gevallen
+
    Zie ook [Controle en Onderhoud](/help/sites-deploying/monitoring-and-maintaining.md) voor meer informatie.
 
 * **Migratie**
@@ -295,7 +301,7 @@ Ontwikkeling is een cruciale fase die meer vereist dan alleen codering.
          * een instrument voor het beheer van bouwwerken; zoals Maven
          * een instrument voor continue integratie; zoals Jenkins
          * een instrument voor versiebeheer; zoals GIT/SVN
-         * een manager van de gegevensopslagplaats voor bouwwerken; zoals Archiva/Nexus
+         * een beheerder van een constructiegegevensopslagplaats; zoals Archiva/Nexus
    * Integratie/afhankelijkheden van software van derden
    * [Integratie/afhankelijkheid van oplossingen](/help/sites-administering/integration.md)
    * Implementatiecadade
@@ -367,6 +373,7 @@ Zodra de nieuwe toepassing beschikbaar is, moet deze aan strenge tests worden on
 
    * De oplossing voldoet aan de vereisten van de gebruiker/klant
    * De klant/gebruikers accepteren de oplossing (functie, ontwerp en prestaties)
+
    Er zou een geformaliseerde controlelijst voor klantenoverdracht moeten zijn; ideaal geautomatiseerd en elke avond tegen een momentopname. De resultaten moeten naar de projectmanager en het ontwikkelingsteam worden verzonden
 
 * **Prestatietests en belastingtests**
@@ -381,7 +388,7 @@ Zodra de nieuwe toepassing beschikbaar is, moet deze aan strenge tests worden on
    * [Basisrichtsnoeren voor prestaties](/help/sites-deploying/configuring-performance.md#basic-performance-guidelines)
    >[!NOTE]
    >
-   >Dit proces zal moeten worden voortgezet bij normaal gebruik van AEM, maar deze eerste fasen zijn het meest cruciaal.
+   >Dit proces moet worden voortgezet bij normaal gebruik van AEM, maar deze eerste fasen zijn het meest cruciaal.
 
 ### Uitrol {#rollout}
 
@@ -486,8 +493,8 @@ De projectmanager is:
 De oplossingsarchitect:
 
 * is verantwoordelijk voor het ontwerp op hoog niveau van de oplossing en het systeem.
-* Helpt de implementatiestrategie voor AEM te bepalen. Bijvoorbeeld, of om een gegroepeerde installatie, of een koude reserve uit te voeren, of wanneer een netwerk van de inhoudslevering (CDN) nodig is.
-* Definieer ook de AEM-oplossingsarchitectuur op basis van de vereisten van de client. Dit kan het concept voor gebruikersrollen (met verwante rechten), het verband tussen malplaatjes en componenten omvatten, of wanneer om multi-plaatsbeheer te gebruiken.
+* Hiermee kunt u de implementatiestrategie voor AEM definiëren. Bijvoorbeeld, of om een gegroepeerde installatie, of een koude reserve uit te voeren, of wanneer een netwerk van de inhoudslevering (CDN) nodig is.
+* Bepaal ook de AEM oplossingsarchitectuur die op de cliëntvereisten wordt gebaseerd. Dit kan het concept voor gebruikersrollen (met verwante rechten), het verband tussen malplaatjes en componenten omvatten, of wanneer om multi-plaatsbeheer te gebruiken.
 
 ### Zakelijke analist {#business-analyst}
 
@@ -600,7 +607,7 @@ De te leveren producten worden vaak gebruikt als **Vereiste Documenten** voor of
 
 Voor beste praktijken bij het opstellen, het beheren, het ontwikkelen, of het ontwerpen, zie het volgende:
 
-* Andere beste praktijken en richtsnoeren met betrekking tot het beheer van een AEM-project:
+* Andere beste praktijken en richtsnoeren met betrekking tot het beheer van een AEM project:
    * [Richtlijnen voor hardwareaanpassing](/help/managing/hardware-sizing-guidelines.md)
    * [Enterprise DevOps](/help/managing/enterprise-devops.md)
    * [Aanbevolen werkwijzen voor SEO- en URL-beheer](/help/managing/seo-and-url-management.md)
@@ -612,7 +619,7 @@ Voor beste praktijken bij het opstellen, het beheren, het ontwikkelen, of het on
 
 ## Belangrijkste documentatiegebieden {#key-documentation-areas}
 
-* AEM-documentatieDaarnaast zijn de volgende secties van de AEM-documentatie van bijzonder belang (deze lijst is echter niet limitatief):
+* AEM DocumentatieDaarnaast zijn de volgende onderdelen van AEM documentatie van bijzonder belang (deze lijst is echter niet limitatief):
 
    * [Beveiliging](/help/sites-developing/security.md)
    * [Aanbevolen implementaties](/help/sites-deploying/recommended-deploys.md)

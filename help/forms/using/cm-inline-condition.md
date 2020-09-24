@@ -6,11 +6,11 @@ seo-description: Gebruikend gealigneerde voorwaarde en herhaal in Interactieve M
 uuid: 32b48a8b-431d-4f9c-9f51-8e7e9ac624a0
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4
-topic-tags: interactive-communications
+topic-tags: interactive-communications, correspondence-management
 discoiquuid: bbaba39b-e15a-4143-b6fc-7789fa2917b4
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: a929252a13f66da8ac3e52aea0655b12bdd1425f
 workflow-type: tm+mt
 source-wordcount: '1694'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## Inline-voorwaarden {#inline-conditions}
 
-Met AEM Forms kunt u inline-omstandigheden gebruiken in tekstmodules om de rendering te automatiseren van tekst die afhankelijk is van de context of gegevens die aan het formuliergegevensmodel (in interactieve communicatie) of het gegevenswoordenboek (in letters) zijn gekoppeld. De gealigneerde voorwaarde toont specifieke inhoud die op voorwaardevaluatie wordt gebaseerd waar of vals is.
+Met AEM Forms kunt u inline-voorwaarden in tekstmodules gebruiken om de weergave van tekst te automatiseren die afhankelijk is van de context of de gegevens die aan het formuliergegevensmodel (in interactieve communicatie) of het gegevenswoordenboek (in letters) zijn gekoppeld. De gealigneerde voorwaarde toont specifieke inhoud die op voorwaardevaluatie wordt gebaseerd waar of vals is.
 
 De voorwaarden voeren berekeningen uit op gegevenswaarden die door het model/gegevenswoordenboek van de vormgegevens of door eind - gebruikers worden verstrekt. Met inline voorwaarden kunt u tijd besparen en menselijke fouten verminderen, terwijl u tegelijkertijd zeer contextuele en gepersonaliseerde interactieve communicatie/letters maakt.
 
@@ -228,7 +228,7 @@ Op dezelfde manier kunt u volgens uw vereiste het volgende maken:
 
 * Een of meer voorwaarden binnen een voorwaarde
 * Een of meer voorwaarden binnen een herhaling
-* Een combinatie van voorwaarden en herhaling binnen een toestand of herhaling
+* Een combinatie van voorwaarden en herhaling binnen een voorwaarde of herhaling
 
 ### Lege inline-voorwaarde {#empty-inline-condition}
 

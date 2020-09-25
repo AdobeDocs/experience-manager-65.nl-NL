@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d357b5832a3bd95c372c26fd7553eba70583eb6f
+source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
 workflow-type: tm+mt
 source-wordcount: '5591'
 ht-degree: 6%
@@ -132,19 +132,19 @@ Als u een geselecteerde map wilt markeren voor synchronisatie met Dynamic Media,
 
 U wordt nu gebeëindigd met de basisconfiguratie; U kunt de modus Dynamische media - Scene7 gebruiken.
 
-Als u de configuratie verder wilt aanpassen, kunt u desgewenst alle taken uitvoeren onder [(Optioneel) Geavanceerde instellingen configureren in de modus](#optionalconfigurationofadvancedsettingindynamicmediascene7mode)Dynamische media - Scene7.
+Als u de configuratie verder wilt aanpassen, kunt u desgewenst alle taken uitvoeren onder [(Optioneel) Geavanceerde instellingen configureren in de modus](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode)Dynamische media - Scene7.
 
 ## (Optioneel) Geavanceerde instellingen configureren in de modus Dynamische media - Scene7 {#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
 Als u de configuratie en opstelling van Dynamische Media - Scene7 wijze verder wilt aanpassen, of zijn prestaties optimaliseren, kunt u één of meerdere van de volgende *facultatieve* taken voltooien:
 
-* [(Optioneel) Instellingen voor dynamische media instellen en configureren - Scene7-modus](#optionalsetupandconfigurationofdynamicmediascene7modesettings)
+* [(Optioneel) Instellingen voor dynamische media instellen en configureren - Scene7-modus](#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings)
 
 * [(Optioneel) De prestaties van Dynamic Media afstemmen - Scene7-modus](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
 
 * [(Optioneel) Elementen filteren voor replicatie](#optional-filtering-assets-for-replication)
 
-### (Optioneel) Instellingen voor dynamische media instellen en configureren - Scene7-modus</p> {#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings-p}
+### (Optioneel) Instellingen voor dynamische media instellen en configureren - Scene7-modus {#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings}
 
 Wanneer u in runmode bent `dynamicmedia_scene7`, gebruikt u de Dynamic Media Classic (Scene7) gebruikersinterface om wijzigingen aan te brengen in uw instellingen voor Dynamic Media.
 
@@ -196,7 +196,7 @@ Als u de pagina Algemene instellingen toepassing wilt openen, klikt u op de balk
 
 >[!NOTE]
 >
->Standaard geeft het systeem 15 uitvoeringen weer wanneer u **[!UICONTROL Renditions]** en 15 viewervoorinstellingen selecteert wanneer u **[!UICONTROL Viewers]** in de gedetailleerde weergave van de asset selecteert. U kunt deze limiet verhogen. See [Increasing the number of image presets that display](/help/assets/managing-image-presets.md#increasingthenumberofimagepresetsthatdisplay) or [Increasing the number of viewer presets that display](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
+>Standaard geeft het systeem 15 uitvoeringen weer wanneer u **[!UICONTROL Renditions]** en 15 viewervoorinstellingen selecteert wanneer u **[!UICONTROL Viewers]** in de gedetailleerde weergave van de asset selecteert. U kunt deze limiet verhogen. See [Increasing the number of image presets that display](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) or [Increasing the number of viewer presets that display](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
 
 
 #### Kleurbeheer configureren {#configuring-color-management}

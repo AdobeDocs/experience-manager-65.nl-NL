@@ -1,6 +1,6 @@
 ---
 title: Panoramische afbeeldingen
-description: Leer hoe u met panoramische afbeeldingen in Dynamic Media werkt.
+description: Leer hoe u met panoramische afbeeldingen werkt in Dynamic Media.
 uuid: ced3e5bd-93c8-4d5f-a397-1380d4d0a5e7
 contentOwner: Rick Brough
 topic-tags: dynamic-media
@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 632a9074-b747-49a1-a57d-1f42bba1f4e9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
 workflow-type: tm+mt
 source-wordcount: '556'
 ht-degree: 5%
@@ -39,11 +39,11 @@ Zowel de criteria voor hoogte-breedteverhouding als voor trefwoorden zijn van to
 
 Zie [Elementen](/help/assets/managing-assets-touch-ui.md#uploading-assets)uploaden voor gebruik met de Panorama-viewer.
 
-## Het vormen Klassieke Dynamic Media (Scene7) {#configuring-dynamic-media-classic-scene}
+## Dynamic Media Classic (Scene7) configureren {#configuring-dynamic-media-classic-scene}
 
-De Panoramische beeldkijker werkt behoorlijk binnen AEM, moet u vooraf instelt van de Kijker van het Beeld van de Panoramiek met Dynamic Media Klassieke (Scene7) en Klassieke (Scene7) - specifieke meta-gegevens synchroniseren van Dynamic Media zodat de kijker vooraf instelt in JCR worden bijgewerkt. Om dit te verwezenlijken, vorm Dynamic Media Klassiek (Scene7) op de volgende manier:
+De Panoramische beeldviewer werkt alleen correct binnen AEM als u de voorinstellingen van de Panoramische afbeeldingsviewer synchroniseert met de specifieke metagegevens voor Dynamic Media Classic (Scene7) en Dynamic Media Classic (Scene7), zodat de voorinstellingen van de viewer worden bijgewerkt in de JCR. Hiertoe configureert u Dynamic Media Classic (Scene7) op de volgende manier:
 
-1. [Logboek in uw geval van Dynamic Media Klassiek (Scene7)](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) voor elke bedrijfrekening.
+1. [Meld u voor elk bedrijfsaccount aan bij Dynamic Media Classic (Scene7)](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) .
 
 1. Klik in de rechterbovenhoek van de pagina op **[!UICONTROL Setup > Application Setup > Publish Setup > Image Server.]**
 1. Selecteer in het **[!UICONTROL Publish Context]** keuzemenu boven in de pagina Publiceren afbeeldingsserver de optie **[!UICONTROL Image Serving.]**
@@ -51,7 +51,7 @@ De Panoramische beeldkijker werkt behoorlijk binnen AEM, moet u vooraf instelt v
 1. Zoek op dezelfde pagina voor het publiceren van afbeeldingsservers de kop **[!UICONTROL Request Attributes.]**
 1. Zoek **[!UICONTROL Reply Image Size Limit.]** vervolgens in de bijbehorende velden Breedte en Hoogte onder de kop Request-kenmerken de maximaal toegestane afbeeldingsgrootte voor panoramische afbeeldingen.
 
-   Dynamic Media Klassiek (Scene7) heeft een grens van 25.000.000 pixel. De maximaal toegestane grootte voor afbeeldingen met een hoogte-breedteverhouding van 2:1 is 7000 x 3500. Voor standaarddesktopschermen is 4096 x 2048 pixels echter voldoende.
+   Dynamic Media Classic (Scene7) heeft een limiet van 25.000.000 pixels. De maximaal toegestane grootte voor afbeeldingen met een hoogte-breedteverhouding van 2:1 is 7000 x 3500. Voor standaarddesktopschermen is 4096 x 2048 pixels echter voldoende.
 
    >[!NOTE]
    >
@@ -61,6 +61,7 @@ De Panoramische beeldkijker werkt behoorlijk binnen AEM, moet u vooraf instelt v
 
    * Modus Obfuseren aanvragen instellen op **[!UICONTROL Disabled.]**
    * Vergrendelingsmodus verzoek instellen op **[!UICONTROL Disabled.]**
+
    Deze instellingen zijn nodig voor het gebruik van de `Panoramic Media` WCM-component in AEM.
 
 1. Klik links onder aan de pagina Publiceren afbeeldingsserver op **[!UICONTROL Save.]**
@@ -71,11 +72,11 @@ De Panoramische beeldkijker werkt behoorlijk binnen AEM, moet u vooraf instelt v
 
 Als u een beeld in de component Panoramische Media in uw WCM en samengevouwen componentenplaceholder liet vallen, kunt u het volgende willen problemen oplossen:
 
-* Als u een fout van 403 kent waarvoor een verbod geldt, kan deze zijn veroorzaakt door het te grote formaat van de gevraagde afbeelding. Herzie de **[!UICONTROL Reply Image Size Limit]** montages in het [Vormen Klassieke Dynamic Media (Scene7)](/help/assets/panoramic-images.md#configuring%20dynamic%20media%20classic%20(scene7)).
+* Als u een fout van 403 kent waarvoor een verbod geldt, kan deze zijn veroorzaakt door het te grote formaat van de gevraagde afbeelding. Controleer de **[!UICONTROL Reply Image Size Limit]** instellingen in Dynamic Media Classic (Scene7) [](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene)configureren.
 
 * Voor een &quot;Ongeldige vergrendeling&quot; op het element of &quot;Parseerfout&quot; die op de pagina wordt weergegeven, schakelt u de modus Verduistering aanvragen en de modus Vergrendelen aanvragen in om ervoor te zorgen dat deze zijn uitgeschakeld.
 * Voor een bekroonde canvasfout, opstelling een Pad van het Dossier van de Definitie van de Regel en maakt CTN voor de vorige verzoeken om het beeldmiddel ongeldig.
-* Als de afbeeldingskwaliteit na een afbeeldingsaanvraag met een formaat groter dan de ondersteunde limiet erg laag wordt, controleert u of de **[!UICONTROL JPEG Encoding Attributes > Quality]** instelling niet leeg is. Een standaardinstelling voor het **[!UICONTROL Quality]** veld is `95`. U kunt het plaatsen op de de Publish pagina van de Server van het Beeld vinden. Om tot de pagina toegang te hebben, zie het [Vormen Klassieke Dynamic Media (Scene7)](/help/assets/panoramic-images.md#configuring%20dynamic%20media%20classic%20(scene7)).
+* Als de afbeeldingskwaliteit na een afbeeldingsaanvraag met een formaat groter dan de ondersteunde limiet erg laag wordt, controleert u of de **[!UICONTROL JPEG Encoding Attributes > Quality]** instelling niet leeg is. Een standaardinstelling voor het **[!UICONTROL Quality]** veld is `95`. U kunt het plaatsen op de de Publish pagina van de Server van het Beeld vinden. Zie Dynamic Media Classic [configureren (Scene7)](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene)voor toegang tot de pagina.
 
 ## Voorvertoning panorama-afbeeldingen weergeven {#previewing-panoramic-images}
 

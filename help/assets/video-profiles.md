@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 3b8791c8-2c97-42b7-b4a9-e1157ac9ea02
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
 workflow-type: tm+mt
 source-wordcount: '3529'
 ht-degree: 12%
@@ -373,7 +373,7 @@ Mappen waaraan een profiel is toegewezen, worden in de gebruikersinterface aange
 
 U kunt videoprofielen toepassen op specifieke mappen of op alle elementen.
 
-U kunt elementen in een map opnieuw verwerken die al een bestaand videoprofiel heeft dat u later wijzigt. Zie Elementen [opnieuw verwerken in een map nadat u het verwerkingsprofiel](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile)hebt bewerkt.
+U kunt elementen in een map opnieuw verwerken die al een bestaand videoprofiel heeft dat u later wijzigt. Zie Elementen [opnieuw verwerken in een map nadat u het verwerkingsprofiel](processing-profiles.md#reprocessing-assets)hebt bewerkt.
 
 ### Een videoprofiel toepassen op specifieke mappen {#applying-video-profiles-to-specific-folders}
 
@@ -381,7 +381,7 @@ U kunt een videoprofiel toepassen op een map vanuit het **[!UICONTROL Tools]** m
 
 Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
 
-Zie ook Elementen [opnieuw verwerken in een map nadat u het verwerkingsprofiel](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile)hebt bewerkt.
+Zie ook Elementen [opnieuw verwerken in een map nadat u het verwerkingsprofiel](processing-profiles.md#reprocessing-assets)hebt bewerkt.
 
 #### Een videoprofiel via de gebruikersinterface Profielen toepassen op mappen {#applying-video-profiles-to-folders-by-way-of-the-profiles-user-interface}
 
@@ -401,7 +401,7 @@ Zie ook Elementen [opnieuw verwerken in een map nadat u het verwerkingsprofiel](
 
 Naast het toepassen van een profiel op een map, kunt u er ook een globaal toepassen, zodat het geselecteerde profiel wordt toegepast op inhoud die is geüpload naar AEM elementen in een map.
 
-Zie ook Elementen [opnieuw verwerken in een map nadat u het verwerkingsprofiel](processing-profiles.md#reprocessing-assets-in-a-folder-after-you-have-edited-its-processing-profile)hebt bewerkt.
+Zie ook Elementen [opnieuw verwerken in een map nadat u het verwerkingsprofiel](processing-profiles.md#reprocessing-assets)hebt bewerkt.
 
 **Een videoprofiel algemeen** toepassen,
 

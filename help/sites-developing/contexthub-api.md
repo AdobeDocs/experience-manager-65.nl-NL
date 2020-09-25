@@ -10,7 +10,7 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 90605f41-1861-4891-a7c8-b8b5918cd5c6
 translation-type: tm+mt
-source-git-commit: 9a4ae73c08657195da2741cccdb196bd7f7142c9
+source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
 workflow-type: tm+mt
 source-wordcount: '5029'
 ht-degree: 2%
@@ -532,7 +532,7 @@ Beheert UI-modules en UI-moduleurs.
 
 #### registerRenderer(moduleType, renderer, dontRender) {#registerrenderer-moduletype-renderer-dontrender}
 
-Registreert een UI modulerenderer met ContextHub. Nadat renderer wordt geregistreerd, kan het worden gebruikt om modules [](/help/sites-administering/contexthub-config.md#adding-a-ui-module)tot stand te brengen UI. Gebruik deze functie wanneer u ContextHub.UI.BaseModuleRenderer [](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types) uitbreidt om een renderer van de Module van de douaneUI tot stand te brengen.
+Registreert een UI modulerenderer met ContextHub. Nadat renderer wordt geregistreerd, kan het worden gebruikt om modules [](ch-configuring.md#adding-a-ui-module)tot stand te brengen UI. Gebruik deze functie wanneer u ContextHub.UI.BaseModuleRenderer [](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types) uitbreidt om een renderer van de Module van de douaneUI tot stand te brengen.
 
 **Parameters**
 

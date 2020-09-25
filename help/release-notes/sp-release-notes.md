@@ -4,9 +4,9 @@ description: De nota's van de versie specifiek voor [!DNL Adobe Experience Manag
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: bd67a41e493cbcf97956de09e088d16997ab0e93
+source-git-commit: 74ab94126383d53dac5f55171266c66c28757969
 workflow-type: tm+mt
-source-wordcount: '4304'
+source-wordcount: '4327'
 ht-degree: 0%
 
 ---
@@ -290,6 +290,16 @@ Hier volgt een lijst met oplossingen uit de release van [!DNL Experience Manager
 >[!NOTE]
 >
 >[!DNL Experience Manager] Service Pack bevat geen oplossingen voor [!DNL Forms]. Ze worden geleverd met een apart [!DNL Forms] invoegpakket. Daarnaast wordt een cumulatief installatieprogramma uitgebracht dat oplossingen voor [!DNL Experience Manager Forms] JEE bevat. Zie de invoegtoepassing [AEM Forms](#install-aem-forms-add-on-package) installeren en AEM Forms in JEE [installeren voor meer informatie](#install-aem-forms-jee-installer).
+
+Na installatie van het [!DNL Experience Manager Forms] 6.5.6.0-invoegpakket:
+
+* Stop de [!DNL Experience Manager Forms] instantie.
+
+* Verwijder `bcpkix-1.51`-, `bcmail-1.51`- en `bcprov-1.51` JAR-bestanden uit de `crx-repository\launchpad\ext` map.
+
+* Eigenschap verwijderen` sling.bootdelegation.class.org.bouncycastle.jce.provider.BouncyCastleProvider` uit het `sling.properties` bestand.
+
+* Start de [!DNL Experience Manager Forms] instantie opnieuw.
 
 **Adaptieve Forms**
 

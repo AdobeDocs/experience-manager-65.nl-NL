@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: f281ef8c-0831-470c-acb7-189f20452a50
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
+workflow-type: tm+mt
+source-wordcount: '391'
+ht-degree: 3%
 
 ---
 
@@ -24,7 +27,7 @@ De werkbalk bestaat uit een reeks UI-modi die een of meer UI-modules bevatten.
 * UI-modi zijn pictogrammen die aan de linkerkant van de werkbalk worden weergegeven. Als u op een pictogram klikt of erop tikt, worden op de werkbalk de UI-modules weergegeven die erin staan.
 * UI de modules tonen gegevens van één of meerdere opslag ContextHub. Sommige modules UI laten u ook toe om opslaggegevens te manipuleren.
 
-ContextHub installeert verscheidene wijzen UI en modules UI. Uw beheerder kan ContextHub [hebben](/help/sites-administering/contexthub-config.md) gevormd om verschillende degenen te tonen.
+ContextHub installeert verscheidene wijzen UI en modules UI. Uw beheerder kan ContextHub [hebben](/help/sites-developing/ch-configuring.md) gevormd om verschillende degenen te tonen.
 
 ![screen_shot_2018-03-23at093446](assets/screen_shot_2018-03-23at093446.png)
 
@@ -58,7 +61,7 @@ Sommige modules UI tonen popup bekleed wanneer geklikt of getikt. Het pop-upmenu
 
 ![screen_shot_2018-03-23at094003](assets/screen_shot_2018-03-23at094003.png)
 
-### Pop-upformulieren {#popup-forms}
+### Popup-Forms {#popup-forms}
 
 De popup bekleding van een module kan vormelementen omvatten die u toelaten om de gegevens in de opslag te veranderen ContextHub. Als de pagina-inhoud wordt bepaald door de opslaggegevens, kunt u het formulier gebruiken en de wijzigingen in de pagina-inhoud observeren.
 

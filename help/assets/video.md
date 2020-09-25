@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
 workflow-type: tm+mt
 source-wordcount: '11356'
 ht-degree: 6%
@@ -51,7 +51,7 @@ De volgende stapsgewijze workflowbeschrijving is ontworpen om u te helpen snel a
       * Meer informatie over het [ordenen van digitale middelen](/help/assets/organize-assets.md).
    * Upload uw primaire bronvideo&#39;s naar de mappen. U kunt videobestanden uploaden van maximaal 15 GB elk. Wanneer u video&#39;s aan de map toevoegt, worden deze gecodeerd volgens het videoverwerkingsprofiel dat u aan de map hebt toegewezen.
 
-      * [Upload uw video](/help/assets/managing-video-assets.md#uploadingandpreviewingvideoassets)&#39;s.
+      * [Upload uw video](/help/assets/managing-video-assets.md#upload-and-preview-video-assets)&#39;s.
       * Meer informatie over [ondersteunde invoerbestandsindelingen](/help/assets/assets-formats.md#supported-multimedia-formats).
    * Controleer hoe de [videocodering vordert](#monitoring-video-encoding-and-youtube-publishing-progress) vanuit de asset- of workflowweergave.
 
@@ -64,7 +64,7 @@ De volgende stapsgewijze workflowbeschrijving is ontworpen om u te helpen snel a
 
       * [Digitale middelen](/help/assets/organize-assets.md)ordenen Meer informatie over [Aanbevolen procedures voor het ordenen van uw digitale middelen voor het gebruik van verwerkingsprofielen](organize-assets.md)
 
-      * [Video-elementen](search-assets.md#custompredicates) zoeken of elementen [zoeken](managing-assets-touch-ui.md#search-assets)
+      * [Video-elementen](search-assets.md#custompredicates) zoeken of elementen [zoeken](/help/assets/search-assets.md)
    * Video-elementen voorvertonen en publiceren
 
       * Bekijk de bronvideo en de gecodeerde vertoningen van de video samen met de bijbehorende miniaturen:
@@ -205,12 +205,12 @@ In de volgende tabel worden het apparaat, de browser en de afspeelmethode beschr
    <td>Progressieve download.</td>
   </tr>
   <tr>
-   <td>X</td>
+   <td>Desktop</td>
    <td>Internet Explorer 11+</td>
    <td>In Windows 8 en Windows 10 - Gebruik van HTTPS forceren wanneer om HLS wordt gevraagd. Bekende beperking: HTTP op HLS werkt niet in deze browser/werkend systeemcombinatie<br /> <br /> op Vensters 7 - Progressieve download. Gebruikt de standaardlogica voor het selecteren van het protocol HTTP versus HTTPS.</td>
   </tr>
   <tr>
-   <td>X</td>
+   <td>Desktop</td>
    <td>Firefox 23-44</td>
    <td>Progressieve download.</td>
   </tr>
@@ -225,7 +225,7 @@ In de volgende tabel worden het apparaat, de browser en de afspeelmethode beschr
    <td>HLS</td>
   </tr>
   <tr>
-   <td>X</td>
+   <td>Desktop</td>
    <td>Safari (Mac)</td>
    <td>HLS</td>
   </tr>
@@ -757,7 +757,7 @@ Nu associeert u de markeringen die u eerder aan videoactiva toevoegde. Dit proce
 >
 >Zie [De voortgang van videocodering en YouTube-publicatie controleren](#monitoring-video-encoding-and-youtube-publishing-progress).
 >
->Voor gedetailleerdere voortgangsinformatie kunt u het YouTube-logboek onder replicatie controleren. Houd er echter rekening mee dat voor dergelijke bewaking beheerderstoegang vereist is.
+>Voor meer gedetailleerde voortgangsinformatie kunt u het YouTube-logboek onder replicatie controleren. Houd er echter rekening mee dat voor dergelijke bewaking beheerderstoegang vereist is.
 
 Video&#39;s publiceren naar uw YouTube-kanaal:
 
@@ -1223,7 +1223,7 @@ Deze stappen zijn alleen van toepassing op dynamische media die in de modus &quo
    * Er is een map gemaakt voor uw video-elementen.
    * [Er is een videoprofiel op de map](/help/assets/video-profiles.md#applying-a-video-profile-to-folders)toegepast.
 
-   * [Uw video&#39;s zijn geüpload naar de map](/help/assets/managing-video-assets.md#uploadingandpreviewingvideoassets).
+   * [Uw video&#39;s zijn geüpload naar de map](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
 
 1. Navigeer naar een geüpload video-element waarvan u de miniatuurafbeelding wilt wijzigen.
 1. Tik in de modus voor middelenselectie op **[!UICONTROL List View]** of van **[!UICONTROL Card View]** het video-element.

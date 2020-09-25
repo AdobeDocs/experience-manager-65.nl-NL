@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 1e9dd0d7-209a-4989-b66b-bca0d04b437a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 60d36fd98bd4329a2b707229755fd197e2236748
+source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
+workflow-type: tm+mt
+source-wordcount: '1781'
+ht-degree: 4%
 
 ---
 
@@ -43,6 +46,7 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
       * De nieuwe tag wordt dan weergegeven met een kleine ster aan de rechterkant die aangeeft dat het een nieuwe tag is.
    * Met de vervolgkeuzefunctie kunt u bestaande tags selecteren.
    * Een x wordt weergegeven wanneer u met de muis over een tag-item in het selectievak beweegt. Hiermee kunt u die tag voor deze pagina verwijderen.
+
    Zie Tags [gebruiken voor meer informatie over tags](/help/sites-authoring/tags.md).
 
 * **Verbergen in navigatie**
@@ -67,7 +71,7 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 
 * **Op tijd**
 
-   De datum en het tijdstip waarop de gepubliceerde pagina wordt geactiveerd. Wanneer deze pagina wordt gepubliceerd, blijft deze slapend tot de opgegeven tijd.
+   De datum en het tijdstip waarop de gepubliceerde pagina wordt geactiveerd. Wanneer deze pagina wordt gepubliceerd, blijft deze sluimerend tot de opgegeven tijd.
 
    Laat deze velden leeg voor pagina&#39;s die u direct wilt publiceren (het normale scenario).
 
@@ -146,11 +150,11 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 
    >[!NOTE]
    >
-   >Gesloten gebruikersgroepen voor de pagina worden gedefinieerd op het tabblad **[Machtigingen](/help/sites-authoring/editing-page-properties.md#permissions)**.
+   >Gesloten gebruikersgroepen voor de pagina worden gedefinieerd op het tabblad **[Machtigingen](/help/sites-authoring/editing-page-properties.md#permissions)** .
 
    >[!CAUTION]
    >
-   >Op het tabblad **[Machtigingen](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)**kunt u CUG-configuraties bewerken op basis van de aanwezigheid van de`granite:AuthenticationRequired`mix. Als de paginamachtigingen gebruikend verouderde configuraties van de GIDS, op de aanwezigheid van`cq:cugEnabled`bezit worden gevormd, zal een waarschuwingsbericht onder de Vereiste **van de**Authentificatie worden getoond en de optie zal niet editable zijn, noch zullen de[Toestemmingen](/help/sites-authoring/editing-page-properties.md#permissions)editable zijn.
+   >Op het tabblad **[Machtigingen](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** kunt u CUG-configuraties bewerken op basis van de aanwezigheid van de `granite:AuthenticationRequired` mix. Als de paginamachtigingen gebruikend verouderde configuraties van de GIDS, op de aanwezigheid van `cq:cugEnabled` bezit worden gevormd, zal een waarschuwingsbericht onder de Vereiste **van de** Authentificatie worden getoond en de optie zal niet editable zijn, noch zullen de [Toestemmingen](/help/sites-authoring/editing-page-properties.md#permissions) editable zijn.
    >
    >
    >In een dergelijk geval moeten de toestemmingen van de KUG in [klassieke UI](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)worden uitgegeven.
@@ -203,7 +207,7 @@ Hiermee geeft u de miniatuurafbeelding van de pagina weer. U kunt:
 
 * **ContextHub-configuraties**
 
-   Selecteer de Configuratie [](/help/sites-administering/contexthub-config.md) ContextHub en de Weg [van](/help/sites-administering/segmentation.md)Segmenten.
+   Selecteer de Configuratie [](/help/sites-developing/ch-configuring.md) ContextHub en de Weg [van](/help/sites-administering/segmentation.md)Segmenten.
 
 * **Doelconfiguratie**
 
@@ -276,6 +280,7 @@ Klik of tikken op **Eigenschappen** om de pagina-eigenschappen te definiëren:
 
    * [Snelle acties](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Selectiemodus](/help/sites-authoring/basic-handling.md#selectionmode)
+
    De pagina-eigenschappen worden weergegeven met de juiste tabbladen.
 
 1. Bekijk of bewerk de eigenschappen naar wens.
@@ -347,6 +352,7 @@ Nadat u de optie Bulk bewerken hebt ingevoerd, kunt u:
 
       * Alleen eigenschappen met een gemeenschappelijke waarde worden weergegeven in de weergavemodus.
       * Als het veld meerdere waarden heeft (bijvoorbeeld Codes), worden waarden alleen weergegeven als *alle* waarden gemeenschappelijk zijn. Als slechts enkele van deze voorbeelden algemeen zijn, worden deze alleen weergegeven tijdens het bewerken.
+
    Wanneer er geen eigenschappen met een gemeenschappelijke waarde bestaan, wordt een bericht weergegeven.
 
 * **Bewerken**

@@ -12,7 +12,10 @@ discoiquuid: 59780112-6a9b-4de2-bf65-f026c8c74a31
 docset: aem65
 targetaudience: target-audience upgrader
 translation-type: tm+mt
-source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
+source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
+workflow-type: tm+mt
+source-wordcount: '2201'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ Bij de planning van een upgrade moeten de volgende onderdelen van een implementa
 
 * [De basiscode bijwerken](#upgrade-code-base)
 * [Uitlijnen met 6.5 Repository Structure](#align-repository-structure)
-* [AEM-aanpassingen](#aem-customizations)
+* [Aanpassingen AEM](#aem-customizations)
 * [Testprocedure](#testing-procedure)
 
 ## Overzicht {#overview}
@@ -32,27 +35,27 @@ Bij de planning van een upgrade moeten de volgende onderdelen van een implementa
 
 1. **Ontwikkelen de Basis van de Code voor 6.5 ** - creeer een specifieke tak of bewaarplaats voor de codebasis voor de versie van het Doel. Gebruik info van Compatibiliteit vóór upgrade om gebieden met code te plannen die moeten worden bijgewerkt.
 1. **Compileer met 6.5 Uber jar ** - werk code basis POMs aan punt aan 6.5 uber jar en compileer code tegen dit.
-1. **AEM-aanpassingen*** bijwerken - *Aanpassingen of uitbreidingen van AEM moeten worden bijgewerkt/gevalideerd om in versie 6.5 te kunnen werken en aan de basis van de 6.5-code worden toegevoegd. Bevat UI Search Forms, Assets Customizations, alles wat gebruikmaakt van /mnt/overlay
+1. **Update AEM Aanpassingen*** - *Om het even welke aanpassingen of uitbreidingen aan AEM zouden moeten worden bijgewerkt/worden bevestigd om in 6.5 te werken en aan de 6.5 codebasis worden toegevoegd. Bevat UI Search Forms, Assets Customizations, alles wat gebruikmaakt van /mnt/overlay
 
-1. **Implementeren in 6.5-omgeving** - Een schoon exemplaar van AEM 6.5 (Auteur + Publiceren) moet in een Dev/QA-omgeving staan. De bijgewerkte codebasis en een representatieve steekproef van inhoud (van huidige productie) zouden moeten worden opgesteld.
+1. **Implementeren in 6.5-omgeving** - Een schone versie van AEM 6.5 (Auteur + Publiceren) moet worden gebruikt in een Dev/QA-omgeving. De bijgewerkte codebasis en een representatieve steekproef van inhoud (van huidige productie) zouden moeten worden opgesteld.
 1. **QA-validatie en opgeloste** problemen - QA moet de toepassing valideren op zowel auteur- als publicatieinstanties van 6.5. Alle gevonden fouten moeten worden gecorrigeerd en toegewezen aan de basis van de 6.5-code. Herhaal indien nodig de Dev-Cycle totdat alle bugs zijn opgelost.
 
 Voordat u verdergaat met een upgrade, moet u beschikken over een stabiele basis voor toepassingscode die grondig is getest op basis van de doelversie van AEM. Op basis van opmerkingen die tijdens het testen zijn gemaakt, kunnen er manieren zijn om de aangepaste code te optimaliseren. Dit kan onder andere het vernieuwen van de code omvatten om te voorkomen dat de gegevensopslagruimte wordt doorgedraaid, aangepaste indexering om de zoekopdracht te optimaliseren, of het gebruik van niet-geordende knooppunten in onder andere JCR.
 
-Naast de mogelijkheid om uw codebasis en aanpassingen bij te werken met de nieuwe AEM-versie, helpt 6.5 ook om uw aanpassingen efficiënter te beheren met de functie Achterwaartse compatibiliteit die op [deze pagina](/help/sites-deploying/backward-compatibility.md)wordt beschreven.
+Naast de mogelijkheid om uw codebasis en aanpassingen bij te werken met de nieuwe AEM versie, helpt 6.5 ook om uw aanpassingen efficiënter te beheren met de functie Achterwaartse Verenigbaarheid zoals die op [deze pagina](/help/sites-deploying/backward-compatibility.md)wordt beschreven.
 
-Zoals hierboven vermeld en in het diagram hieronder getoond, zal het runnen van de Detector [van het](/help/sites-deploying/pattern-detector.md) Patroon in de eerste stap u helpen de algemene ingewikkeldheid van de verbetering beoordelen en of u op verenigbaarheidswijze wilt lopen of uw aanpassingen bijwerken om alle nieuwe eigenschappen te gebruiken AEM 6.5. Zie de pagina [Achterwaartse compatibiliteit in AEM 6.5](/help/sites-deploying/backward-compatibility.md) voor meer informatie.
-[ ![opt_cropped](assets/opt_cropped.png)](assets/upgrade-code-base-highlevel.png)
+Zoals hierboven vermeld en in het diagram hieronder getoond, zal het runnen van de Detector [van het](/help/sites-deploying/pattern-detector.md) Patroon in de eerste stap u helpen de algemene ingewikkeldheid van de verbetering beoordelen en of u op verenigbaarheidswijze wilt lopen of uw aanpassingen bijwerken om alle nieuwe AEM 6.5 eigenschappen te gebruiken. Zie de pagina [Achterwaartse compatibiliteit in AEM 6.5](/help/sites-deploying/backward-compatibility.md) voor meer informatie.
+[ ![opt_bijgesneden](assets/opt_cropped.png)](assets/upgrade-code-base-highlevel.png)
 
 ## De basiscode bijwerken {#upgrade-code-base}
 
 ### Creeer een Specifieke Tak voor Code 6.5 in de Controle van de Versie {#create-a-dedicated-branch-for-6.5-code-in-version-control}
 
-Alle code en configuraties die voor uw implementatie AEM worden vereist zouden moeten worden beheerd gebruikend één of andere vorm van versiecontrole. Een specifieke tak in versiecontrole zou voor het beheren van om het even welke veranderingen nodig voor de codebasis in de doelversie van AEM moeten worden gecreeerd. Het iteratieve testen van de codebasis tegen de doelversie van AEM en verdere insectenmoeilijke situaties zullen in deze tak worden beheerd.
+Alle code en configuraties die voor uw AEM implementatie worden vereist, moeten worden beheerd met een of andere vorm van versiecontrole. Een specifieke tak in versiecontrole zou voor het beheren van om het even welke veranderingen nodig voor de codebasis in de doelversie van AEM moeten worden gecreeerd. Het iteratieve testen van de codebasis tegen de doelversie van AEM en verdere insectenmoeilijke situaties zullen in deze tak worden beheerd.
 
-### De AEM Uber Jar-versie bijwerken {#update-the-aem-uber-jar-version}
+### De versie AEM Uber Jar bijwerken {#update-the-aem-uber-jar-version}
 
-De AEM Uber jar omvat alle AEM APIs als één enkel gebiedsdeel in uw Maven project `pom.xml`. Het is altijd aan te raden de Uber Jar op te nemen als één afhankelijkheid in plaats van afzonderlijke AEM API-afhankelijkheden op te nemen. Wanneer het bevorderen van de codebasis zou de versie van Uber Jar moeten worden veranderd om op de doelversie van AEM te richten. Als uw project op een versie van AEM vóór het bestaan van Uber Jar werd ontwikkeld zouden alle individuele AEM API gebiedsdelen moeten worden verwijderd en door één enkele opneming van Uber Jar voor de doelversie van AEM worden vervangen. De codebasis zou dan tegen de nieuwe versie van Uber Jar opnieuw moeten worden gecompileerd. Vervangen API&#39;s of methoden moeten worden bijgewerkt om compatibel te zijn met de doelversie van AEM.
+De AEM Uber jar omvat alle AEM APIs als één enkel gebiedsdeel in uw Geweven project `pom.xml`. Het is altijd aan te raden de Uber Jar op te nemen als één afhankelijkheid in plaats van individuele AEM API-afhankelijkheden op te nemen. Wanneer het bevorderen van de codebasis zou de versie van Uber Jar moeten worden veranderd om op de doelversie van AEM te richten. Als uw project op een versie van AEM vóór het bestaan van Uber Jar werd ontwikkeld zouden alle individuele AEM API gebiedsdelen moeten worden verwijderd en door één enkele opneming van Uber Jar voor de doelversie van AEM worden vervangen. De codebasis zou dan tegen de nieuwe versie van Uber Jar opnieuw moeten worden gecompileerd. Vervangen API&#39;s of methoden moeten worden bijgewerkt om compatibel te zijn met de doelversie van AEM.
 
 ```
 <dependency>
@@ -70,37 +73,37 @@ Het gebruik van een administratieve zitting door `SlingRepository.loginAdministr
 
 ### Vragen en eikindexen {#queries-and-oak-indexes}
 
-Om het even welk gebruik van vragen in de codebasis moet grondig worden getest als deel van het bevorderen van de codebasis. Voor klanten die van Jackrabbit 2 (versies van AEM ouder dan 6.0) bevorderen is dit vooral belangrijk aangezien het Eak inhoud niet automatisch indexeert en de douaneindexen kunnen moeten worden gecreeerd. Als de bevordering van een versie AEM 6.x de uit de de indexdefinities van het Eak van de doos kan veranderd zijn en bestaande vragen kon beïnvloeden.
+Om het even welk gebruik van vragen in de codebasis moet grondig worden getest als deel van het bevorderen van de codebasis. Voor klanten die van Jackrabbit 2 (versies van AEM ouder dan 6.0) bevorderen is dit vooral belangrijk aangezien het Eak inhoud niet automatisch indexeert en de douaneindexen kunnen moeten worden gecreeerd. Als de bevordering van een versie van AEM 6.x uit de de indexdefinities van het Eak van de doos kan veranderd zijn en bestaande vragen kon beïnvloeden.
 
 Er zijn verschillende gereedschappen beschikbaar voor het analyseren en inspecteren van queryprestaties:
 
-* [AEM Index Tools](/help/sites-deploying/queries-and-indexing.md)
+* [AEM indexgereedschappen](/help/sites-deploying/queries-and-indexing.md)
 
 * [Operationele diagnosetools - Query-prestaties](/help/sites-administering/operations-dashboard.md#diagnosis-tools)
 
-* [Eik](https://oakutils.appspot.com/). Dit is een opensource-programma dat niet door Adobe wordt beheerd.
+* [Eik](https://oakutils.appspot.com/). Dit is een opensource hulpmiddel dat niet door Adobe wordt gehandhaafd.
 
 ### Klassieke UI Authoring {#classic-ui-authoring}
 
-Klassieke UI-authoring is nog steeds beschikbaar in AEM 6.5, maar wordt afgekeurd. Meer informatie vindt u [hier](/help/release-notes/deprecated-removed-features.md#pre-announcement-for-next-release). Als uw toepassing momenteel op het Klassieke auteursmilieu van UI loopt, wordt het geadviseerd om aan AEM 6.5 te bevorderen en verder gebruikend Klassieke UI te blijven. De migratie naar Touch UI kan dan als afzonderlijk project worden gepland dat over verscheidene ontwikkelingscycli wordt voltooid. Om Klassieke UI in AEM 6.5 te gebruiken zijn verscheidene configuraties OSGi nodig om aan de codebasis worden geëngageerd. Meer details over hoe te om dit te vormen kunnen [hier](/help/sites-administering/enable-classic-ui.md)worden gevonden.
+Klassieke UI-authoring is nog steeds beschikbaar in AEM 6.5, maar wordt afgekeurd. Meer informatie vindt u [hier](/help/release-notes/deprecated-removed-features.md#pre-announcement-for-next-release). Als uw toepassing momenteel op het Klassieke auteursmilieu van UI loopt, wordt het geadviseerd om aan AEM 6.5 te bevorderen en het gebruik van Klassieke UI voort te zetten. De migratie naar Touch UI kan dan als afzonderlijk project worden gepland dat over verscheidene ontwikkelingscycli wordt voltooid. Om Klassieke UI in AEM 6.5 te gebruiken zijn verscheidene configuraties OSGi nodig om aan de codebasis worden geëngageerd. Meer details over hoe te om dit te vormen kunnen [hier](/help/sites-administering/enable-classic-ui.md)worden gevonden.
 
 ## Uitlijnen met 6.5 Repository Structure {#align-repository-structure}
 
 Om upgrades eenvoudiger te maken en ervoor te zorgen dat configuraties niet tijdens een upgrade worden overschreven, wordt de opslagplaats in 6.4 geherstructureerd om inhoud van configuratie te scheiden.
 
-Daarom moet een aantal instellingen worden verplaatst om niet langer te verblijven, `/etc` zoals in het verleden het geval was geweest. Zie [Repository Reform in AEM 6.4](/help/sites-deploying/repository-restructuring.md)voor een overzicht van de volledige reeks herstructureringsproblemen in de opslagplaats die in de bijgewerkte versie naar AEM 6.4 moeten worden herzien en opgenomen.
+Daarom moet een aantal instellingen worden verplaatst om niet langer te verblijven, `/etc` zoals in het verleden het geval was geweest. Zie [Repository Reform in AEM 6.4](/help/sites-deploying/repository-restructuring.md)om de volledige reeks herstructureringsproblemen in de opslagplaats te beoordelen die in de bijgewerkte versie tot AEM 6.4 moeten worden herzien en opgenomen.
 
-## AEM-aanpassingen {#aem-customizations}
+## Aanpassingen AEM  {#aem-customizations}
 
-Alle aanpassingen aan de AEM-ontwerpomgeving in de bronversie van AEM moeten worden geïdentificeerd. Nadat elke aanpassing is geïdentificeerd, wordt aanbevolen deze in versiebeheer op te slaan of er minimaal een back-up van te maken als onderdeel van een inhoudspakket. Alle aanpassingen moeten worden geïmplementeerd en gevalideerd in een QA- of Staging-omgeving met de doelversie van AEM voorafgaand aan een productieupgrade.
+Alle aanpassingen aan de AEM ontwerpomgeving in de bronversie van AEM moeten worden geïdentificeerd. Nadat elke aanpassing is geïdentificeerd, wordt aanbevolen deze in versiebeheer op te slaan of er minimaal een back-up van te maken als onderdeel van een inhoudspakket. Alle aanpassingen moeten worden geïmplementeerd en gevalideerd in een QA- of Staging-omgeving met de doelversie van AEM voorafgaand aan een productieupgrade.
 
 ### Bedekkingen in het algemeen {#overlays-in-general}
 
-Het is gebruikelijk om AEM uit de kaderfunctionaliteit uit te breiden door knopen en/of dossiers onder /libs met extra knopen onder /apps te bedekken. Deze overlays moeten worden bijgehouden in versiebeheer en worden getest op basis van de doelversie van AEM. Als een bestand (JS, JSP, HTL) wordt overschreven, wordt aanbevolen om een opmerking te laten over de functionaliteit die is uitgebreid voor het testen van de regressie op de doelversie van AEM. Meer informatie over overlays vindt u [hier](/help/sites-developing/overlays.md). Hieronder vindt u instructies voor specifieke AEM-overlays.
+Het is gebruikelijk om AEM uit de boxfunctionaliteit uit te breiden door knooppunten en/of bestanden onder /libs te bedekken met extra knooppunten onder /apps. Deze overlays moeten worden bijgehouden in versiebeheer en worden getest op basis van de doelversie van AEM. Als een bestand (JS, JSP, HTL) wordt overschreven, wordt aanbevolen om een opmerking te laten over de functionaliteit die is uitgebreid voor het testen van de regressie op de doelversie van AEM. Meer informatie over overlays vindt u [hier](/help/sites-developing/overlays.md). Hieronder vindt u instructies voor specifieke AEM-overlays.
 
-### Aangepaste zoekformulieren bijwerken {#upgrading-custom-search-forms}
+### Aangepast zoeken in Forms bijwerken {#upgrading-custom-search-forms}
 
-Aangepaste zoekfactoren vereisen na de upgrade enkele handmatige aanpassingen om goed te kunnen functioneren. Zie [Aangepaste zoekformulieren](/help/sites-deploying/upgrading-custom-search-forms.md)upgraden voor meer informatie.
+Aangepaste zoekfactoren vereisen na de upgrade enkele handmatige aanpassingen om goed te kunnen functioneren. Zie [Aangepaste zoekopdracht in Forms](/help/sites-deploying/upgrading-custom-search-forms.md)upgraden voor meer informatie.
 
 ### UI-aanpassingen voor middelen {#assets-ui-customizations}
 
@@ -130,7 +133,7 @@ U kunt aanpassingen aan de UI van Activa voorbereiden door het volgende te doen:
 
 ### Element-id&#39;s genereren voor bestaande elementen {#generating-asset-ids-for-existing-assets}
 
-Als u id&#39;s van elementen voor bestaande elementen wilt genereren, moet u de elementen upgraden wanneer u uw AEM-instantie upgradet naar AEM 6.5. Dit is nodig om de functie [Assets Insights](/help/assets/touch-ui-asset-insights.md)in te schakelen. Zie [Insluitcode](/help/assets/touch-ui-using-page-tracker.md#add-embed-code)toevoegen voor meer informatie.
+Als u element-id&#39;s voor bestaande elementen wilt genereren, moet u de elementen upgraden wanneer u uw AEM-instantie upgradet naar AEM 6.5. Dit is nodig om de functie [Assets Insights](/help/assets/touch-ui-asset-insights.md)in te schakelen. Zie [Insluitcode](/help/assets/touch-ui-using-page-tracker.md#add-embed-code)toevoegen voor meer informatie.
 
 Als u elementen wilt bijwerken, configureert u het pakket Id&#39;s van bijbehorende elementen in de JMX-console. Afhankelijk van het aantal elementen in de gegevensopslagruimte kan het lang duren `migrateAllAssets` . Onze interne tests schatten ruwweg een uur voor 125.000 activa op TarMK.
 
@@ -146,11 +149,11 @@ Adobe raadt u aan aangepaste scripts op de `/apps/settings/dam/indesign/scripts`
 
 ### ContextHub-configuraties herstellen {#recovering-contexthub-configurations}
 
-De configuraties van ContextHub worden beïnvloed door een verbetering. De instructies op hoe te om bestaande configuraties terug te krijgen ContextHub kunnen [hier](/help/sites-administering/contexthub-config.md#recovering-contexthub-configurations-after-upgrading)worden gevonden.
+De configuraties van ContextHub worden beïnvloed door een verbetering. De instructies op hoe te om bestaande configuraties terug te krijgen ContextHub kunnen [hier](/help/sites-developing/ch-configuring.md#recovering-contexthub-configurations-after-upgrading)worden gevonden.
 
 ### Workflowaanpassingen {#workflow-customizations}
 
-Het is gebruikelijk om wijzigingen uit de vakworkflows bij te werken om niet-benodigde functionaliteit toe te voegen of te verwijderen. Een algemene workflow die wordt aangepast, is de workflow [!UICONTROL DAM Update Asset] . Van alle workflows die vereist zijn voor een aangepaste implementatie, moet een back-up worden gemaakt en worden opgeslagen in versiebeheer, aangezien deze tijdens een upgrade kunnen worden overschreven.
+Het is gebruikelijk om wijzigingen uit de vakworkflows bij te werken om niet-benodigde functionaliteit toe te voegen of te verwijderen. Een algemene workflow die wordt aangepast, is de [!UICONTROL DAM Update Asset] workflow. Van alle workflows die vereist zijn voor een aangepaste implementatie, moet een back-up worden gemaakt en worden opgeslagen in versiebeheer, aangezien deze tijdens een upgrade kunnen worden overschreven.
 
 ### Bewerkbare sjablonen {#editable-templates}
 
@@ -162,7 +165,7 @@ De structuur voor bewerkbare sjablonen is gewijzigd tussen AEM 6.2 en 6.3. Als u
 
 ### Wijzigingen in CUG-implementatie {#cug-implementation-changes}
 
-De implementatie van Gesloten Gebruikersgroepen is aanzienlijk gewijzigd om de beperkingen van prestaties en schaalbaarheid in eerdere versies van AEM aan te pakken. De vorige versie van CUG is afgekeurd in 6.3 en de nieuwe implementatie wordt alleen ondersteund in de Touch UI. Als u van 6.2 of eerder bevordert, dan kunnen de Instructies om aan de nieuwe implementatie van de CUG [hier](/help/sites-administering/closed-user-groups.md#upgradetoaem63)worden gevonden.
+De implementatie van Gesloten Gebruikersgroepen is aanzienlijk gewijzigd om de beperkingen van prestaties en schaalbaarheid in eerdere versies van AEM aan te pakken. De vorige versie van CUG is afgekeurd in 6.3 en de nieuwe implementatie wordt alleen ondersteund in de aanraakinterface. Als u van 6.2 of eerder bevordert, dan kunnen de Instructies om aan de nieuwe implementatie van de CUG [hier](/help/sites-administering/closed-user-groups.md#upgradetoaem63)worden gevonden.
 
 ## Testprocedure {#testing-procedure}
 
@@ -172,9 +175,9 @@ Er moet een uitgebreid testplan worden opgesteld voor het testen van upgrades. H
 
 De verbeteringsprocedure zoals hier geschetst zou op Dev en milieu&#39;s QA zoals die in uw aangepast loopboek worden gedocumenteerd (zie de [Planning van Uw Verbetering](/help/sites-deploying/upgrade-planning.md)) moeten worden getest. De verbeteringsprocedure zou moeten worden herhaald tot alle stappen in het verbeteringsloopboek worden gedocumenteerd en het verbeteringsproces is vlot.
 
-### Testgebieden voor de implementatie {#implementation-test-areas-}
+### Testgebieden voor de implementatie  {#implementation-test-areas-}
 
-Hieronder vindt u een aantal kritieke gebieden van een AEM-implementatie die onder uw testplan moeten vallen zodra de omgeving is bijgewerkt en de geüpgrade codebasis is geïmplementeerd.
+Hieronder vindt u een aantal belangrijke onderdelen van een AEM implementatie die onder uw testplan moeten vallen als de omgeving is bijgewerkt en de geüpgrade codebasis is geïmplementeerd.
 
 <table>
  <tbody>
@@ -188,10 +191,10 @@ Hieronder vindt u een aantal kritieke gebieden van een AEM-implementatie die ond
   </tr>
   <tr>
    <td>Authoring</td>
-   <td>Testen van de AEM implementatie en bijbehorende code op de laag Auteur. Dit moet pagina, componentontwerp en dialoogvensters bevatten.</td>
+   <td>Testen van de AEM implementatie en de bijbehorende code op de laag Auteur. Dit moet pagina, componentontwerp en dialoogvensters bevatten.</td>
   </tr>
   <tr>
-   <td>Integratie met Marketing Cloud Solutions</td>
+   <td>Integratie met Marketing Cloud-oplossingen</td>
    <td>Integraties met producten als Analytics, DTM en Target valideren.</td>
   </tr>
   <tr>

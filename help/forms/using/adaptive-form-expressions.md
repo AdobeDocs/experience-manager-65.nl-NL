@@ -9,9 +9,9 @@ topic-tags: develop
 discoiquuid: 2fd2276e-cfe3-47ad-94c1-9c7af56b7a17
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 26a65772c43a5176d178bb6625604d18ac91e894
 workflow-type: tm+mt
-source-wordcount: '2766'
+source-wordcount: '2767'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Adaptieve formulieren bieden een geoptimaliseerde en vereenvoudigde manier van invullen van formulieren voor eindgebruikers met dynamische scriptmogelijkheden. Hiermee kunt u expressies schrijven waarmee u verschillende gedragingen kunt toevoegen, zoals dynamische tonen/verbergen van velden en deelvensters. Ook kunt u berekende velden toevoegen, velden alleen-lezen maken, validatielogica toevoegen en nog veel meer. Het dynamische gedrag is gebaseerd op de gebruikersinvoer of voorgevulde gegevens.
 
-JavaScript is de expressietaal van adaptieve formulieren. Alle expressies zijn geldige JavaScript-expressies en gebruiken API&#39;s van het scriptmodel voor aangepaste formulieren. Deze expressies retourneren waarden van bepaalde typen. Zie de API-naslaggids voor [JavaScript-bibliotheken voor adaptieve formulieren](https://helpx.adobe.com/aem-forms/6/javascript-api/index.html)voor een volledige lijst met adaptieve formulierklassen, gebeurtenissen, objecten en openbare API&#39;s.
+JavaScript is de expressietaal van adaptieve formulieren. Alle expressies zijn geldige JavaScript-expressies en gebruiken API&#39;s van het scriptmodel voor aangepaste formulieren. Deze expressies retourneren waarden van bepaalde typen. Zie de API-naslaggids voor [JavaScript-bibliotheken voor adaptieve formulieren](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html)voor een volledige lijst met adaptieve formulierklassen, gebeurtenissen, objecten en openbare API&#39;s.
 
 ## Aanbevolen werkwijzen voor het schrijven van expressies {#best-practices-for-writing-expressions}
 
@@ -49,15 +49,15 @@ Herhalende deelvensters zijn instanties van een deelvenster die dynamisch worden
 In adaptieve formulieren kunt u expressies schrijven om gedrag toe te voegen, zoals velden en deelvensters voor dynamisch tonen/verbergen. U kunt ook expressies schrijven om berekende velden toe te voegen, velden alleen-lezen te maken, validatielogica toe te voegen en nog veel meer. Adaptieve formulieren ondersteunen de volgende expressies:
 
 * **[Toegang tot expressies](#access-expression-enablement-expression)**: om een veld in of uit te schakelen.
-* **[Expressies](#calculate-expression)**berekenen: om de waarde van een veld automatisch te berekenen.
+* **[Expressies](#calculate-expression)** berekenen: om de waarde van een veld automatisch te berekenen.
 * **[Klikexpressie](#click-expression)**: om handelingen af te handelen bij klikgebeurtenis van een knop.
-* **[Initialisatiescript](#initialization-script):**een handeling uitvoeren bij initialisatie van een veld.
-* **[Uitdrukking](#options-expression)**opties: om een vervolgkeuzelijst dynamisch in te vullen.
+* **[Initialisatiescript](#initialization-script):** een handeling uitvoeren bij initialisatie van een veld.
+* **[Uitdrukking](#options-expression)** opties: om een vervolgkeuzelijst dynamisch in te vullen.
 * **[Samenvattingsexpressie](#summary)**: om de titel van een accordeon dynamisch te berekenen.
-* **[Expressies](#validate-expression)**valideren: om een veld te valideren.
-* **[Waarde script](#value-commit-script)vastleggen:**om de componenten van een formulier te wijzigen nadat de waarde van een veld is gewijzigd.
+* **[Expressies](#validate-expression)** valideren: om een veld te valideren.
+* **[Waarde script](#value-commit-script)vastleggen:** om de componenten van een formulier te wijzigen nadat de waarde van een veld is gewijzigd.
 * **[Visibility expression](#visibility-expression)**: om de zichtbaarheid van een veld en deelvenster te regelen.
-* **[Uitdrukking](#step-completion-expression)**voor stapvoltooiing: om te voorkomen dat een gebruiker naar de volgende stap van een wizard gaat.
+* **[Uitdrukking](#step-completion-expression)** voor stapvoltooiing: om te voorkomen dat een gebruiker naar de volgende stap van een wizard gaat.
 
 ### Access Expression (Enablement Expression) {#access-expression-enablement-expression}
 
@@ -88,7 +88,7 @@ De klikuitdrukking behandelt de acties die op de klikgebeurtenis van een knoop w
 
 **Retourneringstype**: De klikuitdrukking keert geen waarde terug. Als een expressie een waarde retourneert, wordt de waarde genegeerd.
 
-**Voorbeeld**: Als u een tekstvak **textbox1** wilt vullen met de actie click van een knop met **AEM Forms** waarde, klikt u op de knop als volgt: `textbox1.value="AEM Forms"`
+**Voorbeeld**: Als u een tekstvak **textbox1** wilt vullen bij het klikken van een knop met de waarde **AEM Forms**, klikt u op de knop `textbox1.value="AEM Forms"`
 
 ### Initialisatiescript {#initialization-script}
 
@@ -191,7 +191,7 @@ De expressie voor het voltooien van de stap wordt gebruikt om te voorkomen dat e
 
 Er zijn meerdere methoden om veldvalidatie toe te voegen aan een adaptief formulier. Als een validatiecontrole aan een veld wordt toegevoegd, geeft **True** aan dat de waarde die in het veld wordt ingevoerd, geldig is. **False** vertegenwoordigt dat de waarde ongeldig is. Als u in- en uitgaat van een veld, wordt het foutbericht niet gegenereerd.
 
-De methoden om validaties toe te voegen aan een veld zijn:
+U kunt als volgt validaties toevoegen aan een veld:
 
 ### Vereist {#required}
 
@@ -229,9 +229,9 @@ GuideBridge is een verzameling API&#39;s die kunnen worden gebruikt voor interac
 
 #### GuideBridge gebruiken buiten expressies  {#using-guidebridge-outside-expressions-nbsp}
 
-U kunt ook de GuideBridge-API&#39;s buiten de expressies gebruiken. U kunt bijvoorbeeld de GuideBridge-API gebruiken om communicatie in te stellen tussen pagina-HTML die als host fungeert voor het adaptieve formulier en het formuliermodel. Bovendien kunt u de waarde instellen die afkomstig is van het bovenliggende item van het Iframe-bestand dat het formulier host.
+U kunt de GuideBridge API&#39;s ook buiten de expressies gebruiken. U kunt bijvoorbeeld de GuideBridge-API gebruiken om communicatie in te stellen tussen pagina-HTML die als host fungeert voor het adaptieve formulier en het formuliermodel. Bovendien kunt u de waarde instellen die afkomstig is van het bovenliggende item van het Iframe-bestand dat het formulier host.
 
-Als u GuideBridge API wilt gebruiken voor het bovenstaande voorbeeld, neemt u een instantie van GuideBridge op. Om de instantie vast te leggen, luistert u naar de `bridgeInitializeStart`gebeurtenis van een `window`object:
+Als u GuideBridge API wilt gebruiken voor het bovenstaande voorbeeld, legt u een instantie van GuideBridge vast. Om de instantie vast te leggen, luistert u naar de `bridgeInitializeStart`gebeurtenis van een `window`object:
 
 ```javascript
 window.addEventListener("bridgeInitializeStart", function(evnt) {
@@ -253,7 +253,7 @@ window.addEventListener("bridgeInitializeStart", function(evnt) {
 
 >[!NOTE]
 >
->In AEM, is het een goede praktijk om code in een clientLib te schrijven en het in uw pagina (header.jsp of footer.jsp van de pagina) te omvatten
+>In AEM is het een goede praktijk om code in een clientLib te schrijven en het in uw pagina (header.jsp of footer.jsp van de pagina) op te nemen
 
 Als u GuideBridge wilt gebruiken nadat het formulier is geïnitialiseerd (de `bridgeInitializeComplete` gebeurtenis is verzonden), gebruikt u de GuideBridge-instantie `window.guideBridge`. U kunt de GuideBridge-initialisatiestatus controleren met de `guideBride.isConnected` API.
 
@@ -275,15 +275,15 @@ guideBridge.on("elementValueChanged", function (event, data)  {
 
 Zoals hierboven vermeld, kunnen met adaptieve formulieren ontwerpers patronen voor validatie- of weergaveindelingen leveren. U kunt niet alleen patronen uit het vak gebruiken, maar ook herbruikbare aangepaste patronen definiëren voor een adaptieve formuliercomponent. U kunt bijvoorbeeld een tekstveld of een numeriek veld definiëren. Als u deze patronen eenmaal hebt gedefinieerd, kunt u deze patronen in alle formulieren gebruiken voor het opgegeven type component. U kunt bijvoorbeeld een aangepast patroon maken voor een tekstveld en dit gebruiken in de tekstvelden in de aangepaste formulieren. U kunt het aangepaste patroon selecteren door de patroonsectie te openen in het dialoogvenster Bewerken van een component. Zie Ondersteuning van [afbeeldingscomponenten voor HTML5-formulieren](/help/forms/using/picture-clause-support.md)voor meer informatie over de definitie of indeling van patronen.
 
-Voer de volgende stappen uit om een aangepast patroon voor een specifiek veldtype te maken en dit opnieuw te gebruiken voor andere velden van hetzelfde type:
+Voer de volgende stappen uit om een aangepast patroon te maken voor een specifiek veldtype en dit opnieuw te gebruiken voor andere velden van hetzelfde type:
 
-1. Navigeer naar CRXDE Lite op uw auteursinstantie.
+1. Navigeer naar CRXDE Lite op de ontwerpinstantie.
 1. Maak een map om uw aangepaste patronen te behouden. Maak onder de map /apps een knooppunt van het type sling:folder. Maak bijvoorbeeld een knooppunt met de naam `customPatterns`. Onder dit knooppunt maakt u een ander knooppunt van het type `nt:unstructed` en geeft u dit een naam `textboxpatterns`. Dit knooppunt bevat de verschillende aangepaste patronen die u wilt toevoegen.
 1. Open het tabblad Eigenschappen van het gemaakte knooppunt. Open bijvoorbeeld het tabblad Eigenschappen van `textboxpatterns`. Voeg de `guideComponentType` eigenschap toe aan dit knooppunt en stel de waarde ervan in op *fd/af/components/formatter/guideTextBox*.
 
 1. De waarde van deze eigenschap is afhankelijk van het veld waarvoor u de patronen wilt definiëren. Voor een numeriek veld is de waarde van de `guideComponentType` eigenschap *fd/af/components/formatter/guideNumericBox*. De waarde voor het veld Datepicker is *fd/af/components/formatter/guideDatepicker*.
 &quot;
-1. U kunt een aangepast patroon toevoegen door een eigenschap toe te wijzen aan het `textboxpatterns` knooppunt. Voeg een eigenschap met een naam toe (bijvoorbeeld `pattern1`) en stel de waarde ervan in op het patroon dat u wilt toevoegen. Bijvoorbeeld, voeg een bezit `pattern1` met waarde Fax=text {99-999-9999999} toe. Het patroon is beschikbaar voor alle tekstvakken die u in Adaptieve formulieren gebruikt.
+1. U kunt een aangepast patroon toevoegen door een eigenschap toe te wijzen aan het `textboxpatterns` knooppunt. Voeg een eigenschap met een naam toe (bijvoorbeeld `pattern1`) en stel de waarde ervan in op het patroon dat u wilt toevoegen. Bijvoorbeeld, voeg een bezit `pattern1` met waarde Fax=text {99-999-9999999} toe. Het patroon is beschikbaar voor alle tekstvakken die u in Adaptief Forms gebruikt.
 
    ![Aangepaste patronen maken voor velden in CrxDe](assets/creating-custom-patterns.png)
 

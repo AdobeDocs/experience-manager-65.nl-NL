@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: e26c7f7f-bdd7-421a-8614-ba48abf381d2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
 workflow-type: tm+mt
 source-wordcount: '4730'
 ht-degree: 2%
@@ -223,11 +223,10 @@ Zie [Elementen](/help/assets/managing-assets-touch-ui.md)uploaden om afbeeldings
    >    * Animatie. Elke dia-overgang is standaard vervagen. U kunt dat wijzigen in een dia-overgang.
    >    * Stijl van de knoppen. Gebruikers kunnen door de banners roteren door op elke punt of elk getal te tikken. U kunt wijzigen waar de knoppen van de ingestelde indicator worden weergegeven (en of ze numeriek of gestippeld zijn) en hoe groot ze zijn.
    >    * Wijzig de markeerstijl van een afbeeldingskaart of het pictogram dat voor hotspots wordt gebruikt.
-   >    * Voordat u een viewervoorinstelling bewerkt, kiest u de stijl waarvan u de voorinstelling wilt baseren. Als u dit niet doet, gaan alle wijzigingen verloren wanneer u de viewervoorinstelling gaat bewerken
+   >    * Voordat u een viewervoorinstelling bewerkt, kiest u de stijl waarvan u de voorinstelling wilt baseren. Als u dit niet doet en u de voorinstelling van de viewer gaat bewerken, gaan alle wijzigingen verloren als u een andere voorinstelling kiest.
 
    >
-   >
-   >Zie [Speciale overwegingen voor Carousel Banners](/help/assets/viewer-presets.md#specialconsiderationsforcreatingacarouselbannerviewerpreset) voor gedetailleerde instructies en meer informatie over de viewer editor.
+   >Zie [Speciale overwegingen voor Carousel Banners](/help/assets/managing-viewer-presets.md#special-considerations-for-creating-a-carousel-banner-viewer-preset) voor gedetailleerde instructies en meer informatie over de viewer editor.
 
    U kunt ook een voorvertoning weergeven van hoe de carrouselbanner eruitziet. Zie [(Optioneel) Een voorvertoning weergeven van carrouselbanners](#optional-previewing-carousel-banners).
 

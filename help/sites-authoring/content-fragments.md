@@ -1,8 +1,8 @@
 ---
 title: Pagina's ontwerpen met inhoudsfragmenten
 seo-title: Pagina's ontwerpen met inhoudsfragmenten
-description: Met AEM-inhoudsfragmenten kunt u pagina-onafhankelijke inhoud ontwerpen, maken, beheren en gebruiken
-seo-description: Met AEM-inhoudsfragmenten kunt u pagina-onafhankelijke inhoud ontwerpen, maken, beheren en gebruiken
+description: Met AEM inhoudsfragmenten kunt u pagina-onafhankelijke inhoud ontwerpen, maken, beheren en gebruiken
+seo-description: Met AEM inhoudsfragmenten kunt u pagina-onafhankelijke inhoud ontwerpen, maken, beheren en gebruiken
 uuid: 987de428-8354-4b23-a552-3ea415122184
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 4049a7a5-4b33-4462-a25f-3c0daeb6a8a9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
 workflow-type: tm+mt
 source-wordcount: '1158'
 ht-degree: 5%
@@ -25,14 +25,15 @@ Inhoudsfragmenten van Adobe Experience Manager (AEM) worden [gemaakt en beheerd 
 
 U kunt hiermee kanaalneutrale inhoud maken, samen met (mogelijk kanaalspecifieke) variaties. Vervolgens kunt u deze fragmenten en de variaties ervan gebruiken bij het ontwerpen van de inhoudspagina&#39;s.
 
-Samen met de bijgewerkte JSON-exportfunctie kunnen gestructureerde inhoudsfragmenten ook worden gebruikt om AEM-inhoud via Content Services te leveren aan andere kanalen dan AEM-pagina&#39;s.
+Samen met de bijgewerkte JSON-exportfunctie kunnen gestructureerde inhoudsfragmenten ook worden gebruikt om AEM inhoud via Content Services te leveren aan andere kanalen dan AEM pagina&#39;s.
 
 >[!NOTE]
 >
->**Inhoudsfragmenten** en **[ervaringsfragmenten](/help/sites-authoring/experience-fragments.md)**zijn verschillende functies in AEM:
+>**Inhoudsfragmenten** en **[ervaringsfragmenten](/help/sites-authoring/experience-fragments.md)** hebben verschillende functies in AEM:
 >
 >* **Inhoudsfragmenten** zijn redactionele inhoud, voornamelijk tekst en verwante afbeeldingen. Het zijn pure inhoud, zonder ontwerp en lay-out.
 >* **de inhoud van de ervaringsfragmenten** volledig wordt ingedeeld; een fragment van een webpagina.
+
 >
 >
 De Fragmenten van de ervaring kunnen inhoud in de vorm van Inhoudsfragmenten bevatten, maar niet andersom.
@@ -53,14 +54,14 @@ Met de inhoudsfragmenten kunt u:
 
 * **Schrijvers kopiëren**
 
-   * Schrijf in de fragmenteditor voor AEM-inhoud.
+   * Schrijf in de fragmenteditor voor AEM inhoud.
    * Kan inhoudvariaties maken.
    * Kan relevante inhoud aan het inhoudsfragment koppelen.
    * Kan versioning/workflow gebruiken.
    * Kan inhoudsfragment delen.
    * Kan vertalingen centraal beheren.
 
-* **Producenten en journalisten**
+* **Producenten en reismanagers**
 
    * Maak een keuze uit vooraf gedefinieerde fragmenten en variaties bij het ontwerpen in AEM.
    * Kan erop vertrouwen dat het fragment en de bijbehorende inhoud altijd up-to-date zijn terwijl kopieerschrijvers en -creatieven hun updates in centraal beheerde fragmenten en elementen maken.
@@ -116,6 +117,7 @@ In het juiste configuratiedialoogvenster kunt u de beschikbare parameters select
 
    * The default **Main** will always be available.
    * Er is een selectie beschikbaar als het fragment met een geschikte sjabloon is gemaakt.
+
    >[!NOTE]
    >
    >De beschikbare elementen zijn afhankelijk van de gebruikte sjabloon.
@@ -146,7 +148,7 @@ U kunt de fragmentbron voor bewerking (het element) openen met het pictogram **B
 
 Wanneer een specifiek inhoudsfragment aan de pagina wordt toegevoegd, is hier **een tijdelijke aanduiding voor componenten** Slepen tussen elke HTML-alinea (en boven/onder) van het fragment.
 
-Hierdoor kunt u tussenliggende (dat wil zeggen [tussenliggende inhoud)](/help/assets/content-fragments/content-fragments.md#inbetweencontent) extra inhoud aan de fragmentinhoud toevoegen (op een van de beschikbare punten) zonder dat u het basisfragment hoeft te wijzigen.
+Hierdoor kunt u tussenliggende (dat wil zeggen [tussenliggende inhoud)](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) extra inhoud aan de fragmentinhoud toevoegen (op een van de beschikbare punten) zonder dat u het basisfragment hoeft te wijzigen.
 
 Voor tussenliggende inhoud kunt u:
 
@@ -177,6 +179,7 @@ Voor tussenliggende inhoud kunt u:
 >  
 Hierdoor kan het lijken alsof de relatieve positionering is gewijzigd, aangezien de tussenliggende alinea&#39;s geen contextafhankelijke relatie hebben met de (fragment)alinea&#39;s naast de alinea&#39;s.
 >* Tenzij de twee alinea&#39;s met elkaar in strijd zijn; in dat geval wordt de tussenliggende inhoud niet weergegeven (hoewel deze inhoud intern nog steeds aanwezig is).
+
 >
 
 

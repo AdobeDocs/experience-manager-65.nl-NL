@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: f4051767-182e-4cfd-9dfc-8f516378e0b6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8bdb019855edd08ef3d8ef58e627c91a092bc29f
+source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
 workflow-type: tm+mt
 source-wordcount: '6239'
 ht-degree: 15%
@@ -53,7 +53,7 @@ De integratie maakt gebruik van twee afzonderlijke en onafhankelijke typen van D
 
 ### Over reeksspatiëring in Adobe Analytics  {#about-tracking-using-adobe-analytics}
 
-Met Adobe Analytics kunt u handelingen bijhouden die door de eindgebruiker worden uitgevoerd wanneer deze communiceert met Dynamic Media Viewers op uw website. Met Adobe Analytics kunt u ook viewerspecifieke gegevens bijhouden. U kunt bijvoorbeeld de laadgebeurtenissen van de weergave bijhouden en opnemen, samen met de naam van het element, eventuele zoomacties die zijn uitgevoerd, handelingen voor het afspelen van video enzovoort.
+Met Adobe Analytics kunt u handelingen bijhouden die door de eindgebruiker worden uitgevoerd wanneer deze communiceert met Dynamic Media Viewers op uw website. Met Adobe Analytics kunt u ook viewerspecifieke gegevens bijhouden. U kunt bijvoorbeeld de laadgebeurtenissen van de weergave bijhouden en opnemen, samen met de naam van het element, eventuele zoomacties die hebben plaatsgevonden, handelingen voor het afspelen van video enzovoort.
 
 In de Lancering van Adobe werken de concepten *Gegevens Elementen* en *Regels* samen om het volgen van Adobe Analytics toe te laten.
 
@@ -133,7 +133,7 @@ De ondersteuning voor het bijhouden van video&#39;s is momenteel beperkt tot het
 
 ## De extensie Dynamische mediaverviewers gebruiken {#using-the-dynamic-media-viewers-extension}
 
-Zoals vermeld in de [Gebruik-gevallen voor de integratie](#use%20cases%20for%20the%20integration), is het mogelijk om Dynamic Media-viewers bij te houden met de nieuwe Adobe Launch-integratie in AEM Sites en door insluitcode te gebruiken.
+Zoals vermeld in de [Gebruik-gevallen voor de integratie](#use-cases-for-the-integration), is het mogelijk om Dynamic Media-viewers bij te houden met de nieuwe Adobe Launch-integratie in AEM Sites en door insluitcode te gebruiken.
 
 ### Dynamische mediasviewers bijhouden in AEM Sites {#tracking-dynamic-media-viewers-in-aem-sites}
 
@@ -149,7 +149,7 @@ See [Adding Dynamic Media Assets to Pages using Adobe Sites](https://helpx.adobe
 
 Klanten die geen AEM Sites gebruiken of geen Dynamic Media-viewers insluiten in webpagina&#39;s buiten AEM Sites, of beide, kunnen nog steeds gebruikmaken van de integratie voor het starten van Adobe.
 
-U moet de configuratiestappen van de secties [Adobe Analytics configureren](#configuringadobeanalytics) en [Adobe Launch configureren](#configuringadobelaunch) voltooien. Aan AEM gerelateerde configuratiestappen zijn echter niet nodig.
+U moet de configuratiestappen van de secties [Adobe Analytics configureren](#configuring-adobe-analytics-for-the-integration) en [Adobe Launch configureren](#configuring-adobe-launch-for-the-integration) voltooien. Aan AEM gerelateerde configuratiestappen zijn echter niet nodig.
 
 Na de juiste configuratie kunt u ondersteuning voor het starten van Adobe toevoegen aan een webpagina met een Dynamic Media-viewer.
 
@@ -162,7 +162,7 @@ See [Embedding the Video or Image Viewer on a Web Page](https://helpx.adobe.com/
 **Dynamische mediaviewers volgen met gebruik van ingesloten code**:
 
 1. Zorg dat een webpagina gereed is voor het insluiten van een Dynamic Media-viewer.
-1. Haal de insluitcode voor de bibliotheek van de Lancering van de Adobe door zich eerst aan te melden bij de Lancering van de Adobe (zie het [Vormen de Lancering](#configuringadobelaunch)van Adobe).
+1. Haal de insluitcode voor de bibliotheek van de Lancering van de Adobe door zich eerst aan te melden bij de Lancering van de Adobe (zie het [Vormen de Lancering](#configuring-adobe-launch-for-the-integration)van Adobe).
 1. Click **[!UICONTROL Property]**, then click the **[!UICONTROL Environments]** tab.
 1. Ophalen van het milieuniveau dat relevant is voor de omgeving van de webpagina. Klik vervolgens in de **[!UICONTROL Install]** kolom op het pictogram van het vak.
 1. **[!UICONTROL In the Web Install Instructions]** kopieert u de volledige insluitcode van de Adobe Launch-bibliotheek, samen met de omringende `<script/>` tags.
@@ -234,7 +234,7 @@ De activiteit van de eindgebruiker resulteert in de volgende twee volgende volge
 * De eerste vraag komt voor omdat de **[!UICONTROL TrackPan]** Regel wordt teweeggebracht wanneer de gebruiker in *viewer1* pant. Die vraag verzendt 50% als waarde van het Element van **[!UICONTROL ZoomScale]** Gegevens omdat het Element van Gegevens zal weten dat de Regel door *viewer1* wordt teweeggebracht en de overeenkomstige schaalwaarde haalt;
 * De tweede vraag komt voor omdat de **[!UICONTROL TrackKey]** Regel wordt teweeggebracht wanneer de gebruiker op een sleutel op het toetsenbord duwde. Die vraag verzendt 25% als waarde van het Element van **[!UICONTROL ZoomScale]** Gegevens omdat de Regel niet door de kijker werd teweeggebracht. Als dusdanig, keert het Element van Gegevens de meest bijgewerkte waarde terug.
 
-Het voorbeeld hierboven heeft ook invloed op de levensduur van de waarde voor het gegevenselement. De waarde van het gegevenselement dat door de Dynamic Media Viewer wordt beheerd, wordt opgeslagen in de Adobe Launch-bibliotheekcode, zelfs nadat de viewer zelf op de webpagina is verwijderd. Dit betekent dat als er een Regel is die door een niet-Dynamische uitbreiding van de Kijker van Media wordt teweeggebracht en verwijzingen zoals het Element van Gegevens, het Element van Gegevens de laatste bekende waarde terugkeert, zelfs als de kijker niet meer op de Web-pagina aanwezig is.
+Het voorbeeld hierboven heeft ook invloed op de levensduur van de waarde voor het gegevenselement. De waarde van het gegevenselement dat door de Dynamic Media Viewer wordt beheerd, wordt opgeslagen in de Adobe Launch-bibliotheekcode, zelfs nadat de viewer zelf op de webpagina is verwijderd. Dit betekent dat als er een Regel is die door een niet-Dynamische uitbreiding van de Kijker van Media wordt teweeggebracht en verwijzingen zoals het Element van Gegevens, het Element van Gegevens de laatste bekende waarde terugkeert, zelfs als de kijker niet meer aanwezig op de Web-pagina is.
 
 In elk geval worden de waarden van gegevenselementen die door Dynamic Media Viewers worden aangestuurd, niet opgeslagen op de lokale opslag of op de server. in plaats daarvan worden ze alleen in de Adobe Launch-bibliotheek aan de clientzijde bewaard. Waarden van een dergelijk gegevenselement verdwijnen als de webpagina opnieuw wordt geladen.
 
@@ -483,7 +483,7 @@ Zie ook [Analytics Implementation Guide](https://docs.adobe.com/content/help/en/
 
 1. Over het algemeen wordt het opstellen van een rapport in Adobe Analytics gestuurd door specifieke projectbehoeften. Als dusdanig, is de gedetailleerde rapportopstelling voorbij het werkingsgebied voor deze integratie.
 
-   Het is echter genoeg om te weten dat de rapporten van het Verkeer van de Douane automatisch beschikbaar worden in Adobe Analytics nadat u de variabelen van het Verkeer van de Douane in de variabelen **[van de](#setting-up-adobe-analytics-variables)**Opstelling Adobe Analytics.
+   Het is echter genoeg om te weten dat de rapporten van het Verkeer van de Douane automatisch beschikbaar worden in Adobe Analytics nadat u de variabelen van het Verkeer van de Douane in de variabelen **[van de](#setting-up-adobe-analytics-variables)** Opstelling Adobe Analytics.
 
    Het rapport voor de variabele **[!UICONTROL Viewer asset (prop 30)]** is bijvoorbeeld beschikbaar in het menu Rapporten onder **[!UICONTROL Custom Traffic > Custom Traffic 21-30 > Viewer asset (prop 30)]**.
 
@@ -742,7 +742,7 @@ De AEM configuratie bestaat uit de volgende twee belangrijke stappen:
 
    Adobe IMS Technical Account Configuration - Certificate page.
 
-1. De **[!UICONTROL Account]** pagina heeft vijf gebieden die u zullen vereisen om te vullen gebruikend informatie van de de detailpagina van de Integratie van de vorige stap.
+1. De **[!UICONTROL Account]** pagina heeft vijf gebieden die u zullen vereisen om uit te vullen gebruikend informatie van de de detailpagina van de Integratie van de vorige stap.
 
    ![2019-07-25_20-42-45](assets/2019-07-25_20-42-45.png)
 
@@ -811,7 +811,7 @@ Bijvoorbeeld, `https://ims-na1.adobelogin.com/`(de naam van de voorbeeldserver i
 
    * **[!UICONTROL Company]** - Selecteer in de **[!UICONTROL Company]** vervolgkeuzelijst uw Experience Cloud-bedrijf. De lijst wordt automatisch gevuld.
 
-   * **[!UICONTROL Property]** - Selecteer in de vervolgkeuzelijst Eigenschap de Adobe Launch-eigenschap die u eerder hebt gemaakt. De lijst wordt automatisch gevuld.
+   * **[!UICONTROL Property]** - Selecteer in de vervolgkeuzelijst Eigenschap de Adobe-opstarteigenschap die u eerder hebt gemaakt. De lijst wordt automatisch gevuld.
    Nadat u alle velden hebt ingevuld, ziet uw **[!UICONTROL General]** pagina er ongeveer als volgt uit:
 
    ![image2019-7-15_14-34-23](assets/image2019-7-15_14-34-23.png)

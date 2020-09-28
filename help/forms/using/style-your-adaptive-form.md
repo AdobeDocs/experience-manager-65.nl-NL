@@ -8,9 +8,9 @@ uuid: ffb2cc22-baaf-4525-a2e3-29f39271c670
 topic-tags: introduction
 discoiquuid: 655303a4-99bb-4ba3-9d50-a178f5edcf85
 translation-type: tm+mt
-source-git-commit: e3ecf724cdfcd20ef4c089605e644ad10ef1221b
+source-git-commit: 0b3884301e09eba6860891f00a98508033d12ec8
 workflow-type: tm+mt
-source-wordcount: '1955'
+source-wordcount: '1948'
 ht-degree: 5%
 
 ---
@@ -442,18 +442,18 @@ Sommige stijlen zijn alleen van toepassing op een bepaalde component. Dergelijke
 
 U kunt verschillende lettertypen gebruiken om een adaptief formulier te ontwerpen. Op alle apparaten waarop het adaptieve formulier wordt weergegeven, worden mogelijk niet de fonts gebruikt om het adaptieve formulier te ontwerpen. U kunt een service voor weblettertypen gebruiken om de vereiste lettertypen aan het doelapparaat te leveren.
 
-[!DNL Adobe Typekit] is een service voor weblettertypen. U kunt de service configureren en gebruiken met adaptieve formulieren. Voor gebruik [!DNL Adobe Typekit] in een adaptieve vorm:
+[!DNL Adobe Fonts] is een service voor weblettertypen. U kunt de service configureren en gebruiken met adaptieve formulieren. Voor gebruik [!DNL Adobe Fonts] in een adaptieve vorm:
 
 >[!NOTE]
 >
 >![Typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) [!DNL Typekit] worden nu Adobe Fonts genoemd en worden geleverd bij Creative Cloud- en andere abonnementen. [Meer](https://fonts.adobe.com/)informatie.
 
-1. Maak een [Adobe Typekit](https://typekit.com/) -account, maak een kit, voeg Myriad Pro-lettertype aan de kit toe, publiceer de kit en verkrijg de kit-id. U moet [!DNL Adobe Typekit] lettertypen (weblettertypen) in een adaptieve vorm gebruiken.
-1. Navigeer in de AEM [!DNL Forms] server naar ![adobeexperience](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** hamer ![>](assets/hammer.png) > **[!UICONTROL Deployment]** **[!UICONTROL Cloud Services]**. Navigeer op de pagina Cloud Services naar **[!UICONTROL Third Party Services]** > **[!UICONTROL Typekit]** en klik onder **[!UICONTROL Configure]** Nu [!UICONTROL Typekit]. Als er al een configuratie beschikbaar is, klikt u op de knop + om een nieuwe instantie te maken.
+1. Maak een [Adobe Fonts](https://typekit.com/) -account, maak een kit, voeg Myriad Pro-lettertype aan de kit toe, publiceer de kit en verkrijg de kit-id. U moet [!DNL Adobe Fonts] (weblettertypen) in een adaptieve vorm gebruiken.
+1. Navigeer in de AEM [!DNL Forms] server naar ![adobeexperience](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** hamer ![>](assets/hammer.png) **[!UICONTROL Adobe Fonts]**. Open nu een configuratiemap. Als er al een configuratie beschikbaar is, klikt u op de **[!UICONTROL Create]** knop om een nieuwe instantie te maken.
 
-   Geef in het dialoogvenster Configuratie maken een **titel** voor de configuratie op en klik op **[!UICONTROL Create]**. U wordt opnieuw gericht aan de configuratiepagina. Geef in het [!UICONTROL Edit Component] dialoogvenster dat verschijnt uw **kit-id** op en klik op **[!UICONTROL OK]**.
+   Geef in het dialoogvenster Configuratie maken een **titel** voor de configuratie op en klik op **[!UICONTROL Create]**. U wordt opnieuw gericht aan de configuratiepagina. Geef in het [!UICONTROL Edit Component] dialoogvenster dat wordt weergegeven uw **kit-id** op en klik **[!UICONTROL OK]**.
 
-1. Vorm uw thema om de [!DNL TypeKit] configuratie te gebruiken. Voor de auteursinstantie, open **[!UICONTROL Global Theme]** in de themaredacteur. Navigeer in de themaeditor naar **[!UICONTROL Theme Options]** themaopties ![>](assets/theme-options.png) **[!UICONTROL Configure]**. Selecteer de kit in **[!UICONTROL Typekit Configuration]** het veld en klik op **[!UICONTROL Save]**.
+1. Vorm uw thema om de [!DNL Adobe Fonts] configuratie te gebruiken. Voor de auteursinstantie, open **[!UICONTROL Global Theme]** in de themaredacteur. Navigeer in de themaeditor naar **[!UICONTROL Theme Options]** themaopties ![>](assets/theme-options.png) **[!UICONTROL Configure]**. Selecteer de kit in **[!UICONTROL Adobe Fonts Configuration]** het veld en klik op **[!UICONTROL Save]**.
 
-   De lettertypen die aan de tekst [!UICONTROL Typekit] zijn toegevoegd, kunnen in de **[!UICONTROL Text]** accordeon van alle componenten worden geselecteerd.
+   De lettertypen die aan de tekst **[!UICONTROL Adobe Fonts]** zijn toegevoegd, kunnen in de **[!UICONTROL Text]** accordeon van alle componenten worden geselecteerd.
 

@@ -2,19 +2,19 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: Experience Manager 6.5 Gebruikershandleiding voor middelen
+user-guide-title: Hulplijn voor middelen
 breadcrumb-title: Assets Guide
 user-guide-description: Create, manage, deliver, and optimize digital assets.
 translation-type: tm+mt
-source-git-commit: e917a36f9b8748080e9ab770a7f58f06123ea166
+source-git-commit: 45d7f741660bd8dd31cd454c034f562fc5394621
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '644'
 ht-degree: 37%
 
 ---
 
 
-# Experience Manager 6.5 Gebruikershandleiding voor middelen {#assets}
+# Hulplijn voor middelen {#assets}
 
 + [[!DNL Assets] gebruikershandleiding](home.md)
 + [Experience Manager 6.5 Opmerkingen bij de release van activa](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/assets.html)

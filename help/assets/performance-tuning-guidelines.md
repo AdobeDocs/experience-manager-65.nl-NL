@@ -1,12 +1,12 @@
 ---
-title: Prestaties afstemmen voor [!DNL Adobe Experience Manager Assets].
+title: Prestaties afstemmen [!DNL Assets].
 description: Suggesties en begeleiding [!DNL Experience Manager] over configuratie, veranderingen in hardware, software, en netwerkcomponenten om knelpunten te verwijderen en de prestaties van [!DNL Experience Manager Assets]te optimaliseren.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 9a4ae73c08657195da2741cccdb196bd7f7142c9
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '2680'
+source-wordcount: '2679'
 ht-degree: 0%
 
 ---

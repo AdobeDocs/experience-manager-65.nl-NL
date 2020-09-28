@@ -1,9 +1,9 @@
 ---
-title: ' [!DNL Adobe Experience Manager Assets] Integreren met [!DNL Adobe InDesign Server]'
+title: ' [!DNL Assets] Integreren met [!DNL InDesign Server]'
 description: Leer hoe u kunt [!DNL Adobe Experience Manager Assets] integreren met [!DNL Adobe InDesign Server].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
 source-wordcount: '1528'
 ht-degree: 1%
@@ -23,7 +23,7 @@ Voor het volledig uploaden van bestanden [!DNL Experience Manager Assets] die u 
 
 >[!NOTE]
 >
->[!DNL Adobe InDesign] wordt aangeboden als twee afzonderlijke aanbiedingen. [De Adobe InDesign](https://www.adobe.com/products/indesign.html) -bureaubladtoepassing waarmee u paginalay-outs voor afdrukken en digitale distributie kunt ontwerpen. [Met Adobe InDesign Server](https://www.adobe.com/products/indesignserver.html) kunt u programmatisch geautomatiseerde documenten maken op basis van wat u hebt gemaakt [!DNL InDesign]. Het werkt als dienst die een interface aan zijn motor [ExtendScript](https://www.adobe.com/devnet/scripting.html) aanbiedt.De manuscripten worden geschreven in [!DNL ExtendScript], die aan [!DNL JavaScript]. gelijkaardig is. Zie [!DNL InDesign] https://www.adobe.com/devnet/indesign/documentation.html#idscripting voor meer informatie over [scripts](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
+>[!DNL Adobe InDesign] wordt aangeboden als twee afzonderlijke aanbiedingen. [Adobe InDesign](https://www.adobe.com/products/indesign.html) -bureaubladtoepassing waarmee u paginalay-outs voor afdrukken en digitale distributie kunt ontwerpen. [Met Adobe InDesign Server](https://www.adobe.com/products/indesignserver.html) kunt u via programmacode geautomatiseerde documenten maken op basis van wat u hebt gemaakt [!DNL InDesign]. Het werkt als dienst die een interface aan zijn motor van [ExtendScript](https://www.adobe.com/devnet/scripting.html) aanbiedt.De manuscripten worden geschreven in [!DNL ExtendScript], die aan [!DNL JavaScript]. gelijkaardig is. Zie [!DNL InDesign] https://www.adobe.com/devnet/indesign/documentation.html#idscripting voor meer informatie over [scripts](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
 
 ## Hoe de extractie werkt {#how-the-extraction-works}
 
@@ -31,7 +31,7 @@ Het [!DNL Adobe InDesign Server] kan worden geïntegreerd met [!DNL Experience M
 
 >[!NOTE]
 >
->In eerdere versies van [!DNL Experience Manager] kon XMP en de miniatuur worden geëxtraheerd. Alle media kunnen nu worden uitgepakt.
+>In eerdere versies van [!DNL Experience Manager] konden XMP en de miniatuur worden opgehaald. Alle media kunnen nu worden uitgepakt.
 
 1. Upload het INDD-bestand naar [!DNL Experience Manager Assets].
 1. Een framework verzendt opdrachtscript(s) naar de SOAP [!DNL InDesign Server] (Simple Object Access Protocol).
@@ -47,7 +47,7 @@ Dit opdrachtscript:
 
    >[!NOTE]
    >
-   >IDML is een op XML gebaseerde indeling die alle inhoud van het [!DNL InDesign] bestand rendert. Het wordt opgeslagen als een gecomprimeerd pakket met [ZIP](https://www.techterms.com/definition/zip) -compressie. Zie [InDesign Interchange Formats INX en IDML](http://www.peachpit.com/articles/article.aspx?p=1381880&amp;seqNum=8)voor meer informatie.
+   >IDML is een op XML gebaseerde indeling die alle inhoud van het [!DNL InDesign] bestand rendert. Het wordt opgeslagen als een gecomprimeerd pakket met [ZIP](https://www.techterms.com/definition/zip) -compressie. Voor meer informatie, zie de Formaten INX en IDML van de [Uitwisseling van InDesign](http://www.peachpit.com/articles/article.aspx?p=1381880&amp;seqNum=8).
 
    >[!CAUTION]
    >
@@ -59,14 +59,14 @@ Dit opdrachtscript:
    * De geëxtraheerde tekst en bestanden worden opgeslagen in [!DNL Experience Manager Assets].
    * Alle uitvoeringen worden opgeslagen in [!DNL Experience Manager Assets], in het element zelf.
 
-## Integreer het [!DNL InDesign Server] met Experience Manager {#integrating-the-indesign-server-with-aem}
+## De [!DNL InDesign Server] Experience Manager integreren {#integrating-the-indesign-server-with-aem}
 
 Om het [!DNL InDesign Server] voor gebruik met [!DNL Experience Manager Assets] en na het vormen van uw volmacht te integreren, moet u:
 
-1. [Installeer de InDesign-server](#installing-the-indesign-server).
-1. Indien nodig, [configureert u de Experience Manager Assets Workflow](#configuring-the-aem-assets-workflow).
+1. [Installeer de InDesign Server](#installing-the-indesign-server).
+1. Indien nodig, [vorm de Workflow](#configuring-the-aem-assets-workflow)van de Activa van de Experience Manager.
 Dit is alleen nodig als de standaardwaarden niet geschikt zijn voor uw instantie.
-1. Configureer een [proxyworker voor de InDesign-server](#configuring-the-proxy-worker-for-indesign-server).
+1. Configureer een [proxyworker voor de InDesign Server](#configuring-the-proxy-worker-for-indesign-server).
 
 ### Installeer de [!DNL InDesign Server] {#installing-the-indesign-server}
 
@@ -96,7 +96,7 @@ De toepassing installeren en starten [!DNL InDesign Server] met [!DNL Experience
 
 Dit werkschema is opstelling met standaardwaarden die voor uw opstelling op de diverse auteursinstanties (dit is een standaardwerkschema, zodat is de verdere informatie beschikbaar onder het [Uitgeven van een Werkschema](/help/sites-developing/workflows-models.md#configuring-a-workflow-step)) kunnen worden aangepast. Als u de standaardwaarden (met inbegrip van de haven van de ZEEP) gebruikt, dan is geen configuratie nodig.
 
-Na de installatie wordt het uploaden van [!DNL InDesign] bestanden naar [!DNL Experience Manager Assets] (een van de gebruikelijke methoden) de workflow gestart om het element te verwerken en de verschillende uitvoeringen voor te bereiden. Test uw configuratie door een INDD-bestand te uploaden naar [!DNL Experience Manager Assets] om te bevestigen dat de verschillende uitvoeringen die onder IDS zijn gemaakt, worden weergegeven `<*your_asset*>.indd/Renditions`
+Na de installatie zorgt het uploaden van [!DNL InDesign] bestanden naar [!DNL Experience Manager Assets] (een van de gebruikelijke methoden) ervoor dat de workflow het element verwerkt en de verschillende uitvoeringen voorbereidt. Test uw configuratie door een INDD-bestand te uploaden naar [!DNL Experience Manager Assets] om te bevestigen dat de verschillende uitvoeringen die onder IDS zijn gemaakt, worden weergegeven `<*your_asset*>.indd/Renditions`
 
 #### Media-extractie {#media-extraction}
 
@@ -232,5 +232,5 @@ U kunt de standaardbeheerdersgeloofsbrieven (gebruikersnaam en wachtwoord) voor 
 
 >[!MORELIKETHIS]
 >
->* [Over Adobe InDesign Server](https://www.adobe.com/products/indesignserver/faq.html)
+>* [Informatie over Adobe InDesign Server](https://www.adobe.com/products/indesignserver/faq.html)
 

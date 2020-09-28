@@ -1,11 +1,11 @@
 ---
-title: Use Connected Assets to share DAM assets in [!DNL Adobe Experience Manager Sites] authoring workflow.
+title: Use Connected Assets to share DAM assets in [!DNL Sites]
 description: Gebruik de middelen die beschikbaar zijn op een [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] externe implementatie.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 28c55333e0eebb68ada46ee89785f5f6475abf9e
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '2019'
+source-wordcount: '2017'
 ht-degree: 41%
 
 ---
@@ -21,7 +21,7 @@ Gebruikers kunnen webpagina&#39;s maken in [!DNL Experience Manager Sites]. [!DN
 
 When editing pages in [!UICONTROL Page Editor], the authors can seamlessly search, browse, and embed assets from a different [!DNL Assets] deployment. De beheerders creëren eenmalig integratie van een plaatsing van [!DNL Sites] met een verschillende (verre) plaatsing van [!DNL Assets].
 
-For the [!DNL Sites] authors, the remote assets are available as read-only local assets. Met deze functie kunt u naadloos zoeken naar telkens een klein aantal externe assets voor gebruik. To make many remote assets available on a [!DNL Sites] deployment in one-go, consider migrating the assets in bulk. Zie [Experience Manager Assets migration guide](/help/assets/assets-migration-guide.md).
+For the [!DNL Sites] authors, the remote assets are available as read-only local assets. Met deze functie kunt u naadloos zoeken naar telkens een klein aantal externe assets voor gebruik. To make many remote assets available on a [!DNL Sites] deployment in one-go, consider migrating the assets in bulk. Zie de migratiehandleiding voor [Experience Manager Assets](/help/assets/assets-migration-guide.md).
 
 ### Vereisten en ondersteunde implementaties {#prerequisites}
 
@@ -32,9 +32,9 @@ Controleer de volgende punten voordat u deze functie gebruikt of configureert:
 
    |  | [!DNL Sites] als Cloud Service | [!DNL Experience Manager] 6.5 [!DNL Sites] over AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] on-premise |
    |---|---|---|---|
-   | **[!DNL Experience Manager Assets]als Cloud Service ** | Ondersteund | Ondersteund | Ondersteund |
-   | **[!DNL Experience Manager]6.5[!DNL Assets]over AMS ** | Ondersteund | Ondersteund | Ondersteund |
-   | **[!DNL Experience Manager]6.5[!DNL Assets]on-premise ** | Niet ondersteund | Niet ondersteund | Niet ondersteund |
+   | **[!DNL Experience Manager Assets]als Cloud Service** | Ondersteund | Ondersteund | Ondersteund |
+   | **[!DNL Experience Manager]6.5[!DNL Assets]over AMS** | Ondersteund | Ondersteund | Ondersteund |
+   | **[!DNL Experience Manager]6.5[!DNL Assets]on-premise** | Niet ondersteund | Niet ondersteund | Niet ondersteund |
 
 ### Ondersteunde bestandsindelingen {#mimetypes}
 

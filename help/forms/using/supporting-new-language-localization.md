@@ -10,9 +10,9 @@ topic-tags: Configuration
 discoiquuid: d4e2acb0-8d53-4749-9d84-15b8136e610b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 1a4bfc91cf91b4b56cc4efa99f60575ac1a9a549
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '813'
 ht-degree: 0%
 
 ---
@@ -26,21 +26,32 @@ De lokalisatie van adaptieve formulieren is afhankelijk van twee typen taalwoord
 
 **Formulierspecifiek woordenboek** bevat tekenreeksen die worden gebruikt in adaptieve formulieren. Bijvoorbeeld labels, veldnamen, foutberichten, Help-beschrijvingen enzovoort. Het wordt beheerd als een set XLIFF-bestanden voor elke landinstelling en u kunt het bestand openen op `https://<host>:<port>/libs/cq/i18n/translator.html`.
 
-**Algemene woordenboeken** Er zijn twee algemene woordenboeken, beheerd als JSON-objecten, in de AEM-clientbibliotheek. Deze woordenboeken bevatten standaardfoutberichten, naam van de maand, valutasymbolen, datum- en tijdpatronen, enzovoort. U vindt deze woordenboeken in CRXDe Lite op /libs/fd/xfaforms/clientlibs/I18N. Deze locaties bevatten afzonderlijke mappen voor elke landinstelling. Omdat algemene woordenboeken meestal niet vaak worden bijgewerkt, kunnen browsers door afzonderlijke JavaScript-bestanden voor elke landinstelling te bewaren deze in cache plaatsen en het gebruik van de netwerkbandbreedte verminderen wanneer ze verschillende adaptieve formulieren op dezelfde server gebruiken.
+**Algemene woordenboeken** Er zijn twee algemene woordenboeken, beheerd als JSON-objecten, in AEM clientbibliotheek. Deze woordenboeken bevatten standaardfoutberichten, naam van de maand, valutasymbolen, datum- en tijdpatronen, enzovoort. U vindt deze woordenboeken in CRXDe Lite op /libs/fd/xfaforms/clientlibs/I18N. Deze locaties bevatten afzonderlijke mappen voor elke landinstelling. Omdat algemene woordenboeken meestal niet vaak worden bijgewerkt, kunnen browsers door afzonderlijke JavaScript-bestanden voor elke landinstelling te bewaren deze in cache plaatsen en het gebruik van de netwerkbandbreedte verminderen wanneer ze verschillende adaptieve formulieren op dezelfde server gebruiken.
 
 ### Hoe lokalisatie van adaptief formulier werkt {#how-localization-of-adaptive-form-works}
 
-Wanneer een adaptief formulier wordt weergegeven, identificeert het de aangevraagde landinstelling door de volgende parameters in de opgegeven volgorde te bekijken:
+Er zijn twee methoden om de landinstelling van het adaptieve formulier te bepalen. Wanneer een adaptief formulier wordt gegenereerd, geeft dit de aangevraagde landinstelling aan met:
 
-* De parameter van het verzoek `afAcceptLang`om de browser scène van gebruikers met voeten te treden, kunt u overgaan 
+* Bekijk de `[local]` kiezer in het aangepaste formulier-URL. The format of the URL is `http://host:port/content/forms/af/[afName].[locale].html?wcmmode=disabled`. Met `[local]` kiezer kunt u een adaptief formulier in de cache plaatsen.
+
+* de volgende parameters in de opgegeven volgorde bekijken:
+
+   * De parameter van het verzoek `afAcceptLang`om de browser scène van gebruikers met voeten te treden, kunt u overgaan 
 `afAcceptLang` request parameter to force the locale. Met de volgende URL wordt het formulier bijvoorbeeld geforceerd weergegeven in de Japanse landinstelling:
-   `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
+      `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
-* De landinstelling van de browser die voor de gebruiker is ingesteld. Deze landinstelling wordt in de aanvraag opgegeven met behulp van de `Accept-Language` koptekst.
+   * De landinstelling van de browser die voor de gebruiker is ingesteld. Deze landinstelling wordt in de aanvraag opgegeven met behulp van de `Accept-Language` koptekst.
 
-* Taalinstelling van de gebruiker die is opgegeven in AEM.
+   * Taalinstelling van de gebruiker opgegeven in AEM.
 
-Nadat de landinstelling is vastgesteld, wordt in het adaptieve formulier het formulierspecifieke woordenboek gekozen. Als het formulierspecifieke woordenboek voor de aangevraagde landinstelling niet wordt gevonden, wordt het Engelse (en) woordenboek gebruikt.
+   * Landinstelling browser is standaard ingeschakeld. Als u de landinstelling van de browser wilt wijzigen,
+      * Open configuratiebeheer. De URL is `http://[server]:[port]/system/console/configMgr`
+      * Zoek en open de **[!UICONTROL Adaptive Form and Interactive Communication Web Channel]** configuratie.
+      * Wijzig de status van de **[!UICONTROL Use Browser Locale]** optie en **[!UICONTROL Save]** de configuratie.
+
+Nadat de landinstelling is vastgesteld, wordt in het adaptieve formulier het formulierspecifieke woordenboek gekozen. Als het formulierspecifieke woordenboek voor de aangevraagde landinstelling niet wordt gevonden, wordt het woordenboek gebruikt voor de taal waarin het adaptieve formulier is geschreven.
+
+Als er geen landinstellingsgegevens aanwezig zijn, wordt het adaptieve formulier geleverd in de oorspronkelijke taal van het formulier. De oorspronkelijke taal is de taal die wordt gebruikt bij de ontwikkeling van het adaptieve formulier.
 
 Als er geen clientbibliotheek voor de aangevraagde landinstelling bestaat, wordt in de bibliotheek gecontroleerd of er taalcode aanwezig is in de landinstelling. Als de aangevraagde landinstelling bijvoorbeeld `en_ZA` (Zuid-Afrikaans Engels) is en de clientbibliotheek voor `en_ZA` niet bestaat, gebruikt het adaptieve formulier de clientbibliotheek voor `en` (Engels) taal, als deze bestaat. Als er echter geen van deze mogelijkheden bestaat, wordt in het adaptieve formulier het woordenboek voor de `en` landinstelling gebruikt.
 
@@ -110,7 +121,7 @@ De `<locale>` tekst verschijnt om `https://'[server]:[port]'/libs/cq/i18n/transl
 
 ### De server opnieuw starten {#restart-the-server}
 
-Start de AEM-server opnieuw zodat de toegevoegde landinstelling van kracht wordt.
+Start de AEM server opnieuw om de toegevoegde landinstelling te activeren.
 
 ## Voorbeeldbibliotheken voor het toevoegen van ondersteuning voor Spaans {#sample-libraries-for-adding-support-for-spanish}
 

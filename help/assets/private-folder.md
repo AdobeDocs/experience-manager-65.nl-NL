@@ -1,11 +1,11 @@
 ---
-title: Persoonlijke map in [!DNL Adobe Experience Manager Assets]
+title: Persoonlijke mappen om elementen te delen
 description: Leer hoe u een persoonlijke map maakt in [!DNL Adobe Experience Manager Assets] de toepassing en deze deelt met andere gebruikers en hoe u deze map verschillende rechten toekent.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: be97ef4f3bb6b904dabcfcd44025a4898bcf4dee
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '628'
 ht-degree: 0%
 
 ---

@@ -1,11 +1,11 @@
 ---
-title: Download digitale middelen van [!DNL Adobe Experience Manager].
+title: Elementen downloaden
 description: Leer hoe u elementen kunt downloaden [!DNL Adobe Experience Manager] en de downloadfunctionaliteit kunt in- of uitschakelen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 76f2df9b1d3e6c2ca7a12cc998d64423d49ebc5b
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '824'
+source-wordcount: '822'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Voer de volgende stappen uit om elementen te downloaden:
 1. Selecteer de map of selecteer een of meer middelen in de map.
 1. Tik op de werkbalk op **[!UICONTROL Download.]**
 
-   ![Beschikbare opties voor het downloaden van middelen van Experience Manager Assets](/help/assets/assets/asset-download1.png)
+   ![Beschikbare opties voor het downloaden van Experience Manager-elementen](/help/assets/assets/asset-download1.png)
 
    *Afbeelding: Opties in het dialoogvenster Downloaden.*
 
@@ -41,7 +41,7 @@ Voer de volgende stappen uit om elementen te downloaden:
    | **[!UICONTROL Email]** | Er wordt een e-mailbericht verzonden naar de gebruiker. De standaard e-mailsjablonen zijn beschikbaar op de volgende locaties:<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> De malplaatjes die u tijdens plaatsing aanpast zijn beschikbaar bij de volgende plaatsen: <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul>U kunt huurdersspecifieke douanemalplaatjes bij de volgende plaatsen opslaan:<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> |
    | **[!UICONTROL Asset(s)]** | Selecteer deze optie als u het element in de oorspronkelijke vorm zonder vertoningen wilt downloaden.<br>De optie Subassets is beschikbaar als het oorspronkelijke element subassets heeft. |
    | **[!UICONTROL Rendition(s)]** | Een vertoning is de binaire representatie van een element. Elementen hebben een primaire representatie, namelijk die van het geüploade bestand. Zij kunnen om het even welk aantal vertegenwoordiging hebben. <br> Met deze optie kunt u de uitvoeringen selecteren die u wilt downloaden. Welke uitvoeringen beschikbaar zijn, is afhankelijk van het element dat u selecteert. De optie is beschikbaar als het element uitvoeringen heeft. |
-   | **[!UICONTROL Smart Crops]** | Selecteer deze optie als u alle slimme uitsnijduitvoeringen van het geselecteerde element wilt downloaden vanuit AEM. Er wordt een ZIP-bestand met de Smart Crop-uitvoeringen gemaakt en gedownload naar uw lokale computer. |
+   | **[!UICONTROL Smart Crops]** | Selecteer deze optie als u alle slimme uitsnijduitvoeringen van het geselecteerde element vanuit AEM wilt downloaden. Er wordt een ZIP-bestand met de Smart Crop-uitvoeringen gemaakt en gedownload naar uw lokale computer. |
    | **[!UICONTROL Dynamic Rendition(s)]** | Selecteer deze optie als u een reeks alternatieve vertoningen in real-time wilt genereren. Wanneer u deze optie selecteert, selecteert u ook de uitvoeringen die u dynamisch wilt maken door een optie te selecteren in de lijst [Voorinstelling](image-presets.md) afbeelding. <br>Bovendien kunt u de grootte en maateenheid, de indeling, de kleurruimte, de resolutie en eventuele optionele afbeeldingsaanpassingen selecteren, zoals het omkeren van de afbeelding. De optie is alleen beschikbaar als u deze hebt [!DNL Dynamic Media] ingeschakeld. |
 
 1. In the dialog box, tap **[!UICONTROL Download.]**.
@@ -74,6 +74,6 @@ De functie `Asset Download Servlet` kan worden uitgeschakeld in een [!DNL Experi
 >[!MORELIKETHIS]
 >
 >* [Met DRM beveiligde middelen](drm.md)downloaden.
->* [Download middelen via de Experience Manager-bureaubladtoepassing op Win- of Mac-bureaublad](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#download-assets).
->* [Download elementen via Adobe Assets Link vanuit de ondersteunde Adobe Creative Cloud-apps](https://helpx.adobe.com/nl/enterprise/using/manage-assets-using-adobe-asset-link.html).
+>* [Download middelen via de Experience Manager desktop app op Win- of Mac-bureaublad](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#download-assets).
+>* [Download Adobe Assets Link vanuit de ondersteunde Adobe Creative Cloud-apps](https://helpx.adobe.com/nl/enterprise/using/manage-assets-using-adobe-asset-link.html).
 

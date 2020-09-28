@@ -1,11 +1,11 @@
 ---
-title: Lichtbak als persoonlijke afbeeldingsgalerie in [!DNL Adobe Experience Manager Assets].
-description: Meer informatie over Lichtbak als persoonlijke afbeeldingengalerie in Adobe Experience Manager Assets].
+title: Lichtbak als galerie met persoonlijke afbeeldingen
+description: Meer informatie over Lichtbak als persoonlijke galerie voor afbeeldingen in Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '240'
+source-wordcount: '239'
 ht-degree: 1%
 
 ---

@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 9d952604-f9ef-498f-937b-871817c80226
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
+source-git-commit: 824ddd48e4680eed1d4612c6ad450a8f1bc68e7c
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Berichtenonderdeel {#messaging-feature}
 
-Naast de openbaar zichtbare interactie die in forums en commentaren voorkomt, laat de overseineneigenschap van AEM Communities communautaire leden toe om met elkaar meer privé in wisselwerking te staan.
+Naast de openbaar zichtbare interacties die in forums en commentaren voorkomen, laat de overseineneigenschap van AEM Communities communityleden toe om met elkaar meer privé in wisselwerking te staan.
 
 Deze functie kan worden opgenomen wanneer een [communitysite](/help/communities/overview.md#communitiessites) wordt gemaakt.
 
@@ -41,7 +41,9 @@ De overseineneigenschap verstrekt de capaciteit om:
 
 **G** - herstel een geschrapt bericht
 
-![messaging-section](assets/messaging-section.png) ![restore-message](assets/restore-message.png)
+![messaging-section](assets/messaging-section.png)
+
+![herstelbericht](assets/restore-message.png)
 
 Om de overseineneigenschap toe te laten en te wijzigen, zie:
 
@@ -97,7 +99,7 @@ Nadat de overerving is geannuleerd, is het mogelijk om het configuratiepictogram
 
 * **Mappaden**
 
-   (*Vereist*) Verwijzend de waarden die voor **inbox.path.name** en **sentitems.path.name** in de Dienst [van de Verrichtingen van het Overseinen van](/help/communities/messaging.md#messaging-operations-service)AEM Communities worden geplaatst. Wanneer het vormen voor een `Inbox`, voeg één ingang toe gebruikend de waarde van **inbox.path.name**. Wanneer het vormen voor een `Outbox`, voeg één ingang toe gebruikend de waarde van **sentitems.path.name**. Voeg bij de configuratie voor `Trash`twee items met beide waarden toe.
+   (*Vereist*) Verwijzend naar de waarden die voor **inbox.path.name** en **sentitems.path.name** in de Dienst [van de Verrichtingen van het Overseinen van](/help/communities/messaging.md#messaging-operations-service)AEM Communities worden geplaatst. Wanneer het vormen voor een `Inbox`, voeg één ingang toe gebruikend de waarde van **inbox.path.name**. Wanneer het vormen voor een `Outbox`, voeg één ingang toe gebruikend de waarde van **sentitems.path.name**. Voeg bij de configuratie voor `Trash`twee items met beide waarden toe.
 
 #### Tabblad Weergave {#display-tab}
 

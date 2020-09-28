@@ -1,12 +1,12 @@
 ---
-title: Video-elementen beheren in [!DNL Adobe Experience Manager].
+title: Videoassets beheren
 description: Video-elementen uploaden, voorvertonen, notities aanbrengen en publiceren in [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 93b8fccc2a0c4663104150fdba3651ff5e4f6bbc
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '728'
-ht-degree: 7%
+source-wordcount: '727'
+ht-degree: 8%
 
 ---
 

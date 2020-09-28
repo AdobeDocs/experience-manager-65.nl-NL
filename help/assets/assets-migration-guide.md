@@ -1,11 +1,11 @@
 ---
-title: Migreer activa [!DNL Adobe Experience Manager Assets] in bulk.
+title: Elementen in bulk migreren
 description: Beschrijft hoe te om activa in te brengen [!DNL Adobe Experience Manager], meta-gegevens toe te passen, vertoningen te produceren, en hen te activeren om instanties te publiceren.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 892237699a4027e7dab406fd620cac220aa8b88b
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '1781'
+source-wordcount: '1780'
 ht-degree: 8%
 
 ---
@@ -118,7 +118,7 @@ Nadat de migratie is voltooid, moeten de draagraketten voor de [!UICONTROL DAM U
 
 ## Migreren naar meerdere [!DNL Experience Manager] implementaties {#migrating-between-aem-instances}
 
-Hoewel bijna niet zo gemeenschappelijk, soms moet u grote hoeveelheden gegevens van één [!DNL Experience Manager] plaatsing aan een andere migreren; wanneer u bijvoorbeeld een [!DNL Experience Manager] upgrade uitvoert, uw hardware upgradet of naar een nieuw datacenter migreert, zoals met een AMS-migratie.
+Hoewel bijna niet zo gemeenschappelijk, soms moet u grote hoeveelheden gegevens van één [!DNL Experience Manager] plaatsing aan een andere migreren; bijvoorbeeld wanneer u een [!DNL Experience Manager] upgrade uitvoert, uw hardware upgradet of naar een nieuw datacenter migreert, zoals met een AMS-migratie.
 
 In dit geval worden uw elementen al gevuld met metagegevens en worden er al uitvoeringen gegenereerd. U kunt zich eenvoudig concentreren op het verplaatsen van elementen van de ene naar de andere instantie. Wanneer het migreren tussen [!DNL Experience Manager] plaatsing, voert u de volgende stappen uit:
 

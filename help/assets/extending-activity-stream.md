@@ -1,9 +1,9 @@
 ---
-title: ' [!DNL Assets] Integreren met activiteitsstroom.'
+title: ' [!DNL Assets] Integreren met activiteitsstroom'
 description: Beschrijft de opnamemogelijkheden [!DNL Experience Manager] van en hoe te om het te vormen om specifieke gebeurtenissen te registreren.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
 source-wordcount: '253'
 ht-degree: 1%
@@ -51,7 +51,7 @@ De [webconsole](/help/sites-deploying/configuring-osgi.md) biedt toegang tot de 
 
 1. Vinkje **[!UICONTROL Enables this service]**.
 
-1. Controleer welke **[!UICONTROL Event Types]** u in de stroom van de gebruikersactiviteit wilt worden geregistreerd.
+1. Controleer welke **[!UICONTROL Event Types]** u wilt opnemen in de gebruikersactiviteitsstroom.
 
 1. Klik op **[!UICONTROL Save]**.
 

@@ -1,11 +1,11 @@
 ---
-title: '[!DNL Adobe Experience Manager] [!DNL Adobe Creative Cloud] aan omslag die beste praktijken deelt.'
+title: Mappen delen [!DNL Adobe Creative Cloud] volgens aanbevolen procedures
 description: Configureer [!DNL Adobe Experience Manager] to allow users in [!DNL Experience Manager Assets] om mappen uit te wisselen met gebruikers van Adobe Creative Cloud (CC).
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '960'
+source-wordcount: '956'
 ht-degree: 0%
 
 ---
@@ -39,9 +39,9 @@ Het volgende diagram geeft een overzicht van de integratie.
 De integratie omvat de volgende elementen:
 
 * **[!DNL Experience Manager Assets]** opgesteld in het ondernemingsnetwerk (beheerde diensten of op-gebouw): Hier wordt het delen van mappen gestart.
-* **[!DNL Adobe Marketing Cloud Assets]kernservice **: Handelt als tussenpersoon tussen[!DNL Experience Manager]en[!DNL Creative Cloud]opslagdiensten. Een beheerder van een organisatie die de integratie gebruikt moet vertrouwensrelatie tussen de organisatie van de Marketing Cloud en de[!DNL Assets]plaatsing vestigen. Zij[bepalen ook een lijst van erkende medewerkers](https://docs.adobe.com/content/help/en/core-services/interface/assets/t-admin-add-cc-user.html)van Creative Cloud, die de[!DNL Assets]gebruikers omslagen voor extra veiligheid kunnen delen.
+* **[!DNL Adobe Marketing Cloud Assets]kernservice**: Handelt als tussenpersoon tussen [!DNL Experience Manager] en [!DNL Creative Cloud] opslagdiensten. Een beheerder van een organisatie die de integratie gebruikt moet vertrouwensrelatie tussen de organisatie van de Marketing Cloud en de [!DNL Assets] plaatsing vestigen. Zij [bepalen ook een lijst van erkende medewerkers](https://docs.adobe.com/content/help/en/core-services/interface/assets/t-admin-add-cc-user.html)van Creative Cloud, die de [!DNL Assets] gebruikers omslagen voor extra veiligheid kunnen delen.
 
-* **[!DNL Creative Cloud]Webservices **voor middelen (web-UI voor opslag en[!DNL Creative Cloud]bestanden): In dit geval kunnen specifieke gebruikers van een Creative Cloud-app, met wie een[!DNL Assets]map werd gedeeld, de uitnodiging accepteren en de map bekijken in de opslag van hun Creative Cloud-account.
+* **[!DNL Creative Cloud]Webservices** voor middelen (web-UI voor opslag en [!DNL Creative Cloud] bestanden): In dit geval kunnen specifieke gebruikers van een Creative Cloud-app, met wie een [!DNL Assets] map werd gedeeld, de uitnodiging accepteren en de map bekijken in de opslag van hun Creative Cloud-account.
 * **Creative Cloud-bureaubladtoepassing**: (Optioneel) Hiermee hebt u rechtstreeks toegang tot gedeelde mappen/bestanden vanaf het bureaublad van de creatieve gebruiker via synchronisatie met de opslag [!DNL Creative Cloud] Middelen.
 
 ## Kenmerken en beperkingen {#characteristics-and-limitations}
@@ -52,7 +52,7 @@ De integratie omvat de volgende elementen:
    * [!DNL Experience Manager] maakt alleen versies van een element bij updates als het bestand daar oorspronkelijk vandaan komt [!DNL Experience Manager] en daar wordt bijgewerkt.
    * [!DNL Creative Cloud] De activa verstrekt zijn eigen [versioning eigenschap](https://helpx.adobe.com/creative-cloud/help/versioning-faq.html) die op Werk in Lopende updates (hoofdzakelijk, slaat updates tot 10 dagen op) wordt gericht
 
-* **Ruimtebeperkingen:** Grootte en volumes van uitgewisselde bestanden worden beperkt door het specifieke quotum [voor](https://helpx.adobe.com/creative-cloud/kb/file-storage-quota.html) Creative Cloud-middelen voor creatieve gebruikers (afhankelijk van het abonnementsniveau) en een beperking van de maximale bestandsgrootte van 5 GB. De ruimte wordt bovendien beperkt door het assetquotum dat de organisatie heeft in de kernservice Adobe Marketing Cloud Assets.
+* **Ruimtebeperkingen:** Grootte en volumes van uitgewisselde bestanden worden beperkt door het specifieke quotum [voor](https://helpx.adobe.com/creative-cloud/kb/file-storage-quota.html) Creative Cloud-middelen voor creatieve gebruikers (afhankelijk van het abonnementsniveau) en een beperking van de maximale bestandsgrootte van 5 GB. De ruimte wordt bovendien beperkt door de quota van de activa die de organisatie in de kerndienst van Adobe Marketing Cloud Assets heeft.
 
 * **Ruimtevereisten:** De dossiers in gedeelde omslagen moeten ook fysisch in [!DNL Experience Manager] en dan in [!DNL Creative Cloud] rekening, met een caching exemplaar in de [!DNL Marketing Cloud Assets] kerndienst worden opgeslagen.
 * **Netwerken en bandbreedte:** De bestanden in gedeelde mappen en alle updates moeten via het netwerk tussen de systemen worden getransporteerd. Zorg ervoor dat alleen relevante bestanden en updates worden gedeeld.

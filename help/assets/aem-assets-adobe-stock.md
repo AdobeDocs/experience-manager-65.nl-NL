@@ -1,11 +1,11 @@
 ---
-title: ' [!DNL Adobe Stock] Elementen beheren in [!DNL Adobe Experience Manager Assets].'
+title: Elementen [!DNL Adobe Stock] beheren
 description: Zoek, haal, vergunning, en [!DNL Adobe Stock] beheer activa van binnen [!DNL Adobe Experience Manager]. Gebruik de in licentie gegeven activa als elk ander digitaal actief.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2ac848fa360ad87ff4f87efc38ae1361ae890cb2
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1047'
 ht-degree: 2%
 
 ---

@@ -10,9 +10,9 @@ content-strategy: max-2018
 discoiquuid: 770e9174-b648-462a-abe9-05fefa967d86
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a929252a13f66da8ac3e52aea0655b12bdd1425f
+source-git-commit: d324586eb1d4fb809bf87641001b92a1941e6548
 workflow-type: tm+mt
-source-wordcount: '6067'
+source-wordcount: '6062'
 ht-degree: 0%
 
 ---
@@ -350,7 +350,7 @@ In de werkbalk Canvas ziet u:
 * **Zijpaneel** in-/ ![uitschakelen](assets/toggle-side-panel.png): Hiermee kunt u zijbalk tonen of verbergen.
 * **Themaopties** ![voor thema&#39;s](assets/theme-options.png): Biedt drie opties
 
-   * Configureren: Hier vindt u opties waarmee u het voorbeeldformulier of de interactieve communicatie, de basisclientlib- en typekit-configuratie kunt selecteren.
+   * Configureren: Hier vindt u opties voor het selecteren van het voorbeeldformulier of de interactieve communicatie, de basisclientlib- en Adobe Fonts-configuratie.
    * Thema-CSS weergeven: Hiermee genereert u CSS voor het geselecteerde thema.
    * Stijlen beheren: Biedt opties voor het beheer van tekst- en afbeeldingsstijlen
    * Help: Voert een afbeelding met instructies rondleiding door de Thema-editor uit.
@@ -489,23 +489,23 @@ U kunt formulieren of interactieve communicatiecomponenten opmaken voor meerdere
 
 ### Weblettertypen in een thema gebruiken {#using-web-fonts-in-a-theme}
 
-U kunt nu lettertypen gebruiken die beschikbaar zijn in een webservice in een adaptief formulier of interactieve communicatie. De out-of-the-box, [Typekit](https://typekit.com/), de dienst van het Webdoopvont, is beschikbaar als configuratie. Als u Typekit wilt gebruiken, maakt u een kit en lettertypen en haalt u de Kit-id op van de [Typekit-website](https://typekit.com/).
+U kunt nu lettertypen gebruiken die beschikbaar zijn in een webservice in een adaptief formulier of interactieve communicatie. Buiten-de-doos, [Adobe Fonts](https://fonts.adobe.com/), de dienst van het Web van de Adobe, is beschikbaar als configuratie. Als u Adobe Fonts wilt gebruiken, maakt u een kit, voegt u er lettertypen aan toe en haalt u de kit-id op van [Adobe Fonts](https://fonts.adobe.com/).
 
-Voer de volgende stappen uit om Typekit in AEM te configureren:
+Voer de volgende stappen uit om Adobe Fonts in AEM te configureren:
 
 1. Klik in de auteurinstantie op ![](assets/adobeexperiencemanager.png)adobeexperienceAdobe Experience Manager > Tools ![hammer](assets/hammer.png) > Deployment > Cloud Services.
-1. Navigeer op de pagina **Cloud Services** naar **Services** van derden > **Typekit** en klik op Nu **** configureren onder Typekit. Als er al een configuratie beschikbaar is, klikt u op de knop **+** om een nieuwe instantie te maken.
+1. Navigeer op de pagina **Cloud Services** naar de optie **Adobe Fonts** en open deze. Open de configuratiemap en klik op **Maken**.
 1. Geef in het dialoogvenster Configuratie **** maken een titel op voor de configuratie en klik op **Maken**.
 
    U wordt opnieuw gericht aan de configuratiepagina.
 
 1. Geef in het dialoogvenster Component bewerken dat wordt weergegeven uw kit-id op en klik op **OK**.
 
-Voer de volgende stappen uit om een thema te vormen om de configuratie te gebruiken TypeKit:
+Voer de volgende stappen uit om een thema te vormen om de configuratie van Adobe Fonts te gebruiken:
 
 1. Open een thema in de themaeditor voor de auteurinstantie.
 1. Navigeer in de themaeditor naar **Themaopties** ![theme-options](assets/theme-options.png) > **Configure**.
-1. Selecteer een kit in het veld **Typekit-configuratie** en klik op **Opslaan**.
+1. Selecteer een kit in het veld **Adobe Fonts-configuratie** en klik op **Opslaan**.
 
    U ziet nu dat de lettertypen zijn toegevoegd aan de eigenschap font-family van het thema.
 

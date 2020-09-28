@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+source-git-commit: d324586eb1d4fb809bf87641001b92a1941e6548
 workflow-type: tm+mt
-source-wordcount: '934'
+source-wordcount: '1115'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ De taken die aan een groep worden toegewezen verschijnen in Inbox van alle groep
 
    ![vordering](assets/claim.png)
 
-### Details weergeven en handelingen uitvoeren voor taken {#view-details-and-perform-actions-on-tasks}
+### Details weergeven en handelingen uitvoeren op taken {#view-details-and-perform-actions-on-tasks}
 
 Wanneer u een taak opent, kunt u taakdetails bekijken en beschikbare acties uitvoeren. De acties die beschikbaar zijn voor een taak worden gedefinieerd in de taakstap Toewijzen van de bijbehorende Forms-workflow.
 
@@ -123,3 +123,37 @@ Op het **[!UICONTROL Workflow Details]** tabblad ziet u elke stap van de workflo
 
 ![voltooid-taak-werkschema](assets/completed-task-workflow.png)
 
+## Problemen oplossen {#troubleshooting-workflows}
+
+### Kan geen items weergeven die gerelateerd zijn aan AEM workflow in AEM inbox {#unable-to-see-aem-worklow-items}
+
+Een eigenaar van een workflowmodel kan geen items met betrekking tot AEM workflow in AEM inbox weergeven. Om het probleem op te lossen, voegt u de onderstaande indexen toe aan uw AEM opslagplaats en maakt u de index opnieuw.
+
+1. Gebruik een van de volgende methoden om indexen toe te voegen:
+
+   * Maak de volgende knooppunten in CRX DE met `/oak:index/workflowDataLucene/indexRules/granite:InboxItem/properties` de respectievelijke eigenschappen zoals opgegeven in de volgende tabel:
+
+      | Knooppunt | Eigenschap | Type |
+      |---|---|---|
+      | sharedWith | sharedWith | TEKENREEKS |
+      | vergrendeld | vergrendeld | BOOLEAN |
+      | geretourneerd | geretourneerd | BOOLEAN |
+      | allowInboxSharing | allowInboxSharing | BOOLEAN |
+      | allowExplicitSharing | allowExplicitSharing | BOOLEAN |
+
+
+   * Implementeer de indices via een AEM. U kunt een [AEM project gebruiken Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype) om een plaatsbaar AEM pakket tot stand te brengen. Gebruik de volgende steekproefcode om indexen aan een project van het type van AEM toe te voegen.
+
+   ```Java
+      .property("sharedWith", "sharedWith").type(TYPENAME_STRING).propertyIndex()
+      .property("locked", "locked").type(TYPENAME_BOOLEAN).propertyIndex()
+      .property("returned", "returned").type(TYPENAME_BOOLEAN).propertyIndex()
+      .property("allowInboxSharing", "allowInboxSharing").type(TYPENAME_BOOLEAN).propertyIndex()
+      .property("allowExplicitSharing", "allowExplicitSharing").type(TYPENAME_BOOLEAN).propertyIndex()
+   ```
+
+1. [Maak een index met eigenschappen en stel deze in op true](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/queries-and-indexing.html#the-property-index).
+
+1. Na het vormen van indexen in CRX DE of het opstellen via een pakket, [herindexeer de bewaarplaats](https://helpx.adobe.com/in/experience-manager/kb/HowToCheckLuceneIndex.html#Completelyrebuildtheindex).
+
+https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/queries-and-indexing.html

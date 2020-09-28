@@ -1,12 +1,12 @@
 ---
-title: Elementen opnieuw gebruiken met MSM voor [!DNL Adobe Experience Manager Assets].
+title: Elementen hergebruiken met MSM
 description: Gebruik elementen op meerdere pagina's/mappen die zijn afgeleid van en gekoppeld aan bovenliggende elementen. De elementen blijven gesynchroniseerd met een primaire kopie en ontvangen met een paar klikken de updates van de bovenliggende elementen.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '3265'
+source-wordcount: '3259'
 ht-degree: 11%
 
 ---
@@ -70,7 +70,7 @@ Ga als volgt te werk om live kopieën te maken met de eerste methode:
 
 1. Selecteer bronelementen of -mappen. From the toolbar, click **[!UICONTROL Create]** > **[!UICONTROL Live Copy]**.
 
-   ![Live kopie maken van Experience Manager-interface](assets/create_lc1.png)
+   ![Actieve kopie maken van Experience Manager-interface](assets/create_lc1.png)
 
    *Afbeelding: Live kopie maken van[!DNL Experience Manager]interface.*
 
@@ -82,7 +82,7 @@ Ga als volgt te werk om live kopieën te maken met de tweede methode:
 
 1. Klik in de [!DNL Experience Manager] interface in de rechterbovenhoek op **[!UICONTROL Create]** > **[!UICONTROL Live Copy]**.
 
-   ![Live kopie maken van Experience Manager-interface](assets/create_lc2.png)
+   ![Actieve kopie maken van Experience Manager-interface](assets/create_lc2.png)
 
    *Afbeelding: Live kopie maken van[!DNL Experience Manager]interface.*
 
@@ -214,7 +214,7 @@ Met een synchronisatiehandeling worden de wijzigingen alleen van een bron naar d
 |---|---|---|
 | [!UICONTROL References] spoor | Snel synchroniseren wanneer de bron al is geselecteerd. | Zie [Snelle acties van References rail voor bron](#refrailsource) |
 | Werkbalk op de [!UICONTROL Properties] pagina | Een synchronisatie starten wanneer u de live kopieereigenschappen al hebt geopend. | Zie Een live kopie [synchroniseren](#synclc) |
-| [!UICONTROL Live Copy Overview] console | Synchroniseer snel meerdere elementen (niet noodzakelijkerwijs alle) wanneer de bronmap is geselecteerd of de [!UICONTROL Live Copy Overview] console al geopend is. De synchronisatiehandeling wordt gestart voor één element tegelijk, maar is een snellere manier om te synchroniseren voor meerdere middelen in één keer. | Zie [Handelingen voor veel elementen in een live-kopieermap](#bulkactions) |
+| [!UICONTROL Live Copy Overview] console | Synchroniseer snel meerdere elementen (niet noodzakelijkerwijs alle) wanneer de bronmap is geselecteerd of de [!UICONTROL Live Copy Overview] console al geopend is. De synchronisatiehandeling wordt uitgevoerd voor één element tegelijk, maar is een snellere manier om te synchroniseren voor meerdere middelen in één keer. | Zie [Handelingen voor veel elementen in een live-kopieermap](#bulkactions) |
 
 ### Een live kopie synchroniseren {#synclc}
 
@@ -252,7 +252,7 @@ U kunt alle lokale wijzigingen ongedaan maken en de status van het element herst
 
 ## Live relatie verwijderen {#detach}
 
-U kunt de relatie tussen een bron en een live kopie volledig verwijderen met de actie Loskoppelen. De live kopie wordt een zelfstandig middel of een zelfstandige map nadat deze is losgekoppeld. Het wordt getoond als nieuw middel in [!DNL Experience Manager] interface, onmiddellijk na het losmaken. Voer de volgende stappen uit om een live kopie van de bron los te koppelen.
+U kunt de relatie tussen een bron en een live kopie volledig verwijderen met de actie Loskoppelen. De live kopie wordt een zelfstandig middel of een zelfstandige map nadat deze is losgekoppeld. Het wordt getoond als nieuwe activa in [!DNL Experience Manager] interface, onmiddellijk na het losmaken. Voer de volgende stappen uit om een live kopie van de bron los te koppelen.
 
 1. Selecteer een actief of map voor live kopiëren. Klik op **[!UICONTROL Properties]** op de werkbalk. U kunt ook de sneltoets gebruiken `p`.
 
@@ -270,7 +270,7 @@ U kunt ook snel meerdere elementen in een live kopieermap loskoppelen van de **[
 
 ## Handelingen uitvoeren op vele elementen in een live-kopieermap {#bulkactions}
 
-Als een live-kopieermap meerdere elementen bevat, kan het lastig zijn acties op elk element te starten. U kunt de basishandelingen voor veel elementen snel starten vanuit [!UICONTROL Live Copy Console]. De bovenstaande methoden werken nog steeds voor afzonderlijke elementen.
+Als u meerdere elementen in een live-kopieermap hebt, kan het lastig zijn om acties voor elk element te starten. U kunt de basishandelingen voor veel elementen snel starten vanuit [!UICONTROL Live Copy Console]. De bovenstaande methoden werken nog steeds voor afzonderlijke elementen.
 
 1. Selecteer een bronmap. Klik op **[!UICONTROL Properties]** op de werkbalk. U kunt ook de sneltoets gebruiken `p`.
 1. Klik op **[!UICONTROL Live Copy Source]**. Klik op **[!UICONTROL Live Copy Overview]** om de console te openen.
@@ -301,7 +301,7 @@ Als een live-kopieermap meerdere elementen bevat, kan het lastig zijn acties op 
 Live kopieën en bronnen zijn elementen of mappen die tot op zekere hoogte als digitale elementen kunnen worden beheerd. Sommige taken voor middelenbeheer in [!DNL Experience Manager] zijn van invloed op de live kopieën.
 
 * Wanneer u een live kopie kopieert, wordt een live kopie van het element gemaakt met dezelfde bron als de eerste live kopie.
-* Wanneer u een bron of de live kopie ervan verplaatst, blijft de live relatie behouden.
+* Wanneer u een bron of een live kopie verplaatst, blijft de live relatie behouden.
 * Handeling bewerken werkt niet voor live-kopieerelementen. Als de bron van een live kopie een live kopie op zich is, werkt de bewerking niet voor de kopie.
 * Uitchecken is niet beschikbaar voor live kopieerelementen.
 * Voor de bronmap is de optie voor het maken van revisietaken beschikbaar.

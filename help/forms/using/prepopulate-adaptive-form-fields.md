@@ -9,9 +9,9 @@ topic-tags: develop
 discoiquuid: 7139a0e6-0e37-477c-9e0b-aa356991d040
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 12b2b73b6363c90d784527b260d664e48c746496
 workflow-type: tm+mt
-source-wordcount: '2011'
+source-wordcount: '2189'
 ht-degree: 0%
 
 ---
@@ -166,7 +166,7 @@ Voor adaptieve formulieren op basis van JSON-schema wordt de structuur van de pr
 }}}}}
 ```
 
-Voor velden die het JSON-schemamodel gebruiken, worden de gegevens vooraf ingevuld in het object afBoundData, zoals in het voorbeeld JSON hieronder wordt getoond. Deze kan worden gebruikt voor het vooraf invullen van een adaptief formulier met een of meer niet-gebonden tekstvelden. Hieronder ziet u een voorbeeld van gegevens met `afData/afBoundData` omloop:
+Voor velden die het JSON-schemamodel gebruiken, worden de gegevens voorgevuld in het afBoundData-object, zoals in het voorbeeld JSON hieronder wordt getoond. Deze kan worden gebruikt voor het vooraf invullen van een adaptief formulier met een of meer niet-gebonden tekstvelden. Hieronder ziet u een voorbeeld van gegevens met `afData/afBoundData` omloop:
 
 ```json
 {
@@ -227,7 +227,7 @@ De XML-labels voor de gebruikersgegevens die voor verschillende velden worden ve
 
 ## Prefill-service configureren met Configuratiebeheer {#configuring-prefill-service-using-configuration-manager}
 
-Om de prefill dienst toe te laten, specificeer de Standaard Prefill Configuratie van de Dienst in de Configuratie van de Console van AEM Web. Gebruik de volgende stappen om de Prefill dienst te vormen:
+Om de prefill dienst toe te laten, specificeer de Standaard Prefill Configuratie van de Dienst in de Configuratie van de Console van het AEM Web. Gebruik de volgende stappen om de Prefill dienst te vormen:
 
 >[!NOTE]
 >
@@ -246,7 +246,7 @@ Om de prefill dienst toe te laten, specificeer de Standaard Prefill Configuratie
 
    >[!NOTE]
    >
-   >Standaard is Prefill toegestaan via crx-bestanden voor alle typen adaptieve formulieren (XSD, XDP, JSON, FDM en geen gebaseerd formuliermodel). Vooraf invullen is alleen toegestaan met JSON- en XML-bestanden.
+   >Prefill wordt standaard toegestaan via crx-bestanden voor alle typen adaptieve Forms (XSD, XDP, JSON, FDM en geen gebaseerd formuliermodel). Vooraf invullen is alleen toegestaan met JSON- en XML-bestanden.
 
 1. De prefill-service is nu geconfigureerd voor uw formulier.
 
@@ -340,9 +340,9 @@ U kunt de douane vooraf ingevulde dienst voor de scenario&#39;s gebruiken, waar 
 
 ### Een vooraf ingevulde service maken en uitvoeren {#create-and-run-a-prefill-service}
 
-De prefill dienst is de dienst OSGi en door bundel OSGi verpakt. U creeert de bundel OSGi, uploadt, en installeert het aan de bundels van AEM Forms. Voordat u begint met het maken van de bundel:
+De prefill dienst is de dienst OSGi en door bundel OSGi verpakt. U maakt de OSGi-bundel, uploadt en installeert deze naar AEM Forms-bundels. Voordat u begint met het maken van de bundel:
 
-* [Download de AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
+* [De AEM Forms Client SDK downloaden](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
 * Het tekstbouwsteenpakket downloaden
 
 * Plaats het gegevensbestand (vooraf ingevulde gegevens) in crx-bewaarplaats. U kunt het bestand op elke locatie in de map \contents van de crx-opslagplaats plaatsen.
@@ -357,7 +357,7 @@ Het bouwsteenpakket (voorbeeldenservicepakket) bevat een voorbeeldimplementatie 
 1. Stel in de code de waarde in van:
 
    * `nodePath:` De knooppuntvariabele die naar de crx-gegevensopslagplaats wijst bevat weg van het gegevens (prefill) dossier. Bijvoorbeeld /content/prefilldata.xml
-   * `label:` Met de parameter label wordt de weergavenaam van de service opgegeven. Bijvoorbeeld, de StandaardVooraf ingevulde Dienst
+   * `label:` De labelparameter geeft de weergavenaam van de service op. Bijvoorbeeld, de StandaardVooraf ingevulde Dienst
 
 1. Sla het `Prefill.java` bestand op en sluit het.
 1. Voeg het `AEM Forms Client SDK` pakket aan de bouwstijlweg van het bouwsteenproject toe.
@@ -365,9 +365,26 @@ Het bouwsteenpakket (voorbeeldenservicepakket) bevat een voorbeeldimplementatie 
 
 #### De Prefill-service starten en gebruiken {#start-and-use-the-prefill-service}
 
-Als u de Prefill-service wilt starten, uploadt u het JAR-bestand naar de webconsole van AEM Forms en activeert u de service. De service verschijnt nu in de editor voor aangepaste formulieren. Een vooraf ingevulde service koppelen aan een adaptief formulier:
+Als u de Prefill-service wilt starten, uploadt u het JAR-bestand naar de AEM Forms-webconsole en activeert u de service. De service verschijnt nu in de editor voor aangepaste formulieren. Een vooraf ingevulde service koppelen aan een adaptief formulier:
 
-1. Open het aangepaste formulier in de Forms Editor en open het deelvenster Eigenschappen voor de Formuliercontainer.
-1. Navigeer in de eigenschappenconsole naar de AEM Forms-container > Standaard > Prefill Service.
+1. Open het adaptieve formulier in de Forms Editor en open het deelvenster Eigenschappen voor de Form Container.
+1. Navigeer in de eigenschappenconsole naar AEM Forms-container > Basic > Prefill Service.
 1. Selecteer de standaardvoorgevulde service en klik op **[!UICONTROL Save]**. De service is gekoppeld aan het formulier.
 
+## Gegevens vooraf invullen op client {#prefill-at-client}
+
+Wanneer u een adaptief formulier vooraf instelt, voegt de AEM Forms-server gegevens samen met een adaptief formulier en levert het ingevulde formulier aan u. De handeling voor het samenvoegen van gegevens vindt standaard plaats op de server.
+
+U kunt de AEM Forms-server zo configureren dat de handeling voor het samenvoegen van gegevens wordt uitgevoerd op de client in plaats van op de server. Hierdoor wordt de tijd die nodig is om adaptieve formulieren vooraf in te vullen en weer te geven, aanzienlijk verkort. De functie is standaard uitgeschakeld. U kunt het van de Manager van de Configuratie of bevellijn toelaten.
+
+* Om van configuratiemanager toe te laten of onbruikbaar te maken:
+   1. Open AEM Configuration Manager.
+   1. Zoek en open het Adaptieve formulier en de Interactieve communicatie Web Channel Configuration
+   1. Schakel de optie Configuration.af.clinentside.datamerge.enabled.name in
+* U kunt als volgt vanaf de opdrachtregel in- of uitschakelen:
+   * Voer de volgende opdracht cURL uit om in te schakelen:
+      `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=true \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
+
+   * Voer de volgende opdracht cURL uit om het uit te schakelen:
+      `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=false \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
+   Om volledig voordeel te halen uit de vooraf ingevulde gegevens bij cliëntoptie, werk uw prefill dienst bij om [FileAttachmentMap](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) en [CustomContext terug te keren](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html)

@@ -1,9 +1,9 @@
 ---
-title: Trapsgewijze metagegevens in [!DNL Adobe Experience Manager Assets].
+title: Metagegevens trapsgewijs weergeven in [!DNL Assets]
 description: In dit artikel wordt beschreven hoe u trapsgewijze metagegevens voor elementen definieert.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c92215a6cb1f4c3d02e9a5f5b3fd36c65fc002ce
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
 source-wordcount: '898'
 ht-degree: 5%

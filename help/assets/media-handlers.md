@@ -1,11 +1,11 @@
 ---
-title: Verwerk elementen met gebruik van mediafuncties en workflows in [!DNL-Adobe Experience Manager].
+title: Elementen verwerken met behulp van mediafuncties en workflows
 description: Leer meer over de media handlers en hoe u workflows kunt gebruiken om taken uit te voeren op uw digitale middelen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 39bbb1d663bb54ef425dfeb5e0fc10ea37eb5708
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '2042'
+source-wordcount: '2037'
 ht-degree: 1%
 
 ---

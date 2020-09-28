@@ -1,11 +1,11 @@
 ---
-title: Installeer en configureer ImageMagick voor gebruik met [!DNL Adobe Experience Manager Assets].
+title: ImageMagick installeren en configureren
 description: Leer over de software ImageMagick, hoe te om het te installeren, opstelling de het processtap van de bevellijn, en gebruik het om, duimnagels van beelden uit te geven samen te stellen en te produceren.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5d66bf75a6751e41170e6297d26116ad33c2df44
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: '655'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Als u grote bestanden wilt verwerken met ImageMagick, moet u rekening houden met
 
 >[!NOTE]
 >
->Als u [!DNL Experience Manager] op [!DNL Adobe Managed Services] (AMS) gebruikt, neemt u contact op met de klantenservice van Adobe als u veel PSD- of PSB-bestanden met hoge resolutie wilt verwerken. [!DNL Experience Manager] PSB-bestanden met een zeer hoge resolutie die groter zijn dan 30000 x 23000 pixels, worden mogelijk niet verwerkt.
+>Als u [!DNL Experience Manager] op [!DNL Adobe Managed Services] (AMS) gebruikt, neemt u contact op met de klantenservice van Adobe als u van plan bent om veel PSD- of PSB-bestanden met hoge resolutie te verwerken. [!DNL Experience Manager] PSB-bestanden met een zeer hoge resolutie die groter zijn dan 30000 x 23000 pixels, worden mogelijk niet verwerkt.
 
 ## ImageMagick installeren {#installing-imagemagick}
 
@@ -82,7 +82,7 @@ Er zijn meerdere beveiligingskwetsbaarheden verbonden aan het gebruik van ImageM
 
 Daarnaast zijn verschillende plug-ins voor beeldverwerking afhankelijk van de ImageMagick-bibliotheek, waaronder, maar niet uitsluitend, PHP&#39;s fantaick, Ruby&#39;s magick en paperclip en de imagemagick van nodejs.
 
-Als u ImageMagick of een betrokken bibliotheek gebruikt, raadt Adobe u aan de bekende kwetsbaarheden te beperken door ten minste een van de volgende taken (maar bij voorkeur beide) uit te voeren:
+Als u ImageMagick of een beïnvloede bibliotheek gebruikt, adviseert Adobe dat u de bekende kwetsbaarheid verlicht door minstens één van de volgende taken (maar bij voorkeur allebei) uit te voeren:
 
 1. Controleer of alle afbeeldingsbestanden beginnen met de verwachte [&quot;toverbytes&quot;](https://en.wikipedia.org/wiki/List_of_file_signatures) die overeenkomen met de afbeeldingsbestandstypen die u ondersteunt voordat u ze naar ImageMagick stuurt voor verwerking.
-1. Gebruik een beleidsdossier om de kwetsbare Codeurs uit te schakelen ImageMagick. Het algemene beleid voor ImageMagick is te vinden op `/etc/ImageMagick`.
+1. Gebruik een beleidsdossier om de kwetsbare Codeurs onbruikbaar te maken ImageMagick. Het algemene beleid voor ImageMagick is te vinden op `/etc/ImageMagick`.

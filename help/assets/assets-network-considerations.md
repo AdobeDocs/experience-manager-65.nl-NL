@@ -1,11 +1,11 @@
 ---
-title: '[!DNL Assets] netwerkoverwegingen en vereisten.'
+title: Netwerkoverwegingen en -vereisten
 description: Bespreekt netwerkoverwegingen wanneer het ontwerpen van [!DNL Adobe Experience Manager Assets] een plaatsing.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '992'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Zorg ervoor dat u het volgende in uw netwerkdiagram omvat:
 
 Begin door de connectiviteit tussen de individuele cliëntapparaten en het collectieve netwerk te diagrammen. In dit stadium, identificeer gedeelde middelen, zoals WiFi verbindingen, waar de veelvoudige gebruikers tot het zelfde punt of Ethernet schakelaar toegang hebben om activa te uploaden en te downloaden.
 
-![chlimage_1-355](assets/chlimage_1-353.png)
+![chlimage_1-353](assets/chlimage_1-353.png)
 
 Clientapparaten maken op verschillende manieren verbinding met het bedrijfsnetwerk, zoals gedeelde WiFi, Ethernet met een gedeelde switch en VPN. Het identificeren van en het begrip van chokepoints op dit netwerk is belangrijk voor [!DNL Assets] planning en om het netwerk te wijzigen.
 
@@ -48,7 +48,7 @@ Het diagram toont hogere opstraalverbindingssnelheden binnen het collectieve net
 
 ## Uploaden naar internet vanuit het bedrijfsnetwerk en de [!DNL Experience Manager] omgeving {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
 
-![chlimage_1-353](assets/chlimage_1-355.png)
+![chlimage_1-355](assets/chlimage_1-355.png)
 
 Het is belangrijk om onbekende factoren op Internet en de verbinding te overwegen VPC omdat de bandbreedte over Internet wegens pieklading of grootschalig leveranciersstroomonderbrekingen kan worden verminderd. Over het algemeen is internetconnectiviteit betrouwbaar. Soms kan dit echter wel leiden tot een verschuiving.
 
@@ -64,11 +64,11 @@ Van de steekproefdiagrammen, kunt u concluderen dat zes apparaten een conceptuee
 
 ## Topologie van het [!DNL Experience Manager] milieu {#topology-of-the-aem-environment}
 
-![chlimage_1-354](assets/chlimage_1-356.png)
+![chlimage_1-356](assets/chlimage_1-356.png)
 
 Het ontwerpen van de topologie van het [!DNL Experience Manager] milieu vereist gedetailleerde kennis van de systeemconfiguratie en hoe het netwerk binnen het gebruikersmilieu wordt aangesloten.
 
-Het steekproefscenario omvat publiceer landbouwbedrijf met vijf servers, een S3 binaire opslag, en gevormde Dynamic Media.
+Het steekproefscenario omvat publiceer landbouwbedrijf met vijf servers, een S3 binaire opslag, en Dynamische gevormde Media.
 
 De verzender deelt het 100Mbps verbinding met twee entiteiten, de buitenwereld en de [!DNL Experience Manager] plaatsing. Voor gelijktijdige upload- en downloadbewerkingen moet u dit getal door twee delen. De externe opslag in de bijlage gebruikt een aparte verbinding.
 

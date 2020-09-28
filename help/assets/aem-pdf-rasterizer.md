@@ -1,11 +1,11 @@
 ---
-title: Gebruik PDF-rasterfunctie om uitvoeringen van PDF-bestanden te genereren.
-description: Genereer miniaturen en uitvoeringen van hoge kwaliteit met de Adobe PDF Rasterizer-bibliotheek in [!DNL-Adobe Experience Manager].
+title: PDF-rasterfunctie gebruiken om uitvoeringen te genereren
+description: Genereer miniaturen en uitvoeringen van hoge kwaliteit met de Adobe PDF Rasterizer-bibliotheek in [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: bccc937c1e1a349ab292a748c3c7b9d0c68b6199
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '673'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # PDF-raster gebruiken {#using-pdf-rasterizer}
 
-Wanneer u grote, inhoudintensieve PDF- of AI-bestanden uploadt naar [!DNL Adobe Experience Manager Assets], genereert de standaardomzetting mogelijk geen nauwkeurige uitvoer. De Adobe PDF Rasterizer-bibliotheek kan een betrouwbaardere en nauwkeurigere uitvoer genereren dan de uitvoer uit een standaardbibliotheek. Adobe raadt u aan de PDF Rasterizer-bibliotheek te gebruiken voor de volgende scenario&#39;s:
+Wanneer u grote, inhoudintensieve PDF- of AI-bestanden uploadt naar [!DNL Adobe Experience Manager Assets], genereert de standaardomzetting mogelijk geen nauwkeurige uitvoer. PDF Rasterizer-bibliotheek kan een betrouwbaardere en nauwkeurigere uitvoer genereren in vergelijking met de uitvoer uit een standaardbibliotheek. Adobe raadt u aan de PDF Rasterizer-bibliotheek te gebruiken voor de volgende scenario&#39;s:
 
 * AI-bestanden of PDF-bestanden met veel inhoud.
 * AI-bestanden en PDF-bestanden met miniaturen die niet standaard worden gegenereerd.
 * AI-bestanden met Pantone Matching System (PMS)-kleuren.
 
-Miniaturen en voorvertoningen die worden gegenereerd met PDF Rasterizer, zijn beter in kwaliteit dan uitvoer in de buitenverpakking en bieden daarom een consistente kijkervaring op verschillende apparaten. De Adobe PDF Rasterizer-bibliotheek ondersteunt geen kleurruimteconversies. De uitvoer wordt altijd naar RGB uitgevoerd, ongeacht de kleurruimte van het bronbestand.
+Miniaturen en voorvertoningen die worden gegenereerd met PDF Rasterizer, zijn beter in kwaliteit dan uitvoer in de buitenverpakking en bieden daarom een consistente kijkervaring op verschillende apparaten. De Adobe PDF Rasterizer-bibliotheek ondersteunt geen kleurruimteconversie. De uitvoer wordt altijd naar RGB uitgevoerd, ongeacht de kleurruimte van het bronbestand.
 
 1. Installeer het PDF-rasterpakket op uw [!DNL Adobe Experience Manager] implementatie bij [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg).
 
@@ -31,10 +31,12 @@ Miniaturen en voorvertoningen die worden gegenereerd met PDF Rasterizer, zijn be
 
 1. Voer de volgende stappen uit om te voorkomen dat de standaardmethoden worden gebruikt voor het genereren van miniaturen en webvertoningen voor PDF- en AI-bestanden:
 
-   * Open de **[!UICONTROL Process Thumbnails]** stap en voeg `application/pdf` of voeg desgewenst `application/postscript` toe in het **[!UICONTROL Skip Mime Types]** veld onder het **[!UICONTROL Thumbnails]** tabblad.
+   * Open de **[!UICONTROL Process Thumbnails]** stap en voeg `application/pdf` of voeg desgewenst in het `application/postscript` veld onder het **[!UICONTROL Skip Mime Types]** **[!UICONTROL Thumbnails]** tabblad toe.
+
    ![skip_mime_types-2](assets/skip_mime_types-2.png)
 
    * Voeg op het **[!UICONTROL Web Enabled Image]** tabblad naar wens toe `application/pdf` of `application/postscript` onder **[!UICONTROL Skip List]** .
+
    ![Configuratie om de verwerking van miniaturen voor een afbeeldingsindeling over te slaan](assets/web_enabled_imageskiplist.png)
 
 1. Open de **[!UICONTROL Rasterize PDF/AI Image Preview Rendition]** stap en verwijder het MIME-type waarvoor u de standaardgeneratie voorvertoningsafbeeldingsuitvoeringen wilt overslaan. Verwijder bijvoorbeeld het MIME-type `application/pdf`, `application/postscript`of `application/illustrator` uit de **[!UICONTROL MIME Types]** lijst.
@@ -47,6 +49,7 @@ Miniaturen en voorvertoningen die worden gegenereerd met PDF Rasterizer, zijn be
    * MIME-typen: `application/pdf` of `application/postscript`
    * Opdrachten: `PDFRasterizer -d -p 1 -s 1280 -t PNG -i ${file}`
    * Miniatuurgrootten toevoegen: 319:319, 140:100, 48:48. Voeg indien nodig aangepaste miniatuurconfiguratie toe.
+
    De opdrachtregelargumenten voor de `PDFRasterizer` opdracht kunnen het volgende bevatten:
 
    * `-d`: Vlag om het vloeiend weergeven van tekst, vectorillustraties en afbeeldingen mogelijk te maken. Hiermee maakt u afbeeldingen van betere kwaliteit. Het opnemen van deze parameter zorgt er echter voor dat de opdracht langzaam wordt uitgevoerd en dat de afbeeldingen groter worden.
@@ -84,6 +87,7 @@ Miniaturen en voorvertoningen die worden gegenereerd met PDF Rasterizer, zijn be
 
    * Opdrachten: `PDFRasterizer -d -p 1 -s 1280 -t PNG -i ${file}`
    * Miniatuurgrootten toevoegen: `319:319`, `140:100`, `48:48`. Voeg desgewenst aangepaste miniatuurconfiguratie toe.
+
    De opdrachtregelargumenten voor de `PDFRasterizer` opdracht kunnen het volgende bevatten:
 
    * `-d`: Vlag om het vloeiend weergeven van tekst, vectorillustraties en afbeeldingen mogelijk te maken. Hiermee maakt u afbeeldingen van betere kwaliteit. Het opnemen van deze parameter zorgt er echter voor dat de opdracht langzaam wordt uitgevoerd en dat de afbeeldingen groter worden.

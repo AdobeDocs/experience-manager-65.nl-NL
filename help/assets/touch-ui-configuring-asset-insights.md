@@ -1,11 +1,11 @@
 ---
-title: Configureer Asset Insights om analyses van het gebruik van digitale middelen te verkrijgen.
+title: Elementinzichten configureren voor analyses.
 description: Elementinzichten configureren in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b59f7471ab9f3c5e6eb3365122262b592c8e6244
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '210'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Elementinzichten configureren {#configure-asset-insights}
 
-[!DNL Adobe Experience Manager Assets] Hiermee haalt u gebruiksgegevens op van digitale elementen die door websites van derden worden gebruikt [!DNL Adobe Analytics]. Als u Asset Insights wilt inschakelen om deze gegevens op te halen en inzichten te genereren, moet u eerst de functie configureren voor integratie met Adobe Analytics.
+[!DNL Adobe Experience Manager Assets] Hiermee haalt u gebruiksgegevens op van digitale elementen die door websites van derden worden gebruikt [!DNL Adobe Analytics]. Om Asset Insights in in staat te stellen deze gegevens op te halen en inzichten te genereren, dient u eerst de functie te configureren voor integratie met Adobe Analytics.
 
 >[!NOTE]
 >
@@ -26,7 +26,7 @@ ht-degree: 0%
 1. Klik op de **[!UICONTROL Insights Configuration]** kaart.
 1. Selecteer een datacenter in de wizard en geef uw referenties op, inclusief de naam van uw organisatie, gebruikersnaam en gedeeld geheim.
 
-   ![Adobe Analytics for Assets Insights configureren in Experience Manager](assets/insights_config2.png)
+   ![Adobe Analytics for Assets Insights in Experience Manager configureren](assets/insights_config2.png)
 
    *Afbeelding: Configureer[!DNL Adobe Analytics]voor Middelen-inzichten in[!DNL Experience Manager].*
 

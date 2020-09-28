@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 628b6dcd-8b1c-4166-8fc2-843baa86ac1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
+source-git-commit: 824ddd48e4680eed1d4612c6ad450a8f1bc68e7c
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Scores en Badges Essentials {#scoring-and-badges-essentials}
 
-De functie AEM Communities scoren en badges biedt de mogelijkheid om leden van de gemeenschap te identificeren en te belonen.
+Met de functie AEM Communities scoring en badges kunnen leden van de gemeenschap worden geïdentificeerd en beloond.
 
 De details van het instellen van de functie worden beschreven op
 
@@ -35,7 +35,7 @@ Deze pagina bevat aanvullende technische gegevens:
 
 >[!CAUTION]
 >
->De implementatiestructuur die zichtbaar is in CRXDE Lite kan worden gewijzigd.
+>De in CRXDE Lite zichtbare implementatiestructuur kan worden gewijzigd.
 
 ## Badges weergeven {#displaying-badges}
 
@@ -83,7 +83,7 @@ Voor gedetailleerde instructies gaat u naar [Een aangepast logbestand](/help/sit
 
 U kunt als volgt snel een logbestand instellen:
 
-1. Toegang tot de Steun **van het Logboek van de Console van het Web van de** Adobe Experience Manager, bijvoorbeeld
+1. Toegang krijgen tot de ondersteuning **voor webconsolelogbestanden van** Adobe Experience Manager, bijvoorbeeld
 
    * https://localhost:4502/system/console/slinglog
 
@@ -102,7 +102,7 @@ U kunt als volgt snel een logbestand instellen:
 
 
 
-![chlimage_1-248](assets/chlimage_1-248.png)
+![debug-scoring-log](assets/debug-scoring-log.png)
 
 Logboekvermeldingen weergeven:
 
@@ -118,7 +118,7 @@ Logboekvermeldingen weergeven:
 
    * Bijvoorbeeld, `.../crx-quickstart/logs/scoring-debug.log`
 
-![chlimage_1-249](assets/chlimage_1-249.png)
+![scoring-log](assets/scoring-log.png)
 
 ## UGC voor scores en Badging {#ugc-for-scoring-and-badging}
 
@@ -128,7 +128,7 @@ In de beschrijvingen voor toegang tot scoring- en merkgegevens wordt JSRP gebrui
 
 **JSRP bij auteur**: experimenteren in de auteursomgeving resulteert in UGC die alleen zichtbaar is vanuit de auteursomgeving.
 
-**JSRP bij publicatie**: Op dezelfde wijze, als het testen op het publicatiemilieu, zal het noodzakelijk zijn om tot CRXDE Lite met administratieve voorrechten op een te publiceren instantie toegang te hebben. Als de publicatie-instantie wordt uitgevoerd in de [productiemodus](/help/sites-administering/production-ready.md) (geen samplcontent runmode), is het nodig om CRXDE Lite [in te](/help/sites-administering/enabling-crxde-lite.md)schakelen.
+**JSRP bij publicatie**: ook als het testen op de publicatieomgeving , is het nodig om toegang te krijgen tot CRXDE Lite met beheerdersrechten voor een publicatie - instantie . Als de publicatie-instantie wordt uitgevoerd in de [productiemodus](/help/sites-administering/production-ready.md) (geen samplcontent runmode), is het nodig om CRXDE Lite [in te schakelen](/help/sites-administering/enabling-crxde-lite.md).
 
 De basislocatie van UGC op JSRP is `/content/usergenerated/asi/jcr/`.
 
@@ -139,15 +139,15 @@ De volgende API&#39;s zijn beschikbaar voor gebruik:
 * [com.adobe.cq.social.scoring.api](https://docs.adobe.com/content/docs/en/aem/6-3/develop/ref/javadoc/com/adobe/cq/social/scoring/api/package-summary.html)
 * [com.adobe.cq.social.badging.api](https://docs.adobe.com/content/docs/en/aem/6-3/develop/ref/javadoc/com/adobe/cq/social/badging/api/package-summary.html)
 
-De nieuwste JavaDocs voor het geïnstalleerde functiepakket zijn beschikbaar voor ontwikkelaars in de opslagplaats van Adobe. Zie [Maven gebruiken voor Gemeenschappen: Javadocs](/help/communities/maven.md#javadocs).
+De recentste JavaDocs voor het geïnstalleerde eigenschappak zijn beschikbaar aan ontwikkelaars van de bewaarplaats van de Adobe. Zie [Maven gebruiken voor Gemeenschappen: Javadocs](/help/communities/maven.md#javadocs).
 
 **De locatie en indeling van de UGC in de opslagplaats kunnen zonder waarschuwing** worden gewijzigd.
 
 ### Voorbeeld instellen {#example-setup}
 
-De schermafbeeldingen van gegevensopslagruimte zijn afkomstig van het instellen van scoring en badging voor een forum op twee verschillende AEM-sites:
+De schermafbeeldingen van gegevensopslagruimte zijn afkomstig van het instellen van scoring en badging voor een forum op twee verschillende AEM sites:
 
-1. Een AEM-site *met* een unieke id (een site die is gemaakt met een wizard):
+1. Een AEM site *met* een unieke id (een communitysite die met een wizard is gemaakt):
 
    * De Aan de slag-zelfstudie (Inschakelen) gebruiken die tijdens de [Aan de slag-zelfstudie is gemaakt](/help/communities/getting-started.md)
    * Zoek het knooppunt voor forumpagina
@@ -178,7 +178,7 @@ De schermafbeeldingen van gegevensopslagruimte zijn afkomstig van het instellen 
    * Een gebruiker ondertekent in, maakt een forumonderwerp en krijgt een bronzen badge toegewezen
 
 
-1. Een AEM-site *zonder* unieke id:
+1. Een AEM site *zonder* unieke id:
 
    * De hulplijn [Community-componenten gebruiken](/help/communities/components-guide.md)
    * Zoek het knooppunt voor forumpagina
@@ -217,7 +217,7 @@ De schermafbeeldingen van gegevensopslagruimte zijn afkomstig van het instellen 
 
    Aangezien een gebruiker twee bronzen badges heeft verdiend en een moderatorbadge heeft gekregen, is dit hoe de gebruiker met hun forumingang verschijnt.
 
-![chlimage_1-250](assets/chlimage_1-250.png)
+   ![moderator](assets/moderator.png)
 
 >[!NOTE]
 >
@@ -229,7 +229,8 @@ De schermafbeeldingen van gegevensopslagruimte zijn afkomstig van het instellen 
    >  /libs/settings/community/scoring/rules/site2/forums-scoring
    >
    >
-* Unieke badge-afbeeldingen maken voor verschillende AEM-sites
+* Unieke badge-afbeeldingen maken voor verschillende AEM sites
+
 >
 
 
@@ -244,7 +245,7 @@ Voor onderzoeksdoeleinden, gebruikend JSRP bijvoorbeeld, is de basisomslag die s
 
 De onderliggende node van `scoring` is de naam van de scoreregel. Daarom is het verstandig om regelnamen op een server globaal uniek te scoren.
 
-Voor de site Geometrixx Engage bevinden de gebruiker en hun score zich in een pad dat is geconstrueerd met de naam van de scoreregel, de site-id van de community ( `engage-ba81p`), een unieke id en de id van de gebruiker:
+Voor de Geometrixx Engage-site bevinden de gebruiker en hun score zich in een pad dat is geconstrueerd met de naam van de scoreregel, site-id van de community ( `engage-ba81p`), een unieke id en de id van de gebruiker:
 
 * `.../scoring/forums-scoring/engage-ba81p/6d179715c0e93cb2b20886aa0434ca9b5a540401/riley`
 
@@ -254,7 +255,7 @@ Voor de Community Components-hulplijnsite bevinden de gebruiker en hun score zic
 
 De score wordt opgeslagen in de eigenschap `scoreValue_tl` die direct alleen een waarde kan bevatten of onrechtstreeks naar een atomicCounter kan verwijzen.
 
-![chlimage_1-251](assets/chlimage_1-251.png)
+![access-scoring-ugc](assets/access-scoring-ugc.png)
 
 ### Access Badging UGC {#access-badging-ugc}
 
@@ -270,11 +271,11 @@ Wordt gevolgd door het pad naar het gebruikersprofiel en eindigt in een map met 
 
 #### Toegewezen badge {#awarded-badge}
 
-![chlimage_1-252](assets/chlimage_1-252.png)
+![bekroonde badging-ugc](assets/access-badging-ugc.png)
 
 #### Toegewezen badge {#assigned-badge}
 
-![chlimage_1-253](assets/chlimage_1-253.png)
+![toegewezen badge](assets/assigned-badge.png)
 
 ## Additional Information {#additional-information}
 

@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 23aee6802e625e82d18a205586eb77341b6ef16e
 workflow-type: tm+mt
-source-wordcount: '3228'
+source-wordcount: '3247'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,6 @@ In dit document worden de ondersteunde client- en serverplatforms voor AEM Forms
 >
 >* Zie [Uitzonderingen op ondersteunde serverplatforms](../../forms/using/aem-forms-jee-supported-platforms.md#p-exceptions-to-supported-server-platforms-p)voor een volledige lijst met uitzonderingen op ondersteunde serverplatforms.
 >* AEM Forms on JEE ondersteunt alleen Engelse, Franse, Duitse en Japanse versies van de ondersteunde besturingssystemen en toepassingen.
-
 >
 
 
@@ -457,11 +456,9 @@ AEM Forms App ondersteunt nu de Apache Cordova. Hier volgen de platformspecifiek
 >* Conversies van PDF-generator voor OpenOffice worden alleen ondersteund in Windows en Linux.
 >* De functies OCR PDF, Optimize PDF en Export PDF worden alleen ondersteund in Windows.
 >* Een versie van Acrobat wordt meegeleverd met AEM Forms om de functionaliteit van de PDF Generator in te schakelen. De gebundelde versie mag alleen via programmacode toegankelijk zijn met AEM Forms, tijdens de periode van de AEM Forms-licentie, voor gebruik met AEM Forms PDF Generator. Raadpleeg voor meer informatie de productbeschrijving van AEM Forms volgens uw implementatie ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) of [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html)).&quot;
-
    >
    >
 * De service PDF Generator biedt geen ondersteuning voor Microsoft Windows 10.
-
 >
 
 
@@ -640,7 +637,6 @@ Zie voor aanvullende vereisten:
 >* Beheerconsole wordt niet ondersteund in Safari.
 >* Correspondence Management biedt geen ondersteuning voor Windows® Internet Explorer 9.0 voor AEM 6.1-formulieren.
 >* Forms Portal ondersteunt JAWS 14.0-schermlezersoftware in Internet Explorer 11 voor toegankelijkheid.
-
 >
 
 
@@ -675,7 +671,6 @@ Zie voor aanvullende vereisten:
 >[!NOTE]
 >
 >* Forms Portal wordt alleen ondersteund op Safari op iPad.
-
 >
 
 
@@ -688,7 +683,7 @@ De AEM Forms-app is beschikbaar op de volgende platforms:
 
 | **Platform** | **Ondersteunde apparaten** |
 |---|---|
-| Apple iOS | Apple iPhone, iPad, iPad Air en iPad mini met iOS 11 en hoger. |
+| Apple iOS | Apple iPhone, iPad, iPad Air en iPad mini met iOS 12 en hoger. |
 | Google Android | Android 5.1 en hoger. De AEM Forms-app is gecertificeerd voor Samsung Galaxy-tablets van 7 en 10 inch en voor populaire smartphones. |
 | Microsoft Windows | Microsoft Surface-apparaten, -tablets, -laptops en -desktops waarop het Microsoft Windows 10-besturingssysteem wordt uitgevoerd. |
 
@@ -734,3 +729,8 @@ Onder omstandigheden waarop Adobe geen invloed heeft, kunnen patches van derden 
 Adobe behoudt zich het recht voor om de referentieplatforms van derden die door een AEM Forms bij JEE-release worden ondersteund, en hun ondersteunde patchdefinities op een bepaald punt te wijzigen.
 
 Aanvullende informatie voor patches van derden kunt u ook vinden op de website van Adobe Enterprise Support voor artikelen in de kennisdatabase voor uw product.
+
+## Revisie-overzicht {#revision-history}
+
+* 09 sep. 2020
+   * Ondersteunde versie van iOS voor AEM Forms App gewijzigd in iOS 12. De vorige versie was iOS 11.

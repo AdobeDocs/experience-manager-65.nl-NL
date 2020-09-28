@@ -1,11 +1,11 @@
 ---
-title: Digital Rights Management in [!DNL Adobe Experience Manager Assets].
+title: Digital Rights Management van activa
 description: Leer hoe u de status van verlopen van middelen en informatie over gelicentieerde middelen beheert in [!DNL Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '1346'
+source-wordcount: '1347'
 ht-degree: 6%
 
 ---
@@ -165,7 +165,7 @@ Een actief wordt als beschermd beschouwd indien aan een van deze voorwaarden is 
 >
 >De locatie `/etc/dam/drm/licenses` die wordt gebruikt voor het opslaan van licenties in eerdere versies van [!DNL Experience Manager] is afgekeurd.
 >
->Als u licentiepagina&#39;s maakt of wijzigt of deze van vorige [!DNL Experience Manager] releases poort, raadt Adobe u aan deze pagina&#39;s onder `/apps/settings/dam/drm/licenses` of `/conf/&ast;/settings/dam/drm/licenses`op te slaan.
+>Als u licentiepagina&#39;s maakt of wijzigt of deze van vorige [!DNL Experience Manager] releases afgeeft, raadt Adobe u aan deze pagina&#39;s onder `/apps/settings/dam/drm/licenses` of `/conf/&ast;/settings/dam/drm/licenses`op te slaan.
 
 ### DRM-beveiligde bestanden downloaden {#downloading-drm-assets}
 

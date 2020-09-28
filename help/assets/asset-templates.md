@@ -1,11 +1,11 @@
 ---
-title: Elementsjablonen in [!DNL Adobe Experience Manager Assets].
+title: Elementsjablonen
 description: Meer informatie over Asset-sjablonen [!DNL Adobe Experience Manager Assets] en over het gebruik van asset templates om marketingmateriaal te maken.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 29cf202b2522b4e624960e8b911f77ec7f291e24
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
-source-wordcount: '1515'
+source-wordcount: '1514'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Overweeg een scenario waarin u digitaal afdrukbaar materiaal wilt maken, zoals b
 
 1. (Optioneel) Klik op een of meer tags voor de brochure **[!UICONTROL Tags]** en selecteer deze. Klik **[!UICONTROL Confirm]** om uw selectie te bevestigen.
 
-   ![chlimage_1-105](assets/chlimage_1-310.png)
+   ![chlimage_1-106](assets/chlimage_1-310.png)
 
 1. Klik op **[!UICONTROL Create]**. Een dialoogvenster bevestigt dat er een nieuwe brochure wordt gemaakt. Klik **[!UICONTROL Open]** om de brochure te openen in de bewerkingsmodus.
 
@@ -118,7 +118,7 @@ U kunt direct nadat u het hebt gemaakt, een onderpand bewerken. U kunt het besta
 
    U kunt ook naar afbeeldingen zoeken met behulp van trefwoorden, tags en op basis van hun publicatiestatus. U kunt door de [!DNL Experience Manager Assets] gegevensopslagruimte bladeren en naar de locatie van de gewenste afbeelding navigeren.
 
-   ![chlimage_1-115](assets/chlimage_1-320.png)
+   ![chlimage_1-114](assets/chlimage_1-320.png)
 
 1. Klik **[!UICONTROL Preview]** om een voorvertoning van de afbeelding weer te geven.
 
@@ -144,7 +144,7 @@ U kunt direct nadat u het hebt gemaakt, een onderpand bewerken. U kunt het besta
    >* Koppel [!DNL Experience Manager] het bestand aan uw lokale bestandssysteem en wijs ontbrekende pictogrammen toe aan bestaande elementen in [!DNL Experience Manager].
 
    >
-   >Raadpleeg de [!DNL InDesign] aanbevolen procedures voor het werken met InDesign-documenten in Experience Manager [voor meer informatie over het werken met](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html)documenten.
+   >Raadpleeg de [!DNL InDesign] aanbevolen procedures voor het werken met InDesign-documenten in de Experience Manager [voor meer informatie over het werken met](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html)documenten.
 
 1. Als u een PDF-uitvoering voor de brochure wilt genereren, selecteert u de optie Acrobat in het dialoogvenster en klikt u op **[!UICONTROL Continue]**.
 1. Het onderpand wordt gecreeerd in de omslag u met begon. Als u de vertoningen wilt weergeven, opent u het onderpand en kiest u een optie in de lijst GlobalNav. **[!UICONTROL Renditions]**

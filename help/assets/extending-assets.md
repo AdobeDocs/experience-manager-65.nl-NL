@@ -1,9 +1,9 @@
 ---
-title: Aanpassen en uitbreiden [!DNL Adobe Experience Manager Assets].
+title: Aanpassen en uitbreiden [!DNL Assets]
 description: Leer manieren waarop u Asset Share en Asset Editor kunt aanpassen en uitbreiden, waarmee gebruikers een specifiek op maat gemaakte interface en een set functies krijgen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
 workflow-type: tm+mt
 source-wordcount: '253'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 De Asset Editor is het belangrijkste toegangspunt waarmee gebruikers van een Adobe Enterprise Manager-website de digitale middelen in uw opslagplaats kunnen zoeken, bekijken en bewerken.
 
-Als [!DNL Experience Manager] ontwikkelaar kunt u de Editor van middelen op verschillende manieren aanpassen en uitbreiden en gebruikers een specifiek op maat gemaakte interface en functieset geven.
+Als [!DNL Experience Manager] ontwikkelaar kunt u de Editor van middelen op verschillende manieren aanpassen en uitbreiden, zodat gebruikers een specifiek op maat gemaakte interface en functieset krijgen.
 
 De volgende aspecten van de functionaliteit kunnen worden aangepast of verbeterd:
 
@@ -36,6 +36,6 @@ De volgende aspecten van de vormgeving van de Asset Editor kunnen worden aangepa
 
 ## Uitvoeringen aanpassen {#customizing-renditions}
 
-In [!DNL Experience Manager Assets] terminologie is een uitvoering de vorm waarin een actief wordt gepresenteerd. In het algemeen kan een bepaald actief meerdere uitvoeringen hebben. Zo kan een kleurenafbeelding met volledige kleuren bijvoorbeeld een uitvoering in de oorspronkelijke grootte hebben, een andere bij een verkleind formaat en een andere afbeelding die wordt verkleind en omgezet in grijswaarden.
+In [!DNL Experience Manager Assets] terminologie is een uitvoering de vorm waarin een actief wordt gepresenteerd. In het algemeen kan een bepaald actief meerdere uitvoeringen hebben. Zo kan de oorspronkelijke grootte van een kleurenafbeelding bijvoorbeeld één uitvoering hebben, een andere bij een verkleind formaat en een andere afbeelding die wordt verkleind en omgezet in grijswaarden.
 
 De uitvoeringen waarin een bepaald element beschikbaar is, kunnen worden aangepast en nieuwe uitvoeringen worden gemaakt.

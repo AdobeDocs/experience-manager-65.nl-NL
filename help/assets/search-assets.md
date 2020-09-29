@@ -4,7 +4,7 @@ description: Leer hoe u de vereiste elementen [!DNL Adobe Experience Manager] in
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 7b3282f086ba1f0a2f1e5430b90a6742ddf946d6
+source-git-commit: c94220ca6e31716b6de4dac99dfb98ac1ba1faff
 workflow-type: tm+mt
 source-wordcount: '5904'
 ht-degree: 4%
@@ -27,7 +27,7 @@ ht-degree: 4%
 | [Zoeken in rang en opvoeren](#searchrank) | [Tekst extraheren](#extracttextupload) | [Slimme verzamelingen](#collections) |
 | [Geavanceerd zoeken: filteren en zoekbereik](#scope) | [Aangepaste voorspelling](#custompredicates) | [Onverwachte resultaten begrijpen en problemen oplossen](#troubleshoot-unexpected-search-results-and-issues) |
 | [Zoeken in andere oplossingen en apps](#beyondomnisearch):<ul><li>[Adobe-itemkoppeling](#aal)</li><li>[Brand Portal](#brandportal)</li><li>[Experience Manager-bureaubladtoepassing](#desktopapp)</li><li>[Adobe Stock-afbeeldingen](#adobestock)</li><li>[Dynamische media-elementen](#dynamicmedia)</li></ul> |  |  |
-| [Asset Picker](#assetpicker) |  |  |
+| [Elementkiezer](#assetpicker) |  |  |
 | [Beperkingen](#limitations) en [tips](#tips) |  |  |
 | [Afbeeldingsvoorbeelden](#samples) |  |  |
 

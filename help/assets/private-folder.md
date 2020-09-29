@@ -3,9 +3,9 @@ title: Persoonlijke mappen om elementen te delen
 description: Leer hoe u een persoonlijke map maakt in [!DNL Adobe Experience Manager Assets] de toepassing en deze deelt met andere gebruikers en hoe u deze map verschillende rechten toekent.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 63d08f932b09e375e1b0da92cde27a60ec6e7f56
 workflow-type: tm+mt
-source-wordcount: '628'
+source-wordcount: '576'
 ht-degree: 0%
 
 ---
@@ -82,15 +82,4 @@ U kunt een map verwijderen door de map te selecteren en de [!UICONTROL Delete] o
 >[!NOTE]
 >
 >Als u een map verwijdert met de bovenstaande methode uit de gebruikersinterface, worden ook de bijbehorende gebruikersgroepen verwijderd.
-Bestaande redundante, ongebruikte en automatisch gegenereerde gebruikersgroepen kunnen echter uit de opslagplaats worden opgeschoond met behulp van [JMX](#group-clean-up-jmx).
-
-### JMX gebruiken om ongebruikte gebruikersgroepen op te schonen {#group-clean-up-jmx}
-
-Opschonen van opslagruimten voor ongebruikte gebruikersgroepen:
-
-1. Open JMX om overtollige groepen voor Activa op uw [!DNL Experience Manager] auteursinstantie van schoon te maken `http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`.
-Bijvoorbeeld, `http://no1010042068039.corp.adobe.com:4502/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`.
-
-1. Roep de `clean` methode aan vanuit deze JMX.
-
-U ziet dat alle overbodige gebruikersgroepen of de automatisch gegenereerde groepen (die worden gemaakt bij het maken van een map met dezelfde naam als een eerder verwijderde groep) uit het pad worden verwijderd `/home/groups/mac/default/<user_name>/<folder_name>`.
+Bestaande redundante, ongebruikte en automatisch gegenereerde gebruikersgroepen kunnen echter worden opgeschoond vanuit de opslagplaats met behulp van de `clean` methode in JMX in uw auteurinstantie (http://[server]:[poort]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets).

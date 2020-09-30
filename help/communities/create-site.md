@@ -1,8 +1,8 @@
 ---
 title: Auteur van een nieuwe communautaire site
 seo-title: Auteur van een nieuwe communautaire site
-description: Een nieuwe site voor AEM Communities maken
-seo-description: Een nieuwe site voor AEM Communities maken
+description: Een nieuwe AEM Communities-site maken
+seo-description: Een nieuwe AEM Communities-site maken
 uuid: 4f609f5f-ef07-44fc-aeb3-1c616e120d46
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 8ae324ea-8b84-47a3-aabf-1fee2a3bd46d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d5f4b8a8c42df86831bb57b73949e443ec19d7ea
+source-git-commit: 99fb808013da18ed028d59c43deab5e815169e26
 workflow-type: tm+mt
-source-wordcount: '1642'
+source-wordcount: '1640'
 ht-degree: 1%
 
 ---
@@ -23,10 +23,10 @@ ht-degree: 1%
 
 ## Een Community-site maken {#create-a-community-site}
 
-Gebruik de auteur instantie om een communautaire plaats tot stand te brengen. Bij instantie AEM Author:
+Gebruik de auteur instantie om een communautaire plaats tot stand te brengen. Instantie van AEM-auteur:
 
 1. Meld u aan met beheerdersrechten.
-1. Van globale navigatie, ga naar **Navigatie, Gemeenschappen, Plaatsen.**
+1. Van globale navigatie, ga naar **[!UICONTROL Communities]** > **[!UICONTROL Sites]**.
 
 De console van de Plaatsen van Gemeenschappen verstrekt een tovenaar om door de stappen te begeleiden om een communautaire plaats tot stand te brengen. U kunt verder gaan naar de `Next` stap of `Back` naar de vorige stap voordat u de site in de laatste stap toewijst.
 
@@ -71,7 +71,7 @@ Selecteer de gewenste stijl die u op de sjabloon wilt toepassen. Als deze optie 
 
 (Optioneel) Upload een bannerafbeelding voor weergave op de sitepagina&#39;s. De banner is vastgezet aan de linkerrand van browser, tussen de communautaire plaatsheader en navigatiekoppelingen. De bannerhoogte wordt bijgesneden tot 120 pixels. Er wordt geen grootte van de banner aangepast aan de breedte van de browser en de hoogte van 120 pixels.
 
-![chlimage_1-284](assets/chlimage_1-284.png)
+![branding op de website](assets/community-site-branding.png)
 
 ![uploaden naar afbeeldingssite](assets/upload-image-site.png)
 
@@ -81,7 +81,7 @@ Selecteer **Volgende**.
 
 Voor de stap van Montages, alvorens te selecteren `Next`, merk op dat er zeven secties zijn die toegang tot configuraties verlenen die gebruikersbeheer, het etiketteren, moderatie, groepsbeheer, analyses, vertaling en enablement impliceren.
 
-Bezoek de [Aan de slag met AEM Communities voor zelfstudie Enablement](/help/communities/getting-started-enablement.md) om het werken met de functies voor activering te ervaren.
+Ga naar de zelfstudie [Aan de slag met AEM Communities for Enablement](/help/communities/getting-started-enablement.md) om te werken met de functies voor activering.
 
 #### Gebruikersbeheer {#user-management}
 
@@ -102,14 +102,14 @@ Schakel alle selectievakjes voor [gebruikersbeheer in](/help/communities/sites-c
 
 #### TAGGING {#tagging}
 
-De tags die kunnen worden toegepast op community-inhoud, worden beheerd door AEM-naamruimten te selecteren die eerder zijn gedefinieerd via de [Tagingconsole](/help/sites-administering/tags.md#tagging-console) (zoals de naamruimte [van de](/help/communities/setup.md#create-tutorial-tags)zelfstudie).
+De tags die kunnen worden toegepast op community-inhoud, worden beheerd door AEM naamruimten te selecteren die eerder zijn gedefinieerd via de [Tagingconsole](/help/sites-administering/tags.md#tagging-console) (zoals de naamruimte [van de](/help/communities/setup.md#create-tutorial-tags)zelfstudie).
 
 Het zoeken naar naamruimten is eenvoudig met &#39;type-ahead&#39;-zoekopdracht. Bijvoorbeeld,
 
 * Type `tut`
 * Selecteer `Tutorial`
 
-![chlimage_1-286](assets/chlimage_1-286.png)
+![labelen](assets/tagging.png)
 
 #### ROLES {#roles}
 
@@ -133,15 +133,15 @@ Bijvoorbeeld,
 
 Accepteer de standaard algemene instellingen voor het [modereren](/help/communities/sites-console.md#moderation) van door de gebruiker gegenereerde inhoud (UGC).
 
-![chlimage_1-287](assets/chlimage_1-287.png)
+![matiging](assets/moderation1.png)
 
-#### ANALYTICS {#analytics}
+#### ANALYSE {#analytics}
 
-Als Adobe Analytics een licentie heeft en er een Analytics-cloudservice en -framework zijn geconfigureerd, is het mogelijk om Analytics in te schakelen en het framework te selecteren.
+Als Adobe Analytics een licentie heeft en er een cloudservice en -framework voor Analytics zijn geconfigureerd, is het mogelijk Analytics in te schakelen en het framework te selecteren.
 
-Zie [Analytics Configuration for Communities-functies](/help/communities/analytics.md).
+Zie [Analytics Configuration for Communities Features](/help/communities/analytics.md).
 
-![chlimage_1-288](assets/chlimage_1-288.png)
+![analyse](assets/analytics.png)
 
 #### VERTALING {#translation}
 
@@ -154,27 +154,27 @@ In de [vertaalinstellingen](/help/communities/sites-console.md#translation) word
 * Volledige pagina **vertalen selecteren**
 * De optie Standaardpersistentie behouden
 
-![chlimage_1-289](assets/chlimage_1-289.png)
+![translatie-instellingen](assets/translation-settings.png)
 
 #### UITSCHAKELING {#enablement}
 
 Laat leeg als u een betrokkenheidsgemeenschap maakt.
 
-Voor een gelijkaardige zelfstudie om snel een [enablement gemeenschap](/help/communities/overview.md#enablement-community)tot stand te brengen, zie [Begonnen met AEM Communities voor Enablement](/help/communities/getting-started-enablement.md).
+Zie [Aan de slag met AEM Communities for Enablement](/help/communities/overview.md#enablement-community)voor een vergelijkbare zelfstudie waarin u snel een [activeringscommunity](/help/communities/getting-started-enablement.md)kunt maken.
 
 Selecteer **Volgende**.
 
-![chlimage_1-290](assets/chlimage_1-290.png)
+![inschakelen](assets/enablement.png)
 
 ### Stap 4: Communitysite maken {#step-create-communities-site}
 
 Selecteer **Maken.**
 
-![chlimage_1-291](assets/chlimage_1-291.png)
+![site maken](assets/create-site2.png)
 
 Wanneer het proces is voltooid, wordt de map voor de nieuwe site weergegeven in de console Communities - Sites.
 
-![communautisesconsole](assets/communitiessitesconsole.png)
+![communautiessitesconsole](assets/communitiessitesconsole.png)
 
 ## De Community-site publiceren {#publish-the-community-site}
 
@@ -227,6 +227,7 @@ UGC is niet opgenomen in het sitepakket.
 >1. Wijzig in URI het poortnummer 4503 in het gewenste poortnummer. Als u bijvoorbeeld poort 6103 wilt gebruiken: https://localhost:6103/bin/receive?sling:authRequestLogin=1
 >1. Selecteer **[!UICONTROL OK]**.
 >1. (Optioneel) Selecteer **[!UICONTROL Clear]** of **[!UICONTROL Force Retry]** om de replicatiewachtrij opnieuw in te stellen.
+
 >
 
 
@@ -235,11 +236,9 @@ UGC is niet opgenomen in het sitepakket.
 
 Nadat u ervoor hebt gezorgd dat de publicatieserver actief is, selecteert u het wereldpictogram om de communitysite te publiceren.
 
-![chlimage_1-292](assets/chlimage_1-292.png)
+![publicatiesite](assets/publish-site.png)
 
-Wanneer de community-site is gepubliceerd, wordt kort een bericht weergegeven:
-
-![chlimage_1-293](assets/chlimage_1-293.png)
+Wanneer de communitysite met succes is gepubliceerd, wordt kort het bericht &#39;Site gepubliceerd&#39; weergegeven.
 
 ### Nieuwe gebruikersgroepen in de community {#new-community-user-groups}
 
@@ -260,11 +259,11 @@ Merk op dat [Aaron McDonald](/help/communities/tutorials.md#demo-users) lid is v
 * Maatschappelijke experts
 * Community Engage-leden (indirect als lid van de groep Moderatoren)
 
-![chlimage_1-294](assets/chlimage_1-294.png)
+![gebruikersgroep](assets/user-group.png)
 
 #### https://localhost:4503/content/sites/engage/en.html {#http-localhost-content-sites-engage-en-html}
 
-![chlimage_1-311](assets/chlimage_1-311.png)
+![aangaan](assets/engage.png)
 
 ## Configureren voor verificatiefout {#configure-for-authentication-error}
 
@@ -320,21 +319,21 @@ Aan de slag:
 >Als u deze optie wilt uitschakelen, plaatst u gewoon een voorvoegsel voor de `sling:match` eigenschapswaarde met een &#39; x&#39; - `xlocalhost.4503/$` - en **Alles** opslaan.
 
 
-![chlimage_1-297](assets/chlimage_1-297.png)
+![optionele stappen](assets/optional-steps.png)
 
 #### Problemen oplossen: Fout bij opslaan van kaart {#troubleshooting-error-saving-map}
 
 Als het niet lukt om wijzigingen op te slaan, moet u ervoor zorgen dat de knooppuntnaam bestaat `localhost.4503`met een &#39;punt&#39;-scheidingsteken en niet `localhost:4503` met een &#39;dubbele punt&#39;-scheidingsteken, omdat dit geen geldig naamruimtevoorvoegsel `localhost`is.
 
-![chlimage_1-298](assets/chlimage_1-298.png)
+![foutbericht](assets/error-message.png)
 
 #### Problemen oplossen: Doorsturen mislukt {#troubleshooting-fail-to-redirect}
 
-De &#39;**$**&#39; aan het einde van de reguliere-expressie- `sling:match`tekenreeks is van cruciaal belang, zodat alleen exact `https://localhost:4503/` wordt toegewezen. Anders wordt de omleidingswaarde voorafgegaan door elk pad dat mogelijk bestaat na de server:poort in de URL. Wanneer AEM naar de aanmeldingspagina probeert om te leiden, mislukt dit.
+De &#39;**$**&#39; aan het einde van de reguliere-expressie- `sling:match`tekenreeks is van cruciaal belang, zodat alleen exact `https://localhost:4503/` wordt toegewezen. Anders wordt de omleidingswaarde voorafgegaan door elk pad dat mogelijk bestaat na de server:poort in de URL. Wanneer AEM probeert om naar de aanmeldingspagina om te leiden, mislukt dit.
 
 ### De site wijzigen {#modify-the-site}
 
-Nadat de site voor het eerst is gemaakt, kunnen auteurs het pictogram [](/help/communities/sites-console.md#authoring-site-content) Open Site gebruiken om standaard AEM-ontwerpactiviteiten uit te voeren.
+Nadat de site voor het eerst is gemaakt, kunnen auteurs het pictogram [](/help/communities/sites-console.md#authoring-site-content) Open Site gebruiken om standaard AEM ontwerpactiviteiten uit te voeren.
 
 Daarnaast kunnen beheerders het pictogram [Site](/help/communities/sites-console.md#modifying-site-properties) bewerken gebruiken om eigenschappen van de site, zoals de titel, te wijzigen.
 

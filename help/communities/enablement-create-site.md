@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: b9333558-6af9-46b2-9f03-3722645c69a6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 17088abc71bb820693259088c8a9b938a43cd9d3
+source-git-commit: 99fb808013da18ed028d59c43deab5e815169e26
 workflow-type: tm+mt
-source-wordcount: '1727'
+source-wordcount: '1724'
 ht-degree: 1%
 
 ---
@@ -98,7 +98,7 @@ Controleer of de meeste selectievakjes zijn uitgeschakeld voor [Gebruikersbeheer
 
 #### TAGGING {#tagging}
 
-De tags die kunnen worden toegepast op community-inhoud, worden beheerd door AEM-naamruimten te selecteren die eerder zijn gedefinieerd via de [Tagingconsole](/help/sites-administering/tags.md#tagging-console) (zoals de naamruimte [van de](/help/communities/enablement-setup.md#create-tutorial-tags)zelfstudie).
+De tags die kunnen worden toegepast op community-inhoud, worden beheerd door AEM naamruimten te selecteren die eerder zijn gedefinieerd via de [Tagingconsole](/help/sites-administering/tags.md#tagging-console) (zoals de naamruimte [van de](/help/communities/enablement-setup.md#create-tutorial-tags)zelfstudie).
 
 Als u bovendien Tagnaamruimten selecteert voor de communitysite, beperkt u de selectie die wordt weergegeven bij het definiëren van catalogi en machtigingsbronnen. Zie [Tags toewijzen Hulpbronnen](/help/communities/tag-resources.md) voor belangrijke informatie.
 
@@ -133,9 +133,9 @@ Accepteer de standaard algemene instellingen voor het [modereren](/help/communit
 
 ![chlimage_1-452](assets/chlimage_1-452.png)
 
-#### ANALYTICS {#analytics}
+#### ANALYSE {#analytics}
 
-Selecteer in de vervolgkeuzelijst het Analytics-framework voor cloudservice dat voor deze communitysite is geconfigureerd.
+Selecteer in het keuzemenu het cloudserviceframework Analytics dat voor deze communitysite is geconfigureerd.
 
 De selectie die in het schermafbeelding wordt gezien, `Communities`is het frameworkvoorbeeld uit de [configuratiedocumentatie.](/help/communities/analytics.md#aem-analytics-framework-configuration)
 
@@ -143,7 +143,7 @@ De selectie die in het schermafbeelding wordt gezien, `Communities`is het framew
 
 #### VERTALING {#translation}
 
-In de [vertaalinstellingen](/help/communities/sites-console.md#translation) wordt aangegeven of UGC kan worden vertaald en in welke taal, indien van toepassing.
+In de [vertalingsinstellingen](/help/communities/sites-console.md#translation) wordt aangegeven of UGC kan worden vertaald en in welke taal, indien van toepassing.
 
 * Controleren **machinevertaling toestaan**
 * De standaardinstellingen gebruiken
@@ -160,7 +160,7 @@ Voor een machtigingsgemeenschap is het noodzakelijk om één of meerdere Communa
    * Type `s`
    * Selecteer `Sirius Nilson`
 
-* **Org-id** voor marketingcloud (optioneel) De id voor een Adobe Analytics-account die nodig is wanneer [Video Heartbone Analytics](/help/communities/analytics.md#video-heartbeat-analytics) wordt opgenomen in de actierapportage.
+* **Org-id** van Marketing Cloud (optioneel) De id voor een Adobe Analytics-account die nodig is wanneer [Video Heartbone Analytics](/help/communities/analytics.md#video-heartbeat-analytics) wordt opgenomen in de actierapportage.
 
 ![chlimage_1-457](assets/chlimage_1-457.png)
 
@@ -186,7 +186,7 @@ Nadat u de map van de communitysite hebt geselecteerd, houdt u de muisaanwijzer 
 
 Als u het pictogram Ovalen selecteert (pictogram Meer handelingen), worden de opties Site exporteren en Site verwijderen weergegeven.
 
-![nieuwe site-acties](assets/siteactionsnew.png)
+![nieuwe sites](assets/siteactionsnew.png)
 
 Van links naar rechts zijn ze:
 
@@ -327,11 +327,11 @@ Als het niet lukt om wijzigingen op te slaan, moet u ervoor zorgen dat de naam v
 
 #### Problemen oplossen: Doorsturen mislukt {#troubleshooting-fail-to-redirect}
 
-De &#39;**$**&#39; aan het einde van de reguliere-expressiereeks `sling:match` is van cruciaal belang, zodat alleen exact `https://localhost:4503/` wordt toegewezen. Anders wordt de omleidingswaarde toegevoegd aan elk pad dat mogelijk bestaat na de server:poort in de URL. Wanneer AEM naar de aanmeldingspagina probeert om te leiden, mislukt dit.
+De &#39;**$**&#39; aan het einde van de reguliere-expressiereeks `sling:match` is van cruciaal belang, zodat alleen exact `https://localhost:4503/` wordt toegewezen. Anders wordt de omleidingswaarde toegevoegd aan elk pad dat mogelijk bestaat na de server:poort in de URL. Wanneer AEM probeert om naar de aanmeldingspagina om te leiden, mislukt dit.
 
 ## Het aanpassen van de communautaire Plaats {#modifying-the-community-site}
 
-Nadat de site voor het eerst is gemaakt, kunnen auteurs het pictogram [](/help/communities/sites-console.md#authoring-site-content) Open Site gebruiken om standaard AEM-ontwerpactiviteiten uit te voeren.
+Nadat de site voor het eerst is gemaakt, kunnen auteurs het pictogram [](/help/communities/sites-console.md#authoring-site-content) Open Site gebruiken om standaard AEM ontwerpactiviteiten uit te voeren.
 
 Daarnaast kunnen beheerders het pictogram [Site](/help/communities/sites-console.md#modifying-site-properties) bewerken gebruiken om eigenschappen van de site, zoals de titel, te wijzigen.
 
@@ -350,7 +350,7 @@ Als dat niet het geval is, kan de catalogusfunctie eenvoudig worden toegevoegd. 
 
 Als de sitestructuur al de catalogusfunctie bevat, kan de titel worden gewijzigd.
 
-Als u de structuur van de site wilt wijzigen, navigeert u naar de **Community, Sites** -console, opent u de `enable` map en selecteert u het pictogram Site **** bewerken om toegang te krijgen tot de eigenschappen van `Enablement Tutorial`.
+Als u de structuur van de site wilt wijzigen, navigeert u naar **[!UICONTROL Communities]** >- **[!UICONTROL Sites]** console, opent u de `enable` map en selecteert u het pictogram Site **** bewerken om toegang te krijgen tot de eigenschappen van `Enablement Tutorial`.
 
 Selecteer het deelvenster STRUCTUUR om een catalogus toe te voegen of een bestaande catalogus te wijzigen:
 

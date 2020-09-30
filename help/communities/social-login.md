@@ -10,14 +10,17 @@ topic-tags: administering
 content-type: reference
 discoiquuid: c0a71870-8f95-40c8-9ffd-b7af49723288
 translation-type: tm+mt
-source-git-commit: 3296db289b2e2f4ca0d1981597ada6ca1310bd46
+source-git-commit: 42606e76742fe7698c4c186208e515ed22adc5a4
+workflow-type: tm+mt
+source-wordcount: '2634'
+ht-degree: 0%
 
 ---
 
 
 # Sociale aanmelding met Facebook en Twitter {#social-login-with-facebook-and-twitter}
 
-Met aanmelden via een sociaal netwerk kunt u een bezoeker van een site de optie geven om zich aan te melden bij zijn Facebook- of Twitter-account. Daarom moeten toegestane Facebook- of Twitter-gegevens worden opgenomen in het profiel voor AEM-leden.
+Met aanmelden via een sociaal netwerk kunt u een bezoeker van een site de optie geven om zich aan te melden bij zijn Facebook- of Twitter-account. Daarom moeten de toegestane Facebook- of Twitter-gegevens worden opgenomen in het profiel voor AEM leden.
 
 ![socialloginweretail](assets/socialloginweretail.png)
 
@@ -29,7 +32,7 @@ Hoewel het voorbeeld van de webwinkel voorbeelden biedt voor Facebook- en Twitte
 
 De vereiste stappen zijn:
 
-1. [Schakel OAuth-verificatie](#adobe-granite-oauth-authentication-handler) in alle AEM-publicatieexemplaren.
+1. [Schakel OAuth-verificatie](#adobe-granite-oauth-authentication-handler) in voor alle AEM publicatieinstanties.
 
    Als OAuth niet is ingeschakeld, mislukt het aanmelden.
 
@@ -45,7 +48,7 @@ De vereiste stappen zijn:
       * Maak en publiceer een [Twitter Connect-cloudservice](#create-a-twitter-connect-cloud-service).
 
 
-1. [**Schakel **sociale aanmelding](#enable-social-login)voor een communitysite in.
+1. [**Schakel** sociale aanmelding](#enable-social-login) voor een communitysite in.
 
 Er zijn twee basisbeginselen:
 
@@ -63,11 +66,11 @@ Er zijn twee basisbeginselen:
 ### Facebook API-versie {#facebook-api-version}
 
 De sociale aanmelding en het Facebook-voorbeeld voor webwinkels werden ontwikkeld toen de Facebook Graph API versie 1.0 was.
-Vanaf AEM 6.4 GA en AEM 6.3 SP1 werd de sociale aanmelding bijgewerkt om te werken met de nieuwere versie van Facebook Graph API 2.5.
+Vanaf AEM 6.4 GA en AEM 6.3 SP1 is de sociale aanmelding bijgewerkt om te werken met de nieuwere Facebook Graph API 2.5-versie.
 
 >[!NOTE]
 >
->Voor oudere versies AEM, als u met een uitzondering in logboeken wordt geconfronteerd **kan geen teken van dit** halen, verbetering aan recentste GFP voor die versie van AEM.
+>Voor oudere AEM versies, als u met een uitzondering in logboeken wordt geconfronteerd **kan geen teken uit dit** halen, verbetering aan recentste GFP voor die AEM versie.
 
 
 Zie de wijziging in de API van [Facebook voor informatie over de Facebook Graph API-versie](https://developers.facebook.com/docs/apps/changelog).
@@ -93,20 +96,20 @@ In het algemeen geldt vanaf Facebook API v2.7:
 >Voor ontwikkeling werkt http://localhost:4503.
 
 
-Nadat de toepassing is gemaakt, zoekt u de instellingen voor de **[!UICONTROL toepassings-id]** en de **[!UICONTROL toepassingsgeheim]** . Deze informatie is vereist voor het configureren van de [Facebook-cloudservice](#createafacebookcloudservice).
+Wanneer de toepassing is gemaakt, zoekt u de **[!UICONTROL App ID]** instellingen en de **[!UICONTROL App Secret]** instellingen. Deze informatie is vereist voor het configureren van de [Facebook-cloudservice](#createafacebookcloudservice).
 
-### Een Facebook Connect Cloud-service maken {#create-a-facebook-connect-cloud-service}
+### Een Facebook Connect-Cloud Service maken {#create-a-facebook-connect-cloud-service}
 
-De [Adobe Granite OAuth Application and Provider](https://chl-author.corp.adobe.com/content/help/en/experience-manager/6-4/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider) -instantie, die is geïnstantieerd door een cloudserviceconfiguratie te maken, identificeert de Facebook-toepassing en de lidgroep(en) waaraan de nieuwe gebruikers zijn toegevoegd.
+De [Adobe Granite OAuth Application and Provider](#adobe-granite-oauth-application-and-provider) -instantie, geïnstantieerd door een cloudserviceconfiguratie te maken, identificeert de Facebook-toepassing en de lidgroep(en) waaraan de nieuwe gebruikers worden toegevoegd.
 
-1. Meld u aan bij de AEM-auteur-instantie met beheerdersrechten.
-1. Selecteer **[!UICONTROL Gereedschappen]** > **[!UICONTROL Cloudservices]** > **[!UICONTROL Sociale aanmeldingsconfiguratie]** op Facebook vanuit de globale navigatie.
-1. Selecteer het pad naar de **[!UICONTROL configuratiecontext]**.
+1. Meld u aan bij de AEM auteur-instantie met beheerdersrechten.
+1. Selecteer **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Facebook Social login configuration]**.
+1. Selecteer de configuratie **[!UICONTROL context path]**.
 
-   **[!UICONTROL Contextpad]** moet hetzelfde zijn als het pad voor de cloudconfiguratie dat u hebt geselecteerd bij het maken/bewerken van een communitysite.
+   **[!UICONTROL Context path]** moet hetzelfde zijn als het pad voor cloudconfiguratie dat u hebt geselecteerd bij het maken/bewerken van een communitysite.
 
 1. Controleer of uw contextpad is ingeschakeld om hieronder cloudservices te maken.
-1. Ga naar **[!UICONTROL Gereedschappen]** > **[!UICONTROL Algemeen]** > **[!UICONTROL Configuratiebrowser]**. Selecteer de context en bewerk de eigenschappen. Schakel cloudconfiguraties in als deze nog niet zijn ingeschakeld.
+1. Go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Configuration Browser]**. Selecteer de context en bewerk de eigenschappen. Schakel cloudconfiguraties in als deze nog niet zijn ingeschakeld.
 
    ![config-eigenschappen](assets/config-propertiespng.png)
 
@@ -114,24 +117,25 @@ De [Adobe Granite OAuth Application and Provider](https://chl-author.corp.adobe.
 
    ![fbsocialloginconfigpng](assets/fbsocialloginconfigpng.png)
 
-   * **[!UICONTROL Titel]** (*vereist*) Voer een weergavetoetitel in die de Facebook-app identificeert. Het wordt aanbevolen dezelfde naam in te voeren als de *weergavenaam* voor de Facebook-app.
-   * **[!UICONTROL Toepassings-id/API-sleutel]** (*vereist*) Voer de ***toepassings-id*** voor de Facebook-app in. Dit is de identificatie van de [Adobe Granite OAuth Application and Provider](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider) -instantie die in het dialoogvenster is gemaakt.
-   * **[!UICONTROL Toepassingsgeheim]** (*vereist*) Voer het ***App-geheim*** voor de Facebook-app in.
-   * **[!UICONTROL Maak gebruikers]** als deze optie is ingeschakeld en u aanmeldt met een Facebook-account, maakt u een AEM-gebruikersvermelding en voegt u deze als lid toe aan de geselecteerde gebruikersgroep(en).  Standaard is ingeschakeld (sterk aanbevolen).
-   * **[!UICONTROL Gebruikersnamen]** masker: Laat de selectie uitgeschakeld.
-   * **[!UICONTROL E-mail]** bereik: De e-mailid van de gebruiker moet worden opgehaald van Facebook.
-   * **[!UICONTROL Voeg toe aan Gebruikersgroepen]** uitgezocht voeg de Groep van de Gebruiker toe om één of meerdere [lidgroepen](https://helpx.adobe.com/experience-manager/6-3/communities/using/users.html) voor de communautaire plaats te kiezen waaraan de gebruikers zullen worden toegevoegd.
+   * **[!UICONTROL Title]** (*Vereist*) Voer een weergavetotel in die de Facebook-app identificeert. Het wordt aanbevolen dezelfde naam in te voeren als de *weergavenaam* voor de Facebook-app.
+   * **[!UICONTROL App ID/API Key]** (*Vereist*) Voer de ***app-id*** voor de Facebook-app in. Dit identificeert de [Adobe Granite OAuth Application and Provider](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider) instantie die van het dialoogvenster is gemaakt.
+   * **[!UICONTROL App Secret]** (*Vereist*) Voer het ***App-geheim*** in voor de Facebook-app.
+   * **[!UICONTROL Create Users]** Als deze optie is ingeschakeld, wordt door het aanmelden met een Facebook-account een AEM gebruikervermelding gemaakt en toegevoegd aan de geselecteerde gebruikersgroep(en).  Standaard is ingeschakeld (sterk aanbevolen).
+   * **[!UICONTROL Mask User IDs]**: Laat de selectie uitgeschakeld.
+   * **[!UICONTROL Scope Email]**: De e-mailid van de gebruiker moet worden opgehaald van Facebook.
+   * **[!UICONTROL Add to User Groups]** Selecteer Gebruikersgroep toevoegen om een of meer [lidgroepen](https://helpx.adobe.com/experience-manager/6-3/communities/using/users.html) te kiezen voor de communitysite waaraan gebruikers worden toegevoegd.
+
    >[!NOTE]
    >
    >Groepen kunnen op elk gewenst moment worden toegevoegd of verwijderd. Maar het lidmaatschap van bestaande gebruikers wordt hierdoor niet beïnvloed. Automatisch lidmaatschap is alleen van toepassing op nieuwe gebruikers die worden gemaakt na deze veldupdate. Voor sites waar anonieme gebruikers zijn uitgeschakeld, kiest u ervoor gebruikers toe te voegen aan de overeenkomende groep met leden van de community die voor die gesloten communitysite is bedoeld.
 
-   * Selecteer **[!UICONTROL OPSLAAN]**.
-   * **[!UICONTROL Publiceren]**.
+   * Selecteer **[!UICONTROL SAVE]**.
+   * **[!UICONTROL Publish]**.
 
 
 
 
-Het resultaat is een [Adobe Granite OAuth Application and Provider](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#adobe-granite-oauth-application-and-provider) -instantie waarvoor geen verdere wijziging nodig is, tenzij er een extra bereik (machtigingen) wordt toegevoegd. Het standaardbereik is de standaardmachtigingen voor aanmelding bij Facebook. Als extra werkingsgebied wordt gewenst, is het noodzakelijk om de configuratie direct uit te geven OSGI. Als er aanpassingen rechtstreeks via systeem/console worden uitgevoerd, moet u de configuraties van de cloudservice niet via de interface van de aanraakinterface bewerken om te voorkomen dat deze worden overschreven.
+Het resultaat is een [Adobe Granite OAuth Application and Provider](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#adobe-granite-oauth-application-and-provider) -instantie waarvoor geen verdere wijziging vereist is, tenzij er een extra bereik (machtigingen) wordt toegevoegd. Het standaardbereik is de standaardmachtigingen voor aanmelding bij Facebook. Als extra werkingsgebied wordt gewenst, is het noodzakelijk om de configuratie direct uit te geven OSGI. Als er aanpassingen rechtstreeks via systeem/console worden uitgevoerd, moet u de configuraties van de cloudservice niet via de interface van de aanraakinterface bewerken om te voorkomen dat deze worden overschreven.
 
 ### AEM Communities Facebook OAuth Provider {#aem-communities-facebook-oauth-provider}
 
@@ -144,7 +148,7 @@ Voor deze provider moet u het volgende bewerken:
 
    * Niet alle velden die standaard zijn toegestaan, worden standaard opgenomen.
 
-Als bewerken nodig is, publiceert elke AEM-publicatie-instantie:
+Als bewerken nodig is, wordt op elke AEM-publicatie-instantie het volgende weergegeven:
 
 1. Meld u aan met beheerdersrechten.
 1. Navigeer naar de [webconsole](../../help/sites-deploying/configuring-osgi.md). Bijvoorbeeld http://localhost:4503/system/console/configMgr.
@@ -153,7 +157,7 @@ Als bewerken nodig is, publiceert elke AEM-publicatie-instantie:
 
    ![fboauthprov_png](assets/fboauthprov_png.png)
 
-   * **[!UICONTROL OAuth Provider-id]**
+   * **[!UICONTROL OAuth Provider ID]**
 
       (*Vereist*) De standaardwaarde is *soco-facebook*. Niet bewerken.
 
@@ -161,19 +165,19 @@ Als bewerken nodig is, publiceert elke AEM-publicatie-instantie:
 
       De standaardwaarde is `/etc/  cloudservices /  facebookconnect`. Niet bewerken.
 
-   * **[!UICONTROL Configuratie van OAuth Provider-service]**
+   * **[!UICONTROL OAuth Provider Service Config]**
 
       De standaardwaarde is `/apps/social/facebookprovider/config/`. Niet bewerken.
 
-   * **[!UICONTROL Labels inschakelen]**
+   * **[!UICONTROL Enable Tags]**
 
       Bewerken niet.
 
-   * **[!UICONTROL Pad gebruiker]**
+   * **[!UICONTROL User Path]**
 
       Locatie in de opslagplaats waar gebruikersgegevens worden opgeslagen. Voor een communautaire plaats, om toestemmingen voor leden te verzekeren om elkaars profiel te bekijken, zou de weg het gebrek */huis/gebruikers/gemeenschap* moeten zijn.
 
-   * **[!UICONTROL Velden inschakelen]**
+   * **[!UICONTROL Enable fields]**
 
       Als deze optie is ingeschakeld, worden de vermelde velden opgegeven in de aanvraag naar Facebook voor gebruikersverificatie en -informatie. De standaardinstelling is uitgeschakeld.
 
@@ -192,9 +196,10 @@ Als bewerken nodig is, publiceert elke AEM-publicatie-instantie:
       * update_time
       * geverifieerd
       * email
+
    Als een veld wordt toegevoegd of gewijzigd, werkt u de overeenkomstige standaardconfiguratie van de synchronisatiehandler bij om de toewijzing te corrigeren.
 
-   * **[!UICONTROL Gebruiker bijwerken]**
+   * **[!UICONTROL Update User]**
 
       Als deze optie is ingeschakeld, worden de gebruikersgegevens in de dataopslag bij elke aanmelding vernieuwd om rekening te houden met profielwijzigingen of aanvullende aangevraagde gegevens. Standaard is uitgeschakeld.
 
@@ -227,35 +232,35 @@ In het algemeen:
    >
    >Voor ontwikkeling werkt https://127.0.0.1/.
 
-1. Nadat de toepassing is gemaakt, zoekt u de API-sleutel **[!UICONTROL (]** Consumer) en het **[!UICONTROL consumentensecret]**. Deze informatie is nodig voor het configureren van de [Twitter-cloudservice](#createatwittercloudservice).
+1. Wanneer de toepassing is gemaakt, zoekt u de toepassing **[!UICONTROL Consumer (API) Key]** en **[!UICONTROL Consumer (API) Secret]**. Deze informatie is nodig voor het configureren van de [Twitter-cloudservice](#createatwittercloudservice).
 
 #### Machtigingen {#permissions}
 
 In de sectie met machtigingen voor het beheer van de Twitter-toepassing:
 
-* **[!UICONTROL Toegang]**: Selecteer `Read only`.
+* **[!UICONTROL Access]**: Selecteer `Read only`.
 
    * Andere opties worden niet ondersteund
 
-* **[!UICONTROL Aanvullende machtigingen]**: Kies optioneel `Request email addresses from users`.
+* **[!UICONTROL Additional Permissions]**: Kies optioneel `Request email addresses from users`.
 
    * Als deze optie niet is geselecteerd, bevat het gebruikersprofiel in AEM geen e-mailadres.
    * In de instructies van Twitter staat dat er nog meer stappen moeten worden gezet.
 
-De enige REST-aanvraag die voor aanmelden via een sociaal netwerk is ingediend, is het *[ophalen van account/verifiëren van referenties](https://dev.twitter.com/rest/reference/get/account/verify_credentials)*.
+De enige REST-aanvraag die voor aanmelden via een sociaal netwerk is ingediend, is het *[GET van de gegevens](https://dev.twitter.com/rest/reference/get/account/verify_credentials)* van de account/het verifiëren van de gegevens.
 
-### Een Twitter Connect Cloud-service maken {#create-a-twitter-connect-cloud-service}
+### Een Twitter Connect-Cloud Service maken {#create-a-twitter-connect-cloud-service}
 
 De [Adobe Granite OAuth Application and Provider](#adobe-granite-oauth-application-and-provider) -instantie, geïnstantieerd door een cloudserviceconfiguratie te maken, identificeert de Twitter-toepassing en de lidgroep(en) waaraan de nieuwe gebruikers worden toegevoegd.
 
 1. Meld u aan met beheerdersrechten voor de auteurinstantie.
-1. Selecteer **[!UICONTROL Gereedschappen]** > **[!UICONTROL Cloudservices]** > **[!UICONTROL Twitter-aanmeldingsconfiguratie]** voor sociaal profiel in de globale navigatie.
-1. Kies de configuratie van het **[!UICONTROL contextpad]** .
+1. Selecteer **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Twitter Social login configuration]**.
+1. Kies de **[!UICONTROL context path]** configuratie.
 
    Het pad naar de context moet hetzelfde zijn als het pad naar de cloudconfiguratie dat u hebt geselecteerd bij het maken/bewerken van een communitysite.
 
 1. Controleer of uw contextpad is ingeschakeld om hieronder cloudservices te maken.
-1. Ga naar **[!UICONTROL Gereedschappen]** > **[!UICONTROL Algemeen]** > **[!UICONTROL Configuratiebrowser]**. Selecteer de context en bewerk de eigenschappen. Schakel cloudconfiguraties in als deze nog niet zijn ingeschakeld.
+1. Go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Configuration Browser]**. Selecteer de context en bewerk de eigenschappen. Schakel cloudconfiguraties in als deze nog niet zijn ingeschakeld.
 
    ![twitterconfigproppng](assets/twitterconfigproppng.png)
 
@@ -263,71 +268,72 @@ De [Adobe Granite OAuth Application and Provider](#adobe-granite-oauth-applicati
 
    ![twittersocialloginpng](assets/twittersocialloginpng.png)
 
-   * **[!UICONTROL Titel]**
+   * **[!UICONTROL Title]**
 
-      (*Vereist*) Voer een weergavetoewijzing in die de Twitter-app aangeeft. Het wordt aanbevolen dezelfde naam te gebruiken als de *weergavenaam* voor de Twitter-app.
+      (*Vereist*) Voer een weergavetoewijzing in die de Twitter-app aangeeft. Het wordt aanbevolen dezelfde naam in te voeren als de *weergavenaam* voor de Twitter-app.
 
-   * **[!UICONTROL Consumentencode]**
+   * **[!UICONTROL Consumer Key]**
 
-      (*Vereist*) Voer de sleutel **voor de** consument (API) in voor de Twitter-app. Dit is de identificatie van de [Adobe Granite OAuth Application and Provider](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider) -instantie die in het dialoogvenster is gemaakt.
+      (*Vereist*) Voer de sleutel **voor de** consument (API) in voor de Twitter-app. Dit identificeert de [Adobe Granite OAuth Application and Provider](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider) instantie die van het dialoogvenster is gemaakt.
 
-   * **[!UICONTROL Consumentengeheim]**
+   * **[!UICONTROL Consumer Secret]**
 
       (*Vereist*) Voer het ***Consumentengeheim*** (API) voor de Twitter-app in.
 
-   * **[!UICONTROL Gebruikers maken]**
+   * **[!UICONTROL Create Users]**
 
-      Als deze optie is ingeschakeld, wordt bij het aanmelden met een Twitter-account een AEM-gebruikersvermelding gemaakt en toegevoegd aan de geselecteerde gebruikersgroep(en). Standaard is ingeschakeld (sterk aanbevolen).
+      Als deze optie is ingeschakeld, wordt door aanmelden met een Twitter-account een AEM gebruikervermelding gemaakt en toegevoegd aan de geselecteerde gebruikersgroep(en). Standaard is ingeschakeld (sterk aanbevolen).
 
-   * **[!UICONTROL Gebruikersnamen maskeren]**
+   * **[!UICONTROL Mask User IDs]**
 
       Laat de selectie uitgeschakeld.
 
-   * **[!UICONTROL Toevoegen aan gebruikersgroepen]**
+   * **[!UICONTROL Add to User Groups]**
 
       Selecteer Gebruikersgroep toevoegen om een of meer [lidgroepen](https://helpx.adobe.com/experience-manager/6-3/communities/using/users.html) te kiezen voor de communitysite waaraan gebruikers worden toegevoegd.
    >[!NOTE]
    >
    >Groepen kunnen op elk gewenst moment worden toegevoegd of verwijderd. Het lidmaatschap van bestaande gebruikers wordt echter niet beïnvloed. Automatisch lidmaatschap is alleen van toepassing op nieuwe gebruikers die worden gemaakt na deze veldupdate. Voor Plaatsen waar de anonieme gebruikers gehandicapt zijn, voeg gebruikers aan overeenkomstige gemeenschap-lidgroep toe die voor die gesloten communautaire plaats wordt bedoeld.
 
-1. Selecteer **[!UICONTROL OPSLAAN]** en **[!UICONTROL Publiceren]**.
+1. Selecteer **[!UICONTROL SAVE]** en **[!UICONTROL Publish]**.
 
 Het resultaat is een [Adobe Granite OAuth Application and Provider](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#adobe-granite-oauth-application-and-provider) -instantie die niet verder hoeft te worden gewijzigd. Het standaardbereik is de standaardmachtigingen voor Twitter-aanmelding.
 
 ### AEM Communities Twitter OAuth Provider {#aem-communities-twitter-oauth-provider}
 
-De configuratie van AEM Communities breidt de [Adobe Granite OAuth Application and Provider](#adobe-granite-oauth-application-and-provider) -instantie uit. Deze provider moet worden bewerkt om gebruikersupdates toe te staan.
+De AEM Communities-configuratie breidt de [Adobe Granite OAuth Application and Provider](#adobe-granite-oauth-application-and-provider) -instantie uit. Deze provider moet worden bewerkt om gebruikersupdates toe te staan.
 
-Als bewerken nodig is, publiceert elke AEM-publicatie-instantie:
+Als bewerken nodig is, wordt op elke AEM-publicatie-instantie het volgende weergegeven:
 
 1. Meld u aan met beheerdersrechten.
 1. Navigeer naar de [webconsole](../../help/sites-deploying/configuring-osgi.md).
 
    Bijvoorbeeld http://localhost:4503/system/console/configMgr.
 
-1. Zoek op Twitter OAuth Provider van AEM-gemeenschappen.
+1. Zoek naar AEM Communities Twitter OAuth Provider.
 1. Selecteer het potloodpictogram dat u wilt openen voor bewerking.
 
    ![twitteroauth_png](assets/twitteroauth_png.png)
 
-   * **[!UICONTROL OAuth Provider-id]**
+   * **[!UICONTROL OAuth Provider ID]**
+
    (*Vereist*) De standaardwaarde is *soco-twitter*. Niet bewerken.
 
    * **[!UICONTROL Cloud Service Config]**
 
       The default value is *conf.* Niet bewerken.
 
-   * **[!UICONTROL Configuratie van OAuth Provider-service]**
+   * **[!UICONTROL OAuth Provider Service Config]**
 
       De standaardwaarde is `/apps/social/twitterprovider/config/`. Niet bewerken.
 
-   * **[!UICONTROL Pad gebruiker]**
+   * **[!UICONTROL User Path]**
 
       Locatie in de opslagplaats waar gebruikersgegevens worden opgeslagen. Voor een communautaire plaats, om toestemmingen voor leden te verzekeren om elkaars profiel te bekijken, zou de weg het gebrek moeten zijn `/home/users/community`.
 
-   * **[!UICONTROL Params]** inschakelen niet bewerken
-   * **[!UICONTROL URL-parameters]** worden niet bewerkt
-   * **[!UICONTROL Gebruiker bijwerken]**
+   * **[!UICONTROL Enable Params]** niet bewerken
+   * **[!UICONTROL URL Parameters]** niet bewerken
+   * **[!UICONTROL Update User]**
 
       Als deze optie is ingeschakeld, worden de gebruikersgegevens in de dataopslag bij elke aanmelding vernieuwd om rekening te houden met profielwijzigingen of aanvullende aangevraagde gegevens. De standaardinstelling is uitgeschakeld.
 
@@ -341,7 +347,7 @@ De volgende stappen zijn hetzelfde voor zowel Facebook als Twitter:
 
 ## Sociale aanmelding inschakelen {#enable-social-login}
 
-### AEM Community Sites Console {#aem-communities-sites-console}
+### AEM Communities Sites Console {#aem-communities-sites-console}
 
 Zodra een wolkendienst wordt gevormd, kan het voor het relevante Sociale Aanmelden plaatsen voor een communautaire plaats worden toegelaten gebruikend het subpanel van de Montages van het Beheer van de [Gebruiker](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#USERMANAGEMENT) tijdens de [verwezenlijking](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#SiteCreation) of het [beheer](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#ModifyingSiteProperties)van de communautaire plaats.
 
@@ -351,29 +357,29 @@ Zodra een wolkendienst wordt gevormd, kan het voor het relevante Sociale Aanmeld
 
    ![beheersites_png](assets/managesites_png.png)
 
-1. Schakel op het tabblad Instellingen de optie **[!UICONTROL Sociale aanmeldingen]** en Opslaan in.
+1. Schakel op het tabblad Instellingen de optie **[!UICONTROL Social Logins]** Opslaan in.
 
    ![usermgmt_png](assets/usermgmt_png.png)
 
 ## Sociale aanmelding testen {#test-social-login}
 
-* Controleer of [Adobe Granite OAuth Authentication Handler](#adobe-granite-oauth-authentication-handler) is ingeschakeld voor alle publicatieinstanties.
+* Zorg ervoor dat [Adobe Granite OAuth Authentication Handler](#adobe-granite-oauth-authentication-handler) is ingeschakeld voor alle publicatieinstanties.
 * Controleer of de cloudservices zijn gepubliceerd.
 * Controleer of de site van de community is gepubliceerd.
 * Start de gepubliceerde site in een browser.
 Bijvoorbeeld http://localhost:4503/content/sites/engage/en.html
-* Selecteer **[!UICONTROL Aanmelden]**.
-* Selecteer **[!UICONTROL Aanmelden bij Facebook]** of **[!UICONTROL Aanmelden bij Twitter]**.
+* Selecteer **[!UICONTROL Login In]**.
+* Selecteer **[!UICONTROL Sign in with Facebook]** of **[!UICONTROL Sign in with Twitter]**.
 * Meld u aan met de juiste gegevens als u zich nog niet hebt aangemeld bij Facebook of Twitter.
 * Het kan nodig zijn machtigingen te verlenen afhankelijk van het dialoogvenster dat wordt weergegeven door de app Facebook of Twitter.
 * De werkbalk boven aan de pagina wordt bijgewerkt met de geslaagde aanmelding.
-* Selecteer **[!UICONTROL profiel]**: op de pagina Profiel worden de avatar-afbeelding, voornaam en achternaam van de gebruiker weergegeven. De informatie uit het Facebook- of Twitter-profiel wordt ook weergegeven op basis van de toegestane velden/params.
+* Selecteren **[!UICONTROL Profile]**: op de pagina Profiel worden de avatar-afbeelding, voornaam en achternaam van de gebruiker weergegeven. De informatie uit het Facebook- of Twitter-profiel wordt ook weergegeven op basis van de toegestane velden/params.
 
-## OAuth-configuraties voor AEM-platform {#aem-platform-oauth-configurations}
+## Platform OAuth-configuraties AEM {#aem-platform-oauth-configurations}
 
 ### Adobe Granite OAuth-verificatiehandler {#adobe-granite-oauth-authentication-handler}
 
-De optie `Adobe Granite OAuth Authentication Handler` is niet standaard ingeschakeld en ***moet op alle AEM-publicatie-instanties zijn ingeschakeld.***
+De optie `Adobe Granite OAuth Authentication Handler` is niet standaard ingeschakeld en ***moet op alle AEM publicatieinstanties zijn ingeschakeld.***
 
 Om de authentificatiemanager bij toe te laten publiceren, open eenvoudig OSGi config en bewaar het:
 
@@ -382,7 +388,7 @@ Om de authentificatiemanager bij toe te laten publiceren, open eenvoudig OSGi co
 Bijvoorbeeld http://localhost:4503/system/console/configMgr
 * Zoeken `Adobe Granite OAuth Authentication Handler`.
 * Selecteer deze optie om de configuratie voor bewerking te openen.
-* Selecteer **[!UICONTROL Opslaan]**.
+* Selecteer **[!UICONTROL Save]**.
 
 ![chlimage_1-489](assets/chlimage_1-489.png)
 
@@ -406,21 +412,21 @@ Ga als volgt te werk om de gemaakte instantie voor een Facebook- of Twitter-app 
 
 1. Zoek Adobe Granite OAuth Application and Provider.
 
-   * Zoek de instantie waarbij de **[!UICONTROL client-id]** overeenkomt met de **[!UICONTROL toepassings-id]**.
+   * Zoek de instantie waar deze **[!UICONTROL Client ID]** overeenkomt met de **[!UICONTROL App ID]**.
 
       ![chlimage_1-491](assets/chlimage_1-491.png)
 
       Met uitzondering van de volgende eigenschappen, verlaat u de andere eigenschappen van de config ongewijzigd:
 
-   * **[!UICONTROL Configuratie-id]**
+   * **[!UICONTROL Config ID]**
 
       (*Vereist*) OAuth configuratie IDs moet uniek zijn. Automatisch gegenereerd wanneer een cloudservice wordt gemaakt.
 
-   * **[!UICONTROL Client-id]**
+   * **[!UICONTROL Client ID]**
 
       (*Vereist*) De toepassings-id die is opgegeven bij het maken van de cloudservice.
 
-   * **[!UICONTROL Clientgeheim]**
+   * **[!UICONTROL Client Secret]**
 
       (*Vereist*) Het toepassingsgeheim dat is opgegeven bij het maken van de cloudservice.
 
@@ -428,15 +434,15 @@ Ga als volgt te werk om de gemaakte instantie voor een Facebook- of Twitter-app 
 
       (*Optioneel*) De leverancier kan om aanvullende mogelijkheden vragen. Het standaardbereik omvat de machtigingen die nodig zijn voor het verstrekken van sociale verificatie- en profielgegevens.
 
-   * **[!UICONTROL Provider-id]**
+   * **[!UICONTROL Provider ID]**
 
-      (*Vereist*) De provider-id voor AEM-gemeenschappen wordt ingesteld op het moment dat de cloudservice werd gemaakt. Niet bewerken. Voor Facebook Connect is de waarde *soco-facebook*. Voor Twitter Connect is de waarde *soco-twitter*.
+      (*Vereist*) De provider-id voor AEM Communities wordt ingesteld bij het maken van de cloudservice. Niet bewerken. Voor Facebook Connect is de waarde *soco-facebook*. Voor Twitter Connect is de waarde *soco-twitter*.
 
-   * **[!UICONTROL Groepen]**
+   * **[!UICONTROL Groups]**
 
-      (*Aanbevolen*) Een of meer lidgroepen waaraan gemaakte gebruikers zijn toegevoegd. Voor AEM-gemeenschappen wordt aanbevolen de ledengroep voor de community-site op te nemen.
+      (*Aanbevolen*) Een of meer lidgroepen waaraan gemaakte gebruikers zijn toegevoegd. Voor AEM Communities wordt aanbevolen de lidgroep voor de community-site op te nemen.
 
-   * **[!UICONTROL URL voor terugbellen]**
+   * **[!UICONTROL Callback URL]**
 
       (*Optioneel*) URL die is geconfigureerd met de OAuth-providers om de client terug te sturen. Gebruik een relatieve URL om de host van de oorspronkelijke aanvraag te gebruiken. Laat leeg om de oorspronkelijk aangevraagde URL te gebruiken. Achtervoegsel &quot;/callback/j_security_check&quot; wordt automatisch toegevoegd aan deze URL.
    >[!NOTE]
@@ -463,17 +469,17 @@ Op een instantie van de auteur, aangemeld met beheerdersrechten:
 
    * Onder knooppunt `/oak:index`
    * Knooppunt selecteren `ntBaseLucene`
-   * Kopie **[!UICONTROL selecteren]**
+   * Selecteer **[!UICONTROL Copy]**
    * Selecteer `/oak:index`
-   * Plakken **[!UICONTROL selecteren]**
+   * Selecteer **[!UICONTROL Paste]**
    * Naam van kopie van ntBaseLucene wijzigen in `ntBaseLucene-oauth`
 
 1. Wijzig de eigenschappen van node ntBaseLucene-oauth:
 
    * **[!UICONTROL indexPath]**: `/oak:index/ntBaseLucene-oauth`
-   * **[!UICONTROL naam]**: `oauthid-123****`
-   * **[!UICONTROL redex]**: `true`
-   * **[!UICONTROL redexCount]**: `1`
+   * **[!UICONTROL name]**: `oauthid-123****`
+   * **[!UICONTROL reindex]**: `true`
+   * **[!UICONTROL reindexCount]**: `1`
 
 1. Onder node/oak:index/ntBaseLucene-oauth/indexRules/nt:base/properties:
 
@@ -481,11 +487,11 @@ Op een instantie van de auteur, aangemeld met beheerdersrechten:
    * Naam van cqTags wijzigen in `oauthid-123****`
    * Eigenschappen van knooppunt wijzigen `oauthid-123****`
 
-      * **[!UICONTROL naam]**: `oauthid-123****`
-   * Selecteer **[!UICONTROL Alles]** opslaan.
+      * **[!UICONTROL name]**: `oauthid-123****`
+   * Selecteer **[!UICONTROL Save All]**.
 
 
-* Voor de **naam** vervangt u `oauthid-123`123 *door de Facebook* App ID ***of de Twitter*** Consumer (API)-sleutel ***die de waarde van de*** **** [](social-login.md#adobe-granite-oauth-application-and-provider) client-id in de toepassing Adobe Granite OAuth en de configuratie Provideris.
+* Voor de **naam** vervangt u `oauthid-123`123 *door de Facebook* App ID ***of de Twitter*** Consumer (API)-sleutel ***die de waarde is van de*** **** [](social-login.md#adobe-granite-oauth-application-and-provider) client-id in de OAuth Application and Provider-configuratie vanAdobe Granite.
 
    ![chlimage_1-492](assets/chlimage_1-492.png)
 

@@ -4,9 +4,9 @@ description: Nieuw in Adobe Experience Manager 6.5 Service Pack 6
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f52eb4ccfc1c9f0a121039432ed57401a2def573
+source-git-commit: 9d549e19a22b06f010b99e5dfff1d4cef05a5bed
 workflow-type: tm+mt
-source-wordcount: '2453'
+source-wordcount: '2491'
 ht-degree: 0%
 
 ---
@@ -199,6 +199,12 @@ De stappen om [!DNL Experience Manager Assets] met [!DNL Brand Portal] te vormen
 Bijvoorbeeld, `On Time (MM-DD-YYYY HH:mm)`. Hier is MM maand in het formaat van twee cijfers, YYYY is jaar, DD is dag in het formaat van twee cijfers, HH is uur in 24-uurs militair formaat, en mm is minuut.
 
 * Schermlezers kondigen nu het `X` symbool aan om de geselecteerde tags samen met het aantal geselecteerde tags te verwijderen.
+
+#### Kolom Sorteerbaar voor aanmaakdatum van elementen in lijstweergave (6.5.3.0) {#sortable-date-created-column}
+
+Een nieuwe sorteerbare kolom voor de aanmaakdatum van elementen wordt toegevoegd in de DAM-lijstweergave en in de resultaten van zoekopdrachten naar elementen in de lijstweergave.
+
+![Kolom Sorteerbaar voor datum die is gemaakt](assets/asset-created-date.png)
 
 #### Visueel zoeken naar [!DNL Adobe Experience Manager Assets] (6.5.2.0) {#visual-search}
 

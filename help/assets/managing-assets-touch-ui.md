@@ -4,9 +4,9 @@ description: Leer de taken voor middelenbeheer, zoals het uploaden, downloaden, 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: cb531bfc009fc766bab20d28cf332856b1e95c7b
 workflow-type: tm+mt
-source-wordcount: '9182'
+source-wordcount: '9181'
 ht-degree: 3%
 
 ---
@@ -92,7 +92,7 @@ Ga naar om de opschoningstaak voor de onvoltooide taken voor het uploaden van ta
 
 >[!CAUTION]
 >
->De standaardwaarde wanneer de brokkenupload wordt teweeggebracht is 500 MB en de brokgrootte is 50 MB. Als u de [Apache Jackrabbit Oak TokenConfiguration](https://helpx.adobe.com/experience-manager/kb/How-to-set-token-session-expiration-AEM.html) zodanig wijzigt dat deze minder lang `timeout configuration` is dan de tijd die het uploaden van een element kost, kunt u een sessietime-outsituatie doorlopen terwijl het uploaden van het element bezig is. U, daarom, moet u veranderen `chunkUploadMinFileSize` en `chunksize`, zodat elke brokkenverzoek de zitting vernieuwt.
+>De standaardwaarde wanneer de brokkenupload wordt teweeggebracht is 500 MB en de brokgrootte is 50 MB. Als u de [Apache Jackrabbit Oak TokenConfiguration](https://helpx.adobe.com/experience-manager/kb/How-to-set-token-session-expiration-AEM.html) zodanig wijzigt dat deze minder tijd `timeout configuration` instelt dan nodig is om een element te uploaden, kan er een sessietime-outsituatie optreden terwijl het uploaden van het element bezig is. U, daarom, moet u veranderen `chunkUploadMinFileSize` en `chunksize`, zodat elke brokkenverzoek de zitting vernieuwt.
 >
 >Op basis van de time-out bij verlopen van de referentie, de latentie, de bandbreedte en de verwachte gelijktijdige uploads, wordt de hoogste waarde gekozen waarmee u ervoor kunt zorgen dat het volgende wordt gekozen:
 >
@@ -303,7 +303,7 @@ U transcodeert een videobestand door een keuze te maken uit verschillende videov
 |---|---|---|
 | Adaptieve video |  | Eén coderingsvoorinstelling die met een willekeurige hoogte-breedteverhouding werkt voor het maken van video&#39;s voor levering op mobiele apparaten, tablets en desktops. Geüploade bronvideo&#39;s die met deze voorinstelling zijn gecodeerd, worden ingesteld met een vaste hoogte. De breedte wordt echter automatisch geschaald om de hoogte-breedteverhouding van de video te behouden. <br>Aangepaste videocodering wordt aanbevolen. |
 | Enkele coderingsvoorinstellingen | Voorinstellingen voor codering sorteren | Selecteer Naam of Grootte om de coderingsvoorinstellingen onder Desktop, Mobiel en Tablet op naam of op resolutiegrootte te sorteren. |
-|  | X | Maak een MP4-bestand voor een streaming of progressieve videobeleving op bureaubladcomputers. Selecteer een of meer hoogte-breedteverhoudingen met de gewenste resolutiegrootte en gegevenssnelheid. |
+|  | Desktop | Maak een MP4-bestand voor een streaming of progressieve videobeleving op bureaubladcomputers. Selecteer een of meer hoogte-breedteverhoudingen met de gewenste resolutiegrootte en gegevenssnelheid. |
 |  | Mobiel | Maak een MP4-bestand voor levering op mobiele iPhone- of Android-apparaten. Selecteer een of meer hoogte-breedteverhoudingen met de gewenste resolutie- en doelgegevenssnelheid. |
 |  | Tablet | Maak een MP4-bestand voor levering op iPad- of Android-tablets. Selecteer een of meer hoogte-breedteverhoudingen met de gewenste resolutie- en doelgegevenssnelheid. |
 

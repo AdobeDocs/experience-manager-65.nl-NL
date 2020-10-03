@@ -4,9 +4,9 @@ description: Leer de taken voor middelenbeheer, zoals het uploaden, downloaden, 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: cb531bfc009fc766bab20d28cf332856b1e95c7b
+source-git-commit: 087940d0a51c43125a309b34b82831030e7e54b4
 workflow-type: tm+mt
-source-wordcount: '9181'
+source-wordcount: '9386'
 ht-degree: 3%
 
 ---
@@ -450,7 +450,14 @@ De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeelte
    >
    >De **[!UICONTROL Paste]** optie is beschikbaar op de werkbalk totdat de plakbewerking is voltooid.
 
-### Elementen verplaatsen of hernoemen {#moving-or-renaming-assets}
+## Elementen verplaatsen en hernoemen {#moving-or-renaming-assets}
+
+Wanneer u elementen (of mappen) naar een andere locatie verplaatst, worden de elementen (of mappen) niet gedupliceerd, in tegenstelling tot het kopiëren van het element. De elementen (of mappen) worden op de doellocatie geplaatst en worden van de bronlocatie verwijderd. U kunt de naam van het element ook wijzigen wanneer u het naar de nieuwe locatie verplaatst.
+Als u een gepubliceerd element naar een andere locatie verplaatst, kunt u het element opnieuw publiceren. Door gebrek beweeg verrichting op gepubliceerde activa maakt automatisch het ongedaan. Verplaatst element wordt opnieuw gepubliceerd als de auteur de [!UICONTROL Republish] optie selecteert wanneer het bewegen van het element.
+
+![U kunt een reeds gepubliceerd element opnieuw publiceren wanneer u het verplaatst](assets/republish-on-move.png)
+
+Elementen of mappen verplaatsen:
 
 1. Navigeer naar de locatie van het element dat u wilt verplaatsen.
 
@@ -486,6 +493,14 @@ De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeelte
    * Klik **[!UICONTROL Cancel]** om de verplaatsingsbewerking te stoppen.
 
    Als u verwijzingen niet bijwerkt, blijven ze naar het vorige pad van het element wijzen. Als u de referenties aanpast, worden deze bijgewerkt naar het nieuwe middelenpad.
+
+### Elementen verplaatsen met behulp van sleepbewerking {#move-using-drag}
+
+U kunt elementen (of mappen) naar een map op hetzelfde niveau, de [!UICONTROL Lightbox] verzameling of een andere verzameling verplaatsen door deze naar de doellocatie te slepen in plaats van de [!UICONTROL Move] optie in de gebruikersinterface te gebruiken. Deze bewerking is echter alleen mogelijk in de lijstweergave.
+
+Als u elementen verplaatst door ze te slepen, wordt de [!UICONTROL Move Asset] wizard niet geopend. U krijgt dan ook niet de optie om de naam van de elementen te wijzigen tijdens het verplaatsen. Bovendien worden de reeds gepubliceerde elementen opnieuw gepubliceerd wanneer ze door slepen worden verplaatst, zonder dat de gebruiker toestemming moet vragen om ze opnieuw te publiceren.
+
+![Elementen naar secundaire mappen verplaatsen door elementen te slepen](assets/move-by-drag.gif)
 
 ## Uitvoeringen beheren {#managing-renditions}
 

@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 39ae3d8348b0c149c047c9fb3ac2eb673b610645
 workflow-type: tm+mt
-source-wordcount: '3988'
+source-wordcount: '4048'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ ht-degree: 0%
 
 # Werken met formuliergegevensmodel{#work-with-form-data-model}
 
-![](do-not-localize/data-integeration.png)
+![gegevensintegratie](do-not-localize/data-integeration.png)
 
 De formuliergegevensmodeleditor biedt een intuïtieve gebruikersinterface en hulpmiddelen voor het bewerken en configureren van een formuliergegevensmodel. Met behulp van de editor kunt u gegevensmodelobjecten, eigenschappen en services toevoegen en configureren vanuit gekoppelde gegevensbronnen in het formuliergegevensmodel. Daarnaast kunt u gegevensmodelobjecten en -eigenschappen maken zonder gegevensbronnen en deze later binden met de respectievelijke gegevensmodelobjecten en -eigenschappen. U kunt ook voorbeeldgegevens genereren en bewerken voor objecteigenschappen van gegevensmodellen die u kunt gebruiken om aangepaste formulieren en interactieve communicatie vooraf in te vullen tijdens het weergeven van een voorbeeld. U kunt gegevensmodelvoorwerpen en de diensten testen die in een model van vormgegevens worden gevormd om ervoor te zorgen het behoorlijk met gegevensbronnen wordt geïntegreerd.
 
-Als u nieuw bent voor de gegevensintegratie van Forms en geen gegevensbron hebt gevormd of een model van vormgegevens gecreeerd, zie de volgende onderwerpen:
+Zie de volgende onderwerpen als u nog niet bekend bent met de Forms-gegevensintegratie en geen gegevensbron hebt geconfigureerd of een formuliergegevensmodel hebt gemaakt:
 
 * [AEM Forms-gegevensintegratie](/help/forms/using/data-integration.md)
 * [Gegevensbronnen configureren](/help/forms/using/configure-data-sources.md)
@@ -33,7 +33,7 @@ Lees verder voor meer informatie over verschillende taken en configuraties die u
 
 >[!NOTE]
 >
->U moet lid zijn van zowel **fdm-auteur** als **formulieren-gebruiker** groepen om formuliergegevensmodel te kunnen maken en ermee te kunnen werken. Neem contact op met de AEM-beheerder om lid te worden van de groepen.
+>U moet lid zijn van zowel **fdm-auteur** als **formulieren-gebruiker** groepen om formuliergegevensmodel te kunnen maken en ermee te kunnen werken. Neem contact op met de AEM beheerder om lid te worden van de groepen.
 
 ## Objecten en services voor gegevensmodellen toevoegen {#add-data-model-objects-and-services}
 
@@ -43,7 +43,7 @@ U kunt gegevensmodelvoorwerpen en de diensten van beschikbare gegevensbronnen in
 
 Objecten en services voor gegevensmodellen toevoegen:
 
-1. Meld u aan bij de AEM-auteur, navigeer naar **[!UICONTROL Forms > Data Integrations]** en open het formuliergegevensmodel waarin u gegevensmodelobjecten wilt toevoegen.
+1. Meld u aan bij de AEM auteur, navigeer naar **[!UICONTROL Forms > Data Integrations]** en open het formuliergegevensmodel waarin u gegevensmodelobjecten wilt toevoegen.
 1. In de ruit van Gegevensbronnen, breid gegevensbronnen uit om beschikbare voorwerpen en de diensten van het gegevensmodel te bekijken.
 1. Selecteer gegevensmodelobjecten en -services die u wilt toevoegen aan het formuliergegevensmodel en tik op **[!UICONTROL Add Selected]**.
 
@@ -75,7 +75,7 @@ Objecten en services voor gegevensmodellen toevoegen:
 
    >[!NOTE]
    >
-   >U kunt services die u op het tabblad Services van een formuliergegevensmodel hebt geconfigureerd, aanroepen met behulp van de aangepaste formulierregels. De gevormde diensten zijn beschikbaar in de Invoke de dienstenactie van de regelredacteur voor meer informatie over het gebruiken van deze diensten in adaptieve vormregels, zie de Diensten van de Invoke en Reeks Waarde van regels in [regelredacteur](/help/forms/using/rule-editor.md).
+   >U kunt services die u hebt geconfigureerd op het tabblad Services van een formuliergegevensmodel, aanroepen met behulp van de adaptieve formulierregels. De gevormde diensten zijn beschikbaar in de Invoke de dienstenactie van de regelredacteur voor meer informatie over het gebruiken van deze diensten in adaptieve vormregels, zie de Diensten van de Invoke en Reeks Waarde van regels in [regelredacteur](/help/forms/using/rule-editor.md).
 
 ## Gegevensmodelobjecten en onderliggende eigenschappen maken {#create-data-model-objects-and-child-properties}
 
@@ -85,7 +85,7 @@ Terwijl u gegevensmodelvoorwerpen van gevormde gegevensbronnen kunt toevoegen, k
 
 Een gegevensmodelobject maken zonder gegevensbronnen:
 
-1. Meld u aan bij de AEM-auteur, navigeer naar **[!UICONTROL Forms > Data Integrations]** en open het formuliergegevensmodel waarin u een gegevensmodelobject of -entiteit wilt maken.
+1. Meld u aan bij de AEM auteur, navigeer naar **[!UICONTROL Forms > Data Integrations]** en open het formuliergegevensmodel waarin u een gegevensmodelobject of -entiteit wilt maken.
 1. Tik op **[!UICONTROL Create Entity]**.
 1. Geef in het dialoogvenster Gegevensmodel maken een naam op voor het gegevensmodelobject en tik op **[!UICONTROL Add]**. Er wordt een gegevensmodelobject toegevoegd aan het formuliergegevensmodel. Het nieuwe gegevensmodelobject is niet gebonden aan een gegevensbron en heeft geen eigenschappen zoals in de volgende afbeelding wordt getoond.
 
@@ -175,11 +175,11 @@ In dit voorbeeld, worden de details verbonden aan **4367655678**, als waarde voo
 
 #### Kenmerk gebruikersprofiel {#user-profile-attribute}
 
-Selecteer **[!UICONTROL User Profile Attribute]** in de **[!UICONTROL Binding To]** vervolgkeuzelijst de naam van het kenmerk in het **[!UICONTROL Binding Value]** veld. De details van de gebruiker die aan de instantie AEM wordt het programma geopend worden teruggewonnen van de gegevensbron die op de attributennaam wordt gebaseerd.
+Selecteer **[!UICONTROL User Profile Attribute]** in de **[!UICONTROL Binding To]** vervolgkeuzelijst de naam van het kenmerk in het **[!UICONTROL Binding Value]** veld. De details van de gebruiker die aan de AEM instantie het programma wordt geopend worden teruggewonnen uit de gegevensbron die op de attributennaam wordt gebaseerd.
 
 De kenmerknaam die in het **[!UICONTROL Binding Value]** veld wordt opgegeven, moet het volledige bindingspad bevatten tot de kenmerknaam voor de gebruiker. Open de volgende URL om tot de gebruikersdetails op CRXDE toegang te hebben:
 
-https://&lt;server-name>:&lt;port number>/crx/de/index.jsp#/home/users/
+`https://[server-name]:[port]/crx/de/index.jsp#/home/users/`
 
 ![Gebruikersprofiel](assets/binding_crxde_user_profile_new.png)
 
@@ -195,15 +195,31 @@ Gebruik het verzoekattribuut om de bijbehorende eigenschappen van de gegevensbro
 
 1. Selecteer **[!UICONTROL Request Attribute]** in de **[!UICONTROL Binding To]** vervolgkeuzelijst de naam van het kenmerk in het **[!UICONTROL Binding Value]** veld.
 
-1. Open head.jsp om de kenmerkdetails op CRXDE te bepalen:\
-   `https://<server-name>:<port number>/crx/de/index.jsp#/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
+1. Maak een [bedekking](../../../help/sites-developing/overlays.md) voor head.jsp. Als u de bedekking wilt maken, opent u CRX DE en kopieert u het `https://<server-name>:<port number>/crx/de/index.jsp#/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp` bestand naar `https://<server-name>:<port number>/crx/de/index.jsp#/apps/fd/af/components/page2/afStaticTemplatePage/head.jsp`
 
-1. Neem de volgende tekst op in het bestand head.jsp:
+   >[!NOTE]
+   >
+   > * Als u een statische sjabloon gebruikt, bedekt u head.jsp bij:
+/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp
+   > * Als u een bewerkbare sjabloon gebruikt, bedekt u de aftemplatedpage.jsp op:
+/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp
 
-   ```jsp
+
+1. Set [!DNL paramMap] for the request attribute. Neem bijvoorbeeld de volgende code op in het .jsp-bestand in de map apps:
+
+   ```javascript
    <%Map paraMap = new HashMap();
     paraMap.put("<request_attribute>",request.getParameter("<request_attribute>"));
-    request.setAttribute("paramMap",paraMap);%>
+    request.setAttribute("paramMap",paraMap);
+   ```
+
+   Gebruik bijvoorbeeld de onderstaande code om de waarde van petid op te halen uit de gegevensbron:
+
+
+   ```javascript
+   <%Map paraMap = new HashMap();
+   paraMap.put("petId",request.getParameter("petId"));
+   request.setAttribute("paramMap",paraMap);%>
    ```
 
 De details worden teruggewonnen uit de gegevensbron die op de attributennaam wordt gebaseerd in het verzoek wordt gespecificeerd.

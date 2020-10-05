@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 translation-type: tm+mt
-source-git-commit: e5c2385c29e2d20d453e2d1496f7d459d1c55876
+source-git-commit: bbaf9afbf009281c0009bf3895e82988540e15f0
 workflow-type: tm+mt
 source-wordcount: '598'
 ht-degree: 2%
@@ -44,7 +44,7 @@ CRXDE Lite gebruiken:
 1. Klik op de groene **[!UICONTROL +Add]** knop.
 1. Klik op **[!UICONTROL Save All]**.
 
-   ![chlimage_1-231](assets/chlimage_1-231.png)
+   ![pageScript](assets/page-script.png)
 
 ### Scripts voor hoofd en lichaam {#head-and-body-scripts}
 
@@ -128,13 +128,13 @@ U moet niet alleen de kop **Community Play** zien, maar ook de interface voor he
 
 Het paneel Middelen/component wordt weergegeven wanneer het zijpaneel geopend is en het venster breed genoeg is om zowel de inhoud als de pagina-inhoud weer te geven.
 
-![chlimage_1-232](assets/chlimage_1-232.png)
+![weergavepagina](assets/view-page.png)
 
 * Klassieke interface: [http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html](http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html)
 
 Hieronder ziet u hoe de afspeelpagina wordt weergegeven in de klassieke gebruikersinterface, inclusief in de zoekfunctie voor inhoud (cf):
 
-![chlimage_1-233](assets/chlimage_1-233.png)
+![play-page-view](assets/play-page-view.png)
 
 ## Community-componenten {#communities-components}
 

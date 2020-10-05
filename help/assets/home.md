@@ -1,22 +1,21 @@
 ---
 title: Hulplijn voor middelen
-seo-title: Adobe Experience Manager 6.5 Assets Guide
 description: Deze handleiding behandelt alle taken voor Experience Manager Assets, zoals het maken, beheren, leveren en optimaliseren van digitale elementen.
-seo-description: Omvat alle taken voor Experience Manager Assets, zoals het maken, beheren, leveren en optimaliseren van digitale elementen.
+user-guide-title: Hulplijn voor middelen
 translation-type: tm+mt
-source-git-commit: 45d7f741660bd8dd31cd454c034f562fc5394621
+source-git-commit: e460a23ef4df14ff494d8d1472ab234787f220d7
 workflow-type: tm+mt
-source-wordcount: '371'
-ht-degree: 12%
+source-wordcount: '339'
+ht-degree: 13%
 
 ---
 
 
-# Adobe Experience Manager 6.5 Assets Guide
+# Hulplijn voor middelen
 
-Deze handleiding behandelt alle taken voor Experience Manager Assets, zoals het maken, beheren, leveren en optimaliseren van digitale elementen.
+Deze handleiding behandelt alle [!DNL Experience Manager Assets] taken, zoals het maken, beheren, leveren en optimaliseren van digitale middelen.
 
-## Belangrijke Experience Managers
+## Belangrijkste [!DNL Experience Manager] artikelen
 
 <!-- TBD: Some of these links will soon be updated. Change these when new articles go live on docs.adobe.com.
 -->
@@ -26,7 +25,7 @@ Deze handleiding behandelt alle taken voor Experience Manager Assets, zoals het 
 * [Recente documentatie-updates](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [Beveiligingscontrolelijst](/help/sites-administering/security-checklist.md)
 
-## Experience Manager 6.5-hulplijnen
+## [!DNL Experience Manager] 6.5-hulplijnen
 
 | Handboek | Beschrijving |
 |--- |---|
@@ -43,7 +42,7 @@ Deze handleiding behandelt alle taken voor Experience Manager Assets, zoals het 
 | [Mobiele gebruikershandleiding](/help/mobile/home.md) | In deze handleiding wordt beschreven hoe u inhoud voor mobiele toepassingen kunt maken en beheren. |
 | [Experience Manager Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | In deze handleiding ziet u hoe u door de gebruiker gegenereerde inhoud kunt delen met [!DNL Livefyre]. |
 
-## Belangrijke bronnen voor Experience Manager
+## Belangrijke [!DNL Experience Manager] bronnen
 
 * [Experience Manager Video Tutorials](https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html#Assets)
 * [Gereedheid voor GDPR (AVG)](/help/managing/data-protection-and-privacy.md)

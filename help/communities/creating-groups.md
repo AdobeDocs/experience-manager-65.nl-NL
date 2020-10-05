@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: d94708ee-ca6b-420c-9536-6889d752f9de
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 43663703a79b95ccdb83eb9b5730143bde101305
+source-git-commit: 6337a57ea12f1e026f6c754a083307ce018a1c13
 workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 0%
@@ -33,17 +33,17 @@ Een of meer groepssjablonen worden geselecteerd voor de groepsfunctie wanneer de
 
 De capaciteit om een nieuwe communautaire groep tot stand te brengen baseert zich op het bestaan van een communautaire plaats die de groepsfunctie omvat, zoals die van het Malplaatje [van de Plaats van de](/help/communities/sites.md)Verwijzing wordt gecreeerd.
 
-De voorbeelden die volgen gebruiken de communautaire plaats die van wordt gecreeerd `Reference Site Template` zoals die in het [Begonnen worden van AEM Communities](/help/communities/getting-started.md) wordt beschreven.
+De volgende voorbeelden maken gebruik van de communitysite die is gemaakt op basis van de `Reference Site Template` beschrijving in de zelfstudie [Aan de slag met AEM Communities](/help/communities/getting-started.md) .
 
 Dit is de pagina die wordt geladen bij publiceren wanneer de menuoptie **Groepen** wordt geselecteerd:
 
-![chlimage_1-236](assets/chlimage_1-236.png)
+![nieuwe groep](assets/new-group.png)
 
 Wanneer u het pictogram **Nieuwe groep** selecteert, wordt een dialoogvenster voor bewerken geopend.
 
 Op het tabblad **Instellingen** geeft u de basisfuncties van de groep op:
 
-![chlimage_1-237](assets/chlimage_1-237.png)
+![groep-instellingen](assets/group-settings.png)
 
 * **Groepsnaam**
 
@@ -71,21 +71,21 @@ Op het tabblad **Instellingen** geeft u de basisfuncties van de groep op:
 
 Onder het lusje van het **Malplaatje** is de capaciteit om van de lijst van communautaire groepsmalplaatjes te selecteren die werden gespecificeerd toen de groepsfunctie in de structuur van de communautaire plaats of in een malplaatje van de communautaire plaats werd omvat.
 
-![chlimage_1-238](assets/chlimage_1-238.png)
+![groepssjabloon](assets/group-template.png)
 
 Onder het tabblad **Afbeelding** kunt u een afbeelding uploaden om deze voor de groep weer te geven op de pagina Groepen van de website van de gemeenschap. De afbeelding wordt op het standaardstijlblad vergroot tot 170 x 90 pixels.
 
-![chlimage_1-239](assets/chlimage_1-239.png)
+![groepsafbeelding](assets/group-image.png)
 
 Door de **Create knoop van de Groep** te selecteren, worden de pagina&#39;s voor de groep gecreeerd gebaseerd op het gekozen malplaatje, en een gebruikersgroep wordt gecreeerd voor lidmaatschap en de pagina van Groepen zal worden bijgewerkt om de nieuwe subcommunity te tonen.
 
 De pagina Groepen met een nieuwe subcommunity met de naam &quot;Focus Group&quot;, waarvoor een afbeeldingsminiatuur is geüpload, ziet er bijvoorbeeld als volgt uit (nog steeds aangemeld als beheerder van een communitygroep):
 
-![chlimage_1-240](assets/chlimage_1-240.png)
+![groepspagina](assets/group-page.png)
 
 Als u de `Focus Group` koppeling selecteert, wordt de pagina Focus Group in de browser geopend. Deze bevat een beginweergave op basis van de gekozen sjabloon en een submenu onder het menu van de hoofdsite van de community:
 
-![chlimage_1-241](assets/chlimage_1-241.png)
+![open-group-page](assets/open-group-page.png)
 
 ### Component Lijst van leden van groep Gemeenschap {#community-group-member-list-component}
 

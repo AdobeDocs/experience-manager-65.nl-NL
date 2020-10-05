@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: e0da09b3-725d-4ed1-9273-2532132f6918
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 618464d1e01986786a47a4e9c6ecce87e2a77ec3
+source-git-commit: 570c970c328ded828680baeb1b04ab4361a36226
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 0%
@@ -74,7 +74,7 @@ Een manier om dit te doen is:
 
 [Als u doorgaat met de ervaring](/help/communities/extend-sample-page.md#publish-sample-page) met het publicatieexemplaar, dat nog steeds is aangemeld als dezelfde gebruiker, kunt u de pagina nu vernieuwen in de publicatieomgeving om de wijziging te bekijken om de avatar te verwijderen:
 
-![chlimage_1-81](assets/chlimage_1-81.png)
+![view-modified-content](assets/view-modified-content.png)
 
 ### Voorbeeld van extensiepakket voor opmerkingen {#sample-comment-extension-package}
 

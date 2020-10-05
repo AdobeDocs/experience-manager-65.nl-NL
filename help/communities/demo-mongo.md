@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
 translation-type: tm+mt
-source-git-commit: 94bc3550a7e18b9203e7a0d495d195d7b798e012
+source-git-commit: a99313c35872d3f481c3dc6f42b372cc603e7549
 workflow-type: tm+mt
 source-wordcount: '788'
 ht-degree: 0%
@@ -157,26 +157,26 @@ Als u de algemene opslag van MongoDB wilt testen en verifiëren, plaatst u een o
 1. Meld u aan om een opmerking te plaatsen:
 1. Typ tekst in het tekstinvoervak voor opmerkingen en klik op **[!UICONTROL Post]**
 
-   ![chlimage_1-191](assets/chlimage_1-191.png)
+   ![postcommentaar](assets/post-comment.png)
 
 1. U kunt de opmerking gewoon weergeven op de [auteurinstantie](http://localhost:4502/content/community-components/en/comments.html) (waarschijnlijk nog steeds aangemeld als admin/admin).
 
-   ![chlimage_1-192](assets/chlimage_1-192.png)
+   ![view-comment](assets/view-comment.png)
 
-   Opmerking: terwijl er knopen JCR onder *asipath* op auteur zijn, zijn deze voor het kader SCF. De werkelijke UGC bevindt zich niet in de JCR, maar in de MongoDB.
+   Opmerking: Hoewel er JCR-knooppunten onder het *asipath* bij de auteur zijn, zijn deze voor het SCF-framework. De werkelijke UGC bevindt zich niet in de JCR, maar in de MongoDB.
 
 1. UGC weergeven in mongodb **[!UICONTROL Communities]** > **[!UICONTROL Collections]** > **[!UICONTROL Content]**
 
-   ![chlimage_1-193](assets/chlimage_1-193.png)
+   ![ugc-inhoud](assets/ugc-content.png)
 
 1. De UGC in Solr weergeven:
 
-   * Bladeren naar Solr-dashboard: [http://localhost:8983/solr/](http://localhost:8983/solr/)
-   * Gebruiker `core selector` om te selecteren `collection1`
-   * Selecteer `Query`
-   * Selecteer `Execute Query`
+   * Bladeren naar Solr-dashboard: [http://localhost:8983/solr/](http://localhost:8983/solr/).
+   * Gebruiker `core selector` om te selecteren `collection1`.
+   * Selecteer `Query`.
+   * Selecteer `Execute Query`.
 
-   ![chlimage_1-194](assets/chlimage_1-194.png)
+   ![ugc-solr](assets/ugc-solr.png)
 
 ## Problemen oplossen {#troubleshooting}
 
@@ -186,14 +186,9 @@ Als u de algemene opslag van MongoDB wilt testen en verifiëren, plaatst u een o
 
 1. Zorg ervoor MSRP is gevormd om de standaardleverancier te zijn:
 
-   * Voor alle auteur en publiceer AEM instanties, herzie de console van de Configuratie van de [Opslag](srp-config.md)
+   * Ga bij alle auteur- en publiceer AEM naar de [opslagconfiguratieconsole](srp-config.md) of controleer de AEM opslagplaats:
 
-   Of controleer de AEM opslagplaats:
-
-   * In JCR, indien [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
-
-   * Bevat geen [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) knoop, betekent het de opslagleverancier JSRP is
-   * Als de srpc knoop bestaat en knoop [standaardconfiguratie](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration)bevat, zouden de eigenschappen van de standaardconfiguratie MSRP moeten bepalen om de standaardleverancier te zijn
-
+   * In JCR, als [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/) geen [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) knoop bevat, betekent het de opslagleverancier JSRP is.
+   * Als de srpc knoop bestaat en knoop [standaardconfiguratie](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration)bevat, zouden de eigenschappen van de standaardconfiguratie MSRP moeten bepalen om de standaardleverancier te zijn.
 
 1. Zorg ervoor dat AEM opnieuw is gestart nadat MSRP is geselecteerd.

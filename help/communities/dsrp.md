@@ -1,8 +1,8 @@
 ---
 title: DSRP - Relational Database Storage Resource Provider
 seo-title: DSRP - Relational Database Storage Resource Provider
-description: Stel AEM Communities in om een relationele database te gebruiken als de algemene opslag
-seo-description: Stel AEM Communities in om een relationele database te gebruiken als de algemene opslag
+description: AEM Communities instellen om een relationele database te gebruiken als de algemene opslag
+seo-description: AEM Communities instellen om een relationele database te gebruiken als de algemene opslag
 uuid: f364e7da-ee54-4ab2-a630-7ec9239005ac
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: d23acb18-6761-4290-9e7a-a434582791bd
 translation-type: tm+mt
-source-git-commit: 29f150215052d61c1e20d25b0c095ea6582e26f7
+source-git-commit: bbaf9afbf009281c0009bf3895e82988540e15f0
 workflow-type: tm+mt
 source-wordcount: '622'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## Over DSRP {#about-dsrp}
 
-Wanneer de AEM Communities wordt gevormd om een relationele gegevensbestand als zijn gemeenschappelijke opslag te gebruiken, is de gebruiker geproduceerde inhoud (UGC) toegankelijk van alle auteur en publiceer instanties zonder de behoefte aan synchronisatie of replicatie.
+Wanneer AEM Communities wordt gevormd om een relationele gegevensbestand als zijn gemeenschappelijke opslag te gebruiken, is de gebruiker geproduceerde inhoud (UGC) toegankelijk van alle auteur en publiceer instanties zonder de behoefte aan synchronisatie of replicatie.
 
 Zie ook [Kenmerken van Opties](working-with-srp.md#characteristics-of-srp-options) SRP en [Aanbevolen Topologieën](topologies.md).
 
@@ -71,7 +71,7 @@ Op auteur, om tot de console van de Configuratie van de Opslag toegang te hebben
       >[!NOTE]
       >
       >De standaardopslagconfiguratie wordt nu opgeslagen in conf-pad(`/conf/global/settings/community/srpc/defaultconfiguration`) in plaats van enz.-pad (`/etc/socialconfig/srpc/defaultconfiguration`). U wordt aangeraden de [migratiestappen](#zerodt-migration-steps) te volgen om de standaardprocedures naar behoren te laten werken.
-   ![chlimage_1-128](assets/chlimage_1-128.png)
+   ![dsrp-config](assets/dsrp-config.png)
 
 * Selecteer **[!UICONTROL Database Storage Resource Provider (DSRP)]**
 * **Databaseconfiguratie**
@@ -90,7 +90,7 @@ Op auteur, om tot de console van de Configuratie van de Opslag toegang te hebben
 
 * **SolrConfiguration**
 
-   * **[Zookeeper](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files)-host **
+   * **[Zookeeper](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files)-host**
 
       Laat deze waarde leeg als Solr wordt uitgevoerd met de interne ZooKeeper. Anders, wanneer het lopen op wijze [SolrCloud met externe ZooKeeper, plaats deze waarde aan URI voor ZooKeeper, zoals](solr.md#solrcloud-mode) *my.server.com:80*
 

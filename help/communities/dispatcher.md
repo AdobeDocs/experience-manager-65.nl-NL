@@ -1,6 +1,6 @@
 ---
-title: Dispatcher for Communities configureren
-seo-title: Dispatcher for Communities configureren
+title: Dispatcher configureren voor Gemeenschappen
+seo-title: Dispatcher configureren voor Gemeenschappen
 description: De dispatcher voor AEM Communities configureren
 seo-description: De dispatcher voor AEM Communities configureren
 uuid: c17daca9-3244-4b10-9d4e-2e95df633dd9
@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 23745dd3-1424-4d22-8456-d2dbd42467f4
 translation-type: tm+mt
-source-git-commit: 29f150215052d61c1e20d25b0c095ea6582e26f7
+source-git-commit: bbaf9afbf009281c0009bf3895e82988540e15f0
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 0%
@@ -18,23 +18,23 @@ ht-degree: 0%
 ---
 
 
-# Dispatcher for Communities configureren {#configuring-dispatcher-for-communities}
+# Dispatcher configureren voor Gemeenschappen {#configuring-dispatcher-for-communities}
 
 ## AEM Communities {#aem-communities}
 
-Voor AEM Communities, is het noodzakelijk om Dispatcher te vormen om behoorlijk functionerend van [communautaire plaatsen](overview.md#community-sites)te verzekeren. Er zijn aanvullende configuraties nodig wanneer u functies zoals Community Enablement en social login toevoegt.
+Voor AEM Communities is het nodig de Dispatcher te configureren om ervoor te zorgen dat de [gemeenschapssites](overview.md#community-sites)naar behoren functioneren. Er zijn aanvullende configuraties nodig wanneer u functies zoals Community Enablement en social login toevoegt.
 
 Om te leren wat nodig is voor uw specifieke implementatie en siteontwerp
 
 * Contact opnemen met de [klantenservice](https://helpx.adobe.com/marketing-cloud/contact-support.html)
 
-Zie ook de belangrijkste documentatie [van](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)Dispatcher.
+Zie ook de belangrijkste documentatie [van de](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)Verzender.
 
-## Dispatcher Caching {#dispatcher-caching}
+## Caching van Dispatcher {#dispatcher-caching}
 
 ### Overzicht {#overview}
 
-Dispatcher caching for AEM Communities is de capaciteit voor de verzender om volledig caching versies van de pagina&#39;s van een communautaire plaats te dienen.
+Dispatcher caching for AEM Communities is de mogelijkheid voor de verzender om volledig in cache opgeslagen versies van de pagina&#39;s van een gemeenschapssite te bedienen.
 
 Momenteel wordt deze functie alleen ondersteund voor anonieme sitebezoekers, zoals gebruikers die door de site van de community bladeren, of die door een zoekopdracht op een pagina van de community landen, en voor zoekprogramma&#39;s die pagina&#39;s indexeren. Het voordeel is dat anonieme gebruikers en zoekmachines betere prestaties zullen ervaren.
 
@@ -52,7 +52,7 @@ Wanneer gevormd om verzender caching te steunen, wordt een op TTL-Gebaseerde &qu
 
 ### Configuratie {#configuration}
 
-De OSGi configuratie **ACS AEM Commons - de Kopbal van de Controle van het Geheime voorgeheugen van Dispatcher - Maximale Leeftijd** plaatst de afloop van caching pagina&#39;s die onder een gespecificeerd weg verschijnen.
+De OSGi configuratie **ACS AEM Commons - de Kopbal van de Controle van het Geheime voorgeheugen van de Verzender - de Maximale Leeftijd** plaatst de afloop van caching pagina&#39;s die onder een gespecificeerde weg verschijnen.
 
 * Vanuit de [webconsole](../../help/sites-deploying/configuring-osgi.md)
 
@@ -61,19 +61,21 @@ De OSGi configuratie **ACS AEM Commons - de Kopbal van de Controle van het Gehei
 * Zoeken `ACS AEM Commons - Dispatcher Cache Control Header - Max Age`
 * Selecteer het plusteken (+) om een nieuwe verbindingsconfiguratie tot stand te brengen
 
-   ![chlimage_1-339](assets/chlimage_1-339.png)
+   ![verzender](assets/dispatcher.png)
 
 * **Filterpatronen**
+
    *(vereist)* Een of meer paden naar gemeenschapspagina&#39;s. Bijvoorbeeld, `/content/sites/engage/(.*)`.
 
 * **Besturingselement voor cache maximaal pagina**
+
    *(Vereist)* De maximumleeftijd (in seconden) om aan de kopbal van de Controle van het Geheime voorgeheugen toe te voegen. De waarde moet groter zijn dan nul (0).
 
-## Dispatcher Client Headers {#dispatcher-client-headers}
+## Clientkoppen van Dispatcher {#dispatcher-client-headers}
 
 In de /clientheaders sectie van `dispatcher.any`, als het een lijst maken van een specifieke reeks kopballen, is het noodzakelijk om `"CSRF-Token"` te omvatten opdat de eigenschap [van](enablement.md) Enablement behoorlijk werkt.
 
-## Dispatcher-filters {#dispatcher-filters}
+## Verzendfilters {#dispatcher-filters}
 
 De /filter sectie van het `dispatcher.any` dossier wordt gedocumenteerd in het [Vormen Toegang tot Inhoud - /filter](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#filter).
 
@@ -85,7 +87,7 @@ De volgende voorbeelden gebruiken eigenschapnamen die waarschijnlijk moeten word
 
 Zie ook:
 
-* [Dispatcher Security Checklist](https://helpx.adobe.com/experience-manager/dispatcher/using/security-checklist.html)
+* [Controlelijst voor beveiliging van verzender](https://helpx.adobe.com/experience-manager/dispatcher/using/security-checklist.html)
 
 >[!NOTE]
 >
@@ -165,7 +167,7 @@ De volgende ingangen zouden aan het eind van de /filter sectie moeten worden toe
 /7001 { /type "allow" /glob "GET /libs/cq/security/userinfo.json?cq_ck=*"
 ```
 
-## Dispatcher-regels {#dispatcher-rules}
+## Regels voor verzending {#dispatcher-rules}
 
 In de sectie Regels van `dispatcher.any` wordt gedefinieerd welke reacties in de cache moeten worden geplaatst op basis van de aangevraagde URL. Voor Gemeenschappen wordt de sectie Regels gebruikt om te bepalen wat nooit in cache mag worden geplaatst.
 
@@ -192,7 +194,7 @@ In de sectie Regels van `dispatcher.any` wordt gedefinieerd welke reacties in de
 
 Een belangrijke bron van problemen is het opnemen van filterregels zonder aandacht voor het effect op vroegere regels, vooral wanneer het toevoegen van een regel om toegang te ontkennen.
 
-Het allereerste filterpatroon wordt vaak gebruikt om alles te ontkennen zodat het volgende filters toegang op een gecontroleerde manier herstellen. Wanneer meerdere filters van toepassing zijn op een aanvraag, is het laatste filter dat van toepassing is het filter dat van kracht is.
+Het allereerste filterpatroon wordt vaak gebruikt om alles te ontkennen zodat het volgende filters toegang op een gecontroleerde manier herstellen. Wanneer er meerdere filters van toepassing zijn op een aanvraag, is het laatste filter dat van toepassing is het filter dat van kracht is.
 
 ## Voorbeeld van verzender.any {#sample-dispatcher-any}
 

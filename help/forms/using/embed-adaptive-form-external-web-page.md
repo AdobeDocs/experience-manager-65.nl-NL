@@ -9,9 +9,9 @@ topic-tags: author
 discoiquuid: d739c6da-3b41-4452-8728-d7cd1a3ae20b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: ade3747ba608164a792a62097b82c55626245891
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '990'
 ht-degree: 0%
 
 ---
@@ -98,7 +98,7 @@ Het adaptieve formulier insluiten:
 
 1. In de ingesloten code:
 
-   * Wijzig de waarde van de variabele *options.path* met het pad van de publicatie-URL van het adaptieve formulier. Als de AEM server op een contextweg loopt, zorg ervoor dat URL het contextweg omvat. De bovenstaande code en het aanpassen van de locatie op dezelfde naamformulierserver zijn bijvoorbeeld gebaseerd op het contextpad van het adaptieve formulier /content/forms/af/locbasic.html.
+   * Wijzig de waarde van de variabele *options.path* met het pad van de publicatie-URL van het adaptieve formulier. Als de AEM server op een contextweg loopt, zorg ervoor dat URL het contextweg omvat. Vermeld altijd de volledige naam van het adaptieve formulier, inclusief de extensie.   De bovenstaande code en het aanpassen van de locatie op dezelfde AEM formulierserver, zodat het voorbeeld het contextpad van het adaptieve formulier /content/forms/af/locbasic.html gebruikt.
    * Vervang *options.dataRef* met attributen om met URL over te gaan. Met de variabele dataref kunt u een adaptief formulier [](/help/forms/using/prepopulate-adaptive-form-fields.md)vooraf invullen.
    * Vervang *options.themePath* door het pad naar een ander thema dan het thema dat in het adaptieve formulier is geconfigureerd. U kunt ook het themapad opgeven met het aanvraagkenmerk.
    * CSS_Selector is de CSS-kiezer van de formuliercontainer waarin het adaptieve formulier is ingesloten. De CSS-kiezer in het bovenstaande voorbeeld is bijvoorbeeld de CSS-klasse .customafsection css.

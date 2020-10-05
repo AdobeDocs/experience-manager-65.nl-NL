@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: b4d38e45-eaa0-4ace-a885-a2e84fdfd5a1
 pagetitle: Configuring Email
 translation-type: tm+mt
-source-git-commit: 50c1532b2bdc41555eff2be718cd478aad1f403a
+source-git-commit: 570c970c328ded828680baeb1b04ab4361a36226
 workflow-type: tm+mt
 source-wordcount: '750'
 ht-degree: 1%
@@ -48,7 +48,7 @@ Dit is gebaseerd op de documentatie voor het [Vormen E-mailbericht](../../help/s
 
 Bijvoorbeeld (alleen invullen met waarden voor illustratieve doeleinden):
 
-![chlimage_1-98](assets/chlimage_1-98.png)
+![email-config](assets/email-config.png)
 
 * **[!UICONTROL SMTP server host name]**
 
@@ -98,7 +98,7 @@ U bereikt als volgt de e-mailconfiguratieinstanties van de Gemeenschappen:
 
 * Zoeken `AEM Communities Email Reply Configuration`.
 
-![chlimage_1-99](assets/chlimage_1-99.png)
+![email-response-config](assets/email-reply-config.png)
 
 ### Configuratie voor meldingen {#configuration-for-notifications}
 
@@ -177,7 +177,7 @@ Om de e-mail in de gegevensopslagplaats te brengen, is het noodzakelijk om een o
 
 * Selecteer **[!UICONTROL Add]**
 
-   ![chlimage_1-102](assets/chlimage_1-102.png)
+   ![opiniepeiling-importeur](assets/polling-importer.png)
 
 * **[!UICONTROL Type]**
 
@@ -207,7 +207,7 @@ Om de e-mail in de gegevensopslagplaats te brengen, is het noodzakelijk om een o
 
 ### Protocol aanpassen voor nieuwe pollingimportmodule {#adjust-protocol-for-new-polling-importer}
 
-Nadat de nieuwe stemconfiguratie is opgeslagen, moeten de eigenschappen van de e-mailimportfunctie met abonnement verder worden gewijzigd om het protocol te wijzigen van `POP3` naar `emailreply`
+Zodra de nieuwe opiniepeilingsconfiguratie wordt bewaard, is het noodzakelijk eigenschappen van de invoer van e-mail van het abonnement verder te wijzigen importeur om het protocol van `POP3` te veranderen in `emailreply`.
 
 Met [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
@@ -217,7 +217,7 @@ Met [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
    * **feedType**: Vervangen `pop3s` door **`emailreply`**
    * **bron**: Bronprotocol vervangen `pop3s://` door **`emailreply://`**
 
-![chlimage_1-103](assets/chlimage_1-103.png)
+![opiniepeilingprotocol](assets/polling-protocol.png)
 
 De rode driehoeken geven de gewijzigde eigenschappen aan. Sla de wijzigingen op:
 

@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f2ac3d66-cc79-498f-83fb-dd96feb88de2
 translation-type: tm+mt
-source-git-commit: 6720d5a0fdf1facc0b10011ec306dffbb31f4ac5
+source-git-commit: 570c970c328ded828680baeb1b04ab4361a36226
 workflow-type: tm+mt
 source-wordcount: '857'
 ht-degree: 0%
@@ -24,12 +24,12 @@ ht-degree: 0%
 
 Voor ontwikkelings- en demonstratiedoeleinden is het nodig één auteur en één publicatieexemplaar uit te voeren.
 
-Volg de standaard AEM [Aan de slag](../../help/sites-deploying/deploy.md#getting-started) instructies die in
+Volg de standaard AEM [Aan de slag](../../help/sites-deploying/deploy.md#getting-started) instructies die resulteren in
 
 * Authoromgeving op [localhost:4502](http://localhost:4502/)
 * Publicatie-omgeving op [localhost:4503](http://localhost:4503/)
 
-Voor AEM Communities,
+Voor AEM Communities:
 
 * De auteursomgeving is voor:
 
@@ -55,15 +55,15 @@ Deze zelfstudie maakt een [community-site](overview.md#enablement-community)voor
 
 * [Laatste releases](deploy-communities.md#latest-releases)
 
-Voor een zelfstudie waarmee een [community-site](overview.md#engagement-community)voor betrokkenheid wordt gemaakt, gaat u naar [Aan de slag met AEM Communities](getting-started.md).
+Ga naar [Aan de slag met AEM Communities](overview.md#engagement-community)voor een zelfstudie waarmee een community-site [voor](getting-started.md)betrokkenheid wordt gemaakt.
 
 ## Functies van Enablement configureren {#configure-enablement-features}
 
 Om deze zelfstudie te volgen, is het nodig om enablement [correct te installeren en](enablement.md)te vormen, die derdeproducten, zoals MySQL en Mopeg vereist.
 
-## Analytics configureren {#configure-analytics}
+## Analyses configureren {#configure-analytics}
 
-Wanneer [Adobe Analytics is geconfigureerd voor de communitysite](analytics.md), is meer informatie beschikbaar in de [rapporten](reports.md) die worden gegenereerd over bronnen voor activering en leerpaden die zijn toegewezen aan community-leden (studenten).
+Wanneer [Adobe Analytics voor de communautaire plaats](analytics.md)wordt gevormd, is meer informatie beschikbaar in de [rapporten](reports.md) die over de middelen van het toelaten en leerwegen worden geproduceerd die aan communautaire leden (studenten) worden toegewezen.
 
 ## E-mail voor meldingen configureren {#configure-email-for-notifications}
 
@@ -94,14 +94,14 @@ Met de [tagconsole](../../help/sites-administering/tags.md#tagging-console) kunt
 * `Tutorial: Arts / Auditory`
 * `Tutorial: Arts / History`
 
-![chlimage_1-417](assets/chlimage_1-417.png)
+![zelfstudielabels](assets/tutorial-tags.png)
 
 Volg vervolgens de instructies op:
 
 1. [Tagmachtigingen instellen](../../help/sites-administering/tags.md#setting-tag-permissions)
 1. [De labels publiceren](../../help/sites-administering/tags.md#publishing-tags)
 
-Voorbeeldpakket met codes die zijn gemaakt voor de zelfstudies Aan de slag met AEM Communities
+Voorbeeld van pakket met tags die zijn gemaakt voor de Tutorials Aan de slag van AEM Communities
 
 [Bestand ophalen](assets/communities_tutorialtags-10.zip)
 
@@ -111,7 +111,7 @@ Voor een community-site voor activering mogen bezoekers van de site zich niet [z
 
 In plaats daarvan, met de toegelaten [tunneldienst](#enable-the-tunnel-service) , wordt de console [van](members.md) Leden gebruikt om nieuwe leden in het publicatiemilieu te registreren.
 
-In deze zelfstudie worden drie leden gemaakt in de publicatieomgeving. Twee leden zullen lid van een gebruikersgroep worden die aan een het leren weg wordt toegewezen, terwijl het derde lid een het middelcontact van het toelaat wordt.
+In deze zelfstudie worden drie leden gemaakt in de publicatieomgeving. Twee leden zullen lid van een gebruikersgroep worden die aan een het leren weg wordt toegewezen, terwijl het derde lid een contactpunt van het enablement middel wordt.
 
 Een vierde gebruiker wordt gecreeerd in het auteursmilieu en toegewezen de rollen van de Beheerder van de Gemeenschappen en Communautaire Manager van Enablement.
 
@@ -173,7 +173,7 @@ Een vierde gebruiker wordt gecreeerd in het auteursmilieu en toegewezen de rolle
 
 ### Eigenschappen van de communautaire klasse Ski {#community-ski-class-properties}
 
-![chlimage_1-418](assets/chlimage_1-418.png)
+![ski-klasse-eigenschappen](assets/ski-class-properties.png)
 
 >[!NOTE]
 >
@@ -219,5 +219,5 @@ Omlaag schuiven naar `Add User to Groups`:
 
 * Selecteer **[!UICONTROL Save]**
 
-![chlimage_1-419](assets/chlimage_1-419.png)
+![admin-rol](assets/admin-role.png)
 

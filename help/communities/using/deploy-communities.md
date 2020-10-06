@@ -11,10 +11,10 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 94bc3550a7e18b9203e7a0d495d195d7b798e012
+source-git-commit: 7c0834e9b70266e8b678771510fb1756c8091ea8
 workflow-type: tm+mt
-source-wordcount: '1890'
-ht-degree: 0%
+source-wordcount: '1891'
+ht-degree: 1%
 
 ---
 
@@ -35,53 +35,53 @@ ht-degree: 0%
 
 ## Controlelijst voor installatie {#installation-checklist}
 
-**Voor het[AEM](/help/sites-deploying/deploy.md#what-is-aem)**
+**Voor het[AEM platform](/help/sites-deploying/deploy.md#what-is-aem)**:
 
-* nieuwste updates [AEM 6.5 installeren](#aem64updates)
+* Installeer de nieuwste [AEM 6.5 Updates](#aem64updates).
 
-* als het niet gebruiken van de standaardhavens (4502, 4503), dan [vorm replicatieagenten](#replication-agents-on-author)
-* [de cryptosleutel repliceren](#replicate-the-crypto-key)
-* als ondersteuning wordt geboden voor globalization, [installatie van geautomatiseerde vertaling](/help/sites-administering/translation.md)(voorbeeldinstallatie is beschikbaar voor ontwikkeling)
+* Als het gebruiken van niet de standaardhavens (4502, 4503), dan [vorm replicatieagenten](#replication-agents-on-author).
+* [cryptosleutel repliceren](#replicate-the-crypto-key)
+* Als u ondersteuning biedt voor globalization, [kunt u geautomatiseerde vertalingen](/help/sites-administering/translation.md)instellen (voorbeeldinstallatie is beschikbaar voor ontwikkeling).
 
-**Voor het vermogen van de[Gemeenschappen](/help/communities/overview.md)**
+**Voor het vermogen van de[Gemeenschappen](/help/communities/overview.md)**:
 
-* als het opstellen van [publiceer landbouwbedrijf](/help/sites-deploying/recommended-deploys.md#tarmk-farm), [identificeer de primaire uitgever](#primary-publisher)
+* Als het opstellen van [publiceer landbouwbedrijf](/help/sites-deploying/recommended-deploys.md#tarmk-farm), [identificeer de primaire uitgever](#primary-publisher)
 
-* [de tunneldienst](#tunnel-service-on-author)
-* [aanmelden via sociaal netwerk](/help/communities/social-login.md#adobe-granite-oauth-authentication-handler)
-* [adobe analytics configureren](/help/communities/analytics.md)
-* een [standaard e-mailservice instellen](/help/communities/email.md)
-* identificeer de keus voor [gedeelde opslag](/help/communities/working-with-srp.md) UGC (**SRP**)
+* [De tunnelservice inschakelen](#tunnel-service-on-author)
+* [Sociale aanmelding inschakelen](/help/communities/social-login.md#adobe-granite-oauth-authentication-handler)
+* [Adobe Analytics configureren](/help/communities/analytics.md)
+* Een [standaard e-mailservice instellen](/help/communities/email.md)
+* Identificeer de keus voor [gedeelde opslag](/help/communities/working-with-srp.md) UGC (**SRP**)
 
-   * als MongoDB SRP [(MSRP)](/help/communities/msrp.md)
+   * Indien MongoDB SRP [(MSRP)](/help/communities/msrp.md)
 
       * [MongoDB installeren en configureren](/help/communities/msrp.md#mongodb-configuration)
-      * [configureren Solr](/help/communities/solr.md)
-      * [selecteer MSRP](/help/communities/srp-config.md)
-   * indien relationele database SRP [(DSRP)](/help/communities/dsrp.md)
+      * [Solr configureren](/help/communities/solr.md)
+      * [Selecteer MSRP](/help/communities/srp-config.md)
+   * Indien relationele database SRP [(DSRP)](/help/communities/dsrp.md)
 
       * [Installeer het JDBC-stuurprogramma voor MySQL](#jdbc-driver-for-mysql)
       * [Installeer en vorm MySQL voor DSRP](/help/communities/dsrp-mysql.md)
-      * [configureren Solr](/help/communities/solr.md)
-      * [selecteer DSRP](/help/communities/srp-config.md)
-   * if Adobe SRP [(ASRP)](/help/communities/asrp.md)
+      * [Solr configureren](/help/communities/solr.md)
+      * [DSRP selecteren](/help/communities/srp-config.md)
+   * Indien Adobe SRP [(ASRP)](/help/communities/asrp.md)
 
-      * met uw accountvertegenwoordiger samenwerken voor provisioning
+      * Werk voor provisioning met uw accountvertegenwoordiger.
       * [Selecteer ASRP](/help/communities/srp-config.md)
-   * if JCR SRP [(JSRP)](/help/communities/jsrp.md)
+   * Indien JCR SRP [(JSRP)](/help/communities/jsrp.md)
 
-      * geen gedeelde UGC-opslag:
+      * Geen gedeelde UGC-opslag:
 
-         * UGC wordt nooit gerepliceerd
-         * UGC is alleen zichtbaar op AEM instantie of cluster waarin de UGC is ingevoerd
-      * default is JSRP
+         * UGC wordt nooit gerepliceerd.
+         * UGC is alleen zichtbaar op AEM instantie of cluster waarin het is ingevoerd.
+      * Standaard is JSRP
 
    Voor de functie **[enablement](/help/communities/overview.md#enablement-community)**
 
    * [Mpeg installeren en configureren](/help/communities/ffmpeg.md)
    * [Installeer het JDBC-stuurprogramma voor MySQL](#jdbc-driver-for-mysql)
-   * [aem communities SCORM-Engine installeren](#scorm-package)
-   * [Installeer en vorm MySQL voor enablement](/help/communities/mysql.md)
+   * [AEM Communities SCORM-engine installeren](#scorm-package)
+   * [MySQL voor activering installeren en configureren](/help/communities/mysql.md)
 
 
 
@@ -106,39 +106,38 @@ Net als bij AEM 6.4 en hoger maken AEM Communities-functies en hotfixes deel uit
 
 Twee eigenschappen van Gemeenschappen gebruiken een gegevensbestand MySQL:
 
-* voor [activering](/help/communities/enablement.md) : SCORM-activiteiten en -studenten opnemen
-* voor [DSRP](/help/communities/dsrp.md) : door de gebruiker gegenereerde inhoud opslaan (UGC)
+* Voor [activering](/help/communities/enablement.md): SCORM-activiteiten en -studenten opnemen
+* Voor [DSRP](/help/communities/dsrp.md): door de gebruiker gegenereerde inhoud opslaan (UGC)
 
 De MySQL-connector moet afzonderlijk worden opgehaald en geïnstalleerd.
 
 De noodzakelijke stappen zijn:
 
-1. Het ZIP-archief downloaden vanaf [https://dev.mysql.com/downloads/connector/j/](https://dev.mysql.com/downloads/connector/j/)
+1. Download het ZIP-archief van [https://dev.mysql.com/downloads/connector/j/](https://dev.mysql.com/downloads/connector/j/)
 
-   * version must be >= 5.1.38
+   * Versie moet >= 5.1.38 zijn
 
-1. mysql-connector-java-&lt;version>-bin.jar (bundel) ophalen uit het archief
-1. gebruik de webconsole om de bundel te installeren en te starten:
+1. Extraheren `mysql-connector-java-&lt;version&gt;-bin.jar (bundle) from the archive`
+1. Gebruik de webconsole om de bundel te installeren en te starten:
 
-   * bijvoorbeeld https://localhost:4502/system/console/bundles
-   * select **`Install/Update`**
+   * Bijvoorbeeld https://localhost:4502/system/console/bundles
+   * Selecteer **`Install/Update`**
    * Bladeren... om de bundel te selecteren die uit het gedownloade ZIP-archief is geëxtraheerd
-   * Controleer of* het JDBC-stuurprogramma van Oracle Corporation voor MySQLcom.mysql.jdbc* actief is en start dit als dit niet het geval is (of controleer de logboeken)
+   * Controleer of het JDBC-stuurprogramma van *Oracle Corporation voor MySQLcom.mysql.jdbc* actief is en start dit als dit niet het geval is (of controleer de logboeken)
 
-1. als het installeren op een bestaande plaatsing nadat JDBC is gevormd, dan opnieuw bindt JDBC aan de nieuwe schakelaar door de configuratie JDBC van de Webconsole op te slaan:
+1. Als het installeren op een bestaande plaatsing nadat JDBC is gevormd, dan opnieuw bindt JDBC aan de nieuwe schakelaar door de configuratie JDBC van de Webconsole op te slaan:
 
-   * bijvoorbeeld https://localhost:4502/system/console/configMgr
-   * locatie van `Day Commons JDBC Connections Pool` configuratie
-   * selecteren om te openen
-   * select `Save`
+   * Bijvoorbeeld https://localhost:4502/system/console/configMgr
+   * Zoek de `Day Commons JDBC Connections Pool` configuratie en selecteer deze om de configuratie te openen.
+   * Selecteer `Save`.
 
-1. De stappen 3 en 4 op alle auteur herhalen en instanties publiceren
+1. Herhaal stap 3 en 4 op alle auteur en publiceer instanties.
 
 Meer informatie over het installeren van bundels vindt u op de pagina [Webconsole](/help/sites-deploying/web-console.md#bundles) .
 
 #### Voorbeeld: MySQL-connectorbundel is geïnstalleerd {#example-installed-mysql-connector-bundle}
 
-![](../assets/chlimage_1-125.png)
+![](../assets/mysql-connector.png)
 
 ### SCORM-pakket {#scorm-package}
 
@@ -170,8 +169,8 @@ De geavanceerde MLS-download (ook wel &#39;phasetwo&#39; genoemd) is beschikbaar
 
 * [AEM-SOLR-MLS-fasetwo](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/tat/AEM-SOLR-MLS-phasetwo/1.2.40/)
 
-   * versie 1.2.40, 6 april 2016
-   * download AEM-SOLR-MLS-phasetwo-1.2.40.zip
+   * Versie 1.2.40, 6 april 2016
+   * Download AEM-SOLR-MLS-phasetwo-1.2.40.zip
 
 Voor details en installatieinformatie, bezoek [Solr Configuratie](/help/communities/solr.md) voor SRP.
 
@@ -179,18 +178,18 @@ Voor details en installatieinformatie, bezoek [Solr Configuratie](/help/communit
 
 **Pakketten zichtbaar in Adobe AEM Cloud**
 
-Voor de koppelingen naar pakketten op deze pagina is geen actieve versie van AEM vereist, aangezien deze op pakketshare moeten worden geplaatst `adobeaemcloud.com`. Terwijl de pakketten zichtbaar zijn, is de `Install`knop bedoeld voor het installeren van de pakketten op een door Adobe gehoste site. Als u van plan bent op een lokale AEM te installeren, `Install`wordt er een fout gegenereerd.
+Voor de koppelingen naar pakketten op deze pagina is geen actieve versie van AEM vereist, aangezien deze op pakketshare moeten worden geplaatst `adobeaemcloud.com`. Terwijl de pakketten zichtbaar zijn, is de `Install` knop voor het installeren van de pakketten op een door Adobe gehoste site. Als u van plan bent op een lokale AEM te installeren, `Install` wordt er een fout gegenereerd.
 
 **Installeren op lokale AEM**
 
 Als u de pakketten wilt installeren die zichtbaar zijn in `adobeaemcloud.com` een lokale AEM-instantie, moet het pakket eerst naar een lokale schijf worden gedownload:
 
-* Selecteer het tabblad **Middelen**
-* Selecteer **Downloaden naar schijf**
+* Het tabblad **Middelen** selecteren
+* Downloaden **naar schijf selecteren**
 
 Gebruik pakketbeheer in de lokale AEM-instantie (bijvoorbeeld [https://localhost:4502/crx/packmgr/](https://localhost:4502/crx/packmgr/)) om te uploaden naar de lokale AEM pakketopslagplaats.
 
-Als u het pakket ook opent via pakketshare van de lokale AEM-instantie (bijvoorbeeld [https://localhost:4502/crx/packageshare/](https://localhost:4502/crx/packageshare/)), wordt de `Download`knop gedownload naar de pakketopslagplaats van de lokale AEM-instantie.
+Als u het pakket ook opent via pakketshare van de lokale AEM-instantie (bijvoorbeeld [https://localhost:4502/crx/packageshare/](https://localhost:4502/crx/packageshare/)), wordt de `Download` knop gedownload naar de pakketopslagplaats van de lokale AEM-instantie.
 
 Eenmaal in de pakketopslagplaats van de lokale AEM-instantie, gebruikt u pakketbeheer om het pakket te installeren.
 
@@ -216,61 +215,61 @@ Lees, naast de upgrade van het platform, [Upgrade naar AEM Communities 6.5](/hel
 
 ### Primaire uitgever {#primary-publisher}
 
-Wanneer de gekozen plaatsing een [publicatielandbouwbedrijf](/help/communities/topologies.md#tarmk-publish-farm)is, dan moet één AEM publicatiegeval als **`primary publisher`** voor activiteiten worden geïdentificeerd die niet in alle gevallen, zoals eigenschappen zouden moeten voorkomen die **meldingen **of **Adobe Analytics** steunen.
+Wanneer de gekozen plaatsing een [publicatielandbouwbedrijf](/help/communities/topologies.md#tarmk-publish-farm)is, dan moet één AEM publicatiegeval als **`primary publisher`** voor activiteiten worden geïdentificeerd die niet op alle gevallen, zoals eigenschappen zouden moeten voorkomen die op **berichten** of **Adobe Analytics** vertrouwen.
 
-Door gebrek, wordt de configuratie `AEM Communities Publisher Configuration` OSGi gevormd met gecontroleerde **`Primary Publisher`** checkbox, zodat alle publiceer instanties in publiceer landbouwbedrijf zich als primair zou identificeren.
+Door gebrek, wordt de configuratie `AEM Communities Publisher Configuration` OSGi gevormd met de gecontroleerde **`Primary Publisher`** controledoos, zodat alle publiceer instanties in publiceer landbouwbedrijf zich als primair zou identificeren.
 
-Daarom is het noodzakelijk om de configuratie op alle secundaire publiceer instanties **uit te** geven om **`Primary Publisher`** checkbox los te maken.
+Daarom is het noodzakelijk om de configuratie op alle secundaire publiceer instanties **uit te** geven om de **`Primary Publisher`** controledoos los te maken.
 
-![](../assets/chlimage_1-126.png)
+![](../assets/primary-publisher.png)
 
 Voor alle andere (secundaire) publiceer instanties in publiceer landbouwbedrijf:
 
-* aanmelden met beheerdersrechten
-* toegang tot de [webconsole](/help/sites-deploying/configuring-osgi.md)
+* Aanmelden met beheerdersrechten
+* De [webconsole openen](/help/sites-deploying/configuring-osgi.md)
 
-   * bijvoorbeeld [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
+   * Bijvoorbeeld: [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
 
-* zoek de `AEM Communities Publisher Configuration`
-* Selecteer het bewerkingspictogram
-* het selectievakje **Primaire uitgever** uitschakelen
+* Zoek de `AEM Communities Publisher Configuration`
+* Het bewerkingspictogram selecteren
+* Schakel het selectievakje **Primaire uitgever** uit
 * Selecteer **Opslaan**
 
 ### Replicatieagents op auteur {#replication-agents-on-author}
 
 De replicatie wordt gebruikt voor plaatsinhoud die in het publicatiemilieu, zoals communautaire groepen wordt gecreeerd, evenals het leiden van leden en lidgroepen van het auteursmilieu gebruikend de [tunneldienst](#tunnel-service-on-author).
 
-Voor de primaire uitgever, zorg ervoor de Agent Config [van de](/help/sites-deploying/replication.md) Replicatie correct de publicatieserver en erkende gebruiker identificeert. De standaard gemachtigde gebruiker, heeft `admin,` reeds de aangewezen toestemmingen (is een lid van `Communities Administrators`).
+Voor de primaire uitgever, zorg ervoor de Agent Config [van de](/help/sites-deploying/replication.md) Replicatie correct de publicatieserver en erkende gebruiker identificeert. De standaard gemachtigde gebruiker, heeft `admin` reeds de aangewezen toestemmingen (is een lid van `Communities Administrators`).
 
 Als een andere gebruiker over de juiste machtigingen beschikt, moet hij of zij als lid aan de `administrators` gebruikersgroep (ook een lid van `Communities Administrators`) worden toegevoegd.
 
 Er zijn twee replicatieagenten in het auteursmilieu die de vervoerconfiguratie nodig hebben correct worden gevormd.
 
-* toegang tot de console van de Replicatie op auteur
+* De console van de Replicatie van de toegang op auteur
 
-   * van globale navigatie: **Gereedschappen, implementatie, replicatie, agents op auteur**
+   * Van globale navigatie: **Gereedschappen, implementatie, replicatie, agents op auteur**
 
-* dezelfde procedure volgen voor beide agentia :
+* Volg de zelfde procedure voor beide agenten:
 
    * **Standaardagent (publiceren)**
    * **Reverse Replication Agent (publiceren reverse)**
 
-      1. selecteer de agent
-      1. selecteren, **bewerken**
+      1. Selecteer de agent.
+      1. Selecteer **Bewerken**.
       1. Selecteer het tabblad **Vervoer**
-      1. als poort `4503`, bewerk de **URI** om de juiste poort op te geven
+      1. Als geen poort `4503`is, bewerkt u de **URI** om de juiste poort op te geven.
 
-      1. als geen gebruiker `admin`, geef de **Gebruiker** en het **Wachtwoord** uit om een lid van de `administrators` gebruikersgroep te specificeren
+      1. Als geen gebruiker `admin`, geef de **Gebruiker** en het **Wachtwoord** uit om een lid van de `administrators` gebruikersgroep te specificeren.
 
 In de volgende afbeeldingen ziet u de resultaten van het wijzigen van de poort van 4503 in 6103 door:
 
 #### Standaardagent (publiceren) {#default-agent-publish}
 
-![configure-Limieten](../assets/configure-limits.png)
+![configure-Limieten](../assets/default-agent-publish.png)
 
 #### Reverse Replication Agent (publiceren reverse) {#reverse-replication-agent-publish-reverse}
 
-![](../assets/chlimage_1-128.png)
+![](../assets/reverse-replication-agent.png)
 
 ### Tunnelservice op auteur {#tunnel-service-on-author}
 
@@ -280,20 +279,19 @@ De tunneldienst verleent deze toegang gebruikend de replicatieagent op auteur.
 
 Om de tunneldienst toe te laten:
 
-* over **auteur**
-* aanmelden met beheerdersrechten
-* als de uitgever niet localhost is:4503 of de vervoergebruiker niet is `admin`, dan [vorm de replicatieagent](#replication-agents-on-author)
+* Meld u bij de **auteur** aan met beheerdersrechten.
+* Als de uitgever niet localhost is:4503 of de vervoergebruiker niet is `admin`, dan [vorm de replicatieagent](#replication-agents-on-author).
 
-* toegang tot de [webconsole](/help/sites-deploying/configuring-osgi.md)
+* Toegang tot de [webconsole](/help/sites-deploying/configuring-osgi.md)
 
-   * bijvoorbeeld [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
+   * Bijvoorbeeld: [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
 
-* zoek de `AEM Communities Publish Tunnel Service`
-* Selecteer het bewerkingspictogram
-* Schakel het selectievakje **enable **box in
+* Zoek de `AEM Communities Publish Tunnel Service`
+* Het bewerkingspictogram selecteren
+* Het selectievakje **Inschakelen** selecteren
 * Selecteer **Opslaan**
 
-![](../assets/chlimage_1-129.png)
+![](../assets/tunnel-service.png)
 
 ### De cryptosleutel dupliceren {#replicate-the-crypto-key}
 
@@ -303,31 +301,34 @@ Vanaf AEM 6.3 wordt het sleutelmateriaal opgeslagen in het bestandssysteem en ni
 
 Om het belangrijkste materiaal van auteur aan alle andere instanties te kopiëren is het noodzakelijk:
 
-* toegang krijgen tot de AEM instantie, doorgaans een instantie van de auteur, die het te kopiëren toetsmateriaal bevat
+* Toegang krijgen tot de AEM instantie, doorgaans een instantie van de auteur, die het te kopiëren toetsmateriaal bevat
 
-   * de `com.adobe.granite.crypto.file` bundel bijvoorbeeld zoeken in het lokale bestandssysteem;
+   * De `com.adobe.granite.crypto.file` bundel zoeken in het lokale bestandssysteem
+
+      Bijvoorbeeld,
 
       * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
-      * in het `bundle.info` bestand wordt de bundel geïdentificeerd
-   * navigeer bijvoorbeeld in de gegevensmap,
+      * Het `bundle.info` bestand geeft de bundel aan
+   * Navigeer bijvoorbeeld in de gegevensmap
 
       * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
-   * de Mac- en primaire knooppuntbestanden kopiëren
+   * Kopieer de hoofd- en primaire knoopdossiers.
 
 
 
-* voor elke AEM
+* Voor elke AEM
 
-   * navigeer bijvoorbeeld in de gegevensmap,
+   * Navigeer bijvoorbeeld in de gegevensmap
 
       * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
-   * plakken de twee eerder gekopieerde bestanden
-   * het is noodzakelijk om de granite Crypto-bundel [te](#refresh-the-granite-crypto-bundle) vernieuwen als de doel-AEM momenteel wordt uitgevoerd
+   * Plak de twee eerder gekopieerde bestanden
+   * Het is noodzakelijk om de granite Crypto-bundel [te](#refresh-the-granite-crypto-bundle) vernieuwen als de doel-AEM momenteel wordt uitgevoerd.
 
 
 >[!CAUTION]
 >
 >Als een andere veiligheidseigenschap reeds is gevormd die op de crypto sleutels gebaseerd is, dan het herhalen van de crypto sleutels kon de configuratie beschadigen. Neem voor hulp [contact op met de klantenservice](https://helpx.adobe.com/marketing-cloud/contact-support.html).
+
 
 #### Replicatie opslagplaats {#repository-replication}
 
@@ -339,31 +340,32 @@ Als het sleutelmateriaal in de bewaarplaats wordt opgeslagen, zoals het geval wa
 >
 >Het is belangrijk om te verifiëren dat de [replicatieagent op auteur](#replication-agents-on-author) correct wordt gevormd.
 
+
 Met het zeer belangrijke materiaal dat in de bewaarplaats wordt opgeslagen, is de manier om de crypto sleutel van auteur aan andere instanties te herhalen als volgt:
 
 Met [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
 
-* surf naar [https://&lt;server>:&lt;port>/crx/de](https://localhost:4502/crx/de)
-* select `/etc/key`
-* open `Replication` tabblad
-* select `Replicate`
+* Ga naar [https://&lt;server>:&lt;port>/crx/de](https://localhost:4502/crx/de)
+* Selecteer `/etc/key`
+* Tabblad Openen `Replication`
+* Selecteer `Replicate`
 
 * [De Granite Crypto-bundel vernieuwen](#refresh-the-granite-crypto-bundle)
 
-![](../assets/chlimage_1-130.png)
+![](../assets/replicare-repository.png)
 
 #### De graniet-cryptobundel vernieuwen {#refresh-the-granite-crypto-bundle}
 
-* op elke publicatie-instantie toegang tot de [webconsole](/help/sites-deploying/configuring-osgi.md)
+* Voor elke publicatie-instantie opent u de [webconsole](/help/sites-deploying/configuring-osgi.md)
 
-   * bijvoorbeeld [https://&lt;server>:&lt;port>/system/console/bundles](https://localhost:4503/system/console/bundles)
+   * Bijvoorbeeld [https://&lt;server>:&lt;port>/system/console/bundles](https://localhost:4503/system/console/bundles)
 
-* locate `Adobe Granite Crypto Support` bundle (com.adobe.granite.crypto)
-* selecteren **Vernieuwen**
+* Snel zoeken naar `Adobe Granite Crypto Support` bundel (com.adobe.granite.crypto)
+* Selecteer **Vernieuwen**
 
-![](../assets/chlimage_1-131.png)
+![](../assets/refresh-granite-bundle.png)
 
-* na een ogenblik zou een **Succesdialoog **moeten verschijnen:
+* Na een ogenblik, zou een dialoog van het **Succes** moeten verschijnen:
    `Operation completed successfully.`
 
 ### Apache HTTP Server {#apache-http-server}

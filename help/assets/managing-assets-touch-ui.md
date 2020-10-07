@@ -4,9 +4,9 @@ description: Leer de taken voor middelenbeheer, zoals het uploaden, downloaden, 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 0c6a1afff62d4a962edfc8c2e6574d65a18534ac
+source-git-commit: 179af622d9655d52f3d3462f77baaf3dc9310fd8
 workflow-type: tm+mt
-source-wordcount: '9387'
+source-wordcount: '9382'
 ht-degree: 3%
 
 ---
@@ -496,7 +496,7 @@ Elementen of mappen verplaatsen:
 
 ### Elementen verplaatsen met behulp van sleepbewerking {#move-using-drag}
 
-U kunt elementen (of mappen) naar een map op hetzelfde niveau, de [!UICONTROL Lightbox] verzameling of een andere verzameling verplaatsen door deze naar de doellocatie te slepen in plaats van de [!UICONTROL Move] optie in de gebruikersinterface te gebruiken. Deze bewerking is echter alleen mogelijk in de lijstweergave.
+U kunt elementen (of mappen) naar een map op hetzelfde niveau verplaatsen door deze naar de doellocatie te slepen in plaats van de [!UICONTROL Move] optie in de gebruikersinterface te gebruiken. Deze bewerking is echter alleen mogelijk in de lijstweergave.
 
 Als u elementen verplaatst door ze te slepen, wordt de [!UICONTROL Move Asset] wizard niet geopend. U krijgt dan ook niet de optie om de naam van de elementen te wijzigen tijdens het verplaatsen. Bovendien worden de reeds gepubliceerde elementen opnieuw gepubliceerd wanneer ze door slepen worden verplaatst, zonder dat de gebruiker toestemming moet vragen om ze opnieuw te publiceren.
 

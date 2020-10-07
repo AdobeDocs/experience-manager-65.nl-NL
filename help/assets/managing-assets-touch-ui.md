@@ -4,9 +4,9 @@ description: Leer de taken voor middelenbeheer, zoals het uploaden, downloaden, 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 087940d0a51c43125a309b34b82831030e7e54b4
+source-git-commit: b76d93ada35f5d054c1d07bf1a7dd9deaaaec1ee
 workflow-type: tm+mt
-source-wordcount: '9386'
+source-wordcount: '9387'
 ht-degree: 3%
 
 ---
@@ -453,7 +453,7 @@ De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeelte
 ## Elementen verplaatsen en hernoemen {#moving-or-renaming-assets}
 
 Wanneer u elementen (of mappen) naar een andere locatie verplaatst, worden de elementen (of mappen) niet gedupliceerd, in tegenstelling tot het kopiëren van het element. De elementen (of mappen) worden op de doellocatie geplaatst en worden van de bronlocatie verwijderd. U kunt de naam van het element ook wijzigen wanneer u het naar de nieuwe locatie verplaatst.
-Als u een gepubliceerd element naar een andere locatie verplaatst, kunt u het element opnieuw publiceren. Door gebrek beweeg verrichting op gepubliceerde activa maakt automatisch het ongedaan. Verplaatst element wordt opnieuw gepubliceerd als de auteur de [!UICONTROL Republish] optie selecteert wanneer het bewegen van het element.
+Als u een gepubliceerd element naar een andere locatie verplaatst, kunt u het element opnieuw publiceren. Door gebrek beweeg verrichting op gepubliceerde activa maakt automatisch het ongedaan. Een verplaatst element wordt opnieuw gepubliceerd als de auteur de [!UICONTROL Republish] optie selecteert wanneer het element wordt verplaatst.
 
 ![U kunt een reeds gepubliceerd element opnieuw publiceren wanneer u het verplaatst](assets/republish-on-move.png)
 

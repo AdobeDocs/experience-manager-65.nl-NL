@@ -12,7 +12,7 @@ discoiquuid: d381ea40-fe49-4d32-bfad-1379c7a02aba
 docset: aem65
 pagetitle: Community Groups Console
 translation-type: tm+mt
-source-git-commit: a76707e16aa7054078bcfffe43476e4bd83d83e3
+source-git-commit: 807a81045fca19ab83b9d7872684a5f8a9ed70f1
 workflow-type: tm+mt
 source-wordcount: '1676'
 ht-degree: 0%
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 De console van Groepen verleent toegang tot het creëren van communautaire groepen wanneer de [malplaatjestructuur](/help/communities/sites-console.md#step1) van een communautaire plaats de [groepsfunctie](/help/communities/functions.md#groups-function)omvat.
 
-* AEM Communities ondersteunen het nesten van groepen binnen andere groepen. Groepnesten is mogelijk wanneer de [structuur van de nieuwe groep](/help/communities/tools-groups.md) de groepfunctie bevat.
+* AEM Communities ondersteunt het nesten van groepen binnen andere groepen. Groepnesten is mogelijk wanneer de [structuur van de nieuwe groep](/help/communities/tools-groups.md) de groepfunctie bevat.
 * Alleen voor de auteursomgeving is er een wizard voor het maken van groepen die lijkt op de wizard voor het maken van sites.
 * Of (of niet) de leden groepen in publiceren milieu kunnen tot stand brengen is het configureerbaar wanneer het toevoegen van een functie van Groepen aan een communautaire plaatsstructuur of een communautaire groepsstructuur.
 
@@ -39,14 +39,14 @@ De verschillende facetten van de communautaire groepen zijn:
 <!-- This is a 404 on helpx. Please update or remove.
 >[!NOTE]
 >
->Community groups, created in the publish environment before the [existence of the Community Groups console](/help/communities/version-history.md#featurepack1fp1), will not be listed in the Community Groups console, and thus, are not modifiable using the console.-->
+>Community groups, created in the publish environment before the [existence of the Community Groups console](/help/communities/version-history.md#featurepack1fp1), will not be listed in the Community Groups console, and thus, are not modifiable using the console.
+-->
 
 >[!NOTE]
 >
 >Deze console van Groepen, slechts toegankelijk van de console van de Plaatsen van Gemeenschappen, moet niet met de console [van de](/help/communities/members.md) Groepen van de leden voor het beheren van lidgroepen worden verward.
 >
 >De groepen van het lid zijn gebruikersgroepen die in publicatiemilieu worden geregistreerd en van het auteursmilieu worden betreden gebruikend de [tunneldienst](/help/communities/deploy-communities.md#tunnel-service-on-author)die.
-
 
 ## Groep maken {#group-creation}
 
@@ -113,7 +113,7 @@ De standaardhoofdmap is de bovenliggende site, maar de hoofdmap kan naar elke lo
 
 ![communitygroepthema](assets/communitygrouptheme.png)
 
-Het framework gebruikt [Twitter Bootstrap](https://twitterbootstrap.org/) om een responsief, flexibel ontwerp op de site te brengen. Een van de vele vooraf geladen Bootstrap-thema&#39;s kan worden geselecteerd om de geselecteerde communitygroepsjabloon op te maken, anders kan een Bootstrap-thema worden geüpload.
+Het framework gebruikt [Twitter Bootstrap](https://twitterbootstrap.org/) om de site responsief en flexibel te ontwerpen. Een van de vele vooraf geladen Bootstrap-thema&#39;s kan worden geselecteerd om de geselecteerde communitygroepsjabloon op te maken, anders kan een Bootstrap-thema worden geüpload.
 
 Als deze optie is geselecteerd, wordt het thema bedekt met een ondoorzichtig blauw vinkje.
 
@@ -204,12 +204,11 @@ Wanneer het proces is voltooid, wordt de kaart voor de nieuwe subcommunity-site 
 >
 >De groep wordt gecreeerd in alle talen, zoals die in [Stap 1 worden gespecificeerd: Het Malplaatje](/help/communities/groups.md#step-community-group-template) van de Groep van de Gemeenschap in de Extra Beschikbare Talen van de Groep van de Gemeenschap, in de console van Communautaire Groepen van de respectieve communautaire plaatsen.
 
-
 ## Inhoud groep auteurs {#author-group-content}
 
 ![open-site](assets/open-site.png)
 
-De pagina-inhoud van een groep kan met dezelfde gereedschappen worden gemaakt als elke andere AEM-pagina. Als u de groep wilt openen voor ontwerpen, selecteert u het pictogram Site openen dat wordt weergegeven wanneer u de muisaanwijzer op de groepskaart plaatst.
+De pagina-inhoud van een groep kan met dezelfde gereedschappen worden gemaakt als elke andere AEM. Als u de groep wilt openen voor ontwerpen, selecteert u het pictogram Site openen dat wordt weergegeven wanneer u de muisaanwijzer op de groepskaart plaatst.
 
 ## Groepseigenschappen wijzigen {#modify-group-properties}
 
@@ -256,13 +255,11 @@ Wijzig de volgorde van de functies die wordt weergegeven op de navigatiebalk op 
 >
 >Als u bijvoorbeeld de naam van de URL wijzigt, wordt de bestaande UGC niet verplaatst, waardoor de UGC verloren gaat.
 
-
 >[!CAUTION]
 >
 >De groepfunctie mag *niet* de *eerste of de enige* functie in de sitestructuur zijn.
 >
 >Alle andere functies, zoals de [paginafunctie](/help/communities/functions.md#page-function), moeten worden opgenomen en als eerste worden vermeld.
-
 
 **Voorbeeld: Een kalenderfunctie toevoegen aan een subcommunautaire (Groep) structuur**
 
@@ -304,7 +301,6 @@ Zodra de groep met succes wordt gepubliceerd, zal een bericht verschijnen:
 >De bovenliggende communitysite en bovenliggende groepen hadden al gepubliceerd moeten zijn.
 >
 >De site van de community en geneste groepen moeten van boven naar beneden worden gepubliceerd.
-
 
 ## De groep verwijderen {#delete-the-group}
 

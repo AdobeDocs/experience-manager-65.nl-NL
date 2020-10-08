@@ -1,8 +1,8 @@
 ---
 title: Scores en badges van gemeenschappen
 seo-title: Scores en badges van gemeenschappen
-description: Met scoring en badges in AEM Communities kunt u leden van de gebruikersgemeenschap identificeren en belonen
-seo-description: Met scoring en badges in AEM Communities kunt u leden van de gebruikersgemeenschap identificeren en belonen
+description: Met AEM Communities scoring en badges kunt u leden van de gebruikersgemeenschap identificeren en belonen
+seo-description: Met AEM Communities scoring en badges kunt u leden van de gebruikersgemeenschap identificeren en belonen
 uuid: d73683df-a413-4b3c-869c-67568bfdfcf6
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -12,9 +12,9 @@ discoiquuid: ea033bb9-cb92-4c93-855f-8c902999378c
 docset: aem65
 tagskeywords: scoring, badging, badges, gamification
 translation-type: tm+mt
-source-git-commit: a76707e16aa7054078bcfffe43476e4bd83d83e3
+source-git-commit: 2daf00f17058de8b901848fcf1128a5ee9770368
 workflow-type: tm+mt
-source-wordcount: '2897'
+source-wordcount: '2884'
 ht-degree: 1%
 
 ---
@@ -24,21 +24,21 @@ ht-degree: 1%
 
 ## Overzicht {#overview}
 
-De functie AEM Communities scoren en badges biedt de mogelijkheid om leden van de gemeenschap te identificeren en te belonen.
+Met de functie AEM Communities scoring en badges kunnen leden van de gemeenschap worden geïdentificeerd en beloond.
 
 De belangrijkste aspecten van scoring en badges zijn:
 
 * [Wijs badges](#assign-and-revoke-badges) toe om de rol van een lid in de gemeenschap te identificeren.
 
 * [Basistoekenning van toegangspasjes](#enable-scoring) aan de leden om hun deelname aan te moedigen (hoeveelheid geschapen inhoud).
+
 * [Geavanceerde toekenning van badges](/help/communities/advanced.md) om leden te identificeren als experts (kwaliteit van de inhoud die is gemaakt).
 
 **Let** op: het toewijzen van badges is [niet standaard](/help/communities/implementing-scoring.md#main-pars-text-237875536)ingeschakeld.
 
 >[!CAUTION]
 >
->De implementatiestructuur die zichtbaar is in CRXDE Lite kan worden gewijzigd zodra de interface beschikbaar is.
-
+>De implementatiestructuur die zichtbaar is in CRXDE Lite, kan worden gewijzigd zodra de interface beschikbaar is.
 
 ## Badges {#badges}
 
@@ -76,7 +76,7 @@ In de release zijn drie badges op basis van rollen opgenomen:
 
    `/libs/settings/community/badging/images/privileged-member/jcr:content/privileged-member.png`
 
-![chlimage_1-98](assets/chlimage_1-98.png)
+   ![toegewezen badges](assets/assigned-badges.png)
 
 ### Toegewezen badges {#awarded-badges}
 
@@ -101,14 +101,13 @@ De release bevat drie beloningsbadges:
 
    `/libs/settings/community/badging/images/bronze-badge/jcr:content/bronze.png`
 
-![chlimage_1-99](assets/chlimage_1-99.png)
+   ![bekroonde badges](assets/awarded-badges.png)
 
 >[!NOTE]
 >
 >Scoreregels kunnen worden geconfigureerd om negatieve punten toe te wijzen voor posten die als onjuist zijn gemarkeerd en beïnvloeden zo de score. Als een badge echter eenmaal is behaald, wordt deze niet automatisch verwijderd vanwege wijzigingen in de score- of scoringregel.
 >
 >Toegewezen badges kunnen op dezelfde wijze worden ingetrokken als toegewezen badges. Zie de sectie Badges [toewijzen en intrekken](#assign-and-revoke-badges) . De toekomstige verbeteringen zullen een UI omvatten om de badges van leden te beheren.
-
 
 ### Aangepaste badges {#custom-badges}
 
@@ -140,13 +139,12 @@ Als het knooppunt van het type `cq:Page` (aanbevolen) is, voegt u met behulp van
 
 | **Eigenschap** | **Type** | **Beschrijving** |
 |---|---|---|
-| badgingRules | Tekenreeks[] | een lijst met [badgingregels](#badging-rules) |
-| scoringRules | Tekenreeks[] | een arraylijst met [scoreregels](#scoring-rules) |
+| badgingRules | Tekenreeks | een lijst met [badgingregels](#badging-rules) |
+| scoringRules | Tekenreeks | een arraylijst met [scoreregels](#scoring-rules) |
 
 >[!NOTE]
 >
 >Als een het scoren regel geen effect op het verlenen van badges lijkt te hebben, zorg ervoor de het scoren regel niet door het scoringRules bezit van de merkingsregel is geblokkeerd. Zie de sectie [Badgingregels](#badging-rules).
-
 
 ### Badges voor component inschakelen {#enable-badges-for-component}
 
@@ -156,12 +154,11 @@ Een booleaanse eigenschap, `allowBadges`schakelt de weergave van badges voor een
 
 #### Voorbeeld: allowBadges voor de componentinstantie Forum {#example-allowbadges-for-forum-component-instance}
 
-![chlimage_1-100](assets/chlimage_1-100.png)
+![enable-badges-component](assets/enable-badges-component.png)
 
 >[!NOTE]
 >
 >Elke component kan worden bedekt om badges weer te geven met behulp van de GB-code in forums, QnA en opmerkingen als voorbeeld.
-
 
 ## Scoreregels {#scoring-rules}
 
@@ -191,9 +188,9 @@ Scores worden opgeslagen in SRP.
 >Namen van scoreregelregels moeten globaal uniek zijn. ze mogen niet met dezelfde naam eindigen.
 >
 >Een voorbeeld van wat *niet* te doen:
+>
 >/libs/settings/community/scoring/rules/site1/forums-scoring
 >/libs/settings/community/scoring/rules/site2/forums-scoring
-
 
 ### Subregels voor score {#scoring-sub-rules}
 
@@ -239,7 +236,7 @@ Subregels zijn knooppunten van type `cq:Page` met eigenschappen op zijn `jcr:con
   </tr>
   <tr>
    <td><code>topics</code></td>
-   <td>Tekenreeks[]</td>
+   <td>Tekenreeks</td>
    <td>
     <ul>
      <li>facultatief; beperkt subregel tot componenten van de gemeenschap die door gebeurtenisonderwerpen worden geïdentificeerd</li>
@@ -310,8 +307,8 @@ Wijzigingen of toevoegingen aan de in de ontwerpomgeving aangebrachte scoreregel
 
 De regels van de Badging koppelen het scoring regels aan badges door te specificeren:
 
-* Scoreregel.
-* De score is nodig om een specifieke badge te ontvangen.
+* Scoreregel
+* Score die nodig is om een specifieke badge te ontvangen
 
 De regels van de Badging zijn knopen van type `cq:Page` met eigenschappen op zijn `jcr:content` knoop die het correleren van scoreregels aan scores en badges.
 
@@ -335,10 +332,9 @@ Het `scoringRules` bezit op een merkingsregel beperkt eenvoudig welke het schatt
 
 >[!NOTE]
 >
->Beste praktijken: maak badge-afbeeldingen die uniek zijn voor elke AEM-site.
+>Beste praktijken: maak badge-afbeeldingen die uniek zijn voor elke AEM site.
 
-
-![chlimage_1-101](assets/chlimage_1-101.png)
+![badging-regel-configuratie](assets/badging-rule-configuration.png)
 
 <table>
  <tbody>
@@ -349,7 +345,7 @@ Het `scoringRules` bezit op een merkingsregel beperkt eenvoudig welke het schatt
   </tr>
   <tr>
    <td>drempelwaarden</td>
-   <td>Tekenreeks[]</td>
+   <td>Tekenreeks</td>
    <td><em>(vereist)</em> Een tekenreeks met meerdere waarden in de notatie 'number|path'
     <ul>
      <li>number = score</li>
@@ -364,7 +360,7 @@ Het `scoringRules` bezit op een merkingsregel beperkt eenvoudig welke het schatt
   </tr>
   <tr>
    <td>scoringRules</td>
-   <td>Tekenreeks[]</td>
+   <td>Tekenreeks</td>
    <td>(<em>optioneel</em>) Een tekenreeks met meerdere waarden waarmee de merkingsregel wordt beperkt tot het scoren van gebeurtenissen die worden bepaald door de scoreregels</td>
   </tr>
  </tbody>
@@ -374,9 +370,9 @@ Het `scoringRules` bezit op een merkingsregel beperkt eenvoudig welke het schatt
 
 In de release zijn twee Badging Rules opgenomen die overeenkomen met de [forums en de regels voor het noteren van opmerkingen](#includedscoringrules).
 
-* /libs/settings/community/badging/rules/comments-badging
+* `/libs/settings/community/badging/rules/comments-badging`
 
-* /libs/settings/community/badging/rules/forums-badging
+* `/libs/settings/community/badging/rules/forums-badging`
 
 **Opmerkingen:**
 
@@ -416,9 +412,6 @@ cURL -i -X POST -H *header* -u *sign* -F *operation* -F *badge* *member-profile-
 >* Kan naar een auteurinstantie verwijzen als de Dienst [van de](/help/communities/users.md#tunnel-service) Tunnel wordt toegelaten.
 >* Kan een duistere, willekeurige naam zijn - zie [Beveiligingscontrolelijst](/help/sites-administering/security-checklist.md#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path) met betrekking tot machtigbare id.
 
->
-
-
 
 ### Voorbeelden: {#examples}
 
@@ -454,8 +447,7 @@ Voor de geleverde communitycomponenten, beschrijven de volgende lijsten `verbs` 
 >
 >Een nieuwe booleaanse eigenschap, `allowBadges`schakelt de weergave van badges voor een componentinstantie in of uit. Het zal configureerbaar in bijgewerkte [component zijn uitgeeft dialoogvensters](/help/communities/author-communities.md) door een checkbox geëtiketteerd de Badges **van de** Vertoning.
 
-
-**[Agenda Component](/help/communities/calendar.md)**SocialEvent`topic`= com/adobe/cq/social/agenda
+**[Agenda Component](/help/communities/calendar.md)** SocialEvent `topic`= com/adobe/cq/social/agenda
 
 | **Verb** | **Beschrijving** |
 |---|---|
@@ -464,7 +456,7 @@ Voor de geleverde communitycomponenten, beschrijven de volgende lijsten `verbs` 
 | BIJWERKEN | agendagebeurtenis of commentaar van lid wordt bewerkt |
 | DELETE | agendagebeurtenis of commentaar van lid wordt verwijderd |
 
-**[Opmerkingen Component](/help/communities/comments.md)**SocialEvent`topic`= com/adobe/cq/social/comment
+**[Opmerkingen Component](/help/communities/comments.md)** SocialEvent `topic`= com/adobe/cq/social/comment
 
 | **Verb** | **Beschrijving** |
 |---|---|
@@ -473,7 +465,7 @@ Voor de geleverde communitycomponenten, beschrijven de volgende lijsten `verbs` 
 | BIJWERKEN | commentaar van lid is bewerkt |
 | DELETE | commentaar van lid is verwijderd |
 
-**[File Library Component](/help/communities/file-library.md)**SocialEvent`topic`= com/adobe/cq/social/fileLibrary
+**[File Library Component](/help/communities/file-library.md)** SocialEvent `topic`= com/adobe/cq/social/fileLibrary
 
 | **Verb** | **Beschrijving** |
 |---|---|
@@ -482,7 +474,7 @@ Voor de geleverde communitycomponenten, beschrijven de volgende lijsten `verbs` 
 | BIJWERKEN | lid werkt een map of bestand bij |
 | DELETE | lid verwijdert een map of bestand |
 
-**[Forum Component](/help/communities/forum.md)**SocialEvent`topic`= com/adobe/cq/social/forum
+**[Forum Component](/help/communities/forum.md)** SocialEvent `topic`= com/adobe/cq/social/forum
 
 | **Verb** | **Beschrijving** |
 |---|---|
@@ -491,7 +483,7 @@ Voor de geleverde communitycomponenten, beschrijven de volgende lijsten `verbs` 
 | BIJWERKEN | onderwerp of antwoord van lid wordt bewerkt |
 | DELETE | forumonderwerp of antwoord van lid wordt verwijderd |
 
-**[Journal Component](/help/communities/blog-feature.md)**SocialEvent`topic`= com/adobe/cq/social/journaal
+**[Journal Component](/help/communities/blog-feature.md)** SocialEvent `topic`= com/adobe/cq/social/journaal
 
 | **Verb** | **Beschrijving** |
 |---|---|
@@ -500,7 +492,7 @@ Voor de geleverde communitycomponenten, beschrijven de volgende lijsten `verbs` 
 | BIJWERKEN | blogartikel of commentaar van lid wordt bewerkt |
 | DELETE | blogartikel of commentaar van lid is verwijderd |
 
-**[QnA Component](/help/communities/working-with-qna.md)**SocialEvent`topic`= com/adobe/cq/social/qna
+**[QnA Component](/help/communities/working-with-qna.md)** SocialEvent `topic` = com/adobe/cq/social/qna
 
 | **Verb** | **Beschrijving** |
 |---|---|
@@ -511,7 +503,7 @@ Voor de geleverde communitycomponenten, beschrijven de volgende lijsten `verbs` 
 | SELECTEREN OPHEFFEN | het antwoord van het lid is gedeselecteerd |
 | DELETE | Vraag of antwoord van lid wordt verwijderd |
 
-**[Reviews Component](/help/communities/reviews.md)**SocialEvent`topic`= com/adobe/cq/social/review
+**[Reviews Component](/help/communities/reviews.md)** SocialEvent `topic`= com/adobe/cq/social/review
 
 | **Verb** | **Beschrijving** |
 |---|---|
@@ -519,14 +511,14 @@ Voor de geleverde communitycomponenten, beschrijven de volgende lijsten `verbs` 
 | BIJWERKEN | beoordeling door lid wordt bewerkt |
 | DELETE | beoordeling door lid is verwijderd |
 
-**[Beoordelingscomponent](/help/communities/rating.md)**SocialEvent`topic`= com/adobe/cq/social/tally/rating
+**[Beoordelingscomponent](/help/communities/rating.md)** SocialEvent `topic`= com/adobe/cq/social/tally/rating
 
 | **Verb** | **Beschrijving** |
 |---|---|
 | WAARDERING TOEVOEGEN | de inhoud van het lid is opgegeven |
 | RATING VERWIJDEREN | de inhoud van het lid is neergezet |
 
-**[Stemcomponent](/help/communities/voting.md)**SocialEvent`topic`= com/adobe/cq/social/tally/stemrecht
+**[Stemcomponent](/help/communities/voting.md)** SocialEvent `topic`= com/adobe/cq/social/tally/stemrecht
 
 | **Verb** | **Beschrijving** |
 |---|---|
@@ -574,7 +566,7 @@ Als de functie niet naar behoren werkt, controleert u of de gegevens correct zij
 
 Het is mogelijk om snel scoring en badging te proberen met behulp van de site [Getting Started Tutorial](/help/communities/getting-started.md) (engineeren):
 
-* Toegang tot CRXDE Lite op auteur.
+* Toegang tot CRXDE Lite bij auteur.
 * Blader naar de basispagina:
 
    * /content/sites/engc/nl/jcr:content
@@ -603,11 +595,11 @@ Het is mogelijk om snel scoring en badging te proberen met behulp van de site [G
 
 * Selecteer **Alles** opslaan.
 
-![chlimage_1-102](assets/chlimage_1-102.png)
+![testhandtekenmerken](assets/test-scoring-badging.png)
 
 Zorg er daarna voor dat de forum- en commentaarcomponenten het weergeven van badges toestaan:
 
-* Opnieuw met gebruik van CRXDE Lite.
+* Opnieuw met CRXDE Lite.
 * Bladeren naar de forumcomponent
 
    * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
@@ -618,7 +610,7 @@ Zorg er daarna voor dat de forum- en commentaarcomponenten het weergeven van bad
    * **Type**: `Boolean`
    * **Waarde**: `true`
 
-![chlimage_1-103](assets/chlimage_1-103.png)
+![test-forum-component](assets/test-forum-component.png)
 
 Publiceer [](/help/communities/sites-console.md#publishing-the-site) vervolgens de communitysite opnieuw.
 

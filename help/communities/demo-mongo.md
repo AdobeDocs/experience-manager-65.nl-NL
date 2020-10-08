@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
 translation-type: tm+mt
-source-git-commit: a99313c35872d3f481c3dc6f42b372cc603e7549
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '788'
 ht-degree: 0%
@@ -74,7 +74,6 @@ Hiermee wordt een MongoDB-server gestart met de standaardpoort 27017.
 >
 >Als MongoDB wordt gestart *na* AEM, **start** u alle **AEM** instanties opnieuw zodat ze op de juiste wijze verbinding maken met MongoDB.
 
-
 ### Optie voor demoproductie: MongoDB-replicaset instellen {#demo-production-option-setup-mongodb-replica-set}
 
 De volgende opdrachten zijn een voorbeeld van het instellen van een replicaset met 3 knooppunten op localhost:
@@ -133,7 +132,6 @@ Hierdoor wordt een Solr HTTP-server gestart met de standaardpoort 8983. U kunt n
 >
 >Als Solr Console niet beschikbaar is, controleer de logboeken onder &lt;solrinstall>/example/logs. Kijk of SOLR probeert te binden aan een specifieke hostname die niet kan worden opgelost (bijvoorbeeld &quot;user-macbook-pro&quot;).
 Als dat het geval is, werkt u het etc/hosts-bestand bij met een nieuwe vermelding voor deze hostnaam (bijvoorbeeld 127.0.0.1 user-macbook-pro) en start Solr op de juiste wijze.
-
 
 ### SolrCloud {#solrcloud}
 

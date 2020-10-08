@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 404582ab-bb4c-4775-9ae3-17356d376dca
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 18f401babef4cb2aad47e6e4cbb0500b0f8365e2
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '2108'
 ht-degree: 1%
@@ -62,7 +62,6 @@ Slechts wanneer binnen ondertekend als beheerder, of als lid met [moderatortoest
 >
 >UGC van het publicatiemilieu zal slechts op auteur zichtbaar zijn als gekozen SRP een gemeenschappelijke opslag uitvoert. De opslag is standaard bijvoorbeeld JSRP, wat geen algemene opslag is voor auteur en publiceren. Zie Opslag van [Community-inhoud](/help/communities/working-with-srp.md).
 
-
 ![moderationconsoletoewijzing](assets/moderationconsoleauthor.png)
 
 ## Gebruikersinterface van aanpassingsconsole {#moderation-console-ui}
@@ -109,7 +108,6 @@ Het inhoudsgebied bevat informatie voor gepost UGC:
 > 
 >In het inhoudsgebied is een *oneindige schuifbewerking* beschikbaar, zodat u kunt blijven schuiven totdat u het einde van de inhoud hebt bereikt. De werkbalk blijft tijdens het schuiven op een vaste, zichtbare positie boven het inhoudsgebied staan.
 
-
 ### Rail filteren {#ootbfilters}
 
 ![open-filterrail](assets/open-filterrail.png)
@@ -125,7 +123,6 @@ Als u echter **Vraag** en **In behandeling** controleert, ziet u alleen inhoud d
 >[!NOTE]
 >
 >De moderatoren van de Gemeenschap kunnen referentie de vooraf bepaalde filters op moderatieconsole UI. Aangezien deze filters aan het eind van URL (als parameters van het vraagkoord) worden toegevoegd, kunnen de moderatoren aan de bookmarked filters later terugkomen en deze verbindingen ook delen.
-
 
 ![zoekpictogram](assets/searchicon.png)
 
@@ -154,7 +151,6 @@ De site beperkt de UGC waarnaar wordt verwezen, tot advertenties aan geselecteer
 >Wanneer de bulkmoderatieconsole door een beheerder wordt betreden, worden alle verwijzingen naar UGC getoond, met inbegrip van plaatsen die niet met de tovenaar [van de](/help/communities/sites-console.md)plaatsinrichting, zoals de steekproeven van Geometrixx worden gecreeerd.
 >
 >Wanneer de bulkmoderatieconsole bij publiceren door een vertrouwd communautair lid wordt betreden, dan slechts worden de verwijzingen naar UGC die voor communautaire plaatsen worden gecreeerd het lid aan gematigd wordt toegelaten getoond, en met de filter van de Plaats kunnen worden gefiltreerd.
-
 
 #### Inhoudstype {#content-type}
 
@@ -206,7 +202,6 @@ De status beperkt de UGC waarnaar wordt verwezen, tot posten van de geselecteerd
 >
 >Als slechts de niet Beantwoorde status wordt geselecteerd, dan zal de moderator al inhoud (voor alle inhoudstypes) behalve de beantwoorde vragen zien. Dit komt omdat de eigenschap die verantwoordelijk is voor de beantwoorde vraag niet bestaat in het geval van niet-beantwoorde vragen en andere inhoud zoals het onderwerp van het forum, het blogartikel of opmerkingen.
 
-
 ![statussen](assets/statuses.png)
 
 #### Markering {#flagging}
@@ -229,7 +224,7 @@ Gepost in de Laatste grenzen UGC van verwijzingen aan posten die in het laatste 
 
 ![gepost-laatst](assets/posted-last.png)
 
-#### Zin {#sentiment}
+#### Sentiment {#sentiment}
 
 [Sentiment](/help/communities/moderate-ugc.md#sentiment) beperkt de UGC waarnaar wordt verwezen tot posten met een sentiment-waarde die positief, negatief of neutraal is.
 

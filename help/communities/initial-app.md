@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: f74d225e-0245-4d5a-bb93-0ee3f31557aa
 translation-type: tm+mt
-source-git-commit: 33c3126fbba4b324941338ee4d2a418d216408cd
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '591'
 ht-degree: 1%
@@ -22,8 +22,8 @@ ht-degree: 1%
 
 In deze sectie maakt u het volgende:
 
-* De **[sjabloon](#createthepagetemplate)**die wordt gebruikt om inhoudspagina&#39;s in de voorbeeldwebsite te maken.
-* De **[component en het script](#create-the-template-s-rendering-component)**waarmee de websitepagina&#39;s worden weergegeven.
+* De **[sjabloon](#createthepagetemplate)** die wordt gebruikt om inhoudspagina&#39;s in de voorbeeldwebsite te maken.
+* De **[component en het script](#create-the-template-s-rendering-component)** waarmee de websitepagina&#39;s worden weergegeven.
 
 ## De inhoudssjabloon maken {#create-the-content-template}
 
@@ -31,7 +31,7 @@ Een sjabloon definieert de standaardinhoud van een nieuwe pagina. Complexe websi
 
 In deze exercitie, zijn alle pagina&#39;s gebaseerd op één eenvoudig malplaatje.
 
-1. In het verkendervenster van CRXDE Lite:
+1. In het deelvenster Verkenner van CRXDE Lite:
 
    * Selecteer `/apps/an-scf-sandbox/templates`
    * **[!UICONTROL Create]** > **[!UICONTROL Create Template]**
@@ -88,7 +88,7 @@ In deze exercitie, zijn alle pagina&#39;s gebaseerd op één eenvoudig malplaatj
 
 Maak de *component* die de inhoud definieert en rendert alle pagina&#39;s die op basis van de [playpagjabloon](#createthepagetemplate)zijn gemaakt.
 
-1. Klik in CRXDE Lite met de rechtermuisknop **`/apps/an-scf-sandbox/components`** en klik **[!UICONTROL Create > Component]**.
+1. Klik in CRXDE Lite met de rechtermuisknop **`/apps/an-scf-sandbox/components`** en klik op **[!UICONTROL Create > Component]**.
 1. Door de naam van het knooppunt (Label) in te stellen op *playpage*, is het pad naar de component
 
    `/apps/an-scf-sandbox/components/playpage`

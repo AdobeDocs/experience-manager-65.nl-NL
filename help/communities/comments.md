@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 216cfb3e-777e-4773-afba-749debdca000
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6be0aa7c3f6b21ad26221289a6cca2b4615ed3f4
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 0%
@@ -34,7 +34,6 @@ In het document wordt beschreven:
 >
 >Anonieme berichten over opmerkingen worden niet ondersteund. Site-bezoekers moeten zich registreren (lid worden) en zich aanmelden om deel te nemen.
 
-
 ### Opmerkingen toevoegen aan een pagina {#adding-comments-to-a-page}
 
 Als u een `Comments` component aan een pagina wilt toevoegen in de ontwerpmodus, gebruikt u de componentbrowser om te zoeken naar
@@ -52,7 +51,6 @@ Wanneer de [vereiste clientbibliotheken](/help/communities/essentials-comments.m
 >[!NOTE]
 >
 >Er mag slechts één `Comments` component op een pagina voorkomen. Houd er rekening mee dat diverse functies van een Gemeenschappen al opmerkingen bevatten, zoals een blog, agenda, forum, QnA en revisies.
-
 
 ### Opmerkingen configureren {#configuring-comments}
 

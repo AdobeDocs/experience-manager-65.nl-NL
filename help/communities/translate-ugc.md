@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: bfaf80c5-448b-47fb-9f22-57ee0eb169b2
 translation-type: tm+mt
-source-git-commit: c190d5f223c85f6c49fea1391d8a3d2baff20192
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1091'
 ht-degree: 0%
@@ -52,7 +52,6 @@ Wanneer u een communitysite [](sites-console.md)maakt, wordt de standaardvertaal
 >
 >Voor een productiesysteem is een vertaaldienst met licentie vereist. Als er geen licentie is, moet de standaardvertaalservice worden [uitgeschakeld](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license-geometrixx-outdoors).
 
-
 ## Wereldwijde omzetting van UGC {#global-translation-of-ugc}
 
 Wanneer een website meerdere [taalkopieën](../../help/sites-administering/tc-prep.md)heeft, herkent de standaardvertaalservice niet dat UGC die op de ene site is ingevoerd, gerelateerd kan zijn aan UGC die op een andere site is ingevoerd, zoals wanneer de UGC in feite door dezelfde component wordt gegenereerd (de taalkopie van de pagina die de component bevat).
@@ -70,7 +69,6 @@ Bijvoorbeeld, als een forum op de basisplaats werd gevestigd, gemaakte taalexemp
 >Terwijl UGC nog in de [gemeenschappelijke opslag](working-with-srp.md)is, wordt het gevestigd onder de taal-specifieke plaats UGC, terwijl de nieuwe inhoud, die na globale vertaling werd toegevoegd, van de globale gedeelde opslagplaats wordt teruggewonnen.
 >
 >Er is geen migratiehulpmiddel om taalspecifieke inhoud in de globale gedeelde opslag te bewegen of samen te voegen.
-
 
 ### Configuratie vertaalintegratie {#translation-integration-configuration}
 
@@ -149,12 +147,11 @@ De nieuwe vertaalintegratie-cloudservice moet worden geactiveerd voor de publica
 >
 >Wanneer de bezoeker van de site anoniem is of geen taalvoorkeur in hun profiel heeft gespecificeerd, is de aangewezen taal de basistaal van het paginasjabloon.
 
-
 ### Gebruikersvoorkeur {#user-preference}
 
 #### Gebruikersprofiel {#user-profile}
 
-Alle Communitysites bieden een gebruikersprofiel dat de ondertekenaars kunnen bewerken om zichzelf te identificeren voor de community en hun voorkeuren in te stellen.
+Alle Communitysites bieden een gebruikersprofiel dat de ondertekenaars kunnen bewerken om zich te identificeren voor de community en hun voorkeuren in te stellen.
 
 Een van deze instellingen is of gemeenschapsinhoud altijd in de taal van uw voorkeur moet worden weergegeven. De instelling is standaard niet ingesteld en wordt standaard ingesteld op de systeeminstelling. De gebruiker kan de instelling wijzigen in Aan of Uit en zo de systeeminstelling overschrijven.
 

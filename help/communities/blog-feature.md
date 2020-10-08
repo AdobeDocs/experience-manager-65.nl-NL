@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: cf8b3d72-30ba-40ca-ae48-b61abbb28802
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 8361f65f52c2a67658ef1b7b7615df149208777b
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1676'
 ht-degree: 0%
@@ -48,7 +48,6 @@ In dit gedeelte van de documentatie wordt het volgende beschreven:
 >De componenten `Journal` en `Journal Sidebar` worden genoemd `Blog` en `Blog Sidebar`.
 >
 >De blogfunctie in AEM 6.0 en eerdere versies wordt nu verwijderd. Het is gebaseerd op een sjabloon en auteurs mogen alleen inhoud maken in de auteursomgeving.
-
 
 ## Blogcomponenten toevoegen aan een pagina {#adding-blog-components-to-a-page}
 
@@ -112,8 +111,8 @@ Geef op het tabblad **Instellingen** de basisfuncties van de blog op:
 >[!NOTE]
 >
 >Met de functie Dagboek wordt automatisch een URL voor de blog gemaakt.
+>
 >Er worden maximaal 50 tekens (met 5 tekens extra voor uniciteit) gebruikt uit de dagboektitel die u hier opgeeft om een URL voor de blog te maken.
-
 
 * **Dagboekbeschrijving**
 

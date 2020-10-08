@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 628b6dcd-8b1c-4166-8fc2-843baa86ac1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 824ddd48e4680eed1d4612c6ad450a8f1bc68e7c
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 0%
@@ -224,15 +224,14 @@ De schermafbeeldingen van gegevensopslagruimte zijn afkomstig van het instellen 
 >In dit voorbeeld worden de volgende aanbevolen procedures niet gevolgd:
 >
 >* Namen van scoreregelregels moeten globaal uniek zijn. ze mogen niet met dezelfde naam eindigen.
-   >  Een voorbeeld van wat *niet* te doen:
-   >  /libs/settings/community/scoring/rules/site1/forums-scoring
-   >  /libs/settings/community/scoring/rules/site2/forums-scoring
-   >
-   >
-* Unieke badge-afbeeldingen maken voor verschillende AEM sites
-
 >
-
+>  
+Een voorbeeld van wat *niet* te doen:
+>
+>  /libs/settings/community/scoring/rules/site1/forums-scoring
+>  /libs/settings/community/scoring/rules/site2/forums-scoring
+>
+>* Unieke badge-afbeeldingen maken voor verschillende AEM sites
 
 
 ### Toegang tot UGC-score {#access-scoring-ugc}

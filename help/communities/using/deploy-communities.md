@@ -11,7 +11,7 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 7c0834e9b70266e8b678771510fb1756c8091ea8
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1891'
 ht-degree: 1%
@@ -329,7 +329,6 @@ Om het belangrijkste materiaal van auteur aan alle andere instanties te kopiëre
 >
 >Als een andere veiligheidseigenschap reeds is gevormd die op de crypto sleutels gebaseerd is, dan het herhalen van de crypto sleutels kon de configuratie beschadigen. Neem voor hulp [contact op met de klantenservice](https://helpx.adobe.com/marketing-cloud/contact-support.html).
 
-
 #### Replicatie opslagplaats {#repository-replication}
 
 Als het sleutelmateriaal in de bewaarplaats wordt opgeslagen, zoals het geval was voor AEM 6.2 en vroeger, kan het worden bewaard door het volgende systeembezit bij eerste opstarten van elke AEM instantie te specificeren (die tot de aanvankelijke bewaarplaats leidt):
@@ -339,7 +338,6 @@ Als het sleutelmateriaal in de bewaarplaats wordt opgeslagen, zoals het geval wa
 >[!NOTE]
 >
 >Het is belangrijk om te verifiëren dat de [replicatieagent op auteur](#replication-agents-on-author) correct wordt gevormd.
-
 
 Met het zeer belangrijke materiaal dat in de bewaarplaats wordt opgeslagen, is de manier om de crypto sleutel van auteur aan andere instanties te herhalen als volgt:
 

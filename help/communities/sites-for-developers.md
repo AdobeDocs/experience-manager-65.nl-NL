@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: dc7a085e-d6de-4bc8-bd7e-6b43f8d172d2
 translation-type: tm+mt
-source-git-commit: e49acbc042d84ae970058b4e99ab6f980866db5a
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '568'
 ht-degree: 1%
@@ -55,11 +55,9 @@ Bijvoorbeeld: `/content/sites/engage/en/configuration`
 >
 >Alle knooppunten in het bovenliggende pad hoeven alleen van het type te zijn `Folder`.
 
-
 >[!CAUTION]
 >
 >Als het douanemalplaatje de naam *sitepage.hbs* wordt gegeven, dan zullen alle communautaire plaatsen worden aangepast.
-
 
 ### Voorbeeld van aangepaste sitesjabloon {#custom-site-template-example}
 

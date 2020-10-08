@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8fe97181-600e-42ac-af25-d5d4db248740
 translation-type: tm+mt
-source-git-commit: e84c9a99ce9ec0447a5fb3e0ca5ba76b41c888cd
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '656'
 ht-degree: 2%
@@ -198,7 +198,6 @@ In het deelvenster Bronnen toevoegen:
 >[!NOTE]
 >
 >U kunt alleen de bronnen selecteren die beschikbaar zijn op hetzelfde niveau als het leerpad. Bijvoorbeeld, voor een leerweg die in een groep wordt gecreeerd slechts zijn de middelen van het groepsniveau beschikbaar; voor een leerpad dat in een gemeenschapssite is gemaakt, zijn de bronnen in die site beschikbaar voor toevoeging aan het leerpad.
-
 
 * Selecteer **[!UICONTROL Submit]**.
 

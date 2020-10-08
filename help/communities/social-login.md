@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: c0a71870-8f95-40c8-9ffd-b7af49723288
 translation-type: tm+mt
-source-git-commit: 42606e76742fe7698c4c186208e515ed22adc5a4
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '2634'
 ht-degree: 0%
@@ -72,7 +72,6 @@ Vanaf AEM 6.4 GA en AEM 6.3 SP1 is de sociale aanmelding bijgewerkt om te werken
 >
 >Voor oudere AEM versies, als u met een uitzondering in logboeken wordt geconfronteerd **kan geen teken uit dit** halen, verbetering aan recentste GFP voor die AEM versie.
 
-
 Zie de wijziging in de API van [Facebook voor informatie over de Facebook Graph API-versie](https://developers.facebook.com/docs/apps/changelog).
 
 ### Een Facebook-app maken {#create-a-facebook-app}
@@ -94,7 +93,6 @@ In het algemeen geldt vanaf Facebook API v2.7:
 >[!NOTE]
 >
 >Voor ontwikkeling werkt http://localhost:4503.
-
 
 Wanneer de toepassing is gemaakt, zoekt u de **[!UICONTROL App ID]** instellingen en de **[!UICONTROL App Secret]** instellingen. Deze informatie is vereist voor het configureren van de [Facebook-cloudservice](#createafacebookcloudservice).
 
@@ -131,7 +129,6 @@ De [Adobe Granite OAuth Application and Provider](#adobe-granite-oauth-applicati
 
    * Selecteer **[!UICONTROL SAVE]**.
    * **[!UICONTROL Publish]**.
-
 
 
 
@@ -395,7 +392,6 @@ Bijvoorbeeld http://localhost:4503/system/console/configMgr
 >[!CAUTION]
 >
 >Let op dat u de verificatiehandler niet verwart met een Facebook- of Twitter-instantie van *Adobe Granite OAuth Application en Provider*.
-
 
 ![chlimage_1-490](assets/chlimage_1-490.png)
 

@@ -1,8 +1,8 @@
 ---
 title: Community-componenten
 seo-title: Community-componenten
-description: Gebruikersfuncties toevoegen aan elke AEM-site
-seo-description: Gebruikersfuncties toevoegen aan elke AEM-site
+description: Gebruikersfuncties toevoegen aan elke AEM site
+seo-description: Gebruikersfuncties toevoegen aan elke AEM site
 uuid: 76824820-81e9-4192-8df3-dff55eaf144e
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: df1ac689-33db-4e30-9f75-3bda2a485652
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cf2733ecee5c74b79b85267191fbdf3cbce9c98b
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 2%
@@ -23,18 +23,17 @@ ht-degree: 2%
 
 ## Inleiding {#introduction}
 
-Wanneer AEM Communities een licentie hebben, kunnen naast het maken van gemeenschapssites ook Community-functies aan elke AEM-site worden toegevoegd met behulp van standaard AEM-ontwerpgereedschappen.
+Wanneer AEM Communities een licentie heeft, kunt u naast het maken van gemeenschapssites ook Community-functies toevoegen aan elke AEM site met behulp van standaard AEM ontwerpgereedschappen.
 
 Ga voor meer informatie over het maken van een site op de website van de gemeenschap naar:
 
-* [Overzicht AEM Communities](/help/communities/overview.md)
+* [AEM Communities - Overzicht](/help/communities/overview.md)
 * [Aan de slag met AEM Communities](/help/communities/getting-started.md)
-* [Aan de slag met AEM Communities voor Enablement](/help/communities/getting-started-enablement.md)
+* [Aan de slag met AEM Communities for Enablement](/help/communities/getting-started-enablement.md)
 
 >[!NOTE]
 >
 >Als u niet bekend bent met de ontwerpomgeving, bekijkt u de documentatie over [basisverwerking](/help/sites-authoring/basic-handling.md) en een [handleiding voor het schrijven van pagina](/help/sites-authoring/qg-page-authoring.md)&#39;s.
-
 
 ## Beschikbare onderdelen van Gemeenschappen {#available-communities-components}
 
@@ -66,7 +65,7 @@ Zie ook de interactieve handleiding voor [Community Components](/help/communitie
 | Ideatie | [Ideatie](/help/communities/ideation-feature.md) |
 | Leaderboard | [Scores en badges](/help/communities/enabling-leaderboard.md) |
 | Vergelijken | [Vergelijken](/help/communities/liking.md) |
-| Bericht | [Berichten](/help/communities/configure-messaging.md) |
+| Message | [Berichten](/help/communities/configure-messaging.md) |
 | Berichtlijst | [Berichten](/help/communities/configure-messaging.md) |
 | QnA | [Vragen en antwoorden](/help/communities/working-with-qna.md) |
 | Snel zoeken | [Zoeken](/help/communities/search.md) |
@@ -82,7 +81,6 @@ Zie ook de interactieve handleiding voor [Community Components](/help/communitie
 >[!NOTE]
 >
 >De opiniepeilingscomponent is niet meer beschikbaar en wordt niet meer ondersteund in Experience Manager Communities.
-
 
 ## Verwante documentatie van Gemeenschappen {#related-communities-documentation}
 

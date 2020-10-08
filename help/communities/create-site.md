@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 8ae324ea-8b84-47a3-aabf-1fee2a3bd46d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 99fb808013da18ed028d59c43deab5e815169e26
+source-git-commit: 2daf00f17058de8b901848fcf1128a5ee9770368
 workflow-type: tm+mt
 source-wordcount: '1640'
 ht-degree: 1%
@@ -97,7 +97,6 @@ Schakel alle selectievakjes voor [gebruikersbeheer in](/help/communities/sites-c
 >
 >Voor een productieomgeving moeten aangepaste Facebook- en Twitter-toepassingen worden gemaakt. Zie [Sociale aanmelding bij Facebook en Twitter](/help/communities/social-login.md).
 
-
 ![site-instellingen van community](assets/site-settings.png)
 
 #### TAGGING {#tagging}
@@ -125,7 +124,6 @@ Bijvoorbeeld,
 >[!NOTE]
 >
 >[De dienst](https://helpx.adobe.com/experience-manager/6-3/help/communities/deploy-communities.html#tunnel-service-on-author) van de tunnel staat selectie van leden en groepen toe die slechts in publicatiemilieu bestaan.
-
 
 ![gebruikersrollen in nieuwe site](assets/site-admin-1.png)
 
@@ -228,9 +226,6 @@ UGC is niet opgenomen in het sitepakket.
 >1. Selecteer **[!UICONTROL OK]**.
 >1. (Optioneel) Selecteer **[!UICONTROL Clear]** of **[!UICONTROL Force Retry]** om de replicatiewachtrij opnieuw in te stellen.
 
->
-
-
 
 ### Publiceren selecteren {#select-publish}
 
@@ -318,7 +313,6 @@ Aan de slag:
 >
 >Als u deze optie wilt uitschakelen, plaatst u gewoon een voorvoegsel voor de `sling:match` eigenschapswaarde met een &#39; x&#39; - `xlocalhost.4503/$` - en **Alles** opslaan.
 
-
 ![optionele stappen](assets/optional-steps.png)
 
 #### Problemen oplossen: Fout bij opslaan van kaart {#troubleshooting-error-saving-map}
@@ -342,5 +336,3 @@ Vergeet niet de site op te **slaan** en opnieuw te **publiceren** nadat u een wi
 >[!NOTE]
 >
 >Als u niet bekend bent met AEM, bekijkt u de documentatie over [basisverwerking](/help/sites-authoring/basic-handling.md) en een [handleiding voor het ontwerpen van pagina](/help/sites-authoring/qg-page-authoring.md)&#39;s.
-
-

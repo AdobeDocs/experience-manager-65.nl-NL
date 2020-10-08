@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: fbfe8097-3c3f-4a05-97ad-1ce526362a26
 translation-type: tm+mt
-source-git-commit: 56c2e6b55964ea5f3e180b17bd2a244882aa62ea
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 1%
@@ -22,20 +22,19 @@ ht-degree: 1%
 
 ## Overzicht {#overview}
 
-AEM Communities vereenvoudigen het maken en aanpassen van community-functies, zoals forums, gebruikersgroepen, blogs, Vragen en antwoorden, kalenders, opmerkingen, revisies, stemmen, beoordelingen en toewijzingen. Deze functies leiden ertoe dat door de gebruiker gegenereerde inhoud (UGC) wordt ingevoerd in de publicatieomgeving.
+AEM Communities vereenvoudigt het maken en aanpassen van community-functies, zoals forums, gebruikersgroepen, blogs, vragen en antwoorden, kalenders, opmerkingen, revisies, stemmen, beoordelingen en toewijzingen. Deze functies leiden ertoe dat door de gebruiker gegenereerde inhoud (UGC) wordt ingevoerd in de publicatieomgeving.
 
-De stichting van een [communitysite](overview.md#communitiessites) is het [sociale raamwerk](scf.md) (SCF). Het creëren van een communautaire plaats begint met de selectie van een malplaatje [van de](sites-console.md) communautaire plaats dat uit [communautaire functies](functions.md)bestaat.
+De stichting van een [gemeenschapssite](overview.md#communitiessites) is het [sociale-componentkader](scf.md) (SCF). Het creëren van een communautaire plaats begint met de selectie van een malplaatje [van de](sites-console.md) communautaire plaats dat uit [communautaire functies](functions.md)bestaat.
 
 Ga voor een overzicht en zelfstudies om aan de slag te gaan naar:
 
-* [Overzicht AEM Communities](overview.md)
+* [AEM Communities - Overzicht](overview.md)
 * [Aan de slag met AEM Communities](getting-started.md)
-* [Aan de slag met AEM Communities voor Enablement](getting-started-enablement.md)
+* [Aan de slag met AEM Communities for Enablement](getting-started-enablement.md)
 
 >[!NOTE]
 > 
 >Het wordt ten zeerste aanbevolen de [nieuwste releases](deploy-communities.md#latest-releases)bij te houden.
-
 
 ## Aanbevolen implementaties {#recommended-deployments}
 
@@ -82,7 +81,7 @@ De componenten, de functies en de eigenschappen van AEM Communities verstrekken 
 * [SRP en de Hoofdzaak](srp-and-ugc.md) UGC - SRP API hulpprogrammamethodes en voorbeelden
 * [Belangrijkste elementen](tag.md) van tags: mogelijkheid voor leden van de gemeenschap om UGC en/of gecatalogiseerde actiemiddelen van tags te voorzien
 
-## Zelfstudies {#tutorials}
+## Tutorials {#tutorials}
 
 * [Zelfstudies op de client](tutorials.md#client-side-customization)
 * [Zelfstudies op de server](tutorials.md#server-side-customization)
@@ -97,7 +96,7 @@ De componenten, de functies en de eigenschappen van AEM Communities verstrekken 
 
 * Bezoek [Implementerende Gemeenschappen](deploy-communities.md) voor meer informatie over aanbevolen implementaties en de configuratie van de verzender.
 
-* Bezoek [De Beheersplaatsen](administer-landing.md) van Gemeenschappen om over het creëren van een Communautaire Plaats te leren, vormend de Malplaatjes van de Plaats van de Communautaire, het modereren van communautaire inhoud, het beheren van leden, en het vormen overseinen.
+* Bezoek [De Beheersplaatsen](administer-landing.md) van Gemeenschappen om over het creëren van een Plaats van de Gemeenschap te leren, vormend de Malplaatjes van de Plaats van de Communautaire, het modereren van communautaire inhoud, het beheren van leden, en het vormen overseinen.
 
-* Bezoek [Authoring Communities Components](author-communities.md) voor meer informatie over het maken en configureren van Community-componenten.
+* Bezoek [Authoring Communities Components](author-communities.md) om te leren hoe u auteur kunt maken met en Community-componenten kunt configureren.
 

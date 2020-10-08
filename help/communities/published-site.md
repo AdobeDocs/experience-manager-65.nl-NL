@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: dd0cbc05-a361-46bc-b9f1-d045f8f23890
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 046da7a00be6073cb885b4e9774c48ab474e7e6d
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 0%
@@ -57,7 +57,7 @@ Een bekende beperking stelt de inhoud van de communautaire plaats aan anonieme b
 
 Voer de volgende stappen uit om de inhoud van uw site te beschermen tegen toegang door anonieme gebruikers via jcr-inhoud en json:
 
-1. Ga bij AEM Author-instantie naar https:// hostname:port/editor.html/content/site/sitename.html.
+1. Ga naar https:// hostnaam:port/editor.html/content/site/sitename.html voor een AEM-auteurinstantie.
 
    >[!NOTE]
    >
@@ -93,7 +93,7 @@ Zodra u bent aangemeld als lid van de geregistreerde gemeenschap, ziet u de volg
    1. Stel nieuwe directe berichten samen om naar individuen en groepen te verzenden.
 
 * [De optie Meldingen](/help/communities/notifications.md) geeft u de opdracht om de sectie Meldingen te openen waarin u uw belangwekkende gebeurtenissen kunt bekijken en de berichtinstellingen kunt bewerken.
-* [Het beleid](/help/communities/published-site.md#moderationlink) leidt u aan de Pagina van de Moderatie van AEM Communities, als u moderatievoorrechten hebt.
+* [Het beleid](/help/communities/published-site.md#moderationlink) leidt u aan de Pagina van de Moderatie van AEM Communities, als u moderatie voorrechten hebt.
 
 ![beheersen](assets/adminscreen.png)
 
@@ -107,9 +107,6 @@ U ziet dat de kalenderpagina de startpagina is omdat de gekozen Sjabloon Referen
 >
 >* [Community Components](/help/communities/author-communities.md) (voor auteurs)
 >* [Component, Function en Feature Essentials](/help/communities/essentials.md) (voor ontwikkelaars)
-
->
-
 
 
 ### Forum-koppeling {#forum-link}

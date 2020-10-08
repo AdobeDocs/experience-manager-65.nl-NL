@@ -10,7 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 31cc7819-cc4d-4804-9fab-005d8bef0714
 translation-type: tm+mt
-source-git-commit: 341fef2b8f040848a59381b0d4996c29f352b929
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+workflow-type: tm+mt
+source-wordcount: '137'
+ht-degree: 0%
 
 ---
 
@@ -21,12 +24,11 @@ AEM Communities helpt merken consistente ervaringen te creëren op digitale en p
 
 Hieronder volgt een zelfstudie over het snel opzetten van een [enablement-gemeenschap](overview.md#enablement-community) voor demonstratie- of ontwikkelingsdoeleinden.
 
-Ga naar [Aan de slag met AEM-gemeenschappen](overview.md#engagement-community)voor een zelfstudie over het snel instellen van een [betrokkenheidsgemeenschap](getting-started.md).
+Ga naar [Aan de slag met AEM Communities](overview.md#engagement-community)voor een zelfstudie over het snel instellen van een [betrokkenheidsgemeenschap](getting-started.md).
 
 >[!NOTE]
 >
 >In deze zelfstudie wordt ervan uitgegaan dat [Communities feature pack 1](deploy-communities.md#latestfeaturepack) of hoger is geïnstalleerd.
-
 
 * [Eerste instelling](enablement-setup.md)
 

@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 39ae3d8348b0c149c047c9fb3ac2eb673b610645
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
-source-wordcount: '4048'
+source-wordcount: '4034'
 ht-degree: 0%
 
 ---
@@ -200,9 +200,9 @@ Gebruik het verzoekattribuut om de bijbehorende eigenschappen van de gegevensbro
    >[!NOTE]
    >
    > * Als u een statische sjabloon gebruikt, bedekt u head.jsp bij:
-/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp
+      >   `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
    > * Als u een bewerkbare sjabloon gebruikt, bedekt u de aftemplatedpage.jsp op:
-/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp
+      >   `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
 
 
 1. Set [!DNL paramMap] for the request attribute. Neem bijvoorbeeld de volgende code op in het .jsp-bestand in de map apps:

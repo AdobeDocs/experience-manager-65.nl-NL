@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: e0da09b3-725d-4ed1-9273-2532132f6918
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 570c970c328ded828680baeb1b04ab4361a36226
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 0%
@@ -28,7 +28,6 @@ Voor een eenvoudige demonstratie, een visuele functie, wordt de avatar verwijder
 >[!NOTE]
 >
 >Als u de extensie wilt gebruiken, moet de instantie van het opmerkingensysteem in een website die wordt beïnvloed (content), het resourceType instellen op het aangepaste opmerkingssysteem.
-
 
 ## De HBS-scripts wijzigen {#modify-the-hbs-scripts}
 

@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: cd4f53ee-537b-4f10-a64f-474ba2c44576
 translation-type: tm+mt
-source-git-commit: 9d6ec05fdc98e33a11303d189414c2c45c5e8b3c
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 4%
@@ -25,7 +25,6 @@ Bedek het opmerkingensysteem met een aangepaste versie door het minimale aantal 
 >[!CAUTION]
 >
 >De inhoud van de map /libs wordt nooit bewerkt, omdat een nieuwe installatie of upgrade de map /libs kan verwijderen of vervangen, terwijl de inhoud van de map /apps ongewijzigd blijft.
-
 
 Wanneer u [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) op een auteurinstantie gebruikt, begint u met het maken van een pad in de map /apps dat identiek is aan het pad naar de bovenliggende componenten in de map /libs.
 
@@ -82,9 +81,6 @@ Sommige knooppunten in het pad zijn mappen en andere componenten.
 >
 >* `social/commons/components/comments`
 >* `social/commons/components/comments/comment`
-
->
-
 
 
 De eigen eigenschap `Type`(property `sling:resourceType`) van de overlay moet een relatieve zelfverwijzing zijn, zodat de inhoud die niet wordt gevonden in /apps, vervolgens wordt gezocht in /libs.

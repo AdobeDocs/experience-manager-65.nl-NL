@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 83c4f18a-d7d6-4090-88c7-41a9075153b5
 translation-type: tm+mt
-source-git-commit: 230c700d87d82d248b7d0bbc45c69c5c2b0e3ff8
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '590'
 ht-degree: 4%
@@ -32,7 +32,6 @@ Beide componenten moeten worden geplaatst, vooral als het aanpassen van de versc
 >Er is slechts één opmerkingsysteem per sitepagina toegestaan.
 >
 >Vele eigenschappen van Gemeenschappen omvatten reeds een commentaarsysteem waarvan resourceType kan worden gewijzigd om het uitgebreide commentaarsysteem van verwijzingen te voorzien.
-
 
 ## De component Opmerkingen maken {#create-the-comments-component}
 
@@ -160,7 +159,7 @@ Met [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
       * **Naam** `dependencies` Type **-**`String` **waarde** `cq.social.scf` `Multi`
 
 * Selecteer **[!UICONTROL Save All]**
-* Selecteer `/apps/custom/components/comments/clientlib`het knooppunt, maak 3 bestanden:
+* Selecteer `/apps/custom/components/comments/clientlib`het knooppunt en maak drie bestanden:
 
    * **Naam**: `css.txt`
    * **Naam**: `js.txt`
@@ -173,7 +172,7 @@ Met [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
 ## Het SCF-model en de weergave registreren {#register-the-scf-model-view}
 
-Wanneer het uitbreiden van (het met voeten treden) een component SCF, is resourceType verschillend (het bedekken maakt gebruik van het relatieve onderzoeksmechanisme dat `/apps` alvorens zoekt `/libs` zodat resourceType het zelfde blijft). Daarom is het noodzakelijk om JavaScript (in de cliëntbibliotheek) te schrijven om het model SCF JS en mening voor custom resourceType te registreren.
+Wanneer het uitbreiden (met voeten tredend) van een component SCF, is resourceType verschillend (het bedekken maakt gebruik van het relatieve onderzoeksmechanisme dat `/apps` alvorens zoekt `/libs` zodat resourceType het zelfde blijft). Daarom is het noodzakelijk om JavaScript (in de cliëntbibliotheek) te schrijven om het model SCF JS en mening voor custom resourceType te registreren.
 
 Voer de volgende tekst in als de inhoud van `customcommentsystem.js`:
 

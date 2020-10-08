@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 0763f236-5648-49e9-8a24-dbc8f4c77ee3
 translation-type: tm+mt
-source-git-commit: 7acd89d830b9e758eec1b5a4beb18c22e4d12dcf
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '697'
 ht-degree: 0%
@@ -46,7 +46,6 @@ Wanneer het bevorderen van AEM 6.0 of vroeger, zal het noodzakelijk zijn om UGC 
 >
 >Voor vervangingsnut, zie Refactoring [SocialUtils](socialutils.md).
 
-
 ## Hulpprogrammamethode voor toegang tot UGC {#utility-method-to-access-ugc}
 
 Om tot UGC toegang te hebben, gebruik een methode van het pakket SocialResourceUtilities dat een weg geschikt voor de toegang tot van UGC van SRP terugkeert en de vervangen methode vervangt die in het pakket SocialUtils wordt gevonden.
@@ -74,7 +73,6 @@ Voor coderingsrichtlijnen, bezoek de [Toegang tot van UGC met SRP](accessing-ugc
 >
 >De weg resourceToUGCStoragePath () keert is *niet* geschikt voor [ACL het controleren](srp.md#for-access-control-acls)terug.
 
-
 ## De Methode van het nut om tot ACLs toegang te hebben {#utility-method-to-access-acls}
 
 Sommige implementaties SRP, zoals ASRP en MSRP, slaan communautaire inhoud in gegevensbestanden op die geen ACL controle verstrekken. De knopen van de schaduw verstrekken een plaats in de lokale bewaarplaats waarop ACLs kan worden toegepast.
@@ -101,7 +99,6 @@ protected void doGet(final SlingHttpServletRequest request, final SlingHttpServl
 >[!CAUTION]
 >
 >Het pad dat door resourceToACLPath() wordt geretourneerd, is *niet* geschikt voor [toegang tot de UGC](#utility-method-to-access-acls) zelf.
-
 
 ## UGC-gerelateerde opslaglocaties {#ugc-related-storage-locations}
 
@@ -136,4 +133,3 @@ UGC wordt gecreeerd in geen van die plaatsen, en zou slechts moeten worden betre
 * [Overzicht](srp.md) van Storage Resource Provider - Inleiding en overzicht van het opslaggebruik.
 * [Toegang tot UGC met SRP](accessing-ugc-with-srp.md) - Coderingsrichtlijnen.
 * [SocialUtils Refactoring](socialutils.md) - Afgekeurde nutsmethodes van de Afbeelding aan huidige SRP hulpprogrammamethodes.
-

@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 72fe5749-2fa2-442f-b679-7889faeafcac
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+workflow-type: tm+mt
+source-wordcount: '1281'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ U kunt zoeksjabloondefinities en algemene instellingen voor Workspace importeren
 
 >[!NOTE]
 >
->De Flex-werkruimte is verouderd voor de release van AEM-formulieren.
+>De Flex-werkruimte is verouderd voor AEM formulierrelease.
 
 U kunt bijvoorbeeld van een ontwikkelomgeving naar een productieomgeving gaan door de definities van zoeksjablonen en globale instellingen van de ene omgeving te exporteren en deze in de andere omgeving te importeren.
 
@@ -56,7 +59,7 @@ Nadat u het algemene instellingenbestand hebt geëxporteerd, kunt u de instellin
 
 ## Algemene instellingen exporteren {#export-global-settings}
 
-1. Klik op de pagina Algemeen beheer onder Globale instellingen exporteren op Exporteren.
+1. Voor de Globale pagina van het Beleid, onder de Globale Montages van de Uitvoer, klik de Uitvoer.
 1. Sla het bestand op uw computer op.
 
 ## Algemene instellingen werkruimte {#workspace-global-settings}
@@ -65,7 +68,7 @@ U kunt het algemene instellingenbestand wijzigen; de enige instellingen die u wi
 
 >[!NOTE]
 >
->De Flex-werkruimte is verouderd voor de release van AEM-formulieren.
+>De Flex-werkruimte is verouderd voor AEM formulierrelease.
 
 Het bestand met algemene instellingen voor Workspace bevat de volgende instellingen:
 
@@ -85,7 +88,7 @@ De *specialRoutes* montages specificeren de eigenschappen van de speciale routes
 
 ### JGroup-instellingen {#jgroup-settings}
 
-Deze instellingen worden alleen weergegeven als u een upgrade hebt uitgevoerd van Adobe LiveCycle ES 2.5 of eerder.
+Deze instellingen worden alleen weergegeven als u een upgrade hebt uitgevoerd vanaf Adobe LiveCycle 2.5 of eerder.
 
 **server_remoteevents_ClientTimeoutMilliseconds:** De maximale tijd die de JGroup wacht voor gebeurtenisberichten. Deze instelling mag niet worden gewijzigd.
 
@@ -103,7 +106,7 @@ De overige eigenschappen in deze instelling mogen niet worden gewijzigd.
 
 **server_remoteevents_JGroupName:** De naam van de JGroup die wordt gebruikt voor communicatie via een externe gebeurtenis. Deze waarde wordt willekeurig gegenereerd om conflicten in clusters te voorkomen. Deze waarde moet niet worden gewijzigd.
 
-Voor extra informatie over JGroups en Werkruimte, zie de Werkruimte van [JGroups en van de Vormen AEM - Verklaard](https://blogs.adobe.com/livecycle/2011/03/jgroups-and-livecycle-workspace-explained.html).
+Voor extra informatie over JGroups en Werkruimte, zie de Werkruimte van [JGroups en AEM van vormen - Verklaard](https://blogs.adobe.com/livecycle/2011/03/jgroups-and-livecycle-workspace-explained.html).
 
 ### formView-instellingen {#formview-settings}
 
@@ -123,9 +126,9 @@ Voor extra informatie over JGroups en Werkruimte, zie de Werkruimte van [JGroups
 
 **server_debugLevel:** Wijzig deze instelling niet.
 
-**client_pollingInterval:** Stelt het opiniepeilingsinterval (in seconden) in dat wordt gebruikt voor de (Vervangen voor AEM-formulieren in JEE) Flex-werkruimte om nieuwe en gewijzigde taken te detecteren. De standaardwaarde is 3 seconden. Dit werkt niet voor de werkruimte van AEM-formulieren.
+**client_pollingInterval:** Hiermee stelt u het opiniepeilingsinterval (in seconden) in dat wordt gebruikt op de Flex Workspace (Vervangen voor AEM formulieren op JEE) voor het detecteren van nieuwe en gewijzigde taken. De standaardwaarde is 3 seconden. Dit werkt niet voor AEM Forms Workspace.
 
-**client_systemContext_name:** Geef een aangepaste naam (bijvoorbeeld Burger) op die in het veld Toegevoegd op (op het tabblad Bijlagen) moet worden weergegeven voor de bijlagen van een taak in de werkruimte van AEM-formulieren.
+**client_systemContext_name:** Geef een aangepaste naam (bijvoorbeeld Burger) op die u wilt weergeven in het veld Toegevoegd op (op het tabblad Bijlagen) voor de bijlagen van een taak in AEM Forms Workspace.
 
 De aangepaste naam definiëren:
 
@@ -133,4 +136,6 @@ De aangepaste naam definiëren:
 
 >[!NOTE]
 >
->Voor de toepassing Demo is de standaardweergavenaam **Citizen**. Voor een aangepaste toepassing die u maakt, is de standaardweergavenaam **Systeemcontextaccount**.***client_idleTimeout:** Wanneer een gebruiker gedurende een bepaalde tijd inactief blijft, verloopt de AEM Forms Workspace-sessie. Als u deze functie wilt inschakelen, voegt u een item toe aan Algemene instellingen &lt;client_idleTimeout>*IDLE_TIMEOUT_IN_SECONDS*&lt;/client_idleTimeout>. U kunt waarde 0 opgeven om de time-out bij inactiviteit uit te schakelen. De hoeveelheid tijd wordt opgegeven in seconden.
+>Voor de toepassing Demo is de standaardweergavenaam **Citizen**. Voor een aangepaste toepassing die u maakt, is de standaardweergavenaam **Systeemcontextaccount**.
+>
+>**client_idleTimeout:** Wanneer een gebruiker gedurende een bepaalde periode inactief blijft, verloopt de AEM Forms Workspace-sessie. Als u deze functie wilt inschakelen, voegt u een item toe aan Algemene instellingen &lt;client_idleTimeout>*IDLE_TIMEOUT_IN_SECONDS*&lt;/client_idleTimeout>. U kunt waarde 0 opgeven om de time-out bij inactiviteit uit te schakelen. De hoeveelheid tijd wordt opgegeven in seconden.

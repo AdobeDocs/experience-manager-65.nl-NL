@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
 translation-type: tm+mt
-source-git-commit: eb5317be52eec39b947ccb3c456d21d567ef2841
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '917'
 ht-degree: 0%
@@ -39,7 +39,6 @@ Voor het beheren van gebruikers en groepen die in de *auteursomgeving* zijn gere
 >
 >Als voorbeeldinhoud is geïmplementeerd en ingeschakeld, zijn er veel voorbeeldgebruikers in zowel de auteur- als de publicatieomgeving. Deze gebruikers zullen niet aanwezig zijn wanneer het lopen met [geen runtime](../../help/sites-administering/production-ready.md)van de Inhoud.
 
-
 ## Ledenconsole {#members-console}
 
 In het auteursmilieu, om de console van Leden te bereiken voor het beheren van leden die in het publicatiemilieu worden geregistreerd:
@@ -49,7 +48,6 @@ In het auteursmilieu, om de console van Leden te bereiken voor het beheren van l
 >[!CAUTION]
 >
 >Het zal niet mogelijk zijn om de console van Leden te gebruiken als de [tunneldienst](deploy-communities.md#tunnel-service-on-author) niet wordt toegelaten.
-
 
 ![member-console1](assets/member-console1.png)
 
@@ -66,7 +64,7 @@ Selecteer het zoekpictogram aan de linkerkant van de `Members` koptekst om het v
 
 ### Statistieken van de lidstaten {#member-statistics}
 
-De kolommen waarin `Views`, `Posts`en `Follows` en `Likes` worden weergegeven wanneer de gebruiker lid is van een of meer communitysites waarvoor Adobe Analytics is [ingeschakeld](sites-console.md#analytics).
+De kolommen die `Views`, `Posts`, `Follows` en `Likes` tonen worden bijgewerkt wanneer de gebruiker een lid van één of meerdere communautaire plaatsen met Adobe Analytics [toegelaten](sites-console.md#analytics)is.
 
 ### CSV exporteren {#export-csv}
 
@@ -174,7 +172,6 @@ De console Groepen openen:
 >[!CAUTION]
 >
 >Het zal niet mogelijk zijn om de console van Groepen te gebruiken als de [tunneldienst](deploy-communities.md#tunnel-service-on-author) niet wordt toegelaten.
-
 
 ### Nieuwe groep maken {#create-new-group}
 

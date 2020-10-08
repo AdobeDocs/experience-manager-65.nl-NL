@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: d936cef5-ad76-482d-97bf-c40137185812
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9e941ce092f7d3248c11886d6bf1e54f2e726362
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1226'
 ht-degree: 0%
@@ -86,7 +86,7 @@ Geef op het tabblad **Instellingen** instellingen op voor onderwerpen en antwoor
 
 * **Gesloten**
 
-   Als deze optie ingeschakeld is, is het forum gesloten voor nieuwe onderwerpen en opmerkingen. De optie Standaard is uitgeschakeld.
+   Als deze optie ingeschakeld is, wordt het forum afgesloten met nieuwe onderwerpen en opmerkingen. De optie Standaard is uitgeschakeld.
 
 * **RTF-editor**
 
@@ -174,7 +174,6 @@ Geef op het tabblad **Instellingen** instellingen op voor onderwerpen en antwoor
 >
 >Het kan nodig zijn om zowel `AllowThreaded Replies` als `Allow users to Delete Comments and Topics` om opmerkingen over een onderwerp mogelijk te maken.
 
-
 #### Tabblad Gebruikersmodernisering {#user-moderation-tab}
 
 Onder het lusje van de Moderatie **van de** Gebruiker, specificeer hoe de geposte onderwerpen en de antwoorden (gebruiker geproduceerde inhoud) worden beheerd. Voor meer informatie, zie het [Modereren van Gebruiker Gegenereerde Inhoud](/help/communities/moderate-ugc.md).
@@ -243,7 +242,7 @@ Geef op onder het tabblad **Sorteerinstellingen** op hoe de geposte opmerkingen 
 
    Trek naar beneden om een van de geselecteerde sorteeropties te selecteren die als standaard moeten worden weergegeven. Standaard is dit `Newest`.
 
-* **Tijdopties selecteren voor Analytics-sortering**
+* **Tijdopties selecteren voor het sorteren van analysemogelijkheden**
 
    Trek naar beneden om een van de volgende opties te selecteren: `All, Last 24 Hours, Last 7 Days, Last 30 Days`.
 

@@ -7,7 +7,7 @@ uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 translation-type: tm+mt
-source-git-commit: 35b2c9c8c79b3cc3d81e0b92ea17cd7d599fa7ee
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '4122'
 ht-degree: 0%
@@ -553,8 +553,7 @@ Voer de volgende stappen uit om de certificaten te configureren:
 
    >[!NOTE]
    >
-   >* In het productiemilieu, vervang uw evaluatiegeloofsbrieven met productiereferenties. Zorg ervoor dat u uw oude geloofsbrieven van de Uitbreidingen van de Reader schrapt, alvorens een verlopen of evaluatiereferentie bij te werken.
-
+   >In het productiemilieu, vervang uw evaluatiegeloofsbrieven met productiereferenties. Zorg ervoor dat u uw oude geloofsbrieven van de Uitbreidingen van de Reader schrapt, alvorens een verlopen of evaluatiereferentie bij te werken.
 
 1. Klik op **[!UICONTROL Save & Close]** op de pagina **[!UICONTROL Edit User Settings]**.
 

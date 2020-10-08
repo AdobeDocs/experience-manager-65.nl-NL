@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: dca5a2ac-1fc8-4251-b073-730fd6f49b1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 7c03ba5e2ec7954cca8b129f453919d151956df5
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1967'
 ht-degree: 11%
@@ -32,16 +32,14 @@ AEM Assets wordt gevormd met het Portaal van het Merk via de Console van de Ontw
 >
 >Configuratie via de verouderde OAuth Gateway wordt vanaf 6 april 2020 niet meer ondersteund en wordt gewijzigd in Adobe Developer Console.
 
-
 >[!TIP]
 >
 >***Alleen voor bestaande klanten***
 >
 >Het wordt geadviseerd om de bestaande oudere configuratie van de Gateway te blijven gebruiken OAuth. In het geval, ontmoet u problemen met erfenisOAuth configuratie van de Gateway, schrapt de bestaande configuratie en creeert nieuwe configuratie via de Console van de Ontwikkelaar van Adobe.
 
-
-
 In deze Help worden de volgende twee gebruiksgevallen beschreven:
+
 * [Nieuwe configuratie](#configure-new-integration-65): Als u een nieuwe gebruiker bent van het Merk Portal en uw AEM Assets auteur instantie met het Portaal van het Merk wilt vormen, kunt u configuratie via de Console van de Ontwikkelaar van de Adobe tot stand brengen.
 * [Configuratie](#upgrade-integration-65)upgrade: Als u een bestaande gebruiker bent van het Portaal van het Merk die configuratie op erfenisOAuth Gateway heeft, schrap de bestaande configuratie en creeer nieuwe configuratie via de Console van de Ontwikkelaar van Adobe.
 
@@ -58,7 +56,6 @@ U hebt het volgende nodig om AEM Assets te configureren met Brand Portal:
 * Een AEM Assets-auteur-exemplaar met de nieuwste Service Pack
 * Een URL voor Poortgebruiker voor merken
 * Een gebruiker met systeembeheerdersbevoegdheden op de IMS-organisatie van de Brand Portal-tenant
-
 
 [Download en installeer AEM 6.5](#aemquickstart)
 
@@ -94,12 +91,9 @@ Voor het configureren van AEM Assets met Brand Portal zijn configuraties vereist
 1. In AEM Assets configureert u de Brand Portal-cloudservice met behulp van het IMS-account en het Brand Portal-eindpunt (organisatie-URL).
 1. Test uw configuratie door middel van het publiceren van middelen van AEM Assets naar Brand Portal.
 
-
 >[!NOTE]
 >
 >Een AEM Assets-auteur-instantie mag slechts met één Brand Portal-huurder worden geconfigureerd.
-
-
 
 Voer de volgende stappen in de vermelde reeks uit als u AEM Assets met Brand Portal voor het eerst configureert:
 1. [Openbaar certificaat verkrijgen](#public-certificate)
@@ -269,7 +263,6 @@ Voer de volgende stappen uit om de IMS-account te configureren.
 
    ![IMS Account configuration](assets/create-new-integration6.png)
 
-
 1. Select the IMS account configuration and click **[!UICONTROL Check Health]**.
 
    Klik **[!UICONTROL Check]** in het dialoogvenster. Bij een geslaagde configuratie wordt het bericht weergegeven dat het *token is opgehaald*.
@@ -281,8 +274,6 @@ Voer de volgende stappen uit om de IMS-account te configureren.
 >U kunt slechts één IMS-configuratie hebben.
 >
 >Zorg ervoor dat de IMS-configuratie slaagt voor de statuscontrole. Als de configuratie niet slaagt voor de statuscontrole, is deze ongeldig. U moet deze dan verwijderen en een nieuwe, geldige configuratie maken.
-
-
 
 ### Cloudservice configureren {#configure-the-cloud-service}
 
@@ -326,11 +317,9 @@ Voer de volgende stappen uit om de configuratie te valideren:
 
    ![](assets/test-integration3.png)
 
-
    >[!NOTE]
    >
    >De replicatieagenten werken parallel en delen de baandistributie gelijk, daardoor verhogend de het publiceren snelheid met vier keer de originele snelheid. Nadat de wolkendienst wordt gevormd, wordt de extra configuratie niet vereist om de replicatieagenten toe te laten die door gebrek worden geactiveerd om parallelle publicatie van veelvoudige activa toe te laten.
-
 
 1. To verify the connection between AEM Assets and Brand Portal, click on the **[!UICONTROL Test Connection]** icon.
 

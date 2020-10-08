@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 202d7dba-2b34-431d-b10f-87775632807f
 translation-type: tm+mt
-source-git-commit: 6ab91667ad668abf80ccf1710966169b3a187928
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 0%
@@ -25,7 +25,6 @@ De console van de Malplaatjes van de Plaats is zeer gelijkaardig aan de console 
 >[!NOTE]
 >
 >De consoles voor de verwezenlijking van [communautaire plaatsen](sites-console.md), de malplaatjes [van de](sites.md)communautaire plaats, [communautaire groepsmalplaatjes](tools-groups.md) en [communautaire functies](functions.md) zijn voor gebruik slechts in het auteursmilieu.
-
 
 ## Sitesjabloonconsole {#site-templates-console}
 
@@ -85,7 +84,6 @@ De paginafunctie biedt een lege pagina. De groepsfunctie biedt de mogelijkheid o
 >
 >Alle andere functies, zoals de [paginafunctie](functions.md#page-function), moeten worden opgenomen en als eerste worden vermeld.
 
-
 ![site-editor](assets/site-editor.png)
 
 ### Groepsjablonen voor groepfuncties {#group-templates-for-groups-function}
@@ -95,7 +93,6 @@ Wanneer het omvatten van een groepsfunctie in het plaatssjabloon, vereist de con
 >[!CAUTION]
 >
 >De functie Groepen mag *niet* de *eerste of de enige* functie in de sitestructuur zijn.
-
 
 ![locatiefuncties](assets/site-functions.png)
 

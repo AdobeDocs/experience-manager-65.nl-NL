@@ -8,7 +8,7 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c6b8e184042394d99ceb099c918b81e2cce49497
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '4727'
 ht-degree: 1%
@@ -788,10 +788,10 @@ Om hen te vormen om binnen het Werkschema worden toegelaten moeten de gebruikers
 
 1. Open de de dienstdefinitie en laat de geselecteerde diensten toe om binnen het werkschema worden aangehaald.
 
->[!NOTE]
-Enkel omdat een gebruiker de dienst binnen de pagina van de Manager van de Configuratie toelaat, worden de gebruikers nog vereist om een de dienstconfiguratie op te zetten om met de externe gevraagde diensten te communiceren.
+   >[!NOTE]
+   Enkel omdat een gebruiker de dienst binnen de pagina van de Manager van de Configuratie toelaat, worden de gebruikers nog vereist om een de dienstconfiguratie op te zetten om met de externe gevraagde diensten te communiceren.
 
-![we gov - formulierpakket](assets/aftia-configuration-options.jpg)
+   ![we gov - formulierpakket](assets/aftia-configuration-options.jpg)
 
 1. Klik op de knop Opslaan als u klaar bent om de instellingen op te slaan.
 

@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 1ef15e76-fe7c-4ced-a20d-c0a9385e3ee4
 translation-type: tm+mt
-source-git-commit: 4e2fa3b0a64ae2e959dad85e3a1bc4a1027a2eef
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '2859'
 ht-degree: 0%
@@ -35,12 +35,9 @@ Voor details, zie het [Vormen Enablement](enablement.md).
 >
 >Als SCORM na de verwezenlijking van de communautaire plaats wordt geïnstalleerd, om het even welke toelatingsmiddelen aanwezig alvorens SCORM wordt geïnstalleerd moet worden opnieuw gemaakt.
 
-
-
 >[!NOTE]
 >
 >Met de versie van [AEM 6.3](deploy-communities.md#latestfeaturepack) en de gelijkwaardige de eigenschappakken van Gemeenschappen [AEM 6.2 FP3](deploy-communities.md#latestfeaturepack) en [AEM 6.1 FP7](https://docs.adobe.com/content/docs/en/aem/6-1/deploy/communities.html#Latest het Pak van de Eigenschap), vereist de enablement eigenschap niet meer een [gegevensbestand](mysql.md)MySQL.
-
 
 ## Terminologie {#terminology}
 
@@ -251,7 +248,6 @@ Selecteer `'+' icon`in de rechterbovenhoek het item om het proces voor het kieze
 >
 >Als een lid in zowel een middel als een het leren weg wordt ingeschreven die verwijzingen dat middel, zullen hun taken zowel het enige middel als het middel binnen de het leren weg tonen.
 
-
 * **[!UICONTROL Social Settings]**
 
    Met deze instellingen bepaalt u of studenten invoer kunnen leveren met betrekking tot de activeringsbron. De [moderatie montages](sites-console.md#moderation) zijn die van de oudercommunautaire plaats.
@@ -389,7 +385,6 @@ Voor actiemiddelen die deel uitmaken van een leerpad, mogen de taken alleen word
 >
 >U kunt alleen de bronnen selecteren die beschikbaar zijn op hetzelfde niveau als het leerpad. Bijvoorbeeld, voor een leerweg die in een groep wordt gecreeerd slechts zijn de middelen van het groepsniveau beschikbaar; voor een leerpad dat in een gemeenschapssite is gemaakt, zijn de bronnen in die site beschikbaar voor toevoeging aan het leerpad.
 
-
 * Selecteer **[!UICONTROL Next]**.
 
 ### Instellingen {#settings-1}
@@ -411,7 +406,6 @@ Voor actiemiddelen die deel uitmaken van een leerpad, mogen de taken alleen word
 >Inschakelingsbronnen waarnaar wordt verwezen vanuit het leerpad mogen niet dezelfde toewijzingen (studenten) vermelden, als deze er zijn.
 >
 >Als een lid in zowel een enablement middel als een het leren weg wordt ingeschreven die verwijzingen die middel, hun taken zowel het enige middel als het middel binnen de het leren weg tonen.
-
 
 ## Een bron beheren {#managing-a-resource}
 

@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 25b7ac08-6cdc-4dd5-a756-d6169b86f9ab
 translation-type: tm+mt
-source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '679'
 ht-degree: 1%
@@ -129,7 +129,6 @@ De aangepaste gebeurtenis zou de methode overschrijven, `getVerb()` zodat voor e
 >
 >Zorg ervoor dat een aangepaste extensie is geregistreerd met een lagere rangschikking dan een bestaande implementatie in het product.
 
-
 ### Pseudo-code voor gebeurtenis Custom Component {#pseudo-code-for-custom-component-event}
 
 [org.osgi.service.event.Event](https://osgi.org/javadoc/r4v41/org/osgi/service/event/Event.html);
@@ -235,7 +234,7 @@ public class RecipeEvent extends SocialEvent<RecipeEvent.RecipeActions> {
 
 Het is mogelijk naar gebeurtenissen te luisteren om te wijzigen wat er in de activiteitsstroom wordt weergegeven.
 
-Het volgende pseudo-codevoorbeeld verwijdert DELETE gebeurtenissen voor de component Comments uit de activiteitsstroom.
+In het volgende pseudo-codevoorbeeld worden DELETE-gebeurtenissen voor de component Comments verwijderd uit de activiteitsstroom.
 
 ### Pseudo-code voor EventListener {#pseudo-code-for-eventlistener}
 

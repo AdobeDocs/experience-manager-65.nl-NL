@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a777a3f1-b39f-4d90-b9b6-02d3e321a86f
 translation-type: tm+mt
-source-git-commit: 3da113e88784def54e0a94e280bf1a965de015ed
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1200'
 ht-degree: 0%
@@ -62,7 +62,6 @@ Als u de modus Bewerken bij de auteur wilt activeren, voegt u een `editor.html` 
 >Voor algemene ontwerpinformatie raadpleegt u de [handleiding voor het maken van pagina](../../help/sites-authoring/qg-page-authoring.md)&#39;s.
 >
 >Als u niet bekend bent met AEM, bekijkt u de documentatie over de [basisafhandeling](../../help/sites-authoring/basic-handling.md).
-
 
 ### Startpagina {#home-page}
 

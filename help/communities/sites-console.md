@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 4130f952-5bb5-4e32-91d6-47b2885b30a4
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e49acbc042d84ae970058b4e99ab6f980866db5a
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '3290'
 ht-degree: 0%
@@ -33,7 +33,6 @@ Zie [Aan de slag met AEM Communities](/help/communities/getting-started.md) om t
 >[!NOTE]
 >
 >De belangrijkste menu&#39;s van Gemeenschappen voor de verwezenlijking van [communautaire plaatsen](/help/communities/sites-console.md), de malplaatjes [van de](/help/communities/sites.md)communautaire plaats, [communautaire groepsmalplaatjes](/help/communities/tools-groups.md) en [communautaire functies](/help/communities/functions.md) zijn voor gebruik slechts in het auteursmilieu.
-
 
 ## Vereisten {#prerequisites}
 
@@ -180,17 +179,15 @@ Het deelvenster Instellingen bevat verschillende subdeelvensters met functies di
 >
 >Dit wordt verwezenlijkt door het ` [AEM Communities Publish Tunnel Service](/help/communities/deploy-communities.md#tunnel-service-on-author)` voor het auteursmilieu toe te laten.
 
-
 #### GEBRUIKERSBEHEER {#user-management}
 
 ![creaties](assets/createsitesettings.png)
 
 >[!NOTE]
 >
->Aanbevolen wordt om websites [van](/help/communities/overview.md#enablement-community) gemeenschappen voor activering privé te maken (neem contact op met uw accountvertegenwoordiger voor meer informatie).
+>We raden u aan om websites van [gemeenschappen](/help/communities/overview.md#enablement-community) in te schakelen als private (neem contact op met uw accountvertegenwoordiger voor meer informatie).
 >
 >Een gemeenschapssite is persoonlijk wanneer anonieme sitebezoekers geen toegang krijgen, zich mogelijk niet zelf registreren en geen gebruik maken van sociale aanmelding.
-
 
 * **Gebruikersregistratie toestaan**
 
@@ -227,7 +224,6 @@ Laat de optie voor een *privésite* van de community uitgeschakeld. De optie Sta
 >**Sociale aanmeldingen toestaan**
 >
 >Hoewel er voorbeelden van Facebook- en Twitter-configuraties kunnen bestaan en kunnen worden geselecteerd, is het voor een [productieomgeving](/help/sites-administering/production-ready.md)noodzakelijk om aangepaste Facebook- en Twitter-toepassingen te maken. Zie [Sociale aanmelding bij Facebook en Twitter](/help/communities/social-login.md).
-
 
 #### TAGGING {#tagging}
 
@@ -309,7 +305,7 @@ De optie Standaard is uitgeschakeld. Als deze optie is ingeschakeld, wordt een e
 
 * **Vertaalprovider kiezen**
 
-   Standaard is de serviceprovider een testservice die alleen wordt gebruikt `microsoft` voor demonstraties. Als er geen licentie is voor een vertaalservicebureau, **moet de optie Machine Translation** toestaan zijn uitgeschakeld.
+   Standaard is de serviceprovider een testservice die alleen wordt gebruikt `microsoft` voor demonstraties. Als er geen licentie is voor een vertaalservicebureau, **moet de optie Machinevertaling** toestaan zijn uitgeschakeld.
 
 * **Globale gedeelde opslag kiezen**
 
@@ -403,7 +399,6 @@ De inhoud van een site kan met dezelfde gereedschappen worden gemaakt als elke a
 >
 >Als u niet bekend bent met AEM, bekijkt u de documentatie over [basisverwerking](/help/sites-authoring/basic-handling.md) en een [handleiding voor het ontwerpen van pagina](/help/sites-authoring/qg-page-authoring.md)&#39;s.
 
-
 ## Site-eigenschappen wijzigen {#modifying-site-properties}
 
 ![site bewerken](assets/edit-site.png)
@@ -450,7 +445,6 @@ In het deelvenster STRUCTUUR kunt u de structuur wijzigen die oorspronkelijk is 
 >
 >U kunt de volgorde van alle functies in de sitestructuur wijzigen, behalve van de functie bovenaan. Daarom kan de homepage van de plaats van gemeenschappen niet worden veranderd.
 
-
 >[!CAUTION]
 >
 >* Hoewel de titel van de weergave zonder bijwerkingen kan worden gewijzigd, wordt het niet aanbevolen de URL-naam te bewerken van een communautaire functie die bij een communautaire site hoort.
@@ -458,13 +452,11 @@ In het deelvenster STRUCTUUR kunt u de structuur wijzigen die oorspronkelijk is 
 >
 Als u bijvoorbeeld de naam van de URL wijzigt, wordt de bestaande UGC niet verplaatst, waardoor de UGC verloren gaat.
 
-
 >[!CAUTION]
 >
 >De groepfunctie mag *niet* de *eerste of de enige* functie in de sitestructuur zijn.
 >
 >Alle andere functies, zoals de [paginafunctie](/help/communities/functions.md#page-function), moeten worden opgenomen en als eerste worden vermeld.
-
 
 #### Voorbeeld: Een catalogusfunctie toevoegen aan een community-sitestructuur {#example-adding-a-catalog-function-to-a-community-site-structure}
 
@@ -551,7 +543,6 @@ Zie Gebruikers en gebruikersgroepen [](/help/communities/users.md)beheren voor m
 >
 >
 is gemaakt, moet de toegepaste [Facebook-cloudservice](/help/communities/social-login.md#createafacebookcloudservice) zo worden geconfigureerd dat gebruikers aan deze groep worden toegevoegd.
-
 
 ## Configureren voor verificatiefout {#configure-for-authentication-error}
 

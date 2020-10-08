@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 232a0ec1-8dfc-41ec-84cc-69f9db494ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: eb5317be52eec39b947ccb3c456d21d567ef2841
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## Overzicht {#overview}
 
-De overseineneigenschap voor AEM Communities biedt de capaciteit voor ondertekende plaatsbezoekers (leden) om berichten naar elkaar te verzenden die wanneer ondertekend op de plaats toegankelijk zijn.
+Met de communicatiefunctie voor AEM Communities kunnen bezoekers van de aangemelde site (leden) berichten naar elkaar sturen die toegankelijk zijn wanneer ze zich op de site hebben aangemeld.
 
 Het overseinen wordt toegelaten voor een communautaire plaats door een doos tijdens de verwezenlijking [van de](/help/communities/sites-console.md)communautaire plaats te controleren.
 
@@ -111,13 +111,13 @@ Als u een nieuwe configuratie wilt toevoegen, selecteert u het plusteken &#39;**
 
    Als supportAttachments wordt gecontroleerd, specificeert deze waarde de maximum toegestane totale grootte (in bytes) van alle gehechtheid. De standaardwaarde is *104857600* (100 MB).
 
-* **lijst van afgewezen personen bijlagetype**
+* **Lijst van afgewezen personen bijlagetype**
 
-   Een lijst van afgewezen personen met bestandsextensies, voorafgegaan door &#39;**.**&quot;, dat zal door het systeem worden verworpen. Als de extensie niet is op de lijst met ongewenste personen gestaan, is deze toegestaan. Extensies kunnen worden toegevoegd of verwijderd met de pictogrammen &#39;**+**&#39; en &#39;**-**&#39;.
+   Een lijst van afgewezen personen met bestandsextensies, voorafgegaan door &#39;**.**&quot;, dat zal door het systeem worden verworpen. Als de extensie niet wordt toegevoegd op lijst van gewenste personen, is deze toegestaan. Extensies kunnen worden toegevoegd of verwijderd met de pictogrammen &#39;**+**&#39; en &#39;**-**&#39;.
 
 * **Toegestane typen bijlagen**
 
-   **(*Actie vereist*)** Een lijst van gewenste personen van filename uitbreidingen, het tegenovergestelde van de lijst van afgewezen personen. Als u alle bestandsextensies wilt toestaan, behalve de extensies die zijn op de lijst met ongewenste personen gestaan, gebruikt u het pictogram &#39;**-**&#39; om één leeg item te verwijderen.
+   **(*Actie vereist*)** Een lijst van gewenste personen van filename uitbreidingen, het tegenovergestelde van de lijst van afgewezen personen. Als u alle bestandsextensies wilt toestaan, behalve de extensies die zijn toegevoegd op lijst van gewenste personen, gebruikt u het pictogram &#39;**-**&#39; om één leeg item te verwijderen.
 
 * **Servicekiezer**
 
@@ -133,8 +133,7 @@ Als u een nieuwe configuratie wilt toevoegen, selecteert u het plusteken &#39;**
 >
 >Telkens wanneer een `Messaging Operations Service` configuratie voor uitgeven wordt geopend, als `allowedAttachmentTypes.name` was verwijderd, wordt een lege ingang opnieuw toegevoegd om het bezit configureerbaar te maken. Bij één leeg item worden bestandsbijlagen uitgeschakeld.
 >
->Als u alle bestandsextensies wilt toestaan, behalve de extensies die zijn op de lijst met ongewenste personen gestaan, gebruikt u het pictogram &#39;**-**&#39; om (opnieuw) de lege invoer te verwijderen voordat u op **Opslaan** klikt.
-
+>Als u alle bestandsextensies wilt toestaan, behalve de extensies die zijn toegevoegd op lijst van gewenste personen, gebruikt u het pictogram &#39;**-**&#39; om (opnieuw) de enkele lege invoer te verwijderen voordat u op **Opslaan** klikt.
 
 ## Groepsberichten {#group-messaging}
 

@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f2ac3d66-cc79-498f-83fb-dd96feb88de2
 translation-type: tm+mt
-source-git-commit: 570c970c328ded828680baeb1b04ab4361a36226
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '857'
 ht-degree: 0%
@@ -47,7 +47,6 @@ Voor AEM Communities:
 >[!NOTE]
 >
 >Als u niet bekend bent met AEM, bekijkt u de documentatie over [basisverwerking](../../help/sites-authoring/basic-handling.md) en een [handleiding voor het ontwerpen van pagina](../../help/sites-authoring/qg-page-authoring.md)&#39;s.
-
 
 ## Laatste versie van Gemeenschappen installeren {#install-latest-communities-release}
 
@@ -123,7 +122,6 @@ Een vierde gebruiker wordt gecreeerd in het auteursmilieu en toegewezen de rolle
 >
 >In plaats daarvan, later, zullen zij aan de lidgroep [worden](enablement-create-site.md#assignuserstocommunityenablemembersgroup)toegewezen.
 
-
 ### Riley Taylor - Ingeschreven {#riley-taylor-enrollee}
 
 [Creeer een lid](members.md#create-new-member) die aan een groep Leerlingen - de Gemeenschap Ski Klasse zal worden toegevoegd.
@@ -178,7 +176,6 @@ Een vierde gebruiker wordt gecreeerd in het auteursmilieu en toegewezen de rolle
 >[!NOTE]
 >
 >Tijdens het creëren van de communautaire plaats, kunnen de bestaande leden en de groepen aan de groep van leden van de communautaire plaats worden toegevoegd.
-
 
 ## Rol van communautaire beheerder {#community-administrator-role}
 

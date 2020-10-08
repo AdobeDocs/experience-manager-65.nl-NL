@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 68ce47c8-a03f-40d6-a7f3-2cc64aee0594
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f6aa95514a266a042c9bd1165634e30e80479ae7
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 0%
@@ -90,7 +90,6 @@ Om een clientlib voor een communautaire plaats toe te voegen gebruikend [CRXDE L
 >[!NOTE]
 >
 >Als de site geen gemeenschapssite is, moet het bestaan of de locatie van de clientbibliotheken die voor de site worden gebruikt, worden gedetecteerd.
-
 
 Gebruikend het [Beginnen met het voorbeeld van AEM Communities](/help/communities/getting-started.md) , waar `site-name` is *geëngageerd*, is dit hoe de cliëntliblist zou verschijnen als het toevoegen van de revisiecomponent:
 

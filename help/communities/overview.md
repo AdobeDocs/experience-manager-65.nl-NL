@@ -1,8 +1,8 @@
 ---
-title: Overzicht AEM Communities
-seo-title: Overzicht AEM Communities
-description: Een overzicht van de functies en instellingen van AEM Communities
-seo-description: Een overzicht van de functies en instellingen van AEM Communities
+title: AEM Communities - Overzicht
+seo-title: AEM Communities - Overzicht
+description: Een overzicht van AEM Communities-functies en -instellingen
+seo-description: Een overzicht van AEM Communities-functies en -instellingen
 uuid: 14405847-36ae-4958-bdc6-d799ecd05f06
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 44374006-f711-4af8-a1fe-f89164f79581
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9d6ec05fdc98e33a11303d189414c2c45c5e8b3c
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1468'
 ht-degree: 0%
@@ -19,9 +19,9 @@ ht-degree: 0%
 ---
 
 
-# Overzicht AEM Communities {#aem-communities-overview}
+# AEM Communities - Overzicht {#aem-communities-overview}
 
-Adobe Experience Manager (AEM) Community&#39;s bieden de mogelijkheid om snel een lokale community-site te maken die de prestaties verbetert, het sitebeheer verbetert en de conversie van sitebezoekers naar waardevolle leden van de community aanmoedigt.
+Adobe Experience Manager (AEM) Communities biedt de mogelijkheid om snel een lokale community-site te maken die de prestaties verbetert, het sitebeheer verbetert en de conversie van sitebezoekers naar waardevolle leden van de community aanmoedigt.
 
 Neem contact op met uw accountvertegenwoordiger voor informatie over licenties voor AEM Communities en aanvullende licenties voor functies voor activering en Adobe Analytics.
 
@@ -80,11 +80,11 @@ leden zien gebeurtenissen die voor hen van belang zijn en door gebruikers gegene
    * Branding: optionele upload van een bannerafbeelding voor weergave op alle pagina&#39;s van de gemeenschapssite
    * Navigatiemenu: er zijn navigatiekoppelingen beschikbaar voor de functies die zijn opgenomen in het sjabloon voor de communautaire site .
 
-Ga naar [Aan de slag met AEM Communities](/help/communities/getting-started.md)om te ervaren hoe snel u een nieuwe community-site kunt maken.
+Ga naar [Aan de slag met AEM Communities](/help/communities/getting-started.md)om snel een nieuwe community-site te maken.
 
 ## Persistentie van communautaire inhoud {#community-content-persistence}
 
-Om de prestaties en synchronisatie van communautaire inhoud te verbeteren, vereist de AEM Communities een gemeenschappelijke opslag specifiek voor gebruiker geproduceerde inhoud (UGC) die tussen alle AEM (auteur en publiceer) instanties wordt gedeeld.
+Om de prestaties en synchronisatie van inhoud van de gebruikersgemeenschap te verbeteren, vereist AEM Communities een gemeenschappelijke opslag specifiek voor gebruiker geproduceerde inhoud (UGC) die tussen alle AEM (auteur en publiceer) instanties wordt gedeeld.
 
 De communautaire inhoud wordt gemakkelijk betreden door de leverancier van het opslagmiddel (SRP), die een laag verstrekt om toegang van de onderliggende topologie te scheiden en een gemeenschappelijke opslag voor UGC steunt.
 
@@ -157,7 +157,7 @@ Zie de console [Sjablonen](/help/communities/sites.md)voor sites.
 
 ## Communautaire functies {#community-functions}
 
-De kenmerken die van een gemeenschapservaring worden verwacht, zijn bekend. Met AEM Communities zijn deze functies beschikbaar als bouwstenen, ook wel bekend als gemeenschapsfuncties.
+De kenmerken die van een gemeenschapservaring worden verwacht, zijn bekend. In AEM Communities zijn deze functies beschikbaar als bouwstenen, ook wel bekend als gemeenschapsfuncties.
 
 Community-functies zijn normale AEM pagina&#39;s bevatten onderdelen die zijn samengevoegd tot een functie die gemakkelijk kan worden opgenomen in een sjabloon voor een community-site.
 
@@ -175,7 +175,7 @@ Zie ook:
 
 * [De console](/help/communities/groups.md) van Groepen van de plaats voor het creëren van sub-gemeenschappen in het auteursmilieu.
 * [De console](/help/communities/tools-groups.md) van de Malplaatjes van de groep voor het creëren van plaatsstructuur voor groepen.
-* [Aan de slag met AEM Communities](/help/communities/getting-started.md) voor zelfstudie voor het snel maken van een gemeenschapssite met geneste groepen.
+* [Aan de slag met AEM Communities](/help/communities/getting-started.md) voor zelfstudie waarmee u snel een community-site kunt maken met geneste groepen.
 
 ## Community-componenten {#community-components}
 
@@ -205,9 +205,9 @@ Functies van een betrokkenheidsgemeenschap kunnen het volgende omvatten:
 * Moderatie
 * Meldingen
 * Scores en badges
-* Analytics-rapportage
+* Analyserapportage
 
-Ga naar [Aan de slag met AEM Communities](/help/communities/getting-started.md)om snel een nieuwe betrokkenheidsgemeenschap te kunnen maken.
+Ga naar [Aan de slag met AEM Communities](/help/communities/getting-started.md)om snel een nieuwe betrokkenheidscommunity te maken.
 
 ### Enablement Community {#enablement-community}
 
@@ -224,7 +224,7 @@ Functies van een machtigingsgemeenschap kunnen zijn:
 
 Een enablement gemeenschap kan worden gecreeerd wanneer de toe:voegen- [functie Enablement wordt gevormd](/help/communities/enablement.md), die extra vergunning voor gebruik in een productiemilieu vereist. Een plaats van de enablgemeenschap zal de [toewijzingsfunctie](#community-functions)omvatten.
 
-Ga naar [Aan de slag met AEM Communities voor Enablement](/help/communities/getting-started-enablement.md)om te ervaren hoe eenvoudig het maken van een nieuwe enablement-gemeenschap is.
+Ga naar Aan de [slag met AEM Communities for Enablement](/help/communities/getting-started-enablement.md)om te zien hoe eenvoudig het maken van een nieuwe community voor activering is.
 
 ## AEM demo-machine {#aem-demo-machine}
 
@@ -245,11 +245,10 @@ Voor AEM demo-machine is een geldige AEM vereist.
 >
 >Bekijk een [videoinleiding](https://www.youtube.com/watch?v=zEE_zkR9fVQ&amp;feature=youtu.be) op de AEM Demo-machine (13:26).
 
-
-## Documentatie AEM Communities {#aem-communities-documentation}
+## AEM Communities-documentatie {#aem-communities-documentation}
 
 * Bezoek [Implementerende gemeenschappen](deploy-communities.md) voor meer informatie over aanbevolen implementaties.
 * Ga naar [Communitysites](administer-landing.md) beheren voor meer informatie over het maken van een communitysite, het toevoegen van communitygroepen, het configureren van sjablonen voor communitysites, het modereren van community-inhoud, het beheren van leden, het labelen, meldingen, scoring en badges.
 * Bezoek [Ontwikkelingsgemeenschappen](communities.md) voor meer informatie over het sociale-componentframework (SCF) en het aanpassen van onderdelen en functies van Gemeenschappen.
-* Bezoek [Authoring Communities Components](author-communities.md) voor meer informatie over het maken en configureren van Community-componenten.
+* Bezoek [Authoring Communities Components](author-communities.md) om te leren hoe u auteur kunt maken met en Community-componenten kunt configureren.
 

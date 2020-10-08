@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: e9bfbbce-93fc-455c-a2f7-4ee44e63c03f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 17088abc71bb820693259088c8a9b938a43cd9d3
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 0%
@@ -33,10 +33,9 @@ Wanneer een actie wordt ondernomen om een nieuwe communautaire groep tot stand t
 >
 >De consoles voor de verwezenlijking van [communautaire plaatsen](/help/communities/sites-console.md), de malplaatjes [van de](/help/communities/sites.md)communautaire plaats, [communautaire groepsmalplaatjes](/help/communities/tools-groups.md) en [communautaire functies](/help/communities/functions.md) zijn voor gebruik slechts in het auteursmilieu.
 
-
 ## Groep sjablonen {#group-templates-console}
 
-Om de console van groepsmalplaatjes in het milieu van AEM Author te bereiken:
+Om de console van groepsmalplaatjes in het milieu van de Auteur te bereiken AEM:
 
 * Selecteer **gereedschappen | Gemeenschappen | Groepsjablonen,** van globale navigatie.
 
@@ -78,12 +77,11 @@ In het deelvenster Basisinformatie worden een naam, beschrijving en of de sjablo
 
 >[!CAUTION]
 >
->Als u werkt met AEM 6.1 Communities FP4 of eerder, voegt u geen groepsfunctie toe aan een groepssjabloon.
+>Als het werken met AEM 6.1 Gemeenschappen FP4 of vroeger, voeg geen groepsfunctie aan een groepsmalplaatje toe.
 >
 >De functie Geneste groepen is beschikbaar vanaf [KP1](/help/communities/communities.md#latestfeaturepack)van de Gemeenschappen.
 >
 >Het is nog steeds niet toegestaan een functie Groepen toe te voegen als de eerste of enige functie in een sjabloon.
-
 
 ![Sjablooneditor groeperen](assets/template-editor.png)
 

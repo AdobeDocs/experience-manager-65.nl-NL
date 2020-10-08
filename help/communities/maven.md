@@ -1,8 +1,8 @@
 ---
 title: Maven gebruiken voor Gemeenschappen
 seo-title: Maven gebruiken voor Gemeenschappen
-description: Jar voor AEM Communities-API en AEM Uber-API
-seo-description: Jar voor AEM Communities-API en AEM Uber-API
+description: AEM Communities API-jar en AEM Uber API-jar
+seo-description: AEM Communities API-jar en AEM Uber API-jar
 uuid: ea37a89a-db6c-4018-8ab9-f5717e6c0421
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,9 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a726c904-aadd-4678-be84-9e05808ab8be
 translation-type: tm+mt
-source-git-commit: f05d7c19e3284c0627e29b9590db4749be100229
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '183'
 ht-degree: 0%
 
 ---
@@ -24,11 +24,11 @@ ht-degree: 0%
 
 Deze sectie van de documentatie van AEM Communities is naast:
 
-* [AEM-projecten bouwen met Apache Maven](../../help/sites-developing/ht-projects-maven.md).
+* [Bouwen AEM projecten met Apache Maven](../../help/sites-developing/ht-projects-maven.md).
 
 Er zijn nu twee &#39;Number&#39;-artefacten die afzonderlijke artefacten vervangen:
 
-* AEM [Communities API-jar](#communities-api-jar-artifact)
+* AEM [Community API-jar](#communities-api-jar-artifact)
 * AEM [Uber API-jar](../../help/sites-developing/ht-projects-maven.md#what-is-the-uberjar)
 
 ## Communities API Jar Artifact {#communities-api-jar-artifact}
@@ -44,7 +44,7 @@ Hier volgt een voorbeeld van een GAV voor de AEM Communities API-jar:
 </dependency>
 ```
 
-Zorg ervoor dat de opgegeven versie overeenkomt met de pakketversie van Communities die voor AEM Communities is geïnstalleerd. Om het geïnstalleerde versienummer te verifiëren:
+Zorg ervoor dat de opgegeven versie overeenkomt met de versie van het communautaire pakket die voor AEM Communities is geïnstalleerd. Om het geïnstalleerde versienummer te verifiëren:
 
 1. Meld u aan met beheerdersrechten.
 1. Blader naar [Pakketbeheer](../../help/sites-administering/package-manager.md). Bijvoorbeeld: [http://localhost:4502/crx/packmgr/](http://localhost:4502/crx/packmgr/)
@@ -59,7 +59,6 @@ Zorg ervoor dat de opgegeven versie overeenkomt met de pakketversie van Communit
 >Aanbevolen wordt de meest recente versie van de Gemeenschappen bij te houden.
 >
 >Ga naar de sectie [Laatste releases](deploy-communities.md#latest-releases) om de meest recente versie te identificeren.
-
 
 ## Voorbeeld van Geweven afhankelijkheid {#maven-dependency-example}
 

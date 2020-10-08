@@ -10,9 +10,9 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: bf4e7809-8def-4647-aaa6-3ac36865511f
 translation-type: tm+mt
-source-git-commit: 4b6311cbfe11a61b74f68bf5a25ad1f5faef5358
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1231'
 ht-degree: 0%
 
 ---
@@ -20,14 +20,13 @@ ht-degree: 0%
 
 # Overzicht van revisies en revisies gebruiken (weergave) {#using-reviews-and-reviews-summary-display}
 
-De `Reviews` component is een samenstelling van [Commentaren](comments.md) en [Beoordelingscomponenten klaar voor gebruik](rating.md) .
+De `Reviews` component is een samenstelling van [Commentaren](comments.md) en [Beoordelingscomponenten](rating.md) klaar voor gebruik.
 
 De `Reviews Summary (Display)` component geeft een overzicht van een actieve of gesloten instantie van een `Reviews` component voor weergave elders op de site.
 
 >[!NOTE]
 >
 >Anonieme publicatie van een revisie wordt niet ondersteund. Site-bezoekers moeten zich registreren (lid worden) en zich aanmelden om deel te nemen. De ondertekende bezoeker kan zijn of haar revisie op elk gewenst moment bijwerken.
-
 
 ## Een revisie toevoegen aan een pagina {#adding-a-review-to-a-page}
 
@@ -75,7 +74,6 @@ Op de website worden vereiste classificaties gemarkeerd met een sterretje. Als e
 >
 >Als een item wordt ingevoerd op het **[!UICONTROL Required Ratings]** tabblad dat niet is opgegeven op het **[!UICONTROL Allowed Ratings]** tabblad, wordt het item niet opgenomen in de items waarvan een score moet worden toegekend.
 
-
 Geef onder het **[!UICONTROL Reviews]** tabblad op hoe revisies worden verwerkt.
 
 ![beoordelingen](assets/configure-review3.png)
@@ -92,7 +90,7 @@ Geef onder het **[!UICONTROL Reviews]** tabblad op hoe revisies worden verwerkt.
 
    Als deze optie is ingeschakeld, mogen bestandsbijlagen worden geüpload voor de revisie. De optie Standaard is uitgeschakeld.
 
-* **Max. bestandsgrootte **
+* **Max. bestandsgrootte**
 
    Alleen relevant als **[!UICONTROL Allow File Uploads]** is gecontroleerd. Dit veld beperkt de grootte (in bytes) van een geüpload bestand. De standaardwaarde is 10 MB.
 
@@ -169,7 +167,6 @@ Wanneer de [vereiste client-side bibliotheken](reviews-basics.md#essentials-for-
 >[!NOTE]
 >
 >Het &quot;gemiddelde&quot; stemt overeen met de stemmen voor het eerste item op de tabbladen Toegestane ratings van de te beoordelen evaluatie.
-
 
 ### Overzicht van revisies configureren (weergave) {#configuring-reviews-summary-display}
 

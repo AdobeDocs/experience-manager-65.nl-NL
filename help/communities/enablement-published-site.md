@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 26715b94-e2ea-4da7-a0e2-3e5a367ac1cd
 translation-type: tm+mt
-source-git-commit: 8738989c18c6f09452da95d0b9f2c05b0a2a1a81
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1210'
 ht-degree: 0%
@@ -43,15 +43,15 @@ Wanneer de bezoeker van de site voor het eerst op de gepubliceerde site aankomt,
 
 ## Anonieme sitebezoeker {#anonymous-site-visitor}
 
-Een anonieme sitebezoeker wordt direct de aanmeldingspagina voor deze persoonlijke communitysite voor activering aangeboden. Er is geen optie voor zelfinschrijving of aanmelden bij Facebook of Twitter.
+Een anonieme sitebezoeker wordt direct de aanmeldingspagina voor deze persoonlijke communitysite voor activering getoond. Er is geen optie voor zelfinschrijving of aanmelden bij Facebook of Twitter.
 
 Deze homepage bevat vier menu-items: `Assignments, Ski Catalog, What's New` en `Discussions`, maar geen van deze bestanden kan worden bereikt zonder u aan te melden.
 
 >[!NOTE]
 >
 >Het is mogelijk anonieme toegang tot een enablement-site te verlenen zonder bezoekers van de site toe te staan zich te registreren.
+>
 >Als een enablement-bron is ingesteld op `show in catalog` en `allow anonymous access`, kunnen anonieme sitebezoekers bronnen in de catalogus weergeven.
-
 
 ### Anonieme toegang tot JCR voorkomen {#prevent-anonymous-access-on-jcr}
 
@@ -59,7 +59,7 @@ Een bekende beperking maakt de inhoud van de site van de community toegankelijk 
 
 Voer de volgende stappen uit om de inhoud van uw site te beschermen tegen toegang door anonieme gebruikers via jcr-inhoud en json:
 
-1. Ga naar https://&lt;host>:&lt;port>/editor.html/content/site/&lt;sitename>.html in de auteur van AEM.
+1. Ga AEM auteur naar https://&lt;host>:&lt;port>/editor.html/content/site/&lt;sitename>.html.
 
    >[!NOTE]
    >
@@ -140,7 +140,7 @@ Het bericht, naast gealigneerde matiging, zijn er opties om het onderwerp op soc
 
 ![chlimage_1-439](assets/chlimage_1-439.png)
 
-### What&#39;s New {#what-s-new}
+### Wat is er nieuw?{#what-s-new}
 
 Het `What's New` menu-item is de titel op basis van de functie [](functions.md#activity-stream-function) activity stream in de structuur van deze gemeenschapssite.
 
@@ -177,12 +177,12 @@ Als u de muis boven een opmerkingskaart houdt, worden moderatiehandelingen weerg
 
 Er zijn twee manieren om toegang te krijgen tot rapporten over studenten en bronnen voor activering.
 
-Navigeer bij de auteur naar de **Gemeenschappen, de console[van](resources.md)**Middelen, waar de enablement middelen worden beheerd, en na het selecteren van een communautaire plaats, is het mogelijk om rapporten voor te produceren
+Navigeer bij de auteur naar de **Gemeenschappen, de console[van](resources.md)** Middelen, waar de enablement middelen worden beheerd, en na het selecteren van een communautaire plaats, is het mogelijk om rapporten voor te produceren
 
 * Alle actiemiddelen en leerpaden
 * Eén specifieke activeringsbron of leerpad
 
-Navigeer aan de **Gemeenschappen, de console[van](reports.md)**Rapporten, en produceert rapporten volgens:
+Navigeer aan de **Gemeenschappen, de console[van](reports.md)** Rapporten, en produceert rapporten volgens:
 
 * Toewijzingen aan actiemiddelen en leerpaden
 * Berichten naar een gemeenschapssite over een specifieke periode
@@ -209,7 +209,7 @@ Met een kleine activiteit en interactie met de Middelen bij publiceren, is het b
 * Selecteer het `Report` pictogram voor een overzicht van alle Middelen.
 * Selecteer een Middel en dan het `Report` pictogram voor een rapport over dat Middel.
 
-Het is waarschijnlijk te vroeg om gegevens van Adobe Analytics weer te geven. Het kan 1 tot 12 uur duren voordat deze gegevens worden weergegeven. Standaard SCORM-rapportage is echter al beschikbaar.
+Het is waarschijnlijk te vroeg om gegevens van Adobe Analytics weer te geven, wat 1 tot 12 uur kan duren. Standaard SCORM-rapportage is echter al beschikbaar.
 
 #### Rapport Ski-lesbronnen {#ski-lessons-resource-report}
 
@@ -251,7 +251,7 @@ Voor rapporten over weergaven:
 
 * Meld u bij de auteur aan met beheerdersrechten.
 * Ga naar **[!UICONTROL Communities]** > **[!UICONTROL Reports]** > **[!UICONTROL Views Report]**.
-* Selecteer een **Site **in het keuzemenu (selecteer`Enablement Tutorial`).
+* Selecteer een **Site** in het keuzemenu (selecteer `Enablement Tutorial`).
 
 * Selecteer **[!UICONTROL Content Type]** (selecteer `all`).
 

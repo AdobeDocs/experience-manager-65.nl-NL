@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 8b6c1697-d693-41f4-8337-f41658465107
 translation-type: tm+mt
-source-git-commit: 0270cee1970b5b092361c2f1ad4a117795465311
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+workflow-type: tm+mt
+source-wordcount: '1534'
+ht-degree: 2%
 
 ---
 
@@ -25,14 +28,13 @@ Handlebars Helpers (helpers) zijn methodes callable van de manuscripten van Hand
 
 De implementatie omvat een client-side en een server-side definitie. Ontwikkelaars kunnen ook aangepaste hulplijnen maken.
 
-De aangepaste SCF-helpers die bij AEM-gemeenschappen worden geleverd, worden gedefinieerd in de [clientbibliotheek](../../help/sites-developing/clientlibs.md):
+De aangepaste SCF-helpers die bij AEM Communities worden geleverd, worden gedefinieerd in de [clientbibliotheek](../../help/sites-developing/clientlibs.md):
 
 * `/etc/clientlibs/social/commons/scf/helpers.js`
 
 >[!NOTE]
 >
 >Zorg ervoor dat u het [nieuwste bronnenpakket](deploy-communities.md#latestfeaturepack)van de Gemeenschappen installeert.
-
 
 ## Afkorting {#abbreviate}
 
@@ -237,7 +239,7 @@ Een hulpmiddel om een component als niet bestaand middel in een malplaatje te om
 
 Hierdoor kan de bron beter programmatisch worden aangepast dan mogelijk is voor een bron die als JCR-knooppunt wordt toegevoegd. Zie Een onderdeel [](scf.md#add-or-include-a-communities-component)van een Gemeenschappen toevoegen of opnemen.
 
-Slechts een paar communautaire componenten zijn inbegrepen. Voor AEM 6.1 zijn de meegeleverde opmerkingen [opmerkingen](essentials-comments.md), [beoordeling](rating-basics.md), [beoordelingen](reviews-basics.md)en [stemming](essentials-voting.md).
+Slechts een paar communautaire componenten zijn inbegrepen. Voor AEM 6.1 zijn de meegeleverde opmerkingen [opmerkingen](essentials-comments.md), [beoordelingen](rating-basics.md), [beoordelingen](reviews-basics.md)en [stemmingen](essentials-voting.md).
 
 Deze hulp, die slechts op de server-kant aangewezen is, verstrekt functionaliteit gelijkend op [cq:omvat](../../help/sites-developing/taglib.md) voor manuscripten JSP.
 
@@ -567,7 +569,6 @@ public class FooTextHelper implements TemplateHelper<String>{
 >Een helper die voor server-kant wordt gecreeerd moet ook voor cliënt-kant worden gecreeerd.
 >
 >De component wordt re-teruggegeven op de cliënt-kant voor de aangemelde gebruiker, en als de cliënt-zijhelper niet wordt gevonden, verdwijnt de component.
-
 
 ### Aangepaste hulp aan clientzijde {#client-side-custom-helpers}
 

@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 774c2553-b629-456b-afa7-5713490f4a0a
 translation-type: tm+mt
-source-git-commit: c190d5f223c85f6c49fea1391d8a3d2baff20192
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '2168'
 ht-degree: 0%
@@ -111,7 +111,6 @@ Afhankelijk van de [instellingen](sites-console.md#user-management) van de site 
 >
 >Als een bezoeker van een site zich registreert als lid van één open communitysite, worden deze automatisch lid van andere open communitysites in dezelfde publicatieomgeving.
 
-
 ### Groeprollen publiceren {#publish-group-roles}
 
 | Indien lid van de groep... | Primaire rol |
@@ -151,7 +150,6 @@ Wanneer een communautaire functie niet wordt beveiligd (geen bevoorrechte toegew
 >[!NOTE]
 >
 >Als u een gebruiker toevoegt aan een geprivilegieerde ledengroep voor een communitysite, worden er alleen privileges toegekend aan gebruikers die ook lid zijn van dezelfde communitysite.
-
 
 ## Communautaire leden creëren {#creating-community-members}
 

@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: b4d38e45-eaa0-4ace-a885-a2e84fdfd5a1
 pagetitle: Configuring Email
 translation-type: tm+mt
-source-git-commit: 570c970c328ded828680baeb1b04ab4361a36226
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '750'
 ht-degree: 1%
@@ -31,7 +31,6 @@ De e-mailfunctie werkt standaard niet omdat hiervoor een SMTP-server en een SMTP
 >[!CAUTION]
 >
 >E-mail voor meldingen en abonnementen moet alleen op de [primaire uitgever](deploy-communities.md#primary-publisher)worden geconfigureerd.
-
 
 ## Standaardconfiguratie e-mailservice {#default-mail-service-configuration}
 

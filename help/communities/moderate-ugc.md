@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 6866d209-5789-4ef9-bc3c-d644d4fb4b1c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 391893f7cf83c018d29af14200c6f160b6d83bdd
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1517'
 ht-degree: 2%
@@ -48,7 +48,7 @@ Moderatie van UGC is nuttig voor het erkennen van positieve bijdragen en het bep
 
 ## Moderatiehandelingen {#moderation-actions}
 
-De acties die op geposte inhoud (UGC) kunnen worden uitgevoerd variëren afhankelijk van de gebruikersidentiteit en het milieu. In de onderstaande tabel wordt de volgende terminologie gebruikt om de verschillende rollen te beschrijven op basis van de gebruikersidentiteit:
+De acties die op geposte inhoud (UGC) kunnen worden uitgevoerd variëren afhankelijk van de gebruikersidentiteit en de omgeving. In de onderstaande tabel wordt de volgende terminologie gebruikt om de verschillende rollen te beschrijven op basis van de gebruikersidentiteit:
 
 * `Admin`
 
@@ -161,7 +161,7 @@ Door de actie Knippen te selecteren, wordt de inhoud gekopieerd naar een klembor
 
 ![putbackugc](assets/putbackugc.png)
 
-Op de andere locatie, wanneer inhoud op het klembord aanwezig is, wordt naast Nieuwe advertentie een knop Plakken weergegeven met een nummer dat het aantal te plakken posten aangeeft. Met de knop Plakken kunt u het klembord wissen in plaats van te plakken.
+Op de andere locatie, wanneer inhoud op het klembord aanwezig is, wordt naast Nieuwe advertentie een knop Plakken weergegeven met een nummer dat het aantal te plakken posten aangeeft. Met de knop Plakken kunt u het klembord wissen in plaats van plakken.
 
 ![pasteugisch](assets/pasteugc.png)
 
@@ -221,7 +221,7 @@ Ga als volgt te werk om de spamdetectieengine in te schakelen:
 
 1. Open [Webconsole](https://localhost:4502/system/console/configMgr)door naar `/system/console/configMgr`te gaan.
 
-1. Zoek de **AEM Communities Auto Moderation** configuratie en bewerk deze.
+1. Zoek de **AEM Communities-configuratie voor automatische modernisering** en bewerk deze.
 1. Voeg het **[!UICONTROL SpamProcess]** item toe.
 
 ![spamproces](assets/spamprocess.png)
@@ -230,8 +230,7 @@ Ga als volgt te werk om de spamdetectieengine in te schakelen:
 >
 >Spam-detectie wordt alleen geïmplementeerd voor de landinstelling Engels.
 
-
-### Zin {#sentiment}
+### Sentiment {#sentiment}
 
 De waarneming wordt berekend op basis van het aantal positieve en negatieve trefwoorden ([watchwords](#configuringwatchwords)) in een bericht (UGC).
 

@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 63abeda4-6ea1-4b45-b188-f9c6b44ca0cd
 translation-type: tm+mt
-source-git-commit: 9a4ae73c08657195da2741cccdb196bd7f7142c9
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1141'
 ht-degree: 0%
@@ -33,7 +33,6 @@ Alle componenten SCF worden uitgevoerd gebruikend SRP API, toestaand code om zon
 >[!NOTE]
 >
 >**Aangepaste componenten**: Voor gelicentieerde klanten van AEM Communities, is SRP API beschikbaar aan ontwikkelaars van douanecomponenten voor de toegang tot van UGC ongeacht de onderliggende topologie. Zie Hoofdzaak [SRP en UGC](srp-and-ugc.md).
-
 
 Zie ook:
 
@@ -68,7 +67,6 @@ Wanneer UGC aan gedeelde opslag wordt bewaard, is er één enkel geval van lidin
 >Zie Hoofdzaak [SRP en UGC](srp-and-ugc.md) voor steekproefcode en extra details.
 >
 >Zie [Toegang tot van UGC met SRP](accessing-ugc-with-srp.md) voor beste praktijken wanneer het coderen.
-
 
 ### ASRP {#asrp}
 
@@ -130,7 +128,6 @@ Schaduwknooppunten bieden een adresseerbare locatie in de opslagplaats.
 >[!CAUTION]
 >
 >Aangezien het schaduwknooppunt meerdere toepassingen heeft, impliceert de aanwezigheid van een schaduwknooppunt *niet* dat de component een NER is.
-
 
 ### Opslaglocatie {#storage-location}
 

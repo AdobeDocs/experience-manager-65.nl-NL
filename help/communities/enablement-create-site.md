@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: b9333558-6af9-46b2-9f03-3722645c69a6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 99fb808013da18ed028d59c43deab5e815169e26
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1724'
 ht-degree: 1%
@@ -123,7 +123,6 @@ Bijvoorbeeld,
 >[!NOTE]
 >
 >[De dienst](/help/communities/deploy-communities.md#tunnel-service-on-author) van de tunnel staat selectie van leden en groepen toe die slechts in publicatiemilieu bestaan.
-
 
 ![machtigingsrollen](assets/site-admin.png)
 
@@ -316,7 +315,6 @@ Aan de slag:
 >
 >Als u deze optie wilt uitschakelen, voegt u de waarde van de `sling:match` eigenschap gewoon toe met een &#39;&#39;x&#39;&#39; - `xlocalhost.4503/$` - en **Alles** opslaan.
 
-
 ![chlimage_1-364](assets/chlimage_1-364.png)
 
 #### Problemen oplossen: Fout bij opslaan van kaart {#troubleshooting-error-saving-map}
@@ -340,7 +338,6 @@ Vergeet niet de site op te **slaan** en opnieuw te **publiceren** nadat u een wi
 >[!NOTE]
 >
 >Als u niet bekend bent met AEM, bekijkt u de documentatie over [basisverwerking](/help/sites-authoring/basic-handling.md) en een [handleiding voor het ontwerpen van pagina](/help/sites-authoring/qg-page-authoring.md)&#39;s.
-
 
 ### Een catalogus toevoegen {#add-a-catalog}
 

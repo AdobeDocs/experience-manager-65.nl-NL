@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 0d462ad1-5619-4bb6-9609-bc8987c40a0c
 translation-type: tm+mt
-source-git-commit: 6ab91667ad668abf80ccf1710966169b3a187928
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '678'
 ht-degree: 0%
@@ -45,14 +45,13 @@ Voor AEM Communities:
 >
 >Als u niet bekend bent met AEM, bekijkt u de documentatie over [basisverwerking](../../help/sites-authoring/basic-handling.md) en een [handleiding voor het ontwerpen van pagina](../../help/sites-authoring/qg-page-authoring.md)&#39;s.
 
-
 ## Laatste versie van Gemeenschappen installeren {#install-latest-communities-release}
 
 Deze zelfstudie maakt een [betrokkenheidscommunity-site](overview.md#engagement-community) en is gebaseerd op AEM Communities 6.2-functiepakket versie 1.10.
 
 Ga voor de installatie van het nieuwste functiepakket naar:
 
-* [Laatste releases](deploy-communities.md#latest-releases)
+* [Latest Releases](deploy-communities.md#latest-releases)
 
 Voor een zelfstudie waarmee een community-site [voor](overview.md#enablement-community)activering wordt gemaakt, gaat u naar [Aan de slag met AEM Communities for Enablement](getting-started-enablement.md).
 
@@ -95,7 +94,7 @@ Maak een gebruiker op de *auteur* die de rol van communautaire beheerder krijgt 
    * Bijvoorbeeld gebruikersnaam &#39;admin&#39; / wachtwoord &#39;admin&#39;
 
 * Navigeer vanuit de hoofdconsole naar **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**.
-* Selecteer in het menu **Bewerken **de optie **[!UICONTROL Add User]**
+* Selecteer in het menu **Bewerken** de optie **[!UICONTROL Add User]**
 
 * In the `Create New User` dialog enter:
 
@@ -160,4 +159,4 @@ Het wordt geadviseerd, maar facultatief, om [MSRP](msrp.md) (MongoDB) als [gemee
 
 Voor instructies gaat u naar [Hoe te MongoDB instellen voor demo](demo-mongo.md).
 
-Door gebrek, resulteert de installatie van de auteur en publiceert AEM instanties in gebruiker geproduceerde inhoud (UGC) die in de opslag [van Tar](../../help/sites-deploying/platform.md) JCR wordt opgeslagen die gebruikend [JSRP](jsrp.md)wordt betreden. JSRP is geen gemeenschappelijke opslag, wat betekent UGC slechts op de instantie zichtbaar is waarop het was ingegaan. Normaal, is UGC ingegaan op een publiceer instantie en zou niet zichtbaar in het auteursmilieu zijn, resulterend in alle matigingstaken die de publiceer instantie moeten gebruiken.
+Door gebrek, resulteert de installatie van de auteur en publiceert AEM instanties in gebruiker geproduceerde inhoud (UGC) die in de opslag [van Tar](../../help/sites-deploying/platform.md) JCR wordt opgeslagen die gebruikend [JSRP](jsrp.md)wordt betreden. JSRP is geen gemeenschappelijke opslag, wat betekent UGC slechts op de instantie zichtbaar is waarop het was ingegaan. Normaal, is UGC ingegaan op een publicatie instantie en zou niet zichtbaar in het auteursmilieu zijn, resulterend in alle matigingstaken die de publicatieinstantie moeten gebruiken.

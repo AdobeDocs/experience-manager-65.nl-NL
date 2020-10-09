@@ -62,7 +62,8 @@ Vaak wordt een volledige back-up gemaakt met regelmatige tussenpozen (bijvoorbee
 >Zonder dit, is de steun potentieel nutteloos (worstcasescenario).
 >
 >[!NOTE]
-Lees de sectie [Back-upprestaties](/help/sites-deploying/configuring-performance.md#backup-performance) voor meer informatie over back-upprestaties.
+>
+>Lees de sectie [Back-upprestaties](/help/sites-deploying/configuring-performance.md#backup-performance) voor meer informatie over back-upprestaties.
 
 ### Back-up maken van de software-installatie {#backing-up-your-software-installation}
 
@@ -74,13 +75,16 @@ Hiervoor moet u een [back-up maken van de gehele opslagplaats](#backing-up-your-
 1. Maak een back-up van het gehele `<cq-installation-dir>` bestandssysteem.
 
 >[!CAUTION]
-Als u een toepassingsserver van een andere fabrikant gebruikt, kunnen extra mappen zich op een andere locatie bevinden en moeten er mogelijk ook back-ups van worden gemaakt. Zie [Hoe te om AEM met een Server](/help/sites-deploying/application-server-install.md) van de Toepassing te installeren voor informatie over het installeren van toepassingsservers. [](/content/docs/en/aem/6-3/deploy/installing.md#installing adobe Experience Manager with an application server)
+>
+>Als u een toepassingsserver van een andere fabrikant gebruikt, kunnen extra mappen zich op een andere locatie bevinden en moeten er mogelijk ook back-ups van worden gemaakt. Zie [Hoe te om AEM met een Server](/help/sites-deploying/application-server-install.md) van de Toepassing te installeren voor informatie over het installeren van toepassingsservers. [](/content/docs/en/aem/6-3/deploy/installing.md#installing adobe Experience Manager with an application server)
 
 >[!CAUTION]
-Incrementele back-up van de bestandsgegevensopslag wordt ondersteund. wanneer u incrementele back-up voor andere componenten gebruikt (zoals de Lucene-index), moet u ervoor zorgen dat verwijderde bestanden ook zijn gemarkeerd als verwijderd in de back-up.
+>
+>Incrementele back-up van de bestandsgegevensopslag wordt ondersteund. wanneer u incrementele back-up voor andere componenten gebruikt (zoals de Lucene-index), moet u ervoor zorgen dat verwijderde bestanden ook zijn gemarkeerd als verwijderd in de back-up.
 
 >[!NOTE]
-Schijfspiegeling kan ook worden gebruikt als back-upmechanisme.
+>
+>Schijfspiegeling kan ook worden gebruikt als back-upmechanisme.
 
 ### Back-up maken van uw opslagplaats {#backing-up-your-repository}
 
@@ -132,7 +136,8 @@ Ga als volgt te werk om versies van een website te wissen:
 1. Klik op **Leegmaken** om het proces te starten.
 
 >[!CAUTION]
-Opgeloste knooppunten kunnen niet worden hersteld zonder de opslagplaats te herstellen. Zorg voor uw configuratie, dus raden we u aan altijd een droge run uit te voeren voordat u gaat leegmaken.
+>
+>Opgeloste knooppunten kunnen niet worden hersteld zonder de opslagplaats te herstellen. Zorg voor uw configuratie, dus raden we u aan altijd een droge run uit te voeren voordat u gaat leegmaken.
 
 ### De console analyseren {#analyzing-the-console}
 
@@ -180,7 +185,8 @@ De omwenteling van het dossier van het logboek verwijst naar het proces dat de g
 * Eerdere logbestanden worden niet verwijderd. Het is dus uw verantwoordelijkheid om oude logbestanden regelmatig te wissen om het schijfgebruik te beperken.
 
 >[!NOTE]
-Als u uw AEM-installatie upgradet, ziet u dat bestaande logbestanden die niet meer door AEM worden gebruikt, op de schijf blijven staan. U kunt ze zonder risico verwijderen. Alle nieuwe logitems worden in de nieuwe logbestanden geschreven.
+>
+>Als u uw AEM-installatie upgradet, ziet u dat bestaande logbestanden die niet meer door AEM worden gebruikt, op de schijf blijven staan. U kunt ze zonder risico verwijderen. Alle nieuwe logitems worden in de nieuwe logbestanden geschreven.
 
 ### De logbestanden zoeken {#finding-the-log-files}
 
@@ -223,7 +229,8 @@ Verstrekt een logboek van alle verbeteringsverrichtingen die van de
 Informatie over Revisie-journalistiek.
 
 >[!NOTE]
-De logboeken van ImageServer en s7access zijn niet inbegrepen in **Download volledig **pakket dat van het **systeem/console/status-Bundlelist **pagina wordt geproduceerd. Als u [!DNL Dynamic Media] problemen ondervindt, voegt u voor ondersteuningsdoeleinden ook de registratie van ImageServer en s7access toe wanneer u contact opneemt met de Klantenondersteuning.
+>
+>De logboeken van ImageServer en s7access zijn niet inbegrepen in **Download volledig **pakket dat van het **systeem/console/status-Bundlelist **pagina wordt geproduceerd. Als u [!DNL Dynamic Media] problemen ondervindt, voegt u voor ondersteuningsdoeleinden ook de registratie van ImageServer en s7access toe wanneer u contact opneemt met de Klantenondersteuning.
 
 ### Het FOUTOPSPORINGSlogniveau activeren {#activating-the-debug-log-level}
 
@@ -232,7 +239,8 @@ Het standaardlogniveau ([Apache Sling Logging Configuration](/help/sites-deployi
 Om het debug logboekniveau voor een Logger te activeren, plaats het bezit `org.apache.sling.commons.log.level` aan zuivert in de bewaarplaats. Stel bijvoorbeeld dat u de `/libs/sling/config/org.apache.sling.commons.log.LogManager` algemene Apache Sling Logging [](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)moet configureren.
 
 >[!CAUTION]
-Verlaat het logboek bij zuivert logboekniveau niet langer dan noodzakelijk, aangezien het veel logboekingangen produceert, waarbij middelen worden verbruikt.
+>
+>Verlaat het logboek bij zuivert logboekniveau niet langer dan noodzakelijk, aangezien het veel logboekingangen produceert, waarbij middelen worden verbruikt.
 
 Een lijn in zuivert dossier begint gewoonlijk met DEBUG, dan verstrekt het logboekniveau, de installeractie en het logboekbericht. Bijvoorbeeld:
 
@@ -251,7 +259,8 @@ De logniveaus zijn als volgt:
 ### Een aangepast logbestand maken {#create-a-custom-log-file}
 
 >[!NOTE]
-Wanneer het werken met Adobe Experience Manager zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie het [Vormen OSGi](/help/sites-deploying/configuring-osgi.md) voor meer details en de geadviseerde praktijken.
+>
+>Wanneer het werken met Adobe Experience Manager zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie het [Vormen OSGi](/help/sites-deploying/configuring-osgi.md) voor meer details en de geadviseerde praktijken.
 
 In bepaalde omstandigheden wilt u mogelijk een aangepast logbestand met een ander logniveau maken. U kunt dit in de repository doen door:
 
@@ -266,7 +275,8 @@ In bepaalde omstandigheden wilt u mogelijk een aangepast logbestand met een ande
 
    * Type: `sling:OsgiConfig`
    >[!NOTE]
-   Hoewel het geen technische eis is, is het raadzaam `<*identifier*>` uniek te maken.
+   >
+   >Hoewel het geen technische eis is, is het raadzaam `<*identifier*>` uniek te maken.
 
 1. Stel de volgende eigenschappen in voor dit knooppunt:
 
@@ -301,33 +311,38 @@ In bepaalde omstandigheden wilt u mogelijk een aangepast logbestand met een ande
 
          `{0,date,dd.MM.yyyy HH:mm:ss.SSS} *{4}* [{2}] {3} {5}`
    >[!NOTE]
-   `org.apache.sling.commons.log.pattern` ondersteunt maximaal zes argumenten.
+   >
+   >`org.apache.sling.commons.log.pattern` ondersteunt maximaal zes argumenten.
 
    >{0} The timestamp of type `java.util.Date`{1} the log marker{2} the name of the current thread{3} the name of the logger{4} the log level{5} the log message
 
    >Als de logboekvraag een `Throwable` stapelspoor omvat wordt toegevoegd aan het bericht.
 
    >[!CAUTION]
-   org.apache.sling.commons.log.names moet een waarde hebben.
+   >
+   >org.apache.sling.commons.log.names moet een waarde hebben.
 
    >[!NOTE]
-   Logschrijfpaden zijn relatief ten opzichte van de `crx-quickstart` locatie.
-   Daarom wordt een logbestand opgegeven als:
-   `logs/thelog.log`
+   >
+   >Logschrijfpaden zijn relatief ten opzichte van de `crx-quickstart` locatie.
+   >Daarom wordt een logbestand opgegeven als:
+   >`logs/thelog.log`
 
    >schrijft naar:
-   `` ` ` `<*cq-installation-dir*>/``crx-quickstart/logs/thelog.log&quot;.
-   En een logbestand dat is opgegeven als:
-   `../logs/thelog.log`
+   >`` ` ` `<*cq-installation-dir*>/``crx-quickstart/logs/thelog.log&quot;.
+   >En een logbestand dat is opgegeven als:
+   >`../logs/thelog.log`
 
    >schrijft naar een map:
-   ` <*cq-installation-dir*>/logs/`
+   >` <*cq-installation-dir*>/logs/`
+
 &quot;(d.w.z. naast ` `&lt;*cq-installation-dir*>/`crx-quickstart/`)
 
 1. Deze stap is alleen nodig wanneer een nieuwe schrijver is vereist (dat wil zeggen met een andere configuratie dan de standaardschrijver).
 
    >[!CAUTION]
-   Een nieuwe configuratie van de schrijver van het Registreren wordt slechts vereist wanneer het bestaande gebrek niet geschikt is.
+   >
+   >Een nieuwe configuratie van de schrijver van het Registreren wordt slechts vereist wanneer het bestaande gebrek niet geschikt is.
 
    >Als geen expliciete Schrijver wordt gevormd zal het systeem automatisch een impliciete Schrijver produceren die op het gebrek wordt gebaseerd.
 
@@ -339,7 +354,8 @@ In bepaalde omstandigheden wilt u mogelijk een aangepast logbestand met een ande
 
    * Type: `sling:OsgiConfig`
    >[!NOTE]
-   Hoewel het geen technische eis is, is het raadzaam `<*identifier*>` uniek te maken.
+   >
+   >Hoewel het geen technische eis is, is het raadzaam `<*identifier*>` uniek te maken.
 
    Stel de volgende eigenschappen in voor dit knooppunt:
 
@@ -365,9 +381,10 @@ In bepaalde omstandigheden wilt u mogelijk een aangepast logbestand met een ande
 
          Waarde: specificeren zoals vereist om de omwenteling van het dossier door grootte/datum te controleren; bijvoorbeeld: `'.'yyyy-MM-dd`
    >[!NOTE]
-   `org.apache.sling.commons.log.file.size` Hiermee bepaalt u de rotatie van het logbestand door een van de volgende instellingen in te stellen:
-   * een maximale bestandsgrootte
-   * een datum-/tijdschema
+   >
+   >`org.apache.sling.commons.log.file.size` Hiermee bepaalt u de rotatie van het logbestand door een van de volgende instellingen in te stellen:
+   >* een maximale bestandsgrootte
+   >* een datum-/tijdschema
 
    om aan te geven wanneer een nieuw bestand wordt gemaakt (en de naam van het bestaande bestand wordt gewijzigd volgens het naampatroon).
    * Een formaatlimiet kan met een getal worden opgegeven. Als er geen grootteindicator is opgegeven, wordt deze gebruikt als het aantal bytes. U kunt ook een van de grootteindicatoren toevoegen - `KB`, `MB`of `GB` (hoofdlettergebruik wordt genegeerd).
@@ -455,10 +472,11 @@ Om een replicatieagent te controleren:
    * **Indien nodig opnieuw proberen** afdwingen voor alle wachtrij-items.
 
    >[!CAUTION]
-   Gebruik de koppeling &quot;Verbinding testen&quot; niet voor het selectievakje Reverse Replication Outbox op een publicatie-instantie.
-   Als een replicatietest voor een Postbus rij wordt uitgevoerd, om het even welke punten die ouder zijn dan de testreplicatie zullen met elke omgekeerde replicatie opnieuw worden verwerkt.
-   Als dergelijke items al in een wachtrij staan, kunt u ze vinden met de volgende JCR-query voor XPath en moet u ze verwijderen.
-   `/jcr:root/var/replication/outbox//*[@cq:repActionType='TEST']`
+   >
+   >Gebruik de koppeling &quot;Verbinding testen&quot; niet voor het selectievakje Reverse Replication Outbox op een publicatie-instantie.
+   >Als een replicatietest voor een Postbus rij wordt uitgevoerd, om het even welke punten die ouder zijn dan de testreplicatie zullen met elke omgekeerde replicatie opnieuw worden verwerkt.
+   >Als dergelijke items al in een wachtrij staan, kunt u ze vinden met de volgende JCR-query voor XPath en moet u ze verwijderen.
+   >`/jcr:root/var/replication/outbox//*[@cq:repActionType='TEST']`
 
 Opnieuw kunt u een oplossing ontwikkelen om alle replicatieagenten (onder `/etc/replication/author` of `/etc/replication/publish`) te ontdekken, dan het statuut van de agent (, `enabled`) en de onderliggende rij ( `disabled`, `active`, `idle``blocked`) te controleren.
 
@@ -469,7 +487,8 @@ Opnieuw kunt u een oplossing ontwikkelen om alle replicatieagenten (onder `/etc/
 Methoden die worden gebruikt bij het verzamelen van informatie voor optimalisatie kunnen ook worden gebruikt voor doorlopende bewaking.
 
 >[!NOTE]
-Ook kunnen specifieke [configuraties die beschikbaar zijn om de prestaties](/help/sites-deploying/configuring-performance.md#configuring-for-performance) te verbeteren, worden gecontroleerd.
+>
+>Ook kunnen specifieke [configuraties die beschikbaar zijn om de prestaties](/help/sites-deploying/configuring-performance.md#configuring-for-performance) te verbeteren, worden gecontroleerd.
 
 Hieronder worden gemeenschappelijke prestatieproblemen opgesomd die zich voordoen, samen met voorstellen voor het opsporen en bestrijden van deze problemen.
 
@@ -854,7 +873,8 @@ Sinds JDK 1.6 `jvisualvm` is de gereedschapsopdracht beschikbaar. Nadat u JDK 1.
 1. Start uw AEM-instantie.
 
    >[!NOTE]
-   Als u Java 5 gebruikt, kunt u het `-Dcom.sun.management.jmxremote` argument toevoegen aan de Java-opdrachtregel waarmee uw JVM wordt gestart. JMX is standaard ingeschakeld in Java 6.
+   >
+   >Als u Java 5 gebruikt, kunt u het `-Dcom.sun.management.jmxremote` argument toevoegen aan de Java-opdrachtregel waarmee uw JVM wordt gestart. JMX is standaard ingeschakeld in Java 6.
 
 1. Voer een van beide uit:
 
@@ -1018,11 +1038,12 @@ Herhaal de bovenstaande procedure voor uw publicatieexemplaar.
 Hieronder volgt een lijst met suggesties voor het controleren of er bepaalde prestatieproblemen optreden. De lijst is (helaas) niet volledig.
 
 >[!NOTE]
-Zie ook de volgende artikelen voor meer informatie:
-* [Draad-dumpen](https://helpx.adobe.com/experience-manager/kb/TakeThreadDump.html)
-* [Geheugenproblemen analyseren](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html)
-* [Analyseren met ingebouwde analyse](https://helpx.adobe.com/experience-manager/kb/AnalyzeUsingBuiltInProfiler.html)
-* [Langzame en geblokkeerde processen analyseren](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
+>
+>Zie ook de volgende artikelen voor meer informatie:
+>* [Draad-dumpen](https://helpx.adobe.com/experience-manager/kb/TakeThreadDump.html)
+>* [Geheugenproblemen analyseren](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html)
+>* [Analyseren met ingebouwde analyse](https://helpx.adobe.com/experience-manager/kb/AnalyzeUsingBuiltInProfiler.html)
+>* [Langzame en geblokkeerde processen analyseren](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
 
 
 
@@ -1115,5 +1136,6 @@ Of JConsole:
 Zo kunt u zien hoeveel geheugen wordt gebruikt, welke GC-algoritmen worden gebruikt, hoe lang het duurt om te werken en welk effect dit heeft op de prestaties van uw toepassing. Zonder dit, is het stemmen enkel &quot;willekeurig het draaien knopen&quot;.
 
 >[!NOTE]
-Voor de VM van Oracle is er ook informatie op:
-[https://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html)
+>
+>Voor de VM van Oracle is er ook informatie op:
+>[https://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html)

@@ -70,6 +70,7 @@ Op auteur, om tot de console van de Configuratie van de Opslag toegang te hebben
       >[!NOTE]
       >
       >De standaardopslagconfiguratie wordt nu opgeslagen in conf-pad(`/conf/global/settings/community/srpc/defaultconfiguration`) in plaats van enz.-pad (`/etc/socialconfig/srpc/defaultconfiguration`). U wordt aangeraden de [migratiestappen](#zerodt-migration-steps) te volgen om de standaardprocedures naar behoren te laten werken.
+
    ![dsrp-config](assets/dsrp-config.png)
 
 * Selecteer **[!UICONTROL Database Storage Resource Provider (DSRP)]**

@@ -3,10 +3,10 @@ title: Digital Rights Management van activa
 description: Leer hoe u de status van verlopen van middelen en informatie over gelicentieerde middelen beheert in [!DNL Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 97d3edf155ddeabf3f39139c9079621c3627820b
 workflow-type: tm+mt
-source-wordcount: '1347'
-ht-degree: 6%
+source-wordcount: '1322'
+ht-degree: 5%
 
 ---
 
@@ -20,10 +20,6 @@ Digitale middelen zijn vaak gekoppeld aan een licentie die de gebruiksvoorwaarde
 Vervaldatum van activa is een effectieve manier om licentievereisten voor activa af te dwingen. Het zorgt ervoor dat het gepubliceerde element niet gepubliceerd wordt wanneer het vervalt, wat de mogelijkheid van schending van de licentie afsluit. Een gebruiker zonder beheerdersmachtigingen kan een verlopen middel niet bewerken, kopiëren, verplaatsen, publiceren en downloaden.
 
 U kunt de vervalstatus van een middel in de [!DNL Assets] console in zowel de kaart als lijstmeningen bekijken.
-
-![expired_flag_card](assets/expired_flag_card.png)
-
-*Afbeelding: In de kaartweergave geeft een markering op de kaart aan dat het element is verlopen.*
 
 ![expired_flag_list](assets/expired_flag_list.png)
 
@@ -40,17 +36,11 @@ U kunt de vervalstatus van een element weergeven in de [!UICONTROL Timeline] lin
 U kunt de vervalstatus van activa in de **[!UICONTROL References]** spoorstaaf ook bekijken. Het beheert activa vervalstatussen en verhoudingen tussen samengestelde activa en referenced subassets, inzamelingen, en projecten.
 
 1. Navigeer naar het element waarvan u de verwijzing naar webpagina&#39;s en samengestelde elementen wilt weergeven.
-1. Selecteer het element en klik op het [!DNL Experience Manager] logo.
-
-1. Kies een optie in het **[!UICONTROL References]** menu.
-
-   ![chlimage_1-146](assets/chlimage_1-146.png)
-
-   Voor verlopen activa, toont de spoorstaaf References de vervalstatus **[!UICONTROL Asset is Expired]** bij de bovenkant.
+1. Selecteer het element en open het in **[!UICONTROL References]** linkerspoor. Voor verlopen activa, toont de [!UICONTROL References] spoorstaaf de vervalstatus **[!UICONTROL Asset is Expired]** bij de bovenkant.
 
    ![chlimage_1-147](assets/chlimage_1-147.png)
 
-   Als het element is verlopen, wordt de status weergegeven in de verwijzingstag **[!UICONTROL Asset has Expired Sub-Assets]**.
+   Als de activa verlopen subactiva zijn, toont de [!UICONTROL References] spoorstaaf de status **[!UICONTROL Asset has Expired Sub-Assets]**.
 
    ![chlimage_1-148](assets/chlimage_1-148.png)
 
@@ -61,17 +51,11 @@ In het deelvenster Zoeken kunt u zoeken naar verlopen elementen, waaronder verlo
 1. Klik in de [!DNL Assets] **[!UICONTROL Search]** console op de werkbalk om het vak Onderzoek weer te geven.
 
 1. Met de curseur in het vakje van het Onderzoek, druk de Enter sleutel om de pagina van onderzoeksresultaten te tonen.
-
-   ![chlimage_1-150](assets/chlimage_1-150.png)
-
-1. Klik op het [!DNL Experience Manager] logo om het zoekvenster weer te geven.
-1. Click the **[!UICONTROL Expiry Status]** option to expand it.
+1. Open het zoekpaneel in de linkerspoorstaaf. Click the **[!UICONTROL Expiry Status]** option to expand it.
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
 
-1. Choose **[!UICONTROL Expired]**. De verlopen elementen worden weergegeven in zoekresultaten.
-
-   ![chlimage_1-153](assets/chlimage_1-153.png)
+1. Choose **[!UICONTROL Expired]**. Alleen de verlopen elementen worden weergegeven nadat de zoekresultaten zijn gefilterd.
 
 Wanneer u de **[!UICONTROL Expired]** optie kiest, worden in de [!DNL Assets] console alleen de verlopen elementen en subelementen weergegeven waarnaar wordt verwezen door samengestelde elementen. De samengestelde elementen die verwijzen naar verlopen subelementen worden niet direct weergegeven nadat de subelementen verlopen zijn. In plaats daarvan, worden zij getoond nadat [!DNL Experience Manager] ontdekt dat zij verlopen subassets de volgende tijd van de planner in werking stellen van verwijzingen voorzien.
 
@@ -84,9 +68,7 @@ To enable the [!DNL Assets] console to display the referencing compound assets a
 1. Open [!DNL Experience Manager] Configuration Manager.
 1. Choose **[!UICONTROL Adobe CQ DAM Expiry Notification]**. Standaard **[!UICONTROL Time based Scheduler]** is deze optie geselecteerd. Hiermee wordt een taak gepland om op een bepaald moment te controleren of een element verlopen subelementen heeft. Nadat de taak is voltooid, worden elementen waarvan de subelementen zijn verlopen en waarnaar wordt verwezen, weergegeven als verlopen in de zoekresultaten.
 
-   ![chlimage_1-154](assets/chlimage_1-154.png)
-
-1. Als u de taak periodiek wilt uitvoeren, wist u het veld **[!UICONTROL Time Based Scheduler Rule]** en wijzigt u de tijd in seconden in het veld **[!UICONTROL Periodic Scheduler]**. Bijvoorbeeld bij de voorbeeldexpressie &#39;0 0 0 &amp;ast; &amp;ast; ?&#39; wordt de taak om 00 uur gestart.
+1. Als u de taak periodiek wilt uitvoeren, wist u het veld **[!UICONTROL Time Based Scheduler Rule]** en wijzigt u de tijd in seconden in het veld **[!UICONTROL Periodic Scheduler]**. De voorbeeldexpressie `0 0 0 &ast; &ast; ?` activeert de taak bijvoorbeeld op 00 uur.
 1. Selecteer **[!UICONTROL send email]** om e-mails te ontvangen wanneer een middel verloopt.
 
    >[!NOTE]
@@ -102,9 +84,6 @@ To enable the [!DNL Assets] console to display the referencing compound assets a
 De [!DNL Assets] console kan verschillende statussen voor elementen weergeven. Afhankelijk van de huidige status van een bepaald element wordt in de kaartweergave een label weergegeven dat de status beschrijft, bijvoorbeeld Verlopen, Gepubliceerd, Goedgekeurd, Afgewezen enzovoort.
 
 1. Selecteer een element in de [!DNL Assets] gebruikersinterface.
-
-   ![chlimage_1-155](assets/chlimage_1-155.png)
-
 1. Klik op **[!UICONTROL Publish]** op de werkbalk. Als u **Publiceren** niet ziet op de werkbalk, klikt u **[!UICONTROL More]** op de werkbalk en zoekt u de optie **[!UICONTROL Publish]**![ Publicatieoptie](assets/do-not-localize/publish-globe.png) .
 1. Kies een optie in het **[!UICONTROL Publish]** menu en sluit het bevestigingsvenster.
 1. Sluit de selectiemodus. De publicatiestatus voor het element wordt onder aan de elementminiatuur weergegeven in de kaartweergave. In de lijstmening, toont de Gepubliceerde kolom de tijd toen de activa werd gepubliceerd.

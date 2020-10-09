@@ -3,9 +3,9 @@ title: Elementsjablonen
 description: Meer informatie over Asset-sjablonen [!DNL Adobe Experience Manager Assets] en over het gebruik van asset templates om marketingmateriaal te maken.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: f9f745369ba0fe242dea1e5a5e5af0b8263b1ec0
 workflow-type: tm+mt
-source-wordcount: '1514'
+source-wordcount: '1503'
 ht-degree: 0%
 
 ---
@@ -50,17 +50,11 @@ Overweeg een scenario waarin u digitaal afdrukbaar materiaal wilt maken, zoals b
    ![chlimage_1-102](assets/chlimage_1-307.png)
 
 1. Een of meer INDD-sjablonen vooraf uploaden naar en beschikbaar hebben [!DNL Experience Manager] . Kies een sjabloon voor de brochure en klik op **[!UICONTROL Next]**.
-
-   ![chlimage_1-103](assets/chlimage_1-308.png)
-
 1. Geef een naam en een optionele beschrijving voor de brochure op.
 
    ![chlimage_1-104](assets/chlimage_1-309.png)
 
 1. (Optioneel) Klik op een of meer tags voor de brochure **[!UICONTROL Tags]** en selecteer deze. Klik **[!UICONTROL Confirm]** om uw selectie te bevestigen.
-
-   ![chlimage_1-106](assets/chlimage_1-310.png)
-
 1. Klik op **[!UICONTROL Create]**. Een dialoogvenster bevestigt dat er een nieuwe brochure wordt gemaakt. Klik **[!UICONTROL Open]** om de brochure te openen in de bewerkingsmodus.
 
    <!--![chlimage_1-106](assets/.png) -->
@@ -92,8 +86,6 @@ U kunt direct nadat u het hebt gemaakt, een onderpand bewerken. U kunt het besta
 
    De bewerkbare tekst wordt rechts weergegeven. Een veld dat bewerkbaar is in [!DNL Experience Manager Assets]de sjabloon kan alleen worden bewerkt als het desbetreffende veld in de sjabloon is gelabeld [!DNL InDesign]. Met andere woorden, ze moeten worden gemarkeerd als bewerkbaar in [!DNL InDesign].
 
-   ![chlimage_1-110](assets/chlimage_1-315.png)
-
    >[!NOTE]
    >
    >Zorg ervoor dat uw [!DNL Experience Manager] implementatie is geïntegreerd met een toepassing [!DNL InDesign Server] waarmee u gegevens uit de [!DNL Experience Manager Assets] [!DNL InDesign] sjabloon kunt extraheren en ter beschikking kunt stellen voor bewerking. Zie Experience Manager Assets [integreren met InDesign Server](/help/assets/indesign.md)voor meer informatie.
@@ -106,11 +98,7 @@ U kunt direct nadat u het hebt gemaakt, een onderpand bewerken. U kunt het besta
 
 1. Klik **[!UICONTROL Preview]** om een voorvertoning van de tekstwijzigingen weer te geven.
 
-   ![weergavewijzigingen](assets/view-changes.png)
-
-1. Als u een afbeelding wilt omwisselen, klikt u op de knop **[!UICONTROL Asset Finder]**.
-
-   ![chlimage_1-113](assets/chlimage_1-318.png)
+1. Als u een afbeelding wilt wisselen, klikt u op **[!UICONTROL Asset Finder]** chlimage_1-113 ![](assets/chlimage_1-318.png).
 
 1. Selecteer het afbeeldingsveld in de lijst met bewerkbare velden en sleep een gewenste afbeelding van de elementkiezer naar het bewerkbare veld.
 
@@ -118,15 +106,10 @@ U kunt direct nadat u het hebt gemaakt, een onderpand bewerken. U kunt het besta
 
    U kunt ook naar afbeeldingen zoeken met behulp van trefwoorden, tags en op basis van hun publicatiestatus. U kunt door de [!DNL Experience Manager Assets] gegevensopslagruimte bladeren en naar de locatie van de gewenste afbeelding navigeren.
 
-   ![chlimage_1-114](assets/chlimage_1-320.png)
+   ![chlimage_1-115](assets/chlimage_1-320.png)
 
 1. Klik **[!UICONTROL Preview]** om een voorvertoning van de afbeelding weer te geven.
-
-   ![weergavewijzigingen](assets/view-changes.png)
-
 1. Als u een specifieke pagina in een pagina-element wilt bewerken dat uit meerdere pagina&#39;s bestaat, gebruikt u de paginanavigator onderaan.
-
-   ![paginanavigator](assets/page-navigator.png)
 
 1. Klik op **[!UICONTROL Preview]** de werkbalk om een voorvertoning van alle wijzigingen weer te geven. Klik **[!UICONTROL Done]** om de bewerkingswijzigingen in het onderpand op te slaan.
 
@@ -175,11 +158,7 @@ U kunt direct nadat u het hebt gemaakt, een onderpand bewerken. U kunt het besta
 
    U kunt door de [!DNL Experience Manager Assets] bewaarplaats of inzamelingen doorbladeren, en aan de plaats van de gewenste malplaatjes navigeren en dan hen selecteren om samen te voegen.
 
-   ![chlimage_1-124](assets/chlimage_1-329.png)
-
    U kunt verschillende filters toepassen om de gewenste sjablonen te doorzoeken. U kunt bijvoorbeeld naar sjablonen zoeken op basis van het bestandstype of de tags.
-
-   ![chlimage_1-125](assets/chlimage_1-330.png)
 
 1. Klik op **[!UICONTROL Next]** op de werkbalk.
 1. Wijzig de rangschikking van de sjablonen desgewenst in het **[!UICONTROL Preview & Reorder]** scherm en bekijk een voorvertoning van de selectie van de sjablonen die u wilt samenvoegen. Then, click **[!UICONTROL Next]** from the toolbar.

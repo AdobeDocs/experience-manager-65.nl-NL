@@ -3,10 +3,10 @@ title: Zoeken in facetten om zoekresultaten te filteren
 description: Hoe u zoekfacetten maakt, wijzigt en gebruikt in [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: f9f745369ba0fe242dea1e5a5e5af0b8263b1ec0
 workflow-type: tm+mt
-source-wordcount: '2344'
-ht-degree: 14%
+source-wordcount: '2288'
+ht-degree: 15%
 
 ---
 
@@ -42,19 +42,13 @@ Voor zoekopdrachten in volledige tekst voegt u de voorspelling toe aan het formu
    >1. Sla de wijzigingen op.
 
 
-1. In the Edit Search Forms page, drag a predicate from the **[!UICONTROL Select Predicate]** tab to the main pane. Sleep bijvoorbeeld **[!UICONTROL Property Predicate]**.
+1. In the [!UICONTROL Edit Search Forms] page, drag a predicate from the **[!UICONTROL Select Predicate]** tab to the main pane. Sleep bijvoorbeeld **[!UICONTROL Property Predicate]**.
 
    ![Druk op een voorvertoning en verplaats deze om de zoekfilters aan te passen](assets/drag_predicate.png)
 
    *Afbeelding: Druk op en verplaats een voorspelling om de zoekfilters aan te passen.*
 
-1. Voer op het tabblad Instellingen een veldlabel, plaatsaanduidingstekst en beschrijving voor de voorspelling in. Geef een geldige naam op voor de eigenschap metadata die u aan de voorspelling wilt koppelen.
-
-   Het koptekstlabel op het tabblad Instellingen geeft het type van de geselecteerde voorspelling aan.
-
-   ![Gebruik het tabblad Instellingen om de vereiste opties voor een voorspelling op te geven](assets/settings.png)
-
-   Gebruik het tabblad Instellingen om de vereiste opties voor een voorspelling op te geven
+1. Voer op het [!UICONTROL Settings] tabblad een veldlabel, plaatsaanduidingstekst en beschrijving voor de voorspelling in. Geef een geldige naam op voor de eigenschap metadata die u aan de voorspelling wilt koppelen. Het koptekstlabel op het [!UICONTROL Settings] tabblad geeft het type van de geselecteerde voorspelling aan.
 
 1. Geef in het veld **[!UICONTROL Property Name]** een geldige naam op voor de metadata-eigenschap die u aan het predicaat wilt koppelen. Dit is de naam op basis waarvan de zoekopdracht wordt uitgevoerd. Voer bijvoorbeeld `jcr:content/metadata/dc:description` of `./jcr:content/metadata/dc:description` in.
 
@@ -154,17 +148,9 @@ Met de tagvoorspelling kunt u op tags gebaseerde zoekopdrachten naar elementen u
 1. Configureer de padeigenschap Root-tags van deze voorspelling om verschillende tags in de lijst Tags te vullen.
 1. Selecteer **[!UICONTROL Show match all tags option]** om te zoeken naar assets die alle tags bevatten die u opgeeft.
 
-   ![Typische instellingen van labels voorspellen](assets/tags_predicate.png)
-
-   Typische instellingen van labels voorspellen
-
 1. Voer in het **[!UICONTROL Description]** veld een optionele beschrijving in en klik op **[!UICONTROL Done]**.
 1. Navigeer naar het deelvenster Zoeken. The **[!UICONTROL Tags]** predicate is added to the Search panel.
 1. Geef tags op op basis waarvan u de elementen wilt zoeken of een selectie wilt maken in de lijst met suggesties.
-
-   ![Door de Experience Manager opgegeven suggestie bij het typen van de naam van de tag](assets/tag-suggestion.png)
-
-   *Afbeelding: Door de Experience Manager opgegeven suggestie bij het typen van de naam van de tag.*
 
 1. Select **[!UICONTROL Match all]** to search for matches that include all tags that you specify.
 

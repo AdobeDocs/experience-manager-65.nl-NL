@@ -8,9 +8,9 @@ contentOwner: jsyal
 discoiquuid: a3bb5695-6593-413d-9c2f-4c164e663b15
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1207cd54d9d605b7fbf606393cd33b5c19b603f4
+source-git-commit: 117208c634613559bb13556e12f094add70006e2
 workflow-type: tm+mt
-source-wordcount: '1354'
+source-wordcount: '1356'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Met binair-geen toegelaten wijze, bevatten de verdeelde inhoudspakketten verwijz
 #### Hoe laat ik binair-minder distributie toe? {#how-do-i-enable-binary-less-distribution}
 
 Om binair-minder distributie toe te laten, stel met een gedeelde blob opslag op.
-Controleer het `useBinaryReferences` bezit in de configuratie OSGI met fabriek PID ( `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`*)*die uw agent gebruikt.
+Controleer het `useBinaryReferences` bezit in de configuratie OSGI met fabriek PID ( `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`*)* die uw agent gebruikt.
 
 #### Hoe kan ik de foutenmeldingen aanpassen terwijl het navigeren van paginahiërarchie in AEM plaatsenconsole? {#how-can-i-customize-the-error-messages-while-navigating-page-hierarchy-in-aem-sites-console}
 
@@ -118,7 +118,7 @@ Als tussenoplossing kunt u de component ook handmatig uitschakelen via de gebrui
 
 #### Hoe te om de Inzichten van Activa met AEM 6.5 instantie te vormen? {#how-to-configure-asset-insights-with-aem-instance}
 
-Voor het instellen en configureren van Asset Insights voor Experience Manager die wordt geïmplementeerd via Adobe Activation (DTM), raadpleegt u [Asset Insights instellen met AEM Assets](https://helpx.adobe.com/experience-manager/kt/assets/using/asset-insights-tutorial-setup.html).
+Als u Asset Insights voor Experience Manager via Adobe Activation (DTM) wilt instellen en configureren, kunt u bekijken hoe u Asset Insights voor AEM Assets [kunt](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html)instellen.
 
 #### Hoe te om admin consoles aan te passen? {#how-to-customize-admin-consoles}
 

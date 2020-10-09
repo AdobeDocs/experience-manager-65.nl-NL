@@ -3,9 +3,9 @@ title: Vertaalprojecten maken
 description: Leer hoe u vertaalprojecten kunt maken in [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: f9f745369ba0fe242dea1e5a5e5af0b8263b1ec0
 workflow-type: tm+mt
-source-wordcount: '1762'
+source-wordcount: '1749'
 ht-degree: 10%
 
 ---
@@ -47,8 +47,6 @@ Use the **[!UICONTROL Create structure only]** option to create a target folder 
 1. Klik **[!UICONTROL Create & Translate]** onderaan.
 
 1. From the **[!UICONTROL Target Languages]** list, select the language for which you want to create a folder structure.
-
-   ![doeltaal selecteren](assets/target-language.png)
 
 1. Kies in de lijst **[!UICONTROL Project]** de optie **[!UICONTROL Create structure only]**.
 
@@ -132,8 +130,6 @@ Als u deze optie gebruikt, wordt de vertaalworkflow uitgevoerd voor elementen di
 
 1. Selecteer in de lijst **[!UICONTROL Target Languages]** de taal of talen waarvoor u een mappenstructuur wilt maken.
 
-   ![doeltaal selecteren](assets/target-language.png)
-
 1. Selecteer in de lijst **[!UICONTROL Project]** de optie **[!UICONTROL Add to existing translation project]** om de vertaalworkflow in de map uit te voeren.
 
    ![chlimage_1-77](assets/chlimage_1-77.png)
@@ -143,8 +139,6 @@ Als u deze optie gebruikt, wordt de vertaalworkflow uitgevoerd voor elementen di
    >Als u de **[!UICONTROL Add to existing translation project]** optie kiest, wordt uw vertaalproject alleen aan een reeds bestaand project toegevoegd als uw projectinstellingen exact overeenkomen met de instellingen van het reeds bestaande project. Anders wordt een nieuw project gemaakt.
 
 1. Selecteer in de **[!UICONTROL Existing translation project]** lijst een project waaraan u het element voor vertaling wilt toevoegen.
-
-   ![chlimage_1-70](assets/chlimage_1-78.png)
 
 1. Klik op **[!UICONTROL Create]**. De te vertalen assets worden toegevoegd aan de doelmap. De bijgewerkte map wordt weergegeven onder de sectie **[!UICONTROL Language Copies]**.
 
@@ -174,8 +168,6 @@ Als u deze optie gebruikt, wordt de vertaalworkflow uitgevoerd voor elementen di
    ![chlimage_1-81](assets/chlimage_1-81.png)
 
    Een bericht brengt het begin van de vertaalbaan op de hoogte.
-
-   ![chlimage_1-82](assets/chlimage_1-82.png)
 
 1. Als u de status van de vertaaltaak wilt weergeven, klikt u op de ellips onder aan de **[!UICONTROL Translation Job]** tegel.
 
@@ -210,8 +202,6 @@ Als u deze optie gebruikt, wordt een vertaalproject gecreeerd voor de reeks acti
 
 1. Voer in het veld **[!UICONTROL Project Title]** een titel in voor het project.
 
-   ![chlimage_1-87](assets/chlimage_1-87.png)
-
 1. Klik op **[!UICONTROL Start]**.
 1. Navigeer aan de console van Projecten. De vertaalomslag wordt gekopieerd aan de console van Projecten.
 
@@ -230,8 +220,6 @@ Als u deze optie gebruikt, wordt een vertaalproject gecreeerd voor de reeks acti
    ![chlimage_1-91](assets/chlimage_1-91.png)
 
    Een bericht brengt het begin van de vertaalbaan op de hoogte.
-
-   ![chlimage_1-92](assets/chlimage_1-92.png)
 
 1. Als u de status van de vertaaltaak wilt weergeven, klikt u op de ellips onder aan de **[!UICONTROL Translation Job]** tegel.
 
@@ -261,8 +249,6 @@ Als u deze optie gebruikt, worden de elementen toegevoegd aan een bestaand verta
    ![chlimage_1-97](assets/chlimage_1-97.png)
 
 1. Selecteer in de **[!UICONTROL Existing translation project]** lijst een project waaraan u het element voor vertaling wilt toevoegen.
-
-   ![een project selecteren](assets/select-a-project.png)
 
 1. Klik op **[!UICONTROL Start]**.
 1. Zie de stappen 9-14 van [Toevoegen aan bestaand vertaalproject](translation-projects.md#add-to-existing-translation-project) om de rest van de procedure te voltooien.

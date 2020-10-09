@@ -3,9 +3,9 @@ title: '[!DNL Adobe Experience Manager] 6.5 Opmerkingen bij de vorige release va
 description: De nota's van de versie voor [!DNL Adobe Experience Manager] 6.5 de Pakken van de Dienst.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: 359eb60c0ba3845d7aa0ca58488aa945a9f45aea
+source-git-commit: 117208c634613559bb13556e12f094add70006e2
 workflow-type: tm+mt
-source-wordcount: '11372'
+source-wordcount: '11375'
 ht-degree: 0%
 
 ---
@@ -1259,7 +1259,7 @@ De belangrijkste hooglichten voor [!DNL Experience Manager Forms] 6.5.1.0 zijn:
 
 #### Activa - opgenomen
 
-* Ondersteuning voor beheer van meerdere sites ingeschakeld voor [!DNL Experience Manager Assets]. Zie Elementen [hergebruiken met MSM voor Experience Manager Assets](https://helpx.adobe.com/experience-manager/6-5/help/assets/reuse-assets-using-msm.html)voor meer informatie. NPR-29199: Hotfix voor CQ-4259922
+* Ondersteuning voor beheer van meerdere sites ingeschakeld voor [!DNL Experience Manager Assets]. Zie Elementen [hergebruiken met MSM voor Experience Manager Assets](https://docs.adobe.com/content/help/en/experience-manager-65/assets/using/reuse-assets-using-msm.html)voor meer informatie. NPR-29199: Hotfix voor CQ-4259922
 
 #### Sites - inbegrepen
 

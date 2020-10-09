@@ -3,15 +3,15 @@ title: Metagegevens van uw digitale middelen beheren in [!DNL Adobe Experience M
 description: Leer meer over de typen metagegevens en [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] hoe u elementen automatisch kunt ordenen en verwerken op basis van hun metagegevens.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 117208c634613559bb13556e12f094add70006e2
 workflow-type: tm+mt
-source-wordcount: '1412'
+source-wordcount: '1413'
 ht-degree: 0%
 
 ---
 
 
-# Metagegevens van uw digitale middelen beheren {#managing-metadata-for-digital-assets}
+# Metagegevens van uw digitale elementen beheren {#managing-metadata-for-digital-assets}
 
 [!DNL Adobe Experience Manager Assets] bewaart meta-gegevens voor elk middel. Het maakt het gemakkelijker om activa te categoriseren en te organiseren en het helpt mensen die naar een specifiek bezit zoeken. Dankzij de mogelijkheid metagegevens te extraheren uit bestanden waarnaar geüpload wordt, kan het beheer van metagegevens worden geïntegreerd in de creatieve workflow. [!DNL Experience Manager Assets] Met de mogelijkheid om metagegevens bij uw elementen te houden en te beheren, kunt u elementen automatisch ordenen en verwerken op basis van hun metagegevens.
 
@@ -219,7 +219,7 @@ De toepassingsspecifieke metagegevens bevatten technische en beschrijvende metag
 ### Afdrukspecifieke metagegevens {#print-specific-metadata}
 
 * PDF en PDF/X - Adobe PDF en toepassingen van derden.
-* PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.prismstandard.org).
+* PRISM - [Publishing Requirements for Industry Standard Metadata](https://www.idealliance.org/prism-metadata/).
 * XMP - [!DNL Extensible Metadata Platform].
 * `xmpPG` - XMP metagegevens voor gepagineerde tekst.
 

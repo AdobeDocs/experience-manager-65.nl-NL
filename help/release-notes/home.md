@@ -1,16 +1,16 @@
 ---
-title: AEM 6.5 Opmerkingen bij de release
+title: Opmerkingen bij de release Adobe Experience Manager 6.5
 description: De AEM Release-notities bevatten belangrijke informatie over de nieuwste versie van AEM, waaronder nieuwe, ondersteunde platforms, vervangen en verwijderde functies en bekende problemen.
 translation-type: tm+mt
-source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
+source-git-commit: 90ab21c4a25fa1a2dcdf04af61fd30982cae7aae
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '374'
 ht-degree: 13%
 
 ---
 
 
-# AEM 6.5 Opmerkingen bij de release
+# Opmerkingen bij de release Adobe Experience Manager 6.5
 
 De AEM Release-notities bevatten belangrijke informatie over de nieuwste versie van AEM, waaronder nieuwe, ondersteunde platforms, vervangen en verwijderde functies en bekende problemen.
 
@@ -40,7 +40,7 @@ De AEM Release-notities bevatten belangrijke informatie over de nieuwste versie 
 ## Belangrijke AEM
 
 * [Zelfstudies AEM](https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html)
-* [Dispatcher-gebruikershandleiding](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)
+* [Gebruikershandleiding voor verzending](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)
 * [HTML-gebruikershandleiding](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
 * [Gebruikershandleiding voor kerncomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)

@@ -3,7 +3,7 @@ title: Aanbevolen werkwijzen voor [!DNL Assets] toezicht op de werkgelegenheid
 description: Aanbevolen procedures om de omgeving en prestaties van [!DNL Adobe Experience Manager] uw implementatie te controleren nadat deze is geïmplementeerd.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 117208c634613559bb13556e12f094add70006e2
 workflow-type: tm+mt
 source-wordcount: '1671'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Doorgaans [!DNL Experience Manager Assets] kan dit op twee manieren worden gecon
 
 U zou levende controle tijdens de prestaties testende fase van uw ontwikkeling of tijdens high-load situaties moeten uitvoeren om de prestatieskenmerken van uw milieu te begrijpen. Doorgaans moet live controle worden uitgevoerd met behulp van een reeks gereedschappen. Hier volgen enkele aanbevelingen:
 
-* [Visuele VM](https://visualvm.java.net/): Met Visuele VM kunt u gedetailleerde Java VM-informatie weergeven, zoals CPU-gebruik en Java-geheugengebruik. Bovendien laat het u code steekproef en evalueren die op een plaatsing loopt.
+* [Visuele VM](https://visualvm.github.io/): Met Visuele VM kunt u gedetailleerde Java VM-informatie weergeven, zoals CPU-gebruik en Java-geheugengebruik. Bovendien laat het u code steekproef en evalueren die op een plaatsing loopt.
 * [Boven](https://man7.org/linux/man-pages/man1/top.1.html): De bovenkant is een bevel van Linux dat omhoog een dashboard opent, dat gebruiksstatistieken, met inbegrip van cpu, geheugen, en gebruik IO toont. Het biedt een overzicht op hoog niveau van wat er op een instantie gebeurt.
 * [Bovenkant](https://hisham.hm/htop/): Htop is een interactieve procesviewer. Deze biedt naast wat Top kan bieden, een gedetailleerd CPU- en geheugengebruik. De bovenkant kan op de meeste systemen van Linux worden geïnstalleerd gebruikend `yum install htop` of `apt-get install htop`.
 

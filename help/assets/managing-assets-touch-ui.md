@@ -4,9 +4,9 @@ description: Leer de taken voor middelenbeheer, zoals het uploaden, downloaden, 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 179af622d9655d52f3d3462f77baaf3dc9310fd8
+source-git-commit: f9f745369ba0fe242dea1e5a5e5af0b8263b1ec0
 workflow-type: tm+mt
-source-wordcount: '9382'
+source-wordcount: '9334'
 ht-degree: 3%
 
 ---
@@ -508,9 +508,6 @@ Als u elementen verplaatst door ze te slepen, wordt de [!UICONTROL Move Asset] w
 
 1. Klik op het element om de bijbehorende pagina te openen.
 1. Selecteer in de Experience Manager-interface een optie in de **[!UICONTROL Renditions]** lijst.
-
-   ![Linkerrails naar open menu en optie Vertoningen selecteren](assets/renditions_menu.png)
-
 1. Geef in het **[!UICONTROL Renditions]** deelvenster de lijst weer met uitvoeringen die voor het element zijn gegenereerd.
 
    ![Deelvenster Uitvoeringen op de pagina Informatie-details](assets/renditions_panel.png)
@@ -666,10 +663,6 @@ Met de **[!UICONTROL Select]** optie kunt u elementen weergeven, doorbladeren en
 
 In de lijstweergave en de kolomweergave wordt de **[!UICONTROL Select]** optie weergegeven wanneer u de aanwijzer boven de elementminiatuur plaatst.
 
-![Elementen selecteren in de lijstweergave](assets/select_quick_in_listview.png)
-
-![Elementen selecteren in kolomweergave](assets/select_quick_in_columnview.png)
-
 In de kaartweergave wordt de **[!UICONTROL Select]** optie als een snelle actie weergegeven.
 
 ![Snelle actie selecteren in de weergave Kaart](assets/select_quick_action.png)
@@ -690,9 +683,7 @@ Met de bewerkingsgereedschappen in de [!DNL Assets] interface kunt u kleine bewe
 
    * Selecteer het element en klik op **[!UICONTROL Edit]** de werkbalk.
    * Klik op **[!UICONTROL Edit]** de optie die in de kaartweergave op een element wordt weergegeven.
-   * Klik op **[!UICONTROL Edit]** op de werkbalk.
-
-   ![Optie Bewerken in werkbalk](assets/do-not-localize/edit_icon.png)
+   * Klik op **[!UICONTROL Edit]** de werkbalk ![Bewerken op de werkbalk](assets/do-not-localize/edit_icon.png).
 
 1. Als u de afbeelding wilt uitsnijden, klikt u op **[!UICONTROL Crop]** Optie om een afbeelding ![](assets/do-not-localize/crop.png)uit te snijden.
 
@@ -751,9 +742,7 @@ Videoannotaties worden alleen ondersteund in browsers met HTML5-compatibele vide
 1. Klik op de **[!UICONTROL Annotate]** optie van een van de volgende opties:
 
    * [Snelle acties](/help/assets/managing-assets-touch-ui.md#quick-actions)
-   * Vanuit de werkbalk nadat u het element hebt geselecteerd of naar de elementpagina bent genavigeerd
-
-   ![Notitie, optie](assets/annotate-option.png)
+   * Selecteer het element op de werkbalk of navigeer naar de elementpagina.
 
 1. Voeg een opmerking toe in het vak **[!UICONTROL Comment]** onder aan de tijdlijn. U kunt ook een gebied in de afbeelding markeren en een annotatie toevoegen in het dialoogvenster **[!UICONTROL Add Annotation]**.
 
@@ -768,8 +757,6 @@ Videoannotaties worden alleen ondersteund in browsers met HTML5-compatibele vide
    >Voor een niet-beheerdersgebruiker, verschijnen de suggesties slechts als de gebruiker leestemmingen bij `/home` weg in CRXDE heeft.
 
 1. Nadat u de annotatie hebt toegevoegd, klikt u **[!UICONTROL Add]** om deze op te slaan. Een kennisgeving voor de aantekening wordt verzonden naar Aaron.
-
-   ![Knop Toevoegen om een aantekening op te slaan](assets/annotation-add.png)
 
    >[!NOTE]
    >
@@ -799,12 +786,7 @@ Videoannotaties worden alleen ondersteund in browsers met HTML5-compatibele vide
 1. Als u opgeslagen annotaties voor een element wilt weergeven, navigeert u naar de locatie van het element en opent u de elementpagina voor het element.
 
 1. In the Experience Manager interface, choose **[!UICONTROL Timeline]**.
-
-   ![Tijdlijnoptie beschikbaar in Experience Manager](assets/view-timeline.png)
-
 1. Selecteer in de lijst **[!UICONTROL Show All]** in de tijdlijn de optie **[!UICONTROL Comments]** om de resultaten te filteren op basis van annotaties.
-
-   ![Alle lijsten weergeven in tijdlijn](assets/timeline-show-all-option.png)
 
    Klik op een opmerking in het **[!UICONTROL Timeline]** deelvenster om de bijbehorende annotatie in de afbeelding weer te geven.
 
@@ -833,8 +815,6 @@ Als u de annotaties en de revisiestatus wilt afdrukken, klikt u op de instructie
    Als u alleen de revisiestatus wilt afdrukken, selecteert u deze in de tijdlijn.
 
 1. Klik op **[!UICONTROL Print]** op de werkbalk.
-
-   ![Afdrukken, optie in werkbalk](assets/do-not-localize/print.png)
 
 1. Kies in het dialoogvenster Afdrukken de positie waar u de annotaties/revisiestatus wilt weergeven in de PDF. Als u bijvoorbeeld wilt dat de annotaties/status rechtsboven op de pagina met de afgedrukte afbeelding worden afgedrukt, gebruikt u de instelling **Linksboven** . Deze optie is standaard geselecteerd.
 
@@ -923,8 +903,6 @@ U kunt automatische versioning ook inschakelen via een workflow. Wanneer u een v
 
    * Klik **[!UICONTROL Show All]** in [!UICONTROL Timeline].
    * Klik op **[!UICONTROL Versions]**. Alle versies die voor een element zijn gemaakt, worden weergegeven in de linkerzijbalk.
-
-      ![ Selecteer de optie Versies in de tijdlijn](assets/versions_option.png)
 
    * Selecteer een specifieke versie van het element en klik op **[!UICONTROL Preview Version]**.
 

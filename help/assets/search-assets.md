@@ -4,7 +4,7 @@ description: Leer hoe u de vereiste elementen [!DNL Adobe Experience Manager] in
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: c94220ca6e31716b6de4dac99dfb98ac1ba1faff
+source-git-commit: 421f18bef4b0dbcad74e91316eead70036c9750e
 workflow-type: tm+mt
 source-wordcount: '5904'
 ht-degree: 4%
@@ -436,7 +436,7 @@ U kunt de gezochte elementen en hun vertoningen downloaden enkel aangezien u reg
 
 Het is mogelijk om bulkupdates uit te voeren naar de algemene metagegevensvelden van meerdere elementen. Selecteer een of meer elementen in de zoekresultaten. Klik op **[!UICONTROL Properties]** de werkbalk en werk de metagegevens naar wens bij. Klik **[!UICONTROL Save and Close]** wanneer gereed. De eerder bestaande metagegevens in de bijgewerkte velden worden overschreven.
 
-Voor de middelen die in één enkele omslag of een inzameling beschikbaar zijn, is het gemakkelijker om de meta-gegevens in bulk [bij te](/help/assets/managing-multiple-assets.md) werken zonder de onderzoeksfunctionaliteit te gebruiken. Voor de elementen die beschikbaar zijn in verschillende mappen of voldoen aan een algemeen criterium, is het sneller om de metagegevens bulksgewijs bij te werken door te zoeken.
+Voor de middelen die in één enkele omslag of een inzameling beschikbaar zijn, is het gemakkelijker om de meta-gegevens in bulk [bij te](/help/assets/metadata.md) werken zonder de onderzoeksfunctionaliteit te gebruiken. Voor de elementen die beschikbaar zijn in verschillende mappen of voldoen aan een algemeen criterium, is het sneller om de metagegevens bulksgewijs bij te werken door te zoeken.
 
 ### Slimme verzamelingen {#collections-1}
 

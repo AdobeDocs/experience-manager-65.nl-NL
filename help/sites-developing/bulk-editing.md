@@ -10,7 +10,7 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: fe61ee4b-51b6-4a6f-91d8-1c02b29cc1db
 translation-type: tm+mt
-source-git-commit: d14688b17f47a2b1c11833eac10413d58276f6be
+source-git-commit: b08149e00c418319ebacec71c56472ad4e8e1089
 workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 2%
@@ -36,13 +36,14 @@ Vanwege de mogelijkheid van verschillende waarden zijn pagina-eigenschappen niet
 >* Niet beschikbaar in de klassieke gebruikersinterface.
 >* Niet beschikbaar voor pagina&#39;s in een live kopie.
 >* Alleen beschikbaar voor pagina&#39;s met hetzelfde brontype.
+
 >
 
 
 
 >[!NOTE]
 >
->Bulkbewerking is ook beschikbaar voor Elementen. Het is erg vergelijkbaar, maar op een paar punten verschilt het. Zie Eigenschappen van meerdere elementen [](/help/assets/managing-multiple-assets.md) bewerken voor meer informatie. Met de [Schema-editor](/help/assets/metadata-schemas.md)kunt u de velden in de editor Metagegevens voor opsommingstekens aanpassen.
+>Bulkbewerking is ook beschikbaar voor Elementen. Het is erg vergelijkbaar, maar op een paar punten verschilt het. Zie Eigenschappen van meerdere elementen [](/help/assets/metadata.md) bewerken voor meer informatie. Met de [Schema-editor](/help/assets/metadata-schemas.md)kunt u de velden in de editor Metagegevens voor opsommingstekens aanpassen.
 
 ## Veld inschakelen {#enabling-a-field}
 
@@ -56,13 +57,14 @@ Vanwege de mogelijkheid van verschillende waarden zijn pagina-eigenschappen niet
 >* `/libs/granite/ui/components/foundation/form/datepicker`
 >* `/libs/granite/ui/components/foundation/form/pathbrowser`
 >* `/libs/granite/ui/components/foundation/form/checkbox`
+
 >
 
 
 
 Velden worden ingeschakeld in de paginacomponent (*niet* in de sjabloon):
 
-1. Met CRXDE Lite (of een gelijkwaardige methode) opent u uw paginacomponent.
+1. Met CRXDE Lite (of een gelijkwaardige methode) opent u de pagina-component.
 
    Bijvoorbeeld: `/apps/core/wcm/components/page/v1/page`
 
@@ -76,6 +78,7 @@ Velden worden ingeschakeld in de paginacomponent (*niet* in de sjabloon):
    * **Naam**: `allowBulkEdit`
    * **Type**: `Boolean`
    * **Waarde**: `true`
+
    Bijvoorbeeld voor de standaard pagina [stichting component](/help/sites-authoring/default-components-foundation.md):
 
    `/libs/foundation/components/page`

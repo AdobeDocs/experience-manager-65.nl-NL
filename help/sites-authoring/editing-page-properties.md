@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 1e9dd0d7-209a-4989-b66b-bca0d04b437a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
+source-git-commit: ea39bb870fd20f7e30afc2c4f5bceb2fe6427848
 workflow-type: tm+mt
 source-wordcount: '1781'
 ht-degree: 4%
@@ -310,7 +310,7 @@ Vanuit de **Sites**-console kunt u meerdere pagina&#39;s selecteren en vervolgen
 
 >[!NOTE]
 >
->Bulkbewerking van eigenschappen is ook beschikbaar voor Elementen. Het is erg vergelijkbaar, maar op een paar punten verschilt het. Zie Eigenschappen van meerdere elementen [](/help/assets/managing-multiple-assets.md) bewerken voor meer informatie.
+>Bulkbewerking van eigenschappen is ook beschikbaar voor Elementen. Het is erg vergelijkbaar, maar op een paar punten verschilt het. Zie Eigenschappen van meerdere elementen [](/help/assets/metadata.md) bewerken voor meer informatie.
 >
 >Er is ook de [Bulk-editor](/help/sites-administering/bulk-editor.md), waarmee u met GQL (Google Query Language) naar inhoud op meerdere pagina&#39;s kunt zoeken en de inhoud vervolgens rechtstreeks in de bulkeditor kunt bewerken voordat u de wijzigingen op de pagina&#39;s die beginnen opslaat.
 

@@ -6,10 +6,10 @@ user-guide-title: Hulplijn voor middelen
 breadcrumb-title: Assets Guide
 user-guide-description: Create, manage, deliver, and optimize digital assets.
 translation-type: tm+mt
-source-git-commit: 45d7f741660bd8dd31cd454c034f562fc5394621
+source-git-commit: 2cccbdea594bb9ba61e8c0f7884b724aab10b5da
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 37%
+source-wordcount: '619'
+ht-degree: 36%
 
 ---
 
@@ -23,6 +23,7 @@ ht-degree: 37%
 + Experience Manager-elementen gebruiken {#using}
    + [De ervaring van de homepage van activa](assets-home-page.md)
    + [Digitale middelen zoeken](search-assets.md)
+   + [Werken met metagegevens van elementen](metadata.md)
    + [Meertalige activa](multilingual-assets.md)
    + [ [!DNL Adobe Stock] Activa in activa](aem-assets-adobe-stock.md)
    + [3D-elementen voorvertonen](previewing-3d-assets.md)
@@ -91,28 +92,24 @@ ht-degree: 37%
 + Elementen beheren {#administer}
    + [Ondersteunde bestandsindelingen](assets-formats.md)
    + [Facetten doorzoeken](search-facets.md)
-   + [Metagegevens voor elementen beheren](metadata.md)
+   + [Metagegevensconcepten begrijpen](metadata-concepts.md)
+   + [Configuratie van de metagegevensfunctionaliteit](metadata-config.md)
    + [Terugverwijzing naar vertoningen XMP](xmp-writeback.md)
    + [Delen van koppelingen van middelen](link-sharing.md)
    + [Rapporten over assets](asset-reports.md)
    + [Verbeterde slimme tags](enhanced-smart-tags.md)
    + [Profielen voor het verwerken van metagegevens, afbeeldingen en video&#39;s](processing-profiles.md)
-   + [Trapsgewijze metadata](cascading-metadata.md)
    + [Elementeditorpagina&#39;s maken en configureren](assets-finder-editor.md)
    + [Hulplijn voor middelengrootte](assets-sizing-guide.md)
-   + [Referentie metagegevensschema](meta-ref.md)
    + [Aanbevolen procedures voor het vertalen van middelen](best-practices-for-translating-assets-efficiently.md)
    + [Richtlijnen voor afstelling van middelenprestaties](performance-tuning-guidelines.md)
-   + [Metadata toevoegen of bewerken](meta-edit.md)
    + [Richtlijnen voor migratie van middelen](assets-migration-guide.md)
-   + [XMP-metadata](xmp.md)
    + [Elementennetwerkoverwegingen](assets-network-considerations.md)
    + [Middelen en MediaLibrary](medialibrary.md)
    + [PDF-rasterizer gebruiken](aem-pdf-rasterizer.md)
    + [Uploadbeperkingen configureren](configuring-asset-upload-restrictions.md)
    + [Integratie van Experience Manager en Creative Cloud](aem-cc-integration-best-practices.md)
    + [Integreren met InDesign Server](indesign.md)
-   + [Metadataprofielen](metadata-profiles.md)
    + [Digital Rights Management in activa](drm.md)
    + [Demo-pakket gebruiken voor elementinzichten](touch-ui-using-demo-package-for-asset-insights.md)
    + [Aanbevolen werkwijzen voor bestandsindelingen voor elementen](assets-file-format-best-practices.md)
@@ -120,14 +117,11 @@ ht-degree: 37%
    + [Camera Raw ondersteuning](camera-raw.md)
    + [MIME-type van activa detecteren met Apache Tika](detect-asset-mime-type-with-tika.md)
    + [Afbeeldingstransformatiebibliotheek](imaging-transcoding-library.md)
-   + [Ondersteuning voor IPTC-metagegevens](iptc-support.md)
    + [Metagegevensschema&#39;s](metadata-schemas.md)
    + [Meerdere paden voor verzamelingen, fragmenten en fragmentsjablonen](multi-tenancy.md)
    + [Watermerk uw elementen](watermarking.md)
-   + [Bulkmetagegevens importeren en exporteren](metadata-import-export.md)
    + [Elementsjablonen](asset-templates.md)
    + [Aanbevolen procedures voor het delen van mappen met Creative Cloud](aem-cc-folder-sharing-best-practices.md)
-   + [Metadataschema van map](folder-metadata-schema.md)
    + [Slimme tags beheren](managing-smart-tags.md)
 + Brand Portal {#brandportal}
    + [ Assets configureren met Brand Portal ](configure-aem-assets-with-brand-portal.md)
@@ -147,7 +141,6 @@ ht-degree: 37%
 + Elementen beheren {#managing}
    + [Digitale middelen beheren](managing-assets-touch-ui.md)
    + [Verzamelingen beheren](managing-collections-touch-ui.md)
-   + [Meerdere elementen en verzamelingen beheren](managing-multiple-assets.md)
    + [Tags configureren met behulp van Smart Content Service](config-smart-tagging.md)
    + [Dubbele detectie inschakelen](duplicate-detection.md)
    + [Digitale elementen ordenen](organize-assets.md)

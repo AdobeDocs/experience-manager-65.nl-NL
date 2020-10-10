@@ -4,7 +4,7 @@ description: Leer taken om verzamelingen met middelen te beheren, zoals verzamel
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: cedefb58919d7d215040e72b4cc41159161938a8
 workflow-type: tm+mt
 source-wordcount: '2022'
 ht-degree: 10%
@@ -137,7 +137,7 @@ Slimme verzamelingen worden gemaakt door een zoekopdracht op te slaan, zodat u d
 1. Klik **[!UICONTROL Overwrite]** om de originele slimme verzameling te vervangen door de bewerkte verzameling. U kunt ook selecteren **[!UICONTROL Save As]** om de bewerkte verzameling afzonderlijk op te slaan.
 1. Klik in het bevestigingsdialoogvenster **[!UICONTROL Save]** om het proces te voltooien.
 
-## Metagegevens van verzamelingen weergeven en bewerken {#viewing-and-editing-collection-metadata}
+## Metagegevens van verzamelingen weergeven en bewerken {#view-edit-collection-metadata}
 
 De meta-gegevens van de inzameling omvat gegevens over de inzameling, met inbegrip van om het even welke markeringen die worden toegevoegd.
 

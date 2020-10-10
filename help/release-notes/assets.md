@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release van [!DNL Adobe Experience Manager Assets] 6.5.
 description: De nieuwe mogelijkheden en verbeteringen van [!DNL Adobe Experience Manager] 6.5 [!DNL Assets].
 translation-type: tm+mt
-source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
+source-git-commit: 2cccbdea594bb9ba61e8c0f7884b724aab10b5da
 workflow-type: tm+mt
 source-wordcount: '901'
 ht-degree: 2%
@@ -68,7 +68,7 @@ In grote ondernemingen kan de infrastructuur die nodig is om websites te maken, 
 
 [!DNL Dynamic Media] biedt verbeterde creatie en levering van geavanceerde media in [!DNL Experience Manager Assets] de aanjager van geavanceerde ervaringen die overweldigend en gepersonaliseerd zijn. Door één master middel van hoge kwaliteit te uploaden en onze geavanceerde cloudrendering en viewers te gebruiken, kunt u elke combinatie van uitvoeringen ter plekke aanbieden ter ondersteuning van de mediabeleid van uw organisatie.
 
-Zie Opmerkingen bij de release van [!DNL Dynamic Media] Dynamic Media voor meer informatie over nieuwe [functies](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/release-notes/s7rn2017.html).
+Zie Opmerkingen bij de release [!DNL Dynamic Media] Dynamische media voor meer informatie over nieuwe [functies](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/release-notes/s7rn2017.html).
 
 ### 360 video-ondersteuning {#video-support}
 
@@ -80,7 +80,7 @@ U kunt de miniaturen voor uw video-elementen nu aanpassen met frames uit de vide
 
 ### Verbeteringen voor toegankelijkheid {#accessibility-enhancements}
 
-[!DNL Dynamic Media] viewers bieden nu ondersteuning voor verbeterde toegankelijkheidsfuncties, zoals apparaatondersteuning, schermlezers en Alt-tekst. Zie Opmerkingen bij de release van [Dynamic Media viewers voor meer informatie](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html).
+[!DNL Dynamic Media] viewers bieden nu ondersteuning voor verbeterde toegankelijkheidsfuncties, zoals apparaatondersteuning, schermlezers en Alt-tekst. Zie Opmerkingen bij de release van [Dynamic Media-viewers voor meer informatie](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html).
 
 ## Verbeterde zoekervaring {#experience-enhancement-for-searching}
 
@@ -100,9 +100,9 @@ U kunt nu alle geladen elementen in een map selecteren of vanuit een zoekresulta
 
 ## Verbeteringen in metagegevens {#metadata-enhancements}
 
-[!DNL Assets] Hiermee kunt u metagegevensschema&#39;s maken voor middelenmappen, waarmee de lay-out en de metagegevens worden gedefinieerd die op pagina&#39;s met mapeigenschappen worden weergegeven. U kunt nu een schema voor mapmetagegevens toewijzen aan een bestaande map of bij het maken van een nieuwe map. Zie [Metagegevensschema](/help/assets/folder-metadata-schema.md)van map voor meer informatie.
+[!DNL Assets] Hiermee kunt u metagegevensschema&#39;s maken voor middelenmappen, waarmee de lay-out en de metagegevens worden gedefinieerd die op pagina&#39;s met mapeigenschappen worden weergegeven. U kunt nu een schema voor mapmetagegevens toewijzen aan een bestaande map of bij het maken van een nieuwe map. Zie [Metagegevensschema](/help/assets/metadata-config.md#folder-metadata-schema)van map voor meer informatie.
 
-Als u trapsgewijze metagegevens opgeeft, kunnen de opties tijdens de runtime uit een JSON-bestand worden geladen, bijvoorbeeld in plaats van handmatig in het formulier te typen. Zie [Trapsgewijze metagegevens](/help/assets/cascading-metadata.md)voor meer informatie.
+Als u trapsgewijze metagegevens opgeeft, kunnen de opties tijdens de runtime uit een JSON-bestand worden geladen, bijvoorbeeld in plaats van handmatig in het formulier te typen. Zie [trapsgewijze metagegevens](/help/assets/metadata-schemas.md#cascading-metadata)voor meer informatie.
 
 ## Verbeteringen rapporteren {#reporting-enhancements}
 

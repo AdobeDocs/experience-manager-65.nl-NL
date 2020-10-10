@@ -1,9 +1,9 @@
 ---
 title: Uw digitale middelen organiseren
-description: Organiseer uw digitale middelen, beelden, dossiers, omslagen, etc. gebruikend Experience Manager.
+description: Organiseer uw digitale elementen, afbeeldingen, bestanden, mappen enzovoort met behulp van Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: bf49f515adb75bf4c0d50a53d0eaa7bb915389a9
 workflow-type: tm+mt
 source-wordcount: '780'
 ht-degree: 0%
@@ -46,7 +46,7 @@ Met tags kunt u als metagegevens eenvoudig zoeken in elementen, verzamelingen ma
 Raadpleeg de volgende artikelen voor meer informatie:
 
 * [Tags in Experience Manager](/help/sites-authoring/tags.md)
-* [Metagegevens van elementen bewerken](meta-edit.md)
+* [Metagegevens van elementen bewerken](metadata.md)
 * [Verbeterde slimme tags in elementen](enhanced-smart-tags.md)
 
 ## Indelen als verzamelingen {#organize-as-collections}
@@ -69,7 +69,7 @@ Als u het gebruik van metagegevens, de naamgeving van bestanden en de mapstructu
 >[!MORELIKETHIS]
 >
 >* [Profielen voor het verwerken van metagegevens, afbeeldingen en video](processing-profiles.md)&#39;s.
->* [Metadataprofielen](metadata-profiles.md).
+>* [Metadataprofielen](/help/assets/metadata-config.md#metadata-profiles).
 >* [Videoprofielen](video-profiles.md).
->* [Afbeeldingsprofielen](image-profiles.md)Dynamic Media.
+>* [Dynamische mediaafbeeldingsprofielen](image-profiles.md).
 

@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: b555bf0c-44cb-4fbf-abc4-15971663904d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 37b3a553758ecd249a08e0d7d6e29becdcb018c2
 workflow-type: tm+mt
 source-wordcount: '1317'
 ht-degree: 1%
@@ -23,7 +23,7 @@ Een profiel is een recept voor welke opties u kunt toepassen op middelen die naa
 
 Deze regels kunnen het toevoegen van metagegevens, het slim uitsnijden van afbeeldingen of het instellen van videocoderingsprofielen omvatten. In AEM kunt u drie typen profielen maken, die in detail worden besproken op de volgende koppelingen:
 
-* [Metadataprofielen](/help/assets/metadata-profiles.md)
+* [Metadataprofielen](/help/assets/metadata-config.md#metadata-profiles)
 * [Afbeeldingsprofielen](/help/assets/image-profiles.md)
 * [Videoprofielen](/help/assets/video-profiles.md)
 

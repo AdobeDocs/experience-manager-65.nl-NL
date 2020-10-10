@@ -1,49 +1,49 @@
 ---
 title: Asynchrone taken
-description: Adobe Experience Manager optimaliseert prestaties door sommige middel-intensieve taken asynchroon te voltooien.
+description: Adobe Experience Manager optimaliseert prestaties door sommige resource-intensieve taken asynchroon te voltooien.
 translation-type: tm+mt
-source-git-commit: 198593fa456780816216a63790fea8cca469f8c7
+source-git-commit: c3f85314740c4e9ca8ed0c9a724b49ff4276616a
 workflow-type: tm+mt
-source-wordcount: '801'
-ht-degree: 3%
+source-wordcount: '800'
+ht-degree: 98%
 
 ---
 
 
 # Asynchrone bewerkingen {#asynchronous-operations}
 
-Om negatieve gevolgen voor de prestaties te verminderen, verwerkt Adobe Experience Manager bepaalde langlopende en middelintensieve bewerkingen asynchroon. Asynchrone verwerking omvat het onderzoeken van veelvoudige banen en het runnen van hen op een periodieke manier afhankelijk van de beschikbaarheid van systeemmiddelen.
+Om negatieve gevolgen voor de prestaties te verminderen verwerkt Adobe Experience Manager bepaalde langlopende en resource-intensieve bewerkingen asynchroon. Bij asynchrone verwerking worden meervoudige taken in wachtrijen geplaatst en serieel uitgevoerd, afhankelijk van de beschikbaarheid van systeembronnen.
 
 Deze bewerkingen omvatten:
 
-* Veel elementen verwijderen
-* Veel elementen of elementen met veel verwijzingen verplaatsen
-* Metagegevens van elementen bulksgewijs exporteren/importeren
-* Middelen ophalen die boven de ingestelde drempelwaarde liggen, vanaf een Experience Manager-implementatie op afstand
-* Pagina&#39;s verplaatsen
+* Veel assets verwijderen
+* Veel assets verplaatsen, of assets met veel verwijzingen verplaatsen
+* Metadata van assets bulksgewijs exporteren/importeren
+* Assets die boven de ingestelde drempelwaarde liggen, importeren vanaf een externe Experience Manager-implementatie
+* Pagina’s verplaatsen
 * Actieve exemplaren uitrollen
 
-U kunt de status van asynchrone taken weergeven vanaf het **[!UICONTROL Async Job Status]** dashboard op **Algemene navigatie** -> **Gereedschappen** -> **Bewerkingen** -> **Taken**.
+U kunt de status van asynchrone taken weergeven vanaf het **[!UICONTROL Async Job Status]**-dashboard via **Algemene navigatie** -> **Tools** -> **Bewerkingen** -> **Taken**.
 
 >[!NOTE]
 >
->asynchrone taken worden standaard parallel uitgevoerd. Als *`n`* het aantal CPU-cores is, kunnen *`n/2`* taken standaard parallel worden uitgevoerd. Als u aangepaste instellingen voor de taakwachtrij wilt gebruiken, wijzigt u de configuratie Verplaatsen en Uitvoeren van de **[!UICONTROL Async Operation Default Queue Config]** bewerkingspagina en de configuratie **** Async vanuit de webconsole.
+>Asynchrone taken worden standaard parallel uitgevoerd. Als *`n`* het aantal CPU-cores is, kunnen standaard *`n/2`* taken parallel worden uitgevoerd. Als u aangepaste instellingen voor de taakwachtrij wilt gebruiken, wijzigt u **[!UICONTROL Async Operation Default Queue Config]** en de **Async Operation Page Move and Rollout Config** vanaf de webconsole.
 >
->Voor meer informatie, zie [rijconfiguraties](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#queue-configurations).
+>Voor meer informatie raadpleegt u [wachtrijconfiguraties](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#queue-configurations).
 
-## De status van asynchrone bewerkingen controleren {#monitor-the-status-of-asynchronous-operations}
+## De status van asynchrone bewerkingen bewaken {#monitor-the-status-of-asynchronous-operations}
 
-Wanneer AEM een verrichting asynchroon verwerkt, ontvangt u een bericht in uw [inbox](/help/sites-authoring/inbox.md) en via e-mail (als toegelaten).
+Wanneer AEM een bewerking asynchroon verwerkt, ontvangt u een bericht in uw [inbox](/help/sites-authoring/inbox.md) en via e-mail (mits ingeschakeld).
 
-Navigeer naar de **[!UICONTROL Async Job Status]** pagina om de status van de asynchrone bewerkingen in detail weer te geven.
+Navigeer naar de pagina **[!UICONTROL Async Job Status]** om de status van de asynchrone bewerkingen in detail weer te geven.
 
-1. Klik in de Experience Manager-interface **[!UICONTROL Operations]** > **[!UICONTROL Jobs]**.
+1. Klik in de Experience Manager-interface op **[!UICONTROL Operations]** > **[!UICONTROL Jobs]**.
 
-1. Controleer in de **[!UICONTROL Async Job Status]** pagina de details van de bewerkingen.
+1. Controleer op de pagina **[!UICONTROL Async Job Status]** de details van de bewerkingen.
 
    ![Status en details van asynchrone bewerkingen](assets/async-operation-status.png)
 
-   Zie de waarde in de **[!UICONTROL Status]** kolom voor informatie over de voortgang van een bepaalde bewerking. Afhankelijk van de voortgang wordt een van de volgende statussen weergegeven:
+   Bekijk de waarde in de kolom **[!UICONTROL Status]** voor informatie over de voortgang van een bepaalde bewerking. Afhankelijk van de voortgang wordt een van de volgende statussen weergegeven:
 
    * **[!UICONTROL Active]**: De bewerking wordt verwerkt
 
@@ -53,11 +53,11 @@ Navigeer naar de **[!UICONTROL Async Job Status]** pagina om de status van de as
 
    * **[!UICONTROL Scheduled]**: De bewerking is gepland voor verwerking op een later tijdstip
 
-1. Als u een actieve bewerking wilt stoppen, selecteert u deze in de lijst en klikt u op **[!UICONTROL Stop]** de werkbalk.
+1. Als u een actieve bewerking wilt stoppen, selecteert u deze in de lijst en klikt u op de werkbalk op **[!UICONTROL Stop]**.
 
    ![stop_icon](assets/async-stop-icon.png)
 
-1. Als u meer details wilt weergeven, bijvoorbeeld een beschrijving en logboekbestanden, selecteert u de bewerking en klikt u in de werkbalk **[!UICONTROL Open]** .
+1. Als u meer details wilt weergeven, bijvoorbeeld een beschrijving en logboekbestanden, selecteert u de bewerking en klikt u op de werkbalk op **[!UICONTROL Open]**.
 
    ![open_icon](assets/async-open-icon.png)
 
@@ -65,7 +65,7 @@ Navigeer naar de **[!UICONTROL Async Job Status]** pagina om de status van de as
 
    ![job_details](assets/async-job-details.png)
 
-1. Als u de bewerking uit de lijst wilt verwijderen, selecteert u deze op de werkbalk. **[!UICONTROL Delete]** Klik op **[!UICONTROL Download]** CSV om de gegevens in een CSV-bestand te downloaden.
+1. Als u de bewerking uit de lijst wilt verwijderen, selecteert u **[!UICONTROL Delete]** op de werkbalk. Klik op **[!UICONTROL Download]** om de details naar een csv-bestand te downloaden.
 
    >[!NOTE]
    >
@@ -73,68 +73,69 @@ Navigeer naar de **[!UICONTROL Async Job Status]** pagina om de status van de as
 
 ## Voltooide taken wissen {#purging-completed-jobs}
 
-AEM voert elke dag om 10:00 een zuiveringstaak uit om voltooide asynchrone banen te schrappen die meer dan een dag oud zijn.
+AEM voert elke dag om 01:00 een opschoontaak uit om voltooide, asynchrone taken te wissen die meer dan een dag oud zijn.
 
-U kunt het schema voor de zuiveringstaak en de duur wijzigen waarvoor de details van voltooide banen worden behouden alvorens zij worden geschrapt. U kunt ook het maximumaantal voltooide taken configureren waarvoor de details op elk gewenst moment behouden blijven.
+U kunt het schema wijzigen voor de opschoontaak en hoe lang details van voltooide taken bewaard blijven voordat ze worden verwijderd. U kunt ook het maximum aantal voltooide taken configureren waarvoor de details tot een gewenst tijdstip bewaard blijven.
 
-1. Klik in de globale navigatie **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
-1. Open de **[!UICONTROL Adobe Granite Async Jobs Purge Scheduled Job]** taak.
-1. Opgeven:
-   * Het drempelaantal dagen waarna voltooide taken worden verwijderd.
-   * Het maximumaantal banen waarvoor gegevens in de geschiedenis worden bewaard.
-   * De expressie voor uitsnijden waarin moet worden aangegeven wanneer de purge moet worden uitgevoerd.
-   ![Configuratie om het leegmaken van asynchrone taken te plannen](assets/async-purge-job.png)
+1. Klik vanuit Algemene navigatie op **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
+1. Open de taak **[!UICONTROL Adobe Granite Async Jobs Purge Scheduled Job]**.
+1. Geef het volgende op:
+   * Het maximum aantal dagen waarna voltooide taken worden verwijderd.
+   * Het maximum aantal taken waarvan data in de geschiedenis worden bewaard.
+   * De cron-expressie waarmee wordt opgegeven wanneer de opschoning moet worden uitgevoerd.
+
+   ![Configuratie voor het opschonen van asynchrone taken](assets/async-purge-job.png)
 
 1. Sla de wijzigingen op.
 
 ## Asynchrone verwerking configureren {#configuring-asynchronous-processing}
 
-U kunt het drempelaantal elementen, pagina&#39;s of verwijzingen voor AEM configureren om een bepaalde bewerking asynchroon te verwerken en om e-mailmeldingen in en uit te schakelen wanneer de taken worden verwerkt.
+U kunt configureren wat het maximum aantal assets, pagina’s of verwijzingen voor AEM is om een bepaalde bewerking asynchroon te verwerken en om e-mailmeldingen over de verwerking van taken in en uit te schakelen.
 
-### Asynchrone bewerkingen voor het verwijderen van elementen configureren {#configuring-synchronous-delete-operations}
+### Asynchrone verwijderingsbewerkingen van assets configureren{#configuring-synchronous-delete-operations}
 
-Als het aantal te verwijderen elementen of mappen de drempelwaarde overschrijdt, wordt de verwijderbewerking asynchroon uitgevoerd.
+Als het aantal te verwijderen assets of mappen de drempelwaarde overschrijdt, wordt de verwijderingsbewerking asynchroon uitgevoerd.
 
-1. Klik in de globale navigatie **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
+1. Klik vanuit Algemene navigatie op **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 1. Open vanuit de webconsole de **[!UICONTROL Async Process Default Queue Configuration.]**
-1. Geef in het **[!UICONTROL Threshold number of assets]** vak het drempelaantal elementen/mappen op voor de asynchrone verwerking van verwijderingsbewerkingen.
+1. Geef in het vak **[!UICONTROL Threshold number of assets]** het drempelaantal assets/mappen op voor de asynchrone verwerking van verwijderingsbewerkingen.
 
-   ![Drempel voor verwijderen van element](assets/async-delete-threshold.png)
+   ![Drempel voor verwijdering van assets](assets/async-delete-threshold.png)
 
-1. Schakel de optie E-mailmelding **** inschakelen in om e-mailmeldingen voor deze taakstatus te ontvangen. Bijvoorbeeld succes, mislukt.
+1. Schakel de optie **E-mailmeldingen inschakelen** in om e-mailmeldingen te ontvangen voor deze taakstatus. Bijvoorbeeld geslaagd, mislukt.
 1. Sla de wijzigingen op.
 
-### Asynchrone verplaatsingsbewerkingen voor middelen configureren {#configuring-asynchronous-move-operations}
+### Asynchrone verplaatsingsbewerkingen van assets configureren{#configuring-asynchronous-move-operations}
 
-Als het aantal te verplaatsen elementen/mappen of verwijzingen het drempelnummer overschrijdt, wordt de verplaatsingsbewerking asynchroon uitgevoerd.
+Als het aantal te verplaatsen assets/mappen de drempelwaarde overschrijdt, wordt de verplaatsingsbewerking asynchroon uitgevoerd.
 
-1. Klik in de globale navigatie **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
+1. Klik vanuit Algemene navigatie op **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 1. Open vanuit de webconsole de **[!UICONTROL Async Move Operation Job Processing Configuration.]**
-1. Geef in het **[!UICONTROL Threshold number of assets/references]** vak het drempelaantal elementen/mappen of verwijzingen op voor de asynchrone verwerking van verplaatsingsbewerkingen.
+1. Geef in het vak **[!UICONTROL Threshold number of assets/references]** het drempelaantal assets/mappen of verwijzingen op voor de asynchrone verwerkings- of verplaatsingsbewerkingen.
 
-   ![Drempel voor verplaatsing van element](assets/async-move-threshold.png)
+   ![Drempel voor verplaatsing van assets](assets/async-move-threshold.png)
 
-1. Schakel de optie E-mailmelding **** inschakelen in om e-mailmeldingen voor deze taakstatus te ontvangen. Bijvoorbeeld succes, mislukt.
+1. Schakel de optie **E-mailmeldingen inschakelen** in om e-mailmeldingen te ontvangen voor deze taakstatus. Bijvoorbeeld geslaagd, mislukt.
 1. Sla de wijzigingen op.
 
-### Asynchrone bewerkingen voor verplaatsen van pagina&#39;s configureren {#configuring-asynchronous-page-move-operations}
+### Asynchrone verplaatsingsbewerkingen van pagina’s configureren{#configuring-asynchronous-page-move-operations}
 
-Als het aantal verwijzingen naar de te verplaatsen pagina(&#39;s) de drempelwaarde overschrijdt, wordt de verplaatsingsbewerking asynchroon uitgevoerd.
+Als het aantal te verplaatsen pagina’s de drempelwaarde overschrijdt, wordt de verplaatsingsbewerking asynchroon uitgevoerd.
 
-1. Klik in de globale navigatie **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
+1. Klik vanuit Algemene navigatie op **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 1. Open vanuit de webconsole de **[!UICONTROL Async Page Move Operation Job Processing Configuration.]**
-1. Geef in het **[!UICONTROL Threshold number of references]** veld het drempelaantal verwijzingen op voor asynchrone verwerking van paginaverplaatsingsbewerkingen.
+1. Geef in het veld **[!UICONTROL Threshold number of references]** het drempelaantal verwijzingen op voor asynchrone verwerking van paginaverplaatsingsbewerkingen.
 
-   ![Drempel voor verplaatsen pagina](assets/async-page-move.png)
+   ![Drempel voor verplaatsing van pagina’s](assets/async-page-move.png)
 
-1. Schakel de optie E-mailmelding **** inschakelen in om e-mailmeldingen voor deze taakstatus te ontvangen. Bijvoorbeeld succes, mislukt.
+1. Schakel de optie **E-mailmeldingen inschakelen** in om e-mailmeldingen te ontvangen voor deze taakstatus. Bijvoorbeeld geslaagd, mislukt.
 1. Sla de wijzigingen op.
 
 ### Asynchrone MSM-bewerkingen configureren {#configuring-asynchronous-msm-operations}
 
-1. Klik in de globale navigatie **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
+1. Klik vanuit Algemene navigatie op **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 1. Open vanuit de webconsole de **[!UICONTROL Async Page Move Operation Job Processing Configuration.]**
-1. Schakel de optie E-mailmelding **** inschakelen in om e-mailmeldingen voor deze taakstatus te ontvangen. Bijvoorbeeld succes, mislukt.
+1. Schakel de optie **E-mailmeldingen inschakelen** in om e-mailmeldingen te ontvangen voor deze taakstatus. Bijvoorbeeld geslaagd, mislukt.
 
    ![MSM-configuratie](assets/async-msm.png)
 
@@ -145,6 +146,7 @@ Als het aantal verwijzingen naar de te verplaatsen pagina(&#39;s) de drempelwaar
 >* [Pagina&#39;s maken en indelen](/help/sites-authoring/managing-pages.md)
 >* [Actieve kopieën maken en synchroniseren](/help/sites-administering/msm-livecopy.md)
 >* [E-mail configureren in Experience Manager](/help/sites-administering/notification.md).
->* [Metagegevens van elementen in bulk](/help/assets/metadata-import-export.md)importeren en exporteren.
->* [Gebruik Connected Assets om DAM-middelen van externe implementaties](/help/assets/use-assets-across-connected-assets-instances.md)te delen.
+>* [Metagegevens](/help/assets/metadata.md#import-metadata)van elementen importeren.
+>* [Metagegevens](/help/assets/metadata.md#export-metadata)van elementen exporteren.
+>* [Connected Assets gebruiken om DAM-assets te delen vanuit externe implementaties](/help/assets/use-assets-across-connected-assets-instances.md).
 

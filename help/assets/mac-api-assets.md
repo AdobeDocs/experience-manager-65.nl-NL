@@ -3,9 +3,9 @@ title: '[!DNL Assets] HTTP API.'
 description: Digitale elementen maken, lezen, bijwerken, verwijderen en beheren met de HTTP API in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: add8be813ce377384ee4d90600f54a1455a1ab0d
 workflow-type: tm+mt
-source-wordcount: '1660'
+source-wordcount: '1715'
 ht-degree: 0%
 
 ---
@@ -170,7 +170,7 @@ Hiermee werkt u de binaire waarde (uitvoering met de oorspronkelijke naam) van e
 
 ## Metagegevens van elementen bijwerken {#update-asset-metadata}
 
-Werkt de metagegevenseigenschappen van het element bij. Als u een eigenschap in de `dc:` naamruimte bijwerkt, werkt de API dezelfde eigenschap in de `jcr` naamruimte bij. De API synchroniseert de eigenschappen niet onder de twee naamruimten.
+Werkt de eigenschappen van de elementmetagegevens bij. Als u een eigenschap in de `dc:` naamruimte bijwerkt, werkt de API dezelfde eigenschap in de `jcr` naamruimte bij. De API synchroniseert de eigenschappen niet onder de twee naamruimten.
 
 **Verzoek**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"jcr:title":"My Asset"}}'`
 
@@ -307,3 +307,9 @@ Hiermee verwijdert u een resource (-tree) bij het opgegeven pad.
 * 200 - OK - als de map is verwijderd.
 * 412 - VOORWAARDE MISLUKT - als de wortelinzameling niet kan worden gevonden of worden betreden.
 * 500 - INTERNE SERVERFOUT - als iets anders fout gaat.
+
+## Tips en beperkingen {#tips-best-practices-limitations}
+
+* [HTTP API werkt de meta-gegevenseigenschappen](#update-asset-metadata) in `jcr` namespace bij. De gebruikersinterface van de Experience Manager werkt echter de eigenschappen van metagegevens in de `dc` naamruimte bij.
+
+* Asset API retourneert de volledige metagegevens niet. In de API zijn de naamruimten gecodeerd en worden deze alleen geretourneerd. Als u volledige meta-gegevens nodig hebt, dan bekijk de elementenweg `/jcr_content/metadata.json`.

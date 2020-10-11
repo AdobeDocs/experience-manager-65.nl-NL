@@ -3,9 +3,9 @@ title: Verbeterde slimme tags
 description: Verbeterde slimme tags
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 892237699a4027e7dab406fd620cac220aa8b88b
+source-git-commit: 78a101cdf0b4762ff9a3e7320db464df5b96300d
 workflow-type: tm+mt
-source-wordcount: '1468'
+source-wordcount: '1522'
 ht-degree: 8%
 
 ---
@@ -44,6 +44,7 @@ Voordat u de service Slimme inhoud kunt gebruiken, moet u het volgende doen om e
 
 * Een Adobe ID-account met beheerdersrechten voor de organisatie.
 * De service Smart Content Service is ingeschakeld voor uw organisatie.
+* Het slimme Pakket van de Diensten van de Basis van de Inhoud kan slechts aan een plaatsing worden toegevoegd waar een [!DNL Sites] Pakket van de Basis en [!DNL Assets] toe:voegen-on vergunning hebben gekregen.
 
 ## Onboarding {#onboarding}
 
@@ -179,3 +180,7 @@ U kunt de tagwerkstroom activeren door uw elementen direct te labelen:
 >[!NOTE]
 >
 >In de volgende coderingscycli worden alleen de gewijzigde elementen opnieuw gecodeerd met nieuw opgeleide tags. Zelfs ongewijzigde elementen worden echter gecodeerd als de ruimte tussen de laatste en huidige coderingscycli voor de coderingsworkflow meer dan 24 uur bedraagt. Voor workflows met periodieke labels worden ongewijzigde elementen gecodeerd wanneer de tijdruimte langer is dan zes maanden.
+
+## Tips en beperkingen {#tips-best-practices-limitations}
+
+* Het gebruik van Smart Content Services is beperkt tot maximaal 2 miljoen getagde afbeeldingen per jaar. Alle gedupliceerde afbeeldingen die zijn verwerkt en getagd, worden allemaal geteld als een gecodeerde afbeelding.

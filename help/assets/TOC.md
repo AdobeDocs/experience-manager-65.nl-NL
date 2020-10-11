@@ -6,10 +6,10 @@ user-guide-title: Hulplijn voor middelen
 breadcrumb-title: Assets Guide
 user-guide-description: Create, manage, deliver, and optimize digital assets.
 translation-type: tm+mt
-source-git-commit: 2cccbdea594bb9ba61e8c0f7884b724aab10b5da
+source-git-commit: caaf8c99d08cd88eca7d464816111cfb9f61590c
 workflow-type: tm+mt
-source-wordcount: '619'
-ht-degree: 36%
+source-wordcount: '586'
+ht-degree: 34%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 36%
 # Hulplijn voor middelen {#assets}
 
 + [[!DNL Assets] gebruikershandleiding](home.md)
-+ [Experience Manager 6.5 Opmerkingen bij de release van activa](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/assets.html)
++ [[!DNL Experience Manager] 6.5 Opmerkingen bij de release van activa](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/assets.html)
 + [Informatie over DAM](assets.md)
 + [Aanbevolen procedures voor elementen](best-practices-for-assets.md)
 + Experience Manager-elementen gebruiken {#using}
-   + [De ervaring van de homepage van activa](assets-home-page.md)
+   + [[!DNL Assets] homepage](assets-home-page.md)
    + [Digitale middelen zoeken](search-assets.md)
    + [Werken met metagegevens van elementen](metadata.md)
    + [Meertalige activa](multilingual-assets.md)
@@ -32,7 +32,7 @@ ht-degree: 36%
    + [Proceselementen](assets-workflow.md)
    + [Afbeeldingen met hyperlinks toevoegen](image-maps.md)
    + [Elementen hergebruiken met MSM](reuse-assets-using-msm.md)
-   + [Verbonden elementen met sites](use-assets-across-connected-assets-instances.md)
+   + [Verbonden elementen met [!DNL Sites]](use-assets-across-connected-assets-instances.md)
 +  Dynamic Media {#dynamic}
    + [Dynamic Media-nieuwsbrief van Experience League](dynamic-media-newsletter.md)
    + [Dynamic Media instellen](administering-dynamic-media.md)
@@ -80,15 +80,15 @@ ht-degree: 36%
    + [Feature Pack 18912 installeren voor migratie van grote hoeveelheden bedrijfsmiddelen](bulk-ingest-migrate.md)
    + [Werken met kiezers](working-with-selectors.md)
 + Elementen uitbreiden {#extending}
-   + [Elementen aanpassen en uitbreiden](extending-assets.md)
+   + [Aanpassen en uitbreiden [!DNL Assets]](extending-assets.md)
    + [Elementen verwerken met behulp van mediafuncties en workflows](media-handlers.md)
    + [Zoekfunctionaliteit uitbreiden](searchx.md)
-   + [Installeren en [!DNL ImageMagick] configureren om met middelen te werken](best-practices-for-imagemagick.md)
+   + [Installeren en [!DNL ImageMagick] configureren om te werken met [!DNL Assets]](best-practices-for-imagemagick.md)
    + [Elementen integreren met activiteitsstroom](extending-activity-stream.md)
    + [Editor van element uitbreiden](asseteditorx.md)
-   + [HTTP-API voor assets](mac-api-assets.md)
-   + [Ondersteuning voor inhoudsfragmenten in HTTP-API voor middelen](assets-api-content-fragments.md)
-   + [Ontwikkeling van proxy&#39;s](proxy.md)
+   + [[!DNL Assets] HTTP-API](mac-api-assets.md)
+   + [Content Fragments ondersteunt [!DNL Assets] in HTTP API](assets-api-content-fragments.md)
+   + [[!DNL Assets] proxyontwikkeling](proxy.md)
 + Elementen beheren {#administer}
    + [Ondersteunde bestandsindelingen](assets-formats.md)
    + [Facetten doorzoeken](search-facets.md)
@@ -102,14 +102,14 @@ ht-degree: 36%
    + [Elementeditorpagina&#39;s maken en configureren](assets-finder-editor.md)
    + [Hulplijn voor middelengrootte](assets-sizing-guide.md)
    + [Aanbevolen procedures voor het vertalen van middelen](best-practices-for-translating-assets-efficiently.md)
-   + [Richtlijnen voor afstelling van middelenprestaties](performance-tuning-guidelines.md)
-   + [Richtlijnen voor migratie van middelen](assets-migration-guide.md)
-   + [Elementennetwerkoverwegingen](assets-network-considerations.md)
-   + [Middelen en MediaLibrary](medialibrary.md)
+   + [[!DNL Assets] richtlijn voor afstelling van prestaties](performance-tuning-guidelines.md)
+   + [[!DNL Assets] migratiegids](assets-migration-guide.md)
+   + [[!DNL Assets] netwerkoverwegingen](assets-network-considerations.md)
+   + [[!DNL Assets] en MediaLibrary](medialibrary.md)
    + [PDF-rasterizer gebruiken](aem-pdf-rasterizer.md)
    + [Uploadbeperkingen configureren](configuring-asset-upload-restrictions.md)
-   + [Integratie van Experience Manager en Creative Cloud](aem-cc-integration-best-practices.md)
-   + [Integreren met InDesign Server](indesign.md)
+   + [[!DNL Experience Manager] and [!DNL Creative Cloud] integratie](aem-cc-integration-best-practices.md)
+   + [Integreren met [!DNL InDesign Server]](indesign.md)
    + [Digital Rights Management in activa](drm.md)
    + [Demo-pakket gebruiken voor elementinzichten](touch-ui-using-demo-package-for-asset-insights.md)
    + [Aanbevolen werkwijzen voor bestandsindelingen voor elementen](assets-file-format-best-practices.md)
@@ -121,13 +121,13 @@ ht-degree: 36%
    + [Meerdere paden voor verzamelingen, fragmenten en fragmentsjablonen](multi-tenancy.md)
    + [Watermerk uw elementen](watermarking.md)
    + [Elementsjablonen](asset-templates.md)
-   + [Aanbevolen procedures voor het delen van mappen met Creative Cloud](aem-cc-folder-sharing-best-practices.md)
+   + [Aanbevolen procedures voor het delen van mappen met [!DNL Creative Cloud]](aem-cc-folder-sharing-best-practices.md)
    + [Slimme tags beheren](managing-smart-tags.md)
 + Brand Portal {#brandportal}
-   + [ Assets configureren met Brand Portal ](configure-aem-assets-with-brand-portal.md)
-   + [Assets publiceren naar Brand Portal](brand-portal-publish-assets.md)
-   + [Mappen publiceren naar Brand Portal](brand-portal-publish-folder.md)
-   + [Verzamelingen publiceren naar Brand Portal](brand-portal-publish-collection.md)
+   + [ [!DNL Assets] Configureren met [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
+   + [Elementen publiceren naar [!DNL Brand Portal]](brand-portal-publish-assets.md)
+   + [Mappen publiceren naar [!DNL Brand Portal]](brand-portal-publish-folder.md)
+   + [Verzamelingen publiceren naar [!DNL Brand Portal]](brand-portal-publish-collection.md)
 + Contentfragmenten {#fragments}
    + [Werken met contentfragmenten](content-fragments/content-fragments.md)
    + [Contentfragmenten beheren](content-fragments/content-fragments-managing.md)
@@ -148,7 +148,6 @@ ht-degree: 36%
    + [Vertaalprojecten maken](translation-projects.md)
    + [Elementen voorbereiden voor vertaling](preparing-assets-for-translation.md)
    + [Elementen downloaden van Experience Manager](download-assets-from-aem.md)
-   + [Asynchrone taken](asynchronous-jobs.md)
    + [Lichtbak](touch-ui-light-box.md)
    + [Elementinzichten](touch-ui-asset-insights.md)
    + [Middels DTM inzicht in bedrijfsmiddelen inschakelen](touch-ui-using-dtm-for-asset-insights.md)

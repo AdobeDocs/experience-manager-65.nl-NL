@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 91833914-b811-4355-a97d-e1a9cb7441f1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1b200f9dd5fc99b37bcc629be7a785e02e8320c0
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '2454'
 ht-degree: 0%
@@ -23,12 +23,11 @@ ht-degree: 0%
 
 Het type functies dat wordt verwacht van een community-ervaring is bekend. De communautaire eigenschappen zijn beschikbaar als communautaire functies. In wezen zijn ze een of meer pagina&#39;s die vooraf zijn bekabeld om een community-functie te implementeren. Hiervoor is meer nodig dan alleen het toevoegen van een component aan een pagina in de modus Schrijven. Zij zijn de bouwstenen die worden gebruikt om de structuur van een malplaatje [van de](/help/communities/sites.md) communautaire plaats te bepalen waarvan de communautaire plaatsen worden [gecreeerd](/help/communities/sites-console.md).
 
-Nadat een gemeenschapssite is gemaakt, kan inhoud aan de resulterende pagina&#39;s worden toegevoegd met de standaard [AEM-ontwerpmodus](/help/sites-authoring/editing-content.md). Verschillende communityfuncties zijn beschikbaar zoals in de console voor communityfuncties.
+Wanneer een communitysite is gemaakt, kan inhoud aan de resulterende pagina&#39;s worden toegevoegd met de standaard [AEM ontwerpmodus](/help/sites-authoring/editing-content.md). Verschillende communityfuncties zijn beschikbaar zoals in de console voor communityfuncties.
 
 >[!NOTE]
 >
 >De consoles voor de verwezenlijking van [communautaire plaatsen](/help/communities/sites-console.md), de malplaatjes [van de](/help/communities/sites.md)communautaire plaats, [communautaire groepsmalplaatjes](/help/communities/tools-groups.md), en [communautaire functies](/help/communities/functions.md) zijn voor gebruik slechts in het auteursmilieu.
-
 
 ## Community-functieconsole {#community-functions-console}
 
@@ -40,7 +39,7 @@ Om de console van communautaire functies in het auteursmilieu te bereiken:
 
 ## Vooraf gebouwde functies {#pre-built-functions}
 
-Hier volgt een korte beschrijving van de functies die bij AEM Communities worden geleverd. Elke functie bevat een of meer AEM-pagina&#39;s die onderdelen van een Community bevatten die zijn samengevoegd tot een functie die eenvoudig kan worden opgenomen in een [community-sitesjabloon](/help/communities/sites.md).
+Hieronder volgt een korte beschrijving van de functies die bij AEM Communities worden geleverd. Elke functie bevat een of meer AEM pagina&#39;s die onderdelen van een Community bevatten die zijn samengevoegd tot een functie die eenvoudig kan worden opgenomen in een [community-sitesjabloon](/help/communities/sites.md).
 
 Een communitysitesjabloon biedt de structuur voor een communitysite, zoals aanmeldingsgegevens, gebruikersprofielen, meldingen, berichten, berichten, het menu van de site, zoeken, thema&#39;s en brandingfuncties.
 
@@ -234,7 +233,6 @@ Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend:
 >
 >Alle andere functies, zoals de [paginafunctie](#page-function), moeten worden opgenomen en als eerste worden vermeld.
 
-
 De groepsfunctie biedt leden van de gemeenschap de mogelijkheid om subgemeenschappen binnen de gemeenschapssite in de publicatieomgeving te maken.
 
 Afhankelijk van [montages](/help/communities/sites-console.md#groupmanagement) wanneer de functie van Groepen in een malplaatje [van de](/help/communities/sites.md)communautaire plaats inbegrepen is, kunnen de groepen openbaar of privé zijn en één of meerdere malplaatjes van de communautaire groep kunnen worden gevormd om een keus van malplaatjes te verstrekken wanneer de communautaire groep eigenlijk wordt gecreeerd (zoals van het publicatiemilieu). In een sjabloon [voor een](/help/communities/tools-groups.md) community-groep wordt aangegeven welke Gemeenschappen-functies worden gemaakt voor de groepspagina&#39;s, zoals forums en kalenders.
@@ -317,7 +315,7 @@ Standaard is uitgeschakeld.
 
 ### Paginacode {#page-function}
 
-De paginafunctie voegt een lege pagina aan de communautaire plaats toe dat het in de eigenschappen van de communautaire plaats wordt getelegrafeerd: aanmelden, menu, meldingen, berichten, berichten, thema&#39;s en branding. Inhoud wordt aan de pagina toegevoegd met de [standaardontwerpmodus](/help/sites-authoring/editing-content.md)van AEM.
+De paginafunctie voegt een lege pagina aan de communautaire plaats toe dat het in de eigenschappen van de communautaire plaats wordt getelegrafeerd: aanmelden, menu, meldingen, berichten, berichten, thema&#39;s en branding. Inhoud wordt aan de pagina toegevoegd met de [standaard AEM ontwerpmodus](/help/sites-authoring/editing-content.md).
 
 Als u een sjabloon toevoegt, is de enige configuratie de instellingen [Titel en URL](#title-and-url-settings).
 
@@ -353,7 +351,7 @@ Wanneer toegevoegd aan een malplaatje, staat de configuratie beperking aan bevoo
 
 ## Community-functie maken {#create-community-function}
 
-De capaciteit om een communautaire functie tot stand te brengen wordt bereikt door het `Create Community Function` pictogram te selecteren dat bij de bovenkant van de console van de Functies van de Gemeenschap wordt gevestigd. Er kunnen meerdere functies worden gemaakt op basis van dezelfde AEM-blauwdruk en deze kunnen vervolgens op unieke wijze worden aangepast door het openen in de bewerkingsmodus voor auteurs.
+De capaciteit om een communautaire functie tot stand te brengen wordt bereikt door het `Create Community Function` pictogram te selecteren dat bij de bovenkant van de console van de Functies van de Gemeenschap wordt gevestigd. Er kunnen meerdere functies worden gemaakt die op dezelfde AEM blauwdruk zijn gebaseerd en vervolgens op unieke wijze worden aangepast door het openen in de bewerkingsmodus voor auteurs.
 
 ![chlimage_1-390](assets/chlimage_1-390.png)
 
@@ -375,7 +373,7 @@ In het deelvenster Community Function Name worden een naam, beschrijving en of d
 
    Een schakeloptie die bepaalt of naar de functie kan worden verwezen.
 
-### AEM-vervaging {#aem-blueprint}
+### AEM {#aem-blueprint}
 
 ![chlimage_1-392](assets/chlimage_1-392.png)
 
@@ -401,7 +399,7 @@ Selecteer het `Open Community Function` pictogram om de bewerkingsmodus voor de 
 
 ### Componenten configureren {#configuring-components}
 
-Een gemeenschapsfunctie wordt geïmplementeerd als een live kopie van een AEM-blauwdruk, waarvan de details worden gedocumenteerd onder [Multi-Site Manager](/help/sites-administering/msm.md).
+Een gemeenschapsfunctie wordt geïmplementeerd als een live kopie van een AEM blauwdruk, waarvan de details worden gedocumenteerd onder [beheer](/help/sites-administering/msm.md)van meerdere sites.
 
 Het is mogelijk om niet alleen pagina-inhoud te schrijven, maar componenten te configureren.
 

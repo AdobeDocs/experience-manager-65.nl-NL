@@ -1,8 +1,8 @@
 ---
 title: Aanpassing aan clientzijde
 seo-title: Aanpassing aan clientzijde
-description: Gedrag of weergave van de client-kant aanpassen in AEM Communities
-seo-description: Gedrag of weergave van de client-kant aanpassen in AEM Communities
+description: Gedrag of weergave van de client in AEM Communities aanpassen
+seo-description: Gedrag of weergave van de client in AEM Communities aanpassen
 uuid: 57978c39-9a8a-4098-9001-c8bbe7ee786f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 24b6d1d2-c118-4a25-959f-2783961c4ae3
 translation-type: tm+mt
-source-git-commit: efa6c7be93908b2f264da4689caa9c02912c0f0a
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '1239'
 ht-degree: 0%
@@ -24,7 +24,7 @@ ht-degree: 0%
 |---|---|
 |  | **[SCF Handlebars Helpers](handlebars-helpers.md)** |
 
-Er zijn verschillende benaderingen om de weergave en/of het gedrag van een component AEM Communities aan de clientzijde aan te passen.
+Er zijn verschillende manieren om de weergave en/of het gedrag van een AEM Communities-component op de client aan te passen.
 
 Twee belangrijke benaderingen zijn het bedekken of uitbreiden van een component.
 
@@ -94,7 +94,7 @@ Skin maken kan worden bereikt door de framestijlen selectief te overschrijven of
 
 Een skin toewijzen aan een component:
 
-1. Identificeer de elementen die u wilt wijzigen (bijvoorbeeld: composergebied, werkbalkknoppen, berichtlettertype, enz.).
+1. Identificeer de elementen die u wilt wijzigen (bijvoorbeeld: compositiegebied, werkbalkknoppen, berichtlettertype, enz.).
 1. Identificeer de CSS klasse/de regels die deze elementen beïnvloeden.
 1. Maak een stijlbladbestand (.css).
 1. Neem het opmaakmodel op in een clientbibliotheekmap ([clientlibs](#clientlibs-for-scf)) voor uw site en zorg ervoor dat dit opneemt vanuit uw sjablonen en pagina&#39;s met [ui:includeClientLib](../../help/sites-developing/clientlibs.md).
@@ -108,7 +108,6 @@ De aangepaste stijlen overschrijven nu de standaardframestijlen en de component 
 >Elke CSS-klassenaam die vooraf is ingesteld met `scf-js` heeft een specifiek gebruik in javascript-code. Deze klassen beïnvloeden de status van een component (bijvoorbeeld van verborgen naar zichtbaar schakelen) en mogen niet worden overschreven of verwijderd.
 >
 >Hoewel de `scf-js` klassen geen invloed hebben op stijlen, kunnen de klassennamen in stijlpagina&#39;s worden gebruikt met de waarschuwing dat er, aangezien ze de statussen van elementen bepalen, bijwerkingen kunnen optreden.
-
 
 ## JavaScript uitbreiden {#extending-javascript}
 

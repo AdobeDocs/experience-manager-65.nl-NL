@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 21714581-7645-4b47-a9b0-9f1424013240
 translation-type: tm+mt
-source-git-commit: c77a353d43a3a6f33dffecf0b4e7672ed3e2dd3f
+source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 1%
@@ -37,7 +37,6 @@ De beschikbare communautaire componenten zijn [hier](author-communities.md#avail
 >Voor algemene ontwerpinformatie raadpleegt u de [handleiding voor het maken van pagina](../../help/sites-authoring/qg-page-authoring.md)&#39;s.
 >
 >Als u niet bekend bent met AEM, bekijkt u de documentatie over de [basisafhandeling](../../help/sites-authoring/basic-handling.md).
-
 
 ### Ontwerpmodus invoeren {#entering-design-mode}
 

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: d4152b4d-531b-4b62-8807-a5bc5afe94c6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 410858ee7d1b8022070445937731644724a90155
 workflow-type: tm+mt
-source-wordcount: '1179'
+source-wordcount: '1233'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,7 @@ ht-degree: 0%
 >6.5.3.0
 >
 >* **U kunt nu Extern alizer-domeinen** selecteren.
+   >  **Opmerking:** De Domeinen van de externalizer zijn slechts relevant voor de inhoud van het Fragment van de Ervaring dat naar Doel wordt verzonden, en niet meta-gegevens zoals de Inhoud van de Aanbieding van de Mening.
 >
 >
 6.5.2.0:
@@ -136,7 +137,11 @@ De vereiste opties kunnen worden geselecteerd in **Pagina-eigenschappen** van de
 
    >[!CAUTION]
    >
-   >Het externalizer-domein is optioneel. Een AEM externalizer wordt gevormd wanneer u de uitgevoerde inhoud aan een specifiek *publiceer* domein wilt richten. Voor meer details zie het [Vormen van de Verbinding External](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer)van de AEM.
+   >Het externalizer-domein is optioneel.
+   >
+   > Een AEM externalizer wordt gevormd wanneer u de uitgevoerde inhoud aan een specifiek *publiceer* domein wilt richten. Voor meer details zie het [Vormen van de Verbinding External](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer)van de AEM.
+   >
+   > Houd er ook rekening mee dat Externe domeinen alleen relevant zijn voor de inhoud van het ervaringsfragment dat naar Doel wordt verzonden, en niet voor metagegevens zoals Inhoud weergaveaanbod.
 
    Bijvoorbeeld voor een map:
 

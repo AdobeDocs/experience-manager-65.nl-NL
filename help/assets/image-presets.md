@@ -1,6 +1,6 @@
 ---
 title: Voorinstellingen voor Dynamic Media-afbeelding toepassen
-description: Leer hoe u voorinstellingen voor afbeeldingen in Dynamic Media toepast
+description: Leer hoe u voorinstellingen voor afbeeldingen kunt toepassen in Dynamic Media
 uuid: 8bafcbd0-6df0-4d5b-b2f7-116ddb4ec060
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -8,9 +8,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 5c1f60ac-3741-4002-9c5d-c128f118342b
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: fed2e6474f710fd02cf27946252896ac33f3b256
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '314'
 ht-degree: 12%
 
 ---
@@ -30,7 +30,11 @@ In deze sectie wordt beschreven hoe u voorinstellingen voor afbeeldingen kunt ge
 
 U kunt een voorinstelling voor afbeeldingen op elk gewenst moment op een afbeelding toepassen.
 
-**Voorinstellingen voor afbeeldingen van Dynamic Media toepassen**
+>[!NOTE]
+>
+>In de modus Dynamische media - Scene7 worden afbeeldingsvoorinstellingen alleen ondersteund voor afbeeldingselementen.
+
+**Dynamische voorinstellingen voor mediaafbeeldingen toepassen**
 
 1. Open het element en tik in de linkerrail op de vervolgkeuzelijst en tik vervolgens op **[!UICONTROL Renditions.]**
 
@@ -48,6 +52,7 @@ U kunt een voorinstelling voor afbeeldingen op elk gewenst moment op een afbeeld
 
    * Selecteer een dynamische vertoning om een voorvertoning van de voorinstelling weer te geven.
    * Tik op **[!UICONTROL URL]**, **[!UICONTROL Embed]** of **[!UICONTROL RESS]** om de pop-up weer te geven.
+
    >[!NOTE]
    >
    >Als de asset *en* de afbeeldingsvoorinstelling nog niet zijn gepubliceerd, is de knop **[!UICONTROL URL]** (of de knoppen **[!UICONTROL URL]** en **[!UICONTROL RESS]**, indien van toepassing) niet beschikbaar.

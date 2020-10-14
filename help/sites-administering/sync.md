@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: c061b358-8c0d-40d3-8090-dc9800309ab3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c9edac158bc6a00637f8be5aac70a2a249e11d59
+source-git-commit: 8ed7409740cdd3e45fad006dc6e470a06acc60fe
+workflow-type: tm+mt
+source-wordcount: '2436'
+ht-degree: 2%
 
 ---
 
@@ -74,8 +77,8 @@ Zodra gebruikerssynchronisatie is ingeschakeld, worden alleen nieuwe gebruikers 
 
 1. Controleer of de laatste code is geïnstalleerd:
 
-* [AEM-platformupdates](https://helpx.adobe.com/experience-manager/kb/aem62-available-hotfixes.html)
-* [Updates van AEM-gemeenschappen](/help/communities/deploy-communities.md#latestfeaturepack)
+* [AEM platformupdates](https://helpx.adobe.com/experience-manager/kb/aem62-available-hotfixes.html)
+* [AEM Communities-updates](/help/communities/deploy-communities.md#latestfeaturepack)
 
 ### 1. Apache Sling Distribution Agent - Sync Agents Factory {#apache-sling-distribution-agent-sync-agents-factory}
 
@@ -123,13 +126,14 @@ Zodra gebruikerssynchronisatie is ingeschakeld, worden alleen nieuwe gebruikers 
 >
 >* De standaardgebruiker die is toegewezen, is **`admin`**.
 >* Niet gebruiken `communities-user-admin user.`
+
 >
 
 
 
 #### Hoe te om ACL toe te voegen {#addacls}
 
-* toegang tot CRXDE Lite
+* access CRXDE Lite
 
    * bijvoorbeeld [https://localhost:4503/crx/de](https://localhost:4503/crx/de)
 
@@ -137,7 +141,7 @@ Zodra gebruikerssynchronisatie is ingeschakeld, worden alleen nieuwe gebruikers 
 * in het rechterdeelvenster selecteert u het `Access Control` tabblad
 * selecteer de `+` knoop om een ACL ingang toe te voegen
 
-   * **Opdrachtgever**: gebruiker *zoeken naar gebruikerssynchronisatie*
+   * **Opdrachtgever**: *zoeken naar gebruiker gemaakt voor gebruikerssynchronisatie*
    * **Type**: `Allow`
    * **Bevoegdheden**: `jcr:all`
    * **Beperkingen** rep:glob: `*/activities/*`
@@ -152,7 +156,7 @@ Zie ook
 * [Toegangsbeheer](/help/sites-administering/user-group-ac-admin.md#access-right-management)
 * De sectie van het Oplossen van problemen [wijzigt de Uitzondering van de Verrichting tijdens de Verwerking](#modify-operation-exception-during-response-processing)van de Reactie.
 
-### 3. Apache Sling Distribution Transport Credentials - Gebruikersreferenties gebaseerd DistributionTransportSecretProvider {#adobegraniteencpasswrd}
+### 3. Adobe Granite Distribution - Encrypted Password Transport Secret Provider {#adobegraniteencpasswrd}
 
 **Machtigingen configureren**
 
@@ -164,7 +168,7 @@ Zodra een geautoriseerde gebruiker, een lid van de **`administrators`**gebruiker
    * toegang tot de [webconsole](/help/sites-deploying/configuring-osgi.md)
 
       * bijvoorbeeld [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
-   * lokaliseren `Apache Sling Distribution Transport Credentials - User Credentials based DistributionTransportSecretProvider`
+   * lokaliseren `com.adobe.granite.distribution.core.impl.CryptoDistributionTransportSecretProvider.name`
    * Selecteer de bestaande configuratie die u wilt openen voor bewerken (potloodpictogram)Verifiëren `property name`: **`socialpubsync-publishUser`**
 
    * de gebruikersnaam en het wachtwoord instellen voor de [geautoriseerde gebruiker](#createauthuser) die is gemaakt bij publicatie in stap 2
@@ -293,7 +297,7 @@ Als er aangepaste gegevens zijn die moeten worden gesynchroniseerd in meerdere p
 
 ![](assets/chlimage_1-26.png)
 
-* **De Types**Dit is de lijst van knooptypes die zullen synchroniseren. Elk knooppunttype anders dan sling:Folder moet hier worden vermeld (sling:folder wordt afzonderlijk behandeld).
+* **Knooppunttypen**Dit is de lijst met knooppunttypen die worden gesynchroniseerd. Elk knooppunttype anders dan sling:Folder moet hier worden vermeld (sling:folder wordt afzonderlijk behandeld).
 Standaardlijst met knooppunttypen die moeten worden gesynchroniseerd:
 
    * rep:gebruiker
@@ -358,7 +362,7 @@ Herhaal deze stappen totdat alle publicatie-instanties een unieke id voor verkop
 
 Voor een correcte synchronisatie van updates is het nodig om de builder van het vault-pakket te wijzigen voor gebruikerssynchronisatie:
 
-* op elke publicatie-instantie van AEM
+* op elke AEM publicatie-instantie
 * toegang tot de [webconsole](/help/sites-deploying/configuring-osgi.md)
 
    * bijvoorbeeld [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
@@ -403,13 +407,13 @@ Wanneer de [gebruikersbeheer- en beveiligingsconsole](/help/sites-administering/
 
 ### Gebruikerssynchronisatie offline uitvoeren {#how-to-take-user-sync-offline}
 
-Als u gebruikerssynchronisatie offline wilt zetten en een uitgever [wilt](#how-to-remove-a-publisher) verwijderen of gegevens [](#manually-syncing-users-and-user-groups)handmatig wilt synchroniseren, moet de distributierij leeg en stil zijn.
+Als u gebruikerssynchronisatie offline wilt zetten, moet de distributierij leeg en stil zijn om een uitgever [te](#how-to-remove-a-publisher) verwijderen of gegevens [](#manually-syncing-users-and-user-groups)handmatig te synchroniseren.
 
 Om de staat van de distributierij te controleren:
 
 * op auteur:
 
-   * gebruiken van [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)
+   * gebruiken, [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)
 
       * zoeken naar items in `/var/sling/distribution/packages`
 
@@ -436,7 +440,7 @@ Nadat de taken zijn voltooid, kunt u de gebruikerssynchronisatie opnieuw inschak
 
 ### Diagnostiek gebruikerssynchronisatie {#user-sync-diagnostics}
 
-Diagnostiek voor gebruikerssynchronisatie is een programma dat de configuratie controleert en probeert eventuele problemen op te sporen.
+Diagnostiek voor gebruikerssynchronisatie is een hulpmiddel dat de configuratie controleert en probeert eventuele problemen op te sporen.
 
 Bij de auteur navigeert u eenvoudig van de hoofdconsole via **Tools, Operations, Diagnosis, User Sync Diagnostics.**
 

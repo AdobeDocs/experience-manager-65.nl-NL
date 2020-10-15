@@ -3,12 +3,12 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.5 Klassieke UI Authoring User Guide
-user-guide-description: This guide covers the concepts of authoring in AEM in the classic user interface.
+user-guide-description: In deze handleiding worden de ontwerpconcepten in AEM in de klassieke gebruikersinterface besproken.
 translation-type: tm+mt
 source-git-commit: 0b702f58ef7dc85df43bc6d34866dbf3d1100b5e
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 21%
+source-wordcount: '271'
+ht-degree: 20%
 
 ---
 

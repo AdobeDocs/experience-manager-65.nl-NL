@@ -3,9 +3,9 @@ title: Configuratie en beheer van metagegevensfunctionaliteit.
 description: Configuratie- en [!DNL Experience Manager Assets] beheersfuncties met betrekking tot het toevoegen en beheren van metagegevens.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c3f85314740c4e9ca8ed0c9a724b49ff4276616a
+source-git-commit: b14b377e52ab10c41355f069d97508b588d82216
 workflow-type: tm+mt
-source-wordcount: '1804'
+source-wordcount: '1798'
 ht-degree: 4%
 
 ---
@@ -109,7 +109,7 @@ Met een metagegevensprofiel kunt u standaardmetagegevens toepassen op elementen 
 1. Click **[!UICONTROL Delete Metadata Profiles]** in the toolbar.
 1. Klik in het dialoogvenster **[!UICONTROL Delete]** om het verwijderen te bevestigen. Het metagegevensprofiel wordt uit de lijst verwijderd.
 
-<!-- TBD: Revisit to find out the correct config. and update these steps.
+<!-- TBD: Revisit to find out the correct config. and update these steps. When fixed, also o
 These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
 
 ### Configuration to apply a metadata profile globally {#apply-a-metadata-profile-globally}
@@ -269,7 +269,6 @@ Voer waarden voor metagegevens in de verschillende velden in en klik **[!UICONTR
 >[!MORELIKETHIS]
 >
 >* [Metagegevensconcepten en begrip](metadata-concepts.md).
->* [Eigenschappen van metagegevens van meerdere verzamelingen](managing-collections-touch-ui.md#editing-collection-metadata-in-bulk)bewerken.
 >* [Eigenschappen van metagegevens van meerdere verzamelingen](managing-collections-touch-ui.md#editing-collection-metadata-in-bulk)bewerken.
 >* [Metagegevens importeren en exporteren in Experience Manager Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html).
 >* [Profielen voor het verwerken van metagegevens, afbeeldingen en video](processing-profiles.md)&#39;s.

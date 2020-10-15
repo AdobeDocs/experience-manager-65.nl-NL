@@ -3,10 +3,10 @@ title: Use Connected Assets to share DAM assets in [!DNL Sites]
 description: Gebruik de middelen die beschikbaar zijn op een [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] externe implementatie.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d2bc8c7c52084a415faaf8a5b68be7dc6fc461c4
+source-git-commit: c5972647d23b7e7bfd2fcd791648cb26de1fdb68
 workflow-type: tm+mt
-source-wordcount: '2138'
-ht-degree: 39%
+source-wordcount: '2161'
+ht-degree: 38%
 
 ---
 
@@ -194,4 +194,6 @@ Ga als volgt te werk om problemen op te lossen voor het algemene foutscenario:
 
 * If you cannot search for remote assets from the [!UICONTROL Content Finder], then ensure that the required roles and permissions are in place.
 * Een middel dat van de verre dam wordt gehaald kan niet op een Web-pagina om één of meerdere redenen worden gepubliceerd. Het bestaat niet op verre server, gebrek aan aangewezen toestemmingen om het te halen, of de netwerkmislukking kan de redenen zijn. Zorg ervoor dat het element niet wordt verwijderd van de externe DAM. Zorg ervoor dat de juiste machtigingen zijn ingesteld en dat aan de voorwaarden is voldaan. Voeg het element opnieuw toe aan de pagina en publiceer het opnieuw. Controleer de [lijst met asynchrone taken](/help/sites-administering/asynchronous-jobs.md) op fouten bij het ophalen van assets.
-* Als u vanaf de lokale [!DNL Sites] implementatie geen toegang hebt tot de externe DAM-implementatie, moet u ervoor zorgen dat cookies die naar andere sites verwijzen, zijn toegestaan. Als cookies tussen sites worden geblokkeerd, worden de twee implementaties van [!DNL Experience Manager] mogelijk niet geverifieerd. In de modus Incognito kunnen cookies van andere bedrijven bijvoorbeeld worden geblokkeerd. [!DNL Google Chrome] Klik in [!DNL Chrome]de adresbalk op het pictogram &#39;oog&#39; om cookies toe te staan of bekijk Help over [het inschakelen van cookies](https://support.google.com/chrome/answer/95647)van andere bedrijven.
+* Als u vanaf de lokale [!DNL Sites] implementatie geen toegang hebt tot de externe DAM-implementatie, moet u ervoor zorgen dat cookies die naar andere sites verwijzen, zijn toegestaan. Als cookies tussen sites worden geblokkeerd, worden de twee implementaties van [!DNL Experience Manager] mogelijk niet geverifieerd. In de modus Incognito kunnen cookies van andere bedrijven bijvoorbeeld worden geblokkeerd. [!DNL Google Chrome] Als u cookies wilt toestaan in [!DNL Chrome] browser, klikt u op het pictogram &#39;oog&#39; op de adresbalk, navigeert u naar Site niet werken > Geblokkeerd, selecteert u de externe DAM-URL en staat u aanmeldingstoken toe. U kunt ook de Help raadplegen over [het inschakelen van cookies](https://support.google.com/chrome/answer/95647)van andere leveranciers.
+
+![Cookie-fout in Chrome in incognitomodus](assets/chrome-cookies-incognito-dialog.png)

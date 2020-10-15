@@ -4,9 +4,9 @@ description: Nieuw in Adobe Experience Manager 6.5 Service Pack 6
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 9d549e19a22b06f010b99e5dfff1d4cef05a5bed
+source-git-commit: 6e7da5aa0a8ea224de256717ca37193dcf6577be
 workflow-type: tm+mt
-source-wordcount: '2491'
+source-wordcount: '2534'
 ht-degree: 0%
 
 ---
@@ -77,7 +77,7 @@ U kunt er nu voor kiezen om elementen selectief te publiceren of de publicatie e
 ### Een adaptief formulier vooraf invullen op de client {#prefill-merge-data-at-client}
 
 Wanneer u een adaptief formulier vooraf instelt, voegt de [!DNL Experience Manager Forms] server gegevens samen met een adaptief formulier en levert het ingevulde formulier aan u. De handeling voor het samenvoegen van gegevens vindt standaard plaats op de server.
-U kunt de [!DNL Experience Manager Forms] server nu configureren om de handeling voor het samenvoegen van gegevens op de client uit te voeren in plaats van op de server. Hierdoor wordt de tijd die nodig is om adaptieve formulieren vooraf in te vullen en weer te geven, aanzienlijk verkort.
+U kunt de [!DNL Experience Manager Forms] server nu zodanig configureren dat de handeling voor het samenvoegen van gegevens wordt [uitgevoerd op de client](../../help/forms/using/prepopulate-adaptive-form-fields.md) in plaats van op de server. Hierdoor wordt de tijd die nodig is om adaptieve formulieren vooraf in te vullen en weer te geven, aanzienlijk verkort.
 
 ### Integratie van formuliergegevensmodellen met RESTful-API&#39;s op een server met 2-wegs SSL-implementatie {#fdm-integration-rest-apis-two-way-ssl}
 
@@ -87,7 +87,7 @@ U kunt de [!DNL Experience Manager Forms] server nu configureren om de handeling
 
 Als een AcroForm-formulier [!DNL Adobe Sign] tekstcodes bevat, worden deze velden nu herkend en weergegeven als [!DNL Adobe Sign] velden in het adaptieve formulier dat is geconverteerd met [!DNL Automated Forms Conversion service]. Een ondertekenaar kan dergelijke velden invullen terwijl hij het adaptieve formulier ondertekent.
 
-### Support to convert colored PDF forms to adaptive forms {#colore-PDF-forms}
+### Support to convert colored PDF forms to adaptive forms {#colored-PDF-forms}
 
 U kunt gekleurde PDF forms omzetten [!DNL Automated Forms Conversion service] in adaptieve formulieren.
 
@@ -97,7 +97,7 @@ U kunt gekleurde PDF forms omzetten [!DNL Automated Forms Conversion service] in
 
 ### Verbeterd in cache plaatsen voor vertaalde adaptieve formulierpagina&#39;s {#enhanced-caching-translated-adaptive-forms}
 
-U kunt nu een landinstelling opgeven als een kiezer in plaats van een URL-argument. Hiermee kunt u vertaalde adaptieve formulieren in de cache plaatsen [!DNL Experience Manager Dispatcher].
+U kunt nu de [landinstelling als een kiezer opgeven in het aangepaste formulier-URL in plaats van een argument in de aangepaste vorm-URL](../../help/forms/using/supporting-new-language-localization.md). Hiermee kunt u vertaalde adaptieve formulieren in de cache plaatsen [!DNL Experience Manager Dispatcher]. Het in cache plaatsen van vertaald adaptief formulier was niet mogelijk in eerdere versies. Zie Aangepaste formuliercache [configureren in verzender](../../help/forms/using/configure-adaptive-forms-cache.md)voor gedetailleerde informatie over het configureren van caching voor het gebruik van locale als kiezer in de aangepaste formulier-URL.
 
 ### Uitvoer van formuliergegevensmodelservice opslaan naar een variabele {#save-fdm-service-to-variable}
 
@@ -105,7 +105,9 @@ Met het formuliergegevensmodel kunt u de uitvoer van een service van een formuli
 
 ### Meerdere bestanden bijvoegen voor de component Bestandsbijlage {#attach-multiple-files}
 
-U kunt nu meerdere bestanden koppelen aan de [!UICONTROL File Attachment] component van adaptieve formulieren.
+U kunt nu meerdere bestanden [](../../help/forms/using/introduction-forms-authoring.md) koppelen aan de [!UICONTROL File Attachment] component van adaptieve formulieren.
+
+
 
 ## Belangrijkste eigenschappen in vorige Experience Manager 6.5 de Pakken van de Dienst {#key-features-previous-service-packs}
 

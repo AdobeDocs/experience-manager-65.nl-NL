@@ -3,9 +3,9 @@ title: Elementen downloaden
 description: Leer hoe u elementen kunt downloaden [!DNL Adobe Experience Manager] en de downloadfunctionaliteit kunt in- of uitschakelen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: b14b377e52ab10c41355f069d97508b588d82216
 workflow-type: tm+mt
-source-wordcount: '822'
+source-wordcount: '838'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Voer de volgende stappen uit om elementen te downloaden:
 
    ![Beschikbare opties voor het downloaden van Experience Manager-elementen](/help/assets/assets/asset-download1.png)
 
-   *Afbeelding: Opties in het dialoogvenster Downloaden.*
+   *Afbeelding: Opties beschikbaar in het dialoogvenster Downloaden.*
 
 1. Selecteer in het dialoogvenster Downloaden de gewenste downloadopties.
 
@@ -73,6 +73,7 @@ De functie `Asset Download Servlet` kan worden uitgeschakeld in een [!DNL Experi
 
 >[!MORELIKETHIS]
 >
+>* [Elementen downloaden met Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/download/brand-portal-download-assets.html)
 >* [Met DRM beveiligde middelen](drm.md)downloaden.
 >* [Download middelen via de Experience Manager desktop app op Win- of Mac-bureaublad](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#download-assets).
 >* [Download Adobe Assets Link vanuit de ondersteunde Adobe Creative Cloud-apps](https://helpx.adobe.com/nl/enterprise/using/manage-assets-using-adobe-asset-link.html).

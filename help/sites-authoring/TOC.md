@@ -3,13 +3,13 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.5 Handboek voor ontwerpen
-breadcrumb-title: Authoring Guide
-user-guide-description: Learn key concepts for creating content and authoring in AEM.
+breadcrumb-title: Ontwerphandleiding
+user-guide-description: Leer de belangrijkste concepten voor het maken van inhoud en creatie in AEM.
 translation-type: tm+mt
 source-git-commit: e917a36f9b8748080e9ab770a7f58f06123ea166
 workflow-type: tm+mt
-source-wordcount: '272'
-ht-degree: 41%
+source-wordcount: '284'
+ht-degree: 39%
 
 ---
 

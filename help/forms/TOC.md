@@ -5,11 +5,11 @@ sub-product: formulieren
 audience: end-user
 user-guide-title: Adobe Experience Manager 6.5 Forms Guide
 breadcrumb-title: Forms Guide
-user-guide-description: Create, manage, publish, and update digital forms.
+user-guide-description: Digitale formulieren maken, beheren, publiceren en bijwerken.
 translation-type: tm+mt
 source-git-commit: 90ab21c4a25fa1a2dcdf04af61fd30982cae7aae
 workflow-type: tm+mt
-source-wordcount: '3702'
+source-wordcount: '3711'
 ht-degree: 0%
 
 ---

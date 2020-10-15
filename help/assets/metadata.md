@@ -3,9 +3,9 @@ title: Metagegevens van uw digitale middelen beheren in [!DNL Adobe Experience M
 description: Leer meer over de typen metagegevens en [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] hoe u elementen automatisch kunt ordenen en verwerken op basis van hun metagegevens.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c3f85314740c4e9ca8ed0c9a724b49ff4276616a
+source-git-commit: b14b377e52ab10c41355f069d97508b588d82216
 workflow-type: tm+mt
-source-wordcount: '2339'
+source-wordcount: '2324'
 ht-degree: 10%
 
 ---
@@ -49,7 +49,7 @@ Voer de volgende stappen uit om de metagegevens van een element in de [!DNL Asse
 
    ![Eigenschappen van een element selecteren om de metagegevens van het element weer te geven](assets/asset-metadata.png)
 
-   *Afbeelding: Bewerk of voeg metagegevens toe op de[!UICONTROL Properties]elementpagina.*
+   *Afbeelding: Bewerk of voeg metagegevens toe op de [!UICONTROL Properties] elementpagina.*
 
 1. Make edits to the metadata under the various tabs, as required, and when completed, click **[!UICONTROL Save]** from the toolbar to save your changes. Click **[!UICONTROL Close]** to return to the [!DNL Assets] web interface.
 
@@ -68,7 +68,7 @@ XMP terugschrijven wordt ondersteund en ingeschakeld voor de platforms en bestan
 * Eigenschappen van metagegevens wijzigen in een algemene waarde
 * Tags toevoegen of wijzigen
 
-Gebruik de schema-editor om de pagina met eigenschappen van metagegevens aan te passen, inclusief het toevoegen, wijzigen of verwijderen van eigenschappen van metagegevens.
+Gebruik de [schema-editor](metadata-config.md#folder-metadata-schema)om de pagina met metagegevenseigenschappen aan te passen, zoals eigenschappen voor metagegevens toevoegen, wijzigen, verwijderen of wijzigen.
 
 >[!NOTE]
 >
@@ -188,7 +188,7 @@ Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van 
 
 U kunt elementen in een map opnieuw verwerken die al een bestaand videoprofiel heeft dat u later wijzigt. Zie Elementen [opnieuw verwerken in een map nadat u het verwerkingsprofiel](processing-profiles.md#reprocessing-assets)hebt bewerkt.
 
-### Metagegevensprofielen toepassen op mappen vanuit de gebruikersinterface Profielen {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
+### Metaprofielen toepassen op mappen vanuit de [!UICONTROL Profiles] gebruikersinterface {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
 
 Voer de stappen uit om het metagegevensprofiel toe te passen:
 
@@ -196,7 +196,7 @@ Voer de stappen uit om het metagegevensprofiel toe te passen:
 1. Selecteer het metagegevensprofiel dat u wilt toepassen op een of meerdere mappen.
 1. Click **[!UICONTROL Apply Metadata Profile to Folder(s)]** and select the folder or multiple folders you want use to receive the newly uploaded assets and click **[!UICONTROL Done]**. Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
 
-### Metagegevensprofielen toepassen op mappen vanuit Eigenschappen {#applying-metadata-profiles-to-folders-from-properties}
+### Metagegevensprofielen toepassen op mappen vanuit [!UICONTROL Properties] {#applying-metadata-profiles-to-folders-from-properties}
 
 1. Klik in de linkertrack **[!UICONTROL Assets]** en navigeer naar de map waarop u een metagegevensprofiel wilt toepassen.
 1. Klik in de map op het vinkje om het te selecteren en klik vervolgens **[!UICONTROL Properties]**.
@@ -205,9 +205,11 @@ Voer de stappen uit om het metagegevensprofiel toe te passen:
 
 Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
 
-### Metagegevensprofiel algemeen toepassen {#metadata-profile-global}
+<!-- TBD: Commenting as the topic in metadata-config.md is incomplete.
 
-Zie de [configuratie voor algemene](/help/assets/metadata-config.md#apply-a-metadata-profile-globally)toepassing van het metagegevensprofiel voor meer informatie.
+### Apply metadata profile globally {#metadata-profile-global}
+
+For details, see [configuration to apply metadata profile globally](/help/assets/metadata-config.md#apply-a-metadata-profile-globally). -->
 
 ### Een metagegevensprofiel uit mappen verwijderen {#removing-a-metadata-profile-from-folders}
 

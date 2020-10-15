@@ -3,10 +3,10 @@ title: Use Connected Assets to share DAM assets in [!DNL Sites]
 description: Gebruik de middelen die beschikbaar zijn op een [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] externe implementatie.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 7790c9c90953e0f5c5b6be38f5d54346fb595e8f
+source-git-commit: d2bc8c7c52084a415faaf8a5b68be7dc6fc461c4
 workflow-type: tm+mt
-source-wordcount: '2073'
-ht-degree: 40%
+source-wordcount: '2138'
+ht-degree: 39%
 
 ---
 
@@ -33,8 +33,8 @@ Controleer de volgende punten voordat u deze functie gebruikt of configureert:
    |  | [!DNL Sites] als Cloud Service | [!DNL Experience Manager] 6.5 [!DNL Sites] over AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] on-premise |
    |---|---|---|---|
    | **[!DNL Experience Manager Assets]als Cloud Service** | Ondersteund | Ondersteund | Ondersteund |
-   | **[!DNL Experience Manager]6.5[!DNL Assets]over AMS** | Ondersteund | Ondersteund | Ondersteund |
-   | **[!DNL Experience Manager]6.5[!DNL Assets]on-premise** | Niet ondersteund | Niet ondersteund | Niet ondersteund |
+   | **[!DNL Experience Manager]6.5 [!DNL Assets] over AMS** | Ondersteund | Ondersteund | Ondersteund |
+   | **[!DNL Experience Manager]6.5 [!DNL Assets] on-premise** | Niet ondersteund | Niet ondersteund | Niet ondersteund |
 
 ### Ondersteunde bestandsindelingen {#mimetypes}
 
@@ -194,3 +194,4 @@ Ga als volgt te werk om problemen op te lossen voor het algemene foutscenario:
 
 * If you cannot search for remote assets from the [!UICONTROL Content Finder], then ensure that the required roles and permissions are in place.
 * Een middel dat van de verre dam wordt gehaald kan niet op een Web-pagina om één of meerdere redenen worden gepubliceerd. Het bestaat niet op verre server, gebrek aan aangewezen toestemmingen om het te halen, of de netwerkmislukking kan de redenen zijn. Zorg ervoor dat het element niet wordt verwijderd van de externe DAM. Zorg ervoor dat de juiste machtigingen zijn ingesteld en dat aan de voorwaarden is voldaan. Voeg het element opnieuw toe aan de pagina en publiceer het opnieuw. Controleer de [lijst met asynchrone taken](/help/sites-administering/asynchronous-jobs.md) op fouten bij het ophalen van assets.
+* Als u vanaf de lokale [!DNL Sites] implementatie geen toegang hebt tot de externe DAM-implementatie, moet u ervoor zorgen dat cookies die naar andere sites verwijzen, zijn toegestaan. Als cookies tussen sites worden geblokkeerd, worden de twee implementaties van [!DNL Experience Manager] mogelijk niet geverifieerd. In de modus Incognito kunnen cookies van andere bedrijven bijvoorbeeld worden geblokkeerd. [!DNL Google Chrome] Klik in [!DNL Chrome]de adresbalk op het pictogram &#39;oog&#39; om cookies toe te staan of bekijk Help over [het inschakelen van cookies](https://support.google.com/chrome/answer/95647)van andere bedrijven.

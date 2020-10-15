@@ -4,15 +4,15 @@ description: Leer hoe u de vereiste elementen [!DNL Adobe Experience Manager] in
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 421f18bef4b0dbcad74e91316eead70036c9750e
+source-git-commit: b14b377e52ab10c41355f069d97508b588d82216
 workflow-type: tm+mt
-source-wordcount: '5904'
+source-wordcount: '5917'
 ht-degree: 4%
 
 ---
 
 
-# Middelen zoeken in [!DNL Adobe Experience Manager] {#search-assets-in-aem}
+# Middelen zoeken in [!DNL Adobe Experience Manager] {#assets-search-in-aem}
 
 [!DNL Adobe Experience Manager Assets] biedt robuuste methoden voor het detecteren van bedrijfsmiddelen die u helpen een hogere snelheid van de inhoud te bereiken. Uw teams verkorten tijd aan markt met naadloze, intelligente onderzoekservaring gebruikend out-of-the-box functionaliteit en douanemethodes. Het zoeken naar middelen is van cruciaal belang voor het gebruik van een systeem voor het beheer van digitale activa — of het nu gaat om verder gebruik door creatieve ondernemingen, voor een robuust beheer van activa door zakelijke gebruikers en marketeers, of voor beheer door DAM-beheerders. Eenvoudige, geavanceerde en aangepaste zoekopdrachten die u kunt uitvoeren via een [!DNL Assets] gebruikersinterface of andere apps en oppervlakken helpen deze gebruiksgevallen te verhelpen.
 
@@ -43,7 +43,7 @@ Verken uzelf met de zoekinterface en de beschikbare acties.
 
 ![De zoekresultateninterface voor Experience Manager Assets begrijpen](assets/aem_search_results.png)
 
-*Afbeelding: Begrijp de interface van[!DNL Experience Manager Assets]onderzoeksresultaten.*
+*Afbeelding: Begrijp de interface van [!DNL Experience Manager Assets] onderzoeksresultaten.*
 
 **A.** Sla de zoekopdracht op als een slimme verzameling. **B.** Hiermee kunt u de zoekresultaten beperken door filters of voorspelling in te stellen. **C.** Bestanden, mappen of beide weergeven. **D.** Klik op Filters om het linkerspoor te openen of te sluiten. **E.** Zoeklocatie is DAM. **F.** Het gebied van het onderzoek met user-provided onderzoekssleutelwoord. **G.** Selecteer de geladen zoekresultaten. **H.** Aantal weergegeven zoekresultaten van de totale zoekresultaten. **I.** Sluit zoekopdracht **J.** Schakel tussen de kaartweergave en de lijstweergave.
 
@@ -178,13 +178,13 @@ U kunt naar elementen zoeken op basis van exacte waarden van specifieke metagege
 | Hoogte van afbeelding | hoogte:ondergrens..bovenaan |
 | Person | persoon:John |
 
-De eigenschappen `path`, `limit`, `size`, en `orderby` kunnen niet *ORed* met een andere bezit zijn.
+De eigenschappen `path`, `limit`, `size`, en `orderby` kunnen niet worden gecombineerd gebruikend `OR` exploitant met een andere bezit.
 
 Het sleutelwoord voor een user-generated bezit is zijn gebiedsetiket in de bezitsredacteur in kleine letters, met verwijderde ruimten.
 
 Hier volgen enkele voorbeelden van zoekindelingen voor complexe query&#39;s:
 
-* Alle elementen weergeven met meerdere facetvelden (bijvoorbeeld: title=Jan Smit en creator tool = Adobe Photoshop): `tiltle:"John Doe" creatortool:Adobe*`
+* Alle elementen weergeven met meerdere facetvelden (bijvoorbeeld: title=Jan Smit en creator tool = Adobe Photoshop): `title:"John Doe" creatortool:Adobe*`
 * Om alle activa te tonen wanneer de facetwaarde niet één enkel woord maar één zin is (bijvoorbeeld: title=Scott Reynolds): `title:"Scott Reynolds"`
 * Elementen weergeven met meerdere waarden van één eigenschap (bijvoorbeeld: title=Scott Reynolds of Jan Smit): `title:"Scott Reynolds" OR "John Doe"`
 * Elementen weergeven met eigenschapswaarden die beginnen met een specifieke tekenreeks (bijvoorbeeld: de titel is Scott Reynolds): `title:Scott*`
@@ -285,6 +285,8 @@ Zoekfuncties kunnen prestatiebeperkingen hebben in de volgende scenario&#39;s:
 
 * **Indexeren**: Alleen geïndexeerde metagegevens en elementen worden geretourneerd in de zoekresultaten. Voor betere dekking en betere prestaties, zorg behoorlijk indexeren en volg de beste praktijken. Zie [indexeren](#searchindex).
 
+* Om specifieke activa van onderzoeksresultaten uit te sluiten, gebruik `excludedPath` bezit in de index van Lucene.
+
 ## Enkele voorbeelden van zoekopdrachten {#samples}
 
 Gebruik dubbele aanhalingstekens rond trefwoorden om te zoeken naar elementen die de exacte woordgroep bevatten in de exacte volgorde die de gebruiker heeft opgegeven.
@@ -328,7 +330,7 @@ Gebruik dubbele aanhalingstekens rond trefwoorden om te zoeken naar elementen di
 
 Asset Discovery is afhankelijk van indexering van de DAM-inhoud, inclusief de metagegevens. Snellere en nauwkeurige detectie van bedrijfsmiddelen is afhankelijk van geoptimaliseerde indexering en geschikte configuraties. Zie [onderzoeksindex](/help/assets/performance-tuning-guidelines.md#search-indexes), [oak vragen en indexeren](/help/sites-deploying/queries-and-indexing.md), en [beste praktijken](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 
-Om specifieke activa van onderzoeksresultaten uit te sluiten, gebruik `excludedPath` bezit op de index van Lucene.
+Om specifieke activa van onderzoeksresultaten uit te sluiten, gebruik `excludedPath` bezit in de index van Lucene.
 
 ### Zoeken op visuele of gelijkenis {#configvisualsearch}
 
@@ -438,7 +440,7 @@ Het is mogelijk om bulkupdates uit te voeren naar de algemene metagegevensvelden
 
 Voor de middelen die in één enkele omslag of een inzameling beschikbaar zijn, is het gemakkelijker om de meta-gegevens in bulk [bij te](/help/assets/metadata.md) werken zonder de onderzoeksfunctionaliteit te gebruiken. Voor de elementen die beschikbaar zijn in verschillende mappen of voldoen aan een algemeen criterium, is het sneller om de metagegevens bulksgewijs bij te werken door te zoeken.
 
-### Slimme verzamelingen {#collections-1}
+### Slimme verzamelingen {#smart-collections}
 
 Een verzameling is een geordende set elementen die elementen van verschillende locaties kunnen bevatten, omdat verzamelingen alleen verwijzingen naar deze elementen bevatten. Verzamelingen zijn van de volgende twee typen:
 
@@ -451,19 +453,19 @@ U kunt slimme verzamelingen maken op basis van de zoekcriteria. Selecteer in het
 
 | Fout, problemen, symptomen | Mogelijke reden | Mogelijke oplossing of begrip van het probleem |
 |---|---|---|
-| Onjuiste resultaten bij het zoeken naar elementen met ontbrekende metagegevens. | Bij het zoeken naar elementen waarvoor de verplichte metagegevens ontbreken, [!DNL Experience Manager] kunnen elementen met geldige metagegevens worden weergegeven. De resultaten zijn gebaseerd op de eigenschap voor geïndexeerde metagegevens. | Nadat de metagegevens zijn bijgewerkt, is opnieuw indexeren vereist om de juiste status van metagegevens voor elementen weer te geven. Zie [verplichte metagegevens](metadata-schemas.md#define-mandatory-metadata). |
+| Onjuiste resultaten bij het zoeken naar elementen met ontbrekende metagegevens. | Bij het zoeken naar elementen waarvoor de verplichte metagegevens ontbreken, [!DNL Experience Manager] kunnen elementen met geldige metagegevens worden weergegeven. De resultaten zijn gebaseerd op de eigenschap voor geïndexeerde metagegevens. | Nadat de metagegevens zijn bijgewerkt, moet de index opnieuw worden geïndexeerd om de juiste status van metagegevens voor elementen weer te geven. Zie [verplichte metagegevens](metadata-schemas.md#define-mandatory-metadata). |
 | Te veel zoekresultaten. | Brede zoekparameter. | U kunt overwegen het [zoekbereik](#scope)te beperken. Het gebruik van slimme tags kan meer zoekresultaten opleveren dan u had verwacht. Zie [zoekgedrag met slimme tags](#withsmarttags). |
 | Onverwante of gedeeltelijk verwante zoekresultaten. | Wijzigingen in zoekgedrag met slimme tags. | Begrijp [hoe zoekopdracht verandert na slimme tags](#withsmarttags). |
 | Geen suggesties voor automatisch aanvullen van elementen. | Nieuw geüploade elementen zijn nog niet geïndexeerd. De metagegevens zijn niet direct beschikbaar als suggesties wanneer u een trefwoord in de zoekbalk typt. | [!DNL Assets] wacht tot een time-outperiode (standaard één uur) is verstreken voordat een achtergrondtaak wordt uitgevoerd om de metagegevens voor alle nieuw geüploade of bijgewerkte elementen te indexeren en voegt de metagegevens vervolgens toe aan de lijst met suggesties. |
 | Geen zoekresultaten. | <ul><li>Elementen die overeenkomen met uw query bestaan niet. </li><li> Whitespace toegevoegd vóór de zoekquery. </li><li> Niet-ondersteund metagegevensveld bevat het trefwoord waarnaar u hebt gezocht.</li><li> Zoeken tijdens offline uitvoering van een element. </li></ul> | <ul><li>Zoeken met een ander trefwoord. U kunt ook slim labelen of zoeken op basis van gelijkenis gebruiken om de zoekresultaten te verbeteren. </li><li>[Bekende beperking](#limitations).</li><li>Niet alle metagegevensvelden worden in aanmerking genomen voor zoekopdrachten. Zie [bereik](#scope).</li><li>Later zoeken of on-time en off-time wijzigen voor de vereiste elementen.</li></ul> |
 | Zoekfilter of voorspelling is niet beschikbaar. | <ul><li>Het zoekfilter is niet geconfigureerd.</li><li>Het is niet beschikbaar voor uw aanmelding.</li><li>(Minder waarschijnlijk) De onderzoeksopties worden niet aangepast op de plaatsing u gebruikt.</li></ul> | <ul><li>Neem contact op met de beheerder om te controleren of de zoekaanpassingen beschikbaar zijn of niet.</li><li>Neem contact op met de beheerder om te controleren of uw account de rechten/machtigingen heeft om de aanpassing te gebruiken.</li><li>Neem contact op met de beheerder en controleer de beschikbare aanpassingen voor de [!DNL Assets] implementatie die u gebruikt.</li></ul> |
-| Bij het zoeken naar visueel vergelijkbare afbeeldingen ontbreekt een verwachte afbeelding. | <ul><li>Afbeelding is niet beschikbaar in [!DNL Experience Manager].</li><li>Afbeelding is niet geïndexeerd. Doorgaans wanneer het onlangs is geüpload.</li><li>Afbeelding heeft geen slimme tags.</li></ul> | <ul><li>Voeg de afbeelding toe aan [!DNL Assets].</li><li>Neem contact op met uw beheerder om de gegevensopslagruimte opnieuw te indexeren. Zorg er ook voor dat u de juiste index gebruikt.</li><li>Neem contact op met de beheerder om de relevante elementen een slimme tag te geven.</li></ul> |
+| Bij het zoeken naar visueel vergelijkbare afbeeldingen ontbreekt een verwachte afbeelding. | <ul><li>Afbeelding is niet beschikbaar in [!DNL Experience Manager].</li><li>Afbeelding is niet geïndexeerd. Doorgaans wanneer het onlangs is geüpload.</li><li>Afbeelding heeft geen slimme tags.</li></ul> | <ul><li>Voeg de afbeelding toe aan [!DNL Assets].</li><li>Neem contact op met de beheerder om de gegevensopslagruimte opnieuw te indexeren. Zorg er ook voor dat u de juiste index gebruikt.</li><li>Neem contact op met de beheerder om de relevante elementen een slimme tag te geven.</li></ul> |
 | Bij het zoeken naar visueel vergelijkbare afbeeldingen wordt een irrelevante afbeelding weergegeven. | Zichtbaar zoekgedrag. | [!DNL Experience Manager] geeft zoveel mogelijk relevante activa weer. Eventuele minder relevante afbeeldingen worden aan de resultaten toegevoegd, maar met een lagere zoekpositie. De kwaliteit van de overeenkomsten en de relevantie van de gezochte elementen nemen af wanneer u de zoekresultaten omlaag schuift. |
 | Wanneer u zoekresultaten selecteert en gebruikt, wordt niet op alle gezochte elementen ingegaan. | Met de [!UICONTROL Select All] optie selecteert u alleen de eerste 100 zoekresultaten in de kaartweergave en de eerste 200 zoekresultaten in de lijstweergave. |  |
 
 >[!MORELIKETHIS]
 >
->* [Handleiding voor het implementeren van Experience Managers](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/search-tutorial-develop.html)
+>* [[!DNL Experience Manager] zoekimplementatiegids](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/search-tutorial-develop.html)
 >* [Geavanceerde configuratie om zoekresultaten te verhogen](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/search-and-discovery/search-boost.html)
 >* [Zoeken naar slimme vertaling configureren](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/translation/smart-translation-search-technical-video-setup.html)
 

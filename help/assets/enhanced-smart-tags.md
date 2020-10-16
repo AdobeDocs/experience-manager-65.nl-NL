@@ -3,17 +3,15 @@ title: Verbeterde slimme tags
 description: Verbeterde slimme tags
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 78a101cdf0b4762ff9a3e7320db464df5b96300d
+source-git-commit: 5599e0d4a3e52a4ad98b776b9178722c7ac47cbc
 workflow-type: tm+mt
-source-wordcount: '1522'
-ht-degree: 8%
+source-wordcount: '1486'
+ht-degree: 1%
 
 ---
 
 
 # Verbeterde slimme tags {#enhanced-smart-tags}
-
-## Overzicht van verbeterde slimme tags {#overview-of-enhanced-smart-tags}
 
 Organisaties die met digitale middelen te maken hebben, maken steeds vaker gebruik van een door taxonomie gecontroleerde woordenlijst in metagegevens van bedrijfsmiddelen. In wezen, omvat het een lijst van sleutelwoorden die de werknemers, de partners, en de klanten algemeen gebruiken om naar digitale activa van een bepaalde klasse te verwijzen en te zoeken. Door elementen te labelen met een woordenschat die door de taxonomie wordt bepaald, kunt u ze gemakkelijk herkennen en ophalen door zoekopdrachten op basis van tags.
 
@@ -60,70 +58,36 @@ Het instapproces is volledig wanneer de beheerder de dienst vormt en gebruikers 
 
 ## Elementen en tags controleren {#reviewing-assets-and-tags}
 
-Nadat u aan boord wordt genomen, is het eerste wat u wilt doen een reeks markeringen identificeren die deze beelden in de context van uw zaken het best beschrijven.
+Nadat u aan boord bent, is het eerste wat u wilt doen een reeks markeringen identificeren die deze beelden in de context van uw zaken het best beschrijven.
 
-Hierna kunt u afbeeldingen bekijken om een set afbeeldingen te identificeren die het beste bij uw product passen voor een bepaalde zakelijke behoefte. Zorg ervoor dat de elementen in de beheerde set voldoen aan de trainingsrichtlijnen [voor](smart-tags-training-guidelines.md)Smart Content Service.
+Hierna kunt u afbeeldingen bekijken om een set afbeeldingen te identificeren die het beste bij uw product passen voor een bepaalde zakelijke behoefte. Zorg ervoor dat de elementen in de beheerde set voldoen aan de trainingsrichtlijnen [voor](/help/assets/config-smart-tagging.md#training-the-smart-content-service)Smart Content Service.
 
 Voeg de elementen toe aan een map en pas de tags toe op elk element vanaf de eigenschappenpagina. Voer vervolgens de trainingsworkflow uit op deze map. Met de gekromde set elementen kan de Smart Content Service effectief meer elementen trainen met behulp van uw taxonomidefinities.
 
 >[!NOTE]
 >
 >1. Opleiding is een onherroepelijk proces. Adobe raadt u aan de tags in de gekromde set elementen te controleren voordat u de Smart Content Service op de tags informeert.
->1. Zie de trainingsrichtlijnen voor [](smart-tags-training-guidelines.md)Smart Content Service voordat u gaat trainen voor een tag.
+>1. Zie de trainingsrichtlijnen voor [](/help/assets/config-smart-tagging.md#training-the-smart-content-service)Smart Content Service voordat u gaat trainen voor een tag.
 >1. Wanneer u de Slimme Dienst van de Inhoud voor het eerst opleidt, adviseert Adobe dat u het op minstens twee verschillende markeringen opleidt.
 
 
-## De Smart Content Service trainen {#training-the-smart-content-service}
+## De [!DNL Experience Manager] zoekresultaten begrijpen met slimme tags {#understandsearch}
 
-Als u wilt dat de Smart Content Service uw bedrijfskrionomie herkent, voert u deze uit op een reeks elementen die al tags bevatten die relevant zijn voor uw bedrijf. Na de training kan de service dezelfde taxonomie toepassen op een vergelijkbare set activa.
+Standaard combineert [!DNL Experience Manager] zoeken de zoektermen met een `AND` component. Het gebruik van slimme tags verandert dit standaardgedrag niet. Als u slimme tags gebruikt, voegt u een extra `OR` component toe om te zoeken naar zoektermen in de lijst, worden slimme tags toegepast. For example, consider searching for `woman running`. Elementen met alleen `woman` of alleen `running` trefwoorden in de metagegevens worden niet standaard in de zoekresultaten weergegeven. Een element dat is gelabeld met slimme tags `woman` `running` of met slimme tags, wordt echter weergegeven in een dergelijke zoekopdracht. De zoekresultaten zijn dus een combinatie van:
 
-U kunt de service meerdere keren trainen om de service beter in staat te stellen relevante tags toe te passen. Voer na elke trainingscyclus een labelworkflow uit en controleer of uw elementen correct zijn gecodeerd.
+* elementen met `woman` en `running` trefwoorden in de metagegevens.
 
-U kunt de Slimme Dienst van de Inhoud periodiek of op vereiste basis trainen.
+* elementen die zijn gelabeld met een van de trefwoorden.
 
->[!NOTE]
+De zoekresultaten die overeenkomen met alle zoektermen in metagegevensvelden worden eerst weergegeven, gevolgd door de zoekresultaten die overeenkomen met een van de zoektermen in de slimme tags. In het bovenstaande voorbeeld is de weergavevolgorde van zoekresultaten bij benadering:
+
+1. komt overeen met `woman running` de waarden in de verschillende metagegevensvelden.
+1. overeenkomende waarden `woman running` in slimme tags.
+1. overeenkomende met `woman` of van `running` in slimme tags.
+
+>[!CAUTION]
 >
->De trainingsworkflow wordt alleen uitgevoerd voor mappen.
-
-### Periodieke training {#periodic-training}
-
-U kunt de Slimme Dienst van de Inhoud toelaten om periodiek op de activa en bijbehorende markeringen binnen een omslag te trainen. Open de [!UICONTROL Properties] pagina van uw elementenmap, selecteer deze **[!UICONTROL Enable Smart Tags]** onder het **[!UICONTROL Details]** tabblad en sla de wijzigingen op.
-
-![enable_smart_tags](assets/enable_smart_tags.png)
-
-Als deze optie voor een map is geselecteerd, [!DNL Experience Manager] wordt automatisch een trainingsworkflow uitgevoerd om de Smart Content Service te trainen op de mappenelementen en de bijbehorende tags. Standaard wordt de trainingsworkflow wekelijks om 12:30 uur uitgevoerd op zaterdag.
-
-### Opleiding op aanvraag {#on-demand-training}
-
-U kunt de Slimme Dienst van de Inhoud wanneer vereist van de console van het Werkschema trainen.
-
-1. In [!DNL Experience Manager] interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
-1. From the **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL Smart Tags Training]** workflow and then click **[!UICONTROL Start Workflow]** from the toolbar.
-1. Blader in het **[!UICONTROL Run Workflow]** dialoogvenster naar de payload-map met de gecodeerde elementen voor het trainen van de service.
-1. Geef een titel op voor de workflow en voeg een opmerking toe. Klik vervolgens op **[!UICONTROL Run]**. De elementen en tags worden ter training aangeboden.
-
-   ![workflow_dialog](assets/workflow_dialog.png)
-
->[!NOTE]
->
->Nadat de middelen in een map zijn verwerkt voor training, worden alleen de gewijzigde middelen verwerkt in volgende trainingscycli.
-
-### Trainingsrapporten weergeven {#viewing-training-reports}
-
-Om te controleren of de Slimme Dienst van de Inhoud op uw markeringen in de trainingsreeks activa wordt getraind, herzie het rapport van de opleidingswerkstroom van de console van Rapporten.
-
-1. In [!DNL Experience Manager] interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Reports]**.
-1. In the **[!UICONTROL Asset Reports]** page, click **[!UICONTROL Create]**.
-1. Select the **[!UICONTROL Smart Tags Training]** report, and then click **[!UICONTROL Next]** from the toolbar.
-1. Geef een titel en beschrijving voor het rapport op. Laat onder **[!UICONTROL Schedule Report]** de optie **[!UICONTROL Now]** ingeschakeld. Als u het rapport voor later wilt plannen, selecteert u **[!UICONTROL Later]** en geeft u een datum en tijd op. Then, click **[!UICONTROL Create]** from the toolbar.
-1. Selecteer op de pagina **[!UICONTROL Asset Reports]** het rapport dat u hebt gegenereerd. Klik op de werkbalk om het rapport weer te geven. **[!UICONTROL View]**
-1. Bekijk de details van het rapport.
-
-   Het rapport geeft de trainingsstatus weer voor de tags die u hebt getraind. De groene kleur in de kolom **[!UICONTROL Training Status]** geeft aan dat de Smart Content Service is getraind voor de tag. Een gele kleur geeft aan dat de service niet volledig is getraind voor een bepaalde tag. Voeg in dit geval meer afbeeldingen met de desbetreffende tag toe en voer de trainingsworkflow uit om de service volledig op de tag te trainen.
-
-   Als dit rapport uw tags niet bevat, voert u de trainingsworkflow voor deze tags opnieuw uit.
-
-1. Als u het rapport wilt downloaden, selecteert u het in de lijst en klikt u op **[!UICONTROL Download]** de werkbalk. Het rapport wordt gedownload als een Microsoft Excel-spreadsheet.
+>Als het indexeren van Lucene uit [!DNL Adobe Experience Manager] toen wordt gedaan werkt het onderzoek dat op slimme markeringen wordt gebaseerd niet zoals verwacht.
 
 ## Elementen automatisch labelen {#tagging-assets-automatically}
 
@@ -143,10 +107,7 @@ Als deze optie voor een map is geselecteerd, worden de middelen in de map automa
 
 ### Tags op aanvraag {#on-demand-tagging}
 
-U kunt de tagwerkstroom activeren door uw elementen direct te labelen:
-
-* Workflowconsole
-* Tijdlijn
+U kunt de tagwerkstroom vanuit de workflowconsole of vanuit de tijdlijn activeren om uw elementen ogenblikkelijk te labelen.
 
 >[!NOTE]
 >
@@ -164,7 +125,7 @@ U kunt de tagwerkstroom activeren door uw elementen direct te labelen:
 
    ![tagging_dialog](assets/tagging_dialog.png)
 
-   Navigeer naar de map met middelen en controleer de tags om te controleren of de Smart Content Service uw elementen correct heeft gelabeld. Zie Slimme tags [beheren voor meer informatie](managing-smart-tags.md).
+   Navigeer naar de map met middelen en controleer de tags om te controleren of de Smart Content Service uw elementen correct heeft gelabeld.
 
 #### Elementen labelen vanaf de tijdlijn {#tagging-assets-from-the-timeline}
 
@@ -175,12 +136,29 @@ U kunt de tagwerkstroom activeren door uw elementen direct te labelen:
    ![start_workflow](assets/start_workflow.png)
 
 1. Selecteer de **[!UICONTROL DAM Smart Tag Assets]** workflow en geef een titel op voor de workflow.
-1. Klik op **[!UICONTROL Start]**. De workflow past de labels toe op elementen. Navigeer naar de map met middelen en controleer de tags om te controleren of de Smart Content Service uw elementen correct heeft gelabeld. Zie Slimme tags [beheren voor meer informatie](managing-smart-tags.md).
+1. Klik op **[!UICONTROL Start]**. De workflow past de labels toe op elementen. Navigeer naar de map met middelen en controleer de tags om te controleren of de Smart Content Service uw elementen correct heeft gelabeld.
 
 >[!NOTE]
 >
 >In de volgende coderingscycli worden alleen de gewijzigde elementen opnieuw gecodeerd met nieuw opgeleide tags. Zelfs ongewijzigde elementen worden echter gecodeerd als de ruimte tussen de laatste en huidige coderingscycli voor de coderingsworkflow meer dan 24 uur bedraagt. Voor workflows met periodieke labels worden ongewijzigde elementen gecodeerd wanneer de tijdruimte langer is dan zes maanden.
 
+## De toegepaste slimme tags curven of matigen {#manage-smart-tags}
+
+U kunt slimme tags beheren om eventuele onjuiste tags te verwijderen die aan uw merkafbeeldingen zijn toegewezen, zodat alleen de meest relevante tags worden weergegeven.
+
+Als u slimme tags modereert, kunt u zoekopdrachten op basis van tags naar afbeeldingen verder verfijnen door ervoor te zorgen dat de afbeelding in de zoekresultaten wordt weergegeven voor de meest relevante tags. In feite wordt hiermee de kans dat niet-verwante afbeeldingen in zoekresultaten worden weergegeven, verkleind.
+
+U kunt ook een hogere rangorde aan een tag toewijzen om de relevantie ervan voor een afbeelding te vergroten. Door een tag voor een afbeelding te promoten, neemt de kans toe dat de afbeelding in de zoekresultaten wordt weergegeven wanneer een zoekopdracht op basis van de desbetreffende tag wordt uitgevoerd.
+
+1. Zoek in het vak Onderzoek naar elementen op basis van een tag.
+1. Inspect de zoekresultaten om een afbeelding te identificeren die je niet relevant vindt voor je zoekopdracht.
+1. Select the image, and click **[!UICONTROL Manage Tags]** from the toolbar.
+1. Controleer de tags op de **[!UICONTROL Manage Tags]** pagina. Als u niet wilt dat de afbeelding wordt doorzocht op basis van een specifiek label, selecteert u het label en klikt u vervolgens op **[!UICONTROL Delete]** de werkbalk. U kunt ook op het `x` symbool naast een tag klikken.
+1. Als u een hogere rang aan een tag wilt toewijzen, selecteert u de tag en klikt u **[!UICONTROL Promote]** op de werkbalk. De tag die u promoot, wordt verplaatst naar de **[!UICONTROL Tags]** sectie.
+1. Click **[!UICONTROL Save]** and then click **[!UICONTROL OK]**
+1. Navigeer naar de **[!UICONTROL Properties]** pagina voor de afbeelding. Let erop dat de code die u hebt bevorderd relevanter wordt toegewezen en eerder in de zoekresultaten wordt weergegeven.
+
 ## Tips en beperkingen {#tips-best-practices-limitations}
 
 * Het gebruik van Smart Content Services is beperkt tot maximaal 2 miljoen getagde afbeeldingen per jaar. Alle gedupliceerde afbeeldingen die zijn verwerkt en getagd, worden allemaal geteld als een gecodeerde afbeelding.
+* Als u de labelworkflow uitvoert vanuit de tijdlijn, kunt u tags toepassen op maximaal 15 elementen tegelijk.

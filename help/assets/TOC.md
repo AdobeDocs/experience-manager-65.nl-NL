@@ -6,10 +6,10 @@ user-guide-title: Hulplijn voor middelen
 breadcrumb-title: Hulplijn voor middelen
 user-guide-description: Digitale middelen maken, beheren, leveren en optimaliseren.
 translation-type: tm+mt
-source-git-commit: caaf8c99d08cd88eca7d464816111cfb9f61590c
+source-git-commit: 5599e0d4a3e52a4ad98b776b9178722c7ac47cbc
 workflow-type: tm+mt
-source-wordcount: '595'
-ht-degree: 33%
+source-wordcount: '585'
+ht-degree: 34%
 
 ---
 
@@ -28,6 +28,7 @@ ht-degree: 33%
    + [ [!DNL Adobe Stock] Activa in activa](aem-assets-adobe-stock.md)
    + [3D-elementen voorvertonen](previewing-3d-assets.md)
    + [Map-assets en verzamelingen reviewen](bulk-approval.md)
+   + [Verbeterde slimme tags](enhanced-smart-tags.md)
    + [Activiteitsstroom in tijdlijn](activity-stream.md)
    + [Proceselementen](assets-workflow.md)
    + [Afbeeldingen met hyperlinks toevoegen](image-maps.md)
@@ -93,11 +94,12 @@ ht-degree: 33%
    + [Ondersteunde bestandsindelingen](assets-formats.md)
    + [Facetten doorzoeken](search-facets.md)
    + [Metagegevensconcepten begrijpen](metadata-concepts.md)
-   + [Configuratie van de metagegevensfunctionaliteit](metadata-config.md)
+   + [Functie voor metagegevens configureren](metadata-config.md)
+   + [Metagegevensschema&#39;s](metadata-schemas.md)
    + [Terugverwijzing naar vertoningen XMP](xmp-writeback.md)
    + [Delen van koppelingen van middelen](link-sharing.md)
    + [Rapporten over assets](asset-reports.md)
-   + [Verbeterde slimme tags](enhanced-smart-tags.md)
+   + [Slimme-inhoudsservice voor tags configureren](config-smart-tagging.md)
    + [Profielen voor het verwerken van metagegevens, afbeeldingen en video&#39;s](processing-profiles.md)
    + [Elementeditorpagina&#39;s maken en configureren](assets-finder-editor.md)
    + [Hulplijn voor middelengrootte](assets-sizing-guide.md)
@@ -117,12 +119,10 @@ ht-degree: 33%
    + [Camera Raw ondersteuning](camera-raw.md)
    + [MIME-type van activa detecteren met Apache Tika](detect-asset-mime-type-with-tika.md)
    + [Afbeeldingstransformatiebibliotheek](imaging-transcoding-library.md)
-   + [Metagegevensschema&#39;s](metadata-schemas.md)
    + [Meerdere paden voor verzamelingen, fragmenten en fragmentsjablonen](multi-tenancy.md)
    + [Watermerk uw elementen](watermarking.md)
    + [Elementsjablonen](asset-templates.md)
    + [Aanbevolen procedures voor het delen van mappen met [!DNL Creative Cloud]](aem-cc-folder-sharing-best-practices.md)
-   + [Slimme tags beheren](managing-smart-tags.md)
 + Brand Portal {#brandportal}
    + [ [!DNL Assets] Configureren met [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
    + [Elementen publiceren naar [!DNL Brand Portal]](brand-portal-publish-assets.md)
@@ -141,7 +141,6 @@ ht-degree: 33%
 + Elementen beheren {#managing}
    + [Digitale middelen beheren](managing-assets-touch-ui.md)
    + [Verzamelingen beheren](managing-collections-touch-ui.md)
-   + [Tags configureren met behulp van Smart Content Service](config-smart-tagging.md)
    + [Dubbele detectie inschakelen](duplicate-detection.md)
    + [Digitale elementen ordenen](organize-assets.md)
    + [Videoassets beheren](managing-video-assets.md)
@@ -158,5 +157,4 @@ ht-degree: 33%
    + [Samengestelde elementen beheren](managing-linked-subassets.md)
    + [Verwante activa](related-assets.md)
    + [Persoonlijke map delen](private-folder.md)
-   + [Trainingsrichtlijnen voor Smart Content Service](smart-tags-training-guidelines.md)
    + [Video-uitvoeringen](video-renditions.md)

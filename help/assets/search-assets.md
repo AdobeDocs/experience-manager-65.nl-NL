@@ -4,7 +4,7 @@ description: Leer hoe u de vereiste elementen [!DNL Adobe Experience Manager] in
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b14b377e52ab10c41355f069d97508b588d82216
+source-git-commit: 5599e0d4a3e52a4ad98b776b9178722c7ac47cbc
 workflow-type: tm+mt
 source-wordcount: '5917'
 ht-degree: 4%
@@ -358,7 +358,7 @@ Het visuele onderzoek gebruikt slim etiketteren en vereist [!DNL Experience Mana
 1. In CRXDE, in `/oak-index/damAssetLucene` knoop, plaats het `reindex` bezit aan `true`. Sla de wijzigingen op.
 1. (Optioneel) Als u het zoekformulier hebt aangepast, kopieert u het `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` knooppunt naar `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Sla de wijzigingen op.
 
-Zie slimme tags in de Experience Manager [en](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/smart-tags-feature-video-use.html) hoe u slimme tags [](/help/assets/managing-smart-tags.md)kunt beheren voor gerelateerde informatie.
+Zie slimme tags in de Experience Manager [en](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/smart-tags-feature-video-use.html) hoe u slimme tags [](/help/assets/enhanced-smart-tags.md)kunt beheren voor gerelateerde informatie.
 
 >[!CAUTION]
 >

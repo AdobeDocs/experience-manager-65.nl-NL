@@ -3,19 +3,33 @@ title: Asset tagging configureren met behulp van Smart Content Service
 description: Leer hoe u slimme tags en verbeterde slimme tags kunt configureren in [!DNL Adobe Experience Manager]de Smart Content Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 5599e0d4a3e52a4ad98b776b9178722c7ac47cbc
 workflow-type: tm+mt
-source-wordcount: '1016'
-ht-degree: 31%
+source-wordcount: '1921'
+ht-degree: 23%
 
 ---
 
 
-# Asset tagging configureren met behulp van de Smart Content Service {#configure-asset-tagging-using-the-smart-content-service}
+# Voorbereiden [!DNL Assets] op slimme tags {#configure-asset-tagging-using-the-smart-content-service}
 
-U kunt [!DNL Adobe Experience Manager] met de Slimme Dienst van de Inhoud integreren gebruikend de Console van de Ontwikkelaar van Adobe. Gebruik deze configuratie om tot de Slimme Dienst van de Inhoud van binnen toegang te hebben [!DNL Experience Manager].
+Voordat u met het labelen van uw middelen begint met Smart Content Services, dient u uw bestanden te integreren [!DNL Experience ManageR Assets] met de Adobe Developer Console om de slimme service van [!DNL Adobe Sensei]te gebruiken. Zodra gevormd treig de dienst gebruikend een paar beelden en een markering.
 
-Het artikel detailleert de volgende zeer belangrijke taken uit die worden vereist om de Slimme Dienst van de Inhoud te vormen. At the back end, the [!DNL Experience Manager] server authenticates your service credentials with the Adobe Developer Console gateway before forwarding your request to the Smart Content Service.
+Controleer het volgende voordat u de Smart Content Service gebruikt:
+
+* [Integreren met Adobe Developer Console](#integrate-adobe-io).
+* [Train the Smart Content Service](#training-the-smart-content-service).
+
+   <!-- TBD: This link will update soon after the new articles goes live on docs.adobe.com. Change it when new URL is available.
+  -->
+
+* Installeer het nieuwste servicepakket voor [Experience Managers](https://helpx.adobe.com/experience-manager/aem-releases-updates.html).
+
+## Integreren met Adobe Developer Console {#integrate-adobe-io}
+
+Wanneer u met de Console van de Ontwikkelaar van Adobe integreert, verklaart de [!DNL Experience Manager] server uw de dienstgeloofsbrieven met de gateway van de Console van de Ontwikkelaar van Adobe voor het door:sturen van uw verzoek aan de Slimme Dienst van de Inhoud voor authentiek. Voor integratie hebt u een Adobe ID-account nodig met beheerdersrechten voor de organisatie en de licentie voor Smart Content Service die u hebt aangeschaft en ingeschakeld voor uw organisatie.
+
+Om de Slimme Dienst van de Inhoud te vormen, volg deze top-level stappen:
 
 1. [Creeer een Slimme configuratie van de Dienst](#obtain-public-certificate) van de Inhoud binnen [!DNL Experience Manager] om een openbare sleutel te produceren. [Verkrijg een openbaar certificaat voor OAuth-integratie.](#obtain-public-certificate)
 
@@ -27,20 +41,7 @@ Het artikel detailleert de volgende zeer belangrijke taken uit die worden vereis
 
 1. Optionally, [enable auto-tagging on asset upload](#enable-smart-tagging-in-the-update-asset-workflow-optional).
 
-## Vereisten {#prerequisites}
-
-Voordat u de Smart Content Service gebruikt, moet u het volgende doen om een integratie te maken in de Adobe Developer Console:
-
-* Een Adobe ID-account met beheerdersrechten voor de organisatie.
-
-* De Slimme Dienst van de Inhoud wordt toegelaten voor uw organisatie.
-
-<!-- TBD: This link will update soon after the new articles goes live on docs.adobe.com. Change it when new URL is available.
--->
-
-Om Verbeterde Slimme Markeringen toe te laten, naast het bovenstaande, installeer ook het recentste de dienstpak [van de](https://helpx.adobe.com/experience-manager/aem-releases-updates.html)Experience Manager.
-
-## Creeer de Slimme configuratie van de Dienst van de Inhoud om te verkrijgen {#obtain-public-certificate}
+### Configuratie van Smart Content Service maken om een openbaar certificaat te verkrijgen {#obtain-public-certificate}
 
 Met een openbaar certificaat kunt u uw profiel verifiëren op Adobe Developer Console.
 
@@ -74,7 +75,7 @@ Met een openbaar certificaat kunt u uw profiel verifiëren op Adobe Developer Co
 
    *Afbeelding: Instellingen voor service voor slimme tags*
 
-### Reconfigure when a certificate expires {#certrenew}
+#### Reconfigure when a certificate expires {#certrenew}
 
 Nadat een certificaat is verlopen, wordt het niet meer vertrouwd. U kunt een verlopen certificaat niet verlengen. Voer de onderstaande stappen uit om een nieuw certificaat toe te voegen.
 
@@ -87,7 +88,7 @@ Nadat een certificaat is verlopen, wordt het niet meer vertrouwd. U kunt een ver
    ![Verwijder het bestaande zoekitem voor gelijkenis in Keystore om een nieuw beveiligingscertificaat toe te voegen](assets/smarttags_delete_similaritysearch_keystore.png)
 
 
-   *Afbeelding: Verwijder de bestaande`similaritysearch`-vermelding in het sleutelarchief om een nieuw beveiligingscertificaat toe te voegen.*
+   *Afbeelding: Verwijder de bestaande `similaritysearch`-vermelding in het sleutelarchief om een nieuw beveiligingscertificaat toe te voegen.*
 
 1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Legacy Cloud Services]**. Klik op **[!UICONTROL Asset Smart Tags]** > **[!UICONTROL Show Configuration]** > **[!UICONTROL Available Configurations]**. Klik op de gewenste configuratie.
 
@@ -95,7 +96,7 @@ Nadat een certificaat is verlopen, wordt het niet meer vertrouwd. U kunt een ver
 
 1. Ga naar [https://console.adobe.io](https://console.adobe.io) en navigeer naar de bestaande Smart Content Services op de **[!UICONTROL Integrations]** pagina. Upload het nieuwe certificaat. For more information, see the instructions in [Create Adobe Developer Console integration](#create-adobe-i-o-integration).
 
-## Integratie van Adobe Developer Console maken {#create-adobe-i-o-integration}
+### Integratie van Adobe Developer Console maken {#create-adobe-i-o-integration}
 
 Als u API&#39;s voor Smart Content Service wilt gebruiken, maakt u een integratie in de Adobe Developer Console om deze te verkrijgen [!UICONTROL API Key] (gegenereerd op [!UICONTROL CLIENT ID] gebied van de integratie van de Adobe Developer Console), [!UICONTROL TECHNICAL ACCOUNT ID], [!UICONTROL ORGANIZATION ID]en [!UICONTROL CLIENT SECRET] voor [!UICONTROL Assets Smart Tagging Service Settings] de configuratie van de cloud in [!DNL Experience Manager].
 
@@ -120,7 +121,7 @@ Als u API&#39;s voor Smart Content Service wilt gebruiken, maakt u een integrati
 
    *Afbeelding: Gegevens over de integratie in de Adobe Developer Console*
 
-## Smart Content Service configureren {#configure-smart-content-service}
+### Smart Content Service configureren {#configure-smart-content-service}
 
 To configure the integration, use the values of [!UICONTROL TECHNICAL ACCOUNT ID], [!UICONTROL ORGANIZATION ID], [!UICONTROL CLIENT SECRET], and [!UICONTROL CLIENT ID] fields from the Adobe Developer Console integration. Door een cloud-configuratie met slimme tags te maken, kunnen API-aanvragen van de [!DNL Experience Manager] implementatie worden geverifieerd.
 
@@ -139,7 +140,7 @@ To configure the integration, use the values of [!UICONTROL TECHNICAL ACCOUNT ID
    | [!UICONTROL Organization ID] | [!UICONTROL ORGANIZATION ID] |
    | [!UICONTROL Client Secret] | [!UICONTROL CLIENT SECRET] |
 
-## De configuratie valideren {#validate-the-configuration}
+### De configuratie valideren {#validate-the-configuration}
 
 Nadat u de configuratie hebt voltooid, kunt u een JMX MBean gebruiken om de configuratie te bevestigen. Voer de volgende stappen uit om te valideren.
 
@@ -153,7 +154,7 @@ Nadat u de configuratie hebt voltooid, kunt u een JMX MBean gebruiken om de conf
 
 De validatieresultaten worden in hetzelfde dialoogvenster weergegeven.
 
-## Slimme tags toepassen inschakelen in de [!UICONTROL DAM Update Asset] workflow (optioneel) {#enable-smart-tagging-in-the-update-asset-workflow-optional}
+### Slimme tags toepassen inschakelen in de [!UICONTROL DAM Update Asset] workflow (optioneel) {#enable-smart-tagging-in-the-update-asset-workflow-optional}
 
 1. Ga in [!DNL Experience Manager] naar **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
 
@@ -165,7 +166,7 @@ De validatieresultaten worden in hetzelfde dialoogvenster weergegeven.
 
    ![De stap Asset met slimme tag toevoegen na de stap met de procesminiaturen in de DAM Update Asset-workflow](assets/smart-tag-in-dam-update-asset-workflow.png)
 
-   *Afbeelding: Voeg de stap Slimme tag-elementen toe na de stap met de procesminiaturen in de[!UICONTROL DAM Update Asset]workflow.*
+   *Afbeelding: Voeg de stap Slimme tag-elementen toe na de stap met de procesminiaturen in de [!UICONTROL DAM Update Asset] workflow.*
 
 1. Open de stap in de bewerkingsmodus. Ga naar **[!UICONTROL Advanced Settings]** en controleer of de optie **[!UICONTROL Handler Advance]** is ingeschakeld.
 
@@ -190,10 +191,102 @@ De validatieresultaten worden in hetzelfde dialoogvenster weergegeven.
 
 1. Klik op **[!UICONTROL OK]** om de processtap te sluiten en sla de workflow op.
 
+## De Smart Content Service trainen {#training-the-smart-content-service}
+
+Als u wilt dat de Smart Content Service uw bedrijfskrionomie herkent, voert u deze uit op een reeks elementen die al tags bevatten die relevant zijn voor uw bedrijf. Om uw merkbeelden effectief te etiketteren, vereist de Slimme Dienst van de Inhoud dat de trainingsbeelden aan bepaalde richtlijnen voldoen. Na de training kan de service dezelfde taxonomie toepassen op een vergelijkbare set activa.
+
+U kunt de service meerdere keren trainen om de service beter in staat te stellen relevante tags toe te passen. Voer na elke trainingscyclus een labelworkflow uit en controleer of uw elementen correct zijn gecodeerd.
+
+U kunt de Slimme Dienst van de Inhoud periodiek of op vereiste basis trainen.
+
+>[!NOTE]
+>
+>De trainingsworkflow wordt alleen uitgevoerd voor mappen.
+
+### Richtsnoeren voor opleiding {#guidelines-for-training}
+
+Voor de beste resultaten moeten de afbeeldingen in de trainingsset voldoen aan de volgende richtlijnen:
+
+**Hoeveelheid en grootte:** Minimaal 30 afbeeldingen per tag. Minimaal 500 pixels aan de langere zijde.
+
+**Coherentie**: Afbeeldingen voor een tag moeten visueel op elkaar lijken.
+
+Het is bijvoorbeeld geen goed idee om al deze afbeeldingen als `my-party` (voor training) te labelen, omdat ze er anders uitzien.
+
+![Illustratieve afbeeldingen ter illustratie van de richtlijnen voor training](/help/assets/assets/do-not-localize/coherence.png)
+
+**Dekking**: De beelden in de training moeten voldoende uiteenlopend zijn. Het is de bedoeling om een paar maar redelijk verschillende voorbeelden te geven, zodat de Experience Manager leert zich te richten op de juiste dingen. Als u dezelfde tag toepast op visueel verschillende afbeeldingen, moet u ten minste vijf voorbeelden van elke soort opnemen.
+
+Neem voor het vervolgkeuzemodel ** van het label bijvoorbeeld meer trainingsafbeeldingen op, vergelijkbaar met de gemarkeerde afbeelding hieronder, zodat de service vergelijkbare afbeeldingen nauwkeuriger kan identificeren tijdens het labelen.
+
+![Illustratieve afbeeldingen ter illustratie van de richtlijnen voor training](/help/assets/assets/do-not-localize/coverage_1.png)
+
+**Vervorming/obstructie**: De dienst rijdt beter op beelden die minder afleiding hebben (vooraanstaande achtergronden, niet-verwante begeleiding, zoals voorwerpen/personen met het hoofdonderwerp).
+
+Voor de tag *casual-shoe* is de tweede afbeelding bijvoorbeeld geen goede trainingskandidaat.
+
+![Illustratieve afbeeldingen ter illustratie van de richtlijnen voor training](/help/assets/assets/do-not-localize/distraction.png)
+
+**Volledigheid:** Als een afbeelding in aanmerking komt voor meer dan één tag, voegt u alle relevante tags toe voordat u de afbeelding opneemt voor training. For example, for tags, such as `raincoat` and `model-side-view`, add both the tags on the eligible asset before including it for training.
+
+![Illustratieve afbeeldingen ter illustratie van de richtlijnen voor training](/help/assets/assets/do-not-localize/completeness.png)
+
+>[!NOTE]
+>
+>Of de Smart Content Service uw tags kan trainen en deze op andere afbeeldingen kan toepassen, hangt af van de kwaliteit van de afbeeldingen die u voor de training gebruikt. Voor de beste resultaten raadt Adobe u aan visueel vergelijkbare afbeeldingen te gebruiken om de service voor elke tag op te leiden.
+
+### Periodieke training {#periodic-training}
+
+U kunt de Slimme Dienst van de Inhoud toelaten om periodiek op de activa en bijbehorende markeringen binnen een omslag te trainen. Open de [!UICONTROL Properties] pagina van uw elementenmap, selecteer deze **[!UICONTROL Enable Smart Tags]** onder het **[!UICONTROL Details]** tabblad en sla de wijzigingen op.
+
+![enable_smart_tags](assets/enable_smart_tags.png)
+
+Als deze optie voor een map is geselecteerd, [!DNL Experience Manager] wordt automatisch een trainingsworkflow uitgevoerd om de Smart Content Service te trainen op de mappenelementen en de bijbehorende tags. Standaard wordt de trainingsworkflow wekelijks om 12:30 uur uitgevoerd op zaterdag.
+
+### Opleiding op aanvraag {#on-demand-training}
+
+U kunt de Slimme Dienst van de Inhoud wanneer vereist van de console van het Werkschema trainen.
+
+1. In [!DNL Experience Manager] interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
+1. From the **[!UICONTROL Workflow Models]** page, select the **[!UICONTROL Smart Tags Training]** workflow and then click **[!UICONTROL Start Workflow]** from the toolbar.
+1. Blader in het **[!UICONTROL Run Workflow]** dialoogvenster naar de payload-map met de gecodeerde elementen voor het trainen van de service.
+1. Geef een titel op voor de workflow en voeg een opmerking toe. Klik vervolgens op **[!UICONTROL Run]**. De elementen en tags worden ter training aangeboden.
+
+   ![workflow_dialog](assets/workflow_dialog.png)
+
+>[!NOTE]
+>
+>Nadat de middelen in een map zijn verwerkt voor training, worden alleen de gewijzigde middelen verwerkt in volgende trainingscycli.
+
+### Trainingsrapporten weergeven {#viewing-training-reports}
+
+Om te controleren of de Slimme Dienst van de Inhoud op uw markeringen in de trainingsreeks activa wordt getraind, herzie het rapport van de opleidingswerkstroom van de console van Rapporten.
+
+1. In [!DNL Experience Manager] interface, go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Reports]**.
+1. In the **[!UICONTROL Asset Reports]** page, click **[!UICONTROL Create]**.
+1. Select the **[!UICONTROL Smart Tags Training]** report, and then click **[!UICONTROL Next]** from the toolbar.
+1. Geef een titel en beschrijving voor het rapport op. Laat onder **[!UICONTROL Schedule Report]** de optie **[!UICONTROL Now]** ingeschakeld. Als u het rapport voor later wilt plannen, selecteert u **[!UICONTROL Later]** en geeft u een datum en tijd op. Then, click **[!UICONTROL Create]** from the toolbar.
+1. Selecteer op de pagina **[!UICONTROL Asset Reports]** het rapport dat u hebt gegenereerd. Klik op de werkbalk om het rapport weer te geven. **[!UICONTROL View]**
+1. Bekijk de details van het rapport.
+
+   Het rapport geeft de trainingsstatus weer voor de tags die u hebt getraind. De groene kleur in de kolom **[!UICONTROL Training Status]** geeft aan dat de Smart Content Service is getraind voor de tag. Een gele kleur geeft aan dat de service niet volledig is getraind voor een bepaalde tag. Voeg in dit geval meer afbeeldingen met de desbetreffende tag toe en voer de trainingsworkflow uit om de service volledig op de tag te trainen.
+
+   Als dit rapport uw tags niet bevat, voert u de trainingsworkflow voor deze tags opnieuw uit.
+
+1. Als u het rapport wilt downloaden, selecteert u het in de lijst en klikt u op **[!UICONTROL Download]** de werkbalk. Het rapport wordt gedownload als een Microsoft Excel-spreadsheet.
+
+## Beperkingen {#limitations}
+
+* Verbeterde slimme tags zijn gebaseerd op leermodellen van afbeeldingen en hun tags. Deze modellen zijn niet altijd perfect bij het identificeren van tags. De huidige versie van de Smart Content Service heeft de volgende beperkingen:
+
+   * Kan subtiele verschillen in afbeeldingen niet herkennen. Bijvoorbeeld dunne en standaard gemonteerde hemden.
+   * Kan geen tags identificeren op basis van kleine patronen/delen van een afbeelding. Bijvoorbeeld logo&#39;s op T-shirts.
+   * Tags worden ondersteund in de landinstellingen die worden ondersteund in. [!DNL Experience Manager] Zie Opmerkingen bij de release [Smart Content Services voor een lijst met talen](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/smart-content-service-release-notes.html).
+
+* Als u wilt zoeken naar elementen met slimme tags (normaal of uitgebreid), gebruikt u de optie [!DNL Assets] Zoeken (full-text zoeken). Er is geen afzonderlijke zoekvoorspelling voor slimme tags.
+
 >[!MORELIKETHIS]
 >
->* [Slimme tags beheren](managing-smart-tags.md)
 >* [Overzicht van slimme tags en hoe deze kunnen worden getraind](enhanced-smart-tags.md)
->* [Richtlijnen en regels voor de opleiding van de Smart Content Service](smart-tags-training-guidelines.md)
 >* [Videozelfstudie over het configureren van slimme tags](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/smart-tags-technical-video-setup.html)
 

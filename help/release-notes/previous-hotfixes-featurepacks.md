@@ -1,11 +1,11 @@
 ---
-title: '[!DNL Adobe Experience Manager] 6.5 Opmerkingen bij de vorige release van Service Pack.'
+title: '[!DNL Adobe Experience Manager] 6.5 Vorige Opmerkingen bij de release Service Pack.'
 description: De nota's van de versie voor [!DNL Adobe Experience Manager] 6.5 de Pakken van de Dienst.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: 117208c634613559bb13556e12f094add70006e2
+source-git-commit: 263a25b70fe4a3e7de65b47f07932d2e5f3d0197
 workflow-type: tm+mt
-source-wordcount: '11375'
+source-wordcount: '11371'
 ht-degree: 0%
 
 ---
@@ -113,7 +113,7 @@ Hier volgt een lijst met oplossingen uit de release van [!DNL Experience Manager
 
 * Bij het navigeren door boomstructuur worden verschillende elementen van het besturingselement voor de structuurweergave nu correct aangekondigd door schermlezers (NPR-33304).
 
-* Verschillende versies van elementen in de [!UICONTROL Timeline] weergave op de pagina met informatie over elementen zijn nu toegankelijk met behulp van toetsenbordtoetsen (NPR-33283).
+* Verschillende versies van elementen in de [!UICONTROL Timeline] weergave op de pagina met informatie over elementen zijn nu toegankelijk via toetsenbordtoetsen (NPR-33283).
 
 * Namen van zoeksuggesties die worden weergegeven in de keuzelijst Omnzoekopdracht worden nu door schermlezers aangekondigd wanneer ze de zoekfunctie gebruiken (NPR-33280).
 
@@ -693,7 +693,7 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 
 * Er wordt een uitzondering weergegeven bij [!DNL Experience Manager] het opvragen van taakdetails van een element (CQ-4283569).
 
-### Sites {#sites}
+### Sites
 
 * Als de overerving van LiveCopy is verbroken, worden op live kopieerpagina&#39;s links naar taalkopieën weergegeven in plaats van LiveCopy-koppelingen (NPR-30980).
 * Voor een nieuwe blauwdruk, als het aantal verslagen meer dan 40 is, slechts worden de eerste 40 verslagen getoond. Blauwdruk geeft lege regels weer voor de rest van de records (NPR-31182).
@@ -725,7 +725,7 @@ Remove one mention of this fix.
 
 * Er worden twee kalenderpop-ups weergegeven bij het selecteren van de optie Einddatum in een vertaaltaak (NPR-31270).
 
-### Platform {#platform}
+### Platform
 
 * De Mime typeoptie in de console van het Web werkt niet (NPR-31108).
 
@@ -745,7 +745,7 @@ Remove one mention of this fix.
 
 * De `org.apache.sling.distribution.api` bundel is verborgen in de configuratiemanager en is daarom niet beschikbaar voor aangepaste bundels (NPR-31720).
 
-### Projecten {#projects}
+### Projecten
 
 * Schakelen tussen kalenderweergaven werkt niet (NPR-31271).
 
@@ -854,7 +854,7 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 * Repareren om ervoor te zorgen dat de de kolommening van Activa slechts huurdersspecifieke inhoud toont.
 * Oplossing voor wijzigingen in stijlaccordeon in zoekresultaten.
 
-### Assets {#assets}
+### Assets
 
 **Verbeteringen voor producten**
 
@@ -961,7 +961,7 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 
 * De bijgewerkte instantie van 6.3.3.2 tot 6.5 resulteert in dubbele configuraties OSGi. NPR-30130: Hotfix voor CQ-4274016
 
-### Integratie {#integration}
+### Integratie
 
 * De aangepaste inhoud wordt pas correct weergegeven op de publicatieversie als de instantie opnieuw is gestart. NPR-30377: Hotfix voor CQ-4273706
 * Wanneer u Starten op een website configureert, wordt voor het bibliotheekadres een schuine streep (/) toegevoegd, zodat u telkens handmatig kunt ingrijpen. NPR-30694: Hotfix voor CQ-4275501
@@ -976,7 +976,7 @@ De belangrijkste markeringen voor [!DNL Experience Manager] 6.5.2.0 vormen zijn:
 
 * Instelling Automatisch toegevoegd aan `RenderAtClient` de API voor `PDFFormRenderOptions` [!DNL Experience Manager] Forms OSGi.
 
-#### Forms-invoegtoepassing {#forms-add-on-package}
+#### Forms-invoegtoepassing
 
 **Back-end integratie**
 
@@ -1006,7 +1006,7 @@ De belangrijkste markeringen voor [!DNL Experience Manager] 6.5.2.0 vormen zijn:
 
 * Wanneer u in de modus Bladeren een HTML5-formulier leest met toegang tot niet-visuele desktops, wordt in de Chrome-browser vóór elke SVG (Scalable Vector Graphic) in het formulierontwerp &quot;graphic&quot; gelezen. NPR-30449: Hotfix voor CQ-4274732
 
-#### Forms JEE-installatieprogramma {#forms-jee-installer}
+#### Forms JEE-installatieprogramma
 
 **Forms - Documentbeveiliging**
 
@@ -1021,7 +1021,7 @@ De belangrijkste markeringen voor [!DNL Experience Manager] 6.5.2.0 vormen zijn:
 * De HTMLtoPDF-service geeft maxReuseCount niet weer in de JMX-console. NPR-30134, NPR-30304: Hotfix voor CQ-4273763
 * Het toevoegen van of het uitgeven van een verbinding van de Dienst van het Web door de Webdiensten van [!DNL Experience Manager Forms] Workbench aan te halen veroorzaakt een fout: ClassNotFoundException org.apache.axis.message.SOAPBodyElement. NPR-30105: Hotfix voor CQ-4273217
 
-### Inclusief functiepakketten {#feature-packs-included}
+### Inclusief functiepakketten
 
 >[!NOTE]
 >
@@ -1101,10 +1101,10 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 
 * Het veld Kalenderkiezer van deelnemer in dialoogvenster is verbroken. NPR-29727: Hotfix voor CQ-4270423
 
-### WCM - SPA-editor
+### WCM - SPA Editor
 
 * Toegelaten het halen van pre-teruggegeven inhoud van een ver eindpunt. Hotfix voor CQ-4270238
-* Waarschuwingen in logboeken wanneer het openen van een Pagina van het Malplaatje van het KUUROORD server-kant teruggegeven. Hotfix voor CQ-4270238
+* Waarschuwingen in logbestanden bij het openen van een SPA Sjabloonpagina die op de server wordt weergegeven. Hotfix voor CQ-4270238
 
 ### WCM - MSM
 
@@ -1160,7 +1160,7 @@ De belangrijkste hooglichten voor [!DNL Experience Manager Forms] 6.5.1.0 zijn:
 
 **Backend-integratie**
 
-* Fout bij het ophalen van de beveiligde Web Service Definition Language (WSDL). NPR-29945: Hotfix voor CQ-4270777
+* Fout bij het ophalen van de beveiligde Web Service Definition Language (WSDL). NPR-29944: Hotfix voor CQ-4270777
 * Als een formulier op IBM WebSphere [!DNL Experience Manager Forms] is geïnstalleerd, mislukt het maken van een formuliergegevensmodel op basis van SOAP. Hotfix voor CQ-4251134
 * Toegelaten steun voor de Actieve Diensten van de Federatie van de Folder (ADFS) v3.0 voor de Integratie van de Dynamiek van Microsoft op-gebouw. Hotfix voor CQ-4270586
 * Als de titel van een gegevensbron wordt gewijzigd, wordt de bijgewerkte titel niet weergegeven in het formuliergegevensmodel. Hotfix voor CQ-4265599

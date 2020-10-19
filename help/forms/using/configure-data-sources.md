@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: ee2b13f2fc1f044f119ff54f332844d458663287
 workflow-type: tm+mt
-source-wordcount: '1446'
+source-wordcount: '1661'
 ht-degree: 0%
 
 ---
@@ -21,21 +21,21 @@ ht-degree: 0%
 
 ![](do-not-localize/data-integeration.png)
 
-De Integratie van Gegevens van AEM Forms staat u toe om met ongelijksoortige gegevensbronnen te vormen en te verbinden. De volgende types worden gesteund uit-van-de-doos. Met weinig aanpassing kunt u echter ook andere gegevensbronnen integreren.
+Met AEM Forms Data Integration kunt u verschillende gegevensbronnen configureren en verbinden. De volgende types worden gesteund uit-van-de-doos. Met weinig aanpassing kunt u echter ook andere gegevensbronnen integreren.
 
 * Relationele databases - MySQL, Microsoft SQL Server, IBM DB2 en Oracle RDBMS
-* AEM-gebruikersprofiel
+* Gebruikersprofiel AEM
 * RESTful-webservices
 * SOAP-webservices
 * OData-diensten
 
-De integratie van gegevens steunt OAuth2.0, Basisauthentificatie, en API Zeer belangrijke authentificatietypes out-of-the-box, en staat het uitvoeren van douaneauthentificatie voor de toegang tot van de Webdiensten toe. Terwijl RESTful, op ZEEP-Gebaseerde, en de diensten OData in AEM cloud services worden gevormd, wordt JDBC voor relationele gegevensbestanden en schakelaar voor AEM gebruikersprofiel gevormd in AEM Webconsole.
+De integratie van gegevens steunt OAuth2.0, Basisauthentificatie, en API Zeer belangrijke authentificatietypes out-of-the-box, en staat het uitvoeren van douaneauthentificatie voor de toegang tot van de Webdiensten toe. Terwijl RESTful, op ZEEP-Gebaseerde, en de diensten OData in de Diensten van de Wolk van AEM worden gevormd, JDBC voor relationele gegevensbestanden en schakelaar voor AEM gebruikersprofiel worden gevormd in AEM Webconsole.
 
 ## Relationele database configureren {#configure-relational-database}
 
-U kunt relationele databases configureren met AEM Web Console Configuration. Ga als volgt te werk:
+U kunt relationele gegevensbestanden vormen gebruikend AEM de Configuratie van de Console van het Web. Ga als volgt te werk:
 
-1. Ga naar AEM-webconsole op https://server:host/system/console/configMgr.
+1. Ga naar AEM webconsole op https://server:host/system/console/configMgr.
 1. Zoek naar **[!UICONTROL Apache Sling Connection Pooled DataSource]** configuratie. Tik om de configuratie te openen in de bewerkingsmodus.
 1. In de configuratiedialoog, specificeer de details voor het gegevensbestand u, zoals wilt vormen:
 
@@ -44,6 +44,7 @@ U kunt relationele databases configureren met AEM Web Console Configuration. Ga 
    * Java-klassenaam voor het JDBC-stuurprogramma
    * URI voor JDBC-verbinding
    * Gebruikersnaam en wachtwoord om verbinding te maken met het JDBC-stuurprogramma
+
    >[!NOTE]
    >
    >Zorg ervoor dat u gevoelige informatie zoals wachtwoorden codeert alvorens de gegevensbron te vormen. Coderen:
@@ -51,7 +52,8 @@ U kunt relationele databases configureren met AEM Web Console Configuration. Ga 
    >    
    >    
    >    1. Ga naar https://&#39;[server]:[port]&#39;/system/console/crypto.
-   >    1. Geef in het **[!UICONTROL Plain Text]** veld het wachtwoord of een tekenreeks op die u wilt versleutelen en klik op **[!UICONTROL Protect]**.
+   >    1. Geef in het **[!UICONTROL Plain Text]** veld het wachtwoord of een willekeurige tekenreeks op die u wilt versleutelen en tikken **[!UICONTROL Protect]**.
+
    >    
    >    
    >    
@@ -65,11 +67,11 @@ U kunt relationele databases configureren met AEM Web Console Configuration. Ga 
 
 1. Tik **[!UICONTROL Save]** om de configuratie op te slaan.
 
-## AEM-gebruikersprofiel configureren {#configure-aem-user-profile}
+## Gebruikersprofiel AEM configureren {#configure-aem-user-profile}
 
-U kunt het AEM-gebruikersprofiel configureren met de configuratie Gebruikersprofielverbinding in AEM-webconsole. Ga als volgt te werk:
+U kunt AEM gebruikersprofiel vormen gebruikend de Configuratie van de Verbinding van het Profiel van de Gebruiker in AEM Console van het Web. Ga als volgt te werk:
 
-1. Ga naar AEM-webconsole op https://&#39;[server]:[poort]&#39;system/console/configMgr.
+1. Ga naar AEM webconsole op https://&#39;[server]:[port]&#39;system/console/configMgr.
 1. Zoek **[!UICONTROL AEM Forms Data Integrations - User Profile Connector Configuration]** en tik om de configuratie in bewerkingsmodus te openen.
 1. In het dialoogvenster Configuratie gebruikersprofiel-aansluiting kunt u eigenschappen van gebruikersprofielen toevoegen, verwijderen of bijwerken. De opgegeven eigenschappen zijn beschikbaar voor gebruik in het formuliergegevensmodel. Gebruik de volgende indeling om gebruikersprofieleigenschappen op te geven:
 
@@ -79,9 +81,10 @@ U kunt het AEM-gebruikersprofiel configureren met de configuratie Gebruikersprof
 
    * `name=profile/phoneNumber,type=string`
    * `name=profile/empLocation/*/city,type=string`
+
    >[!NOTE]
    >
-   >In het bovenstaande voorbeeld ***** worden alle knooppunten onder het `profile/empLocation/` knooppunt in het AEM-gebruikersprofiel in de CRXDE-structuur aangegeven. Dit betekent dat het formuliergegevensmodel toegang heeft tot de `city` eigenschap van het type `string` in elk knooppunt onder het `profile/empLocation/` knooppunt. Nochtans, moeten de knopen die het gespecificeerde bezit bevatten een verenigbare structuur volgen.
+   >In ***** in het bovenstaande voorbeeld worden alle knooppunten onder het `profile/empLocation/` knooppunt in AEM gebruikersprofiel in de CRXDE-structuur aangegeven. Dit betekent dat het formuliergegevensmodel toegang heeft tot de `city` eigenschap van het type `string` in elk knooppunt onder het `profile/empLocation/` knooppunt. Nochtans, moeten de knopen die het gespecificeerde bezit bevatten een verenigbare structuur volgen.
 
 1. Tik **[!UICONTROL Save]** om de configuratie op te slaan.
 
@@ -90,7 +93,7 @@ U kunt het AEM-gebruikersprofiel configureren met de configuratie Gebruikersprof
 >[!NOTE]
 Configuratie voor map met cloudservices is vereist voor het configureren van cloudservices voor RESTful-, SOAP- en OData-services.
 
-Alle configuraties van de cloudservice in AEM worden geconsolideerd in de `/conf` map in de AEM-opslagplaats. Standaard bevat de `conf` map de `global` map waarin u cloudserviceconfiguraties kunt maken. U moet deze echter handmatig inschakelen voor cloudconfiguraties. U kunt ook aanvullende mappen maken `conf` om configuraties voor cloudservices te maken en in te delen.
+Alle configuraties van de cloudservice in AEM worden geconsolideerd in de `/conf` map in AEM opslagplaats. Standaard bevat de `conf` map de `global` map waarin u cloudserviceconfiguraties kunt maken. U moet deze echter handmatig inschakelen voor cloudconfiguraties. U kunt ook aanvullende mappen maken `conf` om configuraties voor cloudservices te maken en in te delen.
 
 De map configureren voor configuraties van cloudservices:
 
@@ -105,11 +108,11 @@ De map configureren voor configuraties van cloudservices:
 
 1. In the **[!UICONTROL Configuration Browser]**, tap **[!UICONTROL Create]**.
 1. Geef in het **[!UICONTROL Create Configuration]** dialoogvenster een titel op voor de map en schakel deze in **[!UICONTROL Cloud Configurations]**.
-1. Tik **[!UICONTROL Create]** om de map te maken die geschikt is voor cloudserviceconfiguraties.
+1. Tik **[!UICONTROL Create]** om de map te maken die geschikt is voor configuraties van de cloudservice.
 
 ## RESTful-webservices configureren {#configure-restful-web-services}
 
-RESTful Webdienst kan worden beschreven gebruikend de specificaties [van de](https://swagger.io/specification/) Swagger in formaat JSON of YAML in een Swagger definitiedossier. Als u de RESTful-webservice in AEM cloud services wilt configureren, dient u ervoor te zorgen dat het Swagger-bestand zich op uw bestandssysteem bevindt of de URL waar het bestand wordt gehost.
+RESTful Webdienst kan worden beschreven gebruikend de specificaties [van de](https://swagger.io/specification/) Swagger in formaat JSON of YAML in een Swagger definitiedossier. Als u de RESTful-webservice in AEM-cloudservices wilt configureren, dient u ervoor te zorgen dat het Swagger-bestand zich op uw bestandssysteem bevindt of de URL waar het bestand wordt gehost.
 
 Doe het volgende de diensten RESTful vormen:
 
@@ -127,14 +130,17 @@ Doe het volgende de diensten RESTful vormen:
       * Host: De domeinnaam of het IP-adres van de host die de REST API aanbiedt. Het is een verplicht veld.
       * Basispad: Het URL-voorvoegsel voor alle API-paden. Het is een optioneel veld.\
          Bewerk indien nodig de vooraf ingevulde waarden voor deze velden.
-   * Selecteer het authentificatietype — niets, OAuth2.0, Basisauthentificatie, API Sleutel, of de Authentificatie van de Douane — om tot de dienst toegang te hebben RESTful, en dienovereenkomstig details voor authentificatie te verstrekken.
+   * Selecteer het authentificatietype — niets, OAuth2.0, Basisauthentificatie, Sleutel API, Douane Authentificatie, of Wederzijdse Authentificatie — om tot de RESTful dienst toegang te hebben, en dienovereenkomstig details voor authentificatie te verstrekken.
+
    Als u **[!UICONTROL API Key]** als verificatietype selecteert, geeft u de waarde voor de API-sleutel op. De API-sleutel kan als aanvraagheader of als queryparameter worden verzonden. Selecteer een van deze opties in de **[!UICONTROL Location]** vervolgkeuzelijst en geef de naam van de header of de queryparameter in het **[!UICONTROL Parameter Name]** veld op.
+
+   Als u **[!UICONTROL Mutual Authentication]** als authentificatietype selecteert, zie op [Certificaat-Gebaseerde wederzijdse authentificatie voor RESTful en de Webdiensten](#mutual-authentication)van de ZEEP.
 
 1. Tik **[!UICONTROL Create]** om de cloudconfiguratie voor de RESTful-service te maken.
 
 ## SOAP-webservices configureren {#configure-soap-web-services}
 
-De op SOAP-Gebaseerde Webdiensten worden beschreven gebruikend de specificaties [van de Beschrijving van de](https://www.w3.org/TR/wsdl)Diensten van het Web van de Taal (WSDL). Als u op SOAP gebaseerde webservice in AEM cloud services wilt configureren, controleert u of u de WSDL-URL voor de webservice hebt en voert u de volgende handelingen uit:
+De op SOAP-Gebaseerde Webdiensten worden beschreven gebruikend de specificaties [van de Beschrijving van de](https://www.w3.org/TR/wsdl)Diensten van het Web van de Taal (WSDL). Als u op SOAP gebaseerde webservice wilt configureren in AEM-cloudservices, moet u de WSDL-URL voor de webservice hebben en het volgende doen:
 
 1. Go to **[!UICONTROL Tools > Cloud Services > Data Sources]**. Tik om de map te selecteren waarin u een cloudconfiguratie wilt maken.
 
@@ -145,16 +151,18 @@ De op SOAP-Gebaseerde Webdiensten worden beschreven gebruikend de specificaties 
 
    * WSDL-URL voor de webservice.
    * Service Endpoint. Specificeer een waarde op dit gebied om het de diensteindpunt met voeten te treden dat in WSDL wordt vermeld.
-   * Selecteer het authentificatietype — niets, OAuth2.0, BasisAuthentificatie, de Authentificatie van de Douane, of Token X509 — om tot de dienst van de ZEEP toegang te hebben, en dienovereenkomstig de details voor authentificatie te verstrekken.
+   * Selecteer het authentificatietype — niets, OAuth2.0, Basisauthentificatie, de Authentificatie van de Douane, Symbolische X509, of Wederzijdse Authentificatie — om tot de dienst van de ZEEP toegang te hebben, en dienovereenkomstig de details voor authentificatie te verstrekken.
 
-      Als u Token X509 als Type van Authentificatie selecteert, vorm het X509- certificaat. Zie [Certificaten](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service)instellen voor meer informatie.
+      Als u **[!UICONTROL X509 Token]** als het type van Authentificatie selecteert, vorm het X509- certificaat. Zie [Certificaten](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service)instellen voor meer informatie.
 Geef in het **[!UICONTROL Key Alias]** veld de alias KeyStore voor het X509-certificaat op. Geef de tijd in seconden op totdat de verificatieaanvraag geldig blijft in het **[!UICONTROL Time To Live]** veld. Selecteer desgewenst om de berichttekst, de tijdstempelkop of beide te ondertekenen.
+
+      Als u **[!UICONTROL Mutual Authentication]** als authentificatietype selecteert, zie op [Certificaat-Gebaseerde wederzijdse authentificatie voor RESTful en de Webdiensten](#mutual-authentication)van de ZEEP.
 
 1. Tik **[!UICONTROL Create]** om de cloudconfiguratie voor de SOAP-webservice te maken.
 
 ## OData-services configureren {#config-odata}
 
-De dienst OData wordt geïdentificeerd door zijn de dienstwortel URL. Om de dienst OData in AEM cloud services te vormen, zorg ervoor dat u de dienstwortel URL voor de dienst hebt, en doe het volgende:
+De dienst OData wordt geïdentificeerd door zijn de dienstwortel URL. Als u een OData-service in AEM-cloudservices wilt configureren, moet u ervoor zorgen dat u over de URL van de servicehoofdmap voor de service beschikt en moet u het volgende doen:
 
 >[!NOTE]
 Voor geleidelijke gids om de Dynamica 365 van Microsoft, online of op-gebouw te vormen, zie de Configuratie [van OData van de Dynamica van](/help/forms/using/ms-dynamics-odata-configuration.md)Microsoft.
@@ -168,10 +176,24 @@ Voor geleidelijke gids om de Dynamica 365 van Microsoft, online of op-gebouw te 
 
    * Service Root URL voor de OData-service die moet worden geconfigureerd.
    * Selecteer het authentificatietype — niets, OAuth2.0, Basisauthentificatie, of de Authentificatie van de Douane — om tot de dienst toegang te hebben OData, en dienovereenkomstig de details voor authentificatie te verstrekken.
+
    >[!NOTE]
    U moet OAuth 2.0 authentificatietype selecteren om met de diensten van de Dynamiek van Microsoft te verbinden gebruikend eindpunt OData als de dienstwortel.
 
 1. Tik op **Maken** om de cloudconfiguratie voor de OData-service te maken.
+
+## Op certificaten gebaseerde wederzijdse verificatie voor RESTful- en SOAP-webservices {#mutual-authentication}
+
+Wanneer u wederzijdse verificatie inschakelt voor het gegevensmodel van het formulier, wordt elkaars identiteit geverifieerd door zowel het gegevensbrongegevensmodel als het gegevensgegevensmodel van AEM server waarop formuliergegevens worden uitgevoerd, voordat gegevens worden gedeeld. U kunt wederzijdse authentificatie voor REST en SOAP gebaseerde verbindingen (gegevensbronnen) gebruiken. Om wederzijdse authentificatie voor een model van vormgegevens op uw milieu van AEM Forms te vormen:
+
+1. Upload de persoonlijke sleutel (certificaat) naar de [!DNL AEM Forms] server. De persoonlijke sleutel uploaden:
+   1. Meld u als beheerder aan bij uw [!DNL AEM Forms] server.
+   1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**. Selecteer de `fd-cloudservice` gebruiker en tik op **[!UICONTROL Properties]**.
+   1. Open het **[!UICONTROL Keystore]** tabblad, vouw de **[!UICONTROL Add Private Key from KeyStore file]** optie uit, upload het KeyStore-bestand, geef de aliassen, wachtwoorden en tik op **[!UICONTROL Submit]**. Het certificaat wordt geüpload.  De alias van de persoonlijke sleutel wordt vermeld in het certificaat en ingesteld tijdens het maken van het certificaat.
+1. Upload vertrouwenscertificaat naar Global Trust Store. Het certificaat uploaden:
+   1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Trust Store]**.
+   1. Vouw de **[!UICONTROL Add Certificate from CER file]** optie uit, tik op **[!UICONTROL Select Certificate File]**, upload het certificaat en tik op **[!UICONTROL Submit]**.
+1. Vorm [ZEEP](#configure-soap-web-services) of [RESTful](#configure-restful-web-services) Webdiensten als gegevensbron en selecteer **[!UICONTROL Mutual authentication]** als authentificatietype. Als u meerdere zelfondertekende certificaten voor `fd-cloudservice` gebruikers configureert, geeft u de naam voor sleutelalias voor het certificaat op.
 
 ## Volgende stappen {#next-steps}
 

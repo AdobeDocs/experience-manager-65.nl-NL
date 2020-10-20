@@ -11,9 +11,9 @@ topic-tags: upgrading
 discoiquuid: fcb17227-ff1f-4b47-ae94-6b7f60923876
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cbd48b28798c1bb7c00175fc1faecfea5484b07b
+source-git-commit: 1718aac3d39662fb35336a4db3e3403641f9529a
 workflow-type: tm+mt
-source-wordcount: '1242'
+source-wordcount: '1275'
 ht-degree: 0%
 
 ---
@@ -175,6 +175,10 @@ Waar `/path/to/datastore` staat het pad naar de datastore van het bestand.
 ### Bepaal het correcte bevel van het verbeteringsbegin {#determining-the-correct-upgrade-start-command}
 
 Als u de upgrade wilt uitvoeren, is het belangrijk dat u AEM het jar-bestand gaat gebruiken om de instantie op te roepen. Voor een upgrade naar 6.5 raadpleegt u ook andere opties voor het herstructureren van inhoud en migratie in [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md) die u kunt kiezen met de upgradeopdracht.
+
+>[!IMPORTANT]
+>
+>Als u Oracle Java 11 uitvoert (of doorgaans versies van Java nieuwer dan 8), moeten extra switches aan uw opdrachtregel worden toegevoegd wanneer u AEM start. Zie [Java 11 Overwegingen](/help/sites-deploying/custom-standalone-install.md#java-considerations)voor meer informatie.
 
 Merk op dat het beginnen van AEM van het beginmanuscript niet de verbetering zal beginnen. De meeste klanten beginnen AEM het beginmanuscript te gebruiken en hebben dit beginmanuscript aangepast om schakelaars voor omgevingsconfiguraties zoals geheugenmontages, veiligheidscertificaten, enz. te omvatten. Om deze reden, adviseren wij na deze procedure om het juiste verbeteringsbevel te bepalen:
 

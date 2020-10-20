@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+source-git-commit: 149e505eb4dac0d9a56c53036ce1c6b8d16ad0f1
 workflow-type: tm+mt
-source-wordcount: '3018'
+source-wordcount: '3015'
 ht-degree: 0%
 
 ---
@@ -136,7 +136,7 @@ De toepassing is het adaptieve formulier dat aan de workflow is gekoppeld. Wanne
 >
 >U moet lid van de fd-beheerder groep zijn om werkschematoepassingen te kunnen tot stand brengen en beheren.
 
-1. Ga in de AEM auteur naar ![tools-1](assets/tools-1.png) > **[!UICONTROL Forms]**> **[!UICONTROL Manage Workflow Application]** en tikken **[!UICONTROL Create]**.
+1. Ga in de AEM auteur naar ![Gereedschappen-1](assets/tools-1.png) > **[!UICONTROL Forms]** > **[!UICONTROL Manage Workflow Application]** en tikken **[!UICONTROL Create]**.
 1. Geef in het venster Workflowtoepassing maken de gewenste gegevens op voor de volgende velden en tik op **Maken**. Er wordt een nieuwe toepassing gemaakt en deze wordt weergegeven in het scherm Workflowtoepassingen.
 
 <table>
@@ -218,7 +218,7 @@ U kunt een adaptief formulier configureren voor synchronisatie, verzending en ac
 
 Een beheerder (een lid van de groep van fd-beheerders) kan een netwerkomslag vormen om een vooraf gevormde werkschema in werking te stellen wanneer een gebruiker een dossier (zoals een Pdf- dossier) in de omslag plaatst. Nadat de workflow is voltooid, kan het resulterende bestand worden opgeslagen in een opgegeven uitvoermap. Een dergelijke map wordt [Gecontroleerde map](../../forms/using/watched-folder-in-aem-forms.md)genoemd. Voer de volgende procedure uit om een gecontroleerde omslag te vormen om een werkschema te lanceren:
 
-1. Ga in de AEM auteur naar ![tools-1](assets/tools-1.png) **>**[!UICONTROL Forms]**> Gecontroleerde map configureren.** Er wordt een lijst met al geconfigureerde gecontroleerde mappen weergegeven.
+1. Ga voor de AEM auteur naar ![tools-1](assets/tools-1.png) > **[!UICONTROL Forms]** > **[!UICONTROL Configure Watched Folder]**. Er wordt een lijst met al geconfigureerde gecontroleerde mappen weergegeven.
 1. Tik op **[!UICONTROL New]**. Er wordt een lijst met velden weergegeven. Geef een waarde op voor de volgende velden om een gecontroleerde map voor een workflow te configureren:
 
 <table>

@@ -1,8 +1,8 @@
 ---
 title: Adobe IMS-verificatie [!DNL Admin Console] en -ondersteuning voor AEM Managed Services
 seo-title: Adobe IMS-verificatie [!DNL Admin Console] en -ondersteuning voor AEM Managed Services
-description: Leer hoe u de Admin Console [!DNL] in AEM gebruikt.
-seo-description: Leer hoe u de Admin Console [!DNL] in AEM gebruikt.
+description: Leer hoe u [!DNL Admin Console] thein-AEM gebruikt.
+seo-description: Leer hoe u [!DNL Admin Console] thein-AEM gebruikt.
 uuid: 3f5b32c7-cf62-41a4-be34-3f71bbf224eb
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +10,10 @@ topic-tags: Security
 content-type: reference
 discoiquuid: f6112dea-a1eb-4fd6-84fb-f098476deab7
 translation-type: tm+mt
-source-git-commit: 5a421c66930d8c7a9eb633c707b4b51d4549b303
+source-git-commit: a71c1e87dd5f01ba2584282e0960ca27d419adb0
 workflow-type: tm+mt
-source-wordcount: '1730'
-ht-degree: 10%
+source-wordcount: '1726'
+ht-degree: 11%
 
 ---
 

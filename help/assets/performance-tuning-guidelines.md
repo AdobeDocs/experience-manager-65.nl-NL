@@ -4,9 +4,9 @@ description: Suggesties en begeleiding [!DNL Experience Manager] over configurat
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: cc61b8473fb919a963eb73c015efbc2f06197ee8
 workflow-type: tm+mt
-source-wordcount: '2679'
+source-wordcount: '2677'
 ht-degree: 0%
 
 ---
@@ -205,7 +205,7 @@ Stel bovendien het pad van de tijdelijke map van ImageMagick in het `configure.x
 
 >[!CAUTION]
 >
->Een fout-configuratie kan uw server onstabiel maken als ImageMagick alle beschikbare schijfruimte gebruikt. De beleidswijzigingen die vereist zijn om grote bestanden met ImageMagick te verwerken, kunnen van invloed zijn op de prestaties van [!DNLEhet] ervaringsbeheer. Voor meer informatie, zie [installeren en ImageMagick](/help/assets/best-practices-for-imagemagick.md)vormen.
+>Een fout-configuratie kan uw server onstabiel maken als ImageMagick alle beschikbare schijfruimte gebruikt. De beleidswijzigingen die vereist zijn om grote bestanden met ImageMagick te verwerken, kunnen van invloed zijn op de [!DNL Experience Manager] prestaties. Voor meer informatie, zie [installeren en ImageMagick](/help/assets/best-practices-for-imagemagick.md)vormen.
 
 >[!NOTE]
 >

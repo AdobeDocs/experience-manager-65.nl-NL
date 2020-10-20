@@ -4,7 +4,7 @@ description: Nieuw in Adobe Experience Manager 6.5 Service Pack 6
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 4865d4fb666f58ea8abe9e438ea69e9272961c43
+source-git-commit: 750e3729a33718d54dca8b2514468d4a40910d4c
 workflow-type: tm+mt
 source-wordcount: '2534'
 ht-degree: 0%
@@ -81,7 +81,8 @@ U kunt de [!DNL Experience Manager Forms] server nu zodanig configureren dat de 
 
 ### Integratie van formuliergegevensmodellen met RESTful-API&#39;s op een server met 2-wegs SSL-implementatie {#fdm-integration-rest-apis-two-way-ssl}
 
-[!DNL Experience Manager Forms] Het formuliergegevensmodel kan nu worden geïntegreerd met RESTful-API&#39;s op een server waarop een bidirectionele SSL is geïmplementeerd.
+[!DNL Experience Manager Forms] Het formuliergegevensmodel kan nu worden [geïntegreerd met RESTful-API&#39;s op een server waarop een 2-wegs-SSL is geïmplementeerd](../../help/forms/using/configure-data-sources.md).
+
 
 ### Toegevoegde ondersteuning voor [!DNL Adobe Sign] tekstcodes in Automated Forms Conversion Service {#sign-integration-acroform-afcs}
 

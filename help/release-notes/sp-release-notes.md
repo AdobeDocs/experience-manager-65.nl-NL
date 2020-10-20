@@ -4,9 +4,9 @@ description: De nota's van de versie specifiek voor [!DNL Adobe Experience Manag
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 74ab94126383d53dac5f55171266c66c28757969
+source-git-commit: ba744c7f58ae7d359c13b11403921da0948c71a7
 workflow-type: tm+mt
-source-wordcount: '4327'
+source-wordcount: '4339'
 ht-degree: 0%
 
 ---
@@ -39,15 +39,15 @@ De belangrijkste functies en verbeteringen die in Adobe Experience Manager 6.5.6
 
 * De standaardopties voor `test` en `aiprocess` worden bijgewerkt naar `Thumbnail`, van `Rasterize` voorheen in Dynamic Media, om ervoor te zorgen dat gebruikers alleen miniaturen hoeven te maken en de extractie van pagina&#39;s en trefwoorden moeten overslaan.
 
-* Een adaptief formulier vooraf invullen op de client.
+* [Een adaptief formulier vooraf invullen op de client](../../help/forms/using/prepopulate-adaptive-form-fields.md#prefill-at-client).
 
-* Integratie van formuliergegevensmodellen met RESTful-API&#39;s op een server met 2-wegs SSL-implementatie.
+* [Integratie van formuliergegevensmodellen met RESTful-API&#39;s op een server met 2-wegs SSL-implementatie](../../help/forms/using/configure-data-sources.md).
 
-* Verbeterd in cache plaatsen voor vertaalde adaptieve formulierpagina&#39;s.
+* [Verbeterd in cache plaatsen voor vertaalde adaptieve formulierpagina](../../help/forms/using/configure-adaptive-forms-cache.md)&#39;s.
 
-* Ondersteuning voor Adobe Sign Text Tags in Automated Forms Conversion Service.
+* Ondersteuning voor [Adobe Sign Text Tags in Automated Forms Conversion Service](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html).
 
-* Ondersteuning voor het converteren van gekleurde formulieren naar adaptieve formulieren [!DNL Automated Forms Conversion service].
+* Ondersteuning voor het [converteren van gekleurde formulieren naar adaptieve formulieren](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html) met [!DNL Automated Forms Conversion service].
 
 * Steun voor SMB 2 en SMB 3 protocollen.
 
@@ -152,13 +152,13 @@ Hier volgt een lijst met oplossingen uit de release van [!DNL Experience Manager
 
    ![Menu Help in koptekst](assets/Help_aem_header.png)
 
-   *Afbeelding:[!UICONTROL Search for Help]in[!UICONTROL Help].*
+   *Afbeelding: [!UICONTROL Search for Help] in [!UICONTROL Help] .*
 
    * Het foutbericht als een onjuiste waarde wordt ingevoerd in het [!UICONTROL Impersonate as] veld onder [!UICONTROL User] optie en de focus correct wordt verplaatst naar het tekstveld (NPR-33804).
 
    ![Menu Gebruiker in koptekst](assets/User_aem_header.png)
 
-   *Afbeelding:[!UICONTROL Impersonate as]veld in[!UICONTROL User]menu in koptekst.*
+   *Afbeelding: [!UICONTROL Impersonate as] veld in [!UICONTROL User] menu in koptekst.*
 
 * De gebruiker kan nu de focus wijzigen met het toetsenbord binnen:
 

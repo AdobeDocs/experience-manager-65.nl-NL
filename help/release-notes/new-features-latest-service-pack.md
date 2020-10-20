@@ -4,7 +4,7 @@ description: Nieuw in Adobe Experience Manager 6.5 Service Pack 6
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 6e7da5aa0a8ea224de256717ca37193dcf6577be
+source-git-commit: 4865d4fb666f58ea8abe9e438ea69e9272961c43
 workflow-type: tm+mt
 source-wordcount: '2534'
 ht-degree: 0%
@@ -28,7 +28,7 @@ De bewerking Pagina verplaatsen is nu beschikbaar in de asynchrone modus. U kunt
 
 ### CDN-inhoud in cache ongeldig maken {#invalidate-cdn-cached-content}
 
-U kunt nu de gebruikersinterface gebruiken om inhoud die in de cache is opgeslagen, ongeldig te maken in het[!DNL  Dynamic Media] inhoudsleveringsnetwerk (CDN). Hierdoor zijn de bijgewerkte elementen direct beschikbaar in plaats van te wachten tot de cache verloopt. U kunt CDN ongeldig maken door:
+U kunt nu de [!DNL Dynamic Media] gebruikersinterface gebruiken om inhoud die in de cache is opgeslagen, ongeldig te maken. Hierdoor zijn de bijgewerkte elementen direct beschikbaar in plaats van te wachten tot de cache verloopt. U kunt CDN ongeldig maken door:
 
 * Een CDN-validatiesjabloon maken: Elementen en aan een sjabloon gekoppelde URL&#39;s selecteren
 

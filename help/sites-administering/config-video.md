@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: a1efef3c-0e4b-4a17-bcad-e3cc17adbbf7
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 535a175486a2d0f31762d71954c4fead2ef246e1
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '451'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Vanuit dit dialoogvenster kunt u ook het ontwerp configureren van de component V
 
 ## Mpeg installeren en AEM configureren {#install-ffmpeg}
 
-De videocomponent is voor het transcoderen van video&#39;s afhankelijk van de open-source product-MPEG van derden. Gedownload van [https://ffmpeg.org/](https://ffmpeg.org/). Nadat u MPEG hebt geïnstalleerd, configureert u AEM voor het gebruik van een specifieke audiocodec en specifieke runtime-opties.
+De videocomponent is voor het transcoderen van video&#39;s afhankelijk van de open-source product-MPEG van derden. Gedownload van [https://ffmpeg.org/](https://ffmpeg.org/). Nadat u MPEG hebt geïnstalleerd, configureert u AEM om een specifieke audiocodec en specifieke runtime-opties te gebruiken.
 
 Voer de volgende stappen uit om Fmpeg in **Windows** te installeren:
 
@@ -45,7 +45,7 @@ Voer de volgende stappen uit om Fmpeg in **Windows** te installeren:
 
 Voer de volgende stappen uit om Fmpeg te installeren in **Mac OS X**:
 
-1. Installeer Xcode beschikbaar op [developer.apple.com/xcode](hhttps://developer.apple.com/xcode/).
+1. Installeer Xcode beschikbaar op [developer.apple.com/xcode](https://developer.apple.com/xcode/).
 1. Installeer beschikbaar op [XQuartz](https://www.xquartz.org) om [X11](https://support.apple.com/en-us/HT201341)te krijgen.
 1. Installeer MacPorts op [www.macports.org](https://www.macports.org/).
 1. Voer in de console de `sudo port install ffmpeg` opdracht uit en volg de aanwijzingen op het scherm. Zorg ervoor dat het pad van het `FFmpeg` uitvoerbare bestand wordt toegevoegd aan de `PATH` systeemvariabele.
@@ -78,4 +78,4 @@ Ga als volgt te werk om AEM **te** configureren:
 
 >[!NOTE]
 >
->Wijzigingen in de standaard out-of-the-box (OTB)-workflowmodellen blijven niet behouden wanneer u een upgrade uitvoert van uw AEM-instantie. Adobe raadt u aan de gewijzigde workflowmodellen te kopiëren voordat u deze bewerkt. Kopieer bijvoorbeeld het OTB- [!UICONTROL DAM Update Asset] model voordat u de stap MPEG Transcoding in het [!UICONTROL DAM Update Asset] model bewerkt, om namen voor videoprofielen te kiezen die vóór de upgrade bestonden. Vervolgens kunt u het `/apps` knooppunt bedekken zodat AEM de aangepaste wijzigingen in het OTB-model kan ophalen.
+>Wijzigingen in de standaard out-of-the-box (OOTB)-workflowmodellen blijven niet behouden wanneer u een upgrade uitvoert van de AEM. Adobe raadt u aan de gewijzigde workflowmodellen te kopiëren voordat u deze gaat bewerken. Kopieer bijvoorbeeld het OTB- [!UICONTROL DAM Update Asset] model voordat u de stap MPEG Transcoding in het [!UICONTROL DAM Update Asset] model bewerkt, om namen van videoprofielen te kiezen die vóór de upgrade bestonden. Vervolgens kunt u het `/apps` knooppunt bedekken zodat AEM de aangepaste wijzigingen in het OTB-model kunt ophalen.

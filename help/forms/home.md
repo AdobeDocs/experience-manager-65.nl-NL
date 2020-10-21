@@ -4,9 +4,9 @@ seo-title: AEM 6.5 Forms Guide
 description: Deze handleiding behandelt alle AEM Forms-taken, waaronder het maken, beheren, publiceren en bijwerken van digitale formulieren.
 seo-description: Omvat alle AEM Forms-taken, waaronder het maken, beheren, publiceren en bijwerken van digitale formulieren.
 translation-type: tm+mt
-source-git-commit: 5b5937303dd543195b6c8300e6579a58e03a97d1
+source-git-commit: d97cc2ad393fc10ff545ae374180426eb1574ba9
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '368'
 ht-degree: 18%
 
 ---
@@ -23,7 +23,7 @@ Deze handleiding behandelt alle AEM Forms-taken, waaronder het maken, beheren, p
 * [Recente documentatie-updates](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [Beveiligingschecklist AEM](/help/sites-administering/security-checklist.md)
 
-## AEM 6.5-gebruikershandleidingen
+## AEM 6,5-hulplijnen
 
 | Handboek | Beschrijving |
 |--- |---|

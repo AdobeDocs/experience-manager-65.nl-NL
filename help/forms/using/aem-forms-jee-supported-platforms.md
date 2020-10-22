@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d97cc2ad393fc10ff545ae374180426eb1574ba9
+source-git-commit: 4e1f5d549df1db28a8679296afb4b758051d8f6c
 workflow-type: tm+mt
-source-wordcount: '3276'
+source-wordcount: '3298'
 ht-degree: 0%
 
 ---
@@ -264,7 +264,7 @@ Adobe Experience Manager Forms vereist dat een Java Virtual Machine wordt uitgev
    <td>Servicepacks en kritieke updates</td>
   </tr>
   <tr>
-   <td><p>Red Hat Enterprise Linux 7 (Kernel 3.x) (64-bits)</br><b>Opmerking:</b> Red Hat Enterprise Linux 6 bereikt de Onderhoudsfase en overgangen naar de uitgebreide levensfase op 30 november 2020. Adobe raadt Red Hat Enterprise Linux 7 aan voor een upgrade en nieuwe installaties.</p> </td>
+   <td><p>Red Hat Enterprise Linux 7 (Kernel 3.x) (64-bits)</br><b>Opmerking:</b> <a href="https://access.redhat.com/articles/4665701">Red Hat Enterprise Linux 6</a> bereikt de fase van het einde van het onderhoud en gaat over naar de fase van de uitgebreide levenscyclusondersteuning op 30 november 2020. Adobe raadt Red Hat Enterprise Linux 7 aan voor upgrades en nieuwe installaties. Bestaande installaties kunnen Red Hat Enterprise Linux 6 gebruiken tijdens de Extended Life Cycle Support-fase.</p> </td>
    <td><p>A: Ondersteund</p> </td>
    <td><p>Kleine releases, cumulatieve updates en kritieke updates</p> </td>
   </tr>

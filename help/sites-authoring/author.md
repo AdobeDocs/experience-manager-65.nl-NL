@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 81ff6f6f-11b3-4f8e-80e6-b3e104158394
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b9cc4df476ab95707284c4255f9cf35f257a1258
+source-git-commit: 18dcbf04bd88f63335ef36e2ec7ea81835e11b51
+workflow-type: tm+mt
+source-wordcount: '544'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ source-git-commit: b9cc4df476ab95707284c4255f9cf35f257a1258
 AEM biedt u twee omgevingen:
 
 * Auteur
-* Publiceren
+* Publicatie
 
 Met deze interacties kunt u inhoud op uw website beschikbaar maken, zodat uw bezoekers deze kunnen lezen.
 
@@ -34,11 +37,7 @@ De auteursomgeving verstrekt de mechanismen om deze inhoud tot stand te brengen,
 
 ![chlimage_1-132](assets/chlimage_1-132.png)
 
-Op de auteursomgeving wordt de functionaliteit van AEM ter beschikking gesteld door twee UIs. Voor het publicatiemilieu ontwerpt u de volledige blik-en-gevoel van de interface die aan uw gebruikers ter beschikking wordt gesteld.
-
->[!NOTE]
->
->AEM en de Dispatcher worden gebruikt om deze AEM-documentatie te publiceren.
+Op het auteursmilieu wordt de functionaliteit van AEM ter beschikking gesteld door twee UIs. Voor het publicatiemilieu ontwerpt u de volledige blik-en-gevoel van de interface die aan uw gebruikers ter beschikking wordt gesteld.
 
 ### Auteursomgeving {#author-environment}
 
@@ -70,11 +69,11 @@ Daarnaast zijn er beheertaken die u helpen uw inhoud te beheren:
 
 #### Publicatie-omgeving {#publish-environment}
 
-Als de inhoud van de AEM-site gereed is, wordt deze gepubliceerd naar de **publicatieomgeving**. Hier worden de pagina&#39;s van de website beschikbaar gemaakt voor het beoogde publiek, in overeenstemming met de vormgeving van de ontworpen interface.
+Als de inhoud van de AEM site gereed is, wordt deze gepubliceerd naar de **publicatieomgeving**. Hier worden de pagina&#39;s van de website beschikbaar gemaakt voor het beoogde publiek, in overeenstemming met de vormgeving van de ontworpen interface.
 
 Meestal bevindt de publicatieomgeving zich in de gedemilitariseerde zone. met andere woorden , beschikbaar voor het internet , maar niet langer onder volledige bescherming van het interne netwerk .
 
-Wanneer de AEM-site een [gemeenschapssite](/help/communities/overview.md)is of onderdelen [van de](/help/communities/author-communities.md)Community bevat, kunnen bezoekers (leden) die zich bij de AEM-site hebben aangemeld, communiceren met de kenmerken van de Community. Ze kunnen bijvoorbeeld posten naar een forum, een opmerking plaatsen of andere leden volgen. Leden kunnen toestemming krijgen om activiteiten uit te voeren die normaal gesproken beperkt zijn tot de auteursomgeving, zoals het maken van nieuwe pagina&#39;s (groepen van gemeenschappen), blogartikelen en gematigde posten van andere leden.
+Wanneer de AEM site een [gemeenschapssite](/help/communities/overview.md)is of onderdelen [van de](/help/communities/author-communities.md)Community bevat, kunnen bezoekers (leden) die zich hebben aangemeld, communiceren met de kenmerken van de Community. Ze kunnen bijvoorbeeld posten naar een forum, een opmerking plaatsen of andere leden volgen. Leden kunnen toestemming krijgen om activiteiten uit te voeren die normaal gesproken beperkt zijn tot de auteursomgeving, zoals het maken van nieuwe pagina&#39;s (groepen van gemeenschappen), blogartikelen en gematigde posten van andere leden.
 
 >[!NOTE]
 >
@@ -96,4 +95,4 @@ Wanneer de AEM-site een [gemeenschapssite](/help/communities/overview.md)is of o
 
 #### Dispatcher {#dispatcher}
 
-Om de prestaties voor bezoekers van uw website te optimaliseren, implementeert de **[verzender](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)**taakverdeling en caching.
+Om de prestaties voor bezoekers van uw website te optimaliseren, implementeert de **[verzender](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)** taakverdeling en caching.

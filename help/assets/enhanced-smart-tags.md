@@ -3,15 +3,15 @@ title: Verbeterde slimme tags
 description: Verbeterde slimme tags
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5599e0d4a3e52a4ad98b776b9178722c7ac47cbc
+source-git-commit: e124025295f29d6f3999dc52467301d48bceee75
 workflow-type: tm+mt
-source-wordcount: '1486'
+source-wordcount: '1489'
 ht-degree: 1%
 
 ---
 
 
-# Verbeterde slimme tags {#enhanced-smart-tags}
+# Slimme tags begrijpen, toepassen en beheren {#enhanced-smart-tags}
 
 Organisaties die met digitale middelen te maken hebben, maken steeds vaker gebruik van een door taxonomie gecontroleerde woordenlijst in metagegevens van bedrijfsmiddelen. In wezen, omvat het een lijst van sleutelwoorden die de werknemers, de partners, en de klanten algemeen gebruiken om naar digitale activa van een bepaalde klasse te verwijzen en te zoeken. Door elementen te labelen met een woordenschat die door de taxonomie wordt bepaald, kunt u ze gemakkelijk herkennen en ophalen door zoekopdrachten op basis van tags.
 

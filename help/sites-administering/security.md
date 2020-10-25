@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: e72da81b-4085-49b0-86c3-11ad48978a8a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 0d5a48be283484005013ef3ed7ad015b43f6398b
 workflow-type: tm+mt
 source-wordcount: '5487'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Deze sectie behandelt de diverse entiteiten en verwante concepten meer in detail
 
 ### Gebruikers {#users}
 
-Gebruikers zullen zich bij AEM aanmelden met hun account. Elke gebruikersaccount is uniek en bevat de basisaccountgegevens, samen met de toegewezen rechten.
+Gebruikers zullen zich aanmelden bij AEM met hun account. Elke gebruikersaccount is uniek en bevat de basisaccountgegevens, samen met de toegewezen rechten.
 
 Gebruikers zijn vaak leden van Groepen, waardoor de toewijzing van deze machtigingen en/of bevoegdheden wordt vereenvoudigd.
 
@@ -68,8 +68,8 @@ In de volgende tabellen wordt elk item vermeld, samen met:
   <tr>
    <td><p>beheerder</p> <p>Standaardwachtwoord: beheerder</p> </td>
    <td>Gebruiker</td>
-   <td><p>Systeembeheeraccount met volledige toegangsrechten.</p> <p>Dit account wordt gebruikt voor de verbinding tussen AEM WCM en CRX.</p> <p>Als u dit account per ongeluk verwijdert, wordt het opnieuw gemaakt nadat de opslagplaats opnieuw is opgestart (in de standaardconfiguratie).</p> <p>De beheerdersaccount is een vereiste voor het AEM-platform. Dit betekent dat dit account niet kan worden verwijderd.</p> </td>
-   <td><p>Adobe raadt u ten zeerste aan het wachtwoord voor deze gebruikersaccount te wijzigen.</p> <p>Bij voorkeur na installatie, maar achteraf.</p> <p>Opmerking: Dit account mag niet worden verward met de beheerdersaccount van de CQ Servlet Engine.</p> </td>
+   <td><p>Systeembeheeraccount met volledige toegangsrechten.</p> <p>Dit account wordt gebruikt voor de verbinding tussen AEM WCM en CRX.</p> <p>Als u dit account per ongeluk verwijdert, wordt het opnieuw gemaakt nadat de opslagplaats opnieuw is opgestart (in de standaardconfiguratie).</p> <p>De beheerdersaccount is een vereiste van het AEM platform. Dit betekent dat dit account niet kan worden verwijderd.</p> </td>
+   <td><p>Adobe raadt ten zeerste aan het wachtwoord voor deze gebruikersaccount te wijzigen.</p> <p>Bij voorkeur na installatie, maar achteraf.</p> <p>Opmerking: Dit account mag niet worden verward met de beheerdersaccount van de CQ Servlet Engine.</p> </td>
   </tr>
   <tr>
    <td><p>anoniem</p> <p> </p> </td>
@@ -81,7 +81,7 @@ In de volgende tabellen wordt elk item vermeld, samen met:
    <td><p>author</p> <p>Standaardwachtwoord: auteur</p> </td>
    <td>Gebruiker</td>
    <td><p>Een auteursaccount mag schrijven naar /content. Omvat contribuant en surfer voorrechten.</p> <p>Kan als webmaster worden gebruikt aangezien het toegang tot de volledige /content boom heeft.</p> <p>Dit is geen ingebouwde gebruiker, maar een andere geometrixx demogebruiker</p> </td>
-   <td><p>Adobe raadt u aan het account volledig te verwijderen of het wachtwoord in te stellen op de standaardwaarden.</p> <p>Bij voorkeur na installatie, maar achteraf.</p> </td>
+   <td><p>Adobe raadt aan dat de account volledig wordt verwijderd of dat het wachtwoord is gewijzigd ten opzichte van de standaardwaarde.</p> <p>Bij voorkeur na installatie, maar achteraf.</p> </td>
   </tr>
   <tr>
    <td>beheerders</td>
@@ -110,7 +110,7 @@ In de volgende tabellen wordt elk item vermeld, samen met:
   <tr>
    <td>iedereen</td>
    <td>Groeperen</td>
-   <td><p>Elke gebruiker in AEM is een lid van de groep iedereen, hoewel u de groep of de lidmaatschapsverhouding in alle hulpmiddelen niet kunt zien.</p> <p>Deze groep kan als standaardrechten worden beschouwd aangezien het kan worden gebruikt om toestemmingen voor iedereen, zelfs gebruikers toe te passen die in de toekomst zullen worden gecreeerd.</p> </td>
+   <td><p>Elke gebruiker in AEM is een lid van de groep iedereen, hoewel u de groep of de lidmaatschapsrelatie in alle hulpmiddelen misschien niet ziet.</p> <p>Deze groep kan als standaardrechten worden beschouwd aangezien het kan worden gebruikt om toestemmingen voor iedereen, zelfs gebruikers toe te passen die in de toekomst zullen worden gecreeerd.</p> </td>
    <td><p>Wijzig of verwijder deze groep niet.</p> <p>Het wijzigen van deze account heeft extra gevolgen voor de beveiliging.</p> </td>
   </tr>
   <tr>
@@ -147,9 +147,9 @@ AEM gebruikt ACLs om te bepalen welke acties een gebruiker of een groep en kan n
 
 De toestemmingen bepalen wie wordt toegestaan om welke acties op een middel uit te voeren. De toestemmingen zijn het resultaat van [toegangsbeheerevaluaties](#access-control-lists-and-how-they-are-evaluated) .
 
-U kunt de toestemmingen veranderen die aan een bepaalde gebruiker worden verleend/ontkend door checkboxes voor de individuele [acties](security.md#actions)te selecteren of te ontruimen AEM. Een vinkje geeft aan dat een handeling is toegestaan. Geen vinkje geeft aan dat een handeling wordt geweigerd.
+U kunt de machtigingen wijzigen die aan een bepaalde gebruiker zijn verleend of geweigerd door de selectievakjes voor de afzonderlijke AEM- [handelingen](security.md#actions)te selecteren of te wissen. Een vinkje geeft aan dat een handeling is toegestaan. Geen vinkje geeft aan dat een handeling wordt geweigerd.
 
-Wanneer het vinkje zich in het raster bevindt, geeft dit ook aan welke machtigingen gebruikers hebben op welke locaties binnen AEM (welke paden).
+Wanneer het vinkje zich in het raster bevindt, geeft dit ook aan welke machtigingen gebruikers hebben op welke locaties binnen AEM (dat wil zeggen, welke paden).
 
 ### Acties {#actions}
 
@@ -205,7 +205,7 @@ Handelingen kunnen worden uitgevoerd op een pagina (bron). Voor elke pagina in d
 
 >[!NOTE]
 >
->AEM genereert automatisch gebruikersgroepen voor rollentoewijzing (Eigenaar, Editor, Viewer) in [Verzamelingen](/help/assets/managing-collections-touch-ui.md). Nochtans, kan manueel het toevoegen van ACLs voor dergelijke groepen veiligheidskwetsbaarheid binnen AEM introduceren. Adobe raadt u aan ACL&#39;s niet handmatig toe te voegen.
+>AEM genereert automatisch gebruikersgroepen voor rollentoewijzing (Eigenaar, Editor, Viewer) in [Verzamelingen](/help/assets/manage-collections.md). Nochtans, kan manueel het toevoegen van ACLs voor dergelijke groepen veiligheidskwetsbaarheid binnen AEM introduceren. Adobe adviseert dat u vermijdt manueel toevoegend ACLs.
 
 ### De Lijsten van het Toegangsbeheer en hoe zij worden geëvalueerd {#access-control-lists-and-how-they-are-evaluated}
 
@@ -232,14 +232,14 @@ De Lijsten van het Toegangsbeheer worden samengesteld uit de individuele toestem
 >
 >Voor gebruikers van CQ 5.3:
 >
->In tegenstelling tot eerdere CQ-versies, **mag het maken** en **verwijderen** niet langer worden toegestaan als een gebruiker alleen pagina&#39;s hoeft te wijzigen. Geef in plaats daarvan de actie **modify** alleen toe als u wilt dat gebruikers componenten op bestaande pagina&#39;s kunnen maken, wijzigen of verwijderen.
+>In tegenstelling tot eerdere CQ-versies, **mag het maken** en **verwijderen** niet langer worden toegestaan als een gebruiker alleen pagina&#39;s hoeft te wijzigen. Geef in plaats daarvan alleen de actie **modify** toe als u wilt dat gebruikers componenten op bestaande pagina&#39;s kunnen maken, wijzigen of verwijderen.
 >
 >Om achterwaartse compatibiliteitsredenen wordt bij de tests voor acties geen rekening gehouden met de speciale behandeling van knooppunten die **jcr:content** definiëren.
 
 | **Actie** | **Beschrijving** |
 |---|---|
-| Toestaan (vinkje) | Met AEM WCM kan de gebruiker de handeling op deze pagina of op onderliggende pagina&#39;s uitvoeren. |
-| Weigeren (geen vinkje) | Met AEM WCM kan de gebruiker de handeling niet uitvoeren op deze pagina of op onderliggende pagina&#39;s. |
+| Toestaan (vinkje) | AEM WCM staat de gebruiker toe om de actie op deze pagina of op om het even welke kindpagina&#39;s uit te voeren. |
+| Weigeren (geen vinkje) | AEM WCM staat de gebruiker niet toe de actie op deze pagina of op enige kindpagina&#39;s uit te voeren. |
 
 De machtigingen worden ook toegepast op onderliggende pagina&#39;s.
 
@@ -292,13 +292,13 @@ Hieronder volgen aanbevelingen voor het beheren van toegangsbeheerlijsten:
 
    Het gebruiken ontkent kan onverwachte gevolgen veroorzaken als de toestemmingen in een verschillende orde worden toegepast dan de verwachte orde. Als een gebruiker lid is van meer dan één groep, kunnen de Weigeren verklaringen van één groep de Allow verklaring van een andere groep of vice versa annuleren. Het is moeilijk om een overzicht te houden wanneer dit gebeurt en kan gemakkelijk tot onvoorziene resultaten leiden, terwijl Toewijzingen toestaan dergelijke conflicten niet veroorzaakt.
 
-   Adobe raadt u aan om met Allow te werken in plaats van Deny de [Beste praktijken](#best-practices)te zien.
+   Adobe adviseert dat u met Allow eerder dan ontkent werkt zie [Beste praktijken](#best-practices).
 
-Voordat u een van beide machtigingen wijzigt, moet u weten hoe deze werken en hoe ze elkaar beïnvloeden. Raadpleeg de CRX-documentatie om te illustreren hoe AEM WCM toegangsrechten [en voorbeelden](/help/sites-administering/user-group-ac-admin.md#how-access-rights-are-evaluated) evalueert bij het instellen van toegangsbeheerlijsten.
+Voordat u een van beide machtigingen wijzigt, moet u weten hoe deze werken en hoe ze elkaar beïnvloeden. Zie de documentatie CRX om te illustreren hoe AEM WCM toegangsrechten [en voorbeelden](/help/sites-administering/user-group-ac-admin.md#how-access-rights-are-evaluated) evalueert bij de opstelling van toegangsbeheerlijsten.
 
 ### Machtigingen {#permissions}
 
-Rechten geven gebruikers en groepen toegang tot AEM-functionaliteit op AEM-pagina&#39;s.
+Machtigingen geven gebruikers en groepen toegang tot AEM functionaliteit op AEM pagina&#39;s.
 
 U bladert toestemmingen door weg door de knopen uit te breiden/samen te vouwen en u kunt de toestemmingsovererving tot de wortelknoop volgen.
 
@@ -308,7 +308,7 @@ U staat of ontkent toestemmingen toe door de aangewezen controledozen te selecte
 
 ### Gedetailleerde machtigingsgegevens weergeven {#viewing-detailed-permission-information}
 
-Naast de rasterweergave biedt AEM een gedetailleerde weergave van machtigingen voor een geselecteerde gebruiker/groep op een bepaald pad. De detailweergave bevat aanvullende informatie.
+Samen met de rasterweergave biedt AEM een gedetailleerde weergave van machtigingen voor een geselecteerde gebruiker/groep op een bepaald pad. De detailweergave bevat aanvullende informatie.
 
 Naast het bekijken van informatie, kunt u de huidige gebruiker of de groep van een groep ook omvatten of uitsluiten. Zie Gebruikers of groepen [toevoegen tijdens het toevoegen van machtigingen](#adding-users-or-groups-while-adding-permissions). Wijzigingen die u hier aanbrengt, worden direct doorgevoerd in het bovenste gedeelte van de gedetailleerde weergave.
 
@@ -388,7 +388,7 @@ Beide kunnen worden gevormd gebruikend de functionaliteit van het Beleid van de 
 
 Met de beveiligingsconsole hebt u toegang tot alle gebruikers, groepen en bijbehorende machtigingen. Alle in deze sectie beschreven procedures worden uitgevoerd in dit venster.
 
-Voer een van de volgende handelingen uit om toegang te krijgen tot de AEM WCM-beveiliging:
+Voer een van de volgende handelingen uit om toegang te krijgen tot AEM WCM-beveiliging:
 
 * Klik in het welkomstscherm of op verschillende locaties in AEM op het beveiligingspictogram:
 
@@ -456,10 +456,12 @@ Een nieuwe gebruiker of groep maken:
 
 1. Voer de vereiste gegevens in, afhankelijk van het feit of u een gebruiker of een groep maakt.
 
-   * Als u Gebruiker **maken selecteert,** voert u de aanmeldings-id, de voornaam en achternaam, het e-mailadres en een wachtwoord in. Standaard maakt AEM een pad op basis van de eerste letter van de achternaam, maar u kunt een ander pad selecteren.
+   * Als u Gebruiker **maken selecteert,** voert u de aanmeldings-id, de voornaam en achternaam, het e-mailadres en een wachtwoord in. AEM maakt standaard een pad op basis van de eerste letter van de achternaam, maar u kunt een ander pad selecteren.
+
    ![gebruikersdialoogvenster maken](assets/createuserdialog.png)
 
    * Als u Groep **** maken selecteert, voert u een groep-id en een optionele beschrijving in.
+
    ![creategroupdialog](assets/creategroupdialog.png)
 
 1. Klik op **Maken**. De gebruiker of groep die u hebt gemaakt, wordt weergegeven in de boomstructuurlijst.
@@ -494,7 +496,7 @@ Gebruik de volgende procedure om het wachtwoord van een gebruiker te wijzigen.
 >
 >U kunt de beveiligingsconsole niet gebruiken om het beheerwachtwoord te wijzigen. Als u het wachtwoord voor de beheerdersaccount wilt wijzigen, gebruikt u de [gebruikersconsole](/help/sites-administering/granite-user-group-admin.md#changing-the-password-for-an-existing-user) die Granite Operations biedt.
 >
->Als u AEM Forms gebruikt op JEE, gebruik hieronder geen instructies om wachtwoord te veranderen eerder AEM Forms op JEE admin console (/adminui) gebruiken om het wachtwoord te veranderen.
+>Als u AEM Forms op JEE gebruikt, moet u onderstaande instructies niet gebruiken om het wachtwoord te wijzigen in plaats van AEM Forms op JEE-beheerconsole (/adminui) te gebruiken om het wachtwoord te wijzigen.
 
 1. Dubbelklik in de **beveiligingsconsole** op de gebruikersnaam waarvoor u het wachtwoord wilt wijzigen.
 1. Klik op het tabblad **Eigenschappen** (als dit tabblad nog niet actief is).
@@ -507,7 +509,7 @@ Gebruik de volgende procedure om het wachtwoord van een gebruiker te wijzigen.
 
 ### Gebruikers of groepen toevoegen aan een groep {#adding-users-or-groups-to-a-group}
 
-AEM biedt drie verschillende manieren om gebruikers of groepen toe te voegen aan een bestaande groep:
+AEM biedt drie verschillende manieren om gebruikers of groepen aan een bestaande groep toe te voegen:
 
 * Wanneer u zich in de groep bevindt, kunt u leden (gebruikers of groepen) toevoegen.
 * Als u lid bent, kunt u leden toevoegen aan groepen.
@@ -578,7 +580,7 @@ Accounts uit een groep verwijderen:
 
 1. Dubbelklik op de naam van de groep waarvan u de leden wilt verwijderen.
 1. Klik op het tabblad **Leden** . Er wordt een lijst weergegeven met leden die al tot deze groep behoren.
-1. Klik in het deelvenster **Leden** op de naam van het lid dat u uit de groep wilt verwijderen en klik op **Verwijderen**. (Als u meerdere gebruikers wilt verwijderen, houdt u Shift of Ctrl ingedrukt en klikt u op de desbetreffende namen en klikt u op **Verwijderen**.)
+1. Klik in het deelvenster **Leden** op de naam van het lid dat u uit de groep wilt verwijderen en klik op **Verwijderen**. (Als u meerdere gebruikers wilt verwijderen, houdt u Shift of Control ingedrukt en klikt u op de desbetreffende namen en klikt u op **Verwijderen**.)
 
    ![cqsecurityremovemember](assets/cqsecurityremovemember.png)
 
@@ -594,7 +596,7 @@ Om leden uit een groep bij een bepaalde weg te verwijderen:
 
 1. Navigeer naar het pad waarnaar u machtigingen wilt verwijderen en klik op **Details**. Het onderste gedeelte van het detailvenster bevat informatie over wie machtigingen heeft voor die pagina.
 
-   ![chlimage_1-114](assets/chlimage_1-114.png)
+   ![chlimage_1-115](assets/chlimage_1-114.png)
 
 1. Schakel het selectievakje in de kolom **Lid** in voor de leden die u machtigingen voor dat pad wilt hebben. Schakel het selectievakje voor het lid waarvoor u machtigingen wilt verwijderen uit. In de cel waarin u wijzigingen hebt aangebracht, wordt een rood driehoekje weergegeven.
 1. Klik op **OK** om de wijzigingen op te slaan.
@@ -609,7 +611,7 @@ Zie [Gebruikerssynchronisatie](/help/sites-administering/sync.md)voor meer infor
 
 >[!NOTE]
 >
->Adobe heeft een nieuwe, op Touch UI gebaseerde hoofdweergave voor het beheer van machtigingen geïntroduceerd. Zie [deze pagina](/help/sites-administering/touch-ui-principal-view.md)voor meer informatie over het gebruik ervan.
+>Adobe heeft een nieuwe, op touch UI gebaseerde belangrijkste mening voor toestemmingenbeheer geïntroduceerd. Zie [deze pagina](/help/sites-administering/touch-ui-principal-view.md)voor meer informatie over het gebruik ervan.
 
 In deze sectie wordt beschreven hoe u machtigingen kunt instellen, inclusief replicatiebevoegdheden.
 
@@ -638,6 +640,7 @@ Het replicatievoorrecht is het recht om inhoud te publiceren, en het kan voor gr
 >* Alle replicatierechten die op een groep worden toegepast, gelden voor alle gebruikers in die groep.
 >* De replicatiebevoegdheden van een gebruiker hebben voorrang op de replicatiebevoegdheden van een groep.
 >* De Allow replicatierechten hebben een hogere belangrijkheid dan de Deny replicatierechten. Zie [Machtigingen in AEM](#permissions-in-aem) voor meer informatie.
+
 >
 
 
@@ -647,7 +650,7 @@ Om replicatievoorrechten te plaatsen:
 1. Selecteer de gebruiker of de groep in de lijst, dubbelklik om te openen en klik op **Machtigingen**.
 1. Navigeer in het raster naar het pad waar u wilt dat de gebruiker over replicatiebevoegdheden beschikt of naar knooppunten [zoekt.](#searching-for-nodes)
 
-1. Selecteer in de kolom **Repliceren** bij het geselecteerde pad een selectievakje om de replicatiebevoegdheid voor die gebruiker of groep toe te voegen of schakel het selectievakje uit om de replicatiebevoegdheid te verwijderen. AEM geeft overal waar u wijzigingen hebt aangebracht een rood driehoekje weer dat nog niet is opgeslagen.
+1. Selecteer in de kolom **Repliceren** bij het geselecteerde pad een selectievakje om de replicatiebevoegdheid voor die gebruiker of groep toe te voegen of schakel het selectievakje uit om de replicatiebevoegdheid te verwijderen. AEM wordt overal waar u wijzigingen hebt aangebracht een rood driehoekje weergegeven dat nog niet is opgeslagen.
 
    ![cquserreplicateMachtigingen](assets/cquserreplicatepermissions.png)
 

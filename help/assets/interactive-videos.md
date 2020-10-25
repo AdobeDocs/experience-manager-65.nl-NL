@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 04be55f2-c7d8-45ef-89e5-58856b971de5
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '6007'
 ht-degree: 4%
@@ -223,7 +223,7 @@ U kunt deze taak overslaan en naar de volgende taak gaan als u een van de standa
 
 Wanneer op een miniatuur wordt geklikt in de ontwerpomgeving, wordt een voorbeeld van het dialoogvenster Snelle weergave weergegeven.
 
-![chlimage_1-21](assets/chlimage_1-127.png)
+![chlimage_1-29](assets/chlimage_1-127.png)
 
 U kunt desgewenst uw eigen aangepaste voorinstelling voor een interactieve videoviewer maken. U kunt onder andere de opmaak bepalen van de videospeler, de interactieve miniaturen en de weergave van het miniatuurraster die aan het einde van de video wordt weergegeven.
 
@@ -237,14 +237,14 @@ Zie Een nieuwe voorinstelling [voor de viewer](/help/assets/managing-viewer-pres
 
 Als u de video en miniatuurelementen al hebt geüpload, gaat u verder met [Interactiviteit toevoegen aan uw video](#adding-interactivity-to-your-video).
 
-Zie Elementen [](/help/assets/managing-assets-touch-ui.md#deleting-assets)verwijderen als u onjuiste video&#39;s of afbeeldingen hebt geüpload of als u geüploade video&#39;s of afbeeldingen wilt verwijderen die u niet meer nodig hebt.
+Zie Elementen [](/help/assets/manage-assets.md#deleting-assets)verwijderen als u onjuiste video&#39;s of afbeeldingen hebt geüpload of als u geüploade video&#39;s of afbeeldingen wilt verwijderen die u niet meer nodig hebt.
 
 Een video en de bijbehorende miniatuurelementen uploaden:
 
 1. Upload de video en de bijbehorende miniatuurbestanden naar de gewenste map of mappen.
 
-   Zie Elementen [uploaden](/help/assets/managing-assets-touch-ui.md).
-Zie Elementen [uploaden met FTP-taakplanning](/help/assets/managing-assets-touch-ui.md).
+   Zie Elementen [uploaden](/help/assets/manage-assets.md).
+Zie Elementen [uploaden met FTP-taakplanning](/help/assets/manage-assets.md).
 
    Voeg nu interactiviteit toe aan uw video.
 

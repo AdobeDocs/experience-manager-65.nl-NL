@@ -3,7 +3,7 @@ title: Introduction to [!DNL Adobe Experience Manager Assets].
 description: Leer wat het beheer van digitale middelen is, zijn gebruiksgevallen, [!DNL Adobe Experience Manager Asset] en het aanbieden van diensten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 678e91699523c22a7048bd7b344fa539b849ae8b
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '852'
 ht-degree: 0%
@@ -57,7 +57,7 @@ Wanneer u met digitale middelen werkt in, moet u de volgende terminologie begrij
 
 * **Verzameling**: Een verzameling elementen op basis van de fysieke locatie (map), algemene eigenschappen (opgeslagen zoekmap) of gebruikersselectie (lichtbakmappen).
 
-* **Metagegevens** bevatten metagegevens [!DNL Assets] ; bijvoorbeeld auteur, vervaldatum, DRM-gegevens (Digital Rights Management) enzovoort. Metagegevens zijn toegankelijk. [!DNL Assets] ondersteunt de volgende verschillende algemene metagegevensschema&#39;s uit het vak:
+* **Metagegevens** bevatten metagegevens [!DNL Assets] ; bijvoorbeeld auteur, vervaldatum, DRM-informatie (Digital Rights Management) enzovoort. Metagegevens zijn toegankelijk. [!DNL Assets] ondersteunt de volgende verschillende algemene metagegevensschema&#39;s uit het vak:
 
    * Dublin Core: inclusief auteur, beschrijving, datum, onderwerp, enzovoort.
    * IPTC: inclusief gebeurtenis, model, locatie, enzovoort.
@@ -67,7 +67,7 @@ Wanneer u met digitale middelen werkt in, moet u de volgende terminologie begrij
 
 * **Uitvoeringen**: Een vertoning is de binaire representatie van een element. [!DNL Assets] altijd een primaire representatie hebben, namelijk die van het geüploade bestand. Ze kunnen een willekeurig aantal aanvullende voorstellingen hebben die worden gemaakt, bijvoorbeeld door aangepaste workflowstappen of wanneer een element wordt geüpload. Uitvoeringen kunnen een andere grootte hebben, met een andere resolutie, met een toegevoegd watermerk of een ander gewijzigd kenmerk.
 
-* **Versies**: Met Versioning maakt u een momentopname van digitale elementen op een bepaald tijdstip. U kunt middelen aan vorige versies herstellen. Zie [versioning in Elementen](managing-assets-touch-ui.md#asset-versioning).
+* **Versies**: Met Versioning maakt u een momentopname van digitale elementen op een bepaald tijdstip. U kunt middelen aan vorige versies herstellen. Zie [versioning in Elementen](manage-assets.md#asset-versioning).
 
 * **Subactiva**: Subelementen zijn elementen die een element vormen, bijvoorbeeld lagen in een [!DNL Adobe Photoshop] bestand of pagina&#39;s in een PDF-bestand. In [!DNL Assets], kunt u subactiva beheren zoals u activa.
 

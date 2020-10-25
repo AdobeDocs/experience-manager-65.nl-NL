@@ -6,7 +6,7 @@ user-guide-title: Hulplijn voor middelen
 breadcrumb-title: Hulplijn voor middelen
 user-guide-description: Digitale middelen maken, beheren, leveren en optimaliseren.
 translation-type: tm+mt
-source-git-commit: 5599e0d4a3e52a4ad98b776b9178722c7ac47cbc
+source-git-commit: c1362c2c1f32d02d36d2067e0e74d927ddbc1554
 workflow-type: tm+mt
 source-wordcount: '585'
 ht-degree: 34%
@@ -113,7 +113,7 @@ ht-degree: 34%
    + [[!DNL Experience Manager] and [!DNL Creative Cloud] integratie](aem-cc-integration-best-practices.md)
    + [Integreren met [!DNL InDesign Server]](indesign.md)
    + [Digital Rights Management in activa](drm.md)
-   + [Demo-pakket gebruiken voor elementinzichten](touch-ui-using-demo-package-for-asset-insights.md)
+   + [Demo-pakket gebruiken voor elementinzichten](use-demo-package-for-asset-insights.md)
    + [Aanbevolen werkwijzen voor bestandsindelingen voor elementen](assets-file-format-best-practices.md)
    + [Aanbevolen procedures voor het controleren van elementen](assets-monitoring-best-practices.md)
    + [Camera Raw ondersteuning](camera-raw.md)
@@ -139,21 +139,21 @@ ht-degree: 34%
    + [Inhoudsfragmenten - Markering](content-fragments/content-fragments-markdown.md)
    + [Vertaalprojecten maken voor inhoudsfragmenten](creating-translation-projects-for-content-fragments.md)
 + Elementen beheren {#managing}
-   + [Digitale middelen beheren](managing-assets-touch-ui.md)
-   + [Verzamelingen beheren](managing-collections-touch-ui.md)
+   + [Digitale middelen beheren](manage-assets.md)
+   + [Verzamelingen beheren](manage-collections.md)
    + [Dubbele detectie inschakelen](duplicate-detection.md)
    + [Digitale elementen ordenen](organize-assets.md)
    + [Videoassets beheren](managing-video-assets.md)
    + [Vertaalprojecten maken](translation-projects.md)
    + [Elementen voorbereiden voor vertaling](preparing-assets-for-translation.md)
    + [Elementen downloaden van Experience Manager](download-assets-from-aem.md)
-   + [Lichtbak](touch-ui-light-box.md)
-   + [Elementinzichten](touch-ui-asset-insights.md)
-   + [Middels DTM inzicht in bedrijfsmiddelen inschakelen](touch-ui-using-dtm-for-asset-insights.md)
-   + [Elementinzichten configureren](touch-ui-configuring-asset-insights.md)
+   + [Lichtbak](light-box.md)
+   + [Elementinzichten](asset-insights.md)
+   + [Middels DTM inzicht in bedrijfsmiddelen inschakelen](use-dtm-for-asset-insights.md)
+   + [Elementinzichten configureren](configure-asset-insights.md)
    + [Elementen in- en uitchecken](check-out-and-submit-assets.md)
    + [Vertaalcloudservices toepassen op mappen](transition-cloud-services.md)
-   + [Paginatracering gebruiken en code insluiten in webpagina&#39;s](touch-ui-using-page-tracker.md)
+   + [Paginatracering gebruiken en code insluiten in webpagina&#39;s](use-page-tracker.md)
    + [Samengestelde elementen beheren](managing-linked-subassets.md)
    + [Verwante activa](related-assets.md)
    + [Persoonlijke map delen](private-folder.md)

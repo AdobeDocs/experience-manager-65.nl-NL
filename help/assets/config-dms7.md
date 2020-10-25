@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '5591'
 ht-degree: 6%
@@ -237,7 +237,7 @@ U kunt bepalen welke elementtypen door Dynamic Media moeten worden verwerkt en d
 * Rasteren een Adobe Illustrator-bestand (.AI) of een Adobe Photoshop Encapsulated Postscript-bestand (.EPS).
 * Opmerking: U kunt videoprofielen en afbeeldingsprofielen gebruiken om respectievelijk de verwerking van video&#39;s en afbeeldingen te definiëren.
 
-Zie Elementen [uploaden](/help/assets/managing-assets-touch-ui.md#uploading-assets).
+Zie Elementen [uploaden](/help/assets/manage-assets.md#uploading-assets).
 
 **Elementverwerking configureren**
 
@@ -428,7 +428,7 @@ Wanneer de spinset wordt geüpload en gepubliceerd, activeert u de naam van het 
 
    Uw geloofsbrieven en opening van een sessie werden verstrekt door Adobe op het tijdstip van levering. Neem contact op met Technische ondersteuning als u deze informatie niet hebt.
 
-1. Klik op de navigatiebalk boven aan de pagina op **[!UICONTROL Setup]>[!UICONTROL Application Setup]>[!UICONTROL Batch Set Presets]>[!UICONTROL Batch Set Preset]**.
+1. Klik op de navigatiebalk boven aan de pagina op **[!UICONTROL Setup]> [!UICONTROL Application Setup] > [!UICONTROL Batch Set Presets] >[!UICONTROL Batch Set Preset]**.
 
    Let op: **[!UICONTROL View Form]** zoals ingesteld in de rechterbovenhoek van de pagina Details, is de standaardweergave.
 

@@ -3,7 +3,7 @@ title: Metagegevens van uw digitale middelen beheren in [!DNL Adobe Experience M
 description: Leer meer over de typen metagegevens en [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] hoe u elementen automatisch kunt ordenen en verwerken op basis van hun metagegevens.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b14b377e52ab10c41355f069d97508b588d82216
+source-git-commit: e49fa8ec19411648841b19bad4b8c1e0efcc1dc1
 workflow-type: tm+mt
 source-wordcount: '2324'
 ht-degree: 10%
@@ -163,7 +163,7 @@ Hier volgen enkele voorbeelden van het gebruik van metagegevens voor bulksgewijs
 
 ## Metagegevens van verzamelingen bewerken {#collections-metadata}
 
-Zie Metagegevens [van verzamelingen](/help/assets/managing-collections-touch-ui.md#view-edit-collection-metadata) weergeven en bewerken en metagegevens van meerdere verzamelingen in bulk [](/help/assets/managing-collections-touch-ui.md#editing-collection-metadata-in-bulk)bewerken voor meer informatie.
+Zie Metagegevens [van verzamelingen](/help/assets/manage-collections.md#view-edit-collection-metadata) weergeven en bewerken en metagegevens van meerdere verzamelingen in bulk [](/help/assets/manage-collections.md#editing-collection-metadata-in-bulk)bewerken voor meer informatie.
 
 ## Een metagegevensprofiel toepassen op mappen {#applying-a-metadata-profile-to-folders}
 
@@ -242,7 +242,7 @@ U kunt een metagegevensprofiel uit een map verwijderen vanuit het **[!UICONTROL 
 >[!MORELIKETHIS]
 >
 >* [Metagegevensconcepten en begrip](metadata-concepts.md).
->* [Eigenschappen van metagegevens van meerdere verzamelingen bewerken](managing-collections-touch-ui.md#editing-collection-metadata-in-bulk)
+>* [Eigenschappen van metagegevens van meerdere verzamelingen bewerken](manage-collections.md#editing-collection-metadata-in-bulk)
 >* [Metagegevens importeren en exporteren in Experience Manager Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
 
 

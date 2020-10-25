@@ -1,9 +1,9 @@
 ---
-title: Lijst met functies voor AEM Fluid Ervaring
+title: Lijst met functies voor dynamische ervaringen AEM
 description: Lijst met functies voor dynamische ervaringen
 index: n
 translation-type: tm+mt
-source-git-commit: 307a1db2e5bbb72d730c89ba14f5ce02b96c108d
+source-git-commit: 33abb544c5f12f7d7a44fc326f07fe9b53ebc9d3
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 6%
@@ -11,35 +11,35 @@ ht-degree: 6%
 ---
 
 
-# Lijst met functies voor AEM Fluid Ervaring{#aem-fluid-experiences-feature-list}
+# Lijst met functies voor dynamische ervaringen AEM{#aem-fluid-experiences-feature-list}
 
-De Vloeiende Ervaring van de Adobe Experience Manager trekt uit de krachtige eigenschapreeksen van AEM Sites, Dynamic Media AEM, en AEM Assets om een robuuste oplossing voor hoofdloze inhoudslevering te verstrekken.
+Adobe Experience Manager Fluid Experience maakt gebruik van de krachtige functiesets van AEM Sites, AEM Dynamic Media en AEM Assets om een robuuste oplossing te bieden voor het leveren van inhoud zonder kop.
 
-AEM Fluid Experience onderscheidt zich van klassieke AEM in die zin dat alleen het gebruiksgeval zonder kop wordt aangepakt. Met de [volledige oplossingen voor AEM Sites, bedrijfsmiddelen en Dynamic Media is het mogelijk om inhoud te ontwerpen en te leveren en AEM&#39;s krachtige ondersteuning te bieden voor hybride gebruiksscenario&#39;s.](https://docs.adobe.com/content/help/en/experience-manager-65/user-guide/home.html)
+AEM Fluid Experience onderscheidt zich van klassieke AEM in die zin dat alleen de headless delivery use case wordt behandeld. Bij de [volledige oplossingen AEM Sites, Assets en Dynamic Media is krachtige ondersteuning beschikbaar voor het schrijven en leveren van content en AEM krachtige ondersteuning voor hybride gebruiksscenario&#39;s.](https://docs.adobe.com/content/help/en/experience-manager-65/user-guide/home.html)
 
-In de volgende tabellen worden de kenmerken van AEM Fluid Experience gedefinieerd en een koppeling naar de relevante ondersteuningsdocumentatie opgenomen.
+In de volgende tabellen worden de kenmerken van AEM dynamische ervaring gedefinieerd en wordt een koppeling naar de relevante ondersteuningsdocumentatie opgenomen.
 
 * [Bewaarplaats](#repository-features)
 * [Toegang, API&#39;s en levering](#access-api-and-delivery-features)
 * [Beheer en integratie](#admin-and-integration-features)
-* [Analytics en personalisatie](#analytics-and-personalization)
+* [Analyse en personalisatie](#analytics-and-personalization)
 
 >[!NOTE]
 >
->AEM Fluid Experience is een subset van AEM-functionaliteit. De functies die in deze tabellen zijn gekoppeld, kunnen extra functies bevatten die wel in AEM zijn opgenomen, maar niet in AEM Fluid Experience.
+>AEM Fluid Experience is een subset van AEM functionaliteit. De eigenschappen verbonden aan in deze lijsten kunnen extra eigenschappen omvatten inbegrepen in AEM, maar niet in AEM Fluid Ervaring.
 
 ## Functies voor opslagplaats {#repository-features}
 
 |  |
 |---|
-| [Inhoudsopslagplaats](/help/assets/managing-assets-touch-ui.md) |
+| [Inhoudsopslagplaats](/help/assets/manage-assets.md) |
 | [Elementen](/help/assets/assets-formats.md) |
 | [Afbeeldingsuitvoeringen](/help/assets/image-presets.md) |
 | [Metagegevens- en tagbeheer](/help/assets/metadata.md) |
-| [Zoeken](/help/assets/managing-assets-touch-ui.md) |
-| [Verzamelingen](/help/assets/managing-collections-touch-ui.md) en [lichtbak](/help/assets/touch-ui-light-box.md) |
+| [Zoeken](/help/assets/manage-assets.md) |
+| [Verzamelingen](/help/assets/manage-assets.md) en [lichtbak](/help/assets/light-box.md) |
 | [Profielen](/help/assets/processing-profiles.md) |
-| [Versiebeheer](/help/assets/managing-assets-touch-ui.md) |
+| [Versiebeheer](/help/assets/manage-assets.md) |
 | [Dubbele detectie](/help/assets/duplicate-detection.md) |
 | [Slimme tags](/help/assets/enhanced-smart-tags.md) |
 
@@ -72,7 +72,7 @@ In de volgende tabellen worden de kenmerken van AEM Fluid Experience gedefinieer
 | [Workflows](/help/sites-administering/workflows-starting.md) |
 | Connectiviteit (cloudservices) |
 
-## Analytics en personalisatie {#analytics-and-personalization}
+## Analyse en personalisatie {#analytics-and-personalization}
 
 |  |
 |---|

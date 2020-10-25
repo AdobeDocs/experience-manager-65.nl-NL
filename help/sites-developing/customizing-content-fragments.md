@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: d0770bee-4be5-4a6a-8415-70fdfd75015c
 docset: aem65
 translation-type: tm+mt
-source-git-commit: afed13a2f832b91d0df825d1075852cc84443646
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '2749'
 ht-degree: 1%
@@ -25,7 +25,7 @@ Een inhoudsfragment breidt een standaardelement uit; zie:
 
 * [Inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md) en [paginascripts maken en beheren met inhoudsfragmenten](/help/sites-authoring/content-fragments.md) voor meer informatie over inhoudsfragmenten.
 
-* [Elementen](/help/assets/managing-assets-touch-ui.md) beheren en Elementen [aanpassen en uitbreiden](/help/assets/extending-assets.md) voor meer informatie over standaardelementen.
+* [Elementen](/help/assets/manage-assets.md) beheren en Elementen [aanpassen en uitbreiden](/help/assets/extending-assets.md) voor meer informatie over standaardelementen.
 
 ## Architectuur {#architecture}
 
@@ -61,7 +61,7 @@ Afhankelijk van het type fragment worden ook modellen of sjablonen gebruikt:
    * Sjablonen definiëren de (basis-, alleen-tekst) structuur van een inhoudsfragment wanneer dit wordt gemaakt.
    * De sjabloon wordt naar het fragment gekopieerd wanneer het wordt gemaakt. verdere wijzigingen van de sjabloon worden dus niet weerspiegeld in bestaande fragmenten.
    * Functies om nieuwe variaties toe te voegen, enz., moeten het fragment dienovereenkomstig bijwerken.
-   * [Sjablonen](/help/sites-developing/content-fragment-templates.md) voor inhoudsfragmenten werken op een andere manier dan andere sjablonen in het AEM-ecosysteem (bijvoorbeeld paginasjablonen, enz.). Daarom moeten zij afzonderlijk worden beschouwd.
+   * [Sjablonen](/help/sites-developing/content-fragment-templates.md) voor inhoudsfragmenten werken op een andere manier dan andere sjablonen in het AEM (bijvoorbeeld paginasjablonen, enz.). Daarom moeten zij afzonderlijk worden beschouwd.
    * Indien gebaseerd op een sjabloon wordt het MIME-type van de inhoud beheerd op de feitelijke inhoud; dit betekent dat elk element en elke variatie een ander MIME-type kunnen hebben.
 
 ### Integratie met middelen {#integration-with-assets}
@@ -70,7 +70,7 @@ CFM (Content Fragment Management) maakt deel uit van AEM Assets als:
 
 * Inhoudsfragmenten zijn elementen.
 * Ze gebruiken de bestaande functionaliteit Elementen.
-* Ze zijn volledig geïntegreerd met Elementen (beheerconsoles, enz.).
+* Ze zijn volledig geïntegreerd met middelen (beheerconsoles, enz.).
 
 #### Gestructureerde inhoudsfragmenten toewijzen aan elementen {#mapping-structured-content-fragments-to-assets}
 
@@ -130,7 +130,7 @@ Zie [Inhoudsfragment - Overwegingen](/help/assets/content-fragments/content-frag
 >
 >Het wordt nu aanbevolen om de kerncomponent [van het](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html) inhoudsfragment te gebruiken. Zie [Core Components](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) ontwikkelen voor meer informatie.
 
-Vanuit AEM-pagina&#39;s kan naar inhoudsfragmenten worden verwezen, net als met elk ander elementtype. AEM biedt de kerncomponent [**van het **inhoudsfragment](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)- een[component waarmee u inhoudsfragmenten op uw pagina](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page)&#39;s kunt opnemen. U kunt ook de kerncomponent van dit** inhoudsfragment **uitbreiden.
+Vanuit AEM pagina&#39;s kan naar inhoudsfragmenten worden verwezen, net als met elk ander elementtype. AEM biedt de kerncomponent [**van het** inhoudsfragment](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html) - een [component waarmee u inhoudsfragmenten op uw pagina](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page)&#39;s kunt opnemen. U kunt ook de kerncomponent van dit **inhoudsfragment** uitbreiden.
 
 * De component gebruikt de `fragmentPath` eigenschap om naar het daadwerkelijke inhoudsfragment te verwijzen. De `fragmentPath` onroerende goederen worden op dezelfde wijze afgehandeld als soortgelijke eigendommen van andere soorten activa; bijvoorbeeld wanneer het inhoudsfragment naar een andere locatie wordt verplaatst.
 
@@ -169,7 +169,7 @@ De parameters voor dit kunnen in de Console [van het](/help/sites-deploying/conf
 >
 >Er is geen directe toewijzing tussen eigenschap en componenttype.
 >
->AEM gebruikt gewoon de eerste eigenschap die op een alinea kan worden gevonden. U moet de eigenschappen dus zorgvuldig kiezen.
+>AEM gebruikt gewoon de eerste eigenschap die op een alinea staat. U moet de eigenschappen dus zorgvuldig kiezen.
 
 ![screenshot_2019-03-18at100941](assets/screenshot_2019-03-18at100941.png)
 
@@ -196,7 +196,7 @@ Inhoudsfragmenten kunnen worden geïntegreerd met:
 
 * **Vertalingen**
 
-   Inhoudsfragmenten zijn volledig geïntegreerd met de [AEM-vertaalworkflow](/help/sites-administering/tc-manage.md). Op architectonisch niveau betekent dit:
+   Inhoudsfragmenten zijn volledig geïntegreerd met de [AEM vertaalworkflow](/help/sites-administering/tc-manage.md). Op architectonisch niveau betekent dit:
 
    * De afzonderlijke vertalingen van een inhoudsfragment zijn eigenlijk afzonderlijke fragmenten. bijvoorbeeld:
 
@@ -218,7 +218,7 @@ Inhoudsfragmenten kunnen worden geïntegreerd met:
    * Naast de op regel gebaseerde paden bestaat er geen verdere verbinding tussen de verschillende taalversies van een inhoudsfragment. ze worden behandeld als twee afzonderlijke fragmenten, hoewel de interface de mogelijkheid biedt om tussen de taalvarianten te navigeren.
    >[!NOTE]
    >
-   >De AEM-vertaalworkflow werkt met `/content`:
+   >De AEM vertaalworkflow werkt met `/content`:
    >
    >    * Aangezien de modellen van het inhoudsfragment in verblijven `/conf`, zijn deze niet inbegrepen in dergelijke vertalingen. U kunt de UI-tekenreeksen [internationaliseren](/help/sites-developing/i18n-dev.md).
       >
@@ -410,7 +410,7 @@ Zie het volgende:
 
 ## Sessies bewerken {#edit-sessions}
 
-Er wordt een bewerkingssessie gestart wanneer de gebruiker een inhoudsfragment opent in een van de editorpagina&#39;s. De bewerkingssessie is voltooid wanneer de gebruiker de editor verlaat door **Opslaan** of **Annuleren** te selecteren.
+Er wordt een bewerkingssessie gestart wanneer de gebruiker een inhoudsfragment in een van de editorpagina&#39;s opent. De bewerkingssessie is voltooid wanneer de gebruiker de editor verlaat door **Opslaan** of **Annuleren** te selecteren.
 
 ### Vereisten {#requirements}
 
@@ -448,7 +448,7 @@ Het gaat om de volgende processen:
 * Bewerken
 
    * Alle wijzigingen (automatisch opslaan inbegrepen) worden uitgevoerd op het actieve inhoudsfragment - niet in een gescheiden, beveiligd gebied.
-   * Deze wijzigingen worden daarom direct weerspiegeld op AEM-pagina&#39;s die verwijzen naar het desbetreffende inhoudsfragment
+   * Deze wijzigingen worden daarom direct doorgevoerd op AEM pagina&#39;s die naar het desbetreffende inhoudsfragment verwijzen
 
 #### Acties {#actions}
 

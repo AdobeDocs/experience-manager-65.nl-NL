@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: ed84157a-e6b4-4dde-af2e-a1e0b6259628
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '1395'
 ht-degree: 18%
@@ -27,7 +27,7 @@ Gemengde Mediasets worden aangegeven door een banner met het woord **[!UICONTROL
 
 >[!NOTE]
 >
->Zie Elementen [beheren met de aanraakinterface](/help/assets/managing-assets-touch-ui.md)voor informatie over de gebruikersinterface van Elementen.
+>Zie Elementen [beheren met de aanraakinterface](/help/assets/manage-assets.md)voor informatie over de gebruikersinterface van Elementen.
 
 ## Snel starten: Gemengde mediasets {#quick-start-mixed-media-sets}
 
@@ -67,7 +67,7 @@ Ga als volgt te werk om snel aan de slag te gaan met gemengde mediasets:
 
    Zie [Een gemengde mediaset koppelen aan een webpagina](/help/assets/linking-urls-to-yourwebapplication.md) en [De video- of afbeeldingsviewer insluiten](/help/assets/embed-code.md).
 
-Indien nodig kunt u [gemengde mediasets](#editing-mixed-media-sets)bewerken. Daarnaast kunt u de eigenschappen [van](/help/assets/managing-assets-touch-ui.md#editing-properties)gemengde mediaset weergeven en wijzigen.
+Indien nodig kunt u [gemengde mediasets](#editing-mixed-media-sets)bewerken. Daarnaast kunt u de eigenschappen [van](/help/assets/manage-assets.md#editing-properties)gemengde mediaset weergeven en wijzigen.
 
 >[!NOTE]
 >
@@ -123,7 +123,7 @@ Wanneer u elementen aan de set toevoegt, worden deze automatisch in alfanumeriek
 
 ## Gemengde mediasets bewerken {#editing-mixed-media-sets}
 
-U kunt diverse bewerkingstaken rechtstreeks in de gebruikersinterface uitvoeren op elementen in gemengde mediasets, [net als op elementen](/help/assets/managing-assets-touch-ui.md). U kunt ook de volgende handelingen uitvoeren in Gemengde Mediasets:
+U kunt diverse bewerkingstaken rechtstreeks in de gebruikersinterface uitvoeren op elementen in gemengde mediasets, [net als op elementen](/help/assets/manage-assets.md). U kunt ook de volgende handelingen uitvoeren in Gemengde Mediasets:
 
 * Voeg elementen toe aan de gemengde mediaset.
 * Wijzig de volgorde van elementen in de gemengde mediaset.

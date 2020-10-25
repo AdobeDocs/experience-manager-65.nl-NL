@@ -3,7 +3,7 @@ title: Elementen verwerken met behulp van workflows
 description: Middelenverwerking voor het converteren van indelingen, het maken van uitvoeringen, het beheren van elementen, het valideren van elementen en het uitvoeren van workflows.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 0d5a48be283484005013ef3ed7ad015b43f6398b
 workflow-type: tm+mt
 source-wordcount: '938'
 ht-degree: 3%
@@ -27,7 +27,7 @@ Zie **[!UICONTROL Tools > Workflow > Models]** in [!DNL Experience Manager].
 
 ![Een deel van de standaardworkflow](assets/aem-default-workflows.png)
 
-*Afbeelding: Enkele standaardworkflows beschikbaar in[!DNL Experience Manager].*
+*Afbeelding: Enkele standaardworkflows beschikbaar in [!DNL Experience Manager].*
 
 ## Workflows toepassen om elementen te verwerken {#applying-workflows-to-assets}
 
@@ -84,7 +84,7 @@ De procedure voor het toepassen van een workflow op meerdere mappen is vergelijk
 
 ## Een workflow toepassen op een verzameling {#applying-a-workflow-to-a-collection}
 
-Zie een workflow [toepassen op een verzameling](/help/assets/managing-collections-touch-ui.md#running-a-workflow-on-a-collection).
+Zie een workflow [toepassen op een verzameling](/help/assets/manage-collections.md#running-a-workflow-on-a-collection).
 
 ## Een workflow automatisch starten om elementen voorwaardelijk te verwerken {#auto-execute-workflow-on-some-assets}
 

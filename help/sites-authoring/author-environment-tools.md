@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: f488ba79-5bda-46e9-9c15-9a8c3dbfa2ce
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2451f4994a18b1566ea0efddbefcaa5bb8e41c99
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+workflow-type: tm+mt
+source-wordcount: '2239'
+ht-degree: 9%
 
 ---
 
@@ -22,13 +25,13 @@ De ontwerpomgeving van AEM biedt verschillende mechanismen voor het organiseren 
 
 ## Uw site beheren {#managing-your-site}
 
-Met de **Sites** -console kunt u door uw website navigeren en deze beheren met de kopbalk, werkbalk, actiepictogrammen (van toepassing op de geselecteerde bron), broodkruimels en, indien geselecteerd, secundaire rails (bijvoorbeeld tijdlijn en verwijzingen).
+The **Sites** console allows you to navigate and manage your website, using the header bar, toolbar, action icons (applicable for the selected resource), breadcrumbs and when selected, secondary rails (for example, timeline and references).
 
 Bijvoorbeeld, kolommening:
 
 ![ateat-01](assets/ateat-01.png)
 
-## Pagina-inhoud bewerken {#editing-page-content}
+## Paginacontent bewerken {#editing-page-content}
 
 U kunt een pagina bewerken met de pagina-editor. Bijvoorbeeld:
 
@@ -46,7 +49,7 @@ U kunt een pagina bewerken met de pagina-editor. Bijvoorbeeld:
 
 Wanneer u een pagina bewerkt, kunt u de **Help** openen via:
 
-* de kiezer [**Pagina-informatie **](/help/sites-authoring/editing-page-properties.md#page-properties); dit zal de inleidende dia&#39;s (zoals getoond de eerste keer u tot de redacteur toegang hebt) tonen.
+* de kiezer [**Pagina-informatie**](/help/sites-authoring/editing-page-properties.md#page-properties) ; dit zal de inleidende dia&#39;s (zoals getoond de eerste keer u tot de redacteur toegang hebt) tonen.
 * het [configuratiedialoogvenster](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) voor specifieke componenten (met de ? pictogram in de dialoogwerkbalk); dit zal contextgevoelige hulp tonen .
 
 Verdere [Help-gerelateerde bronnen zijn beschikbaar op consoles](/help/sites-authoring/basic-handling.md#accessing-help).
@@ -55,7 +58,7 @@ Verdere [Help-gerelateerde bronnen zijn beschikbaar op consoles](/help/sites-aut
 
 De componentenbrowser toont alle componenten die voor gebruik op uw huidige pagina beschikbaar zijn. U kunt deze naar de juiste locatie slepen en vervolgens bewerken om uw inhoud toe te voegen.
 
-De componentenbrowser is een lusje binnen het zijpaneel (samen met [activa browser](/help/sites-authoring/author-environment-tools.md#assets-browser) en [inhoudsboom](/help/sites-authoring/author-environment-tools.md#content-tree)). Als u het zijpaneel wilt openen (of sluiten), gebruikt u het pictogram linksboven op de werkbalk:
+De componentenbrowser is een tabblad in het zijpaneel (samen met de [assetbrowser](/help/sites-authoring/author-environment-tools.md#assets-browser) en de [contentstructuur](/help/sites-authoring/author-environment-tools.md#content-tree)). Als u het zijpaneel wilt openen (of sluiten), gebruikt u het pictogram linksboven op de werkbalk:
 
 ![ateat-03](assets/ateat-03.png)
 
@@ -91,11 +94,13 @@ De daadwerkelijke verschijning en behandeling zijn afhankelijk van het apparaten
 
       * De standaardcomponentpictogrammen zijn monochroom.
       * Afkortingen zijn altijd de eerste twee tekens van de componentnaam.
+
    Van de hoogste toolbar in browser van **Componenten** kunt u:
 
    * Componenten filteren op naam.
    * Beperk de weergave tot een specifieke groep met behulp van de keuzelijst.
-   Voor een meer gedetailleerde beschrijving van de component kunt u op het informatiepictogram naast de component in de **Componentbrowser** klikken of hierop tikken (indien beschikbaar). Bijvoorbeeld voor de **container** Layout:
+
+   Voor een meer gedetailleerde beschrijving van de component kunt u op het informatiepictogram naast de component in de **Componentbrowser** klikken of tikken (indien beschikbaar). Bijvoorbeeld voor de **Lay-outcontainer**:
 
    ![ateat-06](assets/ateat-06.png)
 
@@ -105,7 +110,7 @@ De daadwerkelijke verschijning en behandeling zijn afhankelijk van het apparaten
 
 In de middelenbrowser worden alle [elementen](/help/assets/home.md) weergegeven die rechtstreeks op de huidige pagina kunnen worden gebruikt.
 
-De middelenbrowser is een tab in het zijpaneel, samen met de [deelvensterbrowser en de](/help/sites-authoring/author-environment-tools.md#components-browser)inhouds- en [inhouds-structuur](/help/sites-authoring/author-environment-tools.md#content-tree). Als u het zijpaneel wilt openen of sluiten, gebruikt u het pictogram linksboven op de werkbalk:
+The assets browser is a tab within the side panel along with the [components browse](/help/sites-authoring/author-environment-tools.md#components-browser)r and [content tree](/help/sites-authoring/author-environment-tools.md#content-tree). Als u het zijpaneel wilt openen of sluiten, gebruikt u het pictogram linksboven op de werkbalk:
 
 ![ateat-03-1](assets/ateat-03-1.png)
 
@@ -162,7 +167,7 @@ De daadwerkelijke verschijning en behandeling zijn afhankelijk van het apparaten
 
    ![ateat-10](assets/ateat-10.png)
 
-Als u snel een wijziging in een element wilt aanbrengen, kunt u de [middeleneditor](/help/assets/managing-assets-touch-ui.md) rechtstreeks vanuit de elementenbrowser starten door op het bewerkingspictogram naast de naam van het element te klikken.
+Als u snel een wijziging in een element wilt aanbrengen, kunt u de [middeleneditor](/help/assets/manage-assets.md) rechtstreeks vanuit de elementenbrowser starten door op het bewerkingspictogram naast de naam van het element te klikken.
 
 ![](do-not-localize/screen_shot_2018-03-22at142448.png)
 
@@ -217,7 +222,7 @@ Als uw pagina Content Fragments bevat, hebt u ook toegang tot de [browser voor G
 **Verwijzingen** tonen verbindingen met de geselecteerde pagina:
 
 * Blauwdrukken
-* Starten
+* Lanceringen
 * Live kopieën
 * Taalkopieën
 * Binnenkomende koppelingen
@@ -298,13 +303,13 @@ Er zijn verschillende modi voor het bewerken van een pagina die verschillende ha
 * [Ontwerp](/help/sites-authoring/default-components-designmode.md) - staat u toe om componenten voor gebruik op een pagina toe te laten/onbruikbaar te maken en het ontwerp van de component te vormen (als de pagina op een [statische malplaatje](/help/sites-authoring/templates.md#editable-and-static-templates)gebaseerd is).
 
 * [Doelstelling](/help/sites-authoring/content-targeting-touch.md) - vergroot de relevantie van inhoud door de inhoud op alle kanalen te richten en te meten.
-* [Activiteitenkaart](/help/sites-authoring/page-analytics-using.md#analyticsvisiblefromthepageeditor) - geeft analysegegevens voor de pagina weer.
+* [Activity Map](/help/sites-authoring/page-analytics-using.md#analyticsvisiblefromthepageeditor) - toont de gegevens van de Analyse voor de pagina.
 
 * [Tijdlijn verdraaien](/help/sites-authoring/working-with-page-versions.md#timewarp) - hiermee kunt u de status van een pagina op een bepaald tijdstip bekijken.
 * [Live Copy-status](/help/sites-authoring/editing-content.md#live-copy-status) : geeft een snel overzicht van de status van de live kopie en van de onderdelen die u wel of niet wilt overnemen.
 * [Voorvertoning](/help/sites-authoring/editing-content.md#previewing-pages) : wordt gebruikt om de pagina weer te geven zoals deze wordt weergegeven in de publicatieomgeving. of om te navigeren met koppelingen in de inhoud.
 
-* [Annoteren](/help/sites-authoring/annotations.md) - wordt gebruikt om annotaties op de pagina toe te voegen of weer te geven.
+* [Annotatie](/help/sites-authoring/annotations.md) - wordt gebruikt om annotaties op de pagina toe te voegen of weer te geven.
 
 U kunt deze openen met de pictogrammen in de rechterbovenhoek. Het werkelijke pictogram verandert in de modus die u momenteel gebruikt:
 
@@ -316,6 +321,7 @@ U kunt deze openen met de pictogrammen in de rechterbovenhoek. Het werkelijke pi
 >* Voor toegang tot bepaalde modi zijn de juiste machtigingen/bevoegdheden vereist.
 >* De modus Ontwikkelaar is niet beschikbaar op mobiele apparaten vanwege ruimtebeperkingen.
 >* Er is een [sneltoets](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) ( `Ctrl-Shift-M`) om te schakelen tussen **Voorvertoning** en de momenteel geselecteerde modus (bijvoorbeeld **Bewerken**, **Lay-out**, enz.).
+
 >
 
 
@@ -334,7 +340,7 @@ Als u op de knop Dialoogvenster **Selectie** openen in het padveld klikt, wordt 
 
 ![](do-not-localize/screen_shot_2018-03-22at154427.png)
 
-U kunt ook beginnen te typen in het padveld en AEM biedt tijdens het typen overeenkomende paden.
+U kunt ook beginnen te typen in het veld Pad en AEM biedt overeenkomende paden terwijl u typt.
 
 ![ateat-19](assets/ateat-19.png)
 
@@ -345,7 +351,7 @@ De wegbrowser is georganiseerd als de [kolommening](/help/sites-authoring/basic-
 ![screen_shot_2018-03-22at154521](assets/screen_shot_2018-03-22at154521.png)
 
 * Zodra een bron is geselecteerd, wordt de knop **Selecteren** rechtsboven in het dialoogvenster actief. Klik of tik om de selectie te bevestigen of **Annuleren** om af te breken.
-* Als de context voor de selectie van veelvoudige middelen toestaat, activeert het selecteren van een middel ook de **Uitgezochte** knoop, maar voegt ook een telling van het aantal geselecteerde middelen aan het hoger-recht van het venster toe. Klik op de **X** naast het getal om de selectie van alles op te heffen.
+* Als de selectie van meerdere assets is toegestaan binnen de context, activeert het selecteren van een resource ook de knop **Selecteren**, maar wordt er ook een telling van het aantal geselecteerde resources in de rechterbovenhoek van het venster toegevoegd. Klik op de **X** naast het getal om de selectie op te heffen.
 * Wanneer u door de boom navigeert, wordt uw plaats weerspiegeld in de broodkruimels bij de bovenkant van de dialoog. Deze broodkruimels kunnen ook worden gebruikt om snel binnen de middelhiërarchie te springen.
 * U kunt op elk gewenst moment het zoekveld boven in het dialoogvenster gebruiken. Klik op de **X** in het zoekveld om de zoekopdracht te wissen.
 * Als u uw zoekopdracht wilt beperken, kunt u de filteropties zichtbaar maken en de resultaten filteren op basis van een bepaald pad.

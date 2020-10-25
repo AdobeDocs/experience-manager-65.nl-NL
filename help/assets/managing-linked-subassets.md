@@ -3,7 +3,7 @@ title: Samengestelde elementen beheren met verwijzingen en meerdere pagina's
 description: Leer hoe u verwijzingen naar digitale elementen maakt vanuit [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop]de toepassing zelf. Met de functie Paginaviewer kunt u afzonderlijke subelementpagina's van bestanden met meerdere pagina's weergeven, zoals PDF-, INDD-, PPT-, PPTX- en AI-bestanden.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '1298'
 ht-degree: 0%
@@ -28,7 +28,7 @@ U kunt vanuit een [!DNL Adobe Illustrator] bestand verwijzen naar bestaande digi
 1. Haal de digitale middelen op het lokale bestandssysteem op met de [Experience Manager-bureaubladtoepassing](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html). Navigeer naar de bestandssysteemlocatie van het element waarnaar u wilt verwijzen.
 1. Sleep het element van de lokale map naar het [!DNL Illustrator] bestand.
 
-1. Sla het [!DNL Illustrator] bestand op het gekoppelde station op of [upload](/help/assets/managing-assets-touch-ui.md#uploading-assets) het bestand naar de [!DNL Experience Manager] opslagplaats.
+1. Sla het [!DNL Illustrator] bestand op het gekoppelde station op of [upload](/help/assets/manage-assets.md#uploading-assets) het bestand naar de [!DNL Experience Manager] opslagplaats.
 
 1. Nadat de workflow is voltooid, gaat u naar de pagina met elementdetails voor het element. De verwijzingen naar bestaande digitale elementen staan onder **[!UICONTROL Dependencies]** de **[!UICONTROL References]** kolom.
 
@@ -72,7 +72,7 @@ Deze procedure is vergelijkbaar met het [toevoegen van digitale elementen als ve
 
    ![chlimage_1-87](assets/chlimage_1-261.png)
 
-1. Opslaan in [!DNL Photoshop] bestand op het gekoppelde station of [uploaden](/help/assets/managing-assets-touch-ui.md#uploading-assets) naar de [!DNL Experience Manager] opslagplaats.
+1. Opslaan in [!DNL Photoshop] bestand op het gekoppelde station of [uploaden](/help/assets/manage-assets.md#uploading-assets) naar de [!DNL Experience Manager] opslagplaats.
 1. Nadat de workflow is voltooid, worden de verwijzingen naar bestaande [!DNL Experience Manager] elementen weergegeven op de pagina met elementdetails.
 
    Als u de middelen waarnaar wordt verwezen wilt weergeven, sluit u de [Rail](/help/sites-authoring/basic-handling.md#rail-selector) op de pagina met elementdetails.

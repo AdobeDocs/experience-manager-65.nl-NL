@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 148803f3-1e7b-4d35-99c5-e0d82f3adf24
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a430c4de89bde3b907d342106465d3b5a7c75cc8
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 9%
@@ -28,8 +28,9 @@ U kunt de metagegevens (eigenschappen) voor inhoudsfragmenten weergeven en bewer
 1. Navigeer in de **middelenconsole** naar de locatie van het inhoudsfragment.
 1. Ofwel:
 
-   * Selecteer [**Weergave-eigenschappen **om de dialoogvensters](/help/assets/managing-assets-touch-ui.md#editing-properties)te openen. Als u de weergave eenmaal hebt geopend, kunt u deze ook bewerken.
+   * Selecteer [**Weergave-eigenschappen** om de dialoogvensters](/help/assets/manage-assets.md#editing-properties)te openen. Als u de weergave eenmaal hebt geopend, kunt u deze ook bewerken.
    * Open het [inhoudsfragment bij Bewerken](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor)en selecteer vervolgens **Metagegevens** in het zijpaneel.
+
    ![cfm-6420-06](assets/cfm-6420-06.png)
 
 1. Het tabblad **Standaard** bevat opties die u kunt weergeven of bewerken:
@@ -39,5 +40,6 @@ U kunt de metagegevens (eigenschappen) voor inhoudsfragmenten weergeven en bewer
    * **Beschrijving**
    * **Tags**
    * Gemaakt (alleen weergave)
+
    ![cfm-6420-07](assets/cfm-6420-07.png)
 

@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 5af45caf-5e85-4c57-bcd1-e8f7fc460315
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 759d2dd8d12861757bf7f54b77d8d3ca170887fe
+source-git-commit: 0d5a48be283484005013ef3ed7ad015b43f6398b
 workflow-type: tm+mt
 source-wordcount: '241'
 ht-degree: 12%
@@ -29,7 +29,7 @@ Gekoppelde inhoud biedt de verbinding, zodat elementen (d.w.z.) (optioneel) met 
 >
 >Er zijn verschillende methoden om [visuele elementen (bijvoorbeeld afbeeldingen)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) aan het fragment en/of de pagina toe te voegen.
 
-Als u de koppeling wilt maken, moet u eerst uw media-elementen [toevoegen aan een verzameling](/help/assets/managing-collections-touch-ui.md#adding-assets-to-a-collection). Zodra dat gedaan is kunt u:
+Als u de koppeling wilt maken, moet u eerst uw media-elementen [toevoegen aan een verzameling](/help/assets/manage-collections.md#adding-assets-to-a-collection). Zodra dat gedaan is kunt u:
 
 1. Open uw fragment en selecteer **Gekoppelde content** in het zijpaneel.
 

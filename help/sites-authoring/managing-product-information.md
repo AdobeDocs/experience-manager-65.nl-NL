@@ -10,14 +10,17 @@ topic-tags: projects
 content-type: reference
 discoiquuid: 0e5d0a45-c663-4d91-b793-03d39119d103
 translation-type: tm+mt
-source-git-commit: e3683f6254295e606e9d85e88979feaaea76c42e
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+workflow-type: tm+mt
+source-wordcount: '3013'
+ht-degree: 0%
 
 ---
 
 
 # Creative Project- en PIM-integratie{#creative-project-and-pim-integration}
 
-Als u een marketeer of creatieve professional bent, kunt u Creative Project-gereedschappen in Adobe Experience Manager (AEM) gebruiken om productfotografie en de bijbehorende creatieve processen binnen uw organisatie te beheren met betrekking tot eCommerce.
+Als u een marketeer of creatieve professional bent, kunt u Creative Project-gereedschappen in Adobe Experience Manager (AEM) gebruiken om productfotografie en bijbehorende creatieve processen binnen uw organisatie te beheren met betrekking tot eCommerce.
 
 Met Creative Project kunt u met name de volgende taken stroomlijnen in uw fotoopnamesworkflow:
 
@@ -30,7 +33,7 @@ Met Creative Project kunt u met name de volgende taken stroomlijnen in uw fotoop
 >
 >Zie Rollen van de Gebruiker van het [Project voor informatie](/help/sites-authoring/projects.md#user-roles-in-a-project) over het toewijzen van gebruikersrollen en werkschema&#39;s aan bepaalde soorten gebruikers.
 
-## Workflows verkennen voor het maken van foto&#39;s van producten {#exploring-product-photo-shoot-workflows}
+## Workflows verkennen voor het maken van foto&#39;s van producten  {#exploring-product-photo-shoot-workflows}
 
 Creatief Project verstrekt diverse projectmalplaatjes om aan diverse projectvereisten te voldoen. De sjabloon Project **foto foto van** product is beschikbaar in het vak. Deze sjabloon bevat workflows voor fotoopname waarmee u aanvragen voor productfotoshoot kunt starten en beheren. Het omvat ook een reeks taken waarmee u digitale afbeeldingen voor producten kunt verkrijgen via de juiste controle- en goedkeuringsprocedures.
 
@@ -71,7 +74,7 @@ Een project van de Opname van de Foto van het Product omvat de volgende out-of-t
 * Workflow voor het maken van foto&#39;s van producten (integratie van handel)
 * Workflow voor foto&#39;s van producten
 
-Met de workflow Foto maken van product (Commerce Integration) kunt u afbeeldingselementen toewijzen aan de producten in AEM. Deze workflow gebruikt Commerce Integration om de goedgekeurde afbeeldingen te koppelen aan de bestaande productgegevens op de locatie */etc/commerce*.
+Gebruik de workflow Foto foto&#39;s van product (Commerce Integration) om afbeeldingselementen toe te wijzen aan de producten in AEM. Deze workflow gebruikt Commerce Integration om de goedgekeurde afbeeldingen te koppelen aan de bestaande productgegevens op de locatie */etc/commerce*.
 
 De workflow Foto maken van product (Commerce Integration) omvat de volgende taken:
 
@@ -81,7 +84,7 @@ De workflow Foto maken van product (Commerce Integration) omvat de volgende take
 * Controleren en goedkeuren
 * Naar productietaak gaan
 
-Als er geen productinformatie beschikbaar is in AEM, gebruikt u de workflow Fotoopname van product om afbeeldingselementen toe te wijzen aan de producten op basis van de gegevens die u in een CSV-bestand uploadt. Het CSV-bestand moet basisproductinformatie bevatten, zoals product-id, categorie en beschrijving. De workflow haalt goedgekeurde middelen voor de producten op.
+Als de productinformatie niet beschikbaar is in AEM, gebruikt u de workflow Fotoopname van product om afbeeldingselementen toe te wijzen aan de producten op basis van de gegevens die u in een CSV-bestand uploadt. Het CSV-bestand moet basisproductinformatie bevatten, zoals product-id, categorie en beschrijving. De workflow haalt goedgekeurde middelen voor de producten op.
 
 Deze workflow omvat de volgende taken:
 
@@ -153,6 +156,7 @@ De workflow **Fotoopname** van product configureren:
    * Fotofoto van product retoucheren
    * Fotoopname bekijken
    * Verplaatsen naar productie
+
    Voer een gelijkaardige procedure uit om de taken in het werkschema **van de Opname van de Foto van het** Product (de Integratie van de Handel) te vormen.
 
 In deze sectie wordt beschreven hoe u productinformatiebeheer kunt integreren met uw creatieve project.
@@ -219,6 +223,7 @@ Met de **taak Opnamelijst** maken kan de eigenaar van het project producten sele
    * Elementen die overeenkomen met de producthiërarchie worden gemaakt in een map met dezelfde naam als de titel van de workflow.
    * De metagegevens voor de elementen kunnen worden bewerkt met de middelenconsole, zelfs voordat de foto de afbeeldingen verschaft.
    * Er wordt een map met foto&#39;s gemaakt waarin de afbeeldingen worden opgeslagen die de fotograaf verschaft. De map Fotoopname bevat submappen voor elk product-item in de lijst Opnamen.
+
    Voor het werkschema van de Foto van het Product van de Opname (zonder handelsintegratie), is de Upload Opnamelijst de eerste taak. Tik/klik op **Opnamelijst** uploaden om een **bestand shotlist.csv** te uploaden. Het CSV-bestand moet de product-id bevatten. De andere velden zijn optioneel. U kunt ze gebruiken om elementen toe te wijzen aan producten.
 
 ### Opnamelijst uploaden taak {#upload-shot-list-task}
@@ -316,7 +321,7 @@ U kunt naar projectelementen navigeren met behulp van de interface Elementen en 
 
 Tik/klik op het volgende niveau om de producten volgens de hiërarchie van de productgegevens weer te geven.
 
-Creative Project koppelt goedgekeurde elementen aan het product waarnaar wordt verwezen. De metagegevens van de elementen worden bijgewerkt met de productverwijzing en basisinformatie op het tabblad **Productgegevens** onder de eigenschappen van de elementen die worden weergegeven in de sectie Metagegevens van AEM-middelen.
+Creative Project koppelt goedgekeurde elementen aan het product waarnaar wordt verwezen. De metagegevens van de elementen worden bijgewerkt met de productverwijzing en basisinformatie op het tabblad **Productgegevens** onder de eigenschappen van de elementen die worden weergegeven in de sectie Metagegevens van AEM.
 
 >[!NOTE]
 In de workflow Foto&#39;s maken van producten (zonder integratie in de handel) zijn de goedgekeurde afbeeldingen niet gekoppeld aan producten.
@@ -340,11 +345,11 @@ Met deze taak verplaatst u de goedgekeurde middelen naar de map voor productie, 
 
    Tik/klik op **Verplaatsen naar productie**. Sluit het bevestigingsbericht. De elementen worden naar het opgegeven pad verplaatst en er wordt automatisch een centrifugeset gemaakt voor de goedgekeurde elementen voor elk product op basis van de maphiërarchie.
 
-1. Tik/klik op het pictogram **Voltooien** op de werkbalk. De workflow wordt voltooid wanneer de laatste stap is gemarkeerd als voltooid.
+1. Tap/click the **Complete** icon from the toolbar. De workflow wordt voltooid wanneer de laatste stap is gemarkeerd als voltooid.
 
 ## Metagegevens van DAM-element weergeven {#viewing-dam-asset-metadata}
 
-Nadat u hebt ingestemd, zijn de elementen gekoppeld aan de corresponderende producten. De [eigenschappenpagina](/help/assets/managing-assets-touch-ui.md#editing-properties) van de goedgekeurde elementen bevat nu een extra tabblad **Productgegevens** (gekoppelde productinformatie). Op dit tabblad worden de productdetails, het SKU-nummer en andere productgerelateerde details weergegeven die het element koppelen. Tik op het pictogram **Bewerken** of klik op het pictogram Bewerken om een elementeigenschap bij te werken. De productgerelateerde informatie blijft alleen-lezen.
+Nadat u hebt ingestemd, zijn de elementen gekoppeld aan de corresponderende producten. De [eigenschappenpagina](/help/assets/manage-assets.md#editing-properties) van de goedgekeurde elementen bevat nu een extra tabblad **Productgegevens** (gekoppelde productinformatie). Op dit tabblad worden de productdetails, het SKU-nummer en andere productgerelateerde details weergegeven die het element koppelen. Tik op het pictogram **Bewerken** of klik op het pictogram Bewerken om een elementeigenschap bij te werken. De productgerelateerde informatie blijft alleen-lezen.
 
 Tik/klik op de koppeling die verschijnt om naar de pagina met productdetails te navigeren in de productconsole waaraan het element is gekoppeld.
 
@@ -352,7 +357,7 @@ Tik/klik op de koppeling die verschijnt om naar de pagina met productdetails te 
 
 U kunt de workflows voor het maken van foto&#39;s van projecten op basis van vereisten aanpassen. Dit is een facultatieve, op rol-gebaseerde taak die u uitvoert om de waarde van een variabele binnen het project te plaatsen. Later, kunt u de gevormde waarde dan gebruiken om bij een besluit aan te komen.
 
-1. Klik op het AEM-logo of tik erop en ga vervolgens naar **Extra** > **Workflow** > **Modellen** om de pagina Workflowmodellen te openen.
+1. Klik op het AEM logo of tik erop en ga vervolgens naar **Extra** > **Workflow** > **Modellen** om de pagina Workflowmodellen te openen.
 1. Selecteer de workflow **Productfotoopname (Commerce Integration)** of de workflow **Productfotoopname** en klik op de werkbalk op **Bewerken** of tik op Bewerkenom de workflow in de bewerkingsmodus te openen.
 1. Open de **Projecten** taken in de zijschop, en sleep de **Create Rol Gebaseerde stap** van de Taak van het Project aan het werkschema.
 

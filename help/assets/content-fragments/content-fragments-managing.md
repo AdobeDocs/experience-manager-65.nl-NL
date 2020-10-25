@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 21a18d60-f3fe-4048-9949-8416b5cb4596
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c71c24a291b728ab429b18a405123c96123cf617
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '1486'
 ht-degree: 10%
@@ -120,7 +120,7 @@ Selecteer het fragment om de werkbalk weer te geven met de toepasselijke acties:
 
 >[!NOTE]
 >
->Veel van deze acties zijn [standaardhandelingen voor middelen](/help/assets/managing-assets-touch-ui.md) en/of de [AEM bureaubladtoepassing](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html).
+>Veel van deze acties zijn [standaardhandelingen voor middelen](/help/assets/manage-assets.md) en/of de [AEM bureaubladtoepassing](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html).
 
 ## De fragmenteditor openen {#opening-the-fragment-editor}
 
@@ -184,7 +184,7 @@ De editor heeft twee opties:
 
    >[!CAUTION]
    >
-   >Naast het eenvoudig opslaan van uw veranderingen, werkt **sparen** ook om het even welke verwijzingen bij en zorgt ervoor dat de verzender zoals vereist wordt gespoeld. Deze wijzigingen kunnen enige tijd in beslag nemen. Hierdoor kan de prestaties van een groot/complex/zwaar geladen systeem worden beïnvloed.
+   >Naast het eenvoudig opslaan van uw wijzigingen, werkt **sparen** ook om het even welke verwijzingen bij en zorgt ervoor dat de verzender zoals vereist wordt gespoeld. Deze wijzigingen kunnen enige tijd in beslag nemen. Hierdoor kan de prestaties van een groot/complex/zwaar geladen systeem worden beïnvloed.
    >
    >
    >Houd hier rekening mee wanneer u **Opslaan** gebruikt en vervolgens snel de fragmenteditor ingaat om verdere wijzigingen aan te brengen en op te slaan.
@@ -233,14 +233,14 @@ U kunt de eigenschappen van een fragment weergeven en bewerken met het tabblad [
 
 ## Tijdlijn voor inhoudsfragmenten {#timeline-for-content-fragments}
 
-Naast de standaardopties biedt de [tijdlijn](/help/assets/managing-assets-touch-ui.md#timeline) zowel informatie als handelingen die specifiek zijn voor inhoudsfragmenten:
+Naast de standaardopties biedt de [tijdlijn](/help/assets/manage-assets.md#timeline) zowel informatie als handelingen die specifiek zijn voor inhoudsfragmenten:
 
 * Informatie weergeven over versies, opmerkingen en annotaties
 * Handelingen voor versies
 
-   * **[Terugkeren naar deze versie](#reverting-to-a-version)**(selecteer een bestaand fragment en selecteer vervolgens een specifieke versie)
+   * **[Terugkeren naar deze versie](#reverting-to-a-version)** (selecteer een bestaand fragment en selecteer vervolgens een specifieke versie)
 
-   * **[Vergelijken met huidige](#comparing-fragment-versions)**versie (selecteer een bestaand fragment en selecteer vervolgens een specifieke versie)
+   * **[Vergelijken met huidige](#comparing-fragment-versions)** versie (selecteer een bestaand fragment en selecteer vervolgens een specifieke versie)
 
    * Voeg een **Label** en/of **Commentaar** toe (selecteer een bestaand fragment, dan een specifieke versie)
 

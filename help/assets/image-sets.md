@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: ccc4eb23-934c-4e67-860b-a6faa2bcaafc
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '2009'
 ht-degree: 13%
@@ -23,7 +23,7 @@ Afbeeldingssets bieden gebruikers een geïntegreerde weergave, waarbij gebruiker
 
 Afbeeldingsets worden aangegeven door een banner met het woord `IMAGESET`. Als de afbeeldingset wordt gepubliceerd, wordt bovendien de publicatiedatum, die door het pictogram **[!UICONTROL World]** wordt aangegeven, samen met de laatste wijzigingsdatum op de banner weergegeven. Dit wordt aangegeven door het pictogram **[!UICONTROL Pencil]**.
 
-![chlimage_1-135](assets/chlimage_1-339.png)
+![chlimage_1-133](assets/chlimage_1-339.png)
 
 In de afbeeldingsset kunt u ook stalen maken door een afbeeldingsset te maken en miniaturen toe te voegen.
 
@@ -33,7 +33,7 @@ Stel dat u afbeeldingen van uiteinden met verschillende kleurrekeningen wilt wee
 
 >[!NOTE]
 >
->Zie Elementen [beheren met de aanraakinterface](/help/assets/managing-assets-touch-ui.md)voor informatie over de gebruikersinterface van Elementen.
+>Zie Elementen [beheren met de aanraakinterface](/help/assets/manage-assets.md)voor informatie over de gebruikersinterface van Elementen.
 
 ## Snel starten: Afbeeldingssets {#quick-start-image-sets}
 
@@ -83,7 +83,7 @@ Zo kunt u snel aan de slag:
 
    Zie [Een afbeeldingset koppelen aan een webpagina](/help/assets/linking-urls-to-yourwebapplication.md) en [De video- of afbeeldingsviewer insluiten](/help/assets/embed-code.md).
 
-Zie Afbeeldingssets [bewerken als u Afbeeldingssets wilt bewerken.](#editing-image-sets) Bovendien kunt u de eigenschappen [van de](/help/assets/managing-assets-touch-ui.md#editing-properties)Afbeeldingsset weergeven en bewerken.
+Zie Afbeeldingssets [bewerken als u Afbeeldingssets wilt bewerken.](#editing-image-sets) Bovendien kunt u de eigenschappen [van de](/help/assets/manage-assets.md#editing-properties)Afbeeldingsset weergeven en bewerken.
 
 Als u problemen ondervindt bij het maken van sets, raadpleegt u Afbeeldingen en sets in de modus [Dynamische media](/help/assets/troubleshoot-dms7.md#images-and-sets)oplossen - Scene7.
 
@@ -91,7 +91,7 @@ Als u problemen ondervindt bij het maken van sets, raadpleegt u Afbeeldingen en 
 
 Begin door de beelden voor uw Reeksen van het Beeld te uploaden. Omdat gebruikers kunnen inzoomen op afbeeldingen in de Vastgestelde Kijker van het Beeld, houd rekening met het zoemen wanneer u beelden kiest. Zorg ervoor dat de afbeeldingen ten minste 2000 pixels groot zijn in de grootste dimensie. Afbeeldingssets ondersteunen veel bestandsindelingen voor afbeeldingen, maar afbeeldingen zonder verlies van de indeling TIFF, PNG en EPS worden aanbevolen.
 
-U kunt afbeeldingen voor Afbeeldingssets uploaden zoals u elk ander element in Elementen [zou](/help/assets/managing-assets-touch-ui.md#uploading-assets)uploaden.
+U kunt afbeeldingen voor Afbeeldingssets uploaden zoals u elk ander element in Elementen [zou](/help/assets/manage-assets.md#uploading-assets)uploaden.
 
 ### Afbeeldingsset-elementen voorbereiden voor uploaden {#preparing-image-set-assets-for-upload}
 

@@ -3,7 +3,7 @@ title: Uw digitale middelen organiseren
 description: Organiseer uw digitale elementen, afbeeldingen, bestanden, mappen enzovoort met behulp van Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: bf49f515adb75bf4c0d50a53d0eaa7bb915389a9
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '780'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Alle digitale elementen, metagegevens en inhoud van Microsoft Office- en PDF-doc
 
 ## Elementen in mappen ordenen {#organize-using-folders}
 
-De eenvoudigste manier om elementen te ordenen, is deze in mappen op te slaan. Dit is hetzelfde als het ordenen van bestanden in mappen in ons lokale bestandssysteem. Zie [Elementen](managing-assets-touch-ui.md)beheren voor meer informatie over het maken en beheren van mappen. Hoe u bestanden en mappen benoemt, hoe u submappen ordent en hoe u de bestanden in deze mappen verwerkt, kan van grote invloed zijn op de manier waarop deze elementen worden verwerkt. Door consistente en geschikte naamgevingsstrategieën voor bestanden en mappen te gebruiken, samen met goede praktijken voor metagegevens, kunt u optimaal gebruikmaken van de opslagplaats voor digitale elementen.
+De eenvoudigste manier om elementen te ordenen, is deze in mappen op te slaan. Dit is hetzelfde als het ordenen van bestanden in mappen in ons lokale bestandssysteem. Zie [Elementen](manage-assets.md)beheren voor meer informatie over het maken en beheren van mappen. Hoe u bestanden en mappen benoemt, hoe u submappen ordent en hoe u de bestanden in deze mappen verwerkt, kan van grote invloed zijn op de manier waarop deze elementen worden verwerkt. Door consistente en geschikte naamgevingsstrategieën voor bestanden en mappen te gebruiken, samen met goede praktijken voor metagegevens, kunt u optimaal gebruikmaken van de opslagplaats voor digitale elementen.
 
 * In de meeste gevallen groeit de gegevensopslagruimte voor digitale middelen altijd. Daarom is het belangrijk om het gebruik van metagegevens, de mapstructuur en de naamgeving van bestanden vroegtijdig te formaliseren in de ontwerpcyclus van de inhoud.
 * Gebruik mappen alleen om een consistente opslagstructuur voor uw digitale elementen op te leggen. Deze consistentie helpt uw proces en uw activa beter te beheren. Met middelen die bijvoorbeeld in de volgende typen mappen worden geplaatst, kunt u de juiste [profielen gebruiken voor de verwerking](processing-profiles.md)van elementen:
@@ -53,7 +53,7 @@ Raadpleeg de volgende artikelen voor meer informatie:
 
 Met de functie voor het verzamelen van middelen in kunt u de mogelijkheid om middelen te maken, bewerken en delen tussen gebruikers stroomlijnen. [!DNL Experience Manager Assets] Maak verschillende soorten verzamelingen op basis van de manier waarop u ze gebruikt, waaronder verzamelingen met een statische referentielijst van elementen, mappen en verzamelingen en verzamelingen die elementen ophalen op basis van zoekcriteria.  U kunt ook verzamelingen maken met elementen van verschillende locaties en deze delen met meerdere gebruikers met verschillende toegangsniveaus, weergavebevoegdheden en bewerkingsbevoegdheden.
 
-Zie Verzamelingen [beheren voor meer informatie](managing-collections-touch-ui.md)
+Zie Verzamelingen [beheren voor meer informatie](manage-collections.md)
 
 <!-- TBD items: add screenshots where applicable
 Any hints/recommendations of when to use what method of organizing? Some examples of how organizing helps towards a better taxonomy and improved content velocity.

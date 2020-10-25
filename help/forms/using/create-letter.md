@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 6cef0bcf-e2f0-4a5a-85a1-6d8a5dd9bd01
 translation-type: tm+mt
-source-git-commit: 726163106ddb80600eaa7cc09b1a2e9b035a223e
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+workflow-type: tm+mt
+source-wordcount: '4003'
+ht-degree: 1%
 
 ---
 
@@ -32,7 +35,7 @@ In de volgende afbeelding ziet u een typische workflow voor het maken van een co
 
 In deze workflow:
 
-1. Formulierontwerpers maken lay-outs en fragmentlay-outs met Adobe Forms Designer en uploaden deze naar een CRX-opslagplaats. De indelingen bevatten standaardformuliervelden, indelingsfuncties zoals een kop- en voettekst en lege doelgebieden voor de plaatsing van inhoud. Later, brengen de Specialisten van de Toepassing de inhoud in kaart die voor deze doelgebieden wordt vereist. Meer informatie over het [ontwerpen van lay-outs](/help/forms/using/layout-design-details.md).
+1. Formulierontwerpers maken lay-outs en fragmentlay-outs met gebruik van Adobe Forms Designer en uploaden deze naar een CRX-opslagplaats. De indelingen bevatten standaardformuliervelden, indelingsfuncties zoals een kop- en voettekst en lege doelgebieden voor de plaatsing van inhoud. Later, brengen de Specialisten van de Toepassing de inhoud in kaart die voor deze doelgebieden wordt vereist. Meer informatie over het [ontwerpen van lay-outs](/help/forms/using/layout-design-details.md).
 1. Experts op het gebied van Onderwerpen van juridische afdelingen, financiën of marketing maken en uploaden inhoud, zoals disclaimers van tekstclausules, voorwaarden en afbeeldingen, zoals logo&#39;s, die opnieuw worden gebruikt in verschillende correspondentiesjablonen.
 1. Toepassingsspecialisten maken correspondentiesjablonen. De toepassingsspecialist
 
@@ -66,7 +69,7 @@ De voorwaarden laten u toe om te bepalen welke inhoud inbegrepen bij de tijd van
 
 #### Lay-outfragment {#layout-fragment}
 
-Een lay-outfragment is een lay-out die binnen één of meerdere letters kan worden gebruikt. Een lay-outfragment wordt gebruikt om herhaalbare patronen, vooral dynamische lijsten tot stand te brengen. De indeling kan typische formuliervelden bevatten, zoals &quot;Adres&quot; en &quot;Referentienummer&quot;. Het bevat ook lege subformulieren die doelgebieden aangeven. De indelingen (XDP&#39;s) worden gemaakt in Designer en worden vervolgens [geüpload naar Forms en Documents](/help/forms/using/get-xdp-pdf-documents-aem.md).
+Een lay-outfragment is een lay-out die binnen één of meerdere letters kan worden gebruikt. Een lay-outfragment wordt gebruikt om herhaalbare patronen, vooral dynamische lijsten tot stand te brengen. De indeling kan typische formuliervelden bevatten, zoals &quot;Adres&quot; en &quot;Referentienummer&quot;. Het bevat ook lege subformulieren die doelgebieden aangeven. De lay-outs (XDP&#39;s) worden gemaakt in Designer en worden vervolgens [geüpload naar Forms en Documenten](/help/forms/using/get-xdp-pdf-documents-aem.md).
 
 ### Letter maken {#letter-creation}
 
@@ -92,7 +95,7 @@ De uiteindelijke correspondentie kan voor nabewerking naar een back-end proces w
 1. Ter controle en goedkeuring ingediend.
 1. Beveiligd door het toepassen van digitale handtekeningen, certificering, codering of rechtenbeheer.
 1. Geconverteerd naar een doorzoekbaar PDF-document dat alle metagegevens bevat die nodig zijn voor archivering en controle.
-1. Opgenomen in een PDF-portfolio dat meer documenten bevat, zoals marketingmateriaal. Het PDF-portfolio kan vervolgens worden verzonden als de uiteindelijke correspondentie.
+1. Opgenomen in een PDF-Portfolio die meer documenten bevat, zoals marketingmateriaal. De PDF-Portfolio kan vervolgens worden verzonden als de laatste correspondentie.
 
 ### Correspondentenbeheeroplossingsarchitectuur {#correspondence-management-solution-architecture}
 
@@ -136,7 +139,7 @@ Dit annuleringsdocument is een voorbeeld van een gebruikelijke correspondentie:
   <tr> 
    <td>Opgeslagen<br /> afbeeldingen uit centrale opslagplaats</td> 
    <td>Afbeeldingen zoals logo's en handtekeningafbeeldingen. Afbeeldingen zoals bedrijfslogo's worden in de meeste of alle correspondentie weergegeven. Afbeeldingen van handtekeningen zijn specifiek voor de brief en voor de persoon namens wie de brief wordt verzonden.</td> 
-   <td><p>Afbeeldingen opgeslagen in AEM-elementen (DAM)<br /> </p> <p> </p> </td> 
+   <td><p>Afbeeldingen opgeslagen in AEM (DAM)<br /> </p> <p> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -177,7 +180,7 @@ De complexiteit van de correspondentie kan worden bepaald door de volgende param
 
 **Complexiteit** van layout Hoe complex is de indeling? Letters zoals Bericht van annulering hebben eenvoudige lay-outs. Terwijl letters zoals de bevestiging van de dekking voor claims een complexe indeling hebben met verschillende tabellen en meer dan 60 formuliervelden. Het maken van complexe lay-outs kost meer tijd en vereist geavanceerde vaardigheden voor het ontwerpen van lay-outs.
 
-**Aantal tekstalinea&#39;s en voorwaarden** Een leningsovereenkomst kan 10 pagina&#39;s lang zijn en meer dan 40 tekstclausules bevatten. Veel van deze clausules zouden afhangen van &quot;leningsparameters. Op basis van de precieze voorwaarden zouden de clausules worden opgenomen in of uitgesloten van het contract. Het creëren van dergelijke brieven vereist grondige planning en zorgvuldige definitie van de complexe voorwaarden.
+**Aantal tekstalinea&#39;s en voorwaarden** Een leningsovereenkomst kan 10 pagina&#39;s lang zijn en meer dan 40 tekstclausules bevatten. Veel van deze clausules zouden afhangen van &quot;leningsparameters. Op basis van de exacte voorwaarden zouden de clausules worden opgenomen in of uitgesloten van het contract. Het creëren van dergelijke brieven vereist grondige planning en zorgvuldige definitie van de complexe voorwaarden.
 
 In deze tabel vindt u een aantal richtlijnen waarmee u uw letters kunt classificeren:
 
@@ -236,9 +239,9 @@ U hebt eerst het volgende nodig om een correspondentie te maken:
 
 ### Selecteer een lay-out en voer de lettertype-eigenschappen in {#select-a-layout-and-enter-the-letter-properties}
 
-1. Selecteer **Formulieren** > **Letters**.
+1. Selecteer **Forms** > **Letters**.
 
-1. Selecteer **Maken > Letter**. Correspondence Management geeft de beschikbare lay-outs (XDP&#39;s) weer. Deze indelingen zijn afkomstig van Designer. De indelingen bevatten ook de lettertypesjablonen die in het vak Correspondentiebeheer zijn opgegeven. Voor meer informatie over de malplaatjes van het Beheer van de Correspondentie, zie de malplaatjes [van de](/help/forms/using/reference-cm-layout-templates.md)Referentieletter. Als u uw eigen lay-outs wilt toevoegen, maakt u XDP-bestanden (layout) in Designer en [uploadt u deze bestanden vervolgens naar AEM-formulieren](/help/forms/using/get-xdp-pdf-documents-aem.md).
+1. Selecteer **Maken > Letter**. Correspondence Management geeft de beschikbare lay-outs (XDP&#39;s) weer. Deze indelingen zijn afkomstig van Designer. De indelingen bevatten ook de lettertypesjablonen die in het vak Correspondentiebeheer zijn opgegeven. Voor meer informatie over de malplaatjes van het Beheer van de Correspondentie, zie de malplaatjes [van de](/help/forms/using/reference-cm-layout-templates.md)Referentieletter. Als u uw eigen lay-outs wilt toevoegen, maakt u XDP-bestanden (layout) in Designer en [uploadt u deze bestanden vervolgens naar AEM Forms](/help/forms/using/get-xdp-pdf-documents-aem.md).
 
    ![aanmaken](assets/create-letter.png)
 
@@ -253,7 +256,8 @@ U hebt eerst het volgende nodig om een correspondentie te maken:
    * **Beschrijving (optioneel):** Beschrijf de letter ter referentie.
    * **Gegevenswoordenboek (optioneel)**: Het gegevenswoordenboek kan aan de correspondentie worden geassocieerd. De elementen die u later in deze correspondentie invoegt, moeten ofwel hetzelfde gegevenswoordenboek hebben als het gegevenswoordenboek dat u hier voor de correspondentie kiest, ofwel geen gegevenswoordenboek.
    * **Tags (optioneel):** Selecteer de tags die u op de correspondentie wilt toepassen. U kunt ook een nieuwe/aangepaste tagnaam typen en op Enter drukken om deze te maken.
-   * **Nabewerking (optioneel):** Selecteer het postproces dat op het brievenmalplaatje moet worden toegepast. Er zijn geen postprocessen in de doos en die u gebruikend AEM, zoals e-mail en druk hebt gecreeerd.
+   * **Nabewerking (optioneel):** Selecteer het postproces dat op het brievenmalplaatje moet worden toegepast. Er zijn geen postprocessen in de doos en degenen u gebruikend AEM, zoals e-mail en druk hebt gecreeerd.
+
    ![Correspondentie-eigenschappen](assets/createcorrespondenceproperties.png)
 
 1. Het systeem geeft een bericht weer: &quot;Letter is gemaakt.&quot; (in het waakzame bericht) Tik **Open** om de gegevensmodules en lay-outfragmenten in het te vormen. Of tik op **Gereed** om terug te gaan naar de vorige pagina.
@@ -284,9 +288,10 @@ Wanneer u een correspondentie hebt gemaakt, tikt u op Openen, geeft Corresponden
    1. **Bewerkbaar**: Als deze optie is geselecteerd, kan de inhoud worden bewerkt in de gebruikersinterface Correspondentie maken. Inhoud alleen als bewerkbaar markeren als de zakelijke gebruiker deze hoeft te wijzigen (bijvoorbeeld Aanpassingen).
    1. **Verplicht**: Als deze optie is geselecteerd, is de inhoud vereist in de gebruikersinterface Correspondentie maken.
    1. **Geselecteerd**: Als deze optie is geselecteerd, wordt de inhoud standaard geselecteerd in de gebruikersinterface Correspondentie maken.
-   1. **Inspringing**: Verhoog of verlaag de inspringing van de module/inhoud in de letter. De inspringing wordt opgegeven in niveaus, vanaf 0. Elk niveau springt 36 punten in. Zie **[!UICONTROL Correspondence Management Configurations]** in de werkstroom [van](submit-letter-topostprocess.md#formsworkflow)Forms voor meer informatie over het aanpassen van formulieren.
+   1. **Inspringing**: Verhoog of verlaag de inspringing van de module/inhoud in de letter. De inspringing wordt opgegeven in niveaus, vanaf 0. Elk niveau springt 36 punten in. Zie **[!UICONTROL Correspondence Management Configurations]** in de workflow [van](submit-letter-topostprocess.md#formsworkflow)Forms voor meer informatie over het aanpassen van formulieren.
    1. **Pagina-einde voor**: Als u Pagina-einde voor instelt op Aan, wordt de inhoud van deze module altijd weergegeven op een nieuwe pagina.
    1. **Pagina-einde na**: Als u Pagina-einde na voor een specifieke module instelt op Aan, wordt de inhoud van de module Volgende altijd weergegeven op een nieuwe pagina.
+
    ![Ingevoegde gegevensmodules en lay-outfragmenten](assets/insertdmandlf2.png)
 
 1. Tik op het pictogram Bewerken naast een module om deze te bewerken. Tik op **Opslaan** nadat u de modules hebt bewerkt.
@@ -295,6 +300,7 @@ Wanneer u een correspondentie hebt gemaakt, tikt u op Openen, geeft Corresponden
 
    1. **Vrije tekst** toestaan: Als de optie Vrije tekst toestaan is ingeschakeld, kan de gebruiker inline tekst in letter toevoegen in de CCR-weergave. In de CCR-weergave is de actie &#39;T&#39; ingeschakeld voor de doelgebieden waarvoor de optie Vrije tekst toestaan is ingeschakeld. Als de gebruiker hierop tikt, wordt om de naam en beschrijving van de tekst gevraagd en wordt vervolgens bij het tikken de tekst geopend in de bewerkingsmodus waar de gebruiker tekst kan toevoegen. Dit werkt dus net als andere tekstmodules
    1. **Vergrendelingsvolgorde**: Hiermee vergrendelt u de volgorde van de subformulieren in de letter. De auteur mag de subformulieren/componenten niet opnieuw ordenen tijdens het maken van de letter.
+
    Op deze pagina kunt u ook het volgende doen voor elk element in de subformulieren:
 
    1. **Wijzig de volgorde van de elementen**: een element slepen en neerzetten met het pictogram voor opnieuw ordenen van een element ( ![slepen](assets/dragndrop.png)).
@@ -309,6 +315,7 @@ Wanneer u een correspondentie hebt gemaakt, tikt u op Openen, geeft Corresponden
 
    * De **veldelementen** kunnen worden gekoppeld aan een letterlijke waarde, een gegevenswoordenboekelement, een element of een door de gebruiker opgegeven waarde. U kunt een veldelement ook negeren door het aan de Negeren optie te binden.
    * De **elementen van de variabele** kunnen worden gekoppeld aan een letterlijke waarde, een gegevenswoordenboekelement, een veld, een variabele, een element of een door de gebruiker opgegeven waarde.
+
    Hier volgen enkele hoofdvelden in de koppeling:
 
    * **Meerdere regels**: U kunt opgeven of de gegevensinvoer voor een veld of variabele uit meerdere regels bestaat. Als u deze optie selecteert, wordt het invoervak voor het veld of de variabele weergegeven als een invoervak met meerdere regels in de weergave Gegevens bewerken. Het veld of de variabele wordt ook als meerdere regels weergegeven in de weergave Gegevens en inhoud in de gebruikersinterface Correspondentie maken. Het invoerveld met meerdere regels is vergelijkbaar met het veld voor het invoeren van een opmerking in een TextModule. De optie voor meerdere regels is alleen beschikbaar voor velden en variabelen met het koppelingstype Gebruiker of niet-beveiligde gegevenswoordenboekelementen.
@@ -316,6 +323,7 @@ Wanneer u een correspondentie hebt gemaakt, tikt u op Openen, geeft Corresponden
 
    * **Validatie** veld/variabele: U kunt een validator toewijzen aan het veld of de variabele om de validatie van de waarde van een veld of variabele te verbeteren. Deze optie is alleen beschikbaar voor velden en variabelen met het koppelingstype Gebruiker of niet-beveiligde gegevenswoordenboekelementen.
    * **Bijschrift** en **knopinfo**: Bijschrift is het label van het veld dat voor het veld in de gebruikersinterface CCR wordt weergegeven. Deze optie is beschikbaar voor velden en variabelen met het koppelingstype Gebruiker of niet-beveiligde gegevenswoordenboekelementen.
+
    Hieronder vindt u de validatietypen die u kunt gebruiken voor de velden:
 
    * **Validator** tekenreeks: Gebruik Validator van het Koord om een minimum en maximumlengte van het koord te specificeren ingegaan in gebied of variabele. Wanneer u een validator voor tekenreeksen maakt, moet u geldige validatieparameters opgeven. Voer een geldige lengte in voor zowel de minimum- als de maximumwaarde. Voor de validator van het Koord, kunt u de min en maximumlengte van de waarde specificeren die kan worden ingegaan. Als de ingevoerde waarde niet overeenkomt met de opgegeven minimale en maximale waarde, wordt het desbetreffende veld in de CCR-gebruikersinterface gemarkeerd in rode kleur.
@@ -334,7 +342,7 @@ Wanneer u een correspondentie hebt gemaakt, tikt u op Openen, geeft Corresponden
 ### De bijlagen instellen {#set-up-the-attachments}
 
 1. Selecteer Element **toevoegen**.
-1. Tik in het scherm Element selecteren op de elementen die u bij de letter wilt voegen en tik op **Gereed**. De elementen moeten eerst naar Elementen worden geüpload. Het wordt aanbevolen alleen PDF- en Microsoft Office-documenten bij te voegen, maar u kunt ook afbeeldingen bijvoegen. Zie [Elementen](/help/assets/managing-assets-touch-ui.md)uploaden voor meer informatie over het uploaden van elementen in DAM.
+1. Tik in het scherm Element selecteren op de elementen die u bij de letter wilt voegen en tik op **Gereed**. De elementen moeten eerst naar Elementen worden geüpload. Het wordt aanbevolen alleen PDF- en Microsoft Office-documenten bij te voegen, maar u kunt ook afbeeldingen bijvoegen. Zie [Elementen](/help/assets/manage-assets.md)uploaden voor meer informatie over het uploaden van elementen in DAM.
 1. Tik op **Vergrendelingsvolgorde om de volgorde van de elementen in de lijst te vergrendelen zodat de Aanpasser voor claims de volgorde niet kan wijzigen**. Als u deze optie niet selecteert, kan de Aanpassing van claims de volgorde van de lijstitems wijzigen.
 1. Als u de volgorde van de elementen wilt wijzigen, sleept u een element met het pictogram voor opnieuw ordenen van een element ( ![dragndrop](assets/dragndrop.png)).
 1. Tik op **Bewerken** vóór een bijlage en geef een bijlage op als Verplicht als u niet wilt dat de auteur deze kan verwijderen. Specificeer een gehechtheid zoals Geselecteerd als u het in de interface wilt vooraf worden geselecteerd CCR.
@@ -438,7 +446,7 @@ De volgende waarden in de tabel
    <td>N.v.t.</td> 
   </tr> 
   <tr> 
-   <td><strong>image</strong></td> 
+   <td><strong>afbeelding</strong></td> 
    <td>Nee</td> 
    <td>alleen afbeelding</td> 
    <td>Nee</td> 

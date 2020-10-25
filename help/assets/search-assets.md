@@ -4,7 +4,7 @@ description: Leer hoe u de vereiste elementen [!DNL Adobe Experience Manager] in
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5599e0d4a3e52a4ad98b776b9178722c7ac47cbc
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '5917'
 ht-degree: 4%
@@ -35,7 +35,7 @@ Zoek naar elementen met behulp van het veld Onderzoek boven aan de [!DNL Experie
 
 Gebruik het **[!UICONTROL Filters]** deelvenster om uw zoekopdracht te beperken door zoekresultaten te filteren op basis van de verschillende opties (voorspelling), zoals bestandstype, bestandsgrootte, datum van laatste wijziging, status van element, gegevens over inzichten en Adobe Stock-licenties. Uw beheerders kunnen het deelvenster Filters aanpassen en zoekvoorvertoningen toevoegen of verwijderen met behulp van zoekfacetten. Het [!UICONTROL File Type] filter in het [!UICONTROL Filters] deelvenster heeft selectievakjes met gemengde status. Tenzij u alle geneste voorspellen (of indelingen) selecteert, worden de selectievakjes op het eerste niveau daarom gedeeltelijk gecontroleerd.
 
-[!DNL Experience Manager] zoekmogelijkheden bieden ondersteuning voor het zoeken naar verzamelingen en het zoeken naar elementen in een verzameling. Zie [zoekverzamelingen](/help/assets/managing-collections-touch-ui.md).
+[!DNL Experience Manager] zoekmogelijkheden bieden ondersteuning voor het zoeken naar verzamelingen en het zoeken naar elementen in een verzameling. Zie [zoekverzamelingen](/help/assets/manage-collections.md).
 
 ## Zoekinterface begrijpen {#searchui}
 
@@ -222,7 +222,7 @@ Auteurs kunnen de Inhoudszoeker gebruiken om in de DAM-opslagplaats te zoeken na
 
 ### Verzamelingen zoeken {#collections}
 
-[!DNL Experience Manager] zoekmogelijkheden bieden ondersteuning voor het zoeken naar verzamelingen en het zoeken naar elementen in een verzameling. Zie [zoekverzamelingen](/help/assets/managing-collections-touch-ui.md).
+[!DNL Experience Manager] zoekmogelijkheden bieden ondersteuning voor het zoeken naar verzamelingen en het zoeken naar elementen in een verzameling. Zie [zoekverzamelingen](/help/assets/manage-collections.md).
 
 ## Elementkiezer {#assetpicker}
 
@@ -374,7 +374,7 @@ Om de snelheid van ontdekking te verbeteren, [!DNL Experience Manager Assets] bi
 
 ### Tekst extraheren tijdens het uploaden van elementen {#extracttextupload}
 
-U kunt configureren [!DNL Experience Manager] om de tekst uit de elementen te halen wanneer gebruikers elementen, zoals PSD- of PDF-bestanden, uploaden. [!DNL Experience Manager] indexeert de geëxtraheerde tekst en helpt gebruikers deze elementen te doorzoeken op basis van de geëxtraheerde tekst. Zie [Elementen](/help/assets/managing-assets-touch-ui.md#uploading-assets)uploaden.
+U kunt configureren [!DNL Experience Manager] om de tekst uit de elementen te halen wanneer gebruikers elementen, zoals PSD- of PDF-bestanden, uploaden. [!DNL Experience Manager] indexeert de geëxtraheerde tekst en helpt gebruikers deze elementen te doorzoeken op basis van de geëxtraheerde tekst. Zie [Elementen](/help/assets/manage-assets.md#uploading-assets)uploaden.
 
 Als de tekstextractie te resource-intensief wordt voor uw plaatsing, denk na [onbruikbaar makend tekstextractie](https://helpx.adobe.com/experience-manager/kb/Disable-binary-text-extraction-to-optimize-Lucene-indexing-AEM.html).
 
@@ -447,7 +447,7 @@ Een verzameling is een geordende set elementen die elementen van verschillende l
 * Een statische referentielijst met elementen, mappen en andere verzamelingen.
 * Een dynamische lijst (slimme verzameling) die elementen in de verzameling vult op basis van zoekcriteria.
 
-U kunt slimme verzamelingen maken op basis van de zoekcriteria. Selecteer in het deelvenster **[!UICONTROL Filters]** de optie **[!UICONTROL Files]** en klik op **[!UICONTROL Save Smart Collection]**. Zie [Verzamelingen beheren](/help/assets/managing-collections-touch-ui.md).
+U kunt slimme verzamelingen maken op basis van de zoekcriteria. Selecteer in het deelvenster **[!UICONTROL Filters]** de optie **[!UICONTROL Files]** en klik op **[!UICONTROL Save Smart Collection]**. Zie [Verzamelingen beheren](/help/assets/manage-collections.md).
 
 ## Onverwachte zoekresultaten en problemen oplossen {#troubleshoot-unexpected-search-results-and-issues}
 

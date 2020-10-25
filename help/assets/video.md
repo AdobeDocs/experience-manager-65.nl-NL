@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ea39bb870fd20f7e30afc2c4f5bceb2fe6427848
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '11356'
 ht-degree: 6%
@@ -70,7 +70,7 @@ De volgende stapsgewijze workflowbeschrijving is ontworpen om u te helpen snel a
       * Bekijk de bronvideo en de gecodeerde vertoningen van de video samen met de bijbehorende miniaturen:
          [Een voorvertoning weergeven van video](managing-video-assets.md#upload-and-preview-video-assets) &#39;s of elementen [voorvertonen](previewing-assets.md)
          [Video-uitvoeringen weergeven](video-renditions.md)
-         [Video-uitvoeringen beheren](managing-assets-touch-ui.md#managing-renditions)
+         [Video-uitvoeringen beheren](manage-assets.md#managing-renditions)
 
       * [Viewervoorinstellingen beheren](managing-viewer-presets.md)
       * [Elementen publiceren](publishing-dynamicmedia-assets.md)
@@ -80,16 +80,16 @@ De volgende stapsgewijze workflowbeschrijving is ontworpen om u te helpen snel a
          [Eigenschappen van video-uitvoeringen weergeven](video-renditions.md)
 
       * Bewerk de eigenschappen van video, zoals de titel, beschrijving en tags, aangepaste metagegevensvelden:
-         [Video-eigenschappen bewerken](managing-assets-touch-ui.md#editing-properties)
+         [Video-eigenschappen bewerken](manage-assets.md#editing-properties)
 
       * [Metagegevens voor digitale elementen beheren](metadata.md)
       * [Metagegevensschema&#39;s](metadata-schemas.md)
    * Video&#39;s bekijken, goedkeuren en annoteren en volledige versiebeheer behouden
 
-      * [Video&#39;s](managing-video-assets.md#annotate-video-assets) annoteren of elementen [annoteren](managing-assets-touch-ui.md#annotating)
+      * [Video&#39;s](managing-video-assets.md#annotate-video-assets) annoteren of elementen [annoteren](manage-assets.md#annotating)
 
-      * [Een versie maken](managing-assets-touch-ui.md#asset-versioning)
-      * [Workflows toepassen op elementen](assets-workflow.md) of een workflow voor een element [starten](managing-assets-touch-ui.md#starting-a-workflow-on-an-asset)
+      * [Een versie maken](manage-assets.md#asset-versioning)
+      * [Workflows toepassen op elementen](assets-workflow.md) of een workflow voor een element [starten](manage-assets.md#starting-a-workflow-on-an-asset)
 
       * [Mapmiddelen controleren](bulk-approval.md)
       * [Projecten](../sites-authoring/projects.md)
@@ -757,7 +757,7 @@ Nu associeert u de markeringen die u eerder aan videoactiva toevoegde. Dit proce
 >
 >Zie [De voortgang van videocodering en YouTube-publicatie controleren](#monitoring-video-encoding-and-youtube-publishing-progress).
 >
->Voor gedetailleerdere voortgangsinformatie kunt u het YouTube-logboek onder replicatie controleren. Houd er echter rekening mee dat voor dergelijke bewaking beheerderstoegang vereist is.
+>Voor meer gedetailleerde voortgangsinformatie kunt u het YouTube-logboek onder replicatie controleren. Houd er echter rekening mee dat voor dergelijke bewaking beheerderstoegang vereist is.
 
 Video&#39;s publiceren naar uw YouTube-kanaal:
 
@@ -1165,7 +1165,7 @@ Zie [WebVTT: De indeling Webvideoteksttracks](https://dev.w3.org/html5/webvtt/)
    Over het algemeen wilt u het hoofdstuk VTT-bestand dezelfde naam geven als het videobestand en het toevoegen met hoofdstukken. Hierdoor kunt u het genereren van video-URL&#39;s automatiseren met behulp van uw bestaande systeem voor webcontentbeheer.
 1. Upload in AEM uw WebVTT-hoofdstukbestand.
 
-   Zie Elementen [uploaden](/help/assets/managing-assets-touch-ui.md#uploading-assets).
+   Zie Elementen [uploaden](/help/assets/manage-assets.md#uploading-assets).
 
 1. Voer een van de volgende handelingen uit:
 

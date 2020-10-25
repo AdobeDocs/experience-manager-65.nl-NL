@@ -12,7 +12,7 @@ discoiquuid: 59780112-6a9b-4de2-bf65-f026c8c74a31
 docset: aem65
 targetaudience: target-audience upgrader
 translation-type: tm+mt
-source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
+source-git-commit: c1362c2c1f32d02d36d2067e0e74d927ddbc1554
 workflow-type: tm+mt
 source-wordcount: '2201'
 ht-degree: 0%
@@ -133,7 +133,7 @@ U kunt aanpassingen aan de UI van Activa voorbereiden door het volgende te doen:
 
 ### Element-id&#39;s genereren voor bestaande elementen {#generating-asset-ids-for-existing-assets}
 
-Als u element-id&#39;s voor bestaande elementen wilt genereren, moet u de elementen upgraden wanneer u uw AEM-instantie upgradet naar AEM 6.5. Dit is nodig om de functie [Assets Insights](/help/assets/touch-ui-asset-insights.md)in te schakelen. Zie [Insluitcode](/help/assets/touch-ui-using-page-tracker.md#add-embed-code)toevoegen voor meer informatie.
+Als u element-id&#39;s voor bestaande elementen wilt genereren, moet u de elementen upgraden wanneer u uw AEM-instantie upgradet naar AEM 6.5. Dit is nodig om de functie [Assets Insights](/help/assets/asset-insights.md)in te schakelen. Zie [Insluitcode](/help/assets/use-page-tracker.md#add-embed-code)toevoegen voor meer informatie.
 
 Als u elementen wilt bijwerken, configureert u het pakket Id&#39;s van bijbehorende elementen in de JMX-console. Afhankelijk van het aantal elementen in de gegevensopslagruimte kan het lang duren `migrateAllAssets` . Onze interne tests schatten ruwweg een uur voor 125.000 activa op TarMK.
 
@@ -165,7 +165,7 @@ De structuur voor bewerkbare sjablonen is gewijzigd tussen AEM 6.2 en 6.3. Als u
 
 ### Wijzigingen in CUG-implementatie {#cug-implementation-changes}
 
-De implementatie van Gesloten Gebruikersgroepen is aanzienlijk gewijzigd om de beperkingen van prestaties en schaalbaarheid in eerdere versies van AEM aan te pakken. De vorige versie van CUG is afgekeurd in 6.3 en de nieuwe implementatie wordt alleen ondersteund in de aanraakinterface. Als u van 6.2 of eerder bevordert, dan kunnen de Instructies om aan de nieuwe implementatie van de CUG [hier](/help/sites-administering/closed-user-groups.md#upgradetoaem63)worden gevonden.
+De implementatie van Gesloten Gebruikersgroepen is aanzienlijk gewijzigd om de beperkingen van prestaties en schaalbaarheid in eerdere versies van AEM aan te pakken. De vorige versie van CUG is afgekeurd in 6.3 en de nieuwe implementatie wordt alleen ondersteund in de Touch UI. Als u van 6.2 of eerder bevordert, dan kunnen de Instructies om aan de nieuwe implementatie van de CUG [hier](/help/sites-administering/closed-user-groups.md#upgradetoaem63)worden gevonden.
 
 ## Testprocedure {#testing-procedure}
 

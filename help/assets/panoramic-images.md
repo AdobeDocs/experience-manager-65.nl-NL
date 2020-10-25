@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 632a9074-b747-49a1-a57d-1f42bba1f4e9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '556'
 ht-degree: 5%
@@ -37,7 +37,7 @@ U kunt de standaardverhouding van 2 in CRXDE Lite bij het volgende met voeten tr
 
 Zowel de criteria voor hoogte-breedteverhouding als voor trefwoorden zijn van toepassing op panoramische assets voor de pagina met assetdetails en de `Panoramic Media` WCM-component.
 
-Zie [Elementen](/help/assets/managing-assets-touch-ui.md#uploading-assets)uploaden voor gebruik met de Panorama-viewer.
+Zie [Elementen](/help/assets/manage-assets.md#uploading-assets)uploaden voor gebruik met de Panorama-viewer.
 
 ## Dynamic Media Classic (Scene7) configureren {#configuring-dynamic-media-classic-scene}
 

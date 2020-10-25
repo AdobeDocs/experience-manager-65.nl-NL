@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 8e9b3815-2893-4e6b-ac41-77720b42d56b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 74f259d579bcf8d7a9198f93ef667288787a4493
+source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
 workflow-type: tm+mt
 source-wordcount: '1765'
 ht-degree: 7%
@@ -29,7 +29,7 @@ De Reeksen van de Draai worden aangewezen door een banner met het woord **[!UICO
 
 >[!NOTE]
 >
->Zie Elementen [beheren met de aanraakinterface](/help/assets/managing-assets-touch-ui.md)voor informatie over de gebruikersinterface van Elementen.
+>Zie Elementen [beheren met de aanraakinterface](/help/assets/manage-assets.md)voor informatie over de gebruikersinterface van Elementen.
 
 ## Snel starten: Sets draaien {#quick-start-spin-sets}
 
@@ -77,13 +77,13 @@ Ga als volgt te werk om snel aan de slag te gaan met centrifuges:
 
    Zie [Een spinset koppelen aan een webpagina](/help/assets/linking-urls-to-yourwebapplication.md) en [De video- of afbeeldingsviewer insluiten](/help/assets/embed-code.md).
 
-Indien nodig kunt u [centrifuges](#editing-spin-sets)bewerken. Bovendien kunt u de eigenschappen [van de](/help/assets/managing-assets-touch-ui.md#editing-properties)Spin-set weergeven en wijzigen.
+Indien nodig kunt u [centrifuges](#editing-spin-sets)bewerken. Bovendien kunt u de eigenschappen [van de](/help/assets/manage-assets.md#editing-properties)Spin-set weergeven en wijzigen.
 
 ## Elementen uploaden voor centrifuges {#uploading-assets-for-spin-sets}
 
 U hebt minstens 8-12 opnamen van een item nodig voor een eendimensionale centrifugeset en 16-24 voor een tweedimensionale centrifugeset. De opnamen moeten regelmatig worden gemaakt om de indruk te wekken dat het item draait en wordt gespiegeld. Als een eendimensionale centrifugeset bijvoorbeeld 12 opnamen bevat, roteert u het item 30 graden (360/12) voor elke opname.
 
-U kunt afbeeldingen voor de centrifuges uploaden zoals u elk ander element in AEM Assets [](/help/assets/managing-assets-touch-ui.md)uploadt.
+U kunt afbeeldingen voor de centrifuges uploaden zoals u elk ander element in AEM Assets [](/help/assets/manage-assets.md)uploadt.
 
 ### Richtlijnen voor het vastleggen van afbeeldingen voor uw centrifugeset {#guidelines-for-shooting-spin-set-images}
 

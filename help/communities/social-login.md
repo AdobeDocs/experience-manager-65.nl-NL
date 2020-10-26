@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: c0a71870-8f95-40c8-9ffd-b7af49723288
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
 workflow-type: tm+mt
-source-wordcount: '2634'
+source-wordcount: '2650'
 ht-degree: 0%
 
 ---
@@ -110,6 +110,8 @@ De [Adobe Granite OAuth Application and Provider](#adobe-granite-oauth-applicati
 1. Go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Configuration Browser]**. Selecteer de context en bewerk de eigenschappen. Schakel cloudconfiguraties in als deze nog niet zijn ingeschakeld.
 
    ![config-eigenschappen](assets/config-propertiespng.png)
+
+   * See the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
 
 1. **Configuratie van Facebook-cloudservice maken/bewerken** .
 
@@ -260,6 +262,8 @@ De [Adobe Granite OAuth Application and Provider](#adobe-granite-oauth-applicati
 1. Go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Configuration Browser]**. Selecteer de context en bewerk de eigenschappen. Schakel cloudconfiguraties in als deze nog niet zijn ingeschakeld.
 
    ![twitterconfigproppng](assets/twitterconfigproppng.png)
+
+   * See the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
 
 1. Configuratie van de Twitter-cloudservice maken/bewerken.
 
@@ -460,7 +464,7 @@ Als er traversale waarschuwingen worden weergegeven in de logboeken, wordt aange
 
 Op een instantie van de auteur, aangemeld met beheerdersrechten:
 
-1. Vanuit globale navigatie: Selecteer **Hulpmiddelen,[CRX/DE Lite](../../help/sites-developing/developing-with-crxde-lite.md).**
+1. Vanuit globale navigatie: Selecteer **Hulpmiddelen, [CRX/DE Lite](../../help/sites-developing/developing-with-crxde-lite.md).**
 1. Creeer een index genoemd ntBaseLucene-oauth van een exemplaar van ntBaseLucene:
 
    * Onder knooppunt `/oak:index`

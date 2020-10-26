@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 1099cc44-de6d-499e-8b52-f2f5811ae086
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3954178cc660368a2b374bbb4d05d93d7309d4eb
+source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
 workflow-type: tm+mt
-source-wordcount: '3210'
+source-wordcount: '3218'
 ht-degree: 0%
 
 ---
@@ -51,13 +51,13 @@ In dit document wordt ervan uitgegaan dat u vertrouwd bent met het maken en bewe
 >[!NOTE]
 >
 >De volgende zelfstudie kan ook van belang zijn voor het instellen van een bewerkbare paginasjabloon in een nieuw project:
->[Aan de slag met AEM-sites Deel 2 - Een basispagina en sjabloon maken](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part2.html)
+>[Aan de slag met AEM Sites Deel 2 - Een basispagina en sjabloon maken](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part2.html)
 
 ## Creating a New Template {#creating-a-new-template}
 
 Het creëren van editable malplaatjes wordt hoofdzakelijk gedaan met de [malplaatjeconsole en malplaatjeredacteur](/help/sites-authoring/templates.md) door een malplaatjeauteur. In deze paragraaf wordt een overzicht gegeven van dit proces en wordt een beschrijving gegeven van wat er op technisch niveau gebeurt.
 
-Voor informatie over hoe te om editable malplaatjes in een AEM- project te gebruiken zie het [Creëren van een AEM- project gebruikend Lzybones](https://helpx.adobe.com/experience-manager/using/aem_lazybones.html).
+Voor informatie over hoe te om editable malplaatjes in een AEM project te gebruiken zie het [Creëren van een AEM project gebruikend Lzybones](https://helpx.adobe.com/experience-manager/using/aem_lazybones.html).
 
 Bij het maken van een nieuwe bewerkbare sjabloon:
 
@@ -78,6 +78,7 @@ Bij het maken van een nieuwe bewerkbare sjabloon:
       * Als u een malplaatje in een douanemap buiten de wij.Retail steekproefinhoud creeert, kunt u de Componenten van de Stichting kiezen of de Componenten [van de](https://helpx.adobe.com/experience-manager/core-components/using/developing.html)Kern gebruiken.
    * Als u wilt dat auteurs van pagina&#39;s componenten kunnen toevoegen en verwijderen, voegt u een alineasysteem toe aan de sjabloon.
    * Componenten kunnen worden ontgrendeld en opnieuw worden vergrendeld, zodat u de initiële inhoud kunt definiëren.
+
    Zie [Paginasjablonen](/help/sites-authoring/templates.md#editing-a-template-structure-template-author)maken voor meer informatie over de manier waarop de sjabloonauteur de structuur definieert.
 
    Zie [Structuur](/help/sites-developing/page-templates-editable.md#structure) in dit document voor technische details over de structuur.
@@ -88,6 +89,7 @@ Bij het maken van een nieuwe bewerkbare sjabloon:
 
       * Bijvoorbeeld de beschikbare componenten of de minimum-/maximumafmetingen.
    * Deze zijn van toepassing op de sjabloon (en op pagina&#39;s die met de sjabloon zijn gemaakt).
+
    Zie [Paginasjablonen](/help/sites-authoring/templates.md#editing-a-template-structure-template-author)maken voor meer informatie over de manier waarop sjabloonauteur beleid definieert.
 
    Zie [Inhoudsbeleid](/help/sites-developing/page-templates-editable.md#content-policies) in dit document voor technische details over het beleid.
@@ -96,6 +98,7 @@ Bij het maken van een nieuwe bewerkbare sjabloon:
 
    * Met Eerste inhoud wordt inhoud gedefinieerd die wordt weergegeven wanneer een pagina voor het eerst wordt gemaakt op basis van de sjabloon.
    * De initiële inhoud kan vervolgens worden bewerkt door auteurs van pagina&#39;s.
+
    Zie [Paginasjablonen](/help/sites-authoring/templates.md#editing-a-template-initial-content-author)maken voor meer informatie over de manier waarop de sjabloonauteur de structuur definieert.
 
    Zie [Initiële inhoud](/help/sites-developing/page-templates-editable.md#initial-content) in dit document voor technische details over de initiële inhoud.
@@ -104,6 +107,7 @@ Bij het maken van een nieuwe bewerkbare sjabloon:
 
    * U kunt de sjabloonlay-out voor een reeks apparaten definiëren.
    * De responsieve indeling voor sjablonen werkt op dezelfde manier als voor het ontwerpen van pagina&#39;s.
+
    Zie [Paginasjablonen](/help/sites-authoring/templates.md#editing-a-template-layout-template-author)maken voor meer informatie over de manier waarop de sjabloonindeling door de sjabloonauteur wordt gedefinieerd.
 
    Zie [Lay-out](/help/sites-developing/page-templates-editable.md#layout) in dit document voor technische details over de sjabloonlay-out.
@@ -112,6 +116,7 @@ Bij het maken van een nieuwe bewerkbare sjabloon:
 
    * U kunt een sjabloon in- of uitschakelen om de sjabloon beschikbaar of niet beschikbaar te maken voor auteurs van pagina&#39;s.
    * Een sjabloon kan beschikbaar worden gesteld of niet beschikbaar zijn voor bepaalde paginasvertakkingen.
+
    Zie [Paginasjablonen](/help/sites-authoring/templates.md#enabling-and-allowing-a-template-template-author)maken voor meer informatie over de manier waarop een sjabloonauteur een sjabloon inschakelt.
 
    Voor technische details bij het toelaten van een malplaatje, zie het [Toelaten van en het Toestaan van een Malplaatje voor](/help/sites-developing/page-templates-editable.md#enabling-and-allowing-a-template-for-use)Gebruik in dit document
@@ -120,6 +125,7 @@ Bij het maken van een nieuwe bewerkbare sjabloon:
 
    * Wanneer u een sjabloon gebruikt om een nieuwe pagina te maken, is er geen zichtbaar verschil en is er geen indicatie tussen statische en bewerkbare sjablonen.
    * Voor de auteur van de pagina is het proces transparant.
+
    Zie Pagina&#39;s [maken en ordenen voor meer informatie over hoe een auteur van een pagina sjablonen gebruikt om een pagina te maken](/help/sites-authoring/managing-pages.md#templates).
 
    Zie [Resulterende inhoudspagina&#39;s in dit document voor technische details over het maken van pagina&#39;s met bewerkbare sjablonen](/help/sites-developing/page-templates-editable.md#resultant-content-pages) .
@@ -147,7 +153,7 @@ Voor het organiseren van uw sjablonen kunt u de volgende mappen gebruiken:
 >
 >Hoewel u uw omslagen kunt nesten, wanneer de gebruiker hen in de console van **Malplaatjes** bekijkt worden zij voorgesteld als vlakke structuur.
 
-In een standaard AEM-instantie bestaat de **algemene** map al in de sjabloonconsole. Dit houdt standaardmalplaatjes vast en doet dienst als reserve als geen beleid en/of malplaatje-types in de huidige omslag worden gevonden. U kunt uw standaardsjablonen toevoegen aan deze map of een nieuwe map maken (aanbevolen).
+In een standaard AEM bestaat de **algemene** map al in de sjabloonconsole. Dit houdt standaardmalplaatjes vast en doet dienst als reserve als geen beleid en/of malplaatje-types in de huidige omslag worden gevonden. U kunt uw standaardsjablonen toevoegen aan deze map of een nieuwe map maken (aanbevolen).
 
 >[!NOTE]
 >
@@ -220,6 +226,8 @@ Als u een nieuwe map wilt maken, kunt u het volgende doen:
 >[!NOTE]
 >
 >In Browser van de Configuratie, kunt u de globale omslag uitgeven en de **Bewerkbare optie van Malplaatjes** activeren als u wenst om malplaatjes binnen deze omslag tot stand te brengen, nochtans wordt dit niet geadviseerd beste praktijken.
+>
+>See the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
 
 ### ACLs en Groepen {#acls-and-groups}
 
@@ -420,7 +428,7 @@ Wanneer u een nieuwe bewerkbare sjabloon maakt, wordt de waarde van het sjabloon
 Als u een sjabloon hebt gemaakt die als basis voor andere sjablonen kan dienen, kunt u deze sjabloon kopiëren als een sjabloontype.
 
 1. Maak een sjabloon zoals u elke bewerkbare sjabloon [zoals hier](/help/sites-authoring/templates.md#creating-a-new-template-template-author)wordt beschreven. Deze sjabloon fungeert als basis voor uw sjabloontype.
-1. Gebruikend CRXDE Lite, kopieer het onlangs-gecreeerde malplaatje van de `templates` knoop aan de `template-types` knoop onder de [malplaatjeomslag](/help/sites-developing/page-templates-editable.md#template-folders).
+1. Met CRXDE Lite kopieert u de nieuw gemaakte sjabloon van het `templates` knooppunt naar het `template-types` knooppunt onder de [sjabloonmap](/help/sites-developing/page-templates-editable.md#template-folders).
 1. Verwijder de sjabloon uit het `templates` knooppunt onder de [sjabloonmap](/help/sites-developing/page-templates-editable.md#template-folders).
 1. Verwijder alle `template-types` en `cq:template` eigenschappen in de kopie van de sjabloon onder het `cq:templateType` `jcr:content` knooppunt.
 
@@ -576,10 +584,11 @@ Het beleid van de pagina staat u toe om het [inhoudsbeleid](#content-policies) v
 
 1. **Toegestane sjablonen**
 
-   * [Definieer de toegestane sjabloonpaden op de **Pagina-eigenschappen **](/help/sites-authoring/templates.md#allowing-a-template-author)van de desbetreffende pagina of basispagina van een subvertakking.
+   * [Definieer de toegestane sjabloonpaden op de **Pagina-eigenschappen**](/help/sites-authoring/templates.md#allowing-a-template-author) van de desbetreffende pagina of basispagina van een subvertakking.
    * Stel de eigenschap in:
       `cq:allowedTemplates`
-Op het `jcr:content` knooppunt van de vereiste vertakking.
+Op de 
+`jcr:content` knooppunt van de vereiste vertakking.
    Bijvoorbeeld met een waarde van:
 
    `/conf/<your-folder>/settings/wcm/templates/.*`

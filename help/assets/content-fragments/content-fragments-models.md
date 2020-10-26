@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 9da10294-2dc8-4e82-8d32-f034e6a5aeeb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: afed13a2f832b91d0df825d1075852cc84443646
+source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
 workflow-type: tm+mt
 source-wordcount: '745'
 ht-degree: 20%
@@ -30,7 +30,7 @@ Met Content Fragment Models wordt de structuur van de inhoud voor [inhoudsfragme
 
 Als u modellen van inhoudsfragmenten wilt inschakelen, moet u:
 
-* Het gebruik van modellen van inhoudsfragmenten inschakelen in configuratiebeheer
+* Het gebruik van modellen van inhoudsfragmenten in de [configuratiebrowser inschakelen](/help/sites-administering/configurations.md)
 * De configuratie toepassen op de map Middelen
 
 ### Modellen van inhoudsfragmenten inschakelen in Configuratiebeheer {#enable-content-fragment-models-in-configuration-manager}
@@ -43,6 +43,7 @@ Om een nieuw Model [van het Fragment van de Inhoud te](#creating-a-content-fragm
 
    1. Geef een **titel** op.
    1. Selecteer Modellen van **inhoudsfragmenten** om het gebruik ervan in te schakelen.
+
    ![cfm-6420-09](assets/cfm-6420-09.png)
 
 1. Selecteer **Maken** om de definitie op te slaan.
@@ -86,6 +87,7 @@ Het inhoudsfragmentmodel definieert in feite de structuur van de resulterende in
 
    * links: velden al gedefinieerd
    * rechts: **datatypen** voor het maken van velden (en **eigenschappen** voor gebruik als er velden zijn gemaakt)
+
    >[!NOTE]
    >
    >Als een veld **Vereist** is, wordt het **label** in het linkerdeelvenster gemarkeerd met een sterretje (*****).
@@ -95,9 +97,11 @@ Het inhoudsfragmentmodel definieert in feite de structuur van de resulterende in
 1. **Een veld toevoegen**
 
    * Sleep een vereist gegevenstype naar de vereiste locatie voor een veld:
+
    ![cfm-6420-11](assets/cfm-6420-11.png)
 
    * Nadat een veld aan het model is toegevoegd, worden in het rechterdeelvenster de **eigenschappen** weergegeven die voor dat specifieke gegevenstype kunnen worden gedefinieerd. Hier kunt u definiëren wat voor dat veld is vereist. Bijvoorbeeld:
+
    ![cfm-6420-13](assets/cfm-6420-13.png)
 
    >[!NOTE]
@@ -107,12 +111,13 @@ Het inhoudsfragmentmodel definieert in feite de structuur van de resulterende in
    * **Markering**
 
    * **Onbewerkte tekst**
+
    Als er geen waarde wordt opgegeven, wordt de standaardwaarde voor **RTF** gebruikt voor dit veld.
    Het wijzigen van het **standaardtype** in een contentfragmentmodel heeft alleen effect op een bestaand, gerelateerd contentfragment nadat dat fragment is geopend in de editor en opgeslagen.
 
 1. **Een veld verwijderen**
 
-   Selecteer het vereiste veld en klik op het pictogram met de prullenbak of tik erop. U wordt gevraagd de actie te bevestigen.
+   Selecteer het gewenste veld en klik op het pictogram van de prullenbak of tik erop. U wordt gevraagd de actie te bevestigen.
 
    ![cf-32](assets/cf-32.png)
 

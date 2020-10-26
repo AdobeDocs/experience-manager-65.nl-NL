@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: 1f28b257-5419-4a21-a54a-b20bf35530ac
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 2e5cf93eb3ce47b65298b8de13c7d874d1989073
+source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '917'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,7 @@ Voer de volgende stappen uit om Adobe Sign met AEM Forms in de Author-instantie 
 
 1. Navigeer in de AEM Forms-auteurinstantie naar **Tools** ![hammer](assets/hammer.png) > **General** > **Configuration Browser**.
 1. On the **[!UICONTROL Configuration Browser]** page, tap **[!UICONTROL Create]**.
+   * See the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
 1. Geef in het **[!UICONTROL Create Configuration]** dialoogvenster een waarde op **[!UICONTROL Title]** voor de configuratie, schakel **[!UICONTROL Cloud Configurations]** deze in en tik op **[!UICONTROL Create]**. Er wordt een configuratiecontainer voor cloudservices gemaakt.
 1. Ga naar **Gereedschappen** , ![hamer](assets/hammer.png) > **Cloud Services** > **Adobe Sign** en selecteer de configuratiecontainer die u in de bovenstaande stap hebt gemaakt.
 

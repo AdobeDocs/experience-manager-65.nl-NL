@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 879ff6ca-e5f3-451d-acc2-f75142101ddd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bd70508b361ac8b62ebc0344538a18369a075f3e
+source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
 workflow-type: tm+mt
-source-wordcount: '1801'
+source-wordcount: '1809'
 ht-degree: 0%
 
 ---
@@ -23,16 +23,16 @@ ht-degree: 0%
 
 Deze zelfstudie is een stap in de [eerste interactieve communicatiereeks](/help/forms/using/create-your-first-interactive-communication.md) maken. U wordt aangeraden de reeks in chronologische volgorde te volgen om het volledige gebruik van de zelfstudie te begrijpen, uit te voeren en aan te tonen.
 
-Als u een interactieve communicatie wilt maken, moet u sjablonen op de AEM-server beschikbaar hebben voor Afdrukken en Webkanalen.
+Om een Interactieve Mededeling tot stand te brengen, moet u malplaatjes beschikbaar op de AEM server voor de Kanalen van de Druk en van het Web hebben.
 
-De sjablonen voor het kanaal Afdrukken worden gemaakt in Adobe Forms Designer en geüpload naar de AEM-server. Deze malplaatjes zijn dan beschikbaar voor gebruik terwijl het creëren van een Interactieve Mededeling.
+De sjablonen voor het kanaal Afdrukken worden gemaakt in Adobe Forms Designer en geüpload naar de AEM server. Deze malplaatjes zijn dan beschikbaar voor gebruik terwijl het creëren van een Interactieve Mededeling.
 
-De sjablonen voor het webkanaal worden gemaakt in AEM. Sjabloonauteurs en -beheerders kunnen websjablonen maken, bewerken en inschakelen. Zodra gecreeerd en toegelaten, zijn deze malplaatjes beschikbaar voor gebruik terwijl het creëren van een Interactieve Communicatie.
+De malplaatjes voor het kanaal van het Web worden gecreeerd in AEM. Sjabloonauteurs en -beheerders kunnen websjablonen maken, bewerken en inschakelen. Zodra gecreeerd en toegelaten, zijn deze malplaatjes beschikbaar voor gebruik terwijl het creëren van een Interactieve Communicatie.
 
 Dit leerprogramma begeleidt u door de stappen om malplaatjes voor de kanalen van de Druk en van het Web tot stand te brengen zodat zij voor gebruik terwijl het creëren van Interactieve Mededelingen beschikbaar zijn. Aan het einde van deze zelfstudie kunt u het volgende doen:
 
 * XDP-sjablonen maken voor het afdrukkanaal met Adobe Forms Designer
-* Upload de XDP malplaatjes aan de Server van AEM Forms
+* De XDP-sjablonen uploaden naar de AEM Forms-server
 * Sjablonen voor het webkanaal maken en inschakelen
 
 ## Sjabloon maken voor afdrukkanaal {#create-template-for-print-channel}
@@ -57,7 +57,7 @@ Op basis van het [gebruiksgeval](/help/forms/using/create-your-first-interactive
 
 ![create_print_template](assets/create_print_template.gif)
 
-Deze subformulieren worden als doelgebieden weergegeven in de afdruksjabloon nadat het XDP-bestand naar de Forms-server is geüpload. Alle entiteiten zoals documentfragmenten, grafieken, lay-outfragmenten en afbeeldingen worden aan doelgebieden toegevoegd tijdens het maken van de interactieve communicatie.
+Deze subformulieren worden weergegeven als doelgebieden in de afdruksjabloon nadat het XDP-bestand naar de Forms-server is geüpload. Alle entiteiten zoals documentfragmenten, grafieken, lay-outfragmenten en afbeeldingen worden aan doelgebieden toegevoegd tijdens het maken van de interactieve communicatie.
 
 Voer de volgende stappen uit om een XDP malplaatje voor het kanaal van de Druk tot stand te brengen:
 
@@ -120,7 +120,7 @@ Nadat u een XDP-sjabloon hebt gemaakt met de Forms Designer, moet u de sjabloon 
 1. Selecteer **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
 1. Tik op **Maken** > **Bestand uploaden**.
 
-   Navigeer en selecteer het sjabloon **create_first_ic_print_template** (XDP) en tik op **Openen** om de XDP-sjabloon te importeren naar de server AEM Forms.
+   Navigeer en selecteer het sjabloon **create_first_ic_print_template** (XDP) en tik op **Openen** om de XDP-sjabloon naar de AEM Forms-server te importeren.
 
 ### XDP-sjabloon maken voor layoutfragmenten {#create-xdp-template-for-layout-fragments}
 
@@ -162,7 +162,7 @@ Als u een lay-outfragment wilt maken voor het afdrukkanaal van de interactieve c
    1. Selecteer **.xdp** in de vervolgkeuzelijst **Opslaan als type** .
 
    1. Tik op **Opslaan**.
-   Nadat u een XDP-sjabloon voor een lay-outfragment hebt gemaakt met de Forms Designer, moet u de sjabloon [uploaden](../../forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server) naar de AEM Forms-server, zodat de sjabloon beschikbaar is voor gebruik tijdens het maken van lay-outfragmenten.
+   Nadat u een XDP-sjabloon voor een lay-outfragment hebt gemaakt met de Forms Designer, moet u deze naar de AEM Forms-server [uploaden](../../forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server) , zodat de sjabloon beschikbaar is voor gebruik tijdens het maken van lay-outfragmenten.
 
 ## Sjabloon maken voor webkanaal {#create-template-for-web-channel}
 
@@ -180,6 +180,7 @@ Als u een webkanaalsjabloon wilt maken, definieert u een map waarin u de gemaakt
 Voer de volgende stappen uit om een map voor de bewerkbare sjablonen te maken:
 
 1. Tik op **Gereedschappen** ![hamerpictogram](assets/hammer-icon.svg) > **Configuratiebrowser**.
+   * See the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
 1. Tik op **Maken** op de pagina Configuration Browser.
 1. Geef in het dialoogvenster **Configuratie** maken de titel **Create_First_IC_templates** op als de titel voor de map, controleer **Bewerkbare sjablonen** en tik op **Maken**.
 

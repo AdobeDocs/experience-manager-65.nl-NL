@@ -4,7 +4,7 @@ description: De nota's van de versie specifiek voor [!DNL Adobe Experience Manag
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: ba744c7f58ae7d359c13b11403921da0948c71a7
+source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
 workflow-type: tm+mt
 source-wordcount: '4339'
 ht-degree: 0%
@@ -248,7 +248,7 @@ Hier volgt een lijst met oplossingen uit de release van [!DNL Experience Manager
 ### User Interface {#ui-6560}
 
 * In de interface van de browser Offloading worden niet alle taakonderwerpen weergegeven (NPR-34308).
-* De Browser van de Configuratie interface toont niet alle configuraties (NPR-33644).
+* De Browser [van de](/help/sites-administering/configurations.md) Configuratie interface toont niet alle configuraties (NPR-33644).
 * Wanneer u op de `Esc` toets drukt terwijl u naar gebruikers zoekt om zich te laten nadoen, wordt het **[!UICONTROL User]** dialoogvenster gesloten in plaats van de gebruikerslijst (NPR-34084).
 
 ### Integrations {#integrations-6560}

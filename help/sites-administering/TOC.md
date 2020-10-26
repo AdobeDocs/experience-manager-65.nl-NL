@@ -6,9 +6,9 @@ user-guide-title: AEM 6.5 Gebruikershandleiding voor het beheer
 breadcrumb-title: Beheerdershandleiding
 user-guide-description: Meer informatie over het AEM.
 translation-type: tm+mt
-source-git-commit: fe3e8c29abe832899a6466c4b018b9aa2104e908
+source-git-commit: c7de7bee2368a558620aafdff5272e4bd07aae00
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '630'
 ht-degree: 6%
 
 ---
@@ -36,6 +36,7 @@ ht-degree: 6%
    + [Wizard Taalkopie](tc-wizard.md)
    + [Verbeterde vertaling](tc-enhancements.md)
    + [Aanbevolen werkwijzen voor vertaling](tc-bp.md)
+   + [Configuraties en de Configuratiebrowser](configurations.md)
    + [Veelgestelde vragen AEM](aem-faqs.md)
 + Bewerkingen {#operations}
    + [Dashboards](dashboards.md)

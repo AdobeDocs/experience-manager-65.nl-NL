@@ -3,7 +3,7 @@ title: Elementen voorbereiden voor vertaling
 description: Maak hoofdmappen voor talen om elementen voor te bereiden voor vertaling ter ondersteuning van meertalige middelen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 1d3e908eafa1cdcbc6ef557da509f12cdd9418cc
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 0%
@@ -17,20 +17,20 @@ Meertalige elementen zijn elementen met binaire getallen, metagegevens en tags i
 
 In [!DNL Adobe Experience Manager Assets]mappen worden meertalige middelen opgenomen, waarbij elke map de middelen in een andere taal bevat.
 
-Elke taalmap wordt een taalkopie genoemd. De hoofdmap van een taalkopie, de hoofdtaal genoemd, identificeert de taal van de inhoud in de taalkopie. Bijvoorbeeld: */content/dam/it* is de Italiaanse taalbasis voor de Italiaanse taalkopie. De exemplaren van de taal moeten een [correct-gevormde taalwortel](preparing-assets-for-translation.md#creating-a-language-root) gebruiken zodat de correcte taal wordt gericht wanneer de vertalingen van bronactiva worden uitgevoerd.
+Elke taalmap wordt een taalkopie genoemd. De hoofdmap van een taalkopie, de hoofdmap van de taal genoemd, identificeert de taal van de inhoud in de taalkopie. Bijvoorbeeld: */content/dam/it* is de Italiaanse taalbasis voor de Italiaanse taalkopie. De exemplaren van de taal moeten een [correct-gevormde taalwortel](preparing-assets-for-translation.md#creating-a-language-root) gebruiken zodat de correcte taal wordt gericht wanneer de vertalingen van bronactiva worden uitgevoerd.
 
 De taalkopie waarvoor u oorspronkelijk elementen toevoegt, is de primaire taal. De primaire taal is de bron die in andere talen wordt vertaald. Een voorbeeld van een maphiërarchie bevat verschillende taalwortels:
 
-```
- /content
-  /- dam
-   |- en
-   |- fr
-   |- de
-   |- es
-   |- it
-   |- ja
-   |- zh
+```shell
+/content
+    /- dam
+        |- en
+        |- fr
+        |- de
+        |- es
+        |- it
+        |- ja
+        |- zh
 ```
 
 Voer de volgende stappen uit om uw middelen voor vertaling voor te bereiden:

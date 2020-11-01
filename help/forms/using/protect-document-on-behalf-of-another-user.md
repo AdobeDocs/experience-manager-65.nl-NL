@@ -1,18 +1,20 @@
 ---
-title: Een document namens een andere gebruiker beveiligen
-seo-title: Een document namens een andere gebruiker beveiligen
-description: 'null'
-seo-description: 'null'
+title: Een document namens een andere gebruiker Protect
+seo-title: Een document namens een andere gebruiker Protect
+description: Een document namens een andere gebruiker Protect
 uuid: 76f4b30b-6d0c-4cae-98b3-334efdbf27bb
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: 7cb8140d-dd62-4659-8cc7-21361bd5d3f6
 translation-type: tm+mt
-source-git-commit: 5120bbdefea528ad6d07a9c99df565555b6a8444
+source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
+workflow-type: tm+mt
+source-wordcount: '376'
+ht-degree: 0%
 
 ---
 
 
-# Een document namens een andere gebruiker beveiligen {#protect-a-document-on-behalf-of-another-user}
+# Een document namens een andere gebruiker Protect {#protect-a-document-on-behalf-of-another-user}
 
 AEM Forms Document Security Java SDK biedt API&#39;s waarmee een gebruikersaccount een document namens een andere gebruiker kan beveiligen zonder dat de machtigingen voor het bewerken van het document zijn verkregen. U kunt de API&#39;s in een workflowproces of programmatisch als documentservice gebruiken. De nieuwe API&#39;s zijn:
 
@@ -29,7 +31,7 @@ Voer de volgende stappen uit om een document te beschermen namens een andere geb
 
 1. Maak een beleidsset. Beleidsset1.
 1. Maak een beleid in de nieuwe beleidsset. Bijvoorbeeld, Policy1 in PolicySet1.
-1. Creeer een gebruiker met de Eindgebruiker van het Beheer van de Rol. Bijvoorbeeld Gebruiker1. Verstrek de toestemmingen om documenten te bekijken die gebruikend Beleid1 aan de pas gecreëerde gebruiker worden beschermd.
+1. Creeer een gebruiker met de Eindgebruiker van het rolRights Management. Bijvoorbeeld Gebruiker1. Verstrek de toestemmingen om documenten te bekijken die gebruikend Beleid1 aan de pas gecreëerde gebruiker worden beschermd.
 1. Maak een nieuwe rol. Bijvoorbeeld Rol1. Verstrek de Dienst aanhaalt toestemming aan de pas gecreëerde rol. Maak een gebruiker met de nieuwe rol. Bijvoorbeeld, kan User2.U gebruiken User2 of een beheerder om de verbinding van SDK tot stand te brengen en de dienst te roepen protectDocument.
 
    Nu kunt u de volgende voorbeeldcode uitvoeren om een document te beveiligen zonder dat u machtigingen hebt om het document te bewerken voor de gebruiker die het document beveiligt:

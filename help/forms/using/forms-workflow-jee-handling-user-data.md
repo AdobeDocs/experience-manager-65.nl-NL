@@ -1,21 +1,23 @@
 ---
-title: Forms JEE-workflows| Gebruikersgegevens verwerken
-seo-title: Forms JEE-workflows| Gebruikersgegevens verwerken
-description: 'null'
-seo-description: 'null'
+title: Forms JEE-workflows | Gebruikersgegevens verwerken
+seo-title: Forms JEE-workflows | Gebruikersgegevens verwerken
+description: Forms JEE-workflows | Gebruikersgegevens verwerken
 uuid: 3b06ef19-d3c4-411e-9530-2c5d2159b559
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 5632a8df-a827-4e38-beaa-18b61c2208a3
 translation-type: tm+mt
-source-git-commit: 5831c173114a5a6f741e0721b55d85a583e52f78
+source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
+workflow-type: tm+mt
+source-wordcount: '1371'
+ht-degree: 0%
 
 ---
 
 
-# Forms JEE-workflows| Gebruikersgegevens verwerken {#forms-jee-workflows-handling-user-data}
+# Forms JEE-workflows | Gebruikersgegevens verwerken {#forms-jee-workflows-handling-user-data}
 
-De werkschema&#39;s van JEE van Vormen AEM verstrekken hulpmiddelen om, bedrijfsprocessen te ontwerpen tot stand te brengen en te beheren. Een workflowproces bestaat uit een reeks stappen die in een opgegeven volgorde worden uitgevoerd. Elke stap voert een specifieke actie uit zoals het toewijzen van een taak aan een gebruiker of het verzenden van een e-mailbericht. Een proces kan met activa, gebruikersrekeningen, en de diensten in wisselwerking staan, en kan worden teweeggebracht gebruikend om het even welke volgende methodes:
+AEM Forms JEE-workflows bieden tools voor het ontwerpen, maken en beheren van bedrijfsprocessen. Een workflowproces bestaat uit een reeks stappen die in een opgegeven volgorde worden uitgevoerd. Elke stap voert een specifieke actie uit zoals het toewijzen van een taak aan een gebruiker of het verzenden van een e-mailbericht. Een proces kan met activa, gebruikersrekeningen, en de diensten in wisselwerking staan, en kan worden teweeggebracht gebruikend om het even welke volgende methodes:
 
 * Een proces starten vanuit de AEM Forms Workspace
 * De service SOAP of RESTful gebruiken
@@ -23,11 +25,11 @@ De werkschema&#39;s van JEE van Vormen AEM verstrekken hulpmiddelen om, bedrijfs
 * Gecontroleerde map gebruiken
 * E-mail gebruiken
 
-Zie [Workbench Help](http://www.adobe.com/go/learn_aemforms_workbench_65)voor meer informatie over het maken van JEE-workflowproces voor AEM Forms.
+Raadpleeg de Help bij [Workbench voor meer informatie over het maken van een AEM Forms JEE-workflowproces](http://www.adobe.com/go/learn_aemforms_workbench_65).
 
 ## Gebruikersgegevens en gegevensopslag {#user-data-and-data-stores}
 
-Wanneer een proces wordt geactiveerd en tijdens het proces worden gegevens vastgelegd over de deelnemers aan het proces, gegevens die door deelnemers zijn ingevoerd in het formulier dat aan het proces is gekoppeld en bijlagen die aan het formulier zijn toegevoegd. De gegevens worden opgeslagen in de serverdatabase van AEM Forms JEE en als deze zijn geconfigureerd, worden sommige gegevens zoals bijlagen opgeslagen in de GDS-map (Global Document Storage). De GDS-map kan worden geconfigureerd op een gedeeld bestandssysteem of een database.
+Wanneer een proces wordt geactiveerd en tijdens het proces worden gegevens vastgelegd over de deelnemers aan het proces, gegevens die door deelnemers zijn ingevoerd in het formulier dat aan het proces is gekoppeld en bijlagen die aan het formulier zijn toegevoegd. De gegevens worden opgeslagen in de AEM Forms JEE-serverdatabase en als deze zijn geconfigureerd, worden sommige gegevens zoals bijlagen opgeslagen in de GDS-map (Global Document Storage). De GDS-map kan worden geconfigureerd op een gedeeld bestandssysteem of een database.
 
 ## Gebruikersgegevens openen en verwijderen {#access-and-delete-user-data}
 
@@ -36,14 +38,14 @@ Wanneer een proces wordt geactiveerd, worden een unieke procesinstantie-id en ee
 U kunt de procesinstantie-id voor een initiator echter niet identificeren in de volgende scenario&#39;s:
 
 * **Het proces wordt geactiveerd door een gecontroleerde map**: Een procesinstantie kan niet met de initiator worden geïdentificeerd als het proces door een gecontroleerde omslag wordt teweeggebracht. In dit geval wordt de gebruikersinformatie gecodeerd in de opgeslagen gegevens.
-* **Proces dat is gestart vanuit een AEM-instantie** publiceren: Alle procesinstanties die worden geactiveerd vanuit een publicatie-instantie van AEM, leggen geen informatie over de initiator vast. Gebruikersgegevens kunnen echter worden vastgelegd in het formulier dat is gekoppeld aan het proces, dat is opgeslagen in workflowvariabelen.
+* **Proces dat is gestart vanaf AEM publicatie-instantie**: Alle procesinstanties die worden geactiveerd via AEM publicatieinstantie, leggen geen informatie over de initiator vast. Gebruikersgegevens kunnen echter worden vastgelegd in het formulier dat is gekoppeld aan het proces, dat is opgeslagen in workflowvariabelen.
 * **Verwerking gestart via e-mail**: De e-mailid van de afzender wordt vastgelegd als een eigenschap in een ondoorzichtige blob-kolom van de `tb_job_instance` databasetabel, die niet rechtstreeks kan worden gecontroleerd.
 
 ### Id&#39;s van procesinstanties identificeren wanneer de aanvrager of deelnemer van de workflow bekend is {#initiator-participant}
 
 Voer de volgende stappen uit om procesinstantie-id&#39;s voor een workflowaanvrager of een deelnemer te identificeren:
 
-1. Voer het volgende bevel in het servergegevensbestand van Vormen van AEM uit om belangrijkste identiteitskaart voor werkschemageinitiator of deelnemer van de `edcprincipalentity` gegevensbestandlijst terug te winnen.
+1. Voer het volgende bevel in het servergegevensbestand van AEM Forms uit om belangrijkste identiteitskaart voor werkschemamonator of deelnemer van de `edcprincipalentity` gegevensbestandlijst terug te winnen.
 
    ```sql
    select id from edcprincipalentity where canonicalname='user_ID'
@@ -136,7 +138,7 @@ Nu u de procesinstantie-id&#39;s hebt geïdentificeerd die aan een gebruiker zij
 
    `ProcessManager.purgeProcessInstance(<long_lived_invocation_id>)`
 
-   De `purgeProcessInstance` methode verwijdert alle gegevens voor de opgegeven oproepings-id volledig uit de serverdatabase van AEM Forms en GDS, indien geconfigureerd.
+   De `purgeProcessInstance` methode verwijdert alle gegevens voor de opgegeven oproepings-id volledig uit de AEM Forms-serverdatabase en GDS, indien geconfigureerd.
 
 ### Werken met wezen {#orphan}
 
@@ -144,7 +146,7 @@ Orphan-taken zijn de taken waarvan het omvattende proces is gestart maar nog nie
 
 Als u de taak-id&#39;s hebt, voert u de volgende handelingen uit om de bijbehorende bestanden en gegevens te wissen met een wezen-taak uit GDS en de database.
 
-1. Voer het volgende bevel op het de servergegevensbestand van Vormen van AEM uit om identiteitskaarts voor de geïdentificeerde taak IDs terug te winnen.
+1. Voer het volgende bevel op het servergegevensbestand van AEM Forms uit om identiteitskaarts voor geïdentificeerde taak IDs terug te winnen.
 
    ```sql
    select id from tb_form_data where task_id=<task_id>
@@ -166,6 +168,7 @@ Als u de taak-id&#39;s hebt, voert u de volgende handelingen uit om de bijbehore
       * `_wfattach<task_id>`
       * `_wftask<fd_id>`
       * `_wftaskformid<fd_id>`
+
       De bestanden met deze extensies zijn de markeringsbestanden. Ze worden opgeslagen met bestandsnamen in de volgende indeling:
 
       `<file_name_guid>.session<session_id_string>`
@@ -184,7 +187,7 @@ Als u de taak-id&#39;s hebt, voert u de volgende handelingen uit om de bijbehore
 
 
 
-1. Voer de volgende opdrachten uit om gegevens voor taak-id&#39;s te verwijderen uit de serverdatabase van AEM Forms:
+1. Voer de volgende opdrachten uit om gegevens voor taak-id&#39;s te verwijderen uit de AEM Forms-serverdatabase:
 
    ```sql
    delete from tb_task_acl where task_id=<task_id>

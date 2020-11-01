@@ -1,16 +1,15 @@
 ---
 title: Forms-gecentreerde workflows op OSGi | Gebruikersgegevens verwerken
 seo-title: Forms-gecentreerde workflows op OSGi | Gebruikersgegevens verwerken
-description: 'null'
-seo-description: 'null'
+description: Forms-gecentreerde workflows op OSGi | Gebruikersgegevens verwerken
 uuid: 6eefbe84-6496-4bf8-b065-212aa50cd074
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
 translation-type: tm+mt
-source-git-commit: 4e0709031aca030e50840811a9b3717f3cb20340
+source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1008'
 ht-degree: 0%
 
 ---
@@ -77,7 +76,7 @@ U kunt gebruikersgegevens uit een werkstroominstantie in de gegevensopslagruimte
 U kunt de resultaten echter niet identificeren of dubbelzinnig weergeven wanneer u werkstromen identificeert die aan een aanvrager zijn gekoppeld in de volgende scenario&#39;s:
 
 * **Workflow geactiveerd door een gecontroleerde map**: Een workflowinstantie kan niet worden geïdentificeerd met de initiator als de workflow wordt geactiveerd door een gecontroleerde map. In dit geval wordt de gebruikersinformatie gecodeerd in de opgeslagen gegevens.
-* **Workflow gestart vanaf AEM instantie** publiceren: Alle workflowinstanties worden gemaakt met behulp van een servicegebruiker wanneer adaptieve formulieren, interactieve communicatie of letters vanuit AEM publicatie-instantie worden verzonden. In deze gevallen wordt de gebruikersnaam van de aangemelde gebruiker niet vastgelegd in de gegevens van de workflowinstantie.
+* **Workflow gestart vanaf AEM instantie** publiceren: Alle workflowinstanties worden gemaakt met behulp van een servicegebruiker wanneer adaptieve formulieren, interactieve communicatie of letters worden verzonden vanuit AEM publicatie-instantie. In deze gevallen wordt de gebruikersnaam van de aangemelde gebruiker niet vastgelegd in de gegevens van de workflowinstantie.
 
 ### Gebruikersgegevens openen {#access}
 
@@ -154,7 +153,7 @@ U moet een AEM beheerder zijn om gebruikersgegevens uit workflowinstanties te ve
    >Als u het knooppunt voor workflowinstanties verwijdert, wordt de instantie van de workflow voor alle workflowdeelnemers verwijderd.
 
 1. Herhaal stap 2 - 6 voor alle workflowinstanties die voor een gebruiker zijn geïdentificeerd.
-1. Offline concept- en verzendgegevens uit AEM [!DNL Forms] app-outbox van workflowdeelnemers identificeren en verwijderen om verzending naar de server te voorkomen.
+1. Identificeer en verwijder off-line ontwerp en voorleggingsgegevens van AEM [!DNL Forms] app outbox van werkschemagedeelnemers om het even welke voorlegging aan de server te vermijden.
 
 U kunt API&#39;s ook gebruiken om knooppunten en eigenschappen te openen en te verwijderen. Zie de volgende documenten voor meer informatie.
 

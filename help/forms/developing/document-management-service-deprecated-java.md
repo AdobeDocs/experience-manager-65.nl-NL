@@ -1,8 +1,7 @@
 ---
 title: Documentbeheerservice (verouderd) Java API Quick Start (SOAP)
 seo-title: Documentbeheerservice (verouderd) Java API Quick Start (SOAP)
-description: 'null'
-seo-description: 'null'
+description: Documentbeheerservice (verouderd) Java API Quick Start (SOAP)
 uuid: 967c282a-ccde-4489-a4d5-53c6a1a0cac0
 contentOwner: admin
 content-type: reference
@@ -10,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 9cffdb77-c8a4-4a15-b64f-1d3aadaa60c7
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '652'
 ht-degree: 0%
 
 ---
@@ -24,7 +23,7 @@ De volgende snelstarthandleidingen zijn beschikbaar voor de service Documentbehe
 
 >[!NOTE]
 >
->Vanaf 5 augustus 2011 migreert Adobe klanten van Content Services ES naar de Adobe Digital Enterprise Platform Experience Services. Het product roadmap voor klanten die de Diensten van de Inhoud gebruiken is om naar de nieuwe Diensten van de Ervaring van ADEP over te gaan - Kern, die een inheemse Bewaarplaats van de Inhoud omvat die op de moderne, modulaire architectuur van CRX wordt voortgebouwd, die tijdens de aankoop van de Software van de Dag van Adobe wordt verworven.
+>Vanaf 5 augustus 2011 migreert Adobe klanten van Content Services ES naar de Adobe Digital Enterprise Platform Experience Services. Het product roadmap voor klanten die de Diensten van de Inhoud gebruiken is naar de nieuwe Diensten van de Ervaring van ADEP - Kern over te gaan, die een inheemse Bewaarplaats van de Inhoud omvat die op de moderne, modulaire CRX architectuur wordt voortgebouwd, die tijdens de aanschaf van de Software van de Adobe van Dag wordt verworven.
 
 [Snel starten (SOAP-modus): Spaties voor inhoudsservices maken met de Java API](document-management-service-deprecated-java.md#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated)
 
@@ -42,11 +41,11 @@ De volgende snelstarthandleidingen zijn beschikbaar voor de service Documentbehe
 
 [Snel starten (SOAP-modus): Machtigingen voor inhoudsservices instellen met de Java API](document-management-service-deprecated-java.md#quick-start-soap-mode-setting-content-services-permissions-using-the-java-api-deprecated)
 
-De verrichtingen van AEM Forms kunnen worden uitgevoerd gebruikend AEM Forms sterk-getypte API en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
+AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte AEM Forms-API en de verbindingsmodus moet worden ingesteld op SOAP.
 
 >[!NOTE]
 
-De snelle die begin in Programmering met vormen wordt gevestigd AEM is gebaseerd op de Server van Vormen die op JBoss en het werkende systeem van Vensters wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u vensterspecifieke paden door paden die worden ondersteund door het desbetreffende besturingssysteem. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+De snelle aanvang die in Programmering met AEM vormen wordt gevestigd is gebaseerd op de Server die van Forms op JBoss en het werkende systeem van Vensters wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u vensterspecifieke paden door paden die worden ondersteund door het desbetreffende besturingssysteem. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Snel starten (SOAP-modus): Spaties voor inhoudsservices maken met de Java API (afgekeurd) {#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated}
 

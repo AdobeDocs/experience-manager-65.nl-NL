@@ -1,17 +1,16 @@
 ---
 title: Forms Portal | Gebruikersgegevens verwerken
 seo-title: Forms Portal | Gebruikersgegevens verwerken
-description: 'null'
-seo-description: 'null'
+description: Forms Portal | Gebruikersgegevens verwerken
 uuid: 2ac2b2a9-b603-489a-86b8-a78b697f130d
 contentOwner: vishgupt
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 48f841b7-0e7f-4216-9ee8-fb6e843acaf0
 translation-type: tm+mt
-source-git-commit: 4e0709031aca030e50840811a9b3717f3cb20340
+source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
 workflow-type: tm+mt
-source-wordcount: '853'
+source-wordcount: '856'
 ht-degree: 0%
 
 ---

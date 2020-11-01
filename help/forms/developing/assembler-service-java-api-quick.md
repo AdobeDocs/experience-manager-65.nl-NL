@@ -1,8 +1,7 @@
 ---
 title: Java API QuickStart (SOAP) van de Assembler-service
 seo-title: Java API QuickStart (SOAP) van de Assembler-service
-description: 'null'
-seo-description: 'null'
+description: Java API QuickStart (SOAP) van de Assembler-service
 uuid: 33ad5f7a-4f4c-4e72-937d-85891498a80e
 contentOwner: admin
 content-type: reference
@@ -10,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: b7b17cf8-def5-4a77-a872-c1f286814881
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---
@@ -40,15 +39,15 @@ Java API Quick Start (SOAP) is beschikbaar voor de Assembler-service
 
 [Snel starten (SOAP-modus): Een DDX-document dynamisch maken met de Java API](assembler-service-java-api-quick.md#quick-start-soap-mode-dynamically-creating-a-ddx-document-using-the-java-api)
 
-[Snel starten (SOAP-modus): PDF-portfolio&#39;s samenstellen met de Java API](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api)
+[Snel starten (SOAP-modus): PDF-Portfolio samenstellen met de Java API](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api)
 
 [Snel starten (SOAP-modus): Meerdere XDP-fragmenten samenstellen met de Java API](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
 
-De verrichtingen van AEM Forms kunnen worden uitgevoerd gebruikend AEM Forms sterk-getypte API en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
+AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte AEM Forms-API en de verbindingsmodus moet worden ingesteld op SOAP.
 
 >[!NOTE]
 >
->Het snelle Begin dat in Programmering met AEM Forms wordt gevestigd is gebaseerd op de Server die van Vormen op de Server van de Toepassing JBoss en het werkende systeem van Microsoft Windows wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
+>De snelle Begin die in Programmering met AEM Forms wordt gevestigd is gebaseerd op de Server die van Forms op de Server van de Toepassing JBoss en het werkende systeem van Microsoft Windows wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ## Snel starten (SOAP-modus): Een PDF-document samenstellen met de Java API {#quick-start-soap-mode-assembling-a-pdf-document-using-the-java-api}
 
@@ -1381,9 +1380,9 @@ public class AssemblePDFWithDynamicDDXSOAP {
 }
 ```
 
-## Snel starten (SOAP-modus): PDF-portfolio&#39;s samenstellen met de Java API {#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api}
+## Snel starten (SOAP-modus): PDF-Portfolio samenstellen met de Java API {#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een PDF-portfolio gemaakt. Het PDF-portfolio wordt opgeslagen als een PDF-bestand met de naam *AssemblerResultPortfolio.pdf*. (Zie PDF-portfolio&#39;s [samenstellen](/help/forms/developing/assembling-pdf-documents.md#assembling-pdf-portfolios).)
+In het volgende Java-codevoorbeeld wordt een PDF-portfolio gemaakt. Het PDF-portfolio wordt opgeslagen als een PDF-bestand met de naam *AssemblerResultPortfolio.pdf*. (Zie PDF-Portfolio [samenstellen](/help/forms/developing/assembling-pdf-documents.md#assembling-pdf-portfolios).)
 
 ```java
  /*

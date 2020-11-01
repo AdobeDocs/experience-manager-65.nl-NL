@@ -1,8 +1,7 @@
 ---
 title: DocConverter Service Java API QuickStart (SOAP)
 seo-title: DocConverter Service Java API QuickStart (SOAP)
-description: 'null'
-seo-description: 'null'
+description: DocConverter Service Java API QuickStart (SOAP)
 uuid: a02e13a5-4557-4c8a-a4be-e8d017127128
 contentOwner: admin
 content-type: reference
@@ -10,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ea4b26c8-b9cf-42c2-b4da-2884336014a9
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
@@ -26,11 +25,11 @@ Java API Quick Start (SOAP) is beschikbaar voor de DocConverter-service.
 
 [Snel starten (SOAP-modus): Een document converteren naar een PDF/A-document met de Java API](docconverter-service-java-api-quick.md#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api)
 
-De verrichtingen van AEM Forms kunnen worden uitgevoerd gebruikend AEM Forms sterk-getypte API en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
+AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte AEM Forms-API en de verbindingsmodus moet worden ingesteld op SOAP.
 
 >[!NOTE]
 >
->Quick Start die in Programming with AEM vormen wordt gevestigd is gebaseerd op de Server die van Vormen op de Server van de Toepassing JBoss en het werkende systeem van Microsoft Windows wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>De snelle Beginnen die in Programmering met AEM vormen worden gevestigd zijn gebaseerd op de Server die van Forms op de Server van de Toepassing JBoss en het werkende systeem van Microsoft Windows wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Snel starten (SOAP-modus): Een document converteren naar een PDF/A-document met de Java API {#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api}
 
@@ -137,7 +136,7 @@ In het volgende Java-codevoorbeeld wordt een PDF-document met de naam *Loan.pdf*
 
 ## Snel starten (SOAP-modus): PDF/A-compatibiliteit bepalen met de Java API {#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt bepaald of het invoer-PDF-document PDF/A-compatibel is. Het invoer-PDF-document dat wordt doorgegeven aan de DocConverter-service heet *LoanArchive.pdf*. De resultaten van de bevestiging worden geschreven aan een dossier van XML genoemd *ValidationResults.xml*. (Zie PDF/A-compatibiliteit [via programmacode bepalen](/help/forms/developing/pdf-a-documents.md#programmatically-determining-pdf-a-compliancy).)
+In het volgende Java-codevoorbeeld wordt bepaald of het invoer-PDF-document PDF/A-compatibel is. Het invoer-PDF-document dat aan de DocConverter-service wordt doorgegeven, heet *LoanArchive.pdf*. De resultaten van de bevestiging worden geschreven aan een dossier van XML genoemd *ValidationResults.xml*. (Zie PDF/A-compatibiliteit [via programmacode bepalen](/help/forms/developing/pdf-a-documents.md#programmatically-determining-pdf-a-compliancy).)
 
 ```java
  /*

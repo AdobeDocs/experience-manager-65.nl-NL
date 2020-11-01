@@ -1,8 +1,7 @@
 ---
 title: JavaAPI Quick Start (SOAP) voor documentbeveiligingsservice
 seo-title: JavaAPI Quick Start (SOAP) voor documentbeveiligingsservice
-description: 'null'
-seo-description: 'null'
+description: JavaAPI Quick Start (SOAP) voor documentbeveiligingsservice
 uuid: f3823a95-c8c2-42c8-8edc-3ab8ab4311dc
 contentOwner: admin
 content-type: reference
@@ -10,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: b89293c4-ea2e-4fa4-9e5e-ef4f548e9608
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: '1076'
 ht-degree: 0%
 
 ---
@@ -20,7 +19,7 @@ ht-degree: 0%
 
 # Java API Quick Start (SOAP) voor documentbeveiliging {#document-security-service-javaapi-quick-start-soap}
 
-Java API Quick Start (SOAP) is beschikbaar voor de Rights Management-service:
+Java API Quick Start (SOAP) is beschikbaar voor de service Rights Management:
 
 [Snel starten (SOAP-modus): Beleid maken met de Java API](document-security-service-java-api.md#quick-start-soap-mode-creating-a-policy-using-the-java-api)
 
@@ -46,11 +45,11 @@ Java API Quick Start (SOAP) is beschikbaar voor de Rights Management-service:
 
 [Snel starten (SOAP-modus): Een beleid verwijderen uit een Word-document met de Java API](document-security-service-java-api.md#quick-start-soap-mode-removing-a-policy-from-a-word-document-using-the-java-api)
 
-De verrichtingen van AEM Forms kunnen worden uitgevoerd gebruikend AEM Forms sterk-getypte API en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
+AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte AEM Forms-API en de verbindingsmodus moet worden ingesteld op SOAP.
 
 >[!NOTE]
 >
->Quick Start in Programming with AEM Forms is gebaseerd op het besturingssysteem Forms server. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Quick Start in Programming with AEM Forms is gebaseerd op het besturingssysteem van de Forms-server. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Snel starten (SOAP-modus): Beleid maken met de Java API {#quick-start-soap-mode-creating-a-policy-using-the-java-api}
 
@@ -2056,7 +2055,7 @@ public class DeleteAbstractPolicySoap {
 }
 ```
 
-## Snel starten (SOAP-modus): Een PDF beveiligen in instructiewerkstroom voor een bestaande gebruiker, met behulp van de Java API {#quick-start-soap-mode-protect-a-pdf-in-statement-workflow-for-an-existing-user-using-the-java-api}
+## Snel starten (SOAP-modus): Protect a PDF in Statement Workflow for an Existing User, using the Java API {#quick-start-soap-mode-protect-a-pdf-in-statement-workflow-for-an-existing-user-using-the-java-api}
 
 In het volgende Java-codevoorbeeld ziet u de methode voor het beveiligen van een document in de instructieworkflow voor een bestaande gebruiker.
 
@@ -2164,7 +2163,7 @@ public class protectStatementWorkFlowExistingUserSoap {
 }
 ```
 
-## Snel starten (SOAP-modus): Een PDF beveiligen in Instructieworkflow voor een nieuwe gebruiker, met de Java API {#quick-start-soap-mode-protect-a-pdf-in-statement-workflow-for-a-new-user-using-the-java-api}
+## Snel starten (SOAP-modus): Protect a PDF in statement Workflow for a new User, using the Java API {#quick-start-soap-mode-protect-a-pdf-in-statement-workflow-for-a-new-user-using-the-java-api}
 
 In het volgende Java-codevoorbeeld ziet u hoe u een document kunt beveiligen in de instructieworkflow. Dit is een proces in twee stappen:
 

@@ -1,17 +1,16 @@
 ---
 title: Acrobat Reader DC extensions ServiceJava API Quick Start (SOAP)
 seo-title: Acrobat Reader DC extensions ServiceJava API Quick Start (SOAP)
-description: 'null'
-seo-description: 'null'
+description: Acrobat Reader DC extensions ServiceJava API Quick Start (SOAP)
 uuid: 8e72ca94-a8c1-43aa-9845-a0da597051c5
 contentOwner: admin
 content-type: reference
 topic-tags: develop
 discoiquuid: 31a9bfc6-462d-4535-888f-31026b8fa674
 translation-type: tm+mt
-source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
+source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
@@ -27,11 +26,11 @@ De volgende snelstarthandleidingen zijn beschikbaar voor de service Acrobat Read
 
 [Snel starten (SOAP-modus): Crediteringsgegevens ophalen met de Java API](acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-retrieving-credential-information-using-the-java-api)
 
-De verrichtingen van AEM Forms kunnen worden uitgevoerd gebruikend AEM Forms sterk-getypte API en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
+AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte AEM Forms-API en de verbindingsmodus moet worden ingesteld op SOAP.
 
 >[!NOTE]
 >
->Quick Start-programma&#39;s in Programming with AEM Forms zijn gebaseerd op het besturingssysteem van de Forms-server. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Quick Start in Programming with AEM Forms is gebaseerd op het besturingssysteem van de Forms-server. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Snel starten (SOAP-modus):gebruiksrechten toepassen met de Java API {#quick-start-soap-mode-applying-usage-rights-using-the-java-api}
 

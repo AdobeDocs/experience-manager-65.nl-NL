@@ -1,8 +1,7 @@
 ---
 title: Back-up- en herstelservice APIQuick start
 seo-title: Back-up- en herstelservice APIQuick start
-description: 'null'
-seo-description: 'null'
+description: Back-up- en herstelservice APIQuick start
 uuid: c3992be2-ceb4-480d-9c8f-71eb0ea66dde
 contentOwner: admin
 content-type: reference
@@ -10,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 813162be-dbf5-4dc1-80ff-e37dbc25ef60
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
@@ -26,11 +25,11 @@ Java API Quick Start (SOAP) is beschikbaar voor de API Backup and Restore Servic
 
 [Snel starten: Back-upmodus verlaten met de Java API (SOAP)](backup-restore-service-api-quick.md#quick-start-soap-mode-leaving-backup-mode-using-the-java-api)
 
-De verrichtingen van AEM Forms kunnen worden uitgevoerd gebruikend AEM Forms sterk-getypte API en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
+AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte AEM Forms-API en de verbindingsmodus moet worden ingesteld op SOAP.
 
 >[!NOTE]
 >
->De snelle Begarts die in Programmering met AEM Forms wordt gevestigd zijn gebaseerd op het werkende systeem van Vormen. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Quick Start in Programming with AEM Forms is gebaseerd op het Forms-besturingssysteem. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Snel starten (SOAP-modus): Back-upmodus starten met de Java API {#quick-start-soap-mode-entering-backup-mode-using-the-java-api}
 
@@ -149,7 +148,7 @@ In het volgende Java-codevoorbeeld wordt gedurende twee uur de back-upmodus geac
 
 ## Snel starten (SOAP-modus): Back-upmodus verlaten met de Java API {#quick-start-soap-mode-leaving-backup-mode-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt expliciet aangegeven dat een Forms Server de back-upmodus verlaat en terugkeert naar het leegmaken van bestanden uit de algemene documentopslag. (Zie Back-upmodus [verlaten op de formulierserver](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server).)
+In het volgende Java-codevoorbeeld wordt expliciet aangegeven dat een Forms-server de back-upmodus verlaat en terugkeert naar het leegmaken van bestanden van de algemene documentopslag. (Zie Back-upmodus [verlaten op de formulierserver](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server).)
 
 ```java
  /*

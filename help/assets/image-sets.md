@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: ccc4eb23-934c-4e67-860b-a6faa2bcaafc
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: c3ae4447581d946554d792c68d31b47a6b67d5df
 workflow-type: tm+mt
-source-wordcount: '2009'
-ht-degree: 13%
+source-wordcount: '2005'
+ht-degree: 14%
 
 ---
 
@@ -33,7 +33,7 @@ Stel dat u afbeeldingen van uiteinden met verschillende kleurrekeningen wilt wee
 
 >[!NOTE]
 >
->Zie Elementen [beheren met de aanraakinterface](/help/assets/manage-assets.md)voor informatie over de gebruikersinterface van Elementen.
+>Zie [Elementen](/help/assets/manage-assets.md)beheren voor meer informatie over de gebruikersinterface Elementen.
 
 ## Snel starten: Afbeeldingssets {#quick-start-image-sets}
 

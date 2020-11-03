@@ -8,10 +8,10 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: a323bf5a-b5b2-4b15-bcf8-48d0fe819512
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: c3ae4447581d946554d792c68d31b47a6b67d5df
 workflow-type: tm+mt
-source-wordcount: '118'
-ht-degree: 13%
+source-wordcount: '114'
+ht-degree: 14%
 
 ---
 
@@ -22,7 +22,7 @@ Het beheren van dynamische media elementen-beelden, video, en interactieve activ
 
 Wanneer u een voorvertoning weergeeft, kunt u ook voorinstellingen voor afbeeldingen (alleen voor afbeeldingen) of viewers (voor video en afbeeldingen) toepassen. U kunt niet beide toepassen op een element. Zie [Voorinstellingen](/help/assets/viewer-presets.md) voor viewers toepassen en [Voorinstellingen](/help/assets/image-sets.md)voor afbeeldingen toepassen.
 
-Algemene informatie over het beheer van middelen vindt u in Elementen [beheren met de Touch-interface](/help/assets/manage-assets.md).
+Algemene informatie over het beheer van middelen vindt u in [Elementen](/help/assets/manage-assets.md)beheren.
 
 De volgende onderwerpen beschrijven wat u moet doen om Dynamische activa van Media te beheren:
 
@@ -30,4 +30,3 @@ De volgende onderwerpen beschrijven wat u moet doen om Dynamische activa van Med
 * [Dynamic Media-assets vooraf bekijken](/help/assets/previewing-assets.md)
 * [Dynamische media-elementen publiceren](/help/assets/publishing-dynamicmedia-assets.md)
 * [Werken met kiezers](/help/assets/working-with-selectors.md)
-

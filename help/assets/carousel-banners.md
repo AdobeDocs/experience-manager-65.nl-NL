@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: e26c7f7f-bdd7-421a-8614-ba48abf381d2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: c3ae4447581d946554d792c68d31b47a6b67d5df
 workflow-type: tm+mt
-source-wordcount: '4730'
+source-wordcount: '4720'
 ht-degree: 2%
 
 ---
@@ -92,7 +92,7 @@ Zo kunt u snel aan de slag:
    * [Voeg een carrouselbanner toe aan uw website in AEM](/help/assets/adding-dynamic-media-assets-to-pages.md) Als u een AEM Sites-klant bent, kunt u de carrousel die rechtstreeks op de pagina in AEM is ingesteld, toevoegen met de component Interactieve media.
 
 
-Zie Carousel Sets [bewerken als u carrouselsets moet bewerken.](#editing-carousel-sets) Bovendien kunt u de eigenschappen [van de](https://docs.adobe.com/content/help/en/experience-manager-65/assets/managing/managing-assets-touch-ui.html#editing-properties)Carousel-set weergeven en bewerken.
+Zie Carousel Sets [bewerken als u carrouselsets moet bewerken.](#editing-carousel-sets) Bovendien kunt u de eigenschappen [van de](manage-assets.md#editing-properties)Carousel-set weergeven en bewerken.
 
 ## Variabelen hotspot en afbeelding met hyperlinks identificeren {#identifying-hotspot-and-image-map-variables}
 

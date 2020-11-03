@@ -1,9 +1,9 @@
 ---
-title: '[!DNL Assets] HTTP API.'
+title: '[!DNL Assets] HTTP-API.'
 description: Digitale elementen maken, lezen, bijwerken, verwijderen en beheren met de HTTP API in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: add8be813ce377384ee4d90600f54a1455a1ab0d
+source-git-commit: c3ae4447581d946554d792c68d31b47a6b67d5df
 workflow-type: tm+mt
 source-wordcount: '1715'
 ht-degree: 0%
@@ -183,7 +183,7 @@ Werkt de eigenschappen van de elementmetagegevens bij. Als u een eigenschap in d
 
 ### Metagegevens synchroniseren tussen `dc` en `jcr` naamruimte {#sync-metadata-between-namespaces}
 
-De API-methode werkt de metagegevenseigenschappen in de `jcr` naamruimte bij. De updates die worden gemaakt met Touch-UI wijzigen de eigenschappen van metagegevens in de `dc` naamruimte. Als u de waarden van metagegevens wilt synchroniseren tussen `dc` en `jcr` naamruimte, kunt u een workflow maken en de Experience Manager configureren om de workflow uit te voeren bij het bewerken van elementen. Gebruik een ECMA-script om de vereiste eigenschappen van metagegevens te synchroniseren. In het volgende voorbeeldscript wordt de tekenreeks title tussen `dc:title` en `jcr:title`gesynchroniseerd.
+De API-methode werkt de metagegevenseigenschappen in de `jcr` naamruimte bij. De updates die worden uitgevoerd via de gebruikersinterface wijzigen de eigenschappen van metagegevens in de `dc` naamruimte. Als u de waarden van metagegevens wilt synchroniseren tussen `dc` en `jcr` naamruimte, kunt u een workflow maken en de Experience Manager configureren om de workflow uit te voeren bij het bewerken van elementen. Gebruik een ECMA-script om de vereiste eigenschappen van metagegevens te synchroniseren. In het volgende voorbeeldscript wordt de tekenreeks title tussen `dc:title` en `jcr:title`gesynchroniseerd.
 
 ```javascript
 var workflowData = workItem.getWorkflowData();

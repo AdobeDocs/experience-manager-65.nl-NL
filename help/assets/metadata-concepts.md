@@ -3,7 +3,7 @@ title: Metagegevensconcepten begrijpen
 description: Leer over de behoefte van en de soorten meta-gegevens die voor gemakkelijkere categorisering en organisatie van activa toestaan.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b14b377e52ab10c41355f069d97508b588d82216
+source-git-commit: ce43c49f8f7d4509e414554b8f4eba368ff66e95
 workflow-type: tm+mt
 source-wordcount: '2720'
 ht-degree: 6%
@@ -120,7 +120,7 @@ De toepassingsspecifieke metagegevens bevatten technische en beschrijvende metag
 * Album - [!DNL Adobe Photoshop Album].
 * CQ - Gebruikt door [!DNL Experience Manager Assets].
 * DAM - Gebruikt door [!DNL Experience Manager Assets].
-* DEX - [Optima SC Description Explorer](https://www.optimasc.com/products/dex/index.html) is een verzameling hulpmiddelen voor metagegevens en bestandsbeheer voor Windows-besturingssystemen.
+* DEX - [Optima SC Description Explorer](http://www.optimasc.com/products/dex/index.html) is een verzameling hulpmiddelen voor metagegevens en bestandsbeheer voor Windows-besturingssystemen.
 * CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html).
 * LR - [!DNL Adobe Lightroom].
 * MediaPro - [iView MediaPro](https://en.wikipedia.org/wiki/Phase_One_Media_Pro).

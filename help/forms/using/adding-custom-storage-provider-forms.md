@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 154255e7-468a-42e6-a33d-eee691cf854d
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 615b0db6da0986d7a74c42ec0d0e14bad7ede168
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '355'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Met AEM Forms kunt u een formulier opslaan als concept. Met de conceptfunctionaliteit kunt u een formulier bijhouden dat u later vanaf elk apparaat kunt invullen en verzenden.
 
-Standaard worden de gebruikersgegevens die zijn gekoppeld aan het concept en de verzending van een formulier door AEM Forms opgeslagen in het `/content/forms/fp` knooppunt in het exemplaar Publiceren. Bovendien verlenen de AEM Forms portalcomponenten gegevensdiensten, die u kunt gebruiken om de implementatie aan te passen van het opslaan van gebruikersgegevens voor ontwerpen en voorlegging. U kunt bijvoorbeeld gebruikersgegevens opslaan in een gegevensopslag.
+Standaard slaat AEM Forms de gebruikersgegevens die zijn gekoppeld aan het concept en de verzending van een formulier op in het `/content/forms/fp` knooppunt op het exemplaar Publiceren. Daarnaast bieden de AEM Forms-portalcomponenten gegevensservices waarmee u de implementatie van het opslaan van gebruikersgegevens voor concepten en verzendingen kunt aanpassen. U kunt bijvoorbeeld gebruikersgegevens opslaan in een gegevensopslag.
 
 ## Vereisten  {#prerequisites}
 
@@ -96,6 +96,10 @@ public interface DraftDataService {
     public byte[] getAttachment (String attachmentID) throws FormsPortalException;
 }
 ```
+
+>[!NOTE]
+>
+>De minimumwaarde voor de lengte van het veld concept-id is 26 tekens. Adobe raadt u aan de lengte van de concept-id in te stellen op 26 of meer tekens.
 
 ## Verzendgegevensservice {#submission-data-service}
 
@@ -184,7 +188,7 @@ public interface SubmitDataService {
 }
 ```
 
-Forms Portal gebruikt UUID-concept (Universally Unique Identifier) om een unieke id te genereren voor elk concept en elk verzonden formulier. U kunt ook een eigen unieke id genereren. U kunt de interface FPKeyGeneratorService uitvoeren, zijn methodes met voeten treden, en een douanelogica ontwikkelen om een douane unieke identiteitskaart voor elk ontwerp en voorgelegd vorm te produceren. Ook, plaats de dienstrang van de generatie van douaneID hoger dan 0. Het zorgt ervoor dat de douaneimplementatie in plaats van de standaardimplementatie wordt gebruikt.
+Het portaal van Forms gebruikt universeel uniek herkenningsteken (UUID) concept om een unieke identiteitskaart voor elk ontwerp en voorgelegd vorm te produceren. U kunt ook een eigen unieke id genereren. U kunt de interface FPKeyGeneratorService uitvoeren, zijn methodes met voeten treden, en een douanelogica ontwikkelen om een douane unieke identiteitskaart voor elk ontwerp en voorgelegd vorm te produceren. Ook, plaats de dienstrang van de generatie van douaneID hoger dan 0. Het zorgt ervoor dat de douaneimplementatie in plaats van de standaardimplementatie wordt gebruikt.
 
 ```java
 public interface FPKeyGeneratorService {

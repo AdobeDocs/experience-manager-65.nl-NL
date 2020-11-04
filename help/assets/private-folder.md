@@ -3,9 +3,9 @@ title: Persoonlijke mappen om elementen te delen
 description: Leer hoe u een persoonlijke map maakt in [!DNL Adobe Experience Manager Assets] de toepassing en deze deelt met andere gebruikers en hoe u deze map verschillende rechten toekent.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: ce43c49f8f7d4509e414554b8f4eba368ff66e95
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '556'
 ht-degree: 0%
 
 ---
@@ -47,11 +47,11 @@ Persoonlijke map maken en delen:
 
    >[!NOTE]
    >
-   >U kunt verschillende rollen, zoals Editor, Eigenaar of Viewer, toewijzen aan de gebruiker met wie u de map deelt. Als u een rol van de Eigenaar aan de gebruiker toewijst, heeft de gebruiker de voorrechten van Redacteurs op de omslag. Bovendien kan de gebruiker de map met anderen delen. Als u een rol van de Editor toewijst, kan de gebruiker de elementen in uw persoonlijke map bewerken. Als u een viewerrol toewijst, kan de gebruiker alleen de elementen in uw persoonlijke map bekijken.
+   >U kunt verschillende rollen, zoals `Editor`, `Owner`of `Viewer` aan de gebruiker toewijzen met wie u de omslag deelt. Als u een `Owner` rol aan de gebruiker toewijst, heeft de gebruiker `Editor` voorrechten op de omslag. Bovendien kan de gebruiker de map met anderen delen. Als u een `Editor` rol toewijst, kan de gebruiker de middelen in uw privé omslag uitgeven. Als u een viewerrol toewijst, kan de gebruiker alleen de elementen in uw persoonlijke map bekijken.
 
    >[!NOTE]
    >
-   >De privé omslag heeft minstens één lid met de rol van de Eigenaar. Daarom kan de beheerder niet alle eigenaarleden uit een privé omslag verwijderen. Nochtans, om bestaande eigenaars (en beheerder zelf) uit de privé omslag te verwijderen moet de beheerder een andere gebruiker als eigenaar toevoegen.
+   >De privé omslag heeft minstens één lid met `Owner` rol. Daarom kan de beheerder niet alle eigenaarleden uit een privé omslag verwijderen. Nochtans, om de bestaande eigenaars (en beheerder zelf) uit de privé omslag te verwijderen moet de beheerder een andere gebruiker als eigenaar toevoegen.
 
 1. Klik op **[!UICONTROL Save]**. Afhankelijk van de rol die u toewijst, krijgt de gebruiker een reeks rechten toegewezen aan uw persoonlijke map wanneer de gebruiker zich aanmeldt bij [!DNL Assets].
 1. Klik **[!UICONTROL Ok]** om het bevestigingsbericht te sluiten.
@@ -59,7 +59,7 @@ Persoonlijke map maken en delen:
 
    ![chlimage_1-416](assets/chlimage_1-416.png)
 
-1. Klik op Meldingen om de lijst met meldingen te openen.
+1. Klik [!UICONTROL Notifications] om een lijst met meldingen te openen.
 
    ![Lijst van kennisgevingen](assets/Assets-Notification.png)
 
@@ -83,4 +83,4 @@ U kunt een map verwijderen door de map te selecteren en de [!UICONTROL Delete] o
 >
 >Als u een map verwijdert met de bovenstaande methode uit de gebruikersinterface, worden ook de bijbehorende gebruikersgroepen verwijderd.
 >
->Bestaande, redundante, ongebruikte en automatisch gegenereerde gebruikersgroepen kunnen echter worden opgeschoond vanuit de opslagplaats met behulp van de `clean` methode in JMX in uw auteurinstantie (`http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`).
+>De bestaande overbodige, ongebruikte en automatisch gegenereerde gebruikersgroepen kunnen echter met de `clean` methode in JMX in de auteurinstantie (`http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`) uit de opslagplaats worden verwijderd.

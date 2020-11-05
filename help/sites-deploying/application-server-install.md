@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 6fdce35d-2709-41cc-87fb-27a4b867e960
 translation-type: tm+mt
-source-git-commit: 316e53720071da41cc4ac5ae62c280ad3804a8f4
+source-git-commit: 0a082d3cff66b82ef6de551a735a16a001446a1e
 workflow-type: tm+mt
 source-wordcount: '1175'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 >`JAR` en `WAR` zijn de bestandstypen waarin AEM wordt vrijgegeven. Deze formaten ondergaan kwaliteitsgarantie om de steunniveaus aan te passen Adobe heeft toegezegd.
 
 
-Deze sectie vertelt u hoe te om Adobe Experience Manager (AEM) met een toepassingsserver te installeren. Raadpleeg de sectie [Ondersteunde Platforms](/help/sites-deploying/technical-requirements.md#servlet-engines-application-servers) voor de specifieke supportniveaus voor de afzonderlijke toepassingsservers.
+In deze sectie wordt uitgelegd hoe u Adobe Experience Manager (AEM) kunt installeren met een toepassingsserver. Raadpleeg de sectie [Ondersteunde Platforms](/help/sites-deploying/technical-requirements.md#servlet-engines-application-servers) voor de specifieke supportniveaus voor de afzonderlijke toepassingsservers.
 
 De installatiestappen van de volgende toepassingsservers worden beschreven:
 
@@ -38,7 +38,7 @@ Raadpleeg de documentatie bij de toepassingsserver voor meer informatie over het
 
 >[!NOTE]
 >
->Als u Dynamic Media in een plaatsing van WAR gebruikt, gelieve de [dynamische media documentatie](/help/assets/config-dynamic.md#enabling-dynamic-media)te zien.
+>Als u Dynamic Media gebruikt in een WAR-implementatie, raadpleegt u de documentatie over [dynamische media](/help/assets/config-dynamic.md#enabling-dynamic-media).
 
 ## Algemene beschrijving {#general-description}
 
@@ -136,7 +136,7 @@ Geheugenargumenten in uw conf-bestand instellen (bijvoorbeeld `standalone.conf`)
 
 * JAVA_OPTS=&quot;-Xms64m -Xmx2048m&quot;
 
-als u de plaatsing-scanner voor gebruikt om de AEM Webtoepassing te installeren, zou het goed kunnen zijn om de `deployment-timeout,` voor die reeks een `deployment-tiimeout` attribuut in het xml- dossier van uw instantie (b.v. `configuration/standalone.xml)`:
+als u de plaatsing-scanner voor gebruikt om de AEM Webtoepassing te installeren, zou het goed kunnen zijn om de `deployment-timeout,` voor die reeks een `deployment-timeout` attribuut in het xml- dossier van uw instantie (b.v. `configuration/standalone.xml)`:
 
 ```xml
 <subsystem xmlns="urn:jboss:domain:deployment-scanner:1.1">

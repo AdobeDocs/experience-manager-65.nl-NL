@@ -4,9 +4,9 @@ description: De nota's van de versie specifiek voor [!DNL Adobe Experience Manag
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 2e56a44fce08bc127a7ec920d2cb985ce2842bbc
+source-git-commit: b23b66e9d57742f6771bc4b26753a47b334e06bc
 workflow-type: tm+mt
-source-wordcount: '4339'
+source-wordcount: '4362'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,10 @@ ht-degree: 0%
 Adobe Experience Manager 6.5.6.0 is een belangrijke update die nieuwe eigenschappen, zeer belangrijke klant gevraagde verhogingen, en prestaties, stabiliteit, en veiligheidsverbeteringen omvat, die sinds de algemene beschikbaarheid van 6.5 versie in **april 2019** worden vrijgegeven. Deze kan boven op Adobe Experience Manager 6.5 worden geïnstalleerd.
 
 De belangrijkste functies en verbeteringen die in Adobe Experience Manager 6.5.6.0 zijn geïntroduceerd, zijn:
+
+* Publiceer selectief middelen aan of [!DNL Experience Manager] of [!DNL Dynamic Media] gebruikend [!UICONTROL Quick Publish] of [!UICONTROL Manage Publication] tovenaar of unpublish.
+
+* Gebruik de [!DNL Dynamic Media] gebruikersinterface om inhoud in de cache van CDN (Content Delivery Network) ongeldig te maken.
 
 * Het publiceren van de mappen voor middelenbijdragen van Brand Portal naar Experience Manager Assets wordt nu ook ondersteund via proxyserver.
 

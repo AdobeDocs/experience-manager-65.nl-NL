@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 492730a1-b29c-42db-ba6b-8a48cf8ce0f2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 648b9601445a46b6a2734d5a47545c0439b9c283
+source-git-commit: ee527712b4d7f6ebf9ef2996de1405f6f9c3d335
 workflow-type: tm+mt
 source-wordcount: '5611'
 ht-degree: 6%
@@ -73,7 +73,7 @@ Zie [Installeren van functiepak 18912 voor bulkassemigratie](/help/assets/bulk-i
 
 ## Dynamische mediaconfiguratie maken in Cloud Services {#configuring-dynamic-media-cloud-services}
 
-**Voordat u dynamische media** configureert: Nadat u uw provisioning-e-mail met Dynamic Media-referenties hebt ontvangen, moet u zich [aanmelden](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) bij Dynamic Media Classic om uw wachtwoord te wijzigen. Het wachtwoord dat in de e-mailprovisioning wordt ingevoerd, wordt door het systeem gegenereerd en is alleen bedoeld als tijdelijk wachtwoord. Het is belangrijk dat u het wachtwoord bijwerkt zodat Dynamic Media Cloud Service is ingesteld met de juiste referenties.
+**Voordat u Dynamische media** configureert - Nadat u uw instelgegevens via e-mail met dynamische media hebt ontvangen, moet u zich [aanmelden](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) bij Dynamic Media Classic om uw wachtwoord te wijzigen. Het wachtwoord dat in de e-mailprovisioning wordt ingevoerd, wordt door het systeem gegenereerd en is alleen bedoeld als tijdelijk wachtwoord. Het is belangrijk dat u het wachtwoord bijwerkt zodat Dynamic Media Cloud Service is ingesteld met de juiste referenties.
 
 ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 

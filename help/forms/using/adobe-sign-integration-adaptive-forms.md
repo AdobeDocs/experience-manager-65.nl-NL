@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: 1f28b257-5419-4a21-a54a-b20bf35530ac
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
+source-git-commit: f0038c1f88ea0047cbaae4fe49456a665aa67f10
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '974'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,10 @@ Voer de volgende stappen uit om Adobe Sign met AEM Forms in de Author-instantie 
 
    >[!NOTE]
    >
-   >Zorg ervoor dat de URL van de configuratiepagina voor cloudservices begint met **HTTPS**. Als dat niet het geval is, [schakelt u SSL](/help/sites-administering/ssl-by-default.md) voor de AEM Forms-server in.
+   >U kunt de stappen 1 tot en met 4 uitvoeren om een nieuwe configuratiecontainer te maken en een Adobe Sign-configuratie in de container te maken of de bestaande `global` map gebruiken in de **Tools** ![hammer](assets/hammer.png) > **Cloud Services** > **Adobe Sign**. Als u de configuratie maakt in de nieuwe configuratiecontainer, moet u de naam van de container in het **[!UICONTROL Configuration Container]** veld opgeven wanneer u een adaptief formulier maakt.
+
+   >[!NOTE]
+   Zorg ervoor dat de URL van de configuratiepagina voor cloudservices begint met **HTTPS**. Als dat niet het geval is, [schakelt u SSL](/help/sites-administering/ssl-by-default.md) voor de AEM Forms-server in.
 
 1. Tik op de configuratiepagina **[!UICONTROL Create]** om Adobe Sign-configuratie te maken in AEM Forms.
 1. Geef op het **[!UICONTROL General]** tabblad van de **[!UICONTROL Create Adobe Sign Configuration]** pagina een **naam** op voor de configuratie en tik op **Volgende**. U kunt desgewenst een titel opgeven en naar een miniatuur voor de configuratie bladeren.

@@ -8,9 +8,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: b4b500cc80c6d498baaabe3a6863a3843b904f9b
+source-git-commit: 5a3045b89ba6bb32482926ea8d2c5533e5394d9a
 workflow-type: tm+mt
-source-wordcount: '2034'
+source-wordcount: '1765'
 ht-degree: 0%
 
 ---
@@ -193,34 +193,6 @@ Tijdens de eerste overgang bereiken de afbeeldingen in de cache rechtstreeks de 
 Niet alle afbeeldingen worden geconverteerd. Smart Imaging bepaalt of de conversie nodig is om de prestaties te verbeteren. In sommige gevallen waarin er geen verwachte prestatieverhoging is of de indeling geen JPEG of PNG is, wordt de afbeelding niet geconverteerd.
 
 ![image2017-11-14_15398](assets/image2017-11-14_15398.png)
-
-## Hoe ken ik de prestatiewinst? Is er een manier om de voordelen van Smart Imaging te noteren? {#performance-gain}
-
-**Informatie over de koppen voor slimme afbeeldingen**
-
-De headerwaarden voor Smart Imaging werken alleen wanneer aanvragen die geen cache zijn, vanaf nu worden uitgevoerd. Dit wordt gedaan om het huidige geheime voorgeheugen compatibel te houden en de behoefte van berekening te vermijden wanneer de beelden door middel van het geheime voorgeheugen worden gediend.
-
-Als u Smart Imaging Headers wilt gebruiken, moet u de`cache=off`bepaling in uw verzoeken toevoegen. Zie de[cache in de Dynamic Media Image Serving and Rendering API](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-cache.html).
-
-Voorbeeld van gebruik `cache=off` (alleen ter illustratie):
-
-`https://domain.scene7.com/is/image/companyName/imageName?cache=off` 
-
-Nadat u een dergelijk verzoek gebruikt, kunt u in de sectie van de Kopballen van de Reactie, `-x-adobe-smart-imaging` kopbal zien. Zie de volgende schermafbeelding met `-x-adobe-smart-imaging` markering.
-
-![smart-imaging-header](/help/assets/assets-dm/smart-imaging-header2.png) 
-
-Deze headerwaarde geeft het volgende aan:
-
-* Smart Imaging werkt voor het bedrijf.
-* Positieve waarde (>=0) geeft aan dat de conversie is gelukt. In dit geval wordt een nieuwe afbeelding (webP hier) geretourneerd.
-* Negatieve waarde (&lt;0) geeft aan dat de conversie is mislukt. In dit geval wordt de oorspronkelijke opgevraagde afbeelding geretourneerd (standaard JPEG, indien niet opgegeven).
-* De waarde geeft het verschil in bytes aan tussen de gevraagde afbeelding en de nieuwe afbeelding. In dit geval zijn de opgeslagen bytes 75048, wat ongeveer 75 kB is voor één afbeelding. 
-   * De negatieve waarde geeft aan dat de gevraagde afbeelding kleiner is dan de nieuwe afbeelding. We tonen wel het verschil in negatieve grootte, maar de weergegeven afbeelding is alleen de oorspronkelijke gevraagde afbeelding
-
-**Wanneer gebruikt u de Smart Imaging Headers?**
-
-De Smart Imaging Response Headers zijn ingeschakeld voor foutopsporingsdoeleinden of terwijl de voordelen van alleen Smart Imaging worden gemarkeerd. Het gebruik`cache=off`in normale scenario&#39;s kan belastingstijden beduidend beïnvloeden.
 
 ## Kan Smart Imaging voor een aanvraag worden uitgeschakeld? {#turning-off-smart-imaging}
 

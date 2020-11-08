@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: f0038c1f88ea0047cbaae4fe49456a665aa67f10
 workflow-type: tm+mt
-source-wordcount: '3784'
+source-wordcount: '3822'
 ht-degree: 0%
 
 ---
@@ -76,6 +76,10 @@ Voer de volgende stappen uit om een adaptief formulier te maken dat geschikt is 
    1. Geef de **naam** en de **titel** op voor het adaptieve formulier.
 
    1. Selecteer de [configuratiecontainer](../../forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) die u hebt gemaakt tijdens het configureren van Adobe Sign met AEM Forms.
+
+      >[!NOTE]
+      >
+      >De **[!UICONTROL Adobe Sign Cloud Service]** dropdown lijst toont de wolkendiensten die in de configuratiecontainer worden gevormd die u op dit gebied selecteert. De **[!UICONTROL Adobe Sign Cloud Service]** vervolgkeuzelijst is beschikbaar in het **[!UICONTROL Electronic Signature]** gedeelte van de adaptieve formuliereigenschappen wanneer u de **[!UICONTROL Enable Adobe Sign]** optie selecteert.
 
 1. In the **[!UICONTROL Form Model]** tab, select one of the following options:
 

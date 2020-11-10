@@ -3,9 +3,9 @@ title: Samengestelde elementen beheren met verwijzingen en meerdere pagina's
 description: Leer hoe u verwijzingen naar digitale elementen maakt vanuit [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop]de toepassing zelf. Met de functie Paginaviewer kunt u afzonderlijke subelementpagina's van bestanden met meerdere pagina's weergeven, zoals PDF-, INDD-, PPT-, PPTX- en AI-bestanden.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '1298'
+source-wordcount: '1286'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Verwijzingen worden opgelost op basis van pad, document-id en instantie-id van d
 
 U kunt vanuit een [!DNL Adobe Illustrator] bestand verwijzen naar bestaande digitale elementen.
 
-1. Haal de digitale middelen op het lokale bestandssysteem op met de [Experience Manager-bureaubladtoepassing](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html). Navigeer naar de bestandssysteemlocatie van het element waarnaar u wilt verwijzen.
+1. Haal de digitale middelen op het lokale bestandssysteem op met de [[!DNL Experience Manager] bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html). Navigeer naar de bestandssysteemlocatie van het element waarnaar u wilt verwijzen.
 1. Sleep het element van de lokale map naar het [!DNL Illustrator] bestand.
 
 1. Sla het [!DNL Illustrator] bestand op het gekoppelde station op of [upload](/help/assets/manage-assets.md#uploading-assets) het bestand naar de [!DNL Experience Manager] opslagplaats.
@@ -68,7 +68,7 @@ Deze procedure is vergelijkbaar met het [toevoegen van digitale elementen als ve
 
 ## Digitale elementen toevoegen als verwijzingen in [!DNL Adobe Photoshop] {#refps}
 
-1. Gebruik [!DNL Experience Manager] bureaubladtoepassing voor toegang [!DNL Experience Manager Assets]. Download en open de middelen op het lokale bestandssysteem. Gebruik de [!UICONTROL Place Linked] functionaliteit in [!DNL Adobe Photoshop]. Zie Elementen [plaatsen in de bureaubladtoepassing](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#place-assets-in-native-documents).
+1. Gebruik [!DNL Experience Manager] bureaubladtoepassing voor toegang [!DNL Experience Manager Assets]. Download en open de middelen op het lokale bestandssysteem. Gebruik de [!UICONTROL Place Linked] functionaliteit in [!DNL Adobe Photoshop]. Zie Elementen [plaatsen in de bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#place-assets-in-native-documents).
 
    ![chlimage_1-87](assets/chlimage_1-261.png)
 
@@ -119,7 +119,7 @@ U kunt bijvoorbeeld pagina&#39;s uitnemen met [!DNL InDesign]behulp van [!DNL In
 
 De volgende opties zijn beschikbaar in de werkbalk, in de linkerrails en in de besturingselementen voor de Paginaviewer:
 
-* **[!UICONTROL Desktop Actions]** om een specifiek submiddel te openen of weer te geven met de [!DNL Experience Manager] bureaubladtoepassing. Zie hoe u bureaubladhandelingen [kunt](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2) configureren als u [!DNL Experience Manager] bureaubladtoepassing gebruikt.
+* **[!UICONTROL Desktop Actions]** om een specifiek submiddel te openen of weer te geven met de [!DNL Experience Manager] bureaubladtoepassing. Zie hoe u bureaubladhandelingen [kunt](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2) configureren als u [!DNL Experience Manager] bureaubladtoepassing gebruikt.
 
 * **[!UICONTROL Properties]** Hiermee opent u de [!UICONTROL Properties] pagina van het specifieke subelement.
 
@@ -135,8 +135,8 @@ De volgende opties zijn beschikbaar in de werkbalk, in de linkerrails en in de b
 
 >[!MORELIKETHIS]
 >
->* [Adobe Experience Manager-bureaubladtoepassing gebruiken](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)
->* [Bureaubladhandelingen configureren in Adobe Experience Manager](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2)
+>* [Adobe Experience Manager-bureaubladtoepassing gebruiken](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
+>* [Bureaubladhandelingen configureren in Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2)
 >* [Gekoppelde slimme objecten maken in Adobe Photoshop](https://helpx.adobe.com/photoshop/using/create-smart-objects.html#create-linked-smart-objects)
 >* [Afbeeldingen plaatsen in Adobe InDesign](https://helpx.adobe.com/indesign/using/placing-graphics.html)
 

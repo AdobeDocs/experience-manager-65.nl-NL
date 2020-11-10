@@ -3,10 +3,10 @@ title: Elementen [!DNL Adobe Stock] beheren
 description: Zoek, haal, vergunning, en [!DNL Adobe Stock] beheer activa van binnen [!DNL Adobe Experience Manager]. Gebruik de in licentie gegeven activa als elk ander digitaal actief.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '1047'
-ht-degree: 2%
+source-wordcount: '1016'
+ht-degree: 3%
 
 ---
 
@@ -19,7 +19,7 @@ Organisaties kunnen hun [!DNL Adobe Stock] ondernemingsplan integreren [!DNL Exp
 
 ## Vereisten {#prerequisites}
 
-Voor de integratie is een Adobe Stock- [ondernemingsplan](https://stockenterprise.adobe.com/)vereist.
+De integratie vereist een [ [!DNL Adobe Stock] ondernemingsplan](https://stockenterprise.adobe.com/).
 
 ## Integreer [!DNL Experience Manager] en [!DNL Adobe Stock] {#integrate-aem-and-adobe-stock}
 
@@ -52,7 +52,7 @@ Om communicatie tussen [!DNL Experience Manager] en [!DNL Adobe Stock]toe te sta
 
 >[!NOTE]
 >
->Als er meerdere [!DNL Adobe Stock] configuraties zijn, selecteert u de gewenste configuratie in het deelvenster Gebruikersvoorkeuren. Als u het deelvenster vanaf de startpagina van de Experience Manager wilt openen, klikt u op het gebruikerspictogram en vervolgens op **[!UICONTROL User Preferences]** > **[!UICONTROL Stock Configuration]**).
+>Als er meerdere [!DNL Adobe Stock] configuraties zijn, selecteert u de gewenste configuratie in [!UICONTROL User Preferences] het deelvenster. Als u het deelvenster vanaf de [!DNL Experience Manager] startpagina wilt openen, klikt u op het gebruikerspictogram en vervolgens op **[!UICONTROL User Preferences]** > **[!UICONTROL Stock Configuration]**.
 
 ## [!DNL Adobe Stock] Elementen gebruiken en beheren in [!DNL Experience Manager] {#usemanage}
 
@@ -60,9 +60,9 @@ Met deze mogelijkheid kunnen organisaties hun gebruikers toestaan te werken met 
 
 Als een [!DNL Adobe Stock] [!DNL Experience Manager]actief eenmaal in licentie is gegeven, kan het worden gebruikt en beheerd als een typisch actief. De gebruikers kunnen bovendien de elementen zoeken en voorvertonen. [!DNL Experience Manager]de elementen kopiëren en publiceren; delen van de activa op [!DNL Brand Portal]; toegang tot en gebruik de middelen via [!DNL Experience Manager] bureaubladtoepassing; enzovoort.
 
-![Zoeken naar Adobe Stock-middelen en filterresultaten vanuit uw Adobe Experience Manager-werkruimte](assets/adobe-stock-search-results-workspace.png)
+![Zoeken naar [!DNL Adobe Stock] elementen en filterresultaten vanuit uw [!DNL Adobe Experience Manager] werkruimte](assets/adobe-stock-search-results-workspace.png)
 
-*Afbeelding: Zoek naar[!DNL Adobe Stock]activa en filterresultaten van uw[!DNL Experience Manager]interface.*
+*Afbeelding: Zoek naar [!DNL Adobe Stock] activa en filterresultaten van uw [!DNL Experience Manager] interface.*
 
 **A.** Zoek elementen die vergelijkbaar zijn met de elementen waarvan de id is opgegeven. [!DNL Adobe Stock] **B.** Zoek naar assets die overeenkomen met de vorm of afdrukstand die u hebt geselecteerd. **C.** Zoek naar één van meer gesteunde activa types **D.** Open of vouwt het venster Filters **E.** Licentie toewijzen en het geselecteerde element opslaan in [!DNL Experience Manager] **F.** Sla het element op in [!DNL Experience Manager] combinatie met watermerk **G.** Verken elementen op [!DNL Adobe Stock] websites die lijken op de geselecteerde elementen **H.** Bekijk de geselecteerde middelen op [!DNL Adobe Stock] website **I.** Aantal geselecteerde elementen uit de zoekresultaten **J.** Schakelen tussen de kaartweergave en de lijstweergave
 
@@ -80,9 +80,9 @@ U kunt ook `Location: Adobe Stock` [!DNL Adobe Stock] in de zoekbalk typen om el
 >
 >Assets searched from [!DNL Adobe Stock] are just displayed in [!DNL Experience Manager]. [!DNL Adobe Stock] elementen worden pas opgehaald en opgeslagen in de [!DNL Experience Manager] opslagplaats nadat een gebruiker een middel [of](/help/assets/aem-assets-adobe-stock.md#saveassets) licenties heeft [opgeslagen en een middel](/help/assets/aem-assets-adobe-stock.md#licenseassets)heeft opgeslagen. Assets that are already stored in [!DNL Experience Manager] are displayed and highlighted for ease of reference and access. Also, the [!DNL Stock] assets are saved with some additional metadata to indicate the source as [!DNL Stock].
 
-![Zoekfilters in Experience Manager en gemarkeerde Adobe Stock-elementen in zoekresultaten](assets/aem-search-filters2.jpg)
+![Zoekfilters in [!DNL Experience Manager] en gemarkeerde [!DNL Adobe Stock] elementen in zoekresultaten](assets/aem-search-filters2.jpg)
 
-*Afbeelding: Zoekfilters in[!DNL Experience Manager]en gemarkeerde[!DNL Adobe Stock]elementen in zoekresultaten.*
+*Afbeelding: Zoekfilters in [!DNL Experience Manager] en gemarkeerde [!DNL Adobe Stock] elementen in zoekresultaten.*
 
 ### De vereiste elementen opslaan en weergeven {#saveassets}
 
@@ -98,9 +98,9 @@ De volgende keer dat u naar elementen zoekt, worden de opgeslagen elementen gema
 
 Gebruikers kunnen [!DNL Adobe Stock] middelen in licentie geven met behulp van het quotum van hun [!DNL Adobe Stock] ondernemingsplan. Wanneer u een licentie voor een element aanschaft, wordt het zonder watermerk opgeslagen en kunt u het zoeken en gebruiken in [!DNL Experience Manager Assets].
 
-![Dialoogvenster voor het in licentie geven en opslaan van Adobe Stock-middelen in Experience Manager Assets](assets/aem-stock_licenseandsave.jpg)
+![Dialoogvenster om [!DNL Adobe Stock] middelen te licentiëren en op te slaan in [!DNL Experience Manager Assets]](assets/aem-stock_licenseandsave.jpg)
 
-*Afbeelding: Dialoogvenster voor het in licentie geven en opslaan van[!DNL Adobe Stock]middelen in[!DNL Experience Manager Assets].*
+*Afbeelding: Dialoogvenster voor het in licentie geven en opslaan van [!DNL Adobe Stock] middelen in [!DNL Experience Manager Assets].*
 
 ### Metagegevens en elementen openen {#access-metadata-and-asset-properties}
 
@@ -122,7 +122,7 @@ Gebruikers kunnen de eigenschappen van zowel gelicentieerde als niet-gelicentiee
 
 >[!MORELIKETHIS]
 >
->* [Videozelfstudie over het gebruik van Adobe Stock-elementen met Experience Manager Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
->* [Adobe Stock Enterprise Plan Help](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
->* [Veelgestelde vragen over Adobe Stock](https://helpx.adobe.com/stock/faq.html)
+>* [Videozelfstudie over het [!DNL Adobe Stock] gebruik van middelen met [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
+>* [[!DNL Adobe Stock] Help bij bedrijfsplan](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
+>* [[!DNL Adobe Stock] Veelgestelde vragen](https://helpx.adobe.com/stock/faq.html)
 

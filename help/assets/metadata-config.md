@@ -3,9 +3,9 @@ title: Configuratie en beheer van metagegevensfunctionaliteit.
 description: Configuratie- en [!DNL Experience Manager Assets] beheersfuncties met betrekking tot het toevoegen en beheren van metagegevens.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d5a48be283484005013ef3ed7ad015b43f6398b
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '1798'
+source-wordcount: '1796'
 ht-degree: 4%
 
 ---
@@ -270,7 +270,7 @@ Voer waarden voor metagegevens in de verschillende velden in en klik **[!UICONTR
 >
 >* [Metagegevensconcepten en begrip](metadata-concepts.md).
 >* [Eigenschappen van metagegevens van meerdere verzamelingen](manage-collections.md#editing-collection-metadata-in-bulk)bewerken.
->* [Metagegevens importeren en exporteren in Experience Manager Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html).
+>* [Metagegevens importeren en exporteren in Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html).
 >* [Profielen voor het verwerken van metagegevens, afbeeldingen en video](processing-profiles.md)&#39;s.
 >* [Aanbevolen procedures voor het ordenen van uw digitale elementen voor het gebruik van verwerkingsprofielen](/help/assets/organize-assets.md).
 >* [XMP terugschrijven](/help/assets/xmp-writeback.md).

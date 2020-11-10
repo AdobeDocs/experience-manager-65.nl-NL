@@ -3,9 +3,9 @@ title: Elementen in- en uitchecken voor bewerking
 description: Leer hoe u middelen kunt uitchecken voor bewerking en ze weer kunt inchecken nadat de wijzigingen zijn voltooid.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 117208c634613559bb13556e12f094add70006e2
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '424'
 ht-degree: 1%
 
 ---
@@ -63,6 +63,6 @@ Beheerders kunnen elementen inchecken die door andere gebruikers zijn uitgecheck
 
 >[!MORELIKETHIS]
 >
->* [Inchecken en uitchecken in Experience Manager desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#how-app-works2)
->* [Videozelfstudie voor meer informatie over het in- en uitchecken van middelen](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/collaboration/check-in-and-check-out.html)
+>* [Inchecken en uitchecken in Experience Manager desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#how-app-works2)
+>* [Videozelfstudie voor meer informatie over het in- en uitchecken van middelen](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/collaboration/check-in-and-check-out.html)
 

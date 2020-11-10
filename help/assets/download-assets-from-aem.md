@@ -3,9 +3,9 @@ title: Elementen downloaden
 description: Leer hoe u elementen kunt downloaden [!DNL Adobe Experience Manager] en de downloadfunctionaliteit kunt in- of uitschakelen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ce43c49f8f7d4509e414554b8f4eba368ff66e95
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '827'
 ht-degree: 1%
 
 ---
@@ -67,14 +67,14 @@ Om het downloaden van activa van uw DAM toe te staan, bijvoorbeeld wanneer het g
 
 De functie `Asset Download Servlet` kan worden uitgeschakeld in een [!DNL Experience Manager] publicatie-instantie door de configuratie van de verzender bij te werken om aanvragen voor het downloaden van middelen te blokkeren. servlet kan ook manueel via de console OSGi direct worden onbruikbaar gemaakt.
 
-1. Om activa te blokkeren downloadt verzoeken via een verzenderconfiguratie, geef de `dispatcher.any` configuratie uit en voeg een regel aan de [filtersectie](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter)toe. `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
+1. Om activa te blokkeren downloadt verzoeken via een verzenderconfiguratie, geef de `dispatcher.any` configuratie uit en voeg een regel aan de [filtersectie](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter)toe. `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
 1. Om de component OSGi op een Publish instantie onbruikbaar te maken, heb toegang tot de Console OSGi bij `http://[aem_server]:[port]/system/console/components`. Zoek `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet` en klik op **[!UICONTROL Disable]**.
 
 >[!MORELIKETHIS]
 >
->* [Elementen downloaden met Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/download/brand-portal-download-assets.html)
+>* [Elementen downloaden met Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html)
 >* [Met DRM beveiligde middelen](drm.md)downloaden.
->* [Download middelen via de Experience Manager desktop app op Win- of Mac-bureaublad](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#download-assets).
+>* [Download middelen via de Experience Manager desktop app op Win- of Mac-bureaublad](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets).
 >* [Download Adobe Assets Link vanuit de ondersteunde Adobe Creative Cloud-apps](https://helpx.adobe.com/nl/enterprise/using/manage-assets-using-adobe-asset-link.html).
 

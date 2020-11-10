@@ -11,9 +11,9 @@ topic-tags: integration
 discoiquuid: 3b9285db-8fba-4d12-8f52-41daa50a5403
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d12ebf77d2af389e0a3aea5c7f311c828ecd7c17
+source-git-commit: 26efba567985dcb89b2610935cab18943b7034b3
 workflow-type: tm+mt
-source-wordcount: '1301'
+source-wordcount: '1335'
 ht-degree: 0%
 
 ---
@@ -231,6 +231,17 @@ Er kan nu naar de configuratie worden verwezen, zodat een Cloud Service de stand
 
    * **Verificatie**: IMS
    * **ID** huurder: de Adobe IMS Tenant ID
+
+      >[!NOTE]
+      >
+      >Voor IMS moet deze waarde van Target zelf worden genomen. U kunt zich aanmelden bij Target en de Tenant-id uit de URL extraheren.
+      >
+      >Als de URL bijvoorbeeld:
+      >
+      >`https://experience.adobe.com/#/@yourtenantid/target/activities`
+      >
+      >Dan zou je gebruiken `yourtenantid`.
+
    * **IMS-configuratie**: Selecteer de naam van de IMS-configuratie
    * **API-type**: REST
    * **A4T Analytics Cloud-configuratie**: Selecteer de de wolkenconfiguratie van de Analyse die voor de doelstellingen en metriek van de doelactiviteit wordt gebruikt. Dit is nodig als u Adobe Analytics als rapportagebron gebruikt wanneer u inhoud als doel instelt. Als u uw wolkenconfiguratie niet ziet, zie nota in het [Vormen van de Configuratie](/help/sites-administering/target-configuring.md#configuring-a-t-analytics-cloud-configuration)van A4T Analytics Cloud.

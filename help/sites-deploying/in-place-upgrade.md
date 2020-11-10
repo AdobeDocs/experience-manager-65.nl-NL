@@ -11,7 +11,7 @@ topic-tags: upgrading
 discoiquuid: fcb17227-ff1f-4b47-ae94-6b7f60923876
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1718aac3d39662fb35336a4db3e3403641f9529a
+source-git-commit: b8a532f45f531f36e04ff4b5f0cc2c9e729668bb
 workflow-type: tm+mt
 source-wordcount: '1275'
 ht-degree: 0%
@@ -168,7 +168,7 @@ Waar `/path/to/datastore` staat het pad naar de datastore van het bestand.
 
 1. Verwijder om het even welke potten onder `crx-quickstart/install` verbonden aan een vroegere versie van de S3 schakelaar.
 
-1. Download de nieuwste release van de 1.8.x S3-connector van [https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/)
+1. Download de nieuwste release van de 1.10.x S3-connector van [https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/)
 
 1. Extraheer het pakket naar een tijdelijke map en kopieer de inhoud van `jcr_root/libs/system/install` het pakket naar de `crx-quickstart/install` map.
 

@@ -3,9 +3,9 @@ title: Asset tagging configureren met behulp van Smart Content Service
 description: Leer hoe u slimme tags en verbeterde slimme tags kunt configureren in [!DNL Adobe Experience Manager]de Smart Content Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1fa79a49ce3590fcba63e6e7d1a63586650251d2
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '1925'
+source-wordcount: '1916'
 ht-degree: 23%
 
 ---
@@ -23,7 +23,7 @@ Controleer het volgende voordat u de Smart Content Service gebruikt:
    <!-- TBD: This link will update soon after the new articles goes live on docs.adobe.com. Change it when new URL is available.
   -->
 
-* Installeer het nieuwste servicepakket voor [Experience Managers](https://docs.adobe.com/content/help/en/experience-manager-release-information/aem-release-updates/aem-releases-updates.html).
+* Installeer het nieuwste servicepakket voor [Experience Managers](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html).
 
 ## Integreren met Adobe Developer Console {#integrate-adobe-io}
 
@@ -281,12 +281,12 @@ Om te controleren of de Slimme Dienst van de Inhoud op uw markeringen in de trai
 
    * Kan subtiele verschillen in afbeeldingen niet herkennen. Bijvoorbeeld dunne en standaard gemonteerde hemden.
    * Kan geen tags identificeren op basis van kleine patronen/delen van een afbeelding. Bijvoorbeeld logo&#39;s op T-shirts.
-   * Tags worden ondersteund in de landinstellingen die worden ondersteund in. [!DNL Experience Manager] Zie Opmerkingen bij de release [Smart Content Services voor een lijst met talen](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/smart-content-service-release-notes.html).
+   * Tags worden ondersteund in de landinstellingen die worden ondersteund in. [!DNL Experience Manager] Zie Opmerkingen bij de release [Smart Content Services voor een lijst met talen](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html).
 
 * Als u wilt zoeken naar elementen met slimme tags (normaal of uitgebreid), gebruikt u de optie [!DNL Assets] Zoeken (full-text zoeken). Er is geen afzonderlijke zoekvoorspelling voor slimme tags.
 
 >[!MORELIKETHIS]
 >
 >* [Overzicht van slimme tags en hoe deze kunnen worden getraind](enhanced-smart-tags.md)
->* [Videozelfstudie over het configureren van slimme tags](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/smart-tags-technical-video-setup.html)
+>* [Videozelfstudie over slimme tags](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
 

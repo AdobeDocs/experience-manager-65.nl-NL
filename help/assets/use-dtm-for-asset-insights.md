@@ -3,9 +3,9 @@ title: Asset Insights inschakelen via DTM
 description: Leer hoe u DTM (Adobe Dynamic Tag Management) gebruikt om Asset Insights in te schakelen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d13381d961f7663366b041168da369c0b01c9336
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '610'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Adobe Dynamisch tagbeheer is een programma waarmee u uw digitale marketingtools 
 
 >[!CAUTION]
 >
->Adobe DTM is afgekeurd ten gunste van Adobe Experience Platform Launch en zal binnenkort [aflopen](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). Adobe raadt u aan Launch te [gebruiken voor inzicht in elementen](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html).
+>Adobe DTM is afgekeurd ten gunste van [!DNL Adobe Experience Platform Launch] en zal binnenkort [aflopen](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). Adobe raadt u aan [ [!DNL Launch] gebruik te maken van asset-inzichten](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html).
 
 Voer deze stappen uit om Asset Insights in te schakelen via DTM.
 
@@ -31,7 +31,7 @@ Voer deze stappen uit om Asset Insights in te schakelen via DTM.
 
    * Selecteer het **[!UICONTROL Web Properties]** tabblad en klik op **[!UICONTROL Add Property]**.
 
-   * Werk de velden naar wens bij en klik op **[!UICONTROL Create Property]**. Zie [documentatie](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html).
+   * Werk de velden naar wens bij en klik op **[!UICONTROL Create Property]**. Zie [documentatie](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html).
 
    ![Webeigenschap bewerken maken](assets/Create-edit-web-property.png)
 

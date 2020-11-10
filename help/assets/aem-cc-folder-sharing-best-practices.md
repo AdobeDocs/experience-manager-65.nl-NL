@@ -3,9 +3,9 @@ title: Mappen delen [!DNL Adobe Creative Cloud] volgens aanbevolen procedures
 description: Configureer [!DNL Adobe Experience Manager] to allow users in [!DNL Experience Manager Assets] om mappen uit te wisselen met gebruikers van Adobe Creative Cloud (CC).
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '952'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->De functie [!DNL Experience Manager] voor delen naar [!DNL Creative Cloud] map is afgekeurd. Adobe raadt u ten zeerste aan om nieuwere mogelijkheden te gebruiken, zoals [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) of [Experience Manager desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html). Leer meer in [Experience Manager en Creative Cloud integratie beste praktijken](/help/assets/aem-cc-integration-best-practices.md).
+>De functie [!DNL Experience Manager] voor delen naar [!DNL Creative Cloud] map is afgekeurd. Adobe raadt u ten zeerste aan om nieuwere mogelijkheden te gebruiken, zoals [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) of [Experience Manager desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html). Leer meer in [Experience Manager en Creative Cloud integratie beste praktijken](/help/assets/aem-cc-integration-best-practices.md).
 
 [!DNL Adobe Experience Manager] Kan zo worden geconfigureerd dat gebruikers in [!DNL Assets] de app mappen kunnen delen met de gebruikers van [!DNL Adobe Creative Cloud] apps, zodat ze beschikbaar zijn als gedeelde mappen in de [!DNL Adobe Creative Cloud] services assets. De functie kan worden gebruikt om bestanden uit te wisselen tussen creatieve teams en [!DNL Assets] gebruikers, vooral wanneer creatieve gebruikers geen toegang hebben tot de [!DNL Assets] implementatie (ze bevinden zich niet op het bedrijfsnetwerk).
 
@@ -39,7 +39,7 @@ Het volgende diagram geeft een overzicht van de integratie.
 De integratie omvat de volgende elementen:
 
 * **[!DNL Experience Manager Assets]** opgesteld in het ondernemingsnetwerk (beheerde diensten of op-gebouw): Hier wordt het delen van mappen gestart.
-* **[!DNL Adobe Marketing Cloud Assets]kernservice**: Handelt als tussenpersoon tussen [!DNL Experience Manager] en [!DNL Creative Cloud] opslagdiensten. Een beheerder van een organisatie die de integratie gebruikt moet vertrouwensrelatie tussen de organisatie van de Marketing Cloud en de [!DNL Assets] plaatsing vestigen. Zij [bepalen ook een lijst van erkende medewerkers](https://docs.adobe.com/content/help/en/core-services/interface/assets/t-admin-add-cc-user.html)van Creative Cloud, die de [!DNL Assets] gebruikers omslagen voor extra veiligheid kunnen delen.
+* **[!DNL Adobe Marketing Cloud Assets]kernservice**: Handelt als tussenpersoon tussen [!DNL Experience Manager] en [!DNL Creative Cloud] opslagdiensten. Een beheerder van een organisatie die de integratie gebruikt moet vertrouwensrelatie tussen de organisatie van de Marketing Cloud en de [!DNL Assets] plaatsing vestigen. Zij [bepalen ook een lijst van erkende medewerkers](https://experienceleague.adobe.com/docs/core-services/interface/assets/t-admin-add-cc-user.html)van Creative Cloud, die de [!DNL Assets] gebruikers omslagen voor extra veiligheid kunnen delen.
 
 * **[!DNL Creative Cloud]Webservices** voor middelen (web-UI voor opslag en [!DNL Creative Cloud] bestanden): In dit geval kunnen specifieke gebruikers van een Creative Cloud-app, met wie een [!DNL Assets] map werd gedeeld, de uitnodiging accepteren en de map bekijken in de opslag van hun Creative Cloud-account.
 * **Creative Cloud-bureaubladtoepassing**: (Optioneel) Hiermee hebt u rechtstreeks toegang tot gedeelde mappen/bestanden vanaf het bureaublad van de creatieve gebruiker via synchronisatie met de opslag [!DNL Creative Cloud] Middelen.

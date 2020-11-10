@@ -3,9 +3,9 @@ title: De zoekfunctionaliteit uitbreiden.
 description: Breid de onderzoeksmogelijkheden [!DNL Adobe Experience Manager Assets] van voorbij de gebreken uit.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '838'
 ht-degree: 15%
 
 ---
@@ -21,7 +21,7 @@ U kunt ook extra tabbladen toevoegen aan het deelvenster [!DNL Assets] Beheer.
 
 >[!CAUTION]
 >
->Vanaf [!DNL Experience Manager] 6.4 is de klassieke gebruikersinterface afgekeurd. Voor aankondiging, zie [afgekeurde en verwijderde eigenschappen](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/deprecated-removed-features.html). Adobe raadt u aan een interface met aanraakbediening te gebruiken. Zie [zoekfacetten](/help/assets/search-facets.md)voor informatie over aanpassingen.
+>Vanaf [!DNL Experience Manager] 6.4 is de klassieke gebruikersinterface afgekeurd. Voor aankondiging, zie [afgekeurde en verwijderde eigenschappen](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html). Adobe raadt u aan een interface met aanraakbediening te gebruiken. Zie [zoekfacetten](/help/assets/search-facets.md)voor informatie over aanpassingen.
 
 ## Bedekking {#overlaying}
 

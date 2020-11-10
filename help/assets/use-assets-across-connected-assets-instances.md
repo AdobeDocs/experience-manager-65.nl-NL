@@ -3,9 +3,9 @@ title: Use Connected Assets to share DAM assets in [!DNL Sites]
 description: Gebruik de middelen die beschikbaar zijn op een [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] externe implementatie.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 2fe2b5fcaff2b2f2402f0bc638a0df2afd335b31
+source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
 workflow-type: tm+mt
-source-wordcount: '2161'
+source-wordcount: '2160'
 ht-degree: 38%
 
 ---
@@ -28,7 +28,7 @@ For the [!DNL Sites] authors, the remote assets are available as read-only local
 Controleer de volgende punten voordat u deze functie gebruikt of configureert:
 
 * De gebruikers maken deel uit van de aangewezen gebruikersgroepen op elke plaatsing.
-* Aan een van de ondersteunde criteria wordt voldaan voor [!DNL Adobe Experience Manager] implementatietypen. [!DNL Experience Manager] 6.5 [!DNL Assets] werkt met [!DNL Experience Manager] als Cloud Service. Zie de functionaliteit [Verbonden elementen in Experience Manager als een Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html)voor meer informatie.
+* Aan een van de ondersteunde criteria wordt voldaan voor [!DNL Adobe Experience Manager] implementatietypen. [!DNL Experience Manager] 6.5 [!DNL Assets] werkt met [!DNL Experience Manager] als Cloud Service. Zie de functionaliteit [Verbonden elementen in Experience Manager als een Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html)voor meer informatie.
 
    |  | [!DNL Sites] als Cloud Service | [!DNL Experience Manager] 6.5 [!DNL Sites] over AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] on-premise |
    |---|---|---|---|
@@ -40,7 +40,7 @@ Controleer de volgende punten voordat u deze functie gebruikt of configureert:
 
 Auteurs zoeken naar afbeeldingen en de volgende typen documenten in de Inhoudszoeker en gebruiken de doorzochte elementen in de Pagina-editor. Documenten worden toegevoegd aan de `Download` component en afbeeldingen aan de `Image` component. Authors also add the remote assets in any custom [!DNL Experience Manager] component that extends the default `Download` or `Image` components. De ondersteunde indelingen zijn:
 
-* **Afbeeldingsindelingen**: De indelingen die de [component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) Image ondersteunt. [!DNL Dynamic Media] afbeeldingen worden niet ondersteund.
+* **Afbeeldingsindelingen**: De indelingen die de [component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) Image ondersteunt. [!DNL Dynamic Media] afbeeldingen worden niet ondersteund.
 * **Documentindelingen**: Zie de [ondersteunde documentindelingen](assets-formats.md#supported-document-formats).
 
 ### Betrokken gebruikers en groepen {#users-and-groups-involved}
@@ -192,7 +192,7 @@ De opgehaalde assets kunnen net als elke andere lokale asset worden gebruikt, al
 
 Ga als volgt te werk om problemen op te lossen voor het algemene foutscenario:
 
-* If you cannot search for remote assets from the [!UICONTROL Content Finder], then ensure that the required roles and permissions are in place.
+* Als u niet naar externe middelen van de [!UICONTROL Content Finder]website kunt zoeken, moet u ervoor zorgen dat de vereiste rollen en machtigingen aanwezig zijn.
 * Een middel dat van de verre dam wordt gehaald kan niet op een Web-pagina om één of meerdere redenen worden gepubliceerd. Het bestaat niet op verre server, gebrek aan aangewezen toestemmingen om het te halen, of de netwerkmislukking kan de redenen zijn. Zorg ervoor dat het element niet wordt verwijderd van de externe DAM. Zorg ervoor dat de juiste machtigingen zijn ingesteld en dat aan de voorwaarden is voldaan. Voeg het element opnieuw toe aan de pagina en publiceer het opnieuw. Controleer de [lijst met asynchrone taken](/help/sites-administering/asynchronous-jobs.md) op fouten bij het ophalen van assets.
 * Als u vanaf de lokale [!DNL Sites] implementatie geen toegang hebt tot de externe DAM-implementatie, moet u ervoor zorgen dat cookies die naar andere sites verwijzen, zijn toegestaan. Als cookies tussen sites worden geblokkeerd, worden de twee implementaties van [!DNL Experience Manager] mogelijk niet geverifieerd. In de modus Incognito kunnen cookies van andere bedrijven bijvoorbeeld worden geblokkeerd. [!DNL Google Chrome] Als u cookies wilt toestaan in [!DNL Chrome] browser, klikt u op het pictogram &#39;oog&#39; op de adresbalk, navigeert u naar Site niet werken > Geblokkeerd, selecteert u de externe DAM-URL en staat u aanmeldingstoken toe. U kunt ook de Help raadplegen over [het inschakelen van cookies](https://support.google.com/chrome/answer/95647)van andere leveranciers.
 

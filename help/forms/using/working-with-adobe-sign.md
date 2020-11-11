@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f0038c1f88ea0047cbaae4fe49456a665aa67f10
+source-git-commit: 11f3e2f7cb742340388bc9421a3ea8f25deabec5
 workflow-type: tm+mt
-source-wordcount: '3822'
+source-wordcount: '3861'
 ht-degree: 0%
 
 ---
@@ -163,6 +163,8 @@ Voer de volgende stappen uit om een cloudservice en de volgorde van ondertekenin
 1. Selecteer een cloudservice in de lijst met Adobe Sign-Cloud Services die al is geconfigureerd.
 
    Als de lijst van de Cloud Service **van** Adobe Sign leeg is, volg Adobe Sign met het artikel van AEM Forms [van de](../../forms/using/adobe-sign-integration-adaptive-forms.md) Vorm om de dienst te vormen.
+
+   In het vervolgkeuzemenu worden de cloudservices weergegeven die in de `global` map Extra > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Sign]** staan. Bovendien worden in het vervolgkeuzemenu ook de cloudservices weergegeven die aanwezig zijn in de map die u in het **[!UICONTROL Configuration Container]** veld selecteert wanneer u een adaptief formulier maakt.
 
 1. Selecteer de handtekeningvolgorde in het dialoogvenster **Ondertekenaars kunnen ondertekenen** . Adobe Sign-zangers kunnen een adaptief formulier **opeenvolgend** ondertekenen - een voor een andere ondertekenaar of **tegelijkertijd** - in willekeurige volgorde.
 

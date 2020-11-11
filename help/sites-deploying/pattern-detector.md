@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: b5607343-a13b-4520-a771-f1a555bfcc7b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 9a4ae73c08657195da2741cccdb196bd7f7142c9
+source-git-commit: d510decba9b2af23bab54c78779f98a36a6172d4
 workflow-type: tm+mt
 source-wordcount: '537'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 ---
 
 
-# De complexiteit van upgrades beoordelen met de patroondetector{#assessing-the-upgrade-complexity-with-the-pattern-detector}
+# De complexiteit van upgrades beoordelen met de patroondetector
 
 ## Overzicht {#overview}
 
@@ -43,9 +43,10 @@ De patroondetector wordt afzonderlijk vrijgegeven als [één pakket](https://www
 >* de detectiesnelheid verhogen
 >* vertraging van bedrijfskritieke instanties vermijden
 
-
->tegelijkertijd wordt aanbevolen het programma uit te voeren **op testomgevingen** die zo dicht mogelijk bij productieomgevingen liggen op het gebied van gebruikerstoepassingen , inhoud en configuraties .
 >
+>
+tegelijkertijd wordt aanbevolen het programma uit te voeren **op testomgevingen** die zo dicht mogelijk bij productieomgevingen liggen op het gebied van gebruikerstoepassingen , inhoud en configuraties .
+
 U kunt verschillende methoden gebruiken om de uitvoer van de patroondetector te controleren:
 
 * **Via de Felix Inventory Console:**
@@ -56,7 +57,6 @@ U kunt verschillende methoden gebruiken om de uitvoer van de patroondetector te 
    ![screenshot-2018-2-5pattern-detector](assets/screenshot-2018-2-5pattern-detector.png)
 
 * **Via een reactieve, op tekst gebaseerde of reguliere JSON-interface**
-
 * **Via een reactieve JSON-lijninterface, **dat een afzonderlijk JSON-document in elke regel genereert.
 
 Beide methoden worden hieronder beschreven:
@@ -211,7 +211,8 @@ Met de uitvoer:
 ```
 
 >[!NOTE]
-De aanbevolen methode is om de gehele uitvoer van krullen in het bestand op te slaan en deze vervolgens via `jq` of `grep` naar het type filterinformatie te verwerken.
+>
+>De aanbevolen methode is om de gehele uitvoer van krullen in het bestand op te slaan en deze vervolgens via `jq` of `grep` naar het type filterinformatie te verwerken.
 
 ## Detectiebereik {#scope}
 
@@ -224,5 +225,5 @@ Met de huidige patroondetector kunt u controleren:
 * rep:Compatibiliteit van gebruikersknooppunten (in de context van OAuth-configuratie)
 
 >[!NOTE]
-Houd er rekening mee dat patroondetector de waarschuwingen voor een upgrade nauwkeurig probeert te voorspellen. In sommige scenario&#39;s kan dit echter leiden tot onjuiste positieven.
-
+>
+>Houd er rekening mee dat patroondetector de waarschuwingen voor een upgrade nauwkeurig probeert te voorspellen. In sommige scenario&#39;s kan dit echter leiden tot onjuiste positieven.

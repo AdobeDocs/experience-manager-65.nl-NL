@@ -1,40 +1,30 @@
 ---
-title: Gebruik de modus Lay-out om het formaat van componenten te wijzigen
-seo-title: Gebruik de modus Lay-out om het formaat van componenten te wijzigen
+title: Gebruik de modus Indeling om het formaat van componenten voor adaptieve formulieren te wijzigen
 description: 'De positie van componenten bepalen met behulp van het responsieve raster dat beschikbaar is in de modus Lay-out '
-seo-description: 'De positie van componenten bepalen met behulp van het responsieve raster dat beschikbaar is in de modus Lay-out '
-uuid: 6b077ebe-caea-4ae3-b17a-be2dca94eeb3
-contentOwner: anujkapo
-topic-tags: interactive-communications, author
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 9e9aaf36-bb86-4954-83cc-fa6b3e80ae4b
-docset: aem65
 translation-type: tm+mt
-source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+source-git-commit: c62ad355469a95db89db44c34bb6df72d8f4bf77
 workflow-type: tm+mt
-source-wordcount: '1104'
+source-wordcount: '1023'
 ht-degree: 0%
 
 ---
 
 
-# Gebruik de modus Lay-out om het formaat van componenten te wijzigen{#use-layout-mode-to-resize-components}
+# Gebruik de modus Lay-out om het formaat van componenten te wijzigen {#use-layout-mode-to-resize-components}
 
-Met de adaptieve formulier- en interactieve interface voor het ontwerpen van webkanalen voor communicatie kunt u de grootte van componenten aanpassen in de modus Indeling. Sleep blauwe stippen in kolommen om de begin- en eindpunten voor de positiecomponenten te definiëren. De blauwe stippen worden weergegeven nadat u op de component in het responsieve raster hebt getikt. Het responsieve raster bestaat uit 12 gelijke kolommen. Met de witte en blauwe kleurschaduw in alternatieve kolommen wordt de ene kolom onderscheiden van de andere.
+Met de adaptieve interface voor formulierontwerp kunt u de grootte van componenten aanpassen in de modus Indeling. Sleep blauwe stippen in kolommen om de begin- en eindpunten voor de positiecomponenten te definiëren. De blauwe stippen worden weergegeven nadat u op de component in het responsieve raster hebt getikt. Het responsieve raster bestaat uit 12 gelijke kolommen. Met de witte en blauwe kleurschaduw in alternatieve kolommen wordt de ene kolom onderscheiden van de andere.
 
 Met de modus Lay-out kunt u het formaat van componenten wijzigen voor alle apparaattypen, zoals bureaublad, tablet, telefoon en andere kleinere apparaten. De tablet leidt automatisch de lay-outconfiguratie van de Desktopversie af en de kleinere apparaten leiden lay-outconfiguratie van telefoon af. Nochtans, kunt u de automatisch afgeleide configuraties met voeten treden om een verschillende configuratie voor elk apparatentype te bepalen.
 
-Als u het kanaal van het Web gebruikend het kanaal van de [Druk master](../../forms/using/create-interactive-communication.md) voor een Interactieve Mededeling creeert, omvatten de componenten beschikbaar voor resizing ook de subformulieren en de gebieden die in het kanaal van het Web gebruikend het kanaal van de Druk auto-geproduceerd zijn. Het kanaal van het Web behoudt de lay-out voor de het kanaalelementen van de Druk op de wijze van de Lay-out.
-
 ## Modus Toegang tot layout {#access-layout-mode}
 
-Selecteer **Lay-out** van de drop-down lijst die bij de bovenkant van de adaptieve vorm en Interactieve Communicatie auteursinterface naast de optie van de **Voorproef** verschijnt. Het formulier wordt weergegeven in de modus Indeling.
+Selecteer **Indeling** in de vervolgkeuzelijst die boven aan de adaptieve ontwerpinterface naast de optie **Voorvertoning** wordt weergegeven. Het formulier wordt weergegeven in de modus Indeling.
 
 1. Meld u aan bij de AEM auteur en navigeer naar **Adobe Experience Manager** > **Forms** > **Forms &amp; Documents**.
-1. [Maak een nieuw](../../forms/using/create-interactive-communication.md) of open een bestaand adaptief formulier of een interactieve communicatie.
+1. Create a new or open an existing [adaptive form](../../forms/using/creating-adaptive-form.md).
 1. Selecteer **Lay-out** in de drop-down lijst die bij de bovenkant naast de optie van de **Voorproef** verschijnt. Het formulier wordt weergegeven in de modus Indeling.
 
-   ![Lay-outmodus voor interactieve communicatie](assets/layout_mode_ic_new.png)
+   ![Lay-outmodus](assets/layout_mode_ic_new.png)
 
 ## Formaat van componenten wijzigen {#resize-components}
 
@@ -56,9 +46,9 @@ Selecteer **Lay-out** van de drop-down lijst die bij de bovenkant van de adaptie
 
 ### Voorbeeld {#example}
 
-**Doel:** U wilt een lijstcomponent en een component van het Beeld opnemen en hen parallel aan elkaar plaatsen in een Interactieve Mededeling.
+**Doel:** U wilt een tabelcomponent en een afbeeldingscomponent invoegen en deze parallel aan elkaar plaatsen in een adaptieve vorm.
 
-1. Voeg de tabel- en afbeeldingscomponenten in met de modus Bewerken in het webkanaal. De component image wordt weergegeven na de tabelcomponent.
+1. Voeg de tabel- en afbeeldingscomponenten in de modus Bewerken in het aangepaste formulier in. De component image wordt weergegeven na de tabelcomponent.
 1. Schakel over naar de modus Lay-out en tik op de component Tabel. De blauwe stippen om het formaat van de componentweergave te wijzigen in kolom 1 en 12.
 1. Sleep de blauwe stip in kolom 12 naar kolom 6 van het responsieve raster en zet deze neer.
 

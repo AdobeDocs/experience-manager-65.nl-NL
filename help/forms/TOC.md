@@ -8,9 +8,9 @@ user-guide-title: Adobe Experience Manager 6.5 Forms Guide
 breadcrumb-title: Forms Guide
 user-guide-description: Digitale formulieren maken, beheren, publiceren en bijwerken.
 translation-type: tm+mt
-source-git-commit: 984e50ec1a523ff8a4f618016797c326fd679511
+source-git-commit: c62ad355469a95db89db44c34bb6df72d8f4bf77
 workflow-type: tm+mt
-source-wordcount: '3710'
+source-wordcount: '3716'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ ht-degree: 0%
       + [Mogelijkheden voor gegevensvastlegging installeren en configureren](using/installing-configuring-aem-forms-osgi.md)
       + [Forms-centric workflow installeren en configureren op OSGi](using/installing-configuring-forms-centric-workflow-on-osgi.md)
       + [Interactieve communicatie installeren en configureren](using/installing-configuring-intreactive-communication-correspondence-management.md)
-      + [Automated Forms Conversion-service installeren en configureren](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/table-of-contents/configure-service.html)
+      + [De Automatede form conversion-service installeren en configureren](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/table-of-contents/configure-service.html)
    + AEM Forms installeren op JEE {#jee-installation}
       + [Ondersteunde platforms voor AEM formulieren op JEE](using/aem-forms-jee-supported-platforms.md)
       + [AEM Forms op JEE installeren en implementeren met JBoss-sleutel](http://www.adobe.com/go/learn_aemforms_installTurnkey_65)
@@ -193,6 +193,7 @@ ht-degree: 0%
    + [Kanaal en webkanaal afdrukken](using/web-channel-print-channel.md)
    + [Interactieve communicatie configuratieeigenschappen](using/interactive-communication-configuration-properties.md)
    + [Meerdere interactieve communicatie genereren](using/generate-multiple-interactive-communication-using-batch-api.md)
+   + [Gebruik de modus Lay-out om het formaat van componenten te wijzigen](using/resize-using-layout-mode-interactive-communication.md)
 + Workflows {#workflows}
    + [Forms-centric workflow op OSGi](using/aem-forms-workflow.md)
    + [Forms-centric workflow voor OSGi - Step Reference](using/aem-forms-workflow-step-reference.md)

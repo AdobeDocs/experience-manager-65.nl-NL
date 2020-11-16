@@ -4,9 +4,9 @@ description: De nota's van de versie specifiek voor [!DNL Adobe Experience Manag
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b23b66e9d57742f6771bc4b26753a47b334e06bc
+source-git-commit: c4e602a208fa5f66e79a5705a7f1f2f844fb23b5
 workflow-type: tm+mt
-source-wordcount: '4362'
+source-wordcount: '4379'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ De belangrijkste functies en verbeteringen die in Adobe Experience Manager 6.5.6
 
 * [Verbeterd in cache plaatsen voor vertaalde adaptieve formulierpagina](../../help/forms/using/configure-adaptive-forms-cache.md)&#39;s.
 
-* Ondersteuning voor [Adobe Sign Text Tags in Automated Forms Conversion Service](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html).
+* Ondersteuning voor [Adobe Sign Text Tags in Automatede form conversion Service](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html).
 
 * Ondersteuning voor het [converteren van gekleurde formulieren naar adaptieve formulieren](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html) met [!DNL Automated Forms Conversion service].
 
@@ -258,6 +258,12 @@ Hier volgt een lijst met oplossingen uit de release van [!DNL Experience Manager
 ### Integrations {#integrations-6560}
 
 * Activiteiten met lange namen worden niet gesynchroniseerd met [!DNL Adobe Target] (NPR-34254).
+
+* Wanneer u een eigenschap selecteert terwijl u een nieuwe configuratie voor het starten van de Adobe maakt, wordt het volgende foutbericht weergegeven (NPR-33947):
+
+   ```javascript
+   GET http://hostname:Port/libs/cq/dtm-reactor/content/configurations/createcloudconfigwizard/jcr:content/body/items/form/items/wizard/items/general/items/fixedcolumns/items/container/items/general/items/property/data.html?query=&start=0&end=25&imsConfigurationId=Adobe%20Launch&companyId=&_charset_=utf-8 400 (Bad Request)
+   ```
 
 ### Omzettingsprojecten {#translation-6560}
 

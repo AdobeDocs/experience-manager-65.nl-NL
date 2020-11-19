@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 1368347a-9b65-4cfc-87e1-62993dc627fd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+source-git-commit: 188434543403fab48f79be06356b86e132e2888a
+workflow-type: tm+mt
+source-wordcount: '1094'
+ht-degree: 6%
 
 ---
 
@@ -71,12 +74,14 @@ Als er eenmaal een versie is gemaakt, kunt u desgewenst terugkeren naar die vers
 >Bij het herstellen van een pagina wordt de gemaakte versie onderdeel van een nieuwe vertakking.
 >
 >Ter illustratie:
-
+>
 >1. Maak versies van een willekeurige pagina.
 >1. De initiële labels en namen van versieknooppunten zijn 1.0, 1.1, 1.2 enzovoort.
-1. Herstel de eerste versie; d.w.z. 1.0.
-1. Maak opnieuw nieuwe versies.
-1. De gegenereerde labels en knooppuntnamen zijn nu 1.0.0, 1.0.1, 1.0.2 enzovoort.
+>1. Herstel de eerste versie; d.w.z. 1.0.
+>1. Maak opnieuw nieuwe versies.
+>1. De gegenereerde labels en knooppuntnamen zijn nu 1.0.0, 1.0.1, 1.0.2 enzovoort.
+
+>
 
 
 
@@ -84,7 +89,7 @@ Een vorige versie herstellen:
 
 1. Navigeer om de pagina weer te geven die u naar een vorige versie wilt terugkeren.
 1. Selecteer de pagina in de [selectiemodus](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Open de kolom **Tijdlijn** en selecteer Alle **of** Versies **** tonen. De paginaversies voor de geselecteerde pagina worden weergegeven.
+1. Open de kolom **Tijdlijn** en selecteer **Alles weergeven** of **Versies**. De paginaversies voor de geselecteerde pagina worden weergegeven.
 1. Selecteer de versie waarnaar u wilt terugkeren. De mogelijke opties worden weergegeven:
 
    ![screen-shot_2019-03-05at112505](assets/screen-shot_2019-03-05at112505.png)
@@ -97,7 +102,7 @@ U kunt een voorvertoning van een specifieke versie weergeven:
 
 1. Navigeer om de pagina weer te geven die u wilt vergelijken.
 1. Selecteer de pagina in de [selectiemodus](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Open de kolom **Tijdlijn** en selecteer Alle **of** Versies **** tonen.
+1. Open de kolom **Tijdlijn** en selecteer **Alles weergeven** of **Versies**.
 1. De paginaversies worden weergegeven. Selecteer de versie die u wilt voorvertonen:
 
    ![screen-shot_2019-03-05at112505-1](assets/screen-shot_2019-03-05at112505-1.png)
@@ -105,8 +110,10 @@ U kunt een voorvertoning van een specifieke versie weergeven:
 1. Selecteer **Voorvertoning**. De pagina wordt weergegeven op een nieuw tabblad.
 
    >[!CAUTION]
-   Als een pagina is verplaatst, kunt u geen voorvertoning meer weergeven van versies die vóór de verplaatsing zijn gemaakt.
-   * Als u problemen ondervindt met een voorvertoning, controleert u de [tijdlijn](/help/sites-authoring/basic-handling.md#timeline) op de pagina om te zien of de pagina is verplaatst.
+   >
+   >Als een pagina is verplaatst, kunt u geen voorvertoning meer weergeven van versies die vóór de verplaatsing zijn gemaakt.
+   >
+   >* Als u problemen ondervindt met een voorvertoning, controleert u de [tijdlijn](/help/sites-authoring/basic-handling.md#timeline) op de pagina om te zien of de pagina is verplaatst.
 
 
 ## Een versie vergelijken met de huidige pagina {#comparing-a-version-with-current-page}
@@ -115,7 +122,7 @@ Een vorige versie vergelijken met de huidige pagina:
 
 1. Navigeer om de pagina weer te geven die u wilt vergelijken.
 1. Selecteer de pagina in de [selectiemodus](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Open de kolom **Tijdlijn** en selecteer Alle **of** Versies **** tonen.
+1. Open de kolom **Tijdlijn** en selecteer **Alles weergeven** of **Versies**.
 1. De paginaversies worden weergegeven. Selecteer de versie die u wilt vergelijken:
 
    ![screen-shot_2019-03-05at112505-2](assets/screen-shot_2019-03-05at112505-2.png)
@@ -143,7 +150,7 @@ Timewarp is een [modus](/help/sites-authoring/author-environment-tools.md#page-m
 
    ![wwpv-01](assets/wwpv-01.png)
 
-1. Stel in het dialoogvenster een doeldatum en -tijd in en klik of tik op Datum **** instellen. Als u geen tijd selecteert, wordt de huidige tijd standaard ingesteld.
+1. Stel in het dialoogvenster een doeldatum en -tijd in en klik of tik op **Datum instellen**. Als u geen tijd selecteert, wordt de huidige tijd standaard ingesteld.
 
    ![wwpv-02](assets/wwpv-02.png)
 
@@ -161,7 +168,8 @@ Met Timewarp wordt het best geprobeerd een pagina op een geselecteerd punt in de
 
 * **Tijdlijnverdraaiing is alleen** -lezen - U kunt de oude versie van de pagina niet bewerken. Deze kan alleen worden weergegeven. Als u de oudere versie wilt herstellen, moet u dat handmatig doen met [terugzetten](#reverting-to-a-page-version).
 
-* **De tijdverdraaiing is alleen gebaseerd op pagina-inhoud** . Als elementen (zoals code, css, assets/images, enz.) voor het renderen van de website zijn gewijzigd, verschilt de weergave van wat deze oorspronkelijk was, aangezien deze items niet zijn geversieerd in de opslagplaats.
+* **De tijdverdraaiing is alleen gebaseerd op pagina-inhoud** . Als elementen (zoals code, css, assets/images, enz.) voor het renderen van de website zijn gewijzigd, verschilt de weergave van wat oorspronkelijk was, aangezien deze items niet in de opslagplaats zijn gecontroleerd.
 
 >[!CAUTION]
-Timewarp is ontworpen als een hulpmiddel om auteurs te helpen bij het begrijpen en creëren van hun inhoud. Het is niet bedoeld als controlelogboek of voor juridische doeleinden.
+>
+>Timewarp is ontworpen als een hulpmiddel om auteurs te helpen bij het begrijpen en creëren van hun inhoud. Het is niet bedoeld als controlelogboek of voor juridische doeleinden.

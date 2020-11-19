@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 2fd0047d-d0f6-4289-98cf-454486f9cd61
 translation-type: tm+mt
-source-git-commit: 69226ffeb79e0b425b28456cbc64192432863f5d
+source-git-commit: 8e663a3c11523796a2bad15e9c088e484f2b573b
 workflow-type: tm+mt
 source-wordcount: '2780'
 ht-degree: 0%
@@ -53,7 +53,6 @@ In dit document worden gedetailleerde instructies beschreven.
 >[!NOTE]
 >
 >Als u e-mailsjablonen toevoegt, moet u deze toevoegen onder **/inhoud/campagnes** om ze beschikbaar te maken.
-
 
 #### Nieuwe e-mailinhoud maken {#creating-new-email-content-1}
 
@@ -133,7 +132,7 @@ E-mailinhoud bewerken:
    >
    >Als de verpersoonlijkingsgebieden in eigenschappen van binnen de redacteur grayed zijn, gelieve uw configuratie opnieuw te onderzoeken.
 
-   ![chlimage_1-29](assets/chlimage_1-21a.png)
+   ![chlimage_1-21](assets/chlimage_1-21a.png)
 
 1. Open het deelvenster Componenten links van het scherm en selecteer **Adobe Campaign Newsletter** in het keuzemenu om die componenten te zoeken.
 
@@ -160,9 +159,6 @@ Zie [Adobe Campaign Components](/help/sites-authoring/adobe-campaign-components.
 >
 >* Alleen de velden van de Adobe Campaign- **profielen** voor dimensie worden in aanmerking genomen.
 >* Wanneer u Eigenschappen van **sites** weergeeft, hebt u geen toegang tot de Adobe Campaign-contextvelden. U kunt deze rechtstreeks vanuit de e-mail openen tijdens het bewerken.
-
->
-
 
 
 Personalisatie invoegen:
@@ -200,7 +196,7 @@ Personalisatie invoegen:
 
 ### Een voorvertoning van een nieuwsbrief weergeven {#previewing-a-newsletter}
 
-U kunt een voorvertoning weergeven van de weergave van de nieuwsbrief en een voorvertoning van de personalisatie bekijken.
+U kunt een voorvertoning weergeven van de weergave van de nieuwsbrief en een voorvertoning van de personalisatie.
 
 1. Open de nieuwsbrief en klik op **Voorvertoning** in de rechterbovenhoek van AEM. AEM toont hoe de nieuwsbrief kijkt wanneer de gebruikers het ontvangen.
 

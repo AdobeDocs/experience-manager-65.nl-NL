@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: e26c7f7f-bdd7-421a-8614-ba48abf381d2
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c3ae4447581d946554d792c68d31b47a6b67d5df
+source-git-commit: 90c99e527a40bb663d4f32d8746b46cf34a2319f
 workflow-type: tm+mt
-source-wordcount: '4720'
+source-wordcount: '4719'
 ht-degree: 2%
 
 ---
@@ -43,7 +43,7 @@ Bekijk een 10 minuten en 33 seconden analyse over [hoe carrouselbanners worden g
 
 >[!NOTE]
 >
->Niet-administratieve gebruikers moeten aan de **[!UICONTROL dam-users]** groep worden toegevoegd om carrouselbanners te kunnen tot stand brengen of uitgeven. Als u problemen ondervindt bij het maken of bewerken van bestanden, raadpleegt u de systeembeheerder die u aan de **d[!UICONTROL am-users]** -groep kan toevoegen.
+>Niet-administratieve gebruikers moeten aan de **[!UICONTROL dam-users]** groep worden toegevoegd om carrouselbanners te kunnen tot stand brengen of uitgeven. Als u problemen ondervindt bij het maken of bewerken, raadpleegt u de systeembeheerder die u aan de **[!UICONTROL dam-users]** groep kan toevoegen.
 
 ## Snel starten: Carousel Banners {#quick-start-carousel-banners}
 
@@ -255,8 +255,7 @@ Zie [(Optioneel) Een voorvertoning weergeven van carrouselbanners.](#optional-pr
 >[!NOTE]
 >
 >Wanneer u hotspots toevoegt aan een afbeelding in een [interactieve afbeelding](/help/assets/interactive-images.md) of een carrouselbanner, worden de hotspot-gegevens opgeslagen in dezelfde metagegevenslocatie, relatief ten opzichte van de locatie van de afbeelding, ongeacht of het een interactieve afbeelding of een carrouselbanner betreft. Deze functionaliteit betekent dat u in elke viewer eenvoudig dezelfde afbeelding opnieuw kunt gebruiken, samen met de gedefinieerde hotspotgegevens.
-
->Houd er echter rekening mee dat Carousel Banners afbeeldingen met hyperlinks ondersteunen op afbeeldingen die ook hotspots kunnen bevatten. een interactieve afbeelding niet. Houd hier rekening mee als u een interactieve afbeelding of Carousel Banner wilt maken die dezelfde afbeelding gebruikt. U kunt interactieve afbeeldingen en carrouselbanners maken met afzonderlijke kopieën van dezelfde afbeelding.
+Houd er echter rekening mee dat Carousel Banners afbeeldingen met hyperlinks ondersteunen op afbeeldingen die ook hotspots kunnen bevatten. een interactieve afbeelding niet. Houd hier rekening mee als u een interactieve afbeelding of Carousel Banner wilt maken die dezelfde afbeelding gebruikt. U kunt interactieve afbeeldingen en carrouselbanners maken met afzonderlijke kopieën van dezelfde afbeelding.
 
 >[!NOTE]
 Als u interactieve afbeeldingen met hotspots bewerkt en de afbeelding bijsnijdt, worden de hotspots verwijderd.

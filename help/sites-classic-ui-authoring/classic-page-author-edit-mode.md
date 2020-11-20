@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 9aa0521f-f321-42e9-b022-7ff968a36212
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bec587e3722c4c2e5aebd2579a2a7acbf807587a
+source-git-commit: 90c99e527a40bb663d4f32d8746b46cf34a2319f
+workflow-type: tm+mt
+source-wordcount: '6169'
+ht-degree: 1%
 
 ---
 
@@ -24,9 +27,9 @@ Sommige zijn onmiddellijk beschikbaar door sidekick, diverse anderen zijn ook be
 
 >[!CAUTION]
 >
->Deze sectie bespreekt slechts componenten die uit-van-de-doos in een standaardAEM installatie beschikbaar zijn.
+>Deze sectie bespreekt slechts componenten die uit-van-de-doos in een standaard AEM installatie beschikbaar zijn.
 >
->Afhankelijk van uw instantie kunt u aangepaste componenten hebben die uitdrukkelijk voor uw vereisten worden ontwikkeld. Deze kunnen zelfs de zelfde naam hebben zoals sommige componenten hier besproken.
+>Afhankelijk van uw instantie kunt u aangepaste componenten hebben die uitdrukkelijk voor uw vereisten worden ontwikkeld. Deze kunnen zelfs de zelfde naam hebben zoals sommige componenten die hier worden besproken.
 
 De componenten zijn beschikbaar wanneer [het uitgeven van een pagina](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) van het lusje van **Componenten** van sidekick en de selecteur van de Component **van het** Tussenvoegsel Nieuwe (wanneer u in de componenten of de activa van de **Belemmering hier** klikt).
 
@@ -142,7 +145,7 @@ Deze zijn beschikbaar in twee tabbladen:
 
 * **Lijst** Hier geeft u op hoe pagina&#39;s in uw carrousel moeten worden opgenomen:
 
-   * **Lijst maken met gebruik van**Er zijn verschillende manieren om een paginalijst samen te stellen: Onderliggende pagina&#39;s, Vaste lijst, Zoeken of Geavanceerd zoeken (allemaal hieronder beschreven).
+   * **Lijst maken met gebruik van**Er zijn verschillende manieren om een paginalijst samen te stellen: Onderliggende pagina&#39;s, Vaste lijst, Zoeken of Geavanceerd zoeken (alle hieronder beschreven mogelijkheden).
 Welke methode u ook kiest, op de pagina&#39;s die u in de lijst opneemt, is er al een afbeelding gekoppeld aan de pagina. Dit is de afbeelding die in de carrousel wordt weergegeven. Als er geen afbeelding is voor een bepaalde pagina onder de Pagina-eigenschappen van die pagina, moet u een afbeelding aan de pagina koppelen voordat u begint, omdat de carrousel anders een lege (of meestal lege) pagina weergeeft. Zie Pagina-eigenschappen [bewerken](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 Afhankelijk van het item dat u kiest, wordt een nieuw deelvenster weergegeven:
 
@@ -151,7 +154,8 @@ Afhankelijk van het item dat u kiest, wordt een nieuw deelvenster weergegeven:
          * **Bovenliggende pagina** Geef een pad handmatig of met de kiezer op. Laat leeg als u de huidige pagina als bovenliggend item wilt gebruiken.
       * **Opties voor vaste lijst**
 
-         * **Pagina&#39;s** Selecteer een lijst met pagina&#39;s. Gebruik deze optie `+` om meer items toe te voegen en de knoppen Omhoog en Omlaag om de volgorde aan te passen.
+         * **Pagina&#39;s** Selecteer een lijst met pagina&#39;s. Gebruiken 
+`+` om meer items toe te voegen en de knoppen Omhoog en Omlaag om de volgorde aan te passen.
       * **Zoekopties**
 
          * **Start in** Voer een beginpad in, handmatig of met de kiezer.
@@ -161,7 +165,8 @@ Afhankelijk van het item dat u kiest, wordt een nieuw deelvenster weergegeven:
 
          * **Querybuilder voorspelt aantekening**U kunt een onderzoeksvraag ingaan gebruikend de predicaataantekening van de Bouwer Querybuilder. U kunt bijvoorbeeld &quot;fulltext=Marketing&quot; invoeren om alle pagina&#39;s met &quot;Marketing&quot; in de inhoud weer te geven in de carrousel.
 Zie [QueryBuilder API](/help/sites-developing/querybuilder-api.md) voor volledige bespreking van vraaguitdrukkingen en verdere voorbeelden.
-   * **De orde door** Uitgezocht `jcr:title`, `jcr:created`, `cq:lastModified`, of van het dropdown menu `cq:template` .
+   * **Volgorde bij** selecteren 
+`jcr:title`, `jcr:created`, `cq:lastModified`of `cq:template` uit het vervolgkeuzemenu.
 
    * **Beperk** het maximumaantal items dat u in de carrousel wilt gebruiken; dit is optioneel.
 
@@ -170,7 +175,7 @@ Zie [QueryBuilder API](/help/sites-developing/querybuilder-api.md) voor volledig
 
 
 >[!NOTE]
-U kunt een aangepaste carrouselcomponent maken voor Adobe Experience Manager waarmee de digitale elementen in de AEM DAM worden weergegeven. Zie Aangepaste carrouselcomponenten [maken voor Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/custom-carousel-components.html)voor meer informatie.
+U kunt een aangepaste carrouselcomponent voor Adobe Experience Manager maken die digitale elementen weergeeft die zich in de AEM DAM bevinden. Zie Aangepaste carrouselcomponenten [maken voor Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/custom-carousel-components.html)voor meer informatie.
 
 ### Diagram {#chart}
 
@@ -182,7 +187,7 @@ Met de component Diagram kunt u een balk, lijn of cirkeldiagram toevoegen. AEM m
 
 * **Geavanceerd**
 
-   * **Het Type** van grafiek selecteert uit de Grafiek van het Schijf, de Grafiek van de Lijn, en de Grafiek van de Bar.
+   * **Selecteer het Type** van grafiek uit de Grafiek van het Schijf, de Grafiek van de Lijn, en de Grafiek van de Bar.
 
    * **Alternatieve tekst** Alternatieve tekst die wordt weergegeven in plaats van het diagram.
 
@@ -195,7 +200,7 @@ In het volgende voorbeeld ziet u een voorbeeld van diagramgegevens, gevolgd door
 ![chlimage_1-6](assets/chlimage_1-6.png) ![dc_chart_use](assets/dc_chart_use.png)
 
 >[!NOTE]
-U kunt een aangepast AEM-diagrambesturingselement maken dat gegevens weergeeft die zich in de JCR van AEM bevinden. Zie Gegevens van Adobe Experience Manager [weergeven in een diagram](https://helpx.adobe.com/experience-manager/using/displaying-experience-manager-data-chart.html)voor meer informatie.
+U kunt een aangepast AEM grafiekbesturingselement maken dat gegevens weergeeft die zich in de AEM JCR bevinden. Zie Adobe Experience Manager-gegevens [weergeven in een grafiek](https://helpx.adobe.com/experience-manager/using/displaying-experience-manager-data-chart.html)voor meer informatie.
 
 ### Inhoudsfragment {#content-fragment}
 
@@ -219,13 +224,13 @@ De component Download maakt een koppeling op de geselecteerde webpagina om een s
 
    * **Bestand** dat kan worden gedownload op de resulterende webpagina. Sleep een element uit de zoekfunctie voor inhoud of klik in het gebied om het bestand te uploaden dat u wilt downloaden.
 
-In het volgende voorbeeld wordt de component Download in Geometrixx getoond:
+In het volgende voorbeeld wordt de component Download getoond in Geometrixx:
 
 ![dc_download_use](assets/dc_download_use.png)
 
 ### External {#external}
 
-Met de externe component voor toepassingsintegratie (**Extern**) kunt u externe toepassingen met een iframe insluiten in uw AEM-pagina.
+Met de externe component voor toepassingsintegratie (**Extern**) kunt u externe toepassingen met een iframe insluiten in uw AEM.
 
 * **Extern**
 
@@ -245,7 +250,7 @@ Met de externe component voor toepassingsintegratie (**Extern**) kunt u externe 
 
       De grootte van het iframe definiëren
 
-De externe toepassing is geïntegreerd in het alineasysteem van de AEM-pagina. bijvoorbeeld bij het gebruik van een doeltoepassing van `https://en.wikipedia.org/wiki/Main_Page`:
+De externe toepassing is geïntegreerd in het alineasysteem van de AEM. bijvoorbeeld bij het gebruik van een doeltoepassing van `https://en.wikipedia.org/wiki/Main_Page`:
 
 ![chlimage_1-7](assets/chlimage_1-7.png)
 
@@ -254,7 +259,7 @@ Afhankelijk van uw gebruiksscenario zijn er bijvoorbeeld andere opties beschikba
 
 ### Flash {#flash}
 
-Met de Flash-component kunt u een Flash-film laden. U kunt een Flash-element van de zoeker naar de component slepen of u kunt het dialoogvenster gebruiken:
+Met de component Flash kunt u een Flash-film laden. U kunt een Flash-element van de zoeker naar de component slepen of u kunt het dialoogvenster gebruiken:
 
 * **Flash**
 
@@ -264,7 +269,7 @@ Met de Flash-component kunt u een Flash-film laden. U kunt een Flash-element van
 
    * **Grootte**
 
-      Afmetingen in pixels van het weergavegebied waarin de film wordt weergegeven.
+      Dimension in pixels van het weergavegebied dat de film bevat.
 
 * **Alternatieve afbeelding**
 
@@ -305,8 +310,7 @@ U kunt een afbeelding vanuit de [Inhoudszoeker](/help/sites-classic-ui-authoring
 >[!NOTE]
 De voortgang van het uploaden kan niet worden gecontroleerd met Internet Explorer.
 Gebruikers van Internet Explorer moeten de afbeelding uploaden en op **OK** klikken. Vervolgens opent u de afbeelding opnieuw om het geüploade bestand in de voorvertoning weer te geven en wijzigingen uit te voeren (bijsnijden).
-
->Zie de sectie [Certified Platforms](/help/release-notes/release-notes.md#certifiedplatforms) voor meer informatie over HTML5-functies die door AEM worden gebruikt.
+Zie de sectie [Certified Platforms](/help/release-notes/release-notes.md#certifiedplatforms) voor meer informatie over HTML5-functies die door AEM worden gebruikt.
 
 Wanneer een beeld wordt geladen, kunt u het volgende vormen:
 
@@ -483,7 +487,7 @@ U kunt configureren:
 
 ### Referentie {#reference}
 
-Met de **component Reference** kunt u tekst van een andere pagina van uw AEM-website (in de huidige instantie) verwijzen. De inhoud van de alinea waarnaar wordt verwezen, wordt weergegeven alsof deze zich op de huidige pagina bevindt. De inhoud wordt bijgewerkt wanneer de bronalinea verandert (mogelijk moet de pagina worden vernieuwd).
+Met de **component Reference** kunt u naar tekst van een andere pagina van uw AEM website verwijzen (binnen de huidige instantie). De inhoud van de alinea waarnaar wordt verwezen, wordt weergegeven alsof deze zich op de huidige pagina bevindt. De inhoud wordt bijgewerkt wanneer de bronalinea verandert (mogelijk moet de pagina worden vernieuwd).
 
 * **Alineaslaggids**
 
@@ -619,13 +623,13 @@ In de diapresentatie-component worden vervolgens herhaaldelijk alle elementen ge
 ### Tabel {#table}
 
 >[!NOTE]
-De component **Table** is gebaseerd op de redacteur [van de Tekst](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md)Rich, evenals de component van de **[Tekst](#text)**.
+De component **Table** is gebaseerd op de redacteur [van de Tekst](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md)Rich, evenals de component van de **[Tekst](#text)** .
 U wordt aangeraden de component **Tabel** te gebruiken voor tabellen, maar deze kunnen ook worden samengesteld met de component **Tekst** .
 
 De **component van de Lijst** wordt preconfigured om u te laten een lijst construeren, vullen en formatteren. Met behulp van het dialoogvenster kunt u uw tabel configureren en de inhoud maken door:
 
 * helemaal opnieuw
-* het kopiëren van en het kleven van een spreadsheet of een lijst van een externe redacteur (zoals Excel, OpenOffice, Blocnote, enz.).
+* het kopiëren en het kleven van een spreadsheet of een lijst van een externe redacteur (zoals Excel, OpenOffice, Blocnote, enz.).
 
 ![dc_table](assets/dc_table.png)
 
@@ -652,7 +656,7 @@ Voor meer informatie over het toepassen van labels gaat u naar [Tags](/help/site
 ### Tekst {#text}
 
 >[!NOTE]
-De **component Text** is gebaseerd op de redacteur [van de Tekst](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md)Rich, evenals de component van de **[Lijst](#table)**.
+De **component Text** is gebaseerd op de redacteur [van de Tekst](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md)Rich, evenals de component van de **[Lijst](#table)** .
 U wordt aangeraden de component **Tabel** te gebruiken voor tabellen, maar deze kunnen ook worden samengesteld met de component **Tekst** .
 
 De component van de Tekst laat u een tekstblok ingaan gebruikend een redacteur WYSIWYG, met functionaliteit die door de [Rich redacteur](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md)van de Tekst wordt verstrekt. Met een selectie pictogrammen kunt u tekst opmaken, inclusief lettertypekenmerken, uitlijning, koppelingen, lijsten en inspringing.
@@ -672,7 +676,7 @@ Voor meer gedetailleerde informatie over de component van de Tekst en de functio
 
 #### Op plaats bewerken {#inplace-editing}
 
-Naast de op een dialoogvenster gebaseerde bewerkingsmodus voor RTF-tekst biedt AEM ook de optie [Inplace Editing](/help/sites-authoring/editing-content.md), waarmee de tekst direct kan worden bewerkt zoals deze wordt weergegeven in de lay-out van de pagina.
+Naast de op een dialoogvenster gebaseerde bewerkingsmodus voor RTF-tekst, biedt AEM ook [Inplace Editing](/help/sites-authoring/editing-content.md), waarmee de tekst direct kan worden bewerkt zoals deze wordt weergegeven in de lay-out van de pagina.
 
 ### Tekst en afbeelding {#text-image}
 
@@ -702,7 +706,7 @@ U kunt configureren:
 
       Alternatieve tekst die moet worden weergegeven als de afbeelding niet kan worden weergegeven. Als de titel leeg wordt gelaten, wordt deze gebruikt.
 
-   * **Koppelen naar**
+   * **Koppeling naar**
 
       Geef een doelpad op.
 
@@ -765,7 +769,7 @@ Na het plaatsen van een geval van de component op uw pagina kunt u vormen:
 Ondersteunde indelingen zijn onder andere:
 * `.mp4`
 * `Ogg`
-* `FLV` (Flash-video)
+* `FLV` (video Flash)
 
 
 
@@ -797,12 +801,12 @@ Met de component Kolombeheer kunnen gebruikers selecteren hoe ze de inhoud in he
 
 ## formulier {#form}
 
-Formuliercomponenten worden gebruikt om formulieren te maken waarmee bezoekers invoer kunnen verzenden. Formulieren en formuliercomponenten kunnen worden gebruikt om informatie te verzamelen, waaronder gebruikersfeedback (bijvoorbeeld een vragenlijst voor klanttevredenheid) en gebruikersgegevens (bijvoorbeeld gebruikersregistratie).
+Formuliercomponenten worden gebruikt om formulieren te maken waarmee bezoekers invoer kunnen verzenden. Forms en formuliercomponenten kunnen worden gebruikt om informatie te verzamelen, waaronder gebruikersfeedback (bijvoorbeeld een vragenlijst voor klanttevredenheid) en gebruikersgegevens (bijvoorbeeld gebruikersregistratie).
 
 >[!NOTE]
-Zie de Help bij [AEM Forms](/help/forms/home.md) voor informatie over AEM Forms.
+Raadpleeg de Help bij [](/help/forms/home.md) AEM Forms voor informatie over AEM Forms.
 
-Formulieren worden samengesteld uit verschillende onderdelen:
+Forms is opgebouwd uit verschillende onderdelen:
 
 * **formulier**
 
@@ -821,7 +825,7 @@ Hieronder ziet u een voorbeeldformulier. Het bestaat uit de **component Form** (
 ![dc_form](assets/dc_form.png)
 
 >[!NOTE]
-Informatie over het verder ontwikkelen en aanpassen van uw formulieren is beschikbaar op de pagina [Formulieren](/help/sites-developing/developing-forms.md)ontwikkelen. Dit omvat onder andere het toevoegen van handelingen, beperkingen, het vooraf laden van velden en het gebruik van scripts om een service aan te roepen die actie moet ondernemen.
+Informatie over het verder ontwikkelen en aanpassen van uw formulieren is beschikbaar op de pagina [Forms voor](/help/sites-developing/developing-forms.md)ontwikkeling. Dit omvat onder andere het toevoegen van handelingen, beperkingen, het vooraf laden van velden en het gebruik van scripts om een service aan te roepen die actie moet ondernemen.
 
 ### Algemene instellingen voor (veel) formuliercomponenten {#settings-common-to-many-form-components}
 
@@ -936,7 +940,7 @@ Deze component is nodig om het begin van een nieuw formulier op een pagina te de
 
       Een formulier heeft een handeling nodig. De actie definieert de bewerking die wordt geactiveerd voor uitvoering met de gegevens die door de gebruiker worden verzonden (vergelijkbaar met action= in HTML). Sommige hebben een overeenkomstige Configuratie van de **Actie nodig**.
 
-      Een selectie actietypen zijn inbegrepen in een standaardAEM installatie:
+      Een selectie van actietypen is inbegrepen in een standaard AEM installatie:
 
       * **Account-verzoek**
       * **Inhoud maken**
@@ -973,7 +977,7 @@ Met **Pad** laden kunt u het formulier vooraf laden met waarden in de vereiste v
 
    * **Clientvalidatie**
 
-      Hiermee wordt aangegeven of clientvalidatie is vereist voor dit formulier (servervalidatie vindt *altijd* plaats.) Dit kan in combinatie met de component **Forms Captcha** worden bereikt.
+      Hiermee wordt aangegeven of clientvalidatie is vereist voor dit formulier (servervalidatie vindt *altijd* plaats.) Dit kan in combinatie met de **Forms Captcha** -component worden bereikt.
 
    * **Brontype voor validatie**
 
@@ -1188,7 +1192,7 @@ Met deze component kunt u een verborgen veld maken. Deze kunnen voor verschillen
 ![dc_form_hiddenfield](assets/dc_form_hiddenfield.png)
 
 >[!NOTE]
-U kunt het formulier ook aanpassen om specifieke formuliercomponenten weer te geven of te verbergen op basis van de waarde van andere velden in het formulier. Het is handig de zichtbaarheid van een formulierveld te wijzigen als het veld alleen onder specifieke omstandigheden nodig is.
+U kunt het formulier ook aanpassen om specifieke formuliercomponenten weer te geven of te verbergen op basis van de waarde van andere velden in het formulier. Het is handig de zichtbaarheid van een formulierveld te wijzigen als het veld alleen onder bepaalde omstandigheden nodig is.
 Zie [Formuliercomponenten](/help/sites-developing/developing-forms.md#showing-and-hiding-form-components)tonen en verbergen.
 
 ### Afbeeldingsknop {#image-button}
@@ -1262,11 +1266,11 @@ U kunt verschillende parameters opgeven, waaronder de naamruimten die kunnen wor
 
    * **Toegestane naamruimten**
 
-      * **Geometrixx buitenshuis**
+      * **Geometrixx Outdoors**
       * **Workflow**
       * **Forum**
       * **Stock Photography**
-      * **Geometrixmedia**
+      * **Geometrixx Media**
       * **Standaardlabels**
       * **Marketing**
       * **Eigenschappen van element**

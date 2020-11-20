@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 67625e62-7035-4eb5-8dd5-6840d775a547
 docset: aem65
 translation-type: tm+mt
-source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+source-git-commit: 90c99e527a40bb663d4f32d8746b46cf34a2319f
+workflow-type: tm+mt
+source-wordcount: '933'
+ht-degree: 0%
 
 ---
 
@@ -86,7 +89,7 @@ Nadat u een alinea Downloaden op de pagina hebt gemaakt, kunt u een item naar de
 
 ### Films zoeken {#finding-movies}
 
-Dit tabblad bevat een lijst met films (bijvoorbeeld Flash-items) in de opslagplaats.
+Op dit tabblad worden films (bijvoorbeeld Flash-items) in de opslagplaats weergegeven.
 
 Nadat u een geschikte alinea (bijvoorbeeld Flash) op de pagina hebt gemaakt, kunt u een item naar de alinea slepen.
 
@@ -102,7 +105,7 @@ Op dit tabblad worden alle producten weergegeven. Nadat u een geschikte alinea (
 
 Op dit tabblad worden alle pagina&#39;s weergegeven. Dubbelklik op een pagina om deze te openen voor bewerking.
 
-![chlimage_1-115](assets/chlimage_1-115.png)
+![chlimage_1-114](assets/chlimage_1-115.png)
 
 ### Verwijzen naar alinea&#39;s van andere pagina&#39;s {#referencing-paragraphs-from-other-pages}
 
@@ -153,7 +156,7 @@ u kunt om het even welk aantal vervangingen in een vraag gebruiken.
 
 ## Referenties weergeven {#showing-references}
 
-Met AEM kunt u zien welke pagina&#39;s zijn gekoppeld aan de pagina waaraan u momenteel werkt.
+AEM kunt u bekijken welke pagina&#39;s zijn gekoppeld aan de pagina waaraan u momenteel werkt.
 
 Verwijzingen naar directe pagina&#39;s weergeven:
 
@@ -161,13 +164,13 @@ Verwijzingen naar directe pagina&#39;s weergeven:
 
    ![screen_shot_2012-02-16at83127pm](assets/screen_shot_2012-02-16at83127pm.png)
 
-1. **Verwijzingen** tonen selecteren... AEM opent het venster Verwijzingen en geeft aan welke pagina&#39;s naar de geselecteerde pagina verwijzen, inclusief de paden.
+1. Verwijzingen **tonen selecteren...** AEM opent het venster Verwijzingen en geeft aan welke pagina&#39;s naar de geselecteerde pagina verwijzen, inclusief de paden.
 
    ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
 
 In bepaalde situaties zijn verdere acties beschikbaar bij Sidetrap, waaronder:
 
-* [Starten](/help/sites-classic-ui-authoring/classic-launches.md)
+* [Lanceringen](/help/sites-classic-ui-authoring/classic-launches.md)
 * [Actieve kopieën](/help/sites-administering/msm.md)
 
 * [Blauwdruk](/help/sites-administering/msm-best-practices.md)
@@ -201,12 +204,11 @@ De rij met pictogrammen onder aan de Sidetrap wordt gebruikt voor het schakelen 
 >[!NOTE]
 >
 >Er zijn ook andere opties beschikbaar:
-
+>
 >* [Basisstructuur](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md)
 >* [Clientcontext](/help/sites-administering/client-context.md)
-* Websites - hiermee opent u de websiteconsole.
-* Opnieuw laden - De pagina wordt vernieuwd.
-
+>* Websites - hiermee opent u de websiteconsole.
+>* Opnieuw laden - De pagina wordt vernieuwd.
 
 
 ## Sneltoetsen {#keyboard-shortcuts}

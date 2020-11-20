@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: bab465bc-1ff4-4f21-9885-e4a875c73a8d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0eda6ee61acf737abc91d1e5df731e719663b3f2
+source-git-commit: 90c99e527a40bb663d4f32d8746b46cf34a2319f
+workflow-type: tm+mt
+source-wordcount: '442'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ Analyses kunnen u belangrijke en interessante informatie geven over het gebruik 
 Verschillende configuraties buiten de box zijn beschikbaar voor integratie met de juiste service, bijvoorbeeld:
 
 * [Adobe Analytics](/help/sites-administering/adobeanalytics.md)
-* [Adobe-doel](/help/sites-administering/target.md)
+* [Adobe Target](/help/sites-administering/target.md)
 
 U kunt uw eigen instantie van de **Algemene Fragmenten** van Analytics ook vormen om een nieuwe de dienstconfiguraties te bepalen.
 
@@ -54,8 +57,8 @@ Met dergelijke fragmenten kunnen gegevens worden verzameld en rapporten worden g
 
 >[!CAUTION]
 >
->De demosite Geometrixx-Outdoor is zo geconfigureerd dat de kenmerken die worden verschaft in de Pagina-eigenschappen worden toegevoegd aan de HTML-broncode (net boven de `</html>` eindtag) in het bijbehorende `js` script.
-
+>De demosite Geometrixx-Buiten is zo geconfigureerd dat de kenmerken die worden opgegeven in de Pagina-eigenschappen worden toegevoegd aan de HTML-broncode (net boven de `</html>` eindtag) in het bijbehorende `js` script.
+>
 >Als uw eigen `/apps` niet van de standaardpaginacomponent ( `/libs/foundation/components/page`) erft moet u (of uw ontwikkelaars) ervoor zorgen dat de overeenkomstige `js` manuscripten inbegrepen zijn, bijvoorbeeld door of `cq/cloudserviceconfigs/components/servicescomponents`, of het gebruiken van een gelijkaardig mechanisme op te nemen.
 >
 >Zonder dit, zal geen van de diensten (Generic, Analytics, Target, etc.) werken.
@@ -65,7 +68,7 @@ Met dergelijke fragmenten kunnen gegevens worden verzameld en rapporten worden g
 Voor de basisconfiguratie:
 
 1. Open de **console van Hulpmiddelen** .
-1. Vouw **Cloud Services Configurations** in het linkerdeelvenster uit.
+1. Vouw **Cloud Services Configurations** uit in het linkerdeelvenster.
 1. Dubbelklik op **Generic Analytics Snippet** om de pagina te openen:
 
    ![](assets/analytics_genericoverview.png)
@@ -102,4 +105,5 @@ Nadat u de de dienstconfiguratie hebt gecreeerd moet u nu de vereiste pagina&#39
    Nadat een geschikte periode is verstreken, kunt u de verzamelde statistieken bekijken.
 
    >[!NOTE]
-   Als de configuratie aan een pagina in bijlage is die kindpagina&#39;s heeft, wordt de dienst ook geërft door die.
+   >
+   >Als de configuratie aan een pagina in bijlage is die kindpagina&#39;s heeft, wordt de dienst ook geërft door die.

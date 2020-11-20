@@ -11,7 +11,7 @@ topic-tags: personalization
 discoiquuid: ef2321a3-cd51-4298-8782-e1a2ca721868
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f62d2d639499c128fd4cafa5f9c39307ae9a607d
+source-git-commit: 90c99e527a40bb663d4f32d8746b46cf34a2319f
 workflow-type: tm+mt
 source-wordcount: '2022'
 ht-degree: 13%
@@ -39,23 +39,27 @@ De activiteiten worden getoond met een etiket beschrijvend welke soort activitei
 
 * XT - Adobe Target-ervaring gericht
 * A/B - Adobe Target A/B-tests
-* AEM - Adobe Experience Manager target (context- of clientcontext-gestuurde)
+* AEM - Adobe Experience Manager-doelversie (context- of clientcontext-afhankelijk)
 
 ![chlimage_1-114](assets/chlimage_1-114.png)
 
 >[!NOTE]
 >
 >Welke soorten activiteiten beschikbaar zijn, wordt bepaald door:
-
+>
 >* If the **xt_only** option is enabled on the Adobe Target tenant (clientcode) used on the AEM side to connect to Adobe Target, then you can create **only** XT activities in AEM.
    >
+   >
 * If the **xt_only** options is **not** enabled on the Adobe Target tenant (clientcode), then you can create **both** XT and A/B activities in AEM.
-
-**Aanvullende opmerking:** **xt_only** -opties zijn een instelling die wordt toegepast op een bepaalde Target-gebruiker (clientcode) en kunnen alleen rechtstreeks in Adobe Target worden gewijzigd. U kunt deze optie niet in- of uitschakelen in AEM.
+>
+>
+**Aanvullende opmerking:** **xt_only** de opties is een het plaatsen op een bepaalde huurder van het Doel wordt toegepast (cliëntcode) en kan slechts direct in Adobe Target worden gewijzigd. U kunt deze optie niet in- of uitschakelen in AEM.
 
 >[!CAUTION]
-U moet het knooppunt activity settings (activity settings) **cq:ActivitySettings** op de publicatie-instantie beveiligen, zodat dit niet toegankelijk is voor normale gebruikers. Het knooppunt activity settings mag alleen toegankelijk zijn voor de service die de activiteitensynchronisatie afhandelt voor Adobe Target.
-Zie [Vereisten voor Integratie met Adobe Target](/help/sites-administering/target-requirements.md#securingtheactivitysettings) voor meer informatie.
+>
+>U moet het knooppunt activity settings (activity settings) **cq:ActivitySettings** op de publicatie-instantie beveiligen, zodat dit niet toegankelijk is voor normale gebruikers. Het knooppunt activity settings mag alleen toegankelijk zijn voor de service die de activiteitensynchronisatie afhandelt voor Adobe Target.
+>
+>Zie [Vereisten voor Integratie met Adobe Target](/help/sites-administering/target-requirements.md#securingtheactivitysettings) voor meer informatie.
 
 ## Een merk maken met de activiteitenconsole {#creating-a-brand-using-the-activities-console}
 
@@ -89,8 +93,10 @@ Voeg een activiteit toe of bewerk een bestaande activiteit om uw marketing inspa
 * **Metrische data van doel:** Als Adobe Target is geselecteerd als de doelengine, kunt u metrische data van successen aan de activiteit toevoegen. Eén metrische waarde van successen is vereist.
 
 >[!NOTE]
-De nieuwe Adobe Target-activiteiten moeten in de gerichte contenteditor worden ***gemaakt***, en niet in de console **Activiteiten**, omdat de synchronisatie met Adobe Target dan mislukt.
-U kunt echter bestaande Adobe Target-activiteiten in de console bewerken.
+>
+>De nieuwe Adobe Target-activiteiten moeten in de gerichte contenteditor worden ***gemaakt***, en niet in de console **Activiteiten**, omdat de synchronisatie met Adobe Target dan mislukt.
+>
+>U kunt echter bestaande Adobe Target-activiteiten in de console bewerken.
 
 Een activiteit toevoegen:
 
@@ -104,12 +110,13 @@ Een activiteit toevoegen:
    * Selecteer het type activiteit.
 
 1. Voeg een of meer ervaringen toe aan de activiteit. Klik of tik op **Ervaring toevoegen**.
-1. Als u AEM gebruikt richt zich of de ervaring van Adobe Target richt zich:
+1. Als u gebruikmaakt van AEM of Adobe Target-ervaring als doelwit:
 
    1. Klik of tik **Selecteer Publiek **en selecteer het segment dat uw ervaringsdoelstellingen.
    1. Klik of tik op **Ervaring** toevoegen, typ een naam en klik of tik op **OK**.
 
    1. Klik of tik op **Volgende**.
+
    Als u Adobe Target A/B Testen gebruikt:
 
    1. Klik of tik op het potlood in het vak Soorten publiek om een publiek te selecteren.
@@ -134,14 +141,16 @@ Een activiteit toevoegen:
 1. Klik of tik op **Opslaan**.
 
    >[!NOTE]
-   Nadat u een activiteit hebt gemaakt, moet u deze publiceren zodat deze beschikbaar is.
+   >
+   >Nadat u een activiteit hebt gemaakt, moet u deze publiceren zodat deze beschikbaar is.
 
 ## Publicatie- en publicatieactiviteiten {#publishing-and-unpublishing-activities}
 
 U moet activiteiten publiceren om deze beschikbaar te maken. Omgekeerd kunt u activiteiten onbeschikbaar maken door deze te verwijderen.
 
 >[!NOTE]
-Wanneer u het publiceren van een activiteit ongedaan maakt, verandert de status van de activiteit alleen als u de pagina vernieuwt.
+>
+>Wanneer u het publiceren van een activiteit ongedaan maakt, verandert de status van de activiteit alleen als u de pagina vernieuwt.
 
 Om activiteiten te publiceren of unpublish:
 
@@ -169,7 +178,7 @@ Om de prestaties van de activiteit te bekijken en het winnen ervaringen om te ze
 1. Klik of tik op het merk waarvoor u activiteiten wilt zien.
 1. Selecteer de activiteit, klik of tik op **Weergave-eigenschappen**, klik op het tabblad **Rapporten** en selecteer de activiteit waarvoor u prestaties wilt bekijken of waarvoor u winnende ervaringen wilt converteren. Prestatiedata worden weergegeven.
 
-   ![chlimage_1-115](assets/chlimage_1-115.png)
+   ![chlimage_1-114](assets/chlimage_1-115.png)
 
 1. Klik of tik op de koppeling **Push Win** om die ervaring als de standaardervaring te gebruiken.
 
@@ -177,6 +186,7 @@ Om de prestaties van de activiteit te bekijken en het winnen ervaringen om te ze
 
    * De huidige activiteit wordt uitgeschakeld
    * Hiermee wijzigt u alle pagina&#39;s en vervangt u de doelinhoud door de feitelijke inhoud van de winnende ervaring. De inhoud van de winnende ervaring wordt onderdeel van de normale pagina **zonder** doeleinde.
+
    ![chlimage_1-116](assets/chlimage_1-116.png)
 
    Een winnende ervaring is de ervaring die meer Lift in de rapporten produceert, die op de omrekeningskoers gebaseerd is.
@@ -196,22 +206,22 @@ Deze voorwaarden gelden voor activiteiten met betrekking tot auteur- en publicat
 Wanneer een activiteit wordt gesynchroniseerd, wordt een overeenkomstige campagne gecreeerd in Adobe Target:
 
 * De activiteiten op het publicatieexemplaar hebben de zelfde naam zoals de overeenkomstige campagne van Adobe Target.
-* De activiteiten op de auteurinstantie stemmen met de campagnes van Target van de zelfde naam met het `_author` achtervoegsel.
+* De activiteiten op de auteurinstantie stemmen met campagnes van het Doel van de zelfde naam met het `_author` achtervoegsel.
 
 ![chlimage_1-117](assets/chlimage_1-117.png)
 
 De _auteuractiviteiten worden onmiddellijk gesynchroniseerd wanneer de activiteit wordt gewijzigd. De directe synchronisatie laat de simulatie van activiteiten met de Context of ContextHub van de Cliënt toe.
 
-De publicatieactiviteiten worden gesynchroniseerd wanneer de activiteit wordt gepubliceerd naar de publicatie-instantie van AEM.
+De publicatieactiviteiten worden gesynchroniseerd wanneer de activiteit wordt gepubliceerd naar de AEM-publicatie-instantie.
 
 ## Synchronisatie van activiteiten voor probleemoplossing {#troubleshooting-activity-synchronization}
 
-Wanneer AEM een activiteit met Adobe Target synchroniseert, omvat AEM een bezit van de genoemde activiteit `thirdPartyId`. De waarde van deze eigenschap is gebaseerd op het pad van de activiteit in de AEM-opslagplaats. Geen twee campagnes in Adobe Target kunnen de zelfde waarde voor het `thirdPartyId` bezit hebben. Daarom zal een activiteit er niet in slagen om te synchroniseren als een bestaande campagne (van een verschillend type AB, XT) in Adobe Target de zelfde waarde voor gebruikt `thirdPartyId`.
+Wanneer AEM een activiteit met Adobe Target synchroniseert, omvat AEM een bezit van de genoemde activiteit `thirdPartyId`. De waarde van deze eigenschap is gebaseerd op het pad van de activiteit in de AEM repository. Geen twee campagnes in Adobe Target kunnen de zelfde waarde voor het `thirdPartyId` bezit hebben. Daarom zal een activiteit er niet in slagen om te synchroniseren als een bestaande campagne (van een verschillend type AB, XT) in Adobe Target de zelfde waarde voor gebruikt `thirdPartyId`.
 
 Deze situatie kan zich voordoen in de volgende omstandigheden:
 
 1. Er wordt een activiteit gemaakt en gesynchroniseerd met Adobe Target.
-1. Op een andere AEM-instantie wordt een activiteit onder hetzelfde merk en met dezelfde naam gemaakt. Synchronisatie van deze activiteit mislukt bij poging.
+1. Op een andere AEM wordt een activiteit onder hetzelfde merk en met dezelfde naam gemaakt. Synchronisatie van deze activiteit mislukt bij poging.
 
 Deze situatie kan zich ook voordoen in de volgende omstandigheden:
 
@@ -221,7 +231,10 @@ Deze situatie kan zich ook voordoen in de volgende omstandigheden:
 Gebruik altijd unieke namen voor activiteiten om synchronisatieproblemen te voorkomen. Als een activiteit er niet in slaagt te synchroniseren, kunt u de campagne in Adobe Target verwijderen die dezelfde naam gebruikt als die campagne niet wordt gebruikt.
 
 >[!NOTE]
-Wanneer u een campagne maakt in Adobe Target, wordt aan elke campagne een eigenschap toegewezen `thirdPartyId t`die wordt aangeroepen. Wanneer u de campagne in Adobe Target verwijdert, `thirdPartyId` wordt deze niet verwijderd. U kunt niet `thirdPartyId` voor campagnes van verschillende types (AB, XT) opnieuw gebruiken en het kan niet manueel worden verwijderd. Geef elke campagne een unieke naam om dit probleem te voorkomen. campagnemenamen kunnen daarom niet opnieuw worden gebruikt in verschillende soorten campagnes.
-Als u dezelfde naam gebruikt in hetzelfde type campagne, overschrijft u de bestaande campagne.
-Als tijdens het synchroniseren de fout &quot;Verzoek is mislukt. `thirdPartyId` bestaat al.&quot; Wijzig de naam van de campagne en synchroniseer opnieuw.
+>
+>Wanneer u een campagne maakt in Adobe Target, wordt aan elke campagne een eigenschap toegewezen `thirdPartyId t`die wordt aangeroepen. Wanneer u de campagne in Adobe Target verwijdert, `thirdPartyId` wordt deze niet verwijderd. U kunt niet `thirdPartyId` voor campagnes van verschillende types (AB, XT) opnieuw gebruiken en het kan niet manueel worden verwijderd. Geef elke campagne een unieke naam om dit probleem te voorkomen. campagnemenamen kunnen daarom niet opnieuw worden gebruikt in verschillende soorten campagnes.
+>
+>Als u dezelfde naam gebruikt in hetzelfde type campagne, overschrijft u de bestaande campagne.
+>
+>Als tijdens het synchroniseren de fout &quot;Verzoek is mislukt. `thirdPartyId` bestaat al.&quot; Wijzig de naam van de campagne en synchroniseer opnieuw.
 

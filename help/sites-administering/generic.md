@@ -1,5 +1,5 @@
 ---
-ttitle: Administering generic eCommerce
+title: Algemene eCommerce beheren
 seo-title: Algemene eCommerce beheren
 description: De AEM generische oplossing verstrekt methodes om de handelsinformatie te beheren die binnen de bewaarplaats wordt gehouden.
 seo-description: De AEM generische oplossing verstrekt methodes om de handelsinformatie te beheren die binnen de bewaarplaats wordt gehouden.
@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 9167cbe2-2efb-422d-b58b-0c24b9476fe6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1207cd54d9d605b7fbf606393cd33b5c19b603f4
+source-git-commit: 06d6696a5493f0e166e400bcd9a379b7be062c1e
 workflow-type: tm+mt
-source-wordcount: '3008'
+source-wordcount: '3011'
 ht-degree: 0%
 
 ---
@@ -172,7 +172,7 @@ Voor elk afzonderlijk producttype is een steiger nodig. Het geschikte substraat 
 >
 >Dit betekent dat, door gebrek, zij door de [verzender](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html)worden geblokkeerd, zo vorm zo zoals vereist.
 
-#### Productinformatie bewerken - Voor aanraking geoptimaliseerde interface {#editing-product-information-touch-optimized-ui}
+#### Productinformatie bewerken - Voor aanraking geoptimaliseerde gebruikersinterface {#editing-product-information-touch-optimized-ui}
 
 1. Navigeer met de **Producten** -console (via **Handel**) naar de productinformatie.
 1. Een van de volgende methoden gebruiken:
@@ -675,7 +675,7 @@ Op de demo-site (Geometrixx Outdoors - Engels) ziet u het bonformulier op de car
 
 #### Bewerkordergegevens - Voor aanraking geoptimaliseerde interface {#editing-order-information-touch-optimized-ui}
 
-1. Gebruikend de **console van Orden** navigeert aan de orde.
+1. Met de **Orders** -console navigeert u naar de volgorde.
 1. Een van de volgende methoden gebruiken:
 
    * [snelle acties](/help/sites-authoring/basic-handling.md#quick-actions)

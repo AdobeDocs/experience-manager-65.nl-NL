@@ -105,7 +105,7 @@ Voer de volgende stappen uit om een aangepaste eigenschap toe te voegen aan alle
 
    >[!NOTE]
    >
-   >De gemeenschappelijke eigenschappen voor alle activa die u toevoegt verschijnen in het basislusje van de activa eigenschappen. Standaard worden de gemeenschappelijke eigenschappen die voor alle elementen zijn toegevoegd, weergegeven op de pagina met eigenschappen en op de pagina met het maken van elementen. Als u de algemene eigenschappen wilt verbergen, moet u dat <!--link to show / hide properties]-->doen.
+   >De gemeenschappelijke eigenschappen voor alle activa die u toevoegt verschijnen in het basislusje van de activa eigenschappen. Standaard worden de gemeenschappelijke eigenschappen die voor alle elementen zijn toegevoegd, weergegeven op de pagina met eigenschappen en op de pagina met het maken van elementen. Als u de algemene eigenschappen wilt verbergen, moet u dat doen.
 
 ### Scenario: Aangepaste vervolgkeuzelijsten en waarden toevoegen aan een aangepaste eigenschap/veld {#scenario-add-custom-drop-down-and-values-to-a-custom-property-field}
 

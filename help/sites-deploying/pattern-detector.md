@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: b5607343-a13b-4520-a771-f1a555bfcc7b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: d510decba9b2af23bab54c78779f98a36a6172d4
+source-git-commit: ba7ac70858b7b2fd610d63355a22a69c3a7586e3
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '544'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,7 @@ Dit zou kunnen dienen als een beoordeling van de ontwikkelingsinspanningen die g
 
 ## Instellen {#how-to-set-up}
 
-De patroondetector wordt afzonderlijk vrijgegeven als [één pakket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/pd-all-aem65) dat werkt aan elke bron AEM versies van 6.1 tot 6.5 voor AEM 6.5-upgrade. U kunt het programma installeren met [Package Manager](/help/sites-administering/package-manager.md).
+De patroondetector wordt afzonderlijk vrijgegeven als [één pakket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/compatpack/pd-all-aem65) dat werkt aan elke bron AEM versies van 6.1 tot 6.5 voor AEM 6.5-upgrade. U kunt het programma installeren met [Package Manager](/help/sites-administering/package-manager.md).
 
 ## Het gebruik {#how-to-use}
 

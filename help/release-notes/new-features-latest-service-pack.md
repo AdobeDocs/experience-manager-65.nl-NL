@@ -1,118 +1,54 @@
 ---
-title: Nieuw in Adobe Experience Manager 6.5 Service Pack 6
-description: Nieuw in Adobe Experience Manager 6.5 Service Pack 6
+title: Nieuw in Adobe Experience Manager 6.5 Service Pack 7
+description: Nieuw in Adobe Experience Manager 6.5 Service Pack 7
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: 34e41cf5984f5f69ae0ccead137fe4f180bd84ad
 workflow-type: tm+mt
-source-wordcount: '2534'
+source-wordcount: '2668'
 ht-degree: 0%
 
 ---
 
 
-# Nieuw in Adobe Experience Manager 6.5 Service Pack 6 {#aem-whats-new-service-pack-6}
+# Nieuw in Adobe Experience Manager 6.5 Service Pack 7 {#aem-whats-new-service-pack}
 
-Adobe Experience Manager 6.5 de dienstpakken verstrekken nieuwe eigenschappen, klant-gevraagde verhogingen, en prestaties, stabiliteit, en veiligheidsverbeteringen op kwartaalintervallen. De beschikbaarheid op kwartaalbasis maakt het gemakkelijk om tot nieuwe eigenschappen en innovaties toegang te hebben en te nemen.
+![Wit-nieuw](assets/whatsnew.jpeg)
 
-Dit artikel benadrukt de eigenschappen inbegrepen in recentste 6.5 Service Pack, [belangrijkste eigenschappen inbegrepen in de vorige 6.5 Pakken](#key-features-previous-service-packs)van de Dienst, en sommige van de [belangrijkste versies sinds Experience Manager 6.5.5.0](#key-releases-since-last-sp) .
+[!DNL Adobe Experience Manager] 6.5 de dienstpakken verstrekken nieuwe eigenschappen, klant-gevraagde verhogingen, en prestaties, stabiliteit, en veiligheidsverbeteringen op kwartaalintervallen. De beschikbaarheid op kwartaalbasis maakt het gemakkelijk om tot nieuwe eigenschappen en innovaties toegang te hebben en te nemen.
 
-## Adobe- [!DNL Experience Manager] sites {#aem-sites}
+Dit artikel benadrukt de eigenschappen inbegrepen in het recentste 6.5 Service Pack, [belangrijkste eigenschappen inbegrepen in de vorige 6.5 Pakken](#key-features-previous-service-packs)van de Dienst, en de [belangrijkste AEM versies sinds de laatste versie van het de dienstpak](#key-releases-since-last-sp) .
 
-### Beschikbaarheid van de bewerking Pagina verplaatsen in de asynchrone modus {#page-move-asynchronous}
+## Adobe [!DNL Experience Manager Sites] {#aem-sites}
 
-De bewerking Pagina verplaatsen is nu beschikbaar in de asynchrone modus. U kunt de bewerking Pagina verplaatsen niet alleen direct uitvoeren, maar ook later plannen.
+### Live Copy-pagina&#39;s die beschikbaar zijn voor rollout sorteren {#sort-livecopy-pages}
 
-## [!DNL Dynamic Media] {#dynamic-media}
+U kunt de pagina&#39;s van Live Copy die beschikbaar zijn voor rollout nu sorteren met de eigenschappen [!UICONTROL Name], [!UICONTROL Last modified date]en [!UICONTROL Last rollout date] . De eigenschap [!UICONTROL Last rollout date] voor een pagina is een nieuwe eigenschap die in deze release wordt geïntroduceerd.
 
-### CDN-inhoud in cache ongeldig maken {#invalidate-cdn-cached-content}
+### Beschikbaarheid van paginabewegingen en MSM-rollouts als asynchrone bewerkingen {#page-moves-msm-asynchronous}
 
-U kunt nu de [!DNL Dynamic Media] gebruikersinterface gebruiken om inhoud die in de cache is opgeslagen, ongeldig te maken. Hierdoor zijn de bijgewerkte elementen direct beschikbaar in plaats van te wachten tot de cache verloopt. U kunt CDN ongeldig maken door:
-
-* Een CDN-validatiesjabloon maken: Elementen en aan een sjabloon gekoppelde URL&#39;s selecteren
-
-* Elementen en bijbehorende voorinstellingen selecteren via de elementkiezer
-
-* URL&#39;s van volledige middelen toevoegen
-
-### Selectieve publicatie van activa aan [!DNL Experience Manager] en [!DNL Dynamic Media] {#selective-publishing}
-
-U kunt er nu voor kiezen om elementen selectief te publiceren of de publicatie ervan ongedaan te maken [!DNL Experience Manager] of [!DNL Dynamic Media] met [!UICONTROL Quick Publish] de wizard of de [!UICONTROL Manage Publication] wizard. U kunt de `Publish` of de `Unpublish` modus ook instellen op mapniveau.
+U kunt nu de paginabewegingen en MSM-rollouts uitvoeren als asynchrone bewerkingen om het effect ervan op de prestaties bij uitvoering te beperken. U kunt de bewerkingen plannen voor directe of latere uitvoering. De status van bijbehorende taken en processtappen wordt weergegeven in een console, die nuttig is voor het controleren van grootschalige MSM-rollouts.
 
 ## [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
-### Verbeteringen voor toegankelijkheid {#accessibility-assets-6560}
+* Gebruikers kunnen digitale elementen sorteren in de Kaart- en kolomweergave.
 
-* **Verbeterde focus van de gebruikersinterface tijdens toetsenbordnavigatie**, bijvoorbeeld focus op:
-
-   * `x` in het [!UICONTROL Version Preview] dialoogvenster van een element in [!UICONTROL Timeline].
-
-   * Opties voor een uitvoerbare gebruikersinterface.
-
-   * Veld e-mailen in het [!UICONTROL Share Link] dialoogvenster en veld om een gesloten gebruikersgroep toe te voegen op het [!UICONTROL Permission] tabblad Map [!UICONTROL Properties].
-
-* **Verbeterde functionaliteit met toetsenbordtoetsen**
-
-   Gebruikers kunnen toetsenbordtoetsen gebruiken om besturingselementen in de formuliereditor voor metagegevensschema te slepen in de bladermodus van schermlezers.
-
-* **Verbeterde bruikbaarheid voor schermlezers**, als gevolg van het volgende:
-
-   * Schermlezers geven het doel van video- en audiospelers aan.
-
-   * Schermlezers geven aan wat het doel is van de gebruikersinterfaceopties om de geselecteerde tags te verwijderen met behulp van [!UICONTROL Tags selection dialog] de elementen [!UICONTROL Properties].
-
-   * Schermlezers kondigen de rijkoppen en rij-items van tabellen aan, zodat gebruikers weten welke items tot dezelfde rij behoren.
-
-   * Beschrijvende en betekenisvolle paginatitel van zoekpagina.
-
-   * Schermlezers geven de opties in het deelvenster met zoekfilters aan als uitbreidbare accordeons.
-
-### Andere verbeteringen in elementen {#other-enhancements-assets-6560}
-
-* Gebruikersgroepen die zijn gekoppeld aan mappen (privégroepen en niet-privégroepen) worden nu verwijderd uit de opslagplaats wanneer deze mappen worden [verwijderd](/help/assets/private-folder.md#delete-private-folder). Bestaande redundante, zwevende, ongebruikte en automatisch gegenereerde gebruikersgroepen kunnen echter met JMX uit de opslagplaats worden opgeschoond.
+* [!DNL Assets] en [!DNL Dynamic Media] bieden meerdere toegankelijkheidsverbeteringen. De verbeteringen hebben betrekking op toetsenbordnavigatie, gebruik van schermlezers en vergelijkbare verbeteringen om het gebruik van ondersteunende hulpmiddelen (AT) mogelijk te maken. Zie [Elementverbeteringen](/help/release-notes/sp-release-notes.md#assets-6570) en [[!DNL Dynamic Media] verbeteringen](/help/release-notes/sp-release-notes.md#dynamic-media-6570). <!-- TBD: Add link to a11y article after go-live. Adding RN link for now. -->
 
 ## [!DNL Adobe Experience Manager Forms] {#aem-forms}
 
-### Een adaptief formulier vooraf invullen op de client {#prefill-merge-data-at-client}
+>[!NOTE]
+>
+>[!DNL Experience Manager Forms] add-on pakketten worden een week na de geplande release van [!DNL Experience Manager] Service Pack beschikbaar gesteld. [!DNL Experience Manager] 6.5 Service Pack 7 (6.5.7.0) is gepland om op 26 november 2020 vrij te geven.
 
-Wanneer u een adaptief formulier vooraf instelt, voegt de [!DNL Experience Manager Forms] server gegevens samen met een adaptief formulier en levert het ingevulde formulier aan u. De handeling voor het samenvoegen van gegevens vindt standaard plaats op de server.
-U kunt de [!DNL Experience Manager Forms] server nu zodanig configureren dat de handeling voor het samenvoegen van gegevens wordt [uitgevoerd op de client](../../help/forms/using/prepopulate-adaptive-form-fields.md) in plaats van op de server. Hierdoor wordt de tijd die nodig is om adaptieve formulieren vooraf in te vullen en weer te geven, aanzienlijk verkort.
+## Belangrijkste kenmerken in vorige [!DNL Experience Manager] 6.5-servicepacks {#key-features-previous-service-packs}
 
-### Integratie van formuliergegevensmodellen met RESTful-API&#39;s op een server met 2-wegs SSL-implementatie {#fdm-integration-rest-apis-two-way-ssl}
+### [!DNL Experience Manager Sites] {#aem-sites-previous-service-packs}
 
-[!DNL Experience Manager Forms] Het formuliergegevensmodel kan nu worden [geïntegreerd met RESTful-API&#39;s op een server waarop een 2-wegs-SSL is geïmplementeerd](../../help/forms/using/configure-data-sources.md).
+#### Beschikbaarheid van de bewerking Pagina verplaatsen in de asynchrone modus (6.5.6.0) {#page-move-asynchronous}
 
-
-### Toegevoegde ondersteuning voor [!DNL Adobe Sign] tekstcodes in Automated Forms Conversion Service {#sign-integration-acroform-afcs}
-
-Als een AcroForm-formulier [!DNL Adobe Sign] tekstcodes bevat, worden deze velden nu herkend en weergegeven als [!DNL Adobe Sign] velden in het adaptieve formulier dat is geconverteerd met [!DNL Automated Forms Conversion service]. Een ondertekenaar kan dergelijke velden invullen terwijl hij het adaptieve formulier ondertekent.
-
-### Support to convert colored PDF forms to adaptive forms {#colored-PDF-forms}
-
-U kunt gekleurde PDF forms omzetten [!DNL Automated Forms Conversion service] in adaptieve formulieren.
-
-### Steun voor SMB 2 en SMB 3 protocollen {#smb-support}
-
-[!DNL Experience Manager Forms] steunt nu SMB 2 en SMB 3 protocollen.
-
-### Verbeterd in cache plaatsen voor vertaalde adaptieve formulierpagina&#39;s {#enhanced-caching-translated-adaptive-forms}
-
-U kunt nu de [landinstelling als een kiezer opgeven in het aangepaste formulier-URL in plaats van een argument in de aangepaste vorm-URL](../../help/forms/using/supporting-new-language-localization.md). Hiermee kunt u vertaalde adaptieve formulieren in de cache plaatsen [!DNL Experience Manager Dispatcher]. Het in cache plaatsen van vertaald adaptief formulier was niet mogelijk in eerdere versies. Zie Aangepaste formuliercache [configureren in verzender](../../help/forms/using/configure-adaptive-forms-cache.md)voor gedetailleerde informatie over het configureren van caching voor het gebruik van locale als kiezer in de aangepaste formulier-URL.
-
-### Uitvoer van formuliergegevensmodelservice opslaan naar een variabele {#save-fdm-service-to-variable}
-
-Met het formuliergegevensmodel kunt u de uitvoer van een service van een formuliergegevensmodel opslaan in een variabele. [!DNL Experience Manager Forms] Hiermee wordt nu automatisch het type van de service van het formuliergegevensmodel toegewezen aan het type variabele.
-
-### Meerdere bestanden bijvoegen voor de component Bestandsbijlage {#attach-multiple-files}
-
-U kunt nu meerdere bestanden [](../../help/forms/using/introduction-forms-authoring.md) koppelen aan de [!UICONTROL File Attachment] component van adaptieve formulieren.
-
-
-
-## Belangrijkste eigenschappen in vorige Experience Manager 6.5 de Pakken van de Dienst {#key-features-previous-service-packs}
-
-### Sites Experience Managers {#aem-sites-previous-service-packs}
+De bewerking Pagina verplaatsen is nu beschikbaar in de asynchrone modus. U kunt de bewerking Pagina verplaatsen niet alleen direct uitvoeren, maar ook later plannen.
 
 #### Verbeteringen van de toegankelijkheid (6.5.5.0) {#accessibility-sites}
 
@@ -158,6 +94,36 @@ U kunt nu stijlen selecteren in het dialoogvenster met het verbeterde stijlsyste
 
 ### [!DNL Adobe Experience Manager Assets] {#aem-assets-previous-service-packs}
 
+#### Toegankelijkheidsverbeteringen (6.5.6.0) {#accessibility-assets-6560}
+
+* **Verbeterde focus van de gebruikersinterface tijdens toetsenbordnavigatie**, bijvoorbeeld focus op:
+
+   * `x` in het [!UICONTROL Version Preview] dialoogvenster van een element in [!UICONTROL Timeline].
+
+   * Opties voor een uitvoerbare gebruikersinterface.
+
+   * Veld e-mailen in het [!UICONTROL Share Link] dialoogvenster en veld om een gesloten gebruikersgroep toe te voegen op het [!UICONTROL Permission] tabblad Map [!UICONTROL Properties].
+
+* **Verbeterde functionaliteit met toetsenbordtoetsen**
+
+   Gebruikers kunnen toetsenbordtoetsen gebruiken om besturingselementen in de formuliereditor voor metagegevensschema te slepen in de bladermodus van schermlezers.
+
+* **Verbeterde bruikbaarheid voor schermlezers**, als gevolg van het volgende:
+
+   * Schermlezers geven het doel van video- en audiospelers aan.
+
+   * Schermlezers geven aan wat het doel is van de gebruikersinterfaceopties om de geselecteerde tags te verwijderen met behulp van [!UICONTROL Tags selection dialog] de elementen [!UICONTROL Properties].
+
+   * Schermlezers kondigen de rijkoppen en rij-items van tabellen aan, zodat gebruikers weten welke items tot dezelfde rij behoren.
+
+   * Beschrijvende en betekenisvolle paginatitel van zoekpagina.
+
+   * Schermlezers geven de opties in het deelvenster met zoekfilters aan als uitbreidbare accordeons.
+
+#### Andere verbeteringen in [!DNL Assets] (6.5.6.0) {#other-enhancements-assets-6560}
+
+* Gebruikersgroepen die zijn gekoppeld aan mappen (privégroepen en niet-privégroepen) worden nu verwijderd uit de opslagplaats wanneer deze mappen worden [verwijderd](/help/assets/private-folder.md#delete-private-folder). De bestaande overbodige, zwevende, ongebruikte en automatisch gegenereerde gebruikersgroepen kunnen echter met JMX uit de opslagplaats worden verwijderd.
+
 #### Toegankelijkheidsverbeteringen in [!DNL Assets] (6.5.5.0) {#assets-accessibility}
 
 [!DNL Experience Manager Assets] is nu toegankelijker in overeenstemming met de Web Content Accessibility Guidelines (WCAG). De toegankelijkheid is verbeterd dankzij de volgende verbeteringen:
@@ -201,7 +167,7 @@ De stappen om [!DNL Experience Manager Assets] met [!DNL Brand Portal] te vormen
 * Er zijn beperkingen in de datum- en tijdnotatie opgenomen in veldlabels van datumvelden, zodat gebruikers de datum in de juiste notatie kunnen invoeren met het toetsenbord.
 Bijvoorbeeld, `On Time (MM-DD-YYYY HH:mm)`. Hier is MM maand in het formaat van twee cijfers, YYYY is jaar, DD is dag in het formaat van twee cijfers, HH is uur in 24-uurs militair formaat, en mm is minuut.
 
-* Schermlezers kondigen nu het `X` symbool aan om de geselecteerde tags samen met het aantal geselecteerde tags te verwijderen.
+* Schermlezers geven aan dat u de geselecteerde tags (`X` symbolen) en het aantal geselecteerde tags wilt verwijderen.
 
 #### Kolom Sorteerbaar voor aanmaakdatum van elementen in lijstweergave (6.5.3.0) {#sortable-date-created-column}
 
@@ -215,6 +181,20 @@ Een nieuwe sorteerbare kolom voor de aanmaakdatum van elementen wordt toegevoegd
 
 ###  Dynamic Media {#dynamic-media-previous-service-packs}
 
+#### CDN-inhoud in cache ongeldig maken (6.5.6.0) {#invalidate-cdn-cached-content}
+
+U kunt nu de [!DNL Dynamic Media] gebruikersinterface gebruiken om inhoud die in de cache is opgeslagen, ongeldig te maken. Hierdoor zijn de bijgewerkte elementen direct beschikbaar in plaats van te wachten tot de cache verloopt. U kunt CDN ongeldig maken door:
+
+* Een CDN-validatiesjabloon maken: Elementen en aan een sjabloon gekoppelde URL&#39;s selecteren
+
+* Elementen en bijbehorende voorinstellingen selecteren via de elementkiezer
+
+* URL&#39;s van volledige middelen toevoegen
+
+#### Selectieve publicatie van activa naar [!DNL Experience Manager] en [!DNL Dynamic Media] (6.5.6.0) {#selective-publishing}
+
+U kunt er nu voor kiezen om elementen selectief te publiceren of de publicatie ervan ongedaan te maken [!DNL Experience Manager] of [!DNL Dynamic Media] met [!UICONTROL Quick Publish] de wizard of de [!UICONTROL Manage Publication] wizard. U kunt de `Publish` of de `Unpublish` modus ook instellen op mapniveau.
+
 #### Smart Imaging voor dynamische media {#smart-imaging}
 
 Slimme beeldverwerking gebruikt de unieke weergavekenmerken van elke gebruiker om automatisch de juiste afbeeldingen te leveren die zijn geoptimaliseerd voor zijn of haar ervaring, wat resulteert in betere prestaties en betrokkenheid. Slimme beeldverwerking werkt met bestaande voorinstellingen voor afbeeldingen en maakt gebruik van intelligentie tijdens de laatste milliseconde van levering om de bestandsgrootte van de afbeelding verder te beperken op basis van de snelheid van de browser of netwerkverbinding. Zie [Slimme afbeeldingen](../assets/imaging-faq.md).
@@ -225,7 +205,40 @@ Slim uitsnijden voor video-een optionele functie die beschikbaar is in videoprof
 
 ### Experience Manager Forms {#aem-forms-previous-service-packs}
 
-#### De Adobe Experience Manager Inbox-kolommen aanpassen (6.5.5.0){#customize-aem-inbox-columns}
+#### Een adaptief formulier vooraf invullen op de client (6.5.6.0) {#prefill-merge-data-at-client}
+
+Wanneer u een adaptief formulier vooraf instelt, voegt de [!DNL Experience Manager Forms] server gegevens samen met een adaptief formulier en levert het ingevulde formulier aan u. De handeling voor het samenvoegen van gegevens vindt standaard plaats op de server.
+U kunt de [!DNL Experience Manager Forms] server nu zodanig configureren dat de handeling voor het samenvoegen van gegevens wordt [uitgevoerd op de client](../../help/forms/using/prepopulate-adaptive-form-fields.md) in plaats van op de server. Hierdoor wordt de tijd die nodig is om adaptieve formulieren vooraf in te vullen en weer te geven, aanzienlijk verkort.
+
+#### Integratie van formuliergegevensmodellen met RESTful-API&#39;s op een server met 2-wegs SSL-implementatie (6.5.6.0) {#fdm-integration-rest-apis-two-way-ssl}
+
+[!DNL Experience Manager Forms] Het formuliergegevensmodel kan nu worden [geïntegreerd met RESTful-API&#39;s op een server waarop een 2-wegs-SSL is geïmplementeerd](../../help/forms/using/configure-data-sources.md).
+
+#### Toegevoegde steun voor de Markeringen van de [!DNL Adobe Sign] Tekst in de Dienst van de Automatede form conversion (6.5.6.0) {#sign-integration-acroform-afcs}
+
+Als een AcroForm-formulier [!DNL Adobe Sign] tekstcodes bevat, worden deze velden nu herkend en weergegeven als [!DNL Adobe Sign] velden in het adaptieve formulier dat is geconverteerd met [!DNL Automated Forms Conversion service]. Een ondertekenaar kan dergelijke velden invullen terwijl hij het adaptieve formulier ondertekent.
+
+#### Support to convert colored PDF forms to adaptive forms (6.5.6.0) {#colored-PDF-forms}
+
+U kunt gekleurde PDF forms omzetten [!DNL Automated Forms Conversion service] in adaptieve formulieren.
+
+#### Steun voor SMB 2 en SMB 3 protocollen (6.5.6.0) {#smb-support}
+
+[!DNL Experience Manager Forms] steunt nu SMB 2 en SMB 3 protocollen.
+
+#### Verbeterd in cache plaatsen voor vertaalde adaptieve formulierpagina&#39;s (6.5.6.0) {#enhanced-caching-translated-adaptive-forms}
+
+U kunt nu de [landinstelling als een kiezer opgeven in het aangepaste formulier-URL in plaats van een argument in de aangepaste vorm-URL](../../help/forms/using/supporting-new-language-localization.md). Hiermee kunt u vertaalde adaptieve formulieren in de cache plaatsen [!DNL Experience Manager Dispatcher]. Het in cache plaatsen van vertaald adaptief formulier was niet mogelijk in eerdere versies. Zie Aangepaste formuliercache [configureren in verzender](../../help/forms/using/configure-adaptive-forms-cache.md)voor gedetailleerde informatie over het configureren van caching voor het gebruik van locale als kiezer in de aangepaste formulier-URL.
+
+#### Uitvoer van formuliergegevensmodelservice opslaan naar een variabele (6.5.6.0) {#save-fdm-service-to-variable}
+
+Met het formuliergegevensmodel kunt u de uitvoer van een service van een formuliergegevensmodel opslaan in een variabele. [!DNL Experience Manager Forms] Hiermee wordt nu automatisch het type van de service van het formuliergegevensmodel toegewezen aan het type variabele.
+
+#### Meerdere bestanden koppelen voor component Bestandsbijlage (6.5.6.0) {#attach-multiple-files}
+
+U kunt nu meerdere bestanden [](../../help/forms/using/introduction-forms-authoring.md) koppelen aan de [!UICONTROL File Attachment] component van adaptieve formulieren.
+
+#### De Adobe Experience Manager Inbox-kolommen aanpassen (6.5.5.0) {#customize-aem-inbox-columns}
 
 U kunt een [!DNL Experience Manager] Postvak IN aanpassen om de standaardtitel van een kolom te wijzigen, de positie van een kolom opnieuw te ordenen en extra kolommen weer te geven op basis van de gegevens van een werkstroom. Leden van `administrators` of `workflow-administrators` groep kunnen de kolommen aanpassen. Zie [Beheer](../sites-authoring/inbox.md#inbox-admin-control)voor meer informatie.
 
@@ -308,21 +321,23 @@ U kunt een begindatum en -tijd en een einddatum en -tijd opgeven die van kracht 
 
 U kunt de batch-API gebruiken om meerdere interactieve communicatie van een sjabloon te maken. De sjabloon is een interactieve communicatie zonder gegevens. De batch-API combineert gegevens met een sjabloon voor interactieve communicatie. De API is nuttig bij de massaproductie van interactieve communicatie. Bijvoorbeeld telefoonrekeningen, creditcardoverzichten voor meerdere klanten. Zie Meerdere interactieve communicatie [genereren met de Batch-API](../forms/using/generate-multiple-interactive-communication-using-batch-api.md).
 
-## Toetsreleases sinds Adobe Experience Manager 6.5 SP5 {#key-releases-since-last-sp}
+## Toetsreleases sinds Adobe Experience Manager 6.5 SP6 {#key-releases-since-last-sp}
 
-Tussen 04 juni 2020 en 3 september 2020 heeft Adobe het volgende uitgebracht, in aanvulling op de servicepacks en cumulatieve fixeerpakketten:
+Tussen 3 september 2020, 2020 en 26 november 2020 heeft Adobe het volgende uitgebracht, naast de servicepacks en cumulatieve fixepacks:
 
-* [Het portaal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) van de Distributie van de software is beschikbaar om de dienstpakken van de Experience Manager, cumulatieve fixepakketten, hete moeilijke situaties, en eigenschapspakken te downloaden.
+* [!DNL Adobe Experience Manager] als Cloud Service [2020.9.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-2020-9-0.html?lang=en#release-notes) en [2020.10.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-2020-10-0.html?lang=en#release-notes).
 
-* [!DNL Adobe Experience Manager as a cloud service] [2020.7.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/release-notes/release-notes-2020-7-0.html) en [2020.8.0](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
+* [[!DNL Experience Manager] bureaubladtoepassing 2.0 (2.0.3.2)](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
 
-* [Experience Manager desktop app 2.0 (2.0.3.2)](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html).
+* [WKND Reference Site - 0.0.6](https://github.com/adobe/aem-guides-wknd/releases/tag/aem-guides-wknd-0.0.6)
 
-* [Experience Managers Screens: Feature Pack 202008](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/release-notes/release-notes-fp-202008.html)
+* [Experience Managers Screens: Feature Pack 202008](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/release-notes/release-notes-fp-202008.html)
+
+* [Adobe Asset Link v2.2](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html)
 
 >[!MORELIKETHIS]
 >
->* [Adobe Experience Manager 6.5-documentatie](../user-guide/home.md)
->* [Algemene opmerkingen bij de release voor Adobe Experience Manager 6.5](release-notes.md)
->* [Opmerkingen bij de release van Service Pack voor Adobe Experience Manager 6.5](sp-release-notes.md)
+>* [[!DNL Adobe Experience Manager] 6.5 Documentatie](../user-guide/home.md)
+>* [Algemene opmerkingen bij de release voor [!DNL Adobe Experience Manager] 6.5](release-notes.md)
+>* [Opmerkingen bij de release van het servicepack voor [!DNL Adobe Experience Manager] 6.5](sp-release-notes.md)
 

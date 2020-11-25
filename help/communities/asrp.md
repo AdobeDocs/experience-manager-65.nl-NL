@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 3e81b519-57ca-4ee1-94bd-7adac4605407
 docset: aem65
 translation-type: tm+mt
-source-git-commit: fd205cd6253991f527f87b9868d503f64a99a600
+source-git-commit: ef57d53fc780bd222abbe994fc71e133ce8a77fc
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '815'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Zie ook [Kenmerken van Opties](/help/communities/working-with-srp.md#characteris
 
 Een extra vergunning wordt vereist voor het gebruik van ASRP.
 
-Om uw plaats van AEM Communities te vormen om ASRP voor UGC te gebruiken, zorg ervoor dat u het volgende hebt:
+Als u uw AEM Communities-site wilt configureren voor gebruik van ASRP voor UGC, neemt u contact op met uw accountvertegenwoordiger voor:
 
 * Het Centrum URL van gegevens (adres van het eindpunt van ASRP)
 * Consumentencode

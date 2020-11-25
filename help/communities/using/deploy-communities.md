@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: b29945dc73e85504cd42102eafb9e2bf6198c9cc
 workflow-type: tm+mt
-source-wordcount: '1891'
+source-wordcount: '1890'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 1%
 
 ## Controlelijst voor installatie {#installation-checklist}
 
-**Voor het[AEM platform](/help/sites-deploying/deploy.md#what-is-aem)**:
+**Voor het [AEM platform](/help/sites-deploying/deploy.md#what-is-aem)**:
 
 * Installeer de nieuwste [AEM 6.5 Updates](#aem64updates).
 
@@ -43,7 +43,7 @@ ht-degree: 1%
 * [cryptosleutel repliceren](#replicate-the-crypto-key)
 * Als u ondersteuning biedt voor globalization, [kunt u geautomatiseerde vertalingen](/help/sites-administering/translation.md)instellen (voorbeeldinstallatie is beschikbaar voor ontwikkeling).
 
-**Voor het vermogen van de[Gemeenschappen](/help/communities/overview.md)**:
+**Voor het vermogen van de [Gemeenschappen](/help/communities/overview.md)**:
 
 * Als het opstellen van [publiceer landbouwbedrijf](/help/sites-deploying/recommended-deploys.md#tarmk-farm), [identificeer de primaire uitgever](#primary-publisher)
 
@@ -90,7 +90,7 @@ ht-degree: 1%
 
 ## Latest Releases {#latest-releases}
 
-AEM 6.5 Communautaire algemene passagiersschepen met het communautaire pakket. Zie de opmerkingen bij de release [AEM 6.5 voor informatie over updates van AEM 6.5](/help/release-notes/release-notes.md#experiencemanagercommunities)Gemeenschappen [](/help/release-notes/release-notes.md#communities-release-notes.html).
+AEM 6.5 Communautaire algemene vergadering omvat het communautaire pakket. Zie de opmerkingen bij de release [AEM 6.5 voor informatie over updates van AEM 6.5](/help/release-notes/release-notes.md#experiencemanagercommunities)Gemeenschappen [](/help/release-notes/release-notes.md#communities-release-notes.html).
 
 ### AEM 6.5 Updates {#aem-updates}
 
@@ -123,7 +123,7 @@ De noodzakelijke stappen zijn:
    * Bijvoorbeeld https://localhost:4502/system/console/bundles
    * Selecteer **`Install/Update`**
    * Bladeren... om de bundel te selecteren die uit het gedownloade ZIP-archief is geëxtraheerd
-   * Controleer of het JDBC-stuurprogramma van *Oracle Corporation voor MySQLcom.mysql.jdbc* actief is en start dit als dit niet het geval is (of controleer de logboeken)
+   * Controleer of het JDBC-stuurprogramma voor MySQLcom.mysql.jdbc *van* Oracle Corporation actief is en start dit als dat niet het geval is (of controleer de logboeken)
 
 1. Als het installeren op een bestaande plaatsing nadat JDBC is gevormd, dan opnieuw bindt JDBC aan de nieuwe schakelaar door de configuratie JDBC van de Webconsole op te slaan:
 

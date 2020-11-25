@@ -3,9 +3,9 @@ title: Toegankelijkheid in [!DNL Experience Manager Assets]
 description: Zorg dat u weet hoe toegankelijkheidsfuncties gebruikers met een handicap [!DNL Adobe Experience Manager] 6.5 [!DNL Assets] helpen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 00f5a6194c8c29d358f362441c155c9c2a52cac7
+source-git-commit: e056d25cf16d79e8eadc80b9cb17b60b2ba8d7e1
 workflow-type: tm+mt
-source-wordcount: '1887'
+source-wordcount: '1900'
 ht-degree: 1%
 
 ---
@@ -42,8 +42,7 @@ Possible topics to cover in this article are below.
 
 Zie de pagina [Accessibility conformance report](https://www.adobe.com/accessibility/compliance.html) (ACR) voor informatie over een rapport met details over het compatibiliteitsniveau.
 
-<!-- TBD: Add link after release.
-To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dynamic Media]](/). -->
+Zie [!DNL Dynamic Media] toegankelijkheid in om te weten hoe [toegankelijk is [!DNL Dynamic Media]](/help/assets/accessibility-dm.md).
 
 ## Hulptechnologieën {#at-support}
 
@@ -224,7 +223,8 @@ Gebruik de volgende methoden om feedback te geven, vragen te stellen en productv
 
 >[!MORELIKETHIS]
 >
->* [Release-aantekeningen over de verbeteringen die in elke release](/help/release-notes/new-features-latest-service-pack.md)zijn aangebracht.
+>* [Toegankelijkheidsfuncties in [!DNL Dynamic Media]](/help/assets/accessibility-dm.md).
+>* [Nota&#39;s van de versie van verhogingen die in elke versie](/help/release-notes/new-features-latest-service-pack.md)Service Pack worden gedaan.
 >* [[!DNL Adobe Experience Manager] toegankelijkheidsrichtlijnen](/help/managing/web-accessibility.md).
 >* [Conformiteitsrapporten (ACR) en VPAT-lijsten voor Adobe-oplossingen](https://www.adobe.com/accessibility/compliance.html).
 

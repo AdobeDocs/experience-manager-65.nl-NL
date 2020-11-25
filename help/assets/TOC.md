@@ -7,9 +7,9 @@ user-guide-title: Hulplijn voor middelen
 breadcrumb-title: Hulplijn voor middelen
 user-guide-description: Digitale middelen maken, beheren, leveren en optimaliseren.
 translation-type: tm+mt
-source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
+source-git-commit: caf5737a05a312308f817ac24a3800965d2c2555
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '585'
 ht-degree: 34%
 
 ---
@@ -21,6 +21,7 @@ ht-degree: 34%
 + [[!DNL Experience Manager] 6.5 Opmerkingen bij de release van activa](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/assets.html)
 + [Informatie over DAM](assets.md)
 + [Aanbevolen procedures voor elementen](best-practices-for-assets.md)
++ [Toegankelijkheid in [!DNL Assets]](accessibility.md)
 + Experience Manager-elementen gebruiken {#using}
    + [[!DNL Assets] homepage](assets-home-page.md)
    + [Digitale middelen zoeken](search-assets.md)

@@ -4,9 +4,9 @@ description: Leer hoe u de vereiste elementen [!DNL Adobe Experience Manager] in
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 752f8a305f689a9aa1377533108d28c714da8afd
+source-git-commit: f5aa1d31f3b31e29073937e044c8fbac27138c4d
 workflow-type: tm+mt
-source-wordcount: '5727'
+source-wordcount: '5720'
 ht-degree: 4%
 
 ---
@@ -411,9 +411,9 @@ U kunt de volgende handelingen uitvoeren met de middelen waarin u hebt gezocht [
 
 ### Zoekresultaten sorteren {#sort}
 
-U kunt zoekresultaten sorteren om sneller de vereiste elementen te vinden. U kunt de zoekresultaten sorteren in de lijstweergave en alleen wanneer u **[[!UICONTROL Files]](#searchui)** in het **[!UICONTROL Filters]** deelvenster selecteert. [!DNL Assets] gebruikt sorteren op de server om snel alle assets (hoe talrijk ook) in een map of de resultaten van een zoekopdracht te sorteren. Sorteren op de server levert sneller en nauwkeuriger resultaten op dan sorteren op de client.
+U kunt zoekresultaten sorteren om sneller de vereiste elementen te vinden. U kunt de zoekresultaten alleen sorteren wanneer u **[[!UICONTROL Files]](#searchui)** in het **[!UICONTROL Filters]** deelvenster selecteert. [!DNL Assets] gebruikt sorteren op de server om snel alle assets (hoe talrijk ook) in een map of de resultaten van een zoekopdracht te sorteren. Sorteren op de server levert sneller en nauwkeuriger resultaten op dan sorteren op de client.
 
-In de lijstweergave kunt u de zoekresultaten op dezelfde manier sorteren als elementen in een willekeurige map. Sorteren werkt op deze kolommen: Naam, Titel, Status, Dimension, Grootte, Classificatie, Gebruik (Gemaakt op), (Datum) Gewijzigd, (Datum) Gepubliceerd, Workflow en Uitgecheckt.
+U kunt de zoekresultaten op dezelfde manier sorteren als elementen in een willekeurige map. Sorteren werkt op deze kolommen: Naam, Titel, Status, Dimension, Grootte, Classificatie, Gebruik (Gemaakt op), (Datum) Gewijzigd, (Datum) Gepubliceerd, Workflow en Uitgecheckt.
 
 Zie [beperkingen](#limitations)voor beperkingen van de sorteerfunctionaliteit.
 

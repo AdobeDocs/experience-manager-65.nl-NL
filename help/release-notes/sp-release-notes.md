@@ -4,9 +4,9 @@ description: De nota's van de versie specifiek voor [!DNL Adobe Experience Manag
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 34e41cf5984f5f69ae0ccead137fe4f180bd84ad
+source-git-commit: e056d25cf16d79e8eadc80b9cb17b60b2ba8d7e1
 workflow-type: tm+mt
-source-wordcount: '3694'
+source-wordcount: '3703'
 ht-degree: 0%
 
 ---
@@ -139,7 +139,7 @@ Hier volgt een lijst met oplossingen uit de release van [!DNL Experience Manager
 
 [!DNL Adobe Experience Manager] 6.5.7.0 [!DNL Assets] verhelpt de volgende problemen en biedt de volgende verbeteringen.
 
-* De volgende verbeteringen zijn uitgevoerd voor toegankelijkheid in [!DNL Experience Manager Assets]:
+* De volgende verbeteringen zijn aangebracht voor de toegankelijkheid in [!DNL Experience Manager Assets] deze release. Zie [toegankelijkheidsfuncties in [!DNL Assets]](/help/assets/accessibility.md)voor meer informatie.
 
    * Wanneer u met een toetsenbord door de tijdlijn navigeert, kan de `Esc` toets de [!UICONTROL Show All] optie samenvouwen zonder de focus te verliezen (CQ-4293598).
    * Wanneer u navigeert met de Tab-toets op het toetsenbord, behoudt het tagveld de focus nadat u de laatste tag uit de toegevoegde tags hebt verwijderd (NPR-35109).
@@ -193,7 +193,7 @@ Hier volgt een lijst met oplossingen uit de release van [!DNL Experience Manager
 
 #### [!DNL Dynamic Media] {#dynamic-media-6570}
 
-* De volgende belangrijke verbeteringen zijn aangebracht op het gebied van toegankelijkheid in [!DNL Dynamic Media] (CQ-4290306). Zie de toegankelijkheidsfuncties in [!DNL Dynamic Media]voor meer informatie.  <!-- TBD: link to DM content post GA -->
+* De volgende verbeteringen zijn aangebracht op het gebied van toegankelijkheid in [!DNL Dynamic Media] (CQ-4290306). Zie [toegankelijkheidsfuncties in [!DNL Dynamic Media]](/help/assets/accessibility-dm.md)voor meer informatie.
 
    * Schermlezers (JAWS, Narrator) vertellen de naam, rol en status van de menu-items in de menuoptie Grootte insluiten (CQ-4290927).
    * Gebruikers kunnen met de `Tab` toets navigeren in het dialoogvenster E-mailkoppeling (CQ-4290926).

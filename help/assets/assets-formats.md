@@ -3,9 +3,9 @@ title: Ondersteunde bestandsindelingen en MIME-typen
 description: Bestandsindelingen en MIME-typen worden ondersteund [!DNL Assets] and [!DNL Dynamic Media] door en de functies worden ondersteund voor elke indeling.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c2c0f38d0c8e403264db05064d4423ef46880d9a
+source-git-commit: 83c5e92c55f374cc0a8f8bf0f4af3333893f4a59
 workflow-type: tm+mt
-source-wordcount: '1624'
+source-wordcount: '1605'
 ht-degree: 2%
 
 ---
@@ -237,7 +237,7 @@ De ondersteunde archiefindelingen en de toepasbaarheid van de algemene DAM-workf
 
 ## Overige ondersteunde indelingen {#other-supported-formats}
 
-De gebruikelijke DAM-functies zoals opslag, versioning, ACL, workflow, publiceren en metagegevensbeheer, behalve [!DNL Dynamic Media] levering, worden voor veel bestandsindelingen ondersteund. De toepasbaarheid van de functies voor een aantal specifieke bestandsindelingen wordt hieronder beschreven.
+De toepasbaarheid van de gebruikelijke DAM-functies voor een paar specifieke bestandsindelingen wordt hieronder beschreven.
 
 | Indelingen | Opslag | Versioning | Workflow | Publiceren | Toegangsbeheer | Dynamische levering van media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|

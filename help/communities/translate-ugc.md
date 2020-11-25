@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: bfaf80c5-448b-47fb-9f22-57ee0eb169b2
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: b29945dc73e85504cd42102eafb9e2bf6198c9cc
 workflow-type: tm+mt
-source-wordcount: '1091'
+source-wordcount: '1090'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Wanneer een kader van de vertaalintegratie naast de vertaaldienstverlener wordt 
 
 ## De standaardvertaalservice {#the-default-translation-service}
 
-AEM Communities wordt geleverd met een [proeflicentie](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license) voor een [standaardvertaalservice](../../help/sites-administering/tc-msconf.md) die is ingeschakeld voor verschillende talen.
+AEM Communities bevat een [proeflicentie](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license) voor een [standaardvertaalservice](../../help/sites-administering/tc-msconf.md) die voor verschillende talen is ingeschakeld.
 
 Wanneer u een communitysite [](sites-console.md)maakt, wordt de standaardvertaalservice ingeschakeld wanneer deze `Allow Machine Translation` wordt gecontroleerd vanuit het subdeelvenster [TRANSLATION](sites-console.md#translation) .
 

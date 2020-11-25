@@ -3,9 +3,9 @@ title: Use Connected Assets to share DAM assets in [!DNL Sites]
 description: Gebruik de middelen die beschikbaar zijn op een [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] externe implementatie.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 916b49572981115f6178c04f260ce63bcfc6d054
+source-git-commit: f0d91a32caa4d3b862d852028e3bc5547aeb8015
 workflow-type: tm+mt
-source-wordcount: '2165'
+source-wordcount: '2177'
 ht-degree: 38%
 
 ---
@@ -19,7 +19,7 @@ Gebruikers kunnen webpagina&#39;s maken in [!DNL Experience Manager Sites]. [!DN
 
 ## Overzicht van gekoppelde assets {#overview-of-connected-assets}
 
-When editing pages in [!UICONTROL Page Editor], the authors can seamlessly search, browse, and embed assets from a different [!DNL Assets] deployment. De beheerders creëren eenmalig integratie van een plaatsing van [!DNL Sites] met een verschillende (verre) plaatsing van [!DNL Assets].
+Wanneer het uitgeven van pagina&#39;s in [!UICONTROL Page Editor] als doelbestemming, kunnen de auteurs, activa van een verschillende [!DNL Assets] plaatsing foutloos zoeken doorbladeren en inbedden die als bron van activa dienst doen. De beheerders creëren eenmalig integratie van een plaatsing van [!DNL Experience Manager] met [!DNL Sites] vermogen met een andere plaatsing van [!DNL Experience Manager] met [!DNL Assets] vermogen.
 
 For the [!DNL Sites] authors, the remote assets are available as read-only local assets. Met deze functie kunt u naadloos zoeken naar telkens een klein aantal externe assets voor gebruik. To make many remote assets available on a [!DNL Sites] deployment in one-go, consider migrating the assets in bulk. Zie de migratiehandleiding voor [Experience Manager Assets](/help/assets/assets-migration-guide.md).
 

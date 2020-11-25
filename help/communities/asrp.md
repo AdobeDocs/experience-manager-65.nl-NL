@@ -1,8 +1,8 @@
 ---
 title: ASRP - Adobe Storage Resource Provider
 seo-title: ASRP - Adobe Storage Resource Provider
-description: Stel AEM Communities in om een relationele database te gebruiken als de algemene opslag
-seo-description: Stel AEM Communities in om een relationele database te gebruiken als de algemene opslag
+description: AEM Communities instellen om een relationele database te gebruiken als de algemene opslag
+seo-description: AEM Communities instellen om een relationele database te gebruiken als de algemene opslag
 uuid: abe47ad9-9f72-4dad-a5e9-6d621a9722d4
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 3e81b519-57ca-4ee1-94bd-7adac4605407
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cf2733ecee5c74b79b85267191fbdf3cbce9c98b
+source-git-commit: fd205cd6253991f527f87b9868d503f64a99a600
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '816'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## Info over ASRP {#about-asrp}
 
-Wanneer de AEM Communities wordt gevormd om ASRP als zijn gemeenschappelijke opslag te gebruiken, is de gebruiker geproduceerde inhoud (UGC) toegankelijk van alle auteur en publiceer instanties zonder de behoefte aan synchronisatie of replicatie.
+Wanneer AEM Communities wordt gevormd om ASRP als zijn gemeenschappelijke opslag te gebruiken, is de gebruiker geproduceerde inhoud (UGC) toegankelijk van alle auteur en publiceer instanties zonder de behoefte aan synchronisatie of replicatie.
 
 Zie ook [Kenmerken van Opties](/help/communities/working-with-srp.md#characteristics-of-srp-options) SRP en [Aanbevolen Topologieën](/help/communities/topologies.md).
 
@@ -31,7 +31,7 @@ Zie ook [Kenmerken van Opties](/help/communities/working-with-srp.md#characteris
 
 Een extra vergunning wordt vereist voor het gebruik van ASRP.
 
-Neem contact op met uw accountvertegenwoordiger voor informatie over het configureren van uw site AEM Communities voor gebruik van ASRP voor UGC:
+Om uw plaats van AEM Communities te vormen om ASRP voor UGC te gebruiken, zorg ervoor dat u het volgende hebt:
 
 * Het Centrum URL van gegevens (adres van het eindpunt van ASRP)
 * Consumentencode
@@ -46,7 +46,7 @@ De consument en geheime sleutels worden gedeeld over alle rapportseries voor een
 
 De console [van de Configuratie van de](/help/communities/srp-config.md) Opslag staat voor de selectie van de standaardopslagconfiguratie toe, die identificeert welke implementatie van SRP aan gebruik.
 
-**Bij instantie AEM Author:**
+**Instantie van AEM-auteur:**
 
 * Navigeer vanuit globale navigatie naar **[!UICONTROL Tools > Communities > Storage Configuration]** en selecteer **[!UICONTROL Adobe Storage Resource Provider (ASRP)]**.
 
@@ -75,7 +75,7 @@ Na het voorleggen van de configuratie, test de verbinding:
 
 ### De cryptosleutel dupliceren {#replicate-the-crypto-key}
 
-De Consumentensleutel en de Geheime Sleutel worden gecodeerd. De sleutel van Granite Crypto moet voor een correcte codering/decodering van de sleutels op alle AEM-instanties gelijk zijn.
+De Consumentensleutel en de Geheime Sleutel worden gecodeerd. De sleutels worden alleen correct gecodeerd/gedecodeerd als de primaire Crypto-sleutel van Granite op alle AEM gelijk is.
 
 Volg de instructies bij [Replicate de Sleutel](/help/communities/deploy-communities.md#replicate-the-crypto-key)van Crypto.
 
@@ -87,7 +87,7 @@ Ben zeker om de domeinen te plaatsen om URLs te zijn die van het Centrum URL van
 
 ### Tijdsynchronisatie {#time-synchronization}
 
-Opdat authentificatie met het eindpunt van ASRP om te slagen, moeten de machines die uw ontvangen AEM Communities in werking stellen tijd gesynchroniseerd zijn, zoals met het Protocol van de Tijd van het [Netwerk (NTP)](https://www.ntp.org/).
+Opdat de authentificatie met het eindpunt van ASRP om te slagen, moeten de machines die uw ontvangen AEM Communities in werking stellen tijd gesynchroniseerd zijn, zoals met het Protocol van de Tijd van het [Netwerk (NTP)](https://www.ntp.org/).
 
 ### De configuratie publiceren {#publishing-the-configuration}
 
@@ -95,7 +95,7 @@ ASRP moet als gemeenschappelijke opslag op alle auteur en publiceer instanties w
 
 De identieke configuratie beschikbaar stellen in de publicatieomgeving:
 
-Bij instantie AEM Author:
+Instantie van AEM-auteur:
 
 * Navigeer van hoofdmenu aan **[!UICONTROL Tools > Operations > Replication]**.
 * Boomstructuur **activeren selecteren**
@@ -109,7 +109,7 @@ Bij instantie AEM Author:
 >
 >Als u ASRP op een gepubliceerde communautaire plaats toelaat, is om het even welke UGC die reeds in [JCR](/help/communities/jsrp.md) wordt opgeslagen niet meer zichtbaar, aangezien er geen synchronisatie van gegevens tussen on-premise opslag en wolkenopslag is.
 
-**`AEM Communities Extension`** voorheen in de sociale gemeenschappen van AEM 6.0 geïntroduceerd als cloudservice. Vanaf AEM 6.1 Communities, is geen wolkenconfiguratie noodzakelijk, eenvoudig uitgezocht ASRP van de console [van de](/help/communities/srp-config.md)opslagconfiguratie.
+**`AEM Communities Extension`** werd eerder in AEM 6.0 sociale gemeenschappen geïntroduceerd als cloudservice. Vanaf AEM 6.1 Communities is geen wolkenconfiguratie nodig, selecteer eenvoudig ASRP van de console [van de](/help/communities/srp-config.md)opslagconfiguratie.
 
 Vanwege de nieuwe opslagstructuur is het nodig de [upgradeinstructies](/help/communities/upgrade.md#adobe-cloud-storage) te volgen wanneer de overstap van sociale gemeenschappen naar Gemeenschappen wordt verbeterd.
 
@@ -124,13 +124,13 @@ Voor informatie over *gebruikers*, *gebruikersprofielen* en *gebruikersgroepen*,
 
 ### UGC verdwijnt na upgrade {#ugc-disappears-after-upgrade}
 
-Als een upgrade wordt uitgevoerd vanaf een bestaande AEM 6.0-site voor sociale gemeenschappen, moet u de [upgradeinstructies](/help/communities/upgrade.md#adobe-cloud-storage)volgen, anders lijkt UGC verloren te gaan.
+Als de verbetering van een bestaande AEM 6.0 sociale gemeenschapsplaats, zeker is om de [verbeteringsinstructies](/help/communities/upgrade.md#adobe-cloud-storage)te volgen, anders schijnt UGC te worden verloren.
 
 ### Verificatiefouten {#authentication-errors}
 
-Als het ontvangen van authentificatiefouten tegen het Centrum URL van Gegevens, en AEM error.log berichten over lange timestamps bevat, dan verifieer dat tijdsynchronisatie plaatsvindt.
+Als het ontvangen van authentificatiefouten tegen het Centrum URL van Gegevens, en AEM error.log berichten over stabiele timestamps bevat, dan verifieer dat tijdsynchronisatie plaatsvindt.
 
-Gebruik een hulpmiddel zoals het Protocol van de Tijd van het [Netwerk (NTP)](https://www.ntp.org/) om alle auteur AEM en publicatieservers te synchroniseren.
+Gebruik een hulpmiddel zoals het Protocol van de Tijd van het [Netwerk (NTP)](https://www.ntp.org/) om alle AEM auteur te synchroniseren en te publiceren servers.
 
 ### Nieuwe inhoud wordt niet weergegeven in zoekopdrachten {#new-content-does-not-appear-in-searches}
 
@@ -142,7 +142,7 @@ Terwijl het interval dat invloed heeft op de uiteindelijke consistentie wordt ge
 
 Zorg ervoor dat ASRP is gevormd om de standaardleverancier te zijn door de configuratie van de opslagoptie te controleren. Door gebrek, is de leverancier van het opslagmiddel JSRP, niet ASRP.
 
-Op alle auteurs en publiceer AEM-instanties, keert u terug naar de opslagconfiguratieconsole of controleert u de AEM-opslagplaats.
+Ga bij alle auteurs en publiceer AEM instanties terug naar de opslagconfiguratieconsole of controleer de AEM opslagplaats.
 
 In JCR, als [/etc/socialconfig](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/):
 

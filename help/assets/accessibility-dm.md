@@ -1,13 +1,13 @@
 ---
-title: Toegankelijkheid in [!DNL Dynamic Media]
+title: Toegankelijkheid in dynamische media
 description: Meer informatie over toegankelijkheid in Dynamic Media en Dynamic Media Viewers
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 383f84b1a984683b3e2ce60f1a3f2191749a1561
+source-git-commit: 696aaa54007e4a78fe6b07d8ba65660595286dca
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: '578'
 ht-degree: 0%
 
 ---

@@ -7,9 +7,9 @@ user-guide-title: Hulplijn voor middelen
 breadcrumb-title: Hulplijn voor middelen
 user-guide-description: Digitale middelen maken, beheren, leveren en optimaliseren.
 translation-type: tm+mt
-source-git-commit: 3443fe49e7eacbdacf7d21077f920d38b34daeae
+source-git-commit: 696aaa54007e4a78fe6b07d8ba65660595286dca
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '589'
 ht-degree: 34%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 34%
    + [Dynamische media configureren - Scene7-modus](config-dms7.md)
    + [Dynamische media configureren - hybride modus](config-dynamic.md)
    + [Problemen met dynamische media oplossen - Scene7-modus](troubleshoot-dms7.md)
-   + [Toegankelijkheidsfuncties in [!DNL Dynamic Media]](accessibility-dm.md)
+   + [Toegankelijkheid in dynamische media](accessibility-dm.md)
    + [Migreren van dynamische media - hybride modus naar dynamische media - S7-modus](migrate-from-hybrid-to-dms7.md)
    + [Dynamic Media-assets beheren](managing-assets.md)
    + [Aanbevolen procedures voor een optimale kwaliteit van uw afbeeldingen](best-practices-for-optimizing-the-quality-of-your-images.md)

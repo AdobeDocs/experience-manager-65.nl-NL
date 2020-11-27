@@ -3,9 +3,9 @@ title: '[!DNL Adobe Experience Manager] 6.5 Vorige Opmerkingen bij de release Se
 description: De nota's van de versie voor [!DNL Adobe Experience Manager] 6.5 de Pakken van de Dienst.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: 62a04c1d9f62a5a5fa6f97f415015001daa94747
+source-git-commit: 22112319b31576d542d04bdc3519795b02db356c
 workflow-type: tm+mt
-source-wordcount: '14481'
+source-wordcount: '14525'
 ht-degree: 0%
 
 ---
@@ -327,6 +327,8 @@ Na installatie van het [!DNL Experience Manager Forms] 6.5.6.0-invoegpakket:
 
 * Wanneer u de veldconfiguratie voor het eerst opent, wordt het eigenschappenpictogram niet weergegeven (CQ-4296284).
 
+* Gebruikers kunnen metagegevens voor verzending bewerken, zoals `afPath`, `afSubmissionTime` en `signers`, wanneer zij een adaptief formulier indienen. Om het probleem op te lossen, worden de metagegevenswaarden verwijderd uit de formulierverzendgegevens op de client. Gebruikers kunnen het `FormSubmitInfo` object gebruiken om deze waarden op te halen van de server (NPR-33654).
+
 **Workflow**
 
 * Wanneer een werkstroomfiatteur een bijlage uploadt, wordt de naam van de bijlage gewijzigd in `undefined` (NPR-33699).
@@ -471,7 +473,7 @@ Hier volgt een lijst met oplossingen uit de release van [!DNL Experience Manager
 
 * Bij het navigeren door boomstructuur worden verschillende elementen van het besturingselement voor de structuurweergave nu correct aangekondigd door schermlezers (NPR-33304).
 
-* Verschillende versies van elementen in de [!UICONTROL Timeline] weergave op de pagina met informatie over elementen zijn nu toegankelijk via toetsenbordtoetsen (NPR-33283).
+* Verschillende versies van elementen in de [!UICONTROL Timeline] weergave op de pagina met informatie over elementen zijn nu toegankelijk met behulp van toetsenbordtoetsen (NPR-33283).
 
 * Namen van zoeksuggesties die worden weergegeven in de keuzelijst Omnzoekopdracht worden nu door schermlezers aangekondigd wanneer ze de zoekfunctie gebruiken (NPR-33280).
 
@@ -1418,7 +1420,7 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 * Dit is een probleem met Scene7-videospeler wanneer deze wordt uitgevouwen tot volledig scherm. Hotfix voor CQ-4266700
 * ZoomVerticalViewer: Panknoppen mogen niet worden weergegeven als één afbeeldingselement wordt gebruikt. Hotfix voor CQ-4264795
 * Wanneer u een onderliggende node in de live kopie verwijdert, moet de liveRelationship worden losgekoppeld. Hotfix voor CQ-4270395
-* Het meta-gegevensschema bevat slechts punten van de globale configuratie en mist degenen van de actieve huurder. De URL-waarde van het formPath wordt weer ingesteld op de standaardwaarde, zelfs als deze wordt gewijzigd. NPR-29944: Hotfix voor CQ-4262898
+* Het meta-gegevensschema bevat slechts punten van de globale configuratie en mist degenen van de actieve huurder. De URL-waarde van het formPath wordt weer ingesteld op de standaardwaarde, zelfs als deze wordt gewijzigd. NPR-29945: Hotfix voor CQ-4262898
 * Publiceer vooraf ingestelde beelden om met 500 foutencode te [!DNL Brand Portal] ontbreken. NPR-29510: Hotfix voor CQ-4268659
 
 ### Sites
@@ -1518,7 +1520,7 @@ De belangrijkste hooglichten voor [!DNL Experience Manager Forms] 6.5.1.0 zijn:
 
 **Backend-integratie**
 
-* Fout bij het ophalen van de beveiligde Web Service Definition Language (WSDL). NPR-29945: Hotfix voor CQ-4270777
+* Fout bij het ophalen van de beveiligde Web Service Definition Language (WSDL). NPR-29944: Hotfix voor CQ-4270777
 * Als een formulier op IBM WebSphere [!DNL Experience Manager Forms] is geïnstalleerd, mislukt het maken van een formuliergegevensmodel op basis van SOAP. Hotfix voor CQ-4251134
 * Toegelaten steun voor de Actieve Diensten van de Federatie van de Folder (ADFS) v3.0 voor de Integratie van de Dynamiek van Microsoft op-gebouw. Hotfix voor CQ-4270586
 * Als de titel van een gegevensbron wordt gewijzigd, wordt de bijgewerkte titel niet weergegeven in het formuliergegevensmodel. Hotfix voor CQ-4265599

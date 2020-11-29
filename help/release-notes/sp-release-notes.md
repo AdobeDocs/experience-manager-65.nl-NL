@@ -4,9 +4,9 @@ description: De nota's van de versie specifiek voor [!DNL Adobe Experience Manag
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 0389508f7870dd2ce6ed7bfc5fb8a9bc88fedffb
+source-git-commit: ed8299662139c2c2ab2fa304c9fa3448b0fce223
 workflow-type: tm+mt
-source-wordcount: '3703'
+source-wordcount: '3696'
 ht-degree: 0%
 
 ---
@@ -145,7 +145,7 @@ Hier volgt een lijst met oplossingen uit de release van [!DNL Experience Manager
    * Wanneer u navigeert met de Tab-toets op het toetsenbord, behoudt het tagveld de focus nadat u de laatste tag uit de toegevoegde tags hebt verwijderd (NPR-35109).
    * [!DNL Experience Manager] De componenten bevatten nu de juiste informatie voor de naam, rol en waarde die door schermlezers moeten worden gebruikt (NPR-34255).
    * Nadat u de keuzelijst Type/Grootte, keuzelijst Koppeling, keuzelijst Taal of Tekstbewerking hebt verwijderd, keert de toetsenbordfocus terug naar de volgende of vorige gebruikersinterface-elementen of naar een relevanter gebruikersinterface-element (CQ-4293585).
-   * Wanneer u de aanwijzer op verschillende opties plaatst, worden de tips zoals Selecteren en Downloaden weergegeven. Gebruikers die de schermvergroting gebruiken, kunnen de miniaturen van de bestanden mogelijk moeilijk weergeven vanwege de inhoud die wordt weergegeven als gevolg van het aanwijzen van de muis. Het is nu mogelijk om de focus te behouden nadat u de optie hebt verwijderd met een `Escape` toets (CQ-4293554).
+   * Als u de aanwijzer op opties plaatst, worden er tips zoals Selecteren en Downloaden weergegeven. Gebruikers die een schermvergroting gebruiken, zien de miniaturen van het bestand mogelijk niet vanwege deze tips. Nu is het mogelijk om de focus te behouden nadat u de optie met `Escape` toets hebt verwijderd. (CQ-4293554).
    * Wanneer u een rastercel selecteert uit het raster dat aanwezig is op de pagina, wordt de focus verplaatst naar de actiebalk die wordt weergegeven op het scherm (CQ-4282127).
    * Visuele gebruikers kunnen onderscheid maken tussen normale tekst en een koppeling, aangezien visuele aanwijzingen (onderstreping en chevron-pictogram) worden weergegeven voor koppelingen naar alle oplossingen op de [!DNL Experience Manager] startpagina (CQ-4282072).
 

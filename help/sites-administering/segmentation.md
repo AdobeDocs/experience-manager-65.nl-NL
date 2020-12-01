@@ -10,7 +10,10 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 6cade87c-9ed5-47d7-9b39-c942268afdad
 translation-type: tm+mt
-source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+source-git-commit: e5e00cc181c2dc3a28e25beb52f9a4c459ee313a
+workflow-type: tm+mt
+source-wordcount: '1779'
+ht-degree: 0%
 
 ---
 
@@ -28,11 +31,11 @@ Afhankelijk van de informatie die u reeds over uw plaatsbezoekers en de doelstel
 
 Deze segmenten worden vervolgens gebruikt om een bezoeker specifieke inhoud te bieden. Deze inhoud wordt bijgehouden in het gedeelte [Persoonlijke instellingen](/help/sites-authoring/personalization.md) van de website. [De hier gedefinieerde activiteiten](/help/sites-authoring/activitylib.md) kunnen op elke pagina worden opgenomen en definiëren voor welk bezoekerssegment de gespecialiseerde inhoud van toepassing is.
 
-Met AEM kunt u de gebruikerservaring eenvoudig aanpassen. Het staat u ook toe om de resultaten van uw segmentdefinities te verifiëren.
+AEM kunt u de gebruikerservaring eenvoudig aanpassen. Het staat u ook toe om de resultaten van uw segmentdefinities te verifiëren.
 
 ## Segmenten openen {#accessing-segments}
 
-De [console van het publiek](/help/sites-authoring/managing-audiences.md) wordt gebruikt om segmenten voor ContextHub of de Context van de Cliënt evenals publiek voor uw rekening van het Doel van Adobe te beheren. Deze documentatie behandelt het beheren van segmenten voor ContextHub. Raadpleeg de relevante documentatie voor [clientcontextsegmenten](/help/sites-administering/campaign-segmentation.md) en Adobe Target-segmenten.
+De [console van het publiek](/help/sites-authoring/managing-audiences.md) wordt gebruikt om segmenten voor ContextHub of de Context van de Cliënt evenals publiek voor uw rekening van Adobe Target te beheren. Deze documentatie behandelt het beheren van segmenten voor ContextHub. Voor de segmenten [van de Context van de](/help/sites-administering/campaign-segmentation.md) Cliënt en de segmenten van Adobe Target, te zien gelieve de relevante documentatie.
 
 Als u toegang wilt krijgen tot uw segmenten, selecteert u **Navigatie > Aanpassing aanpassen > Soorten publiek**.
 
@@ -129,7 +132,9 @@ De volgende verwijzingen zijn beschikbaar uit-van-de-doos om rechtstreeks met ee
 
 Het nieuwe segment definiëren:
 
-1. Nadat u de segmenten [hebt](/help/sites-administering/segmentation.md#accessing-segments)geopend, klikt of tikt u op de knop Maken en selecteert u ContextHub-segment **maken**.
+1. Na de [toegang tot van de segmenten](/help/sites-administering/segmentation.md#accessing-segments), [navigeer aan de omslag](#organizing-segments) waar u het segment zou willen tot stand brengen, of het in de wortel verlaten.
+
+1. Klik of tik de Create knoop en selecteer **Create ContextHub Segment**.
 
    ![chlimage_1-311](assets/chlimage_1-311.png)
 
@@ -163,7 +168,7 @@ Het volgende voorbeeld wordt gebruikt om bezoekers te selecteren die in onze lee
 
 Mannelijk en tussen 30 en 59 jaar
 
- OF
+OF
 
 Vrouwen tussen 30 en 59 jaar
 
@@ -222,6 +227,75 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 1. Maak een ContextHub-segment.
 1. Voeg **de component van de Verwijzing** van het Manuscript in de gewenste plaats van het segment toe.
 1. Open het dialoogvenster Bewerken van de **component Scriptreferentie** . Als het script [correct is geconfigureerd](/help/sites-administering/segmentation.md#defining-a-script-to-reference), moet het beschikbaar zijn in de vervolgkeuzelijst **Scriptnaam** .
+
+## Segmenten ordenen {#organizing-segments}
+
+Als u veel segmenten hebt, kunnen deze moeilijk te beheren worden als een platte lijst. In dergelijke gevallen kan het handig zijn om mappen te maken voor het beheer van uw segmenten.
+
+### Een nieuwe map maken {#create-folder}
+
+1. Nadat u de segmenten [hebt](#accessing-segments)geopend, klikt of tikt u op de knop **Maken** en selecteert u **Map**.
+
+   ![Map toevoegen](assets/contexthub-create-segment.png)
+
+1. Geef een **titel** en een **naam** voor de map op.
+   * De **titel** moet beschrijvend zijn.
+   * De **Naam** wordt de knooppuntnaam in de gegevensopslagruimte.
+      * Deze wordt automatisch gegenereerd op basis van de titel en aangepast volgens de naamgevingsconventies [AEM.](/help/sites-developing/naming-conventions.md)
+      * Deze kan zo nodig worden aangepast.
+
+   ![Map maken](assets/contexthub-create-folder.png)
+
+1. Tik of klik op **Maken**.
+
+   ![Map bevestigen](assets/contexthub-confirm-folder.png)
+
+1. De map wordt weergegeven in de lijst met segmenten.
+   * Hoe u de kolommen sorteert, is van invloed op de plaats in de lijst waar de nieuwe map wordt weergegeven.
+   * Tik of klik op de kolomkoppen om de sortering aan te passen.
+      ![De nieuwe map](assets/contexthub-folder.png)
+
+### Bestaande mappen wijzigen {#modify-folders}
+
+1. Nadat u de segmenten [hebt](#accessing-segments)geopend, klikt of tikt u op de map die u wilt wijzigen om deze te selecteren.
+
+   ![Map selecteren](assets/contexthub-select-folder.png)
+
+1. Tik of klik op Naam **wijzigen** op de werkbalk om de naam van de map te wijzigen.
+
+1. Geef een nieuwe **maptitel** op en tik of klik op **Opslaan**.
+
+   ![Naam map wijzigen](assets/contexthub-rename-folder.png)
+
+>[!NOTE]
+>
+>Bij het wijzigen van de mapnaam kan alleen de titel worden gewijzigd. De naam kan niet worden gewijzigd.
+
+### Een map verwijderen
+
+1. Nadat u de segmenten [hebt](#accessing-segments)geopend, klikt of tikt u op de map die u wilt wijzigen om deze te selecteren.
+
+   ![Map selecteren](assets/contexthub-select-folder.png)
+
+1. Tik of klik op **Verwijderen** op de werkbalk om de map te verwijderen.
+
+1. Een dialoogvenster bevat een lijst met mappen die zijn geselecteerd om te worden verwijderd.
+
+   ![Verwijderen bevestigen](assets/contexthub-confirm-segment-delete.png)
+
+   * Tik of klik op **Verwijderen** om te bevestigen.
+   * Tik of klik op **Annuleren** om af te breken.
+
+1. Als een van de geselecteerde mappen submappen of segmenten bevat, moet de verwijdering ervan worden bevestigd.
+
+   ![Verwijderen van kinderen bevestigen](assets/contexthub-confirm-segment-child-delete.png)
+
+   * Tik of klik op **Verwijderen** forceren om te bevestigen.
+   * Tik of klik op **Annuleren** om af te breken.
+
+>[!NOTE]
+>
+> Het is niet mogelijk een segment van de ene map naar de andere te verplaatsen.
 
 ## De toepassing van een segment testen {#testing-the-application-of-a-segment}
 

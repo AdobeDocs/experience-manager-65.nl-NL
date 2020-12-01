@@ -3,9 +3,9 @@ title: Ondersteunde bestandsindelingen en MIME-typen
 description: Bestandsindelingen en MIME-typen worden ondersteund [!DNL Assets] and [!DNL Dynamic Media] door en de functies worden ondersteund voor elke indeling.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 83c5e92c55f374cc0a8f8bf0f4af3333893f4a59
+source-git-commit: eaff176bf3ffc197607b8eb39b15c1e945927f8e
 workflow-type: tm+mt
-source-wordcount: '1605'
+source-wordcount: '1629'
 ht-degree: 2%
 
 ---
@@ -247,6 +247,10 @@ De toepasbaarheid van de gebruikelijke DAM-functies voor een paar specifieke bes
 | XML | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | JavaScript (indien geconfigureerd met eigen leveringsdomein) | − | − | − | − | − | ✓ |
 
+>[!NOTE]
+>
+>Het uploaden en distribueren van JavaScript-bestanden is mogelijk niet veilig. Indien nodig kunnen overlays worden gebruikt om te voorkomen dat gebruikers JS-bestanden uploaden.
+
 ## Ondersteunde MIME-typen {#supported-mime-types}
 
 Standaard wordt het bestandstype [!DNL Experience Manager] gedetecteerd met de bestandsextensie. [!DNL Experience Manager] kan het van de inhoud van de dossiers ontdekken. Selecteer voor de laatste optie [!UICONTROL Detect MIME from content] in [!UICONTROL Day CQ DAM Mime Type Service] de [!DNL Experience Manager] webconsole.
@@ -301,7 +305,7 @@ Een lijst met ondersteunde MIME-typen is beschikbaar in CRXDE Lite op `/conf/glo
 | TAR | application/x-tar |  |  |
 | TIF/TIFF | image/tiff |  |  |
 | TTC | application/x-font-ttf |  |  |
-| RTF | application/x-font-ttf |  |  |
+| TTF | application/x-font-ttf |  |  |
 | VOB | video/dvd |  | [ExcludeMasterVideoFromAVS](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/data-types/r-exclude-master-video-from-avs.html) |
 | VTT | text/vtt |  |  |
 | WAV | audio/x-wav |  |  |

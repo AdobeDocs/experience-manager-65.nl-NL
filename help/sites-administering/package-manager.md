@@ -19,7 +19,7 @@ ht-degree: 0%
 ---
 
 
-# Werken met pakketten{#how-to-work-with-packages}
+# Hoe te met Pakketten te werken{#how-to-work-with-packages}
 
 Pakketten maken het importeren en exporteren van inhoud in de opslagplaats mogelijk. U kunt bijvoorbeeld pakketten gebruiken om nieuwe functionaliteit te installeren, inhoud tussen instanties over te brengen, en een back-up van inhoud in de opslagplaats te maken.
 
@@ -27,7 +27,7 @@ Pakketten kunnen op de volgende pagina&#39;s worden geopend en/of onderhouden:
 
 * [Pakketbeheer](#package-manager), waarmee u de pakketten in uw lokale AEM-instantie kunt beheren.
 
-* [De Distributie](#software-distribution)van de software, een gecentraliseerde server die zowel openbaar beschikbare pakketten als die privé aan uw bedrijf houdt. De openbare pakketten kunnen hotfixes, nieuwe functionaliteit, documentatie, enz. bevatten.
+* [De Distributie](#software-distribution) van de software, een gecentraliseerde server die zowel openbaar beschikbare pakketten als die privé aan uw bedrijf houdt. De openbare pakketten kunnen hotfixes, nieuwe functionaliteit, documentatie, enz. bevatten.
 
 U kunt pakketten overbrengen tussen Package Manager, Software Distribution, en uw dossiersysteem.
 
@@ -62,7 +62,7 @@ U kunt de volgende handelingen uitvoeren op of met pakketten:
 * Download pakketten, zoals hotfixes, uit de bibliotheek van de Distributie van de Software
 * Pakketten uploaden naar de interne sectie van het bedrijf van de bibliotheek van de Distributie van de Software
 
-## Pakketgegevens {#package-information}
+## Pakketinformatie {#package-information}
 
 Een pakketdefinitie bestaat uit verschillende soorten informatie:
 
@@ -75,7 +75,7 @@ Een pakketdefinitie bestaat uit verschillende soorten informatie:
 
 U kunt een verscheidenheid van de Montages van het Pakket uitgeven om aspecten zoals de pakketbeschrijving, verwante insecten, gebiedsdelen en leveranciersinformatie te bepalen.
 
-Het dialoogvenster **Pakketinstellingen** is beschikbaar via de knop **Bewerken** wanneer u een pakket [maakt](#creating-a-new-package) of [bewerkt](#viewing-and-editing-package-information) en bevat drie tabbladen voor de configuratie. Nadat u wijzigingen hebt aangebracht, klikt u op **OK** om deze op te slaan.
+Het dialoogvenster **Pakketinstellingen** is beschikbaar via de knop **Bewerken** wanneer [een pakket maken](#creating-a-new-package) of [bewerken](#viewing-and-editing-package-information) en drie tabbladen voor configuratie bevat. Nadat er wijzigingen zijn aangebracht, klikt u op **OK** om deze op te slaan.
 
 ![packagesedit](assets/packagesedit.png)
 
@@ -112,7 +112,7 @@ Het dialoogvenster **Pakketinstellingen** is beschikbaar via de knop **Bewerken*
    <td><em>https://www.aem-geometrixx.com/mypackage.html</em></td>
   </tr>
   <tr>
-   <td>Vereisten<br /> </td>
+   <td>Vereist<br /> </td>
    <td>
     <ul>
      <li>Beheerder: Selecteer wanneer het pakket alleen kan worden geïnstalleerd door een account met beheerdersrechten.</li>
@@ -129,14 +129,14 @@ Het dialoogvenster **Pakketinstellingen** is beschikbaar via de knop **Bewerken*
      <li><strong>Samenvoegen</strong></li>
      <li><strong>Wissen</strong></li>
      <li><strong>MergePreserve</strong></li>
-    </ul> <p>The default value is <strong>Ignore</strong>.</p> </td>
+    </ul> <p>De standaardwaarde is <strong>Negeren</strong>.</p> </td>
    <td>
     <ul>
-     <li><strong>Negeer</strong> - behoud ACLs in de bewaarplaats</li>
-     <li><strong>Overschrijf</strong> - overschrijf ACLs in de bewaarplaats</li>
-     <li><strong>Samenvoegen</strong> - voeg beide reeksen ACLs samen</li>
-     <li><strong>Duidelijk</strong> - ontruim ACLs</li>
-     <li><strong>MergePreserve</strong> - fusie toegangsbeheer in de inhoud met die voorzien van het pakket door de toegangsbeheeringangen van hoofden toe te voegen niet aanwezig in de inhoud</li>
+     <li><strong>Negeer</strong>  - behoud ACLs in de bewaarplaats</li>
+     <li><strong>Overschrijf</strong>  ACLs in de bewaarplaats</li>
+     <li><strong>De fusie</strong> - voegt beide reeksen ACLs samen</li>
+     <li><strong>Wis</strong>  - duidelijke ACLs</li>
+     <li><strong>MergePreserve</strong>  - fusie toegangsbeheer in de inhoud met die voorzien van het pakket door de toegangsbeheeringangen van hoofden toe te voegen niet aanwezig in de inhoud</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -153,9 +153,9 @@ Het dialoogvenster **Pakketinstellingen** is beschikbaar via de knop **Bewerken*
 
 ### Pakketfilters {#package-filters}
 
-Filters identificeren de knooppunten in de opslagplaats die in het pakket moeten worden opgenomen. Een **filterdefinitie** geeft de volgende informatie op:
+Filters identificeren de knooppunten in de opslagplaats die in het pakket moeten worden opgenomen. A **Filter Definition** geeft de volgende informatie op:
 
-* Het **hoofdpad** van de inhoud die moet worden opgenomen.
+* Het **Basispad** van de inhoud die moet worden opgenomen.
 * **Regels** die specifieke knooppunten onder het hoofdpad bevatten of uitsluiten.
 
 Filters kunnen nul of meer regels bevatten. Als er geen regels zijn gedefinieerd, bevat het pakket alle inhoud onder het hoofdpad.
@@ -177,14 +177,14 @@ In de volgende tabel worden deze regels beschreven en worden voorbeelden gegeven
    <td> include</td>
    <td>U kunt een pad definiëren of een reguliere expressie gebruiken om alle knooppunten op te geven die u wilt opnemen.<br /> <br /> Als u een map opneemt, wordt:
     <ul>
-     <li>deze map <i></i> en alle bestanden en mappen in die map (dat wil zeggen de volledige substructuur) opnemen</li>
-     <li><strong>geen</strong> andere bestanden of mappen van onder het opgegeven hoofdpad opnemen</li>
+     <li>de map <i>en</i> alle bestanden en mappen in die map opnemen (d.w.z. de volledige substructuur)</li>
+     <li><strong>Neem </strong> geen andere bestanden of mappen vanaf onder het opgegeven hoofdpad op</li>
     </ul> </td>
    <td>/libs/sling/install(/.*)? </td>
   </tr>
   <tr>
    <td> uitsluiten</td>
-   <td>U kunt een pad opgeven of een reguliere expressie gebruiken om alle knooppunten op te geven die u wilt uitsluiten.<br /> <br /> Als u een map uitsluit, worden die map <i></i> en alle bestanden en mappen in die map (dus de volledige substructuur) uitgesloten.<br /> </td>
+   <td>U kunt een pad opgeven of een reguliere expressie gebruiken om alle knooppunten op te geven die u wilt uitsluiten.<br /> <br /> Als u een map uitsluit, worden die map  <i></i> en alle bestanden en mappen in die map (dus de volledige substructuur) uitgesloten.<br /> </td>
    <td>/libs/wcm/foundation/components(/.*)?</td>
   </tr>
  </tbody>
@@ -194,7 +194,7 @@ In de volgende tabel worden deze regels beschreven en worden voorbeelden gegeven
 >
 >Eén pakket kan meerdere filterdefinities bevatten, zodat knooppunten van verschillende locaties gemakkelijk in één pakket kunnen worden gecombineerd.
 
-Pakketfilters worden meestal gedefinieerd wanneer u het pakket [voor het eerst](#creating-a-new-package)maakt, maar kunnen ook op een later tijdstip worden bewerkt (waarna het pakket opnieuw moet worden samengesteld).
+Pakketfilters worden meestal gedefinieerd wanneer u het pakket [maakt, maar kunnen ook op een later tijdstip worden bewerkt (waarna het pakket opnieuw moet worden samengesteld).](#creating-a-new-package)
 
 ### Schermafbeeldingen verpakken {#package-screenshots}
 
@@ -222,28 +222,28 @@ Officiële kenmerkpakketten:
 
 ## Pakketbeheer {#package-manager}
 
-De pakketmanager beheert de pakketten op uw lokale AEM installatie. Nadat u de noodzakelijke toestemmingen [hebt](#permissions-needed-for-using-the-package-manager) toegewezen kunt u de Manager van het Pakket voor diverse acties gebruiken, met inbegrip van het vormen, het bouwen, het downloaden en het installeren van uw pakketten. De belangrijkste te vormen elementen zijn:
+De pakketmanager beheert de pakketten op uw lokale AEM installatie. Nadat u [de noodzakelijke toestemmingen](#permissions-needed-for-using-the-package-manager) hebt toegewezen kunt u de Manager van het Pakket voor diverse acties, met inbegrip van het vormen, het bouwen, het downloaden en het installeren van uw pakketten gebruiken. De belangrijkste te vormen elementen zijn:
 
 * [Pakketinstellingen](#package-settings)
 * [Pakketfilters](#package-filters)
 
-### Machtigingen nodig voor het gebruik van Package Manager {#permissions-needed-for-using-the-package-manager}
+### Toestemmingen nodig voor het gebruiken van de Manager {#permissions-needed-for-using-the-package-manager} van het Pakket
 
 Om gebruikers het recht te verlenen om pakketten tot stand te brengen, te wijzigen, te uploaden en te installeren, moet u hen de aangewezen toestemmingen bij de volgende plaatsen geven:
 
 * **/etc/packages** (volledige rechten m.u.v. schrapping)
 * het knooppunt dat de pakketinhoud bevat
 
-Zie Machtigingen [](/help/sites-administering/security.md#setting-page-permissions) instellen voor instructies voor het wijzigen van machtigingen.
+Zie [Machtigingen instellen](/help/sites-administering/security.md#setting-page-permissions) voor instructies over het wijzigen van machtigingen.
 
 ### Een nieuw pakket maken {#creating-a-new-package}
 
 Een nieuwe pakketdefinitie maken:
 
-1. Voor het AEM Welkome scherm, klik **Pakketten** (of van de console van **Hulpmiddelen** dubbelklik op **Pakketten**).
+1. Voor het AEM Welkome scherm, klik **Pakketten** (of van de **console Tools** tweemaal klikken op **Pakketten**).
 
 1. Selecteer vervolgens **Pakketbeheer**.
-1. Klik op Pakket **** maken.
+1. Klik **Pakket maken**.
 
    >[!NOTE]
    >
@@ -268,7 +268,7 @@ Een nieuwe pakketdefinitie maken:
    * **Versie**
 
       Een tekstveld waarmee u een versie kunt aangeven. Deze wordt aan de pakketnaam toegevoegd met de naam van het ZIP-bestand.
-   Klik op **OK** om het pakket te maken.
+   Klik **OK** om het pakket te maken.
 
 1. AEM maakt een lijst van het nieuwe pakket in de aangewezen groepsomslag.
 
@@ -282,28 +282,30 @@ Een nieuwe pakketdefinitie maken:
    >
    >U kunt desgewenst later terugkeren naar deze pagina.
 
-1. Klik op **Bewerken** om de [pakketinstellingen](#package-settings)te bewerken.
+1. Klik **Bewerken** om de [pakketinstellingen te bewerken](#package-settings).
 
-   Hier kunt u informatie toevoegen en/of bepaalde instellingen definiëren. dit zijn bijvoorbeeld een beschrijving , het [pictogram](#package-icons), verwante bugs en details over de provider .
+   Hier kunt u informatie toevoegen en/of bepaalde instellingen definiëren. Dit zijn bijvoorbeeld een beschrijving, het pictogram [icon](#package-icons), verwante bugs en voeg providerdetails toe.
 
-   Klik op **OK** nadat u de instellingen hebt bewerkt.
+   Klik **OK** nadat u klaar bent met het bewerken van de instellingen.
 
-1. Voeg naar wens **[screenshots](#package-screenshots)** toe aan het pakket. Eén instantie is beschikbaar wanneer het pakket wordt gemaakt. Voeg desgewenst meer toe met de **schermafbeelding** van pakket van sidekick.
+1. Voeg **[Screenshots](#package-screenshots)** aan het pakket toe zoals vereist. Eén instantie is beschikbaar wanneer het pakket wordt gemaakt. Voeg indien nodig meer toe met **Package Screenshot** van sidekick.
 
-   Voeg de feitelijke afbeelding toe door te dubbelklikken op de afbeeldingscomponent in het gebied **Schermafbeeldingen** , een afbeelding toe te voegen en op **OK** te klikken.
+   Voeg de feitelijke afbeelding toe door te dubbelklikken op de afbeeldingscomponent in het gebied **Screenshots**, een afbeelding toe te voegen en te klikken op **OK**.
 
-1. Definieer de **[pakketfilters](#package-filters)** door instanties van de **filterdefinitie** van het zijpaneel te slepen en vervolgens te dubbelklikken om te openen voor bewerking:
+1. Definieer de **[Pakketfilters](#package-filters)** door instanties van de **Definitie van filter** van het hulpstuk te slepen, en dan te dubbelklikken om voor het uitgeven te openen:
 
    ![packagefilter](assets/packagesfilter.png)
 
    Geef het volgende op:
 
-   * **Basispad** De inhoud die moet worden verpakt; dit kan de basis van een substructuur zijn.
-   * **Regels** zijn facultatief; voor eenvoudige pakketdefinities is het niet nodig regels op te nemen of uit te sluiten .
+   * **basispadDe**
+inhoud die moet worden verpakt; dit kan de basis van een substructuur zijn.
+   * ****
+Regels zijn facultatief; voor eenvoudige pakketdefinities is het niet nodig regels op te nemen of uit te sluiten .
 
-      Indien nodig kunt u regels [**voor** opnemen **of** uitsluiten](#package-filters) definiëren om de pakketinhoud precies te definiëren.
+      Indien nodig kunt u [**Include** of **Exclude** regels](#package-filters) bepalen om de pakketinhoud precies te bepalen.
 
-      Voeg regels toe met behulp van het **+** -symbool, maar verwijder ook regels met behulp van het **-** -symbool. Regels worden toegepast op basis van hun volgorde, zodat ze naar wens worden geplaatst met de knoppen **Omhoog** en **Omlaag** .
+      Voeg regels toe met het symbool **+**, of verwijder regels met het symbool **-**. Regels worden toegepast op basis van hun volgorde, zodat ze op de gewenste positie worden geplaatst met de knoppen **Omhoog** en **Omlaag**.
    Klik vervolgens op **OK** om het filter op te slaan.
 
    >[!NOTE]
@@ -311,7 +313,7 @@ Een nieuwe pakketdefinitie maken:
    >U kunt zoveel filterdefinities gebruiken als u nodig hebt, maar zorg ervoor dat deze geen conflict veroorzaken. Gebruik **Voorvertoning** om te bevestigen wat de inhoud van het pakket zal zijn.
 
 1. Om te bevestigen wat het pakket zal houden kunt u **Voorproef** gebruiken. Dit voert een droge looppas van het bouwstijlproces uit en maakt een lijst van alles die aan het pakket zal worden toegevoegd wanneer het eigenlijk wordt gebouwd.
-1. U kunt nu uw pakket [maken](#building-a-package) .
+1. U kunt nu [Build](#building-a-package) uw pakket.
 
    >[!NOTE]
    >
@@ -319,35 +321,35 @@ Een nieuwe pakketdefinitie maken:
 
 ### Een pakket maken {#building-a-package}
 
-Een pakket wordt vaak gemaakt op hetzelfde moment als wanneer u de pakketdefinitie [](#creating-a-new-package)maakt, maar u kunt het pakket later opnieuw maken of bouwen. Dit kan handig zijn als de inhoud in de opslagplaats is gewijzigd.
+Een pakket wordt vaak gebouwd tezelfdertijd aangezien u [de pakketdefinitie ](#creating-a-new-package) creeert, maar u kunt op een later punt in tijd terugkeren om of het pakket te bouwen, of te herbouwen. Dit kan handig zijn als de inhoud in de opslagplaats is gewijzigd.
 
 >[!NOTE]
 >
->Voordat u het pakket gaat maken, is het handig een voorvertoning van de inhoud van het pakket te bekijken. Klik hiervoor op **Voorvertoning**.
+>Voordat u het pakket gaat maken, is het handig een voorvertoning van de inhoud van het pakket te bekijken. Klik **Voorvertoning** om dit te doen.
 
-1. Open de pakketdefinitie via **Package Manager** (klik op het pictogram of de naam van het pakket).
+1. Open de pakketdefinitie van **Package Manager** (klik op het pakketpictogram of de naam).
 
-1. Klik op **Samenstellen**. Er wordt een dialoogvenster weergegeven waarin u moet bevestigen dat u het pakket wilt maken.
+1. Klik **Bouwstijl**. Er wordt een dialoogvenster weergegeven waarin u moet bevestigen dat u het pakket wilt maken.
 
    >[!NOTE]
    >
    >Dit is met name van belang wanneer u een pakket opnieuw opstelt omdat de inhoud van het pakket wordt overschreven.
 
-1. Click **OK**. AEM bouwt het pakket en geeft alle inhoud weer die aan het pakket is toegevoegd. Na voltooiing AEM wordt bevestigd dat het pakket is gemaakt en (wanneer u het dialoogvenster sluit) worden de gegevens in de pakketlijst bijgewerkt.
+1. Klik **OK**. AEM bouwt het pakket en geeft alle inhoud weer die aan het pakket is toegevoegd. Na voltooiing AEM wordt bevestigd dat het pakket is gemaakt en (wanneer u het dialoogvenster sluit) worden de gegevens in de pakketlijst bijgewerkt.
 
-### Een pakket opnieuw inpakken {#rewrapping-a-package}
+### Een pakket {#rewrapping-a-package} opnieuw inpakken
 
 Nadat een pakket is gemaakt, kan het indien nodig opnieuw worden verpakt.
 
-Wanneer u de pakketgegevens opnieuw inpakt, worden deze gewijzigd - *zonder* dat de pakketinhoud wordt gewijzigd. Pakketgegevens zijn de miniatuur, beschrijving, enzovoort, met andere woorden alles wat u kunt bewerken met het dialoogvenster **Pakketinstellingen** (om deze klik te openen, klikt u op **Bewerken**).
+Als u de pakketgegevens opnieuw inpakt, worden deze gewijzigd - *zonder* de pakketinhoud te wijzigen. Pakketgegevens zijn de miniatuur, beschrijving, enzovoort, met andere woorden alles wat u kunt bewerken met het dialoogvenster **Pakketinstellingen** (om deze klik te openen **Bewerken**).
 
 Een belangrijk hulpmiddel voor omloop is bij het voorbereiden van een pakket. U hebt bijvoorbeeld een bestaand pakket en u wilt dit delen met anderen. Hiervoor wilt u een miniatuur toevoegen en een beschrijving toevoegen. In plaats van het hele pakket opnieuw te maken met al zijn functionaliteit (wat enige tijd kan duren en het risico inhoudt dat het pakket niet meer identiek is aan het origineel), kunt u het pakket terugzetten en alleen de miniatuur en beschrijving toevoegen.
 
-1. Open de pakketdefinitie via **Package Manager** (klik op het pictogram of de naam van het pakket).
+1. Open de pakketdefinitie van **Package Manager** (klik op het pakketpictogram of de naam).
 
-1. Klik op **Bewerken** en werk de **[pakketinstellingen](#package-settings)** naar wens bij. Klik op **OK** om op te slaan.
+1. Klik **Bewerken** en werk de **[Pakketinstellingen](#package-settings)** naar wens bij. Klik **OK** om op te slaan.
 
-1. Klik op **Omloop**, wordt om bevestiging gevraagd.
+1. Klik **Omloop**, zal een dialoog om bevestiging vragen.
 
 ### Pakketgegevens weergeven en bewerken {#viewing-and-editing-package-information}
 
@@ -377,15 +379,15 @@ Nadat een pakket is gemaakt, kunt u de inhoud weergeven:
 
    ![pakkettenContent](assets/packgescontents.png)
 
-1. Klik op Installatie **testen om de installatie** op de droger uit te voeren. Nadat u de actie hebt bevestigd, wordt een venster geopend en worden de resultaten weergegeven alsof de installatie is uitgevoerd:
+1. Klik **Installatie testen** om de installatie op een droge manier uit te voeren. Nadat u de actie hebt bevestigd, wordt een venster geopend en worden de resultaten weergegeven alsof de installatie is uitgevoerd:
 
    ![packagestestinstall](assets/packagestestinstall.png)
 
-### Pakketten naar uw bestandssysteem downloaden {#downloading-packages-to-your-file-system}
+### Pakketten downloaden naar uw bestandssysteem {#downloading-packages-to-your-file-system}
 
-In deze sectie wordt beschreven hoe u een pakket van AEM naar uw bestandssysteem kunt downloaden met **Pakketbeheer**.
+In deze sectie wordt beschreven hoe u een pakket van AEM naar uw bestandssysteem kunt downloaden met **Package Manager**.
 
-1. Klik in het welkomstscherm van AEM op **Pakketten** en selecteer **Pakketbeheer**.
+1. Voor het AEM Welkome scherm, klik **Pakketten**, dan selecteer **de Manager van het Pakket**.
 1. Navigeer naar het pakket dat u wilt downloaden.
 
    ![packagedownload](assets/packagesdownload.png)
@@ -399,30 +401,30 @@ In deze sectie wordt beschreven hoe u een pakket van AEM naar uw bestandssysteem
 Met een pakketupload kunt u een pakket van uw bestandssysteem uploaden naar AEM Package Manager.
 Een pakket uploaden:
 
-1. Navigeer naar **Pakketbeheer**. Vervolgens naar de groepsmap waarin u het pakket wilt uploaden.
+1. Navigeer aan **de Manager van het Pakket**. Vervolgens naar de groepsmap waarin u het pakket wilt uploaden.
 
    ![packagesuploadknop](assets/packagesuploadbutton.png)
 
-1. Klik op Pakket **uploaden**.
+1. Klik **Pakket uploaden**.
 
    ![packagesuploaddialog](assets/packagesuploaddialog.png)
 
    * **Bestand**
 
-      U kunt de bestandsnaam rechtstreeks typen of de optie **Bladeren gebruiken...** om het vereiste pakket in uw lokale bestandssysteem te selecteren (klik na de selectie op **OK**).
+      U kunt de bestandsnaam rechtstreeks typen of **Bladeren gebruiken..** om het vereiste pakket in uw lokale bestandssysteem te selecteren (klik na de selectie op **OK**).
 
    * **Uploaden forceren**
 
       Als er al een pakket met deze naam bestaat, kunt u hierop klikken om het uploaden te forceren (en het bestaande pakket te overschrijven).
-   Klik op **OK** , zodat het nieuwe pakket wordt geüpload en wordt weergegeven in de lijst Pakketbeheer.
+   Klik **OK** zodat het nieuwe pakket wordt geüpload en in de lijst van de Manager van het Pakket wordt vermeld.
 
    >[!NOTE]
    >
-   >Als u de inhoud beschikbaar wilt maken voor AEM, moet u het pakket [](#installing-packages)installeren.
+   >Als u de inhoud beschikbaar wilt maken voor AEM, moet u [het pakket ](#installing-packages) installeren.
 
-### Pakketten valideren {#validating-packages}
+### Pakketten {#validating-packages} valideren
 
-Voordat u een pakket installeert, dient u de inhoud ervan te controleren. Omdat de pakketten bedekte dossiers onder kunnen wijzigen `/apps` en/of toevoegen, wijzigen en ACLs verwijderen, is het vaak nuttig om deze veranderingen te bevestigen alvorens te installeren.
+Voordat u een pakket installeert, dient u de inhoud ervan te controleren. Omdat de pakketten overlay dossiers onder `/apps` kunnen wijzigen en/of ACLs toevoegen wijzigen en verwijderen, is het vaak nuttig om deze veranderingen te bevestigen alvorens te installeren.
 
 #### Validatieopties {#validation-options}
 
@@ -438,11 +440,11 @@ Deze opties worden hieronder beschreven.
 
    **Wat wordt gecontroleerd**
 
-   Deze bevestiging inspecteert het pakket voor alle JAR dossiers (bundels OSGi), haalt hun `manifest.xml` (die de versioned gebiedsdelen bevat waarop genoemde bundel OSGi) steunt en verifieert de AEM instantie uitvoert genoemde gebiedsdelen met de correcte versies.
+   Deze bevestiging inspecteert het pakket voor alle JAR dossiers (bundels OSGi), haalt hun `manifest.xml` (die de versioned gebiedsdelen bevat waarop genoemde OSGi bundel baseert) en verifieert de AEM instantie uitvoert genoemde gebiedsdelen met de correcte versies.
 
    **Hoe het is gemeld**
 
-   Om het even welke versioned gebiedsdelen die niet door de AEM instantie kunnen worden tevredengesteld zijn vermeld in het Logboek **van de** Activiteit van de Manager van het Pakket.
+   Om het even welke versioned gebiedsdelen die niet door de AEM instantie kunnen worden tevredengesteld zijn vermeld in **Activiteitenlogboek** van de Manager van het Pakket.
 
    **Foutstatussen**
 
@@ -458,11 +460,11 @@ Deze opties worden hieronder beschreven.
 
    Deze validatie bepaalt of het pakket dat wordt geïnstalleerd een bestand bevat dat al wordt bedekt in de AEM.
 
-   Als u bijvoorbeeld een bestaande overlay hebt bij `/apps/sling/servlet/errorhandler/404.jsp`, een pakket met `/libs/sling/servlet/errorhandler/404.jsp`een bestaande overlay, zodat het bestaande bestand bij wordt gewijzigd `/libs/sling/servlet/errorhandler/404.jsp`.
+   Als u bijvoorbeeld een bestaande overlay op `/apps/sling/servlet/errorhandler/404.jsp` hebt, een pakket dat `/libs/sling/servlet/errorhandler/404.jsp` bevat, zodat het bestaande bestand op `/libs/sling/servlet/errorhandler/404.jsp` wordt gewijzigd.
 
    **Hoe het is gemeld**
 
-   Dergelijke overlays worden beschreven in het **activiteitenlogboek** van Package Manager.
+   Dergelijke overlays worden beschreven in het **Activiteitenlogboek** van het Pakketbeheer.
 
    **Foutstatussen**
 
@@ -470,7 +472,7 @@ Deze opties worden hieronder beschreven.
 
    **Foutresolutie**
 
-   Om dit probleem op te lossen, `/apps` moet de beheerder van het overlaybestand in de wijzigingen in het overlay-bestand in bekijken `/libs` en de wijzigingen naar wens opnemen in de overlay ( `/apps`) en het overlay-bestand opnieuw gebruiken.
+   Om dit probleem op te lossen, moet de beheerder van het overlaybestand in `/apps` de wijzigingen in het overlay-bestand in `/libs` controleren en de wijzigingen naar wens opnemen in de overlay ( `/apps`) en het overlay-bestand opnieuw implementeren.
 
    >[!NOTE]
    >
@@ -484,7 +486,7 @@ Deze opties worden hieronder beschreven.
 
    **Hoe het is gemeld**
 
-   De toestemmingen worden beschreven in het Logboek **van de** Activiteit van de Manager van het Pakket.
+   De toestemmingen worden beschreven in **Activiteitenlogboek** van de Manager van het Pakket.
 
    **Foutstatussen**
 
@@ -498,7 +500,7 @@ Deze opties worden hieronder beschreven.
    >
    >Als beste praktijken wordt het geadviseerd dat de pakketten geen AEM-Verstrekte ACLs zouden moeten beïnvloeden aangezien dit in onverwacht productgedrag kan resulteren.
 
-#### Validatie uitvoeren {#performing-validation}
+#### Validatie {#performing-validation} uitvoeren
 
 De validatie van pakketten kan op twee verschillende manieren worden uitgevoerd:
 
@@ -511,8 +513,8 @@ De validatie van pakketten kan op twee verschillende manieren worden uitgevoerd:
 
 **Pakketvalidatie via pakketbeheer**
 
-1. Open Package Manager op `https://<server>:<port>/crx/packmgr`
-1. Selecteer het pakket in de lijst en selecteer vervolgens **Meer** vervolgkeuzelijst in de kop en **Valideren** in de vervolgkeuzelijst.
+1. Open de Manager van het Pakket bij `https://<server>:<port>/crx/packmgr`
+1. Selecteer het pakket in de lijst en selecteer **Meer** dropdown van de rubriek en dan **Valideren** van het drop-down menu.
 
    >[!NOTE]
    >
@@ -532,7 +534,7 @@ https://<host>:<port>/crx/packmgr/service.jsp?cmd=validate&type=osgiPackageImpor
 
 >[!NOTE]
 >
->De `type` parameter kan elke door komma&#39;s gescheiden niet-geordende lijst zijn die bestaat uit:
+>De parameter `type` kan elke door komma&#39;s gescheiden niet-geordende lijst zijn die bestaat uit:
 >
 >* `osgiPackageImports`
 >* `overlays`
@@ -540,7 +542,7 @@ https://<host>:<port>/crx/packmgr/service.jsp?cmd=validate&type=osgiPackageImpor
 
 >
 >
-De waarde van `type` default is ingesteld op `osgiPackageImports` if not passed.
+De waarde van `type` is standaard `osgiPackageImports` als deze niet wordt doorgegeven.
 
 Hieronder ziet u een voorbeeld van het gebruik van cURL voor het uitvoeren van een pakketvalidatie.
 
@@ -556,11 +558,11 @@ Hieronder ziet u een voorbeeld van het gebruik van cURL voor het uitvoeren van e
 >
 >De reactie op een aanvraag van een HTTP-validatie-POST is een JSON-object met de resultaten van de validatie.
 
-### Pakketten installeren {#installing-packages}
+### Pakketten {#installing-packages} installeren
 
 Nadat u een pakket hebt geüpload, moet u de inhoud installeren. Om de pakketinhoud geïnstalleerd en functioneel te hebben, moet het allebei zijn:
 
-* geladen in AEM ( [geüpload vanaf uw bestandssysteem](#uploading-packages-from-your-file-system) of gedownload van [Softwaredistributie](#software-distribution))
+* geladen in AEM (of [geüpload van uw bestandssysteem](#uploading-packages-from-your-file-system) of gedownload van [Softwaredistributie](#software-distribution))
 
 * geïnstalleerd
 
@@ -571,7 +573,7 @@ Nadat u een pakket hebt geüpload, moet u de inhoud installeren. Om de pakketinh
 >Als u de inhoud of de invloed van een pakket wilt zien, kunt u:
 >
 >* Voer een testinstallatie van de verpakking uit zonder de inhoud te wijzigen:
-   >  Open het pakket (klik op het pictogram of de naam van het pakket) en klik op **Installeren** testen.
+   >  Open het pakket (klik op het pictogram of de naam van het pakket) en klik **Testen installeren**.
    >
    >
 * Zie een lijst met pakketinhoud:
@@ -592,7 +594,7 @@ Nadat u een pakket hebt geüpload, moet u de inhoud installeren. Om de pakketinh
 >Als u digitale elementen installeert, moet u:
 >
 >* Deactiveer eerst de WorkflowLauncher.
-   >  Gebruik de het menuoptie van Componenten van de console OSGi om te deactiveren `com.day.cq.workflow.launcher.impl.WorkflowLauncherImpl`.
+   >  Gebruik de het menuoptie van Componenten van de console OSGi om `com.day.cq.workflow.launcher.impl.WorkflowLauncherImpl` te deactiveren.
    >
    >
 * Vervolgens activeert u de WorkflowLauncher opnieuw wanneer de installatie is voltooid.
@@ -602,29 +604,29 @@ Als u de WorkflowLauncher deactiveert, zorgt u ervoor dat het framework voor het
 
 1. Navigeer in Pakketbeheer naar het pakket dat u wilt installeren.
 
-   Een **Install** knoop wordt getoond bij de kant van Pakketten die nog niet geïnstalleerd zijn.
+   Een **Install** knoop wordt getoond aan de kant van Pakketten die nog niet geïnstalleerd zijn.
 
    >[!NOTE]
    >
    >U kunt het pakket ook openen door op het bijbehorende pictogram te klikken om de knop **Installeren** daar te openen.
 
-1. Klik op **Installeren** om de installatie te starten. In een dialoogvenster wordt bevestiging gevraagd en worden alle aangebrachte wijzigingen vermeld. Klik op **Sluiten** in het dialoogvenster als u klaar bent.
+1. Klik **Installeren** om de installatie te starten. In een dialoogvenster wordt bevestiging gevraagd en worden alle aangebrachte wijzigingen vermeld. Wanneer gebeëindigd klik **Close** op de dialoog.
 
-   Het woord **Geïnstalleerd** verschijnt naast het pakket nadat het is geïnstalleerd.
+   Het woord **Installed** verschijnt naast het pakket nadat het is geïnstalleerd.
 
 ### Uploaden en installeren op basis van bestandssysteem {#file-system-based-upload-and-installation}
 
-U kunt pakketten op een andere manier naar uw exemplaar uploaden en installeren. In uw dossiersysteem, hebt u een `crx-quicksart` omslag naast uw pot en `license.properties` dossier. U moet een map maken met de naam `install` onder `crx-quickstart`. Dan heb je iets als dit: `<aem_home>/crx-quickstart/install`
+U kunt pakketten op een andere manier naar uw exemplaar uploaden en installeren. In uw dossiersysteem, hebt u een `crx-quicksart` omslag naast uw jar en `license.properties` dossier. U moet een map maken met de naam `install` onder `crx-quickstart`. Dan heb je iets als dit: `<aem_home>/crx-quickstart/install`
 
 In deze installatiemap kunt u uw pakketten rechtstreeks toevoegen. Deze worden automatisch geüpload en geïnstalleerd op uw exemplaar. Wanneer het wordt gedaan, kunt u de pakketten in de Manager van het Pakket zien.
 
-Als uw exemplaar loopt, zal het toevoegen van een pakket aan de `install` omslag direct het uploaden en de installatie op de instantie lanceren. Als de instantie niet actief is, worden de pakketten die u in de `install` map plaatst, bij het opstarten in alfabetische volgorde geïnstalleerd.
+Als uw instantie wordt uitgevoerd en u een pakket aan de map `install` toevoegt, wordt het uploaden en de installatie op de instantie direct gestart. Als de instantie niet wordt uitgevoerd, worden de pakketten die u in de map `install` plaatst, bij het opstarten in alfabetische volgorde geïnstalleerd.
 
 >[!NOTE]
 >
->U kunt dit ook doen voordat u de instantie voor de eerste keer start. Hiervoor moet u de `crx-quickstart` map handmatig maken, de `install` map eronder maken en de pakketten daar plaatsen. Wanneer u uw exemplaar vervolgens voor het eerst start, worden de pakketten in alfabetische volgorde geïnstalleerd.
+>U kunt dit ook doen voordat u de instantie voor de eerste keer start. Hieronder moet u de map `crx-quickstart` handmatig maken, de map `install` maken en de pakketten daar plaatsen. Wanneer u uw exemplaar vervolgens voor het eerst start, worden de pakketten in alfabetische volgorde geïnstalleerd.
 
-### Pakketten verwijderen {#uninstalling-packages}
+### Pakketten {#uninstalling-packages} verwijderen
 
 Met AEM kunt u pakketten verwijderen. Deze actie keert de inhoud van de bewaarplaats terug die aan de momentopname wordt beïnvloed die onmiddellijk voorafgaand aan de pakketinstallatie wordt gemaakt.
 
@@ -636,9 +638,9 @@ Met AEM kunt u pakketten verwijderen. Deze actie keert de inhoud van de bewaarpl
 
 1. Navigeer in Pakketbeheer naar het pakket dat u wilt verwijderen.
 1. Klik op het pakketpictogram van het pakket dat u wilt verwijderen.
-1. Klik op **Verwijderen** om de inhoud van dit pakket uit de opslagplaats te verwijderen. In een dialoogvenster wordt bevestiging gevraagd en worden alle aangebrachte wijzigingen vermeld. Klik op **Sluiten** in het dialoogvenster als u klaar bent.
+1. Klik op **Verwijderen** om de inhoud van dit pakket uit de opslagplaats te verwijderen. In een dialoogvenster wordt bevestiging gevraagd en worden alle aangebrachte wijzigingen vermeld. Wanneer gebeëindigd klik **Close** op de dialoog.
 
-### Pakketten verwijderen {#deleting-packages}
+### Pakketten {#deleting-packages} verwijderen
 
 Een pakket verwijderen uit de lijst(en) in Package Manager:
 
@@ -646,29 +648,29 @@ Een pakket verwijderen uit de lijst(en) in Package Manager:
 >
 >De geïnstalleerde bestanden/knooppunten uit het pakket worden **niet** verwijderd.
 
-1. Vouw in de **gereedschapsconsole** de map **Packages** uit om het pakket in het rechterdeelvenster weer te geven.
+1. Vouw in de **Tools**-console de map **Packages** uit om het pakket weer te geven in het rechterdeelvenster.
 
 1. Klik op het pakket dat u wilt verwijderen, zodat het wordt gemarkeerd en vervolgens op een van de volgende manieren:
 
-   * Klik op **Verwijderen** in het werkbalkmenu.
-   * Klik met de rechtermuisknop en selecteer **Verwijderen**.
+   * Klik **Delete** in het toolbarmenu.
+   * Klik met de rechtermuisknop en selecteer **Delete**.
 
    ![packagesdelete](assets/packagesdelete.png)
 
-1. AEM vraagt om bevestiging dat u het pakket wilt schrappen. Klik op **OK** om de verwijdering te bevestigen.
+1. AEM vraagt om bevestiging dat u het pakket wilt schrappen. Klik **OK** om de verwijdering te bevestigen.
 
 >[!CAUTION]
 >
->Als dit pakket al is geïnstalleerd, wordt de *geïnstalleerde* inhoud **niet** verwijderd.
+>Als dit pakket al is geïnstalleerd, wordt de *geïnstalleerde*-inhoud **not** verwijderd.
 
-### Pakketten repliceren {#replicating-packages}
+### Pakketten {#replicating-packages} dupliceren
 
 Kopieer de inhoud van een pakket en installeer het naar de publicatie-instantie:
 
 1. Navigeer in **Pakketbeheer** naar het pakket dat u wilt repliceren.
 
 1. Klik op het pictogram of de naam van het pakket dat u wilt repliceren om het uit te vouwen.
-1. Selecteer **Repliceren** in het keuzemenu Meer **** op de werkbalk.
+1. Selecteer **Repliceren** in het vervolgkeuzemenu **Meer** op de werkbalk.
 
 ## Package Share {#package-share}
 
@@ -678,9 +680,9 @@ Het is vervangen door [Softwaredistributie](#software-distribution).
 
 ## Softwaredistributie {#software-distribution}
 
-[Softwaredistributie](https://downloads.experiencecloud.adobe.com) is de nieuwe gebruikersinterface die is ontworpen om het zoeken en downloaden van AEM pakketten te vereenvoudigen.
+[Software ](https://downloads.experiencecloud.adobe.com) Distributionis de nieuwe gebruikersinterface die is ontworpen om het zoeken en downloaden van AEM pakketten te vereenvoudigen.
 
-Voor meer informatie, heb een blik bij de documentatie [van de Distributie van de](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)Software.
+Voor meer informatie, heb een blik bij de [documentatie van de Distributie van de Software](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
 
 >[!CAUTION]
 >

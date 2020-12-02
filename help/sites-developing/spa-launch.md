@@ -1,8 +1,8 @@
 ---
-title: Integratie van SPA- en Adobe Experience Platform
-seo-title: Integratie van SPA- en Adobe Experience Platform
-description: De Lancering van het Platform van de Ervaring van Adobe is de geadviseerde manier om Analytics, Doel, en de Manager van het Publiek binnen SPAs uit te voeren.
-seo-description: De Lancering van het Platform van de Ervaring van Adobe is de geadviseerde manier om Analytics, Doel, en de Manager van het Publiek binnen SPAs uit te voeren.
+title: Integratie SPA en Adobe Experience Platform Launch
+seo-title: Integratie SPA en Adobe Experience Platform Launch
+description: Adobe Experience Platform Launch is de aanbevolen manier om Analytics, Target en Audience Manager in SPA te implementeren.
+seo-description: Adobe Experience Platform Launch is de aanbevolen manier om Analytics, Target en Audience Manager in SPA te implementeren.
 uuid: 5e13ad32-bb84-4a60-ba72-6ecc9ed36f3b
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,24 +12,27 @@ discoiquuid: 6c320633-ce0b-4eb1-bb54-05e1a514d139
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 2dad220d6593ed542816f8a97b0d4b44f0d57876
+workflow-type: tm+mt
+source-wordcount: '215'
+ht-degree: 0%
 
 ---
 
 
-# Integratie van SPA- en Adobe Experience Platform{#spa-and-adobe-experience-platform-launch-integration}
+# SPA en Adobe Experience Platform Launch Integration{#spa-and-adobe-experience-platform-launch-integration}
 
-De Lancering van het Platform van de Ervaring van Adobe is de geadviseerde manier om Analytics, Doel, en de Manager van de Publiek binnen de Toepassingen van de Enige Pagina (SPAs) uit te voeren.
+Adobe Experience Platform Launch is de aanbevolen manier om Analytics, Target en Audience Manager te implementeren in toepassingen voor één pagina (SPA).
 
 >[!NOTE]
 >
->De redacteur van het KUUROORD is de geadviseerde oplossing voor projecten die het kader van het KUUROORD gebaseerde cliënt-kant teruggeven (b.v. Reageren of Hoekig) vereisen.
+>De SPA Editor is de aanbevolen oplossing voor projecten die SPA op raamwerk gebaseerde renderen aan de clientzijde vereisen (bijvoorbeeld Reageren of Hoekig).
 
 ## Zelfstudie {#tutorial}
 
-Als u wilt weten hoe u uw SPA kunt integreren met het opstartproces van het Adobe Experience Platform, raadpleegt u [dit kennisbase-artikel en de zelfstudie](https://helpx.adobe.com/experience-manager/kt/integration/using/launch-reference-architecture-SPA-tutorial-implement.html)die u door de opstartconfiguratie begeleiden en de Experience Cloud implementeren die is gebouwd met Angular of React.
+Om te begrijpen hoe te om uw SPA met Adobe Experience Platform Launch te integreren, te zien [dit kennisbasisartikel en leerprogramma](https://helpx.adobe.com/experience-manager/kt/integration/using/launch-reference-architecture-SPA-tutorial-implement.html), die u door de opstelling van de Lancering zullen begeleiden evenals de Experience Cloud die met Hoekig of Reageren wordt gebouwd uitvoeren.
 
 >[!NOTE]
 >
->KB waarnaar wordt verwezen werd gecreeerd om de integratie van de Lancering van het Platform van de Ervaring van Adobe met SPAs toe te laten die hefboomwerking niet de Redacteur van AEM SPA. Deze methodes zouden de integratie van de Lancering van het Platform van de Ervaring van Adobe ook moeten toestaan om met SPAs te coëxisteren die worden gebouwd om de Redacteur van het KUUROORD te gebruiken.
+>De KB waarnaar wordt verwezen, is gemaakt om Adobe Experience Platform Launch-integratie mogelijk te maken met SPA die geen gebruikmaken van de AEM SPA Editor. Deze methodes zouden de integratie van Adobe Experience Platform Launch ook moeten toestaan om met SPA te coëxisteren die worden gebouwd om de Redacteur van de SPA te gebruiken.
 >
->Het gebruik van Redux naast de bibliotheken Javascript SPA is niet volledig onderzocht. De steun van Redux is gepland in een toekomstige versie van de Redacteur van het KUUROORD.
+>Het gebruik van Redux naast de Javascript SPA libraries is niet volledig onderzocht. De ondersteuning van Redux is gepland in een toekomstige versie van de SPA Editor.

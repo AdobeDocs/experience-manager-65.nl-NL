@@ -24,7 +24,7 @@ Deze pagina bevat de belangrijkste elementen van het werken met het opmerkingens
 
 De commentaarcomponent vestigt een commentaarsysteem zodat elke afzonderlijke post door een commentaarcomponent (enkelvoudig) wordt vertegenwoordigd. Het is het opmerkingsysteem dat op de pagina is opgenomen. De afzonderlijke opmerkingen worden gemaakt wanneer deze worden aangeroepen.
 
-## Essentiële elementen voor client-kant {#essentials-for-client-side}
+## Essentiële elementen voor client-side {#essentials-for-client-side}
 
 <table>
  <tbody>
@@ -34,7 +34,7 @@ De commentaarcomponent vestigt een commentaarsysteem zodat elke afzonderlijke po
   </tr>
   <tr>
    <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inclusief</strong></a></td>
-   <td>Ja - eigenschappen kunnen worden bewerkt in de <i></i>ontwerpmodus</td>
+   <td>Ja - eigenschappen kunnen worden bewerkt in <i>ontwerpmodus </i>modus</td>
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
@@ -50,7 +50,7 @@ De commentaarcomponent vestigt een commentaarsysteem zodat elke afzonderlijke po
   </tr>
   <tr>
    <td><strong> eigenschappen</strong></td>
-   <td> Zie Opmerkingen <a href="comments.md">gebruiken</a></td>
+   <td> Zie <a href="comments.md">Opmerkingen gebruiken</a></td>
   </tr>
  </tbody>
 </table>
@@ -89,16 +89,16 @@ Dit geldt voor alle componenten die een opmerkingsysteem uitbreiden.
 ### Toegang tot geposte opmerkingen (UGC) {#accessing-posted-comments-ugc}
 
 UGC moet worden gemoderniseerd met behulp van een van de standaardmethoden voor gematigdheid.
-Zie Door de gebruiker gegenereerde inhoud [modereren](moderate-ugc.md).
+Zie [Door gebruiker gegenereerde inhoud modereren](moderate-ugc.md).
 
-Vanaf AEM 6.1 Communities omvat het gebruik van een [gemeenschappelijke opslag](working-with-srp.md) voor UGC programmatische toegang tot UGC ongeacht de gekozen opslagoptie (zoals ASRP, MSRP of JSRP).
+Met ingang van AEM 6.1 Communities omvat het gebruik van een [common store](working-with-srp.md) voor UGC programmatische toegang tot UGC, ongeacht de gekozen opslagoptie (zoals ASRP, MSRP of JSRP).
 
 **De locatie en indeling van de UGC in de opslagplaats kunnen zonder waarschuwing** worden gewijzigd.
 
 Zie:
 
-* [Overzicht](srp.md) van Storage Resource Provider - Inleiding en overzicht van het opslaggebruik.
-* [SRP en de Hoofdzaak](srp-and-ugc.md) UGC - SRP nutsmethodes en voorbeelden.
-* [Toegang tot UGC met SRP](accessing-ugc-with-srp.md) - Coderingsrichtlijnen.
-* [SocialUtils Refactoring](socialutils.md) - Afgekeurde nutsmethodes van de Afbeelding aan huidige SRP hulpprogrammamethodes.
+* [Overzicht](srp.md)  van Storage Resource Provider - Inleiding en overzicht van het opslaggebruik.
+* [SRP en de Hoofdzaak](srp-and-ugc.md)  van UGC - SRP nutsmethodes en voorbeelden.
+* [Toegang tot UGC met SRP](accessing-ugc-with-srp.md)  - Coderingsrichtlijnen.
+* [SocialUtils Refactoring](socialutils.md)  - Afgekeurde nutsmethodes van de Afbeelding aan huidige SRP hulpprogrammamethodes.
 

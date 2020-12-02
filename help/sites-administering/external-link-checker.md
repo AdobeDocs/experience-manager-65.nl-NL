@@ -12,13 +12,16 @@ discoiquuid: d1ccd194-8549-4188-8932-7136be1e88a2
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 0a94bf49a7136c5831c42eb274d07517c12014ec
+workflow-type: tm+mt
+source-wordcount: '153'
+ht-degree: 0%
 
 ---
 
 
 # De externe koppelingencontrole{#the-external-link-checker}
 
-Een externe koppelingencontrole wordt verstrekt binnen AEM. De koppelingencontrole:
+Binnen AEM wordt een externe koppelingencontrole aangeboden. De koppelingencontrole:
 
 * scant alle inhoudspagina&#39;s
 * genereert een lijst met alle geldige en ongeldige koppelingen
@@ -28,22 +31,22 @@ Een externe koppelingencontrole wordt verstrekt binnen AEM. De koppelingencontro
 
 De externe koppelingencontrole gebruiken:
 
-1. Gebruikend **Navigatie**, uitgezochte **Hulpmiddelen**, dan **Plaatsen**.
-1. Selecteer **Externe koppelingencontrole**. Er wordt een lijst met alle externe koppelingen gegenereerd.
-1. Valideer een specifieke koppeling door deze te selecteren in de lijst en vervolgens te klikken op **Controleren**:
+1. Selecteer **Navigatie**, selecteer **Gereedschappen** en **Sites**.
+1. Selecteer **External Link Checker**, er wordt een lijst met alle externe koppelingen gegenereerd.
+1. Valideer een specifieke verbinding door het in de lijst te selecteren, dan klikkend **Controle**:
 
    ![](assets/telc-01.png)
 
    Informatie wordt weergegeven:
 
-   * **Status** van de koppeling
+   * **Status** van de link
    * **URL**
    * **Referenter**
-   * tijd sinds de koppeling voor het **laatst is gecontroleerd** (gevalideerd)
-   * De **laatste status** die is geretourneerd
+   * tijd sinds de verbinding **Last Checked** (bevestigd) was
+   * de **Laatste status** is geretourneerd
 
-   * tijd sinds de koppeling voor het **laatst beschikbaar was**
-   * tijd sinds de koppeling voor **laatst geopend is**
+   * tijd sinds de verbinding **Last Available** was
+   * tijd sinds de verbinding **Laatst geopend** was
 
 1. Ongeldige koppelingen op de afzonderlijke inhoudspagina&#39;s worden weergegeven als verbroken:
 

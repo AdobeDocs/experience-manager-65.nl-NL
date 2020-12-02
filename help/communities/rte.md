@@ -12,8 +12,8 @@ discoiquuid: 0225a543-0fad-488b-8b0b-8b3512d44fbe
 translation-type: tm+mt
 source-git-commit: 4b6311cbfe11a61b74f68bf5a25ad1f5faef5358
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '237'
+ht-degree: 1%
 
 ---
 
@@ -24,15 +24,15 @@ ht-degree: 0%
 
 Een Rich Text Editor (RTE) biedt de mogelijkheid om tekst met opmaak in te voeren.
 
-Voor de componenten van de Gemeenschappen, hoewel gelijkend op de [rijke tekstredacteur in het auteursmilieu](../../help/sites-authoring/rich-text-editor.md), beïnvloedt het tekst ingegaan in het publicatiemilieu.
+Voor de componenten van de Gemeenschappen, terwijl gelijkend op [rijke tekstredacteur in het auteursmilieu](../../help/sites-authoring/rich-text-editor.md), het tekst ingegaan in het publicatiemilieu beïnvloedt.
 
 ![rich-text-editor](assets/rich-text-editor.png)
 
-## RTF-editor inschakelen {#enabling-rich-text-editor}
+## RTF-editor {#enabling-rich-text-editor} inschakelen
 
-De componenten van gemeenschappen die gebruiker geproduceerde inhoud (UGC) toestaan kunnen worden toegelaten om RTE toe te staan. Afhankelijk van of de component aan een pagina werd toegevoegd of binnen een [functie](functions.md)inbegrepen, kan RTE of niet door gebrek worden toegelaten.
+De componenten van gemeenschappen die gebruiker geproduceerde inhoud (UGC) toestaan kunnen worden toegelaten om RTE toe te staan. Afhankelijk van of de component aan een pagina werd toegevoegd of binnen een [functie](functions.md) inbegrepen, kan RTE al dan niet door gebrek worden toegelaten.
 
-Als deze optie niet is ingeschakeld, voert u gewoon de bewerkingsmodus [van de](sites-console.md#authoring-site-content)auteur in, selecteert u de te bewerken component en schakelt u het `Rich Text Editor` selectievakje in.
+Als deze optie niet is ingeschakeld, voert u [bewerkingsmodus auteur](sites-console.md#authoring-site-content) in, selecteert u de component die u wilt bewerken en schakelt u het selectievakje `Rich Text Editor` in.
 
 RTE is beschikbaar voor de volgende componenten van de Gemeenschappen:
 
@@ -47,9 +47,9 @@ RTE is beschikbaar voor de volgende componenten van de Gemeenschappen:
 
 ## Aanpassing {#customization}
 
-Aanpassing van de rijke tekstredacteur is mogelijk aangezien de implementatie op [CKEditor](https://www.ckeditor.com/)gebaseerd is.
+Aanpassing van de rijke tekstredacteur is mogelijk aangezien de implementatie op [CKEditor](https://www.ckeditor.com/) wordt gebaseerd.
 
-De huidige configuratie voor de onderdelen van de Gemeenschappen bevindt zich in de `cq.social.  scf   clientlib`opslagplaats
+De huidige configuratie voor Community-componenten bevindt zich in de `cq.social.  scf   clientlib`, die zich bevindt in de repository op
 
 `/libs/clientlibs/social/commons/scf/ckrte.js`
 
@@ -61,7 +61,7 @@ Vanwege beveiligingsproblemen zijn de hyperlinkopties niet opgenomen in de set m
 
 De hyperlinkopties toevoegen aan de werkbalk:
 
-* Een werkbalk met de naam &quot; `links`&quot; toevoegen
+* Een werkbalk toevoegen met de naam &quot; `links`&quot;
    * `{ name: 'links', items: [ 'Link','Unlink','Anchor' ] }`
 * Selecteer **[!UICONTROL Save All]**
 

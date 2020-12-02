@@ -1,8 +1,8 @@
 ---
-title: Introductie van het KUUROORD en Analyse
-seo-title: Introductie van het KUUROORD en Analyse
-description: Dit artikel introduceert de concepten een KUUROORD en loopt door het gebruiken van een basistoepassing van het KUUROORD voor creatie, tonend hoe het op de onderliggende AEM Redacteur van het KUUROORD betrekking heeft.
-seo-description: Dit artikel introduceert de concepten een KUUROORD en loopt door het gebruiken van een basistoepassing van het KUUROORD voor creatie, tonend hoe het op de onderliggende AEM Redacteur van het KUUROORD betrekking heeft.
+title: SPA Inleiding en Analyse
+seo-title: SPA Inleiding en Analyse
+description: Dit artikel introduceert de concepten SPA en loopt door het gebruiken van een basis SPA toepassing voor creatie, die toont hoe het op het onderliggende AEM SPA Redacteur betrekking heeft.
+seo-description: Dit artikel introduceert de concepten SPA en loopt door het gebruiken van een basis SPA toepassing voor creatie, die toont hoe het op het onderliggende AEM SPA Redacteur betrekking heeft.
 uuid: 4b0a9e53-3892-4d60-8bd3-7ff740d2f137
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -19,23 +19,23 @@ ht-degree: 0%
 ---
 
 
-# Introductie van het KUUROORD en Analyse{#spa-introduction-and-walkthrough}
+# SPA Inleiding en Analyse{#spa-introduction-and-walkthrough}
 
-Toepassingen van één pagina (SPAs) kunnen dwingende ervaringen voor websitegebruikers aanbieden. De ontwikkelaars willen plaatsen kunnen bouwen gebruikend het kader van het KUUROORD en de auteurs willen inhoud binnen AEM voor een plaats foutloos uitgeven die gebruikend dergelijke kaders wordt gebouwd.
+Toepassingen op één pagina (SPA) kunnen aantrekkelijke ervaringen bieden voor websitegebruikers. Ontwikkelaars willen sites kunnen maken met behulp van SPA frameworks en auteurs willen inhoud naadloos bewerken binnen AEM voor een site die is gebouwd met behulp van dergelijke frameworks.
 
-De redacteur van het KUUROORD biedt een uitvoerige oplossing voor het steunen van SPAs binnen AEM aan. Dit artikel loopt door het gebruiken van een basistoepassing van het KUUROORD voor creatie en toont hoe het op de onderliggende AEM Redacteur van het KUUROORD betrekking heeft.
+De SPA Editor biedt een uitgebreide oplossing voor het ondersteunen van SPA binnen AEM. Dit artikel doorloopt het gebruiken van een basis SPA toepassing voor creatie en toont hoe het op het onderliggende AEM SPA Redacteur betrekking heeft.
 
 >[!NOTE]
 >
->De redacteur van het KUUROORD is de geadviseerde oplossing voor projecten die het kader van het KUUROORD gebaseerde cliënt-kant teruggeven (b.v. Reageren of Hoekig) vereisen.
+>De SPA Editor is de aanbevolen oplossing voor projecten die SPA op raamwerk gebaseerde renderen aan de clientzijde vereisen (bijvoorbeeld Reageren of Hoekig).
 
 ## Inleiding {#introduction}
 
-### Artikel {#article-objective}
+### Artikel doelstelling {#article-objective}
 
-Dit artikel introduceert de basisconcepten SPAs alvorens de lezer door een analyse van de redacteur van het KUUROORD door een eenvoudige toepassing van het KUUROORD te gebruiken om basisinhoud het uitgeven aan te tonen. Het duikt dan neer in de bouw van de pagina en hoe de toepassing van het KUUROORD op en met de AEM Redacteur van het KUUROORD betrekking heeft.
+Dit artikel introduceert de basisconcepten van SPA alvorens de lezer door een analyse van de SPA redacteur door een eenvoudige SPA toepassing te gebruiken te leiden om basisinhoud het uitgeven aan te tonen. Vervolgens duikt het neer in de constructie van de pagina en hoe de SPA toepassing zich verhoudt tot en communiceert met de AEM SPA Editor.
 
-Het doel van deze inleiding en analyse moet aan een AEM ontwikkelaar aantonen waarom SPAs relevant is, hoe zij over het algemeen werken, hoe een KUUROORD door de Redacteur van het AEMKUUROORD wordt behandeld, en hoe het van een standaard AEM toepassing verschillend is.
+Het doel van deze inleiding en analyse is aan een AEM ontwikkelaar te tonen waarom SPA relevant zijn, hoe zij over het algemeen werken, hoe een SPA door de AEM Redacteur wordt behandeld SPA, en hoe het van een standaard AEM toepassing verschillend is.
 
 De analyse is gebaseerd op standaard AEM functionaliteit en de steekproefWij.Retail app van het Dagboek. Aan de volgende eisen moet worden voldaan:
 
@@ -44,21 +44,21 @@ De analyse is gebaseerd op standaard AEM functionaliteit en de steekproefWij.Ret
 
 >[!CAUTION]
 >
->Dit document gebruikt de app [](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) We.Retail Journal alleen voor demonstratiedoeleinden. Het mag niet worden gebruikt voor projectwerkzaamheden.
+>Dit document gebruikt [We.Retail Journal app](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) alleen voor demonstratiedoeleinden. Het mag niet worden gebruikt voor projectwerkzaamheden.
 >
->Om het even welk AEM project zou hefboomwerking het [AEM Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)van het Project, dat de projecten van het KUUROORD gebruikend React of Angular steunt en hefboomwerkingen SDK van het KUUROORD.
+>Om het even welk AEM project zou hefboomwerking [AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html), dat SPA projecten gebruikend React of Hoekig steunt en hefboomwerkingen de SPA SDK.
 
 ### Wat is een SPA? {#what-is-a-spa}
 
-Een enig-paginatoepassing (SPA) verschilt van een conventionele pagina in die zin dat het cliënt-kant wordt teruggegeven en hoofdzakelijk JavaScript-gedreven is, die op Ajax vraag baseert om gegevens te laden en dynamisch de pagina bij te werken. De meeste of alle inhoud wordt één keer opgehaald in één pagina die wordt geladen met extra bronnen die asynchroon worden geladen, afhankelijk van gebruikersinteractie met de pagina.
+Een toepassing van één pagina (SPA) verschilt van een conventionele pagina in zoverre dat het cliënt-kant wordt teruggegeven en hoofdzakelijk JavaScript-gedreven is, die op Ajax vraag baseert om gegevens te laden en dynamisch de pagina bij te werken. De meeste of alle inhoud wordt één keer opgehaald in één pagina die wordt geladen met extra bronnen die asynchroon worden geladen, afhankelijk van gebruikersinteractie met de pagina.
 
 Hierdoor is het minder nodig pagina&#39;s te vernieuwen en wordt de gebruiker een ervaring geboden die naadloos, snel is en meer lijkt op een native app-ervaring.
 
-De AEM redacteur van het KUUROORD staat front-end ontwikkelaars toe om SPAs tot stand te brengen die in een AEM plaats kan worden geïntegreerd, toestaand de inhoudsauteurs om de inhoud van het KUUROORD zo gemakkelijk als om het even welke andere AEM inhoud uit te geven.
+Met de AEM SPA Editor kunnen front-end ontwikkelaars SPA maken die in een AEM site kunnen worden geïntegreerd, zodat de auteurs van de inhoud de SPA inhoud net zo gemakkelijk kunnen bewerken als elke andere AEM.
 
 ### Waarom een SPA? {#why-a-spa}
 
-Door sneller, dynamisch, en meer als een inheemse toepassing te zijn, wordt een SPA een zeer aantrekkelijke ervaring niet alleen voor de bezoeker van de webpagina, maar ook voor marketers en ontwikkelaars toe te schrijven aan de aard van hoe SPAs werkt.
+Door sneller, vloeiend en meer als een native toepassing te zijn, wordt een SPA een zeer aantrekkelijke ervaring, niet alleen voor de bezoeker van de webpagina, maar ook voor marketers en ontwikkelaars vanwege de aard van de manier waarop SPA werkt.
 
 ![screen_shot_2018-08-20at135550](assets/screen_shot_2018-08-20at135550.png)
 
@@ -79,25 +79,25 @@ Door sneller, dynamisch, en meer als een inheemse toepassing te zijn, wordt een 
 
 ### Hoe werkt een SPA? {#how-does-a-spa-work}
 
-Het primaire idee achter een KUUROORD is dat de vraag en de afhankelijkheid van een server worden verminderd om vertragingen te minimaliseren die door servervraag worden veroorzaakt zodat SPA de ontvankelijkheid van een inheemse toepassing benadert.
+Het primaire idee achter een SPA is dat de vraag en de afhankelijkheid van een server worden verminderd om vertragingen te minimaliseren die door servervraag worden veroorzaakt zodat de SPA de ontvankelijkheid van een inheemse toepassing benadert.
 
 In een traditionele, opeenvolgende webpagina worden alleen de gegevens geladen die nodig zijn voor de directe pagina. Dit betekent dat wanneer de bezoeker naar een andere pagina gaat, de server om de extra bronnen wordt gevraagd. Aanvullende aanroepen kunnen nodig zijn omdat de bezoeker werkt met elementen op de pagina. Deze veelvoudige vraag kan een gevoel van vertraging of vertraging geven aangezien de pagina met de verzoeken van de bezoeker moet inhalen.
 
 ![screen_shot_2018-08-20at140449](assets/screen_shot_2018-08-20at140449.png)
 
-Voor een vloeiender ervaring, die nadert wat een bezoeker van mobiele, inheemse apps verwacht, laadt een SPA alle noodzakelijke gegevens voor de bezoeker op de eerste lading. Hoewel dit een beetje langer kan duren, elimineert het dan de behoefte aan extra servervraag.
+Voor een vloeiendere ervaring, die nadert wat een bezoeker van mobiele, native apps verwacht, laadt een SPA alle noodzakelijke gegevens voor de bezoeker bij de eerste lading. Hoewel dit een beetje langer kan duren, elimineert het dan de behoefte aan extra servervraag.
 
 Door het pagina-element op de client weer te geven, reageert het pagina-element sneller en zijn de interactie met de pagina door de bezoeker direct. Eventuele aanvullende gegevens worden asynchroon aangeroepen om de snelheid van de pagina te maximaliseren.
 
 >[!NOTE]
 >
->Voor technische details op hoe SPAs in AEM werkt, zie het artikel [Begonnen met SPAs in AEM](/help/sites-developing/spa-getting-started-react.md).
+>Raadpleeg het artikel [Aan de slag met SPA in AEM](/help/sites-developing/spa-getting-started-react.md) voor technische details over hoe SPA werken in AEM.
 >
->Voor een dichtere blik bij het ontwerp, de architectuur, en het technische werkschema van de Redacteur van het KUUROORD, zie het Overzicht [van de artikelredacteur](/help/sites-developing/spa-overview.md)van het KUUROORD.
+>Voor een dichtere blik bij het ontwerp, de architectuur, en het technische werkschema van de SPA Redacteur, zie het artikel [SPA Overzicht van de Redacteur](/help/sites-developing/spa-overview.md).
 
 ## Ervaring voor het bewerken van inhoud met SPA {#content-editing-experience-with-spa}
 
-Wanneer een KUUROORD aan hefboomwerking de Redacteur van het AEMKUUROORD wordt gebouwd, merkt de inhoudauteur geen verschil wanneer het uitgeven en het creëren van inhoud. Er is algemene AEM beschikbaar en er zijn geen wijzigingen in de workflow van de auteur vereist.
+Wanneer een SPA is gemaakt om de AEM SPA Editor te gebruiken, merkt de auteur van de inhoud op dat er geen verschil is bij het bewerken en maken van inhoud. Er is algemene AEM beschikbaar en er zijn geen wijzigingen in de workflow van de auteur vereist.
 
 >[!NOTE]
 >
@@ -125,7 +125,7 @@ Wanneer een KUUROORD aan hefboomwerking de Redacteur van het AEMKUUROORD wordt g
    ![screen_shot_2018-06-07at143419](assets/screen_shot_2018-06-07at143419.png)
 
    >[!NOTE]
-   >Zie het Overzicht [van de Redacteur van het](spa-overview.md#requirements-limitations) KUUROORD voor verdere informatie over op zijn plaats tekstredacteur en SPAs.
+   >Zie [SPA het Overzicht van de Redacteur ](spa-overview.md#requirements-limitations) voor verdere informatie over de op zijn plaats tekstredacteur en SPA.
 
 1. Met de middelenbrowser kunt u een nieuwe afbeelding naar een afbeeldingscomponent slepen en neerzetten.
 
@@ -135,21 +135,21 @@ Wanneer een KUUROORD aan hefboomwerking de Redacteur van het AEMKUUROORD wordt g
 
    ![screen_shot_2018-06-07at143732](assets/screen_shot_2018-06-07at143732.png)
 
-Aanvullende ontwerpgereedschappen, zoals slepen en neerzetten van aanvullende componenten op de pagina, het opnieuw rangschikken van componenten en het wijzigen van de layout, worden ondersteund zoals in elke niet-SPA-toepassing.
+Extra ontwerpgereedschappen, zoals het slepen en neerzetten van aanvullende componenten op de pagina, het opnieuw rangschikken van componenten en het wijzigen van de layout, worden ondersteund zoals in elke andere toepassing dan SPA.
 
 >[!NOTE]
 >
->De redacteur van het KUUROORD wijzigt DOM van de toepassing niet. De SPA zelf is verantwoordelijk voor het DOM.
+>De SPA Editor wijzigt het DOM van de toepassing niet. De SPA zelf is verantwoordelijk voor het DOM.
 >
->Om te zien hoe dit werkt, ga op de volgende sectie van dit artikel [SPA Apps en de AEM Redacteur](/help/sites-developing/spa-walkthrough.md#spa-apps-and-the-aem-spa-editor)van het KUUROORD verder.
+>Als u wilt zien hoe dit werkt, gaat u verder naar het volgende gedeelte van dit artikel [SPA Apps en de AEM SPA Editor](/help/sites-developing/spa-walkthrough.md#spa-apps-and-the-aem-spa-editor).
 
-## SPA Apps en de Redacteur van het AEMKUUROORD {#spa-apps-and-the-aem-spa-editor}
+## Apps en de AEM SPA Redacteur {#spa-apps-and-the-aem-spa-editor} SPA
 
-Ervarend hoe een KUUROORD zich voor het eind gedraagt en dan het inspecteren van de pagina van het KUUROORD helpt om beter te begrijpen hoe een SAP app met de Redacteur van het KUUROORD in AEM werkt.
+Door te ervaren hoe een SPA zich gedraagt voor de eindgebruiker en vervolgens de SPA pagina te inspecteren, kunt u beter begrijpen hoe een SAP-app werkt met de SPA Editor in AEM.
 
-### Een SPA-toepassing gebruiken {#using-an-spa-application}
+### Een SPA toepassing {#using-an-spa-application} gebruiken
 
-1. Laad de toepassing van het Dagboek Wij.Retail of op de publicatieserver of gebruikend de optie **Mening zoals Gepubliceerd** van het menu van de Informatie **van de** Pagina in de paginaredacteur.
+1. Laad de toepassing We.Retail Journal op de publicatieserver of met de optie **View as Published** in het menu **Page Information** in de paginaeditor.
 
    `/content/we-retail-journal/react.html`
 
@@ -167,15 +167,15 @@ Ervarend hoe een KUUROORD zich voor het eind gedraagt en dan het inspecteren van
 
    Er is erg weinig verkeer wanneer u van pagina naar pagina gaat in de app. De pagina wordt niet opnieuw geladen en alleen de nieuwe afbeeldingen worden aangevraagd.
 
-   Het KUUROORD beheert de inhoud en het verpletteren volledig op de cliëntkant.
+   De SPA beheert de inhoud en het verpletteren volledig op de cliëntkant.
 
 Dus als de pagina niet opnieuw wordt geladen wanneer u door de onderliggende pagina&#39;s navigeert, hoe wordt deze geladen?
 
-De volgende sectie, die een Toepassing [van het KUUROORD](/help/sites-developing/spa-walkthrough.md#loading-an-spa-application)laadt, graaft dieper in de mechanica van het laden van het KUUROORD en hoe de inhoud synchroon en asynchroon kan worden geladen.
+In de volgende sectie, [Een SPA toepassing laden](/help/sites-developing/spa-walkthrough.md#loading-an-spa-application), wordt dieper ingegaan op de mechanica van het laden van de SPA en hoe de inhoud synchroon en asynchroon kan worden geladen.
 
-### Een SPA-toepassing laden {#loading-an-spa-application}
+### Een SPA {#loading-an-spa-application} laden
 
-1. Als niet reeds geladen, laad de toepassing van het Dagboek Wij.Retail of op de publicatieserver of gebruikend de optie **Mening zoals Gepubliceerd** van het menu van de Informatie **van de** Pagina in de paginaredacteur.
+1. Als nog niet geladen, laadt u de toepassing We.Retail Journal op de publicatieserver of met de optie **View as Published** in het menu **Page Information** in de pagina-editor.
 
    `/content/we-retail-journal/react.html`
 
@@ -222,21 +222,21 @@ De volgende sectie, die een Toepassing [van het KUUROORD](/help/sites-developing
 
    ![screen_shot_2018-06-07at152155](assets/screen_shot_2018-06-07at152155.png)
 
-1. Laad de aanwijzer `react.model.json` in een nieuw tabblad.
+1. Laad `react.model.json` in een nieuw lusje.
 
    `/content/we-retail-journal/react.model.json`
 
    ![screen_shot_2018-06-07at152636](assets/screen_shot_2018-06-07at152636.png)
 
-   De AEM redacteur van het KUUROORD hefboomwerkingen [AEM de Diensten](/help/assets/content-fragments/content-fragments.md) van de Inhoud om de volledige inhoud van de pagina als model te leveren JSON.
+   De AEM SPA Editor gebruikt [AEM Content Services](/help/assets/content-fragments/content-fragments.md) om de volledige inhoud van de pagina als een JSON-model te leveren.
 
-   Door specifieke interfaces uit te voeren, verstrekken de Modellen van het Sling de informatie noodzakelijk aan SPA. De levering van de JSON-gegevens wordt naar beneden gedelegeerd aan elke component (van pagina, alinea, component, enz.).
+   Door specifieke interfaces uit te voeren, verstrekken de Modellen van het Sling de informatie noodzakelijk aan de SPA. De levering van de JSON-gegevens wordt naar beneden gedelegeerd aan elke component (van pagina, alinea, component, enz.).
 
    Elke component kiest wat het blootstelt en hoe het (server-kant met HTML of cliënt-kant met React) wordt teruggegeven. Natuurlijk richt dit artikel zich op client-side rendering met React.
 
 1. Het model kan pagina&#39;s ook groeperen zodat ze synchroon worden geladen, waardoor het aantal pagina&#39;s dat opnieuw moet worden geladen, afneemt.
 
-   In het voorbeeld van We.Retail Journal worden de pagina&#39;s `home`, `blog`en `aboutus` pagina&#39;s synchroon geladen, aangezien bezoekers vaak al deze pagina&#39;s bezoeken. De `weather` pagina wordt echter asynchroon geladen, omdat bezoekers de pagina waarschijnlijk minder zullen bezoeken.
+   In het voorbeeld van We.Retail Journal worden de pagina&#39;s `home`, `blog` en `aboutus` synchroon geladen, aangezien bezoekers doorgaans alle pagina&#39;s bezoeken. De pagina `weather` wordt echter asynchroon geladen, omdat bezoekers de pagina waarschijnlijk minder zullen bezoeken.
 
    Dit gedrag is niet verplicht en is volledig definieerbaar.
 
@@ -244,19 +244,19 @@ De volgende sectie, die een Toepassing [van het KUUROORD](/help/sites-developing
 
 1. Als u dit verschil in gedrag wilt weergeven, laadt u de pagina opnieuw en wist u de netwerkactiviteit van de inspecteur. Navigeer naar de blog en over de webpagina&#39;s in het paginamenu en controleer of er geen netwerkactiviteiten zijn gerapporteerd.
 
-   Navigeer naar de weerpagina en controleer of deze asynchroon `weather.model.json` wordt aangeroepen.
+   Navigeer naar de weerpagina en controleer of `weather.model.json` asynchroon wordt aangeroepen.
 
    ![screen_shot_2018-06-07at155738](assets/screen_shot_2018-06-07at155738.png)
 
-### Interactie met de Redacteur van het KUUROORD {#interaction-with-the-spa-editor}
+### Interactie met de SPA-editor {#interaction-with-the-spa-editor}
 
 Met behulp van de voorbeeldtoepassing We.Retail Journal is het duidelijk hoe de app zich gedraagt en wordt geladen wanneer deze wordt gepubliceerd, waarbij gebruik wordt gemaakt van contentservices voor het leveren van JSON-inhoud en het asynchroon laden van bronnen.
 
-Bovendien, voor de inhoudauteur, is de inhoudsverwezenlijking die een redacteur van het KUUROORD gebruikt naadloos binnen AEM.
+Voor de auteur van de inhoud is het maken van inhoud met een SPA-editor bovendien naadloos in AEM.
 
-In de volgende sectie zullen wij het contract onderzoeken dat de Redacteur van het KUUROORD toestaat om componenten binnen het KUUROORD met AEM componenten te relateren en deze naadloze het uitgeven ervaring te bereiken.
+In de volgende sectie zullen wij het contract onderzoeken dat de SPARedacteur toestaat om componenten binnen de SPA met AEM componenten te verbinden en deze naadloze het uitgeven ervaring te bereiken.
 
-1. Laad de toepassing van het Dagboek Wij.Retail in de redacteur en schakelaar aan de wijze van de **Voorproef** .
+1. Laad de toepassing van het Dagboek Wij.Retail in de redacteur en schakelaar aan **Voorproef** wijze.
 
    `https://localhost:4502/editor.html/content/we-retail-journal/react.html`
 
@@ -272,21 +272,21 @@ In de volgende sectie zullen wij het contract onderzoeken dat de Redacteur van h
 
    Met deze paden kunnen het contextconfiguratieobject van elke component worden opgehaald en gekoppeld.
 
-   Dit is het enige prijsverhogingsattribuut dat voor de redacteur wordt vereist om dit als editable component binnen het KUUROORD te erkennen. Gebaseerd op dit attribuut, zal de Redacteur van het KUUROORD bepalen welke editable configuratie met de component wordt geassocieerd, zodat het correcte kader, de toolbar, enz. is geladen.
+   Dit is het enige prijsverhogingsattribuut dat voor de redacteur wordt vereist om dit als editable component binnen de SPA te erkennen. Op basis van dit kenmerk bepaalt de SPA Editor welke bewerkbare configuratie aan de component is gekoppeld, zodat het juiste frame, de juiste werkbalk, enzovoort. is geladen.
 
    Bepaalde specifieke klassenamen worden ook toegevoegd voor het markeren van plaatsaanduidingen en voor het slepen en neerzetten van elementen.
 
    >[!NOTE]
    >
-   >Dit is een gedragswijziging van gerenderde pagina&#39;s op de server in AEM, waarbij voor elke bewerkbare component een `cq` element is ingevoegd.
+   >Dit is een gedragswijziging van gerenderde pagina&#39;s op de server in AEM, waarbij een element `cq` voor elke bewerkbare component wordt ingevoegd.
    >
    >
-   >Deze benadering in KUUROORD verwijdert de behoefte om douaneelementen te injecteren, die slechts een extra gegevensattribuut verlaten, makend de prijsverhoging voor de frontend ontwikkelaar eenvoudiger.
+   >Deze benadering in SPA verwijdert de behoefte om douaneelementen te injecteren, die slechts een extra gegevensattribuut baseren, die de prijsverhoging voor de frontend ontwikkelaar eenvoudiger maken.
 
 ## Volgende stappen {#next-steps}
 
-Nu u het KUUROORD het uitgeven ervaring in AEM begrijpt en hoe een KUUROORD op de Redacteur van het KUUROORD betrekking heeft, neem een diepere duik in het begrip hoe een KUUROORD wordt gebouwd.
+Nu u de SPA het uitgeven ervaring in AEM begrijpt en hoe een SPA op de SPA Redacteur betrekking heeft, neem een diepgaande duik in het begrijpen van hoe een SPA wordt gebouwd.
 
-* [Het krijgen begonnen met SPAs in AEM](/help/sites-developing/spa-getting-started-react.md) toont hoe een basisSPA wordt gebouwd om met de Redacteur van het KUUROORD in AEM te werken
-* [Het Overzicht](/help/sites-developing/spa-overview.md) van de Redacteur van het KUUROORD gaat in meer diepte in het communicatie model tussen AEM en het KUUROORD.
-* [Het ontwikkelen van SPAs voor AEM](/help/sites-developing/spa-architecture.md) beschrijft hoe te om front-end ontwikkelaars in dienst te nemen om een KUUROORD voor AEM te ontwikkelen evenals hoe SPAs met AEM architectuur in wisselwerking staat.
+* [Aan de slag met SPA in ](/help/sites-developing/spa-getting-started-react.md) AEMshows hoe een basisSPA wordt gebouwd om met de SPA Redacteur in AEM te werken
+* [SPA de ](/help/sites-developing/spa-overview.md) Overzichten van de Redacteur gaat dieper in het communicatie model tussen AEM en de SPA.
+* [Het ontwikkelen van SPA voor ](/help/sites-developing/spa-architecture.md) AEMbeschrijft hoe te om front-end ontwikkelaars in dienst te nemen om een SPA voor AEM te ontwikkelen evenals hoe SPA met AEM architectuur in wisselwerking staan.

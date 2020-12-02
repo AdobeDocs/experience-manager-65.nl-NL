@@ -15,7 +15,7 @@ ht-degree: 34%
 ---
 
 
-# Hulplijn voor middelen {#assets}
+# Elementengids {#assets}
 
 + [[!DNL Assets] gebruikershandleiding](home.md)
 + [[!DNL Experience Manager] 6.5 Opmerkingen bij de release van activa](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/assets.html)
@@ -83,17 +83,17 @@ ht-degree: 34%
    + [De CDN-cache ongeldig maken door middel van Dynamic Media Classic](invalidate-cdn-cache-dm-classic.md)
    + [Feature Pack 18912 installeren voor migratie van grote hoeveelheden bedrijfsmiddelen](bulk-ingest-migrate.md)
    + [Werken met kiezers](working-with-selectors.md)
-+ Elementen uitbreiden {#extending}
++ Elementen {#extending} uitbreiden
    + [Aanpassen en uitbreiden [!DNL Assets]](extending-assets.md)
    + [Elementen verwerken met behulp van mediafuncties en workflows](media-handlers.md)
    + [Zoekfunctionaliteit uitbreiden](searchx.md)
-   + [Installeren en [!DNL ImageMagick] configureren om te werken met [!DNL Assets]](best-practices-for-imagemagick.md)
+   + [Installeren en  [!DNL ImageMagick] configureren om te werken met [!DNL Assets]](best-practices-for-imagemagick.md)
    + [Elementen integreren met activiteitsstroom](extending-activity-stream.md)
    + [Editor van element uitbreiden](asseteditorx.md)
    + [[!DNL Assets] HTTP-API](mac-api-assets.md)
-   + [Content Fragments ondersteunt [!DNL Assets] in HTTP API](assets-api-content-fragments.md)
+   + [Content Fragments ondersteunt  [!DNL Assets] in HTTP API](assets-api-content-fragments.md)
    + [[!DNL Assets] proxyontwikkeling](proxy.md)
-+ Elementen beheren {#administer}
++ Elementen {#administer} beheren
    + [Ondersteunde bestandsindelingen](assets-formats.md)
    + [Facetten doorzoeken](search-facets.md)
    + [Metagegevensconcepten begrijpen](metadata-concepts.md)
@@ -126,7 +126,7 @@ ht-degree: 34%
    + [Watermerk uw elementen](watermarking.md)
    + [Elementsjablonen](asset-templates.md)
    + [Aanbevolen procedures voor het delen van mappen met [!DNL Creative Cloud]](aem-cc-folder-sharing-best-practices.md)
-+ Brand Portal {#brandportal}
++ Merk-portal {#brandportal}
    + [ [!DNL Assets] Configureren met [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
    + [Elementen publiceren naar [!DNL Brand Portal]](brand-portal-publish-assets.md)
    + [Mappen publiceren naar [!DNL Brand Portal]](brand-portal-publish-folder.md)
@@ -141,7 +141,7 @@ ht-degree: 34%
    + [Contentfragmenten - Overwegingen verwijderen](content-fragments/content-fragments-delete.md)
    + [Inhoudsfragmenten - Markering](content-fragments/content-fragments-markdown.md)
    + [Vertaalprojecten maken voor inhoudsfragmenten](creating-translation-projects-for-content-fragments.md)
-+ Elementen beheren {#managing}
++ Elementen {#managing} beheren
    + [Digitale middelen beheren](manage-assets.md)
    + [Verzamelingen beheren](manage-collections.md)
    + [Dubbele detectie inschakelen](duplicate-detection.md)

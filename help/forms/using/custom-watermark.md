@@ -26,7 +26,7 @@ In de interface Correspondentie maken geven gebruikers van agents een voorverton
 
 Om ongeoorloofd gebruik van deze gegevens te voorkomen, kunnen organisaties een watermerk aan de voorproefPDF opleggen. Het standaardwatermerk is &quot;VOORVERTONING&quot;, dat in de PDF wordt weergegeven.
 
-Als u het watermerk wilt inschakelen in de voorbeeld-PDF, selecteert u de optie **[!UICONTROL Apply Watermark]** Tijdens voorvertoning in **[!UICONTROL Correspondence Management Configurations]** https://&#39;[server]:[port]&#39;/system/console/configMgr.
+Als u het watermerk wilt inschakelen in voorvertoning-PDF, selecteert u de optie **[!UICONTROL Apply Watermark]** Tijdens voorvertoning in **[!UICONTROL Correspondence Management Configurations]** op https://&#39;[server]:[poort]&#39;/system/console/configMgr.
 
 ![default-watermark](assets/default-watermark.png)
 
@@ -34,10 +34,10 @@ U kunt de volgende stappen gebruiken om de tekst en de vormgeving van het waterm
 
 ## Het watermerk aanpassen in de PDF-voorvertoning in de gebruikersinterface Correspondentie maken {#customizewatermark-}
 
-1. Ga naar Beheerder `https://'[server]:[port]'/[ContextPath]/crx/de` en meld u aan.
-1. Maak in de map apps een map met de naam pad/structuur, vergelijkbaar met de map met het voorvertoningswatermerk in de map libs: **[!UICONTROL previewwatermark]**
+1. Ga naar `https://'[server]:[port]'/[ContextPath]/crx/de` en login als Beheerder.
+1. Maak in de map apps een map met de naam **[!UICONTROL previewwatermark]** met een pad/structuur die vergelijkbaar is met de map met het voorvertoningswatermerk in de map libs:
 
-   1. Klik met de rechtermuisknop op het **voorvertoningswatermerk** in het volgende pad en selecteer **Overlayknooppunt**:
+   1. Klik met de rechtermuisknop op de map **previewwatermark** op het volgende pad en selecteer **Overlay Node**:
 
       `/libs/fd/cm/configFiles/previewwatermark`
 
@@ -45,7 +45,7 @@ U kunt de volgende stappen gebruiken om de tekst en de vormgeving van het waterm
 
       **Pad:** /libs/fd/cm/configFiles/previewwatermark
 
-      **Locatie bedekking:** /apps/
+      **Overlay-locatie:** /apps/
 
       **Identieke knooppunttypen:** Ingeschakeld
 
@@ -60,7 +60,7 @@ U kunt de volgende stappen gebruiken om de tekst en de vormgeving van het waterm
       >    * Een functiepakket installeren
 
 
-   1. Klik op **OK** en vervolgens op Alles **** opslaan. De **[!UICONTROL previewwatermark]** map wordt gemaakt in het opgegeven pad.
+   1. Klik **OK** en klik vervolgens op **Alles opslaan**. De map **[!UICONTROL previewwatermark]** wordt gemaakt in het opgegeven pad.
 
 
 
@@ -82,11 +82,11 @@ U kunt de volgende stappen gebruiken om de tekst en de vormgeving van het waterm
    </DDX>
    ```
 
-   Voor informatie over het aanpassen van de verschijning van het watermerk, de tekst, en de groepering, zie het Toevoegen van en het verwijderen van watermerken en achtergronden in de Dienst van de [Assembler en het document van de Verwijzing](https://help.adobe.com/en_US/livecycle/11.0/ddxRef.pdf) DDX.
+   Zie Watermerken en achtergronden toevoegen en verwijderen in het document [Assembler Service en DDX Reference](https://help.adobe.com/en_US/livecycle/11.0/ddxRef.pdf) voor informatie over het aanpassen van de vormgeving, tekst en uitlijning van watermerken.
 
    >[!NOTE]
    >
    >In het ddx-bestand moeten de verwijzingen naar het resultaat en de bron ongewijzigd blijven ten opzichte van output.pdf en input.pdf. De naam van de bestands-ddx mag ook niet worden gewijzigd.
 
-1. Klik op Alles **opslaan**.
+1. Klik **Alles opslaan**.
 

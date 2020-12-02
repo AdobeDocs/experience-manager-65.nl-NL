@@ -21,40 +21,40 @@ ht-degree: 0%
 
 # Vereisten voor integratie met Adobe Target{#prerequisites-for-integrating-with-adobe-target}
 
-Als deel van de [integratie van AEM en Adobe Target](/help/sites-administering/target.md), moet u bij Adobe Target registreren, de replicatieagent vormen, en activiteitenmontages op het publicatieknooppunt beveiligen.
+Als deel van [integratie van AEM en Adobe Target](/help/sites-administering/target.md), moet u bij Adobe Target registreren, de replicatieagent, en veilige activiteitenmontages op publiceren knoop vormen.
 
 ## Registreren bij Adobe Target {#registering-with-adobe-target}
 
-Als u AEM wilt integreren met Adobe Target, hebt u een geldig Adobe Target-account nodig. Deze account moet minimaal **toegangsrechten op het niveau van de fiatteur** hebben. Wanneer u zich bij Adobe Target registreert, ontvangt u een clientcode. U hebt de clientcode en uw Adobe Target-aanmeldingsnaam en -wachtwoord nodig om AEM te kunnen verbinden met Adobe Target.
+Als u AEM wilt integreren met Adobe Target, hebt u een geldig Adobe Target-account nodig. Voor dit account moeten minimaal **fiatteurs**-machtigingen zijn ingesteld. Wanneer u zich bij Adobe Target registreert, ontvangt u een clientcode. U hebt de clientcode en uw Adobe Target-aanmeldingsnaam en -wachtwoord nodig om verbinding te maken AEM met Adobe Target.
 
 De clientcode identificeert de Adobe Target-klantenaccount wanneer de Adobe Target-server wordt aangeroepen.
 
 >[!NOTE]
 >
->Uw account moet ook zijn ingeschakeld door het Target-team om de integratie te kunnen gebruiken.
+>Uw account moet ook door het Target-team zijn ingeschakeld om de integratie te kunnen gebruiken.
 >
->Neem contact op met de [klantenservice](https://docs.adobe.com/content/help/en/target/using/cmp-resources-and-contact-information.html)van Adobe als dit niet het geval is.
+>Als dit niet het geval is, gelieve [Adobe klantenZorg ](https://docs.adobe.com/content/help/en/target/using/cmp-resources-and-contact-information.html) te contacteren.
 
-## De Target Replication Agent inschakelen {#enabling-the-target-replication-agent}
+## Het toelaten van de Agent van de Replicatie van het Doel {#enabling-the-target-replication-agent}
 
-De test en de [replicatieagent](/help/sites-deploying/replication.md) van Target moet op de auteursinstantie worden toegelaten. Merk op dat deze replicatieagent niet door gebrek wordt toegelaten als u de [nosamplcontent](/help/sites-deploying/configure-runmodes.md#using-samplecontent-and-nosamplecontent) looppas wijze voor het installeren van AEM gebruikte. Raadpleeg de lijst [Beveiligingscontrole](/help/sites-administering/security-checklist.md)voor meer informatie over het beveiligen van uw productieomgeving.
+De test en het Doel [replicatieagent](/help/sites-deploying/replication.md) moet op de auteursinstantie worden toegelaten. Merk op dat deze replicatieagent niet door gebrek wordt toegelaten als u [nosamplcontent](/help/sites-deploying/configure-runmodes.md#using-samplecontent-and-nosamplecontent) uitvoeringswijze voor het installeren van AEM gebruikte. Voor meer informatie over het beveiligen van uw productiemilieu, zie [Controlelijst van de Veiligheid](/help/sites-administering/security-checklist.md).
 
-1. Klik of tik op **Extra** > **Implementatie** > **Replicatie** op de AEM-startpagina.
+1. Klik of tik op **Tools** > **Implementatie** > **Replication** op de AEM startpagina.
 1. Klik of tik **Agenten op Auteur**.
-1. Klik of tik de **Test en (test en doel)** replicatieagent van Target, en klik dan of tik **uitgeven**.
+1. Klik of tik **Test en Doel (test en doel)** replicatieagent, en klik of tik dan **Edit**.
 1. Selecteer de optie Ingeschakeld en klik of tik op **OK**.
 
    >[!NOTE]
    >
-   >Wanneer u de de replicatieagent van de Test en van Target vormt, op het lusje van het **Vervoer** , wordt URI geplaatst door gebrek aan **tnt:///**. Vervang deze URI niet door **https://admin.testandtarget.omniture.com**.
+   >Wanneer u de de replicatieagent van de Test en van het Doel vormt, op **Vervoer** lusje, wordt URI geplaatst door gebrek aan **tnt:///**. Vervang deze URI niet door **https://admin.testandtarget.omniture.com**.
    >
-   >Houd er rekening mee dat als u de verbinding probeert te testen met **tnt:///**, dit een fout veroorzaakt. Dit wordt verwacht aangezien dit URI voor intern gebruik slechts is en niet met de Verbinding **van de** Test zou moeten worden gebruikt.
+   >Houd er rekening mee dat als u de verbinding probeert te testen met **tnt:///**, er een fout optreedt. Dit wordt verwacht gedrag aangezien dit URI voor intern gebruik slechts is en niet met **Verbinding van de Test** zou moeten worden gebruikt.
 
-## Het knooppunt Activiteitsinstellingen beveiligen {#securing-the-activity-settings-node}
+## Het knooppunt Activiteitsinstellingen {#securing-the-activity-settings-node} beveiligen
 
-U moet het knooppunt activity settings (activity settings) **cq:ActivitySettings** op de publicatie-instantie beveiligen, zodat dit niet toegankelijk is voor normale gebruikers. Het knooppunt activity settings mag alleen toegankelijk zijn voor de service die de activiteitensynchronisatie afhandelt voor Adobe Target.
+U moet het knooppunt activity settings **cq:ActivitySettings** op de publicatie-instantie beveiligen zodat dit niet toegankelijk is voor normale gebruikers. Het knooppunt activity settings mag alleen toegankelijk zijn voor de service die de activiteitensynchronisatie afhandelt voor Adobe Target.
 
-Het knooppunt **cq:ActivitySettings** is beschikbaar in de CRXDE-lijst onder `/content/campaigns/*nameofbrand*`* *onder het knooppunt activities jcr:content.* *bijvoorbeeld `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. Dit knooppunt wordt alleen gemaakt nadat u een component als doel hebt ingesteld.
+Het **cq:ActivitySettings**-knooppunt is beschikbaar in de CRXDE-lijst onder `/content/campaigns/*nameofbrand*`* *onder de activity jcr:content node;* *bijvoorbeeld `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. Dit knooppunt wordt alleen gemaakt nadat u een component als doel hebt ingesteld.
 
 De **cq:ActivitySettings** knoop onder jcr van de activiteit:inhoud wordt beschermd door volgende ACLs:
 
@@ -62,24 +62,24 @@ De **cq:ActivitySettings** knoop onder jcr van de activiteit:inhoud wordt besche
 * jcr:read,rep:write toestaan voor &#39;target-activity-authors&#39; (de auteur is lid van deze groep uit de doos)
 * jcr:read,rep:write voor &quot;targetService&quot; toestaan
 
-Met deze instellingen zorgt u ervoor dat normale gebruikers geen toegang hebben tot de knoopeigenschappen. Gebruik zelfde ACLs op auteur en bij publiceren. Zie [Gebruikersbeheer en Beveiliging](/help/sites-administering/security.md) voor meer informatie.
+Met deze instellingen zorgt u ervoor dat normale gebruikers geen toegang hebben tot de knoopeigenschappen. Gebruik zelfde ACLs op auteur en bij publiceren. Zie [Gebruikersbeheer en beveiliging](/help/sites-administering/security.md) voor meer informatie.
 
-## De AEM Link Externalzer configureren {#configuring-the-aem-link-externalizer}
+## Het vormen van de AEM Verbinding Externalzer {#configuring-the-aem-link-externalizer}
 
-Wanneer u een activiteit bewerkt in Adobe Target, verwijst de URL naar de **localhost** , tenzij u de URL wijzigt in het auteur-knooppunt van AEM. U kunt de AEM-koppelingsextern instellen als u wilt dat de geëxporteerde inhoud naar een specifiek *publicatiedomein* verwijst.
+Wanneer u een activiteit bewerkt in Adobe Target, verwijst de URL naar **localhost**, tenzij u de URL wijzigt op het AEM auteurknooppunt. U kunt AEM Verbinding Externalzer vormen als u de uitgevoerde inhoud aan specifiek *publish* domein wilt richten.
 
 >[!NOTE]
 >
->Zie ook Cloud Configuration [toevoegen](/help/sites-administering/experience-fragments-target.md#add-the-cloud-configuration).
+>Zie ook [Cloud Configuration toevoegen](/help/sites-administering/experience-fragments-target.md#add-the-cloud-configuration).
 
 De AEM-externalizer configureren:
 
 >[!NOTE]
 >
->Zie URL&#39;s [extern maken voor meer informatie](/help/sites-developing/externalizer.md).
+>Zie [URL&#39;s extern maken](/help/sites-developing/externalizer.md) voor meer informatie.
 
 1. Navigeer naar de OSGi-webconsole op **https://&lt;server>:&lt;port>/system/console/configMgr.**
-1. Zoek **de Verbinding Externalzer** van CQ van de Dag en ga het domein voor de auteursknoop in.
+1. Zoek **Day CQ Link Externalzer** en voer het domein voor het auteurknooppunt in.
 
    ![chlimage_1-120](assets/aem-externalizer-01.png)
 

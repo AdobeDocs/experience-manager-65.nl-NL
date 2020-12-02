@@ -1,8 +1,8 @@
 ---
-title: AEM-ontwikkeling - Richtlijnen en beste praktijken
-seo-title: AEM-ontwikkeling - Richtlijnen en beste praktijken
-description: Richtlijnen en beste praktijken voor ontwikkeling op AEM
-seo-description: Richtlijnen en beste praktijken voor ontwikkeling op AEM
+title: AEM ontwikkeling - Richtsnoeren en beste praktijken
+seo-title: AEM ontwikkeling - Richtsnoeren en beste praktijken
+description: Richtsnoeren en beste praktijken voor de ontwikkeling van AEM
+seo-description: Richtsnoeren en beste praktijken voor de ontwikkeling van AEM
 uuid: a67de085-4441-4a1d-bec3-2f27892a67ff
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,15 +11,18 @@ content-type: reference
 discoiquuid: b4cf0ffc-973a-473b-80c8-7f530d111435
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '1105'
+ht-degree: 0%
 
 ---
 
 
-# AEM-ontwikkeling - Richtlijnen en beste praktijken{#aem-development-guidelines-and-best-practices}
+# AEM ontwikkeling - Richtlijnen en beste praktijken{#aem-development-guidelines-and-best-practices}
 
 ## Richtlijnen voor het gebruik van sjablonen en componenten {#guidelines-for-using-templates-and-components}
 
-AEM-componenten en -sjablonen vormen een zeer krachtige toolkit. Ze kunnen door ontwikkelaars worden gebruikt om zakelijke gebruikers, editors en beheerders van websites de functionaliteit te bieden om hun websites aan te passen aan veranderende bedrijfsbehoeften (inhouds-behendigheid) terwijl de uniforme lay-out van de sites behouden blijft (merkbescherming).
+AEM componenten en sjablonen vormen een zeer krachtige toolkit. Ze kunnen door ontwikkelaars worden gebruikt om zakelijke gebruikers, editors en beheerders van websites de functionaliteit te bieden om hun websites aan te passen aan veranderende bedrijfsbehoeften (inhouds-behendigheid) terwijl de uniforme lay-out van de sites behouden blijft (merkbescherming).
 
 Een typische uitdaging voor een persoon verantwoordelijk voor een website, of reeks websites (bijvoorbeeld in een bijkantoor van een globale onderneming), is een nieuw type van inhoudspresentatie op hun websites te introduceren.
 
@@ -35,7 +38,7 @@ De aanbevolen manier om een dergelijke uitdaging aan te gaan is:
 
 Dit illustreert hoe deze benadering de bijdragende gebruikers en beheerders van de website machtigt om snel aan bedrijfsbehoeften te antwoorden, zonder de betrokkenheid van ontwikkelingsteams te vereisen. Alternatieve methodes, zoals het creëren van een nieuw malplaatje, zijn gewoonlijk een dure oefening, die een veranderingsbeheersproces en betrokkenheid van het ontwikkelingsteam vereist. Dit maakt het hele proces veel langer en kostbaar.
 
-De ontwikkelaars van op AEM gebaseerde systemen moeten daarom gebruikmaken van:
+De ontwikkelaars van op AEM gebaseerde systemen moeten daarom gebruik maken van:
 
 * sjablonen en toegangsbeheer voor het ontwerpen van alineasystemen voor uniformiteit en merkbescherming
 * alineasysteem, inclusief configuratieopties voor flexibiliteit.
@@ -50,11 +53,11 @@ De volgende algemene regels voor ontwikkelaars zijn in de meeste gebruikelijke p
 
 Wanneer u uw eigen componenten maakt of een bestaande component aanpast, is het vaak het eenvoudigst (en veiligst) om bestaande definities opnieuw te gebruiken. Dezelfde beginselen gelden ook voor andere elementen binnen AEM, bijvoorbeeld de fouthandler.
 
-Dit kan worden gedaan door de bestaande definitie te kopiëren en te bedekken. Met andere woorden, het kopiëren van de definitie van `/libs` naar `/apps/<your-project>`. Deze nieuwe definitie in `/apps`, kan volgens uw vereisten worden bijgewerkt.
+Dit kan worden gedaan door de bestaande definitie te kopiëren en te bedekken. Met andere woorden, het kopiëren van de definitie van `/libs` naar `/apps/<your-project>`. Deze nieuwe definitie, in `/apps`, kan volgens uw vereisten worden bijgewerkt.
 
 >[!NOTE]
 >
->Zie Bedekkingen [gebruiken](/help/sites-developing/overlays.md) voor meer informatie.
+>Zie [Bedekkingen gebruiken](/help/sites-developing/overlays.md) voor meer informatie.
 
 Bijvoorbeeld:
 
@@ -66,8 +69,8 @@ Bijvoorbeeld:
 
       * Bijvoorbeeld om het de componentenexemplaar van de Tekst aan te passen:
 
-         * from `/libs/foundation/components/text`
-         * to `/apps/myProject/components/text`
+         * Van `/libs/foundation/components/text`
+         * tot `/apps/myProject/components/text`
 
 * [Pagina&#39;s aanpassen die worden weergegeven door de fouthandler](/help/sites-developing/customizing-errorhandler-pages.md#how-to-customize-pages-shown-by-the-error-handler)
 
@@ -75,22 +78,22 @@ Bijvoorbeeld:
 
    * Kopieer het standaardscript of de standaardscripts in de gegevensopslagruimte:
 
-      * from `/libs/sling/servlet/errorhandler/`
-      * to `/apps/sling/servlet/errorhandler/`
+      * Van `/libs/sling/servlet/errorhandler/`
+      * tot `/apps/sling/servlet/errorhandler/`
 
 >[!CAUTION]
 >
->U **mag niets** wijzigen in het `/libs` pad.
+>U **mag niets** veranderen in `/libs` weg.
 >
->De reden hiervoor is dat de inhoud van `/libs` de volgende keer dat u een upgrade uitvoert van uw exemplaar, wordt overschreven (en dat deze inhoud ook kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
+>Dit komt doordat de inhoud van `/libs` de volgende keer wordt overschreven dat u uw exemplaar bijwerkt (en dat kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
 >
 >Voor configuratie en andere wijzigingen:
 >
->1. het item kopiëren in `/libs` naar `/apps`
->1. wijzigingen aanbrengen in `/apps`
+>1. het item in `/libs` kopiëren naar `/apps`
+>1. eventuele wijzigingen aanbrengen binnen `/apps`
 
 
-## Wanneer moeten JCR-query&#39;s worden gebruikt en wanneer moeten deze niet worden gebruikt? {#when-to-use-jcr-queries-and-when-not-to-use-them}
+## Wanneer moeten JCR-query&#39;s worden gebruikt en wanneer moeten deze niet worden gebruikt {#when-to-use-jcr-queries-and-when-not-to-use-them}
 
 JCR-query&#39;s zijn een krachtig hulpmiddel als ze correct worden uitgevoerd. Zij zijn geschikt voor:
 
@@ -109,14 +112,14 @@ Gebruik voor het renderen van inhoud navigatie-toegang tot de inhoudsstructuur i
 
 >[!NOTE]
 >
->Als u de [Bouwer](/help/sites-developing/querybuilder-api.md)van de Vraag gebruikt, gebruikt u Vragen JCR, aangezien de Bouwer van de Vraag JCR Vragen onder de kap produceert.
+>Als u [de Bouwer van de Vraag ](/help/sites-developing/querybuilder-api.md) gebruikt, gebruikt u Vragen JCR, aangezien de Bouwer van de Vraag JCR Vragen onder de kap produceert.
 
 
-## Beveiligingsoverwegingen {#security-considerations}
+## Veiligheidsoverwegingen {#security-considerations}
 
 >[!NOTE]
 >
->Het is ook nuttig om naar de [veiligheidscontrolelijst](/help/sites-administering/security-checklist.md)te verwijzen.
+>Het is ook nuttig om [veiligheidscontrolelijst](/help/sites-administering/security-checklist.md) van verwijzingen te voorzien.
 
 ### JCR-sessies (Repository) {#jcr-repository-sessions}
 
@@ -126,19 +129,19 @@ Gebruik de gebruikerssessie, niet de beheersessie. Dit betekent dat u het volgen
 slingRequest.getResourceResolver().adaptTo(Session.class);
 ```
 
-### Beveiligen tegen XSS (Cross-Site Scripting) {#protect-against-cross-site-scripting-xss}
+### Protect tegen XSS (Cross-Site Scripting) {#protect-against-cross-site-scripting-xss}
 
 Met XSS (Cross-site scripting) kunnen aanvallers code injecteren in webpagina&#39;s die door andere gebruikers worden weergegeven. Deze kwetsbaarheid op het gebied van beveiliging kan door kwaadaardige webgebruikers worden misbruikt om toegangsbesturingselementen te omzeilen.
 
-AEM past het beginsel toe om alle gebruiker-geleverde inhoud op output te filtreren. Het voorkomen van XSS krijgt de hoogste prioriteit tijdens zowel ontwikkeling als testen.
+AEM past het beginsel toe van het filtreren van alle gebruiker-geleverde inhoud op output. Het voorkomen van XSS krijgt de hoogste prioriteit tijdens zowel ontwikkeling als testen.
 
 Bovendien, kan een firewall van de Webtoepassing, zoals [mod_security voor Apache](https://modsecurity.org), betrouwbare, centrale controle over de veiligheid van het plaatsingsmilieu verstrekken en tegen eerder niet ontdekte dwars-plaats scripting aanvallen beschermen.
 
 >[!CAUTION]
 >
->De voorbeeldcode die bij AEM wordt verstrekt kan niet zelf tegen dergelijke aanvallen beschermen en baseert zich over het algemeen op verzoek het filtreren door een firewall van de Webtoepassing.
+>De voorbeeldcode van AEM kan niet zelf tegen dergelijke aanvallen beschermen en baseert zich over het algemeen op verzoek het filtreren door een firewall van de Webtoepassing.
 
-Het XSS API-opmaakmodel bevat informatie die u moet weten om de XSS API te kunnen gebruiken en een AEM-toepassing veiliger te maken. U kunt het hier downloaden:
+Het XSS API-taakblad bevat informatie die u moet weten om de XSS API te kunnen gebruiken en een AEM app veiliger te maken. U kunt het hier downloaden:
 
 Het XSSAPI-controleblad.
 
@@ -149,7 +152,7 @@ Het XSSAPI-controleblad.
 Bij elke internettoepassing moet u ervoor zorgen dat bij het vervoer van vertrouwelijke informatie
 
 * verkeer wordt beveiligd via SSL
-* HTTP POST wordt gebruikt indien van toepassing
+* Indien van toepassing wordt HTTP-POST gebruikt
 
 Dit geldt voor informatie die vertrouwelijk is voor het systeem (zoals configuratie of administratieve toegang) en voor informatie die vertrouwelijk is voor de gebruikers (zoals hun persoonlijke gegevens).
 
@@ -159,10 +162,10 @@ Dit geldt voor informatie die vertrouwelijk is voor het systeem (zoals configura
 
 Foutpagina&#39;s kunnen voor AEM worden aangepast. Dit is aan te raden, zodat de instantie geen bewegingssporen weergeeft bij interne serverfouten.
 
-Zie [Aanpassen van de Pagina&#39;s van de Fout die door de Handler](/help/sites-developing/customizing-errorhandler-pages.md) van de Fout voor volledige details wordt getoond.
+Zie [Foutpagina&#39;s aanpassen die door de fouthandler worden weergegeven](/help/sites-developing/customizing-errorhandler-pages.md) voor meer informatie.
 
-### Bestanden openen in het Java-proces {#open-files-in-the-java-process}
+### Bestanden openen in Java-proces {#open-files-in-the-java-process}
 
-Omdat AEM tot een groot aantal dossiers kan toegang hebben, wordt geadviseerd dat het aantal [open dossiers voor een proces](/help/sites-deploying/configuring.md#open-files-in-the-java-process) van Java uitdrukkelijk voor AEM wordt gevormd.
+Omdat AEM tot een groot aantal dossiers kan toegang hebben wordt het geadviseerd dat het aantal [open dossiers voor een proces van Java ](/help/sites-deploying/configuring.md#open-files-in-the-java-process) uitdrukkelijk voor AEM wordt gevormd.
 
 Om dit probleem tot een minimum te beperken, moet de ontwikkeling ervoor zorgen dat geopende bestanden zo snel (zinvol) mogelijk correct worden gesloten.

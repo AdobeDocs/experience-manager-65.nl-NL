@@ -11,17 +11,20 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 180f0448-d507-4b6d-bb8a-d12a434e1250
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '262'
+ht-degree: 0%
 
 ---
 
 
-# Te insluiten fonts opgeven{#specify-fonts-to-embed}
+# Te insluiten lettertypen opgeven{#specify-fonts-to-embed}
 
 U kunt opgeven welke fonts altijd worden ingesloten of nooit worden ingesloten met de formulieren die worden gebruikt door Output. Als u fonts insluit, neemt de bestandsgrootte van de formulieren toe. Ongebruikelijke lettertypen insluiten die gebruikers waarschijnlijk niet op hun systeem hebben en geen gemeenschappelijke lettertypen insluiten die zij hebben geïnstalleerd.
 
 >[!NOTE]
 >
->Als u een aangepast XCI-bestand hebt opgegeven voor Output, overschrijft de optie voor het insluiten van lettertypen in het XCI-bestand deze instellingen. (Zie [Bestandslocaties opgeven voor Uitvoer](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output).)
+>Als u een aangepast XCI-bestand hebt opgegeven voor Output, overschrijft de optie voor het insluiten van lettertypen in het XCI-bestand deze instellingen. (Zie [Bestandslocaties opgeven voor Output](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output).)
 
 1. Klik in de beheerconsole op Services > Uitvoer.
 1. Typ onder Instellingen voor lettertype insluiten in het vak Fonts altijd insluiten de namen van de fonts die u wilt insluiten met de formulieren, gescheiden door komma&#39;s. De fonts die u opgeeft, worden alleen ingesloten in het gegenereerde formulier als ze in het formulier worden gebruikt. Deze instelling wordt genegeerd als de optie Lettertype insluiten is ingeschakeld in het XCI-bestand dat aan de service is doorgegeven. In dat geval worden alle fonts die in de PDF worden gebruikt, altijd ingesloten.

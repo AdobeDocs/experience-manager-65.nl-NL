@@ -1,8 +1,8 @@
 ---
-title: Inhoudsfragmenten die componenten voor rendering configureren
-seo-title: Inhoudsfragmenten die componenten voor rendering configureren
-description: Inhoudsfragmenten die componenten voor rendering configureren
-seo-description: Inhoudsfragmenten die componenten voor rendering configureren
+title: Contentfragmenten die componenten voor rendering configureren
+seo-title: Contentfragmenten die componenten voor rendering configureren
+description: Contentfragmenten die componenten voor rendering configureren
+seo-description: Contentfragmenten die componenten voor rendering configureren
 uuid: 3f5aaf36-e6a7-4a3c-b305-e35ebcc98d0d
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
@@ -11,15 +11,18 @@ discoiquuid: 2aef9048-9d6e-4f5d-b443-5e73f8066d76
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+workflow-type: tm+mt
+source-wordcount: '467'
+ht-degree: 8%
 
 ---
 
 
-# Inhoudsfragmenten die componenten voor rendering configureren{#content-fragments-configuring-components-for-rendering}
+# Contentfragmenten die componenten voor rendering configureren{#content-fragments-configuring-components-for-rendering}
 
-Er zijn verschillende [geavanceerde services](/help/sites-developing/content-fragments-config-components-rendering.md#definition-of-advanced-services-that-need-configuration) voor het renderen van inhoudsfragmenten. Om deze diensten te gebruiken, moeten de middeltypes van dergelijke componenten zich aan het kader van inhoudsfragmenten bekendmaken.
+Er zijn verschillende [geavanceerde services](/help/sites-developing/content-fragments-config-components-rendering.md#definition-of-advanced-services-that-need-configuration) met betrekking tot het renderen van inhoudsfragmenten. Om deze diensten te gebruiken, moeten de middeltypes van dergelijke componenten zich aan het kader van inhoudsfragmenten bekendmaken.
 
-Dit wordt gedaan door de Dienst [te vormen OSGi - de Configuratie](#osgi-service-content-fragment-component-configuration)van de Component van het Fragment van de Inhoud.
+Dit wordt gedaan door [OSGi Dienst - de Configuratie van de Component van het Fragment van de Inhoud te vormen](#osgi-service-content-fragment-component-configuration).
 
 >[!CAUTION]
 >
@@ -35,14 +38,14 @@ Dit wordt gedaan door de Dienst [te vormen OSGi - de Configuratie](#osgi-service
 >
 >Daarom wordt aanbevolen de kerncomponenten te gebruiken.
 
-## Definitie van de Geavanceerde Diensten die Configuratie vereisen {#definition-of-advanced-services-that-need-configuration}
+## Definitie van de Geavanceerde Diensten die Configuratie {#definition-of-advanced-services-that-need-configuration} vereisen
 
 De diensten die de registratie van een component vereisen zijn:
 
 * De afhankelijkheden correct bepalen tijdens de publicatie (zorg er dus voor dat fragmenten en modellen automatisch met een pagina kunnen worden gepubliceerd als ze zijn gewijzigd sinds de laatste publicatie).
 * Ondersteuning voor inhoudsfragmenten in volledige tekstzoekopdracht.
-* Het beheer/de afhandeling van *tussen inhoud.*
-* Beheer/verwerking van *gemengde media-elementen.*
+* The management/handling of *in-between content.*
+* Het beheer/afhandeling van *gemengde media-elementen.*
 * Dispatcher flush for referenced fragments (if a page containing a fragment is re-published).
 * Op alinea&#39;s gebaseerde rendering gebruiken.
 
@@ -50,13 +53,13 @@ Als u een of meer van deze functies nodig hebt, is het (doorgaans) eenvoudiger o
 
 ## OSGi Service - Configuratie van de Component van het Fragment van de Inhoud {#osgi-service-content-fragment-component-configuration}
 
-De configuratie moet aan de Configuratie **van de Component van het Fragment van de Component van de** Inhoud worden gebonden OSGi:
+De configuratie moet aan de dienst worden gebonden OSGi **de Configuratie van de Component van het Fragment van de Inhoud**:
 
 `com.adobe.cq.dam.cfm.impl.component.ComponentConfigImpl`
 
 >[!NOTE]
 >
->Zie [het Vormen OSGi](/help/sites-deploying/configuring-osgi.md) voor verdere details.
+>Zie [Het vormen OSGi](/help/sites-deploying/configuring-osgi.md) voor verdere details.
 
 Bijvoorbeeld:
 
@@ -68,13 +71,13 @@ De configuratie OSGi is:
  <tbody>
   <tr>
    <td>Label</td>
-   <td>OSGi-configuratie<br /> </td>
+   <td>OSGi Configuration<br /> </td>
    <td>Beschrijving</td>
   </tr>
   <tr>
    <td><strong>Het type Resource</strong></td>
    <td><code>dam.cfm.component.resourceType</code></td>
-   <td>Het type bron dat moet worden geregistreerd;bijv. <br /> <p><span class="cmp-examples-demo__property-value"><code>core/wcm/components/contentfragment/v1/contentfragment</code></code></p> </td>
+   <td>Het type bron dat moet worden geregistreerd; bijv. <br /> <p><span class="cmp-examples-demo__property-value"><code>core/wcm/components/contentfragment/v1/contentfragment</code></code></p> </td>
   </tr>
   <tr>
    <td><strong>Verwijzing, eigenschap</strong></td>
@@ -84,12 +87,12 @@ De configuratie OSGi is:
   <tr>
    <td><strong>Element(en), eigenschap</strong></td>
    <td><code>dam.cfm.component.elementsProp</code></td>
-   <td>De naam van de eigenschap die de naam of namen bevat van het element of de elementen die moeten worden gerenderd;bijv.<code>elementName</code></td>
+   <td>De naam van de eigenschap die de naam of namen bevat van het element of de elementen die moeten worden gerenderd; bijv.<code>elementName</code></td>
   </tr>
   <tr>
    <td><strong>Variatie, eigenschap</strong><br /> </td>
    <td><code>dam.cfm.component.variationProp</code></td>
-   <td>De naam van de eigenschap die de naam bevat van de wijziging die moet worden gerenderd;bijv.<code>variationName</code></td>
+   <td>De naam van de eigenschap die de naam bevat van de wijziging die moet worden gerenderd; bijv.<code>variationName</code></td>
   </tr>
  </tbody>
 </table>
@@ -104,7 +107,7 @@ Voor bepaalde functionaliteit (bijvoorbeeld om alleen een alineabereik te render
   </tr>
   <tr>
    <td><code>paragraphRange</code></td>
-   <td><p>Een tekenreekseigenschap die het bereik definieert van alinea's die moeten worden uitgevoerd in de rendermodus <em>van</em>één element.</p> <p>Format:</p>
+   <td><p>Een tekenreekseigenschap die het bereik definieert van alinea's die moeten worden uitgevoerd als er in <em>rendermodus met één element</em> wordt weergegeven.</p> <p>Format:</p>
     <ul>
      <li><code>1</code> of <code>1-3</code> of <code>1-3;6;7-8</code> of <code>*-3;5-*</code></li>
      <li>alleen geëvalueerd als <code>paragraphScope</code> is ingesteld op <code>range</code></li>
@@ -112,7 +115,7 @@ Voor bepaalde functionaliteit (bijvoorbeeld om alleen een alineabereik te render
   </tr>
   <tr>
    <td><code>paragraphScope</code></td>
-   <td><p>Een tekenreekseigenschap die definieert hoe alinea's moeten worden uitgevoerd als <em>één element wordt gerenderd</em>.</p> <p>Waarden:</p>
+   <td><p>Een tekenreekseigenschap die definieert hoe alinea's moeten worden uitgevoerd als er in <em>rendermodus met één element</em> één element staat.</p> <p>Waarden:</p>
     <ul>
      <li><code>all</code> : om alle alinea's te renderen</li>
      <li><code>range</code> : om het bereik van alinea's te bepalen dat wordt verschaft door <code>paragraphRange</code></li>
@@ -120,7 +123,7 @@ Voor bepaalde functionaliteit (bijvoorbeeld om alleen een alineabereik te render
   </tr>
   <tr>
    <td><code>paragraphHeadings</code></td>
-   <td>Een Booleaanse eigenschap die definieert of koppen (bijvoorbeeld <code>h1</code>, <code>h2</code>, <code>h3</code>) worden geteld als alinea's (<code>true</code>) of niet (<code>false</code>)</td>
+   <td>Een Booleaanse eigenschap die definieert of koppen (bijvoorbeeld <code>h1</code>, <code>h2</code>, <code>h3</code>) als alinea's (<code>true</code>) worden geteld of niet (<code>false</code>)</td>
   </tr>
  </tbody>
 </table>
@@ -131,7 +134,7 @@ Voor bepaalde functionaliteit (bijvoorbeeld om alleen een alineabereik te render
 
 ## Voorbeeld {#example}
 
-Zie het volgende voorbeeld (bij een AEM-instantie buiten de box):
+Zie bijvoorbeeld het volgende (op een uit-van-de-doos AEM instantie):
 
 ```
 /apps/core/wcm/config/com.adobe.cq.dam.cfm.impl.component.ComponentConfigImpl-core-comp-v1.config

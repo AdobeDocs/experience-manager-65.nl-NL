@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: d9ab4d38-1c17-477d-9341-02bda80f3c23
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '215'
+ht-degree: 1%
 
 ---
 
@@ -18,19 +21,19 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 >[!NOTE]
 >
->Adobe adviseert gebruikend de Redacteur van het KUUROORD voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md) informatie.
 
-Adobe Experience Manager (AEM) Mobile is slechts één pijler die het volledige AEM-platform vormt.
+Adobe Experience Manager (AEM) Mobile is slechts één pijler die het volledige AEM platform vormt.
 
-Voor het starten van een nieuwe AEM Mobile-app-ervaring is een combinatie van rollen vereist voordat deze gereed is voor het bewerken van inhoud. De volgende rollen bieden een beginpunt voor het maken van een nieuwe AEM Mobile-toepassing:
+Voor het starten van een nieuwe AEM Mobile-app-ervaring is een consistente rolcombinatie vereist voordat deze gereed is voor het bewerken van inhoud. De volgende rollen bieden een beginpunt voor het maken van een nieuwe AEM Mobile-toepassing:
 
 * **Beheerder**
-* **Ontwikkelaar**
-* **Author**
+* **Developer**
+* **Auteur**
 
 ## PhoneGap-toepassingen ontwerpen {#authoring-phonegap-applications}
 
-Een ***AEM-auteur *(of*Marketer *)**kan de out-of-the-box sjablonen en componenten gebruiken om pagina&#39;s toe te voegen en te bewerken, componenten te slepen en neer te zetten en media van alle typen van de DAM toe te voegen, inclusief afbeeldingen, video&#39;s en tekstfragmenten (inhoudsfragmenten).
+Een ***AEM-auteur* (of *Marketer*)**kan de out-of-the-box sjablonen en componenten gebruiken om pagina&#39;s toe te voegen en te bewerken, componenten te slepen en neer te zetten en media van alle typen van de DAM toe te voegen, inclusief afbeeldingen, video&#39;s en tekstfragmenten (inhoudsfragmenten).
 
 Zie de volgende bronnen om aan de slag te gaan:
 
@@ -42,9 +45,9 @@ Zie de volgende bronnen om aan de slag te gaan:
 * [Een nieuwe AEM Mobile-app maken met de wizard Maken](/help/mobile/phonegap-create-new-app.md)
 * [Een bestaande hybride app importeren](/help/mobile/phonegap-adding-content-to-imported-app.md)
 
-Om over de Diensten **van de** Inhoud te leren, zie het Overzicht [van de Diensten van de](/help/mobile/develop-content-as-a-service.md) Inhoud beginnen.
+Voor informatie over **Content Services**, zie [Content Services Overview](/help/mobile/develop-content-as-a-service.md) om aan de slag te gaan.
 
-## Additional Resources {#additional-resources}
+## Aanvullende bronnen {#additional-resources}
 
 Zie de volgende bronnen voor meer informatie over de rollen en verantwoordelijkheden van een beheerder en ontwikkelaar:
 

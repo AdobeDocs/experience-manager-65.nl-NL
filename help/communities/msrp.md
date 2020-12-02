@@ -20,11 +20,11 @@ ht-degree: 0%
 
 # MSRP - MongoDB Storage Resource Provider {#msrp-mongodb-storage-resource-provider}
 
-## Over MSRP {#about-msrp}
+## Info over MSRP {#about-msrp}
 
 Wanneer AEM Communities wordt gevormd om MSRP als zijn gemeenschappelijke opslag te gebruiken, is de gebruiker geproduceerde inhoud (UGC) toegankelijk van alle auteur en publiceer instanties zonder de behoefte aan synchronisatie of replicatie.
 
-Zie ook [Kenmerken van Opties](working-with-srp.md#characteristics-of-srp-options) SRP en [Aanbevolen Topologieën](topologies.md).
+Zie ook [Kenmerken van SRP Options](working-with-srp.md#characteristics-of-srp-options) en [Recommended Topologies](topologies.md).
 
 ## Vereisten {#requirements}
 
@@ -32,7 +32,7 @@ Zie ook [Kenmerken van Opties](working-with-srp.md#characteristics-of-srp-option
 
    * Versie 2.6 of hoger
    * Het is niet nodig om mongo&#39;s te configureren of te sharding
-   * Het gebruik van een [replicaset wordt sterk aanbevolen](#mongoreplicaset)
+   * adviseert sterk gebruik van een [replica reeks](#mongoreplicaset)
    * Kan op dezelfde host worden uitgevoerd als AEM of extern worden uitgevoerd
 
 * [Apache Solr](https://lucene.apache.org/solr/):
@@ -42,7 +42,7 @@ Zie ook [Kenmerken van Opties](working-with-srp.md#characteristics-of-srp-option
    * Er is geen service nodig
    * Keuze van uitvoeringsmodi:
       * Standalone modus
-      * [SolrCloud-modus](solr.md#solrcloud-mode) (aanbevolen voor productieomgevingen)
+      * [SolrCloud-modus](solr.md#solrcloud-mode)  (aanbevolen voor productieomgevingen)
    * Keuze van meertalig zoeken (MLS):
       * [Standaard MLS installeren](solr.md#installing-standard-mls)
       * [Geavanceerde MLS installeren](solr.md#installing-advanced-mls)
@@ -51,11 +51,11 @@ Zie ook [Kenmerken van Opties](working-with-srp.md#characteristics-of-srp-option
 
 ### Selecteer MSRP {#select-msrp}
 
-De console [van de Configuratie van de](srp-config.md) Opslag staat voor de selectie van de standaardopslagconfiguratie toe, die identificeert welke implementatie van SRP aan gebruik.
+Met de [Opslagconfiguratieconsole](srp-config.md) kunt u de standaardopslagconfiguratie selecteren, die aangeeft welke implementatie van SRP moet worden gebruikt.
 
 Op auteur, om tot de console van de Configuratie van de Opslag toegang te hebben:
 
-* Selecteer **[!UICONTROL Tools]** > **[!UICONTROL Communities]** > **[!UICONTROL Storage Configuration]**.
+* Selecteer **[!UICONTROL Tools]** > **[!UICONTROL Communities]** > **[!UICONTROL Storage Configuration]** bij globale navigatie.
 
 ![msrp](assets/msrp.png)
 
@@ -80,14 +80,14 @@ Op auteur, om tot de console van de Configuratie van de Opslag toegang te hebben
 
 * **[!UICONTROL SolrConfiguration]**
 
-   * **[Zookeeper](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files)-host**
+   * **[](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files) ZookeeperHost**
 
-      Wanneer het lopen op wijze [SolrCloud met een externe ZooKeeper, plaats deze waarde aan](solr.md#solrcloud-mode) voor ZooKeeper, zoals `HOST:PORT` *my.server.com:2181*
+      Wanneer het lopen op [wijze SolrCloud](solr.md#solrcloud-mode) met een externe ZooKeeper, plaats deze waarde aan `HOST:PORT` voor ZooKeeper, zoals *my.server.com:2181*
 
-      Voor een Samenvoegsel ZooKeeper, ga komma-gescheiden `HOST:PORT` waarden, zoals *gastheer1:2181, gastheer2:2181 in*
+      Voor ZooKeeper Ensemble, ga komma-gescheiden `HOST:PORT` waarden, zoals *host1:2181,host2:2181* in
 
       Laat leeg als Solr in zelfstandige modus wordt uitgevoerd met de interne ZooKeeper.
-      *Standaard*: *&lt;blank>*
+      *Standaard*:  *&lt;blank>*
 
       * **[!UICONTROL Solr URL]**
 De URL die wordt gebruikt om te communiceren met Solr in zelfstandige modus.
@@ -104,17 +104,17 @@ De naam van de Solr-verzameling.
 
 >[!NOTE]
 >
->De database mongoDB, die standaard de naam heeft, `communities`mag niet worden ingesteld op de naam van een database die wordt gebruikt voor [knooppuntopslag of gegevensopslag](../../help/sites-deploying/data-store-config.md)(binair). Zie ook [Opslagelementen in AEM 6.5](../../help/sites-deploying/storage-elements-in-aem-6.md).
+>De database mongoDB, die standaard de naam `communities` heeft, mag niet worden ingesteld op de naam van een database die wordt gebruikt voor [knooppuntopslag of gegevens (binair) winkels](../../help/sites-deploying/data-store-config.md). Zie ook [Opslagelementen in AEM 6.5](../../help/sites-deploying/storage-elements-in-aem-6.md).
 
 ### MongoDB Replica-set {#mongodb-replica-set}
 
 Voor het productiemilieu, wordt het sterk geadviseerd om een replicaset, een cluster van servers te installeren MongoDB die primaire-secundaire replicatie en geautomatiseerde failover uitvoert.
 
-Voor meer informatie over replicasets gaat u naar de documentatie van de [replicatie](https://docs.mongodb.org/manual/replication/) van MongoDB.
+Voor meer informatie over replicasets gaat u naar de [Replication](https://docs.mongodb.org/manual/replication/)-documentatie van MongoDB.
 
-Als u met replicasets wilt werken en wilt leren hoe u verbindingen tussen toepassingen en MongoDB-instanties kunt definiëren, gaat u naar de documentatie bij URI-indeling [van](https://docs.mongodb.org/manual/reference/connection-string/) verbindingstekenreeks van MongoDB.
+Als u met replicasets wilt werken en wilt leren hoe u verbindingen tussen toepassingen en MongoDB-instanties kunt definiëren, raadpleegt u de documentatie van MongoDB [Verbindingsreeks URI Format](https://docs.mongodb.org/manual/reference/connection-string/).
 
-#### Voorbeeld-URL voor verbinding maken met een replicaset  {#example-url-for-connecting-to-a-replica-set}
+#### Voorbeeld-URL voor verbinding maken met een replicaset {#example-url-for-connecting-to-a-replica-set}
 
 ```shell
 # Example url for:
@@ -130,21 +130,22 @@ Een installatie Solr kan tussen de knoopopslag (Eak) en gemeenschappelijke opsla
 
 Als zowel de Oak als de inzamelingen MSRP intensief worden gebruikt, kan tweede Solr om prestatiesredenen worden geïnstalleerd.
 
-Voor productieomgevingen biedt de [SolrCloud-modus](solr.md#solrcloud-mode) betere prestaties dan de zelfstandige modus (één lokale Solr-instelling).
+Voor productieomgevingen biedt de [SolrCloud-modus](solr.md#solrcloud-mode) betere prestaties in vergelijking met de standalone modus (één lokale Solr-instelling).
 
-Voor configuratiedetails, zie de Configuratie van [Solr voor SRP](solr.md).
+Voor configuratiedetails, zie [Solr Configuratie voor SRP](solr.md).
 
-### Bijwerken {#upgrading}
+### {#upgrading} bijwerken
 
 Als bevordering van een vroegere die versie met MSRP wordt gevormd, zal het noodzakelijk zijn:
 
-1. Voer de [upgrade naar AEM Communities uit](upgrade.md)
+1. [upgrade uitvoeren naar AEM Communities](upgrade.md)
 1. Nieuwe Solr-configuratiebestanden installeren
    * Voor [standaard MLS](solr.md#installing-standard-mls)
-   * Voor [geavanceerde MLS](solr.md#installing-advanced-mls)
-1. Reindex MSRPSee sectie [MSRP Reindex Tool](#msrp-reindex-tool)
+   * Voor [advanced MLS](solr.md#installing-advanced-mls)
+1. MSRP opnieuw indexeren
+Zie sectie [MSRP Reindex Tool](#msrp-reindex-tool)
 
-## De configuratie publiceren {#publishing-the-configuration}
+## De configuratie {#publishing-the-configuration} publiceren
 
 MSRP moet als gemeenschappelijke opslag op alle auteur worden geïdentificeerd en instanties publiceren.
 
@@ -156,14 +157,14 @@ Meld u aan bij de auteur en voer de volgende stappen uit om de identieke configu
    * Bladeren naar `/etc/socialconfig/srpc/`
 * Selecteer **[!UICONTROL Activate]**
 
-## Gebruikersgegevens beheren {#managing-user-data}
+## Gebruikersgegevens {#managing-user-data} beheren
 
-Voor informatie over *gebruikers*, *gebruikersprofielen* en *gebruikersgroepen*, die vaak worden ingevoerd in de publicatieomgeving, gaat u naar
+Voor informatie over *gebruikers*, *gebruikersprofielen* en *gebruikersgroepen*, vaak ingevoerd in de publicatieomgeving, gaat u naar
 
 * [Gebruikerssynchronisatie](sync.md)
 * [Gebruikers en gebruikersgroepen beheren](users.md)
 
-## MSRP opnieuw indexeren {#msrp-reindex-tool}
+## MSRP-herindex {#msrp-reindex-tool}
 
 Er is een eindpunt van HTTP voor het opnieuw indexeren van Solr voor MSRP wanneer het installeren van nieuwe configuratiedossiers of het herstellen van een beschadigde index van Solr.
 
@@ -180,33 +181,33 @@ Een redelijke standaardwaarde is 5000:
 * Als het geheugen een probleem is, geeft u een kleiner getal op
 * Als snelheid een probleem is, geeft u een groter getal op om de snelheid te verhogen
 
-### Gereedschap MSRP opnieuw indexeren uitvoeren met cURL-opdracht {#running-msrp-reindex-tool-using-curl-command}
+### Het Lopen Hulpmiddel van Herindex MSRP gebruikend bevel cURL {#running-msrp-reindex-tool-using-curl-command}
 
 Het volgende cURL bevel toont wat noodzakelijk voor een HTTP- verzoek is om UGC te herindexeren die in MSRP wordt opgeslagen.
 
 De basisindeling is:
 
-cURL -u *sign* -d *data* *redex-url*
+cURL -u *signin* -d *data* *rendex-url*
 
-*sign* = administrator-id:passwordFor, voorbeeld: admin:admin
+*sign* = administrator-id:password Bijvoorbeeld: admin:admin
 
 *data* = &quot;batchSize=*size*&amp;path=*path&quot;*
 
-*size* = hoeveel UGC-items opnieuw moeten worden geindexeerd per bewerking
+*size* = hoeveel UGC-items opnieuw moeten worden geindexeerd per bewerking 
 `/content/usergenerated/asi/mongo/`
 
 *path* = de hoofdlocatie van de boomstructuur van UGC naar opnieuw indexeren
 
-* Als u alle UGC opnieuw wilt indexeren, geeft u de waarde op van de `asipath`eigenschap van
+* Als u alle UGC opnieuw wilt indexeren, geeft u de waarde op van de eigenschap `asipath`van
    `/etc/socialconfig/srpc/defaultconfiguration`
 * Als u de index wilt beperken tot UGC, geeft u een substructuur op van `asipath`
 
-*herdex-url* = het eindpunt voor herindexering van SRP
+*redex-url* = het eindpunt voor herindexering van SRP 
 `http://localhost:4503/services/social/datastore/mongo/reindex`
 
 >[!NOTE]
 >
->Als u DSRP Solr [opnieuw](dsrp.md)dexeert, is URL **/services/social/datastore/rdb/reindex**
+>Als u [opnieuw indexeert DSRP Solr](dsrp.md) bent, is URL **/services/social/datastore/rdb/reindex**
 
 ### Voorbeeld van MSRP-reindex {#msrp-reindex-example}
 
@@ -214,7 +215,7 @@ cURL -u *sign* -d *data* *redex-url*
 curl -s -u admin:admin -d 'batchSize=10000&path=/content/usergenerated/asi/mongo/' http://localhost:4503/services/social/datastore/mongo/reindex
 ```
 
-## Hoe te om MSRP te demo {#how-to-demo-msrp}
+## Hoe te om MSRP {#how-to-demo-msrp} te demo
 
 Om MSRP voor een demonstratie of ontwikkelomgeving te plaatsen, zie [HowTo Opstelling MongoDB voor Demo](demo-mongo.md).
 
@@ -224,16 +225,16 @@ Om MSRP voor een demonstratie of ontwikkelomgeving te plaatsen, zie [HowTo Opste
 
 Zorg ervoor MSRP is gevormd om de standaardleverancier te zijn door de configuratie van de opslagoptie te controleren. Standaard is de leverancier van de opslagbron JSRP.
 
-Ga bij alle auteur- en publiceer AEM naar de [opslagconfiguratieconsole](srp-config.md) of controleer de AEM opslagplaats:
+Op alle auteur en publiceer AEM instanties, herzie [de console van de Configuratie van de Opslag](srp-config.md) of controleer de AEM bewaarplaats:
 
-* In JCR, indien [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
+* In JCR, als [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
 
-   * Bevat geen [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) knoop, betekent het de opslagleverancier JSRP is.
-   * Als de srpc knoop bestaat en knoop [standaardconfiguratie](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration)bevat, zouden de eigenschappen van de standaardconfiguratie MSRP moeten bepalen om de standaardleverancier te zijn.
+   * Bevat geen [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) knoop, het betekent de opslagleverancier JSRP is.
+   * Als de srpc knoop bestaat en knoop [default configuration](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration) bevat, zouden de eigenschappen van de standaardconfiguratie MSRP moeten bepalen om de standaardleverancier te zijn.
 
 ### UGC verdwijnt na upgrade {#ugc-disappears-after-upgrade}
 
-Als u een upgrade uitvoert vanaf een bestaande AEM Communities 6.0-site, moet een reeds bestaande UGC worden geconverteerd om te voldoen aan de structuur die is vereist voor de [SRP](srp.md) API na een upgrade naar AEM Communities 6.3.
+Als u een upgrade uitvoert vanaf een bestaande AEM Communities 6.0-site, moet een bestaande UGC worden omgezet om te voldoen aan de vereiste structuur voor de [SRP](srp.md)-API na een upgrade naar AEM Communities 6.3.
 
 Er is een open bronhulpmiddel beschikbaar op GitHub voor dit doel:
 
@@ -255,14 +256,14 @@ at com.adobe.cq.social.scf.core.BaseSocialComponent.toJSONString(BaseSocialCompo
 ... 124 common frames omitted
 ```
 
-Als u de fout wilt oplossen, moet u bij het volgen van de instructies voor het [installeren van de standaard-MLS](solr.md#installing-standard-mls):
+Om de fout op te lossen, wanneer het volgen van de instructies voor [Installing Standard MLS](solr.md#installing-standard-mls), zorg ervoor:
 
 * De XML-configuratiebestanden zijn naar de juiste Solr-locatie gekopieerd.
 * Solr werd opnieuw begonnen nadat de nieuwe configuratiedossiers bestaande degenen vervingen.
 
 ### Beveiligde verbinding met MongoDB mislukt {#secure-connection-to-mongodb-fails}
 
-Als een poging om een beveiligde verbinding te maken met de MongoDB-server mislukt als gevolg van een ontbrekende klassedefinitie, moet de MongoDB-stuurprogrammabundel, die beschikbaar is `mongo-java-driver`in de openbare gegevensopslagruimte, worden bijgewerkt.
+Als een poging om een beveiligde verbinding te maken met de MongoDB-server mislukt als gevolg van een ontbrekende klassedefinitie, moet de MongoDB-stuurprogrammabundel, `mongo-java-driver`, worden bijgewerkt, die beschikbaar is in de openbaar gemaakte opslagplaats.
 
 1. Download het stuurprogramma van [https://search.maven.org/#artifactdetails%7Corg.mongodb%7Cmongo-java-driver%7C2.13.2%7Cjar](https://search.maven.org/#artifactdetails%7Corg.mongodb%7Cmongo-java-driver%7C2.13.2%7Cjar) (versie 2.13.2 of hoger).
 1. Kopieer de bundel naar de map &quot;crx-quickstart/install&quot; voor een AEM.

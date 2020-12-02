@@ -1,8 +1,8 @@
 ---
 title: Het configuratiebestand importeren en exporteren
 seo-title: Het configuratiebestand importeren en exporteren
-description: Leer hoe u het configuratiebestand importeert en exporteert om servervoorkeuren te bewerken of een andere AEM-formulierproductinstantie te configureren.
-seo-description: Leer hoe u het configuratiebestand importeert en exporteert om servervoorkeuren te bewerken of een andere AEM-formulierproductinstantie te configureren.
+description: Leer hoe u het configuratiebestand importeert en exporteert om servervoorkeuren te bewerken of een ander exemplaar van een AEM formulierproduct te configureren.
+seo-description: Leer hoe u het configuratiebestand importeert en exporteert om servervoorkeuren te bewerken of een ander exemplaar van een AEM formulierproduct te configureren.
 uuid: 32e8a709-2d7c-4740-9533-d53aa751bc58
 contentOwner: admin
 content-type: reference
@@ -11,19 +11,22 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c1636537-f7dc-48d8-a3f0-9052bcd28b62
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '282'
+ht-degree: 0%
 
 ---
 
 
-# Het configuratiebestand importeren en exporteren {#importing-and-exporting-the-configuration-file}
+# Het configuratiedossier {#importing-and-exporting-the-configuration-file} invoeren en uitvoeren
 
-Gebruik de pagina Handmatige configuratie om een kopie van de configuratie-instellingen in XML-indeling te downloaden. De instellingen in dit bestand bepalen alle servervoorkeuren. U kunt het bestand vervolgens bewerken en opnieuw naar de server uploaden. U kunt het bestand ook gebruiken om een andere productinstantie van AEM-formulieren te configureren.
+Gebruik de pagina Handmatige configuratie om een kopie van de configuratie-instellingen in XML-indeling te downloaden. De instellingen in dit bestand bepalen alle servervoorkeuren. U kunt het bestand vervolgens bewerken en opnieuw naar de server uploaden. U kunt het bestand ook gebruiken om een ander exemplaar van een AEM formulierproduct te configureren.
 
 Om veiligheidsrisico&#39;s te vermijden, bindt wachtwoordwaarde voor de folderserver niet inbegrepen in een uitgevoerd configuratiedossier. Werk het wachtwoord in het XML-bestand bij voordat u het bestand naar een nieuw systeem importeert.
 
 >[!NOTE]
 >
->Als u het configuratiebestand importeert, worden AEM-formulieren op basis van de gegevens in het bestand opnieuw geconfigureerd. Alleen een systeembeheerder of een consultant voor professionele services die bekend is met het AEM-formulierproduct en XML, kan overwegen het configuratiebestand te wijzigen. Zij kunnen het configuratiedossier, bijvoorbeeld, moeten uitgeven om een bedorven het plaatsen opnieuw te vormen.
+>Wanneer u het configuratiebestand importeert, worden AEM formulieren opnieuw geconfigureerd op basis van de informatie in het bestand. Alleen een systeembeheerder of een consultant voor professionele services die bekend is met het AEM formulierproduct en XML, kan overwegen het configuratiebestand te wijzigen. Zij kunnen het configuratiedossier, bijvoorbeeld, moeten uitgeven om een bedorven het plaatsen opnieuw te vormen.
 
 **De configuratiegegevens exporteren**
 

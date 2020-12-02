@@ -15,7 +15,7 @@ ht-degree: 6%
 ---
 
 
-# AEM 6.5 Handboek voor het ontwikkelen van toepassingen {#developing}
+# AEM 6.5 Handboek {#developing} ontwikkelen
 
 + [Overzicht van de gebruikershandleiding voor ontwikkeling](home.md)
 + Inleiding voor ontwikkelaars{#introduction}
@@ -41,7 +41,7 @@ ht-degree: 6%
    + [Tagbibliotheken](taglib.md)
    + Sjablonen{#templates}
       + [Sjablonen](templates.md)
-      + [Paginasjablonen - Bewerkbaar ](page-templates-editable.md)
+      + [Paginasjablonen - Bewerkbaar  ](page-templates-editable.md)
       + [Paginasjablonen - statisch](page-templates-static.md)
       + [Sjablonen voor inhoudsfragmenten](content-fragment-templates.md)
       + [Adaptieve sjabloonrendering](templates-adaptive-rendering.md)
@@ -99,7 +99,7 @@ ht-degree: 6%
       + [Widgets gebruiken en uitbreiden (klassieke UI)](widgets.md)
       + [xtypes gebruiken (klassieke UI)](xtypes.md)
       + [Forms ontwikkelen (klassieke gebruikersinterface)](developing-forms.md)
-+ Erviteitsbeheer zonder hoofd{#headless}
++ Beleidsloos ervaringsbeheer{#headless}
    + [Hoofdloos en hybride met AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
    + [JSON-export inschakelen voor een component](json-exporter-components.md)
    + Toepassingen voor één pagina{#spas}
@@ -122,7 +122,7 @@ ht-degree: 6%
    + [Contentfragmenten](/help/assets/content-fragments/content-fragments.md)
    + [Ervaringsfragmenten](/help/sites-authoring/experience-fragments.md)
    + [Inhoudsfragmenten en inhoudsservices in AEM](https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-content-services-feature-video-understand.html)
-+ Ontwikkelingsinstrumenten{#devtools}
++ Ontwikkelingshulpmiddelen{#devtools}
    + [Ontwikkelingsinstrumenten](dev-tools.md)
    + [AEM-moderniseringstools](modernization-tools.md)
    + [Dialoogvenster-editor](dialog-editor.md)
@@ -150,7 +150,7 @@ ht-degree: 6%
    + Clientcontext{#client-context}
       + [Clientcontext in detail](client-context.md)
       + [JavaScript-API voor clientcontext](ccjsapi.md)
-+ AEM uitbreiden{#extending-aem}
++ AEM{#extending-aem} uitbreiden
    + [Paginaontwerp aanpassen](customizing-page-authoring-touch.md)
    + [De consoles aanpassen](customizing-consoles-touch.md)
    + [Weergaven van pagina-eigenschappen aanpassen](page-properties-views.md)
@@ -158,7 +158,7 @@ ht-degree: 6%
    + [Contentfragmenten aanpassen en uitbreiden](customizing-content-fragments.md)
    + [Contentfragmenten die componenten voor rendering configureren](content-fragments-config-components-rendering.md)
    + [Ervaringsfragmenten](experience-fragments.md)
-   + Werkstromen uitbreiden{#extending-workflows}
+   + Workflows uitbreiden{#extending-workflows}
       + [Workflows ontwikkelen en uitbreiden](workflows.md)
       + [Workflowmodellen maken](workflows-models.md)
       + [Uitbreiding van workflowfunctionaliteit](workflows-customizing-extending.md)
@@ -168,7 +168,7 @@ ht-degree: 6%
       + [Referentie workflowproces](workflows-process-ref.md)
       + [Variabelen in AEM werkstromen](/help/sites-developing/using-variables-in-aem-workflows.md)
    + [Het beheer van meerdere sites uitbreiden](extending-msm.md)
-   + Tracering en analyse{#extending-analytics}
+   + Tekstspatiëring en analyse{#extending-analytics}
       + [Gebeurtenistracking uitbreiden](extending-analytics.md)
       + [Adobe Analytics-tracking toevoegen aan componenten](extending-analytics-components.md)
       + [Adobe Analytics Framework aanpassen](extending-analytics-framework.md)
@@ -183,7 +183,7 @@ ht-degree: 6%
       + [Analyse aanvragen](analyze-request.md)
    + [Services integreren met de JMX-console](jmx-integration.md)
    + [De Bulk-editor ontwikkelen](dev-bulk-editor.md)
-   + Klassieke gebruikersinterface uitbreiden{#extending-classic-ui}
+   + Klassieke UI uitbreiden{#extending-classic-ui}
       + [De websiteconsole aanpassen (klassieke gebruikersinterface)](customizing-siteadmin.md)
       + [De welkomstconsole aanpassen (klassieke gebruikersinterface)](customizing-the-welcome-console.md)
       + [Rapporten ontwikkelen](dev-reports.md)

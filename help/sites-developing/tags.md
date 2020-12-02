@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 2d0835e0-5602-49a9-b9ad-636ce5a8ad2a
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '109'
+ht-degree: 2%
 
 ---
 
@@ -19,11 +22,11 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 Door tags toe te wijzen, kunt u inhoud indelen en ordenen. Tags kunnen worden geclassificeerd door een naamruimte en een taxonomie.
 
-* Zie [Tags](/help/sites-administering/tags.md) beheren voor informatie over het maken en beheren van tags en over de inhoudstags die zijn toegepast.
-* Zie [Tags](/help/sites-authoring/tags.md) gebruiken voor informatie over het labelen van inhoud.
+* Zie [Tags beheren](/help/sites-administering/tags.md) voor informatie over het maken en beheren van tags en over de inhoudstags die zijn toegepast.
+* Zie [Tags gebruiken](/help/sites-authoring/tags.md) voor informatie over het labelen van inhoud.
 
 De volgende informatie is beschikbaar voor ontwikkelaars:
 
-* [AEM Tagging Framework](/help/sites-developing/framework.md) - Een beschrijving van de knooppunten en eigenschappen die worden gebruikt voor codering
+* [AEM Tagingframework](/help/sites-developing/framework.md) : een beschrijving van de knooppunten en eigenschappen die worden gebruikt voor tags
 
-* [Tags maken in een AEM-toepassing](/help/sites-developing/building.md) - Een beschrijving van de API&#39;s die werken met het coderingsframework vanuit code aan de clientzijde en aan de serverzijde
+* [Tags maken in een AEM-toepassing](/help/sites-developing/building.md)  - Een beschrijving van de API&#39;s die werken met het coderingsframework vanuit de code aan de clientzijde en aan de serverzijde

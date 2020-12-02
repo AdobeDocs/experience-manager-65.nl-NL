@@ -18,15 +18,15 @@ ht-degree: 2%
 ---
 
 
-# Essentiële elementen op Leaderboard {#leaderboard-essentials}
+# Essentiële elementen van Leaderboard {#leaderboard-essentials}
 
 Deze pagina bevat de essentiële informatie voor het werken met de functie Lederboard.
 
-Voordat de leaderboard-component op een pagina wordt geplaatst, moet u [Communities Scoring and Badges](implementing-scoring.md)configureren.
+Voordat de leaderboard-component op een pagina wordt opgenomen, moet u [Communityscores en Badges](implementing-scoring.md) configureren.
 
-Zie [Scoring en Badges Essentials](configure-scoring.md).
+Zie [Scores en Badges Essentials](configure-scoring.md).
 
-## Essentiële elementen voor client-kant {#essentials-for-client-side}
+## Essentiële elementen voor client-side {#essentials-for-client-side}
 
 <table>
  <tbody>
@@ -52,13 +52,13 @@ Zie [Scoring en Badges Essentials](configure-scoring.md).
   </tr>
   <tr>
    <td><strong> eigenschappen</strong></td>
-   <td>Zie <a href="enabling-leaderboard.md">Leaderboard-functie</a></td>
+   <td>Zie <a href="enabling-leaderboard.md">Lederbordfunctie</a></td>
   </tr>
  </tbody>
 </table>
 
 * [Aanpassingen aan de clientzijde](client-customize.md)
 
-### Functie bestandsbibliotheek {#file-library-function}
+### Bestandsbibliotheekfunctie {#file-library-function}
 
-Een community-sitestructuur die de functie [](functions.md#leaderboard-function)Leaderboard bevat, bevat een geconfigureerde `leaderboard` component.
+Een community-sitestructuur die de [Leaderboard-functie](functions.md#leaderboard-function) bevat, bevat een geconfigureerde `leaderboard`-component.

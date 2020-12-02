@@ -11,6 +11,9 @@ discoiquuid: 9f26565c-a7ba-4e9e-bf77-a95eb8e351f2
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+workflow-type: tm+mt
+source-wordcount: '652'
+ht-degree: 1%
 
 ---
 
@@ -30,7 +33,7 @@ U kunt bijvoorbeeld de volgende speciale tekens invoegen:
 U kunt speciale tekens in letters invoegen:
 
 * In de [teksteditor](/help/forms/using/document-fragments.md#createtext)
-* In een [bewerkbare, inline module in een correspondentie](../../forms/using/create-correspondence.md#managecontent)
+* In een [bewerkbare inline module in een correspondentie](../../forms/using/create-correspondence.md#managecontent)
 
 ![specialkarakteristiek linemodule](assets/specialcharactersinlinemodule.png)
 
@@ -40,18 +43,18 @@ De beheerder kan ondersteuning voor meer/aangepaste speciale tekens toevoegen do
 
 Gebruik de volgende stappen om ondersteuning voor aangepaste speciale tekens toe te voegen:
 
-1. Ga naar Beheerder `https://'[server]:[port]'/[ContextPath]/crx/de` en meld u aan.
-1. Maak in de map apps een map met de naam **[!UICONTROL specialcharacters]** met pad/structuur die lijkt op de map specialcharacters (in de map textEditorConfig onder libs):
+1. Ga naar `https://'[server]:[port]'/[ContextPath]/crx/de` en login als Beheerder.
+1. Maak in de map apps een map met de naam **[!UICONTROL specialcharacters]** met een pad/structuur die lijkt op de map specialcharacters (in de map textEditorConfig onder libs):
 
-   1. Klik met de rechtermuisknop op de map met **speciale tekens** in het volgende pad en selecteer **Overlayknooppunt**:
+   1. Klik met de rechtermuisknop op de map **specialcharacters** op het volgende pad en selecteer **Overlay Node**:
 
       `/libs/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters`
 
    1. Zorg ervoor dat het dialoogvenster Overlay-knooppunt de volgende waarden heeft:
 
-      **Pad:** /libs/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters
+      **Pad:** /libs/fd/cm/gui/configuration/textEditorConfig/specialcharacters
 
-      **Locatie bedekking:** /apps/
+      **Overlay-locatie:** /apps/
 
       **Identieke knooppunttypen:** Ingeschakeld
 
@@ -66,25 +69,25 @@ Gebruik de volgende stappen om ondersteuning voor aangepaste speciale tekens toe
       >    * Een functiepakket installeren
 
 
-   1. Klik op **OK** en vervolgens op Alles **** opslaan. De map met speciale tekens wordt gemaakt in het opgegeven pad.
+   1. Klik **OK** en klik vervolgens op **Alles opslaan**. De map met speciale tekens wordt gemaakt in het opgegeven pad.
 
       Controleer na het maken van de overlay de structuurcodes van de knooppunten. Elk knooppunt dat wordt gemaakt in /apps met behulp van de overlay, moet dezelfde klasse en eigenschappen hebben als gedefinieerd in /libs voor dat knooppunt. Als een eigenschap of tag ontbreekt in de nodestructuur onder de locatie /apps, synchroniseert u de tags met het corresponderende knooppunt in /libs.
 
 
 
-1. Controleer of het **[!UICONTROL knooppunt textEditorConfig]** de volgende eigenschappen en waarden heeft:
+1. Zorg ervoor dat het knooppunt **[!UICONTROL textEditorConfig]** de volgende eigenschappen en waarden heeft:
 
    | Naam | Type | Waarde |
    |---|---|---|
    | cmConfigurationType | Tekenreeks | cmTextEditorConfiguration |
    | cssPath | Tekenreeks | /libs/fd/cm/ma/gui/components/admin/createasset/textcontrol/clientlibs/textcontrol |
 
-1. Klik met de rechtermuisknop op de map **[!UICONTROL Speciale tekens]** in het volgende pad en selecteer **Maken > Onderliggend knooppunt** en klik vervolgens op Alles **** opslaan:
+1. Klik met de rechtermuisknop op de map **[!UICONTROL specialcharacters]** op het volgende pad en selecteer **Maken > Onderliggend knooppunt** en klik vervolgens op **Alles opslaan**:
 
    /apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters/&lt;YourChildNode>
 
 1. Vernieuw de Teksteditor\Create Correspondence UI page. Het knooppunt dat u hebt toegevoegd, is het laatste in de lijst met speciale tekens in de gebruikersinterface.
-1. Klik op Alles **opslaan**.
+1. Klik **Alles opslaan**.
 1. Breng de gewenste wijzigingen aan in de speciale tekens:
 
 <table>

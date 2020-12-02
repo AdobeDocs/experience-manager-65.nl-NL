@@ -17,11 +17,11 @@ ht-degree: 0%
 ---
 
 
-# Inhoudsservices{#content-services}
+# Content Services{#content-services}
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md) informatie.
 
 >[!CAUTION]
 >
@@ -43,7 +43,7 @@ Content Services kan de inhoud leveren als elementen, verpakte HTML (HTML/CSS/JS
 >
 >Voordat u aan de slag gaat met Content Services, moet u ervoor zorgen dat de vlag Content Services is ingeschakeld. Als u het maken en beheren van modellen in uw app wilt inschakelen, moet u gegevensmodellen inschakelen in de configuratiegrowser.
 >
->Zie **[De Diensten](/help/mobile/developing-content-services.md)** van de Inhoud van het Beheer en de Browser [van de](/help/sites-administering/configurations.md) Configuratie documentatie voor meer informatie.
+>Zie **[Inhoudsservices beheren](/help/mobile/developing-content-services.md)** en de documentatie [Configuratiebrowser](/help/sites-administering/configurations.md) voor meer informatie.
 
 ![chlimage_1-143](assets/chlimage_1-143.png)
 

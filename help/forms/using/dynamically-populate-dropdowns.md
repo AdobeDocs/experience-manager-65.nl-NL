@@ -18,18 +18,18 @@ ht-degree: 0%
 ---
 
 
-# Vervolgkeuzelijsten dynamisch vullen {#dynamically-populating-drop-down-lists}
+# Vervolgkeuzelijsten {#dynamically-populating-drop-down-lists} dynamisch vullen
 
 ## Vereisten {#prerequisites}
 
 * [OSGI-pakketten maken](https://helpx.adobe.com/experience-manager/using/creating-osgi-bundles-digital-marketing.html)
-* [AEM-componenten ontwikkelen](/help/sites-developing/components.md)
+* [AEM ontwikkelen](/help/sites-developing/components.md)
 * [Aangepast formulier maken](../../forms/using/creating-adaptive-form.md)
 * [Aangepast formulier ontwerpen](../../forms/using/introduction-forms-authoring.md)
 
 ## Procedure voor het dynamisch vullen van vervolgkeuzelijsten {#procedure-to-dynamically-populate-drop-down-lists}
 
-Overweeg een scenario waarin u de vervolgkeuzelijst **Frame** wilt vullen op basis van een waarde die u selecteert in de vervolgkeuzelijst **Land** . Als u Australië selecteert in de vervolgkeuzelijst **Land** , worden in de vervolgkeuzelijst **Staat** de staten in Australië weergegeven. De volgende procedure beschrijft hoe te om deze taak te verwezenlijken.
+Overweeg een scenario waar u **Staat** drop-down lijst wilt bevolken die op een waarde wordt gebaseerd die u in **Land** drop-down lijst selecteert. Als u Australië in **Land** drop-down lijst selecteert, **Staat** toont de staten binnen Australië. De volgende procedure beschrijft hoe te om deze taak te verwezenlijken.
 
 1. Creeer een project met de volgende modules:
 
@@ -147,7 +147,7 @@ Overweeg een scenario waarin u de vervolgkeuzelijst **Frame** wilt vullen op bas
    }
    ```
 
-1. Maak een vervolgkeuzelijst onder een bepaalde maphiërarchie in apps (maak bijvoorbeeld een knooppunt onder /apps/myfolder/demo). Zorg ervoor dat de `sling:resourceType` parameter voor het knooppunt gelijk is aan die van het servlet-punt (/apps/populatedropdown).
+1. Maak een vervolgkeuzelijst onder een bepaalde maphiërarchie in apps (maak bijvoorbeeld een knooppunt onder /apps/myfolder/demo). Zorg ervoor dat de parameter `sling:resourceType` voor het knooppunt gelijk is aan de parameter waarnaar het knooppunt verwijst (/apps/populatedropdown).
 
    ![Een vervolgkeuzelijst maken](assets/dropdown-node.png)
 
@@ -156,7 +156,7 @@ Overweeg een scenario waarin u de vervolgkeuzelijst **Frame** wilt vullen op bas
 
    Voeg de namen van de landen toe die u wilt weergeven in de lijst Land. Voeg in de lijst Staat een script toe om het te vullen op basis van de naam van het land in de lijst Land.
 
-   ![Landnamen](assets/country-dropdown.png) toevoegen ![Script toevoegen om de vervolgkeuzelijsten](assets/state-dropdown.png) ![Land en Staat te vullen met namen van staten](assets/2dropdowns.png)
+   ![Landnamen ](assets/country-dropdown.png) ![toevoegenScript toevoegen om ](assets/state-dropdown.png) ![statusnamenLand en Staat te vullen vervolgkeuzelijsten om te verzamelen](assets/2dropdowns.png)
 
    ```javascript
    JSON.parse(

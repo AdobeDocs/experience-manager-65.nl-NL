@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Deze sectie omvat gedetailleerde informatie over logboeken beschikbaar om u te helpen problemen oplossen en omvat ook informatie over enkele problemen u met AEM zou kunnen ontmoeten.
 
-## De prestaties van auteurs oplossen {#troubleshoot-author-performance}
+## De Prestaties van de Auteur {#troubleshoot-author-performance} oplossen
 
 Het analyseren van langzame prestaties op Authoring instantie kan vrij complex worden. Als eerste stap is het vereist om te achterhalen op welk niveau van de technologiestapel de prestaties verminderen.
 
@@ -36,9 +36,9 @@ De volgende beslisboom verstrekt raad om het knelpunt te versmallen.
 
 ## Logbestanden en auditlogbestanden configureren {#configuring-log-files-and-audit-logs}
 
-AEM registreert gedetailleerde logboeken die u zou kunnen willen vormen om installatiekwesties problemen op te lossen. Zie het gedeelte [Werken met auditrecords en logbestanden](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files) voor meer informatie.
+AEM registreert gedetailleerde logboeken die u zou kunnen willen vormen om installatiekwesties problemen op te lossen. Zie de sectie [Werken met auditrecords en logbestanden](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files) voor meer informatie.
 
-## De optie Uitvouwen gebruiken {#using-the-verbose-option}
+## De veelzijdige optie {#using-the-verbose-option} gebruiken
 
 Wanneer u AEM WCM begint, kunt u - v (verbose) optie aan de bevellijn toevoegen zoals in: java -jar cq-wcm-quickstart-&lt;version>.jar-v.
 
@@ -65,11 +65,11 @@ Ga als volgt te werk om problemen op te lossen:
 * Soms kunt u de juiste koppeling herstellen door de ondersteunde Java-versie opnieuw te installeren.
 * U kunt CRX altijd uitvoeren met behulp van de opdrachtregel of start/stop-scripts zoals eerder in dit document is beschreven.
 
-### Mijn toepassing die op CRX loopt werpt fouten uit het geheugen {#my-application-running-on-crx-throws-out-of-memory-errors}
+### Mijn toepassing die op CRX loopt werpt uit-van-geheugenfouten {#my-application-running-on-crx-throws-out-of-memory-errors}
 
 >[!NOTE]
 >
->Zie ook [Geheugenproblemen](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html)analyseren.
+>Zie ook [Geheugenproblemen analyseren](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html).
 
 
 CRX heeft zelf een zeer laag geheugenverbruik. Als de toepassing die binnen CRX wordt uitgevoerd grotere geheugenvereisten heeft of om geheugen-zware verrichtingen (bijvoorbeeld, grote transacties) verzoekt, moet de JVM instantie waar CRX looppas met aangewezen geheugenmontages worden begonnen.
@@ -84,9 +84,9 @@ Als u automatisch een heapdump wilt maken wanneer er onvoldoende geheugen beschi
 
 java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar&amp;ast;.jar
 
-Hiermee wordt een heap-dump-bestand gegenereerd (**java_..hprof**) wanneer er onvoldoende geheugen beschikbaar is voor het proces. Het proces kan blijven lopen nadat de heapstortplaats werd geproduceerd. Gewoonlijk is één heap-dump-bestand voldoende om het probleem te analyseren.
+Dit produceert een dossier van de heapstortplaats (**java_..hprof**) wanneer het proces onvoldoende geheugen heeft. Het proces kan blijven lopen nadat de heapstortplaats werd geproduceerd. Gewoonlijk is één heap-dump-bestand voldoende om het probleem te analyseren.
 
-### Het welkomstscherm AEM wordt niet weergegeven in de browser nadat u hebt dubbelgeklikt op AEM QuickStart {#the-aem-welcome-screen-does-not-display-in-the-browser-after-double-clicking-aem-quickstart}
+### Het AEM welkomstscherm wordt niet weergegeven in de browser nadat u dubbelklikt op AEM QuickStart {#the-aem-welcome-screen-does-not-display-in-the-browser-after-double-clicking-aem-quickstart}
 
 In bepaalde situaties worden de AEM WCM-welkomstschermen niet automatisch weergegeven, ook al is de gegevensopslagruimte zelf in orde. Dit kan afhangen van de instelling van het besturingssysteem, de configuratie van de browser of vergelijkbare factoren.
 
@@ -98,23 +98,23 @@ Soms heeft het AEM WCM QuickStart-venster het bericht &quot;AEM WCM wordt uitgev
 
 Als alles anders ontbreekt, controleer de logboeken om te weten te komen wat is gebeurd.
 
-## Installaties met een toepassingsserver oplossen {#troubleshooting-installations-with-an-application-server}
+## Installaties van problemen met een toepassingsserver {#troubleshooting-installations-with-an-application-server} oplossen
 
-### Pagina niet gevonden bij aanvragen van een geometrixx-buitenpagina {#page-not-found-returned-when-requesting-a-geometrixx-outdoor-page}
+### Pagina niet gevonden bij aanvragen van een geometrixx-outdoorpagina {#page-not-found-returned-when-requesting-a-geometrixx-outdoor-page}
 
 **Is van toepassing op WebLogic 10.3.5 en JBoss 5.1**
 
 Wanneer een verzoek aan geometrixx-outdoor/en pagina een 404 (Pagina niet Fouten) terugkeert, kunt u opnieuw controleren dat u het extra het hellen bezit in het sling.properties- dossier nodig voor deze specifieke Servers van de Toepassing hebt geplaatst.
 
-Zie in de stappen *Implementeren AEM webtoepassing* voor meer informatie.
+Zie in de stappen *AEM webtoepassing implementeren* voor meer informatie.
 
-### De grootte van de reactiekop kan groter zijn dan 4Kb {#response-header-size-can-be-greater-than-kb}
+### De koptekstgrootte van de reactie kan groter zijn dan 4Kb {#response-header-size-can-be-greater-than-kb}
 
 502 fouten kunnen erop wijzen dat de Webserver niet de grootte van de AEM HTTP- reactiekop kan behandelen. AEM kunnen HTTP-antwoordheaders genereren die cookies van meer dan 4 kB bevatten. Zorg ervoor dat uw servletcontainer wordt gevormd zodat de maximumgrootte van de reactiekop 4kb kan overschrijden.
 
-Voor Tomcat 7.0, bijvoorbeeld, controleert het maxHttpHeaderSize attribuut van de [Schakelaar](https://tomcat.apache.org/tomcat-7.0-doc/config/http.html) van HTTP beperkingen op kopbalgrootte.
+Voor Tomcat 7.0, bijvoorbeeld, controleert maxHttpHeaderSize attribuut van [HTTP Connector](https://tomcat.apache.org/tomcat-7.0-doc/config/http.html) beperkingen op kopbalgrootte.
 
-## Adobe Experience Manager verwijderen {#uninstalling-adobe-experience-manager}
+## Adobe Experience Manager {#uninstalling-adobe-experience-manager} verwijderen
 
 Aangezien AEM in één map installeert, is een hulpprogramma voor verwijderen niet nodig. Het verwijderen van de installatiemap kan eenvoudig zijn, maar hoe u de installatiemap verwijdert, hangt AEM af van wat u wilt bereiken en van welke permanente opslag u gebruikt.
 
@@ -128,4 +128,5 @@ Als bij de installatie van AEM externe opslag wordt gebruikt, bijvoorbeeld een d
 
 ### JSP-bestanden worden niet gecompileerd op JBoss {#jsp-files-are-not-compiled-on-jboss}
 
-Als u JSP dossiers installeert of aan Experience Manager op JBoss bijwerkt en de overeenkomstige servlets niet worden gecompileerd, zorg ervoor de JBoss JSP compiler correct wordt gevormd. Raadpleeg het[JSP Compilation Issues in het JBoss](https://helpx.adobe.com/experience-manager/kb/jsps-dont-compile-jboss.html) -artikel voor meer informatie.
+Als u JSP dossiers installeert of aan Experience Manager op JBoss bijwerkt en de overeenkomstige servlets niet worden gecompileerd, zorg ervoor de JBoss JSP compiler correct wordt gevormd. Zie voor meer informatie de
+[JSP-compilatieproblemen in JBoss](https://helpx.adobe.com/experience-manager/kb/jsps-dont-compile-jboss.html)-artikel.

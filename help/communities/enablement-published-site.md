@@ -19,7 +19,7 @@ ht-degree: 0%
 
 
 
-# Ervaar de gepubliceerde site {#experience-the-published-site}
+# Geniet van de gepubliceerde site {#experience-the-published-site}
 
 
 **[⇐ maken en toewijzen van Enablement-bronnen](resource.md)**
@@ -33,7 +33,7 @@ Begin door naar de weergegeven URL te bladeren wanneer u de site maakt, maar op 
 * Auteur-URL = [http://localhost:4502/content/sites/enable/en.html](http://localhost:4502/content/sites/enable/en.html)
 * URL publiceren = [http://localhost:4503/content/sites/enable/en.html](http://localhost:4503/content/sites/enable/en.html)
 
-Als de [standaardstartpagina is ingesteld](enablement-create-site.md#changethedefaulthomepage), kunt u de site starten door naar [http://localhost:4503/](http://localhost:4503/) te bladeren.
+Als de [standaardstartpagina is ingesteld](enablement-create-site.md#changethedefaulthomepage), moet u de site starten door naar [http://localhost:4503/](http://localhost:4503/) te bladeren.
 
 Wanneer de bezoeker van de site voor het eerst op de gepubliceerde site aankomt, is deze doorgaans nog niet aangemeld en is de site anoniem.
 
@@ -45,7 +45,7 @@ Wanneer de bezoeker van de site voor het eerst op de gepubliceerde site aankomt,
 
 Een anonieme sitebezoeker wordt direct de aanmeldingspagina voor deze persoonlijke communitysite voor activering getoond. Er is geen optie voor zelfinschrijving of aanmelden bij Facebook of Twitter.
 
-Deze homepage bevat vier menu-items: `Assignments, Ski Catalog, What's New` en `Discussions`, maar geen van deze bestanden kan worden bereikt zonder u aan te melden.
+Deze homepage bevat vier menu-items: `Assignments, Ski Catalog, What's New` en `Discussions`, maar geen kan worden bereikt zonder het ondertekenen binnen.
 
 >[!NOTE]
 >
@@ -53,9 +53,9 @@ Deze homepage bevat vier menu-items: `Assignments, Ski Catalog, What's New` en `
 >
 >Als een enablement-bron is ingesteld op `show in catalog` en `allow anonymous access`, kunnen anonieme sitebezoekers bronnen in de catalogus weergeven.
 
-### Anonieme toegang tot JCR voorkomen {#prevent-anonymous-access-on-jcr}
+### Anonieme toegang tot JCR {#prevent-anonymous-access-on-jcr} voorkomen
 
-Een bekende beperking maakt de inhoud van de site van de community toegankelijk voor anonieme bezoekers via jcr-inhoud en json , hoewel deze voor de inhoud van de site **[!UICONTROL allow anonymous access]** is uitgeschakeld. Nochtans, kan dit gedrag worden gecontroleerd gebruikend de Beperkingen van het Schuiven als oplossing.
+Een bekende beperking stelt de inhoud van de site van de community aan anonieme bezoekers beschikbaar via jcr-inhoud en json, hoewel **[!UICONTROL allow anonymous access]** is uitgeschakeld voor de inhoud van de site. Nochtans, kan dit gedrag worden gecontroleerd gebruikend de Beperkingen van het Schuiven als oplossing.
 
 Voer de volgende stappen uit om de inhoud van uw site te beschermen tegen toegang door anonieme gebruikers via jcr-inhoud en json:
 
@@ -65,12 +65,12 @@ Voer de volgende stappen uit om de inhoud van uw site te beschermen tegen toegan
    >
    >Ga niet naar de gelokaliseerde site.
 
-1. Go to **[!UICONTROL Page Properties]**.
+1. Ga naar **[!UICONTROL Page Properties]**.
 
    ![page-eigenschappen](assets/page-properties.png)
 
 1. Ga naar **[!UICONTROL Advanced]** tabblad.
-1. Inschakelen **[!UICONTROL Authentication Requirement]**.
+1. **[!UICONTROL Authentication Requirement]** inschakelen.
 
    ![plaatsverificatie](assets/site-authentication.png)
 
@@ -79,7 +79,7 @@ Voer de volgende stappen uit om de inhoud van uw site te beschermen tegen toegan
 
 ## Ingeschreven lid {#enrolled-member}
 
-Deze ervaring is afhankelijk van gebruikers `Riley Taylor` en `Sidney Croft` wordt [gemaakt](enablement-setup.md#publishcreateenablementmembers) en [toegewezen](resource.md#settings) aan het *Lessen* van de Les van de Ski door hun lidmaatschap in de *Gemeenschap de Klasse* van de Ski.
+Deze ervaring is gebaseerd op het feit dat gebruikers `Riley Taylor` en `Sidney Croft` zijn gemaakt [en [toegewezen](resource.md#settings) hebben aan het *Ski Lessen* leerpad door hun lidmaatschap in de *Community Ski Class* groep.](enablement-setup.md#publishcreateenablementmembers)
 
 Aanmelden met
 
@@ -108,13 +108,13 @@ Het type toewijzing wordt aangegeven met een pictogram in de linkerbovenhoek van
 
 ![chlimage_1-435](assets/chlimage_1-435.png)
 
-Als u *Ski-lessen* selecteert, worden de twee bronnen voor activering weergegeven waarnaar wordt verwezen door het leerpad.
+Als u *Ski Lessen* selecteert, worden de twee bronnen voor activering weergegeven waarnaar door het leerpad wordt verwezen.
 
 ![chlimage_1-436](assets/chlimage_1-436.png)
 
-Als u *Ski Les 1* selecteert, wordt de detailpagina van de resource voor activering geopend.
+Als u *Ski Les 1* selecteert, wordt de detailpagina van de Enablement resource geopend.
 
-Van de detailspagina, kan het lid leren, de les [schatten](rating.md) en [commentaren](comments.md)toevoegen. Om het even welke lidactiviteit zal in wat worden weerspiegeld Nieuw gedeelte van de plaats.
+Van de detailpagina, kan het lid leren, [rate](rating.md) de les en [commentaren toevoegen](comments.md). Om het even welke lidactiviteit zal in wat worden weerspiegeld Nieuw gedeelte van de plaats.
 
 De interactie met het enablement middel zal in de sectie van het Rapport worden genoteerd die in het auteursmilieu toegankelijk is.
 
@@ -122,7 +122,7 @@ De interactie met het enablement middel zal in de sectie van het Rapport worden 
 
 ### Ski-catalogus {#ski-catalog}
 
-De pagina van de Catalogus van het Ski is de catalogus van enablement middelen die met markeringen van `Tutorial` namespace worden geëtiketteerd. De twee *Ski Les* -bronnen worden gelabeld met de `Skiing` tag, zodat er niets wordt weergegeven als er andere tags zijn dan `All` of `Tutorial: Sports / Skiing` geselecteerd.
+De pagina van de Catalogus van het Ski is de catalogus van enablement middelen die met markeringen van `Tutorial` namespace worden geëtiketteerd. De twee *Ski Les* middelen worden geëtiketteerd met de `Skiing` markering, dusdanig dat als om het even welke markeringen buiten `All` of `Tutorial: Sports / Skiing` wordt geselecteerd, niets wordt getoond.
 
 Wanneer aan een lid geen middelen van toelage, of direct of door een het leren weg is toegewezen, is het mogelijk om met enablement middelen in een catalogus in wisselwerking te staan en terugkoppelen door commentaren en classificaties te verstrekken.
 
@@ -130,9 +130,9 @@ Wanneer aan een lid geen middelen van toelage, of direct of door een het leren w
 
 ### Discussies {#discussions}
 
-Naast het beoordelen van en het becommentariëren van enablement middelen ([indien toegelaten](enablement-create-site.md#step33asettings)), omvat het malplaatje van de communautaire plaats waarvan `Enablement Tutorial` werd gecreeerd de [forumfunctie](functions.md#forum-function) (titel is `Discussions)`.
+Naast het beoordelen van en het becommentariëren over enablement middelen ([indien toegelaten](enablement-create-site.md#step33asettings)), omvat het malplaatje van de communautaire plaats waarvan `Enablement Tutorial` werd gecreeerd [forumfunctie](functions.md#forum-function) (titel is `Discussions)`.
 
-Selecteer de `Discussions`koppeling en post een onderwerp.
+Selecteer `Discussions`verbinding en post een onderwerp.
 
 Meld u af en meld u aan als Sidney Croft (sidney/password) en beantwoord de vraag en volg het onderwerp.
 
@@ -142,22 +142,22 @@ Het bericht, naast gealigneerde matiging, zijn er opties om het onderwerp op soc
 
 ### Wat is er nieuw?{#what-s-new}
 
-Het `What's New` menu-item is de titel op basis van de functie [](functions.md#activity-stream-function) activity stream in de structuur van deze gemeenschapssite.
+Het menu-item `What's New` is de titel die is gegeven aan de functie [activity stream](functions.md#activity-stream-function) in de structuur van deze communitysite.
 
-Nog steeds aangemeld als Sidney, selecteert u de `What's New` koppeling om de activiteit weer te geven.
+Nog steeds aangemeld als Sidney, selecteert u de `What's New`-koppeling om de activiteit weer te geven.
 
 ![chlimage_1-440](assets/chlimage_1-440.png)
 
-## Vertrouwd lid van de Gemeenschap {#trusted-community-member}
+## Vertrouwd communautair lid {#trusted-community-member}
 
-Deze ervaring veronderstelt ` [Quinn Harper](enablement-setup.md#publishcreateenablementmembers)` werd toegewezen de rollen van [moderator](enablement-create-site.md#moderation) en [middelcontact](resource.md#settings).
+Deze ervaring veronderstelt ` [Quinn Harper](enablement-setup.md#publishcreateenablementmembers)` de rollen van [moderator](enablement-create-site.md#moderation) en [middelcontact](resource.md#settings) werd toegewezen.
 
 Aanmelden met
 
 * `Username: quinn`
 * `Password: password`
 
-Als u eenmaal bent aangemeld, ziet u dat er een nieuw menu-item is, `Administration`dat wordt weergegeven omdat het lid de rol van moderator heeft gekregen.
+Zodra ondertekend binnen, merk op is er een nieuw menupunt, `Administration`, dat verschijnt omdat het lid de rol van moderator werd gegeven.
 
 ![chlimage_1-441](assets/chlimage_1-441.png)
 
@@ -165,7 +165,7 @@ De homepage wordt geïdentificeerd door het eerste menupunt, Toewijzingen. Quinn
 
 ### Beheer {#administration}
 
-Wat er is, is activiteit door de twee leerlingen, `Riley Taylor` en `Sidney Croft`. Door de `Administration` verbinding te selecteren om tot de Console van de Moderatie toegang te hebben, kan Quinn de [bulkmoderatieconsole](moderation.md) gebruiken om hun posten te matigen.
+Er is activiteit van de twee studenten, `Riley Taylor` en `Sidney Croft`. Door de `Administration` verbinding te selecteren om tot de Console van de Moderatie toegang te hebben, kan Quinn [bulkmoderatieconsole](moderation.md) gebruiken om hun posten te matigen.
 
 Als u de pictogramschakelopties voor het zijpaneel selecteert, worden de filters geopend waarmee wordt gezocht in community-inhoud.
 
@@ -177,12 +177,12 @@ Als u de muis boven een opmerkingskaart houdt, worden moderatiehandelingen weerg
 
 Er zijn twee manieren om toegang te krijgen tot rapporten over studenten en bronnen voor activering.
 
-Navigeer bij de auteur naar de **Gemeenschappen, de console[van](resources.md)** Middelen, waar de enablement middelen worden beheerd, en na het selecteren van een communautaire plaats, is het mogelijk om rapporten voor te produceren
+Navigeer bij de auteur naar **Communities, [Resources console](resources.md)**, waar de enablement-bronnen worden beheerd, en na het selecteren van een communitysite, is het mogelijk om rapporten te genereren voor
 
 * Alle actiemiddelen en leerpaden
 * Eén specifieke activeringsbron of leerpad
 
-Navigeer aan de **Gemeenschappen, de console[van](reports.md)** Rapporten, en produceert rapporten volgens:
+Navigeer naar **Communities, [Reports console](reports.md)** en genereer rapporten volgens:
 
 * Toewijzingen aan actiemiddelen en leerpaden
 * Berichten naar een gemeenschapssite over een specifieke periode
@@ -205,41 +205,41 @@ Met een kleine activiteit en interactie met de Middelen bij publiceren, is het b
 
 * Meld u bij de auteur aan met beheerdersrechten.
 * Navigeer van het hoofdmenu aan **[!UICONTROL Communities]** > **[!UICONTROL Resources]**.
-* Selecteer de `Enablement Tutorial` site.
-* Selecteer het `Report` pictogram voor een overzicht van alle Middelen.
-* Selecteer een Middel en dan het `Report` pictogram voor een rapport over dat Middel.
+* Selecteer de `Enablement Tutorial`-site.
+* Selecteer het pictogram `Report` voor een overzicht van alle Middelen.
+* Selecteer een Middel en dan `Report` pictogram voor een rapport over dat Middel.
 
 Het is waarschijnlijk te vroeg om gegevens van Adobe Analytics weer te geven, wat 1 tot 12 uur kan duren. Standaard SCORM-rapportage is echter al beschikbaar.
 
-#### Rapport Ski-lesbronnen {#ski-lessons-resource-report}
+#### Resournerapport Ski Lessen {#ski-lessons-resource-report}
 
 ![chlimage_1-443](assets/chlimage_1-443.png)
 
-#### Gebruikersrapport Ski Lessen {#ski-lessons-user-report}
+#### Ski Lessen Rapport {#ski-lessons-user-report}
 
 * Selecteer **[!UICONTROL Communities > Resources]**
 
-* Kaart openen `Enablement Tutorial`
-* Kaart openen `Ski Lessons`
+* Kaart `Enablement Tutorial` openen
+* Kaart `Ski Lessons` openen
 * Selecteer `Report > User Report`
 
 ![chlimage_1-444](assets/chlimage_1-444.png)
 
-### Rapportenconsole {#reports-console}
+### Rapportconsole {#reports-console}
 
 De console van Rapporten staat voor generatie van rapporten op toe
 
-* **Toewijzingen** voor elke community-site voor activering
-* **Weergaven** voor elke communitysite
-* **Posten** voor alle communitysites
+* **Toewijzingen** voor elke community-site van enablement
+* **Weergaven** voor alle communitysites
+* **** Posts voor alle communitysites
 
 Voor rapporten over toewijzingen:
 
 * Meld u bij de auteur aan met beheerdersrechten.
 * Ga naar **[!UICONTROL Communities]** > **[!UICONTROL Reports]** > **[!UICONTROL Assignments Report]**.
-* Selecteer een **[!UICONTROL Site]** optie in het keuzemenu (selecteer `Enablement Tutorial`).
+* Selecteer een **[!UICONTROL Site]** in het keuzemenu (selecteer `Enablement Tutorial`).
 
-* Selecteren **[!UICONTROL Group]** (selecteren `Community Ski Class`)
+* Selecteer **[!UICONTROL Group]** (selecteer `Community Ski Class`)
 
 * Selecteer een **[!UICONTROL Assignment]** (selecteer `Ski Lessons`)
 

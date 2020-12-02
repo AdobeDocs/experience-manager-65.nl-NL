@@ -1,8 +1,8 @@
 ---
 title: Weergaveframework voor adaptieve en HTML5-formulieren
 seo-title: Weergaveframework voor adaptieve en HTML5-formulieren
-description: Met mobiele formulieren worden formuliersjablonen weergegeven als HTML5-formulieren. Deze formulieren gebruiken de bestanden jQuery, Backbone.js en Underscore.js voor de weergave en om scripts in te schakelen.
-seo-description: Met mobiele formulieren worden formuliersjablonen weergegeven als HTML5-formulieren. Deze formulieren gebruiken de bestanden jQuery, Backbone.js en Underscore.js voor de weergave en om scripts in te schakelen.
+description: Mobile Forms geeft formuliersjablonen weer als HTML5-formulieren. Deze formulieren gebruiken de bestanden jQuery, Backbone.js en Underscore.js voor de weergave en om scripts in te schakelen.
+seo-description: Mobile Forms geeft formuliersjablonen weer als HTML5-formulieren. Deze formulieren gebruiken de bestanden jQuery, Backbone.js en Underscore.js voor de weergave en om scripts in te schakelen.
 uuid: 183b8d71-44fc-47bf-8cb2-1cf920ffd23a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,13 +10,16 @@ topic-tags: customization
 discoiquuid: 3c2a44a7-24e7-49ee-bf18-eab0e44efa42
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '1200'
+ht-degree: 2%
 
 ---
 
 
 # Weergaveframework voor adaptieve en HTML5-formulieren {#appearance-framework-for-adaptive-and-html-forms}
 
-Forms (adaptieve formulieren en HTML5-formulieren) gebruiken [jQuery](https://jquery.com/)-, [Backbone.js](https://backbonejs.org/) - en [Underscore.js](https://underscorejs.org/) -bibliotheken voor weergave en scripts. De formulieren gebruiken ook de [jQuery UI](https://jqueryui.com/) - **widget** -architectuur voor alle interactieve elementen (zoals velden en knoppen) in het formulier. Met deze architectuur kunnen formulierontwikkelaars een uitgebreide set beschikbare jQuery-widgets en -plug-ins gebruiken in Forms. U kunt ook formulierspecifieke logica implementeren terwijl u gegevens vastlegt van gebruikers, zoals beperkingen voor leadDigits/trailDigits of afbeeldingsclausules. Formulierontwikkelaars kunnen aangepaste toepassingen maken en gebruiken om de ervaring op het gebied van gegevensvastlegging te verbeteren en gebruikersvriendelijker te maken.
+Forms (adaptieve formulieren en HTML5-formulieren) gebruiken [jQuery](https://jquery.com/), [Backbone.js](https://backbonejs.org/) en [Underscore.js](https://underscorejs.org/) bibliotheken voor weergave en scripts. De formulieren gebruiken ook de [jQuery-gebruikersinterface](https://jqueryui.com/) **Widgets**-architectuur voor alle interactieve elementen (zoals velden en knoppen) in het formulier. Met deze architectuur kunnen formulierontwikkelaars een uitgebreide set beschikbare jQuery-widgets en -plug-ins in Forms gebruiken. U kunt ook formulierspecifieke logica implementeren terwijl u gegevens vastlegt van gebruikers, zoals beperkingen voor leadDigits/trailDigits of afbeeldingsclausules. Formulierontwikkelaars kunnen aangepaste toepassingen maken en gebruiken om de ervaring op het gebied van gegevensvastlegging te verbeteren en gebruikersvriendelijker te maken.
 
 Dit artikel is bedoeld voor ontwikkelaars met voldoende kennis van jQuery- en jQuery-widgets. Het biedt inzicht in het weergaveframework en stelt ontwikkelaars in staat een alternatieve weergave voor een formulierveld te maken.
 
@@ -50,7 +53,7 @@ Hier volgen de ingestelde globale opties. Deze opties zijn beschikbaar voor elk 
   </tr>
   <tr>
    <td>screenReaderText</td>
-   <td>Schermlezers gebruiken deze waarde om informatie over het veld van commentaar te voorzien. Het formulier bevat de waarde en u kunt de waarde overschrijven.<br /> </td>
+   <td>Readers in het scherm gebruiken deze waarde om informatie over het veld van commentaar te voorzien. Het formulier bevat de waarde en u kunt de waarde overschrijven.<br /> </td>
   </tr>
   <tr>
    <td>tabIndex</td>
@@ -85,11 +88,11 @@ Hier volgen de ingestelde globale opties. Deze opties zijn beschikbaar voor elk 
 
 Naast deze opties biedt het framework andere opties die afhankelijk zijn van het type veld. De details voor de velden-specifieke opties worden hieronder vermeld.
 
-### Interactie met formulierraamwerk {#interaction-with-forms-framework}
+### Interactie met formulierframework {#interaction-with-forms-framework}
 
 Voor interactie met formulierframework activeert een widget bepaalde gebeurtenissen zodat het formulierscript kan werken. Als de widget deze gebeurtenissen niet genereert, werken sommige scripts die in het formulier voor dat veld zijn geschreven, niet.
 
-#### Gebeurtenissen geactiveerd door widget {#events-triggered-by-widget}
+#### Gebeurtenissen die worden geactiveerd door widget {#events-triggered-by-widget}
 
 <table>
  <tbody>
@@ -99,24 +102,24 @@ Voor interactie met formulierframework activeert een widget bepaalde gebeurtenis
   </tr>
   <tr>
    <td>XFA_ENTER_EVENT</td>
-   <td>Deze gebeurtenis wordt geactiveerd wanneer het veld de focus heeft. Hiermee kan het script "enter" in het veld worden uitgevoerd. De syntaxis voor het activeren van de gebeurtenis is<br /> (widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_ENTER_EVENT)<br /> </td>
+   <td>Deze gebeurtenis wordt geactiveerd wanneer het veld de focus heeft. Hiermee kan het script "enter" in het veld worden uitgevoerd. De syntaxis voor het activeren van de gebeurtenis is <br /> (widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_ENTER_EVENT)<br /> </td>
   </tr>
   <tr>
    <td>XFA_EXIT_EVENT</td>
-   <td>Deze gebeurtenis wordt geactiveerd wanneer de gebruiker het veld verlaat. Hiermee kan de engine de waarde van het veld instellen en het script "exit" uitvoeren. De syntaxis voor het activeren van de gebeurtenis is<br /> (widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_EXIT_EVENT)<br /> </td>
+   <td>Deze gebeurtenis wordt geactiveerd wanneer de gebruiker het veld verlaat. Hiermee kan de engine de waarde van het veld instellen en het script "exit" uitvoeren. De syntaxis voor het activeren van de gebeurtenis is <br /> (widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_EXIT_EVENT)<br /> </td>
   </tr>
   <tr>
    <td>XFA_CHANGE_EVENT</td>
-   <td>Deze gebeurtenis wordt geactiveerd om de engine in staat te stellen het script "change" uit te voeren dat in het veld wordt geschreven. De syntaxis voor het activeren van de gebeurtenis is<br /> (widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_CHANGE_EVENT)<br /> </td>
+   <td>Deze gebeurtenis wordt geactiveerd om de engine in staat te stellen het script "change" uit te voeren dat in het veld wordt geschreven. De syntaxis voor het activeren van de gebeurtenis is <br /> (widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_CHANGE_EVENT)<br /> </td>
   </tr>
   <tr>
    <td>XFA_CLICK_EVENT</td>
-   <td>Deze gebeurtenis wordt geactiveerd wanneer op het veld wordt geklikt. het staat de motor toe om het "klikmanuscript in werking te stellen dat op het gebied wordt geschreven. De syntaxis voor het activeren van de gebeurtenis is<br /> (widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_CLICK_EVENT)<br /> </td>
+   <td>Deze gebeurtenis wordt geactiveerd wanneer op het veld wordt geklikt. het staat de motor toe om het "klikmanuscript in werking te stellen dat op het gebied wordt geschreven. De syntaxis voor het activeren van de gebeurtenis is <br /> (widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_CLICK_EVENT)<br /> </td>
   </tr>
  </tbody>
 </table>
 
-#### API&#39;s die door widget zijn geïmplementeerd {#apis-implemented-by-widget}
+#### API&#39;s die worden geïmplementeerd door widget {#apis-implemented-by-widget}
 
 Het weergaveframework roept enkele functies van de widget aan die in de aangepaste widgets zijn geïmplementeerd. De widget moet de volgende functies implementeren:
 
@@ -135,7 +138,7 @@ Het weergaveframework roept enkele functies van de widget aan die in de aangepas
    <td>Hiermee wordt de focus op het veld geplaatst en wordt XFA_CLICK_EVENT aangeroepen.</td>
   </tr>
   <tr>
-   <td><p>markError:function(errorMessage, errorType)<br /> <br /><em>errorMessage: string </em>die de error<br /> <em>errorType vertegenwoordigt: string ("warning"/"error")</em></p> <p><strong>Opmerking</strong>: Alleen van toepassing op HTML5-formulieren.</p> </td>
+   <td><p>markError:function(errorMessage, errorType)<br /> <br /> <em>errorMessage: tekenreeks </em>die de fout vertegenwoordigt<br /> <em>errorType: string ("warning"/"error")</em></p> <p><strong>Opmerking</strong>: Alleen van toepassing op HTML5-formulieren.</p> </td>
    <td>Verzendt foutberichten en fouttype naar de widget. De widget geeft de fout weer.</td>
   </tr>
   <tr>
@@ -182,15 +185,15 @@ Alle aangepaste widgets moeten voldoen aan de bovenstaande specificaties. Als u 
   </tr>
   <tr>
    <td>value<br /> </td>
-   <td>Array met geselecteerde waarden.<br /> </td>
+   <td>Array van geselecteerde waarden.<br /> </td>
   </tr>
   <tr>
    <td>items<br /> </td>
-   <td>Array met objecten die als opties moeten worden weergegeven. Elk object bevat twee eigenschappen -<br /> save: op te slaan waarde, weergave: waarde die moet worden weergegeven.<br /> <br /> </td>
+   <td>Array met objecten die als opties moeten worden weergegeven. Elk object bevat twee eigenschappen -<br /> opslaan: op te slaan waarde, weergave: waarde die moet worden weergegeven.<br /> <br /> </td>
   </tr>
   <tr>
    <td><p>bewerkbaar</p> <p><strong>Opmerking</strong>: Alleen van toepassing op HTML5-formulieren.<br /> </p> </td>
-   <td>Als de waarde true is, wordt de aangepaste tekstinvoer ingeschakeld in de widget.<br /> </td>
+   <td>Als de waarde waar is, wordt de ingang van de douanetekst toegelaten in widget.<br /> </td>
   </tr>
   <tr>
    <td>displayValue<br /> </td>
@@ -212,11 +215,11 @@ Alle aangepaste widgets moeten voldoen aan de bovenstaande specificaties. Als u 
    <th>Beschrijving</th>
   </tr>
   <tr>
-   <td><p>addItem:<em> function(itemValues)<br /> itemValues: object met de weergave- en opslagwaarde <br /> {sDisplayVal: &lt;displayValue&gt;, sSaveVal: &lt;waarde opslaan&gt;</em></p> </td>
+   <td><p>addItem:<em> function(itemValues)<br /> itemValues: object met de weergave- en opslagwaarde <br /> {sDisplayVal: &lt;displayValue&gt;, sSaveVal: &lt;save Value&gt;}</em></p> </td>
    <td>Hiermee wordt een item aan de lijst toegevoegd.</td>
   </tr>
   <tr>
-   <td>deleteItem<em>: function(nIndex)<br /> nIndex: index van het item dat uit de lijst<br /> moet worden verwijderd </em><br /><br /> </td>
+   <td>deleteItem<em>: function(nIndex)<br /> nIndex: index van het item dat uit de lijst moet worden verwijderd<br /> </em><br /> <br /> </td>
    <td>Hiermee verwijdert u een optie uit de lijst.</td>
   </tr>
   <tr>
@@ -246,7 +249,7 @@ Alle aangepaste widgets moeten voldoen aan de bovenstaande specificaties. Als u 
   </tr>
   <tr>
    <td>values</td>
-   <td><p>Array van waarden (aan/uit/neutraal).</p> <p>Het is een array van waarden voor de verschillende toestanden van de checkButton. values[0] is the value when the state is ON, values[1] is the value when the state is OFF,<br /> values[2] is the value when the state is NEUTRAL. De lengte van de waardenarray is gelijk aan de waarde van de statusoptie.<br /> </p> </td>
+   <td><p>Array van waarden (aan/uit/neutraal).</p> <p>Het is een array van waarden voor de verschillende toestanden van de checkButton. values[0] is de waarde wanneer de staat ON is, values[1] is de waarde wanneer de staat OFF is,<br /> values[2] is de waarde wanneer de staat NEUTRAL is. De lengte van de waardenarray is gelijk aan de waarde van de statusoptie.<br /> </p> </td>
   </tr>
   <tr>
    <td>statussen</td>

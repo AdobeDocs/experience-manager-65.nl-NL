@@ -18,9 +18,9 @@ AEM 6.5 houdt zich aan de meest recente beste praktijken voor pakketbeheer en pr
 >
 >Zie voor meer informatie:
 >
->* Het [AEM artikel van de Structuur](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) van het Project in de AEM als documentatie van de Cloud Service voor hoe te om moderne AEM projecten te structureren.
->* De [AEM documentatie van Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html) van het Project voor hoe te om een nieuw AEM project te beginnen gebruikend archetype.
->* Het [Adobe Content Package Maven Plugin](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developer-tools/maven-plugin.html?lang=en#developer-tools) - artikel in de AEM als documentatie van de Cloud Service voor hoe te om AEM toepassingen op te stellen.
+>* Het [AEM artikel van de Structuur van het Project](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) in de AEM als documentatie van de Cloud Service voor hoe te om moderne AEM projecten te structureren.
+>* De [AEM documentatie van Archetype van het Project](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html) voor hoe te om een nieuw AEM project te beginnen gebruikend archetype.
+>* Het [Inhoudspakket van de Adobe inhoud Gemaakt Insteekmodule](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developer-tools/maven-plugin.html?lang=en#developer-tools) artikel in de AEM als documentatie van de Cloud Service voor hoe te om AEM toepassingen op te stellen.
 
 >
 >

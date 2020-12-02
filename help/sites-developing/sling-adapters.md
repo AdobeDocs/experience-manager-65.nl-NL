@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Sling Adapters{#using-sling-adapters}
 
-[Sling](https://sling.apache.org) biedt een [adapterpatroon](https://sling.apache.org/site/adapters.html) aan om voorwerpen gemakkelijk te vertalen die de [Aanpasbare](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) interface uitvoeren. Deze interface biedt een algemene methode [adjustTo()](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) die het object omzet in het klassetype dat als argument wordt doorgegeven.
+[](https://sling.apache.org) Slingaanbiedingen een  [adapterpatroon ](https://sling.apache.org/site/adapters.html) om voorwerpen gemakkelijk te vertalen die de  [](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) Adaptable interface uitvoeren. Deze interface biedt een algemene methode [adjustTo()](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) waarmee het object wordt omgezet in het klassetype dat als argument wordt doorgegeven.
 
 Bijvoorbeeld om een voorwerp van het Middel aan het overeenkomstige voorwerp van de Knoop te vertalen, kunt u eenvoudig doen:
 
@@ -28,17 +28,17 @@ Bijvoorbeeld om een voorwerp van het Middel aan het overeenkomstige voorwerp van
 Node node = resource.adaptTo(Node.class);
 ```
 
-## Gevallen gebruiken {#use-cases}
+## Gevallen {#use-cases} gebruiken
 
 Er zijn de volgende gebruiksgevallen:
 
 * Hiermee krijgt u implementatiespecifieke objecten.
 
-   Een op JCR gebaseerde implementatie van de algemene [`Resource`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/Resource.html) interface biedt bijvoorbeeld toegang tot het onderliggende JCR [`Node`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html).
+   Bijvoorbeeld, verleent een op JCR-Gebaseerde implementatie van generische [`Resource`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/Resource.html) interface toegang tot onderliggende JCR [`Node`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html).
 
 * Het maken van sneltoetsen voor objecten waarvoor interne contextobjecten moeten worden doorgegeven.
 
-   Bijvoorbeeld, op JCR-Gebaseerd [`ResourceResolver`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/ResourceResolver.html) houdt een verwijzing naar de verzoek [`JCR Session`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Session.html), die beurtelings voor vele voorwerpen nodig is die op die verzoekzitting, zoals [`PageManager`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html) of [`UserManager`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/security/UserManager.html)zullen werken.
+   Bijvoorbeeld, op JCR-Gebaseerd [`ResourceResolver`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/ResourceResolver.html) houdt een verwijzing naar [`JCR Session`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Session.html) van het verzoek, die beurtelings voor vele voorwerpen nodig is die op die verzoekzitting gebaseerd zullen werken, zoals [`PageManager`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html) of [`UserManager`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/security/UserManager.html).
 
 * Snelkoppeling naar services.
 
@@ -57,34 +57,34 @@ Hiervoor zijn verschillende redenen, waaronder:
 
 Het is belangrijk dat u de null-case netjes afhandelt. Voor jsp-renderingen kan het acceptabel zijn dat de jsp mislukt als dat resulteert in een leeg stuk inhoud.
 
-### Caching {#caching}
+### {#caching}
 
-Om prestaties te verbeteren, zijn de implementaties vrij om het voorwerp in het voorgeheugen onder te brengen dat van een `obj.adaptTo()` vraag is teruggekeerd. Als de waarde gelijk `obj` is, is het geretourneerde object hetzelfde.
+Om prestaties te verbeteren, zijn de implementaties vrij om het voorwerp in het voorgeheugen onder te brengen dat van een `obj.adaptTo()` vraag is teruggekeerd. Als `obj` het zelfde is, is het teruggekeerde voorwerp het zelfde.
 
 Deze caching wordt uitgevoerd voor alle `AdapterFactory` gebaseerde gevallen.
 
-Er is echter geen algemene regel: het object kan een nieuw of een bestaand object zijn. Dit betekent dat u niet op één van beide gedrag kunt vertrouwen. Daarom is het belangrijk, vooral binnen `AdapterFactory`, dat objecten in dit scenario opnieuw kunnen worden gebruikt.
+Er is echter geen algemene regel: het object kan een nieuw of een bestaand object zijn. Dit betekent dat u niet op één van beide gedrag kunt vertrouwen. Daarom is het belangrijk, vooral binnen `AdapterFactory`, dat de voorwerpen in dit scenario herbruikbaar zijn.
 
-### Hoe werkt het {#how-it-works}
+### Hoe werkt {#how-it-works}
 
-Er zijn verschillende manieren om te `Adaptable.adaptTo()` implementeren:
+Er zijn verschillende manieren waarop `Adaptable.adaptTo()` kan worden geïmplementeerd:
 
 * door het object zelf; het implementeren van de methode zelf en het toewijzen aan bepaalde objecten.
-* Door een [`AdapterFactory`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/AdapterFactory.html)object, dat willekeurige objecten kan toewijzen.
+* Door een [`AdapterFactory`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/AdapterFactory.html), die willekeurige voorwerpen in kaart kan brengen.
 
-   De voorwerpen moeten nog de `Adaptable` interface uitvoeren en moeten uitbreiden [`SlingAdaptable`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/adapter/SlingAdaptable.html) (die de `adaptTo` vraag tot een centrale adaptermanager overgaat).
+   De objecten moeten nog steeds de `Adaptable`-interface implementeren en [`SlingAdaptable`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/adapter/SlingAdaptable.html) uitbreiden (die de `adaptTo`-aanroep aan een centrale adapterbeheerder doorgeeft).
 
-   Hierdoor kunnen haken in het `adaptTo` mechanisme voor bestaande klassen, zoals `Resource`.
+   Hierdoor kunnen koppelingen naar het `adaptTo`-mechanisme voor bestaande klassen worden gebruikt, zoals `Resource`.
 
 * Een combinatie van beide.
 
-In het eerste geval kunnen de javadocs aangeven wat `adaptTo-targets` mogelijk is. Voor specifieke subklassen zoals de op JCR gebaseerde Resource is dit echter vaak niet mogelijk. In het laatste geval maken implementaties van `AdapterFactory` een bundel doorgaans deel uit van de klassen van het type private en worden deze dus niet weergegeven in een client-API, noch in javadocs. Theoretisch, zou het mogelijk zijn om tot alle `AdapterFactory` implementaties van [OSGi](/help/sites-deploying/configuring-osgi.md) de dienstruntime toegang te hebben en hun &quot;adaptables&quot;(bronnen en doelstellingen) configuraties te bekijken, maar niet om hen aan elkaar in kaart te brengen. Uiteindelijk hangt dit af van de interne logica, die moet worden gedocumenteerd. Vandaar deze verwijzing.
+In het eerste geval kunnen de javadocs aangeven wat `adaptTo-targets` mogelijk is. Voor specifieke subklassen zoals de op JCR gebaseerde Resource is dit echter vaak niet mogelijk. In het laatste geval maken implementaties van `AdapterFactory` doorgaans deel uit van de klassen van het type private van een bundel en worden ze dus niet weergegeven in een client-API, en worden ze niet vermeld in javadocs. Theoretisch, zou het mogelijk zijn om tot alle `AdapterFactory` implementaties van [OSGi](/help/sites-deploying/configuring-osgi.md) de dienstruntime toegang te hebben en hun &quot;adaptable&quot;(bronnen en doelstellingen) configuraties te bekijken, maar niet hen aan elkaar in kaart te brengen. Uiteindelijk hangt dit af van de interne logica, die moet worden gedocumenteerd. Vandaar deze verwijzing.
 
 ## Referentie {#reference}
 
-### Sling {#sling}
+### Verschuiven {#sling}
 
-[**Bronnen **](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html)worden aangepast aan:
+[**Bronnen worden**](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) aangepast aan:
 
 <table>
  <tbody>
@@ -106,11 +106,11 @@ In het eerste geval kunnen de javadocs aangeven wat `adaptTo-targets` mogelijk i
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a></td>
-   <td>Retourneert een handig te gebruiken kaart van de eigenschappen, als dit een JCR-node-based resource (of andere resource die waardekaarten ondersteunt) is. Dit kan ook (eenvoudigere) worden bereikt door gebruik te maken<br /> <code><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ResourceUtil.html#getvaluemap%28org.apache.sling.api.resource.resource%29">ResourceUtil.getValueMap(Resource)</a></code> van (Null-case, enz.).</td>
+   <td>Retourneert een handig te gebruiken kaart van de eigenschappen, als dit een JCR-node-based resource (of andere resource die waardekaarten ondersteunt) is. Kan ook (eenvoudigere) worden bereikt door <br /> <code><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ResourceUtil.html#getvaluemap%28org.apache.sling.api.resource.resource%29">ResourceUtil.getValueMap(Resource)</a></code> (behandelt ongeldige geval, enz.) te gebruiken.</td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/inherit/InheritanceValueMap.html">InheritanceValueMap</a></td>
-   <td>Uitbreiding van <a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a> waarmee de hiërarchie van bronnen kan worden gebruikt bij het zoeken naar eigenschappen.</td>
+   <td>Uitbreiding van <a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a> waarmee de hiërarchie van bronnen kan worden gebruikt wanneer u eigenschappen zoekt.</td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ModifiableValueMap.html">ModisibleValueMap</a></td>
@@ -118,11 +118,11 @@ In het eerste geval kunnen de javadocs aangeven wat `adaptTo-targets` mogelijk i
   </tr>
   <tr>
    <td><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/io/InputStream.html">InputStream</a></td>
-   <td>Retourneert de binaire inhoud van een bestandsbron (als dit een op JCR-knooppunten gebaseerde bron is en het knooppunttype <code>nt:file</code> of <code>nt:resource</code>; als dit een bundelbron is; bestandsinhoud als dit een bestandssysteembron is) of de gegevens van een binaire JCR-eigenschapbron.</td>
+   <td>Retourneert de binaire inhoud van een bestandsbron (als dit een op JCR-knooppunten gebaseerde bron is en het knooppunttype <code>nt:file</code> of <code>nt:resource</code> is; als dit een bundelbron is; bestandsinhoud als dit een bestandssysteembron is) of de gegevens van een binaire JCR-eigenschapbron.</td>
   </tr>
   <tr>
    <td><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/net/URL.html">URL</a></td>
-   <td>Retourneert een URL naar de bron (de URL van de gegevensopslagruimte van dit knooppunt als dit een op JCR-knooppunten gebaseerde bron is; jar bundle URL if this is a bundle resource; bestand-URL als dit een bestandssysteembron is).</td>
+   <td>Hiermee wordt een URL naar de bron geretourneerd (de URL van de gegevensopslagruimte van dit knooppunt als dit een op een JCR-knooppunt gebaseerde bron is; jar bundle URL if this is a bundle resource; bestand-URL als dit een bestandssysteembron is).</td>
   </tr>
   <tr>
    <td><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/io/File.html">Bestand</a></td>
@@ -137,7 +137,7 @@ In het eerste geval kunnen de javadocs aangeven wat `adaptTo-targets` mogelijk i
    <td>Als deze bron een script (bijvoorbeeld jsp-bestand) is waarvoor een scriptengine is geregistreerd met sling of als dit een servlet-resource is.</td>
   </tr>
   <tr>
-   <td><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html">String</a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/Boolean.html">Boolean</a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/Long.html">Long</a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/Double.html">Double</a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/util/Calendar.html">Calendar</a><br /> <a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Value.html"></a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html"></a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/Boolean.html"></a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/Long.html"></a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/util/Calendar.html"></a><br /> <a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Value.html">ValueString[]Boolean[]Long[]Calendar[]Calendar[]Value[]Value[]</a></td>
+   <td><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html"></a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/Boolean.html"></a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/Long.html"></a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/Double.html"></a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/util/Calendar.html"></a><br /> <a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Value.html"></a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html">StringBooleanLongDoubleCalendarValueString[]</a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/Boolean.html">Boolean[]</a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/Long.html">Long[]</a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/util/Calendar.html">Calendar[]</a><br /> <a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Value.html">Value[]</a></td>
    <td>Retourneert de waarde(n) als dit een JCR-eigenschap-gebaseerde resource is (en de value-fit).</td>
   </tr>
   <tr>
@@ -150,19 +150,19 @@ In het eerste geval kunnen de javadocs aangeven wat `adaptTo-targets` mogelijk i
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/components/Component.html">Component</a></td>
-   <td>Als dit een <code>cq:Component</code> knoopbron is.</td>
+   <td>Als dit een <code>cq:Component</code> knoopmiddel is.</td>
   </tr>  
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/designer/Design.html">Ontwerp</a></td>
-   <td>Als dit een ontwerpknooppunt (<code>cq:Page</code>) is.</td>
+   <td>Als dit een ontwerpknooppunt is (<code>cq:Page</code>).</td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Template.html">Sjabloonmodel</a></td>
-   <td>Als dit een <code>cq:Template</code> knoopbron is.</td>
+   <td>Als dit een <code>cq:Template</code> knoopmiddel is.</td>
   </tr>  
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/Blueprint.html">Blauwdruk</a></td>
-   <td>Als dit een <code>cq:Template</code> knoopbron is.</td>
+   <td>Als dit een <code>cq:Template</code> knoopmiddel is.</td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/Asset.html">Element</a></td>
@@ -174,7 +174,7 @@ In het eerste geval kunnen de javadocs aangeven wat `adaptTo-targets` mogelijk i
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/tagging/Tag.html">Tag</a></td>
-   <td>Als dit een <code>cq:Tag</code> knoopbron is.</td>
+   <td>Als dit een <code>cq:Tag</code> knoopmiddel is.</td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/security/UserManager.html">UserManager</a></td>
@@ -186,7 +186,7 @@ In het eerste geval kunnen de javadocs aangeven wat `adaptTo-targets` mogelijk i
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/api/security/user/User.html">Gebruiker</a></td>
-   <td>De gebruiker is een speciale Vergunning die kan worden voor authentiek verklaard en worden nagedacht.</td>
+   <td>De gebruiker is een speciale Authorizable die voor authentiek en kan worden verklaard.</td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/SimpleSearch.html">SimpleSearch</a></td>
@@ -206,7 +206,7 @@ In het eerste geval kunnen de javadocs aangeven wat `adaptTo-targets` mogelijk i
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/contentsync/config/package-summary.html">Config</a></td>
-   <td>Als dit een <code>cq:ContentSyncConfig</code> knoopbron is.</td>
+   <td>Als dit een <code>cq:ContentSyncConfig</code> knoopmiddel is.</td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/contentsync/config/package-summary.html">ConfigEntry</a></td>
@@ -215,7 +215,7 @@ In het eerste geval kunnen de javadocs aangeven wat `adaptTo-targets` mogelijk i
  </tbody>
 </table>
 
-[**ResourceResolver **](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ResourceResolver.html)wordt aangepast aan:
+[****](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ResourceResolver.html) ResourceResolveradapts aan:
 
 <table>
  <tbody>
@@ -262,21 +262,21 @@ In het eerste geval kunnen de javadocs aangeven wat `adaptTo-targets` mogelijk i
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/Externalizer.html">ExternalAlizer</a></td>
-   <td>Voor het extern maken van absolute URL's, zelfs met het aanvraagobject.<br /> </td>
+   <td>Voor het externaliseren van absolute URLs, zelfs met uit het verzoekvoorwerp.<br /> </td>
   </tr>
  </tbody>
 </table>
 
-[**SlingHttpServletRequest **](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/SlingHttpServletRequest.html)wordt aangepast aan:
+[****](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/SlingHttpServletRequest.html) SlingHttpServletRequestadapts aan:
 
 Geen doelstellingen nog, maar voert Aangepast uit en kon als bron in een douane AdapterFactory worden gebruikt.
 
-[**SlingHttpServletResponse **](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/SlingHttpServletResponse.html)wordt aangepast aan:
+[****](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/SlingHttpServletResponse.html) SlingHttpServletResponse past zich aan:
 
 <table>
  <tbody>
   <tr>
-   <td><a href="https://java.sun.com/j2se/1.5.0/docs/api/org/xml/sax/ContentHandler.html">ContentHandler</a><br /> (XML)</td>
+   <td><a href="https://java.sun.com/j2se/1.5.0/docs/api/org/xml/sax/ContentHandler.html">ContentHandler</a><br />  (XML)</td>
    <td>Als dit een sling rewriter reactie is.</td>
   </tr>
  </tbody>
@@ -284,7 +284,7 @@ Geen doelstellingen nog, maar voert Aangepast uit en kon als bron in een douane 
 
 #### WCM {#wcm}
 
-**[Pagina](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html)**wordt aangepast aan:
+**[Pagina&#39;s ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html)** worden aangepast aan:
 
 <table>
  <tbody>
@@ -307,7 +307,7 @@ Geen doelstellingen nog, maar voert Aangepast uit en kon als bron in een douane 
  </tbody>
 </table>
 
-**[Component](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/components/Component.html)**wordt aangepast aan:
+**[](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/components/Component.html)** Componenten worden aangepast aan:
 
 | [Resource](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) | Bron van de component. |
 |---|---|
@@ -315,7 +315,7 @@ Geen doelstellingen nog, maar voert Aangepast uit en kon als bron in een douane 
 | [Knooppunt](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Knooppunt van de component. |
 | ... | Alles waaraan de bron van de component kan worden aangepast. |
 
-**[Sjabloon](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Template.html)**wordt aangepast aan:
+**[Templateaanpassingen ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Template.html)** aan:
 
 <table>
  <tbody>
@@ -340,7 +340,7 @@ Geen doelstellingen nog, maar voert Aangepast uit en kon als bron in een douane 
 
 #### Beveiliging {#security}
 
-**De toegelaten**, **Gebruiker** en de **Groep** passen zich aan aan:
+**Toegestane**,  **** gebruikers en  **** groepen passen zich aan:
 
 | [Knooppunt](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Retourneert het thuisknooppunt van de gebruiker/groep. |
 |---|---|
@@ -348,7 +348,7 @@ Geen doelstellingen nog, maar voert Aangepast uit en kon als bron in een douane 
 
 #### DAM {#dam}
 
-**Activum** wordt aangepast aan:
+**Elementen** worden aangepast aan:
 
 | [Resource](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) | Middelen van het actief. |
 |---|---|
@@ -357,7 +357,7 @@ Geen doelstellingen nog, maar voert Aangepast uit en kon als bron in een douane 
 
 #### Tags {#tagging}
 
-**Tag** wordt aangepast aan:
+**Tags** aanpassen aan:
 
 | [Resource](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) | Bron van de tag. |
 |---|---|
@@ -366,4 +366,4 @@ Geen doelstellingen nog, maar voert Aangepast uit en kon als bron in een douane 
 
 #### Overig {#other}
 
-Daarnaast biedt Sling / JCR / OCM ook een ` [AdapterFactory](https://sling.apache.org/site/adapters.html#Adapters-AdapterFactory)` voor aangepaste OCM-objecten ([Object Content Mapping](https://jackrabbit.apache.org/object-content-mapping.html)).
+Daarnaast biedt Sling / JCR / OCM ook een ` [AdapterFactory](https://sling.apache.org/site/adapters.html#Adapters-AdapterFactory)` voor aangepaste OCM-objecten ([Objectinhoudtoewijzing](https://jackrabbit.apache.org/object-content-mapping.html)).

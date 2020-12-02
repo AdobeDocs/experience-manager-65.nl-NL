@@ -1,8 +1,8 @@
 ---
 title: Ondersteuning voor ingekapselde token
 seo-title: Ondersteuning voor ingekapselde token
-description: Meer informatie over de ondersteuning voor ingekapselde token in AEM.
-seo-description: Meer informatie over de ondersteuning voor ingekapselde token in AEM.
+description: Leer over de Encapsulated Token steun in AEM.
+seo-description: Leer over de Encapsulated Token steun in AEM.
 uuid: a7c6f269-bb5a-49ba-abef-ea029202ab6d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Ondersteuning voor ingekapselde token{#encapsulated-token-support}
+# Encapsulated Token Support{#encapsulated-token-support}
 
 ## Inleiding {#introduction}
 
@@ -36,11 +36,11 @@ De oplossing voor dit is kleverige verbindingen op het niveau van het taakverdel
 
 Als een publicatie-instantie niet beschikbaar wordt, verliezen alle gebruikers die voor die instantie zijn geverifieerd hun sessie. Dit komt omdat toegang tot de opslagplaats nodig is om het verificatiecookie te valideren.
 
-## Stateless Authentificatie met Encapsulated Token {#stateless-authentication-with-the-encapsulated-token}
+## Stateless Authentificatie met het Encapsulated Token {#stateless-authentication-with-the-encapsulated-token}
 
 De oplossing voor horizontale scalability is stateless authentificatie met het gebruik van de nieuwe Encapsulated Token steun in AEM.
 
-Het ingekapselde token is een stuk cryptografie waarmee AEM op veilige wijze verificatiegegevens offline kan maken en valideren zonder toegang te krijgen tot de gegevensopslagruimte. Op deze manier kan een verificatieverzoek worden uitgevoerd op alle publicatieexemplaren zonder dat er kleverige verbindingen nodig zijn. Het heeft ook het voordeel om authentificatieprestaties te verbeteren aangezien de bewaarplaats niet voor elk authentificatieverzoek te hoeven worden betreden.
+Het ingekapselde token is een stuk cryptografie waarmee AEM op veilige wijze verificatiegegevens offline kunt maken en valideren, zonder toegang tot de opslagplaats. Op deze manier kan een verificatieverzoek worden uitgevoerd op alle publicatieexemplaren zonder dat er kleverige verbindingen nodig zijn. Het heeft ook het voordeel om authentificatieprestaties te verbeteren aangezien de bewaarplaats niet voor elk authentificatieverzoek te hoeven worden betreden.
 
 U kunt zien hoe dit werkt in een geografisch gedistribueerde implementatie met MongoMK-auteurs en TarMK-publicatie-instanties hieronder:
 
@@ -61,47 +61,48 @@ U kunt zien hoe dit werkt in een geografisch gedistribueerde implementatie met M
 >* Vaste sessies zijn ingeschakeld, of
    >
    >
-* Gebruikers worden al in AEM gemaakt wanneer de synchronisatie start. Dit betekent dat ingekapselde tokens niet zullen worden gesteund in situaties waar de managers gebruikers tijdens het synchronisatieproces **creëren** .
+* Gebruikers worden al in AEM gemaakt wanneer de synchronisatie start. Dit betekent dat ingekapselde tokens niet zullen worden gesteund in situaties waar de managers **create** gebruikers tijdens het synchronisatieproces.
 
 
 Er zijn een paar dingen u in overweging moet nemen wanneer het vormen van Encapsulated Token:
 
-1. Wegens de cryptografie in kwestie, moeten alle instanties de zelfde sleutel HMAC hebben. Sinds AEM 6.3 wordt het sleutelmateriaal niet meer opgeslagen in de gegevensopslagruimte, maar in het feitelijke bestandssysteem. In dit verband is het de beste manier om de toetsen te repliceren om deze van het bestandssysteem van de broninstantie naar die van de doelinstantie(s) te kopiëren waarnaar u de toetsen wilt repliceren. Zie hieronder meer informatie onder &quot;Replicating the HMAC key&quot;.
+1. Wegens de cryptografie in kwestie, moeten alle instanties de zelfde sleutel HMAC hebben. Sinds AEM 6.3 wordt het sleutelmateriaal niet langer opgeslagen in de gegevensopslagruimte, maar in het eigenlijke bestandssysteem. In dit verband is het de beste manier om de toetsen te repliceren om deze van het bestandssysteem van de broninstantie naar die van de doelinstantie(s) te kopiëren waarnaar u de toetsen wilt repliceren. Zie hieronder meer informatie onder &quot;Replicating the HMAC key&quot;.
 1. Het ingekapselde token moet worden ingeschakeld. Dit kan door de Console van het Web worden gedaan.
 
-### Replicatie van de HMAC-sleutel {#replicating-the-hmac-key}
+### Replicatie van de sleutel HMAC {#replicating-the-hmac-key}
 
-De sleutel HMAC is aanwezig als binair bezit van `/etc/key` in de bewaarplaats. U kunt het afzonderlijk downloaden door de **meningsverbinding** naast het te drukken:
+De sleutel HMAC is aanwezig als binair bezit van `/etc/key` in de bewaarplaats. U kunt het afzonderlijk downloaden door de **mening** verbinding naast het te drukken:
 
 ![chlimage_1-35](assets/chlimage_1-35a.png)
 
 Als u de sleutel in meerdere instanties wilt repliceren, moet u:
 
-1. Toegang krijgen tot de AEM-instantie, doorgaans een instantie van de auteur, die het te kopiëren toetsmateriaal bevat.
-1. Zoek de `com.adobe.granite.crypto.file` bundel in het lokale bestandssysteem. Onder dit pad bijvoorbeeld:
+1. Toegang krijgen tot de AEM instantie, doorgaans een instantie van de auteur, die het te kopiëren toetsmateriaal bevat.
+1. Zoek de `com.adobe.granite.crypto.file`-bundel in het lokale bestandssysteem. Onder dit pad bijvoorbeeld:
 
-   * &lt;auteur-aem-install-dir>/crx-quickstart/launch/felix/bundle21
-   Het `bundle.info` bestand in elke map geeft de naam van de bundel aan.
+   * &lt;author-aem-install-dir>/crx-quickstart/launch/felix/bundle21
+
+   In het `bundle.info`-bestand in elke map wordt de bundelnaam weergegeven.
 
 1. Navigeer naar de gegevensmap. Bijvoorbeeld:
 
    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
-1. Kopieer de HMAC- en hoofdbestanden.
+1. Kopieer de HMAC- en master bestanden.
 1. Dan, ga naar de doelinstantie u de sleutel HMAC aan wilt dupliceren, en aan de gegevensomslag navigeren. Bijvoorbeeld:
 
    * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
 1. Plak de twee bestanden die u eerder hebt gekopieerd.
-1. [Vernieuw de Crypto Bundle](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle) als de doelinstantie reeds loopt.
+1. [Vernieuw de Crypto-](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle) bundel als de doelinstantie al wordt uitgevoerd.
 
 1. Herhaal de bovenstaande stappen voor alle gevallen waarin u de toets wilt repliceren.
 
-#### Encapsulated Token toelaten {#enabling-the-encapsulated-token}
+#### Encapsulated Token {#enabling-the-encapsulated-token} toelaten
 
 Zodra de sleutel HMAC is herhaald, kunt u Encapsulated Token via de Console van het Web toelaten:
 
 1. Wijs uw browser aan `https://serveraddress:port/system/console/configMgr`
-1. Zoek naar een ingang genoemd **Dag CRX Symbolische de Handler** van de Authentificatie en klik het.
-1. Schakel in het volgende venster het vakje Ingekapselde token-ondersteuning **** inschakelen in en druk op **Opslaan**.
+1. Zoek een ingang genoemd **Dag CRX Symbolische de Handler van de Authentificatie** en klik het.
+1. Schakel in het volgende venster het vakje **Ingekapselde tokenondersteuning inschakelen** in en druk op **Save**.
 

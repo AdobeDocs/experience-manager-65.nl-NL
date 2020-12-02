@@ -18,13 +18,13 @@ ht-degree: 0%
 ---
 
 
-# Essentiële elementen van gebruikersgroepen  {#community-group-essentials}
+# Essentiële elementen van communautaire groepen {#community-group-essentials}
 
 De eigenschap van communautaire groepen is de capaciteit voor een subcommunity dynamisch om binnen een communautaire plaats door erkende gebruikers van de publicatie en auteursmilieu&#39;s worden gecreeerd.
 
-Met ingang van [kenmerkpakket 1](deploy-communities.md#latestfeaturepack)van de Gemeenschappen is het mogelijk dat groepen in andere groepen worden genest
+Vanaf Communities [feature pack 1](deploy-communities.md#latestfeaturepack) is het mogelijk dat groepen worden genest binnen andere groepen
 
-## Essentiële elementen voor client-kant {#essentials-for-client-side}
+## Essentiële elementen voor client-side {#essentials-for-client-side}
 
 ### Lidlijst van communautaire groepen {#community-groups-member-list}
 
@@ -66,7 +66,7 @@ Met ingang van [kenmerkpakket 1](deploy-communities.md#latestfeaturepack)van de 
    <td>cq.social.hbs.communitygroups</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>sjablonen</strong></td>
    <td> /libs/social/group/components/hbs/communitygroups/communitygroups.hbs<br /> </td>
   </tr>
   <tr>
@@ -86,17 +86,17 @@ Met ingang van [kenmerkpakket 1](deploy-communities.md#latestfeaturepack)van de 
 
 * [Aanpassingen op de server](server-customize.md)
 
-### Functie Groepen {#groups-function}
+### Groepeert functie {#groups-function}
 
-Een community-sitestructuur die een functie [](functions.md#groups-function) Groepen bevat, ondersteunt het maken van nieuwe sites `community groups` vanuit de publicatie- en auteursomgevingen. De gemaakte community-groep bevat een `community groups member list` component waarin de leden van de groep worden vermeld.
+Een community-sitestructuur die een functie [Groepen](functions.md#groups-function) bevat, ondersteunt het maken van nieuwe `community groups` vanuit de publicatie- en auteursomgevingen. De gemaakte community-groep bevat een `community groups member list`-component die de leden van de groep vermeldt.
 
-Één of meerdere malplaatjes [van de](tools-groups.md)communautaire groep, die het ontwerp van de pagina(s) van de communautaire groep verstrekken, kunnen voor de functie van Groepen worden gevormd wanneer de functie aan een malplaatje [van de](sites.md) communautaire plaats wordt toegevoegd of binnen een malplaatje van de communautaire groep wordt genesteld.
+Een of meer [communitygroepssjablonen](tools-groups.md), die het ontwerp van de communitygroeppagina(&#39;s) bieden, kunnen worden geconfigureerd voor de functie Groepen wanneer de functie wordt toegevoegd aan een [communitysjabloon](sites.md) of genest binnen een communitygroepsjabloon.
 
-Het opnemen van veelvoudige communautaire groepsmalplaatjes resulteert in een keus van ontwerp dat aan de erkende gebruiker wordt voorgesteld op het ogenblik dat een nieuwe communautaire groep voor de communautaire plaats wordt gecreeerd, zoals aangetoond in de sectie over [communautaire groepen](creating-groups.md) voor auteurs.
+Het opnemen van veelvoudige communautaire groepsmalplaatjes resulteert in een keus van ontwerp dat aan de erkende gebruiker op het tijdstip wordt voorgesteld een nieuwe communautaire groep voor de communautaire plaats wordt gecreeerd, zoals aangetoond in de sectie over [communitygroepen](creating-groups.md) voor auteurs.
 
 ### Geneste groepen {#nested-groups}
 
-Met ingang van het Communautair [KP1](deploy-communities.md#latestfeaturepack)is het mogelijk dat een groepsfunctie wordt opgenomen in een groepssjabloon, zodat geneste groepen (subgemeenschappen) kunnen worden opgenomen.
+Vanaf de Gemeenschappen [FP1](deploy-communities.md#latestfeaturepack), is het mogelijk dat een functie van Groepen binnen een groepsmalplaatje wordt opgenomen, zodat genestelde groepen (subgemeenschappen) wordt toegestaan.
 
 Wanneer een communautaire plaats of groepsmalplaatje de functie van Groepen omvat, is het mogelijk:
 

@@ -1,8 +1,8 @@
 ---
 title: Webconsole
 seo-title: Webconsole
-description: Leer hoe u de AEM-webconsole kunt gebruiken.
-seo-description: Leer hoe u de AEM-webconsole kunt gebruiken.
+description: Leer hoe u de AEM webconsole kunt gebruiken.
+seo-description: Leer hoe u de AEM webconsole kunt gebruiken.
 uuid: 7856b2b3-4216-421d-a315-cd9a55936362
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,25 +11,28 @@ topic-tags: configuring
 discoiquuid: 4a33fddd-0399-40e4-8687-564fb6765b76
 translation-type: tm+mt
 source-git-commit: 1f7a45adc73b407c402a51b061632e72d97ca306
+workflow-type: tm+mt
+source-wordcount: '728'
+ht-degree: 1%
 
 ---
 
 
 # Webconsole{#web-console}
 
-De webconsole in AEM is gebaseerd op de [Apache Felix Web Management Console](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix is een communautaire inspanning om het OSGi R4-dienstenplatform uit te voeren, dat het OSGi-framework en de standaarddiensten omvat.
+De webconsole in AEM is gebaseerd op de [Apache Felix Web Management Console](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix is een communautaire inspanning om het Platform van de Dienst van OSGi R4 uit te voeren, dat het kader OSGi en de standaarddiensten omvat.
 
 >[!NOTE]
 >
 >Op de console van het Web om het even welke beschrijvingen die standaardmontages vermelden hebben op het Verschuiven gebreken.
 >
->AEM heeft zijn eigen gebreken en zodat zouden de vastgestelde gebreken van die op de console kunnen verschillen worden gedocumenteerd.
+>AEM heeft zijn eigen gebreken en zo zouden de geplaatste gebreken van die op de console kunnen verschillen worden gedocumenteerd.
 
 De console van het Web biedt een selectie lusjes voor het handhaven van de bundels OSGi aan, die omvatten:
 
-* [Configuratie](#configuration): gebruikt voor het vormen van de bundels OSGi, en is daarom het onderliggende mechanisme voor het vormen van AEM systeemparameters
+* [Configuratie](#configuration): gebruikt voor het vormen van de bundels OSGi, en is daarom het onderliggende mechanisme om AEM systeemparameters te vormen
 * [Bundels](#bundles): gebruikt voor het installeren van bundels
-* [Componenten](#components): gebruikt voor het regelen van de status van componenten die vereist zijn voor AEM
+* [Componenten](#components): gebruikt voor de controle van de status van onderdelen die vereist zijn voor AEM
 
 Alle aangebrachte wijzigingen worden onmiddellijk toegepast op het actieve systeem. U hoeft de computer niet opnieuw op te starten.
 
@@ -39,13 +42,13 @@ De console is toegankelijk vanaf `../system/console`; bijvoorbeeld:
 
 ## Configuratie {#configuration}
 
-Het lusje van de **Configuratie** wordt gebruikt voor het vormen van de bundels OSGi, en is daarom het onderliggende mechanisme voor het vormen van AEM systeemparameters.
+Het **tabblad Configuration** wordt gebruikt voor het configureren van de OSGi-bundels en is daarom het onderliggende mechanisme voor het configureren van AEM systeemparameters.
 
 >[!NOTE]
 >
->Zie Configuratie [OSGi met de Console](/help/sites-deploying/configuring-osgi.md) van het Web voor verdere details.
+>Zie [OSGi Configuratie met de Console van het Web](/help/sites-deploying/configuring-osgi.md) voor verdere details.
 
-Het tabblad **Configuratie** kan worden geopend door:
+De **tab Configuration** kan worden benaderd door:
 
 * Het vervolgkeuzemenu:
 
@@ -61,18 +64,20 @@ Er wordt een lijst met configuraties weergegeven:
 
 Er zijn twee soorten configuraties beschikbaar bij de drop-down lijsten op dit scherm:
 
-* **Met configuraties** kunt u de bestaande configuraties bijwerken. Deze hebben een Persistent Identity (PID) en kunnen:
+* ****
+ConfigurationsHiermee kunt u de bestaande configuraties bijwerken. Deze hebben een Persistent Identity (PID) en kunnen:
 
-   * standaard en integraal bij de AEM; deze zijn vereist als de waarden worden verwijderd en de standaardinstellingen worden hersteld.
+   * standaard en integraal van AEM; deze zijn vereist als de waarden worden verwijderd en de standaardinstellingen worden hersteld.
    * instanties die zijn gemaakt op basis van fabrieksconfiguraties; Deze instanties worden gemaakt door de gebruiker. Verwijderen verwijdert de instantie.
 
-* **Met fabrieksconfiguraties** kunt u een instantie van het vereiste functieobject maken.
+* **Fabrieksconfiguraties**
+Hiermee kunt u een instantie van het vereiste functieobject maken.
 
    Dit krijgt een blijvende identiteit toegewezen en wordt vervolgens vermeld in de vervolgkeuzelijst Configuraties.
 
 Als u een item in de lijst selecteert, worden de parameters met betrekking tot die configuratie weergegeven:
 
-![chlimage_1-21](assets/chlimage_1-21a.png)
+![chlimage_1-29](assets/chlimage_1-21a.png)
 
 Vervolgens kunt u de parameters naar wens bijwerken en:
 
@@ -100,7 +105,7 @@ Vervolgens kunt u de parameters naar wens bijwerken en:
 
 ## Bundels {#bundles}
 
-Het tabblad **Bundels** is het mechanisme voor de installatie van de OSGi-bundels die voor AEM zijn vereist. Het tabblad is toegankelijk op een van de volgende manieren:
+Het tabblad **Bundels** is het mechanisme voor de installatie van de OSGi-bundels die vereist zijn voor AEM. Het tabblad is toegankelijk op een van de volgende manieren:
 
 * Het vervolgkeuzemenu:
 
@@ -118,7 +123,7 @@ Met dit tabblad kunt u:
 
 * **Installeren of bijwerken**
 
-   U kunt **Bladeren** om het dossier te vinden die uw bundel bevatten en specificeren of het onmiddellijk **Begin** en op welk Niveau **van het** Begin zou moeten beginnen.
+   U kunt **Bladeren** om het dossier te vinden die uw bundel bevatten en te specificeren of het **Begin** onmiddellijk en zou moeten **Begin Niveau**.
 
 * **Opnieuw laden**
 
@@ -148,11 +153,11 @@ Met dit tabblad kunt u:
 
 >[!NOTE]
 >
->Na **Update** wordt het geadviseerd om een **Refresh Pakketten** uit te voeren.
+>Na **Update** wordt het geadviseerd om **Pakketten vernieuwen** uit te voeren.
 
-## Componenten {#components}
+## Onderdelen {#components}
 
-Op het tabblad **Componenten** kunt u de verschillende componenten in- en/of uitschakelen. Het kan worden benaderd door:
+Met het tabblad **Componenten** kunt u de verschillende componenten in- en/of uitschakelen. Het kan worden benaderd door:
 
 * Het vervolgkeuzemenu:
 

@@ -17,12 +17,12 @@ ht-degree: 18%
 # AEM 6.5 Handboek beheren {#managing}
 
 + [Gebruikershandleiding beheren](home.md)
-+ Beheren - Checklist voor beste praktijken {#managing-best-practices-checklist}
++ Beheren - Controlelijst voor aanbevolen procedures {#managing-best-practices-checklist}
    + [Projecten beheren - Checklist voor aanbevolen procedures](best-practices.md)
    + [De checklist](best-practices-checklist.md)
    + [Verklarende woordenlijst](best-practices-glossary.md)
    + [Checklist - Verdere referentie](best-practices-further-reference.md)
-+ Beheer - Verdere verwijzing {#managing-further-reference}
++ Beheren - Verdere referentie {#managing-further-reference}
    + [Richtlijnen voor hardwareaanpassing](hardware-sizing-guidelines.md)
    + [Enterprise DevOps](enterprise-devops.md)
    + [Aanbevolen werkwijzen voor SEO- en URL-beheer](seo-and-url-management.md)

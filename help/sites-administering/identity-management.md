@@ -1,6 +1,6 @@
 ---
-title: Identiteitsbeheer
-seo-title: Identiteitsbeheer
+title: Identity Management
+seo-title: Identity Management
 description: Meer informatie over identiteitsbeheer in AEM.
 seo-description: Meer informatie over identiteitsbeheer in AEM.
 uuid: d9b83cd7-c47a-41a5-baa4-bbf385d13bfd
@@ -12,26 +12,29 @@ discoiquuid: 994a5751-7267-4a61-9bc7-01440a256c65
 docset: aem65
 translation-type: tm+mt
 source-git-commit: a268b7046430cc17c8b59b9306cf3533d73bb4a2
+workflow-type: tm+mt
+source-wordcount: '1230'
+ht-degree: 0%
 
 ---
 
 
-# Identiteitsbeheer{#identity-management}
+# Identity Management{#identity-management}
 
 Individuele bezoekers van uw website kunnen alleen worden geïdentificeerd wanneer u hun de mogelijkheid biedt zich aan te melden. Er zijn verschillende redenen waarom u een aanmeldingsfunctie wilt opgeven:
 
-* [AEM](/help/communities/overview.md)Communitiesbezoekers van de site moeten zich aanmelden om inhoud naar de community te posten.
+* [AEM ](/help/communities/overview.md)Communitiesbezoekers van de website moeten zich aanmelden om inhoud aan de community te plaatsen.
 * [Gesloten gebruikersgroepen](/help/sites-administering/cug.md)
 
    Mogelijk moet u de toegang tot uw website (of gedeelten ervan) beperken tot specifieke bezoekers.
 
-* [Personalisatie](/help/sites-administering/personalization.md) bezoekers toestaan bepaalde aspecten van hoe zij tot uw website toegang hebben te vormen.
+* [](/help/sites-administering/personalization.md) Persoonlijk makenToestaan dat bezoekers bepaalde aspecten van de toegang tot uw website configureren.
 
-De functionaliteit voor aanmelden (en uitloggen) wordt geleverd door een [account met een **profiel **](#profiles-and-user-accounts), dat aanvullende informatie bevat over de geregistreerde bezoeker (gebruiker). De eigenlijke registratie- en vergunningsprocedures kunnen verschillen:
+De functionaliteit voor aanmelden (en uitloggen) wordt geleverd door een [account met een **Profiel**](#profiles-and-user-accounts), die aanvullende informatie bevat over de geregistreerde bezoeker (gebruiker). De eigenlijke registratie- en vergunningsprocedures kunnen verschillen:
 
 * Zelfregistratie vanaf de website
 
-   Een [Community Site](/help/communities/sites-console.md) kan zo worden geconfigureerd dat bezoekers zichzelf kunnen registreren of zich kunnen aanmelden bij hun Facebook- of Twitter-accounts.
+   Een [Community Site](/help/communities/sites-console.md) kan zo worden geconfigureerd dat bezoekers zich zelf kunnen registreren of zich kunnen aanmelden bij hun Facebook- of Twitter-accounts.
 
 * Registratieverzoek van de website
 
@@ -50,13 +53,14 @@ Aanvullende functionaliteit kan worden geconfigureerd of ontwikkeld:
 
 >[!NOTE]
 >
->De informatie die in het profiel is opgegeven, kan ook worden gebruikt om de gebruiker gerichte inhoud te bieden via [segmenten](/help/sites-administering/campaign-segmentation.md) en [campagnes](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md).
+>De informatie in het profiel kan ook worden gebruikt om de gebruiker gerichte inhoud via [Segmenten](/help/sites-administering/campaign-segmentation.md) en [Campagnes](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md) te voorzien.
 
-## Registratieformulieren {#registration-forms}
+## Forms {#registration-forms} registreren
 
-Met een [formulier](/help/sites-authoring/default-components.md#form-component) kunt u de registratiegegevens verzamelen en vervolgens het nieuwe account en profiel genereren.
+Een [formulier](/help/sites-authoring/default-components.md#form-component) kan worden gebruikt om de registratiegegevens te verzamelen en vervolgens het nieuwe account en profiel te genereren.
 
-Gebruikers kunnen bijvoorbeeld een nieuw profiel aanvragen met de pagina Geometrixx`http://localhost:4502/content/geometrixx-outdoors/en/user/register.html`
+Gebruikers kunnen bijvoorbeeld een nieuw profiel aanvragen met de pagina Geometrixx
+`http://localhost:4502/content/geometrixx-outdoors/en/user/register.html`
 
 ![registerform](assets/registerform.png)
 
@@ -70,7 +74,7 @@ De nieuwe account is ook zichtbaar in de [gebruikersconsole](/help/sites-adminis
 
 De login component kan worden gebruikt om de login informatie te verzamelen, dan het login proces te activeren.
 
-Hierdoor krijgt de bezoeker de standaardvelden **Gebruikersnaam** en **Wachtwoord**, met de knop **Aanmelden** om het aanmeldingsproces te activeren wanneer de gegevens worden ingevoerd.
+Dit verstrekt de bezoeker de standaardgebieden van **Gebruikersnaam** en **Wachtwoord**, met een **Login** knoop om het login proces te activeren wanneer de geloofsbrieven worden ingegaan.
 
 Gebruikers kunnen zich bijvoorbeeld aanmelden of een nieuwe account maken met de optie **Aanmelden** op de werkbalk Geometrixx, die de pagina gebruikt:
 
@@ -78,11 +82,11 @@ Gebruikers kunnen zich bijvoorbeeld aanmelden of een nieuwe account maken met de
 
 ![aanmelden](assets/login.png)
 
-## Afmelden {#logging-out}
+## {#logging-out} afmelden
 
-Aangezien er een login mechanisme is, wordt een logout mechanisme ook vereist. Dit is beschikbaar als de optie **Afmelden** in Geometrixx.
+Aangezien er een login mechanisme is, wordt een logout mechanisme ook vereist. Dit is beschikbaar als **Afmelden** optie in Geometrixx.
 
-## Een profiel weergeven en bijwerken {#viewing-and-updating-a-profile}
+## Een profiel {#viewing-and-updating-a-profile} weergeven en bijwerken
 
 Afhankelijk van uw registratieformulier kan de bezoeker gegevens in zijn profiel hebben geregistreerd. Zij moeten dit in een later stadium kunnen bekijken en/of bijwerken. Dit kan in een vergelijkbare vorm gebeuren; bijvoorbeeld in Geometrixx:
 
@@ -90,51 +94,52 @@ Afhankelijk van uw registratieformulier kan de bezoeker gegevens in zijn profiel
 http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
 ```
 
-Als u de details van uw profiel wilt zien, klikt u op **Mijn profiel** in de rechterbovenhoek van een pagina. bijvoorbeeld met de `admin` account:
+Als u de details van uw profiel wilt zien, klikt u op **Mijn profiel** in de rechterbovenhoek van een pagina. bijvoorbeeld met de `admin`-account:
 `http://localhost:4502/home/users/a/admin/profile.form.html/content/geometrixx-outdoors/en/user/profile.html.`
 
-U kunt een ander profiel bekijken gebruikend de [cliëntcontext](/help/sites-administering/client-context.md) (op het auteursmilieu en met voldoende voorrechten):
+U kunt een ander profiel bekijken gebruikend [cliëntcontext](/help/sites-administering/client-context.md) (op het auteursmilieu en met voldoende voorrechten):
 
-1. Open een pagina; Bijvoorbeeld de pagina Geometrixx:
+1. Open een pagina; bijvoorbeeld de pagina Geometrixx:
 
    `http://localhost:4502/cf#/content/geometrixx/en.html`
 
 1. Klik op **Mijn profiel** in de rechterbovenhoek. U ziet het profiel van uw huidige account; bijvoorbeeld de beheerder.
-1. Druk **controle-alt-C** om de cliëntcontext te openen.
-1. Klik in de linkerbovenhoek van de clientcontext op de knop **Profiel** laden.
+1. Druk op **control-alt-C** om de clientcontext te openen.
+1. Klik in de linkerbovenhoek van de clientcontext op de knop **Een profiel laden**.
 
    ![](do-not-localize/loadprofile.png)
 
 1. Selecteer een ander profiel in de vervolgkeuzelijst in het dialoogvenster. bijvoorbeeld **Alison Parker**.
-1. Click **OK**.
+1. Klik **OK**.
 1. Klik nogmaals op **Mijn profiel**. Het formulier wordt bijgewerkt met de gegevens van Alison.
 
    ![winstbejag](assets/profilealison.png)
 
-1. U kunt nu Profiel **** bewerken of Wachtwoord **** wijzigen gebruiken om de gegevens bij te werken.
+1. U kunt **Profiel bewerken** of **Wachtwoord wijzigen** nu gebruiken om de details bij te werken.
 
 ## Velden toevoegen aan de profieldefinitie {#adding-fields-to-the-profile-definition}
 
 U kunt velden toevoegen aan de profieldefinitie. U kunt bijvoorbeeld het veld Favoriete kleur toevoegen aan het profiel Geometrixx:
 
-1. Navigeer vanuit de websiteconsole naar Geometrixx Outdoor Site > Engels > Gebruiker > Mijn profiel.
+1. Navigeer vanuit de websiteconsole naar Geometrixx Outdoors Site > Engels > Gebruiker > Mijn profiel.
 1. Dubbelklik op de pagina **Mijn profiel** om deze te openen voor bewerking.
-1. Vouw de sectie **Formulier** uit op het tabblad **** Componenten van sidekick.
-1. Sleep een **vervolgkeuzelijst** van Help naar het formulier, net onder het veld **Over mij** .
+1. Vouw op het tabblad **Componenten** van sidekick de sectie **Form** uit.
+1. Sleep een **vervolgkeuzelijst** van secundair naar het formulier, net onder het veld **Informatie over mij**.
 1. Dubbelklik op de component **Vervolgkeuzelijst** om het dialoogvenster voor configuratie te openen en voer de volgende gegevens in:
 
-   * **Naam** element - `favoriteColor`
-   * **Titel** - `Favorite Color`
-   * **Items** - meerdere kleuren toevoegen als items
-   Klik op **OK** om op te slaan.
+   * **Naam**  element-  `favoriteColor`
+   * **Titel** -  `Favorite Color`
+   * **Items**  - meerdere kleuren toevoegen als items
 
-1. Sluit de pagina, ga terug naar de console van **Websites** en activeer de Mijn pagina van het Profiel.
+   Klik **OK** om op te slaan.
+
+1. Sluit de pagina en ga aan **Websites** console terug en activeer de Mijn pagina van het Profiel.
 
    De volgende keer dat u een profiel weergeeft, kunt u een favoriete kleur selecteren:
 
    ![aparkerfavcolor](assets/aparkerfavcolour.png)
 
-   Het veld wordt opgeslagen in de sectie **Profiel** van de desbetreffende gebruikersaccount:
+   Het veld wordt opgeslagen onder de sectie **profile** van de desbetreffende gebruikersaccount:
 
    ![aparkercrxdeliet](assets/aparkercrxdelite.png)
 
@@ -158,16 +163,16 @@ Dit gebeurt met:
 
    Handelingen met betrekking tot de staten beheren.
 
-Er kunnen meerdere statussen worden gedefinieerd; Bijvoorbeeld in Geometrixx zijn deze:
+Er kunnen meerdere statussen worden gedefinieerd; in de Geometrixx zijn bijvoorbeeld :
 
 * zich abonneren (of het afmelden) op berichten op nieuwsbrieven of commentaardraden
-* een verbinding met een vriend toevoegen en verwijderen
+* toevoegen en verwijderen van een verbinding met een vriend
 
-### Providers {#state-providers}
+### Providers van de staat {#state-providers}
 
 Een staatsleverancier beheert de huidige status van het betrokken eigendom, samen met de overgangen tussen de twee mogelijke statussen.
 
-De leveranciers van de staat worden uitgevoerd als componenten, zodat kan voor uw project worden aangepast. In Geometrixx omvatten deze:
+De leveranciers van de staat worden uitgevoerd als componenten, zodat kan voor uw project worden aangepast. In de Geometrixx omvatten deze:
 
 * Onderwerp gebruikersforum/abonneeforum
 * Vriend toevoegen/verwijderen
@@ -180,13 +185,13 @@ Er is een workflow nodig om de acties met betrekking tot de staten uit te voeren
 
 ## Profielen en gebruikersaccounts {#profiles-and-user-accounts}
 
-Profielen worden in de inhoudsopslagplaats opgeslagen als onderdeel van[de gebruikersaccount](/help/sites-administering/user-group-ac-admin.md).
+Profielen worden opgeslagen in de inhoudsopslagplaats als onderdeel van de gebruikersaccount[a1/>.](/help/sites-administering/user-group-ac-admin.md)
 
 Het profiel is te vinden onder `/home/users/geometrixx`:
 
 ![chlimage_1-138](assets/chlimage_1-138.png)
 
-Bij een standaardinstallatie (auteur of publicatie) heeft iedereen toegang tot de volledige profielgegevens van alle gebruikers. iedereen is een &quot;*ingebouwde groep die automatisch alle bestaande gebruikers en groepen bevat. De ledenlijst kan niet worden bewerkt*.&quot;
+Bij een standaardinstallatie (auteur of publicatie) heeft iedereen toegang tot de volledige profielgegevens van alle gebruikers. iedereen is een &quot;*Ingebouwde groep die automatisch alle bestaande gebruikers en groepen omvat. De lijst met leden kan niet worden bewerkt*&quot;.
 
 Deze toegangsrechten worden bepaald door volgende vervangingsACL:
 
@@ -199,7 +204,7 @@ Dat maakt het mogelijk:
 
 Als deze toegang niet geschikt is voor uw installatie, kunt u deze standaardinstellingen wijzigen.
 
-U doet dit op het tabblad **[Toegangsbeheer](/help/sites-administering/user-group-ac-admin.md#access-right-management)**:
+Dit kan worden gedaan gebruikend **[Toegangsbeheer](/help/sites-administering/user-group-ac-admin.md#access-right-management)** tabel:
 
 ![aclmanager](assets/aclmanager.png)
 
@@ -207,7 +212,7 @@ U doet dit op het tabblad **[Toegangsbeheer](/help/sites-administering/user-grou
 
 Er is ook een reeks profielcomponenten beschikbaar waarmee u de profielvereisten voor uw site kunt definiëren.
 
-### Veld voor gecontroleerd wachtwoord {#checked-password-field}
+### Veld {#checked-password-field} voor gecontroleerd wachtwoord
 
 Deze component bevat twee velden voor:
 
@@ -230,7 +235,7 @@ Met deze component kan de gebruiker een gedetailleerde naam invoeren.
 
 ![dc_profiles_detailedname](assets/dc_profiles_detailedname.png)
 
-### Profiel Geslacht {#profile-gender}
+### Profiel van geslacht {#profile-gender}
 
 Met deze component kan de gebruiker zijn geslacht invoeren.
 

@@ -1,8 +1,8 @@
 ---
-title: Inleiding tot het AEM-platform
-seo-title: Inleiding tot het AEM-platform
-description: Dit artikel biedt een algemeen overzicht van het AEM-platform en de belangrijkste componenten ervan.
-seo-description: Dit artikel biedt een algemeen overzicht van het AEM-platform en de belangrijkste componenten ervan.
+title: Inleiding tot het AEM Platform
+seo-title: Inleiding tot het AEM Platform
+description: Dit artikel biedt een algemeen overzicht van het AEM en de belangrijkste componenten ervan.
+seo-description: Dit artikel biedt een algemeen overzicht van het AEM en de belangrijkste componenten ervan.
 uuid: 214d4c49-1f5c-432c-a2c0-c1fbdceee716
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,21 +12,24 @@ discoiquuid: fccf9a0f-ebab-45ab-8460-84c86b3c4192
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/introduction-to-oak
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '789'
+ht-degree: 0%
 
 ---
 
 
-# Inleiding tot het AEM-platform{#introduction-to-the-aem-platform}
+# Inleiding tot het AEM Platform{#introduction-to-the-aem-platform}
 
-Het AEM-platform in AEM 6 is gebaseerd op Apache Jackrabbit Oak.
+Het AEM platform in AEM 6 is gebaseerd op Apache Jackrabbit Oak.
 
 Apache Jackrabbit Oak is een poging om een schaalbare en krachtige hiërarchische opslagplaats voor inhoud te implementeren die als basis kan dienen voor moderne websites van wereldklasse en andere veeleisende inhoudstoepassingen.
 
-Het is de opvolger van Jackrabbit 2 en wordt door AEM 6 gebruikt als standaard backend voor zijn inhoudgegevensopslagplaats, CRX.
+Het is de opvolger van Jackrabbit 2 en wordt door AEM 6 gebruikt als standaard backend voor zijn inhoudsbewaarplaats, CRX.
 
 ## Ontwerpbeginselen en -doelstellingen {#design-principles-and-goals}
 
-eikenhout implementeert de specificatie [JSR-283](https://www.day.com/day/en/products/jcr/jsr-283.html) (JCR 2.0). De belangrijkste ontwerpdoelstellingen zijn:
+Met eikenhout wordt de [JSR-283](https://www.day.com/day/en/products/jcr/jsr-283.html) (JCR 2.0)-specificatie geïmplementeerd. De belangrijkste ontwerpdoelstellingen zijn:
 
 * Betere ondersteuning voor grote opslagplaatsen
 * Meerdere gedistribueerde clusterknooppunten voor hoge beschikbaarheid
@@ -53,7 +56,7 @@ Met de Oak Core voegt u verschillende lagen toe aan de opslaglaag:
 * Zoeken en indexeren
 * Waarneming
 
-### Oak JCR {#oak-jcr}
+### JCR {#oak-jcr}
 
 Het hoofddoel van het JCR voor de eik is om de semantische eigenschappen van het JCR om te zetten in boombewerkingen. Zij is ook verantwoordelijk voor:
 
@@ -114,23 +117,23 @@ Bij MongoDB-opslag worden gegevens aan een document toegevoegd met elke wijzigin
 
 Gegevens over actieve en inactieve clusterknooppunten worden in de database bewaard om clusterbewerkingen te vergemakkelijken.
 
-Een standaard AEM-clusterinstallatie met MongoDB-opslag:
+Een standaard AEM clusterinstallatie met MongoDB-opslag:
 
 ![chlimage_1-85](assets/chlimage_1-85.png)
 
 ## Wat is er anders dan Jackrabbit 2? {#what-is-different-from-jackrabbit}
 
-Omdat eiken is ontworpen om achterwaarts compatibel te zijn met de JCR 1.0-standaard, zijn er vrijwel geen wijzigingen op gebruikersniveau. Er zijn echter enkele merkbare verschillen waarmee u rekening moet houden bij het instellen van een AEM-installatie op basis van een eikel:
+Omdat eiken is ontworpen om achterwaarts compatibel te zijn met de JCR 1.0-standaard, zijn er vrijwel geen wijzigingen op gebruikersniveau. Er zijn echter enkele merkbare verschillen waarmee u rekening moet houden bij het instellen van een op een eik gebaseerde AEM-installatie:
 
 * Met Eak worden niet automatisch indexen gemaakt. Daarom moeten aangepaste indexen worden gemaakt wanneer dat nodig is.
 * In tegenstelling tot Jackrabbit 2, waar sessies altijd de meest recente status van de opslagplaats weerspiegelen, waarbij een sessie voor eik een stabiele weergave van de opslagplaats weerspiegelt vanaf het moment dat de sessie werd verkregen. Dit komt door het MVCC-model waarop eiken is gebaseerd.
 * SNS (Same Name siblings) wordt niet ondersteund in Oak.
 
-## Overige documentatie over het platform {#other-platform-related-documentation}
+## Overige documentatie over Platform {#other-platform-related-documentation}
 
-Raadpleeg ook de volgende artikelen voor meer informatie over het AEM-platform:
+Raadpleeg ook de volgende artikelen voor meer informatie over het AEM platform:
 
-* [Knooppuntenwinkels en gegevensopslag configureren in AEM 6](/help/sites-deploying/data-store-config.md)
+* [Knooppuntenopslag en gegevensopslag configureren in AEM 6](/help/sites-deploying/data-store-config.md)
 * [Oak-query&#39;s en indexering](/help/sites-deploying/queries-and-indexing.md)
 * [Opslagelementen in AEM 6](/help/sites-deploying/storage-elements-in-aem-6.md)
 * [AEM met MongoDB](/help/sites-deploying/aem-with-mongodb.md)

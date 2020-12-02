@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: b97abfc9-62e6-470c-bb86-086e662c8091
 translation-type: tm+mt
 source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
+workflow-type: tm+mt
+source-wordcount: '41'
+ht-degree: 0%
 
 ---
 
@@ -19,6 +22,6 @@ source-git-commit: d6c8bbb9aa763a2eb6660b6b6755aba75241e394
 
 **[Clientlibs toevoegen](add-clientlibs.md)**
 
-Op dit punt is het mogelijk om communautaire eigenschappen in de zandbak naast het gebruiken van [wij-Detailhandel Gemeenschap](../../help/sites-developing/we-retail.md), de [Communautaire Gids](components-guide.md) van Componenten en [eigenschapessentiële](essentials.md) ter referentie te onderzoeken.
+Op dit punt is het mogelijk om communautaire eigenschappen in de zandbak naast het gebruiken van [Wij-kleinhandel Gemeenschap](../../help/sites-developing/we-retail.md), [Communautaire Gids van Componenten](components-guide.md) en [eigenschapessentiële als](essentials.md) ter verwijzing te onderzoeken.
 
 

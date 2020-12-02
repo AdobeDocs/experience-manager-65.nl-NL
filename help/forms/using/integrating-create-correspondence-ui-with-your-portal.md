@@ -11,11 +11,14 @@ discoiquuid: 0d3bb98e-7139-4d8e-b110-6ebd11debda1
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+workflow-type: tm+mt
+source-wordcount: '432'
+ht-degree: 3%
 
 ---
 
 
-# De interface Correspondentie maken integreren met uw aangepaste portal{#integrating-create-correspondence-ui-with-your-custom-portal}
+# Integratie van de interface Correspondentie maken met uw aangepaste portal{#integrating-create-correspondence-ui-with-your-custom-portal}
 
 ## Overzicht {#overview}
 
@@ -34,15 +37,15 @@ Het aangepaste portaal bereidt bijvoorbeeld de URL voor als\
 
 >[!NOTE]
 >
->Het roepen op een dergelijke manier is niet veilig aangezien de noodzakelijke parameters als GET verzoek worden overgegaan, door het zelfde (duidelijk zichtbare) in URL bloot te stellen.
+>Op deze manier aanroepen is niet veilig omdat de noodzakelijke parameters als een verzoek van de GET worden doorgegeven, door het zelfde (duidelijk zichtbare) in URL toegankelijk te maken.
 
 >[!NOTE]
 >
 >Voordat u de toepassing Correspondentie maken aanroept, slaat u de gegevens op en uploadt u deze om de interface Correspondentie maken op de opgegeven dataURL aan te roepen. Dit zou of van het douaneportaal zelf of door een ander achtereindeproces kunnen worden gedaan.
 
-## Inline op gegevens gebaseerde aanroeping {#inline-data-based-invocation}
+## Inline op gegevens gebaseerde aanroep {#inline-data-based-invocation}
 
-Een andere (en veiligere) manier om de toepassing Create Correspondence aan te roepen zou kunnen zijn om de URL eenvoudig te raken op https://&#39;[server]:[port]&#39;/[contextPath]/aem/forms/createcorrespondence.html, terwijl het verzenden van de parameters en de gegevens om de Create toepassing van de Correspondentie als POST- verzoek (het verbergen van hen voor de eindgebruiker) te roepen. Dit betekent ook dat u nu de XML-gegevens voor de toepassing Correspondentie maken inline kunt doorgeven (als onderdeel van hetzelfde verzoek, met de parameter cmData), wat niet mogelijk/ideaal was in de vorige aanpak.
+Een andere (en veiligere) manier om de Create toepassing van de Correspondentie te roepen zou kunnen zijn eenvoudig URL op https://&#39;[server]:[port]&#39;/[contextPath]/aem/forms/createcorrespondence.html te raken, terwijl het verzenden van de parameters en de gegevens om de Create toepassing van de Correspondentie als een verzoek van de POST te roepen (hen verbergen van de eindgebruiker). Dit betekent ook dat u nu de XML-gegevens voor de toepassing Correspondentie maken inline kunt doorgeven (als onderdeel van hetzelfde verzoek, met de parameter cmData), wat niet mogelijk/ideaal was in de vorige aanpak.
 
 ### Parameters voor het opgeven van de letter {#parameters-for-specifying-letter}
 
@@ -53,7 +56,7 @@ Een andere (en veiligere) manier om de toepassing Create Correspondence aan te r
 
 De volgorde van parameters in de tabel geeft de voorkeur aan parameters die worden gebruikt voor het laden van de letter.
 
-### Parameters voor het opgeven van de XML-gegevensbron {#parameters-for-specifying-the-xml-data-source}
+### Parameters om de XML-gegevensbron {#parameters-for-specifying-the-xml-data-source} op te geven
 
 <table>
  <tbody>

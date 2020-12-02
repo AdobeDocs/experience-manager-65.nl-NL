@@ -146,7 +146,7 @@ Als het aantal te verplaatsen pagina’s de drempelwaarde overschrijdt, wordt de
 >* [Pagina&#39;s maken en indelen](/help/sites-authoring/managing-pages.md)
 >* [Actieve kopieën maken en synchroniseren](/help/sites-administering/msm-livecopy.md)
 >* [E-mail configureren in Experience Manager](/help/sites-administering/notification.md).
->* [Metagegevens](/help/assets/metadata.md#import-metadata)van elementen importeren.
->* [Metagegevens](/help/assets/metadata.md#export-metadata)van elementen exporteren.
+>* [Metagegevens](/help/assets/metadata.md#import-metadata) van elementen importeren.
+>* [Metagegevens](/help/assets/metadata.md#export-metadata) van elementen exporteren.
 >* [Connected Assets gebruiken om DAM-assets te delen vanuit externe implementaties](/help/assets/use-assets-across-connected-assets-instances.md).
 

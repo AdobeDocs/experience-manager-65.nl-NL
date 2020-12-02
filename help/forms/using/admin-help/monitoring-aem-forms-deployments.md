@@ -1,8 +1,8 @@
 ---
-title: Implementaties van AEM-formulieren controleren
-seo-title: Implementaties van AEM-formulieren controleren
-description: U kunt de implementatie van AEM-formulieren zowel op systeemniveau als op intern niveau controleren. Meer informatie over het controleren van AEM-formulierimplementaties in dit document.
-seo-description: U kunt de implementatie van AEM-formulieren zowel op systeemniveau als op intern niveau controleren. Meer informatie over het controleren van AEM-formulierimplementaties in dit document.
+title: Implementaties van AEM controleren
+seo-title: Implementaties van AEM controleren
+description: U kunt AEM formulierimplementaties zowel op systeemniveau als op intern niveau controleren. Meer informatie over het controleren AEM formulierimplementaties in dit document.
+seo-description: U kunt AEM formulierimplementaties zowel op systeemniveau als op intern niveau controleren. Meer informatie over het controleren AEM formulierimplementaties in dit document.
 uuid: 032b7a93-3069-4ad5-a8c6-4c160f290669
 contentOwner: admin
 content-type: reference
@@ -18,18 +18,18 @@ ht-degree: 0%
 ---
 
 
-# Implementaties van AEM-formulieren controleren {#monitoring-aem-forms-deployments}
+# Implementaties van AEM controleren {#monitoring-aem-forms-deployments}
 
-U kunt de implementatie van AEM-formulieren zowel op systeemniveau als op intern niveau controleren. U kunt specialistische beheersinstrumenten zoals HP OpenView, IBM Tivoli, en CA UniCenter en een derdeJMX monitor gebruiken genoemd *JConsole* om de activiteit van Java specifiek te controleren. De implementatie van een monitoringstrategie verbetert de beschikbaarheid, betrouwbaarheid en prestaties van uw AEM-formulieren.
+U kunt AEM formulierimplementaties zowel op systeemniveau als op intern niveau controleren. U kunt specialistische beheersinstrumenten zoals HP OpenView, IBM Tivoli, en CA UniCenter en een derdeJMX monitor gebruiken genoemd *JConsole* om Java activiteit specifiek te controleren. De implementatie van een monitoringstrategie verbetert de beschikbaarheid, betrouwbaarheid en prestaties van uw AEM formulieren.
 
-Voor meer informatie over het controleren van AEM vormplaatsingen, zie [Een technische gids voor het controleren van AEM vormplaatsingen](https://www.adobe.com/devnet/livecycle/pdfs/lc_monitoring_wp_ue.pdf).
+Zie [Een technische handleiding voor het bewaken van de implementatie van AEM formulieren](https://www.adobe.com/devnet/livecycle/pdfs/lc_monitoring_wp_ue.pdf) voor meer informatie over het controleren van de implementatie van AEM formulieren.
 
-## Bewaking met behulp van MBeans {#monitoring-using-mbeans}
+## Bewaking met behulp van MBans {#monitoring-using-mbeans}
 
-AEM-formulieren bieden twee geregistreerde MB&#39;s die navigatie- en statistische informatie bieden. Dit zijn de enige MBeans die voor integratie en inspectie worden gesteund:
+AEM formulieren bieden twee geregistreerde MB&#39;s die navigatie- en statistische informatie verschaffen. Dit zijn de enige MBeans die voor integratie en inspectie worden gesteund:
 
-* **ServiceStatistic:** Dit MBean verstrekt informatie over de naam van de Dienst en zijn versie.
-* **OperationStatistic:** Dit MBean verstrekt de statistiek van de dienst van elke vormserver. Dit is waar de beheerders informatie over een bepaalde dienst zoals oproepingstijd, aantal fouten, etc. kunnen krijgen.
+* **ServiceStatistic:** Deze MBean verstrekt informatie over de naam van de Dienst en zijn versie.
+* **OperationStatistic:** Deze MBean biedt de statistiek van de service van elke formulierserver. Dit is waar de beheerders informatie over een bepaalde dienst zoals oproepingstijd, aantal fouten, etc. kunnen krijgen.
 
 ### ServiceStatisticMbean, openbare interfaces {#servicestatisticmbean-public-interfaces}
 
@@ -41,7 +41,7 @@ Deze openbare interfaces van ServiceStatistic MBean kunnen voor testdoeleinden w
  public int getMinorVersion();
 ```
 
-### Openbare interfaces van OperationStatisticMbean {#operationstatisticmbean-public-interfaces}
+### Openbare interfaces OperationStatisticMbean {#operationstatisticmbean-public-interfaces}
 
 Deze openbare interfaces van OperationStatistic MBean kunnen voor testdoeleinden worden betreden:
 
@@ -75,7 +75,7 @@ Met behulp van een JMX-console (JConsole) zijn statistieken van OperationStatist
 
 **MBean tree**
 
-**Naam Adobe-domein:** Afhankelijk van de toepassingsserver. Als het domein niet wordt gedefinieerd door de toepassingsserver, wordt standaard adobe.com gebruikt.
+**Domeinnaam Adobe:** is afhankelijk van de toepassingsserver. Als het domein niet wordt gedefinieerd door de toepassingsserver, wordt standaard adobe.com gebruikt.
 
 **ServiceType:** AdobeService is de naam die wordt gebruikt om alle services weer te geven.
 
@@ -85,23 +85,23 @@ Met behulp van een JMX-console (JConsole) zijn statistieken van OperationStatist
 
 **Bewerkingsstatistieken**
 
-**Aanroepingstijd:** Tijd die nodig is om de methode uit te voeren. Dit omvat niet de tijd het verzoek in series wordt vervaardigd, van cliënt aan server wordt overgebracht, en deserialized.
+**Inroeping Tijd:** Tijd die voor de uitvoering van de methode wordt genomen. Dit omvat niet de tijd het verzoek in series wordt vervaardigd, van cliënt aan server wordt overgebracht, en deserialized.
 
-**Aantal aanroepen:** Het aantal tijden de dienst wordt aangehaald.
+**Aantal aanroepen:** het aantal tijden de dienst wordt aangehaald.
 
 **Gemiddelde aanroepingstijd:** Gemiddelde tijd van alle aanroepen die zijn uitgevoerd sinds de server is gestart.
 
-**Maximale aanroepingstijd:** De duur van de langste aanroep die is uitgevoerd sinds de server is gestart.
+**Max. aanroepingstijd:** de duur van de langste aanroep die is uitgevoerd sinds de server is gestart.
 
-**Minimale aanroepingstijd:** De duur van de kortste aanroep die is uitgevoerd sinds de server is gestart.
+**Minimale aanroepingstijd:** de duur van de kortste aanroeping die sinds de server werd begonnen is uitgevoerd.
 
-**Aantal uitzonderingen:** Aantal oproepen die tot mislukkingen hebben geleid.
+**Aantal uitzonderingen:** aantal aanroepen die tot mislukkingen hebben geleid.
 
-**Uitzonderingsbericht:** Het foutbericht van de laatste uitzondering die is opgetreden.
+**Uitzonderingsbericht:** het foutbericht van de laatste uitzondering die is opgetreden.
 
-**Datum laatste monsterneming:** De datum van de laatste aanroeping.
+**Datum en tijd laatste monsterneming:** de datum van de laatste aanroeping.
 
-**Tijdeenheid:** De standaardwaarde is millisecond.
+**Tijdeenheid:** Standaard is milliseconde.
 
 Voor JMX-bewaking hebben de toepassingsservers doorgaans een bepaalde configuratie nodig. Raadpleeg de documentatie bij de toepassingsserver voor meer informatie.
 

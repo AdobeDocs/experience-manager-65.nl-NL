@@ -10,15 +10,18 @@ discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 docset: aem65
 translation-type: tm+mt
 source-git-commit: a3ccb1ffe2b2e24c453afac8cf3efc098f393030
+workflow-type: tm+mt
+source-wordcount: '417'
+ht-degree: 0%
 
 ---
 
 
 # Referentie adaptieve formulierfragmenten{#reference-adaptive-form-fragments}
 
-[Adaptief formulierfragment](../../forms/using/adaptive-form-fragments.md) is een groep velden of een deelvenster met een groep velden die u kunt gebruiken wanneer u een formulier maakt. Hiermee kunt u gemakkelijk en snel een formulier maken. U kunt een adaptief formulierfragment naar een formulier slepen met de middelenbrowser in het zijpaneel en het bewerken in de formuliereditor.
+[Aangepast formulier ](../../forms/using/adaptive-form-fragments.md) is een groep velden of een deelvenster met een groep velden die u kunt gebruiken wanneer u een formulier maakt. Hiermee kunt u gemakkelijk en snel een formulier maken. U kunt een adaptief formulierfragment naar een formulier slepen met de middelenbrowser in het zijpaneel en het bewerken in de formuliereditor.
 
-Voor auteurs van adaptieve formulieren staan referentiefragmenten in het AEM Forms-pakket [AEM-FORMS-6.3-REFERENCE-FRAGMENTS](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-FRAGMENTS). Het bevat de volgende fragmenten:
+Voor auteurs van adaptieve formulieren worden referentiefragmenten geleverd in het AEM Forms-pakket [AEM-FORMS-6.3-REFERENCE-FRAGMENTS](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-FRAGMENTS). Het bevat de volgende fragmenten:
 
 * Adres
 * Contactgegevens
@@ -31,7 +34,7 @@ Voor auteurs van adaptieve formulieren staan referentiefragmenten in het AEM For
 * Voorwaarden en bepalingen
 * Voorwaarden en bepalingen met krabbels
 
-Wanneer u het pakket installeert, wordt een map Reference Fragments met verwijzingsfragmenten gemaakt onder Forms &amp; Documents. Voor het installeren van een pakket, zie [hoe te met Pakketten](/help/sites-administering/package-manager.md)werken.
+Wanneer u het pakket installeert, wordt een map Reference Fragments met verwijzingsfragmenten gemaakt onder Forms &amp; Documents. Zie [Werken met pakketten](/help/sites-administering/package-manager.md) voor het installeren van een pakket.
 
 ![Alle fragmenten weergegeven](assets/ootb-frags.png)
 
@@ -58,7 +61,7 @@ Bevat velden voor het vastleggen van het telefoonnummer en het e-mailadres.
 ## Creditcardgegevens {#credit-card-information}
 
 Bevat velden voor het vastleggen van creditcardgegevens die kunnen worden gebruikt voor het verwerken van betalingen.
-[ Fragment met ![creditcardgegevens](assets/cc-info.png)](assets/cc-info-1.png)
+[ ![Creditcardgegevensfragment](assets/cc-info.png)](assets/cc-info-1.png)
 
 ## Huidige werkgelegenheid {#current-employment}
 
@@ -70,7 +73,7 @@ Bevat velden waarin actuele werkgelegenheidsdetails worden opgenomen, zoals arbe
 
 ](assets/current-emp-1.png)-->
 
-## Afhankelijke informatie {#dependents-information}
+## Informatie over afhankelijke personen {#dependents-information}
 
 Omvat gebieden om informatie over één of meerdere gebiedsdelen, zoals hun naam, verhouding, en leeftijd in een tabelvorm te specificeren.
 
@@ -92,7 +95,7 @@ Bevat velden voor het vastleggen van de arbeidsgeschiedenis. Het staat toe toevo
 
 ## Inkomsten en uitgaven {#income-expenditure}
 
-Bevat velden voor het opnemen van maandelijkse kasstroom en uitgaven. Formulieren die gebruikers verplichten financiële gegevens te verstrekken, kunnen dit fragment gebruiken om inkomsten en uitgaven vast te leggen.
+Bevat velden voor het opnemen van maandelijkse kasstroom en uitgaven. Forms die van gebruikers eist dat ze financiële gegevens verstrekken, kan dit fragment gebruiken om inkomsten en uitgaven vast te leggen.
 
 ![Inkomens- en uitgavenonderverdeling](assets/income.png)
 
@@ -110,7 +113,7 @@ Bevat velden voor het opgeven van de titel, voornaam, middelste naam en achterna
 
 ](assets/name-1.png)-->
 
-## Voorwaarden en bepalingen {#terms-conditions}
+## Voorwaarden {#terms-conditions}
 
 Hiermee geeft u aan welke voorwaarden gebruikers moeten accepteren voordat ze een formulier verzenden.
 

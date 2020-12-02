@@ -18,9 +18,9 @@ ht-degree: 0%
 ---
 
 
-# LiveCycleProcess Java API (SOAP), snel aan de slag {#livecycleprocess-java-api-soap-quick-start}
+# LiveCycleProcess Java API (SOAP) Quick Start {#livecycleprocess-java-api-soap-quick-start}
 
-De Java API (SOAP) Quick Start is beschikbaar voor processen. Een *procesinstantie* is een instantie van een specifiek proces dat is gestart door een aanroepingsmethode zoals de aanroepings-API of vanuit de werkruimte.
+De Java API (SOAP) Quick Start is beschikbaar voor processen. Een *procesinstantie* is een instantie van een specifiek proces dat door een aanroepingsmethode zoals de Inroeping API of van binnen Werkruimte is begonnen.
 
 [Snel starten (SOAP-modus): Zoeken naar procesinstanties met de Java API](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-searching-for-process-instances-using-the-java-api)
 
@@ -34,15 +34,15 @@ De Java API (SOAP) Quick Start is beschikbaar voor processen. Een *procesinstant
 
 [Snel starten (SOAP-modus): De status van een taak ophalen met de Java API](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api)
 
-De verrichtingen van AEM Forms kunnen worden uitgevoerd gebruikend AEM Forms sterk-getypte API en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
+AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte AEM Forms-API en de verbindingsmodus moet worden ingesteld op SOAP.
 
 >[!NOTE]
 >
->De snelle aanvang die in Programmering met AEM Forms wordt gevestigd is gebaseerd op de Vormen als u een ander werkend systeem, zoals Unix gebruikt, vervangt vensters specifieke wegen door wegen door het toepasselijke werkende systeem dat worden gesteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. (Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+>Quick start in Programming with AEM Forms is gebaseerd op de Forms als u een ander besturingssysteem gebruikt, zoals Unix, vervangt Windows-specifieke paden door paden die worden ondersteund door het desbetreffende besturingssysteem. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. (Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
 
 ## Snel starten (SOAP-modus): Zoeken naar procesinstanties met de Java API {#quick-start-soap-mode-searching-for-process-instances-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt gezocht naar procesinstanties die zijn gebaseerd op het proces *MortgaugeLoan - Prebuilt* .
+In het volgende Java-codevoorbeeld wordt gezocht naar procesinstanties die zijn gebaseerd op het proces *MortgaugeLoan - Prebuilt*.
 
 ```java
  /*
@@ -431,7 +431,7 @@ In het volgende Java-codevoorbeeld wordt een procesinstantie beëindigd met de i
 
 ## Snel starten (SOAP-modus): Procesgegevens wissen met de Java API {#quick-start-soap-mode-purging-process-data-using-the-java-api}
 
-Met de volgende Java-code worden gegevens verwijderd uit een proces met de naam *SecureDocument*. Een filter wordt gebruikt dat specificeert om gegevens voor die procesinstanties te zuiveren waar de procesvariabele genoemd *inValue* groter is dan 200.
+De volgende code van Java zuivert gegevens van een proces genoemd *SecureDocument*. Een filter wordt gebruikt dat specificeert om gegevens voor die procesinstanties te zuiveren waar de procesvariabele genoemd *inValue* groter is dan 200.
 
 ```java
  /*

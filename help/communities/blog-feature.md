@@ -19,7 +19,7 @@ ht-degree: 0%
 ---
 
 
-# Blogonderdeel {#blog-feature}
+# Blogfunctie {#blog-feature}
 
 ## Inleiding {#introduction}
 
@@ -32,11 +32,11 @@ De blogfunctie biedt het volgende:
 * Blogartikelen en opmerkingen maken
 * RTF-bewerking
 * Inline-afbeeldingen (met ondersteuning voor slepen en neerzetten)
-* Inhoud van ingesloten sociale netwerken (ondersteuning voor[insluiten](/help/communities/blog-developer-basics.md#allowing-rich-media))
+* Inhoud van ingesloten sociale netwerken ([Ondersteuning insluiten](/help/communities/blog-developer-basics.md#allowing-rich-media))
 * Conceptmodus
 * Geplande publicatie
-* Namens samenstellen (een [geprivilegieerd lid](/help/communities/users.md#privileged-members-group) kan inhoud namens een ander lid van de Gemeenschap tot stand brengen)
-* [In de context en bulkmodernisering](/help/communities/moderate-ugc.md) van blogartikelen en commentaar
+* Compose on-name (een [geprivilegieerd lid](/help/communities/users.md#privileged-members-group) kan inhoud namens een verschillend lid van de Gemeenschap tot stand brengen)
+* [In context en bulksgewijze ](/help/communities/moderate-ugc.md) modernisering van blogartikelen en commentaar
 
 In dit gedeelte van de documentatie wordt het volgende beschreven:
 
@@ -45,7 +45,7 @@ In dit gedeelte van de documentatie wordt het volgende beschreven:
 
 >[!NOTE]
 >
->De componenten `Journal` en `Journal Sidebar` worden genoemd `Blog` en `Blog Sidebar`.
+>De componenten `Journal` en `Journal Sidebar` hebben de naam `Blog` en `Blog Sidebar`.
 >
 >De blogfunctie in AEM 6.0 en eerdere versies wordt nu verwijderd. Het is gebaseerd op een sjabloon en auteurs mogen alleen inhoud maken in de auteursomgeving.
 
@@ -58,23 +58,23 @@ Als u een blog wilt toevoegen aan een pagina in de ontwerpmodus, gebruikt u de c
 
 en sleep ze naar de gewenste plaats op een pagina waarop de blog moet worden weergegeven.
 
-Ga voor de benodigde informatie naar [Community Components Basics](/help/communities/basics.md).
+Voor noodzakelijke informatie, bezoek [de Grondbeginselen van Componenten van Gemeenschappen](/help/communities/basics.md).
 
-Wanneer de [vereiste client-side bibliotheken](/help/communities/blog-developer-basics.md#essentials-for-client-side) worden opgenomen, wordt de `Blog` component als volgt weergegeven:
+Wanneer de [vereiste client-side bibliotheken](/help/communities/blog-developer-basics.md#essentials-for-client-side) worden opgenomen, wordt de `Blog`-component op deze manier weergegeven:
 
 ![add-blog-component](assets/add-blog-component.png)
 
-### Blog configureren {#configuring-blog}
+### Blog {#configuring-blog} configureren
 
-Selecteer de geplaatste `Blog` component die u wilt openen en selecteer het `Configure` pictogram waarmee het dialoogvenster Bewerken wordt geopend.
+Selecteer de geplaatste `Blog` component en selecteer `Configure` pictogram dat het Edit dialoog opent.
 
 ![vormen](assets/configure-new.png)
 
 ![Bloginstellingen](assets/blog-configure.png)
 
-#### Het tabblad Instellingen {#settings-tab}
+#### Tabblad Instellingen {#settings-tab}
 
-Geef op het tabblad **Instellingen** de basisfuncties van de blog op:
+Geef onder het tabblad **Instellingen** de basisfuncties van de blog op:
 
 * **Miniatuur van bijlage toestaan**
 
@@ -136,7 +136,7 @@ Geef op het tabblad **Instellingen** de basisfuncties van de blog op:
 
 * **Tags toestaan**
 
-   Als deze optie is ingeschakeld, kunnen leden labellabels aan hun post toevoegen (zie tabblad **Tagveld** ). De optie Standaard is uitgeschakeld.
+   Als deze optie is ingeschakeld, kunnen leden labellabels aan hun post toevoegen (zie **Veld labelen** tabblad). De optie Standaard is uitgeschakeld.
 
 * **Uploaden van bestanden toestaan**
 
@@ -144,11 +144,11 @@ Geef op het tabblad **Instellingen** de basisfuncties van de blog op:
 
 * **Max. bestandsgrootte**
 
-   Alleen relevant als `Allow File Uploads` is gecontroleerd. Met dit veld wordt de grootte (in bytes) van een geüpload bestand beperkt. De standaardwaarde is 104857600 (10 MB).
+   Alleen relevant als `Allow File Uploads` is ingeschakeld. Met dit veld wordt de grootte (in bytes) van een geüpload bestand beperkt. De standaardwaarde is 104857600 (10 MB).
 
 * **Toegestane bestandstypen**
 
-   Alleen relevant als `Allow File Uploads` is gecontroleerd. Een door komma&#39;s gescheiden lijst met bestandsextensies met het &quot;punt&quot;-scheidingsteken. Bijvoorbeeld: .jpg, .jpeg, .png, .doc, .docx, .pdf. Als er bestandstypen zijn opgegeven, mogen de niet opgegeven bestandstypen niet worden geüpload. De standaardinstelling is niet opgegeven, zodat alle bestandstypen zijn toegestaan.
+   Alleen relevant als `Allow File Uploads` is ingeschakeld. Een door komma&#39;s gescheiden lijst met bestandsextensies met het &quot;punt&quot;-scheidingsteken. Bijvoorbeeld: .jpg, .jpeg, .png, .doc, .docx, .pdf. Als er bestandstypen zijn opgegeven, mogen de niet opgegeven bestandstypen niet worden geüpload. De standaardinstelling is niet opgegeven, zodat alle bestandstypen zijn toegestaan.
 
 * **Maximale bestandsgrootte afbeelding bijvoegen**
 
@@ -168,15 +168,15 @@ Geef op het tabblad **Instellingen** de basisfuncties van de blog op:
 
 * **Volgen toestaan**
 
-   Als deze optie is ingeschakeld, neemt u de volgende functie op voor blogartikelen, waarmee leden op de [hoogte](/help/communities/notifications.md) kunnen worden gesteld van nieuwe berichten. De optie Standaard is uitgeschakeld.
+   Als deze optie is ingeschakeld, neemt u de volgende functie op voor blogartikelen. Hiermee kunnen leden [op de hoogte worden gesteld](/help/communities/notifications.md) van nieuwe berichten. De optie Standaard is uitgeschakeld.
 
 * **E-mailabonnementen toestaan**
 
-   Als deze optie is ingeschakeld, kunnen leden via e-mail op de hoogte worden gesteld van nieuwe berichten ([abonnement](/help/communities/subscriptions.md)). Moet `Allow Following` worden gecontroleerd en [e-mail wordt gevormd](/help/communities/email.md). De optie Standaard is uitgeschakeld.
+   Als deze optie is ingeschakeld, kunnen leden via e-mail op de hoogte worden gesteld van nieuwe berichten ([abonnement](/help/communities/subscriptions.md)). `Allow Following` moet worden gecontroleerd en [e-mail geconfigureerd](/help/communities/email.md). De optie Standaard is uitgeschakeld.
 
 * **Badges weergeven**
 
-   Indien ingeschakeld, verdiende en toegewezen [badges](/help/communities/implementing-scoring.md) bij het blogbericht van een lid weergeven. De optie Standaard is uitgeschakeld.
+   Indien ingeschakeld, toont u verdiende en toegewezen [badges](/help/communities/implementing-scoring.md) met het blogbericht van een lid. De optie Standaard is uitgeschakeld.
 
 * **Geen reacties ophalen op aanbiedingspagina**
 
@@ -198,7 +198,7 @@ Geef op het tabblad **Instellingen** de basisfuncties van de blog op:
 
 #### Tabblad Gebruikersmodernisering {#user-moderation-tab}
 
-Geef op onder het tabblad **Gebruikersmodernisering** de instellingen voor matiging op:
+Geef onder het tabblad **Gebruikersmodernisering** de moderatie-instellingen op:
 
 * **Posten weigeren**
 
@@ -228,21 +228,21 @@ Geef op onder het tabblad **Gebruikersmodernisering** de instellingen voor matig
 
    Voer het aantal keren in dat een onderwerp of opmerking moet worden gemarkeerd voordat het wordt verborgen in de openbare weergave. Indien ingesteld op -1, wordt het gemarkeerde onderwerp of de opmerking nooit verborgen in de openbare weergave. Anders, moet dit aantal groter dan of gelijk aan de Drempel van de Moderatie zijn. De standaardwaarde is 5.
 
-#### Tabblad Tagveld {#tag-field-tab}
+#### Tabblad {#tag-field-tab} voor tagveld
 
-Geef onder het tabblad **Tagveld** op welke tags kunnen worden toegepast als **Tags** toestaan is ingeschakeld op het tabblad **Instellingen** :
+Geef onder het tabblad **Tag veld** aan welke tags mogen worden toegepast als **Tags toestaan** is ingeschakeld op het tabblad **Instellingen**:
 
 * **Toegestane naamruimten**
 
-   Relevant als `Allow Tagging` is ingeschakeld onder het tabblad **Instellingen** . De tags die kunnen worden toegepast, zijn beperkt tot de tags binnen de geselecteerde naamruimtecategorieën. De lijst met naamruimten bevat &#39;Standaardtags&#39; (de standaardnaamruimte) en &#39;Alle tags opnemen&#39;. De standaardwaarde is niet ingeschakeld, hetgeen betekent dat alle naamruimten zijn toegestaan.
+   Relevant als `Allow Tagging` is ingeschakeld onder het tabblad **Instellingen**. De tags die kunnen worden toegepast, zijn beperkt tot de tags binnen de geselecteerde naamruimtecategorieën. De lijst met naamruimten bevat &#39;Standaardtags&#39; (de standaardnaamruimte) en &#39;Alle tags opnemen&#39;. De standaardwaarde is niet ingeschakeld, hetgeen betekent dat alle naamruimten zijn toegestaan.
 
 * **Suggestiegrenswaarde**
 
    Voer het aantal tags in dat moet worden weergegeven als suggestie aan het lid dat naar het forum post. De waarde -1 betekent geen limieten. De standaardwaarde is 0.
 
-### Blogzijbalk configureren {#configuring-blog-sidebar}
+### Blogzijbalk {#configuring-blog-sidebar} configureren
 
-Wanneer u dubbelklikt op de `Blog Sidebar` component, wordt een dialoogvenster voor bewerken geopend.
+Wanneer u dubbelklikt op de component `Blog Sidebar`, wordt een dialoogvenster voor bewerken geopend.
 
 Geef onder het tabblad **Dagboekzijbalkinstellingen** de datumnotatie voor archieven op en het type items dat op de zijbalk moet worden weergegeven:
 
@@ -270,7 +270,7 @@ Geef onder het tabblad **Dagboekzijbalkinstellingen** de datumnotatie voor archi
 
 * **Pad van achtergrondcomponent**
 
-   *(Optioneel)* De locatie van de blogbron waaruit blogartikelen moeten worden vermeld. Als deze optie leeg wordt gelaten, wordt de component resourceType gebruikt die op dezelfde pagina wordt weergegeven. `social/journal/components/hbs/journal`
+   *(Optioneel)* De locatie van de blogbron waaruit blogartikelen moeten worden vermeld. Als deze optie leeg wordt gelaten, wordt de component resourceType `social/journal/components/hbs/journal` gebruikt die op dezelfde pagina wordt weergegeven.
 
    * Bijvoorbeeld, `/content/sites/engage/en/blog/jcr:content/content/primary/blog`
 
@@ -278,7 +278,7 @@ Geef onder het tabblad **Dagboekzijbalkinstellingen** de datumnotatie voor archi
 
    Het aantal blogartikelen dat moet worden weergegeven. De waarde -1 betekent geen limiet. De standaardwaarde is -1.
 
-## Ervaring met sitebezoekers {#site-visitor-experience}
+## Ervaring {#site-visitor-experience} voor bezoekers van site
 
 In de publicatieomgeving wordt met de blogfunctie het meest recente blogartikel weergegeven, gevolgd door oudere blogartikelen in aflopende volgorde van ontwerp. Met blogzijbalken kunnen sitebezoekers filters toepassen om de selectie van weergegeven blogartikelen te beperken.
 
@@ -300,13 +300,13 @@ De blogartikelen worden op het juiste tabblad (Gepubliceerd, Concepten of Geplan
 
 #### Moderatoren en beheerders {#moderators-and-administrators}
 
-Wanneer de aangemelde gebruiker moderator of beheerdersrechten heeft, kunnen zij [moderatietaken](/help/communities/moderate-ugc.md) uitvoeren (zoals toegestaan door de configuratie van de component) op alle blogartikelen en commentaar dat op een blog wordt geplaatst.
+Wanneer de aangemelde gebruiker moderator of beheerdersrechten heeft, kunnen zij [moderatietaken](/help/communities/moderate-ugc.md) (zoals toegestaan door de configuratie van de component) uitvoeren op alle blogartikelen en commentaar dat op een blog wordt geplaatst.
 
 ![moderator-homepage](assets/moderator-homepage.png)
 
 #### Leden {#members}
 
-Wanneer de aangemelde gebruiker een lid van de gemeenschap of een [geprivilegieerd lid](/help/communities/users.md#privileged-members-group) is (afhankelijk van de configuratie), kunnen deze selecteren `New Article` om een nieuw blogartikel te maken en te plaatsen.
+Wanneer de aangemelde gebruiker een communitylid of [geprivilegieerd lid](/help/communities/users.md#privileged-members-group) is (afhankelijk van de configuratie), kunnen ze `New Article` selecteren om een nieuw blogartikel te maken en te plaatsen.
 
 Zij kunnen met name:
 
@@ -321,18 +321,18 @@ Zij kunnen met name:
 
 ![create-blog](assets/create-blog.png)
 
-#### Anoniem {#anonymous}
+#### Anonieme {#anonymous}
 
 Sitebezoekers die niet zijn aangemeld, kunnen alleen geposte blogartikelen en opmerkingen lezen, deze vertalen als ze worden ondersteund, maar mogen geen blogartikel of commentaar toevoegen en de artikelen of opmerkingen van anderen niet markeren.
 
 ![anonieme gebruikersweergave](assets/anonymous-user-view.png)
 
-## Additional Information {#additional-information}
+## Aanvullende informatie {#additional-information}
 
 Meer informatie vindt u op de pagina [Blog Essentials](/help/communities/blog-developer-basics.md) voor ontwikkelaars.
 
-Zie Door gebruiker gegenereerde inhoud [modereren voor de moderatie van blogberichten en opmerkingen](/help/communities/moderate-ugc.md).
+Zie [Door gebruiker gegenereerde inhoud modereren](/help/communities/moderate-ugc.md) voor de moderatie van blogberichten en opmerkingen.
 
-Zie Door gebruiker gegenereerde inhoud [](/help/communities/tag-ugc.md)labelen voor het labelen van blogberichten en opmerkingen.
+Zie [Door gebruiker gegenereerde inhoud labelen](/help/communities/tag-ugc.md) voor het labelen van blogberichten en opmerkingen.
 
-Zie Door gebruiker gegenereerde inhoud [vertalen voor een vertaling van blogberichten en opmerkingen](/help/communities/translate-ugc.md).
+Zie [Door gebruiker gegenereerde inhoud omzetten](/help/communities/translate-ugc.md) voor een vertaling van blogberichten en opmerkingen.

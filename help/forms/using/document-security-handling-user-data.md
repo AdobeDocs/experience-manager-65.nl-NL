@@ -15,7 +15,7 @@ ht-degree: 0%
 ---
 
 
-# Documentbeveiliging | Gebruikersgegevens verwerken {#document-security-handling-user-data}
+# Documentbeveiliging | Gebruikersgegevens {#document-security-handling-user-data} verwerken
 
 Met de beveiliging van AEM Forms-documenten kunt u vooraf gedefinieerde beveiligingsinstellingen maken, opslaan en toepassen op uw documenten. Hiermee zorgt u ervoor dat alleen geautoriseerde gebruikers de documenten kunnen gebruiken. U kunt documenten beschermen door beleid te gebruiken. Een beleid is een inzameling van informatie die veiligheidsmontages en een lijst van erkende gebruikers omvat. U kunt een beleid op één of meerdere documenten toepassen en gebruikers machtigen die in het gebruikersbeheer van AEM Forms JEE worden toegevoegd.
 
@@ -23,7 +23,7 @@ Met de beveiliging van AEM Forms-documenten kunt u vooraf gedefinieerde beveilig
 
 ## Gebruikersgegevens en gegevensopslag {#user-data-and-data-stores}
 
-Met documentbeveiliging worden beleidsregels en gegevens met betrekking tot beveiligde documenten, waaronder gebruikersgegevens, opgeslagen in een database, zoals My Sql, Oracle, MS SQL Server en IBM DB2. Bovendien de gegevens voor geautoriseerde gebruikers in een beleid in opslag in gebruikersbeheer. Zie Gebruikersbeheer van [Forms voor informatie over gegevens die zijn opgeslagen in gebruikersbeheer: Gebruikersgegevens](/help/forms/using/user-management-handling-user-data.md)verwerken.
+Met documentbeveiliging worden beleidsregels en gegevens met betrekking tot beveiligde documenten, waaronder gebruikersgegevens, opgeslagen in een database, zoals Mijn SQL, Oracle, MS SQL Server en IBM DB2. Bovendien de gegevens voor geautoriseerde gebruikers in een beleid in opslag in gebruikersbeheer. Zie [Forms-gebruikersbeheer voor informatie over gegevens die zijn opgeslagen in gebruikersbeheer: Gebruikergegevens verwerken](/help/forms/using/user-management-handling-user-data.md).
 
 In de volgende tabel wordt aangegeven hoe gegevens in databasetabellen worden gerangschikt door documentbeveiliging.
 
@@ -86,7 +86,7 @@ U kunt documentbeveiligingsgegevens voor gebruikers in de databases openen en ex
 
 Om gebruikersgegevens uit een gegevensbestand uit te voeren of te schrappen, moet u met het gegevensbestand verbinden gebruikend een gegevensbestandcliënt en te weten komen belangrijkste identiteitskaart die op sommige persoonlijk identificeerbare informatie van de gebruiker wordt gebaseerd. Bijvoorbeeld, om belangrijkste identiteitskaart van een gebruiker terug te winnen die een login identiteitskaart gebruikt, stel het volgende `select` bevel op het gegevensbestand in werking.
 
-In het `select` bevel, vervang `<user_login_id>` met login identiteitskaart van de gebruiker de waarvan belangrijkste identiteitskaart u van de `EdcPrincipalUserEntity` gegevensbestandlijst wilt terugwinnen.
+In `select` bevel, vervang `<user_login_id>` met login identiteitskaart van de gebruiker de waarvan belangrijkste identiteitskaart u van de `EdcPrincipalUserEntity` gegevensbestandlijst wilt terugwinnen.
 
 ```sql
 select refprincipalid from EdcPrincipalUserEntity where uidstring = <user_login_id>
@@ -96,11 +96,11 @@ Zodra u de belangrijkste identiteitskaart kent, kunt u de gebruikersgegevens uit
 
 ### Gebruikersgegevens exporteren {#export-user-data}
 
-Voer de volgende databaseopdrachten uit om gebruikersgegevens voor een hoofd-id uit databasetabellen te exporteren. In het `select` bevel, vervang `<principal_id>` met belangrijkste identiteitskaart van de gebruiker de waarvan gegevens u wilt uitvoeren.
+Voer de volgende databaseopdrachten uit om gebruikersgegevens voor een hoofd-id uit databasetabellen te exporteren. Vervang `<principal_id>` in de opdracht `select` door de hoofd-id van de gebruiker wiens gegevens u wilt exporteren.
 
 >[!NOTE]
 >
->De volgende bevelen gebruiken de namen van de gegevensbestandlijst in Mijn SQL en de gegevensbestanden van IBM DB2. Wanneer u deze opdrachten uitvoert op Oracle- en MS SQL-databases, vervangt u deze door `EdcPolicySetPrincipalEntity` `EdcPolicySetPrincipalEnt` de opdrachten.
+>De volgende bevelen gebruiken de namen van de gegevensbestandlijst in Mijn SQL en de gegevensbestanden van IBM DB2. Wanneer u deze opdrachten uitvoert op Oracle- en MS SQL-databases, vervangt u `EdcPolicySetPrincipalEntity` door `EdcPolicySetPrincipalEnt` in de opdrachten.
 
 ```sql
 Select * from EdcPrincipalKeyEntity where principalid = '<principal_id>';
@@ -126,16 +126,16 @@ Select * from edcinviteduserentity where principalId = '<principal_id>';
 
 >[!NOTE]
 >
->Om gegevens uit de `EdcAuditEntity` lijst uit te voeren, gebruik [EventManager.exportEvents](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) API die [EventSearchFilter](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) als parameter neemt om controlegegevens uit te voeren die op `principalId`, `policyId`of `licenseId`worden gebaseerd.
+>Als u gegevens uit de tabel `EdcAuditEntity` wilt exporteren, gebruikt u de API [EventManager.exportEvents](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) die [EventSearchFilter](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) als parameter gebruikt om auditgegevens te exporteren op basis van `principalId`, `policyId` of `licenseId`.
 
-Om volledige gegevens over een gebruiker in het systeem te krijgen, moet u tot gegevens van het gebruikersbeheergegevensbestand toegang hebben en uitvoeren. Zie [Forms-gebruikersbeheer voor meer informatie: Gebruikersgegevens](/help/forms/using/user-management-handling-user-data.md)verwerken.
+Om volledige gegevens over een gebruiker in het systeem te krijgen, moet u tot gegevens van het gebruikersbeheergegevensbestand toegang hebben en uitvoeren. Zie [Forms-gebruikersbeheer voor meer informatie: Gebruikergegevens verwerken](/help/forms/using/user-management-handling-user-data.md).
 
-### Gebruikersgegevens verwijderen {#delete-user-data}
+### Gebruikersgegevens {#delete-user-data} verwijderen
 
 Ga als volgt te werk om documentbeveiligingsgegevens voor een hoofd-id uit databasetabellen te verwijderen.
 
 1. Sluit de AEM Forms-server af.
-1. Voer de volgende databaseopdrachten uit om gegevens voor de hoofd-id te verwijderen uit databasetabellen voor documentbeveiliging. In het `Delete` bevel, vervang `<principal_id>` met belangrijkste identiteitskaart van de gebruiker de waarvan gegevens u wilt schrappen.
+1. Voer de volgende databaseopdrachten uit om gegevens voor de hoofd-id te verwijderen uit databasetabellen voor documentbeveiliging. Vervang `<principal_id>` in de opdracht `Delete` door de hoofd-id van de gebruiker wiens gegevens u wilt verwijderen.
 
    ```sql
    Delete from EdcPrincipalKeyEntity where principalid = '<principal_id>';
@@ -151,17 +151,17 @@ Ga als volgt te werk om documentbeveiligingsgegevens voor een hoofd-id uit datab
 
    >[!NOTE]
    >
-   >Om gegevens uit de `EdcAuditEntity` lijst te schrappen, gebruik [EventManager.deleteEvents](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) API die [EventSearchFilter](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) als parameter neemt om controlegegevens te schrappen die op `principalId`, `policyId`of worden gebaseerd `licenseId`.
+   >Als u gegevens uit de tabel `EdcAuditEntity` wilt verwijderen, gebruikt u de API [EventManager.deleteEvents](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) die [EventSearchFilter](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) als parameter gebruikt om auditgegevens te verwijderen die zijn gebaseerd op `principalId`, `policyId` of `licenseId`.
 
-1. De actieve en gearchiveerde dossiers van beleidXML worden opgeslagen in de `EdcPolicyXmlEntity` en `EdcPolicyArchiveEntity` gegevensbestandlijsten, respectievelijk. Ga als volgt te werk om gegevens voor een gebruiker uit deze tabellen te verwijderen:
+1. De actieve en gearchiveerde dossiers van beleidXML worden opgeslagen in `EdcPolicyXmlEntity` en `EdcPolicyArchiveEntity` gegevensbestandlijsten, respectievelijk. Ga als volgt te werk om gegevens voor een gebruiker uit deze tabellen te verwijderen:
 
-   1. Open de XML-blob van elke rij in de `EdcPolicyXMLEntity` of `EdcPolicyArchiveEntity` tabel en extraheer het XML-bestand. Het XML-bestand is vergelijkbaar met het onderstaande bestand.
+   1. Open de XML-blob van elke rij in de tabel `EdcPolicyXMLEntity` of `EdcPolicyArchiveEntity` en extraheer het XML-bestand. Het XML-bestand is vergelijkbaar met het onderstaande bestand.
    1. Bewerk het XML-bestand om de blob voor de hoofd-id te verwijderen.
    1. Herhaal stap 1 en 2 voor het andere bestand.
 
    >[!NOTE]
    >
-   >U moet de volledige blob binnen de `Principal` tag voor een hoofd-id verwijderen, anders wordt de beleid-XML mogelijk beschadigd of onbruikbaar.
+   >U moet de volledige blob binnen de tag `Principal` voor een hoofd-id verwijderen, anders wordt de beleids-XML mogelijk beschadigd of onbruikbaar.
 
    ```xml
    <ns2:Principal PrincipalNameType="USER">
@@ -190,7 +190,7 @@ Ga als volgt te werk om documentbeveiligingsgegevens voor een hoofd-id uit datab
    <ns2:Permission PermissionName="ns3:com.adobe.aps.pdf.printLow" Access="ALLOW"/>
    ```
 
-   Naast het direct verwijderen van gegevens uit de `EdcPolicyXmlEntity` tabel zijn er nog twee manieren waarop u dit kunt bereiken:
+   Naast het direct schrappen van gegevens uit de `EdcPolicyXmlEntity` lijst, zijn er twee meer manieren u dit kunt bereiken:
 
    **Beheerconsole gebruiken**
 
@@ -208,8 +208,8 @@ Ga als volgt te werk om documentbeveiligingsgegevens voor een hoofd-id uit datab
 
    >[!NOTE]
    >
-   >De beheerders kunnen, tot gebruikersgegevens van persoonlijk beleid van andere gebruikers zoeken toegang hebben en schrappen in het **[!UICONTROL Services > Document Security > My Policies]** gebruiken van beleidsconsole.
+   >Beheerders kunnen met behulp van beheerconsole zoeken naar gebruikersgegevens en deze openen en verwijderen uit persoonlijke beleidsregels van andere gebruikers in **[!UICONTROL Services > Document Security > My Policies]**.
 
-1. Verwijder de gegevens voor de hoofd-id uit de gebruikersbeheerdatabase. Zie Gebruikersbeheer van [Forms voor gedetailleerde stappen | Gebruikersgegevens](/help/forms/using/user-management-handling-user-data.md)verwerken.
+1. Verwijder de gegevens voor de hoofd-id uit de gebruikersbeheerdatabase. Zie [Forms-gebruikersbeheer voor gedetailleerde stappen | Gebruikersgegevens verwerken](/help/forms/using/user-management-handling-user-data.md).
 1. Start de AEM Forms-server.
 

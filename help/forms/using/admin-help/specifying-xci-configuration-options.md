@@ -1,8 +1,8 @@
 ---
 title: XCI-configuratieopties opgeven
 seo-title: XCI-configuratieopties opgeven
-description: Leer hoe u XCI-configuratieopties kunt opgeven.
-seo-description: Leer hoe u XCI-configuratieopties kunt opgeven.
+description: Leer hoe u XCI-configuratieopties opgeeft.
+seo-description: Leer hoe u XCI-configuratieopties opgeeft.
 uuid: 5d3c10c1-4a93-4336-b311-20faaf835b9f
 contentOwner: admin
 content-type: reference
@@ -11,13 +11,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 162c9fda-f4d4-4ad5-a9ab-7554828e821c
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '141'
+ht-degree: 1%
 
 ---
 
 
 # XCI-configuratieopties opgeven {#specifying-xci-configuration-options}
 
-Met Forms kunt u een aangepast XCI-bestand opgeven dat wordt gebruikt voor rendering. (Zie Locaties [configureren voor Forms](/help/forms/using/admin-help/configuring-locations-forms.md#configuring-locations-for-forms).) Forms overschrijft standaard enkele van de opties die in het XCI-bestand zijn opgegeven, waaronder de volgende:
+Met Forms kunt u een aangepast XCI-bestand opgeven dat wordt gebruikt voor rendering. (Zie [Locaties configureren voor Forms](/help/forms/using/admin-help/configuring-locations-forms.md#configuring-locations-for-forms).) Forms negeert standaard enkele opties die in het XCI-bestand zijn opgegeven, waaronder de volgende:
 
 * `config/present/xdp/packets`
 * `config/present/pdf/creator`

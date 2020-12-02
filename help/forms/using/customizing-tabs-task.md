@@ -1,8 +1,8 @@
 ---
 title: Tabs aanpassen voor een taak
 seo-title: Tabs aanpassen voor een taak
-description: In de werkruimte van LiveCycle AEM Forms kunt u de namen van de tabbladen voor uw taken aanpassen.
-seo-description: In de werkruimte van LiveCycle AEM Forms kunt u de namen van de tabbladen voor uw taken aanpassen.
+description: Hoe kan ik de namen van de tabbladen voor uw taken aanpassen in de werkruimte van LiveCycle AEM Forms.
+seo-description: Hoe kan ik de namen van de tabbladen voor uw taken aanpassen in de werkruimte van LiveCycle AEM Forms.
 uuid: 77eabb63-f8ea-4ec0-8a41-b51c65cdecc0
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -17,16 +17,16 @@ ht-degree: 0%
 ---
 
 
-# Tabs aanpassen voor een taak {#customizing-tabs-for-a-task}
+# Tabbladen aanpassen voor een taak {#customizing-tabs-for-a-task}
 
 U kunt tabnamen voor de `Start Process` component aanpassen in de `Start Process` Uberweergave en de `Task Details` component in de `ToDo` Uberweergave.
 
-1. Voer de [algemene stappen uit om de werkruimte van AEM Forms aan te passen](/help/forms/using/generic-steps-html-workspace-customization.md).
-1. Wijzig de waarde van `tabname`in het `translation.json` bestand.
+1. Volg de [Algemene stappen voor de aanpassing van de AEM Forms-werkruimte](/help/forms/using/generic-steps-html-workspace-customization.md).
+1. Wijzig de waarde van `tabname`in het `translation.json`-bestand.
 
    Wijzig bijvoorbeeld `/apps/ws/locales/en-US/translation.json` voor Engels in het volgende.
 
-   * Gebruik het volgende fragment uit het `"startprocess" : {}` blok voor taken die in het beginproces worden gestart.
+   * Voor taken die in het beginproces in werking worden gesteld, gebruik het volgende fragment van het `"startprocess" : {}` blok.
 
    ```json
    "tabname" : {

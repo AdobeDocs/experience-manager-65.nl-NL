@@ -18,9 +18,9 @@ ht-degree: 0%
 ---
 
 
-# Door gebruiker gegenereerde inhoud vertalen {#translating-user-generated-content}
+# Door gebruiker gegenereerde inhoud omzetten {#translating-user-generated-content}
 
-De vertaalfunctie voor AEM Communities breidt het concept van het [vertalen van pagina-inhoud](../../help/sites-administering/translation.md) uit naar door de gebruiker gegenereerde inhoud (UGC) die via SCF-componenten [(](scf.md)social component framework) naar sites van de gemeenschap wordt gepost.
+De vertaalfunctie voor AEM Communities breidt het concept van [het vertalen van pagina-inhoud](../../help/sites-administering/translation.md) uit naar de door de gebruiker gegenereerde inhoud (UGC) die via [SCF-componenten (social component framework)](scf.md) naar communitysites wordt gepost.
 
 De vertaling van UGC stelt bezoekers en leden van de site in staat een wereldwijde gemeenschap te ervaren door taalbarrières te verwijderen.
 
@@ -34,27 +34,27 @@ Stel bijvoorbeeld:
 
 ## Overzicht {#overview}
 
-In deze sectie van de documentatie wordt specifiek besproken hoe de vertaalservice met UGC werkt, waarbij wordt uitgegaan van een inzicht in de manier waarop u AEM kunt verbinden met een [vertaalserviceprovider](../../help/sites-administering/translation.md#connectingtoatranslationserviceprovider) en deze service kunt integreren in een website door een [vertaalintegratieframework](../../help/sites-administering/tc-tic.md)te configureren.
+In deze sectie van de documentatie wordt specifiek besproken hoe de vertaalservice met UGC werkt, waarbij wordt uitgegaan van een inzicht in hoe u AEM kunt verbinden met een [vertaalserviceprovider](../../help/sites-administering/translation.md#connectingtoatranslationserviceprovider) en deze service kunt integreren in een website door een [vertaalintegratieframework](../../help/sites-administering/tc-tic.md) te configureren.
 
 Wanneer een vertaaldienstverlener met de plaats wordt geassocieerd, handhaaft elke taalexemplaar van de plaats zijn eigen draden van UGC die door componenten SCF zoals commentaren wordt gepost.
 
-Wanneer een kader van de vertaalintegratie naast de vertaaldienstverlener wordt gevormd, is het mogelijk voor elke taalexemplaar van de plaats om één enkele draad van UGC te delen, waarbij globale mededeling over taalexemplaren wordt verstrekt. In plaats van een besprekingsdraad die door taal wordt gescheiden, laat de gevormde [globale gedeelde opslag](#global-translation-of-ugc) toe dat de volledige draad zichtbaar is ongeacht van welke taalexemplaar het wordt bekeken. Bovendien kunnen de veelvoudige configuraties van de vertaalintegratie worden gevormd specificerend verschillende globale gedeelde opslag voor een logische groepering van globale deelnemers, zoals door gebieden.
+Wanneer een kader van de vertaalintegratie naast de vertaaldienstverlener wordt gevormd, is het mogelijk voor elke taalexemplaar van de plaats om één enkele draad van UGC te delen, waarbij globale mededeling over taalexemplaren wordt verstrekt. In plaats van een besprekingsdraad die door taal wordt gescheiden, laat de gevormde [globale gedeelde opslag](#global-translation-of-ugc) de volledige draad toe om zichtbaar te zijn ongeacht van welke taalexemplaar het wordt bekeken. Bovendien kunnen de veelvoudige configuraties van de vertaalintegratie worden gevormd specificerend verschillende globale gedeelde opslag voor een logische groepering van globale deelnemers, zoals door gebieden.
 
 ## De standaardvertaalservice {#the-default-translation-service}
 
-AEM Communities bevat een [proeflicentie](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license) voor een [standaardvertaalservice](../../help/sites-administering/tc-msconf.md) die voor verschillende talen is ingeschakeld.
+AEM Communities bevat een [proeflicentie](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license) voor een [standaardvertaalservice](../../help/sites-administering/tc-msconf.md) ingeschakeld voor verschillende talen.
 
-Wanneer u een communitysite [](sites-console.md)maakt, wordt de standaardvertaalservice ingeschakeld wanneer deze `Allow Machine Translation` wordt gecontroleerd vanuit het subdeelvenster [TRANSLATION](sites-console.md#translation) .
+Wanneer [een communitysite maakt](sites-console.md), wordt de standaardvertaalservice ingeschakeld wanneer `Allow Machine Translation` wordt gecontroleerd vanuit het [TRANSLATION](sites-console.md#translation) subdeelvenster.
 
 >[!CAUTION]
 >
 >De standaardvertaalservice is alleen bedoeld voor demonstratie.
 >
->Voor een productiesysteem is een vertaaldienst met licentie vereist. Als er geen licentie is, moet de standaardvertaalservice worden [uitgeschakeld](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license-geometrixx-outdoors).
+>Voor een productiesysteem is een vertaaldienst met licentie vereist. Als er geen licentie is, moet de standaardvertaalservice [uitgeschakeld zijn](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license-geometrixx-outdoors).
 
-## Wereldwijde omzetting van UGC {#global-translation-of-ugc}
+## Globale omzetting van UGC {#global-translation-of-ugc}
 
-Wanneer een website meerdere [taalkopieën](../../help/sites-administering/tc-prep.md)heeft, herkent de standaardvertaalservice niet dat UGC die op de ene site is ingevoerd, gerelateerd kan zijn aan UGC die op een andere site is ingevoerd, zoals wanneer de UGC in feite door dezelfde component wordt gegenereerd (de taalkopie van de pagina die de component bevat).
+Wanneer een website meerdere [taalkopieën](../../help/sites-administering/tc-prep.md) heeft, herkent de standaardvertaalservice niet dat UGC die op de ene site is ingevoerd gerelateerd kan zijn aan UGC die op een andere site is ingevoerd, zoals wanneer de UGC in feite wordt gegenereerd door dezelfde component (de taalkopie van de pagina die de component bevat).
 
 Het is vergelijkbaar met groepen mensen die een onderwerp bespreken dat niet op de hoogte is van opmerkingen die in andere groepen dan hun eigen groepen worden gemaakt, in vergelijking met iedereen in één grote groep die aan één gesprek deelneemt.
 
@@ -66,7 +66,7 @@ Bijvoorbeeld, als een forum op de basisplaats werd gevestigd, gemaakte taalexemp
 >
 >UGC&#39;s die vóór de algemene vertaling bestonden, zijn niet meer zichtbaar.
 >
->Terwijl UGC nog in de [gemeenschappelijke opslag](working-with-srp.md)is, wordt het gevestigd onder de taal-specifieke plaats UGC, terwijl de nieuwe inhoud, die na globale vertaling werd toegevoegd, van de globale gedeelde opslagplaats wordt teruggewonnen.
+>Terwijl UGC nog in [common store](working-with-srp.md) is, wordt het gevestigd onder de taal-specifieke plaats UGC, terwijl de nieuwe inhoud, die wordt toegevoegd nadat de globale vertaling werd gevormd, van de globale gedeelde opslagplaats wordt teruggewonnen.
 >
 >Er is geen migratiehulpmiddel om taalspecifieke inhoud in de globale gedeelde opslag te bewegen of samen te voegen.
 
@@ -96,7 +96,7 @@ Om een nieuwe Vertaalintegratie tot stand te brengen, die een schakelaar van de 
 
 * **[!UICONTROL Parent Configuration]**
 
-   (Vereist) Verlaat gewoonlijk als gebrek. Standaard is dit `/etc/cloudservices/translation`.
+   (Vereist) Verlaat gewoonlijk als gebrek. De standaardwaarde is `/etc/cloudservices/translation`.
 
 * **[!UICONTROL Title]**
 
@@ -135,7 +135,7 @@ Selecteer een categorie die de inhoud beschrijft die wordt vertaald. Standaard i
 
 De nieuwe vertaalintegratie-cloudservice moet worden geactiveerd voor de publicatieomgeving. Als de activeringsworkflow nog niet is geactiveerd en aan een website is gekoppeld, wordt gevraagd om deze cloudserviceconfiguratie te publiceren wanneer de pagina wordt gepubliceerd waaraan deze is gekoppeld.
 
-## Vertaalinstellingen beheren {#managing-translation-settings}
+## Vertaalinstellingen {#managing-translation-settings} beheren
 
 >[!NOTE]
 >
@@ -159,6 +159,6 @@ Wanneer de pagina&#39;s automatisch in de aangewezen taal van de gebruiker worde
 
 ![gebruikersprofiel](assets/translation-integration4.png)
 
-### Site-instelling van community {#community-site-setting}
+### Instelling {#community-site-setting} voor community-site
 
 Wanneer een communautaire Plaats wordt gecreeerd, kan de vertaaloptie worden toegelaten en worden gevormd. De vertaalinstelling is van kracht voor inhoud die anonieme sitebezoekers kunnen bekijken, maar wordt overschreven door de profielinstelling van de gebruiker.

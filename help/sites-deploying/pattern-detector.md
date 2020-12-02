@@ -32,7 +32,7 @@ Dit zou kunnen dienen als een beoordeling van de ontwikkelingsinspanningen die g
 
 ## Instellen {#how-to-set-up}
 
-De patroondetector wordt afzonderlijk vrijgegeven als [één pakket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/compatpack/pd-all-aem65) dat werkt aan elke bron AEM versies van 6.1 tot 6.5 voor AEM 6.5-upgrade. U kunt het programma installeren met [Package Manager](/help/sites-administering/package-manager.md).
+De patroondetector wordt afzonderlijk vrijgegeven als een [één pakket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/compatpack/pd-all-aem65) die werkt aan een bron AEM versies van 6.1 tot 6.5 die AEM 6.5 bevorderen. Het kan worden geïnstalleerd gebruikend [de Manager van het Pakket](/help/sites-administering/package-manager.md).
 
 ## Het gebruik {#how-to-use}
 
@@ -45,14 +45,14 @@ De patroondetector wordt afzonderlijk vrijgegeven als [één pakket](https://exp
 
 >
 >
-tegelijkertijd wordt aanbevolen het programma uit te voeren **op testomgevingen** die zo dicht mogelijk bij productieomgevingen liggen op het gebied van gebruikerstoepassingen , inhoud en configuraties .
+tegelijkertijd wordt aangeraden het **op testomgevingen** uit te voeren die zo dicht mogelijk bij productieomgevingen liggen op het gebied van gebruikerstoepassingen, inhoud en configuraties.
 
 U kunt verschillende methoden gebruiken om de uitvoer van de patroondetector te controleren:
 
 * **Via de Felix Inventory Console:**
 
-1. Ga naar de AEM webconsole door naar *https://serveraddress:serverport/system/console/configMgr te bladeren*
-1. Selecteer **Status - Patroondetector** , zoals in de onderstaande afbeelding wordt getoond:
+1. Ga naar de AEM webconsole door te bladeren naar *https://serveraddress:serverport/system/console/configMgr*
+1. Selecteer **Status - Patroondetector** zoals in de onderstaande afbeelding wordt getoond:
 
    ![screenshot-2018-2-5pattern-detector](assets/screenshot-2018-2-5pattern-detector.png)
 
@@ -61,7 +61,7 @@ U kunt verschillende methoden gebruiken om de uitvoer van de patroondetector te 
 
 Beide methoden worden hieronder beschreven:
 
-## Reactieve interface {#reactive-interface}
+## Reactive Interface {#reactive-interface}
 
 De reactieve interface maakt het mogelijk het rapport van de schending te verwerken zodra een vermoeden wordt vastgesteld.
 
@@ -86,7 +86,7 @@ De uitvoer ziet er als volgt uit:
 2018-02-13T14:18:32.071+01:00 [SUSPICION] The pattern=ECU/extraneous.content.usage was found by detector=ContentAccessDetector with id=a07fd94318f12312c165e06d890cbd3c2c8b8dad0c030663db8b4c800dd7c33f message="Cross-boundary overlay of internal marked path /libs/granite/operations/components/commons/commons.jsp/jcr:content referenced at /apps/granite/operations/components/commons/commons.jsp/jcr:content with properties redefined: jcr:lastModifiedBy, jcr:mimeType, jcr:data, jcr:lastModified, jcr:uuid". More info at=https://www.adobe.com/go/aem6_EC
 ```
 
-De voortgang kan worden gefilterd met de `grep` opdracht:
+De voortgang kan worden gefilterd met de opdracht `grep`:
 
 ```shell
 curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-detector.txt | tee patterns-report.log | grep PROGRESS
@@ -100,9 +100,9 @@ Dit resulteert in de volgende uitvoer:
 2018-02-13T14:19:35.685+01:00 [PROGRESS] Finished in period=PT13.782
 ```
 
-## De JSON-interface afhandelen {#handling-the-json-interface}
+## De JSON-interface {#handling-the-json-interface} verwerken
 
-Ook JSON kan worden verwerkt met het [JQ-gereedschap](https://stedolan.github.io/jq/) zodra het wordt gepubliceerd.
+Op dezelfde manier kan JSON worden verwerkt met het [jq-gereedschap](https://stedolan.github.io/jq/) zodra het is gepubliceerd.
 
 ```shell
 curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-detector.json | tee patterns-report.json | jq --unbuffered -C 'select(.suspicion == true)'
@@ -212,7 +212,7 @@ Met de uitvoer:
 
 >[!NOTE]
 >
->De aanbevolen methode is om de gehele uitvoer van krullen in het bestand op te slaan en deze vervolgens via `jq` of `grep` naar het type filterinformatie te verwerken.
+>De geadviseerde benadering is de volledige output van krulling in het dossier te bewaren en dan het via `jq` of `grep` te verwerken om informatietype te filtreren.
 
 ## Detectiebereik {#scope}
 

@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 525c4afc-e109-4546-b78c-1efee63edc43
 translation-type: tm+mt
 source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+workflow-type: tm+mt
+source-wordcount: '146'
+ht-degree: 0%
 
 ---
 
@@ -24,6 +27,7 @@ Dit zijn sommige dingen om te overwegen wanneer het runnen van de Console van he
 
    * Als u op een koppeling klikt, keert u terug naar de aanmeldingspagina in plaats van naar de verwachte koppeling.
    * Als u op een koppeling klikt, wordt een machtigingsfout weergegeven.
+
    De beste praktijken worden in werking gesteld beleidsconsole van andere browser, zoals Mozilla Firefox, om ervoor te zorgen dat geen verbindingen zullen ontbreken.
 
 * Gebruik geen backslash-tekens () wanneer u zoekopdrachten uitvoert in de beheerconsole.

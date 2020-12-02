@@ -15,11 +15,12 @@ ht-degree: 0%
 
 Met de functie voor meerdere huurders kunt u inhoud in CRX segregeren op basis van het organisatievoorvoegsel en de organisatie-id om de inhoud te beschermen tegen ongeoorloofde toegang door gebruikers van andere organisaties.
 
-[!DNL Adobe Experience Manager Assets] slaat gegevens voor elke organisatie in een verschillend weg op. Elk organisatiespecifiek pad wordt geïdentificeerd door het organisatievoorvoegsel en de organisatie-id die zijn opgenomen in de traditionele locatie waar verschillende typen elementen worden opgeslagen in CRX.
+[!DNL Adobe Experience Manager Assets] slaat gegevens voor elke organisatie in een verschillend weg op. Elk organisatiespecifiek pad wordt geïdentificeerd door het organisatievoorvoegsel en organisatie-id
+die is opgenomen op de traditionele locatie waar verschillende soorten activa worden opgeslagen in CRX.
 
-Als u bijvoorbeeld een map maakt met de naam `Demo`, slaat [!DNL Experience Manager] element de map traditioneel op in `../content/dam/Demo`. Als multi-tenancy is ingeschakeld, kunt u de gegevens nu opslaan op `../content/dam/<organization prefix>/<organization id>Demo`
+Als u bijvoorbeeld een map maakt met de naam `Demo`, slaat [!DNL Experience Manager] elementen traditioneel de map op in `../content/dam/Demo`. Als multi-tenancy wordt ingeschakeld, kunt u de gegevens nu opslaan op `../content/dam/<organization prefix>/<organization id>Demo`
 
-Bijvoorbeeld, als voor [!DNL Adobe Marketing Cloud] gebruikers van [!DNL Assets] (op bestelling) die aan de `aodpremium` organisatie worden toegewezen, kunt u de multi-huidseigenschap gebruiken om `../content/dam/<mac>/<aodpremium>Demo` weg te vormen om hun inhoud te segregeren. In dit voorbeeld `mac` is dit het organisatievoorvoegsel en `aodpremium` is dit de organisatie-id.
+Als voor [!DNL Adobe Marketing Cloud] gebruikers van [!DNL Assets] (op bestelling) die aan de organisatie `aodpremium` worden toegewezen, kunt u de multi-huidseigenschap bijvoorbeeld gebruiken om `../content/dam/<mac>/<aodpremium>Demo` weg te vormen om hun inhoud te segregeren. In dit voorbeeld is `mac` het voorvoegsel van de organisatie en `aodpremium` is de organisatie-id.
 
 Gebaseerd op de organisatie en identiteitskaart van de gebruiker, wordt dit gekwalificeerde weg getoond in de [!DNL Assets] interface en diverse tovenaars, met inbegrip van de Beweging en de verwezenlijking van het Fragment tovenaars om segregatie af te dwingen.
 

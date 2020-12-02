@@ -20,11 +20,11 @@ ht-degree: 0%
 
 # Sitesjablonen {#site-templates}
 
-De console van de Malplaatjes van de Plaats is zeer gelijkaardig aan de console van de Malplaatjes [van de](tools-groups.md) Groep, die op functies van belang voor communautaire groepen wordt geconcentreerd.
+De console van de Malplaatjes van de Plaats is zeer gelijkaardig aan [de console van de Malplaatjes van de Groep ](tools-groups.md), die op functies van belang voor communautaire groepen wordt geconcentreerd.
 
 >[!NOTE]
 >
->De consoles voor de verwezenlijking van [communautaire plaatsen](sites-console.md), de malplaatjes [van de](sites.md)communautaire plaats, [communautaire groepsmalplaatjes](tools-groups.md) en [communautaire functies](functions.md) zijn voor gebruik slechts in het auteursmilieu.
+>De consoles voor het maken van [communitysites](sites-console.md), [communitysitesjablonen](sites.md), [communitygroepssjablonen](tools-groups.md) en [communityfuncties](functions.md) zijn alleen bedoeld voor gebruik in de auteursomgeving.
 
 ## Sitesjabloonconsole {#site-templates-console}
 
@@ -32,13 +32,13 @@ In het auteursmilieu, om de console van communautaire plaatsen te bereiken:
 
 * Vanuit globale navigatie: **[!UICONTROL Tools > Communities > Site Templates]**
 
-Deze console toont de malplaatjes waarvan een [communautaire plaats](sites-console.md) kan worden gecreeerd en laat nieuwe plaatssjablonen toe om worden gecreeerd.
+Deze console toont de malplaatjes waarvan een [communityplaats](sites-console.md) kan worden gecreeerd en nieuwe plaatssjablonen om worden gecreeerd toe te staan.
 
 ![site-sjabloon](assets/site-template.png)
 
-## Sitesjabloon maken {#create-site-template}
+## Sitjabloon maken {#create-site-template}
 
-Selecteer `Create`.
+Selecteer `Create` om een nieuwe sitesjabloon te gaan maken.
 
 Hiermee wordt het deelvenster Site-editor weergegeven met drie subdeelvensters:
 
@@ -72,7 +72,7 @@ In het deelvenster Basisinformatie worden een naam, beschrijving en of de sjablo
 
 Als u communityfuncties wilt toevoegen, sleept u van de rechterkant naar links in de volgorde waarin de koppelingen in het sitemenu moeten worden weergegeven. Stijlen worden toegepast op de sjabloon tijdens het maken van de site.
 
-Als u bijvoorbeeld een homepage wilt, sleept u de functie Pagina uit de bibliotheek en zet u de pagina onder de sjabloonbuilder neer. Hierdoor wordt het dialoogvenster voor paginaconfiguratie geopend. Zie de [functieconsole](functions.md) voor informatie over de configuratievensters.
+Als u bijvoorbeeld een homepage wilt, sleept u de functie Pagina uit de bibliotheek en zet u de pagina onder de sjabloonbuilder neer. Hierdoor wordt het dialoogvenster voor paginaconfiguratie geopend. Zie [functies console](functions.md) voor informatie over de configuratievensters.
 
 U kunt doorgaan met slepen en neerzetten van alle andere communityfuncties die voor een communitysite op basis van deze sjabloon zijn gewenst.
 
@@ -80,19 +80,19 @@ De paginafunctie biedt een lege pagina. De groepsfunctie biedt de mogelijkheid o
 
 >[!CAUTION]
 >
->De groepfunctie mag *niet* de *eerste of de enige* functie in de sitestructuur zijn.
+>De groepsfunctie moet *niet* eerst of de enige functie *in de sitestructuur zijn.*
 >
->Alle andere functies, zoals de [paginafunctie](functions.md#page-function), moeten worden opgenomen en als eerste worden vermeld.
+>Elke andere functie, zoals de [paginafunctie](functions.md#page-function), moet worden opgenomen en als eerste worden vermeld.
 
 ![site-editor](assets/site-editor.png)
 
-### Groepsjablonen voor groepfuncties {#group-templates-for-groups-function}
+### Groepsjablonen voor groepsfuncties {#group-templates-for-groups-function}
 
 Wanneer het omvatten van een groepsfunctie in het plaatssjabloon, vereist de configuratie de specificatie van de keuzen van het groepsmalplaatje toegestaan wanneer een nieuwe groep in het publicatiemilieu wordt gecreeerd.
 
 >[!CAUTION]
 >
->De functie Groepen mag *niet* de *eerste of de enige* functie in de sitestructuur zijn.
+>De functie Groepen moet *niet* eerst zijn *noch de enige functie* in de sitestructuur.
 
 ![locatiefuncties](assets/site-functions.png)
 
@@ -102,6 +102,6 @@ Door twee of meer groepsmalplaatjes te selecteren, wordt een keus verstrekt aan 
 
 ## Sitesjabloon bewerken {#edit-site-template}
 
-Als u sitesjablonen weergeeft in de hoofdconsole [van](#site-templates-console)Sjablonen, is het mogelijk een bestaande sitesjabloon te selecteren om te bewerken.
+Als u sitesjablonen weergeeft in de hoofdconsole [Sitesjablonen](#site-templates-console), is het mogelijk een bestaande sitesjabloon te selecteren om te bewerken.
 
-Dit proces biedt dezelfde deelvensters als het [maken van een sitesjabloon](#create-site-template).
+Dit proces biedt dezelfde deelvensters als [het maken van een sitesjabloon](#create-site-template).

@@ -1,8 +1,8 @@
 ---
-title: Pagina's maken en ordenen
-seo-title: Pagina's maken en ordenen
-description: In deze sectie wordt beschreven hoe u pagina's kunt maken en beheren met AEM, zodat u vervolgens inhoud op die pagina's kunt maken.
-seo-description: In deze sectie wordt beschreven hoe u pagina's kunt maken en beheren met AEM, zodat u vervolgens inhoud op die pagina's kunt maken.
+title: Pagina's maken en indelen
+seo-title: Pagina's maken en indelen
+description: In deze sectie wordt beschreven hoe u pagina's met AEM kunt maken en beheren, zodat u vervolgens inhoud op die pagina's kunt maken.
+seo-description: In deze sectie wordt beschreven hoe u pagina's met AEM kunt maken en beheren, zodat u vervolgens inhoud op die pagina's kunt maken.
 uuid: 47ce137a-7a85-4b79-b4e0-fdf08a9e77bd
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 14b8758b-f164-429a-b299-33b0703f8bec
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '1935'
+ht-degree: 2%
 
 ---
 
 
-# Pagina&#39;s maken en ordenen{#creating-and-organizing-pages}
+# Pagina&#39;s maken en indelen{#creating-and-organizing-pages}
 
-In deze sectie wordt beschreven hoe u pagina&#39;s kunt maken en beheren met Adobe Experience Manager (AEM), zodat u vervolgens inhoud [op die pagina&#39;s kunt](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) maken.
+In deze sectie wordt beschreven hoe u pagina&#39;s kunt maken en beheren met Adobe Experience Manager (AEM), zodat u vervolgens [inhoud kunt maken](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) op deze pagina&#39;s.
 
 >[!NOTE]
 >
@@ -27,7 +30,7 @@ In deze sectie wordt beschreven hoe u pagina&#39;s kunt maken en beheren met Ado
 
 ## Uw website ordenen {#organizing-your-website}
 
-Als auteur moet u uw website organiseren binnen AEM. Dit betekent dat u inhoudspagina&#39;s maakt en een naam geeft, zodat:
+Als auteur moet u uw website binnen AEM organiseren. Dit betekent dat u inhoudspagina&#39;s maakt en een naam geeft, zodat:
 
 * u kunt ze gemakkelijk vinden in de ontwerpomgeving
 * bezoekers van uw site kunnen deze gemakkelijk in de publicatieomgeving bekijken
@@ -36,7 +39,7 @@ U kunt ook [mappen](#creating-a-new-folder) gebruiken om uw inhoud te ordenen.
 
 De structuur van een website kan worden beschouwd als een *boomstructuur* die uw inhoudspagina&#39;s bevat. De namen van deze inhoudspagina&#39;s worden gebruikt om URLs te vormen, terwijl de titel wordt getoond wanneer de paginainhoud wordt bekeken.
 
-Hieronder ziet u een extract van de Geometrixx-locatie; waar bijvoorbeeld de `Triangle` pagina wordt geopend:
+Hieronder ziet u een extract van de plaats van Geometrixx; waar, bijvoorbeeld, de `Triangle` pagina zal worden betreden:
 
 * Auteursomgeving
 
@@ -46,7 +49,7 @@ Hieronder ziet u een extract van de Geometrixx-locatie; waar bijvoorbeeld de `Tr
 
    `http://localhost:4503/content/geometrixx/en/products/triangle.html`
 
-   Afhankelijk van de configuratie van uw instantie, `/content` zou het gebruik van facultatief op het publiceren milieu kunnen zijn.
+   Afhankelijk van de configuratie van uw instantie, zou het gebruik van `/content` op het publicatiemilieu facultatief kunnen zijn.
 
 ```xml
   /content
@@ -68,11 +71,11 @@ Hieronder ziet u een extract van de Geometrixx-locatie; waar bijvoorbeeld de `Tr
     /...
 ```
 
-Deze structuur kan van de console van Websites worden bekeken, die u kunt gebruiken om door de boomstructuur [te](/help/sites-classic-ui-authoring/author-env-basic-handling.md#main-pars-text-15)navigeren.
+Deze structuur kan van de console van Websites worden bekeken, die u aan [kunt gebruiken door de boomstructuur ](/help/sites-classic-ui-authoring/author-env-basic-handling.md#main-pars-text-15) te navigeren.
 
 ![chlimage_1-151](assets/chlimage_1-151.png)
 
-### Naamgevingsconventies voor pagina&#39;s {#page-naming-conventions}
+### Paginanamen van conventies {#page-naming-conventions}
 
 Bij het maken van een nieuwe pagina zijn er twee sleutelvelden:
 
@@ -86,7 +89,7 @@ Bij het maken van een nieuwe pagina zijn er twee sleutelvelden:
    * Hiermee wordt de URI gegenereerd.
    * Gebruikersinvoer voor dit veld is optioneel. Indien niet opgegeven, wordt de naam afgeleid van de titel.
 
-Bij het maken van een nieuwe pagina [valideert AEM de paginanaam volgens de conventies](/help/sites-developing/naming-conventions.md) die door AEM en JCR worden opgelegd.
+Bij het maken van een nieuwe pagina valideert AEM [de paginanaam volgens de conventies](/help/sites-developing/naming-conventions.md) die door AEM en JCR zijn opgelegd.
 
 De implementatie en de lijst met toegestane tekens verschillen enigszins afhankelijk van de gebruikersinterface (deze is uitgebreider voor de interface met aanraakbediening), maar het minimaal toegestane aantal is:
 
@@ -96,49 +99,52 @@ De implementatie en de lijst met toegestane tekens verschillen enigszins afhanke
 * _ (onderstrepingsteken)
 * `-` (afbreekstreepje/minteken)
 
-Gebruik alleen deze tekens als u er zeker van wilt zijn dat deze worden geaccepteerd/gebruikt (zie [de naamgevingsconventies](/help/sites-developing/naming-conventions.md)als u alle gegevens over alle toegestane tekens wilt zien).
+Gebruik alleen deze tekens als u zeker wilt zijn dat deze worden geaccepteerd/gebruikt (zie [de naamgevingsconventies](/help/sites-developing/naming-conventions.md) als u volledige details van alle toegestane tekens nodig hebt).
 
 #### Titel {#title}
 
-Als u bij het maken van een nieuwe pagina alleen een paginatitel **opgeeft, leidt AEM de** paginanaam **af van deze tekenreeks en** valideert AEM de naam volgens de conventies [](/help/sites-developing/naming-conventions.md) die door AEM en JCR worden opgelegd. In beide UI&#39;s wordt een veld **Titel** met ongeldige tekens geaccepteerd, maar voor de afgeleide naam worden de ongeldige tekens vervangen. Bijvoorbeeld:
+Als u bij het maken van een nieuwe pagina alleen een **paginatitel** opgeeft, leidt AEM de **naam**[ van de pagina af van deze tekenreeks en valideert het de naam volgens de conventies die door AEM en JCR worden opgelegd. ](/help/sites-developing/naming-conventions.md) In beide UI&#39;s wordt een veld **Title** met ongeldige tekens geaccepteerd, maar voor de afgeleide naam worden de ongeldige tekens vervangen. Bijvoorbeeld:
 
 | Titel | Afgeleide naam |
 |---|---|
 | Schön | schoen.html |
-| SC%&amp;&amp;ast;ç+ | sc—c-.html |
+| SC%&amp;&amp;ast;ç+ | sc---c-.html |
 
 #### Naam {#name}
 
-Als u bij het maken van een nieuwe pagina een **paginanaam** opgeeft, zal AEM de naam [valideren volgens de conventies](/help/sites-developing/naming-conventions.md) die door AEM en JCR zijn opgelegd.
+Als u bij het maken van een nieuwe pagina **Naam** opgeeft, AEM [de naam valideren volgens de conventies](/help/sites-developing/naming-conventions.md) die door AEM en JCR zijn opgelegd.
 
-In de klassieke gebruikersinterface **kunt u geen ongeldige tekens** invoeren in het veld **Naam** .
+In de klassieke UI kunt u **geen ongeldige karakters** op **Naam** gebied ingaan.
 
 >[!NOTE]
->In de interface met aanraakbediening **kunt u geen ongeldige tekens** verzenden in het veld **Naam** . Wanneer AEM ongeldige tekens detecteert, wordt het veld gemarkeerd en wordt een verklarende melding weergegeven om aan te geven welke tekens moeten worden verwijderd/vervangen.
+>In de interface met aanraakbediening kunt u **geen ongeldige tekens verzenden** in het veld **Naam**. Wanneer AEM ongeldige tekens detecteert, wordt het veld gemarkeerd en wordt een verklarende melding weergegeven om aan te geven welke tekens moeten worden verwijderd/vervangen.
 
 >[!NOTE]
 >
 >Gebruik geen tweelettercode zoals gedefinieerd door ISO-639-1, tenzij het een hoofdtaalcode is.
 >
->See [Preparing Content for Translation](/help/sites-administering/tc-prep.md) for more information.
+>Zie [Inhoud voorbereiden voor vertaling](/help/sites-administering/tc-prep.md) voor meer informatie.
 
-### Templates {#templates}
+### Sjablonen {#templates}
 
-In AEM, specificeert een malplaatje een gespecialiseerd type van pagina. Een sjabloon wordt gebruikt als basis voor elke nieuwe pagina die wordt gemaakt.
+In AEM geeft een sjabloon een speciaal type pagina op. Een sjabloon wordt gebruikt als basis voor elke nieuwe pagina die wordt gemaakt.
 
 De sjabloon definieert de structuur van een pagina. inclusief een miniatuurafbeelding en andere eigenschappen. U hebt bijvoorbeeld aparte sjablonen voor productpagina&#39;s, sitemaps en contactgegevens. Sjablonen bestaan uit [componenten](#components).
 
-AEM wordt geleverd met verschillende sjablonen die u kunt vinden. De aangeboden sjablonen zijn afhankelijk van de afzonderlijke website en de informatie die moet worden verschaft (wanneer u de nieuwe pagina maakt) is afhankelijk van de gebruikte interface. De belangrijkste velden zijn:
+AEM wordt geleverd met verschillende sjablonen die buiten de box zijn geplaatst. De aangeboden sjablonen zijn afhankelijk van de afzonderlijke website en de informatie die moet worden verschaft (wanneer u de nieuwe pagina maakt) is afhankelijk van de gebruikte interface. De belangrijkste velden zijn:
 
-* **Titel** De titel die op de resulterende webpagina wordt weergegeven.
+* ****
+TitelDe titel die op de resulterende webpagina wordt weergegeven.
 
-* **Naam** die wordt gebruikt bij de naamgeving van de pagina.
+* ****
+NaamGebruikt bij het benoemen van de pagina.
 
-* **Template** A lijst van malplaatjes beschikbaar voor gebruik wanneer het produceren van de nieuwe pagina.
+* ****
+TemplateA lijst van malplaatjes beschikbaar voor gebruik wanneer het produceren van de nieuwe pagina.
 
-### Componenten {#components}
+### Onderdelen {#components}
 
-Componenten zijn de elementen die door AEM worden geleverd, zodat u specifieke typen inhoud kunt toevoegen. AEM wordt geleverd met een reeks out-of-the-box componenten die uitgebreide functionaliteit bieden; deze omvatten :
+Componenten zijn de elementen die worden verschaft door AEM, zodat u specifieke typen inhoud kunt toevoegen. AEM wordt geleverd met een reeks out-of-the-box componenten die uitgebreide functionaliteit bieden; deze omvatten :
 
 * Tekst
 * Afbeelding
@@ -146,39 +152,39 @@ Componenten zijn de elementen die door AEM worden geleverd, zodat u specifieke t
 * Video
 * veel meer
 
-Nadat u een pagina hebt gemaakt en geopend, kunt u inhoud [toevoegen met behulp van de componenten](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#insertinganewparagraph)die beschikbaar zijn in het [zijpaneel](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekick).
+Nadat u een pagina hebt gemaakt en geopend, kunt u [inhoud toevoegen met de componenten](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#insertinganewparagraph), beschikbaar via [sidekick](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekick).
 
-## Pagina&#39;s beheren {#managing-pages}
+## Pagina&#39;s {#managing-pages} beheren
 
 ### Een nieuwe pagina maken {#creating-a-new-page}
 
 Tenzij alle pagina&#39;s vooraf voor u zijn gemaakt, moet u een pagina maken voordat u inhoud kunt gaan maken:
 
-1. Selecteer in de **websiteconsole** het niveau waarop u een nieuwe pagina wilt maken.
+1. Selecteer in de console **Websites** het niveau waarop u een nieuwe pagina wilt maken.
 
-   In het volgende voorbeeld maakt u een pagina onder het niveau **Producten** - weergegeven in het linkervenster. In het rechterdeelvenster ziet u pagina&#39;s die al op het niveau onder **Producten** staan.
+   In het volgende voorbeeld maakt u een pagina onder het niveau **Products** - weergegeven in het linkerdeelvenster. In het rechterdeelvenster worden pagina&#39;s weergegeven die al op het niveau onder **Producten** staan.
 
    ![screen_shot_2012-02-15at114413am](assets/screen_shot_2012-02-15at114413am.png)
 
-1. **** In het dialoogvenster **Nieuw... (klik op de pijl naast** Nieuw...**) en selecteer** Nieuwe pagina... . Het venster Pagina **** maken wordt geopend.
+1. In **Nieuw..** (klik op de pijl naast **Nieuw...**), selecteer **Nieuwe pagina..**. Het venster **Pagina maken** wordt geopend.
 
-   **** Klikken op **Nieuw... Deze zelf fungeert ook als een snelkoppeling naar de** nieuwe pagina... optie.
+   Klikken op **Nieuw...** zelf fungeert ook als een sneltoets voor de **Nieuwe pagina..** optie.
 
-1. In het dialoogvenster Pagina **** maken kunt u:
+1. Met het dialoogvenster **Pagina maken** kunt u:
 
-   * Geef een **titel**; dit wordt aan de gebruiker getoond.
-   * Geef een **naam** op; this wordt gebruikt om URI te genereren. Als deze niet wordt opgegeven, wordt de naam afgeleid van de titel.
+   * Geef een **Titel**; dit wordt aan de gebruiker getoond.
+   * Geef een **naam**; this wordt gebruikt om URI te genereren. Als deze niet wordt opgegeven, wordt de naam afgeleid van de titel.
 
-      * Als u bij het maken van een nieuwe pagina een **paginanaam** opgeeft, zal AEM de naam [valideren volgens de conventies](/help/sites-developing/naming-conventions.md) die door AEM en JCR zijn ingesteld.
-      * In de klassieke UI **kunt u geen ongeldige karakters** op het gebied van de **Naam** ingaan.
+      * Als u bij het maken van een nieuwe pagina **Naam** opgeeft, AEM [de naam valideren volgens de conventies](/help/sites-developing/naming-conventions.md) die door AEM en JCR zijn opgelegd.
+      * In de klassieke UI kunt u **geen ongeldige karakters** op **Naam** gebied ingaan.
    * Klik op de sjabloon die u wilt gebruiken om de nieuwe pagina te maken.
 
       De template wordt gebruikt als basis voor de nieuwe pagina; bijvoorbeeld om de basislay-out van een inhoudspagina te bepalen.
    >[!NOTE]
    >
-   >Zie conventies voor [paginanamen](#page-naming-conventions).
+   >Zie [Naamgevingsconventies voor pagina&#39;s](#page-naming-conventions).
 
-   De minimale informatie die nodig is om een nieuwe pagina te maken, is de **titel** en de vereiste sjabloon.
+   De minimale informatie die nodig is om een nieuwe pagina te maken, is de **Titel** en de vereiste sjabloon.
 
    ![screen_shot_2012-02-15at114845am](assets/screen_shot_2012-02-15at114845am.png)
 
@@ -186,43 +192,44 @@ Tenzij alle pagina&#39;s vooraf voor u zijn gemaakt, moet u een pagina maken voo
    >
    >Als u Unicode-tekens in de URL&#39;s wilt gebruiken, stelt u de eigenschap Alias ( `sling:alias`) ([pagina-eigenschappen](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)) in.
 
-1. Klik op **Maken** om de pagina te maken. U keert aan de console van **Websites** terug waar u een ingang voor de nieuwe pagina kunt zien.
+1. Klik **Maken** om de pagina te maken. U keert aan **Websites** console terug waar u een ingang voor de nieuwe pagina kunt zien.
 
    De console verstrekt informatie over de pagina (bijvoorbeeld wanneer het laatst werd uitgegeven en door wie) die zonodig wordt bijgewerkt.
 
    >[!NOTE]
    >
-   >U kunt ook een pagina maken wanneer u een bestaande pagina bewerkt. Als u **Onderliggende pagina maken **vanaf het tabblad **Pagina** van het zijpaneel gebruikt, wordt een nieuwe pagina direct onder de pagina gemaakt die wordt bewerkt.
+   >U kunt ook een pagina maken wanneer u een bestaande pagina bewerkt. Als u **Onderliggende pagina maken **gebruikt op het tabblad **Pagina** van het hulpwerkgebied, wordt direct onder de pagina een nieuwe pagina gemaakt die wordt bewerkt.
 
 ### Een pagina openen voor bewerken {#opening-a-page-for-editing}
 
-U kunt de pagina die u wilt [bewerken](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#editing-a-component-content-and-properties) op een van de volgende manieren openen:
+U kunt de pagina die [bewerkt moet worden, op een van de volgende manieren openen:](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#editing-a-component-content-and-properties)
 
-* Vanuit de **websiteconsole** kunt u **dubbelklikken** op de pagina-ingang om deze te openen en te bewerken.
+* Vanuit de **Websites**-console kunt u **dubbelklikken** op de pagina-ingang om deze te openen voor bewerking.
 
-* Vanuit de **websiteconsole** kunt u met de **rechtermuisknop op het pagina-item klikken** (contextmenu) en vervolgens **Openen** in het menu kiezen.
+* Van **Websites** console, kunt u **met de rechtermuisknop** (contextmenu) het paginapunt, dan selecteren **Open** van het menu.
 
 * Nadat u een pagina hebt geopend, kunt u naar andere pagina&#39;s binnen de site navigeren (om deze te bewerken) door op hyperlinks te klikken.
 
-### Pagina&#39;s kopiëren en plakken {#copying-and-pasting-a-page}
+### Een pagina {#copying-and-pasting-a-page} kopiëren en plakken
 
 Tijdens het kopiëren kunt u een van de volgende twee documenten kopiëren:
 
 * één pagina
 * een pagina samen met alle subpagina&#39;s
 
-1. Selecteer in de **websiteconsole** de pagina die u wilt kopiëren.
+1. Selecteer in de console **Websites** de pagina die u wilt kopiëren.
 
    >[!NOTE]
    >
    >In dit stadium is het irrelevant of u één pagina of de onderliggende subpagina&#39;s wilt kopiëren.
 
-1. Klik op **Kopiëren**.
+1. Klik **Kopiëren**.
 
 1. Navigeer naar de nieuwe locatie en klik op:
 
-   * **Plakken** - om de pagina samen met alle subpagina&#39;s te plakken
-   * **Shift + Plakken** - alleen de geselecteerde pagina plakken
+   * **Plakken**  - om de pagina samen met alle subpagina&#39;s te plakken
+   * **Shift + Plakken**  - alleen om de geselecteerde pagina te plakken
+
    De pagina(&#39;s) worden op de nieuwe locatie geplakt.
 
    >[!NOTE]
@@ -231,13 +238,13 @@ Tijdens het kopiëren kunt u een van de volgende twee documenten kopiëren:
 
    >[!NOTE]
    >
-   >U kunt ook Pagina **** kopiëren vanaf het tabblad **Pagina** van het hulpwerkgebied gebruiken. Hiermee wordt een dialoogvenster geopend waarin u het doel kunt opgeven, enzovoort.
+   >U kunt ook **Pagina kopiëren** van **Pagina** tabel van het hulpstuk gebruiken. Hiermee wordt een dialoogvenster geopend waarin u het doel kunt opgeven, enzovoort.
 
-### Pagina verplaatsen of hernoemen {#moving-or-renaming-page}
+### Pagina {#moving-or-renaming-page} verplaatsen of hernoemen
 
 >[!NOTE]
 >
->Als u de naam van een pagina wijzigt, gelden de naamgevingsconventies [voor de](#page-naming-conventions) pagina ook voor het opgeven van de nieuwe paginanaam.
+>Voor het wijzigen van de naam van een pagina gelden ook [Paginanamen van conventies](#page-naming-conventions) bij het opgeven van de nieuwe paginanaam.
 
 De procedure voor het verplaatsen of hernoemen van een pagina is hetzelfde. Met dezelfde handeling kunt u:
 
@@ -245,17 +252,17 @@ De procedure voor het verplaatsen of hernoemen van een pagina is hetzelfde. Met 
 * de naam van een pagina op dezelfde locatie wijzigen
 * een pagina naar een nieuwe locatie verplaatsen en tegelijkertijd de naam ervan wijzigen
 
-Met AEM kunt u interne koppelingen bijwerken naar de pagina waarvan de naam wordt gewijzigd of die wordt verplaatst. Dit kan per pagina worden gedaan om volledige flexibiliteit te bieden.
+AEM biedt u de functionaliteit om interne koppelingen bij te werken naar de pagina die wordt hernoemd of verplaatst. Dit kan per pagina worden gedaan om volledige flexibiliteit te bieden.
 
 Een pagina verplaatsen of de naam ervan wijzigen:
 
 1. Er zijn verschillende methoden om een verplaatsing te activeren:
 
-   * Klik in de **websiteconsole** om de pagina te selecteren en selecteer vervolgens **Verplaatsen...**
-   * In de **websiteconsole** kunt u ook het pagina-item selecteren, vervolgens met de **rechtermuisknop klikken** en **Verplaatsen selecteren...**
-   * Wanneer u een pagina bewerkt, kunt u Pagina **** verplaatsen selecteren op het tabblad **Pagina** van het hulpstuk.
+   * Klik in de console **Websites** om de pagina te selecteren en selecteer vervolgens **Verplaatsen...**
+   * In de **Websites**-console kunt u ook het pagina-item selecteren, vervolgens **met de rechtermuisknop** en **Verplaatsen...**
+   * Wanneer u een pagina bewerkt, kunt u **Pagina verplaatsen** selecteren op het tabblad **Pagina** van het zijpaneel.
 
-1. Het venster **Verplaatsen** wordt geopend. Hier kunt u een nieuwe locatie, een nieuwe naam voor de pagina of beide opgeven.
+1. Het venster **Move** wordt geopend; Hier kunt u een nieuwe locatie, een nieuwe naam voor de pagina of beide opgeven.
 
    ![screen_shot_2012-02-15at121336pm](assets/screen_shot_2012-02-15at121336pm.png)
 
@@ -279,7 +286,7 @@ Een pagina verplaatsen of de naam ervan wijzigen:
 
    * **Aanpassen**
 
-      Werk de koppelingen op de pagina bij die naar de verplaatste pagina verwijzen: Als pagina A bijvoorbeeld koppelingen naar pagina B bevat, past AEM de koppelingen op pagina A aan voor het geval u pagina B verplaatst.
+      Werk de koppelingen op de pagina bij die naar de verplaatste pagina verwijzen: Als pagina A bijvoorbeeld koppelingen naar pagina B bevat, AEM de koppelingen op pagina A aan voor het geval u pagina B verplaatst.
 
       Dit kan voor elke afzonderlijke verwijzende pagina worden geselecteerd/worden geschrapt.
 
@@ -288,45 +295,45 @@ Een pagina verplaatsen of de naam ervan wijzigen:
       De verwijzende pagina opnieuw publiceren; ook dit kan voor elke afzonderlijke pagina worden geselecteerd.
    >[!NOTE]
    >
-   >Als de pagina al is geactiveerd, wordt deze automatisch gedeactiveerd wanneer u de pagina verplaatst. De functie wordt standaard opnieuw geactiveerd wanneer de verplaatsing is voltooid, maar dit kan veranderen door het veld **Opnieuw** publiceren voor de pagina in het venster **Verplaatsen** uit te schakelen.
+   >Als de pagina al is geactiveerd, wordt deze automatisch gedeactiveerd wanneer u de pagina verplaatst. Het wordt standaard opnieuw geactiveerd wanneer de verplaatsing is voltooid, maar dit kan worden gewijzigd door het veld **Opnieuw publiceren** voor de pagina uit te schakelen in het venster **Verplaatsen**.
 
-1. Klik op **Verplaatsen**. Bevestiging is vereist. Klik op **OK** om te bevestigen.
+1. Klik **Verplaatsen**. Bevestiging is vereist. Klik **OK** om te bevestigen.
 
    >[!NOTE]
    >
    >De paginatitel wordt niet bijgewerkt.
 
-### Een pagina verwijderen {#deleting-a-page}
+### Een pagina {#deleting-a-page} verwijderen
 
 1. U kunt een pagina van diverse plaatsen schrappen:
 
-   * Klik in de **websiteconsole** om de pagina te selecteren, klik met de rechtermuisknop en selecteer **Verwijderen** in het resulterende menu.
-   * Klik in de **websiteconsole** om de pagina te selecteren en selecteer vervolgens **Verwijderen** in het werkbalkmenu.
-   * Kies in de assistent het tabblad **Pagina** om Pagina **** verwijderen te selecteren. Hiermee verwijdert u de pagina die momenteel is geopend.
+   * Klik in de **Websites**-console om de pagina te selecteren, klik vervolgens met de rechtermuisknop en selecteer **Delete** in het resulterende menu.
+   * Klik in de **Websites**-console om de pagina te selecteren en selecteer vervolgens **Delete** in het werkbalkmenu.
+   * Gebruik in sidekick het tabblad **Pagina** om **Pagina verwijderen** te selecteren - hiermee verwijdert u de pagina die momenteel is geopend.
 
 1. Nadat u hebt geselecteerd om een pagina te verwijderen, moet u de aanvraag bevestigen - aangezien de actie niet ongedaan kan worden gemaakt.
 
    >[!NOTE]
    >
-   >Als de pagina na verwijdering is gepubliceerd, kunt u de nieuwste (of een specifieke) versie herstellen, maar deze heeft mogelijk niet precies dezelfde inhoud als de laatste versie als er verdere wijzigingen zijn aangebracht. Zie [Pagina](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoringpages) &#39;sherstellen voor meer informatie.
+   >Als de pagina na verwijdering is gepubliceerd, kunt u de nieuwste (of een specifieke) versie herstellen, maar deze heeft mogelijk niet precies dezelfde inhoud als de laatste versie als er verdere wijzigingen zijn aangebracht. Zie [Pagina&#39;s herstellen](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoringpages) voor meer informatie.
 
 >[!NOTE]
 >
 >Als een pagina al is geactiveerd, wordt deze automatisch gedeactiveerd voordat de pagina wordt verwijderd.
 
-### Een pagina vergrendelen {#locking-a-page}
+### Een pagina {#locking-a-page} vergrendelen
 
-U kunt een pagina [](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page) vergrendelen/ontgrendelen vanuit een console of wanneer u een afzonderlijke pagina bewerkt. Informatie over het feit of een pagina is vergrendeld, wordt ook op beide locaties weergegeven.
+U kunt een pagina [vergrendelen/ontgrendelen](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page) vanuit een console of wanneer u een afzonderlijke pagina bewerkt. Informatie over het feit of een pagina is vergrendeld, wordt ook op beide locaties weergegeven.
 
 ### Nieuwe map maken {#creating-a-new-folder}
 
 >[!NOTE]
 >
->Mappen zijn ook onderworpen aan de conventies voor [paginanamen](#page-naming-conventions) wanneer u de nieuwe mapnaam opgeeft.
+>Mappen zijn ook onderworpen aan [Paginanamen Conventions](#page-naming-conventions) wanneer u de nieuwe mapnaam opgeeft.
 
-1. Open de **websiteconsole** en navigeer naar de gewenste locatie.
-1. **** In het dialoogvenster **Nieuw... (klik op de pijl naast** Nieuw...**) en selecteer** Nieuwe map... .
-1. Het dialoogvenster Map **** maken wordt geopend. Hier kunt u de **naam** en de **titel** invoeren:
+1. Open de **Websites** console en navigeer naar de gewenste locatie.
+1. In **Nieuw..** (klik op de pijl naast **Nieuw...**), selecteer **Nieuwe map..**.
+1. Het dialoogvenster **Map maken** wordt geopend. Hier kunt u **Naam** en **Titel** ingaan:
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
 

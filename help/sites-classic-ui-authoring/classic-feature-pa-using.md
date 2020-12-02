@@ -12,11 +12,14 @@ discoiquuid: 28529cae-6fbd-4879-a5b8-3ec8e1bcd586
 docset: aem65
 translation-type: tm+mt
 source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+workflow-type: tm+mt
+source-wordcount: '106'
+ht-degree: 0%
 
 ---
 
 
-# Gegevens van paginaanalyse bekijken{#seeing-page-analytics-data}
+# Gegevens voor paginanalyse bekijken{#seeing-page-analytics-data}
 
 Gebruik analysegegevens van de pagina om de doeltreffendheid van hun pagina-inhoud te meten.
 
@@ -30,4 +33,4 @@ De analysegegevens van de pagina worden getoond in de console van Plaatsen. Wann
 
 >[!NOTE]
 >
->Gegevens voor siteanalyse rechtstreeks weergeven in de console is alleen beschikbaar in de geoptimaliseerde interface voor aanrakingen. Zie [Gegevens](/help/sites-authoring/page-analytics-using.md) van de Analyse van de Pagina in de standaard auteursdocumentatie voor details zien.
+>Gegevens voor siteanalyse rechtstreeks weergeven in de console is alleen beschikbaar in de geoptimaliseerde interface voor aanrakingen. Zie [Gegevens van de Analyse van de Pagina](/help/sites-authoring/page-analytics-using.md) in de standaard auteursdocumentatie voor details.

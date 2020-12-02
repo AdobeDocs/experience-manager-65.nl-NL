@@ -20,7 +20,7 @@ ht-degree: 7%
 
 # Werken met workflows{#working-with-workflows}
 
-Met AEM Workflows kunt u een reeks stappen automatiseren die worden uitgevoerd op (een of meer) pagina&#39;s en/of elementen.
+Met AEM workflows kunt u een reeks stappen automatiseren die worden uitgevoerd op (een of meer) pagina&#39;s en/of elementen.
 
 Wanneer u bijvoorbeeld publiceert, moet een editor de inhoud controleren voordat een sitebeheerder de pagina activeert. Een werkschema dat dit voorbeeld automatiseert brengt elke deelnemer op de hoogte wanneer het tijd is om hun vereist werk uit te voeren:
 

@@ -35,21 +35,21 @@ Gebruik deze aanbevolen procedures bij het maken van uw eigen nieuwsbrief.
 
 >[!NOTE]
 >
->Alle inhoud van de campagne moet worden gemaakt onder een `master` pagina van het type `cq/personalization/components/ambitpage`.
+>Alle inhoud van de campagne moet worden gemaakt onder een `master`-pagina van het type `cq/personalization/components/ambitpage`.
 >
 >Bijvoorbeeld als uw geplande campagnestructuur ongeveer als volgt is
 >
 >`/content/campaigns/teasers/en/campaign-promotion-global`
 >
->Zorg ervoor dat het onder een `master` pagina staat
+>Zorg ervoor dat het bestand zich onder een `master`-pagina bevindt
 >
 >`/content/campaigns/teasers/master/en/campaign-promotion-global`
 
 >[!NOTE]
 >
->Wanneer u een mailsjabloon voor Adobe Campaign maakt, moet u de eigenschap **Mapping** met de waarde **mapRecipient** opnemen in het knooppunt **jcr:content** van de sjabloon, anders kunt u de Adobe Campaign-sjabloon niet selecteren in **Pagina-eigenschappen** van AEM (veld is uitgeschakeld).
+>Wanneer u een mailsjabloon voor Adobe Campaign maakt, moet u de eigenschap **acMapping** met de waarde **mapRecipient** opnemen in het **jcr:content**-knooppunt van de sjabloon, anders kunt u de Adobe Campaign-sjabloon niet selecteren in **Pagina-eigenschappen** van AEM (veld is uitgeschakeld).
 
-## Sjabloon/pagina-component {#template-page-component}
+## Sjabloon/paginacomponent {#template-page-component}
 
 ***/libs/mcm/campagne/components/campagne_newsletterpage***
 
@@ -61,7 +61,7 @@ Gebruik deze aanbevolen procedures bij het maken van uw eigen nieuwsbrief.
   </tr>
   <tr>
    <td><p>Geef het documenttype op om consistente rendering te garanderen.</p> <p>DOCTYPE aan het begin toevoegen (HTML of XHTML)</p> </td>
-   <td><p>Kan worden geconfigureerd door het ontwerp waardoor de eigenschap <i>cq:doctype</i> in<i>"/etc/designs/default/jcr:content/campagne_newsletterpage" wordt gewijzigd</i></p> <p>De standaardwaarde is "XHTML":</p> <p>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</p> <p>Kan worden gewijzigd in "HTML_5":</p> <p>&lt;!DOCTYPE HTML&gt;</p> </td>
+   <td><p>Is configureerbaar door ontwerp veranderend <i>cq:doctype</i> bezit in <i>"/etc/designs/default/jcr:content/campagne_newsletterpage"</i></p> <p>De standaardwaarde is "XHTML":</p> <p>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</p> <p>Kan worden gewijzigd in "HTML_5":</p> <p>&lt;!DOCTYPE HTML&gt;</p> </td>
   </tr>
   <tr>
    <td><p>Geef een tekendefinitie op om ervoor te zorgen dat speciale tekens correct worden weergegeven.</p> <p>CHARSET-declaratie (bijvoorbeeld iso-8859-15, UTF-8) toevoegen aan &lt;head&gt;</p> </td>
@@ -69,11 +69,11 @@ Gebruik deze aanbevolen procedures bij het maken van uw eigen nieuwsbrief.
   </tr>
   <tr>
    <td><p>Codeer alle structuur met behulp van het &lt;table&gt;element. Voor complexere lay-outs moet u tabellen nesten om complexe structuren te maken.</p> <p>E-mail moet er goed uitzien, zelfs zonder css.</p> </td>
-   <td><p>Tabellen worden in de gehele sjabloon gebruikt voor het structureren van inhoud. Momenteel met maximaal vier geneste tabellen (1 basislabel + max.) 3 nestniveaus)</p> <p>&lt;div&gt;-tags worden alleen in de ontwerpmodus gebruikt voor een juiste componentbewerking.</p> </td>
+   <td><p>Tabellen worden in de gehele sjabloon gebruikt voor het structureren van inhoud. Momenteel met maximaal vier geneste tabellen (1 basislabel + max.) 3 nestniveaus)</p> <p>&lt;div&gt; -tags worden alleen gebruikt in de ontwerpmodus voor een juiste componentbewerking.</p> </td>
   </tr>
   <tr>
    <td>Gebruik elementkenmerken (zoals celopvulling, valsing en breedte) om tabelafmetingen in te stellen. Dit dwingt een box-model structuur.</td>
-   <td><p>Alle tabellen bevatten noodzakelijke kenmerken, zoals <i>rand</i>, <i>celopvulling</i>, <i>celafstand</i> en <i>breedte</i>.</p> <p>Om de plaatsing van elementen in tabellen te harmoniseren, hebben alle tabelcellen het kenmerk <i>valign="top"</i> dat wordt ingesteld.</p> </td>
+   <td><p>Alle tabellen bevatten noodzakelijke kenmerken, zoals <i>border</i>, <i>cellpadding</i>, <i>cellspacing</i> en <i>width</i>.</p> <p>Om de plaatsing van elementen in tabellen te harmoniseren, hebben alle tabelcellen het kenmerk <i>valign="top"</i> dat wordt ingesteld.</p> </td>
   </tr>
   <tr>
    <td><p>Indien mogelijk rekening houden met de vriendelijkheid van mobiele apparaten. Gebruik mediaquery's om de tekstgrootte op kleine schermen te verhogen en selecteer aanraakgebieden met de grootte van het blokje voor koppelingen.</p> <p>Maak een e-mail ontvankelijk als het ontwerp het toestaat.</p> </td>
@@ -89,7 +89,7 @@ Gebruik deze aanbevolen procedures bij het maken van uw eigen nieuwsbrief.
   </tr>
   <tr>
    <td>E-mails moeten een maximale breedte van 600-800 pixels hebben. Hierdoor kunnen ze zich beter gedragen binnen de grootte van het voorvertoningsvenster die door veel clients wordt geboden.</td>
-   <td>De <i>breedte</i> van de inhoudstabel is beperkt tot 600px in duoontwerp.</td>
+   <td>De <i>breedte</i> van de inhoudstafel is beperkt tot 600px in duoontwerp.</td>
   </tr>
  </tbody>
 </table>
@@ -100,10 +100,10 @@ Gebruik deze aanbevolen procedures bij het maken van uw eigen nieuwsbrief.
 
 | **Beste praktijken** | **Implementatie** |
 |---|---|
-| Alternatieve ** kenmerken toevoegen aan afbeeldingen | Het kenmerk *alt* is gedefinieerd als verplicht voor de afbeeldingscomponent. |
-| JPG- *indeling* gebruiken in plaats van *png* -indeling voor afbeeldingen | Afbeeldingen worden altijd als JPG weergegeven door de afbeeldingscomponent. |
-| Gebruik `<img>` elementen in plaats van achtergrondafbeeldingen in een tabel. | Er worden geen achtergrondafbeeldingsgegevens gebruikt in de sjablonen. |
-| Kenmerkstijl=&quot;weergaveblok&quot; toevoegen aan afbeeldingen. Staat toe om goed op Gmail te tonen. | Alle afbeeldingen bevatten standaard het kenmerk *style=&quot;display block&quot;* . |
+| *alt*-kenmerken toevoegen aan afbeeldingen | Het kenmerk *alt* is gedefinieerd als verplicht voor de afbeeldingscomponent. |
+| Gebruik *jpg* in plaats van *png*-indeling voor afbeeldingen | Afbeeldingen worden altijd als JPG weergegeven door de afbeeldingscomponent. |
+| Gebruik het element `<img>` in plaats van achtergrondafbeeldingen in een tabel. | Er worden geen achtergrondafbeeldingsgegevens gebruikt in de sjablonen. |
+| Kenmerkstijl=&quot;weergaveblok&quot; toevoegen aan afbeeldingen. Staat toe om goed op Gmail te tonen. | Alle afbeeldingen bevatten standaard het *style=&quot;display block&quot;*-kenmerk. |
 
 ### Tekst en koppelingen {#text-and-links}
 
@@ -120,7 +120,7 @@ Gebruik deze aanbevolen procedures bij het maken van uw eigen nieuwsbrief.
    <td>De RichTextEditor (bijvoorbeeld in de component van de textielafbeelding) ondersteunt nu het kiezen en toepassen van lettertypefamilies en tekengrootten op geselecteerde teksten. Ze worden weergegeven als &lt;font&gt;-tags.</td>
   </tr>
   <tr>
-   <td>Gebruik standaardlettertypen voor verschillende platforms, zoals <i>Arial, Verdana, Georgia</i> en <i>Times New Roman</i>.</td>
+   <td>Gebruik basale, platformonafhankelijke lettertypen zoals <i>Arial, Verdana, Georgia</i> en <i>Times New Roman</i>.</td>
    <td><p>Afhankelijk van het ontwerp van de nieuwsbrief.</p> <p>Voor het demo-ontwerp wordt het lettertype "Helvetica" gebruikt, maar het wordt teruggezet naar het algemene sans-serif-lettertype, indien dit niet aanwezig is.</p> </td>
   </tr>
  </tbody>
@@ -130,7 +130,7 @@ Gebruik deze aanbevolen procedures bij het maken van uw eigen nieuwsbrief.
 
 | **Beste praktijken** | **Implementatie** |
 |---|---|
-| Gebruik W3C-validatie om de HTML-code te corrigeren. Zorg ervoor dat alle open labels goed zijn gesloten. | Code is gevalideerd. Voor XHTML-overgangsdocument ontbreekt alleen het ontbrekende xmlns-kenmerk voor het `<html>` element. |
+| Gebruik W3C-validatie om de HTML-code te corrigeren. Zorg ervoor dat alle open labels goed zijn gesloten. | Code is gevalideerd. Bij XHTML-overgangsdocument ontbreekt alleen het ontbrekende xmlns-kenmerk voor het `<html>`-element. |
 | Let niet op met JavaScript of Flash - deze technologieën worden grotendeels niet ondersteund door e-mailclients. | JavaScript en Flash worden niet gebruikt in de sjabloon voor nieuwsbrieven. |
 | Voeg een gewone tekstversie toe voor het verzenden van meerdere onderdelen. | Er is een nieuwe widget toegevoegd aan de pagina-eigenschappen om eenvoudig een plaintekstversie uit de pagina-inhoud te extraheren. Dit kan als uitgangspunt voor de definitieve plaintext versie worden gebruikt. |
 
@@ -142,13 +142,13 @@ AEM wordt geleverd met verschillende sjablonen en componenten uit de doos die u 
 
 Er zijn drie enigszins verschillende sjabloontypen beschikbaar uit het vak om een solide basis aan te bieden en de verscheidenheid aan mogelijkheden voor inhoudsstroom uit te breiden. U kunt deze eenvoudig gebruiken om een aangepaste nieuwsbrief te maken.
 
-Alles heeft een **koptekst**, een **voettekst** en een **hoofdtekst** . Onder de hoofdsectie verschilt elke sjabloon in **kolomontwerp** (1, 2 of 3 kolommen).
+Alle hebben een **header**, een **footer** en een **body** sectie. Onder de lichaamssectie verschilt elke sjabloon in **kolomontwerp** (1, 2 of 3 kolommen).
 
 ![](assets/chlimage_1-69.png)
 
 ### Onderdelen {#components}
 
-Er zijn momenteel [zeven componenten beschikbaar voor gebruik binnen campagnemalplaatjes](/help/sites-authoring/adobe-campaign-components.md). Deze componenten zijn allemaal gebaseerd op de Adobe-opmaaktaal **HTL**.
+Er zijn momenteel [zeven componenten beschikbaar voor gebruik binnen campagnemalplaatjes](/help/sites-authoring/adobe-campaign-components.md). Deze componenten zijn allen gebaseerd op de Adobe prijsverhogingstaal **HTL**.
 
 | **Componentnaam** | **Componentpad** |
 |---|---|
@@ -164,4 +164,4 @@ Er zijn momenteel [zeven componenten beschikbaar voor gebruik binnen campagnemal
 >
 >Deze componenten zijn geoptimaliseerd voor e-mailinhoud. dat wil zeggen dat zij zich houden aan de beste praktijken die in dit document worden beschreven. Het gebruiken van andere uit-van-de-doos componenten zal gewoonlijk deze regels overtreden.
 
-Deze componenten worden gedetailleerd beschreven in [Adobe Campaign-componenten](/help/sites-authoring/adobe-campaign-components.md).
+Deze componenten worden in detail beschreven in [Adobe Campaign components](/help/sites-authoring/adobe-campaign-components.md).

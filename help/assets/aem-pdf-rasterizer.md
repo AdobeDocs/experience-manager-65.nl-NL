@@ -1,6 +1,6 @@
 ---
 title: PDF-rasterfunctie gebruiken om uitvoeringen te genereren
-description: Genereer miniaturen en uitvoeringen van hoge kwaliteit met de Adobe PDF Rasterizer-bibliotheek in [!DNL Adobe Experience Manager].
+description: U genereert miniaturen en uitvoeringen van hoge kwaliteit met de Adobe PDF Rasterizer-bibliotheek in [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
@@ -11,7 +11,7 @@ ht-degree: 0%
 ---
 
 
-# PDF-raster gebruiken {#using-pdf-rasterizer}
+# PDF-rasterfunctie gebruiken {#using-pdf-rasterizer}
 
 Wanneer u grote, inhoudintensieve PDF- of AI-bestanden uploadt naar [!DNL Adobe Experience Manager Assets], genereert de standaardomzetting mogelijk geen nauwkeurige uitvoer. PDF Rasterizer-bibliotheek kan een betrouwbaardere en nauwkeurigere uitvoer genereren in vergelijking met de uitvoer uit een standaardbibliotheek. Adobe raadt u aan de PDF Rasterizer-bibliotheek te gebruiken voor de volgende scenario&#39;s:
 
@@ -21,7 +21,7 @@ Wanneer u grote, inhoudintensieve PDF- of AI-bestanden uploadt naar [!DNL Adobe 
 
 Miniaturen en voorvertoningen die worden gegenereerd met PDF Rasterizer, zijn beter in kwaliteit dan uitvoer in de buitenverpakking en bieden daarom een consistente kijkervaring op verschillende apparaten. De Adobe PDF Rasterizer-bibliotheek ondersteunt geen kleurruimteconversie. De uitvoer wordt altijd naar RGB uitgevoerd, ongeacht de kleurruimte van het bronbestand.
 
-1. Installeer het PDF-rasterpakket op uw [!DNL Adobe Experience Manager] implementatie bij [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg).
+1. Installeer het PDF Rasterizer-pakket op de [!DNL Adobe Experience Manager]-implementatie van [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg).
 
    >[!NOTE]
    >
@@ -31,30 +31,30 @@ Miniaturen en voorvertoningen die worden gegenereerd met PDF Rasterizer, zijn be
 
 1. Voer de volgende stappen uit om te voorkomen dat de standaardmethoden worden gebruikt voor het genereren van miniaturen en webvertoningen voor PDF- en AI-bestanden:
 
-   * Open de **[!UICONTROL Process Thumbnails]** stap en voeg `application/pdf` of voeg desgewenst in het `application/postscript` veld onder het **[!UICONTROL Skip Mime Types]** **[!UICONTROL Thumbnails]** tabblad toe.
+   * Open de stap **[!UICONTROL Process Thumbnails]** en voeg `application/pdf` of `application/postscript` toe in het veld **[!UICONTROL Skip Mime Types]** onder het tabblad **[!UICONTROL Thumbnails]** indien nodig.
 
    ![skip_mime_types-2](assets/skip_mime_types-2.png)
 
-   * Voeg op het **[!UICONTROL Web Enabled Image]** tabblad naar wens toe `application/pdf` of `application/postscript` onder **[!UICONTROL Skip List]** .
+   * Voeg op het tabblad **[!UICONTROL Web Enabled Image]** `application/pdf` of `application/postscript` toe onder **[!UICONTROL Skip List]**, afhankelijk van uw vereisten.
 
    ![Configuratie om de verwerking van miniaturen voor een afbeeldingsindeling over te slaan](assets/web_enabled_imageskiplist.png)
 
-1. Open de **[!UICONTROL Rasterize PDF/AI Image Preview Rendition]** stap en verwijder het MIME-type waarvoor u de standaardgeneratie voorvertoningsafbeeldingsuitvoeringen wilt overslaan. Verwijder bijvoorbeeld het MIME-type `application/pdf`, `application/postscript`of `application/illustrator` uit de **[!UICONTROL MIME Types]** lijst.
+1. Open de stap **[!UICONTROL Rasterize PDF/AI Image Preview Rendition]** en verwijder het MIME-type waarvoor u de standaardgeneratie van voorvertoningsafbeeldingsuitvoeringen wilt overslaan. Verwijder bijvoorbeeld het MIME-type `application/pdf`, `application/postscript` of `application/illustrator` uit de lijst **[!UICONTROL MIME Types]**.
 
    ![process_arguments](assets/process_arguments.png)
 
-1. Sleep de **[!UICONTROL PDF Rasterizer Handler]** stap van het zijpaneel naar onder de **[!UICONTROL Process Thumbnails]** stap.
-1. Configureer de volgende argumenten voor de **[!UICONTROL PDF Rasterizer Handler]** stap:
+1. Sleep de stap **[!UICONTROL PDF Rasterizer Handler]** van het zijpaneel naar onder de stap **[!UICONTROL Process Thumbnails]**.
+1. Configureer de volgende argumenten voor de stap **[!UICONTROL PDF Rasterizer Handler]**:
 
    * MIME-typen: `application/pdf` of `application/postscript`
    * Opdrachten: `PDFRasterizer -d -p 1 -s 1280 -t PNG -i ${file}`
    * Miniatuurgrootten toevoegen: 319:319, 140:100, 48:48. Voeg indien nodig aangepaste miniatuurconfiguratie toe.
 
-   De opdrachtregelargumenten voor de `PDFRasterizer` opdracht kunnen het volgende bevatten:
+   De opdrachtregelargumenten voor de opdracht `PDFRasterizer` kunnen het volgende bevatten:
 
    * `-d`: Vlag om het vloeiend weergeven van tekst, vectorillustraties en afbeeldingen mogelijk te maken. Hiermee maakt u afbeeldingen van betere kwaliteit. Het opnemen van deze parameter zorgt er echter voor dat de opdracht langzaam wordt uitgevoerd en dat de afbeeldingen groter worden.
 
-   * `-p`: Paginanummer. De standaardwaarde is alle pagina&#39;s. Als u alle pagina&#39;s wilt aangeven, gebruikt u `*`.
+   * `-p`: Paginanummer. De standaardwaarde is alle pagina&#39;s. Om alle pagina&#39;s aan te duiden, gebruik `*`.
 
    * `-s`: Maximale afmetingen afbeelding (hoogte of breedte). Deze wordt voor elke pagina geconverteerd naar DPI. Als de pagina&#39;s van verschillende grootte zijn, kan elke pagina potentieel met verschillende hoeveelheid schalen. De standaardinstelling is het daadwerkelijke paginaformaat.
 
@@ -67,28 +67,28 @@ Miniaturen en voorvertoningen die worden gegenereerd met PDF Rasterizer, zijn be
 
 1. Als u tussenliggende vertoningen wilt verwijderen, selecteert u **[!UICONTROL Delete Generated Rendition]**.
 
-1. Selecteer PDF Rasterizer om webuitvoeringen te laten genereren. **[!UICONTROL Generate Web Rendition]**
+1. Selecteer **[!UICONTROL Generate Web Rendition]** als u wilt dat PDF Rasterizer webuitvoeringen genereert.
 
    ![generate_web_renditions1](assets/generate_web_renditions1.png)
 
-1. Geef de instellingen op het **[!UICONTROL Web Enabled Image]** tabblad op.
+1. Geef de instellingen op op het tabblad **[!UICONTROL Web Enabled Image]**.
 
    ![web_enabled_image1](assets/web_enabled_image1.png)
 
 1. Sla de workflow op.
 
-1. Als u PDF-rasterfunctie wilt inschakelen voor het verwerken van PDF-pagina&#39;s met PDF-bibliotheken, opent u het **[!UICONTROL DAM Process Subasset]** model via de [!UICONTROL Workflow] console.
+1. Als u wilt dat PDF-rasterfunctie PDF-pagina&#39;s kan verwerken met PDF-bibliotheken, opent u het **[!UICONTROL DAM Process Subasset]**-model in de console [!UICONTROL Workflow].
 
-1. Sleep vanuit het zijpaneel de stap PDF Rasterizer Handler onder de **[!UICONTROL Create Web-Enabled Image Rendition]** stap.
+1. Sleep vanuit het zijpaneel de stap PDF Rasterizer Handler onder de stap **[!UICONTROL Create Web-Enabled Image Rendition]**.
 
-1. Configureer de volgende argumenten voor de **[!UICONTROL PDF Rasterizer Handler]** stap:
+1. Configureer de volgende argumenten voor de stap **[!UICONTROL PDF Rasterizer Handler]**:
 
    * MIME-typen: `application/pdf` of `application/postscript`
 
    * Opdrachten: `PDFRasterizer -d -p 1 -s 1280 -t PNG -i ${file}`
    * Miniatuurgrootten toevoegen: `319:319`, `140:100`, `48:48`. Voeg desgewenst aangepaste miniatuurconfiguratie toe.
 
-   De opdrachtregelargumenten voor de `PDFRasterizer` opdracht kunnen het volgende bevatten:
+   De opdrachtregelargumenten voor de opdracht `PDFRasterizer` kunnen het volgende bevatten:
 
    * `-d`: Vlag om het vloeiend weergeven van tekst, vectorillustraties en afbeeldingen mogelijk te maken. Hiermee maakt u afbeeldingen van betere kwaliteit. Het opnemen van deze parameter zorgt er echter voor dat de opdracht langzaam wordt uitgevoerd en dat de afbeeldingen groter worden.
 
@@ -104,11 +104,11 @@ Miniaturen en voorvertoningen die worden gegenereerd met PDF Rasterizer, zijn be
 
 
 1. Als u tussenliggende vertoningen wilt verwijderen, selecteert u **[!UICONTROL Delete Generated Rendition]**.
-1. Selecteer PDF Rasterizer om webuitvoeringen te laten genereren. **[!UICONTROL Generate Web Rendition]**
+1. Selecteer **[!UICONTROL Generate Web Rendition]** als u wilt dat PDF Rasterizer webuitvoeringen genereert.
 
    ![generate_web_renditions](assets/generate_web_renditions.png)
 
-1. Geef de instellingen op het **[!UICONTROL Web Enabled Image]** tabblad op.
+1. Geef de instellingen op op het tabblad **[!UICONTROL Web Enabled Image]**.
 
    ![web_enabled_image-1](assets/web_enabled_image-1.png)
 

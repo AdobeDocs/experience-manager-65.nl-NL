@@ -14,57 +14,60 @@ pagetitle: Deploying eCommerce with Demandware
 redirecttarget: https //github.com/adobe/commerce-salesforce
 translation-type: tm+mt
 source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+workflow-type: tm+mt
+source-wordcount: '481'
+ht-degree: 2%
 
 ---
 
 
 # Salesforce Commerce Cloud{#salesforce-commerce-cloud}
 
-De implementatie van de noodzakelijke e-commercepakketten zal de volledige functionaliteit van het eCommerce-kader bieden, samen met een referentie-implementatie van de eCommerce-functionaliteit zoals voorzien van een implementatie van Salesforce Commerce Cloud/Demandware (inclusief een demonstratiecatalogus).
+De implementatie van de noodzakelijke e-commercepakketten zal de volledige functionaliteit van het eCommerce-kader bieden, samen met een referentie-implementatie van de eCommerce-functionaliteit zoals voorzien van een Salesforce Commerce Cloud/Demandware-implementatie (inclusief een demonstratiecatalogus).
 
 ## Pakketten nodig voor e-handel met Salesforce Commerce Cloud {#packages-needed-for-ecommerce-with-salesforce-commerce-cloud}
 
 Voor de installatie van eCommerce-functionaliteit hebt u het volgende nodig:
 
-* AEM e-Commerce-kader:
+* AEM eCommerce-kader:
 
-   * dit is onderdeel van een standaard AEM-installatie
+   * dit maakt deel uit van een standaard AEM installatie
 
-* Inhoud van AEM Demandware Commerce-pakket
+* AEM pakket met informatie over de softwarehandel
 
    * cq-6.4.0-featurepack-10262
 
 >[!NOTE]
 >
->Deze integratie steunt de instanties van de Koophandel van de Koophandel van Salesforce Cloud/Demandware die worden gevormd om OCAPI versie 17.6 of later te gebruiken.
+>Deze integratie steunt instanties Salesforce Commerce Cloud/Demandware die worden gevormd om OCAPI versie 17.6 of later te gebruiken.
 
 ### Installatie van eCommerce met Salesforce Commerce Cloud {#installation-of-ecommerce-with-salesforce-commerce-cloud}
 
-Om AEM met een de integratieconfiguratie van de Handel van de Demandware (gebruikend de demonstratiecatalogus, Geometrixx Buiten) te installeren, zijn de basisstappen:
+Om AEM met een de integratieconfiguratie van de Handel van de Demandware te installeren (gebruikend de demonstratiecatalogus, Geometrixx Outdoors), zijn de basisstappen:
 
-1. [Installeer AEM](/help/sites-deploying/deploy.md).
+1. [AEM](/help/sites-deploying/deploy.md) installeren.
 1. Installeer het inhoudspakket met behulp van [pakketbeheer](/help/sites-administering/package-manager.md):
-1. [Maak](/help/sites-authoring/page-authoring.md) aanvullende pagina&#39;s die u in AEM nodig hebt.
+1. [](/help/sites-authoring/page-authoring.md) Geef aanvullende pagina&#39;s op die u in AEM nodig hebt.
 
 >[!NOTE]
 >
->Navigeer naar [Pakket delen](/help/sites-administering/package-manager.md#package-share)om de pakketten te downloaden.
+>Navigeer naar [Delen van pakket](/help/sites-administering/package-manager.md#package-share) om de pakketten te downloaden.
 
-De serververbinding tussen AEM en de Duidelijke Sandbox moet worden gevormd. Het grootste deel van de configuratie is reeds preconfigured om met het verstrekte pakket van de de demo inhoud te werken SiteGenisis gebruikend standaardwegen, bibliotheken, etc. Als de schakelaar met andere plaatsen en bibliotheken wordt gebruikt, zult u deze configuratie moeten bijwerken.
+De serververbinding tussen AEM en de Duidelijke Sandbox moet worden gevormd. Het grootste deel van de configuratie is reeds preconfigured om met het verstrekte pakket van de de demo van SiteGenisis inhoud te werken gebruikend standaardwegen, bibliotheken, etc. Als de schakelaar met andere plaatsen en bibliotheken wordt gebruikt, zult u deze configuratie moeten bijwerken.
 
-1. Ga naar [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
-1. Klik op **Demandware Client**.
-1. Ga het eindpunt van de **Instantie ip of hostname** in zoals vereist.
+1. Navigeer naar [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
+1. Klik **Demandware Client**.
+1. Ga **Instantie eindpunt ip of hostname** in zoals vereist.
 
    ![chlimage_1-5](assets/chlimage_1-5.png)
 
-1. Click **Save**.
-1. Klik **Insteekmodule van de Vraag TransportHandler voor WebDAV**.
+1. Klik **Opslaan**.
+1. Klik **De Insteekmodule van TransportHandler van de Vraag voor WebDAV**.
 1. Stel de **WebDAV-gebruiker** en het **WebDAV-gebruikerswachtwoord** in.
 
    ![chlimage_1-6](assets/chlimage_1-6.png)
 
-1. Click **Save**.
+1. Klik **Opslaan**.
 
 #### Replicatie {#replication}
 
@@ -80,8 +83,8 @@ De OAuth-client is geconfigureerd om te werken met een veeleisende sandbox-insta
 
 Voor het opvoeren en de productiesystemen, moeten de cliënten OAuth met aangewezen cliëntidentiteitskaart en wachtwoord worden gevormd.
 
-1. Ga naar [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
-1. Klik op **Tokenprovider** voor toegang tot hardware.
+1. Navigeer naar [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
+1. Klik **De Token van de Toegang van de Vraag leverancier**.
 
    ![chlimage_1-7](assets/chlimage_1-7.png)
 
@@ -93,17 +96,17 @@ De Duandware Sandbox moet worden gevormd om de nieuwe het malplaatjemotor van de
 
 >[!NOTE]
 >
->De volgende wizard maakt geen deel uit van de AEM Demandware-connector. Deze pagina wordt geleverd als onderdeel van het pakket met demo-inhoud, zodat u snel de SiteGenesis-demopagina&#39;s kunt instellen.
+>De volgende tovenaar maakt geen deel uit van de AEM schakelaar van de Demandware. Deze pagina wordt geleverd als onderdeel van het pakket met demo-inhoud, zodat u snel de SiteGenesis-demopagina&#39;s kunt instellen.
 
-1. Ga naar [https://localhost:4502/etc/demandware/init.html](https://localhost:4502/etc/demandware/init.html).
-1. Click **Edit.**
-1. Controleer de waarden en klik op **OK**.
-1. Klik op **Initialiseren**.
-1. Ga naar de WebDAV-map en controleer op gepubliceerde sjabloonbestanden, bijvoorbeeld onder `adobe01-tech-prtnr-na01-dw.demandware.net/on/demandware.servlet/webdav/Sites/Dynamic/SiteGenesis`.
+1. Navigeer naar [https://localhost:4502/etc/demandware/init.html](https://localhost:4502/etc/demandware/init.html).
+1. Klik **Bewerken.**
+1. Verifieer de waarden en klik **OK**.
+1. Klik **Initialiseren**.
+1. Ga naar de WebDAV omslag en controleer voor gepubliceerde malplaatjedossiers, bijvoorbeeld onder `adobe01-tech-prtnr-na01-dw.demandware.net/on/demandware.servlet/webdav/Sites/Dynamic/SiteGenesis`.
 
    >[!NOTE]
    >
-   >De extensie wordt `.vs`.
+   >De extensie is `.vs`.
 
-1. Controleer ook op geëxporteerde JS- en CSS-bestanden, bijvoorbeeld onder `adobe01-tech-prtnr-na01-dw.demandware.net/on/demandware.servlet/webdav/Sites/Libraries/SiteGenesisSharedLibrary`.
+1. Schakel ook in voor geëxporteerde JS- en CSS-bestanden, bijvoorbeeld onder `adobe01-tech-prtnr-na01-dw.demandware.net/on/demandware.servlet/webdav/Sites/Libraries/SiteGenesisSharedLibrary`.
 

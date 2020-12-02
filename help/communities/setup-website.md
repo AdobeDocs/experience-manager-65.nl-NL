@@ -18,7 +18,7 @@ ht-degree: 2%
 ---
 
 
-# Websitestructuur instellen {#setup-website-structure}
+# Websitestructuur {#setup-website-structure} instellen
 
 In de onderstaande instructies worden de mappen beschreven die op de volgende locaties moeten worden gemaakt om uw website in te stellen:
 
@@ -34,7 +34,7 @@ In de onderstaande instructies worden de mappen beschreven die op de volgende lo
 
    Hier bevinden zich de downloadbare webpagina&#39;s.
 
-De code in deze zelfstudie vertrouwt erop dat de naam van de hoofdmap gelijk is voor de toepassing, het ontwerp en de inhoud. Als u een andere naam voor uw website kiest, vervangt u deze altijd `an-scf-sandbox` door de naam die u hebt gekozen.
+De code in deze zelfstudie vertrouwt erop dat de naam van de hoofdmap gelijk is voor de toepassing, het ontwerp en de inhoud. Als u een andere naam voor uw website kiest, vervangt u `an-scf-sandbox` altijd door de naam die u hebt gekozen.
 
 >[!NOTE]
 >
@@ -50,36 +50,36 @@ De code in deze zelfstudie vertrouwt erop dat de naam van de hoofdmap gelijk is 
    >   * onderstrepingsteken wordt &#39;_005f&#39;
 
 
-## De toepassingsmap (/apps) instellen {#setup-the-application-directory-apps}
+## De toepassingsmap (/apps) {#setup-the-application-directory-apps} instellen
 
 De map /apps in de opslagplaats bevat de code met implementaties van het gedrag en de rendering van de pagina&#39;s die vanuit de map /content worden aangeboden.
 
 De map /apps is beveiligd en niet toegankelijk voor het publiek, net als de mappen /content en /etc/designs.
 
-1. Map maken `/apps/an-scf-sandbox` .
+1. Map `/apps/an-scf-sandbox` maken.
 
-   Werken **[!UICONTROL CRXDE Lite]**, in het deelvenster Verkenner
+   Het gebruiken van **[!UICONTROL CRXDE Lite]**, in de verkenner ruit
 
-   1. Selecteer de `/apps` map.
-   1. Klikken met rechtermuisknop **[!UICONTROL Create]**... of trek het **[!UICONTROL Create...]** menu omlaag.
+   1. Selecteer de map `/apps`.
+   1. Klik met de rechtermuisknop **[!UICONTROL Create]**.. of trek het **[!UICONTROL Create...]** menu onderaan.
    1. Selecteer **[!UICONTROL Create Folder...]**.
-   1. In the **[!UICONTROL Create Folder]** dialog, enter `an-scf-sandbox`.
+   1. Typ `an-scf-sandbox` in het dialoogvenster **[!UICONTROL Create Folder]**.
    1. Klik op **[!UICONTROL OK]**.
 
-1. Submap maken **[!UICONTROL components]** .
+1. Submap **[!UICONTROL components]** maken.
 
-   1. Selecteer de `/apps/an-scf-sandbox` map.
+   1. Selecteer de map `/apps/an-scf-sandbox`.
    1. Klik op **[!UICONTROL Create > Create Folder]**.
-   1. In the **[!UICONTROL Create Folder]** dialog, enter **[!UICONTROL components]**.
+   1. Typ **[!UICONTROL components]** in het dialoogvenster **[!UICONTROL Create Folder]**.
    1. Klik op **[!UICONTROL OK]**.
 
-1. Submap maken **[!UICONTROL templates]** .
+1. Submap **[!UICONTROL templates]** maken.
 
-   1. Selecteer de `/apps/an-scf-sandbox` map.
+   1. Selecteer de map `/apps/an-scf-sandbox`.
    1. Klik op **[!UICONTROL Create > Create Folder]**.
-   1. In the **[!UICONTROL Create Folder]** dialog, enter **[!UICONTROL templates]**.
+   1. Typ **[!UICONTROL templates]** in het dialoogvenster **[!UICONTROL Create Folder]**.
    1. Klik op **[!UICONTROL OK]**.
-   1. Opnieuw selecteren `/apps/an-scf-sandbox`.
+   1. Selecteer `/apps/an-scf-sandbox` opnieuw.
    1. Selecteer **[!UICONTROL Save All]**.
 
    Net als bij elk bewerkingsproces, kunt u dit vaak opslaan. Als u problemen ondervindt met het invoeren van gegevens, kan dit zijn omdat er een time-out is opgetreden bij uw aanmelding of omdat u vorige bewerkingen moet opslaan.
@@ -88,15 +88,15 @@ De map /apps is beveiligd en niet toegankelijk voor het publiek, net als de mapp
 
    ![crxde-template](assets/crxde-template.png)
 
-## De ontwerpmap instellen (/etc/designs) {#setup-the-design-directory-etc-designs}
+## Stel de ontwerpmap (/etc/designs) {#setup-the-design-directory-etc-designs} in
 
 De map /etc/designs bevat de afbeeldingen, scripts en opmaakmodellen die samen met de pagina-inhoud moeten worden gedownload.
 
 1. Als u het Designer-gereedschap wilt gebruiken in de klassieke gebruikersinterface, bladert u naar [https://&lt;server>:&lt;port>/miscadmin](http://localhost:4502/miscadmin).
 
-   Opmerking: Als u CRXDE Lite gebruikt om een Knoop van type tot stand te brengen `cq:Page`, zouden het Toegangsbeheer en de Replicatie niet aan standaardmontages voor een pagina worden geplaatst.
+   Opmerking: Als u CRXDE Lite gebruikt om een Knoop van type `cq:Page` tot stand te brengen, zouden het Toegangsbeheer en de Replicatie niet aan standaardmontages voor een pagina worden geplaatst.
 
-1. Selecteer de **[!UICONTROL Designs]** map in het deelvenster Verkenner en klik op **[!UICONTROL New]** > **[!UICONTROL New Page]**.
+1. Selecteer in het verkendervenster de map **[!UICONTROL Designs]** en klik vervolgens op **[!UICONTROL New]** > **[!UICONTROL New Page]**.
 
    Enter:
 
@@ -116,8 +116,8 @@ De map /etc/designs bevat de afbeeldingen, scripts en opmaakmodellen die samen m
 
    ![crxde-configure-template](assets/crxde-configure-template.png)
 
-## De inhoudsdirectory (/inhoud) instellen {#setup-the-content-directory-content}
+## De inhoudsdirectory (/inhoud) {#setup-the-content-directory-content} instellen
 
 De map /content in de opslagmap is waar de website-inhoud zich bevindt. De paden onder /content bestaan uit de paden van de URL voor browserverzoeken.
 
-*Nadat* de [paginasjabloon](initial-app.md#createthepagetemplate) is gemaakt als onderdeel van de oorspronkelijke toepassing, kan de eerste pagina-inhoud worden gemaakt op basis van de sjabloon.... [**ê**](initial-app.md)
+** Nadat de  [paginamjablonen zijn ](initial-app.md#createthepagetemplate) gemaakt als onderdeel van de oorspronkelijke toepassing, kan de eerste pagina-inhoud worden gemaakt op basis van de sjabloon....  [**ê**](initial-app.md)

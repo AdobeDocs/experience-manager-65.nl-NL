@@ -11,13 +11,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7d0d4f96-fc72-4e2b-a2cc-5741b0a30f74
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '386'
+ht-degree: 0%
 
 ---
 
 
 # Eindpunten toevoegen, inschakelen, wijzigen of verwijderen {#adding-enabling-modifying-or-removing-endpoints}
 
-## Voeg een eindpunt aan de dienst toe {#add-an-endpoint-to-a-service}
+## Een eindpunt toevoegen aan een service {#add-an-endpoint-to-a-service}
 
 Eindpunten kunnen alleen aan services worden toegevoegd. Een eindpunt kan niet alleen bestaan; het moet met een dienst worden geassocieerd.
 
@@ -40,7 +43,7 @@ Eindpunten kunnen alleen aan services worden toegevoegd. Een eindpunt kan niet a
 
 1. Klik op Toevoegen.
 
-## Een eindpunt in- of uitschakelen {#enable-or-disable-an-endpoint}
+## Een eindpunt {#enable-or-disable-an-endpoint} in- of uitschakelen
 
 Nieuwe eindpunten worden standaard automatisch ingeschakeld. Maar als u een eindpunt hebt onbruikbaar gemaakt, zult u het voor het operationeel moeten toelaten.
 
@@ -49,7 +52,7 @@ Als u problemen met de diensten ervaart, maak de bijbehorende eindpunten onbruik
 1. Klik in de beheerconsole op Services > Toepassingen en services > Eindpuntbeheer.
 1. Voor de pagina van het Beheer van het Eindpunt, selecteer de controledoos voor het eindpunt om toe te laten of onbruikbaar te maken en toe te laten of onbruikbaar te maken en te klikken of onbruikbaar te maken.
 
-## Een eindpunt wijzigen {#modify-an-endpoint}
+## Een eindpunt {#modify-an-endpoint} wijzigen
 
 >[!NOTE]
 >
@@ -67,7 +70,7 @@ Als u problemen met de diensten ervaart, maak de bijbehorende eindpunten onbruik
 
 U kunt deze taak van de pagina van het Beheer van de Dienst ook doen door de dienst te selecteren en dan de Eindpunten tabel te klikken.
 
-## Een eindpunt verwijderen {#remove-an-endpoint}
+## Een eindpunt {#remove-an-endpoint} verwijderen
 
 1. Klik in de beheerconsole op Services > Toepassingen en services > Eindpuntbeheer.
 1. Voor de pagina van het Beheer van het Eindpunt, selecteer de controledoos voor het eindpunt te verwijderen en te klikken verwijdert. Het eindpunt wordt niet meer weergegeven.

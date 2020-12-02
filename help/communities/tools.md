@@ -19,7 +19,7 @@ ht-degree: 0%
 ---
 
 
-# Community-gereedschappen {#communities-tools}
+# Gemeenschapsgereedschappen {#communities-tools}
 
 Meld u aan bij de auteur voor toegang tot de console met EG-gereedschappen:
 
@@ -27,15 +27,15 @@ Meld u aan bij de auteur voor toegang tot de console met EG-gereedschappen:
 
    ![gemeenschappen](assets/communities-home.png)
 
-* [Sitesjablonen](sites.md) - Console voor het maken en beheren van sitesjablonen.
+* [Sitesjablonen](sites.md)  - Console voor het maken en beheren van sitesjablonen.
 
-* [Groepssjablonen](tools-groups.md) - Console voor het maken en beheren van groepssjablonen.
+* [Groepssjablonen](tools-groups.md)  - Console voor het maken en beheren van groepssjablonen.
 
-* [Community Functions](functions.md) - Console for community function creation and management.
+* [Community Functions](functions.md)  - Console for community function creation and management.
 
-* [Opslagconfiguratie](srp-config.md) - Console voor configuratie en selectie van de [standaard SRP](working-with-srp.md).
+* [Opslagconfiguratie](srp-config.md)  - Console voor configuratie en selectie van de  [standaard SRP](working-with-srp.md).
 
-* [De Gids](components-guide.md) van de component - opent een interactieve plaats die voor experimenteren met hoe de componenten SCF werken en hoe zij kunnen worden gevormd of worden aangepast.
+* [De Gids](components-guide.md)  van de component - opent een interactieve plaats die voor experimenteren met hoe de componenten SCF werken en hoe zij kunnen worden gevormd of worden aangepast.
 
-* [Badges](badges.md) - Console waaruit aangepaste badges kunnen worden toegevoegd voor gebruik in [scoring- en badingregels](implementing-scoring.md)
+* [Badges](badges.md)  - Console waaruit aangepaste badges kunnen worden toegevoegd voor gebruik in  [scoring- en badingregels](implementing-scoring.md)
 

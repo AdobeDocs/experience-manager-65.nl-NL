@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Door gebruiker gegenereerde inhoud labelen {#tagging-user-generated-content}
+# Door gebruiker gegenereerde inhoud {#tagging-user-generated-content} labelen
 
 ## Overzicht {#overview}
 
@@ -28,7 +28,7 @@ Codes worden doorgaans toegepast door auteurs en beheerders in de auteursomgevin
 
 De tagnaamruimten en taxonomieën zijn voor beide toepassingen hetzelfde.
 
-## Functies van Gemeenschappen {#communities-features}
+## Functies {#communities-features} van Gemeenschappen
 
 De AEM Communities-functies die kunnen worden geconfigureerd om tags toe te staan, zijn:
 
@@ -38,13 +38,13 @@ De AEM Communities-functies die kunnen worden geconfigureerd om tags toe te staa
 * [Forum](forum.md#configuretheaddedforum)
 * [Vragen en antwoorden](working-with-qna.md)
 
-## Tags beheren {#administering-tags}
+## Labels {#administering-tags} beheren
 
-Zie [Tags](../../help/sites-administering/tags.md#tagging-console) beheren voor het maken en beheren van tagnaamruimten en -taxonomieën.
+Zie [Tags beheren](../../help/sites-administering/tags.md#tagging-console) voor het maken en beheren van tagnaamruimten en -taxonomieën.
 
-Zie Grondbeginselen van [tags](tag.md) voor informatie over ontwikkelaars.
+Zie [Tagelementen](tag.md) voor informatie over ontwikkelaars.
 
-Zie [De cloud](tagcloud.md) voor sociale tags gebruiken voor het toevoegen van een component Social Tag Cloud aan een pagina om het zoeken naar een gepubliceerde UGC met behulp van de toegepaste tags te vergemakkelijken.
+Zie [Cloud van sociale tag gebruiken](tagcloud.md) voor het toevoegen van een component van de sociale tag Cloud aan een pagina om het zoeken naar geposte UGC met behulp van de toegepaste tags te vergemakkelijken.
 
 ### Tagmachtigingen {#tag-permissions}
 
@@ -52,9 +52,9 @@ De standaardmachtigingen zijn ingesteld om te voorkomen dat tagnaamruimten worde
 
 Omdat tags worden toegepast op UGC in de publicatieomgeving, moet leesmachtigingen zijn ingeschakeld voor leden van de community om tags te kunnen selecteren die moeten worden toegepast.
 
-Zie Tagmachtigingen [instellen](../../help/sites-administering/tags.md#setting-tag-permissions).
+Zie [Tagmachtigingen instellen](../../help/sites-administering/tags.md#setting-tag-permissions).
 
-Hieronder ziet u hoe het wordt weergegeven in CRXDE wanneer een beheerder leesmachtigingen toepast op `/etc/tag/discussions` de groep `Community Engage Members`.
+Hieronder wordt beschreven hoe de code wordt weergegeven in CRXDE wanneer een beheerder leesmachtigingen toepast op `/etc/tag/discussions` voor de groep `Community Engage Members`.
 
 ![tagmachtigingen](assets/tag-permissions.png)
 

@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 23768c73-ac64-4727-8313-160c8c131b05
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '804'
+ht-degree: 1%
 
 ---
 
@@ -23,11 +26,11 @@ U kunt de vereiste eigenschappen voor een pagina definiëren. Deze kunnen afhank
 
 De eigenschappen zijn verdeeld over verschillende tabbladen:
 
-### Basis {#basic}
+### Standaard {#basic}
 
 * **Titel**
 
-   De titel van de pagina wordt op verschillende locaties weergegeven. Bijvoorbeeld de lijst op het tabblad **Websites** en de weergave van de **Sites** -kaart/lijst.
+   De titel van de pagina wordt op verschillende locaties weergegeven. Bijvoorbeeld de **Tablijst Websites** en de **Kaart/lijstweergaven van** Sites.
 
    Dit is een verplicht veld.
 
@@ -53,7 +56,7 @@ De eigenschappen zijn verdeeld over verschillende tabbladen:
 
 * **Navigatietitel**
 
-   U kunt een aparte titel opgeven voor gebruik in de navigatie (bijvoorbeeld als u iets beknopter wilt). Als de waarde leeg is, wordt de **titel** gebruikt.
+   U kunt een aparte titel opgeven voor gebruik in de navigatie (bijvoorbeeld als u iets beknopter wilt). Als dit leeg is, wordt **Title** gebruikt.
 
 * **Ondertitel**
 
@@ -65,7 +68,7 @@ De eigenschappen zijn verdeeld over verschillende tabbladen:
 
 * **Op tijd**
 
-   De datum en het tijdstip waarop de gepubliceerde pagina wordt geactiveerd. Wanneer deze pagina wordt gepubliceerd, blijft deze slapend tot de opgegeven tijd.
+   De datum en het tijdstip waarop de gepubliceerde pagina wordt geactiveerd. Wanneer deze pagina wordt gepubliceerd, blijft deze sluimerend tot de opgegeven tijd.
 
    Laat deze velden leeg voor pagina&#39;s die u direct wilt publiceren (het normale scenario).
 
@@ -79,7 +82,7 @@ De eigenschappen zijn verdeeld over verschillende tabbladen:
 
    Hiermee kunt u een vanity-URL voor deze pagina invoeren. Hierdoor hebt u een kortere en expressievere URL.
 
-   Als bijvoorbeeld de URL van Vanity is ingesteld op w `elcome`op de pagina die wordt aangegeven door het pad/ `v1.0/startpage`voor de website h, `ttp://example.com,` zou dat de ijdeloze URL van h `ttp://example.com/welcome`zijn `ttp://example.com/content/v1.0/startpage`
+   Als de URL vanity bijvoorbeeld is ingesteld op w `elcome`op de pagina die wordt aangeduid met het pad / `v1.0/startpage`voor de website h `ttp://example.com,`, zou h `ttp://example.com/welcome`de vanity URL van h `ttp://example.com/content/v1.0/startpage` zijn
 
    >[!CAUTION]
    >
@@ -105,7 +108,7 @@ De eigenschappen zijn verdeeld over verschillende tabbladen:
 
 * **Ontwerp**
 
-   Geef het [ontwerp](/help/sites-developing/designer.md) op dat voor deze pagina moet worden gebruikt.
+   Geef het [ontwerp](/help/sites-developing/designer.md) aan dat voor deze pagina moet worden gebruikt.
 
 * **Alias**
 
@@ -149,35 +152,35 @@ De eigenschappen zijn verdeeld over verschillende tabbladen:
 
 * **Cloud Services**
 
-   Eigenschappen definiëren voor [cloudservices](/help/sites-developing/extending-cloud-config.md).
+   Definieer eigenschappen voor [cloudservices](/help/sites-developing/extending-cloud-config.md).
 
 ### Personalisatie {#personalization}
 
 * **Personalisatie**
 
-   Selecteer een [merk om een bereik voor het instellen van doelen](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md)op te geven.
+   Selecteer een [Merk om een werkingsgebied voor het richten ](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md) te specificeren.
 
-### Permissions {#permissions}
+### Machtigingen {#permissions}
 
-* **Machtigingen** (interface met aanraakgeoptimaliseerde interface)
+* **Machtigingen**  (interface met aanraakgeoptimaliseerde interface)
 
-   Bekijk de [effectieve machtigingen en voeg nieuwe machtigingen](/help/sites-administering/user-group-ac-admin.md)toe.
+   Bekijk de [effectieve toestemmingen en voeg nieuwe toestemmingen](/help/sites-administering/user-group-ac-admin.md) toe.
 
 ### Blauwdruk {#blueprint}
 
 * **Blauwdruk**
 
-   Definieer eigenschappen voor een pagina Vervagen binnen [beheer](/help/sites-administering/msm.md)met meerdere sites. Hiermee bepaalt u de omstandigheden waaronder wijzigingen worden doorgegeven aan Live kopie.
+   Definieer eigenschappen voor een pagina Vervagen binnen [beheer op meerdere locaties](/help/sites-administering/msm.md). Hiermee bepaalt u de omstandigheden waaronder wijzigingen worden doorgegeven aan Live kopie.
 
 ### Live kopie {#live-copy}
 
 * **Livecopy**
 
-   Definieer eigenschappen voor een Live Copy-pagina in [beheer](/help/sites-administering/msm.md)met meerdere sites. Hiermee bepaalt u de omstandigheden waaronder wijzigingen worden doorgegeven via het blauwdruk.
+   Definieer eigenschappen voor een pagina van Live kopie binnen [beheer met meerdere sites](/help/sites-administering/msm.md). Hiermee bepaalt u de omstandigheden waaronder wijzigingen worden doorgegeven via het blauwdruk.
 
 ### Sitestructuur {#site-structure}
 
-* Koppelingen maken naar pagina&#39;s die voor de hele site functionaliteit bieden, zoals **Aanmeldingspagina**, **Offline pagina**.
+* Koppelingen maken naar pagina&#39;s die functionaliteit voor de hele site bieden, zoals **Aanmelden van pagina**, **Offlinepagina**, onder andere.
 
 ## Pagina-eigenschappen bewerken {#editing-page-properties-2}
 
@@ -187,7 +190,7 @@ Pagina-eigenschappen definiëren de verschillende eigenschappen van de pagina, z
 
 1. Open de pagina die u wilt bewerken.
 
-1. Open in het zijpaneel het tabblad **Pagina** en selecteer **Pagina-eigenschappen...**
+1. Open in de assistent het tabblad **Pagina** en selecteer **Pagina-eigenschappen...**
 
    Hiermee wordt een dialoogvenster met meerdere tabbladen geopend.
 

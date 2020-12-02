@@ -11,13 +11,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 982f7b7e-9ba9-437f-a337-76c355b328ac
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '181'
+ht-degree: 0%
 
 ---
 
 
 # De conversie-instellingen voor PDF-export wijzigen {#modifying-the-pdf-export-conversion-settings}
 
-Gebruik de onderstaande procedure om de conversie-instellingen te wijzigen voor het exporteren van een PDF, een EPS, een DOC, een TXT, een RTF, een XML of een HTML-bestand. Standaard gebruikt het PDF-bestand de standaardinstellingen voor Opslaan als in Adobe Acrobat Professional of Acrobat Standard. De standaardinstellingen voor Opslaan als in Acrobat voor het converteren van een PDF-bestand naar EPS resulteren bijvoorbeeld in slechts één pagina van het PDF-bestand dat wordt geconverteerd naar EPS.
+Gebruik de onderstaande procedure om de conversie-instellingen te wijzigen voor het exporteren van een PDF, een EPS, een DOC, een TXT, een RTF, een XML of een HTML-bestand. Standaard gebruikt het PDF-bestand de standaardinstellingen voor Opslaan als in Adobe Acrobat Professional of Acrobat Standard. De standaardinstellingen voor Opslaan als in Acrobat voor het converteren van een PDF-bestand naar EPS resulteren er bijvoorbeeld in dat slechts één pagina van het PDF-bestand naar EPS wordt geconverteerd.
 
 >[!NOTE]
 >

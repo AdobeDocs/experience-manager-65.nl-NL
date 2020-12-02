@@ -1,8 +1,8 @@
 ---
 title: De doeltreffendheid en de conversie van formulieren meten en verbeteren
 seo-title: De doeltreffendheid en de conversie van formulieren meten en verbeteren
-description: AEM Forms integreert met Adobe Target en Adobe Analytics-oplossingen waarmee u de prestaties en conversiesnelheid van uw formulieren kunt meten en verbeteren.
-seo-description: AEM Forms integreert met Adobe Target en Adobe Analytics-oplossingen waarmee u de prestaties en conversiesnelheid van uw formulieren kunt meten en verbeteren.
+description: AEM Forms is geïntegreerd met Adobe Target- en Adobe Analytics-oplossingen waarmee u de prestaties en conversiesnelheid van uw formulieren kunt meten en verbeteren.
+seo-description: AEM Forms is geïntegreerd met Adobe Target- en Adobe Analytics-oplossingen waarmee u de prestaties en conversiesnelheid van uw formulieren kunt meten en verbeteren.
 uuid: fd2f087c-39f5-457d-8b44-c3ec4400b3fc
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,11 +11,14 @@ discoiquuid: a128877d-239c-4272-99c2-72d6486d5703
 docset: aem65
 translation-type: tm+mt
 source-git-commit: befbdfd574949a7f7449b70a15480e7c105418fe
+workflow-type: tm+mt
+source-wordcount: '1311'
+ht-degree: 0%
 
 ---
 
 
-# De doeltreffendheid en de conversie van formulieren meten en verbeteren{#measure-and-improve-effectiveness-and-conversion-of-forms}
+# De doeltreffendheid en conversie van formulieren meten en verbeteren{#measure-and-improve-effectiveness-and-conversion-of-forms}
 
 ## De uitdaging {#the-challenge-br}
 
@@ -31,22 +34,22 @@ Om ROI te maximaliseren, moeten de organisaties controleren hoe hun klanten met 
 
 ## De oplossing {#the-solution}
 
-AEM Forms integreert met [Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.html) -oplossingen - [Adobe Analytics](https://www.adobe.com/marketing-cloud/web-analytics.html) en [Adobe Target](https://www.adobe.com/marketing-cloud/testing-targeting.html) - waarmee u kunt controleren en analyseren hoe uw formulieren werken en waarmee u kunt experimenteren en de ervaring kunt identificeren die tot een betere conversiesnelheid leidt.
+AEM Forms is geïntegreerd met [Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.html)-oplossingen - [Adobe Analytics](https://www.adobe.com/marketing-cloud/web-analytics.html) en [Adobe Target](https://www.adobe.com/marketing-cloud/testing-targeting.html) - waarmee u kunt controleren en analyseren hoe uw formulieren werken en waarmee u kunt experimenteren en de ervaring kunt identificeren die tot een betere conversiesnelheid leidt.
 
-## De workflow {#the-workflow}
+## De werkstroom {#the-workflow}
 
 We gaan verder met de details over hoe u de prestaties kunt meten en de conversietarieven voor formulieren kunt verbeteren.
 
-### Doelgroep {#target-audience}
+### Doelpubliek {#target-audience}
 
 * Zakelijke gebruikers en analisten die verantwoordelijk zijn voor marketingstrategieën en succes
 * IT-personeel dat zorg draagt voor de installatie en het onderhoud van infrastructuur en oplossingen
 
-### AEM-componenten en -functies {#aem-forms-components-and-features-involved}
+### AEM Forms-componenten en -functies {#aem-forms-components-and-features-involved}
 
 * Aangepaste formulieren
 * Integratie met Adobe Analytics voor het verzamelen, organiseren en rapporteren van klantinteracties met uw aangepaste formulieren
-* Integratie met Adobe Target voor het uitvoeren van A/B-tests voor adaptieve formulieren
+* Integratie met Adobe Target om A/B-tests uit te voeren voor adaptieve formulieren
 
 ### Aannames {#assumptions}
 
@@ -55,37 +58,37 @@ We gaan verder met de details over hoe u de prestaties kunt meten en de conversi
 
 ### Workflowstappen {#workflow-steps}
 
-#### Stap 1: Analyse en doel configureren in AEM-formulieren {#step-configure-analytics-and-target-in-aem-forms-br}
+#### Stap 1: Analyse en doel configureren in AEM Forms {#step-configure-analytics-and-target-in-aem-forms-br}
 
 **Analyses configureren**
 
-Om diepgaande inzichten in uw klanteninteractie met uw vormen te verkrijgen, moet u Analytics in Vormen eerst vormen AEM. Voer de volgende stappen uit:
+Om diepgaande inzichten in uw klanteninteractie met uw vormen te verkrijgen, moet u Analytics eerst in AEM Forms vormen. Voer de volgende stappen uit:
 
 1. Een rapportsuite maken in Adobe Analytics
 1. Cloudserviceconfiguratie maken in AEM
 1. Cloudserviceframework maken in AEM
-1. De AEM Forms Analytics-configuratieservice configureren in AEM
+1. Configuratieservice voor AEM Forms Analytics configureren in AEM
 1. Analyses inschakelen op het formulier in AEM
 
-Zie Analyses en rapporten voor adaptieve formulieren [configureren voor gedetailleerde stappen](../../forms/using/configure-analytics-forms-documents.md).
+Zie [Analyses en rapporten configureren voor adaptieve formulieren](../../forms/using/configure-analytics-forms-documents.md) voor gedetailleerde stappen.
 
 **Doel configureren**
 
-Als u A/B-tests voor uw adaptieve formulieren wilt maken en uitvoeren, configureert u Doel in AEM-formulieren zoals beschreven in Doel [instellen en integreren in AEM-formulieren](../../forms/using/ab-testing-adaptive-forms.md#p-set-up-and-integrate-target-in-aem-forms-p).
+Als u A/B-tests voor uw adaptieve formulieren wilt maken en uitvoeren, configureert u Target in AEM Forms zoals beschreven in [Doel instellen en integreren in AEM Forms](../../forms/using/ab-testing-adaptive-forms.md#p-set-up-and-integrate-target-in-aem-forms-p).
 
-#### Stap 2: Analyserapport weergeven {#step-view-analytics-report-br}
+#### Stap 2: Analyserapport {#step-view-analytics-report-br} weergeven
 
 Aangezien uw klanten tot en met vormen toegang hebben waarop u Analytics hebt toegelaten, worden hun interactie gevangen in hoogst beveiligde gegevensbestanden van Analytics. De databases worden gesegmenteerd door clients en zijn toegankelijk via beveiligde verbindingen.
 
 U kunt een rapport vanuit AEM weergeven voor formulieren die analyses ondersteunen en gegevens analyseren. Het rapport weergeven:
 
-1. Navigeer op de AEM-server naar **Formulieren > Formulieren en documenten**.
+1. Navigeer op AEM server naar **Forms > Forms &amp; Documents**.
 1. Selecteer het formulier waarvoor u het analyserapport wilt gebruiken.
 1. Klik op het pictogram Analytische rapporten. Het rapport wordt weergegeven.
 
 Laten we eens kijken naar de gegevenspunten die Analytics verzamelt en rapporteert voor formulieren.
 
-**Rapport Formulieranalyse**
+**Forms Analytics-rapport**
 
 In het analyserapport voor adaptieve formulieren worden de volgende prestatiekernindicatoren (KPI&#39;s) op formulierniveau vastgelegd:
 
@@ -109,11 +112,11 @@ Bovendien krijgt u de volgende details over elk paneel in de vorm:
 
 ![Een analyserapport voor een adaptief formulier](assets/summary-report.png)
 
-Voor meer informatie over rapporten van de vormenanalyse, zie het [Bekijken van en het Begrip van de analyserapporten](../../forms/using/view-understand-aem-forms-analytics-reports.md)van de Vormen AEM.
+Zie [AEM Forms-analyserapporten weergeven en begrijpen](../../forms/using/view-understand-aem-forms-analytics-reports.md) voor meer informatie over formulieranalytische rapporten.
 
 >[!NOTE]
 >
->U kunt gedetailleerde rapporten weergeven en meer inzicht krijgen in uw klanten en hun interactie met uw formulieren via uw account Analytics op Adobe Marketing Cloud.
+>U kunt gedetailleerde rapporten weergeven en meer inzicht krijgen in uw klanten en hun interactie met uw formulieren via uw Analytics-account op Adobe Marketing Cloud.
 
 #### Stap 3: Gegevenspunten analyseren {#step-analyze-data-points}
 
@@ -125,7 +128,7 @@ In deze stap analyseert u de gegevenspunten in het analyserapport en geeft u aan
 
 Als u deze gegevenspunten hebt geanalyseerd en tot een hypothese bent gekomen, brengt u de vereiste wijzigingen aan in het formulier.
 
-#### Stap 4: Analyse en correcties valideren {#step-validate-your-analysis-and-fixes}
+#### Stap 4: Uw analyse en correcties {#step-validate-your-analysis-and-fixes} valideren
 
 In deze stap valideert u de wijzigingen die u in het formulier hebt aangebracht en controleert u of deze van invloed zijn op de conversiesnelheid.
 
@@ -133,17 +136,17 @@ In deze stap valideert u de wijzigingen die u in het formulier hebt aangebracht 
 
 Dankzij de integratie van AEM Forms met Target kunnen A/B-tests voor adaptieve formulieren worden gemaakt. In tests A/B, presenteert u willekeurig verschillende ervaringen van een vorm aan uw klanten in echt - tijd om te weten welke ervaring werkt beter of veroorzaakt meer omzettingen. Zodra u significante gegevens hebt die op één ervaring wijzen die betere omzetting levert dan andere, kunt u dat ervaringen als winnaar verklaren, en de toekomst, het wordt de standaardervaring zichtbaar aan alle klanten.
 
-Voor meer informatie over het maken van een A/B-test voor een adaptieve vorm, zie [A/B-test van adaptieve formulieren](../../forms/using/ab-testing-adaptive-forms.md).
+Zie [A/B testen op adaptieve formulieren](../../forms/using/ab-testing-adaptive-forms.md) voor meer informatie over het maken van een A/B test op een adaptieve vorm.
 
 ![Een steekproefsamenvattend verslag van de A/B-test voor een adaptief formulier](assets/ab-test-report-4.png)
 
-## Aanbevolen procedures {#best-practices}
+## Aanbevolen werkwijzen {#best-practices}
 
 De echte beste praktijken zijn degenen die u zich tijdens het uitvoeren van deze werkschema identificeert. Ze zijn uniek voor uw omgeving en vereisten. Leg uw lessen vast in de workflow en documenteer ze als aanbevolen procedures.
 
 Sommige aanbevelingen voor het ontwerpen van formulieren en het uitvoeren van A/B-tests zijn als volgt:
 
-**Formulierontwerp**
+**Forms-ontwerp**
 
 * Houd het formulier eenvoudig, kort en eenvoudig om te navigeren. Gebruik richtingsaanwijzingen voor navigatie.
 * Standaardterminologie of algemene terminologie gebruiken voor formuliervelden.

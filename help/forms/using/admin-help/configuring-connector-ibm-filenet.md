@@ -1,8 +1,8 @@
 ---
 title: Connector configureren voor IBM FileNet
 seo-title: Connector configureren voor IBM FileNet
-description: Leer hoe u de connector voor IBM FileNet configureert om communicatie tussen AEM-formulieren en IBM FileNet mogelijk te maken.
-seo-description: Leer hoe u de connector voor IBM FileNet configureert om communicatie tussen AEM-formulieren en IBM FileNet mogelijk te maken.
+description: Leer hoe u de connector voor IBM FileNet configureert om communicatie tussen AEM formulieren en IBM FileNet mogelijk te maken.
+seo-description: Leer hoe u de connector voor IBM FileNet configureert om communicatie tussen AEM formulieren en IBM FileNet mogelijk te maken.
 uuid: 29d4e221-97f7-4cfb-b7e4-75a8289d2604
 contentOwner: admin
 content-type: reference
@@ -11,19 +11,22 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: be4994de-12f8-436e-926a-49a6783b006e
 translation-type: tm+mt
 source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+workflow-type: tm+mt
+source-wordcount: '758'
+ht-degree: 0%
 
 ---
 
 
 # Connector configureren voor IBM FileNet {#configuring-connector-for-ibm-filenet}
 
-Connector voor IBM FileNet maakt communicatie mogelijk tussen AEM-formulieren en IBM FileNet. Zie &quot;Connectors for ECM&quot; in [Services Reference](https://www.adobe.com/go/learn_aemforms_services_63)voor aanvullende achtergrondinformatie.
+Connector voor IBM FileNet maakt communicatie mogelijk tussen AEM formulieren en IBM FileNet. Zie &quot;Connectors for ECM&quot; in [Services Reference](https://www.adobe.com/go/learn_aemforms_services_63) voor aanvullende achtergrondinformatie.
 
 >[!NOTE]
 >
->In eerdere versies konden activa worden opgeslagen in een ECM-opslagplaats. In deze versie worden de elementen opgeslagen in de oorspronkelijke opslagplaats voor AEM-formulieren en zijn de services van de Repository Provider afgekeurd. De migratie van elementen van een ECM-opslagplaats naar de AEM-formulieropslagplaats vindt plaats wanneer u een upgrade uitvoert naar AEM-formulieren. Zie de handleiding voor de upgrade van AEM-formulieren voor uw toepassingsserver voor meer informatie.
+>In eerdere versies konden activa worden opgeslagen in een ECM-opslagplaats. In deze versie worden de elementen opgeslagen in de systeemeigen opslagruimte voor AEM formulieren en zijn de services van de Repository Provider afgekeurd. De migratie van elementen van een ECM-opslagplaats naar de opslagplaats voor AEM formulieren vindt plaats wanneer u een upgrade uitvoert naar AEM formulieren. Zie de handleiding voor het upgraden van AEM formulieren voor uw toepassingsserver voor meer informatie.
 
-## De verbinding met de inhoudsengine configureren {#configure-the-connection-to-the-content-engine}
+## De verbinding met de inhoudsengine {#configure-the-connection-to-the-content-engine} configureren
 
 IBM FileNet P8 Content Engine biedt softwareservices voor het beheer van bedrijfsinhoud en door de klant gedefinieerde zakelijke objecten in opslagruimten voor FileNet-inhoud.
 
@@ -40,19 +43,19 @@ IBM FileNet P8 Content Engine biedt softwareservices voor het beheer van bedrijf
 
 1. Selecteer een van de volgende beveiligingsniveaus in de lijst Referentiebeschermingsregeling:
 
-   * **Wissen:** Verzendt gegevens in een niet-beveiligde modus via het netwerk
-   * **Symmetrisch:** Verzendt gecodeerde gegevens via het netwerk
+   * **Wissen:** verzendt referenties via het netwerk in een niet-beveiligde modus
+   * **Symmetrisch:** verzendt gecodeerde geloofsbrieven over het netwerk
 
 1. Voer in het vak Locatie van versleutelingsbestand het pad naar het versleutelingsbestand in:
 
    * Als u Wissen hebt geselecteerd als de regeling voor bescherming tegen referentie, worden dit trefwoord en de bijbehorende waarde genegeerd.
    * Als u Symmetrisch hebt geselecteerd als de regeling voor bescherming van referenties, verwijst het pad dat u invoert naar de locatie van een versleutelingsbestand op de formulierserver dat de te gebruiken cryptografische sleutels bevat.
 
-1. Voer in het vak Standaardobjectarchief de opslagconnector in van het object waarmee AEM-formulieren standaard verbinding maken.
+1. Voer in het vak Standaardobjectarchief de opslagconnector in van het object waarmee AEM formulieren standaard verbinding maken.
 1. Voer in het vak Gebruikersnaam de gebruikersnaam in van een gebruiker die toegangsrechten heeft tot de standaardobberwinkel die u in de vorige stap hebt opgegeven.
 1. Voer in het vak Wachtwoord het wachtwoord voor de gebruiker in en klik op Opslaan.
 
-## De instellingen van de procesengine configureren {#configure-the-process-engine-settings}
+## De instellingen voor de procesengine configureren {#configure-the-process-engine-settings}
 
 De connector voor IBM FileNet bevat de Process Engine Connector voor de IBM FileNet-service, die wordt gebruikt voor interactie met de IBM FileNet Process Engine. U kunt instellingen voor deze service configureren.
 
@@ -72,17 +75,17 @@ Als u een onjuiste gebruikersnaam of wachtwoord invoert wanneer u de verbinding 
 * Als zowel de dienst van de Leverancier van de Bewaarplaats voor IBM FileNet als de Schakelaar van de Bewaarplaats van de Inhoud voor de dienst van IBM FileNet worden tegengehouden, wanneer u sparen de informatie van de de dienstconfiguratie, geen fout verschijnt. Nochtans, de volgende tijd u de dienst begint, zal een uitzondering worden geworpen en de dienst zal niet beginnen.
 * Als of de dienst van de Leverancier van de Bewaarplaats voor IBM FileNet of de Verbinding van de Bewaarplaats van de Inhoud voor de dienst van IBM FileNet begonnen zijn, wanneer u sparen de informatie van de de dienstconfiguratie, probeert de dienst om de referentie informatie onmiddellijk te bevestigen. In dit geval treedt een fout op en worden de configuratiegegevens niet opgeslagen.
 
-## De provider van de dataopslagservice wijzigen {#change-the-repository-service-provider}
+## De serviceprovider {#change-the-repository-service-provider} wijzigen
 
 U kunt configureren welke serviceprovider voor gegevensopslag moet worden gebruikt met FileNet. De de dienstvraag van de bewaarplaats wordt gedelegeerd aan de leverancier u vormt.
 
 De volgende opties zijn beschikbaar:
 
-**Huidige naam leverancier van opslagplaats:** De naam van de huidige aanbieder van datadiensten
+**Huidige naam leverancier van opslagplaats:** de naam van de huidige aanbieder van opslagplaats
 
-**IBM FileNet Repository Provider:** Maakt van de aanbieder van de FileNet-opslagplaats de provider voor de opslagplaats. Deze optie is vervangen.
+**IBM FileNet Repository Provider:** Maakt van de leverancier van de opslagplaats FileNet de leverancier voor de bewaarplaats. Deze optie is vervangen.
 
-**aanbieder opslagplaats:** Maakt van de native opslagprovider de provider voor de opslagplaats
+**opslagprovider:** maakt van de native opslagopslagprovider de provider voor de opslagplaats
 
 >[!NOTE]
 >

@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: c6b1d651940b5c556dea81d19354aac36d14b423
 workflow-type: tm+mt
 source-wordcount: '36'
-ht-degree: 0%
+ht-degree: 16%
 
 ---
 
@@ -22,4 +22,4 @@ ht-degree: 0%
 
 ![Apache Sling-scriptoplossing.](assets/sling-cheatsheet-01.png)
 
-![Gebruikend SlingPostServlet - dit is de standaardmanager voor uw POST- verzoeken; het kan bijna alles doen .](assets/sling-cheatsheet-02.png)
+![Gebruikend SlingPostServlet - dit is de standaardmanager voor uw verzoeken van de POST; het kan bijna alles doen .](assets/sling-cheatsheet-02.png)

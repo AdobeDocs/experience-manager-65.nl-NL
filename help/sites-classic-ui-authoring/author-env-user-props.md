@@ -12,6 +12,9 @@ discoiquuid: d6f55d2c-e7a9-4421-918c-6000c6961776
 docset: aem65
 translation-type: tm+mt
 source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+workflow-type: tm+mt
+source-wordcount: '245'
+ht-degree: 4%
 
 ---
 
@@ -20,22 +23,29 @@ source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
 
 AEM biedt u de mogelijkheid om uw account en bepaalde aspecten van de auteursomgeving te configureren.
 
-Met de [accountinstellingen](#account-settings) en de [gebruikersvoorkeuren](#user-preferences) kunt u de volgende opties en voorkeuren definiëren:
+Met de [accountinstellingen](#account-settings) en [gebruikersvoorkeuren](#user-preferences) kunt u de volgende opties en voorkeuren definiëren:
 
-* **De werkbalk** bewerken Selecteer of u de algemene bewerkingswerkbalk wilt gebruiken. Deze werkbalk, die boven in het browservenster wordt weergegeven, geeft u de knoppen **Kopiëren**, **Knippen**, **Plakken** en **Verwijderen** voor gebruik met de alineacomponenten op die pagina:
+* **Bewerkbalk bewerkenSelecteer of u de algemene bewerkingswerkbalk wilt gebruiken.**
+Deze werkbalk, die boven in het browservenster wordt weergegeven, geeft u 
+**De knoppen Kopiëren**,  **Knippen**,  **Plakken** en  **** Verwijderen voor gebruik met de alineacomponenten op die pagina:
 
    * Weergeven indien nodig (standaard)
    * Altijd tonen
    * Verborgen houden
 
-* **Imiteren als** Met [Imiteren als](/help/sites-administering/security.md#impersonating-another-user) functionaliteit kan een gebruiker namens een andere gebruiker werken.
+* **Imiteren**
+alsMet de  [imiteer ](/help/sites-administering/security.md#impersonating-another-user) asfunctionaliteit kan een gebruiker namens een andere gebruiker werken.
 
-* **Taal** De taal die voor UI van het auteursmilieu moet worden gebruikt. Selecteer de gewenste taal in de beschikbare lijst.
+* ****
+LanguageDe taal die voor de gebruikersinterface van de ontwerpomgeving moet worden gebruikt. Selecteer de gewenste taal in de beschikbare lijst.
 
-* **Vensterbeheer** Selecteer een van de volgende opties:
+* **Windows**
+ManagementSelecteer een van de volgende opties:
 
-   * Meerdere Windows-pagina&#39;s (standaard)worden geopend in een nieuw venster.
-   * Enkele WindowPages worden geopend in het huidige venster.
+   * Meerdere vensters (standaard)
+Pagina&#39;s worden in een nieuw venster geopend.
+   * Eén venster
+Pagina&#39;s worden geopend in het huidige venster.
 
 ## Accountinstellingen {#account-settings}
 

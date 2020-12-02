@@ -17,13 +17,13 @@ ht-degree: 4%
 ---
 
 
-# Foutdialoogvensters aanpassen {#customizing-error-dialogs}
+# Foutdialoogvensters {#customizing-error-dialogs} aanpassen
 
-In de werkruimte AEM Forms kunt u de foutmeldingen aanpassen. Voer de [algemene stappen voor de aanpassing](/help/forms/using/generic-steps-html-workspace-customization.md) van de werkruimte AEM Forms uit, gevolgd door de onderstaande stappen, om foutmeldingen aan te passen.
+In de AEM Forms-werkruimte kunt u de foutmeldingen aanpassen. Voer de [Algemene stappen voor de aanpassing van de AEM Forms-werkruimte uit](/help/forms/using/generic-steps-html-workspace-customization.md), gevolgd door de onderstaande stappen om de foutmeldingen aan te passen.
 
-## Tekst aanpassen {#customizing-text}
+## Tekst {#customizing-text} aanpassen
 
-1. Wijzig in het `/apps/ws/locales/en-US/translation.json` bestand de waarden van `wserror` de aangepaste waarden. Bijvoorbeeld:
+1. Wijzig in het `/apps/ws/locales/en-US/translation.json`-bestand de waarden van `wserror` in de aangepaste waarden. Bijvoorbeeld:
 
    ```json
    "wserror" : {
@@ -51,9 +51,9 @@ In de werkruimte AEM Forms kunt u de foutmeldingen aanpassen. Voer de [algemene 
    >
    >Voeg overeenkomstige sleutel-waarde paren voor alle gesteunde talen toe.
 
-## CSS aanpassen {#customizing-css}
+## CSS {#customizing-css} aanpassen
 
-1. U kunt dialoogvensters, koptekst, inhoudsgebied, voetbalk, voetbalknoppen en andere elementen bijwerken door het volgende fragment toe te voegen in het `/apps/ws/css/newStyle.css` bestand:
+1. U kunt dialoog, kopbal, inhoudsgebied, voet-bar, voet-bar knopen, en andere zekerheden bijwerken door het volgende fragment in het `/apps/ws/css/newStyle.css` dossier toe te voegen:
 
    ```css
    /*-------- Error Dialog -------------------------------------------------------------------------------------------------------------------*/
@@ -188,7 +188,7 @@ In de werkruimte AEM Forms kunt u de foutmeldingen aanpassen. Voer de [algemene 
    }
    ```
 
-1. Voor het bereik van de voetbalkknop scheidt u de `.error-dialog` `.foot-bar` knopbereiken en de knopbereiken van de samengestelde lijst. U brengt deze wijziging door het volgende toe te voegen in het bestand newStyle.css:
+1. Voor het bereik van de voetbalkknop scheidt u de knopbereiken `.error-dialog` en `.foot-bar` van de samengestelde lijst. U brengt deze wijziging door het volgende toe te voegen in het bestand newStyle.css:
 
    ```css
    .browse-btn span, .attachementbtn span, .cancelAttachmentUpdate span, #taskAttachmentsContainer .uploadStatus span, .submitNoteButton span, .updateNoteButton span, .cancelNoteUpdate span,

@@ -18,19 +18,20 @@ ht-degree: 1%
 ---
 
 
-# OSGi Events for Communities Components  {#osgi-events-for-communities-components}
+# OSGi Gebeurtenissen voor onderdelen van de Gemeenschappen {#osgi-events-for-communities-components}
 
 ## Overzicht {#overview}
 
 Wanneer leden met de eigenschappen van de Gemeenschappen in wisselwerking staan, worden de gebeurtenissen OSGi verzonden die asynchrone luisteraars, zoals berichten of gamificatie (het scoren en het merken) kunnen teweegbrengen.
 
-De [instantie SocialEvent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) van een component registreert de gebeurtenissen als `actions` die voor een `topic`. De SocialEvent bevat een methode om een aan de actie `verb` gekoppeld item te retourneren. Er is een *n-1* relatie tussen `actions` en `verbs`.
+De [SocialEvent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) instantie van een component registreert de gebeurtenissen als `actions` die voor `topic` voorkomen. De SocialEvent bevat een methode om een `verb` te retourneren die aan de handeling is gekoppeld. Er is een *n-1* verhouding tussen `actions` en `verbs`.
 
-Voor de onderdelen van Communities die in de release worden geleverd, wordt in de volgende tabellen de `verbs` definitie van elke `topic` beschikbare versie beschreven.
+Voor de componenten van Communities die in de release worden geleverd, wordt in de volgende tabellen de `verbs` beschreven die zijn gedefinieerd voor elke `topic` die beschikbaar is voor gebruik.
 
 ## Onderwerpen en werven {#topics-and-verbs}
 
-[Agenda Component](calendar-basics-for-developers.md)SocialEvent `topic`= com/adobe/cq/social/agenda
+[Agenda ](calendar-basics-for-developers.md)
+ComponentSocialEvent  `topic`= com/adobe/cq/social/agenda
 
 | **Verb** | **Beschrijving** |
 |---|---|
@@ -39,7 +40,8 @@ Voor de onderdelen van Communities die in de release worden geleverd, wordt in d
 | BIJWERKEN | De agendagebeurtenis of de opmerking van het lid wordt bewerkt |
 | DELETE | De agendagebeurtenis of de opmerking van het lid wordt verwijderd |
 
-[Opmerkingen Component](essentials-comments.md)SocialEvent `topic`= com/adobe/cq/social/comment
+[Opmerkingen ](essentials-comments.md)
+ComponentSocialEvent  `topic`= com/adobe/cq/social/comment
 
 | **Verb** | **Beschrijving** |
 |---|---|
@@ -48,7 +50,8 @@ Voor de onderdelen van Communities die in de release worden geleverd, wordt in d
 | BIJWERKEN | Opmerking van lid wordt bewerkt |
 | DELETE | Opmerking van lid wordt verwijderd |
 
-[File Library Component](essentials-file-library.md)SocialEvent `topic`= com/adobe/cq/social/fileLibrary
+[File Library ](essentials-file-library.md)
+ComponentSocialEvent  `topic`= com/adobe/cq/social/fileLibrary
 
 | **Verb** | **Beschrijving** |
 |---|---|
@@ -57,7 +60,8 @@ Voor de onderdelen van Communities die in de release worden geleverd, wordt in d
 | BIJWERKEN | Lid werkt een omslag of een dossier bij |
 | DELETE | Lid verwijdert een map of bestand |
 
-[Forum Component](essentials-forum.md)SocialEvent `topic`= com/adobe/cq/social/forum
+[Forum ](essentials-forum.md)
+ComponentSocialEvent  `topic`= com/adobe/cq/social/forum
 
 | **Verb** | **Beschrijving** |
 |---|---|
@@ -66,7 +70,8 @@ Voor de onderdelen van Communities die in de release worden geleverd, wordt in d
 | BIJWERKEN | Het onderwerp of antwoord van het forum van het lid wordt bewerkt |
 | DELETE | Het onderwerp of antwoord van het lid in het forum wordt verwijderd |
 
-[Journal Component](blog-developer-basics.md)SocialEvent `topic`= com/adobe/cq/social/journaal
+[Journal ](blog-developer-basics.md)
+ComponentSocialEvent  `topic`= com/adobe/cq/social/Journal
 
 | **Verb** | **Beschrijving** |
 |---|---|
@@ -75,7 +80,8 @@ Voor de onderdelen van Communities die in de release worden geleverd, wordt in d
 | BIJWERKEN | Blogartikel of commentaar van lid wordt bewerkt |
 | DELETE | Blogartikel of commentaar van lid wordt verwijderd |
 
-[QnA Component](qna-essentials.md)SocialEvent `topic` = com/adobe/cq/social/qna
+[QnA ](qna-essentials.md)
+ComponentSocialEvent  `topic` = com/adobe/cq/social/qna
 
 | **Verb** | **Beschrijving** |
 |---|---|
@@ -86,7 +92,8 @@ Voor de onderdelen van Communities die in de release worden geleverd, wordt in d
 | SELECTEREN OPHEFFEN | Het antwoord van het lid is niet geselecteerd |
 | DELETE | Vraag of antwoord van lid wordt verwijderd |
 
-[Reviews Component](reviews-basics.md)SocialEvent `topic`= com/adobe/cq/social/review
+[Reviews ](reviews-basics.md)
+ComponentSocialEvent  `topic`= com/adobe/cq/social/review
 
 | **Verb** | **Beschrijving** |
 |---|---|
@@ -94,21 +101,24 @@ Voor de onderdelen van Communities die in de release worden geleverd, wordt in d
 | BIJWERKEN | Revisie van lid wordt bewerkt |
 | DELETE | Herziening door lid wordt verwijderd |
 
-[Beoordelingscomponent](rating-basics.md)SocialEvent `topic`= com/adobe/cq/social/tally
+[Classificatie ](rating-basics.md)
+ComponentSocialEvent  `topic`= com/adobe/cq/social/tally
 
 | **Verb** | **Beschrijving** |
 |---|---|
 | WAARDERING TOEVOEGEN | De inhoud van het lid is vervangen |
 | RATING VERWIJDEREN | De inhoud van het lid is verlaagd |
 
-[Stemcomponent](essentials-voting.md)SocialEvent `topic`= com/adobe/cq/social/tally
+[Stemmen ](essentials-voting.md)
+ComponentSocialEvent  `topic`= com/adobe/cq/social/tally
 
 | **Verb** | **Beschrijving** |
 |---|---|
 | STEMMING TOEVOEGEN | Er is gestemd over de inhoud van het lid |
 | STEMMING VERWIJDEREN | Over de inhoud van het lid is gestemd |
 
-**Moderation-enabled Components** SocialEvent `topic`= com/adobe/cq/social/moderation
+**Moderation-enabled**
+ComponentsSocialEvent  `topic`= com/adobe/cq/social/moderation
 
 | **Verb** | **Beschrijving** |
 |---|---|
@@ -121,19 +131,19 @@ Voor de onderdelen van Communities die in de release worden geleverd, wordt in d
 
 ## Gebeurtenissen voor aangepaste componenten {#events-for-custom-components}
 
-Voor een aangepaste component moet de abstracte klasse [](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) SocialEvent worden uitgebreid om de gebeurtenissen van de component op te nemen zoals `actions`die voor een `topic`.
+Voor een aangepaste component moet de abstracte klasse [SocialEvent worden uitgebreid ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) om de gebeurtenissen van de component op te nemen als `actions`die voor `topic` voorkomen.
 
-De aangepaste gebeurtenis zou de methode overschrijven, `getVerb()` zodat voor elke gebeurtenis een geschikte methode `verb`wordt geretourneerd `action`. De `verb` geretourneerde waarde voor een handeling kan een veelgebruikte (zoals `POST`) of een speciale waarde voor de component (zoals `ADD RATING`) zijn. Er is een *n-1* relatie tussen `actions`en `verbs`.
+De aangepaste gebeurtenis zou de methode `getVerb()` overschrijven, zodat een geschikte `verb`wordt geretourneerd voor elke `action`. De `verb` die voor een handeling wordt geretourneerd, kan een handeling zijn die veel wordt gebruikt (zoals `POST`) of een instructie die is gespecialiseerd voor de component (zoals `ADD RATING`). Er is een *n-1* verhouding tussen `actions`en `verbs`.
 
 >[!NOTE]
 >
 >Zorg ervoor dat een aangepaste extensie is geregistreerd met een lagere rangschikking dan een bestaande implementatie in het product.
 
-### Pseudo-code voor gebeurtenis Custom Component {#pseudo-code-for-custom-component-event}
+### Pseudo-code voor aangepaste componentgebeurtenis {#pseudo-code-for-custom-component-event}
 
-[org.osgi.service.event.Event](https://osgi.org/javadoc/r4v41/org/osgi/service/event/Event.html);
-[com.adobe.cq.social.scf.core.SocialEvent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html);
-[com.adobe.granite.activity.streams.ObjectTypes](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/ObjectTypes.html);
+[org.osgi.service.event.Event](https://osgi.org/javadoc/r4v41/org/osgi/service/event/Event.html); 
+[com.adobe.cq.social.scf.core.SocialEvent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html); 
+[com.adobe.granite.activity.streams.ObjectTypes](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/ObjectTypes.html); 
 [com.adobe.granite.activity streams.Verbs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/Verbs.html);
 
 ```java
@@ -230,7 +240,7 @@ public class RecipeEvent extends SocialEvent<RecipeEvent.RecipeActions> {
 }
 ```
 
-## Voorbeeld van gebeurtenislistener om activiteitsstroomgegevens te filteren {#sample-eventlistener-to-filter-activity-stream-data}
+## Voorbeeld van EventListener om activiteitsstroomgegevens te filteren {#sample-eventlistener-to-filter-activity-stream-data}
 
 Het is mogelijk naar gebeurtenissen te luisteren om te wijzigen wat er in de activiteitsstroom wordt weergegeven.
 
@@ -238,7 +248,7 @@ In het volgende pseudo-codevoorbeeld worden DELETE-gebeurtenissen voor de compon
 
 ### Pseudo-code voor EventListener {#pseudo-code-for-eventlistener}
 
-Vereist het [nieuwste functiepakket](deploy-communities.md#latestfeaturepack).
+Vereist [nieuwste functiepakket](deploy-communities.md#latestfeaturepack).
 
 ```java
 package my.company.comments;

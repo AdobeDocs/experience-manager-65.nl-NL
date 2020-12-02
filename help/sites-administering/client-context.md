@@ -23,13 +23,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->De Context van de cliënt is vervangen door ContextHub. Voor meer details, zie de verwante []configuratie-vormt.md) en [ontwikkelaarsdocumentatie](/help/sites-developing/contexthub.md) .
+>De Context van de cliënt is vervangen door ContextHub. Zie de verwante [configuration]ch-configure.md) en [developer](/help/sites-developing/contexthub.md) documentatie voor meer informatie.
 
-De context van de Cliënt is een mechanisme dat u van bepaalde informatie over de huidige pagina en de bezoeker voorziet. Het kan worden geopend met **Ctrl-Alt-c** (vensters) of **Control-option-c** (Mac):
+De context van de Cliënt is een mechanisme dat u van bepaalde informatie over de huidige pagina en de bezoeker voorziet. Het kan worden geopend met **Ctrl-Alt-c** (vensters) of **control-option-c** (MAC):
 
 ![](assets/clientcontext_alisonparker.png)
 
-In zowel de [publicatie- als de auteursomgeving wordt informatie](#propertiesavailableintheclientcontext) weergegeven over:
+In zowel [publiceer als auteursmilieu toont het informatie](#propertiesavailableintheclientcontext) over:
 
 * de bezoeker; afhankelijk van uw instantie wordt bepaalde informatie gevraagd, of afgeleid.
 * Paginalabels en het aantal keren dat deze labels door de huidige bezoeker zijn geopend (dit wordt weergegeven wanneer u de muis over een specifieke tag beweegt).
@@ -41,57 +41,60 @@ Met de pictogrammen (alleen beschikbaar in de auteursomgeving) kunt u de details
 
 ![](do-not-localize/clientcontext_icons.png)
 
-* **Als u** een nieuwe pagina bewerkt, kunt u een profieleigenschap [](#editingprofiledetails)bewerken, toevoegen of verwijderen.
+* **Er wordt een**
+nieuwe pagina geopend, zodat u een profieleigenschap [ kunt ](#editingprofiledetails)bewerken, toevoegen of verwijderen.
 
-* **Laad** U kunt een profiel in een lijst [selecteren en het profiel](#loading-a-new-user-profile) laden dat u wilt testen.
+* ****
+LadenU kunt een profiel in een lijst  [selecteren en het ](#loading-a-new-user-profile) profiel laden dat u wilt testen.
 
-* **Herstellen** U kunt het profiel [](#resetting-the-profile-to-the-current-user) opnieuw instellen op dat van de huidige gebruiker.
+* ****
+HerstellenU kunt het  [profiel ](#resetting-the-profile-to-the-current-user) opnieuw instellen op dat van de huidige gebruiker.
 
 ## Beschikbare clientcontextcomponenten {#available-client-context-components}
 
-In de clientcontext kunnen de volgende eigenschappen worden weergegeven ([afhankelijk van wat is geselecteerd met Bewerken](#adding-a-property-component)):
+De context van de Cliënt kan de volgende eigenschappen ([afhankelijk van wat zijn geselecteerd gebruikend Edit](#adding-a-property-component)) tonen:
 
-**Surfer-informatie** geeft de volgende client-side informatie weer:
+**Surfer** InformationGeeft de volgende informatie aan de clientzijde weer:
 
 * het **IP-adres**
-* **trefwoorden** die worden gebruikt voor verwijzing naar zoekprogramma&#39;s
+* **** trefwoorden voor verwijzing zoekmachine
 * de **browser** die wordt gebruikt
-* het gebruikte **besturingssysteem** (besturingssysteem)
-* de **schermresolutie**
-* de X **-positie van de** muis
-* de **Y** -positie van de muis
+* het **gebruikte besturingssysteem** (besturingssysteem)
+* het scherm **resolutie**
+* de positie **mouse X**
+* de positie **mouse Y**
 
-**Activiteitenstroom** Dit biedt informatie over de sociale activiteit van de gebruiker op verschillende platforms; bijvoorbeeld de AEM forums , blogs , beoordelingen , enz .
+**Activity** StreamThis biedt informatie over de sociale activiteit van de gebruiker op verschillende platforms; bijvoorbeeld de AEM forums , blogs , beoordelingen , enz .
 
-**Met Campagne** kunnen auteurs een specifieke ervaring voor een campagne simuleren. Deze component overschrijft de normale campagneresolutie en ervaringsselectie om het testen van verschillende permutaties mogelijk te maken.
+**** CampaignHiermee kunnen auteurs een specifieke ervaring voor een campagne simuleren. Deze component overschrijft de normale campagneresolutie en ervaringsselectie om het testen van verschillende permutaties mogelijk te maken.
 
-De oplossing van de campagne is doorgaans gebaseerd op de prioritaire eigenschap van de campagne. De ervaring wordt normaal geselecteerd gebaseerd op segmentatie.
+De oplossing van de campagne is doorgaans gebaseerd op de prioritaire eigenschap van de campagne. De ervaring wordt gewoonlijk geselecteerd gebaseerd op segmentatie.
 
-**Cart** toont winkelwagengegevens, waaronder productgegevens (titel, hoeveelheid, prijsOpgemaakt, enz.), opgeloste aanbiedingen (titel, bericht, enz.) en vouchers (code, beschrijving, enz.).
+**** CartHiermee worden winkelwagengegevens getoond, waaronder productgegevens (titel, hoeveelheid, prijsOpgemaakt, enz.), opgeloste aanbiedingen (titel, bericht, enz.) en vouchers (code, beschrijving, enz.).
 
 De opslag van de wortelzitting brengt de server ook op de hoogte van opgeloste bevorderingsveranderingen (die op segmenteringsveranderingen worden gebaseerd) gebruikend ClientContextCartServlet.
 
-**Generic Store** is een generieke component die de inhoud van een winkel weergeeft. Het is een lagere versie van de Algemene component van de Eigenschappen van de Opslag.
+**Generic** StoreIs een generische component die de inhoud van een opslag toont. Het is een lagere versie van de Algemene component van de Eigenschappen van de Opslag.
 
 De Generic Store moet met een renderer worden gevormd JS die de gegevens op een douanemethode zal tonen.
 
-**Algemene eigenschappen** van de Opslag is een generische component die de inhoud van een opslag toont. Het is een versie op hoger niveau van de Algemene component van de Opslag.
+**Generic Store** PropertiesIs een generische component die de inhoud van een opslag toont. Het is een versie op hoger niveau van de Algemene component van de Opslag.
 
 De component Algemene opslageigenschappen bevat een standaardrenderer met de geconfigureerde eigenschappen (samen met een miniatuur).
 
-**Geolocatie** geeft de breedte en lengte van de client weer. De HTML5-geolocatie-API wordt gebruikt om in de browser te zoeken naar de huidige locatie. Dit leidt ertoe dat een pop-up aan de bezoeker wordt getoond, waar browser hen vraagt of komen zij overeen om hun plaats te delen.
+**** GeolocationGeeft de breedte en lengte van de client weer. De HTML5-geolocatie-API wordt gebruikt om in de browser te zoeken naar de huidige locatie. Dit leidt ertoe dat een pop-up aan de bezoeker wordt getoond, waar browser hen vraagt of komen zij overeen om hun plaats te delen.
 
-Wanneer de component in de Context Cloud wordt weergegeven, gebruikt de component een Google API om een kaart als miniatuur weer te geven. Voor de component gelden de Google API- [gebruikslimieten](https://developers.google.com/maps/documentation/staticmaps/intro#Limits).
+Wanneer de component in de Context Cloud wordt weergegeven, gebruikt de component een Google API om een kaart als miniatuur weer te geven. Voor de component gelden de [gebruikslimieten](https://developers.google.com/maps/documentation/staticmaps/intro#Limits) van de Google-API.
 
 >[!NOTE]
 >
 >In AEM 6.1 biedt het Geolocation Store niet langer de functie voor omgekeerde geocoding. Daarom wint de opslag Geolocation geen details meer over de huidige plaats, zoals de plaatsnaam of landcode terug. Segmenten die deze opslaggegevens gebruiken, werken niet correct. De Geolocation Store bevat alleen de breedte en lengte van een locatie.
 
-**JSONP slaat** een component op die inhoud toont die van uw installatie afhankelijk is.
+**De component JSONP** StoreA die inhoud toont die van uw installatie afhankelijk is.
 
-De norm JSONP is een aanvulling aan JSON die de omzeiling van het zelfde oorsprongbeleid toestaat (die het voor een Web app onmogelijk maakt om met servers te communiceren die op een ander domein zijn). Het bestaat uit het verpakken van het JSON-object in een functieaanroep om het object als een `<script>` van het andere domein te kunnen laden (een toegestane uitzondering op hetzelfde oorspronkelijke beleid).
+De norm JSONP is een aanvulling aan JSON die de omzeiling van het zelfde oorsprongbeleid toestaat (die het voor een Web app onmogelijk maakt om met servers te communiceren die op een ander domein zijn). Het bestaat uit het verpakken van het JSON-object in een functieaanroep om het als een `<script>` van het andere domein te kunnen laden (een toegestane uitzondering op hetzelfde oorsprongbeleid).
 
-De opslag JSONP is als een andere opslag, maar het laadt informatie die uit een ander domein zonder de behoefte komt om een volmacht voor die informatie over het huidige domein te hebben. Zie het voorbeeld in het [Opslaan van Gegevens in de Context van de Cliënt via JSONP](/help/sites-administering/client-context.md#storing-data-in-client-context-via-jsonp).
+De opslag JSONP is als een andere opslag, maar het laadt informatie die uit een ander domein zonder de behoefte komt om een volmacht voor die informatie over het huidige domein te hebben. Zie het voorbeeld in [Gegevens opslaan in Clientcontext via JSONP](/help/sites-administering/client-context.md#storing-data-in-client-context-via-jsonp).
 
 >[!NOTE]
 >
@@ -99,11 +102,11 @@ De opslag JSONP is als een andere opslag, maar het laadt informatie die uit een 
 
 **Profielgegevens** Hiermee geeft u informatie weer die in het gebruikersprofiel is verzameld. Bijvoorbeeld geslacht, leeftijd, e-mailadres.
 
-**De gevonden segmenten** tonen welke segmenten momenteel oplossen (vaak afhankelijk van andere informatie die in de cliëntcontext wordt getoond). Dit is van belang wanneer u een campagne configureert.
+**Resolved** segmentsShow welke segmenten momenteel oplossen (vaak afhankelijk van andere informatie die in de cliëntcontext wordt getoond). Dit is van belang wanneer u een campagne configureert.
 
 Hiermee wordt bijvoorbeeld aangegeven of de muis zich momenteel op het linker- of rechtergedeelte van het venster bevindt. Dit segment wordt vooral gebruikt voor het testen, omdat wijzigingen direct zichtbaar zijn.
 
-**De sociale grafiek** toont de sociale grafiek van de vrienden en volgers van de gebruiker.
+**Sociale** grafiekHiermee geeft u de sociale grafiek weer van de vrienden en volgers van de gebruiker.
 
 >[!NOTE]
 >
@@ -111,21 +114,21 @@ Hiermee wordt bijvoorbeeld aangegeven of de muis zich momenteel op het linker- o
 >
 >`/home/users/geometrixx/aparker@geometrixx.info/profile` =>, eigenschap vrienden
 
-**In de cloud** worden de tags weergegeven die op de huidige pagina zijn ingesteld en de tags die tijdens het surfen op de site zijn verzameld. Als u de muis over een tag beweegt, wordt het aantal keren weergegeven dat de huidige gebruiker pagina&#39;s met die specifieke tag heeft geopend.
+**Label** CloudShow-tags ingesteld op de huidige pagina en de tags verzameld tijdens het surfen op de site. Als u de muis over een tag beweegt, wordt het aantal keren weergegeven dat de huidige gebruiker pagina&#39;s met die specifieke tag heeft geopend.
 
 >[!NOTE]
 Labels die zijn ingesteld op DAM-elementen die worden weergegeven op de bezochte pagina&#39;s, worden niet meegeteld.
 
-**Technologie Store** Deze component is afhankelijk van uw installatie.
+**Technologie** StoreDeze component is afhankelijk van uw installatie.
 
-**BekekenProducten** houdt spoor van producten de verkoper heeft bekeken. Kan worden aangevraagd voor het meest recent bekeken product, of het meest recent bekeken product dat nog niet in de kar zit.
+**** ViewedProductsTraces registreert de producten die de verkoper heeft bekeken. Kan worden aangevraagd voor het meest recent bekeken product, of het meest recent bekeken product dat nog niet in de kar zit.
 
 Deze zittingsopslag heeft geen standaardcomponent van de cliëntcontext.
 
-Voor extra informatie, zie de Context van de [Cliënt in Detail](/help/sites-developing/client-context.md).
+Voor extra informatie, zie [Context van de Cliënt in Detail](/help/sites-developing/client-context.md).
 
 >[!NOTE]
-Paginagegevens bevinden zich niet meer in de clientcontext als een standaardcomponent. Indien nodig kunt u dit toevoegen door de clientcontext te bewerken, de component **Algemene winkeleigenschappen** toe te voegen en deze vervolgens te configureren om de **Store** als `pagedata`te definiëren.
+Paginagegevens bevinden zich niet meer in de clientcontext als een standaardcomponent. Indien nodig, kunt u dit toevoegen door de cliëntcontext uit te geven, toevoegend **Algemene Eigenschappen van de Opslag** component, dan vormend dit om **Store** als `pagedata` te bepalen.
 
 ## Het clientcontextprofiel wijzigen {#changing-the-client-context-profile}
 
@@ -134,14 +137,14 @@ Met de clientcontext kunt u op interactieve wijze details wijzigen:
 * Als u het profiel wijzigt dat wordt gebruikt in de clientcontext, kunt u de verschillende ervaringen zien die de verschillende gebruikers zien voor de huidige pagina.
 * U kunt niet alleen het gebruikersprofiel wijzigen, maar ook bepaalde profieldetails wijzigen om te zien hoe de pagina er onder verschillende omstandigheden anders uitziet.
 
-### Een nieuw gebruikersprofiel laden {#loading-a-new-user-profile}
+### Een nieuw gebruikersprofiel {#loading-a-new-user-profile} laden
 
 U kunt het profiel als volgt wijzigen:
 
 * [het pictogram load gebruiken](#loading-a-new-visitor-profile-with-the-load-profile-icon)
 * [met de selectieregelaar](#loadinganewvisitorprofilewiththeselectionslider)
 
-Als u klaar bent, kunt u het profiel [](#resetting-the-profile-to-the-current-user)opnieuw instellen.
+Als u klaar bent, kunt u [het profiel](#resetting-the-profile-to-the-current-user) opnieuw instellen.
 
 #### Een nieuw bezoekersprofiel laden met het pictogram Profiel laden {#loading-a-new-visitor-profile-with-the-load-profile-icon}
 
@@ -153,9 +156,9 @@ Als u klaar bent, kunt u het profiel [](#resetting-the-profile-to-the-current-us
 
    ![](assets/clientcontext_profileloader.png)
 
-1. Klik op **OK** om te laden.
+1. Klik **OK** om te laden.
 
-#### Een nieuw gebruikersprofiel laden met de schuifregelaar Selectie {#loading-a-new-user-profile-with-the-selection-slider}
+#### Een nieuw gebruikersprofiel laden met de selectieregelaar {#loading-a-new-user-profile-with-the-selection-slider}
 
 U kunt ook een profiel selecteren met de selectieregelaar:
 
@@ -171,7 +174,7 @@ U kunt ook een profiel selecteren met de selectieregelaar:
 
    ![](do-not-localize/clientcontext_resetprofile.png)
 
-### Het Platform Browser wijzigen {#changing-the-browser-platform}
+### Het Browser Platform {#changing-the-browser-platform} veranderen
 
 1. Dubbelklik op het pictogram dat het browserplatform vertegenwoordigt. De kiezer wordt geopend, de pijlen worden gebruikt om te navigeren en de beschikbare platforms/browsers te bekijken:
 
@@ -199,29 +202,29 @@ U kunt ook een profiel selecteren met de selectieregelaar:
 
 Het bewerken van een clientcontext kan worden gebruikt om de waarden van bepaalde eigenschappen in te stellen (of opnieuw in te stellen), een nieuwe eigenschap toe te voegen of een eigenschap te verwijderen die niet langer nodig is.
 
-### Bewerkingsdetails {#editing-property-details}
+### Bewerkingsdetails {#editing-property-details} bewerken
 
-Het bewerken van een clientcontext kan worden gebruikt om de waarden van bepaalde eigenschappen in te stellen (of opnieuw in te stellen). Dit staat u toe om specifieke scenario&#39;s (met name nuttig voor [segmentatie](/help/sites-administering/campaign-segmentation.md) en [campagnes](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md)) te testen.
+Het bewerken van een clientcontext kan worden gebruikt om de waarden van bepaalde eigenschappen in te stellen (of opnieuw in te stellen). Dit staat u toe om specifieke scenario&#39;s (met name nuttig voor [segmentation](/help/sites-administering/campaign-segmentation.md) en [campagnes](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md)) te testen.
 
 ![](assets/clientcontext_alisonparker_edit.png)
 
-### Een component Property toevoegen {#adding-a-property-component}
+### Een component Property {#adding-a-property-component} toevoegen
 
-Nadat u de het ontwerppagina **van de** ClientContext hebt geopend, kunt u een volledig nieuwe bezit ook **toevoegen** gebruikend de beschikbare componenten (de componenten zijn vermeld op zowel sidekick als van het dialoogvenster van de Component **van het** Tussenvoegsel Nieuwe dat na een dubbele klik op de componenten of de activa van de **Belemmering hier** doos wordt geopend):
+Nadat u de **ClientContext ontwerppagina** hebt geopend, kunt u **Een volledig nieuwe eigenschap toevoegen** ook met de beschikbare componenten (de componenten worden vermeld op zowel de hulpwerkschijf als in het dialoogvenster **Nieuwe component invoegen** dat wordt geopend nadat u dubbelklikt op **Componenten of middelen hier**):
 
 ![](assets/clientcontext_alisonparker_new.png)
 
-### Een component Property verwijderen {#removing-a-property-component}
+### Een component Property {#removing-a-property-component} verwijderen
 
-Nadat u de **ClientContext-ontwerppagina** hebt geopend, kunt u een eigenschap ook **verwijderen** als dit niet langer nodig is. Dit omvat eigenschappen die buiten de box worden geleverd; **Herstellen** herstelt deze als ze zijn verwijderd.
+Nadat u **ClientContext ontwerppagina** hebt geopend, kunt u **Een eigenschap ook verwijderen als u deze niet meer nodig hebt.** Dit omvat eigenschappen die buiten de box worden geleverd; **Reset** zal deze herstellen als zij zijn verwijderd.
 
 ## Gegevens opslaan in clientcontext via JSONP {#storing-data-in-client-context-via-jsonp}
 
 Volg dit voorbeeld om de JSONP component van de de contextopslag van de Opslag te gebruiken om externe gegevens aan de Context van de Cliënt toe te voegen. Maak vervolgens een segment op basis van de informatie uit die gegevens. Het voorbeeld gebruikt de dienst JSONP die WIPmania.com verleent. De service retourneert informatie over de geolocatie op basis van het IP-adres van de webclient.
 
-In dit voorbeeld wordt de voorbeeldwebsite van Geometrixx Outdoors gebruikt om toegang te krijgen tot Client Context en het gemaakte segment te testen. U kunt een andere website gebruiken zolang de pagina Clientcontext heeft ingeschakeld. (Zie Clientcontext [toevoegen aan een pagina](/help/sites-developing/client-context.md#adding-client-context-to-a-page).)
+In dit voorbeeld wordt de voorbeeldwebsite van Geometrixx Outdoors gebruikt om toegang te krijgen tot Client Context en het gemaakte segment te testen. U kunt een andere website gebruiken zolang de pagina Clientcontext heeft ingeschakeld. (Zie [Clientcontext toevoegen aan een pagina](/help/sites-developing/client-context.md#adding-client-context-to-a-page).)
 
-### De JSONP Store-component toevoegen {#add-the-jsonp-store-component}
+### De JSONP Store-component {#add-the-jsonp-store-component} toevoegen
 
 Voeg de component van de Winkel JSONP aan de Context van de Cliënt toe en gebruik het om geolocatieinformatie over de Webcliënt terug te winnen en op te slaan.
 
@@ -249,7 +252,7 @@ Voeg de component van de Winkel JSONP aan de Context van de Cliënt toe en gebru
 
    ![](assets/chlimage_1-41.png)
 
-### Het segment maken {#create-the-segment}
+### Het segment {#create-the-segment} maken
 
 Gebruik de gegevens van de zittingsopslag die u gebruikend de JSONP opslagcomponent creeerde. Het segment gebruikt de breedtegraad van de zittingsopslag en de huidige datum om te bepalen of het wintertijd bij de plaats van de cliënt is.
 

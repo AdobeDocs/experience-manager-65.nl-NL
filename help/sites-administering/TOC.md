@@ -18,7 +18,7 @@ ht-degree: 6%
 # AEM 6.5 Gebruikershandleiding voor het beheer {#administering}
 
 + [Overzicht van de gebruikershandleiding beheren](home.md)
-+ Sitefuncties {#introduction}
++ Sitekenmerken {#introduction}
    + [Websitebeheer](msm-and-translation.md)
    + [Asynchrone taken](asynchronous-jobs.md)
    + [Inhoud opnieuw gebruiken: Beheer van meerdere sites en Live Copy](msm.md)
@@ -149,7 +149,7 @@ ht-degree: 6%
    + [Integratie met de Adobe Marketing Cloud](marketing-cloud.md)
    + [De integratie met Adobe Target handmatig configureren](target-configuring.md)
    + [Vereisten voor integratie met Adobe Target](target-requirements.md)
-   + [Integratie met Adobe Target met behulp van Adobe I/O](integration-ims-adobe-io.md)
+   + [Integratie met Adobe Target met Adobe I/O](integration-ims-adobe-io.md)
    + [Adobe-classificaties](adobeanalytics-classifications.md)
    + [Integreren met Adobe Search&amp;Promote](search-and-promote.md)
    + [Oplossingsintegratie](integration.md)

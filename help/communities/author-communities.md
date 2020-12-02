@@ -33,17 +33,17 @@ Ga voor meer informatie over het maken van een site op de website van de gemeens
 
 >[!NOTE]
 >
->Als u niet bekend bent met de ontwerpomgeving, bekijkt u de documentatie over [basisverwerking](/help/sites-authoring/basic-handling.md) en een [handleiding voor het schrijven van pagina](/help/sites-authoring/qg-page-authoring.md)&#39;s.
+>Als u niet bekend bent met de ontwerpomgeving, bekijkt u de documentatie over [basisverwerking](/help/sites-authoring/basic-handling.md) en een [snelle handleiding voor het schrijven van pagina&#39;s](/help/sites-authoring/qg-page-authoring.md).
 
 ## Beschikbare onderdelen van Gemeenschappen {#available-communities-components}
 
 De volgende lijst maakt een lijst van de componenten van Gemeenschappen zichtbaar aan auteurs wanneer toegelaten in componentenbrowser (sidekick).
 
-Zie ook de interactieve handleiding voor [Community Components](/help/communities/components-guide.md).
+Zie ook de interactieve [Community Components guide](/help/communities/components-guide.md).
 
 >[!NOTE]
 >
->Lees de Grondbeginselen [van](/help/communities/basics.md) Community-componenten omdat deze informatie bevat die nodig is voor ontwerpen met Community-componenten.
+>Lees [Community Components Basics](/help/communities/basics.md) omdat deze informatie bevat die nodig is voor het ontwerpen met Community-componenten.
 
 | **Componenttitel** | **Functie** |
 |---|---|
@@ -65,7 +65,7 @@ Zie ook de interactieve handleiding voor [Community Components](/help/communitie
 | Ideatie | [Ideatie](/help/communities/ideation-feature.md) |
 | Leaderboard | [Scores en badges](/help/communities/enabling-leaderboard.md) |
 | Vergelijken | [Vergelijken](/help/communities/liking.md) |
-| Message | [Berichten](/help/communities/configure-messaging.md) |
+| Bericht | [Berichten](/help/communities/configure-messaging.md) |
 | Berichtlijst | [Berichten](/help/communities/configure-messaging.md) |
 | QnA | [Vragen en antwoorden](/help/communities/working-with-qna.md) |
 | Snel zoeken | [Zoeken](/help/communities/search.md) |
@@ -82,11 +82,11 @@ Zie ook de interactieve handleiding voor [Community Components](/help/communitie
 >
 >De opiniepeilingscomponent is niet meer beschikbaar en wordt niet meer ondersteund in Experience Manager Communities.
 
-## Verwante documentatie van Gemeenschappen {#related-communities-documentation}
+## Documentatie van verwante gemeenschappen {#related-communities-documentation}
 
-* Bezoek [Implementerende gemeenschappen](/help/communities/deploy-communities.md) voor meer informatie over aanbevolen implementaties.
+* Bezoek [Gemeenschappen implementeren](/help/communities/deploy-communities.md) voor meer informatie over aanbevolen implementaties.
 
-* Bezoek [De Beheren Plaatsen](/help/communities/administer-landing.md) van Gemeenschappen om over het creëren van een communautaire plaats te leren, vormend communautaire plaatssjablonen, het modereren van communautaire inhoud, het beheren van leden, en het vormen overseinen.
+* Bezoek [Communitysites beheren](/help/communities/administer-landing.md) voor meer informatie over het maken van een communitysite, het configureren van sjablonen voor communitysites, het moderniseren van community-inhoud, het beheren van leden en het configureren van berichten.
 
-* Bezoek [Ontwikkelingsgemeenschappen](/help/communities/communities.md) voor meer informatie over het sociale-componentframework (SCF) en het aanpassen van onderdelen en functies van Gemeenschappen.
+* Bezoek [Developing Communities](/help/communities/communities.md) voor meer informatie over het SCF (Social Component Framework) en het aanpassen van onderdelen en functies van Gemeenschappen.
 

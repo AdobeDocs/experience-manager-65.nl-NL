@@ -22,7 +22,7 @@ ht-degree: 1%
 
 Deze pagina bevat de essentiële informatie voor het werken met de functie Forum.
 
-## Essentiële elementen voor client-kant {#essentials-for-client-side}
+## Essentiële elementen voor client-side {#essentials-for-client-side}
 
 <table>
  <tbody>
@@ -36,7 +36,7 @@ Deze pagina bevat de essentiële informatie voor het werken met de functie Forum
   </tr>
   <tr>
    <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td>
-   <td>cq.ckeditor<br /> cq.social.hbs.stemden<br /> cq.social.hbs.forum</td>
+   <td>cq.ckeditor<br /> cq.social.hbs.stem<br /> cq.social.hbs.forum</td>
   </tr>
   <tr>
    <td> <strong>templates</strong></td>
@@ -65,21 +65,21 @@ Deze pagina bevat de essentiële informatie voor het werken met de functie Forum
 
 ### Functie van forum {#forum-function}
 
-Een community-sitestructuur die de functie [](functions.md#forum-function)Forum bevat, bevat een geconfigureerde `forum` component en instellingen die invloed hebben op de moderatie, codering en vertaling.
+Een community-sitestructuur die de functie [Forum](functions.md#forum-function) bevat, bevat een geconfigureerde `forum`-component en instellingen die de moderatie, codering en vertaling beïnvloeden.
 
 ### Toegang tot forumberichten (UGC) {#accessing-forum-posts-ugc}
 
 UGC moet worden gemoderniseerd met behulp van een van de standaardmethoden voor gematigdheid.
-Zie Door de gebruiker gegenereerde inhoud [modereren](moderate-ugc.md).
+Zie [Door gebruiker gegenereerde inhoud modereren](moderate-ugc.md).
 
-Vanaf AEM 6.1 Communities omvat het gebruik van een [gemeenschappelijke opslag](working-with-srp.md) voor UGC programmatische toegang tot UGC ongeacht de gekozen opslagoptie (zoals ASRP, MSRP of JSRP).
+Met ingang van AEM 6.1 Communities omvat het gebruik van een [common store](working-with-srp.md) voor UGC programmatische toegang tot UGC, ongeacht de gekozen opslagoptie (zoals ASRP, MSRP of JSRP).
 
 **De locatie en indeling van de UGC in de opslagplaats kunnen zonder waarschuwing** worden gewijzigd.
 
 Zie:
 
-* [Overzicht](srp.md) van Storage Resource Provider - Inleiding en overzicht van het opslaggebruik.
-* [SRP en de Hoofdzaak](srp-and-ugc.md) UGC - SRP nutsmethodes en voorbeelden.
-* [Toegang tot UGC met SRP](accessing-ugc-with-srp.md) - Coderingsrichtlijnen.
-* [SocialUtils Refactoring](socialutils.md) - Afgekeurde nutsmethodes van de Afbeelding aan huidige SRP hulpprogrammamethodes.
+* [Overzicht](srp.md)  van Storage Resource Provider - Inleiding en overzicht van het opslaggebruik.
+* [SRP en de Hoofdzaak](srp-and-ugc.md)  van UGC - SRP nutsmethodes en voorbeelden.
+* [Toegang tot UGC met SRP](accessing-ugc-with-srp.md)  - Coderingsrichtlijnen.
+* [SocialUtils Refactoring](socialutils.md)  - Afgekeurde nutsmethodes van de Afbeelding aan huidige SRP hulpprogrammamethodes.
 

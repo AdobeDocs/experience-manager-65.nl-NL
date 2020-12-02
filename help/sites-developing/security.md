@@ -11,29 +11,32 @@ content-type: reference
 discoiquuid: d2267663-6c1d-413c-9862-e82e21ae6906
 translation-type: tm+mt
 source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+workflow-type: tm+mt
+source-wordcount: '434'
+ht-degree: 0%
 
 ---
 
 
 # Beveiliging{#security}
 
-De Veiligheid van de toepassing begint tijdens de ontwikkelingsfase. Adobe raadt u aan de volgende best practices op het gebied van beveiliging toe te passen.
+De Veiligheid van de toepassing begint tijdens de ontwikkelingsfase. Adobe raadt aan de volgende best practices op het gebied van beveiliging toe te passen.
 
-## Aanvraagsessie gebruiken {#use-request-session}
+## Aanvraagsessie {#use-request-session} gebruiken
 
-Adobe raadt aan dat elke toegang tot de opslagplaats wordt uitgevoerd volgens het principe van toegangsrechten voor de gebruiker. Hierbij wordt gebruikgemaakt van de sessie die is gebonden aan de aanvraag van de gebruiker en van een juiste toegangscontrole.
+Volgens het beginsel van bevoegdheden op het gebied van gegevensopslag, raadt Adobe aan dat elke toegang tot de gegevensopslagruimte wordt uitgevoerd door gebruik te maken van de sessie die is gebonden aan het verzoek van de gebruiker en het juiste toegangsbeheer.
 
-## Beveiligen tegen XSS (Cross-Site Scripting) {#protect-against-cross-site-scripting-xss}
+## Protect tegen XSS (Cross-Site Scripting) {#protect-against-cross-site-scripting-xss}
 
 Met XSS (Cross-site scripting) kunnen aanvallers code injecteren in webpagina&#39;s die door andere gebruikers worden weergegeven. Deze kwetsbaarheid op het gebied van beveiliging kan door kwaadaardige webgebruikers worden misbruikt om toegangsbesturingselementen te omzeilen.
 
-AEM past het beginsel toe om alle gebruiker-geleverde inhoud op output te filtreren. Het voorkomen van XSS krijgt de hoogste prioriteit tijdens zowel ontwikkeling als testen.
+AEM past het beginsel toe van het filtreren van alle gebruiker-geleverde inhoud op output. Het voorkomen van XSS krijgt de hoogste prioriteit tijdens zowel ontwikkeling als testen.
 
-Het XSS-beveiligingsmechanisme dat door AEM wordt geboden, is gebaseerd op de [AntiSamy Java-bibliotheek](https://www.owasp.org/index.php/Category:OWASP_AntiSamy_Project) van [OWASP (het Open Web Application Security Project)](https://www.owasp.org/). De standaardconfiguratie van AntiSamy vindt u op
+Het XSS-beveiligingsmechanisme dat door AEM wordt geboden, is gebaseerd op de [AntiSamy Java Library](https://www.owasp.org/index.php/Category:OWASP_AntiSamy_Project) die wordt geleverd door [OWASP (het Open Web Application Security Project)](https://www.owasp.org/). De standaardconfiguratie van AntiSamy vindt u op
 
 `/libs/cq/xssprotection/config.xml`
 
-Het is belangrijk dat u deze configuratie aan uw eigen veiligheidsbehoeften aanpast door het configuratiedossier te bedekken. De officiële [documentatie](https://www.owasp.org/index.php/Category:OWASP_AntiSamy_Project) AntiSamy zal u van alle informatie voorzien u nodig hebt om uw veiligheidsvereisten uit te voeren.
+Het is belangrijk dat u deze configuratie aanpast aan uw eigen veiligheidsbehoeften door het configuratiedossier te bedekken. De officiële [AntiSamy documentatie](https://www.owasp.org/index.php/Category:OWASP_AntiSamy_Project) zal u van alle informatie voorzien u nodig hebt om uw veiligheidsvereisten uit te voeren.
 
 >[!NOTE]
 >
@@ -45,9 +48,9 @@ Bovendien, kan een firewall van de Webtoepassing, zoals [mod_security voor Apach
 
 >[!NOTE]
 >
->ACLs voor de Informatie van de Dienst van de Wolk evenals de montages OSGi die worden vereist om uw instantie te beveiligen worden geautomatiseerd als deel van de Klaar Wijze [van de](/help/sites-administering/production-ready.md)Productie. Terwijl dit betekent dat u niet de configuratieveranderingen manueel hoeft aan te brengen, wordt het nog geadviseerd dat u hen herzien alvorens u met uw plaatsing gaat leven.
+>ACLs voor de Informatie van de Cloud Service evenals de montages OSGi die worden vereist om uw instantie te beveiligen worden geautomatiseerd als deel van [Productie Klaar Modus](/help/sites-administering/production-ready.md). Terwijl dit betekent dat u niet de configuratieveranderingen manueel hoeft aan te brengen, wordt het nog geadviseerd dat u hen herzien alvorens u met uw plaatsing gaat leven.
 
-Wanneer u uw AEM-exemplaar [integreert met de Adobe Marketing Cloud](/help/sites-administering/marketing-cloud.md) , gebruikt u [Cloud Service-configuraties](/help/sites-developing/extending-cloud-config.md). Informatie over deze configuraties, samen met alle verzamelde statistieken, wordt opgeslagen in de gegevensopslagruimte. Wij adviseren dat, als u deze functionaliteit gebruikt, u controleert of de standaardveiligheid op deze informatie uw vereisten aanpast.
+Wanneer u [uw AEM instantie met Adobe Marketing Cloud](/help/sites-administering/marketing-cloud.md) integreert gebruikt u [Cloud Service configuraties](/help/sites-developing/extending-cloud-config.md). Informatie over deze configuraties, samen met alle verzamelde statistieken, wordt opgeslagen in de gegevensopslagruimte. Wij adviseren dat, als u deze functionaliteit gebruikt, u controleert of de standaardveiligheid op deze informatie uw vereisten aanpast.
 
 De module webservicesSupport schrijft statistieken en configuratiegegevens onder:
 
@@ -55,10 +58,10 @@ De module webservicesSupport schrijft statistieken en configuratiegegevens onder
 
 Met de standaardmachtigingen:
 
-* Auteursomgeving: `read` for `contributors`
+* Auteursomgeving: `read` voor `contributors`
 
-* Publicatie-omgeving: `read` for `everyone`
+* Publicatie-omgeving: `read` voor `everyone`
 
-## Beveiligen tegen aanvallen van smeden voor meerdere sites {#protect-against-cross-site-request-forgery-attacks}
+## Protect tegen aanvallen van smeedmachines voor aanvragen voor andere sites {#protect-against-cross-site-request-forgery-attacks}
 
-Voor meer informatie over de veiligheidsmechanismen gebruikt AEM om aanvallen te verlichten CSRF, zie de sectie van de Filter [van de Verkoper van de](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) Verkoop van de Controle van de Veiligheid en de documentatie [van het Kader van de Bescherming](/help/sites-developing/csrf-protection.md)CSRF.
+Voor meer informatie over de veiligheidsmechanismen AEM aanwenden om aanvallen te verlichten CSRF, zie [het Verkopen van Filter van de Referateur](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) sectie van de Controlelijst van de Veiligheid en [CSRF de documentatie van het Kader](/help/sites-developing/csrf-protection.md).

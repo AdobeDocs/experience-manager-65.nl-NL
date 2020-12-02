@@ -19,14 +19,14 @@ Als u een [!DNL Adobe Experience Manager Assets] gebruiker bent, wordt Lichtbak 
 
 ## Elementen toevoegen aan lichtbak {#adding-assets-to-lightbox}
 
-1. Selecteer in de [!DNL Assets] gebruikersinterface de elementen die u aan Lichtbak wilt toevoegen.
-1. Sleep de elementen naar de **[!UICONTROL Drop in Lightbox]** zone. Laat los wanneer de drop-zone actief wordt, en zijn etiket verandert in **[!UICONTROL Drop to Add]**.
+1. Selecteer in de gebruikersinterface [!DNL Assets] de elementen die u aan Lichtbak wilt toevoegen.
+1. Sleep de elementen naar de zone **[!UICONTROL Drop in Lightbox]**. Laat los wanneer de drop-zone actief wordt, en zijn etiket verandert in **[!UICONTROL Drop to Add]**.
 
    ![add_to_lightbox](assets/add_to_lightbox.png)
 
-1. Klik in het dialoogvenster **[!UICONTROL Add]** en sluit het vervolgens om het proces te voltooien. De geselecteerde elementen worden toegevoegd aan Lichtbak.
+1. Klik in het dialoogvenster op **[!UICONTROL Add]** en sluit het vervolgens om het proces te voltooien. De geselecteerde elementen worden toegevoegd aan Lichtbak.
 1. Ga naar de console Verzamelingen om Lichtbak weer te geven.
-1. Klik hierop **[!UICONTROL Lightbox]** om de elementen in het venster weer te geven.
+1. Klik **[!UICONTROL Lightbox]** om de elementen in het te bekijken.
 
    >[!NOTE]
    >
@@ -37,4 +37,4 @@ Als u een [!DNL Adobe Experience Manager Assets] gebruiker bent, wordt Lichtbak 
 1. Navigeer naar de console Verzamelingen en klik op Lichtbak om de bijbehorende elementen weer te geven.
 1. Selecteer de elementen die u wilt verwijderen.
 1. Klik **[!UICONTROL Remove]** op de werkbalk.
-1. Klik in het dialoogvenster **[!UICONTROL Remove]** om de verwijderactie te bevestigen. De elementen worden verwijderd uit Lichtbak.
+1. Klik in het dialoogvenster op **[!UICONTROL Remove]** om de verwijderactie te bevestigen. De elementen worden verwijderd uit Lichtbak.

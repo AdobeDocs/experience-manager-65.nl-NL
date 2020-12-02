@@ -20,15 +20,15 @@ ht-degree: 0%
 
 # In context Moderatie {#in-context-moderation}
 
-Voor AEM Communities kan de moderatie door beheerders en vertrouwde op communautaire leden rechtstreeks op de gepubliceerde pagina worden uitgevoerd waar de communautaire inhoud werd gepost.
+Voor AEM Communities kan de moderatie rechtstreeks door beheerders en leden van een vertrouwde gemeenschap worden uitgevoerd op de gepubliceerde pagina waar de community-inhoud is geplaatst.
 
 Wanneer het gebruiken van een [moderatieconsole](moderation.md), omvat de informatie die voor de inhoud wordt getoond een verbinding aan de gepubliceerde pagina om toegang tot extra beschikbare moderatieacties toe te staan wanneer het modereren in-context.
 
 ## Moderatiehandelingen {#moderation-actions}
 
-Bezoek het moderatieoverzicht voor een beschrijving van [matigheidsacties](moderate-ugc.md#moderation-actions).
+Bezoek het moderatieoverzicht voor een beschrijving van [moderatieacties](moderate-ugc.md#moderation-actions).
 
-## Moderniseringsinterface {#moderation-ui}
+## Moderatieinterface {#moderation-ui}
 
 UI die aan de moderator op wordt voorgesteld publiceert instantie is bevat binnen de dialoog voor het posten van en het beheren van gebruiker geproduceerde inhoud (UGC). De elementen van de gebruikersinterface worden bepaald door de status van de bezoeker van de site - of ze nu ...
 
@@ -40,13 +40,13 @@ UI die aan de moderator op wordt voorgesteld publiceert instantie is bevat binne
 
 ## Voorbeeld {#example}
 
-Met de [Geometrixx Engage](http://localhost:4503/content/sites/engage/en.html) -site die bij [Aan de slag met AEM Communities](getting-started.md)is gemaakt, is het mogelijk om snel een thread in een forum in te stellen waarop verschillende moderatieactiviteiten in de publicatieomgeving moeten worden uitgevoerd, zoals hieronder wordt weergegeven.
+Met behulp van de [Geometrixx Engage](http://localhost:4503/content/sites/engage/en.html)-site die is gemaakt toen [Aan de slag met AEM Communities](getting-started.md), is het mogelijk om snel een thread in een forum in te stellen waarop verschillende moderatieactiviteiten in de publicatieomgeving moeten worden uitgevoerd, zoals hieronder wordt weergegeven.
 
 Aaron McDonald (aaron.mcdonald@mailinator.com) werd geïdentificeerd als een vertrouwd lid van de gemeenschap door hem toe te voegen aan de community-engact-moderators groep bij het maken van de site.
 
-Rebekah Larsen (rebekah.larsen@trashymail.com) kan als lid van gemeenschap-in gesprek-ledengroep worden toegevoegd gebruikend de console [van](members.md)Leden.
+Rebekah Larsen (rebekah.larsen@trashymail.com) kan als lid van gemeenschap-in dienst nemende groep worden toegevoegd gebruikend [de console van Leden](members.md).
 
-Ga voor meer informatie over gebruikersgroepen in de gebruikersgemeenschap naar Gebruikers [beheren en Gebruikersgroepen](users.md).
+Voor meer op communautaire gebruikersgroepen, bezoek [Managing Gebruikers en Gebruikersgroepen](users.md).
 
 ### De forumberichten maken {#create-the-forum-posts}
 
@@ -97,9 +97,9 @@ Een anonieme bezoeker van de site kan alleen het forum bekijken, maar kan geen i
 
 ### Nieuw lid (#4) {#new-member}
 
-Bij auteur, login als admin en voeg Boyd Larsen (boyd.larsen@dodgit.com) als nieuw lid van gemeenschap-in dienst nemend-lidgroep toe gebruikend de console [van](members.md)Leden, dan Logout.
+Meld u bij de auteur aan als beheerder en voeg Boyd Larsen (boyd.larsen@dodgit.com) toe als een nieuw lid van de groep met community-commit-members met behulp van de [Liddenconsole](members.md) en meld u vervolgens af.
 
-Meld u bij het publiceren aan als Boyd Larsen en open de thread door deze te selecteren `Forum`en vervolgens `Read more` voor de nummervogel.
+Meld u bij het publiceren aan als Boyd Larsen en open de thread door `Forum` te selecteren en `Read more` vervolgens te selecteren voor de nummervogel.
 
 Opmerking:
 
@@ -124,9 +124,9 @@ Opmerking:
 
 ![community-admin-forum](assets/community-admin-forum.png)
 
-Selecteer het menupunt van het Beleid om tot de [moderatieconsole](moderation.md) van publiceer milieu toegang te hebben.
+Selecteer het menupunt van het Beleid om tot [moderatieconsole](moderation.md) van het publicatiemilieu toegang te hebben.
 
-Bericht dat, voor een beheerder, alle moderatable inhoud zichtbaar is, niet alleen inhoud van de Geometrixx de communautaire plaats van de Ingenieur van de Ingenieur.
+Bericht dat, voor een beheerder, alle moderatable inhoud zichtbaar is, niet alleen inhoud van de de communautaire plaats van de Modus van de Geometrixx.
 
 Het zoekfilter is een sidepanel dat in- en uitschakelt.
 
@@ -134,7 +134,7 @@ Afmelden.
 
 ![moderatie-console-publish](assets/moderation-console-publish.png)
 
-### Moderator van de Gemeenschap (#2) {#community-moderator}
+### Community Moderator (#2) {#community-moderator}
 
 Log in als Aaron McDonald (aaron.mcdonal@mailinator.com), een moderator van de gemeenschap, en open de thread door Forum te selecteren, en lees dan meer voor de bulgvogelpost.
 
@@ -147,11 +147,11 @@ Opmerking:
 
 ![gemeenschapsforum-moderator](assets/community-forum-moderator.png)
 
-Selecteer het menupunt van het Beleid om tot de [moderatieconsole](moderation.md) van publiceer milieu toegang te hebben.
+Selecteer het menupunt van het Beleid om tot [moderatieconsole](moderation.md) van het publicatiemilieu toegang te hebben.
 
-Bericht dat, voor een communautaire moderator, slechts moderatable inhoud van de Geometrixx de communautaire plaats van de Ingenieur zichtbaar is.
+Bericht dat, voor een communautaire moderator, slechts moderatable inhoud van de de communautaire plaats van de Modus van de Geometrixx is zichtbaar.
 
-Merk op de communautaire moderator de zelfde opties heeft zoals de beheerder (het beeld is met onderzoek sidebar geknepen gesloten), maar geen toegang tot andere consoles AEM.
+Merk op de communautaire moderator de zelfde opties heeft zoals de beheerder (het beeld is met onderzoek sidebar geknepen gesloten), maar geen toegang tot andere AEM consoles.
 
 Afmelden.
 

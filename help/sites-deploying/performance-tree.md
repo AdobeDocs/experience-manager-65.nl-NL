@@ -11,11 +11,14 @@ topic-tags: best-practices
 discoiquuid: 5febbb1e-795c-49cd-a8f4-c6b4b540673d
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '1207'
+ht-degree: 0%
 
 ---
 
 
-# Prestatieschema{#performance-tree}
+# Prestatiestructuur{#performance-tree}
 
 ## Scope {#scope}
 
@@ -25,27 +28,27 @@ Elke stap in het diagram is verbonden met een documentatiemiddel of een aanbevel
 
 ## Vereisten en veronderstellingen {#prerequisites-and-assumptions}
 
-De aanname is dat een prestatieprobleem wordt waargenomen op een bepaalde pagina (een AEM-console of een webpagina) en consistent kan worden gereproduceerd. Een manier om de prestaties te testen of te controleren is een voorwaarde voordat het onderzoek wordt gestart.
+De aanname is dat een prestatieprobleem wordt waargenomen op een bepaalde pagina (een AEM console of een webpagina) en consistent kan worden gereproduceerd. Een manier om de prestaties te testen of te controleren is een voorwaarde voordat het onderzoek wordt gestart.
 
 De analyse begint bij stap 0. Het doel is te bepalen welke entiteit (dispatcher, externe host of AEM) verantwoordelijk is voor het prestatieprobleem en vervolgens te bepalen welk gebied (server of netwerk) moet worden onderzocht.
 
-### Section 1 {#section}
+### Sectie 1 {#section}
 
 ![chlimage_1-103](assets/chlimage_1-103.png)
 
-### Section 2 {#section-1}
+### Sectie 2 {#section-1}
 
 ![chlimage_1-104](assets/chlimage_1-104.png)
 
-### Section 3 {#section-2}
+### Sectie 3 {#section-2}
 
-![chlimage_1-105](assets/chlimage_1-105.png)
+![chlimage_1-106](assets/chlimage_1-105.png)
 
-### Section 4 {#section-3}
+### Sectie 4 {#section-3}
 
-![chlimage_1-106](assets/chlimage_1-106.png)
+![chlimage_1-105](assets/chlimage_1-106.png)
 
-### Section 5 {#section-4}
+### Sectie 5 {#section-4}
 
 ![chlimage_1-107](assets/chlimage_1-107.png)
 
@@ -61,27 +64,27 @@ De analyse begint bij stap 0. Het doel is te bepalen welke entiteit (dispatcher,
   <tr>
    <td><strong>Stap 0</strong></td>
    <td>Aanvraagstroom analyseren</td>
-   <td><p>U kunt standaard HTTP- verzoekanalyse in browser gebruiken om de verzoekstroom te analyseren. Zie voor meer informatie over hoe u dit kunt doen op Chrome:<br /> </p> <p><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading">https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading</a><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/understanding-resource-timing"><br /> https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/understanding-resource-timing</a><br /> </p> </td>
+   <td><p>U kunt standaard HTTP- verzoekanalyse in browser gebruiken om de verzoekstroom te analyseren. Voor meer informatie over hoe te om dit op Chrome te doen, zie:<br /> </p> <p><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading">https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-</a><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/understanding-resource-timing"><br /> loadinghttps://developers.google.com/web/tools/chrome-devtools/profile/network-performance/understanding-resource-timing</a><br /> </p> </td>
   </tr>
   <tr>
    <td><strong>Stap 2</strong></td>
    <td>Worden verzoeken afkomstig van externe hosts?</td>
-   <td>U kunt standaard HTTP- verzoekanalyse in browser gebruiken om de verzoekstroom te analyseren. Zie bovenstaande koppelingen voor informatie over hoe u dit kunt doen op Chrome.<br /> </td>
+   <td>U kunt standaard HTTP- verzoekanalyse in browser gebruiken om de verzoekstroom te analyseren. Zie de bovenstaande koppelingen op hoe u dit kunt doen op Chrome.<br /> </td>
   </tr>
   <tr>
    <td><strong>Stap 3</strong></td>
    <td>Kunnen de verzoeken in de cache worden geplaatst?</td>
-   <td>Voor meer informatie over cacheable verzoeken en algemene de prestatiesoptimalisering van de Verzender, zie de Optimalisering <a href="/help/sites-deploying/configuring-performance.md#optimizing-performance-when-using-the-dispatcher">van de Prestaties van de</a>Verzender.</td>
+   <td>Voor meer informatie over cacheable verzoeken en algemene de prestatiesoptimaliseringsadvies van de Verzender, zie <a href="/help/sites-deploying/configuring-performance.md#optimizing-performance-when-using-the-dispatcher">Optimalisering van de Prestaties van de Verzender</a>.</td>
   </tr>
   <tr>
    <td><strong>Stap 4</strong></td>
    <td>Zijn verzoeken afkomstig van de Dispatcher?</td>
-   <td><p>Controleer de foutopsporingsdocumentatie <a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#debugging">van de</a> Dispatcher om te zien of de aanvragen correct in de cache zijn opgeslagen.<br /> </p> </td>
+   <td><p>Raadpleeg de <a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#debugging">Foutopsporingsdocumentatie voor Dispatcher</a> om te controleren of de aanvragen correct in de cache zijn opgeslagen.<br /> </p> </td>
   </tr>
   <tr>
    <td><strong>Stap 5</strong></td>
-   <td>Probeert de Dispatcher elk verzoek te verifiëren via AEM?</td>
-   <td>Controleer of de verzender <code>HEAD</code> aanvragen voor verificatie naar AEM verzendt voordat de in de cache opgeslagen bron wordt geleverd. U kunt dit doen door <code>HEAD</code> verzoeken in AEM te zoeken <code>access.log</code>. For more information, see <a href="/help/sites-deploying/configure-logging.md">Logging</a>.<br /> </td>
+   <td>Probeert de Dispatcher elk verzoek via AEM te verifiëren?</td>
+   <td>Controleer of de verzender <code>HEAD</code> verzoeken naar AEM voor verificatie verzendt voordat de in de cache opgeslagen bron wordt geleverd. U kunt dit doen door <code>HEAD</code> verzoeken in AEM <code>access.log</code> te zoeken. Voor meer informatie, zie <a href="/help/sites-deploying/configure-logging.md">Registratie</a>.<br /> </td>
   </tr>
   <tr>
    <td><strong>Stap 6</strong></td>
@@ -96,7 +99,7 @@ De analyse begint bij stap 0. Het doel is te bepalen welke entiteit (dispatcher,
   <tr>
    <td><strong>Stap 8</strong></td>
    <td>Is de traagheid reproduceerbaar met een lokale instantie?</td>
-   <td><br /> <p>Gebruik <a href="/help/sites-developing/tough-day.md">Dag</a> van de Stevige om "echte wereld"omstandigheden van de productie instanties te herhalen. Als dit voor de ruimte van uw ontwikkeling niet realistisch is, zorg ervoor om de productieinstantie (of identieke het opvoeren) in een verschillende netwerkcontext te testen.<br /> </p> </td>
+   <td><br /> <p>Gebruik <a href="/help/sites-developing/tough-day.md">Tough Day</a> om de "echte wereld"omstandigheden van de productie instanties te herhalen. Als dit voor de ruimte van uw ontwikkeling niet realistisch is, zorg ervoor om de productie instantie (of identieke het opvoeren) in een verschillende netwerkcontext te testen.<br /> </p> </td>
   </tr>
   <tr>
    <td><strong>Stap 9</strong></td>
@@ -106,7 +109,7 @@ De analyse begint bij stap 0. Het doel is te bepalen welke entiteit (dispatcher,
   <tr>
    <td><strong>Stappen 10 en 29</strong></td>
    <td>Onderzoek netwerklaag</td>
-   <td><p>Onderzoek de netwerklaag voor verzadiging en latentiekwesties.</p> <p>Voor de auteurslaag, adviseert men dat de latentie 100 milliseconden niet overschrijdt.</p> <p>Zie <a href="https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html">deze pagina</a>voor meer informatie over tips voor het optimaliseren van prestaties.</p> </td>
+   <td><p>Onderzoek de netwerklaag voor verzadiging en latentiekwesties.</p> <p>Voor de auteurslaag, adviseert men dat de latentie 100 milliseconden niet overschrijdt.</p> <p>Zie <a href="https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html">deze pagina</a> voor meer informatie over tips voor het optimaliseren van prestaties.</p> </td>
   </tr>
   <tr>
    <td><strong>Stap 11</strong></td>
@@ -115,13 +118,13 @@ De analyse begint bij stap 0. Het doel is te bepalen welke entiteit (dispatcher,
   </tr>
   <tr>
    <td><strong>Stap 12</strong></td>
-   <td>Problemen met AEM-server oplossen</td>
+   <td>Problemen met AEM server oplossen</td>
    <td>Controleer de volgende substappen in het diagram voor meer informatie.</td>
   </tr>
   <tr>
    <td><strong>Stap 13</strong></td>
    <td>Hardwarevereisten controleren</td>
-   <td>Raadpleeg de documentatie bij de richtlijnen voor <a href="/help/managing/hardware-sizing-guidelines.md">hardwaregrootte</a>.<br /> </td>
+   <td>Raadpleeg de documentatie bij <a href="/help/managing/hardware-sizing-guidelines.md">Richtlijnen voor hardwaregrootte</a>.<br /> </td>
   </tr>
   <tr>
    <td><strong>Stap 14</strong></td>
@@ -131,7 +134,7 @@ De analyse begint bij stap 0. Het doel is te bepalen welke entiteit (dispatcher,
   <tr>
    <td><strong>Stap 15</strong></td>
    <td>Langzame aanvragen zoeken</td>
-   <td><p>U kunt op langzame verzoeken controleren door het te analyseren <code>request.log</code> of door te gebruiken <code>rlog.jar</code>.</p> <p>Zie deze pagina voor meer informatie over het gebruik van rlog.jar.</p> <p>Zie <a href="/help/sites-deploying/monitoring-and-maintaining.md#using-rlog-jar-to-find-requests-with-long-duration-times">Using rlog.jar om verzoeken met lange duurtijden</a>te vinden.<br /> </p> <p> </p> </td>
+   <td><p>U kunt controleren op langzame verzoeken door <code>request.log</code> te analyseren of door <code>rlog.jar</code> te gebruiken.</p> <p>Zie deze pagina voor meer informatie over het gebruik van rlog.jar.</p> <p>Zie <a href="/help/sites-deploying/monitoring-and-maintaining.md#using-rlog-jar-to-find-requests-with-long-duration-times">Using rlog.jar om verzoeken met lange duurtijden te vinden</a>.<br /> </p> <p> </p> </td>
   </tr>
   <tr>
    <td><strong>Stap 16</strong></td>
@@ -146,7 +149,7 @@ De analyse begint bij stap 0. Het doel is te bepalen welke entiteit (dispatcher,
   <tr>
    <td><strong>Stap 18</strong></td>
    <td>Gemeenschappelijke scenario's voor profilering</td>
-   <td>Zie Specifieke scenario's <a href="/help/sites-deploying/monitoring-and-maintaining.md#analyzing-specific-scenarios">analyseren</a> in de sectie Prestaties optimaliseren.<br /> </td>
+   <td>Zie <a href="/help/sites-deploying/monitoring-and-maintaining.md#analyzing-specific-scenarios">Specifieke scenario's analyseren</a> in de sectie Prestaties optimaliseren.<br /> </td>
   </tr>
   <tr>
    <td><strong>Stap 19</strong></td>
@@ -171,7 +174,7 @@ De analyse begint bij stap 0. Het doel is te bepalen welke entiteit (dispatcher,
   <tr>
    <td><strong>Stappen 22 en 22.1</strong></td>
    <td>Cacheverhouding</td>
-   <td><a href="/help/sites-deploying/configuring-performance.md#calculating-the-dispatcher-cache-ratio"> Zie De </a>cacheverhouding<br />van de verzender berekenen. <br /> </td>
+   <td>Zie <a href="/help/sites-deploying/configuring-performance.md#calculating-the-dispatcher-cache-ratio">De cacheverhouding van de verzender berekenen</a>.<br /> <br /> </td>
   </tr>
   <tr>
    <td><strong>Stap 23</strong></td>
@@ -211,7 +214,7 @@ De analyse begint bij stap 0. Het doel is te bepalen welke entiteit (dispatcher,
     <ol>
      <li><a href="/help/sites-deploying/configuring-performance.md#cq-dam-asset-synchronization-service">Assets Synchronization Service</a></li>
      <li><a href="/help/sites-deploying/configuring-performance.md#multiple-dam-instances">Meerdere DAM-instanties</a></li>
-     <li>Tips voor het afstemmen van prestaties <a href="https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html">hier</a> en <a href="https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html">hier</a>.<br /> </li>
+     <li>Tips voor het afstemmen van prestaties in artikelen <a href="https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html">hier</a> en <a href="https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html">hier</a>.<br /> </li>
     </ol> </td>
   </tr>
   <tr>
@@ -231,7 +234,7 @@ De analyse begint bij stap 0. Het doel is te bepalen welke entiteit (dispatcher,
   </tr>
   <tr>
    <td><strong>Stap 32</strong></td>
-   <td>Gebruik sessiebeheer op verzendniveau om AEM-server te offloaden</td>
+   <td>Gebruik sessiebeheer op verzendniveau om AEM server te offloaden</td>
    <td><p><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement">Beveiligde sessies inschakelen</a></p> </td>
   </tr>
   <tr>
@@ -241,7 +244,7 @@ De analyse begint bij stap 0. Het doel is te bepalen welke entiteit (dispatcher,
     <ol>
      <li><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html">Algemene configuratie van verzender</a></li>
      <li><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache">De Dispatcher Cache configureren</a></li>
-    </ol> <p>Hoe te om geheim voorgeheugenverhouding te verbeteren; aanvragen in cache kunnen plaatsen (best practices voor Dispatcher)</p> <p>Houd ook rekening met de onderstaande instellingen om uw cacheconfiguraties te optimaliseren<br /> </p>
+    </ol> <p>Hoe te om geheim voorgeheugenverhouding te verbeteren; aanvragen in cache kunnen plaatsen (best practices voor Dispatcher)</p> <p>Houd ook rekening met de onderstaande instellingen om uw configuraties in cache te optimaliseren<br /> </p>
     <ol>
      <li>Een no-cache-regel instellen voor HTTP-aanvragen die niet GET zijn</li>
      <li>Vraagtekenreeksen configureren om niet cacheable te zijn</li>
@@ -271,12 +274,12 @@ De analyse begint bij stap 0. Het doel is te bepalen welke entiteit (dispatcher,
   <tr>
    <td><strong>Stappen 37 en 38</strong></td>
    <td>Lazy-loading</td>
-   <td><a href="https://docs.adobe.com/ddc/en/gems/aem-web-performance.html">Zie de Gem-sessie over AEM-webprestaties.</a><br /> </td>
+   <td><a href="https://docs.adobe.com/ddc/en/gems/aem-web-performance.html">Zie Gem-sessie over AEM webprestaties.</a><br /> </td>
   </tr>
   <tr>
    <td><strong>Stap 39</strong></td>
    <td>Gebruik pre-verbindt om verbindingsoverheadkosten te verminderen</td>
-   <td>Zie de hierboven vermelde Gem-sessie. <a href="https://www.w3.org/TR/resource-hints/#dfn-preconnect"> Daarnaast is er extra documentatie beschikbaar die vooraf verbinding maakt met W3c: https://www.w3.org/TR/resource-hints/#dfn-preconnect</a></td>
+   <td>Zie de hierboven vermelde Gem-sessie. Ook wordt de extra documentatie vooraf gekoppeld op W3c:<a href="https://www.w3.org/TR/resource-hints/#dfn-preconnect"> https://www.w3.org/TR/resource-hints/#dfn-preconnect</a></td>
   </tr>
   <tr>
    <td><strong>Stappen 40 en 41</strong><br /> </td>
@@ -286,17 +289,17 @@ De analyse begint bij stap 0. Het doel is te bepalen welke entiteit (dispatcher,
   <tr>
    <td><strong>Stappen 45<br /> en 47</strong><br /> </td>
    <td>HTTP/2 gebruiken</td>
-   <td>Zie de Gem-sessie voor de stappen 37,38 en 39. Lees ook <a href="https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.topic.html/forum__kdzc-does_anyoneknowwhe.html">dit</a> forumbericht op HTTP/2-ondersteuning.<br /> </td>
+   <td>Zie de Gem-sessie voor de stappen 37,38 en 39. Ook, controleer <a href="https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.topic.html/forum__kdzc-does_anyoneknowwhe.html">dit</a> forumpost op HTTP/2 steun.<br /> </td>
   </tr>
   <tr>
    <td><strong>Stap 49</strong></td>
    <td>Belastingsgrootte verkleinen</td>
-   <td><a href="/help/sites-deploying/osgi-configuration-settings.md">Schakel Gzip</a> in en <a href="https://docs.adobe.com/ddc/en/gems/aem-web-performance.html">maak de afbeelding kleiner</a>.<br /> </td>
+   <td><a href="/help/sites-deploying/osgi-configuration-settings.md">Schakel </a> Gziand in en  <a href="https://docs.adobe.com/ddc/en/gems/aem-web-performance.html">maak de afbeeldingsgrootte</a> kleiner.<br /> </td>
   </tr>
   <tr>
    <td><strong>Stappen 42 en 43</strong></td>
    <td>Keep-Alive</td>
-   <td><p>Is de <code>Keep-Alive</code> kopbal aanwezig in de verschillende verzoeken om verbindingen opnieuw te gebruiken? Anders zou het betekenen dat elk verzoek tot een andere verbindingsinstelling leidt, wat onnodige overheadkosten met zich meebrengt. (Standaard HTTP-aanvraaganalyse in de browser)</p> <p>U kunt het hulpmiddel <a href="/help/sites-administering/proxy-jar.md">van de Server van de</a> Volmacht controleren om Levende verbindingen te controleren.<br /> </p> </td>
+   <td><p>Is de <code>Keep-Alive</code> kopbal aanwezig in de verschillende verzoeken om verbindingen opnieuw te gebruiken? Anders zou het betekenen dat elk verzoek tot een andere verbindingsinstelling leidt, wat onnodige overheadkosten met zich meebrengt. (Standaard HTTP-aanvraaganalyse in de browser)</p> <p>U kunt het <a href="/help/sites-administering/proxy-jar.md">hulpmiddel van de Server van de Volmacht </a> controleren om Levende verbindingen van het Levensonderhoud te controleren.<br /> </p> </td>
   </tr>
   <tr>
    <td><strong>Stap 44</strong></td>
@@ -311,7 +314,7 @@ De analyse begint bij stap 0. Het doel is te bepalen welke entiteit (dispatcher,
      <li>Bronnen samenvoegen (afbeeldingen, CSS-sprites, JSON, enz.)<br /> </li>
      <li>Clientlibs insluiten:
       <ol>
-       <li><a href="/help/sites-developing/clientlibs.md#creating-client-library-folders">Clientbibliotheekmappen</a> maken - zie kop Insluiten gebruiken om verzoeken tot een minimum te beperken</li>
+       <li><a href="/help/sites-developing/clientlibs.md#creating-client-library-folders">Clientbibliotheekmappen</a>  maken - zie kop Insluiten gebruiken om verzoeken tot een minimum te beperken</li>
       </ol> </li>
     </ol> </td>
   </tr>

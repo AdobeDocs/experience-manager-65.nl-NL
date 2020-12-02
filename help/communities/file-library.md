@@ -27,26 +27,26 @@ De functie voor bestandsbibliotheek biedt een plaats voor ingetekende sitebezoek
 
 In dit gedeelte van de documentatie wordt het volgende beschreven:
 
-* De functie Bestandsbibliotheek toevoegen aan een AEM-site.
-* De montages van de configuratie voor de `File Library` component.
+* De functie voor de bestandsbibliotheek toevoegen aan een AEM site.
+* De montages van de configuratie voor `File Library` component.
 
 ### Een bestandsbibliotheek toevoegen aan een pagina {#adding-a-file-library-to-a-page}
 
-Als u een `File Library` component aan een pagina wilt toevoegen in de ontwerpmodus, zoekt u de component:
+Als u een `File Library`-component wilt toevoegen aan een pagina in de modus Ontwerpen, zoekt u de component:
 
 * `Communities / File Library`
 
 en sleep het naar de juiste plaats op een pagina.
 
-Ga voor de benodigde informatie naar [Community Components Basics](/help/communities/basics.md).
+Voor noodzakelijke informatie, bezoek [de Grondbeginselen van Componenten van Gemeenschappen](/help/communities/basics.md).
 
-Wanneer de [vereiste client-side bibliotheken](/help/communities/essentials-file-library.md#essentials-for-client-side) worden opgenomen, wordt de `File Library` component als volgt weergegeven:
+Wanneer de [vereiste client-side bibliotheken](/help/communities/essentials-file-library.md#essentials-for-client-side) worden opgenomen, wordt de `File Library`-component op deze manier weergegeven:
 
 ![chlimage_1-430](assets/chlimage_1-430.png)
 
-### Bestandsbibliotheek configureren {#configuring-file-library}
+### Bestandsbibliotheek {#configuring-file-library} configureren
 
-Selecteer de geplaatste `File Library` component die u wilt openen en selecteer het `Configure` pictogram waarmee het dialoogvenster Bewerken wordt geopend.
+Selecteer de geplaatste `File Library` component en selecteer `Configure` pictogram dat het Edit dialoog opent.
 
 ![chlimage_1-431](assets/chlimage_1-431.png)
 
@@ -54,7 +54,7 @@ Selecteer de geplaatste `File Library` component die u wilt openen en selecteer 
 
 #### Tabblad Opmerkingen {#comments-tab}
 
-Geef op het tabblad **Opmerkingen** op of en hoe opmerkingen voor geüploade bestanden worden weergegeven:
+Geef onder het tabblad **Opmerkingen** op of en hoe opmerkingen voor geüploade bestanden worden weergegeven:
 
 * **Opmerkingen bij bestanden toestaan**
 
@@ -102,7 +102,7 @@ Geef op het tabblad **Opmerkingen** op of en hoe opmerkingen voor geüploade bes
 
 * **Volgen toestaan**
 
-   Als deze optie is ingeschakeld, neemt u de volgende functie op voor blogartikelen, waarmee leden op de [hoogte](/help/communities/notifications.md) kunnen worden gesteld van nieuwe berichten. De optie Standaard is uitgeschakeld.
+   Als deze optie is ingeschakeld, neemt u de volgende functie op voor blogartikelen. Hiermee kunnen leden [op de hoogte worden gesteld](/help/communities/notifications.md) van nieuwe berichten. De optie Standaard is uitgeschakeld.
 
 * **Menu inschakelen**
 
@@ -122,7 +122,7 @@ Geef op het tabblad **Opmerkingen** op of en hoe opmerkingen voor geüploade bes
 
 #### Tabblad Gebruikersmodernisering {#user-moderation-tab}
 
-Onder het tabblad **Gebruikersmodernisering** configureert u de moderatie van opmerkingen als opmerkingen zijn toegestaan:
+Configureer onder het tabblad **Moderatie van gebruiker** de moderatie van opmerkingen als opmerkingen zijn toegestaan:
 
 * **Pre-moderatie**
 
@@ -158,7 +158,7 @@ Onder het tabblad **Gebruikersmodernisering** configureert u de moderatie van op
 
 * **Limiet voor markering**
 
-   Voer het aantal keren in dat een opmerking moet worden gemarkeerd voordat deze wordt verborgen in de openbare weergave. Dit getal moet groter zijn dan of gelijk zijn aan de **moderatiedrempel**. De standaardwaarde is 5.
+   Voer het aantal keren in dat een opmerking moet worden gemarkeerd voordat deze wordt verborgen in de openbare weergave. Dit getal moet groter dan of gelijk zijn aan de **Moderatiedrempel**. De standaardwaarde is 5.
 
 ### Tabblad Instellingen sorteren {#sort-settings-tab}
 
@@ -166,10 +166,10 @@ Sorteren op
 
 Instellen als standaard
 
-### Additional Information {#additional-information}
+### Aanvullende informatie {#additional-information}
 
-Meer informatie vindt u op de pagina Essentiële elementen [van](/help/communities/essentials-file-library.md) bestandsbibliotheek voor ontwikkelaars.
+Meer informatie vindt u op de pagina [Essentiële elementen bestandsbibliotheek](/help/communities/essentials-file-library.md) voor ontwikkelaars.
 
-Voor moderatie van geposte onderwerpen en commentaren, zie het [Modereren van Door Gebruiker Gegenereerde Inhoud](/help/communities/moderate-ugc.md).
+Zie [Door gebruiker gegenereerde inhoud modereren](/help/communities/moderate-ugc.md) voor de moderatie van geposte onderwerpen en opmerkingen.
 
-Zie Door gebruiker gegenereerde inhoud [](/help/communities/tag-ugc.md)labelen voor informatie over het labelen van geposte onderwerpen en opmerkingen.
+Zie [Door gebruiker gegenereerde inhoud labelen](/help/communities/tag-ugc.md) voor het labelen van geposte onderwerpen en opmerkingen.

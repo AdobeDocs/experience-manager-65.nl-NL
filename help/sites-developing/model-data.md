@@ -11,19 +11,22 @@ content-type: reference
 discoiquuid: 39546c0a-b72f-42df-859b-98428ee0d5fb
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '1828'
+ht-degree: 0%
 
 ---
 
 
-# Gegevensmodellering - David Nuescheler&#39;s model{#data-modeling-david-nuescheler-s-model}
+# Gegevensmodellering - David Nuescheler&#39;s Model{#data-modeling-david-nuescheler-s-model}
 
-## Source {#source}
+## Bron {#source}
 
 De volgende details zijn ideeën en opmerkingen van David Nuescheler.
 
-David was mede-oprichter en CTO of Day Software AG, een toonaangevende leverancier van software voor contentbeheer en contentinfrastructuur, die in 2010 door Adobe werd aangeschaft. Hij is nu mede-chef en VP van de Technologie van de Onderneming bij Adobe en leidt ook de ontwikkeling van JSR-170, de toepassing van de Bewaarplaats van de Inhoud van Java (JCR) programmeringsinterface (API), de technologienorm voor inhoudsbeheer.
+David was mede-oprichter en CTO of Day Software AG, een toonaangevende leverancier van software voor contentbeheer en contentinfrastructuur, die in 2010 door Adobe werd opgevraagd. Hij is nu mede en VP van de Technologie van de Onderneming bij Adobe en leidt ook de ontwikkeling van JSR-170, de toepassing van de Bewaarplaats van de Inhoud van Java (JCR) programmeringsinterface (API), de technologienorm voor inhoudsbeheer.
 
-Meer updates zijn ook te vinden op [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel).
+Verdere updates zijn ook beschikbaar op [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel).
 
 ## Inleiding van David {#introduction-from-david}
 
@@ -57,7 +60,7 @@ Verdere gegevensbeperkingen zoals verplichte beperkingen of type- en waardebeper
 
 #### Voorbeeld {#example-1}
 
-Het bovenstaande voorbeeld van het gebruik van een eigenschap `lastModified` Date op bijvoorbeeld het knooppunt &quot;blogbericht&quot; betekent niet echt dat er een speciale notatietype nodig is. Ik zou zeker in eerste instantie `nt:unstructured` voor mijn blogberichtknooppunten gebruiken. Omdat ik in mijn blogtoepassing alleen maar de laatste wijzigingsdatum ga weergeven (mogelijk &#39;bestellen door&#39;), kan het me nauwelijks schelen of het een Date is. Aangezien ik impliciet vertrouw op mijn blogtoepassing om er toch een &quot;datum&quot;te plaatsen, is het echt niet nodig om de aanwezigheid van een `lastModified` datum in de vorm van een nodetype te verklaren.
+Het bovenstaande voorbeeld van het gebruik van een Date-eigenschap `lastModified` op bijvoorbeeld een blogpost-knooppunt, betekent niet echt dat er behoefte is aan een speciaal notatietype. Ik zou `nt:unstructured` zeker in eerste instantie voor mijn blogberichtknooppunten gebruiken. Omdat ik in mijn blogtoepassing alleen maar de laatste wijzigingsdatum ga weergeven (mogelijk &#39;bestellen door&#39;), kan het me nauwelijks schelen of het een Date is. Aangezien ik impliciet mijn blogschrijvende toepassing vertrouw om toch een &quot;datum&quot;te zetten, is het echt niet nodig om de aanwezigheid van een `lastModified` datum in de vorm a van nodetype te verklaren.
 
 ### Regel 2: Geef de inhoudshiërarchie de drijfveer, laat het niet gebeuren. {#rule-drive-the-content-hierarchy-don-t-let-it-happen}
 
@@ -75,7 +78,7 @@ Persoonlijk geef ik in veel gevallen in eerste instantie de voorkeur aan hiërar
 >
 >De manier waarop een opslagplaats voor inhoud gestructureerd is, kan ook van invloed zijn op de prestaties. Voor de beste prestaties, zou het aantal kindknopen in bijlage aan individuele knopen in een inhoudsbewaarplaats over het algemeen niet 1&#39;000 moeten overschrijden.
 >
->Zie [Hoeveel gegevens kan CRX behandelen?](https://helpx.adobe.com/experience-manager/kb/CrxLimitation.html) voor meer informatie .
+>Zie [Hoeveel gegevens kunnen CRX verwerken?](https://helpx.adobe.com/experience-manager/kb/CrxLimitation.html) voor meer informatie .
 
 #### Voorbeeld {#example-2}
 
@@ -101,7 +104,7 @@ Met behulp van het bovenstaande inhoudsmodel kan ik de &quot;anonieme&quot; gebr
 
 #### Toelichting {#explanation-3}
 
-Als u geen `clone()`, `merge()` of `update()` methodes in uw toepassing gebruikt, is één enkele werkruimte waarschijnlijk de manier om te gaan.
+Als u `clone()`, `merge()` of `update()` methodes in uw toepassing niet gebruikt, is één enkele werkruimte waarschijnlijk de manier om te gaan.
 
 &quot;Overeenkomende knooppunten&quot; is een concept dat is gedefinieerd in de specificatie JCR. In principe worden knooppunten die dezelfde inhoud vertegenwoordigen, in verschillende zogenaamde werkruimten samengevoegd.
 
@@ -174,13 +177,13 @@ Ik denk dat er gevallen zijn waarin een systeem echt niet kan werken als een ver
 
 #### Toelichting {#explanation-6}
 
-Als een inhoudsmodel iets blootstelt dat zelfs ver als een dossier of een omslag *ruikt* ik probeer te gebruiken (of zich uit) `nt:file`, `nt:folder` en `nt:resource`.
+Als een inhoudsmodel iets blootstelt dat zelfs ver *ruikt* als een dossier of een omslag ik probeer te gebruiken (of uit) `nt:file`, `nt:folder` en `nt:resource` uitbreidt.
 
 In mijn ervaring staan veel generieke toepassingen interactie met nt:folder en nt:dossiers impliciet toe en weten hoe te om die gebeurtenis te behandelen en te tonen als zij met extra meta-informatie worden verrijkt. Zo wordt een directe interactie met bestandsserverimplementaties, zoals CIFS of WebDAV die boven op de JCR zitten, impliciet.
 
-Ik denk dat als goede duim men het volgende zou kunnen gebruiken: Als u de bestandsnaam en het mime-type moet opslaan, `nt:file`/ `nt:resource` is een zeer goede overeenkomst. Als u meerdere &quot;bestanden&quot; zou kunnen hebben, is de map nt:een goede plaats om deze op te slaan.
+Ik denk dat als goede duim men het volgende zou kunnen gebruiken: Als u filename en mime-type moet opslaan dan `nt:file`/ `nt:resource` is een zeer goede gelijke. Als u meerdere &quot;bestanden&quot; zou kunnen hebben, is de map nt:een goede plaats om deze op te slaan.
 
-Als u meta-informatie voor uw middel moet toevoegen, zeggen &quot;auteur&quot;of een &quot;beschrijving&quot;bezit, breid `nt:resource` niet uit `nt:file`. Ik breid zelden &#39;nt:file&#39; uit en breid vaak uit `nt:resource`.
+Als u meta-informatie voor uw middel moet toevoegen, zeggen een &quot;auteur&quot;of een &quot;beschrijving&quot;bezit, breid `nt:resource` niet `nt:file` uit. Ik breid zelden nt:file uit en breid vaak `nt:resource` uit.
 
 #### Voorbeeld {#example-6}
 
@@ -200,7 +203,7 @@ Hoewel er zeker goede gebruiksgevallen zijn om enkel een binair bezit te gebruik
 /content/myblog/posts/iphone_shipping/attachments/front.jpg/jcr:content [nt:resource]
 ```
 
-### Regel 7:Id&#39;s zijn slecht. {#rule-ids-are-evil}
+### Regel 7: Id&#39;s zijn slecht. {#rule-ids-are-evil}
 
 #### Toelichting {#explanation-7}
 
@@ -212,7 +215,7 @@ Het is waar dat sommige knooppunten gedurende hun gehele levenscyclus een stabie
 
 Houd ook in mening dat de punten door weg kunnen worden geïdentificeerd, en aangezien &quot;symlinks&quot;voor de meeste gebruikers veel zinvoller dan hardlinks in een unix filesystem maken, een weg voor de meeste toepassingen een betekenis heeft om naar een doelknoop te verwijzen.
 
-Belangrijker, is het **mengeling**:verwijzing die betekent dat het op een knoop op het punt in tijd kan worden toegepast wanneer u eigenlijk het moet van verwijzingen voorzien.
+Belangrijker, is het **mix**:verwijzingsable wat betekent dat het op een knoop op het punt in tijd kan worden toegepast wanneer u eigenlijk het moet van verwijzingen voorzien.
 
 Dus laten wij zeggen enkel omdat u een knoop van type &quot;Document&quot;zou kunnen van verwijzingen voorzien betekent niet dat uw &quot;document&quot;nodetype zich van mengeling moet uitbreiden:verwijzing op een statische manier aangezien het aan om het even welke instantie van het &quot;Document&quot;dynamisch kan worden toegevoegd.
 

@@ -11,24 +11,27 @@ content-type: reference
 discoiquuid: e7b6b9ee-d807-4eb0-8e96-75ca1e66a4e4
 translation-type: tm+mt
 source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+workflow-type: tm+mt
+source-wordcount: '420'
+ht-degree: 0%
 
 ---
 
 
-# Banen voor offloaden maken en consumeren{#creating-and-consuming-jobs-for-offloading}
+# Taken maken en consumeren voor offloaden{#creating-and-consuming-jobs-for-offloading}
 
 De Apache Sling Discovery-functie biedt een Java API waarmee u JobManager-taken en JobConsumer-services kunt maken die deze gebruiken.
 
-Voor informatie over het creëren van het ontladen van topologieën en het vormen onderwerpconsumptie, zie het [Offloaden Banen](/help/sites-deploying/offloading.md).
+Voor informatie over het creëren van het ontladen van topologieën en het vormen onderwerpconsumptie, zie [Het Offloaden van Banen](/help/sites-deploying/offloading.md).
 
-## Lasten van taken afhandelen {#handling-job-payloads}
+## Lasten van taken verwerken {#handling-job-payloads}
 
 Het offloading-framework definieert twee taakeigenschappen die u gebruikt om de taaklading te identificeren. De het ontladen replicatieagenten gebruiken deze eigenschappen om de middelen te identificeren aan de instanties in de topologie te herhalen:
 
 * `offloading.job.input.payload`: Een door komma&#39;s gescheiden lijst met inhoudspaden. De inhoud wordt gerepliceerd naar de instantie die de taak uitvoert.
 * `offloading.job.output.payload`: Een door komma&#39;s gescheiden lijst met inhoudspaden. Wanneer de uitvoering van de taak is voltooid, wordt de taaklading gerepliceerd naar deze paden in de instantie die de taak heeft gemaakt.
 
-Gebruik de opsomming om naar de namen van eigenschappen te verwijzen: `OffloadingJobProperties`
+Gebruik de opsomming `OffloadingJobProperties` om naar de eigenschapsnamen te verwijzen:
 
 * `OffloadingJobProperties.INPUT_PAYLOAD.propertyName()`
 * `OffloadingJobProperties.OUTPUT_PAYLOAD.propetyName()`
@@ -41,7 +44,7 @@ Maak een client die de methode JobManager.addJob aanroept om een taak te maken d
 
 * Onderwerp: Het taakonderwerp.
 * Naam: (Optioneel)
-* Eigenschappen toewijzen: Een `Map<String, Object>` object dat een willekeurig aantal eigenschappen bevat, zoals de invoerlaadpaden en uitvoerpaden voor Payload. Dit object Map is beschikbaar voor het object JobConsumer dat de taak uitvoert.
+* Eigenschappen toewijzen: Een object `Map<String, Object>` dat een willekeurig aantal eigenschappen bevat, zoals de invoerlaadpaden en uitvoerpaden voor Payload. Dit object Map is beschikbaar voor het object JobConsumer dat de taak uitvoert.
 
 De volgende voorbeelddienst leidt tot een baan voor een bepaald onderwerp en een weg van de inputlading.
 
@@ -91,15 +94,15 @@ public class JobGeneratorImpl implements JobGenerator  {
 }
 ```
 
-Het logboek bevat het volgende bericht wanneer JobGeneratorImpl.createJob voor het `com/adobe/example/offloading` onderwerp en de `/content/geometrixx/de/services` lading wordt geroepen:
+Het logbestand bevat het volgende bericht wanneer JobGeneratorImpl.createJob wordt aangeroepen voor het `com/adobe/example/offloading`-onderwerp en de `/content/geometrixx/de/services`-lading:
 
 ```shell
 10.06.2013 15:43:33.868 *INFO* [JobHandler: /etc/workflow/instances/2013-06-10/model_1554418768647484:/content/geometrixx/en/company] com.adobe.example.offloading.JobGeneratorImpl Received request to make job for topic com/adobe/example/offloading and payload /content/geometrixx/de/services
 ```
 
-## Ontwikkeling van een banenconsument {#developing-a-job-consumer}
+## Een taakconsument ontwikkelen {#developing-a-job-consumer}
 
-Om banen te verbruiken, ontwikkel de dienst OSGi die de `org.apache.sling.event.jobs.consumer.JobConsumer` interface uitvoert. Identificeer met het onderwerp om het gebruiken van het `JobConsumer.PROPERTY_TOPICS` bezit te verbruiken.
+Om banen te verbruiken, ontwikkelt de dienst OSGi die `org.apache.sling.event.jobs.consumer.JobConsumer` interface uitvoert. Identificeer met het onderwerp om te gebruiken `JobConsumer.PROPERTY_TOPICS` bezit.
 
 Het volgende voorbeeld de implementatieregisters van JobConsumer met het `com/adobe/example/offloading` onderwerp. De consument plaatst eenvoudig het Consumed bezit van de knoop van de ladingsinhoud aan waar.
 
@@ -174,7 +177,7 @@ De klasse MyJobConsumer produceert de volgende logboekberichten voor een inputla
 10.06.2013 16:02:40.884 *INFO* [pool-7-thread-17-<main queue>(com/adobe/example/offloading)] com.adobe.example.offloading.MyJobConsumer Job OK for payload /content/geometrixx/de/services
 ```
 
-De verbruikte eigenschap kan worden waargenomen met behulp van CRXDE Lite:
+De eigenschap Consumed kan worden waargenomen met behulp van CRXDE Lite:
 
 ![chlimage_1-25](assets/chlimage_1-25a.png)
 

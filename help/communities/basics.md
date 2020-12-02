@@ -24,25 +24,25 @@ ht-degree: 1%
 
 In het gedeelte dat wordt geschreven in de documentatie wordt beschreven hoe u de functies van een Gemeenschappen toevoegt aan AEM sites in de bewerkingsmodus van de auteur en hoe u componentconfiguraties beschrijft.
 
-Componenten kunnen worden onderzocht met behulp van een AEM en de interactieve [Community Components-handleiding](components-guide.md).
+Componenten kunnen worden onderzocht met behulp van een AEM en de interactieve [Community Components guide](components-guide.md).
 
 ## Toegang tot onderdelen van Gemeenschappen {#accessing-communities-components}
 
 Als tijdens het ontwerpen van pagina-inhoud de onderliggende sjabloon wijzigingen toestaat in het ontwerp van de pagina, is het mogelijk om componenten in te schakelen die nog niet beschikbaar zijn in de browser met componenten als onderdeel van het siteontwerp.
 
-De beschikbare communautaire componenten zijn [hier](author-communities.md#available-communities-components)vermeld.
+De beschikbare componenten van de Gemeenschappen worden [hier](author-communities.md#available-communities-components) vermeld.
 
 >[!NOTE]
 >
->Voor algemene ontwerpinformatie raadpleegt u de [handleiding voor het maken van pagina](../../help/sites-authoring/qg-page-authoring.md)&#39;s.
+>Voor algemene auteursinformatie, bekijk [snelle gids aan auteurspagina&#39;s](../../help/sites-authoring/qg-page-authoring.md).
 >
->Als u niet bekend bent met AEM, bekijkt u de documentatie over de [basisafhandeling](../../help/sites-authoring/basic-handling.md).
+>Als u niet bekend bent met AEM, bekijkt u de documentatie bij [basisafhandeling](../../help/sites-authoring/basic-handling.md).
 
-### Ontwerpmodus invoeren {#entering-design-mode}
+### Ontwerpmodus {#entering-design-mode} invoeren
 
-Als een **Community** -component niet wordt gevonden in de Componentbrowser (sidekick), moet u andere Community-componenten invoeren `Design Mode` om deze toe te voegen. [De vereiste clientbibliotheken](#required-clientlibs) (clientlibs) moeten mogelijk ook worden toegevoegd.
+Als een **Communities** component niet in de componentenbrowser (sidekick) wordt gevonden, zal het noodzakelijk zijn `Design Mode` in te gaan om andere componenten van Gemeenschappen toe te voegen. [De vereiste clientbibliotheken](#required-clientlibs)  (clientlibs) moeten mogelijk ook worden toegevoegd.
 
-Zie Componenten [configureren in Ontwerpmodus](../../help/sites-authoring/default-components-designmode.md)voor meer informatie.
+Zie [Componenten configureren in ontwerpmodus](../../help/sites-authoring/default-components-designmode.md) voor meer informatie.
 
 Hieronder vindt u afbeeldingen van het selecteren van een paar onderdelen van de Gemeenschappen en het weergeven hiervan in de browser met componenten:
 
@@ -50,13 +50,13 @@ Hieronder vindt u afbeeldingen van het selecteren van een paar onderdelen van de
 
 De geselecteerde componenten zijn nu beschikbaar in de componentenbrowser:
 
-![component-design1](assets/component-design1.png)
+![componentontwerp1](assets/component-design1.png)
 
 ## Vereiste clientlibs {#required-clientlibs}
 
-[Clientzijbibliotheken](../../help/sites-developing/clientlibs.md) (clientlibs) zijn vereist voor het goed functioneren (JavaScript) en het opmaken (CSS) van een component.
+[Client-side bibliotheken](../../help/sites-developing/clientlibs.md)  (clientlibs) zijn vereist voor het correct functioneren (JavaScript) en opmaken (CSS) van een component.
 
-Wanneer u een Community-component aan een pagina toevoegt, als het resultaat een fout of een onverwachte weergave is, voegt u eerst de vereiste clientlibs voor de Community-component toe. Zie Clientlibs [voor Community Components](clientlibs.md)voor meer informatie.
+Wanneer u een Community-component aan een pagina toevoegt, als het resultaat een fout of een onverwachte weergave is, voegt u eerst de vereiste clientlibs voor de Community-component toe. Zie [Clientlibs for Communities Components](clientlibs.md) voor meer informatie.
 
 ### Voorbeeld: Aanvankelijk geplaatste revisies zonder clientbibliotheken... {#example-initially-placed-reviews-without-client-libraries}
 
@@ -70,11 +70,11 @@ Wanneer u een Community-component aan een pagina toevoegt, als het resultaat een
 
 Veel functies van een Community kunnen zo worden geconfigureerd dat leden inhoud die is ingevoerd (gepost) in de publicatieomgeving kunnen labelen.
 
-Als het etiketteren wordt toegestaan, kan de configuratie van de communautaire plaats worden geplaatst om de namespaces te beperken die aan leden in het publicatiemilieu worden voorgesteld. Zie de [Community Sites-console](sites-console.md#tagging).
+Als het etiketteren wordt toegestaan, kan de configuratie van de communautaire plaats worden geplaatst om de namespaces te beperken die aan leden in het publicatiemilieu worden voorgesteld. Zie [Community Sites console](sites-console.md#tagging).
 
 Functies die codering mogelijk maken: [blog](blog-feature.md), [agenda](calendar.md), [bestandsbibliotheek](file-library.md), [forum](forum.md)
 
-Functies die tags gebruiken: [catalogus](catalog.md), [zoeken](search.md), cloud met [sociale tags](tagcloud.md)
+Functies die tags gebruiken: [catalog](catalog.md), [search](search.md), [social tag cloud](tagcloud.md)
 
 Voor ontwerpinformatie:
 
@@ -83,7 +83,7 @@ Voor ontwerpinformatie:
 Voor administratieve informatie:
 
 * Tagnaamruimten maken (taxonomie): [Tags beheren](../../help/sites-administering/tags.md)
-* Configuratie van community-site: zie [TAGS](sites-console.md#tagging)
+* Configuratie van community-site: zie [TAGING](sites-console.md#tagging)
 * [Door gebruiker gegenereerde inhoud labelen](../../help/sites-authoring/tags.md)
 * [Tags toewijzen](tag-resources.md)
 

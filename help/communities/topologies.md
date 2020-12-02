@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Aanbevolen topologieën voor Gemeenschappen {#recommended-topologies-for-communities}
+# Aanbevolen topologieën voor gemeenschappen {#recommended-topologies-for-communities}
 
 Vanaf AEM Communities 6.1 is een unieke aanpak gekozen voor de verwerking van door gebruikers gegenereerde inhoud (UGC) die door sitebezoekers (leden) uit de publicatieomgeving is ingediend.
 
@@ -26,13 +26,13 @@ Deze benadering is fundamenteel verschillend van de manier het AEM platform plaa
 
 Het AEM platform gebruikt een knoopopslag die site-inhoud van auteur voor publicatie repliceert, terwijl AEM Communities één algemene opslag voor UGC gebruikt die nooit wordt gerepliceerd.
 
-Voor de gemeenschappelijke opslag UGC, is het noodzakelijk om een leverancier van het [opslagmiddel (SRP)](working-with-srp.md)te kiezen. De aanbevolen opties zijn:
+Voor de gemeenschappelijke opslag UGC, is het noodzakelijk om een [leverancier van het opslagmiddel (SRP)](working-with-srp.md) te kiezen. De aanbevolen opties zijn:
 
 * [DSRP - Relational Database Storage Resource Provider](dsrp.md)
 * [MSRP - MongoDB Storage Resource Provider](msrp.md)
 * [ASRP - Adobe Storage Resource Provider](asrp.md)
 
-Een andere SRP-optie, [JSRP - JCR Storage Resource Provider](jsrp.md), ondersteunt geen algemene UGC-opslag voor de auteur- en publicatieomgevingen voor beide toegang.
+Een andere SRP-optie, [JSRP - JCR Storage Resource Provider](jsrp.md), ondersteunt geen gemeenschappelijke UGC-opslag voor de auteur- en publicatieomgevingen voor beide toegang.
 
 Het vereisen van een gemeenschappelijke opslagresultaten in de volgende geadviseerde topologieën.
 
@@ -40,12 +40,12 @@ Het vereisen van een gemeenschappelijke opslagresultaten in de volgende geadvise
 >
 >Voor AEM Communities wordt [UGC nooit gerepliceerd](working-with-srp.md#ugc-never-replicated).
 >
->Wanneer de plaatsing geen [gemeenschappelijke opslag](working-with-srp.md)omvat, zal UGC slechts op AEM publiceren of auteursinstantie zichtbaar zijn waarop het was ingegaan.
+>Wanneer de implementatie geen [common store](working-with-srp.md) bevat, is UGC alleen zichtbaar op de AEM publicatie- of auteurinstantie waarop deze is ingevoerd.
 
 
 >[!NOTE]
 >
->Voor meer informatie over het AEM platform, zie [Aanbevolen Plaatsingen](../../help/sites-deploying/recommended-deploys.md) en [Inleiding aan het AEM Platform](../../help/sites-deploying/data-store-config.md).
+>Zie [Aanbevolen implementaties](../../help/sites-deploying/recommended-deploys.md) en [Inleiding tot het AEM Platform](../../help/sites-deploying/data-store-config.md) voor meer informatie over het AEM platform.
 
 ## Voor productie {#for-production}
 
@@ -53,13 +53,13 @@ Het is van essentieel belang een gemeenschappelijke opslag voor UGC tot stand te
 
 Twee voorbeelden:
 
-1. Als het verwachte volume van UGC hoog is en een lokale instantie MongoDB mogelijk is, dan zou de keus [MSRP](msrp.md)zijn.
+1. Als het verwachte volume van UGC hoog is en een lokale instantie MongoDB mogelijk is, dan zou de keus [MSRP](msrp.md) zijn.
 
-1. Voor optimale prestaties voor paginacontent, zou de keus van een [publicatiecentrum](../../help/sites-deploying/recommended-deploys.md#tarmk-farm) en [ASRP](asrp.md) optimale schrapping van UGC met vrij ongecompliceerde verrichtingen verstrekken.
+1. Voor optimale prestaties voor paginainhoud, zou de keus van [publiceer landbouwbedrijf](../../help/sites-deploying/recommended-deploys.md#tarmk-farm) en [ASRP](asrp.md) het optimale schrapen van UGC met vrij ongecompliceerde verrichtingen verstrekken.
 
 Voor beide, kan de plaatsing op om het even welke OAK microkernel worden gebaseerd.
 
-Houd zorgvuldig rekening met de unieke [kenmerken](working-with-srp.md#characteristics-of-srp-options) van elke winkel om de juiste gemeenschappelijke opslagplaats te kiezen.
+Om de aangewezen gemeenschappelijke opslag te kiezen, zorgvuldig overweeg de unieke [kenmerken](working-with-srp.md#characteristics-of-srp-options) van elk.
 
 Voor meer informatie over eiken microkorrels, bezoek [Aanbevolen Plaatsingen](../../help/sites-deploying/recommended-deploys.md).
 
@@ -88,9 +88,9 @@ Wanneer de topologie publiceer landbouwbedrijf is, zijn de relevante onderwerpen
 
 ## Voor ontwikkeling {#for-development}
 
-Voor non-production milieu&#39;s, verstrekt [JSRP](jsrp.md) eenvoud in vestiging een ontwikkelomgeving met één auteursinstantie en één publicatieinstantie.
+Voor niet-productieomgevingen biedt [JSRP](jsrp.md) eenvoud bij het instellen van een ontwikkelomgeving met één auteurinstantie en één publicatieinstantie.
 
-Als het kiezen van [ASRP](asrp.md), [DSRP](dsrp.md) of [MSRP](msrp.md) voor productie, is het ook mogelijk aan opstelling een gelijkaardige ontwikkelomgeving gebruikend Adobe op bestelling opslag of MongoDB. Voor een voorbeeld, zie [hoe te MongoDB voor Demo](demo-mongo.md)plaatsen.
+Als u [ASRP](asrp.md), [DSRP](dsrp.md) of [MSRP](msrp.md) voor productie kiest, is het ook mogelijk om een gelijkaardige ontwikkelomgeving te installeren gebruikend Adobe op bestelling opslag of MongoDB. Voor een voorbeeld, zie [HowTo Opstelling MongoDB voor Demo](demo-mongo.md).
 
 ## Verwijzingen {#references}
 
@@ -102,7 +102,7 @@ Als het kiezen van [ASRP](asrp.md), [DSRP](dsrp.md) of [MSRP](msrp.md) voor prod
 
    Bespreekt de rollen van gebruikers en gebruikersgroepen in de auteur en publicatiemilieu&#39;s.
 
-* UGC [Common Store](working-with-srp.md)
+* UGC [common store](working-with-srp.md)
 
    Beschrijft de opslag van communautaire inhoud afzonderlijk van plaatsinhoud.
 

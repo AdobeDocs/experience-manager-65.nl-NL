@@ -18,13 +18,13 @@ ht-degree: 0%
 ---
 
 
-# Pagina met opmerkingen maken {#create-comments-page}
+# Opmerkingspagina {#create-comments-page} maken
 
-**[⇐ Overlay Comments Component](overlay-comments.md)Create Nodes[☐](overlay-create-nodes.md)**
+**[Opmerkingen bij overlay ⇐ ](overlay-comments.md) [ComponentCreate Nodesjjjjjel](overlay-create-nodes.md)**
 
 ## Opmerkingen pagina {#comments-page}
 
-Met de [Community Components-handleiding](components-guide.md) kunt u het bedekken van de commentaarcomponent gemakkelijk ervaren.
+De [Community Components guide](components-guide.md) biedt de mogelijkheid om het bedekken van de commentaarcomponent gemakkelijk te ervaren.
 
 Bekijk de pagina op de instantie van de auteur:
 
@@ -32,4 +32,4 @@ Bekijk de pagina op de instantie van de auteur:
 
 ![opmerkingen](assets/comments.png)
 
-**[⇐ Overlay Comments Component](overlay-comments.md)Create Nodes[☐](overlay-create-nodes.md)**
+**[Opmerkingen bij overlay ⇐ ](overlay-comments.md) [ComponentCreate Nodesjjjjjel](overlay-create-nodes.md)**

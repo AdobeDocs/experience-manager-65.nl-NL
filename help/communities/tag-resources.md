@@ -18,23 +18,23 @@ ht-degree: 0%
 ---
 
 
-# Tags toewijzen {#tagging-enablement-resources}
+# Tags toewijzen aan bronnen {#tagging-enablement-resources}
 
 ## Overzicht {#overview}
 
-Door tags toe te wijzen aan bronnen voor activering kunt u bronnen filteren en paden leren terwijl leden door [catalogi](functions.md#catalog-function)bladeren.
+Door tags toe te wijzen aan bronnen voor activering kunt u bronnen filteren en paden leren terwijl leden door [catalogs](functions.md#catalog-function) bladeren.
 
 Hoofdzakelijk:
 
-* [Een tagnaamruimte](../../help/sites-administering/tags.md#creating-a-namespace) maken voor elke catalogus
+* [Een ](../../help/sites-administering/tags.md#creating-a-namespace) naamruimte voor tags maken voor elke catalogus
 
    * [Tagmachtigingen instellen](../../help/sites-administering/tags.md#setting-tag-permissions)
    * Alleen voor leden van de gemeenschap (gesloten community)
 
-      * Leestoegang toestaan voor de lidgroep van de [gemeenschapssite](users.md#publish-group-roles)
+      * Leestoegang toestaan voor de [lidgroep van de communitysite](users.md#publish-group-roles)
    * Voor elke bezoeker van de site, aangemeld of anoniem (open community)
 
-      * Leestoegang voor de `Everyone` groep toestaan
+      * Leestoegang toestaan voor de groep `Everyone`
    * [De labels publiceren](../../help/sites-administering/tags.md#publishing-tags)
 
 
@@ -44,23 +44,23 @@ Hoofdzakelijk:
    * [Catalogi configureren die in de structuur van de site bestaan](functions.md#catalog-function)
 
       * Kan tags toevoegen aan de catalogusinstantie om de lijst met tags in de UI-filters te beheren.
-      * Kan [voorfilters](catalog-developer-essentials.md#pre-filters)toevoegen om de opgenomen bronnen van een catalogus te beperken.
+      * Kan [pre-filters](catalog-developer-essentials.md#pre-filters) toevoegen, om de inbegrepen middelen van een catalogus te beperken.
 
 * [De communitysite publiceren](sites-console.md#publishing-the-site)
-* [Tags toepassen op bronnen](resources.md#create-a-resource) voor activering zodat deze categoriaal kunnen worden gefilterd
+* [Tags toepassen op ](resources.md#create-a-resource) activering van resources, zodat deze categoriaal kunnen worden gefilterd
 * [De bronnen voor activering publiceren](resources.md#publish)
 
 ## Codes voor communautaire sites {#community-site-tags}
 
-Wanneer u een communitysite maakt of bewerkt, stelt u met de instelling [](sites-console.md#tagging) Tags het bereik in van de tags die beschikbaar zijn voor de sitefuncties door een subset van bestaande tagnaamruimten te selecteren.
+Wanneer u een communitysite maakt of bewerkt, stelt u met de instelling [Tags toevoegen](sites-console.md#tagging) het bereik van de tags in die beschikbaar zijn voor functies van de site door een subset van bestaande tagnaamruimten te selecteren.
 
-Hoewel tags te allen tijde kunnen worden gemaakt en toegevoegd aan de site van de community, wordt aangeraden vooraf een taxonomie te ontwerpen, vergelijkbaar met het ontwerpen van een database. Zie [Tags](../../help/sites-authoring/tags.md)gebruiken.
+Hoewel tags te allen tijde kunnen worden gemaakt en toegevoegd aan de site van de community, wordt aangeraden vooraf een taxonomie te ontwerpen, vergelijkbaar met het ontwerpen van een database. Zie [Tags gebruiken](../../help/sites-authoring/tags.md).
 
 Wanneer u later tags toevoegt aan een bestaande communitysite, moet u de bewerking opslaan voordat u de nieuwe tag kunt toevoegen aan een catalogusfunctie in de sitestructuur.
 
-Voor een communautaire plaats, nadat de plaats wordt gepubliceerd en de markeringen worden gepubliceerd, is het noodzakelijk om gelezen toegang tot leden van de gemeenschap toe te laten. Zie Tagmachtigingen [instellen](../../help/sites-administering/tags.md#setting-tag-permissions).
+Voor een communautaire plaats, nadat de plaats wordt gepubliceerd en de markeringen worden gepubliceerd, is het noodzakelijk om gelezen toegang tot leden van de gemeenschap toe te laten. Zie [Tagmachtigingen instellen](../../help/sites-administering/tags.md#setting-tag-permissions).
 
-Hieronder ziet u hoe het wordt weergegeven in CRXDE wanneer een beheerder leesmachtigingen toepast op `/etc/tags/ski-catalog` de groep `Community Enable Members`.
+Hieronder wordt beschreven hoe de code wordt weergegeven in CRXDE wanneer een beheerder leesmachtigingen toepast op `/etc/tags/ski-catalog` voor de groep `Community Enable Members`.
 
 ![sitetags](assets/site-tags.png)
 
@@ -72,17 +72,17 @@ De functie Catalog bevat een taginstelling die de tags definieert die worden ver
 
 ![catalog-naamruimte](assets/catalog-namespace.png)
 
-## Tags toepassen op Enablement Resources {#applying-tags-to-enablement-resources}
+## Tags toepassen op bronnen van Enablement {#applying-tags-to-enablement-resources}
 
-Inschakelingsbronnen en leerpaden worden in alle catalogus weergegeven wanneer `Show in Catalog` deze worden gecontroleerd. Als u tags toevoegt aan bronnen en leerpaden, kunt u vooraf filteren in specifieke catalogi en filteren in de interface van de catalogus.
+Inschakelingsbronnen en leerpaden worden in alle catalogus weergegeven wanneer `Show in Catalog` wordt gecontroleerd. Als u tags toevoegt aan bronnen en leerpaden, kunt u vooraf filteren in specifieke catalogi en filteren in de interface van de catalogus.
 
-Het beperken van enablement middelen en het leren wegen aan specifieke catalogi wordt verwezenlijkt door [pre-filters](catalog-developer-essentials.md#pre-filters)te creëren.
+Het beperken van enablement middelen en het leren wegen aan specifieke catalogi wordt verwezenlijkt door [pre-filters](catalog-developer-essentials.md#pre-filters) te creëren.
 
 Met de interface van de catalogus kunnen bezoekers een tagfilter toepassen op de lijst met bronnen en leerpaden die in die catalogus worden weergegeven.
 
 De beheerder die de markeringen op enablement middelen toepast moet zich van de markeringsnamespaces verbonden aan de catalogi, evenals taxonomie bewust zijn om een sub-markering voor meer verfijnde categorisatie te selecteren.
 
-Als er bijvoorbeeld een `ski-catalog` naamruimte wordt gemaakt en ingesteld in een catalogus met de naam `Ski Catalog`, heeft deze mogelijk twee onderliggende tags: `lesson-1` en `lesson-2`.
+Als bijvoorbeeld een naamruimte `ski-catalog` is gemaakt en is ingesteld in een catalogus met de naam `Ski Catalog`, heeft deze mogelijk twee onderliggende tags: `lesson-1` en `lesson-2`.
 
 Aldus, om het even welke enablement middelen die met één van worden geëtiketteerd:
 

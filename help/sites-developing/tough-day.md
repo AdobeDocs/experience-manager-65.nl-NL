@@ -12,19 +12,22 @@ discoiquuid: ea6b40fe-b6e1-495c-b34f-8815a4e2e42e
 docset: aem65
 translation-type: tm+mt
 source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+workflow-type: tm+mt
+source-wordcount: '1909'
+ht-degree: 1%
 
 ---
 
 
-# Dag{#tough-day}
+# Grove dag{#tough-day}
 
-## Wat is Hoest Dag 2 {#what-is-tough-day}
+## Wat is Hogere Dag 2 {#what-is-tough-day}
 
-&quot;Tough Day 2&quot; is een toepassing waarmee u de limieten van uw AEM-instantie kunt testen. Het kan uit de doos met de standaardtestreeks worden gelopen of het kan worden gevormd om aan uw testende behoeften te passen. U kunt [deze opname](https://docs.adobe.com/ddc/en/gems/Toughday2---A-new-and-improved-stress-testing-and-benchmarking-tool.html) bekijken voor een presentatie van de toepassing.
+&quot;Tough Day 2&quot; is een toepassing waarmee u de limieten van uw AEM-instantie kunt testen. Het kan uit de doos met de standaardtestreeks worden gelopen of het kan worden gevormd om aan uw testende behoeften te passen. U kunt [deze opname](https://docs.adobe.com/ddc/en/gems/Toughday2---A-new-and-improved-stress-testing-and-benchmarking-tool.html) voor een presentatie van de toepassing letten.
 
-## Hoe wordt Tough Day 2 uitgevoerd {#how-to-run-tough-day}
+## Hoe wordt Dag 2 uitgevoerd {#how-to-run-tough-day}
 
-Download de nieuwste versie van Tough Day 2 uit de [Adobe Repository](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/qe/toughday2/). Nadat u de toepassing hebt gedownload, kunt u deze uit het vak uitvoeren door de `host` parameter op te geven. In het volgende voorbeeld wordt de AEM-instantie lokaal uitgevoerd, zodat de `localhost` waarde wordt gebruikt:
+Download de nieuwste versie van Tough Day 2 van [Adobe Repository](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/qe/toughday2/). Nadat u de toepassing hebt gedownload, kunt u deze uit het vak uitvoeren door de parameter `host` op te geven. In het volgende voorbeeld wordt de AEM instantie lokaal uitgevoerd, zodat de waarde `localhost` wordt gebruikt:
 
 ```xml
 java -jar toughday2.jar --host=localhost
@@ -40,7 +43,7 @@ De standaardreeks die na het toevoegen van de parameters loopt wordt genoemd `to
 
 De suite bevat 15% handelingen voor schrijven en 85% handelingen voor lezen.
 
-Tough Day 2 installeert het standaard inhoudspakket om de suite-tests uit te voeren. Dit kan worden vermeden door de `installsamplecontent`parameter te plaatsen aan `false`, maar herinner dat u ook de standaardwegen voor de tests zou moeten veranderen die u van plan bent te lopen. Als de pot zonder parameters in werking wordt gesteld, toont Tough Dag 2 de [hulpinformatie](/help/sites-developing/tough-day.md#getting-help).
+Tough Day 2 installeert het standaard inhoudspakket om de suite-tests uit te voeren. Dit kan worden vermeden door de `installsamplecontent`parameter aan `false` te plaatsen, maar herinner dat u ook de standaardwegen voor de tests zou moeten veranderen die u van plan bent te lopen. Als de pot zonder parameters in werking wordt gesteld, toont Tough Dag 2 [help informatie](/help/sites-developing/tough-day.md#getting-help).
 
 In het algemeen kunt u de toepassing gebruiken door dit patroon te volgen:
 
@@ -53,7 +56,7 @@ java -jar toughday2.jar [--help | --help_full | --help_tests | --help_publish]  
 >Dag 2 van de oude dag heeft geen opschoonstap. Als gevolg hiervan wordt aangeraden Dag 2 te gebruiken op een gekloonde staging-instantie en niet op de hoofdproductie-instantie. De testinstantie moet na de tests worden verwijderd.
 
 
-### Help opvragen {#getting-help}
+### Help {#getting-help} ophalen
 
 Dag 2 van de tijd biedt een brede waaier van hulpopties die van de bevellijn kunnen worden betreden. Bijvoorbeeld:
 
@@ -102,7 +105,7 @@ In de onderstaande tabel vindt u de relevante Help-parameters.
   </tr>
   <tr>
    <td> —help —tag=&lt;Tag&gt;</td>
-   <td><br /> Hiermee geeft u alle items weer die de opgegeven tag hebben.</td>
+   <td><br /> Hiermee geeft u alle items weer met het opgegeven label.</td>
    <td>java -jar toughday2.jar —help —tag=publish</td>
   </tr>
   <tr>
@@ -125,29 +128,29 @@ U vindt de relevante parameters in de onderstaande lijst:
 
 | **Parameter** | **Beschrijving** | **Standaardwaarde** | **Mogelijke waarden** |
 |---|---|---|---|
-| `--installsamplecontent=<Val>` | Installeert of slaat het standaard Tough Day 2 inhoudspakket over. | true |  true of false |
+| `--installsamplecontent=<Val>` | Installeert of slaat het standaard Tough Day 2 inhoudspakket over. | true | true of false |
 | `--protocol=<Val>` | Het protocol dat voor de gastheer wordt gebruikt. | http | http of https |
 | `--host=<Val>` | De hostnaam of IP die als doel zal worden ingesteld. |  |  |
 | `--port=<Val>` | De poort van de host. | 4502 |  |
-| `--user=<Val>` | De gebruikersnaam voor de instantie. |  beheerder |  |
-| `--password=<Val>` | Wachtwoord voor de opgegeven gebruiker. |  beheerder |  |
-| `--duration=<Val>` | De duur van de tests. Kan worden uitgedrukt in (**s**)seconden, (**m**)minuten, (**h**)uren en (**d**)dagen. | 1d |  |
+| `--user=<Val>` | De gebruikersnaam voor de instantie. | beheerder |  |
+| `--password=<Val>` | Wachtwoord voor de opgegeven gebruiker. | beheerder |  |
+| `--duration=<Val>` | De duur van de tests. Kan worden uitgedrukt in (**s**)seconden, (**m**)minuten, (**h**)ours en (**d**)dagen. | 1 quinquies |  |
 | `--timeout=<Val>` | Hoe lang een test zal lopen alvorens het zal worden onderbroken en als ontbroken gemerkt. Uitgedrukt in seconden. | 180 |  |
 | `--suite=<Val>` | De waarde kan één of een lijst (gescheiden door komma&#39;s) van vooraf bepaalde testsuites zijn. | nachtmerrie |  |
 | `--configfile=<Val>` | Het doelafbeeldingsconfiguratiebestand. |  |  |
 | `--contextpath=<Val>` | Contextpad van instantie. |  |  |
 | `--loglevel=<Val>` | Het logniveau voor de Tough Day 2-motor. | INFO | ALLES, FOUTOPSPORING, INFO, WAARSCHUWING, FOUT, FATAAL, UIT |
-| `--dryrun=<Val>` | Indien waar (true), wordt de resulterende configuratie afgedrukt en worden geen tests uitgevoerd. | false |  true of false |
+| `--dryrun=<Val>` | Indien waar (true), wordt de resulterende configuratie afgedrukt en worden geen tests uitgevoerd. | false | true of false |
 
-## Aanpassen {#customizing}
+## {#customizing} aanpassen
 
 De aanpassing kan op twee manieren worden bereikt: opdrachtregelparameters of normale configuratiebestanden. **De dossiers van de configuratie worden over het algemeen gebruikt voor grote douanereeksen en zij zullen de standaardparameters van Dag 2 van de Hoek met voeten treden. De de lijnparameters van het bevel treden zowel configuratiedossiers als standaardparameters met voeten.**
 
-De enige manier om een testconfiguratie op te slaan is het in uw formaat te kopiëren. Voor extra details, zie deze configuratie [toughday.yaml](https://repo.adobe.com/nexus/service/local/repositories/releases/content/com/adobe/qe/toughday2/0.2.1/toughday2-0.2.1.yaml) en de voorbeelden van de yaml configuratie in de hieronder secties.
+De enige manier om een testconfiguratie op te slaan is het in uw formaat te kopiëren. Voor extra details, zie deze [toughday.yaml](https://repo.adobe.com/nexus/service/local/repositories/releases/content/com/adobe/qe/toughday2/0.2.1/toughday2-0.2.1.yaml) configuratie en de yaml configuratievoorbeelden in de hieronder secties.
 
 ### Een nieuwe test toevoegen {#adding-a-new-test}
 
-Als u niet de standaardreeks wilt gebruiken, kunt u een test van uw kiezen toevoegen door de `toughday` `add` parameter te gebruiken. De voorbeelden tonen hieronder hoe te om de `CreateAssetTreeTest` test toe te voegen of door de parameters van de bevellijn of een yaml configuratiedossier te gebruiken.
+Als u niet de standaard `toughday` reeks wilt gebruiken, kunt u een test van uw kiezen toevoegen door de `add` parameter te gebruiken. De voorbeelden tonen hieronder hoe te om de `CreateAssetTreeTest` test of toe te voegen door bevellijnparameters of een yaml configuratiedossier te gebruiken.
 
 Door opdrachtregelparameters te gebruiken:
 
@@ -198,7 +201,7 @@ java -jar toughday2.jar --help CreatePageTreeTest
 
 Houd er rekening mee dat uw configuratiebestanden de standaardparameters van Dag 2 overschrijven en dat opdrachtregelparameters zowel de configuratiebestanden als de standaardwaarden overschrijven.
 
-De voorbeelden tonen hieronder hoe te om het `template` bezit voor de `CreatePageTreeTest` test te veranderen of door of bevellijnparameters of een yaml configuratiedossier te gebruiken.
+In de onderstaande voorbeelden ziet u hoe u de eigenschap `template` voor de test `CreatePageTreeTest` wijzigt met behulp van opdrachtregelparameters of een eenvoudig configuratiebestand.
 
 Door opdrachtregelparameters te gebruiken:
 
@@ -221,7 +224,7 @@ tests:
 
 De voorbeelden tonen hieronder hoe te om een test aan een vooraf bepaalde reeks toe te voegen en hoe te om een bestaande test van een vooraf bepaalde reeks opnieuw te vormen en uit te sluiten.
 
-U kunt een nieuwe test aan een vooraf bepaalde reeks toevoegen gebruikend de `add` parameter en het specificeren van de gerichte vooraf bepaalde reeks.
+U kunt een nieuwe test aan een vooraf bepaalde reeks toevoegen gebruikend de `add` parameter en specificerend de gerichte vooraf bepaalde reeks.
 
 Door opdrachtregelparameters te gebruiken:
 
@@ -239,9 +242,9 @@ tests:
   - add : CreatePageTreeTest
 ```
 
-Bestaande tests in een bepaalde suite kunnen ook opnieuw worden geconfigureerd met de parameter `config`* *. U moet ook de naam van de suite en de werkelijke naam van de test opgeven (niet de naam van de testklasse). U kunt de testnaam in het `name` bezit van de Klasse van de Test vinden. Lees voor meer informatie over het zoeken naar testeigenschappen de sectie [Testeigenschappen](/help/sites-developing/tough-day.md#changing-the-test-properties) wijzigen.
+Bestaande tests in een bepaalde suite kunnen ook opnieuw worden geconfigureerd met de *parameter `config`*. U moet ook de naam van de suite en de werkelijke naam van de test opgeven (niet de naam van de testklasse). U kunt de testnaam in het `name` bezit van de Klasse van de Test vinden. Lees de sectie [Testeigenschappen wijzigen](/help/sites-developing/tough-day.md#changing-the-test-properties) voor meer informatie over het zoeken naar testeigenschappen.
 
-In het voorbeeld onder de standaardtitel van het element voor de `CreatePageTreeTest` (benoemd `UploadAsset`) wordt gewijzigd in &quot;NewAsset&quot;.
+In het voorbeeld onder de standaardelementtitel voor `CreatePageTreeTest` (genoemd `UploadAsset`) wordt veranderd in &quot;NewAsset&quot;.
 
 Door opdrachtregelparameters te gebruiken:
 
@@ -261,7 +264,7 @@ tests:
       title : NewAsset
 ```
 
-Bovendien kunt u tests ook verwijderen uit vooraf gedefinieerde suites of uitgevers uit de standaardconfiguratie met behulp van de `exclude` parameter. U moet ook de naam van de suite en de werkelijke naam van de test opgeven (niet de `lass` naam van Test C). U kunt de testnaam in het `name` bezit van de testklasse vinden. In het onderstaande voorbeeld wordt de `CreatePageTreeTest` (benoemde `UploadAsset`) test verwijderd uit de toughday-suite.
+Daarnaast kunt u tests ook verwijderen uit vooraf gedefinieerde suites of uitgevers uit de standaardconfiguratie met behulp van de parameter `exclude`. Gelieve te merken op dat u ook de reeksnaam en de daadwerkelijke naam van de test (niet test C `lass` naam) moet specificeren. U kunt de testnaam in het `name` bezit van de testklasse vinden. In het onderstaande voorbeeld wordt de `CreatePageTreeTest` (genoemd `UploadAsset`) test verwijderd uit de aanraaksuite.
 
 Door opdrachtregelparameters te gebruiken:
 
@@ -279,11 +282,11 @@ tests:
   - exclude : UploadAsset
 ```
 
-### Modi uitvoeren {#run-modes}
+### Modi {#run-modes} uitvoeren
 
-Dag 2 van de tijd kan in één van de volgende wijzen lopen: **normale** en **constante belasting**.
+Dag 2 van de tijd kan in één van de volgende wijzen lopen: **normal** en **constante load**.
 
-De **normale** uitvoeringsmodus heeft twee parameters:
+De **normal** loopwijze heeft twee parameters:
 
 * `concurrency` - gelijktijdige uitvoering staat voor het aantal threads dat op Tough Day 2 wordt uitgevoerd. Op deze draden, zullen de tests worden uitgevoerd tot of de duur of er geen meer uit te voeren tests is.
 
@@ -304,13 +307,13 @@ runmode:
   concurrency : 200
 ```
 
-De **constante ladingloopwijze** verschilt van de normale looppaswijze door een constant aantal begonnen testuitvoeringen, eerder dan een constant aantal draden te produceren. U kunt het laden instellen met de parameter voor de uitvoeringsmodus met dezelfde naam.
+De **constante lading** loopwijze verschilt van de normale looppaswijze door een constant aantal begonnen testuitvoeringen, eerder dan een constant aantal draden te produceren. U kunt het laden instellen met de parameter voor de uitvoeringsmodus met dezelfde naam.
 
-### Selectie testen {#test-selection}
+### Selectie {#test-selection} testen
 
 Het testselectieproces is hetzelfde voor beide uitvoermodi en gaat als volgt te werk: alle tests hebben een `weight` bezit, dat de waarschijnlijkheid van uitvoering in een draad bepaalt. Als we bijvoorbeeld twee tests hebben, één met een gewicht van 5 en één met een gewicht van 10, is de kans dat de laatste twee keer zo groot is als de eerste.
 
-Bovendien kunnen tests een `count` eigendom hebben, waardoor het aantal executies tot een bepaald aantal wordt beperkt. Nadat dit aantal wordt overgegaan, zullen geen verdere uitvoeringen van de test voorkomen. Alle testinstanties die reeds lopen zullen de looppas zoals gevormd beëindigen. Het volgende voorbeeld toont hoe te om deze parameters of bij de bevellijn toe te voegen of door een yaml configuratiedossier te gebruiken.
+Bovendien kunnen tests een `count` bezit hebben, die het aantal uitvoeringen tot een bepaald aantal beperkt. Nadat dit aantal wordt overgegaan, zullen geen verdere uitvoeringen van de test voorkomen. Alle testinstanties die reeds lopen zullen de looppas zoals gevormd beëindigen. Het volgende voorbeeld toont hoe te om deze parameters of bij de bevellijn toe te voegen of door een yaml configuratiedossier te gebruiken.
 
 ```xml
 java -jar toughday2.jar --host=localhost --add CreateAssetTreeTest weight=5 --add CreatePageTreeTest weight=10 count=100 --runmode=normal concurrency=20
@@ -331,9 +334,9 @@ or
 
 >[!NOTE]
 >
->Wegens parallelle uitvoeringen, zal het daadwerkelijke aantal testlooppas niet precies de hoeveelheid zijn die in de `count` parameter wordt gevormd. Verwacht een afwijking evenredig aan het aantal lopende draden (die door `concurrency parameter`) worden gecontroleerd.
+>Door parallelle uitvoeringen, zal het daadwerkelijke aantal testlooppas niet precies de hoeveelheid zijn die in de `count` parameter wordt gevormd. Verwacht een afwijking evenredig aan het aantal lopende draden (die door `concurrency parameter` worden gecontroleerd).
 
-### Droog {#dry-run}
+### Uitvoeren drogen {#dry-run}
 
 Een droge looppas ontleedt alle bepaalde input (bevellijnparameters of configuratiedossiers), die het met de gebreken samenvoegen en dan de resultaten uitvoert. Geen van de tests wordt uitgevoerd.
 
@@ -341,13 +344,13 @@ Een droge looppas ontleedt alle bepaalde input (bevellijnparameters of configura
 java -jar toughday2.jar --host=localhost --suite=toughday --add CreatePageTreeTest --dryrun=true
 ```
 
-## Output {#output}
+## Uitvoer {#output}
 
 Langzame Dag 2 output zowel testmetriek als logboeken. Lees de volgende secties voor meer informatie.
 
 ### Metrisch testen {#test-metrics}
 
-Op Tough Day 2 worden momenteel 9 testmetriek gerapporteerd die u kunt evalueren. Metrische gegevens met het symbool ***** worden alleen gerapporteerd nadat de uitvoering is gelukt:
+Op Tough Day 2 worden momenteel 9 testmetriek gerapporteerd die u kunt evalueren. Metrische gegevens met het *****-symbool worden alleen gerapporteerd nadat de uitvoering is gelukt:
 
 | **Naam** | **Beschrijving** |
 |---|---|
@@ -366,15 +369,15 @@ Op Tough Day 2 worden momenteel 9 testmetriek gerapporteerd die u kunt evalueren
 
 Deze metriek wordt geschreven met de hulp van uitgevers die met de `add` parameter (gelijkaardig aan het toevoegen van tests) kunnen worden toegevoegd. Er zijn momenteel twee opties:
 
-* **CSVPublisher** - de uitvoer is een CSV-bestand.
-* **ConsolePublisher** - de uitvoer wordt weergegeven in de console.
+* **CSVPublisher**  - de uitvoer is een CSV-bestand.
+* **ConsolePublisher** : de uitvoer wordt weergegeven in de console.
 
 Standaard zijn beide uitgevers ingeschakeld.
 
 Bovendien zijn er twee wijzen waarin de metriek worden gemeld:
 
-* De **eenvoudige** publicatiemodus - rapporteert de resultaten vanaf het begin van de uitvoering tot het moment van publicatie.
-* De publicatiemodus **voor intervallen** - rapporteert de resultaten in een bepaald tijdframe. U kunt het tijdkader met de parameter van de **interval** plaatsen publiceert wijze.
+* De **simple** publicatiemodus - rapporteert de resultaten vanaf het begin van de uitvoering tot het moment van publicatie.
+* De **intervallen** publicatiemodus - rapporteert de resultaten in een bepaald tijdkader. U kunt het tijdkader met **interval** plaatsen publiceert wijzeparameter.
 
 Het volgende voorbeeld toont hoe te om de `intervals` parameter of bij de bevellijn of door een yaml configuratiedossier te vormen.
 
@@ -399,11 +402,11 @@ publishmode:
 Tough Day 2 maakt een logmap in dezelfde map als waar u Tough Day 2 hebt uitgevoerd. Deze map bevat twee typen logbestanden:
 
 * **toughday.log**: bevat berichten met betrekking tot de toepassingsstatus, foutopsporingsinformatie en globale berichten.
-* **day_&lt;testname>.log**: berichten met betrekking tot de opgegeven test.
+* **toughday_&lt;testname>.log**: berichten met betrekking tot de opgegeven test.
 
 De logboeken worden niet overschreven, de verdere looppas zal berichten aan de bestaande logboeken toevoegen. De logboeken hebben verscheidene niveaus, voor meer informatie zie ` [loglevel parameter](/help/sites-developing/tough-day.md#global-parameters)`.
 
-#### Voorbeeldgebruik {#example-usage}
+#### Voorbeeld van gebruik {#example-usage}
 
 #### Bekende problemen {#known-issues}
 

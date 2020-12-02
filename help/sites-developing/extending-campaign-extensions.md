@@ -1,8 +1,8 @@
 ---
 title: Aangepaste extensies maken
 seo-title: Aangepaste extensies maken
-description: U kunt uw aangepaste code in Adobe Campaign aanroepen van AEM of van AEM naar Adobe Campaign
-seo-description: U kunt uw aangepaste code in Adobe Campaign aanroepen van AEM of van AEM naar Adobe Campaign
+description: U kunt uw aangepaste code in Adobe Campaign opvragen van AEM of van AEM naar Adobe Campaign
+seo-description: U kunt uw aangepaste code in Adobe Campaign opvragen van AEM of van AEM naar Adobe Campaign
 uuid: 8392aa0d-06cd-4b37-bb20-f67e6a0550b1
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,26 +11,29 @@ content-type: reference
 discoiquuid: f536bcc1-7744-4f05-ac6a-4cec94a1ffb6
 translation-type: tm+mt
 source-git-commit: 06f1f753b9bb7f7336454f166e03f753e3735a16
+workflow-type: tm+mt
+source-wordcount: '538'
+ht-degree: 0%
 
 ---
 
 
 # Aangepaste extensies maken{#creating-custom-extensions}
 
-Wanneer u een project implementeert, hebt u doorgaans aangepaste code in zowel AEM- als Adobe-campagne. Met behulp van de bestaande API kunt u uw aangepaste code in Adobe Campaign oproepen van AEM of van AEM naar Adobe Campaign. In dit document wordt beschreven hoe u dat doet.
+Over het algemeen wanneer u een project implementeert, hebt u aangepaste code in zowel AEM als Adobe Campaign. Met het gebruik van de bestaande API kunt u uw aangepaste code in Adobe Campaign aanroepen van AEM of van AEM naar Adobe Campaign. In dit document wordt beschreven hoe u dat doet.
 
 ## Vereisten {#prerequisites}
 
 U moet het volgende installeren:
 
 * Adobe Experience Manager
-* Adobe-campagne 6.1
+* Adobe Campaign 6.1
 
-Zie [AEM integreren met Adobe Campagne 6.1](/help/sites-administering/campaignonpremise.md) voor meer informatie.
+Zie [AEM integreren met Adobe Campaign 6.1](/help/sites-administering/campaignonpremise.md) voor meer informatie.
 
-## Voorbeeld 1: AEM naar Adobe-campagne {#example-aem-to-adobe-campaign}
+## Voorbeeld 1: AEM aan Adobe Campaign {#example-aem-to-adobe-campaign}
 
-De standaardintegratie tussen AEM en Campagne is gebaseerd op JSON en JSSP (JavaScript Server Page). Deze JSSP-bestanden vindt u in de Campagne-console en beginnen allemaal met **amc** (Adobe Marketing Cloud).
+De standaardintegratie tussen AEM en Campagne is gebaseerd op JSON en JSSP (JavaScript Server Page). Deze JSSP dossiers kunnen in de console van de Campagne worden gevonden, en allen beginnen met **amc** (Adobe Marketing Cloud).
 
 ![chlimage_1-15](assets/chlimage_1-15a.png)
 
@@ -38,13 +41,13 @@ De standaardintegratie tussen AEM en Campagne is gebaseerd op JSON en JSSP (Java
 >
 >[Voor dit voorbeeld, gelieve te zien Geometrixx](/help/sites-developing/we-retail.md), die bij het Aandeel van het Pakket beschikbaar is.
 
-In dit voorbeeld maken we een nieuw aangepast JSSP-bestand en roepen we dat bestand aan vanaf de AEM-zijde om het resultaat op te halen. Dit kan bijvoorbeeld worden gebruikt om gegevens op te halen uit Adobe Campaign of om gegevens op te slaan in Adobe Campaign.
+In dit voorbeeld maken we een nieuw aangepast JSSP-bestand en roepen we dat van de AEM aan om het resultaat op te halen. Dit kan bijvoorbeeld worden gebruikt om gegevens op te halen uit Adobe Campaign of om gegevens op te slaan in Adobe Campaign.
 
-1. Als u in Adobe Campaign een nieuw JSSP-bestand wilt maken, klikt u op het pictogram **Nieuw** .
+1. Als u in Adobe Campaign een nieuw JSSP-bestand wilt maken, klikt u op het pictogram **Nieuw**.
 
    ![](do-not-localize/chlimage_1-4a.png)
 
-1. Voer de naam van dit JSSP-bestand in. In dit voorbeeld gebruiken we **cus:custom.jssp** (dit betekent dat deze zich in de naamruimte **cus** bevindt).
+1. Voer de naam van dit JSSP-bestand in. In dit voorbeeld gebruiken we **cus:custom.jssp** (wat betekent dat deze zich in de naamruimte **cus** bevindt).
 
    ![chlimage_1-16](assets/chlimage_1-16a.png)
 
@@ -58,11 +61,12 @@ In dit voorbeeld maken we een nieuw aangepast JSSP-bestand en roepen we dat best
    ```
 
 1. Sla uw werk op. Het resterende werk is in AEM.
-1. Creeer een eenvoudige servlet op de kant van AEM om dit JSSP te roepen. In dit voorbeeld gaan we uit van het volgende:
+1. Creeer een eenvoudige servlet op de AEM kant om dit JSSP te roepen. In dit voorbeeld gaan we uit van het volgende:
 
-   * U hebt een verbinding tussen AEM en Campagne
+   * U hebt de verbinding tussen AEM en Campagne
    * De campagnecloudservice is geconfigureerd op **/content/geometrixx-outdoor**
-   Het belangrijkste object in dit voorbeeld is de **GenericCampaignConnector**, waarmee u jssp-bestanden kunt aanroepen (ophalen en posten) aan de zijde van de Adobe-campagne.
+
+   Het belangrijkste object in dit voorbeeld is de **GenericCampaignConnector**, waarmee u jssp-bestanden aan de Adobe Campaign-zijde kunt aanroepen (ophalen en posten).
 
    Hier volgt een klein codefragment:
 
@@ -159,9 +163,9 @@ public class CustomServlet extends SlingSafeMethodsServlet {
 }
 ```
 
-## Voorbeeld 2: Adobe-campagne naar AEM {#example-adobe-campaign-to-aem}
+## Voorbeeld 2: Adobe Campaign naar AEM {#example-adobe-campaign-to-aem}
 
-AEM biedt API&#39;s uit de doos aan om de objecten op te halen die overal beschikbaar zijn in de browser-weergave voor sitebeheer.
+AEM biedt API&#39;s van de box uit om de objecten op te halen die overal beschikbaar zijn in de browser-weergave van sitebeheer.
 
 ![chlimage_1-17](assets/chlimage_1-17a.png)
 
@@ -177,13 +181,13 @@ de API is:
 
 * [http://localhost:4502/content/campaigns/geometrixx/scott-recommends.1.json](http://localhost:4502/content/campaigns/geometrixx/scott-recommends.2.json)
 
-Het einde van URL **.1.json** kan worden vervangen door **.2.json**, **.3.json**, afhankelijk van het aantal subniveaus u in het krijgen van interesseert u om allen te verkrijgen het sleutelwoord **oneindig** kan worden gebruikt:
+Het einde van de URL **.1.json** kan worden vervangen door **.2.json**, **.3.json**, afhankelijk van het aantal subniveaus dat u wilt ophalen Om alle subniveaus te verkrijgen, kunt u het trefwoord **infinity** gebruiken:
 
 * [http://localhost:4502/content/campaigns/geometrixx/scott-recommends.infinity.json](http://localhost:4502/content/campaigns/geometrixx/scott-recommends.2.json)
 
-Nu moeten we weten dat AEM standaard de basisverificatie gebruikt om de API te gebruiken.
+Nu moeten we weten dat AEM standaard basisverificatie gebruikt om de API te gebruiken.
 
-Een bibliotheek JS die **amcIntegration.js** wordt genoemd is beschikbaar in 6.1.1 (bouwstijl 8624 en hoger) die die logica onder verscheidene andere uitvoert.
+Een bibliotheek JS die **amcIntegration.js** wordt genoemd is beschikbaar in 6.1.1 (bouwstijl 8624 en hoger) die die logica onder verscheidene andere degenen uitvoert.
 
 ### AEM API-aanroep {#aem-api-call}
 

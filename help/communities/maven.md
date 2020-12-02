@@ -28,8 +28,8 @@ Deze sectie van de documentatie van AEM Communities is naast:
 
 Er zijn nu twee &#39;Number&#39;-artefacten die afzonderlijke artefacten vervangen:
 
-* AEM [Community API-jar](#communities-api-jar-artifact)
-* AEM [Uber API-jar](../../help/sites-developing/ht-projects-maven.md#what-is-the-uberjar)
+* AEM [Community API jar](#communities-api-jar-artifact)
+* AEM [Uber API jar](../../help/sites-developing/ht-projects-maven.md#what-is-the-uberjar)
 
 ## Communities API Jar Artifact {#communities-api-jar-artifact}
 
@@ -47,7 +47,7 @@ Hier volgt een voorbeeld van een GAV voor de AEM Communities API-jar:
 Zorg ervoor dat de opgegeven versie overeenkomt met de versie van het communautaire pakket die voor AEM Communities is geïnstalleerd. Om het geïnstalleerde versienummer te verifiëren:
 
 1. Meld u aan met beheerdersrechten.
-1. Blader naar [Pakketbeheer](../../help/sites-administering/package-manager.md). Bijvoorbeeld: [http://localhost:4502/crx/packmgr/](http://localhost:4502/crx/packmgr/)
+1. Blader naar [Pakketbeheer](../../help/sites-administering/package-manager.md). Bijvoorbeeld [http://localhost:4502/crx/packmgr/](http://localhost:4502/crx/packmgr/)
 
 1. Zoek het pakket: `cq-socialcommunities-pkg-1.x.xxx`
 1. Extraheer de versie uit de pakketnaam:
@@ -58,9 +58,9 @@ Zorg ervoor dat de opgegeven versie overeenkomt met de versie van het communauta
 >
 >Aanbevolen wordt de meest recente versie van de Gemeenschappen bij te houden.
 >
->Ga naar de sectie [Laatste releases](deploy-communities.md#latest-releases) om de meest recente versie te identificeren.
+>Bezoek de sectie [Laatste releases](deploy-communities.md#latest-releases) om de meest recente versie te identificeren.
 
-## Voorbeeld van Geweven afhankelijkheid {#maven-dependency-example}
+## Voorbeeld van een weven afhankelijkheid {#maven-dependency-example}
 
 De Community API jar moet worden opgegeven vóór de Uber API jar.
 

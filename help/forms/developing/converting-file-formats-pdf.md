@@ -24,7 +24,7 @@ ht-degree: 0%
 
 Met de service PDF genereren worden oorspronkelijke bestandsindelingen geconverteerd naar PDF. Ook wordt PDF geconverteerd naar andere bestandsindelingen en wordt de grootte van PDF-documenten geoptimaliseerd.
 
-De service PDF genereren gebruikt native toepassingen om de volgende bestandsindelingen te converteren naar PDF. Tenzij anders aangegeven, worden alleen de Duitse, Franse, Engelse en Japanse versies van deze toepassingen ondersteund. *Vensters wijst slechts* op steun voor slechts Vensters Server® 2003 en de Server 2008 van Vensters.
+De service PDF genereren gebruikt native toepassingen om de volgende bestandsindelingen te converteren naar PDF. Tenzij anders aangegeven, worden alleen de Duitse, Franse, Engelse en Japanse versies van deze toepassingen ondersteund. *Vensters wijst* slechts steun voor slechts Vensters Server® 2003 en de Server 2008 van Vensters aan.
 
 * Microsoft Office 2003 en 2007 voor de conversie van DOC, DOCX, RTF, TXT, XLS, XLSX, PPT, PPTX, VSD, MPP, MPPX, XPS en PUB (alleen Windows)
 
@@ -62,7 +62,7 @@ De service PDF genereren converteert PDF naar de volgende bestandsindelingen (al
 * HTML 3.2
 * HTML 4.01 met CSS 1.0
 * DOC (Microsoft Word-indeling)
-* RTF
+* TTF
 * Tekst (zowel toegankelijk als onbewerkt)
 * XML
 * PDF/A-1a die alleen de DeviceRGB-kleurruimte gebruikt
@@ -84,7 +84,7 @@ U kunt deze taken uitvoeren met de service PDF genereren:
 
 >[!NOTE]
 >
->Zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63)voor meer informatie over de service PDF genereren.
+>Zie [Referentiehandleiding voor services voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63) voor meer informatie over de service PDF genereren.
 
 ## Word-documenten converteren naar PDF-documenten {#converting-word-documents-to-pdf-documents}
 
@@ -92,13 +92,13 @@ In deze sectie wordt beschreven hoe u met de API voor genereren een Microsoft Wo
 
 >[!NOTE]
 >
->Zie Ondersteuning [voor extra eigen bestandsindelingen](converting-file-formats-pdf.md#adding-support-for-additional-native-file-formats)toevoegen voor meer informatie over extra bestandsindelingen.
+>Voor meer informatie over extra dossierformaten, zie [Steun voor Extra Inheemse Indelingen van het Dossier toevoegen](converting-file-formats-pdf.md#adding-support-for-additional-native-file-formats).
 
 >[!NOTE]
 >
->Zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63)voor meer informatie over de service PDF genereren.
+>Zie [Referentiehandleiding voor services voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63) voor meer informatie over de service PDF genereren.
 
-### Overzicht van de stappen {#summary-of-steps}
+### Overzicht van stappen {#summary-of-steps}
 
 Als u een Microsoft Word-document naar een PDF-document wilt converteren, voert u de volgende taken uit:
 
@@ -114,7 +114,7 @@ Neem de benodigde bestanden op in uw ontwikkelingsproject. Als u een clienttoepa
 
 **Een PDF-client genereren**
 
-Voordat u met programmacode een bewerking PDF genereren kunt uitvoeren, maakt u een serviceclient PDF genereren. Als u de Java API gebruikt, maakt u een `GeneratePdfServiceClient` object. Als u de webservice-API gebruikt, maakt u een `GeneratePDFServiceService` object.
+Voordat u met programmacode een bewerking PDF genereren kunt uitvoeren, maakt u een serviceclient PDF genereren. Als u de Java API gebruikt, maakt u een `GeneratePdfServiceClient`-object. Als u de webservice-API gebruikt, maakt u een `GeneratePDFServiceService`-object.
 
 **Het bestand dat naar een PDF-document moet worden geconverteerd, ophalen**
 
@@ -150,39 +150,39 @@ Converteer een Microsoft Word-document naar een PDF-document met de Generate PDF
 
 1. Maak een Generate PDF client.
 
-   * Maak een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
-   * Maak een `GeneratePdfServiceClient` object door de constructor ervan te gebruiken en het `ServiceClientFactory` object door te geven.
+   * Maak een `ServiceClientFactory`-object dat verbindingseigenschappen bevat.
+   * Maak een `GeneratePdfServiceClient`-object door de constructor ervan te gebruiken en het object `ServiceClientFactory` door te geven.
 
 1. Haal het bestand op dat u naar een PDF-document wilt converteren.
 
-   * Maak een `java.io.FileInputStream` object dat staat voor het Word-bestand dat u wilt converteren met behulp van de constructor. Geef een tekenreekswaarde door die de bestandslocatie opgeeft.
-   * Maak een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en het `java.io.FileInputStream` object door te geven.
+   * Maak een `java.io.FileInputStream`-object dat het Word-bestand vertegenwoordigt dat u wilt converteren met de constructor ervan. Geef een tekenreekswaarde door die de bestandslocatie opgeeft.
+   * Maak een `com.adobe.idp.Document`-object door de constructor ervan te gebruiken en het object `java.io.FileInputStream` door te geven.
 
 1. Converteer het bestand naar een PDF-document.
 
-   Converteer het bestand naar een PDF-document door de methode van het `GeneratePdfServiceClient` `createPDF2` object aan te roepen en de volgende waarden door te geven:
+   Converteer het bestand naar een PDF-document door de methode `GeneratePdfServiceClient` van het object `createPDF2` aan te roepen en de volgende waarden door te geven:
 
-   * Een `com.adobe.idp.Document` object dat staat voor het bestand dat moet worden omgezet.
-   * Een `java.lang.String` object dat de bestandsextensie bevat.
-   * Een `java.lang.String` object dat de instellingen voor het bestandstype bevat die moeten worden gebruikt bij de conversie. Instellingen voor bestandstypen bieden conversie-instellingen voor verschillende bestandstypen, zoals .doc of .xls.
-   * Een `java.lang.String` object dat de naam bevat van de te gebruiken PDF-instellingen. U kunt bijvoorbeeld opgeven `Standard`.
-   * Een `java.lang.String` object dat de naam bevat van de beveiligingsinstellingen die moeten worden gebruikt.
-   * Een optioneel `com.adobe.idp.Document` object dat de instellingen bevat die moeten worden toegepast tijdens het genereren van het PDF-document.
-   * Een optioneel `com.adobe.idp.Document` object dat metagegevens bevat die op het PDF-document moeten worden toegepast.
+   * Een `com.adobe.idp.Document`-object dat het bestand vertegenwoordigt dat moet worden omgezet.
+   * Een `java.lang.String`-object dat de bestandsextensie bevat.
+   * Een `java.lang.String`-object dat de instellingen voor het bestandstype bevat die in de conversie moeten worden gebruikt. Instellingen voor bestandstypen bieden conversie-instellingen voor verschillende bestandstypen, zoals .doc of .xls.
+   * Een `java.lang.String`-object dat de naam bevat van de te gebruiken PDF-instellingen. U kunt bijvoorbeeld `Standard` opgeven.
+   * Een `java.lang.String`-object dat de naam bevat van de beveiligingsinstellingen die moeten worden gebruikt.
+   * Een optioneel `com.adobe.idp.Document`-object dat instellingen bevat die moeten worden toegepast tijdens het genereren van het PDF-document.
+   * Een optioneel `com.adobe.idp.Document`-object dat metagegevens bevat die op het PDF-document moeten worden toegepast.
 
-   De `createPDF2` methode retourneert een `CreatePDFResult` object dat het nieuwe PDF-document en logboekgegevens bevat. Het logbestand bevat doorgaans fout- of waarschuwingsberichten die worden gegenereerd door de conversieaanvraag.
+   De methode `createPDF2` retourneert een `CreatePDFResult`-object dat het nieuwe PDF-document en een logbestandinformatie bevat. Het logbestand bevat doorgaans fout- of waarschuwingsberichten die worden gegenereerd door de conversieaanvraag.
 
 1. Haal de resultaten op.
 
    Voer de volgende handelingen uit om het PDF-document te verkrijgen:
 
-   * Roep de `CreatePDFResult` methode van het `getCreatedDocument` object aan, die een `com.adobe.idp.Document` object retourneert.
-   * Roep de `com.adobe.idp.Document` methode van het `copyToFile` object aan om het PDF-document te extraheren van het object dat u in de vorige stap hebt gemaakt.
+   * Roep de methode `CreatePDFResult` van het object `getCreatedDocument` aan, die een object `com.adobe.idp.Document` retourneert.
+   * Roep de methode `com.adobe.idp.Document` van het object `copyToFile` aan om het PDF-document te extraheren van het object dat in de vorige stap is gemaakt.
 
-   Als u de `createPDF2` methode hebt gebruikt om het logdocument op te halen (niet van toepassing op HTML-conversies), voert u de volgende handelingen uit:
+   Als u de methode `createPDF2` hebt gebruikt om het logdocument te verkrijgen (niet van toepassing op HTML-conversies), voert u de volgende handelingen uit:
 
-   * Roep de `CreatePDFResult` methode van het `getLogDocument` object aan. Hiermee wordt een `com.adobe.idp.Document` object geretourneerd.
-   * Roep de `com.adobe.idp.Document` methode van het `copyToFile` object aan om het logdocument te extraheren.
+   * Roep de methode `CreatePDFResult` van het object `getLogDocument` aan. Dit retourneert een `com.adobe.idp.Document`-object.
+   * Roep de methode `com.adobe.idp.Document` van het object `copyToFile` aan om het logdocument te extraheren.
 
 
 **Zie ook**
@@ -205,49 +205,49 @@ Converteer een Microsoft Word-document naar een PDF-document met de API (webserv
 
    >[!NOTE]
    >
-   >Vervangen `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
+   >Vervang `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
 
 1. Maak een Generate PDF client.
 
-   * Maak een `GeneratePDFServiceClient` object met de standaardconstructor.
-   * Maak een `GeneratePDFServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`.) U hoeft het `lc_version` kenmerk niet te gebruiken. Geef dit echter op `?blob=mtom`.
-   * Maak een `System.ServiceModel.BasicHttpBinding` object door de waarde van het `GeneratePDFServiceClient.Endpoint.Binding` veld op te halen. Kiezen naar de geretourneerde waarde `BasicHttpBinding`.
-   * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
+   * Maak een `GeneratePDFServiceClient`-object met de standaardconstructor.
+   * Maak een `GeneratePDFServiceClient.Endpoint.Address`-object met de constructor `System.ServiceModel.EndpointAddress`. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`). U hoeft het `lc_version`-kenmerk niet te gebruiken. Geef `?blob=mtom` echter op.
+   * Maak een `System.ServiceModel.BasicHttpBinding`-object door de waarde van het veld `GeneratePDFServiceClient.Endpoint.Binding` op te halen. Cast de terugkeerwaarde aan `BasicHttpBinding`.
+   * Stel het veld `System.ServiceModel.BasicHttpBinding` van het object `MessageEncoding` in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam van het AEM aan het veld toe `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`.
-      * Wijs de bijbehorende wachtwoordwaarde aan het veld toe `GeneratePDFServiceClient.ClientCredentials.UserName.Password`.
-      * Wijs de constante waarde toe `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Wijs de constante waarde toe `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode`.
+      * Wijs de gebruikersnaam voor het AEM aan het veld `GeneratePDFServiceClient.ClientCredentials.UserName.UserName` toe.
+      * Wijs de overeenkomstige wachtwoordwaarde aan het gebied `GeneratePDFServiceClient.ClientCredentials.UserName.Password` toe.
+      * Wijs de constante waarde `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType` toe.
+      * Wijs de constante waarde `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode` toe.
 
 1. Haal het bestand op dat u naar een PDF-document wilt converteren.
 
-   * Maak een `BLOB` object met de constructor ervan. Het `BLOB` object wordt gebruikt om het bestand op te slaan dat u naar een PDF-document wilt converteren.
-   * Maak een `System.IO.FileStream` object door de constructor ervan aan te roepen. Geef een tekenreekswaarde door die de bestandslocatie vertegenwoordigt van het bestand dat moet worden omgezet en de modus waarin het bestand moet worden geopend.
-   * Maak een bytearray waarin de inhoud van het `System.IO.FileStream` object wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de `System.IO.FileStream` eigenschap van het `Length` object op te halen.
-   * Vul de bytearray met streamgegevens door de methode van het `System.IO.FileStream` `Read` object aan te roepen en de bytearray, de startpositie en de lengte van de stream door te geven om te lezen.
-   * Vul het `BLOB` object door de inhoud van de bytearray aan de `MTOM` eigenschap toe te wijzen.
+   * Maak een `BLOB`-object met de constructor ervan. In het object `BLOB` wordt het bestand opgeslagen dat u naar een PDF-document wilt converteren.
+   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen. Geef een tekenreekswaarde door die de bestandslocatie vertegenwoordigt van het bestand dat moet worden omgezet en de modus waarin het bestand moet worden geopend.
+   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `System.IO.FileStream` van het object `Length` op te halen.
+   * Vul de bytearray met streamgegevens door de methode `Read` van het object `System.IO.FileStream` aan te roepen en de bytearray, de startpositie en de lengte van de stream door te geven om te lezen.
+   * Vul het `BLOB`-object door aan de eigenschap `MTOM` de inhoud van de bytearray toe te wijzen.
 
 1. Converteer het bestand naar een PDF-document.
 
-   Converteer het bestand naar een PDF-document door de methode van het `GeneratePDFServiceService` `CreatePDF2` object aan te roepen en de volgende waarden door te geven:
+   Converteer het bestand naar een PDF-document door de methode `GeneratePDFServiceService` van het object `CreatePDF2` aan te roepen en de volgende waarden door te geven:
 
-   * Een `BLOB` object dat het te converteren bestand vertegenwoordigt.
+   * Een `BLOB`-object dat het te converteren bestand vertegenwoordigt.
    * Een tekenreeks die de bestandsextensie bevat.
-   * Een `java.lang.String` object dat de instellingen voor het bestandstype bevat die moeten worden gebruikt bij de conversie. Instellingen voor bestandstypen bieden conversie-instellingen voor verschillende bestandstypen, zoals .doc of .xls.
-   * Een tekenreeksobject dat de te gebruiken PDF-instellingen bevat. U kunt opgeven `Standard`.
-   * Een tekenreeksobject dat de beveiligingsinstellingen bevat die moeten worden gebruikt. U kunt opgeven `No Security`.
-   * Een optioneel `BLOB` object dat de instellingen bevat die moeten worden toegepast tijdens het genereren van het PDF-document.
-   * Een optioneel `BLOB` object dat metagegevens bevat die op het PDF-document moeten worden toegepast.
-   * Een uitvoerparameter van type `BLOB` die door de `CreatePDF2` methode wordt bevolkt. De `CreatePDF2` methode vult dit object met het omgezette document. (Deze parameterwaarde is alleen vereist voor aanroepen van een webservice.)
-   * Een uitvoerparameter van type `BLOB` die door de `CreatePDF2` methode wordt bevolkt. De `CreatePDF2` methode vult dit object met het logdocument. (Deze parameterwaarde is alleen vereist voor aanroepen van een webservice.)
+   * Een `java.lang.String`-object dat de instellingen voor het bestandstype bevat die in de conversie moeten worden gebruikt. Instellingen voor bestandstypen bieden conversie-instellingen voor verschillende bestandstypen, zoals .doc of .xls.
+   * Een tekenreeksobject dat de te gebruiken PDF-instellingen bevat. U kunt `Standard` specificeren.
+   * Een tekenreeksobject dat de beveiligingsinstellingen bevat die moeten worden gebruikt. U kunt `No Security` specificeren.
+   * Een optioneel `BLOB`-object dat instellingen bevat die moeten worden toegepast tijdens het genereren van het PDF-document.
+   * Een optioneel `BLOB`-object dat metagegevens bevat die op het PDF-document moeten worden toegepast.
+   * Een uitvoerparameter van type `BLOB` die door de `CreatePDF2` methode wordt bevolkt. Met de methode `CreatePDF2` wordt dit object gevuld met het omgezette document. (Deze parameterwaarde is alleen vereist voor aanroepen van een webservice.)
+   * Een uitvoerparameter van type `BLOB` die door de `CreatePDF2` methode wordt bevolkt. Met de methode `CreatePDF2` wordt dit object gevuld met het logdocument. (Deze parameterwaarde is alleen vereist voor aanroepen van een webservice.)
 
 1. Haal de resultaten op.
 
-   * Haal het geconverteerde PDF-document op door het `BLOB` veld van het `MTOM` object toe te wijzen aan een bytearray. De bytearray vertegenwoordigt het geconverteerde PDF-document. Zorg ervoor dat u het `BLOB` object gebruikt als uitvoerparameter voor de `createPDF2` methode.
-   * Maak een `System.IO.FileStream` object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het geconverteerde PDF-document vertegenwoordigt.
-   * Maak een `System.IO.BinaryWriter` object door de constructor ervan aan te roepen en het `System.IO.FileStream` object door te geven.
-   * Schrijf de inhoud van de bytearray naar een PDF-bestand door de methode van het `System.IO.BinaryWriter` `Write` object aan te roepen en de bytearray door te geven.
+   * Haal het geconverteerde PDF-document op door het veld `BLOB` van het object `MTOM` toe te wijzen aan een bytearray. De bytearray vertegenwoordigt het geconverteerde PDF-document. Zorg ervoor dat u het object `BLOB` gebruikt dat als uitvoerparameter voor de methode `createPDF2` wordt gebruikt.
+   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het geconverteerde PDF-document vertegenwoordigt.
+   * Maak een `System.IO.BinaryWriter`-object door de constructor ervan aan te roepen en het object `System.IO.FileStream` door te geven.
+   * Schrijf de inhoud van de bytearray naar een PDF-bestand door de methode `Write` van het object `System.IO.BinaryWriter` aan te roepen en de bytearray door te geven.
 
 **Zie ook**
 
@@ -263,9 +263,9 @@ In deze sectie wordt beschreven hoe u met de API voor genereren van PDF HTML-doc
 
 >[!NOTE]
 >
->Zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63)voor meer informatie over de service PDF genereren.
+>Zie [Referentiehandleiding voor services voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63) voor meer informatie over de service PDF genereren.
 
-### Overzicht van de stappen {#summary_of_steps-1}
+### Overzicht van stappen {#summary_of_steps-1}
 
 Voer de volgende taken uit om een HTML-document te converteren naar een PDF-document:
 
@@ -281,7 +281,7 @@ Neem de benodigde bestanden op in uw ontwikkelingsproject. Als u een clienttoepa
 
 **Een PDF-client genereren**
 
-Voordat u met programmacode een bewerking PDF genereren kunt uitvoeren, moet u een serviceclient PDF genereren maken. Als u de Java API gebruikt, maakt u een `GeneratePdfServiceClient` object. Als u de webservice-API gebruikt, maakt u een `GeneratePDFServiceService`.
+Voordat u met programmacode een bewerking PDF genereren kunt uitvoeren, moet u een serviceclient PDF genereren maken. Als u de Java API gebruikt, maakt u een `GeneratePdfServiceClient`-object. Als u de webservice-API gebruikt, maakt u een `GeneratePDFServiceService`.
 
 **De HTML-inhoud ophalen die naar een PDF-document moet worden geconverteerd**
 
@@ -317,7 +317,7 @@ Een HTML-document converteren naar een PDF-document met de Generate PDF API (Jav
 
 1. Maak een Generate PDF client.
 
-   Maak een `GeneratePdfServiceClient` object door de constructor ervan te gebruiken en een `ServiceClientFactory` object door te geven dat verbindingseigenschappen bevat.
+   Maak een `GeneratePdfServiceClient`-object door de constructor ervan te gebruiken en een `ServiceClientFactory`-object door te geven dat verbindingseigenschappen bevat.
 
 1. Haal de HTML-inhoud op die u naar een PDF-document wilt converteren.
 
@@ -325,20 +325,20 @@ Een HTML-document converteren naar een PDF-document met de Generate PDF API (Jav
 
 1. Zet de HTML-inhoud om in een PDF-document.
 
-   Roep de methode van het `GeneratePdfServiceClient` `htmlToPDF2` object aan en geef de volgende waarden door:
+   Roep de methode `htmlToPDF2` van het object `GeneratePdfServiceClient` aan en geef de volgende waarden door:
 
-   * Een `java.lang.String` object dat de URL bevat van het te converteren HTML-bestand.
-   * Een `java.lang.String` object dat de instellingen voor het bestandstype bevat die moeten worden gebruikt bij de conversie. Instellingen voor bestandstypen kunnen spinningsniveaus bevatten.
-   * Een `java.lang.String` object dat de naam bevat van de beveiligingsinstellingen die moeten worden gebruikt.
-   * Een optioneel `com.adobe.idp.Document` object dat de instellingen bevat die moeten worden toegepast tijdens het genereren van het PDF-document. Als deze informatie niet wordt verstrekt, worden de montages automatisch gekozen gebaseerd op de vorige drie parameters.
-   * Een optioneel `com.adobe.idp.Document` object dat metagegevens bevat die op het PDF-document moeten worden toegepast.
+   * Een object `java.lang.String` dat de URL bevat van het HTML-bestand dat moet worden omgezet.
+   * Een `java.lang.String`-object dat de instellingen voor het bestandstype bevat die in de conversie moeten worden gebruikt. Instellingen voor bestandstypen kunnen spinningsniveaus bevatten.
+   * Een `java.lang.String`-object dat de naam bevat van de beveiligingsinstellingen die moeten worden gebruikt.
+   * Een optioneel `com.adobe.idp.Document`-object dat instellingen bevat die moeten worden toegepast tijdens het genereren van het PDF-document. Als deze informatie niet wordt verstrekt, worden de montages automatisch gekozen gebaseerd op de vorige drie parameters.
+   * Een optioneel `com.adobe.idp.Document`-object dat metagegevens bevat die op het PDF-document moeten worden toegepast.
 
 1. Haal de resultaten op.
 
-   De `htmlToPDF2` methode retourneert een `HtmlToPdfResult` object dat het nieuwe PDF-document bevat dat is gegenereerd. Voer de volgende handelingen uit om het nieuwe PDF-document te verkrijgen:
+   De methode `htmlToPDF2` retourneert een `HtmlToPdfResult`-object dat het nieuwe PDF-document bevat dat is gegenereerd. Voer de volgende handelingen uit om het nieuwe PDF-document te verkrijgen:
 
-   * Roep de `HtmlToPdfResult` methode van het `getCreatedDocument` object aan. Hiermee wordt een `com.adobe.idp.Document` object geretourneerd.
-   * Roep de `com.adobe.idp.Document` methode van het `copyToFile` object aan om het PDF-document te extraheren van het object dat u in de vorige stap hebt gemaakt.
+   * Roep de methode `HtmlToPdfResult` van het object `getCreatedDocument` aan. Dit retourneert een `com.adobe.idp.Document`-object.
+   * Roep de methode `com.adobe.idp.Document` van het object `copyToFile` aan om het PDF-document te extraheren van het object dat in de vorige stap is gemaakt.
 
 **Zie ook**
 
@@ -362,20 +362,20 @@ HTML-inhoud converteren naar een PDF-document met de functie PDF API genereren (
 
    >[!NOTE]
    >
-   >Vervangen `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
+   >Vervang `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
 
 1. Maak een Generate PDF client.
 
-   * Maak een `GeneratePDFServiceClient` object met de standaardconstructor.
-   * Maak een `GeneratePDFServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`.) U hoeft het `lc_version` kenmerk niet te gebruiken. Geef dit echter op `?blob=mtom`.
-   * Maak een `System.ServiceModel.BasicHttpBinding` object door de waarde van het `GeneratePDFServiceClient.Endpoint.Binding` veld op te halen. Kiezen naar de geretourneerde waarde `BasicHttpBinding`.
-   * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
+   * Maak een `GeneratePDFServiceClient`-object met de standaardconstructor.
+   * Maak een `GeneratePDFServiceClient.Endpoint.Address`-object met de constructor `System.ServiceModel.EndpointAddress`. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`). U hoeft het `lc_version`-kenmerk niet te gebruiken. Geef `?blob=mtom` echter op.
+   * Maak een `System.ServiceModel.BasicHttpBinding`-object door de waarde van het veld `GeneratePDFServiceClient.Endpoint.Binding` op te halen. Cast de terugkeerwaarde aan `BasicHttpBinding`.
+   * Stel het veld `System.ServiceModel.BasicHttpBinding` van het object `MessageEncoding` in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam van het AEM aan het veld toe `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`.
-      * Wijs de bijbehorende wachtwoordwaarde aan het veld toe `GeneratePDFServiceClient.ClientCredentials.UserName.Password`.
-      * Wijs de constante waarde toe `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Wijs de constante waarde toe `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode`.
+      * Wijs de gebruikersnaam voor het AEM aan het veld `GeneratePDFServiceClient.ClientCredentials.UserName.UserName` toe.
+      * Wijs de overeenkomstige wachtwoordwaarde aan het gebied `GeneratePDFServiceClient.ClientCredentials.UserName.Password` toe.
+      * Wijs de constante waarde `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType` toe.
+      * Wijs de constante waarde `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode` toe.
 
 1. Haal de HTML-inhoud op die u naar een PDF-document wilt converteren.
 
@@ -383,21 +383,21 @@ HTML-inhoud converteren naar een PDF-document met de functie PDF API genereren (
 
 1. Zet de HTML-inhoud om in een PDF-document.
 
-   Converteer de HTML-inhoud naar een PDF-document door de methode van het `GeneratePDFServiceService` `HtmlToPDF2` object aan te roepen en geef de volgende waarden door:
+   Converteer de HTML-inhoud naar een PDF-document door de methode `HtmlToPDF2` van het object `GeneratePDFServiceService` aan te roepen en geef de volgende waarden door:
 
    * Een tekenreeks die de HTML-inhoud bevat die moet worden omgezet.
-   * Een `java.lang.String` object dat de instellingen voor het bestandstype bevat die moeten worden gebruikt bij de conversie.
+   * Een `java.lang.String`-object dat de instellingen voor het bestandstype bevat die in de conversie moeten worden gebruikt.
    * Een tekenreeksobject dat de beveiligingsinstellingen bevat die moeten worden gebruikt.
-   * Een optioneel `BLOB` object dat de instellingen bevat die moeten worden toegepast tijdens het genereren van het PDF-document.
-   * Een optioneel `BLOB` object dat metagegevens bevat die op het PDF-document moeten worden toegepast.
-   * Een uitvoerparameter van type `BLOB` die door de `CreatePDF2` methode wordt bevolkt. De `CreatePDF2` methode vult dit object met het omgezette document. (Deze parameterwaarde is alleen vereist voor aanroepen van een webservice.)
+   * Een optioneel `BLOB`-object dat instellingen bevat die moeten worden toegepast tijdens het genereren van het PDF-document.
+   * Een optioneel `BLOB`-object dat metagegevens bevat die op het PDF-document moeten worden toegepast.
+   * Een uitvoerparameter van type `BLOB` die door de `CreatePDF2` methode wordt bevolkt. Met de methode `CreatePDF2` wordt dit object gevuld met het omgezette document. (Deze parameterwaarde is alleen vereist voor aanroepen van een webservice.)
 
 1. Haal de resultaten op.
 
-   * Haal het geconverteerde PDF-document op door het `BLOB` veld van het `MTOM` object toe te wijzen aan een bytearray. De bytearray vertegenwoordigt het geconverteerde PDF-document. Zorg ervoor dat u het `BLOB` object gebruikt als uitvoerparameter voor de `HtmlToPDF2` methode.
-   * Maak een `System.IO.FileStream` object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het geconverteerde PDF-document vertegenwoordigt.
-   * Maak een `System.IO.BinaryWriter` object door de constructor ervan aan te roepen en het `System.IO.FileStream` object door te geven.
-   * Schrijf de inhoud van de bytearray naar een PDF-bestand door de methode van het `System.IO.BinaryWriter` `Write` object aan te roepen en de bytearray door te geven.
+   * Haal het geconverteerde PDF-document op door het veld `BLOB` van het object `MTOM` toe te wijzen aan een bytearray. De bytearray vertegenwoordigt het geconverteerde PDF-document. Zorg ervoor dat u het object `BLOB` gebruikt dat als uitvoerparameter voor de methode `HtmlToPDF2` wordt gebruikt.
+   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het geconverteerde PDF-document vertegenwoordigt.
+   * Maak een `System.IO.BinaryWriter`-object door de constructor ervan aan te roepen en het object `System.IO.FileStream` door te geven.
+   * Schrijf de inhoud van de bytearray naar een PDF-bestand door de methode `Write` van het object `System.IO.BinaryWriter` aan te roepen en de bytearray door te geven.
 
 **Zie ook**
 
@@ -413,9 +413,9 @@ In deze sectie wordt beschreven hoe u met de API voor het genereren van PDF Java
 
 >[!NOTE]
 >
->Zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63)voor meer informatie over de service PDF genereren.
+>Zie [Referentiehandleiding voor services voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63) voor meer informatie over de service PDF genereren.
 
-### Overzicht van de stappen {#summary_of_steps-2}
+### Overzicht van stappen {#summary_of_steps-2}
 
 Voer de volgende stappen uit om een PDF-document te converteren naar een van de ondersteunde typen:
 
@@ -431,7 +431,7 @@ Neem de benodigde bestanden op in uw ontwikkelingsproject. Als u een clienttoepa
 
 **Een PDF-client genereren**
 
-Voordat u met programmacode een bewerking PDF genereren kunt uitvoeren, moet u een serviceclient PDF genereren maken. Als u de Java API gebruikt, maakt u een `GeneratePdfServiceClient` object. Als u de webservice-API gebruikt, maakt u een `GeneratePDFServiceService` object.
+Voordat u met programmacode een bewerking PDF genereren kunt uitvoeren, moet u een serviceclient PDF genereren maken. Als u de Java API gebruikt, maakt u een `GeneratePdfServiceClient`-object. Als u de webservice-API gebruikt, maakt u een `GeneratePDFServiceService`-object.
 
 **Het te converteren PDF-document ophalen**
 
@@ -467,31 +467,31 @@ Een PDF-document converteren naar een RTF-bestand met de Generate PDF API (Java)
 
 1. Maak een Generate PDF client.
 
-   Maak een `GeneratePdfServiceClient` object door de constructor ervan te gebruiken en een `ServiceClientFactory` object door te geven dat verbindingseigenschappen bevat.
+   Maak een `GeneratePdfServiceClient`-object door de constructor ervan te gebruiken en een `ServiceClientFactory`-object door te geven dat verbindingseigenschappen bevat.
 
 1. Hiermee haalt u het te converteren PDF-document op.
 
-   * Maak een `java.io.FileInputStream` object dat staat voor het PDF-document dat u wilt converteren met behulp van de constructor. Geef een tekenreekswaarde door die de locatie van het PDF-document aangeeft.
-   * Maak een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en het `java.io.FileInputStream` object door te geven.
+   * Maak een `java.io.FileInputStream`-object dat staat voor het PDF-document dat u wilt converteren met de constructor ervan. Geef een tekenreekswaarde door die de locatie van het PDF-document aangeeft.
+   * Maak een `com.adobe.idp.Document`-object door de constructor ervan te gebruiken en het object `java.io.FileInputStream` door te geven.
 
 1. Converteer het PDF-document.
 
-   Roep de methode van het `GeneratePdfServiceClient` `exportPDF2` object aan en geef de volgende waarden door:
+   Roep de methode `exportPDF2` van het object `GeneratePdfServiceClient` aan en geef de volgende waarden door:
 
-   * Een `com.adobe.idp.Document` object dat staat voor het PDF-bestand dat moet worden geconverteerd.
-   * Een `java.lang.String` object dat de naam bevat van het bestand dat moet worden omgezet.
-   * Een `java.lang.String` object dat de naam van de Adobe PDF-instellingen bevat.
-   * Een `ConvertPDFFormatType` object dat het doelbestandstype voor de conversie opgeeft.
-   * Een optioneel `com.adobe.idp.Document` object dat de instellingen bevat die moeten worden toegepast tijdens het genereren van het PDF-document.
+   * Een `com.adobe.idp.Document`-object dat het te converteren PDF-bestand vertegenwoordigt.
+   * Een object `java.lang.String` dat de naam bevat van het bestand dat moet worden omgezet.
+   * Een object `java.lang.String` dat de naam van de Adobe PDF-instellingen bevat.
+   * Een object `ConvertPDFFormatType` dat het doelbestandstype voor de conversie opgeeft.
+   * Een optioneel `com.adobe.idp.Document`-object dat instellingen bevat die moeten worden toegepast tijdens het genereren van het PDF-document.
 
-   De `exportPDF2` methode retourneert een `ExportPDFResult` object dat het omgezette bestand bevat.
+   De methode `exportPDF2` retourneert een `ExportPDFResult`-object dat het omgezette bestand bevat.
 
 1. Converteer het PDF-document.
 
    Voer de volgende handelingen uit om het nieuwe bestand te verkrijgen:
 
-   * Roep de `ExportPDFResult` methode van het `getConvertedDocument` object aan. Hiermee wordt een `com.adobe.idp.Document` object geretourneerd.
-   * Roep de `com.adobe.idp.Document` methode van het `copyToFile` object aan om het nieuwe document te extraheren.
+   * Roep de methode `ExportPDFResult` van het object `getConvertedDocument` aan. Dit retourneert een `com.adobe.idp.Document`-object.
+   * Roep de methode `com.adobe.idp.Document` van het object `copyToFile` aan om het nieuwe document te extraheren.
 
 **Zie ook**
 
@@ -513,46 +513,46 @@ Een PDF-document converteren naar een RTF-bestand met de API (webservice) voor g
 
    >[!NOTE]
    >
-   >Vervangen `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
+   >Vervang `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
 
 1. Maak een Generate PDFf client.
 
-   * Maak een `GeneratePDFServiceClient` object met de standaardconstructor.
-   * Maak een `GeneratePDFServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`.) U hoeft het `lc_version` kenmerk niet te gebruiken. Geef dit echter op `?blob=mtom`.
-   * Maak een `System.ServiceModel.BasicHttpBinding` object door de waarde van het `GeneratePDFServiceClient.Endpoint.Binding` veld op te halen. Kiezen naar de geretourneerde waarde `BasicHttpBinding`.
-   * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
+   * Maak een `GeneratePDFServiceClient`-object met de standaardconstructor.
+   * Maak een `GeneratePDFServiceClient.Endpoint.Address`-object met de constructor `System.ServiceModel.EndpointAddress`. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`). U hoeft het `lc_version`-kenmerk niet te gebruiken. Geef `?blob=mtom` echter op.
+   * Maak een `System.ServiceModel.BasicHttpBinding`-object door de waarde van het veld `GeneratePDFServiceClient.Endpoint.Binding` op te halen. Cast de terugkeerwaarde aan `BasicHttpBinding`.
+   * Stel het veld `System.ServiceModel.BasicHttpBinding` van het object `MessageEncoding` in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam van het AEM aan het veld toe `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`.
-      * Wijs de bijbehorende wachtwoordwaarde aan het veld toe `GeneratePDFServiceClient.ClientCredentials.UserName.Password`.
-      * Wijs de constante waarde toe `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Wijs de constante waarde toe `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode`.
+      * Wijs de gebruikersnaam voor het AEM aan het veld `GeneratePDFServiceClient.ClientCredentials.UserName.UserName` toe.
+      * Wijs de overeenkomstige wachtwoordwaarde aan het gebied `GeneratePDFServiceClient.ClientCredentials.UserName.Password` toe.
+      * Wijs de constante waarde `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType` toe.
+      * Wijs de constante waarde `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode` toe.
 
 1. Hiermee haalt u het te converteren PDF-document op.
 
-   * Maak een `BLOB` object met de constructor ervan. Met dit `BLOB` object wordt een geconverteerd PDF-document opgeslagen.
-   * Maak een `System.IO.FileStream` object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het PDF-document en de modus waarin het bestand moet worden geopend, vertegenwoordigt.
-   * Maak een bytearray waarin de inhoud van het `System.IO.FileStream` object wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de `System.IO.FileStream` eigenschap van het `Length` object op te halen.
-   * Vul de bytearray met streamgegevens door de methode van het `System.IO.FileStream` `Read` object aan te roepen en de bytearray, de startpositie en de lengte van de stream door te geven om te lezen.
-   * Vul het `BLOB` object door de inhoud van de bytearray aan de `MTOM` eigenschap toe te wijzen.
+   * Maak een `BLOB`-object met de constructor ervan. Met het object `BLOB` wordt een geconverteerd PDF-document opgeslagen.
+   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het PDF-document en de modus waarin het bestand moet worden geopend, vertegenwoordigt.
+   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `System.IO.FileStream` van het object `Length` op te halen.
+   * Vul de bytearray met streamgegevens door de methode `Read` van het object `System.IO.FileStream` aan te roepen en de bytearray, de startpositie en de lengte van de stream door te geven om te lezen.
+   * Vul het `BLOB`-object door aan de eigenschap `MTOM` de inhoud van de bytearray toe te wijzen.
 
 1. Converteer het PDF-document.
 
-   Roep de methode van het `GeneratePDFServiceServiceWse` `ExportPDF2` object aan en geef de volgende waarden door:
+   Roep de methode `ExportPDF2` van het object `GeneratePDFServiceServiceWse` aan en geef de volgende waarden door:
 
-   * Een `BLOB` object dat staat voor het PDF-bestand dat moet worden geconverteerd.
+   * Een `BLOB`-object dat het te converteren PDF-bestand vertegenwoordigt.
    * Een tekenreeks die de padnaam bevat van het bestand dat moet worden omgezet.
-   * Een `java.lang.String` object dat de bestandslocatie opgeeft.
+   * Een `java.lang.String`-object dat de bestandslocatie opgeeft.
    * Een tekenreeksobject dat het doelbestandstype voor de conversie opgeeft. Geef het volgende op `RTF`.
-   * Een optioneel `BLOB` object dat de instellingen bevat die moeten worden toegepast tijdens het genereren van het PDF-document.
-   * Een uitvoerparameter van type `BLOB` die door de `ExportPDF2` methode wordt bevolkt. De `ExportPDF2` methode vult dit object met het omgezette document. (Deze parameterwaarde is alleen vereist voor aanroepen van een webservice.)
+   * Een optioneel `BLOB`-object dat instellingen bevat die moeten worden toegepast tijdens het genereren van het PDF-document.
+   * Een uitvoerparameter van type `BLOB` die door de `ExportPDF2` methode wordt bevolkt. Met de methode `ExportPDF2` wordt dit object gevuld met het omgezette document. (Deze parameterwaarde is alleen vereist voor aanroepen van een webservice.)
 
 1. Sla het geconverteerde bestand op.
 
-   * Haal het omgezette RTF-document op door het `BLOB` `MTOM` objectveld aan een bytearray toe te wijzen. De bytearray vertegenwoordigt het omgezette RTF-document. Zorg ervoor dat u het `BLOB` object gebruikt als uitvoerparameter voor de `ExportPDF2` methode.
-   * Maak een `System.IO.FileStream` object door de constructor ervan aan te roepen. Geef een tekenreekswaarde door die de locatie van het RTF-bestand vertegenwoordigt.
-   * Maak een `System.IO.BinaryWriter` object door de constructor ervan aan te roepen en het `System.IO.FileStream` object door te geven.
-   * Schrijf de inhoud van de bytearray naar een RTF-bestand door de methode van het `System.IO.BinaryWriter` `Write` object aan te roepen en de bytearray door te geven.
+   * Haal het omgezette RTF-document op door het `BLOB`-veld van het object `MTOM` toe te wijzen aan een bytearray. De bytearray vertegenwoordigt het omgezette RTF-document. Zorg ervoor dat u het object `BLOB` gebruikt dat als uitvoerparameter voor de methode `ExportPDF2` wordt gebruikt.
+   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen. Geef een tekenreekswaarde door die de locatie van het RTF-bestand vertegenwoordigt.
+   * Maak een `System.IO.BinaryWriter`-object door de constructor ervan aan te roepen en het object `System.IO.FileStream` door te geven.
+   * Schrijf de inhoud van de bytearray naar een RTF-bestand door de methode `Write` van het object `System.IO.BinaryWriter` aan te roepen en de bytearray door te geven.
 
 **Zie ook**
 
@@ -576,13 +576,13 @@ In dit gedeelte wordt ook het volgende uitgelegd:
 
 De service PDF genereren converteert oorspronkelijke bestandsindelingen door de toepassing aan te roepen die is gekoppeld aan de bestandsindeling en vervolgens te communiceren met de toepassing om het document af te drukken met de standaardprinter. De standaardprinter moet zijn ingesteld als de Adobe PDF-printer.
 
-In deze illustratie worden de componenten en stuurprogramma&#39;s weergegeven die bij de ondersteuning van native toepassingen betrokken zijn. Ook worden de XML-grammen genoemd die de interacties beïnvloeden.
+In deze illustratie worden de componenten en stuurprogramma&#39;s weergegeven die zijn betrokken bij native toepassingsondersteuning. Ook worden de XML-grammen genoemd die de interacties beïnvloeden.
 
 Interacties van componenten voor conversie van native bestanden
 
 In dit document wordt de term *native toepassing* gebruikt om aan te geven welke toepassing wordt gebruikt om een native bestandsindeling te maken, zoals Microsoft Word.
 
-*AppMon* is een ondernemingscomponent die met een inheemse toepassing op dezelfde manier interactie aangaat als een gebruiker door de dialoogdozen zou navigeren die door die toepassing worden voorgesteld. De grammars van XML die door AppMon worden gebruikt om een toepassing, zoals Microsoft Word, op te dragen om een dossier te openen en te drukken impliceren deze opeenvolgende taken:
+** AppMonis een ondernemingscomponent die met een inheemse toepassing op de zelfde manier interactie aangaat een gebruiker door de dialoogdozen navigeert die door die toepassing worden voorgesteld. De grammars van XML die door AppMon worden gebruikt om een toepassing, zoals Microsoft Word, op te dragen om een dossier te openen en te drukken impliceren deze opeenvolgende taken:
 
 1. Het bestand openen door Bestand > Openen te selecteren
 1. Ervoor zorgen dat het dialoogvenster Openen wordt weergegeven; zo niet, de fout afhandelen
@@ -595,7 +595,7 @@ AppMon gebruikt standaard Win32 APIs om met derdetoepassingen in wisselwerking t
 
 Vanwege een beperking met deze Win32 APIs, kan AppMon deze gebeurtenissen UI aan sommige specifieke soorten vensters, zoals floating menu-bars (die in sommige toepassingen zoals TextPad worden gevonden), en bepaalde soorten dialogen niet verzenden de waarvan inhoud niet kan worden teruggewonnen gebruikend Win32 APIs.
 
-Een zwevende menubalk kan gemakkelijk visueel worden geïdentificeerd. het is echter mogelijk dat de speciale soorten dialogen niet door visuele inspectie kunnen worden geïdentificeerd . U zou een derdetoepassing zoals Microsoft Spy++ (deel van de Microsoft Visuele C++ ontwikkelomgeving) of zijn gelijkwaardige WinID (die gratis van kosten van [https://www.dennisbabkin.com/php/download.php?what=WinID](https://www.dennisbabkin.com/php/download.php?what=WinID)kan worden gedownload) vereisen om een dialoog te onderzoeken om te bepalen als AppMon met het gebruikend standaardWin32 APIs zou kunnen in wisselwerking staan.
+Een zwevende menubalk kan gemakkelijk visueel worden geïdentificeerd. het is echter mogelijk dat de speciale soorten dialogen niet door visuele inspectie kunnen worden geïdentificeerd . U zou een derdetoepassing zoals Microsoft Spy++ (deel van de ontwikkelomgeving van Microsoft Visual C++) of zijn gelijkwaardige WinID (die van [https://www.dennisbabkin.com/php/download.php?what=WinID](https://www.dennisbabkin.com/php/download.php?what=WinID)) kan worden gedownload om een dialoog te onderzoeken om te bepalen als AppMon met het het gebruiken van standaardWin32 APIs zou kunnen in wisselwerking staan.
 
 Als WinID de dialooginhoud zoals tekst, subvensters, vensterklasse ID, etc. kan halen, dan zou AppMon het zelfde ook kunnen doen.
 
@@ -613,12 +613,12 @@ In deze tabel wordt het type informatie weergegeven dat wordt gebruikt bij het a
   <tr>
    <td><p>Administratieve instellingen </p></td>
    <td><p>Hier vindt u PDF-instellingen, beveiligingsinstellingen en instellingen voor het bestandstype. </p><p>Instellingen voor bestandstypen koppelen bestandsextensies aan de corresponderende native toepassingen. Instellingen voor bestandstypen geven ook instellingen voor native toepassingen op die worden gebruikt om eigen bestanden af te drukken. </p></td>
-   <td><p>Als u instellingen voor een reeds ondersteunde native toepassing wilt wijzigen, stelt de systeembeheerder de instellingen voor bestandstypen in de beheerconsole in. </p><p>Als u ondersteuning voor een nieuwe eigen bestandsindeling wilt toevoegen, moet u het bestand handmatig bewerken. (Zie Ondersteuning <a href="converting-file-formats-pdf.md#adding-or-modifying-support-for-a-native-file-format">toevoegen of wijzigen voor een eigen bestandsindeling</a>.) </p></td>
+   <td><p>Als u instellingen voor een reeds ondersteunde native toepassing wilt wijzigen, stelt de systeembeheerder de instellingen voor bestandstypen in de beheerconsole in. </p><p>Als u ondersteuning voor een nieuwe eigen bestandsindeling wilt toevoegen, moet u het bestand handmatig bewerken. (Zie <a href="converting-file-formats-pdf.md#adding-or-modifying-support-for-a-native-file-format">Ondersteuning voor een eigen bestandsindeling toevoegen of wijzigen</a>.) </p></td>
   </tr>
   <tr>
    <td><p>Script </p></td>
    <td><p>Hiermee geeft u interacties op tussen de service PDF genereren en een native toepassing. Dergelijke interacties leiden de toepassing gewoonlijk om een dossier aan de bestuurder van Adobe PDF te drukken. </p><p>Het script bevat instructies die de oorspronkelijke toepassing de opdracht geven specifieke dialoogvensters te openen en die specifieke reacties bieden op velden en knoppen in die dialoogvensters. </p></td>
-   <td><p>De service PDF genereren bevat scriptbestanden voor alle ondersteunde native toepassingen. U kunt deze bestanden wijzigen met een XML-bewerkingstoepassing.</p><p>Als u ondersteuning voor een nieuwe native toepassing wilt toevoegen, moet u een nieuw scriptbestand maken. (Zie Een XML-bestand met een extra dialoogvenster <a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">maken of wijzigen voor een native toepassing</a>.) </p></td>
+   <td><p>De service PDF genereren bevat scriptbestanden voor alle ondersteunde native toepassingen. U kunt deze bestanden wijzigen met een XML-bewerkingstoepassing.</p><p>Als u ondersteuning voor een nieuwe native toepassing wilt toevoegen, moet u een nieuw scriptbestand maken. (Zie <a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">Een XML-bestand voor een extra dialoogvenster maken of wijzigen voor een native toepassing</a>.) </p></td>
   </tr>
   <tr>
    <td><p>Instructies in het dialoogvenster Algemeen </p></td>
@@ -628,33 +628,33 @@ In deze tabel wordt het type informatie weergegeven dat wordt gebruikt bij het a
   <tr>
    <td><p>Instructies in het dialoogvenster Toepassingsspecifiek</p></td>
    <td><p>Geeft aan hoe moet worden gereageerd op toepassingsspecifieke dialoogvensters. </p><p>Het bestand dat deze informatie bevat, is appmon.<i>`[appname]'</i>.dialog.<i>`[locale]'</i>.xml (bijvoorbeeld appmon.word.en_US.xml).</p></td>
-   <td><p>Wijzig dit bestand niet. </p><p>Zie <a href="converting-file-formats-pdf.md#creating_or_modifying_an_additional_dialog_xml_file_for_a_native_application">Een XML-bestand voor een native toepassing maken of wijzigen als u dialoogvensterinstructies voor een nieuwe native toepassing</a>wilt toevoegen.</p></td>
+   <td><p>Wijzig dit bestand niet. </p><p>Zie <a href="converting-file-formats-pdf.md#creating_or_modifying_an_additional_dialog_xml_file_for_a_native_application">Een XML-bestand voor een native toepassing maken of wijzigen als u dialoogvensterinstructies voor een nieuwe native toepassing wilt toevoegen.</a></p></td>
   </tr>
   <tr>
    <td><p>Aanvullende toepassingsspecifieke dialoogvensterinstructies </p></td>
    <td><p>Hiermee geeft u overschrijvingen en toevoegingen aan de instructies in het specifieke dialoogvenster voor de toepassing op. De sectie bevat een voorbeeld van dergelijke informatie. </p><p>Het bestand dat deze informatie bevat, is appmon.<i>`[appname]'</i>.adding.<i>`[locale]'</i>.xml. Een voorbeeld is appmon.adding.nl_NL.xml.</p></td>
-   <td><p>Bestanden van dit type kunnen worden gemaakt en gewijzigd met behulp van een XML-bewerkingstoepassing. (Zie Een XML-bestand met een extra dialoogvenster <a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">maken of wijzigen voor een native toepassing</a>.) </p><p><strong>Belangrijk</strong>: U moet extra toepassingsspecifieke dialoogvakinstructies voor elke inheemse toepassing creëren uw server zal steunen. </p></td>
+   <td><p>Bestanden van dit type kunnen worden gemaakt en gewijzigd met behulp van een XML-bewerkingstoepassing. (Zie <a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">Een XML-bestand voor een extra dialoogvenster maken of wijzigen voor een native toepassing</a>.) </p><p><strong>Belangrijk</strong>: U moet extra toepassingsspecifieke dialoogvakinstructies voor elke inheemse toepassing creëren uw server zal steunen. </p></td>
   </tr>
  </tbody>
 </table>
 
-### Over het script en het dialoogvenster in XML-bestanden {#about-the-script-and-dialog-xml-files}
+### Over het script en de dialoogvenster-XML-bestanden {#about-the-script-and-dialog-xml-files}
 
 In XML-scriptbestanden wordt de service PDF genereren gebruikt om door de dialoogvensters van toepassingen te navigeren, net zoals een gebruiker door de dialoogvensters van de toepassing zou navigeren. ScriptXML-bestanden zorgen er ook voor dat de service PDF genereren reageert op dialoogvensters door handelingen uit te voeren zoals het indrukken van knoppen, het selecteren of deselecteren van selectievakjes of het selecteren van menu-items.
 
 Dialoogbestanden in XML-bestanden reageren daarentegen gewoon op dialoogvensters met dezelfde typen handelingen als in XML-scriptbestanden.
 
-#### Dialoogvenster en terminologie van vensterelementen {#dialog-box-and-window-element-terminology}
+#### Dialoogvenster en vensterelementterminologie {#dialog-box-and-window-element-terminology}
 
 Deze sectie en de volgende sectie gebruiken verschillende terminologie voor dialoogvakjes en de componenten die zij, afhankelijk van het perspectief bevatten dat wordt beschreven. De componenten van dialoogvensters zijn punten zoals knopen, gebieden, en combovakjes.
 
-Wanneer deze sectie en de volgende sectie dialoogvensters en hun componenten vanuit het perspectief van een gebruiker beschrijven, worden termen als *dialoogvenster*, *knop*, *veld* en *keuzelijst* met invoervak gebruikt.
+Wanneer deze sectie en de volgende sectie dialoogvensters en hun componenten vanuit het perspectief van een gebruiker beschrijven, worden termen zoals *dialog box*, *button*, *field* en *combo box* gebruikt.
 
-Wanneer deze sectie en de volgende sectie dialoogvensters en hun componenten vanuit het perspectief van hun interne vertegenwoordiging beschrijven, wordt de term *vensterelement* gebruikt. De interne representatie van vensterelementen is een hiërarchie, waarbij elke instantie van een vensterelement wordt aangeduid met labels. De instantie van het vensterelement beschrijft ook zijn fysieke kenmerken en gedrag.
+Wanneer deze sectie en de volgende sectie dialoogdozen en hun componenten vanuit het perspectief van hun interne vertegenwoordiging beschrijven, wordt de term *vensterelement* gebruikt. De interne representatie van vensterelementen is een hiërarchie, waarbij elke instantie van een vensterelement wordt aangeduid met labels. De instantie van het vensterelement beschrijft ook zijn fysieke kenmerken en gedrag.
 
 Vanuit het perspectief van de gebruiker vertonen de dialoogvensters en hun componenten verschillende gedragingen, waarbij bepaalde elementen van dialoogvensters verborgen zijn totdat ze worden geactiveerd. Vanuit het perspectief van de interne vertegenwoordiging, bestaat zulk een kwestie van gedrag niet. De interne representatie van een dialoogvenster ziet er bijvoorbeeld hetzelfde uit als de componenten die het bevat, met als uitzondering dat de componenten in het dialoogvenster zijn genest.
 
-Deze sectie beschrijft de elementen van XML die AppMon van instructies voorzien. Deze elementen hebben namen zoals het `dialog` element en het `window` element. In dit document wordt een font met vaste spatiëring gebruikt om XML-elementen te onderscheiden. Het `dialog` element identificeert een dialoogdoos die een het manuscriptdossier van XML kan veroorzaken om, of opzettelijk of onbedoeld worden getoond. Het `window` element identificeert een vensterelement (dialoogvenster of de componenten van een dialoogvenster).
+Deze sectie beschrijft de elementen van XML die AppMon van instructies voorzien. Deze elementen hebben namen zoals het `dialog` element en het `window` element. In dit document wordt een font met vaste spatiëring gebruikt om XML-elementen te onderscheiden. Het element `dialog` identificeert een dialoogdoos die een het manuscriptdossier van XML kan veroorzaken om worden getoond, of opzettelijk of onbedoeld. Het element `window` identificeert een vensterelement (dialoogdoos of de componenten van een dialoogdoos).
 
 #### Hiërarchie {#hierarchy}
 
@@ -666,7 +666,7 @@ Hiërarchie van script en dialoogvenster XML
 
 #### Script XML-bestanden {#script-xml-files}
 
-Een *script-XML-bestand* geeft een reeks stappen aan die de native toepassing de opdracht geven naar bepaalde vensterelementen te navigeren en vervolgens reacties op die elementen te leveren. De meeste reacties zijn tekst of toetsaanslagen die overeenkomen met de invoer die een gebruiker zou invoeren in een veld, keuzelijst met invoervak of knop in het bijbehorende dialoogvenster.
+Een *script-XML-bestand* geeft een reeks stappen aan die de native toepassing sturen om naar bepaalde vensterelementen te navigeren en vervolgens reacties op die elementen te leveren. De meeste reacties zijn tekst of toetsaanslagen die overeenkomen met de invoer die een gebruiker zou invoeren in een veld, keuzelijst met invoervak of knop in het bijbehorende dialoogvenster.
 
 Met de ondersteuning van de service PDF genereren voor XML-scriptbestanden wordt beoogd een native toepassing te laten afdrukken. ScriptXML-bestanden kunnen echter worden gebruikt om elke taak uit te voeren die een gebruiker kan uitvoeren bij het werken met de dialoogvensters van de native toepassing.
 
@@ -676,11 +676,11 @@ Naast stappen die opeenvolgend zijn, worden de instructies binnen een stap ook u
 
 Elke stap in een XML-scriptbestand identificeert het vensterelement dat wordt weergegeven als de instructies van de stap correct zijn uitgevoerd. Als tijdens het uitvoeren van een scriptstap een onverwacht dialoogvenster wordt weergegeven, zoekt de dienst PDF genereren de XML-bestanden van het dialoogvenster zoals beschreven in de volgende sectie.
 
-#### Dialoogvenster XML-bestanden {#dialog-xml-files}
+#### Dialoogvenster-XML-bestanden {#dialog-xml-files}
 
 Wanneer u native toepassingen uitvoert, worden verschillende dialoogvensters weergegeven, ongeacht of de native toepassingen zich in een zichtbare of onzichtbare modus bevinden. De dialoogvensters kunnen worden gegenereerd door het besturingssysteem of door de toepassing zelf. Wanneer native toepassingen worden uitgevoerd onder controle van de Generate PDF service, worden de dialoogvensters van het systeem en de native toepassing weergegeven in een onzichtbaar venster.
 
-In een XML-bestand *van het* dialoogvenster wordt aangegeven hoe de service PDF genereren reageert op dialoogvensters van het systeem of de oorspronkelijke toepassing. Met de XML-bestanden in het dialoogvenster Genereren kan de service PDF genereren reageren op dialoogvensters die niet worden gevraagd, zodat het conversieproces wordt vergemakkelijkt.
+Een *dialoogvenster-XML-bestand* geeft aan hoe de Generate PDF-service reageert op dialoogvensters van het systeem of de native toepassing. Met de XML-bestanden in het dialoogvenster Genereren kan de service PDF genereren reageren op dialoogvensters die niet worden gevraagd, zodat het conversieproces wordt vergemakkelijkt.
 
 Wanneer het systeem of de native toepassing een dialoogvenster weergeeft dat niet wordt afgehandeld door het XML-scriptbestand dat momenteel wordt uitgevoerd, worden de XML-bestanden van het dialoogvenster Genereren in deze volgorde doorzocht, en wordt gestopt wanneer er een overeenkomst wordt gevonden:
 
@@ -714,34 +714,34 @@ Als de kenmerken een bijschrift niet identificeren, kunt u in plaats daarvan een
 
 Wees op de hoogte van deze problemen:
 
-* Microsoft Spy++ geeft bijschriften weer met behulp van een en-teken (&amp;) om de hot key van het bijschrift te identificeren. Zo wordt bijvoorbeeld in Spry+ het bijschrift voor één dialoogvenster Afdrukken weergegeven als `Pri&nt`, wat aangeeft dat de sneltoets *n* is. Titels van bijschriften in script- en dialoogvenster-XML-bestanden moeten ampersands weglaten.
-* Sommige bijschriften bevatten regeleinden. Met de service PDF genereren kunnen geen regeleinden worden geïdentificeerd. Als een bijschrift een regeleinde bevat, neemt u genoeg van het bijschrift op om het te onderscheiden van de andere menu-items en gebruikt u vervolgens reguliere expressies voor het weggelaten deel. Een voorbeeld is ( `^Long caption title$`). (Zie Reguliere expressies [gebruiken in bijschriftkenmerken](converting-file-formats-pdf.md#using-regular-expressions-in-caption-attributes).)
-* Gebruik tekeneenheden (ook wel escape-reeksen genoemd) voor gereserveerde XML-tekens. Gebruik bijvoorbeeld `&` voor ampersanden `<` en `>` voor kleiner dan en groter dan symbolen, `&apos;` voor apostroffen en `&quot;` voor aanhalingstekens.
+* Microsoft Spy++ geeft bijschriften weer met behulp van een en-teken (&amp;) om de hot key van het bijschrift te identificeren. Spy++ geeft bijvoorbeeld het bijschrift voor één dialoogvenster Afdrukken weer als `Pri&nt`, wat aangeeft dat de sneltoets *n* is. Titels van bijschriften in script- en dialoogvenster-XML-bestanden moeten ampersands weglaten.
+* Sommige bijschriften bevatten regeleinden. Met de service PDF genereren kunnen geen regeleinden worden geïdentificeerd. Als een bijschrift een regeleinde bevat, neemt u genoeg van het bijschrift op om het te onderscheiden van de andere menu-items en gebruikt u vervolgens reguliere expressies voor het weggelaten deel. Een voorbeeld is ( `^Long caption title$`). (Zie [Reguliere expressies gebruiken in bijschriftkenmerken](converting-file-formats-pdf.md#using-regular-expressions-in-caption-attributes).)
+* Gebruik tekeneenheden (ook wel escape-reeksen genoemd) voor gereserveerde XML-tekens. Gebruik bijvoorbeeld `&` voor ampersands, `<` en `>` voor kleiner dan en groter dan symbolen, `&apos;` voor apostroffen en `&quot;` voor aanhalingstekens.
 
 Als u aan dialoog of manuscriptdossiers van XML van plan bent te werken, zou u de toepassing Microsoft Spy++ moeten installeren.
 
-#### Het verpakken van dialoogvenster- en scriptbestanden opheffen {#unpackaging-the-dialog-and-script-files}
+#### Het verpakken van dialoog en manuscriptdossiers {#unpackaging-the-dialog-and-script-files}
 
 Het dialoogvenster- en scriptbestand bevinden zich in het bestand appmondata.jar. Voordat u een van deze bestanden kunt wijzigen of nieuwe script- of dialoogbestanden kunt toevoegen, moet u het pakket van dit JAR-bestand opheffen. Stel dat u ondersteuning wilt toevoegen voor de toepassing EditPlus. U maakt twee XML-bestanden met de namen appmon.editplus.script.en_US.xml en appmon.editplus.script.adding.nl_NL.xml. Deze XML-scripts moeten op twee locaties aan het bestand adobe-appmondata.jar worden toegevoegd, zoals hieronder wordt aangegeven:
 
 * adobe-livecycle-native-jreliëf-x86_win32.ear > adobe-Native2PDFSvc.war\WEB-INF\lib > adobe-native.jar > Native2PDFSvc-native.jar\bin > adobe-appmondata.jar\com\adobe\appmon. Het bestand adobe-livecycle-native-jreliëf-x86_win32.ear bevindt zich in de exportmap op `[AEM forms install directory]\configurationManager`. (Als AEM Forms wordt geïmplementeerd op een andere J2EE-toepassingsserver, vervangt u het bestand adobe-livecycle-native-jreliëf-x86_win32.ear door het EAR-bestand dat overeenkomt met uw J2EE-toepassingsserver.)
-* adobe-generatepdf-dsc.jar > adobe-appmondata.jar\com\adobe\appmon (het bestand adobe-appmondata.jar bevindt zich in het bestand adobe-generatepdf-dsc.jar). Het bestand adobe-generatepdf-dsc.jar bevindt zich in de `[AEM forms install directory]\deploy` map.
+* adobe-generatepdf-dsc.jar > adobe-appmondata.jar\com\adobe\appmon (het bestand adobe-appmondata.jar bevindt zich in het bestand adobe-generatepdf-dsc.jar). Het bestand adobe-generatepdf-dsc.jar bevindt zich in de map `[AEM forms install directory]\deploy`.
 
 Nadat u deze XML-bestanden aan het bestand adobe-appmondata.jar hebt toegevoegd, moet u de component GeneratePDF opnieuw gebruiken. Voer de volgende taken uit om XML-bestanden voor dialoog en script toe te voegen aan het bestand adobe-appmondata.jar:
 
 1. Open met een hulpprogramma zoals WinZip of WinRAR het bestand adobe-livecycle-native-jreliëf-x86_win32.earfile > adobe-Native2PDFSvc.war\WEB-INF\lib > adobe-native.jar > Native2PDFSvc-native.jar\bin > adobe-appmondata.jar.
-1. Voeg het dialoogvenster- en scriptbestand XML toe aan het bestand appmondata.jar of wijzig bestaande XML-bestanden in dit bestand. (Zie Een script-XML-bestand [maken of wijzigen voor een native](converting-file-formats-pdf.md#creating-or-modifying-a-script-xml-file-for-a-native-application)toepassing en een extra dialoogvenster-XML-bestand [maken of wijzigen voor een native toepassing](converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application).)
+1. Voeg het dialoogvenster- en scriptbestand XML toe aan het bestand appmondata.jar of wijzig bestaande XML-bestanden in dit bestand. (Zie [Een script-XML-bestand maken of wijzigen voor een native toepassing](converting-file-formats-pdf.md#creating-or-modifying-a-script-xml-file-for-a-native-application)en [Een extra dialoogvenster-XML-bestand maken of wijzigen voor een native toepassing](converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application).)
 1. Open adobe-generatepdf-dsc.jar > adobe-appmondata.jar met een hulpprogramma zoals WinZip of WinRAR.
-1. Voeg het dialoogvenster- en scriptbestand XML toe aan het bestand appmondata.jar of wijzig bestaande XML-bestanden in dit bestand. (Zie Een script-XML-bestand [maken of wijzigen voor een native](converting-file-formats-pdf.md#creating-or-modifying-a-script-xml-file-for-a-native-application)toepassing en een extra dialoogvenster-XML-bestand [maken of wijzigen voor een native toepassing](converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application).) Nadat u de XML-bestanden aan het bestand adobe-appmondata.jar hebt toegevoegd, plaatst u het nieuwe bestand adobe-appmondata.jar in het bestand adobe-generatepdf-dsc.jar.
-1. Als u ondersteuning hebt toegevoegd voor een extra eigen bestandsindeling, maakt u een systeemomgevingsvariabele die het pad van de toepassing aangeeft (zie Een omgevingsvariabele [maken om de oorspronkelijke toepassing](converting-file-formats-pdf.md#creating-an-environment-variable-to-locate-the-native-application)te vinden).
+1. Voeg het dialoogvenster- en scriptbestand XML toe aan het bestand appmondata.jar of wijzig bestaande XML-bestanden in dit bestand. (Zie [Een script-XML-bestand maken of wijzigen voor een native toepassing](converting-file-formats-pdf.md#creating-or-modifying-a-script-xml-file-for-a-native-application)en [Een extra dialoogvenster-XML-bestand maken of wijzigen voor een native toepassing](converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application).) Nadat u de XML-bestanden aan het bestand adobe-appmondata.jar hebt toegevoegd, plaatst u het nieuwe bestand adobe-appmondata.jar in het bestand adobe-generatepdf-dsc.jar.
+1. Als u ondersteuning hebt toegevoegd voor een extra eigen bestandsindeling, maakt u een systeemomgevingsvariabele die het pad van de toepassing aangeeft (zie [Een omgevingsvariabele maken om de native toepassing te vinden](converting-file-formats-pdf.md#creating-an-environment-variable-to-locate-the-native-application).)
 
 **De component GeneratePDF opnieuw implementeren**
 
 1. Meld u aan bij Workbench.
-1. Selecteer **Venster** > Weergaven **tonen** > **Componenten**. Met deze actie voegt u de weergave Componenten toe aan Workbench.
-1. Klik met de rechtermuisknop op de component GeneratePDF en selecteer vervolgens **Component** stoppen.
+1. Selecteer **Venster** > **Weergaven tonen** > **Componenten**. Met deze actie voegt u de weergave Componenten toe aan Workbench.
+1. Klik met de rechtermuisknop op de component GeneratePDF en selecteer **Component stoppen**.
 1. Wanneer de component is gestopt, klikt u met de rechtermuisknop en selecteert u Component verwijderen om deze te verwijderen.
-1. Klik met de rechtermuisknop op het pictogram **Componenten** en selecteer Component **** installeren.
+1. Klik met de rechtermuisknop op het pictogram **Components** en selecteer **Component installeren**.
 1. Blader naar het gewijzigde bestand adobe-generatepdf-dsc.jar, selecteer dit bestand en klik op Openen. Naast de component GeneratePDF wordt een rood vierkantje weergegeven.
 1. Breid de component GeneratePDF uit, selecteer de beschrijvers van de Dienst, en klik dan GeneratePDFService met de rechtermuisknop aan en selecteer de Dienst activeren.
 1. Voer in het dialoogvenster voor configuratie dat wordt weergegeven de toepasselijke configuratiewaarden in. Als u deze waarden leeg laat, worden standaardconfiguratiewaarden gebruikt.
@@ -749,11 +749,11 @@ Nadat u deze XML-bestanden aan het bestand adobe-appmondata.jar hebt toegevoegd,
 1. Breid Actieve Diensten uit. Er verschijnt een groene pijl naast de servicenaam als deze wordt uitgevoerd. Anders, is de dienst in een tegengehouden staat.
 1. Als de dienst in een tegengehouden staat is, klik de de dienstnaam met de rechtermuisknop aan en selecteer de Dienst van het Begin.
 
-### Een XML-scriptbestand voor een native toepassing maken of wijzigen {#creating-or-modifying-a-script-xml-file-for-a-native-application}
+### Een XML-scriptbestand maken of wijzigen voor een native toepassing {#creating-or-modifying-a-script-xml-file-for-a-native-application}
 
 Als u bestanden wilt doorsturen naar een nieuwe oorspronkelijke toepassing, moet u een XML-scriptbestand voor die toepassing maken. Als u de manier wilt wijzigen waarop de service PDF genereren werkt met een native toepassing die al wordt ondersteund, moet u het script voor die toepassing wijzigen.
 
-Het script bevat instructies die door de vensterelementen van de native toepassing navigeren en die specifieke reacties op die elementen leveren. Het bestand dat deze informatie bevat, is `appmon.`[toepassingsnaam]&quot; `.script.`[landinstelling]`.xml`. Een voorbeeld is appmon.notepad.script.en_US.xml.
+Het script bevat instructies die door de vensterelementen van de native toepassing navigeren en die specifieke reacties op die elementen leveren. Het bestand dat deze informatie bevat, is `appmon.`[toepassingsnaam]&quot;`.script.`[landinstelling]`.xml`. Een voorbeeld is appmon.notepad.script.en_US.xml.
 
 #### Stappen identificeren die het script moet uitvoeren {#identifying-steps-the-script-must-execute}
 
@@ -771,7 +771,7 @@ Gebruik Microsoft Spy++ om de identiteiten van de eigenschappen van het venstere
 
 #### Reguliere expressies gebruiken in bijschriftkenmerken {#using-regular-expressions-in-caption-attributes}
 
-U kunt reguliere expressies gebruiken in bijschriftspecificaties. De service PDF genereren gebruikt de `java.util.regex.Matcher` klasse om reguliere expressies te ondersteunen. Dit hulpprogramma ondersteunt de reguliere expressies die worden beschreven in `java.util.regex.Pattern`. (Ga naar de website van Java op [https://java.sun.com/j2se/1.4.2/docs/api/java/util/regex/Pattern.html](https://java.sun.com/j2se/1.4.2/docs/api/java/util/regex/Pattern.html).)
+U kunt reguliere expressies gebruiken in bijschriftspecificaties. De service PDF genereren gebruikt de klasse `java.util.regex.Matcher` om reguliere expressies te ondersteunen. Dat nut steunt de regelmatige uitdrukkingen die in `java.util.regex.Pattern` worden beschreven. (Ga naar de website van Java op [https://java.sun.com/j2se/1.4.2/docs/api/java/util/regex/Pattern.html](https://java.sun.com/j2se/1.4.2/docs/api/java/util/regex/Pattern.html).)
 
 **Reguliere expressie die de bestandsnaam bevat die aan Kladblok is toegevoegd in de banner Kladblok**
 
@@ -793,12 +793,12 @@ U kunt reguliere expressies gebruiken in bijschriftspecificaties. De service PDF
  </windowList>
 ```
 
-#### De elementen window en windowList ordenen {#ordering-the-window-and-windowlist-elements}
+#### De window- en windowList-elementen {#ordering-the-window-and-windowlist-elements} ordenen
 
-U dient de volgende elementen te ordenen `window` en `windowList` te bepalen:
+U moet de elementen `window` en `windowList` als volgt rangschikken:
 
-* Wanneer meerdere `window` elementen als onderliggende elementen in een `windowList` of `dialog` element worden weergegeven, ordent u die `window` elementen in aflopende volgorde, waarbij de lengte van de `caption` namen de positie in de volgorde aangeeft.
-* Wanneer meerdere `windowList` elementen in een `window` element voorkomen, moet u die `windowList` elementen in aflopende volgorde ordenen, waarbij de lengte van de `caption` kenmerken van het eerste `indexes/`element de positie in de volgorde aangeeft.
+* Wanneer de veelvoudige `window` elementen als kinderen in een `windowList` of `dialog` element verschijnen, orde die `window` elementen in dalende orde, met de lengten van `caption` namen die op de positie in de orde wijzen.
+* Wanneer meerdere `windowList`-elementen in een `window`-element worden weergegeven, moet u die `windowList`-elementen in aflopende volgorde rangschikken, waarbij de lengten van de `caption`-kenmerken van het eerste `indexes/`element de positie in de volgorde aangeven.
 
 **Vensterelementen in een dialoogvenster ordenen**
 
@@ -842,9 +842,9 @@ U dient de volgende elementen te ordenen `window` en `windowList` te bepalen:
  </windowList>
 ```
 
-### Een XML-bestand voor een extra dialoogvenster maken of wijzigen voor een native toepassing {#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application}
+### Een XML-bestand met een extra dialoogvenster maken of wijzigen voor een native toepassing {#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application}
 
-Als u een script maakt voor een native toepassing die voorheen niet werd ondersteund, moet u ook een extra XML-bestand voor het dialoogvenster voor die toepassing maken. Elke native toepassing die door AppMon wordt gebruikt, mag slechts één extra XML-bestand voor het dialoogvenster hebben. Het XML-bestand van het extra dialoogvenster is vereist, zelfs als er geen ongewenste dialoogvensters worden verwacht. Het aanvullende dialoogvenster moet ten minste één `window` element bevatten, zelfs als dat `window` element slechts een tijdelijke aanduiding is.
+Als u een script maakt voor een native toepassing die voorheen niet werd ondersteund, moet u ook een extra XML-bestand voor het dialoogvenster voor die toepassing maken. Elke native toepassing die door AppMon wordt gebruikt, mag slechts één extra XML-bestand voor het dialoogvenster hebben. Het XML-bestand van het extra dialoogvenster is vereist, zelfs als er geen ongewenste dialoogvensters worden verwacht. Het extra dialoogvenster moet minstens één `window`-element bevatten, zelfs als dat `window`-element slechts een tijdelijke aanduiding is.
 
 >[!NOTE]
 >
@@ -855,33 +855,33 @@ U kunt ook het XML-bestand met aanvullende dialoogvensters wijzigen voor een nat
 * Het XML-bestand van het dialoogvenster negeren voor een toepassing met een andere reactie
 * Een antwoord toevoegen aan een dialoogvenster dat niet wordt geactiveerd in het XML-bestand van het dialoogvenster voor die toepassing
 
-De bestandsnaam die een extra dialogXML-bestand aangeeft, is `appmon.[appname].addition.[locale].xml`. Een voorbeeld is appmon.excel.extension.nl_NL.xml.
+De bestandsnaam die een extra dialogXML-bestand identificeert, is `appmon.[appname].addition.[locale].xml`. Een voorbeeld is appmon.excel.extension.nl_NL.xml.
 
-De naam van het XML-bestand van het extra dialoogvenster moet de indeling gebruiken `appmon.[applicationname].addition.[locale].xml`, waarbij de *toepassingsnaam* exact moet overeenkomen met de toepassingsnaam die in het XML-configuratiebestand en in het script wordt gebruikt.
+De naam van het extra dossier van dialoogXML moet het formaat `appmon.[applicationname].addition.[locale].xml` gebruiken, waar *toepassingsnaam* precies de toepassingsnaam moet aanpassen die in het de configuratiedossier van XML en in het manuscript wordt gebruikt.
 
 >[!NOTE]
 >
->Geen van de generische toepassingen die in het configuratiebestand native2pdfconfig.xml zijn opgegeven, hebben een primair XML-bestand voor de dialoog. In de sectie Ondersteuning voor een eigen bestandsindeling [toevoegen of wijzigen](converting-file-formats-pdf.md#adding-or-modifying-support-for-a-native-file-format) worden dergelijke specificaties beschreven.
+>Geen van de generische toepassingen die in het configuratiebestand native2pdfconfig.xml zijn opgegeven, hebben een primair XML-bestand voor de dialoog. In de sectie [Ondersteuning voor een native bestandsindeling toevoegen of wijzigen](converting-file-formats-pdf.md#adding-or-modifying-support-for-a-native-file-format) worden dergelijke specificaties beschreven.
 
-U moet `windowList` elementen ordenen die als onderliggende elementen in een `window` element worden weergegeven. (Zie [De elementen](converting-file-formats-pdf.md#ordering-the-window-and-windowlist-elements)window en windowList ordenen.)
+U moet tot `windowList` elementen opdracht geven die als kinderen in een `window` element verschijnen. (Zie [Bezig met ordenen van de elementen window en windowList](converting-file-formats-pdf.md#ordering-the-window-and-windowlist-elements).)
 
-### Het algemene dialoogvenster-XML-bestand wijzigen {#modifying-the-general-dialog-xml-file}
+### Het algemene dialoogvenster-XML-bestand {#modifying-the-general-dialog-xml-file} wijzigen
 
 U kunt het algemene dialoogvenster-XML-bestand aanpassen om te reageren op dialoogvensters die door het systeem worden gegenereerd of om te reageren op dialoogvensters die door meerdere toepassingen worden gebruikt.
 
 #### Een filetype-item toevoegen in het XML-configuratiebestand {#adding-a-filetype-entry-in-the-xml-configuration-file}
 
-In deze procedure wordt uitgelegd hoe u het configuratiebestand voor de service PDF genereren kunt bijwerken en zo bestandstypen aan native toepassingen kunt koppelen. Om dit configuratiedossier bij te werken, moet u beleidsconsole gebruiken om de configuratiegegevens naar een dossier uit te voeren. De standaardbestandsnaam voor de configuratiegegevens is native2pdfconfig.xml.
+In deze procedure wordt uitgelegd hoe u het configuratiebestand van de service PDF genereren kunt bijwerken en zo bestandstypen aan native toepassingen kunt koppelen. Om dit configuratiedossier bij te werken, moet u beleidsconsole gebruiken om de configuratiegegevens naar een dossier uit te voeren. De standaardbestandsnaam voor de configuratiegegevens is native2pdfconfig.xml.
 
 **Het configuratiebestand van de PDF-service genereren bijwerken**
 
-1. Selecteer **Home** > **Services** > **Adobe PDF Generator** > **Configuration Files** en selecteer vervolgens **Export Configuration**.
-1. Wijzig zo nodig het `filetype-settings` element in het bestand native2pdfconfig.xml.
-1. Selecteer **Home** > **Services** > **Adobe PDF Generator** >**Configuration Files** en selecteer vervolgens **Import Configuration**. De configuratiegegevens worden geïmporteerd in de service PDF genereren en vervangen de vorige instellingen.
+1. Selecteer **Home** > **Services** > **Adobe PDF Generator** > **Configuration Files** en selecteer **Export Configuration**.
+1. Wijzig het `filetype-settings` element in het native2pdfconfig.xml- dossier, zoals nodig.
+1. Selecteer **Home** > **Services** > **Adobe PDF Generator** >**Configuration Files** en selecteer **Configuration** importeren. De configuratiegegevens worden geïmporteerd in de service PDF genereren en vervangen de vorige instellingen.
 
 >[!NOTE]
 >
->De naam van de toepassing wordt opgegeven als de waarde van het `GenericApp` attribuut van het `name` element. Deze waarde moet exact overeenkomen met de corresponderende naam die is opgegeven in het script dat u voor die toepassing ontwikkelt. Op dezelfde manier moet het `GenericApp` kenmerk van het `displayName` element exact overeenkomen met het bijschrift van het corresponderende `expectedWindow` venster van het script. Deze gelijkwaardigheid wordt geëvalueerd nadat eventuele reguliere expressies in de `displayName` kenmerken of `caption` kenmerken zijn omgezet.
+>De naam van de toepassing wordt opgegeven als de waarde van het `GenericApp`-kenmerk van het element `name`. Deze waarde moet exact overeenkomen met de corresponderende naam die is opgegeven in het script dat u voor die toepassing ontwikkelt. Op dezelfde manier moet het `GenericApp`-kenmerk van het element `displayName` exact overeenkomen met het bijschrift van het venster van het overeenkomstige script `expectedWindow`. Deze gelijkwaardigheid wordt geëvalueerd nadat reguliere expressies zijn opgelost die voorkomen in de kenmerken `displayName` of `caption`.
 
 In dit voorbeeld zijn de standaardconfiguratiegegevens van de Generate PDF-service gewijzigd om op te geven dat Kladblok (niet Microsoft Word) moet worden gebruikt voor het verwerken van bestanden met de bestandsextensie .txt. Vóór deze wijziging is Microsoft Word opgegeven als de oorspronkelijke toepassing die dergelijke bestanden moet verwerken.
 
@@ -910,7 +910,7 @@ In dit voorbeeld zijn de standaardconfiguratiegegevens van de Generate PDF-servi
 
 #### Een omgevingsvariabele maken om de oorspronkelijke toepassing te vinden {#creating-an-environment-variable-to-locate-the-native-application}
 
-Maak een omgevingsvariabele die de locatie opgeeft van het uitvoerbare bestand van de native toepassing. De variabele moet de indeling gebruiken `[applicationname]_PATH`, waarbij de *toepassingsnaam* exact moet overeenkomen met de toepassingsnaam in het XML-configuratiebestand en in het script, en waarbij het pad het pad naar het uitvoerbare bestand bevat met dubbele aanhalingstekens. Een voorbeeld van een dergelijke omgevingsvariabele is `Photoshop_PATH`.
+Maak een omgevingsvariabele die de locatie opgeeft van het uitvoerbare bestand van de native toepassing. De variabele moet de indeling `[applicationname]_PATH` gebruiken, waarbij *toepassingsnaam* precies moet overeenkomen met de toepassingsnaam die wordt gebruikt in het XML-configuratiebestand en in het script, en waarbij het pad het pad naar het uitvoerbare bestand bevat met dubbele aanhalingstekens. Een voorbeeld van een dergelijke omgevingsvariabele is `Photoshop_PATH`.
 
 Nadat u de nieuwe omgevingsvariabele hebt gemaakt, moet u de server opnieuw opstarten waarop de Genereren PDF-service is geïmplementeerd.
 
@@ -919,8 +919,8 @@ Nadat u de nieuwe omgevingsvariabele hebt gemaakt, moet u de server opnieuw opst
 1. Selecteer **Configuratiescherm > Systeem**.
 1. Klik in het dialoogvenster Systeemeigenschappen op het tabblad **Geavanceerd** en klik vervolgens op **Omgevingsvariabelen**.
 1. Klik onder Systeemvariabelen in het dialoogvenster Omgevingsvariabelen op **Nieuw**.
-1. Typ in het dialoogvenster Nieuwe systeemvariabele in het vak Naam **** variabele een naam die de indeling gebruikt `[applicationname]_PATH`.
-1. Typ in het vak **Waarde** variabele het volledige pad en de bestandsnaam van het uitvoerbare bestand van de toepassing en klik op **OK**. For example, type: `c:\windows\Notepad.exe`
+1. Typ in het dialoogvenster Nieuwe systeemvariabele in het vak **Naam variabele** een naam met de indeling `[applicationname]_PATH`.
+1. Typ in het vak **Variabele waarde** het volledige pad en de bestandsnaam van het uitvoerbare bestand van de toepassing en klik vervolgens op **OK**. Typ bijvoorbeeld: `c:\windows\Notepad.exe`
 1. Klik in het dialoogvenster Omgevingsvariabelen op **OK**.
 
 **Een systeemvariabele maken via de opdrachtregel**
@@ -931,7 +931,7 @@ Nadat u de nieuwe omgevingsvariabele hebt gemaakt, moet u de server opnieuw opst
             [applicationname]_PATH=[Full path name]
    ```
 
-   For example, type: `NotePad_PATH=C:\WINDOWS\NOTEPAD.EXE`
+   Typ bijvoorbeeld: `NotePad_PATH=C:\WINDOWS\NOTEPAD.EXE`
 
 1. Begin een nieuwe herinnering van de bevellijn voor de systeemvariabele om van kracht te worden.
 
@@ -939,7 +939,7 @@ Nadat u de nieuwe omgevingsvariabele hebt gemaakt, moet u de server opnieuw opst
 
 AEM Forms bevat voorbeeld-XML-bestanden die ervoor zorgen dat de service PDF genereren Kladblok gebruikt om bestanden met de bestandsnaamextensie .txt te verwerken. Deze code is opgenomen in deze sectie. Daarnaast moet u de andere wijzigingen aanbrengen die in deze sectie worden beschreven.
 
-#### XML-bestand van extra dialoogvenster {#additional-dialog-xml-file}
+#### Aanvullend XML-bestand dialoogvenster {#additional-dialog-xml-file}
 
 Dit voorbeeld bevat de extra dialoogdozen voor de toepassing van de Blocnote. Deze dialoogvensters kunnen een aanvulling zijn op de dialoogvensters die zijn opgegeven in de service PDF genereren.
 

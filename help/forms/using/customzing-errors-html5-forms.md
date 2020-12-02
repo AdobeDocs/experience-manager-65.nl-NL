@@ -16,7 +16,7 @@ ht-degree: 0%
 ---
 
 
-# Foutberichten voor HTML5-formulieren aanpassen {#customizing-error-messages-for-html-forms}
+# Foutberichten voor HTML5-formulieren {#customizing-error-messages-for-html-forms} aanpassen
 
 In HTML5-formulieren hebben foutberichten en -waarschuwingen een vaste positie en weergave (font en color). De fout wordt alleen voor een geselecteerd veld weergegeven en er wordt slechts één fout weergegeven.
 
@@ -38,8 +38,8 @@ Nadat u het pakket hebt uitgepakt, opent u de map CustomErrorManager-1.0-SNAPSHO
 
 Als u de positie van het foutbericht wilt aanpassen, voegt u &lt;div>-tag toe voor elk fout- en waarschuwingsveld, plaatst u de tag &lt;div> links of rechts en past u CSS-stijlen toe op de tag &lt;div>. Voor gedetailleerde stappen, zie de hieronder vermelde procedure:
 
-1. Navigeer naar de `CustomErrorManager-1.0-SNAPSHOT`map en open de `etc\clientlibs\mf-custom-error-manager\CustomErrorManager\javascript` map.
-1. Open het `customErrorManager.js` bestand om het te bewerken. De `markError` functie in het bestand accepteert de volgende parameters:
+1. Navigeer naar de map `CustomErrorManager-1.0-SNAPSHOT`en open de map `etc\clientlibs\mf-custom-error-manager\CustomErrorManager\javascript`.
+1. Open het `customErrorManager.js`-bestand voor bewerking. De functie `markError` in het bestand accepteert de volgende parameters:
 
    |  |  |
    |---|---|
@@ -77,7 +77,7 @@ Als u de positie van het foutbericht wilt aanpassen, voegt u &lt;div>-tag toe vo
    ```
 
 1. Sla het bestand op en sluit het.
-1. Navigeer naar de `CustomErrorManager-1.0-SNAPSHOT` map en maak een archief van de mappen jcr_root en META-INF. Wijzig de naam van het archief in CustomErrorManager-1.0-SNAPSHOT.zip.
+1. Navigeer naar de map `CustomErrorManager-1.0-SNAPSHOT` en maak een archief van de mappen jcr_root en META-INF. Wijzig de naam van het archief in CustomErrorManager-1.0-SNAPSHOT.zip.
 1. Gebruik pakketbeheer om het pakket te uploaden en te installeren.
 
 ## Foutberichten weergeven voor meerdere velden  {#display-error-messages-for-multiple-fields-nbsp}

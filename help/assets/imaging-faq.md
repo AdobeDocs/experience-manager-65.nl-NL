@@ -26,9 +26,9 @@ De slimme Beeldvorming profiteert ook van de extra prestatiesverhoging van volle
 
 De volgende voorbeelden van afbeeldingselementen geven de toegevoegde optimalisatie van Smart Imaging aan:
 
-| Afbeelding<br>(URL) | Miniatuur | Grootte<br> (JPEG) | Grootte (WebP)<br> (met slimme beeldverwerking) | % reductie |
+| Afbeelding<br>(URL) | Miniatuur | Grootte<br> (JPEG) | Grootte (WebP)<br> (met Smart Imaging) | % reductie |
 |---|---|---|---|---|
-| [Afbeelding 1](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_6?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture1](/help/assets/assets-dm/picture1.png) | 73,75 kB | 45,92 kB | 38% |
+| [Afbeelding 1](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_6?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![beeld1](/help/assets/assets-dm/picture1.png) | 73,75 kB | 45,92 kB | 38% |
 | [Afbeelding 2](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_3?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture2](/help/assets/assets-dm/picture2.png) | 191 kB | 70,66 kB | 63% |
 | [Afbeelding 3](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_2?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture3](/help/assets/assets-dm/picture3.png) | 96,64 kB | 39,44 kB | 59% |
 | [Afbeelding 4](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_1?hei=500&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture4](/help/assets/assets-dm/picture4.png) | 315,80 kB | 178,19 kB | 44% |
@@ -47,7 +47,7 @@ Verbeteringen in de nieuwste versie van Smart Imaging:
 * Smart Imaging kan worden uitgeschakeld met de URL-parameter &quot;bfc&quot;.
 * onafhankelijk van TTL (Time to Live). Eerder was een minimale TTL van 12 uur verplicht voor Smart Imaging.
 * Eerder waren zowel de oorspronkelijke als de afgeleide afbeeldingen in het cachegeheugen opgeslagen. Het was een proces van twee stappen om de cache ongeldig te maken. In de nieuwste Smart Imaging worden alleen de derivaten in het cachegeheugen opgeslagen, zodat een procedure voor het invalideren van het cachegeheugen in één stap mogelijk is.
-* Klanten die in hun regels aangepaste kopteksten gebruiken (bijvoorbeeld &#39;&#39;Timing Allow Origin&#39;&#39;, &#39;&#39;X-Robot&#39;&#39; zoals wordt gesuggereerd in [Een aangepaste koptekstwaarde toevoegen aan reacties op afbeeldingen|Dynamische media Klassiek](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)) profiteren van de nieuwste functie voor Smart Imaging, omdat deze kopteksten, in tegenstelling tot de vorige versie van Smart Imaging, niet worden geblokkeerd.
+* Klanten die in hun regels aangepaste kopteksten gebruiken (bijvoorbeeld &#39;&#39;Timing staat oorsprong toe&#39;&#39;, &#39;&#39;X-Robot&#39;&#39; zoals voorgesteld in [Een aangepaste koptekstwaarde toevoegen aan reacties op afbeeldingen|Dynamische media Klassiek](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)) profiteren van de nieuwste slimme beeldbewerking, omdat deze kopteksten niet worden geblokkeerd, in tegenstelling tot de vorige versie van Smart Imaging.
 
 ## Zijn er licentiekosten verbonden aan intelligente beeldverwerking? {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
@@ -106,7 +106,7 @@ Smart Imaging werkt naadloos met uw bestaande afbeeldings-URL&#39;s en voorinste
 
 Als u een nieuw aangepast domein moet configureren voor het gebruik van Smart Imaging, moeten de URL&#39;s worden bijgewerkt met dit aangepaste domein.
 
-Zie ook [Ben ik verkiesbaar om Slimme Beelden te gebruiken?](#am-i-eligible-to-use-smart-imaging) om inzicht te krijgen in de vereisten voor slimme beeldverwerking.
+Zie [Mag ik Smart Imaging gebruiken?](#am-i-eligible-to-use-smart-imaging) om inzicht te krijgen in de vereisten voor slimme beeldverwerking.
 
 <!-- No. Smart Imaging works seamlessly with your existing image URLs and image presets. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. All of this is handled automatically. -->
 
@@ -121,11 +121,11 @@ Slimme afbeeldingen werken met afbeeldingen die via HTTP of HTTPS worden gelever
 Als u Smart Imaging wilt gebruiken, moet de Dynamic Media Classic of Dynamic Media van uw bedrijf op AEM account aan de volgende vereisten voldoen:
 
 * Gebruik Adobe-Gebundelde CDN (het Netwerk van de Levering van de Inhoud) als deel van uw vergunning.
-* Gebruik een specifiek domein (bijvoorbeeld, `images.company.com` of `mycompany.scene7.com`) en geen algemeen domein (bijvoorbeeld, `s7d1.scene7.com`, `s7d2.scene7.com`, of `s7d13.scene7.com`).
+* Gebruik een specifiek domein (bijvoorbeeld `images.company.com` of `mycompany.scene7.com`), niet een algemeen domein (bijvoorbeeld `s7d1.scene7.com`, `s7d2.scene7.com` of `s7d13.scene7.com`).
 
 Meld u aan bij uw bedrijfsaccount of accounts om uw domeinen te zoeken.
 
-Tik **[!UICONTROL Setup > Application Setup > General Settings.]** zoek het veld met het label **[!UICONTROL Published Server Name.]** Als u momenteel een algemeen domein gebruikt, kunt u vragen dat u als onderdeel van deze overgang naar uw eigen aangepaste domein gaat wanneer u een technisch ondersteuningsticket verzendt.
+Tik **[!UICONTROL Setup > Application Setup > General Settings.]** Zoek het veld met het label **[!UICONTROL Published Server Name.]** Als u momenteel een algemeen domein gebruikt, kunt u vragen dat u als onderdeel van deze overgang naar uw eigen aangepast domein gaat wanneer u een technisch ondersteuningsticket verzendt.
 
 Uw eerste aangepaste domein kost geen extra geld met een Dynamic Media-licentie.
 
@@ -137,7 +137,7 @@ U moet het verzoek starten om intelligente beeldverwerking te gebruiken. deze wo
 1. Geef de volgende informatie op in uw ondersteuningsgeval:
 
    1. Primaire contactpersoon, e-mail, telefoon.
-   1. Alle domeinen die moeten worden ingeschakeld voor slimme beeldverwerking (dat wil zeggen `images.company.com` of `mycompany.scene7.com`).
+   1. Alle domeinen die voor slimme beeldverwerking (namelijk `images.company.com` of `mycompany.scene7.com`) moeten worden toegelaten.
 
       Meld u aan bij uw bedrijfsaccount of accounts om uw domeinen te zoeken.
 
@@ -145,13 +145,13 @@ U moet het verzoek starten om intelligente beeldverwerking te gebruiken. deze wo
 
       Zoeken naar het veld met het label **[!UICONTROL Published Server Name.]**
    1. Verifieer dat u CDN door Adobe gebruikt en niet met een directe verhouding wordt beheerd.
-   1. Verifieer u een specifiek domein zoals `images.company.com` of `mycompany.scene7.com`, en niet een generisch domein, zoals, `s7d1.scene7.com`, `s7d2.scene7.com``s7d13.scene7.com`gebruikt.
+   1. Verifieer u een specifiek domein zoals `images.company.com` of `mycompany.scene7.com`, en niet een generisch domein, zoals `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com` gebruikt.
 
       Meld u aan bij uw bedrijfsaccount of accounts om uw domeinen te zoeken.
 
       Klik op **[!UICONTROL Setup > Application Setup > General Settings.]**
 
-      Zoek het geëtiketteerde gebied **[!UICONTROL Published Server Name.]** als u momenteel een generisch Dynamisch Dynamisch Klassiek domein van Media gebruikt, kunt u verzoeken zich over naar uw eigen douanedomein als deel van deze overgang te bewegen.
+      Zoek het gebied geëtiketteerd **[!UICONTROL Published Server Name.]** als u momenteel een generisch Dynamisch Dynamisch Klassiek domein van Media gebruikt, kunt u verzoeken zich over naar uw eigen douanedomein als deel van deze overgang te bewegen.
    1. Geef aan of u dit ook nodig hebt om via HTTP/2 te werken.
 
 1. De technische Steun zal u aan de Slimme Lijst van de Wacht van het Beeld toevoegen die op de orde wordt gebaseerd waarin de verzoeken werden voorgelegd.
@@ -160,8 +160,8 @@ U moet het verzoek starten om intelligente beeldverwerking te gebruiken. deze wo
 1. U wordt op de hoogte gesteld na voltooiing door ondersteuning.
 1. Om de prestatieverbeteringen van Smart Imaging te maximaliseren, raadt Adobe aan om de Time To Live (TTL) in te stellen op 24 uur of langer. De TTL bepaalt hoe lang de activa door CDN in het voorgeheugen worden opgeslagen. Deze instelling wijzigen:
 
-   1. Als u Dynamic Media Classic gebruikt, klikt u op **[!UICONTROL Setup > Application Setup > Publish Setup > Image Server.]** De **[!UICONTROL Default Client Cache Time To Live]** waarde instellen op 24 of langer.
-   1. Als u Dynamic Media gebruikt, volgt u [deze instructies](config-dynamic.md). Stel de **[!UICONTROL Expiration]** waarde 24 uur of langer in.
+   1. Als u Dynamic Media Classic gebruikt, klikt u op **[!UICONTROL Setup > Application Setup > Publish Setup > Image Server.]** Stel de waarde **[!UICONTROL Default Client Cache Time To Live]** in op 24 of langer.
+   1. Als u Dynamische media gebruikt, volg [deze instructies](config-dynamic.md). Stel de waarde **[!UICONTROL Expiration]** 24 uur of langer in.
 
 ## Wanneer kan ik verwachten dat mijn account is ingeschakeld met Smart Imaging? {#when-can-i-expect-my-account-to-be-enabled-with-smart-imaging}
 
@@ -179,12 +179,12 @@ Tijdens de eerste overgang bereiken de afbeeldingen in de cache rechtstreeks de 
 ## Hoe kan ik controleren of slimme beeldverwerking werkt zoals verwacht?  {#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
 
 1. Nadat uw account is geconfigureerd met smart imaging, laadt u een Dynamic Media Classic (Scene7)/Dynamic Media-afbeeldings-URL in de browser.
-1. Open het deelvenster Chrome-ontwikkelaar door in **[!UICONTROL View > Developer > Developer Tools]** de browser te klikken. Of kies een ander browserontwikkelaarsgereedschap van uw keuze.
+1. Open het deelvenster Chrome-ontwikkelaar door in de browser op **[!UICONTROL View > Developer > Developer Tools]** te klikken. Of kies een ander browserontwikkelaarsgereedschap van uw keuze.
 
 1. Zorg ervoor dat de cache is uitgeschakeld wanneer de ontwikkelprogramma&#39;s zijn geopend.
 
-   * In Windows navigeert u naar de instellingen in het deelvenster voor ontwikkelaars en schakelt u het **[!UICONTROL Disable cache (while devtools is open)]** selectievakje in.
-   * Op MAC - in de ontwikkelaarruit, onder het **[!UICONTROL Network]** lusje, uitgezochte **[!UICONTROL disable cache]** .
+   * In Windows navigeert u naar de instellingen in het venster voor het gereedschap Ontwikkelaar en schakelt u **[!UICONTROL Disable cache (while devtools is open)]** in.
+   * Mac: selecteer **[!UICONTROL disable cache]** onder het tabblad **[!UICONTROL Network]** in het venster Ontwikkelaar.
 
 1. Waarnemen dat het inhoudstype wordt omgezet in de juiste indeling. In de volgende schermafbeelding ziet u een PNG-afbeelding die dynamisch wordt omgezet in WebP op Chrome.
 1. Herhaal deze test voor verschillende browsers en gebruikersomstandigheden.
@@ -196,7 +196,7 @@ Niet alle afbeeldingen worden geconverteerd. Smart Imaging bepaalt of de convers
 
 ## Kan Smart Imaging voor een aanvraag worden uitgeschakeld? {#turning-off-smart-imaging}
 
-Ja. U kunt Smart Imaging uitschakelen door de optie aan de URL toe `bfc=off` te voegen.
+Ja. U kunt Smart Imaging uitschakelen door de optie `bfc=off` aan de URL toe te voegen.
 
 ## Wat is &quot;tuning&quot; beschikbaar? Zijn er instellingen of gedragingen die kunnen worden gedefinieerd? (#tuning-settings)
 

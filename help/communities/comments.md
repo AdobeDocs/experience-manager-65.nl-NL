@@ -27,8 +27,8 @@ De functie voor opmerkingen wordt gebruikt om bezoekers die zich hebben aangemel
 
 In het document wordt beschreven:
 
-* Toevoegen `Comments` aan een pagina.
-* De montages van de configuratie voor de `Comments` component.
+* `Comments` toevoegen aan een pagina.
+* De montages van de configuratie voor `Comments` component.
 
 >[!NOTE]
 >
@@ -36,25 +36,25 @@ In het document wordt beschreven:
 
 ### Opmerkingen toevoegen aan een pagina {#adding-comments-to-a-page}
 
-Als u een `Comments` component aan een pagina wilt toevoegen in de ontwerpmodus, gebruikt u de componentbrowser om te zoeken naar
+Als u een `Comments`-component in de ontwerpmodus aan een pagina wilt toevoegen, gebruikt u de componentbrowser om te zoeken naar
 
 * `Communities / Comments`
 
 en sleep het naar de juiste positie op een pagina, zoals een positie ten opzichte van de functie waar gebruikers opmerkingen over kunnen plaatsen, of gewoon onder aan de pagina.
 
-Ga voor de benodigde informatie naar [Community Components Basics](/help/communities/basics.md).
+Voor noodzakelijke informatie, bezoek [de Grondbeginselen van Componenten van Gemeenschappen](/help/communities/basics.md).
 
-Wanneer de [vereiste clientbibliotheken](/help/communities/essentials-comments.md#essentials-for-client-side) worden opgenomen, wordt de `Comments` component op deze manier weergegeven.
+Wanneer de [vereiste client-side bibliotheken](/help/communities/essentials-comments.md#essentials-for-client-side) worden opgenomen, wordt de `Comments`-component op deze manier weergegeven.
 
 ![comments-component](assets/comments-component.png)
 
 >[!NOTE]
 >
->Er mag slechts één `Comments` component op een pagina voorkomen. Houd er rekening mee dat diverse functies van een Gemeenschappen al opmerkingen bevatten, zoals een blog, agenda, forum, QnA en revisies.
+>Er mag slechts één `Comments`-component op een pagina voorkomen. Houd er rekening mee dat diverse functies van een Gemeenschappen al opmerkingen bevatten, zoals een blog, agenda, forum, QnA en revisies.
 
-### Opmerkingen configureren {#configuring-comments}
+### Opmerkingen {#configuring-comments} configureren
 
-Selecteer de geplaatste `Comments` component die u wilt openen en selecteer het `Configure` pictogram waarmee het dialoogvenster Bewerken wordt geopend.
+Selecteer de geplaatste `Comments` component en selecteer `Configure` pictogram dat het Edit dialoog opent.
 
 ![Configuratiepictogram](assets/configure.png)
 
@@ -62,7 +62,7 @@ Selecteer de geplaatste `Comments` component die u wilt openen en selecteer het 
 
 #### Tabblad Opmerkingen {#comments-tab}
 
-Geef op onder het tabblad **Opmerkingen** op hoe bezoekers opmerkingen invoeren.
+Geef onder het tabblad **Opmerkingen** op hoe bezoekers opmerkingen invoeren.
 
 * **Antwoorden toestaan**
 
@@ -106,7 +106,7 @@ Geef op onder het tabblad **Opmerkingen** op hoe bezoekers opmerkingen invoeren.
 
 #### Tabblad Gebruikersmodernisering {#user-moderation-tab}
 
-Geef op onder het tabblad **Gebruikersmodernisering** op hoe de geposte opmerkingen worden beheerd. Voor meer informatie, zie het [Modereren van Gebruiker Gegenereerde Inhoud](/help/communities/moderate-ugc.md).
+Geef op onder het tabblad **Moderatie van gebruiker** aan hoe de geposte opmerkingen worden beheerd. Zie [Door gebruiker gegenereerde inhoud modereren](/help/communities/moderate-ugc.md) voor meer informatie.
 
 * **Pre-moderatie**
 
@@ -142,33 +142,33 @@ Geef op onder het tabblad **Gebruikersmodernisering** op hoe de geposte opmerkin
 
 * **Limiet voor markering**
 
-   Voer het aantal keren in dat een opmerking moet worden gemarkeerd voordat deze wordt verborgen in de openbare weergave. Dit getal moet groter zijn dan of gelijk zijn aan de **moderatiedrempel**. De standaardwaarde is 5.
+   Voer het aantal keren in dat een opmerking moet worden gemarkeerd voordat deze wordt verborgen in de openbare weergave. Dit getal moet groter dan of gelijk zijn aan de **Moderatiedrempel**. De standaardwaarde is 5.
 
 #### Tabblad Instellingen sorteren {#sort-settings-tab}
 
-Geef op onder het tabblad **Sorteerinstellingen** op hoe de geposte opmerkingen worden gesorteerd wanneer ze worden weergegeven.
+Geef onder het tabblad **Instellingen sorteren** op hoe de geposte opmerkingen moeten worden gesorteerd wanneer ze worden weergegeven.
 
 * **Veld sorteren**
 
-   Trek omlaag om een van `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed`, of `Most Liked`te selecteren.
+   Trek neer om één van `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed`, of `Most Liked` te selecteren.
 
 * **Sorteervolgorde**
 
-   Trek omlaag om een van `Ascending` of `Descending`te selecteren.
+   Trek neer om één van `Ascending` of `Descending` te selecteren.
 
 ### Wijzigen in type aangepaste opmerking {#changing-to-a-custom-comment-type}
 
 Door het Type van Middel van de Commentaar te veranderen, produceert het commentaarsysteem niet meer een geval van een commentaar gebruikend het gebrek, maar eerder die is aangepast (uitgebreid) door ontwikkelaars.
 
-Zodra de types van douanemiddelen gekend zijn, ga de Wijze [van het](/help/sites-authoring/default-components-designmode.md) Ontwerp in en klik de geplaatste `Comments` component tweemaal om een dialoog met een extra lusje te openen.
+Zodra de types van douanemiddel bekend zijn, ga [Ontwerpwijze](/help/sites-authoring/default-components-designmode.md) in en klik de geplaatste `Comments` component tweemaal om een dialoog met een extra lusje te openen.
 
-Onder het lusje van de Types **van Middel, specificeer douane resourceType voor nieuwe instanties van de** `Comments or Voting` componenten:
+Geef onder het tabblad **Brontypen** het aangepaste resourceType op voor nieuwe instanties van de `Comments or Voting`-componenten:
 
 ![hulpbrontype](assets/resource-type.png)
 
 * **Type bron van opmerking**
 
-   Navigeer naar het resourceType van een uitgebreide `comment` component (enige commentaar) in /apps. Bijvoorbeeld, `/apps/social/commons/components/hbs/comments/comment`
+   Navigeer naar het resourceType van uitgebreide `comment` component (enige commentaar) in /apps. Bijvoorbeeld, `/apps/social/commons/components/hbs/comments/comment`
 
    Deze bron identificeert het resourceType van UGC die wordt gecreeerd wanneer een bezoeker een commentaar plaatst.
 
@@ -180,9 +180,9 @@ Onder het lusje van de Types **van Middel, specificeer douane resourceType voor 
 
 * **Brontype voor opmerkingensysteem**
 
-   Navigeer aan resourceType van een uitgebreide `comments`component (het Systeem van de Commentaar) in /apps. Leeg laten tenzij het paginasjabloon het opmerkingensysteem [dynamisch in het onderliggende script bevat](/help/communities/scf.md#add-or-include-a-communities-component) in plaats van als bron (knooppunt comments) aan de pagina te worden toegevoegd. Lees meer over de [{include} helper](/help/communities/handlebars-helpers.md#include).
+   Navigeer naar het resourceType van uitgebreide `comments`component (het Systeem van de Commentaar) in /apps. Leeg laten tenzij het paginamalplaatje [dynamisch ](/help/communities/scf.md#add-or-include-a-communities-component) het Systeem van de Commentaar in het onderliggende manuscript in plaats van wordt toegevoegd aan de pagina als middel (commentaarknoop) omvat. Leer meer door over [ te lezen {{include} helper](/help/communities/handlebars-helpers.md#include).
 
-### Ervaring met sitebezoekers {#site-visitor-experience}
+### Ervaring {#site-visitor-experience} voor bezoekers van site
 
 #### Moderatoren en beheerders {#moderators-and-administrators}
 
@@ -197,14 +197,14 @@ Wanneer de bezoeker van de site zich heeft aangemeld, kunnen deze, afhankelijk v
 * Een eigen opmerking verwijderen
 * Opmerkingen van anderen markeren
 
-#### Anoniem {#anonymous}
+#### Anonieme {#anonymous}
 
 Sitebezoekers die niet zijn aangemeld, kunnen alleen geposte opmerkingen lezen, deze vertalen indien deze worden ondersteund, maar kunnen geen opmerking toevoegen of opmerkingen van anderen markeren.
 
-### Additional Information {#additional-information}
+### Aanvullende informatie {#additional-information}
 
 Meer informatie vindt u op de pagina [Comments Essentials](/help/communities/essentials-comments.md) voor ontwikkelaars.
 
-Zie Door gebruiker gegenereerde inhoud [modereren voor moderatie van geposte opmerkingen](/help/communities/moderate-ugc.md).
+Zie [Door gebruiker gegenereerde inhoud modereren](/help/communities/moderate-ugc.md) voor de moderatie van geposte opmerkingen.
 
-Zie Door gebruiker gegenereerde inhoud [vertalen voor een vertaling van geposte opmerkingen](/help/communities/translate-ugc.md).
+Zie [Door gebruiker gegenereerde inhoud omzetten](/help/communities/translate-ugc.md) voor een vertaling van geposte opmerkingen.

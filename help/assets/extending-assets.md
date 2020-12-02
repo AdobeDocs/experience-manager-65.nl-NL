@@ -11,11 +11,11 @@ ht-degree: 0%
 ---
 
 
-# Aanpassen en uitbreiden [!DNL Assets] {#customizing-and-extending-assets}
+# [!DNL Assets] {#customizing-and-extending-assets} aanpassen en uitbreiden
 
 De Asset Editor is het belangrijkste toegangspunt waarmee gebruikers van een Adobe Enterprise Manager-website de digitale middelen in uw opslagplaats kunnen zoeken, bekijken en bewerken.
 
-Als [!DNL Experience Manager] ontwikkelaar kunt u de Editor van middelen op verschillende manieren aanpassen en uitbreiden, zodat gebruikers een specifiek op maat gemaakte interface en functieset krijgen.
+Als ontwikkelaar [!DNL Experience Manager], kunt u de Redacteur van Activa op een aantal manieren aanpassen en uitbreiden, presenterend gebruikers met een specifiek op maat gemaakte interface en een reeks functionaliteit.
 
 De volgende aspecten van de functionaliteit kunnen worden aangepast of verbeterd:
 
@@ -36,6 +36,6 @@ De volgende aspecten van de vormgeving van de Asset Editor kunnen worden aangepa
 
 ## Uitvoeringen aanpassen {#customizing-renditions}
 
-In [!DNL Experience Manager Assets] terminologie is een uitvoering de vorm waarin een actief wordt gepresenteerd. In het algemeen kan een bepaald actief meerdere uitvoeringen hebben. Zo kan de oorspronkelijke grootte van een kleurenafbeelding bijvoorbeeld één uitvoering hebben, een andere bij een verkleind formaat en een andere afbeelding die wordt verkleind en omgezet in grijswaarden.
+In de terminologie [!DNL Experience Manager Assets] is een vertoning de vorm waarin een element wordt gepresenteerd. In het algemeen kan een bepaald actief meerdere uitvoeringen hebben. Zo kan de oorspronkelijke grootte van een kleurenafbeelding bijvoorbeeld één uitvoering hebben, een andere bij een verkleind formaat en een andere afbeelding die wordt verkleind en omgezet in grijswaarden.
 
 De uitvoeringen waarin een bepaald element beschikbaar is, kunnen worden aangepast en nieuwe uitvoeringen worden gemaakt.

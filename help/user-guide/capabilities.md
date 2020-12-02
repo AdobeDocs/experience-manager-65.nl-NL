@@ -1,6 +1,6 @@
 ---
-title: Gebruikershandleiding voor AEM 6.5-mogelijkheden
-seo-title: Gebruikershandleiding voor AEM 6.5-mogelijkheden
+title: AEM 6.5 Handboek voor mogelijkheden
+seo-title: AEM 6.5 Handboek voor mogelijkheden
 description: Een overzicht van de essentiële capaciteiten van AEM 6.5
 seo-description: Een overzicht van de essentiële capaciteiten van AEM 6.5
 translation-type: tm+mt
@@ -12,19 +12,19 @@ ht-degree: 2%
 ---
 
 
-# Gebruikershandleidingen voor AEM 6.5-mogelijkheden {#aem-65-capabilities-user-guides}
+# AEM 6.5 Gebruikershandleidingen voor mogelijkheden {#aem-65-capabilities-user-guides}
 
-## AEM Foundation {#aem-foundation}
+## AEM Stichting {#aem-foundation}
 
-[Meer informatie over de installatie, implementatie en de architectuur van Adobe Experience Manager 6.5](/help/sites-deploying/home.md), inclusief de implementatie van de Adobe Managed Services-cloud.
+[Meer informatie over het installeren, implementeren en de architectuur van Adobe Experience Manager 6.5](/help/sites-deploying/home.md), inclusief de cloudimplementatie van Adobe Managed Services.
 
-[Leer hoe u een AEM-project](/help/managing/home.md)beheert.
+[Leer hoe u een AEM project](/help/managing/home.md) beheert.
 
 ## AEM Sites {#aem-sites}
 
-[Belangrijke concepten leren voor het maken van inhoud en ontwerpen in AEM](/help/sites-authoring/home.md).
+[Leer de belangrijkste concepten voor het maken van inhoud en creatie in AEM](/help/sites-authoring/home.md).
 
-[Meer informatie over het beheer van AEM](/help/sites-administering/home.md).
+[Leer hoe u AEM](/help/sites-administering/home.md) toedient.
 
 ## AEM Assets {#aem-assets}
 

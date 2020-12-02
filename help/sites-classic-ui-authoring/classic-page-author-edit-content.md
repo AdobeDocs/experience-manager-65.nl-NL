@@ -12,6 +12,9 @@ discoiquuid: de321869-ebf9-41a1-8203-e12bdb088678
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 71b1301faf3ea3d881bcbf34eac101f3ed5c514c
+workflow-type: tm+mt
+source-wordcount: '1780'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: 71b1301faf3ea3d881bcbf34eac101f3ed5c514c
 
 Nadat u de pagina hebt gemaakt (nieuw of als onderdeel van een opstart of live kopie), kunt u de inhoud bewerken en de gewenste updates uitvoeren.
 
-Inhoud wordt toegevoegd met [componenten](/help/sites-classic-ui-authoring/classic-page-author-default-components.md) (die geschikt zijn voor het inhoudstype) die naar de pagina kunnen worden gesleept. Deze kunnen vervolgens worden bewerkt, verplaatst of verwijderd.
+Inhoud wordt toegevoegd met [componenten](/help/sites-classic-ui-authoring/classic-page-author-default-components.md) (geschikt voor het inhoudstype) die naar de pagina kunnen worden gesleept. Deze kunnen vervolgens worden bewerkt, verplaatst of verwijderd.
 
 >[!NOTE]
 >
@@ -52,9 +55,9 @@ Deze bieden toegang tot een brede selectie van functies; met inbegrip van:
 * [verwijzingen tonen](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#showing-references)
 * [toegang tot het auditlogboek](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#audit-log)
 * [schakelmodi](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes)
-* [maken](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#creating-a-new-version), [herstellen](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick) en [vergelijken](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#comparing-with-a-previous-version) versies
+* [maken](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#creating-a-new-version),  [](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick) herstellen en  [](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#comparing-with-a-previous-version) vergelijken van versies
 
-* [publiceren](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#publishing-a-page), [publiceren](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#unpublishing-a-page) van pagina&#39;s ongedaan maken
+* [publiceren](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#publishing-a-page),  [](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#unpublishing-a-page) publicatie van een pagina ongedaan maken
 
 * [bewerken, pagina-eigenschappen](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)
 
@@ -62,9 +65,9 @@ Deze bieden toegang tot een brede selectie van functies; met inbegrip van:
 
 * [clientcontext](/help/sites-administering/client-context.md)
 
-## Een component invoegen {#inserting-a-component}
+## Een component {#inserting-a-component} invoegen
 
-### Een component invoegen {#inserting-a-component-1}
+### Een component {#inserting-a-component-1} invoegen
 
 Nadat u de pagina hebt geopend, kunt u beginnen met het toevoegen van inhoud. U doet dit door componenten (ook wel alinea&#39;s genoemd) toe te voegen.
 
@@ -72,21 +75,22 @@ Een nieuwe component invoegen:
 
 1. Er zijn verschillende methoden om het type alinea te selecteren dat u wilt invoegen:
 
-   * **Dubbelklik hier op het gebied met het label Componenten of elementen** slepen... - De werkbalk Nieuwe component **** invoegen wordt geopend. Selecteer een component en klik op **OK**.
+   * Dubbelklik op het gebied met het label **Componenten of elementen hier slepen..** - De werkbalk **Nieuwe component invoegen** wordt geopend. Selecteer een component en klik **OK**.
 
    * Sleep een component van de zwevende werkbalk (sidekick genoemd) om een nieuwe alinea in te voegen.
-   * **Klik met de rechtermuisknop op een bestaande alinea en selecteer** Nieuw... - De werkbalk Nieuwe component invoegen wordt geopend. Selecteer een component en klik op **OK**.
+   * Klik met de rechtermuisknop op een bestaande alinea en selecteer **Nieuw...** - de werkbalk Nieuwe component invoegen wordt geopend. Selecteer een component en klik **OK**.
+
    ![screen_shot_2012-02-15at115605am](assets/screen_shot_2012-02-15at115605am.png)
 
-1. Op zowel de werkbalk **Nieuwe component** invoegen ziet u een lijst met de beschikbare componenten (alineatypen). Deze secties kunnen worden opgesplitst in verschillende secties (bijvoorbeeld Algemeen, Kolommen, enz.) die naar behoefte kunnen worden uitgebreid.
+1. In zowel de hulpwerkbalk als de werkbalk **Nieuwe component invoegen** ziet u een lijst met de beschikbare componenten (alineatypen). Deze secties kunnen worden opgesplitst in verschillende secties (bijvoorbeeld Algemeen, Kolommen, enz.) die naar behoefte kunnen worden uitgebreid.
 
-   Afhankelijk van uw productieomgeving kunnen deze opties afwijken. Zie [Standaardcomponenten](/help/sites-classic-ui-authoring/classic-page-author-default-components.md)voor meer informatie over componenten.
+   Afhankelijk van uw productieomgeving kunnen deze opties afwijken. Zie [Standaardcomponenten](/help/sites-classic-ui-authoring/classic-page-author-default-components.md) voor volledige informatie over componenten.
 
 1. Voeg de gewenste component op de pagina in. Dubbelklik vervolgens op de alinea en er wordt een venster geopend waarin u de alinea kunt configureren en inhoud kunt toevoegen.
 
 ### Een component invoegen met de Inhoudszoeker {#inserting-a-component-using-the-content-finder}
 
-U kunt ook een nieuwe component aan de pagina toevoegen door een element te slepen vanuit de [Inhoudszoeker](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder). Hiermee wordt automatisch een nieuwe component van het juiste type gemaakt die het element bevat.
+U kunt ook een nieuwe component aan de pagina toevoegen door een element te slepen van de [Inhoudszoeker](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder). Hiermee wordt automatisch een nieuwe component van het juiste type gemaakt die het element bevat.
 
 Dit is geldig voor de volgende elementtypen (sommige zijn afhankelijk van het pagina-/alineasysteem):
 
@@ -99,71 +103,71 @@ Dit is geldig voor de volgende elementtypen (sommige zijn afhankelijk van het pa
 
 >[!NOTE]
 >
->Dit gedrag kan voor uw installatie worden gevormd. Zie Een alineasysteem [configureren, zodat door het slepen van een element een componentinstantie](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance) wordt gemaakt voor meer informatie.
+>Dit gedrag kan voor uw installatie worden gevormd. Zie [Een alineasysteem zo configureren dat door het slepen van een element een componentinstantie](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance) wordt gemaakt voor meer informatie.
 
 Een component maken door een van de bovenstaande elementtypen te slepen:
 
-1. Zorg ervoor dat de pagina in de modus [**Bewerken **staat](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes).
+1. Zorg ervoor dat uw pagina [**Edit** wijze](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes) is.
 1. Open de [Inhoudszoeker](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder).
-1. Sleep het vereiste element naar de gewenste positie. De [plaatsaanduiding](#componentplaceholder) van de component geeft aan waar de component wordt geplaatst.
+1. Sleep het vereiste element naar de gewenste positie. De [tijdelijke aanduiding voor componenten](#componentplaceholder) geeft aan waar de component wordt geplaatst.
 
    Een component die geschikt is voor het type element, wordt op de vereiste locatie gemaakt. De component bevat het geselecteerde element.
 
-1. [Bewerk](#editmovecopypastedelete) indien nodig de component.
+1. [De component indien nodig ](#editmovecopypastedelete) bewerken.
 
 ## Een component bewerken (inhoud en eigenschappen) {#editing-a-component-content-and-properties}
 
 Voer een van de volgende handelingen uit om een bestaande alinea te bewerken:
 
-* **Dubbelklik** op de alinea om deze te openen. U ziet hetzelfde venster als wanneer u de alinea met de bestaande inhoud hebt gemaakt. Make your changes and click **OK**.
+* **Dubbelklik** op de alinea om deze te openen. U ziet hetzelfde venster als wanneer u de alinea met de bestaande inhoud hebt gemaakt. Breng de gewenste wijzigingen aan en klik op **OK**.
 
-* **Klik met de rechtermuisknop** op de alinea en klik op **Bewerken**.
+* **Klik met de** rechtermuisknop op de alinea en klik op  **Bewerken**.
 
-* **Klik** tweemaal op de paragraaf (langzaam tweemaal klikken) om op zijn plaats het uitgeven wijze in te gaan. U kunt de tekst op de pagina rechtstreeks bewerken in plaats van in een dialoogvenster. In deze modus krijgt u een werkbalk boven aan de pagina. Breng gewoon uw wijzigingen aan en deze worden automatisch opgeslagen.
+* **Dubbelklik** op de alinea (langzaam dubbelklikken) om de bewerkingsmodus op de plaats in te schakelen. U kunt de tekst op de pagina rechtstreeks bewerken in plaats van in een dialoogvenster. In deze modus krijgt u een werkbalk boven aan de pagina. Breng gewoon uw wijzigingen aan en deze worden automatisch opgeslagen.
 
-## Een component verplaatsen {#moving-a-component}
+## Een component {#moving-a-component} verplaatsen
 
 Een alinea verplaatsen:
 
 >[!NOTE]
 >
->U kunt een component ook verplaatsen met [Knippen en Plakken](#cut-copy-paste-a-component) .
+>U kunt ook [Knippen en Plakken](#cut-copy-paste-a-component) gebruiken om een component te verplaatsen.
 
 1. Selecteer de alinea die u wilt verplaatsen:
 
    ![screen_shot_2012-02-15at115855am](assets/screen_shot_2012-02-15at115855am.png)
 
-1. Sleep de alinea naar de nieuwe locatie - AEM geeft aan waar de alinea naar kan worden verplaatst met een groen vinkje. Zet het neer op de gewenste plaats.
+1. Sleep de alinea naar de nieuwe locatie - AEM geeft aan waar de alinea naartoe kan worden verplaatst met een groen vinkje. Zet het neer op de gewenste plaats.
 1. Uw alinea wordt verplaatst:
 
    ![screen_shot_2012-02-15at120030pm](assets/screen_shot_2012-02-15at120030pm.png)
 
-## Een component verwijderen {#deleting-a-component}
+## Een component {#deleting-a-component} verwijderen
 
 Een alinea verwijderen:
 
-1. Selecteer de alinea en **klik** met de rechtermuisknop:
+1. Selecteer de alinea en **klik met de rechtermuisknop**:
 
    ![screen_shot_2012-02-15at120220pm](assets/screen_shot_2012-02-15at120220pm.png)
 
-1. Selecteer **Verwijderen** in het menu. AEM WCM vraagt om bevestiging dat u de paragraaf wilt schrappen aangezien deze actie niet ongedaan kan worden gemaakt.
-1. Click **OK**.
+1. Selecteer **Delete** van het menu. AEM WCM vraagt om bevestiging dat u de paragraaf wilt schrappen aangezien deze actie niet ongedaan kan worden gemaakt.
+1. Klik **OK**.
 
 >[!NOTE]
 >
->Als u de [gebruikerseigenschappen zo hebt ingesteld dat de algemene bewerkingswerkbalk](/help/sites-classic-ui-authoring/author-env-user-props.md) wordt weergegeven, kunt u ook bepaalde handelingen op de alinea&#39;s uitvoeren met de beschikbare knoppen **Kopiëren**, **Knippen**, **Plakken** en **Verwijderen** .
+>Als u de [Gebruikerseigenschappen hebt ingesteld om de algemene bewerkingswerkbalk weer te geven](/help/sites-classic-ui-authoring/author-env-user-props.md), kunt u ook bepaalde handelingen op de alinea&#39;s uitvoeren met de knoppen **Kopiëren**, **Knippen**, **Plakken**, **Verwijderen**.
 >
->Er zijn ook verschillende [sneltoetsen](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) beschikbaar.
+>Verschillende [sneltoetsen](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) zijn ook beschikbaar.
 
 ## Een component knippen/kopiëren/plakken {#cut-copy-paste-a-component}
 
-Net als wanneer u een component [](#deleting-a-component) verwijdert, kunt u het contextmenu gebruiken om een component te kopiëren, te knippen en/of te plakken
+Zoals wanneer [Een component verwijderen](#deleting-a-component) kunt u het contextmenu gebruiken om een component te kopiëren, te knippen en/of te plakken
 
 >[!NOTE]
 >
->Als u de [gebruikerseigenschappen zo hebt ingesteld dat de algemene bewerkingswerkbalk](/help/sites-classic-ui-authoring/author-env-user-props.md) wordt weergegeven, kunt u ook bepaalde handelingen op de alinea&#39;s uitvoeren met de beschikbare knoppen **Kopiëren**, **Knippen**, **Plakken** en **Verwijderen** .
+>Als u de [Gebruikerseigenschappen hebt ingesteld om de algemene bewerkingswerkbalk weer te geven](/help/sites-classic-ui-authoring/author-env-user-props.md), kunt u ook bepaalde handelingen op de alinea&#39;s uitvoeren met de knoppen **Kopiëren**, **Knippen**, **Plakken**, **Verwijderen**.
 >
->Er zijn ook verschillende [sneltoetsen](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) beschikbaar.
+>Verschillende [sneltoetsen](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) zijn ook beschikbaar.
 
 >[!NOTE]
 >
@@ -173,9 +177,9 @@ Net als wanneer u een component [](#deleting-a-component) verwijdert, kunt u het
 
 Overerfde componenten kunnen het product van diverse scenario&#39;s zijn, die omvatten:
 
-* [beheer](/help/sites-administering/msm.md)van meerdere locaties; ook in combinatie met [steigers](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md#scaffolding-with-msm-inheritance).
+* [beheer](/help/sites-administering/msm.md) van meerdere locaties; ook in combinatie met  [steigers](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md#scaffolding-with-msm-inheritance).
 
-* [Starten](/help/sites-classic-ui-authoring/classic-launches.md) (op basis van livecopy).
+* [Hiermee wordt gestart](/help/sites-classic-ui-authoring/classic-launches.md)  (op basis van livecopy).
 * specifieke onderdelen; bijvoorbeeld het Overgenomen alineasysteem in Geometrixx.
 
 U kunt de overerving annuleren (en vervolgens opnieuw inschakelen). Afhankelijk van de component, kan dit beschikbaar zijn bij:
@@ -185,9 +189,11 @@ U kunt de overerving annuleren (en vervolgens opnieuw inschakelen). Afhankelijk 
    Als een component deel uitmaakt van een livecopy of lancering, wordt het aangegeven met een hangslotpictogram. U kunt op de hangslot klikken om de overerving te annuleren.
 
    * Het hangslotpictogram wordt getoond wanneer de component wordt geselecteerd; bijvoorbeeld:
+
    ![chlimage_1-72](assets/chlimage_1-72.png)
 
    * Het hangslot wordt ook weergegeven in het dialoogvenster van componenten; bijvoorbeeld:
+
    ![chlimage_1-73](assets/chlimage_1-73.png)
 
 1. **Een overerfd alineasysteem**
@@ -196,11 +202,11 @@ U kunt de overerving annuleren (en vervolgens opnieuw inschakelen). Afhankelijk 
 
    ![chlimage_1-74](assets/chlimage_1-74.png)
 
-## Annotaties toevoegen {#adding-annotations}
+## Annotaties {#adding-annotations} toevoegen
 
-[Met annotaties](/help/sites-classic-ui-authoring/classic-page-author-annotations.md) kunnen andere auteurs feedback geven over uw inhoud. Dit wordt vaak gebruikt voor evaluatie- en validatiedoeleinden.
+[Andere ](/help/sites-classic-ui-authoring/classic-page-author-annotations.md) auteurs krijgen nu de mogelijkheid om feedback te geven over de inhoud. Dit wordt vaak gebruikt voor evaluatie- en validatiedoeleinden.
 
-## Pagina&#39;s voorvertonen {#previewing-pages}
+## Pagina&#39;s voorvertonen{#previewing-pages}
 
 Er zijn twee pictogrammen in de onderrand van het hulpstuk die belangrijk zijn voor het voorvertonen van pagina&#39;s:
 
@@ -218,13 +224,13 @@ Er zijn twee pictogrammen in de onderrand van het hulpstuk die belangrijk zijn v
 
    ![](do-not-localize/chlimage_1-8.png)
 
-## Zoeken en vervangen {#find-replace}
+## {#find-replace} zoeken en vervangen
 
-Voor grootschaliger bewerkingen van dezelfde zin kunt u met de menuoptie **[Zoeken en vervangen](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)**meerdere instanties van een tekenreeks in een gedeelte van de website zoeken en vervangen.
+Voor grootschaliger bewerkingen van dezelfde zin kunt u met de menuoptie **[Zoeken en vervangen](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)** in een sectie van de website naar meerdere instanties van een tekenreeks zoeken en deze vervangen.
 
-## Een pagina vergrendelen {#locking-a-page}
+## Een pagina {#locking-a-page} vergrendelen
 
-Met AEM kunt u een pagina vergrendelen, zodat niemand anders de inhoud kan wijzigen. Dit is handig wanneer u veel bewerkingen uitvoert op een bepaalde pagina of wanneer u een pagina even wilt stilzetten.
+AEM kunt u een pagina vergrendelen, zodat niemand anders de inhoud kan wijzigen. Dit is handig wanneer u veel bewerkingen uitvoert op een bepaalde pagina of wanneer u een pagina even wilt stilzetten.
 
 >[!CAUTION]
 >
@@ -234,23 +240,23 @@ Een pagina vergrendelen:
 
 1. Selecteer op het tabblad **Websites** de pagina die u wilt vergrendelen.
 1. Dubbelklik op de pagina om deze te openen voor bewerking.
-1. Selecteer Pagina **** vergrendelen op het tabblad **Pagina** van sidekick:
+1. Selecteer **Pagina vergrendelen** op het tabblad **Pagina** van dekick:
 
    ![screen_shot_2012-02-08at15750pm](assets/screen_shot_2012-02-08at15750pm.png)
 
-   Een bericht geeft aan dat de pagina is vergrendeld voor andere gebruikers. Bovendien wordt in het rechterdeelvenster van de **websiteconsole** door AEM WCM de pagina als vergrendeld weergegeven en wordt aangegeven welke gebruiker de pagina heeft vergrendeld.
+   Een bericht geeft aan dat de pagina is vergrendeld voor andere gebruikers. Daarnaast wordt in het rechterdeelvenster van de **Websites**-console AEM WCM de pagina als vergrendeld weergegeven en wordt aangegeven welke gebruiker de pagina heeft vergrendeld.
 
    ![screen_shot_2012-02-08at20657pm](assets/screen_shot_2012-02-08at20657pm.png)
 
-## Een pagina ontgrendelen {#unlocking-a-page}
+## Een pagina {#unlocking-a-page} ontgrendelen
 
 Een pagina ontgrendelen:
 
 1. Selecteer op het tabblad **Websites** de pagina die u wilt ontgrendelen.
 1. Dubbelklik op de pagina om deze te openen.
-1. Selecteer op het tabblad **Pagina** van Help de optie **Pagina** ontgrendelen.
+1. Selecteer **Pagina ontgrendelen** op het tabblad **Pagina** van secundair bureaublad.
 
-## Paginabewerkingen ongedaan maken en opnieuw uitvoeren {#undoing-and-redoing-page-edits}
+## Paginabewerkingen {#undoing-and-redoing-page-edits} ongedaan maken en opnieuw uitvoeren
 
 Gebruik de volgende sneltoetsen terwijl het inhoudsframe van de pagina de focus heeft:
 
@@ -261,15 +267,15 @@ Wanneer u het verwijderen, optellen of verplaatsen van een of meer alinea&#39;s 
 
 >[!NOTE]
 >
->Zie Paginabewerkingen [ongedaan maken en opnieuw uitvoeren - De theorie](#undoing-and-redoing-page-edits-the-theory) voor alle details van wat mogelijk is bij het ongedaan maken en opnieuw uitvoeren van paginabewerkingen.
+>Zie [Paginabewerkingen ongedaan maken en opnieuw uitvoeren - De theorie](#undoing-and-redoing-page-edits-the-theory) voor de volledige details van wat mogelijk is bij het ongedaan maken en opnieuw uitvoeren van paginabewerkingen.
 
 ## Paginabewerkingen ongedaan maken en opnieuw uitvoeren - De theorie {#undoing-and-redoing-page-edits-the-theory}
 
 >[!NOTE]
 >
->Uw systeembeheerder kan diverse aspecten van Ongedaan maken/opnieuw eigenschappen [volgens de vereisten voor uw instantie](/help/sites-administering/config-undo.md) vormen.
+>Uw systeembeheerder kan [diverse aspecten van Undo/Opnieuw eigenschappen ](/help/sites-administering/config-undo.md) volgens de vereisten voor uw instantie vormen.
 
-AEM slaat een geschiedenis van acties op die u uitvoert en de opeenvolging waarin u hen uitvoerde. U maakt dus verschillende handelingen ongedaan in de volgorde waarin u deze hebt uitgevoerd. Vervolgens kunt u de opdracht Opnieuw uitvoeren gebruiken om een of meer handelingen opnieuw toe te passen.
+AEM slaat een geschiedenis op van acties die u uitvoert en de opeenvolging waarin u hen uitvoerde. U maakt dus verschillende handelingen ongedaan in de volgorde waarin u deze hebt uitgevoerd. Vervolgens kunt u de opdracht Opnieuw uitvoeren gebruiken om een of meer handelingen opnieuw toe te passen.
 
 Als een element op de inhoudspagina wordt geselecteerd, is het ongedaan maken en opnieuw doen bevel op het geselecteerde punt, zoals een tekstcomponent van toepassing.
 
@@ -281,7 +287,8 @@ Het gedrag van de opdrachten Ongedaan maken en Opnieuw is vergelijkbaar met dat 
 >
 >* Voer handelingen opnieuw uit zolang u geen paginabewerking hebt uitgevoerd nadat u de bewerking ongedaan hebt gemaakt.
 >* U kunt maximaal 20 bewerkhandelingen ongedaan maken (standaardinstelling).
->* Gebruik ook [sneltoetsen](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) voor ongedaan maken en opnieuw uitvoeren.
+>* ook [Sneltoetsen](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) gebruiken voor ongedaan maken en opnieuw uitvoeren.
+
 >
 
 

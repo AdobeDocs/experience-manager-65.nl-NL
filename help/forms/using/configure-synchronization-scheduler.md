@@ -11,47 +11,50 @@ discoiquuid: 8c8b1998-eab4-4230-b24f-5e96883ba599
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+workflow-type: tm+mt
+source-wordcount: '306'
+ht-degree: 0%
 
 ---
 
 
-# De synchronisatieplanner configureren {#configuring-the-synchronization-scheduler}
+# De synchronisatieplanner {#configuring-the-synchronization-scheduler} configureren
 
-Standaard wordt de synchronisatieplanner na elke 3 minuten uitgevoerd om alle elementen te synchroniseren die via LiveCycle Workbench 11 zijn gewijzigd en bijgewerkt in de opslagplaats. Toepassingen die formulieren en bronnen bevatten, zijn zichtbaar in de gebruikersinterface van AEM Forms zodra het synchronisatieproces is voltooid.
+Standaard wordt de synchronisatieplanner na elke 3 minuten uitgevoerd om alle elementen te synchroniseren die via LiveCycle Workbench 11 zijn gewijzigd en bijgewerkt in de opslagplaats. Toepassingen die formulieren en bronnen bevatten, zijn zichtbaar in de AEM Forms-gebruikersinterface nadat het synchronisatieproces is voltooid.
 
-## Het interval van de synchronisatieplanner van de verandering {#change-interval-of-the-synchronization-scheduler}
+## Het interval van de synchronisatieplanner {#change-interval-of-the-synchronization-scheduler} wijzigen
 
 Voer de volgende stappen uit om het interval van de synchronisatieplanner te veranderen:
 
-1. Meld u aan bij AEM Configuration Manager. De URL van Configuration Manager is `https://'[server]:[port]'/lc/system/console/configMgr`
+1. Meld u aan bij AEM Configuratiebeheer. De URL van Configuration Manager is `https://'[server]:[port]'/lc/system/console/configMgr`
 
-1. Zoek en open de bundel **FormsManagerConfiguration** .
+1. Zoek en open de bundel **FormsManagerConfiguration**.
 
-1. Geef een nieuwe waarde op voor de optie **Synchronisatie-plannerfrequentie** .
+1. Geef een nieuwe waarde op voor de optie **Frequentie synchronisatieplanning**.
 
    De eenheid van de frequentie is minuten. Bijvoorbeeld, om de planner te vormen om na elke 60 minuten te lopen, specificeer 60.
 
-## Elementen synchroniseren {#synchronizing-assets}
+## Elementen {#synchronizing-assets} synchroniseren
 
-Met de optie Elementen **synchroniseren vanuit opslagplaats** kunt u de elementen handmatig synchroniseren. Voer de volgende stappen uit om de elementen handmatig te synchroniseren:
+Met de optie **Elementen synchroniseren vanuit gegevensopslagruimte** kunt u de elementen handmatig synchroniseren. Voer de volgende stappen uit om de elementen handmatig te synchroniseren:
 
-1. Meld u aan bij AEM-formulieren. De standaard-URL is `https://'[server]:[port]'/lc/aem/forms/`.
+1. Meld u aan bij AEM Forms. De standaard-URL is `https://'[server]:[port]'/lc/aem/forms/`.
 
-   ![Gebruikersinterface AEM-formulieren](assets/aem_forms_ui.png)
+   ![AEM Forms-gebruikersinterface](assets/aem_forms_ui.png)
 
-   **Afbeelding:** Gebruikersinterface *voor AEM-formulieren*
+   **Afbeelding:** *AEM Forms-gebruikersinterface*
 
-1. Klik op het ![pictogram aem6forms_sync](assets/aem6forms_sync.png) op de werkbalk. Als u geen elementen hebt bij het laatste geconfigureerde pad, wordt het dialoogvenster weergegeven zoals hieronder. Klik op **Start** om de synchronisatie te starten.
+1. Klik op het pictogram ![aem6forms_sync](assets/aem6forms_sync.png) op de werkbalk. Als u geen elementen hebt bij het laatste geconfigureerde pad, wordt het dialoogvenster weergegeven zoals hieronder. Klik **Begin** om de synchronisatie in werking te stellen.
 
    ![Synchronisatie, dialoogvenster](assets/migrate-and-syncronize.png)
 
-   **Afbeelding:** Dialoogvenster *Synchronisatie*
+   **Afbeelding:** *Synchronisatie, dialoogvenster*
 
-## Synchronisatiefout voor probleemoplossing {#troubleshooting-synchronization-error}
+## Synchronisatiefout {#troubleshooting-synchronization-error} oplossen
 
-U kunt nieuwe toepassingen maken in de workflowontwerper (LiveCycle Workbench).
+U kunt nieuwe toepassingen maken in de werkstroomontwerper (LiveCycle Workbench).
 
-Als de nieuwe toepassing en een map op het niveau /content/dam/formsanddocuments dezelfde naam hebben, wordt een fout &quot;*An asset with the same name as this application already exists at root level.*&quot; is geregistreerd.
+Als de nieuwe toepassing en een map op /content/dam/formsanddocuments dezelfde naam hebben, treedt er een fout op &quot;*Er bestaat al een element met dezelfde naam als deze toepassing op het hoofdniveau.*&quot; is geregistreerd.
 
 U lost het conflict op door de naam van de toepassing te wijzigen en de elementen handmatig te synchroniseren.
 

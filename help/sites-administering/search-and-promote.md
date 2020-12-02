@@ -12,72 +12,77 @@ discoiquuid: aca444f6-418a-4c01-ae19-663b4e04fab9
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+workflow-type: tm+mt
+source-wordcount: '910'
+ht-degree: 1%
 
 ---
 
 
 # Integreren met Adobe Search&amp;Promote{#integrating-with-adobe-search-promote}
 
-Voer de volgende taken uit om de Adobe Search&amp;Promote-service van uw website te bellen:
+Voer de volgende taken uit om de service Adobe Search&amp;Promote van uw website aan te roepen:
 
 1. Geef de URL van de cloud op.
-1. Configureer de verbinding met de service Zoeken en bevorderen.
-1. &amp;Onderdelen zoeken en promoten aan Sidetrap toevoegen.
-1. Gebruik de componenten om de inhoud te ontwerpen. (Zie [Zoekfuncties &amp;promoveren aan een webpagina](/help/sites-authoring/search-and-promote.md)toevoegen.)
-1. Voeg banners toe aan uw pagina&#39;s. Bannerafbeeldingen zijn gevoelig voor gegevens zoeken en bevorderen.
-1. Genereer een site-overzicht voor de service Zoeken en promoten die u wilt gebruiken.
+1. Configureer de verbinding met de service Search&amp;Promote.
+1. Voeg Search&amp;Promote-componenten toe aan Sidetrap.
+1. Gebruik de componenten om de inhoud te ontwerpen. (Zie [Search&amp;Promote toevoegen aan een webpagina](/help/sites-authoring/search-and-promote.md).)
+1. Voeg banners toe aan uw pagina&#39;s. Bannerafbeeldingen zijn gevoelig voor Search&amp;Promote-gegevens.
+1. Genereer een site-overzicht voor de service Search&amp;Promote die u wilt gebruiken.
 
 >[!NOTE]
 >
->Als u Search&amp;Promote met een configuratie van de douanevolmacht gebruikt, moet u zowel de volmachtsconfiguraties van de Cliënt van HTTP vormen aangezien sommige functionaliteiten van AEM 3.x APIs en sommige anderen 4.x APIs gebruiken:
+>Als u Search&amp;Promote met een configuratie van de douanevolmacht gebruikt, moet u zowel de volmachtsconfiguraties van de Cliënt van HTTP vormen aangezien sommige functionaliteiten van AEM de 3.x APIs en sommige anderen 4.x APIs gebruiken:
 >
 >* 3.x is geconfigureerd met [https://localhost:4502/system/console/configMgr/com.day.commons.httpclient](https://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
->* 4.x is geconfigureerd met [https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
+>* 4.x wordt geconfigureerd met [https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
+
 >
 
 
 
-## De service-URL voor zoeken en promoten wijzigen {#changing-the-search-promote-service-url}
+## De service-URL van de Search&amp;Promote wijzigen {#changing-the-search-promote-service-url}
 
-De standaard-URL die is geconfigureerd voor de service Zoeken en bevorderen is `https://searchandpromote.omniture.com/px/`. Om de verschillende dienst te gebruiken, gebruik de console OSGi om een verschillende URL te specificeren.
+De standaard URL die voor de dienst van de Search&amp;Promote wordt gevormd is `https://searchandpromote.omniture.com/px/`. Om de verschillende dienst te gebruiken, gebruik de console OSGi om een verschillende URL te specificeren.
 
 1. Open de console OSGi en klik de Configuratie tabel. ([https://localhost:4502/system/console/configMgr.](https://localhost:4502/system/console/configMgr))
-1. Klik op het item Dag-CQ zoeken en configuratie bevorderen.
+1. Klik het punt van de Configuratie van de Search&amp;Promote van Dag CQ.
 1. Voer de URL in het vak Externe server-URI in en klik op Opslaan.
 
-## De verbinding met Zoeken&amp;bevorderen configureren {#configuring-the-connection-to-search-promote}
+## De verbinding met Search&amp;Promote {#configuring-the-connection-to-search-promote} configureren
 
-Configureer een of meer verbindingen met de functie Zoeken en bevorderen, zodat uw webpagina&#39;s kunnen communiceren met de service. Als u verbinding wilt maken, hebt u de lididentificatie en het accountnummer van uw zoek&amp;Promote account nodig.
+Vorm één of meerdere verbindingen aan Search&amp;Promote zodat uw Web-pagina&#39;s met de dienst kunnen interactie aangaan. Als u verbinding wilt maken, hebt u de lididentificatie en het accountnummer van uw Search&amp;Promote-account nodig.
 
-1. Selecteer **Cloud Services** in het pictogram Extra **>** Implementatie ****.
+1. Selecteer **Gereedschappen** pictogram > **Implementatie** **Cloud Services**.
 
-   Hiermee gaat u naar het dashboard voor cloudservices. Als de URL van het dashboard op een lokale machine er ongeveer als volgt uitziet:
+   Hiermee gaat u naar het dashboard van Cloud Services. Als de URL van het dashboard op een lokale machine er ongeveer als volgt uitziet:
 
    [https://localhost:4502/libs/cq/core/content/tools/cloudservices.html](https://localhost:4502/libs/cq/core/content/tools/cloudservices.html)
 
-1. Klik op de pagina Cloud Services op de koppeling Adobe Search&amp;Promote of het pictogram Zoeken&amp;Promote.
+1. Klik op de pagina Cloud Services op de koppeling Adobe Search&amp;Promote of Search&amp;Promote.
 
-1. Als dit de eerste keer is dat u Adobe Search&amp;Promote configureert, klikt u op **Nu** configureren om het deelvenster Configuratie maken te openen.
+1. Als dit de eerste keer is vormt u Adobe Search&amp;Promote, klik **vorm nu** om het Create paneel van de Configuratie te openen.
 
-   Klik op **Meer** informatie als u meer wilt weten over zoeken en promoten.
+   Als u meer over Search&amp;Promote wilt leren klikt **Meer** in plaats daarvan.
 
    ![](assets/chlimage_1-59.png)
 
-1. Voer een **titel** in die herkenbaar is voor auteurs van een pagina en voer een unieke **naam** in. Klik vervolgens op **Maken**.
+1. Voer een **Titel** in die herkenbaar is voor auteurs van pagina&#39;s en voer een unieke **Naam** in en klik vervolgens op **Maken**.
 
-   Het venster Component **** bewerken wordt geopend.
+   Het venster **Component bewerken** wordt geopend.
 
-   De nieuwe configuratie wordt ook weergegeven onder **Beschikbare configuraties** op het dashboard **Adobe Search&amp;Promote-lijstitem** Cloud Services.
+   Ook, verschijnt de pas gecreëerde Configuratie onder **Beschikbare Configuraties** op **Cloud Services dashboard** de lijstpunt van de Search&amp;Promote van de Adobe.
 
    ![](assets/chlimage_1-60.png)
 
-1. Voeg het volgende toe aan de velden in het dialoogvenster Component **** bewerken.
+1. Voeg het volgende toe aan de gebieden in **geef Component** dialoogdoos uit.
 
    * **Lid-id**
    * **Rekeningnummer**
+
    >[!NOTE]
    >
-   >Om deze informatie **zelf te krijgen,** moet u zich eerst aanmelden
+   >Om deze informatie **uzelf te krijgen,** moet u eerst login
    >
    >[https://searchandpromote.omniture.com/center/](https://searchandpromote.omniture.com/center/)
    >
@@ -90,21 +95,21 @@ Configureer een of meer verbindingen met de functie Zoeken en bevorderen, zodat 
    >
    >**Waar:**
    >
-   >    * **XXXXXXXXXX** komt overeen met uw** lid-id**
-   >    * **spYYYYYY** komt overeen met uw **accountnummer**
+   >    * **** XXXXXXXXXX komt overeen met uw** lid-id**
+   >    * **** spYYYYYY komt overeen met uw  **accountnummer**
 
 
-1. Klik op **Verbinden om te zoeken&amp;promoten**.
+1. Klik **Verbinding maken met Search&amp;Promote**.
 
-   Klik op **OK** wanneer het bericht voor het slagen van de verbinding wordt weergegeven.
+   Wanneer het bericht van het verbindingssucces verschijnt, klik **OK**.
 
-   (Na verbinding wordt de knoptekst gewijzigd in** Opnieuw verbinden met Zoeken&amp;Promoten**.)
+   (Na verbinding wordt de knoptekst gewijzigd in** Opnieuw verbinden met Search&amp;Promote**.)
 
-1. Click **OK**. De pagina Instellingen zoeken en bevorderen wordt weergegeven voor de configuratie die u zojuist hebt gemaakt.
+1. Klik **OK**. De pagina Instellingen Search&amp;Promote wordt weergegeven voor de configuratie die u zojuist hebt gemaakt.
 
-## Het datacenter configureren {#configuring-the-data-center}
+## Het vormen van het Centrum van Gegevens {#configuring-the-data-center}
 
-Als uw zoek&amp;promotieaccount zich in Azië of Europa bevindt, moet u het standaarddatacenter wijzigen zodat het naar het juiste datacenter wijst (het standaarddatacenter is voor Noord-Amerikaanse accounts).
+Als uw Search&amp;Promote-account zich in Azië of Europa bevindt, moet u het standaarddatacenter wijzigen zodat het naar het juiste datacenter wijst (het standaarddatacenter is voor Noord-Amerikaanse accounts).
 
 Het datacenter configureren:
 
@@ -118,40 +123,40 @@ Het datacenter configureren:
    * EMEA: [https://center.lon5.atomz.com/px/](https://center.lon5.atomz.com/px/)
    * APAC: [https://center.sin2.atomz.com/px/](https://center.sin2.atomz.com/px/)
 
-1. Click **Save**.
+1. Klik **Opslaan**.
 
-## &amp;Onderdelen zoeken en promoten aan Sidetrap toevoegen {#adding-search-promote-components-to-sidekick}
+## Search&amp;Promote toevoegen aan Sidetrap {#adding-search-promote-components-to-sidekick}
 
-Bewerk in de ontwerpmodus een **onderdeel** om de componenten Zoeken en bevorderen in Sidetrap mogelijk te maken. (Raadpleeg de documentatie bij [Componenten](/help/sites-developing/components.md#addinganewcomponenttotheparagraphsystemdesignmode) voor meer informatie.)
+Bewerk in de ontwerpmodus een **par**-component om de Search&amp;Promote-componenten in Sidetrap toe te staan. (Zie de documentatie [Components](/help/sites-developing/components.md#addinganewcomponenttotheparagraphsystemdesignmode) voor meer informatie.)
 
-Zie [Zoekfuncties toevoegen aan een webpagina](/help/sites-authoring/search-and-promote.md)voor informatie over het gebruik van de componenten.)
+Voor informatie over het gebruiken van de componenten, zie [Search&amp;Promote aan een Web-pagina toevoegen](/help/sites-authoring/search-and-promote.md).)
 
-## De service Zoeken en promoten opgeven die uw pagina&#39;s gebruiken {#specifying-the-search-promote-service-that-your-pages-use}
+## De service Search&amp;Promote opgeven die uw pagina&#39;s gebruiken {#specifying-the-search-promote-service-that-your-pages-use}
 
-Webpagina&#39;s zodanig configureren dat deze een specifieke service Zoeken en bevorderen gebruiken. Componenten zoeken en promoten gebruiken automatisch de service van hun hostpagina.
+Webpagina&#39;s configureren zodat deze een specifieke Search&amp;Promote-service gebruiken. Componenten van Search&amp;Promote gebruiken automatisch de service van hun hostpagina.
 
-Wanneer u de eigenschappen Zoeken&amp;Promoteren voor een pagina configureert, nemen alle onderliggende pagina&#39;s de instellingen over. Indien nodig, kunt u kindpagina&#39;s vormen om de geërfte montages met voeten te treden.
+Wanneer u de Search&amp;Promote-eigenschappen voor een pagina configureert, nemen alle onderliggende pagina&#39;s de instellingen over. Indien nodig, kunt u kindpagina&#39;s vormen om de geërfte montages met voeten te treden.
 
 >[!NOTE]
 >
->De de dienstverbinding moet reeds worden gevormd. (Zie De verbinding [configureren voor zoeken en bevorderen](#connection).)
+>De de dienstverbinding moet reeds worden gevormd. (Zie [De verbinding met Search&amp;Promote](#connection) configureren.)
 
-1. Open het dialoogvenster **Pagina-eigenschappen** . Klik bijvoorbeeld op de pagina** Websites** met de rechtermuisknop op de pagina en klik op **Eigenschappen**.
-1. Klik op het tabblad **Cloud Services** .
+1. Open het dialoogvenster **Pagina-eigenschappen**. Klik bijvoorbeeld op de pagina** Websites** met de rechtermuisknop op de pagina en klik op **Eigenschappen**.
+1. Klik op het tabblad **Cloud Services**.
 1. Als u de overerving van configuraties van cloudservices van een bovenliggende pagina wilt uitschakelen, klikt u op het hangslotpictogram naast het overervingspad.
 
    ![](assets/sandpinheritpadlock.png)
 
-1. Klik op Service **** toevoegen, selecteer **Adobe Search&amp;Promote** en klik op **OK**.
-1. Selecteer de verbindingsconfiguratie voor uw zoek&amp;promotieaccount en klik op **OK**.
+1. Klik **Service toevoegen**, selecteer **Adobe Search&amp;Promote**, en klik **OK**.
+1. Selecteer de verbindingsconfiguratie voor uw Search&amp;Promote-account en klik op **OK**.
 
 ## Productfeed {#product-feed}
 
-Met de integratie Zoeken en bevorderen kunt u:
+Dankzij de Search&amp;Promote-integratie kunt u:
 
 * gebruik de eCommerce-API, onafhankelijk van de onderliggende structuur van de gegevensopslagruimte en het handelsplatform.
-* hefboomwerking de eigenschap van de Schakelaar van de Index van Onderzoek&amp;Promote om een productvoer in formaat van XML te verstrekken.
-* hefboomwerking de Verre eigenschap van Controle van Onderzoek&amp;Promote om op bestelling of geplande verzoeken van de productvoer uit te voeren
-* feed-generatie voor verschillende zoek&amp;Promote accounts, geconfigureerd als configuraties met cloudservices.
+* hefboomwerking de eigenschap van de Schakelaar van de Index van Search&amp;Promote om een productvoer in formaat van XML te verstrekken.
+* de functie voor afstandsbediening van Search&amp;Promote gebruiken om op aanvraag of geplande aanvragen van de productfeed uit te voeren
+* feed generation voor verschillende Search&amp;Promote-accounts, geconfigureerd als cloudservices configuraties.
 
-Lees voor meer informatie de [Productfeed](/help/sites-administering/product-feed.md).
+Lees [Productfeed](/help/sites-administering/product-feed.md) voor meer informatie.

@@ -18,9 +18,9 @@ ht-degree: 4%
 ---
 
 
-# Oorspronkelijke inhoud van sandbox {#initial-sandbox-content}
+# Eerste sandbox-inhoud {#initial-sandbox-content}
 
-In deze sectie maakt u de volgende pagina&#39;s die allemaal de [paginasjabloon](initial-app.md#createthepagetemplate)gebruiken:
+In deze sectie maakt u de volgende pagina&#39;s die allemaal de [paginasjabloon](initial-app.md#createthepagetemplate) gebruiken:
 
 * SCF Sandbox Site, die wordt omgeleid naar de Engelse versie van de hoofdpagina.
 
@@ -28,29 +28,29 @@ In deze sectie maakt u de volgende pagina&#39;s die allemaal de [paginasjabloon]
 
    * SCF-afspelen - Onderliggend item van de hoofdpagina waarop moet worden afgespeeld.
 
-Hoewel deze zelfstudie niet in [taalkopieën](../../help/sites-administering/tc-prep.md)wordt geschreven, is deze zo ontworpen dat de hoofdpagina detectie van de voorkeurstaal voor de gebruiker via de HTML-koptekst kan implementeren en omleidt naar de juiste hoofdpagina voor de taal. De conventie is de landcode van twee letters te gebruiken voor de knooppuntnaam van de pagina, bijvoorbeeld &quot;en&quot; voor Engels, &quot;fr&quot; voor Frans, enzovoort.
+Hoewel deze zelfstudie niet in [taalkopieën](../../help/sites-administering/tc-prep.md) overkomt, is deze zo ontworpen dat de hoofdpagina detectie van de voorkeurstaal voor de gebruiker kan implementeren via de HTML-koptekst en doorsturen naar de juiste hoofdpagina voor de taal. De conventie is de landcode van twee letters te gebruiken voor de knooppuntnaam van de pagina, bijvoorbeeld &quot;en&quot; voor Engels, &quot;fr&quot; voor Frans, enzovoort.
 
 ## Eerste pagina&#39;s maken {#create-first-pages}
 
-Nu er een [paginamalplaatje](initial-app.md#createthepagetemplate)is, kunnen wij de wortelpagina van de website in de /content folder vestigen.
+Nu er een [paginasjabloon](initial-app.md#createthepagetemplate) is, kunnen wij de wortelpagina van de website in de /content folder vestigen.
 
 1. De standaard-UI biedt momenteel blauwdrukken voor het maken van sites. Aangezien deze zelfstudie een eenvoudige plaats creeert, is klassieke UI nuttig.
 
-   Als u wilt overschakelen naar de klassieke UI, selecteert u de globale navigatie en houdt u de muisaanwijzer boven de rechterzijde van het pictogram Projecten. Selecteer het pictogram *Overschakelen naar klassieke gebruikersinterface* dat wordt weergegeven:
+   Als u wilt overschakelen naar de klassieke UI, selecteert u de globale navigatie en houdt u de muisaanwijzer boven de rechterzijde van het pictogram Projecten. Selecteer het pictogram *Overschakelen naar klassieke gebruikersinterface* dat verschijnt:
 
    ![classic-ui](assets/classic-ui.png)
 
-   De capaciteit om op klassieke UI over te schakelen moet door een beheerder [worden](../../help/sites-administering/enable-classic-ui.md)toegelaten.
+   De capaciteit om op klassieke UI over te schakelen moet [toegelaten door een beheerder ](../../help/sites-administering/enable-classic-ui.md) zijn.
 
-1. Van de [klassieke UI Welkome pagina](http://localhost:4502/welcome.html), uitgezochte **[!UICONTROL Websites]**.
+1. Van [klassieke UI Welkome pagina](http://localhost:4502/welcome.html), uitgezochte **[!UICONTROL Websites]**.
 
    ![classic-ui-website](assets/classic-ui-website.png)
 
-   U kunt ook rechtstreeks toegang krijgen tot de klassieke UI voor websites door naar [/sitebeheerder te bladeren.](http://localhost:4502/siteadmin)
+   U kunt ook rechtstreeks toegang krijgen tot de klassieke UI voor websites door naar [/site-admin.](http://localhost:4502/siteadmin) te bladeren
 
-1. Selecteer in het verkenner-venster **[!UICONTROL Websites]** en kies vervolgens op de werkbalk **[!UICONTROL New]** > **[!UICONTROL New Page]**.
+1. Selecteer **[!UICONTROL Websites]** in het verkennervenster en selecteer **[!UICONTROL New]** > **[!UICONTROL New Page]** op de werkbalk.
 
-   Voer in het **[!UICONTROL Create Page]** dialoogvenster het volgende in:
+   Voer in het dialoogvenster **[!UICONTROL Create Page]** het volgende in:
 
    * Titel: `SCF Sandbox Site`
    * Naam: `an-scf-sandbox`
@@ -59,14 +59,14 @@ Nu er een [paginamalplaatje](initial-app.md#createthepagetemplate)is, kunnen wij
 
    ![classic-ui-create-page](assets/classic-ui-create-page.png)
 
-1. Selecteer in het verkenner-venster de pagina die u net hebt gemaakt `/Websites/SCF Sandbox Site`en klik op **[!UICONTROL New]** > **[!UICONTROL New Page]**:
+1. Selecteer in het verkenner-venster de pagina die u zojuist hebt gemaakt, `/Websites/SCF Sandbox Site` en klik op **[!UICONTROL New]** > **[!UICONTROL New Page]**:
 
    * Titel: `SCF Sandbox`
    * Naam: `en`
    * Selecteer **[!UICONTROL An SCF Sandbox Play Template]**
    * Klik op **[!UICONTROL Create]**
 
-1. Selecteer in het verkenner-venster de pagina die u net hebt gemaakt `/Websites/SCF Sandbox Site/SCF Sandbox`en klik op **[!UICONTROL New]** > **[!UICONTROL New Page]**
+1. Selecteer in het verkennervenster de pagina die u net hebt gemaakt, `/Websites/SCF Sandbox Site/SCF Sandbox` en klik op **[!UICONTROL New]** > **[!UICONTROL New Page]**
 
    * Titel: `SCF Play`
    * Naam: `play`
@@ -83,11 +83,11 @@ Nu er een [paginamalplaatje](initial-app.md#createthepagetemplate)is, kunnen wij
 
 ## Het ontwerppad toevoegen {#add-the-design-path}
 
-Wanneer ` [/etc/designs/an-scf-sandbox](setup-website.md#setupthedesigntreeetcdesigns)` werd gecreeerd gebruikend de ontwerpsectie van de console van Hulpmiddelen, het bezit &quot;
+Wanneer ` [/etc/designs/an-scf-sandbox](setup-website.md#setupthedesigntreeetcdesigns)` is gemaakt met de ontwerpsectie van de console Tools, wordt de eigenschap &quot;
 
 * `cq:template="/libs/wcm/core/templates/designpage"`
 
-is gedefinieerd, hetgeen de optionele mogelijkheid biedt om naar ontwerpelementen in een script te verwijzen met behulp van `currentDesign.getPath()`. Bijvoorbeeld
+is gedefinieerd, hetgeen de optionele mogelijkheid biedt om te verwijzen naar ontwerpelementen in een script met `currentDesign.getPath()`. Bijvoorbeeld
 
 * `% String favIcon = currentDesign.getPath() + "/favicon.ico"; %`
 
@@ -96,7 +96,7 @@ is gedefinieerd, hetgeen de optionele mogelijkheid biedt om naar ontwerpelemente
    * Type: `String`
    * Waarde: `/etc/designs/an-scf-sandbox`
 
-* Klik op groen `[+] Add`
+* Klik op het groene `[+] Add`
 
 De oplossing moet er als volgt uitzien:
 

@@ -11,6 +11,9 @@ topic-tags: configuring
 discoiquuid: a79839e2-be39-418b-a3bd-f5457e555172
 translation-type: tm+mt
 source-git-commit: f24142064b15606a5706fe78bf56866f7f9a40ae
+workflow-type: tm+mt
+source-wordcount: '1244'
+ht-degree: 0%
 
 ---
 
@@ -26,11 +29,11 @@ Digitaal vermogensbeheer wordt vaak gebruikt in gevallen waarin de prestaties va
 
 Slechte prestaties bij het beheer van digitale middelen kunnen de gebruikerservaring op drie manieren beïnvloeden: interactieve prestaties, middelenverwerking en downloadsnelheid. Om de prestaties te verbeteren, is het belangrijk om de waargenomen prestaties correct te meten en doelmeetwaarden te bepalen.
 
-**1. Interactief zoeken en bladeren** Gebruikers zoeken naar middelen of zoeken in de DAM Finder en klagen over trage reactietijden of dat de zoekresultaten niet meteen worden weergegeven. Dit is een interactief prestatieprobleem.
+**1. Interactief zoeken en bladeren** Gebruikers zoeken naar elementen of zoeken in de DAM Finder en klagen over trage reactietijden of dat de zoekresultaten niet meteen worden weergegeven. Dit is een interactief prestatieprobleem.
 
 Interactieve prestaties worden gemeten in termen van responstijd van de pagina. Dit is de tijd het van het ontvangen van het HTTP- verzoek aan het sluiten van de reactie van HTTP neemt, die van de dossiers van het verzoeklogboek kan worden bepaald. De typische doelprestaties zijn een pagina reactietijd onder twee seconden.
 
-**2. Middelenverwerking** Een probleem bij de verwerking van bedrijfsmiddelen is wanneer gebruikers elementen uploaden en het duurt enkele minuten voordat elementen gemakkelijk worden omgezet en opgenomen in AEM DAM.
+**2. Middelenverwerking** Een probleem bij de verwerking van bedrijfsmiddelen is wanneer gebruikers elementen uploaden en het enkele minuten duurt voordat elementen eenvoudig worden omgezet en in AEM DAM worden opgenomen.
 
 De prestaties van de verwerking van bedrijfsmiddelen worden gemeten in termen van de gemiddelde voltooiingstijd van het werkstroomproces. Dit is de tijd die nodig is om het workflowproces voor het bijwerken van bedrijfsmiddelen aan te roepen tot de voltooiing ervan, die kan worden bepaald vanuit de gebruikersinterface van workflowrapporten. De standaardprestaties van het doel zijn afhankelijk van de grootte en het type van de verwerkte elementen en het aantal uitvoeringen. Voorbeelden van doelprestaties kunnen als volgt zijn:
 
@@ -38,7 +41,7 @@ De prestaties van de verwerking van bedrijfsmiddelen worden gemeten in termen va
 * Minder dan één minuut voor afbeeldingen die kleiner zijn dan 100 MB met behulp van standaarduitvoeringen
 * minder dan vijf minuten voor HD-videoclips van minder dan één minuut
 
-**3. Downloadsnelheid** Een doorvoerprobleem is wanneer het downloaden vanaf AEM DAM lang duurt en miniaturen worden niet meteen weergegeven wanneer u naar de DAM-beheerder of de DAM-Finder bladert.
+**3. Downloadsnelheid** Een doorvoerprobleem is wanneer het downloaden van AEM DAM lang duurt en miniaturen niet direct worden weergegeven wanneer u naar de DAM-beheerder of de DAM-Finder bladert.
 
 De uitvoerprestaties worden gemeten in kilobits per seconde. De typische doelprestaties zijn 300 kilobits per seconde voor 100 gelijktijdige downloads.
 
@@ -47,7 +50,7 @@ De uitvoerprestaties worden gemeten in kilobits per seconde. De typische doelpre
 Om te kunnen schatten welke hardware u nodig hebt om activa te verwerken, moeten de volgende aspecten in aanmerking worden genomen:
 
 * De resolutie van de afbeeldingen in een hoeveelheid pixels
-* De heap die is toegewezen aan het AEM-proces
+* De heap die is toegewezen aan AEM proces
 
 De verwerkingstijd wordt bepaald door de hoeveelheid pixels in de afbeelding. Meer pixels betekent dat de verwerking langer duurt.
 Het afbeeldingstype, de compressiesnelheid of de gerelateerde grootte van het bestand waarin de afbeelding is opgeslagen, hebben geen significante invloed op de algehele prestaties.
@@ -56,31 +59,31 @@ Er is vastgesteld dat heap de belangrijkste beperkende factor is. Wanneer het el
 
 De DAM-processen zijn zeer geschikt om in gelijke mate te worden uitgevoerd. Het uploaden van middelen in een batch- en multicore-processor versnelt de absolute tijd die per middel wordt besteed.
 
-**5. De hardwarevereisten voor het uitvoeren van de verwerking van bedrijfsmiddelen schatten**
+**5. Het schatten van de Vereisten van de Hardware voor het Uitvoeren van Activa - verwerking**
 
 Voor een uitgebreide verwerking van digitale elementen zijn geoptimaliseerde hardwarebronnen nodig. De belangrijkste factoren zijn de beeldgrootte en de maximale doorvoer van verwerkte afbeeldingen.
 
-Wijs minstens 16 GB heap toe en configureer de workflow [!UICONTROL DAM Update Asset] om het pakket [](/help/assets/camera-raw.md) Camera Raw te gebruiken voor het opnemen van Raw-afbeeldingen.
+Wijs minstens 16 GB heap toe en configureer de [!UICONTROL DAM Update Asset]-workflow om het [Camera Raw pakket](/help/assets/camera-raw.md) te gebruiken voor de inname van Raw-afbeeldingen.
 
-## Het systeem begrijpen {#understanding-the-system}
+## Het systeem {#understanding-the-system} begrijpen
 
 Een standaard DAM-instelling bestaat uit eindgebruikers die DAM gebruiken via een taakverdelingsmechanisme. De DAM-instantie kan onderdeel zijn van een geclusterde installatie, waarbij elke DAM-instantie wordt uitgevoerd in een Java Virtual Machine-proces op een fysieke computer of een virtuele machine. DAM-opslag wordt geleverd door een RAID-schijf in geval van installatie op één computer of een beheerde netwerkaangesloten opslag in geval van geclusterde installatie.
 
 De volgende legenda beschrijft de mogelijke gebieden van de prestatiesdaling met sommige oplossingen, zoals aangewezen.
 
-**Netwerkverbinding met eindgebruiker** Een trage netwerkverbinding kan problemen met de doorvoer veroorzaken, in sommige zeldzame gevallen ook latentieproblemen. Soms heeft de gebruiker een langzame verbinding van ISP, vooral in intranets. Dit is een teken van onjuiste netwerktopologie.
+**De verbinding van het netwerk aan eind** gebruikerEen langzame netwerkverbinding kan productiekwesties veroorzaken, in sommige zeldzame gevallen ook latentiekwesties. Soms heeft de gebruiker een langzame verbinding van ISP, vooral in intranets. Dit is een teken van onjuiste netwerktopologie.
 
-**Tijdelijk bestandssysteem** Een traag lokaal bestandssysteem kan problemen met interactieve prestaties veroorzaken, vooral als het gaat om zoeken, omdat de zoekindexen op de lokale schijf worden opgeslagen. Het kan extra problemen van de activaverwerking veroorzaken als het proces van de bevellijn wordt gebruikt.
+**Tijdelijk** bestandssysteemEen traag lokaal bestandssysteem kan problemen met interactieve prestaties veroorzaken, vooral als het gaat om zoeken, omdat de zoekindexen op de lokale schijf worden opgeslagen. Het kan extra problemen van de activaverwerking veroorzaken als het proces van de bevellijn wordt gebruikt.
 
-**AEM DAM Finder** Interactieve prestatiesproblemen, die vaak in onderzoeken worden ervaren worden veroorzaakt door hoog gebruik van cpu toe te schrijven aan vele gezamenlijke gebruikers of andere cpu-verbruikende processen op de zelfde instantie. U kunt de prestaties verbeteren door van virtuele machines over te schakelen op speciale machines en ervoor te zorgen dat er geen andere services op de computer worden uitgevoerd. Als een hoge processorbelasting wordt veroorzaakt door de verwerking van bedrijfsmiddelen en veel gelijktijdige gebruikers, wordt u aangeraden extra clusterknooppunten toe te voegen.
+**AEM DAM** FinderInteractieve prestatiesproblemen, die vaak in onderzoeken worden ervaren worden veroorzaakt door hoog gebruik van cpu toe te schrijven aan vele gezamenlijke gebruikers of andere cpu-verbruikende processen op de zelfde instantie. U kunt de prestaties verbeteren door van virtuele machines over te schakelen op speciale machines en ervoor te zorgen dat er geen andere services op de computer worden uitgevoerd. Als een hoge processorbelasting wordt veroorzaakt door de verwerking van bedrijfsmiddelen en veel gelijktijdige gebruikers, wordt u aangeraden extra clusterknooppunten toe te voegen.
 
-**AEM DAM Workflow** Lange-actieve workflowprocessen tijdens het opnemen van bedrijfsmiddelen veroorzaken prestatieproblemen bij de verwerking van bedrijfsmiddelen. Afhankelijk van het type elementen dat wordt verwerkt, kan dit wijzen op CPU-overbenutting. De dag adviseert dat u het aantal andere processen vermindert die op het systeem lopen en het aantal beschikbare cpu&#39;s verhoogt door clusterknopen toe te voegen.
+**AEM DAM-** workflowLangdurige workflowprocessen tijdens het opnemen van bedrijfsmiddelen veroorzaken prestatieproblemen bij de verwerking van bedrijfsmiddelen. Afhankelijk van het type elementen dat wordt verwerkt, kan dit wijzen op CPU-overbenutting. De dag adviseert dat u het aantal andere processen vermindert die op het systeem lopen en het aantal beschikbare cpu&#39;s verhoogt door clusterknopen toe te voegen.
 
-**De slechte connectiviteit van de Connectiviteit** NAS van de Connectiviteit aan NAS veroorzaakt interactieve prestatiesproblemen, omdat de toegang tot van nieuwe knopen tijdens activaverwerking als gevolg van netwerklatentie wordt vertraagd. Bovendien, beïnvloedt de langzame netwerkproductie negatief productie, maar ook prestaties van de activaverwerking, omdat het laden en het bewaren van uitvoeringen wordt vertraagd.
+**NAS** ConnectivityPoor netwerkconnectiviteit aan NAS veroorzaakt interactieve prestatiesproblemen, omdat de toegang tot van nieuwe knopen tijdens activaverwerking als gevolg van netwerklatentie wordt vertraagd. Bovendien, beïnvloedt de langzame netwerkproductie negatief productie, maar ook prestaties van de activaverwerking, omdat het laden en het bewaren van uitvoeringen wordt vertraagd.
 
 De redenen voor slechte latentie en productie in NAS zijn gewoonlijk netwerktopologie of NAS overgebruik door andere diensten.
 
-**De Opslag van de Opslag** van het netwerk Gehechte opslagsystemen van het netwerk kan een serie van problemen veroorzaken:
+**Network Attached** StorageOver-used Network Attached Storage-opslagsystemen kunnen een reeks problemen veroorzaken:
 
 * Weinig schijfruimte is een vaak aangetroffen probleem dat kan worden voorkomen door een DAM-project naar behoren te rangschikken.
 * De hoge schijflatentie zal zich in langzame toegangstijden voor CRX verspreiden en kan in interactieve prestatiesproblemen resulteren.
@@ -98,7 +101,7 @@ Voor elk DAM-project moet u een systeem voor het testen van de prestaties instel
 1. De netwerklatentie en productie van de monitor van de cluster DAM aan uw NAS.
 1. Test, indien mogelijk, de lees- en schrijfprestaties en de schijflatentie rechtstreeks op de NAS.
 
-## Knelpunten aanpassen {#tweaking-bottlenecks}
+## Knelpunten {#tweaking-bottlenecks} afstellen
 
 De volgende prestatietwekken zijn tot dusver gebruikt in projecten:
 

@@ -14,11 +14,11 @@ ht-degree: 8%
 ---
 
 
-# Opmerkingen bij de release Adobe Experience Manager 6.5 {#release-notes}
+# Opmerkingen bij de release van Adobe Experience Manager 6.5 {#release-notes}
 
 + [Overzicht AEM 6.5](home.md)
 + [Algemene opmerkingen bij de release](release-notes.md)
-+ Release-aantekeningen bij Service Pack {#service-pack}
++ Opmerkingen bij de release van Service Pack {#service-pack}
    + [Wat is er nieuw?](new-features-latest-service-pack.md)
    + [Opmerkingen bij de release Service Pack 7](sp-release-notes.md)
    + [Opmerkingen bij de vorige release Service Pack](previous-hotfixes-featurepacks.md)

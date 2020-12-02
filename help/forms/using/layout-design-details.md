@@ -23,13 +23,13 @@ ht-degree: 0%
 XFA-formuliersjablonen of XDP&#39;s zijn de sjablonen voor:
 
 * [Letters](/help/forms/using/create-letter.md)
-* [Kanaal](/help/forms/using/web-channel-print-channel.md#printchannel) van de druk van [Interactieve Mededelingen](/help/forms/using/interactive-communications-overview.md)
+* [Kanaal ](/help/forms/using/web-channel-print-channel.md#printchannel) voor  [interactieve communicatie afdrukken](/help/forms/using/interactive-communications-overview.md)
 
 * Lay-outfragmenten
 
 Een XDP is ontworpen in Adobe Forms Designer. Dit artikel bevat informatie over hoe u XDP&#39;s kunt ontwerpen voor het maken van effectieve overeenkomsten/interactieve communicatie, zoals waar u formuliervelden of doelgebieden wilt gebruiken en wanneer u lay-outfragmenten wilt gebruiken.
 
-## Een lay-out maken voor letters of voor het afdrukkanaal van Interactieve communicatie {#creating-a-layout-for-letters-or-for-interactive-communications-print-channel}
+## Een lay-out maken voor letters of voor het afdrukkanaal {#creating-a-layout-for-letters-or-for-interactive-communications-print-channel} van Interactieve communicatie
 
 Een lay-out bepaalt de grafische lay-out van een brief/drukkanaal van een Interactieve Mededeling. De indeling kan typische formuliervelden bevatten, zoals &quot;Adres&quot; en &quot;Referentienummer&quot;. Het bevat ook lege subformulieren die doelgebieden aangeven. Maak de indeling in de formulierontwerper en wanneer deze is voltooid, uploadt de Application Specialist de indeling naar AEM server. Van daar, kunt u de lay-out selecteren wanneer het creëren van een correspondentiesjabloon of een drukkanaal van een Interactieve Mededeling.
 
@@ -60,41 +60,41 @@ Nadat u de indeling hebt geanalyseerd die nodig is om uw interactieve communicat
 
 Voer de volgende stappen uit om subformulier in een XDP-sjabloon te gebruiken:
 
-1. Open Forms Designer, selecteer **Bestand** > **Nieuw** > **Een leeg formulier** gebruiken, tik op **Volgende** en vervolgens op **Voltooien** om het formulier te openen voor het maken van een sjabloon.
+1. Open Forms Designer, selecteer **Bestand** > **Nieuw** > **Een leeg formulier gebruiken**, tik **Volgende** en tik vervolgens op **Voltooien** om het formulier te openen voor het maken van een sjabloon.
 
-   Selecteer de opties **Objectbibliotheek** en **Object** in het menu **Venster** .
+   Zorg ervoor dat de opties **Objectbibliotheek** en **Object** zijn geselecteerd in het menu **Venster**.
 
-1. Sleep de **subformuliercomponent** van de **objectbibliotheek** naar het formulier.
+1. Sleep de **Subform** component van **Objectbibliotheek** naar het formulier.
 
    ![Componentontwerper](assets/subform_component_designer_new.png)
 
-1. Selecteer het subformulier om de opties voor het subformulier in het venster **Object** in het rechterdeelvenster weer te geven.
-1. Selecteer het tabblad **Subformulier** en selecteer **Overlopen** in de vervolgkeuzelijst **Inhoud** . Sleep het linkereindpunt van het subformulier om de lengte aan te passen.
+1. Selecteer het subformulier om de opties voor het subformulier weer te geven in het venster **Object** in het rechterdeelvenster.
+1. Selecteer het tabblad **Subformulier** en selecteer **Overlopen** in de vervolgkeuzelijst **Inhoud**. Sleep het linkereindpunt van het subformulier om de lengte aan te passen.
 
    ![Subformulier met stroominhoud](assets/object_subform_flowed_new.png)
 
-1. Op het tabblad **Binding** :
+1. Op het tabblad **Binding**:
 
-   1. Geef een naam voor het subformulier op in het veld **Naam** .
-   1. Selecteer **Geen gegevensbinding** in de vervolgkeuzelijst **Gegevensbinding** .
+   1. Geef een naam voor het subformulier op in het veld **Naam**.
+   1. Selecteer **Geen gegevensbinding** in de vervolgkeuzelijst **Gegevensbinding**.
 
 1. Selecteer op dezelfde manier het basissubformulier in het linkerdeelvenster.
 
    ![Basissubformulier](assets/root_subform_designer_new.png)
 
-1. Selecteer het tabblad **Subformulier** en selecteer **Overlopen** in de vervolgkeuzelijst **Inhoud** . Op het tabblad **Bindingen** :
+1. Selecteer het tabblad **Subformulier** en selecteer **Overlopen** in de vervolgkeuzelijst **Inhoud**. Op het tabblad **Bindingen**:
 
-   1. Geef een naam voor het subformulier op in het veld **Naam** .
-   1. Selecteer **Geen gegevensbinding** in de vervolgkeuzelijst **Gegevensbinding** .
+   1. Geef een naam voor het subformulier op in het veld **Naam**.
+   1. Selecteer **Geen gegevensbinding** in de vervolgkeuzelijst **Gegevensbinding**.
 
-   Herhaal stap 2 tot en met 5 om meer subformulieren aan de XDP-sjabloon toe te voegen. Voeg alleen tijdens het ontwerpen van de interactieve communicatie [tekst, documentfragmenten, afbeeldingen en grafieken](create-interactive-communication.md#step2) toe aan de doelgebieden.
+   Herhaal stap 2 tot en met 5 om meer subformulieren aan de XDP-sjabloon toe te voegen. Voeg [alleen tekst, documentfragmenten, afbeeldingen en grafieken](create-interactive-communication.md#step2) toe aan de doelgebieden tijdens het ontwerpen van de interactieve communicatie.
 
 1. Selecteer **Bestand** > **Opslaan als** om het bestand op te slaan op het lokale bestandssysteem:
 
    1. Navigeer naar de locatie waar u het bestand wilt opslaan en geef een naam op voor de XDP-sjabloon.
-   1. Selecteer **.xdp** in de vervolgkeuzelijst **Opslaan als type** .
+   1. Selecteer **.xdp** in de vervolgkeuzelijst **Opslaan als type**.
 
-   1. Tik op **Opslaan**.
+   1. Tik **Opslaan**.
 
 ### Afbeeldingsveldcomponent gebruiken in een XDP-sjabloon {#use-image-field-component-in-an-xdp-template}
 
@@ -102,16 +102,16 @@ Gebruik Afbeeldingsveld of Subformulier in de XDP-sjabloon en voeg een afbeeldin
 
 >[!NOTE]
 >
->Voeg afbeelding toe aan het kanaal Afdrukken van de interactieve communicatie in plaats van afbeelding toe te voegen aan het afbeeldingsveld of de subformuliercomponent in de XDP-sjabloon. Zie Inhoud [toevoegen aan de interactieve communicatie](../../forms/using/create-interactive-communication.md#step2)voor meer informatie.
+>Voeg afbeelding toe aan het kanaal Afdrukken van de interactieve communicatie in plaats van afbeelding toe te voegen aan het afbeeldingsveld of de subformuliercomponent in de XDP-sjabloon. Zie [Inhoud toevoegen aan de interactieve communicatie](../../forms/using/create-interactive-communication.md#step2) voor meer informatie.
 
 Voer de volgende stappen uit om de component van het Gebied van het Beeld in een malplaatje te gebruiken XDP:
 
-1. Sleep de component **Afbeeldingsveld** van de **objectbibliotheek** naar het formulier.
-1. Selecteer het subformulier om de opties voor het subformulier in het venster **Object** in het rechterdeelvenster weer te geven.
-1. Op het tabblad **Binding** :
+1. Sleep de component **Afbeeldingsveld** van **Objectbibliotheek** naar het formulier.
+1. Selecteer het subformulier om de opties voor het subformulier weer te geven in het venster **Object** in het rechterdeelvenster.
+1. Op het tabblad **Binding**:
 
-   1. Geef een naam voor het afbeeldingsveld op in het veld **Naam** .
-   1. Selecteer **Geen gegevensbinding** in de vervolgkeuzelijst **Gegevensbinding** .
+   1. Geef een naam voor het afbeeldingsveld op in het veld **Naam**.
+   1. Selecteer **Geen gegevensbinding** in de vervolgkeuzelijst **Gegevensbinding**.
 
 ### XDP-sjabloon maken voor layoutfragmenten {#xdplayoutfragments}
 
@@ -119,50 +119,50 @@ Gebruik de component Tabel in Forms Designer om lay-outfragmenten te maken en ge
 
 >[!NOTE]
 >
->Voer tekst in de tabelcellen in of [maak alleen binding met de formuliergegevensmodelobjecten](create-interactive-communication.md#step2) tijdens het ontwerpen van de interactieve communicatie.
+>Typ alleen tekst in de tabelcellen of [maak binding met de formuliergegevensmodelobjecten](create-interactive-communication.md#step2) tijdens het ontwerpen van de interactieve communicatie.
 
 Voer de volgende stappen uit om de component Tabel in de XDP-sjabloon te gebruiken met Forms Designer:
 
-1. Sleep de component **Tabel** van de **Objectbibliotheek** naar het formulier.
-1. In het dialoogvenster Tabel **** invoegen:
+1. Sleep de **Table** component van **Objectbibliotheek** naar het formulier.
+1. In het **dialoogvenster Tabel invoegen**:
 
    1. Geef het aantal rijen en kolommen voor de tabel op.
-   1. Schakel het selectievakje Koptekstrij **opnemen in tabel** in om een rij voor de tabelkoptekst op te nemen.
-   1. Tik op **OK**.
+   1. Selecteer **Koptekstrij in tabel opnemen** om een rij voor de tabelkoptekst op te nemen.
+   1. Tik **OK**.
 
-1. Tik **+** in het linkerdeelvenster naast de naam van de tabel, klik met de rechtermuisknop op de celnamen in de koptekst en andere rijen en selecteer **Naam van object** wijzigen om de tabelcellen een andere naam te geven.
-1. Klik op de tekstvelden voor de tabelkoptekst in de **ontwerpweergave** en geef deze een andere naam.
-1. Sleep de component **Tekstveld** van de **objectbibliotheek** naar elke tabelcel in de **ontwerpweergave**. Voer deze stap uit om tabelcellen te kunnen binden aan de formuliergegevensmodelobjecten tijdens het ontwerpen van de interactieve communicatie.
+1. Tik **+** in het linkerdeelvenster naast de naam van de tabel, klik met de rechtermuisknop op de celnamen in de koptekst en andere rijen en selecteer **Naam van object wijzigen** om de naam van de tabelcellen te wijzigen.
+1. Klik op de tekstvelden voor de tabelkoptekst in de **Ontwerpweergave** en wijzig de naam van de tekstvelden.
+1. Sleep de **Tekstveld** component van **Objectbibliotheek** naar elke tabelcel in **Ontwerpweergave**. Voer deze stap uit om tabelcellen te kunnen binden aan de formuliergegevensmodelobjecten tijdens het ontwerpen van de interactieve communicatie.
 
    ![Tekstvelden in een tabel](assets/text_fields_table_new.png)
 
-1. Selecteer de naam van de rij in het linkerdeelvenster en selecteer **Object** > **Binding** > Rij **herhalen voor elk gegevensitem**. Voer deze stap uit om ervoor te zorgen dat als een band tussen de lijstcellen van deze rij met de modelvoorwerpen van vormgegevens van inzamelingstype wordt gecreeerd, de lijstrij automatisch voor elk gegevenspunt wordt herhaald beschikbaar in het gegevensbestand.
+1. Selecteer de naam van de rij in het linkerdeelvenster en selecteer **Object** > **Binding** > **Rij herhalen voor elk gegevensitem**. Voer deze stap uit om ervoor te zorgen dat als een band tussen de lijstcellen van deze rij met de modelvoorwerpen van vormgegevens van inzamelingstype wordt gecreeerd, de lijstrij automatisch voor elk gegevenspunt wordt herhaald beschikbaar in het gegevensbestand.
 
-   Voer tekst in de tabelcellen in of [maak alleen binding met de formuliergegevensmodelobjecten](create-interactive-communication.md#step2) tijdens het ontwerpen van de interactieve communicatie.
+   Typ alleen tekst in de tabelcellen of [maak binding met de formuliergegevensmodelobjecten](create-interactive-communication.md#step2) tijdens het ontwerpen van de interactieve communicatie.
 
 1. Selecteer **Bestand** > **Opslaan als** om het bestand op te slaan op het lokale bestandssysteem:
 
    1. Navigeer naar de locatie waar u het bestand wilt opslaan en geef de naam voor de XDP-sjabloon op.
-   1. Selecteer **.xdp** in de vervolgkeuzelijst **Opslaan als type** .
+   1. Selecteer **.xdp** in de vervolgkeuzelijst **Opslaan als type**.
 
-   1. Tik op **Opslaan**.
+   1. Tik **Opslaan**.
 
 ### XDP-sjabloon uploaden naar de AEM Forms-server {#uploadxdptemplate}
 
 Nadat u een XDP-sjabloon hebt gemaakt met de Forms Designer, moet u de sjabloon uploaden naar de AEM Forms-server, zodat de sjabloon beschikbaar is voor gebruik tijdens het maken van de interactieve communicatie.
 
-1. Selecteer **Forms** > **Forms en documenten**.
-1. Tik op **Maken** > **Bestand uploaden**.
-1. Navigeer naar de locatie van de XDP-sjabloon op het lokale bestandssysteem en tik op **Openen** om de XDP-sjabloon te importeren naar de AEM Forms-server.
+1. Selecteer **Forms** > **Forms &amp; Documents**.
+1. Tik **Maken** > **Bestand uploaden**.
+1. Navigeer naar de locatie van de XDP-sjabloon op het lokale bestandssysteem en tik **Open** om de XDP-sjabloon te importeren naar de AEM Forms-server.
 
-## Schema gebruiken {#using-schema}
+## Schema {#using-schema} gebruiken
 
 U kunt een schema in een lay-out- of lay-outfragment gebruiken, maar het is niet verplicht. Als u een schema gebruikt, zorg het volgende ervoor:
 
 1. Layout en alle fragmentlay-outs die in een brief/Interactieve Communicatie worden gebruikt gebruiken het zelfde schema zoals de brief/Interactieve Communicatie.
 1. Alle velden die moeten worden gevuld met gegevens, zijn gebonden aan het schema.
 
-## Betrouwbare velden maken {#creating-relatable-fields}
+## Relateerbare velden {#creating-relatable-fields} maken
 
 Standaard worden alle velden beschouwd als relatief ten opzichte van verschillende andere gegevensbronnen. Als uw layout velden bevat die niet kunnen worden vergeleken met een gegevensbron, geeft u het veld een naam met het achtervoegsel &quot;_int&quot; (internal); bijvoorbeeld pageCount_int.
 
@@ -229,9 +229,9 @@ Gebruik een veld als u gegevens uit de module of gegevenswoordenboekelementen wi
 
 Wanneer elementen zoals het logo en het adres van uw organisatie op alle pagina&#39;s van een brief/Interactieve Mededeling verschijnen, creeer vormgebieden voor die elementen en plaats hen op de master pagina. Gebruik de binding Naam (veldnaam) voor deze velden.
 
-## De serverrenderindeling opgeven {#specify-the-server-nbsp-render-format}
+## De renderindeling van de server opgeven {#specify-the-server-nbsp-render-format}
 
 Gebruik de serverrenderindeling van de indeling naar dynamisch XML-formulier; anders, kunnen om het even welke brieven/Interactieve Mededelingen die op deze lay-out worden gebaseerd niet correct teruggeven. Standaard wordt de indeling voor het renderen van de server in Forms Designer ingesteld op Dynamisch XML-formulier. U zorgt ervoor dat de juiste indeling wordt gebruikt:
 
-* Klik in Designer op **Bestand** > **Formuliereigenschappen** > **Standaardwaarden** en controleer of de instelling PDF renderen/Indeling is ingesteld op Dynamisch XML-formulier.
+* Klik in Designer op **Bestand** > **Formuliereigenschappen** > **Standaardwaarden** en controleer of de instelling PDF render/Format is ingesteld op Dynamisch XML-formulier.
 

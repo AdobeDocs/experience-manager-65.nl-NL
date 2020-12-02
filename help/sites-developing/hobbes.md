@@ -19,13 +19,13 @@ ht-degree: 1%
 ---
 
 
-# Uw gebruikersinterface testen{#testing-your-ui}
+# Uw interface testen{#testing-your-ui}
 
 >[!NOTE]
 >
 >Vanaf AEM 6.5 is het testframework voor de gebruikersinterface van hobbes.js afgekeurd. Adobe is niet van plan haar verder te verbeteren en raadt klanten aan seleniumautomatisering te gebruiken.
 >
->Zie [Vervangen en Verwijderde functies](/help/release-notes/deprecated-removed-features.md).
+>Zie [Vervangen en verwijderde functies](/help/release-notes/deprecated-removed-features.md).
 
 AEM biedt een raamwerk voor het automatiseren van tests voor uw AEM UI. Met behulp van het framework schrijft en voert u tests voor de gebruikersinterface rechtstreeks in een webbrowser uit. Het framework biedt een javascript API voor het maken van tests.
 
@@ -33,24 +33,24 @@ Het AEM testframework gebruikt Hobbes.js, een testbibliotheek die in Javascript 
 
 >[!NOTE]
 >
->Raadpleeg de Hobbes.js- [documentatie](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/test-api/index.html) voor volledige informatie over de API.
+>Raadpleeg de [documentatie](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/test-api/index.html) voor volledige informatie over de API.
 
-## Structuur van de tests {#structure-of-tests}
+## Structuur van tests {#structure-of-tests}
 
 Wanneer het gebruiken van geautomatiseerde tests binnen AEM, zijn de volgende termijnen belangrijk om te begrijpen:
 
-| Actie | Een **actie** is een specifieke activiteit op een Web-pagina zoals het klikken van een verbinding of een knoop. |
+| Actie | Een **Actie** is een specifieke activiteit op een Web-pagina zoals het klikken van een verbinding of een knoop. |
 |---|---|
 | Testcase | Een **testcase** is een specifieke situatie die uit één of meerdere **Acties** kan worden samengesteld. |
-| Testsuite | Een **testsuite** is een groep verwante **testcase** die samen een specifiek gebruikscase test. |
+| Testsuite | Een **Testsuite** is een groep verwante **Testgevallen** die samen een specifiek gebruikscase testen. |
 
 ## Tests uitvoeren {#executing-tests}
 
-### Testuiteinden weergeven {#viewing-test-suites}
+### Testsuite {#viewing-test-suites} weergeven
 
 Open de testconsole om de geregistreerde testsuites te zien. Het deelvenster Tests bevat een lijst met testreeksen en de bijbehorende testdoosjes.
 
-Navigeer naar de console Tools via **Global Navigation -> Tools > Operations -> Testing**.
+Navigeer naar de console van Hulpmiddelen via **Algemene Navigatie -> Hulpmiddelen > Verrichtingen -> Testen**.
 
 ![chlimage_1-63](assets/chlimage_1-63.png)
 
@@ -58,7 +58,7 @@ Wanneer het openen van de console, zijn de Suites van de Test vermeld aan de lin
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
 
-### Eén testsuite uitvoeren {#running-a-single-test-suite}
+### Eén testsuite {#running-a-single-test-suite} uitvoeren
 
 Testsets kunnen afzonderlijk worden uitgevoerd. Wanneer u een testsuite uitvoert, verandert de pagina terwijl de testcase wordt uitgevoerd en de bijbehorende handelingen worden uitgevoerd. De resultaten verschijnen na afloop van de test. Pictogrammen geven de resultaten aan.
 
@@ -76,7 +76,7 @@ Een testsuite uitvoeren:
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
-1. Klik of tik op de testknop **Uitvoeren** .
+1. Klik of tik **Test** knoop van de Looppas.
 
    ![](do-not-localize/chlimage_1-4.png)
 
@@ -84,7 +84,7 @@ Een testsuite uitvoeren:
 
    ![chlimage_1-66](assets/chlimage_1-66.png)
 
-1. Bekijk de resultaten van de testcase door op de beschrijving te tikken of te klikken om het deelvenster **Resultaat** te openen. Als u in het deelvenster **Resultaat** op de naam van uw testcase tikt of erop klikt, worden alle details weergegeven.
+1. Bekijk de resultaten van de testcase door op de beschrijving te tikken of te klikken om het deelvenster **Resultaat** te openen. Tik of klik op de naam van uw testcase in het **paneel Resultaat** om alle details weer te geven.
 
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
@@ -94,23 +94,23 @@ Testsets worden opeenvolgend uitgevoerd in de volgorde waarin ze in de console w
 
 ![chlimage_1-68](assets/chlimage_1-68.png)
 
-1. Tik in het deelvenster Tests op de knop Alle tests **** uitvoeren of klik op de knop Tests **** uitvoeren onder de titel van de testsuite die u wilt uitvoeren.
+1. Tik op of klik op **Alle tests uitvoeren** of **Tests uitvoeren** onder de titel van de testsuite die u wilt uitvoeren.
 
    ![](do-not-localize/chlimage_1-5.png)
 
-1. Tik of klik op de titel van de testcase om de resultaten van elke testcase weer te geven. Als u in het deelvenster **Resultaat** op de naam van de test tikt of erop klikt, worden alle details weergegeven.
+1. Tik of klik op de titel van de testcase om de resultaten van elke testcase weer te geven. Tik of klik op de naam van de test in het venster **Resultaat** om alle details weer te geven.
 
    ![chlimage_1-69](assets/chlimage_1-69.png)
 
 ## Een eenvoudige testsuite maken en gebruiken {#creating-and-using-a-simple-test-suite}
 
-De volgende procedure begeleidt u door het creëren en uitvoeren van een Reeks van de Test gebruikend [Wij.Detailhandel inhoud](/help/sites-developing/we-retail.md), maar u kunt de test gemakkelijk wijzigen om een verschillende Web-pagina te gebruiken.
+De volgende procedure begeleidt u door de verwezenlijking en de uitvoering van een Reeks van de Test gebruikend [Wij.Detailhandel inhoud](/help/sites-developing/we-retail.md), maar u kunt de test gemakkelijk wijzigen om een verschillende Web-pagina te gebruiken.
 
-Zie de documentatie [van de](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/test-api/index.html)Hobbes.js-API voor meer informatie over het maken van uw eigen testsuites.
+Zie de [documentatie van de API van Hobbes.js](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/test-api/index.html) voor meer informatie over het maken van uw eigen testsuites.
 
 1. Open CRXDE Lite. ([https://localhost:4502/crx/de](https://localhost:4502/crx/de))
-1. Klik met de rechtermuisknop op de `/etc/clientlibs` map en klik op **Maken > Map** maken. Typ `myTests` de naam en klik op **OK**.
-1. Klik met de rechtermuisknop op de `/etc/clientlibs/myTests` map en klik op **Maken > Knooppunt** maken. Gebruik de volgende eigenschapswaarden en klik op **OK**:
+1. Klik met de rechtermuisknop op de map `/etc/clientlibs` en klik op **Maken > Map maken**. Typ `myTests` voor de naam en klik **OK**.
+1. Klik met de rechtermuisknop op de map `/etc/clientlibs/myTests` en klik op **Maken > Node maken**. Gebruik de volgende eigenschapswaarden en klik vervolgens op **OK**:
 
    * Naam: `myFirstTest`
    * Type: `cq:ClientLibraryFolder`
@@ -130,23 +130,23 @@ Zie de documentatie [van de](https://helpx.adobe.com/experience-manager/6-5/site
    >Als u adaptieve formulieren wilt testen, voegt u de volgende waarden toe aan de categorieën en afhankelijkheden. Bijvoorbeeld:
    >
    >
-   >**categorieën**: `granite.testing.hobbes.tests, granite.testing.hobbes.af.commons`
+   >**categorieën**:  `granite.testing.hobbes.tests, granite.testing.hobbes.af.commons`
    >
    >
-   >**afhankelijkheden**: `granite.testing.hobbes.testrunner, granite.testing.hobbes.af`
+   >**afhankelijkheden**:  `granite.testing.hobbes.testrunner, granite.testing.hobbes.af`
 
-1. Klik op Alles **opslaan**.
-1. Klik met de rechtermuisknop op het `myFirstTest` knooppunt en klik op **Maken > Bestand** maken. Name the file `js.txt` and click **OK**.
-1. Voer de volgende tekst in het `js.txt` bestand in:
+1. Klik **Alles opslaan**.
+1. Klik met de rechtermuisknop op het knooppunt `myFirstTest` en klik op **Maken > Bestand maken**. Geef het bestand een naam `js.txt` en klik op **OK**.
+1. Voer in het bestand `js.txt` de volgende tekst in:
 
    ```
    #base=.
    myTestSuite.js
    ```
 
-1. Klik op Alles **** opslaan en sluit het `js.txt` bestand.
-1. Klik met de rechtermuisknop op het `myFirstTest` knooppunt en klik op **Maken > Bestand** maken. Name the file `myTestSuite.js` and click **OK**.
-1. Kopieer de volgende code naar het `myTestSuite.js` bestand en sla het bestand op:
+1. Klik **Alles opslaan** en sluit vervolgens het `js.txt`-bestand.
+1. Klik met de rechtermuisknop op het knooppunt `myFirstTest` en klik op **Maken > Bestand maken**. Geef het bestand een naam `myTestSuite.js` en klik op **OK**.
+1. Kopieer de volgende code naar het `myTestSuite.js`-bestand en sla het bestand op:
 
    ```
    new hobs.TestSuite("Experience Content Test Suite", {path:"/etc/clientlibs/myTests/myFirstTest/myTestSuite.js"})
@@ -161,4 +161,4 @@ Zie de documentatie [van de](https://helpx.adobe.com/experience-manager/6-5/site
    );
    ```
 
-1. Navigeer naar de **testconsole** om uw testsuite uit te proberen.
+1. Navigeer naar de **Testing**-console om uw testsuite uit te proberen.

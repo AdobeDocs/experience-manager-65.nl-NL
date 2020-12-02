@@ -18,43 +18,43 @@ ht-degree: 0%
 ---
 
 
-# Classificaties gebruiken {#using-ratings}
+# Waarderingen {#using-ratings} gebruiken
 
-De `Rating` component wordt op zichzelf of in combinatie met andere communautaire kenmerken gebruikt. Met deze component kunnen leden van de gemeenschap die zich hebben aangemeld hun mening kenbaar maken door inhoud te beoordelen.
+De `Rating` component wordt gebruikt standalone of samen met andere eigenschappen van Gemeenschappen. Met deze component kunnen leden van de gemeenschap die zich hebben aangemeld hun mening kenbaar maken door inhoud te beoordelen.
 
 ## Een waardering toevoegen aan een pagina {#adding-a-rating-to-a-page}
 
-Als u een `Rating` component aan een pagina wilt toevoegen in de modus Schrijven, zoekt u de component `Communities / Rating` en sleept u deze naar een plaats op een pagina, zoals een positie ten opzichte van de functie die leden kunnen waarderen.
+Als u een component `Rating` in de modus Schrijver aan een pagina wilt toevoegen, zoekt u de component `Communities / Rating` en sleept u deze naar een plaats op een pagina, zoals een positie ten opzichte van de functie waarop leden een waardering moeten toepassen.
 
-Ga voor de benodigde informatie naar [Community Components Basics](basics.md).
+Voor noodzakelijke informatie, bezoek [de Grondbeginselen van Componenten van Gemeenschappen](basics.md).
 
-Wanneer de [vereiste client-side bibliotheken](rating-basics.md#essentials-for-client-side) worden opgenomen, wordt de `Rating` component op deze manier weergegeven.
+Als de [vereiste client-side bibliotheken](rating-basics.md#essentials-for-client-side) worden opgenomen, wordt de `Rating`-component op deze manier weergegeven.
 
 ![beoordeling](assets/rating.png)
 
-## Classificatie configureren {#configuring-rating}
+## Classificatie {#configuring-rating} configureren
 
-Selecteer de geplaatste `Rating` component die u wilt openen en selecteer het `Configure` pictogram waarmee het dialoogvenster Bewerken wordt geopend.
+Selecteer de geplaatste `Rating` component en selecteer `Configure` pictogram dat het Edit dialoog opent.
 
 ![configure-new](assets/configure-new.png)
 
-Onder het **[!UICONTROL Texts & Labels]** lusje specificeert u het interne herkenningsteken voor de Classificatie.
+Onder **[!UICONTROL Texts & Labels]** lusje specificeert u het interne herkenningsteken voor de Classificatie.
 
 ![tallyname](assets/tallyname.png)
 
 **[!UICONTROL Tally Name]**
-(*Vereist*) Een eenvoudige naam voor de instantie `Rating` die dit exemplaar uniek identificeert. Moet een geldige knooppuntnaam voor de bewaarplaats zijn.
+(*Vereist*) Een eenvoudige naam voor  `Rating` welke uniek dit geval identificeert. Moet een geldige knooppuntnaam voor de bewaarplaats zijn.
 
-## Ervaring met sitebezoekers {#site-visitor-experience}
+## Ervaring {#site-visitor-experience} voor bezoekers van site
 
 ### Leden {#members}
 
 Er is slechts één score per lid toegestaan. Het lid kan zijn rating te allen tijde wijzigen.
 
-### Anoniem {#anonymous}
+### Anonieme {#anonymous}
 
 Anonieme detachering van een rating wordt niet ondersteund. Site-bezoekers moeten zich registreren (lid worden) en zich aanmelden om deel te nemen.
 
-## Additional Information {#additional-information}
+## Aanvullende informatie {#additional-information}
 
-Meer informatie vindt u op de pagina [Beoordelingselementen](rating-basics.md) voor ontwikkelaars.
+Meer informatie vindt u op de pagina [Beoordelingsbasisbegrippen](rating-basics.md) voor ontwikkelaars.

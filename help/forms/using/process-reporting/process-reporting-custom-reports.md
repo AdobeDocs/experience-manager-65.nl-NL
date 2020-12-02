@@ -1,8 +1,8 @@
 ---
 title: Aangepaste rapporten in procesrapportage
 seo-title: Aangepaste rapporten in procesrapportage
-description: U kunt douanerapporten tot stand brengen en deze rapporten toevoegen aan de AEM Forms over het Melden UI van het Proces JEE.
-seo-description: U kunt douanerapporten tot stand brengen en deze rapporten toevoegen aan de AEM Forms over het Melden UI van het Proces JEE.
+description: U kunt douanerapporten tot stand brengen en deze rapporten toevoegen aan AEM Forms op het Proces van JEE meldt UI.
+seo-description: U kunt douanerapporten tot stand brengen en deze rapporten toevoegen aan AEM Forms op het Proces van JEE meldt UI.
 uuid: 81039fe8-d757-4c85-a1eb-88e4e6aa8500
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -26,14 +26,14 @@ U kunt REST interface van QueryBuilder gebruiken of de dienst tot stand brengen 
 
 Alvorens om het even welk douanerapport toe te voegen, voer de volgende malplaatjeprocedure uit:
 
-1. Gegevens die worden gebruikt in aangepaste rapporten, moeten beschikbaar zijn in Process Reporting. Om de beschikbaarheid van gegevens te verzekeren, plant een bouwbaan of gebruik de optie van de **[Synchronisatie](https://helpx.adobe.com/livecycle/help/process-reporting/install-start-process-reporting.html#Process%20Reporting%20Home%20screen)**op het Proces Meldend UI.
+1. Gegevens die worden gebruikt in aangepaste rapporten, moeten beschikbaar zijn in Process Reporting. Om de beschikbaarheid van gegevens te verzekeren, plant een bouwbaan of gebruik **[Sync](https://helpx.adobe.com/livecycle/help/process-reporting/install-start-process-reporting.html#Process%20Reporting%20Home%20screen)** optie op het Proces Meldend UI.
 1. Het URL-verzoek (de gewenste query wordt ingekapseld) moet een geschikt queryresultaatobject retourneren. Om een vraag tot stand te brengen, kunt u REST interface van [QueryBuilder](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html) gebruiken om de dienst tot stand te brengen OSGi gebruikend QueryBuilder API. U kunt dynamische of statische query&#39;s maken.
 
 1. Maak een aangepaste gebruikersinterface om de resultaten weer te geven. U kunt een stand-alone gebruikersinterface tot stand brengen of resultaat met bestaand Proces opnemen die UI meldt.
 
 ## Het gebruiken van de REST interface van QueryBuilder {#using-the-rest-interface-of-the-querybuilder}
 
-CRX QueryBuilder REST-interface stelt de functionaliteit van de Asset Share Query Builder beschikbaar via een Java API en een REST API. Leer hoe te om [CRX VraagBuilder REST interface](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html)te gebruiken, alvorens de volgende stappen uit te voeren:
+CRX QueryBuilder REST-interface stelt de functionaliteit van de Asset Share Query Builder beschikbaar via een Java API en een REST API. Leer hoe te om [CRX REST interface QueryBuilder](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html) te gebruiken, alvorens de volgende stappen uit te voeren:
 
 1. Bladeren naar de URL `https://'[server]:[port]'/lc/bin/querybuilder.json`
 1. Maak een query op basis van de structuur en knoopeigenschappen van het opslagknooppunt Process Reporting.
@@ -50,7 +50,7 @@ CRX QueryBuilder REST-interface stelt de functionaliteit van de Asset Share Quer
 
 ## De service maken met de API van Query Builder  {#creating-a-service-using-query-builder-api-nbsp}
 
-De eerste vereiste voor het maken van een service met de API voor Query Builder is het [maken en implementeren van CQ OSGI-bundel](https://docs.adobe.com/docs/v5_2/html-resources/cq5_guide_developer/cq5_guide_developer.html) en het [gebruik van de Query Builder-API](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html).
+De eerste vereiste voor het maken van een service met de API voor het maken van Query Builder is [het maken en implementeren van CQ OSGI-bundel](https://docs.adobe.com/docs/v5_2/html-resources/cq5_guide_developer/cq5_guide_developer.html) en [met de API](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html) van Query Builder.
 
 1. Creeer de dienst OSGi met aangewezen aantekeningen. Om tot het gebruik te toegang te hebben QueryBuilder:
 
@@ -59,14 +59,14 @@ De eerste vereiste voor het maken van een service met de API voor Query Builder 
     private QueryBuilder queryBuilder;
    ```
 
-1. Maak een groep met voorspelling. Code voor het maken van een predicaatgroep is:
+1. Maak een groep met voorspelling. Code voor het maken van een groep met voorspelling is:
 
    ```java
    PredicateGroup predicateGroup = new PredicateGroup();
     predicateGroup.setAllRequired(true);
    ```
 
-1. Voeg predikaten aan pas gecreëerde predikateGroup toe. Enkele handige predicaatconstructies zijn [JcrBoolPropertyPredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/JcrBoolPropertyPredicateEvaluator.html), [JcrPropertyPredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/JcrPropertyPredicateEvaluator.html), [RangePropertyPredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/RangePropertyPredicateEvaluator.html), [DateRangePredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/RelativeDateRangePredicateEvaluator.html)en [TypePredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/TypePredicateEvaluator.html).
+1. Voeg predikaten aan pas gecreëerde predikateGroup toe. Enkele handige voorspellende constructies zijn [JcrBoolPropertyPredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/JcrBoolPropertyPredicateEvaluator.html), [JcrPropertyPredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/JcrPropertyPredicateEvaluator.html), [RangePropertyPredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/RangePropertyPredicateEvaluator.html), [DateRangePredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/RelativeDateRangePredicateEvaluator.html) en [TypePredicateEvaluator](https://docs.adobe.com/docs/en/cq/5-3/javadoc/com/day/cq/search/eval/TypePredicateEvaluator.html).
 
    Voor statische rapporten hardcode de predikaten, terwijl voor dynamische rapporten, de predikaten van het verzoek halen.
 
@@ -141,9 +141,9 @@ De eerste vereiste voor het maken van een service met de API voor Query Builder 
 
 1. Implementeer de bundel op de CRX-server.
 
-### Voorbeeld van service {#service-example}
+### Servicevoorbeeld {#service-example}
 
-Het volgende de dienstvoorbeeld telt instanties van een proces dat in **RUNNING** en **COMPLETE** staat aan eind van elke maand, elk kwartaal, en jaar is.
+Het volgende de dienstvoorbeeld telt instanties van een proces dat in **RUNNING** en **COMPLETE** staat aan eind van elke maand, kwartaal, en jaar is.
 
 ```java
 package custom.reporting.service;
@@ -341,7 +341,7 @@ public class PeriodicProcessVolume {
 }
 ```
 
-Het voorbeeldbestand `pom.xml`dat u boven de service wilt maken, is:
+Het voorbeeld `pom.xml`bestand dat boven de service moet worden gemaakt, is:
 
 ```xml
 <project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
@@ -425,10 +425,10 @@ Het voorbeeldbestand `pom.xml`dat u boven de service wilt maken, is:
 
 ## Een aparte UI maken  {#creating-a-separate-ui-nbsp}
 
-De eerste vereisten aan het creëren van een afzonderlijke UI voor het tonen van resultaten zijn het [Verdelen van Grondbeginselen](https://docs.adobe.com/docs/en/cq/5-6-1/developing/the_basics.html), het [Creëren van een Knoop](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) CRX en het verstrekken van aangewezen [toegangsvoorrechten](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control).
+De eerste vereisten voor het maken van een aparte UI voor het weergeven van resultaten zijn [Grondbeginselen splitsen](https://docs.adobe.com/docs/en/cq/5-6-1/developing/the_basics.html), [Een CRX-knooppunt maken](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) en het bieden van de juiste [toegangsrechten](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control).
 
 1. Creeer een Knoop CRX bij de `/apps` knoop en verstrek aangewezen toegangstoestemmingen. (PERM_PROCESS_REPORTING_USER)
-1. Definieer de renderer op het `/content` knooppunt.
+1. Definieer de renderer bij het knooppunt `/content`.
 1. Voeg JSP of HTML- dossiers aan de knoop toe die in Stap 1 wordt gecreeerd. U kunt ook CSS-bestanden toevoegen.
 
    ![Een voorbeeldknooppunt met JSP- en CSS-bestanden](assets/nodewith_jsp_css_new.png)
@@ -633,18 +633,18 @@ response.setCharacterEncoding("utf-8");
 
 ## Het integreren rapport UI in bestaand Proces Meldend UI  {#integrating-report-ui-in-existing-process-reporting-ui-nbsp}
 
-De eerste vereisten aan het creëren van een afzonderlijke UI voor het tonen van resultaten zijn het [Verdelen van Grondbeginselen](https://wem.help.adobe.com/enterprise/en_US/10-0/wem/developing/the_basics.html), het [Creëren van een Knoop](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) CRX en het verstrekken van aangewezen [toegangsvoorrechten](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control).
+De eerste vereisten voor het maken van een aparte UI voor het weergeven van resultaten zijn [Grondbeginselen splitsen](https://wem.help.adobe.com/enterprise/en_US/10-0/wem/developing/the_basics.html), [Een CRX-knooppunt maken](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) en het bieden van de juiste [toegangsrechten](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control).
 
 1. Maak een aparte interface.
-1. Creeer een kindknoop `nt:unstructured` bij de `/content/process-reporting-runtime/custom-reports` knoop voor elk pluggable rapport.
+1. Creeer een kind `nt:unstructured` knoop bij `/content/process-reporting-runtime/custom-reports` knoop voor elk pluggable rapport.
 
-   * **id**- Geeft een uniek identificatienummer van het rapport op.
-   * **name**- Specificeert de naam van het rapport. De naam wordt weergegeven in de gebruikersinterface.
-   * **link**- Geeft een relatieve koppeling aan naar de renderer van de afzonderlijke UI. De verbinding wordt gecreeerd Stap 1.
-   * **description**- Geeft de beschrijving van één regel op voor het rapport. U kunt het beschrijvingsveld leeg laten.
-   * **icon**- Geeft de afbeelding aan die het rapport pictorially moet vertegenwoordigen. U kunt het pictogramveld leeg laten.
+   * **id** - Geeft een uniek identificatienummer van het rapport op.
+   * **name** - Specificeert de naam van het rapport. De naam wordt weergegeven in de gebruikersinterface.
+   * **link** - Geeft een relatieve koppeling aan naar de renderer van de afzonderlijke UI. De verbinding wordt gecreeerd Stap 1.
+   * **description** - Geeft de beschrijving van één regel op voor het rapport. U kunt het beschrijvingsveld leeg laten.
+   * **icon** - Geeft de afbeelding aan die het rapport pictorially moet vertegenwoordigen. U kunt het pictogramveld leeg laten.
 
-   ![Eigenschappen van knooppunt ](assets/node_properties_new.png)
+   ![Eigenschappen van knooppunt  ](assets/node_properties_new.png)
 
    Eigenschappen van knooppunt
 
@@ -660,6 +660,6 @@ De eerste vereisten aan het creëren van een afzonderlijke UI voor het tonen van
 
 ## Voorbeeldpakket {#sample-package}
 
-Importeer het `sample-report-pkg-1.zip` pakket om aangepaste rapporten en UI die in het artikel worden besproken, te integreren in de interface voor procesbeheer.
+Importeer het `sample-report-pkg-1.zip`-pakket om aangepaste rapporten en UI die in het artikel worden besproken, te integreren in de interface voor procesbeheer.
 
 [Bestand ophalen](assets/sample-report-pkg-1.zip)

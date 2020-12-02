@@ -19,33 +19,33 @@ ht-degree: 0%
 
 AEM Forms biedt een set OSGi-services voor het uitvoeren van verschillende bewerkingen op documentniveau, zoals services voor het maken, samenstellen, distribueren en archiveren van PDF-documenten, het toevoegen van digitale handtekeningen om de toegang tot documenten te beperken en het decoderen van streepjesgecodeerde formulieren. Deze services zijn opgenomen in het invoegpakket voor AEM Forms. Deze services worden gezamenlijk documentservices genoemd. De lijst met beschikbare documentservices en hun belangrijkste mogelijkheden is als volgt:
 
-* **Assembler-service:** Hiermee kunt u PDF- en XDP-documenten combineren, opnieuw rangschikken en vergroten en informatie over PDF-documenten verkrijgen. Het programma helpt ook PDF-documenten te converteren en te valideren naar PDF/A-standaard, PDF forms, XML-formulieren en PDF forms te transformeren naar PDF/A-1b, PDF/A-2b en PDFA/A-3b. Voor meer informatie, zie de Dienst van de [Assembler](/help/forms/using/assembler-service.md).
+* **Assembler-service:** Hiermee kunt u PDF- en XDP-documenten combineren, opnieuw rangschikken en uitbreiden en informatie over PDF-documenten opvragen. Het programma helpt ook PDF-documenten te converteren en te valideren naar PDF/A-standaard, PDF forms, XML-formulieren en PDF forms te transformeren naar PDF/A-1b, PDF/A-2b en PDFA/A-3b. Voor meer informatie, zie [Assembler Service](/help/forms/using/assembler-service.md).
 
-* **ConvertPDF-service:** Hiermee kunt u PDF-documenten converteren naar PostScript- of afbeeldingsbestanden (JPEG, JPEG 2000, PNG en TIFF). Zie [ConvertPDF Service](/help/forms/using/using-convertpdf-service.md)voor meer informatie.
+* **ConvertPDF-service:** Hiermee kunt u PDF-documenten converteren naar PostScript- of afbeeldingsbestanden (JPEG, JPEG 2000, PNG en TIFF). Zie [ConvertPDF Service](/help/forms/using/using-convertpdf-service.md) voor meer informatie.
 
-* **Barcoded Forms-service:** Hiermee kunt u gegevens extraheren uit elektronische afbeeldingen van streepjescodes. De service accepteert TIFF- en PDF-bestanden die een of meer streepjescodes bevatten als invoer en extraheert de streepjescodegegevens. Zie [Barcoded Forms Service](/help/forms/using/using-barcoded-forms-service.md)voor meer informatie.
+* **Barcoded Forms service:** hiermee kunt u gegevens ophalen uit elektronische afbeeldingen van streepjescodes. De service accepteert TIFF- en PDF-bestanden die een of meer streepjescodes bevatten als invoer en extraheert de streepjescodegegevens. Zie [Barcoded Forms Service](/help/forms/using/using-barcoded-forms-service.md) voor meer informatie.
 
-* **DocAssurance-service:** Hiermee kunt u documenten versleutelen en ontsleutelen, de functionaliteit van Adobe Reader uitbreiden met extra gebruiksrechten en digitale handtekeningen toevoegen aan uw documenten. De dienst van de Verzekering van Doc bevat drie diensten: handtekening, versleuteling en reader-extensie. Zie [DocAssurance Service](/help/forms/using/overview-aem-document-services.md)voor meer informatie.
+* **DocAssurance-service:** Hiermee kunt u documenten versleutelen en decoderen, de functionaliteit van Adobe Reader uitbreiden met extra gebruiksrechten en digitale handtekeningen toevoegen aan uw documenten. De dienst van de Verzekering van Doc bevat drie diensten: handtekening, versleuteling en reader-extensie. Zie [DocAssurance Service](/help/forms/using/overview-aem-document-services.md) voor meer informatie.
 
-* **Coderingsservice:** Hiermee kunt u documenten versleutelen en ontsleutelen. Wanneer een document wordt versleuteld, wordt de inhoud ervan onleesbaar. Een geautoriseerde gebruiker kan het document decoderen om toegang tot de inhoud te krijgen. Zie [Coderingsservice](/help/forms/using/overview-aem-document-services.md#encryption-service)voor meer informatie.
+* **Coderingsservice:** Hiermee kunt u documenten versleutelen en decoderen. Wanneer een document wordt versleuteld, wordt de inhoud ervan onleesbaar. Een geautoriseerde gebruiker kan het document decoderen om toegang tot de inhoud te krijgen. Zie [Coderingsservice](/help/forms/using/overview-aem-document-services.md#encryption-service) voor meer informatie.
 
-* **Forms-service:** Hiermee kunt u interactieve toepassingen voor het vastleggen van gegevens maken die formulieren valideren, verwerken, transformeren en leveren die gewoonlijk in Forms Designer worden gemaakt. De Forms-service geeft elk formulierontwerp dat u ontwikkelt, weer in PDF-documenten. Zie [Forms Service](/help/forms/using/forms-service.md)voor meer informatie.
+* **Forms-service:** hiermee kunt u interactieve gegevensvastleggingsclienttoepassingen maken die formulieren valideren, verwerken, transformeren en leveren die gewoonlijk in Forms Designer worden gemaakt. De Forms-service geeft elk formulierontwerp dat u ontwikkelt, weer in PDF-documenten. Zie [Forms Service](/help/forms/using/forms-service.md) voor meer informatie.
 
-* **Uitvoerservice:** Hiermee kunt u documenten in verschillende indelingen maken, zoals PDF, laserprinterindelingen en labelprinterindelingen. Indelingen voor laserprinters zijn PostScript en Printer Control Language (PCL). Zie [Uitvoerservice](/help/forms/using/output-service.md)voor meer informatie.
+* **Uitvoerservice:** Hiermee kunt u documenten in verschillende indelingen maken, zoals PDF, laserprinterindelingen en labelprinterindelingen. Indelingen voor laserprinters zijn PostScript en Printer Control Language (PCL). Zie [Uitvoerservice](/help/forms/using/output-service.md) voor meer informatie.
 
-* **Service van PDF Generator:** De service PDF Generator biedt API&#39;s waarmee native bestandsindelingen naar PDF kunnen worden geconverteerd. Ook wordt PDF geconverteerd naar andere bestandsindelingen en wordt de grootte van PDF-documenten geoptimaliseerd. Zie [PDF Generator Service](aem-document-services-programmatically.md#pdfgeneratorservice)voor meer informatie.
+* **PDF Generator-service:** de service PDF Generator biedt API&#39;s waarmee native bestandsindelingen naar PDF kunnen worden geconverteerd. Ook wordt PDF geconverteerd naar andere bestandsindelingen en wordt de grootte van PDF-documenten geoptimaliseerd. Zie [PDF Generator Service](aem-document-services-programmatically.md#pdfgeneratorservice) voor meer informatie.
 
-* **Reader Extension Service:** Hiermee kan uw organisatie interactieve PDF-documenten eenvoudig delen door de functionaliteit van Adobe Reader uit te breiden met extra gebruiksrechten. De service activeert functies die niet beschikbaar zijn wanneer een PDF-document wordt geopend met Adobe Reader, zoals het toevoegen van opmerkingen aan een document, het invullen van formulieren en het opslaan van het document. Zie [Reader Extension Service](/help/forms/using/overview-aem-document-services.md#reader-extension-service)voor meer informatie.
+* **Extensieservice Reader:** Hiermee kunt u eenvoudig interactieve PDF-documenten delen door de functionaliteit van Adobe Reader uit te breiden met extra gebruiksrechten. De service activeert functies die niet beschikbaar zijn wanneer een PDF-document wordt geopend met Adobe Reader, zoals het toevoegen van opmerkingen aan een document, het invullen van formulieren en het opslaan van het document. Zie [Extensieservice Readers](/help/forms/using/overview-aem-document-services.md#reader-extension-service) voor meer informatie.
 
-* **Handtekeningenservice:** Hiermee kunt u werken met digitale handtekeningen en documenten op de AEM server. De service Handtekening wordt bijvoorbeeld doorgaans in de volgende situaties gebruikt:
+* **Handtekeningenservice:** hiermee kunt u werken met digitale handtekeningen en documenten op de AEM server. De service Handtekening wordt bijvoorbeeld doorgaans in de volgende situaties gebruikt:
 
    * De AEM server certificeert een formulier voordat het naar een gebruiker wordt verzonden om te worden geopend met Acrobat of Adobe Reader.
    * De AEM server valideert een handtekening die aan een formulier is toegevoegd met Acrobat of Adobe Reader.
    * De AEM server ondertekent een formulier namens een openbare notaris.
 
-   De handtekeningsdienst heeft toegang tot certificaten en geloofsbrieven die in de vertrouwde opslag worden opgeslagen. Zie [Handtekeningenservice](/help/forms/using/aem-document-services-programmatically.md)voor meer informatie.
+   De handtekeningsdienst heeft toegang tot certificaten en geloofsbrieven die in de vertrouwde opslag worden opgeslagen. Zie [Handtekeningsservice](/help/forms/using/aem-document-services-programmatically.md) voor meer informatie.
 
-AEM Forms is een krachtig platform op bedrijfsniveau en de documentservices zijn slechts een van de mogelijkheden van AEM Forms. Zie [Introductie tot AEM Forms](/help/forms/using/introduction-aem-forms.md)voor de volledige lijst met mogelijkheden.
+AEM Forms is een krachtig platform op bedrijfsniveau en de documentservices zijn slechts een van de mogelijkheden van AEM Forms. Voor de volledige lijst van mogelijkheden, zie [Inleiding aan AEM Forms](/help/forms/using/introduction-aem-forms.md).
 
 ## Implementatietopologie {#deployment-topology}
 
@@ -61,7 +61,7 @@ AEM Forms add-on package is een toepassing die op AEM wordt geïmplementeerd. Ov
 
 Voordat u begint met het installeren en configureren van AEM Forms-documentservices, moet u ervoor zorgen dat:
 
-* Hardware- en software-infrastructuur is aanwezig. Raadpleeg de [technische vereisten](/help/sites-deploying/technical-requirements.md)voor een gedetailleerde lijst met ondersteunde hardware en software.
+* Hardware- en software-infrastructuur is aanwezig. Zie [technische vereisten](/help/sites-deploying/technical-requirements.md) voor een gedetailleerde lijst met ondersteunde hardware en software.
 
 * Het installatiepad van de AEM-instantie bevat geen witruimten.
 * Er wordt een AEM-instantie uitgevoerd. In AEM terminologie is een &quot;instantie&quot; een kopie van AEM die op een server in de auteur- of publicatiemodus wordt uitgevoerd. Over het algemeen hebt u slechts één AEM (auteur of publicatie) nodig om AEM Forms-documentservices uit te voeren:
@@ -76,8 +76,8 @@ Voordat u begint met het installeren en configureren van AEM Forms-documentservi
 
 * Clientsoftware die vereist is voor conversie door PDF-generator op Microsoft Windows en Linux wordt geïnstalleerd:
 
-   * **Microsoft Windows**: Microsoft [Office](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p)of [Apache OpenOffice installeren](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator)
-   * **Linux**: Apache [OpenOffice installeren](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p)
+   * **Microsoft Windows**: Microsoft  [Office ](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p)of  [Apache OpenOffice installeren](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator)
+   * **Linux**: Apache  [OpenOffice installeren](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p)
 
 >[!NOTE]
 >
@@ -88,7 +88,7 @@ Voordat u begint met het installeren en configureren van AEM Forms-documentservi
 
 
 
-### Extra eisen voor het op UNIX gebaseerde besturingssysteem {#extrarequirements}
+### Extra vereisten voor op UNIX gebaseerd besturingssysteem {#extrarequirements}
 
 Als u het op UNIX gebaseerde besturingssysteem gebruikt, installeert u de volgende pakketten via de installatiemedia van het desbetreffende besturingssysteem:
 
@@ -175,7 +175,7 @@ Als u het op UNIX gebaseerde besturingssysteem gebruikt, installeert u de volgen
    * /usr/lib/libcrypto.so
    * /usr/lib/libssl.so
 
-* **(Alleen PDF-generator)** De service PDF Generator ondersteunt WebKit en PhantomJS-routes voor het converteren van HTML-bestanden naar PDF-documenten. Om omzetting voor route PhantomJS toe te laten, installeer hieronder vermelde bibliotheken met 64 bits. Over het algemeen zijn deze bibliotheken al geïnstalleerd. Als er een bibliotheek ontbreekt, installeert u deze handmatig:
+* **De service** PDF Generator ondersteunt WebKit en PhantomJS-routes voor het converteren van HTML-bestanden naar PDF-documenten. Om omzetting voor route PhantomJS toe te laten, installeer hieronder vermelde bibliotheken met 64 bits. Over het algemeen zijn deze bibliotheken al geïnstalleerd. Als er een bibliotheek ontbreekt, installeert u deze handmatig:
 
    * linux-gate.so.1
    * libz.so.1
@@ -195,7 +195,7 @@ Als u het op UNIX gebaseerde besturingssysteem gebruikt, installeert u de volgen
 
 Configuraties die worden vermeld in de sectie voor configuraties vóór de installatie zijn alleen van toepassing op de service van de PDF Generator. Als u de service PDF Generator niet configureert, kunt u het gedeelte voor configuratie vóór de installatie overslaan.
 
-### Adobe Acrobat en toepassingen van derden installeren {#install-adobe-acrobat-and-third-party-applications}
+### Adobe Acrobat- en externe toepassingen installeren {#install-adobe-acrobat-and-third-party-applications}
 
 Als u de service PDF Generator gebruikt om eigen bestandsindelingen zoals Microsoft Word, Microsoft Excel, Microsoft PowerPoint, OpenOffice, WordPerfect X7 en Adobe Acrobat naar PDF-documenten te converteren, moet u ervoor zorgen dat deze toepassingen op de AEM Forms-server zijn geïnstalleerd.
 
@@ -209,9 +209,9 @@ Als u de service PDF Generator gebruikt om eigen bestandsindelingen zoals Micros
 
 
 
-Open Microsoft Word nadat u Acrobat hebt geïnstalleerd. Klik **op het** tabblad **Acrobat op PDF** maken en converteer een .doc- of .docx-bestand dat op uw computer beschikbaar is naar een PDF-document. Als de conversie is gelukt, is AEM Forms klaar om Acrobat te gebruiken met de service PDF Generator.
+Open Microsoft Word nadat u Acrobat hebt geïnstalleerd. Klik op het tabblad **Acrobat** op **PDF maken** en converteer een .doc- of .docx-bestand dat op uw computer beschikbaar is naar een PDF-document. Als de conversie is gelukt, is AEM Forms klaar om Acrobat te gebruiken met de service PDF Generator.
 
-### Omgevingsvariabelen instellen {#setup-environment-variables}
+### Omgevingsvariabelen {#setup-environment-variables} instellen
 
 Omgevingsvariabelen instellen voor 32-bits en 64-bits Java Development Kit, toepassingen van derden en Adobe Acrobat. De omgevingsvariabelen moeten het absolute pad bevatten van het uitvoerbare bestand dat wordt gebruikt om de bijbehorende toepassing te starten. In de onderstaande tabel worden bijvoorbeeld de omgevingsvariabelen voor een paar toepassingen weergegeven:
 
@@ -263,7 +263,7 @@ Omgevingsvariabelen instellen voor 32-bits en 64-bits Java Development Kit, toep
 >  
 `export OpenOffice_PATH=/opt/openoffice.org4`
 
-### (Alleen voor IBM WebSphere) IBM SSL-socketprovider configureren {#only-for-ibm-websphere-configure-ibm-ssl-socket-provider}
+### (Alleen voor IBM WebSphere) Configureer IBM SSL-socketprovider {#only-for-ibm-websphere-configure-ibm-ssl-socket-provider}
 
 Voer de volgende stappen uit om IBM SSL-socketprovider te configureren:
 
@@ -300,9 +300,9 @@ Voer de volgende stappen uit om IBM SSL-socketprovider te configureren:
 
 Als u de Server van Microsoft Windows in werking stelt, vorm de Inkt en de dienst Handwriting. De service is vereist voor het openen van Microsoft PowerPoint-bestanden die inktmogelijkheden van Microsoft Office gebruiken:
 
-1. Open Serverbeheer. Klik op het **[!UICONTROL Server Manager]** pictogram op de lade van Quick Launch.
-1. Klik **[!UICONTROL Add Features]** in het **[!UICONTROL Features]** menu. Select the **[!UICONTROL Ink and Handwriting Services]** check box.
-1. **[!UICONTROL Select Features]** geselecteerd. **[!UICONTROL Ink and Handwriting Services]** Klik **[!UICONTROL Install]** en de dienst wordt geïnstalleerd.
+1. Open Serverbeheer. Klik op het pictogram **[!UICONTROL Server Manager]** op de lade van de Snelle Lancering.
+1. Klik **[!UICONTROL Add Features]** in **[!UICONTROL Features]** menu. Schakel het selectievakje **[!UICONTROL Ink and Handwriting Services]** in.
+1. **[!UICONTROL Select Features]** met  **[!UICONTROL Ink and Handwriting Services]** geselecteerd. Klik op **[!UICONTROL Install]** en de service is geïnstalleerd.
 
 ### (Alleen Windows) Configureer de instellingen voor bestandsblokken voor Microsoft Office {#configure-the-file-block-settings-for-microsoft-office}
 
@@ -310,16 +310,16 @@ Wijzig de instellingen van het Microsoft Office-vertrouwenscentrum om de service
 
 1. Open een Microsoft Office-toepassing. Bijvoorbeeld Microsoft Word. Ga naar **[!UICONTROL File]**> **[!UICONTROL Options]**. Het dialoogvenster Opties wordt geopend.
 
-1. Klik **[!UICONTROL Trust Center]** en klik op **[!UICONTROL Trust Center Settings]**.
-1. In the **[!UICONTROL Trust Center settings]**, click **[!UICONTROL File Block Settings]**.
-1. Schakel in de **[!UICONTROL File Type]** lijst de optie uit **[!UICONTROL Open]** voor het bestandstype dat de service PDF Generator moet kunnen converteren naar PDF-documenten.
+1. Klik **[!UICONTROL Trust Center]**, en klik **[!UICONTROL Trust Center Settings]**.
+1. Klik in **[!UICONTROL Trust Center settings]** op **[!UICONTROL File Block Settings]**.
+1. Schakel in de lijst **[!UICONTROL File Type]** **[!UICONTROL Open]** uit voor het bestandstype dat de service PDF Generator moet kunnen converteren naar PDF-documenten.
 
-### (Alleen Windows) Vervang het token voor een procesniveau {#grant-the-replace-a-process-level-token-privilege}
+### (Alleen Windows) Vervang het tokenvoorrecht {#grant-the-replace-a-process-level-token-privilege} van een procesniveau
 
-Voor de gebruikersaccount die wordt gebruikt om de toepassingsserver te starten, is het token **-voorrecht op procesniveau** vervangen vereist. De lokale systeemaccount heeft standaard de token **-bevoegdheid** Vervangen op procesniveau. Voor de servers die met een gebruiker van de Lokale groep van Beheerders lopen, moet het voorrecht uitdrukkelijk worden verleend. Voer de volgende stappen uit om het voorrecht toe te kennen:
+Voor de gebruikersaccount waarmee de toepassingsserver wordt gestart, is **Een token op procesniveau vervangen** vereist. De lokale systeemrekening heeft **Vervang een symbolisch van het procesniveau** voorrecht door gebrek. Voor de servers die met een gebruiker van de Lokale groep van Beheerders lopen, moet het voorrecht uitdrukkelijk worden verleend. Voer de volgende stappen uit om het voorrecht toe te kennen:
 
 1. Open de Redacteur van het Beleid van de Groep voor Microsoft Windows. Om de Redacteur van het Beleid van de Groep te openen, klik **[!UICONTROL Start]**, typ **gpedit.msc** in het vakje van het Onderzoek van het Begin, en klik **[!UICONTROL Group Policy Editor]**.
-1. Ga naar **[!UICONTROL Local Computer Policy]** > **[!UICONTROL Computer Configuration]** > **[!UICONTROL Windows Settings]** > **[!UICONTROL Security Settings]** > **[!UICONTROL Local Policies]** > **[!UICONTROL User Rights Assignment]** en bewerk het **[!UICONTROL Replace a process level token]** beleid en neem de groep Beheerders op.
+1. Navigeer naar **[!UICONTROL Local Computer Policy]** > **[!UICONTROL Computer Configuration]** > **[!UICONTROL Windows Settings]** > **[!UICONTROL Security Settings]** > **[!UICONTROL Local Policies]** > **[!UICONTROL User Rights Assignment]** en bewerk het beleid **[!UICONTROL Replace a process level token]** en neem de groep Beheerders op.
 1. Voeg de gebruiker toe aan de Replace een Symbolische ingang van het Niveau van het Proces.
 
 ### (Alleen Windows) De service PDF-generator inschakelen voor niet-beheerders {#enable-the-pdf-generator-service-for-non-administrators}
@@ -330,25 +330,25 @@ U kunt een gebruiker zonder beheerder inschakelen om de service PDF Generator te
 1. Stel de waarde van de omgevingsvariabele in op TRUE.
 1. Start de AEM Forms-instantie opnieuw.
 
-### (Alleen Windows) Gebruikersaccountbeheer uitschakelen (UAC) {#disable-user-account-control-uac}
+### (Alleen Windows) Schakel Gebruikersaccountbeheer (UAC) {#disable-user-account-control-uac} uit
 
-1. Om tot het Nut van de Configuratie van het Systeem toegang te hebben, ga naar **[!UICONTROL Start > Run]** en ga dan **[!UICONTROL MSCONFIG]**.
-1. Klik op het **[!UICONTROL Tools]** tabblad, schuif omlaag en selecteer **[!UICONTROL Change UAC Settings]**. Klik **[!UICONTROL Launch]** om de opdracht in een nieuw venster uit te voeren.
+1. Om tot het Nut van de Configuratie van het Systeem toegang te hebben, ga **[!UICONTROL Start > Run]** en ga dan **[!UICONTROL MSCONFIG]** in.
+1. Klik op de tab **[!UICONTROL Tools]** en schuif omlaag en selecteer **[!UICONTROL Change UAC Settings]**. Klik **[!UICONTROL Launch]** om het bevel in een nieuw venster in werking te stellen.
 1. Pas de schuifregelaar aan op het niveau Nooit aangeven. Als u klaar bent, sluit u het opdrachtvenster en sluit u het venster Systeemconfiguratie.
 1. Verifieer dat register het plaatsen voor UAC aan 0 (nul) wordt geplaatst. Voer de volgende stappen uit om te verifiëren:
 
-   1. Microsoft raadt u aan een back-up van het register te maken voordat u het register wijzigt. Voor gedetailleerde stappen, zie [hoe te file en herstel de registratie in Vensters](https://support.microsoft.com/en-us/help/322756).
+   1. Microsoft raadt u aan een back-up van het register te maken voordat u het register wijzigt. Voor gedetailleerde stappen, zie [Hoe te file en herstel het register in Vensters](https://support.microsoft.com/en-us/help/322756).
    1. Open de Register-editor voor Microsoft Windows. Als u de registereditor wilt openen, gaat u naar Start > Uitvoeren, typt u regedit en klikt u op OK.
    1. Ga naar `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system\`. Zorg ervoor dat de waarde van EnableLUA is ingesteld op 0 (nul).
-   1. Zorg ervoor dat de waarde van **EnableLUA** is ingesteld op 0 (nul). Als de waarde niet 0 is, wijzigt u de waarde in 0. Sluit de registereditor.
+   1. Verzeker waarde van **EnableLUA** wordt geplaatst aan 0 (nul). Als de waarde niet 0 is, wijzigt u de waarde in 0. Sluit de registereditor.
 
 1. Start de computer opnieuw op.
 
-### (Alleen Windows) Fout bij rapporteren van service uitschakelen {#disable-error-reporting-service}
+### (Alleen Windows) Schakel foutrapportservice {#disable-error-reporting-service} uit
 
 Bij het converteren van een document naar PDF met de service PDF Generator op Windows Server meldt Windows Server af en toe dat het uitvoerbare bestand een probleem heeft aangetroffen en moet worden gesloten. Het heeft echter geen invloed op de PDF-conversie zoals deze op de achtergrond wordt voortgezet.
 
-Als u wilt voorkomen dat de fout wordt ontvangen, kunt u de rapportage van fouten in Windows uitschakelen. Raadpleeg [https://technet.microsoft.com/en-us/library/cc754364.aspx voor meer informatie over het uitschakelen van foutmeldingen](https://technet.microsoft.com/en-us/library/cc754364.aspx).
+Als u wilt voorkomen dat de fout wordt ontvangen, kunt u de rapportage van fouten in Windows uitschakelen. Voor meer informatie bij het onbruikbaar maken van foutenrapportering, zie [https://technet.microsoft.com/en-us/library/cc754364.aspx](https://technet.microsoft.com/en-us/library/cc754364.aspx).
 
 ### (Alleen Windows) HTML naar PDF-conversie configureren {#configure-html-to-pdf-conversion}
 
@@ -358,7 +358,7 @@ De service PDF genereren biedt WebKit, WebCapture en FhantomJS-routes of methode
 >
 >Wanneer u nieuwe lettertypen in de map Fonts installeert, start u het AEM Forms-exemplaar opnieuw.
 
-### (Alleen op UNIX gebaseerde platforms) Extra configuraties voor conversie van HTML naar PDF  {#extra-configurations-for-html-to-pdf-conversion}
+### (Alleen op UNIX gebaseerde platforms) Extra configuraties voor conversie van HTML naar PDF {#extra-configurations-for-html-to-pdf-conversion}
 
 Op UNIX-platforms ondersteunt de service van de PDF Generator WebKit en PhantomJS-routes voor het converteren van HTML-bestanden naar PDF-documenten. Voer de volgende configuraties uit die van toepassing zijn op de door u gewenste conversieroute om HTML naar PDF-conversie in te schakelen:
 
@@ -393,24 +393,24 @@ AEM Forms add-on package is een toepassing die op AEM wordt geïmplementeerd. He
 
 1. Open [Softwaredistributie](https://experience.adobe.com/downloads). U hebt een Adobe ID nodig om u aan te melden bij de softwaredistributie.
 1. Tik **[!UICONTROL Adobe Experience Manager]** beschikbaar in het koptekstmenu.
-1. In het **[!UICONTROL Filters]** gedeelte:
-   1. Selecteer een optie **[!UICONTROL Forms]** in de **[!UICONTROL Solution]** vervolgkeuzelijst.
-   2. Selecteer de versie en typ voor het pakket. U kunt de **[!UICONTROL Search Downloads]** optie ook gebruiken om de resultaten te filteren.
-1. Tik op de pakketnaam die van toepassing is op het besturingssysteem, selecteer **[!UICONTROL Accept EULA Terms]** en tik op **[!UICONTROL Download]**.
-1. Open [Package Manager](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) en klik **[!UICONTROL Upload Package]** om het pakket te uploaden.
+1. In de sectie **[!UICONTROL Filters]**:
+   1. Selecteer **[!UICONTROL Forms]** in de vervolgkeuzelijst **[!UICONTROL Solution]**.
+   2. Selecteer de versie en typ voor het pakket. U kunt de optie **[!UICONTROL Search Downloads]** ook gebruiken om de resultaten te filteren.
+1. Tik op de pakketnaam die van toepassing is op het besturingssysteem, selecteer **[!UICONTROL Accept EULA Terms]** en tik **[!UICONTROL Download]**.
+1. Open [Pakketbeheer](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) en klik **[!UICONTROL Upload Package]** om het pakket te uploaden.
 1. Selecteer het pakket en klik **[!UICONTROL Install]**.
 
-   U kunt het pakket ook downloaden via de directe koppeling in het [AEM Forms-releaseartikel](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) .
+   U kunt het pakket ook downloaden via de directe koppeling die wordt vermeld in het [AEM Forms-release](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)-artikel.
 
-1. Nadat het pakket is geïnstalleerd, wordt u gevraagd om de AEM opnieuw te starten. **Stop niet onmiddellijk de server.** Voordat u de AEM Forms-server stopt, wacht u tot de berichten ServiceEvent REGISTERED en ServiceEvent UNREGISTERED in het bestand `[AEM-Installation-Directory]/crx-quickstart/logs/error`.log zijn gestopt en het logbestand stabiel is.
+1. Nadat het pakket is geïnstalleerd, wordt u gevraagd om de AEM opnieuw te starten. **Stop niet onmiddellijk de server.** Voordat u de AEM Forms-server stopt, wacht u tot de berichten ServiceEvent REGISTERED en ServiceEvent UNREGISTERED in het bestand  `[AEM-Installation-Directory]/crx-quickstart/logs/error`.log zijn gestopt en het logbestand stabiel is.
 
-## Configuratie na installatie {#post-installation-configurations}
+## Configuratie {#post-installation-configurations} na installatie
 
-### Opstartdelegatie configureren voor bibliotheken met RSA/BouncyCastle  {#configure-boot-delegation-for-rsa-bouncycastle-libraries}
+### Opstartdelegatie configureren voor bibliotheken met RSA/BouncyCastle {#configure-boot-delegation-for-rsa-bouncycastle-libraries}
 
-1. Stop de AEM instantie. Navigeer naar de [AEM installatiemap]\crx-quickstart\conf\ folder. Open het bestand sling.properties voor bewerking.
+1. Stop de AEM instantie. Navigeer naar [AEM installatiemap]\crx-quickstart\conf\ folder. Open het bestand sling.properties voor bewerking.
 
-   Als u een AEM-instantie `[AEM installation directory]\crx-quickstart\bin\start.bat` wilt starten, bewerkt u de eigenschappen sling.properties op `[AEM_root]\crx-quickstart\`.
+   Als u `[AEM installation directory]\crx-quickstart\bin\start.bat` gebruikt om een AEM instantie te beginnen, geef sling.properties uit die bij `[AEM_root]\crx-quickstart\` worden gevestigd.
 
 1. Voeg de volgende eigenschappen toe aan het bestand sling.properties:
 
@@ -426,35 +426,35 @@ AEM Forms add-on package is een toepassing die op AEM wordt geïmplementeerd. He
 
 1. Sla het bestand op en sluit het.
 
-### De service voor lettertypebeheer configureren  {#configuring-the-font-manager-service}
+### De service {#configuring-the-font-manager-service} voor lettertypebeheer configureren
 
-1. Meld u als beheerder aan bij [AEM Configuration Manager](http://localhost:4502/system/console/configMgr) .
-1. Zoek en open de **[!UICONTROL CQ-DAM-Handler-Gibson Font Managers]** service. Geef het pad op van de systeemlettertypen, de Adobe Server-lettertypen en de directory&#39;s met klantlettertypen. Klik op **[!UICONTROL Save]**.
+1. Meld u aan bij [AEM Configuratiebeheer](http://localhost:4502/system/console/configMgr) als beheerder.
+1. Zoek en open de **[!UICONTROL CQ-DAM-Handler-Gibson Font Managers]**-service. Geef het pad op van de systeemlettertypen, de Adobe Server-lettertypen en de directory&#39;s met klantlettertypen. Klik op **[!UICONTROL Save]**.
 
    >[!NOTE]
    >
    >Uw recht om lettertypen te gebruiken die door andere partijen dan Adobe zijn verschaft, wordt beheerst door de licentieovereenkomsten die deze partijen u met deze lettertypen hebben verstrekt, en wordt niet gedekt door uw licentie voor het gebruik van Adobe-software. Adobe raadt u aan na te gaan of u voldoet aan alle van toepassing zijnde niet-Adobe-licentieovereenkomsten voordat u niet-Adobe-lettertypen gebruikt met Adobe-software, met name voor het gebruik van lettertypen in een serveromgeving.
    > Wanneer u nieuwe lettertypen in de map Fonts installeert, start u het AEM Forms-exemplaar opnieuw.
 
-### Een lokale gebruikersaccount configureren om de service PDF Generator uit te voeren  {#configure-a-local-user-account-to-run-the-pdf-generator-service}
+### Een lokale gebruikersaccount configureren om de PDF Generator-service {#configure-a-local-user-account-to-run-the-pdf-generator-service} uit te voeren
 
-Er is een lokale gebruikersaccount vereist om de service PDF Generator uit te voeren. Zie Een gebruikersaccount [maken in Windows](https://support.microsoft.com/en-us/help/13951/windows-create-user-account) of [een gebruikersaccount maken op UNIX-platforms](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/4/html/Step_by_Step_Guide/s1-starting-create-account.html)voor stappen om een lokale gebruiker te maken.
+Er is een lokale gebruikersaccount vereist om de service PDF Generator uit te voeren. Zie [Een gebruikersaccount maken in Windows](https://support.microsoft.com/en-us/help/13951/windows-create-user-account) of [Een gebruikersaccount maken in UNIX-platforms](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/4/html/Step_by_Step_Guide/s1-starting-create-account.html) voor stappen om een lokale gebruiker te maken.
 
-1. Open de configuratiepagina van de [AEM Forms PDF Generator](http://localhost:4502/libs/fd/pdfg/config/ui.html) .
+1. Open de pagina [AEM Forms PDF Generator Configuration](http://localhost:4502/libs/fd/pdfg/config/ui.html).
 
-1. Geef op het **[!UICONTROL User Accounts]** tabblad de gegevens van een lokale gebruikersaccount op en klik op **[!UICONTROL Submit]**. Als Microsoft Windows daarom vraagt, geeft u de gebruiker toegang. Wanneer met succes toegevoegd, wordt de gevormde gebruiker getoond onder de **[!UICONTROL Your user accounts]** sectie op het **[!UICONTROL User Accounts]** lusje.
+1. Geef op het tabblad **[!UICONTROL User Accounts]** de gegevens van een lokale gebruikersaccount op en klik op **[!UICONTROL Submit]**. Als Microsoft Windows daarom vraagt, geeft u de gebruiker toegang. Als de geconfigureerde gebruiker met succes is toegevoegd, wordt deze weergegeven onder de sectie **[!UICONTROL Your user accounts]** op het tabblad **[!UICONTROL User Accounts]**.
 
-### De time-outinstellingen configureren {#configure-the-time-out-settings}
+### De time-outinstellingen {#configure-the-time-out-settings} configureren
 
-1. Zoek in [AEM configuratiemanager](http://localhost:4502/system/console/configMgr)de **[!UICONTROL Jacorb ORB Provider]** service en open deze.
+1. Zoek en open de **[!UICONTROL Jacorb ORB Provider]**-service in [AEM configuratiemanager](http://localhost:4502/system/console/configMgr).
 
-   Voeg het volgende aan het **[!UICONTROL Custom Properties.name]** gebied toe en klik **[!UICONTROL Save]**. De wachtende antwoordtime-out (ook wel CORBA-clienttime-out genoemd) wordt ingesteld op 600 seconden.
+   Voeg het volgende toe aan het **[!UICONTROL Custom Properties.name]** gebied en klik **[!UICONTROL Save]**. De wachtende antwoordtime-out (ook wel CORBA-clienttime-out genoemd) wordt ingesteld op 600 seconden.
 
    `jacorb.connection.client.pending_reply_timeout=600000`
 
 1. Meld u aan bij de AEM auteur en navigeer naar **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** > **[!UICONTROL Forms]** > **[!UICONTROL Configure PDF Generator]**. De standaard-URL is http://localhost:4502/libs/fd/pdfg/config/ui.html.
 
-   Open het **[!UICONTROL General Configuration]** tabblad en wijzig de waarde van de volgende velden voor uw omgeving:
+   Open het tabblad **[!UICONTROL General Configuration]** en wijzig de waarde van de volgende velden voor uw omgeving:
 
 <table> 
  <tbody> 
@@ -481,17 +481,17 @@ Er is een lokale gebruikersaccount vereist om de service PDF Generator uit te vo
  </tbody> 
 </table>
 
-### (Alleen Windows) Acrobat configureren voor de service PDF-generator {#configure-acrobat-for-the-pdf-generator-service}
+### (Alleen Windows) Configureer Acrobat for the PDF Generator service {#configure-acrobat-for-the-pdf-generator-service}
 
 In Microsoft Windows gebruikt de service PDF Generator Adobe Acrobat om ondersteunde bestandsindelingen te converteren naar een PDF-document. Voer de volgende stappen uit om Adobe Acrobat voor de service PDF Generator te configureren:
 
-1. Open Acrobat en selecteer **[!UICONTROL Edit]**> **[!UICONTROL Preferences]**> **[!UICONTROL Updater]**. Schakel de optie Controleren op updates uit **[!UICONTROL Automatically install updates]** en klik op **[!UICONTROL OK]**. Sluit Acrobat.
+1. Open Acrobat en selecteer **[!UICONTROL Edit]** **[!UICONTROL Preferences]** **[!UICONTROL Updater]**. Schakel in Controleren op updates **[!UICONTROL Automatically install updates]** uit en klik op **[!UICONTROL OK]**. Sluit Acrobat.
 1. Dubbelklik op een PDF-document op uw systeem. Wanneer Acrobat voor de eerste keer wordt gestart, worden de dialoogvensters Aanmelden, Welkomstscherm en EULA weergegeven. Deze dialoogvensters sluiten voor alle gebruikers die zijn geconfigureerd voor het gebruik van PDF Generator.
 1. Voer het PDF Generator-hulpprogrammabatchbestand uit om Acrobat voor de PDF Generator-service te configureren:
 
-   1. Open [AEM Package Manager](http://localhost:4502/crx/packmgr/index.jsp) en download het `adobe-aemfd-pdfg-common-pkg-[version].zip` bestand van pakketbeheer.
+   1. Open [AEM Package Manager](http://localhost:4502/crx/packmgr/index.jsp) en download het `adobe-aemfd-pdfg-common-pkg-[version].zip`-bestand van pakketbeheer.
    1. Pak het gedownloade .zip-bestand uit. Open de opdrachtprompt met beheerdersrechten.
-   1. Navigate to the `[extracted-zip-file]\jcr_root\etc\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]-win.zip\scripts` directory. Voer het volgende batchbestand uit:
+   1. Navigeer naar de map `[extracted-zip-file]\jcr_root\etc\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]-win.zip\scripts`. Voer het volgende batchbestand uit:
 
       `Acrobat_for_PDFG_Configuration.bat`
 
@@ -499,13 +499,13 @@ In Microsoft Windows gebruikt de service PDF Generator Adobe Acrobat om onderste
 
 1. Start System Readiness Tool (SRT) om de Acrobat-installatie te valideren. Het gereedschap controleert of de computer op de juiste wijze is geconfigureerd voor het uitvoeren van conversies van PDF Generator en genereert een rapport bij het opgegeven pad:
 
-   1. Opdrachtprompt openen. Navigate to the `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\etc\fd\ pdfg\tools\adobe-aemfd-pdfg-utilities-[version]-win.zip\srt` folder. Voer het volgende bevel van de bevelherinnering in werking:
+   1. Opdrachtprompt openen. Navigeer naar de map `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\etc\fd\ pdfg\tools\adobe-aemfd-pdfg-utilities-[version]-win.zip\srt`. Voer het volgende bevel van de bevelherinnering in werking:
 
       `cscript SystemReadinessTool.vbs [Path_of_reports_folder] en`
 
       >[!NOTE]
       >
-      >Als het Hulpprogramma voor systeemgereedheid meldt dat het bestand pdfgen.api niet beschikbaar is in de map acrobat plug-ins, kopieert u het bestand pdfgen.api van de `[extracted-adobe-aemfd-pdfg-common-pkg]\plugins\x86_win32` map naar de `[Acrobat_root]\Acrobat\plug_ins` map.
+      >Als het Hulpprogramma voor systeemgereedheid meldt dat het bestand pdfgen.api niet beschikbaar is in de map acrobat plug-ins, kopieert u het bestand pdfgen.api van de map `[extracted-adobe-aemfd-pdfg-common-pkg]\plugins\x86_win32` naar de map `[Acrobat_root]\Acrobat\plug_ins`.
 
    1. Ga naar `[Path_of_reports_folder]`. Open het bestand SystemReadinessTool.html. Verifieer het rapport en los de bovengenoemde kwesties op.
 
@@ -515,19 +515,19 @@ De service PDF Generator biedt meerdere manieren om HTML-bestanden naar PDF-docu
 
 De primaire standaardroute voor conversie van HTML naar PDF is Webkit. U wijzigt de omzettingsroute als volgt:
 
-1. Navigeer op AEM auteurinstantie naar **[!UICONTROL Tools]**> **[!UICONTROL Forms]**> **[!UICONTROL Configure PDF Generator]**.
+1. Navigeer bij AEM instantie van de auteur naar **[!UICONTROL Tools]** **[!UICONTROL Forms]** **[!UICONTROL Configure PDF Generator]**.
 
-1. In het **[!UICONTROL General Configuration]** lusje, selecteer de aangewezen omzettingsroute van **[!UICONTROL Primary Route for HTML to PDF conversions]** drop-down.
+1. Selecteer op het tabblad **[!UICONTROL General Configuration]** de voorkeursomzettingsroute in de vervolgkeuzelijst **[!UICONTROL Primary Route for HTML to PDF conversions]**.
 
-### Global Trust Store initialiseren {#intialize-global-trust-store}
+### Globale vertrouwde winkel initialiseren {#intialize-global-trust-store}
 
 Met het Betrouwbaarheidsopslagbeheer kunt u certificaten die u op de server vertrouwt, importeren, bewerken en verwijderen voor validatie van digitale handtekeningen en certificaatverificatie. U kunt om het even welk aantal certificaten invoeren en uitvoeren. Nadat een certificaat is geïmporteerd, kunt u de vertrouwensinstellingen bewerken en het type vertrouwde opslag vertrouwen. Voer de volgende stappen uit om een vertrouwde opslag te initialiseren:
 
 1. Meld u als beheerder aan bij een AEM Forms-instantie.
-1. Go to  **[!UICONTROL Tools]** >  **[!UICONTROL Security]** >  **[!UICONTROL Trust Store]**.
-1. Klik op  **[!UICONTROL Create TrustStore]**. Stel het wachtwoord in en tik op **[!UICONTROL Save]**.
+1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Trust Store]**.
+1. Klik op  **[!UICONTROL Create TrustStore]**. Stel het wachtwoord in en tik **[!UICONTROL Save]**.
 
-### Certificaten instellen voor de extensie en coderingsservice van Readers {#set-up-certificates-for-reader-extension-and-encryption-service}
+### Certificaten instellen voor extensie- en versleutelingsservice {#set-up-certificates-for-reader-extension-and-encryption-service}
 
 De DocAssurance-service kan gebruiksrechten toepassen op PDF-documenten. Als u gebruiksrechten wilt toepassen op PDF-documenten, configureert u de certificaten.
 
@@ -544,12 +544,12 @@ Voordat u de certificaten instelt, moet u controleren of u beschikt over:
 
 Voer de volgende stappen uit om de certificaten te configureren:
 
-1. Meld u als beheerder aan bij de AEM-auteur-instantie. Go to **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**.
-1. Klik op het **[!UICONTROL name]** veld van de gebruikersaccount. The **[!UICONTROL Edit User Settings]** page opens. Voor de instantie van de Auteur AEM, verblijven de certificaten in een KeyStore. Als u nog niet eerder een KeyStore hebt gemaakt, klikt u **[!UICONTROL Create KeyStore]** en stelt u een nieuw wachtwoord in voor de KeyStore. Als de server al een KeyStore bevat, slaat u deze stap over.  Als u het Adobe Extensions-certificaat gebruikt, is het wachtwoord voor het sleutelarchiefbestand altijd hetzelfde als het wachtwoord voor de persoonlijke sleutel.
-1. Selecteer op de **[!UICONTROL Edit User Settings]** pagina de **[!UICONTROL KeyStore]** tab. Vouw de **[!UICONTROL Add Private Key from Key Store file]** optie uit en geef een alias op. De alias wordt gebruikt om de bewerking Reader Extensions uit te voeren.
-1. Als u het certificaatbestand wilt uploaden, klikt u op een bestand &lt;filename>.pfx **[!UICONTROL Select Key Store File]** en uploadt u dit.
+1. Meld u als beheerder aan bij de AEM-auteur-instantie. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**.
+1. Klik op het veld **[!UICONTROL name]** van de gebruikersaccount. De pagina **[!UICONTROL Edit User Settings]** wordt geopend. Voor de instantie van de Auteur AEM, verblijven de certificaten in een KeyStore. Als u nog geen KeyStore hebt gemaakt, klikt u op **[!UICONTROL Create KeyStore]** en stelt u een nieuw wachtwoord in voor de KeyStore. Als de server al een KeyStore bevat, slaat u deze stap over.  Als u het Adobe Extensions-certificaat gebruikt, is het wachtwoord voor het sleutelarchiefbestand altijd hetzelfde als het wachtwoord voor de persoonlijke sleutel.
+1. Selecteer op de pagina **[!UICONTROL Edit User Settings]** het tabblad **[!UICONTROL KeyStore]**. Vouw de optie **[!UICONTROL Add Private Key from Key Store file]** uit en geef een alias op. De alias wordt gebruikt om de bewerking Reader Extensions uit te voeren.
+1. Als u het certificaatbestand wilt uploaden, klikt u op **[!UICONTROL Select Key Store File]** en uploadt u een bestand &lt;filename>.pfx.
 
-   Voeg de **[!UICONTROL Key Store Password]**, **[!UICONTROL Private Key Password]** en **[!UICONTROL Private Key Alias]** dat aan het certificaat is gekoppeld, toe aan de desbetreffende velden. Klik op **[!UICONTROL Submit]**.
+   Voeg **[!UICONTROL Key Store Password]**, **[!UICONTROL Private Key Password]**, en **[!UICONTROL Private Key Alias]** toe die met het certificaat wordt geassocieerd aan de respectieve gebieden. Klik op **[!UICONTROL Submit]**.
 
    >[!NOTE]
    >
@@ -557,13 +557,13 @@ Voer de volgende stappen uit om de certificaten te configureren:
 
 1. Klik op **[!UICONTROL Save & Close]** op de pagina **[!UICONTROL Edit User Settings]**.
 
-### AES-256 inschakelen {#enable-aes}
+### AES-256 {#enable-aes} inschakelen
 
-Als u AES 256-versleuteling wilt gebruiken voor PDF-bestanden, moet u de JCE-bestanden (Unlimited Strength Jurdiction Policy) (Java Cryptography Extension) ophalen en installeren. Vervang de bestanden local_policy.jar en US_export_policy.jar in de map jre/lib/security. Als u bijvoorbeeld Sun JDK gebruikt, kopieert u de gedownloade bestanden naar de `[JAVA_HOME]/jre/lib/security` map.
+Als u AES 256-versleuteling wilt gebruiken voor PDF-bestanden, moet u de JCE-bestanden (Unlimited Strength Jurdiction Policy) (Java Cryptography Extension) ophalen en installeren. Vervang de bestanden local_policy.jar en US_export_policy.jar in de map jre/lib/security. Als u bijvoorbeeld Sun JDK gebruikt, kopieert u de gedownloade bestanden naar de map `[JAVA_HOME]/jre/lib/security`.
 
 De dienst van de Assembler hangt van de dienst van de Uitbreidingen van de Reader, de dienst van de Handtekening, de dienst van Forms, en de dienst van de Output af. Voer de volgende stappen uit om te verifiëren dat de vereiste diensten in gebruik zijn:
 
-1. Meld u `https://'[server]:[port]'/system/console/bundles` als beheerder aan bij de URL.
+1. Meld u als beheerder aan bij URL `https://'[server]:[port]'/system/console/bundles`.
 1. Zoek de volgende dienst en zorg ervoor dat de diensten in gebruik zijn:
 
 <table> 
@@ -591,7 +591,7 @@ De dienst van de Assembler hangt van de dienst van de Uitbreidingen van de Reade
  </tbody> 
 </table>
 
-## Bekende problemen en problemen oplossen {#known-issues-and-troubleshooting}
+## Bekende problemen en problemen {#known-issues-and-troubleshooting} oplossen
 
 * De conversie van HTML naar PDF mislukt als een gecomprimeerd invoerbestand HTML-bestanden bevat met double-bytetekens in bestandsnamen. U voorkomt dit door geen double-bytetekens te gebruiken bij de naamgeving van HTML-bestanden.
 

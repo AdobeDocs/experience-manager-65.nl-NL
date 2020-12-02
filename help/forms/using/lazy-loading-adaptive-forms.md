@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Verbeter de prestaties van grote formulieren met het laden van de formulieren{#improve-performance-of-large-forms-with-lazy-loading}
+# Verbeter de prestaties van grote formulieren met wazig laden{#improve-performance-of-large-forms-with-lazy-loading}
 
 ## Inleiding tot wazig laden {#introduction-to-lazy-loading}
 
@@ -29,25 +29,28 @@ Laten we eerst de vereisten en voorbereidende stappen begrijpen voordat u lazy l
 
 Voordat u het laden van fragmenten in het aangepaste formulier kunt configureren, is het belangrijk dat u strategieën definieert om fragmenten te maken, waarden kunt identificeren die in scripts worden gebruikt of die in andere fragmenten worden doorverwezen, en regels definieert om de zichtbaarheid van velden in geladen fragmenten te beheren.
 
-* **Fragmenten identificeren en maken** U kunt alleen adaptieve formulierfragmenten configureren voor lui laden. Een fragment is een zelfstandig segment dat zich buiten een adaptief formulier bevindt en dat in verschillende formulieren opnieuw kan worden gebruikt. De eerste stap bij het implementeren van lui laden is het identificeren van logische secties in een formulier en het omzetten ervan in fragmenten. U kunt een geheel nieuw fragment maken of een bestaand formulierdeelvenster opslaan als fragment.
+* **Identificeer en maak**
+fragmentenU kunt alleen adaptieve formulierfragmenten configureren voor lui laden. Een fragment is een zelfstandig segment dat zich buiten een adaptief formulier bevindt en dat in verschillende formulieren opnieuw kan worden gebruikt. De eerste stap bij het implementeren van lui laden is het identificeren van logische secties in een formulier en het omzetten ervan in fragmenten. U kunt een geheel nieuw fragment maken of een bestaand formulierdeelvenster opslaan als fragment.
 
-   Zie [Adaptieve formulierfragmenten](../../forms/using/adaptive-form-fragments.md)voor meer informatie over het maken van fragmenten.
+   Zie [Aangepaste formulierfragmenten](../../forms/using/adaptive-form-fragments.md) voor meer informatie over het maken van fragmenten.
 
-* **Transacties op basis van Forms wereldwijde waarden** identificeren en markeren, omvatten dynamische elementen om relevante gegevens van gebruikers vast te leggen en te verwerken om het invullen van formulieren te vereenvoudigen. Het formulier heeft bijvoorbeeld veld A in fragment X, waarvan de waarde de geldigheid van veld B in een ander fragment bepaalt. In dit geval moet, als fragment X is gemarkeerd voor lui laden, de waarde van veld A beschikbaar zijn om veld B te valideren, zelfs als fragment X niet is geladen. Hiertoe kunt u veld A markeren als globaal, zodat de waarde ervan beschikbaar is voor het valideren van veld B wanneer fragment X niet is geladen.
+* **Algemene**
+waarden identificeren en markerenOp formulieren gebaseerde transacties bevatten dynamische elementen om relevante gegevens van gebruikers vast te leggen en te verwerken om het invullen van formulieren te vereenvoudigen. Het formulier heeft bijvoorbeeld veld A in fragment X, waarvan de waarde de geldigheid van veld B in een ander fragment bepaalt. In dit geval moet, als fragment X is gemarkeerd voor lui laden, de waarde van veld A beschikbaar zijn om veld B te valideren, zelfs als fragment X niet is geladen. Hiertoe kunt u veld A markeren als globaal, zodat de waarde ervan beschikbaar is voor het valideren van veld B wanneer fragment X niet is geladen.
 
-   Voor informatie over hoe te om een gebiedswaarde globaal te maken, zie het [Vormen lui het laden](../../forms/using/lazy-loading-adaptive-forms.md#p-configuring-lazy-loading-p).
+   Voor informatie over hoe te om een gebiedswaarde globaal te maken, zie [Vormend lazy ladend](../../forms/using/lazy-loading-adaptive-forms.md#p-configuring-lazy-loading-p).
 
-* **Regels schrijven om de zichtbaarheid van velden** Forms te bepalen, bevatten enkele velden en secties die niet van toepassing zijn op alle gebruikers en in alle voorwaarden. Forms-auteurs en -ontwikkelaars gebruiken zichtbaarheids- of show-hide-regels om hun zichtbaarheid te bepalen op basis van gebruikersinvoer. Bijvoorbeeld, wordt het gebied van het Adres van het Bureau niet getoond aan de gebruikers die op het gebied van de Status van de Werkgelegenheid in een vorm werkloos kiezen. Voor meer informatie over het schrijven van regels, zie het [Gebruiken van regelredacteur](../../forms/using/rule-editor.md).
+* **Schrijf regels om de zichtbaarheid van**
+fieldsForms te beheren omvatten sommige gebieden en secties die niet op alle gebruikers en in alle voorwaarden van toepassing zijn. Forms-auteurs en -ontwikkelaars gebruiken zichtbaarheids- of show-hide-regels om hun zichtbaarheid te bepalen op basis van gebruikersinvoer. Bijvoorbeeld, wordt het gebied van het Adres van het Bureau niet getoond aan de gebruikers die op het gebied van de Status van de Werkgelegenheid in een vorm werkloos kiezen. Voor meer informatie over het schrijven van regels, zie [Gebruikend regelredacteur](../../forms/using/rule-editor.md).
 
    U kunt zichtbaarheidsregels toepassen in de laaggeladen fragmenten, zodat voorwaardelijke velden alleen worden weergegeven wanneer ze vereist zijn. Markeer ook het voorwaardelijke veld globaal om ernaar te verwijzen in de zichtbaarheidsexpressie van het langzaam geladen fragment.
 
-## Lazy laden configureren {#configuring-lazy-loading}
+## Het vormen lui ladend {#configuring-lazy-loading}
 
 Voer de volgende stappen uit om het laden van een adaptief formulierfragment in te schakelen:
 
 1. Open het adaptieve formulier in de ontwerpmodus dat het fragment bevat dat u wilt inschakelen voor wazig laden.
 1. Selecteer het adaptieve formulierfragment en tik op ![cmp](assets/cmppr.png).
-1. Schakel in de zijbalk de optie **[!UICONTROL Load fragment lazily]** Gereed **in** en tik erop.
+1. Schakel in de zijbalk **[!UICONTROL Load fragment lazily]** in en tik **Done**.
 
    ![Lazy loading inschakelen voor het adaptieve formulierfragment](assets/lazy-loading-fragment.png)
 
@@ -56,14 +59,14 @@ Voer de volgende stappen uit om het laden van een adaptief formulierfragment in 
 U kunt de waarden van objecten in het laaggeladen fragment als globaal markeren, zodat deze beschikbaar zijn voor gebruik in scripts wanneer het bevattende fragment niet is geladen. Ga als volgt te werk:
 
 1. Open het adaptieve formulierfragment in de ontwerpmodus.
-1. Tik op het veld waarvan u de waarde als globaal wilt markeren en tik vervolgens op ![cmp](assets/cmppr.png).
-1. Schakel in het zijpaneel de optie Waarde **gebruiken tijdens laden** uit.
+1. Tik op het veld waarvan u de waarde als globaal wilt markeren en tik vervolgens op ![cmpr](assets/cmppr.png).
+1. Schakel in het zijpaneel de optie **Waarde gebruiken tijdens laden** in.
 
    ![Lazy loading field in sidebar](assets/enable-lazy-loading.png)
 
    De waarde wordt nu gemarkeerd als globaal en is beschikbaar voor gebruik in scripts, zelfs wanneer het omvattende fragment wordt verwijderd.
 
-## Overwegingen en aanbevolen procedures voor het configureren van lazy laden {#considerations-and-best-practices-for-configuring-lazy-loading}
+## Overwegingen en beste praktijken voor het vormen van luie lading {#considerations-and-best-practices-for-configuring-lazy-loading}
 
 Enkele beperkingen, aanbevelingen en belangrijke punten waarmee u rekening moet houden bij het werken met lazy laden zijn:
 
@@ -75,7 +78,7 @@ Enkele beperkingen, aanbevelingen en belangrijke punten waarmee u rekening moet 
 * U kunt zichtbaarheidsregels schrijven voor fragmenten die op basis van een voorwaarde moeten worden weergegeven of verborgen. U kunt bijvoorbeeld het fragment Gegevens echtgenoot weergeven of verbergen op basis van de staat van het huwelijk die een gebruiker heeft opgegeven.
 * Componenten voor bestandsbijlagen en Algemene voorwaarden worden niet ondersteund in laaggeladen fragmenten.
 
-### Aanbevolen procedures voor het schrijven van scripts voor het configureren van lazy loading {#scripting-best-practices-for-configuring-lazy-loading}
+### Beste werkwijzen in scripts voor het configureren van lui laden {#scripting-best-practices-for-configuring-lazy-loading}
 
 Belangrijke aandachtspunten bij het ontwikkelen van scripts voor luie laadvensters zijn:
 

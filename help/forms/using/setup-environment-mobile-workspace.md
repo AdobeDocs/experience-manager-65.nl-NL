@@ -1,6 +1,6 @@
 ---
-title: Omgeving instellen voor de app AEM Forms
-seo-title: Omgeving instellen voor de app AEM Forms
+title: Omgeving instellen voor AEM Forms-app
+seo-title: Omgeving instellen voor AEM Forms-app
 description: Hardware, software en licenties voor het samenstellen en implementeren van de AEM Forms-app.
 seo-description: Hardware, software en licenties voor het samenstellen en implementeren van de AEM Forms-app.
 uuid: 4123a6b7-5766-476c-9afb-f57029b148ad
@@ -12,13 +12,16 @@ discoiquuid: e6b01ade-7ea3-42a7-872d-cc35a3d2782a
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '228'
+ht-degree: 0%
 
 ---
 
 
-# Omgeving instellen voor de app AEM Forms{#set-up-environment-for-aem-forms-app}
+# Omgeving instellen voor AEM Forms-app{#set-up-environment-for-aem-forms-app}
 
-U hebt de volgende hardware, software en licenties nodig om de app AEM Forms te maken en te implementeren:
+U hebt de volgende hardware, software en licenties nodig om de AEM Forms-app te maken en te implementeren:
 
 ## Voor Windows-apparaten {#for-windows-devices}
 
@@ -39,7 +42,7 @@ U hebt de volgende hardware, software en licenties nodig om de app AEM Forms te 
 
 * Android Development Toolkit (ADT-bundel) die kan worden gedownload van [https://developer.android.com/sdk/index.html](https://developer.android.com/sdk/index.html)
 * Als het milieu opstelling op een systeem van MAC is, zou ADT in de omslag van Toepassingen moeten worden geïnstalleerd.
-* Als ADT in een andere plaats op MAC geïnstalleerd is, of als het milieu opstelling op een systeem van Vensters is, moet de weg van ADT SDK in `local.properties` dossier worden bijgewerkt dat in `src\android` omslag in het gehaalde bronarchief beschikbaar is `mobileworkspace-src.zip`. Wijs in dit bestand de `sdk.dir` variabele naar de ADT SDK-locatie op uw bureaublad.
+* Als ADT op een andere plaats op MAC geïnstalleerd is, of als het milieu opstelling op een systeem van Vensters is, moet de weg van ADT SDK in `local.properties` dossier worden bijgewerkt dat in `src\android` omslag in het gehaalde bronarchief `mobileworkspace-src.zip` beschikbaar is. Wijs in dit bestand de variabele `sdk.dir` naar de ADT SDK-locatie op uw bureaublad.
 
 >[!NOTE]
 >

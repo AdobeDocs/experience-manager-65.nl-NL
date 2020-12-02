@@ -18,13 +18,13 @@ ht-degree: 3%
 ---
 
 
-# Het wachtwoord voor LDAP-binding configureren{#configure-the-ldap-bind-password}
+# Vorm LDAP bindt wachtwoord{#configure-the-ldap-bind-password}
 
 Om veiligheidsrisico&#39;s te vermijden, bindt het bind wachtwoordgebied in het uitgevoerde configuratiedossier (config.xml) niet wordt gevormd. Alvorens u het configuratiedossier in een ander systeem invoert, zorg ervoor dat u dit wachtwoord vormt. Dit wachtwoord negeert een bestaand wachtwoord dat in het gegevensbestand wordt opgeslagen. Een null-wachtwoord negeert een bestaande wachtwoordwaarde die niet gelijk is aan null.
 
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Configuratie > Configuratiebestanden importeren en exporteren.
 1. Als u de huidige configuratie-instelling naar een bestand wilt exporteren, klikt u op Exporteren en slaat u het configuratiebestand op een andere locatie op.
-1. Ga in het bestand naar `Domains` > *[Uw domeinnaam]* > `DirectoryConfigs` > `LDAPGroupConfig` knooppunt. Hier volgt een voorbeeld:
+1. Zoek in het bestand het knooppunt `Domains` > *[Uw domeinnaam]* > `DirectoryConfigs` > `LDAPGroupConfig`. Hier volgt een voorbeeld:
 
    ```xml
     <node name="LDAPGroupConfig">
@@ -37,9 +37,9 @@ Om veiligheidsrisico&#39;s te vermijden, bindt het bind wachtwoordgebied in het 
         </map>
    ```
 
-   Typ een waarde voor de wijzigingen `bindpassword` en sla deze op.
+   Typ een waarde voor `bindpassword` en sla uw wijzigingen op.
 
-1. Ga in het bestand naar `Domains` > *[Uw domeinnaam]* > `DirectoryConfigs` > `LDAPGroupConfig` > `LDAPUserConfig` knooppunt. Hier volgt een voorbeeld:
+1. Zoek in het bestand het knooppunt `Domains` > *[Uw domeinnaam]* > `DirectoryConfigs` > `LDAPGroupConfig` > `LDAPUserConfig`. Hier volgt een voorbeeld:
 
    ```xml
     <node name="LDAPUserConfig">
@@ -52,7 +52,7 @@ Om veiligheidsrisico&#39;s te vermijden, bindt het bind wachtwoordgebied in het 
         </map>
    ```
 
-   Typ een waarde voor de wijzigingen `bindpassword` en sla deze op.
+   Typ een waarde voor `bindpassword` en sla uw wijzigingen op.
 
 1. Als u het bijgewerkte bestand wilt importeren, klikt u in Gebruikersbeheer op Configuratie > Configuratiebestanden importeren en exporteren.
 1. Klik op Bladeren om het bestand te zoeken, klik op Importeren en klik vervolgens op OK.

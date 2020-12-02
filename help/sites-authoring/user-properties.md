@@ -12,6 +12,9 @@ discoiquuid: b610e19c-f8d9-4ae2-b056-9fd5cf541261
 docset: aem65
 translation-type: tm+mt
 source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+workflow-type: tm+mt
+source-wordcount: '538'
+ht-degree: 4%
 
 ---
 
@@ -20,17 +23,17 @@ source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
 
 AEM biedt u de mogelijkheid om uw account en bepaalde aspecten van de auteursomgeving te configureren.
 
-Met de optie [Gebruiker](/help/sites-authoring/user-properties.md#user-settings) in de [koptekst](/help/sites-authoring/basic-handling.md#the-header) en het bijbehorende dialoogvenster [Mijn voorkeuren](#userpreferences) kunt u gebruikersopties wijzigen, zoals
+Met de optie [Gebruiker](/help/sites-authoring/user-properties.md#user-settings) in de [koptekst](/help/sites-authoring/basic-handling.md#the-header) en het bijbehorende dialoogvenster [Mijn voorkeuren](#userpreferences) kunt u uw gebruikersopties wijzigen, zoals
 
-Begin door tot de optie van de [Gebruiker](/help/sites-authoring/user-properties.md#user-settings) in de kopbal toegang te hebben.
+Begin door tot [User](/help/sites-authoring/user-properties.md#user-settings) optie in de kopbal toegang te hebben.
 
 ## Gebruikersinstellingen {#user-settings}
 
-In het dialoogvenster **Gebruikersinstellingen** hebt u toegang tot:
+In het instellingendialoogvenster **Gebruiker** hebt u toegang tot:
 
 * Imiteren als
 
-   * Met de functie [Imiteren als](/help/sites-administering/security.md#impersonating-another-user) functionaliteit kan een gebruiker namens een andere gebruiker werken.
+   * Met [Imiteren als](/help/sites-administering/security.md#impersonating-another-user) functionaliteit kan een gebruiker namens een andere gebruiker werken.
 
 * Profiel
 
@@ -60,7 +63,7 @@ Elke gebruiker kan bepaalde eigenschappen voor zichzelf instellen.
 
    Hiermee definieert u het gedrag voor het openen van vensters. Selecteer een van de volgende opties:
 
-   * **Meerdere vensters** (standaard)
+   * **Meerdere vensters**  (standaard)
 
       * Pagina&#39;s worden in een nieuw venster geopend.
    * **Eén venster**
@@ -70,7 +73,7 @@ Elke gebruiker kan bepaalde eigenschappen voor zichzelf instellen.
 
 * **Bureaubladhandelingen voor elementen weergeven**
 
-   Voor deze optie moet de AEM-bureaubladtoepassing worden gebruikt.
+   Voor deze optie moet AEM bureaubladtoepassing worden gebruikt.
 
 * **Annotatiekleur**
 
@@ -81,7 +84,7 @@ Elke gebruiker kan bepaalde eigenschappen voor zichzelf instellen.
 
 * **Relatieve datumpresentatie**
 
-   Om de leesbaarheid te verbeteren, worden data binnen de laatste zeven dagen als relatieve data (bijvoorbeeld drie dagen geleden) en oudere data als exacte data weergegeven (bijvoorbeeld 20 maart 2017).
+   Om de leesbaarheid te verbeteren, worden AEM datums in de laatste zeven dagen weergegeven als relatieve datums (bijvoorbeeld drie dagen geleden) en oudere datums als exacte datums (bijvoorbeeld 20 maart 2017).
 
    Met deze optie bepaalt u hoe datums in het systeem worden weergegeven. De volgende opties zijn beschikbaar:
 
@@ -102,11 +105,12 @@ Elke gebruiker kan bepaalde eigenschappen voor zichzelf instellen.
 
    * [Sneltoetsen voor het bewerken van pagina&#39;s](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
    * [Sneltoetsen voor consoles](/help/sites-authoring/keyboard-shortcuts.md)
+
    Met deze optie schakelt u sneltoetsen in. Deze worden standaard ingeschakeld, maar kunnen worden uitgeschakeld, bijvoorbeeld als een gebruiker bepaalde toegankelijkheidsvereisten heeft.
 
 * **Klassieke ontwerpervaring gebruiken**
 
-   Met deze optie schakelt u op [klassieke UI](/help/sites-classic-ui-authoring/home.md)gebaseerde paginaontwerpen in. Standaard wordt de standaardinterface gebruikt.
+   Met deze optie schakelt u op [klassieke UI](/help/sites-classic-ui-authoring/home.md) gebaseerde pagina-authoring in. Standaard wordt de standaardinterface gebruikt.
 
 * **Introductiepagina van middelen inschakelen**
 
@@ -114,4 +118,4 @@ Elke gebruiker kan bepaalde eigenschappen voor zichzelf instellen.
 
 * **Bestandsconfiguratie**
 
-   Met deze optie kunt u de voorkeursconfiguratie voor Adobe Stock opgeven. Deze optie is alleen beschikbaar als uw systeembeheerder de integratie [van](/help/assets/aem-assets-adobe-stock.md)Adobe Stock heeft ingeschakeld.
+   Met deze optie kunt u de voorkeursconfiguratie van Adobe Stock opgeven. Deze optie is alleen beschikbaar als uw systeembeheerder [Adobe Stock-integratie](/help/assets/aem-assets-adobe-stock.md) heeft ingeschakeld.

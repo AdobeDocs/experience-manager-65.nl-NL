@@ -1,8 +1,8 @@
 ---
 title: Codevoorbeelden
 seo-title: Codevoorbeelden
-description: Het team van Adobe Consulting Services heeft een reeks AEM-codevoorbeelden gegenereerd
-seo-description: Het team van Adobe Consulting Services heeft een reeks AEM-codevoorbeelden gegenereerd
+description: Het Adobe Consulting Services Team heeft een reeks AEM codevoorbeelden gegenereerd
+seo-description: Het Adobe Consulting Services Team heeft een reeks AEM codevoorbeelden gegenereerd
 uuid: 16f23fa6-5a3c-4697-87de-86db37b3ec1b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,21 +11,24 @@ topic-tags: best-practices
 discoiquuid: 07bf0224-6744-42d4-861f-d656ccfad171
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '238'
+ht-degree: 0%
 
 ---
 
 
 # Codevoorbeelden{#code-samples}
 
-Het team van Adobe Consulting Services heeft een reeks AEM-codevoorbeelden gegenereerd. Deze voorbeelden zijn goed gecommenteerde stukken code om AEM-ontwikkelaars te helpen de belangrijkste bouwstenen van AEM te begrijpen. De voorbeelden zijn hier beschikbaar: [https://adobe-consulting-services.github.io/acs-aem-samples/](https://adobe-consulting-services.github.io/acs-aem-samples/).
+Het Adobe Consulting Services Team heeft een reeks AEM codevoorbeelden gegenereerd. Deze steekproeven zijn goed gecommenteerde stukken van code helpen AEM Ontwikkelaars de belangrijkste bouwstenen van AEM begrijpen. De voorbeelden zijn hier beschikbaar: [https://adobe-consulting-services.github.io/acs-aem-samples/](https://adobe-consulting-services.github.io/acs-aem-samples/).
 
-Een meerdelige zelfstudie die is ontworpen voor ontwikkelaars die niet vertrouwd zijn met AEM en die fundamentele onderwerpen behandelt, zoals projectinstelling, Core Components, Editable Templates, Client Libraries en componentontwikkeling: Aan de [slag met AEM-sites - WKND-zelfstudie](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
+Een meerdelige zelfstudie die is ontworpen voor ontwikkelaars die niet vertrouwd zijn met AEM over fundamentele onderwerpen zoals projectinstelling, kerncomponenten, bewerkbare sjablonen, clientbibliotheken en componentontwikkeling: [Aan de slag met AEM Sites - WKND-zelfstudie](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
 
-Het Adobe AEM Community-team maakt Hoe kan ik-artikelen voor ontwikkelaars. Je kunt de artikelen [hier](https://helpx.adobe.com/experience-manager/topics/how-to.html)vinden.
+Het communautaire team van de Adobe AEM leidt ontwikkelaar hoe te artikelen. U kunt de artikelen [hier](https://helpx.adobe.com/experience-manager/topics/how-to.html) vinden.
 
-Een Geweven malplaatje om een nieuw project AEM als uitgangspunt tot stand te brengen om uw eigen functionaliteit te ontwikkelen is [hier](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)beschikbaar.
+Een Gemaakt malplaatje om een nieuw AEM project als uitgangspunt te creëren om uw eigen functionaliteit te ontwikkelen is beschikbaar [hier](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype).
 
-Standaard, touch-UI-codevoorbeelden zijn [hier](/help/sites-developing/developing-components.md)beschikbaar.
+Standaard, touch-UI-codevoorbeelden zijn [hier](/help/sites-developing/developing-components.md) beschikbaar.
 
 Er zijn extra codevoorbeelden beschikbaar:
 

@@ -46,7 +46,7 @@ Groepen blijven daarom over het algemeen stabiel, terwijl gebruikers vaker komen
 
 Met planning en een schone structuur kan het gebruik van groepen uw structuur weerspiegelen, waardoor u een duidelijk overzicht krijgt en een efficiënt mechanisme voor updates.
 
-### Built-in Users and Groups {#built-in-users-and-groups}
+### Ingebouwde gebruikers en groepen {#built-in-users-and-groups}
 
 AEM WCM installeert een aantal gebruikers en groepen. Deze kunnen worden gezien wanneer u eerst tot de Console van de Veiligheid na installatie toegang hebt.
 
@@ -55,7 +55,7 @@ In de volgende tabellen wordt elk item vermeld, samen met:
 * een korte beschrijving
 * eventuele aanbevelingen over noodzakelijke wijzigingen
 
-*Wijzig alle standaardwachtwoorden* (als u het account zelf niet verwijdert in bepaalde omstandigheden).
+*Wijzig alle standaardwachtwoorden*  (als u het account zelf niet verwijdert in bepaalde omstandigheden).
 
 <table>
  <tbody>
@@ -145,15 +145,15 @@ AEM gebruikt ACLs om te bepalen welke acties een gebruiker of een groep en kan n
 
 ### Machtigingen en ACL&#39;s {#permissions-and-acls}
 
-De toestemmingen bepalen wie wordt toegestaan om welke acties op een middel uit te voeren. De toestemmingen zijn het resultaat van [toegangsbeheerevaluaties](#access-control-lists-and-how-they-are-evaluated) .
+De toestemmingen bepalen wie wordt toegestaan om welke acties op een middel uit te voeren. De toestemmingen zijn het resultaat van [toegangsbeheer](#access-control-lists-and-how-they-are-evaluated) evaluaties.
 
-U kunt de machtigingen wijzigen die aan een bepaalde gebruiker zijn verleend of geweigerd door de selectievakjes voor de afzonderlijke AEM- [handelingen](security.md#actions)te selecteren of te wissen. Een vinkje geeft aan dat een handeling is toegestaan. Geen vinkje geeft aan dat een handeling wordt geweigerd.
+U kunt de toestemmingen veranderen die aan een bepaalde gebruiker worden verleend/ontkend door checkboxes voor de individuele AEM [acties](security.md#actions) te selecteren of te ontruimen. Een vinkje geeft aan dat een handeling is toegestaan. Geen vinkje geeft aan dat een handeling wordt geweigerd.
 
 Wanneer het vinkje zich in het raster bevindt, geeft dit ook aan welke machtigingen gebruikers hebben op welke locaties binnen AEM (dat wil zeggen, welke paden).
 
 ### Acties {#actions}
 
-Handelingen kunnen worden uitgevoerd op een pagina (bron). Voor elke pagina in de hiërarchie kunt u opgeven welke actie de gebruiker mag uitvoeren op die pagina. [De toestemmingen](#permissions-and-acls) laten u toe om een actie toe te staan of te ontkennen.
+Handelingen kunnen worden uitgevoerd op een pagina (bron). Voor elke pagina in de hiërarchie kunt u opgeven welke actie de gebruiker mag uitvoeren op die pagina. [U kunt ](#permissions-and-acls) toestaan of weigeren een handeling toe te staan.
 
 <table>
  <tbody>
@@ -178,7 +178,7 @@ Handelingen kunnen worden uitgevoerd op een pagina (bron). Voor elke pagina in d
    <td><p>De gebruiker kan:</p>
     <ul>
      <li>Maak een nieuwe pagina of onderliggende pagina.</li>
-    </ul> <p>Als <strong>wijzigen</strong> wordt geweigerd, worden de substructuren onder jcr:content specifiek uitgesloten, omdat het maken van jcr:content en de onderliggende knooppunten ervan als een wijziging van de pagina worden beschouwd. Dit geldt alleen voor knooppunten die een onderliggende node jcr:content definiëren.</p> </td>
+    </ul> <p>Als <strong>modify</strong> wordt geweigerd, worden de substructuren onder jcr:content specifiek uitgesloten, omdat het maken van jcr:content en de onderliggende knooppunten ervan als een paginawijziging worden beschouwd. Dit geldt alleen voor knooppunten die een onderliggende node jcr:content definiëren.</p> </td>
   </tr>
   <tr>
    <td>Verwijderen</td>
@@ -186,7 +186,7 @@ Handelingen kunnen worden uitgevoerd op een pagina (bron). Voor elke pagina in d
     <ul>
      <li>bestaande alinea's van de pagina of een onderliggende pagina verwijderen.</li>
      <li>een pagina of onderliggende pagina verwijderen.</li>
-    </ul> <p>Als <strong>wijzigen</strong> wordt geweigerd worden om het even welke subbomen onder jcr:inhoud specifiek uitgesloten zoals het verwijderen van jcr:inhoud en zijn kindknopen wordt beschouwd als een paginawijziging. Dit geldt alleen voor knooppunten die een onderliggende node jcr:content definiëren.</p> </td>
+    </ul> <p>Als <strong>modify</strong> wordt geweigerd worden om het even welke subbomen onder jcr:inhoud specifiek uitgesloten zoals het verwijderen van jcr:inhoud en zijn kindknopen wordt beschouwd als een paginaversie. Dit geldt alleen voor knooppunten die een onderliggende node jcr:content definiëren.</p> </td>
   </tr>
   <tr>
    <td>ACL lezen</td>
@@ -205,9 +205,9 @@ Handelingen kunnen worden uitgevoerd op een pagina (bron). Voor elke pagina in d
 
 >[!NOTE]
 >
->AEM genereert automatisch gebruikersgroepen voor rollentoewijzing (Eigenaar, Editor, Viewer) in [Verzamelingen](/help/assets/manage-collections.md). Nochtans, kan manueel het toevoegen van ACLs voor dergelijke groepen veiligheidskwetsbaarheid binnen AEM introduceren. Adobe adviseert dat u vermijdt manueel toevoegend ACLs.
+>AEM genereert automatisch gebruikersgroepen voor rol-toewijzing (Eigenaar, Editor, Viewer) in [Verzamelingen](/help/assets/manage-collections.md). Nochtans, kan manueel het toevoegen van ACLs voor dergelijke groepen veiligheidskwetsbaarheid binnen AEM introduceren. Adobe adviseert dat u vermijdt manueel toevoegend ACLs.
 
-### De Lijsten van het Toegangsbeheer en hoe zij worden geëvalueerd {#access-control-lists-and-how-they-are-evaluated}
+### Toegangsbeheerlijsten en hoe deze worden geëvalueerd {#access-control-lists-and-how-they-are-evaluated}
 
 AEM WCM gebruikt de Lijsten van het Toegangsbeheer (ACLs) om de toestemmingen te organiseren die op de diverse pagina&#39;s worden toegepast.
 
@@ -215,7 +215,7 @@ De Lijsten van het Toegangsbeheer worden samengesteld uit de individuele toestem
 
 >[!NOTE]
 >
->Er zijn ACLs die met de steekproeven inbegrepen zijn. U wordt aangeraden te controleren en te bepalen wat geschikt is voor uw toepassingen. Om ACLs te herzien die inbegrepen zijn, ga naar **CRXDE **en selecteer het lusje van het Controle **van de** Toegang voor de volgende knopen:
+>Er zijn ACLs die met de steekproeven inbegrepen zijn. U wordt aangeraden te controleren en te bepalen wat geschikt is voor uw toepassingen. Om ACLs te herzien die inbegrepen zijn, ga naar **CRXDE **en selecteer **Toegangsbeheer** tabel voor de volgende knopen:
 >
 >`/etc/cloudservices/facebookconnect/geometrixx-outdoorsfacebookapp`: Hiermee kan iedereen toegang lezen.
 >`/etc/cloudservices/twitterconnect/geometrixx-outdoors-twitter-app`: Hiermee kan iedereen toegang lezen.
@@ -224,7 +224,7 @@ De Lijsten van het Toegangsbeheer worden samengesteld uit de individuele toestem
 >
 >Uw aangepaste toepassing kan toegang instellen voor andere relaties, zoals `*/social/relationships/friend/*` of `*/social/relationships/pending-following/*`.
 >
->Wanneer u ACLs specifiek voor gemeenschappen creeert, kunnen de leden die die gemeenschappen aansluiten bij extra toestemmingen worden verleend. Dit kan bijvoorbeeld het geval zijn wanneer gebruikers zich bij `/content/geometrixx-outdoors/en/community/hiking` of `/content/geometrixx-outdoors/en/community/winter-sports`.
+>Wanneer u ACLs specifiek voor gemeenschappen creeert, kunnen de leden die die gemeenschappen aansluiten bij extra toestemmingen worden verleend. Dit kan bijvoorbeeld het geval zijn wanneer gebruikers zich bij `/content/geometrixx-outdoors/en/community/hiking` of `/content/geometrixx-outdoors/en/community/winter-sports` voegen.
 
 ### Machtigingsstaten {#permission-states}
 
@@ -232,7 +232,7 @@ De Lijsten van het Toegangsbeheer worden samengesteld uit de individuele toestem
 >
 >Voor gebruikers van CQ 5.3:
 >
->In tegenstelling tot eerdere CQ-versies, **mag het maken** en **verwijderen** niet langer worden toegestaan als een gebruiker alleen pagina&#39;s hoeft te wijzigen. Geef in plaats daarvan alleen de actie **modify** toe als u wilt dat gebruikers componenten op bestaande pagina&#39;s kunnen maken, wijzigen of verwijderen.
+>In tegenstelling tot vorige CQ-versies, **create** en **delete** niet meer als een gebruiker slechts pagina&#39;s hoeft te wijzigen. Geef in plaats daarvan de handeling **modify** alleen door als u wilt dat gebruikers componenten op bestaande pagina&#39;s kunnen maken, wijzigen of verwijderen.
 >
 >Om achterwaartse compatibiliteitsredenen wordt bij de tests voor acties geen rekening gehouden met de speciale behandeling van knooppunten die **jcr:content** definiëren.
 
@@ -292,9 +292,9 @@ Hieronder volgen aanbevelingen voor het beheren van toegangsbeheerlijsten:
 
    Het gebruiken ontkent kan onverwachte gevolgen veroorzaken als de toestemmingen in een verschillende orde worden toegepast dan de verwachte orde. Als een gebruiker lid is van meer dan één groep, kunnen de Weigeren verklaringen van één groep de Allow verklaring van een andere groep of vice versa annuleren. Het is moeilijk om een overzicht te houden wanneer dit gebeurt en kan gemakkelijk tot onvoorziene resultaten leiden, terwijl Toewijzingen toestaan dergelijke conflicten niet veroorzaakt.
 
-   Adobe adviseert dat u met Allow eerder dan ontkent werkt zie [Beste praktijken](#best-practices).
+   Adobe raadt aan dat u werkt met Toestaan in plaats van Weigeren, zie [Beste praktijken](#best-practices).
 
-Voordat u een van beide machtigingen wijzigt, moet u weten hoe deze werken en hoe ze elkaar beïnvloeden. Zie de documentatie CRX om te illustreren hoe AEM WCM toegangsrechten [en voorbeelden](/help/sites-administering/user-group-ac-admin.md#how-access-rights-are-evaluated) evalueert bij de opstelling van toegangsbeheerlijsten.
+Voordat u een van beide machtigingen wijzigt, moet u weten hoe deze werken en hoe ze elkaar beïnvloeden. Zie de documentatie CRX om te illustreren hoe AEM WCM [toegangsrechten](/help/sites-administering/user-group-ac-admin.md#how-access-rights-are-evaluated) en voorbeelden op vestiging toegangsbeheerlijsten evalueert.
 
 ### Machtigingen {#permissions}
 
@@ -310,9 +310,9 @@ U staat of ontkent toestemmingen toe door de aangewezen controledozen te selecte
 
 Samen met de rasterweergave biedt AEM een gedetailleerde weergave van machtigingen voor een geselecteerde gebruiker/groep op een bepaald pad. De detailweergave bevat aanvullende informatie.
 
-Naast het bekijken van informatie, kunt u de huidige gebruiker of de groep van een groep ook omvatten of uitsluiten. Zie Gebruikers of groepen [toevoegen tijdens het toevoegen van machtigingen](#adding-users-or-groups-while-adding-permissions). Wijzigingen die u hier aanbrengt, worden direct doorgevoerd in het bovenste gedeelte van de gedetailleerde weergave.
+Naast het bekijken van informatie, kunt u de huidige gebruiker of de groep van een groep ook omvatten of uitsluiten. Zie [Gebruikers of groepen toevoegen tijdens het toevoegen van machtigingen](#adding-users-or-groups-while-adding-permissions). Wijzigingen die u hier aanbrengt, worden direct doorgevoerd in het bovenste gedeelte van de gedetailleerde weergave.
 
-U opent de detailweergave door op het tabblad **Machtigingen** op **Details** voor een geselecteerde groep/gebruiker en een geselecteerd pad te klikken.
+Om tot de mening van het Detail, in **Toestemmingen** lusje toegang te hebben, klik **Details** voor om het even welke geselecteerde groep/gebruiker en weg.
 
 ![permissionetails](assets/permissiondetails.png)
 
@@ -340,9 +340,9 @@ Details worden in twee delen opgesplitst:
  </tbody>
 </table>
 
-### Een andere gebruiker imiteren {#impersonating-another-user}
+### Een andere gebruiker {#impersonating-another-user} imiteren
 
-Met de functie [Imiteren](/help/sites-authoring/user-properties.md#user-settings) kan een gebruiker namens een andere gebruiker werken.
+Met [Impersonate functionaliteit](/help/sites-authoring/user-properties.md#user-settings) kan een gebruiker namens een andere gebruiker werken.
 
 Dit betekent dat een gebruikersaccount andere accounts kan opgeven die met hun account kunnen werken. Met andere woorden, als gebruiker-B wordt toegestaan om gebruiker-A na te bootsen, dan kan gebruiker-B acties nemen gebruikend de volledige rekeningsdetails van gebruiker-A.
 
@@ -350,9 +350,9 @@ Hierdoor kunnen imitatoraccounts taken uitvoeren alsof ze de account gebruiken d
 
 >[!NOTE]
 >
->Voor het nadoen van werken voor gebruikers die geen beheerder zijn, moet de imitator (in het bovenstaande geval gebruiker-B) beschikken over de machtiging LEZEN in het `/home/users` pad.
+>Voor het nadoen van het werk voor niet-admin gebruikers, wordt de imitator (in het bovengenoemde geval gebruiker-B) vereist om LEZINGtoestemmingen in `/home/users` weg te hebben.
 >
->Zie [Machtigingen in AEM](/help/sites-administering/security.md#permissions-in-aem)voor meer informatie over hoe u dit kunt bereiken.
+>Voor meer informatie over hoe te om dit te bereiken, zie [Toestemmingen in AEM](/help/sites-administering/security.md#permissions-in-aem).
 
 >[!CAUTION]
 >
@@ -376,7 +376,7 @@ Hieronder worden de aanbevolen procedures beschreven wanneer u werkt met machtig
 | *Testen* | Gebruik een testinstallatie om te oefenen en ervoor te zorgen dat u de relaties tussen de verschillende gebruikers en groepen begrijpt. |
 | *Standaardgebruikers/groepen* | Werk de standaardgebruikers en -groepen altijd direct na de installatie bij om beveiligingsproblemen te voorkomen. |
 
-## Managing Users and Groups {#managing-users-and-groups}
+## Gebruikers en groepen beheren {#managing-users-and-groups}
 
 De gebruikers omvatten mensen die het systeem gebruiken en buitenlandse systemen die verzoeken aan het systeem indienen.
 
@@ -384,7 +384,7 @@ Een groep is een set gebruikers.
 
 Beide kunnen worden gevormd gebruikend de functionaliteit van het Beleid van de Gebruiker binnen de Console van de Veiligheid.
 
-### Toegang tot gebruikersbeheer via de beveiligingsconsole {#accessing-user-administration-with-the-security-console}
+### Toegang tot gebruikersbeheer met de Beveiligingsconsole {#accessing-user-administration-with-the-security-console}
 
 Met de beveiligingsconsole hebt u toegang tot alle gebruikers, groepen en bijbehorende machtigingen. Alle in deze sectie beschreven procedures worden uitgevoerd in dit venster.
 
@@ -410,77 +410,77 @@ De tabbladen bieden toegang tot verschillende configuraties:
 
 | Tab | Beschrijving |
 |--- |--- |
-| Filter, vak | Een mechanisme voor het filteren van de vermelde gebruikers en/of groepen. Zie Gebruikers en groepen [filteren](#filtering-users-and-groups). |
-| Gebruikers verbergen | Een schakeloptie die alle vermelde gebruikers verbergt, waarbij alleen groepen overblijven. Zie [Gebruikers en groepen](#hiding-users-and-groups)verbergen. |
-| Groepen verbergen | Een schakeloptie die alle vermelde groepen verbergt, waarbij alleen gebruikers blijven staan. Zie [Gebruikers en groepen](#hiding-users-and-groups)verbergen. |
-| Bewerken | Een menu waarmee u gebruikers of groepen kunt maken en verwijderen en waarmee u deze kunt activeren en deactiveren. Zie [Gebruikers en groepen](#creating-users-and-groups) maken en Gebruikers en groepen [](#deleting-users-and-groups)verwijderen. |
-| Eigenschappen | Hier wordt informatie weergegeven over de gebruiker of groep die e-mailgegevens, een beschrijving en naamgegevens kan bevatten. Hiermee kunt u ook het wachtwoord van een gebruiker wijzigen. Zie [Gebruikers en groepen](#creating-users-and-groups)maken, Eigenschappen [van gebruikers en groepen](#modifying-user-and-group-properties) wijzigen en een gebruikerswachtwoord [](#changing-a-user-password)wijzigen. |
+| Filter, vak | Een mechanisme voor het filteren van de vermelde gebruikers en/of groepen. Zie [Gebruikers en groepen filteren](#filtering-users-and-groups). |
+| Gebruikers verbergen | Een schakeloptie die alle vermelde gebruikers verbergt, waarbij alleen groepen overblijven. Zie [Gebruikers en groepen verbergen](#hiding-users-and-groups). |
+| Groepen verbergen | Een schakeloptie die alle vermelde groepen verbergt, waarbij alleen gebruikers blijven staan. Zie [Gebruikers en groepen verbergen](#hiding-users-and-groups). |
+| Bewerken | Een menu waarmee u gebruikers of groepen kunt maken en verwijderen en waarmee u deze kunt activeren en deactiveren. Zie [Gebruikers en groepen maken](#creating-users-and-groups) en [Gebruikers en groepen verwijderen](#deleting-users-and-groups). |
+| Eigenschappen | Hier wordt informatie weergegeven over de gebruiker of groep die e-mailgegevens, een beschrijving en naamgegevens kan bevatten. Hiermee kunt u ook het wachtwoord van een gebruiker wijzigen. Zie [Gebruikers en groepen maken](#creating-users-and-groups), [Gebruikers- en groepseigenschappen wijzigen](#modifying-user-and-group-properties) en [Een gebruikerswachtwoord wijzigen](#changing-a-user-password). |
 | Groepen | Hiermee geeft u alle groepen weer waartoe de geselecteerde gebruiker of groep behoort. U kunt de geselecteerde gebruiker of groepen toewijzen aan extra groepen of deze uit groepen verwijderen. Zie [Groepen](#adding-users-or-groups-to-a-group). |
 | Leden | Alleen beschikbaar voor groepen. Hiermee geeft u de leden van een bepaalde groep weer. Zie [Leden](#members-adding-users-or-groups-to-a-group). |
-| Machtigingen | U kunt machtigingen toewijzen aan een gebruiker of groep. Hier kunt u het volgende instellen:<ul><li>Machtigingen voor bepaalde pagina&#39;s/knooppunten. Zie Machtigingen [instellen](#setting-permissions). </li><li>Machtigingen voor het maken en verwijderen van pagina&#39;s en wijzigingen in de hiërarchie. ??? Hiermee kunt u rechten [](#settingprivileges)toewijzen, zoals wijzigingen in de hiërarchie, waarmee u pagina&#39;s kunt maken en verwijderen.</li><li>Machtigingen met betrekking tot [replicatiebevoegdheden](#setting-replication-privileges) (gewoonlijk van auteur tot publicatie) volgens een pad.</li></ul> |
-| Imitators | Laat een andere gebruiker zich de rekening voorstellen. Nuttig wanneer u een gebruiker nodig hebt om namens een andere gebruiker te handelen. Zie Gebruikers [imiteren](#impersonating-another-user). |
+| Machtigingen | U kunt machtigingen toewijzen aan een gebruiker of groep. Hier kunt u het volgende instellen:<ul><li>Machtigingen voor bepaalde pagina&#39;s/knooppunten. Zie [Machtigingen instellen](#setting-permissions). </li><li>Machtigingen voor het maken en verwijderen van pagina&#39;s en wijzigingen in de hiërarchie. ??? Hiermee kunt u [rechten toewijzen](#settingprivileges), zoals hiërarchische wijziging, waarmee u pagina&#39;s kunt maken en verwijderen.</li><li>Machtigingen met betrekking tot [replicatiebevoegdheden](#setting-replication-privileges) (gewoonlijk van auteur om te publiceren) volgens een pad.</li></ul> |
+| Imitators | Laat een andere gebruiker zich de rekening voorstellen. Nuttig wanneer u een gebruiker nodig hebt om namens een andere gebruiker te handelen. Zie [Gebruikers imiteren](#impersonating-another-user). |
 | Voorkeuren | Hiermee stelt u [voorkeuren in voor de groep of gebruiker](#setting-user-and-group-preferences). Bijvoorbeeld taalvoorkeuren. |
 
-### Filtering Users and Groups {#filtering-users-and-groups}
+### Gebruikers en groepen filteren {#filtering-users-and-groups}
 
-U kunt de lijst filteren door een filterexpressie in te voeren, die alle gebruikers en groepen verbergt die niet overeenkomen met de expressie. U kunt gebruikers en groepen ook verbergen met de knoppen Gebruiker [verbergen en Groep](#hiding-users-and-groups) verbergen.
+U kunt de lijst filteren door een filterexpressie in te voeren, die alle gebruikers en groepen verbergt die niet overeenkomen met de expressie. U kunt gebruikers en groepen ook verbergen door de [knopen van de Gebruiker te gebruiken en van de Groep ](#hiding-users-and-groups) te verbergen.
 
 U kunt als volgt gebruikers of groepen filteren:
 
-1. Typ in de linkerstructuurlijst de filterexpressie in de beschikbare ruimte. Als u bijvoorbeeld **admin** invoert, worden alle gebruikers en groepen met deze tekenreeks weergegeven.
+1. Typ in de linkerstructuurlijst de filterexpressie in de beschikbare ruimte. Als u bijvoorbeeld **admin** invoert, worden alle gebruikers en groepen weergegeven die deze tekenreeks bevatten.
 1. Klik op het vergrootglas om de lijst te filteren.
 
    ![cqsecurityFilter](assets/cqsecurityfilter.png)
 
-1. Klik op de **x** wanneer u alle filters wilt verwijderen.
+1. Klik **x** wanneer u alle filters wilt verwijderen.
 
-### Hiding Users and Groups {#hiding-users-and-groups}
+### Gebruikers en groepen verbergen {#hiding-users-and-groups}
 
-Het verbergen van gebruikers of groepen is een andere manier om de lijst met alle gebruikers en groepen in een systeem te filteren. Er zijn twee schakelmechanismen. Als u op Gebruiker verbergen klikt, worden alle gebruikers verborgen en als u op Groepen verbergen klikt, worden alle groepen verborgen (u kunt niet tegelijkertijd zowel gebruikers als groepen verbergen). Zie Gebruikers en groepen [](#filtering-users-and-groups)filteren als u de lijst wilt filteren met een filterexpressie.
+Het verbergen van gebruikers of groepen is een andere manier om de lijst met alle gebruikers en groepen in een systeem te filteren. Er zijn twee schakelmechanismen. Als u op Gebruiker verbergen klikt, worden alle gebruikers verborgen en als u op Groepen verbergen klikt, worden alle groepen verborgen (u kunt niet tegelijkertijd zowel gebruikers als groepen verbergen). Zie [Gebruikers en groepen filteren](#filtering-users-and-groups) als u de lijst wilt filteren met een filterexpressie.
 
 Gebruikers en groepen verbergen:
 
-1. Klik in de **beveiligingsconsole** op Gebruikers **** verbergen of Groepen **** verbergen. De geselecteerde knop wordt gemarkeerd weergegeven.
+1. Klik in de **Beveiligingsconsole** op **Gebruikers verbergen** of **Groepen verbergen**. De geselecteerde knop wordt gemarkeerd weergegeven.
 
    ![cqsecurityhideusers](assets/cqsecurityhideusers.png)
 
 1. Als u gebruikers of groepen opnieuw wilt weergeven, klikt u nogmaals op de bijbehorende knop.
 
-### Creating Users and Groups {#creating-users-and-groups}
+### Gebruikers en groepen maken {#creating-users-and-groups}
 
 Een nieuwe gebruiker of groep maken:
 
-1. In de lijst van de de consoleboom van de **Veiligheid** , geeft de klik **uit** en dan of **leidt tot Gebruiker** of **tot Groep**.
+1. Klik in de lijst **Beveiliging** consoleboomstructuur op **Bewerken** en vervolgens op **Gebruiker maken** of **Groep maken**.
 
    ![cqseruityeditcontextmenu](assets/cqseruityeditcontextmenu.png)
 
 1. Voer de vereiste gegevens in, afhankelijk van het feit of u een gebruiker of een groep maakt.
 
-   * Als u Gebruiker **maken selecteert,** voert u de aanmeldings-id, de voornaam en achternaam, het e-mailadres en een wachtwoord in. AEM maakt standaard een pad op basis van de eerste letter van de achternaam, maar u kunt een ander pad selecteren.
+   * Als u **Gebruiker maken selecteert,** voert u de aanmeldings-id, de voornaam en achternaam, het e-mailadres en een wachtwoord in. AEM maakt standaard een pad op basis van de eerste letter van de achternaam, maar u kunt een ander pad selecteren.
 
    ![gebruikersdialoogvenster maken](assets/createuserdialog.png)
 
-   * Als u Groep **** maken selecteert, voert u een groep-id en een optionele beschrijving in.
+   * Als u **Groep maken** selecteert, voert u een groep-id en een optionele beschrijving in.
 
    ![creategroupdialog](assets/creategroupdialog.png)
 
-1. Klik op **Maken**. De gebruiker of groep die u hebt gemaakt, wordt weergegeven in de boomstructuurlijst.
+1. Klik **Maken**. De gebruiker of groep die u hebt gemaakt, wordt weergegeven in de boomstructuurlijst.
 
-### Deleting Users and Groups {#deleting-users-and-groups}
+### Gebruikers en groepen {#deleting-users-and-groups} verwijderen
 
 Een gebruiker of groep verwijderen:
 
-1. Selecteer in de **beveiligingsconsole** de gebruiker of groep die u wilt verwijderen. Als u meerdere items wilt verwijderen, houdt u Shift of Ctrl ingedrukt en klikt u om deze te selecteren.
-1. Klik op **Bewerken,** selecteer vervolgens Verwijderen. AEM WCM vraagt of u de gebruiker of de groep wilt schrappen.
-1. Klik op **OK** om de handeling te bevestigen of op Annuleren om deze te annuleren.
+1. Selecteer in de **Security**-console de gebruiker of groep die u wilt verwijderen. Als u meerdere items wilt verwijderen, houdt u Shift of Ctrl ingedrukt en klikt u om deze te selecteren.
+1. Klik **Bewerken,** en selecteer vervolgens Verwijderen. AEM WCM vraagt of u de gebruiker of de groep wilt schrappen.
+1. Klik **OK** om te bevestigen of te annuleren om uw actie te annuleren.
 
-### Eigenschappen van gebruikers en groepen wijzigen {#modifying-user-and-group-properties}
+### Gebruiker- en groepseigenschappen wijzigen {#modifying-user-and-group-properties}
 
 Gebruikers- en groepseigenschappen wijzigen:
 
-1. Dubbelklik in de **beveiligingsconsole** op de naam van de gebruiker of groep die u wilt wijzigen.
+1. Dubbelklik in de **Security**-console op de naam van de gebruiker of groep die u wilt wijzigen.
 
-1. Klik op het tabblad **Eigenschappen** , breng de gewenste wijzigingen aan en klik op **Opslaan**.
+1. Klik op het tabblad **Eigenschappen**, breng de gewenste wijzigingen aan en klik op **Opslaan**.
 
    ![cqsecurityUserProps](assets/cqsecurityuserprops.png)
 
@@ -488,7 +488,7 @@ Gebruikers- en groepseigenschappen wijzigen:
 >
 >Het pad van de gebruiker wordt onder aan de gebruikerseigenschappen weergegeven. Het kan niet worden gewijzigd.
 
-### Gebruikerswachtwoord wijzigen {#changing-a-user-password}
+### Een gebruikerswachtwoord wijzigen {#changing-a-user-password}
 
 Gebruik de volgende procedure om het wachtwoord van een gebruiker te wijzigen.
 
@@ -498,14 +498,14 @@ Gebruik de volgende procedure om het wachtwoord van een gebruiker te wijzigen.
 >
 >Als u AEM Forms op JEE gebruikt, moet u onderstaande instructies niet gebruiken om het wachtwoord te wijzigen in plaats van AEM Forms op JEE-beheerconsole (/adminui) te gebruiken om het wachtwoord te wijzigen.
 
-1. Dubbelklik in de **beveiligingsconsole** op de gebruikersnaam waarvoor u het wachtwoord wilt wijzigen.
-1. Klik op het tabblad **Eigenschappen** (als dit tabblad nog niet actief is).
-1. Klik op Wachtwoord **** instellen. Het venster Wachtwoord instellen wordt geopend waar u uw wachtwoord kunt wijzigen.
+1. Dubbelklik in de **Security**-console op de gebruikersnaam waarvoor u het wachtwoord wilt wijzigen.
+1. Klik op het tabblad **Eigenschappen** (als dit nog niet het geval is).
+1. Klik **Wachtwoord instellen**. Het venster Wachtwoord instellen wordt geopend waar u uw wachtwoord kunt wijzigen.
 
    ![cqsecurityUserPassword](assets/cqsecurityuserpassword.png)
 
 1. Voer het nieuwe wachtwoord tweemaal in; omdat ze niet in duidelijke tekst worden weergegeven , is dit ter bevestiging - als ze niet overeenkomen , geeft het systeem een fout weer .
-1. Klik op **Instellen** om het nieuwe wachtwoord voor het account te activeren.
+1. Klik **Set** om het nieuwe wachtwoord voor de account te activeren.
 
 ### Gebruikers of groepen toevoegen aan een groep {#adding-users-or-groups-to-a-group}
 
@@ -517,27 +517,27 @@ AEM biedt drie verschillende manieren om gebruikers of groepen aan een bestaande
 
 ### Groepen - Gebruikers of groepen toevoegen aan een groep {#groups-adding-users-or-groups-to-a-group}
 
-Op het tabblad **Groepen** ziet u tot welke groepen de huidige account behoort. U kunt het gebruiken om de geselecteerde rekening aan een groep toe te voegen:
+Op het tabblad **Groepen** kunt u zien tot welke groepen de huidige account behoort. U kunt het gebruiken om de geselecteerde rekening aan een groep toe te voegen:
 
 1. Dubbelklik op de naam van de account (gebruiker of groep) die u aan een groep wilt toewijzen.
-1. Klik op het tabblad **Groepen** . Er wordt een lijst weergegeven met groepen waartoe de account al behoort.
-1. Klik in de boomstructuurlijst op de naam van de groep die u aan de account wilt toevoegen en sleep deze naar het deelvenster **Groepen** . (Als u meerdere gebruikers wilt toevoegen, houdt u Shift of Ctrl ingedrukt en klikt u op deze namen en sleept u ze.)
+1. Klik op het tabblad **Groepen**. Er wordt een lijst weergegeven met groepen waartoe de account al behoort.
+1. Klik in de structuurlijst op de naam van de groep die u aan de account wilt toevoegen en sleep deze naar het deelvenster **Groepen**. (Als u meerdere gebruikers wilt toevoegen, houdt u Shift of Ctrl ingedrukt en klikt u op deze namen en sleept u ze.)
 
    ![cqsecurityaddusertogroup](assets/cqsecurityaddusertogroup.png)
 
-1. Klik op **Opslaan** om de wijzigingen op te slaan.
+1. Klik **Opslaan** om uw wijzigingen op te slaan.
 
 ### Leden - Gebruikers of groepen toevoegen aan een groep {#members-adding-users-or-groups-to-a-group}
 
 Het tabblad **Leden** werkt alleen voor groepen en toont u welke gebruikers en groepen tot de huidige groep behoren. U kunt hiermee accounts toevoegen aan een groep:
 
 1. Dubbelklik op de naam van de groep waaraan u leden wilt toevoegen.
-1. Klik op het tabblad **Leden** . Er wordt een lijst weergegeven met leden die al tot deze groep behoren.
-1. Klik in de boomstructuurlijst op de naam van het lid dat u aan de groep wilt toevoegen en sleep het naar het deelvenster **Leden** . (Als u meerdere gebruikers wilt toevoegen, houdt u Shift of Ctrl ingedrukt en klikt u op deze namen en sleept u ze.)
+1. Klik op het tabblad **Leden**. Er wordt een lijst weergegeven met leden die al tot deze groep behoren.
+1. Klik in de boomstructuurlijst op de naam van het lid dat u aan de groep wilt toevoegen en sleep het naar het deelvenster **Leden**. (Als u meerdere gebruikers wilt toevoegen, houdt u Shift of Ctrl ingedrukt en klikt u op deze namen en sleept u ze.)
 
    ![cqsecurityadduserasmember](assets/cqsecurityadduserasmember.png)
 
-1. Klik op **Opslaan** om de wijzigingen op te slaan.
+1. Klik **Opslaan** om uw wijzigingen op te slaan.
 
 ### Gebruikers of groepen toevoegen tijdens het toevoegen van machtigingen {#adding-users-or-groups-while-adding-permissions}
 
@@ -545,14 +545,14 @@ Om leden aan een groep bij in een bepaalde weg toe te voegen:
 
 1. Dubbelklik op de naam van de groep of gebruiker waaraan u gebruikers wilt toevoegen.
 
-1. Klik op het tabblad **Machtigingen** .
+1. Klik op het tabblad **Machtigingen**.
 
 1. Navigeer naar het pad waaraan u machtigingen wilt toevoegen en klik op **Details**. Het onderste gedeelte van het detailvenster bevat informatie over wie machtigingen heeft voor die pagina.
 
    ![chlimage_1-113](assets/chlimage_1-113.png)
 
-1. Schakel het selectievakje in de kolom **Lid** in voor de leden die u machtigingen voor dat pad wilt hebben. Schakel het selectievakje voor het lid waarvoor u machtigingen wilt verwijderen uit. In de cel waarin u wijzigingen hebt aangebracht, wordt een rood driehoekje weergegeven.
-1. Klik op **OK** om de wijzigingen op te slaan.
+1. Selecteer het controlevakje in **Lid** kolom voor de leden u toestemmingen aan dat weg wilt hebben. Schakel het selectievakje voor het lid waarvoor u machtigingen wilt verwijderen uit. In de cel waarin u wijzigingen hebt aangebracht, wordt een rood driehoekje weergegeven.
+1. Klik **OK** om uw wijzigingen op te slaan.
 
 ### Gebruikers of groepen verwijderen uit groepen {#removing-users-or-groups-from-groups}
 
@@ -567,24 +567,24 @@ AEM biedt drie verschillende manieren om gebruikers of groepen uit een groep te 
 Een gebruiker- of groepsaccount verwijderen uit een groep:
 
 1. Dubbelklik op de naam van de groep of gebruikersaccount die u uit een groep wilt verwijderen.
-1. Klik op het tabblad **Groepen** . U ziet tot welke groepen het geselecteerde account behoort.
-1. Klik in het deelvenster **Groepen** op de naam van de gebruiker of groep die u uit de groep wilt verwijderen en klik op **Verwijderen**. (Als u meerdere accounts wilt verwijderen, houdt u Shift of Ctrl ingedrukt en klikt u op deze namen en klikt u op **Verwijderen**.)
+1. Klik op het tabblad **Groepen**. U ziet tot welke groepen het geselecteerde account behoort.
+1. Klik in het deelvenster **Groepen** op de naam van de gebruiker of groep die u uit de groep wilt verwijderen en klik op **Verwijderen**. (Als u meerdere accounts wilt verwijderen, houdt u Shift of Control ingedrukt en klikt u op deze namen en klikt u op **Verwijderen**.)
 
    ![cqsecurityremoveuserfromgrp](assets/cqsecurityremoveuserfromgrp.png)
 
-1. Klik op **Opslaan** om de wijzigingen op te slaan.
+1. Klik **Opslaan** om uw wijzigingen op te slaan.
 
 ### Leden - Gebruikers of groepen verwijderen uit groepen {#members-removing-users-or-groups-from-groups}
 
 Accounts uit een groep verwijderen:
 
 1. Dubbelklik op de naam van de groep waarvan u de leden wilt verwijderen.
-1. Klik op het tabblad **Leden** . Er wordt een lijst weergegeven met leden die al tot deze groep behoren.
-1. Klik in het deelvenster **Leden** op de naam van het lid dat u uit de groep wilt verwijderen en klik op **Verwijderen**. (Als u meerdere gebruikers wilt verwijderen, houdt u Shift of Control ingedrukt en klikt u op de desbetreffende namen en klikt u op **Verwijderen**.)
+1. Klik op het tabblad **Leden**. Er wordt een lijst weergegeven met leden die al tot deze groep behoren.
+1. Klik in het deelvenster **Leden** op de naam van het lid dat u uit de groep wilt verwijderen en klik op **Verwijderen**. (Als u meerdere gebruikers wilt verwijderen, houdt u Shift of Ctrl ingedrukt en klikt u op deze namen. Daarna klikt u op **Verwijderen**.)
 
    ![cqsecurityremovemember](assets/cqsecurityremovemember.png)
 
-1. Klik op **Opslaan** om de wijzigingen op te slaan.
+1. Klik **Opslaan** om uw wijzigingen op te slaan.
 
 ### Gebruikers of groepen verwijderen tijdens het toevoegen van machtigingen {#removing-users-or-groups-while-adding-permissions}
 
@@ -592,26 +592,26 @@ Om leden uit een groep bij een bepaalde weg te verwijderen:
 
 1. Dubbelklik op de naam van de groep of gebruiker waarvan u gebruikers wilt verwijderen.
 
-1. Klik op het tabblad **Machtigingen** .
+1. Klik op het tabblad **Machtigingen**.
 
 1. Navigeer naar het pad waarnaar u machtigingen wilt verwijderen en klik op **Details**. Het onderste gedeelte van het detailvenster bevat informatie over wie machtigingen heeft voor die pagina.
 
-   ![chlimage_1-115](assets/chlimage_1-114.png)
+   ![chlimage_1-114](assets/chlimage_1-114.png)
 
-1. Schakel het selectievakje in de kolom **Lid** in voor de leden die u machtigingen voor dat pad wilt hebben. Schakel het selectievakje voor het lid waarvoor u machtigingen wilt verwijderen uit. In de cel waarin u wijzigingen hebt aangebracht, wordt een rood driehoekje weergegeven.
-1. Klik op **OK** om de wijzigingen op te slaan.
+1. Selecteer het controlevakje in **Lid** kolom voor de leden u toestemmingen aan dat weg wilt hebben. Schakel het selectievakje voor het lid waarvoor u machtigingen wilt verwijderen uit. In de cel waarin u wijzigingen hebt aangebracht, wordt een rood driehoekje weergegeven.
+1. Klik **OK** om uw wijzigingen op te slaan.
 
 ### Gebruikerssynchronisatie {#user-synchronization}
 
-Wanneer de plaatsing een [publiceerlandbouwbedrijf](/help/sites-deploying/recommended-deploys.md#tarmk-farm)is, moeten de gebruikers en de groepen onder alle publiceren knopen worden gesynchroniseerd.
+Wanneer de plaatsing [publiceer landbouwbedrijf](/help/sites-deploying/recommended-deploys.md#tarmk-farm) is, moeten de gebruikers en de groepen onder alle publicatieknooppunten worden gesynchroniseerd.
 
-Zie [Gebruikerssynchronisatie](/help/sites-administering/sync.md)voor meer informatie over gebruikerssynchronisatie en het inschakelen ervan.
+Zie [Gebruikerssynchronisatie](/help/sites-administering/sync.md) voor meer informatie over gebruikerssynchronisatie en het inschakelen ervan.
 
-## Machtigingen beheren {#managing-permissions}
+## Machtigingen {#managing-permissions} beheren
 
 >[!NOTE]
 >
->Adobe heeft een nieuwe, op touch UI gebaseerde belangrijkste mening voor toestemmingenbeheer geïntroduceerd. Zie [deze pagina](/help/sites-administering/touch-ui-principal-view.md)voor meer informatie over het gebruik ervan.
+>Adobe heeft een nieuwe, op touch UI gebaseerde belangrijkste mening voor toestemmingenbeheer geïntroduceerd. Zie [deze pagina](/help/sites-administering/touch-ui-principal-view.md) voor meer informatie over het gebruik ervan.
 
 In deze sectie wordt beschreven hoe u machtigingen kunt instellen, inclusief replicatiebevoegdheden.
 
@@ -621,15 +621,15 @@ De toestemmingen staan gebruikers toe om bepaalde acties op middelen bij bepaald
 
 Machtigingen toevoegen, wijzigen of verwijderen:
 
-1. Dubbelklik in de **beveiligingsconsole** op de naam van de gebruiker of groep die u machtigingen wilt instellen voor of [naar knooppunten](#searching-for-nodes)wilt zoeken.
+1. Dubbelklik in de **Security**-console op de naam van de gebruiker of groep waarvoor u machtigingen wilt instellen of [zoek naar knooppunten](#searching-for-nodes).
 
-1. Klik op het tabblad **Machtigingen** .
+1. Klik op het tabblad **Machtigingen**.
 
    ![cquserpermissions](assets/cquserpermissions.png)
 
-1. Schakel in het structuurraster een selectievakje in zodat de geselecteerde gebruiker of groep een handeling kan uitvoeren of een selectievakje kan wissen om te weigeren dat de geselecteerde gebruiker of groep een handeling mag uitvoeren. Klik op **Details** voor meer informatie.
+1. Schakel in het structuurraster een selectievakje in zodat de geselecteerde gebruiker of groep een handeling kan uitvoeren of een selectievakje kan wissen om te weigeren dat de geselecteerde gebruiker of groep een handeling mag uitvoeren. Klik voor meer informatie op **Details**.
 
-1. Klik op **Opslaan** als u klaar bent.
+1. Wanneer gebeëindigd, klik **sparen**.
 
 ### Replicatiebevoegdheden instellen {#setting-replication-privileges}
 
@@ -648,13 +648,13 @@ Het replicatievoorrecht is het recht om inhoud te publiceren, en het kan voor gr
 Om replicatievoorrechten te plaatsen:
 
 1. Selecteer de gebruiker of de groep in de lijst, dubbelklik om te openen en klik op **Machtigingen**.
-1. Navigeer in het raster naar het pad waar u wilt dat de gebruiker over replicatiebevoegdheden beschikt of naar knooppunten [zoekt.](#searching-for-nodes)
+1. Navigeer in het raster naar het pad waar u wilt dat de gebruiker replicatiebevoegdheden heeft of [zoek naar knooppunten.](#searching-for-nodes)
 
-1. Selecteer in de kolom **Repliceren** bij het geselecteerde pad een selectievakje om de replicatiebevoegdheid voor die gebruiker of groep toe te voegen of schakel het selectievakje uit om de replicatiebevoegdheid te verwijderen. AEM wordt overal waar u wijzigingen hebt aangebracht een rood driehoekje weergegeven dat nog niet is opgeslagen.
+1. In **Replicate** kolom bij de geselecteerde weg, selecteer een controledoos om de replicatievoorrecht voor die gebruiker of groep toe te voegen, of de controledoos te ontruimen om het replicatievoorrecht te verwijderen. AEM wordt overal waar u wijzigingen hebt aangebracht een rood driehoekje weergegeven dat nog niet is opgeslagen.
 
    ![cquserreplicateMachtigingen](assets/cquserreplicatepermissions.png)
 
-1. Klik op **Opslaan** om de wijzigingen op te slaan.
+1. Klik **Opslaan** om uw wijzigingen op te slaan.
 
 ### Zoeken naar knooppunten {#searching-for-nodes}
 
@@ -680,11 +680,11 @@ In het zoekvak kunt u het volgende doen:
 
 Een zoekopdracht uitvoeren op paden of volledige tekst:
 
-1. Selecteer een gebruiker of groep in de beveiligingsconsole en klik op het tabblad **Machtigingen** .
+1. Selecteer een gebruiker of groep in de beveiligingsconsole en klik op het tabblad **Machtigingen**.
 
 1. Voer in het vak Zoeken een zoekterm in.
 
-### Gebruikers imiteren {#impersonating-users}
+### Gebruikers {#impersonating-users} imiteren
 
 U kunt één of meerdere gebruikers specificeren die worden toegestaan om zich de huidige gebruiker te verpersoonlijken. Dit betekent dat zij hun accountinstellingen kunnen overschakelen op die van de huidige gebruiker en namens deze gebruiker kunnen handelen.
 
@@ -698,19 +698,19 @@ Er zijn verschillende scenario&#39;s waarin u deze functionaliteit wilt gebruike
 Een bestaande gebruiker als volgt imiteren:
 
 1. Selecteer in de boomstructuurlijst de naam van de persoon die u aan andere gebruikers wilt toewijzen om zich voor te doen. Dubbelklik om te openen.
-1. Klik op het tabblad **Imitators** .
+1. Klik op het tabblad **Imitators**.
 1. Klik op de gebruiker die u als geselecteerde gebruiker wilt kunnen weergeven. Sleep de gebruiker (die zich zal nadoen) van de lijst aan de ruit van de Imitatie. De naam wordt weergegeven in de lijst.
 
    ![chlimage_1-115](assets/chlimage_1-115.png)
 
-1. Click **Save**.
+1. Klik **Opslaan**.
 
 ### Voorkeuren voor gebruikers en groepen instellen {#setting-user-and-group-preferences}
 
 U stelt de gebruikers- en groepsvoorkeuren in, waaronder de taal, het vensterbeheer en de werkbalkvoorkeuren:
 
 1. Selecteer in de linkerstructuur de gebruiker of groep waarvan u de voorkeuren wilt wijzigen. Houd Ctrl of Shift ingedrukt en klik op de gewenste selecties om meerdere gebruikers of groepen te selecteren.
-1. Klik op het tabblad **Voorkeuren** .
+1. Klik op het tabblad **Voorkeuren**.
 
    ![cqsecurityypreferences](assets/cqsecuritypreferences.png)
 
@@ -736,11 +736,11 @@ Als u toepassingsspecifieke voorrechten wilt uitvoeren, beschrijft de volgende i
 
 Het voorrecht van de hiërarchie-wijziging wordt behandeld door een combinatie jcr-voorrechten. Het replicatievoorrecht wordt genoemd **crx:replicate** die samen met andere voorrechten op de jcr bewaarplaats wordt opgeslagen/geëvalueerd. Het wordt echter niet op jcr-niveau gehandhaafd.
 
-De definitie en registratie van aangepaste rechten maakt officieel deel uit van de [Jackrabbit API](https://jackrabbit.apache.org/api/2.8/org/apache/jackrabbit/api/security/authorization/PrivilegeManager.html) vanaf versie 2.4 (zie ook [JCR-2887](https://issues.apache.org/jira/browse/JCR-2887)). Het verdere gebruik valt onder het beheer van de toegangscontrole van het JCR, zoals gedefinieerd in [JSR 283](https://jcp.org/en/jsr/detail?id=283) (afdeling 16). Daarnaast definieert de Jackrabbit API een aantal extensies.
+De definitie en registratie van aangepaste rechten maakt officieel deel uit van de [Jackrabbit API](https://jackrabbit.apache.org/api/2.8/org/apache/jackrabbit/api/security/authorization/PrivilegeManager.html) vanaf versie 2.4 (zie ook [JCR-2887](https://issues.apache.org/jira/browse/JCR-2887)). Verdere toepassingen vallen onder het JCR Access Control Management, zoals gedefinieerd in [JSR 283](https://jcp.org/en/jsr/detail?id=283) (sectie 16). Daarnaast definieert de Jackrabbit API een aantal extensies.
 
-Het mechanisme van de voorrechtregistratie wordt weerspiegeld in UI onder de Configuratie **van de** Bewaarplaats.
+Het mechanisme van de voorrechtregistratie wordt weerspiegeld in UI onder **Configuratie opslagplaats**.
 
-De registratie van nieuwe (aangepaste) rechten wordt zelf beschermd door een ingebouwd voorrecht dat moet worden toegekend op het niveau van de opslagplaats (in JCR: Als u &#39;null&#39; doorgeeft als de parameter &#39;absPath&#39; in de ac mgt api, zie jsr 333 voor meer informatie). Door gebrek, hebben **admin** en alle leden van beheerders dat voorrecht verleend.
+De registratie van nieuwe (aangepaste) rechten wordt zelf beschermd door een ingebouwd voorrecht dat moet worden toegekend op het niveau van de opslagplaats (in JCR: Als u &#39;null&#39; doorgeeft als de parameter &#39;absPath&#39; in de ac mgt api, zie jsr 333 voor meer informatie). Standaard hebben **admin** en alle leden van beheerders die bevoegdheid toegekend.
 
 >[!NOTE]
 >

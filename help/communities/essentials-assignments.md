@@ -19,13 +19,13 @@ ht-degree: 0%
 ---
 
 
-# Essentiële toewijzingen {#assignments-essentials}
+# Hoofdzaak van toewijzingen {#assignments-essentials}
 
-Lees verder om over de essentiële informatie voor het werken met de taakeigenschap van [het toelaten van communautaire](/help/communities/overview.md#enablement-community) plaatsen te weten te komen.
+Lees verder om over de essentiële informatie voor het werken met de toewijzingseigenschap van [enablement community](/help/communities/overview.md#enablement-community) plaatsen te weten te komen.
 
 De toewijzingsfunctie is de mogelijkheid om bronnen voor activering en leerpaden toe te wijzen aan leden van gemeenschappen die activering mogelijk maken.
 
-## Essentiële elementen voor client-kant {#essentials-for-client-side}
+## Essentiële elementen voor client-side {#essentials-for-client-side}
 
 <table>
  <tbody>
@@ -86,7 +86,7 @@ De enige mogelijke combinaties van Voltooiing en Successtatus zijn:
 
 ### Toewijzingsfunctie {#assignments-function}
 
-Een gemeenschapssitestructuur die de functie [](/help/communities/functions.md#assignments-function)Toewijzingen bevat, bevat een geconfigureerde ` [assignments](/help/communities/assignments.md)` component.
+Een community-sitestructuur die de [toewijzingsfunctie](/help/communities/functions.md#assignments-function) bevat, bevat een geconfigureerde ` [assignments](/help/communities/assignments.md)`-component.
 
 ### Referentie-API&#39;s {#reference-apis}
 
@@ -94,5 +94,5 @@ Een gemeenschapssitestructuur die de functie [](/help/communities/functions.md#a
 
 * [API voor rapportage](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/api/package-summary.html)
 
-* [Analytics API rapporteren](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/analytics/api/package-summary.html)
+* [API voor analyse van rapporten](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/analytics/api/package-summary.html)
 

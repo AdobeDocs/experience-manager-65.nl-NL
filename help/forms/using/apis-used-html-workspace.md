@@ -1,8 +1,8 @@
 ---
-title: API's die worden gebruikt in de werkruimte van AEM-formulieren
-seo-title: API's die worden gebruikt in de werkruimte van AEM-formulieren
-description: Openbare Java- en JavaScript-API's en methoden van de werkruimte van LiveCycle AEM Forms, beschikbaar voor aanpassing en automatisering.
-seo-description: Openbare Java- en JavaScript-API's en methoden van de werkruimte van LiveCycle AEM Forms, beschikbaar voor aanpassing en automatisering.
+title: API's die worden gebruikt in de AEM Forms-werkruimte
+seo-title: API's die worden gebruikt in de AEM Forms-werkruimte
+description: Openbare Java- en JavaScript-API's en methoden van de LiveCycle AEM Forms-werkruimte, beschikbaar voor aanpassing en automatisering.
+seo-description: Openbare Java- en JavaScript-API's en methoden van de LiveCycle AEM Forms-werkruimte, beschikbaar voor aanpassing en automatisering.
 uuid: 9602990e-8ac7-42eb-b507-50b3594055ba
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,13 +10,16 @@ topic-tags: forms-workspace
 discoiquuid: 4a73a973-fccf-466b-b4a0-47652a14a080
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '1020'
+ht-degree: 1%
 
 ---
 
 
-# API&#39;s die worden gebruikt in de werkruimte van AEM-formulieren {#apis-used-in-aem-forms-workspace}
+# API&#39;s die worden gebruikt in de AEM Forms-werkruimte {#apis-used-in-aem-forms-workspace}
 
-De volgende API&#39;s worden gebruikt in de werkruimte van AEM-formulieren.
+De volgende API&#39;s worden gebruikt in de AEM Forms-werkruimte.
 
 <table>
  <tbody>
@@ -107,7 +110,7 @@ De volgende API&#39;s worden gebruikt in de werkruimte van AEM-formulieren.
   <tr>
    <td>save</td>
    <td>ProcessManagementTaskService</td>
-   <td>save</td>
+   <td>opslaan</td>
    <td>Er wordt een taak op de server opgeslagen.</td>
   </tr>
   <tr>
@@ -264,7 +267,7 @@ De volgende API&#39;s worden gebruikt in de werkruimte van AEM-formulieren.
    <td>getProcessInstance<br /> </td>
    <td>ProcessManagementProcessService<br /> </td>
    <td>getProcessInstance<br /> </td>
-   <td>Er worden details van een procesinstantie opgehaald.<br /> </td>
+   <td>Het haalt details van een procesinstantie.<br /> </td>
   </tr>
   <tr>
    <td>getProcessInstances</td>
@@ -317,7 +320,7 @@ De volgende API&#39;s worden gebruikt in de werkruimte van AEM-formulieren.
   <tr>
    <td>initialize</td>
    <td>ProcessManagementClientSessionService</td>
-   <td>initialize</td>
+   <td>initialiseren</td>
    <td>Zo nodig wordt dit opnieuw bevestigd. Hiermee wordt de gebruiker geverifieerd. Stelt sessieparameters in voor server-/clientinformatie. Retourneert gebruikersinformatie en opiniepeilingsinterval.</td>
   </tr>
   <tr>

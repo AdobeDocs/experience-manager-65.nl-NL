@@ -43,11 +43,11 @@ AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte A
 
 >[!NOTE]
 >
->De snelle aanvang die in Programmering met AEM vormen wordt gevestigd is gebaseerd op de server van Forms die op JBoss en het werkende systeem van Vensters wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals Unix, vervangt u specifieke paden voor vensters door paden die worden ondersteund door het desbetreffende besturingssysteem. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>De snelle aanvang die in Programmering met AEM vormen wordt gevestigd is gebaseerd op de server van Forms die op JBoss en het werkende systeem van Vensters wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals Unix, vervangt u specifieke paden voor vensters door paden die worden ondersteund door het desbetreffende besturingssysteem. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 >[!NOTE]
 >
->Als u een douanecomponent hebt en u de protocollen van de ZEEP of EJB gebruikt om DSCs op de zelfde lokale server aan te halen, en die aanroepen werken na een verbetering op, dan gebruik in-VM ([DSC_IN_VM_PASSTHROUGH_STRATEGY](https://help.adobe.com/en_US/AEMForms/6-3/ProgramLC/javadoc/com/adobe/idp/dsc/clientsdk/ServiceClientFactoryProperties.html#DSC_IN_VM_PASSTHROUGH_STRATEGY)) aanroepingsstrategie. Gebruik de aanroepingsmethode van DSC in-VM met standaardServiceClientFactory en construeer geen ServiceClientFactory gebruikend protocollen SOAP of EJB.
+>Als u een douanecomponent hebt en u protocollen gebruikt van de ZEEP of van EJB om DSCs op de zelfde lokale server aan te halen, en die aanroepen ophouden werkend na een verbetering, dan gebruik in-VM ([DSC_IN_VM_PASSTHROUGH_STRATEGY](https://help.adobe.com/en_US/AEMForms/6-3/ProgramLC/javadoc/com/adobe/idp/dsc/clientsdk/ServiceClientFactoryProperties.html#DSC_IN_VM_PASSTHROUGH_STRATEGY)) aanroepingsstrategie. Gebruik de aanroepingsmethode van DSC in-VM met standaardServiceClientFactory en construeer geen ServiceClientFactory gebruikend protocollen SOAP of EJB.
 
 ## Snel starten (SOAP-modus): Een component implementeren met de Java API {#quick-start-soap-mode-deploying-a-component-using-the-java-api}
 
@@ -243,7 +243,7 @@ In het volgende Java-codevoorbeeld wordt de uitvoeringscontext van Run-As Invoke
  
 ```
 
-## Snel starten (SOAP-modus): Servicebeveiliging uitschakelen met de Java API {#quick-start-soap-mode-disabling-service-security-using-the-java-api}
+## Snel starten (SOAP-modus): De dienstveiligheid onbruikbaar maken gebruikend Java API {#quick-start-soap-mode-disabling-service-security-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt de beveiliging uitgeschakeld van de voorbeeldservice EncryptDocument en de services die vanuit deze service worden aangeroepen (de services Waarde instellen en Versleuteling).
 
@@ -358,7 +358,7 @@ In het volgende Java-codevoorbeeld wordt de beveiliging uitgeschakeld van de voo
 
 ## Snel starten (SOAP-modus): Een service starten met de Java API {#quick-start-soap-mode-starting-a-service-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt de service *SendEmailService* gestart.
+In het volgende Java-codevoorbeeld wordt een service gestart met de naam *SendEmailService*.
 
 ```java
  package com.adobe.sample.servicemanager; 

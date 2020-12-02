@@ -41,7 +41,7 @@ AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte A
 
 >[!NOTE]
 >
->De snelle start in Programming with AEM Forms is gebaseerd op de Forms Server die wordt geïmplementeerd op JBoss en het Windows-besturingssysteem. Als u echter een ander besturingssysteem gebruikt, zoals Unix, vervangt u vensterspecifieke paden door paden die worden ondersteund door het desbetreffende besturingssysteem. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>De snelle start in Programming with AEM Forms is gebaseerd op de Forms Server die wordt geïmplementeerd op JBoss en het Windows-besturingssysteem. Als u echter een ander besturingssysteem gebruikt, zoals Unix, vervangt u vensterspecifieke paden door paden die worden ondersteund door het desbetreffende besturingssysteem. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Snel starten (SOAP-modus): Toepassingsversie maken met de Java API {#quick-start-soap-mode-creating-application-version-using-the-java-api}
 

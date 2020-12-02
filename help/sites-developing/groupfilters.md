@@ -13,6 +13,9 @@ docset: aem65
 legacypath: /content/docs/en/aem/6-0/develop/mobile/groupfilters
 translation-type: tm+mt
 source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+workflow-type: tm+mt
+source-wordcount: '816'
+ht-degree: 0%
 
 ---
 
@@ -21,19 +24,19 @@ source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
 
 >[!NOTE]
 >
->Adobe adviseert gebruikend de Redacteur van het KUUROORD voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md) informatie.
 
 Maak een apparaatgroepfilter om een set vereisten voor apparaatmogelijkheden te definiëren. Maak zoveel filters als u nodig hebt om de benodigde groepen apparaatmogelijkheden als doel in te stellen.
 
 Ontwerp uw filters zodat u combinaties ervan kunt gebruiken om de groepen mogelijkheden te bepalen. Gewoonlijk zijn de mogelijkheden van verschillende apparaatgroepen elkaar overlappen. Daarom zou u sommige filters met veelvoudige definities van de apparatengroep kunnen gebruiken.
 
-Nadat u een filter creeert, kunt u het in de [groepsconfiguratie gebruiken.](/help/sites-developing/mobile.md#creating-a-device-group)
+Nadat u een filter creeert, kunt u het in [groepsconfiguratie gebruiken.](/help/sites-developing/mobile.md#creating-a-device-group)
 
-## De Java-klasse Filter {#the-filter-java-class}
+## De filterJava-klasse {#the-filter-java-class}
 
-Een apparaatgroepfilter is een OSGi-component die de [interface com.day.cq.wcm.mobile.api.device.DeviceGroupFilter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) implementeert. Wanneer opgesteld, verleent de implementatieklasse de filterdienst die aan de configuraties van de apparatengroep beschikbaar is.
+Een apparaatgroepfilter is een OSGi-component die de interface [com.day.cq.wcm.mobile.api.device.DeviceGroupFilter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) implementeert. Wanneer opgesteld, verleent de implementatieklasse de filterdienst die aan de configuraties van de apparatengroep beschikbaar is.
 
-De oplossing die in dit artikel wordt beschreven gebruikt Apache Felix Maven SCR Insteekmodule om de ontwikkeling van de component en de dienst te vergemakkelijken. Daarom gebruikt de voorbeeldklasse Java de `@Component`en de `@Service` annotaties. De klasse heeft de volgende structuur:
+De oplossing die in dit artikel wordt beschreven gebruikt Apache Felix Maven SCR Insteekmodule om de ontwikkeling van de component en de dienst te vergemakkelijken. Daarom gebruikt de voorbeeldklasse Java de annotaties `@Component`en `@Service`. De klasse heeft de volgende structuur:
 
 ```java
 package com.adobe.example.myapp;
@@ -71,7 +74,7 @@ U moet code opgeven voor de volgende methoden:
 * `getTitle`: Retourneert de naam van het filter. De naam wordt weergegeven wanneer u filters voor de apparaatgroep selecteert.
 * `matches`: Hiermee wordt bepaald of het apparaat de vereiste mogelijkheden heeft.
 
-### Filternaam en -beschrijving opgeven {#providing-the-filter-name-and-description}
+### De filternaam en -beschrijving opgeven {#providing-the-filter-name-and-description}
 
 De methoden `getTitle` en `getDescription` retourneren respectievelijk de filternaam en beschrijving. De volgende code illustreert de eenvoudigste implementatie:
 
@@ -89,13 +92,13 @@ De harde codering van de naam en beschrijvingstekst is voldoende voor niet-taals
 
 ### Evalueren aan de hand van filtercriteria {#evaluating-against-filter-criteria}
 
-De `matches` functie retourneert `true` als de apparaatmogelijkheden voldoen aan alle filtercriteria. Evalueer de informatie die in methodeargumenten wordt verstrekt om te bepalen als het apparaat tot de groep behoort. De volgende waarden worden als argumenten opgegeven:
+De functie `matches` retourneert `true` als de apparaatmogelijkheden aan alle filtercriteria voldoen. Evalueer de informatie die in methodeargumenten wordt verstrekt om te bepalen als het apparaat tot de groep behoort. De volgende waarden worden als argumenten opgegeven:
 
 * Een DeviceGroup-object
 * De naam van de gebruikersagent
 * Een object Map dat de apparaatmogelijkheden bevat. De sleutels van de Kaart zijn de WURFL™ bezitsnamen en de waarden zijn de overeenkomstige waarden van het WURFL™ gegevensbestand.
 
-De [interface com.day.cq.wcm.mobile.api.devicespecs.DeviceSpecsConstants](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) bevat een subset van de WURFL™-capaciteitsnamen in statische velden. Gebruik deze veldconstanten als toetsen bij het ophalen van waarden uit de Kaart met apparaatmogelijkheden.
+De interface [com.day.cq.wcm.mobile.api.devicespecs.DeviceSpecsConstants](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) bevat een subset van de WURFL™-capaciteitsnamen in statische velden. Gebruik deze veldconstanten als toetsen bij het ophalen van waarden uit de Kaart met apparaatmogelijkheden.
 
 In het volgende codevoorbeeld wordt bijvoorbeeld bepaald of het apparaat CSS ondersteunt:
 
@@ -104,17 +107,17 @@ boolean cssSupport = true;
 cssSupport = NumberUtils.toInt(capabilities.get(DeviceSpecsConstants.DSPEC_XHTML_SUPPORT_LEVEL)) > 1;
 ```
 
-Het `org.apache.commons.lang.math` pakket biedt de `NumberUtils` klasse.
+Het `org.apache.commons.lang.math` pakket verstrekt de `NumberUtils` klasse.
 
 >[!NOTE]
 >
->Zorg ervoor dat de WURFL™-database die naar AEM wordt geïmplementeerd de mogelijkheden bevat die u als filtercriteria gebruikt. (Zie [Apparaatdetectie](/help/sites-developing/mobile.md#server-side-device-detection).)
+>Zorg ervoor dat de WURFL™-database die wordt geïmplementeerd voor AEM de mogelijkheden bevat die u als filtercriteria gebruikt. (Zie [Apparaatdetectie](/help/sites-developing/mobile.md#server-side-device-detection).)
 
 ### Voorbeeldfilter voor schermgrootte {#example-filter-for-screen-size}
 
 De volgende voorbeeldimplementatie DeviceGroupFilter bepaalt of de fysieke grootte van het apparaat aan minimumvereisten voldoet. Dit filter is bedoeld om granulariteit toe te voegen aan de groep aanraakapparaten. De grootte van knoppen in de gebruikersinterface van de toepassing moet gelijk zijn, ongeacht de fysieke schermgrootte. De grootte van andere items, zoals tekst, kan variëren. Het filter laat de dynamische selectie van bepaalde CSS toe die de grootte van de elementen UI controleert.
 
-Dit filter past groottecriteria toe op de namen van de eigenschappen `physical_screen_height` en `physical_screen_width` WURFL™.
+Dit filter past groottecriteria op `physical_screen_height` en `physical_screen_width` WURFL™ bezitsnamen toe.
 
 ```java
 package com.adobe.example.myapp;
@@ -171,7 +174,7 @@ De waarden van het Koord die getTitle en getDescription methodes terugkeren zijn
 
 ![filterbeschrijving](assets/filterdescription.png)
 
-### Het Maven POM-bestand {#the-maven-pom-file}
+### Het gemaakte POM-bestand {#the-maven-pom-file}
 
 De volgende POM-code is handig als u Maven gebruikt om uw toepassingen te maken. De POM verwijst naar verschillende vereiste plug-ins en afhankelijkheden.
 
@@ -187,11 +190,11 @@ De volgende POM-code is handig als u Maven gebruikt om uw toepassingen te maken.
 
 * `org.apache.felix.scr.annotations.jar`: Verstrekt de Annotaties van de Component en van de Dienst.
 
-De interfaces DeviceGroup en DeviceGroupFilter zijn inbegrepen in de Communicatie van Dag 5 van de mobiele API bundel van WCM. De Felix-annotaties zijn opgenomen in de bundel Apache Felix Declarative Services. U kunt dit JAR-bestand opvragen in de openbare opslagplaats van Adobe.
+De interfaces DeviceGroup en DeviceGroupFilter zijn inbegrepen in de Communicatie van Dag 5 van de mobiele API bundel van WCM. De Felix-annotaties zijn opgenomen in de bundel Apache Felix Declarative Services. U kunt dit JAR-bestand opvragen bij de openbare Adobe-opslagplaats.
 
-Op het moment van ontwerpen is 5.5.2 de versie van de WCM Mobile API-bundel die in de meest recente versie van AEM staat. Gebruik Adobe Web Console ([https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles)) om ervoor te zorgen dat dit de bundelversie is die in uw omgeving wordt geïmplementeerd.
+Op het moment van ontwerpen is 5.5.2 de versie van de WCM Mobile API-bundel die in de meest recente versie van AEM staat. De Console van het Web van de Adobe van het gebruik ([https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles)) om dit te verzekeren is de bundelversie die in uw milieu wordt opgesteld.
 
-**** POM: (Uw POM gebruikt een andere groupId en versie.)
+**POM:** (Uw POM gebruikt een andere groupId en versie.)
 
 ```xml
 <project xmlns="https://maven.apache.org/POM/4.0.0"
@@ -256,4 +259,4 @@ Op het moment van ontwerpen is 5.5.2 de versie van de WCM Mobile API-bundel die 
 </project>
 ```
 
-Voeg het profiel toe dat in de sectie [Verkrijgen van de plug](/help/sites-developing/vlt-mavenplugin.md) -in Inhoudspakket wordt geleverd aan het instellingenbestand van uw afbeelding om de openbare Adobe-opslagplaats te gebruiken.
+Voeg het profiel toe dat de sectie [Verkrijgen van de Inhoudspakket Gemaakte Insteekmodule](/help/sites-developing/vlt-mavenplugin.md) aan uw gemaskeerde montageendossier verstrekt om de openbare bewaarplaats van de Adobe te gebruiken.

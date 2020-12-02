@@ -11,23 +11,26 @@ content-type: reference
 discoiquuid: e0372f4a-fe7b-4526-8391-5bb345b51d70
 translation-type: tm+mt
 source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+workflow-type: tm+mt
+source-wordcount: '501'
+ht-degree: 0%
 
 ---
 
 
-# Gebeurtenistracking uitbreiden{#extending-event-tracking}
+# Gebeurtenissenreeksspatiëring uitbreiden{#extending-event-tracking}
 
 Met AEM Analytics kunt u gebruikersinteractie op uw website volgen. Als ontwikkelaar moet u mogelijk:
 
-* Houd bij hoe bezoekers uw componenten gebruiken. Dit kan met gebeurtenissen van de [Douane worden gedaan.](#custom-events)
+* Houd bij hoe bezoekers uw componenten gebruiken. Dit kan worden gedaan met [Aangepaste gebeurtenissen.](#custom-events)
 * [De waarden van de toegang in ContextHub](/help/sites-developing/extending-analytics.md#accessing-values-in-the-contexthub).
-* [Voeg recordcallbacks](#adding-record-callbacks)toe.
+* [Voeg recordcallbacks](#adding-record-callbacks) toe.
 
 >[!NOTE]
 >
->Deze informatie is in principe algemeen, maar gebruikt [Adobe Analytics](/help/sites-administering/adobeanalytics.md) voor specifieke voorbeelden.
+>Deze informatie is eigenlijk algemeen, maar het gebruikt [Adobe Analytics](/help/sites-administering/adobeanalytics.md) voor specifieke voorbeelden.
 >
->Zie [Componenten](/help/sites-developing/components.md)ontwikkelen voor algemene informatie over het ontwikkelen van componenten en dialoogvensters.
+>Zie [Componenten ontwikkelen](/help/sites-developing/components.md) voor algemene informatie over het ontwikkelen van componenten en dialoogvensters.
 
 ## Aangepaste gebeurtenissen {#custom-events}
 
@@ -58,11 +61,11 @@ Een voorbeeld zou als kunnen kijken:
 </span>
 ```
 
-Bij het laden van de pagina worden alle `data-tracking` kenmerken verzameld en toegevoegd aan de gebeurtenisopslag van de ContextHub, waar ze kunnen worden toegewezen aan Adobe Analytics-gebeurtenissen. Gebeurtenissen die niet worden toegewezen, worden niet bijgehouden door Adobe Analytics. Zie [Verbinding maken met Adobe Analytics](/help/sites-administering/adobeanalytics.md) voor meer informatie over toewijzingsgebeurtenissen.
+Bij paginading, zullen alle `data-tracking` attributen worden verzameld en aan de gebeurtenisopslag van ContextHub toegevoegd, waar zij aan de gebeurtenissen van Adobe Analytics kunnen worden in kaart gebracht. Gebeurtenissen die niet zijn toegewezen, worden niet bijgehouden door Adobe Analytics. Zie [Verbinding maken met Adobe Analytics](/help/sites-administering/adobeanalytics.md) voor meer informatie over toewijzingsgebeurtenissen.
 
 ### Aangepaste gebeurtenissen bijhouden na laden van pagina {#tracking-custom-events-after-page-load}
 
-Als u gebeurtenissen wilt bijhouden die plaatsvinden nadat een pagina is geladen (zoals gebruikersinteracties), gebruikt u de `CQ_Analytics.record` JavaScript-functie:
+Als u gebeurtenissen wilt bijhouden die plaatsvinden nadat een pagina is geladen (zoals gebruikersinteracties), gebruikt u de JavaScript-functie `CQ_Analytics.record`:
 
 * `CQ_Analytics.record({event: 'eventName', values: { valueName: 'VALUE' }, collect: false, options: { obj: this, defaultLinkType: 'X' }, componentPath: '<%=resource.getResourceType()%>'})`
 
@@ -72,11 +75,11 @@ Wanneer
 
 * `values` bevat alle waarden die moeten worden bijgehouden
 * `collect` is optioneel en retourneert een array met de gebeurtenis en het gegevensobject.
-* `options` is optioneel en bevat opties voor het bijhouden van koppelingen, zoals HTML-element `obj` en ` [defaultLinkType](https://microsite.omniture.com/t2/help/en_US/sc/implement/index.html#linkType)`.
+* `options` is optioneel en bevat opties voor het bijhouden van koppelingen, zoals HTML-element  `obj` en  ` [defaultLinkType](https://microsite.omniture.com/t2/help/en_US/sc/implement/index.html#linkType)`.
 
-* `componentPath` is een noodzakelijk attribuut en het wordt geadviseerd om het te plaatsen aan `<%=resource.getResourceType()%>`
+* `componentPath` is een noodzakelijk attribuut en het wordt geadviseerd om het te plaatsen aan  `<%=resource.getResourceType()%>`
 
-Met de volgende definitie zorgt een gebruiker die op de koppeling **Springen naar bovenkant** klikt er bijvoorbeeld voor dat de twee gebeurtenissen `jumptop` en `headlineclick`, worden geactiveerd:
+Als een gebruiker bijvoorbeeld op de koppeling **Springen naar boven** klikt, worden de twee gebeurtenissen `jumptop` en `headlineclick` geactiveerd:
 
 ```xml
 <h1 data-tracking="{event: 'headline', values: {level:'1'}, componentPath: '<%=resource.getResourceType()%>'}">
@@ -84,11 +87,11 @@ Met de volgende definitie zorgt een gebruiker die op de koppeling **Springen naa
 </h1>
 ```
 
-## Toegang tot Waarden in ContextHub {#accessing-values-in-the-contexthub}
+## Toegang tot van Waarden in ContextHub {#accessing-values-in-the-contexthub}
 
-De JavaScript-API van ContextHub heeft een `getStore(name)` functie die de opgegeven opslag retourneert, indien beschikbaar. De opslag heeft een `getItem(key)` functie die de waarde van de gespecificeerde sleutel, indien beschikbaar terugkeert. Met behulp van de `getKeys()` functie is het mogelijk een array met gedefinieerde sleutels voor de specifieke winkel op te halen.
+De JavaScript-API van ContextHub heeft een functie `getStore(name)` die de opgegeven opslag retourneert, indien beschikbaar. De opslag heeft een functie `getItem(key)` die de waarde van de gespecificeerde sleutel, indien beschikbaar terugkeert. Met de functie `getKeys()` kunt u een array met gedefinieerde sleutels voor de specifieke opslag ophalen.
 
-U kunt op de hoogte worden gesteld van waardewijzigingen in een winkel door een functie te binden met de `ContextHub.getStore(name).eventing.on(ContextHub.Constants.EVENT_STORE_UPDATED, handler, selector, triggerForPastEvents)` functie.
+U kunt op de hoogte worden gesteld van waardeveranderingen op een opslag door een functie te binden gebruikend de `ContextHub.getStore(name).eventing.on(ContextHub.Constants.EVENT_STORE_UPDATED, handler, selector, triggerForPastEvents)` functie.
 
 De beste manier om van aanvankelijke beschikbaarheid van ContextHub op de hoogte te worden gebracht is de `ContextHub.eventing.on(ContextHub.Constants.EVENT_ALL_STORES_READY, handler, selector, triggerForPastEvents);` functie te gebruiken.
 
@@ -104,9 +107,9 @@ Opslagspecifiek:
 
 >[!NOTE]
 >
->Zie ook de volledige [ContextHub API-naslaggids](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/contexthub-api.html#ContextHubJavascriptAPIReference)
+>Zie ook de volledige [ContextHub API Reference](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/contexthub-api.html#ContextHubJavascriptAPIReference)
 
-## Recordcallbacks toevoegen {#adding-record-callbacks}
+## Recordcallbacks {#adding-record-callbacks} toevoegen
 
 Voor en na callbacks worden geregistreerd gebruikend de functies `CQ_Analytics.registerBeforeCallback(callback,rank)` en `CQ_Analytics.registerAfterCallback(callback,rank)`.
 

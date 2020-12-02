@@ -12,28 +12,31 @@ discoiquuid: 57cd61d5-78f2-4f8c-99ee-75e100c052ef
 docset: aem65
 translation-type: tm+mt
 source-git-commit: cf0c80928bc9f6cfcf472fc5c75215b3812e2c7c
+workflow-type: tm+mt
+source-wordcount: '681'
+ht-degree: 0%
 
 ---
 
 
 # Paginaprestaties analyseren{#analyzing-page-performance}
 
-Open de pagina [Inzicht](/help/sites-authoring/content-insights.md) inhoud om de prestaties van de pagina te analyseren die u ontwerpt. Configureer de rapportageperiode om uw analyse te concentreren.
+Open de pagina [Inzicht van inhoud](/help/sites-authoring/content-insights.md) om de prestaties van de pagina te analyseren die u ontwerpt. Configureer de rapportageperiode om uw analyse te concentreren.
 
-## Analyses en aanbevelingen voor een pagina openen {#opening-analytics-and-recommendations-for-a-page}
+## Analyses en Recommendations openen voor een pagina {#opening-analytics-and-recommendations-for-a-page}
 
-Gebruik de volgende procedure om de Analytics en Aanbevelingen voor een pagina te zien:
+Gebruik de volgende procedure om de Analytics en Recommendations voor een pagina te zien:
 
 1. Navigeer naar de pagina die u wilt analyseren.
-1. Klik of tik op **Analytics and Recommendations** op de werkbalk.
+1. Klik of tik op **Analytics en Recommendations** op de werkbalk.
 
    >[!NOTE]
    >
-   >Analyses en aanbevelingen voor een pagina worden alleen weergegeven als u AEM hebt geconfigureerd voor [integratie met Adobe Analytics](/help/sites-administering/adobeanalytics-connect.md).
+   >Analyses en Recommendations voor een pagina worden alleen weergegeven als u AEM hebt geconfigureerd voor [integratie met Adobe Analytics](/help/sites-administering/adobeanalytics-connect.md).
 
    ![screen-shot_2019-03-05at115319](assets/screen-shot_2019-03-05at115319.png)
 
-### Wijziging van de verslagperiode {#changing-the-reporting-period}
+### Wijziging van de rapportageperiode {#changing-the-reporting-period}
 
 Wijzig de volgende tijdgerelateerde aspecten van de analyserapporten:
 
@@ -42,7 +45,7 @@ Wijzig de volgende tijdgerelateerde aspecten van de analyserapporten:
 
 De gereedschappen voor het wijzigen van de aan de tijd gerelateerde aspecten van de rapporten staan boven aan de pagina Inzicht in inhoud. ![chlimage_1-126](assets/chlimage_1-126.png)
 
-#### Wijziging van de verslagperiode {#changing-the-reporting-period-1}
+#### Wijziging van de rapportageperiode {#changing-the-reporting-period-1}
 
 Wijzig de rapportageperiode van de pagina Inhoudscontrole om uw analyse van de pagina-activiteit toe te spitsen op een specifieke periode. Wanneer u de rapportageperiode wijzigt, worden de rapporten automatisch vernieuwd. Het schaduwgebied op het tijdframe vertegenwoordigt de rapportageperiode. De datums in de tijdlijn nemen toe van links naar rechts.
 
@@ -60,7 +63,7 @@ Om de rapportageperiode van een pagina Inhoudscontrole te wijzigen:
 
 1. Als u de einddatum van de rapportageperiode wilt wijzigen, sleept u de cirkel die rechts van het schaduwgebied wordt weergegeven naar de gewenste einddatum.
 
-#### Wijziging van de rangorde van de verslagperiode {#changing-the-granularity-of-the-reporting-period}
+#### De rangorde van de rapportageperiode wijzigen {#changing-the-granularity-of-the-reporting-period}
 
 Verander de hoeveelheid tijd dat elk gegevenspunt in een rapport overspant. Wanneer u bijvoorbeeld de granulariteit voor week selecteert, geeft elk gegevenspunt in het weergavenrapport het aantal weergaven voor een week aan.
 
@@ -74,9 +77,9 @@ De granulariteit beïnvloedt de rapporten die gegevens tegen tijd, zoals de Meni
 
 1. Klik of tik op de gewenste granulariteit. Zodra geselecteerd, werkt het rapport automatisch bij om op granulariteit te wijzen.
 
-### Taken toewijzen voor SEO-aanbevelingen {#assigning-tasks-for-seo-recommendations}
+### Taken toewijzen voor SEO Recommendations {#assigning-tasks-for-seo-recommendations}
 
-Gebruik het rapport SEO Recommendations om taken tot stand te brengen voor het verbeteren van paginazicht aan onderzoeksmotoren. Voor elke aanbeveling in het rapport die geen controleteken heeft, kunt u een taak tot stand brengen die u aan een gebruiker toewijst om het vereiste werk uit te voeren.
+Gebruik het SEO Recommendations-rapport om taken te maken waarmee u de zichtbaarheid van pagina&#39;s voor zoekprogramma&#39;s kunt verbeteren. Voor elke aanbeveling in het rapport die geen controleteken heeft, kunt u een taak tot stand brengen die u aan een gebruiker toewijst om het vereiste werk uit te voeren.
 
 ![chlimage_1-129](assets/chlimage_1-129.png)
 
@@ -84,7 +87,7 @@ De status van de SEO-aanbeveling geeft aan wanneer de taak is gemaakt maar nog n
 
 ![chlimage_1-130](assets/chlimage_1-130.png)
 
-Wanneer deze taak is gemaakt, wordt deze weergegeven in de lijst Taken van de gebruiker. Voor informatie over taken, zie het [Werken met Taken](/help/sites-authoring/task-content.md).
+Wanneer deze taak is gemaakt, wordt deze weergegeven in de lijst Taken van de gebruiker. Voor informatie over taken, zie [Werken met Taken](/help/sites-authoring/task-content.md).
 
 Gebruik de volgende procedure om een taak voor een aanbeveling te creëren SEO.
 
@@ -94,7 +97,7 @@ Gebruik de volgende procedure om een taak voor een aanbeveling te creëren SEO.
 
 1. Klik op het omcirkelde driehoekje naast het informatiepictogram.
 
-   ![chlimage_1-135](assets/chlimage_1-131.png)
+   ![chlimage_1-131](assets/chlimage_1-131.png)
 
 1. Vul de formuliervelden die worden weergegeven en tik op Maken:
 
@@ -104,7 +107,8 @@ Gebruik de volgende procedure om een taak voor een aanbeveling te creëren SEO.
    * Omschrijving: Een beschrijving van de activiteit die wordt vereist om de taak te voltooien. De standaardbeschrijving is de informatie die bij de SEO-aanbeveling is gevoegd.
    * Taakprioriteit: De prioriteit van de taak.
    * Vervaldatum: De datum waarop de taak moet zijn voltooid.
-   **** Opmerking: De taak die wordt gecreeerd omvat ook de weg aan de pagina waarop de aanbeveling SEO van toepassing is.
+
+   **Opmerking:** De taak die wordt gemaakt, bevat ook het pad naar de pagina waarop de SEO-aanbeveling van toepassing is.
 
 1. Klik op Gereed of tik op Gereed om het bericht Taak gemaakt te sluiten.
 

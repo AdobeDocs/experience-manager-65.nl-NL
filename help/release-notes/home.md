@@ -50,6 +50,6 @@ De AEM Release-notities bevatten belangrijke informatie over de nieuwste versie 
 
 ## Copyright, licenties en disclaimers {#copyright-licenses-and-disclaimers}
 
-Zie voor meer informatie [https://www.adobe.com/legal/terms/enterprise-licensing.html](https://www.adobe.com/legal/terms/enterprise-licensing.html)
+Zie [https://www.adobe.com/legal/terms/enterprise-licensing.html](https://www.adobe.com/legal/terms/enterprise-licensing.html)
 
 Kennisgeving van licenties van derden: [https://www.adobe.com/products/eula/third_party/](https://www.adobe.com/products/eula/third_party/)

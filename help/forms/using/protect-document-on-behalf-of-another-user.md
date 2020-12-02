@@ -14,18 +14,18 @@ ht-degree: 0%
 ---
 
 
-# Een document namens een andere gebruiker Protect {#protect-a-document-on-behalf-of-another-user}
+# Een document Protect namens een andere gebruiker {#protect-a-document-on-behalf-of-another-user}
 
 AEM Forms Document Security Java SDK biedt API&#39;s waarmee een gebruikersaccount een document namens een andere gebruiker kan beveiligen zonder dat de machtigingen voor het bewerken van het document zijn verkregen. U kunt de API&#39;s in een workflowproces of programmatisch als documentservice gebruiken. De nieuwe API&#39;s zijn:
 
-* **protectDocumentUse** the ProtectDocument API to apply a policy on a document namens
+* **** protectDocumentUse the ProtectDocument API to apply a policy on a document namens
 
    een andere gebruikersaccount. Rechten van de gebruikersaccount die worden gebruikt om het beleid toe te passen, blijven beperkt tot het beschermen van het document. Er worden geen rechten verkregen om het document te openen en te bekijken. RMSecureDocumentResult protectDocument(Document inDoc, String documentName, String policySetName, String policyName, RMLocale locale, boolean bExactMatchForNames)
 
-* **createLicenseUse** de CreateLicense API om een licentie voor een beleid namens een andere gebruikersaccount te maken. PublishLicenseDTO createLicense(String policyId, String documentName, boolean logSecureDocEvent)
-* **protectDocumentWithCoverPageUse** the ProtectDocumentWithCoverPage API om een beleid toe te passen en een omslagpagina aan een document namens een andere gebruiker toe te voegen. Rechten van de gebruikersaccount die worden gebruikt om het beleid toe te passen, blijven beperkt tot het beschermen van het document. Het recht om het document te openen en te bekijken, wordt niet bereikt. RMSecureDocumentResult protectDocumentWithCoverPage(Document inDoc, String documentName, String policySetName, String policyName, Document coverDoc, boolean bExactMatchForNames)
+* **** createLicenseUse the CreateLicense API to create a license for a policy on name of another user account. PublishLicenseDTO createLicense(String policyId, String documentName, boolean logSecureDocEvent)
+* **** protectDocumentWithCoverPageGebruik de ProtectDocumentWithCoverPage API om een beleid toe te passen en een omslagpagina toe te voegen aan een document namens een andere gebruiker. Rechten van de gebruikersaccount die worden gebruikt om het beleid toe te passen, blijven beperkt tot het beschermen van het document. Het recht om het document te openen en te bekijken, wordt niet bereikt. RMSecureDocumentResult protectDocumentWithCoverPage(Document inDoc, String documentName, String policySetName, String policyName, Document coverDoc, boolean bExactMatchForNames)
 
-## De API&#39;s gebruiken om een document te beveiligen namens een andere gebruiker {#using-the-apis-to-protect-a-document-on-behalf-of-another-user}
+## API&#39;s gebruiken om een document te beveiligen namens een andere gebruiker {#using-the-apis-to-protect-a-document-on-behalf-of-another-user}
 
 Voer de volgende stappen uit om een document te beschermen namens een andere gebruiker en zonder de machtigingen te verkrijgen om het document te bewerken:
 

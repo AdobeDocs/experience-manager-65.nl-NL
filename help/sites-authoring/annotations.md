@@ -46,7 +46,7 @@ Een speciale [modus](/help/sites-authoring/author-environment-tools.md#page-mode
 
 >[!NOTE]
 >
->Vergeet niet dat [opmerkingen](/help/sites-authoring/basic-handling.md#timeline) ook beschikbaar zijn voor het geven van feedback op een pagina.
+>Vergeet niet dat [commentaren](/help/sites-authoring/basic-handling.md#timeline) ook beschikbaar zijn voor het verstrekken van terugkoppelen op een pagina.
 
 >[!NOTE]
 >
@@ -59,7 +59,7 @@ Een speciale [modus](/help/sites-authoring/author-environment-tools.md#page-mode
 
 
 
-### Een component annoteren {#annotating-a-component}
+### Een component {#annotating-a-component} annoteren
 
 In de modus Annoteren kunt u annotaties voor uw inhoud maken, bewerken, verplaatsen of verwijderen:
 

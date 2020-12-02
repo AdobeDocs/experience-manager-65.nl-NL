@@ -11,20 +11,23 @@ discoiquuid: d8c1c507-a6c4-44f5-be01-ee902bc28410
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+workflow-type: tm+mt
+source-wordcount: '685'
+ht-degree: 0%
 
 ---
 
 
-# Revisies voor elementen in formulieren maken en beheren{#creating-and-managing-reviews-for-assets-in-forms}
+# Revisies maken en beheren voor elementen in formulieren{#creating-and-managing-reviews-for-assets-in-forms}
 
-## Controleren {#review}
+## Revisie {#review}
 
 Een revisie is een mechanisme waarmee een of meer revisoren opmerkingen kunnen maken over een element dat beschikbaar is in een formulier.
 
 ## Een revisie instellen {#setting-up-a-review}
 
-1. Navigeer naar het tabblad Formulieren en selecteer een formulier.
-1. Als er geen revisie wordt uitgevoerd op het element, wordt het pictogram Start Review ![name6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) weergegeven op de actiebalk. Klik op het pictogram Revisie starten ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) .
+1. Navigeer naar het tabblad Forms en selecteer een formulier.
+1. Als er geen revisie wordt uitgevoerd op het element, wordt het pictogram Revisie starten ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) weergegeven op de actiebalk. Klik op het pictogram Revisie starten ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png).
 1. Voer de volgende gegevens in:
 
    * Revisienaam: Verplicht, kan alfanumerieke karakters, koppelteken, of onderstrepingsteken bevatten.
@@ -53,11 +56,11 @@ In deze sectie wordt beschreven wat er gebeurt wanneer een revisie wordt gemaakt
 >
 >Alleen lopende revisies kunnen worden gewijzigd. Volledige revisies kunnen niet worden gewijzigd.
 
-1. Navigeer naar het tabblad Formulieren en selecteer een formulier.
+1. Navigeer naar het tabblad Forms en selecteer een formulier.
 
-1. Als een element een revisie heeft die wordt uitgevoerd en u de aanvrager van de revisie bent, wordt een pictogram van het type Revisie beheren6forms_review_chat_comment ![](assets/aem6forms_review_chat_comment.png) weergegeven op de actiebalk. Alleen revisieaanvrager kan de revisie beheren (bijwerken/beëindigen).
+1. Als een element een revisie heeft die wordt uitgevoerd en u de aanvrager van de revisie bent, wordt de pictogrammen Revisie beheren ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) weergegeven op de actiebalk. Alleen revisieaanvrager kan de revisie beheren (bijwerken/beëindigen).
 
-   Klik op de ![komma6forms_review_chat_](assets/aem6forms_review_chat_comment.png)commenticon beheren.
+   Klik op het pictogram Revisie beheren ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png)pictogram.
 
    Voor andere gebruikers dan de aanvrager is het pictogram Revisie beheren uitgeschakeld.
 

@@ -1,8 +1,8 @@
 ---
 title: ConvertPDF-service
 seo-title: ConvertPDF-service
-description: Gebruik de AEM Forms ConvertPDF-service om PDF-documenten te converteren naar PostScript- of afbeeldingsbestanden.
-seo-description: Gebruik de AEM Forms ConvertPDF-service om PDF-documenten te converteren naar PostScript- of afbeeldingsbestanden.
+description: Met de AEM Forms ConvertPDF-service kunt u PDF-documenten converteren naar PostScript- of afbeeldingsbestanden.
+seo-description: Met de AEM Forms ConvertPDF-service kunt u PDF-documenten converteren naar PostScript- of afbeeldingsbestanden.
 uuid: 7fa94c8c-485b-4a77-bcd3-ed716e3cf316
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -30,9 +30,9 @@ U kunt het volgende doen met de service PDF converteren:
 
 ## Eigenschappen van de service configureren   {#properties}
 
-Met de **AEMFD ConvertPDF-service** in AEM-console kunt u eigenschappen voor deze service configureren. De standaard-URL van de AEM-console is `https://[host]:'port'/system/console/configMgr`.
+Met de **AEMFD ConvertPDF Service** in AEM Console kunt u eigenschappen voor deze service configureren. De standaard-URL van AEM console is `https://[host]:'port'/system/console/configMgr`.
 
-## De service gebruiken {#using-the-service}
+## De service {#using-the-service} gebruiken
 
 De service ConvertPDF biedt de volgende twee API&#39;s:
 
@@ -40,7 +40,7 @@ De service ConvertPDF biedt de volgende twee API&#39;s:
 
 * **[toImage](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage)**: Hiermee converteert u een PDF-document naar een afbeeldingsbestand. Ondersteunde afbeeldingsindelingen zijn JPEG, JPEG2000, PNG en TIFF.
 
-### ToPS-API gebruiken met een JSP of Servlets {#using-tops-api-with-a-jsp-or-servlets}
+### ToPS API gebruiken met een JSP of Servlets {#using-tops-api-with-a-jsp-or-servlets}
 
 ```jsp
 <%@ page import="java.util.List, java.io.File,
@@ -84,7 +84,7 @@ String documentPath = "/content/dam/formsanddocuments/ExpenseClaimFlat.pdf";
 %>
 ```
 
-### ToImage-API gebruiken met een JSP of Servlets {#using-toimage-api-with-a-jsp-or-servlets}
+### ToImage-API gebruiken met een JSP- of Servlets {#using-toimage-api-with-a-jsp-or-servlets}
 
 ```jsp
 <%@ page import="java.util.List, java.io.File,
@@ -131,11 +131,13 @@ String documentPath = "/content/dam/formsanddocuments/ExpenseClaimFlat.pdf";
 %>
 ```
 
-### ConvertPDF Service gebruiken met AEM-workflows {#using-convertpdf-service-with-aem-workflows}
+### ConvertPDF-service gebruiken met AEM workflows {#using-convertpdf-service-with-aem-workflows}
 
 Het uitvoeren van de ConvertPDF-service vanuit een workflow lijkt op het uitvoeren vanuit JSP/Servlet.
 
-Het enige verschil is bij het runnen van de dienst van JSP/Servlet het documentvoorwerp wint automatisch een geval van voorwerp ResourceResolver van het voorwerp ResourceResolverHelper terug. Dit automatische mechanisme werkt niet wanneer de code vanuit een workflow wordt aangeroepen. Voor een workflow geeft u expliciet een instantie van het object ResourceResolver door aan de klasseconstructor Document. Vervolgens gebruikt het object Document het aangeboden ResourceResolver-object om inhoud uit de opslagruimte te lezen.
+Het enige verschil is bij het runnen van de dienst van JSP/Servlet het documentvoorwerp wint automatisch een geval van voorwerp ResourceResolver van het voorwerp ResourceResolverHelper terug. Dit automatische mechanisme
+werkt niet wanneer de code vanuit een workflow wordt aangeroepen. Voor een workflow geeft u expliciet een instantie van het object ResourceResolver door aan de klasseconstructor Document. Vervolgens gebruikt het object Document
+Opgegeven ResourceResolver-object voor het lezen van inhoud uit de gegevensopslagruimte.
 
 In het volgende voorbeeldworkflowproces wordt het invoerdocument geconverteerd naar een PostScript-document. De code wordt geschreven in ECMAScript en het document wordt overgegaan als werkschemalading:
 

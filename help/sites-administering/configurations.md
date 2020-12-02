@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# Configuraties en de Configuratiebrowser {#configuration-browser}
+# Configuraties en de Configuratie-browser {#configuration-browser}
 
 AEM configuraties dienen om instellingen in AEM te beheren en dienen als werkruimten.
 
@@ -18,8 +18,8 @@ AEM configuraties dienen om instellingen in AEM te beheren en dienen als werkrui
 
 Een configuratie kan vanuit twee verschillende gezichtspunten worden overwogen.
 
-* [Een beheerder](#configurations-administrator) gebruikt configuraties als werkruimten binnen AEM om groepen montages te bepalen en te beheren.
-* [Een ontwikkelaar](#configurations-developer) gebruikt het onderliggende configuratiemechanisme dat configuraties uitvoert om montages in AEM voort te zetten en op te zoeken.
+* [Een ](#configurations-administrator) beheerder gebruikt configuraties als werkruimten binnen AEM om groepen montages te bepalen en te beheren.
+* [Een ](#configurations-developer) ontwikkelt het onderliggende configuratiemechanisme dat configuraties uitvoert om montages in AEM voort te zetten en op te zoeken.
 
 Samenvattend: vanuit het standpunt van een beheerder, zijn de configuraties hoe u werkruimten creeert om montages in AEM te beheren, terwijl de ontwikkelaar zou moeten begrijpen hoe AEM deze configuraties binnen de bewaarplaats gebruikt en beheert.
 
@@ -63,21 +63,21 @@ Browser van de Configuratie staat een beheerder toe om, toegangsrechten aan conf
 
 >[!NOTE]
 >
->Het is slechts mogelijk om configuraties tot stand te brengen gebruikend Browser van de Configuratie als uw gebruiker `admin` rechten heeft. `admin` de rechten worden ook vereist om toegangsrechten aan de configuratie toe te wijzen of anders een configuratie te wijzigen.
+>Het is alleen mogelijk om configuraties te maken met de Configuratiebrowser als uw gebruiker `admin` rechten heeft. `admin` de rechten worden ook vereist om toegangsrechten aan de configuratie toe te wijzen of anders een configuratie te wijzigen.
 
-#### Een configuratie maken {#creating-a-configuration}
+#### Een configuratie {#creating-a-configuration} maken
 
 Het is zeer eenvoudig om een nieuwe configuratie in AEM tot stand te brengen door Browser van de Configuratie te gebruiken.
 
-1. Meld u aan bij AEM als Cloud Service en selecteer in het hoofdmenu **Gereedschappen** -> **Algemeen** -> **Configuratiebrowser**.
+1. Meld u aan bij AEM als Cloud Service en selecteer **Tools** -> **General** -> **Configuration Browser**.
 1. Tik of klik op **Maken**.
-1. Geef een **titel** en een **naam** voor de configuratie op.
+1. Geef een **Titel** en een **Naam** op voor uw configuratie.
 
    ![Configuratie maken](assets/configuration-create.png)
 
-   * De **titel** moet beschrijvend zijn.
-   * De **naam** wordt de knooppuntnaam in de gegevensopslagruimte.
-      * Deze wordt automatisch gegenereerd op basis van de titel en aangepast volgens de naamgevingsconventies [AEM.](/help/sites-developing/naming-conventions.md)
+   * De **Titel** zou beschrijvend moeten zijn.
+   * De **Naam** wordt de knooppuntnaam in de repository.
+      * Deze wordt automatisch gegenereerd op basis van de titel en aangepast volgens de naamconventies [AEM.](/help/sites-developing/naming-conventions.md)
       * Deze kan zo nodig worden aangepast.
 1. Controleer het type configuraties dat u wilt toestaan.
    * [Cloudconfiguraties](/help/sites-administering/configurations.md)
@@ -90,20 +90,20 @@ Het is zeer eenvoudig om een nieuwe configuratie in AEM tot stand te brengen doo
 >
 >Configuraties kunnen genest zijn.
 
-#### Configuraties en hun toegangsrechten bewerken {#access-rights}
+#### Configuraties en hun toegangsrechten {#access-rights} bewerken
 
 Als u configuraties als werkruimten beschouwt, kunnen de toegangsrechten op die configuraties worden geplaatst om af te dwingen wie tot die werkruimten kan en mag toegang hebben.
 
-1. Meld u aan bij AEM als Cloud Service en selecteer in het hoofdmenu **Gereedschappen** -> **Algemeen** -> **Configuratiebrowser**.
-1. Selecteer de configuratie die u wilt wijzigen en tik op **Eigenschappen** of klik op de werkbalk.
+1. Meld u aan bij AEM als Cloud Service en selecteer **Tools** -> **General** -> **Configuration Browser**.
+1. Selecteer de configuratie die u wilt wijzigen en tik op **Eigenschappen** in de werkbalk.
 1. Selecteer om het even welke extra eigenschappen u aan de configuratie wilt toevoegen
    >[!NOTE]
    >
    >Het is niet mogelijk om een functie uit te schakelen wanneer de configuratie is gemaakt.
-1. Gebruik de **efficiënte knoop van Toestemmingen** om een matrijs van rollen te bekijken en welke toestemmingen zij momenteel aan configuraties worden verleend.
+1. Gebruik **Effectieve toestemmingen** knoop om een matrijs van rollen te bekijken en welke toestemmingen zij momenteel aan configuraties worden verleend.
    ![venster Effectieve machtigingen](assets/configuration-effective-permissions.png)
-1. Als u nieuwe machtigingen wilt toewijzen, typt u de naam van de gebruiker of groep in het veld **Gebruiker of groep** selecteren in de sectie Nieuwe machtigingen **** toevoegen.
-   * In het veld Gebruiker of groep **** selecteren wordt automatisch ingevuld op basis van bestaande gebruikers en rollen.
+1. Als u nieuwe machtigingen wilt toewijzen, voert u de naam van de gebruiker of groep in in het veld **Gebruiker of groep selecteren** in de sectie **Nieuwe machtigingen toevoegen**.
+   * In het veld **Gebruiker of groep selecteren** wordt automatisch ingevuld op basis van bestaande gebruikers en rollen.
 1. Selecteer de gewenste gebruiker of rol in de resultaten die automatisch worden voltooid.
    * U kunt meerdere gebruikers of rollen selecteren.
 1. Controleer de toegangsopties die de geselecteerde gebruiker(s) of rol(en) moet(en) hebben en klik op **Toevoegen**.
@@ -117,7 +117,7 @@ Als ontwikkelaar, is het belangrijk om te weten hoe AEM als Cloud Service met co
 
 ### Scheiding van configuratie en inhoud {#separation-of-config-and-content}
 
-Hoewel de [beheerder en de gebruikers configuraties als werkplekken](#configurations-administrator) kunnen zien om verschillende montages en inhoud te beheren, is het belangrijk om te begrijpen dat configuraties en inhoud afzonderlijk door AEM in de bewaarplaats worden opgeslagen en beheerd.
+Hoewel de [beheerder en gebruikers configuraties als werkplekken kunnen beschouwen](#configurations-administrator) om verschillende instellingen en inhoud te beheren, is het belangrijk om te begrijpen dat configuraties en inhoud afzonderlijk worden opgeslagen en beheerd door AEM in de opslagplaats.
 
 * `/content` is home aan alle inhoud.
 * `/conf` is huis aan alle configuratie.
@@ -136,7 +136,7 @@ String bgkcolor = imageServerSettings.get("bgkcolor", "FFFFFF");
 
 Het uitgangspunt van al configuratieraadpleging is een inhoudsmiddel, gewoonlijk ergens onder `/content`. Dit kan een pagina zijn, een component in een pagina, een element of een DAM-map. Dit is de inhoud waarvoor we op zoek zijn naar de juiste configuratie die in deze context van toepassing is.
 
-Nu met het `Conf` voorwerp in hand, kunnen wij het specifieke configuratiepunt terugwinnen wij in geinteresseerd zijn. In dit geval is dit `dam/imageserver`een verzameling instellingen die betrekking hebben op de `imageserver`opdracht. De `getItem` vraag keert een terug `ValueMap`. Vervolgens lezen we een `bgkcolor` tekenreekseigenschap en geven we een standaardwaarde van &quot;FFFFFF&quot; op voor het geval dat de eigenschap (of het volledige configuratieitem) niet aanwezig is.
+Nu met het `Conf` voorwerp in hand, kunnen wij het specifieke configuratiepunt terugwinnen wij in geinteresseerd zijn. In dit geval is het `dam/imageserver`, wat een inzameling van montages met betrekking tot `imageserver` is. De `getItem` vraag keert `ValueMap` terug. Vervolgens lezen we een tekenreekseigenschap `bgkcolor` en geven we een standaardwaarde van &quot;FFFFFF&quot; op voor het geval dat de eigenschap (of het volledige configuratieitem) niet aanwezig is.
 
 Nu een blik op de overeenkomstige inhoud JCR:
 
@@ -154,13 +154,13 @@ Nu een blik op de overeenkomstige inhoud JCR:
             - bgkcolor = "FF0000"
 ```
 
-In dit voorbeeld nemen we hier een WKND-specifieke DAM-map en een bijbehorende configuratie aan. Beginnend bij die omslag `/content/dam/wknd`, zullen wij zien dat er een koordbezit genoemd is `cq:conf` die verwijzingen de configuratie die voor subtree zou moeten van toepassing zijn. De eigenschap wordt meestal ingesteld op de naam `jcr:content` van een elementmap of -pagina. Deze `conf` verbindingen zijn uitdrukkelijk, zodat is het gemakkelijk om hen te volgen door de inhoud in CRXDE te bekijken.
+In dit voorbeeld nemen we hier een WKND-specifieke DAM-map en een bijbehorende configuratie aan. Beginnend bij die omslag `/content/dam/wknd`, zullen wij zien dat er een koordbezit genoemd `cq:conf` is die verwijzingen de configuratie die voor subtree zou moeten van toepassing zijn. De eigenschap wordt meestal ingesteld op de `jcr:content` van een elementmap of -pagina. Deze `conf` verbindingen zijn uitdrukkelijk, zodat is het gemakkelijk om hen te volgen door de inhoud in CRXDE te bekijken.
 
-We springen binnen `/conf`, volgen de referentie en zien dat er een `/conf/wknd` knooppunt is. Dit is een configuratie. De zoekopdracht is volledig transparant voor de toepassingscode. De voorbeeldcode heeft er nooit een specifieke referentie naar, maar is achter het `Conf` object verborgen. Welke configuratie van toepassing is, wordt volledig gecontroleerd door de inhoud JCR.
+Binnen `/conf` pompen, volgen wij de verwijzing en zien er een `/conf/wknd` knoop is. Dit is een configuratie. De zoekopdracht is volledig transparant voor de toepassingscode. De voorbeeldcode heeft nooit een specifieke verwijzing naar het, het is verborgen achter het `Conf` voorwerp. Welke configuratie van toepassing is, wordt volledig gecontroleerd door de inhoud JCR.
 
-Wij zien de configuratie een fixed-named `settings` knoop bevat die de daadwerkelijke punten, met inbegrip van `dam/imageserver` wij in ons geval nodig hebben. Een dergelijk item kan worden beschouwd als een &quot;instellingendocument&quot; en wordt gewoonlijk voorgesteld door een `cq:Page` item waarin de werkelijke inhoud is `jcr:content` opgeslagen.
+Wij zien de configuratie een vast-genoemde `settings` knoop bevat die de daadwerkelijke punten, met inbegrip van `dam/imageserver` bevat wij in ons geval nodig hebben. Een dergelijk item kan worden beschouwd als een &quot;instellingendocument&quot; en wordt gewoonlijk aangeduid met een `cq:Page`, inclusief een `jcr:content` met de feitelijke inhoud.
 
-Tot slot zien wij het bezit `bgkcolor` dat onze steekproefcode vereist. De `ValueMap` gegevens waarvan we terugkomen, `getItem` zijn gebaseerd op het `jcr:content` knooppunt van de pagina.
+Tot slot zien wij het bezit `bgkcolor` dat onze steekproefcode vereist. De `ValueMap` die we terugkrijgen van `getItem` is gebaseerd op het knooppunt `jcr:content` van de pagina.
 
 ### Configuratieresolutie {#configuration-resolution}
 
@@ -169,7 +169,7 @@ Het basisvoorbeeld hierboven toonde één enkele configuratie. Maar er zijn veel
 Om dit te steunen heeft de configuratieraadpleging in AEM overerving en fallback mechanisme in de volgende orde van voorkeur:
 
 1. `/conf/<siteconfig>/<parentconfig>/<myconfig>`
-   * Specifieke config van `cq:conf` ergens in `/content`
+   * Specifiek config van `cq:conf` ergens in `/content` van verwijzingen voorzien
    * De hiërarchie is willekeurig en kan net als uw sitestructuur worden ontworpen, het is niet aan toepassingscode om dit te weten
    * Veranderbaar bij uitvoering door gebruikers met configuratierechten
 1. `/conf/<siteconfig>/<parentconfig>`
@@ -181,7 +181,7 @@ Om dit te steunen heeft de configuratieraadpleging in AEM overerving en fallback
 1. `/conf/global`
    * Globale instellingen van systeem
    * Gewoonlijk algemene standaardinstellingen voor uw installatie
-   * Instellen op een `admin` rol
+   * Instellen op een `admin`-rol
    * Veranderbaar bij uitvoering door gebruikers met configuratierechten
 1. `/apps`
    * Standaardwaarden toepassing
@@ -193,11 +193,11 @@ Om dit te steunen heeft de configuratieraadpleging in AEM overerving en fallback
    * Opgelost met implementatie van toepassingen
    * Alleen-lezen bij uitvoering
 
-### Configuraties gebruiken {#using-configurations}
+### Configuraties {#using-configurations} gebruiken
 
-Configuraties in AEM zijn gebaseerd op Sling Context-Aware Configurations. De bundels van de Verkoop verstrekken de dienst API die kan worden gebruikt om context-bewuste configuraties te krijgen. Contextbewuste configuraties zijn configuraties die verwant zijn aan een inhoudsbron of een middelboom zoals in het vorige voorbeeld werd [beschreven.](#developer-example)
+Configuraties in AEM zijn gebaseerd op Sling Context-Aware Configurations. De bundels van de Verkoop verstrekken de dienst API die kan worden gebruikt om context-bewuste configuraties te krijgen. Contextbewuste configuraties zijn configuraties die verwant zijn aan een inhoudsbron of een bronboom zoals [in het vorige voorbeeld werd beschreven.](#developer-example)
 
-Raadpleeg de documentatie bij Sling voor meer informatie over Context-Aware Configurations, voorbeelden en het gebruik ervan. [](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html)
+Voor meer informatie over Context-Aware Configuraties, voorbeelden, en hoe te om hen te gebruiken, [zie de het Schelen documentatie.](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html)
 
 ### ConfMgr-webconsole {#confmgr-web-console}
 
@@ -211,11 +211,11 @@ Verstrek eenvoudig:
 * **Item**
 * **Gebruiker**
 
-Klik op **Oplossen** om te zien welke configuraties worden opgelost en ontvang voorbeeldcode die deze configuraties zal oplossen.
+Klik **Los** op om te zien welke configuraties worden opgelost en ontvang steekproefcode die die configuraties zal oplossen.
 
 ### Contextbewuste configuratie webconsole {#context-aware-web-console}
 
-Voor het zuiveren en het testen doeleinden, is er een **Context-Aware het Webconsole van de Configuratie** bij `https://<host>:<port>/system/console/slingcaconfig`, die het vragen van context-bewuste configuraties in de bewaarplaats en het bekijken van hun eigenschappen toestaat.
+Voor foutopsporing en testdoeleinden is er een **Contextbewuste configuratie**-webconsole op `https://<host>:<port>/system/console/slingcaconfig`, waarmee u contextbewuste configuraties in de opslagplaats kunt opvragen en de eigenschappen ervan kunt bekijken.
 
 ![Contextbewuste configuratie webconsole](assets/configuration-context-aware-console.png)
 
@@ -224,4 +224,4 @@ Verstrek eenvoudig:
 * **Inhoudspad**
 * **Configuratienaam**
 
-Klik op **Oplossen** om de bijbehorende contextpaden en eigenschappen voor de geselecteerde configuratie op te halen.
+Klik **Los** om de bijbehorende contextwegen en eigenschappen voor de geselecteerde configuratie terug te winnen.

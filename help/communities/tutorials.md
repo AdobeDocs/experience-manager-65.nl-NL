@@ -1,8 +1,8 @@
 ---
-title: Zelfstudies
-seo-title: Zelfstudies
-description: Voorbeelden om te helpen bij het leren en werken met het sociale-componentkader van AEM Communities (SCF)
-seo-description: Voorbeelden om te helpen bij het leren en werken met het sociale-componentkader van AEM Communities (SCF)
+title: Tutorials
+seo-title: Tutorials
+description: Voorbeelden om te helpen bij het leren en werken met het AEM Communities Social Component Framework (SCF)
+seo-description: Voorbeelden om te helpen bij het leren en werken met het AEM Communities Social Component Framework (SCF)
 uuid: c99a9d56-9630-4a79-bcd7-a15f01d6c13d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,15 +11,18 @@ content-type: reference
 discoiquuid: a420b0b1-65f4-4103-a7c9-263657c7870f
 translation-type: tm+mt
 source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
+workflow-type: tm+mt
+source-wordcount: '264'
+ht-degree: 0%
 
 ---
 
 
-# Zelfstudies {#tutorials}
+# Tutorials {#tutorials}
 
-Dit zijn voorbeelden die helpen bij het leren en werken met AEM 6.1 Community [social component framework (SCF)](scf.md).
+Dit zijn voorbeelden om te helpen bij het leren en werken met AEM 6.1 Communities [social component framework (SCF)](scf.md).
 
-## Aanpassing op de client {#client-side-customization}
+## Aanpassing aan clientzijde {#client-side-customization}
 
 Zie ook:
 
@@ -31,11 +34,11 @@ Zie ook:
 
 * [Component Opmerkingen uitbreiden](extend-comments.md)
 
-## Aanpassing op de server {#server-side-customization}
+## Aanpassing aan serverzijde {#server-side-customization}
 
-Zie ook [SCF server-zijaanpassing](server-customize.md).
+Zie ook [SCF server-side aanpassing](server-customize.md).
 
-Voorbeeldcode is beschikbaar in de [Adobe Marketing Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) -opslagplaats:
+De code van de steekproef is beschikbaar in [Adobe Marketing Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) bewaarplaats:
 
 * [Voorbeeld van SCF-component aanpassen](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-customize)
 
@@ -49,7 +52,7 @@ Voorbeeldcode is beschikbaar in de [Adobe Marketing Cloud GitHub](https://github
 
    ToDo MVC demonstreert hoe u een SCF+SRP-component volledig kunt ontwikkelen.
 
-* [Aan de slag met AEM-gemeenschappen](getting-started.md)
+* [Aan de slag met AEM Communities](getting-started.md)
 
 * [MongoDB voor demo instellen](demo-mongo.md)
 
@@ -57,15 +60,15 @@ Voorbeeldcode is beschikbaar in de [Adobe Marketing Cloud GitHub](https://github
 
 * [Een voorbeeldpagina maken](create-sample-page.md)
 
-## Demo-gebruikers {#demo-users}
+## Demopgebruikers {#demo-users}
 
-Het pakket met Geometrixx-voorbeelden bevat demo-gebruikers. Er is vaak een verschil in ervaring tussen het zijn van een bezoeker (niet het programma geopend) of een lid (het programma geopend) en, zolang de de steekproefpakketten van Geometrixx geïnstalleerd blijven, kunt u deze gebruikers gebruiken om een het programma geopende staat te simuleren wanneer het onderzoeken met de gids [van de Componenten van de](components-guide.md)Gemeenschap.
+Het Geometrixx samples-pakket bevat demo-gebruikers. Er is vaak een verschil in ervaring tussen het zijn van een bezoeker (niet het programma geopend) of een lid (het programma geopende) en, zolang de de steekproefpakketten van Geometrixx blijven geïnstalleerd, kunt u deze gebruikers gebruiken om een het programma geopende staat te simuleren wanneer het onderzoeken met [Community Components guide](components-guide.md).
 
-Navigeer voor een volledig overzicht van de demogebruikers met de Rail naar **[!UICONTROL Gereedschappen]** > **[!UICONTROL Bewerkingen]** > **[!UICONTROL Beveiliging > Gebruikers]**. Of gebruik de Klassieke UI [veiligheidsconsole](http://localhost:4502/useradmin) voor het beheren van gebruikers en groepen.
+Navigeer voor een volledig overzicht van de demogebruikers met de Rail naar **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Security > Users]**. Of gebruik de Klassieke UI [veiligheidsconsole](http://localhost:4502/useradmin) voor het beheren van gebruikers en groepen.
 
-Als een [communitysite is gemaakt](getting-started.md), is het mogelijk demogebruikers toe te wijzen aan de gebruikersgroepen [van de](users.md)community.
+Als een [communityplaats is gecreeerd](getting-started.md), is het mogelijk om demogebruikers aan zijn [communautaire gebruikersgroepen](users.md) toe te wijzen.
 
-***gebruikersnaam */*wachtwoord***:
+***user id* / *password***:
 
 * aaron.mcdonald@mailinator.com / password
 * emily.andrews@mailinator.com / password

@@ -18,15 +18,15 @@ ht-degree: 0%
 ---
 
 
-# SocialUtils Refactoring {#socialutils-refactoring}
+# Refactoring voor sociale hulpmiddelen {#socialutils-refactoring}
 
-## Pakket met sociale hulpmiddelen is vervangen {#socialutils-package-deprecated}
+## Pakket met sociale hulpmiddelen Vervangen {#socialutils-package-deprecated}
 
-Het pakket `com.adobe.cq.social.ugcbase.SocialUtils` werd afgekeurd in AEM 6.1.
+Het pakket `com.adobe.cq.social.ugcbase.SocialUtils` is afgekeurd in AEM 6.1.
 
-In de volgende tabellen worden de methoden weergegeven die moeten worden gebruikt in plaats van de `SocialUtils` methoden.
+In de volgende tabellen worden de methoden weergegeven die moeten worden gebruikt in plaats van de methoden `SocialUtils`.
 
-## SocialResourceUtilities-pakket  {#socialresourceutilities-package}
+## Pakket met socialeResourceUtilities {#socialresourceutilities-package}
 
 | Methoden in com.adobe.cq.social.srp.utilities.api.SocialResourceUtilities |
 |---|
@@ -48,7 +48,7 @@ In de volgende tabellen worden de methoden weergegeven die moeten worden gebruik
 |---|
 | SocialResourceProvider getSocialResourceProvider(resource) | vervangt SocialResourceProvider getConfiguredProvider(resource) |
 
-## SCFUtilities-pakket {#scfutilities-package}
+## SCFUtilities Package {#scfutilities-package}
 
 | Methoden in `com.adobe.cq.social.`utilities.scf.api.SCFUtilites |
 |---|

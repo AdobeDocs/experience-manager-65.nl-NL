@@ -1,5 +1,5 @@
 ---
-title: Dynamic Media instellen
+title: Dynamische media instellen
 description: Als u dynamische media wilt instellen, moet u dynamische media configureren en voorinstellingen voor afbeeldingen en viewers beheren
 uuid: bcd1f9ab-4201-4222-9e4a-ba82b3c7cd6c
 contentOwner: Rick Brough
@@ -14,23 +14,23 @@ ht-degree: 0%
 ---
 
 
-# Setting Up Dynamic Media {#setting-up-dynamic-media}
+# Dynamische media instellen {#setting-up-dynamic-media}
 
-[Met Dynamic Media](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) kunt u elementen beheren door op aanvraag rijke visuele marketing- en marketingmiddelen te leveren, die automatisch worden geschaald voor gebruik op internet, mobiele apparaten en sociale sites. Met behulp van een set primaire bronelementen genereert en levert Dynamic Media in real-time meerdere variaties van rijke inhoud via het globale, schaalbare, voor prestaties geoptimaliseerde netwerk.
+[Met Dynamic ](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) Media kunt u elementen beheren door op aanvraag rijke visuele marketing- en marketingmiddelen te leveren die automatisch worden geschaald voor gebruik op internet, mobiele en sociale sites. Met behulp van een set primaire bronelementen genereert Dynamic Media meerdere variaties van rijke inhoud in real-time via het algemene, schaalbare, voor prestaties geoptimaliseerde netwerk.
 
 >[!NOTE]
 >
->In deze documentatie worden de mogelijkheden beschreven van Dynamic Media, die rechtstreeks in AEM zijn geïntegreerd. Als u Dynamic Media Classic (eerder genoemd Scene7) gebruikt die in AEM wordt geïntegreerd, zie de documentatie [van de de](/help/sites-administering/scene7.md)Klassieke integratie van Dynamic Media.
+>In deze documentatie worden de dynamische mediafuncties beschreven die rechtstreeks in AEM zijn geïntegreerd. Als u Dynamic Media Classic (voorheen Scene7 genoemd) gebruikt die in AEM is geïntegreerd, raadpleegt u [Dynamic Media Classic integration documentation](/help/sites-administering/scene7.md).
 >
->Zie Scenario [voor](/help/sites-administering/scene7.md#dual-use-scenario) tweeërlei gebruik voor momenten waarop u AEM samen met Dynamic Media Classic kunt gebruiken.
+>Zie [Scenario voor tweeërlei gebruik](/help/sites-administering/scene7.md#dual-use-scenario) voor tijden wanneer u AEM met Dynamische Klassieke Media Klassiek samen met Dynamische Media kunt willen gebruiken.
 
 Als u dynamische media beheert, zijn de volgende onderwerpen van belang:
 
-* [Het vormen Dynamic Media-Scene7 wijze](config-dms7.md) - gebruik deze configuratie als u een nieuwe klant van Dynamic Media bent.
-* [Het vormen Dynamic Media-Hybride wijze](config-dynamic.md) — Gebruik deze configuratie als u een bestaande Dynamic Media klant die AEM bevordert.
+* [Dynamische media-Scene7-modus](config-dms7.md)  configureren - Gebruik deze configuratie als u een nieuwe Dynamic Media-klant bent.
+* [Het vormen Dynamische media-Hybride wijze](config-dynamic.md)  - gebruik deze configuratie als u een bestaande Dynamische klant van Media verbetert AEM.
 * [Voorinstellingen afbeelding beheren](managing-image-presets.md)
 * [Viewer-voorinstellingen beheren](managing-viewer-presets.md)
-* [Het oplossen van problemen - Dynamic Media Scene7 wijze](troubleshoot-dms7.md)
+* [Problemen met dynamische media oplossen - Scene7-modus](troubleshoot-dms7.md)
 
 Zie ook de volgende onderwerpen:
 
@@ -41,4 +41,4 @@ Zie ook de volgende onderwerpen:
 >
 >**Als u een upgrade uitvoert:**
 >
->* Nadat u AEM in werking hebt gesteld, heeft om het even welk middel u uploadt automatisch toegelaten Dynamic Media (tenzij het uitdrukkelijk door uw systeembeheerder werd onbruikbaar gemaakt). Als u op een bevorderd geval van AEM en nieuw aan Dynamic Media bent, kunt u uw activa moeten opnieuw verwerken om hen Dynamic Media-toegelaten te maken.
+>* Nadat u aan de slag hebt AEM, heeft om het even welk middel u uploadt Dynamische Media automatisch toegelaten (tenzij het uitdrukkelijk door uw systeembeheerder werd onbruikbaar gemaakt). Als u op een bevorderd geval van AEM en nieuw aan Dynamische Media bent, kunt u uw activa moeten opnieuw verwerken om hen te maken Dynamische Media-toegelaten.

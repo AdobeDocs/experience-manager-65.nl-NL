@@ -123,7 +123,7 @@ De **MS Dynamics OData Cloud Service (OData Service)** configuratie wordt geleve
 
    1. Voer de waarde in voor het veld **Service Root**. Ga naar de instantie van de Dynamiek en navigeer aan **Developer Resources** om de waarde voor het gebied van de Wortel van de Dienst te bekijken. Bijvoorbeeld https://&lt;huurder-name>/api/data/v9.1/
 
-   1. Replace the default values in the **Client Id**(also referred to as **Application ID**), **Client Secret**, **OAuth URL**, **Refresh Token URL**, **Access Token URL**, and **Resource** fields with values from your Microsoft Dynamics service configuration. Het is verplicht om de dynamische instantie-URL op te geven in het veld **Resource** om Microsoft Dynamics te configureren met een formuliergegevensmodel. Gebruik de URL van de hoofdmap van de service om de URL van de dynamische instantie af te leiden. Bijvoorbeeld [https://org.crm.dynamics.com](https://org.crm.dynamics.com/).
+   1. Vervang de standaardwaarden in **Client Id** (ook wel **Application ID** genoemd), **Client Secret**, **OAuth URL**, **Token-URL vernieuwen**, **Toegangstoken URL&lt;a1 1/>, en** Middel **gebieden met waarden van uw de dienstconfiguratie van de Dynamiek van Microsoft.** Het is verplicht om de dynamische instantie-URL op te geven in het veld **Resource** om Microsoft Dynamics te configureren met een formuliergegevensmodel. Gebruik de URL van de hoofdmap van de service om de URL van de dynamische instantie af te leiden. Bijvoorbeeld [https://org.crm.dynamics.com](https://org.crm.dynamics.com/).
 
    1. Geef **openid** op in het veld **Machtigingsbereik** voor het autorisatieproces op Microsoft Dynamics.
 

@@ -45,11 +45,11 @@ API&#39;s voor levering en inhoudsbeheer AEM:
 
    * [JSON-exportfunctie](/help/sites-developing/json-exporter.md)
    * [JSON-export inschakelen voor een component](/help/sites-developing/json-exporter-components.md)
-   * Raadpleeg de sectie [Componenten in de handleiding](https://helpx.adobe.com/experience-manager/6-5/sites/developing/user-guide.html?topic=/experience-manager/6-4/sites/developing/morehelp/components.ug.js) voor ontwikkelaars voor meer informatie
+   * Zie de sectie [Componenten in de Handleiding voor ontwikkelaars](https://helpx.adobe.com/experience-manager/6-5/sites/developing/user-guide.html?topic=/experience-manager/6-4/sites/developing/morehelp/components.ug.js) voor meer informatie
 
 * **Elementen**: Met de HTTP-API voor Middelen kunt u CRUD-bewerkingen (read-update-delete) maken op Elementen, zoals binaire elementen, metagegevens, uitvoeringen en opmerkingen. Zie [AEM Assets HTTP API](/help/assets/mac-api-assets.md)
 
-* **Inhoudsfragmenten** (CF&#39;s): [CF-ondersteuning in middelen HTTP API](/help/assets/assets-api-content-fragments.md) en [AEM Assets API - Inhoudsfragmenten](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
+* **Inhoudsfragmenten**  (CF&#39;s):  [CF-ondersteuning in middelen HTTP ](/help/assets/assets-api-content-fragments.md) API en  [AEM Assets API - Inhoudsfragmenten](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
 
 De volgende externe bronnen dienen slechts ter referentie:
 

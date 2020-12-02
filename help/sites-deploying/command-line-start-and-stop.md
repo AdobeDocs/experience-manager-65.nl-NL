@@ -1,8 +1,8 @@
 ---
 title: Start en stop opdrachtregel
 seo-title: Start en stop opdrachtregel
-description: Leer AEM van de bevellijn te beginnen en tegen te houden.
-seo-description: Leer AEM van de bevellijn te beginnen en tegen te houden.
+description: Leer om AEM van de bevellijn te beginnen en tegen te houden.
+seo-description: Leer om AEM van de bevellijn te beginnen en tegen te houden.
 uuid: 585f071c-2286-4a2c-af07-404bf298cba8
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,17 +11,20 @@ topic-tags: deploying
 discoiquuid: 9333ff84-f624-4cfa-a9e4-c5e3882171ff
 translation-type: tm+mt
 source-git-commit: 3f53945579eaf5de1ed0b071aa9cce30dded89f1
+workflow-type: tm+mt
+source-wordcount: '382'
+ht-degree: 0%
 
 ---
 
 
-# Start en stop opdrachtregel{#command-line-start-and-stop}
+# Start en stop van opdrachtregel{#command-line-start-and-stop}
 
 ## Adobe Experience Manager starten vanaf de opdrachtregel {#starting-adobe-experience-manager-from-the-command-line}
 
-Het `start` script is beschikbaar in *de map &lt;cq-installation>/bin* . Zowel Unix als de versies van Vensters worden verstrekt. Het script start de instantie die in de map *&lt;cq-installation>* is geïnstalleerd.
+Het `start`-script is beschikbaar onder *de map &lt;cq-installation>/bin*. Zowel Unix als de versies van Vensters worden verstrekt. Het manuscript begint de instantie die in *&lt;cq-installation>* folder wordt geïnstalleerd.
 
-Deze twee versies ondersteunen een lijst met omgevingsvariabelen die kunnen worden gebruikt om de AEM-instantie te starten en af te stemmen.
+Deze twee versies ondersteunen een lijst met omgevingsvariabelen die kunnen worden gebruikt om het AEM te starten en af te stemmen.
 
 <table>
  <tbody>
@@ -39,7 +42,7 @@ Deze twee versies ondersteunen een lijst met omgevingsvariabelen die kunnen word
   </tr>
   <tr>
    <td>CQ_INTERFACE</td>
-   <td>Interface waarnaar deze server moet luisteren<br /> </td>
+   <td>Interface die deze server zou moeten luisteren aan<br /> </td>
   </tr>
   <tr>
    <td>CQ_RUNMODE</td>
@@ -47,7 +50,7 @@ Deze twee versies ondersteunen een lijst met omgevingsvariabelen die kunnen word
   </tr>
   <tr>
    <td>CQ_JARFILE</td>
-   <td>Naam van het taalbestand<br /> </td>
+   <td>Naam van het jarfile<br /> </td>
   </tr>
   <tr>
    <td>CQ_USE_JAAS</td>
@@ -66,7 +69,7 @@ Deze twee versies ondersteunen een lijst met omgevingsvariabelen die kunnen word
 
 >[!CAUTION]
 >
->Houd er rekening mee dat bepaalde uitvoermodi, zoals auteur en publicatie, moeten worden ingesteld voordat AEM voor het eerst wordt gestart en dat deze naderhand niet kunnen worden gewijzigd. Voordat u een AEM-instantie instelt die in productie moet worden gebruikt, raadpleegt u de documentatie [over de](/help/sites-deploying/configure-runmodes.md) uitvoermodi voor meer informatie.
+>Houd er rekening mee dat bepaalde uitvoermodi, waaronder auteur en publicatie, moeten worden ingesteld voordat de AEM voor het eerst wordt gestart en dat deze naderhand niet kunnen worden gewijzigd. Voordat u een AEM-instantie instelt die in productie moet worden gebruikt, raadpleegt u de [documentatie over de uitvoermodi](/help/sites-deploying/configure-runmodes.md) voor meer informatie.
 
 ### Windows-platform start.bat-scriptvoorbeeld {#windows-platform-start-bat-script-example}
 
@@ -74,7 +77,7 @@ Deze twee versies ondersteunen een lijst met omgevingsvariabelen die kunnen word
 SET CQ_PORT=1234 & ./start.bat
 ```
 
-### Startscriptvoorbeeld van Unix-platform {#unix-platform-start-script-example}
+### Voorbeeld van Unix platform start script {#unix-platform-start-script-example}
 
 ```shell
 CQ_PORT=1234 ./start
@@ -82,26 +85,26 @@ CQ_PORT=1234 ./start
 
 >[!NOTE]
 >
->Met het beginscript wordt de AEM Quickstart gestart die onder *de map &lt;cq-installation>/app* is geïnstalleerd.
+>Het beginscript start de AEM QuickStart die onder *de map &lt;cq-installation>/app* is geïnstalleerd.
 
-## Adobe Experience Manager stoppen {#stopping-adobe-experience-manager}
+## Adobe Experience Manager {#stopping-adobe-experience-manager} stoppen
 
 Voer een van de volgende handelingen uit om AEM te stoppen:
 
 * Afhankelijk van het platform dat u gebruikt:
 
-   * Als u AEM hebt gestart vanuit een script of de opdrachtregel, drukt u op **Ctrl+C** om de server af te sluiten.
+   * Als u AEM bent begonnen via een script of de opdrachtregel, drukt u op **Ctrl+C** om de server af te sluiten.
    * Als u het beginmanuscript op UNIX hebt gebruikt, moet u het stopmanuscript gebruiken om AEM tegen te houden.
 
-* Als u AEM hebt gestart door te dubbelklikken op het jar-bestand, klikt u op de knop **Aan** in het opstartvenster (de knop verandert vervolgens in **Uit**) om de server uit te schakelen.
+* Als u AEM bent begonnen door te dubbelklikken op het jar-bestand, klikt u op de knop **Aan** in het opstartvenster (de knop verandert vervolgens in **Uit**) om de server af te sluiten.
 
    ![chlimage_1-63](assets/chlimage_1-63.png)
 
 ## Adobe Experience Manager stoppen vanaf de opdrachtregel {#stopping-adobe-experience-manager-from-the-command-line}
 
-Het `stop` script is beschikbaar in *de map &lt;cq-installation>/bin* . Zowel Unix als de versies van Vensters worden verstrekt. Het script stopt de actieve instantie die in de map *&lt;cq-installation>* is geïnstalleerd.
+Het `stop`-script is beschikbaar onder *de map &lt;cq-installation>/bin*. Zowel Unix als de versies van Vensters worden verstrekt. Het script stopt de actieve instantie die is geïnstalleerd in de map *&lt;cq-installation>*.
 
-### Unix platform stop script voorbeeld {#unix-platform-stop-script-example}
+### Voorbeeld van Unix platform stop script {#unix-platform-stop-script-example}
 
 ```shell
 ./stop
@@ -115,11 +118,11 @@ Het `stop` script is beschikbaar in *de map &lt;cq-installation>/bin* . Zowel Un
 
 Als u enkel de bewaarplaats wilt vooraf vormen (zonder het te verplaatsen) moet u slechts:
 
-* uitpakken `repository.xml` naar de gewenste locatie
+* `repository.xml` uitpakken naar de gewenste locatie
 
-* bijwerken `repository.xml` naar wens
+* `repository.xml` naar behoefte bijwerken
 
-* maken `bootstrap.properties` en definiëren `repository.config`
+* `bootstrap.properties` maken en `repository.config` definiëren
 
 Opnieuw, alvorens de daadwerkelijke installatie te beginnen.
 

@@ -28,31 +28,31 @@ De kalenderfunctie biedt ondersteuning voor het verschaffen van informatie over 
 In deze sectie van de documentatie wordt beschreven
 
 * De kalenderfunctie toevoegen aan een AEM-site
-* Configuratie-instellingen voor `Calendar` componenten
+* Configuratie-instellingen voor `Calendar`-componenten
 
 ## Een kalender toevoegen aan een pagina {#adding-a-calendar-to-a-page}
 
-Als u een `Calendar` component aan een pagina wilt toevoegen in de ontwerpmodus, gebruikt u de componentbrowser om te zoeken naar
+Als u een `Calendar`-component in de ontwerpmodus aan een pagina wilt toevoegen, gebruikt u de componentbrowser om te zoeken naar
 
 * `Communities / Calendar`
 
 en sleep het naar de juiste positie op een pagina, zoals een positie ten opzichte van de functie die gebruikers kunnen bekijken.
 
-Ga voor de benodigde informatie naar [Community Components Basics](/help/communities/basics.md).
+Voor noodzakelijke informatie, bezoek [de Grondbeginselen van Componenten van Gemeenschappen](/help/communities/basics.md).
 
-Wanneer de [vereiste client-side bibliotheken](/help/communities/calendar-basics-for-developers.md#essentials-for-client-side) worden opgenomen, wordt de `Calendar` component op deze manier weergegeven.
+Als de [vereiste client-side bibliotheken](/help/communities/calendar-basics-for-developers.md#essentials-for-client-side) worden opgenomen, wordt de `Calendar`-component op deze manier weergegeven.
 
 ![agendacomponent](assets/calendar-component.png)
 
-### Kalender configureren {#configuring-calendar}
+### Kalender {#configuring-calendar} configureren
 
-Selecteer de geplaatste `Calendar` component die u wilt openen en selecteer het `Configure` pictogram waarmee het dialoogvenster Bewerken wordt geopend.
+Selecteer de geplaatste `Calendar` component en selecteer `Configure` pictogram dat het Edit dialoog opent.
 
 ![vormen](assets/configure-new.png)
 
 ![configure-Kalender](assets/configure-calendar1.png)
 
-#### Het tabblad Instellingen {#settings-tab}
+#### Tabblad Instellingen {#settings-tab}
 
 Geef op het tabblad **Instellingen** op of labels mogen worden toegepast op kalenderitems.
 
@@ -74,7 +74,7 @@ Geef op het tabblad **Instellingen** op of labels mogen worden toegepast op kale
 
 * **Tags toestaan**
 
-   Als deze optie is ingeschakeld, kunnen leden labels toevoegen aan de gebeurtenissen die ze posten (zie tabblad **Tagveld** ). Standaard is ingeschakeld.
+   Als deze optie is ingeschakeld, kunnen leden labellabels toevoegen aan de gebeurtenissen die ze posten (zie **Tagveld** tabblad). Standaard is ingeschakeld.
 
 * **Uploaden van bestanden toestaan**
 
@@ -86,11 +86,11 @@ Geef op het tabblad **Instellingen** op of labels mogen worden toegepast op kale
 
 * **Max. bestandsgrootte**
 
-   Alleen relevant als `Allow File Uploads` is gecontroleerd. Met dit veld wordt de grootte (in bytes) van een geüpload bestand beperkt. De standaardwaarde is 104857600 (10 MB).
+   Alleen relevant als `Allow File Uploads` is ingeschakeld. Met dit veld wordt de grootte (in bytes) van een geüpload bestand beperkt. De standaardwaarde is 104857600 (10 MB).
 
 * **Toegestane bestandstypen**
 
-   Alleen relevant als `Allow File Uploads` is gecontroleerd. Een door komma&#39;s gescheiden lijst met bestandsextensies met het &quot;punt&quot;-scheidingsteken. Bijvoorbeeld: .jpg, .jpeg, .png, .doc, .docx, .pdf. Als er bestandstypen zijn opgegeven, mogen de niet opgegeven bestandstypen niet worden geüpload. De standaardinstelling is niet opgegeven, zodat alle bestandstypen zijn toegestaan.
+   Alleen relevant als `Allow File Uploads` is ingeschakeld. Een door komma&#39;s gescheiden lijst met bestandsextensies met het &quot;punt&quot;-scheidingsteken. Bijvoorbeeld: .jpg, .jpeg, .png, .doc, .docx, .pdf. Als er bestandstypen zijn opgegeven, mogen de niet opgegeven bestandstypen niet worden geüpload. De standaardinstelling is niet opgegeven, zodat alle bestandstypen zijn toegestaan.
 
 * **Maximale bestandsgrootte afbeelding bijvoegen**
 
@@ -98,7 +98,7 @@ Geef op het tabblad **Instellingen** op of labels mogen worden toegepast op kale
 
 * **Toegestane omslagafbeeldingstypen**
 
-   Een door komma&#39;s gescheiden lijst met extensies voor afbeeldingsbestanden met het &quot;punt&quot;-scheidingsteken. Standaard is dit `.jpg,.jpeg,.png,.gif,.bmp`.
+   Een door komma&#39;s gescheiden lijst met extensies voor afbeeldingsbestanden met het &quot;punt&quot;-scheidingsteken. De standaardwaarde is `.jpg,.jpeg,.png,.gif,.bmp`.
 
 * **Reacties met verbindingen toestaan**
 
@@ -124,7 +124,7 @@ Geef op het tabblad **Instellingen** op of labels mogen worden toegepast op kale
 
    Als deze optie is ingeschakeld, kan het idee worden geïdentificeerd als [aanbevolen inhoud](/help/communities/featured.md). De optie Standaard is uitgeschakeld.
 
-Onder het lusje van de Moderatie **van de** Gebruiker, specificeer hoe de geposte onderwerpen en de antwoorden (gebruiker geproduceerde inhoud) worden beheerd. Voor meer informatie, zie het [Modereren van Gebruiker Gegenereerde Inhoud](/help/communities/moderate-ugc.md).
+Onder **De Moderatie van de Gebruiker** lusje, specificeer hoe de geposte onderwerpen en de antwoorden (gebruiker geproduceerde inhoud) worden beheerd. Zie [Door gebruiker gegenereerde inhoud modereren](/help/communities/moderate-ugc.md) voor meer informatie.
 
 #### Tabblad Gebruikersmodernisering {#user-moderation-tab}
 
@@ -156,13 +156,13 @@ Onder het lusje van de Moderatie **van de** Gebruiker, specificeer hoe de gepost
 
    Voer het aantal keren in dat een gebeurtenis of opmerking moet worden gemarkeerd voordat deze wordt verborgen in de openbare weergave. Indien ingesteld op -1, wordt het gemarkeerde onderwerp of de opmerking nooit verborgen in de openbare weergave. Anders, moet dit aantal groter dan of gelijk aan de Drempel van de Moderatie zijn. De standaardwaarde is 5.
 
-#### Tabblad Tagveld {#tag-field-tab}
+#### Tabblad {#tag-field-tab} voor tagveld
 
-Onder het tabblad **Tagveld** zijn de tags die kunnen worden toegepast, indien toegestaan op het tabblad **Instellingen** , beperkt op basis van de gekozen naamruimten.
+Onder het tabblad **Tagveld** worden de tags die kunnen worden toegepast, indien toegestaan onder het tabblad **Instellingen**, beperkt op basis van de gekozen naamruimten.
 
 * **Toegestane naamruimten**
 
-   Relevant als `Allow Tagging` is ingeschakeld onder het tabblad **Instellingen** . De tags die kunnen worden toegepast, zijn beperkt tot de tags binnen de geselecteerde naamruimtecategorieën. De lijst met naamruimten bevat &#39;Standaardtags&#39; (de standaardnaamruimte) en &#39;Alle tags opnemen&#39;. De standaardwaarde is niet ingeschakeld, hetgeen betekent dat alle naamruimten zijn toegestaan.
+   Relevant als `Allow Tagging` is ingeschakeld onder het tabblad **Instellingen**. De tags die kunnen worden toegepast, zijn beperkt tot de tags binnen de geselecteerde naamruimtecategorieën. De lijst met naamruimten bevat &#39;Standaardtags&#39; (de standaardnaamruimte) en &#39;Alle tags opnemen&#39;. De standaardwaarde is niet ingeschakeld, hetgeen betekent dat alle naamruimten zijn toegestaan.
 
 * **Suggestiegrenswaarde**
 
@@ -170,7 +170,7 @@ Onder het tabblad **Tagveld** zijn de tags die kunnen worden toegepast, indien t
 
 >[!NOTE]
 >
->Ga naar [Tags](/help/sites-administering/tags.md) beheren voor meer informatie over het toevoegen van een nieuwe naamruimte voor tags (taxonomie).
+>Bezoek [Tags beheren](/help/sites-administering/tags.md) voor informatie over het toevoegen van een nieuwe naamruimte voor tags (taxonomie).
 
 #### Tabblad Vertaling {#translation-tab}
 
@@ -180,7 +180,7 @@ Als op het tabblad **Vertaling** vertaling is ingeschakeld voor de site van de g
 
    Als deze optie is ingeschakeld, worden de gebeurtenis en de opmerkingen vertaald naar de voorkeurstaal van de gebruiker. Standaard is ingeschakeld.
 
-## Ervaring met sitebezoekers {#site-visitor-experience}
+## Ervaring {#site-visitor-experience} voor bezoekers van site
 
 In de publicatieomgeving wordt met de kalenderfunctie een zoekveld weergegeven met een standaarddatumbereik en alle kalendergebeurtenissen die binnen dat bereik vallen.
 
@@ -190,13 +190,13 @@ Andere vaardigheden hangen af van het feit of de bezoeker van de site een modera
 
 ### Moderatoren en beheerders {#moderators-and-administrators}
 
-Wanneer de ondertekende in gebruiker moderator of beheerdervoorrechten heeft, kunnen zij [matigingstaken](/help/communities/moderate-ugc.md) (zoals toegelaten door de configuratie van de component) op alle kalendergebeurtenissen en commentaren uitvoeren die aan een gebeurtenis worden gepost.
+Wanneer de ondertekende binnen gebruiker moderator of beheerdervoorrechten heeft, kunnen zij [moderatietaken](/help/communities/moderate-ugc.md) (zoals toegelaten door de configuratie van de component) op alle kalendergebeurtenissen en commentaren uitvoeren die aan een gebeurtenis worden gepost.
 
 ![moderatorvisie](assets/moderators-view.png)
 
 #### Leden {#members}
 
-Wanneer de ondertekende in gebruiker een lid van de gemeenschap of een [geprivilegieerd lid](/help/communities/users.md#privileged-members-group) (afhankelijk van configuratie) is, kunnen zij selecteren `New Event` om een nieuwe kalendergebeurtenis tot stand te brengen en te posten.
+Wanneer de aangemelde gebruiker een communitylid of [geprivilegieerd lid](/help/communities/users.md#privileged-members-group) is (afhankelijk van de configuratie), kunnen ze `New Event` selecteren om een nieuwe agendagebeurtenis te maken en te plaatsen.
 
 Zij kunnen met name:
 
@@ -210,18 +210,18 @@ Zij kunnen met name:
 
 ![gebeurtenis-post](assets/configure-calendar3.png)
 
-#### Anoniem {#anonymous}
+#### Anonieme {#anonymous}
 
 Sitebezoekers die niet zijn aangemeld, kunnen alleen geposte kalendergebeurtenissen lezen, deze vertalen indien deze worden ondersteund, maar kunnen geen gebeurtenis of opmerking toevoegen en de gebeurtenissen of opmerkingen van anderen niet markeren.
 
 ![anonieme gebruikersweergave](assets/anonymous-user-view1.png)
 
-## Additional Information {#additional-information}
+## Aanvullende informatie {#additional-information}
 
 Meer informatie vindt u op de pagina [Kalender Essentials](/help/communities/calendar-basics-for-developers.md) voor ontwikkelaars.
 
-Voor moderatie van kalendergebeurtenissen en commentaren, zie het [Modereren van Door Gebruiker Gegenereerde Inhoud](/help/communities/moderate-ugc.md).
+Zie [Door gebruiker gegenereerde inhoud modereren](/help/communities/moderate-ugc.md) voor de moderatie van kalendergebeurtenissen en opmerkingen.
 
-Zie Door gebruiker gegenereerde inhoud [](/help/communities/tag-ugc.md)labelen voor informatie over het labelen van agendagebeurtenissen en opmerkingen.
+Zie [Door gebruiker gegenereerde inhoud labelen](/help/communities/tag-ugc.md) voor het labelen van agendagebeurtenissen en opmerkingen.
 
-Zie Door gebruiker gegenereerde inhoud [vertalen voor meer informatie over kalendergebeurtenissen en opmerkingen](/help/communities/translate-ugc.md).
+Zie [Door gebruiker gegenereerde inhoud omzetten](/help/communities/translate-ugc.md) voor een vertaling van kalendergebeurtenissen en opmerkingen.

@@ -12,15 +12,18 @@ discoiquuid: 7be506fb-f5c4-48dd-bec2-a3ea3ea19397
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 317093bce043ff2aaa5b5ceb8499f057fa9fa24b
+workflow-type: tm+mt
+source-wordcount: '207'
+ht-degree: 22%
 
 ---
 
 
 # Exporteren naar CSV{#export-to-csv}
 
-**Met CSV-rapport** maken kunt u gegevens over uw pagina&#39;s exporteren naar een CSV-bestand op uw lokale systeem.
+**Met CSV-** rapporten kunt u gegevens over uw pagina&#39;s exporteren naar een CSV-bestand op uw lokale systeem.
 
-* Het gedownloade bestand wordt aangeroepen `export.csv`
+* Het gedownloade bestand wordt `export.csv`
 * De inhoud is afhankelijk van de eigenschappen die u selecteert.
 * U kunt het pad samen met de diepte van het exporteren definiëren.
 
@@ -49,11 +52,11 @@ Met de wizard **CSV-export maken** kunt u het volgende selecteren:
    * Aanvullende niveaus voor kinderen
    * Niveaus
 
-Het resulterende `export.csv` bestand kan worden geopend in Excel of een andere compatibele toepassing.
+Het resulterende `export.csv` dossier kan in Excel of een andere compatibele toepassing worden geopend.
 
 ![etc-01](assets/etc-01.png)
 
-De optie **CSV-rapport** maken is beschikbaar wanneer u in de **Sites** -console bladert (in de lijstweergave): Dit is een optie in het keuzemenu **Maken** :
+De optie **CSV-rapport** maken is beschikbaar wanneer u in de **Sites**-console bladert (in de lijstweergave): het is een optie van **Create** drop-down menu:
 
 ![etc-02](assets/etc-02.png)
 

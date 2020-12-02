@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# 360/VR Video {#vr-video}
+# 360/VR-video {#vr-video}
 
 Bij video&#39;s van 360 graden wordt een weergave in elke richting tegelijkertijd vastgelegd. Ze worden opgenomen met een omnidirectionele camera of een verzameling camera&#39;s. Tijdens het afspelen op een plat beeldscherm heeft de gebruiker controle over de kijkhoek; afspelen op mobiele apparaten maakt doorgaans gebruik van de ingebouwde gyroscopische besturingselementen.
 
@@ -27,25 +27,27 @@ In deze sectie wordt beschreven hoe u met de 360/VR Video-viewer werkt om equire
 
 Ruimtelijke audio wordt momenteel niet ondersteund. als audio in stereo wordt gemengd, verandert de balans (L/R) niet aangezien de klant de kijkhoek van de camera verandert.
 
-Zie ook Voorinstellingen [voor viewers](/help/assets/managing-viewer-presets.md)beheren.
+Zie ook [Viewer-voorinstellingen beheren](/help/assets/managing-viewer-presets.md).
 
 ## 360 Video in actie {#video-in-action}
 
-Tik op [Ruimtestation 360](http://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) om een browservenster te openen en een video van 360 graden te bekijken. Tijdens het afspelen van video sleept u de muisaanwijzer naar een nieuwe locatie om de weergavehoek te wijzigen.
+Tik [Ruimtestation 360](http://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) om een browservenster te openen en een video van 360 graden te bekijken. Tijdens het afspelen van video sleept u de muisaanwijzer naar een nieuwe locatie om de weergavehoek te wijzigen.
 
-![360 Videosample](assets/6_5_360videoiss_simplified.png)*Video frame from Space Station 360*
+![360 Video ](assets/6_5_360videoiss_simplified.png)
+*sampleVideo frame van Space Station 360*
 
 ## 360/VR-video en Adobe Premiere Pro {#vr-video-and-adobe-premiere-pro}
 
 Met Adobe Premier Pro kunt u 360/VR-beeldmateriaal weergeven en bewerken. U kunt bijvoorbeeld logo&#39;s en tekst op de juiste wijze in een scène plaatsen en effecten en overgangen toepassen die specifiek zijn ontworpen voor rechthoekige media.
 
-Zie [Video](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-video.html)360/VR bewerken.
+Zie [360/VR-video bewerken](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-video.html).
 
-## Elementen uploaden voor gebruik met de 360-videoviewer {#uploading-assets-for-use-with-the-video-viewer}
+## Elementen uploaden voor gebruik met de 360 Video-viewer {#uploading-assets-for-use-with-the-video-viewer}
 
-360 video-elementen die naar AEM worden geüpload, worden op een elementpagina aangeduid als **Multimedia** , vergelijkbaar met normale video-elementen.
+360 video-elementen die naar AEM worden geüpload, krijgen het label **Multimedia** op een elementpagina, vergelijkbaar met het normale video-element.
 
-![6_5_360video-geselecteerde voorvertoning](assets/6_5_360video-selecttopreview.png)*Een geüploade 360 video-element dat in de kaartweergave wordt weergegeven. Het element wordt aangeduid als Multimedia.*
+![6_5_360video-](assets/6_5_360video-selecttopreview.png)
+*selectto previewEen geüploade 360 video-element in de kaartweergave. Het element is gelabeld als Multimedia.*
 
 **Elementen uploaden voor gebruik met de 360-videoviewer:**
 
@@ -60,7 +62,7 @@ Zie [Video](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-video.html)3
 
       * 1080p - 1920 x 1080, bekend als Full HD- of FHD-resolutie of,
       * 2160p - 3840 x 2160, bekend als 4K, UHD of Ultra HD-resolutie. Deze zeer grote schermresolutie wordt meestal aangetroffen op hoogwaardige televisietoestellen en computermonitoren. De resolutie van 2160p wordt vaak &#39;4K&#39; genoemd omdat de breedte dichtbij 4000 pixels ligt. Met andere woorden, het biedt vier keer de pixels van 1080p.
-   * [Maak een aangepast adaptief videoprofiel](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) met uitvoeringen van hogere kwaliteit. U kunt bijvoorbeeld een adaptief videoprofiel met de volgende drie instellingen maken:
+   * [Maak een aangepast adaptief videoprofiel ](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) met uitvoeringen van hogere kwaliteit. U kunt bijvoorbeeld een adaptief videoprofiel met de volgende drie instellingen maken:
 
       * width=auto; height=720; bitsnelheid=2500 kbps
       * width=auto; height=1080; bitsnelheid=5000 kbps
@@ -71,11 +73,11 @@ Zie [Video](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-video.html)3
 
 1. [Upload uw video naar de map](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
 
-## De standaardverhouding van 360 video&#39;s overschrijven  {#overriding-the-default-aspect-ratio-of-videos}
+## De standaardverhouding van 360 video&#39;s overschrijven {#overriding-the-default-aspect-ratio-of-videos}
 
 Als u een geüpload element wilt kwalificeren als een 360-video die u wilt gebruiken met de 360-videoviewer, moet het element een hoogte-breedteverhouding van 2 hebben.
 
-AEM detecteert video standaard als &quot;360&quot; als de hoogte-breedteverhouding (breedte/hoogte) 2,0 is. Als u een beheerder bent, kunt u de standaardhoogte-breedteverhouding van 2 overschrijven door de optionele `s7video360AR` eigenschap in te stellen op CRXDE Lite op het volgende:
+AEM detecteert video standaard als &quot;360&quot; als de hoogte-breedteverhouding (breedte/hoogte) 2,0 is. Als u een Beheerder bent, kunt u het gebrek aspectverhouding plaatsen van 2 met voeten treden door het facultatieve `s7video360AR` bezit in CRXDE Lite bij het volgende te plaatsen:
 
 * `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
 
@@ -92,13 +94,13 @@ Begin met het uploaden van 360 video&#39;s.
 
 Met Voorvertoning kunt u zien hoe uw 360-video er uitziet voor klanten en kunt u controleren of deze zich gedraagt zoals u had verwacht.
 
-Zie ook Voorinstellingen [van viewer](/help/assets/managing-viewer-presets.md#editing-viewer-presets)bewerken.
+Zie ook [Viewer-voorinstellingen bewerken](/help/assets/managing-viewer-presets.md#editing-viewer-presets).
 
 Als u tevreden bent met de 360-video, kunt u deze publiceren.
 
-See [Embedding the Video or Image Viewer on a Web Page.](https://helpx.adobe.com/experience-manager/6-5/help/assets/embed-code.html)
-Zie URL&#39;s [koppelen aan uw webtoepassing](https://helpx.adobe.com/experience-manager/6-5/help/assets/linking-urls-to-yourwebapplication.html). De op URL gebaseerde methode van koppelen is niet mogelijk als uw interactieve inhoud koppelingen naar relatieve URL&#39;s bevat, met name koppelingen naar AEM Sites-pagina&#39;s.
-See [Adding Dynamic Media Assets to pages.](https://helpx.adobe.com/experience-manager/6-5/help/assets/adding-dynamic-media-assets-to-pages.html)
+Zie [Video- of afbeeldingsviewer insluiten op een webpagina.](https://helpx.adobe.com/experience-manager/6-5/help/assets/embed-code.html)
+Zie URL&#39;s  [koppelen aan uw webtoepassing](https://helpx.adobe.com/experience-manager/6-5/help/assets/linking-urls-to-yourwebapplication.html). De op URL gebaseerde methode van koppelen is niet mogelijk als uw interactieve inhoud koppelingen naar relatieve URL&#39;s bevat, met name koppelingen naar AEM Sites-pagina&#39;s.
+Zie [Dynamische media-elementen toevoegen aan pagina&#39;s.](https://helpx.adobe.com/experience-manager/6-5/help/assets/adding-dynamic-media-assets-to-pages.html)
 
 **Een voorvertoning van 360 video&#39;s weergeven**
 
@@ -108,14 +110,14 @@ See [Adding Dynamic Media Assets to pages.](https://helpx.adobe.com/experience-m
 
    Tik op het 360-video-element om een voorvertoning van de video weer te geven.
 
-1. Tik op de voorvertoningspagina linksboven op de pagina op de vervolgkeuzelijst en selecteer vervolgens **[!UICONTROL Viewers.]**
+1. Tik op de voorvertoningspagina linksboven op de pagina op de vervolgkeuzelijst en selecteer **[!UICONTROL Viewers.]**
 
    ![6_5_360video-voorvertoning-viewers](assets/6_5_360video-preview-viewers.png)
 
-   Tik in de lijst Viewers op **[!UICONTROL Video360_social]** een van de volgende handelingen:
+   Tik in de lijst Viewers op **[!UICONTROL Video360_social]** en voer een van de volgende handelingen uit:
 
    * Sleep de muisaanwijzer over de video om de kijkhoek van de statische scène te wijzigen.
-   * Tik op de **[!UICONTROL Play]** knop van de video om te beginnen met afspelen; terwijl de video wordt afgespeeld, sleept u de muisaanwijzer over de video om de kijkhoek te wijzigen.
+   * Tik op de knop **[!UICONTROL Play]** om het afspelen te starten; terwijl de video wordt afgespeeld, sleept u de muisaanwijzer over de video om de kijkhoek te wijzigen.
 
    ![6_5_360video-voorvertoning-video360-](assets/6_5_360video-preview-video360-social.png)*socialA 360 videoscreenshot.*
 
@@ -127,11 +129,11 @@ See [Adding Dynamic Media Assets to pages.](https://helpx.adobe.com/experience-m
 
 1. Tik rechtsboven op de voorvertoningspagina op **[!UICONTROL Close.]**
 
-## 360-video publiceren {#publishing-video}
+## 360-video {#publishing-video} publiceren
 
 U moet de 360-video publiceren om deze te kunnen gebruiken. Wanneer u een 360-video publiceert, wordt de URL en de insluitcode geactiveerd. Het publiceert ook de 360 Video aan de Dynamische wolk van Media die met een CDN voor scalable en prestatieslevering geïntegreerd is.
 
-Zie Dynamische media-elementen [](/help/assets/publishing-dynamicmedia-assets.md) publiceren voor meer informatie over het publiceren van 360-video.
-See also [Embedding the Video or Image Viewer on a Web Page](https://helpx.adobe.com/experience-manager/6-5/help/assets/embed-code.html).
-See also [Linking URLs to your web application](https://helpx.adobe.com/experience-manager/6-5/help/assets/linking-urls-to-yourwebapplication.html). De op URL gebaseerde methode van koppelen is niet mogelijk als uw interactieve inhoud koppelingen naar relatieve URL&#39;s bevat, met name koppelingen naar AEM Sites-pagina&#39;s.
-See also [Adding Dynamic Media Assets to pages.](https://helpx.adobe.com/experience-manager/6-5/help/assets/adding-dynamic-media-assets-to-pages.html)
+Zie [Dynamische media-elementen publiceren](/help/assets/publishing-dynamicmedia-assets.md) voor meer informatie over het publiceren van 360-video.
+Zie ook [Video of Afbeeldingsviewer insluiten op een webpagina](https://helpx.adobe.com/experience-manager/6-5/help/assets/embed-code.html).
+Zie ook [URL&#39;s koppelen aan uw webtoepassing](https://helpx.adobe.com/experience-manager/6-5/help/assets/linking-urls-to-yourwebapplication.html). De op URL gebaseerde methode van koppelen is niet mogelijk als uw interactieve inhoud koppelingen naar relatieve URL&#39;s bevat, met name koppelingen naar AEM Sites-pagina&#39;s.
+Zie ook [Dynamische media-elementen toevoegen aan pagina&#39;s.](https://helpx.adobe.com/experience-manager/6-5/help/assets/adding-dynamic-media-assets-to-pages.html)

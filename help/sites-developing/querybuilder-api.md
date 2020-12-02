@@ -13,39 +13,42 @@ pagetitle: Query Builder API
 tagskeywords: querybuilder
 translation-type: tm+mt
 source-git-commit: a491d4e9bd9ffc68c4ba7cac3149f48cf7576ee8
+workflow-type: tm+mt
+source-wordcount: '2350'
+ht-degree: 0%
 
 ---
 
 
 # Query Builder-API{#query-builder-api}
 
-De functionaliteit van de [Asset Share Query Builder](/help/assets/assets-finder-editor.md) wordt weergegeven via een Java API en een REST API. In deze sectie worden deze API&#39;s beschreven.
+De functionaliteit van [Asset Share Query Builder](/help/assets/assets-finder-editor.md) wordt weergegeven via een Java API en een REST API. In deze sectie worden deze API&#39;s beschreven.
 
-De server-kant vraagbouwer ( [`QueryBuilder`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html)) zal een vraagbeschrijving goedkeuren, creeert en in werking stelt een vraag van XPath, naar keuze filter de resultaatreeks, en ook extractfacetten, indien gewenst.
+De server-zijvraagbouwer ( [`QueryBuilder`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html)) zal een vraagbeschrijving goedkeuren, creeert en in werking stelt een vraag van XPath, naar keuze filter de resultaatreeks, en ook extractie facetten, indien gewenst.
 
-De vraagbeschrijving is eenvoudig een reeks predikaten ([`Predicate`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/Predicate.html)). Voorbeelden zijn een voorspelling in volledige tekst, die overeenkomt met de functie in XPath. `jcr:contains()`
+De vraagbeschrijving is eenvoudig een reeks predikaten ([`Predicate`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/Predicate.html)). Voorbeelden zijn een full-text voorspelling die overeenkomt met de functie `jcr:contains()` in XPath.
 
-Voor elk predikaat type, is er een beoordelaarcomponent ([`PredicateEvaluator`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)) die weet hoe te om dat specifieke predikaat voor XPath, het filtreren, en facetextractie te behandelen. Het is zeer gemakkelijk om douanebeoordelaars tot stand te brengen, die door componenten OSGi runtime gestopt zijn.
+Voor elk predicaatype, is er een beoordelaarcomponent ([`PredicateEvaluator`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)) die weet hoe te om dat specifieke predikaat voor XPath, het filtreren, en facetextractie te behandelen. Het is zeer gemakkelijk om douanebeoordelaars tot stand te brengen, die door componenten OSGi runtime gestopt zijn.
 
 De REST API biedt toegang tot exact dezelfde functies via HTTP, waarbij reacties worden verzonden in JSON.
 
 >[!NOTE]
 >
->De API van QueryBuilder wordt gebouwd gebruikend JCR API. U kunt ook een query uitvoeren op de JCR-API van Adobe Experience Manager vanuit een OSGi-bundel. Zie Adobe Experience Manager-gegevens [aanvragen met de JCR API](https://helpx.adobe.com/experience-manager/using/querying-experience-manager-data-using1.html)voor meer informatie.
+>De API van QueryBuilder wordt gebouwd gebruikend JCR API. U kunt ook een query uitvoeren op de JCR van Adobe Experience Manager door de JCR API te gebruiken vanuit een OSGi-bundel. Zie [Adobe Experience Manager-gegevens opvragen met de JCR API](https://helpx.adobe.com/experience-manager/using/querying-experience-manager-data-using1.html) voor meer informatie.
 
 ## Gem-sessie {#gem-session}
 
-[AEM Gems](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html) is een aantal technische diepgaande duiken in Adobe Experience Manager die door Adobe-experts worden geleverd. Deze zitting die aan de vraagbouwer wordt gewijd is zeer nuttig voor een overzicht en gebruik van het hulpmiddel.
+[AEM ](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html) Gemsis heeft een aantal technische diepteduiken in Adobe Experience Manager geleverd door Adobe-experts. Deze zitting die aan de vraagbouwer wordt gewijd is zeer nuttig voor een overzicht en gebruik van het hulpmiddel.
 
 >[!NOTE]
 >
->Zie de AEM Gem-sessie [Zoekformulieren die gemakkelijk zijn gemaakt met de AEM querybuilder](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-search-forms-using-querybuilder.html) voor een gedetailleerd overzicht van de querybuilder.
+>Zie de zitting van AEMGem [Vormen van het Onderzoek gemakkelijk met AEM querybuilder](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-search-forms-using-querybuilder.html) voor een gedetailleerd overzicht van de vraagbouwer worden gemaakt.
 
 ## Voorbeeldquery&#39;s {#sample-queries}
 
 Deze voorbeelden worden gegeven in de stijlnotatie Java-eigenschappen. Als u deze wilt gebruiken met de Java API, gebruikt u een Java `HashMap` zoals in het volgende API-voorbeeld.
 
-Voor de `QueryBuilder` JSON-server bevat elk voorbeeld een koppeling naar uw lokale CQ-installatie (op de standaardlocatie, `http://localhost:4502`). U moet zich aanmelden bij uw CQ-exemplaar voordat u deze koppelingen kunt gebruiken.
+Voor `QueryBuilder` JSON Servlet, omvat elk voorbeeld een verbinding aan uw lokale installatie CQ (bij de standaardplaats, `http://localhost:4502`). U moet zich aanmelden bij uw CQ-exemplaar voordat u deze koppelingen kunt gebruiken.
 
 >[!CAUTION]
 >
@@ -59,9 +62,9 @@ Voor de `QueryBuilder` JSON-server bevat elk voorbeeld een koppeling naar uw lok
 >
 >Als u de geretourneerde JSON-gegevens in uw browser wilt weergeven, kunt u een plug-in gebruiken, zoals JSONView voor Firefox.
 
-### Alle resultaten retourneren {#returning-all-results}
+### Alle resultaten {#returning-all-results} retourneren
 
-De volgende query **retourneert tien resultaten** (of om precies te zijn een maximum van tien), maar informeert u over het **aantal treffers:** die daadwerkelijk beschikbaar zijn:
+De volgende vraag zal **tien resultaten** (of om een maximum van tien te zijn) terugkeren, maar u op de hoogte brengen van **Aantal treffers:** die eigenlijk beschikbaar zijn:
 
 `http://localhost:4502/bin/querybuilder.json?path=/content&1_property=sling:resourceType&1_property.value=foundation/components/text&1_property.operation=like&orderby=path`
 
@@ -73,7 +76,7 @@ path=/content
 orderby=path
 ```
 
-Dezelfde query (met de parameter `p.limit=-1`) zal alle resultaten **** retourneren (dit kan een hoog getal zijn, afhankelijk van uw instantie):
+Dezelfde query (met de parameter `p.limit=-1`) retourneert **alle resultaten** (dit kan een hoog getal zijn, afhankelijk van uw instantie):
 
 `http://localhost:4502/bin/querybuilder.json?path=/content&1_property=sling:resourceType&1_property.value=foundation/components/text&1_property.operation=like&p.limit=-1&orderby=path`
 
@@ -86,13 +89,13 @@ p.limit=-1
 orderby=path
 ```
 
-### De resultaten retourneren met p.radenTotal {#using-p-guesstotal-to-return-the-results}
+### De resultaten {#using-p-guesstotal-to-return-the-results} retourneren met p.radenTotal
 
-Het doel van de `p.guessTotal` parameter is om het juiste aantal resultaten te retourneren dat kan worden aangetoond door de minimale levensvatbare p.offset- en p.limit-waarden te combineren. Het voordeel van deze parameter is dat de prestaties van grote resultaatsets verbeterd zijn. Zo voorkomt u dat het volledige totaal wordt berekend (bijvoorbeeld door result.getSize() aan te roepen en de gehele resultaatset te lezen, volledig tot aan de OAK-engine en -index is geoptimaliseerd. Dit kan een significant verschil zijn wanneer er 100 duizenden resultaten zijn, zowel in uitvoeringstijd als in geheugengebruik.
+Het doel van de parameter `p.guessTotal` is het juiste aantal resultaten te retourneren die kunnen worden getoond door de minimale levensvatbare p.offset- en p.limit-waarden te combineren. Het voordeel van deze parameter is dat de prestaties van grote resultaatsets verbeterd zijn. Zo voorkomt u dat het volledige totaal wordt berekend (bijvoorbeeld door result.getSize() aan te roepen en de gehele resultaatset te lezen, volledig tot aan de OAK-engine en -index is geoptimaliseerd. Dit kan een significant verschil zijn wanneer er 100 duizenden resultaten zijn, zowel in uitvoeringstijd als in geheugengebruik.
 
 Het nadeel van de parameter is dat gebruikers het exacte totaal niet zien. Maar u kunt een minimumaantal zoals p.radenTotal=1000 plaatsen zodat zal het altijd tot 1000 lezen, zodat krijgt u nauwkeurige totalen voor kleinere resultaatreeksen, maar als het meer dan dat is, kunt u slechts &quot;en meer&quot;tonen.
 
-Voeg `p.guessTotal=true` aan de vraag toe hieronder om te zien hoe het werkt:
+Voeg `p.guessTotal=true` aan de vraag hieronder toe om te zien hoe het werkt:
 
 `http://localhost:4502/bin/querybuilder.json?path=/content&1_property=sling:resourceType&1_property.value=foundation/components/text&1_property.operation=like&p.guessTotal=true&orderby=path`
 
@@ -105,7 +108,7 @@ p.guessTotal=true
 orderby=path
 ```
 
-De query retourneert de `p.limit` standaardwaarde van de `10` resultaten met een `0` offset:
+De query retourneert de `p.limit`-standaardwaarde van `10`-resultaten met een `0`-verschuiving:
 
 ```xml
 "success": true,
@@ -129,19 +132,19 @@ Het zal een aantal de zelfde standaardgrens van 10 resultaten met een 0 compensa
 "offset": 0,
 ```
 
-### Paginering uitvoeren {#implementing-pagination}
+### Paginering {#implementing-pagination} implementeren
 
 Door gebrek zou de Bouwer van de Vraag ook het aantal treffers verstrekken. Afhankelijk van de resultaatgrootte dit zou lang kunnen duren aangezien het bepalen van de nauwkeurige telling het controleren van elk resultaat voor toegangsbeheer impliceert. Meestal wordt het totaal gebruikt om paginering voor de eindgebruiker UI uit te voeren. Aangezien het bepalen van de nauwkeurige telling langzaam kan zijn, wordt geadviseerd om van de eigenschap te gebruiken radenTotal om de paginering uit te voeren.
 
 De interface kan bijvoorbeeld de volgende benadering aanpassen:
 
 * Krijg en toon de nauwkeurige telling van het aantal totale klappen ([SearchResult.getTotalMatches()](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/result/SearchResult.html#gettotalmatches) of totaal in de querybuilder.json reactie) zijn minder dan of gelijk aan 100;
-* Reeks `guessTotal` aan 100 terwijl het maken van de vraag aan de Bouwer van de Vraag.
+* Plaats `guessTotal` aan 100 terwijl het maken van de vraag aan de Bouwer van de Vraag.
 
 * De reactie kan het volgende resultaat hebben:
 
-   * `total=43`, `more=false` - Geeft aan dat het totale aantal treffers 43 is. De interface kan tot tien resultaten als deel van de eerste pagina tonen en paginering voor de volgende drie pagina&#39;s verstrekken. U kunt deze implementatie ook gebruiken om een beschrijvende tekst weer te geven, zoals **&quot;43 resultaten gevonden&quot;**.
-   * `total=100`, `more=true` - Geeft aan dat het totale aantal treffers groter is dan 100 en dat het exacte aantal niet bekend is. De interface kan maximaal tien pagina&#39;s weergeven als onderdeel van de eerste pagina en paginering voor de volgende tien pagina&#39;s bieden. U kunt dit ook gebruiken om tekst weer te geven zoals **&quot;meer dan 100 resultaten gevonden&quot;**. Aangezien de gebruiker naar de volgende pagina vraag gaat die aan de Bouwer van de Vraag wordt gemaakt zou de grens van `guessTotal` en ook van de `offset` en `limit` parameters verhogen.
+   * `total=43`,  `more=false` - Geeft aan dat het totale aantal treffers 43 is. De interface kan tot tien resultaten als deel van de eerste pagina tonen en paginering voor de volgende drie pagina&#39;s verstrekken. U kunt deze implementatie ook gebruiken om een beschrijvende tekst weer te geven zoals **&quot;43 gevonden resultaten&quot;**.
+   * `total=100`,  `more=true` - Geeft aan dat het totale aantal treffers groter is dan 100 en dat het exacte aantal niet bekend is. De interface kan maximaal tien pagina&#39;s weergeven als onderdeel van de eerste pagina en paginering voor de volgende tien pagina&#39;s bieden. U kunt dit ook gebruiken om tekst als **&quot;meer dan 100 gevonden resultaten&quot;te tonen**. Aangezien de gebruiker naar de volgende pagina gaat vraag aan de Bouwer van de Vraag wordt gemaakt zou de grens van `guessTotal` en ook van `offset` en `limit` parameters verhogen die.
 
 `guessTotal` moet ook worden gebruikt in gevallen waarin de gebruikersinterface oneindig schuiven moet gebruiken om te voorkomen dat de Query Builder het exacte aantal treffers bepaalt.
 
@@ -165,7 +168,7 @@ type=cq:Page
 orderby=@jcr:content/cq:lastModified
 ```
 
-### Alle pagina&#39;s zoeken en ze bestellen op laatst gewijzigd, maar aflopend {#find-all-pages-and-order-them-by-last-modified-but-descending}
+### Alle pagina&#39;s zoeken en deze rangschikken op laatst gewijzigd, maar aflopend {#find-all-pages-and-order-them-by-last-modified-but-descending}
 
 `http://localhost:4502/bin/querybuilder.json?type=cq:Page&orderby=@jcr:content/cq:lastModified&orderby.sort=desc]`
 
@@ -185,7 +188,7 @@ orderby=@jcr:score
 orderby.sort=desc
 ```
 
-### Pagina&#39;s zoeken waaraan een bepaald label is toegekend {#search-for-pages-tagged-with-a-certain-tag}
+### Zoeken naar pagina&#39;s met een bepaald label {#search-for-pages-tagged-with-a-certain-tag}
 
 &quot;http://localhost:4502/bin/querybuilder.json?type=cq:Page&amp;tagid=marketing:interest/product&amp;tagid.property=jcr:content/cq:tags&quot;
 
@@ -197,9 +200,9 @@ tagid.property=jcr:content/cq:tags
 
 Gebruik de `tagid` voorspelling zoals in het voorbeeld als u expliciete markering ID kent.
 
-Gebruik de voorspelling `tag` voor het pad van de tagtitel (zonder spaties).
+Gebruik `tag` voorspellen voor de weg van de markeringstitel (zonder ruimten).
 
-Omdat u in het vorige voorbeeld naar pagina&#39;s ( `cq:Page` knooppunten) zoekt, moet u het relatieve pad van dat knooppunt gebruiken voor de `tagid.property` voorspelling, namelijk `jcr:content/cq:tags`. De standaardinstelling `tagid.property` zou `cq:tags`.
+Omdat in het vorige voorbeeld u naar pagina&#39;s ( `cq:Page` knopen) zoekt, moet u het relatieve weg van die knoop voor `tagid.property` voorspellen gebruiken, die `jcr:content/cq:tags` is. Standaard zou `tagid.property` `cq:tags` zijn.
 
 ### Zoeken onder meerdere paden (met groepen) {#search-under-multiple-paths-using-groups}
 
@@ -212,23 +215,23 @@ group.1_path=/content/geometrixx/en/company/management
 group.2_path=/content/geometrixx/en/company/bod
 ```
 
-Deze vraag gebruikt een *groep* (genoemd &quot; `group`&quot;), die dienst doet om subexpressies binnen een vraag te afbakenen, veel zoals haakjes in meer standaardnota&#39;s doen. Bijvoorbeeld, zou de vorige vraag in een meer bekende stijl als kunnen worden uitgedrukt:
+Deze query gebruikt een *group* (genoemd &quot; `group`&quot;), die fungeert om subexpressies binnen een query te scheiden, net als ronde haakjes doen in meer standaardnotaties. Bijvoorbeeld, zou de vorige vraag in een meer bekende stijl als kunnen worden uitgedrukt:
 
 `"Management" and ("/content/geometrixx/en/company/management" or "/content/geometrixx/en/company/bod")`
 
-In de groep in het voorbeeld wordt de `path` predikaat meerdere keren gebruikt. Om de twee instanties van predikaat te onderscheiden en tot orde te brengen (het opdracht geven wordt vereist voor sommige predikaten), moet u prefixen predikaten met *N* `_ where`*N *is de het opdracht geven index. In het vorige voorbeeld zijn de resulterende voorspellingen`1_path`en`2_path`.
+Binnen de groep in het voorbeeld wordt de `path` predikaat meerdere keren gebruikt. Als u de twee instanties van de voorspelling wilt onderscheiden en rangschikken (de volgorde is vereist voor sommige voorspelling), moet u de voorspelling voorschrijven met *N* `_ where`*N* is de volgorde-index. In het vorige voorbeeld zijn de resulterende voorspellingen `1_path` en `2_path`.
 
-De `p` in `p.or` is een speciaal scheidingsteken dat aangeeft dat wat volgt (in dit geval een `or`) een *parameter* van de groep is, in tegenstelling tot een subpredicaat van de groep, zoals `1_path`.
+De `p` in `p.or` is een speciaal scheidingsteken dat erop wijst dat wat volgt (in dit geval een `or`) een *parameter* van de groep is, in tegenstelling tot een subpredikaat van de groep, zoals `1_path`.
 
-Als er geen voorspelling `p.or` wordt gegeven, dan zijn alle voorspellen ANDed samen, dat wil zeggen, elk resultaat moet aan alle voorspelling voldoen.
+Als geen `p.or` wordt gegeven dan zijn alle predikaten ANDed samen, dat wil zeggen, elk resultaat moet aan alle predikaten voldoen.
 
 >[!NOTE]
 >
 >U kunt niet hetzelfde numerieke voorvoegsel in één query gebruiken, zelfs niet voor verschillende voorspellingen.
 
-### Eigenschappen zoeken {#search-for-properties}
+### Zoeken naar eigenschappen {#search-for-properties}
 
-Hier zoekt u naar alle pagina&#39;s van een bepaalde sjabloon met behulp van de `cq:template` eigenschap:
+Hier zoekt u naar alle pagina&#39;s van een bepaalde sjabloon met de eigenschap `cq:template`:
 
 `http://localhost:4502/bin/querybuilder.json?property=cq%3atemplate&property.value=%2fapps%2fgeometrixx%2ftemplates%2fhomepage&type=cq%3aPageContent`
 
@@ -238,7 +241,7 @@ property=cq:template
 property.value=/apps/geometrixx/templates/homepage
 ```
 
-Dit heeft het nadeel dat de `jcr:content` knooppunten van de pagina&#39;s, niet de pagina&#39;s zelf, worden geretourneerd. U kunt dit oplossen door op relatief pad te zoeken:
+Dit heeft het nadeel dat de `jcr:content` knopen van de pagina&#39;s, niet de pagina&#39;s zelf, zijn teruggekeerd. U kunt dit oplossen door op relatief pad te zoeken:
 
 `http://localhost:4502/bin/querybuilder.json?property=jcr%3acontent%2fcq%3atemplate&property.value=%2fapps%2fgeometrixx%2ftemplates%2fhomepage&type=cq%3aPage`
 
@@ -248,7 +251,7 @@ property=jcr:content/cq:template
 property.value=/apps/geometrixx/templates/homepage
 ```
 
-### Meerdere eigenschappen zoeken {#search-for-multiple-properties}
+### Zoeken naar meerdere eigenschappen {#search-for-multiple-properties}
 
 Wanneer het gebruiken van het bezit voorspelt veelvoudige tijden, moet u de aantalprefixen opnieuw toevoegen:
 
@@ -262,9 +265,9 @@ type=cq:Page
 2_property.value=English
 ```
 
-### Meerdere eigenschapswaarden zoeken {#search-for-multiple-property-values}
+### Zoeken naar meerdere eigenschapswaarden {#search-for-multiple-property-values}
 
-Om grote groepen te vermijden wanneer u naar veelvoudige waarden van een bezit ( `"A" or "B" or "C"`) wilt zoeken, kunt u veelvoudige waarden aan het `property` predikaat verstrekken:
+Om grote groepen te vermijden wanneer u naar veelvoudige waarden van een bezit ( `"A" or "B" or "C"`) wilt zoeken, kunt u veelvoudige waarden aan `property` voorspellen verstrekken:
 
 `http://localhost:4502/bin/querybuilder.json?property=jcr%3atitle&property.1_value=Products&property.2_value=Square&property.3_value=Events`
 
@@ -275,7 +278,7 @@ property.2_value=Square
 property.3_value=Events
 ```
 
-Voor eigenschappen met meerdere waarden kunt u ook vereisen dat meerdere waarden overeenkomen met ( `"A" and "B" and "C"`):
+Voor eigenschappen met meerdere waarden kunt u ook vereisen dat meerdere waarden overeenkomen ( `"A" and "B" and "C"`):
 
 `http://localhost:4502/bin/querybuilder.json?property=jcr%3atitle&property.and=true&property.1_value=test&property.2_value=foo&property.3_value=bar`
 
@@ -291,7 +294,7 @@ property.3_value=bar
 
 Door gebrek, zal QueryBuilder JSON Servlet een standaardreeks eigenschappen voor elke knoop in het onderzoeksresultaat (b.v. weg, naam, titel, enz.) terugkeren. Als u de controle wilt krijgen over de eigenschappen die worden geretourneerd, kunt u een van de volgende handelingen uitvoeren:
 
-Opgeven
+Geef het volgende op
 
 ```
 p.hits=full
@@ -323,7 +326,7 @@ gescheiden door een spatie:
 
 `http://localhost:4502/bin/querybuilder.json?p.hits=selective&property=jcr%3atitle&property.value=Triangle`
 
-[ `http://localhost:4502/bin/querybuilder.json?`](http://localhost:4502/bin/querybuilder.json?p.hits=selective&p.properties=sling%3aresourceType%20jcr%3aprimaryType&property=jcr%3atitle&property.value=Triangle) p.hits=selectieve&amp; [](http://localhost:4502/bin/querybuilder.json?p.hits=selective&p.nodedepth=5&p.properties=sling%3aresourceType%20jcr%3apath&property=jcr%3atitle&property.value=Triangle)p.properties=sling%3resourceType%20jcr%3aprimaryType&amp;property=jcr%3atitle&amp;property.value=Triangle
+[ `http://localhost:4502/bin/querybuilder.json?`](http://localhost:4502/bin/querybuilder.json?p.hits=selective&amp;p.properties=sling%3aresourceType%20jcr%3aprimaryType&amp;property=jcr%3atitle&amp;property.value=Triangle) [p.hits=selectieve&amp;](http://localhost:4502/bin/querybuilder.json?p.hits=selective&amp;p.nodedepth=5&amp;p.properties=sling%3aresourceType%20jcr%3apath&amp;property=jcr%3atitle&amp;property.value=Triangle)p.properties=sling%3resourceType%20jcr%3aprimaryType&amp;property=jcr%3atitle&amp;property.value=Triangle
 
 ```xml
 property=jcr:title
@@ -338,7 +341,7 @@ Een ander ding u kunt doen is kindknopen in de reactie omvatten QueryBuilder. Om
 p.nodedepth=n
 ```
 
-waar `n` is het aantal niveaus u de vraag wilt terugkeren. Merk op dat, om een kindknoop te zijn teruggekeerd, het door de eigenschappen selecteur moet worden gespecificeerd
+waarbij `n` het aantal niveaus is u de vraag wilt terugkeren. Merk op dat, om een kindknoop te zijn teruggekeerd, het door de eigenschappen selecteur moet worden gespecificeerd
 
 ```
 p.hits=full
@@ -357,13 +360,13 @@ p.nodedepth=5
 
 ## Meer voorspellingen {#morepredicates}
 
-Voor meer predikaten, zie de Predicate pagina [van de Verwijzing van de Bouwer van de](/help/sites-developing/querybuilder-predicate-reference.md)Vraag.
+Voor meer predikaten, zie [de Voorspelde Verwijzing van de Bouwer van de Vraag pagina](/help/sites-developing/querybuilder-predicate-reference.md).
 
-U kunt ook de [JavaDoc controleren op de `PredicateEvaluator` klassen](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/PredicateEvaluator.html). Javadoc voor deze klassen bevat de lijst met eigenschappen die u kunt gebruiken.
+U kunt [Javadoc voor `PredicateEvaluator` ook controleren klassen ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/PredicateEvaluator.html). Javadoc voor deze klassen bevat de lijst met eigenschappen die u kunt gebruiken.
 
-Het voorvoegsel van de klassenaam (bijvoorbeeld &quot; `similar`&quot; in [`SimilarityPredicateEvaluator`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)) is de *belangrijkste eigenschap* van de klasse. Dit bezit is ook de naam van predikaat aan gebruik in de vraag (in kleine letters).
+Het voorvoegsel van de klassenaam (bijvoorbeeld &quot; `similar`&quot; in [`SimilarityPredicateEvaluator`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)) is de *principal-eigenschap* van de klasse. Dit bezit is ook de naam van predikaat aan gebruik in de vraag (in kleine letters).
 
-Voor dergelijke belangrijkste eigenschappen, kunt u de vraag verkorten en &quot; `similar=/content/en`&quot;in plaats van de volledig - gekwalificeerde variant &quot; `similar.similar=/content/en`&quot; gebruiken. Het volledig gekwalificeerde formulier moet worden gebruikt voor alle niet-hoofdeigenschappen van een klasse.
+Voor dergelijke belangrijkste eigenschappen, kunt u de vraag verkorten en &quot; `similar=/content/en`&quot;gebruiken in plaats van de volledig - gekwalificeerde variant &quot; `similar.similar=/content/en`&quot;. Het volledig gekwalificeerde formulier moet worden gebruikt voor alle niet-hoofdeigenschappen van een klasse.
 
 ## Voorbeeld API-gebruik van Query Builder {#example-query-builder-api-usage}
 
@@ -423,39 +426,39 @@ Voor dergelijke belangrijkste eigenschappen, kunt u de vraag verkorten en &quot;
 
 >[!NOTE]
 >
->Leer hoe te om een bundel te bouwen OSGi die de API QueryBuilder gebruikt en die bundel OSGi binnen een toepassing van de Manager van de Ervaring van Adobe gebruikt, zie het [Creëren van de bundels OSGi van Adobe CQ die de](https://helpx.adobe.com/experience-manager/using/using-query-builder-api.html)API van de Bouwer van de Vraag gebruiken.
+>Leren hoe te om een bundel te bouwen OSGi die QueryBuilder API gebruikt en die bundel OSGi binnen een toepassing van Adobe Experience Manager gebruikt, zie [het Creëren van de bundels van Adobe CQ OSGi die AP](https://helpx.adobe.com/experience-manager/using/using-query-builder-api.html)I van de Bouwer van de Vraag gebruiken.
 
 Dezelfde query die via HTTP wordt uitgevoerd met de Query Builder (JSON) Servlet:
 
 `http://localhost:4502/bin/querybuilder.json?path=/content&type=cq:Page&group.p.or=true&group.1_fulltext=Geometrixx&group.1_fulltext.relPath=jcr:content&group.2_fulltext=Geometrixx&group.2_fulltext.relPath=jcr:content/@cq:tags&p.offset=0&p.limit=20`
 
-## Vragen opslaan en laden {#storing-and-loading-queries}
+## Bezig met opslaan en laden van query&#39;s {#storing-and-loading-queries}
 
-U kunt query&#39;s opslaan in de opslagplaats, zodat u ze later kunt gebruiken. In `QueryBuilder` het bestand wordt de &quot; `storeQuery` methode met de volgende handtekening geleverd:
+U kunt query&#39;s opslaan in de opslagplaats, zodat u ze later kunt gebruiken. `QueryBuilder` verstrekt de &quot;`storeQuery` methode met de volgende handtekening:
 
 ```java
 void storeQuery(Query query, String path, boolean createFile, Session session) throws RepositoryException, IOException;
 ```
 
-Wanneer u de [ methode gebruikt, `QueryBuilder#storeQuery`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html#storequerycomdaycqsearchqueryjavalangstringbooleanjavaxjcrsession) wordt de gegeven methode opgeslagen in de repository als een bestand of als een eigenschap volgens de `Query` `createFile` argumentwaarde. In het volgende voorbeeld wordt getoond hoe u een pad opslaat `Query` als een bestand `/mypath/getfiles` :
+Bij gebruik van de [ `QueryBuilder#storeQuery`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html#storequerycomdaycqsearchqueryjavalangstringbooleanjavaxjcrsession) methode, wordt gegeven `Query` opgeslagen in de bewaarplaats als dossier of als bezit volgens de `createFile` argumentwaarde. In het volgende voorbeeld wordt getoond hoe u een `Query` als bestand opslaat naar het pad `/mypath/getfiles`:
 
 ```java
 builder.storeQuery(query, "/mypath/getfiles", true, session);
 ```
 
-Eerder opgeslagen query&#39;s kunnen vanaf de repository worden geladen met de [`QueryBuilder#loadQuery`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html#loadqueryjavalangstringjavaxjcrsession) methode:
+Eerder opgeslagen query&#39;s kunnen vanuit de opslagplaats worden geladen met de methode [`QueryBuilder#loadQuery`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html#loadqueryjavalangstringjavaxjcrsession):
 
 ```java
 Query loadQuery(String path, Session session) throws RepositoryException, IOException
 ```
 
-Een bestand dat bijvoorbeeld naar het pad is `Query` opgeslagen, `/mypath/getfiles` kan door het volgende fragment worden geladen:
+Een `Query` die is opgeslagen op het pad `/mypath/getfiles` kan bijvoorbeeld door het volgende fragment worden geladen:
 
 ```java
 Query loadedQuery = builder.loadQuery("/mypath/getfiles", session);
 ```
 
-## Testen en fouten opsporen {#testing-and-debugging}
+## {#testing-and-debugging} testen en fouten opsporen
 
 Voor het spelen rond en het zuiveren querybuilder vragen, kunt u de debugger console gebruiken QueryBuilder bij
 
@@ -467,45 +470,45 @@ of anders de querybuilder json servlet op
 
 ( `path=/tmp` is slechts een voorbeeld).
 
-### Algemene aanbevelingen voor foutopsporing {#general-debugging-recommendations}
+### Algemene foutopsporing in Recommendations {#general-debugging-recommendations}
 
 ### Leg XPath voor uitleg beschikbaar via logboekregistratie {#obtain-explain-able-xpath-via-logging}
 
-Verklaar **alle** vragen tijdens de ontwikkelingscyclus tegen de reeks van de doelindex.
+Verklaar **all** vragen tijdens de ontwikkelingscyclus tegen de reeks van de doelindex.
 
 * Laat de logboeken van de BUG voor QueryBuilder toe om onderliggende, verklaarbare vraag van XPath te verkrijgen
 
-   * Ga naar https://&lt;serveradres>:&lt;serverpoort>/system/console/slinglog. Maak een nieuw logger voor `com.day.cq.search.impl.builder.QueryImpl` bij **DEBUG**.
+   * Ga naar https://&lt;serveradres>:&lt;serverpoort>/system/console/slinglog. Maak een nieuw logger voor `com.day.cq.search.impl.builder.QueryImpl` op **DEBUG**.
 
 * Zodra DEBUG voor de bovengenoemde klasse is toegelaten, zullen de logboeken XPath tonen dat door de Bouwer van de Vraag wordt geproduceerd.
 * Kopieer de vraag van XPath van de logboekingang voor de bijbehorende vraag QueryBuilder, bijvoorbeeld:
 
    * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "Geometrixx") or jcr:contains(jcr:content/@cq:tags, "Geometrixx"))]`
 
-* Plak de vraag van XPath in [Verklaar Vraag](/help/sites-administering/operations-dashboard.md#explain-query) als XPath om het vraagplan te bekrachtigen
+* Plak de vraag van XPath in [verklaar Vraag](/help/sites-administering/operations-dashboard.md#explain-query) als XPath om het vraagplan te bekrachtigen
 
-### Vraag verklaarbare XPath via debugger van de Bouwer van de Vraag {#obtain-explain-able-xpath-via-the-query-builder-debugger}
+### Vraag verklaring-able XPath via debugger van de Bouwer van de Vraag {#obtain-explain-able-xpath-via-the-query-builder-debugger}
 
-* Gebruik foutopsporing AEM QueryBuilder om een uitlegbare XPath-query te genereren:
+* Gebruik debugger AEM QueryBuilder om een verklaarbare vraag van XPath te produceren:
 
-Verklaar **alle** vragen tijdens de ontwikkelingscyclus tegen de reeks van de doelindex.
+Verklaar **all** vragen tijdens de ontwikkelingscyclus tegen de reeks van de doelindex.
 
 **Leg XPath voor uitleg beschikbaar via logboekregistratie**
 
 * Laat de logboeken van de BUG voor QueryBuilder toe om onderliggende, verklaarbare vraag van XPath te verkrijgen
 
-   * Ga naar https://&lt;serveradres>:&lt;serverpoort>/system/console/slinglog. Maak een nieuw logger voor `com.day.cq.search.impl.builder.QueryImpl` bij **DEBUG**.
+   * Ga naar https://&lt;serveradres>:&lt;serverpoort>/system/console/slinglog. Maak een nieuw logger voor `com.day.cq.search.impl.builder.QueryImpl` op **DEBUG**.
 
 * Zodra DEBUG voor de bovengenoemde klasse is toegelaten, zullen de logboeken XPath tonen dat door de Bouwer van de Vraag wordt geproduceerd.
 * Kopieer de vraag van XPath van de logboekingang voor de bijbehorende vraag QueryBuilder, bijvoorbeeld:
 
    * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "Geometrixx") or jcr:contains(jcr:content/@cq:tags, "Geometrixx"))]`
 
-* Plak de vraag van XPath in [Verklaar Vraag](/help/sites-administering/operations-dashboard.md#explain-query) als XPath om het vraagplan te verkrijgen
+* Plak de vraag van XPath in [verklaar Vraag](/help/sites-administering/operations-dashboard.md#explain-query) als XPath om het vraagplan te verkrijgen
 
 **Vraag verklaarbare XPath via debugger van de Bouwer van de Vraag**
 
-* Gebruik foutopsporing AEM QueryBuilder om een uitlegbare XPath-query te genereren:
+* Gebruik debugger AEM QueryBuilder om een verklaarbare vraag van XPath te produceren:
 
 ![chlimage_1-66](assets/chlimage_1-66a.png)
 
@@ -524,11 +527,11 @@ Voor rundown op hoe te om vragen met QueryBuilder te zuiveren, zie de video hier
 >
 >[https://www.youtube.com/watch?v=BnyXjhRKYKc](https://www.youtube.com/watch?v=BnyXjhRKYKc)
 
-## Foutopsporing in query&#39;s met logboekregistratie {#debugging-queries-with-logging}
+## Fouten opsporen in query&#39;s met logboekregistratie {#debugging-queries-with-logging}
 
 >[!NOTE]
 >
->De configuratie van de loggers wordt beschreven in de sectie [Creërend Uw Eigen Loggers en Schrijvers](/help/sites-deploying/configure-logging.md#creating-your-own-loggers-and-writers).
+>De configuratie van de loggers wordt beschreven in de sectie [Het creëren van Uw Eigen Loggers en Schrijvers](/help/sites-deploying/configure-logging.md#creating-your-own-loggers-and-writers).
 
 De logboekoutput (niveau INFO) van de implementatie van de vraagbouwer wanneer het uitvoeren van de vraag die in het Testen en het Zuiveren wordt beschreven:
 

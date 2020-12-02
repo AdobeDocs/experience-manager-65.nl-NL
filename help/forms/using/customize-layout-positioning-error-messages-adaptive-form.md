@@ -11,11 +11,14 @@ discoiquuid: 136ac7e3-9d1f-4d58-bd4f-9dbe09eeafee
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+workflow-type: tm+mt
+source-wordcount: '554'
+ht-degree: 0%
 
 ---
 
 
-# De indeling en positie van foutberichten van een adaptief formulier aanpassen{#customize-layout-and-positioning-of-error-messages-of-an-adaptive-form}
+# De indeling en positie van foutberichten in een adaptief formulier aanpassen{#customize-layout-and-positioning-of-error-messages-of-an-adaptive-form}
 
 U kunt de indeling en de positie van de foutberichten in een adaptief formulier aanpassen. U kunt de volgende aanpassingen uitvoeren:
 
@@ -32,20 +35,20 @@ U kunt de indeling van één veld of van alle velden aanpassen om de positie van
 
 Voer de volgende stappen uit om een aangepaste indeling toe te passen op één veld:
 
-1. Open het formulier in de modus **Stijl** . Als u het formulier wilt openen in de stijlmodus, tikt u op de paginaboolbalk op ![canvas-vervolgkeuzelijst](assets/canvas-drop-down.png) > **Stijl**.
-1. Selecteer in het zijpaneel onder **Formulierobjecten** het veld en tik op de ![bewerkknop](assets/edit-button.png).
+1. Open het formulier in de modus **Stijl**. Tik op ![canvas-drop-down](assets/canvas-drop-down.png) > **Style** om het formulier in de stijlmodus te openen.
+1. Selecteer in het zijpaneel onder **Formulierobjecten** het veld en tik op de bewerkknop ![edit-button](assets/edit-button.png).
 1. Selecteer de status van het veld dat u wilt aanpassen en geef de opmaak voor die status op.
 
    ![Inline opmaak van een veld opgeven](assets/edit-error-state.png)
 
-### De indeling van alle velden van een formulier aanpassen {#customize-layout-of-all-the-fields-of-a-form}
+### De indeling van alle velden in een formulier {#customize-layout-of-all-the-fields-of-a-form} aanpassen
 
-Met AEM Forms kunt u nu een thema maken en dit toepassen op uw formulier. Met de Thema-editor kunt u op één plaats opmaak van formuliercomponenten opgeven. Wanneer u een thema maakt, geeft u de stijl op componentniveau op. Zie [Thema&#39;s in AEM-formulieren](../../forms/using/themes.md)voor meer informatie over thema&#39;s.
+Met AEM Forms kunt u nu een thema maken en dit toepassen op uw formulier. Met de Thema-editor kunt u op één plaats opmaak van formuliercomponenten opgeven. Wanneer u een thema maakt, geeft u de stijl op componentniveau op. Zie [Thema&#39;s in AEM Forms](../../forms/using/themes.md) voor meer informatie over thema&#39;s.
 
 Maak een thema met de Thema-editor om de indeling van alle velden in het formulier aan te passen. Nadat u een thema hebt gemaakt, voert u de volgende stappen uit om het op een formulier toe te passen:
 
 1. Open het formulier in de bewerkingsmodus.
-1. Selecteer in de bewerkingsmodus een component, tik vervolgens op ![veldniveau](assets/field-level.png) > **Aangepaste formuliercontainer** en tik vervolgens op ![cmr](assets/cmppr.png).
+1. Selecteer in de bewerkingsmodus een component en tik op ![veldniveau](assets/field-level.png) > **Aangepaste formuliercontainer** en tik vervolgens op ![cmppr](assets/cmppr.png).
 1. Selecteer in het zijpaneel onder Adaptief formulierthema het thema dat u hebt gemaakt met de Thema-editor.
 
 ## Een aangepaste veldindeling maken {#create-a-custom-field-layout}
@@ -80,7 +83,7 @@ Maak een thema met de Thema-editor om de indeling van alle velden in het formuli
    ```
 
 1. Als u de weergave en het gedrag wilt verbeteren, neemt u de clientbibliotheek op die in het lay-outbestand is gemaakt (errorOnRight.jsp).
-1. Open het dialoogvenster Bewerken van het veld en selecteer het tabblad **Stijl** . Selecteer in het keuzemenu Veldlay-out **** configureren de nieuwe lay-out en klik op **OK**.
+1. Open het dialoogvenster Bewerken van het veld en selecteer het tabblad **Stijlen**. Selecteer in het vervolgkeuzemenu **Veldlay-out configureren** de nieuwe lay-out en klik op **OK**.
 
 Het pakket ErrorOnRight.zip bevat code waarmee foutberichten aan de rechterkant van velden worden weergegeven.
 

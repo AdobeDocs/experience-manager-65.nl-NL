@@ -37,21 +37,22 @@ Voordat u begint met het configureren of coderen van uw component, moet u het vo
    * Een duidelijke specificatie helpt in alle stadia van ontwikkeling, testen en overdracht. De details kunnen in tijd veranderen, maar de specificatie kan worden bijgewerkt (hoewel de veranderingen ook zouden moeten worden gedocumenteerd).
 * Moet u een geheel nieuwe component maken of kunt u de basisbeginselen overnemen van een bestaande component?
    * Het is niet nodig het wiel opnieuw uit te vinden.
-   * Er zijn verscheidene mechanismen die door AEM worden verstrekt om u toe te staan om details van een andere componentendefinitie met inbegrip van opheffing, bedekking, en de [Verschuivende Fusie](/help/sites-developing/sling-resource-merger.md)van het Middel te erven en uit te breiden.
+   * Er zijn verscheidene mechanismen die door AEM worden verstrekt om u toe te staan om details van een andere componentendefinitie met inbegrip van met voeten treden, bedekking, en [het Verspreiden van de Fusie van het Middel](/help/sites-developing/sling-resource-merger.md) over te nemen en uit te breiden.
 * Heeft uw component logica nodig voor het selecteren/manipuleren van de inhoud?
    * De logica moet gescheiden worden gehouden van de gebruikersinterfacelaag. HTL is ontworpen om ervoor te zorgen dat dit gebeurt.
 * Heeft uw component CSS-opmaak nodig?
    * CSS-opmaak moet gescheiden blijven van de componentdefinities. Definieer conventies voor de naamgeving van uw HTML-elementen, zodat u deze kunt wijzigen via externe CSS-bestanden.
 * Welke veiligheidsaspecten moet ik in overweging nemen?
-   * Zie [Beveiligingschecklist - Aanbevolen werkwijzen](/help/sites-administering/security-checklist.md#development-best-practices) voor ontwikkeling voor meer informatie.
+   * Zie [Beveiligingschecklist - Aanbevolen werkwijzen voor ontwikkeling](/help/sites-administering/security-checklist.md#development-best-practices) voor meer informatie.
 
 ### Aanraakbare versus klassieke gebruikersinterface {#touch-enabled-vs-classic-ui}
 
 Voordat een serieuze discussie begint met het ontwikkelen van componenten, moet u weten welke interface uw auteurs zullen gebruiken:
 
 * **Interface met aanraakbediening**
-   [De standaardgebruikersinterface](/help/sites-developing/touch-ui-concepts.md) is gebaseerd op de verenigde gebruikerservaring voor de Adobe Marketing Cloud, die de onderliggende technologieën van [Koral UI](/help/sites-developing/touch-ui-concepts.md#coral-ui) en [Granite UI](/help/sites-developing/touch-ui-concepts.md#granite-ui)gebruikt.
-* **Klassieke UI** Gebruikersinterface die op technologie ExtJS wordt gebaseerd die met AEM 6.4 werd verouderd.
+   [De standaardgebruikersinterface ](/help/sites-developing/touch-ui-concepts.md) is gebaseerd op de verenigde gebruikerservaring voor de Adobe Marketing Cloud, die de onderliggende technologieën van  [Coral ](/help/sites-developing/touch-ui-concepts.md#coral-ui) UI [ en ](/help/sites-developing/touch-ui-concepts.md#granite-ui)Granite UIgebruikt.
+* **Klassieke interface**
+UIUser die op technologie ExtJS wordt gebaseerd die met AEM 6.4 werd verouderd.
 
 Zie [UI Interface Recommendations for Customers](/help/sites-deploying/ui-recommendations.md) voor meer informatie.
 
@@ -61,19 +62,19 @@ Daarom zullen we op deze pagina de basisbeginselen van beide, en hoe ze te herke
 
 >[!NOTE]
 >
->Adobe raadt u aan de interface met aanraakbediening te gebruiken om te profiteren van de nieuwste technologie. [AEM Moderniseringsgereedschappen](modernization-tools.md) kunnen de migratie vereenvoudigen.
+>Adobe raadt u aan de interface met aanraakbediening te gebruiken om te profiteren van de nieuwste technologie. [AEM ](modernization-tools.md) Met de Moderniseringsgereedschappen kunt u gemakkelijker migreren.
 
-### Opmaak voor Content Logic en rendering  {#content-logic-and-rendering-markup}
+### Opmaak voor contentlogica en rendering {#content-logic-and-rendering-markup}
 
 Het wordt aanbevolen de code die verantwoordelijk is voor opmaak en rendering, gescheiden te houden van de code die de logica regelt die wordt gebruikt om de inhoud van de component te selecteren.
 
-Deze filosofie wordt gesteund door [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html), een sjabloontaal die doelbewust beperkt is om ervoor te zorgen dat een echte programmeertaal wordt gebruikt om de onderliggende bedrijfslogica te bepalen. Deze (facultatieve) logica wordt aangehaald van HTML met een specifiek bevel. Dit mechanisme markeert de code die voor een bepaalde mening wordt geroepen en, indien vereist, staat specifieke logica voor verschillende meningen van de zelfde component toe.
+Deze filosofie wordt gesteund door [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html), een malplaatjetaal die opzettelijk beperkt is om ervoor te zorgen dat een echte programmeertaal wordt gebruikt om de onderliggende bedrijfslogica te bepalen. Deze (facultatieve) logica wordt aangehaald van HTML met een specifiek bevel. Dit mechanisme markeert de code die voor een bepaalde mening wordt geroepen en, indien vereist, staat specifieke logica voor verschillende meningen van de zelfde component toe.
 
 ### HTL vs JSP {#htl-vs-jsp}
 
 HTML is een HTML-sjabloontaal die is geïntroduceerd met AEM 6.0.
 
-De discussie over het al dan niet gebruiken van [HTML](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) of JSP (de Pagina&#39;s van de Server van Java) wanneer het ontwikkelen van uw eigen componenten zou ongecompliceerd moeten zijn aangezien HTML nu de geadviseerde scripting taal voor AEM is.
+De discussie over het al dan niet gebruiken van [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) of JSP (de Pagina&#39;s van de Server van Java) wanneer het ontwikkelen van uw eigen componenten zou ongecompliceerd moeten zijn aangezien HTML nu de geadviseerde scripting taal voor AEM is.
 
 Zowel HTML als JSP kunnen worden gebruikt voor de ontwikkeling van componenten voor zowel de klassieke als de interface met aanraakbediening. Hoewel er een tendens kan zijn om aan te nemen dat HTML slechts voor aanraking-toegelaten UI en JSP voor klassieke UI is, is dit een misvatting en meer toe te schrijven aan timing. De interface met aanraakbediening en HTML zijn in AEM opgenomen over ongeveer dezelfde periode. Aangezien HTML nu de aanbevolen taal is, wordt het gebruikt voor nieuwe componenten, die meestal voor de interface met aanraakbediening zijn.
 
@@ -90,7 +91,7 @@ Zie (na het lezen van deze pagina) voor het maken van uw eigen componenten voor 
 
 U kunt snel aan de slag door een bestaande component te kopiëren en vervolgens de gewenste wijzigingen aan te brengen. Zie voor meer informatie over het maken van uw eigen componenten en het toevoegen van deze componenten aan het alineasysteem:
 
-* [Componenten](/help/sites-developing/developing-components-samples.md) ontwikkelen (gericht op de interface met aanraakbediening)
+* [Componenten](/help/sites-developing/developing-components-samples.md)  ontwikkelen (gericht op de interface met aanraakbediening)
 
 ### Componenten verplaatsen naar de instantie Publiceren {#moving-components-to-the-publish-instance}
 
@@ -98,18 +99,18 @@ De componenten die inhoud teruggeven moeten op de zelfde AEM instantie worden op
 
 Gebruik de volgende gereedschappen om uw componenten naar de publicatie-instantie te verplaatsen:
 
-* [Gebruik Pakketbeheer](/help/sites-administering/package-manager.md) om uw componenten aan een pakket toe te voegen en deze naar een andere AEM te verplaatsen.
-* [Gebruik het gereedschap](/help/sites-authoring/publishing-pages.md#manage-publication) Boomreplicatie activeren om de componenten te repliceren.
+* [Gebruik Package ](/help/sites-administering/package-manager.md) Managerom uw componenten aan een pakket toe te voegen en hen te bewegen naar een andere AEM instantie.
+* [Gebruik het ](/help/sites-authoring/publishing-pages.md#manage-publication) gereedschap voor boomreplicatie activeren om de componenten te repliceren.
 
 >[!NOTE]
 >
 >Deze mechanismen kunnen ook worden gebruikt om uw component tussen andere instanties, bijvoorbeeld van uw ontwikkeling naar uw testinstantie over te brengen.
 
-### Componenten waarvan u op de hoogte moet zijn vanaf het begin {#components-to-be-aware-of-from-the-start}
+### Onderdelen waarvan kennis moet worden genomen vanaf het begin {#components-to-be-aware-of-from-the-start}
 
 * Pagina:
 
-   * AEM heeft de *paginacomponent* ( `cq:Page`).
+   * AEM heeft de *page* component ( `cq:Page`).
    * Dit is een specifiek type bron dat belangrijk is voor inhoudsbeheer.
       * Een pagina komt overeen met een webpagina die inhoud voor uw website bevat.
 
@@ -118,7 +119,7 @@ Gebruik de volgende gereedschappen om uw componenten naar de publicatie-instanti
    * Het alineasysteem is een belangrijk onderdeel van een website omdat het een lijst met alinea&#39;s beheert. Het wordt gebruikt om de individuele componenten te houden en te structureren die de daadwerkelijke inhoud houden.
    * U kunt alinea&#39;s in het alineasysteem maken, verplaatsen, kopiëren en verwijderen.
    * U kunt ook de componenten selecteren die beschikbaar moeten zijn voor gebruik binnen een specifiek alineasysteem.
-   * Er zijn verschillende alineasystemen beschikbaar binnen een standaardeditor (bijvoorbeeld `parsys`, ` [responsivegrid](/help/sites-authoring/responsive-layout.md)`).
+   * Er zijn verschillende alineasystemen beschikbaar binnen een standaardinstantie (bijvoorbeeld `parsys`, ` [responsivegrid](/help/sites-authoring/responsive-layout.md)`).
 
 ## Structuur {#structure}
 
@@ -185,7 +186,7 @@ De definitie van een component kan als volgt worden uitgesplitst:
       * `thumbnail.png` - Afbeelding die wordt weergegeven als dit onderdeel wordt vermeld in het alineasysteem.
    * Aanraakinterface
 
-      * Zie het pictogram van de sectie [Component in Touch UI](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) voor meer informatie.
+      * Zie de sectie [Component Icon in Touch UI](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) voor meer informatie.
 
 
 * **Vitale onderliggende knooppunten**:
@@ -194,48 +195,48 @@ De definitie van een component kan als volgt worden uitgesplitst:
 
       Opmerking: als de component een dialoogvenster heeft, wordt dit automatisch weergegeven in de browser Components of Sidetrap, zelfs als cq:editConfig niet bestaat.
 
-   * `cq:childEditConfig (cq:EditConfig)` - Bepaalt de UI-aspecten van de auteur voor onderliggende componenten die hun eigen componenten niet definiëren `cq:editConfig`.
+   * `cq:childEditConfig (cq:EditConfig)` - Bepaalt de UI-aspecten van de auteur voor onderliggende componenten die hun eigen componenten niet definiëren  `cq:editConfig`.
    * Interface voor aanraakbediening:
 
-      * `cq:dialog` ( `nt:unstructured`) - Dialoogvenster voor deze component. Definieert de interface waarmee de gebruiker de component kan configureren en/of inhoud kan bewerken.
-      * `cq:design_dialog` ( `nt:unstructured`) - Ontwerpbewerking voor deze component
-   * Klassieke interface:
+      * `cq:dialog` (  `nt:unstructured`) - Dialoogvenster voor deze component. Definieert de interface waarmee de gebruiker de component kan configureren en/of inhoud kan bewerken.
+      * `cq:design_dialog` (  `nt:unstructured`) - Ontwerpbewerking voor deze component
+   * Klassieke gebruikersinterface:
 
-      * `dialog` ( `cq:Dialog`) - Dialoogvenster voor deze component. Definieert de interface waarmee de gebruiker de component kan configureren en/of inhoud kan bewerken.
-      * `design_dialog` ( `cq:Dialog`) - Ontwerpbewerking voor deze component.
+      * `dialog` (  `cq:Dialog`) - Dialoogvenster voor deze component. Definieert de interface waarmee de gebruiker de component kan configureren en/of inhoud kan bewerken.
+      * `design_dialog` (  `cq:Dialog`) - Ontwerpbewerking voor deze component.
 
 
 #### Componentpictogram in aanraakinterface {#component-icon-in-touch-ui}
 
 Het pictogram of de afkorting voor de component wordt gedefinieerd via JCR-eigenschappen van de component wanneer de component door de ontwikkelaar wordt gemaakt. Deze eigenschappen worden in de volgende volgorde geëvalueerd en de eerste geldige gevonden eigenschap wordt gebruikt.
 
-1. `cq:icon` - Tekenreekseigenschap die naar een standaardpictogram in de [Coral UI-bibliotheek](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) verwijst dat in de componentbrowser moet worden weergegeven
+1. `cq:icon` - Tekenreekseigenschap die naar een standaardpictogram in de  [Coral UI-](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) bibliotheek verwijst dat in de componentbrowser wordt weergegeven
    * Gebruik de waarde van het HTML-kenmerk van het pictogram Coral.
 1. `abbreviation` - Tekenreekseigenschap om de afkorting van de componentnaam in de componentbrowser aan te passen
    * De afkorting moet worden beperkt tot twee tekens.
-   * Als u een lege tekenreeks opgeeft, wordt de afkorting van de eerste twee tekens van de `jcr:title` eigenschap opgebouwd.
+   * Als u een lege tekenreeks opgeeft, wordt de afkorting opgebouwd van de eerste twee tekens van de eigenschap `jcr:title`.
       * Bijvoorbeeld &quot;Im&quot; voor &quot;Image&quot;
       * De gelokaliseerde titel wordt gebruikt om de afkorting samen te stellen.
-   * De afkorting wordt alleen omgezet als de component een `abbreviation_commentI18n` eigenschap heeft, die vervolgens als vertaaltip wordt gebruikt.
-1. `cq:icon.png` of `cq:icon.svg` - Pictogram voor deze component, die in componentenbrowser wordt getoond
+   * De afkorting wordt alleen omgezet als de component een eigenschap `abbreviation_commentI18n` heeft, die vervolgens als vertaalhint wordt gebruikt.
+1. `cq:icon.png` of  `cq:icon.svg` - Pictogram voor deze component, die in componentenbrowser wordt getoond
    * 20 x 20 pixels is de grootte van pictogrammen van standaardcomponenten.
       * Grotere pictogrammen worden verkleind (op de client).
    * De aanbevolen kleur is rgb(112, 112, 112) > #707070
    * De achtergrond van standaardcomponentpictogrammen is transparant.
-   * Alleen `.png` en `.svg` bestanden worden ondersteund.
-   * Als u bestanden importeert vanuit het bestandssysteem via de Eclipse-insteekmodule, moeten de bestandsnamen bijvoorbeeld als `_cq_icon.png` of `_cq_icon.svg` als zodanig worden genegeerd.
-   * `.png` heeft voorrang op `.svg` als beide aanwezig zijn
+   * Alleen `.png`- en `.svg`-bestanden worden ondersteund.
+   * Als u bestanden importeert vanuit het bestandssysteem via de Eclipse-insteekmodule, moeten de bestandsnamen bijvoorbeeld als `_cq_icon.png` of `_cq_icon.svg` worden opgenomen.
+   * `.png` heeft voorrang op  `.svg` als beide aanwezig zijn
 
-Als geen van de bovenstaande eigenschappen ( `cq:icon`, `abbreviation`, `cq:icon.png` of `cq:icon.svg`) op de component worden gevonden:
+Als geen van de bovenstaande eigenschappen ( `cq:icon`, `abbreviation`, `cq:icon.png` of `cq:icon.svg`) worden gevonden op de component:
 
-* Het systeem zoekt naar dezelfde eigenschappen op de supercomponenten na de `sling:resourceSuperType` eigenschap.
-* Als er op het niveau van de supercomponent niets of een lege afkorting wordt gevonden, maakt het systeem de afkorting van de eerste letters van de `jcr:title` eigenschap van de huidige component.
+* Het systeem zoekt naar dezelfde eigenschappen op de supercomponenten na de eigenschap `sling:resourceSuperType`.
+* Als er op het niveau van de supercomponent niets of een lege afkorting wordt gevonden, maakt het systeem de afkorting van de eerste letters van de eigenschap `jcr:title` van de huidige component.
 
-Als u de overerving van pictogrammen van supercomponenten wilt annuleren, wordt het standaardgedrag hersteld wanneer u een lege `abbreviation` eigenschap voor de component instelt.
+Als u de overerving van pictogrammen van supercomponenten wilt annuleren, wordt het standaardgedrag hersteld wanneer u een lege eigenschap `abbreviation` voor de component instelt.
 
-In de [componentconsole](/help/sites-authoring/default-components-console.md#component-details) wordt weergegeven hoe het pictogram voor een bepaalde component is gedefinieerd.
+De [Component Console](/help/sites-authoring/default-components-console.md#component-details) toont hoe het pictogram voor een bepaalde component wordt bepaald.
 
-#### Voorbeeld van SVG-pictogram {#svg-icon-example}
+#### SVG-pictogramvoorbeeld {#svg-icon-example}
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -265,12 +266,12 @@ Een component is een knooppunt van het type `cq:Component` en heeft de volgende 
   <tr>
    <td>.<br /> </td>
    <td><code>cq:Component</code></td>
-   <td>Huidige component. Een component is van het knooppunttype <code>cq:Component</code>.<br /> </td>
+   <td>Huidige component. Een component is van knooppunttype <code>cq:Component</code>.<br /> </td>
   </tr>
   <tr>
    <td><code>componentGroup</code></td>
    <td><code>String</code></td>
-   <td>Groep waaronder de component in browser van Componenten (aanraking-toegelaten UI) of Sidetrap (klassieke UI) kan worden geselecteerd.<br /> Een waarde van <code>.hidden</code> wordt gebruikt voor componenten die niet beschikbaar voor selectie van UI zoals de daadwerkelijke paragraafsystemen zijn.</td>
+   <td>Groep waaronder de component in browser van Componenten (aanraking-toegelaten UI) of Sidetrap (klassieke UI) kan worden geselecteerd.<br /> Een waarde van  <code>.hidden</code> wordt gebruikt voor componenten die niet beschikbaar voor selectie van UI zoals de daadwerkelijke paragraafsystemen zijn.</td>
   </tr>
   <tr>
    <td><code>cq:isContainer</code></td>
@@ -300,12 +301,12 @@ Een component is een knooppunt van het type `cq:Component` en heeft de volgende 
   <tr>
    <td><code>design_dialog</code></td>
    <td><code>cq:Dialog </code></td>
-   <td>Definitie van het ontwerpdialoogvenster voor de klassieke gebruikersinterface.<br /> </td>
+   <td>Definitie van de ontwerpdialoog voor klassieke UI.<br /> </td>
   </tr>
   <tr>
    <td><code>dialogPath</code></td>
    <td><code>String</code></td>
-   <td>Pad naar een dialoogvenster om het hoofdlettergebruik te behandelen wanneer de component geen dialoogknooppunt heeft.<br /> </td>
+   <td>Pad naar een dialoogvenster om het geval te behandelen wanneer de component geen dialoogknooppunt heeft.<br /> </td>
   </tr>
   <tr>
    <td> </td>
@@ -315,17 +316,17 @@ Een component is een knooppunt van het type `cq:Component` en heeft de volgende 
   <tr>
    <td><code>cq:cellName</code></td>
    <td><code>String</code></td>
-   <td>Indien ingesteld, wordt deze eigenschap gebruikt als cel-id. Raadpleeg voor meer informatie het artikel in de Knowledge Base <a href="https://helpx.adobe.com/experience-manager/kb/DesigneCellId.html">How are Design Cell IDs built</a>.<br /> </td>
+   <td>Indien ingesteld, wordt deze eigenschap gebruikt als cel-id. Raadpleeg voor meer informatie het volgende artikel in de Knowledge Base: <a href="https://helpx.adobe.com/experience-manager/kb/DesigneCellId.html">How are Design Cell IDs built</a>.<br /> </td>
   </tr>
   <tr>
    <td><code>cq:childEditConfig</code></td>
    <td><code>cq:EditConfig</code></td>
-   <td>Wanneer de component een container is, zoals bijvoorbeeld een alineasysteem, wordt hiermee de bewerkingsconfiguratie van de onderliggende knooppunten geactiveerd.<br /> </td>
+   <td>Wanneer de component een container is, zoals bijvoorbeeld een alineasysteem, drijft dit de bewerkingsconfiguratie van de kindknopen.<br /> </td>
   </tr>
   <tr>
    <td><code>cq:editConfig</code></td>
    <td><code>cq:EditConfig</code></td>
-   <td><a href="#edit-behavior">Configuratie van de component</a>bewerken.<br /> </td>
+   <td><a href="#edit-behavior">Configuratie van de component</a> bewerken.<br /> </td>
   </tr>
   <tr>
    <td><code>cq:htmlTag</code></td>
@@ -345,12 +346,12 @@ Een component is een knooppunt van het type `cq:Component` en heeft de volgende 
   <tr>
    <td><code>cq:templatePath</code></td>
    <td><code>String</code></td>
-   <td>Pad naar een knooppunt dat als inhoudssjabloon moet worden gebruikt wanneer de component vanuit de browser Components of Sidetrap wordt toegevoegd. Dit moet een absoluut pad zijn, niet ten opzichte van het componentknooppunt.<br /> Dit is niet verplicht en volstaat <code>cq:template</code> alleen als u inhoud die al elders beschikbaar is, opnieuw wilt gebruiken.</td>
+   <td>Pad naar een knooppunt dat als inhoudssjabloon moet worden gebruikt wanneer de component vanuit de browser Components of Sidetrap wordt toegevoegd. Dit moet een absoluut pad zijn, niet ten opzichte van het componentknooppunt.<br /> Tenzij u inhoud die al elders beschikbaar is, opnieuw wilt gebruiken, is dit niet vereist en  <code>cq:template</code> is dit voldoende (zie hieronder).</td>
   </tr>
   <tr>
    <td><code>jcr:created</code></td>
    <td><code>Date</code></td>
-   <td>Datum waarop de component is gemaakt.<br /> </td>
+   <td>Aanmaakdatum van de component.<br /> </td>
   </tr>
   <tr>
    <td><code>jcr:description</code></td>
@@ -365,7 +366,7 @@ Een component is een knooppunt van het type `cq:Component` en heeft de volgende 
   <tr>
    <td><code>sling:resourceSuperType</code></td>
    <td><code>String</code></td>
-   <td>Wanneer deze is ingesteld, overerft de component deze component.<br /> </td>
+   <td>Wanneer ingesteld, overerft de component van deze component.<br /> </td>
   </tr>
   <tr>
    <td><code>virtual</code></td>
@@ -390,7 +391,7 @@ Een component is een knooppunt van het type `cq:Component` en heeft de volgende 
  </tbody>
 </table>
 
-Als we naar de **component Text** (een van de versies) kijken, zien we de volgende elementen:
+Als we naar de **component Text** (een van beide versies) kijken, kunnen we de volgende elementen zien:
 
 * HTL ( `/libs/wcm/foundation/components/text`)
 
@@ -408,14 +409,14 @@ Tot de eigenschappen van bijzonder belang behoren:
 
 Onderliggende knooppunten die van bijzonder belang zijn, zijn onder meer:
 
-* `cq:editConfig` ( `cq:EditConfig`) - deze controle heeft betrekking op visuele aspecten; Zo kunt u bijvoorbeeld de vormgeving van een balk of widget definiëren of aangepaste besturingselementen toevoegen
-* `cq:childEditConfig` ( `cq:EditConfig`) - hiermee worden de visuele aspecten geregeld van onderliggende componenten die geen eigen definities hebben
+* `cq:editConfig` (  `cq:EditConfig`) - deze controle heeft betrekking op visuele aspecten; Zo kunt u bijvoorbeeld de vormgeving van een balk of widget definiëren of aangepaste besturingselementen toevoegen
+* `cq:childEditConfig` (  `cq:EditConfig`) - hiermee worden de visuele aspecten geregeld van onderliggende componenten die geen eigen definities hebben
 * Interface voor aanraakbediening:
-   * `cq:dialog` ( `nt:unstructured`) - definieert het dialoogvenster voor het bewerken van de inhoud van deze component
-   * `cq:design_dialog` ( `nt:unstructured`) - geeft de ontwerpbewerkingsopties voor deze component op
-* Klassieke interface:
-   * `dialog` ( `cq:Dialog`) - definieert het dialoogvenster voor het bewerken van de inhoud van deze component (specifiek voor de klassieke UI)
-   * `design_dialog` ( `cq:Dialog`) - geeft de ontwerpbewerkingsopties voor deze component op
+   * `cq:dialog` (  `nt:unstructured`) - definieert het dialoogvenster voor het bewerken van de inhoud van deze component
+   * `cq:design_dialog` (  `nt:unstructured`) - geeft de ontwerpbewerkingsopties voor deze component op
+* Klassieke gebruikersinterface:
+   * `dialog` (  `cq:Dialog`) - definieert het dialoogvenster voor het bewerken van de inhoud van deze component (specifiek voor de klassieke UI)
+   * `design_dialog` (  `cq:Dialog`) - geeft de ontwerpbewerkingsopties voor deze component op
    * `icon.png` - afbeeldingsbestand dat moet worden gebruikt als pictogram voor de component in de Sidetrap
    * `thumbnail.png` - afbeeldingsbestand dat moet worden gebruikt als miniatuur voor de component terwijl het van de Sidetrap wordt gesleept
 
@@ -430,7 +431,7 @@ Dialoogvensterdefinities zijn specifiek voor de gebruikersinterface:
 >[!NOTE]
 >
 >* Voor compatibiliteitsdoeleinden kan de interface met aanraakbediening gebruikmaken van de definitie van een klassiek dialoogvenster UI, wanneer er geen dialoogvenster is gedefinieerd voor de interface met aanraakbediening.
->* Het gereedschap [](/help/sites-developing/dialog-conversion.md) Dialoogomzetting is ook beschikbaar als hulpmiddel bij het uitbreiden/omzetten van componenten waarvoor alleen dialoogvensters zijn gedefinieerd voor de klassieke interface.
+>* Het [Hulpmiddel van de Omzetting van de Dialoog ](/help/sites-developing/dialog-conversion.md) wordt ook verstrekt om u te helpen componenten uitbreiden/omzetten die slechts dialogen hebben die voor klassieke UI worden bepaald.
 
 >
 
@@ -441,10 +442,10 @@ Dialoogvensterdefinities zijn specifiek voor de gebruikersinterface:
       * het dialoogvenster definiëren voor het bewerken van de inhoud van deze component
       * specifiek voor de interface met aanraakbediening
       * worden gedefinieerd met de componenten van Granite UI
-      * hebben een eigenschap `sling:resourceType`, zoals de standaardstructuur voor het verkopen van inhoud
-      * kan een bezit hebben `helpPath` om de van de context afhankelijke hulpbron (absolute of relatieve weg) te bepalen die wordt betreden wanneer het pictogram van de Hulp (te bepalen? pictogram) is geselecteerd.
+      * hebben een eigenschap `sling:resourceType`, als de standaardstructuur voor het splitsen van inhoud
+      * kan een bezit `helpPath` hebben om de contextgevoelige hulpbron (absolute of relatieve weg) te bepalen die wordt betreden wanneer het pictogram van de Hulp (te bepalen ? pictogram) is geselecteerd.
          * Voor componenten buiten het vak verwijst dit vaak naar een pagina in de documentatie.
-         * Als er geen waarde `helpPath` is opgegeven, wordt de standaard-URL (documentatieoverzichtspagina) weergegeven.
+         * Als er geen `helpPath` is opgegeven, wordt de standaard-URL (documentatieoverzichtspagina) weergegeven.
 
    ![chlimage_1-242](assets/chlimage_1-242.png)
 
@@ -457,10 +458,10 @@ Dialoogvensterdefinities zijn specifiek voor de gebruikersinterface:
       * het dialoogvenster definiëren voor het bewerken van de inhoud van deze component
       * specifiek voor de klassieke gebruikersinterface
       * zijn gedefinieerd met ExtJS-widgets
-      * hebben een eigenschap `xtype`die naar ExtJS verwijst
-      * kan een bezit hebben `helpPath` om de van de context afhankelijke hulpbron (absolute of relatieve weg) te bepalen die wordt betreden wanneer de knoop van de **Hulp** wordt geselecteerd.
+      * hebben een eigenschap `xtype`, die verwijst naar ExtJS
+      * kan een bezit `helpPath` hebben om de contextgevoelige hulpmiddel (absolute of relatieve weg) te bepalen die wordt betreden wanneer **Help** knoop wordt geselecteerd.
          * Voor componenten buiten het vak verwijst dit vaak naar een pagina in de documentatie.
-         * Als er geen waarde `helpPath` is opgegeven, wordt de standaard-URL (documentatieoverzichtspagina) weergegeven.
+         * Als er geen `helpPath` is opgegeven, wordt de standaard-URL (documentatieoverzichtspagina) weergegeven.
 
    ![chlimage_1-243](assets/chlimage_1-243.png)
 
@@ -470,15 +471,15 @@ Dialoogvensterdefinities zijn specifiek voor de gebruikersinterface:
 
    In een klassiek dialoogvenster:
 
-   * U kunt het dialoogvenster maken als `cq:Dialog`, dat één tab biedt, zoals in de tekstcomponent, of als u meerdere tabbladen nodig hebt, zoals bij de component textielafbeelding, kan het dialoogvenster worden gedefinieerd als `cq:TabPanel`.
-   * a `cq:WidgetCollection` ( `items`) wordt gebruikt om een basis te verschaffen voor invoervelden ( `cq:Widget`) of andere tabbladen ( `cq:Widget`). Deze hiërarchie kan worden uitgebreid.
+   * u kunt het dialoogvenster maken als `cq:Dialog`, dat één tab biedt - zoals in de tekstcomponent, of als u meerdere tabbladen nodig hebt, zoals bij de component textiel, kan het dialoogvenster worden gedefinieerd als `cq:TabPanel`.
+   * a `cq:WidgetCollection` ( `items`) wordt gebruikt om een basis voor of inputgebieden ( `cq:Widget`) of verdere lusjes ( `cq:Widget`) te verstrekken. Deze hiërarchie kan worden uitgebreid.
 
 
 ### Ontwerpdialoogvensters {#design-dialogs}
 
 De dialoogvensters van het ontwerp zijn zeer gelijkaardig aan de dialogen die worden gebruikt om inhoud uit te geven en te vormen, maar zij verstrekken de interface voor auteurs om ontwerpdetails voor die component te vormen en te verstrekken.
 
-[De dialoogvensters Ontwerpen zijn beschikbaar in de Ontwerpmodus](/help/sites-authoring/default-components-designmode.md), hoewel ze niet nodig zijn voor alle componenten, zoals **Titel** en **Afbeelding** , beide beschikken over ontwerpdialoogvensters, terwijl **Tekst** dat niet doet.
+[De dialoogvensters Ontwerpen zijn beschikbaar in de Ontwerpmodus](/help/sites-authoring/default-components-designmode.md), hoewel ze niet nodig zijn voor alle componenten, zoals  **** Titelformaat en  **** Afbeeldingsbank, maar  **** Text heeft dat niet.
 
 Het ontwerpdialoogvenster voor het alineasysteem (bijvoorbeeld parsys) is een speciaal geval omdat de gebruiker daarmee specifieke andere componenten kan selecteren (vanuit de componentenbrowser of sidekick) op de pagina.
 
@@ -486,8 +487,8 @@ Het ontwerpdialoogvenster voor het alineasysteem (bijvoorbeeld parsys) is een sp
 
 Wanneer een component is gedefinieerd, moet deze beschikbaar worden gesteld voor gebruik. Als u een component beschikbaar wilt maken voor gebruik in een alineasysteem, kunt u:
 
-1. Open de [ontwerpmodus](/help/sites-authoring/default-components-designmode.md) voor een pagina en schakel de vereiste component in.
-1. Voeg de vereiste component(en) onder aan de `components` eigenschap van de sjabloondefinitie toe:
+1. Open [Ontwerpmodus](/help/sites-authoring/default-components-designmode.md) voor een pagina en schakel de vereiste component in.
+1. Voeg de vereiste component(en) toe aan de eigenschap `components` van de sjabloondefinitie onder:
 
    `/etc/designs/<*yourProject*>/jcr:content/<*yourTemplate*>/par`
 
@@ -499,7 +500,7 @@ Wanneer een component is gedefinieerd, moet deze beschikbaar worden gesteld voor
 
 ### Componenten en de inhoud die ze maken {#components-and-the-content-they-create}
 
-Als wij tot een geval van de component van de **Titel** op de pagina leiden en vormen: `<content-path>/Prototype.html`
+Als we een instantie van de component **Title** op de pagina maken en configureren: `<content-path>/Prototype.html`
 
 * Interface met aanraakbediening
 
@@ -513,18 +514,18 @@ Dan kunnen wij de structuur zien van de inhoud die binnen de bewaarplaats wordt 
 
 ![screen_shot_2012-02-13at61405pm](assets/screen_shot_2012-02-13at61405pm.png)
 
-Als u met name de werkelijke tekst voor een **titel** bekijkt:
+Met name als u de werkelijke tekst voor een **Titel** bekijkt:
 
-* de definitie (voor beide UIs) heeft het bezit `name`= `./jcr:title`
+* de definitie (voor beide UI&#39;s) heeft de eigenschap `name`= `./jcr:title`
 
    * `/libs/foundation/components/title/cq:dialog/content/items/column/items/title`
    * `/libs/foundation/components/title/dialog/items/title`
 
-* binnen de inhoud, produceert dit het bezit `jcr:title` van de inhoud van de auteur.
+* binnen de inhoud wordt hiermee de eigenschap `jcr:title` gegenereerd die de inhoud van de auteur bevat.
 
 De gedefinieerde eigenschappen zijn afhankelijk van de afzonderlijke definities. Hoewel ze complexer kunnen zijn dan boven ze liggen, volgen ze nog steeds dezelfde basisbeginselen.
 
-## Componenthiërarchie en Overerving {#component-hierarchy-and-inheritance}
+## Componenthiërarchie en overerving {#component-hierarchy-and-inheritance}
 
 Componenten binnen AEM zijn onderhevig aan drie verschillende hiërarchieën:
 
@@ -542,7 +543,7 @@ Componenten binnen AEM zijn onderhevig aan drie verschillende hiërarchieën:
 
    Zo kunt u bijvoorbeeld configuratie-instellingen voor de bewerkingsbalkknoppen, besturingselementlay-out (bewerkbalken, rollover), dialooglay-out (inline, zwevend) definiëren voor de bovenliggende component en doorgeven aan de onderliggende componenten.
 
-   De montages van de configuratie (verwant met uitgeven functionaliteit) binnen `cq:editConfig` en `cq:childEditConfig` worden verspreid.
+   De montages van de configuratie (met betrekking tot Edit functionaliteit) in `cq:editConfig` en `cq:childEditConfig` worden verspreid.
 
 * **Inclusief hiërarchie**
 
@@ -556,30 +557,30 @@ In deze sectie wordt uitgelegd hoe u het bewerkingsgedrag van een component kunt
 
 De configuratie wordt gebruikt voor zowel de aanraakinterface als de klassieke gebruikersinterface, maar met bepaalde specifieke verschillen.
 
-Het bewerkingsgedrag van een component wordt geconfigureerd door een `cq:editConfig` knooppunt van het type toe te voegen `cq:EditConfig` onder het componentknooppunt (van het type `cq:Component`) en door specifieke eigenschappen en onderliggende knooppunten toe te voegen. De volgende eigenschappen en onderliggende knooppunten zijn beschikbaar:
+Het bewerkingsgedrag van een component wordt gevormd door een `cq:editConfig` knoop van type `cq:EditConfig` onder de componentenknoop (van type `cq:Component`) toe te voegen en door specifieke eigenschappen en kindknopen toe te voegen. De volgende eigenschappen en onderliggende knooppunten zijn beschikbaar:
 
 * [ `cq:editConfig` knoopeigenschappen](#configuring-with-cq-editconfig-properties):
 
-   * `cq:actions` ( `String array`): definieert de handelingen die op de component kunnen worden uitgevoerd.
-   * `cq:layout` ( `String`): : definieert hoe de component wordt bewerkt in de klassieke UI.
-   * `cq:dialogMode` ( `String`): bepaalt hoe de componentendialoog in klassieke UI wordt geopend
+   * `cq:actions` (  `String array`): definieert de handelingen die op de component kunnen worden uitgevoerd.
+   * `cq:layout` (  `String`): : definieert hoe de component wordt bewerkt in de klassieke UI.
+   * `cq:dialogMode` (  `String`): bepaalt hoe de componentendialoog in klassieke UI wordt geopend
 
       * In de interface met aanraakbediening zweven dialoogvensters altijd in de bureaubladmodus en worden ze automatisch geopend als volledig scherm in mobiele apparaten.
-   * `cq:emptyText` ( `String`): Hiermee definieert u tekst die wordt weergegeven wanneer er geen visuele inhoud aanwezig is.
-   * `cq:inherit` ( `Boolean`): definieert of ontbrekende waarden worden overgeërfd van de component waarvan deze waarden overerven.
+   * `cq:emptyText` (  `String`): Hiermee definieert u tekst die wordt weergegeven wanneer er geen visuele inhoud aanwezig is.
+   * `cq:inherit` (  `Boolean`): definieert of ontbrekende waarden worden overgeërfd van de component waarvan deze waarden overerven.
    * `dialogLayout` (String): Hiermee bepaalt u hoe het dialoogvenster moet worden geopend.
 
 
 * [ `cq:editConfig` onderliggende knooppunten](#configuring-with-cq-editconfig-child-nodes):
 
-   * `cq:dropTargets` (knooppunttype `nt:unstructured`): definieert een lijst met neerzetdoelen die een neerzetbewerking kunnen accepteren vanuit een element van de zoeker naar inhoud
+   * `cq:dropTargets` (knooppunttype  `nt:unstructured`): definieert een lijst met neerzetdoelen die een neerzetbewerking kunnen accepteren vanuit een element van de zoeker naar inhoud
 
       * De veelvoudige dalingsdoelstellingen zijn slechts beschikbaar in klassieke UI.
       * In de interface met aanraakbediening is één doel voor neerzetten toegestaan.
-   * `cq:actionConfigs` (knooppunttype `nt:unstructured`): definieert een lijst met nieuwe acties die worden toegevoegd aan de lijst cq:actions.
-   * `cq:formParameters` (knooppunttype `nt:unstructured`): Hiermee definieert u aanvullende parameters die aan het dialoogvenster worden toegevoegd.
-   * `cq:inplaceEditing` (knooppunttype `cq:InplaceEditingConfig`): definieert een configuratie voor lokale bewerking voor de component.
-   * `cq:listeners` (knooppunttype `cq:EditListenersConfig`): Hiermee definieert u wat er gebeurt voordat of nadat een handeling op de component plaatsvindt.
+   * `cq:actionConfigs` (knooppunttype  `nt:unstructured`): definieert een lijst met nieuwe acties die worden toegevoegd aan de lijst cq:actions.
+   * `cq:formParameters` (knooppunttype  `nt:unstructured`): Hiermee definieert u aanvullende parameters die aan het dialoogvenster worden toegevoegd.
+   * `cq:inplaceEditing` (knooppunttype  `cq:InplaceEditingConfig`): definieert een configuratie voor lokale bewerking voor de component.
+   * `cq:listeners` (knooppunttype  `cq:EditListenersConfig`): Hiermee definieert u wat er gebeurt voordat of nadat een handeling op de component plaatsvindt.
 
 
 >[!NOTE]
@@ -600,19 +601,19 @@ Het bewerkingsgedrag van een component wordt geconfigureerd door een `cq:editCon
 
 Er zijn vele bestaande configuraties in de bewaarplaats. U kunt gemakkelijk naar specifieke eigenschappen of kindknopen zoeken:
 
-* Een eigenschap van het `cq:editConfig` knooppunt zoeken, bijvoorbeeld `cq:actions`U kunt het gereedschap Query gebruiken in **CRXDE Lite** en zoeken met de volgende Xpad-queryreeks:
+* Een eigenschap van het knooppunt `cq:editConfig` zoeken, bijvoorbeeld `cq:actions`, kunt u het hulpmiddel van de Vraag in **CRXDE Lite** en onderzoek met het volgende de vraagkoord van XPath gebruiken:
 
    `//element(cq:editConfig, cq:EditConfig)[@cq:actions]`
 
-* U kunt zoeken naar een onderliggende node van `cq:editConfig`bijvoorbeeld `cq:dropTargets`het type `cq:DropTargetConfig`; u kunt het hulpmiddel van de Vraag in** CRXDE Lite** gebruiken en onderzoek met het volgende de vraagkoord van XPath:
+* Als u wilt zoeken naar een onderliggende node van `cq:editConfig`, kunt u bijvoorbeeld zoeken naar `cq:dropTargets`, die van het type `cq:DropTargetConfig` is; u kunt het hulpmiddel van de Vraag in** CRXDE Lite** gebruiken en onderzoek met het volgende de vraagkoord van XPath:
 
    `//element(cq:dropTargets, cq:DropTargetConfig)`
 
-### Configureren met cq:Eigenschappen EditConfig {#configuring-with-cq-editconfig-properties}
+### Configureren met cq:EditConfig-eigenschappen {#configuring-with-cq-editconfig-properties}
 
 ### cq:handelingen {#cq-actions}
 
-De `cq:actions` eigenschap ( `String array`) definieert een of meer handelingen die op de component kunnen worden uitgevoerd. De volgende waarden zijn beschikbaar voor configuratie:
+De eigenschap `cq:actions` ( `String array`) definieert een of meerdere handelingen die op de component kunnen worden uitgevoerd. De volgende waarden zijn beschikbaar voor configuratie:
 
 <table>
  <tbody>
@@ -622,7 +623,7 @@ De `cq:actions` eigenschap ( `String array`) definieert een of meer handelingen 
   </tr>
   <tr>
    <td><code>text:&lt;some text&gt;</code></td>
-   <td>Geeft de statische tekstwaarde &lt;some text&gt;<br /> Alleen zichtbaar in klassieke UI. De interface met aanraakbediening geeft geen handelingen weer in een contextueel menu, dus dit is niet van toepassing.</td>
+   <td>Hiermee geeft u de statische tekstwaarde &lt;some text&gt;<br /> Alleen zichtbaar in klassieke UI. De interface met aanraakbediening geeft geen handelingen weer in een contextueel menu, dus dit is niet van toepassing.</td>
   </tr>
   <tr>
    <td>-</td>
@@ -634,7 +635,7 @@ De `cq:actions` eigenschap ( `String array`) definieert een of meer handelingen 
   </tr>
       <tr>
     <td><code>editannotate</code></td>
-    <td>Hiermee voegt u een knop toe om de component te bewerken en <a href="/help/sites-authoring/annotations.md">annotaties</a>toe te staan.</td>
+    <td>Voegt een knoop toe om de component uit te geven en <a href="/help/sites-authoring/annotations.md">annotaties</a> toe te staan.</td>
    </tr>
   <tr>
    <td><code>delete</code></td>
@@ -671,7 +672,7 @@ De volgende configuratie voegt de tekst &quot;Geërfte Configuraties van het Kad
 
 ### cq:layout (alleen klassieke gebruikersinterface) {#cq-layout-classic-ui-only}
 
-De `cq:layout` eigenschap ( `String`) definieert hoe de component kan worden bewerkt in de klassieke UI. De volgende waarden zijn beschikbaar:
+De eigenschap `cq:layout` ( `String`) definieert hoe de component kan worden bewerkt in de klassieke UI. De volgende waarden zijn beschikbaar:
 
 <table>
  <tbody>
@@ -681,11 +682,11 @@ De `cq:layout` eigenschap ( `String`) definieert hoe de component kan worden bew
   </tr>
   <tr>
    <td><code>rollover</code></td>
-   <td>Standaardwaarde. De componenteditie is via klikken en/of contextmenu toegankelijk "bij muisbeweging over".<br /> Houd er rekening mee dat het bijbehorende clientobject voor geavanceerd gebruik: <code>CQ.wcm.EditRollover</code>.</td>
+   <td>Standaardwaarde. De componenteditie is via klikken en/of contextmenu toegankelijk "bij muisbeweging over".<br /> Houd er rekening mee dat het bijbehorende clientobject voor geavanceerd gebruik:  <code>CQ.wcm.EditRollover</code>.</td>
   </tr>
   <tr>
    <td><code>editbar</code></td>
-   <td>De componenteditie is toegankelijk via een werkbalk.<br /> Houd er rekening mee dat het bijbehorende clientobject voor geavanceerd gebruik: <code>CQ.wcm.EditBar</code>.</td>
+   <td>De componenteditie is toegankelijk via een werkbalk.<br /> Houd er rekening mee dat het bijbehorende clientobject voor geavanceerd gebruik:  <code>CQ.wcm.EditBar</code>.</td>
   </tr>
   <tr>
    <td><code>auto</code></td>
@@ -710,7 +711,7 @@ In de volgende configuratie wordt een bewerkknop toegevoegd aan de bewerkbalk va
 
 ### cq:dialogMode (alleen klassieke gebruikersinterface) {#cq-dialogmode-classic-ui-only}
 
-De component kan worden gekoppeld aan een bewerkingsdialoogvenster. De `cq:dialogMode` eigenschap ( `String`) definieert hoe het componentdialoogvenster wordt geopend in de klassieke UI. De volgende waarden zijn beschikbaar:
+De component kan worden gekoppeld aan een bewerkingsdialoogvenster. De `cq:dialogMode` eigenschap ( `String`) bepaalt hoe het componentdialoogvenster wordt geopend in de klassieke UI. De volgende waarden zijn beschikbaar:
 
 <table>
  <tbody>
@@ -728,7 +729,7 @@ De component kan worden gekoppeld aan een bewerkingsdialoogvenster. De `cq:dialo
   </tr>
   <tr>
    <td><code>auto</code></td>
-   <td>Als de breedte van de component kleiner is dan de <code>CQ.themes.wcm.EditBase.INLINE_MINIMUM_WIDTH</code> waarde aan de clientzijde, zweeft het dialoogvenster, anders wordt het inline weergegeven.</td>
+   <td>Als de breedte van de component kleiner is dan de waarde <code>CQ.themes.wcm.EditBase.INLINE_MINIMUM_WIDTH</code> aan de clientzijde, zweeft het dialoogvenster, anders wordt het inline weergegeven.</td>
   </tr>
  </tbody>
 </table>
@@ -750,26 +751,26 @@ In de volgende configuratie wordt een bewerkbalk gedefinieerd met een bewerkknop
 
 ### cq:emptyText {#cq-emptytext}
 
-De `cq:emptyText` eigenschap ( `String`) definieert tekst die wordt weergegeven wanneer er geen visuele inhoud aanwezig is. De standaardwaarde is: `Drag components or assets here`.
+De eigenschap `cq:emptyText` ( `String`) definieert tekst die wordt weergegeven wanneer er geen visuele inhoud aanwezig is. De standaardwaarde is: `Drag components or assets here`.
 
-### cq:overnemen {#cq-inherit}
+### cq:overerven {#cq-inherit}
 
-De `cq:inherit` eigenschap ( `boolean`) definieert of ontbrekende waarden worden overgeërfd van de component waarvan deze overerft. De standaardwaarde is `false`.
+De eigenschap `cq:inherit` ( `boolean`) definieert of ontbrekende waarden worden overgeërfd van de component waarvan deze overerft. De standaardwaarde is `false`.
 
 ### dialogLayout {#dialoglayout}
 
-De `dialogLayout` eigenschap definieert hoe een dialoogvenster standaard moet worden geopend.
+De eigenschap `dialogLayout` definieert hoe een dialoogvenster standaard moet worden geopend.
 
-* Met de waarde &#39;waarde van&#39; wordt het dialoogvenster op volledig scherm geopend. `fullscreen`
+* De waarde `fullscreen` opent het dialoogvenster op volledig scherm.
 * Een lege waarde of afwezigheid van de eigenschap wordt standaard gebruikt om het dialoogvenster te openen.
 * Merk op dat de gebruiker de volledig-schermwijze binnen de dialoog altijd kan van een knevel voorzien.
 * Is niet van toepassing op de klassieke UI.
 
-### Configureren met cq:Onderliggende knooppunten EditConfig {#configuring-with-cq-editconfig-child-nodes}
+### Configureren met cq:EditConfig Onderliggende knooppunten {#configuring-with-cq-editconfig-child-nodes}
 
 ### cq:dropTargets {#cq-droptargets}
 
-Het `cq:dropTargets` knooppunt (knooppunttype `nt:unstructured`) definieert een lijst met neerzetdoelen die een neerzetbewerking kunnen accepteren vanuit een element dat vanuit de zoekfunctie voor inhoud wordt gesleept. Het dient als inzameling van knopen van type `cq:DropTargetConfig`.
+De `cq:dropTargets` knoop (knooptype `nt:unstructured`) bepaalt een lijst van dalingsdoelstellingen die een daling van een middel kunnen goedkeuren dat van de inhoudszoeker wordt gesleept. Het dient als inzameling van knopen van type `cq:DropTargetConfig`.
 
 >[!NOTE]
 >
@@ -777,18 +778,19 @@ Het `cq:dropTargets` knooppunt (knooppunttype `nt:unstructured`) definieert een 
 >
 >In de interface met aanraakbediening wordt alleen het eerste doel gebruikt.
 
-Elk onderliggend knooppunt van het type `cq:DropTargetConfig` definieert een neerzetdoel in de component. De knooppuntnaam is belangrijk omdat deze in JSP moet worden gebruikt om de CSS-klassenaam te genereren die is toegewezen aan het DOM-element dat het effectieve doel voor neerzetten is:
+Elk onderliggend knooppunt van het type `cq:DropTargetConfig` definieert een neerzetdoel in de component. De knooppuntnaam is belangrijk omdat deze in JSP moet worden gebruikt, als volgt, om de CSS-klassenaam te genereren die is toegewezen aan het DOM-element dat het effectieve doel voor neerzetten is:
 
 ```
 <drop target css class> = <drag and drop prefix> +
  <node name of the drop target in the edit configuration>
 ```
 
-De eigenschap `<drag and drop prefix>` wordt gedefinieerd door de Java-eigenschap:
+`<drag and drop prefix>` wordt bepaald door het bezit van Java:
 
 `com.day.cq.wcm.api.components.DropTarget.CSS_CLASS_PREFIX`.
 
-De klassenaam wordt bijvoorbeeld als volgt gedefinieerd in de JSP van de Download-component( `/libs/foundation/components/download/download.jsp`), waarbij `file` de knooppuntnaam van het neerzetdoel in de bewerkingsconfiguratie van de Download-component is:
+De klassenaam wordt bijvoorbeeld als volgt gedefinieerd in de JSP van de downloadcomponent
+( `/libs/foundation/components/download/download.jsp`), waarbij `file` de knooppuntnaam van het dalingsdoel in uitgeeft configuratie van de component van de Download is:
 
 `String ddClassName = DropTarget.CSS_CLASS_PREFIX + "file";`
 
@@ -815,7 +817,7 @@ Het knooppunt van het type `cq:DropTargetConfig` moet de volgende eigenschappen 
  </tbody>
 </table>
 
-De volgende configuratie wordt genomen van de component van de Download. Het laat om het even welk element (mime-type kan om het even welk koord zijn) van de `media` groep om van de inhoudszoeker in de component worden gelaten vallen. Na het neerzetten `fileReference` wordt de componenteigenschap bijgewerkt:
+De volgende configuratie wordt genomen van de component van de Download. Het laat om het even welk element (mime-type kan om het even welk koord zijn) van `media` groep om van de inhoudszoeker in de component worden gelaten vallen. Na het neerzetten wordt de componenteigenschap `fileReference` bijgewerkt:
 
 ```
     <cq:dropTargets jcr:primaryType="nt:unstructured">
@@ -827,9 +829,9 @@ De volgende configuratie wordt genomen van de component van de Download. Het laa
     </cq:dropTargets>
 ```
 
-### cq:actionConfigs (alleen klassieke gebruikersinterface) {#cq-actionconfigs-classic-ui-only}
+### cq:actionConfigs (Alleen klassieke gebruikersinterface) {#cq-actionconfigs-classic-ui-only}
 
-Het `cq:actionConfigs` knooppunt (knooppunttype `nt:unstructured`) definieert een lijst met nieuwe handelingen die worden toegevoegd aan de lijst die door de `cq:actions` eigenschap wordt gedefinieerd. Elke onderliggende node van `cq:actionConfigs` definieert een nieuwe actie door een widget te definiëren.
+De `cq:actionConfigs` knoop (knooptype `nt:unstructured`) bepaalt een lijst van nieuwe acties die aan de lijst worden toegevoegd die door het `cq:actions` bezit wordt bepaald. Elk onderliggend knooppunt van `cq:actionConfigs` definieert een nieuwe handeling door een widget te definiëren.
 
 In de volgende voorbeeldconfiguratie wordt een nieuwe knop gedefinieerd (met een scheidingsteken voor de klassieke UI):
 
@@ -838,7 +840,7 @@ In de volgende voorbeeldconfiguratie wordt een nieuwe knop gedefinieerd (met een
    * Dit wordt slechts gebruikt door klassieke UI.
    * Deze definitie wordt genegeerd door de interface met aanraakbediening omdat xtypes worden genegeerd (en scheidingstekens zijn niet nodig omdat de werkbalk voor handelingen anders wordt samengesteld in de interface met aanraakbediening).
 
-* een knop met de naam Opmerkingen **** beheren waarmee de handlerfunctie wordt uitgevoerd `CQ_collab_forum_openCollabAdmin()`.
+* een knop met de naam **Opmerkingen beheren** waarmee de handlerfunctie `CQ_collab_forum_openCollabAdmin()` wordt uitgevoerd.
 
 ```
 <jcr:root xmlns:cq="https://www.day.com/jcr/cq/1.0" xmlns:jcr="https://www.jcp.org/jcr/1.0" xmlns:nt="https://www.jcp.org/jcr/nt/1.0"
@@ -858,13 +860,13 @@ In de volgende voorbeeldconfiguratie wordt een nieuwe knop gedefinieerd (met een
 
 >[!NOTE]
 >
->Zie Nieuwe handeling [toevoegen aan een componentwerkbalk](/help/sites-developing/customizing-page-authoring-touch.md#add-new-action-to-a-component-toolbar) als voorbeeld voor de interface met aanraakbediening.
+>Zie [Nieuwe handeling toevoegen aan een componentwerkbalk](/help/sites-developing/customizing-page-authoring-touch.md#add-new-action-to-a-component-toolbar) als voorbeeld voor de interface met aanraakbediening.
 
 ### cq:formParameters {#cq-formparameters}
 
-Het `cq:formParameters` knooppunt (knooppunttype `nt:unstructured`) definieert aanvullende parameters die aan het dialoogvenster worden toegevoegd. Elke eigenschap wordt toegewezen aan een formulierparameter.
+De `cq:formParameters` knoop (knooptype `nt:unstructured`) bepaalt extra parameters die aan de dialoogdoos worden toegevoegd. Elke eigenschap wordt toegewezen aan een formulierparameter.
 
-In de volgende configuratie wordt een parameter met de naam `name`en de waarde `photos/primary` aan het dialoogvenster toegevoegd:
+In de volgende configuratie wordt een parameter met de naam `name` toegevoegd, ingesteld met de waarde `photos/primary` aan het dialoogvenster:
 
 ```
     <cq:formParameters
@@ -874,7 +876,7 @@ In de volgende configuratie wordt een parameter met de naam `name`en de waarde `
 
 ### cq:inplaceEditing {#cq-inplaceediting}
 
-Het `cq:inplaceEditing` knooppunt (knooppunttype `cq:InplaceEditingConfig`) definieert een configuratie voor lokale bewerking voor de component. Deze kan de volgende eigenschappen hebben:
+De `cq:inplaceEditing` knoop (knooptype `cq:InplaceEditingConfig`) bepaalt een plaats het uitgeven configuratie voor de component. Deze kan de volgende eigenschappen hebben:
 
 <table>
  <tbody>
@@ -884,11 +886,11 @@ Het `cq:inplaceEditing` knooppunt (knooppunttype `cq:InplaceEditingConfig`) defi
   </tr>
   <tr>
    <td><code>active</code></td>
-   <td>(<code>boolean</code>) True to enable the place editing of the component.</td>
+   <td>(<code>boolean</code>) Waar om op plaats het uitgeven van de component toe te laten.</td>
   </tr>
   <tr>
    <td><code>configPath</code></td>
-   <td>(<code>String</code>) Pad van de editorconfiguratie. De configuratie kan door een configuratieknooppunt worden gespecificeerd.</td>
+   <td>(<code>String</code>) Weg van de redacteursconfiguratie. De configuratie kan door een configuratieknooppunt worden gespecificeerd.</td>
   </tr>
   <tr>
    <td><code>editorType</code></td>
@@ -902,7 +904,7 @@ Het `cq:inplaceEditing` knooppunt (knooppunttype `cq:InplaceEditingConfig`) defi
  </tbody>
 </table>
 
-In de volgende configuratie wordt het op plaats bewerken van de component ingeschakeld en wordt het editortype gedefinieerd `plaintext` :
+In de volgende configuratie wordt het op plaats bewerken van de component ingeschakeld en wordt `plaintext` gedefinieerd als het editortype:
 
 ```
     <cq:inplaceEditing
@@ -913,7 +915,7 @@ In de volgende configuratie wordt het op plaats bewerken van de component ingesc
 
 ### cq:listeners {#cq-listeners}
 
-Het `cq:listeners` knooppunt (knooppunttype `cq:EditListenersConfig`) definieert wat er voor of na een handeling op de component gebeurt. In de volgende tabel worden de mogelijke eigenschappen gedefinieerd.
+De `cq:listeners` knoop (knooptype `cq:EditListenersConfig`) bepaalt wat vóór of na een actie op de component gebeurt. In de volgende tabel worden de mogelijke eigenschappen gedefinieerd.
 
 <table>
  <tbody>
@@ -924,7 +926,7 @@ Het `cq:listeners` knooppunt (knooppunttype `cq:EditListenersConfig`) definieert
   </tr>
   <tr>
    <td><code>beforedelete</code></td>
-   <td>De handler wordt geactiveerd voordat de component wordt verwijderd.<br /> </td>
+   <td>De manager wordt teweeggebracht alvorens de component wordt verwijderd.<br /> </td>
    <td> </td>
   </tr>
   <tr>
@@ -987,7 +989,7 @@ Het `cq:listeners` knooppunt (knooppunttype `cq:EditListenersConfig`) definieert
 
 >[!NOTE]
 >
->De `REFRESH_INSERTED` en de `REFRESH_SELFMOVED` managers zijn slechts beschikbaar in klassieke UI.
+>De handlers `REFRESH_INSERTED` en `REFRESH_SELFMOVED` zijn slechts beschikbaar in klassieke UI.
 
 >[!NOTE]
 >
@@ -995,9 +997,9 @@ Het `cq:listeners` knooppunt (knooppunttype `cq:EditListenersConfig`) definieert
 
 >[!NOTE]
 >
->In het geval van geneste componenten gelden er bepaalde beperkingen voor handelingen die zijn gedefinieerd als eigenschappen op het `cq:listeners` knooppunt:
+>In het geval van geneste componenten gelden bepaalde beperkingen voor handelingen die zijn gedefinieerd als eigenschappen op het knooppunt `cq:listeners`:
 >
->* Voor geneste componenten *moeten* de waarden van de volgende eigenschappen `REFRESH_PAGE`: >
+>* Voor geneste componenten zijn de waarden van de volgende eigenschappen *must* `REFRESH_PAGE`: >
 >  * `aftermove`
 >  * `aftercopy`
 
@@ -1006,13 +1008,13 @@ De gebeurtenishandler kan worden geïmplementeerd met een aangepaste implementat
 
 `afteredit = "project.customerAction"`
 
-Het volgende voorbeeld is gelijk aan de `REFRESH_INSERTED` configuratie:
+Het volgende voorbeeld is gelijkwaardig aan de `REFRESH_INSERTED` configuratie:
 
 `afterinsert="function(path, definition) { this.refreshCreated(path, definition); }"`
 
 >[!NOTE]
 >
->Voor klassieke UI, om te zien welke parameters in de managers kunnen worden gebruikt, verwijs naar de `before<action>` en `after<action>` gebeurtenissectie van de [ `CQ.wcm.EditBar`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditBar) en [ `CQ.wcm.EditRollover`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditRollover) widgetdocumentatie.
+>Voor de klassieke UI, om te zien welke parameters in de managers kunnen worden gebruikt, verwijs naar `before<action>` en `after<action>` gebeurtenissectie van [ `CQ.wcm.EditBar`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditBar) en [ `CQ.wcm.EditRollover`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditRollover)> widget documentatie.
 
 Met de volgende configuratie wordt de pagina vernieuwd nadat de component is verwijderd, bewerkt, ingevoegd of verplaatst:
 

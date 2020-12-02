@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 797a6f3b-d2a8-4835-81ab-a1602677417f
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '188'
+ht-degree: 0%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 >[!NOTE]
 >
->Als de code op deze bundels vertrouwt, neemt u contact op met de Technische Ondersteuning van Adobe en vraagt u om een compatibiliteitspakket voor het desbetreffende gebied.
+>Als uw code op deze bundels vertrouwt, zorg ervoor u Adobe Steun contacteert en om een verenigbaarheidspakket voor het beïnvloede gebied vraagt.
 
-Bij de upgrade naar AEM 6.3 worden de volgende bundels automatisch verwijderd, afhankelijk van welke AEM-versie de upgrade is uitgevoerd:
+Bij de upgrade naar AEM 6.3 worden de volgende bundels automatisch verwijderd, afhankelijk van AEM versie die de upgrade is uitgevoerd:
 
 **AEM 6.1:**
 

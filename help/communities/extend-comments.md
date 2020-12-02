@@ -18,15 +18,15 @@ ht-degree: 0%
 ---
 
 
-# Component Opmerkingen uitbreiden  {#extend-comments-component}
+# Component {#extend-comments-component} voor opmerkingen uitbreiden
 
-Het is de bedoeling om een standaardcomponent [uit te breiden](client-customize.md#extensions) om de weergave of het gedrag van een component voor specifieke toepassingen te wijzigen.
+De bedoeling van [het uitbreiden van](client-customize.md#extensions) een standaardcomponent is de verschijning of het gedrag van een component voor specifiek gebruik te veranderen.
 
 Het pad naar de component is uniek en verwijst naar de standaardcomponent als een superbrontype. Er is minder risico omdat het bereik beperkt is in vergelijking met het mondiale bereik van een componentoverlay.
 
 >[!NOTE]
 >
->Het uitbreiden van een [overlappende](client-customize.md#overlays) component wordt niet ondersteund.
+>Het uitbreiden van een [overlay](client-customize.md#overlays) component wordt niet gesteund.
 
 ## Voorbeeld {#example}
 
@@ -34,7 +34,7 @@ Stel dat de koptekst van de commentaarcomponent op de ene site van de AEM instan
 
 Om deze oplossing uit te voeren, creeer een nieuwe component die (met voeten treedt) bestaande uitbreidt en het manuscript van Handlebars wijzigt. Het gebied van de site dat de nieuwe opmerkingen gebruikt, kan de uitgebreide versie gebruiken, terwijl de sites die de standaardweergave gebruiken, ongewijzigd blijven.
 
-De commentaarcomponent is eigenlijk één van twee componenten die uit het commentaarsysteem bestaan. Er zijn dus twee onderdelen die moeten worden uitgebreid: *opmerkingen* en *opmerkingen*. Het script dat moet worden bewerkt, bevindt zich in het *bestand van de component* Commentaar `header.hbs` , terwijl de bovenliggende ** commentaarcomponent (het opmerkingensysteem) de component is die een auteur daadwerkelijk aan de pagina toevoegt.
+De commentaarcomponent is eigenlijk één van twee componenten die uit het commentaarsysteem bestaan. Er zijn dus twee onderdelen die moeten worden uitgebreid: *opmerkingen* en *commentaar*. Het script dat moet worden bewerkt, bevindt zich in het *comment*-bestand van de component, terwijl de bovenliggende *comments*-component (het opmerkingensysteem) is wat een auteur daadwerkelijk aan de pagina toevoegt.`header.hbs`
 
 Als u opmerkingen wilt uitbreiden, moet u:
 

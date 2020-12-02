@@ -1,8 +1,8 @@
 ---
-title: Functies voor zoeken en promoten aan uw pagina toevoegen
-seo-title: Functies voor zoeken en promoten aan uw pagina toevoegen
-description: Door de zoek&promotiefuncties van uw website te integreren, kunt u de componenten Zoeken&Promoten gebruiken om functies aan uw pagina's toe te voegen, zoals trefwoordzoekopdracht, verfijning van zoekresultaten op de pagina en banners.
-seo-description: Door de zoek&promotiefuncties van uw website te integreren, kunt u de componenten Zoeken&Promoten gebruiken om functies aan uw pagina's toe te voegen, zoals trefwoordzoekopdracht, verfijning van zoekresultaten op de pagina en banners.
+title: Search&Promote toevoegen aan uw pagina
+seo-title: Search&Promote toevoegen aan uw pagina
+description: Als u de mogelijkheden van Search&Promote in uw website integreert, kunt u de Search&Promote-componenten gebruiken om functies aan uw pagina's toe te voegen, zoals zoeken met trefwoorden, het verfijnen van zoekresultaten en het verfijnen van zoekresultaten.
+seo-description: Als u de mogelijkheden van Search&Promote in uw website integreert, kunt u de Search&Promote-componenten gebruiken om functies aan uw pagina's toe te voegen, zoals zoeken met trefwoorden, het verfijnen van zoekresultaten en het verfijnen van zoekresultaten.
 uuid: 8cd3c143-cb0b-4eb0-931d-9d447ea3c950
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,32 +12,35 @@ discoiquuid: 968b9131-ccdf-4856-b504-bc1a44974980
 docset: aem65
 translation-type: tm+mt
 source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+workflow-type: tm+mt
+source-wordcount: '1241'
+ht-degree: 0%
 
 ---
 
 
-# Functies voor zoeken en promoten aan uw pagina toevoegen{#adding-search-promote-features-to-your-page}
+# Search&amp;Promote toevoegen aan uw pagina{#adding-search-promote-features-to-your-page}
 
-Met de componenten Zoeken&amp;promoveren kunt u de volgende functies aan uw pagina&#39;s toevoegen om de zoek- en promotiefuncties in uw website te integreren:
+Als u de mogelijkheden van Search&amp;Promote wilt integreren in uw website, gebruikt u de onderdelen Search&amp;Promote om de volgende functies aan uw pagina&#39;s toe te voegen:
 
 * Trefwoordzoekopdracht
 * Pagina met zoekresultaten
 * Zoekverfijning
 * Banners
 
-U kunt de zoek&amp;promoemogelijkheden alleen gebruiken als uw AEM-beheerder deze heeft ingeschakeld. Zie [Integreren met Adobe Search&amp;Promote](/help/sites-administering/search-and-promote.md).
+Merk op dat u de mogelijkheden van de Search&amp;Promote slechts kunt gebruiken als uw AEM beheerder hen heeft toegelaten. Zie [Integreren met Adobe Search&amp;Promote](/help/sites-administering/search-and-promote.md).
 
-Facetten worden geconfigureerd op de zoek&amp;promoeserver, net als de informatie die elke component verschaft. De volgende tabel bevat een korte beschrijving van elke component. De volgende secties verstrekken gedetailleerde informatie over hun gebruik.
+Facetten worden gevormd op de server van de Search&amp;Promote, zoals de informatie die elke component verstrekt. De volgende tabel bevat een korte beschrijving van elke component. De volgende secties verstrekken gedetailleerde informatie over hun gebruik.
 
 <table>
  <tbody>
   <tr>
-   <th>&amp;Onderdeel opwaarderen</th>
+   <th>component Search&amp;Promote</th>
    <th>Beschrijving</th>
   </tr>
   <tr>
    <td>Banners</td>
-   <td>Hiermee geeft u banneradvertenties weer. Banners worden geselecteerd op basis van gegevens die via Zoeken en bevorderen zijn verzameld.<br /> </td>
+   <td>Hiermee geeft u banneradvertenties weer. Banners worden geselecteerd op basis van gegevens die via Search&amp;Promote zijn verzameld.<br /> </td>
   </tr>
   <tr>
    <td>Broodkruimels</td>
@@ -70,11 +73,11 @@ Facetten worden geconfigureerd op de zoek&amp;promoeserver, net als de informati
  </tbody>
 </table>
 
-## De pagina met zoekresultaten maken {#creating-the-search-results-page}
+## De pagina {#creating-the-search-results-page} met zoekresultaten maken
 
-Gebruik de console van Websites WCM om een pagina tot stand te brengen voor het tonen van onderzoeksresultaten. De resultaten van een zoekopdracht vanuit een zoekcomponent kunnen op deze pagina worden weergegeven als deze dezelfde service Zoeken en bevorderen gebruikt.
+Gebruik de console van Websites WCM om een pagina tot stand te brengen voor het tonen van onderzoeksresultaten. De resultaten van een zoekopdracht vanuit een zoekcomponent kunnen op deze pagina worden weergegeven als deze dezelfde Search&amp;Promote-service gebruikt.
 
-De componenten waarmee gebruikers zoekresultaten kunnen bekijken, zijn Resultaten en Paginering. De component **Resultaten** heeft geen configureerbare eigenschappen in de modus Bewerken of Ontwerpen. De component Resultaten geeft alleen de zoekresultaten weer, die koppelingen naar andere pagina&#39;s bevatten, en geeft het aantal resultaten voor het trefwoord Zoeken weer.
+De componenten waarmee gebruikers zoekresultaten kunnen bekijken, zijn Resultaten en Paginering. De component **Results** heeft geen configureerbare eigenschappen in de modus Bewerken of Ontwerpen. De component Resultaten geeft alleen de zoekresultaten weer, die koppelingen naar andere pagina&#39;s bevatten, en geeft het aantal resultaten voor het trefwoord Zoeken weer.
 
 ![srchresultscomp](assets/srchresultscomp.png)
 
@@ -89,35 +92,35 @@ U kunt de volgende componenteneigenschappen op Edit wijze vormen om runtime gedr
 * Vorige/volgende verbergen: Hiermee bepaalt u of gebruikers door resultatenpagina&#39;s kunnen navigeren ten opzichte van de huidige pagina.
 * Alle weergaven verbergen: Hiermee bepaalt u of de gebruiker alle zoekresultaten op één pagina kan samenvoegen. Gewoonlijk maakt het verstrekken van gepagineerde gegevens efficiënter gebruik van servermiddelen. Selecteer deze optie als u wilt voorkomen dat grote gegevenssets in één antwoordbericht worden overgedragen.
 
-### Filteren van resultaten op facetten inschakelen {#enabling-the-filtering-of-results-by-facets}
+### Filteren van resultaten op facetten {#enabling-the-filtering-of-results-by-facets} inschakelen
 
-U kunt gebruikers toestaan om onderzoeksresultaten door facetten te filtreren. Met de **componenten Facet** List, **Dropdown Facet** en Facet **Link List** kunnen gebruikers een of meer facetten selecteren om te filteren. Wanneer u deze componenten gebruikt, moet u ook de **component Breadcrubs** opnemen. Broodkruimels geven de huidige filters aan die worden gebruikt.
+U kunt gebruikers toestaan om onderzoeksresultaten door facetten te filtreren. Met de componenten **Checkbox List Facet**, **Dropdown Facet** en **Link List Facet** kunnen gebruikers een of meer facetten selecteren om te filteren. Wanneer u deze componenten gebruikt, moet u ook de component **Breadcrumbs** opnemen. Broodkruimels geven de huidige filters aan die worden gebruikt.
 
-De componenten **van de Lijst van de Selectievakjes Facet**, **Dropdown Facet**, en van de Facet van de Lijst van de **Verbinding elk hebben de volgende eigenschappen die u op** Edit **** wijze vormt:
+De **CheckBox List Facet**, **Dropdown Facet** en **Link List Facet** componenten hebben elk de volgende eigenschappen die u in **Edit** modus configureert:
 
 * **Naam** facet: De naam van het facet dat voor filters wordt gebruikt.
 
-De component **Lijst van facetten** van de Checkbox toont een lijst van facetten met een begeleidende checkbox. Gebruik een facet **Lijst** selectievakje zodat gebruikers een subset van resultaten kunnen weergeven die items van meerdere facetten bevatten. Het **merk** is bijvoorbeeld geschikt omdat meerdere merken hetzelfde type product leveren.
+De **component Checkbox List Facet** geeft een lijst met facetten weer met een bijbehorend selectievakje. Gebruik een **Selectievakjeslijstfacet** zodat gebruikers een subset van resultaten kunnen weergeven die items van meerdere facetten bevatten. Het facet **Merk** is bijvoorbeeld geschikt omdat meerdere merken hetzelfde type product leveren.
 
 Er wordt een selectievakje weergegeven voor elk facet dat aan een zoekresultaat is gekoppeld. Wanneer een gebruiker een selectievakje selecteert, wordt de pagina opnieuw geladen met een bijgewerkte resultatenset. Alle selectievakjes blijven op de pagina aanwezig, zodat klanten op elk gewenst moment facetten aan het filter kunnen toevoegen of eruit kunnen verwijderen:
 
 ![sandpcheckboxComp](assets/sandpcheckboxcomp.png)
 
-Met de **component DropdownFacet** kunnen klanten een facetitem in een vervolgkeuzelijst selecteren. Deze component is handig wanneer u wilt dat klanten zich tegelijk op één facetitem richten. Bijvoorbeeld, is het facet van het Departement aangewezen voor het toelaten van klanten om productonderzoeken door geslacht te beperken. John zoekt naar *spijkerbroek* en filtert vervolgens op de afdeling Mannen.
+Met de component **Dropdown Facet** kunnen klanten een facetitem in een vervolgkeuzelijst selecteren. Deze component is handig wanneer u wilt dat klanten zich tegelijk op één facetitem richten. Bijvoorbeeld, is het facet van het Departement aangewezen voor het toelaten van klanten om productonderzoeken door geslacht te beperken. John zoekt naar *jeans* en filtert dan op de afdeling van Mannen.
 
 De vervolgkeuzelijst wordt gevuld met de facetten die aan alle zoekresultaten zijn gekoppeld. Als u een item in de vervolgkeuzelijst selecteert, wordt de pagina opnieuw geladen met een bijgewerkte resultatenset. De punten in de drop-down lijst veranderen niet zodat de klanten van facet aan facet op elk ogenblik kunnen schakelen.
 
-![sandpdropdownafdeling](assets/sandpdropdowndepartment.png)
+![sandpdropdowndepartement](assets/sandpdropdowndepartment.png)
 
-De component van de Facet van de Lijst van de **Verbinding** laat klanten toe om hun nadruk op punten geleidelijk te beperken die onder veelvoudige facetleden of facetten worden gecategoriseerd.
+Met de component **Link List Facet** kunnen klanten hun focus geleidelijk beperken tot items die onder meerdere facetleden of facetten zijn gecategoriseerd.
 
 De leden van Facet verschijnen als lijst van verbindingen. De tekst van elke koppeling is de naam van een facetlid dat is gekoppeld aan de huidige zoekresultaten. Wanneer een klant op een facetkoppeling klikt, wordt de pagina opnieuw geladen en wordt een subset van de zoekresultaten weergegeven. De lijst met koppelingen wordt dienovereenkomstig bijgewerkt, zodat de focus nog kleiner wordt.
 
 ![sandplinklistcomp](assets/sandplinklistcomp.png)
 
-De koppelingen in de lijst veranderen ook wanneer een filter wordt toegepast van een ander type van de component Zoeken&amp;Bevorderen. Het gebruik van meerdere typen filtercomponenten kan effectieve filtercombinaties opleveren.
+De koppelingen in de lijst veranderen ook wanneer een filter wordt toegepast vanuit een ander type Search&amp;Promote-component. Het gebruik van meerdere typen filtercomponenten kan effectieve filtercombinaties opleveren.
 
-Met de **component Breadcrumbs** kunnen klanten de filters zien die momenteel op zoekresultaten worden toegepast, in de volgorde waarin ze zijn toegepast. Klanten kunnen op de items in de broodkruimel klikken om terug te keren naar die filtercombinatie.
+Met de component **Breadcrumbs** kunnen klanten de filters zien die momenteel worden toegepast op zoekresultaten, in de volgorde waarin ze zijn toegepast. Klanten kunnen op de items in de broodkruimel klikken om terug te keren naar die filtercombinatie.
 
 ![sandpbreadcrumbcomp](assets/sandpbreadcrumbcomp.png)
 
@@ -126,7 +129,7 @@ U kunt de volgende eigenschappen voor Breadcrubs op Edit wijze vormen om de blik
 * Scheidingsteken: Definieer de teken- of tekentekenreeks die moet fungeren als scheidingsteken tussen elke breadcrumb. In het veld Scheidingsteken kan elke tekenreeks als invoer worden geaccepteerd. De standaardinstelling is: &quot;>&quot; (zonder aanhalingstekens)
 * Scheidingsteken navolgende: Definieer een teken- of tekentekenreeks die aan het einde van de breadcrumbs moet worden weergegeven. In het veld Scheidingsteken volgteken wordt elke tekenreeks als invoer geaccepteerd. De standaardinstelling voor deze waarde is *blank* (er wordt dus niets weergegeven aan het einde van de regel voor broodkruimels)
 
-### Zoekvakken toevoegen {#adding-search-boxes}
+### Zoekvakken {#adding-search-boxes} toevoegen
 
 Met de component Zoeken kunnen klanten trefwoordzoekopdrachten uitvoeren. Voeg componenten van het Onderzoek aan elke pagina toe waar u toegang tot het zoeken wilt verlenen.
 
@@ -137,14 +140,14 @@ Configureer de volgende eigenschappen in de modus Bewerken om het runtimegedrag 
 
 ![zandzoekopdracht](assets/sandpsearchcomp.png)
 
-### banners toevoegen {#adding-banners}
+### banners {#adding-banners} toevoegen
 
-De component Banners geeft banneradvertenties weer volgens de zoek&amp;promotiezoekopdrachten van de klant. De logica op de zoek&amp;vervangingsserver bepaalt welke banner moet worden weergegeven. Een zoekopdracht naar spijkerbroeken kan bijvoorbeeld tot gevolg hebben dat een modebanner wordt weergegeven. Door te filteren op de afdeling Mannen kan de keuze van de banner verder worden verfijnd.
+De component Banners geeft banneradvertenties weer op basis van de zoekopdrachten van de Search&amp;Promote van de klant. De logica op de zoek&amp;vervangingsserver bepaalt welke banner moet worden weergegeven. Een zoekopdracht op spijkerbroeken kan bijvoorbeeld tot gevolg hebben dat een modebanner wordt weergegeven. Door te filteren op de afdeling Mannen kan de keuze van de banner verder worden verfijnd.
 
-De component Banners biedt een configureerbare eigenschap met de naam Bannergebied. Selecteer in de modus Bewerken een van de eigenschapswaarden om op te geven hoe de banner wordt weergegeven. De service Zoeken en bevorderen bepaalt de lijst met waarden die u kunt selecteren.
+De component Banners biedt een configureerbare eigenschap met de naam Bannergebied. Selecteer in de modus Bewerken een van de eigenschapswaarden om op te geven hoe de banner wordt weergegeven. De service Search&amp;Promote bepaalt de lijst met waarden die u kunt selecteren.
 
-### Voorbeeld van zoek&amp;promotiezoekpagina {#example-search-promote-search-page}
+### Voorbeeld van Search&amp;Promote-zoekpagina {#example-search-promote-search-page}
 
-In dit diagram worden de componenten weergegeven die aan een pagina worden toegevoegd om de onderstaande pagina met volledig functionele zoekresultaten te maken.
+Dit diagram toont de componenten die aan een pagina worden toegevoegd om tot de volledig-functionele hieronder Search&amp;Promote resultatenpagina te leiden.
 
-![1328213789109](assets/1328213789109.png) , ![sandbox-voorbeeld](assets/sandppageexample.png)
+![1328213789109](assets/1328213789109.png) ![sandbox-voorbeeld](assets/sandppageexample.png)

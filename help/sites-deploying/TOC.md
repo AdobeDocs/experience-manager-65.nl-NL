@@ -15,7 +15,7 @@ ht-degree: 1%
 ---
 
 
-# AEM 6.5 Gebruikershandleiding implementeren {#deploying}
+# AEM 6.5 Handboek {#deploying} implementeren
 
 + [Gebruikershandleiding implementeren](home.md)
 + Inleiding tot het AEM Platform {#introduction}
@@ -23,7 +23,7 @@ ht-degree: 1%
    + [Technische vereisten](technical-requirements.md)
    + [Opslagelementen in AEM 6.5](storage-elements-in-aem-6.md)
    + [AEM met MongoDB](aem-with-mongodb.md)
-+ AEM implementeren {#deploying}
++ AEM {#deploying} implementeren
    + [Implementeren en onderhouden](deploy.md)
    + [Aanbevolen implementaties](recommended-deploys.md)
    + [Installeren van toepassingsserver](application-server-install.md)
@@ -39,7 +39,7 @@ ht-degree: 1%
    + [Probleemoplossing voor Oak-indexen](troubleshooting-oak-indexes.md)
    + [Opteren in verzameling van samengevoegde verbruiksstatistieken](opt-in-aggregated-usage-statistics.md)
    + [Problemen oplossen](troubleshooting.md)
-+ AEM configureren {#configuring}
++ AEM {#configuring} configureren
    + [Basisconfiguratieconcepten](configuring.md)
    + [Logboekregistratie](configure-logging.md)
    + [OSGi configureren](configuring-osgi.md)
@@ -79,7 +79,7 @@ ht-degree: 1%
    + [Code en aanpassingen bijwerken](upgrading-code-and-customizations.md)
    + [Upgradestappen voor installatie van toepassingsservers](app-server-upgrade.md)
    + [Lijst met verouderde bundels die na de upgrade zijn verwijderd](obsolete-bundles.md)
-+ Repositoregeling {#restructuring}
++ Herstructurering van de opslagplaats {#restructuring}
    + [Herstructurering van de depositaris in AEM 6.5](repository-restructuring.md)
    + [Herstructurering van de gemeenschappelijke opslagplaats in AEM 6.5](all-repository-restructuring-in-aem-6-5.md)
    + [Sites Repositoregeling Herstructurering AEM 6.5](sites-repository-restructuring-in-aem-6-5.md)

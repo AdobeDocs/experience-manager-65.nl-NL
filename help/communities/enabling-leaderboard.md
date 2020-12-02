@@ -23,40 +23,40 @@ ht-degree: 0%
 
 ## Inleiding {#introduction}
 
-De `Leaderboard` component biedt de mogelijkheid om inzicht te krijgen in de manier waarop leden binnen de gemeenschap met elkaar communiceren door leden te rangschikken op basis van verdiende punten (basisscore) of hun expertise (geavanceerde scoring).
+De `Leaderboard` component verstrekt de capaciteit om een idee van te verkrijgen hoe de leden binnen de gemeenschap interactie door leden volgens verdiende punten (basis het scoren) of hun deskundigheid (geavanceerde het scoren) te rangschikken.
 
-Voordat de leaderboard-component op een pagina wordt geplaatst, moet u [Communities Scoring and Badges](/help/communities/implementing-scoring.md)configureren.
+Voordat de leaderboard-component op een pagina wordt opgenomen, moet u [Communityscores en Badges](/help/communities/implementing-scoring.md) configureren.
 
 In dit gedeelte van de documentatie wordt het volgende beschreven:
 
-* De `Leaderboard` component toevoegen aan een [communitysite](/help/communities/overview.md#community-sites).
-* De montages van de configuratie voor de `Leaderboard` component.
+* De `Leaderboard`-component toevoegen aan een [communitysite](/help/communities/overview.md#community-sites).
+* De montages van de configuratie voor `Leaderboard` component.
 
-### Een Leaderboard toevoegen aan een pagina {#adding-a-leaderboard-to-a-page}
+### Leaderboard toevoegen aan een pagina {#adding-a-leaderboard-to-a-page}
 
-Als u een `Leaderboard` component aan een pagina wilt toevoegen in de ontwerpmodus, zoekt u de component
+Als u een `Leaderboard`-component wilt toevoegen aan een pagina in de ontwerpmodus, zoekt u de component
 
 * `Communities / Leaderboard`
 
 en sleep het naar de juiste plaats op een pagina.
 
-Ga voor de benodigde informatie naar [Community Components Basics](/help/communities/basics.md).
+Voor noodzakelijke informatie, bezoek [de Grondbeginselen van Componenten van Gemeenschappen](/help/communities/basics.md).
 
 Wanneer de component voor het eerst op een pagina van een communitysite wordt geplaatst, ziet deze er zo uit:
 
 ![chlimage_1-8](assets/chlimage_1-8.png)
 
-### Leaderboard configureren {#configuring-leaderboard}
+### Leaderboard {#configuring-leaderboard} configureren
 
-Selecteer de geplaatste `Leaderboard` component die u wilt openen en selecteer het `Configure` pictogram waarmee het dialoogvenster Bewerken wordt geopend.
+Selecteer de geplaatste `Leaderboard` component en selecteer `Configure` pictogram dat het Edit dialoog opent.
 
 ![chlimage_1-9](assets/chlimage_1-9.png)
 
 ![chlimage_1-10](assets/chlimage_1-10.png)
 
-#### Het tabblad Instellingen {#settings-tab}
+#### Tabblad Instellingen {#settings-tab}
 
-Geef onder het **[!UICONTROL Settings]** tabblad op welke informatie met betrekking tot het lid wordt weergegeven:
+Geef onder het tabblad **[!UICONTROL Settings]** op welke informatie met betrekking tot het lid wordt weergegeven:
 
 * **Weergavenaam**
 
@@ -80,7 +80,7 @@ De optie Standaard is uitgeschakeld.
 
 #### Regels, tabblad {#rules-tab}
 
-Op het tabblad **Regels** vindt u de site van de gebruikersgemeenschap en de bijbehorende regels voor scoring en badging
+Onder het **Regels** lusje, de communautaire plaats, en zijn het schrapen en het badgen regels
 
 * **Locatie van regel**
 
@@ -117,12 +117,12 @@ Configuratie van de component Leaderboard:
 
    * Locatie van regel = `/content/sites/<site name>/jcr:content`
    * Scoreregel = `/libs/settings/community/scoring/rules/forums-scoring`
-   * Badgingregel = `/libs/settings/community/badging/rules//reference-badging`
+   * Badging Rule = `/libs/settings/community/badging/rules//reference-badging`
    * Weergavelimiet = `10`
 
 ![chlimage_1-11](assets/chlimage_1-11.png)
 
-### Voorbeeld: Expert Leaderboard {#example-experts-leaderboard}
+### Voorbeeld: Leaderboard van experts {#example-experts-leaderboard}
 
 Dit leaderboard-rapport is het resultaat van het toepassen van geavanceerde scoreregels.
 
@@ -140,13 +140,13 @@ Configuratie van de component Leaderboard:
 
    * Locatie van regel = `/content/sites/<site name>/jcr:content`
    * Scoreregel = `/libs/settings/community/scoring/rules/adv-forums-scoring`
-   * Badgingregel = `/libs/settings/community/badging/rules/adv-forums-badging`
+   * Badging Rule = `/libs/settings/community/badging/rules/adv-forums-badging`
    * Weergavelimiet = `10`
 
 ![chlimage_1-12](assets/chlimage_1-12.png)
 
-### Additional Information {#additional-information}
+### Aanvullende informatie {#additional-information}
 
 Meer informatie vindt u op de pagina [Leaderboard Essentials](/help/communities/leaderboard.md) voor ontwikkelaars.
 
-Instructies voor het maken van regels worden gegeven op de pagina [Community Scoring and Badges](/help/communities/implementing-scoring.md) voor beheerders.
+Instructies voor het maken van regels vindt u op de pagina [Community Scoring and Badges](/help/communities/implementing-scoring.md) voor beheerders.

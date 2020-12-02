@@ -18,18 +18,18 @@ ht-degree: 0%
 ---
 
 
-# Aanbevolen MSM-procedures{#msm-best-practices}
+# MSM Beste praktijken{#msm-best-practices}
 
 ## Algemeen {#general}
 
 MSM is een configureerbaar framework voor het automatiseren van de implementatie van inhoud. Bij implementaties gaat het vaak om grote delen van een website en meerdere organisaties en geografische gebieden. Daarom wordt u ten zeerste aangeraden MSM-implementaties net zo zorgvuldig te plannen als uw website:
 
-* Plan de structuur en inhoudsstromen **zorgvuldig** voordat u de implementatie start.
+* **Plan de structuur en inhoudsstromen** zorgvuldig voordat u de implementatie start.
 * **Pas de aanpassingen zoveel als nodig is, maar zo weinig mogelijk.** Hoewel MSM een hoge mate van aanpassing (bijvoorbeeld rollout configuraties) steunt, typisch is de beste praktijken voor de prestaties, de betrouwbaarheid en de upgradeability van uw website aanpassing minimaliseren.
-* Een **governancemodel** in een vroeg stadium vaststellen en gebruikers dienovereenkomstig trainen om succes te waarborgen. Een goede praktijk vanuit bestuurlijk oogpunt is om de autoriteit **tot een minimum te beperken die lokale inhoudsproducenten moeten** toewijzen/verbinden met andere lokale gebruikers en hun respectieve levende exemplaren. Dit komt omdat onbestuurde, geketende overerving de complexiteit van een MSM-structuur aanzienlijk kan verhogen en de prestaties en betrouwbaarheid ervan in gevaar kan brengen.
+* Stel een **governance** model vroeg in en geef gebruikers de juiste training om succes te garanderen. Een beste manier vanuit bestuurlijk oogpunt is om de autoriteit die lokale inhoudsproducenten hebben, tot een minimum te beperken.**om inhoud toe te wijzen aan/te verbinden met andere lokale gebruikers en hun respectievelijke live kopieën.** Dit komt omdat onbestuurde, geketende overerving de complexiteit van een MSM-structuur aanzienlijk kan verhogen en de prestaties en betrouwbaarheid ervan in gevaar kan brengen.
 
-* Zodra er een plan voor uw structuur, inhoudsstromen, automatisering en bestuur bestaat - **prototype en grondig uw systeem** testen, alvorens levende implementatie te beginnen.
-* Onthoud dat **Adobe Consulting en toonaangevende System Integrators** over uitgebreide ervaring beschikken bij het plannen en implementeren van content automatisering met MSM, zodat ze u zowel kunnen helpen om aan de slag te gaan met uw MSM-project als gedurende de volledige implementatie ervan.
+* Zodra een plan voor uw structuur, inhoudsstromen, automatisering en bestuur - **prototype en grondig uw systeem**, alvorens levende implementatie te beginnen bestaat.
+* Onthoud dat **Adobe Consulting en toonaangevende System Integrators** uitgebreide ervaring hebben met het plannen en implementeren van content automatisering met MSM, zodat ze u kunnen helpen zowel aan de slag te gaan met uw MSM-project als tijdens de volledige implementatie ervan.
 
 >[!NOTE]
 >
@@ -44,10 +44,10 @@ MSM is een configureerbaar framework voor het automatiseren van de implementatie
 
 >[!NOTE]
 >
->U kunt ook de component [](/help/sites-authoring/default-components-foundation.md#reference) Referentie gebruiken om één pagina of alinea opnieuw te gebruiken. Houd echter rekening met:
+>U kunt ook de [Referentiecomponent](/help/sites-authoring/default-components-foundation.md#reference) gebruiken om één pagina of alinea opnieuw te gebruiken. Houd echter rekening met:
 >
 >* MSM is flexibeler en staat fijnkorrelige controle over toe welke inhoud wordt gesynchroniseerd en wanneer.
->* [De kerncomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) worden nu geadviseerd over de stichtingscomponenten.
+>* [De ](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) componenten van de kern worden nu geadviseerd over de stichtingscomponenten.
 
 >
 
@@ -55,12 +55,12 @@ MSM is een configureerbaar framework voor het automatiseren van de implementatie
 
 ## Live Copy-bronnen en configuraties voor blauwdrukken {#live-copy-sources-and-blueprint-configurations}
 
-Houd er rekening mee dat u een live kopie kunt maken met [gewone pagina](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page) &#39;s of een [blauwdrukconfiguratie](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). Beide zijn geldige gebruiksgevallen.
+Onthoud dat een live kopie kan worden gemaakt met [gewone pagina&#39;s](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page) of een [blauwdrukconfiguratie](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). Beide zijn geldige gebruiksgevallen.
 
 De extra voordelen van het gebruiken van een blauwdrukconfiguratie zijn dat zij:
 
-* Laat de auteur de optie **Uitvoer** op een blauwdruk gebruiken - (uitdrukkelijk) duw wijzigingen aan levende exemplaren die van dit blauwdruk erven.
-* Laat de auteur de **Create Plaats** gebruiken; hierdoor kan de gebruiker eenvoudig talen selecteren en de structuur van de live kopie configureren .
+* Laat de auteur de optie **Uitvoer** op een blauwdruk gebruiken - aan (uitdrukkelijk) duw wijzigingen aan levende exemplaren die van deze blauwdruk erven.
+* De auteur toestaan **Site maken/> te gebruiken; hierdoor kan de gebruiker eenvoudig talen selecteren en de structuur van de live kopie configureren .**
 * Definieer een standaardrollout-configuratie voor live kopieën die een relatie hebben met de blauwdruk.
 
 Als er niet naar een blauwdrukconfiguratie wordt verwezen, kunnen rollouts alleen worden geïnitieerd vanuit de live kopieën zelf, waarbij inhoud van de bron wordt opgehaald.
@@ -80,25 +80,25 @@ Om het nesten van componenten te steunen zodat de plaatselijk toegevoegde compon
 
 >[!NOTE]
 >
->Voeg de eigenschap toe `cq:isContainer` aan de component om deze aan te wijzen als een container.
+>Voeg de eigenschap `cq:isContainer` toe aan de component om deze aan te wijzen als een container.
 
-## Site maken {#create-site}
+## Site {#create-site} maken
 
 U ziet dat AEM twee hoofdbenaderingen heeft voor het maken van live kopieën:
 
-* Bij het [maken van een actieve kopie](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page)
+* Wanneer [een live kopie maken](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page)
 
    Dit kan als generischere benadering worden beschouwd, toestaand u om levende exemplaren van om het even welke pagina tot stand te brengen. De inhoudsstructuur van een live kopie komt exact overeen met de bron.
 
-* Bij het [maken van een site](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration)
+* Wanneer [een site maken](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration)
 
    Dit is een meer gespecialiseerde benadering, vooral voor het creëren van websites met een meertalige structuur.
 
 Houd rekening met het volgende wanneer u een site maakt:
 
-* Als u een nieuwe site wilt maken, hebt u een [blauwdrukconfiguratie](/help/sites-administering/msm-livecopy.md#managing-blueprint-configurations)nodig.
+* Als u een nieuwe site wilt maken, hebt u een [blauwdrukconfiguratie](/help/sites-administering/msm-livecopy.md#managing-blueprint-configurations) nodig.
 * Als u wilt dat de taalpaden op een nieuwe site kunnen worden geselecteerd, moeten de overeenkomstige taalwortels in de blauwdruk (bron) aanwezig zijn.
-* Wanneer een [nieuwe site is gemaakt als een live kopie](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (met **Create** en vervolgens **Site**), zijn de eerste twee niveaus van deze live kopie *oppervlakkig*. Onderliggende items van de pagina behoren niet tot de live-relatie, maar de rollout neemt wel af als een live-relatie wordt gevonden die overeenkomt met de trigger.
+* Nadat een [nieuwe site is gemaakt als een live kopie](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (met **Create** en **Site**), zijn de eerste twee niveaus van deze live kopie *shallow*. Onderliggende items van de pagina behoren niet tot de live-relatie, maar de rollout neemt wel af als een live-relatie wordt gevonden die overeenkomt met de trigger.
 
    Het helpt voorkomen:
 
@@ -112,7 +112,7 @@ MSM kan op twee manieren helpen bij het maken van meertalige websites:
 
 * Bij het maken van taalstramienen.
 
-   * Hoewel MSM zelf **geen inhoudsomzetting** verstrekt, kan het met derdevertaalschakelaars worden geïntegreerd die dat doen. Houd er rekening mee dat:
+   * Hoewel MSM zelf **geen inhoudsomzetting** verstrekt, kan het met derdevertaalschakelaars worden geïntegreerd die doen. Houd er rekening mee dat:
 
       * Met MSM kunt u overerving op pagina- en/of componentniveau annuleren. Zo voorkomt u bij de volgende rollout dat vertaalde inhoud (van een live kopie met nog niet-vertaalde inhoud van een blauwdruk) wordt overschreven.
       * Sommige vertalingsconnectors van derden automatiseren dit beheer van MSM-overerving.
@@ -125,17 +125,17 @@ MSM kan op twee manieren helpen bij het maken van meertalige websites:
 
    * Bijvoorbeeld vanuit de Franse taal die master is voor landspecifieke sites, zoals Frankrijk/Frans, Canada/Frans, Zwitserland/Frans.
 
-Zie Inhoud [vertalen voor meertalige sites](/help/sites-administering/translation.md) en de aanbevolen procedures voor [vertaling](/help/sites-administering/tc-bp.md)voor meer informatie.
+Zie [Inhoud vertalen voor meertalige sites](/help/sites-administering/translation.md) en [Aanbevolen procedures voor vertaling](/help/sites-administering/tc-bp.md) voor meer informatie.
 
-## Structuurwijzigingen en rollouts {#structure-changes-and-rollouts}
+## Wijzigingen en rollouts voor structuur {#structure-changes-and-rollouts}
 
 Wijzigingen in de inhoudsstructuur in een blauwdruk-/bronstructuur worden anders weerspiegeld in een live kopie. Dit is afhankelijk van het wijzigingstype:
 
-* **Als u nieuwe pagina&#39;s maakt** in een blauwdruk, worden de bijbehorende pagina&#39;s na de uitrol met de standaardconfiguratie voor uitrollout gemaakt in live kopieën.
+* **Als u nieuwe** pagina&#39;s maakt in een blauwdruk, worden de bijbehorende pagina&#39;s na de uitrol met de standaardconfiguratie voor uitrollout gemaakt in live kopieën.
 
-* **Als u pagina&#39;s in een blauwdruk verwijdert** , worden de corresponderende pagina&#39;s na de implementatie met de standaardrollout-configuratie verwijderd uit live kopieën.
+* **Als u** pagina&#39;s in een blauwdruk verwijdert, worden de bijbehorende pagina&#39;s na de implementatie met de standaardconfiguratie voor uitrollout uit live kopieën verwijderd.
 
-* **Als u pagina&#39;s in een blauwdruk verplaatst** , worden de corresponderende pagina&#39;s **niet** in live kopieën verplaatst na de rollout met de standaardrollout-configuratie:
+* **Als u** pagina&#39;s in een blauwdruk verplaatst, worden de corresponderende pagina&#39;s  **** niet in live kopieën verplaatst na rollout met de standaardrollout-configuratie:
 
    * De reden voor dit gedrag is dat een paginabeweging impliciet een pagina-verwijdering bevat. Dit kan mogelijk leiden tot onverwacht gedrag bij het publiceren, omdat bij het verwijderen van pagina&#39;s bij de auteur de bijbehorende inhoud bij het publiceren automatisch wordt gedeactiveerd. Dit kan ook gevolgen hebben voor verwante punten zoals verbindingen, referenties, en anderen.
    * Inhoudsovererving op de respectievelijke pagina&#39;s met live kopieën wordt bijgewerkt om de nieuwe locatie van de bronnen in de blauwdruk te weerspiegelen.
@@ -143,7 +143,7 @@ Wijzigingen in de inhoudsstructuur in een blauwdruk-/bronstructuur worden anders
 
 >[!NOTE]
 >
->Dit werkt alleen met de trigger [](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/msm-sync.html#rollout-triggers)Bij rollout.
+>Dit werkt alleen met de [Bij rollout trigger](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/msm-sync.html#rollout-triggers).
 
 * Een aangepaste rollout-configuratie maken:
 
@@ -169,10 +169,10 @@ Wijzigingen in de inhoudsstructuur in een blauwdruk-/bronstructuur worden anders
 
 ## Rollen aanpassen {#customizing-rollouts}
 
-MSM-rollout-configuraties zijn in hoge mate aanpasbaar. Het automatiseren van rollouts kan verstrekkende gevolgen hebben. Als beste praktijken, zou u *zeer* zorgvuldig vóór moeten plannen, bijvoorbeeld:
+MSM-rollout-configuraties zijn in hoge mate aanpasbaar. Het automatiseren van rollouts kan verstrekkende gevolgen hebben. Als beste praktijken, zou u *very* zorgvuldig vóór, bijvoorbeeld moeten plannen:
 
-* het automatiseren van rollouts; bijvoorbeeld met [onModify-triggers](#onmodify),
-* aanpassen van [knooppunttypen/eigenschappen](#node-types-properties);
+* het automatiseren van rollouts; bijvoorbeeld met [onModify triggers](#onmodify),
+* aanpassen van [knooppunttypen/eigenschappen](#node-types-properties),
 * volgende workflows starten,
 * en/of inhoud activeren als onderdeel van rollouts.
 
@@ -180,7 +180,7 @@ MSM-rollout-configuraties zijn in hoge mate aanpasbaar. Het automatiseren van ro
 
 Wanneer u de [rollout trigger](/help/sites-administering/msm-sync.md#rollout-triggers) `onModify` gebruikt, moet u rekening houden met het volgende:
 
-* Het automatiseren van rollouts met `onModify` triggers kan een negatief effect hebben op de ontwerpprestaties, aangezien rollouts worden geactiveerd na *elke* paginawijziging.
+* Het automatiseren van rollouts met `onModify` triggers kan een negatief effect hebben op de ontwerpprestaties omdat deze rollouts activeren na het wijzigen van *elke* pagina.
 
 * Het rollout-resultaat kan afwijken van het verwachte resultaat:
 
@@ -189,13 +189,13 @@ Wanneer u de [rollout trigger](/help/sites-administering/msm-sync.md#rollout-tri
 
 * Het gebruiken van zulk een rollout configuratie kon tot conflicten leiden als de gezamenlijke updates van het zelfde middel voorkomen.
 
-Daarom wordt aangeraden dat u *alleen* `onModify` triggers gebruikt als de voordelen van automatische introductie opwegen tegen mogelijke prestatieproblemen.
+Daarom wordt aanbevolen *alleen* triggers te gebruiken als de voordelen van automatische implementatieinitiatie opwegen tegen mogelijke prestatieproblemen.`onModify`
 
 ### Knooppunttypen/eigenschappen {#node-types-properties}
 
 Houd er rekening mee dat:
 
-* Naast het aanpassen van rollout acties, staat MSM u ook toe om knoopeigenschappen aan te passen die worden uitgerold. De configuratie [MSM OSGi staat u toe om knooptypes](/help/sites-administering/msm-sync.md#excluding-properties-and-node-types-from-synchronization) van de bron aan het levende exemplaar uit te sluiten worden gekopieerd.
+* Naast het aanpassen van rollout acties, staat MSM u ook toe om knoopeigenschappen aan te passen die worden uitgerold. De [configuratie MSM OSGi staat u toe om knooptypes](/help/sites-administering/msm-sync.md#excluding-properties-and-node-types-from-synchronization) van het worden gekopieerd van de bron aan het levende exemplaar uit te sluiten.
 
 ## Aanvullende informatie {#further-information}
 

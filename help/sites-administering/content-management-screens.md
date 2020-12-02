@@ -11,17 +11,20 @@ content-type: reference
 discoiquuid: 014b5fdd-6522-4394-87bb-fe264492ba34
 translation-type: tm+mt
 source-git-commit: 69dfd6b41b32cb9131fd90fd7039a0c224889db5
+workflow-type: tm+mt
+source-wordcount: '116'
+ht-degree: 1%
 
 ---
 
 
 # Inhoudsbeheer voor schermen{#content-management-for-screens}
 
-Een ***Content Manager*** voor AEM Screens is een creatieve professional die nauw samenwerkt met marketing en de campagne, het publiek en de gewenste focus kent. De inhoudsbeheerder is verantwoordelijk voor het maken en ordenen van ervaringen voor eindgebruikers door verschillende kanalen te ontwikkelen en reeksen toe te wijzen aan een getimede kanaalervaring.
+A ***Content Manager*** voor AEM Screens is een creatieve professional die nauw samenwerkt met marketing en de campagne, het publiek en de gewenste focus kent. De inhoudsmanager is verantwoordelijk voor het creëren van en het orchestreren van eindgebruikerservaring door verschillende kanalen te ontwikkelen en opeenvolgingen in een getimed kanaalervaring toe te wijzen.
 
 Inhoudsbeheer voor schermontwerplocaties en -schema&#39;s, kanaalintegriteit handhaven, analyses en rapporten uitvoeren en videoprofielen onderhouden.
 
-Een AEM-manager voor rasterinhoud is verantwoordelijk voor de volgende taken:
+Een AEM Screens-inhoudsbeheerder is verantwoordelijk voor de volgende taken:
 
 * Ontwerplocaties
 * Ontwerpplanningen

@@ -11,11 +11,14 @@ topic-tags: components
 discoiquuid: 034f70f1-fbd2-4f6b-b07a-5758f0461a5b
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '492'
+ht-degree: 0%
 
 ---
 
 
-# Tekenreeksen uitnemen voor vertaling{#extracting-strings-for-translating}
+# Tekenreeksen extraheren voor vertaling{#extracting-strings-for-translating}
 
 Gebruik de xgettext-maven-plug-in om tekenreeksen uit uw broncode te extraheren die moeten worden vertaald. Met de plug-in Maven worden tekenreeksen geëxtraheerd naar een XLIFF-bestand dat u verzendt voor vertaling. Tekenreeksen worden geëxtraheerd van de volgende locaties:
 
@@ -23,7 +26,7 @@ Gebruik de xgettext-maven-plug-in om tekenreeksen uit uw broncode te extraheren 
 * Javascript-bronbestanden
 * XML-representaties van SVN-bronnen (JCR-knooppunten)
 
-## Tekenreeksovername configureren {#configuring-string-extraction}
+## Het vormen de Extractie van het Koord {#configuring-string-extraction}
 
 Configureer hoe de functie voor het insteekmodule xgettext-maven tekenreeksen voor uw project extraheert.
 
@@ -51,7 +54,7 @@ Configureer hoe de functie voor het insteekmodule xgettext-maven tekenreeksen vo
 | /parsers/regexp | Vormt het ontleden van Java-, JSP-, en ExtJS malplaatjedossiers. U hoeft deze sectie niet te wijzigen. |
 | /potentials | De formule voor het detecteren van tekenreeksen die moeten worden geïnternationaliseerd. |
 
-### De te parseren bestanden identificeren {#identifying-the-files-to-parse}
+### De te parseren bestanden {#identifying-the-files-to-parse} identificeren
 
 Het /filter gedeelte van het i18n.any-bestand identificeert de bestanden die met het gereedschap Xgettext-maven-plugin worden geparseerd. Voeg verschillende include- en uitsluitingsregels toe die respectievelijk geparseerde en genegeerde bestanden identificeren. Neem alle bestanden op en sluit de bestanden uit die u niet wilt parseren. Gewoonlijk sluit u bestandstypen uit die geen bijdrage leveren aan de interface, of bestanden die wel UI definiëren maar niet worden omgezet. De regels include en exclude hebben de volgende indeling:
 
@@ -65,7 +68,7 @@ Het patroongedeelte van een regel wordt gebruikt om de namen van de bestanden di
 | Voorvoegsel | Effect |
 |---|---|
 | / | Geeft een JCR-pad aan. Dit voorvoegsel komt daarom overeen met bestanden onder de map jcr_root. |
-|  &amp;ast; | Geeft een normaal bestand op het bestandssysteem aan. |
+| &amp;ast; | Geeft een normaal bestand op het bestandssysteem aan. |
 | none | Geen voorvoegsel of patroon dat begint met een map of bestandsnaam, geeft een normaal bestand op het bestandssysteem aan. |
 
 Bij gebruik in een patroon geeft het teken / een submap en het teken &amp;ast aan; alle tekens. In de volgende tabel staan verschillende voorbeeldregels.
@@ -97,7 +100,7 @@ Bij gebruik in een patroon geeft het teken / een submap en het teken &amp;ast aa
  </tbody>
 </table>
 
-### De tekenreeksen extraheren {#extracting-the-strings}
+### De tekenreeksen uitnemen {#extracting-the-strings}
 
 geen POM:
 
@@ -134,7 +137,7 @@ mvn xgettext:extract
 ### Uitvoerbestanden {#output-files}
 
 * `raw.xliff`: geëxtraheerde tekenreeksen
-* `warn.log`: eventuele waarschuwingen als de `CQ.I18n.getMessage()` API onjuist wordt gebruikt. Deze moeten altijd worden opgelost en vervolgens opnieuw worden uitgevoerd.
+* `warn.log`: eventuele waarschuwingen als de  `CQ.I18n.getMessage()` API onjuist wordt gebruikt. Deze moeten altijd worden opgelost en vervolgens opnieuw worden uitgevoerd.
 
 * `parserwarn.log`: parserwaarschuwingen (indien aanwezig), bv. JS-parserproblemen
 * `potentials.xliff`: &quot;potentiële&quot; kandidaten die niet worden geëxtraheerd, maar leesbare tekenreeksen kunnen zijn die vertaald moeten worden (kan worden genegeerd, levert nog steeds een enorme hoeveelheid valse positieven op)

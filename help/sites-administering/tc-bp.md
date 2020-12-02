@@ -24,20 +24,20 @@ ht-degree: 0%
 
 Het maken of uitbreiden van een wereldwijde aanwezigheid op het web kan een complex proces zijn, maar met goede voorspelling en goede planning kunnen AEM uw inspanningen vereenvoudigen en uw wereldwijde bedrijfsdoelstellingen ondersteunen.
 
-* **Plan voor globale uitbreiding** alvorens uw eerste plaats uit te voeren. Het aanpassen van een bestaande site voor wereldwijde dekking op het moment dat de site op korte termijn werd geïmplementeerd, is doorgaans moeilijker dan aan het begin plannen voor wereldwijde uitbreiding:
+* **Plan voor algemene** uitbreiding voordat u uw eerste site implementeert. Het aanpassen van een bestaande site voor wereldwijde dekking op het moment dat de site op korte termijn werd geïmplementeerd, is doorgaans moeilijker dan aan het begin plannen voor wereldwijde uitbreiding:
 
-   * Evalueer de huidige staat van de de localisatierijpheid van uw organisatie. Bepaal of u de **hulpmiddelen**, de **processen** en de **middelen** op zijn plaats hebt om globale uitbreiding te steunen.
-   * Wees op de hoogte van **wereldwijde regels** en **regionale taalvoorkeuren**. Ontwerp flexibele inhoudsstructuren en processen die een veranderende globale bedrijfsomgeving kunnen aanpassen.
+   * Evalueer de huidige staat van de de localisatierijpheid van uw organisatie. Bepaal of u de **tools**, **processen** en **resources** op zijn plaats hebt om globale uitbreiding te steunen.
+   * Houd rekening met **algemene regels** en **regionale taalvoorkeuren**. Ontwerp flexibele inhoudsstructuren en processen die een veranderende globale bedrijfsomgeving kunnen aanpassen.
 
-* Bepaal een **governancemodel** dat uw globale zaken steunt en AEM mechanismen zoals MSM en gebruikerstoestemmingen gebruikt om uw gekozen model af te dwingen. Bepaal bijvoorbeeld of inhoud centraal wordt geschreven en naar regio&#39;s/landen wordt &quot;geduwd&quot; of &quot;getrokken&quot;. Bepaal welke inhoud in de geografische gebieden kan worden ontgrendeld en gewijzigd. Bepaal wie verantwoordelijk is voor het initiëren en beheren van vertalingen.
+* Bepaal een **governance** model dat uw globale zaken steunt en AEM mechanismen zoals MSM en gebruikerstoestemmingen gebruikt om uw gekozen model af te dwingen. Bepaal bijvoorbeeld of inhoud centraal wordt geschreven en naar regio&#39;s/landen wordt &quot;geduwd&quot; of &quot;getrokken&quot;. Bepaal welke inhoud in de geografische gebieden kan worden ontgrendeld en gewijzigd. Bepaal wie verantwoordelijk is voor het initiëren en beheren van vertalingen.
 * Als de middelen toestaan, is het best om vertaalactiviteit van een centraal team te beheren dat deskundigheid in de noodzakelijke hulpmiddelen, processen en verkopersverhoudingen kan ontwikkelen.
-* **Plan**, **prototype** en **test** uw globale structuur en processen om ervoor te zorgen dat zij de zaken steunen en dat u de vereiste steun van belanghebbenden in de aardrijkskunde hebt.
+* **Plan**,  **** prototypeen  **** test uw globale structuur en processen om ervoor te zorgen dat zij het bedrijf steunen en dat u de vereiste steun van belanghebbenden in de aardrijkskunde hebt.
 
 ## Sitestructuur {#site-structure}
 
 * Wanneer u de sitestructuur ontwerpt, moet u eerst de inhoud bekijken en bepalen waar en in welke taal de inhoud is geschreven. Deze locatie moet het hoogste niveau van uw site zijn.
-* De beste praktijken zijn een op **taal-gebaseerde structuur** met niet meer dan drie niveaus tussen de top-level auteurspartij en landplaatsen.
-* Gebruik een naamgevingsconventie voor talen/landsites die voldoet aan de **W3C-standaarden**.
+* De beste praktijken zijn een **op taal-gebaseerde structuur** met niet meer dan 3 niveaus tussen de top-level auteursorganisatie en landplaatsen.
+* Gebruik een naamgevingsconventie voor taal/landsites die voldoet aan **W3C-standaarden**.
 * Bepaal hoe inhoud wordt verdeeld over regio&#39;s en landen. Bedenk welke landen talen delen. U wordt aangeraden om taalstramienen te maken, een laag van niet-geactiveerde pagina&#39;s, waarin vertaalde inhoud kan worden gecontroleerd en gewijzigd en vervolgens kan worden geduwd of naar een landsite met dezelfde taal kan worden gesleept.
 * Er zijn twee manieren om taalstramienen te maken: het gebruiken van taalexemplaren, en het gebruiken van MSM/levende exemplaren.
 
@@ -50,16 +50,16 @@ Het maken of uitbreiden van een wereldwijde aanwezigheid op het web kan een comp
 
 ## Vertaalprocessen en -methoden {#translation-processes-and-methods}
 
-* Neem een **lokalisatiedienstverlener (LSP)** met deskundigheid op het gebied van vertaling en verwante localisatieactiviteiten in dienst. LSPs kan helpen om uw globale zaken te schrapen door een breedte van middelen en technologieën te verstrekken om efficiency te verbeteren en vertaalkosten te besparen:
+* Neem een **lokalisatieserviceprovider (LSP)** met expertise op het gebied van vertaling en gerelateerde lokalisatieactiviteiten. LSPs kan helpen om uw globale zaken te schrapen door een breedte van middelen en technologieën te verstrekken om efficiency te verbeteren en vertaalkosten te besparen:
 
    * Sommige LSPs is zowel dienst als technologieleveranciers. Er zijn ook standalone technologieleveranciers die vele LSPs toestaan om aan hun vertaalplatforms deel te nemen.
-   * Het **AEM vertaalkader** ondersteunt integratie met een groot aantal aanbieders van vertaaltechnologie voor zowel machines als menselijke vertaling.
-   * Leer hoe u LSP-connectors in uw AEM [kunt](/help/sites-administering/translation.md) integreren om content transleren te automatiseren, of hoe u handmatig vertaalprojecten kunt maken, exporteren en importeren voor testdoeleinden en in gevallen waarin er geen LSP- of vertaaltechnologieprovider is.
+   * Het **AEM Omzetten Kader** steunt integratie met een verscheidenheid van vertaaltechnologieleveranciers voor zowel machine als menselijke vertaling.
+   * Leer hoe te om LSP schakelaars in uw AEM te integreren [ om inhoudsomzetting te automatiseren, of hoe te manueel om OmzettingsProjecten voor het testen en in te voeren en in gevallen waar er geen LSP of vertaaltechnologieleverancier is.](/help/sites-administering/translation.md)
 
 * Kies een **vertaalmethode** die het beste bij de inhoud past.
 
-   * **De menselijke vertaling** is best-geschikt voor inhoud waar het overseinen en de kwaliteitsverwachtingen hoog zijn en de inhoud zal voor een bepaalde tijd op de plaats, zoals de pagina&#39;s van de Marketing leven.
-   * **Machinevertaling** kan een goede keuze zijn voor grote hoeveelheden vertalingen als de tijd om te publiceren kritiek is, de kwaliteitsverwachtingen worden versoepeld of de vertaalkosten voor mensen onbetaalbaar zijn. De kennisbasis van de steun en door de gebruiker geproduceerde inhoud worden algemeen machine-vertaald.
+   * **De menselijke** vertaling is best-geschikt voor inhoud waar het overseinen en de kwaliteitsverwachtingen hoog zijn en de inhoud zal voor wat tijd op de plaats, zoals de pagina&#39;s van de Marketing leven.
+   * **Machinevertaling kan een goede keuze zijn voor grote hoeveelheden vertalingen als de tijd om te publiceren kritiek is, de kwaliteitsverwachtingen worden versoepeld of de vertaalkosten voor mensen onbetaalbaar zijn.** De kennisbasis van de steun en door de gebruiker geproduceerde inhoud worden algemeen machine-vertaald.
 
 * Vertrouw op expertise van lokalisatieserviceproviders, Adobe Consulting en System Integrators om uw meertalige sitestructuur te plannen, te maken en te testen.
 

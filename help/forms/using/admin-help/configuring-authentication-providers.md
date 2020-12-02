@@ -11,24 +11,27 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 31dd8db3-ddac-429e-82f8-8c5dc4ffc186
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '1595'
+ht-degree: 0%
 
 ---
 
 
-# Verificatieproviders configureren {#configuring-authentication-providers}
+# Verificatieproviders {#configuring-authentication-providers} configureren
 
 Voor hybride domeinen is minstens één verificatieprovider vereist en voor ondernemingsdomeinen is minstens één verificatieprovider of directoryprovider vereist.
 
 Als u SSO gebruikend SPNEGO toelaat, voeg een Kerberos authentificatieleverancier met toegelaten SPNEGO en een leverancier LDAP als steun toe. Deze configuratie laat gebruikersauthentificatie met een gebruiker toe - identiteitskaart en wachtwoord als SPNEGO niet werkt. (Zie [SSO inschakelen met SPNEGO](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#enable-sso-using-spnego).)
 
-## Een verificatieprovider toevoegen {#add-an-authentication-provider}
+## Een verificatieprovider {#add-an-authentication-provider} toevoegen
 
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Domeinbeheer.
-1. Klik op een bestaand domein in de lijst. Als u authentificatie voor een nieuw domein toevoegt, zie een ondernemingsdomein [](/help/forms/using/admin-help/adding-domains.md#add-an-enterprise-domain) toevoegen of een hybride domein [](/help/forms/using/admin-help/adding-domains.md#add-a-hybrid-domain)toevoegen.
+1. Klik op een bestaand domein in de lijst. Als u authentificatie voor een nieuw domein toevoegt, zie [een ondernemingsdomein toevoegen](/help/forms/using/admin-help/adding-domains.md#add-an-enterprise-domain) of [een hybride domein toevoegen](/help/forms/using/admin-help/adding-domains.md#add-a-hybrid-domain).
 1. Klik op Verificatie toevoegen en selecteer in de lijst Verificatieprovider een provider, afhankelijk van het verificatiemechanisme dat uw organisatie gebruikt.
 1. Geef aanvullende informatie op die op de pagina vereist is. (Zie [Verificatie-instellingen](configuring-authentication-providers.md#authentication-settings).)
 1. (Optioneel) Klik op Testen om de configuratie te testen.
-1. Klik op OK en vervolgens nogmaals op OK.
+1. Klik op OK en klik nogmaals op OK.
 
 ## Een bestaande verificatieprovider bewerken {#edit-an-existing-authentication-provider}
 
@@ -37,14 +40,14 @@ Als u SSO gebruikend SPNEGO toelaat, voeg een Kerberos authentificatieleverancie
 1. Selecteer op de pagina die wordt weergegeven de juiste verificatieprovider in de lijst en breng de gewenste wijzigingen aan. (Zie [Verificatie-instellingen](configuring-authentication-providers.md#authentication-settings).)
 1. Klik op OK.
 
-## Een verificatieprovider verwijderen {#delete-an-authentication-provider}
+## Een verificatieprovider {#delete-an-authentication-provider} verwijderen
 
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Domeinbeheer.
 1. Klik op het desbetreffende domein in de lijst.
 1. Schakel de selectievakjes voor de te verwijderen verificatieproviders in en klik op Verwijderen.
 1. Klik op OK op de bevestigingspagina die wordt weergegeven en klik nogmaals op OK.
 
-## Verificatieinstellingen {#authentication-settings}
+## Verificatie-instellingen {#authentication-settings}
 
 De volgende instellingen zijn beschikbaar, afhankelijk van het type domein en het type verificatie dat u hebt gekozen.
 
@@ -56,60 +59,60 @@ Als u de LDAP-server wilt gebruiken die in uw directoryconfiguratie is opgegeven
 
 Als u een andere LDAP-server wilt gebruiken om verificatie uit te voeren, selecteert u LDAP als de verificatieprovider en schakelt u het selectievakje Aangepaste LDAP-verificatie in. De volgende configuratie-instellingen worden weergegeven.
 
-**** Server: (Verplicht) Volledig gekwalificeerde domeinnaam (FQDN) van de directoryserver. Voor een computer die x heet in het netwerk corp.example.com, is de FQDN bijvoorbeeld x.corp.example.com. U kunt een IP-adres gebruiken in plaats van de naam van de FQDN-server.
+**Server:** (Verplicht) Volledig gekwalificeerde domeinnaam (FQDN) van de directoryserver. Voor een computer die x heet in het netwerk corp.example.com, is de FQDN bijvoorbeeld x.corp.example.com. U kunt een IP-adres gebruiken in plaats van de naam van de FQDN-server.
 
-**** Poort: (Verplicht) De poort die de directoryserver gebruikt. Typisch 389, of 636 als het Veilige protocol van de Laag van Contactdozen (SSL) wordt gebruikt voor het verzenden van authentificatieinformatie over het netwerk.
+**Poort:** (verplicht) De poort die de directoryserver gebruikt. Typisch 389, of 636 als het Veilige protocol van de Laag van Contactdozen (SSL) wordt gebruikt voor het verzenden van authentificatieinformatie over het netwerk.
 
-**** SSL: (Verplicht) Hiermee wordt aangegeven of de directoryserver gebruikmaakt van SSL wanneer gegevens via het netwerk worden verzonden. De standaardwaarde is Nee. Als u Ja instelt, moet het bijbehorende LDAP-servercertificaat worden vertrouwd door de JRE (Java™ runtime environment) van de toepassingsserver.
+**SSL:**  (verplicht) Geeft aan of de directoryserver SSL gebruikt wanneer gegevens via het netwerk worden verzonden. De standaardwaarde is Nee. Als u Ja instelt, moet het bijbehorende LDAP-servercertificaat worden vertrouwd door de JRE (Java™ runtime environment) van de toepassingsserver.
 
-**Binding** (verplicht) geeft aan hoe u toegang tot de map wilt krijgen.
+**Binding**  (verplicht) geeft aan hoe u toegang tot de map wilt krijgen.
 
-**** Anoniem: Geen gebruikersnaam of wachtwoord vereist.
+**Anoniem:** Geen gebruikersnaam of wachtwoord vereist.
 
-**** Gebruiker: Verificatie is vereist. Geef in het vak Naam de naam op van de gebruikersrecord die toegang kan krijgen tot de map. U kunt het beste de volledige DN (Distinguished Name) van de gebruikersaccount invoeren, zoals cn=Jane Doe, ou=user, dc=can, dc=com. Geef in het vak Wachtwoord het bijbehorende wachtwoord op. Deze instellingen zijn vereist wanneer u de optie Gebruiker binden selecteert.
+**Gebruiker:** Verificatie is vereist. Geef in het vak Naam de naam op van de gebruikersrecord die toegang kan krijgen tot de map. U kunt het beste de volledige DN (Distinguished Name) van de gebruikersaccount invoeren, zoals cn=Jane Doe, ou=user, dc=can, dc=com. Geef in het vak Wachtwoord het bijbehorende wachtwoord op. Deze instellingen zijn vereist wanneer u de optie Gebruiker binden selecteert.
 
-**** Basis-DN&#39;s ophalen: (Niet verplicht) Haalt de basis-DN&#39;s op en geeft deze weer in de vervolgkeuzelijst. Deze instelling is handig wanneer u meerdere basis-DN&#39;s hebt en een waarde moet selecteren.
+**Retrieve basis-DN&#39;s:** (Niet verplicht) Hiermee worden de basis-DN&#39;s opgehaald en weergegeven in de vervolgkeuzelijst. Deze instelling is handig wanneer u meerdere basis-DN&#39;s hebt en een waarde moet selecteren.
 
-**** Basis-DN: (Verplicht) Wordt gebruikt als beginpunt voor het synchroniseren van gebruikers en groepen vanuit de LDAP-hiërarchie. Het is best om een basis DN op het laagste niveau van de hiërarchie te specificeren die alle gebruikers en groepen omvat die voor de diensten moeten worden gesynchroniseerd.  Neem de DN van de gebruiker niet op in deze instelling. Als u een bepaalde gebruiker wilt synchroniseren, gebruikt u de instelling Zoekfilter.
+**Basis-DN:** (verplicht) Wordt gebruikt als beginpunt voor het synchroniseren van gebruikers en groepen vanuit de LDAP-hiërarchie. Het is best om een basis DN op het laagste niveau van de hiërarchie te specificeren die alle gebruikers en groepen omvat die voor de diensten moeten worden gesynchroniseerd. Neem de DN van de gebruiker niet op in deze instelling. Als u een bepaalde gebruiker wilt synchroniseren, gebruikt u de instelling Zoekfilter.
 
-**** Pagina vullen met: (Niet verplicht) Wanneer u deze optie selecteert, worden de kenmerken op de pagina&#39;s met gebruikersinstellingen en groepsinstellingen gevuld met de bijbehorende standaard LDAP-waarden.
+**Vul de pagina met:** (Niet verplicht) Als deze optie is geselecteerd, worden de kenmerken op de pagina&#39;s met gebruikersinstellingen en groepsinstellingen gevuld met de bijbehorende standaard LDAP-waarden.
 
-**** Zoekfilter: (Verplicht) Het zoekfilter dat moet worden gebruikt om de record te zoeken die aan de gebruiker is gekoppeld. Zie Syntaxis zoekfilter.
+**Zoekfilter:**  (verplicht) Het zoekfilter dat moet worden gebruikt om de record te zoeken die aan de gebruiker is gekoppeld. Zie Syntaxis zoekfilter.
 
 ### Kerberos-instellingen {#kerberos-settings}
 
 Als u authentificatie voor een onderneming of een hybride domein vormt en authentificatie Kerberos selecteert, zijn de volgende montages beschikbaar.
 
-**** DNS IP: Het DNS IP-adres van de server waarop AEM-formulieren worden uitgevoerd. Op Vensters, kunt u dit IP adres bepalen door ipconfig /all bij de bevellijn in werking te stellen.
+**DNS IP:** het DNS IP adres van de server waar AEM vormen lopen. Op Vensters, kunt u dit IP adres bepalen door ipconfig /all bij de bevellijn in werking te stellen.
 
-**** KDC-host: Volledig - gekwalificeerde gastheernaam of IP adres van de Actieve server van de Folder die voor authentificatie wordt gebruikt.
+**KDC Host:** Volledig - gekwalificeerde gastheernaam of IP adres van de Actieve server van de Folder die voor authentificatie wordt gebruikt.
 
-**** Servicegebruiker: Als u Actieve Folder 2003 gebruikt, is deze waarde de afbeelding die voor het de diensthoofd in de vorm wordt gecreeerd `HTTP/<server name>`. Als u Actieve Folder 2008 gebruikt, is deze waarde login identiteitskaart van het de diensthoofd. Bijvoorbeeld, veronderstel dat het de diensthoofd wordt genoemd um spnego, gebruiker - identiteitskaart is spnegodemo, en de afbeelding is HTTP/example.corp.yourcompany.com. Met Actieve Folder 2003, plaatst u de Gebruiker van de Dienst aan HTTP/example.corp.yourcompany.com. Met Actieve Folder 2008, plaatst u de Gebruiker van de Dienst aan spnegodemo. (Zie SSO inschakelen met SPNEGO.)
+**De Gebruiker van de dienst:** Als u Actieve Folder 2003 gebruikt, is deze waarde de afbeelding die voor het de diensthoofd in de vorm wordt gecreeerd  `HTTP/<server name>`. Als u Actieve Folder 2008 gebruikt, is deze waarde login identiteitskaart van het de diensthoofd. Bijvoorbeeld, veronderstel dat het de diensthoofd wordt genoemd um spnego, gebruiker - identiteitskaart is spnegodemo, en de afbeelding is HTTP/example.corp.yourcompany.com. Met Actieve Folder 2003, plaatst u de Gebruiker van de Dienst aan HTTP/example.corp.yourcompany.com. Met Actieve Folder 2008, plaatst u de Gebruiker van de Dienst aan spnegodemo. (Zie SSO inschakelen met SPNEGO.)
 
-**** Servicerealm: Domeinnaam voor Active Directory
+**Service Realm:** domeinnaam voor Active Directory
 
-**** Servicewachtwoord: Wachtwoord servicegebruiker
+**Servicewachtwoord:wachtwoord** van servicegebruiker
 
-**** SPNEGO inschakelen: Hiermee wordt het gebruik van SPNEGO voor Single Sign-On (SSO) ingeschakeld. (Zie SSO inschakelen met SPNEGO.)
+**SPNEGO inschakelen:** hiermee kunt u SPNEGO gebruiken voor Single Sign-On (SSO). (Zie SSO inschakelen met SPNEGO.)
 
 ### SAML-instellingen {#saml-settings}
 
-Als u authentificatie voor een onderneming of een hybride domein vormt en authentificatie van SAML selecteert, zijn de volgende montages beschikbaar. Voor informatie over extra montages SAML, zie [vormen de dienstverlener van SAML montages](/help/forms/using/admin-help/configure-saml-service-provider-settings.md#configure-saml-service-provider-settings).
+Als u authentificatie voor een onderneming of een hybride domein vormt en authentificatie van SAML selecteert, zijn de volgende montages beschikbaar. Voor informatie over extra montages SAML, zie [de montages van de dienstverlener van SAML](/help/forms/using/admin-help/configure-saml-service-provider-settings.md#configure-saml-service-provider-settings) vormen.
 
-**** Selecteer een metabestand voor SAML-identiteitsproviders dat u wilt importeren: Klik op Bladeren om een metagegevensbestand voor een SAML-identiteitsprovider te selecteren dat is gegenereerd op basis van uw IDP en klik vervolgens op Importeren. De details van IDP worden getoond.
+**Selecteer een metagegevensbestand voor een SAML-identiteitsprovider dat u wilt importeren:** Klik op Bladeren om een metagegevensbestand voor een SAML-identiteitsprovider te selecteren dat is gegenereerd van uw IDP en klik vervolgens op Importeren. De details van IDP worden getoond.
 
-**** Titel: Alias aan URL die door EntiteitID wordt vermeld. De titel wordt ook weergegeven op de aanmeldingspagina voor ondernemingen en lokale gebruikers.
+**Titel:** Alias to the URL denoted by the EntityID. De titel wordt ook weergegeven op de aanmeldingspagina voor ondernemingen en lokale gebruikers.
 
-**** Identiteitsprovider ondersteunt basisclientverificatie: De Basisauthentificatie van de cliënt wordt gebruikt wanneer IDP een profiel van de Resolutie van het Artefact van SAML gebruikt. In dit profiel, verbindt het Beheer van de Gebruiker terug met de Webdienst die bij IDP loopt om de daadwerkelijke bevestiging van SAML terug te winnen. IDP kan authentificatie vereisen. Als de IDP authentificatie vereist, selecteer deze optie en specificeer een gebruikersnaam en een wachtwoord in de vakjes verstrekt.
+**Identiteitsprovider ondersteunt clientbasisverificatie:** Client Basic-verificatie wordt gebruikt wanneer IDP een SAML Artefactoplossingsprofiel gebruikt. In dit profiel, verbindt het Beheer van de Gebruiker terug met de Webdienst die bij IDP loopt om de daadwerkelijke bevestiging van SAML terug te winnen. IDP kan authentificatie vereisen. Als de IDP authentificatie vereist, selecteer deze optie en specificeer een gebruikersnaam en een wachtwoord in de vakjes verstrekt.
 
-**** Aangepaste eigenschappen: Hiermee kunt u aanvullende eigenschappen opgeven. De extra eigenschappen zijn name=value paren die door nieuwe lijnen worden gescheiden.
+**Aangepaste eigenschappen:** Hiermee kunt u aanvullende eigenschappen opgeven. De extra eigenschappen zijn name=value paren die door nieuwe lijnen worden gescheiden.
 
 De volgende aangepaste eigenschappen zijn vereist als artefactbinding wordt gebruikt.
 
-* Voeg het volgende douanebezit toe om een gebruikersbenaming te specificeren die AEM vormen Service Provider vertegenwoordigt, die zal worden gebruikt om aan de dienst van de Resolutie van het Artefact IDP voor authentiek te verklaren.
+* Voeg het volgende douanebezit toe om een gebruikersbenaming te specificeren die de AEM vormen Service Provider vertegenwoordigt, die zal worden gebruikt om aan de dienst van de Resolutie van het Artefact IDP voor authentiek te verklaren.
    `saml.idp.resolve.username=<username>`
 
-* Voeg de volgende aangepaste eigenschap toe om het wachtwoord op te geven voor de gebruiker die is opgegeven in `saml.idp.resolve.username`.
+* Voeg het volgende douanebezit toe om het wachtwoord voor de gebruiker te specificeren die in `saml.idp.resolve.username` wordt gespecificeerd.
    `saml.idp.resolve.password=<password>`
 
 * Voeg de volgende aangepaste eigenschap toe zodat de serviceprovider de certificaatvalidatie kan negeren terwijl de verbinding met de Artefactresolutie via SSL tot stand wordt gebracht.
@@ -123,17 +126,17 @@ Als u authentificatie voor een onderneming of een hybride domein vormt en de uit
 
 De just-in-time levering leidt automatisch tot een gebruiker in het gegevensbestand van het Beheer van de Gebruiker nadat de gebruiker met succes via een authentificatieleverancier wordt verklaard. Relevante rollen en groepen worden ook dynamisch toegewezen aan de nieuwe gebruiker. U kunt just-in-time levering voor onderneming en hybride domeinen toelaten.
 
-In deze procedure wordt beschreven hoe traditionele verificatie werkt in AEM-formulieren:
+Deze procedure beschrijft de manier de traditionele authentificatie in AEM vormen werkt:
 
-1. Wanneer een gebruiker zich probeert aan te melden bij AEM-formulieren, geeft het Gebruikersbeheer zijn gegevens opeenvolgend door aan alle beschikbare verificatieproviders. (De login geloofsbrieven omvatten gebruikersbenaming/wachtwoordcombinatie, kaartje Kerberos, handtekening PKCS7, etc.)
+1. Wanneer een gebruiker zich aanmeldt bij AEM formulieren, geeft Gebruikersbeheer zijn gegevens opeenvolgend door aan alle beschikbare verificatieproviders. (De login geloofsbrieven omvatten gebruikersbenaming/wachtwoordcombinatie, kaartje Kerberos, handtekening PKCS7, etc.)
 1. De verificatieprovider valideert de referenties.
 1. De authentificatieleverancier controleert dan of de gebruiker in het gegevensbestand van het Beheer van de Gebruiker bestaat. De volgende statussen zijn mogelijk:
 
-   **Exists** If the user is current and unlocked, User Management returns authentication success. Als de gebruiker echter niet actief is of is vergrendeld, retourneert het Gebruikersbeheer een verificatiefout.
+   **** ExistsIf the user is current and unlocked, User Management returns authentication success. Als de gebruiker echter niet actief is of is vergrendeld, retourneert het Gebruikersbeheer een verificatiefout.
 
-   **Bestaat** Gebruikersbeheer niet als een verificatiefout.
+   **Beheert** existUser Management retourneert verificatiefout.
 
-   **Ongeldig** gebruikersbeheer retourneert verificatiefout.
+   **InvalidUser Management** retourneert een verificatiefout.
 
 1. Het resultaat dat door de authentificatieleverancier is teruggekeerd wordt geëvalueerd. Als de verificatieprovider het succes van de verificatie heeft geretourneerd, mag de gebruiker zich aanmelden. Anders, controleert het Beheer van de Gebruiker met de volgende authentificatieleverancier (stappen 2-3).
 1. Verificatiefout wordt geretourneerd als geen enkele verificatieprovider de gebruikersgegevens valideert.
@@ -142,9 +145,9 @@ Wanneer just-in-time levering wordt toegelaten, worden de nieuwe gebruikers dyna
 
 Zonder just-in-time levering, wanneer een gebruiker met succes voor authentiek wordt verklaard maar niet in het gegevensbestand van het Beheer van de Gebruiker wordt gevonden, ontbreekt de authentificatie. De just-in-time levering voegt een stap in de authentificatieprocedure toe om de gebruiker tot stand te brengen en rollen en groepen aan de gebruiker toe te wijzen.
 
-### Eenmalige provisioning voor een domein inschakelen {#enable-just-in-time-provisioning-for-a-domain}
+### Just-in-Time-provisioning inschakelen voor een domein {#enable-just-in-time-provisioning-for-a-domain}
 
-1. Schrijf een de dienstcontainer die de interfaces IdentityCreator en AssignmentProvider uitvoert. (Zie [Programmeren met AEM-formulieren](https://www.adobe.com/go/learn_aemforms_programming_63).)
+1. Schrijf een de dienstcontainer die de interfaces IdentityCreator en AssignmentProvider uitvoert. (Zie [Programmeren met AEM formulieren](https://www.adobe.com/go/learn_aemforms_programming_63).)
 1. Implementeer de servicecontainer op de formulierserver.
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Domeinbeheer.
 
@@ -155,6 +158,6 @@ Zonder just-in-time levering, wanneer een gebruiker met succes voor authentiek w
 
    ***opmerking **: Als het selectievakje Eenvoudige intijdprovisioning inschakelen ontbreekt, klikt u op Home > Instellingen > Gebruikersbeheer > Configuratie > Geavanceerde systeemkenmerken en vervolgens op Opnieuw laden.*
 
-1. Voeg verificatieproviders toe. Tijdens het toevoegen van authentificatieleveranciers, op het Nieuwe scherm van de Authentificatie, selecteer een geregistreerde Maker van de Identiteit en een Leverancier van de Toewijzing. (Zie [Verificatieproviders](configuring-authentication-providers.md#configuring-authentication-providers)configureren.)
+1. Voeg verificatieproviders toe. Tijdens het toevoegen van authentificatieleveranciers, op het Nieuwe scherm van de Authentificatie, selecteer een geregistreerde Maker van de Identiteit en een Leverancier van de Toewijzing. (Zie [Verificatieproviders configureren](configuring-authentication-providers.md#configuring-authentication-providers).)
 1. Sla het domein op.
 

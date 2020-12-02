@@ -1,6 +1,6 @@
 ---
 title: Elementsjablonen
-description: Meer informatie over Asset-sjablonen [!DNL Adobe Experience Manager Assets] en over het gebruik van asset templates om marketingmateriaal te maken.
+description: Leer over de malplaatjes van Activa in [!DNL Adobe Experience Manager Assets] en hoe te om activamalplaatjes te gebruiken om marketing onderpand tot stand te brengen.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: f9f745369ba0fe242dea1e5a5e5af0b8263b1ec0
@@ -19,9 +19,9 @@ Dankzij de flexibiliteit om beperkte bewerkingen uit te voeren en de globale han
 
 Als markeerteken kunt u sjablonen opslaan en beheren binnen [!DNL Experience Manager Assets] en één basissjabloon gebruiken om eenvoudig meerdere persoonlijke afdrukervaringen te maken. U kunt diverse soorten marketing onderpand, met inbegrip van brochures, vliegers, postcards, visitekaartjes, etc. tot stand brengen om uw marketing bericht aan klanten lucently over te brengen. U kunt ook uitvoer van meerdere pagina&#39;s samenstellen op basis van bestaande of nieuwe afdrukuitvoer. Met name kunt u tegelijkertijd eenvoudig zowel digitale als afdrukervaringen bieden, zodat gebruikers een consistente, geïntegreerde ervaring hebben.
 
-Hoewel assetjablonen meestal [!DNL Adobe InDesign] bestanden zijn, vormt de ervaring in [!DNL Adobe InDesign] deze sjablonen geen belemmering voor het creëren van stellaire artefacten. U hoeft de velden van uw [!DNL Adobe InDesign] sjabloon niet toe te wijzen aan productvelden die u anders nodig hebt bij het maken van catalogi. U kunt de sjablonen in de WYSIWYG-modus rechtstreeks in de webinterface bewerken. Nochtans, voor [!DNL Adobe InDesign] om uw het uitgeven veranderingen te verwerken, moet u eerst vormen [!DNL Experience Manager Assets] om met [!DNL Adobe InDesign Server]te integreren.
+Elementsjablonen zijn meestal [!DNL Adobe InDesign] bestanden, maar de vaardigheid in [!DNL Adobe InDesign] vormt geen belemmering voor het maken van stellaire artefacten. U hoeft de velden van uw [!DNL Adobe InDesign]-sjabloon niet toe te wijzen aan de productvelden die u anders nodig hebt bij het maken van catalogi. U kunt de sjablonen in de WYSIWYG-modus rechtstreeks in de webinterface bewerken. Als u uw bewerkingswijzigingen echter wilt verwerken, moet u [!DNL Adobe InDesign] eerst configureren voor integratie met [!DNL Experience Manager Assets].[!DNL Adobe InDesign Server]
 
-De mogelijkheid om [!DNL Adobe InDesign] sjablonen te bewerken vanuit de webinterface helpt een betere samenwerking tussen creatief en marketingpersoneel te bevorderen. De verhoogde snelheid van de inhoud vermindert de tijd-aan-markt voor marketing zekerheden.
+De mogelijkheid om [!DNL Adobe InDesign]-sjablonen vanuit de webinterface te bewerken helpt een betere samenwerking tussen creatief en marketingpersoneel te bevorderen. De verhoogde snelheid van de inhoud vermindert de tijd-aan-markt voor marketing zekerheden.
 
 U kunt het volgende bereiken met middelensjablonen:
 
@@ -31,48 +31,48 @@ U kunt het volgende bereiken met middelensjablonen:
 * Sjabloonbewerkingen voorvertonen.
 * Voeg meerdere sjabloonbestanden samen om een vervorming van meerdere pagina&#39;s te maken.
 
-Wanneer u een sjabloon kiest voor uw onderpand, [!DNL Experience Manager Assets] maakt u een kopie van de sjabloon die u kunt bewerken. De oorspronkelijke sjabloon blijft behouden, zodat uw globale handtekening intact blijft en opnieuw kan worden gebruikt om de consistentie van uw merk te handhaven.
+Wanneer u een sjabloon voor uw onderpand kiest, [!DNL Experience Manager Assets] creeert een exemplaar van het malplaatje dat u kunt uitgeven. De oorspronkelijke sjabloon blijft behouden, zodat uw globale handtekening intact blijft en opnieuw kan worden gebruikt om de consistentie van uw merk te handhaven.
 
 U kunt het bijgewerkte bestand in de bovenliggende map exporteren in de indelingen INDD, PDF of JPG. U kunt de uitvoer in deze indelingen ook downloaden naar uw lokale bestandssysteem.
 
-## Een zekerheid maken {#creating-a-collateral}
+## Een zekerheid {#creating-a-collateral} maken
 
-Overweeg een scenario waarin u digitaal afdrukbaar materiaal wilt maken, zoals brochures, vliegers en advertenties voor een komende campagne en wereldwijd wilt delen met verkooppunten. Het creëren van onderpand dat op een malplaatje wordt gebaseerd helpt een verenigde klantenervaring over kanalen leveren. Ontwerpers kunnen de campagnemalplaatjes (enig-pagina of multi-page) tot stand brengen gebruikend een creatieve oplossing, zoals [!DNL InDesign] en de malplaatjes uploaden aan [!DNL Experience Manager Assets] voor u. Voordat u een zekerheid maakt, moet u een of meer INDD-sjablonen vooraf uploaden naar en beschikbaar hebben [!DNL Experience Manager] .
+Overweeg een scenario waarin u digitaal afdrukbaar materiaal wilt maken, zoals brochures, vliegers en advertenties voor een komende campagne en wereldwijd wilt delen met verkooppunten. Het creëren van onderpand dat op een malplaatje wordt gebaseerd helpt een verenigde klantenervaring over kanalen leveren. Ontwerpers kunnen de campagnemalplaatjes (enig-pagina of multi-page) tot stand brengen gebruikend een creatieve oplossing, zoals [!DNL InDesign] en de malplaatjes uploaden aan [!DNL Experience Manager Assets] voor u. Voordat u een zekerheid maakt, moet u een of meer INDD-sjablonen vooraf uploaden naar en beschikbaar hebben in [!DNL Experience Manager].
 
-1. Klik in de [!DNL Experience Manager] interface [!UICONTROL Assets].
+1. Klik in [!DNL Experience Manager] interface [!UICONTROL Assets].
 
-1. Kies uit de opties **[!UICONTROL Templates]**.
+1. Kies **[!UICONTROL Templates]** uit de opties.
 
    ![chlimage_1-101](assets/chlimage_1-306.png)
 
-1. Klik **[!UICONTROL Create]** en kies in het menu het element dat u wilt maken. Kies bijvoorbeeld **[!UICONTROL Brochure]**.
+1. Klik **[!UICONTROL Create]**, en kies dan het onderpand u van het menu wilt creëren. Kies bijvoorbeeld **[!UICONTROL Brochure]**.
 
    ![chlimage_1-102](assets/chlimage_1-307.png)
 
-1. Een of meer INDD-sjablonen vooraf uploaden naar en beschikbaar hebben [!DNL Experience Manager] . Kies een sjabloon voor de brochure en klik op **[!UICONTROL Next]**.
+1. Een of meer INDD-sjablonen vooraf uploaden naar en beschikbaar hebben in [!DNL Experience Manager]. Kies een sjabloon voor de brochure en klik op **[!UICONTROL Next]**.
 1. Geef een naam en een optionele beschrijving voor de brochure op.
 
    ![chlimage_1-104](assets/chlimage_1-309.png)
 
-1. (Optioneel) Klik op een of meer tags voor de brochure **[!UICONTROL Tags]** en selecteer deze. Klik **[!UICONTROL Confirm]** om uw selectie te bevestigen.
-1. Klik op **[!UICONTROL Create]**. Een dialoogvenster bevestigt dat er een nieuwe brochure wordt gemaakt. Klik **[!UICONTROL Open]** om de brochure te openen in de bewerkingsmodus.
+1. (Optioneel) Klik op **[!UICONTROL Tags]** en selecteer een of meer tags voor de brochure. Klik **[!UICONTROL Confirm]** om uw selectie te bevestigen.
+1. Klik op **[!UICONTROL Create]**. Een dialoogvenster bevestigt dat er een nieuwe brochure wordt gemaakt. Klik op **[!UICONTROL Open]** om de brochure te openen in de bewerkingsmodus.
 
    <!--![chlimage_1-106](assets/.png) -->
 
-   U kunt ook het dialoogvenster sluiten en naar de map op de pagina Sjablonen gaan waarmee u bent begonnen om de brochure weer te geven die u hebt gemaakt. Het type van het onderpand verschijnt op zijn duimnagel in kaartmening. In dit geval wordt het woord bijvoorbeeld [!UICONTROL Brochure] weergegeven op de miniatuur.
+   U kunt ook het dialoogvenster sluiten en naar de map op de pagina Sjablonen gaan waarmee u bent begonnen om de brochure weer te geven die u hebt gemaakt. Het type van het onderpand verschijnt op zijn duimnagel in kaartmening. In dit geval wordt bijvoorbeeld het woord [!UICONTROL Brochure] weergegeven op de miniatuur.
 
    ![chlimage_1-107](assets/chlimage_1-312.png)
 
-## Een zekerheid bewerken {#editing-a-collateral}
+## Een zekerheid {#editing-a-collateral} bewerken
 
-U kunt direct nadat u het hebt gemaakt, een onderpand bewerken. U kunt het bestand ook openen vanaf de [!UICONTROL Templates] pagina of de elementpagina.
+U kunt direct nadat u het hebt gemaakt, een onderpand bewerken. U kunt de sjabloon ook openen vanaf de pagina [!UICONTROL Templates] of de elementpagina.
 
 1. Voer een van de volgende handelingen uit om het onderpand te openen voor bewerking:
 
-   * Open het onderpand (brochure in dit geval) dat u in stap 7 van [Create een onderpand](/help/assets/asset-templates.md#creating-a-collateral)hebt gemaakt.
-   * Navigeer op de pagina Sjablonen naar de map waarin u het onderpand hebt gemaakt en klik op de [!UICONTROL Edit] snelle actie op de miniatuur van een onderpand.
-   * Klik op de werkbalk op de elementpagina voor het onderpand. **[!UICONTROL Edit]**
-   * Select the collateral and click **[!UICONTROL Edit]** from the toolbar.
+   * Open het onderpand (brochure in dit geval) u in stap 7 van [creeerde een onderpand](/help/assets/asset-templates.md#creating-a-collateral).
+   * Navigeer op de pagina Sjablonen naar de map waarin u het onderpand hebt gemaakt en klik op de snelle handeling [!UICONTROL Edit] op de miniatuur van een onderpand.
+   * Klik op **[!UICONTROL Edit]** op de werkbalk op de elementpagina voor het onderpand.
+   * Selecteer het onderpand en klik **[!UICONTROL Edit]** van de toolbar.
 
    <!--![chlimage_1-108](assets/chlimage_1-313.png) -->
 
@@ -80,15 +80,15 @@ U kunt direct nadat u het hebt gemaakt, een onderpand bewerken. U kunt het besta
 
    U kunt de teksteditor gebruiken om de tekst te wijzigen die u in het tekstveld wilt weergeven. U kunt de tekengrootte, stijl, kleur en tekst op tagniveau wijzigen.
 
-   Met behulp van de zoekfunctie voor elementen kunt u bladeren naar afbeeldingen in de sjabloon [!DNL Experience Manager Assets] en deze vervangen door afbeeldingen naar keuze.
+   Met behulp van de zoekfunctie voor elementen kunt u bladeren naar afbeeldingen in [!DNL Experience Manager Assets] en de bewerkbare afbeeldingen in de sjabloon vervangen door afbeeldingen van uw keuze.
 
-   ![chlimage_1-109](assets/chlimage_1-314.png)
+   ![chlimage_1-189](assets/chlimage_1-314.png)
 
-   De bewerkbare tekst wordt rechts weergegeven. Een veld dat bewerkbaar is in [!DNL Experience Manager Assets]de sjabloon kan alleen worden bewerkt als het desbetreffende veld in de sjabloon is gelabeld [!DNL InDesign]. Met andere woorden, ze moeten worden gemarkeerd als bewerkbaar in [!DNL InDesign].
+   De bewerkbare tekst wordt rechts weergegeven. Een veld kan alleen worden bewerkt in [!DNL Experience Manager Assets] als het desbetreffende veld in de sjabloon is gelabeld in [!DNL InDesign]. Met andere woorden, ze moeten worden gemarkeerd als bewerkbaar in [!DNL InDesign].
 
    >[!NOTE]
    >
-   >Zorg ervoor dat uw [!DNL Experience Manager] implementatie is geïntegreerd met een toepassing [!DNL InDesign Server] waarmee u gegevens uit de [!DNL Experience Manager Assets] [!DNL InDesign] sjabloon kunt extraheren en ter beschikking kunt stellen voor bewerking. Zie Experience Manager Assets [integreren met InDesign Server](/help/assets/indesign.md)voor meer informatie.
+   >Zorg ervoor dat uw [!DNL Experience Manager]-implementatie is geïntegreerd met een [!DNL InDesign Server] om [!DNL Experience Manager Assets] in staat te stellen gegevens te extraheren uit de [!DNL InDesign]-sjabloon en deze beschikbaar te maken voor bewerking. Zie [Elementen van Experience Managers integreren met InDesign Server](/help/assets/indesign.md) voor meer informatie.
 
 1. Als u de tekst in een bewerkbaar veld wilt wijzigen, klikt u op het tekstveld in de lijst met bewerkbare velden en bewerkt u de tekst in het veld.
 
@@ -98,39 +98,39 @@ U kunt direct nadat u het hebt gemaakt, een onderpand bewerken. U kunt het besta
 
 1. Klik **[!UICONTROL Preview]** om een voorvertoning van de tekstwijzigingen weer te geven.
 
-1. Als u een afbeelding wilt wisselen, klikt u op **[!UICONTROL Asset Finder]** chlimage_1-113 ![](assets/chlimage_1-318.png).
+1. Als u een afbeelding wilt omwisselen, klikt u op **[!UICONTROL Asset Finder]** ![chlimage_1-113](assets/chlimage_1-318.png).
 
 1. Selecteer het afbeeldingsveld in de lijst met bewerkbare velden en sleep een gewenste afbeelding van de elementkiezer naar het bewerkbare veld.
 
-   ![chlimage_1-114](assets/chlimage_1-319.png)
+   ![chlimage_1-115](assets/chlimage_1-319.png)
 
-   U kunt ook naar afbeeldingen zoeken met behulp van trefwoorden, tags en op basis van hun publicatiestatus. U kunt door de [!DNL Experience Manager Assets] gegevensopslagruimte bladeren en naar de locatie van de gewenste afbeelding navigeren.
+   U kunt ook naar afbeeldingen zoeken met behulp van trefwoorden, tags en op basis van hun publicatiestatus. U kunt door [!DNL Experience Manager Assets] bewaarplaats doorbladeren en aan de plaats van het gewenste beeld navigeren.
 
-   ![chlimage_1-115](assets/chlimage_1-320.png)
+   ![chlimage_1-114](assets/chlimage_1-320.png)
 
-1. Klik **[!UICONTROL Preview]** om een voorvertoning van de afbeelding weer te geven.
+1. Klik op **[!UICONTROL Preview]** om een voorvertoning van de afbeelding weer te geven.
 1. Als u een specifieke pagina in een pagina-element wilt bewerken dat uit meerdere pagina&#39;s bestaat, gebruikt u de paginanavigator onderaan.
 
-1. Klik op **[!UICONTROL Preview]** de werkbalk om een voorvertoning van alle wijzigingen weer te geven. Klik **[!UICONTROL Done]** om de bewerkingswijzigingen in het onderpand op te slaan.
+1. Klik op **[!UICONTROL Preview]** op de werkbalk om een voorvertoning van alle wijzigingen weer te geven. Klik **[!UICONTROL Done]** om de het uitgeven veranderingen in het onderpand te bewaren.
 
    >[!NOTE]
    >
-   >De opties Voorbeeld en Gereed zijn alleen ingeschakeld wanneer de bewerkbare afbeeldingsvelden in het onderpand geen ontbrekende pictogrammen hebben. Als er pictogrammen ontbreken in het onderpand, komt dat doordat de afbeeldingen in de [!DNL Experience Manager] sjabloon niet [!DNL InDesign] kunnen worden opgelost. In de volgende gevallen [!DNL Experience Manager] kunnen afbeeldingen gewoonlijk niet worden opgelost:
+   >De opties Voorbeeld en Gereed zijn alleen ingeschakeld wanneer de bewerkbare afbeeldingsvelden in het onderpand geen ontbrekende pictogrammen hebben. Als er pictogrammen ontbreken in uw onderpand, komt dit omdat [!DNL Experience Manager] de afbeeldingen in de [!DNL InDesign] sjabloon niet kan oplossen. Doorgaans kan [!DNL Experience Manager] geen afbeeldingen oplossen in de volgende gevallen:
    >
-   >* Afbeeldingen worden niet ingesloten in de onderliggende [!DNL InDesign] sjabloon.
+   >* Afbeeldingen worden niet ingesloten in de onderliggende [!DNL InDesign]-sjabloon.
    >* Afbeeldingen worden gekoppeld vanuit het lokale bestandssysteem.
 
    >
-   >Ga als volgt te werk [!DNL Experience Manager] om het omzetten van afbeeldingen in te schakelen:
+   >Ga als volgt te werk om [!DNL Experience Manager] in te schakelen om afbeeldingen op te lossen:
    >
-   >* Afbeeldingen insluiten tijdens het maken van [!DNL InDesign] sjablonen (zie [Koppelingen en ingesloten afbeeldingen](https://helpx.adobe.com/indesign/using/graphics-links.html)).
-   >* Koppel [!DNL Experience Manager] het bestand aan uw lokale bestandssysteem en wijs ontbrekende pictogrammen toe aan bestaande elementen in [!DNL Experience Manager].
+   >* Afbeeldingen insluiten tijdens het maken van [!DNL InDesign]-sjablonen (zie [Over koppelingen en ingesloten afbeeldingen](https://helpx.adobe.com/indesign/using/graphics-links.html)).
+   >* Koppel [!DNL Experience Manager] aan uw lokale bestandssysteem en wijs vervolgens ontbrekende pictogrammen toe aan bestaande elementen in [!DNL Experience Manager].
 
    >
-   >Raadpleeg de [!DNL InDesign] aanbevolen procedures voor het werken met InDesign-documenten in de Experience Manager [voor meer informatie over het werken met](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html)documenten.
+   >Zie [aanbevolen procedures voor het werken met InDesign-documenten in Experience Manager](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html) voor meer informatie over het werken met [!DNL InDesign]-documenten.
 
 1. Als u een PDF-uitvoering voor de brochure wilt genereren, selecteert u de optie Acrobat in het dialoogvenster en klikt u op **[!UICONTROL Continue]**.
-1. Het onderpand wordt gecreeerd in de omslag u met begon. Als u de vertoningen wilt weergeven, opent u het onderpand en kiest u een optie in de lijst GlobalNav. **[!UICONTROL Renditions]**
+1. Het onderpand wordt gecreeerd in de omslag u met begon. Als u de vertoningen wilt weergeven, opent u het desbetreffende element en kiest u **[!UICONTROL Renditions]** in de lijst GlobalNav.
 
    ![chlimage_1-118](assets/chlimage_1-323.png)
 
@@ -138,17 +138,17 @@ U kunt direct nadat u het hebt gemaakt, een onderpand bewerken. U kunt het besta
 
    ![chlimage_1-119](assets/chlimage_1-324.png)
 
-## Zekerheden samenvoegen {#merge-collateral}
+## Onderpanden {#merge-collateral} samenvoegen
 
-1. Klik in de [!DNL Experience Manager] interface [!UICONTROL Assets] op de navigatiepagina.
+1. Klik in de interface [!DNL Experience Manager] op [!UICONTROL Assets] op de navigatiepagina.
 
-1. Kies uit de opties **[!UICONTROL Templates]**.
+1. Kies **[!UICONTROL Templates]** uit de opties.
 
-1. Klik **[!UICONTROL Create]** en kies **[!UICONTROL Merge]** van het menu.
+1. Klik op **[!UICONTROL Create]** en kies **[!UICONTROL Merge]** in het menu.
 
    ![chlimage_1-120](assets/chlimage_1-325.png)
 
-1. Klik op de [!UICONTROL Template Merge] pagina op Elementen **[!UICONTROL Merge]** toevoegen ![](assets/do-not-localize/assets_add_icon.png).
+1. Klik op [!UICONTROL Template Merge] ![Elementen toevoegen](assets/do-not-localize/assets_add_icon.png) op de pagina &lt;a0/>.**[!UICONTROL Merge]**
 
 1. Navigeer naar de locatie van de elementen die u wilt samenvoegen en klik op de miniaturen van de elementen die u wilt samenvoegen om deze te selecteren.
 
@@ -156,25 +156,25 @@ U kunt direct nadat u het hebt gemaakt, een onderpand bewerken. U kunt het besta
 
    U kunt ook naar sjablonen zoeken in het vak Onderzoek.
 
-   U kunt door de [!DNL Experience Manager Assets] bewaarplaats of inzamelingen doorbladeren, en aan de plaats van de gewenste malplaatjes navigeren en dan hen selecteren om samen te voegen.
+   U kunt door [!DNL Experience Manager Assets] bewaarplaats of inzamelingen doorbladeren, en aan de plaats van de gewenste malplaatjes navigeren en dan hen selecteren om samen te voegen.
 
    U kunt verschillende filters toepassen om de gewenste sjablonen te doorzoeken. U kunt bijvoorbeeld naar sjablonen zoeken op basis van het bestandstype of de tags.
 
 1. Klik op **[!UICONTROL Next]** op de werkbalk.
-1. Wijzig de rangschikking van de sjablonen desgewenst in het **[!UICONTROL Preview & Reorder]** scherm en bekijk een voorvertoning van de selectie van de sjablonen die u wilt samenvoegen. Then, click **[!UICONTROL Next]** from the toolbar.
+1. Wijzig in het scherm **[!UICONTROL Preview & Reorder]** desgewenst de sjablonen en geef een voorvertoning weer van de sjablonen die u wilt samenvoegen. Klik vervolgens op **[!UICONTROL Next]** op de werkbalk.
 
    ![chlimage_1-126](assets/chlimage_1-331.png)
 
-1. In the [!UICONTROL Configure Template] screen, specify a name for the collateral. U kunt desgewenst tags opgeven die u geschikt acht. Als u de uitvoer in PDF-indeling wilt exporteren, selecteert u **[!UICONTROL Acrobat (.PDF)]**. Standaard wordt het onderpand geëxporteerd in JPG- en [!DNL InDesign] opmaakindeling. Klik op de knop om de weergaveminiatuur voor het uit meerdere pagina&#39;s bestaande element te wijzigen. **[!UICONTROL Change Thumbnail]**
+1. Geef in het scherm [!UICONTROL Configure Template] een naam op voor het onderpand. U kunt desgewenst tags opgeven die u geschikt acht. Selecteer **[!UICONTROL Acrobat (.PDF)]** als u de uitvoer in PDF-indeling wilt exporteren. Standaard wordt het onderpand geëxporteerd in de JPG- en [!DNL InDesign]-indeling. Als u de weergaveminiatuur voor het uit meerdere pagina&#39;s bestaande element wilt wijzigen, klikt u op **[!UICONTROL Change Thumbnail]**.
 
    ![chlimage_1-127](assets/chlimage_1-332.png)
 
-1. Klik **[!UICONTROL Save]** **[!UICONTROL OK]** en klik vervolgens in het dialoogvenster om het dialoogvenster te sluiten. Het uit meerdere pagina&#39;s bestaande element wordt gemaakt in de map waarmee u bent begonnen.
+1. Klik op **[!UICONTROL Save]** en vervolgens op **[!UICONTROL OK]** in het dialoogvenster om het dialoogvenster te sluiten. Het uit meerdere pagina&#39;s bestaande element wordt gemaakt in de map waarmee u bent begonnen.
 
    >[!NOTE]
    >
    >U kunt een samengevoegd onderpand later niet bewerken of gebruiken om ander onderpand te maken.
 
-## Aanbevolen werkwijzen en beperkingen {#best-practices-limitations-tips}
+## Beste werkwijzen en beperkingen {#best-practices-limitations-tips}
 
-* De [!DNL InDesign] editor in [!DNL Experience Manager] werkt op tagniveau en alle tekst onder één tag wordt beschouwd als één entiteit. Als u de tekstopmaak en stijlen tijdens het bewerken wilt behouden, moet u elke alinea (of tekst met een andere opmaak) afzonderlijk labelen.
+* De [!DNL InDesign] redacteur in [!DNL Experience Manager] werkt bij een markeringsniveau en al tekst onder één enkele markering wordt beschouwd als één enkele entiteit. Als u de tekstopmaak en stijlen tijdens het bewerken wilt behouden, moet u elke alinea (of tekst met een andere opmaak) afzonderlijk labelen.

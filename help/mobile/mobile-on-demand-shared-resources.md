@@ -11,6 +11,9 @@ topic-tags: authoring-on-demand-services-app
 discoiquuid: 958461b0-4cbb-452b-88ea-9b98ada14750
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '315'
+ht-degree: 0%
 
 ---
 
@@ -19,13 +22,13 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 >[!NOTE]
 >
->Adobe adviseert gebruikend de Redacteur van het KUUROORD voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md) informatie.
 
 De acties van het Beheer van de inhoud zijn de bouwstenen die helpen om inhoud binnen een toepassing tot stand te brengen en te beheren. De volgende handelingen worden uitgevoerd op inhoud binnen de toepassing.
 
 >[!NOTE]
 >
->Zie [Ontwerpoverwegingen voor mobiele AEM-apps](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) in de online Help voor meer informatie over ontwerpoverwegingen voor mobiele AEM-apps.
+>Raadpleeg [Ontwerpoverwegingen voor AEM Mobile-apps](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) in de online Help voor meer informatie over ontwerpoverwegingen voor AEM Mobile-apps.
 
 >[!CAUTION]
 >
@@ -35,7 +38,7 @@ De acties van het Beheer van de inhoud zijn de bouwstenen die helpen om inhoud b
 
 Inhoud zoals artikelen moet in alle auteurs en zelfs apps hetzelfde uiterlijk hebben. Het is daarom van essentieel belang dat scripts, CSS en lettertypen voor iedereen beschikbaar zijn. Deze verrichting verzendt dergelijke gedeelde middelen naar Mobiel On-Demand die dan kan worden verbruikt zoals nodig.
 
-Nadat u de app hebt geconfigureerd en gekoppeld aan een Cloud Configuration, kunt u uw gedeelde bronnen uploaden. Klik [hier](/help/mobile/mobile-apps-ondemand-application-create-configure-action.md)voor gedetailleerde stappen over het koppelen van uw app aan een cloudconfiguratie.
+Nadat u de app hebt geconfigureerd en gekoppeld aan een Cloud Configuration, kunt u uw gedeelde bronnen uploaden. Klik [hier](/help/mobile/mobile-apps-ondemand-application-create-configure-action.md) voor gedetailleerde stappen over het koppelen van uw app aan een cloudconfiguratie.
 
 >[!NOTE]
 >
@@ -43,18 +46,18 @@ Nadat u de app hebt geconfigureerd en gekoppeld aan een Cloud Configuration, kun
 
 Voer de volgende stappen uit om uw gedeelde bronnen voor een artikel te uploaden:
 
-1. Selecteer het artikel in de tegel **Artikelen** beheren.
-1. Klik op Gedeelde bronnen **uploaden** om uw gedeelde HTML-bronnen te uploaden.
+1. Selecteer het artikel uit **Artikelen beheren** tegel.
+1. Klik **Gedeelde Middelen** uploaden om uw gedeelde Middelen van HTML te uploaden.
 
-   ![chlimage_1-133](assets/chlimage_1-133.png)
+   ![chlimage_1-135](assets/chlimage_1-133.png)
 
 ### De volgende stap {#the-next-step}
 
 Zie
 
-* [AEM-inhoud ontwikkelen voor AEM Mobile On-Demand Services](/help/mobile/aem-mobile-on-demand.md)
-* [Inhoud beheren voor AEM Mobile On-Demand Services](/help/mobile/aem-mobile.md)
+* [AEM voor AEM Mobile On-demand Services ontwikkelen](/help/mobile/aem-mobile-on-demand.md)
+* [Inhoud beheren voor gebruik van AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)
 
 Of nog moet over de auteursonderwerpen leren, zie
 
-[AEM-inhoud ontwerpen voor AEM Mobile On-Demand Services-apps](/help/mobile/mobile-apps-ondemand.md)
+[AEM voor AEM Mobile On-demand Services-apps maken](/help/mobile/mobile-apps-ondemand.md)

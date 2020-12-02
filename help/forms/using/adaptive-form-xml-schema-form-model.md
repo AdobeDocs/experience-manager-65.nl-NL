@@ -10,6 +10,9 @@ discoiquuid: 0d6c12b3-3a70-48e9-a83b-974360a8b0b6
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 4ecf5efc568cd21f11801a71d491c3d75ca367fe
+workflow-type: tm+mt
+source-wordcount: '1081'
+ht-degree: 1%
 
 ---
 
@@ -126,7 +129,7 @@ Hier is een voorbeeld van een XML-schema.
 >
 >Zorg ervoor dat uw XML-schema slechts één basiselement heeft. Een XML-schema met meer dan één hoofdelement wordt niet ondersteund.
 
-## Speciale eigenschappen aan velden toevoegen met XML-schema {#adding-special-properties-to-fields-using-xml-schema}
+## Speciale eigenschappen toevoegen aan velden met XML-schema {#adding-special-properties-to-fields-using-xml-schema}
 
 U kunt de volgende kenmerken toevoegen aan elementen van een XML-schema om speciale eigenschappen toe te voegen aan de velden van het gekoppelde adaptieve formulier.
 
@@ -139,7 +142,7 @@ U kunt de volgende kenmerken toevoegen aan elementen van een XML-schema om speci
   </tr>
   <tr>
    <td><code>use=required </code></td>
-   <td>Hiermee wordt een veld verplicht gemarkeerd<br /> </td>
+   <td>Hiermee markeert u een verplicht veld<br /> </td>
    <td>Kenmerk</td>
   </tr>
   <tr>
@@ -167,11 +170,12 @@ U kunt de volgende kenmerken toevoegen aan elementen van een XML-schema om speci
 >
 >* Het eerste teken van de elementnaam omzetten in hoofdletters
 >* Witruimte invoegen bij grenzen van camelhoofdletters.
->
->
-Als u bijvoorbeeld het schema-element toevoegt, wordt het bijschrift dat in het aangepaste formulier wordt gegenereerd, `userFirstName` `User First Name`opgeslagen.
 
-## Acceptabele waarden voor een adaptieve formuliercomponent beperken {#limit-acceptable-values-for-an-adaptive-form-component}
+>
+>
+Als u bijvoorbeeld het schema-element `userFirstName` toevoegt, is het bijschrift dat in het adaptieve formulier wordt gegenereerd `User First Name`.
+
+## Acceptabele waarden beperken voor een adaptieve formuliercomponent {#limit-acceptable-values-for-an-adaptive-form-component}
 
 U kunt de volgende beperkingen toevoegen aan elementen van het XML-schema om de waarden te beperken die acceptabel zijn voor een adaptieve formuliercomponent:
 
@@ -200,7 +204,7 @@ U kunt de volgende beperkingen toevoegen aan elementen van het XML-schema om de 
    <td>
     <ul>
      <li>Numeriek vak</li>
-     <li>Numerieke stap<br /> </li>
+     <li>Numerieke Stepper<br /> </li>
      <li>Datumkiezer</li>
     </ul> </td>
   </tr>
@@ -289,7 +293,7 @@ U kunt de volgende beperkingen toevoegen aan elementen van het XML-schema om de 
 
 **Hoe weet ik welk element in de structuur is gekoppeld aan welk XML-element?**
 
-Wanneer u dubbelklikt op een element in de Inhoudszoeker, worden een veldnaam en een eigenschap met de naam `bindRef`. Deze eigenschap wijst het structuurelement toe aan het element of kenmerk in het schema.
+Wanneer u dubbelklikt op een element in de Inhoudszoeker, worden een veldnaam en een eigenschap met de naam `bindRef` weergegeven in een pop-up. Deze eigenschap wijst het structuurelement toe aan het element of kenmerk in het schema.
 
 ![Een bindveld van een element in een XML-schema](assets/dblclick.png)
 
@@ -297,7 +301,7 @@ Het bindRef</code> gebied toont de vereniging tussen een boomelement en een elem
 
 >[!NOTE]
 >
->Kenmerken hebben een `@` symbool in hun `bindRef`waarde om ze van elementen te onderscheiden. Bijvoorbeeld, `/config/projectDetails/@duration`.
+>Attributen hebben een `@` symbool in hun `bindRef`waarde om hen van elementen te onderscheiden. Bijvoorbeeld, `/config/projectDetails/@duration`.
 
 **Waarom kan ik geen afzonderlijke elementen van een subformulier (structuur gegenereerd van een complex type) slepen voor herhaalbare subformulieren (waarden voor minOccurs of maxOccurs zijn groter dan 1)?**
 
@@ -312,4 +316,4 @@ U hebt twee opties:
 
 **Wat is een bindRef?**
 
-A `bindRef` is de verbinding tussen een adaptieve vormcomponent en een schemaelement of attribuut. Hiermee wordt aangegeven `XPath` waar de waarde die wordt vastgelegd vanuit deze component of dit veld, beschikbaar is in de uitvoer-XML. A `bindRef`wordt ook gebruikt bij het vooraf invullen van een veldwaarde in vooraf ingevulde (vooraf ingevulde) XML.
+A `bindRef` is de verbinding tussen een adaptieve vormcomponent en een schemaelement of attribuut. Het dicteert `XPath` waar de waarde die van deze component of het gebied wordt gevangen beschikbaar in de outputXML is. Een `bindRef`wordt ook gebruikt bij het vooraf invullen van een veldwaarde in vooraf ingevulde (vooraf ingevulde) XML.

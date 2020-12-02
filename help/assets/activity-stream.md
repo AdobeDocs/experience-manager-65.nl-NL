@@ -26,13 +26,13 @@ De volgende bewerkingen worden in de activiteitsstroom aangemeld:
 * Afwijzen
 * Verplaatsen
 
-De activiteitenlogboeken die in de tijdlijn moeten worden weergegeven, worden opgehaald vanaf de locatie `/var/audit/com.day.cq.dam/content/dam` in CRX, waar logboekbestanden worden opgeslagen. In addition, timeline activity is logged when new assets are uploaded or existing asses are modified and checked into [!DNL Experience Manager] via [Adobe Asset Link](https://helpx.adobe.com/nl/enterprise/using/manage-assets-using-adobe-asset-link.html) or [Experience Manager desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
+De activiteitenlogboeken die in de tijdlijn moeten worden weergegeven, worden opgehaald vanaf de locatie `/var/audit/com.day.cq.dam/content/dam` in CRX, waar logboekbestanden worden opgeslagen. Bovendien wordt de tijdlijnactiviteit geregistreerd wanneer nieuwe activa worden geupload of bestaande activa worden gewijzigd en in [!DNL Experience Manager] via [Adobe Activa Link](https://helpx.adobe.com/nl/enterprise/using/manage-assets-using-adobe-asset-link.html) of [Experience Manager Desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html) worden gecontroleerd.
 
 >[!NOTE]
 >
 >Tijdelijke workflows worden niet weergegeven in de tijdlijn, omdat er voor deze workflows geen historiegegevens worden opgeslagen.
 
-Als u de activiteitsstroom wilt weergeven, voert u een of meer bewerkingen uit op het element, selecteert u het element en kiest u een optie in de lijst GlobalNav. **[!UICONTROL Timeline]**
+Als u de activiteitsstroom wilt weergeven, voert u een of meer bewerkingen uit op het element, selecteert u het element en kiest u **[!UICONTROL Timeline]** in de lijst GlobalNav.
 
 ![timeline-2](assets/timeline-2.png)
 

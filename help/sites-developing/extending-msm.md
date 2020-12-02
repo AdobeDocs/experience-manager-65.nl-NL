@@ -19,7 +19,7 @@ ht-degree: 0%
 ---
 
 
-# Het beheer van meerdere sites uitbreiden{#extending-the-multi-site-manager}
+# Het uitbreiden van de Manager van de MultiPlaats{#extending-the-multi-site-manager}
 
 Met deze pagina kunt u de functionaliteit van het beheer van meerdere sites uitbreiden:
 
@@ -31,9 +31,9 @@ Met deze pagina kunt u de functionaliteit van het beheer van meerdere sites uitb
 
 >[!NOTE]
 >
->Deze pagina moet worden gelezen in combinatie met Inhoud [opnieuw gebruiken: Beheer](/help/sites-administering/msm.md)van meerdere sites.
+>Deze pagina moet worden gelezen in combinatie met [Inhoud opnieuw gebruiken: Beheer van meerdere sites](/help/sites-administering/msm.md).
 >
->De volgende onderdelen van de herstructurering van de effectenbewaarinstelling in AEM 6.4 zouden ook van belang kunnen zijn:
+>De volgende onderdelen van de herstructurering van de effectenbewaarinstellingen in AEM 6.4 zouden ook van belang kunnen zijn:
 >* [Configuraties van blauwdruk voor beheer op meerdere locaties](https://docs.adobe.com/content/help/en/experience-manager-64/deploying/restructuring/sites-repository-restructuring-in-aem-6-4.html#multi-site-manager-blueprint-configurations)
 >* [Uitrolconfiguraties voor beheer op meerdere locaties](https://docs.adobe.com/content/help/en/experience-manager-64/deploying/restructuring/sites-repository-restructuring-in-aem-6-4.html#multi-site-manager-rollout-configurations)
 
@@ -49,61 +49,61 @@ Beheer van meerdere sites bestaat uit de volgende pakketten:
 * [com.day.cq.wcm.msm.api](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/package-frame.html)
 * [com.day.cq.wcm.msm.commons](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/commons/package-frame.html)
 
-De belangrijkste MSM API-objecten hebben als volgt interactie (zie ook Gebruikte [termen](/help/sites-administering/msm.md#terms-used)):
+De belangrijkste MSM API voorwerpen werken als volgt in wisselwerking (zie ook [Gebruikte Termen](/help/sites-administering/msm.md#terms-used)):
 
 ![chlimage_1-73](assets/chlimage_1-73.png)
 
 * **`Blueprint`**
 
-   Een `Blueprint` (zoals in de configuratie [van de](/help/sites-administering/msm.md#source-blueprints-and-blueprint-configurations)blauwdruk) specificeert de pagina&#39;s waarvan een levende exemplaar inhoud kan erven.
+   A `Blueprint` (zoals in [blauwdrukconfiguratie](/help/sites-administering/msm.md#source-blueprints-and-blueprint-configurations)) specificeert de pagina&#39;s waarvan een levende kopie inhoud kan erven.
 
    ![chlimage_1-74](assets/chlimage_1-74.png)
 
    * Het gebruik van een blauwdrukconfiguratie ( `Blueprint`) is optioneel, maar:
 
-      * Staat de auteur toe om de optie van de **Output** op de bron (aan (uitdrukkelijk) duw wijzigingen aan levende exemplaren te gebruiken die van deze bron erven).
-      * Hiermee kan de auteur Site **** maken gebruiken. hierdoor kan de gebruiker eenvoudig talen selecteren en de structuur van de live kopie configureren .
+      * Staat de auteur toe om de **optie van de Uitvoer** op de bron (aan (uitdrukkelijk) duw wijzigingen aan levende exemplaren te gebruiken die van deze bron erven).
+      * Hiermee kan de auteur **Site maken/> gebruiken. hierdoor kan de gebruiker eenvoudig talen selecteren en de structuur van de live kopie configureren .**
       * Bepaalt de standaardrollout configuratie voor om het even welke resulterende levende exemplaren.
 
-* **`LiveRelationship`** De `LiveRelationship` eigenschap geeft de verbinding (relatie) aan tussen een bron in de actieve kopieervertakking en de equivalente bron/blauwdrukbron.
+* **`LiveRelationship`** De  `LiveRelationship` opgegeven verbinding (relatie) tussen een bron in de actieve kopieervertakking en de equivalente bron/blauwdrukbron.
 
    * De relaties worden gebruikt bij het realiseren van overerving en rollout.
-   * `LiveRelationship` de voorwerpen verlenen toegang (verwijzingen) tot de rollout configuraties ( `RolloutConfig`), `LiveCopy`, en `LiveStatus` voorwerpen met betrekking tot de verhouding.
+   * `LiveRelationship` de voorwerpen verlenen toegang (verwijzingen) tot de rollout configuraties (  `RolloutConfig`),  `LiveCopy`, en  `LiveStatus` voorwerpen met betrekking tot de verhouding.
 
-   * Er wordt bijvoorbeeld een live kopie gemaakt `/content/copy/us` van de bron/blauwdruk op `/content/we-retail/language-masters`. De middelen `/content/we.retail/language-masters/en/jcr:content` en `/content/copy/us/en/jcr:content` vormen een relatie.
+   * Bijvoorbeeld, wordt een levende exemplaar gecreeerd in `/content/copy/us` van de bron/blauwdruk bij `/content/we-retail/language-masters`. De bronnen `/content/we.retail/language-masters/en/jcr:content` en `/content/copy/us/en/jcr:content` vormen een relatie.
 
-* **`LiveCopy`** `LiveCopy` bevat de configuratiedetails voor de verhoudingen ( `LiveRelationship`) tussen de levende exemplaarmiddelen en hun bron/blauwdruk middelen.
+* **`LiveCopy`** `LiveCopy` bevat de configuratiedetails voor de verhoudingen (  `LiveRelationship`) tussen de levende exemplaarmiddelen en hun bron/blauwdruk middelen.
 
-   * Met de `LiveCopy` klasse hebt u toegang tot het pad van de pagina, het pad van de bron-/blauwdrukpagina, de rollout-configuraties en of onderliggende pagina&#39;s ook in de `LiveCopy`pagina zijn opgenomen.
+   * Met de klasse `LiveCopy` hebt u toegang tot het pad van de pagina, het pad van de bron-/blauwdrukpagina, de rollout-configuraties en of onderliggende pagina&#39;s ook worden opgenomen in `LiveCopy`.
 
-   * Elke keer dat `LiveCopy` Site **maken of Live kopie** maken **wordt gebruikt, wordt een** knooppunt gemaakt.
+   * Elke keer dat `LiveCopy` wordt gemaakt, wordt een **Site maken** of **Live kopie maken** gebruikt.
 
 * **`LiveStatus`**
 
-   `LiveStatus` objecten bieden toegang tot de runtimestatus van een `LiveRelationship`. Wordt gebruikt om de synchronisatiestatus van een live kopie te controleren.
+   `LiveStatus` objecten bieden toegang tot de runtimestatus van een  `LiveRelationship`. Wordt gebruikt om de synchronisatiestatus van een live kopie te controleren.
 
 * **`LiveAction`**
 
-   A `LiveAction` is een actie die op elk middel wordt uitgevoerd dat bij de rollout betrokken is.
+   Een `LiveAction` is een actie die op elk middel wordt uitgevoerd dat bij de uitrol betrokken is.
 
    * LiveActions wordt slechts geproduceerd door RolloutConfigs.
 
 * **`LiveActionFactory`**
 
-   Maakt `LiveAction` objecten op basis van een `LiveAction` configuratie. Configuraties worden opgeslagen als bronnen in de opslagplaats.
+   Hiermee maakt u `LiveAction`-objecten op basis van een `LiveAction`-configuratie. Configuraties worden opgeslagen als bronnen in de opslagplaats.
 
-* **`RolloutConfig`** De `RolloutConfig` bevat een lijst met `LiveActions`die moet worden gebruikt wanneer ze worden geactiveerd. De `LiveCopy` erft het `RolloutConfig` en het resultaat is aanwezig in de `LiveRelationship`.
+* **`RolloutConfig`** De code  `RolloutConfig` bevat een lijst met  `LiveActions`objecten die moeten worden gebruikt wanneer ze worden geactiveerd. `LiveCopy` erft `RolloutConfig` en het resultaat is aanwezig in `LiveRelationship`.
 
    * Voor het eerst dat een live kopie wordt ingesteld, wordt ook een RolloutConfig gebruikt (die de LiveActions activeert).
 
 ## Nieuwe synchronisatiehandeling maken {#creating-a-new-synchronization-action}
 
-Creeer de acties van de douanesynchronisatie om met uw rollout configuraties te gebruiken. Maak een synchronisatiehandeling als de [geïnstalleerde handelingen](/help/sites-administering/msm-sync.md#installed-synchronization-actions) niet voldoen aan uw specifieke toepassingsvereisten. Hiertoe maakt u twee klassen:
+Creeer de acties van de douanesynchronisatie om met uw rollout configuraties te gebruiken. Creeer een synchronisatieactie wanneer [geïnstalleerde acties](/help/sites-administering/msm-sync.md#installed-synchronization-actions) niet aan uw specifieke toepassingsvereisten voldoen. Hiertoe maakt u twee klassen:
 
 * Een implementatie van de [ `com.day.cq.wcm.msm.api.LiveAction`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveAction.html) interface die de actie uitvoert.
-* Een component OSGI die de [ interface implementeert en instanties van uw `com.day.cq.wcm.msm.api.LiveActionFactory`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) `LiveAction` klasse maakt.
+* Een component OSGI die de [ `com.day.cq.wcm.msm.api.LiveActionFactory`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) interface uitvoert en instanties van uw `LiveAction` klasse leidt.
 
-De `LiveActionFactory` creeert instanties van de `LiveAction` klasse voor een bepaalde configuratie:
+Met `LiveActionFactory` maakt u instanties van de klasse `LiveAction` voor een bepaalde configuratie:
 
 * `LiveAction` klassen omvatten de volgende methoden:
 
@@ -112,19 +112,19 @@ De `LiveActionFactory` creeert instanties van de `LiveAction` klasse voor een be
 
 * `LiveActionFactory` de klassen omvatten de volgende leden:
 
-   * `LIVE_ACTION_NAME`: Een veld dat de naam van de gekoppelde `LiveAction`. Deze naam moet overeenkomen met de waarde die door de `getName` methode van de `LiveAction` klasse wordt geretourneerd.
+   * `LIVE_ACTION_NAME`: Een veld dat de naam van de gekoppelde  `LiveAction`. Deze naam moet overeenkomen met de waarde die wordt geretourneerd door de methode `getName` van de klasse `LiveAction`.
 
-   * `createAction`: Maakt een instantie van de `LiveAction`. De facultatieve `Resource` parameter kan worden gebruikt om configuratieinformatie te verstrekken.
+   * `createAction`: Maakt een instantie van de  `LiveAction`. De optionele parameter `Resource` kan worden gebruikt om configuratiegegevens op te geven.
 
-   * `createsAction`: Retourneert de naam van de gekoppelde `LiveAction`.
+   * `createsAction`: Retourneert de naam van de gekoppelde  `LiveAction`.
 
-### De LiveAction Configuration-node openen {#accessing-the-liveaction-configuration-node}
+### Toegang krijgen tot de LiveAction Configuration Node {#accessing-the-liveaction-configuration-node}
 
-Gebruik het `LiveAction` configuratieknooppunt in de repository om informatie op te slaan die het runtimegedrag van de `LiveAction` instantie beïnvloedt. Het knooppunt in de opslagplaats dat de `LiveAction` configuratie opslaat, is tijdens runtime beschikbaar voor het `LiveActionFactory` object. Daarom kunt u eigenschappen aan de configuratieknooppunt aan toevoegen en hen in uw `LiveActionFactory` implementatie gebruiken zoals nodig.
+Gebruik het `LiveAction` configuratieknooppunt in de repository om informatie op te slaan die het runtimegedrag van de `LiveAction` instantie beïnvloedt. Het knooppunt in de opslagplaats dat de `LiveAction`-configuratie opslaat, is tijdens runtime beschikbaar voor het `LiveActionFactory`-object. Daarom kunt u eigenschappen aan de configuratieknoop toevoegen aan en hen in uw `LiveActionFactory` implementatie gebruiken zoals nodig.
 
-In een document `LiveAction` moet bijvoorbeeld de naam van de auteur van de blauwdruk worden opgeslagen. Een bezit van de configuratieknoop omvat de bezitsnaam van de blauwdruk pagina die de informatie opslaat. Tijdens runtime, `LiveAction` wint de bezitsnaam van de configuratie terug, dan verkrijgt de bezitswaarde.
+In een `LiveAction` moet bijvoorbeeld de naam van de auteur van de blauwdruk worden opgeslagen. Een bezit van de configuratieknoop omvat de bezitsnaam van de blauwdruk pagina die de informatie opslaat. Tijdens runtime, wint `LiveAction` de bezitsnaam van de configuratie terug, dan verkrijgt de bezitswaarde.
 
-De parameter van de ` [LiveActionFactory](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html).createAction` methode is een `Resource` object. Dit `Resource` object vertegenwoordigt het `cq:LiveSyncAction` knooppunt voor deze live actie in de rollout-configuratie. zie het [Creëren van een Configuratie](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration)van de Output. Zoals gebruikelijk wanneer het gebruiken van een configuratieknoop, zou u het aan een `ValueMap` voorwerp moeten aanpassen:
+De parameter van de methode ` [LiveActionFactory](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html).createAction` is een `Resource` voorwerp. Dit `Resource` voorwerp vertegenwoordigt de `cq:LiveSyncAction` knoop voor deze levende actie in de rollout configuratie; zie [Een rollout-configuratie maken](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration). Zoals gebruikelijk wanneer het gebruiken van een configuratieknoop, zou u het aan een `ValueMap` voorwerp moeten aanpassen:
 
 ```java
 public LiveAction createAction(Resource resource) throws WCMException {
@@ -138,20 +138,20 @@ public LiveAction createAction(Resource resource) throws WCMException {
 }
 ```
 
-### Toegang krijgen tot Target Nodes, Source Nodes en de LiveRelationship {#accessing-target-nodes-source-nodes-and-the-liverelationship}
+### Toegang tot doelknooppunten, bronknooppunten en de LiveRelatie {#accessing-target-nodes-source-nodes-and-the-liverelationship}
 
-De volgende objecten worden opgegeven als parameters van de `execute` methode van het `LiveAction` object:
+De volgende objecten worden opgegeven als parameters van de methode `execute` van het object `LiveAction`:
 
-* Een [ `Resource`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) object dat de bron van de actieve kopie vertegenwoordigt.
-* Een `Resource` object dat het doel van de actieve kopie vertegenwoordigt.
-* Het [ `LiveRelationship`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveRelationship.html) object voor de actieve kopie.
-* De `autoSave` waarde geeft aan of uw wijzigingen die in de opslagplaats zijn aangebracht, `LiveAction` moeten worden opgeslagen.
+* Een [ `Resource`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html)-object dat de bron van de actieve kopie vertegenwoordigt.
+* Een `Resource`-object dat het doel van de actieve kopie vertegenwoordigt.
+* Het [ `LiveRelationship`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveRelationship.html) voorwerp voor het levende exemplaar.
+* De waarde `autoSave` geeft aan of uw `LiveAction` wijzigingen moet opslaan die in de opslagplaats zijn aangebracht.
 
 * De reset-waarde geeft de rollout reset-modus aan.
 
-Van deze voorwerpen kunt u alle informatie over het verkrijgen `LiveCopy`. U kunt de `Resource` objecten ook gebruiken om objecten te verkrijgen `ResourceResolver`, `Session`en `Node` . Deze objecten zijn handig voor het bewerken van inhoud in opslagruimten:
+Van deze voorwerpen kunt u alle informatie over `LiveCopy` verkrijgen. U kunt de `Resource` voorwerpen ook gebruiken om `ResourceResolver`, `Session`, en `Node` voorwerpen te verkrijgen. Deze objecten zijn handig voor het bewerken van inhoud in opslagruimten:
 
-In de eerste regel van de volgende code is de bron het `Resource` object van de bronpagina:
+In de eerste regel van de volgende code is de bron het `Resource`-object van de bronpagina:
 
 ```java
 ResourceResolver resolver = source.getResourceResolver();
@@ -161,9 +161,9 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 >[!NOTE]
 >
->De `Resource` argumenten kunnen `null` of `Resources` voorwerpen zijn die niet aan `Node` voorwerpen, zoals [ `NonExistingResource`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/NonExistingResource.html) voorwerpen aanpassen.
+>De argumenten `Resource` kunnen `null` of `Resources` voorwerpen zijn die niet aan `Node` voorwerpen, zoals [ `NonExistingResource`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/NonExistingResource.html) voorwerpen aanpassen.
 
-## Een nieuwe rollout-configuratie maken {#creating-a-new-rollout-configuration}
+## Nieuwe rollout-configuratie maken {#creating-a-new-rollout-configuration}
 
 Maak een rollout-configuratie wanneer de geïnstalleerde rollout-configuraties niet voldoen aan de toepassingsvereisten:
 
@@ -174,9 +174,9 @@ De nieuwe rollout configuratie is dan beschikbaar aan u wanneer het plaatsen van
 
 >[!NOTE]
 >
->Zie ook de [beste werkwijzen voor het aanpassen van rollouts](/help/sites-administering/msm-best-practices.md#customizing-rollouts).
+>Zie ook de [beste praktijken voor het aanpassen van rollouts](/help/sites-administering/msm-best-practices.md#customizing-rollouts).
 
-### De configuratie voor rollout maken {#create-the-rollout-configuration}
+### De rollout-configuratie {#create-the-rollout-configuration} maken
 
 Een nieuwe rollout-configuratie maken:
 
@@ -200,57 +200,57 @@ Een nieuwe rollout-configuratie maken:
    >* Wijzigingen aanbrengen in /apps
 
 
-1. Onder dit **Create** een knoop met de volgende eigenschappen:
+1. Onder deze **Create** een knooppunt met de volgende eigenschappen:
 
    * **Naam**: De knooppuntnaam van de rollout configuratie. md#installed-synchronization-actions), bijvoorbeeld `contentCopy` of `workflow`.
-   * **Type**: `cq:RolloutConfig`
+   * **Type**:  `cq:RolloutConfig`
 
 1. Voeg de volgende eigenschappen toe aan dit knooppunt:
-   * **Naam**: `jcr:title`
+   * **Naam**:  `jcr:title`
 
-      **Type**: `String`
+      **Type**:  `String`
       **Waarde**: Een identificerende titel die in UI zal verschijnen.
-   * **Naam**: `jcr:description`
+   * **Naam**:  `jcr:description`
 
-      **Type**: `String`
+      **Type**:  `String`
       **Waarde**: Een optionele beschrijving.
-   * **Naam**: `cq:trigger`
+   * **Naam**:  `cq:trigger`
 
-      **Type**: `String`
-      **Waarde**: De [rollout Trigger](/help/sites-administering/msm-sync.md#rollout-triggers) die moet worden gebruikt. Selecteer  vanuit:
+      **Type**:  `String`
+      **Waarde**: De  [rollout-](/help/sites-administering/msm-sync.md#rollout-triggers) trigger die moet worden gebruikt. Selecteer  vanuit:
       * `rollout`
       * `modification`
       * `publish`
       * `deactivate`
 
-1. Klik op Alles **opslaan**.
+1. Klik **Alles opslaan**.
 
-### Synchronisatiehandelingen toevoegen aan de configuratie van de rollout {#add-synchronization-actions-to-the-rollout-configuration}
+### Synchronisatiehandelingen toevoegen aan de configuratie {#add-synchronization-actions-to-the-rollout-configuration}
 
-De configuraties van de rollout worden opgeslagen onder de knoop [van de](#create-the-rollout-configuration) rollout configuratie die u onder `/apps/msm/<your-project>/rolloutconfigs` knoop hebt gecreeerd.
+De configuraties van de rollout worden opgeslagen onder [rollout configuratieknooppunt](#create-the-rollout-configuration) die u onder `/apps/msm/<your-project>/rolloutconfigs` knoop hebt gecreeerd.
 
-Voeg kindknopen van type toe `cq:LiveSyncAction` om synchronisatieacties aan de rollout configuratie toe te voegen. De volgorde van de actieknooppunten voor synchronisatie bepaalt de volgorde waarin de acties plaatsvinden.
+Voeg onderliggende knooppunten van het type `cq:LiveSyncAction` toe om synchronisatiehandelingen toe te voegen aan de rollout-configuratie. De volgorde van de actieknooppunten voor synchronisatie bepaalt de volgorde waarin de acties plaatsvinden.
 
-1. Nog in CRXDE Lite, selecteer uw knoop van de Configuratie van de [Uitvoer](#create-the-rollout-configuration) .
+1. Stilstaand in CRXDE Lite, selecteer uw [knoop van de Configuratie van de Output](#create-the-rollout-configuration).
 
    Bijvoorbeeld:
    `/apps/msm/myproject/rolloutconfigs/myrolloutconfig`
 
-1. **Maak** een knooppunt met de volgende knoopeigenschappen:
+1. **Knooppunt** maken met de volgende knoopeigenschappen:
 
    * **Naam**: De knooppuntnaam van de synchronisatieactie.
-De naam moet gelijk zijn aan de naam **van de** handeling in de tabel onder [Synchronisatiehandelingen](/help/sites-administering/msm-sync.md#installed-synchronization-actions), bijvoorbeeld `contentCopy` of `workflow`.
-   * **Type**: `cq:LiveSyncAction`
+De naam moet het zelfde als **Naam van de Actie** in de lijst onder [Synchronisatieacties](/help/sites-administering/msm-sync.md#installed-synchronization-actions), bijvoorbeeld `contentCopy` of `workflow` zijn.
+   * **Type**:  `cq:LiveSyncAction`
 
 1. Voeg en vorm zo vele knopen van de synchronisatieactie toe aangezien u vereist. Wijzig de rangschikking van de actieknoppen zodat de volgorde overeenkomt met de volgorde waarin u deze wilt uitvoeren. Het bovenste actieknooppunt komt eerst voor.
 
-## Een eenvoudige LiveActionFactory-klasse maken en gebruiken {#creating-and-using-a-simple-liveactionfactory-class}
+## Een eenvoudige LiveActionFactory-klasse {#creating-and-using-a-simple-liveactionfactory-class} maken en gebruiken
 
-Volg de procedures in deze sectie om een `LiveActionFactory` en gebruik het in een rollout configuratie te ontwikkelen. De procedures gebruiken Maven en Eclipse om `LiveActionFactory`:
+Volg de procedures in deze sectie om `LiveActionFactory` te ontwikkelen en het in een rollout configuratie te gebruiken. De procedures gebruiken Maven en Eclipse om `LiveActionFactory` te ontwikkelen en op te stellen:
 
-1. [Maak het gemaakte project](#create-the-maven-project) en importeer het in Eclipse.
-1. [Afhankelijkheden](#add-dependencies-to-the-pom-file) toevoegen aan het POM-bestand.
-1. [Voer de `LiveActionFactory` interface](#implement-liveactionfactory) uit en stel de bundel OSGi op.
+1. [Maak het gemaakte ](#create-the-maven-project) project en importeer het in Eclipse.
+1. [Voeg ](#add-dependencies-to-the-pom-file) afhankelijke elementen toe aan het POM-bestand.
+1. [Voer  `LiveActionFactory` ](#implement-liveactionfactory) interface uit en stel de bundel OSGi op.
 1. [Maak de rollout-configuratie](#create-the-example-rollout-configuration).
 1. [Maak de live kopie](#create-the-live-copy).
 
@@ -261,14 +261,14 @@ CODE VOOR GITHUB
 U kunt de code van deze pagina op GitHub vinden
 
 * [Open ExperienceManager-java-msmrollout project op GitHub](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-msmrollout)
-* Het project downloaden als [ZIP-bestand](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-msmrollout/archive/master.zip)
+* Het project downloaden als [een ZIP-bestand](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-msmrollout/archive/master.zip)
 
-### Maven {#create-the-maven-project}
+### Maven van project {#create-the-maven-project}
 
 Voor de volgende procedure is het vereist dat u het adobe-public profiel hebt toegevoegd aan het Maven-instellingenbestand.
 
-* Zie [De insteekmodule Inhoudspakket maken voor meer informatie over het adobe-public profiel](/help/sites-developing/vlt-mavenplugin.md#obtaining-the-content-package-maven-plugin)
-* Zie de Maven [Settings Reference](https://maven.apache.org/settings.html)voor meer informatie over het Maven-instellingenbestand.
+* Zie [De insteekmodule Inhoudspakket verkrijgen](/help/sites-developing/vlt-mavenplugin.md#obtaining-the-content-package-maven-plugin) voor informatie over het adobe-public profiel.
+* Voor informatie over het Maven montageendossier, zie de Gemaakt [Verwijzing van Montages](https://maven.apache.org/settings.html).
 
 1. Open een terminal- of opdrachtregelsessie en wijzig de directory om te wijzen naar de locatie waar u het project wilt maken.
 1. Voer de volgende opdracht in:
@@ -280,25 +280,25 @@ Voor de volgende procedure is het vereist dat u het adobe-public profiel hebt to
 1. Geef de volgende waarden op bij interactieve prompt:
 
    * `groupId`: `com.adobe.example.msm`
-   * `artifactId`: `MyLiveActionFactory`
-   * `version`: `1.0-SNAPSHOT`
-   * `package`: `MyPackage`
-   * `appsFolderName`: `myapp`
-   * `artifactName`: `MyLiveActionFactory package`
-   * `packageGroup`: `myPackages`
+   * `artifactId`:  `MyLiveActionFactory`
+   * `version`:  `1.0-SNAPSHOT`
+   * `package`:  `MyPackage`
+   * `appsFolderName`:  `myapp`
+   * `artifactName`:  `MyLiveActionFactory package`
+   * `packageGroup`:  `myPackages`
 
 1. Start Eclipse en [importeer het Maven-project](/help/sites-developing/howto-projects-eclipse.md#import-the-maven-project-into-eclipse).
 
 ### Afhankelijkheden toevoegen aan het POM-bestand {#add-dependencies-to-the-pom-file}
 
-Voeg gebiedsdelen toe zodat de compiler van de Verduistering de klassen kan van verwijzingen voorzien die in de `LiveActionFactory` code worden gebruikt.
+Voeg gebiedsdelen toe zodat de compiler van de Verduistering de klassen kan van verwijzingen voorzien die in `LiveActionFactory` code worden gebruikt.
 
 1. Open het bestand in Eclipse Project Explorer:
 
    `MyLiveActionFactory/pom.xml`
 
-1. Klik in de editor op het `pom.xml` tabblad en zoek de `project/dependencyManagement/dependencies` sectie.
-1. Voeg de volgende XML in het `dependencyManagement` element toe en sla het bestand op.
+1. Klik in de editor op het tabblad `pom.xml` en zoek de sectie `project/dependencyManagement/dependencies`.
+1. Voeg de volgende XML in het `dependencyManagement` element toe en sla dan het dossier op.
 
    ```xml
     <dependency>
@@ -345,8 +345,8 @@ Voeg gebiedsdelen toe zodat de compiler van de Verduistering de klassen kan van 
     </dependency>
    ```
 
-1. Open het POM- dossier voor de bundel van de Ontdekkingsreiziger **van het** Project bij `MyLiveActionFactory-bundle/pom.xml`.
-1. Klik in de editor op het `pom.xml` tabblad en zoek de sectie Project/afhankelijkheden. Voeg de volgende XML binnen het gebiedsdeelelement toe en sla dan het dossier op:
+1. Open het POM-bestand voor de bundel vanuit **Projectverkenner** op `MyLiveActionFactory-bundle/pom.xml`.
+1. In de redacteur, klik `pom.xml` tabel en bepaal de plaats van de project/gebiedsdeel. Voeg de volgende XML binnen het gebiedsdeelelement toe en bewaar dan het dossier:
 
    ```xml
     <dependency>
@@ -379,12 +379,12 @@ Voeg gebiedsdelen toe zodat de compiler van de Verduistering de klassen kan van 
     </dependency>
    ```
 
-### LiveActionFactory implementeren {#implement-liveactionfactory}
+### LiveActionFactory {#implement-liveactionfactory} implementeren
 
-De volgende `LiveActionFactory` klasse voert een `LiveAction` die berichten over de bron en doelpagina&#39;s registreert uit, en kopieert het `cq:lastModifiedBy` bezit van de bronknoop aan de doelknoop. De naam van de live actie is `exampleLiveAction`.
+De volgende `LiveActionFactory` klasse voert `LiveAction` uit die berichten over de bron en doelpagina&#39;s registreert, en kopieert het `cq:lastModifiedBy` bezit van de bronknoop aan de doelknoop. De naam van de live actie is `exampleLiveAction`.
 
-1. Klik in Eclipse Project Explorer met de rechtermuisknop op het `MyLiveActionFactory-bundle/src/main/java/com.adobe.example.msm` pakket en klik op **Nieuw** > **Klasse**. Voer voor de **naam** de naam in `ExampleLiveActionFactory` en klik op **Voltooien**.
-1. Open het `ExampleLiveActionFactory.java` bestand, vervang de inhoud door de volgende code en sla het bestand op.
+1. In de Ontdekkingsreiziger van het Project van de Verduistering, klik `MyLiveActionFactory-bundle/src/main/java/com.adobe.example.msm` pakket met de rechtermuisknop aan en klik **Nieuw** > **Klasse**. Voor **Naam**, ga `ExampleLiveActionFactory` in en klik dan **Voltooien**.
+1. Open het `ExampleLiveActionFactory.java`-bestand, vervang de inhoud door de volgende code en sla het bestand op.
 
    ```java
    package com.adobe.example.msm;
@@ -527,13 +527,13 @@ De volgende `LiveActionFactory` klasse voert een `LiveAction` die berichten over
    }
    ```
 
-1. Gebruikend de terminal of bevelzitting, verander de folder in de `MyLiveActionFactory` folder (de Gemaakt projectfolder). Voer vervolgens de volgende opdracht in:
+1. Gebruikend de terminal of bevelzitting, verander de folder in `MyLiveActionFactory` folder (de Gemaakt projectfolder). Voer vervolgens de volgende opdracht in:
 
    ```shell
    mvn -PautoInstallPackage clean install
    ```
 
-   Het AEM- `error.log` bestand moet aangeven dat de bundel is gestart.
+   Het AEM `error.log` bestand moet aangeven dat de bundel is gestart.
 
    Bijvoorbeeld [https://localhost:4502/system/console/status-slinglogs](https://localhost:4502/system/console/status-slinglogs).
 
@@ -545,46 +545,46 @@ De volgende `LiveActionFactory` klasse voert een `LiveAction` die berichten over
    13.08.2013 14:34:55.454 *INFO* [OsgiInstallerImpl] org.apache.sling.audit.osgi.installer Started bundle com.adobe.example.msm.MyLiveActionFactory-bundle [316]
    ```
 
-### De voorbeeldconfiguratie voor rollout maken {#create-the-example-rollout-configuration}
+### De voorbeeldconfiguratie {#create-the-example-rollout-configuration} maken
 
-Creeer de MSM rollout configuratie die de `LiveActionFactory` die u creeerde gebruikt:
+Creeer de MSM rollout configuratie die `LiveActionFactory` gebruikt die u creeerde:
 
-1. Creeer en configuratie een Configuratie van de [Uitvoer met de standaardprocedure](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration) - en het gebruiken van de eigenschappen:
+1. Creeer en configuratie een [Configuratie van de Output met de standaardprocedure](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration) - en het gebruiken van de eigenschappen:
 
    * **Titel**: Voorbeeld-uitrolconfiguratie
    * **Naam**: voorbeplerolloutconfig
-   * **cq:trigger**: `publish`
+   * **cq:trigger**:  `publish`
 
-### Voeg de Actieve Actie aan de Configuratie van de Uitvoer van het Voorbeeld toe {#add-the-live-action-to-the-example-rollout-configuration}
+### De actieve handeling toevoegen aan de voorbeeldconfiguratie {#add-the-live-action-to-the-example-rollout-configuration}
 
 Vorm de rollout configuratie die u in de vorige procedure creeerde zodat het de `ExampleLiveActionFactory` klasse gebruikt.
 
 1. Open CRXDE Lite; bijvoorbeeld [https://localhost:4502/crx/de](https://localhost:4502/crx/de).
 1. Maak het volgende knooppunt onder `/apps/msm/rolloutconfigs/examplerolloutconfig/jcr:content`:
 
-   * **Naam**: `exampleLiveAction`
-   * **Type**: `cq:LiveSyncAction`
+   * **Naam**:  `exampleLiveAction`
+   * **Type**:  `cq:LiveSyncAction`
 
-1. Klik op Alles **opslaan**.
-1. Selecteer het `exampleLiveAction` knooppunt en voeg de volgende eigenschap toe:
+1. Klik **Alles opslaan**.
+1. Selecteer de `exampleLiveAction` knoop en voeg het volgende bezit toe:
 
-   * **Naam**: `repLastModBy`
-   * **Type**: `Boolean`
-   * **Waarde**: `true`
+   * **Naam**:  `repLastModBy`
+   * **Type**:  `Boolean`
+   * **Waarde**:  `true`
 
-   Deze eigenschap geeft aan de `ExampleLiveAction` klasse door dat de `cq:LastModifiedBy` eigenschap moet worden gerepliceerd van de bron naar het doelknooppunt.
+   Deze eigenschap geeft aan de klasse `ExampleLiveAction` aan dat de eigenschap `cq:LastModifiedBy` van de bron naar het doelknooppunt moet worden gerepliceerd.
 
-1. Klik op Alles **opslaan**.
+1. Klik **Alles opslaan**.
 
 ### Live kopie maken {#create-the-live-copy}
 
-[Creeer een levende kopie](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page) van de Engelse/Producten tak van de Plaats van de Verwijzing Wij.Retail gebruikend uw rollout configuratie:
+[Creeer een levende ](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page) kopie van de Engelse/Producten tak van de Plaats van de Verwijzing Wij.Retail gebruikend uw rollout configuratie:
 
-* **Bron**: `/content/we-retail/language-masters/en/products`
+* **Bron**:  `/content/we-retail/language-masters/en/products`
 
 * **Uitrolconfiguratie**: Voorbeeld-uitrolconfiguratie
 
-Activeer de pagina **Producten** (Engels) van de brontak en bekijk de logboekberichten die de `LiveAction` klasse produceert:
+Activeer de pagina **Products** (english) van de brontak en bekijk de logboekberichten die de `LiveAction` klasse produceert:
 
 ```xml
 16.08.2013 10:53:33.055 *INFO* [Thread-444535] com.adobe.example.msm.ExampleLiveActionFactory$ExampleLiveAction  ***ExampleLiveAction has been executed.***
@@ -614,7 +614,7 @@ In some cases, the **Chapters** selection is not required in the create site wiz
 
 ## Taalnamen en standaardlanden wijzigen {#changing-language-names-and-default-countries}
 
-AEM gebruikt een standaardreeks taal en landcodes.
+AEM gebruikt een standaardset taal- en landcodes.
 
 * De standaardtaalcode is de tweeletterige code in kleine letters, zoals gedefinieerd door ISO-639-1.
 * De standaardlandcode is de tweelettercode in kleine letters of hoofdletters, zoals gedefinieerd in ISO 3166.
@@ -623,32 +623,32 @@ MSM gebruikt een opgeslagen lijst van taal en landcodes om de naam van het land 
 
 * Taaltitels
 * Landnamen
-* Standaardlanden voor talen (voor codes zoals `en`, `de`enz.)
+* Standaardlanden voor talen (bijvoorbeeld voor codes `en`, `de`)
 
-De taallijst wordt opgeslagen onder het `/libs/wcm/core/resources/languages` knooppunt. Elk onderliggend knooppunt vertegenwoordigt een taal of een taal-land:
+De taallijst wordt opgeslagen onder de `/libs/wcm/core/resources/languages` knoop. Elk onderliggend knooppunt vertegenwoordigt een taal of een taal-land:
 
-* De naam van het knooppunt is de taalcode (zoals `en` of `de`) of de taal_landcode (zoals `en_us` of `de_ch`).
+* De naam van het knooppunt is de taalcode (zoals `en` of `de`) of de taalcode (zoals `en_us` of `de_ch`).
 
-* Het `language` bezit van de knoop slaat de volledige naam van de taal voor de code op.
-* In de `country` eigenschap van het knooppunt wordt de volledige naam van het land voor de code opgeslagen.
-* Wanneer de knooppuntnaam slechts uit een taalcode (zoals `en`) bestaat, is het landbezit `*`, en een extra `defaultCountry` bezit slaat de code van het taal-land op om op het te gebruiken land te wijzen.
+* De `language` bezit van de knoop slaat de volledige naam van de taal voor de code op.
+* In de eigenschap `country` van het knooppunt wordt de volledige naam van het land voor de code opgeslagen.
+* Wanneer de knooppuntnaam slechts uit een taalcode (zoals `en`) bestaat, is het landbezit `*`, en een extra `defaultCountry` bezit slaat de code van het taal-land op om het te gebruiken land te wijzen.
 
 ![chlimage_1-76](assets/chlimage_1-76.png)
 
 De talen wijzigen:
 
-1. Open CRXDE Lite in uw Webbrowser; bijvoorbeeld [https://localhost:4502/crx/de](https://localhost:4502/crx/de)
-1. Selecteer de `/apps` map en klik op **Maken** en **Map maken.**
+1. Open CRXDE Lite in uw webbrowser; bijvoorbeeld [https://localhost:4502/crx/de](https://localhost:4502/crx/de)
+1. Selecteer de map `/apps` en klik op **Maken** en **Map maken.**
 
    Geef de nieuwe map een naam `wcm`.
 
-1. Herhaal de vorige stap om de `/apps/wcm/core` mappenstructuur te maken. Creeer een knoop van type `sling:Folder` in `core` geroepen `resources`. <!-- ![chlimage_1-77](assets/chlimage_1-77.png) -->
+1. Herhaal de vorige stap om de mappenstructuur `/apps/wcm/core` te maken. Maak een knooppunt van het type `sling:Folder` in `core` met de naam `resources`. <!-- ![chlimage_1-77](assets/chlimage_1-77.png) -->
 
-1. Klik met de rechtermuisknop op het `/libs/wcm/core/resources/languages` knooppunt en klik op **Kopiëren**.
-1. Klik met de rechtermuisknop op de `/apps/wcm/core/resources` map en klik op **Plakken**. Wijzig de onderliggende knooppunten naar wens.
-1. Klik op Alles **opslaan**.
-1. Klik **Hulpmiddelen**, **Verrichtingen** dan de Console **van het** Web. Van deze console klik **OSGi**, dan **Configuratie**.
-1. Zoek en klik op **Day CQ WCM Language Manager** en wijzig de waarde van **Taallijst** in `/apps/wcm/core/resources/languages`. Klik vervolgens op **Opslaan**.
+1. Klik met de rechtermuisknop op het knooppunt `/libs/wcm/core/resources/languages` en klik op **Copy**.
+1. Klik met de rechtermuisknop op de map `/apps/wcm/core/resources` en klik op **Plakken**. Wijzig de onderliggende knooppunten naar wens.
+1. Klik **Alles opslaan**.
+1. Klik **Gereedschappen**, **Bewerkingen** dan **Webconsole**. Van deze console klik **OSGi**, toen **Configuratie**.
+1. Zoek en klik op **Day CQ WCM Language Manager** en wijzig de waarde van **Taallijst** in `/apps/wcm/core/resources/languages` en klik vervolgens op **Opslaan**.
 
    ![chlimage_1-78](assets/chlimage_1-78.png)
 
@@ -670,7 +670,7 @@ Daarna moet u ervoor zorgen dat:
 
 * E-mailadres contactpersoon:
 
-   * is uitgesloten van de opgebouwde eigenschappen; Zie Eigenschappen en knooppunttypen [uitsluiten van synchronisatie](/help/sites-administering/msm-sync.md#excluding-properties-and-node-types-from-synchronization).
+   * is uitgesloten van de opgebouwde eigenschappen; zie [Eigenschappen en knooppunttypen uitsluiten van synchronisatie](/help/sites-administering/msm-sync.md#excluding-properties-and-node-types-from-synchronization).
 
 * Belangrijke visuele stijl:
 
@@ -684,21 +684,21 @@ Of een pagina-eigenschap moet worden geïmplementeerd en, afhankelijk van het an
    * maakt het kettingkoppelingssymbool in het dialoogvenster
    * is alleen bewerken toegestaan als overerving is geannuleerd (de ketting-koppeling is verbroken)
    * alleen van toepassing op het eerste onderliggende niveau van de bron
-   * **Type**: `String`
+   * **Type**:  `String`
 
-   * **Waarde**: houder is van de naam van het betrokken goed (en vergelijkbaar is met de waarde van het goed `name`; zie bijvoorbeeld
+   * **Waarde**: houder is van de naam van het betrokken goed (en vergelijkbaar is met de waarde van het goed  `name`; zie bijvoorbeeld
       `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
 Wanneer `cq-msm-lockable` is bepaald, zal het breken/het sluiten van de ketting op de volgende manier met MSM in wisselwerking staan:
 
-* if the value of `cq-msm-lockable` is:
+* als de waarde van `cq-msm-lockable`:
 
-   * **Relatief** (bijvoorbeeld `myProperty` of `./myProperty`)
+   * **Relatief**  (bijvoorbeeld  `myProperty` of  `./myProperty`)
 
-      * het zal het bezit toevoegen en verwijderen uit `cq:propertyInheritanceCancelled`.
-   * **Absoluut** (bv. `/image`)
+      * de eigenschap wordt toegevoegd en verwijderd uit `cq:propertyInheritanceCancelled`.
+   * **Absoluut**  (bv.  `/image`)
 
-      * Als u de keten breekt, wordt de overerving geannuleerd door de `cq:LiveSyncCancelled` mix toe te voegen aan `./image` en in te stellen `cq:isCancelledForChildren` op `true`.
+      * Als u de keten breekt, wordt de overerving geannuleerd door de `cq:LiveSyncCancelled`-mix toe te voegen aan `./image` en `cq:isCancelledForChildren` in te stellen op `true`.
 
       * als de keten wordt gesloten , wordt de overerving hersteld .
 

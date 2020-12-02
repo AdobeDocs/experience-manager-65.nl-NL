@@ -12,11 +12,14 @@ topic-tags: operations
 discoiquuid: 3dd2b0d3-6023-490a-9b17-e29cc21c1b9d
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '117'
+ht-degree: 1%
 
 ---
 
 
-# PDF-documenten samenstellen {#assembling-pdf-documents}
+# PDF-documenten {#assembling-pdf-documents} samenstellen
 
 **Over de Assembler Service**
 
@@ -26,5 +29,5 @@ Vanaf LiveCycle ES 8.0 en hoger is ondersteuning voor PDF-pakketten beschikbaar 
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Assembler, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Voor meer informatie over de dienst van de Assembler, zie [de Verwijzing van de Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 

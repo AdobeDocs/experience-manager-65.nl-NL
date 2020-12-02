@@ -22,13 +22,13 @@ ht-degree: 0%
 
 AEM Communities helpt merken consistente ervaringen te creëren op digitale en persoonlijke kanalen door het inschakelen van werknemers en klanten te vergemakkelijken met een catalogus van bronnen voor activering, toegewezen inhoud en dynamische aanbevelingen, allemaal geleverd binnen een sociale gemeenschap om betrokkenheid te bevorderen.
 
-Hieronder volgt een zelfstudie over het snel opzetten van een [enablement-gemeenschap](overview.md#enablement-community) voor demonstratie- of ontwikkelingsdoeleinden.
+Hier volgt een zelfstudie over het snel instellen van een [enablement community](overview.md#enablement-community) voor demonstratie- of ontwikkelingsdoeleinden.
 
-Ga naar [Aan de slag met AEM Communities](overview.md#engagement-community)voor een zelfstudie over het snel instellen van een [betrokkenheidsgemeenschap](getting-started.md).
+Voor een zelfstudie over het snel instellen van een [betrokkenheidscommunity](overview.md#engagement-community) gaat u naar [Aan de slag met AEM Communities](getting-started.md).
 
 >[!NOTE]
 >
->In deze zelfstudie wordt ervan uitgegaan dat [Communities feature pack 1](deploy-communities.md#latestfeaturepack) of hoger is geïnstalleerd.
+>Deze zelfstudie gaat ervan uit dat [Communities feature pack 1](deploy-communities.md#latestfeaturepack) of hoger wordt geïnstalleerd.
 
 * [Eerste instelling](enablement-setup.md)
 

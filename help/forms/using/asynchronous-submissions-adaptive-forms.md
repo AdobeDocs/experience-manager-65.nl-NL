@@ -26,28 +26,28 @@ Wanneer een gebruiker een formulier verzendt bij asynchrone verzending, voegt de
 
 Lees verder voor meer informatie over asynchrone verzending in adaptieve formulieren.
 
-## asynchrone verzending configureren {#configure}
+## asynchrone verzending {#configure} configureren
 
 Om asynchrone voorlegging voor een adaptief formulier te configureren:
 
-1. Selecteer in de modus Aangepast formulier het object Form Container en tik op ![cmr1](assets/cmppr1.png) om de eigenschappen ervan te openen.
-1. Schakel in de sectie **[!UICONTROL Submission]** Eigenschappen **[!UICONTROL Use asynchronous submission]**.
-1. Selecteer in de **[!UICONTROL On Submit]** sectie een van de volgende opties voor het verzenden van formulieren.
+1. Selecteer in de modus Aangepast formulier het object Form Container en tik op ![cmp1](assets/cmppr1.png) om de eigenschappen ervan te openen.
+1. Schakel in de sectie **[!UICONTROL Submission]** eigenschappen **[!UICONTROL Use asynchronous submission]** in.
+1. Selecteer in de sectie **[!UICONTROL On Submit]** een van de volgende opties voor het verzenden van formulieren.
 
-   * **[!UICONTROL Redirect to URL]**: Hiermee wordt de opgegeven URL of pagina bij het verzenden van het formulier gebruikt. U kunt een URL opgeven of bladeren om het pad naar een pagina in het **[!UICONTROL Redirect URL/Path]** veld te kiezen.
+   * **[!UICONTROL Redirect to URL]**: Hiermee wordt de opgegeven URL of pagina bij het verzenden van het formulier gebruikt. U kunt een URL opgeven of bladeren om het pad naar een pagina te kiezen in het veld **[!UICONTROL Redirect URL/Path]**.
    * **[!UICONTROL Show Message]**: Hiermee wordt een bericht weergegeven bij het verzenden van het formulier. U kunt een bericht schrijven in het tekstveld onder de optie Bericht tonen. Het tekstveld ondersteunt RTF-opmaak.
 
-1. Tik op ![knop1](assets/check-button1.png) om de eigenschappen op te slaan.
+1. Tik ![check-button1](assets/check-button1.png) om de eigenschappen op te slaan.
 
-## Hoe asynchrone verzending werkt {#how-asynchronous-submission-works}
+## Hoe de asynchrone voorlegging {#how-asynchronous-submission-works} werkt
 
-AEM Forms bieden foutverwerkers voor het verzenden van formulieren die buiten de box vallen. Handlers zijn client-side functies die worden uitgevoerd op basis van de serverreactie. Wanneer een formulier wordt verzonden, worden de gegevens voor validatie naar de server verzonden, die een reactie op de client retourneert met informatie over de gebeurtenis &#39;success&#39; of &#39;error&#39; voor de verzending. De informatie wordt als parameters doorgegeven aan de relevante handler om de functie uit te voeren.
+AEM Forms biedt offline succeshandlers en foutafhandelaars voor het verzenden van formulieren. Handlers zijn client-side functies die worden uitgevoerd op basis van de serverreactie. Wanneer een formulier wordt verzonden, worden de gegevens voor validatie naar de server verzonden, die een reactie op de client retourneert met informatie over de gebeurtenis &#39;success&#39; of &#39;error&#39; voor de verzending. De informatie wordt als parameters doorgegeven aan de relevante handler om de functie uit te voeren.
 
-Bovendien kunnen auteurs en ontwikkelaars van formulieren regels op formulierniveau schrijven om standaardhandlers te overschrijven. Zie Standaardhandlers [negeren met behulp van regels](#custom)voor meer informatie.
+Bovendien kunnen auteurs en ontwikkelaars van formulieren regels op formulierniveau schrijven om standaardhandlers te overschrijven. Zie [Standaardhandlers negeren met behulp van rules](#custom) voor meer informatie.
 
 Laat ons eerst de serverreactie voor succes en foutengebeurtenissen herzien.
 
-### Serverreactie voor gebeurtenis met succes voor verzending {#server-response-for-submission-success-event}
+### Serverreactie voor gebeurtenis {#server-response-for-submission-success-event} met succes voor verzending
 
 De structuur voor de serverreactie voor het indienen van succesgebeurtenissen is als volgt:
 
@@ -69,7 +69,7 @@ De reactie van de server in het geval van een geslaagde verzending van het formu
 
 De succesmanager leest de serverreactie en richt dienovereenkomstig aan de gevormde pagina URL of toont een bericht opnieuw.
 
-### Serverreactie voor verzendfoutgebeurtenis {#server-response-for-submission-error-event}
+### Serverreactie voor gebeurtenis {#server-response-for-submission-error-event} van verzendfout
 
 De structuur voor de serverreactie voor de gebeurtenis van de voorleggingsfout is als volgt:
 
@@ -95,14 +95,14 @@ De fouthandler leest de serverreactie en geeft dienovereenkomstig het foutberich
 
 ## Standaardhandlers negeren met behulp van regels {#custom}
 
-Formulierontwikkelaars en auteurs kunnen regels schrijven op formulierniveau in de code-editor om standaardhandlers te overschrijven. De serverreactie voor succes en foutengebeurtenissen wordt blootgesteld op vormniveau, dat de ontwikkelaars tot het gebruiken `$event.data` in regels kunnen toegang hebben.
+Formulierontwikkelaars en auteurs kunnen regels schrijven op formulierniveau in de code-editor om standaardhandlers te overschrijven. De serverreactie voor geluids- en foutgebeurtenissen wordt weergegeven op formulierniveau, waartoe ontwikkelaars toegang hebben met `$event.data` in regels.
 
 Voer de volgende stappen uit om regels in coderedacteur te schrijven om succes en foutengebeurtenissen te behandelen.
 
-1. Open het aangepaste formulier in de ontwerpmodus, selecteer een formulierobject en tik op ![bewerkingsregels1](assets/edit-rules1.png) om de regeleditor te openen.
-1. Selecteer **[!UICONTROL Form]** in de structuur Formulierobjecten en tik op **[!UICONTROL Create]**.
-1. Selecteer een optie **[!UICONTROL Code Editor]** in het keuzemenu Modus selecteren.
-1. Tik in de code-editor op **[!UICONTROL Edit Code]**. Tik op **[!UICONTROL Edit]** het bevestigingsvenster.
-1. Kies **[!UICONTROL Successful Submission]** of **[!UICONTROL Error in Submission]** uit de **[!UICONTROL Event]** vervolgkeuzelijst.
+1. Open het aangepaste formulier in de ontwerpmodus, selecteer een formulierobject en tik ![edit-rules1](assets/edit-rules1.png) om de regeleditor te openen.
+1. Selecteer **[!UICONTROL Form]** in de structuur Formulierobjecten en tik **[!UICONTROL Create]**.
+1. Selecteer **[!UICONTROL Code Editor]** van de drop-down wijze selectie.
+1. Tik in de code-editor op **[!UICONTROL Edit Code]**. Tik op **[!UICONTROL Edit]** in het bevestigingsdialoogvenster.
+1. Kies **[!UICONTROL Successful Submission]** of **[!UICONTROL Error in Submission]** in de vervolgkeuzelijst **[!UICONTROL Event]**.
 1. Schrijf een regel voor de geselecteerde gebeurtenis en tik **[!UICONTROL Done]** om de regel op te slaan.
 

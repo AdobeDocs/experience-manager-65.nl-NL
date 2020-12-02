@@ -1,8 +1,8 @@
 ---
 title: Integreren met BrightStor Content Optimizer
 seo-title: Integreren met BrightStor Content Optimizer
-description: Meer informatie over de integratie van AEM met BrightStor Content Optimizer.
-seo-description: Meer informatie over de integratie van AEM met BrightStor Content Optimizer.
+description: Leer hoe u AEM kunt integreren met BrightStor Content Optimizer.
+seo-description: Leer hoe u AEM kunt integreren met BrightStor Content Optimizer.
 uuid: 7075dd3c-2fd6-4050-af1c-9b16ad4366ec
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: cf25c9a8-0555-4c67-8aa5-55984fd8d301
 translation-type: tm+mt
 source-git-commit: 684d2d5f73d571a15c8155e7870134c28dc892b7
+workflow-type: tm+mt
+source-wordcount: '508'
+ht-degree: 0%
 
 ---
 
 
 # Integreren met BrightStor Content Optimizer{#integrating-with-brightedge-content-optimizer}
 
-Maak een BrightEdge-cloudconfiguratie zodat AEM verbinding kan maken met de referenties van uw BrightStor-account. U kunt meerdere configuraties maken als u meerdere accounts gebruikt.
+Maak een BrightEdge-cloudconfiguratie zodat AEM verbinding kunnen maken met de referenties van uw BrightStor-account. U kunt meerdere configuraties maken als u meerdere accounts gebruikt.
 
 Wanneer u de configuratie creeert, specificeert u een titel. De titel moet beschrijvend zijn, zodat mensen de configuratie kunnen correleren met de BrightStor-account. Wanneer een auteur of beheerder van een pagina een webpagina maakt met het BrightStor-account, wordt deze titel weergegeven in een vervolgkeuzelijst.
 
@@ -26,13 +29,14 @@ Wanneer u de configuratie creeert, specificeert u een titel. De titel moet besch
 
    * Nu configureren: Deze koppeling wordt weergegeven wanneer er geen configuratie is gemaakt.
    * Configuraties tonen: Deze koppeling wordt weergegeven wanneer een of meer configuraties zijn gemaakt.
+
    ![chlimage_1-4](assets/chlimage_1-4a.png)
 
 1. Als u op Configuraties tonen hebt geklikt, klikt u op de koppeling + naast Beschikbare configuraties.
 1. Typ een titel voor de configuratie. Naar keuze, typ een naam voor de knoop die wordt gebruikt om de configuratie in de bewaarplaats op te slaan. Klik op Maken.
 1. Typ in het dialoogvenster Configuratie van BrightStor Content Optimizer de gebruikersnaam en het wachtwoord van de BrightStor-account en klik op OK.
 
-## Een BrightEdge-configuratie bewerken {#editing-a-brightedge-configuration}
+## Een BrightEdge-configuratie {#editing-a-brightedge-configuration} bewerken
 
 Wijzig indien nodig de gebruikersnaam en het wachtwoord van een BrightStor-configuratie. De wijzigingen zijn van invloed op alle pagina&#39;s die de configuratie gebruiken.
 
@@ -56,7 +60,7 @@ Koppel pagina&#39;s aan een BrightStor-configuratie om paginagegevens naar de Br
 
    ![chlimage_1-6](assets/chlimage_1-6a.png)
 
-## Een BrightEdge-configuratie activeren {#activating-a-brightedge-configuration}
+## Een BrightEdge-configuratie {#activating-a-brightedge-configuration} activeren
 
 Activeer een BrightEdge-configuratie om deze te repliceren op de publicatie-instantie en om gepubliceerde pagina&#39;s in staat te stellen te communiceren met de BrightStor-service.
 

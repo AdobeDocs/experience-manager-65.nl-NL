@@ -25,17 +25,17 @@ ht-degree: 9%
 
 U kunt de metagegevens (eigenschappen) voor inhoudsfragmenten weergeven en bewerken:
 
-1. Navigeer in de **middelenconsole** naar de locatie van het inhoudsfragment.
+1. Navigeer in de **Assets**-console naar de locatie van het inhoudsfragment.
 1. Ofwel:
 
-   * Selecteer [**Weergave-eigenschappen** om de dialoogvensters](/help/assets/manage-assets.md#editing-properties)te openen. Als u de weergave eenmaal hebt geopend, kunt u deze ook bewerken.
-   * Open het [inhoudsfragment bij Bewerken](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor)en selecteer vervolgens **Metagegevens** in het zijpaneel.
+   * Selecteer [**Eigenschappen weergeven** om de dialoogvensters](/help/assets/manage-assets.md#editing-properties) te openen. Als u de weergave eenmaal hebt geopend, kunt u deze ook bewerken.
+   * Open het [inhoudsfragment voor Bewerken](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) en selecteer vervolgens **Metagegevens** in het zijpaneel.
 
    ![cfm-6420-06](assets/cfm-6420-06.png)
 
-1. Het tabblad **Standaard** bevat opties die u kunt weergeven of bewerken:
+1. Het tabblad **Standaard** biedt opties die u kunt weergeven of bewerken:
 
-   * Miniatuur, waarvoor u de afbeelding kunt **uploaden**
+   * Miniatuur, waarvoor u **Afbeelding uploaden**
    * **Titel**
    * **Beschrijving**
    * **Tags**

@@ -16,7 +16,7 @@ Voeg ContextHub aan uw pagina&#39;s toe om de eigenschappen ContextHub toe te la
 
 De JavaScript-API van ContextHub biedt toegang tot de contextgegevens die door ContextHub worden beheerd. Deze pagina beschrijft kort de belangrijkste eigenschappen van API voor de toegang tot van en het manipuleren van contextgegevens. Volg de koppelingen naar de API-naslagdocumentatie voor gedetailleerde informatie en codevoorbeelden.
 
-## ContextHub toevoegen aan een component Page {#adding-contexthub-to-a-page-component}
+## ContextHub toevoegen aan een component van de Pagina {#adding-contexthub-to-a-page-component}
 
 Om de eigenschappen ContextHub toe te laten en aan de bibliotheken te verbinden ContextHub Javascript, omvat de `contexthub` component in de `head` sectie van uw pagina. De HTML-code voor uw paginacomponent moet op het volgende voorbeeld lijken:
 
@@ -24,7 +24,7 @@ Om de eigenschappen ContextHub toe te laten en aan de bibliotheken te verbinden 
 <sly data-sly-resource="${'contexthub' @ resourceType='granite/contexthub/components/contexthub'}"/>
 ```
 
-Merk op dat u ook moet vormen of de toolbar ContextHub op de wijze van de Voorproef verschijnt. Zie [het Tonen van en het Verbergen van ContextHub UI](ch-configuring.md#showing-and-hiding-the-contexthub-ui).
+Merk op dat u ook moet vormen of de toolbar ContextHub op de wijze van de Voorproef verschijnt. Zie [Het tonen van en het Hiding van ContextHub UI](ch-configuring.md#showing-and-hiding-the-contexthub-ui).
 
 ## Informatie over ContextHub-winkels {#about-contexthub-stores}
 
@@ -35,17 +35,17 @@ De opslag van ContextHub van het gebruik om contextgegevens voort te zetten. Con
 * [JSONPStore](contexthub-api.md#contexthub-store-persistedjsonpstore)
 * [PersistedJSONPStore](contexthub-api.md#contexthub-store-persistedstore)
 
-Alle opslagtypen zijn extensies van de [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core) klasse. Zie Aangepaste winkels [maken voor informatie over het maken van een nieuw winkeltype](ch-extend.md#creating-custom-store-candidates). Voor informatie over de types van steekproefopslag, zie de Kandidaten [van de Winkel van de](ch-samplestores.md)Steekproef ContextHub.
+Alle opslagtypes zijn uitbreidingen van de [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core) klasse. Zie [Aangepaste winkels maken](ch-extend.md#creating-custom-store-candidates) voor informatie over het maken van een nieuw winkeltype. Voor informatie over de types van steekproefopslag, zie [Sample ContextHub Store Candidates](ch-samplestores.md).
 
 ### Persistentiemodi {#persistence-modes}
 
 De opslag van de Hub van de context gebruikt één van de volgende persistentiemodi:
 
-* **Lokaal:** Gebruikt lokale HTML5-opslag om gegevens te behouden. Lokale opslag blijft in de browser tijdens sessies behouden.
-* **Sessie:** Gebruikt HTML5 sessionStorage om gegevens te behouden. De opslag van de zitting wordt voortgeduurd voor de browser zitting en is beschikbaar aan alle browser vensters.
-* **Koekje:** Gebruikt de native ondersteuning van de browser voor cookies voor gegevensopslag. De gegevens van het koekje worden verzonden naar en van de server in HTTP- verzoeken.
-* **Window.name:** Gebruikt de eigenschap window.name om gegevens te behouden.
-* **Geheugen:** Gebruikt een Javascript-object om gegevens te behouden.
+* **Lokaal:** gebruikt HTML5 localStorage om gegevens te behouden. Lokale opslag blijft in de browser tijdens sessies behouden.
+* **Sessie:** gebruikt HTML5 sessionStorage om gegevens te behouden. De opslag van de zitting wordt voortgeduurd voor de browser zitting en is beschikbaar aan alle browser vensters.
+* **Cookie:** gebruikt de native ondersteuning van de browser voor cookies voor gegevensopslag. De gegevens van het koekje worden verzonden naar en van de server in HTTP- verzoeken.
+* **Window.name:** Gebruikt het window.name bezit om gegevens voort te zetten.
+* **Geheugen:** gebruikt een JavaScript-object om gegevens te behouden.
 
 Door gebrek, gebruikt de Hub van de Context de Lokale persistentiemodus. Als de browser geen ondersteuning biedt voor lokale HTML5-opslag of deze toestaat, wordt de sessiepersistentie gebruikt. Als de browser HTML5 sessionStorage niet ondersteunt of toestaat, wordt de persistentie Window.name gebruikt.
 
@@ -80,21 +80,21 @@ De boomstructuur van de opslaggegevens kan als volgt worden geconceptualiseerd:
             |- elevation
 ```
 
-De boomstructuur bepaalt gegevenspunten in de opslag als sleutel/waardeparen. In het bovenstaande voorbeeld komt de sleutel `/number` overeen met de waarde `321`, en de sleutel `/data/country` komt overeen met de waarde `Switzerland`.
+De boomstructuur bepaalt gegevenspunten in de opslag als sleutel/waardeparen. In het bovenstaande voorbeeld komt de sleutel `/number` overeen met de waarde `321` en de sleutel `/data/country` komt overeen met de waarde `Switzerland`.
 
-### Objecten bewerken {#manipulating-objects}
+### Objecten {#manipulating-objects} bewerken
 
-ContextHub biedt de [`ContextHub.Utils.JSON.tree`](contexthub-api.md#contexthub-utils-json-tree) klasse voor het manipuleren van Javascript-objecten. Gebruik de functies van deze klasse voor het manipuleren van voorwerpen Javascript alvorens u hen aan een opslag toevoegt, of nadat u hen van een opslag verkrijgt.
+ContextHub verstrekt de [`ContextHub.Utils.JSON.tree`](contexthub-api.md#contexthub-utils-json-tree) klasse voor het manipuleren van voorwerpen Javascript. Gebruik de functies van deze klasse voor het manipuleren van voorwerpen Javascript alvorens u hen aan een opslag toevoegt, of nadat u hen van een opslag verkrijgt.
 
-Bovendien biedt de [`ContextHub.Utils.JSON`](contexthub-api.md#contexthub-utils-json) klasse functies voor het serieel ordenen van objecten met tekenreeksen en het ongedaan maken van tekenreeksen met objecten. Gebruik deze klasse voor het verwerken van JSON-gegevens om browsers te ondersteunen die de functies `JSON.parse` `JSON.stringify` en functies niet native bevatten.
+Daarnaast biedt de klasse [`ContextHub.Utils.JSON`](contexthub-api.md#contexthub-utils-json) functies voor het serieel ordenen van objecten met tekenreeksen en het ongedaan maken van tekenreeksen met objecten. Gebruik deze klasse voor het verwerken van JSON-gegevens om browsers te ondersteunen die de functies `JSON.parse` en `JSON.stringify` niet native bevatten.
 
-## Interactief werken met ContextHub-winkels {#interacting-with-contexthub-stores}
+## Interactie met de Opslag {#interacting-with-contexthub-stores} van ContextHub
 
-Gebruik het [`ContextHub`](contexthub-api.md#ui-event-constants) Javascript-object om een winkel als een JavaScript-object op te halen. Nadat u het opslagobject hebt verkregen, kunt u de gegevens in het object bewerken. Gebruik de [`getAllStores`](contexthub-api.md#getallstores) of de [`getStore`](contexthub-api.md#getstore-name) functie om de winkel te verkrijgen.
+Gebruik het Javascript-object [`ContextHub`](contexthub-api.md#ui-event-constants) om een winkel als een JavaScript-object op te halen. Nadat u het opslagobject hebt verkregen, kunt u de gegevens in het object bewerken. Gebruik [`getAllStores`](contexthub-api.md#getallstores) of [`getStore`](contexthub-api.md#getstore-name) functie om de opslag te verkrijgen.
 
-### Winkelgegevens openen {#accessing-store-data}
+### Toegang tot opslaggegevens {#accessing-store-data}
 
-De [`ContexHub.Store.Core`](contexthub-api.md#contexthub-store-core) Javascript-klasse definieert verschillende functies voor interactie met opslaggegevens. Met de volgende functies worden meerdere gegevensitems in objecten opgeslagen en opgehaald:
+De Javascript-klasse [`ContexHub.Store.Core`](contexthub-api.md#contexthub-store-core) definieert verschillende functies voor interactie met opslaggegevens. Met de volgende functies worden meerdere gegevensitems in objecten opgeslagen en opgehaald:
 
 * [addAllItems](contexthub-api.md#addallitems-tree-options)
 * [getTree](contexthub-api.md#gettree-includeinternals)
@@ -110,19 +110,19 @@ Merk op dat de kandidaten van de douaneopslag extra functies kunnen bepalen die 
 >
 >ContextHub is niet door gebrek zich bewust van momenteel het programma geopend op publiceer servers en dergelijke gebruikers worden beschouwd door ContextHub als &quot;Anoniem.&quot;
 >
->U kunt ContextHub bewust maken van het programma geopende gebruikers door de profielopslag te laden. Verwijs hier naar [steekproefcode op GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js).
+>U kunt ContextHub bewust maken van het programma geopende gebruikers door de profielopslag te laden. Verwijs naar [steekproefcode op GitHub hier](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js).
 
-### ContextHub Event {#contexthub-eventing}
+### ContextHub-gebeurtenis {#contexthub-eventing}
 
-ContextHub omvat een gebeurteniskader dat u toelaat om automatisch te reageren om gebeurtenissen op te slaan. Elk opslagobject bevat een [`ContextHub.Utils.Eventing`](contexthub-api.md#contexthub-utils-eventing) object dat beschikbaar is als de [`eventing`](contexthub-api.md#eventing) eigenschap van de winkel. Gebruik de [`on`](contexthub-api.md#on-name-handler-selector-triggerforpastevents) functie of [`once`](contexthub-api.md#once-name-handler-selector-triggerforpastevents) functie om een functie JavaScript aan een archiefgebeurtenis te binden.
+ContextHub omvat een gebeurteniskader dat u toelaat om automatisch te reageren om gebeurtenissen op te slaan. Elk opslagvoorwerp bevat een [`ContextHub.Utils.Eventing`](contexthub-api.md#contexthub-utils-eventing) voorwerp dat als [`eventing`](contexthub-api.md#eventing) bezit van de opslag beschikbaar is. Gebruik de functie [`on`](contexthub-api.md#on-name-handler-selector-triggerforpastevents) of [`once`](contexthub-api.md#once-name-handler-selector-triggerforpastevents) om een functie JavaScript aan een archiefgebeurtenis te binden.
 
-## Contexthub gebruiken om cookies te manipuleren {#using-context-hub-to-manipulate-cookies}
+## Het gebruiken van de Hub van de Context om Koekjes {#using-context-hub-to-manipulate-cookies} te manipuleren
 
-De JavaScript-API van de Context Hub biedt ondersteuning voor verschillende browsers voor de verwerking van browsercookies. De [`ContextHub.Utils.Cookie`](contexthub-api.md#contexthub-utils-cookie) naamruimte definieert verschillende functies voor het maken, bewerken en verwijderen van cookies.
+De JavaScript-API van de Context Hub biedt ondersteuning voor verschillende browsers voor de verwerking van browsercookies. De naamruimte [`ContextHub.Utils.Cookie`](contexthub-api.md#contexthub-utils-cookie) definieert verschillende functies voor het maken, bewerken en verwijderen van cookies.
 
-## Opgeloste ContextHub-segmenten bepalen {#determining-resolved-contexthub-segments}
+## Het bepalen van Opgeloste Segmenten ContextHub {#determining-resolved-contexthub-segments}
 
-De ContextHub segmentmotor laat u toe om te bepalen welke van de geregistreerde segmenten in de huidige context worden opgelost. Gebruik de functie getResolvedSegments van de [`ContextHub.SegmentEngine.SegmentManager`](contexthub-api.md#contexthub-segmentengine-segmentmanager) klasse om opgeloste segmenten terug te winnen. Gebruik vervolgens de `getName` of `getPath` functie van de [`ContextHub.SegmentEngine.Segment`](contexthub-api.md#contexthub-segmentengine-segment) klasse om op een segment te testen.
+De ContextHub segmentmotor laat u toe om te bepalen welke van de geregistreerde segmenten in de huidige context worden opgelost. Gebruik de functie getResolvedSegments van de klasse [`ContextHub.SegmentEngine.SegmentManager`](contexthub-api.md#contexthub-segmentengine-segmentmanager) om opgeloste segmenten terug te winnen. Vervolgens gebruikt u de functie `getName` of `getPath` van de klasse [`ContextHub.SegmentEngine.Segment`](contexthub-api.md#contexthub-segmentengine-segment) om te testen op een segment.
 
 ### ContextHub-segmenten {#contexthub-segments}
 
@@ -135,8 +135,8 @@ De volgende segmenten worden geïnstalleerd met de [WKND-zelfstudiesite.](gettin
 
 De regels die worden gebruikt om deze segmenten op te lossen zijn als volgt samengevat:
 
-* Eerst wordt de [geolocatieopslag](ch-samplestores.md#contexthub-geolocation-sample-store-candidate) gebruikt om de breedtegraad van de gebruiker te bepalen.
-* Vervolgens bepaalt het maandgegevensitem van de [surferinfo store](ch-samplestores.md#contexthub-surferinfo-sample-store-candidate) welk seizoen het op die breedtegraad is.
+* Eerst wordt de [geolocation](ch-samplestores.md#contexthub-geolocation-sample-store-candidate) opslag gebruikt om breedte van de gebruiker te bepalen.
+* Dan bepaalt het maandgegevenspunt van [surferinfo store](ch-samplestores.md#contexthub-surferinfo-sample-store-candidate) welk seizoen het in die breedtegraad is.
 
 >[!WARNING]
 >
@@ -144,8 +144,8 @@ De regels die worden gebruikt om deze segmenten op te lossen zijn als volgt same
 
 ## Foutopsporing in ContextHub {#debugging-contexthub}
 
-Er zijn een aantal opties voor het zuiveren ContextHub met inbegrip van het produceren van logboeken. Zie [het Vormen ContextHub voor meer informatie.](ch-configuring.md#logging-debug-messages-for-contexthub)
+Er zijn een aantal opties voor het zuiveren ContextHub met inbegrip van het produceren van logboeken. Zie [Het vormen ContextHub voor meer informatie.](ch-configuring.md#logging-debug-messages-for-contexthub)
 
 ## Zie een Overzicht van het Kader ContextHub {#see-an-overview-of-the-contexthub-framework}
 
-ContextHub verstrekt een [diagnostische pagina](ch-diagnostics.md) waar u een overzicht van het kader kunt zien ContextHub.
+ContextHub verstrekt een [diagnostische pagina](ch-diagnostics.md) waar u een overzicht van het kader ContextHub kunt zien.

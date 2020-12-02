@@ -18,17 +18,17 @@ ht-degree: 2%
 ---
 
 
-# Sandbox-toepassing ontwikkelen  {#develop-sandbox-application}
+# Sandbox-toepassing ontwikkelen {#develop-sandbox-application}
 
-In deze sectie, nu het malplaatje in de [aanvankelijke toepassingssectie](initial-app.md) , en de aanvankelijke pagina&#39;s is opstelling die in de [aanvankelijke inhoudsectie](initial-content.md) worden gevestigd, kan de toepassing worden ontwikkeld gebruikend stichtingsmanuscripten met inbegrip van de capaciteit om creatie met de componenten van de Gemeenschappen toe te laten. Aan het einde van deze sectie is de website functioneel.
+Nu de sjabloon is ingesteld in de sectie [initial application](initial-app.md) en de startpagina&#39;s in de sectie [initial content](initial-content.md), kan de toepassing in deze sectie worden ontwikkeld met behulp van basisscripts, waaronder de mogelijkheid om authoring met Community-componenten mogelijk te maken. Aan het einde van deze sectie is de website functioneel.
 
-## Scripts voor basispagina&#39;s gebruiken {#using-foundation-page-scripts}
+## Scripts {#using-foundation-page-scripts} voor elementatiepagina gebruiken
 
 Het standaardmanuscript, dat wordt gecreeerd toen de component die het playpage malplaatje teruggeeft werd toegevoegd, wordt gewijzigd om head.jsp van de stichtingspagina en een lokale body.jsp te omvatten.
 
-### Type superbron {#super-resource-type}
+### Super Resource Type {#super-resource-type}
 
-De eerste stap bestaat uit het toevoegen van een eigenschap van het type resource super aan het `/apps/an-scf-sandbox/components/playpage` knooppunt zodat het de scripts en eigenschappen van het supertype overneemt.
+De eerste stap is een middel supertype bezit aan de `/apps/an-scf-sandbox/components/playpage` knoop toe te voegen zodat het de manuscripten en de eigenschappen van het super type erft.
 
 CRXDE Lite gebruiken:
 
@@ -41,14 +41,14 @@ CRXDE Lite gebruiken:
 
    Waarde: `foundation/components/page`
 
-1. Klik op de groene **[!UICONTROL +Add]** knop.
+1. Klik op de groene knop **[!UICONTROL +Add]**.
 1. Klik op **[!UICONTROL Save All]**.
 
    ![pageScript](assets/page-script.png)
 
-### Scripts voor hoofd en lichaam {#head-and-body-scripts}
+### Scripts {#head-and-body-scripts} voor hoofd- en hoofdtekst
 
-1. Navigeer in het deelvenster **CRXDE Lite** Explorer naar het bestand `/apps/an-scf-sandbox/components/playpage` en dubbelklik erop `playpage.jsp` om dit te openen in het bewerkvenster.
+1. Navigeer in **CRXDE Lite** verkenner-deelvenster naar `/apps/an-scf-sandbox/components/playpage` en dubbelklik op het bestand `playpage.jsp` om het te openen in het bewerkvenster.
 
    `/apps/an-scf-sandbox/components/playpage/playpage.jsp`
 
@@ -67,7 +67,7 @@ CRXDE Lite gebruiken:
    %>
    ```
 
-1. Als u weet dat er scripttags voor openen/sluiten zijn, vervangt u &quot; // TODO ...&quot; met inbegrip van manuscripten voor het hoofd en lichaamsdelen van &lt;html>.
+1. Als u weet dat er scripttags voor openen/sluiten zijn, vervangt u &quot; // TODO ...&quot; met inbegrip van scripts voor de kop en de hoofdtekst van &lt;html>.
 
    Met een supertype van `foundation/components/page`, zal om het even welk manuscript niet die in deze zelfde omslag wordt bepaald aan een manuscript in `/apps/foundation/components/page` omslag (als het bestaat), anders aan een manuscript in `/libs/foundation/components/page` omslag oplossen.
 
@@ -91,10 +91,10 @@ CRXDE Lite gebruiken:
 
 1. Het stichtingsmanuscript `head.jsp` moet niet worden bedekt, maar het stichtingsmanuscript `body.jsp` is leeg.
 
-   Aan opstelling voor creatie, bedekking `body.jsp` met een lokaal manuscript en omvat een paragraafsysteem (parsys) in het lichaam:
+   Om opstelling voor creatie, bekleding `body.jsp` met een lokaal manuscript en omvat een paragraafsysteem (parsys) in het lichaam:
 
    1. Ga naar `/apps/an-scf-sandbox/components`.
-   1. Select the `playpage` node.
+   1. Selecteer de `playpage` knoop.
    1. Klik met de rechtermuisknop en selecteer `Create > Create File...`
 
       * Naam: **body.jsp**
@@ -124,7 +124,7 @@ CRXDE Lite gebruiken:
 
 * Standaardinterface: [http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.html](http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.md)
 
-U moet niet alleen de kop **Community Play** zien, maar ook de interface voor het bewerken van pagina-inhoud.
+U zou niet alleen de rubriek **Communautair Spel**, maar ook UI voor het uitgeven van paginainhoud moeten zien.
 
 Het paneel Middelen/component wordt weergegeven wanneer het zijpaneel geopend is en het venster breed genoeg is om zowel de inhoud als de pagina-inhoud weer te geven.
 
@@ -142,7 +142,7 @@ Om de componenten van Communities voor ontwerp toe te laten, begin door deze ins
 
 * [Toegang tot onderdelen van Gemeenschappen](basics.md#accessing-communities-components)
 
-Voor deze zandbak, begin met deze **communautaire** componenten (toelaten door de doos te controleren):
+Voor deze zandbak, begin met deze **Communities** componenten (toelaten door de doos te controleren):
 
 * Opmerkingen
 * Forum
@@ -160,11 +160,11 @@ Kies bovendien **[!UICONTROL General]** componenten, zoals
 
 >[!NOTE]
 >
->De componenten die voor het paginapunt worden toegelaten worden opgeslagen in de bewaarplaats als waarde van het `components` bezit van
+>De componenten die voor het paginapunt worden toegelaten worden opgeslagen in de bewaarplaats als waarde van `components` bezit van
 >
 >`/etc/designs/an-scf-sandbox/jcr:content/playpage/par` knooppunt.
 
-## Landing Page {#landing-page}
+## Openingspagina {#landing-page}
 
 In een meertalig milieu, zou de wortelpagina een manuscript omvatten dat het verzoek van de cliënt zou ontleden om de aangewezen taal te bepalen.
 
@@ -176,7 +176,7 @@ Wijzig de URL van de browser in de hoofdpagina: [http://localhost:4502/editor.ht
 * Selecteer **[!UICONTROL Open Properties]**
 * Op het tabblad GEAVANCEERD
 
-   * Blader voor het Redirect-bericht naar **[!UICONTROL Websites]** > **[!UICONTROL SCF Sandbox Site]** > **[!UICONTROL SCF Sandbox]**
+   * Voor de Redirect ingang, doorblader aan **[!UICONTROL Websites]** > **[!UICONTROL SCF Sandbox Site]** > **[!UICONTROL SCF Sandbox]**
    * Klik op **[!UICONTROL OK]**
 
 * Klik op **[!UICONTROL OK]**

@@ -24,7 +24,7 @@ In PDF Generator, kunt u de toepassingsmontages voor gesteunde dossiertypes plaa
 Op de pagina Instellingen bestandstype kunt u de volgende taken uitvoeren:
 
 * [Een instelling voor bestandstypen maken of bewerken](#create-or-edit-file-type-settings)
-* Geef op welke bestandstypen standaard moeten worden gebruikt (zie Configuratiebestanden [van PDF Generator](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)importeren en exporteren)
+* Geef op welke bestandstypen standaard moeten worden gebruikt (zie [Configuratiebestanden van PDF Generator importeren en exporteren](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md))
 * [De standaardinstellingen wijzigen](/help/forms/using/admin-help/configuring-file-type-settings.md#change-the-default-settings)
 * [PDF/A-ondersteuning inschakelen](/help/forms/using/admin-help/enable-pdf-a-support.md)
 * [Een instelling voor Bestandstypen verwijderen](/help/forms/using/admin-help/enable-pdf-a-support.md)
@@ -39,12 +39,12 @@ Maak of bewerk een bestandstype-instelling om op te geven hoe de toepassing omga
 
 1. Klik in de beheerconsole op **[!UICONTROL Services]** > **[!UICONTROL PDF Generator]** > **[!UICONTROL File Type Settings]**.
 1. Klik op Nieuw of klik op de naam van een instelling.
-1. Typ in het vak Bestandsnaamextensies de bestandsextensies, gescheiden door komma&#39;s, voor de bestandstypen die voor deze toepassing zijn geaccepteerd. Neem de punt voor of geen ruimte op tussen de extensies. The default is `bmp,gif,jpeg,jpg,tif,tiff,png`.
+1. Typ in het vak Bestandsnaamextensies de bestandsextensies, gescheiden door komma&#39;s, voor de bestandstypen die voor deze toepassing zijn geaccepteerd. Neem de punt voor of geen ruimte op tussen de extensies. De standaardwaarde is `bmp,gif,jpeg,jpg,tif,tiff,png`.
 1. (Optioneel) Als u OCR (optische codeherkenning) wilt gebruiken voor tekst in afbeeldingen of afbeeldingen, selecteert u OCR gebruiken en stelt u de volgende opties in:
 
-**Primaire OCR-taal:** De taal die de OCR-engine moet gebruiken om de tekens te identificeren. De standaardwaarde is Engels (VS).
+**Primaire OCR-taal:** de taal die de OCR-engine moet gebruiken om de tekens te identificeren. De standaardwaarde is Engels (VS).
 
-**PDF-uitvoerstijl:** Selecteer Doorzoekbare afbeelding om een bitmapafbeelding te hebben van de pagina&#39;s op de voorgrond en de gescande tekst op een onzichtbare laag eronder. De weergave van de pagina verandert niet, maar de tekst wordt selecteerbaar en leesbaar. Selecteer Opgemaakte tekst en afbeeldingen om de originele pagina samen te stellen met herkende tekst, lettertypen, afbeeldingen en andere grafische elementen. De standaardinstelling is Doorzoekbare afbeelding (exact).
+**PDF-uitvoerstijl:** Selecteer Doorzoekbare afbeelding als u een bitmapafbeelding wilt maken van de pagina&#39;s op de voorgrond en de gescande tekst op een onzichtbare laag eronder. De weergave van de pagina verandert niet, maar de tekst wordt selecteerbaar en leesbaar. Selecteer Opgemaakte tekst en afbeeldingen om de originele pagina samen te stellen met herkende tekst, lettertypen, afbeeldingen en andere grafische elementen. De standaardinstelling is Doorzoekbare afbeelding (exact).
 
 **Afbeeldingen downsamplen:** Hiermee verkleint u het aantal pixels in kleuren-, grijswaarden- en monochrome afbeeldingen. De downsampling van gescande afbeeldingen wordt uitgevoerd nadat de OCR is voltooid. De standaardwaarde is Laagste (600 dpi). Deze optie is niet beschikbaar als u de PDF-uitvoerstijl instelt op Doorzoekbare afbeelding (exact).
 
@@ -80,18 +80,18 @@ Maak of bewerk een bestandstype-instelling om op te geven hoe de toepassing omga
 
    [Instellingen van andere toepassingen (alleen Windows)](/help/forms/using/admin-help/configuring-file-type-settings.md#other-applications-settings-windows-only)
 
-   Als u naar een andere sectie wilt gaan, klikt u op de koppeling op de webpagina of gebruikt u de **[!UICONTROL Next]** knoppen of **[!UICONTROL Previous]** knoppen.
+   Als u naar een andere sectie wilt gaan, klikt u op de koppeling op de webpagina of gebruikt u de knoppen **[!UICONTROL Next]** of **[!UICONTROL Previous]**.
 
-1. Nadat u alle secties hebt voltooid, klikt u op **[!UICONTROL Save]** **[!UICONTROL Save As]** of geeft u een naam voor de instelling op.
+1. Nadat u alle secties voltooit, klik **[!UICONTROL Save]** of **[!UICONTROL Save As]** en ga een naam voor het plaatsen in.
 
-Ondersteuning voor verschillende bestandstypen kan worden aangepast. (Zie Ondersteuning [toevoegen voor extra eigen bestandsindelingen](https://help.adobe.com/en_US/AEMForms/6.1/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-7756.2.html)in [Programmeren met AEM formulieren](https://www.adobe.com/go/learn_lc_programming_11).)
+Ondersteuning voor verschillende bestandstypen kan worden aangepast. (Zie &quot; [Ondersteuning toevoegen voor extra eigen bestandsindelingen](https://help.adobe.com/en_US/AEMForms/6.1/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-7756.2.html)&quot; in [Programmeren met AEM formulieren](https://www.adobe.com/go/learn_lc_programming_11).)
 
 ## De standaardinstellingen wijzigen {#change-the-default-settings}
 
 U kunt de standaardwaarde wijzigen voor de Adobe PDF-instellingen, beveiligingsinstellingen en bestandstypen die van toepassing zijn op nieuwe bronnen. Het wijzigen van de standaardinstellingen heeft geen invloed op de instellingen van bestaande bronnen.
 
 1. Klik in Beheerconsole op **[!UICONTROL Services > PDF Generator]**.
-1. On the **[!UICONTROL Adobe PDF Settings]**, **[!UICONTROL File Type Settings]**, or **[!UICONTROL Security Settings]** page, click **[!UICONTROL Set Default Settings]**.
+1. Op **[!UICONTROL Adobe PDF Settings]**, **[!UICONTROL File Type Settings]**, of **[!UICONTROL Security Settings]** pagina, klik **[!UICONTROL Set Default Settings]**.
 1. Selecteer de gewenste standaardinstellingen. Een of meer van de volgende instellingen zijn beschikbaar op de pagina Standaardinstellingen instellen:
 
    **[!UICONTROL Adobe PDF Setting]**: De oorspronkelijke standaardinstelling is Standaard (Acrobat 6).
@@ -102,39 +102,39 @@ U kunt de standaardwaarde wijzigen voor de Adobe PDF-instellingen, beveiligingsi
 
 1. Klik op **[!UICONTROL Save]**.
 
-## Een instelling voor Bestandstypen verwijderen {#delete-a-file-type-setting}
+## Een instelling voor het bestandstype verwijderen {#delete-a-file-type-setting}
 
 U kunt een bestandstype-instelling verwijderen die niet meer wordt gebruikt.
 
 1. Klik in de beheerconsole op **[!UICONTROL Services > PDF Generator> File Type Settings]**.
 1. Schakel het selectievakje naast de instelling die u wilt verwijderen in. U kunt meerdere bronnen selecteren. Instellingen zonder selectievakje worden altijd opgenomen in de PDF-Generator en kunnen niet worden verwijderd.
-1. Klik **[!UICONTROL Delete]** en klik op de pagina met validaties verwijderen **[!UICONTROL Delete]**.
+1. Klik **[!UICONTROL Delete]** en, op de Schrappingspagina van de Bevestiging van de Schrapping, klik **[!UICONTROL Delete]**.
 
 ## Afbeelding naar PDF-instellingen {#image-to-pdf-settings}
 
-De volgende opties bepalen hoe afbeeldingsbestanden naar PDF worden geconverteerd. Zie [Bestandstype-instellingen](configuring-file-type-settings.md#create-or-edit-file-type-settings)maken of bewerken voor instructies over het openen van deze instellingen.
+De volgende opties bepalen hoe afbeeldingsbestanden naar PDF worden geconverteerd. Zie [Bestandstype-instellingen maken of bewerken](configuring-file-type-settings.md#create-or-edit-file-type-settings) voor instructies over het openen van deze instellingen.
 
-**Bestandsnaamextensies:** Lijst met door komma&#39;s gescheiden bestandsextensies die kunnen worden omgezet.
+**Bestandsnaamextensies:lijst met bestandsextensies die door** komma&#39;s kunnen worden geconverteerd.
 
-**Converter voor alternatieven uitproberen:** PDF Generator kan Java™ of Acrobat gebruiken om afbeeldingsbestanden naar PDF te converteren. Als deze optie is geselecteerd en een conversie mislukt of de opgegeven time-outlimiet bereikt, probeert de PDF Generator de conversie met de alternatieve methode uit te voeren. Als de alternatieve methode mislukt of de opgegeven time-outlimiet bereikt, wordt een uitzondering naar het logbestand geschreven.
+**Probeer Converter fallback:** PDF Generator kan Java™ of Acrobat gebruiken om afbeeldingsbestanden te converteren naar PDF. Als deze optie is geselecteerd en een conversie mislukt of de opgegeven time-outlimiet bereikt, probeert de PDF Generator de conversie met de alternatieve methode uit te voeren. Als de alternatieve methode mislukt of de opgegeven time-outlimiet bereikt, wordt een uitzondering naar het logbestand geschreven.
 
 >[!NOTE]
 >
 >JPEG 2000-bestanden kunnen alleen worden geconverteerd met Acrobat.
 
-**OCR gebruiken:** Hiermee geeft u aan of OCR (optische tekenherkenning) op de PDF moet worden toegepast. Met de OCR-software kunt u de tekst in de PDF zoeken, corrigeren en kopiëren.
+**OCR gebruiken:** geeft aan of OCR (optische tekenherkenning) op de PDF moet worden toegepast. Met de OCR-software kunt u de tekst in de PDF zoeken, corrigeren en kopiëren.
 
 ***opmerking **: De functie OCR PDF (doorzoekbare PDF) wordt alleen ondersteund in Microsoft Windows.*
 
-**Primaire OCR-taal:** Hiermee geeft u de taal op die de OCR-engine moet gebruiken om de tekens te identificeren.
+**Primaire OCR-taal:** geeft de taal op die de OCR-engine moet gebruiken om de tekens te identificeren.
 
-**PDF-uitvoerstijl:** Hiermee bepaalt u het type PDF dat wordt gemaakt. Bij alle indelingen worden OCR en font- en paginaherkenning toegepast op tekstafbeeldingen en worden deze naar normale tekst omgezet.
+**PDF-uitvoerstijl:** bepaalt het type PDF dat wordt geproduceerd. Bij alle indelingen worden OCR en font- en paginaherkenning toegepast op tekstafbeeldingen en worden deze naar normale tekst omgezet.
 
-**Doorzoekbare afbeelding:** Hiermee zorgt u ervoor dat de tekst doorzoekbaar en selecteerbaar is. Met deze optie behoudt u de oorspronkelijke afbeelding, heft u de afbeelding desgewenst schuin en plaatst u er een onzichtbare tekstlaag overheen. Met de optie Afbeeldingen downsamplen bepaalt u of en in welke mate de afbeelding wordt gedownsampled.
+**Doorzoekbare afbeelding:** zorgt dat de tekst doorzoekbaar en selecteerbaar is. Met deze optie behoudt u de oorspronkelijke afbeelding, heft u de afbeelding desgewenst schuin en plaatst u er een onzichtbare tekstlaag overheen. Met de optie Afbeeldingen downsamplen bepaalt u of en in welke mate de afbeelding wordt gedownsampled.
 
-**Doorzoekbare afbeelding (exact):** Hiermee zorgt u ervoor dat de tekst doorzoekbaar en selecteerbaar is. Met deze optie behoudt u de oorspronkelijke afbeelding en plaatst u er een onzichtbare tekstlaag overheen. Aanbevolen voor gevallen waarin maximale getrouwheid aan de oorspronkelijke afbeelding vereist is.
+**Doorzoekbare afbeelding (exact):** zorgt dat de tekst doorzoekbaar en selecteerbaar is. Met deze optie behoudt u de oorspronkelijke afbeelding en plaatst u er een onzichtbare tekstlaag overheen. Aanbevolen voor gevallen waarin maximale getrouwheid aan de oorspronkelijke afbeelding vereist is.
 
-**ClearScan:** Hiermee wordt een nieuw Type 3-lettertype gesynchroniseerd dat het oorspronkelijke lettertype benadert en wordt de pagina-achtergrond behouden door een kopie met lage resolutie te gebruiken.
+**ClearScan:** synchroniseert een nieuw Type 3-font dat het origineel vrijwel benadert en behoudt de pagina-achtergrond door een kopie met lage resolutie te gebruiken.
 
 **Afbeeldingen downsamplen:** Hiermee verkleint u het aantal pixels in kleuren-, grijswaarden- en monochrome afbeeldingen nadat de OCR is voltooid. Kies de mate van downsampling die u wilt toepassen. Hogere opties zorgen voor minder downsampling, waardoor PDF&#39;s met een hogere resolutie ontstaan.
 
@@ -142,27 +142,27 @@ De volgende opties bepalen hoe afbeeldingsbestanden naar PDF worden geconverteer
 
 De instelling Bestandstype exporteren in het gedeelte Adobe PDF-exportinstellingen wordt gebruikt voor de conversie van een PDF-bestand naar een andere indeling. De standaardinstelling is HTML 4.01 met CSS (Cascading Style Sheets) 1.0 (*.htm, *.html).
 
-Zie [Bestandstype-instellingen](configuring-file-type-settings.md#create-or-edit-file-type-settings)maken of bewerken voor instructies over het openen van deze instelling.
+Zie [Bestandstype-instellingen maken of bewerken](configuring-file-type-settings.md#create-or-edit-file-type-settings) voor instructies over het benaderen van deze instelling.
 
 ## HTML-naar-PDF-instellingen {#html-to-pdf-settings}
 
-De volgende opties bepalen hoe HTML-bestanden naar PDF worden geconverteerd. Zie [Bestandstype-instellingen](configuring-file-type-settings.md#create-or-edit-file-type-settings)maken of bewerken voor instructies over het openen van deze opties.
+De volgende opties bepalen hoe HTML-bestanden naar PDF worden geconverteerd. Zie [Bestandstype-instellingen maken of bewerken](configuring-file-type-settings.md#create-or-edit-file-type-settings) voor instructies over het openen van deze opties.
 
-**Converter voor alternatieven uitproberen:** PDF Generator kan Java™ of Acrobat gebruiken om HTML-bestanden naar PDF te converteren. Als deze optie is geselecteerd en een conversie mislukt of de opgegeven time-outlimiet bereikt, probeert de PDF Generator de conversie met de alternatieve methode uit te voeren. Als de alternatieve methode mislukt of de opgegeven time-outlimiet bereikt, wordt een uitzondering naar het logbestand geschreven.
+**Probeer Convertor voor alternatieven:** PDF Generator kan Java™ of Acrobat gebruiken om HTML-bestanden naar PDF te converteren. Als deze optie is geselecteerd en een conversie mislukt of de opgegeven time-outlimiet bereikt, probeert de PDF Generator de conversie met de alternatieve methode uit te voeren. Als de alternatieve methode mislukt of de opgegeven time-outlimiet bereikt, wordt een uitzondering naar het logbestand geschreven.
 
-**Standaardcodering:** Hiermee stelt u de invoercodering van de bestandstekst in via een menu met besturingssystemen en alfabeten. Hiermee wordt de selectie bij Standaardcodering alleen gebruikt als het HTML-bronbestand geen type codering opgeeft.
+**Standaardcodering:** stelt de invoercodering van de bestandstekst in via een menu met besturingssystemen en alfabeten. Hiermee wordt de selectie bij Standaardcodering alleen gebruikt als het HTML-bronbestand geen type codering opgeeft.
 
-**Geselecteerde codering forceren:** Hiermee wordt alle codering die in het HTML-bronbestand is opgegeven, genegeerd en wordt de selectie gebruikt die wordt weergegeven bij de optie Standaardcodering.
+**Geselecteerde codering forceren:** negeert alle codering die in het HTML-bronbestand is opgegeven en gebruikt de selectie die wordt weergegeven in de optie Standaardcodering.
 
-### Instellingen voor Spiegelen {#spidering-settings}
+### Bezig met weergeven van instellingen {#spidering-settings}
 
-*Met Spidering* worden webpagina&#39;s gescand op koppelingen naar andere webpagina&#39;s. Wanneer een koppeling naar een andere webpagina wordt aangetroffen, wordt de doelpagina opgehaald en opgenomen in het PDF-document dat wordt gegenereerd. Schakel deze opties in om het aantal niveaus in te stellen dat moet worden opgehaald en geconverteerd naar PDF:
+*Met* Spinnen kunt u webpagina&#39;s scannen op koppelingen naar andere webpagina&#39;s. Wanneer een koppeling naar een andere webpagina wordt aangetroffen, wordt de doelpagina opgehaald en opgenomen in het PDF-document dat wordt gegenereerd. Schakel deze opties in om het aantal niveaus in te stellen dat moet worden opgehaald en geconverteerd naar PDF:
 
-**Alleen x-niveaus ophalen:** Met deze optie worden pagina&#39;s tot een diepte van het opgegeven niveau geconverteerd van de URL van de basispagina. Met de waarde 1 wordt alleen de opgegeven URL geconverteerd.
+**Alleen X-niveaus ophalen:** Spinnen en pagina&#39;s met een diepte van het opgegeven niveau omzetten in de URL van de basispagina. Met de waarde 1 wordt alleen de opgegeven URL geconverteerd.
 
-**Volledige site ophalen:** Hiermee converteert u de gehele site, te beginnen met de opgegeven URL.
+**Volledige site ophalen:** hiermee wordt de gehele site geconverteerd, te beginnen met de opgegeven URL.
 
-**Op hetzelfde pad blijven:** Koppelingen die verwijzen naar pagina&#39;s die zich niet op hetzelfde relatieve pad bevinden als de basis-URL, worden niet geconverteerd tijdens het spinnen.
+**Op hetzelfde pad blijven:** koppelingen die verwijzen naar pagina&#39;s die zich niet op hetzelfde relatieve pad bevinden als de basis-URL, worden niet geconverteerd tijdens het spinnen.
 
 **Op dezelfde server blijven:** Koppelingen die verwijzen naar pagina&#39;s op verschillende servers worden niet geconverteerd tijdens het spinnen. Alleen koppelingen die naar dezelfde server als de opgegeven URL verwijzen, worden geconverteerd.
 
@@ -170,27 +170,27 @@ De volgende opties bepalen hoe HTML-bestanden naar PDF worden geconverteerd. Zie
 
 Schakel deze opties in om op te geven hoe de HTML-pagina&#39;s worden geconverteerd. Op basis van het paginaformaat worden de waarden voor breedte, hoogte en marge dienovereenkomstig aangepast.
 
-**Paginaformaat:** Kies Aangepast en geef de breedte en hoogte op of selecteer vooraf gedefinieerde afmetingen.
+**Paginaformaat:** Kies een aangepaste waarde en geef de breedte en hoogte op of selecteer vooraf gedefinieerde afmetingen.
 
-**Richting:** Selecteer Staand of Liggend voor het geconverteerde PDF-document.
+**Afdrukstand:** selecteer Staand of Liggend voor het geconverteerde PDF-document.
 
-**Marges:** Hiermee geeft u de marges (Boven, Onder, Links en Rechts) in het gegenereerde PDF-document op.
+**Marges:** geeft de marges (Boven, Onder, Links en Rechts) op in het gegenereerde PDF-document.
 
-**Bladwijzers toevoegen aan PDF:** Voegt bladwijzers toe aan het PDF-document.
+**Bladwijzers toevoegen aan PDF:bladwijzers** toevoegen aan het PDF-document.
 
-**Gelabelde PDF inschakelen:** Hiermee sluit u codes in het PDF-document in.
+**Schakel Gecodeerde PDF:** sluit codes in het PDF-document in.
 
-**Weergave-instellingen bij openen instellen:** Hiermee kunt u Documentopties, Vensteropties en gebruikersinterfaceopties configureren. Deze instellingen bepalen hoe de inhoud in eerste instantie wordt weergegeven.
+**Instellingen voor beginweergave instellen:** Hiermee kunt u documentopties, vensteropties en gebruikersinterfaceopties configureren. Deze instellingen bepalen hoe de inhoud in eerste instantie wordt weergegeven.
 
 ### Documentopties {#document-options}
 
 Schakel deze opties in om op te geven hoe de inhoud moet worden weergegeven, hoe pagina&#39;s in het PDF-document moeten worden weergegeven en hoe u het vergrotingsniveau wilt instellen:
 
-**Tonen:** Selecteer de deelvensters die in Acrobat moeten worden geopend wanneer het PDF-document wordt geopend.
+**Tonen:** selecteer de deelvensters die u wilt openen in Acrobat wanneer het PDF-document wordt geopend.
 
-**Pagina-indeling:** Selecteer het type pagina-indeling voor het PDF-document.
+**Pagina-indeling:** selecteer het type pagina-indeling voor het PDF-document.
 
-**Vergroting:** Kies een vooraf ingestelde vergroting voor de openingsweergave van het PDF-document of selecteer een aangepaste waarde. Als u een standaardinstelling kiest, wordt de standaardvergroting voor Acrobat gebruikt.
+**Vergroting:** kies vooraf ingestelde vergroting voor de aanvankelijke mening van het PDF document of selecteer een douanewaarde. Als u een standaardinstelling kiest, wordt de standaardvergroting voor Acrobat gebruikt.
 
 **Openen naar paginanummer:** Geef het paginanummer op waarop de PDF wordt geopend.
 
@@ -198,35 +198,35 @@ Schakel deze opties in om op te geven hoe de inhoud moet worden weergegeven, hoe
 
 Schakel deze opties in om op te geven hoe de grootte en weergave van het venster worden aangepast.
 
-**Vensterformaat als van eerste pagina:** Hiermee past u de grootte van het Acrobat-venster aan aan de grootte van de eerste pagina.
+**Vensterformaat als van eerste pagina:** wijzigt de grootte van het Acrobat-venster tot de grootte van de eerste pagina.
 
 **Venster centreren op scherm:** Hiermee opent u het venster in het midden van het scherm.
 
-**Openen in Volledig scherm:** Hiermee opent u het venster in de modus Volledig scherm.
+**Openen in Volledig scherm:** opent het venster in de modus Volledig scherm.
 
-**Tonen:** Hiermee geeft u de documenttitel of bestandsnaam weer in het venster.
+**Tonen:** geeft de documenttitel of bestandsnaam weer in het venster.
 
-### Gebruikersinterfaceopties {#user-interface-options}
+### Opties gebruikersinterface {#user-interface-options}
 
 Schakel deze opties in om de weergave van het venster op te geven:
 
-**Menubalk verbergen:** Hiermee verbergt u de menubalk in het PDF-document.
+**Menubalk verbergen:** verbergt de menubalk in het PDF-document.
 
-**Werkbalken verbergen:** Hiermee verbergt u de werkbalken in het PDF-document.
+**Werkbalken verbergen:** verbergt de werkbalken in het PDF-document.
 
-**Vensterbalk verbergen:** Hiermee verbergt u de vensterbesturingselementen in het PDF-document.
+**Vensterbalk verbergen:** verbergt de vensterbesturingselementen in het PDF-document.
 
 ## Video&#39;s Flash naar PDF-instellingen {#flash-videos-to-pdf-settings}
 
-PDF Generator ondersteunt de mogelijkheid om een video te verzenden voor Adobe Flash (SWF- of FLV-bestand) en een PDF-bestand te maken waarin een video is ingesloten voor Adobe Flash. Voor deze conversie hoeft Adobe Flash Player niet te worden geïnstalleerd op de formulierserver. Zie [Bestandstype-instellingen](configuring-file-type-settings.md#create-or-edit-file-type-settings)maken of bewerken voor instructies over het openen van deze optie.
+PDF Generator ondersteunt de mogelijkheid om een video te verzenden voor Adobe Flash (SWF- of FLV-bestand) en een PDF-bestand te maken waarin een video is ingesloten voor Adobe Flash. Voor deze conversie hoeft Adobe Flash Player niet te worden geïnstalleerd op de formulierserver. Zie [Bestandstype-instellingen maken of bewerken](configuring-file-type-settings.md#create-or-edit-file-type-settings) voor instructies over het openen van deze optie.
 
-**Bestandsnaamextensies:** Lijst met door komma&#39;s gescheiden bestandsextensies die kunnen worden omgezet.
+**Bestandsnaamextensies:lijst met bestandsextensies die door** komma&#39;s kunnen worden geconverteerd.
 
 ## XPS naar PDF-instellingen {#xps-to-pdf-settings}
 
 De Specificatie van het Papier van XML (XPS) wordt gebruikt in de Drukkerij van Vensters. Dit is een formaat van Microsoft en kan van om het even welke toepassing van Microsoft Office worden gecreeerd. Met AEM formulieren kunt u XPS-bestanden converteren naar PDF.
 
-**Bestandsnaamextensies:** Een door komma&#39;s gescheiden lijst van alle filename van XPS uitbreidingen die kunnen worden omgezet. Er is momenteel één indeling: .xps.
+**Bestandsnaamextensies:** een door komma&#39;s gescheiden lijst met alle XPS-bestandsnaamextensies die kunnen worden geconverteerd. Er is momenteel één indeling: .xps.
 
 ## Instellingen voor PDF optimaliseren {#pdf-optimizer-settings}
 
@@ -236,24 +236,24 @@ PDF Generator ondersteunt de mogelijkheid om PDF-bestanden te verkleinen. Of u a
 >
 >Als u een digitaal ondertekend document optimaliseert, worden de digitale handtekeningen verwijderd en ongeldig gemaakt.
 
-Zie [Bestandstype-instellingen](configuring-file-type-settings.md#create-or-edit-file-type-settings)maken of bewerken voor instructies over het openen van deze instelling.
+Zie [Bestandstype-instellingen maken of bewerken](configuring-file-type-settings.md#create-or-edit-file-type-settings) voor instructies over het benaderen van deze instelling.
 
-**PDF-doelversie:** Hiermee geeft u de versie van Acrobat op waarmee de PDF compatibel is.
+**Doel-PDF-versie:** geeft de versie van Acrobat op waarmee de PDF compatibel is.
 
 ### Lettertypen {#fonts}
 
 1. Selecteer **Lettertypen.**
 1. Kies een van de volgende opties:
 
-   **Insluiting van alle fonts ongedaan maken:** Hiermee worden alle ingesloten lettertypen verwijderd.
+   **Insluiten van alle fonts ongedaan maken:** insluiten van alle ingesloten fonts opheffen.
 
-   **Geen font verwijderen:** Insluiting van fonts wordt niet ongedaan gemaakt.
+   **Geen lettertypen vrijmaken:** sluit insluiting van lettertypen niet ongedaan.
 
-   **Enkele fonts insluiten ongedaan maken:** Hiermee worden alleen de opgegeven lettertypen verwijderd. Ga als volgt te werk om de fonts op te geven die u wilt verwijderen uit de insluiting:
+   **Enkele lettertypen insluiten ongedaan maken:alleen de opgegeven lettertypen** insluiten opheffen. Ga als volgt te werk om de fonts op te geven die u wilt verwijderen uit de insluiting:
 
-   * Selecteer indien nodig een andere map met lettertypen in de vervolgkeuzelijst **Lettertype-bron** . Dit vervolgkeuzemenu bevat de lettertypemappen die zijn opgegeven in **Home > Instellingen > Core System > Core Configurations**.
-   * Selecteer een of meer lettertypen in de lijst **Beschikbare lettertypen** en klik op **Toevoegen**. Deze lettertypen worden toegevoegd aan de lijst **Lettertypen ongedaan maken** .
-   * Als u de insluiting van bepaalde fonts ongedaan wilt maken die niet op de formulierserver staan, voert u de namen van die fonts in in het vak Fonts **toevoegen aan de insluiting** . Click **Add**.
+   * Selecteer zo nodig een andere map met lettertypen in het vervolgkeuzemenu **Fontbron**. Dit vervolgkeuzemenu bevat de lettertypemappen die zijn opgegeven in **Home > Instellingen > Core System > Core Configurations**.
+   * Selecteer een of meer lettertypen in de lijst **Beschikbare lettertypen** en klik op **Toevoegen**. Deze lettertypen worden toegevoegd aan de lijst **Lettertypen voor insluiten ongedaan maken**.
+   * Als u de insluiting van bepaalde fonts ongedaan wilt maken die niet op de formulierserver aanwezig zijn, voert u de namen van deze fonts in het tekstvak **Fonts toevoegen aan de insluiting**. Klik **Add**.
 
    >[!NOTE]
    >
@@ -263,7 +263,7 @@ Zie [Bestandstype-instellingen](configuring-file-type-settings.md#create-or-edit
 
    >[!NOTE]
    >
-   >*Als u deze optie gebruikt in combinatie met het insluiten van bepaalde lettertypen **ongedaan**maken, wordt het insluiten van lettertypen in de lijst **Lettertypen toevoegen aan niet-ingesloten**lettertypen nog steeds volledig ongedaan gemaakt.*
+   >*Als u deze optie gebruikt in combinatie met het insluiten van bepaalde lettertypen **ongedaan**maken, wordt het insluiten van lettertypen in de lijst **Lettertypen toevoegen aan**niet-ingesloten lijst nog steeds ongedaan gemaakt.*
 
    >[!NOTE]
    >
@@ -279,29 +279,29 @@ Als uw PDF-document illustraties met transparantie bevat, kunt u met de instelli
 
 Selecteer **Transparantie** om de transparantie-instellingen te configureren tijdens het optimaliseren van PDF-documenten.
 
-**Transparantieniveau** geeft de hoeveelheid vectorinformatie op die behouden blijft. Bij een hogere instelling blijven meer vectorobjecten behouden, terwijl bij een lagere instelling meer vectorobjecten worden gerasterd. Met tussenliggende instellingen blijven eenvoudige gebieden in vectorvorm behouden en worden complexe gebieden gerasterd. Selecteer de laagste instelling als u alle illustraties wilt rasteren.
+**TransparantieniveauHiermee bepaalt u** hoeveel vectorinformatie behouden blijft. Bij een hogere instelling blijven meer vectorobjecten behouden, terwijl bij een lagere instelling meer vectorobjecten worden gerasterd. Met tussenliggende instellingen blijven eenvoudige gebieden in vectorvorm behouden en worden complexe gebieden gerasterd. Selecteer de laagste instelling als u alle illustraties wilt rasteren.
 
 >[!NOTE]
 >
 >De mate van rastering is afhankelijk van de complexiteit van de pagina en de typen overlappende objecten.
 
-**Resolutie van lijnwerk en tekst** waarop alle objecten, inclusief afbeeldingen, vectorillustraties, tekst en verlopen, worden gerasterd. De ondersteunde waarden zijn 1 pixels per inch (ppi) tot en met 9600 ppi.
+**Lijntekeningen en** tekstresolutie waarop alle objecten, inclusief afbeeldingen, vectorillustraties, tekst en verlopen, worden gerasterd. De ondersteunde waarden zijn 1 pixels per inch (ppi) tot en met 9600 ppi.
 
 >[!NOTE]
 >
 >De resolutie voor lijnwerk en tekst moet doorgaans worden ingesteld op 600-1200 ppi voor rastering van hoge kwaliteit, vooral bij tekst met schreef of kleine puntgrootten.
 
-**Resolutie van verloop en netten** waarnaar verloop en netten worden gerasterd. De ondersteunde waarden zijn 1 ppi tot en met 1200 ppi.
+**Verloop en** resolutie waarop verloop en netten worden gerasterd. De ondersteunde waarden zijn 1 ppi tot en met 1200 ppi.
 
 >[!NOTE]
 >
 >Verloop- en netresolutie moet doorgaans worden ingesteld op 150-300 ppi, omdat de kwaliteit van de verlopen, slagschaduwen en doezelaars niet verbetert bij hogere resoluties, maar doordat de afdruktijd en de bestandsgrootte toenemen.
 
-**Met Alle tekst omzetten in contouren** worden alle tekstobjecten (punttekst, vlaktekst en padtekst) omgezet in contouren en wordt alle informatie over tekstglyphs op pagina&#39;s met transparantie genegeerd. Met deze optie blijft de breedte van tekst tijdens het afvlakken consistent. Houd er rekening mee dat kleine lettertypen hierdoor iets dikker worden weergegeven in Acrobat of worden afgedrukt op desktopprinters met een lage resolutie. Dit heeft geen invloed op de kwaliteit van de tekst die wordt afgedrukt op printers of imagesetters met hoge resolutie.
+**Alle tekst omzetten in** contourenHiermee worden alle tekstobjecten (punttekst, vlaktekst en padtekst) omgezet in contouren en wordt alle informatie over tekstglyphs op pagina&#39;s met transparantie genegeerd. Met deze optie blijft de breedte van tekst tijdens het afvlakken consistent. Houd er rekening mee dat kleine lettertypen hierdoor iets dikker worden weergegeven in Acrobat of worden afgedrukt op desktopprinters met een lage resolutie. Dit heeft geen invloed op de kwaliteit van de tekst die wordt afgedrukt op printers of imagesetters met hoge resolutie.
 
-**Met Alle lijnen converteren naar contouren** worden alle lijnen omgezet in eenvoudige gevulde paden op pagina&#39;s met transparantie. Met deze optie blijft de breedte van lijnen tijdens het afvlakken consistent. Houd er rekening mee dat dunne lijnen hierdoor iets dikker worden weergegeven en dat de prestaties van de afvlakking kunnen afnemen.
+**Alle lijnen converteren naar** contourenHiermee worden alle lijnen omgezet in eenvoudige gevulde paden op pagina&#39;s met transparantie. Met deze optie blijft de breedte van lijnen tijdens het afvlakken consistent. Houd er rekening mee dat dunne lijnen hierdoor iets dikker worden weergegeven en dat de prestaties van de afvlakking kunnen afnemen.
 
-**Complexe gebieden** knippen zorgt ervoor dat de grenzen tussen vectorillustraties en gerasterde illustraties langs objectpaden vallen. Met deze optie worden stitching-artefacten verminderd die ontstaan wanneer ze deel uitmaken van een logboek
+**Complexe** gebieden knippenHiermee zorgt u ervoor dat de grenzen tussen vectorillustraties en gerasterde illustraties langs objectpaden vallen. Met deze optie worden stitching-artefacten verminderd die ontstaan wanneer ze deel uitmaken van een logboek
 
 <!--
 NOTE to WRITER: Unfinished sentence above.
@@ -315,7 +315,7 @@ Overdruk behouden: Hiermee voegt u de kleur van transparante illustraties samen 
 
 In de volgende tabel ziet u de meestgebruikte printertypen en de resolutie van deze printers in dpi, de standaard rasterliniatuur in regels per inch (lpi) en een resamplingresolutie voor afbeeldingen in pixels per inch (ppi). Als u bijvoorbeeld afdrukt op een 600-dpi laserprinter, voert u 170 in voor de resolutie waarmee u het aantal pixels in afbeeldingen wilt wijzigen.
 
-**Afbeeldingen** selecteren Afbeeldingen om opties voor compressie en resampling op te geven voor afbeeldingen in kleur, grijswaarden en monochroom. U kunt met deze opties experimenteren om een juiste balans te vinden tussen bestandsgrootte en afbeeldingskwaliteit. De resolutie-instelling voor kleuren- en grijswaardenafbeeldingen moet 1,5 tot 2 keer zo hoog zijn als de rasterliniatuur waarop het bestand wordt afgedrukt. De resolutie voor monochrome afbeeldingen moet gelijk zijn aan die van het uitvoerapparaat, maar houd er rekening mee dat als u een monochrome afbeelding opslaat met een resolutie hoger dan 1500 dpi, het bestand groter wordt zonder dat de beeldkwaliteit merkbaar toeneemt. Voor afbeeldingen die worden vergroot, zoals kaarten, is mogelijk een hogere resolutie vereist.
+**** AfbeeldingenSelecteer Afbeeldingen om opties voor compressie en resampling op te geven voor kleuren-, grijswaarden- en monochrome afbeeldingen. U kunt met deze opties experimenteren om een juiste balans te vinden tussen bestandsgrootte en afbeeldingskwaliteit. De resolutie-instelling voor kleuren- en grijswaardenafbeeldingen moet 1,5 tot 2 keer zo hoog zijn als de rasterliniatuur waarop het bestand wordt afgedrukt. De resolutie voor monochrome afbeeldingen moet gelijk zijn aan die van het uitvoerapparaat, maar houd er rekening mee dat als u een monochrome afbeelding opslaat met een resolutie hoger dan 1500 dpi, het bestand groter wordt zonder dat de beeldkwaliteit merkbaar toeneemt. Voor afbeeldingen die worden vergroot, zoals kaarten, is mogelijk een hogere resolutie vereist.
 
 >[!NOTE]
 >
@@ -351,9 +351,9 @@ In de volgende tabel ziet u de meestgebruikte printertypen en de resolutie van d
  </tbody>
 </table>
 
-#### Objecten negeren {#discard-objects}
+#### Objecten {#discard-objects} negeren
 
-* Selecteer Objecten **** negeren om objecten op te geven die u uit de PDF wilt verwijderen en om gekromde lijnen in CAD-tekeningen te optimaliseren.
+* Selecteer **Objecten negeren** om objecten op te geven die u uit de PDF wilt verwijderen en om gekromde lijnen in CAD-tekeningen te optimaliseren.
 * **Alle acties** voor het verzenden, importeren en opnieuw instellen van formulieren negeren: Hiermee worden alle handelingen uitgeschakeld die betrekking hebben op het verzenden of importeren van formuliergegevens, en worden formuliervelden opnieuw ingesteld. Met deze optie blijven formulierobjecten behouden waaraan handelingen zijn gekoppeld.
 * **Alle JavaScript-handelingen** negeren: Hiermee verwijdert u handelingen die JavaScript gebruiken uit de PDF.
 * **Ingesloten paginaminiaturen** negeren: Hiermee verwijdert u ingesloten paginaminiaturen. Deze optie is handig voor grote documenten waarbij het lang kan duren voordat de paginaminiaturen zijn gegenereerd nadat u op de knop Pagina&#39;s hebt geklikt.
@@ -366,9 +366,9 @@ In de volgende tabel ziet u de meestgebruikte printertypen en de resolutie van d
 * **Afbeeldingsfragmenten** zoeken en samenvoegen: Zoekt naar afbeeldingen of maskers die zijn gefragmenteerd in dunne segmenten en probeert de segmenten samen te voegen tot één afbeelding of masker.
 * **Ingesloten zoekindex** negeren: Hiermee verwijdert u ingesloten zoekindexen, waardoor het bestand kleiner wordt.
 
-#### Gebruikersgegevens negeren {#discard-user-data}
+#### Gebruikersgegevens {#discard-user-data} negeren
 
-Selecteer Gebruikersgegevens **** negeren om persoonlijke gegevens te verwijderen die u niet wilt verspreiden of delen met andere gebruikers.
+Selecteer **Gebruikersgegevens negeren** om persoonlijke gegevens te verwijderen die u niet wilt verspreiden of delen met andere gebruikers.
 
 * **Alle opmerkingen, Forms en multimedia** negeren: Hiermee verwijdert u alle opmerkingen, formulieren, formuliervelden en multimedia uit de PDF.
 * **Alle objectgegevens** negeren: Hiermee verwijdert u alle objecten uit de PDF.
@@ -378,9 +378,9 @@ Selecteer Gebruikersgegevens **** negeren om persoonlijke gegevens te verwijdere
 * **Bestandsbijlagen** negeren: Hiermee verwijdert u alle bestandsbijlagen, inclusief bijlagen die als opmerkingen aan de PDF zijn toegevoegd. (PDF optimaliseren optimaliseert bijgevoegde bestanden niet.)
 * **Privégegevens van andere toepassingen** negeren: Hiermee verwijdert u gegevens uit een PDF-document die alleen nuttig zijn voor de toepassing waarmee het document is gemaakt. Deze instelling heeft geen invloed op de functionaliteit van de PDF, maar verkleint de bestandsgrootte.
 
-### Opruimen {#clean-up}
+### {#clean-up} opruimen
 
-Selecteer **Overbodig** verwijderen om overbodige items uit het document te verwijderen.
+Selecteer **Overbodig verwijderen** om overbodige items uit het document te verwijderen.
 Deze items bevatten elementen die verouderd of niet nodig zijn voor het beoogde gebruik van het document. Het verwijderen van bepaalde elementen kan ernstige gevolgen hebben voor de functionaliteit van de PDF. Standaard worden alleen elementen geselecteerd die geen invloed hebben op de functionaliteit. Als u niet zeker weet wat de gevolgen zijn van het verwijderen van andere opties, gebruikt u de standaardselecties.
 
 **Compressie**
@@ -408,11 +408,11 @@ Selecteer een van de volgende compressieopties voor Flate in het keuzemenu:
 
 ## Microsoft Excel-instellingen (alleen Windows) {#microsoft-excel-settings-windows-only}
 
-Deze opties bepalen hoe de dossiers van Microsoft Excel worden omgezet. Zie [Bestandstype-instellingen](#create-or-edit-file-type-settings)maken of bewerken voor instructies over het openen van deze opties.
+Deze opties bepalen hoe de dossiers van Microsoft Excel worden omgezet. Zie [Bestandstype-instellingen maken of bewerken](#create-or-edit-file-type-settings) voor instructies over het openen van deze opties.
 
 **Probeer OpenOffice als terugvalconverter**: Als deze optie is geselecteerd en een conversie met Microsoft Excel mislukt of de opgegeven time-outlimiet bereikt, probeert de PDF-Generator de conversie uit te voeren met OpenOffice. Als de conversie met OpenOffice mislukt of de opgegeven time-outlimiet bereikt, wordt een uitzondering naar het logbestand geschreven.
 
-**Bestandsnaamextensies**: Hiermee geeft u de bestandsextensies op voor bestandstypen, gescheiden door komma&#39;s, die worden geaccepteerd voor deze toepassing. The default is `xls,xlsx`. Neem geen punt voor of spatie op tussen de extensies.
+**Bestandsnaamextensies**: Hiermee geeft u de bestandsextensies op voor bestandstypen, gescheiden door komma&#39;s, die worden geaccepteerd voor deze toepassing. De standaardwaarde is `xls,xlsx`. Neem geen punt voor of spatie op tussen de extensies.
 
 **PDF/A-1a-compatibel bestand** maken: Hiermee wordt het gebruik van de instelling PDF/A-1b:2005 RGB Adobe PDF geforceerd.
 
@@ -438,7 +438,7 @@ Deze opties bepalen hoe de dossiers van Microsoft Excel worden omgezet. Zie [Bes
 
 ## Microsoft PowerPoint-instellingen (alleen Windows) {#microsoft-powerpoint-settings-windows-only}
 
-Deze opties bepalen hoe Microsoft PowerPoint-bestanden worden geconverteerd. Zie [Bestandstype-instellingen](/help/forms/using/admin-help/configuring-file-type-settings.md#create-or-edit-file-type-settings)maken of bewerken voor instructies over het openen van deze opties.
+Deze opties bepalen hoe Microsoft PowerPoint-bestanden worden geconverteerd. Zie [Bestandstype-instellingen maken of bewerken](/help/forms/using/admin-help/configuring-file-type-settings.md#create-or-edit-file-type-settings) voor instructies over het openen van deze opties.
 
 **[!UICONTROL Try OpenOffice As Fallback Converter]**: Als deze optie is geselecteerd en een conversie met Microsoft PowerPoint mislukt of de opgegeven time-outlimiet bereikt, probeert de PDF-Generator de conversie met OpenOffice uit te voeren. Als de conversie met OpenOffice mislukt of de opgegeven time-outlimiet bereikt, wordt een uitzondering naar het logbestand geschreven.
 
@@ -472,9 +472,9 @@ Deze opties bepalen hoe Microsoft PowerPoint-bestanden worden geconverteerd. Zie
 
 ## Microsoft Project-instellingen (alleen Windows) {#microsoft-project-settings-windows-only}
 
-Deze opties bepalen hoe de dossiers van het Project van Microsoft worden omgezet. Zie [Bestandstype-instellingen](#create-or-edit-file-type-settings)maken of bewerken voor instructies over het openen van deze opties.
+Deze opties bepalen hoe de dossiers van het Project van Microsoft worden omgezet. Zie [Bestandstype-instellingen maken of bewerken](#create-or-edit-file-type-settings) voor instructies over het openen van deze opties.
 
-1. **[!UICONTROL Filename Extensions:]** Hiermee geeft u de bestandsextensies op voor bestandstypen, gescheiden door komma&#39;s, die worden geaccepteerd voor deze toepassing. The default is `mpp`. Neem geen punt voor of spatie op tussen de extensies.
+1. **[!UICONTROL Filename Extensions:]** Hiermee geeft u de bestandsextensies op voor bestandstypen, gescheiden door komma&#39;s, die worden geaccepteerd voor deze toepassing. De standaardwaarde is `mpp`. Neem geen punt voor of spatie op tussen de extensies.
 
 1. **[!UICONTROL Convert Document Information]**: Hiermee voegt u documentinformatie toe uit het dialoogvenster Eigenschappen van het bronbestand, zoals titel, onderwerp, auteur, trefwoorden, manager, bedrijf, categorie en opmerkingen. Deze optie is standaard geselecteerd.
 1. **[!UICONTROL Attach Source File To Adobe PDF]**: Hiermee voegt u het bronbestand als bijlage toe aan het PDF-bestand.
@@ -483,11 +483,11 @@ Deze opties bepalen hoe de dossiers van het Project van Microsoft worden omgezet
 
 ## Microsoft Word-instellingen (alleen Windows) {#microsoft-word-settings-windows-only}
 
-Deze opties bepalen hoe Microsoft Word-bestanden worden geconverteerd. Zie [Bestandstype-instellingen](#create-or-edit-file-type-settings)maken of bewerken voor instructies over het openen van deze opties.
+Deze opties bepalen hoe Microsoft Word-bestanden worden geconverteerd. Zie [Bestandstype-instellingen maken of bewerken](#create-or-edit-file-type-settings) voor instructies over het openen van deze opties.
 
 **[!UICONTROL Try OpenOffice As Fallback Converter]**: Als deze optie is geselecteerd en een conversie met Microsoft Word mislukt of de opgegeven time-outlimiet bereikt, probeert de PDF-Generator de conversie met OpenOffice uit te voeren. Als de conversie met OpenOffice mislukt of de opgegeven time-outlimiet bereikt, wordt een uitzondering naar het logbestand geschreven.
 
-**[!UICONTROL Filename Extensions]**: Hiermee geeft u de bestandsextensies op voor bestandstypen, gescheiden door komma&#39;s, die worden geaccepteerd voor deze toepassing. The default is `doc,docx,rtf,txt`. Neem geen punt voor of spatie op tussen de extensies.
+**[!UICONTROL Filename Extensions]**: Hiermee geeft u de bestandsextensies op voor bestandstypen, gescheiden door komma&#39;s, die worden geaccepteerd voor deze toepassing. De standaardwaarde is `doc,docx,rtf,txt`. Neem geen punt voor of spatie op tussen de extensies.
 
 **[!UICONTROL Convert Document Information]**: Hiermee voegt u documentinformatie toe uit het dialoogvenster Eigenschappen van het bronbestand, zoals titel, onderwerp, auteur, trefwoorden, manager, bedrijf, categorie en opmerkingen. Deze optie is standaard geselecteerd.
 
@@ -515,13 +515,13 @@ Deze opties bepalen hoe Microsoft Word-bestanden worden geconverteerd. Zie [Best
 
 **[!UICONTROL Convert All Styles To Bookmarks]**: Hiermee converteert u alle stijlen in het Word-document naar bladwijzers in het PDF-document.
 
-**[!UICONTROL Styles With Levels]**: Hiermee geeft u op welke stijlen in het Word-document worden geconverteerd naar bladwijzers in het PDF-document. Hiermee geeft u ook het niveau van de bladwijzers op. Als u deze functie wilt gebruiken, schakelt u de **[!UICONTROL Convert All Styles To Bookmarks]** optie uit en geeft u de stijlnamen op in de volgende indeling:
+**[!UICONTROL Styles With Levels]**: Hiermee geeft u op welke stijlen in het Word-document worden geconverteerd naar bladwijzers in het PDF-document. Hiermee geeft u ook het niveau van de bladwijzers op. Als u deze functie wilt gebruiken, schakelt u de optie **[!UICONTROL Convert All Styles To Bookmarks]** uit en geeft u de stijlnamen op in de volgende indeling:
 
 **styleName1=level1[,styleName2=level2...]**
 
 Als de naam van een Microsoft Word-stijl een komma (,) of een gelijkteken (=) bevat, plaatst u voor de speciale tekens het escape-teken (&quot;\_). Geef bijvoorbeeld een stijl met de naam &quot;Kop, 1&quot; op als Kop\, 1.
 
-**Codering Acrobat PDFMaker:** Hiermee geeft u het coderingstype op voor de invoer van bestanden zonder tekst in de Acrobat PDFMaker. Als u bijvoorbeeld een bestand met UTF-8-codering gebruikt, bereikt u de beste resultaten met UTF-8.
+**Acrobat PDFMaker-codering:** geeft het coderingstype op voor de invoer van normale tekst in Acrobat PDFMaker. Als u bijvoorbeeld een bestand met UTF-8-codering gebruikt, bereikt u de beste resultaten met UTF-8.
 
 ## Microsoft Visio-instellingen (alleen Windows) {#visio}
 
@@ -545,15 +545,15 @@ Als de naam van een Microsoft Word-stijl een komma (,) of een gelijkteken (=) be
 
 ## Microsoft Publisher-instellingen (alleen Windows) {#microsoft-publisher-settings-windows-only}
 
-Deze opties bepalen hoe Microsoft Publisher-bestanden worden geconverteerd. Zie [Bestandstype-instellingen](#create-or-edit-file-type-settings)maken of bewerken voor instructies over het openen van deze opties.
+Deze opties bepalen hoe Microsoft Publisher-bestanden worden geconverteerd. Zie [Bestandstype-instellingen maken of bewerken](#create-or-edit-file-type-settings) voor instructies over het openen van deze opties.
 
-**[!UICONTROL Filename Extensions]**: Hiermee geeft u de bestandsextensies op voor bestandstypen, gescheiden door komma&#39;s, die worden geaccepteerd voor deze toepassing. The default is `pub`. Neem geen punt voor of spatie op tussen de extensies.
+**[!UICONTROL Filename Extensions]**: Hiermee geeft u de bestandsextensies op voor bestandstypen, gescheiden door komma&#39;s, die worden geaccepteerd voor deze toepassing. De standaardwaarde is `pub`. Neem geen punt voor of spatie op tussen de extensies.
 
 ## AutoCAD-instellingen (alleen Windows) {#autocad-settings-windows-only}
 
-Deze opties bepalen hoe AutoCAD-bestanden worden geconverteerd. Zie [Bestandstype-instellingen](/help/forms/using/admin-help/configuring-file-type-settings.md#create-or-edit-file-type-settings)maken of bewerken voor instructies over het openen van deze opties.
+Deze opties bepalen hoe AutoCAD-bestanden worden geconverteerd. Zie [Bestandstype-instellingen maken of bewerken](/help/forms/using/admin-help/configuring-file-type-settings.md#create-or-edit-file-type-settings) voor instructies over het openen van deze opties.
 
-**[!UICONTROL Filename Extensions]**: Hiermee geeft u de bestandsextensies op voor bestandstypen, gescheiden door komma&#39;s, die worden geaccepteerd voor deze toepassing. The default is `dwg`. Neem geen punt voor of spatie op tussen de extensies.
+**[!UICONTROL Filename Extensions]**: Hiermee geeft u de bestandsextensies op voor bestandstypen, gescheiden door komma&#39;s, die worden geaccepteerd voor deze toepassing. De standaardwaarde is `dwg`. Neem geen punt voor of spatie op tussen de extensies.
 
 **[!UICONTROL Convert Document Information]**: Hiermee voegt u documentinformatie toe uit het dialoogvenster Eigenschappen van het bronbestand, zoals titel, onderwerp, auteur, trefwoorden, manager, bedrijf, categorie en opmerkingen. Deze optie is standaard geselecteerd.
 
@@ -583,11 +583,11 @@ Deze opties bepalen hoe AutoCAD-bestanden worden geconverteerd. Zie [Bestandstyp
 
 ## OpenOffice-instellingen {#openoffice-settings}
 
-Deze opties bepalen hoe de dossiers OpenOffice worden omgezet. Zie [Bestandstype-instellingen](/help/forms/using/admin-help/configuring-file-type-settings.md#create-or-edit-file-type-settings)maken of bewerken voor instructies over het openen van deze opties.
+Deze opties bepalen hoe de dossiers OpenOffice worden omgezet. Zie [Bestandstype-instellingen maken of bewerken](/help/forms/using/admin-help/configuring-file-type-settings.md#create-or-edit-file-type-settings) voor instructies over het openen van deze opties.
 
 **PDFMaker uitproberen als fallback-converter**: Als deze optie is geselecteerd en een conversie met OpenOffice de opgegeven time-outlimiet niet bereikt of niet doorloopt, probeert PDF Generator de conversie met PDFMaker. Als de conversie met PDFMaker mislukt of de opgegeven time-outlimiet bereikt, wordt een uitzondering naar het logbestand geschreven.
 
-**Bestandsnaamextensies**: Geef de bestandsextensies op voor bestandstypen, gescheiden door komma&#39;s, die voor deze toepassing worden geaccepteerd. The default is `odt,odp,ods,odg,odf,sxw,sxi,sxd`. Neem geen punt voor of spatie op tussen de extensies.
+**Bestandsnaamextensies**: Geef de bestandsextensies op voor bestandstypen, gescheiden door komma&#39;s, die voor deze toepassing worden geaccepteerd. De standaardwaarde is `odt,odp,ods,odg,odf,sxw,sxi,sxd`. Neem geen punt voor of spatie op tussen de extensies.
 
 **Bereik**: Zet alle pagina&#39;s om of geef bepaalde pagina&#39;s of een paginabereik op. Als er geen paginabereik is gedefinieerd, worden alle pagina&#39;s geconverteerd. Als u een paginabereik wilt exporteren, gebruikt u de indeling 3-6. Als u enkele pagina&#39;s wilt exporteren, gebruikt u de indeling 7;9;11. U kunt een combinatie van paginabereiken en enkele pagina&#39;s exporteren met een indeling als 3-6;8;10;12.
 
@@ -595,7 +595,7 @@ Deze opties bepalen hoe de dossiers OpenOffice worden omgezet. Zie [Bestandstype
 
 **Afbeeldingen**: Configureer hoe afbeeldingen worden geconverteerd. EPS-afbeeldingen met ingesloten voorvertoningen worden alleen als voorvertoningen geëxporteerd. EPS-afbeeldingen zonder ingesloten voorvertoningen worden geëxporteerd als lege plaatsaanduidingen. Bij compressie zonder verlies van afbeeldingen blijven alle pixels behouden. Met JPEG-compressie van afbeeldingen en een hoge kwaliteit blijven bijna alle pixels behouden. Bij een laag kwaliteitsniveau gaan sommige pixels verloren en worden artefacten geïntroduceerd, maar de bestanden worden kleiner.
 
-**Algemeen**: Schakel de opties in om een gecodeerde PDF te converteren of om opmerkingen in Schrijver- en FormCalc-documenten te exporteren, dia-overgangseffecten te drukken of lege pagina&#39;s naar de PDF te exporteren. Wanneer tags worden geëxporteerd, kan de bestandsgrootte aanzienlijk toenemen. Sommige tags die worden geëxporteerd, zijn inhoudsopgaven, hyperlinks en besturingselementen.
+**Algemeen**: Schakel de opties in om een gecodeerde PDF te converteren of om opmerkingen in Schrijver- en FormCalc-documenten te exporteren, dia-overgangseffecten te drukken of lege pagina&#39;s naar de PDF te exporteren. Wanneer labels worden geëxporteerd, kan de bestandsgrootte aanzienlijk toenemen. Sommige tags die worden geëxporteerd, zijn inhoudsopgaven, hyperlinks en besturingselementen.
 
 U kunt ook opgeven hoe formulieren worden verzonden. De opties zijn XML, FDF, PDF of HTML. Dit het plaatsen treedt het bezit van URL van de controle met voeten dat u in het document plaatst. U kunt slechts één veelgebruikte instelling selecteren voor het PDF-document:
 
@@ -616,13 +616,13 @@ U kunt ook opgeven hoe formulieren worden verzonden. De opties zijn XML, FDF, PD
 
 ## Overige toepassingsinstellingen (alleen Windows) {#other-applications-settings-windows-only}
 
-U kunt de instellingen voor andere toepassingen niet wijzigen via de beheerconsole; de bestandsnaamextensies voor de ondersteunde bestandstypen worden weergegeven. Zie [Bestandstype-instellingen](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/WS92d06802c76abadb-5145d5d12905ce07e7-7e42.2.html)maken of bewerken voor instructies over het openen van deze instellingen.
+U kunt de instellingen voor andere toepassingen niet wijzigen via de beheerconsole; de bestandsnaamextensies voor de ondersteunde bestandstypen worden weergegeven. Zie [Bestandstype-instellingen maken of bewerken](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/WS92d06802c76abadb-5145d5d12905ce07e7-7e42.2.html) voor instructies over het openen van deze instellingen.
 
 * Corel WordPerfect: `wpd`
 * Adobe PageMaker: `pmd, pm6, p65, pm`
 * Adobe FrameMaker: `fm`
 * Adobe Photoshop: `psd`
 
-Ondersteuning voor deze bestandstypen moet mogelijk worden aangepast. Zie &quot;Ondersteuning voor aanvullende eigen bestandsindelingen toevoegen&quot; in [Programmeren met AEM formulieren](https://www.adobe.com/go/learn_aemforms_programming_62)voor meer informatie.
+Ondersteuning voor deze bestandstypen moet mogelijk worden aangepast. Zie &quot;Support for Additional Native File Formats&quot; toevoegen in [Programmeren met AEM formulieren](https://www.adobe.com/go/learn_aemforms_programming_62) voor meer informatie.
 
-Zie Een PDFG-netwerkprinter [instellen (alleen Windows)](/help/forms/using/admin-help/setting-pdfg-network-printer-windows.md)voor hulp bij het configureren van een PDFG-netwerkprinter.
+Zie [Een PDFG-netwerkprinter instellen (alleen Windows)](/help/forms/using/admin-help/setting-pdfg-network-printer-windows.md) voor hulp bij het configureren van een PDFG-netwerkprinter.

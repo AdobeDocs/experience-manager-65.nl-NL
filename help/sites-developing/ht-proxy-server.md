@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: dfbc1d2f-80c1-4564-a01c-a5028b7257d7
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '967'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +35,7 @@ U kunt de volmachtsserver gebruiken om alle cliënt-server interactie, ongeacht 
 
 U kunt bijvoorbeeld de proxyserver plaatsen tussen twee toepassingen die via een TCP/IP-netwerk communiceren. bijvoorbeeld een webbrowser en AEM. Hierdoor kunt u precies controleren wat er gebeurt wanneer u een CQ-pagina aanvraagt.
 
-## Het gereedschap Proxyserver starten {#starting-the-proxy-server-tool}
+## Het gereedschap Proxyserver {#starting-the-proxy-server-tool} starten
 
 Start de server op de opdrachtregel:
 
@@ -42,11 +45,11 @@ Start de server op de opdrachtregel:
 
 `<host>`
 
-Dit is het hostadres van de CRX-instantie waarmee u verbinding wilt maken. Als het exemplaar op uw lokale machine is, dan zal dit zijn `localhost`.
+Dit is het hostadres van de CRX-instantie waarmee u verbinding wilt maken. Als de instantie zich op uw lokale computer bevindt, is dit `localhost`.
 
 `<remoteport>`
 
-Dit is de gastheerhaven van de doelCRX instantie. De standaardinstelling van een nieuw geïnstalleerde AEM-installatie is bijvoorbeeld **`4502`** en de standaardinstelling voor een nieuw geïnstalleerde AEM-auteurinstantie is `4502`.
+Dit is de gastheerhaven van de doelCRX instantie. De standaardinstelling voor een nieuw geïnstalleerde AEM is bijvoorbeeld **`4502`** en de standaardinstelling voor een nieuw geïnstalleerde AEM auteur-instantie is `4502`.
 
 `<localport>`
 
@@ -86,7 +89,7 @@ Een verzoek om een webpagina kan er bijvoorbeeld als volgt uitzien:
 
 * C betekent dat deze ingang uit de cliënt (het is een verzoek om een Web-pagina) komt
 * 0 is het verbindingsnummer (de verbindenteller begint bij 0)
-* &#x200B;# 00000 de verschuiving in de bytestream. Dit is de eerste vermelding, dus de verschuiving is 0.
+* # 00000 de verschuiving in de bytestream. Dit is de eerste vermelding, dus de verschuiving is 0.
 * `[GET <?>]` Dit is de inhoud van de aanvraag, in het voorbeeld een van de HTTP-headers (url).
 
 Wanneer een verbinding sluit, wordt de volgende informatie geregistreerd:
@@ -96,7 +99,7 @@ C-6-Finished: 758 bytes (1.0 kb/s)
 S-6-Finished: 665 bytes (1.0 kb/s)
 ```
 
-Dit toont het aantal bytes die tussen cliënt ( `C`) en de server ( `S`) op de 6de verbinding en bij de gemiddelde snelheid overgegaan.
+Dit toont het aantal bytes dat tussen client ( `C`) en server ( `S`) op de 6e verbinding en bij de gemiddelde snelheid is overgegaan.
 
 **Een voorbeeld van een logbestandsuitvoer**
 
@@ -126,13 +129,13 @@ De inhoud van `test.html` is:
 </html>
 ```
 
-Ervan uitgaande dat de AEM-instantie wordt uitgevoerd, starten `localhost:4502` we de proxy als volgt:
+Ervan uitgaande dat de AEM-instantie op `localhost:4502` wordt uitgevoerd, starten we de proxy als volgt:
 
 `java -jar proxy.jar localhost 4502 4444 -logfile test.log`
 
-De CQ/CRX-instantie kan nu worden benaderd via de proxy bij `localhost:4444` en alle communicatie via deze poort wordt aangemeld bij `test.log`.
+De CQ/CRX-instantie kan nu worden benaderd via de proxy op `localhost:4444` en alle communicatie via deze poort wordt geregistreerd naar `test.log`.
 
-Als we nu de uitvoer van de proxy bekijken, zien we de interactie tussen de browser en de AEM-instantie.
+Als we nu de uitvoer van de proxy bekijken, zien we de interactie tussen de browser en de AEM.
 
 Bij het opstarten geeft de proxy de volgende resultaten:
 
@@ -162,7 +165,7 @@ C-0-#000684 -> [59-7913-4285-8857-832c087bafd5_c484727d3b3665ad%3acrx.default; y
 C-0-#000824 -> [ ]
 ```
 
-De AEM-instantie reageert met de inhoud van het bestand `test.html`:
+De AEM instantie reageert met de inhoud van het bestand `test.html`:
 
 ```shell
 S-0-#000000 -> [HTTP/1.1 200 OK ]

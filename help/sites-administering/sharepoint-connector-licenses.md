@@ -12,6 +12,9 @@ discoiquuid: 56849775-3ac7-44a2-ab17-a707b001470e
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 4e5e6ef022dc9f083859e13ab9c86b622fc3d46e
+workflow-type: tm+mt
+source-wordcount: '378'
+ht-degree: 4%
 
 ---
 
@@ -39,7 +42,7 @@ De volgende tabel bevat een lijst met bibliotheken van derden die worden gebruik
 | commons-httpclient | [Apache](#apache) |
 | commons-io | [Apache](#apache) |
 | commons-lang | [Apache](#apache) |
-| gelijktijdige | [Gelijktijdig](#concurrent) (openbaar domein) |
+| gelijktijdige | [Gelijktijdig](#concurrent)  (openbaar domein) |
 | geronimo-activation_1.1_spec | [Apache](#apache) |
 | geronimo-stax-api_1.0_spec | [Apache](#apache) |
 | httpcore | [Apache](#apache) |
@@ -58,10 +61,10 @@ De volgende tabel bevat een lijst met bibliotheken van derden die worden gebruik
 | wstx-asl | [Apache](#apache) |
 | xalan | [Apache](#apache) |
 | xbean | [Apache](#apache) |
-| xml-apis | [Apache](#apache) (bevat delen die vallen onder licenties voor openbare domein en W3C-software) |
+| xml-apis | [Apache](#apache)  (bevat delen die vallen onder licenties voor openbare domein en W3C-software) |
 | XmlSchema | [Apache](#apache) |
 
-## Overzicht van CRX-bibliotheken van derden {#overview-of-crx-rd-party-libraries}
+## Overzicht van CRX bibliotheken van derden {#overview-of-crx-rd-party-libraries}
 
 De volgende tabel bevat een lijst met bibliotheken van derden die in CRX worden gebruikt, samen met de licenties, copyrightkennisgevingen of disclaimers waarop deze betrekking hebben:
 

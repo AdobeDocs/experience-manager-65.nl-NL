@@ -11,25 +11,28 @@ content-type: reference
 discoiquuid: d355a3ee-c8a8-4a07-8d28-d1a99bda315c
 translation-type: tm+mt
 source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+workflow-type: tm+mt
+source-wordcount: '267'
+ht-degree: 0%
 
 ---
 
 
-# Grondbeginselen van tags {#tag-essentials}
+# Grondbeginselen van tag {#tag-essentials}
 
-Wanneer componenten van AEM Communities zijn geconfigureerd met ingeschakelde codering, kunnen leden van de community de inhoud die ze plaatsen, labelen in de publicatieomgeving.
+Wanneer AEM Communities-componenten zijn geconfigureerd met codering ingeschakeld, kunnen communityleden de inhoud die ze plaatsen in de publicatieomgeving coderen.
 
 De onderliggende infrastructuur voor tags die worden toegepast in de publicatieomgeving, is gelijk aan de infrastructuur voor tags die worden toegepast op inhoud in de ontwerpomgeving, zoals pagina&#39;s en elementen:
 
-* Zie [Labels](../../help/sites-administering/tags.md) beheren en Door gebruiker gegenereerde inhoud [](tag-ugc.md) labelen (UGC) voor informatie over het maken en beheren van labels.
+* Zie [Tags beheren](../../help/sites-administering/tags.md) en [Door gebruiker gegenereerde inhoud coderen](tag-ugc.md) (UGC) voor informatie over het maken en beheren van tags.
 
-* Zie [Tags toevoegen voor ontwikkelaars](../../help/sites-developing/tags.md) voor meer informatie over het [coderingsframework](../../help/sites-developing/framework.md) en voor het opnemen en uitbreiden van tags in [aangepaste toepassingen](../../help/sites-developing/building.md).
+* Zie [Tags toevoegen voor ontwikkelaars](../../help/sites-developing/tags.md) voor informatie over het [tagging framework](../../help/sites-developing/framework.md) en het opnemen en uitbreiden van tags in [aangepaste toepassingen](../../help/sites-developing/building.md).
 
-* Zie [De cloud](tagcloud.md) met sociale tags gebruiken voor informatie aan auteurs over het toevoegen van een `social tag cloud` component aan een pagina om de tags te markeren die in de publicatieomgeving op UGC zijn toegepast.
+* Zie [De cloud van de sociale tag gebruiken](tagcloud.md) voor informatie voor auteurs over het toevoegen van een `social tag cloud`-component aan een pagina om de tags te markeren die in de publicatieomgeving op UGC zijn toegepast.
 
-* Zie Hulpbronnen [voor](tag-resources.md) tagging Enablement voor informatie over het labelen van bronnen voor catalogi.
+* Zie [Tags toewijzen Bronnen](tag-resources.md) voor informatie over het labelen van bronnen voor catalogi.
 
-Het coderen van UGC kan worden toegelaten wanneer het vormen van een [communautaire plaats](sites-console.md#tagging) of één van de volgende eigenschappen:
+Het coderen van UGC kan worden toegelaten wanneer het vormen van een [communityplaats](sites-console.md#tagging) of één van de volgende eigenschappen:
 
 * [Blog](blog-feature.md)
 * [Kalender](calendar.md)
@@ -37,7 +40,7 @@ Het coderen van UGC kan worden toegelaten wanneer het vormen van een [communauta
 * [Forum](forum.md)
 * [QnA](working-with-qna.md)
 
-## Essentiële elementen voor client-kant {#essentials-for-client-side}
+## Essentiële elementen voor client-side {#essentials-for-client-side}
 
 ### Sociale-tagcloud {#social-tag-cloud}
 
@@ -80,8 +83,8 @@ Het coderen van UGC kan worden toegelaten wanneer het vormen van een [communauta
 
 * [Aanpassingen op de server](server-customize.md)
 
-## Zoeken met tags {#tag-searching}
+## Zoeken naar tags {#tag-searching}
 
-Vanaf [functiepak 1](deploy-communities.md#latestfeaturepack) (FP1) wordt het zoeken naar tags uitgevoerd met behulp van [labeltitels](../../help/sites-developing/framework.md#tag-characteristics).
+Vanaf [functiepak 1](deploy-communities.md#latestfeaturepack) (FP1) wordt het zoeken naar tags uitgevoerd met behulp van [tagtitels](../../help/sites-developing/framework.md#tag-characteristics).
 
-Voorafgaand aan FP1, werd het onderzoek uitgevoerd gebruikend [markeringsids](../../help/sites-developing/framework.md#tagid).
+Voorafgaand aan FP1, werd het onderzoek uitgevoerd gebruikend [markering ids](../../help/sites-developing/framework.md#tagid).

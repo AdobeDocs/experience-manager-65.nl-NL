@@ -17,7 +17,7 @@ ht-degree: 2%
 ---
 
 
-# Interactieve communicatie - overzicht {#interactive-communications-overview}
+# Overzicht van interactieve communicatie {#interactive-communications-overview}
 
 Dit artikel bevat een overzicht, voorbeelden van gebruiksgevallen, de workflow voor het maken van ontwerpen en verschillen tussen interactieve communicatie en brief.
 
@@ -36,28 +36,28 @@ Hier volgen de belangrijkste mogelijkheden van interactieve communicatie:
 * De gebruikersinterface van de agent toont druk en Webvoorproef van Interactieve Communicatie
 * Met slepen en neerzetten kunt u snel afdrukken- en webkanalen maken
 
-## Interactieve communicatie maken  {#interactive-communication-creation}
+## Interactieve communicatie maken {#interactive-communication-creation}
 
 ![interactive_communication-01](assets/interactive_communication-01.jpg)
 
 ### Workflow {#workflow}
 
-Om een Interactieve Communicatie tot stand te brengen, heb de [bouwstenen](#buildingblocks) voor Interactieve Communicatie klaar en voltooi dan de volgende stappen:
+Om een Interactieve Mededeling tot stand te brengen, heb [bouwstenen](#buildingblocks) voor Interactieve Communicatie klaar en voltooi dan de volgende stappen:
 
-1. Kies of u een interactieve communicatie [wilt](/help/forms/using/create-interactive-communication.md)maken.
+1. Kies om [een Interactieve Communicatie](/help/forms/using/create-interactive-communication.md) te creëren.
 
-1. Geef het gegevensmodel [van het](/help/forms/using/data-integration.md)formulier, de Prefill-service en [afdruk- en webkanaalsjablonen](/help/forms/using/web-channel-print-channel.md)op. U kunt het webkanaal genereren via het afdrukkanaal.
+1. Geef het [formuliergegevensmodel](/help/forms/using/data-integration.md), de vooraf ingevulde service en [afdruk- en webkanaalsjablonen](/help/forms/using/web-channel-print-channel.md) op. U kunt het webkanaal genereren via het afdrukkanaal.
 
-1. Voeg met behulp van de interface [voor](/help/forms/using/introduction-interactive-communication-authoring.md)slepen en neerzetten documentfragmenten, afbeeldingen, componenten toe aan de afdruk en het webkanaal van de interactieve communicatie.
+1. Met de [interface voor slepen en neerzetten](/help/forms/using/introduction-interactive-communication-authoring.md) voegt u documentfragmenten, afbeeldingen, componenten toe aan de afdruk en het webkanaal van de interactieve communicatie, indien nodig.
 1. Vorm de eigenschappen voor de opgenomen componenten, zoals het volgende:
 
    1. [Afbeeldingen](/help/forms/using/create-interactive-communication.md#step2)
-   1. [Tabellen](/help/forms/using/create-interactive-communication.md#tables) (inclusief layoutfragmenten)
+   1. [Tabellen](/help/forms/using/create-interactive-communication.md#tables)  (inclusief lay-outfragmenten)
    1. [Grafieken](/help/forms/using/chart-component-interactive-communications.md)
    1. [Documentfragmenten](/help/forms/using/create-interactive-communication.md#document-fragment-properties)
 
 1. Een voorvertoning weergeven van afdruk- en webkanalen en, indien nodig, Interactieve communicatie.
-1. De agent gebruikt de Agent UI om de Interactieve Mededeling [voor te](/help/forms/using/prepare-send-interactive-communication.md) bereiden om het naar het ontvanger/postproces te verzenden.
+1. De agent gebruikt de Agent UI om [de Interactieve Communicatie](/help/forms/using/prepare-send-interactive-communication.md) voor het verzenden van het naar het ontvanger/postproces voor te bereiden.
 
 ### Bouwstenen {#buildingblocks}
 
@@ -67,11 +67,11 @@ Hieronder vindt u de bouwstenen die nodig zijn voor het maken van interactieve c
 * [Afdruk- en webkanaalsjablonen](/help/forms/using/web-channel-print-channel.md)
 * [Documentfragmenten](/help/forms/using/document-fragments.md)
 * Afbeeldingen
-* [Thema](/help/forms/using/themes.md) &#39;s voor het webkanaal
+* [](/help/forms/using/themes.md) Thema&#39;s voor het kanaal van het Web
 
 ## Interactieve communicatie Vs Correspondentenbeheer {#interactive-communications-vs-correspondence-management}
 
-De interactieve Communicatie is het gebrek en geadviseerde benadering om klantenmededelingen tot stand te brengen. Als u de letters die u maakt in AEM 6.3 Forms en AEM 6.2 Forms wilt blijven gebruiken, moet u een compatibiliteitspakket [](/help/forms/using/compatibility-package.md)installeren. Hier volgt een vergelijking tussen de mogelijkheden van interactieve communicatie en de letters.
+De interactieve Communicatie is het gebrek en geadviseerde benadering om klantenmededelingen tot stand te brengen. Als u de letters wilt blijven gebruiken die u maakt in AEM 6.3 Forms en AEM 6.2 Forms, moet u een compatibiliteitspakket [installeren. ](/help/forms/using/compatibility-package.md) Hier volgt een vergelijking tussen de mogelijkheden van interactieve communicatie en de letters.
 
 <table>
  <tbody>

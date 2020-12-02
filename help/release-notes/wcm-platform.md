@@ -10,24 +10,24 @@ ht-degree: 0%
 ---
 
 
-# AEM Stichting en gegevensopslagruimte {#aem-foundation-repository}
+# AEM Stichting en opslagplaats {#aem-foundation-repository}
 
 ## Lijst met wijzigingen {#list-of-changes}
 
 ### Bewaarplaats {#repository}
 
-* De stichting van Adobe Experience Manager 6.5 bouwt voort op bijgewerkte versies van het op OSGi gebaseerde kader (Apache Sling en Apache Felix) en de Inhoudsgegevensbank van Java: Apache Jackrabbit Oak 1.10.2.
+* De basis voor Adobe Experience Manager 6.5 is gebaseerd op de bijgewerkte versies van het op OSGi gebaseerde framework (Apache Sling en Apache Felix) en de Java Content Repository: Apache Jackrabbit Oak 1.10.2.
 * Zie [Apache Jackrabbit Oak Jira v. 1.10.0](https://archive.apache.org/dist/jackrabbit/oak/1.10.0/RELEASE-NOTES.txt), [Apache Jackrabbit Oak Jira v. 1.10.1](https://archive.apache.org/dist/jackrabbit/oak/1.10.1/RELEASE-NOTES.txt) en [Apache Jackrabbit Oak Jira v. 1.10.2](https://archive.apache.org/dist/jackrabbit/oak/1.10.2/RELEASE-NOTES.txt).
 
 >[!CAUTION]
 >
->De nieuwe versie van de Oak Segment Tar aanwezig sinds AEM 6.3 vereist een repository migratie. Deze stap is verplicht als u een upgrade uitvoert van een oudere versie van TarMK of als u de nieuwe segmentmarkering wilt overschakelen van een ander type persistentie. Raadpleeg de veelgestelde vragen over het migreren naar [eiken segment voor meer informatie over de voordelen van de nieuwe segmentmarkering](/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar).
+>De nieuwe versie van de Oak Segment Tar aanwezig sinds AEM 6.3 vereist een repository migratie. Deze stap is verplicht als u een upgrade uitvoert van een oudere versie van TarMK of als u de nieuwe segmentmarkering wilt overschakelen van een ander type persistentie. Voor meer informatie over wat de voordelen van de nieuwe Tar van het Segment zijn, zie [Migrating to Oak Segment Tar FAQ](/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar).
 
 ### Java-ondersteuning {#java-support}
 
 * Nieuwe ondersteuning voor Java 11 en de reeds ondersteunde Java 8.
 * Overschrijf voor optimale prestaties de standaard GC-waarden met andere waarden. Zie de sectie [Installeren en bijwerken](/help/sites-deploying/custom-standalone-install.md) voor meer informatie.
-* Java 11- en Java 8-onderhoudsupdates worden door Adobe gedistribueerd voor gebruik door klanten in AEM gerelateerde projecten, wanneer deze niet openbaar zijn bij Oracle.
+* Java 11- en Java 8-onderhoudsupdates worden door Adobe gedistribueerd voor gebruik door klanten in AEM gerelateerde projecten, wanneer deze niet openbaar beschikbaar zijn in Oracle.
 
 ### OSGI {#osgi}
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 ### Projecten en workflows {#projects-and-workflows}
 
-* De nieuwe die redacteur van het Model van het Werkschema in 6.4 wordt geïntroduceerd is verbeterd om meer verrichtingen zoals Exemplaar en Publish, Variabele steun in de stappen van het Werkschema en verbeterde `OR` en `AND` splits te omvatten.
+* De nieuwe die redacteur van het Model van het Werkschema in 6.4 wordt geïntroduceerd is verbeterd om meer verrichtingen zoals het Exemplaar en te publiceren, veranderlijke steun in de stappen van het Werkschema en verbeterde `OR` en `AND` splits te omvatten.
 
 ### Zoeken {#searching}
 
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 * Vervaldatum wachtwoord toegevoegd voor gebruiker van beheerder.
 
-### User Interface {#user-interface}
+### Gebruikersinterface {#user-interface}
 
 Er zijn verschillende verbeteringen aangebracht in de interface om deze productiever en gebruiksvriendelijker te maken.
 
@@ -58,14 +58,14 @@ Er zijn verschillende verbeteringen aangebracht in de interface om deze producti
 
 >[!CAUTION]
 >
->Adobe zal geen verdere verhogingen aan Klassieke UI maken. Experience Manager 6.5 omvat Klassieke UI voor achterwaartse verenigbaarheid. Klassieke UI blijft volledig gesteund terwijl wordt afgekeurd [Lees meer](/help/sites-deploying/ui-recommendations.md).
+>Adobe zal geen verdere verhogingen aan Klassieke UI maken. Experience Manager 6.5 omvat Klassieke UI voor achterwaartse verenigbaarheid. Klassieke UI blijft volledig gesteund terwijl wordt afgekeurd [lees meer](/help/sites-deploying/ui-recommendations.md).
 
 ### Upgrade {#upgrade}
 
-* De upgradeprocedure blijft grotendeels dezelfde in paragraaf 6.5.
+* De upgradeprocedure blijft grotendeels hetzelfde in paragraaf 6.5.
 * We blijven de functies Achterwaartse compatibiliteit, Complexiteitsbeoordeling upgraden en Duurzame upgrades ondersteunen die in 6.4 zijn geïntroduceerd. Waar nodig zijn op deze gebieden versiespecifieke wijzigingen aangebracht.
 * Het verpakken van de Detector van het Patroon is vereenvoudigd, en er zal één pakket zijn die verbeteringen aan 6.5 voor de beschikbare bronversies evalueren.
-* Voor details over verbeteringsprocedure, zie de [verbeteringsdocumentatie](/help/sites-deploying/upgrade.md).
+* Voor details over verbeteringsprocedure, zie [verbeteringsdocumentatie](/help/sites-deploying/upgrade.md).
 
 ### Webserver {#web-server}
 

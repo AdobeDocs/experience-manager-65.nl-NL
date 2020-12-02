@@ -9,6 +9,9 @@ topic-tags: author
 discoiquuid: 377d804d-4a75-4c93-8125-d2660cf56418
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '392'
+ht-degree: 0%
 
 ---
 
@@ -35,7 +38,7 @@ In de volgende tabel worden de voorbeeldopties weergegeven die beschikbaar zijn 
   </tr>
   <tr>
    <td>PDF-formulier</td>
-   <td>PDF-voorbeeld en Voorvertoning met gegevens<br /> </td>
+   <td>PDF-voorvertoning en Voorvertoning met gegevens<br /> </td>
   </tr>
   <tr>
    <td>adaptieve vorm</td>
@@ -50,11 +53,11 @@ In de volgende tabel worden de voorbeeldopties weergegeven die beschikbaar zijn 
 
 ## Een voorbeeld van een formulier bekijken {#previewing-a-form-1}
 
-1. Selecteer een element waarvan u een voorvertoning wilt weergeven en klik op Voorvertoning van ![naam6forms_preview](assets/aem6forms_preview.png) op de werkbalk Handelingen.
+1. Selecteer een element waarvan u een voorvertoning wilt weergeven en klik op Voorvertoning ![name6forms_preview](assets/aem6forms_preview.png) op de werkbalk Handelingen.
 
    >[!NOTE]
    >
-   >Als u een element wilt selecteren, schakelt u over naar de lijstweergave in de standaardkaartweergave. Klik op ![em6forms_viewlist](assets/aem6forms_viewlist.png) of ![aem6forms_viewcard](assets/aem6forms_viewcard.png) om te schakelen tussen weergaven.
+   >Als u een element wilt selecteren, schakelt u over naar de lijstweergave in de standaardkaartweergave. Klik ![aem6forms_viewlist](assets/aem6forms_viewlist.png) of ![aem6forms_viewcard](assets/aem6forms_viewcard.png) om van mening te veranderen.
 
 1. Klik op Voorvertoning om de mogelijke voorvertoningsopties weer te geven die van toepassing zijn op het geselecteerde elementtype. Klik op de gewenste optie om het geselecteerde element op een nieuw tabblad weer te geven.
 
@@ -66,8 +69,8 @@ In de volgende tabel worden de voorbeeldopties weergegeven die beschikbaar zijn 
 
 ## Voorvertonen met gegevens {#preview-with-data}
 
-Wanneer u **Voorvertonen met gegevens** selecteert, kunt u zien hoe het formulier eruitziet met de werkelijke gegevens die erin zijn ingevoerd. Met de optie Voorvertonen met gegevens kunt u een XML uploaden die voorbeeldgebruikersgegevens bevat. De voorbeeldgebruikersgegevens worden gebruikt om het voorbeeldformulier in de door u gekozen indeling in te vullen.
+Wanneer u **Voorvertoning met gegevens** selecteert, kunt u zien hoe het formulier eruitziet met de werkelijke gegevens die erin zijn ingevoerd. Met de optie Voorvertonen met gegevens kunt u een XML uploaden die voorbeeldgebruikersgegevens bevat. De voorbeeldgebruikersgegevens worden gebruikt om het voorbeeldformulier in de door u gekozen indeling in te vullen.
 
-1. Selecteer een element, klik op Voorvertoning ![aem6forms_preview](assets/aem6forms_preview.png)en selecteer **Voorvertonen met gegevens**.
+1. Selecteer een element, klik op Voorvertoning ![aem6forms_preview](assets/aem6forms_preview.png) en selecteer **Voorvertonen met gegevens**.
 1. Geef in het dialoogvenster Formulier voorvertonen de formuliergegevens op als een XML-bestand. Klik op Voorbeeld om het formulier te genereren met de samengevoegde gegevens van XML.
 

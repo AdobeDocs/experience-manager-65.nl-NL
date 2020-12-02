@@ -10,11 +10,14 @@ topic-tags: correspondence-management
 discoiquuid: 1291b395-a981-4ef9-b4f0-c0d3026c5f19
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '228'
+ht-degree: 0%
 
 ---
 
 
-# Overzicht van Correspondentenbeheer {#correspondence-management-overview}
+# Overzicht Correspondentenbeheer {#correspondence-management-overview}
 
 ## Inleiding {#introduction}
 
@@ -34,7 +37,7 @@ Het stroomlijnt verwerking, toelatend u:
 Het verstrekt communicatie van hogere kwaliteit, toelatend u:
 
 * Bedrijfsregels en goedgekeurde inhoud beheren in een gecentraliseerde opslagplaats voor inhoud
-* AEM DAM gebruiken voor het beheren van afbeeldingen
+* Gebruik AEM DAM voor het beheren van afbeeldingen
 * Adobe PDF-bestanden maken voor archivering en controle
 * Creeer organisationally volgzame berichten gebruikend vooraf goedgekeurde inhoud door ingebedde bedrijfsregels.
 
@@ -43,6 +46,6 @@ Het verstrekt communicatie van hogere kwaliteit, toelatend u:
 Het verbetert de betrokkenheid van klanten, waardoor u:
 
 * Voeg interactieve technologieën toe om een tweerichtingskanaal toe te laten, die papierverzendingen verminderen
-* Bescherm vertrouwelijke informatie met ingebouwde, end-to-end documentveiligheid
+* Protect-gevoelige informatie met ingebouwde, end-to-end documentbeveiliging
 * Briefing verzenden via het aangewezen communicatiekanaal van de klant, elektronisch, post, mobiel, of fax.
 

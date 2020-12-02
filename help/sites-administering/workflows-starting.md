@@ -1,8 +1,8 @@
 ---
 title: Workflows starten
 seo-title: Workflows starten
-description: Leer hoe u workflows start in AEM.
-seo-description: Leer hoe u workflows start in AEM.
+description: Leer hoe u workflows in AEM start.
+seo-description: Leer hoe u workflows in AEM start.
 uuid: 0648d335-ecce-459d-95fd-3d4d76181b32
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e9ab4796-a050-40de-b073-af7d33cff009
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '804'
+ht-degree: 1%
 
 ---
 
@@ -21,12 +24,12 @@ Wanneer u workflows beheert, kunt u deze op verschillende manieren starten:
 
 * Handmatig:
 
-   * Van een [workflowmodel](#workflow-models).
-   * Workflowpakket gebruiken voor [batchverwerking](#workflow-packages-for-batch-processing).
+   * Van een [Werkstroommodel](#workflow-models).
+   * Een workflowpakket gebruiken voor [batchverwerking](#workflow-packages-for-batch-processing).
 
 * Automatisch:
 
-   * Als reactie op wijzigingen in knooppunten; [met een Launcher](#workflows-launchers).
+   * Als reactie op wijzigingen in knooppunten; [een Launcher](#workflows-launchers) gebruiken.
 
 >[!NOTE]
 >
@@ -34,17 +37,18 @@ Wanneer u workflows beheert, kunt u deze op verschillende manieren starten:
 >
 >* [Workflows toepassen op pagina&#39;s](/help/sites-authoring/workflows-applying.md)
 >* [Workflows toepassen op DAM-elementen](/help/assets/assets-workflow.md)
->* [AEM-formulieren](https://helpx.adobe.com/aem-forms/6-2/aem-workflows-submit-process-form.html)
+>* [AEM Forms](https://helpx.adobe.com/aem-forms/6-2/aem-workflows-submit-process-form.html)
 >* [Omzettingsprojecten](/help/sites-administering/tc-manage.md)
+
 >
 
 
 
 ## Workflowmodellen {#workflow-models}
 
-U kunt een workflow starten [op basis van een van de modellen](/help/sites-administering/workflows.md#workflow-models-and-instances) in de console Workflowmodellen. De enige verplichte informatie is de lading, hoewel een titel en/of commentaar ook kan worden toegevoegd.
+U kunt een werkschema [beginnen op één van de modellen](/help/sites-administering/workflows.md#workflow-models-and-instances) die op de console van de Modellen van het Werkschema worden vermeld. De enige verplichte informatie is de lading, hoewel een titel en/of commentaar ook kan worden toegevoegd.
 
-## Startprogramma&#39;s voor workflows {#workflows-launchers}
+## Workflows Launchers {#workflows-launchers}
 
 De Workflow Launcher controleert wijzigingen in de inhoudsopslagruimte om workflows te starten afhankelijk van de locatie en het type bron van het gewijzigde knooppunt.
 
@@ -57,7 +61,7 @@ Met de **Launcher** kunt u:
 Voor elk knooppunt kan een startprogramma worden gemaakt. Wijzigingen in bepaalde knooppunten leiden echter niet tot workflows. Als u knooppunten wijzigt die onder de volgende paden liggen, worden workflows niet gestart:
 
 * `/var/workflow/instances`
-* Willekeurig werkstroom-inbox-knooppunt ergens in de `/home/users` vertakking
+* Om het even welk werkschema-inbox knoop die overal in `/home/users` tak wordt gevestigd
 * `/tmp`
 * `/var/audit`
 * `/var/classes`
@@ -66,7 +70,7 @@ Voor elk knooppunt kan een startprogramma worden gemaakt. Wijzigingen in bepaald
 * `/var/mobile`
 * `/var/statistics`
 
-   * Uitzondering: Als u de onderstaande knooppunten wijzigt, `/var/statistics/tracking` worden ** workflows gestart.
+   * Uitzondering: Wijzigingen in knooppunten onder `/var/statistics/tracking` *do* zorgen ervoor dat workflows worden gestart.
 
 De standaardinstallatie bevat verschillende definities. Deze worden gebruikt voor taken op het gebied van digitaal middelenbeheer en sociale samenwerking:
 
@@ -84,18 +88,18 @@ Een workflowpakket:
 * kan meerdere keren worden gebruikt.
 * kan door de gebruiker worden gewijzigd (voeg of verwijder middelen toe) terwijl de werkschemainstantie eigenlijk loopt.
 
-## Een workflow starten vanuit de Modellen-console {#starting-a-workflow-from-the-models-console}
+## Een workflow starten vanuit de modellenconsole {#starting-a-workflow-from-the-models-console}
 
-1. Navigeer aan de console van **Modellen** gebruikend **Hulpmiddelen**, **Werkschema**, toen **Modellen**.
+1. Navigeer naar de **Modellen** console met **Tools**, **Workflow**, dan **Models**.
 1. Selecteer de werkstroom (volgens de consolemening); U kunt ook Zoeken (linksboven) gebruiken als dat nodig is:
 
    ![wf-103](assets/wf-103.png)
 
    >[!NOTE]
    >
-   >De **[indicator van de Overgang](/help/sites-developing/workflows.md#transient-workflows)**toont werkschema&#39;s waarvoor de werkschemageschiedenis niet zal worden voortgeduurd.
+   >De indicator **[Transient](/help/sites-developing/workflows.md#transient-workflows)** toont werkschema&#39;s waarvoor de werkschemageschiedenis niet zal worden voortgeduurd.
 
-1. Selecteer Werkstroom **** starten op de werkbalk.
+1. Selecteer **Workflow starten** op de werkbalk.
 1. Het dialoogvenster Werkstroom uitvoeren wordt geopend, zodat u het volgende kunt opgeven:
 
    * **Payload**
@@ -113,8 +117,8 @@ Een workflowpakket:
 
 ## Een opstartconfiguratie maken {#creating-a-launcher-configuration}
 
-1. Navigeer naar de **Workflowstartconsole** met **Tools**, **Workflow** en **Launchers**.
-1. Selecteer **Maken** en vervolgens **Startpagina** toevoegen om het dialoogvenster te openen:
+1. Navigeer naar de **Workflow Launchers**-console met **Tools**, **Workflow** en **Launchers**.
+1. Selecteer **Maken** en **Startpagina toevoegen** om het dialoogvenster te openen:
 
    ![wf-105](assets/wf-105.png)
 
@@ -148,6 +152,7 @@ Een workflowpakket:
       Een lijst met functies die moeten worden ingeschakeld. Selecteer de gewenste functie(s) met de keuzelijst.
 
    * **Uitgeschakelde functies**
+
    Een lijst met functies die moeten worden uitgeschakeld. Selecteer de gewenste functie(s) met de keuzelijst.
 
    * **Workflowmodel**
@@ -162,7 +167,7 @@ Een workflowpakket:
 
       Bepaalt of de workflow wordt gestart:
 
-      * Selecteer **Inschakelen** om werkstromen te starten wanneer aan de configuratie-eigenschappen wordt voldaan.
+      * Selecteer **Inschakelen** om workflows te starten wanneer aan de configuratie-eigenschappen wordt voldaan.
       * Selecteer **Uitschakelen** wanneer de workflow niet moet worden uitgevoerd (zelfs niet wanneer aan de configuratie-eigenschappen wordt voldaan).
    * **Lijst uitsluiten**
 
@@ -170,8 +175,9 @@ Een workflowpakket:
 
       Deze lanceereigenschap is een door komma&#39;s gescheiden lijst met items: &quot;
 
-      * `property-name` negeert om het even welke `jcr` gebeurtenis die op de gespecificeerde bezitsnaam teweegbracht. &quot;
-      * `event-user-data:<*someValue*>` Hiermee wordt elke gebeurtenis genegeerd die de instelling `*<someValue*`> `user-data` via de [ API `ObservationManager`]bevat (https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
+      * `property-name` negeert om het even welke  `jcr` gebeurtenis die op de gespecificeerde bezitsnaam teweegbracht. &quot;
+      * `event-user-data:<*someValue*>` Hiermee wordt elke gebeurtenis genegeerd die  `*<someValue*`>  `user-data` via de  [ `ObservationManager` API] heeft ingesteld (https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
+
       Bijvoorbeeld:
 
       `jcr:lastModified,dc:modified,dc:format,jcr:lastModifiedBy,imageMap,event-user-data:changedByWorkflowProcess`
@@ -184,10 +190,10 @@ Een workflowpakket:
 
 
 
-1. Selecteer **Maken**, om de lanceerinrichting tot stand te brengen en aan de console terug te keren.
+1. Selecteer **Maken** om de draagtas te maken en terug te keren naar de console.
 
    Zodra de juiste gebeurtenis plaatsvindt, wordt de starter geactiveerd en wordt de workflow gestart.
 
 ## Een opstartconfiguratie beheren {#managing-a-launcher-configuration}
 
-Nadat u de startconfiguratie hebt gemaakt, kunt u dezelfde console gebruiken om de instantie te selecteren en vervolgens Eigenschappen **** weergeven (en bewerken) of **Verwijderen**.
+Nadat u uw lanceringsconfiguratie hebt gecreeerd kunt u de zelfde console gebruiken om de instantie te selecteren, dan **Eigenschappen van de Mening** (en hen uit te geven) of **Schrapping**.

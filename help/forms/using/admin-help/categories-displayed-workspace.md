@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0d1536a2-10ac-4031-bd7f-264b02d0d75f
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '515'
+ht-degree: 0%
 
 ---
 
@@ -21,15 +24,15 @@ In Workspace worden de processen die een gebruiker kan starten, weergegeven in c
 
 Als u categorienamen opgeeft, maakt u deze zo dat ze op de juiste wijze worden weergegeven in het navigatievenster Werkruimte. Standaard heeft het linkernavigatievenster een vaste breedte van 210 pixels (ongeveer 24 tekens). Als de opgegeven categorienaam te lang is om binnen de vaste breedte van het linkernavigatievenster te passen, wordt deze afgekapt. De volledige naam wordt alleen weergegeven wanneer de muisaanwijzer erop wordt gepauzeerd. Vermijd categorienamen die worden afgekapt. De volgende voorbeelden illustreren categorienamen die passen en categorienamen die worden afgekapt:
 
-**** Categorienaam die past bij: Aanwezigheid en verlaten
+**Categorienaam die past:** Aanwezigheid en Verlaten
 
-**** Categorienaam die is afgekapt: Aanwezigheid en verlof (Verenigde Staten)
+**Categorienaam die is afgekapt:** Aanwezigheid en Verlaten (Verenigde Staten)
 
 In Workspace worden processen in een categorie doorgaans als kaarten weergegeven op de pagina Proces starten. Over het algemeen kunnen zes kaarten op het scherm voor een categorie worden weergegeven voordat de gebruiker moet schuiven om de resterende kaarten te bekijken. Omdat het scrollen het moeilijker maakt om een proces te vinden, denk na beperkt elke categorie tot zes processen of, afhankelijk van uw resolutie, het aantal processen dat op het scherm kan worden getoond zonder het vereisen van om het even welk scrollen.
 
-Als u MySQL als uw AEM vormengegevensbestand gebruikt, kan de Console van het Beleid tussen twee categorienamen niet onderscheiden die slechts in het gebruik van uitgebreide karakters verschillen. Als u bijvoorbeeld een categorie maakt met de naam abcde en een categorie met de naam âbcdè, worden deze als hetzelfde beschouwd.
+Als u MySQL als uw AEM formulierdatabase gebruikt, kan de beheerconsole geen onderscheid maken tussen twee categorienamen die alleen verschillen in het gebruik van uitgebreide tekens. Als u bijvoorbeeld een categorie maakt met de naam abcde en een categorie met de naam âbcdè, worden deze als hetzelfde beschouwd.
 
-## Een categorie toevoegen {#add-a-category}
+## Een categorie {#add-a-category} toevoegen
 
 1. Klik in de beheerconsole op Services > Toepassingen en services > Categoriebeheer.
 1. Klik op Toevoegen. Als u een subcategorie wilt toevoegen, selecteert u een categorie en klikt u op Toevoegen.
@@ -38,13 +41,13 @@ Als u MySQL als uw AEM vormengegevensbestand gebruikt, kan de Console van het Be
 
    ***opmerking **: U kunt maximaal vijf hiërarchische niveaus toevoegen wanneer u categorieën maakt.*
 
-## Een categorie bewerken {#edit-a-category}
+## Een categorie {#edit-a-category} bewerken
 
 1. Klik in de beheerconsole op Services > Toepassingen en services > Categoriebeheer.
 1. Selecteer de categorie die u wilt bewerken en klik op Bewerken. U kunt ook dubbelklikken op een categorie die u wilt bewerken.
 1. Bewerk de naam van de categorie in het vak Naam.
 
-## Een categorie verwijderen {#remove-a-category}
+## Een categorie {#remove-a-category} verwijderen
 
 U kunt alleen de categorieën verwijderen die niet in gebruik zijn.
 

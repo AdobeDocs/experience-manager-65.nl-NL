@@ -12,22 +12,25 @@ discoiquuid: 6732ef1f-0bfd-44e6-b24d-e22fe427d8b4
 docset: aem65
 translation-type: tm+mt
 source-git-commit: d366e9f9a1c44ff4866907e83432ab2b1438bbb3
+workflow-type: tm+mt
+source-wordcount: '618'
+ht-degree: 26%
 
 ---
 
 
 # Gereedschapsconsoles{#tools-consoles}
 
-Met de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde hulpmiddelen die u helpen uw websites, digitale elementen en andere aspecten van de opslagplaats voor inhoud te beheren. Er zijn momenteel twee flavors van de console van **Hulpmiddelen** afhankelijk van UI u gebruikt:
+Via de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde beheertools voor uw websites, digitale elementen en andere aspecten van de content-repository. Er zijn momenteel twee flavors van de **console Tools** afhankelijk van UI u gebruikt:
 
 * [Gereedschappen - Touch-Optimized UI](#tools-touch-optimized-ui)
 * [Gereedschappen - Klassieke gebruikersinterface](#tools-classic-ui)
 
-## Gereedschappen - Touch-Optimized UI {#tools-touch-optimized-ui}
+## Gereedschappen - Voor aanraking geoptimaliseerde gebruikersinterface {#tools-touch-optimized-ui}
 
 >[!NOTE]
 >
->Deze consoles zijn toegankelijk via het deelvenster [Gereedschappen van de globale navigatie](/help/sites-authoring/basic-handling.md#tools-panel).
+>Deze consoles zijn toegankelijk via het deelvenster [Gereedschappen in het algemene navigatievenster](/help/sites-authoring/basic-handling.md#tools-panel).
 
 >[!NOTE]
 >
@@ -37,7 +40,7 @@ Met de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde h
  <tbody>
   <tr>
    <td>Sectie</td>
-   <td>Option</td>
+   <td>Optie</td>
   </tr>
   <tr>
    <td>Algemeen</td>
@@ -65,11 +68,11 @@ Met de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde h
   </tr>
   <tr>
    <td> </td>
-   <td>Componenten</td>
+   <td>Onderdelen</td>
   </tr>
   <tr>
    <td> </td>
-   <td>Configuratie vertaling</td>
+   <td>Configuratie van vertaalmodule</td>
   </tr>
   <tr>
    <td>Workflow</td>
@@ -85,15 +88,15 @@ Met de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde h
   </tr>
   <tr>
    <td> </td>
-   <td>Launchers</td>
+   <td>Startprogramma's</td>
   </tr>
   <tr>
    <td> </td>
-   <td>Archief</td>
+   <td>Archivering</td>
   </tr>
   <tr>
    <td> </td>
-   <td>Mislukt</td>
+   <td>Fouten</td>
   </tr>
   <tr>
    <td>Bewerkingen</td>
@@ -121,7 +124,7 @@ Met de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde h
   </tr>
   <tr>
    <td> </td>
-   <td>Gezondheidsrapporten</td>
+   <td>Gezondheidsrapportage</td>
   </tr>
   <tr>
    <td> </td>
@@ -133,7 +136,7 @@ Met de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde h
   </tr>
   <tr>
    <td> </td>
-   <td>Toezicht</td>
+   <td>Bewaking</td>
   </tr>
   <tr>
    <td> </td>
@@ -149,7 +152,7 @@ Met de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde h
   </tr>
   <tr>
    <td> </td>
-   <td>Starten</td>
+   <td>Lanceringen</td>
   </tr>
   <tr>
    <td> </td>
@@ -157,23 +160,23 @@ Met de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde h
   </tr>
   <tr>
    <td> </td>
-   <td>Externe koppelingencontrole<br /> </td>
+   <td>Controle van externe koppelingen<br /> </td>
   </tr>
   <tr>
-   <td>Activa</td>
+   <td>Assets</td>
    <td> </td>
   </tr>
   <tr>
    <td> </td>
-   <td>Metagegevensprofielen</td>
+   <td>Metadataprofielen</td>
   </tr>
   <tr>
    <td> </td>
-   <td>Metagegevensschema's van map<br /> </td>
+   <td>Map met metadataschema's<br /> </td>
   </tr>
   <tr>
    <td> </td>
-   <td>Metagegevensschema's</td>
+   <td>Metadataschema's</td>
   </tr>
   <tr>
    <td> </td>
@@ -181,7 +184,7 @@ Met de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde h
   </tr>
   <tr>
    <td> </td>
-   <td>Configuratie van inzichten</td>
+   <td>Configuratie van Insights</td>
   </tr>
   <tr>
    <td> </td>
@@ -189,7 +192,7 @@ Met de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde h
   </tr>
   <tr>
    <td> </td>
-   <td>Modellen van inhoudsfragmenten<br /> </td>
+   <td>Modellen van contentfragmenten<br /> </td>
   </tr>
   <tr>
    <td> </td>
@@ -225,7 +228,7 @@ Met de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde h
   </tr>
   <tr>
    <td> </td>
-   <td>Pakket delen</td>
+   <td>Package Share</td>
   </tr>
   <tr>
    <td> </td>
@@ -281,19 +284,19 @@ Met de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde h
   </tr>
   <tr>
    <td> </td>
-   <td>Cloudservices voor vertaling</td>
+   <td>Cloud Services voor vertalingen</td>
   </tr>
   <tr>
    <td> </td>
-   <td>Publishing-configuratie op YouTube</td>
+   <td>YouTube Publishing-configuratie</td>
   </tr>
   <tr>
    <td> </td>
-   <td>Configuratie Scene7<br /> </td>
+   <td>Scene7 Configuration<br /> </td>
   </tr>
   <tr>
    <td> </td>
-   <td>Adobe-opstartconfiguraties</td>
+   <td>Adobe Launch-configuraties</td>
   </tr>
   <tr>
    <td> </td>
@@ -317,7 +320,7 @@ Met de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde h
   </tr>
   <tr>
    <td> </td>
-   <td>Configuratie van Pinterest Social Login<br /> </td>
+   <td>Pinterest Social Login Configuration<br /> </td>
   </tr>
   <tr>
    <td>Gemeenschappen</td>
@@ -337,7 +340,7 @@ Met de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde h
   </tr>
   <tr>
    <td> </td>
-   <td>Groepssjablonen<br /> </td>
+   <td>Groepsjablonen<br /> </td>
   </tr>
   <tr>
    <td> </td>
@@ -362,7 +365,7 @@ Met de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde h
  </tbody>
 </table>
 
-## Gereedschappen - Klassieke gebruikersinterface {#tools-classic-ui}
+## Gereedschappen - Klassieke UI {#tools-classic-ui}
 
 <table>
  <tbody>
@@ -375,15 +378,15 @@ Met de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde h
    <td>Gecentraliseerd punt voor het beheer van uw meerdere sites.</td>
   </tr>
   <tr>
-   <td>Contextconfiguraties voor clients<br /> </td>
-   <td>De context van de Cliënt vertegenwoordigt een dynamisch geassembleerde inzameling van gebruikersgegevens. Hier worden de standaard- en marketingcloudconfiguraties gehouden.<br /> </td>
+   <td>Clientcontextconfiguraties<br /> </td>
+   <td>De context van de Cliënt vertegenwoordigt een dynamisch geassembleerde inzameling van gebruikersgegevens. De standaard en marketing wolkenconfiguraties worden hier gehouden.<br /> </td>
   </tr>
   <tr>
-   <td>Configuraties voor cloudservices<br /> </td>
-   <td>Bevat configuraties die gerelateerd zijn aan de integratie met de Adobe Marketing Cloud.</td>
+   <td>Cloud Services Configurations<br /> </td>
+   <td>Bevat configuraties met betrekking tot Integratie met de Adobe Marketing Cloud.</td>
   </tr>
   <tr>
-   <td>Cloud-instellingen<br /> </td>
+   <td>Cloud Settings<br /> </td>
    <td>Configuratiebeheerinstellingen.</td>
   </tr>
   <tr>
@@ -424,7 +427,7 @@ Met de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde h
   </tr>
   <tr>
    <td>Pakketten</td>
-   <td>Een alternatieve koppeling naar Pakketbeheer waarmee de pakketten worden weergegeven die voor AEM WCM zijn geladen. Gelijkaardig aan de informatie die in de Manager van het Pakket van CRX wordt getoond.</td>
+   <td>Een alternatieve verbinding aan de Manager van het Pakket die de pakketten toont die voor AEM WCM zijn geladen. Gelijkaardig aan de informatie die in de Manager van het Pakket van CRX wordt getoond.</td>
   </tr>
   <tr>
    <td>Replicatie - replicatieagents</td>

@@ -30,28 +30,28 @@ Met de service Handtekening kunt u de beveiliging en privacy beschermen van Adob
 
 **Namen van handtekeningvelden**
 
-Voor sommige bewerkingen van de handtekeningservice moet u de naam opgeven van het handtekeningveld waarop een bewerking wordt uitgevoerd. Als u bijvoorbeeld een PDF-document ondertekent, geeft u de naam op van het handtekeningveld dat u wilt ondertekenen. Stel dat de volledige naam van een handtekeningveld is `form1[0].Form1[0].SignatureField1[0]`. U kunt opgeven `SignatureField1[0]` in plaats van `form1[0].Form1[0].SignatureField1[0]`.
+Voor sommige bewerkingen van de handtekeningservice moet u de naam opgeven van het handtekeningveld waarop een bewerking wordt uitgevoerd. Als u bijvoorbeeld een PDF-document ondertekent, geeft u de naam op van het handtekeningveld dat u wilt ondertekenen. Stel dat de volledige naam van een handtekeningveld `form1[0].Form1[0].SignatureField1[0]` is. U kunt `SignatureField1[0]` in plaats van `form1[0].Form1[0].SignatureField1[0]` specificeren.
 
-Soms ondertekent de handtekeningservice door een conflict (of voert een andere bewerking uit waarvoor de naam van het handtekeningveld is vereist) het verkeerde veld. Dit conflict is het resultaat van de naam die op twee of meer plaatsen in hetzelfde PDF-document wordt `SignatureField1[0]` weergegeven. Neem bijvoorbeeld een PDF-document dat twee handtekeningvelden bevat met de naam `form1[0].Form1[0].SignatureField1[0]` en `form1[0].Form1[0].SubForm1[0].SignatureField1[0]` de naam die u opgeeft `SignatureField1[0]`. In dit geval ondertekent de ondertekeningsservice het eerste handtekeningveld dat wordt gevonden terwijl alle handtekeningvelden in het document worden doorlopen.
+Soms ondertekent de handtekeningservice door een conflict (of voert een andere bewerking uit waarvoor de naam van het handtekeningveld vereist is) het verkeerde veld. Dit conflict is het resultaat van de naam `SignatureField1[0]` die op twee of meer plaatsen in hetzelfde PDF-document wordt weergegeven. Neem bijvoorbeeld een PDF-document dat twee handtekeningvelden bevat met de naam `form1[0].Form1[0].SignatureField1[0]` en `form1[0].Form1[0].SubForm1[0].SignatureField1[0]` en u `SignatureField1[0]` opgeeft. In dit geval ondertekent de ondertekeningsservice het eerste handtekeningveld dat wordt gevonden terwijl alle handtekeningvelden in het document worden doorlopen.
 
 Als er zich meerdere handtekeningvelden in een PDF-document bevinden, is het raadzaam de volledige namen van de handtekeningvelden op te geven. Dat wil zeggen, specificeer `form1[0].Form1[0].SignatureField1[0]`in plaats van `SignatureField1[0]`.
 
 U kunt deze taken uitvoeren met de service Handtekening:
 
-* Digitale handtekeningvelden toevoegen aan en verwijderen uit een PDF-document. (Zie [Handtekeningvelden](digitally-signing-certifying-documents.md#adding-signature-fields)toevoegen.)
-* Haal de namen op van de handtekeningvelden in een PDF-document. (Zie Namen van handtekeningvelden [ophalen](digitally-signing-certifying-documents.md#retrieving-signature-field-names).)
-* Handtekeningvelden wijzigen. (Zie Handtekeningvelden [wijzigen](digitally-signing-certifying-documents.md#modifying-signature-fields).)
-* PDF-documenten digitaal ondertekenen. (Zie PDF-documenten [digitaal ondertekenen](digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
-* PDF-documenten certificeren. (Zie PDF-documenten [certificeren](digitally-signing-certifying-documents.md#certifying-pdf-documents).)
-* Digitale handtekeningen in een PDF-document valideren. (Zie Digitale handtekeningen [verifiëren](digitally-signing-certifying-documents.md#verifying-digital-signatures).)
-* Valideer alle digitale handtekeningen in een PDF-document. (Zie Meerdere digitale handtekeningen [verifiëren](digitally-signing-certifying-documents.md#verifying-digital-signatures).)
-* Een digitale handtekening verwijderen uit een handtekeningveld. (Zie Digitale handtekeningen [verwijderen](digitally-signing-certifying-documents.md#removing-digital-signatures).)
+* Digitale handtekeningvelden toevoegen aan en verwijderen uit een PDF-document. (Zie [Handtekeningvelden toevoegen](digitally-signing-certifying-documents.md#adding-signature-fields).)
+* Haal de namen op van de handtekeningvelden in een PDF-document. (Zie [Namen van handtekeningvelden ophalen](digitally-signing-certifying-documents.md#retrieving-signature-field-names).)
+* Handtekeningvelden wijzigen. (Zie [Handtekeningvelden wijzigen](digitally-signing-certifying-documents.md#modifying-signature-fields).)
+* PDF-documenten digitaal ondertekenen. (Zie [PDF-documenten digitaal ondertekenen](digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
+* PDF-documenten certificeren. (Zie [PDF-documenten certificeren](digitally-signing-certifying-documents.md#certifying-pdf-documents).)
+* Digitale handtekeningen in een PDF-document valideren. (Zie [Digitale handtekeningen controleren](digitally-signing-certifying-documents.md#verifying-digital-signatures).)
+* Valideer alle digitale handtekeningen in een PDF-document. (Zie [Meerdere digitale handtekeningen controleren](digitally-signing-certifying-documents.md#verifying-digital-signatures).)
+* Een digitale handtekening verwijderen uit een handtekeningveld. (Zie [Digitale handtekeningen verwijderen](digitally-signing-certifying-documents.md#removing-digital-signatures).)
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Handtekening, zie de Verwijzing van de [Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Zie [Referentiehandleiding voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63) voor meer informatie over de service Handtekening.
 
-## Handtekeningvelden toevoegen {#adding-signature-fields}
+## Handtekeningvelden {#adding-signature-fields} toevoegen
 
 Digitale handtekeningen worden weergegeven in handtekeningvelden. Dit zijn formuliervelden die een grafische weergave van de handtekening bevatten. Handtekeningvelden kunnen zichtbaar of onzichtbaar zijn. Ondertekenaars kunnen een bestaand handtekeningveld gebruiken of een handtekeningveld programmatisch toevoegen. In beide gevallen moet het handtekeningveld bestaan voordat een PDF-document kan worden ondertekend.
 
@@ -59,9 +59,9 @@ U kunt een handtekeningveld programmatisch toevoegen met de Java API of de API v
 
 >[!NOTE]
 >
->Bij sommige PDF-documenttypen kunt u geen handtekeningveld programmatisch toevoegen. Zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63)voor meer informatie over de service Handtekening en het toevoegen van handtekeningvelden.
+>Bij sommige PDF-documenttypen kunt u geen handtekeningveld programmatisch toevoegen. Zie [Referentiehandleiding voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63) voor meer informatie over de service Handtekening en het toevoegen van handtekeningvelden.
 
-### Overzicht van de stappen {#summary-of-steps}
+### Overzicht van stappen {#summary-of-steps}
 
 Voer de volgende taken uit om een handtekeningveld toe te voegen aan een PDF-document:
 
@@ -80,8 +80,8 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-signatures-client.jar
-* adobe-utilities.jar (vereist als AEM Forms worden geïmplementeerd op JBoss)
-* jbossall-client.jar (vereist als AEM Forms worden geïmplementeerd op JBoss)
+* adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
+* jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
 
 **Een handtekeningclient maken**
 
@@ -117,42 +117,42 @@ Voeg een handtekeningveld toe met de handtekening-API (Java):
 
 1. Een handtekeningclient maken
 
-   * Maak een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
-   * Maak een `SignatureServiceClient` object door de constructor ervan te gebruiken en het `ServiceClientFactory` object door te geven.
+   * Maak een `ServiceClientFactory`-object dat verbindingseigenschappen bevat.
+   * Maak een `SignatureServiceClient`-object door de constructor ervan te gebruiken en het object `ServiceClientFactory` door te geven.
 
 1. Een PDF-document ophalen waaraan een handtekeningveld wordt toegevoegd
 
-   * Maak een `java.io.FileInputStream` object dat staat voor het PDF-document waaraan een handtekeningveld wordt toegevoegd door de constructor ervan te gebruiken en een tekenreekswaarde door te geven die de locatie van het PDF-document aangeeft.
-   * Maak een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en het `java.io.FileInputStream` object door te geven.
+   * Maak een `java.io.FileInputStream`-object dat het PDF-document vertegenwoordigt waaraan een handtekeningveld wordt toegevoegd door de constructor ervan te gebruiken en een tekenreekswaarde door te geven die de locatie van het PDF-document aangeeft.
+   * Maak een `com.adobe.idp.Document`-object door de constructor ervan te gebruiken en het object `java.io.FileInputStream` door te geven.
 
 1. Een handtekeningveld toevoegen
 
-   * Maak een `PositionRectangle` object dat de locatie van het handtekeningveld aangeeft met behulp van de constructor. Geef binnen de constructor coördinaatwaarden op.
-   * Maak desgewenst een `FieldMDPOptions` object dat de velden opgeeft die zijn vergrendeld wanneer een digitale handtekening wordt toegepast op het handtekeningveld.
-   * Voeg een handtekeningveld toe aan een PDF-document door de methode van het `SignatureServiceClient` `addSignatureField` object aan te roepen en de volgende waarden door te geven:
+   * Maak een `PositionRectangle`-object dat de locatie van het handtekeningveld opgeeft met de constructor. Geef binnen de constructor coördinaatwaarden op.
+   * Maak desgewenst een `FieldMDPOptions`-object dat de velden opgeeft die zijn vergrendeld wanneer een digitale handtekening wordt toegepast op het handtekeningveld.
+   * Voeg een handtekeningveld toe aan een PDF-document door de methode `SignatureServiceClient` van het object `addSignatureField` aan te roepen en de volgende waarden door te geven:
 
       * A `com.adobe.idp`. `Document` object dat staat voor het PDF-document waaraan een handtekeningveld wordt toegevoegd.
       * Een tekenreekswaarde die de naam van het handtekeningveld opgeeft.
-      * Een `java.lang.Integer` waarde die staat voor het paginanummer waaraan een handtekeningveld wordt toegevoegd.
-      * Een `PositionRectangle` object dat de locatie van het handtekeningveld opgeeft.
-      * Een `FieldMDPOptions` object dat in het PDF-document velden opgeeft die worden vergrendeld nadat een digitale handtekening is toegepast op het handtekeningveld. Deze parameterwaarde is optioneel en u kunt deze doorgeven `null`.
-   * Een `PDFSeedValueOptions` object dat verschillende runtimewaarden opgeeft. Deze parameterwaarde is optioneel en u kunt deze doorgeven `null`.
+      * Een waarde `java.lang.Integer` die het paginanummer vertegenwoordigt waaraan een handtekeningveld wordt toegevoegd.
+      * Een object `PositionRectangle` dat de locatie van het handtekeningveld opgeeft.
+      * Een `FieldMDPOptions`-object dat velden in het PDF-document opgeeft die worden vergrendeld nadat een digitale handtekening is toegepast op het handtekeningveld. Deze parameterwaarde is optioneel en u kunt `null` doorgeven.
+   * Een object `PDFSeedValueOptions` dat verschillende runtimewaarden opgeeft. Deze parameterwaarde is optioneel en u kunt `null` doorgeven.
 
-      De `addSignatureField` methode retourneert een `com.adobe.idp`. `Document` object dat staat voor een PDF-document dat een handtekeningveld bevat.
+      De `addSignatureField` methode keert `com.adobe.idp` terug. `Document` object dat staat voor een PDF-document dat een handtekeningveld bevat.
    >[!NOTE]
    >
-   >U kunt de `SignatureServiceClient` methode van het `addInvisibleSignatureField` object aanroepen om een onzichtbaar handtekeningveld toe te voegen.
+   >U kunt de methode `addInvisibleSignatureField` van het object `SignatureServiceClient` aanroepen om een onzichtbaar handtekeningveld toe te voegen.
 
 1. Het PDF-document opslaan als een PDF-bestand
 
-   * Maak een `java.io.File` object en zorg dat de bestandsextensie .pdf is.
-   * Roep de `com.adobe.idp` `Document` de methode van `copyToFile` het object om de inhoud van het `Document` object naar het bestand te kopiëren. Zorg ervoor dat u de `com.adobe.idp`flacon gebruikt. `Document` object dat door de `addSignatureField` methode is geretourneerd.
+   * Maak een `java.io.File`-object en controleer of de bestandsextensie .pdf is.
+   * Roep `com.adobe.idp` aan. `Document` De  `copyToFile` methode van het object om de inhoud van het  `Document` object naar het bestand te kopiëren. Zorg ervoor dat u `com.adobe.idp` gebruikt. `Document` object dat door de  `addSignatureField` methode is geretourneerd.
 
 **Zie ook**
 
 [Handtekeningenservice-API - Snel aan de slag](/help/forms/developing/signature-service-java-api-quick.md#signature-service-java-api-quick-start-soap)
 
-### Handtekeningvelden toevoegen met de webservice-API {#add-signature-fields-using-the-web-service-api}
+### Handtekeningvelden toevoegen met de API {#add-signature-fields-using-the-web-service-api} van de webservice
 
 Een handtekeningveld toevoegen met de handtekening-API (webservice):
 
@@ -162,48 +162,48 @@ Een handtekeningveld toevoegen met de handtekening-API (webservice):
 
    >[!NOTE]
    >
-   >Vervangen `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
+   >Vervang `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
 
 1. Een handtekeningclient maken
 
-   * Maak een `SignatureServiceClient` object met de standaardconstructor.
-   * Maak een `SignatureServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde door die de WSDL opgeeft voor de service AEM Forms (bijvoorbeeld `http://localhost:8080/soap/services/SignatureService?WSDL`). U hoeft het `lc_version` kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
-   * Maak een `System.ServiceModel.BasicHttpBinding` object door de waarde van het `SignatureServiceClient.Endpoint.Binding` veld op te halen. Kiezen naar de geretourneerde waarde `BasicHttpBinding`.
-   * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
+   * Maak een `SignatureServiceClient`-object met de standaardconstructor.
+   * Maak een `SignatureServiceClient.Endpoint.Address`-object met de constructor `System.ServiceModel.EndpointAddress`. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/SignatureService?WSDL`). U hoeft het `lc_version`-kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
+   * Maak een `System.ServiceModel.BasicHttpBinding`-object door de waarde van het veld `SignatureServiceClient.Endpoint.Binding` op te halen. Cast de terugkeerwaarde aan `BasicHttpBinding`.
+   * Stel het veld `System.ServiceModel.BasicHttpBinding` van het object `MessageEncoding` in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor AEM-formulieren toe aan het veld `SignatureServiceClient.ClientCredentials.UserName.UserName`.
-      * Wijs de bijbehorende wachtwoordwaarde aan het veld toe `SignatureServiceClient.ClientCredentials.UserName.Password`.
-      * Wijs de constante waarde toe `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Wijs de constante waarde toe `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode`.
+      * Wijs de gebruikersnaam voor het AEM aan het veld `SignatureServiceClient.ClientCredentials.UserName.UserName` toe.
+      * Wijs de overeenkomstige wachtwoordwaarde aan het gebied `SignatureServiceClient.ClientCredentials.UserName.Password` toe.
+      * Wijs de constante waarde `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType` toe.
+      * Wijs de constante waarde `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode` toe.
 
 1. Een PDF-document ophalen waaraan een handtekeningveld wordt toegevoegd
 
-   * Maak een `BLOB` object met de constructor ervan. Het `BLOB` object wordt gebruikt om het PDF-document op te slaan dat een handtekeningveld bevat.
-   * Maak een `System.IO.FileStream` object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het PDF-document en de modus waarin het bestand moet worden geopend, vertegenwoordigt.
-   * Maak een bytearray waarin de inhoud van het `System.IO.FileStream` object wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de `System.IO.FileStream` eigenschap van het `Length` object op te halen.
-   * Vul de bytearray met streamgegevens door de methode van het `System.IO.FileStream` `Read` object aan te roepen en de bytearray, de startpositie en de lengte van de stream door te geven om te lezen.
-   * Vul het `BLOB` object door de `MTOM` eigenschap ervan toe te wijzen met de inhoud van de bytearray.
+   * Maak een `BLOB`-object met de constructor ervan. Met het object `BLOB` wordt het PDF-document opgeslagen dat een handtekeningveld bevat.
+   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het PDF-document en de modus waarin het bestand moet worden geopend, vertegenwoordigt.
+   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `System.IO.FileStream` van het object `Length` op te halen.
+   * Vul de bytearray met streamgegevens door de methode `Read` van het object `System.IO.FileStream` aan te roepen en de bytearray, de startpositie en de lengte van de stream door te geven om te lezen.
+   * Vul het object `BLOB` door de eigenschap `MTOM` ervan toe te wijzen met de inhoud van de bytearray.
 
 1. Een handtekeningveld toevoegen
 
-   Voeg een handtekeningveld toe aan het PDF-document door de methode van het `SignatureServiceClient` `addSignatureField` object aan te roepen en de volgende waarden door te geven:
+   Voeg een handtekeningveld toe aan het PDF-document door de methode `SignatureServiceClient` van het object `addSignatureField` aan te roepen en de volgende waarden door te geven:
 
-   * Een `BLOB` object dat staat voor het PDF-document waaraan een handtekeningveld wordt toegevoegd.
+   * Een `BLOB`-object dat het PDF-document vertegenwoordigt waaraan een handtekeningveld wordt toegevoegd.
    * Een tekenreekswaarde die de naam van het handtekeningveld aangeeft.
    * Een geheel getal dat staat voor het paginanummer waaraan een handtekeningveld wordt toegevoegd.
-   * Een `PositionRect` object dat de locatie van het handtekeningveld opgeeft.
-   * Een `FieldMDPOptions` object dat in het PDF-document velden opgeeft die worden vergrendeld nadat een digitale handtekening is toegepast op het handtekeningveld. Deze parameterwaarde is optioneel en u kunt deze doorgeven `null`.
-   * Een `PDFSeedValueOptions` object dat verschillende runtimewaarden opgeeft. Deze parameterwaarde is optioneel en u kunt deze doorgeven `null`.
+   * Een object `PositionRect` dat de locatie van het handtekeningveld opgeeft.
+   * Een `FieldMDPOptions`-object dat velden in het PDF-document opgeeft die worden vergrendeld nadat een digitale handtekening is toegepast op het handtekeningveld. Deze parameterwaarde is optioneel en u kunt `null` doorgeven.
+   * Een object `PDFSeedValueOptions` dat verschillende runtimewaarden opgeeft. Deze parameterwaarde is optioneel en u kunt `null` doorgeven.
 
-   De `addSignatureField` methode retourneert een `BLOB` object dat een PDF-document vertegenwoordigt dat een handtekeningveld bevat.
+   De methode `addSignatureField` retourneert een `BLOB`-object dat een PDF-document vertegenwoordigt dat een handtekeningveld bevat.
 
 1. Het PDF-document opslaan als een PDF-bestand
 
-   * Maak een `System.IO.FileStream` object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie vertegenwoordigt van het PDF-document dat het handtekeningveld en de modus waarin het bestand moet worden geopend.
-   * Maak een bytearray waarin de inhoud wordt opgeslagen van het `BLOB` object dat door de `addSignatureField` methode is geretourneerd. Vul de bytearray met de waarde van het `BLOB` `binaryData` gegevenslid van het object.
-   * Maak een `System.IO.BinaryWriter` object door de constructor ervan aan te roepen en het `System.IO.FileStream` object door te geven.
-   * Schrijf de inhoud van de bytearray naar een PDF-bestand door de methode van het `System.IO.BinaryWriter` `Write` object aan te roepen en de bytearray door te geven.
+   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie vertegenwoordigt van het PDF-document dat het handtekeningveld en de modus waarin het bestand moet worden geopend.
+   * Maak een bytearray waarin de inhoud wordt opgeslagen van het object `BLOB` dat door de methode `addSignatureField` is geretourneerd. Vul de bytearray met de waarde van het `BLOB`-gegevenslid van het object `binaryData`.
+   * Maak een `System.IO.BinaryWriter`-object door de constructor ervan aan te roepen en het object `System.IO.FileStream` door te geven.
+   * Schrijf de inhoud van de bytearray naar een PDF-bestand door de methode `Write` van het object `System.IO.BinaryWriter` aan te roepen en de bytearray door te geven.
 
 **Zie ook**
 
@@ -211,15 +211,15 @@ Een handtekeningveld toevoegen met de handtekening-API (webservice):
 
 [AEM Forms aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
-## Namen van handtekeningvelden ophalen {#retrieving-signature-field-names}
+## Namen van handtekeningvelden {#retrieving-signature-field-names} ophalen
 
 U kunt de namen ophalen van alle handtekeningvelden in een PDF-document dat u wilt ondertekenen of certificeren. Als u niet zeker weet welke namen van handtekeningvelden zich in een PDF-document bevinden of als u de namen wilt verifiëren, kunt u deze via programmacode ophalen. De service Handtekening retourneert de volledig gekwalificeerde naam van het handtekeningveld, zoals `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Handtekening, zie de Verwijzing van de [Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63)
+>Zie [Referentiehandleiding voor services voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63) voor meer informatie over de service Handtekening.
 
-### Overzicht van de stappen {#summary_of_steps-1}
+### Overzicht van stappen {#summary_of_steps-1}
 
 Voer de volgende taken uit om de namen van handtekeningvelden op te halen:
 
@@ -237,10 +237,10 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-signatures-client.jar
-* adobe-utilities.jar (vereist als AEM Forms worden geïmplementeerd op JBoss)
-* jbossall-client.jar (vereist als AEM Forms worden geïmplementeerd op JBoss)
+* adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
+* jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
 
-Zie [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van deze JAR-bestanden.
+Zie [Including AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files) voor informatie over de locatie van deze JAR-bestanden.
 
 **Een handtekeningclient maken**
 
@@ -276,18 +276,18 @@ Namen van handtekeningvelden ophalen met de handtekening-API (Java):
 
 1. Een handtekeningclient maken
 
-   * Maak een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
-   * Maak een `SignatureServiceClient` object door de constructor ervan te gebruiken en het `ServiceClientFactory` object door te geven.
+   * Maak een `ServiceClientFactory`-object dat verbindingseigenschappen bevat.
+   * Maak een `SignatureServiceClient`-object door de constructor ervan te gebruiken en het object `ServiceClientFactory` door te geven.
 
 1. Het PDF-document ophalen dat handtekeningvelden bevat
 
-   * Maak een `java.io.FileInputStream` object dat staat voor het PDF-document dat handtekeningvelden bevat door de constructor ervan te gebruiken en een tekenreekswaarde door te geven die de locatie van het PDF-document aangeeft.
-   * Maak een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en het `java.io.FileInputStream` object door te geven.
+   * Maak een `java.io.FileInputStream`-object dat staat voor het PDF-document dat handtekeningvelden bevat door de constructor ervan te gebruiken en een tekenreekswaarde door te geven die de locatie van het PDF-document aangeeft.
+   * Maak een `com.adobe.idp.Document`-object door de constructor ervan te gebruiken en het object `java.io.FileInputStream` door te geven.
 
 1. De namen van handtekeningvelden ophalen
 
-   * Haal de namen van de handtekeningvelden op door de methode van het `SignatureServiceClient` object aan te roepen en het `getSignatureFieldList` `com.adobe.idp.Document` object door te geven dat het PDF-document bevat dat handtekeningvelden bevat. Deze methode retourneert een `java.util.List` object waarin elk element een `PDFSignatureField` object bevat. Met dit object kunt u aanvullende informatie verkrijgen over een handtekeningveld, bijvoorbeeld of dit zichtbaar is.
-   * Doorloop het `java.util.List` object om te bepalen of er namen voor handtekeningvelden zijn. Voor elk handtekeningveld in het PDF-document kunt u een afzonderlijk `PDFSignatureField` object verkrijgen. Als u de naam van het handtekeningveld wilt verkrijgen, roept u de `PDFSignatureField` methode van het `getName` object aan. Deze methode retourneert een tekenreekswaarde die de naam van het handtekeningveld opgeeft.
+   * Haal de namen van de handtekeningvelden op door de methode `SignatureServiceClient` van het object `getSignatureFieldList` aan te roepen en het object `com.adobe.idp.Document` door te geven dat het PDF-document bevat dat handtekeningvelden bevat. Deze methode retourneert een `java.util.List`-object, waarin elk element een `PDFSignatureField`-object bevat. Met dit object kunt u aanvullende informatie verkrijgen over een handtekeningveld, bijvoorbeeld of dit zichtbaar is.
+   * Doorloop het object `java.util.List` om te bepalen of er namen voor handtekeningvelden zijn. Voor elk handtekeningveld in het PDF-document kunt u een afzonderlijk `PDFSignatureField`-object verkrijgen. Als u de naam van het handtekeningveld wilt verkrijgen, roept u de methode `getName` van het object `PDFSignatureField` aan. Deze methode retourneert een tekenreekswaarde die de naam van het handtekeningveld opgeeft.
 
 **Zie ook**
 
@@ -299,7 +299,7 @@ Namen van handtekeningvelden ophalen met de handtekening-API (Java):
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Handtekeningveld ophalen met de webservice-API {#retrieve-signature-field-using-the-web-service-api}
+### Handtekeningveld ophalen met de API {#retrieve-signature-field-using-the-web-service-api} van de webservice
 
 Namen van handtekeningvelden ophalen met de handtekening-API (webservice):
 
@@ -309,33 +309,33 @@ Namen van handtekeningvelden ophalen met de handtekening-API (webservice):
 
    >[!NOTE]
    >
-   >Vervangen `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
+   >Vervang `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
 
 1. Een handtekeningclient maken
 
-   * Maak een `SignatureServiceClient` object met de standaardconstructor.
-   * Maak een `SignatureServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde door die de WSDL opgeeft voor de service AEM Forms (bijvoorbeeld `http://localhost:8080/soap/services/SignatureService?WSDL`). U hoeft het `lc_version` kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
-   * Maak een `System.ServiceModel.BasicHttpBinding` object door de waarde van het `SignatureServiceClient.Endpoint.Binding` veld op te halen. Kiezen naar de geretourneerde waarde `BasicHttpBinding`.
-   * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
+   * Maak een `SignatureServiceClient`-object met de standaardconstructor.
+   * Maak een `SignatureServiceClient.Endpoint.Address`-object met de constructor `System.ServiceModel.EndpointAddress`. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/SignatureService?WSDL`). U hoeft het `lc_version`-kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
+   * Maak een `System.ServiceModel.BasicHttpBinding`-object door de waarde van het veld `SignatureServiceClient.Endpoint.Binding` op te halen. Cast de terugkeerwaarde aan `BasicHttpBinding`.
+   * Stel het veld `System.ServiceModel.BasicHttpBinding` van het object `MessageEncoding` in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor AEM-formulieren toe aan het veld `SignatureServiceClient.ClientCredentials.UserName.UserName`.
-      * Wijs de bijbehorende wachtwoordwaarde aan het veld toe `SignatureServiceClient.ClientCredentials.UserName.Password`.
-      * Wijs de constante waarde toe `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Wijs de constante waarde toe `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode`.
+      * Wijs de gebruikersnaam voor het AEM aan het veld `SignatureServiceClient.ClientCredentials.UserName.UserName` toe.
+      * Wijs de overeenkomstige wachtwoordwaarde aan het gebied `SignatureServiceClient.ClientCredentials.UserName.Password` toe.
+      * Wijs de constante waarde `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType` toe.
+      * Wijs de constante waarde `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode` toe.
 
 1. Het PDF-document ophalen dat handtekeningvelden bevat
 
-   * Maak een `BLOB` object met de constructor ervan. Het `BLOB` object wordt gebruikt om het PDF-document op te slaan dat handtekeningvelden bevat.
-   * Maak een `System.IO.FileStream` object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het PDF-document en de modus waarin het bestand moet worden geopend, vertegenwoordigt.
-   * Maak een bytearray waarin de inhoud van het `System.IO.FileStream` object wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de `System.IO.FileStream` eigenschap van het `Length` object op te halen.
-   * Vul de bytearray met streamgegevens door de methode van het `System.IO.FileStream` `Read` object aan te roepen en de bytearray, de startpositie en de lengte van de stream door te geven om te lezen.
-   * Vul het `BLOB` object door het `MTOM` veld ervan de inhoud van de bytearray toe te wijzen.
+   * Maak een `BLOB`-object met de constructor ervan. Met het object `BLOB` wordt het PDF-document met handtekeningvelden opgeslagen.
+   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het PDF-document en de modus waarin het bestand moet worden geopend, vertegenwoordigt.
+   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `System.IO.FileStream` van het object `Length` op te halen.
+   * Vul de bytearray met streamgegevens door de methode `Read` van het object `System.IO.FileStream` aan te roepen en de bytearray, de startpositie en de lengte van de stream door te geven om te lezen.
+   * Vul het object `BLOB` door het veld `MTOM` ervan de inhoud van de bytearray toe te wijzen.
 
 1. De namen van handtekeningvelden ophalen
 
-   * Haal de namen van de handtekeningvelden op door de `SignatureServiceClient` methode van het `getSignatureFieldList` object aan te roepen en het `BLOB` object door te geven dat het PDF-document bevat dat handtekeningvelden bevat. Deze methode retourneert een `MyArrayOfPDFSignatureField` verzamelingsobject waarin elk element een `PDFSignatureField` object bevat.
-   * Doorloop het `MyArrayOfPDFSignatureField` object om te bepalen of er namen voor handtekeningvelden zijn. Voor elk handtekeningveld in het PDF-document kunt u een `PDFSignatureField` object ophalen. Als u de naam van het handtekeningveld wilt verkrijgen, roept u de `PDFSignatureField` methode van het `getName` object aan. Deze methode retourneert een tekenreekswaarde die de naam van het handtekeningveld opgeeft.
+   * Haal de namen van de handtekeningvelden op door de methode `getSignatureFieldList` van het `SignatureServiceClient`-object aan te roepen en het object `BLOB` door te geven dat het PDF-document bevat dat handtekeningvelden bevat. Deze methode keert een `MyArrayOfPDFSignatureField` inzamelingsvoorwerp terug waar elk element een `PDFSignatureField` voorwerp bevat.
+   * Doorloop het object `MyArrayOfPDFSignatureField` om te bepalen of er namen voor handtekeningvelden zijn. Voor elk handtekeningveld in het PDF-document kunt u een `PDFSignatureField`-object ophalen. Als u de naam van het handtekeningveld wilt verkrijgen, roept u de methode `getName` van het object `PDFSignatureField` aan. Deze methode retourneert een tekenreekswaarde die de naam van het handtekeningveld opgeeft.
 
 **Zie ook**
 
@@ -357,9 +357,9 @@ In deze sectie wordt uitgelegd hoe u een handtekeningveld kunt wijzigen door de 
 
 >[!NOTE]
 >
->Zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63)voor meer informatie over de service Handtekening en het wijzigen van handtekeningvelden.
+>Zie [Referentiehandleiding voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63) voor meer informatie over de service Handtekening en het wijzigen van handtekeningvelden.
 
-### Overzicht van de stappen {#summary_of_steps-2}
+### Overzicht van stappen {#summary_of_steps-2}
 
 Voer de volgende taken uit om handtekeningvelden in een PDF-document te wijzigen:
 
@@ -379,10 +379,10 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-signatures-client.jar
-* adobe-utilities.jar (vereist als AEM Forms worden geïmplementeerd op JBoss)
-* jbossall-client.jar (vereist als AEM Forms worden geïmplementeerd op JBoss)
+* adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
+* jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
 
-Zie [Inclusief LiveCycle Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van deze JAR-bestanden.
+Zie [Including LiveCycle Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files) voor informatie over de locatie van deze JAR-bestanden.
 
 **Een handtekeningclient maken**
 
@@ -405,10 +405,10 @@ U kunt de volgende zaadwaardewoordenboekwaarden instellen:
 * **Vlagopties**: Hiermee geeft u de vlagwaarden op die aan dit handtekeningveld zijn gekoppeld. De waarde 1 houdt in dat een ondertekenaar alleen de opgegeven waarden voor het item moet gebruiken. De waarde 0 houdt in dat andere waarden zijn toegestaan. Hier zijn de posities van het Beetje:
 
    * **1(Filter):** De handtekening-handler die moet worden gebruikt om het handtekeningveld te ondertekenen
-   * **2 (SubFilter):** Een array met namen die aangeven welke coderingen acceptabel zijn voor ondertekening
+   * **2 (SubFilter):** een array met namen die aangeven welke coderingen acceptabel zijn voor ondertekening
    * **3 (V)**: Het minimaal vereiste versienummer van de handtekening-handler dat moet worden gebruikt om het handtekeningveld te ondertekenen
    * **4 (Redenen):** Een array met tekenreeksen die mogelijke redenen voor het ondertekenen van een document opgeven
-   * **5 (PDFLegalWarnings):** Een array van tekenreeksen die mogelijke juridische attestaties opgeven
+   * **5 (PDFLegalWarnings):** Een array met tekenreeksen die mogelijke juridische attestaties opgeven
 
 * **Wettelijke verklaringen**: Wanneer een document wordt gecertificeerd, wordt het automatisch gescand op specifieke typen inhoud die de zichtbare inhoud van een document dubbelzinnig of misleidend kunnen maken. Een annotatie kan bijvoorbeeld tekst die belangrijk is voor het begrijpen van wat wordt gecertificeerd, onduidelijk maken. Het scanproces genereert waarschuwingen die de aanwezigheid van dit type inhoud aangeven. Het verstrekt ook een extra verklaring van de inhoud die waarschuwingen kan hebben veroorzaakt.
 * **Machtigingen**: Hiermee geeft u machtigingen op die voor een PDF-document kunnen worden gebruikt zonder dat de handtekening ongeldig wordt gemaakt.
@@ -444,44 +444,44 @@ Wijzig een handtekeningveld met de handtekening-API (Java):
 
 1. Een handtekeningclient maken
 
-   * Maak een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
-   * Maak een `SignatureServiceClient` object door de constructor ervan te gebruiken en het `ServiceClientFactory` object door te geven.
+   * Maak een `ServiceClientFactory`-object dat verbindingseigenschappen bevat.
+   * Maak een `SignatureServiceClient`-object door de constructor ervan te gebruiken en het object `ServiceClientFactory` door te geven.
 
 1. Het PDF-document ophalen dat het handtekeningveld bevat dat moet worden gewijzigd
 
-   * Maak een `java.io.FileInputStream` object dat staat voor het PDF-document dat het handtekeningveld bevat dat u wilt wijzigen met de constructor ervan en geef een tekenreekswaarde door die de locatie van het PDF-document aangeeft.
-   * Maak een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en het `java.io.FileInputStream` object door te geven.
+   * Maak een `java.io.FileInputStream`-object dat staat voor het PDF-document dat het handtekeningveld bevat dat moet worden gewijzigd met de constructor ervan en dat een tekenreekswaarde doorgeeft die de locatie van het PDF-document aangeeft.
+   * Maak een `com.adobe.idp.Document`-object door de constructor ervan te gebruiken en het object `java.io.FileInputStream` door te geven.
 
 1. Woordenboekwaarden instellen
 
-   * Maak een `PDFSignatureFieldProperties` object met de constructor ervan. In een `PDFSignatureFieldProperties` object worden het handtekeningveldvergrendelingswoordenboek en de zaadwaardewoordenboekgegevens opgeslagen.
-   * Maak een `PDFSeedValueOptionSpec` object met de constructor ervan. Met dit object kunt u woordenboekwaarden voor zaadwaarden instellen.
-   * Wijzigingen in het PDF-document niet toestaan door de methode van het `PDFSeedValueOptionSpec` object aan te roepen en de `setMdpValue` `MDPPermissions.NoChanges` opsommingswaarde door te geven.
-   * Maak een `FieldMDPOptionSpec` object met de constructor ervan. Met dit object kunt u woordenboekwaarden voor handtekeningveldvergrendeling instellen.
-   * Vergrendel alle velden in het PDF-document door de methode van het `FieldMDPOptionSpec` object aan te roepen en de `setMdpValue` `FieldMDPAction.ALL` opsommingswaarde door te geven.
-   * Stel de zaadwaardewoordenboekgegevens in door de methode van het `PDFSignatureFieldProperties` object aan te roepen en het `setSeedValue` `PDFSeedValueOptionSpec` object door te geven.
-   * Stel de vergrendelingswoordenboekgegevens van het handtekeningveld in door de methode van het `PDFSignatureFieldProperties`object aan te roepen en het `setFieldMDP` `FieldMDPOptionSpec` object door te geven.
+   * Maak een `PDFSignatureFieldProperties`-object met de constructor ervan. In een `PDFSignatureFieldProperties`-object worden het handtekeningveld vergrendelingswoordenboek en de zaadwaardewoordenboekgegevens opgeslagen.
+   * Maak een `PDFSeedValueOptionSpec`-object met de constructor ervan. Met dit object kunt u woordenboekwaarden voor zaadwaarden instellen.
+   * Wijzigingen in het PDF-document niet toestaan door de methode `PDFSeedValueOptionSpec` van het object `setMdpValue` aan te roepen en de opsommingswaarde `MDPPermissions.NoChanges` door te geven.
+   * Maak een `FieldMDPOptionSpec`-object met de constructor ervan. Met dit object kunt u woordenboekwaarden voor handtekeningveldvergrendeling instellen.
+   * Vergrendel alle velden in het PDF-document door de methode `setMdpValue` van het object `FieldMDPOptionSpec` aan te roepen en de opsommingswaarde `FieldMDPAction.ALL` door te geven.
+   * Stel zaadwaardewoordenboekgegevens in door de methode `setSeedValue` van het object `PDFSignatureFieldProperties` aan te roepen en het object `PDFSeedValueOptionSpec` door te geven.
+   * Stel de vergrendelingswoordenboekgegevens voor handtekeningvelden in door de methode `setFieldMDP` van het `PDFSignatureFieldProperties`object aan te roepen en het object `FieldMDPOptionSpec` door te geven.
 
    >[!NOTE]
    >
-   >Zie de `PDFSeedValueOptionSpec` klasseverwijzing voor een overzicht van alle waarden in het zaadwaardewoordenboek die u kunt instellen. (Zie [API-naslaggids](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)voor AEM Forms.)
+   >Zie de klasseverwijzing `PDFSeedValueOptionSpec` als u alle waarden van het zaadwaardewoordenboek wilt zien die u kunt instellen. (Zie [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).)
 
 1. Het handtekeningveld wijzigen
 
-   Wijzig het handtekeningveld door de methode van het `SignatureServiceClient` `modifySignatureField` object aan te roepen en de volgende waarden door te geven:
+   Wijzig het handtekeningveld door de methode `modifySignatureField` van het object `SignatureServiceClient` aan te roepen en de volgende waarden door te geven:
 
-   * Het `com.adobe.idp.Document` object waarin het PDF-document is opgeslagen dat het te wijzigen handtekeningveld bevat
+   * Het `com.adobe.idp.Document`-object waarin het PDF-document is opgeslagen dat het te wijzigen handtekeningveld bevat
    * Een tekenreekswaarde die de naam van het handtekeningveld opgeeft
-   * Het `PDFSignatureFieldProperties` object waarin het handtekeningveldvergrendelingswoordenboek en de zaadwaardewoordenboekgegevens zijn opgeslagen
+   * Het `PDFSignatureFieldProperties`-object dat het handtekeningveld vergrendelingswoordenboek en zaadwaardewoordenboekgegevens opslaat
 
-   De `modifySignatureField` methode retourneert een `com.adobe.idp.Document` object waarin een PDF-document is opgeslagen dat het gewijzigde handtekeningveld bevat.
+   De methode `modifySignatureField` retourneert een `com.adobe.idp.Document`-object waarin een PDF-document is opgeslagen dat het gewijzigde handtekeningveld bevat.
 
 1. Het PDF-document opslaan als een PDF-bestand
 
-   * Maak een `java.io.File` object en zorg dat de bestandsnaamextensie .pdf is.
-   * Roep de `com.adobe.idp.Document` methode van het `copyToFile` object aan om de inhoud van het `com.adobe.idp.Document` object naar het bestand te kopiëren. Zorg ervoor dat u het `com.adobe.idp.Document` object gebruikt dat de `modifySignatureField` methode heeft geretourneerd.
+   * Maak een `java.io.File`-object en zorg dat de bestandsnaamextensie .pdf is.
+   * Roep de methode `com.adobe.idp.Document` van het object `copyToFile` aan om de inhoud van het object `com.adobe.idp.Document` naar het bestand te kopiëren. Zorg ervoor dat u het `com.adobe.idp.Document` voorwerp gebruikt dat de `modifySignatureField` methode terugkeerde.
 
-### Handtekeningvelden wijzigen met de webservice-API {#modify-signature-fields-using-the-web-service-api}
+### Handtekeningvelden wijzigen met de API {#modify-signature-fields-using-the-web-service-api} van de webservice
 
 Wijzig een handtekeningveld met de handtekening-API (webservice):
 
@@ -491,59 +491,59 @@ Wijzig een handtekeningveld met de handtekening-API (webservice):
 
    >[!NOTE]
    >
-   >Vervangen `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
+   >Vervang `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
 
 1. Een handtekeningclient maken
 
-   * Maak een `SignatureServiceClient` object met de standaardconstructor.
-   * Maak een `SignatureServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde door die de WSDL opgeeft voor de service AEM Forms (bijvoorbeeld `http://localhost:8080/soap/services/SignatureService?WSDL`). U hoeft het `lc_version` kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
-   * Maak een `System.ServiceModel.BasicHttpBinding` object door de waarde van het `SignatureServiceClient.Endpoint.Binding` veld op te halen. Kiezen naar de geretourneerde waarde `BasicHttpBinding`.
-   * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
+   * Maak een `SignatureServiceClient`-object met de standaardconstructor.
+   * Maak een `SignatureServiceClient.Endpoint.Address`-object met de constructor `System.ServiceModel.EndpointAddress`. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/SignatureService?WSDL`). U hoeft het `lc_version`-kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
+   * Maak een `System.ServiceModel.BasicHttpBinding`-object door de waarde van het veld `SignatureServiceClient.Endpoint.Binding` op te halen. Cast de terugkeerwaarde aan `BasicHttpBinding`.
+   * Stel het veld `System.ServiceModel.BasicHttpBinding` van het object `MessageEncoding` in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor AEM-formulieren toe aan het veld `SignatureServiceClient.ClientCredentials.UserName.UserName`.
-      * Wijs de bijbehorende wachtwoordwaarde aan het veld toe `SignatureServiceClient.ClientCredentials.UserName.Password`.
-      * Wijs de constante waarde toe `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Wijs de constante waarde toe `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode`.
+      * Wijs de gebruikersnaam voor het AEM aan het veld `SignatureServiceClient.ClientCredentials.UserName.UserName` toe.
+      * Wijs de overeenkomstige wachtwoordwaarde aan het gebied `SignatureServiceClient.ClientCredentials.UserName.Password` toe.
+      * Wijs de constante waarde `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType` toe.
+      * Wijs de constante waarde `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode` toe.
 
 1. Het PDF-document ophalen dat het handtekeningveld bevat dat moet worden gewijzigd
 
-   * Maak een `BLOB` object met de constructor ervan. Het `BLOB` object wordt gebruikt om het PDF-document op te slaan dat het handtekeningveld bevat dat moet worden gewijzigd.
-   * Maak een `System.IO.FileStream` object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het PDF-document en de modus waarin het bestand moet worden geopend, vertegenwoordigt.
-   * Maak een bytearray waarin de inhoud van het `System.IO.FileStream` object wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de `System.IO.FileStream` eigenschap van het `Length` object op te halen.
-   * Vul de bytearray met streamgegevens door de methode van het `System.IO.FileStream` `Read` object aan te roepen en de bytearray, de startpositie en de lengte van de stream door te geven om te lezen.
-   * Vul het `BLOB` object door de `MTOM` eigenschap ervan toe te wijzen aan de inhoud van de bytearray.
+   * Maak een `BLOB`-object met de constructor ervan. Met het object `BLOB` wordt het PDF-document opgeslagen dat het handtekeningveld bevat dat moet worden gewijzigd.
+   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het PDF-document en de modus waarin het bestand moet worden geopend, vertegenwoordigt.
+   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `System.IO.FileStream` van het object `Length` op te halen.
+   * Vul de bytearray met streamgegevens door de methode `Read` van het object `System.IO.FileStream` aan te roepen en de bytearray, de startpositie en de lengte van de stream door te geven om te lezen.
+   * Vul het object `BLOB` door de eigenschap `MTOM` van het object toe te wijzen aan de inhoud van de bytearray.
 
 1. Woordenboekwaarden instellen
 
-   * Maak een `PDFSignatureFieldProperties` object met de constructor ervan. In dit object worden het handtekeningveldvergrendelingswoordenboek en de zaadwaardewoordenboekgegevens opgeslagen.
-   * Maak een `PDFSeedValueOptionSpec` object met de constructor ervan. Met dit object kunt u woordenboekwaarden voor zaadwaarden instellen.
-   * Wijs wijzigingen in het PDF-document niet toe door de `MDPPermissions.NoChanges` opsommingswaarde toe te wijzen aan het `PDFSeedValueOptionSpec` gegevenslid van het object `mdpValue` .
-   * Maak een `FieldMDPOptionSpec` object met de constructor ervan. Met dit object kunt u woordenboekwaarden voor handtekeningveldvergrendeling instellen.
-   * Vergrendel alle velden in het PDF-document door de `FieldMDPAction.ALL` opsommingswaarde toe te wijzen aan het `FieldMDPOptionSpec` gegevenslid van het `mdpValue` object.
-   * Stel zaadwaardewoordenboekgegevens in door het `PDFSeedValueOptionSpec` object toe te wijzen aan het `PDFSignatureFieldProperties` gegevenslid van het `seedValue` object.
-   * Stel de vergrendelingswoordenboekgegevens voor handtekeningvelden in door het `FieldMDPOptionSpec` object toe te wijzen aan het `PDFSignatureFieldProperties` gegevenslid van het `fieldMDP` object.
+   * Maak een `PDFSignatureFieldProperties`-object met de constructor ervan. In dit object worden het handtekeningveldvergrendelingswoordenboek en de zaadwaardewoordenboekgegevens opgeslagen.
+   * Maak een `PDFSeedValueOptionSpec`-object met de constructor ervan. Met dit object kunt u woordenboekwaarden voor zaadwaarden instellen.
+   * Wijzigingen in het PDF-document niet toestaan door de opsommingswaarde `MDPPermissions.NoChanges` toe te wijzen aan het `PDFSeedValueOptionSpec`-gegevenslid van het `mdpValue`-object.
+   * Maak een `FieldMDPOptionSpec`-object met de constructor ervan. Met dit object kunt u woordenboekwaarden voor handtekeningveldvergrendeling instellen.
+   * Vergrendel alle velden in het PDF-document door de `FieldMDPAction.ALL`-opsommingswaarde toe te wijzen aan het `FieldMDPOptionSpec`-gegevenslid van het `mdpValue`-object.
+   * Stel zaadwaardewoordenboekgegevens in door het `PDFSeedValueOptionSpec`-object toe te wijzen aan het `PDFSignatureFieldProperties`-gegevenslid van het `seedValue`-object.
+   * Stel de vergrendelingswoordenboekgegevens voor handtekeningvelden in door het `FieldMDPOptionSpec`-object toe te wijzen aan het `PDFSignatureFieldProperties`-gegevenslid van het `fieldMDP`-object.
 
    >[!NOTE]
    >
-   >Zie de `PDFSeedValueOptionSpec` klasseverwijzing voor een overzicht van alle waarden in het zaadwaardewoordenboek die u kunt instellen. (Zie [AEM Forms API-naslaggids](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)).
+   >Zie de klasseverwijzing `PDFSeedValueOptionSpec` als u alle waarden van het zaadwaardewoordenboek wilt zien die u kunt instellen. (Zie [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)).
 
 1. Het handtekeningveld wijzigen
 
-   Wijzig het handtekeningveld door de methode van het `SignatureServiceClient` `modifySignatureField` object aan te roepen en de volgende waarden door te geven:
+   Wijzig het handtekeningveld door de methode `modifySignatureField` van het object `SignatureServiceClient` aan te roepen en de volgende waarden door te geven:
 
-   * Het `BLOB` object waarin het PDF-document is opgeslagen dat het te wijzigen handtekeningveld bevat
+   * Het `BLOB`-object waarin het PDF-document is opgeslagen dat het te wijzigen handtekeningveld bevat
    * Een tekenreekswaarde die de naam van het handtekeningveld opgeeft
-   * Het `PDFSignatureFieldProperties` object waarin het handtekeningveldvergrendelingswoordenboek en de zaadwaardewoordenboekgegevens zijn opgeslagen
+   * Het `PDFSignatureFieldProperties`-object dat het handtekeningveld vergrendelingswoordenboek en zaadwaardewoordenboekgegevens opslaat
 
-   De `modifySignatureField` methode retourneert een `BLOB` object waarin een PDF-document is opgeslagen dat het gewijzigde handtekeningveld bevat.
+   De methode `modifySignatureField` retourneert een `BLOB`-object waarin een PDF-document is opgeslagen dat het gewijzigde handtekeningveld bevat.
 
 1. Het PDF-document opslaan als een PDF-bestand
 
-   * Maak een `System.IO.FileStream` object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie vertegenwoordigt van het PDF-document dat het handtekeningveld zal bevatten, en de modus waarin het bestand moet worden geopend.
-   * Maak een bytearray waarin de inhoud wordt opgeslagen van het `BLOB` object dat door de `addSignatureField` methode wordt geretourneerd. Vul de bytearray met de waarde van het `BLOB` `MTOM` gegevenslid van het object.
-   * Maak een `System.IO.BinaryWriter` object door de constructor ervan aan te roepen en het `System.IO.FileStream` object door te geven.
-   * Schrijf de inhoud van de bytearray naar een PDF-bestand door de methode van het `System.IO.BinaryWriter` `Write` object aan te roepen en de bytearray door te geven.
+   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie vertegenwoordigt van het PDF-document dat het handtekeningveld zal bevatten, en de modus waarin het bestand moet worden geopend.
+   * Maak een bytearray waarin de inhoud wordt opgeslagen van het `BLOB`-object dat door de methode `addSignatureField` wordt geretourneerd. Vul de bytearray met de waarde van het `BLOB`-gegevenslid van het object `MTOM`.
+   * Maak een `System.IO.BinaryWriter`-object door de constructor ervan aan te roepen en het object `System.IO.FileStream` door te geven.
+   * Schrijf de inhoud van de bytearray naar een PDF-bestand door de methode `Write` van het object `System.IO.BinaryWriter` aan te roepen en de bytearray door te geven.
 
 **Zie ook**
 
@@ -561,7 +561,7 @@ PDF-documenten worden ondertekend met behulp van openbare-sleuteltechnologie. Ee
 >
 >Voordat u een PDF-document digitaal kunt ondertekenen, moet u ervoor zorgen dat u het certificaat aan AEM Forms toevoegt. Een certificaat wordt toegevoegd gebruikend beleidsconsole of programmatically gebruikend de Manager API van het Vertrouwen. (Zie [Referenties importeren met de Betrouwbaarheidsbeheer-API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api).)
 
-U kunt PDF-documenten programmatisch digitaal ondertekenen. Als u een PDF-document digitaal ondertekent, moet u verwijzen naar een beveiligingsreferentie in de AEM Forms. De referentie is de persoonlijke sleutel die wordt gebruikt voor ondertekening.
+U kunt PDF-documenten programmatisch digitaal ondertekenen. Als u een PDF-document digitaal ondertekent, moet u verwijzen naar een beveiligingsreferentie in AEM Forms. De referentie is de persoonlijke sleutel die wordt gebruikt voor ondertekening.
 
 De service Handtekening voert de volgende stappen uit wanneer een PDF-document wordt ondertekend:
 
@@ -569,23 +569,23 @@ De service Handtekening voert de volgende stappen uit wanneer een PDF-document w
 1. De Truststore zoekt naar de opgegeven referentie.
 1. De referentie wordt geretourneerd aan de service Handtekening en wordt gebruikt om het document te ondertekenen. De referentie wordt ook in de cache geplaatst bij de alias voor toekomstige aanvragen.
 
-Voor informatie over de behandeling van de veiligheidsreferentie, zie de *Installeren en het Opstellen van AEM Forms* gids voor uw toepassingsserver.
+Zie de handleiding *AEM Forms* voor uw toepassingsserver installeren en implementeren voor informatie over de verwerking van de beveiligingsreferentie.
 
 >[!NOTE]
 >
->Er zijn verschillen tussen ondertekenings- en certificeringsdocumenten. (Zie PDF-documenten [certificeren](digitally-signing-certifying-documents.md#certifying-pdf-documents).)
+>Er zijn verschillen tussen ondertekenings- en certificeringsdocumenten. (Zie [PDF-documenten certificeren](digitally-signing-certifying-documents.md#certifying-pdf-documents).)
 
 >[!NOTE]
 >
->Niet alle PDF-documenten ondersteunen ondertekening. Voor meer informatie over de dienst van de Handtekening en digitaal het ondertekenen van documenten, zie de Verwijzing van de [Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Niet alle PDF-documenten ondersteunen ondertekening. Zie [Referentiehandleiding voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63) voor meer informatie over de service Handtekening en het digitaal ondertekenen van documenten.
 
 >[!NOTE]
 >
->De handtekeningservice ondersteunt geen XDP-bestanden met ingesloten PDF-gegevens als invoer voor een bewerking, zoals het certificeren van een document. Deze actie resulteert in de dienst van de Handtekening die een `PDFOperationException`. U lost dit probleem op door het XDP-bestand met de service PDF-hulpprogramma&#39;s naar een PDF-bestand te converteren en het geconverteerde PDF-bestand vervolgens door te geven aan de handtekeningenservice. (Zie [Werken met PDF-hulpprogramma](/help/forms/developing/pdf-utilities.md#working-with-pdf-utilities)&#39;s.)
+>De handtekeningservice ondersteunt geen XDP-bestanden met ingesloten PDF-gegevens als invoer voor een bewerking, zoals het certificeren van een document. Deze actie resulteert in de dienst van de Handtekening die `PDFOperationException` werpt. U lost dit probleem op door het XDP-bestand met de service PDF-hulpprogramma&#39;s naar een PDF-bestand te converteren en het geconverteerde PDF-bestand vervolgens door te geven aan de handtekeningenservice. (Zie [Werken met PDF-hulpprogramma&#39;s](/help/forms/developing/pdf-utilities.md#working-with-pdf-utilities).)
 
 **Kipher nShield HSM-referentie**
 
-Wanneer u een Cipher nShield HSM-referentie gebruikt om een PDF-document te ondertekenen of certificeren, kan de nieuwe referentie pas worden gebruikt als de J2EE-toepassingsserver waarop de AEM Forms worden geïmplementeerd, opnieuw is gestart. U kunt echter een configuratiewaarde instellen, wat resulteert in het ondertekenen of certificeren van de bewerking zonder de J2EE-toepassingsserver opnieuw te starten.
+Als u een Cipher nShield HSM-referentie gebruikt om een PDF-document te ondertekenen of certificeren, kan de nieuwe referentie pas worden gebruikt als de J2EE-toepassingsserver waarop AEM Forms is geïmplementeerd, opnieuw is gestart. U kunt echter een configuratiewaarde instellen, wat resulteert in het ondertekenen of certificeren van de bewerking zonder de J2EE-toepassingsserver opnieuw te starten.
 
 U kunt de volgende configuratiewaarde toevoegen in het cknfastrc-bestand, dat zich bevindt op /opt/nfast/cknfastrc (of c:\nfast\cknfastrc):
 
@@ -601,12 +601,12 @@ Als bij het certificeren en ondertekenen van hetzelfde PDF-document de handteken
 
 **Documenten ondertekenen die op XFA gebaseerde formulieren zijn**
 
-Als u probeert een XFA-formulier te ondertekenen met de API van de handtekeningenservice, ontbreken de gegevens mogelijk in het `View``Signed` `Version` bestand in Acrobat. Neem bijvoorbeeld de volgende workflow:
+Als u een XFA-formulier probeert te ondertekenen met de API voor de handtekeningenservice, ontbreken de gegevens mogelijk in de `View` `Signed` `Version` in Acrobat. Neem bijvoorbeeld de volgende workflow:
 
-* Met behulp van een XDP-bestand dat is gemaakt met Designer, voegt u een formulierontwerp samen dat een handtekeningveld en XML-gegevens bevat die formuliergegevens bevatten. Met de service Forms kunt u een interactief PDF-document genereren.
+* Met behulp van een XDP-bestand dat is gemaakt met Designer, voegt u een formulierontwerp samen dat een handtekeningveld en XML-gegevens bevat die formuliergegevens bevatten. Met de Forms-service kunt u een interactief PDF-document genereren.
 * U ondertekent het PDF-document met de API van de handtekeningenservice.
 
-### Overzicht van de stappen {#summary_of_steps-3}
+### Overzicht van stappen {#summary_of_steps-3}
 
 Voer de volgende taken uit om een PDF-document digitaal te ondertekenen:
 
@@ -625,8 +625,8 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-signatures-client.jar
-* adobe-utilities.jar (vereist als AEM Forms worden geïmplementeerd op JBoss)
-* jbossall-client.jar (vereist als AEM Forms worden geïmplementeerd op JBoss)
+* adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
+* jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
 
 **Een handtekeningclient maken**
 
@@ -644,7 +644,7 @@ Bij het ondertekenen van een PDF-document kunt u uitvoeringsopties instellen die
 * Intrekkingscontrole
 * Waarden voor tijdstempels
 
-U stelt vormgevingsopties in met een `PDFSignatureAppearanceOptionSpec` object. U kunt bijvoorbeeld de datum binnen een handtekening weergeven door de methode van het `PDFSignatureAppearanceOptionSpec` object aan te roepen en door te geven `setShowDate` `true`.
+U stelt vormgevingsopties in met een object `PDFSignatureAppearanceOptionSpec`. U kunt bijvoorbeeld de datum binnen een handtekening weergeven door de methode `setShowDate` van het object `PDFSignatureAppearanceOptionSpec` aan te roepen en `true` door te geven.
 
 U kunt ook opgeven of een intrekkingscontrole moet worden uitgevoerd die bepaalt of het certificaat dat wordt gebruikt om een PDF-document digitaal te ondertekenen, is ingetrokken. Als u de intrekkingscontrole wilt uitvoeren, kunt u een van de volgende waarden opgeven:
 
@@ -653,19 +653,19 @@ U kunt ook opgeven of een intrekkingscontrole moet worden uitgevoerd die bepaalt
 * **CheckIfAvailable:** Controleer of alle certificaten in de keten zijn ingetrokken als er informatie over intrekking beschikbaar is. Als er problemen optreden bij de controle, wordt aangenomen dat de intrekking ongeldig is. Als er een fout optreedt, gaat u ervan uit dat het certificaat is ingetrokken en ongeldig is. (Dit is de standaardwaarde.)
 * **AltijdControleren**: Controleren op intrekking van alle certificaten in de keten. Als er geen intrekkingsinformatie aanwezig is in een certificaat, wordt aangenomen dat de intrekking ongeldig is.
 
-Als u de intrekkingscontrole op een certificaat wilt uitvoeren, kunt u een URL naar een server met een certificaatintrekkingslijst (CRL) opgeven met een `CRLOptionSpec` object. Als u echter een intrekkingscontrole wilt uitvoeren en u geen URL opgeeft naar een CRL-server, verkrijgt de ondertekeningsservice de URL van het certificaat.
+Als u de intrekkingscontrole op een certificaat wilt uitvoeren, kunt u een URL naar een server met een certificaatintrekkingslijst (CRL) opgeven met een object `CRLOptionSpec`. Als u echter een intrekkingscontrole wilt uitvoeren en u geen URL opgeeft naar een CRL-server, verkrijgt de ondertekeningsservice de URL van het certificaat.
 
 In plaats van een CRL-server te gebruiken, kunt u een OCSP-server (online certificate Status Protocol) gebruiken bij het controleren van intrekkingen. Doorgaans wordt de intrekkingscontrole sneller uitgevoerd wanneer een OCSP-server wordt gebruikt in tegenstelling tot een CRL-server. (Zie &quot;Online Certificate Status Protocol&quot; op [https://tools.ietf.org/html/rfc2560](https://tools.ietf.org/html/rfc2560).)
 
-U kunt de CRL- en OCSP-servervolgorde instellen die de handtekeningservice gebruikt met Adobe-toepassingen en -services. Als de OCSP-server bijvoorbeeld eerst is ingesteld in Adobe-toepassingen en -services, wordt de OCSP-server gecontroleerd, gevolgd door de CRL-server. (Zie &quot;Certificaten en gegevens beheren met Betrouwbaarheidsopslag&quot; in de Help van AAC).
+U kunt de de serverorde plaatsen CRL en OCSP die de dienst van de Handtekening gebruikend de Toepassingen en de Diensten van Adobe gebruikt. Bijvoorbeeld, als de OCSP server eerst in de Toepassingen en de Diensten van Adobe wordt geplaatst, dan wordt de server OCSP gecontroleerd, die door de server CRL wordt gevolgd. (Zie &quot;Certificaten en gegevens beheren met Betrouwbaarheidsopslag&quot; in de Help van AAC).
 
 Als u opgeeft dat u de intrekkingscontrole niet wilt uitvoeren, controleert de service Handtekening niet of het certificaat dat is gebruikt om een document te ondertekenen of te certificeren, is ingetrokken. Dat wil zeggen dat CRL- en OCSP-serverinformatie wordt genegeerd.
 
 >[!NOTE]
 >
->Hoewel een CRL of een OCSP server in het certificaat kunnen worden gespecificeerd, kunt u URL met voeten treden die in het certificaat door een `CRLOptionSpec` en een `OCSPOptionSpec` voorwerp wordt gespecificeerd. Als u bijvoorbeeld de CRL-server wilt overschrijven, kunt u de `CRLOptionSpec` methode van het `setLocalURI` object aanroepen.
+>Hoewel een CRL of een OCSP server in het certificaat kunnen worden gespecificeerd, kunt u URL met voeten treden in het certificaat door een `CRLOptionSpec` en een `OCSPOptionSpec` voorwerp te gebruiken. Als u bijvoorbeeld de CRL-server wilt overschrijven, kunt u de methode `setLocalURI` van het object `CRLOptionSpec` aanroepen.
 
-Tijdstempel verwijst naar het proces waarbij de tijd wordt bijgehouden waarop een ondertekend of gecertificeerd document is gewijzigd. Nadat een document is ondertekend, mag het niet meer worden gewijzigd, zelfs niet door de eigenaar van het document. Met tijdstempels kunt u de geldigheid van een ondertekend of gecertificeerd document afdwingen. U kunt opties voor tijdstempels instellen met behulp van een `TSPOptionSpec` object. U kunt bijvoorbeeld de URL van een server met een tijdstempelprovider (TSP) opgeven.
+Tijdstempel verwijst naar het proces waarbij de tijd wordt bijgehouden waarop een ondertekend of gecertificeerd document is gewijzigd. Nadat een document is ondertekend, mag het niet meer worden gewijzigd, zelfs niet door de eigenaar van het document. Met tijdstempels kunt u de geldigheid van een ondertekend of gecertificeerd document afdwingen. U kunt opties voor tijdstempeling instellen met een object `TSPOptionSpec`. U kunt bijvoorbeeld de URL van een server met een tijdstempelprovider (TSP) opgeven.
 
 >[!NOTE]
 >
@@ -673,7 +673,7 @@ Tijdstempel verwijst naar het proces waarbij de tijd wordt bijgehouden waarop ee
 
 Als u een PDF-document wilt ondertekenen, kunt u de volledig gekwalificeerde naam opgeven van het handtekeningveld dat de digitale handtekening zal bevatten, zoals `form1[0].#subform[1].SignatureField3[3]`. Bij gebruik van een XFA-formulierveld kan ook de gedeeltelijke naam van het handtekeningveld worden gebruikt: `SignatureField3[3]`.
 
-U moet ook verwijzen naar een beveiligingsreferentie om een PDF-document digitaal te ondertekenen. Als u naar een beveiligingsreferentie wilt verwijzen, geeft u een alias op. De alias is een verwijzing naar een werkelijke referentie die kan voorkomen in een PKCS#12-bestand (met de extensie .pfx) of een hardwarebeveiligingsmodule (HSM). Voor informatie over de veiligheidsreferentie, zie de *Installeren en het Opstellen van AEM Forms* gids voor uw toepassingsserver.
+U moet ook verwijzen naar een beveiligingsreferentie om een PDF-document digitaal te ondertekenen. Als u naar een beveiligingsreferentie wilt verwijzen, geeft u een alias op. De alias is een verwijzing naar een werkelijke referentie die kan voorkomen in een PKCS#12-bestand (met de extensie .pfx) of een hardwarebeveiligingsmodule (HSM). Zie de handleiding *AEM Forms* installeren en implementeren voor uw toepassingsserver voor meer informatie over de beveiligingsreferentie.
 
 **Het ondertekende PDF-document opslaan**
 
@@ -703,36 +703,36 @@ Een PDF-document digitaal ondertekenen met de handtekening-API (Java):
 
 1. Een handtekeningclient maken
 
-   * Maak een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
-   * Maak een `SignatureServiceClient` object door de constructor ervan te gebruiken en het `ServiceClientFactory` object door te geven.
+   * Maak een `ServiceClientFactory`-object dat verbindingseigenschappen bevat.
+   * Maak een `SignatureServiceClient`-object door de constructor ervan te gebruiken en het object `ServiceClientFactory` door te geven.
 
 1. Het PDF-document laten ondertekenen
 
-   * Maak een `java.io.FileInputStream` object dat staat voor het PDF-document dat u digitaal wilt ondertekenen met de constructor ervan en geef een tekenreekswaarde door die de locatie van het PDF-document aangeeft.
-   * Maak een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en het `java.io.FileInputStream` object door te geven.
+   * Maak een `java.io.FileInputStream`-object dat het PDF-document vertegenwoordigt dat digitaal moet worden ondertekend met de constructor ervan en geef een tekenreekswaarde door die de locatie van het PDF-document aangeeft.
+   * Maak een `com.adobe.idp.Document`-object door de constructor ervan te gebruiken en het object `java.io.FileInputStream` door te geven.
 
 1. Het PDF-document ondertekenen
 
-   Onderteken het PDF-document door de methode van het `SignatureServiceClient` `sign` object aan te roepen en de volgende waarden door te geven:
+   Onderteken het PDF-document door de methode `SignatureServiceClient` van het object `sign` aan te roepen en de volgende waarden door te geven:
 
-   * Een `com.adobe.idp.Document` object dat staat voor het PDF-document dat moet worden ondertekend.
+   * Een `com.adobe.idp.Document`-object dat het te ondertekenen PDF-document vertegenwoordigt.
    * Een tekenreekswaarde die de naam vertegenwoordigt van het handtekeningveld dat de digitale handtekening zal bevatten.
-   * Een `Credential` object dat de referentie vertegenwoordigt die wordt gebruikt om het PDF-document digitaal te ondertekenen. Maak een `Credential` object door de statische `Credential` methode van het `getInstance` object aan te roepen en een tekenreekswaarde door te geven die de aliaswaarde opgeeft die overeenkomt met de beveiligingsreferentie.
-   * Een `HashAlgorithm` object dat een statisch gegevenslid opgeeft dat het hash-algoritme vertegenwoordigt dat moet worden gebruikt om het PDF-document te digest. U kunt bijvoorbeeld opgeven of u het algoritme SHA1 wilt gebruiken. `HashAlgorithm.SHA1`
+   * Een object `Credential` dat de referentie vertegenwoordigt die wordt gebruikt om het PDF-document digitaal te ondertekenen. Maak een `Credential`-object door de statische methode `getInstance` van het object aan te roepen en een tekenreekswaarde door te geven die de aliaswaarde opgeeft die overeenkomt met de beveiligingsreferentie.`Credential`
+   * Een `HashAlgorithm`-object dat een lid van een statisch gegevenselement opgeeft dat het hash-algoritme vertegenwoordigt dat moet worden gebruikt om het PDF-document te digest. U kunt bijvoorbeeld `HashAlgorithm.SHA1` opgeven om het algoritme SHA1 te gebruiken.
    * Een tekenreekswaarde die de reden vertegenwoordigt waarom het PDF-document digitaal is ondertekend.
    * Een tekenreekswaarde die de contactgegevens van de ondertekenaar vertegenwoordigt.
-   * Een `PDFSignatureAppearanceOptions` object dat de weergave van de digitale handtekening bepaalt. U kunt dit object bijvoorbeeld gebruiken om een aangepast logo toe te voegen aan een digitale handtekening.
-   * Een `java.lang.Boolean` object dat aangeeft of de intrekkingscontrole moet worden uitgevoerd op het certificaat van de ondertekenaar.
-   * Een `OCSPOptionSpec` object dat voorkeuren voor ondersteuning van het online certificaatstatusprotocol (OCSP) opslaat. Als de intrekkingscontrole niet wordt uitgevoerd, wordt deze parameter niet gebruikt en kunt u opgeven `null`.
-   * Een `CRLPreferences` object waarin voorkeuren voor certificaatintrekkingslijsten (CRL) zijn opgeslagen. Als de intrekkingscontrole niet wordt uitgevoerd, wordt deze parameter niet gebruikt en kunt u opgeven `null`.
-   * Een `TSPPreferences` object dat voorkeuren voor ondersteuning van een tijdstempelprovider (TSP) opslaat. Deze parameter is optioneel en kan worden `null`gebruikt. Zie [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)voor meer informatie.
+   * Een `PDFSignatureAppearanceOptions`-object dat de weergave van de digitale handtekening bepaalt. U kunt dit object bijvoorbeeld gebruiken om een aangepast logo toe te voegen aan een digitale handtekening.
+   * Een `java.lang.Boolean`-object dat aangeeft of een intrekkingscontrole moet worden uitgevoerd op het certificaat van de ondertekenaar.
+   * Een `OCSPOptionSpec`-object dat voorkeuren voor ondersteuning van het online certificaatstatusprotocol (OCSP) opslaat. Als de intrekkingscontrole niet wordt uitgevoerd, wordt deze parameter niet gebruikt en kunt u `null` opgeven.
+   * Een object `CRLPreferences` dat voorkeuren voor certificaatintrekkingslijsten (CRL) opslaat. Als de intrekkingscontrole niet wordt uitgevoerd, wordt deze parameter niet gebruikt en kunt u `null` opgeven.
+   * Een object `TSPPreferences` dat voorkeuren voor ondersteuning voor tijdstempelprovider (TSP) opslaat. Deze parameter is optioneel en kan `null` zijn. Zie [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en) voor meer informatie.
 
-   De `sign` methode retourneert een `com.adobe.idp.Document` object dat het ondertekende PDF-document vertegenwoordigt.
+   De methode `sign` retourneert een `com.adobe.idp.Document`-object dat het ondertekende PDF-document vertegenwoordigt.
 
 1. Het ondertekende PDF-document opslaan
 
-   * Maak een `java.io.File` object en zorg dat de bestandsextensie .pdf is.
-   * Roep de `com.adobe.idp.Document` methode van het `copyToFile` object aan en geef door `java.io.File`om de inhoud van het `Document` object naar het bestand te kopiëren. Zorg ervoor dat u het `com.adobe.idp.Document` object gebruikt dat door de `sign` methode is geretourneerd.
+   * Maak een `java.io.File`-object en controleer of de bestandsextensie .pdf is.
+   * Roep de methode `com.adobe.idp.Document` van het object `copyToFile` aan en geef `java.io.File`door om de inhoud van het object `Document` naar het bestand te kopiëren. Zorg ervoor dat u het `com.adobe.idp.Document` voorwerp gebruikt dat door de `sign` methode werd teruggekeerd.
 
 **Zie ook**
 
@@ -744,7 +744,7 @@ Een PDF-document digitaal ondertekenen met de handtekening-API (Java):
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### PDF-documenten digitaal ondertekenen met behulp van de webservice-API {#digitally-signing-pdf-documents-using-the-web-service-api}
+### PDF-documenten digitaal ondertekenen met de webservice-API {#digitally-signing-pdf-documents-using-the-web-service-api}
 
 Een PDF-document digitaal ondertekenen met de API voor handtekening (webservice):
 
@@ -754,55 +754,55 @@ Een PDF-document digitaal ondertekenen met de API voor handtekening (webservice)
 
    >[!NOTE]
    >
-   >Vervangen `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
+   >Vervang `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
 
 1. Een handtekeningclient maken
 
-   * Maak een `SignatureServiceClient` object met de standaardconstructor.
-   * Maak een `SignatureServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde door die de WSDL opgeeft voor de service AEM Forms (bijvoorbeeld `http://localhost:8080/soap/services/SignatureService?WSDL`). U hoeft het `lc_version` kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
-   * Maak een `System.ServiceModel.BasicHttpBinding` object door de waarde van het `SignatureServiceClient.Endpoint.Binding` veld op te halen. Kiezen naar de geretourneerde waarde `BasicHttpBinding`.
-   * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
+   * Maak een `SignatureServiceClient`-object met de standaardconstructor.
+   * Maak een `SignatureServiceClient.Endpoint.Address`-object met de constructor `System.ServiceModel.EndpointAddress`. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/SignatureService?WSDL`). U hoeft het `lc_version`-kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
+   * Maak een `System.ServiceModel.BasicHttpBinding`-object door de waarde van het veld `SignatureServiceClient.Endpoint.Binding` op te halen. Cast de terugkeerwaarde aan `BasicHttpBinding`.
+   * Stel het veld `System.ServiceModel.BasicHttpBinding` van het object `MessageEncoding` in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor AEM-formulieren toe aan het veld `SignatureServiceClient.ClientCredentials.UserName.UserName`.
-      * Wijs de bijbehorende wachtwoordwaarde aan het veld toe `SignatureServiceClient.ClientCredentials.UserName.Password`.
-      * Wijs de constante waarde toe `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Wijs de constante waarde toe `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode`.
+      * Wijs de gebruikersnaam voor het AEM aan het veld `SignatureServiceClient.ClientCredentials.UserName.UserName` toe.
+      * Wijs de overeenkomstige wachtwoordwaarde aan het gebied `SignatureServiceClient.ClientCredentials.UserName.Password` toe.
+      * Wijs de constante waarde `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType` toe.
+      * Wijs de constante waarde `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode` toe.
 
 1. Het PDF-document laten ondertekenen
 
-   * Maak een `BLOB` object met de constructor ervan. Met dit `BLOB` object wordt een ondertekend PDF-document opgeslagen.
-   * Maak een `System.IO.FileStream` object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie vertegenwoordigt van het PDF-document dat moet worden ondertekend, en de modus waarin het bestand moet worden geopend.
-   * Maak een bytearray waarin de inhoud van het `System.IO.FileStream` object wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de `System.IO.FileStream` eigenschap van het `Length` object op te halen.
-   * Vul de bytearray met streamgegevens door de methode van het `System.IO.FileStream` `Read` object aan te roepen en de bytearray, de startpositie en de lengte van de stream door te geven om te lezen.
-   * Vul het `BLOB` object door de `MTOM` eigenschap ervan toe te wijzen aan de inhoud van de bytearray.
+   * Maak een `BLOB`-object met de constructor ervan. Met het object `BLOB` wordt een ondertekend PDF-document opgeslagen.
+   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie vertegenwoordigt van het PDF-document dat moet worden ondertekend, en de modus waarin het bestand moet worden geopend.
+   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `System.IO.FileStream` van het object `Length` op te halen.
+   * Vul de bytearray met streamgegevens door de methode `Read` van het object `System.IO.FileStream` aan te roepen en de bytearray, de startpositie en de lengte van de stream door te geven om te lezen.
+   * Vul het object `BLOB` door de eigenschap `MTOM` van het object toe te wijzen aan de inhoud van de bytearray.
 
 1. Het PDF-document ondertekenen
 
-   Onderteken het PDF-document door de methode van het `SignatureServiceClient` `sign` object aan te roepen en de volgende waarden door te geven:
+   Onderteken het PDF-document door de methode `SignatureServiceClient` van het object `sign` aan te roepen en de volgende waarden door te geven:
 
-   * Een `BLOB` object dat staat voor het PDF-document dat moet worden ondertekend.
+   * Een `BLOB`-object dat het te ondertekenen PDF-document vertegenwoordigt.
    * Een tekenreekswaarde die de naam vertegenwoordigt van het handtekeningveld dat de digitale handtekening zal bevatten.
-   * Een `Credential` object dat de referentie vertegenwoordigt die wordt gebruikt om het PDF-document digitaal te ondertekenen. Maak een `Credential` object met behulp van de constructor en geef de alias op door een waarde toe te wijzen aan de `Credential` `alias` eigenschap van het object.
-   * Een `HashAlgorithm` object dat een statisch gegevenslid opgeeft dat het hash-algoritme vertegenwoordigt dat moet worden gebruikt om het PDF-document te digest. U kunt bijvoorbeeld opgeven of u het algoritme SHA1 wilt gebruiken. `HashAlgorithm.SHA1`
+   * Een object `Credential` dat de referentie vertegenwoordigt die wordt gebruikt om het PDF-document digitaal te ondertekenen. Maak een `Credential`-object door de constructor ervan te gebruiken en geef de alias op door een waarde toe te wijzen aan de eigenschap `alias` van het object.`Credential`
+   * Een `HashAlgorithm`-object dat een lid van een statisch gegevenselement opgeeft dat het hash-algoritme vertegenwoordigt dat moet worden gebruikt om het PDF-document te digest. U kunt bijvoorbeeld `HashAlgorithm.SHA1` opgeven om het algoritme SHA1 te gebruiken.
    * Een Booleaanse waarde die opgeeft of het hash-algoritme wordt gebruikt.
    * Een tekenreekswaarde die de reden vertegenwoordigt waarom het PDF-document digitaal is ondertekend.
    * Een tekenreekswaarde die de locatie van de ondertekenaar vertegenwoordigt.
    * Een tekenreekswaarde die de contactgegevens van de ondertekenaar vertegenwoordigt.
-   * Een `PDFSignatureAppearanceOptions` object dat de weergave van de digitale handtekening bepaalt. U kunt dit object bijvoorbeeld gebruiken om een aangepast logo toe te voegen aan een digitale handtekening.
-   * Een `System.Boolean` object dat aangeeft of de intrekkingscontrole moet worden uitgevoerd op het certificaat van de ondertekenaar. Als deze intrekkingscontrole is uitgevoerd, wordt deze ingesloten in de handtekening. The default is `false`.
-   * Een `OCSPOptionSpec` object dat voorkeuren voor ondersteuning van het online certificaatstatusprotocol (OCSP) opslaat. Als de intrekkingscontrole niet wordt uitgevoerd, wordt deze parameter niet gebruikt en kunt u opgeven `null`. Zie [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)voor meer informatie over dit object.
-   * Een `CRLPreferences` object waarin voorkeuren voor certificaatintrekkingslijsten (CRL) zijn opgeslagen. Als de intrekkingscontrole niet wordt uitgevoerd, wordt deze parameter niet gebruikt en kunt u opgeven `null`.
-   * Een `TSPPreferences` object dat voorkeuren voor ondersteuning van een tijdstempelprovider (TSP) opslaat. Deze parameter is optioneel en kan worden `null`gebruikt.
+   * Een `PDFSignatureAppearanceOptions`-object dat de weergave van de digitale handtekening bepaalt. U kunt dit object bijvoorbeeld gebruiken om een aangepast logo toe te voegen aan een digitale handtekening.
+   * Een `System.Boolean`-object dat aangeeft of een intrekkingscontrole moet worden uitgevoerd op het certificaat van de ondertekenaar. Als deze intrekkingscontrole is uitgevoerd, wordt deze ingesloten in de handtekening. De standaardwaarde is `false`.
+   * Een `OCSPOptionSpec`-object dat voorkeuren voor ondersteuning van het online certificaatstatusprotocol (OCSP) opslaat. Als de intrekkingscontrole niet wordt uitgevoerd, wordt deze parameter niet gebruikt en kunt u `null` opgeven. Zie [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en) voor informatie over dit object.
+   * Een object `CRLPreferences` dat voorkeuren voor certificaatintrekkingslijsten (CRL) opslaat. Als de intrekkingscontrole niet wordt uitgevoerd, wordt deze parameter niet gebruikt en kunt u `null` opgeven.
+   * Een object `TSPPreferences` dat voorkeuren voor ondersteuning voor tijdstempelprovider (TSP) opslaat. Deze parameter is optioneel en kan `null` zijn.
 
-   De `sign` methode retourneert een `BLOB` object dat het ondertekende PDF-document vertegenwoordigt.
+   De methode `sign` retourneert een `BLOB`-object dat het ondertekende PDF-document vertegenwoordigt.
 
 1. Het ondertekende PDF-document opslaan
 
-   * Maak een `System.IO.FileStream` object door de constructor ervan aan te roepen. Geef een tekenreekswaarde door die staat voor de bestandslocatie van het ondertekende PDF-document en de modus waarin het bestand moet worden geopend.
-   * Maak een bytearray waarin de inhoud wordt opgeslagen van het `BLOB` object dat door de `sign` methode is geretourneerd. Vul de bytearray met de waarde van het `BLOB` `MTOM` gegevenslid van het object.
-   * Maak een `System.IO.BinaryWriter` object door de constructor ervan aan te roepen en het `System.IO.FileStream` object door te geven.
-   * Schrijf de inhoud van de bytearray naar een PDF-bestand door de methode van het `System.IO.BinaryWriter` `Write` object aan te roepen en de bytearray door te geven.
+   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen. Geef een tekenreekswaarde door die staat voor de bestandslocatie van het ondertekende PDF-document en de modus waarin het bestand moet worden geopend.
+   * Maak een bytearray waarin de inhoud wordt opgeslagen van het object `BLOB` dat door de methode `sign` is geretourneerd. Vul de bytearray met de waarde van het `BLOB`-gegevenslid van het object `MTOM`.
+   * Maak een `System.IO.BinaryWriter`-object door de constructor ervan aan te roepen en het object `System.IO.FileStream` door te geven.
+   * Schrijf de inhoud van de bytearray naar een PDF-bestand door de methode `Write` van het object `System.IO.BinaryWriter` aan te roepen en de bytearray door te geven.
 
 **Zie ook**
 
@@ -812,32 +812,32 @@ Een PDF-document digitaal ondertekenen met de API voor handtekening (webservice)
 
 [AEM Forms aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
-## Interactieve formulieren digitaal ondertekenen {#digitally-signing-interactive-forms}
+## Interactieve Forms digitaal ondertekenen {#digitally-signing-interactive-forms}
 
-U kunt een interactief formulier ondertekenen dat door de service Forms wordt gemaakt. Neem bijvoorbeeld de volgende workflow:
+U kunt een interactief formulier ondertekenen dat door de Forms-service wordt gemaakt. Neem bijvoorbeeld de volgende workflow:
 
-* U voegt een PDF-formulier op basis van XFA samen dat is gemaakt met Designer en formuliergegevens die zich in een XML-document bevinden met de service Forms. Op de Forms-server wordt een interactief formulier gegenereerd.
+* U voegt een op XFA gebaseerd PDF-formulier dat is gemaakt met Designer samen met formuliergegevens die zich in een XML-document bevinden met de Forms-service. Op de Forms-server wordt een interactief formulier weergegeven.
 * U ondertekent het interactieve formulier met de API van de handtekeningenservice.
 
-Het resultaat is een digitaal ondertekend interactief PDF-formulier. Wanneer u een PDF-formulier ondertekent dat is gebaseerd op een XFA-formulier, moet u ervoor zorgen dat u het PDF-bestand opslaat als een statisch Adobe PDF-formulier. Als u probeert een PDF-formulier te ondertekenen dat is opgeslagen als een Adobe Dynamic PDF-formulier, treedt een uitzondering op. Zorg ervoor dat het formulier een handtekeningveld bevat, omdat u het formulier ondertekent dat door de service Forms wordt geretourneerd.
+Het resultaat is een digitaal ondertekend interactief PDF-formulier. Wanneer u een PDF-formulier ondertekent dat is gebaseerd op een XFA-formulier, moet u ervoor zorgen dat u het PDF-bestand opslaat als een statisch PDF-formulier met Adobe. Als u probeert een PDF-formulier te ondertekenen dat is opgeslagen als een Adobe dynamisch PDF-formulier, treedt een uitzondering op. Zorg ervoor dat het formulier een handtekeningveld bevat omdat u het formulier ondertekent dat door de Forms-service wordt geretourneerd.
 
 >[!NOTE]
 >
 >Voordat u een interactief formulier digitaal kunt ondertekenen, moet u ervoor zorgen dat u het certificaat aan AEM Forms toevoegt. Een certificaat wordt toegevoegd gebruikend beleidsconsole of programmatically gebruikend de Manager API van het Vertrouwen. (Zie [Referenties importeren met de Betrouwbaarheidsbeheer-API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api).)
 
-Als u de API voor Forms Service gebruikt, stelt u de optie `GenerateServerAppearance` bij uitvoering in op `true`. Deze optie bij uitvoering zorgt ervoor dat de weergave van het formulier dat op de server wordt gegenereerd, geldig blijft wanneer het wordt geopend in Acrobat of Adobe Reader. Het wordt aanbevolen deze uitvoeringsoptie in te stellen wanneer u een interactief formulier genereert ter ondertekening met de API voor formulieren.
+Wanneer u de Forms Service API gebruikt, stelt u de runtime-optie `GenerateServerAppearance` in op `true`. Met deze uitvoeringsoptie blijft de weergave van het formulier dat op de server wordt gegenereerd geldig wanneer het in Acrobat of Adobe Reader wordt geopend. Het wordt aanbevolen deze uitvoeringsoptie in te stellen wanneer u een interactief formulier genereert ter ondertekening met de Forms API.
 
 >[!NOTE]
 >
->Voordat u interactieve formulieren digitaal ondertekent, is het raadzaam bekend te zijn met het ondertekenen van PDF-documenten. (Zie PDF-documenten [digitaal ondertekenen](digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
+>Voordat u interactieve Forms voor digitaal ondertekenen leest, is het raadzaam bekend te zijn met het ondertekenen van PDF-documenten. (Zie [PDF-documenten digitaal ondertekenen](digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
 
-### Overzicht van de stappen {#summary_of_steps-4}
+### Overzicht van stappen {#summary_of_steps-4}
 
-Voer de volgende taken uit om een interactief formulier dat door de Forms-service wordt geretourneerd, digitaal te ondertekenen:
+Voer de volgende taken uit om een interactief formulier dat de Forms-service retourneert, digitaal te ondertekenen:
 
 1. Inclusief projectbestanden.
-1. Maak een client voor formulieren en handtekeningen.
-1. Vraag het interactieve formulier aan met de service Forms.
+1. Maak een Forms- en Signatures-client.
+1. Vraag het interactieve formulier aan met de Forms-service.
 1. Onderteken het interactieve formulier.
 1. Sla het ondertekende PDF-document op als een PDF-bestand.
 
@@ -851,24 +851,24 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-usermanager-client.jar
 * adobe-signatures-client.jar
 * adobe-forms-client.jar
-* adobe-utilities.jar (vereist als AEM Forms worden geïmplementeerd op JBoss)
-* jbossall-client.jar (vereist als AEM Forms worden geïmplementeerd op JBoss)
+* adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
+* jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
 
-Zie [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van deze JAR-bestanden.
+Zie [Including AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files) voor informatie over de locatie van deze JAR-bestanden.
 
-**Een client voor Forms en Signatures maken**
+**Een Forms- en Signatures-client maken**
 
-Omdat in deze workflow zowel de services Forms als Signature worden gebruikt, maakt u zowel een Forms-serviceclient als een Signature-service-client.
+Omdat bij deze workflow zowel de Forms- als de Signature-services worden aangeroepen, kunt u zowel een Forms-serviceclient als een Signature Service-client maken.
 
-**Het interactieve formulier ophalen met de service Forms**
+**Het interactieve formulier ophalen met de Forms-service**
 
-Met de service Forms kunt u het interactieve PDF-formulier verkrijgen om te ondertekenen. Vanaf AEM Forms kunt u een `com.adobe.idp.Document` object doorgeven aan de service Forms die het formulier bevat dat moet worden gegenereerd. De naam van deze methode is `renderPDFForm2`. Deze methode retourneert een `com.adobe.idp.Document` object dat het te ondertekenen formulier bevat. U kunt deze `com.adobe.idp.Document` instantie doorgeven aan de service Handtekening.
+U kunt de Forms-service gebruiken om het interactieve PDF-formulier te verkrijgen ter ondertekening. Vanaf AEM Forms kunt u een `com.adobe.idp.Document`-object doorgeven aan de Forms-service die het formulier bevat dat moet worden gegenereerd. De naam van deze methode is `renderPDFForm2`. Deze methode retourneert een `com.adobe.idp.Document`-object dat het te ondertekenen formulier bevat. U kunt deze `com.adobe.idp.Document` instantie aan de dienst van de Handtekening overgaan.
 
-Als u webservices gebruikt, kunt u ook het exemplaar dat door de service Forms wordt geretourneerd, doorgeven aan de service Handtekening. `BLOB`
+Op dezelfde manier kunt u als u webservices gebruikt, de instantie `BLOB` doorgeven die de Forms-service terugstuurt naar de service Handtekening.
 
 >[!NOTE]
 >
->De snelle start die aan de sectie Digitaal ondertekenen van interactieve formulieren is gekoppeld, roept de `renderPDFForm2` methode aan.
+>De snelle start die aan de sectie Digitaal ondertekenen van interactieve Forms is gekoppeld, roept de methode `renderPDFForm2` aan.
 
 **Het interactieve formulier ondertekenen**
 
@@ -878,7 +878,7 @@ Bij het ondertekenen van een PDF-document kunt u uitvoeringsopties instellen die
 * Intrekkingscontrole
 * Waarden voor tijdstempels
 
-U stelt vormgevingsopties in met een `PDFSignatureAppearanceOptionSpec` object. U kunt bijvoorbeeld de datum binnen een handtekening weergeven door de methode van het `PDFSignatureAppearanceOptionSpec` object aan te roepen en door te geven `setShowDate` `true`.
+U stelt vormgevingsopties in met een object `PDFSignatureAppearanceOptionSpec`. U kunt bijvoorbeeld de datum binnen een handtekening weergeven door de methode `setShowDate` van het object `PDFSignatureAppearanceOptionSpec` aan te roepen en `true` door te geven.
 
 **Het ondertekende PDF-document opslaan**
 
@@ -900,64 +900,64 @@ Nadat het PDF-document digitaal is ondertekend door de handtekeningservice, kunt
 
 ### Een interactief formulier digitaal ondertekenen met de Java API {#digitally-sign-an-interactive-form-using-the-java-api}
 
-Een interactief formulier digitaal ondertekenen met de API voor formulieren en handtekeningen (Java):
+Een interactief formulier digitaal ondertekenen met de API voor Forms en handtekening (Java):
 
 1. Projectbestanden opnemen
 
    Neem JAR-bestanden voor clients, zoals adobe-signatures-client.jar en adobe-forms-client.jar, op in het klassepad van uw Java-project.
 
-1. Een client voor Forms en Signatures maken
+1. Een Forms- en Signatures-client maken
 
-   * Maak een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
-   * Maak een `SignatureServiceClient` object door de constructor ervan te gebruiken en het `ServiceClientFactory` object door te geven.
-   * Maak een `FormsServiceClient` object door de constructor ervan te gebruiken en het `ServiceClientFactory` object door te geven.
+   * Maak een `ServiceClientFactory`-object dat verbindingseigenschappen bevat.
+   * Maak een `SignatureServiceClient`-object door de constructor ervan te gebruiken en het object `ServiceClientFactory` door te geven.
+   * Maak een `FormsServiceClient`-object door de constructor ervan te gebruiken en het object `ServiceClientFactory` door te geven.
 
-1. Het interactieve formulier ophalen met de service Forms
+1. Het interactieve formulier ophalen met de Forms-service
 
-   * Maak een `java.io.FileInputStream` object dat staat voor het PDF-document dat met behulp van de constructor aan de service Forms moet worden doorgegeven. Geef een tekenreekswaarde door die de locatie van het PDF-document aangeeft.
-   * Maak een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en het `java.io.FileInputStream` object door te geven.
-   * Maak een `java.io.FileInputStream` object dat staat voor het XML-document dat formuliergegevens bevat die met behulp van de constructor aan de service Forms moeten worden doorgegeven. Geef een tekenreekswaarde door die de locatie van het XML-bestand aangeeft.
-   * Maak een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en het `java.io.FileInputStream` object door te geven.
-   * Maak een `PDFFormRenderSpec` object dat wordt gebruikt om runtime-opties in te stellen. Roep de `PDFFormRenderSpec` methode van het `setGenerateServerAppearance` object aan en geef deze door `true`.
-   * Roep de methode van het `FormsServiceClient` `renderPDFForm2` object aan en geef de volgende waarden door:
+   * Maak een `java.io.FileInputStream`-object dat staat voor het PDF-document dat aan de Forms-service moet worden doorgegeven met behulp van de constructor. Geef een tekenreekswaarde door die de locatie van het PDF-document aangeeft.
+   * Maak een `com.adobe.idp.Document`-object door de constructor ervan te gebruiken en het object `java.io.FileInputStream` door te geven.
+   * Maak een `java.io.FileInputStream`-object dat het XML-document vertegenwoordigt dat formuliergegevens bevat die met behulp van de constructor aan de Forms-service moeten worden doorgegeven. Geef een tekenreekswaarde door die de locatie van het XML-bestand aangeeft.
+   * Maak een `com.adobe.idp.Document`-object door de constructor ervan te gebruiken en het object `java.io.FileInputStream` door te geven.
+   * Maak een `PDFFormRenderSpec`-object dat wordt gebruikt om uitvoeringsopties in te stellen. Roep de methode `PDFFormRenderSpec` van het object `setGenerateServerAppearance` aan en geef `true` door.
+   * Roep de methode `renderPDFForm2` van het object `FormsServiceClient` aan en geef de volgende waarden door:
 
-      * Een `com.adobe.idp.Document` object dat het PDF-formulier bevat dat moet worden gerenderd.
-      * Een `com.adobe.idp.Document` object dat gegevens bevat die met het formulier moeten worden samengevoegd.
-      * Een `PDFFormRenderSpec` object dat uitvoeringsopties opslaat.
-      * Een `URLSpec` object dat URI-waarden bevat die door de service Forms worden vereist. U kunt opgeven `null` voor deze parameterwaarde.
-      * Een `java.util.HashMap` object dat bestandsbijlagen opslaat. Dit is een optionele parameter en u kunt opgeven `null` of u geen bestanden aan het formulier wilt koppelen.
+      * Een `com.adobe.idp.Document`-object dat het te renderen PDF-formulier bevat.
+      * Een object `com.adobe.idp.Document` dat gegevens bevat die met het formulier moeten worden samengevoegd.
+      * Een `PDFFormRenderSpec`-object dat uitvoeringsopties opslaat.
+      * Een object `URLSpec` dat URI-waarden bevat die door de Forms-service worden vereist. U kunt `null` voor deze parameterwaarde specificeren.
+      * Een `java.util.HashMap`-object dat bestandsbijlagen opslaat. Dit is een optionele parameter en u kunt `null` opgeven als u geen bestanden aan het formulier wilt koppelen.
 
-      De `renderPDFForm2` methode retourneert een `FormsResult` object dat een formuliergegevensstroom bevat
+      De methode `renderPDFForm2` retourneert een `FormsResult`-object dat een formuliergegevensstroom bevat
 
-   * Haal het PDF-formulier op door de `FormsResult` methode van het `getOutputContent` object aan te roepen. Deze methode retourneert een `com.adobe.idp.Document` object dat het interactieve formulier vertegenwoordigt.
+   * Haal het PDF-formulier op door de methode `getOutputContent` van het object `FormsResult` aan te roepen. Deze methode retourneert een `com.adobe.idp.Document`-object dat het interactieve formulier vertegenwoordigt.
 
 
 1. Het interactieve formulier ondertekenen
 
-   Onderteken het PDF-document door de methode van het `SignatureServiceClient` `sign` object aan te roepen en de volgende waarden door te geven:
+   Onderteken het PDF-document door de methode `SignatureServiceClient` van het object `sign` aan te roepen en de volgende waarden door te geven:
 
-   * Een `com.adobe.idp.Document` object dat staat voor het PDF-document dat moet worden ondertekend. Zorg ervoor dat dit object het `com.adobe.idp.Document` object is dat u van de service Forms hebt ontvangen.
+   * Een `com.adobe.idp.Document`-object dat het te ondertekenen PDF-document vertegenwoordigt. Zorg ervoor dat dit object het `com.adobe.idp.Document`-object is dat is verkregen van de Forms-service.
    * Een tekenreekswaarde die de naam vertegenwoordigt van het handtekeningveld dat wordt ondertekend.
-   * Een `Credential` object dat de referentie vertegenwoordigt die wordt gebruikt om het PDF-document digitaal te ondertekenen. Maak een `Credential` object door de statische `Credential` methode van het `getInstance` object aan te roepen. Geef een tekenreekswaarde door die de aliaswaarde opgeeft die overeenkomt met de beveiligingsreferentie.
-   * Een `HashAlgorithm` object dat een statisch gegevenslid opgeeft dat het hash-algoritme vertegenwoordigt dat moet worden gebruikt om het PDF-document te digest. U kunt bijvoorbeeld opgeven of u het algoritme SHA1 wilt gebruiken. `HashAlgorithm.SHA1`
+   * Een object `Credential` dat de referentie vertegenwoordigt die wordt gebruikt om het PDF-document digitaal te ondertekenen. Maak een `Credential`-object door de statische methode `getInstance` van het object aan te roepen. `Credential` Geef een tekenreekswaarde door die de aliaswaarde opgeeft die overeenkomt met de beveiligingsreferentie.
+   * Een `HashAlgorithm`-object dat een lid van een statisch gegevenselement opgeeft dat het hash-algoritme vertegenwoordigt dat moet worden gebruikt om het PDF-document te digest. U kunt bijvoorbeeld `HashAlgorithm.SHA1` opgeven om het algoritme SHA1 te gebruiken.
    * Een tekenreekswaarde die de reden vertegenwoordigt waarom het PDF-document digitaal is ondertekend.
    * Een tekenreekswaarde die de contactgegevens van de ondertekenaar vertegenwoordigt.
-   * Een `PDFSignatureAppearanceOptions` object dat de weergave van de digitale handtekening bepaalt. U kunt dit object bijvoorbeeld gebruiken om een aangepast logo toe te voegen aan een digitale handtekening.
-   * Een `java.lang.Boolean` object dat aangeeft of de intrekkingscontrole moet worden uitgevoerd op het certificaat van de ondertekenaar.
-   * Een `OCSPPreferences` object dat voorkeuren voor ondersteuning van het online certificaatstatusprotocol (OCSP) opslaat. Als de intrekkingscontrole niet wordt uitgevoerd, wordt deze parameter niet gebruikt en kunt u opgeven `null`.
-   * Een `CRLPreferences` object waarin voorkeuren voor certificaatintrekkingslijsten (CRL) zijn opgeslagen. Als de intrekkingscontrole niet wordt uitgevoerd, wordt deze parameter niet gebruikt en kunt u opgeven `null`.
-   * Een `TSPPreferences` object dat voorkeuren voor ondersteuning van een tijdstempelprovider (TSP) opslaat. Deze parameter is optioneel en kan worden `null`gebruikt.
+   * Een `PDFSignatureAppearanceOptions`-object dat de weergave van de digitale handtekening bepaalt. U kunt dit object bijvoorbeeld gebruiken om een aangepast logo toe te voegen aan een digitale handtekening.
+   * Een `java.lang.Boolean`-object dat aangeeft of een intrekkingscontrole moet worden uitgevoerd op het certificaat van de ondertekenaar.
+   * Een `OCSPPreferences`-object dat voorkeuren voor ondersteuning van het online certificaatstatusprotocol (OCSP) opslaat. Als de intrekkingscontrole niet wordt uitgevoerd, wordt deze parameter niet gebruikt en kunt u `null` opgeven.
+   * Een object `CRLPreferences` dat voorkeuren voor certificaatintrekkingslijsten (CRL) opslaat. Als de intrekkingscontrole niet wordt uitgevoerd, wordt deze parameter niet gebruikt en kunt u `null` opgeven.
+   * Een object `TSPPreferences` dat voorkeuren voor ondersteuning voor tijdstempelprovider (TSP) opslaat. Deze parameter is optioneel en kan `null` zijn.
 
-   De `sign` methode retourneert een `com.adobe.idp.Document` object dat het ondertekende PDF-document vertegenwoordigt.
+   De methode `sign` retourneert een `com.adobe.idp.Document`-object dat het ondertekende PDF-document vertegenwoordigt.
 
 1. Het ondertekende PDF-document opslaan
 
-   * Maak een `java.io.File` object en controleer of de bestandsnaamextensie .pdf is.
-   * Roep de `com.adobe.idp.Document` methode van het `copyToFile` object aan en geef door `java.io.File`om de inhoud van het `Document` object naar het bestand te kopiëren. Zorg ervoor dat u het `com.adobe.idp.Document` object gebruikt dat de `sign` methode heeft geretourneerd.
+   * Maak een `java.io.File`-object en controleer of de bestandsnaamextensie .pdf is.
+   * Roep de methode `com.adobe.idp.Document` van het object `copyToFile` aan en geef `java.io.File`door om de inhoud van het object `Document` naar het bestand te kopiëren. Zorg ervoor dat u het `com.adobe.idp.Document` voorwerp gebruikt dat de `sign` methode terugkeerde.
 
 **Zie ook**
 
-[Interactieve formulieren digitaal ondertekenen](digitally-signing-certifying-documents.md#digitally-signing-interactive-forms)
+[Interactieve Forms digitaal ondertekenen](digitally-signing-certifying-documents.md#digitally-signing-interactive-forms)
 
 [Snel starten (SOAP-modus): Een PDF-document digitaal ondertekenen met de Java API](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-digitally-signing-a-pdf-document-using-the-java-api)
 
@@ -967,105 +967,105 @@ Een interactief formulier digitaal ondertekenen met de API voor formulieren en h
 
 ### Een interactief formulier digitaal ondertekenen met de webservice-API {#digitally-sign-an-interactive-form-using-the-web-service-api}
 
-Een interactief formulier digitaal ondertekenen met de API voor formulieren en handtekeningen (webservice):
+Een interactief formulier digitaal ondertekenen met de API voor Forms en handtekening (webservice):
 
 1. Projectbestanden opnemen
 
    Creeer een project van Microsoft .NET dat MTOM gebruikt. Omdat deze cliënttoepassing de twee diensten van AEM Forms aanhaalt, creeer twee de dienstverwijzingen. Gebruik de volgende definitie WSDL voor de de dienstverwijzing verbonden aan de dienst van de Handtekening: `http://localhost:8080/soap/services/SignatureService?WSDL&lc_version=9.0.1`.
 
-   Gebruik de volgende definitie van WSDL voor de de dienstverwijzing verbonden aan de dienst van Vormen: `http://localhost:8080/soap/services/FormsService?WSDL&lc_version=9.0.1`.
+   Gebruik de volgende definitie van WSDL voor de de dienstverwijzing verbonden aan de dienst van Forms: `http://localhost:8080/soap/services/FormsService?WSDL&lc_version=9.0.1`.
 
-   Omdat het `BLOB` gegevenstype gemeenschappelijk voor beide de dienstverwijzingen is, kwalificeer volledig het `BLOB` gegevenstype wanneer het gebruiken van het. In de overeenkomstige webservice quick start zijn alle `BLOB` instanties volledig gekwalificeerd.
+   Omdat het gegevenstype `BLOB` gemeenschappelijk is voor beide serviceverwijzingen, moet u het gegevenstype `BLOB` volledig kwalificeren wanneer u het gebruikt. In de overeenkomstige webservice quick start zijn alle `BLOB`-instanties volledig gekwalificeerd.
 
    >[!NOTE]
    >
-   >Vervangen `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
+   >Vervang `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
 
-1. Een client voor Forms en Signatures maken
+1. Een Forms- en Signatures-client maken
 
-   * Maak een `SignatureServiceClient` object met de standaardconstructor.
-   * Maak een `SignatureServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde door die de WSDL opgeeft voor de service AEM Forms (bijvoorbeeld `http://localhost:8080/soap/services/SignatureService?WSDL`). U hoeft het `lc_version` kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
-   * Maak een `System.ServiceModel.BasicHttpBinding` object door de waarde van het `SignatureServiceClient.Endpoint.Binding` veld op te halen. Kiezen naar de geretourneerde waarde `BasicHttpBinding`.
-   * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
+   * Maak een `SignatureServiceClient`-object met de standaardconstructor.
+   * Maak een `SignatureServiceClient.Endpoint.Address`-object met de constructor `System.ServiceModel.EndpointAddress`. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/SignatureService?WSDL`). U hoeft het `lc_version`-kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
+   * Maak een `System.ServiceModel.BasicHttpBinding`-object door de waarde van het veld `SignatureServiceClient.Endpoint.Binding` op te halen. Cast de terugkeerwaarde aan `BasicHttpBinding`.
+   * Stel het veld `System.ServiceModel.BasicHttpBinding` van het object `MessageEncoding` in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor AEM-formulieren toe aan het veld `SignatureServiceClient.ClientCredentials.UserName.UserName`.
-      * Wijs de bijbehorende wachtwoordwaarde aan het veld toe `SignatureServiceClient.ClientCredentials.UserName.Password`.
-      * Wijs de constante waarde toe `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Wijs de constante waarde toe `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode`.
+      * Wijs de gebruikersnaam voor het AEM aan het veld `SignatureServiceClient.ClientCredentials.UserName.UserName` toe.
+      * Wijs de overeenkomstige wachtwoordwaarde aan het gebied `SignatureServiceClient.ClientCredentials.UserName.Password` toe.
+      * Wijs de constante waarde `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType` toe.
+   * Wijs de constante waarde `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode` toe.
 
    >[!NOTE]
    >
-   >Herhaal deze stappen voor de Forms-serviceclient.
+   >Herhaal deze stappen voor de Forms service client.
 
-1. Het interactieve formulier ophalen met de service Forms
+1. Het interactieve formulier ophalen met de Forms-service
 
-   * Maak een `BLOB` object met de constructor ervan. Met dit `BLOB` object wordt een ondertekend PDF-document opgeslagen.
-   * Maak een `System.IO.FileStream` object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie vertegenwoordigt van het PDF-document dat moet worden ondertekend, en de modus waarin het bestand moet worden geopend.
-   * Maak een bytearray waarin de inhoud van het `System.IO.FileStream` object wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de `System.IO.FileStream` eigenschap van het `Length` object op te halen.
-   * Vul de bytearray met streamgegevens door de methode van het `System.IO.FileStream` `Read` object aan te roepen en de bytearray, de startpositie en de lengte van de stream door te geven om te lezen.
-   * Vul het `BLOB` object door de `MTOM` eigenschap ervan toe te wijzen aan de inhoud van de bytearray.
-   * Maak een `BLOB` object met de constructor ervan. Het `BLOB` object wordt gebruikt om formuliergegevens op te slaan.
-   * Maak een `System.IO.FileStream` object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie vertegenwoordigt van het XML-bestand dat formuliergegevens bevat, en de modus waarin het bestand moet worden geopend.
-   * Maak een bytearray waarin de inhoud van het `System.IO.FileStream` object wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de `System.IO.FileStream` eigenschap van het `Length` object op te halen.
-   * Vul de bytearray met streamgegevens door de methode van het `System.IO.FileStream` `Read` object aan te roepen en de bytearray, de startpositie en de lengte van de stream door te geven om te lezen.
-   * Vul het `BLOB` object door de `MTOM` eigenschap ervan toe te wijzen aan de inhoud van de bytearray.
-   * Maak een `PDFFormRenderSpec` object dat wordt gebruikt om runtime-opties in te stellen. Wijs de waarde toe `true` aan het `PDFFormRenderSpec` veld van het `generateServerAppearance` object.
-   * Roep de methode van het `FormsServiceClient` `renderPDFForm2` object aan en geef de volgende waarden door:
+   * Maak een `BLOB`-object met de constructor ervan. Met het object `BLOB` wordt een ondertekend PDF-document opgeslagen.
+   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie vertegenwoordigt van het PDF-document dat moet worden ondertekend, en de modus waarin het bestand moet worden geopend.
+   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `System.IO.FileStream` van het object `Length` op te halen.
+   * Vul de bytearray met streamgegevens door de methode `Read` van het object `System.IO.FileStream` aan te roepen en de bytearray, de startpositie en de lengte van de stream door te geven om te lezen.
+   * Vul het object `BLOB` door de eigenschap `MTOM` van het object toe te wijzen aan de inhoud van de bytearray.
+   * Maak een `BLOB`-object met de constructor ervan. Het object `BLOB` wordt gebruikt om formuliergegevens op te slaan.
+   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie vertegenwoordigt van het XML-bestand dat formuliergegevens bevat, en de modus waarin het bestand moet worden geopend.
+   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `System.IO.FileStream` van het object `Length` op te halen.
+   * Vul de bytearray met streamgegevens door de methode `Read` van het object `System.IO.FileStream` aan te roepen en de bytearray, de startpositie en de lengte van de stream door te geven om te lezen.
+   * Vul het object `BLOB` door de eigenschap `MTOM` van het object toe te wijzen aan de inhoud van de bytearray.
+   * Maak een `PDFFormRenderSpec`-object dat wordt gebruikt om uitvoeringsopties in te stellen. Wijs de waarde `true` aan het `PDFFormRenderSpec` gebied van `generateServerAppearance` toe.
+   * Roep de methode `renderPDFForm2` van het object `FormsServiceClient` aan en geef de volgende waarden door:
 
-      * Een `BLOB` object dat het PDF-formulier bevat dat moet worden gerenderd.
-      * Een `BLOB` object dat gegevens bevat die met het formulier moeten worden samengevoegd.
-      * Een `PDFFormRenderSpec` object dat uitvoeringsopties opslaat.
-      * Een `URLSpec` object dat URI-waarden bevat die door de service Forms worden vereist. U kunt opgeven `null` voor deze parameterwaarde.
-      * Een `java.util.HashMap` object dat bestandsbijlagen opslaat. Dit is een optionele parameter en u kunt opgeven `null` of u geen bestanden aan het formulier wilt koppelen.
+      * Een `BLOB`-object dat het te renderen PDF-formulier bevat.
+      * Een object `BLOB` dat gegevens bevat die met het formulier moeten worden samengevoegd.
+      * Een `PDFFormRenderSpec`-object dat uitvoeringsopties opslaat.
+      * Een object `URLSpec` dat URI-waarden bevat die door de Forms-service worden vereist. U kunt `null` voor deze parameterwaarde specificeren.
+      * Een `java.util.HashMap`-object dat bestandsbijlagen opslaat. Dit is een optionele parameter en u kunt `null` opgeven als u geen bestanden aan het formulier wilt koppelen.
       * Een lange uitvoerparameter die wordt gebruikt om het aantal pagina&#39;s in het formulier op te slaan.
       * Een tekenreeks-uitvoerparameter die wordt gebruikt voor de landinstellingswaarde.
-      * Een `FormResult` waarde die een uitvoerparameter is die wordt gebruikt om het interactieve formulier op te slaan.
-   * Haal het PDF-formulier op door het `FormsResult` veld van het `outputContent` object aan te roepen. In dit veld wordt een `BLOB` object opgeslagen dat het interactieve formulier vertegenwoordigt.
+      * Een `FormResult`-waarde die een uitvoerparameter is die wordt gebruikt om het interactieve formulier op te slaan.
+   * Haal het PDF-formulier op door het veld `FormsResult` van het object `outputContent` op te halen. In dit veld wordt een `BLOB`-object opgeslagen dat het interactieve formulier vertegenwoordigt.
 
 
 1. Het interactieve formulier ondertekenen
 
-   Onderteken het PDF-document door de methode van het `SignatureServiceClient` `sign` object aan te roepen en de volgende waarden door te geven:
+   Onderteken het PDF-document door de methode `SignatureServiceClient` van het object `sign` aan te roepen en de volgende waarden door te geven:
 
-   * Een `BLOB` object dat staat voor het PDF-document dat moet worden ondertekend. Gebruik de `BLOB` instantie die door de service Forms wordt geretourneerd.
+   * Een `BLOB`-object dat het te ondertekenen PDF-document vertegenwoordigt. Gebruik de instantie `BLOB` die door de Forms-service wordt geretourneerd.
    * Een tekenreekswaarde die de naam vertegenwoordigt van het handtekeningveld dat wordt ondertekend.
-   * Een `Credential` object dat de referentie vertegenwoordigt die wordt gebruikt om het PDF-document digitaal te ondertekenen. Maak een `Credential` object met behulp van de constructor en geef de alias op door een waarde toe te wijzen aan de `Credential` `alias` eigenschap van het object.
-   * Een `HashAlgorithm` object dat een statisch gegevenslid opgeeft dat het hash-algoritme vertegenwoordigt dat moet worden gebruikt om het PDF-document te digest. U kunt bijvoorbeeld opgeven of u het algoritme SHA1 wilt gebruiken. `HashAlgorithm.SHA1`
+   * Een object `Credential` dat de referentie vertegenwoordigt die wordt gebruikt om het PDF-document digitaal te ondertekenen. Maak een `Credential`-object door de constructor ervan te gebruiken en geef de alias op door een waarde toe te wijzen aan de eigenschap `alias` van het object.`Credential`
+   * Een `HashAlgorithm`-object dat een lid van een statisch gegevenselement opgeeft dat het hash-algoritme vertegenwoordigt dat moet worden gebruikt om het PDF-document te digest. U kunt bijvoorbeeld `HashAlgorithm.SHA1` opgeven om het algoritme SHA1 te gebruiken.
    * Een Booleaanse waarde die opgeeft of het hash-algoritme wordt gebruikt.
    * Een tekenreekswaarde die de reden vertegenwoordigt waarom het PDF-document digitaal is ondertekend.
    * Een tekenreekswaarde die de locatie van de ondertekenaar vertegenwoordigt.
    * Een tekenreekswaarde die de contactgegevens van de ondertekenaar vertegenwoordigt.
-   * Een `PDFSignatureAppearanceOptions` object dat de weergave van de digitale handtekening bepaalt. U kunt dit object bijvoorbeeld gebruiken om een aangepast logo toe te voegen aan een digitale handtekening.
-   * Een `System.Boolean` object dat aangeeft of de intrekkingscontrole moet worden uitgevoerd op het certificaat van de ondertekenaar. Als deze intrekkingscontrole is uitgevoerd, wordt deze ingesloten in de handtekening. The default is `false`.
-   * Een `OCSPPreferences` object dat voorkeuren voor ondersteuning van het online certificaatstatusprotocol (OCSP) opslaat. Als de intrekkingscontrole niet wordt uitgevoerd, wordt deze parameter niet gebruikt en kunt u opgeven `null`. Zie [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)voor meer informatie over dit object.
-   * Een `CRLPreferences` object waarin voorkeuren voor certificaatintrekkingslijsten (CRL) zijn opgeslagen. Als de intrekkingscontrole niet wordt uitgevoerd, wordt deze parameter niet gebruikt en kunt u opgeven `null`.
-   * Een `TSPPreferences` object dat voorkeuren voor ondersteuning van een tijdstempelprovider (TSP) opslaat. Deze parameter is optioneel en kan worden `null`gebruikt.
+   * Een `PDFSignatureAppearanceOptions`-object dat de weergave van de digitale handtekening bepaalt. U kunt dit object bijvoorbeeld gebruiken om een aangepast logo toe te voegen aan een digitale handtekening.
+   * Een `System.Boolean`-object dat aangeeft of een intrekkingscontrole moet worden uitgevoerd op het certificaat van de ondertekenaar. Als deze intrekkingscontrole is uitgevoerd, wordt deze ingesloten in de handtekening. De standaardwaarde is `false`.
+   * Een `OCSPPreferences`-object dat voorkeuren voor ondersteuning van het online certificaatstatusprotocol (OCSP) opslaat. Als de intrekkingscontrole niet wordt uitgevoerd, wordt deze parameter niet gebruikt en kunt u `null` opgeven. Zie [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en) voor informatie over dit object.
+   * Een object `CRLPreferences` dat voorkeuren voor certificaatintrekkingslijsten (CRL) opslaat. Als de intrekkingscontrole niet wordt uitgevoerd, wordt deze parameter niet gebruikt en kunt u `null` opgeven.
+   * Een object `TSPPreferences` dat voorkeuren voor ondersteuning voor tijdstempelprovider (TSP) opslaat. Deze parameter is optioneel en kan `null` zijn.
 
-   De `sign` methode retourneert een `BLOB` object dat het ondertekende PDF-document vertegenwoordigt.
+   De methode `sign` retourneert een `BLOB`-object dat het ondertekende PDF-document vertegenwoordigt.
 
 1. Het ondertekende PDF-document opslaan
 
-   * Maak een `System.IO.FileStream` object door de constructor ervan aan te roepen. Geef een tekenreekswaarde door die staat voor de bestandslocatie van het ondertekende PDF-document en de modus waarin het bestand moet worden geopend.
-   * Maak een bytearray waarin de inhoud wordt opgeslagen van het `BLOB` object dat door de `sign` methode is geretourneerd. Vul de bytearray met de waarde van het `BLOB` `MTOM` gegevenslid van het object.
-   * Maak een `System.IO.BinaryWriter` object door de constructor ervan aan te roepen en het `System.IO.FileStream` object door te geven.
-   * Schrijf de inhoud van de bytearray naar een PDF-bestand door de methode van het `System.IO.BinaryWriter` `Write` object aan te roepen en de bytearray door te geven.
+   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen. Geef een tekenreekswaarde door die staat voor de bestandslocatie van het ondertekende PDF-document en de modus waarin het bestand moet worden geopend.
+   * Maak een bytearray waarin de inhoud wordt opgeslagen van het object `BLOB` dat door de methode `sign` is geretourneerd. Vul de bytearray met de waarde van het `BLOB`-gegevenslid van het object `MTOM`.
+   * Maak een `System.IO.BinaryWriter`-object door de constructor ervan aan te roepen en het object `System.IO.FileStream` door te geven.
+   * Schrijf de inhoud van de bytearray naar een PDF-bestand door de methode `Write` van het object `System.IO.BinaryWriter` aan te roepen en de bytearray door te geven.
 
 **Zie ook**
 
-[Interactieve formulieren digitaal ondertekenen](digitally-signing-certifying-documents.md#digitally-signing-interactive-forms)
+[Interactieve Forms digitaal ondertekenen](digitally-signing-certifying-documents.md#digitally-signing-interactive-forms)
 
 [AEM Forms aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-## PDF-documenten certificeren {#certifying-pdf-documents}
+## PDF-documenten {#certifying-pdf-documents} certificeren
 
 U kunt een PDF-document beveiligen door het te certificeren met een bepaald type handtekening, een zogenaamde gecertificeerde handtekening. Een gecertificeerde handtekening wordt op de volgende manieren onderscheiden van een digitale handtekening:
 
 * Dit moet de eerste handtekening zijn die op het PDF-document wordt toegepast. Dit betekent dat op het moment dat de gecertificeerde handtekening wordt toegepast, alle andere handtekeningvelden in het document niet-ondertekend moeten zijn. Er is slechts één gecertificeerde handtekening toegestaan in een PDF-document. Als u een PDF-document wilt ondertekenen en certificeren, moet u het certificeren voordat u het ondertekent. Nadat u een PDF-document hebt gecertificeerd, kunt u digitale extra handtekeningvelden ondertekenen.
-* De auteur of maker van het document kan opgeven dat het document op bepaalde manieren kan worden gewijzigd zonder de gecertificeerde handtekening ongeldig te maken. Het document kan bijvoorbeeld het invullen van formulieren of het plaatsen van opmerkingen toestaan. Als de auteur aangeeft dat een bepaalde wijziging niet is toegestaan, beperkt Acrobat gebruikers om het document op die manier te wijzigen. Als dergelijke wijzigingen worden aangebracht, bijvoorbeeld door een andere toepassing te gebruiken, is de gecertificeerde handtekening ongeldig en geeft Acrobat een waarschuwing wanneer een gebruiker het document opent. (Bij niet-gecertificeerde handtekeningen zijn wijzigingen niet mogelijk en maken normale bewerkingsbewerkingen de oorspronkelijke handtekening niet ongeldig.)
+* De auteur of maker van het document kan opgeven dat het document op bepaalde manieren kan worden gewijzigd zonder de gecertificeerde handtekening ongeldig te maken. Het document kan bijvoorbeeld het invullen van formulieren of het plaatsen van opmerkingen toestaan. Als de auteur aangeeft dat een bepaalde wijziging niet is toegestaan, beperkt Acrobat gebruikers het document op die manier te wijzigen. Als dergelijke wijzigingen worden aangebracht, bijvoorbeeld door een andere toepassing te gebruiken, is de gecertificeerde handtekening ongeldig en geeft Acrobat een waarschuwing wanneer een gebruiker het document opent. (Bij niet-gecertificeerde handtekeningen zijn wijzigingen niet mogelijk en maken normale bewerkingsbewerkingen de oorspronkelijke handtekening niet ongeldig.)
 * Op het moment van ondertekening wordt het document gescand op specifieke typen inhoud die de inhoud van een document dubbelzinnig of misleidend kunnen maken. Een annotatie kan bijvoorbeeld bepaalde tekst op een pagina verbergen die belangrijk is voor het begrijpen van wat wordt gecertificeerd. Over deze inhoud kan een toelichting (wettelijke verklaring) worden gegeven.
 
-U kunt PDF-documenten programmatisch certificeren met de Java API voor de handtekeningenservice of de API voor de handtekeningwebservice. Als u een PDF-document certificeert, moet u verwijzen naar een beveiligingsreferentie in de Referentie-service. Voor informatie over de veiligheidsreferentie, zie de *Installeren en het Opstellen van AEM Forms* gids voor uw toepassingsserver.
+U kunt PDF-documenten programmatisch certificeren met de Java API voor de handtekeningenservice of de API voor de handtekeningwebservice. Als u een PDF-document certificeert, moet u verwijzen naar een beveiligingsreferentie in de Referentie-service. Zie de handleiding *AEM Forms* installeren en implementeren voor uw toepassingsserver voor meer informatie over de beveiligingsreferentie.
 
 >[!NOTE]
 >
@@ -1073,7 +1073,7 @@ U kunt PDF-documenten programmatisch certificeren met de Java API voor de handte
 
 >[!NOTE]
 >
->Als u een Cipher nShield HSM-referentie gebruikt om een PDF-document te ondertekenen of certificeren, kan de nieuwe referentie pas worden gebruikt als de J2EE-toepassingsserver waarop AEM Forms worden geïmplementeerd, opnieuw is gestart. U kunt echter een configuratiewaarde instellen, wat resulteert in het ondertekenen of certificeren van de bewerking zonder de J2EE-toepassingsserver opnieuw te starten.
+>Als u een Cipher nShield HSM-referentie gebruikt om een PDF-document te ondertekenen of certificeren, kan de nieuwe referentie pas worden gebruikt als de J2EE-toepassingsserver waarop AEM Forms is geïmplementeerd, opnieuw is gestart. U kunt echter een configuratiewaarde instellen, wat resulteert in het ondertekenen of certificeren van de bewerking zonder de J2EE-toepassingsserver opnieuw te starten.
 
 U kunt de volgende configuratiewaarde toevoegen in het cknfastrc-bestand, dat zich bevindt op /opt/nfast/cknfastrc (of c:\nfast\cknfastrc):
 
@@ -1085,9 +1085,9 @@ Nadat u deze configuratiewaarde aan het cknfastrc dossier toevoegt, kan de nieuw
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Handtekening en het certificeren van een document, zie de Verwijzing van de [Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Zie [Referentiehandleiding voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63) voor meer informatie over de service Handtekening en certificering van een document.
 
-### Overzicht van de stappen {#summary_of_steps-5}
+### Overzicht van stappen {#summary_of_steps-5}
 
 Voer de volgende taken uit om een PDF-document te certificeren:
 
@@ -1106,10 +1106,10 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-signatures-client.jar
-* adobe-utilities.jar (vereist als AEM Forms worden geïmplementeerd op JBoss)
-* jbossall-client.jar (vereist als AEM Forms worden geïmplementeerd op JBoss)
+* adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
+* jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
 
-Zie [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van deze JAR-bestanden.
+Zie [Including AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files) voor informatie over de locatie van deze JAR-bestanden.
 
 **Een handtekeningclient maken**
 
@@ -1117,23 +1117,23 @@ Voordat u een handtekeningbewerking programmatisch kunt uitvoeren, moet u een ha
 
 **Het PDF-document ophalen voor certificering**
 
-Als u een PDF-document wilt certificeren, moet u een PDF-document verkrijgen dat een handtekeningveld bevat. Als een PDF-document geen handtekeningveld bevat, kan het niet worden gecertificeerd. Een handtekeningveld kan worden toegevoegd met Designer of via programmacode. Zie Handtekeningvelden [toevoegen voor informatie over het programmatisch toevoegen van een handtekeningveld](digitally-signing-certifying-documents.md#adding-signature-fields).
+Als u een PDF-document wilt certificeren, moet u een PDF-document verkrijgen dat een handtekeningveld bevat. Als een PDF-document geen handtekeningveld bevat, kan het niet worden gecertificeerd. Een handtekeningveld kan worden toegevoegd met Designer of via programmacode. Zie [Handtekeningvelden toevoegen](digitally-signing-certifying-documents.md#adding-signature-fields) voor informatie over het programmatisch toevoegen van een handtekeningveld.
 
 **Het PDF-document certificeren**
 
 Als u een PDF-document wilt certificeren, hebt u de volgende invoerwaarden nodig die door de service Handtekening worden gebruikt voor de certificering van een PDF-document:
 
-* **PDF-document**: Een PDF-document dat een handtekeningveld bevat. Dit is een formulierveld dat een grafische weergave van de gecertificeerde handtekening bevat. Een PDF-document moet een handtekeningveld bevatten voordat het kan worden gecertificeerd. Een handtekeningveld kan worden toegevoegd met Designer of via programmacode. (Zie [Handtekeningvelden](digitally-signing-certifying-documents.md#adding-signature-fields)toevoegen.)
+* **PDF-document**: Een PDF-document dat een handtekeningveld bevat. Dit is een formulierveld dat een grafische weergave van de gecertificeerde handtekening bevat. Een PDF-document moet een handtekeningveld bevatten voordat het kan worden gecertificeerd. Een handtekeningveld kan worden toegevoegd met Designer of via programmacode. (Zie [Handtekeningvelden toevoegen](digitally-signing-certifying-documents.md#adding-signature-fields).)
 * **Naam** van handtekeningveld: De volledig gekwalificeerde naam van het handtekeningveld dat is gecertificeerd. De volgende waarde is een voorbeeld: `form1[0].#subform[1].SignatureField3[3]`. Bij gebruik van een XFA-formulierveld kan ook de gedeeltelijke naam van het handtekeningveld worden gebruikt: `SignatureField3[3]`. Als een null-waarde wordt doorgegeven voor de veldnaam, wordt dynamisch een onzichtbaar handtekeningveld gemaakt en gecertificeerd.
 * **Beveiligingsreferentie**: Een referentie die wordt gebruikt om het PDF-document te certificeren. Deze veiligheidsreferentie bevat een wachtwoord en een alias, die een alias moeten aanpassen die in de referentie verschijnt die binnen de Credential dienst wordt gevestigd. De alias is een verwijzing naar een werkelijke referentie die kan voorkomen in een PKCS#12-bestand (met de extensie .pfx) of een hardwarebeveiligingsmodule (HSM).
 * **Hash-algoritme**: Een hash-algoritme voor de samenvatting van het PDF-document.
-* **Reden voor ondertekening**: Een waarde die wordt weergegeven in Acrobat of Adobe Reader, zodat andere gebruikers weten waarom het PDF-document is gecertificeerd.
+* **Reden voor ondertekening**: Een waarde die wordt weergegeven in Acrobat of Adobe Reader zodat andere gebruikers weten waarom het PDF-document is gecertificeerd.
 * **Locatie van de ondertekenaar**: De locatie van de ondertekenaar die door de referentie wordt opgegeven.
 * **Contactgegevens**: Contactgegevens, zoals adres en telefoonnummer, van de ondertekenaar.
 * **Machtigingsgegevens**: Machtigingen die de handelingen besturen die een eindgebruiker op een document kan uitvoeren zonder dat de gecertificeerde handtekening ongeldig wordt. U kunt bijvoorbeeld de machtiging zo instellen dat elke wijziging in het PDF-document ertoe leidt dat de gecertificeerde handtekening ongeldig wordt.
 * **Juridische toelichting**: Wanneer een document wordt gecertificeerd, wordt het automatisch gescand op specifieke typen inhoud die de inhoud van een document dubbelzinnig of misleidend kunnen maken. Een annotatie kan bijvoorbeeld bepaalde tekst op een pagina verbergen die belangrijk is voor het begrijpen van wat wordt gecertificeerd. Tijdens het scanproces worden waarschuwingen over dit type inhoud gegenereerd. Deze waarde biedt een aanvullende uitleg van de inhoud die waarschuwingen heeft gegenereerd.
 * **Weergaveopties**: Opties die de weergave van de gecertificeerde handtekening bepalen. De gecertificeerde handtekening kan bijvoorbeeld datumgegevens weergeven.
-* **Intrekkingscontrole**: Deze waarde geeft aan of de intrekkingscontrole is uitgevoerd voor het certificaat van de ondertekenaar. De standaardinstelling van `false` betekent dat de intrekkingscontrole niet wordt uitgevoerd.
+* **Intrekkingscontrole**: Deze waarde geeft aan of de intrekkingscontrole is uitgevoerd voor het certificaat van de ondertekenaar. De standaardinstelling van `false` betekent dat de intrekkingscontrole niet is uitgevoerd.
 * **OCSP-instellingen**: Ondersteuning voor Instellingen voor Online Certificate Status Protocol (OCSP). Hiermee krijgt u informatie over de status van de referentie die wordt gebruikt voor de certificering van het PDF-document. U kunt bijvoorbeeld de URL van de server opgeven die informatie bevat over de referentie die u gebruikt om u aan te melden bij het PDF-document.
 * **CRL-instellingen**: Instellingen voor voorkeuren voor certificaatintrekkingslijst (CRL) als de intrekkingscontrole is uitgevoerd. U kunt bijvoorbeeld opgeven om altijd te controleren of een referentie is ingetrokken.
 * **Tijdstempel**: Instellingen die informatie over tijdstempels definiëren die wordt toegepast op de gecertificeerde handtekening. Een tijdstempel geeft aan dat specifieke gegevens voor een bepaald tijdstip zijn vastgesteld. Deze kennis draagt bij tot het opbouwen van een vertrouwensrelatie tussen de ondertekenaar en de verificateur.
@@ -1164,39 +1164,39 @@ Een PDF-document certificeren met de handtekening-API (Java):
 
 1. Een handtekeningclient maken
 
-   * Maak een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
-   * Maak een `SignatureServiceClient` object door de constructor ervan te gebruiken en het `ServiceClientFactory` object door te geven.
+   * Maak een `ServiceClientFactory`-object dat verbindingseigenschappen bevat.
+   * Maak een `SignatureServiceClient`-object door de constructor ervan te gebruiken en het object `ServiceClientFactory` door te geven.
 
 1. Het PDF-document ophalen voor certificering
 
-   * Maak een `java.io.FileInputStream` object dat staat voor het PDF-document dat moet worden gecertificeerd met de constructor ervan en geef een tekenreekswaarde door die de locatie van het PDF-document aangeeft.
-   * Maak een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en het `java.io.FileInputStream` object door te geven.
+   * Maak een `java.io.FileInputStream`-object dat het te certificeren PDF-document vertegenwoordigt met de constructor ervan en geef een tekenreekswaarde door die de locatie van het PDF-document aangeeft.
+   * Maak een `com.adobe.idp.Document`-object door de constructor ervan te gebruiken en het object `java.io.FileInputStream` door te geven.
 
 1. Het PDF-document certificeren
 
-   Certificeer het PDF-document door de methode van het `SignatureServiceClient` `certify` object aan te roepen en de volgende waarden door te geven:
+   Certificeer het PDF-document door de methode `SignatureServiceClient` van het object `certify` aan te roepen en de volgende waarden door te geven:
 
-   * Het `com.adobe.idp.Document` object dat het te certificeren PDF-document vertegenwoordigt.
+   * Het `com.adobe.idp.Document`-object dat het te certificeren PDF-document vertegenwoordigt.
    * Een tekenreekswaarde die de naam vertegenwoordigt van het handtekeningveld dat de handtekening zal bevatten.
-   * Een `Credential` object dat de referentie vertegenwoordigt die wordt gebruikt om het PDF-document te certificeren. Maak een `Credential` object door de statische `Credential` methode van het `getInstance` object aan te roepen en een tekenreekswaarde door te geven die de aliaswaarde opgeeft die overeenkomt met de beveiligingsreferentie.
-   * Een `HashAlgorithm` object dat een statisch gegevenslid opgeeft dat het hash-algoritme vertegenwoordigt dat wordt gebruikt om het PDF-document samen te vatten. U kunt bijvoorbeeld opgeven of u het algoritme SHA1 wilt gebruiken. `HashAlgorithm.SHA1`
+   * Een object `Credential` dat de referentie vertegenwoordigt die wordt gebruikt om het PDF-document te certificeren. Maak een `Credential`-object door de statische methode `getInstance` van het object aan te roepen en een tekenreekswaarde door te geven die de aliaswaarde opgeeft die overeenkomt met de beveiligingsreferentie.`Credential`
+   * Een `HashAlgorithm`-object dat een lid van een statisch gegevenselement opgeeft dat het hash-algoritme vertegenwoordigt dat wordt gebruikt om het PDF-document te digest. U kunt bijvoorbeeld `HashAlgorithm.SHA1` opgeven om het algoritme SHA1 te gebruiken.
    * Een tekenreekswaarde die de reden vertegenwoordigt waarom het PDF-document is gecertificeerd.
    * Een tekenreekswaarde die de contactgegevens van de ondertekenaar vertegenwoordigt.
-   * Een `MDPPermissions` object dat handelingen opgeeft die kunnen worden uitgevoerd op het PDF-document dat de handtekening ongeldig maakt.
-   * Een `PDFSignatureAppearanceOptions` object dat de weergave van de gecertificeerde handtekening bepaalt. Wijzig desgewenst de weergave van de handtekening door een methode aan te roepen, zoals `setShowDate`.
+   * Een `MDPPermissions`-object dat handelingen opgeeft die kunnen worden uitgevoerd op het PDF-document dat de handtekening ongeldig maakt.
+   * Een `PDFSignatureAppearanceOptions`-object dat de weergave van de gecertificeerde handtekening bepaalt. Wijzig desgewenst de weergave van de handtekening door een methode aan te roepen, zoals `setShowDate`.
    * Een tekenreekswaarde die een uitleg geeft van welke handelingen de handtekening ongeldig maken.
-   * Een `java.lang.Boolean` object dat aangeeft of de intrekkingscontrole moet worden uitgevoerd op het certificaat van de ondertekenaar. Als deze intrekkingscontrole is uitgevoerd, wordt deze ingesloten in de handtekening. The default is `false`.
-   * Een `java.lang.Boolean` object dat opgeeft of het handtekeningveld dat wordt gecertificeerd, is vergrendeld. Als het veld is vergrendeld, wordt het handtekeningveld gemarkeerd als alleen-lezen, kunnen de eigenschappen ervan niet worden gewijzigd en kan het niet worden gewist door iedereen die niet de vereiste machtigingen heeft. The default is `false`.
-   * Een `OCSPPreferences` object dat voorkeuren voor ondersteuning van het online certificaatstatusprotocol (OCSP) opslaat. Als de intrekkingscontrole niet wordt uitgevoerd, wordt deze parameter niet gebruikt en kunt u opgeven `null`. Zie [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)voor meer informatie over dit object.
-   * Een `CRLPreferences` object waarin voorkeuren voor certificaatintrekkingslijsten (CRL) zijn opgeslagen. Als de intrekkingscontrole niet wordt uitgevoerd, wordt deze parameter niet gebruikt en kunt u opgeven `null`.
-   * Een `TSPPreferences` object dat voorkeuren voor ondersteuning van een tijdstempelprovider (TSP) opslaat. Nadat u bijvoorbeeld een `TSPPreferences` object hebt gemaakt, kunt u de URL van de TSP-server instellen door de `TSPPreferences` methode van het `setTspServerURL` object aan te roepen. Deze parameter is optioneel en kan worden `null`gebruikt. Voor meer informatie, zie de Verwijzing van de [Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+   * Een `java.lang.Boolean`-object dat aangeeft of een intrekkingscontrole moet worden uitgevoerd op het certificaat van de ondertekenaar. Als deze intrekkingscontrole is uitgevoerd, wordt deze ingesloten in de handtekening. De standaardwaarde is `false`.
+   * Een `java.lang.Boolean`-object dat opgeeft of het handtekeningveld dat wordt gecertificeerd, is vergrendeld. Als het veld is vergrendeld, wordt het handtekeningveld gemarkeerd als alleen-lezen, kunnen de eigenschappen ervan niet worden gewijzigd en kan het niet worden gewist door iedereen die niet de vereiste machtigingen heeft. De standaardwaarde is `false`.
+   * Een `OCSPPreferences`-object dat voorkeuren voor ondersteuning van het online certificaatstatusprotocol (OCSP) opslaat. Als de intrekkingscontrole niet wordt uitgevoerd, wordt deze parameter niet gebruikt en kunt u `null` opgeven. Zie [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en) voor informatie over dit object.
+   * Een object `CRLPreferences` dat voorkeuren voor certificaatintrekkingslijsten (CRL) opslaat. Als de intrekkingscontrole niet wordt uitgevoerd, wordt deze parameter niet gebruikt en kunt u `null` opgeven.
+   * Een object `TSPPreferences` dat voorkeuren voor ondersteuning voor tijdstempelprovider (TSP) opslaat. Nadat u bijvoorbeeld een `TSPPreferences`-object hebt gemaakt, kunt u de URL van de TSP-server instellen door de methode `TSPPreferences` van het object `setTspServerURL` aan te roepen. Deze parameter is optioneel en kan `null` zijn. Zie [Referentiehandleiding voor services voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63) voor meer informatie.
 
-   De `certify` methode retourneert een `com.adobe.idp.Document` object dat het gecertificeerde PDF-document vertegenwoordigt.
+   De methode `certify` retourneert een `com.adobe.idp.Document`-object dat het gecertificeerde PDF-document vertegenwoordigt.
 
 1. Het gecertificeerde PDF-document opslaan als een PDF-bestand
 
-   * Maak een `java.io.File` object en zorg dat de bestandsextensie .pdf is.
-   * Roep de `com.adobe.idp.Document` methode van het `copyToFile` object aan om de inhoud van het `com.adobe.idp.Document` object naar het bestand te kopiëren.
+   * Maak een `java.io.File`-object en controleer of de bestandsextensie .pdf is.
+   * Roep de methode `com.adobe.idp.Document` van het object `copyToFile` aan om de inhoud van het object `com.adobe.idp.Document` naar het bestand te kopiëren.
 
 **Zie ook**
 
@@ -1218,60 +1218,60 @@ Een PDF-document certificeren met de handtekening-API (webservice):
 
    >[!NOTE]
    >
-   >Vervangen `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
+   >Vervang `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
 
 1. Een handtekeningclient maken
 
-   * Maak een `SignatureServiceClient` object met de standaardconstructor.
-   * Maak een `SignatureServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde door die de WSDL opgeeft voor de service AEM Forms (bijvoorbeeld `http://localhost:8080/soap/services/SignatureService?WSDL`). U hoeft het `lc_version` kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
-   * Maak een `System.ServiceModel.BasicHttpBinding` object door de waarde van het `SignatureServiceClient.Endpoint.Binding` veld op te halen. Kiezen naar de geretourneerde waarde `BasicHttpBinding`.
-   * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
+   * Maak een `SignatureServiceClient`-object met de standaardconstructor.
+   * Maak een `SignatureServiceClient.Endpoint.Address`-object met de constructor `System.ServiceModel.EndpointAddress`. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/SignatureService?WSDL`). U hoeft het `lc_version`-kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
+   * Maak een `System.ServiceModel.BasicHttpBinding`-object door de waarde van het veld `SignatureServiceClient.Endpoint.Binding` op te halen. Cast de terugkeerwaarde aan `BasicHttpBinding`.
+   * Stel het veld `System.ServiceModel.BasicHttpBinding` van het object `MessageEncoding` in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor AEM-formulieren toe aan het veld `SignatureServiceClient.ClientCredentials.UserName.UserName`.
-      * Wijs de bijbehorende wachtwoordwaarde aan het veld toe `SignatureServiceClient.ClientCredentials.UserName.Password`.
-      * Wijs de constante waarde toe `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Wijs de constante waarde toe `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode`.
+      * Wijs de gebruikersnaam voor het AEM aan het veld `SignatureServiceClient.ClientCredentials.UserName.UserName` toe.
+      * Wijs de overeenkomstige wachtwoordwaarde aan het gebied `SignatureServiceClient.ClientCredentials.UserName.Password` toe.
+      * Wijs de constante waarde `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType` toe.
+      * Wijs de constante waarde `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode` toe.
 
 1. Het PDF-document ophalen voor certificering
 
-   * Maak een `BLOB` object met de constructor ervan. Met dit `BLOB` object wordt een gecertificeerd PDF-document opgeslagen.
-   * Maak een `System.IO.FileStream` object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie vertegenwoordigt van het te certificeren PDF-document en de modus waarin het bestand moet worden geopend.
-   * Maak een bytearray waarin de inhoud van het `System.IO.FileStream` object wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de `System.IO.FileStream` eigenschap van het `Length` object op te halen.
-   * Vul de bytearray met streamgegevens door de methode van het `System.IO.FileStream` `Read` object aan te roepen en de bytearray, de startpositie en de lengte van de stream door te geven om te lezen.
-   * Vul het `BLOB` object door het `MTOM` gegevenslid ervan de inhoud van de bytearray toe te wijzen.
+   * Maak een `BLOB`-object met de constructor ervan. Met het object `BLOB` wordt een gecertificeerd PDF-document opgeslagen.
+   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie vertegenwoordigt van het te certificeren PDF-document en de modus waarin het bestand moet worden geopend.
+   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `System.IO.FileStream` van het object `Length` op te halen.
+   * Vul de bytearray met streamgegevens door de methode `Read` van het object `System.IO.FileStream` aan te roepen en de bytearray, de startpositie en de lengte van de stream door te geven om te lezen.
+   * Vul het `BLOB`-object door het `MTOM`-gegevenslid ervan toe te wijzen aan de inhoud van de bytearray.
 
 1. Het PDF-document certificeren
 
-   Certificeer het PDF-document door de methode van het `SignatureServiceClient` `certify` object aan te roepen en de volgende waarden door te geven:
+   Certificeer het PDF-document door de methode `SignatureServiceClient` van het object `certify` aan te roepen en de volgende waarden door te geven:
 
-   * Het `BLOB` object dat het te certificeren PDF-document vertegenwoordigt.
+   * Het `BLOB`-object dat het te certificeren PDF-document vertegenwoordigt.
    * Een tekenreekswaarde die de naam vertegenwoordigt van het handtekeningveld dat de handtekening zal bevatten.
-   * Een `Credential` object dat de referentie vertegenwoordigt die wordt gebruikt om het PDF-document te certificeren. Maak een `Credential` object met behulp van de constructor en geef de alias op door een waarde toe te wijzen aan de `Credential` `alias` eigenschap van het object.
-   * Een `HashAlgorithm` object dat een statisch gegevenslid opgeeft dat het hash-algoritme vertegenwoordigt dat wordt gebruikt om het PDF-document samen te vatten. U kunt bijvoorbeeld opgeven of u het algoritme SHA1 wilt gebruiken. `HashAlgorithm.SHA1`
+   * Een object `Credential` dat de referentie vertegenwoordigt die wordt gebruikt om het PDF-document te certificeren. Maak een `Credential`-object met behulp van de constructor en geef de alias op door een waarde toe te wijzen aan de eigenschap `alias` van het object.`Credential`
+   * Een `HashAlgorithm`-object dat een lid van een statisch gegevenselement opgeeft dat het hash-algoritme vertegenwoordigt dat wordt gebruikt om het PDF-document te digest. U kunt bijvoorbeeld `HashAlgorithm.SHA1` opgeven om het algoritme SHA1 te gebruiken.
    * Een Booleaanse waarde die opgeeft of het hash-algoritme wordt gebruikt.
    * Een tekenreekswaarde die de reden vertegenwoordigt waarom het PDF-document is gecertificeerd.
    * Een tekenreekswaarde die de locatie van de ondertekenaar vertegenwoordigt.
    * Een tekenreekswaarde die de contactgegevens van de ondertekenaar vertegenwoordigt.
-   * Een lid van een `MDPPermissions` object met statische gegevens dat handelingen opgeeft die kunnen worden uitgevoerd op het PDF-document waardoor de handtekening ongeldig wordt gemaakt.
-   * Een Booleaanse waarde die opgeeft of het `MDPPermissions` object dat is doorgegeven, moet worden gebruikt als de vorige parameterwaarde.
+   * Een `MDPPermissions`-objectlid met statische gegevens dat handelingen opgeeft die kunnen worden uitgevoerd op het PDF-document waardoor de handtekening ongeldig wordt.
+   * Een Booleaanse waarde die opgeeft of het object `MDPPermissions` moet worden gebruikt dat als de vorige parameterwaarde is doorgegeven.
    * Een tekenreekswaarde die aangeeft welke handelingen de handtekening ongeldig maken.
-   * Een `PDFSignatureAppearanceOptions` object dat de weergave van de gecertificeerde handtekening bepaalt. Maak een `PDFSignatureAppearanceOptions` object met de constructor ervan. U kunt de weergave van de handtekening wijzigen door een van de gegevensleden in te stellen.
-   * Een `System.Boolean` object dat aangeeft of de intrekkingscontrole moet worden uitgevoerd op het certificaat van de ondertekenaar. Als deze intrekkingscontrole is uitgevoerd, wordt deze ingesloten in de handtekening. The default is `false`.
-   * Een `System.Boolean` object dat opgeeft of het handtekeningveld dat wordt gecertificeerd, is vergrendeld. Als het veld is vergrendeld, wordt het handtekeningveld gemarkeerd als alleen-lezen, kunnen de eigenschappen ervan niet worden gewijzigd en kan het niet worden gewist door iedereen die niet de vereiste machtigingen heeft. The default is `false`.
-   * Een `System.Boolean` object dat opgeeft of het handtekeningveld is vergrendeld. Dat wil zeggen, als u `true` de vorige parameter doorgeeft, geeft u deze parameter `true` door.
-   * Een `OCSPPreferences` object dat voorkeuren voor ondersteuning van het online certificaatstatusprotocol (OCSP) opslaat. Hiermee wordt informatie gegeven over de status van de referentie die wordt gebruikt voor de certificering van het PDF-document. Als de intrekkingscontrole niet wordt uitgevoerd, wordt deze parameter niet gebruikt en kunt u opgeven `null`.
-   * Een `CRLPreferences` object waarin voorkeuren voor certificaatintrekkingslijsten (CRL) zijn opgeslagen. Als de intrekkingscontrole niet wordt uitgevoerd, wordt deze parameter niet gebruikt en kunt u opgeven `null`.
-   * Een `TSPPreferences` object dat voorkeuren voor ondersteuning van een tijdstempelprovider (TSP) opslaat. Nadat u bijvoorbeeld een `TSPPreferences` object hebt gemaakt, kunt u de URL van de TSP instellen door het gegevenslid van het `TSPPreferences` `tspServerURL` object in te stellen. Deze parameter is optioneel en kan worden `null`gebruikt.
+   * Een `PDFSignatureAppearanceOptions`-object dat de weergave van de gecertificeerde handtekening bepaalt. Maak een `PDFSignatureAppearanceOptions`-object met de constructor ervan. U kunt de weergave van de handtekening wijzigen door een van de gegevensleden in te stellen.
+   * Een `System.Boolean`-object dat aangeeft of een intrekkingscontrole moet worden uitgevoerd op het certificaat van de ondertekenaar. Als deze intrekkingscontrole is uitgevoerd, wordt deze ingesloten in de handtekening. De standaardwaarde is `false`.
+   * Een `System.Boolean`-object dat opgeeft of het handtekeningveld dat wordt gecertificeerd, is vergrendeld. Als het veld is vergrendeld, wordt het handtekeningveld gemarkeerd als alleen-lezen, kunnen de eigenschappen ervan niet worden gewijzigd en kan het niet worden gewist door iedereen die niet de vereiste machtigingen heeft. De standaardwaarde is `false`.
+   * Een object `System.Boolean` dat opgeeft of het handtekeningveld is vergrendeld. Dat wil zeggen dat als u `true` aan de vorige parameter doorgeeft, dan `true` aan deze parameter doorgeeft.
+   * Een `OCSPPreferences`-object dat voorkeuren voor ondersteuning van het online certificaatstatusprotocol (OCSP) opslaat. Hiermee wordt informatie gegeven over de status van de referentie die wordt gebruikt om het PDF-document te certificeren. Als de intrekkingscontrole niet wordt uitgevoerd, wordt deze parameter niet gebruikt en kunt u `null` opgeven.
+   * Een object `CRLPreferences` dat voorkeuren voor certificaatintrekkingslijsten (CRL) opslaat. Als de intrekkingscontrole niet wordt uitgevoerd, wordt deze parameter niet gebruikt en kunt u `null` opgeven.
+   * Een object `TSPPreferences` dat voorkeuren voor ondersteuning voor tijdstempelprovider (TSP) opslaat. Nadat u bijvoorbeeld een `TSPPreferences`-object hebt gemaakt, kunt u de URL van de TSP instellen door het `TSPPreferences`-gegevenslid van het object `tspServerURL` in te stellen. Deze parameter is optioneel en kan `null` zijn.
 
-   De `certify` methode retourneert een `BLOB` object dat het gecertificeerde PDF-document vertegenwoordigt.
+   De methode `certify` retourneert een `BLOB`-object dat het gecertificeerde PDF-document vertegenwoordigt.
 
 1. Het gecertificeerde PDF-document opslaan als een PDF-bestand
 
-   * Maak een `System.IO.FileStream` object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie vertegenwoordigt van het PDF-document dat het gecertificeerde PDF-document zal bevatten en de modus waarin het bestand moet worden geopend.
-   * Maak een bytearray waarin de inhoud wordt opgeslagen van het `BLOB` object dat door de `certify` methode is geretourneerd. Vul de bytearray met de waarde van het `BLOB` `binaryData` gegevenslid van het object.
-   * Maak een `System.IO.BinaryWriter` object door de constructor ervan aan te roepen en het `System.IO.FileStream` object door te geven.
-   * Schrijf de inhoud van de bytearray naar een PDF-bestand door de methode van het `System.IO.BinaryWriter` `Write` object aan te roepen en de bytearray door te geven.
+   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie vertegenwoordigt van het PDF-document dat het gecertificeerde PDF-document zal bevatten en de modus waarin het bestand moet worden geopend.
+   * Maak een bytearray waarin de inhoud wordt opgeslagen van het object `BLOB` dat door de methode `certify` is geretourneerd. Vul de bytearray met de waarde van het `BLOB`-gegevenslid van het object `binaryData`.
+   * Maak een `System.IO.BinaryWriter`-object door de constructor ervan aan te roepen en het object `System.IO.FileStream` door te geven.
+   * Schrijf de inhoud van de bytearray naar een PDF-bestand door de methode `Write` van het object `System.IO.BinaryWriter` aan te roepen en de bytearray door te geven.
 
 **Zie ook**
 
@@ -1281,11 +1281,11 @@ Een PDF-document certificeren met de handtekening-API (webservice):
 
 [AEM Forms aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
-## Digitale handtekeningen verifiëren {#verifying-digital-signatures}
+## Digitale handtekeningen controleren {#verifying-digital-signatures}
 
 Digitale handtekeningen kunnen worden geverifieerd om ervoor te zorgen dat een ondertekend PDF-document niet is gewijzigd en dat de digitale handtekening geldig is. Wanneer u een digitale handtekening verifieert, kunt u de status van de handtekening en de eigenschappen van de handtekening controleren, zoals de identiteit van de ondertekenaar. Voordat u een digitale handtekening vertrouwt, is het raadzaam deze te controleren. Wanneer u een digitale handtekening verifieert, verwijst u naar een PDF-document dat een digitale handtekening bevat.
 
-Stel dat de identiteit van de ondertekenaar onbekend is. Wanneer u het PDF-document in Acrobat opent, wordt in een waarschuwingsbericht gemeld dat de identiteit van de ondertekenaar onbekend is, zoals in de volgende afbeelding wordt getoond.
+Stel dat de identiteit van de ondertekenaar onbekend is. Wanneer u het PDF-document opent in Acrobat, wordt een waarschuwingsbericht weergegeven dat de identiteit van de ondertekenaar onbekend is, zoals in de volgende afbeelding wordt getoond.
 
 ![vd_vd_verivrog](assets/vd_vd_verifysig.png)
 
@@ -1293,9 +1293,9 @@ Op dezelfde manier kunt u, wanneer u een digitale handtekening programmatisch ve
 
 >[!NOTE]
 >
->Zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63)voor meer informatie over de service Handtekening en het controleren van digitale handtekeningen.
+>Zie [Referentiehandtekeningen voor services voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63) voor meer informatie over de service Handtekening en het controleren van digitale handtekeningen.
 
-### Overzicht van de stappen {#summary_of_steps-6}
+### Overzicht van stappen {#summary_of_steps-6}
 
 Voer de volgende taken uit om een digitale handtekening te verifiëren:
 
@@ -1316,10 +1316,10 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-signatures-client.jar
-* adobe-utilities.jar (vereist als AEM Forms worden geïmplementeerd op JBoss)
-* jbossall-client.jar (vereist als AEM Forms worden geïmplementeerd op JBoss)
+* adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
+* jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
 
-Zie [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van deze JAR-bestanden.
+Zie [Including AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files) voor informatie over de locatie van deze JAR-bestanden.
 
 **Een handtekeningclient maken**
 
@@ -1337,23 +1337,23 @@ Stel de volgende PKI-uitvoeringsopties in die de handtekeningservice gebruikt bi
 * Intrekkingscontrole
 * Waarden voor tijdstempels
 
-Als onderdeel van het instellen van deze opties kunt u een verificatietijd opgeven. U kunt bijvoorbeeld de huidige tijd selecteren (de tijd op de computer van de validator), die aangeeft dat de huidige tijd moet worden gebruikt. Zie de `VerificationTime` opsommingswaarde in de API-naslaggids voor [AEM Forms voor meer informatie over de verschillende tijdwaarden](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+Als onderdeel van het instellen van deze opties kunt u een verificatietijd opgeven. U kunt bijvoorbeeld de huidige tijd selecteren (de tijd op de computer van de validator), die aangeeft dat de huidige tijd moet worden gebruikt. Zie de opsommingswaarde `VerificationTime` in [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en) voor informatie over de verschillende tijdwaarden.
 
-U kunt ook opgeven of de intrekkingscontrole moet worden uitgevoerd tijdens het verificatieproces. U kunt bijvoorbeeld een intrekkingscontrole uitvoeren om te bepalen of het certificaat wordt ingetrokken. Zie de `RevocationCheckStyle` opsommingswaarde in de API-naslaggids voor [AEM Forms voor informatie over de opties voor intrekkingscontrole](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+U kunt ook opgeven of de intrekkingscontrole moet worden uitgevoerd tijdens het verificatieproces. U kunt bijvoorbeeld een intrekkingscontrole uitvoeren om te bepalen of het certificaat wordt ingetrokken. Zie de opsommingswaarde `RevocationCheckStyle` in [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en) voor informatie over de opties voor intrekkingscontrole.
 
-Als u de intrekkingscontrole op een certificaat wilt uitvoeren, geeft u een URL op naar een server met een certificaatintrekkingslijst (CRL) met een `CRLOptionSpec` object. Als u echter geen URL opgeeft naar de CRL-server, verkrijgt de handtekeningservice de URL van het certificaat.
+Als u intrekkingscontrole wilt uitvoeren op een certificaat, geeft u een URL op naar een server met een certificaatintrekkingslijst (CRL) met behulp van een object `CRLOptionSpec`. Als u echter geen URL opgeeft naar de CRL-server, verkrijgt de handtekeningservice de URL van het certificaat.
 
 In plaats van een CRL-server te gebruiken, kunt u een OCSP-server (online certificate Status Protocol) gebruiken bij het controleren van intrekkingen. Wanneer u een OCSP-server gebruikt in tegenstelling tot een CRL-server, wordt de intrekkingscontrole meestal sneller uitgevoerd. (Zie [Online Certificate Status Protocol](https://tools.ietf.org/html/rfc2560).)
 
-U kunt de CRL- en OCSP-servervolgorde instellen die de handtekeningservice gebruikt met Adobe-toepassingen en -services. Als de OCSP-server bijvoorbeeld eerst is ingesteld in Adobe-toepassingen en -services, wordt de OCSP-server gecontroleerd, gevolgd door de CRL-server.
+U kunt de de serverorde plaatsen CRL en OCSP die de dienst van de Ondertekening door de Toepassingen en de Diensten van de Adobe te gebruiken gebruikt. Bijvoorbeeld, als de OCSP server eerst in de Toepassingen en de Diensten van Adobe wordt geplaatst, dan wordt de server OCSP gecontroleerd, die door de server CRL wordt gevolgd.
 
 Als u de intrekkingscontrole niet uitvoert, controleert de service Handtekening niet of het certificaat is ingetrokken. Dat wil zeggen dat CRL- en OCSP-serverinformatie wordt genegeerd.
 
 >[!NOTE]
 >
->U kunt de URL die in het certificaat is opgegeven, overschrijven met een `CRLOptionSpec` en een `OCSPOptionSpec` object. Als u bijvoorbeeld de CRL-server wilt overschrijven, kunt u de `CRLOptionSpec` methode van het `setLocalURI` object aanroepen.
+>U kunt de in het certificaat opgegeven URL overschrijven met een object `CRLOptionSpec` en een object `OCSPOptionSpec`. Als u bijvoorbeeld de CRL-server wilt overschrijven, kunt u de methode `setLocalURI` van het object `CRLOptionSpec` aanroepen.
 
-Tijdstempel is het proces waarbij de tijd wordt bijgehouden waarop een ondertekend of gecertificeerd document is gewijzigd. Nadat een document is ondertekend, kan niemand het wijzigen. Met tijdstempels kunt u de geldigheid van een ondertekend of gecertificeerd document afdwingen. U kunt opties voor tijdstempels instellen met behulp van een `TSPOptionSpec` object. U kunt bijvoorbeeld de URL van een server met een tijdstempelprovider (TSP) opgeven.
+Tijdstempel is het proces waarbij de tijd wordt bijgehouden waarop een ondertekend of gecertificeerd document is gewijzigd. Nadat een document is ondertekend, kan niemand het wijzigen. Met tijdstempels kunt u de geldigheid van een ondertekend of gecertificeerd document afdwingen. U kunt opties voor tijdstempeling instellen met een object `TSPOptionSpec`. U kunt bijvoorbeeld de URL van een server met een tijdstempelprovider (TSP) opgeven.
 
 >[!NOTE]
 >
@@ -1361,13 +1361,13 @@ Tijdstempel is het proces waarbij de tijd wordt bijgehouden waarop een onderteke
 
 **De digitale handtekening verifiëren**
 
-Als u een handtekening wilt verifiëren, geeft u de volledig gekwalificeerde naam op van het handtekeningveld dat de handtekening bevat, bijvoorbeeld `form1[0].#subform[1].SignatureField3[3]`. Wanneer u een XFA-formulierveld gebruikt, kunt u ook de gedeeltelijke naam van het handtekeningveld gebruiken: `SignatureField3`.
+Als u een handtekening wilt verifiëren, geeft u de volledig gekwalificeerde naam op van het handtekeningveld dat de handtekening bevat, zoals `form1[0].#subform[1].SignatureField3[3]`. Wanneer u een XFA-formulierveld gebruikt, kunt u ook de gedeeltelijke naam van het handtekeningveld gebruiken: `SignatureField3`.
 
 De service Handtekening beperkt standaard de tijd die een document na de validatietijd kan worden ondertekend tot 65 minuten. Als een gebruiker probeert een handtekening op het huidige tijdstip te verifiëren en de ondertekeningstijd later is dan de huidige tijd en binnen 65 minuten, genereert de handtekeningservice geen verificatiefout.
 
 >[!NOTE]
 >
->Zie [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)voor andere waarden die u nodig hebt voor het controleren van een handtekening.
+>Zie [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en) voor andere waarden die u nodig hebt voor het controleren van een handtekening.
 
 **De status van de handtekening bepalen**
 
@@ -1401,39 +1401,39 @@ Verifieer een digitale handtekening met de API van de Handtekeningenservice (Jav
 
 1. Een handtekeningclient maken
 
-   * Maak een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
-   * Maak een `SignatureServiceClient` object door de constructor ervan te gebruiken en het `ServiceClientFactory` object door te geven.
+   * Maak een `ServiceClientFactory`-object dat verbindingseigenschappen bevat.
+   * Maak een `SignatureServiceClient`-object door de constructor ervan te gebruiken en het object `ServiceClientFactory` door te geven.
 
 1. Hiermee wordt het PDF-document opgehaald dat de handtekening bevat die moet worden gecontroleerd
 
-   * Maak een `java.io.FileInputStream` object dat staat voor het PDF-document met de handtekening die u wilt controleren met de constructor. Geef een tekenreekswaarde door die de locatie van het PDF-document aangeeft.
-   * Maak een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en het `java.io.FileInputStream` object door te geven.
+   * Maak een `java.io.FileInputStream`-object dat staat voor het PDF-document dat de handtekening bevat die moet worden geverifieerd met behulp van de constructor ervan. Geef een tekenreekswaarde door die de locatie van het PDF-document aangeeft.
+   * Maak een `com.adobe.idp.Document`-object door de constructor ervan te gebruiken en het object `java.io.FileInputStream` door te geven.
 
 1. PKI-runtime-opties instellen
 
-   * Maak een `PKIOptions` object met de constructor ervan.
-   * Stel de verificatietijd in door de `PKIOptions` methode van het `setVerificationTime` object aan te roepen en een `VerificationTime` opsommingswaarde door te geven die de verificatietijd opgeeft.
-   * Stel de optie voor intrekkingscontrole in door de methode van het `PKIOptions` object aan te roepen `setRevocationCheckStyle` en een `RevocationCheckStyle` opsommingswaarde door te geven die aangeeft of de intrekkingscontrole moet worden uitgevoerd.
+   * Maak een `PKIOptions`-object met de constructor ervan.
+   * Stel de verificatietijd in door de methode `setVerificationTime` van het object `PKIOptions` aan te roepen en een opsommingswaarde `VerificationTime` door te geven die de verificatietijd opgeeft.
+   * Stel de optie voor intrekkingscontrole in door de methode `setRevocationCheckStyle` van het object `PKIOptions` aan te roepen en een opsommingswaarde `RevocationCheckStyle` door te geven die aangeeft of een intrekkingscontrole moet worden uitgevoerd.
 
 1. De digitale handtekening verifiëren
 
-   Verifieer de handtekening door de methode van het `SignatureServiceClient` `verify2` object aan te roepen en de volgende waarden door te geven:
+   Verifieer de handtekening door de methode `SignatureServiceClient` van het object `verify2` aan te roepen en de volgende waarden door te geven:
 
-   * Een `com.adobe.idp.Document` object dat een digitaal ondertekend of gecertificeerd PDF-document bevat.
+   * Een `com.adobe.idp.Document`-object dat een digitaal ondertekend of gecertificeerd PDF-document bevat.
    * Een tekenreekswaarde die staat voor de naam van het handtekeningveld dat de te controleren handtekening bevat.
-   * Een `PKIOptions` object dat PKI-runtime-opties bevat.
-   * Een `VerifySPIOptions` instantie die SPI-informatie bevat. U kunt `null` voor deze parameter opgeven.
+   * Een `PKIOptions`-object dat PKI-runtime-opties bevat.
+   * Een `VerifySPIOptions`-instantie die SPI-informatie bevat. U kunt `null` voor deze parameter specificeren.
 
-   De `verify2` methode retourneert een `PDFSignatureVerificationInfo` object dat informatie bevat die kan worden gebruikt om de digitale handtekening te verifiëren.
+   De methode `verify2` retourneert een `PDFSignatureVerificationInfo`-object dat informatie bevat die kan worden gebruikt om de digitale handtekening te verifiëren.
 
 1. De status van de handtekening bepalen
 
-   * Bepaal de status van de handtekening door de `PDFSignatureVerificationInfo` methode van het `getStatus` object aan te roepen. Deze methode retourneert een `SignatureStatus` object dat de status van de handtekening opgeeft. Als een ondertekend PDF-document bijvoorbeeld niet wordt gewijzigd, wordt deze methode geretourneerd `SignatureStatus.DocumentSigNoChanges`.
+   * Bepaal de status van de handtekening door de methode `getStatus` van het object `PDFSignatureVerificationInfo` aan te roepen. Deze methode retourneert een `SignatureStatus`-object dat de status van de handtekening opgeeft. Als een ondertekend PDF-document bijvoorbeeld niet wordt gewijzigd, retourneert deze methode `SignatureStatus.DocumentSigNoChanges`.
 
 1. De identiteit van de ondertekenaar bepalen
 
-   * Bepaal de identiteit van de ondertekenaar door de `PDFSignatureVerificationInfo` methode van het `getSigner` object aan te roepen. Deze methode retourneert een `IdentityInformation` object.
-   * Roep de `IdentityInformation` methode van het `getStatus` object aan om de identiteit van de ondertekenaar te bepalen. Deze methode retourneert een `IdentityStatus` opsommingswaarde die de identiteit opgeeft. Als de ondertekenaar bijvoorbeeld wordt vertrouwd, wordt deze methode geretourneerd `IdentityStatus.TRUSTED`.
+   * Bepaal de identiteit van de ondertekenaar door de methode `getSigner` van het object `PDFSignatureVerificationInfo` aan te roepen. Deze methode retourneert een `IdentityInformation`-object.
+   * Roep de methode `IdentityInformation` van het object `getStatus` aan om de identiteit van de ondertekenaar te bepalen. Deze methode keert een `IdentityStatus` opsommingswaarde terug die de identiteit specificeert. Als de ondertekenaar bijvoorbeeld wordt vertrouwd, retourneert deze methode `IdentityStatus.TRUSTED`.
 
 **Zie ook**
 
@@ -1455,54 +1455,54 @@ Verifieer een digitale handtekening met behulp van de Signature Service API (web
 
    >[!NOTE]
    >
-   >Vervangen `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
+   >Vervang `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
 
 1. Een handtekeningclient maken
 
-   * Maak een `SignatureServiceClient` object met de standaardconstructor.
-   * Maak een `SignatureServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde door die de WSDL opgeeft voor de service AEM Forms (bijvoorbeeld `http://localhost:8080/soap/services/SignatureService?WSDL`). U hoeft het `lc_version` kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
-   * Maak een `System.ServiceModel.BasicHttpBinding` object door de waarde van het `SignatureServiceClient.Endpoint.Binding` veld op te halen. Kiezen naar de geretourneerde waarde `BasicHttpBinding`.
-   * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
+   * Maak een `SignatureServiceClient`-object met de standaardconstructor.
+   * Maak een `SignatureServiceClient.Endpoint.Address`-object met de constructor `System.ServiceModel.EndpointAddress`. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/SignatureService?WSDL`). U hoeft het `lc_version`-kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
+   * Maak een `System.ServiceModel.BasicHttpBinding`-object door de waarde van het veld `SignatureServiceClient.Endpoint.Binding` op te halen. Cast de terugkeerwaarde aan `BasicHttpBinding`.
+   * Stel het veld `System.ServiceModel.BasicHttpBinding` van het object `MessageEncoding` in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor AEM-formulieren toe aan het veld `SignatureServiceClient.ClientCredentials.UserName.UserName`.
-      * Wijs de bijbehorende wachtwoordwaarde aan het veld toe `SignatureServiceClient.ClientCredentials.UserName.Password`.
-      * Wijs de constante waarde toe `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Wijs de constante waarde toe `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode`.
+      * Wijs de gebruikersnaam voor het AEM aan het veld `SignatureServiceClient.ClientCredentials.UserName.UserName` toe.
+      * Wijs de overeenkomstige wachtwoordwaarde aan het gebied `SignatureServiceClient.ClientCredentials.UserName.Password` toe.
+      * Wijs de constante waarde `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType` toe.
+      * Wijs de constante waarde `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode` toe.
 
 1. Hiermee wordt het PDF-document opgehaald dat de handtekening bevat die moet worden gecontroleerd
 
-   * Maak een `BLOB` object met de constructor ervan. Het `BLOB` object wordt gebruikt om een PDF-document op te slaan dat een digitale of gecertificeerde handtekening bevat die moet worden geverifieerd.
-   * Maak een `System.IO.FileStream` object door de constructor ervan aan te roepen. Geef een tekenreekswaarde door die staat voor de bestandslocatie van het ondertekende PDF-document en de modus waarin het bestand moet worden geopend.
-   * Maak een bytearray waarin de inhoud van het `System.IO.FileStream` object wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de `System.IO.FileStream` eigenschap van het `Length` object op te halen.
-   * Vul de bytearray met streamgegevens door de `System.IO.FileStream` `Read` methode van het object aan te roepen. Geef de bytearray, de startpositie en de streamlengte door om te lezen.
-   * Vul het `BLOB` object door de `MTOM` eigenschap ervan toe te wijzen aan de inhoud van de bytearray.
+   * Maak een `BLOB`-object met de constructor ervan. Met het object `BLOB` wordt een PDF-document opgeslagen dat een digitale of gecertificeerde handtekening bevat die moet worden geverifieerd.
+   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen. Geef een tekenreekswaarde door die staat voor de bestandslocatie van het ondertekende PDF-document en de modus waarin het bestand moet worden geopend.
+   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `System.IO.FileStream` van het object `Length` op te halen.
+   * Vul de bytearray met streamgegevens door de methode `Read` van het object `System.IO.FileStream` aan te roepen. Geef de bytearray, de startpositie en de streamlengte door om te lezen.
+   * Vul het object `BLOB` door de eigenschap `MTOM` van het object toe te wijzen aan de inhoud van de bytearray.
 
 1. PKI-runtime-opties instellen
 
-   * Maak een `PKIOptions` object met de constructor ervan.
-   * Stel de verificatietijd in door het `PKIOptions` gegevenslid van het `verificationTime` object een `VerificationTime` opsommingswaarde toe te wijzen die de verificatietijd opgeeft.
-   * Stel de optie voor intrekkingscontrole in door het `PKIOptions` gegevenslid van het `revocationCheckStyle` object een `RevocationCheckStyle` opsommingswaarde toe te wijzen die aangeeft of de intrekkingscontrole moet worden uitgevoerd.
+   * Maak een `PKIOptions`-object met de constructor ervan.
+   * Stel de verificatietijd in door het `PKIOptions`-gegevenslid van het object `verificationTime` een `VerificationTime`-opsommingswaarde toe te wijzen die de verificatietijd opgeeft.
+   * Stel de optie voor intrekkingscontrole in door het `PKIOptions`-gegevenslid van het object `revocationCheckStyle` een `RevocationCheckStyle`-opsommingswaarde toe te wijzen die aangeeft of een intrekkingscontrole moet worden uitgevoerd.
 
 1. De digitale handtekening verifiëren
 
-   Verifieer de handtekening door de methode van het `SignatureServiceClient` `verify2` object aan te roepen en de volgende waarden door te geven:
+   Verifieer de handtekening door de methode `SignatureServiceClient` van het object `verify2` aan te roepen en de volgende waarden door te geven:
 
-   * Het `BLOB` object dat een digitaal ondertekend of gecertificeerd PDF-document bevat.
+   * Het `BLOB`-object dat een digitaal ondertekend of gecertificeerd PDF-document bevat.
    * Een tekenreekswaarde die staat voor de naam van het handtekeningveld dat de te controleren handtekening bevat.
-   * Een `PKIOptions` object dat PKI-runtime-opties bevat.
-   * Een `VerifySPIOptions` instantie die SPI-informatie bevat. U kunt `null` voor deze parameter opgeven.
+   * Een `PKIOptions`-object dat PKI-runtime-opties bevat.
+   * Een `VerifySPIOptions`-instantie die SPI-informatie bevat. U kunt `null` voor deze parameter specificeren.
 
-   De `verify2` methode retourneert een `PDFSignatureVerificationInfo` object dat informatie bevat die kan worden gebruikt om de digitale handtekening te verifiëren.
+   De methode `verify2` retourneert een `PDFSignatureVerificationInfo`-object dat informatie bevat die kan worden gebruikt om de digitale handtekening te verifiëren.
 
 1. De status van de handtekening bepalen
 
-   Bepaal de status van de handtekening door de waarde van het `PDFSignatureVerificationInfo` gegevenslid van het `status` object op te halen. Dit gegevenslid slaat een `SignatureStatus` object op dat de status van de handtekening opgeeft. Als bijvoorbeeld een ondertekend PDF-document wordt gewijzigd, slaat het `status` gegevenslid de waarde op `SignatureStatus.DocumentSigNoChanges`.
+   Bepaal de status van de handtekening door de waarde op te halen van het `PDFSignatureVerificationInfo`-gegevenslid van het object. `status` Dit gegevenslid slaat een `SignatureStatus`-object op dat de status van de handtekening opgeeft. Als bijvoorbeeld een ondertekend PDF-document wordt gewijzigd, slaat het gegevenslid `status` de waarde `SignatureStatus.DocumentSigNoChanges` op.
 
 1. De identiteit van de ondertekenaar bepalen
 
-   * Bepaal de identiteit van de ondertekenaar door de waarde van het `PDFSignatureVerificationInfo` gegevenslid van het `signer` object op te halen. Dit lid retourneert een `IdentityInformation` object.
-   * Haal het `IdentityInformation` gegevenslid van het `status` object op om de identiteit van de ondertekenaar te bepalen. Dit gegevenslid keert een `IdentityStatus` opsommingswaarde terug die de identiteit specificeert. Als de ondertekenaar bijvoorbeeld wordt vertrouwd, retourneert dit lid `IdentityStatus.TRUSTED`.
+   * Bepaal de identiteit van de ondertekenaar door de waarde van het `PDFSignatureVerificationInfo` gegevenslid van het object `signer` op te halen. Dit lid retourneert een `IdentityInformation`-object.
+   * Haal het `IdentityInformation` gegevenslid van het object `status` op om de identiteit van de ondertekenaar te bepalen. Dit gegevenslid keert een `IdentityStatus` opsommingswaarde terug die de identiteit specificeert. Als de ondertekenaar bijvoorbeeld wordt vertrouwd, retourneert dit lid `IdentityStatus.TRUSTED`.
 
 **Zie ook**
 
@@ -1514,13 +1514,13 @@ Verifieer een digitale handtekening met behulp van de Signature Service API (web
 
 ## Meerdere digitale handtekeningen controleren {#verifying-multiple-digital-signatures}
 
-AEM Forms bieden de mogelijkheid om alle digitale handtekeningen in een PDF-document te verifiëren. Stel dat een PDF-document meerdere digitale handtekeningen bevat als gevolg van een bedrijfsproces waarvoor handtekeningen van meerdere ondertekenaars nodig zijn. Neem bijvoorbeeld een financiële transactie waarvoor zowel de handtekening van een medewerker als die van een manager is vereist. Met de Java API of API voor webservices van de handtekeningenservice kunt u alle handtekeningen in het PDF-document verifiëren. Wanneer u meerdere digitale handtekeningen controleert, kunt u de status en eigenschappen van elke handtekening controleren. Voordat u een digitale handtekening vertrouwt, is het raadzaam deze te verifiëren. U wordt aangeraden bekend te zijn met het controleren van één digitale handtekening.
+AEM Forms biedt de mogelijkheid om alle digitale handtekeningen in een PDF-document te verifiëren. Stel dat een PDF-document meerdere digitale handtekeningen bevat als gevolg van een bedrijfsproces waarvoor handtekeningen van meerdere ondertekenaars nodig zijn. Neem bijvoorbeeld een financiële transactie waarvoor zowel de handtekening van een medewerker als die van een manager is vereist. Met de Java API of API voor webservices van de handtekeningenservice kunt u alle handtekeningen in het PDF-document verifiëren. Wanneer u meerdere digitale handtekeningen controleert, kunt u de status en eigenschappen van elke handtekening controleren. Voordat u een digitale handtekening vertrouwt, is het raadzaam deze te verifiëren. U wordt aangeraden bekend te zijn met het controleren van één digitale handtekening.
 
 >[!NOTE]
 >
->Zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63)voor meer informatie over de service Handtekening en het controleren van digitale handtekeningen.
+>Zie [Referentiehandtekeningen voor services voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63) voor meer informatie over de service Handtekening en het controleren van digitale handtekeningen.
 
-### Overzicht van de stappen {#summary_of_steps-7}
+### Overzicht van stappen {#summary_of_steps-7}
 
 Voer de volgende taken uit om meerdere digitale handtekeningen te verifiëren:
 
@@ -1540,10 +1540,10 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-signatures-client.jar
-* adobe-utilities.jar (vereist als AEM Forms worden geïmplementeerd op JBoss)
-* jbossall-client.jar (vereist als AEM Forms worden geïmplementeerd op JBoss)
+* adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
+* jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
 
-Zie [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van deze JAR-bestanden.
+Zie [Including AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files) voor informatie over de locatie van deze JAR-bestanden.
 
 **Een handtekeningclient maken**
 
@@ -1561,23 +1561,23 @@ Stel de volgende PKI-runtime-opties in die de handtekeningservice gebruikt bij h
 * Intrekkingscontrole
 * Waarden voor tijdstempels
 
-Als onderdeel van het instellen van deze opties kunt u een verificatietijd opgeven. U kunt bijvoorbeeld de huidige tijd selecteren (de tijd op de computer van de validator), die aangeeft dat de huidige tijd moet worden gebruikt. Zie de `VerificationTime` opsommingswaarde in de API-naslaggids voor [AEM Forms voor meer informatie over de verschillende tijdwaarden](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+Als onderdeel van het instellen van deze opties kunt u een verificatietijd opgeven. U kunt bijvoorbeeld de huidige tijd selecteren (de tijd op de computer van de validator), die aangeeft dat de huidige tijd moet worden gebruikt. Zie de opsommingswaarde `VerificationTime` in [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en) voor informatie over de verschillende tijdwaarden.
 
-U kunt ook opgeven of de intrekkingscontrole moet worden uitgevoerd tijdens het verificatieproces. U kunt bijvoorbeeld een intrekkingscontrole uitvoeren om te bepalen of het certificaat wordt ingetrokken. Zie de `RevocationCheckStyle` opsommingswaarde in de API-naslaggids voor [AEM Forms voor informatie over de opties voor intrekkingscontrole](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+U kunt ook opgeven of de intrekkingscontrole moet worden uitgevoerd tijdens het verificatieproces. U kunt bijvoorbeeld een intrekkingscontrole uitvoeren om te bepalen of het certificaat wordt ingetrokken. Zie de opsommingswaarde `RevocationCheckStyle` in [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en) voor informatie over de opties voor intrekkingscontrole.
 
-Als u de intrekkingscontrole op een certificaat wilt uitvoeren, geeft u een URL op naar een server met een certificaatintrekkingslijst (CRL) met een `CRLOptionSpec` object. Als u echter geen URL opgeeft naar een CRL-server, verkrijgt de handtekeningservice de URL van het certificaat.
+Als u intrekkingscontrole wilt uitvoeren op een certificaat, geeft u een URL op naar een server met een certificaatintrekkingslijst (CRL) met behulp van een object `CRLOptionSpec`. Als u echter geen URL opgeeft naar een CRL-server, verkrijgt de handtekeningservice de URL van het certificaat.
 
 In plaats van een CRL-server te gebruiken, kunt u een OCSP-server (online certificate Status Protocol) gebruiken bij het controleren van intrekkingen. Wanneer u een OCSP-server gebruikt in plaats van een CRL-server, wordt de intrekkingscontrole meestal sneller uitgevoerd. (Zie [Online Certificate Status Protocol](https://tools.ietf.org/html/rfc2560).)
 
-U kunt de CRL- en OCSP-servervolgorde instellen die de handtekeningservice gebruikt met Adobe-toepassingen en -services. Als de OCSP-server bijvoorbeeld als eerste is ingesteld in Adobe-toepassingen en -services, wordt de OCSP-server gecontroleerd, gevolgd door de CRL-server.
+U kunt de de serverorde plaatsen CRL en OCSP die de dienst van de Ondertekening door de Toepassingen en de Diensten van de Adobe te gebruiken gebruikt. Bijvoorbeeld, als de OCSP server eerst in de Toepassingen en de Diensten van de Adobe wordt geplaatst, wordt de server OCSP gecontroleerd, die door de server CRL wordt gevolgd.
 
 Als u de intrekkingscontrole niet uitvoert, controleert de service Handtekening niet of het certificaat is ingetrokken. Dat wil zeggen dat CRL- en OCSP-serverinformatie wordt genegeerd.
 
 >[!NOTE]
 >
->U kunt de URL die in het certificaat is opgegeven, overschrijven met een `CRLOptionSpec` en een `OCSPOptionSpec` object. Als u bijvoorbeeld de CRL-server wilt overschrijven, kunt u de `CRLOptionSpec` methode van het `setLocalURI` object aanroepen.
+>U kunt de in het certificaat opgegeven URL overschrijven met een object `CRLOptionSpec` en een object `OCSPOptionSpec`. Als u bijvoorbeeld de CRL-server wilt overschrijven, kunt u de methode `setLocalURI` van het object `CRLOptionSpec` aanroepen.
 
-Tijdstempel is het proces waarbij de tijd wordt bijgehouden waarop een ondertekend of gecertificeerd document is gewijzigd. Nadat een document is ondertekend, kan niemand het wijzigen. Met tijdstempels kunt u de geldigheid van een ondertekend of gecertificeerd document afdwingen. U kunt opties voor tijdstempels instellen met een `TSPOptionSpec` object. U kunt bijvoorbeeld de URL van een server met een tijdstempelprovider (TSP) opgeven.
+Tijdstempel is het proces waarbij de tijd wordt bijgehouden waarop een ondertekend of gecertificeerd document is gewijzigd. Nadat een document is ondertekend, kan niemand het wijzigen. Met tijdstempels kunt u de geldigheid van een ondertekend of gecertificeerd document afdwingen. U kunt opties voor tijdstempels instellen met een object `TSPOptionSpec`. U kunt bijvoorbeeld de URL van een server met een tijdstempelprovider (TSP) opgeven.
 
 >[!NOTE]
 >
@@ -1593,7 +1593,7 @@ Als u alle digitale handtekeningen in een PDF-document wilt controleren, haalt u
 
 **Alle handtekeningen doorlopen**
 
-Doorloop elke handtekening. Met andere woorden, controleer voor elke handtekening de digitale handtekening en controleer de identiteit van de ondertekenaar en de status van elke handtekening. (Zie Digitale handtekeningen [verifiëren](#verify-digital-signatures-using-the-java-api).)
+Doorloop elke handtekening. Met andere woorden, controleer voor elke handtekening de digitale handtekening en controleer de identiteit van de ondertekenaar en de status van elke handtekening. (Zie [Digitale handtekeningen controleren](#verify-digital-signatures-using-the-java-api).)
 
 >[!NOTE]
 >
@@ -1619,34 +1619,34 @@ Verifieer meerdere digitale handtekeningen met de API voor handtekeningenservice
 
 1. Een handtekeningclient maken
 
-   * Maak een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
-   * Maak een `SignatureServiceClient` object door de constructor ervan te gebruiken en het `ServiceClientFactory` object door te geven.
+   * Maak een `ServiceClientFactory`-object dat verbindingseigenschappen bevat.
+   * Maak een `SignatureServiceClient`-object door de constructor ervan te gebruiken en het object `ServiceClientFactory` door te geven.
 
 1. Het PDF-document met de handtekeningen ophalen om te controleren
 
-   * Maak een `java.io.FileInputStream` object dat staat voor het PDF-document met meerdere digitale handtekeningen die u met de constructor ervan kunt controleren. Geef een tekenreekswaarde door die de locatie van het PDF-document aangeeft.
-   * Maak een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en het `java.io.FileInputStream` object door te geven.
+   * Maak een `java.io.FileInputStream`-object dat staat voor het PDF-document dat meerdere digitale handtekeningen bevat die u met de constructor ervan kunt controleren. Geef een tekenreekswaarde door die de locatie van het PDF-document aangeeft.
+   * Maak een `com.adobe.idp.Document`-object door de constructor ervan te gebruiken en het object `java.io.FileInputStream` door te geven.
 
 1. PKI-runtime-opties instellen
 
-   * Maak een `PKIOptions` object met de constructor ervan.
-   * Stel de verificatietijd in door de `PKIOptions` methode van het `setVerificationTime` object aan te roepen en een `VerificationTime` opsommingswaarde door te geven die de verificatietijd opgeeft.
-   * Stel de optie voor intrekkingscontrole in door de `PKIOptions` methode van het object aan te roepen en een `setRevocationCheckStyle` `RevocationCheckStyle` opsommingswaarde door te geven die aangeeft of de intrekkingscontrole moet worden uitgevoerd.
+   * Maak een `PKIOptions`-object met de constructor ervan.
+   * Stel de verificatietijd in door de methode `setVerificationTime` van het object `PKIOptions` aan te roepen en een opsommingswaarde `VerificationTime` door te geven die de verificatietijd opgeeft.
+   * Stel de optie voor intrekkingscontrole in door de methode `setRevocationCheckStyle` van het object `PKIOptions` aan te roepen en een `RevocationCheckStyle`-opsommingswaarde door te geven die aangeeft of een intrekkingscontrole moet worden uitgevoerd.
 
 1. Alle digitale handtekeningen ophalen
 
-   Roep de methode van het `SignatureServiceClient` `verifyPDFDocument` object aan en geef de volgende waarden door:
+   Roep de methode `verifyPDFDocument` van het object `SignatureServiceClient` aan en geef de volgende waarden door:
 
-   * Een `com.adobe.idp.Document` object dat een PDF-document bevat dat meerdere digitale handtekeningen bevat.
-   * Een `PKIOptions` object dat PKI-runtime-opties bevat.
-   * Een `VerifySPIOptions` instantie die SPI-informatie bevat. U kunt `null` voor deze parameter opgeven.
+   * Een `com.adobe.idp.Document`-object dat een PDF-document bevat dat meerdere digitale handtekeningen bevat.
+   * Een `PKIOptions`-object dat PKI-runtime-opties bevat.
+   * Een `VerifySPIOptions`-instantie die SPI-informatie bevat. U kunt `null` voor deze parameter specificeren.
 
-   De `verifyPDFDocument` methode retourneert een `PDFDocumentVerificationInfo` object dat informatie bevat over alle digitale handtekeningen in het PDF-document.
+   De methode `verifyPDFDocument` retourneert een `PDFDocumentVerificationInfo`-object dat informatie bevat over alle digitale handtekeningen in het PDF-document.
 
 1. Alle handtekeningen doorlopen
 
-   * Doorloop alle handtekeningen door de `PDFDocumentVerificationInfo` methode van het `getVerificationInfos` object aan te roepen. Deze methode retourneert een `java.util.List` object waarbij elk element een `PDFSignatureVerificationInfo` object is. Gebruik een `java.util.Iterator` object om de lijst met handtekeningen te doorlopen.
-   * Met behulp van het `PDFSignatureVerificationInfo` object kunt u taken uitvoeren, zoals het bepalen van de status van de handtekening door de `PDFSignatureVerificationInfo` methode van het `getStatus` object aan te roepen. Deze methode retourneert een `SignatureStatus` object waarvan het statische gegevenslid u op de hoogte stelt van de status van de handtekening. Als de handtekening bijvoorbeeld onbekend is, wordt deze methode geretourneerd `SignatureStatus.DocumentSignatureUnknown`.
+   * Doorloop alle handtekeningen door de methode `getVerificationInfos` van het object `PDFDocumentVerificationInfo` aan te roepen. Deze methode retourneert een `java.util.List`-object waarbij elk element een `PDFSignatureVerificationInfo`-object is. Gebruik een `java.util.Iterator`-object om de lijst met handtekeningen te doorlopen.
+   * Met het object `PDFSignatureVerificationInfo` kunt u taken uitvoeren zoals het bepalen van de status van de handtekening door de methode `PDFSignatureVerificationInfo` van het object `getStatus` aan te roepen. Deze methode retourneert een `SignatureStatus`-object waarvan het statische gegevenslid u op de hoogte stelt van de status van de handtekening. Als de handtekening bijvoorbeeld onbekend is, retourneert deze methode `SignatureStatus.DocumentSignatureUnknown`.
 
 **Zie ook**
 
@@ -1660,7 +1660,7 @@ Verifieer meerdere digitale handtekeningen met de API voor handtekeningenservice
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Meerdere digitale handtekeningen verifiëren met de webservice-API {#verifying-multiple-digital-signatures-using-the-web-service-api}
+### Meerdere digitale handtekeningen controleren met de webservice-API {#verifying-multiple-digital-signatures-using-the-web-service-api}
 
 Verifieer veelvoudige digitale handtekeningen door de Dienst API van de Handtekening (Webdienst te gebruiken):
 
@@ -1670,49 +1670,49 @@ Verifieer veelvoudige digitale handtekeningen door de Dienst API van de Handteke
 
    >[!NOTE]
    >
-   >Vervangen `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
+   >Vervang `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
 
 1. Een handtekeningclient maken
 
-   * Maak een `SignatureServiceClient` object met de standaardconstructor.
-   * Maak een `SignatureServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde door die de WSDL opgeeft voor de service AEM Forms (bijvoorbeeld `http://localhost:8080/soap/services/SignatureService?WSDL`). U hoeft het `lc_version` kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
-   * Maak een `System.ServiceModel.BasicHttpBinding` object door de waarde van het `SignatureServiceClient.Endpoint.Binding` veld op te halen. Kiezen naar de geretourneerde waarde `BasicHttpBinding`.
-   * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
+   * Maak een `SignatureServiceClient`-object met de standaardconstructor.
+   * Maak een `SignatureServiceClient.Endpoint.Address`-object met de constructor `System.ServiceModel.EndpointAddress`. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/SignatureService?WSDL`). U hoeft het `lc_version`-kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
+   * Maak een `System.ServiceModel.BasicHttpBinding`-object door de waarde van het veld `SignatureServiceClient.Endpoint.Binding` op te halen. Cast de terugkeerwaarde aan `BasicHttpBinding`.
+   * Stel het veld `System.ServiceModel.BasicHttpBinding` van het object `MessageEncoding` in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor AEM-formulieren toe aan het veld `SignatureServiceClient.ClientCredentials.UserName.UserName`.
-      * Wijs de bijbehorende wachtwoordwaarde aan het veld toe `SignatureServiceClient.ClientCredentials.UserName.Password`.
-      * Wijs de constante waarde toe `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Wijs de constante waarde toe `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode`.
+      * Wijs de gebruikersnaam voor het AEM aan het veld `SignatureServiceClient.ClientCredentials.UserName.UserName` toe.
+      * Wijs de overeenkomstige wachtwoordwaarde aan het gebied `SignatureServiceClient.ClientCredentials.UserName.Password` toe.
+      * Wijs de constante waarde `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType` toe.
+      * Wijs de constante waarde `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode` toe.
 
 1. Het PDF-document met de handtekeningen ophalen om te controleren
 
-   * Maak een `BLOB` object met de constructor ervan. In het `BLOB` object wordt een PDF-document opgeslagen dat meerdere digitale handtekeningen bevat om te controleren.
-   * Maak een `System.IO.FileStream` object door de constructor ervan aan te roepen. Geef een tekenreekswaarde door die staat voor de bestandslocatie van het PDF-document en de modus waarin het bestand moet worden geopend.
-   * Maak een bytearray waarin de inhoud van het `System.IO.FileStream` object wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de `System.IO.FileStream` eigenschap van het `Length` object op te halen.
-   * Vul de bytearray met streamgegevens door de `System.IO.FileStream` `Read` methode van het object aan te roepen. Geef de bytearray, de startpositie en de streamlengte door om te lezen.
-   * Vul het `BLOB` object door de `MTOM` eigenschap ervan toe te wijzen aan de inhoud van de bytearray.
+   * Maak een `BLOB`-object met de constructor ervan. In het object `BLOB` wordt een PDF-document opgeslagen dat meerdere digitale handtekeningen bevat die moeten worden geverifieerd.
+   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen. Geef een tekenreekswaarde door die staat voor de bestandslocatie van het PDF-document en de modus waarin het bestand moet worden geopend.
+   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `System.IO.FileStream` van het object `Length` op te halen.
+   * Vul de bytearray met streamgegevens door de methode `Read` van het object `System.IO.FileStream` aan te roepen. Geef de bytearray, de startpositie en de streamlengte door om te lezen.
+   * Vul het object `BLOB` door de eigenschap `MTOM` van het object toe te wijzen aan de inhoud van de bytearray.
 
 1. PKI-runtime-opties instellen
 
-   * Maak een `PKIOptions` object met de constructor ervan.
-   * Stel de verificatietijd in door het `PKIOptions` gegevenslid van het `verificationTime` object een `VerificationTime` opsommingswaarde toe te wijzen die de verificatietijd opgeeft.
-   * Stel de optie voor intrekkingscontrole in door het `PKIOptions` gegevenslid van het `revocationCheckStyle` object een `RevocationCheckStyle` opsommingswaarde toe te wijzen die aangeeft of de intrekkingscontrole moet worden uitgevoerd.
+   * Maak een `PKIOptions`-object met de constructor ervan.
+   * Stel de verificatietijd in door het `PKIOptions`-gegevenslid van het object `verificationTime` een `VerificationTime`-opsommingswaarde toe te wijzen die de verificatietijd opgeeft.
+   * Stel de optie voor intrekkingscontrole in door het `PKIOptions`-gegevenslid van het object `revocationCheckStyle` een `RevocationCheckStyle`-opsommingswaarde toe te wijzen die aangeeft of een intrekkingscontrole moet worden uitgevoerd.
 
 1. Alle digitale handtekeningen ophalen
 
-   Roep de methode van het `SignatureServiceClient` `verifyPDFDocument` object aan en geef de volgende waarden door:
+   Roep de methode `verifyPDFDocument` van het object `SignatureServiceClient` aan en geef de volgende waarden door:
 
-   * Een `BLOB` object dat een PDF-document bevat dat meerdere digitale handtekeningen bevat.
-   * Een `PKIOptions` object dat PKI-runtime-opties bevat.
-   * Een `VerifySPIOptions` instantie die SPI-informatie bevat. U kunt null opgeven voor deze parameter.
+   * Een `BLOB`-object dat een PDF-document bevat dat meerdere digitale handtekeningen bevat.
+   * Een `PKIOptions`-object dat PKI-runtime-opties bevat.
+   * Een `VerifySPIOptions`-instantie die SPI-informatie bevat. U kunt null opgeven voor deze parameter.
 
-   De `verifyPDFDocument` methode retourneert een `PDFDocumentVerificationInfo` object dat informatie bevat over alle digitale handtekeningen in het PDF-document.
+   De methode `verifyPDFDocument` retourneert een `PDFDocumentVerificationInfo`-object dat informatie bevat over alle digitale handtekeningen in het PDF-document.
 
 1. Alle handtekeningen doorlopen
 
-   * Doorloop alle handtekeningen door het `PDFDocumentVerificationInfo` gegevenslid van het `verificationInfos` object op te halen. Dit gegevenslid retourneert een `Object` array waarin elk element een `PDFSignatureVerificationInfo` object is.
-   * Met het `PDFSignatureVerificationInfo` object kunt u bijvoorbeeld de status van de handtekening bepalen door het gegevenslid van het `PDFSignatureVerificationInfo` `status` object op te halen. Dit gegevenslid retourneert een `SignatureStatus` object waarvan het lid van het type static data u informeert over de status van de handtekening. Als de handtekening bijvoorbeeld onbekend is, wordt deze methode geretourneerd `SignatureStatus.DocumentSignatureUnknown`.
+   * Doorloop alle handtekeningen door het `PDFDocumentVerificationInfo`-gegevenslid van het object `verificationInfos` op te halen. Dit gegevenslid retourneert een `Object`-array waarbij elk element een `PDFSignatureVerificationInfo`-object is.
+   * Met het object `PDFSignatureVerificationInfo` kunt u taken uitvoeren zoals het bepalen van de status van de handtekening door het `PDFSignatureVerificationInfo`-gegevenslid van het object `status` op te halen. Dit gegevenslid retourneert een `SignatureStatus`-object waarvan het statische gegevenslid u op de hoogte stelt van de status van de handtekening. Als de handtekening bijvoorbeeld onbekend is, retourneert deze methode `SignatureStatus.DocumentSignatureUnknown`.
 
 **Zie ook**
 
@@ -1728,9 +1728,9 @@ Digitale handtekeningen moeten uit een handtekeningveld worden verwijderd voorda
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Handtekening, zie de Verwijzing van de [Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Zie [Referentiehandleiding voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63) voor meer informatie over de service Handtekening.
 
-### Overzicht van de stappen {#summary_of_steps-8}
+### Overzicht van stappen {#summary_of_steps-8}
 
 Als u een digitale handtekening uit een handtekeningveld wilt verwijderen, voert u de volgende taken uit:
 
@@ -1749,10 +1749,10 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-signatures-client.jar
-* adobe-utilities.jar (vereist als AEM Forms worden geïmplementeerd op JBoss)
-* jbossall-client.jar (vereist als AEM Forms worden geïmplementeerd op JBoss)
+* adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
+* jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
 
-Zie [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van deze JAR-bestanden.
+Zie [Including AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files) voor informatie over de locatie van deze JAR-bestanden.
 
 **Een handtekeningclient maken**
 
@@ -1792,27 +1792,27 @@ Een digitale handtekening verwijderen met de handtekening-API (Java):
 
 1. Maak een handtekeningclient.
 
-   * Maak een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
-   * Maak een `SignatureServiceClient` object door de constructor ervan te gebruiken en het `ServiceClientFactory` object door te geven.
+   * Maak een `ServiceClientFactory`-object dat verbindingseigenschappen bevat.
+   * Maak een `SignatureServiceClient`-object door de constructor ervan te gebruiken en het object `ServiceClientFactory` door te geven.
 
 1. Het PDF-document ophalen dat een handtekening bevat die moet worden verwijderd
 
-   * Maak een `java.io.FileInputStream` object dat staat voor het PDF-document dat de te verwijderen handtekening bevat met de constructor ervan en geef een tekenreekswaarde door die de locatie van het PDF-document aangeeft.
-   * Maak een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en het `java.io.FileInputStream` object door te geven.
+   * Maak een `java.io.FileInputStream`-object dat staat voor het PDF-document dat de handtekening bevat die moet worden verwijderd met de constructor ervan en geef een tekenreekswaarde door die de locatie van het PDF-document aangeeft.
+   * Maak een `com.adobe.idp.Document`-object door de constructor ervan te gebruiken en het object `java.io.FileInputStream` door te geven.
 
 1. De digitale handtekening verwijderen uit het handtekeningveld
 
-   Verwijder een digitale handtekening uit een handtekeningveld door de methode van het `SignatureServiceClient` `clearSignatureField` object aan te roepen en de volgende waarden door te geven:
+   Verwijder een digitale handtekening uit een handtekeningveld door de methode `clearSignatureField` van het object `SignatureServiceClient` aan te roepen en de volgende waarden door te geven:
 
-   * Een `com.adobe.idp.Document` object dat staat voor het PDF-document dat de te verwijderen handtekening bevat.
+   * Een `com.adobe.idp.Document`-object dat staat voor het PDF-document dat de te verwijderen handtekening bevat.
    * Een tekenreekswaarde die de naam aangeeft van het handtekeningveld dat de digitale handtekening bevat.
 
-   De `clearSignatureField` methode retourneert een `com.adobe.idp.Document` object dat staat voor het PDF-document waaruit de digitale handtekening is verwijderd.
+   De methode `clearSignatureField` retourneert een `com.adobe.idp.Document`-object dat het PDF-document vertegenwoordigt waaruit de digitale handtekening is verwijderd.
 
 1. Het PDF-document opslaan als een PDF-bestand
 
-   * Maak een `java.io.File` object en zorg dat de bestandsextensie .pdf is.
-   * Roep de `com.adobe.idp.Document` methode van het `copyToFile` object aan. Geef het `java.io.File` object door om de inhoud van het `com.adobe.idp.Document` object naar het bestand te kopiëren. Zorg ervoor dat u het `Document` object gebruikt dat door de `clearSignatureField` methode is geretourneerd.
+   * Maak een `java.io.File`-object en controleer of de bestandsextensie .pdf is.
+   * Roep de methode `com.adobe.idp.Document` van het object `copyToFile` aan. Geef het object `java.io.File` door om de inhoud van het object `com.adobe.idp.Document` naar het bestand te kopiëren. Zorg ervoor dat u het `Document` voorwerp gebruikt dat door de `clearSignatureField` methode werd teruggekeerd.
 
 **Zie ook**
 
@@ -1834,44 +1834,44 @@ Een digitale handtekening verwijderen met de handtekening-API (webservice):
 
    >[!NOTE]
    >
-   >Vervangen `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
+   >Vervang `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
 
 1. Een handtekeningclient maken
 
-   * Maak een `SignatureServiceClient` object met de standaardconstructor.
-   * Maak een `SignatureServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde door die de WSDL opgeeft voor de service AEM Forms (bijvoorbeeld `http://localhost:8080/soap/services/SignatureService?WSDL`). U hoeft het `lc_version` kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
-   * Maak een `System.ServiceModel.BasicHttpBinding` object door de waarde van het `SignatureServiceClient.Endpoint.Binding` veld op te halen. Kiezen naar de geretourneerde waarde `BasicHttpBinding`.
-   * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
+   * Maak een `SignatureServiceClient`-object met de standaardconstructor.
+   * Maak een `SignatureServiceClient.Endpoint.Address`-object met de constructor `System.ServiceModel.EndpointAddress`. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/SignatureService?WSDL`). U hoeft het `lc_version`-kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
+   * Maak een `System.ServiceModel.BasicHttpBinding`-object door de waarde van het veld `SignatureServiceClient.Endpoint.Binding` op te halen. Cast de terugkeerwaarde aan `BasicHttpBinding`.
+   * Stel het veld `System.ServiceModel.BasicHttpBinding` van het object `MessageEncoding` in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor AEM-formulieren toe aan het veld `SignatureServiceClient.ClientCredentials.UserName.UserName`.
-      * Wijs de bijbehorende wachtwoordwaarde aan het veld toe `SignatureServiceClient.ClientCredentials.UserName.Password`.
-      * Wijs de constante waarde toe `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Wijs de constante waarde toe `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode`.
+      * Wijs de gebruikersnaam voor het AEM aan het veld `SignatureServiceClient.ClientCredentials.UserName.UserName` toe.
+      * Wijs de overeenkomstige wachtwoordwaarde aan het gebied `SignatureServiceClient.ClientCredentials.UserName.Password` toe.
+      * Wijs de constante waarde `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType` toe.
+      * Wijs de constante waarde `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode` toe.
 
 1. Het PDF-document ophalen dat een handtekening bevat die moet worden verwijderd
 
-   * Maak een `BLOB` object met de constructor ervan. Met dit `BLOB` object wordt een PDF-document opgeslagen dat een digitale handtekening bevat die moet worden verwijderd.
-   * Maak een `System.IO.FileStream` object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het ondertekende PDF-document en de modus waarin het bestand moet worden geopend, vertegenwoordigt.
-   * Maak een bytearray waarin de inhoud van het `System.IO.FileStream` object wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de `System.IO.FileStream` eigenschap van het `Length` object op te halen.
-   * Vul de bytearray met streamgegevens door de `System.IO.FileStream` `Read` methode van het object aan te roepen. Geef de bytearray, de startpositie en de streamlengte door om te lezen.
-   * Vul het `BLOB` object door de `MTOM` eigenschap ervan toe te wijzen met de inhoud van de bytearray.
+   * Maak een `BLOB`-object met de constructor ervan. Met het object `BLOB` wordt een PDF-document opgeslagen dat een digitale handtekening bevat die moet worden verwijderd.
+   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het ondertekende PDF-document en de modus waarin het bestand moet worden geopend, vertegenwoordigt.
+   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `System.IO.FileStream` van het object `Length` op te halen.
+   * Vul de bytearray met streamgegevens door de methode `Read` van het object `System.IO.FileStream` aan te roepen. Geef de bytearray, de startpositie en de streamlengte door om te lezen.
+   * Vul het object `BLOB` door de eigenschap `MTOM` ervan toe te wijzen met de inhoud van de bytearray.
 
 1. De digitale handtekening verwijderen uit het handtekeningveld
 
-   Verwijder de digitale handtekening door de methode van het `SignatureServiceClient` `clearSignatureField` object aan te roepen en de volgende waarden door te geven:
+   Verwijder de digitale handtekening door de methode `SignatureServiceClient` van het object `clearSignatureField` aan te roepen en de volgende waarden door te geven:
 
-   * Een `BLOB` object dat het ondertekende PDF-document bevat.
+   * Een `BLOB`-object dat het ondertekende PDF-document bevat.
    * Een tekenreekswaarde die de naam vertegenwoordigt van het handtekeningveld dat de digitale handtekening bevat die moet worden verwijderd.
 
-   De `clearSignatureField` methode retourneert een `BLOB` object dat staat voor het PDF-document waaruit de digitale handtekening is verwijderd.
+   De methode `clearSignatureField` retourneert een `BLOB`-object dat het PDF-document vertegenwoordigt waaruit de digitale handtekening is verwijderd.
 
 1. Het PDF-document opslaan als een PDF-bestand
 
-   * Maak een `System.IO.FileStream` object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie vertegenwoordigt van het PDF-document dat een leeg handtekeningveld bevat en de modus waarin het bestand moet worden geopend.
-   * Maak een bytearray waarin de inhoud wordt opgeslagen van het `BLOB` object dat door de `sign` methode is geretourneerd. Vul de bytearray met de waarde van het `BLOB` `MTOM` gegevenslid van het object.
-   * Maak een `System.IO.BinaryWriter` object door de constructor ervan aan te roepen en het `System.IO.FileStream` object door te geven.
-   * Schrijf de inhoud van de bytearray naar het PDF-bestand door de methode van het `System.IO.BinaryWriter` `Write` object aan te roepen en de bytearray door te geven.
+   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie vertegenwoordigt van het PDF-document dat een leeg handtekeningveld bevat en de modus waarin het bestand moet worden geopend.
+   * Maak een bytearray waarin de inhoud wordt opgeslagen van het object `BLOB` dat door de methode `sign` is geretourneerd. Vul de bytearray met de waarde van het `BLOB`-gegevenslid van het object `MTOM`.
+   * Maak een `System.IO.BinaryWriter`-object door de constructor ervan aan te roepen en het object `System.IO.FileStream` door te geven.
+   * Schrijf de inhoud van de bytearray naar het PDF-bestand door de methode `Write` van het object `System.IO.BinaryWriter` aan te roepen en de bytearray door te geven.
 
 **Zie ook**
 

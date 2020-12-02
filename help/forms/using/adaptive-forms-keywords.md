@@ -9,6 +9,9 @@ topic-tags: author
 discoiquuid: 678e9dfc-2c46-430a-8da9-0329dda80090
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '223'
+ht-degree: 13%
 
 ---
 
@@ -237,4 +240,4 @@ Trefwoorden voor adaptieve formulieren zijn vooraf gedefinieerd, gereserveerde i
  </tbody>
 </table>
 
-Gebruik niet alleen de bovenstaande trefwoorden, maar gebruik ook namen die vergelijkbaar zijn met [aangepaste formulieren in JavaScript API&#39;s](https://adobe.com/go/learn_aemforms_javascript_api_63).
+Gebruik, naast de bovenstaande trefwoorden, geen namen die lijken op [adaptieve formulieren in JavaScript API&#39;s](https://adobe.com/go/learn_aemforms_javascript_api_63).

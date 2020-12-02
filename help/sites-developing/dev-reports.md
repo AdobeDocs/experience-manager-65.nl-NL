@@ -1,8 +1,8 @@
 ---
 title: Rapporten ontwikkelen
 seo-title: Rapporten ontwikkelen
-description: AEM verstrekt een selectie van standaardverslagen die op een rapporteringskader worden gebaseerd
-seo-description: AEM verstrekt een selectie van standaardverslagen die op een rapporteringskader worden gebaseerd
+description: AEM biedt een selectie van standaardverslagen op basis van een rapportagekader
+seo-description: AEM biedt een selectie van standaardverslagen op basis van een rapportagekader
 uuid: 1b406d15-bd77-4531-84c0-377dbff5cab2
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 50fafc64-d462-4386-93af-ce360588d294
 translation-type: tm+mt
 source-git-commit: ea6da2b75cce4052211fb8f0793f1f380eb85a20
+workflow-type: tm+mt
+source-wordcount: '5252'
+ht-degree: 0%
 
 ---
 
 
 # Rapporten ontwikkelen{#developing-reports}
 
-AEM biedt een selectie van [standaardverslagen](/help/sites-administering/reporting.md) , waarvan de meeste gebaseerd zijn op een rapportagekader.
+AEM biedt een selectie van [standaardrapporten](/help/sites-administering/reporting.md) waarvan de meeste zijn gebaseerd op een rapportagekader.
 
 Met behulp van het framework kunt u deze standaardrapporten uitbreiden of uw eigen, volledig nieuwe rapporten ontwikkelen. Het rapportagekader sluit nauw aan bij de bestaande CQ5-concepten en -beginselen, zodat ontwikkelaars hun bestaande kennis van CQ5 kunnen gebruiken als springplank voor het opstellen van rapporten.
 
@@ -38,7 +41,7 @@ Voor de standaardrapporten die bij AEM worden geleverd:
 
 >[!NOTE]
 >
->De zelfstudie Uw eigen rapport [maken - Een voorbeeld](#creating-your-own-report-an-example) laat ook zien hoeveel van de onderstaande principes kunnen worden gebruikt.
+>De zelfstudie [Uw eigen rapport maken - Een voorbeeld](#creating-your-own-report-an-example) laat ook zien hoeveel van de onderstaande principes kunnen worden gebruikt.
 >
 >U kunt ook naar de standaardrapporten verwijzen om andere voorbeelden van implementatie te zien.
 
@@ -64,21 +67,22 @@ Voor de standaardrapporten die bij AEM worden geleverd:
 * `P:<name> = <value>`
    >
    >     
-   Beschrijft een bezit `<name>` dat aan de waarde van moet worden geplaatst `<value>`.
+   Beschrijft een eigenschap `<name>` die moet worden ingesteld op de waarde van `<value>`.
    >
    >
 * De inspringing toont de hiërarchische gebiedsdelen tussen de knopen.
->* Items gescheiden door| een lijst van mogelijke artikelen; bijvoorbeeld typen of namen:
+>* Items gescheiden door | een lijst van mogelijke artikelen; bijvoorbeeld typen of namen:
+
 >
 >  
-Bijvoorbeeld `String|String[]` betekent dat de eigenschap String of String[]kan zijn.
+bijv. `String|String[]` betekent dat het bezit of Koord of Koord[] kan zijn.
 >
->* `[]` een array weergeeft; zoals String[] of een array van knooppunten, zoals in de [Query Definition](#query-definition).
+>* `[]` een array weergeeft; zoals [] Stringor een array van knooppunten zoals in de  [Query Definition](#query-definition).
 >
 >
 Tenzij anders vermeld zijn de standaardtypes:
 >
->* Nodes - `nt:unstructured`
+>* Knooppunten - `nt:unstructured`
 >* Eigenschappen - `String`
 
 
@@ -88,7 +92,7 @@ Het rapportagekader werkt aan de volgende beginselen:
 
 * Het is volledig gebaseerd op resultaatreeksen die door een vraag zijn teruggekeerd die door CQ5 wordt uitgevoerd QueryBuilder.
 * De resultaatreeks bepaalt de gegevens die in het rapport worden getoond. Elke rij in de resultaatreeks beantwoordt aan een rij in de tabelmening van het rapport.
-* De verrichtingen beschikbaar voor uitvoering op de resultaatreeks lijken op concepten RDBMS; voornamelijk *groepering* en *aggregatie*.
+* De verrichtingen beschikbaar voor uitvoering op de resultaatreeks lijken op concepten RDBMS; primair *groepering* en *aggregatie*.
 
 * De meeste gegevensherwinning en verwerking worden gedaan serverzijde.
 * De klant is alleen verantwoordelijk voor de weergave van de vooraf verwerkte gegevens. Alleen kleine verwerkingstaken (bijvoorbeeld het maken van koppelingen in celinhoud) worden aan de clientzijde uitgevoerd.
@@ -97,38 +101,38 @@ Het rapportagekader (geïllustreerd door de structuur van een standaardrapport) 
 
 ![chlimage_1-248](assets/chlimage_1-248.png)
 
-### Rapportpagina {#report-page}
+### Pagina {#report-page} rapporteren
 
 De rapportpagina:
 
 * Is een standaard CQ5-pagina.
-* Is gebaseerd op een [standaardCQ5 malplaatje, dat voor het rapport](#report-template)wordt gevormd.
+* Is gebaseerd op een [standaardCQ5 malplaatje, dat voor rapport](#report-template) wordt gevormd.
 
-### Rapportbasis {#report-base}
+### Basis {#report-base} rapporteren
 
-De [ component `reportbase`](#report-base-component) vormt de basis voor elk verslag zoals het:
+De [ `reportbase` component](#report-base-component) vormt de basis van om het even welk rapport aangezien het:
 
-* Houdt de definitie van de [vraag](#the-query-and-data-retrieval) die de onderliggende resultaatreeks gegevens levert.
+* Houdt de definitie van [query](#the-query-and-data-retrieval) die de onderliggende resultaatreeks gegevens levert.
 
-* Is een aangepast paragraafsysteem dat alle kolommen ( `columnbase`) zal bevatten aan het rapport worden toegevoegd.
+* Is een aangepast alineasysteem dat alle kolommen ( `columnbase`) zal bevatten die aan het rapport worden toegevoegd.
 * Bepaalt welke grafiektypes beschikbaar zijn en die momenteel actief zijn.
 * Bepaalt de Edit dialoog, die de gebruiker toestaat om bepaalde aspecten van het rapport te vormen.
 
 ### Kolombasis {#column-base}
 
-Elke kolom is een instantie van de [ component `columnbase`](#column-base-component) die:
+Elke kolom is een geval van [ `columnbase` component](#column-base-component) die:
 
 * Is een paragraaf, die door parsys ( `reportbase`) van het respectieve rapport wordt gebruikt.
-* Bepaalt de verbinding aan de [onderliggende resultaatreeks](#the-query-and-data-retrieval); Hiermee worden de specifieke gegevens gedefinieerd waarnaar in deze resultaatset wordt verwezen, en hoe deze worden verwerkt.
+* Bepaalt de verbinding aan [onderliggend resultaatreeks](#the-query-and-data-retrieval); Hiermee worden de specifieke gegevens gedefinieerd waarnaar in deze resultaatset wordt verwezen, en hoe deze worden verwerkt.
 * bevat aanvullende definities; zoals de beschikbare aggregaten en filters, samen met standaardwaarden.
 
-### De query en het ophalen van gegevens {#the-query-and-data-retrieval}
+### De vraag en het Terugwinnen van Gegevens {#the-query-and-data-retrieval}
 
 De query:
 
-* Is gedefinieerd als onderdeel van de [`reportbase`](#report-base) component.
+* Is gedefinieerd als onderdeel van de [ `reportbase`](#report-base) component.
 * Is gebaseerd op [CQ QueryBuilder](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html).
-* Haalt de gegevens op die als basis voor het rapport worden gebruikt. Elke rij van de resultaatreeks (lijst) is gebonden aan een knoop zoals teruggekeerd door de vraag. Vervolgens wordt specifieke informatie voor [afzonderlijke kolommen](#column-base-component) uit deze gegevensset geëxtraheerd.
+* Haalt de gegevens op die als basis voor het rapport worden gebruikt. Elke rij van de resultaatreeks (lijst) is gebonden aan een knoop zoals teruggekeerd door de vraag. Specifieke informatie voor [individuele kolommen](#column-base-component) wordt dan gehaald uit deze gegevensreeks.
 
 * Bestaat gewoonlijk uit:
 
@@ -136,7 +140,7 @@ De query:
 
       Hiermee wordt de substructuur van de gegevensopslagruimte aangegeven die moet worden doorzocht.
 
-      Om de invloed op de prestaties tot een minimum te beperken, is het raadzaam om de query te (proberen) beperken tot een specifieke subboomstructuur van de repository. De wortelweg kan of vooraf bepaald in het [rapportmalplaatje](#report-template) of door de gebruiker in de [Configuratie (uitgeven) dialoog](#configuration-dialog)worden geplaatst.
+      Om de invloed op de prestaties tot een minimum te beperken, is het raadzaam om de query te (proberen) beperken tot een specifieke subboomstructuur van de repository. Het wortelweg kan of vooraf bepaald in [rapportmalplaatje](#report-template) of geplaatst door de gebruiker in [de dialoog van de Configuratie (geeft uit)](#configuration-dialog).
 
    * [Een of meer criteria](#query-definition).
 
@@ -144,11 +148,11 @@ De query:
 
 **Het belangrijkste punt hier is dat elke enige knoop die in de resultaatreeks van de vraag wordt teruggekeerd wordt gebruikt om één enkele rij op het rapport (zo een 1:1 verhouding) te produceren.**
 
-De ontwikkelaar moet ervoor zorgen dat de vraag die voor een rapport wordt bepaald een knoop terugkeert die aangewezen voor dat rapport wordt geplaatst. Nochtans, te hoeven de knoop zelf niet alle vereiste informatie te houden, kan dit ook uit ouder en/of kindknopen worden afgeleid. Bijvoorbeeld, selecteert de vraag die voor het Rapport [van de](/help/sites-administering/reporting.md#user-report) Gebruiker wordt gebruikt knopen die op het knooptype (in dit geval `rep:user`) worden gebaseerd. Nochtans, nemen de meeste kolommen op dit rapport hun gegevens niet direct van deze knopen, maar van de kindknopen `profile`.
+De ontwikkelaar moet ervoor zorgen dat de vraag die voor een rapport wordt bepaald een knoop terugkeert die aangewezen voor dat rapport wordt geplaatst. Nochtans, te hoeven de knoop zelf niet alle vereiste informatie te houden, kan dit ook uit ouder en/of kindknopen worden afgeleid. Bijvoorbeeld, selecteert de vraag die voor [Rapport van de Gebruiker ](/help/sites-administering/reporting.md#user-report) knopen wordt gebruikt die op het knooptype (in dit geval `rep:user`) worden gebaseerd. Nochtans, nemen de meeste kolommen op dit rapport hun gegevens niet direct van deze knopen, maar van de kindknopen `profile`.
 
-### Bezig met verwerken van wachtrij {#processing-queue}
+### Wachtrij {#processing-queue} verwerken
 
-De [vraag](#the-query-and-data-retrieval) keert een resultaatreeks gegevens terug die als rijen op het rapport moeten worden getoond. Elke rij in de resultaatreeks wordt verwerkt (server-kant), in [verscheidene fasen](#phases-of-the-processing-queue), alvorens wordt overgebracht naar de cliënt voor vertoning op het rapport.
+[query](#the-query-and-data-retrieval) keert een resultaatreeks gegevens terug die als rijen op het rapport moeten worden getoond. Elke rij in de resultaatreeks wordt verwerkt (server-kant), in [verscheidene fasen](#phases-of-the-processing-queue), alvorens wordt overgebracht naar de cliënt voor vertoning op het rapport.
 
 Hierdoor is het mogelijk:
 
@@ -158,7 +162,7 @@ Hierdoor is het mogelijk:
 
 * Oplossen van geëxtraheerde waarden; dit kan op verschillende manieren gebeuren .
 
-   Paden kunnen bijvoorbeeld worden toegewezen aan een titel (zoals in de meer leesbare inhoud van de respectievelijke eigenschap *jcr:title* ).
+   Paden kunnen bijvoorbeeld worden toegewezen aan een titel (zoals in de meer leesbare inhoud van de desbetreffende *jcr:title*-eigenschap).
 
 * Filters toepassen op verschillende punten.
 * Indien nodig samengestelde waarden maken.
@@ -171,55 +175,55 @@ De volgende workflow vertegenwoordigt de verwerkingswachtrij:
 
 ![chlimage_1-249](assets/chlimage_1-249.png)
 
-#### Fasen van de Verwerkingswachtrij {#phases-of-the-processing-queue}
+#### Fases van de Verwerkingswachtrij {#phases-of-the-processing-queue}
 
 Waar de gedetailleerde stappen en elementen zijn:
 
-1. Transformeert de resultaten die door de [aanvankelijke vraag (reportbase)](#query-definition) zijn teruggekeerd in de basisresultaatreeks gebruikend waardeextractors.
+1. Transformeert de resultaten die door [aanvankelijke vraag (reportbase) ](#query-definition) zijn teruggekeerd in de basisresultaatreeks gebruikend waardeextractors.
 
-   De extractoren van de waarde worden automatisch gekozen afhankelijk van het [kolomtype](#column-specific-definitions). Deze worden gebruikt voor het lezen van waarden van de onderliggende JCR-query en het maken van een resultaatset op basis daarvan. waarna verdere verwerking kan worden toegepast. Voor het `diff` type, leest de waardeextractor bijvoorbeeld twee eigenschappen, berekent de enkele waarde die vervolgens aan de resultatenset wordt toegevoegd. De waarde-extractors kunnen niet worden geconfigureerd.
+   De extractoren van de waarde worden automatisch gekozen afhankelijk van [kolomtype](#column-specific-definitions). Deze worden gebruikt voor het lezen van waarden van de onderliggende JCR-query en het maken van een resultaatset op basis daarvan. waarna verdere verwerking kan worden toegepast. Voor het type `diff` leest de waardeextractor bijvoorbeeld twee eigenschappen en berekent deze de enkele waarde die vervolgens aan de resultatenset wordt toegevoegd. De waarde-extractors kunnen niet worden geconfigureerd.
 
-1. Op die aanvankelijke resultaatreeks, die ruwe gegevens bevat, wordt het [aanvankelijke filtreren](#column-specific-definitions) (*ruwe* fase) toegepast.
+1. Op die aanvankelijke resultaatreeks, die ruwe gegevens bevat, wordt [aanvankelijke filtratie](#column-specific-definitions) (*raw* fase) toegepast.
 
-1. Waarden worden [vooraf verwerkt](#processing-queue); zoals gedefinieerd voor de *toepassingsfase* .
+1. Waarden zijn [preprocessing](#processing-queue); zoals gedefinieerd voor de *apply* fase.
 
-1. [Filteren](#column-specific-definitions) (toegewezen aan de *vooraf verwerkte* fase) wordt uitgevoerd op de vooraf verwerkte waarden.
+1. [Filteren](#column-specific-definitions)  (toegewezen aan de  ** vooraf verwerkte fase) wordt uitgevoerd op de vooraf verwerkte waarden.
 
 1. Waarden worden opgelost; volgens de [gedefinieerde oplosser](#processing-queue).
-1. [Filteren](#column-specific-definitions) (toegewezen aan de *opgeloste* fase) wordt uitgevoerd op de opgeloste waarden.
+1. [Filteren](#column-specific-definitions)  (toegewezen aan de  ** opgeloste fase) wordt uitgevoerd op de opgeloste waarden.
 
-1. Gegevens worden [gegroepeerd en samengevoegd](#column-specific-definitions).
+1. Gegevens zijn [gegroepeerd en geaggregeerd](#column-specific-definitions).
 1. Arraygegevens worden omgezet in een (op tekenreeks gebaseerde) lijst.
 
    Dit is een impliciete stap die een resultaat met meerdere waarden omzet in een lijst die kan worden getoond; deze is vereist voor (niet-geaggregeerde) celwaarden die zijn gebaseerd op JCR-eigenschappen met meerdere waarden.
 
-1. De waarden worden opnieuw [vooraf verwerkt](#processing-queue); zoals gedefinieerd voor de *fase afterApply* .
+1. Waarden worden opnieuw [preprocessing](#processing-queue); zoals gedefinieerd voor de *afterApply* fase.
 
 1. Gegevens worden gesorteerd.
 1. De verwerkte gegevens worden naar de client overgedragen.
 
 >[!NOTE]
 >
->De aanvankelijke vraag die de resultaatreeks van basisgegevens terugkeert wordt bepaald op de `reportbase` component.
+>De eerste query die de resultaatset van de basisgegevens retourneert, wordt gedefinieerd voor de component `reportbase`.
 >
->Andere elementen van de verwerkingsrij worden bepaald op de `columnbase` componenten.
+>Andere elementen van de verwerkingsrij worden bepaald op `columnbase` componenten.
 
-## Constructie en configuratie van rapporten {#report-construction-and-configuration}
+## Constructie en configuratie van rapport {#report-construction-and-configuration}
 
 Het volgende is nodig om een rapport te construeren en te vormen:
 
-* een [plaats voor de definitie van uw rapportcomponenten](#location-of-report-components)
-* een [`reportbase` component](#report-base-component)
-* een of meer [ `columnbase` componenten](#column-base-component)
-* een [paginacomponent](#page-component)
-* een [rapportontwerp](#report-design)
-* een [rapportsjabloon](#report-template)
+* a [locatie voor de definitie van uw rapportcomponenten](#location-of-report-components)
+* a [ `reportbase` component](#report-base-component)
+* een of meer [ `columnbase` component(en)](#column-base-component)
+* a [paginacomponent](#page-component)
+* a [rapportontwerp](#report-design)
+* a [rapportsjabloon](#report-template)
 
 ### Locatie van rapportcomponenten {#location-of-report-components}
 
-De standaardrapporteringscomponenten worden aangehouden onder `/libs/cq/reporting/components`.
+De standaardrapporteringscomponenten worden gehouden onder `/libs/cq/reporting/components`.
 
-Het wordt echter ten zeerste aanbevolen deze knooppunten niet bij te werken, maar zelf componentknooppunten te maken onder `/apps/cq/reporting/components` of, indien dit meer aangewezen is, `/apps/<yourProject>/reports/components`.
+Het wordt echter ten zeerste aanbevolen deze knooppunten niet bij te werken, maar uw eigen componentknooppunten te maken onder `/apps/cq/reporting/components` of, indien van toepassing, `/apps/<yourProject>/reports/components`.
 
 Waar (als voorbeeld):
 
@@ -242,21 +246,21 @@ N:apps
                         N:<columnname> [cq:Component]  // column base component
 ```
 
-### Pagina-component {#page-component}
+### Paginacomponent {#page-component}
 
-Een rapportpagina moet de `sling:resourceType` van `/libs/cq/reporting/components/reportpage`.
+Een rapportpagina moet `sling:resourceType` van `/libs/cq/reporting/components/reportpage` gebruiken.
 
 Een aangepaste pagina-component is in de meeste gevallen niet nodig.
 
-## Basiscomponent rapporteren {#report-base-component}
+## Basiscomponent {#report-base-component} rapporteren
 
-Elk rapporttype vereist een containercomponent die van wordt afgeleid `/libs/cq/reporting/components/reportbase`.
+Elk rapporttype vereist een containercomponent die van `/libs/cq/reporting/components/reportbase` wordt afgeleid.
 
 Deze component fungeert als container voor het rapport als geheel en biedt informatie voor:
 
 * De [querydefinitie](#query-definition).
-* Een [(facultatieve) dialoog](#configuration-dialog) voor het vormen van het rapport.
-* Alle [grafieken](#chart-definitions) die in het verslag zijn opgenomen.
+* Een [ (facultatief) dialoog](#configuration-dialog) voor het vormen van het rapport.
+* Alle [grafieken](#chart-definitions) die in het rapport zijn geïntegreerd.
 
 ```
 N:<reportname> [cq:Component]
@@ -299,7 +303,7 @@ N:queryBuilder
     ]
    ```
 
-   Retourneert alle `textimage` componenten die het laatst door de `admin` gebruiker zijn gewijzigd.
+   Alle `textimage` componenten die het laatst door de `admin` gebruiker zijn gewijzigd, retourneren.
 
 * `nodeTypes`
 
@@ -307,11 +311,11 @@ N:queryBuilder
 
 * `mandatoryProperties`
 
-   Kan worden gebruikt om het resultaat te beperken dat is ingesteld op knooppunten die *alle* opgegeven eigenschappen hebben. Er wordt geen rekening gehouden met de waarde van de eigenschappen.
+   Kan worden gebruikt om het resultaat te beperken dat aan knopen wordt geplaatst die *all* van de gespecificeerde eigenschappen hebben. Er wordt geen rekening gehouden met de waarde van de eigenschappen.
 
 Alles is optioneel en kan zo nodig worden gecombineerd, maar u moet ten minste één element definiëren.
 
-### Diagramdefinities {#chart-definitions}
+### Grafiekdefinities {#chart-definitions}
 
 ```xml
 N:charting
@@ -340,13 +344,13 @@ N:charting
 
       * `id`
 
-         Identificatie voor de actieve diagrammen. Dit moet identiteitskaart van één van de grafiek aanpassen `definitions`.
+         Identificatie voor de actieve diagrammen. Dit moet identiteitskaart van één van de grafiek `definitions` aanpassen.
 
 * `definitions`
 
-   Bepaalt de grafiektypes die potentieel voor het rapport beschikbaar zijn. De `definitions` `active` instellingen bepalen welk item moet worden gebruikt.
+   Bepaalt de grafiektypes die potentieel voor het rapport beschikbaar zijn. De `definitions` die moet worden gebruikt, worden opgegeven met de `active`-instellingen.
 
-   De definities worden opgegeven met behulp van een array met knooppunten (ook weer vaak `0`, `1`.. `x`), elk met de volgende eigenschappen:
+   De definities worden gespecificeerd gebruikend een serie van knopen (opnieuw genoemd `0`, `1`. `x`), elk met de volgende eigenschappen:
 
    * `id`
 
@@ -354,7 +358,7 @@ N:charting
 
    * `type`
 
-      Het type grafiek dat beschikbaar is. Selecteren uit:
+      Het type grafiek dat beschikbaar is. Selecteer  vanuit:
 
       * `pie`
 Cirkeldiagram. Alleen gegenereerd op basis van huidige gegevens.
@@ -367,30 +371,30 @@ Reeks lijnen (verbindende punten die de daadwerkelijke momentopnamen vertegenwoo
 
          * `maxRadius` ( `Double/Long`)
 
-            De maximale straal die voor het cirkeldiagram is toegestaan; daarom de maximumgrootte die voor de grafiek (zonder legenda) wordt toegestaan. Genegeerd als `fixedRadius` is gedefinieerd.
+            De maximale straal die voor het cirkeldiagram is toegestaan; daarom de maximumgrootte die voor de grafiek (zonder legenda) wordt toegestaan. Wordt genegeerd als `fixedRadius` is gedefinieerd.
 
-         * `minRadius` ( `Double/Long`)
+         * `minRadius` (  `Double/Long`)
 
-            De minimale straal die is toegestaan voor het cirkeldiagram. Genegeerd als `fixedRadius` is gedefinieerd.
+            De minimale straal die is toegestaan voor het cirkeldiagram. Wordt genegeerd als `fixedRadius` is gedefinieerd.
 
-         * `fixedRadius` ( `Double/Long`)Hiermee definieert u een vaste straal voor het cirkeldiagram.
+         * `fixedRadius` (  `Double/Long`) Hiermee definieert u een vaste straal voor het cirkeldiagram.
       * voor het diagramtype [`lineseries`](/help/sites-administering/reporting.md#display-limits):
 
-         * `totals` ( `Boolean`)
+         * `totals` (  `Boolean`)
 
-            True if an additional line displaying the **Total** should be displayed.
+            Waar als een extra lijn die **Totaal** toont zou moeten worden getoond.
 standaardwaarde: `false`
 
-         * `series` ( `Long`)
+         * `series` (  `Long`)
 
             Aantal weer te geven lijnen/reeksen.
 standaard: `9` (dit is ook het toegestane maximum)
 
-         * `hoverLimit` ( `Long`)
+         * `hoverLimit` (  `Long`)
 
             Maximum aantal samengevoegde momentopnamen (punten die op elke horizontale lijn worden getoond, die verschillende waarden vertegenwoordigen) waarvoor popups moeten worden getoond, d.w.z. wanneer de gebruiker muis-over op een specifieke waarde of een overeenkomstig etiket in de grafieklegende doet.
 
-            standaard: `35` (Er worden dus helemaal geen popups weergegeven als meer dan 35 verschillende waarden van toepassing zijn voor de huidige diagraminstellingen).
+            standaard: `35` (d.w.z. er worden helemaal geen popups weergegeven als meer dan 35 verschillende waarden van toepassing zijn voor de huidige diagraminstellingen).
 
             Er geldt een extra limiet van 10 pop-ups die parallel kunnen worden weergegeven (meerdere pop-ups kunnen worden weergegeven wanneer de muisaanwijzer op de legenda wordt geplaatst).
 
@@ -400,7 +404,7 @@ standaard: `9` (dit is ook het toegestane maximum)
 
 Elk rapport kan een configuratiedialoog hebben, toestaand de gebruiker om diverse parameters voor het rapport te specificeren. Dit dialoogvenster is toegankelijk via de knop **Bewerken** wanneer de rapportpagina is geopend.
 
-Dit dialoogvenster is een standaard CQ- [dialoogvenster](/help/sites-developing/components-basics.md#dialogs) en kan als zodanig worden geconfigureerd (zie [CQ.Dialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog) voor meer informatie).
+Dit dialoogvenster is een standaard-CQ [dialoogvenster](/help/sites-developing/components-basics.md#dialogs) en kan als zodanig worden geconfigureerd (zie [CQ.Dialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog) voor meer informatie).
 
 Een voorbeelddialoogvenster kan er als volgt uitzien:
 
@@ -441,7 +445,7 @@ Een voorbeelddialoogvenster kan er als volgt uitzien:
 </jcr:root>
 ```
 
-Verschillende vooraf geconfigureerde componenten worden geleverd; U kunt hier in het dialoogvenster naar verwijzen met de `xtype` eigenschap met de waarde `cqinclude`:
+Verschillende vooraf geconfigureerde componenten worden geleverd; naar deze eigenschappen kan worden verwezen in het dialoogvenster, waarbij de eigenschap `xtype` de waarde `cqinclude` heeft:
 
 * **`title`**
 
@@ -469,7 +473,7 @@ Verschillende vooraf geconfigureerde componenten worden geleverd; U kunt hier in
 
 >[!NOTE]
 >
->De componenten waarnaar wordt verwezen, moeten worden opgenomen met behulp van het `.infinity.json` achtervoegsel (zie voorbeeld hierboven).
+>De componenten waarnaar wordt verwezen, moeten worden opgenomen met het achtervoegsel `.infinity.json` (zie voorbeeld hierboven).
 
 ### Hoofdpad {#root-path}
 
@@ -477,7 +481,7 @@ Bovendien kan een wortelweg voor het rapport worden bepaald:
 
 * **`rootPath`**
 
-   Dit beperkt het rapport tot een bepaalde sectie (boom of subboom) van de bewaarplaats, die voor prestatiesoptimalisering wordt geadviseerd. Het wortelweg wordt gespecificeerd door het `rootPath` bezit van de `report` knoop van elke rapportpagina (die van het malplaatje op paginaverwezenlijking wordt genomen).
+   Dit beperkt het rapport tot een bepaalde sectie (boom of subboom) van de bewaarplaats, die voor prestatiesoptimalisering wordt geadviseerd. Het wortelweg wordt gespecificeerd door het `rootPath` bezit van de `report` knoop van elke rapportpagina (die van het malplaatje op paginaareding wordt genomen).
 
    Deze kan worden gespecificeerd door:
 
@@ -486,17 +490,17 @@ Bovendien kan een wortelweg voor het rapport worden bepaald:
 
 ## Basiscomponent kolom {#column-base-component}
 
-Voor elk kolomtype is een component vereist die is afgeleid van `/libs/cq/reporting/components/columnbase`.
+Elk kolomtype vereist een component die van `/libs/cq/reporting/components/columnbase` wordt afgeleid.
 
 Een kolomcomponent definieert een combinatie van het volgende:
 
-* De [kolomspecifieke configuratie van de Vraag](#column-specific-query) .
+* De [Kolomspecifieke Vraag](#column-specific-query) configuratie.
 * De [Resolvers en Preprocessing](#resolvers-and-preprocessing).
-* de [kolomspecifieke definities](#column-specific-definitions) (zoals filters en aggregaten; `definitions` onderliggende node).
-* [Standaardwaarden](#column-default-values)kolom.
-* Het filter [](#client-filter) Client extraheert de informatie die moet worden weergegeven op basis van de gegevens die door de server worden geretourneerd.
-* Bovendien moet een kolomcomponent een geschikt exemplaar van `cq:editConfig`leveren. om de vereiste [gebeurtenissen en handelingen](#events-and-actions) te definiëren.
-* De configuratie voor [generieke kolommen](#generic-columns).
+* de [Kolomspecifieke definities](#column-specific-definitions) (zoals filters en aggregaten; `definitions` onderliggende node).
+* [Standaardwaarden](#column-default-values) kolom.
+* Met het filter [Client](#client-filter) haalt u de informatie op die moet worden weergegeven op basis van de gegevens die door de server worden geretourneerd.
+* Bovendien moet een kolomcomponent een geschikte instantie van `cq:editConfig` verstrekken. om [Gebeurtenissen en Acties ](#events-and-actions) te bepalen vereist.
+* De configuratie voor [generische kolommen](#generic-columns).
 
 ```
 N:<columnname> [cq:Component]
@@ -522,11 +526,11 @@ N:<columnname> [cq:Component]
       N:aggregates [cq:WidgetCollection] // Column Specific Definitions
 ```
 
-Zie ook [Uw nieuw rapport](#defining-your-new-report)definiëren.
+Zie ook [Het bepalen van Uw Nieuw Rapport](#defining-your-new-report).
 
 ### Kolomspecifieke query {#column-specific-query}
 
-Hiermee definieert u de specifieke gegevensextractie (uit de resultaatset [van de](#the-query-and-data-retrieval)rapportgegevens) voor gebruik in de afzonderlijke kolom.
+Dit bepaalt de specifieke gegevensextractie (uit [rapportgegevensresultaatreeks](#the-query-and-data-retrieval)) voor gebruik in de individuele kolom.
 
 ```xml
 N:definitions
@@ -541,7 +545,7 @@ N:definitions
 
    Definieert de eigenschap die moet worden gebruikt voor het berekenen van de werkelijke celwaarde.
 
-   Als eigenschap wordt gedefinieerd als String[] , worden meerdere eigenschappen gescand (in volgorde) om de werkelijke waarde te vinden.
+   Als het bezit als Koord[] veelvoudige eigenschappen wordt bepaald (in opeenvolging) wordt gescand om de daadwerkelijke waarde te vinden.
 
    Bijvoorbeeld in het geval van:
 
@@ -566,7 +570,7 @@ N:definitions
 
    Gelijkaardig aan subPath, wanneer `secondaryProperty` wordt gebruikt.
 
-In de meeste gevallen `property` zal alleen worden gebruikt.
+In de meeste gevallen wordt alleen `property` gebruikt.
 
 ### Clientfilter {#client-filter}
 
@@ -601,7 +605,7 @@ function(v) {
 
 ### Resolvers en voorbewerking {#resolvers-and-preprocessing}
 
-De [verwerkingsrij](#processing-queue) bepaalt diverse oplosmiddelen en vormt preprocessing:
+De [verwerkingsrij](#processing-queue) bepaalt de diverse oplosmiddelen en vormt preprocessing:
 
 ```xml
 N:definitions
@@ -619,7 +623,7 @@ N:definitions
 
    * `const`
 
-      Wijst waarden toe aan andere waarden; Dit wordt bijvoorbeeld gebruikt om constanten zoals `en` de equivalente waarde op te lossen `English`.
+      Wijst waarden toe aan andere waarden; Dit wordt bijvoorbeeld gebruikt om constanten zoals `en` op te lossen tot de equivalente waarde `English`.
 
    * `default`
 
@@ -627,25 +631,25 @@ N:definitions
 
    * `page`
 
-      Hiermee wordt een padwaarde omgezet in het pad van de desbetreffende pagina. nauwkeuriger, aan de overeenkomstige `jcr:content` knoop. bijvoorbeeld, `/content/.../page/jcr:content/par/xyz` wordt omgezet in `/content/.../page/jcr:content`.
+      Hiermee wordt een padwaarde omgezet in het pad van de desbetreffende pagina. nauwkeuriger, aan de overeenkomstige `jcr:content` knoop. `/content/.../page/jcr:content/par/xyz` wordt bijvoorbeeld omgezet in `/content/.../page/jcr:content`.
 
    * `path`
 
-      Hiermee lost u een padwaarde op door optioneel een subpad toe te voegen en de werkelijke waarde van een eigenschap van het knooppunt (zoals gedefinieerd door `resolverConfig`) op te nemen bij het omgezette pad. Zo `path` kan bijvoorbeeld een `/content/.../page/jcr:content` van de twee worden omgezet in de inhoud van de `jcr:title` eigenschap. Dit betekent dat een paginapad wordt omgezet in de paginatitel.
+      Hiermee lost u een padwaarde op door optioneel een subpad toe te voegen en de werkelijke waarde van een eigenschap van het knooppunt (zoals gedefinieerd door `resolverConfig`) op te nemen bij het omgezette pad. Een `path` van `/content/.../page/jcr:content` kan bijvoorbeeld worden omgezet naar de inhoud van de eigenschap `jcr:title`, wat betekent dat een paginapad wordt omgezet naar de paginatitel.
 
    * `pathextension`
 
-      Hiermee lost u een waarde op door een pad vooraf in te stellen en de werkelijke waarde te nemen vanuit een eigenschap van het knooppunt op het opgeloste pad. Een waarde `de` kan bijvoorbeeld worden voorafgegaan door een pad, bijvoorbeeld `/libs/wcm/core/resources/languages`door de waarde van de eigenschap te nemen `language`, om de landcode `de` op te lossen naar de taalbeschrijving `German`.
+      Hiermee lost u een waarde op door een pad vooraf in te stellen en de werkelijke waarde te nemen vanuit een eigenschap van het knooppunt op het opgeloste pad. Een waarde `de` kan bijvoorbeeld worden voorafgegaan door een pad zoals `/libs/wcm/core/resources/languages`, waarbij de waarde wordt overgenomen van de eigenschap `language`, om de landcode `de` om te zetten in de taalbeschrijving `German`.
 
 * `resolverConfig`
 
-   Verstrekt definities voor resolver; de beschikbare opties zijn afhankelijk van de `resolver` geselecteerde opties:
+   Verstrekt definities voor resolver; de beschikbare opties zijn afhankelijk van de geselecteerde `resolver`:
 
    * `const`
 
       Gebruik eigenschappen om de constanten voor het omzetten op te geven. De naam van de eigenschap definieert de constante die moet worden opgelost. De waarde van de eigenschap definieert de omgezette waarde.
 
-      Een eigenschap met **Name**= `1` en **Value** zullen bijvoorbeeld 1 tot 1 oplossen `=One` .
+      Een eigenschap met **Naam**= `1` en **Waarde** `=One` zal bijvoorbeeld 1 tot 1 oplossen.
 
    * `default`
 
@@ -655,7 +659,7 @@ N:definitions
 
       * `propertyName` (optioneel)
 
-         Definieert de naam van de eigenschap die moet worden gebruikt voor het omzetten van de waarde. Indien niet opgegeven, wordt de standaardwaarde van *jcr:title* (de paginatitel) gebruikt; voor de `page` oplosser betekent dit dat eerst het pad wordt omgezet naar het paginapad en vervolgens verder wordt omgezet naar de paginatitel.
+         Definieert de naam van de eigenschap die moet worden gebruikt voor het omzetten van de waarde. Indien niet opgegeven, wordt de standaardwaarde van *jcr:title* (de paginatitel) gebruikt; voor de oplosser `page` betekent dit dat eerst het pad wordt omgezet naar het paginapad en vervolgens verder wordt omgezet naar de paginatitel.
    * `path`
 
       * `propertyName` (optioneel)
@@ -671,27 +675,27 @@ N:definitions
 
          Definieert het pad dat moet worden voorafgegaan.
 
-      * `propertyName` (mandatory)
+      * `propertyName` (verplicht)
 
          Definieert de eigenschap op het omgezette pad waar de werkelijke waarde zich bevindt.
 
       * `i18n` (facultatief; type Boolean)
 
-         Hiermee wordt bepaald of de opgeloste waarde moet worden *geïnternationaliseerd* (d.w.z. met behulp van de [CQ5-internationalisatieservices](/help/sites-administering/tc-manage.md)).
+         Hiermee wordt bepaald of de opgeloste waarde *internationalized* moet zijn (d.w.z. met behulp van [CQ5&#39;s internationalization services](/help/sites-administering/tc-manage.md)).
 
 
 
 * `preprocessing`
 
-   Voorbewerking is optioneel en kan (afzonderlijk) aan de verwerkingsfasen worden gebonden en *toegepast* of *applyAfter*:
+   Voorbewerking is optioneel en kan (afzonderlijk) worden gebonden aan de verwerkingsfasen *apply* of *applyAfter*:
 
    * `apply`
 
-      De eerste voorbewerkingsfase ([stap 3 in de weergave van de verwerkingswachtrij](#processing-queue)).
+      De eerste voorbewerkingsfase ([stap 3 in de representatie van de verwerkingswachtrij](#processing-queue)).
 
    * `applyAfter`
 
-      Toepassen na voorbehandeling ([stap 9 in de weergave van de verwerkingswachtrij](#processing-queue)).
+      Pas toe na preprocessing ([stap 9 in de vertegenwoordiging van de verwerkingsrij](#processing-queue)).
 
 #### Resolvers {#resolvers}
 
@@ -699,7 +703,7 @@ De oplosmiddelen worden gebruikt om de vereiste informatie te halen. Voorbeelden
 
 **Const**
 
-Hieronder wordt een contantwaarde van `VersionCreated` naar de tekenreeks omgezet `New version created`.
+Hieronder wordt een contant waarde van `VersionCreated` omgezet in de tekenreeks `New version created`.
 
 Zie `/libs/cq/reporting/components/auditreport/typecol/definitions/data`.
 
@@ -725,7 +729,7 @@ N:data
 
 **Pad**
 
-In het volgende voorbeeld wordt een pad naar `/content/.../page` de inhoud van de `jcr:title` eigenschap omgezet. Dit betekent dat een paginapad wordt omgezet naar de paginatitel.
+Met het volgende wordt een pad van `/content/.../page` naar de inhoud van de eigenschap `jcr:title` omgezet. Dit betekent dat een paginapad wordt omgezet naar de paginatitel.
 
 Zie `/libs/cq/reporting/components/auditreport/pagecol/definitions/data`.
 
@@ -739,7 +743,7 @@ N:data
 
 **Padextensie**
 
-In het volgende voorbeeld wordt een waarde `de` met de padextensie toegevoegd `/libs/wcm/core/resources/languages`en wordt de waarde van de eigenschap opgehaald `language`om de landcode `de` op te lossen in de taalbeschrijving `German`.
+Het volgende voegt een waarde `de` met de weguitbreiding `/libs/wcm/core/resources/languages` voor, dan neemt de waarde van het bezit `language`, om landcode `de` aan de taalbeschrijving `German` op te lossen.
 
 Zie `/libs/cq/reporting/components/userreport/languagecol/definitions/data`.
 
@@ -753,11 +757,11 @@ N:data
 
 #### Voorbewerken {#preprocessing}
 
-De `preprocessing` definitie kan worden toegepast op:
+De definitie `preprocessing` kan op of worden toegepast:
 
 * oorspronkelijke waarde:
 
-   De voorbewerkingsdefinitie voor de oorspronkelijke waarde wordt opgegeven op `apply` en/of `applyAfter` rechtstreeks.
+   De voorbewerkingsdefinitie voor de oorspronkelijke waarde wordt op `apply` en/of `applyAfter` direct gespecificeerd.
 
 * waarde in geaggregeerde toestand:
 
@@ -767,7 +771,8 @@ De `preprocessing` definitie kan worden toegepast op:
 
 U kunt een van de volgende twee opties opgeven om tijdens de voorbehandeling te gebruiken:
 
-* [zoek- en vervangingspatronen](#preprocessing-find-and-replace-patterns)Wanneer deze worden gevonden, wordt het opgegeven patroon (dat wordt gedefinieerd als een reguliere expressie) vervangen door een ander patroon. Dit kan bijvoorbeeld worden gebruikt om een subtekenreeks van het origineel te extraheren.
+* [zoeken en vervangen van ](#preprocessing-find-and-replace-patterns)
+patronenWanneer deze worden gevonden, wordt het opgegeven patroon (dat wordt gedefinieerd als een reguliere expressie) vervangen door een ander patroon. Dit kan bijvoorbeeld worden gebruikt om een subtekenreeks van het origineel te extraheren.
 
 * [gegevenstypeopmaakprogramma&#39;s](#preprocessing-data-type-formatters)
 
@@ -788,7 +793,7 @@ N:definitions
 
 #### Voorbewerken - Patronen zoeken en vervangen {#preprocessing-find-and-replace-patterns}
 
-Voor preprocessing kunt u een `pattern` (gedefinieerd als een [reguliere expressie](https://en.wikipedia.org/wiki/Regular_expression) of regex) opgeven die zich bevindt en vervolgens wordt vervangen door het `replace` patroon:
+Voor preprocessing kunt u een `pattern` (gedefinieerd als een [reguliere expressie](https://en.wikipedia.org/wiki/Regular_expression) of regex) opgeven die zich bevindt en vervolgens wordt vervangen door het `replace`-patroon:
 
 * `pattern`
 
@@ -796,14 +801,14 @@ Voor preprocessing kunt u een `pattern` (gedefinieerd als een [reguliere express
 
 * `replace`
 
-   De tekenreeks, of representatie van de tekenreeks, die wordt gebruikt als vervanging voor de oorspronkelijke tekenreeks. Vaak vertegenwoordigt dit een subtekenreeks van de tekenreeks die zich door de reguliere expressie bevindt `pattern`.
+   De tekenreeks, of representatie van de tekenreeks, die wordt gebruikt als vervanging voor de oorspronkelijke tekenreeks. Dit vertegenwoordigt vaak een subtekenreeks van de tekenreeks die wordt gevonden door de reguliere expressie `pattern`.
 
 Een voorbeeldvervanging kan als worden verdeeld:
 
 * Voor het knooppunt `definitions/data/preprocessing/apply` met de volgende twee eigenschappen:
 
    * `pattern`: `(.*)(/jcr:content)(/|$)(.*)`
-   * `replace`: `$1`
+   * `replace`:  `$1`
 
 * Een tekenreeks die aankomt als:
 
@@ -812,9 +817,9 @@ Een voorbeeldvervanging kan als worden verdeeld:
 * Wordt opgedeeld in vier secties:
 
    * `$1` - `(.*)` - `/content/geometrixx/en/services`
-   * `$2` - `(/jcr:content)` - `/jcr:content`
-   * `$3` - `(/|$)` - `/`
-   * `$4` - `(.*)` - `par/text`
+   * `$2` -  `(/jcr:content)` -  `/jcr:content`
+   * `$3` -  `(/|$)` -  `/`
+   * `$4` -  `(.*)` -  `par/text`
 
 * En vervangen door de tekenreeks die wordt vertegenwoordigd door `$1`:
 
@@ -824,7 +829,7 @@ Een voorbeeldvervanging kan als worden verdeeld:
 
 Deze formatters zetten een numerieke waarde in een relatieve koord om.
 
-Dit kan bijvoorbeeld worden gebruikt voor een tijdkolom die aggregaten toestaat `min`, `avg` en `max` . Als `min`/ `avg`/ `max` aggregaten worden weergegeven als een *tijdverschil* (bijvoorbeeld `10 days ago`), is een gegevensformatter vereist. Hiervoor wordt een `datedelta` formatter toegepast op de `min`/ `avg`/ `max` geaggregeerde waarden. Als er ook een `count` aggregaat beschikbaar is, is hiervoor geen opmaakfunctie nodig. De oorspronkelijke waarde wordt ook niet ondersteund.
+Dit kan bijvoorbeeld worden gebruikt voor een tijdkolom waarin `min`, `avg` en `max` aggregaten zijn toegestaan. Als `min`/ `avg`/ `max` aggregaten worden weergegeven als een *tijdverschil* (bijvoorbeeld `10 days ago`), is een gegevensformatter vereist. Hiervoor wordt een `datedelta`-formatter toegepast op de `min`/ `avg`/ `max` geaggregeerde waarden. Als een `count` aggregaat ook beschikbaar is dan vereist dit geen formatter, evenmin doet de originele waarde.
 
 Momenteel zijn de beschikbare gegevenstypeformatters:
 
@@ -834,9 +839,9 @@ Momenteel zijn de beschikbare gegevenstypeformatters:
 
    * `duration`
 
-      De duur is de tijdspanne tussen twee bepaalde data. Bijvoorbeeld het begin en einde van een werkstroomactie die 1 uur heeft geduurd, te beginnen op 13/13/11 11:23u en eindigend één uur later op 13/11 12:23u.
+      De duur is de tijdspanne tussen twee bepaalde data. Bijvoorbeeld het begin en einde van een werkstroomactie die 1 uur heeft geduurd, vanaf 13/13/11 11:23u en eindigend één uur later om 13/11 12:23u.
 
-      Het zet een numerieke waarde (die als milliseconden wordt geïnterpreteerd) in een duurkoord om; is bijvoorbeeld `30000` opgemaakt als * `30s`.*
+      Het zet een numerieke waarde (die als milliseconden wordt geïnterpreteerd) in een duurkoord om; `30000` is bijvoorbeeld opgemaakt als * `30s`.*
 
    * `datedelta`
 
@@ -844,7 +849,7 @@ Momenteel zijn de beschikbare gegevenstypeformatters:
 
       De numerieke waarde (geïnterpreteerd als een tijdverschil in dagen) wordt omgezet in een relatieve datumtekenreeks. 1 is bijvoorbeeld opgemaakt als 1 dag geleden.
 
-In het volgende voorbeeld wordt `datedelta` opmaak voor `min` en `max` aggregaten gedefinieerd:
+In het volgende voorbeeld wordt `datedelta`-opmaak gedefinieerd voor `min`- en `max`-aggregaten:
 
 ```xml
 N:definitions
@@ -897,22 +902,22 @@ N:definitions
    * `sortable`
 
       Wordt gebruikt voor waarden die verschillende waarden gebruiken (zoals overgenomen uit verschillende eigenschappen) voor het sorteren en weergeven.
-   Daarnaast. een van de bovenstaande punten kan worden gedefinieerd als meerwaarden; definieert bijvoorbeeld `string[]` een array met tekenreeksen.
+   Daarnaast. een van de bovenstaande punten kan worden gedefinieerd als meerwaarden; `string[]` definieert bijvoorbeeld een array van tekenreeksen.
 
    De waarde-extractor wordt gekozen door het kolomtype. Als een waarde-extractor beschikbaar is voor een kolomtype, wordt deze extractor gebruikt. Anders wordt de standaardwaarde voor de extractor gebruikt.
 
-   Een type kan (optioneel) een parameter nemen. Extraheert bijvoorbeeld het jaar uit een datumveld. `timeslot:year` Typen met de bijbehorende parameters:
+   Een type kan (optioneel) een parameter nemen. `timeslot:year` extraheert bijvoorbeeld het jaar uit een datumveld. Typen met de bijbehorende parameters:
 
-   * `timeslot` - De waarden zijn vergelijkbaar met de overeenkomstige constanten van `java.utils.Calendar`.
+   * `timeslot` - De waarden zijn vergelijkbaar met de overeenkomstige constanten van  `java.utils.Calendar`.
 
       * `timeslot:year` - `Calendar.YEAR`
-      * `timeslot:month-of-year` - `Calendar.MONTH`
-      * `timeslot:week-of-year` - `Calendar.WEEK_OF_YEAR`
-      * `timeslot:day-of-month` - `Calendar.DAY_OF_MONTH`
-      * `timeslot:day-of-week` - `Calendar.DAY_OF_WEEK`
-      * `timeslot:day-of-year` - `Calendar.DAY_OF_YEAR`
-      * `timeslot:hour-of-day` - `Calendar.HOUR_OF_DAY`
-      * `timeslot:minute-of-hour` - `Calendar.MINUTE`
+      * `timeslot:month-of-year` -  `Calendar.MONTH`
+      * `timeslot:week-of-year` -  `Calendar.WEEK_OF_YEAR`
+      * `timeslot:day-of-month` -  `Calendar.DAY_OF_MONTH`
+      * `timeslot:day-of-week` -  `Calendar.DAY_OF_WEEK`
+      * `timeslot:day-of-year` -  `Calendar.DAY_OF_YEAR`
+      * `timeslot:hour-of-day` -  `Calendar.HOUR_OF_DAY`
+      * `timeslot:minute-of-hour` -  `Calendar.MINUTE`
 
 
 * `groupable`
@@ -957,7 +962,7 @@ N:definitions
 
    * `text`
 
-      De tekstnaam van het aggregaat. Indien `text` niet gespecificeerd, dan zal het de standaardbeschrijving van het aggregaat nemen; bijvoorbeeld , `minimum` zal voor het `min` aggregaat worden gebruikt .
+      De tekstnaam van het aggregaat. Als `text` niet wordt gespecificeerd, dan zal het de standaardbeschrijving van het aggregaat nemen; `minimum` wordt bijvoorbeeld gebruikt voor het `min` aggregaat.
 
    * `type`
 
@@ -1006,11 +1011,11 @@ N:defaults
 
 * `aggregate`
 
-   Geldige `aggregate` waarden zijn dezelfde als voor `type` onder `aggregates` (zie [Kolomspecifieke Definities (definities - filters / aggregaten)](#column-specific-definitions) ).
+   Geldige `aggregate`-waarden zijn dezelfde als voor `type` onder `aggregates` (zie [Kolomspecifieke definities (definities - filters / aggregaten)](#column-specific-definitions) ).
 
 ### Gebeurtenissen en handelingen {#events-and-actions}
 
-Edit Configuration definieert de gebeurtenissen die de listeners nodig hebben om te detecteren en de handelingen die moeten worden toegepast nadat deze gebeurtenissen hebben plaatsgevonden. Zie de [inleiding aan componentenontwikkeling](/help/sites-developing/components.md) voor achtergrondinformatie.
+Edit Configuration definieert de gebeurtenissen die de listeners nodig hebben om te detecteren en de handelingen die moeten worden toegepast nadat deze gebeurtenissen hebben plaatsgevonden. Zie [inleiding aan componentenontwikkeling](/help/sites-developing/components.md) voor achtergrondinformatie.
 
 De volgende waarden moeten worden gedefinieerd om ervoor te zorgen dat alle vereiste acties worden opgenomen in:
 
@@ -1032,31 +1037,31 @@ N:cq:editConfig [cq:EditConfig]
 
 Generieke kolommen zijn een extensie waarbij (de meeste van) de kolomdefinities worden opgeslagen op de instantie van het kolomknooppunt (in plaats van op het componentknooppunt).
 
-Zij gebruiken een (standaard) dialoog, dat u aanpast, voor de individuele generische component. Dit dialoogvenster staat de rapportgebruiker toe om de kolomeigenschappen van een generische kolom op de rapportpagina te bepalen (gebruikend de eigenschappen van de **Kolom van de menuoptie...**).
+Zij gebruiken een (standaard) dialoog, dat u aanpast, voor de individuele generische component. In dit dialoogvenster kan de rapportgebruiker de kolomeigenschappen van een algemene kolom op de rapportpagina definiëren (met de menuoptie **Kolomeigenschappen..**).
 
-Een voorbeeld is de **Algemene** kolom van het **Rapport** van de Gebruiker; zie `/libs/cq/reporting/components/userreport/genericcol`.
+Een voorbeeld is de **Generic** kolom van **Rapport van de Gebruiker**; zie `/libs/cq/reporting/components/userreport/genericcol`.
 
 Een kolom algemeen maken:
 
-* Stel de `type` eigenschap van het `definition` knooppunt van de kolom in op `generic`.
+* Stel de eigenschap `type` van het knooppunt `definition` van de kolom in op `generic`.
 
    Zie `/libs/cq/reporting/components/userreport/genericcol/definitions`
 
-* Geef een definitie van het dialoogvenster (standaard) op onder het `definition` knooppunt van de kolom.
+* Geef een definitie van het dialoogvenster (standaard) op onder het knooppunt `definition` van de kolom.
 
    Zie `/libs/cq/reporting/components/userreport/genericcol/definitions/dialog`
 
-   * De velden van het dialoogvenster moeten naar dezelfde namen verwijzen als de bijbehorende componenteigenschap (inclusief het pad).
+   * De velden van het dialoogvenster moeten naar dezelfde namen verwijzen als de overeenkomende componenteigenschap (inclusief het pad).
 
       Als u bijvoorbeeld het type algemene kolom configureerbaar wilt maken via het dialoogvenster, gebruikt u een veld met de naam `./definitions/type`.
 
-   * Eigenschappen die zijn gedefinieerd met de interface/het dialoogvenster hebben voorrang op eigenschappen die zijn gedefinieerd voor de `columnbase` component.
+   * Eigenschappen die zijn gedefinieerd met de interface/het dialoogvenster hebben voorrang op eigenschappen die zijn gedefinieerd met de component `columnbase`.
 
 * Bepaal de Edit Configuratie.
 
    Zie `/libs/cq/reporting/components/userreport/genericcol/cq:editConfig`
 
-* Gebruik standaard AEM-methoden om (aanvullende) kolomeigenschappen te definiëren.
+* Gebruik standaard AEM methoden om (aanvullende) kolomeigenschappen te definiëren.
 
    Merk op dat voor eigenschappen die op zowel de component als de kolominstanties worden bepaald, de waarde op de kolominstantie belangrijkheid neemt.
 
@@ -1066,10 +1071,11 @@ Een kolom algemeen maken:
    * `definitions/aggregates` - aggregaten
    * `definitions/filters` - filters
    * `definitions/type`- het type kolom (dit moet in het dialoogvenster worden gedefinieerd met een kiezer/keuzelijst of een verborgen veld)
-   * `definitions/data/resolver` en `definitions/data/resolverConfig` (maar niet `definitions/data/preprocessing` of `.../clientFilter`) - de oplosser en configuratie
+   * `definitions/data/resolver` en  `definitions/data/resolverConfig` (maar niet  `definitions/data/preprocessing` of  `.../clientFilter`) - de oplosser en configuratie
    * `definitions/queryBuilder` - de configuratie van de vraagbouwer
    * `defaults/aggregate` - het standaardaggregaat
-   In het geval van een nieuw geval van de generische kolom op het Rapport **van de** Gebruiker worden de eigenschappen die met de dialoog worden bepaald voortgeduurd onder:
+
+   In het geval van een nieuw geval van de generische kolom op **Rapport van de Gebruiker** worden de eigenschappen die met de dialoog worden bepaald voortgeduurd onder:
 
    `/etc/reports/userreport/jcr:content/report/columns/genericcol/settings/generic`
 
@@ -1077,15 +1083,15 @@ Een kolom algemeen maken:
 
 Het ontwerp bepaalt welke kolomtypes voor het creëren van een rapport beschikbaar zijn. Het definieert ook het alineasysteem waaraan de kolommen worden toegevoegd.
 
-U wordt sterk geadviseerd om een individueel ontwerp voor elk rapport tot stand te brengen. Dit zorgt voor volledige flexibiliteit. Zie ook [Uw nieuw rapport](#defining-your-new-report)definiëren.
+U wordt sterk geadviseerd om een individueel ontwerp voor elk rapport tot stand te brengen. Dit zorgt voor volledige flexibiliteit. Zie ook [Het bepalen van Uw Nieuw Rapport](#defining-your-new-report).
 
-De standaardrapporteringscomponenten worden aangehouden onder `/etc/designs/reports`.
+De standaardrapporteringscomponenten worden gehouden onder `/etc/designs/reports`.
 
 De locatie voor uw rapporten kan afhankelijk zijn van de locatie van uw componenten:
 
-* `/etc/designs/reports/<yourReport>` geschikt is als het rapport zich onderaan bevindt `/apps/cq/reporting`
+* `/etc/designs/reports/<yourReport>` geschikt is als het rapport zich onderaan bevindt  `/apps/cq/reporting`
 
-* `/etc/designs/<yourProject>/reports/<*yourReport*>` voor rapporten die het `/apps/<yourProject>/reports` patroon gebruiken
+* `/etc/designs/<yourProject>/reports/<*yourReport*>` voor rapporten die het  `/apps/<yourProject>/reports` patroon gebruiken
 
 De vereiste ontwerpeigenschappen worden geregistreerd op `jcr:content/reportpage/report/columns` (bijvoorbeeld `/etc/designs/reports/<reportName>/jcr:content/reportpage/report/columns`):
 
@@ -1135,10 +1141,10 @@ Elk rapporttype moet een malplaatje verstrekken. Dit zijn standaard [CQ-sjablone
 
 De sjabloon moet:
 
-* instellen `sling:resourceType` op `cq/reporting/components/reportpage`
+* `sling:resourceType` instellen op `cq/reporting/components/reportpage`
 
 * het te gebruiken ontwerp
-* een `report` onderliggende node maken die via de `reportbase`eigenschap naar de container-component ( `sling:resourceType` ) verwijst
+* een `report` onderliggende node maken die via de eigenschap `sling:resourceType` naar de container-component ( `reportbase`) verwijst
 
 Een fragment van het voorbeeldmalplaatje (dat van het malplaatje van het componentenrapport wordt genomen) is:
 
@@ -1173,9 +1179,9 @@ Een fragment van het voorbeeldmalplaatje, dat de definitie van de wortelweg (die
 
 De standaardrapportagesjablonen worden aangehouden onder `/libs/cq/reporting/templates`.
 
-Het wordt echter ten zeerste aanbevolen deze knooppunten niet bij te werken, maar zelf componentknooppunten te maken onder `/apps/cq/reporting/templates` of, indien dit meer aangewezen is, `/apps/<yourProject>/reports/templates`.
+Het wordt echter ten zeerste aanbevolen deze knooppunten niet bij te werken, maar uw eigen componentknooppunten te maken onder `/apps/cq/reporting/templates` of, indien van toepassing, `/apps/<yourProject>/reports/templates`.
 
-Waar, als voorbeeld (zie ook [Plaats van de Componenten](#location-of-report-components)van het Rapport):
+Waar, als voorbeeld (zie ook [Plaats van de Componenten van het Rapport](#location-of-report-components)):
 
 ```xml
 N:apps
@@ -1194,9 +1200,9 @@ N:apps
                 N:<reportname> [sling:Folder]
 ```
 
-## Uw eigen rapport maken - een voorbeeld {#creating-your-own-report-an-example}
+## Uw eigen rapport maken - Een voorbeeld {#creating-your-own-report-an-example}
 
-### Uw nieuwe rapport definiëren {#defining-your-new-report}
+### Het bepalen van Uw Nieuw Rapport {#defining-your-new-report}
 
 Om een nieuw rapport te bepalen moet u creëren en vormen:
 
@@ -1207,7 +1213,7 @@ Om een nieuw rapport te bepalen moet u creëren en vormen:
 1. De wortel voor uw rapportmalplaatje.
 1. Het rapportmalplaatje.
 
-Om deze stappen te illustreren, bepaalt het volgende voorbeeld een rapport dat van alle configuraties OSGi binnen de bewaarplaats een lijst maakt; d.w.z. alle instanties van het `sling:OsgiConfig` knooppunt.
+Om deze stappen te illustreren, bepaalt het volgende voorbeeld een rapport dat van alle configuraties OSGi binnen de bewaarplaats een lijst maakt; d.w.z. alle instanties van de `sling:OsgiConfig`-node.
 
 >[!NOTE]
 >
@@ -1273,7 +1279,7 @@ Om deze stappen te illustreren, bepaalt het volgende voorbeeld een rapport dat v
    Dit bepaalt een component van de rapportbasis die:
 
    * zoekopdrachten naar alle knooppunten van het type `sling:OsgiConfig`
-   * geeft zowel `pie` als `lineseries` grafieken weer
+   * geeft zowel `pie`- als `lineseries`-diagrammen weer
    * verstrekt een dialoog voor de gebruiker om het rapport te vormen
 
 1. Definieer de eerste kolomcomponent (columnBase). Bijvoorbeeld `bundlecol[cq:Component]` onder `/apps/cq/reporting/components/osgireport`.
@@ -1306,12 +1312,13 @@ Om deze stappen te illustreren, bepaalt het volgende voorbeeld een rapport dat v
 
    Dit bepaalt een kolombasiscomponent die:
 
-   * zoekt naar en retourneert de waarde die het van de server ontvangt; in dit geval, het bezit `jcr:path` voor elke `sling:OsgiConfig` knoop
-   * levert het `count` aggregaat
+   * zoekt naar en retourneert de waarde die het van de server ontvangt; in dit geval de eigenschap `jcr:path` voor elke `sling:OsgiConfig`-node
+   * bevat het `count`-aggregaat
    * is niet gegroepeerd
    * heeft de titel `Bundle` (kolomtitel binnen de tabel)
-   * bevindt zich in de groep sidekick `OSGi Report`
+   * bevindt zich in de hulpgroep `OSGi Report`
    * Vernieuwingen bij opgegeven gebeurtenissen
+
    >[!NOTE]
    >
    >In dit voorbeeld zijn er geen definities van `N:data` en `P:clientFilter`. De reden hiervoor is dat de waarde die van de server wordt ontvangen, op een 1:1-basis wordt geretourneerd. Dit is het standaardgedrag.
@@ -1371,7 +1378,7 @@ Om deze stappen te illustreren, bepaalt het volgende voorbeeld een rapport dat v
 
    Hiermee definieert u een sjabloon die:
 
-   * bepaalt de `allowedPaths` voor de resulterende rapporten - in bovenstaand geval `/etc/reports`
+   * definieert `allowedPaths` voor de resulterende rapporten - in het bovenstaande geval ergens onder `/etc/reports`
    * biedt titels en beschrijvingen voor de sjabloon
    * verstrekt een duimnagelbeeld voor gebruik in de malplaatjelijst (de volledige definitie van dit knooppunt is hierboven niet vermeld - het is het gemakkelijkst om een geval van thumbnail.png van een bestaand rapport te kopiëren).
 
@@ -1379,12 +1386,12 @@ Om deze stappen te illustreren, bepaalt het volgende voorbeeld een rapport dat v
 
 Een geval van uw nieuw rapport kan nu worden gecreeerd:
 
-1. Open de **console van Hulpmiddelen** .
+1. Open de console **Tools**.
 
 1. Selecteer **Rapporten** in de linkerruit.
-1. Dan **Nieuw...** op de werkbalk. Bepaal een **Titel** en een **Naam**, selecteer uw nieuw rapporttype (het Malplaatje **van het Rapport** OSGi) van de lijst van malplaatjes, dan klik **creëren**.
+1. Dan **Nieuw..** op de werkbalk. Definieer een **Titel** en **Naam**, selecteer uw nieuw rapporttype (**OSGi Report Template**) van de lijst van malplaatjes, dan klik **Create**.
 1. Uw nieuwe rapportexemplaar zal in de lijst verschijnen. Dubbelklik hierop om te openen.
-1. Sleep een component (voor dit voorbeeld, **Bundel** in de **OSGi groep van het Rapport** ) van sidekick om de eerste kolom tot stand te brengen en de rapportdefinitie [te](/help/sites-administering/reporting.md#the-basics-of-report-customization)beginnen.
+1. Sleep een component (voor dit voorbeeld, **Bundel** in **OSGi Report** groep) van het hulpslot om de eerste kolom tot stand te brengen en [start de rapportdefinitie](/help/sites-administering/reporting.md#the-basics-of-report-customization).
 
    >[!NOTE]
    >
@@ -1402,44 +1409,45 @@ Een geval van uw nieuw rapport kan nu worden gecreeerd:
 
 Deze sectie beschrijft geavanceerde configuratieopties voor de diensten OSGi die het rapportkader uitvoeren.
 
-Deze kunnen worden bekeken gebruikend het menu van de Configuratie van de Webconsole (beschikbaar bijvoorbeeld bij `http://localhost:4502/system/console/configMgr`). Wanneer het werken met AEM zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie het [Vormen OSGi](/help/sites-deploying/configuring-osgi.md) voor meer details en de geadviseerde praktijken.
+Deze kunnen worden bekeken gebruikend het menu van de Configuratie van de Webconsole (beschikbaar bijvoorbeeld bij `http://localhost:4502/system/console/configMgr`). Wanneer het werken met AEM zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [Het vormen OSGi](/help/sites-deploying/configuring-osgi.md) voor meer details en de geadviseerde praktijken.
 
-### Basisservice (CQ-rapportconfiguratie op de dag) {#basic-service-day-cq-reporting-configuration}
+### Basic Service (Day CQ Reporting Configuration) {#basic-service-day-cq-reporting-configuration}
 
-* **De tijdzone** bepaalt de historische gegevens van timezone voor wordt gecreeerd. Dit moet ervoor zorgen dat de historische grafiek de zelfde gegevens voor elke gebruiker over de wereld toont.
-* **Landinstelling** definieert de landinstelling die moet worden gebruikt in combinatie met de **tijdzone** voor historische gegevens. De landinstelling wordt gebruikt om bepaalde landspecifieke kalenderinstellingen te bepalen (bijvoorbeeld of de eerste dag van een week zondag of maandag is).
+* **De tijdzone** definieert voor welke historische gegevens de tijdzone wordt gemaakt. Dit moet ervoor zorgen dat de historische grafiek de zelfde gegevens voor elke gebruiker over de wereld toont.
+* **Locale** definieert de landinstelling die moet worden gebruikt in combinatie met de  **** tijdzone voor historische gegevens. De landinstelling wordt gebruikt om bepaalde landspecifieke kalenderinstellingen te bepalen (bijvoorbeeld of de eerste dag van een week zondag of maandag is).
 
-* **Het pad** voor momentopnamen definieert het hoofdpad waar momentopnamen voor historische grafieken worden opgeslagen.
-* **Het pad naar rapporten** definieert het pad waar rapporten zich bevinden. Dit wordt gebruikt door de momentopnameservice om de rapporten te bepalen om momentopnamen voor eigenlijk te nemen.
-* **Dagelijkse momentopnamen** bepalen het uur van elke dag wanneer de dagelijkse momentopnamen worden genomen. Het opgegeven uur bevindt zich in de lokale tijdzone van de server.
-* **Uurmomentopnamen** bepalen de minuut van elk uur wanneer uurmomentopnamen worden genomen.
-* **De rijen (maximum)** bepalen het maximumaantal rijen die voor elke momentopname worden opgeslagen. Deze waarde moet redelijkerwijs worden gekozen; als het te hoog is, zal dit de grootte van de gegevensopslagruimte beïnvloeden, als het te laag is, kunnen gegevens niet accuraat zijn vanwege de manier waarop historische gegevens worden verwerkt.
-* **Gegevens** van de mislukking, indien toegelaten, kunnen de valse historische gegevens worden gecreeerd door de `fakedata` selecteur te gebruiken; als deze optie is uitgeschakeld, genereert het gebruik van de `fakedata` kiezer een uitzondering.
+* **Het** pad voor momentopnamen definieert het hoofdpad waar momentopnamen voor historische grafieken worden opgeslagen.
+* **Het pad naar** rapporten definieert het pad waar rapporten zich bevinden. Dit wordt gebruikt door de momentopnameservice om de rapporten te bepalen om momentopnamen voor eigenlijk te nemen.
+* **Dagelijkse** momentopnamen bepalen het uur van elke dag wanneer de dagelijkse momentopnamen worden genomen. Het opgegeven uur bevindt zich in de lokale tijdzone van de server.
+* **Uur** momentopnamen bepaalt de minuut van elk uur wanneer uurmomentopnamen worden genomen.
+* **Met Rijen (max.)** wordt het maximale aantal rijen gedefinieerd dat voor elke opname wordt opgeslagen. Deze waarde moet redelijkerwijs worden gekozen; als het te hoog is, zal dit de grootte van de gegevensopslagruimte beïnvloeden, als het te laag is, kunnen gegevens niet accuraat zijn vanwege de manier waarop historische gegevens worden verwerkt.
+* **Gegevens** van de mislukking, indien toegelaten, kunnen de valse historische gegevens worden gecreeerd door de  `fakedata` selecteur te gebruiken; als deze optie is uitgeschakeld, genereert het gebruik van de  `fakedata` kiezer een uitzondering.
 
-   Aangezien de gegevens vals zijn moet het *slechts* voor het testen en het zuiveren doeleinden worden gebruikt.
+   Aangezien de gegevens vals zijn moet het *only* voor het testen en het zuiveren doeleinden worden gebruikt.
 
-   Het gebruiken van de `fakedata` selecteur zal impliciet het rapport beëindigen, zodat zullen alle bestaande gegevens worden verloren; gegevens kunnen handmatig worden hersteld, maar dit kan een tijdrovend proces zijn.
+   Als u de kiezer `fakedata` gebruikt, wordt het rapport impliciet voltooid, zodat alle bestaande gegevens verloren gaan; gegevens kunnen handmatig worden hersteld, maar dit kan een tijdrovend proces zijn.
 
-* **De gebruiker** van de momentopname bepaalt een facultatieve gebruiker die voor het nemen van momentopnamen kan worden gebruikt.
+* **De** gebruiker van de momentopname bepaalt een facultatieve gebruiker die voor het nemen van momentopnamen kan worden gebruikt.
 
    In feite worden momentopnamen gemaakt voor de gebruiker die het rapport heeft voltooid. Er kunnen situaties zijn (bijvoorbeeld op een publicatiesysteem, waar deze gebruiker niet bestaat omdat zijn account niet is gerepliceerd) waarin u een fallback-gebruiker wilt opgeven die in plaats daarvan wordt gebruikt.
 
    Bovendien kan het opgeven van een gebruiker een beveiligingsrisico inhouden.
 
-* **De gebruiker** van de momentopname afdwingen, indien toegelaten, zullen alle momentopnamen met de gebruiker worden genomen die onder de gebruiker van de *Momentopname wordt gespecificeerd*. Dit kan ernstige gevolgen hebben voor de veiligheid als het niet correct wordt behandeld.
+* **De gebruiker** van de momentopname afdwingen, indien toegelaten, zullen alle momentopnamen met de gebruiker worden genomen die onder de gebruiker van de  *Momentopname wordt gespecificeerd*. Dit kan ernstige gevolgen hebben voor de veiligheid als het niet correct wordt behandeld.
 
-### Cacheinstellingen (CQ-rapportagecache dag) {#cache-settings-day-cq-reporting-cache}
+### Cacheinstellingen (Day CQ Reporting Cache) {#cache-settings-day-cq-reporting-cache}
 
-* **Laat toe** u toe om het caching van rapportgegevens toe te laten of onbruikbaar te maken. Het toelaten van het rapportgeheime voorgeheugen zal rapportgegevens in geheugen tijdens verscheidene verzoeken houden. Dit kan de prestaties verhogen, maar zal leiden tot een hoger geheugengebruik en kan in extreme omstandigheden leiden tot een gebrek aan geheugen.
-* **TTL** bepaalt de tijd (in seconden) waarvoor de rapportgegevens in het voorgeheugen onder worden gebracht. Een hoger getal zal de prestaties verhogen, maar kan ook onjuiste gegevens retourneren als de gegevens binnen de tijdsperiode veranderen.
-* **Max. items** definiëren het maximumaantal rapporten dat tegelijkertijd in de cache moet worden opgeslagen.
+* **** Laat toe toelaat u toe of onbruikbaar maakt caching van rapportgegevens. Het toelaten van het rapportgeheime voorgeheugen zal rapportgegevens in geheugen tijdens verscheidene verzoeken houden. Dit kan de prestaties verhogen, maar zal leiden tot een hoger geheugengebruik en kan in extreme omstandigheden leiden tot een gebrek aan geheugen.
+* **** TTL bepaalt de tijd (in seconden) waarvoor het rapportgegeven in het voorgeheugen onder wordt gebracht. Een hoger getal zal de prestaties verhogen, maar kan ook onjuiste gegevens retourneren als de gegevens binnen de tijdsperiode veranderen.
+* **Max.** items definieert het maximumaantal rapporten dat tegelijkertijd in de cache moet worden geplaatst.
 
 >[!NOTE]
 >
->De rapportgegevens kunnen voor elke gebruiker en taal verschillend zijn. Daarom worden de rapportgegevens in het voorgeheugen ondergebracht per rapport, gebruiker en taal. Dit betekent dat een **Max ingangswaarde** van `2` eigenlijk gegevens voor één van beiden in cache plaatst:
+>De rapportgegevens kunnen voor elke gebruiker en taal verschillend zijn. Daarom worden de rapportgegevens in het voorgeheugen ondergebracht per rapport, gebruiker en taal. Dit betekent dat een **Max entry** waarde van `2` eigenlijk gegevens voor of in de cache plaatst:
 >
 >* één rapport voor twee gebruikers met verschillende taalmontages
 >* één gebruiker en twee rapporten
+
 >
 
 

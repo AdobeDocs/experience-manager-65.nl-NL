@@ -1,6 +1,6 @@
 ---
-title: Cloud Service Configurations
-seo-title: Cloud Service Configurations
+title: Configuraties van Cloud Servicen
+seo-title: Configuraties van Cloud Servicen
 description: U kunt de bestaande instanties uitbreiden om uw eigen configuraties te maken
 seo-description: U kunt de bestaande instanties uitbreiden om uw eigen configuraties te maken
 uuid: 9d20c3a4-2a12-4d3c-80c3-fcac3137a675
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: d25c03bf-6eaa-45f4-ab60-298865935a62
 translation-type: tm+mt
 source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+workflow-type: tm+mt
+source-wordcount: '579'
+ht-degree: 1%
 
 ---
 
 
-# Cloud Service Configurations{#cloud-service-configurations}
+# Configuraties van Cloud Servicen{#cloud-service-configurations}
 
 Configuraties zijn ontworpen om de logica en structuur te bieden voor het opslaan van serviceconfiguraties.
 
@@ -29,8 +32,8 @@ De beginselen die bij de ontwikkeling van de configuraties worden gebruikt, zijn
 * Configuraties (bijvoorbeeld eigenschappen/alinea&#39;s) worden overgenomen van de bovenliggende elementen.
 * Verwezen van analytische node(s) per pad.
 * Gemakkelijk uitbreidbaar.
-* Biedt de flexibiliteit om rekening te houden met complexere configuraties, zoals [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics).
-* Ondersteuning voor afhankelijkheden (voor [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) -plug-ins is bijvoorbeeld een configuratie voor [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) vereist).
+* Heeft de flexibiliteit om voor complexere configuraties, zoals [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) te behandelen.
+* Ondersteuning van afhankelijkheden (bv. [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)-plug-ins hebben een [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)-configuratie nodig).
 
 ## Structuur {#structure}
 
@@ -51,7 +54,7 @@ Om een configuratie voor de nieuwe diensten te verstrekken moet u:
    * een configuratiesjabloon
    * een configuratiecomponent
 
-De sjabloon en de component moeten de sjabloon overnemen `sling:resourceSuperType` van de basissjabloon:
+De sjabloon en component moeten de `sling:resourceSuperType` van de basissjabloon overnemen:
 
 `cq/cloudserviceconfigs/templates/configpage`
 
@@ -69,7 +72,7 @@ Uw sjabloon breidt de basissjabloon uit:
 
 `cq/cloudserviceconfigs/templates/configpage`
 
-en definieert u een `resourceType` element dat naar de aangepaste component wijst.
+en definieer een `resourceType` die naar de aangepaste component wijst.
 
 ```xml
 /libs/cq/analytics/templates/sitecatalyst
@@ -90,7 +93,7 @@ cq:designPath = /etc/designs/cloudservices
 sling:resourceType = cq/analytics/components/generictrackerpage
 ```
 
-### Componenten {#components}
+### Onderdelen {#components}
 
 De component moet de basiscomponent uitbreiden:
 
@@ -121,8 +124,8 @@ Het inhoudsmodel wordt opgeslagen als `cq:Page` onder:
 
 De configuraties worden opgeslagen onder het subknooppunt `jcr:content`.
 
-* Vaste eigenschappen, die in een dialoogvenster zijn gedefinieerd, moeten `jcr:node` rechtstreeks in het dialoogvenster worden opgeslagen.
-* Dynamische elementen (met `parsys` of `iparsys`) gebruiken een subknooppunt om de componentgegevens op te slaan.
+* Vaste eigenschappen, die in een dialoogvenster worden gedefinieerd, moeten direct op `jcr:node` worden opgeslagen.
+* Dynamische elementen (met behulp van `parsys` of `iparsys`) gebruiken een subknooppunt om de componentgegevens op te slaan.
 
 ```xml
 /etc/cloudservices/service/config/jcr:content as nt:unstructured
@@ -135,11 +138,11 @@ propertyname
 
 ### API {#api}
 
-Zie [com.day.cq.wcm.webservicesupport](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/webservicesupport/package-summary.html)voor documentatie over de API.
+Zie [com.day.cq.wcm.webservicesupport](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/webservicesupport/package-summary.html) voor referentiedocumentatie over de API.
 
-### AEM-integratie {#aem-integration}
+### AEM integratie {#aem-integration}
 
-De beschikbare services worden vermeld op het tabblad **Cloud Services** van het dialoogvenster **Pagina-eigenschappen** (van elke pagina die overerft van `foundation/components/page` of `wcm/mobile/components/page`).
+Beschikbare services worden vermeld op het tabblad **Cloud Services** van het dialoogvenster **Pagina-eigenschappen** (van elke pagina die overerft van `foundation/components/page` of `wcm/mobile/components/page`).
 
 Het tabblad bevat ook:
 
@@ -150,19 +153,19 @@ Het tabblad bevat ook:
 
 Wanneer het opslaan van gebruikersgeloofsbrieven voor de dienst, zouden alle wachtwoorden moeten worden gecodeerd.
 
-U kunt dit bereiken door een verborgen formulierveld toe te voegen. Dit veld moet de annotatie `@Encrypted` in de naam van de eigenschap hebben. Voor het `password` veld wordt de naam als volgt geschreven:
+U kunt dit bereiken door een verborgen formulierveld toe te voegen. Dit veld moet de annotatie `@Encrypted` in de naam van de eigenschap hebben. Voor het veld `password` wordt de naam als volgt geschreven:
 
 `password@Encrypted`
 
-De eigenschap wordt vervolgens automatisch gecodeerd (met de `CryptoSupport` service) door de `EncryptionPostProcessor`instantie.
+De eigenschap wordt vervolgens automatisch gecodeerd (met de `CryptoSupport`-service) door `EncryptionPostProcessor`.
 
 >[!NOTE]
 >
->Dit is vergelijkbaar met de standaardannotaties ` [SlingPostServlet](https://sling.apache.org/site/manipulating-content-the-slingpostservlet-servletspost.html)` .
+>Dit is vergelijkbaar met de standaardannotaties ` [SlingPostServlet](https://sling.apache.org/site/manipulating-content-the-slingpostservlet-servletspost.html)`.
 
 >[!NOTE]
 >
->Standaard worden `EcryptionPostProcessor` alleen `POST` verzoeken versleuteld die aan zijn gedaan `/etc/cloudservices`.
+>Standaard versleutelt `EcryptionPostProcessor` alleen `POST`-verzoeken die aan `/etc/cloudservices` zijn gedaan.
 
 #### Aanvullende eigenschappen voor servicepagina jcr:inhoudsknooppunten {#additional-properties-for-service-page-jcr-content-nodes}
 
@@ -174,11 +177,11 @@ De eigenschap wordt vervolgens automatisch gecodeerd (met de `CryptoSupport` ser
   </tr>
   <tr>
    <td>componentReference</td>
-   <td>Verwijzingspad naar een component die automatisch op de pagina moet worden opgenomen.<br /> Dit wordt gebruikt voor extra functionaliteit en JS inbegrepen.<br /> Dit omvat de component op de pagina waar<br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> is inbegrepen (normaal vóór de <code>body</code> markering).<br /> Voor het geval dat Analytics en Target dit gebruiken om extra functionaliteit op te nemen, zoals JavaScript-aanroepen om het gedrag van bezoekers te volgen.</td>
+   <td>Verwijzingspad naar een component die automatisch op de pagina moet worden opgenomen.<br /> Dit wordt gebruikt voor extra functionaliteit en JS inbegrepen.<br /> Dit omvat de component op de pagina <br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> waar (normaal vóór de  <code>body</code> markering) inbegrepen is.<br /> Voor het geval dat Analytics en Target dit gebruiken om extra functionaliteit op te nemen, zoals JavaScript-aanroepen om het gedrag van bezoekers te volgen.</td>
   </tr>
   <tr>
    <td>beschrijving</td>
-   <td>Korte beschrijving van de dienst.<br /> </td>
+   <td>Korte beschrijving van de service.<br /> </td>
   </tr>
   <tr>
    <td>descriptionExtended</td>
@@ -211,17 +214,17 @@ De eigenschap wordt vervolgens automatisch gecodeerd (met de `CryptoSupport` ser
  </tbody>
 </table>
 
-### Gevallen gebruiken {#use-cases}
+### Gevallen {#use-cases} gebruiken
 
 Deze services worden standaard geleverd:
 
-* [Trackerfragmenten](/help/sites-administering/external-providers.md) (Google, WebTrends, enz.)
+* [Trackerfragmenten](/help/sites-administering/external-providers.md)  (Google, WebTrends, enz.)
 * [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)
 * [&amp;Doel testen](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-target)
-* [&amp;Zoeken bevorderen](/help/sites-administering/marketing-cloud.md#integrating-with-search-promote)
+* [Search&amp;Promote](/help/sites-administering/marketing-cloud.md#integrating-with-search-promote)
 * [Scene7](/help/sites-administering/marketing-cloud.md#integrating-with-scene)
 
 >[!NOTE]
 >
->Zie ook [Een aangepaste Cloud-service](/help/sites-developing/extending-cloud-config-custom-cloud.md)maken.
+>Zie ook [Een aangepaste Cloud Service maken](/help/sites-developing/extending-cloud-config-custom-cloud.md).
 

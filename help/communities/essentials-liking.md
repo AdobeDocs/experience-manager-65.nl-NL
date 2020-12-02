@@ -19,15 +19,15 @@ ht-degree: 0%
 ---
 
 
-# Belangrijkste elementen {#liking-essentials}
+# Liking Essentials {#liking-essentials}
 
-De koppelende component, een [tally](tally.md) -subklasse, is een handig hulpmiddel waarmee leden een positief advies over een bepaald stuk inhoud kunnen geven door gewoon het hartpictogram te selecteren.
+De koppelende component, een [tally](tally.md) subklasse, is een nuttig hulpmiddel dat leden toestaat om een positieve mening over een bepaald stuk van inhoud te uiten door het hartpictogram eenvoudig te selecteren.
 
 Het plaatsen van meerdere instanties van een koppelingscomponent op dezelfde pagina is toegestaan. elke instantie moet met een uniek `tally name` bezit worden gevormd.
 
 Anonieme post van een soortgelijk object wordt niet ondersteund. Sitebezoekers moeten zich registreren en aanmelden om deel te nemen aan een abonnement. De ondertekende bezoeker (lid) kan te allen tijde in- en uitschakelen.
 
-## Essentiële elementen voor client-kant {#essentials-for-client-side}
+## Essentiële elementen voor client-side {#essentials-for-client-side}
 
 <table>
  <tbody>
@@ -37,7 +37,7 @@ Anonieme post van een soortgelijk object wordt niet ondersteund. Sitebezoekers m
   </tr>
   <tr>
    <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inclusief</strong></a></td>
-   <td>Ja - eigenschappen kunnen worden bewerkt in de <i></i>ontwerpmodus</td>
+   <td>Ja - eigenschappen kunnen worden bewerkt in <i>ontwerpmodus </i>modus</td>
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
@@ -53,7 +53,7 @@ Anonieme post van een soortgelijk object wordt niet ondersteund. Sitebezoekers m
   </tr>
   <tr>
    <td><strong>eigenschappen</strong></td>
-   <td><p>Zie Vergelijken <a href="liking.md">gebruiken</a></p> </td>
+   <td><p>Zie <a href="liking.md">Koppeling gebruiken</a></p> </td>
   </tr>
  </tbody>
 </table>
@@ -68,19 +68,19 @@ Anonieme post van een soortgelijk object wordt niet ondersteund. Sitebezoekers m
 
 * [Aanpassingen op de server](server-customize.md)
 
-### Toegang tot gebste stemmen (UGC) {#accessing-posted-voting-ugc}
+### Toegang tot Geposte Stemming (UGC) {#accessing-posted-voting-ugc}
 
 UGC moet worden gemoderniseerd met behulp van een van de standaardmethoden voor gematigdheid.
-Zie Door de gebruiker gegenereerde inhoud [modereren](moderate-ugc.md).
+Zie [Door gebruiker gegenereerde inhoud modereren](moderate-ugc.md).
 
-Vanaf AEM 6.1 Communities omvat het gebruik van een [gemeenschappelijke opslag](working-with-srp.md) voor UGC programmatische toegang tot UGC ongeacht de gekozen opslagoptie (zoals ASRP, MSRP of JSRP).
+Met ingang van AEM 6.1 Communities omvat het gebruik van een [common store](working-with-srp.md) voor UGC programmatische toegang tot UGC, ongeacht de gekozen opslagoptie (zoals ASRP, MSRP of JSRP).
 
 **De locatie en indeling van de UGC in de opslagplaats kunnen zonder waarschuwing** worden gewijzigd.
 
 Zie:
 
-* [Overzicht](srp.md) van Storage Resource Provider - introductie en overzicht van het gebruik van opslagruimten.
-* [SRP en de Hoofdzaak](srp-and-ugc.md) UGC - SRP nutsmethodes en voorbeelden.
+* [Overzicht](srp.md)  van Storage Resource Provider - introductie en overzicht van het gebruik van opslagruimten.
+* [SRP en de Hoofdzaak](srp-and-ugc.md)  van UGC - SRP nutsmethodes en voorbeelden.
 * [Toegang tot UGC met SRP](accessing-ugc-with-srp.md) - coderingsrichtlijnen.
-* [SocialUtils Refactoring](socialutils.md) - het in kaart brengen verouderde nutsmethodes aan huidige SRP nutsmethodes.
+* [SocialUtils Refactoring](socialutils.md)  - in kaart gebrachte vervangen nutsmethodes aan huidige SRP hulpprogrammamethodes.
 

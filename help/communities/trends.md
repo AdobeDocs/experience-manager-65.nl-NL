@@ -23,41 +23,41 @@ ht-degree: 1%
 
 ## Inleiding {#introduction}
 
-De `Community Activity List` component biedt de mogelijkheid om trending information betreffende posten en weergaven door leden toe te voegen, alsook publicaties en weergaven van inhoud.
+Met de component `Community Activity List` kunt u trending-informatie over posts en weergaven door leden en posts en weergaven van inhoud toevoegen.
 
 In het document wordt beschreven:
 
-* De `Community Activity List` component toevoegen aan een [communitysite](/help/communities/overview.md#community-sites).
+* De `Community Activity List`-component toevoegen aan een [communitysite](/help/communities/overview.md#community-sites).
 
-* De montages van de configuratie voor de `Community Activity List` component.
+* De montages van de configuratie voor `Community Activity List` component.
 
 ### Vereiste {#requirement}
 
-Gegevens voor de `Community Activity List` website zijn alleen beschikbaar wanneer Adobe Analytics een licentie heeft en geconfigureerd voor de communitysite.
+Gegevens voor de `Community Activity List` zijn alleen beschikbaar wanneer Adobe Analytics een licentie heeft en is geconfigureerd voor de communitysite.
 
-Zie [Analytics Configuration for Communities Features](/help/communities/analytics.md).
+Zie [Analyseconfiguratie voor Gemeenschappen-functies](/help/communities/analytics.md).
 
 ### Een communautaire activiteitenlijst toevoegen aan een pagina {#adding-a-community-activity-list-to-a-page}
 
-Als u een `Community Activity List` component aan een pagina wilt toevoegen in de ontwerpmodus, zoekt u de component
+Als u een `Community Activity List`-component wilt toevoegen aan een pagina in de ontwerpmodus, zoekt u de component
 
 * `Communities / Community Activity List`
 
 en sleep het naar de juiste plaats op een pagina.
 
-Ga voor de benodigde informatie naar [Community Components Basics](/help/communities/basics.md).
+Voor noodzakelijke informatie, bezoek [de Grondbeginselen van Componenten van Gemeenschappen](/help/communities/basics.md).
 
 Wanneer de component voor het eerst op een pagina van een communitysite wordt geplaatst, ziet deze er zo uit:
 
 ![gemeenschapsactiviteit](assets/community-activity.png)
 
-### Lijst met communautaire activiteiten configureren  {#configuring-community-activity-list}
+### Lijst met communautaire activiteiten configureren {#configuring-community-activity-list}
 
-Selecteer de geplaatste `Community Activity List` component die u wilt openen en selecteer het `Configure` pictogram waarmee het dialoogvenster Bewerken wordt geopend.
+Selecteer de geplaatste `Community Activity List` component en selecteer `Configure` pictogram dat het Edit dialoog opent.
 
 ![vormen](assets/configure-new.png)
 
-Geef op het tabblad **Opmerkingen** op of en hoe opmerkingen voor geüploade bestanden worden weergegeven:
+Geef onder het tabblad **Opmerkingen** op of en hoe opmerkingen voor geüploade bestanden worden weergegeven:
 
 ![eigenschappen](assets/activity-list-properties.png)
 
@@ -70,7 +70,7 @@ Geef op het tabblad **Opmerkingen** op of en hoe opmerkingen voor geüploade bes
    * `Members`
    * `Content`
 
-   Standaard is dit `Members`.
+   De standaardwaarde is `Members`.
 
 * **Weergavetitel**
 
@@ -104,7 +104,7 @@ De standaardwaarde is 10.
    * `This year (since Jan 1st)`
    * `Total`
 
-   Standaard is dit `Total`.
+   De standaardwaarde is `Total`.
 
 * **Contextpad**
 
@@ -113,18 +113,18 @@ Standaard is dit de hele community-site.
 
 * **Samenvoeging aantal leden**
 
-   Wanneer deze optie is uitgeschakeld, worden alleen de bovenste posts geteld. Als de context bijvoorbeeld de hoofdpagina is (de standaardinstelling), `Activity Type` `Posts` wordt bij een van deze gebeurtenissen nooit enige activiteit weergegeven, omdat het niet mogelijk is inhoud naar de hoofdpagina te posten. Wanneer deze optie is ingeschakeld, worden de tellingen op alle afstammende pagina&#39;s opgenomen.
+   Wanneer deze optie is uitgeschakeld, worden alleen de bovenste posts geteld. Als de context bijvoorbeeld de hoofdpagina is (de standaardinstelling), wordt bij een `Activity Type` van `Posts` nooit enige activiteit weergegeven omdat het niet mogelijk is inhoud op de hoofdpagina te plaatsen. Wanneer deze optie is ingeschakeld, worden de tellingen op alle afstammende pagina&#39;s opgenomen.
 Standaard is ingeschakeld.
 
-### Voorbeeldpagina met 4 componenten {#example-page-with-components}
+### Voorbeeld van pagina met 4 componenten {#example-page-with-components}
 
-**Configuratie van bovenste bezoekers** : Type = Leden, Type activiteit = Weergaven
+**Top** Visitorsconfig: Type = Leden, Type activiteit = Weergaven
 
-**Configuratie van belangrijkste contribuanten** : Type = Leden, Type activiteit = Posten
+**Top** Contributorsconfig: Type = Leden, Type activiteit = Posten
 
-**Configuratie van de bovenste inhoud** : Type = Inhoud, Type activiteit = Weergaven
+**Top** Contentconfig: Type = Inhoud, Type activiteit = Weergaven
 
-**Trending Content** config: Type = Inhoud, Type activiteit = Post
+**Trending** Contentconfig: Type = Inhoud, Type activiteit = Post
 
 ![componenten](assets/activity-list-components.png)
 

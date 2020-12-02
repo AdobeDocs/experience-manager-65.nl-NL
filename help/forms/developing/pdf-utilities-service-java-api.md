@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Java API Quick Start (SOAP) voor PDF-hulpprogramma&#39;s {#pdf-utilities-service-java-apiquick-start-soap}
+# Java API Quick Start (SOAP) {#pdf-utilities-service-java-apiquick-start-soap}
 
 De volgende snelstarthandleidingen zijn beschikbaar voor de service PDF-hulpprogramma&#39;s.
 
@@ -32,15 +32,15 @@ De volgende snelstarthandleidingen zijn beschikbaar voor de service PDF-hulpprog
 
 [Snel starten (SOAP-modus): PDF-documenten ontsmetten](pdf-utilities-service-java-api.md#quick-start-soap-mode-sanitizing-pdf-documents)
 
-De verrichtingen van AEM Forms kunnen worden uitgevoerd gebruikend AEM Forms sterk-getypte API en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
+AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte AEM Forms-API en de verbindingsmodus moet worden ingesteld op SOAP.
 
 >[!NOTE]
 >
->De snelle Beginnen die in Programmering met vormen worden gevestigd AEM zijn gebaseerd op het werkende systeem van de Server van Vormen. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Quick Start-programma&#39;s in Programming met AEM formulieren zijn gebaseerd op het besturingssysteem Forms Server. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Snel starten (SOAP-modus): Een PDF-document converteren naar een XDP-document met de Java API {#quick-start-soap-mode-converting-a-pdf-document-to-an-xdp-document-using-the-java-api}
 
-In het volgende codevoorbeeld wordt een PDF-document geconverteerd naar een XDP-document. (Zie PDF-documenten [converteren naar XDP-documenten](/help/forms/developing/pdf-utilities.md#converting-pdf-documents-into-xdp-documents).
+In het volgende codevoorbeeld wordt een PDF-document geconverteerd naar een XDP-document. (Zie [PDF-documenten converteren naar XDP-documenten](/help/forms/developing/pdf-utilities.md#converting-pdf-documents-into-xdp-documents).
 
 ```java
  /*
@@ -141,7 +141,7 @@ In het volgende codevoorbeeld wordt een PDF-document geconverteerd naar een XDP-
 
 ## Snel starten (SOAP-modus): Een XDP-document converteren naar een PDF-document met de Java API {#quick-start-soap-mode-converting-an-xdp-document-to-a-pdf-document-using-the-java-api}
 
-In het volgende codevoorbeeld wordt een XDP-document geconverteerd naar een PDF-document. (Zie XDP-documenten [converteren naar PDF-documenten](/help/forms/developing/pdf-utilities.md#converting-xdp-documents-into-pdf-documents).)
+In het volgende codevoorbeeld wordt een XDP-document geconverteerd naar een PDF-document. (Zie [XDP-documenten converteren naar PDF-documenten](/help/forms/developing/pdf-utilities.md#converting-xdp-documents-into-pdf-documents).)
 
 ```java
  /*
@@ -241,7 +241,7 @@ In het volgende codevoorbeeld wordt een XDP-document geconverteerd naar een PDF-
 
 ## Snel starten (SOAP-modus): Eigenschappen van PDF-documenten ophalen met de Java API {#quick-start-soap-mode-retrieving-pdf-document-properties-using-the-java-api}
 
-In het volgende codevoorbeeld wordt bepaald of het document een PDF-document is en, zo ja, de oudste Acrobat-versie die het kan lezen. (Zie Eigenschappen [PDF-document](/help/forms/developing/pdf-utilities.md#retrieving-pdf-document-properties)ophalen.)
+In het volgende codevoorbeeld wordt bepaald of het document een PDF-document is en, zo ja, de oudste Acrobat-versie die het kan lezen. (Zie [Eigenschappen PDF-document ophalen](/help/forms/developing/pdf-utilities.md#retrieving-pdf-document-properties).)
 
 ```java
  /*
@@ -358,7 +358,7 @@ In het volgende codevoorbeeld wordt bepaald of het document een PDF-document is 
 
 ## Snel starten (SOAP-modus): Opslagstijl voor een PDF-document instellen met de Java API {#quick-start-soap-mode-setting-the-save-style-for-a-pdf-document-using-the-java-api}
 
-In het volgende codevoorbeeld wordt de opslagmodus voor snelle webweergave ingesteld en wordt het PDF-document vervolgens doorgegeven aan de coderingsservice waar het is versleuteld. Het gecodeerde PDF-document dat wordt opgeslagen voor snelle webweergave, wordt opgeslagen als een PDF-bestand met de naam* FastWebViewLoan.pdf*. (Zie [Opslagmodi](/help/forms/developing/pdf-utilities.md#setting-pdf-document-save-modes)voor PDF-documenten instellen.)
+In het volgende codevoorbeeld wordt de opslagmodus voor snelle webweergave ingesteld en wordt het PDF-document vervolgens doorgegeven aan de coderingsservice waar het is versleuteld. Het gecodeerde PDF-document dat wordt opgeslagen voor snelle webweergave, wordt opgeslagen als een PDF-bestand met de naam* FastWebViewLoan.pdf*. (Zie [Opslagmodi voor PDF-documenten instellen](/help/forms/developing/pdf-utilities.md#setting-pdf-document-save-modes).)
 
 ```java
  /*
@@ -498,7 +498,7 @@ In het volgende codevoorbeeld wordt de opslagmodus voor snelle webweergave inges
 
 ## Snel starten (SOAP-modus): Een document converteren naar een PDF/A-2b-document met de Java API {#quick-start-soap-mode-converting-a-document-to-a-pdf-a-2b-document-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een PDF-document met de naam *Loan.pdf* geconverteerd naar een PDF/A-2b-document dat wordt opgeslagen als een PDF-bestand met de naam *LoanArchive.pdf*. (Zie Documenten [converteren naar PDF/A-documenten](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdf-a-documents).)
+In het volgende Java-codevoorbeeld wordt een PDF-document met de naam *Loan.pdf* geconverteerd naar een PDF/A-2b-document dat wordt opgeslagen als een PDF-bestand met de naam *LoanArchive.pdf*. (Zie [Documenten converteren naar PDF/A-documenten](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdf-a-documents).)
 
 ```java
 /*
@@ -584,9 +584,9 @@ public class CreatePDFADocument {
 }
 ```
 
-## Snel starten (SOAP-modus): PDF-documenten ontsmetten {#quick-start-soap-mode-sanitizing-pdf-documents}
+## Snel starten (SOAP-modus): PDF-documenten {#quick-start-soap-mode-sanitizing-pdf-documents} ontsmetten
 
-In het volgende Java-codevoorbeeld wordt een PDF-document met de naam *Loan.pdf* gesimuleerd.
+In het volgende Java-codevoorbeeld wordt een PDF-document met de naam *Loan.pdf* ontsmet.
 
 ```java
 /*

@@ -12,23 +12,27 @@ discoiquuid: b88edad4-2a2e-429b-86a2-cc68ba69697e
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 8b53e79e3a88f58423e99477db930a4912a1ba09
+workflow-type: tm+mt
+source-wordcount: '335'
+ht-degree: 0%
 
 ---
 
 
-# Een taalbasis maken met de klassieke gebruikersinterface{#creating-a-language-root-using-the-classic-ui}
+# Een taalbasis maken met de klassieke UI{#creating-a-language-root-using-the-classic-ui}
 
-De volgende procedure gebruikt klassieke UI om een taalwortel van een plaats tot stand te brengen. Zie Een [hoofdmap](/help/sites-administering/tc-prep.md#creating-a-language-root)maken voor meer informatie.
+De volgende procedure gebruikt klassieke UI om een taalwortel van een plaats tot stand te brengen. Zie [Taalhoofdmap maken](/help/sites-administering/tc-prep.md#creating-a-language-root) voor meer informatie.
 
 1. Selecteer in de websiteconsole in de boomstructuur Websites de hoofdpagina van de site. ([http://localhost:4502/siteadmin#](http://localhost:4502/siteadmin#))
 1. Voeg een nieuwe kindpagina toe die de taalversie van de plaats vertegenwoordigt:
 
    1. Klik op Nieuw > Nieuwe pagina.
-   1. Geef in het dialoogvenster de titel en de naam op. De naam moet de notatie `<language-code>` of `<language-code>_<country-code>`, bijvoorbeeld en, en_US, en_us, en_GB, en_gb hebben.
+   1. Geef in het dialoogvenster de titel en de naam op. De naam moet de notatie `<language-code>` of `<language-code>_<country-code>` hebben, bijvoorbeeld en, en_US, en_us, en_GB, en_gb.
 
       * De ondersteunde taalcode is tweeletterige code in kleine letters, zoals gedefinieerd door ISO-639-1
       * De ondersteunde landcode is tweeletterige, kleine letters of hoofdletters volgens ISO 3166
    1. Selecteer de sjabloon en klik op Maken.
+
    ![newpagefr](assets/newpagefr.png)
 
 1. Selecteer in de websiteconsole in de boomstructuur Websites de hoofdpagina van de site.

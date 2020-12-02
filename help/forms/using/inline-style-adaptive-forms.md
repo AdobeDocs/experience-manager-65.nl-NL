@@ -10,20 +10,23 @@ discoiquuid: 21dec713-c76d-408b-baea-fc585377b429
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 33f73225fbb2c48353c1f34db3339c0bb79d4236
+workflow-type: tm+mt
+source-wordcount: '556'
+ht-degree: 1%
 
 ---
 
 
 # Inline styling van adaptieve formuliercomponenten {#inline-styling-of-adaptive-form-components}
 
-U kunt de algemene weergave en stijl van een adaptief formulier definiëren door stijlen op te geven met de [themaeditor](../../forms/using/themes.md). Bovendien kunt u inline CSS-stijlen toepassen op afzonderlijke adaptieve formuliercomponenten en deze direct bekijken. Inline stijlen overschrijven de opmaak die in het thema is opgenomen.
+U kunt de algemene weergave en stijl van een adaptief formulier definiëren door stijlen op te geven met de themaeditor[. ](../../forms/using/themes.md) Bovendien kunt u inline CSS-stijlen toepassen op afzonderlijke adaptieve formuliercomponenten en deze direct bekijken. Inline stijlen overschrijven de opmaak die in het thema is opgenomen.
 
 ## Inline CSS-eigenschappen toepassen {#apply-inline-css-properties}
 
 Inline stijlen toevoegen aan een component:
 
-1. Open het formulier in de formuliereditor en wijzig de modus in opmaakmodus. Tik op de paginaboolbalk op ![canvas-vervolgkeuzelijst](assets/canvas-drop-down.png) > **Stijl** om de modus te wijzigen in de opmaakmodus.
-1. Selecteer een component op de pagina en tik op de ![bewerkknop](assets/edit-button.png). Stijleigenschappen worden geopend in de zijbalk.
+1. Open het formulier in de formuliereditor en wijzig de modus in opmaakmodus. Tik op ![canvas-drop-down](assets/canvas-drop-down.png) > **Stijl** om de modus te wijzigen in de opmaakmodus.
+1. Selecteer een component op de pagina en tik op de bewerkknop ![edit-button](assets/edit-button.png). Stijleigenschappen worden geopend in de zijbalk.
 
    U kunt ook componenten selecteren in de boomstructuur van de formulierhiërarchie in het zijpaneel. De boomstructuur in de formulierhiërarchie is beschikbaar als formulierobjecten op de zijbalk.
 
@@ -33,7 +36,7 @@ Inline stijlen toevoegen aan een component:
 
 1. Klik op een tabblad in de zijbalk om CSS-eigenschappen op te geven. U kunt eigenschappen opgeven, zoals:
 
-   * Dimensies en positie (weergave-instelling, opvulling, hoogte, breedte, marge, positie, z-index, zwevend, wissen, overloop)
+   * Dimension en positie (weergave-instelling, opvulling, hoogte, breedte, marge, positie, z-index, zwevend, wissen, overloop)
    * Tekst (lettertypefamilie, dikte, kleur, grootte, lijnhoogte en uitlijning)
    * Achtergrond (afbeelding en verloop, achtergrondkleur)
    * Rand (breedte, stijl, kleur, straal)
@@ -41,7 +44,7 @@ Inline stijlen toevoegen aan een component:
    * Geavanceerd (hiermee kunt u aangepaste CSS voor de component schrijven)
 
 1. Op dezelfde manier kunt u stijlen toepassen op andere delen van een component, zoals Widget, Bijschrift en Help.
-1. Tik op **Gereed** om de wijzigingen te bevestigen of **Annuleren** om de wijzigingen te verwijderen.
+1. Tik **Done** om de wijzigingen te bevestigen of **Cancel** om de wijzigingen te verwijderen.
 
 ## Voorbeeld: inline stijlen voor een veldcomponent {#example-inline-styles-for-a-field-component}
 
@@ -76,7 +79,7 @@ Let op de wijziging in de stijl van het tekstvak zoals wordt getoond in de volge
   <tr>
    <td><p>Label</p> </td>
    <td><p>Afmetingen en positie &gt; breedte</p> </td>
-   <td><p>100px</p> </td>
+   <td><p>100 px</p> </td>
    <td><p>Hiermee stelt u de breedte in op 100 px voor het label</p> </td>
   </tr>
   <tr>

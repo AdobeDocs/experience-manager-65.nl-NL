@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Java API Quick Start (SOAP) van Credential Service {#credential-service-java-api-quickstart-soap}
+# Referentieservice Java API Quick Start (SOAP) {#credential-service-java-api-quickstart-soap}
 
 Java API Quick Start (SOAP) is beschikbaar voor de Credential-service.
 
@@ -29,7 +29,7 @@ AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte A
 
 >[!NOTE]
 >
->De snelle aanvang die in Programmering met AEM vormen wordt gevestigd is gebaseerd op FormsServer die op JBoss en het werkende systeem van Vensters wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals Unix, vervangt u Windows-specifieke paden door paden die worden ondersteund door het desbetreffende besturingssysteem. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>De snelle aanvang die in Programmering met AEM vormen wordt gevestigd is gebaseerd op FormsServer die op JBoss en het werkende systeem van Vensters wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals Unix, vervangt u Windows-specifieke paden door paden die worden ondersteund door het desbetreffende besturingssysteem. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 >[!NOTE]
 >
@@ -136,9 +136,9 @@ In het volgende codevoorbeeld wordt een referentie geïmporteerd op basis van ee
  
 ```
 
-## Snel starten (SOAP-modus): Referenties verwijderen met de Java API {#quick-start-soap-mode-deleting-credentials-using-the-java-api}
+## Snel starten (SOAP-modus): Bevoegdheden verwijderen met de Java API {#quick-start-soap-mode-deleting-credentials-using-the-java-api}
 
-In het volgende codevoorbeeld wordt een referentie verwijderd op basis van een *veilige* aliaswaarde. (Zie [Referenties verwijderen met de Betrouwbaarheidsbeheer-API](/help/forms/developing/credentials.md#deleting-credentials-by-using-the-trust-manager-api).)
+In het volgende codevoorbeeld wordt een referentie verwijderd op basis van een aliaswaarde *secure*. (Zie [Referenties verwijderen met de Betrouwbaarheidsbeheer-API](/help/forms/developing/credentials.md#deleting-credentials-by-using-the-trust-manager-api).)
 
 ```java
  /*

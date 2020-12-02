@@ -19,7 +19,7 @@ ht-degree: 0%
 ---
 
 
-# Uw AEM controleren en onderhouden{#monitoring-and-maintaining-your-aem-instance}
+# Bewaking en onderhoud van uw AEM{#monitoring-and-maintaining-your-aem-instance}
 
 Nadat uw AEM instanties zijn opgesteld zullen bepaalde taken nodig zijn om hun verrichting, prestaties en integriteit te controleren en te handhaven.
 
@@ -27,15 +27,15 @@ Een belangrijke factor hierbij is dat u, om potentiële problemen te herkennen, 
 
 | Vinkje | Overwegingen | Opmerkingen / Handelingen |
 |---|---|---|
-| Back-upplan. |  | Zie hoe u een [back-up van uw instantie](/help/sites-deploying/monitoring-and-maintaining.md#backups)kunt maken. |
+| Back-upplan. |  | Zie hoe te [Steun uw Instantie](/help/sites-deploying/monitoring-and-maintaining.md#backups). |
 | Rampenherstelplan. | De richtlijnen voor noodherstel van uw bedrijf. |  |
-| Er is een systeem voor foutcontrole beschikbaar voor het melden van problemen. | Bijvoorbeeld [bugzilla](https://www.bugzilla.org/), [jira](https://www.atlassian.com/software/jira/)of een van vele andere. |  |
+| Er is een systeem voor foutcontrole beschikbaar voor het melden van problemen. | Bijvoorbeeld [bugzilla](https://www.bugzilla.org/), [jira](https://www.atlassian.com/software/jira/) of een van vele andere. |  |
 | Bestandssystemen worden gecontroleerd. | De CRX-opslagplaats zal &quot;bevriezen&quot; als er onvoldoende vrije schijfruimte is. Het wordt hervat zodra er ruimte beschikbaar is. | De &quot; `*ERROR* LowDiskSpaceBlocker`&quot;berichten kunnen in het logboekdossier worden gezien wanneer de vrije ruimte laag wordt. |
-| [Logbestanden](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files) worden gecontroleerd. |  |  |
+| [Logbestanden ](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files) worden gecontroleerd. |  |  |
 | Systeembewaking wordt (voortdurend) op de achtergrond uitgevoerd. | Inclusief CPU-, geheugen-, schijf- en netwerkgebruik. Gebruik bijvoorbeeld iostat / vmstat / perfmon. | De geregistreerde gegevens worden visualiseerd en kunnen voor het volgen van prestatiesproblemen worden gebruikt. Onbewerkte gegevens zijn ook toegankelijk. |
-| [AEM prestaties worden gecontroleerd](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance). | Met inbegrip van de Tellers [van het](/help/sites-deploying/monitoring-and-maintaining.md#request-counters) Verzoek om verkeersniveaus te controleren. | Indien een aanzienlijk of langdurig prestatieverlies wordt vastgesteld, moet een grondig onderzoek worden ingesteld. |
-| U controleert uw [replicatieagenten](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-your-replication-agents). |  |  |
-| Workflowinstanties regelmatig leegmaken. | Grootte opslagplaats en workflowprestaties. | Zie [Regular Purging of Workflow Instances](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances). |
+| [AEM prestaties worden gecontroleerd](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance). | Inclusief [Tellers aanvragen](/help/sites-deploying/monitoring-and-maintaining.md#request-counters) om de verkeersniveaus te controleren. | Indien een aanzienlijk of langdurig prestatieverlies wordt vastgesteld, moet een grondig onderzoek worden ingesteld. |
+| U controleert uw [Replication Agents](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-your-replication-agents). |  |  |
+| Workflowinstanties regelmatig leegmaken. | Grootte opslagplaats en workflowprestaties. | Zie [Regelmatig leegmaken van workflowinstanties](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances). |
 
 ## Back-ups {#backups}
 
@@ -57,26 +57,26 @@ Vaak wordt een volledige back-up gemaakt met regelmatige tussenpozen (bijvoorbee
 
 >[!CAUTION]
 >
->Bij het implementeren van back-ups van uw productieinstanties *moeten* tests worden uitgevoerd om ervoor te zorgen dat de back-up kan worden hersteld.
+>Bij het implementeren van back-ups van uw productie-instanties, moeten tests *must* worden uitgevoerd om ervoor te zorgen dat de back-up kan worden hersteld.
 >
 >Zonder dit, is de steun potentieel nutteloos (worstcasescenario).
 
 >[!NOTE]
 >
->Lees de sectie [Back-upprestaties](/help/sites-deploying/configuring-performance.md#backup-performance) voor meer informatie over back-upprestaties.
+>Lees voor meer informatie over back-upprestaties de sectie [Back-upprestaties](/help/sites-deploying/configuring-performance.md#backup-performance).
 
 ### Back-up maken van de software-installatie {#backing-up-your-software-installation}
 
 Maak na de installatie of na belangrijke wijzigingen in de configuratie een back-up van de software-installatie.
 
-Hiervoor moet u een [back-up maken van de gehele opslagplaats](#backing-up-your-repository) en vervolgens:
+Om dit te doen, moet u [file uw volledige bewaarplaats](#backing-up-your-repository) en dan:
 
 1. Stop AEM.
-1. Maak een back-up van het gehele `<cq-installation-dir>` bestandssysteem.
+1. Maak een back-up van de gehele `<cq-installation-dir>` vanuit uw bestandssysteem.
 
 >[!CAUTION]
 >
->Als u een toepassingsserver van een andere fabrikant gebruikt, kunnen extra mappen zich op een andere locatie bevinden en moeten er mogelijk ook back-ups van worden gemaakt. Zie [Hoe te om AEM met een Server](/help/sites-deploying/application-server-install.md) van de Toepassing te installeren voor informatie over het installeren van toepassingsservers. [](/content/docs/en/aem/6-3/deploy/installing.md#installing adobe Experience Manager with an application server)
+>Als u een toepassingsserver van een andere fabrikant gebruikt, kunnen extra mappen zich op een andere locatie bevinden en moeten er mogelijk ook back-ups van worden gemaakt. Zie [AEM installeren met een toepassingsserver](/help/sites-deploying/application-server-install.md) voor informatie over het installeren van toepassingsservers. [](/content/docs/en/aem/6-3/deploy/installing.md#installing adobe Experience Manager with an application server)
 
 >[!CAUTION]
 >
@@ -90,58 +90,58 @@ Hiervoor moet u een [back-up maken van de gehele opslagplaats](#backing-up-your-
 
 Het gedeelte [Back-up en herstel](/help/sites-administering/backup-and-restore.md) van de CRX-documentatie behandelt alle problemen met betrekking tot back-ups van de CRX-opslagplaats.
 
-Zie Een online back-up [maken voor meer informatie over het maken van een online &quot;hot&quot; back-up](/help/sites-administering/backup-and-restore.md#online-backup).
+Zie [Een online back-up maken](/help/sites-administering/backup-and-restore.md#online-backup) voor meer informatie over het maken van een online &quot;hot&quot; back-up.
 
-## Versie leegmaken {#version-purging}
+## Versieopruiming {#version-purging}
 
-Het **gereedschap Versies** wissen is bedoeld voor het verwijderen van de versies van een knooppunt of een hiërarchie van knooppunten in uw opslagplaats. Het belangrijkste doel is om u te helpen de grootte van uw opslagplaats te verminderen door oude versies van uw knopen te verwijderen.
+Het gereedschap **Versies wissen** is bedoeld voor het verwijderen van de versies van een knooppunt of een hiërarchie van knooppunten in uw opslagplaats. Het belangrijkste doel is om u te helpen de grootte van uw opslagplaats te verminderen door oude versies van uw knopen te verwijderen.
 
-Deze sectie behandelt onderhoudswerkzaamheden met betrekking tot de versieeigenschap van AEM. Het gereedschap **Versie** wissen is bedoeld voor het verwijderen van de versies van een knooppunt of een hiërarchie van knooppunten in uw opslagplaats. Het belangrijkste doel is om u te helpen de grootte van uw opslagplaats te verminderen door oude versies van uw knopen te verwijderen.
+Deze sectie behandelt onderhoudswerkzaamheden met betrekking tot de versieeigenschap van AEM. Het gereedschap **Versie wissen** is bedoeld voor het verwijderen van de versies van een knooppunt of een hiërarchie van knooppunten in uw opslagplaats. Het belangrijkste doel is om u te helpen de grootte van uw opslagplaats te verminderen door oude versies van uw knopen te verwijderen.
 
 ### Overzicht {#overview}
 
-Het gereedschap **Versies** wissen is beschikbaar in de **[Tools](/help/sites-administering/tools-consoles.md) Console** onder **Versioning** of rechtstreeks op:
+Het gereedschap **Versies wissen** is beschikbaar in de **[Tools](/help/sites-administering/tools-consoles.md)-console** onder **Versioning** of rechtstreeks op:
 
 `https://<server>:<port>/etc/versioning/purge.html`
 
 ![screen_shot_2012-03-15at14418pm](assets/screen_shot_2012-03-15at14418pm.png)
 
-**Startpad** Een absoluut pad waarop moet worden gewist. U kunt het Startpad selecteren door op de boomnavigator in de repository te klikken.
+**Start** PathAn absolute path on which the purge must be done. U kunt het Startpad selecteren door op de boomnavigator in de repository te klikken.
 
-**Recursief** bij het wissen van gegevens kunt u kiezen tussen het uitvoeren van de bewerking op één knooppunt of op een hele hiërarchie door Recursief te selecteren. In het laatste geval definieert het opgegeven pad het basisknooppunt van de hiërarchie.
+**** RecursiveWhen het zuiveren van gegevens kunt u tussen het uitvoeren van de verrichting op één knoop of op een volledige hiërarchie kiezen door Recursive te selecteren. In het laatste geval definieert het opgegeven pad het basisknooppunt van de hiërarchie.
 
-**Maximale versies om het maximumaantal versies te houden** dat voor een knooppunt moet worden bewaard. Wanneer dit getal deze waarde overschrijdt, worden de oudste versies gewist.
+**Maximale versies voor** behoudHet maximum aantal versies dat voor een knooppunt moet worden bewaard. Wanneer dit getal deze waarde overschrijdt, worden de oudste versies gewist.
 
-**Maximale versieleeftijd** De maximale leeftijd van de versie van een knooppunt. Wanneer de leeftijd van een versie deze waarde overschrijdt, wordt het leeggemaakt.
+**Maximale** versieleeftijdDe maximumleeftijd van de versie van een knooppunt. Wanneer de leeftijd van een versie deze waarde overschrijdt, wordt het leeggemaakt.
 
-**Droog uitvoeren** Omdat het verwijderen van versies van uw inhoud definitief is en niet kan worden teruggedraaid zonder een steun te herstellen, verstrekt het hulpmiddel van de Versies van de Wissen een droge loopwijze die u toestaat om de gezuiverde versies voor te vertonen. Klik op Droog uitvoeren om een droge run van het zuiveringsproces te starten.
+**Droog** uitvoerenOmdat het verwijderen van versies van uw inhoud definitief is en niet kan worden hersteld zonder een back-up te herstellen, biedt het gereedschap Pauzatieversies een modus voor droog uitvoeren waarmee u een voorvertoning van de gezuiverde versies kunt weergeven. Klik op Droog uitvoeren om een droge run van het zuiveringsproces te starten.
 
-**Wis** Start het leegmaken van de versies op het knooppunt dat wordt gedefinieerd door het beginpad.
+**** PurgeLaunch the purge of the versions on the node defined by the Start Path.
 
 ### Versies van een website wissen {#purging-versions-of-a-web-site}
 
 Ga als volgt te werk om versies van een website te wissen:
 
-1. Navigeer naar de **[Tools](/help/sites-administering/tools-consoles.md)** **Console**, selecteer **Versioning** en dubbelklik op **Purge Versies.**
+1. Navigeer naar **[Tools](/help/sites-administering/tools-consoles.md)** **console**, selecteer **Versioning** en dubbelklik **Versies wissen.**
 1. Het beginpad instellen van de inhoud die moet worden gewist (bijvoorbeeld `/content/geometrixx-outdoors`).
 
-   * Als u het knooppunt dat door het pad wordt gedefinieerd alleen wilt leegmaken, schakelt u **Recursief** uit.
-   * Als u het knooppunt dat door het pad en de onderliggende knooppunten wordt gedefinieerd, wilt leegmaken, selecteert u **Recursief**.
+   * Als u de knoop die door uw weg wordt bepaald slechts wilt leegmaken, unselect **Recursive**.
+   * Als u de knoop wilt zuiveren die door uw weg en zijn nakomelingen wordt bepaald uitgezocht **Recursive**.
 
 1. Stel het maximumaantal versies (voor elk knooppunt) in dat u wilt behouden. Laat leeg om deze instelling niet te gebruiken.
 
 1. Stel de maximale versiepagina in dagen in (voor elk knooppunt) die u wilt behouden. Laat leeg om deze instelling niet te gebruiken.
 
-1. Klik op **Droog uitvoeren** om een voorvertoning weer te geven van wat het leegmaken zou doen.
-1. Klik op **Leegmaken** om het proces te starten.
+1. Klik **Droge Looppas** om te voorproef wat het zuiveringsproces zou doen.
+1. Klik **Leegmaken** om het proces te starten.
 
 >[!CAUTION]
 >
 >Opgeloste knooppunten kunnen niet worden hersteld zonder de opslagplaats te herstellen. Zorg voor uw configuratie, dus raden we u aan altijd een droge run uit te voeren voordat u gaat leegmaken.
 
-### De console analyseren {#analyzing-the-console}
+### De console {#analyzing-the-console} analyseren
 
-In de processen **Dry Run** en **Purge** worden alle knooppunten weergegeven die zijn verwerkt. Tijdens het proces, kan een knoop één van de volgende status hebben:
+In de processen **Droge uitvoering** en **Leegmaken** worden alle knooppunten weergegeven die zijn verwerkt. Tijdens het proces, kan een knoop één van de volgende status hebben:
 
 * `ignore (not versionnable)`: het knooppunt ondersteunt geen versiebeheer en wordt tijdens het proces genegeerd.
 
@@ -159,8 +159,8 @@ Bovendien verstrekt de console nuttige informatie over de versies:
 
 In het volgende voorbeeld:
 
-* De **[!DNL Shirts]** versies worden gewist omdat hun versieleeftijd langer is dan 2 dagen.
-* De **[!DNL Tonga Fashions!]** versies worden gewist omdat het aantal versies groter is dan 5.
+* De **[!DNL Shirts]** versies worden gezuiverd omdat hun versieleeftijd langer is dan 2 dagen.
+* De **[!DNL Tonga Fashions!]** versies worden gewist omdat hun aantal versies groter is dan 5.
 
 ![global_version_screenshot](assets/global_version_screenshot.png)
 
@@ -176,11 +176,11 @@ AEM WCM registreert gedetailleerde logboeken. Nadat u QuickStart hebt uitpakken 
 
 * `<cq-installation-dir>/crx-quickstart/repository/`
 
-#### Bestandsrotatie logbestand {#log-file-rotation}
+#### Rotatie van logbestand {#log-file-rotation}
 
-De omwenteling van het dossier van het logboek verwijst naar het proces dat de groei van dossier door nieuw dossier periodiek te creëren beperkt. In AEM, `error.log` zal een geroepen logboekdossier eenmaal per dag volgens de bepaalde regels worden geroteerd:
+De omwenteling van het dossier van het logboek verwijst naar het proces dat de groei van dossier door nieuw dossier periodiek te creëren beperkt. In AEM wordt een logbestand met de naam `error.log` eenmaal per dag geroteerd volgens de opgegeven regels:
 
-* De naam van het `error.log` bestand wordt gewijzigd volgens het patroon {original_filename} `.yyyy-MM-dd`. Op 11 juli 2010 wordt bijvoorbeeld de naam van het huidige logbestand gewijzigd `error.log-2010-07-10`en wordt een nieuw logbestand `error.og` gemaakt.
+* De naam van het `error.log`-bestand wordt gewijzigd volgens het patroon {original_filename} `.yyyy-MM-dd`. Op 11 juli 2010 wordt bijvoorbeeld de naam van het huidige logbestand gewijzigd in `error.log-2010-07-10`, waarna een nieuw `error.og` wordt gemaakt.
 
 * Eerdere logbestanden worden niet verwijderd. Het is dus uw verantwoordelijkheid om oude logbestanden regelmatig te wissen om het schijfgebruik te beperken.
 
@@ -188,7 +188,7 @@ De omwenteling van het dossier van het logboek verwijst naar het proces dat de g
 >
 >Als u uw AEM installatie bevordert, merk op dat om het even welk bestaand logboekdossier dat niet meer door AEM wordt gebruikt op de schijf zal blijven. U kunt ze zonder risico verwijderen. Alle nieuwe logitems worden in de nieuwe logbestanden geschreven.
 
-### De logbestanden zoeken {#finding-the-log-files}
+### Logbestanden {#finding-the-log-files} zoeken
 
 Verschillende logbestanden worden opgeslagen op de bestandsserver waarop u AEM hebt geïnstalleerd:
 
@@ -204,13 +204,13 @@ Moderatiehandelingen worden hier geregistreerd.
 Foutberichten (van verschillende ernst) worden hier geregistreerd.
 
    * [ `ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html)
-Dit logboek wordt slechts gebruikt als [!DNL Dynamic Media] wordt toegelaten. Het verstrekt statistieken en analytische informatie die voor het analyseren van gedrag van het interne proces ImageServer wordt gebruikt.
+Dit logboek wordt slechts gebruikt als  [!DNL Dynamic Media] wordt toegelaten. Het verstrekt statistieken en analytische informatie die voor het analyseren van gedrag van het interne proces ImageServer wordt gebruikt.
 
    * `request.log`
 Elk toegangsverzoek wordt hier geregistreerd samen met de reactie.
 
    * [ `s7access-<yyyy>-<mm>-<dd>.log`](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
-Dit logboek wordt slechts gebruikt als [!DNL Dynamic Media] wordt toegelaten. Het s7access logboek registreert elk verzoek aan [!DNL Dynamic Media] door `/is/image` en `/is/content`.
+Dit logboek wordt slechts gebruikt als  [!DNL Dynamic Media] wordt toegelaten. Het s7access logboek registreert elk verzoek dat aan [!DNL Dynamic Media] door `/is/image` en `/is/content` wordt gedaan.
 
    * `stderr.log`
 Bevat foutberichten, opnieuw van verschillende niveaus van ernst, die tijdens het opstarten worden gegenereerd. Standaard is het logniveau ingesteld op 
@@ -221,7 +221,7 @@ Bevat logboekberichten die op gebeurtenissen tijdens opstarten wijzen.
 
    * `upgrade.log`
 Verstrekt een logboek van alle verbeteringsverrichtingen die van de 
-`com.day.compat.codeupgrade` en `com.adobe.cq.upgradesexecutor` pakketten.
+`com.day.compat.codeupgrade` en  `com.adobe.cq.upgradesexecutor` pakketten.
 
 * `<cq-installation-dir>/crx-quickstart/repository`
 
@@ -230,13 +230,13 @@ Informatie over Revisie-journalistiek.
 
 >[!NOTE]
 >
->De logboeken van ImageServer en s7access zijn niet inbegrepen in **Download volledig **pakket dat van het **systeem/console/status-Bundlelist **pagina wordt geproduceerd. Als u [!DNL Dynamic Media] problemen ondervindt, voegt u voor ondersteuningsdoeleinden ook de registratie van ImageServer en s7access toe wanneer u contact opneemt met de Klantenondersteuning.
+>De logboeken van ImageServer en s7access zijn niet inbegrepen in **Download volledig **pakket dat van het **systeem/console/status-Bundlelist **pagina wordt geproduceerd. Als u [!DNL Dynamic Media] problemen hebt, voegt u voor ondersteuningsdoeleinden ook de registratie van ImageServer en s7access toe wanneer u contact opneemt met de Klantenondersteuning.
 
-### Het FOUTOPSPORINGSlogniveau activeren {#activating-the-debug-log-level}
+### Het FOUTOPSPORINGSlogniveau {#activating-the-debug-log-level} activeren
 
-Het standaardlogniveau ([Apache Sling Logging Configuration](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)) is Informatie, zodat worden de foutopsporingsberichten niet geregistreerd.
+Het standaardlogboekniveau ([Apache het Registreren Configuratie van het Sling Logging](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)) is Informatie, zodat zuivert de berichten niet worden geregistreerd.
 
-Om het debug logboekniveau voor een Logger te activeren, plaats het bezit `org.apache.sling.commons.log.level` aan zuivert in de bewaarplaats. Stel bijvoorbeeld dat u de `/libs/sling/config/org.apache.sling.commons.log.LogManager` algemene Apache Sling Logging [](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)moet configureren.
+Om het debug logboekniveau voor een Logger te activeren, plaats het bezit `org.apache.sling.commons.log.level` om in de bewaarplaats te zuiveren. Bijvoorbeeld op `/libs/sling/config/org.apache.sling.commons.log.LogManager` om [global Apache Sling Logging](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration) te configureren.
 
 >[!CAUTION]
 >
@@ -260,12 +260,12 @@ De logniveaus zijn als volgt:
 
 >[!NOTE]
 >
->Bij het werken met Adobe Experience Manager zijn er verschillende methoden om de configuratie-instellingen voor dergelijke services te beheren. zie het [Vormen OSGi](/help/sites-deploying/configuring-osgi.md) voor meer details en de geadviseerde praktijken.
+>Bij het werken met Adobe Experience Manager zijn er verschillende methoden om de configuratie-instellingen voor dergelijke services te beheren. zie [Het vormen OSGi](/help/sites-deploying/configuring-osgi.md) voor meer details en de geadviseerde praktijken.
 
 In bepaalde omstandigheden wilt u mogelijk een aangepast logbestand met een ander logniveau maken. U kunt dit in de repository doen door:
 
 1. Als het nog niet bestaat, creeer een nieuwe configuratiemap ( `sling:Folder`) voor uw project `/apps/<project-name>/config`.
-1. Onder `/apps/<project-name>/config`, creeer een knoop voor de nieuwe [Logger van de Logboekregistratie van Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingloggerconfigurationfactoryconfiguration):
+1. Maak onder `/apps/<project-name>/config` een knooppunt voor de nieuwe [Configuratie van Apache Sling Logging Logger](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingloggerconfigurationfactoryconfiguration):
 
    * Naam: `org.apache.sling.commons.log.LogManager.factory.config-<identifier>` (aangezien dit een Logger is)
 
@@ -284,7 +284,7 @@ In bepaalde omstandigheden wilt u mogelijk een aangepast logbestand met een ande
 
       Type: String
 
-      Waarde: het logbestand specificeren; bijvoorbeeld: `logs/myLogFile.log`
+      Waarde: het logbestand specificeren; bijvoorbeeld `logs/myLogFile.log`
 
    * Naam: `org.apache.sling.commons.log.names`
 
@@ -326,7 +326,7 @@ In bepaalde omstandigheden wilt u mogelijk een aangepast logbestand met een ande
    >
    >{5} het logbericht
    >
-   >Als de logboekvraag een `Throwable` stapelspoor omvat wordt toegevoegd aan het bericht.
+   >Als de logboekvraag `Throwable` omvat wordt het stapelspoor toegevoegd aan het bericht.
 
    >[!CAUTION]
    >
@@ -334,7 +334,7 @@ In bepaalde omstandigheden wilt u mogelijk een aangepast logbestand met een ande
 
    >[!NOTE]
    >
-   >Logschrijfpaden zijn relatief ten opzichte van de `crx-quickstart` locatie.
+   >Logschrijfpaden zijn relatief ten opzichte van de locatie `crx-quickstart`.
    >
    >Daarom wordt een logbestand opgegeven als:
    >
@@ -361,11 +361,11 @@ In bepaalde omstandigheden wilt u mogelijk een aangepast logbestand met een ande
    >
    >Als geen expliciete Schrijver wordt gevormd zal het systeem automatisch een impliciete Schrijver produceren die op het gebrek wordt gebaseerd.
 
-   Onder `/apps/<project-name>/config`, creeer een knoop voor de nieuwe [Configuratie](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingwriterconfigurationfactoryconfiguration)van de Schrijver van het Registreren van de Sling van Apache:
+   Maak onder `/apps/<project-name>/config` een knooppunt voor de nieuwe [Configuratie van auteur van Apache Sling Logging Writer](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingwriterconfigurationfactoryconfiguration):
 
    * Naam: `org.apache.sling.commons.log.LogManager.factory.writer-<identifier>` (omdat dit een schrijver is)
 
-      Net als bij Logger, `<identifier>` wordt vervangen door vrije tekst die u (moet) ingaan om de instantie te identificeren (u kunt deze informatie niet weglaten). Bijvoorbeeld, `org.apache.sling.commons.log.LogManager.factory.writer-MINE`
+      Net als bij Logger wordt `<identifier>` vervangen door vrije tekst die u (moet) invoeren om de instantie te identificeren (u kunt deze informatie niet weglaten). Bijvoorbeeld, `org.apache.sling.commons.log.LogManager.factory.writer-MINE`
 
    * Type: `sling:OsgiConfig`
    >[!NOTE]
@@ -388,13 +388,13 @@ In bepaalde omstandigheden wilt u mogelijk een aangepast logbestand met een ande
 
          Type: `Long`
 
-         Waarde: het aantal logbestanden opgeven dat u wilt behouden; bijvoorbeeld: `5`
+         Waarde: het aantal logbestanden opgeven dat u wilt behouden; bijvoorbeeld `5`
 
       * Naam: `org.apache.sling.commons.log.file.size`
 
          Type: `String`
 
-         Waarde: specificeren zoals vereist om de omwenteling van het dossier door grootte/datum te controleren; bijvoorbeeld: `'.'yyyy-MM-dd`
+         Waarde: specificeren zoals vereist om de omwenteling van het dossier door grootte/datum te controleren; bijvoorbeeld `'.'yyyy-MM-dd`
    >[!NOTE]
    >
    >`org.apache.sling.commons.log.file.size` Hiermee bepaalt u de rotatie van het logbestand door een van de volgende instellingen in te stellen:
@@ -405,8 +405,8 @@ In bepaalde omstandigheden wilt u mogelijk een aangepast logbestand met een ande
    >
    >om aan te geven wanneer een nieuw bestand wordt gemaakt (en de naam van het bestaande bestand wordt gewijzigd volgens het naampatroon).
    >
-   >* Een formaatlimiet kan met een getal worden opgegeven. Als er geen grootteindicator is opgegeven, wordt deze gebruikt als het aantal bytes. U kunt ook een van de grootteindicatoren toevoegen - `KB`, `MB`of `GB` (hoofdlettergebruik wordt genegeerd).
-   >* U kunt een tijd-/datumschema opgeven als een `java.util.SimpleDateFormat` patroon. Hiermee wordt de periode gedefinieerd waarna het bestand wordt geroteerd. ook het achtervoegsel dat aan het geroteerde dossier (voor identificatie) wordt toegevoegd.
+   >* Een formaatlimiet kan met een getal worden opgegeven. Als er geen grootteindicator is opgegeven, wordt deze gebruikt als het aantal bytes. U kunt ook een van de grootteindicatoren toevoegen: `KB`, `MB` of `GB` (hoofdlettergebruik wordt genegeerd).
+   >* Een tijd-/datumschema kan als `java.util.SimpleDateFormat` patroon worden gespecificeerd. Hiermee wordt de periode gedefinieerd waarna het bestand wordt geroteerd. ook het achtervoegsel dat aan het geroteerde dossier (voor identificatie) wordt toegevoegd.
 
    >
    >De standaardwaarde is &#39;.&#39;jjjj-MM-dd (voor dagelijkse logrotatie).
@@ -433,15 +433,15 @@ In bepaalde omstandigheden wilt u mogelijk een aangepast logbestand met een ande
 
 1. Lees het nieuwe logbestand met het gekozen gereedschap.
 
-   Het logbestand dat in dit voorbeeld wordt gemaakt, wordt `../crx-quickstart/logs/myLogFile.log`weergegeven.
+   Het logbestand dat in dit voorbeeld wordt gemaakt, is `../crx-quickstart/logs/myLogFile.log`.
 
-De Felix-console biedt ook informatie over de ondersteuning voor het verkooplogboek op `../system/console/slinglog`; bijvoorbeeld `https://localhost:4502/system/console/slinglog`.
+De Felix-console biedt ook informatie over Sling Log Support op `../system/console/slinglog`. bijvoorbeeld `https://localhost:4502/system/console/slinglog`.
 
-### Controleregisters zoeken {#finding-the-audit-records}
+### Controleverslagen {#finding-the-audit-records} zoeken
 
 Er worden auditrecords bijgehouden om een overzicht te geven van wie wat heeft gedaan en wanneer. Er worden verschillende auditverslagen gegenereerd voor zowel AEM WCM- als OSGi-gebeurtenissen.
 
-#### AEM WCM-auditrecords die worden weergegeven bij het ontwerpen van pagina&#39;s {#aem-wcm-audit-records-shown-when-page-authoring}
+#### AEM WCM Controlecords die worden getoond wanneer de Auteur van de Pagina {#aem-wcm-audit-records-shown-when-page-authoring}
 
 1. Open een pagina.
 1. Vanuit het hulpprogramma kunt u het tabblad selecteren met het vergrendelingspictogram en vervolgens dubbelklikken op **Controlelogboek..**
@@ -449,7 +449,7 @@ Er worden auditrecords bijgehouden om een overzicht te geven van wie wat heeft g
 
    ![screen_shot_2012-02-02at43601pm](assets/screen_shot_2012-02-02at43601pm.png)
 
-1. Klik op **OK** als u het venster wilt sluiten.
+1. Klik **OK** wanneer u het venster wilt sluiten.
 
 #### AEM WCM-controlegegevens in de opslagplaats {#aem-wcm-auditing-records-within-the-repository}
 
@@ -463,20 +463,20 @@ OSGi-gebeurtenissen genereren ook auditrecords die kunnen worden weergegeven op 
 
 ![screen_shot_2012-02-13at50346pm](assets/screen_shot_2012-02-13at50346pm.png)
 
-## Uw replicatieagents controleren {#monitoring-your-replication-agents}
+## Uw replicatieagents {#monitoring-your-replication-agents} controleren
 
 U kunt uw [replicatierijen](/help/sites-deploying/replication.md) controleren om te ontdekken wanneer een rij of neer of geblokkeerd is - die op zijn beurt op een probleem met een het publiceren instantie of extern systeem zou kunnen wijzen:
 
 * zijn alle vereiste rijen ingeschakeld?
 * zijn om het even welke gehandicapte rijen nog vereist?
-* alle `enabled` rijen moeten de status `idle` of `active`, die op normale verrichting wijzen; er zouden geen rijen moeten zijn `blocked`, wat vaak een teken is van problemen aan de ontvangerszijde.
+* alle `enabled` wachtrijen moeten de status `idle` of `active` hebben, die op normale verrichting wijzen; geen rijen zouden `blocked` moeten zijn, wat vaak een teken van problemen aan de ontvangerskant is.
 
 * als de grootte van de rij in tijd groeit, kan dit op een geblokkeerde rij wijzen.
 
 Om een replicatieagent te controleren:
 
-1. Open het tabblad **Gereedschappen** in AEM.
-1. Klik op **Replicatie**.
+1. Open de tab **Tools** in AEM.
+1. Klik **Replication**.
 1. Dubbelklik op de koppeling naar agents voor de juiste omgeving (links of rechts); bijvoorbeeld **Agenten op auteur**.
 
    Het resulterende venster toont een overzicht van al uw replicatieagenten voor het auteursmilieu, met inbegrip van hun doel en status.
@@ -491,11 +491,11 @@ Om een replicatieagent te controleren:
    * Zie het doel van eventuele replicaties.
    * Zie of de replicatierij momenteel actief (toegelaten) is.
    * Zie of er items in de wachtrij staan.
-   * **Vernieuwen** of **Wissen** om de weergave van wachtrijitems bij te werken; dit helpt u punten te zien ingaan en de rij verlaten.
+   * **** Vernieuwen of  **** wissen om de weergave van wachtrijitems bij te werken; dit helpt u punten te zien ingaan en de rij verlaten.
 
-   * **Logboek** van de mening om tot het logboek van om het even welke acties door de replicatieagent toegang te hebben.
-   * **Verbinding** met de doelinstantie testen.
-   * **Indien nodig opnieuw proberen** afdwingen voor alle wachtrij-items.
+   * **Logboek van de mening** om tot het logboek van om het even welke acties door de replicatieagent toegang te hebben.
+   * **Test** Connection to the target instance.
+   * **Indien nodig** opnieuw in de wachtrij plaatsen.
 
    >[!CAUTION]
    >
@@ -507,17 +507,17 @@ Om een replicatieagent te controleren:
    >
    >`/jcr:root/var/replication/outbox//*[@cq:repActionType='TEST']`
 
-Opnieuw kunt u een oplossing ontwikkelen om alle replicatieagenten (onder `/etc/replication/author` of `/etc/replication/publish`) te ontdekken, dan het statuut van de agent (, `enabled`) en de onderliggende rij ( `disabled`, `active`, `idle``blocked`) te controleren.
+Opnieuw kunt u een oplossing ontwikkelen om alle replicatiemiddelen (die onder `/etc/replication/author` of `/etc/replication/publish` worden gevestigd) te ontdekken, dan de status van de agent ( `enabled`, `disabled`) en de onderliggende rij ( `active`, `idle`, `blocked`) te controleren.
 
-## Monitorprestaties {#monitoring-performance}
+## Bewaking van prestaties {#monitoring-performance}
 
-[Prestatieoptimalisatie](/help/sites-deploying/configuring-performance.md) is een interactief proces dat tijdens de ontwikkeling de focus krijgt. Na plaatsing wordt het gewoonlijk herzien na specifieke intervallen of gebeurtenissen.
+[Prestaties ](/help/sites-deploying/configuring-performance.md) optimaliseren is een interactief proces dat tijdens de ontwikkeling de focus krijgt. Na plaatsing wordt het gewoonlijk herzien na specifieke intervallen of gebeurtenissen.
 
 Methoden die worden gebruikt bij het verzamelen van informatie voor optimalisatie kunnen ook worden gebruikt voor doorlopende bewaking.
 
 >[!NOTE]
 >
->Ook kunnen specifieke [configuraties die beschikbaar zijn om de prestaties](/help/sites-deploying/configuring-performance.md#configuring-for-performance) te verbeteren, worden gecontroleerd.
+>Specifieke [configuraties beschikbaar om prestaties te verbeteren](/help/sites-deploying/configuring-performance.md#configuring-for-performance) kunnen ook worden gecontroleerd.
 
 Hieronder worden gemeenschappelijke prestatieproblemen opgesomd die zich voordoen, samen met voorstellen voor het opsporen en bestrijden van deze problemen.
 
@@ -585,27 +585,27 @@ Sommige hiervan zijn afhankelijk van uw besturingssysteem.
   <tr>
    <td>Draad-dumpen</td>
    <td>Bekijk JVM-threads. Identificeer contouren, sluizen en lange looptijden.</td>
-   <td><p>Afhankelijk van het besturingssysteem:<br /> - Unix/Linux: <code>kill -QUIT &lt;<em>pid</em>&gt;</code><br /> - Windows (consolemodus): Ctrl-einde<br /> </p> <p>Er zijn ook analysehulpmiddelen beschikbaar, zoals <a href="https://java.net/projects/tda/">TDA</a>.<br /> </p> </td>
+   <td><p>Afhankelijk van het besturingssysteem:<br /> - Unix/Linux: <code>kill -QUIT &lt;<em>pid</em>&gt;</code><br /> - Windows (consolemodus): Ctrl-einde<br /> </p> <p>De hulpmiddelen van de analyse zijn ook beschikbaar, zoals <a href="https://java.net/projects/tda/">TDA</a>.<br /> </p> </td>
   </tr>
   <tr>
    <td>Heap Dumps</td>
    <td>Onvoldoende geheugen, wat langzame prestaties tot gevolg heeft.</td>
-   <td><p>Voeg het volgende toe:<br /> <code>-XX:+HeapDumpOnOutOfMemoryError</code><br /> optie aan de vraag van java aan AEM.</p> <p>Raadpleeg de <a href="https://java.sun.com/javase/6/webnotes/trouble/TSG-VM/html/clopts.html#gbzrr">handleiding voor probleemoplossing voor Java SE 6 met HotSpot VM</a>.</p> </td>
+   <td><p>Voeg de optie:<br /> <code>-XX:+HeapDumpOnOutOfMemoryError</code><br /> aan de Java-aanroep aan AEM toe.</p> <p>Zie <a href="https://java.sun.com/javase/6/webnotes/trouble/TSG-VM/html/clopts.html#gbzrr">Handleiding voor probleemoplossing voor Java SE 6 met HotSpot VM</a>.</p> </td>
   </tr>
   <tr>
    <td>Systeemaanroepen</td>
    <td>Problemen met timing vaststellen.</td>
-   <td><p>De vraag aan <code>System.currentTimeMillis()</code> of <code>com.day.util</code>.Timing wordt gebruikt om timestamps van uw code, of via <a href="#html-comments">HTML-commentaren</a>te produceren.</p> <p><strong>Opmerking:</strong> Deze moeten zo worden geïmplementeerd dat ze indien nodig kunnen worden geactiveerd/gedeactiveerd; wanneer een systeem soepel functioneert , zal de overhead van het verzamelen van statistieken niet nodig zijn .</p> </td>
+   <td><p>Aanroepen naar <code>System.currentTimeMillis()</code> of <code>com.day.util</code>.Timing worden gebruikt om tijdstempels van uw code te genereren, of via <a href="#html-comments">HTML-commentaren</a>.</p> <p><strong>Opmerking:</strong> Deze moeten worden geïmplementeerd zodat ze naar behoefte kunnen worden geactiveerd/gedeactiveerd; wanneer een systeem soepel functioneert , zal de overhead van het verzamelen van statistieken niet nodig zijn .</p> </td>
   </tr>
   <tr>
    <td>Apache Bench</td>
    <td>Identificeer geheugenlekken, selectief analyseer reactietijd.</td>
-   <td><p>basisgebruik is:</p> <p><code>ab -k -n &lt;<em>requests</em>&gt; -c &lt;<em>concurrency</em>&gt; &lt;<em>url</em>&gt;</code></p> <p>Zie <a href="#apache-bench">Apache Bench</a> en de pagina <a href="https://httpd.apache.org/docs/2.2/programs/ab.html"></a> Ab man voor meer informatie.</p> </td>
+   <td><p>basisgebruik is:</p> <p><code>ab -k -n &lt;<em>requests</em>&gt; -c &lt;<em>concurrency</em>&gt; &lt;<em>url</em>&gt;</code></p> <p>Zie <a href="#apache-bench">Apache Bench</a> en <a href="https://httpd.apache.org/docs/2.2/programs/ab.html">ab man page</a> voor volledige informatie.</p> </td>
   </tr>
   <tr>
    <td>Zoekanalyse</td>
    <td> </td>
-   <td>Zoekopdrachten offline uitvoeren, reactietijd van query identificeren, testen en resultaatset bevestigen.<br /> </td>
+   <td>Voer offline onderzoeksvragen uit, identificeer reactietijd van vraag, test en bevestig resultaatreeks.<br /> </td>
   </tr>
   <tr>
    <td>JMeter</td>
@@ -620,12 +620,12 @@ Sommige hiervan zijn afhankelijk van uw besturingssysteem.
   <tr>
    <td>JConsole</td>
    <td>Bekijk JVM-metriek en -threads.</td>
-   <td><p>Gebruik: jconsole</p> <p>Zie <a href="https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html">jconsole</a> en <a href="#monitoring-performance-using-jconsole">Monitoring Prestaties met behulp van JConsole</a>.</p> <p><strong>Opmerking:</strong> Met JDK 1.6 is JConsole uitbreidbaar met plug-ins. bijvoorbeeld Top of TDA (Thread Dump Analyzer).</p> </td>
+   <td><p>Gebruik: jconsole</p> <p>Zie <a href="https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html">jconsole</a> en <a href="#monitoring-performance-using-jconsole">Prestaties bewaken met behulp van JConsole</a>.</p> <p><strong>Opmerking:JConsole kan </strong> met JDK 1.6 worden uitgebreid met plug-ins. bijvoorbeeld Top of TDA (Thread Dump Analyzer).</p> </td>
   </tr>
   <tr>
    <td>Java VisualVM</td>
    <td>Bekijk JVM-metriek, threads, geheugen en profilering.</td>
-   <td><p>Gebruik: jvisualvm of visualvm<br /> </p> <p>Zie <a href="https://java.sun.com/javase/6/docs/technotes/tools/share/jvisualvm.html">jvisualvm</a>, <a href="https://visualvm.dev.java.net/">visualvm</a> en de Prestaties van de <a href="#monitoring-performance-using-j-visualvm">Controle gebruikend (J)VisualVM</a>.</p> <p><strong>Opmerking:</strong> Met JDK 1.6, is VisualVM verlengbaar met stop-ins.</p> </td>
+   <td><p>Gebruik: jvisualvm of visualvm<br /> </p> <p>Zie <a href="https://java.sun.com/javase/6/docs/technotes/tools/share/jvisualvm.html">jvisualvm</a>, <a href="https://visualvm.dev.java.net/">visualvm</a> en <a href="#monitoring-performance-using-j-visualvm">Prestaties controleren met behulp van (J)VisualVM</a>.</p> <p><strong>Opmerking:</strong> met JDK 1.6 is VisualVM uitbreidbaar met plug-ins.</p> </td>
   </tr>
   <tr>
    <td>worstjes/resten, n.e.g.</td>
@@ -635,7 +635,7 @@ Sommige hiervan zijn afhankelijk van uw besturingssysteem.
   <tr>
    <td>Timingstatistieken</td>
    <td>Zie timingstatistieken voor paginerendering.</td>
-   <td><p>Als u timingstatistieken voor het weergeven van pagina's wilt zien, kunt u <strong>Ctrl-Shift-U</strong> <code>?debugClientLibs=true</code> gebruiken in combinatie met de tijdinstellingen in de URL.</p> </td>
+   <td><p>Als u timingstatistieken voor paginerendering wilt zien, kunt u <strong>Ctrl-Shift-U</strong> gebruiken in combinatie met <code>?debugClientLibs=true</code> ingesteld in de URL.</p> </td>
   </tr>
   <tr>
    <td>Hulpprogramma voor CPU- en geheugenanalyse<br /> </td>
@@ -654,9 +654,9 @@ Sommige hiervan zijn afhankelijk van uw besturingssysteem.
 
 In dit bestand wordt basisinformatie geregistreerd over elk verzoek aan AEM. Uit deze waardevolle conclusies kunnen we lering trekken.
 
-Het `request.log` biedt een ingebouwde manier om te zien hoe lang verzoeken duren. Voor ontwikkelingsdoeleinden is het nuttig om `tail -f` de `request.log` en wacht op langzame reactietijden. Als u een groter gebied wilt analyseren, raden `request.log` we u aan [dat `rlog.jar` te gebruiken, zodat u kunt sorteren en filteren op responstijden](#using-rlog-jar-to-find-requests-with-long-duration-times).
+De `request.log` biedt een ingebouwde manier om een blik te krijgen op hoe lang verzoeken nemen. Voor ontwikkelingsdoeleinden is het nuttig om `tail -f` `request.log` te controleren en op langzame reactietijden te letten. Om groter `request.log` te analyseren adviseren wij [gebruik van `rlog.jar` die u toestaat om op reactietijden te sorteren en te filtreren](#using-rlog-jar-to-find-requests-with-long-duration-times).
 
-We raden u aan om de &#39;trage&#39; pagina&#39;s van de pagina te isoleren `request.log`en ze vervolgens individueel af te stemmen voor betere prestaties. Dit wordt gewoonlijk gedaan door prestatiesmetriek per component of het gebruiken van een prestaties het profileren hulpmiddel zoals ` [yourkit](https://www.yourkit.com/)`te omvatten.
+We raden u aan de &#39;trage&#39; pagina&#39;s te isoleren van de `request.log` en ze vervolgens afzonderlijk af te stemmen voor een betere prestatie. Dit wordt gewoonlijk gedaan door prestatiesmetriek per component of het gebruiken van een prestaties het profileren hulpmiddel zoals ` [yourkit](https://www.yourkit.com/)` te omvatten.
 
 #### Bewaking van verkeer op uw website {#monitoring-traffic-on-your-website}
 
@@ -703,7 +703,7 @@ Dit logboek heeft één lijn per verzoek of reactie:
 
 Met behulp van kleine scripts kunt u de vereiste informatie uit het logbestand extraheren en de gewenste statistieken samenstellen. Hieruit kunt u zien welke pagina&#39;s of typen pagina&#39;s langzaam zijn en of de prestaties over het geheel genomen bevredigend zijn.
 
-#### De onderzoekreactie tijden van het toezicht met request.log {#monitoring-search-response-times-with-the-request-log}
+#### De onderzoekreactie tijden met request.log {#monitoring-search-response-times-with-the-request-log} controleren
 
 Zoekverzoeken worden ook in het logbestand geregistreerd:
 
@@ -716,9 +716,9 @@ Dus, zoals hierboven, kunt u manuscripten gebruiken om de relevante informatie t
 
 Als u echter eenmaal de responstijd hebt bepaald, moet u misschien analyseren waarom het verzoek de tijd neemt die het nodig heeft en wat er kan worden gedaan om de reactie te verbeteren.
 
-#### Het aantal en de gevolgen van gelijktijdige gebruikers controleren {#monitoring-the-number-and-impact-of-concurrent-users}
+#### Het aantal en de impact van gelijktijdige gebruikers controleren {#monitoring-the-number-and-impact-of-concurrent-users}
 
-Ook hier `request.log` kan het worden gebruikt om de samenhang en de reactie van het systeem daarop te controleren.
+Ook hier kan `request.log` worden gebruikt om de gelijktijdige uitvoering en de reactie van het systeem erop te controleren.
 
 Er moeten tests worden uitgevoerd om te bepalen hoeveel gelijktijdige gebruikers het systeem kan verwerken voordat een negatieve invloed wordt waargenomen. Opnieuw kunnen de manuscripten worden gebruikt om resultaten uit het logboekdossier te halen:
 
@@ -738,12 +738,12 @@ Er moeten tests worden uitgevoerd om te bepalen hoeveel gelijktijdige gebruikers
 31/Mar/2009:11:45:44 +0200 [337] <- 304 text/html 0ms
 ```
 
-### Het gebruiken van rlog.jar om verzoeken met lange duurtijden te vinden {#using-rlog-jar-to-find-requests-with-long-duration-times}
+### Het gebruiken van rlog.jar om verzoeken met lange duurtijden {#using-rlog-jar-to-find-requests-with-long-duration-times} te vinden
 
 AEM bevat diverse hulpgereedschappen in:
 `<cq-installation-dir>/crx-quickstart/opt/helpers`
 
-Een van deze `rlog.jar`, kan worden gebruikt om snel te sorteren `request.log` zodat aanvragen op duur, van langste tot kortste tijd worden weergegeven.
+Één van deze, `rlog.jar`, kan worden gebruikt om `request.log` snel te sorteren zodat de verzoeken door duur, van langste tot kortste tijd worden getoond.
 
 De volgende opdracht toont de mogelijke argumenten:
 
@@ -759,7 +759,7 @@ Options:
   -xdev            Exclude POST request to CRXDE.
 ```
 
-U kunt het bestand bijvoorbeeld uitvoeren door het als parameter op te geven en de 10 eerste aanvragen met de langste duur weer te geven: `request.log`
+U kunt het bestand bijvoorbeeld uitvoeren door het op te geven als parameter en de 10 eerste aanvragen met de langste duur weer te geven:`request.log`
 
 ```shell
 $ java -jar ../opt/helpers/rlog.jar -n 10 request.log
@@ -786,7 +786,7 @@ Mogelijk moet u de afzonderlijke `request.log` bestanden samenvoegen als u deze 
 
 ### Apache Bench {#apache-bench}
 
-Om het effect van speciale gevallen (zoals huisvuilinzameling, enz.) te minimaliseren, wordt het geadviseerd om een hulpmiddel zoals `apachebench` (zie bijvoorbeeld, [ab](https://httpd.apache.org/docs/2.2/programs/ab.html) voor verdere documentatie) te gebruiken helpen geheugenlekken identificeren en selectief reactietijd analyseren.
+Om het effect van speciale gevallen (zoals huisvuilinzameling, enz.) te minimaliseren, wordt het geadviseerd om een hulpmiddel zoals `apachebench` (zie bijvoorbeeld [ab](https://httpd.apache.org/docs/2.2/programs/ab.html) voor verdere documentatie) te gebruiken helpen geheugenlekken identificeren en selectief reactietijd analyseren.
 
 Apache Bench kan als volgt worden gebruikt:
 
@@ -851,11 +851,11 @@ Percentage of the requests served within a certain time (ms)
 
 De bovenstaande nummers zijn afkomstig van een standaard MAcBook Pro-laptop (medio 2010) die toegang heeft tot de geometrixx-bedrijfspagina, zoals opgenomen in een standaard AEM installatie. De pagina is heel eenvoudig, maar niet geoptimaliseerd voor prestaties.
 
-`apachebench` geeft ook de tijd per verzoek als gemiddelde, over alle gezamenlijke verzoeken weer; zie `Time per request: 54.595 [ms]` (gemiddeld, over alle gelijktijdige aanvragen). U kunt de waarde van de parameter voor gelijktijdige uitvoering wijzigen `-c` (aantal meerdere aanvragen dat tegelijkertijd moet worden uitgevoerd) om effecten te zien.
+`apachebench` geeft ook de tijd per verzoek als gemiddelde, over alle gezamenlijke verzoeken weer; zie  `Time per request: 54.595 [ms]` (gemiddeld, over alle gelijktijdige aanvragen). U kunt de waarde van de parameter corrency `-c` (aantal veelvoudige verzoeken om tegelijkertijd uit te voeren) veranderen om het even welke gevolgen te zien.
 
 ### Aanvraagtellers {#request-counters}
 
-De informatie over verzoekverkeer (aantal verzoeken tijdens een specifieke tijdspanne) geeft u een aanwijzing van de lading op uw geval. Deze informatie kan uit [request.log](#interpreting-the-request-log)worden gehaald, hoewel het gebruiken van tellers gegevensinzameling zal automatiseren om u te laten zien:
+De informatie over verzoekverkeer (aantal verzoeken tijdens een specifieke tijdspanne) geeft u een aanwijzing van de lading op uw geval. Deze informatie kan uit [request.log](#interpreting-the-request-log) worden gehaald, hoewel het gebruiken van tellers gegevensinzameling zal automatiseren om u te laten zien:
 
 * significante verschillen in activiteit ( dat wil zeggen onderscheid maken tussen &quot; veel verzoeken &quot; en &quot; lage activiteit &quot; )
 * wanneer een instantie niet wordt gebruikt
@@ -871,7 +871,7 @@ De verzamelde informatie kan worden gebruikt om aan te geven:
 
 ### HTML-opmerkingen {#html-comments}
 
-Aanbevolen wordt dat elk project `html comments` voor serverprestaties omvat. Er zijn veel goede openbare voorbeelden te vinden; Selecteer een pagina, open de paginabron voor weergave en schuif naar de onderkant. U ziet bijvoorbeeld de volgende code:
+Voor serverprestaties wordt aanbevolen dat elk project `html comments` bevat. Er zijn veel goede openbare voorbeelden te vinden; Selecteer een pagina, open de paginabron voor weergave en schuif naar de onderkant. U ziet bijvoorbeeld de volgende code:
 
 ```xml
 </body>
@@ -883,13 +883,13 @@ Aanbevolen wordt dat elk project `html comments` voor serverprestaties omvat. Er
 
 ### Prestaties controleren met behulp van JConsole {#monitoring-performance-using-jconsole}
 
-De gereedschapsopdracht `jconsole` is beschikbaar in de JDK.
+De hulpmiddelbevel `jconsole` is beschikbaar met JDK.
 
 1. Start de AEM.
-1. Uitvoeren `jconsole.`
-1. Selecteer de AEM en **Connect**.
+1. `jconsole.` uitvoeren
+1. Selecteer uw AEM en **Connect**.
 
-1. Dubbelklik vanuit de `Local` toepassing `com.day.crx.quickstart.Main`; het Overzicht zal als gebrek worden getoond:
+1. Dubbelklik in de `Local`-toepassing `com.day.crx.quickstart.Main`; het Overzicht zal als gebrek worden getoond:
 
    ![chlimage_1-1](assets/chlimage_1-1.png)
 
@@ -897,20 +897,20 @@ De gereedschapsopdracht `jconsole` is beschikbaar in de JDK.
 
 ### Prestaties bewaken met behulp van (J)VisualVM {#monitoring-performance-using-j-visualvm}
 
-Sinds JDK 1.6 `jvisualvm` is de gereedschapsopdracht beschikbaar. Nadat u JDK 1.6 hebt geïnstalleerd, kunt u:
+Sinds JDK 1.6 is de gereedschapsopdracht `jvisualvm` beschikbaar. Nadat u JDK 1.6 hebt geïnstalleerd, kunt u:
 
 1. Start de AEM.
 
    >[!NOTE]
    >
-   >Als u Java 5 gebruikt, kunt u het `-Dcom.sun.management.jmxremote` argument toevoegen aan de Java-opdrachtregel waarmee uw JVM wordt gestart. JMX is standaard ingeschakeld in Java 6.
+   >Als u Java 5 gebruikt, kunt u het argument `-Dcom.sun.management.jmxremote` toevoegen aan de java-opdrachtregel waarmee uw JVM wordt gestart. JMX is standaard ingeschakeld in Java 6.
 
 1. Voer een van beide uit:
 
    * `jvisualvm`: in de map JDK 1.6 bin (geteste versie)
-   * `visualvm`: kan worden gedownload van [VisualVM](https://visualvm.dev.java.net/) (versie voor de rand van de bloeding)
+   * `visualvm`: kan worden gedownload van  [VisualVM](https://visualvm.dev.java.net/)  (versie voor de rand van de bloeding)
 
-1. Dubbelklik vanuit de `Local` toepassing `com.day.crx.quickstart.Main`; het Overzicht zal als gebrek worden getoond:
+1. Dubbelklik in de `Local`-toepassing `com.day.crx.quickstart.Main`; het Overzicht zal als gebrek worden getoond:
 
    ![chlimage_1-2](assets/chlimage_1-2.png)
 
@@ -920,7 +920,7 @@ Sinds JDK 1.6 `jvisualvm` is de gereedschapsopdracht beschikbaar. Nadat u JDK 1.
 
 U kunt dit gereedschap gebruiken om thread-dumps en dumps voor geheugenkoppen te maken. Deze informatie wordt vaak gevraagd door het technische ondersteuningsteam.
 
-### Informatie verzamelen {#information-collection}
+### Informatieverzameling {#information-collection}
 
 Als u zoveel mogelijk weet wat u met de installatie kunt doen, kunt u nagaan wat een wijziging in de prestaties heeft veroorzaakt en of deze wijzigingen gerechtvaardigd zijn. Deze gegevens moeten regelmatig worden verzameld, zodat u gemakkelijk significante veranderingen kunt zien.
 
@@ -1009,7 +1009,7 @@ Als u wilt zien hoeveel DAM-middelen u momenteel beheert, gebruikt u een query v
 
 #### Wat is de gemiddelde omvang van de activa? {#what-is-the-average-size-of-the-assets}
 
-De totale grootte van de `/var/dam` map bepalen:
+De totale grootte van de map `/var/dam` bepalen:
 
 1. Gebruik WebDAV om de opslagplaats aan het lokale dossiersysteem in kaart te brengen.
 
@@ -1020,7 +1020,7 @@ De totale grootte van de `/var/dam` map bepalen:
    du -sh dam/
    ```
 
-   Om de gemiddelde grootte te krijgen, verdeel de globale grootte door het totale aantal activa in (hierboven verkregen) `/var/dam` .
+   Om de gemiddelde grootte te krijgen, verdeel de globale grootte door het totale aantal activa in `/var/dam` (hierboven verkregen).
 
 #### Hoeveel sjablonen worden momenteel gebruikt? {#how-many-templates-are-currently-used}
 
@@ -1062,7 +1062,7 @@ Om de verzoeken per uur te bepalen hebt u op het auteurssysteem bij piektijd:
 
 Herhaal de bovenstaande procedure voor uw publicatieexemplaar.
 
-## Specifieke scenario&#39;s analyseren {#analyzing-specific-scenarios}
+## Specifieke scenario&#39;s {#analyzing-specific-scenarios} analyseren
 
 Hieronder volgt een lijst met suggesties voor het controleren of er bepaalde prestatieproblemen optreden. De lijst is (helaas) niet volledig.
 
@@ -1097,12 +1097,12 @@ Als er onvoldoende geheugen beschikbaar is voor uw systeem, is dit op verschille
 
 Controleer in deze gevallen:
 
-* De JVM-instellingen die worden gebruikt om AEM te [starten](/help/sites-deploying/deploy.md#getting-started)
+* De JVM-instellingen die worden gebruikt voor het [starten van AEM](/help/sites-deploying/deploy.md#getting-started)
 * De Knowledge Base:
 
    * [Geheugenproblemen analyseren](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html)
 
-### I/O schijf {#disk-i-o}
+### SchijfI/O {#disk-i-o}
 
 Als er onvoldoende schijfruimte beschikbaar is op uw systeem of als u merkt dat de schijf wordt vastgezet, zie:
 
@@ -1115,13 +1115,13 @@ Als er onvoldoende schijfruimte beschikbaar is op uw systeem of als u merkt dat 
    * [CQ WCM-foutopsporingsfilter](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
    * [Logboeken](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level) [](/help/sites-deploying/configuring.md#loggersandwritersforindividualservices)
 
-* Of en hoe u [Versie het Zuiveren hebt gevormd](/help/sites-deploying/version-purging.md)
+* Of en hoe u [Versieopruiming](/help/sites-deploying/version-purging.md) hebt geconfigureerd
 * De Knowledge Base:
 
    * [Te veel geopende bestanden](https://helpx.adobe.com/experience-manager/kb/TooManyOpenFiles.html)
    * [Dagboek verbruikt te veel schijfruimte](https://helpx.adobe.com/experience-manager/kb/JournalTooMuchDiskSpace.html)
 
-### Reguliere prestatievermindering {#regular-performance-degradation}
+### Standaardprestatievermindering {#regular-performance-degradation}
 
 Als u ziet dat de prestaties van uw instantie achteruitgaan nadat u opnieuw hebt opgestart (soms een week of meer later), kunt u het volgende controleren:
 
@@ -1169,6 +1169,6 @@ Zo kunt u zien hoeveel geheugen wordt gebruikt, welke GC-algoritmen worden gebru
 
 >[!NOTE]
 >
->Voor de VM van Oracle is er ook informatie op:
+>Voor Oracle VM is er ook informatie op:
 >
 >[https://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html)

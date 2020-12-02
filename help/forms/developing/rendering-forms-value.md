@@ -1,6 +1,6 @@
 ---
-title: Formulieren renderen op waarde
-seo-title: Formulieren renderen op waarde
+title: Forms renderen op waarde
+seo-title: Forms renderen op waarde
 description: 'null'
 seo-description: 'null'
 uuid: b932cc54-662f-40ae-94e0-20ac82845f3b
@@ -12,37 +12,40 @@ topic-tags: operations
 discoiquuid: ddbb2b82-4c57-4845-a5be-2435902d312b
 translation-type: tm+mt
 source-git-commit: 66bfd6870b4c09dc2ca1b66058e0b9e040a71507
+workflow-type: tm+mt
+source-wordcount: '1812'
+ht-degree: 0%
 
 ---
 
 
-# Formulieren renderen op waarde {#rendering-forms-by-value}
+# Forms renderen op waarde {#rendering-forms-by-value}
 
-Een formulierontwerp dat in Designer is gemaakt, wordt meestal doorgegeven via de service Formulieren. Formulierontwerpen kunnen groot zijn en daarom is het efficiënter om ze door te geven als verwijzing, zodat het niet nodig is om bytes in het formulierontwerp op waarde te rangschikken. De service Forms kan het formulierontwerp ook in cache plaatsen, zodat het formulierontwerp niet voortdurend hoeft te worden gelezen wanneer het in cache wordt geplaatst.
+Een formulierontwerp dat in Designer is gemaakt, wordt meestal doorgegeven via de Forms-service. Formulierontwerpen kunnen groot zijn en daarom is het efficiënter om deze door te geven als verwijzing, zodat bytes in het formulierontwerp niet op waarde moeten worden gesorteerd. De Forms-service kan het formulierontwerp ook in cache plaatsen, zodat het formulierontwerp niet voortdurend hoeft te worden gelezen wanneer het in cache wordt geplaatst.
 
-Als een formulierontwerp een UUID-kenmerk bevat, wordt het in de cache opgeslagen. De UUID-waarde is uniek voor alle formulierontwerpen en wordt gebruikt om een formulier op unieke wijze te identificeren. Als u een formulier op waarde weergeeft, mag het formulier alleen in de cache worden geplaatst wanneer het herhaaldelijk wordt gebruikt. Als het formulier echter niet herhaaldelijk wordt gebruikt en uniek moet zijn, kunt u voorkomen dat het formulier in cache wordt geplaatst met behulp van cacheopties die zijn ingesteld met de API voor AEM-formulieren.
+Als een formulierontwerp een UUID-kenmerk bevat, wordt het in de cache opgeslagen. De UUID-waarde is uniek voor alle formulierontwerpen en wordt gebruikt om een formulier op unieke wijze te identificeren. Als u een formulier op waarde weergeeft, mag het formulier alleen in de cache worden geplaatst wanneer het herhaaldelijk wordt gebruikt. Als het formulier echter niet herhaaldelijk wordt gebruikt en uniek moet zijn, kunt u voorkomen dat het formulier in cache wordt geplaatst met behulp van cacheopties die zijn ingesteld met de AEM Forms API.
 
-De service Forms kan ook de locatie van gekoppelde inhoud in het formulierontwerp oplossen. Bijvoorbeeld: gekoppelde afbeeldingen waarnaar in het formulierontwerp wordt verwezen, zijn relatieve URL&#39;s. Gekoppelde inhoud wordt altijd verondersteld relatief te zijn ten opzichte van de locatie van het formulierontwerp. Daarom is het oplossen van gekoppelde inhoud een kwestie van het bepalen van zijn plaats door de relatieve weg op de absolute plaats van het vormontwerp toe te passen.
+De Forms-service kan ook de locatie van gekoppelde inhoud in het formulierontwerp oplossen. Bijvoorbeeld: gekoppelde afbeeldingen waarnaar in het formulierontwerp wordt verwezen, zijn relatieve URL&#39;s. Gekoppelde inhoud wordt altijd verondersteld relatief te zijn ten opzichte van de locatie van het formulierontwerp. Daarom is het oplossen van gekoppelde inhoud een kwestie van het bepalen van zijn plaats door de relatieve weg op de absolute plaats van het vormontwerp toe te passen.
 
-In plaats van een formulierontwerp door te geven als referentie, kunt u een formulierontwerp op waarde doorgeven. Het doorgeven van een formulierontwerp op basis van waarde is efficiënt wanneer een formulierontwerp dynamisch wordt gemaakt. Dat wil zeggen, wanneer een clienttoepassing de XML genereert die tijdens runtime een formulierontwerp maakt. In dit geval wordt een formulierontwerp niet opgeslagen in een fysieke opslagplaats, omdat het in het geheugen wordt opgeslagen. Wanneer u tijdens de runtime dynamisch een formulierontwerp maakt en dit op waarde doorgeeft, kunt u het formulier in cache plaatsen en de prestaties van de service Forms verbeteren.
+In plaats van een formulierontwerp door te geven als referentie, kunt u een formulierontwerp op waarde doorgeven. Het doorgeven van een formulierontwerp op basis van waarde is efficiënt wanneer een formulierontwerp dynamisch wordt gemaakt. Dat wil zeggen, wanneer een clienttoepassing de XML genereert die tijdens runtime een formulierontwerp maakt. In dit geval wordt een formulierontwerp niet opgeslagen in een fysieke opslagplaats, omdat het in het geheugen wordt opgeslagen. Als u tijdens de runtime dynamisch een formulierontwerp maakt en dit op waarde doorgeeft, kunt u het formulier in cache plaatsen en de prestaties van de Forms-service verbeteren.
 
 **Beperkingen bij het doorgeven van een formulier op waarde**
 
 De volgende beperkingen zijn van toepassing wanneer een formulierontwerp wordt doorgegeven als waarde:
 
 * Het formulierontwerp kan geen relatieve gekoppelde inhoud bevatten. Alle afbeeldingen en fragmenten moeten in het formulierontwerp worden ingesloten of absoluut worden vermeld.
-* Berekeningen aan de serverzijde kunnen niet worden uitgevoerd nadat het formulier is gegenereerd. Als het formulier wordt teruggestuurd naar de service Forms, worden de gegevens opgehaald en geretourneerd zonder berekeningen aan de serverzijde.
-* Omdat HTML gekoppelde afbeeldingen alleen tijdens runtime kan gebruiken, is het niet mogelijk om HTML met ingesloten afbeeldingen te genereren. De reden hiervoor is dat de service Forms ingesloten afbeeldingen met HTML ondersteunt door de afbeeldingen op te halen uit een formulierontwerp waarnaar wordt verwezen. Omdat een formulierontwerp dat via waarde wordt doorgegeven, geen locatie waarnaar wordt verwezen, kunnen ingesloten afbeeldingen niet worden geëxtraheerd wanneer de HTML-pagina wordt weergegeven. Daarom moeten afbeeldingsverwijzingen absolute paden zijn die in HTML moeten worden gerenderd.
+* Berekeningen aan de serverzijde kunnen niet worden uitgevoerd nadat het formulier is gegenereerd. Als het formulier wordt teruggestuurd naar de Forms-service, worden de gegevens opgehaald en geretourneerd zonder berekeningen aan de serverzijde.
+* Omdat HTML gekoppelde afbeeldingen alleen tijdens runtime kan gebruiken, is het niet mogelijk om HTML met ingesloten afbeeldingen te genereren. De reden hiervoor is dat de Forms-service ingesloten afbeeldingen met HTML ondersteunt door de afbeeldingen op te halen uit een formulierontwerp waarnaar wordt verwezen. Omdat een formulierontwerp dat via waarde wordt doorgegeven, geen locatie waarnaar wordt verwezen, kunnen ingesloten afbeeldingen niet worden geëxtraheerd wanneer de HTML-pagina wordt weergegeven. Daarom moeten afbeeldingsverwijzingen absolute paden zijn die in HTML moeten worden gerenderd.
 
 >[!NOTE]
 >
->Hoewel u verschillende typen formulieren op waarde kunt weergeven (bijvoorbeeld HTML-formulieren of formulieren met gebruiksrechten), wordt in deze sectie de rendering van interactieve PDF-formulieren besproken.
+>Hoewel u verschillende typen formulieren op waarde kunt weergeven (bijvoorbeeld HTML-formulieren of formulieren die gebruiksrechten bevatten), wordt in deze sectie de rendering van interactieve PDF forms besproken.
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van Vormen, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Zie [Referentiehandleiding voor services voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63) voor meer informatie over de Forms-service.
 
-## Overzicht van de stappen {#summary-of-steps}
+## Overzicht van stappen {#summary-of-steps}
 
 Voer de volgende stappen uit om een formulier op waarde te genereren:
 
@@ -62,7 +65,7 @@ Voordat u gegevens via programmacode kunt importeren in een PDF-formulier met cl
 
 **Verwijzen naar het formulierontwerp**
 
-Wanneer u een formulier op waarde weergeeft, moet u een `com.adobe.idp.Document` object maken dat het te genereren formulierontwerp bevat. U kunt verwijzen naar een bestaand XDP-bestand of u kunt tijdens runtime dynamisch een formulierontwerp maken en een bestand vullen `com.adobe.idp.Document` met die gegevens.
+Wanneer u een formulier op waarde weergeeft, moet u een `com.adobe.idp.Document`-object maken dat het formulierontwerp bevat dat moet worden weergegeven. U kunt verwijzen naar een bestaand XDP-bestand of u kunt bij uitvoering dynamisch een formulierontwerp maken en een `com.adobe.idp.Document` vullen met die gegevens.
 
 >[!NOTE]
 >
@@ -70,15 +73,15 @@ Wanneer u een formulier op waarde weergeeft, moet u een `com.adobe.idp.Document`
 
 **Een formulier op waarde weergeven**
 
-Als u een formulier op waarde wilt weergeven, geeft u een `com.adobe.idp.Document` exemplaar met het formulierontwerp door aan de `inDataDoc` parameter van de rendermethode (dit kan elke rendermethode van het `FormsServiceClient` object zijn, zoals `renderPDFForm`, `(Deprecated) renderHTMLForm`enzovoort). Deze parameterwaarde is gewoonlijk gereserveerd voor gegevens die met het formulier worden samengevoegd. Geef op dezelfde manier een lege tekenreekswaarde door aan de `formQuery` parameter. Normaal gesproken vereist deze parameter een tekenreekswaarde die de naam van het formulierontwerp opgeeft.
+Als u een formulier op waarde wilt weergeven, geeft u een `com.adobe.idp.Document`-exemplaar met het formulierontwerp door aan de parameter `inDataDoc` van de rendermethode (dit kan een van de rendermethoden van het object `FormsServiceClient` zijn, zoals `renderPDFForm`, `(Deprecated) renderHTMLForm`, enzovoort). Deze parameterwaarde is gewoonlijk gereserveerd voor gegevens die met het formulier worden samengevoegd. Op dezelfde manier geeft u een lege tekenreekswaarde door aan de parameter `formQuery`. Normaal gesproken vereist deze parameter een tekenreekswaarde die de naam van het formulierontwerp opgeeft.
 
 >[!NOTE]
 >
->Als u gegevens in het formulier wilt weergeven, moeten de gegevens in het `xfa:datasets` element worden opgegeven. Ga voor informatie over XFA-architectuur naar [https://partners.adobe.com/public/developer/xml/index_arch.html](https://partners.adobe.com/public/developer/xml/index_arch.html).
+>Als u gegevens in het formulier wilt weergeven, moeten de gegevens worden opgegeven in het element `xfa:datasets`. Ga voor informatie over XFA-architectuur naar [https://partners.adobe.com/public/developer/xml/index_arch.html](https://partners.adobe.com/public/developer/xml/index_arch.html).
 
 **De formuliergegevensstroom naar de webbrowser van de client schrijven**
 
-Wanneer de service Forms een formulier op waarde weergeeft, wordt een formuliergegevensstroom geretourneerd die u naar de webbrowser van de client moet schrijven. Wanneer het formulier naar de webbrowser van de client wordt geschreven, is het zichtbaar voor de gebruiker.
+Wanneer de Forms-service een formulier op waarde weergeeft, wordt een formuliergegevensstroom geretourneerd die u naar de webbrowser van de client moet schrijven. Wanneer het formulier naar de webbrowser van de client wordt geschreven, is het zichtbaar voor de gebruiker.
 
 **Zie ook**
 
@@ -86,19 +89,19 @@ Wanneer de service Forms een formulier op waarde weergeeft, wordt een formulierg
 
 [Een formulier op waarde weergeven met de API voor webservices](#render-a-form-by-value-using-the-web-service-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Forms Service API, snel aan de slag](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Forms Service API Quick Start](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Documenten doorgeven aan de Forms Service](/help/forms/developing/passing-documents-forms-service.md)
+[Documenten doorgeven aan de Forms-service](/help/forms/developing/passing-documents-forms-service.md)
 
-[Webtoepassingen maken die formulieren renderen](/help/forms/developing/creating-web-applications-renders-forms.md)
+[Webtoepassingen maken die Forms renderen](/help/forms/developing/creating-web-applications-renders-forms.md)
 
-## Een formulier op waarde weergeven met de Java API {#render-a-form-by-value-using-the-java-api}
+## Een formulier op waarde weergeven met de Java-API {#render-a-form-by-value-using-the-java-api}
 
-Een formulier op waarde weergeven met de API voor formulieren (Java):
+Een formulier op waarde weergeven met de Forms API (Java):
 
 1. Projectbestanden opnemen
 
@@ -106,94 +109,96 @@ Een formulier op waarde weergeven met de API voor formulieren (Java):
 
 1. Een Forms Client API-object maken
 
-   * Maak een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
-   * Maak een `FormsServiceClient` object door de constructor ervan te gebruiken en het `ServiceClientFactory` object door te geven.
+   * Maak een `ServiceClientFactory`-object dat verbindingseigenschappen bevat.
+   * Maak een `FormsServiceClient`-object door de constructor ervan te gebruiken en het object `ServiceClientFactory` door te geven.
 
 1. Verwijzen naar het formulierontwerp
 
-   * Maak een `java.io.FileInputStream` object dat staat voor het formulierontwerp dat moet worden gegenereerd met de constructor ervan en geef een tekenreekswaarde door die de locatie van het XDP-bestand aangeeft.
-   * Maak een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en het `java.io.FileInputStream` object door te geven.
+   * Maak een `java.io.FileInputStream`-object dat het formulierontwerp vertegenwoordigt dat moet worden gerenderd met de constructor ervan en geef een tekenreekswaarde door die de locatie van het XDP-bestand aangeeft.
+   * Maak een `com.adobe.idp.Document`-object door de constructor ervan te gebruiken en het object `java.io.FileInputStream` door te geven.
 
 1. Een formulier op waarde weergeven
 
-   Roep de methode van het `FormsServiceClient` `renderPDFForm` object aan en geef de volgende waarden door:
+   Roep de methode `renderPDFForm` van het object `FormsServiceClient` aan en geef de volgende waarden door:
 
    * Een lege tekenreekswaarde. (Normaal gesproken vereist deze parameter een tekenreekswaarde die de naam van het formulierontwerp aangeeft.)
-   * Een `com.adobe.idp.Document` object dat het formulierontwerp bevat. Normaal gesproken is deze parameterwaarde gereserveerd voor gegevens die met het formulier worden samengevoegd.
-   * Een `PDFFormRenderSpec` object dat uitvoeringsopties opslaat. Dit is een optionele parameter en u kunt opgeven `null` of u geen runtime-opties wilt opgeven.
-   * Een `URLSpec` object dat URI-waarden bevat die door de service Forms worden vereist.
-   * Een `java.util.HashMap` object dat bestandsbijlagen opslaat. Dit is een optionele parameter en u kunt opgeven `null` of u geen bestanden aan het formulier wilt koppelen.
-   De `renderPDFForm` methode retourneert een `FormsResult` object dat een formuliergegevensstroom bevat die naar de webbrowser van de client kan worden geschreven.
+   * Een `com.adobe.idp.Document`-object dat het formulierontwerp bevat. Normaal gesproken is deze parameterwaarde gereserveerd voor gegevens die met het formulier worden samengevoegd.
+   * Een `PDFFormRenderSpec`-object dat uitvoeringsopties opslaat. Dit is een optionele parameter en u kunt `null` specificeren als u runtime geen opties wilt specificeren.
+   * Een object `URLSpec` dat URI-waarden bevat die door de Forms-service worden vereist.
+   * Een `java.util.HashMap`-object dat bestandsbijlagen opslaat. Dit is een optionele parameter en u kunt `null` opgeven als u geen bestanden aan het formulier wilt koppelen.
+
+   De methode `renderPDFForm` retourneert een `FormsResult`-object dat een formuliergegevensstroom bevat die naar de webbrowser van de client kan worden geschreven.
 
 1. De formuliergegevensstroom naar de webbrowser van de client schrijven
 
-   * Maak een `com.adobe.idp.Document` object door de `FormsResult` methode van het `getOutputContent` object aan te roepen.
-   * Haal het inhoudstype van het `com.adobe.idp.Document` object op door de `getContentType` methode ervan aan te roepen.
-   * Stel het inhoudstype van het `javax.servlet.http.HttpServletResponse` object in door de bijbehorende `setContentType` methode op te roepen en het inhoudstype van het `com.adobe.idp.Document` object door te geven.
-   * Maak een `javax.servlet.ServletOutputStream` object dat wordt gebruikt om de gegevensstroom van het formulier naar de webbrowser van de client te schrijven door de `javax.servlet.http.HttpServletResponse` methode van het `getOutputStream` object aan te roepen.
-   * Maak een `java.io.InputStream` object door de `com.adobe.idp.Document` methode van het `getInputStream` object aan te roepen.
-   * Maak een bytearray en wijs de grootte van het `InputStream` object toe. Roep de `InputStream` methode van het `available` object aan om de grootte van het `InputStream` object te verkrijgen.
-   * Vul de bytearray met de formuliergegevensstroom door de `InputStream` `read`methode van het object aan te roepen en de bytearray als een argument door te geven.
-   * Roep de `javax.servlet.ServletOutputStream` methode van het `write` object aan om de formuliergegevensstroom naar de webbrowser van de client te verzenden. Geef de bytearray door aan de `write` methode.
+   * Maak een `com.adobe.idp.Document`-object door de methode `getOutputContent` van het object aan te roepen.`FormsResult`
+   * Hiermee wordt het inhoudstype van het object `com.adobe.idp.Document` opgehaald door de methode `getContentType` ervan aan te roepen.
+   * Stel het inhoudstype van het object `javax.servlet.http.HttpServletResponse` in door de methode `setContentType` ervan aan te roepen en het inhoudstype van het object `com.adobe.idp.Document` door te geven.
+   * Maak een `javax.servlet.ServletOutputStream`-object dat wordt gebruikt om de formuliergegevensstroom naar de webbrowser van de client te schrijven door de methode `javax.servlet.http.HttpServletResponse` van het object `getOutputStream` aan te roepen.
+   * Maak een `java.io.InputStream`-object door de methode `getInputStream` van het object `com.adobe.idp.Document` aan te roepen.
+   * Maak een bytearray en wijs de grootte van het object `InputStream` toe. Roep de methode `InputStream` van het object `available` aan om de grootte van het object `InputStream` te verkrijgen.
+   * Vul de bytearray met de formuliergegevensstroom door de methode `read`van het object `InputStream` aan te roepen en de bytearray als een argument door te geven.
+   * Roep de methode `javax.servlet.ServletOutputStream` van het object `write` aan om de gegevensstroom van het formulier naar de webbrowser van de client te verzenden. Geef de bytearray door aan de methode `write`.
 
 **Zie ook**
 
-[Formulieren renderen op waarde](/help/forms/developing/rendering-forms.md)
+[Forms renderen op waarde](/help/forms/developing/rendering-forms.md)
 
 [Snel starten (SOAP-modus): Renderen op waarde met de Java API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-by-value-using-the-java-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Een formulier op waarde weergeven met de API voor webservices {#render-a-form-by-value-using-the-web-service-api}
+## Een formulier op waarde weergeven met de API {#render-a-form-by-value-using-the-web-service-api} voor webservices
 
-Een formulier op waarde weergeven met de API voor formulieren (webservice):
+Een formulier op waarde weergeven met de Forms API (webservice):
 
 1. Projectbestanden opnemen
 
-   * Maak Java-proxyklassen die de Forms service WSDL gebruiken.
+   * Maak Java-proxyklassen die gebruikmaken van de Forms-service WSDL.
    * Neem de Java-proxyklassen op in het klassepad.
 
 1. Een Forms Client API-object maken
 
-   Maak een `FormsService` object en stel verificatiewaarden in.
+   Maak een `FormsService`-object en stel de verificatiewaarden in.
 
 1. Verwijzen naar het formulierontwerp
 
-   * Maak een `java.io.FileInputStream` object met de constructor ervan. Geef een tekenreekswaarde door die de locatie van het XDP-bestand aangeeft.
-   * Maak een `BLOB` object met de constructor ervan. Met dit `BLOB` object wordt een PDF-document opgeslagen dat met een wachtwoord is versleuteld.
-   * Maak een bytearray waarin de inhoud van het `java.io.FileInputStream` object wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de grootte van het `java.io.FileInputStream` object op te halen met de `available` methode.
-   * Vul de bytearray met streamgegevens door de methode van het `java.io.FileInputStream` `read` object aan te roepen en de bytearray door te geven.
-   * Vul het `BLOB` `setBinaryData` object door de methode ervan aan te roepen en de bytearray door te geven.
+   * Maak een `java.io.FileInputStream`-object met de constructor ervan. Geef een tekenreekswaarde door die de locatie van het XDP-bestand aangeeft.
+   * Maak een `BLOB`-object met de constructor ervan. Met het object `BLOB` wordt een PDF-document opgeslagen dat met een wachtwoord is versleuteld.
+   * Maak een bytearray waarin de inhoud van het object `java.io.FileInputStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de grootte van het object `java.io.FileInputStream` op te halen met de methode `available`.
+   * Vul de bytearray met streamgegevens door de methode `read` van het object `java.io.FileInputStream` aan te roepen en de bytearray door te geven.
+   * Vul het object `BLOB` door de methode `setBinaryData` ervan aan te roepen en de bytearray door te geven.
 
 1. Een formulier op waarde weergeven
 
-   Roep de methode van het `FormsService` `renderPDFForm` object aan en geef de volgende waarden door:
+   Roep de methode `renderPDFForm` van het object `FormsService` aan en geef de volgende waarden door:
 
    * Een lege tekenreekswaarde. (Normaal gesproken vereist deze parameter een tekenreekswaarde die de naam van het formulierontwerp aangeeft.)
-   * Een `BLOB` object dat het formulierontwerp bevat. Normaal gesproken is deze parameterwaarde gereserveerd voor gegevens die met het formulier worden samengevoegd.
-   * Een `PDFFormRenderSpec` object dat uitvoeringsopties opslaat. Dit is een optionele parameter en u kunt opgeven `null` of u geen runtime-opties wilt opgeven.
-   * Een `URLSpec` object dat URI-waarden bevat die door de service Forms worden vereist.
-   * Een `java.util.HashMap` object dat bestandsbijlagen opslaat. Dit is een optionele parameter en u kunt opgeven `null` of u geen bestanden aan het formulier wilt koppelen.
-   * Een leeg `com.adobe.idp.services.holders.BLOBHolder` object dat door de methode wordt gevuld. Hiermee slaat u het gerenderde PDF-formulier op.
-   * Een leeg `javax.xml.rpc.holders.LongHolder` object dat door de methode wordt gevuld. (In dit argument wordt het aantal pagina&#39;s in het formulier opgeslagen.)
-   * Een leeg `javax.xml.rpc.holders.StringHolder` object dat door de methode wordt gevuld. (In dit argument wordt de waarde van de landinstelling opgeslagen.)
-   * Een leeg `com.adobe.idp.services.holders.FormsResultHolder` object dat de resultaten van deze bewerking zal bevatten.
-   De `renderPDFForm` methode vult het `com.adobe.idp.services.holders.FormsResultHolder` object dat als laatste argumentwaarde wordt doorgegeven, met een formuliergegevensstroom die naar de webbrowser van de client moet worden geschreven.
+   * Een `BLOB`-object dat het formulierontwerp bevat. Normaal gesproken is deze parameterwaarde gereserveerd voor gegevens die met het formulier worden samengevoegd.
+   * Een `PDFFormRenderSpec`-object dat uitvoeringsopties opslaat. Dit is een optionele parameter en u kunt `null` specificeren als u runtime geen opties wilt specificeren.
+   * Een object `URLSpec` dat URI-waarden bevat die door de Forms-service worden vereist.
+   * Een `java.util.HashMap`-object dat bestandsbijlagen opslaat. Dit is een optionele parameter en u kunt `null` opgeven als u geen bestanden aan het formulier wilt koppelen.
+   * Een leeg object `com.adobe.idp.services.holders.BLOBHolder` dat door de methode is gevuld. Hiermee slaat u het gerenderde PDF-formulier op.
+   * Een leeg object `javax.xml.rpc.holders.LongHolder` dat door de methode is gevuld. (In dit argument wordt het aantal pagina&#39;s in het formulier opgeslagen.)
+   * Een leeg object `javax.xml.rpc.holders.StringHolder` dat door de methode is gevuld. (In dit argument wordt de waarde van de landinstelling opgeslagen.)
+   * Een leeg `com.adobe.idp.services.holders.FormsResultHolder`-object dat de resultaten van deze bewerking zal bevatten.
+
+   Met de methode `renderPDFForm` wordt het object `com.adobe.idp.services.holders.FormsResultHolder` dat als laatste argumentwaarde is doorgegeven, gevuld met een formuliergegevensstroom die naar de webbrowser van de client moet worden geschreven.
 
 1. De formuliergegevensstroom naar de webbrowser van de client schrijven
 
-   * Maak een `FormResult` object door de waarde van het `com.adobe.idp.services.holders.FormsResultHolder` `value` gegevenslid van het object op te halen.
-   * Maak een `BLOB` object dat formuliergegevens bevat door de `FormsResult` methode van het `getOutputContent` object aan te roepen.
-   * Haal het inhoudstype van het `BLOB` object op door de `getContentType` methode ervan aan te roepen.
-   * Stel het inhoudstype van het `javax.servlet.http.HttpServletResponse` object in door de bijbehorende `setContentType` methode op te roepen en het inhoudstype van het `BLOB` object door te geven.
-   * Maak een `javax.servlet.ServletOutputStream` object dat wordt gebruikt om de gegevensstroom van het formulier naar de webbrowser van de client te schrijven door de `javax.servlet.http.HttpServletResponse` methode van het `getOutputStream` object aan te roepen.
-   * Maak een bytearray en vul deze door de `BLOB` methode van het `getBinaryData` object aan te roepen. Hierdoor wordt de inhoud van het `FormsResult` object toegewezen aan de bytearray.
-   * Roep de `javax.servlet.http.HttpServletResponse` methode van het `write` object aan om de formuliergegevensstroom naar de webbrowser van de client te verzenden. Geef de bytearray door aan de `write` methode.
+   * Maak een `FormResult`-object door de waarde op te halen van het `com.adobe.idp.services.holders.FormsResultHolder`-gegevenslid van het object.`value`
+   * Maak een `BLOB`-object dat formuliergegevens bevat door de methode `getOutputContent` van het object `FormsResult` aan te roepen.
+   * Hiermee wordt het inhoudstype van het object `BLOB` opgehaald door de methode `getContentType` ervan aan te roepen.
+   * Stel het inhoudstype van het object `javax.servlet.http.HttpServletResponse` in door de methode `setContentType` ervan aan te roepen en het inhoudstype van het object `BLOB` door te geven.
+   * Maak een `javax.servlet.ServletOutputStream`-object dat wordt gebruikt om de formuliergegevensstroom naar de webbrowser van de client te schrijven door de methode `javax.servlet.http.HttpServletResponse` van het object `getOutputStream` aan te roepen.
+   * Maak een bytearray en vul deze door de methode `getBinaryData` van het object `BLOB` aan te roepen. Deze taak wijst de inhoud van het `FormsResult` voorwerp aan de byteserie toe.
+   * Roep de methode `javax.servlet.http.HttpServletResponse` van het object `write` aan om de gegevensstroom van het formulier naar de webbrowser van de client te verzenden. Geef de bytearray door aan de methode `write`.
 
 **Zie ook**
 
-[Formulieren renderen op waarde](#rendering-forms-by-value)
+[Forms renderen op waarde](#rendering-forms-by-value)
 
-[AEM-formulieren aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[AEM Forms aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)

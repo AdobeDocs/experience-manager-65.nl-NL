@@ -12,13 +12,16 @@ discoiquuid: 502c0916-6c54-440c-be8c-eae56001fa26
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 48afa2146d0dcbab4beaa1044645c269b49fd7ff
+workflow-type: tm+mt
+source-wordcount: '252'
+ht-degree: 0%
 
 ---
 
 
-# Componenten van overlaygemeenschappen {#overlay-communities-components}
+# Componenten {#overlay-communities-components} voor overlaygemeenschappen
 
-Het is de bedoeling om een standaardcomponent te [bedekken](/help/communities/client-customize.md#overlays) door de weergave of het gedrag van een component globaal te wijzigen voor alle relatieve verwijzingen naar de component. Het is afhankelijk van de aard van de sling om naar de map /apps op te lossen voordat u in de map /libs zoekt. Het pad naar de component is dus identiek aan het pad naar de standaardcomponent, behalve dat het pad zich in de map /apps bevindt en niet in de map /libs.
+De bedoeling van [het bedekken van](/help/communities/client-customize.md#overlays) een standaardcomponent is de verschijning of het gedrag van een component globaal, voor alle relatieve verwijzingen naar de component te veranderen. Het is afhankelijk van de aard van de sling om naar de map /apps op te lossen voordat u in de map /libs zoekt. Het pad naar de component is dus identiek aan het pad naar de standaardcomponent, behalve dat het pad zich in de map /apps bevindt en niet in de map /libs.
 
 ## Voorbeeld {#example}
 
@@ -34,9 +37,9 @@ Als u opmerkingen wilt bedekken, moet u:
 
 **E-mails met overlaymeldingen**
 
-Stel dat u het bericht van e-mailberichten wilt aanpassen, kunt u dit doen door de sjablonen te [bedekken](/help/communities/client-customize.md#overlays) op **/libs/settings/community/templates/email/html**.
+Stel dat u het bericht van e-mailberichten wilt aanpassen, kunt u dit doen door [de sjablonen op **/libs/settings/community/templates/email/html** te bedekken.](/help/communities/client-customize.md#overlays)
 
-Als u bijvoorbeeld de meldingen met betrekking tot vermeldingen wilt wijzigen (voor een specifieke component van een community waarin ugc is gemaakt), voegt u een **if** -voorwaarde toe voor het **vermelden** van werkwoorden in de sjablonen van de componenten waarvoor u de ondersteuning voor **@gesproken** hebt ingeschakeld.
+Als u bijvoorbeeld de e-mailmeldingen voor vermeldingen wilt wijzigen (voor een specifieke component van een gemeenschap waarin ugc is gemaakt), voegt u een **if** voorwaarde voor werkwoord **specify** toe in de sjablonen van de componenten waarvoor u de ondersteuning **@mtations** hebt ingeschakeld.
 
 ```java
 {{#equals this.verb "mention"}}\

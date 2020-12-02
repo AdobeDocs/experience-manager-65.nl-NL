@@ -19,7 +19,7 @@ ht-degree: 0%
 ---
 
 
-# Rapportenconsole {#reports-console}
+# Rapportconsole {#reports-console}
 
 ## Overzicht {#overview}
 
@@ -29,7 +29,7 @@ In het algemeen zijn de verschillende verslagen:
 
 * [Toewijzingsrapport](#assignments-report)
 
-   Voor een [enablement-gemeenschap](/help/communities/overview.md#enablement-community)geeft u een overzicht van de vorderingen van studenten bij het toewijzen van hun taken, inclusief een bijbehorende score bij het implementeren van de SCORM-standaard.
+   Voor een [enablement community](/help/communities/overview.md#enablement-community) geeft u een overzicht van de vorderingen van studenten bij het toewijzen van hun taken, inclusief een bijbehorende score bij het implementeren van de SCORM-standaard.
 
 * [Rapport Weergaven](#views-report)
 
@@ -39,15 +39,15 @@ In het algemeen zijn de verschillende verslagen:
 
    Verstrekt een grafiek van diverse soorten posten door communautaire leden aan om het even welke communautaire plaats.
 
-Wanneer [Adobe Analytics is ingeschakeld](/help/communities/sites-console.md#analytics), bevatten rapporten het aantal weergaven, afspelen, opmerkingen en waarderingen voor elke activeringsbron in de loop van de tijd.
+Wanneer [Adobe Analytics is ingeschakeld](/help/communities/sites-console.md#analytics), bevatten rapporten het aantal weergaven, afspelen, opmerkingen en classificaties voor elke activeringsbron in de loop van de tijd.
 
 Rapporten in tabelvorm kunnen worden geëxporteerd in de .csv-indeling voor verdere verwerking.
 
-## Consoles rapporteren {#reporting-consoles}
+## Consoles {#reporting-consoles} rapporteren
 
-### Verslagen voor communautaire sites {#reports-for-community-sites}
+### Rapporten voor communautaire sites {#reports-for-community-sites}
 
-* Vanuit globale navigatie: **[!UICONTROL Navigation]** > **[!UICONTROL Communities]** >  **[!UICONTROL Reports]**
+* Vanuit globale navigatie: **[!UICONTROL Navigation]** > **[!UICONTROL Communities]** > **[!UICONTROL Reports]**
 
 * Kies uit:
 
@@ -65,15 +65,15 @@ Rapporten in tabelvorm kunnen worden geëxporteerd in de .csv-indeling voor verd
 
 ![rapporten](assets/reports1.png)
 
-### Rapporten voor Middelen Enablement en het Leren Wegen {#reports-for-enablement-resources-and-learning-paths}
+### Rapporten voor Middelen van Enablement en het Leren Wegen {#reports-for-enablement-resources-and-learning-paths}
 
-* Vanuit globale navigatie: **[!UICONTROL Navigation]** > **[!UICONTROL Communities]** >  **[!UICONTROL Resources]**
+* Vanuit globale navigatie: **[!UICONTROL Navigation]** > **[!UICONTROL Communities]** > **[!UICONTROL Resources]**
 
-* Selecteer een bestaande community-site voor activering:
+* Selecteer een bestaande communitysite voor activering:
 
-   * Selecteer het pictogram **Rapport** om rapporten te genereren die alle bronnen van Inschakelen bestrijken.
+   * Selecteer **het pictogram Rapport** om rapporten te produceren die alle enablement middelen behandelen.
    * Selecteer een leerpad voor inschakelen.
-   * Selecteer het pictogram **Rapport** om rapporten te genereren voor:
+   * Selecteer **rapportpictogram** om rapporten te produceren voor:
 
       * De meegeleverde bronnen voor activering.
       * De studenten die zijn toegewezen aan het leerpad.
@@ -88,9 +88,9 @@ Rapporten in tabelvorm kunnen worden geëxporteerd in de .csv-indeling voor verd
       * Aantal gemaakte opmerkingen
       * Sterrenclassificatie gegeven
 
-Voor meer details, zie de sectie [van](/help/communities/resources.md#report) Rapporten van de console van Middelen.
+Voor meer details, zie [de sectie van Rapporten](/help/communities/resources.md#report) van de console van Middelen.
 
-## Toewijzingsrapport {#assignments-report}
+## Rapport Toewijzingen {#assignments-report}
 
 Met de toewijzingsconsole kunnen rapporten worden gefilterd door de communitysite, gebruikers of groepen en toewijzing in te schakelen.
 
@@ -114,11 +114,11 @@ Selecteer de criteria voor het rapport:
 
    Maak een keuze uit de instellingsbronnen die aan de geselecteerde studenten zijn toegewezen.
 
-Selecteer **Genereer** om het rapport te maken:
+Selecteer **Generate** om het rapport tot stand te brengen:
 
 ![genereren](assets/generate-assignment-report.png)
 
-## Rapport Weergaven {#views-report}
+## Rapport {#views-report} weergaven
 
 Met de weergaveconsole kunnen rapporten gedurende een bepaalde periode worden gegenereerd op paginaweergaven door een of meer algemene functies.
 
@@ -143,7 +143,7 @@ Selecteer de criteria voor het rapport:
    * Laatste 90 dagen
    * Vorig jaar
 
-Selecteer **[!UICONTROL Generate]** om het rapport te maken.
+Selecteer **[!UICONTROL Generate]** om het rapport tot stand te brengen.
 
 ![genereren, weergaven](assets/generate-views.png)
 
@@ -172,18 +172,18 @@ Selecteer de criteria voor het rapport:
    * Laatste 90 dagen
    * Vorig jaar
 
-Selecteer **[!UICONTROL Generate]** om het rapport te maken.
+Selecteer **[!UICONTROL Generate]** om het rapport tot stand te brengen.
 
 ![genereren](assets/generate-posts-report.png)
 
 ## Problemen oplossen {#troubleshooting}
 
-### Geen community-sites vermeld {#no-community-sites-listed}
+### Geen vermelde communitysites {#no-community-sites-listed}
 
 Als er geen community-sites worden vermeld, moet u ervoor zorgen dat Adobe Analytics is ingeschakeld voor een site. Als u rapporten over toewijzingen kiest, moet u ervoor zorgen dat de toewijzingsfunctie zich in de structuur van de gemeenschapssite bevindt.
 
-### Rapporten worden niet weergegeven in een instantie van AEM-auteur {#reports-do-not-show-in-aem-author-instance}
+### Rapporten worden niet weergegeven in instantie AEM-auteur {#reports-do-not-show-in-aem-author-instance}
 
-Als rapporten niet worden weergegeven in een instantie van AEM-auteur, controleert u of er aanpassingen zijn, zoals URL-toewijzing bij instantie Publiceren. Als de toewijzing URL slechts op AEM wordt gedaan publiceer instantie van de communautaire plaats, zorg ervoor dat het zelfde in de instantie van de Auteur van AEM in de configuratie van de Factory van de Component van het Rapport van de Tendens van de **Plaats Social van de Component** is gevormd.
+Als rapporten niet worden weergegeven in een instantie van AEM-auteur, controleert u of er aanpassingen zijn, zoals URL-toewijzing bij instantie Publiceren. Als de afbeelding URL slechts op AEM wordt gedaan publiceer instantie van de communautaire plaats, zorg ervoor dat het zelfde in de instantie van de Auteur AEM in **de Configuratie van de Component van het Rapport Sociale van de Tendens van de Plaats** is gevormd.
 
 ![URL-toewijzing op AEM-auteur](assets/sitetrend.png)

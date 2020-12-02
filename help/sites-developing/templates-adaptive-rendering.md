@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f5cb0e98-0d6e-4f14-9b94-df1a9d8cbe5b
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '488'
+ht-degree: 0%
 
 ---
 
@@ -34,21 +37,21 @@ Onthoud dat u apparaatgroepen instelt:
 
 >[!NOTE]
 >
->De **responsieve apparaten** voor de apparaatgroep hebben nooit een kiezer omdat apparaten die worden herkend als ondersteunende responsieve ontwerpapparaten, geen adaptieve lay-out nodig hebben
+>De apparaatgroep **Responsieve apparaten** zal nooit een kiezer hebben omdat apparaten die worden herkend als ondersteunend responsief ontwerp, geen adaptieve lay-out nodig hebben
 
 ## Configuratie {#configuration}
 
 Aangepaste renderingkiezers kunnen worden geconfigureerd voor bestaande apparaatgroepen of voor [groepen die u zelf hebt gemaakt.](/help/sites-developing/mobile.md#device-groups)
 
-Voor dit voorbeeld, gaan wij de bestaande **Slimme Telefoons** van de apparatengroep vormen om een adaptieve teruggevende selecteur als deel van het malplaatje van de Pagina **van de** Ervaring binnen Wij.Retail te hebben.
+In dit voorbeeld configureren we de bestaande apparaatgroep **Slimme telefoons** om een adaptieve renderingkiezer te hebben als onderdeel van de sjabloon **Experience Page** in We.Retail.
 
 1. Bewerk de apparaatgroep waarvoor een adaptieve kiezer nodig is in `http://localhost:4502/miscadmin#/etc/mobile/groups`
 
-   Stel de optie Emulator **uitschakelen** in en sla deze op.
+   Stel de optie **Emulator** uitschakelen in en sla deze op.
 
    ![chlimage_1-157](assets/chlimage_1-157.png)
 
-1. De kiezer is beschikbaar voor de **Blackberry** en **iPhone 4** , op voorwaarde dat de apparaatgroep **Smart Phone** in de volgende stappen wordt toegevoegd aan de sjabloon- en paginastructuren.
+1. De kiezer is beschikbaar voor de **Blackberry** en **iPhone 4**, op voorwaarde dat de apparaatgroep **Smart Phone** in de volgende stappen wordt toegevoegd aan de sjabloon- en paginastructuren.
 
    ![chlimage_1-158](assets/chlimage_1-158.png)
 
@@ -62,19 +65,19 @@ Voor dit voorbeeld, gaan wij de bestaande **Slimme Telefoons** van de apparateng
 
    ![chlimage_1-159](assets/chlimage_1-159.png)
 
-1. Met behulp van CRX DE Lite kunt u de apparaatgroep gebruiken op uw site door deze toe te voegen aan de tekenreekseigenschap met meerdere waarden `cq:deviceGroups` op de structuur van uw site.
+1. Met behulp van CRX DE Lite, laat u de apparaatgroep die op uw site wordt gebruikt toe door deze toe te voegen aan de eigenschap multivalue string `cq:deviceGroups` op de structuur van uw site.
 
    `/content/<your-site>/jcr:content`
 
-   Bijvoorbeeld als wij de het apparatengroep van de **Slimme Telefoon** willen toestaan:
+   Bijvoorbeeld als wij de **Slimme Telefoon** apparatengroep willen toestaan:
 
    `/content/we-retail/jcr:content`
 
    ![chlimage_1-160](assets/chlimage_1-160.png)
 
-Nu wanneer het gebruiken van de [mededinger](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints) in de paginaredacteur (zoals wanneer [het wijzigen van de lay-out](/help/sites-authoring/responsive-layout.md)) en u een apparaat van de gevormde apparatengroep kiest, zal de pagina met een selecteur als deel van URL worden teruggegeven.
+Wanneer u nu de [emulator](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints) in de pagina-editor gebruikt (bijvoorbeeld wanneer [de layout wijzigt](/help/sites-authoring/responsive-layout.md)) en u een apparaat van de geconfigureerde apparaatgroep kiest, wordt de pagina weergegeven met een kiezer als onderdeel van de URL.
 
-In ons voorbeeld wordt de pagina, wanneer u een pagina bewerkt op basis van de sjabloon **Experience Page** en iPhone 4 kiest in de emulator, weergegeven met de kiezer in `arctic-surfing-in-lofoten.smart.html` plaats van `arctic-surfing-in-lofoten.html`
+In ons voorbeeld wordt bij het bewerken van een pagina op basis van de sjabloon **Experience Page** en het kiezen van iPhone 4 in de emulator de pagina weergegeven met daarin de kiezer als `arctic-surfing-in-lofoten.smart.html` in plaats van `arctic-surfing-in-lofoten.html`
 
 De pagina kan ook rechtstreeks worden aangeroepen met deze kiezer.
 

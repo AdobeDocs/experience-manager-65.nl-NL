@@ -18,52 +18,52 @@ ht-degree: 0%
 ---
 
 
-# Stemmen gebruiken {#using-voting}
+# Stemmen {#using-voting} gebruiken
 
-De `Voting` component is een nuttig hulpmiddel dat communautaire leden toestaat om een bepaald stuk van inhoud, zoals een antwoord binnen een component te schatten QnA. Met de `Voting` component selecteren de leden pijlen omhoog of omlaag om hun mening aan te geven.
+De `Voting` component is een nuttig hulpmiddel dat communautaire leden toestaat om een bepaald stuk van inhoud, zoals een antwoord binnen een component te schatten QnA. Met de component `Voting` selecteren de leden pijlen omhoog of omlaag om hun mening aan te geven.
 
 ## Stemmen toevoegen aan een pagina {#adding-voting-to-a-page}
 
-Als u een `Voting` component in de modus Schrijven aan een pagina wilt toevoegen, gebruikt u de componentbrowser om de component te zoeken `Communities / Voting` en naar de juiste positie op een pagina te slepen, zoals een positie ten opzichte van de functie waarop gebruikers kunnen stemmen.
+Als u een component `Voting` in de modus Schrijver wilt toevoegen aan een pagina, gebruikt u de componentbrowser om `Communities / Voting` te zoeken en deze naar de juiste positie op een pagina te slepen, zoals een positie ten opzichte van de functie waarop gebruikers kunnen stemmen.
 
-Ga voor de benodigde informatie naar [Community Components Basics](basics.md).
+Voor noodzakelijke informatie, bezoek [de Grondbeginselen van Componenten van Gemeenschappen](basics.md).
 
-Wanneer de [vereiste client-side bibliotheken](essentials-voting.md#essentials-for-client-side) worden opgenomen, wordt de `Voting` component op deze manier weergegeven.
+Als de [vereiste client-side bibliotheken](essentials-voting.md#essentials-for-client-side) worden opgenomen, wordt de `Voting`-component op deze manier weergegeven.
 
 ![stemcomponent](assets/voting-component.png)
 
-## Stemmen configureren {#configuring-voting}
+## Stemmen {#configuring-voting} configureren
 
-Selecteer de geplaatste `Voting` component die u wilt openen en selecteer het `Configure` pictogram waarmee het dialoogvenster Bewerken wordt geopend.
+Selecteer de geplaatste `Voting` component en selecteer `Configure` pictogram dat het Edit dialoog opent.
 
 ![vormen](assets/configure-new.png)
 
-Geef onder het **[!UICONTROL Texts & Labels]** tabblad de eigenschappen op die worden gebruikt voor het opnemen van stemmen.
+Geef onder het tabblad **[!UICONTROL Texts & Labels]** de eigenschappen op die worden gebruikt voor het opnemen van stemmen.
 
 ![stemlabel](assets/voting-label.png)
 
 * **[!UICONTROL Positive Response Label]**
 
-   (*Vereist*) De interne eigenschapnaam voor een positieve reactie.
+   (*Required*) de interne bezitsnaam voor een positieve reactie.
 
 * **[!UICONTROL Negative Response Label]**
 
-   (*Vereist*) De interne eigenschapnaam voor een negatieve reactie.
+   (*Required*) de interne bezitsnaam voor een negatieve reactie.
 
 * **[!UICONTROL Tally Name]**
 
-   (*Vereist*) De interne, identificeerbare eigenschapsnaam voor dit geval van een stemcomponent.
+   (*Required*) De interne, identificeerbare bezitsnaam voor deze instantie van een stemcomponent.
 
-## Ervaring met sitebezoekers {#site-visitor-experience}
+## Ervaring {#site-visitor-experience} voor bezoekers van site
 
 ### Leden {#members}
 
 De leden kunnen slechts eenmaal stemmen, maar kunnen te allen tijde van stemming veranderen.
 
-### Anoniem {#anonymous}
+### Anonieme {#anonymous}
 
 Anonieme stemming wordt niet ondersteund. Sitebezoekers moeten zich registreren (lid worden) en zich aanmelden om eenmaal aan de stemming deel te nemen.
 
-## Additional Information {#additional-information}
+## Aanvullende informatie {#additional-information}
 
-Meer informatie vindt u op de pagina [Stemmateriaal](essentials-voting.md) voor ontwikkelaars.
+Meer informatie vindt u op de pagina [StemEssentials](essentials-voting.md) voor ontwikkelaars.

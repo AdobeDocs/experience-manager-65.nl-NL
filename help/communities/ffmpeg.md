@@ -18,17 +18,17 @@ ht-degree: 1%
 ---
 
 
-# MPEG voor Gemeenschappen {#ffmpeg-for-communities}
+# mpeg voor Gemeenschappen {#ffmpeg-for-communities}
 
 ## Overzicht {#overview}
 
-mpeg is een oplossing voor het converteren en streamen van audio en video en wordt, indien geïnstalleerd, gebruikt voor de juiste transcodering van [video-elementen](../../help/sites-authoring/default-components-foundation.md#video) en voor de functie Enablement van AEM Communities.
+mpeg is een oplossing voor het converteren en streamen van audio en video en wordt, indien geïnstalleerd, gebruikt voor de juiste transcodering van [video-elementen](../../help/sites-authoring/default-components-foundation.md#video) en voor de functie voor activering van AEM-gemeenschappen.
 
 mpeg wordt gebruikt in de auteursomgeving om meta-gegevens voor geupload enablement middelen te verkrijgen evenals een duimnagel te produceren om te tonen wanneer het vermelden van het enablement middel.
 
-## Mpeg installeren {#installing-ffmpeg}
+## Mpeg {#installing-ffmpeg} installeren
 
-MPEG moet worden geïnstalleerd op de server(s) die als host fungeert voor de AEM- *auteur* -instantie(s).
+MPEG moet worden geïnstalleerd op de server(s) die als host fungeert voor de AEM *auteur*-instantie(s).
 
 1. Ga naar [https://www.ffmpeg.org](https://www.ffmpeg.org/).
 1. Download de nieuwste versie van MPEG voor uw specifieke omgeving (Macintosh, Windows of Linux).
@@ -43,31 +43,31 @@ MPEG moet worden geïnstalleerd op de server(s) die als host fungeert voor de AE
 
    * Bijvoorbeeld, `ffmpeg -version`.
 
-## MPEG Transcoding Service configureren {#configure-ffmpeg-transcoding-service}
+## MPEG Transcoding Service {#configure-ffmpeg-transcoding-service} configureren
 
-Wanneer MPEG wordt geïnstalleerd, worden standaard meerdere uitvoeringen geconfigureerd (transcoderingen) volgens de [!UICONTROL DAM Update Asset] workflowdefinitie.
+Wanneer MPEG wordt geïnstalleerd, worden standaard meerdere uitvoeringen geconfigureerd (transcoderingen) volgens de [!UICONTROL DAM Update Asset]-workflowdefinitie.
 
 Aangezien de transcoderingen CPU-intensief zijn, wordt aangeraden de lijst met doeluitvoeringen te wijzigen. In de meeste gevallen is transcodering niet nodig.
 
-U kunt als volgt de [!UICONTROL DAM Update Asset] workflow wijzigen en in dit voorbeeld de transcodering uitschakelen:
+U kunt als volgt de [!UICONTROL DAM Update Asset]-workflow wijzigen en in dit voorbeeld de transcodering uitschakelen:
 
 * Meld u aan bij de instantie van de auteur met beheerdersrechten.
-* Navigeer vanuit de globale navigatie naar **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
-* Zoeken **[!UICONTROL DAM Update Asset]**.
+* Navigeer vanuit globale navigatie naar **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
+* **[!UICONTROL DAM Update Asset]** zoeken.
 * Dubbelklik om de workflow voor bewerking te openen in de klassieke gebruikersinterface.
 
    Resulterende locatie: [http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html](http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html)
 
-* Dubbelklik op de **[!UICONTROL FFmpeg transcoding]** stap om het dialoogvenster Step Properties te openen.
-* Onder het **[!UICONTROL Process]** tabblad:
+* Dubbelklik op de stap **[!UICONTROL FFmpeg transcoding]** om het dialoogvenster Step Properties te openen.
+* Onder het tabblad **[!UICONTROL Process]**:
 
-   * **[!UICONTROL Arugments]**: Wis alle ingangen om transcoderende Standaardwaarden onbruikbaar te maken: `profile:format_ogg,profile:format_aac,profile:format_flv,profile:format_aac_ie`
+   * **[!UICONTROL Arugments]**: Wis alle ingangen om transcoderende Standaardwaarden onbruikbaar te maken:  `profile:format_ogg,profile:format_aac,profile:format_flv,profile:format_aac_ie`
 
    ![chlimage_1-372](assets/chlimage_1-372.png)
 
-* Selecteer **[!UICONTROL OK]** om het `Step Properties` dialoogvenster te sluiten.
+* Selecteer **[!UICONTROL OK]** om het dialoogvenster `Step Properties` te sluiten.
 
-* Selecteer deze optie **[!UICONTROL Save]** om de `DAM Update Asset` workflow op te slaan.
+* Selecteer **[!UICONTROL Save]** om het `DAM Update Asset` werkschema te bewaren.
 
 
 

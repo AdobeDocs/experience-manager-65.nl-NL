@@ -12,20 +12,23 @@ discoiquuid: 2de88b55-dda9-4ccf-ad4d-dd67943ef610
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 974d58efa560b90234d5121a11bdb445c7bf94cf
+workflow-type: tm+mt
+source-wordcount: '110'
+ht-degree: 0%
 
 ---
 
 
 # Toewijzingsfunctie {#assignments-feature}
 
-De taken van Enablement en de componenten van de Catalogus [van](/help/communities/catalog.md) Enablement die in de groep van Gemeenschappen in componentenbrowser worden gevonden zijn componenten van een [enablement gemeenschap](/help/communities/overview.md#enablement-community).
+De toewijzingen van Enablement en de [componenten van de Catalogus van Enablement](/help/communities/catalog.md) die in de groep van Gemeenschappen in componentenbrowser worden gevonden zijn componenten van [enablement community](/help/communities/overview.md#enablement-community).
 
-De component van Toewijzingen Enablement staat het momenteel ondertekende communautaire lid (student) toe om tot hun toegewezen [inschrijvingsmiddelen](/help/communities/resources.md)toegang te hebben.
+Met de component Enablement Assignment kan het momenteel ingetekende communitylid (student) toegang krijgen tot de toegewezen [enablement resources](/help/communities/resources.md).
 
-Van het [Begonnen worden met Gemeenschappen AEM voor Enablement](/help/communities/getting-started-enablement.md) leerprogramma, zie de mening van een lid van toewijzingen en catalogi in de [Ervaring de Gepubliceerde sectie van de Plaats](/help/communities/enablement-published-site.md) .
+Van [Aan de slag met AEM Communities voor Enablement](/help/communities/getting-started-enablement.md) leerprogramma, zie de mening van een lid van toewijzingen en catalogi in [Ervaar de Gepubliceerde Plaats](/help/communities/enablement-published-site.md) sectie.
 
-## Additional Information {#additional-information}
+## Aanvullende informatie {#additional-information}
 
-Voor meer informatie, zie de pagina van de Hoofdzaak [van](/help/communities/essentials-assignments.md) Taken voor ontwikkelaars.
+Zie de pagina [Hoofdzaak van toewijzingen](/help/communities/essentials-assignments.md) voor ontwikkelaars voor meer informatie.
 
 De [toewijzingsfunctie](/help/communities/functions.md#assignments-function) is beschikbaar tijdens het maken van een [communitysite](/help/communities/sites-console.md).

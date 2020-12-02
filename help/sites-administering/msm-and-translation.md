@@ -1,8 +1,8 @@
 ---
 title: Websitebeheer
 seo-title: Websitebeheer
-description: Leer hoe u meertalige websites beheert in AEM.
-seo-description: Leer hoe u meertalige websites beheert in AEM.
+description: Leer hoe u meertalige websites in AEM beheert.
+seo-description: Leer hoe u meertalige websites in AEM beheert.
 uuid: a32d458b-a5ad-46ef-a68c-4717c63b4bdd
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: fabaa3e8-1657-4ed4-abb2-990117bec39c
 translation-type: tm+mt
 source-git-commit: 0885fb6eb6b6a6b8fefd522b2656c8f64e0a537e
+workflow-type: tm+mt
+source-wordcount: '351'
+ht-degree: 0%
 
 ---
 
@@ -27,18 +30,18 @@ De volgende beheergereedschappen zijn beschikbaar voor het beheer van websites e
 
    * [Inhoud vertalen voor meertalige sites](/help/sites-administering/translation.md)
 
-* Deze twee functies kunnen worden gecombineerd om tegemoet te komen aan zowel [multinationale als meertalige](#multinational-and-multilingual-sites)websites.
+* Deze twee eigenschappen kunnen worden gecombineerd om voor websites te behandelen die zowel [Multinationaal als Meertalig](#multinational-and-multilingual-sites) zijn.
 
 ## Meertalige en meertalige sites {#multinational-and-multilingual-sites}
 
-U kunt op efficiënte wijze inhoud maken voor multinationale en meertalige sites door het gecombineerde gebruik van de Multi-Site Manager en de vertaalworkflow. Maak een stramiensite in één taal, voor een specifiek land, en gebruik die inhoud als basis voor de andere sites, waar nodig met vertaling:
+U kunt op efficiënte wijze inhoud maken voor multinationale en meertalige sites door het gecombineerde gebruik van de Multi-Site Manager en de vertaalworkflow. Maak een master site in één taal, voor een specifiek land, en gebruik die inhoud als basis voor de andere sites, waar nodig met vertaling:
 
-* [Vertaal](/help/sites-administering/translation.md) de hoofdsite in verschillende talen.
+* [](/help/sites-administering/translation.md) Vertaal de master site in verschillende talen.
 
-* Gebruik [beheer](/help/sites-administering/msm.md) van meerdere sites om:
+* [Beheer van meerdere sites](/help/sites-administering/msm.md) gebruiken om:
 
-   * Gebruik inhoud van de hoofdsite en de vertalingen opnieuw om sites te maken voor andere landen en culturen.
-   * Zorg ervoor dat u het gebruik van Multi-Site Manager beperkt tot inhoud binnen één taal, bijvoorbeeld Engelse master -> Engelse taalbijkantoren in landsites, Franse master -> Franse taalbijkantoren in landsites.
+   * Gebruik inhoud van de master site en de vertalingen opnieuw om sites te maken voor andere landen en culturen.
+   * Zorg ervoor dat u het gebruik van Multi-Site Manager beperkt tot inhoud binnen één taal, bijvoorbeeld master Engels -> vertakkingen van Engelse talen in landsites, master Frans -> vertakkingen van Franse talen in landsites.
    * Koppel zo nodig elementen van de live kopieën los om lokalisatiegegevens toe te voegen.
 
 In het volgende diagram ziet u hoe de hoofdconcepten elkaar snijden (maar niet alle niveaus/elementen in kwestie weergeven):
@@ -49,8 +52,9 @@ In het volgende diagram ziet u hoe de hoofdconcepten elkaar snijden (maar niet a
 >
 >In dit, en vergelijkbaar, scenario&#39;s MSM beheert niet de verschillende taalversies als dusdanig.
 >
->* [MSM](/help/sites-administering/msm.md) beheert de plaatsing van vertaalde inhoud van een blauwdruk (b.v. een globale meester) aan de levende exemplaren (b.v. de lokale plaatsen), binnen de grenzen van een taal.
->* Met de [vertaalintegratiemogelijkheden](/help/sites-administering/translation.md) van AEM, in combinatie met vertaalbeheerservices van derden, worden de talen beheerd en wordt inhoud in deze verschillende talen vertaald.
+>* [Het ](/help/sites-administering/msm.md) MSMbeheer de plaatsing van vertaalde inhoud van een blauwdruk (b.v. een algemeen master) aan levende exemplaren (b.v. de lokale plaatsen), binnen de grenzen van een taal.
+>* Met de [integratiemogelijkheden van AEM voor vertaling](/help/sites-administering/translation.md), in combinatie met vertaalbeheerservices van derden, worden de talen beheerd en wordt inhoud in deze verschillende talen vertaald.
+
 >
 >
 Voor geavanceerdere gebruiksgevallen kan MSM ook voor alle taalmeesters worden gebruikt.
@@ -60,8 +64,10 @@ Voor geavanceerdere gebruiksgevallen kan MSM ook voor alle taalmeesters worden g
 >Voor alle gebruiksgevallen is het raadzaam de volgende aanbevolen procedures te lezen:
 >
 >* [beste praktijken voor MSM](/help/sites-administering/msm-best-practices.md); met name:
->
->   * [Site maken](/help/sites-administering/msm-best-practices.md#create-site)
->   * [MSM- en meertalige websites](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
+   >
+   >   
+   * [Site maken](/help/sites-administering/msm-best-practices.md#create-site)
+   >   * [MSM- en meertalige websites](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
 >
 >* [Aanbevolen procedures voor vertaling](/help/sites-administering/tc-bp.md)
+

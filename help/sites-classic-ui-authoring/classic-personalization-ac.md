@@ -1,8 +1,8 @@
 ---
-title: Werken met Adobe-campagne
-seo-title: Werken met Adobe-campagne
-description: De Campagne van Adobe is een reeks oplossingen die u laat personaliseren en campagnes over al uw online en off-line kanalen leveren.
-seo-description: De Campagne van Adobe is een reeks oplossingen die u laat personaliseren en campagnes over al uw online en off-line kanalen leveren.
+title: Werken met Adobe Campaign
+seo-title: Werken met Adobe Campaign
+description: Adobe Campaign is een reeks oplossingen waarmee u campagnes kunt personaliseren en leveren op al uw online en offline kanalen.
+seo-description: Adobe Campaign is een reeks oplossingen waarmee u campagnes kunt personaliseren en leveren op al uw online en offline kanalen.
 uuid: d216ce8d-c9e5-4a3c-bd25-a922770f5b6c
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,26 +11,29 @@ content-type: reference
 discoiquuid: a62ddf8b-97ea-40b9-9c3b-0922fe134567
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '149'
+ht-degree: 0%
 
 ---
 
 
-# Werken met Adobe-campagne{#working-with-adobe-campaign}
+# Werken met Adobe Campaign{#working-with-adobe-campaign}
 
-De Campagne van Adobe is een reeks oplossingen die u laat personaliseren en campagnes over al uw online en off-line kanalen leveren.
+Adobe Campaign is een reeks oplossingen waarmee u campagnes kunt personaliseren en leveren op al uw online en offline kanalen.
 
-In deze documentatie wordt beschreven hoe u met Adobe Campaign werkt:
+In deze documentatie wordt beschreven hoe u met Adobe Campaign kunt werken:
 
-* Adobe Campagne 6.1, de on-premise oplossing.
-* Adobe Campaign Standard, de oplossing op basis van abonnementen.
+* Adobe Campaign 6.1, de on-premise oplossing.
+* Adobe Campaign Standard, de op abonnementen gebaseerde oplossing.
 
 Zie het volgende:
 
-* [Werken met Adobe Campagne 6.1 en Adobe Campaign Standard](/help/sites-classic-ui-authoring/classic-personalization-ac-campaign.md)
-* [Adobe-campagnecomponenten](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md)
-* [Adobe-campagne als doel instellen](/help/sites-classic-ui-authoring/classic-personalization-ac-target.md)
+* [Werken met Adobe Campaign 6.1 en Adobe Campaign Standard](/help/sites-classic-ui-authoring/classic-personalization-ac-campaign.md)
+* [Adobe Campaign-componenten](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md)
+* [Je Adobe Campaign als doelgroep instellen](/help/sites-classic-ui-authoring/classic-personalization-ac-target.md)
 
-U moet AEM al eerder hebben [geïntegreerd met Adobe Campaign](/help/sites-administering/campaign.md).
+U moet [geïntegreerde AEM met Adobe Campaign](/help/sites-administering/campaign.md) hebben.
 
 Raadpleeg de volgende onderwerpen als u uw integratie wilt aanpassen:
 

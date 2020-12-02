@@ -34,14 +34,17 @@ In dit artikel wordt uitgelegd hoe u een recorddocument voor adaptieve formulier
 
 Wanneer u een adaptief formulier maakt, kunt u een formuliermodel selecteren. U kunt kiezen uit de volgende opties:
 
-* [Met formuliersjablonen](../../forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-an-xfa-form-template)kunt u een XFA-sjabloon selecteren voor uw aangepaste formulier. Als u een XFA-sjabloon selecteert, kunt u het bijbehorende XDP-bestand gebruiken voor een recorddocument, zoals hierboven beschreven.
+* [FormuliersjablonenHiermee kunt ](../../forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-an-xfa-form-template)
+u een XFA-sjabloon selecteren voor uw aangepaste formulier. Als u een XFA-sjabloon selecteert, kunt u het bijbehorende XDP-bestand gebruiken voor een recorddocument, zoals hierboven beschreven.
 
-* [Met XML-schema](../../forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-xml-or-json-schema)kunt u een XML-schemadefinitie selecteren voor het aangepaste formulier. Wanneer u een XML-schema selecteert voor het aangepaste formulier, kunt u:
+* [Met XML-](../../forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-xml-or-json-schema)
+schema kunt u een XML-schemadefinitie selecteren voor het aangepaste formulier. Wanneer u een XML-schema selecteert voor het aangepaste formulier, kunt u:
 
    * Koppel een XFA-sjabloon voor een record. Zorg ervoor dat de gekoppelde XFA-sjabloon hetzelfde XML-schema gebruikt als het aangepaste formulier
    * Automatisch een recorddocument genereren
 
-* GeenHiermee kunt u een adaptief formulier maken zonder een formuliermodel. Het recorddocument wordt automatisch gegenereerd voor het aangepaste formulier.
+* Geen
+Hiermee kunt u een adaptief formulier maken zonder een formuliermodel. Het recorddocument wordt automatisch gegenereerd voor het aangepaste formulier.
 
 Wanneer u een formuliermodel selecteert, configureert u het document met records met de opties die beschikbaar zijn onder Document of Record Template Configuration. Zie [Document of Record Template Configuration](#document-of-record-template-configuration).
 
@@ -57,21 +60,21 @@ Automatisch gegenereerde recorddocumenten hebben de volgende voordelen:
 * Hiermee kunt u verschillende stijlen en vormgeving proberen met verschillende basissjablonen en de beste stijl en vormgeving kiezen voor Document of Record. Stijlvormgeving is optioneel. Als u geen stijl opgeeft, worden systeemstijlen standaard ingesteld.
 * Hiermee zorgt u ervoor dat elke wijziging in het formulier direct wordt doorgevoerd in het document met de record.
 
-## Componenten die automatisch een recorddocument genereren {#components-to-automatically-generate-a-document-of-record}
+## Componenten om automatisch een document met records {#components-to-automatically-generate-a-document-of-record} te genereren
 
 Voor het genereren van een recorddocument voor adaptieve formulieren hebt u de volgende componenten nodig:
 
-**Adaptief formulier** , adaptief formulier, waarvoor u een record wilt genereren.
+**Adaptief** formulierAdaptief formulier waarvoor u een record wilt genereren.
 
 **Basissjabloon (aanbevolen)** XFA-sjabloon (XDP-bestand) gemaakt in AEM Designer. De malplaatje van de basis wordt gebruikt om het stileren en het brandmerken informatie voor document van verslagmalplaatje te specificeren.
 
-Zie [Basissjabloon van een record](#base-template-of-a-document-of-record)
+Zie [Basissjabloon van een document van record](#base-template-of-a-document-of-record)
 
 >[!NOTE]
 >
 >De basissjabloon van een document met record wordt ook wel de meta-sjabloon van een document met record genoemd.
 
-**Document van een recordsjabloon** XFA-sjabloon (XDP-bestand) gegenereerd uit een adaptief formulier.
+**Document van een** recordsjabloonXFA-sjabloon (XDP-bestand) die is gegenereerd op basis van een adaptief formulier.
 
 Zie [Document of Record Template Configuration](#document-of-record-template-configuration).
 
@@ -183,7 +186,7 @@ In de volgende secties wordt beschreven hoe adaptieve formulierelementen worden 
   </tr>
   <tr>
    <td>Deelvenster<br /> </td>
-   <td>Subform<br /> </td>
+   <td>Subformulier<br /> </td>
    <td>Herhalbaar deelvenster verwijst naar herhaalbaar subformulier.</td>
   </tr>
  </tbody>
@@ -204,11 +207,11 @@ In de volgende secties wordt beschreven hoe adaptieve formulierelementen worden 
 
 De tabelcomponenten voor adaptieve formulieren, zoals koptekst, voettekst en rijtoewijzing, voor de overeenkomstige XFA-componenten. U kunt herhaalbare deelvensters toewijzen aan tabellen in een document met records.
 
-## Basissjabloon van een record {#base-template-of-a-document-of-record}
+## Basissjabloon van een document met record {#base-template-of-a-document-of-record}
 
 De basissjabloon biedt opmaak- en weergavegegevens voor documenten met een record. Hiermee kunt u de standaardweergave van automatisch gegenereerd document met record aanpassen. U wilt bijvoorbeeld het bedrijfslogo in de koptekst en copyrightinformatie in de voettekst van het document met de record plaatsen. De master pagina van het basissjabloon wordt gebruikt als een master pagina voor het document met een recordsjabloon. De master pagina kan informatie bevatten, zoals paginakoptekst, voettekst en paginanummer, die u kunt toepassen op het recorddocument. U kunt dergelijke informatie op document van verslag toepassen gebruikend basissjabloon voor auto het produceren van document van verslag. Met een basissjabloon kunt u de standaardeigenschappen van velden wijzigen.
 
-Volg de conventies [voor](#base-template-conventions) basissjablonen wanneer u basissjabloon ontwerpt.
+Volg [Basissjabloonconventies](#base-template-conventions) wanneer u basissjabloon ontwerpt.
 
 ## Basissjabloonconventies {#base-template-conventions}
 
@@ -216,26 +219,26 @@ Een basissjabloon wordt gebruikt om de kop-, voettekst-, opmaak- en vormgeving v
 
 **Master paginaconventies**
 
-* In het basissjabloon moet u het basissubformulier een naam geven `AF_METATEMPLATE` en de master pagina een naam geven `AF_MASTERPAGE`.
+* In het basissjabloon moet u het basissubformulier de naam `AF_METATEMPLATE` geven en de master pagina als `AF_MASTERPAGE`.
 
-* De master pagina met de naam `AF_MASTERPAGE` onder het `AF_METATEMPLATE` basissubformulier krijgt de voorkeur voor het uitnemen van koptekst-, voettekst- en opmaakgegevens.
+* De master pagina met de naam `AF_MASTERPAGE` onder het basissubformulier `AF_METATEMPLATE` krijgt de voorkeur voor het uitnemen van koptekst-, voettekst- en opmaakgegevens.
 
-* Als dit niet het geval `AF_MASTERPAGE` is, wordt de eerste master pagina in de basissjabloon gebruikt.
+* Als `AF_MASTERPAGE` afwezig is, wordt de eerste master pagina gebruikt die in het basissjabloon aanwezig is.
 
 **Opmaakconventies voor velden**
 
-* Als u stijl wilt toepassen op de velden in het document van de record, bevat de basissjabloon velden in het `AF_FIELDSSUBFORM` subformulier onder het `AF_METATEMPLATE` basissubformulier.
+* Als u stijl wilt toepassen op de velden in het document van de record, bevat de basissjabloon velden in het subformulier `AF_FIELDSSUBFORM` onder het basissubformulier `AF_METATEMPLATE`.
 
-* De eigenschappen van deze velden worden toegepast op de velden in het recorddocument. Deze velden moeten voldoen aan de `AF_<name of field in all caps>_XFO` naamgevingsconventie. De veldnaam voor het selectievakje moet bijvoorbeeld `AF_CHECKBOX_XFO`zijn.
+* De eigenschappen van deze velden worden toegepast op de velden in het recorddocument. Deze velden moeten de naamgevingsconventie `AF_<name of field in all caps>_XFO` volgen. De veldnaam voor het selectievakje moet bijvoorbeeld `AF_CHECKBOX_XFO` zijn.
 
 Ga als volgt te werk in AEM Designer om een basissjabloon te maken.
 
 1. Klik op **Bestand > Nieuw**.
-1. Selecteer de optie **Gebaseerd op een sjabloon** .
+1. Selecteer **Gebaseerd op een malplaatje** optie.
 
-1. Selecteer de categorie **Forms - Document of Record** .
-1. Selecteer **DoR-basissjabloon**.
-1. Klik op **Volgende** en geef de vereiste informatie op.
+1. Selecteer de categorie **Forms - Document of Record**.
+1. Selecteer **DoR Basissjabloon**.
+1. Klik **Volgende** en verstrek de vereiste informatie.
 
 1. (Optioneel) Wijzig de opmaak en weergave van velden die u wilt toepassen op de velden in het document met records.
 1. Sla het formulier op.
@@ -258,24 +261,24 @@ Configureer het document met de recordsjabloon van uw formulier, zodat uw klante
 
 Voer de volgende stappen uit om een document van verslag voor adaptieve vormen te vormen:
 
-1. Klik in AEM auteur op **Forms > Forms en Documenten.**
-1. Selecteer een formulier en klik op **Eigenschappen** weergeven.
+1. Klik in AEM auteurinstantie op **Forms > Forms and Documents.**
+1. Selecteer een formulier en klik op **Eigenschappen weergeven**.
 1. Tik in het venster Eigenschappen op **Formuliermodel**.
 U kunt ook een formuliermodel selecteren wanneer u een formulier maakt.
 
    >[!NOTE]
    >
-   >Selecteer op het tabblad Formuliermodel de optie **Schema** of **Geen** in de vervolgkeuzelijst **Selecteren vanuit** . **[!UICONTROL Document of record is not supported for XFA-based or adaptive forms with Form Template as form model.]**
+   >Selecteer op het tabblad Formuliermodel **Schema** of **Geen** in de vervolgkeuzelijst **Selecteren vanuit**. **[!UICONTROL Document of record is not supported for XFA-based or adaptive forms with Form Template as form model.]**
 
 1. Selecteer in het gedeelte Document of Record Template Configuration van het tabblad Formuliermodel een van de volgende opties.
 
-   **Geen** . Selecteer deze optie als u geen document of record wilt configureren voor het formulier.
+   **** GeenSelecteer deze optie als u geen document van verslag voor de vorm wilt vormen.
 
-   **Formuliersjabloon koppelen als Document of Record-sjabloon** Selecteer deze optie als u een XDP-bestand hebt dat u als sjabloon wilt gebruiken voor het document met records. Als u deze optie selecteert, worden alle XDP-bestanden weergegeven die beschikbaar zijn in de AEM Forms-opslagplaats. Selecteer het juiste bestand.
+   **Formuliersjabloon koppelen als Document of Record-** sjabloonSelecteer deze optie als u een XDP-bestand hebt dat u als sjabloon voor het document met records wilt gebruiken. Als u deze optie selecteert, worden alle XDP-bestanden weergegeven die beschikbaar zijn in de AEM Forms-opslagplaats. Selecteer het juiste bestand.
 
    Het geselecteerde XDP-bestand wordt gekoppeld aan het adaptieve formulier.
 
-   **Genereer Document of record** Selecteer deze optie als u een XDP-bestand wilt gebruiken als een basissjabloon voor het definiëren van de opmaak en weergave van het document of de record. Als u deze optie selecteert, worden alle XDP-bestanden weergegeven die beschikbaar zijn in de AEM Forms-opslagplaats. Selecteer het juiste bestand.
+   **Document van** Record genererenSelecteer deze optie als u een XDP-bestand wilt gebruiken als een basissjabloon voor het definiëren van de opmaak en weergave van het document met de record. Als u deze optie selecteert, worden alle XDP-bestanden weergegeven die beschikbaar zijn in de AEM Forms-opslagplaats. Selecteer het juiste bestand.
 
    >[!NOTE]
    >
@@ -284,19 +287,19 @@ U kunt ook een formuliermodel selecteren wanneer u een formulier maakt.
    >
    >
    >    * Het adaptieve formulier is gebaseerd op een schema
-   >    * U gebruikt Formuliersjabloon **koppelen als de optie Document of Record Sjabloon** voor recorddocument
+   >    * U gebruikt **Formuliersjabloon koppelen als de optie Document of Record Template** voor het document met record
 
 
-1. Klik op **Gereed.**
+1. Klik **Gereed.**
 
-## De brandinggegevens in het document van de record aanpassen {#customize-the-branding-information-in-document-of-record}
+## De brandinggegevens in het document met records {#customize-the-branding-information-in-document-of-record} aanpassen
 
 Tijdens het genereren van een recorddocument kunt u de brandinggegevens voor het recorddocument wijzigen op het tabblad Document of Record. Het tabblad Document of Record bevat opties zoals logo, weergave, lay-out, koptekst en voettekst, disclaimer en of u niet het selectievakje en keuzerondjes wilt inschakelen of niet.
 
 Als u de brandinggegevens die u opgeeft op het tabblad Document of Record wilt lokaliseren, moet u ervoor zorgen dat de landinstelling van de browser correct is ingesteld. Voer de volgende stappen uit als u de brandinggegevens van een recorddocument wilt aanpassen:
 
-1. Selecteer een deelvenster (hoofddeelvenster) in het recorddocument en tik op ![configureren](assets/configure.png).
-1. Tik op ![dortab](assets/dortab.png). Het tabblad Document of Record wordt weergegeven.
+1. Selecteer een deelvenster (hoofddeelvenster) in het recorddocument en tik op ![configure](assets/configure.png).
+1. Tik ![dortab](assets/dortab.png). Het tabblad Document of Record wordt weergegeven.
 1. Selecteer de standaardsjabloon of een aangepaste sjabloon voor het weergeven van het document met records. Als u de standaardsjabloon selecteert, wordt een miniatuurvoorvertoning van het recorddocument weergegeven onder de vervolgkeuzelijst Sjabloon.
 
    ![brandingsjabloon](assets/brandingtemplate.png)
@@ -355,27 +358,27 @@ Velden in een deelvenster die zijn gerenderd in een kolomindeling in het documen
 
 Met documenten met recordinstellingen kunt u opties kiezen die u wilt opnemen in het document met records. Een bank accepteert bijvoorbeeld naam, leeftijd, socialezekerheidsnummer en telefoonnummer in een formulier. Het formulier genereert een bankrekeningnummer en filiaalgegevens. U kunt ervoor kiezen alleen de naam, het socialezekerheidsnummer, de bankrekening en de filiaalgegevens in een document met gegevens weer te geven.
 
-Het document met recordinstellingen van een component is beschikbaar onder de eigenschappen. Als u toegang wilt krijgen tot de eigenschappen van een component, selecteert u de component en klikt u op ![cmp](assets/cmppr.png) in de bedekking. De eigenschappen worden vermeld in de zijbalk en u kunt de volgende instellingen erin vinden.
+Het document met recordinstellingen van een component is beschikbaar onder de eigenschappen. Als u toegang wilt krijgen tot de eigenschappen van een component, selecteert u de component en klikt u in de overlay op ![cmp](assets/cmppr.png). De eigenschappen worden vermeld in de zijbalk en u kunt de volgende instellingen erin vinden.
 
 **Instellingen op veldniveau**
 
-* **Uitsluiten van document van record**: Als u de eigenschap true instelt, wordt het veld van het recorddocument uitgesloten. Dit is een scripteigenschap met de naam `excludeFromDoR`. Het gedrag ervan hangt af van de eigenschap **Velden uitsluiten van DoR als de eigenschap voor het verborgen** formulierniveau.
+* **Uitsluiten van document van record**: Als u de eigenschap true instelt, wordt het veld van het recorddocument uitgesloten. Dit is een scriptbare eigenschap met de naam `excludeFromDoR`. Het gedrag ervan is afhankelijk van **Velden uitsluiten van DoR indien verborgen** eigenschap op formulierniveau.
 
-* **Deelvenster weergeven als tabel:** Als u de eigenschap instelt, wordt het deelvenster weergegeven als een tabel in een document met record als het deelvenster minder dan 6 velden bevat. Alleen van toepassing op het deelvenster.
-* **Titel van document of record uitsluiten:** Als u de eigenschap instelt, wordt de titel van het deelvenster/de tabel uitgesloten van het recorddocument. Alleen van toepassing op het deelvenster en de tabel.
-* **Beschrijving uitsluiten van document van record:** Als u de eigenschap instelt, wordt de beschrijving van het deelvenster/de tabel niet opgenomen in het recorddocument. Alleen van toepassing op het deelvenster en de tabel.
+* **Deelvenster weergeven als tabel:als u de eigenschap** instelt, wordt het deelvenster weergegeven als een tabel in een document met een record als het deelvenster minder dan 6 velden bevat. Alleen van toepassing op het deelvenster.
+* **Titel uitsluiten van document van record:** door de eigenschap in te stellen, wordt de titel van het deelvenster/de tabel uitgesloten van het document met records. Alleen van toepassing op het deelvenster en de tabel.
+* **Beschrijving uitsluiten van document van record:** door de eigenschap in te stellen wordt de beschrijving van het deelvenster/de tabel uitgesloten van het document met records. Alleen van toepassing op het deelvenster en de tabel.
 
 **Instellingen voor formulierniveau**
 
-* **Inclusief niet-gebonden velden in DoR:** Als u de eigenschap instelt, worden niet-gebonden velden van het op schema gebaseerde adaptieve formulier in het document of record opgenomen. Standaard is dit waar.
-* **Velden uitsluiten van DoR indien verborgen:** Als u de eigenschap instelt, wordt de werking van de veldeigenschap &#39;Uitsluiten van document van record&#39; genegeerd als deze niet true is. Als velden verborgen zijn op het moment dat het formulier wordt verzonden, worden ze uitgesloten van het document met record als de eigenschap is ingesteld op true, mits de eigenschap &#39;Uitsluiten van document van record&#39; niet is ingesteld.
+* **Inclusief niet-gebonden velden in DoR:** Als u de eigenschap instelt, worden niet-gebonden velden van een adaptief formulier op basis van schema opgenomen in het document met records. Standaard is dit waar.
+* **Velden uitsluiten van DoR indien verborgen:het** instellen van de eigenschap heeft voorrang op het gedrag van de veldeigenschap &#39;Uitsluiten van document van record&#39; wanneer deze niet true is. Als velden verborgen zijn op het moment dat het formulier wordt verzonden, worden ze uitgesloten van het document met record als de eigenschap is ingesteld op true, mits de eigenschap &#39;Uitsluiten van document van record&#39; niet is ingesteld.
 
-## Belangrijke overwegingen bij het werken met een document {#key-considerations-when-working-with-document-of-record}
+## Belangrijke overwegingen bij het werken met een document met record {#key-considerations-when-working-with-document-of-record}
 
 Houd rekening met de volgende overwegingen en beperkingen wanneer u werkt aan een document of record voor adaptieve formulieren.
 
 * Document met recordsjablonen ondersteunt geen RTF-bestanden. Alle RTF-tekst in het statische adaptieve formulier of in de informatie die door de eindgebruiker is ingevuld, wordt daarom als onbewerkte tekst weergegeven in het document met de record.
 * Documentfragmenten in een adaptieve vorm worden niet weergegeven in het recorddocument. Aangepaste formulierfragmenten worden echter ondersteund.
 * Inhoudbinding in document van record die is gegenereerd voor een adaptief formulier op basis van een XML-schema, wordt niet ondersteund.
-* De gelokaliseerde versie van document van verslag wordt gecreeerd op bestelling voor een scène wanneer de gebruiker om de teruggave van het document van verslag verzoekt. De lokalisatie van een recorddocument vindt plaats in combinatie met de lokalisatie van het adaptieve formulier. Zie [AEM vertaalworkflow gebruiken voor het lokaliseren van adaptieve formulieren en recorddocumenten](/help/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.md)voor meer informatie over de lokalisatie van documenten met opnamen en adaptieve formulieren.
+* De gelokaliseerde versie van document van verslag wordt gecreeerd op bestelling voor een scène wanneer de gebruiker om de teruggave van het document van verslag verzoekt. De lokalisatie van een recorddocument vindt plaats in combinatie met de lokalisatie van het adaptieve formulier. Zie [AEM vertaalworkflow gebruiken voor het lokaliseren van adaptieve formulieren en recorddocumenten](/help/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.md) voor meer informatie over de lokalisatie van documenten en adaptieve formulieren.
 

@@ -18,21 +18,21 @@ ht-degree: 0%
 ---
 
 
-# Aangepaste indelingscomponenten voor aangepaste formulieren maken{#creating-custom-layout-components-for-adaptive-forms}
+# Aangepaste indelingscomponenten maken voor aangepaste formulieren{#creating-custom-layout-components-for-adaptive-forms}
 
 ## Vereiste {#prerequisite}
 
-Kennis van lay-outs, waarmee u een aangepaste lay-out kunt maken/gebruiken. Zie Lay-out [van deelvenster](../../forms/using/layout-capabilities-adaptive-forms.md)wijzigen.
+Kennis van lay-outs, waarmee u een aangepaste lay-out kunt maken/gebruiken. Zie [Indeling van deelvenster wijzigen](../../forms/using/layout-capabilities-adaptive-forms.md).
 
-## Indelingsonderdeel van deelvenster Adaptief formulier {#adaptive-form-panel-layout-component}
+## Aangepaste component voor lay-out deelvenster Formulier {#adaptive-form-panel-layout-component}
 
 Met de component Indeling van het deelvenster Adaptief formulier bepaalt u hoe adaptieve formuliercomponenten worden ingedeeld in een deelvenster dat relatief is ten opzichte van de gebruikersinterface.
 
-## Een aangepaste deelvensterlay-out maken {#creating-a-custom-panel-layout}
+## Een aangepaste paneellay-out maken {#creating-a-custom-panel-layout}
 
 1. Navigeer naar de locatie `/crx/de`.
 1. Kopieer een deelvensterlay-out van de locatie `/libs/fd/af/layouts/panel` (bijvoorbeeld `tabbedPanelLayout`) naar `/apps` (bijvoorbeeld `/apps/af-custom-layout`).
-1. Wijzig de naam van de layout waarnaar u hebt gekopieerd `customPanelLayout`. Wijzig de eigenschappen van de knooppunten `qtip` en `jcr:description`. Wijzig deze bijvoorbeeld in `Custom layout - Toggle tabs`.
+1. Wijzig de naam van de layout die u naar `customPanelLayout` hebt gekopieerd. Wijzig de eigenschappen van de knooppunten `qtip` en `jcr:description`. Wijzig deze bijvoorbeeld in `Custom layout - Toggle tabs`.
 
 qtip
 
@@ -40,10 +40,10 @@ qtip
 
 >[!NOTE]
 >
->Als u de eigenschap instelt `guideComponentType`op de waarde, `fd/af/layouts/panel` bepaalt u dat de indeling een deelvensterindeling is.
+>Wanneer u de eigenschap `guideComponentType`instelt op de waarde `fd/af/layouts/panel`, wordt bepaald dat de lay-out een deelvensterlay-out is.
 
-1. Wijzig de naam van het bestand `tabbedPanelLayout.jsp` onder de nieuwe indeling in customPanelLayout.jsp.
-1. Als u nieuwe stijlen en gedragingen wilt introduceren, maakt u een clientbibliotheek onder het `etc` knooppunt. Maak bijvoorbeeld op de locatie /etc/af-custom-layout-clientlib de client-library van het knooppunt. Laat de knoop het categoriebezit af.panel.custom hebben. Het heeft de volgende .css en .js dossiers:
+1. Wijzig de naam van het bestand `tabbedPanelLayout.jsp` onder de nieuwe layout in customPanelLayout.jsp.
+1. Als u nieuwe stijlen en gedragingen wilt introduceren, maakt u een clientbibliotheek onder het knooppunt `etc`. Maak bijvoorbeeld op de locatie /etc/af-custom-layout-clientlib de client-library van het knooppunt. Laat de knoop het categoriebezit af.panel.custom hebben. Het heeft de volgende .css en .js dossiers:
 
    ```css
    /** CSS defining new styles used by custom layout **/
@@ -115,9 +115,9 @@ qtip
    });
    ```
 
-1. Als u de vormgeving en het gedrag wilt verbeteren, kunt u een `client library`pictogram opnemen.
+1. U kunt de vormgeving en het gedrag verbeteren door een `client library` op te nemen.
 
-   Werk ook de paden van opgenomen scripts bij in .jsp-bestanden. Werk het `customPanelLayout.jsp` bestand bijvoorbeeld als volgt bij:
+   Werk ook de paden van opgenomen scripts bij in .jsp-bestanden. Bijvoorbeeld, werk het `customPanelLayout.jsp` dossier als volgt bij:
 
    ```html
    <%-- jsp encapsulating navigator container and panel container divs --%>
@@ -146,7 +146,7 @@ qtip
    </div>
    ```
 
-   Het `/apps/af-custom-layout/customPanelLayout/defaultNavigatorLayout.jsp` bestand:
+   Het `/apps/af-custom-layout/customPanelLayout/defaultNavigatorLayout.jsp`-bestand:
 
    ```html
    <%-- jsp governing the navigation part --%>
@@ -204,7 +204,7 @@ qtip
 
 1. Open een adaptief formulier in de ontwerpmodus. De door u gedefinieerde deelvensterlay-out wordt toegevoegd aan de lijst voor het configureren van deelvensterlay-outs.
 
-   ![De lay-out Aangepast deelvenster wordt weergegeven in de lay-outlijst](assets/auth-layt.png) van het deelvenster met ![Schermopname van het aangepaste formulier. De lay-out](assets/s1.png) van het deelvenster wordt gebruikt voor een aangepaste ![schermafbeelding die de schakelfunctionaliteit van de aangepaste indeling aangeeft](assets/s2.png)
+   ![De lay-out Aangepast deelvenster wordt weergegeven in de ](assets/auth-layt.png) ![lijst met deelvensterlay-outsSchermopname van adaptief formulier, met gebruik van de aangepaste ](assets/s1.png) ![layoutScreenshot van het deelvenster en de schakelfunctionaliteit van de aangepaste indeling.](assets/s2.png)
 
 Voorbeeld-ZIP voor een aangepaste deelvensterindeling en een adaptief formulier dat deze gebruikt.
 

@@ -21,11 +21,11 @@ ht-degree: 0%
 
 Gebruik de API TransactionRecorder om handelingen op te nemen die niet automatisch als transacties worden beschouwd
 
-U kunt een aangepaste code gebruiken om een PDF-formulier te verzenden, om een voorbeeld-URL voor de gebruikersinterface van de agent te verzenden naar eindgebruikers voor een interactieve communicatie of om een formulier te verzenden met behulp van aangepaste methoden in plaats van verzendmethoden te gebruiken die bij AEM Forms worden geleverd. Alle eerder vermelde acties en aangepaste implementaties van AEM Forms-API&#39;s worden niet als transacties beschouwd. AEM Forms verstrekt API, [TransactionRecorder](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aem/transaction/core/ITransactionRecorder.html), om dergelijke acties als transacties te registreren.
+U kunt een aangepaste code gebruiken om een PDF-formulier te verzenden, om een voorbeeld-URL voor de gebruikersinterface van de agent te verzenden naar eindgebruikers voor een interactieve communicatie of om een formulier te verzenden met behulp van aangepaste methoden in plaats van verzendmethoden die bij AEM Forms worden geleverd. Alle eerder genoemde acties en aangepaste implementaties van AEM Forms API&#39;s worden niet als transacties beschouwd. AEM Forms biedt een API, [TransactionRecorder](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aem/transaction/core/ITransactionRecorder.html), om dergelijke handelingen op te nemen als transacties.
 
-Om een transactie te registreren, schrijf het [standaardsling servlet](https://helpx.adobe.com/experience-manager/using/custom-sling-servlets.html) en vraag servlet van een cliënt om een transactie te registreren. U kunt servlet roepen gebruikend AJAX of een andere standaardmethode.
+Om een transactie te registreren, schrijf [standaard sling servlet](https://helpx.adobe.com/experience-manager/using/custom-sling-servlets.html) en vraag servlet van een cliënt om een transactie te registreren. U kunt servlet roepen gebruikend AJAX of een andere standaardmethode.
 
-## Voorbeeld van code op de server {#sample-server-sided-code}
+## Voorbeeld van code {#sample-server-sided-code} op de server
 
 U kunt de onderstaande voorbeeldcode gebruiken om de API TransactionRecorder uit te voeren vanuit een JAVA-klasse met behulp van een aangepaste OSGi-bundel.
 
@@ -73,9 +73,9 @@ private TransactionRecord extractTxRecordFromRequest(SlingHttpServletRequest req
 }
 ```
 
-## Voorbeeld van code aan clientzijde {#sample-client-side-code}
+## Voorbeeld van code {#sample-client-side-code} op de client
 
-U kunt de onderstaande voorbeeldcode gebruiken om de servlet met de `TransactionRecorder`API aan te roepen.
+U kunt de onderstaande voorbeeldcode gebruiken om de servlet aan te roepen die de `TransactionRecorder`API heeft.
 
 ```javascript
 $.ajax({

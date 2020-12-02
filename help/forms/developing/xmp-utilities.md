@@ -1,6 +1,6 @@
 ---
-title: Werken met XMP-hulpprogramma's
-seo-title: Werken met XMP-hulpprogramma's
+title: Werken met XMP hulpprogramma's
+seo-title: Werken met XMP hulpprogramma's
 description: 'null'
 seo-description: 'null'
 uuid: 90ce6cef-efe1-456a-8e0c-5ba90249dda0
@@ -18,30 +18,30 @@ ht-degree: 0%
 ---
 
 
-# Werken met XMP-hulpprogramma&#39;s {#working-with-xmp-utilities}
+# Werken met XMP hulpprogramma&#39;s {#working-with-xmp-utilities}
 
 **Informatie over de XMP Utilities Service**
 
-PDF-documenten bevatten metagegevens. Dit zijn gegevens over het document die worden onderscheiden van de inhoud van het document, zoals tekst en afbeeldingen. Adobe XMP (Extensible Metadata Platform) is een standaard voor de verwerking van metagegevens van documenten.
+PDF-documenten bevatten metagegevens. Dit zijn gegevens over het document die worden onderscheiden van de inhoud van het document, zoals tekst en afbeeldingen. Adobe Extensible Metadata Platform (XMP) is een standaard voor de verwerking van documentmetagegevens.
 
-Met de XMP-hulpprogramma&#39;s kunt u XMP-metagegevens uit PDF-documenten ophalen en opslaan, en XMP-metagegevens importeren in PDF-documenten.
+Met de service XMP kunt u XMP metagegevens uit PDF-documenten ophalen en opslaan, en XMP metagegevens importeren in PDF-documenten.
 
-U kunt deze taken uitvoeren met behulp van de XMP Utilities-service:
+U kunt deze taken uitvoeren met behulp van de service XMP Hulpprogramma&#39;s:
 
-* Metagegevens importeren in PDF-documenten. (Zie Metagegevens [importeren in PDF-documenten](xmp-utilities.md#importing-metadata-into-pdf-documents).)
-* Metagegevens uit PDF-documenten exporteren. (Zie Metagegevens [exporteren uit PDF-documenten](xmp-utilities.md#exporting-metadata-from-pdf-documents).)
+* Metagegevens importeren in PDF-documenten. (Zie [Metagegevens importeren in PDF-documenten](xmp-utilities.md#importing-metadata-into-pdf-documents).)
+* Metagegevens uit PDF-documenten exporteren. (Zie [Metagegevens exporteren uit PDF-documenten](xmp-utilities.md#exporting-metadata-from-pdf-documents).)
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van Hulpmiddelen XMP, zie de Verwijzing van de [Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Zie [Referentiehandleiding voor services voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63) voor meer informatie over de service XMP Utilities.
 
 ## Metagegevens importeren in PDF-documenten {#importing-metadata-into-pdf-documents}
 
-U kunt de Java- en webservice-API&#39;s voor XMP-hulpprogramma&#39;s gebruiken om XMP-metagegevens programmatisch te importeren in een PDF-document. Metagegevens bevatten informatie over een PDF-document, zoals de auteur van het document en trefwoorden die betrekking hebben op het document. Metagegevens kunnen worden gevonden in het dialoogvenster Documenteigenschappen van het document, zoals in de volgende afbeelding wordt getoond.
+U kunt de XMP Utilities Java en de API&#39;s van de Webdienst gebruiken om XMP meta-gegevens in een Pdf- document programmatically in te voeren. Metagegevens bevatten informatie over een PDF-document, zoals de auteur van het document en trefwoorden die betrekking hebben op het document. Metagegevens kunnen worden gevonden in het dialoogvenster Documenteigenschappen van het document, zoals in de volgende afbeelding wordt getoond.
 
 ![ww_ww_metadatadialog](assets/ww_ww_metadatadialog.png)
 
-Als u metagegevens programmatisch wilt importeren in een PDF-document, kunt u een bestaand XML-document gebruiken dat de metagegevenswaarden opgeeft of een object van het type gebruiken `XMPUtilityMetadata`. (Zie [API-naslaggids](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)voor AEM Forms.)
+Als u metagegevens programmatisch wilt importeren in een PDF-document, kunt u een bestaand XML-document gebruiken dat de metagegevenswaarden opgeeft of een object van het type `XMPUtilityMetadata` gebruiken. (Zie [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).)
 
 >[!NOTE]
 >
@@ -114,15 +114,15 @@ De volgende XML-code bevat metagegevenswaarden die overeenkomen met de vorige il
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van Hulpmiddelen XMP, zie de Verwijzing van de [Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Zie [Referentiehandleiding voor services voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63) voor meer informatie over de service XMP Utilities.
 
-### Overzicht van de stappen {#summary-of-steps}
+### Overzicht van stappen {#summary-of-steps}
 
-Voer de volgende stappen uit om XMP-metagegevens te importeren in een PDF-document:
+Voer de volgende stappen uit om XMP metagegevens te importeren in een PDF-document:
 
 1. Inclusief projectbestanden.
 1. Maak een XMPUtilityService-client.
-1. Roep de importbewerking voor XMP-metagegevens aan.
+1. Roep de importbewerking voor XMP metagegevens aan.
 
 **Projectbestanden opnemen**
 
@@ -130,25 +130,25 @@ Neem de benodigde bestanden op in uw ontwikkelingsproject. Als u een clienttoepa
 
 **Een XMPUtilityService-client maken**
 
-Voordat u een XMP-hulpprogramma-bewerking programmatisch kunt uitvoeren, moet u een XMPUtilityService-client maken. Met de Java API wordt dit bereikt door een `XMPUtilityServiceClient` object te maken. Met de webservice-API gebeurt dit met behulp van een `XMPUtilityServiceService` object.
+Voordat u een XMP Utilities-bewerking programmatisch kunt uitvoeren, moet u een XMPUtilityService-client maken. Met Java API, wordt dit verwezenlijkt door een `XMPUtilityServiceClient` voorwerp te creëren. Met de webservice-API wordt dit bereikt door een `XMPUtilityServiceService`-object te gebruiken.
 
-**De importbewerking voor XMP-metagegevens aanroepen**
+**De importbewerking voor XMP metagegevens aanroepen**
 
-Nadat u de serviceclient hebt gemaakt, kunt u een van de bewerkingen voor het importeren van XMP-metagegevens uitvoeren om de XMP-metagegevens in het opgegeven PDF-document te importeren.
+Nadat u de serviceclient hebt gemaakt, kunt u een van de importbewerkingen voor XMP metagegevens aanroepen om de XMP metagegevens in het opgegeven PDF-document te importeren.
 
 **Zie ook**
 
-[XMP-metagegevens importeren met de Java API](xmp-utilities.md#import-xmp-metadata-using-the-java-api)
+[Metagegevens XMP importeren met de Java API](xmp-utilities.md#import-xmp-metadata-using-the-java-api)
 
-[XMP-metagegevens importeren met de webservice-API](xmp-utilities.md#importing-xmp-metadata-using-the-web-service-api)
+[XMP metagegevens importeren met de webservice-API](xmp-utilities.md#importing-xmp-metadata-using-the-web-service-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### XMP-metagegevens importeren met de Java API {#import-xmp-metadata-using-the-java-api}
+### XMP metagegevens importeren met de Java API {#import-xmp-metadata-using-the-java-api}
 
-XMP-metagegevens importeren met de XMP Utilities API (Java):
+Importeer XMP metagegevens met de XMP Utilities-API (Java):
 
 1. Projectbestanden opnemen
 
@@ -156,27 +156,27 @@ XMP-metagegevens importeren met de XMP Utilities API (Java):
 
    >[!NOTE]
    >
-   >Het bestand adobe-pdfutility-client.jar bevat klassen waarmee u de service XMP Utilities programmatisch kunt activeren.
+   >Het bestand adobe-pdfutility-client.jar bevat klassen waarmee u de service Hulpprogramma&#39;s voor XMP programmatisch kunt aanroepen.
 
 1. Een XMPUtilityService-client maken
 
-   Maak een `XMPUtilityServiceClient` object met behulp van de constructor en geef een `ServiceClientFactory` object door dat verbindingseigenschappen bevat.
+   Maak een `XMPUtilityServiceClient`-object door de constructor ervan te gebruiken en een `ServiceClientFactory`-object door te geven dat verbindingseigenschappen bevat.
 
-1. De importbewerking voor XMP-metagegevens aanroepen
+1. De importbewerking voor XMP metagegevens aanroepen
 
-   Als u de XMP-metagegevens wilt wijzigen, roept u de `XMPUtilityServiceClient` methode van het object of de `importMetadata` `importXMP` methode van het object aan.
+   Als u de XMP metagegevens wilt wijzigen, roept u de methode `XMPUtilityServiceClient` of de methode `importMetadata` van het object aan.`importXMP`
 
-   Geef de volgende waarden door wanneer u de `importMetadata` methode gebruikt:
+   Wanneer u de methode `importMetadata` gebruikt, geeft u de volgende waarden door:
 
-   * Een `com.adobe.idp.Document` object dat het PDF-bestand vertegenwoordigt.
-   * Een `XMPUtilityMetadata` object dat de te importeren metagegevens bevat.
+   * Een `com.adobe.idp.Document`-object dat het PDF-bestand vertegenwoordigt.
+   * Een `XMPUtilityMetadata`-object dat de te importeren metagegevens bevat.
 
-   Geef de volgende waarden door wanneer u de `importXMP` methode gebruikt:
+   Wanneer u de methode `importXMP` gebruikt, geeft u de volgende waarden door:
 
-   * Een `com.adobe.idp.Document` object dat het PDF-bestand vertegenwoordigt.
-   * Een `com.adobe.idp.Document` object dat een XML-bestand vertegenwoordigt dat de te importeren metagegevens bevat.
+   * Een `com.adobe.idp.Document`-object dat het PDF-bestand vertegenwoordigt.
+   * Een object `com.adobe.idp.Document` dat een XML-bestand vertegenwoordigt dat de te importeren metagegevens bevat.
 
-   In beide gevallen is de geretourneerde waarde een `com.adobe.idp.Document` object dat staat voor het PDF-bestand met de nieuw geïmporteerde metagegevens. U kunt dit object vervolgens op schijf opslaan.
+   In beide gevallen is de geretourneerde waarde een `com.adobe.idp.Document`-object dat het PDF-bestand met de nieuw geïmporteerde metagegevens vertegenwoordigt. U kunt dit object vervolgens op schijf opslaan.
 
 **Zie ook**
 
@@ -186,34 +186,34 @@ XMP-metagegevens importeren met de XMP Utilities API (Java):
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### XMP-metagegevens importeren met de webservice-API {#importing-xmp-metadata-using-the-web-service-api}
+### XMP metagegevens importeren met de webservice-API {#importing-xmp-metadata-using-the-web-service-api}
 
-Voer de volgende taken uit om XMP-metagegevens via programmacode te importeren met de XMP Utilities-webservice-API:
+Voer de volgende taken uit om XMP metagegevens via de API voor XMP hulpprogramma&#39;s programmatisch te importeren:
 
 1. Projectbestanden opnemen
 
-   * Creeer een de cliëntassemblage van Microsoft .NET die het dossier van WSDL van de dienst van XMP gebruikt. (Zie AEM Forms [aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
-   * Verwijs naar de cliëntassemblage van Microsoft .NET. (Zie het [Creëren van een .NET cliëntassemblage die Base64 het coderen](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding). gebruikt)
+   * Creeer een de cliëntassemblage van Microsoft .NET die het dossier van WSDL van de dienst van het XMP gebruikt. (Zie [AEM Forms aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
+   * Verwijs naar de cliëntassemblage van Microsoft .NET. (Zie [Creërend een .NET cliëntassemblage die Base64 het coderen](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding) gebruikt.)
 
 1. Een XMPUtilityService-client maken
 
-   Maak een `XMPUtilityServiceService` object met de constructor van de proxyklasse.
+   Maak een `XMPUtilityServiceService`-object met de constructor van de proxyklasse.
 
-1. De importbewerking voor XMP-metagegevens aanroepen
+1. De importbewerking voor XMP metagegevens aanroepen
 
-   Als u de XMP-metagegevens wilt wijzigen, roept u de `XMPUtilityServiceService` methode van het object of de `importMetadata` `importXMP` methode van het object aan.
+   Als u de XMP metagegevens wilt wijzigen, roept u de methode `XMPUtilityServiceService` of de methode `importMetadata` van het object aan.`importXMP`
 
-   Geef de volgende waarden door wanneer u de `importMetadata` methode gebruikt:
+   Wanneer u de methode `importMetadata` gebruikt, geeft u de volgende waarden door:
 
-   * Een `BLOB` object dat het PDF-bestand vertegenwoordigt.
-   * Een `XMPUtilityMetadata` object dat de te importeren metagegevens bevat.
+   * Een `BLOB`-object dat het PDF-bestand vertegenwoordigt.
+   * Een `XMPUtilityMetadata`-object dat de te importeren metagegevens bevat.
 
-   Geef de volgende waarden door wanneer u de `importXMP` methode gebruikt:
+   Wanneer u de methode `importXMP` gebruikt, geeft u de volgende waarden door:
 
-   * Een `BLOB` object dat het PDF-bestand vertegenwoordigt.
-   * Een `BLOB` object dat een XML-bestand vertegenwoordigt dat de te importeren metagegevens bevat.
+   * Een `BLOB`-object dat het PDF-bestand vertegenwoordigt.
+   * Een object `BLOB` dat een XML-bestand vertegenwoordigt dat de te importeren metagegevens bevat.
 
-   In beide gevallen is de geretourneerde waarde een `BLOB` object dat staat voor het PDF-bestand met de nieuw geïmporteerde metagegevens. U kunt dit object vervolgens op schijf opslaan.
+   In beide gevallen is de geretourneerde waarde een `BLOB`-object dat het PDF-bestand met de nieuw geïmporteerde metagegevens vertegenwoordigt. U kunt dit object vervolgens op schijf opslaan.
 
 **Zie ook**
 
@@ -227,19 +227,19 @@ Voer de volgende taken uit om XMP-metagegevens via programmacode te importeren m
 
 ## Metagegevens exporteren uit PDF-documenten {#exporting-metadata-from-pdf-documents}
 
-U kunt de Java- en webservice-API&#39;s voor XMP-hulpprogramma&#39;s gebruiken om XMP-metagegevens uit een PDF-document op te halen en op te slaan.
+Met de XMP Utilities Java en de webservice-API&#39;s kunt u XMP metagegevens uit een PDF-document programmatisch ophalen en opslaan.
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van Hulpmiddelen XMP, zie de Verwijzing van de [Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Zie [Referentiehandleiding voor services voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63) voor meer informatie over de service XMP Utilities.
 
-### Overzicht van de stappen {#summary_of_steps-1}
+### Overzicht van stappen {#summary_of_steps-1}
 
-Voer de volgende stappen uit om XMP-metagegevens uit een PDF-document te exporteren:
+Voer de volgende stappen uit om XMP metagegevens uit een PDF-document te exporteren:
 
 1. Inclusief projectbestanden.
 1. Maak een XMPUtilityService-client.
-1. Roep de XMP-exportbewerking voor metagegevens aan.
+1. Roep de exportbewerking XMP metagegevens aan.
 
 **Projectbestanden opnemen**
 
@@ -247,25 +247,25 @@ Neem de benodigde bestanden op in uw ontwikkelingsproject. Als u een clienttoepa
 
 **Een XMPUtilityService-client maken**
 
-Voordat u een XMP-hulpprogramma-bewerking programmatisch kunt uitvoeren, moet u een XMPUtilityService-client maken. Met Java AP, wordt dit verwezenlijkt door een `XMPUtilityServiceClient` voorwerp te creëren. Met de webservice-API wordt dit gedaan met behulp van een `XMPUtilityServiceService` object.
+Voordat u een XMP Utilities-bewerking programmatisch kunt uitvoeren, moet u een XMPUtilityService-client maken. Met Java AP, wordt dit verwezenlijkt door een `XMPUtilityServiceClient` voorwerp te creëren. Met de webservice-API wordt dit bereikt met behulp van een `XMPUtilityServiceService`-object.
 
-**De exportbewerking voor XMP-metagegevens aanroepen**
+**De exportbewerking XMP metagegevens aanroepen**
 
-Nadat u de serviceclient hebt gemaakt, kunt u een van de XMP-exportbewerkingen voor metagegevens activeren. Deze bewerkingen kunnen worden gebruikt om de XMP-metagegevens te inspecteren of op schijf op te slaan.
+Nadat u de de dienstcliënt creeert, kunt u één van de XMP meta-gegevens uitvoerverrichtingen aanhalen, die kunnen worden gebruikt om de XMP meta-gegevens te inspecteren of het op schijf te bewaren.
 
 **Zie ook**
 
-[XMP-metagegevens importeren met de Java API](xmp-utilities.md#import-xmp-metadata-using-the-java-api)
+[Metagegevens XMP importeren met de Java API](xmp-utilities.md#import-xmp-metadata-using-the-java-api)
 
-[XMP-metagegevens importeren met de webservice-API](xmp-utilities.md#importing-xmp-metadata-using-the-web-service-api)
+[XMP metagegevens importeren met de webservice-API](xmp-utilities.md#importing-xmp-metadata-using-the-web-service-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### XMP-metagegevens exporteren met de Java API {#export-xmp-metadata-using-the-java-api}
+### XMP metagegevens exporteren met de Java API {#export-xmp-metadata-using-the-java-api}
 
-XMP-metagegevens exporteren met de XMP Utilities API (Java):
+Exporteer XMP metagegevens met behulp van de XMP Utilities-API (Java):
 
 1. Projectbestanden opnemen
 
@@ -273,17 +273,17 @@ XMP-metagegevens exporteren met de XMP Utilities API (Java):
 
    >[!NOTE]
    >
-   >Het bestand adobe-pdfutility-client.jar bevat klassen waarmee u de service XMP-hulpprogramma programmatisch kunt activeren.
+   >Het bestand adobe-pdfutility-client.jar bevat klassen waarmee u de service XMP Utility programmatisch kunt aanroepen.
 
 1. Een XMPUtilityService-client maken
 
-   Maak een `XMPUtilityServiceClient` object met behulp van de constructor en geef een `ServiceClientFactory` object door dat verbindingseigenschappen bevat.
+   Maak een `XMPUtilityServiceClient`-object door de constructor ervan te gebruiken en een `ServiceClientFactory`-object door te geven dat verbindingseigenschappen bevat.
 
-1. De importbewerking voor XMP-metagegevens aanroepen
+1. De importbewerking voor XMP metagegevens aanroepen
 
-   Als u de XMP-metagegevens wilt inspecteren, roept u de `XMPUtilityServiceClient` methode van het object aan en geeft u een `exportMetadata` `com.adobe.idp.Document` object door dat het PDF-bestand vertegenwoordigt. De methode retourneert een `XMPUtilityMetadata` object dat de opgehaalde metagegevens bevat.
+   Als u de XMP metagegevens wilt inspecteren, roept u de methode `exportMetadata` van het object `XMPUtilityServiceClient` aan en geeft u een object `com.adobe.idp.Document` dat het PDF-bestand vertegenwoordigt door. De methode retourneert een `XMPUtilityMetadata`-object dat de opgehaalde metagegevens bevat.
 
-   Als u de XMP-metagegevens wilt ophalen en opslaan, roept u de `XMPUtilityServiceClient` methode van het object aan en geeft u een `exportXMP` `com.adobe.idp.Document` object door dat het PDF-bestand vertegenwoordigt. De methode retourneert een `com.adobe.idp.Document` object dat de opgehaalde metagegevens bevat. U kunt deze vervolgens als XML-bestand op schijf opslaan.
+   Als u de XMP metagegevens wilt ophalen en opslaan, roept u de methode `exportXMP` van het object `XMPUtilityServiceClient` aan en geeft u een object `com.adobe.idp.Document` dat het PDF-bestand vertegenwoordigt door. De methode retourneert een `com.adobe.idp.Document`-object dat de opgehaalde metagegevens bevat, die u vervolgens als XML-bestand op schijf kunt opslaan.
 
 **Zie ook**
 
@@ -293,24 +293,24 @@ XMP-metagegevens exporteren met de XMP Utilities API (Java):
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### XMP-metagegevens exporteren met de webservice-API {#export-xmp-metadata-using-the-web-service-api}
+### XMP metagegevens exporteren met de webservice-API {#export-xmp-metadata-using-the-web-service-api}
 
-XMP-metagegevens exporteren met de XMP Utilities API (webservice):
+Exporteer XMP metagegevens met behulp van de XMP Utilities API (webservice):
 
 1. Projectbestanden opnemen
 
-   * Creeer een de cliëntassemblage van Microsoft .NET die het dossier van WSDL van de dienst van XMP gebruikt.
+   * Creeer een de cliëntassemblage van Microsoft .NET die het dossier van WSDL van de dienst van het XMP gebruikt.
    * Verwijs naar de cliëntassemblage van Microsoft .NET.
 
 1. Een XMPUtilityService-client maken
 
-   Maak een `XMPUtilityServiceService` object met de constructor van de proxyklasse.
+   Maak een `XMPUtilityServiceService`-object met de constructor van de proxyklasse.
 
-1. De importbewerking voor XMP-metagegevens aanroepen
+1. De importbewerking voor XMP metagegevens aanroepen
 
-   Als u de XMP-metagegevens wilt inspecteren, roept u de `XMPUtilityServiceClient` methode van het object aan en geeft u een `exportMetadata` `BLOB` object door dat het PDF-bestand vertegenwoordigt. De methode retourneert een `XMPUtilityMetadata` object dat de opgehaalde metagegevens bevat.
+   Als u de XMP metagegevens wilt inspecteren, roept u de methode `exportMetadata` van het object `XMPUtilityServiceClient` aan en geeft u een object `BLOB` dat het PDF-bestand vertegenwoordigt door. De methode retourneert een `XMPUtilityMetadata`-object dat de opgehaalde metagegevens bevat.
 
-   Als u de XMP-metagegevens wilt ophalen en opslaan, roept u de `XMPUtilityServiceClient` methode van het object aan en geeft u een `exportXMP` `BLOB` object door dat het PDF-bestand vertegenwoordigt. De methode retourneert een `BLOB` object dat de opgehaalde metagegevens bevat. U kunt deze vervolgens als XML-bestand op schijf opslaan.
+   Als u de XMP metagegevens wilt ophalen en opslaan, roept u de methode `exportXMP` van het object `XMPUtilityServiceClient` aan en geeft u een object `BLOB` dat het PDF-bestand vertegenwoordigt door. De methode retourneert een `BLOB`-object dat de opgehaalde metagegevens bevat, die u vervolgens als XML-bestand op schijf kunt opslaan.
 
 **Zie ook**
 

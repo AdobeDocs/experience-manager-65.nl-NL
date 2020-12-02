@@ -22,9 +22,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md) informatie.
 
-Met de tegel **App** beheren en de pagina &quot;App beheren&quot; kunt u metagegevens van toepassingen weergeven en bewerken. Metagegevens van de app zijn vereist voor het vrijgeven van een toepassing aan de winkel van een leverancier. Dit kunnen algemene metagegevens, iOS-metagegevens en schermafbeeldingen zijn. Zie App Tile [beheren](/help/mobile/phonegap-app-details-tile.md) voor meer informatie over algemene en iOS-metagegevens.
+Met de tegel **App** beheren en de pagina &quot;App beheren&quot; kunt u metagegevens van toepassingen weergeven en bewerken. Metagegevens van de app zijn vereist voor het vrijgeven van een toepassing aan de winkel van een leverancier. Dit kunnen algemene metagegevens, iOS-metagegevens en schermafbeeldingen zijn. Zie [App Tile beheren](/help/mobile/phonegap-app-details-tile.md) voor meer informatie over algemene en iOS-metagegevens.
 
 ## App-gegevens bewerken {#editing-the-app-data}
 
@@ -32,15 +32,15 @@ De metagegevens van de app bewerken:
 
 1. Navigeer naar de dashboardpagina voor de app.
 
-   ![chlimage_1-29](assets/chlimage_1-29.png)
+   ![chlimage_1-21](assets/chlimage_1-29.png)
 
-1. Als u details wilt weergeven of bewerken door op de knop &#39;..&#39; te klikken. in de rechterbenedenhoek van de tegel **App** beheren.
+1. Als u details wilt weergeven of bewerken door op de knop &#39;..&#39; te klikken. in de rechterbenedenhoek van de **App**-tegel beheren.
 
 1. Ga of bekijk de details in om het even welke vijf beschikbare lusjes zoals aangetoond in het hieronder cijfer in.
 
    ![chlimage_1-30](assets/chlimage_1-30.png)
 
-## Algemene en IOS-metagegevens bewerken {#editing-common-and-ios-metadata}
+## Bewerken van algemene en IOS-metagegevens {#editing-common-and-ios-metadata}
 
 U kunt gemeenschappelijke en IOS Meta-gegevens uitgeven:
 
@@ -59,18 +59,18 @@ U kunt schermafbeeldingen van de app opnemen in de lijst met metagegevens. Sommi
 
 Een element toevoegen als een schermafbeelding:
 
-1. Klik in de bewerkingsmodus van de pagina **App** beheren op Toevoegen (plus-pictogram).
-1. Selecteer het element en klik op **Selecteren** om het element toe te voegen.
+1. Klik in de bewerkingsmodus van de pagina **App** beheren op Toevoegen (plus pictogram).
+1. Selecteer het element en klik **Selecteer** om het element toe te voegen.
 
    ![chlimage_1-34](assets/chlimage_1-34.png)
 
-1. Selecteer het element en klik op **Selecteren** om het element toe te voegen.
+1. Selecteer het element en klik **Selecteer** om het element toe te voegen.
 
 >[!NOTE]
 >
 >De schermafbeelding moet overeenkomen met de schermresolutie van het doelapparaat.
 
-### Schermafbeeldingen verwijderen {#delete-screenshots}
+### Screenshots {#delete-screenshots} verwijderen
 
 Een schermafbeelding verwijderen:
 

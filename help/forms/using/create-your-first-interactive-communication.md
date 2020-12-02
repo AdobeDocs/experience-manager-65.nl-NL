@@ -37,7 +37,7 @@ Aan het einde van deze zelfstudie kunt u het volgende doen:
 * Een interactieve communicatie maken
 * Een interactieve communicatie testen en publiceren
 
-## Hoofdletters gebruiken {#use-case}
+## Hoofdlettergebruik {#use-case}
 
 De reis begint met het leren van het gebruiksgeval:
 
@@ -50,11 +50,11 @@ Een telecomoperator stuurt maandelijkse facturen naar de klanten via e-mail. De 
 ## Vereisten {#prerequisites}
 
 * Stel een AEM auteur-instantie in.
-* Invoegtoepassing [AEM Forms installeren](/help/forms/using/installing-configuring-aem-forms-osgi.md) op auteurinstantie
+* [AEM Forms-invoegtoepassing](/help/forms/using/installing-configuring-aem-forms-osgi.md) installeren op auteurinstantie
 * De MYSQL-database instellen
-* Vraag het JAR-bestand (JDBC-databasestuurprogramma) aan bij de databaseprovider. De voorbeelden in de zelfstudie zijn gebaseerd op MySQL-database en gebruiken het [MySQL JDBC-databasestuurprogramma](https://dev.mysql.com/downloads/connector/j/5.1.html)van Oracle.
+* Vraag het JAR-bestand (JDBC-databasestuurprogramma) aan bij de databaseprovider. De voorbeelden in het leerprogramma zijn gebaseerd op gegevensbestand MySQL en gebruiken Oracle [MySQL JDBC gegevensbestandbestuurder](https://dev.mysql.com/downloads/connector/j/5.1.html).
 
-## Stap 1: De interactieve communicatie plannen {#step-plan-the-interactive-communication}
+## Stap 1: Plan de Interactieve Communicatie {#step-plan-the-interactive-communication}
 
 ![07-apply-rules-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
 
@@ -72,11 +72,11 @@ Om een anatomie voor Interactieve Communicatie met de volgende wijzen van gegeve
 
    [ ![zie-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/planning-interactive-communications.md)
 
-## Stap 2: Formuliergegevensmodel maken {#step-create-form-data-model}
+## Stap 2: Formuliergegevensmodel {#step-create-form-data-model} maken
 
 ![03-create-adaptive-form-main-image_small](assets/03-create-adaptive-form-main-image_small.png)
 
-Met een formuliergegevensmodel kunt u een interactieve communicatie met verschillende gegevensbronnen verbinden. Bijvoorbeeld AEM gebruikersprofiel, RESTful Webdiensten, op SOAP-Gebaseerde Webdiensten, OData diensten, en relationele gegevensbestanden. Een model van vormgegevens is een verenigd schema van de gegevensvertegenwoordiging van bedrijfsentiteiten en de diensten beschikbaar in verbonden gegevensbronnen. U kunt het model van formuliergegevens met een interactieve communicatie gebruiken om gegevens op te halen uit verbonden gegevensbronnen. Zie [AEM Forms Data Integration](/help/forms/using/data-integration.md)voor meer informatie over het formuliergegevensmodel.
+Met een formuliergegevensmodel kunt u een interactieve communicatie met verschillende gegevensbronnen verbinden. Bijvoorbeeld AEM gebruikersprofiel, RESTful Webdiensten, op SOAP-Gebaseerde Webdiensten, OData diensten, en relationele gegevensbestanden. Een model van vormgegevens is een verenigd schema van de gegevensvertegenwoordiging van bedrijfsentiteiten en de diensten beschikbaar in verbonden gegevensbronnen. U kunt het model van formuliergegevens met een interactieve communicatie gebruiken om gegevens op te halen uit verbonden gegevensbronnen. Zie [AEM Forms Data Integration](/help/forms/using/data-integration.md) voor meer informatie over het formuliergegevensmodel.
 
 **Doelstellingen:**
 
@@ -142,7 +142,7 @@ De interactieve Mededelingen kunnen door twee kanalen worden geleverd: Afdrukken
 
    [ ![zie-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-interactive-communication0.md)
 
-## Stap 6: Interactieve communicatie testen {#step-test-your-interactive-communication}
+## Stap 6: Test uw interactieve communicatie {#step-test-your-interactive-communication}
 
 ![11-test-uw-adaptieve vorm](assets/11-test-your-adaptive-form.png)
 
@@ -154,7 +154,7 @@ Zodra u een Interactieve Communicatie hebt gecreeerd, is het belangrijk dat u el
 * Testcase maken
 * Voer de testcase uit
 
-## Stap 7: Uw interactieve communicatie publiceren {#step-publish-your-interactive-communication}
+## Stap 7: Uw interactieve communicatie {#step-publish-your-interactive-communication} publiceren
 
 ![12-publish-your-adaptive-form-_small](assets/12-publish-your-adaptive-form-_small.png)
 

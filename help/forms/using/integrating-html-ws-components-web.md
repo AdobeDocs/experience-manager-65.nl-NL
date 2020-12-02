@@ -1,8 +1,8 @@
 ---
-title: Componenten van AEM Forms-werkruimten integreren in webtoepassingen
-seo-title: Componenten van AEM Forms-werkruimten integreren in webtoepassingen
-description: AEM Forms werkruimtecomponenten in uw eigen webapps opnieuw gebruiken om functionaliteit te benutten en verregaande integratie te bieden.
-seo-description: AEM Forms werkruimtecomponenten in uw eigen webapps opnieuw gebruiken om functionaliteit te benutten en verregaande integratie te bieden.
+title: AEM Forms-werkruimtecomponenten integreren in webtoepassingen
+seo-title: AEM Forms-werkruimtecomponenten integreren in webtoepassingen
+description: Uitleg over het hergebruik van AEM Forms-werkruimtecomponenten in uw eigen webapps om functionaliteit te benutten en verregaande integratie te bieden.
+seo-description: Uitleg over het hergebruik van AEM Forms-werkruimtecomponenten in uw eigen webapps om functionaliteit te benutten en verregaande integratie te bieden.
 uuid: bb9b8aa0-3f41-4f44-8eb7-944e778ee8a6
 contentOwner: robhagat
 content-type: reference
@@ -18,16 +18,16 @@ ht-degree: 0%
 ---
 
 
-# Componenten van AEM Forms-werkruimten integreren in webtoepassingen {#integrating-aem-forms-workspace-components-in-web-applications}
+# AEM Forms-werkruimtecomponenten integreren in webtoepassingen {#integrating-aem-forms-workspace-components-in-web-applications}
 
-U kunt [componenten](/help/forms/using/description-reusable-components.md) van de werkruimte van AEM Forms gebruiken in uw eigen Webtoepassing. De volgende voorbeeldimplementatie gebruikt componenten van een AEM Forms-werkruimte-dev-pakket dat is geïnstalleerd op een CRX™-instantie om een webtoepassing te maken. Pas de onderstaande oplossing aan uw specifieke behoeften aan. De voorbeeldimplementatie hergebruikt `UserInfo`, `FilterList`en `TaskList`componenten binnen een Webportaal.
+U kunt de werkruimte van AEM Forms [componenten](/help/forms/using/description-reusable-components.md) in uw eigen Webtoepassing gebruiken. De volgende voorbeeldimplementatie gebruikt componenten van een AEM Forms-werkruimtendev-pakket dat op een CRX™-instantie is geïnstalleerd om een webtoepassing te maken. Pas de onderstaande oplossing aan uw specifieke behoeften aan. De voorbeeldimplementatie gebruikt `UserInfo`, `FilterList`, en `TaskList`componenten binnen een Webportaal opnieuw.
 
-1. Meld u aan bij de CRXDE Lite-omgeving `https://'[server]:[port]'/lc/crx/de/`. Zorg ervoor dat u een AEM Forms-ontwikkelpakket hebt geïnstalleerd.
+1. Log in in CRXDE Lite-omgeving op `https://'[server]:[port]'/lc/crx/de/`. Zorg ervoor dat u een AEM Forms-ontwikkelpakket voor werkruimten hebt geïnstalleerd.
 1. Maak een pad `/apps/sampleApplication/wscomponents`.
 1. CSS, afbeeldingen, js/libs, js/runtime en js/registry.js kopiëren
 
    * Van `/libs/ws`
-   * to `/apps/sampleApplication/wscomponents`.
+   * tot `/apps/sampleApplication/wscomponents`.
 
 1. Maak een bestand demomain.js in de map /apps/sampleApplication/wscomponents/js. Kopieer code van /libs/ws/js/main.js naar demomain.js.
 1. In demomain.js, verwijder de code om Router te initialiseren en de volgende code toe te voegen:
@@ -43,8 +43,8 @@ U kunt [componenten](/help/forms/using/description-reusable-components.md) van d
        });
    ```
 
-1. Creeer een knoop onder /content door naam `sampleApplication` en type `nt:unstructured`. Voeg in de eigenschappen van dit knooppunt `sling:resourceType` het type String en value toe `sampleApplication`. Voeg in de lijst Toegangsbeheer van dit knooppunt een item toe voor het `PERM_WORKSPACE_USER` toestaan van jcr:read-bevoegdheden. Ook, in de Lijst van het Toegangsbeheer van `/apps/sampleApplication` `PERM_WORKSPACE_USER` voeg een ingang voor het toestaan van jcr toe:read voorrechten.
-1. In `/apps/sampleApplication/wscomponents/js/registry.js` werk wegen van `/lc/libs/ws/` aan `/lc/apps/sampleApplication/wscomponents/` voor malplaatjewaarden bij.
+1. Maak een knooppunt onder /content op naam `sampleApplication` en typ `nt:unstructured`. Voeg in de eigenschappen van dit knooppunt `sling:resourceType` van het type String en value `sampleApplication` toe. Voeg in de lijst Toegangsbeheer van dit knooppunt een item voor `PERM_WORKSPACE_USER` toe waardoor jcr:read-bevoegdheden zijn toegestaan. Voeg in de lijst Toegangsbeheer van `/apps/sampleApplication` ook een item voor `PERM_WORKSPACE_USER` toe, zodat jcr:read-rechten zijn toegestaan.
+1. Werk in `/apps/sampleApplication/wscomponents/js/registry.js` paden bij van `/lc/libs/ws/` naar `/lc/apps/sampleApplication/wscomponents/` voor sjabloonwaarden.
 1. In uw portalstartpagina JSP- dossier bij `/apps/sampleApplication/GET.jsp`, voeg de volgende code toe om de vereiste componenten binnen het portaal te omvatten.
 
    ```jsp
@@ -82,7 +82,7 @@ U kunt [componenten](/help/forms/using/description-reusable-components.md) van d
    });
    ```
 
-1. Wijzig portaal CSS om de lay-out, het plaatsen, en de stijl van de vereiste componenten op uw portaal te vormen. U wilt bijvoorbeeld de achtergrondkleur zwart houden voor dit portaal om de component userInfo goed te kunnen bekijken. U kunt dit doen door de achtergrondkleur `/apps/sampleApplication/wscomponents/css/style.css` als volgt te wijzigen:
+1. Wijzig portaal CSS om de lay-out, het plaatsen, en de stijl van de vereiste componenten op uw portaal te vormen. U wilt bijvoorbeeld de achtergrondkleur zwart houden voor dit portaal om de component userInfo goed te kunnen bekijken. U kunt dit doen door achtergrondkleur in `/apps/sampleApplication/wscomponents/css/style.css` als volgt te veranderen:
 
    ```css
    body {

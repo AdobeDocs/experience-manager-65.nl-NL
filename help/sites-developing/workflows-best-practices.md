@@ -11,15 +11,18 @@ content-type: reference
 discoiquuid: 0be8b88c-6f57-4dcc-ae11-77b378a2decd
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '1922'
+ht-degree: 0%
 
 ---
 
 
 # Best practices voor workflow{#workflow-best-practices}
 
-Met workflows kunt u activiteiten van Adobe Experience Manager (AEM) automatiseren.
+Met workflows kunt u Adobe Experience Manager-activiteiten (AEM) automatiseren.
 
-Ze vertegenwoordigen vaak een groot deel van de verwerking die plaatsvindt in een AEM-omgeving. Wanneer aangepaste workflowstappen niet worden geschreven volgens de best practices, of workflows buiten de box niet zodanig zijn geconfigureerd dat ze zo efficiënt mogelijk worden uitgevoerd, kan het systeem hiervan de gevolgen ondervinden.
+Ze vertegenwoordigen vaak een groot deel van de verwerking die plaatsvindt in een AEM omgeving. Wanneer aangepaste workflowstappen niet volgens de beste praktijken worden geschreven, of workflows buiten de doos niet zodanig worden geconfigureerd dat ze zo efficiënt mogelijk worden uitgevoerd, kan het systeem hiervan de gevolgen ondervinden.
 
 Daarom wordt u ten zeerste aangeraden de implementaties van uw workflows zorgvuldig te plannen.
 
@@ -29,7 +32,7 @@ Bij het configureren van workflowprocessen (aangepast en/of out-of-the-box) zijn
 
 ### Tijdelijke workflows {#transient-workflows}
 
-Voor het optimaliseren van hoge invoerbelastingen kunt u een [workflow definiëren als tijdelijk](/help/sites-developing/workflows.md#transient-workflows).
+Om hoge inname te optimaliseren kunt u een [werkstroom als transient](/help/sites-developing/workflows.md#transient-workflows) bepalen.
 
 Wanneer een werkstroom van voorbijgaande aard is, worden de runtime gegevens met betrekking tot de tussenliggende werkstappen niet voortgeduurd in JCR wanneer zij lopen (de uitvoeruitvoeruitvoeruitvoeringen blijven natuurlijk voortbestaan).
 
@@ -46,39 +49,39 @@ De voordelen kunnen zijn:
 
 ### DAM-workflows afstemmen {#tuning-dam-workflows}
 
-Zie de [AEM Assets Performance Tuning Guide](/help/assets/performance-tuning-guidelines.md)voor richtlijnen voor het afstemmen van prestaties voor DAM-workflows.
+Zie [AEM Assets Performance Tuning Guide](/help/assets/performance-tuning-guidelines.md) voor richtlijnen voor het afstemmen van prestaties voor DAM-workflows.
 
-### Het maximumaantal gelijktijdige workflows configureren {#configure-the-maximum-number-of-concurrent-workflows}
+### Het maximumaantal gelijktijdige werkstromen {#configure-the-maximum-number-of-concurrent-workflows} configureren
 
-Met AEM kunnen meerdere workflowthreads tegelijk worden uitgevoerd. Door gebrek wordt het aantal draden gevormd om de helft van het aantal bewerkerkernen op het systeem te zijn.
+AEM kunnen meerdere workflowthreads tegelijk uitvoeren. Door gebrek wordt het aantal draden gevormd om de helft van het aantal bewerkerkernen op het systeem te zijn.
 
-Wanneer de workflows die worden uitgevoerd veeleisend zijn aan systeembronnen, kan dit betekenen dat er weinig over is voor AEM om te gebruiken voor andere taken, zoals het renderen van de ontwerpinterface. Hierdoor kan het systeem traag zijn tijdens activiteiten zoals het uploaden van grote hoeveelheden afbeeldingen.
+In gevallen waarin de workflows die worden uitgevoerd veeleisend zijn aan systeembronnen, kan dit betekenen dat er weinig over AEM is om te gebruiken voor andere taken, zoals het renderen van de ontwerpinterface. Hierdoor kan het systeem traag zijn tijdens activiteiten zoals het uploaden van grote hoeveelheden afbeeldingen.
 
-Om dit probleem aan te pakken, raadt Adobe aan het aantal parallelle taken **** te configureren op een niveau tussen de helft en driekwart van het aantal processorcores op het systeem. Hierdoor moet het systeem voldoende capaciteit hebben om snel te kunnen reageren wanneer deze workflows worden verwerkt.
+Om dit probleem aan te pakken, raadt Adobe aan het aantal **Maximum Parallelle Banen** te configureren om tussen de helft tot driekwart van het aantal processorcores op het systeem te liggen. Dit moet voldoende capaciteit voor het systeem om ontvankelijk te blijven wanneer het verwerken van deze werkschema&#39;s.
 
 Om **Maximum Parallelle Banen** te vormen, kunt u of:
 
-* Vorm de Configuratie **[OSGi](/help/sites-deploying/configuring-osgi.md)**van de console van het Web AEM; voor **Wachtrij: Granite Workflow Queue**(een Apache **Sling Job Queue Configuration**).
+* Vorm **[OSGi Configuratie](/help/sites-deploying/configuring-osgi.md)** van de AEM console van het Web; voor **Wachtrij: Granite Workflow Queue** (en **Apache Sling Job Queue Configuration**).
 
-* Vorm de rij van de optie van Banen **van de** Verkoop van de Console van het Web AEM kan; voor configuratie **taakwachtrij: Granite Workflow Queue**, at `http://localhost:4502/system/console/slingevent`.
+* Vorm de rij van de **het Verdelen optie van Banen** van de AEM console van het Web kan; voor **Configuratie taakwachtrij: Granite Workflow Queue**, bij `http://localhost:4502/system/console/slingevent`.
 
-Daarnaast is er een aparte configuratie voor de externe wachtrij **van de externe procestaak van de** Granite-workflow. Dit wordt gebruikt voor werkstroomprocessen die externe binaire bestanden, zoals **InDesign Server** of **Image Magick**, starten.
+Daarnaast is er een aparte configuratie voor de **Granite Workflow External Process Job Queue**. Dit wordt gebruikt voor werkschemaprocessen die externe binaire getallen, zoals **InDesign Server** of **Beeldmakerij** lanceren.
 
-### Afzonderlijke taakwachtrij configureren {#configure-individual-job-queues}
+### Afzonderlijke taakwachtrij {#configure-individual-job-queues} configureren
 
-In sommige gevallen is het nuttig om individuele baanrijen te vormen om gezamenlijke draden, of andere rijopties, op een individuele baanbasis te controleren. U kunt een individuele rij van de console van het Web toevoegen en vormen via de fabriek van de Configuratie van de Rij van de Rij van de **Apache het Verdelen** . Om het aangewezen onderwerp te vinden om van een lijst te maken, voer het model van uw werkschema uit en zoek het in de **het Verdelen console van Banen** ; bijvoorbeeld at `http://localhost:4502/system/console/slingevent`.
+In sommige gevallen is het nuttig om individuele baanrijen te vormen om gezamenlijke draden, of andere rijopties, op een individuele baanbasis te controleren. U kunt een individuele rij van de console van het Web toevoegen en vormen via **Apache het Verdelen de Configuratie van de Rij van de Rij** fabriek. Om het aangewezen onderwerp aan lijst te vinden, voer het model van uw werkschema uit en zoek het in de **Sling Jobs** console; bijvoorbeeld op `http://localhost:4502/system/console/slingevent`.
 
 Afzonderlijke taakwachtrijen kunnen ook worden toegevoegd voor tijdelijke werkstromen.
 
-### Workflow leegmaken configureren {#configure-workflow-purging}
+### Workflow leegmaken {#configure-workflow-purging} configureren
 
-In een standaardinstallatie biedt AEM een onderhoudsconsole waar dagelijkse en wekelijkse onderhoudsactiviteiten kunnen worden gepland en geconfigureerd; bijvoorbeeld in :
+In een standaardinstallatie AEM een onderhoudsconsole biedt waar dagelijkse en wekelijkse onderhoudsactiviteiten kunnen worden gepland en geconfigureerd; bijvoorbeeld :
 
 `http://localhost:4502/libs/granite/operations/content/maintenance.html`
 
-Door gebrek, heeft het Venster **van het** Wekelijkse Onderhoud een taak van het Wissen **van het** Werkschema, maar dit moet worden gevormd alvorens het zal lopen. Om werkstroompurges te configureren, moet een nieuwe configuratie **voor het leegmaken van de werkstroom van** Adobe Granite in de webconsole worden toegevoegd.
+Door gebrek, heeft **Wekelijks Onderhoudsvenster** een **Werkschemazuivering** taak, maar dit moet worden gevormd alvorens het zal in werking stellen. Om werkstroompurges te configureren, moet een nieuwe **Adobe Granite Workflow Purge Configuration** worden toegevoegd aan de webconsole.
 
-Zie het [vluchthandboek](/help/sites-administering/operations-dashboard.md)voor meer informatie over onderhoudstaken in AEM.
+Zie [Operations Dashboard](/help/sites-administering/operations-dashboard.md) voor meer informatie over onderhoudstaken in AEM.
 
 ## Aanpassing {#customization}
 
@@ -90,7 +93,7 @@ Definities van workflowmodellen, draagraketten, scripts en meldingen worden in d
 
 >[!NOTE]
 >
->Zie ook [Repository Reform in AEM 6.5](/help/sites-deploying/repository-restructuring.md).
+>Zie ook [Herstructurering van de opslagplaats in AEM 6.5](/help/sites-deploying/repository-restructuring.md).
 
 #### Locaties - workflowmodellen {#locations-workflow-models}
 
@@ -106,6 +109,7 @@ Workflowmodellen worden in de opslagplaats opgeslagen volgens het type:
    >
    >* plaats om het even welke modellen van uw douanewerkschema in deze omslag
    >* alles bewerken in `/libs`
+
    >
    >Aangezien om het even welke veranderingen bij verbetering of wanneer het installeren van heet-moeilijke situaties kunnen worden beschreven, cumulatieve moeilijke fixpakken of de dienstpakken.
 
@@ -141,6 +145,7 @@ Werkstroomstartdefinities worden ook volgens het type opgeslagen in de opslagpla
    >
    >* plaats om het even welke douane werkschemalanceerders in deze omslag
    >* alles bewerken in `/libs`
+
    >
    >Aangezien om het even welke veranderingen bij verbetering of wanneer het installeren van heet-moeilijke situaties kunnen worden beschreven, cumulatieve moeilijke fixpakken of de dienstpakken.
 
@@ -172,6 +177,7 @@ Workflowscripts worden ook in de repository opgeslagen volgens het type:
    >
    >* Plaats om het even welke manuscripten van uw douanewerkschema in deze omslag
    >* alles bewerken in `/libs`
+
    >
    >Aangezien om het even welke veranderingen bij verbetering of wanneer het installeren van heet-moeilijke situaties kunnen worden beschreven, cumulatieve moeilijke fixpakken of de dienstpakken.
 
@@ -199,6 +205,7 @@ Workflowmeldingen worden ook opgeslagen in de repository volgens het type:
    >
    >* Plaats om het even welke definities van uw douanewerkschemabericht in deze omslag
    >* alles bewerken in `/libs`
+
    >
    >Aangezien om het even welke veranderingen bij verbetering of wanneer het installeren van heet-moeilijke situaties kunnen worden beschreven, cumulatieve moeilijke fixpakken of de dienstpakken.
 
@@ -243,10 +250,10 @@ public void execute(WorkItem item, WorkflowSession workflowSession, MetaDataMap 
 
 Een sessie opslaan:
 
-* In een workflowproces wordt de sessie opgeslagen wanneer deze `WorkflowSession` wordt voltooid.
+* Als in een workflowproces de `WorkflowSession` wordt gebruikt om de repository te wijzigen, slaat u de sessie dan niet expliciet op. De workflow slaat de sessie op wanneer deze is voltooid.
 * `Session.Save` mag niet worden aangeroepen vanuit een workflowstap:
 
-   * het verdient aanbeveling de werkstroom - jcr - sessie aan te passen ; dan `save` is niet nodig omdat de werkstroomengine de sessie automatisch opslaat zodra de werkstroom is voltooid.
+   * het verdient aanbeveling de werkstroom - jcr - sessie aan te passen ; dan is `save` niet nodig aangezien de werkschemamotor de zitting automatisch bewaart zodra het werkschema het uitvoeren heeft gebeëindigd.
    * het wordt niet aanbevolen dat een processtap een eigen jcr-sessie maakt.
 
 * Door onnodige besparingen te elimineren, kunt u overheadkosten verminderen en zo de werkschema&#39;s efficiënter maken.
@@ -255,9 +262,9 @@ Een sessie opslaan:
 >
 >Als u, ondanks de aanbevelingen hier, uw eigen jcr zitting creeert, dan zal het moeten worden bewaard.
 
-### Aantal/bereik van opstarters minimaliseren {#minimize-the-number-scope-of-launchers}
+### Aantal/bereik van opstarters beperken {#minimize-the-number-scope-of-launchers}
 
-Er is één listener die verantwoordelijk is voor alle geregistreerde [workflowdraagraketten](/help/sites-administering/workflows-starting.md#workflows-launchers) :
+Er is één listener die verantwoordelijk is voor alle [workflowdraagraketten](/help/sites-administering/workflows-starting.md#workflows-launchers) die zijn geregistreerd:
 
 * Er wordt geluisterd naar wijzigingen in alle paden die zijn opgegeven in de globbingseigenschappen van de andere draagraketten.
 * Wanneer een gebeurtenis wordt verzonden, zal de werkschemamotor dan elke lancerer evalueren om te bepalen of het zou moeten lopen.
@@ -268,20 +275,20 @@ Door een globbingpad in de basis van de opslagplaats te maken op één startpunt
 
 Vanwege de invloed van deze draagraketten op het workflowgedrag, kan het ook handig zijn om alle draagraketten die niet in gebruik zijn, uit te schakelen.
 
-### Verbeteringen in configuratie voor opstartprogramma&#39;s {#configuration-enhancements-for-launchers}
+### Verbeteringen in configuratie voor Launchers {#configuration-enhancements-for-launchers}
 
-De aangepaste [startconfiguratie](/help/sites-administering/workflows-starting.md#workflows-launchers) is verbeterd en biedt nu ondersteuning voor het volgende:
+De aangepaste [startconfiguratie](/help/sites-administering/workflows-starting.md#workflows-launchers) is uitgebreid ter ondersteuning van het volgende:
 
 * Meerdere voorwaarden &quot;AND&quot; hebben.
 * OR-voorwaarden hebben in één voorwaarde.
 * Schakel draagraketten uit of in op basis van het feit of een functiemarkering is ingeschakeld of uitgeschakeld.
 * Ondersteuning voor regex in opstartomstandigheden.
 
-### Workflows niet starten vanuit andere Workflows {#do-not-start-workflows-from-other-workflows}
+### Workflows uit andere workflows niet starten {#do-not-start-workflows-from-other-workflows}
 
 Workflows kunnen een aanzienlijke hoeveelheid overhead met zich meebrengen, zowel in termen van objecten die in het geheugen zijn gemaakt als van knooppunten die in de opslagplaats worden bijgehouden. Daarom is het beter om een workflow op zichzelf te laten verwerken in plaats van extra workflows te laten starten.
 
-Een voorbeeld hiervan is een workflow die een bedrijfsproces implementeert op een set inhoud en die inhoud vervolgens activeert. Het is beter om een douanewerkschemaproces tot stand te brengen dat elk van deze knopen activeert, eerder dan het beginnen van een model van de Inhoud **van** Activate voor elk van de inhoudsknopen die moeten worden gepubliceerd. Deze benadering vereist extra ontwikkelingswerk, maar is efficiënter wanneer uitgevoerd dan het beginnen van een afzonderlijke werkschemainstantie voor elke activering.
+Een voorbeeld hiervan is een workflow die een bedrijfsproces implementeert op een set inhoud en die inhoud vervolgens activeert. Het is beter om een proces van het douanewerkschema tot stand te brengen dat elk van deze knopen activeert, eerder dan het beginnen van een **activeer Inhoud** model voor elk van de inhoudsknopen die moeten worden gepubliceerd. Deze benadering vereist extra ontwikkelingswerk, maar is efficiënter wanneer uitgevoerd dan het beginnen van een afzonderlijke werkschemainstantie voor elke activering.
 
 Een ander voorbeeld zou een werkschema zijn dat een aantal knopen verwerkt, tot een werkschemapakket leidt, dan genoemd pakket activeert. In plaats van het pakket te maken en vervolgens een aparte workflow te starten met het pakket als de lading, kunt u de lading van uw workflow wijzigen in de stap die het pakket maakt en vervolgens de stap aanroepen om het pakket te activeren binnen hetzelfde workflowmodel.
 
@@ -293,13 +300,13 @@ Het wordt aanbevolen om de voortgang van de handlers te gebruiken omdat deze bet
 
 ### Werkstroomfasen {#workflow-stages}
 
-U kunt [workflowfasen](/help/sites-developing/workflows.md#workflow-stages)definiëren en vervolgens taken/stappen toewijzen aan een specifieke werkstroomfase.
+U kunt [workflowfasen](/help/sites-developing/workflows.md#workflow-stages) definiëren en vervolgens taken/stappen toewijzen aan een specifieke werkstroomfase.
 
-Deze informatie wordt gebruikt voor het weergeven van de voortgang van een workflow wanneer u op het tabblad [**Workflowinfo **van een werkitem in het** Postvak **](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions)klikt. Bestaande workflowmodellen kunnen worden bewerkt om stadia toe te voegen.
+Deze informatie wordt gebruikt voor het tonen van de vooruitgang van een werkschema wanneer u op [**Info van het Werkschema** lusje van een werkpunt van **Inbox**](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions) klikt. Bestaande workflowmodellen kunnen worden bewerkt om stadia toe te voegen.
 
-### Stap in paginaproces activeren {#activate-page-process-step}
+### Stap {#activate-page-process-step} voor paginaverwerking activeren
 
-Met de stap Paginaproces **** activeren worden pagina&#39;s voor u geactiveerd, maar worden DAM-middelen waarnaar wordt verwezen, niet automatisch gevonden en worden deze ook geactiveerd.
+Met de stap **Paginaproces activeren** worden pagina&#39;s voor u geactiveerd, maar worden DAM-middelen waarnaar wordt verwezen, niet automatisch gevonden en worden deze ook geactiveerd.
 
 Dit is iets om in mening te houden als u deze stap als deel van een werkschemamodel wilt gebruiken.
 
@@ -308,17 +315,17 @@ Dit is iets om in mening te houden als u deze stap als deel van een werkschemamo
 Wanneer u uw exemplaar upgradet:
 
 * ervoor zorgen dat een back-up wordt gemaakt van aangepaste workflowmodellen voordat een upgrade van een instantie wordt uitgevoerd.
-* bevestig dat geen van uw aangepaste workflows onder de [locatie](#locations)zijn opgeslagen:
+* bevestig dat geen van uw aangepaste workflows onder de [locatie](#locations) worden opgeslagen:
 
    * `/libs/settings/workflow/models/projects`
 
 >[!NOTE]
 >
->Zie ook [Repository Reform in AEM 6.5](/help/sites-deploying/repository-restructuring.md).
+>Zie ook [Herstructurering van de opslagplaats in AEM 6.5](/help/sites-deploying/repository-restructuring.md).
 
 ## Systeemgereedschappen {#system-tools}
 
-Er zijn vele systeemhulpmiddelen beschikbaar om met controle, het handhaven, en het oplossen van problemenwerkschema&#39;s te helpen. Alle voorbeeld-URL&#39;s hieronder worden gebruikt `localhost:4502`, maar moeten beschikbaar zijn voor elke instantie van de auteur ( `<hostname>:<port>`).
+Er zijn vele systeemhulpmiddelen beschikbaar om met controle, het handhaven, en het oplossen van problemenwerkschema&#39;s te helpen. Alle onderstaande voorbeeld-URL&#39;s gebruiken `localhost:4502`, maar moeten beschikbaar zijn voor elke instantie van de auteur ( `<hostname>:<port>`).
 
 ### Sling Job Handling Console {#sling-job-handling-console}
 
@@ -333,7 +340,7 @@ De Sling Job Handling-console geeft het volgende weer:
 
 Het werkstroomrapportagehulpprogramma wordt verwijderd in 6.3 om te voorkomen dat de prestaties afnemen.
 
-### Workflowonderhoudsbewerkingen MBean {#workflow-maintenance-operations-mbean}
+### Bewerkingen voor workflowonderhoud MBean {#workflow-maintenance-operations-mbean}
 
 `http://localhost:4502/system/console/jmx/com.adobe.granite.workflow:type=Maintenance`
 

@@ -19,7 +19,7 @@ ht-degree: 1%
 
 # Trackingtabellen aanpassen{#customize-tracking-tables}
 
-Het volgende lusje in de werkruimte van AEM Forms wordt gebruikt om de details van procesinstanties te tonen waarin de het programma geopende gebruiker betrokken is. Als u de volgende tabellen wilt weergeven, selecteert u eerst een procesnaam in het linkerdeelvenster om de lijst met exemplaren in het middelste venster weer te geven. Selecteer een procesinstantie om een takenlijst te zien die door deze instantie in de juiste ruit wordt geproduceerd. Standaard geven de tabelkolommen de volgende taakkenmerken weer (het bijbehorende kenmerk in het taakmodel staat tussen haakjes):
+Het tabblad Tekstspatiëring in de AEM Forms-werkruimte wordt gebruikt om de details weer te geven van procesinstanties waarbij de aangemelde gebruiker is betrokken. Als u de volgende tabellen wilt weergeven, selecteert u eerst een procesnaam in het linkerdeelvenster om de lijst met exemplaren in het middelste venster weer te geven. Selecteer een procesinstantie om een takenlijst te zien die door deze instantie in de juiste ruit wordt geproduceerd. Standaard geven de tabelkolommen de volgende taakkenmerken weer (het bijbehorende kenmerk in het taakmodel staat tussen haakjes):
 
 * ID ( `taskId`)
 * Naam ( `stepName`)
@@ -116,7 +116,7 @@ De resterende kenmerken in het taakmodel die beschikbaar zijn voor weergave in d
  </tbody>
 </table>
 
-Voor de volgende aanpassingen in de takenlijst, moet u semantische veranderingen in de broncode doen. Zie [Inleiding tot het Aanpassen van de werkruimte](/help/forms/using/introduction-customizing-html-workspace.md) van AEM Forms voor hoe u semantische veranderingen kunt aanbrengen gebruikend werkruimte SDK en een geminificeerde pakket van de veranderde bron bouwen.
+Voor de volgende aanpassingen in de takenlijst, moet u semantische veranderingen in de broncode doen. Zie [Inleiding tot het aanpassen van de werkruimte van AEM Forms](/help/forms/using/introduction-customizing-html-workspace.md) voor hoe u semantische veranderingen kunt aanbrengen gebruikend werkruimte SDK en een geminificeerde pakket van de veranderde bron bouwen.
 
 ## Tabelkolommen en hun volgorde wijzigen {#changing-table-columns-and-their-order}
 
@@ -154,7 +154,7 @@ Voor de volgende aanpassingen in de takenlijst, moet u semantische veranderingen
    </table>
    ```
 
-## Een tabel bijhouden sorteren {#sorting-a-tracking-table}
+## Een volgende tabel sorteren {#sorting-a-tracking-table}
 
 U kunt als volgt de tabel met de takenlijst sorteren wanneer u op de kolomkop klikt:
 
@@ -168,7 +168,7 @@ U kunt als volgt de tabel met de takenlijst sorteren wanneer u op de kolomkop kl
    }
    ```
 
-   Roep in de handler de `onTaskTableHeaderClick` functie van `js/runtime/util/history.js`.
+   Roep in de handler de functie `onTaskTableHeaderClick` van `js/runtime/util/history.js` aan.
 
    ```javascript
    onTaskTableHeaderClick: function (event) {
@@ -176,7 +176,7 @@ U kunt als volgt de tabel met de takenlijst sorteren wanneer u op de kolomkop kl
    }
    ```
 
-1. Maak de `TaskTableHeaderClick` methode beschikbaar in `js/runtime/util/history.js`.
+1. Stel de `TaskTableHeaderClick` methode in `js/runtime/util/history.js` bloot.
 
    De methode zoekt het taakkenmerk van de gebeurtenis click, sorteert de taaklijst van dat kenmerk en geeft de taaktabel weer met de gesorteerde taaklijst.
 

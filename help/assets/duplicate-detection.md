@@ -11,19 +11,19 @@ ht-degree: 0%
 ---
 
 
-# Detectie van dubbele elementen inschakelen {#enable-detection-of-duplicate-assets}
+# Detectie van dubbele elementen {#enable-detection-of-duplicate-assets} inschakelen
 
-Als u probeert een element te uploaden waarin [!DNL Adobe Experience Manager Assets]zich bevindt, wordt dit door de functie voor dubbele detectie geïdentificeerd als gedupliceerd. Dubbele detectie is standaard uitgeschakeld. Voer de volgende stappen uit om de functie in te schakelen:
+Als u probeert een middel te uploaden dat in [!DNL Adobe Experience Manager Assets] bestaat, identificeert de dubbele opsporingseigenschap het als duplicaat. Dubbele detectie is standaard uitgeschakeld. Voer de volgende stappen uit om de functie in te schakelen:
 
-1. Open de de configuratiepagina van de [!DNL Experience Manager] Console van het Web door toegang tot `https://[aem_server]:[port]/system/console/configMgr`.
+1. Open de [!DNL Experience Manager] de configuratiepagina van de Console van het Web door tot `https://[aem_server]:[port]/system/console/configMgr` toegang te hebben.
 1. Bewerk de configuratie voor de servlet **[!UICONTROL Day CQ DAM Create Asset]**.
-1. Selecteer de **[!UICONTROL detect duplicate]** optie en klik op **[!UICONTROL Save]**.
+1. Selecteer de optie **[!UICONTROL detect duplicate]** en klik op **[!UICONTROL Save]**.
 
    ![Selecteer de optie Duplicaat detecteren in de servlet](assets/chlimage_1-377.png)
 
    *Afbeelding: Selecteer dubbele optie in servlet ontdekken.*
 
-De functie Dupliceren detecteren is nu ingeschakeld in [!DNL Assets]. Wanneer een gebruiker een middel probeert te uploaden dat binnen bestaat [!DNL Experience Manager], controleert het systeem op conflict en wijst op het. De elementen worden geïdentificeerd met behulp van SHA-1-hash opgeslagen op `jcr:content/metadata/dam:sha1`, wat betekent dat dubbele elementen worden gedetecteerd, ongeacht de bestandsnamen.
+De functie voor het opsporen van dubbele gegevens is nu ingeschakeld in [!DNL Assets]. Wanneer een gebruiker een middel probeert te uploaden dat in [!DNL Experience Manager] bestaat, controleert het systeem op conflict en wijst op het. De elementen worden geïdentificeerd met behulp van SHA-1-hash die is opgeslagen op `jcr:content/metadata/dam:sha1`. Dit betekent dat dubbele elementen worden gedetecteerd, ongeacht de bestandsnamen.
 
 >[!MORELIKETHIS]
 >

@@ -17,7 +17,7 @@ ht-degree: 1%
 ---
 
 
-# De Rich Text Editor gebruiken om inhoud te ontwerpen {#use-rich-text-editor-to-author-content}
+# De Rich Text Editor gebruiken om inhoud {#use-rich-text-editor-to-author-content} te schrijven
 
 De Rich Text Editor (RTE) is een basisbouwsteen voor het invoegen van tekstuele inhoud in AEM. Het vormt de basis van verschillende componenten, waaronder:
 
@@ -27,7 +27,7 @@ De Rich Text Editor (RTE) is een basisbouwsteen voor het invoegen van tekstuele 
 
 ## Plaatselijk bewerken {#in-place-editing}
 
-Als u een op tekst gebaseerde component met één tik of klik selecteert, wordt de werkbalk [van de](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) component net als elke component weergegeven.
+Als u een op tekst gebaseerde component met één tik of klik selecteert, wordt de werkbalk [component](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) weergegeven, net als bij elke component.
 
 ![screen_shot_2018-03-21at163054](assets/screen_shot_2018-03-21at163054.png)
 
@@ -38,7 +38,7 @@ Als u nogmaals tikt of erop klikt of de component aanvankelijk selecteert met ee
 Deze werkbalk bevat de volgende opties:
 
 * **Indeling**: Op deze manier kunt u de opties Vet, Cursief en Onderstrepen instellen.
-* **Lijsten**: Hiermee kunt u lijsten met opsommingstekens of nummers maken of de inspringing instellen.
+* **Lijsten**: Hiermee kunt u lijsten met opsommingstekens of genummerde lijsten maken of de inspringing instellen.
 * **Hyperlink**
 * **Ontkoppelen**
 * **Volledig scherm**
@@ -47,7 +47,7 @@ Deze werkbalk bevat de volgende opties:
 
 ## Volledig scherm bewerken {#full-screen-editing}
 
-Als u voor op tekst gebaseerde componenten op de modus Volledig scherm tikt op de werkbalk, wordt de teksteditor met tekstopmaak geopend en wordt de rest van de pagina-inhoud verborgen. ![](do-not-localize/screen_shot_2018-03-21at163236.png)
+Als u voor op tekst gebaseerde componenten op de modus Volledig scherm tikt op de werkbalk ![](do-not-localize/screen_shot_2018-03-21at163236.png), wordt de teksteditor met tekstopmaak geopend en wordt de rest van de pagina-inhoud verborgen.
 
 In de modus Volledig scherm worden alle geconfigureerde opties weergegeven die u kunt gebruiken voor ontwerpen. De beschikbaarheid is opties [afhankelijk van de configuratie](/help/sites-administering/rich-text-editor.md).
 

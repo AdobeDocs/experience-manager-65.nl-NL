@@ -22,37 +22,37 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe adviseert gebruikend de Redacteur van het KUUROORD voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md) informatie.
 
-Wilt u aantrekkelijke en relevante ervaringen opbouwen voor gebruikers van mobiele toepassingen? Als u de SDK van Adobe Mobile Services niet gebruikt om de levenscyclus en het gebruik van toepassingen te controleren en te meten, waarop baseert u uw beslissingen? Waar zijn uw meest loyale klanten? Hoe kan je garanderen dat je relevant blijft en conversies optimaliseert?
+Wilt u aantrekkelijke en relevante ervaringen opbouwen voor gebruikers van mobiele toepassingen? Als u niet de Adobe Mobile Services SDK gebruikt om de levenscyclus en het gebruik van de toepassing te controleren en te meten, dan waarop baseert u uw besluiten? Waar zijn uw meest loyale klanten? Hoe kan je garanderen dat je relevant blijft en conversies optimaliseert?
 
 Hebben uw gebruikers toegang tot alle inhoud? Verlaten ze de app en zo ja, waar? Hoe vaak blijven ze in de app en hoe vaak komen ze terug om de app te gebruiken? Welke veranderingen kunt u introduceren en dan die verhoging behoud meten? Hoe zit het met crashsnelheden? crasht uw app voor uw gebruikers?
 
-Profiteer van [Mobile App Analytics](https://www.adobe.com/ca/solutions/digital-analytics/mobile-web-apps-analytics.html) in uw AEM-apps door deze te integreren met [Adobe Mobile Services](https://www.adobe.com/marketing-cloud/mobile-marketing.html).
+Profiteer van [Mobile App Analytics](https://www.adobe.com/ca/solutions/digital-analytics/mobile-web-apps-analytics.html) in uw AEM-toepassingen door te integreren met [Adobe Mobile Services](https://www.adobe.com/marketing-cloud/mobile-marketing.html).
 
-Instrueer uw AEM-toepassingen om te volgen, rapporteren en te begrijpen hoe gebruikers omgaan met uw mobiele app en inhoud en om belangrijke levenscyclusmetriek zoals lanceringen, tijd in app en crashsnelheid te meten.
+Instrueer uw AEM-apps om te volgen, rapporteren en te begrijpen hoe gebruikers omgaan met uw mobiele app en inhoud en om belangrijke levenscyclusmetriek te meten, zoals lanceringen, tijd in app en crashsnelheid.
 
-In deze sectie wordt beschreven hoe AEM- *ontwikkelaars* :
+In deze sectie wordt beschreven hoe AEM *Developers*:
 
-* Mobiele Analytics integreren in uw mobiele toepassing
+* Mobiele analysemogelijkheden integreren in uw mobiele toepassing
 * Test uw analyses bijhouden met Bloodhound
 
 ## Vereisten {#prerequisties}
 
-AEM Mobile heeft een Adobe Analytics-account nodig om trackinggegevens in uw app te verzamelen en te rapporteren. Als deel van de configuratie zal de *Beheerder* AEM eerst moeten:
+AEM Mobile heeft een Adobe Analytics-account nodig om trackinggegevens in uw app te verzamelen en te rapporteren. Als onderdeel van de configuratie moet de AEM *Beheerder* eerst:
 
 * Stel een Adobe Analytics-account in en maak een rapportsuite voor uw toepassing in Mobile Services.
 * Configureer een AMS-Cloud Service in Adobe Experience Manager (AEM).
 
-## Voor ontwikkelaars - Mobiele Analytics integreren in uw app {#for-developers-integrate-mobile-analytics-into-your-app}
+## Voor ontwikkelaars - Mobiele analysemogelijkheden integreren in uw app {#for-developers-integrate-mobile-analytics-into-your-app}
 
-### Configureer ContentSync om het configuratiebestand te gebruiken {#configure-contentsync-to-pull-in-configuration-file}
+### Configureer ContentSync om het configuratiebestand {#configure-contentsync-to-pull-in-configuration-file} te gebruiken
 
-Nadat u het Analytics-account hebt ingesteld, moet u een configuratie voor inhoudssynchronisatie maken om de inhoud in uw mobiele toepassing te plaatsen.
+Nadat het account Analytics is ingesteld, moet u een configuratie voor Content Sync maken om de inhoud in uw mobiele toepassing te plaatsen.
 
-Zie Inhoud synchroniseren configureren voor meer informatie. De configuratie zal de Synchronisatie van de Inhoud moeten instrueren om ADBMobileConfig in de /www folder te zetten. In de Buiten-app Geometrixx vindt u bijvoorbeeld de configuratie van Content Sync bij: */content/phonegap/geometrixx-outdoor/shell/jcr:content/pge-app/app-config/ams-ADBMobileConfig*. Er is ook een configuratie voor ontwikkeling. in het geval van Geometrixx Outdoor is de configuratie echter identiek aan de configuratie zonder ontwikkeling.
+Zie Inhoud synchroniseren configureren voor meer informatie. De configuratie zal de Synchronisatie van de Inhoud moeten instrueren om ADBMobileConfig in de /www folder te zetten. In de Geometrixx Outdoors App vindt u bijvoorbeeld de configuratie van Content Sync: */content/phonegap/geometrixx-outdoor/shell/jcr:content/pge-app/app-config/ams-ADBMobileConfig*. Er is ook een configuratie voor ontwikkeling. het is echter identiek aan de niet-ontwikkelingsconfiguratie in het geval van Geometrixx Outdoors.
 
-Raadpleeg het configuratiebestand van Analytics - Mobile Services - Adobe Mobile Services SDK voor meer informatie over het downloaden van ADBMobileConfig vanaf het dashboard voor AEM-toepassingen voor mobiele toepassingen.
+Raadpleeg Analytics - Mobile Services - Adobe Mobile Services SDK Config File voor meer informatie over het downloaden van ADBMobileConfig vanuit het dashboard voor AEM toepassingen voor mobiele.
 
 ```xml
 <jcr:root xmlns:jcr="https://www.jcp.org/jcr/1.0" xmlns:nt="https://www.jcp.org/jcr/nt/1.0"
@@ -68,7 +68,7 @@ Voor elk platform moet ADBMobileConfig naar een specifieke locatie worden gekopi
 
 Als het bouwen met CLI PhoneGap dit met cordova kan worden gedaan bouwen hamanuscripten. Dit is te zien in de Geometrixx Outdoor App op:*content/phonegap/geometrixx-outdoors/shell/_jcr_content/pge-app/app-content/phonegap/scripts/restore_plugins.js.*
 
-Voor iOS moet het bestand worden gekopieerd naar de map **Resources** (bijv. &quot;platforms/ios/Geometrixx/Resources/ADBMobileConfig.json&quot;). Als de toepassing is bedoeld voor Android, is het pad waarnaar u wilt kopiëren &quot;platforms/android/assets/ADBMobileConfig.json&quot;. Voor verdere details bij het gebruiken van haken tijdens de bouwstijl PhoneGap CLI verwijs naar [Drie haken uw Cordova/het projectbehoeften](https://devgirl.org/2013/11/12/three-hooks-your-cordovaphonegap-project-needs/)van PhoneGap.
+Voor iOS moet het bestand worden gekopieerd naar de map **Resources** van het XCode-project (bijv. &quot;platforms/ios/Geometrixx/Resources/ADBMobileConfig.json&quot;). Als de toepassing is bedoeld voor Android, is het pad waarnaar u wilt kopiëren &quot;platforms/android/assets/ADBMobileConfig.json&quot;. Voor meer details bij het gebruiken van haken tijdens de bouwstijl PhoneGap CLI verwijs naar [Drie haken uw Cordova/PhoneGap projectbehoeften](https://devgirl.org/2013/11/12/three-hooks-your-cordovaphonegap-project-needs/).
 
 ```xml
 ///////////////////////////
@@ -89,9 +89,9 @@ Voor iOS moet het bestand worden gekopieerd naar de map **Resources** (bijv. &qu
     ]
 ```
 
-### De AMS-plug-in toevoegen in de app {#add-the-ams-plugin-in-the-app}
+### Voeg de insteekmodule AMS toe in de app {#add-the-ams-plugin-in-the-app}
 
-De toepassing kan de gegevens alleen verzamelen als de insteekmodule Adobe Mobile Services (AMS) is opgenomen in de app. Door de plug-in als een functie in config.xml van de app op te nemen, kan een andere Cordova-haak worden gebruikt om de plug-in automatisch toe te voegen tijdens het PhoneGap-ontwikkelproces.
+Voor de app om de gegevens te verzamelen, moet de insteekmodule Adobe Mobile Services (AMS) als onderdeel van de app worden opgenomen. Door de plug-in als een functie in config.xml van de app op te nemen, kan een andere Cordova-haak worden gebruikt om de plug-in automatisch toe te voegen tijdens het PhoneGap-ontwikkelproces.
 
 ```xml
 <feature name="ADBMobile">
@@ -99,20 +99,20 @@ De toepassing kan de gegevens alleen verzamelen als de insteekmodule Adobe Mobil
 </feature>
 ```
 
-Het bestand Geometrixx Outdoor App config.xml bevindt zich op de locatie */content/phonegap/geometrixx-outdoor/shell/jcr:content/pge-app/app-content/phonegap/www/config.xml*. In het bovenstaande voorbeeld wordt een specifieke versie van de insteekmodule gevraagd die moet worden gebruikt door een &#39;#&#39; en een tagwaarde toe te voegen na de insteekmodule-URL. Dit is een goede gewoonte om ervoor te zorgen dat onverwachte problemen zich niet voordoen als gevolg van het toevoegen van niet-geteste plug-ins tijdens een build.
+De Geometrixx Outdoors App config.xml bevindt zich op */content/phonegap/geometrixx-outdoor/shell/jcr:content/pge-app/app-content/phonegap/www/config.xml*. In het bovenstaande voorbeeld wordt een specifieke versie van de insteekmodule gevraagd die moet worden gebruikt door een &#39;#&#39; en een tagwaarde toe te voegen na de insteekmodule-URL. Dit is een goede gewoonte om ervoor te zorgen dat onverwachte problemen zich niet voordoen als gevolg van het toevoegen van niet-geteste plug-ins tijdens een build.
 
 Nadat u deze stappen hebt uitgevoerd, wordt uw app ingeschakeld om alle levenscyclusmetriek te rapporteren die door Adobe Analytics zijn verschaft. Dit omvat gegevens zoals lanceringen, neerstortingen en installaties. Als dat de enige gegevens zijn waar je om geeft, dan ben je klaar. Als u aangepaste gegevens wilt verzamelen, moet u deze coderen.
 
 ### Instrueer uw code voor het volledig bijhouden van de app {#instrument-your-code-for-full-app-tracking}
 
-Er zijn verschillende tracking-API&#39;s beschikbaar in de [AMS Phonegap-insteekmodule.](https://docs.adobe.com/content/help/en/mobile-services/ios/phonegap-ios/phonegap-methods.html)
+Er zijn verschillende tracking-API&#39;s beschikbaar in de [AMS Phonegap-insteekmodule-API.](https://docs.adobe.com/content/help/en/mobile-services/ios/phonegap-ios/phonegap-methods.html)
 
-Hiermee kunt u staten en handelingen bijhouden, zoals waar de pagina&#39;s waarnaar uw gebruikers navigeren in uw app, waarin de besturingselementen het meest worden gebruikt. De eenvoudigste manier om uw toepassing voor tracering te gebruiken, is om gebruik te maken van de Analytics API&#39;s die door de AMS-plug-in worden geleverd.
+Hiermee kunt u staten en handelingen bijhouden, zoals waar de pagina&#39;s waarnaar uw gebruikers navigeren in uw app, waarin de besturingselementen het meest worden gebruikt. De eenvoudigste manier om uw app voor tracering te gebruiken, is om gebruik te maken van de API&#39;s voor Analytics die door de AMS-plug-in worden geleverd.
 
 * ADB.trackState()
 * ADB.trackAction()
 
-Ter referentie kunt u de code in de Geometrixx-app Buiten bekijken. In de toepassing Geometrixx Outdoor worden alle paginanavigaties bijgehouden met behulp van de methode ADB.trackState(). Zie voor meer informatie de broncode voor /libs/mobileapps/components/angular/ng-page/clientlibs/app-navigation.js
+Ter referentie kunt u de code in de app Geometrixx Outdoors bekijken. In de app Geometrixx Outdoors worden alle paginanavigaties bijgehouden met behulp van de methode ADB.trackState(). Zie voor meer informatie de broncode voor /libs/mobileapps/components/angular/ng-page/clientlibs/app-navigation.js
 
 Door uw broncode met deze methodevraag van instrumenten te voorzien kunt u volledige metriek tegen uw toepassing verzamelen.
 

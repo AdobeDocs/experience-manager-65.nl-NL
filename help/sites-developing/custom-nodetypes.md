@@ -1,8 +1,8 @@
 ---
 title: Aangepaste knooppunttypen
 seo-title: Aangepaste knooppunttypen
-description: AEM is gebaseerd op Sling en gebruikt een JCR-opslagplaats met knooppunttypen die door beide worden aangeboden, maar AEM biedt ook een reeks aangepaste knooppunttypen
-seo-description: AEM is gebaseerd op Sling en gebruikt een JCR-opslagplaats met knooppunttypen die door beide worden aangeboden, maar AEM biedt ook een reeks aangepaste knooppunttypen
+description: AEM is gebaseerd op Sling en gebruikt een opslagplaats JCR met knooptypes die door allebei worden aangeboden, maar AEM verstrekt ook een waaier van de types van douaneknooppunten
+seo-description: AEM is gebaseerd op Sling en gebruikt een opslagplaats JCR met knooptypes die door allebei worden aangeboden, maar AEM verstrekt ook een waaier van de types van douaneknooppunten
 uuid: f2022504-e433-4b42-9cc1-eef41086483a
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -20,7 +20,7 @@ ht-degree: 7%
 
 # Aangepaste knooppunttypen{#custom-node-types}
 
-Omdat AEM op het Verkopen gebaseerd is en een bewaarplaats JCR gebruikt, zijn de knooptypes die door beide worden aangeboden beschikbaar voor gebruik:
+Omdat AEM gebaseerd is op Sling en een gegevensopslagplaats JCR gebruikt, zijn de knooptypes die door beide worden aangeboden beschikbaar voor gebruik:
 
 * [JCR-knooppunttypen](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
 * [Sling Node Types](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
@@ -80,7 +80,7 @@ Definieert het notatietype van een opmerkingsknooppunt.
 
 **Beschrijving**
 
-Definieert het notatietype van een `commentattachment` knooppunt
+Definieert het notatietype van een `commentattachment`-knooppunt
 
 **Definitie**
 
@@ -132,7 +132,7 @@ Definieert het knooptype van een trackback-knooppunt.
 
 ## Kern {#core}
 
-### cq:pagina {#cq-page}
+### cq:Pagina {#cq-page}
 
 **Beschrijving**
 
@@ -166,7 +166,7 @@ Definieert het standaardknooppunt voor pagina-inhoud, met de minimale eigenschap
 * `@prop jcr:description` - Beschrijving van deze pagina.
 * `@prop cq:template` - Pad naar de sjabloon die is gebruikt om de pagina te maken.
 * `@prop cq:allowedTemplates` - Lijst met reguliere expressies die worden gebruikt om het pad of de paden naar de toegestane sjabloon te bepalen.
-* `@prop pageTitle` - Titel wordt meestal weergegeven in de `<title>` tag.
+* `@prop pageTitle` - Titel wordt meestal weergegeven in de  `<title>` tag.
 * `@prop navTitle` - Titel wordt meestal gebruikt in de navigatie.
 * `@prop hideInNav` - Geeft aan of de pagina moet worden verborgen in de navigatie.
 * `@prop onTime` - Tijdstip waarop deze pagina geldig wordt.
@@ -237,18 +237,18 @@ Definieert een CQ-component.
 * `@prop dialogPath` - Primair dialoogvenster (alternatief voor dialoogvenster).
 * `@node design_dialog` - Het dialoogvenster Ontwerpen.
 * `@prop cq:cellName` - Naam van de ontwerpcel.
-* `@prop cq:isContainer` - Geeft aan of dit een containercomponent is. Hierdoor worden de celnamen van onderliggende componenten in plaats van padnamen gebruikt. Het `parsys` is bijvoorbeeld een containercomponent. Als deze waarde niet is gedefinieerd, wordt de controle uitgevoerd op basis van het bestaan van een `cq:childEditConfig`.
-* `@prop cq:noDecoration` - Indien waar (true), worden er geen decoratietags `div` getekend wanneer deze component wordt opgenomen.
+* `@prop cq:isContainer` - Geeft aan of dit een containercomponent is. Hierdoor worden de celnamen van onderliggende componenten in plaats van padnamen gebruikt. De `parsys` is bijvoorbeeld een containercomponent. Als deze waarde niet is gedefinieerd, wordt de controle uitgevoerd op basis van het bestaan van een `cq:childEditConfig`.
+* `@prop cq:noDecoration` - Indien waar (true), worden er geen decoratietags  `div` getekend wanneer deze component wordt opgenomen.
 * `@node cq:editConfig` - De configuratie die de parameters voor de bewerkbalk definieert.
 * `@node cq:childEditConfig` - De bewerkingsconfiguratie die wordt overgeërfd door onderliggende componenten.
-* `@node cq:htmlTag` - Definieert aanvullende tagkenmerken die worden toegevoegd aan de tag &quot;omringend&quot; `div` wanneer de component wordt opgenomen.
+* `@node cq:htmlTag` - Definieert aanvullende tagkenmerken die worden toegevoegd aan de  `div` tag &quot;omringend&quot; wanneer de component wordt opgenomen.
 * `@node icon.png`- Een bestand dat een kenmerkend pictogram bevat.
 * `@node thumbnail.png` - Een bestand dat een kenmerkende miniatuurafbeelding bevat.
 * `@prop allowedParents` - Reguliere-expressiepatronen om het pad of de paden te bepalen van componenten die zijn toegestaan als bovenliggende componenten.
 * `@prop allowedChildren` - Reguliere-expressiepatronen om het pad of de paden te bepalen van componenten die zijn toegestaan als onderliggende componenten.
 * `@node virtual` - Bevat subknooppunten die virtuele componenten weerspiegelen die worden gebruikt voor het slepen en neerzetten van de component.
 * `@prop componentGroup` - Naam van de componentgroep die wordt gebruikt voor slepen en neerzetten van de component.
-* `@node cq:infoProviders` - Bevat subknooppunten, die elk een bezit hebben `className` dat naar een `PageInfoProvider`verwijst.
+* `@node cq:infoProviders` - Bevat subknooppunten, die elk een bezit hebben  `className` dat naar een  `PageInfoProvider`. verwijst.
 
 **Definitie**
 
@@ -302,7 +302,7 @@ Definieert de configuratie voor de &quot;editbar&quot;.
 * `@prop cq:actions`- Lijst met handelingen (knoppen op de bewerkbalk of menu-items).
 * `@node cq:actionConfigs` - Widgetconfiguraties voor bewerkbalk- of menu-items.
 * `@prop cq:emptyText` - Tekst die moet worden weergegeven als er geen visuele inhoud aanwezig is.
-* `@node cq:dropTargets` - Verzameling van `{@link cq:DropTargetConfig}` knooppunten.
+* `@node cq:dropTargets` - Verzameling van  `{@link cq:DropTargetConfig}` knooppunten.
 
 **Definitie**
 
@@ -321,7 +321,7 @@ Definieert de configuratie voor de &quot;editbar&quot;.
 
 Vormt één dalingsdoel van een component. De naam van dit knooppunt wordt gebruikt als een id voor slepen en neerzetten.
 
-* `@prop accept` - Lijst van MIME-typen die door deze neerzetbestemming worden geaccepteerd; bijv. `["image/*"]`
+* `@prop accept` - Lijst van MIME-typen die door deze neerzetbestemming worden geaccepteerd; bijv.  `["image/*"]`
 * `@prop groups` - Lijst met slepen- en neerzetgroepen die een bron accepteren.
 * `@prop propertyName` - Naam van de eigenschap die wordt gebruikt om de verwijzing op te slaan.
 
@@ -406,7 +406,7 @@ Inhoud van een DAM-element.
    * `+ metadata (nt:unstructured)`
    * `+ renditions (nt:folder)`
 
-### dam:Asset {#dam-asset}
+### dam:Element {#dam-asset}
 
 **Beschrijving**
 
@@ -430,7 +430,7 @@ Miniatuur die een DAM-element vertegenwoordigt.
    * `mixin`
    * `+ dam:thumbnails (nt:folder)`
 
-## Containerlijst voor levering {#delivery-container-list}
+## Containerlijst {#delivery-container-list} leveren
 
 ### cq:containerList {#cq-containerlist}
 
@@ -443,7 +443,7 @@ Containerlijst.
 * `[cq:containerList]`
    * `mixin`
 
-## Afleveringspagina {#delivery-page}
+## Leveringspagina {#delivery-page}
 
 ### cq:Cq4PageAttributes {#cq-cq-pageattributes}
 
@@ -468,9 +468,9 @@ Containerlijst.
 
 **Beschrijving**
 
-Het knooppunttype `cq:contentPage` bevat de bezit en kindknoopdefinities voor ContentBus inhoudspagina&#39;s. Alleen wanneer dit mixintype wordt toegevoegd aan een knooppunt van het type `cq:page`, wordt een knooppunt een ContentBus-inhoudspagina.
+Het knooppunttype `cq:contentPage` bevat de bezit en kindknoopdefinities voor de pagina&#39;s van de ContentBus inhoud. Alleen wanneer dit mixintype wordt toegevoegd aan een knooppunt van het type `cq:page`, wordt een knooppunt een ContentBus-inhoudspagina.
 
-De items in a `cq:Cq4ContentPage` zijn:
+De punten in a `cq:Cq4ContentPage` zijn:
 
 * `@prop cq:csd` - De ContentBus-CSD van de pagina.
 * `@node cq:content` - De inhoud van de pagina. Dit onderliggende knooppunt bestaat niet als het paginaknooppunt de status &quot;Bestaande zonder inhoud&quot; of &quot;Verwijderd&quot; heeft.
@@ -493,7 +493,7 @@ Opiniepeilingconfiguratie.
 * `@prop source (String) mandatory` - Data source URI, this is required and must not empty
 * `@prop target (String)` - De doellocatie waar gegevens die uit de gegevensbron zijn opgehaald, worden opgeslagen. Dit is optioneel en wordt standaard ingesteld op het knooppunt cq:PollConfig.
 * `@prop interval (Long)` - Het interval in seconden waarmee naar nieuwe of bijgewerkte gegevens van de gegevensbron wordt gezocht. Dit is optioneel en wordt standaard ingesteld op 30 minuten (1800 seconden).
-* [Aangepaste services voor het importeren van gegevens maken voor Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/polling.html)
+* [Aangepaste services voor het importeren van gegevens voor Adobe Experience Manager maken](https://helpx.adobe.com/experience-manager/using/polling.html)
 
 **Definitie**
 
@@ -531,7 +531,7 @@ Een mix die een geografische locatie in decimale graden (DD) definieert.
    * `- latitude (double)`
    * `- longitude (double)`
 
-## Mailer {#mailer}
+## Aanwijzer {#mailer}
 
 ### cq:mailerMessage {#cq-mailermessage}
 
@@ -622,7 +622,7 @@ Voeg voor AEM 5.4 aan het einde van de lijst toe:
 
 * `- cq:rolloutConfigs (string) multiple /** deprecated **/`
 
-### cq:BluepintAction {#cq-blueprintaction}
+### cq:BlueprintAction {#cq-blueprintaction}
 
 **Beschrijving**
 
@@ -819,7 +819,7 @@ Elke gebruiker/openbare website kan de inhoud (Web2.0-stijl) labelen die wordt g
 
 **Beschrijving**
 
-Voegt een `cq:userContent` subknooppunt toe dat door gebruikers kan worden gewijzigd. Elke gebruiker zal zijn eigen `cq:userContent/<userid>` subnode hebben, die typisch de mixin heeft `cq:UserTaggable`.
+Voegt een `cq:userContent` subknooppunt toe dat door gebruikers kan worden gewijzigd. Elke gebruiker zal zijn eigen `cq:userContent/<userid>` subnode hebben, die typisch de mixin `cq:UserTaggable` heeft.
 
 **Definitie**
 
@@ -827,7 +827,7 @@ Voegt een `cq:userContent` subknooppunt toe dat door gebruikers kan worden gewij
    * `mixin`
    * `+ cq:userContent (nt:unstructured)`
 
-Uitgebreide variant, die de `cq:userContent` boom explicieter bepaalt
+Uitgebreide variant, die explicieter `cq:userContent` boom bepaalt
 
 * `[cq:AllowsUserContent]`
    * `mixin`
@@ -925,7 +925,7 @@ Deelvenster Tab
 
 **Definitie**
 
-* `[cq:TabPanel] > cq:Panel orderable&#39;
+* `[cq:TabPanel] > cq:Panel orderable&quot;
    * `- activeTab (long)`
 
 ### cq:Field {#cq-field}
@@ -943,7 +943,7 @@ Veld
 
 ## Wiki {#wiki}
 
-### wiki:onderwerp {#wiki-topic}
+### wiki:Onderwerp {#wiki-topic}
 
 **Beschrijving**
 
@@ -964,7 +964,7 @@ Wiki-onderwerp
    * `- wiki:logMessage (string)`
    * `- wiki:quietSave (boolean)`
 
-### wiki:gebruiker {#wiki-user}
+### wiki:Gebruiker {#wiki-user}
 
 **Beschrijving**
 
@@ -975,7 +975,7 @@ Wiki-gebruiker
 * `[wiki:User] mixin`
    * `- wiki:subscriptions (string) multiple`
 
-### wiki:eigenschappen {#wiki-properties}
+### wiki:Eigenschappen {#wiki-properties}
 
 **Beschrijving**
 
@@ -1135,7 +1135,7 @@ Of tabblad
    * `- workflowId (String) // not compulsory as this node will already be attached to the workflow node`
    * `- nodeId (String)`
 
-### cq:wachten {#cq-wait}
+### cq:wait {#cq-wait}
 
 **Beschrijving**
 

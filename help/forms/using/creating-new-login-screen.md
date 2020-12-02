@@ -1,8 +1,8 @@
 ---
 title: Een nieuw aanmeldingsscherm maken
 seo-title: Een nieuw aanmeldingsscherm maken
-description: Hoe kan ik de aanmeldingspagina van LiveCycle-modules wijzigen, bijvoorbeeld van de werkruimte AEM Forms of Forms Manager.
-seo-description: Hoe kan ik de aanmeldingspagina van LiveCycle-modules wijzigen, bijvoorbeeld van de werkruimte AEM Forms of Forms Manager.
+description: Hoe kan ik de aanmeldingspagina van LiveCycle-modules wijzigen, bijvoorbeeld van de AEM Forms-werkruimte of Forms Manager.
+seo-description: Hoe kan ik de aanmeldingspagina van LiveCycle-modules wijzigen, bijvoorbeeld van de AEM Forms-werkruimte of Forms Manager.
 uuid: 2d4a72f4-cc9a-412d-856d-0fca75f1272b
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -20,11 +20,11 @@ ht-degree: 3%
 
 # Een nieuw aanmeldingsscherm maken{#creating-a-new-login-screen}
 
-U kunt het login scherm van alle modules wijzigen van AEM Forms die het login van AEM Forms scherm gebruiken. De wijzigingen zijn bijvoorbeeld van invloed op het aanmeldingsscherm van de werkruimte Forms Manager en AEM Forms.
+U kunt het aanmeldingsscherm wijzigen van alle AEM Forms-modules die het AEM Forms-aanmeldingsscherm gebruiken. De wijzigingen zijn bijvoorbeeld van invloed op het aanmeldingsscherm van zowel de Forms Manager- als de AEM Forms-werkruimte.
 
 ## Vereiste {#prerequisite}
 
-1. Meld u aan `/lc/crx/de` met beheerdersmachtigingen.
+1. Meld u aan bij `/lc/crx/de` met beheerdersmachtigingen.
 1. Voer de volgende handelingen uit:
 
    1. Repliceer de hiërarchische structuur: van `/libs/livecycle/core/content` om `/apps/livecycle/core/content`.
@@ -35,9 +35,9 @@ U kunt het login scherm van alle modules wijzigen van AEM Forms die het login va
 
       Van: `/libs/livecycle/core`
 
-      to: `/apps/livecycle/core`.
+      tot: `/apps/livecycle/core`.
 
-   1. Verwijder de inhoud van de `/apps/livecycle/core` map.
+   1. Verwijder de inhoud van de map `/apps/livecycle/core`.
 
 1. Voer de volgende handelingen uit:
 
@@ -49,26 +49,26 @@ U kunt het login scherm van alle modules wijzigen van AEM Forms die het login va
 
 ### Een nieuwe landinstelling toevoegen {#adding-a-new-locale}
 
-1. Kopieer de `i18n` map:
+1. Kopieer de map `i18n`:
 
    * Van `/libs/livecycle/core/components/login`
-   * to `/apps/livecycle/core/components/login`
+   * tot `/apps/livecycle/core/components/login`
 
-1. Verwijder alle mappen in de map, `i18n` behalve één map, bijvoorbeeld `en`.
+1. Verwijder alle mappen in `i18n`, behalve één, bijvoorbeeld `en`.
 
-1. Voer in de map de volgende handelingen uit `en`:
+1. Voer in de map `en` de volgende handelingen uit:
 
    1. Wijzig de naam van de map in de naam van de landinstelling die u wilt ondersteunen. Bijvoorbeeld, `ar`.
 
-   1. Wijzig de `jcr:language` waarde van de eigenschap in `ar`(voor de `ar` map).
+   1. Wijzig de waarde van de eigenschap `jcr:language` in `ar` (voor de map `ar`).
    >[!NOTE]
    >
-   >Als de landinstelling een combinatie van een taalcode is, wijzigt u bijvoorbeeld `ar-DZ`de mapnaam en de eigenschapswaarde in `ar-DZ`.
+   >Als locale een taal-land codecombinatie is, bijvoorbeeld `ar-DZ`, dan verander de omslagnaam en bezitswaarde in `ar-DZ`.
 
 1. Kopiëren `login.jsp`:
 
    * Van `/libs/livecycle/core/components/login`
-   * to `/apps/livecycle/core/components/login`
+   * tot `/apps/livecycle/core/components/login`
 
 1. Wijzig het volgende codefragment voor `/apps/livecycle/core/components/login/login.jsp`:
 
@@ -198,22 +198,22 @@ String browserLocale = "en";
 
 ### Nieuwe tekst toevoegen of bestaande tekst wijzigen {#adding-new-text-or-modifying-existing-text}
 
-1. Map kopiëren `i18n` :
+1. Map `i18n` kopiëren:
 
    * Van `/libs/livecycle/core/components/login`
-   * to `/apps/livecycle/core/components/login`
+   * tot `/apps/livecycle/core/components/login`
 
-1. Wijzig nu de waarde van de eigenschap `sling:message` van het knooppunt (in de gewenste map met landinstellingscode) waarvoor u de tekst wilt wijzigen. Vertaling wordt uitgevoerd via de sleutel die wordt vermeld in de waarde van de `sling:key` eigenschap van het knooppunt.
+1. Wijzig nu de waarde van de eigenschap `sling:message` van het knooppunt (onder de gewenste map met landinstellingscode) waarvoor u de tekst wilt wijzigen. Vertaling wordt uitgevoerd via de sleutel die wordt vermeld in de waarde van de eigenschap `sling:key` van het knooppunt.
 
 1. Voer de volgende handelingen uit voor het toevoegen van een nieuw sleutelwaardepaar. Controleer een voorbeeld in het volgende schermafbeelding.
 
-   1. Maak een knooppunt van het type `sling:MessageEntry`of kopieer een bestaand knooppunt en wijzig de naam ervan onder alle mappen voor landinstellingen.
+   1. Maak een knooppunt van het type `sling:MessageEntry` of kopieer een bestaand knooppunt en wijzig de naam ervan onder alle mappen voor landinstellingen.
    1. Kopiëren `login.jsp` :
 
       * Van `/libs/livecycle/core/components/login`
 
-      * to `/apps/livecycle/core/components/login`
-   1. Wijzigen `/apps/livecycle/core/components/login/login.jsp` om de zojuist toegevoegde tekst op te nemen.
+      * tot `/apps/livecycle/core/components/login`
+   1. Wijzig `/apps/livecycle/core/components/login/login.jsp` om de toegevoegde tekst op te nemen.
 
    ![Nieuw sleutelwaardepaar toevoegen](assets/capture_new.png)
 
@@ -240,12 +240,12 @@ String browserLocale = "en";
 
 ### Nieuwe stijl toevoegen of bestaande stijl wijzigen {#adding-new-style-or-modifying-existing-style}
 
-1. Kopieer `login` knooppunt:
+1. Knooppunt `login` kopiëren:
 
    * Van `/libs/livecycle/core/content`
-   * to `/apps/livecycle/core/content`
+   * tot `/apps/livecycle/core/content`
 
-1. Bestanden `login.js` en `jquery-1.8.0.min.js`, van het knooppunt verwijderen `/apps/livecycle/core/content/login.`
+1. Bestanden `login.js` en `jquery-1.8.0.min.js` verwijderen uit het knooppunt `/apps/livecycle/core/content/login.`
 1. Wijzig de stijlen in het CSS-bestand.
 1. Nieuwe stijlen toevoegen:
 
@@ -254,8 +254,8 @@ String browserLocale = "en";
 
       * Van `/libs/livecycle/core/components/login`
 
-      * to `/apps/livecycle/core/components/login`
-   1. Wijzig `/apps/livecycle/core/components/login/login.jsp` deze optie om de zojuist toegevoegde stijlen op te nemen.
+      * tot `/apps/livecycle/core/components/login`
+   1. Wijzig `/apps/livecycle/core/components/login/login.jsp` om de toegevoegde stijlen op te nemen.
 
 
 
@@ -270,7 +270,7 @@ css.newLoginContentArea {
    }
 ```
 
-* Wijzig de volgende code in `/apps/livecycle/core/components/login.jsp`.
+* Wijzig het volgende in `/apps/livecycle/core/components/login.jsp`.
 
 
    ```jsp
@@ -293,11 +293,11 @@ css.newLoginContentArea {
 1. Voeg nieuwe afbeeldingen toe in `/apps/livecycle/core/content/login`. Afbeelding toevoegen:
 
    1. WebDAV-client installeren.
-   1. Navigeer naar de `/apps/livecycle/core/content/login` map met de webDAV-client. Zie voor meer informatie: [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html).
+   1. Navigeer naar de map `/apps/livecycle/core/content/login` met WebDAV-client. Zie voor meer informatie: [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html).
 
    1. Voeg nieuwe afbeeldingen toe.
 
-1. Voeg nieuwe stijlen toe die `/apps/livecycle/core/content/login/login.css,` overeenkomen met nieuwe afbeeldingen die in zijn toegevoegd `/apps/livecycle/core/content/login`.
+1. Voeg nieuwe stijlen toe in `/apps/livecycle/core/content/login/login.css,` die overeenkomen met nieuwe afbeeldingen die worden toegevoegd in `/apps/livecycle/core/content/login`.
 1. Gebruik de nieuwe stijlen in `login.jsp` bij `/apps/livecycle/core/components`.
 
 Bijvoorbeeld:

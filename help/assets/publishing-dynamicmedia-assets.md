@@ -16,14 +16,14 @@ ht-degree: 2%
 ---
 
 
-# Publishing Dynamic Media Assets {#publishing-dynamic-media-assets}
+# Dynamische media-elementen publiceren {#publishing-dynamic-media-assets}
 
-U publiceert uw dynamische media-elementen door de elementen te selecteren die u al hebt geüpload en tikt **[!UICONTROL Publish]** of **[!UICONTROL Quick Publish.]** Nadat uw dynamische media-elementen zijn gepubliceerd, kunt u ze via een URL op een webpagina opnemen of door de code op de pagina in te sluiten.
+U publiceert uw dynamische media-elementen door de elementen te selecteren die u al hebt geüpload en op **[!UICONTROL Publish]** of **[!UICONTROL Quick Publish.]** te tikken nadat uw dynamische media-elementen zijn gepubliceerd, zijn deze beschikbaar voor opname in een webpagina via een URL of door de code in te sluiten op de pagina.
 
-U kunt ook direct elementen publiceren die u uploadt—zonder tussenkomst van de gebruiker. Zie Dynamische media [configureren - Scene7-modus.](config-dms7.md)
-Of u kunt selectief elementen publiceren naar Dynamic Media of AEM, elkaar wederzijds uitsluiten, met behulp van **[!UICONTROL Selective Publish]** op mapniveau. Zie [Werken met Selectieve publicatie in dynamische media.](/help/assets/selective-publishing.md)
+U kunt ook direct elementen publiceren die u uploadt—zonder tussenkomst van de gebruiker. Zie [Dynamische media configureren - Scene7-modus.](config-dms7.md)
+Of u kunt selectief elementen publiceren naar Dynamic Media of AEM, elkaar wederzijds uitsluiten, met behulp van  **[!UICONTROL Selective Publish]** op mapniveau. Zie [Werken met Selectieve publicatie in dynamische media.](/help/assets/selective-publishing.md)
 
-In het **[!UICONTROL Card View]** gedeelte ziet u een klein globpictogram direct onder de naam van een element en links van de datum en tijd om aan te geven dat het is gepubliceerd. In de **[!UICONTROL List View]** geeft een kolom **[!UICONTROL Published]** aan welke assets zijn gepubliceerd en welke niet.
+In **[!UICONTROL Card View]** verschijnt een klein globe pictogram direct onder de naam van een element en links van de datum en tijd om erop te wijzen dat het wordt gepubliceerd. In de **[!UICONTROL List View]** geeft een kolom **[!UICONTROL Published]** aan welke assets zijn gepubliceerd en welke niet.
 
 >[!NOTE]
 >
@@ -31,9 +31,9 @@ In het **[!UICONTROL Card View]** gedeelte ziet u een klein globpictogram direct
 
 Als u video-elementen direct na het coderen wilt publiceren, moet u ervoor zorgen dat de codering volledig is uitgevoerd. Wanneer video&#39;s nog steeds worden gecodeerd, wordt u via het systeem op de hoogte gebracht van een actieve workflow voor videoverwerking. Wanneer videocodering is voltooid, moet u een voorvertoning van de video-uitvoeringen kunnen bekijken. Op dat moment kunt u de video&#39;s veilig publiceren zonder publicatiefouten te maken.
 
-See also [Linking URLs to your Web Application](linking-urls-to-yourwebapplication.md).
+Zie ook [URLs aan uw Toepassing van het Web verbinden](linking-urls-to-yourwebapplication.md).
 
-See also [Embedding the Dynamic Media Video or Image viewer on a web page](embed-code.md)
+Zie ook [De Dynamic Media Video- of Image-viewer insluiten op een webpagina](embed-code.md)
 
 >[!NOTE]
 >
@@ -44,9 +44,9 @@ See also [Embedding the Dynamic Media Video or Image viewer on a web page](embed
 
 
 
-Zie Elementen [publiceren voor gedetailleerde informatie over het publiceren van een set of element.](manage-assets.md)
+Zie [Elementen publiceren.](manage-assets.md)
 
-## HTTP/2-levering van Dynamic Media-elementen {#http-delivery-of-dynamic-media-assets}
+## HTTP/2-levering van dynamische media-elementen {#http-delivery-of-dynamic-media-assets}
 
 AEM ondersteunt nu de levering van alle Dynamic Media-inhoud (afbeeldingen en video) via HTTP/2. Dit wil zeggen dat er een gepubliceerde URL of insluitcode voor de afbeelding of video beschikbaar is om te worden geïntegreerd met elke toepassing die een gehoste element accepteert. Dat gepubliceerde element wordt vervolgens geleverd via het HTTP/2-protocol. Deze methode van levering verbetert de manier browsers en servers communiceren, die voor betere reactie en ladingstijden van al uw Dynamische activa van Media toestaan.
 

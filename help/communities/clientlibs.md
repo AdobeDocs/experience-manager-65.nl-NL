@@ -27,17 +27,17 @@ In deze sectie van de documentatie wordt beschreven hoe u clientbibliotheken (cl
 
 Voor basisinformatie gaat u naar :
 
-* [Clientzijbibliotheken](/help/sites-developing/clientlibs.md) gebruiken die zowel gebruiksdetails als foutopsporingsgereedschappen bieden
-* [Clientlibs voor SCF](/help/communities/client-customize.md#clientlibs) die nuttige informatie wanneer het aanpassen van componenten SCF verstrekt
+* [Clientzijbibliotheken gebruiken die ](/help/sites-developing/clientlibs.md) gebruiksdetails en foutopsporingsgereedschappen bieden
+* [Clientlibs voor ](/help/communities/client-customize.md#clientlibs) SCFwhich verstrekt nuttige informatie wanneer het aanpassen van componenten SCF
 * [Blog: AEM Clientbibliotheken, zoals wordt uitgelegd in het voorbeeld](https://blogs.adobe.com/experiencedelivers/experience-management/clientlibs-explained-example/)
 
-## Waarom Clientlibs vereist zijn {#why-clientlibs-are-required}
+## Waarom Clientlibs vereist {#why-clientlibs-are-required}
 
 Clientlibs zijn vereist voor het correct functioneren (JavaScript) en opmaken (CSS) van een component.
 
 Wanneer er een [communautaire functie](/help/communities/functions.md) voor een eigenschap bestaat, zullen alle noodzakelijke componenten en configuraties, met inbegrip van de vereiste clientlibs, in de communautaire plaats aanwezig zijn. Alleen als de auteurs extra componenten ter beschikking moeten hebben, moeten er extra clientlibs worden toegevoegd.
 
-Wanneer de vereiste clientlibs ontbreken, kan het [toevoegen van een Community-component aan een pagina](/help/communities/author-communities.md) leiden tot JavaScript-fouten en een onverwachte weergave.
+Wanneer de vereiste clientlibs ontbreken, [kan het toevoegen van een communautaire component aan een pagina ](/help/communities/author-communities.md) in fouten javascript evenals een onverwachte verschijning resulteren.
 
 ### Voorbeeld: Geplaatste revisies zonder Clientlibs {#example-placed-reviews-without-clientlibs}
 
@@ -51,32 +51,32 @@ Wanneer de vereiste clientlibs ontbreken, kan het [toevoegen van een Community-c
 
 De essentiële eigenschapinformatie voor ontwikkelaars identificeert de vereiste clientlibs.
 
-Daarnaast kunt u vanuit een AEM naar de [Community Components Guide](/help/communities/components-guide.md) bladeren om een lijst met clientlib-categorieën weer te geven die voor een component zijn vereist.
+Bovendien, van een AEM instantie, die aan [Communautaire Gids van Componenten ](/help/communities/components-guide.md) doorbladert verleent toegang tot een lijst van cliëntlib categorieën die voor een component worden vereist.
 
-Bijvoorbeeld helemaal boven aan de pagina [](https://localhost:4502/content/community-components/en/reviews.html) Revisies worden de vereiste clientlibs weergegeven
+Bijvoorbeeld helemaal boven aan de pagina [Revisies](https://localhost:4502/content/community-components/en/reviews.html) worden de vereiste clientlibs weergegeven
 
 * cq.ckeditor
 * cq.social.hbs.reviews
 
 ![clientlibs-reviews](assets/clientlibs-reviews.png)
 
-## Vereiste clips toevoegen {#adding-required-clientlibs}
+## Vereiste clips {#adding-required-clientlibs} toevoegen
 
 Wanneer u een Gemeenschapscomponent aan een pagina wilt toevoegen, moet u de vereiste clientlibs voor de component toevoegen als deze nog niet aanwezig is.
 
 Gebruik [CRXDE|Lite](#using-crxde-lite) om een bestaande cliëntlibslist voor een communautaire plaatspagina te wijzigen.
 
-Om een clientlib voor een communautaire plaats toe te voegen gebruikend [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
+Een clientlib voor een communitysite toevoegen met [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
 * Blader naar [https://&lt;server>:&lt;port>/crx/de](https://localhost:4502/crx/de).
-* Zoek het `clientlibslist` knooppunt voor de pagina waaraan u de component wilt toevoegen:
+* Zoek het knooppunt `clientlibslist` voor de pagina waaraan u de component wilt toevoegen:
 
    * `/content/sites/sample/en/page/jcr:content/clientlibslist`
 
-* Selecteer `clientlibslist` knooppunt:
+* Selecteer `clientlibslist`-knooppunt:
 
    * Zoek de eigenschap String[] `scg:requiredClientLibs`.
-   * Selecteer het `Value` item om het dialoogvenster String-array te openen.
+   * Selecteer `Value` om het dialoogvenster String-array te openen.
 
       * Schuif indien nodig omlaag.
       * Selecteer + om een nieuwe clientbibliotheek in te voeren.
@@ -84,14 +84,14 @@ Om een clientlib voor een communautaire plaats toe te voegen gebruikend [CRXDE L
          * Herhaal deze bewerking om meer clientbibliotheken toe te voegen.
 
          * Selecteer **OK**.
-   * Selecteer **Alles** opslaan.
+   * Selecteer **Alles opslaan**.
 
 
 >[!NOTE]
 >
 >Als de site geen gemeenschapssite is, moet het bestaan of de locatie van de clientbibliotheken die voor de site worden gebruikt, worden gedetecteerd.
 
-Gebruikend het [Beginnen met het voorbeeld van AEM Communities](/help/communities/getting-started.md) , waar `site-name` is *geëngageerd*, is dit hoe de cliëntliblist zou verschijnen als het toevoegen van de revisiecomponent:
+Gebruikend [Aan de slag met AEM Communities](/help/communities/getting-started.md) voorbeeld, waar `site-name` *engageren* is, is dit hoe cliëntliblist zou verschijnen als het toevoegen van de revisiecomponent:
 
 ![revisie-component](assets/review-component.png)
 

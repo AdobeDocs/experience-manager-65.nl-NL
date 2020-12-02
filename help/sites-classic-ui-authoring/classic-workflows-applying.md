@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 22712b73-90f2-4329-b32f-dbb7ce802d1d
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '273'
+ht-degree: 11%
 
 ---
 
@@ -29,13 +32,13 @@ Wanneer u de workflow toepast, geeft u de volgende informatie op:
 
 >[!NOTE]
 >
->AEM-beheerders kunnen workflows starten met [verschillende andere methoden](/help/sites-administering/workflows-starting.md).
+>AEM beheerders kunnen werkstromen beginnen gebruikend [verscheidene andere methodes](/help/sites-administering/workflows-starting.md).
 
 ## Workflows toepassen {#applying-workflows}
 
 Workflows kunnen worden gestart vanuit de websiteconsole of, wanneer u een pagina bewerkt, vanuit Sidetrap.
 
-De kolom **Status** in de console **Websites** geeft aan of een workflow op een pagina is toegepast:
+De **Status** kolom in **Websites** console wijst erop of een werkschema op een pagina is toegepast:
 
 ![workflowstatus](assets/workflowstatus.png)
 
@@ -46,14 +49,14 @@ De kolom **Status** in de console **Websites** geeft aan of een workflow op een 
 1. Selecteer de pagina in de paginalijst en klik op Workflow.
 1. Selecteer in het dialoogvenster Workflow starten de workflow die u wilt toepassen. Voer eventueel een opmerking en een titel in. Klik vervolgens op Start.
 
-### Workflow starten met Sidetrap {#starting-a-workflow-using-sidekick}
+### Starten van een workflow met Sidetrap {#starting-a-workflow-using-sidekick}
 
 1. Open de websiteconsole.
 1. Open de gewenste pagina.
 1. Selecteer het tabblad Workflow in de Sidetrap.
-1. Vouw het dialoogvenster **Workflow** uit, zodat u de **workflow** kunt selecteren en eventueel de **werkstroomtitel** en **opmerking** kunt invoeren.
+1. Breid **Workflow** dialoog uit, toestaand u om **Workflow** te selecteren en naar keuze **Titel van workflow** en **Commentaar** in te gaan.
 
    ![workflowstartsidekick](assets/workflowstartsidekick.png)
 
-1. Klik op Workflow **** starten om een nieuwe workflowinstantie te starten met de eigenschappen die u hebt geconfigureerd en de huidige pagina als de payload. De workflow wordt nu uitgevoerd.
+1. Klik **Workflow van het Begin** om een nieuwe werkschemainstantie met de eigenschappen te beginnen u en de huidige pagina als nuttige lading vormde. De workflow wordt nu uitgevoerd.
 

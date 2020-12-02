@@ -1,8 +1,8 @@
 ---
 title: Formulieren met API's op een webpagina weergeven
 seo-title: Formulieren met API's op een webpagina weergeven
-description: U kunt via programmacode zoeken in Forms Manager om een gefilterde lijst met formulieren op uw eigen webpagina's op te halen.
-seo-description: U kunt via programmacode zoeken in Forms Manager om een gefilterde lijst met formulieren op uw eigen webpagina's op te halen.
+description: U kunt via programmacode vragen in Forms Manager om een gefilterde lijst met formulieren op uw eigen webpagina's op te halen.
+seo-description: U kunt via programmacode vragen in Forms Manager om een gefilterde lijst met formulieren op uw eigen webpagina's op te halen.
 uuid: e51cb2d4-816f-4e6d-a081-51e4999b00ba
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -17,13 +17,13 @@ ht-degree: 1%
 ---
 
 
-# Formulieren met API&#39;s op een webpagina weergeven {#listing-forms-on-a-web-page-using-apis}
+# Formulieren op een webpagina weergeven met API&#39;s {#listing-forms-on-a-web-page-using-apis}
 
-AEM Forms beschikken over een REST-API voor zoekopdrachten die webontwikkelaars kunnen gebruiken om een set formulieren die aan de zoekcriteria voldoen, op te vragen en op te halen. U kunt API&#39;s gebruiken om formulieren te zoeken op basis van verschillende filters. Het reactieobject bevat formulierkenmerken, eigenschappen en renderpunten van formulieren.
+AEM Forms biedt een REST-API voor zoekopdrachten die webontwikkelaars kunnen gebruiken om een set formulieren op te vragen en op te halen die aan de zoekcriteria voldoet. U kunt API&#39;s gebruiken om formulieren te zoeken op basis van verschillende filters. Het reactieobject bevat formulierkenmerken, eigenschappen en renderpunten van formulieren.
 
-Als u formulieren wilt zoeken met de REST API, stuurt u een GET-aanvraag naar de server `https://'[server]:[port]'/libs/fd/fm/content/manage.json` met de hieronder beschreven queryparameters.
+Als u formulieren wilt zoeken met de REST API, stuurt u een verzoek van de GET naar de server op `https://'[server]:[port]'/libs/fd/fm/content/manage.json` met de hieronder beschreven queryparameters.
 
-## Parameters query {#query-parameters}
+## Query-parameters {#query-parameters}
 
 <table>
  <tbody>
@@ -35,7 +35,7 @@ Als u formulieren wilt zoeken met de REST API, stuurt u een GET-aanvraag naar de
    <td>func<br /> </td>
    <td><p>Geeft de aan te roepen functie op. Als u formulieren wilt zoeken, stelt u de waarde van het <code>func </code>kenmerk in op <code>searchForms</code>.</p> <p>Bijvoorbeeld, <code class="code">
        URLParameterBuilder entityBuilder=new URLParameterBuilder ();
-       entityBuilder.add("func", "searchForms");</code></p> <p><strong>Opmerking:</strong> <em>Deze parameter is verplicht.</em><br /> </p> </td>
+       entityBuilder.add("func", "searchForms");</code></p> <p><strong>Opmerking: </strong> <em>deze parameter is verplicht.</em><br /> </p> </td>
   </tr>
   <tr>
    <td>appPath<br /> </td>
@@ -94,11 +94,11 @@ Als u formulieren wilt zoeken met de REST API, stuurt u een GET-aanvraag naar de
        <li>ENDSWITH - A eindigt met B als B het einddeel van A is</li>
        <li>LIKE - Implementeert de operator LIKE</li>
        <li>AND - Meerdere instructies combineren</li>
-      </ul> <p><strong>Opmerking:</strong> <em>De operatoren GT, LT, GTEQ en LTEQ zijn van toepassing op eigenschappen van lineair type, zoals LONG, DUBBEL en DATE.</em></p> </li>
+      </ul> <p><strong>Opmerking:</strong> <em>GT-, LT-, GTEQ- en LTEQ-operatoren zijn van toepassing op eigenschappen van lineair type, zoals LONG, DUBBEL en DATE.</em></p> </li>
     </ul> </td>
   </tr>
   <tr>
-   <td>bestellingen<br /> </td>
+   <td>orders<br /> </td>
    <td><p>Hiermee geeft u de volgordecriteria voor de zoekresultaten op. De criteria worden gedefinieerd in de JSON-indeling. U kunt zoekresultaten sorteren op meerdere velden. De resultaten worden gesorteerd in de volgorde waarin de velden in de query worden weergegeven.</p> <p>Bijvoorbeeld,</p> <p>Voeg de volgende parameter toe om queryresultaten op te halen die zijn geordend door eigenschap title in oplopende volgorde: </p> <p><code class="code">JSONArray orderingsArray=new JSONArray();
        JSONObject orderings=new JSONObject();
        orderings.put("name", "title");
@@ -109,14 +109,14 @@ Als u formulieren wilt zoeken met de REST API, stuurt u een GET-aanvraag naar de
      <li><strong>naam</strong>: Hiermee geeft u de naam op van de eigenschap die moet worden gebruikt om de zoekresultaten te ordenen.</li>
      <li><strong>criteria</strong>: Hiermee geeft u de volgorde van de resultaten op. Het kenmerk order accepteert de volgende waarden:
       <ul>
-       <li>ASC - Gebruik ASC om resultaten in oplopende volgorde te rangschikken.<br /> </li>
+       <li>ASC - Gebruik ASC om de resultaten in oplopende volgorde te rangschikken.<br /> </li>
        <li>DES - Gebruik DES om resultaten in dalende orde te rangschikken.</li>
       </ul> </li>
     </ul> </td>
   </tr>
   <tr>
    <td>includeXdp</td>
-   <td>Geeft aan of de binaire inhoud moet worden opgehaald. Het <code>includeXdp</code> kenmerk is van toepassing op elementen van het type <code>FORM</code>, <code>PDFFORM</code>en <code>PRINTFORM</code>.</td>
+   <td>Geeft aan of de binaire inhoud moet worden opgehaald. Het kenmerk <code>includeXdp</code> is van toepassing op elementen van het type <code>FORM</code>, <code>PDFFORM</code> en <code>PRINTFORM</code>.</td>
   </tr>
   <tr>
    <td>assetType</td>

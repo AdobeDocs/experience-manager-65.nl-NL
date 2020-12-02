@@ -23,9 +23,9 @@ ht-degree: 37%
 
 ## Voorwaarden {#pre-requisites}
 
-Het installatieprogramma van de Ontwerper van AEM Forms vereist de versie met 32 bits van [Visuele C++ redistributable runtime pakket 2012](https://support.microsoft.com/en-in/help/2977003/the-latest-supported-visual-c-downloads) en [Visuele C++ redistributable runtime pakket 2013](https://support.microsoft.com/en-in/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package). Zorg ervoor dat de hierboven vermelde herdistribueerbare runtimepakketten zijn geïnstalleerd voordat u de installatie start.
+Voor het installatieprogramma van AEM Forms Designer is de 32-bits versie van [Visual C++ redistributable runtime package 2012](https://support.microsoft.com/en-in/help/2977003/the-latest-supported-visual-c-downloads) en [Visual C++ redistributable runtime package 2013](https://support.microsoft.com/en-in/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package) vereist. Zorg ervoor dat de hierboven vermelde herdistribueerbare runtimepakketten zijn geïnstalleerd voordat u de installatie start.
 
-## Designer installeren {#install-designer}
+## Designer {#install-designer} installeren
 
 Designer is beschikbaar als zelfstandig installatieprogramma en is ook gebundeld met WorkBench. Voer de volgende stappen uit als u een zelfstandig installatieprogramma voor Designer gebruikt:
 

@@ -34,7 +34,7 @@ De stappen om componenten dynamisch toe te voegen SCF zijn:
 
 1. [De component toevoegen aan de DOM](#dynamically-add-component-to-dom)
 
-1. [Laad de component](#sideload-by-invoking-scf) met een van de volgende twee methoden:
+1. [Laad de ](#sideload-by-invoking-scf) component met een van de volgende twee methoden:
 
 * [Dynamische insluiting](#dynamic-inclusion)
    * Alle dynamisch toegevoegde componenten versterken
@@ -72,9 +72,9 @@ Hieronder ziet u een voorbeeld van een component voor toegevoegde opmerkingen:
 </div>
 ```
 
-## Sideload door SCF aan te roepen {#sideload-by-invoking-scf}
+## Sideload door SCF {#sideload-by-invoking-scf} aan te roepen
 
-### Dynamische insluiting {#dynamic-inclusion}
+### Dynamische integratie {#dynamic-inclusion}
 
 De dynamische opneming gebruikt een laarzentrekkerverzoek dat in SCF onderzoek DOM resulteert en bootsrapping alle componenten SCF die op de pagina worden gevonden.
 
@@ -90,4 +90,4 @@ In plaats van alle SCF-componenten die in het DOM worden gevonden, te bootstrapp
 
 `SCF.addComponent(document.getElementById(*someId*));`
 
-Waar `someId` is de waarde van het `data-component-id` kenmerk.
+Hierbij is `someId` de waarde van het `data-component-id`-kenmerk.

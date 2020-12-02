@@ -19,7 +19,7 @@ ht-degree: 0%
 ---
 
 
-# De weergave wijzigen (GB) {#alter-the-appearance-hbs}
+# De vormgeving wijzigen (HBS) {#alter-the-appearance-hbs}
 
 Nu de componenten voor het systeem van de douanecommentaar in de toepassingsfolder (/apps) op zijn plaats zijn, met een resourceSuperType die naar het standaardcommentaarsysteem en het aangepaste Model/Beeld verwijzen geregistreerd, is het mogelijk om de implementatie te wijzigen.
 
@@ -29,11 +29,11 @@ Voor een eenvoudige demonstratie, een visuele functie, wordt de avatar verwijder
 >
 >Als u de extensie wilt gebruiken, moet de instantie van het opmerkingensysteem in een website die wordt beïnvloed (content), het resourceType instellen op het aangepaste opmerkingssysteem.
 
-## De HBS-scripts wijzigen {#modify-the-hbs-scripts}
+## Wijzig de Manuscripten van GB {#modify-the-hbs-scripts}
 
 Met [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
-* Openen [/apps/custom/components/comments/comment/**comment.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
+* [/apps/custom/components/comments/comment/**comment.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
 
    * Plaats een opmerking bij de tag die de avatar bevat voor een commentaarbericht (~ regel 21):
 
@@ -43,7 +43,7 @@ Met [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
          -->
       ```
 
-* Openen [/apps/custom/components/comments/**comments.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
+* [/apps/custom/components/comments/**comments.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs) openen
 
    * Verwijder de commentaarmarkering die de avatar voor de volgende commentaaringang (~ lijn 44) omvat:
 
@@ -53,9 +53,9 @@ Met [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
          -->
       ```
 
-* Alles **opslaan selecteren**
+* Selecteer **Alles opslaan**
 
-### Aangepaste app repliceren {#replicate-custom-app}
+### Aangepaste app {#replicate-custom-app} repliceren
 
 Nadat de toepassing is gewijzigd, moet de aangepaste component opnieuw worden gerepliceerd.
 
@@ -65,13 +65,13 @@ Een manier om dit te doen is:
 
    * Selecteer **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Replication]**.
    * Selecteer **[!UICONTROL Activate Tree]**.
-   * Instellen `Start Path` op `/apps/custom`.
-   * Deselecteer **[!UICONTROL Only Modified]**.
-   * Selecteer **[!UICONTROL Activate]** de knop.
+   * Stel `Start Path` in op `/apps/custom`.
+   * Schakel **[!UICONTROL Only Modified]** uit.
+   * Selecteer **[!UICONTROL Activate]** knoop.
 
 ### Gewijzigde opmerking weergeven op gepubliceerde voorbeeldpagina {#view-modified-comment-on-published-sample-page}
 
-[Als u doorgaat met de ervaring](/help/communities/extend-sample-page.md#publish-sample-page) met het publicatieexemplaar, dat nog steeds is aangemeld als dezelfde gebruiker, kunt u de pagina nu vernieuwen in de publicatieomgeving om de wijziging te bekijken om de avatar te verwijderen:
+[Als u doorgaat met de ](/help/communities/extend-sample-page.md#publish-sample-page) ervaring met het publicatieexemplaar, dat nog steeds is aangemeld als dezelfde gebruiker, kunt u de pagina nu vernieuwen in de publicatieomgeving om de wijziging te bekijken om de avatar te verwijderen:
 
 ![view-modified-content](assets/view-modified-content.png)
 

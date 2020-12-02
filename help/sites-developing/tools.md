@@ -12,6 +12,9 @@ discoiquuid: 3cf0fd8d-7fc8-468a-bb1e-1debb68a82a5
 docset: aem65
 translation-type: tm+mt
 source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+workflow-type: tm+mt
+source-wordcount: '312'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,7 @@ source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
 
 AEM biedt:
 
-* [een framework voor het testen van de gebruikersinterface](/help/sites-developing/hobbes.md)van componenten.
+* [een framework voor het testen van de gebruikersinterface](/help/sites-developing/hobbes.md) van componenten.
 * [een mechanisme voor het testen van en het opsporen van fouten in componenten](/help/sites-developing/developer-mode.md).
 
 Hieronder vindt u twee Open Source Testing-gereedschappen:
@@ -31,17 +34,17 @@ Hieronder vindt u twee Open Source Testing-gereedschappen:
 
 Selenium wordt gebruikt voor functietests in een browser met één gebruiker per activiteit. Hierbij worden teststappen (klikken) vastgelegd als HTML-tabellen of Java-klassen.
 
-Zie [https://www.seleniumhq.org/](https://www.seleniumhq.org/)voor meer informatie.
+Zie [https://www.seleniumhq.org/](https://www.seleniumhq.org/) voor meer informatie.
 
 **JMeter**
 
 JMeter wordt gebruikt om aanvragen te volgen en kan worden gebruikt voor functionele, prestatie- en stresstests.
 
-Zie [https://jakarta.apache.org/jmeter/](https://jakarta.apache.org/jmeter)voor meer informatie.
+Zie [https://jakarta.apache.org/jmeter/](https://jakarta.apache.org/jmeter) voor meer informatie.
 
 Er zijn ook veel bedrijfseigen instrumenten om tests te automatiseren en testplannen te beheren.
 
-### Tekstspatiëring {#tracking}
+### {#tracking} bijhouden
 
 De volgende gereedschappen zijn gemakkelijk beschikbaar. Nochtans is een zeer belangrijke kwestie in alle gevallen de beschikbaarheid van de gegevens aan alle leden van het projectteam - partner en klant.
 
@@ -51,14 +54,14 @@ Een bug-volgsysteem dat aan uw eigen vereisten kan worden gevormd.
 
 **Werkbladen**
 
-Hoewel spreadsheets niet specifiek voor foutopsporing worden gebruikt, worden deze spreadsheets vaak ** misbruikt omdat ze gemakkelijk te begrijpen zijn en de meeste gebruikers ervaring hebben met hun functionaliteit.
+Hoewel spreadsheets niet specifiek voor het opsporen van fouten worden gebruikt, worden spreadsheets vaak *mis* voor dit doel gebruikt, omdat ze gemakkelijk te begrijpen zijn en de meeste gebruikers ervaring hebben met hun functionaliteit.
 
 Als deze voor het volgen dan worden gebruikt:
 
 * zij moeten eenvoudig worden gehouden .
 * het aantal afzonderlijke spreadsheets moet tot een minimum worden beperkt .
 * zij moeten regelmatig worden bijgewerkt .
-* er mag slechts één origineel worden bewaard en iedereen moet weten waar de originele kopie zich bevindt .
+* slechts één master kopie moet worden bewaard en iedereen moet weten waar de master kopie is.
 * zij moeten toegankelijk zijn voor alle projectleden .
 * als de veiligheid een kwestie is ( vaak voorkomt bij grote bedrijven ) en gemeenschappelijke toegang niet mogelijk is , kunnen kopieën worden verspreid zolang iedereen begrijpt dat het kopieën zijn en niet kunnen worden bijgewerkt .
 

@@ -22,33 +22,33 @@ ht-degree: 0%
 
 De zoekfunctie werkt met verschillende andere functies, zoals forums, om inhoud te kunnen zoeken.
 
-Wanneer het toevoegen van de capaciteit aan onderzoeksposten ingegaan door communautaire leden, die als gebruiker geproduceerde inhoud (UGC) worden bedoeld, zijn er twee componenten: [Zoekresultaten](#search) en [zoekresultaten](#search-results).
+Wanneer het toevoegen van de capaciteit aan onderzoeksposten ingegaan door communautaire leden, die als gebruiker geproduceerde inhoud (UGC) worden bedoeld, zijn er twee componenten: [Zoeken](#search) en [Zoekresultaten](#search-results).
 
-De pagina die de `Search Results` component bevat, ondersteunt zowel het zoeken als het weergeven van resultaten.
+De pagina met de component `Search Results` ondersteunt zowel het zoeken als het weergeven van resultaten.
 
-De pagina die de `Search` component bevat, biedt een plaats om een zoekopdracht te starten met resultaten die op de `Search Results` pagina worden weergegeven.
+De pagina die de `Search` component omvat verstrekt een plaats om een onderzoek met resultaten te lanceren die op `Search Results` pagina verschijnen.
 
 De zoekfunctie kan worden gebruikt met elke andere functie waarmee bezoekers en leden van de site inhoud kunnen bekijken.
 
 ## Zoeken {#search-features}
 
-### Zoeken toevoegen aan een pagina {#add-search-to-a-page}
+### Zoekopdracht toevoegen aan een pagina {#add-search-to-a-page}
 
-Als u een `Search` component aan een pagina wilt toevoegen in de ontwerpmodus, gebruikt u de componentbrowser om de component te zoeken `Communities / Search` en naar de juiste positie op een pagina te slepen. Voor het gebruik van `Search` is een tweede pagina vereist voor de `Search Results.`
+Als u een `Search`-component in de ontwerpmodus aan een pagina wilt toevoegen, gebruikt u de componentbrowser om `Communities / Search` te zoeken en deze naar de juiste plaats op een pagina te slepen. Voor het gebruik van `Search` is een tweede pagina vereist voor `Search Results.`
 
-Ga voor de benodigde informatie naar [Community Components Basics](basics.md).
+Voor noodzakelijke informatie, bezoek [de Grondbeginselen van Componenten van Gemeenschappen](basics.md).
 
-Wanneer de vereiste bibliotheek aan de clientzijde `cq.social.hbs.search`is opgenomen, wordt de `Search` component op deze manier weergegeven.
+Wanneer de vereiste bibliotheek aan de clientzijde, `cq.social.hbs.search`, wordt opgenomen, ziet de `Search` component er zo uit.
 
 ![add-search](assets/add-search.png)
 
 ### De toegevoegde zoekopdracht configureren {#configure-the-added-search}
 
-Selecteer de geplaatste `Search` component die u wilt openen en selecteer het `Configure` pictogram waarmee het dialoogvenster Bewerken wordt geopend.
+Selecteer de geplaatste `Search` component en selecteer `Configure` pictogram dat het Edit dialoog opent.
 
 ![samenkomen](assets/configure-new.png)
 
-Geef op onder het **[!UICONTROL Search Settings]** tabblad op hoe wordt gezocht in welke paden een query wordt ingevoerd door een bezoeker.
+Geef onder het tabblad **[!UICONTROL Search Settings]** op hoe de paden worden doorzocht wanneer een query door een bezoeker wordt ingevoerd.
 
 ![zoekinstellingen](assets/search-settings.png)
 
@@ -65,27 +65,27 @@ De resultaten worden weergegeven op een aparte pagina die u in de browser hebt o
 
 ### Zoekresultaten toevoegen aan een pagina {#add-search-results-to-a-page}
 
-Als u een `Search Results` component aan een pagina wilt toevoegen in de ontwerpmodus, gebruikt u de componentbrowser om te zoeken naar
+Als u een `Search Results`-component in de ontwerpmodus aan een pagina wilt toevoegen, gebruikt u de componentbrowser om te zoeken naar
 
 * `Communities / Search Results`
 
 en sleep het naar de juiste plaats op een pagina. In tegenstelling tot de zoekcomponent is geen tweede pagina nodig omdat de resultaten op dezelfde pagina worden weergegeven.
 
-Als u Zoeken elders op de website gebruikt, `Search Results` kan deze ene pagina met de pagina worden geconfigureerd als de pagina `Result Page` voor een of alle instanties van `Search`.
+Als u Zoeken elders in de website gebruikt, kan deze ene pagina met `Search Results` worden geconfigureerd als `Result Page` voor een of alle exemplaren van `Search`.
 
-Ga voor de benodigde informatie naar [Community Components Basics](basics.md).
+Voor noodzakelijke informatie, bezoek [de Grondbeginselen van Componenten van Gemeenschappen](basics.md).
 
-Wanneer de vereiste bibliotheek aan de clientzijde `cq.social.hbs.search`is opgenomen, ziet u hier de `Search Result` component als volgt:
+Wanneer de vereiste bibliotheek aan de clientzijde, `cq.social.hbs.search`, wordt opgenomen, ziet u zo de `Search Result` component:
 
 ![zoekresultaat](assets/search-result1.png)
 
 ### Het toegevoegde zoekresultaat configureren {#configure-the-added-search-result}
 
-Selecteer de geplaatste `Search Results` component die u wilt openen en selecteer het `Configure` pictogram waarmee het dialoogvenster Bewerken wordt geopend.
+Selecteer de geplaatste `Search Results` component en selecteer `Configure` pictogram dat het Edit dialoog opent.
 
 ![vormen](assets/configure-new.png)
 
-Onder het **[!UICONTROL Search Result Settings]** tabblad kunt u opgeven welke paden in de zoekopdracht worden opgenomen wanneer een bezoeker een query invoert.
+Onder **[!UICONTROL Search Result Settings]** tabel, is het mogelijk om te specificeren welke wegen in het onderzoek inbegrepen zijn wanneer een vraag door een bezoeker wordt ingegaan.
 
 ![search-result-settings](assets/search-result-settings.png)
 
@@ -97,6 +97,6 @@ Onder het **[!UICONTROL Search Result Settings]** tabblad kunt u opgeven welke p
 
    Door zoekpaden toe te voegen met de knop Item toevoegen, is de zoekopdracht naar inhoud beperkt.
 
-## Additional Information {#additional-information}
+## Aanvullende informatie {#additional-information}
 
 Meer informatie vindt u op de pagina [Doorzoekfuncties](search-implementation.md) voor ontwikkelaars.

@@ -20,7 +20,7 @@ ht-degree: 2%
 
 # Pagina configureren voor Bulk bewerken van pagina-eigenschappen {#configuring-your-page-for-bulk-editing-of-page-properties}
 
-[Met de functie Pagina-eigenschappen](/help/sites-authoring/editing-page-properties.md#from-the-sites-console-multiple-pages) bewerken kunt u de eigenschappen van meerdere pagina&#39;s tegelijk bewerken.
+[Met ](/help/sites-authoring/editing-page-properties.md#from-the-sites-console-multiple-pages) het Bulk bewerken van pagina-eigenschappen kunt u de eigenschappen van meerdere pagina&#39;s tegelijk bewerken.
 
 Vanwege de mogelijkheid van verschillende waarden zijn pagina-eigenschappen niet standaard ingeschakeld voor bulkbewerking. Ze moeten expliciet worden toegestaan (ingeschakeld). Wanneer u de pagina-eigenschappen definieert die beschikbaar moeten zijn voor bulkbewerking, moet u rekening houden met bepaalde implicaties, zoals:
 
@@ -43,9 +43,9 @@ Vanwege de mogelijkheid van verschillende waarden zijn pagina-eigenschappen niet
 
 >[!NOTE]
 >
->Bulkbewerking is ook beschikbaar voor Elementen. Het is erg vergelijkbaar, maar op een paar punten verschilt het. Zie Eigenschappen van meerdere elementen [](/help/assets/metadata.md) bewerken voor meer informatie. Met de [Schema-editor](/help/assets/metadata-schemas.md)kunt u de velden in de editor Metagegevens voor opsommingstekens aanpassen.
+>Bulkbewerking is ook beschikbaar voor Elementen. Het is erg vergelijkbaar, maar op een paar punten verschilt het. Zie [Eigenschappen van meerdere elementen bewerken](/help/assets/metadata.md) voor volledige informatie. U kunt de velden in de Bulk-metagegevenseditor voor elementen aanpassen met de [Schema-editor](/help/assets/metadata-schemas.md).
 
-## Veld inschakelen {#enabling-a-field}
+## Veld {#enabling-a-field} inschakelen
 
 >[!NOTE]
 >
@@ -62,7 +62,7 @@ Vanwege de mogelijkheid van verschillende waarden zijn pagina-eigenschappen niet
 
 
 
-Velden worden ingeschakeld in de paginacomponent (*niet* in de sjabloon):
+De gebieden worden toegelaten op de paginacomponent (*not* op het malplaatje):
 
 1. Met CRXDE Lite (of een gelijkwaardige methode) opent u de pagina-component.
 
@@ -70,16 +70,16 @@ Velden worden ingeschakeld in de paginacomponent (*niet* in de sjabloon):
 
    >[!NOTE]
    >
-   >Dit voorbeeld veronderstelt dat de Componenten van de Kern op de instantie geïnstalleerd zijn, wat het geval is als de instantie met Wij.Retail steekproefinhoud loopt. Raadpleeg de documentatie bij [](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) Core Components voor meer informatie.
+   >Dit voorbeeld veronderstelt dat de Componenten van de Kern op de instantie geïnstalleerd zijn, wat het geval is als de instantie met Wij.Retail steekproefinhoud loopt. Zie de [documentatie van de Componenten van de Kern](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) voor meer informatie.
 
-1. Navigeer naar het vereiste veld binnen de `cq:dialog` definitie.
+1. Navigeer naar het vereiste veld binnen de definitie `cq:dialog`.
 1. Definieer de volgende eigenschap op het veldknooppunt:
 
-   * **Naam**: `allowBulkEdit`
-   * **Type**: `Boolean`
-   * **Waarde**: `true`
+   * **Naam**:  `allowBulkEdit`
+   * **Type**:  `Boolean`
+   * **Waarde**:  `true`
 
-   Bijvoorbeeld voor de standaard pagina [stichting component](/help/sites-authoring/default-components-foundation.md):
+   Bijvoorbeeld voor de standaardpagina [foundation component](/help/sites-authoring/default-components-foundation.md):
 
    `/libs/foundation/components/page`
 
@@ -89,15 +89,15 @@ Velden worden ingeschakeld in de paginacomponent (*niet* in de sjabloon):
 
    >[!CAUTION]
    >
-   >U ***mag*** niets in het `/libs` pad wijzigen.
+   >U ***must*** verandert niets in `/libs` weg.
    >
-   >De reden hiervoor is dat de inhoud van `/libs` de volgende keer dat u een upgrade uitvoert van uw exemplaar, wordt overschreven (en dat deze inhoud ook kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
+   >Dit komt doordat de inhoud van `/libs` de volgende keer wordt overschreven dat u uw exemplaar bijwerkt (en dat kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
    >
    >De aanbevolen methode voor configuratie en andere wijzigingen is:
    >
-   >    1. Het vereiste item opnieuw maken (d.w.z. zoals het in `/libs`) `/apps`
-   >    1. Breng wijzigingen aan in `/apps`
+   >    1. Het vereiste item opnieuw maken (dat wil zeggen zoals het bestaat in `/libs`) onder `/apps`
+   >    1. Wijzigingen aanbrengen binnen `/apps`
 
 
-1. Selecteer Alles **** opslaan om uw updates voort te zetten.
+1. Selecteer **Alles opslaan** om uw updates voort te zetten.
 

@@ -12,6 +12,9 @@ discoiquuid: ca98dc3c-7056-4cdc-b4d3-23e471da5730
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 4e5e6ef022dc9f083859e13ab9c86b622fc3d46e
+workflow-type: tm+mt
+source-wordcount: '1173'
+ht-degree: 0%
 
 ---
 
@@ -32,9 +35,9 @@ U kunt de volmachtsserver gebruiken om alle cliënt-server interactie, ongeacht 
 * SMTP voor e-mailberichten
 * LDAP voor gebruikersbeheer
 
-U kunt bijvoorbeeld de proxyserver plaatsen tussen twee toepassingen die via een TCP/IP-netwerk communiceren. bijvoorbeeld een webbrowser en AEM. Hierdoor kunt u precies controleren wat er gebeurt wanneer u een AEM-pagina aanvraagt.
+U kunt bijvoorbeeld de proxyserver plaatsen tussen twee toepassingen die via een TCP/IP-netwerk communiceren. bijvoorbeeld een webbrowser en AEM. Hierdoor kunt u precies controleren wat er gebeurt wanneer u een AEM pagina aanvraagt.
 
-## Het gereedschap Proxyserver starten {#starting-the-proxy-server-tool}
+## Het gereedschap Proxyserver {#starting-the-proxy-server-tool} starten
 
 U vindt het gereedschap in de map /opt/helpers van de AEM-installatie. Het type starten:
 
@@ -45,12 +48,12 @@ java -jar proxy.jar <host> <remoteport> <localport> [options]
 ### Opties {#options}
 
 * **q (stille Wijze)** schrijft niet de verzoeken aan het consolevenster. Gebruik deze optie als u de verbinding niet wilt vertragen of als u de uitvoer naar een bestand wilt vastleggen (zie de optie -logfile).
-* **b (binaire Wijze)** als u specifieke bytecombinaties in het verkeer zoekt, laat binaire wijze toe. De uitvoer bevat vervolgens de hexadecimale uitvoer en de tekenuitvoer.
+* **b (binaire Wijze)** Als u specifieke bytecombinaties in het verkeer zoekt, laat binaire wijze toe. De uitvoer bevat vervolgens de hexadecimale uitvoer en de tekenuitvoer.
 * **t (logitems voor tijdstempels)** Hiermee voegt u een tijdstempel toe aan elke loguitvoer. Het tijdstempel is in seconden, zodat het mogelijk niet geschikt is voor het controleren van afzonderlijke aanvragen. Gebruik het om van gebeurtenissen de plaats te bepalen die in een specifiek ogenblik voorkwamen als u de volmachtsserver over een langere tijdspanne gebruikt.
-* **logfile &lt;filename> (schrijven naar logbestand)** Schrijft het gesprek tussen de client en de server naar een logbestand. Deze parameter werkt ook in de stille modus.
-* **i &lt;numIndentions> (inspringing toevoegen)** Elke actieve verbinding is ingesprongen voor betere leesbaarheid. De standaardwaarde is 16 niveaus. (Nieuw in proxy.jar versie 1.16).
+* **logfile  &lt;filename> (schrijven aan logboekdossier)** Schrijft het cliënt-server gesprek aan een logboekdossier. Deze parameter werkt ook in de stille modus.
+* **i  &lt;numindentions> (inspringing toevoegen)** Elke actieve verbinding springt in voor betere leesbaarheid. De standaardwaarde is 16 niveaus. (Nieuw in proxy.jar versie 1.16).
 
-## Gebruikt het gereedschap Proxyserver {#uses-of-the-proxy-server-tool}
+## Gebruikt het Hulpmiddel van de Server van de Volmacht {#uses-of-the-proxy-server-tool}
 
 De volgende scenario&#39;s illustreren een paar van de doeleinden waarvoor het Hulpmiddel van de Server van de Volmacht kan worden gebruikt:
 
@@ -62,7 +65,7 @@ In het volgende voorbeeld van een logbestandvermelding worden alle cookies en hu
 C-6-#000635 -> [Cookie: cq3session=7e39bc51-ac72-3f48-88a9-ed80dbac0693; Show=ShowMode; JSESSIONID=68d78874-cabf-9444-84a4-538d43f5064d ]
 ```
 
-**Controleren op headers en hun waarden** In het volgende voorbeeld van een logbestandvermelding wordt getoond dat de server in staat is om een verbinding te maken waarbij de inhoud in leven blijft en dat de header van de lengte van de inhoud juist is ingesteld:
+**Controleren op headers en de bijbehorende** waardenIn het volgende voorbeeld van een logbestandvermelding wordt getoond dat de server in staat is om een verbinding te maken waarbij de inhoud in leven blijft en dat de header van de lengte van de inhoud juist is ingesteld:
 
 ```xml
 S-7-#000017 -> [Connection: Keep-Alive ]
@@ -72,7 +75,7 @@ S-7-#000107 -> [Content-Length: 124 ]
 
 **Controleren of Keep-Alive werkt**
 
-**Levend houden** betekent dat een cliënt de verbinding aan de server opnieuw gebruikt om veelvoudige dossiers (de paginacode, beelden, stijlbladen, etc.) te vervoeren. Zonder houden-levend, moet de cliënt een nieuwe verbinding voor elk verzoek vestigen.
+**Keep-** Alivemeans dat een cliënt de verbinding aan de server opnieuw gebruikt om veelvoudige dossiers (de paginacode, beelden, stijlbladen, etc.) te vervoeren. Zonder houden-levend, moet de cliënt een nieuwe verbinding voor elk verzoek vestigen.
 
 Controleren of in leven houden werkt:
 
@@ -114,8 +117,8 @@ C-0-#000000 -> [GET /author/prox.html?CFC_cK=1102938422341 HTTP/1.1 ]
 
 * C betekent dat deze ingang uit de cliënt (het is een verzoek om een Web-pagina) komt
 * 0 is het verbindingsnummer (de verbindenteller begint bij 0)
-* &#x200B;# 00000 de verschuiving in de bytestream. Dit is de eerste vermelding, dus de verschuiving is 0.
-* [GET &lt;?>] is de inhoud van de aanvraag, in het voorbeeld een van de HTTP headers (url).
+* # 00000 de verschuiving in de bytestream. Dit is de eerste vermelding, dus de verschuiving is 0.
+* [GET  &lt;?>] is de inhoud van de aanvraag, in het voorbeeld een van de HTTP headers (url).
 
 Wanneer een verbinding sluit, wordt de volgende informatie geregistreerd:
 
@@ -148,7 +151,7 @@ Als AEM wordt uitgevoerd op localhost:4303, start u de proxyserver als volgt:
 java -jar proxy.jar localhost 4303 4444 -logfile test.log
 ```
 
-U kunt tot de server (`localhost:4303`) zonder de volmachtsserver toegang hebben, maar als u het via `localhost:4444`, de volmachtsserver toegang hebt zal de mededeling registreren. Open een browser en open een pagina die met de bovenstaande sjabloon is gemaakt. Kijk vervolgens naar het logbestand.
+U kunt tot de server (`localhost:4303`) zonder de volmachtsserver toegang hebben, maar als u tot het via `localhost:4444` toegang hebt, zal de volmachtsserver de mededeling registreren. Open een browser en open een pagina die met de bovenstaande sjabloon is gemaakt. Kijk vervolgens naar het logbestand.
 
 >[!NOTE]
 >
@@ -181,7 +184,7 @@ C-0-#000369 -> [Connection: Keep-Alive ]
 
 De proxyserver is een goed hulpmiddel om te controleren of cookies correct zijn ingesteld of niet. Hier zien we het volgende:
 
-* Cq3session-cookie gegenereerd door AEM
+* cq3session, cookie gegenereerd door AEM
 * het schakelaar koekje van de showwijze dat door CFC wordt geproduceerd
 * een cookie met de naam JSESSIONID; dit wordt automatisch gemaakt door JSP als dit niet expliciet wordt uitgeschakeld met &lt;%@ page session=&quot;false&quot; %>:
 

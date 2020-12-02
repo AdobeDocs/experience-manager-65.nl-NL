@@ -28,13 +28,13 @@ Verschillende configuraties buiten de box zijn beschikbaar voor integratie met d
 * [Adobe Analytics](/help/sites-administering/adobeanalytics.md)
 * [Adobe Target](/help/sites-administering/target.md)
 
-U kunt uw eigen instantie van de **Algemene Fragmenten** van Analytics ook vormen om een nieuwe de dienstconfiguraties te bepalen.
+U kunt ook uw eigen exemplaar van de **Algemene analysesnippets** configureren om nieuwe serviceconfiguraties te definiëren.
 
 De informatie wordt vervolgens verzameld door middel van kleine codefragmenten die aan de webpagina&#39;s worden toegevoegd. Bijvoorbeeld:
 
 >[!CAUTION]
 >
->Scripts mogen niet zijn opgenomen in `script` tags.
+>Scripts mogen niet in `script`-tags worden ingesloten.
 
 ```
 var _gaq = _gaq || [];
@@ -57,18 +57,18 @@ Met dergelijke fragmenten kunnen gegevens worden verzameld en rapporten worden g
 
 >[!CAUTION]
 >
->De demosite Geometrixx-Buiten is zo geconfigureerd dat de kenmerken die worden opgegeven in de Pagina-eigenschappen worden toegevoegd aan de HTML-broncode (net boven de `</html>` eindtag) in het bijbehorende `js` script.
+>De Geometrixx-Buiten demosite is zo geconfigureerd dat de kenmerken die in de Pagina-eigenschappen worden opgegeven, worden toegevoegd aan de HTML-broncode (net boven de eindtag `</html>`) in het corresponderende `js`-script.
 >
->Als uw eigen `/apps` niet van de standaardpaginacomponent ( `/libs/foundation/components/page`) erft moet u (of uw ontwikkelaars) ervoor zorgen dat de overeenkomstige `js` manuscripten inbegrepen zijn, bijvoorbeeld door of `cq/cloudserviceconfigs/components/servicescomponents`, of het gebruiken van een gelijkaardig mechanisme op te nemen.
+>Als uw eigen `/apps` niet van de standaardpaginacomponent ( `/libs/foundation/components/page`) erft moet u (of uw ontwikkelaars) ervoor zorgen dat de overeenkomstige `js` manuscripten inbegrepen zijn, bijvoorbeeld door of `cq/cloudserviceconfigs/components/servicescomponents`, of het gebruiken van een gelijkaardig mechanisme.
 >
 >Zonder dit, zal geen van de diensten (Generic, Analytics, Target, etc.) werken.
 
-## Een nieuwe service maken met een algemeen fragment {#creating-a-new-service-with-a-generic-snippet}
+## Nieuwe service maken met een algemeen fragment {#creating-a-new-service-with-a-generic-snippet}
 
 Voor de basisconfiguratie:
 
-1. Open de **console van Hulpmiddelen** .
-1. Vouw **Cloud Services Configurations** uit in het linkerdeelvenster.
+1. Open de console **Tools**.
+1. Vouw **Cloud Services Configuraties** uit in het linkerdeelvenster.
 1. Dubbelklik op **Generic Analytics Snippet** om de pagina te openen:
 
    ![](assets/analytics_genericoverview.png)
@@ -77,28 +77,28 @@ Voor de basisconfiguratie:
 
    ![](assets/analytics_addconfig.png)
 
-1. Klik op **Maken**, het dialoogvenster Fragment wordt direct geopend - plak het juiste JavaScript-fragment in het veld:
+1. Klik op **Maken**. Het dialoogvenster Fragmenten wordt direct geopend. U kunt het desbetreffende JavaScript-fragment in het veld plakken:
 
    ![](assets/analytics_snippet.png)
 
-1. Klik op **OK** om op te slaan.
+1. Klik **OK** om op te slaan.
 
-## Uw nieuwe service op pagina&#39;s gebruiken {#using-your-new-service-on-pages}
+## Uw nieuwe service gebruiken op pagina&#39;s {#using-your-new-service-on-pages}
 
 Nadat u de de dienstconfiguratie hebt gecreeerd moet u nu de vereiste pagina&#39;s vormen om het te gebruiken:
 
 1. Navigeer naar de pagina.
-1. Open de **Pagina-eigenschappen** vanuit sidekick en klik vervolgens op het tabblad **Cloud Services** .
-1. Klik op Service **** toevoegen en selecteer de gewenste service. Bijvoorbeeld het **Generic Analytics-fragment**:
+1. Open **Pagina-eigenschappen** vanuit sidekick en open vervolgens het tabblad **Cloud Services**.
+1. Klik **Service toevoegen**, dan selecteer de vereiste dienst; Bijvoorbeeld het **Generic Analytics Snippet**:
 
    ![](assets/analytics_selectservice.png)
 
-1. Klik op **OK** om op te slaan.
-1. U wordt teruggestuurd naar het tabblad **Cloud Services** . Het **Generic Analytics-fragment** wordt nu weergegeven met het bericht `Configuration reference missing`. Gebruik de drop-down lijst om uw specifiek de dienstgeval te selecteren; bijvoorbeeld google-analytics:
+1. Klik **OK** om op te slaan.
+1. U zult aan **Cloud Services** tabel zijn teruggekeerd. Het **Generic Analytics Snippet** wordt nu vermeld met het bericht `Configuration reference missing`. Gebruik de drop-down lijst om uw specifiek de dienstgeval te selecteren; bijvoorbeeld google-analytics:
 
    ![](assets/analytics_selectspecificservice.png)
 
-1. Klik op **OK** om op te slaan.
+1. Klik **OK** om op te slaan.
 
    Het fragment kan nu worden weergegeven als u de paginabron voor de pagina bekijkt.
 

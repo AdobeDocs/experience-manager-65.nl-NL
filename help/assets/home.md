@@ -13,9 +13,9 @@ ht-degree: 4%
 
 # Hulplijn voor middelen
 
-Deze handleiding behandelt alle [!DNL Experience Manager Assets] taken, zoals het maken, beheren, leveren en optimaliseren van digitale middelen.
+Deze handleiding behandelt alle [!DNL Experience Manager Assets] taken, zoals het maken, beheren, leveren en optimaliseren van digitale elementen.
 
-## Belangrijkste [!DNL Experience Manager] artikelen
+## Belangrijke [!DNL Experience Manager] artikelen
 
 <!-- TBD: Some of these links will soon be updated. Change these when new articles go live on docs.adobe.com.
 -->

@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 244cd43c-a573-495d-b80c-b97ba9d19b75
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '188'
+ht-degree: 1%
 
 ---
 
@@ -19,25 +22,25 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 ## Richtlijnen, tips en trucs {#guidelines-tips-and-tricks}
 
-Het werken met AEM-gemeenschappen heeft zich ontwikkeld van sterk afhankelijk zijn van Java Server Pages tot flexibiliteit bij het kiezen van sjabloontalen waarbij bedrijfslogica, stijl en pagina-inhoud van elkaar verschillen.
+Het werken met AEM Communities is geëvolueerd van sterk afhankelijk zijn van de Pagina&#39;s van de Server van Java aan flexibiliteit in het kiezen van het opmaken van scripttalen waar bedrijfslogica, stijl, en paginacontent van elkaar verschillend zijn.
 
-De verdere flexibiliteit in het werken met gebruiker geproduceerde inhoud (UGC) is door de SocialeResourceProvider API, die de behoefte aan bewustzijn elimineert waarvan de optie [SRP](srp.md) voor de plaatsing werd gekozen.
+De verdere flexibiliteit bij het werken met door de gebruiker gegenereerde inhoud (UGC) is via de API van SocialResourceProvider, waardoor de noodzaak van bewustwording wordt weggenomen, waarvan [SRP](srp.md) is gekozen voor de implementatie.
 
-Hieronder vindt u verschillende coderingsrichtlijnen en aanbevolen procedures voor AEM Community-ontwikkelaars:
+Hieronder vindt u verschillende codeerrichtlijnen en aanbevolen procedures voor AEM Communities-ontwikkelaars:
 
 ### Code {#code}
 
-* [Toegang tot UGC met SRP](accessing-ugc-with-srp.md) - hoe te vermijden schrijvend een toepassing die slechts werkt wanneer UGC in JCR (JSRP) wordt opgeslagen.
-* [SocialUtils Refactoring](socialutils.md) - nutsmethodes voor SRP die SocialUtils vervangen.
-* [Naamgevingsconventies](naming-conventions.md) - naamconventies voor aangepaste Java-klassen.
+* [Toegang tot UGC met SRP](accessing-ugc-with-srp.md)  - hoe te vermijden schrijvend een toepassing die slechts werkt wanneer UGC in JCR (JSRP) wordt opgeslagen.
+* [SocialUtils Refactoring](socialutils.md)  - nutsmethodes voor SRP die SocialUtils vervangen.
+* [Naamgeving van conventies](naming-conventions.md)  - naamconventies voor aangepaste Java-klassen.
 
 ### Scripts {#scripts}
 
-* [Sideloading Communities Components](sideloading.md) - hoe u dynamisch een component toevoegt nadat de pagina is geladen.
-* [Essentiële elementen](rte.md) van de Teksteditor - hoe u de RTF-gegevens voor leden kunt aanpassen voor het posten van inhoud.
+* [Sideloading Communities Components](sideloading.md) : hoe u dynamisch een component toevoegt nadat de pagina is geladen.
+* [Essentiële elementen](rte.md)  van de Teksteditor - hoe u de RTF-gegevens voor leden kunt aanpassen voor het posten van inhoud.
 
 ### IDE {#ide}
 
-* [Maven for Communities](maven.md) gebruiken - hoe u de communautaire API-jar kunt opnemen.
-* [SocialUtils Refactoring](socialutils.md) - nutsmethodes voor SRP die SocialUtils vervangen.
+* [Maven for Communities](maven.md)  gebruiken - hoe u de Community API-jar moet opnemen.
+* [SocialUtils Refactoring](socialutils.md)  - nutsmethodes voor SRP die SocialUtils vervangen.
 

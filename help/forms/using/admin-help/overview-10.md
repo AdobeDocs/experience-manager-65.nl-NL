@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 2d6f90bb-62f7-4805-9250-1b913fe7d2b3
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '147'
+ht-degree: 0%
 
 ---
 
@@ -27,9 +30,9 @@ Op de pagina&#39;s van de Werkruimte in beleidsconsole, kunt u de volgende taken
 
 >[!NOTE]
 >
->De Flex-werkruimte is verouderd voor de release van AEM-formulieren.
+>De Flex-werkruimte is verouderd voor AEM formulierrelease.
 
 >[!NOTE]
 >
->U moet de navigatiemethodes binnen de beleidsconsole gebruiken. Gebruik de knoppen Vorige, Volgende en Vernieuwen niet in de webbrowser. Het gebruik van deze knoppen kan problemen met het vastleggen van gegevens en het weergeven van gegevens veroorzaken.
+>U moet de navigatiemethodes binnen de beleidsconsole gebruiken. Gebruik de knoppen Vorige, Volgende en Vernieuwen niet in de webbrowser. Het gebruik van deze knoppen kan problemen met gegevensvastlegging en gegevensweergave veroorzaken.
 

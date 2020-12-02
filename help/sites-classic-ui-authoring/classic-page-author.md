@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 3fe5b6cc-1494-43e1-add7-2f7828b676ad
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '331'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 Hieronder vindt u een overzicht van het ontwerpen met AEM:
 
-* [Eerste stappen voor auteurs](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md) - een inleiding voor nieuwe auteurs
+* [Eerste stappen voor auteurs](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md)  - een inleiding voor nieuwe auteurs
 
 >[!NOTE]
 >
@@ -29,17 +32,24 @@ Hieronder vindt u een overzicht van het ontwerpen met AEM:
 
 Om u te helpen bij het ontwerpen van pagina&#39;s, biedt de auteursomgeving functies zoals:
 
-* **Sleep en zet** componenten (zoals Tekst, Afbeelding) en digitale elementen (zoals afbeeldingen) op de pagina neer door ze gewoon naar de gewenste locatie te slepen.
+* **Sleep en**
+zet componenten (zoals Tekst, Afbeelding) en digitale elementen (zoals afbeeldingen) op de pagina neer door ze gewoon naar de gewenste locatie te slepen.
 
-* **Als u de afbeelding eenmaal op de pagina hebt geplaatst, kunt u een dialoogvenster openen dat specifiek is voor een bepaalde component en waarin u inhoud kunt invoeren en/of kenmerken van die component kunt configureren (bijvoorbeeld afbeeldingsgrootte).**
+* ****
+EditingOnce die op uw pagina wordt geplaatst, kan een component-specifieke dialoog worden geopend om inhoud in te gaan en/of eigenschappen van die component (bijvoorbeeld, beeldgrootte) te vormen.
 
-* **Componenten** Tekst en afbeelding op locatie kunnen rechtstreeks op de webpagina worden bewerkt zonder een dialoogvenster of een expliciete opslaghandeling te openen.
+* **Componenten**
+EditingText en Image op locatie kunnen rechtstreeks op de webpagina worden bewerkt zonder een dialoogvenster of een expliciete opslagactie te openen.
 
-* **[Schop](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekickclassicui)**een zwevend venster van de &quot;inspecteur&quot;dat op de editable pagina verschijnt. Vanaf hier kunnen nieuwe componenten naar de pagina worden gesleept en kunnen paginaspecifieke handelingen worden uitgevoerd.
+* **[Zwevend](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekickclassicui)**
+SidetrapA zwevend venster &quot;inspecteur&quot; dat op de editable pagina verschijnt. Vanaf hier kunnen nieuwe componenten naar de pagina worden gesleept en kunnen paginaspecifieke handelingen worden uitgevoerd.
 
-* **[De zoekfunctie voor inhoud](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#thecontentfinderclassicui)**aan de linkerkant van elke pagina die kan worden geschreven, biedt snel toegang tot een reeks elementen, waaronder digitale elementen (zoals andere afbeeldingen, Flash-elementen en documenten), andere pagina&#39;s en alinea&#39;s. Deze items kunnen naar de pagina worden gesleept. bijvoorbeeld om elementen te plaatsen of koppelingen naar andere pagina&#39;s te maken.
+* **[Content](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#thecontentfinderclassicui)**
+FinderAan de linkerkant van elke pagina die kan worden geschreven, biedt de zoeker van inhoud snel toegang tot een reeks elementen, waaronder digitale elementen (zoals andere afbeeldingen, Flash-elementen en documenten), andere pagina&#39;s en alinea&#39;s. Deze items kunnen naar de pagina worden gesleept. bijvoorbeeld om elementen te plaatsen of koppelingen naar andere pagina&#39;s te maken.
 
-* **Met het contextmenu** Klikken met de rechtermuisknop op de meeste elementen op het scherm (bijvoorbeeld alinea&#39;s op de pagina) wordt een contextmenu met de juiste actieopties weergegeven.
+* **ContextmenuAls u**
+met de rechtermuisknop op de meeste elementen op het scherm klikt (bijvoorbeeld alinea&#39;s op de pagina), wordt een contextmenu met de juiste actieopties weergegeven.
 
-* **Zoeken zoals u typt** In bepaalde scenario&#39;s (bijvoorbeeld padselectie in bewerkingsdialoogvensters) die naar inhoud zoeken via de AEM-interface, worden dynamische overeenkomsten getoond terwijl u de query typt.
+* **Zoeken zoals u**
+typtIn bepaalde scenario&#39;s (bijvoorbeeld padselectie in bewerkingsdialoogvensters) die naar inhoud zoeken via de AEM interface, worden dynamische overeenkomsten getoond terwijl u de query typt.
 

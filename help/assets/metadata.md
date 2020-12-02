@@ -1,6 +1,6 @@
 ---
 title: Metagegevens van uw digitale middelen beheren in [!DNL Adobe Experience Manager].
-description: Leer meer over de typen metagegevens en [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] hoe u elementen automatisch kunt ordenen en verwerken op basis van hun metagegevens.
+description: Leer meer over de typen metagegevens en hoe u met [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] elementen automatisch kunt ordenen en verwerken op basis van hun metagegevens.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: d070f5dca569dfb90d3034b74c2940fd68d8ceab
@@ -11,7 +11,7 @@ ht-degree: 10%
 ---
 
 
-# Metagegevens van uw digitale middelen beheren {#managing-metadata-for-digital-assets}
+# Metagegevens van uw digitale elementen beheren {#managing-metadata-for-digital-assets}
 
 <!-- Scope of metadata articles:
 * metadata.md: The scope of this article is basic metadata updates, changes, etc. operations that end-users can do.
@@ -19,47 +19,47 @@ ht-degree: 10%
 * metadata-config.md: New article. Contains all configuration and administration how-to info related to metadata of assets.
 -->
 
-[!DNL Adobe Experience Manager Assets] bewaart meta-gegevens voor elk middel. Het maakt het gemakkelijker om activa te categoriseren en te organiseren en het helpt mensen die naar een specifiek bezit zoeken. Dankzij de mogelijkheid metagegevens te extraheren uit bestanden waarnaar geüpload wordt, kan het beheer van metagegevens worden geïntegreerd in de creatieve workflow. [!DNL Experience Manager Assets] Met de mogelijkheid om metagegevens bij uw elementen te houden en te beheren, kunt u elementen automatisch ordenen en verwerken op basis van hun metagegevens.
+[!DNL Adobe Experience Manager Assets] bewaart meta-gegevens voor elk middel. Het maakt het gemakkelijker om activa te categoriseren en te organiseren en het helpt mensen die naar een specifiek bezit zoeken. Dankzij de mogelijkheid metagegevens te extraheren uit bestanden die zijn geüpload naar [!DNL Experience Manager Assets], kan het beheer van metagegevens worden geïntegreerd met de creatieve workflow. Met de mogelijkheid om metagegevens bij uw elementen te houden en te beheren, kunt u elementen automatisch ordenen en verwerken op basis van hun metagegevens.
 
-## Metagegevens en de oorsprong ervan {#how-to-edit-or-add-metadata}
+## Metagegevens en oorsprong {#how-to-edit-or-add-metadata}
 
-Metagegevens zijn aanvullende informatie over het element die kan worden doorzocht. Het wordt toegevoegd aan activa en in [!DNL Experience Manager] het wordt verwerkt wanneer u activa uploadt. U kunt de bestaande metagegevens bewerken en nieuwe eigenschappen van metagegevens toevoegen aan bestaande velden. Organisaties hebben beheerste en betrouwbare metagegevenswoordenboeken nodig. Het is daarom [!DNL Experience Manager Assets] niet mogelijk om op aanvraag nieuwe eigenschappen van metagegevens toe te voegen. Alleen beheerders en ontwikkelaars kunnen nieuwe eigenschappen of velden toevoegen die metagegevens bevatten. Gebruikers kunnen de bestaande velden vullen met metagegevens.
+Metagegevens zijn aanvullende informatie over het element die kan worden doorzocht. Deze wordt toegevoegd aan elementen en in [!DNL Experience Manager] wordt deze verwerkt wanneer u een element uploadt. U kunt de bestaande metagegevens bewerken en nieuwe eigenschappen van metagegevens toevoegen aan bestaande velden. Organisaties hebben beheerste en betrouwbare metagegevenswoordenboeken nodig. Daarom staat [!DNL Experience Manager Assets] het toevoegen van nieuwe eigenschappen van metagegevens op aanvraag niet toe. Alleen beheerders en ontwikkelaars kunnen nieuwe eigenschappen of velden toevoegen die metagegevens bevatten. Gebruikers kunnen de bestaande velden vullen met metagegevens.
 
 U kunt de volgende methoden gebruiken om metagegevens toe te voegen aan digitale elementen:
 
-* Om te beginnen voegen de native toepassingen die elementen maken er metagegevens aan toe. Acrobat voegt bijvoorbeeld metagegevens [](https://helpx.adobe.com/acrobat/using/pdf-properties-metadata.html) toe aan PDF-bestanden of een camera voegt enkele basismetagegevens toe aan de foto&#39;s. Wanneer u elementen genereert, kunt u de metagegevens toevoegen in native toepassingen zelf. U kunt bijvoorbeeld IPTC-metagegevens [toevoegen in Adobe Lightroom](https://helpx.adobe.com/lightroom-classic/help/metadata-basics-actions.html).
+* Om te beginnen voegen de native toepassingen die elementen maken er metagegevens aan toe. Met [Acrobat voegt u bijvoorbeeld metagegevens](https://helpx.adobe.com/acrobat/using/pdf-properties-metadata.html) toe aan PDF-bestanden of met een camera voegt u enkele basismetagegevens toe aan de foto&#39;s. Wanneer u elementen genereert, kunt u de metagegevens toevoegen in native toepassingen zelf. U kunt bijvoorbeeld [IPTC-metagegevens toevoegen in Adobe Lightroom](https://helpx.adobe.com/lightroom-classic/help/metadata-basics-actions.html).
 
-* Voordat u een element uploadt naar, kunt u metagegevens bewerken en wijzigen met behulp van de oorspronkelijke toepassing die is gebruikt om een element te maken of met behulp van een andere toepassing voor het bewerken van metagegevens. [!DNL Experience Manager] Wanneer u een element uploadt naar Experience Manager, worden de metagegevens verwerkt. Zie bijvoorbeeld hoe u met metagegevens [werkt in [!DNL Adobe Bridge]](https://helpx.adobe.com/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html) het deelvenster [Codes voor [!DNL Bridge CC]](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html) informatie [!DNL Adobe Exchange].
+* Voordat u een element uploadt naar [!DNL Experience Manager], kunt u metagegevens bewerken en wijzigen met de oorspronkelijke toepassing die is gebruikt om een element te maken of met een andere toepassing voor het bewerken van metagegevens. Wanneer u een element uploadt naar Experience Manager, worden de metagegevens verwerkt. Bijvoorbeeld, zie hoe te met meta-gegevens [werken in  [!DNL Adobe Bridge]](https://helpx.adobe.com/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html) en het [etikettenpaneel voor  [!DNL Bridge CC]](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html) in [!DNL Adobe Exchange] zien.
 
-* In [!DNL Experience Manager Assets]kunt u metagegevens van elementen op de [!UICONTROL Properties] pagina handmatig toevoegen of bewerken.
+* In [!DNL Experience Manager Assets] kunt u metagegevens van elementen handmatig toevoegen of bewerken op de pagina [!UICONTROL Properties].
 
-* U kunt de functionaliteit van [metagegevensprofielen](/help/assets/metadata-config.md#metadata-profiles) van gebruiken [!DNL Experience Manager Assets] om automatisch metagegevens toe te voegen wanneer elementen naar DAM worden geüpload.
+* U kunt [metagegevensprofielen](/help/assets/metadata-config.md#metadata-profiles)-functionaliteit van [!DNL Experience Manager Assets] gebruiken om automatisch metagegevens toe te voegen wanneer elementen naar DAM worden geüpload.
 
 ## Metagegevens toevoegen of bewerken in [!DNL Experience Manager Assets] {#add-edit-metadata}
 
-Voer de volgende stappen uit om de metagegevens van een element in de [!DNL Assets] gebruikersinterface te bewerken:
+Ga als volgt te werk om de metagegevens van een element in de gebruikersinterface [!DNL Assets] te bewerken:
 
 1. Voer een van de volgende handelingen uit:
 
-   * Selecteer het element in de [!DNL Assets] interface en klik op **[!UICONTROL View Properties]** de werkbalk.
-   * Selecteer de **[!UICONTROL View Properties]** handeling Snel bij de elementminiatuur.
-   * Klik op de elementpagina op het pictogram **[!UICONTROL View Properties]** voor de informatie over ![](assets/do-not-localize/info-circle-icon.png) elementen op de werkbalk.
+   * Selecteer het element in de interface [!DNL Assets] en klik op **[!UICONTROL View Properties]** op de werkbalk.
+   * Selecteer in de elementminiatuur de snelle handeling **[!UICONTROL View Properties]**.
+   * Klik op **[!UICONTROL View Properties]** ![Elementinfopictogram](assets/do-not-localize/info-circle-icon.png) van de werkbalk op de elementenpagina.
 
    Op de elementpagina worden alle metagegevens van het element weergegeven. De metagegevens worden geëxtraheerd wanneer het element wordt geüpload (opgenomen) naar [!DNL Experience Manager].
 
    ![Eigenschappen van een element selecteren om de metagegevens van het element weer te geven](assets/asset-metadata.png)
 
-   *Afbeelding: Bewerk of voeg metagegevens toe op de [!UICONTROL Properties] elementpagina.*
+   *Afbeelding: Bewerk of voeg metagegevens toe op de  [!UICONTROL Properties] elementpagina.*
 
-1. Make edits to the metadata under the various tabs, as required, and when completed, click **[!UICONTROL Save]** from the toolbar to save your changes. Click **[!UICONTROL Close]** to return to the [!DNL Assets] web interface.
+1. Breng desgewenst wijzigingen aan in de metagegevens op de verschillende tabbladen en klik op **[!UICONTROL Save]** op de werkbalk om de wijzigingen op te slaan. Klik **[!UICONTROL Close]** om aan [!DNL Assets] Webinterface terug te keren.
 
    >[!NOTE]
    >
    >Als een tekstveld leeg is, is er geen bestaande metagegevensset. U kunt een waarde in het veld invoeren en deze opslaan om die eigenschap voor metagegevens toe te voegen.
 
-Eventuele wijzigingen in de metagegevens van een element worden teruggeschreven naar het oorspronkelijke binaire bestand als onderdeel van de XMP gegevens. De workflow voor het terugschrijven van metagegevens voegt de metagegevens toe aan het oorspronkelijke binaire bestand. Wijzigingen die worden aangebracht in de bestaande eigenschappen (zoals `dc:title`) worden overschreven en nieuwe eigenschappen (zoals aangepaste eigenschappen `cq:tags`) worden toegevoegd aan het schema.
+Eventuele wijzigingen in de metagegevens van een element worden teruggeschreven naar het oorspronkelijke binaire bestand als onderdeel van de XMP gegevens. De workflow voor het terugschrijven van metagegevens voegt de metagegevens toe aan het oorspronkelijke binaire bestand. Wijzigingen die worden aangebracht in de bestaande eigenschappen (zoals `dc:title`) worden overschreven en nieuwe eigenschappen (zoals aangepaste eigenschappen zoals `cq:tags`) worden toegevoegd met het schema.
 
-XMP terugschrijven wordt ondersteund en ingeschakeld voor de platforms en bestandsindelingen die in de [technische vereisten worden beschreven.](/help/sites-deploying/technical-requirements.md)
+XMP terugschrijven wordt gesteund en toegelaten voor de platforms en dossierformaten die in [technische vereisten worden beschreven.](/help/sites-deploying/technical-requirements.md)
 
 ## Eigenschappen van metagegevens van meerdere elementen bewerken {#editing-metadata-properties-of-multiple-assets}
 
@@ -68,15 +68,15 @@ XMP terugschrijven wordt ondersteund en ingeschakeld voor de platforms en bestan
 * Eigenschappen van metagegevens wijzigen in een algemene waarde
 * Tags toevoegen of wijzigen
 
-Gebruik de [schema-editor](metadata-config.md#folder-metadata-schema)om de pagina met metagegevenseigenschappen aan te passen, zoals eigenschappen voor metagegevens toevoegen, wijzigen, verwijderen of wijzigen.
+Als u de pagina met metagegevenseigenschappen wilt aanpassen, inclusief het toevoegen, wijzigen of verwijderen van eigenschappen van metagegevens, gebruikt u de [schema-editor](metadata-config.md#folder-metadata-schema).
 
 >[!NOTE]
 >
->De bulkbewerkingsmethoden werken voor elementen die beschikbaar zijn in een map of een verzameling. Voor de elementen die beschikbaar zijn in verschillende mappen of die voldoen aan een algemeen criterium, is het mogelijk om de metagegevens na het zoeken [in grote](search-assets.md#metadataupdates)hoeveelheden bij te werken.
+>De bulkbewerkingsmethoden werken voor elementen die beschikbaar zijn in een map of een verzameling. Voor de activa die over omslagen beschikbaar zijn of een gemeenschappelijke criteria aanpassen, is het mogelijk om [bulkupdate de meta-gegevens na het zoeken](search-assets.md#metadataupdates).
 
-1. Navigeer in de [!DNL Assets] gebruikersinterface naar de locatie van de elementen die u wilt bewerken.
+1. Navigeer in de gebruikersinterface [!DNL Assets] naar de locatie van de elementen die u wilt bewerken.
 1. Selecteer de elementen waarvan u de algemene eigenschappen wilt bewerken.
-1. Klik in de werkbalk **[!UICONTROL Properties]** om de pagina met eigenschappen voor de geselecteerde elementen te openen.
+1. Klik in de werkbalk op **[!UICONTROL Properties]** om de pagina met eigenschappen voor de geselecteerde elementen te openen.
 
    >[!NOTE]
    >
@@ -88,10 +88,10 @@ Gebruik de [schema-editor](metadata-config.md#folder-metadata-schema)om de pagin
    >[!NOTE]
    >
    >* Op de pagina met eigenschappen kunt u elementen uit de lijst met elementen verwijderen door ze te deselecteren. In de lijst met elementen zijn standaard alle elementen geselecteerd. De metagegevens voor elementen die u uit de lijst verwijdert, worden niet bijgewerkt.
-   >* Schakel boven aan de lijst met elementen het selectievakje in **[!UICONTROL Title]** om te schakelen tussen het selecteren van de elementen en het wissen van de lijst.
+   >* Selecteer boven aan de lijst met elementen het selectievakje bij **[!UICONTROL Title]** om te schakelen tussen het selecteren van de elementen en het wissen van de lijst.
 
 
-1. Als u een ander metagegevensschema voor de elementen wilt selecteren, klikt u op **[!UICONTROL Settings]** de werkbalk en selecteert u het gewenste schema.
+1. Als u een ander metagegevensschema voor de elementen wilt selecteren, klikt u op **[!UICONTROL Settings]** op de werkbalk en selecteert u het gewenste schema.
 1. Sla de wijzigingen op.
 1. Selecteer **[!UICONTROL Append mode]** om de nieuwe metadata toe te voegen aan de bestaande metadata in velden die meerdere waarden bevatten. Als u deze optie niet selecteert, worden de bestaande metadata in de velden vervangen door de nieuwe metadata. Klik op **[!UICONTROL Submit]**.
 
@@ -99,7 +99,7 @@ Gebruik de [schema-editor](metadata-config.md#folder-metadata-schema)om de pagin
    >
    >Voor velden met één waarde worden de nieuwe metadata niet toegevoegd aan de bestaande waarde in het veld, zelfs niet als u **[!UICONTROL Append mode]** selecteert.
 
-## Metagegevens importeren {#import-metadata}
+## Metagegevens {#import-metadata} importeren
 
 [!DNL Assets] Hiermee kunt u metagegevens van elementen in bulk importeren met een CSV-bestand. U kunt bulkupdates uitvoeren voor de onlangs geüploade elementen of de bestaande elementen door een CSV-bestand te importeren. U kunt ook metagegevens van elementen bulksgewijs invoeren vanuit een systeem van derden in de CSV-indeling.
 
@@ -109,9 +109,9 @@ De import van metagegevens is asynchroon en belemmert de systeemprestaties niet.
 >
 >Registreer de naamruimten eerst om metagegevens in aangepaste naamruimten te importeren.
 
-1. Navigeer naar de [!DNL Assets] gebruikersinterface en klik op **[!UICONTROL Create]** de werkbalk.
+1. Navigeer naar de [!DNL Assets] gebruikersinterface en klik **[!UICONTROL Create]** van de toolbar.
 1. Selecteer **[!UICONTROL Metadata]** in het menu.
-1. In the **[!UICONTROL Metadata Import]** page, click **[!UICONTROL Select File]**. Selecteer het CSV-bestand met de metadata.
+1. Klik op **[!UICONTROL Metadata Import]** op de pagina. **[!UICONTROL Select File]** Selecteer het CSV-bestand met de metadata.
 1. Geef de volgende parameters op. Zie een voorbeeld-CSV-bestand op [metadata-import-sample-file.csv](/help/assets/assets/metadata-import-sample-file.csv).
 
    | Parameters voor het importeren van metagegevens | Beschrijving |
@@ -119,22 +119,22 @@ De import van metagegevens is asynchroon en belemmert de systeemprestaties niet.
    | [!UICONTROL Batch Size] | Aantal elementen in een batch waarvoor metagegevens moeten worden geïmporteerd. De standaardwaarde is 50. Maximumwaarde is 100. |
    | [!UICONTROL Field Separator] | De standaardwaarde is `,` (een komma). U kunt elk ander teken opgeven. |
    | [!UICONTROL Multi Value Delimiter] | Scheidingsteken voor metagegevenswaarden. De standaardwaarde is `|`. |
-   | [!UICONTROL Launch Workflows] | Standaard false. Als de instelling `true` en de standaardinstellingen voor Launcher zijn ingesteld voor de [!UICONTROL DAM Metadata WriteBack] workflow (die metagegevens naar de binaire XMP schrijft). Als u opstartworkflows inschakelt, wordt het systeem trager. |
+   | [!UICONTROL Launch Workflows] | Standaard false. Wanneer ingesteld op `true` en de standaardinstellingen voor Launcher zijn van kracht voor de [!UICONTROL DAM Metadata WriteBack]-workflow (die metagegevens naar de binaire XMP schrijft). Als u opstartworkflows inschakelt, wordt het systeem trager. |
    | [!UICONTROL Asset Path Column Name] | Hiermee definieert u de kolomnaam voor het CSV-bestand met elementen. |
 
-1. Klik op **[!UICONTROL Import]** op de werkbalk. Nadat de metagegevens zijn geïmporteerd, wordt een melding in [!UICONTROL Notification] Postvak IN weergegeven.
+1. Klik op **[!UICONTROL Import]** op de werkbalk. Nadat de meta-gegevens worden ingevoerd, wordt een bericht getoond in [!UICONTROL Notification] inbox.
 
-1. Navigeer naar de [!UICONTROL Properties] pagina van een element en controleer de waarden in de velden om te controleren of het element correct is geïmporteerd.
+1. Navigeer naar de pagina [!UICONTROL Properties] van een element en controleer de waarden in de velden om te controleren of het bestand correct is geïmporteerd.
 
-Als u datum en tijdstempel wilt toevoegen tijdens het importeren van metagegevens, gebruikt u de `YYYY-MM-DDThh:mm:ss.fff-00:00` notatie voor datum en tijd. Datum en tijd worden gescheiden door `T`, is `hh` uren in 24-uursnotatie, `fff` is nanoseconden, en `-00:00` is timezone offset. Bijvoorbeeld, `2020-03-26T11:26:00.000-07:00` is 26 maart 2020 om 11:26:00.000 AM PST tijd.
+Als u datum en tijdstempel wilt toevoegen tijdens het importeren van metagegevens, gebruikt u de `YYYY-MM-DDThh:mm:ss.fff-00:00`-indeling voor datum en tijd. Datum en tijd worden gescheiden door `T`, `hh` is uren in 24-uurformaat, `fff` is nanoseconden, en `-00:00` is timezone offset. `2020-03-26T11:26:00.000-07:00` is bijvoorbeeld 26 maart 2020 om 11:26:00.000 AM PST tijd.
 
 >[!CAUTION]
 >
->Als de datumnotatie niet overeenkomt `YYYY-MM-DDThh:mm:ss.fff-00:00`, worden de datumwaarden niet ingesteld. De datumnotaties van het geëxporteerde CSV-bestand met metagegevens hebben de indeling `YYYY-MM-DDThh:mm:ss-00:00`. Als u het wilt invoeren, zet het in het aanvaardbare formaat door de nanosecondewaarde toe te voegen die door wordt aangegeven `fff`.
+>Als de datumnotatie niet overeenkomt met `YYYY-MM-DDThh:mm:ss.fff-00:00`, worden de datumwaarden niet ingesteld. De datumnotaties van het geëxporteerde CSV-bestand met metagegevens hebben de notatie `YYYY-MM-DDThh:mm:ss-00:00`. Als u het wilt invoeren, zet het in het aanvaardbare formaat door de nanosecondenwaarde toe te voegen die door `fff` wordt vermeld.
 
 ## Metagegevens exporteren {#export-metadata}
 
-U kunt metagegevens voor meerdere elementen in CSV-indeling exporteren. De metagegevens worden asynchroon geëxporteerd en hebben geen invloed op de prestaties van het systeem. Als u metagegevens wilt exporteren, doorloopt [!DNL Experience Manager] u de eigenschappen van het knooppunt Asset `jcr:content/metadata` en de onderliggende knooppunten en exporteert u de eigenschappen van de metagegevens in een CSV-bestand.
+U kunt metagegevens voor meerdere elementen in CSV-indeling exporteren. De metagegevens worden asynchroon geëxporteerd en hebben geen invloed op de prestaties van het systeem. [!DNL Experience Manager] doorloopt de eigenschappen van het elementknooppunt `jcr:content/metadata` en de onderliggende knooppunten en exporteert de metagegevenseigenschappen in een CSV-bestand om metagegevens te exporteren.
 
 Hier volgen enkele voorbeelden van het gebruik van metagegevens voor bulksgewijs exporteren:
 
@@ -145,17 +145,17 @@ Hier volgen enkele voorbeelden van het gebruik van metagegevens voor bulksgewijs
 
 1. Selecteer de elementenmap die elementen bevat waarvoor u metagegevens wilt exporteren. Selecteer **[!UICONTROL Export metadata]** in de werkbalk.
 
-1. In the [!UICONTROL Metadata Export] dialog, specify a name for the CSV file. Selecteer Metagegevens voor elementen in submappen exporteren **[!UICONTROL Include assets in subfolders]**.
+1. Geef in het dialoogvenster [!UICONTROL Metadata Export] een naam op voor het CSV-bestand. Selecteer **[!UICONTROL Include assets in subfolders]** als u metagegevens voor elementen in submappen wilt exporteren.
 
-   ![Interface en opties voor het exporteren van metagegevens van alle elementen in een](assets/export_metadata_page.png "folderInterface en opties voor het exporteren van metagegevens van alle elementen in een map")
+   ![Interface en opties voor het exporteren van metagegevens van alle elementen in een ](assets/export_metadata_page.png "folderInterface en opties voor het exporteren van metagegevens van alle elementen in een map")
 
 1. Selecteer de gewenste opties. Geef een bestandsnaam en zo nodig een datum op.
 
-1. Geef in het **[!UICONTROL Properties to be exported]** veld op of u alle of specifieke eigenschappen wilt exporteren. Als u Selectieve eigenschappen kiest die u wilt exporteren, voegt u de gewenste eigenschappen toe.
+1. Geef in het veld **[!UICONTROL Properties to be exported]** op of u alle of specifieke eigenschappen wilt exporteren. Als u Selectieve eigenschappen kiest die u wilt exporteren, voegt u de gewenste eigenschappen toe.
 
 1. Klik **[!UICONTROL Export]** op de werkbalk. Een bericht bevestigt dat de metagegevens worden geëxporteerd. Sluit het bericht.
 
-1. Open het bericht in het Postvak IN voor de exporttaak. Selecteer de taak en klik op **[!UICONTROL Open]** op de werkbalk. To download the CSV file with the metadata, click **[!UICONTROL CSV Download]** from the toolbar. Klik op **[!UICONTROL Close]**.
+1. Open het bericht in het Postvak IN voor de exporttaak. Selecteer de taak en klik op **[!UICONTROL Open]** op de werkbalk. Als u het CSV-bestand met de metagegevens wilt downloaden, klikt u op **[!UICONTROL CSV Download]** op de werkbalk. Klik op **[!UICONTROL Close]**.
 
    ![Dialoogvenster voor het downloaden van het CSV-bestand met metagegevens die bulksgewijs zijn geëxporteerd](assets/csv_download.png)
 
@@ -163,7 +163,7 @@ Hier volgen enkele voorbeelden van het gebruik van metagegevens voor bulksgewijs
 
 ## Metagegevens van verzamelingen bewerken {#collections-metadata}
 
-Zie Metagegevens [van verzamelingen](/help/assets/manage-collections.md#view-edit-collection-metadata) weergeven en bewerken en metagegevens van meerdere verzamelingen in bulk [](/help/assets/manage-collections.md#editing-collection-metadata-in-bulk)bewerken voor meer informatie.
+Zie [Metagegevens van verzamelingen weergeven en bewerken](/help/assets/manage-collections.md#view-edit-collection-metadata) en [Metagegevens van meerdere verzamelingen bulksgewijs bewerken](/help/assets/manage-collections.md#editing-collection-metadata-in-bulk) voor meer informatie.
 
 ## Een metagegevensprofiel toepassen op mappen {#applying-a-metadata-profile-to-folders}
 
@@ -180,28 +180,28 @@ Mappen waaraan een profiel is toegewezen, worden in de gebruikersinterface aange
 
 U kunt metagegevensprofielen toepassen op specifieke mappen of op alle elementen.
 
-U kunt elementen opnieuw verwerken in een map die al een bestaand metagegevensprofiel heeft dat u later hebt gewijzigd. Zie Elementen [opnieuw verwerken in een map nadat u het verwerkingsprofiel](processing-profiles.md#reprocessing-assets)hebt bewerkt.
+U kunt elementen opnieuw verwerken in een map die al een bestaand metagegevensprofiel heeft dat u later hebt gewijzigd. Zie [Elementen opnieuw verwerken in een map nadat u het verwerkingsprofiel ervan hebt bewerkt](processing-profiles.md#reprocessing-assets).
 
 U kunt een metadataprofiel toepassen op een map vanuit het menu **[!UICONTROL Tools]**, of vanuit **[!UICONTROL Properties]** als u zich in een map bevindt. In deze sectie wordt beschreven hoe u op beide manieren metadataprofielen kunt toepassen op mappen.
 
 Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
 
-U kunt elementen in een map opnieuw verwerken die al een bestaand videoprofiel heeft dat u later wijzigt. Zie Elementen [opnieuw verwerken in een map nadat u het verwerkingsprofiel](processing-profiles.md#reprocessing-assets)hebt bewerkt.
+U kunt elementen in een map opnieuw verwerken die al een bestaand videoprofiel heeft dat u later wijzigt. Zie [Elementen opnieuw verwerken in een map nadat u het verwerkingsprofiel ervan hebt bewerkt](processing-profiles.md#reprocessing-assets).
 
-### Metaprofielen toepassen op mappen vanuit de [!UICONTROL Profiles] gebruikersinterface {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
+### Metagegevensprofielen toepassen op mappen vanuit [!UICONTROL Profiles] gebruikersinterface {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
 
 Voer de stappen uit om het metagegevensprofiel toe te passen:
 
-1. Click the [!DNL Experience Manager] logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Profiles]**.
+1. Klik op het [!DNL Experience Manager]-logo en navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Profiles]**.
 1. Selecteer het metagegevensprofiel dat u wilt toepassen op een of meerdere mappen.
-1. Click **[!UICONTROL Apply Metadata Profile to Folder(s)]** and select the folder or multiple folders you want use to receive the newly uploaded assets and click **[!UICONTROL Done]**. Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
+1. Klik op **[!UICONTROL Apply Metadata Profile to Folder(s)]** en selecteer de map of meerdere mappen die u wilt gebruiken om de nieuw geüploade elementen te ontvangen en klik op **[!UICONTROL Done]**. Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
 
-### Metagegevensprofielen toepassen op mappen vanuit [!UICONTROL Properties] {#applying-metadata-profiles-to-folders-from-properties}
+### Metagegevensprofielen toepassen op mappen van [!UICONTROL Properties] {#applying-metadata-profiles-to-folders-from-properties}
 
-1. Klik in de linkertrack **[!UICONTROL Assets]** en navigeer naar de map waarop u een metagegevensprofiel wilt toepassen.
-1. Klik in de map op het vinkje om het te selecteren en klik vervolgens **[!UICONTROL Properties]**.
+1. Klik in de linkertrack op **[!UICONTROL Assets]** en navigeer naar de map waarop u een metagegevensprofiel wilt toepassen.
+1. Klik in de map op het vinkje om het te selecteren en klik vervolgens op **[!UICONTROL Properties]**.
 
-1. Select the **[!UICONTROL Metadata Profiles]** tab and select the profile from the popup menu and click **[!UICONTROL Save]**.
+1. Selecteer de tab **[!UICONTROL Metadata Profiles]** en selecteer het profiel in het pop-upmenu en klik op **[!UICONTROL Save]**.
 
 Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
 
@@ -211,33 +211,33 @@ Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van 
 
 For details, see [configuration to apply metadata profile globally](/help/assets/metadata-config.md#apply-a-metadata-profile-globally). -->
 
-### Een metagegevensprofiel uit mappen verwijderen {#removing-a-metadata-profile-from-folders}
+### Een metagegevensprofiel verwijderen uit mappen {#removing-a-metadata-profile-from-folders}
 
 Wanneer u een metagegevensprofiel uit een map verwijdert, nemen eventuele submappen automatisch de verwijdering van het profiel uit de bovenliggende map over. Alle verwerking van bestanden die in de mappen zijn opgetreden, blijft echter intact.
 
-U kunt een metagegevensprofiel uit een map verwijderen vanuit het **[!UICONTROL Tools]** menu of vanuit de map **[!UICONTROL Properties]** in de map.
+U kunt een metagegevensprofiel uit een map verwijderen vanuit het menu **[!UICONTROL Tools]** of vanuit de map **[!UICONTROL Properties]**.
 
-#### Metaprofielen uit mappen verwijderen via de gebruikersinterface Profielen {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
+#### Metagegevensprofielen uit mappen verwijderen via de gebruikersinterface Profielen {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
-1. Click the [!DNL Experience Manager] logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Profiles]**.
+1. Klik op het [!DNL Experience Manager]-logo en navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Profiles]**.
 1. Selecteer het metagegevensprofiel dat u uit een of meerdere mappen wilt verwijderen.
-1. Click **[!UICONTROL Remove Metadata Profile from Folder(s)]** and select the folder or multiple folders you want use to remove a profile from and click **[!UICONTROL Done]**.
+1. Klik op **[!UICONTROL Remove Metadata Profile from Folder(s)]** en selecteer de map of meerdere mappen waaruit u een profiel wilt verwijderen en klik op **[!UICONTROL Done]**.
 
    U kunt bevestigen dat het metagegevensprofiel niet meer wordt toegepast op een map omdat de naam niet langer onder de mapnaam wordt weergegeven.
 
-#### Metagegevensprofielen uit mappen verwijderen via eigenschappen {#removing-metadata-profiles-from-folders-via-properties}
+#### Metagegevensprofielen uit mappen verwijderen via Eigenschappen {#removing-metadata-profiles-from-folders-via-properties}
 
-1. Klik op het [!DNL Experience Manager] logo en navigeer **[!UICONTROL Assets]** naar de map waarvan u een metagegevensprofiel wilt verwijderen.
-1. Klik in de map op het vinkje om het te selecteren en klik vervolgens **[!UICONTROL Properties]**.
+1. Klik op het [!DNL Experience Manager]-logo en navigeer **[!UICONTROL Assets]** naar de map waaruit u een metagegevensprofiel wilt verwijderen.
+1. Klik in de map op het vinkje om het te selecteren en klik vervolgens op **[!UICONTROL Properties]**.
 1. Selecteer het tabblad **[!UICONTROL Metadata Profiles]**, selecteer **[!UICONTROL None]** in het vervolgkeuzemenu en klik op **[!UICONTROL Save]**. Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
 
 ## Tips en beperkingen {#best-practices-limitations}
 
-* De meta-gegevensupdates via gebruikersinterface verandert de meta-gegevenseigenschappen in `dc` namespace. Wanneer updates via de HTTP-API worden uitgevoerd, veranderen de eigenschappen van de metagegevens in de `jcr` naamruimte. Zie [hoe u metagegevens kunt bijwerken met de HTTP-API](/help/assets/mac-api-assets.md#update-asset-metadata).
+* De meta-gegevensupdates via gebruikersinterface veranderen de meta-gegevenseigenschappen in `dc` namespace. Wanneer updates via de HTTP-API worden uitgevoerd, veranderen de eigenschappen van de metagegevens in de naamruimte `jcr`. Zie [hoe u metagegevens kunt bijwerken met HTTP API](/help/assets/mac-api-assets.md#update-asset-metadata).
 
 * Het CSV-bestand voor het importeren van metagegevens van elementen heeft een zeer specifieke indeling. Als u moeite en tijd wilt besparen en onbedoelde fouten wilt voorkomen, kunt u de CSV-bestanden beginnen te maken met de indeling van een geëxporteerd CSV-bestand.
 
-* Wanneer u metagegevens importeert met een CSV-bestand, is de vereiste datumnotatie `YYYY-MM-DDThh:mm:ss.fff-00:00`. Als een andere notatie wordt gebruikt, worden de datumwaarden niet ingesteld. De datumnotaties van het geëxporteerde CSV-bestand met metagegevens hebben de indeling `YYYY-MM-DDThh:mm:ss-00:00`. Als u het wilt invoeren, zet het in het aanvaardbare formaat door de nanosecondewaarde toe te voegen die door wordt aangegeven `fff`.
+* Wanneer u metagegevens importeert met een CSV-bestand, is de vereiste datumnotatie `YYYY-MM-DDThh:mm:ss.fff-00:00`. Als een andere notatie wordt gebruikt, worden de datumwaarden niet ingesteld. De datumnotaties van het geëxporteerde CSV-bestand met metagegevens hebben de notatie `YYYY-MM-DDThh:mm:ss-00:00`. Als u het wilt invoeren, zet het in het aanvaardbare formaat door de nanosecondenwaarde toe te voegen die door `fff` wordt vermeld.
 
 >[!MORELIKETHIS]
 >

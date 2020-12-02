@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 6148f8e6-ab62-4eb8-8a2d-c431b8318000
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '293'
+ht-degree: 0%
 
 ---
 
@@ -42,7 +45,7 @@ Verschillende rollen kunnen bij het testen en in diverse stadia van de projecton
     <ul>
      <li><p>Verstrekt de klant van ervaring van het project dat wordt ontwikkeld.</p> </li>
      <li><p>Biedt vroege feedback van de klant.</p> </li>
-     <li><p>Gebruikers geven vaak hun eisen uit in termen van ervaring uit het verleden; het zo vroeg mogelijk betrekken van de klanten bij het testen vergroot hun ervaring met het nieuwe project in termen van <i>praktijkervaring</i> .</p> </li>
+     <li><p>Gebruikers geven vaak hun eisen uit in termen van ervaring uit het verleden; Als de klanten zo vroeg mogelijk worden betrokken bij het testen, wordt hun ervaring met het nieuwe project in termen van <i>hands-on</i>-ervaring vergroot.</p> </li>
     </ul> </td>
    <td><p>Opnieuw is vroege betrokkenheid goed, hoewel om het even welke versie de klanten gebruiken stabiel zou moeten zijn, met redelijke functionaliteit.</p> <p>Eerste indrukken zijn altijd belangrijk.</p> </td>
   </tr>

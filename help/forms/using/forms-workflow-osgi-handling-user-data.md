@@ -15,14 +15,14 @@ ht-degree: 0%
 ---
 
 
-# Forms-gecentreerde workflows op OSGi | Gebruikersgegevens verwerken {#forms-centric-workflows-on-osgi-handling-user-data}
+# Forms-gecentreerde workflows op OSGi | Gebruikersgegevens {#forms-centric-workflows-on-osgi-handling-user-data} verwerken
 
 Met Forms-gerichte AEM-workflows kunt u real-world Forms-gerichte bedrijfsprocessen automatiseren. Workflows bestaan uit een reeks stappen die worden uitgevoerd in een volgorde die is opgegeven in het bijbehorende workflowmodel. Elke stap voert een specifieke actie uit zoals het toewijzen van een taak aan een gebruiker of het verzenden van een e-mailbericht. Workflows kunnen communiceren met middelen in de opslagplaats, gebruikersaccounts en services. Daarom kunnen werkstromen ingewikkelde activiteiten coördineren die om het even welk aspect van Experience Manager impliceren.
 
 Een op formulieren gerichte workflow kan op een van de volgende manieren worden geactiveerd of gestart:
 
 * Een toepassing verzenden vanuit AEM Postvak In
-* Een toepassing verzenden vanuit AEM [!DNL Forms] app
+* Een toepassing verzenden vanuit AEM [!DNL Forms]-toepassing
 * Een adaptief formulier indienen
 * Een controlemap gebruiken
 * Een interactieve communicatie of een brief indienen
@@ -47,7 +47,7 @@ De standaardopslagplaatsen waar lading, concepten, en geschiedenis van een werks
    <td><b>AEM 6.3 [!DNL Forms]</b></td>
   </tr>
   <tr>
-   <td><strong>Workflow- <br /> instantie</strong></td>
+   <td><strong>Workflow <br />-instantie</strong></td>
    <td>/var/workflow/instances/[server_id]/&lt;date&gt;/[workflow-instance]/</td>
    <td>/etc/workflow/instances/[server_id]/[date]/[workflow-instance]/</td>
   </tr>
@@ -58,7 +58,7 @@ De standaardopslagplaatsen waar lading, concepten, en geschiedenis van een werks
   </tr>
   <tr>
    <td><strong>Concepten</strong></td>
-   <td>/var/fd/dashboard/instances/[server_id]/<br /> [date]/[workflow-instance]/concept/[workitem]/</td>
+   <td>/var/fd/dashboard/instances/[server_id]/<br /> [date]/[workflow-instance]/draft/[workitem]/</td>
    <td>/etc/fd/dashboard/instances/[server_id]/<br /> [date]/[workflow-instance]/draft/[workitem]/</td>
   </tr>
   <tr>
@@ -82,9 +82,9 @@ U kunt de resultaten echter niet identificeren of dubbelzinnig weergeven wanneer
 
 Voer de volgende stappen uit om gebruikersgegevens te identificeren en te benaderen die voor een workflowinstantie zijn opgeslagen:
 
-1. Ga bij AEM instantie van de auteur naar `https://'[server]:[port]'/crx/de` en navigeer naar **[!UICONTROL Tools > Query]**.
+1. Ga bij AEM auteurinstantie naar `https://'[server]:[port]'/crx/de` en navigeer naar **[!UICONTROL Tools > Query]**.
 
-   Selecteer **[!UICONTROL SQL2]** in de **[!UICONTROL Type]** vervolgkeuzelijst.
+   Selecteer **[!UICONTROL SQL2]** van **[!UICONTROL Type]** drop-down.
 
 1. Voer afhankelijk van de beschikbare informatie een van de volgende query&#39;s uit:
 
@@ -98,7 +98,7 @@ Voer de volgende stappen uit om gebruikersgegevens te identificeren en te benade
 
    De query retourneert de locatie van alle werkstroominstanties voor de opgegeven werkstroominitiator of de huidige werkstroomontvanger.
 
-   De volgende query retourneert bijvoorbeeld twee pad naar workflowinstanties van het `/var/workflow/instances` knooppunt waarvan de initiator van de workflow is `srose`.
+   De volgende query retourneert bijvoorbeeld twee pad naar workflowinstanties van het knooppunt `/var/workflow/instances` waarvan de initiator van de workflow `srose` is.
 
    ![workflow-instance](assets/workflow-instance.png)
 
@@ -106,7 +106,7 @@ Voer de volgende stappen uit om gebruikersgegevens te identificeren en te benade
 
    ![status](assets/status.png)
 
-1. Navigeer naar het knooppunt voor workflowinstanties `data/payload/`. De `path` eigenschap slaat het pad naar de lading voor de werkstroominstantie op. U kunt naar het pad navigeren om toegang te krijgen tot gegevens die zijn opgeslagen in de payload.
+1. Navigeer in het knooppunt voor workflowinstanties naar `data/payload/`. In de eigenschap `path` wordt het pad naar de nuttige lading voor de werkstroominstantie opgeslagen. U kunt naar het pad navigeren om toegang te krijgen tot gegevens die zijn opgeslagen in de payload.
 
    ![payload-path](assets/payload-path.png)
 
@@ -122,38 +122,38 @@ Voer de volgende stappen uit om gebruikersgegevens te identificeren en te benade
 
    >[!NOTE]
    >
-   >AEM [!DNL Forms] app slaat ook gegevens op in de offlinemodus. Het is mogelijk dat gegevens voor een workflowinstantie lokaal op afzonderlijke apparaten worden opgeslagen en naar de [!DNL Forms] server worden verzonden wanneer de app met de server synchroniseert.
+   >AEM [!DNL Forms]-toepassing slaat ook gegevens op in de offline modus. Het is mogelijk dat gegevens voor een workflowinstantie lokaal op afzonderlijke apparaten worden opgeslagen en naar de [!DNL Forms]-server worden verzonden wanneer de app synchroniseert met de server.
 
-### Gebruikersgegevens verwijderen {#delete-user-data}
+### Gebruikersgegevens {#delete-user-data} verwijderen
 
 U moet een AEM beheerder zijn om gebruikersgegevens uit workflowinstanties te verwijderen door de volgende stappen uit te voeren:
 
-1. Volg de instructies in de gebruikersgegevens [van de](/help/forms/using/forms-workflow-osgi-handling-user-data.md#access) Toegang en neem nota van het volgende:
+1. Volg de instructies in [Toegang tot gebruikersgegevens](/help/forms/using/forms-workflow-osgi-handling-user-data.md#access) en neem nota van het volgende:
 
    * Paden naar werkstroominstanties die aan de gebruiker zijn gekoppeld
    * Status van de workflowinstanties
    * Paden naar ladingen voor de workflowinstanties
    * Paden naar concepten en historie voor workflowinstanties
 
-1. Voer deze stap uit voor workflowinstanties in de status **RUNNING**, **SUSPENDED** of **STALE** :
+1. Voer deze stap uit voor workflowinstanties in **RUNNING**, **SUSPENDED** of **STALE** status:
 
    1. Ga naar `https://'[server]:[port]'/aem/start.html` en login met beheerdergeloofsbrieven.
    1. Ga naar **[!UICONTROL Tools > Workflow> Instances]**.
    1. Selecteer relevante workflowinstanties voor de gebruiker en tik **[!UICONTROL Terminate]** om actieve exemplaren te beëindigen.
 
-      Zie Workflowinstanties [beheren voor meer informatie over het werken met workflowinstanties](/help/sites-administering/workflows-administering.md).
+      Zie [Workflowinstanties beheren](/help/sites-administering/workflows-administering.md) voor meer informatie over het werken met workflowinstanties.
 
-1. Ga naar [!DNL CRXDE Lite] console, navigeer naar het payload pad voor een workflowinstantie en verwijder het `payload` knooppunt.
-1. Navigeer naar het pad naar concepten voor een werkstroominstantie en verwijder het `draft` knooppunt.
-1. Navigeer naar het historiepad voor een workflowinstantie en verwijder het `history` knooppunt.
-1. Navigeer naar het pad van de workflowinstantie voor een workflowinstantie en verwijder het `[workflow-instance-ID]` knooppunt voor de workflow.
+1. Ga naar [!DNL CRXDE Lite] console, navigeer aan de nuttige weg voor een werkschemainstantie, en schrap `payload` knoop.
+1. Navigeer naar het pad naar concepten voor een workflowinstantie en verwijder het knooppunt `draft`.
+1. Navigeer naar het historiepad voor een workflowinstantie en verwijder het knooppunt `history`.
+1. Navigeer naar het pad van de workflowinstantie voor een workflowinstantie en verwijder het knooppunt `[workflow-instance-ID]` voor de workflow.
 
    >[!NOTE]
    >
    >Als u het knooppunt voor workflowinstanties verwijdert, wordt de instantie van de workflow voor alle workflowdeelnemers verwijderd.
 
 1. Herhaal stap 2 - 6 voor alle workflowinstanties die voor een gebruiker zijn geïdentificeerd.
-1. Identificeer en verwijder off-line ontwerp en voorleggingsgegevens van AEM [!DNL Forms] app outbox van werkschemagedeelnemers om het even welke voorlegging aan de server te vermijden.
+1. Offline concept- en verzendgegevens van AEM [!DNL Forms]-app-outbox met workflowdeelnemers identificeren en verwijderen om verzending naar de server te voorkomen.
 
 U kunt API&#39;s ook gebruiken om knooppunten en eigenschappen te openen en te verwijderen. Zie de volgende documenten voor meer informatie.
 

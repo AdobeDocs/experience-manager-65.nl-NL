@@ -1,8 +1,8 @@
 ---
 title: Aanpassing thema
 seo-title: Aanpassing thema
-description: Het thema van uw app voor AEM Forms aanpassen.
-seo-description: Het thema van uw app voor AEM Forms aanpassen.
+description: Het thema van uw AEM Forms-app aanpassen.
+seo-description: Het thema van uw AEM Forms-app aanpassen.
 uuid: 36632e67-1cc6-416d-ae80-d84bbabab4bd
 contentOwner: robhagat
 content-type: reference
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Aanpassing thema {#theme-customization}
 
-U kunt de HTML-code en het CSS-bestand aanpassen en zo een duidelijk organisatiespecifiek uiterlijk geven aan de AEM Forms-app. U kunt bijvoorbeeld de achtergrondkleur en -hoogte van taken of Startpunten wijzigen. In het volgende voorbeeld worden instructies gegeven om te wijzigen:
+U kunt de HTML-code en het CSS-bestand aanpassen en zo een specifieke organisatie voor de AEM Forms-app creëren. U kunt bijvoorbeeld de achtergrondkleur en -hoogte van taken of Startpunten wijzigen. In het volgende voorbeeld worden instructies gegeven om te wijzigen:
 
 * aanwijzingen weergeven in plaats van de beschrijving
 * aantal weergaveroutes
@@ -30,17 +30,17 @@ U kunt de HTML-code en het CSS-bestand aanpassen en zo een duidelijk organisatie
 
 1. Open uw project.
 
-   * Voor iOS openen `Capture.xcodeproj` in Xcode
+   * Voor iOS opent u `Capture.xcodeproj` in Xcode
    * Voor Android opent u het Android-project in Eclipse.
    * Voor Vensters, open `MWSWindows.sln` in Visual Studio.
 
 1. Navigeer naar de map templates.
 
-   * Navigeer in Xcode naar de map **Vastleggen > www > wsmobile > js > runtime > templates** .
-   * Navigeer in Eclipse naar de map **Assets > www > wsmobile > js > runtime > templates** .
-   * Navigeer in Visual Studio naar de map **MWSWindows > www > wsmobile > js > runtime > templates** .
+   * Navigeer in Xcode naar de map **Vastleggen > www > wsmobile > js > runtime > templates**.
+   * Navigeer in Eclipse naar de map **assets > www > wsmobile > js > runtime > templates**.
+   * Navigeer in Visual Studio naar de map **MWSWindows > www > wsmobile > js > runtime > templates**.
 
-1. Open het `template.html` bestand om het te bewerken.
+1. Open het `template.html`-bestand voor bewerking.
 1. Zoek de volgende tekenreeks:
 
    ```jsp
@@ -53,7 +53,7 @@ U kunt de HTML-code en het CSS-bestand aanpassen en zo een duidelijk organisatie
 
    Vervang het door `<%`.
 
-1. Zoek de volgende code in het `template.html` bestand:
+1. Zoek de volgende code in het `template.html`-bestand:
 
    ```jsp
    <ul id="task_menu_list">
@@ -76,12 +76,12 @@ U kunt de HTML-code en het CSS-bestand aanpassen en zo een duidelijk organisatie
 1. Navigeer naar de css-map.
 
    * Navigeer in Xcode naar **Vastleggen > www > wsmobile > css**.
-   * Navigeer in Eclipse naar **elementen > www > wsmobile > css**.
+   * Navigeer in Eclipse naar **assets > www > wsmobile > css**.
    * Navigeer in Visual Studio naar **MWSWindows > www > wsmobile > css**.
 
-1. Open het `_style.css` bestand om het te bewerken.
-1. Wijzig `#323232` de optie Achtergrondafbeelding in `#fff`.
-1. Sla de wijzigingen op en sluit het `_style.css` bestand.
-1. Open de app AEM Forms.
+1. Open het `_style.css`-bestand voor bewerking.
+1. Wijzig `#323232` in `#fff` voor achtergrondafbeelding.
+1. Sla de wijzigingen op en sluit het `_style.css`-bestand.
+1. Open de AEM Forms-app.
 
-   In de app AEM Forms worden nu instructies weergegeven in plaats van een beschrijving.
+   De AEM Forms-app geeft nu instructies weer in plaats van een beschrijving.

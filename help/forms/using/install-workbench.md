@@ -13,11 +13,11 @@ ht-degree: 0%
 ---
 
 
-# Workbench installeren {#install-workbench}
+# Workbench {#install-workbench} installeren
 
 Dit document bevat instructies voor het installeren en configureren van AEM Forms Workbench. Het installatieprogramma installeert ook Forms Designer.
 
-## Who should read this document? {#who-should-read-this-doc}
+## Wie moet dit document lezen? {#who-should-read-this-doc}
 
 Dit document is bedoeld voor beheerders of ontwikkelaars die verantwoordelijk zijn voor het installeren, configureren, beheren of implementeren van Workbench. Ook de informatie die nodig is om uw systeem te configureren voor de ondersteuning van uw geüpgrade AEM Forms-processen. De verstrekte informatie is gebaseerd op de veronderstelling dat iedereen die dit document leest vertrouwd is met het besturingssysteem Microsoft® Windows®.
 
@@ -53,7 +53,7 @@ De bronnen in deze tabel kunnen u helpen meer te weten te komen over en aan de s
 >
 >De Flex-werkruimte is verouderd voor AEM Forms. Deze is beschikbaar voor de AEM Forms-release.
 
-## Voordat u gaat installeren {#before-you-install}
+## Voordat u {#before-you-install} installeert
 
 ### Overzicht van Workbench-installatie {#workbench-installation-overview}
 
@@ -75,8 +75,8 @@ In deze sectie worden de hardware- en softwarevereisten en ondersteunde platform
 
 ### Minimale hardware- en softwarevereisten {#minimum-hardware-software-requirements}
 
-**Workbench**De volgende vereisten worden minimaal aanbevolen:
-Schijfruimte voor installatie:
+****
+WorkbenchDe volgende vereisten worden minimaal aanbevolen: Schijfruimte voor installatie:
 * 680 MB alleen voor Workbench.
 * 2,15 GB op één station voor een volledige installatie van Workbench, Designer en de samplingverzameling.
 * 400 MB voor tijdelijke installatiemappen - 200 MB in de gebruiker \ temp folder en 200 MB in de tijdelijke folder van Vensters.
@@ -98,7 +98,7 @@ Schijfruimte voor installatie:
 
 ### Ondersteunde Platforms {#supported-platforms}
 
-Zie de volledige lijst met ondersteunde platforms voor Workbench op door [AEM Forms ondersteunde Platforms](http://adobe.com/go/learn_aemforms_supportedplatforms_65).
+Zie de volledige lijst met ondersteunde platforms voor Workbench op [AEM Forms Ondersteunde Platforms](http://adobe.com/go/learn_aemforms_supportedplatforms_65).
 
 ## Installatieoverwegingen voor Designer {#designer-installation-considerations}
 
@@ -120,7 +120,7 @@ Verschillende versies van Designer kunnen op hetzelfde systeem naast elkaar best
   </tr>
   <tr>
    <td><p>Designer (zelfstandig)</p> </td>
-   <td><p>Geen. <br />De versie van Designer die bij Workbench wordt geleverd, is alleen beschikbaar in het Engels. <br />Het Workbench-installatieprogramma installeert geen nieuwe versie van Designer. In plaats daarvan wordt een bijgewerkte versie, die wordt meegeleverd met het Workbench-installatieprogramma, gepatcheerd. Zo kunt u ook uw gelokaliseerde versie van Designer gebruiken in Workbench.<br /> </p> </td>
+   <td><p>Geen. <br />De versie van Designer die bij Workbench wordt geleverd, is alleen beschikbaar in het Engels. <br />Het Workbench-installatieprogramma installeert geen nieuwe versie van Designer. In plaats daarvan wordt een bijgewerkte versie, die wordt meegeleverd met het Workbench-installatieprogramma, gepatcheerd. Hierdoor kunt u ook uw gelokaliseerde versie van Designer gebruiken in Workbench.<br /> </p> </td>
   </tr>
  </tbody>
 </table>
@@ -129,15 +129,15 @@ Verschillende versies van Designer kunnen op hetzelfde systeem naast elkaar best
 
 1. Ga naar **Configuratiescherm > Programma&#39;s > Programma&#39;s en onderdelen**
 1. Selecteer **Adobe Designer** in de lijst Momenteel geïnstalleerde programma&#39;s.
-1. Klik op **Verwijderen** en vervolgens op **Ja**.
+1. Klik **Uninstall** en klik dan **Yes**.
 
-## Workbench installeren {#installing-workbench}
+## Workbench {#installing-workbench} installeren
 
 In dit hoofdstuk wordt beschreven hoe u Workbench kunt installeren.
 
-### Workbench installeren en uitvoeren {#installing-and-running-workbench}
+### Workbench {#installing-and-running-workbench} installeren en uitvoeren
 
-Voordat u Workbench installeert, moet u ervoor zorgen dat uw omgeving de vereiste software en hardware bevat om het uit te voeren (zie sectie: **Voordat u gaat installeren**).
+Voordat u Workbench installeert, moet u ervoor zorgen dat uw omgeving de vereiste software en hardware bevat om het uit te voeren (zie sectie: **Voordat u** installeert).
 
 **Workbench installeren en uitvoeren:**
 
@@ -161,7 +161,7 @@ Voordat u Workbench installeert, moet u ervoor zorgen dat uw omgeving de vereist
    >
    >U kunt Designer dat met Acrobat 10 is geïnstalleerd, blijven gebruiken door deze optie uit te schakelen.
 
-1. Accepteer de standaardmap zoals deze wordt weergegeven of klik op Kiezen en navigeer naar de map waarin u Workbench wilt installeren. Klik vervolgens op Volgende.
+1. Accepteer de standaardmap als vermeld of   Klik op Kiezen en navigeer naar de map waarin u Workbench wilt installeren. Klik vervolgens op Volgende.
 
    >[!NOTE]
    >
@@ -171,15 +171,15 @@ Voordat u Workbench installeert, moet u ervoor zorgen dat uw omgeving de vereist
 1. Controleer het installatieoverzicht. Selecteer AEM Forms Workbench starten om Workbench te starten en klik op Volgende.
 1. Controleer de opmerkingen bij de release en klik op Gereed.
 1. De volgende items zijn nu op uw computer geïnstalleerd:
-   * **Workbench**: Als u Workbench wilt uitvoeren vanuit het menu Start, selecteert u Alle programma&#39;s > AEM Forms > Workbench als u de sneltoetsmap daar wilt opslaan. Zie de documentatie van Workbench <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/WorkbenchHelp.pdf">gebruiken voor meer informatie</a> .
-   * **Designer**: U kunt Designer openen vanuit Workbench. Zie Aan de slag in de Help bij <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf">Designer</a>voor meer informatie.
-   * **AEM Forms SDK**: Zie <a href="http://www.adobe.com/go/learn_aemforms_programming_65">Programmeren met AEM Forms</a>voor meer informatie over het gebruik van de SDK.
+   * **Workbench**: Als u Workbench wilt uitvoeren vanuit het menu Start, selecteert u Alle programma&#39;s > AEM Forms > Workbench als u de sneltoetsmap daar wilt opslaan. Ter informatie:   Zie de <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/WorkbenchHelp.pdf">Workbench</a> documentatie gebruiken.
+   * **Designer**: U kunt Designer openen vanuit Workbench. Zie Aan de slag-onderwerp in <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf">Designer Help</a> voor meer informatie.
+   * **AEM Forms SDK**: Zie  <a href="http://www.adobe.com/go/learn_aemforms_programming_65">Programmeren met AEM Forms</a> voor meer informatie over het gebruik van de SDK.
 
-## Processen upgraden {#upgrading-processes}
+## Processen {#upgrading-processes} bijwerken
 
 AEM Forms on JEE-processen kunnen worden geüpgraded naar AEM Forms-toepassingen met de wizard Upgrade. Zie Informatie over verouderde artefacten bijwerken in Workbench Help voor meer informatie.
 
-### Aanmelden bij een server configureren {#configuring-and-logging-server}
+### Aanmelden bij een server {#configuring-and-logging-server} configureren
 
 Als u Workbench wilt gebruiken, moet u een AEM Forms-exemplaar uitvoeren, meestal op een aparte computer. U moet een gebruikersnaam en wachtwoord hebben om u aan te melden bij AEM Forms, en informatie over de locatie van de server.
 
@@ -189,7 +189,7 @@ Als u Workbench wilt gebruiken, moet u een AEM Forms-exemplaar uitvoeren, meesta
 
 ### Instellingen voor time-out configureren {#configuring-timeout-settings}
 
-Workbench is na twee uur standaard uitgevallen, ongeacht de activiteit of inactiviteit. Als u de time-out-instelling wilt bewerken, raadpleegt u &quot;Gebruikersbeheer configureren > Geavanceerde systeemkenmerken configureren&quot; in de Help bij de <a href="https://docs.adobe.com/content/help/en/experience-manager-65/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html">beheerconsole</a>.
+Workbench is na twee uur standaard uitgevallen, ongeacht de activiteit of inactiviteit. Als u de time-out-instelling wilt bewerken, raadpleegt u &quot;Configuring User Management > Configure advanced system attributes&quot; in de Help van de <a href="https://docs.adobe.com/content/help/en/experience-manager-65/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html">beheerconsole</a>.
 
 ### Workbench configureren voor verbinding via HTTPS {#configuring-workbench-to-connect-over-HTTPS}
 
@@ -197,7 +197,7 @@ Als u Workbench via HTTPS wilt verbinden met een AEM Forms-server, moet u ervoor
 
 >[!NOTE]
 >
->[Workbench_HOME] staat voor de map waarin u Workbench hebt geïnstalleerd. De standaardlocatie is C:\Program Files (x86)\Adobe Experience Manager forms Workbench.
+>[Workbench_] HOME vertegenwoordigt de map waarin u Workbench hebt geïnstalleerd. De standaardlocatie is C:\Program Files (x86)\Adobe Experience Manager forms Workbench.
 
 Zorg ervoor dat u verbinding maakt met HTTPS door de naam te gebruiken die in het certificaat is opgegeven. Deze naam is doorgaans de volledig gekwalificeerde hostnaam.
 
@@ -217,7 +217,7 @@ Waar:
    * certname is het certificaat dat u hebt geselecteerd in stap 1.
    * Dit is bijvoorbeeld de alias die u kiest voor het certificaat. Deze waarde kan worden gewijzigd
 
-1. Typ Ja als u wordt gevraagd het certificaat te vertrouwen en druk op Enter. Het hulpprogramma gaat verder met het importeren van het controlebestand naar de map [Workbench_HOME]/workbench/jre/lib/security.
+1. Typ Ja als u wordt gevraagd het certificaat te vertrouwen en druk op Enter. Het keytool gaat door met het importeren van het cacerts-bestand in de map [Workbench_HOME]/workbench/jre/lib/security.
 
 1. Sluit en herstart Workbench om wijzigingen toe te passen.
 
@@ -256,18 +256,18 @@ De volgende beste praktijken zullen ervoor zorgen dat het geheime voorgeheugen n
    * Strip UUID of ga zelfde UUID in alle dynamisch geproduceerde malplaatjes over.
    * Genereer het document op basis van sjabloonbytes of op basis van dezelfde bestandsnaam op de schijf.
 
-### Workbench verwijderen {#uninstalling-workbench}
+### Workbench {#uninstalling-workbench} verwijderen
 
 Gebruik de functie Software in het Configuratiescherm om het verwijderprogramma te starten. De Workbench- en Designer-toepassingen hebben aparte verwijderingsprogramma&#39;s.
 
-## AEM Forms XDC Editor configureren {#configuring-aem-forms-xdc-editor}
+## AEM Forms XDC Editor {#configuring-aem-forms-xdc-editor} configureren
 
 Met behulp van de XDC Editor kunnen netwerkprinterbeheerders XDC-bestanden (XML Forms Architecture Device Configuration) maken en wijzigen. XDC-bestanden beschrijven de mogelijkheden van printers, zoals de printertaal of de correlatie tussen papierformaat en ladelocatie.
 
 Voordat uw beheerder van de netwerkprinter de XDC Editor gebruikt, verplaatst u de voorbeeld-XDC-bestanden en raadpleegt u Apparaatprofielen maken met de XDC Editor.
 
 **De voorbeeld-XDC-bestanden** verkrijgen:
-1. Zoek op de AEM Forms-server de XDC-map in de [AEM Forms-hoofdmap]\sdk\samples\Output\IVS.
+1. Zoek op de AEM Forms-server de XDC-map in [AEM Forms-hoofdmap]\sdk\samples\Output\IVS.
 1. Kopieer de inhoud van deze map naar een map die toegankelijk is via het Workbench- of Eclipse-systeem.
 
 **Voor de XDC Editor Help**:

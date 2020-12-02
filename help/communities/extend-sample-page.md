@@ -19,7 +19,7 @@ ht-degree: 0%
 ---
 
 
-# Opmerking toevoegen aan voorbeeldpagina  {#add-comment-to-sample-page}
+# Opmerking toevoegen aan voorbeeldpagina {#add-comment-to-sample-page}
 
 Nu de componenten voor het aangepaste opmerkingensysteem in de toepassingsmap (/apps) staan, is het mogelijk om de uitgebreide component te gebruiken. De instantie van het opmerkingssysteem in een website die moet worden beïnvloed moet zijn resourceType plaatsen om het systeem van douanecommentaar te zijn en alle noodzakelijke cliëntbibliotheken te omvatten.
 
@@ -31,17 +31,17 @@ De [Community Components Guide](/help/communities/components-guide.md) identific
 
 [https://localhost:4502/content/community-components/en/comments.html](https://localhost:4502/content/community-components/en/comments.html)
 
-Let op de drie clientbibliotheken die nodig zijn voor het renderen en correct functioneren van Opmerkingen. Deze moeten worden opgenomen waar naar de uitgebreide opmerkingen wordt verwezen en in de [uitgebreide clientbibliotheek](/help/communities/extend-create-components.md#create-a-client-library-folder) van opmerkingen ( `apps.custom.comments`).
+Let op de drie clientbibliotheken die nodig zijn voor het renderen en correct functioneren van Opmerkingen. Deze moeten worden opgenomen waar naar de uitgebreide opmerkingen wordt verwezen en in de clientbibliotheek ](/help/communities/extend-create-components.md#create-a-client-library-folder) ( `apps.custom.comments`) van [extended Comments.
 
 ![chlimage_1-47](assets/chlimage_1-47.png)
 
 ### Aangepaste opmerkingen toevoegen aan een pagina {#add-custom-comments-to-a-page}
 
-Aangezien er slechts één opmerkingsysteem per pagina kan zijn, is het eenvoudiger om een voorbeeldpagina te maken zoals beschreven in de korte zelfstudie Een voorbeeldpagina [](/help/communities/create-sample-page.md) maken.
+Aangezien er slechts één systeem van de Commentaar per pagina kan zijn, is het eenvoudiger om een steekproefpagina tot stand te brengen zoals die in het korte [Create a Sample Page](/help/communities/create-sample-page.md) leerprogramma wordt beschreven.
 
-Nadat u de component hebt gemaakt, opent u de ontwerpmodus en stelt u de componentgroep Aangepast beschikbaar, zodat de `Alt Comments` component aan de pagina kan worden toegevoegd.
+Nadat u een aangepaste component hebt gemaakt, voert u de ontwerpmodus in en stelt u de componentgroep Custom beschikbaar zodat de component `Alt Comments` aan de pagina kan worden toegevoegd.
 
-De opmerking wordt alleen weergegeven en werkt naar behoren als de clientbibliotheken voor opmerkingen worden toegevoegd aan de clientlibslist voor de pagina (zie [Clientlibs voor Community Components](/help/communities/clientlibs.md)).
+De opmerking wordt alleen weergegeven en werkt naar behoren als de clientbibliotheken voor opmerkingen worden toegevoegd aan de clientlibslist voor de pagina (zie [Clientlibs for Communities Components](/help/communities/clientlibs.md)).
 
 #### Opmerkingen Clientlibs op voorbeeldpagina {#comments-clientlibs-on-sample-page}
 
@@ -51,19 +51,19 @@ De opmerking wordt alleen weergegeven en werkt naar behoren als de clientbibliot
 
 ![chlimage_1-49](assets/chlimage_1-49.png)
 
-#### Auteur: Opmerkingsknooppunt voor voorbeeldpagina {#author-sample-page-comments-node}
+#### Auteur: Opmerkingen op voorbeeldpagina {#author-sample-page-comments-node}
 
-U kunt resourceType in CRXDE verifiëren door de eigenschappen van de commentaarknoop voor de steekproefpagina bij te bekijken `/content/sites/sample/en/jcr:content/content/primary/comments`.
+U kunt het resourceType in CRXDE verifiëren door de eigenschappen van de commentaarknoop voor de steekproefpagina bij `/content/sites/sample/en/jcr:content/content/primary/comments` te bekijken.
 
 ![chlimage_1-50](assets/chlimage_1-50.png)
 
 #### Voorbeeldpagina publiceren {#publish-sample-page}
 
-Nadat de aangepaste component aan de pagina is toegevoegd, moet de pagina [ook (opnieuw) worden](/help/communities/sites-console.md#publishing-the-site)gepubliceerd.
+Nadat de aangepaste component aan de pagina is toegevoegd, is het ook nodig om [de pagina](/help/communities/sites-console.md#publishing-the-site) te publiceren.
 
 #### Publiceren: Alt-commentaar op voorbeeldpagina {#publish-alt-comment-on-sample-page}
 
-Nadat u zowel de aangepaste toepassing als de voorbeeldpagina hebt gepubliceerd, kunt u een opmerking invoeren. Als u zich hebt aangemeld, kunt u een opmerking plaatsen met een [demogebruiker](/help/communities/tutorials.md#demo-users) of beheerder.
+Nadat u zowel de aangepaste toepassing als de voorbeeldpagina hebt gepubliceerd, kunt u een opmerking invoeren. Als u bent aangemeld met een [demo-gebruiker](/help/communities/tutorials.md#demo-users) of beheerder, is het mogelijk om een opmerking te plaatsen.
 
 Hier aaron.mcdonald@mailinator.com vindt u een opmerking:
 
